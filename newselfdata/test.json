@@ -1,0 +1,66 @@
+{
+  "name": "我的单词本",
+  "description": "这是一个自定义单词本模板，您可以参考这个格式创建自己的单词本",
+  "words": [
+    {
+      "italian": "ciao",
+      "english": "hello, hi, bye",
+      "chinese": "你好，再见",
+      "notes": "非正式场合使用，既可以表示问候也可以表示告别"
+    },
+    {
+      "italian": "grazie",
+      "english": "thank you",
+      "chinese": "谢谢",
+      "notes": "grazie mille = 非常感谢"
+    },
+    {
+      "italian": "prego",
+      "english": "you're welcome, please",
+      "chinese": "不客气，请",
+      "notes": "多种用法：1. 回应感谢 2. 邀请别人先行 3. 表示没听清请对方重复"
+    },
+    {
+      "italian": "scusa",
+      "english": "sorry, excuse me",
+      "chinese": "对不起，打扰一下",
+      "notes": "非正式用法，正式场合用 scusi"
+    },
+    {
+      "italian": "per favore",
+      "english": "please",
+      "chinese": "请",
+      "notes": "表示礼貌的请求，通常放在句末"
+    },
+    {
+      "italian": "buongiorno",
+      "english": "good morning, good day",
+      "chinese": "早上好，日安",
+      "notes": "正式问候，上午到下午使用"
+    },
+    {
+      "italian": "buonasera",
+      "english": "good evening",
+      "chinese": "晚上好",
+      "notes": "下午晚些时候到晚上使用的正式问候"
+    },
+    {
+      "italian": "arrivederci",
+      "english": "goodbye",
+      "chinese": "再见",
+      "notes": "正式告别用语，字面意思是'直到再次见面'"
+    },
+    {
+      "italian": "mi chiamo",
+      "english": "my name is",
+      "chinese": "我的名字是",
+      "notes": "自我介绍时使用，后面直接加名字"
+    },
+    {
+      "italian": "come stai?",
+      "english": "how are you?",
+      "chinese": "你好吗？",
+      "notes": "非正式问候，正式场合用 come sta?"
+    }
+  ]
+}

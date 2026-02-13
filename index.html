@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>意大利语背单词 - Dimenticato</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 加载动画 -->
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <p>加载中...</p>
+  </div>
+
+  <!-- 主容器 -->
+  <div id="app" class="app hidden">
+    
+    <!-- 顶部导航栏 -->
+    <header class="header">
+      <h1>🇮🇹 意大利语背单词</h1>
+      <div class="header-stats">
+        <span class="stat">📚 词汇量: <strong id="totalWords">0</strong></span>
+        <span class="stat">✅ 已掌握: <strong id="masteredWords">0</strong></span>
+        <span class="stat">📊 进度: <strong id="progressPercent">0%</strong></span>
+      </div>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="main">
+      
+      <!-- 欢迎页面 -->
+      <section id="welcomeScreen" class="screen active">
+        <div class="welcome-card">
+          <!-- 系统词汇库 -->
+          <div class="vocab-section">
+            <h2>🎯 系统词汇库</h2>
+            <p class="subtitle">根据词频排序，从最常用的单词开始学习</p>
+            
+            <div class="level-buttons">
+              <button class="level-btn vocab-source-btn" data-level="1000" data-source="system">
+                <span class="level-icon">🌱</span>
+                <span class="level-name">初级</span>
+                <span class="level-count">1,000 词</span>
+              </button>
+              
+              <button class="level-btn vocab-source-btn" data-level="3000" data-source="system">
+                <span class="level-icon">🌿</span>
+                <span class="level-name">中级</span>
+                <span class="level-count">3,000 词</span>
+              </button>
+              
+              <button class="level-btn vocab-source-btn" data-level="5000" data-source="system">
+                <span class="level-icon">🌳</span>
+                <span class="level-name">高级</span>
+                <span class="level-count">5,000 词</span>
+              </button>
+              
+              <button class="level-btn vocab-source-btn" data-level="all" data-source="system">
+                <span class="level-icon">🌲</span>
+                <span class="level-name">全部</span>
+                <span class="level-count">28,787 词</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 自定义单词本 -->
+          <div class="custom-wordbook-section">
+            <h2>📝 我的单词本</h2>
+            <p class="subtitle">导入并学习自定义单词本</p>
+            
+            <div class="wordbook-cards" id="wordbookCards">
+              <!-- 动态生成单词本卡片 -->
+            </div>
+            
+            <div class="import-wordbook-card">
+              <input type="file" id="wordbookFileInput" accept=".json,.txt" style="display: none;">
+              <button class="level-btn import-btn" id="importWordbookBtn">
+                <span class="level-icon">➕</span>
+                <span class="level-name">导入单词本</span>
+                <span class="level-count">支持 JSON / TXT</span>
+              </button>
+              <p class="import-hint-small">
+                <a href="custom_wordbook_template.json" download>JSON模板</a> | 
+                <a href="custom_wordbook_template.txt" download>TXT模板</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- 学习模式选择 -->
+          <div class="mode-selection">
+            <h2>📖 选择学习模式</h2>
+            <p class="subtitle">请先选择上方的词库，然后选择学习模式</p>
+            
+            <div class="mode-buttons">
+              <button class="mode-btn" id="multipleChoiceBtn" disabled>
+                <span class="mode-icon">✏️</span>
+                <span class="mode-name">选择题模式</span>
+                <span class="mode-desc">看意大利语选英语翻译</span>
+              </button>
+              
+              <button class="mode-btn" id="spellingBtn" disabled>
+                <span class="mode-icon">⌨️</span>
+                <span class="mode-name">拼写模式</span>
+                <span class="mode-desc">看英语拼写意大利语</span>
+              </button>
+              
+              <button class="mode-btn" id="browseBtn" disabled>
+                <span class="mode-icon">📚</span>
+                <span class="mode-name">浏览模式</span>
+                <span class="mode-desc">查看所有单词列表</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 选择题模式 -->
+      <section id="multipleChoiceScreen" class="screen">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <button class="back-btn" id="mcBackBtn">← 返回</button>
+            <div class="quiz-progress">
+              <span id="mcCurrentWord">1</span> / <span id="mcTotalWords">0</span>
+            </div>
+            <div class="quiz-score">
+              正确率: <strong id="mcAccuracy">0%</strong>
+            </div>
+          </div>
+
+          <div class="quiz-card">
+            <div class="question-section">
+              <p class="question-label">意大利语单词：</p>
+              <h2 class="italian-word" id="mcItalianWord">-</h2>
+              <p class="chinese-hint hidden" id="mcChineseHint"></p>
+            </div>
+
+            <div class="options-section">
+              <p class="options-label">选择正确的英语翻译：</p>
+              <div class="options-grid" id="mcOptions">
+                <!-- 动态生成选项 -->
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-feedback hidden" id="mcFeedback">
+            <p class="feedback-text"></p>
+            <button class="next-btn" id="mcNextBtn">下一个 →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 拼写模式 -->
+      <section id="spellingScreen" class="screen">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <button class="back-btn" id="spBackBtn">← 返回</button>
+            <div class="quiz-progress">
+              <span id="spCurrentWord">1</span> / <span id="spTotalWords">0</span>
+            </div>
+            <div class="quiz-score">
+              正确率: <strong id="spAccuracy">0%</strong>
+            </div>
+          </div>
+
+          <div class="quiz-card">
+            <div class="question-section">
+              <p class="question-label">英语翻译：</p>
+              <h2 class="english-word" id="spEnglishWord">-</h2>
+              <p class="chinese-hint hidden" id="spChineseHint"></p>
+            </div>
+
+            <div class="spelling-section">
+              <p class="options-label">请输入意大利语单词：</p>
+              <input 
+                type="text" 
+                class="spelling-input" 
+                id="spInput" 
+                placeholder="输入意大利语..."
+                autocomplete="off"
+              >
+              <button class="check-btn" id="spCheckBtn">检查答案</button>
+            </div>
+          </div>
+
+          <div class="quiz-feedback hidden" id="spFeedback">
+            <p class="feedback-text"></p>
+            <button class="next-btn" id="spNextBtn">下一个 →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 浏览模式 -->
+      <section id="browseScreen" class="screen">
+        <div class="browse-container">
+          <div class="browse-header">
+            <button class="back-btn" id="brBackBtn">← 返回</button>
+            <input 
+              type="text" 
+              class="search-input" 
+              id="searchInput" 
+              placeholder="🔍 搜索单词或翻译..."
+            >
+            <button class="filter-btn" id="filterBtn">
+              <span id="filterText">全部</span> ▼
+            </button>
+          </div>
+
+          <div class="word-list" id="wordList">
+            <!-- 动态生成单词列表 -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 底部工具栏 -->
+    <footer class="footer">
+      <button class="footer-btn" id="resetBtn">
+        🔄 重置进度
+      </button>
+      <button class="footer-btn" id="statsBtn">
+        📊 查看统计
+      </button>
+      <button class="footer-btn" id="themeBtn">
+        🌓 切换主题
+      </button>
+      <button class="footer-btn" id="helpBtn">
+        📖 使用说明
+      </button>
+    </footer>
+
+  </div>
+
+  <!-- 统计弹窗 -->
+  <div id="statsModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>📊 学习统计</h3>
+        <button class="close-btn" id="closeStatsBtn">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="stat-item">
+          <span class="stat-label">总学习单词数：</span>
+          <span class="stat-value" id="statTotalLearned">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">已掌握单词数：</span>
+          <span class="stat-value" id="statMastered">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">学习进度：</span>
+          <span class="stat-value" id="statProgress">0%</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">选择题练习次数：</span>
+          <span class="stat-value" id="statMCAttempts">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">拼写练习次数：</span>
+          <span class="stat-value" id="statSpAttempts">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">总正确率：</span>
+          <span class="stat-value" id="statAccuracy">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 帮助弹窗 -->
+  <div id="helpModal" class="modal hidden">
+    <div class="modal-content help-modal-content">
+      <div class="modal-header">
+        <h3>📖 使用说明</h3>
+        <button class="close-btn" id="closeHelpBtn">×</button>
+      </div>
+      <div class="modal-body help-modal-body">
+        <div class="help-section">
+          <h2>🇮🇹 Dimenticato - 意大利语背单词应用</h2>
+          <p class="help-intro">一个纯静态的意大利语词汇学习网页应用，支持本地离线使用。</p>
+        </div>
+
+        <div class="help-section">
+          <h3>✨ 功能特点</h3>
+          
+          <div class="feature-box">
+            <h4>📚 系统词汇库</h4>
+            <ul>
+              <li><strong>28,787</strong> 个意大利语单词及英语翻译</li>
+              <li>按使用频率排序（从最常用到最少用）</li>
+              <li>四个难度级别：
+                <ul>
+                  <li>🌱 初级：1,000 个高频词</li>
+                  <li>🌿 中级：3,000 个常用词</li>
+                  <li>🌳 高级：5,000 个词汇</li>
+                  <li>🌲 全部：28,787 个完整词库</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feature-box">
+            <h4>📝 自定义单词本</h4>
+            <ul>
+              <li><strong>导入自己的单词本</strong> - 支持 JSON 和 TXT 两种格式</li>
+              <li><strong>独立进度跟踪</strong> - 每个单词本的学习进度独立保存</li>
+              <li><strong>添加个人笔记</strong> - 为每个单词添加你自己的学习笔记</li>
+              <li><strong>随时管理</strong> - 导入、删除、切换单词本</li>
+            </ul>
+          </div>
+
+          <div class="feature-box highlight">
+            <h4>📄 TXT 格式 - 超简单的记笔记方式！</h4>
+            <p>不需要处理复杂的 JSON 语法，用记事本就能创建单词本！</p>
+            
+            <p><strong>基本规则：</strong></p>
+            <ol>
+              <li>每个单词用<strong>空行</strong>分隔</li>
+              <li>每个单词包含 <strong>3-4 行</strong>：
+                <ul>
+                  <li>第 1 行：意大利语</li>
+                  <li>第 2 行：英语</li>
+                  <li>第 3 行：中文</li>
+                  <li>第 4 行（可选）：笔记</li>
+                </ul>
+              </li>
+            </ol>
+
+            <p><strong>示例：</strong></p>
+            <pre class="code-block">ciao
+hello, hi, bye
+你好，再见
+非正式场合使用，既可以表示问候也可以表示告别
+
+grazie
+thank you
+谢谢
+grazie mille = 非常感谢
+
+acqua
+water
+水
+
+amore
+love
+爱
+意大利文化中非常重要的词汇</pre>
+
+            <p><strong>优势：</strong></p>
+            <ul>
+              <li>✏️ 用任何文本编辑器都能编辑</li>
+              <li>🚀 快速记录，不用考虑语法</li>
+              <li>💾 纯文本，方便备份和版本控制</li>
+              <li>📝 想加笔记就加，不加也行</li>
+            </ul>
+
+            <p><strong>使用方法：</strong></p>
+            <ol>
+              <li>创建 <code>.txt</code> 文件，按格式添加单词</li>
+              <li>在应用中点击"导入单词本"</li>
+              <li>选择你的 TXT 文件</li>
+              <li>开始学习！</li>
+            </ol>
+          </div>
+
+          <div class="feature-box">
+            <h4>🎯 学习模式</h4>
+            <ul>
+              <li><strong>✏️ 选择题模式</strong> - 显示意大利语单词，从4个选项中选择正确的英语翻译</li>
+              <li><strong>⌨️ 拼写模式</strong> - 显示英语翻译，输入意大利语单词</li>
+              <li><strong>📖 浏览模式</strong> - 查看完整单词列表，支持搜索和过滤</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="help-section">
+          <h3>🚀 使用方法</h3>
+          
+          <div class="usage-box">
+            <h4>使用系统词汇库：</h4>
+            <ol>
+              <li><strong>选择难度级别</strong> - 初级/中级/高级/全部</li>
+              <li><strong>选择学习模式</strong> - 选择题/拼写/浏览模式</li>
+              <li><strong>开始学习</strong> - 进度自动保存</li>
+            </ol>
+          </div>
+
+          <div class="usage-box">
+            <h4>使用自定义单词本：</h4>
+            <ol>
+              <li><strong>创建单词本</strong> - 用记事本创建 <code>.txt</code> 文件，按格式添加单词</li>
+              <li><strong>导入单词本</strong> - 点击"导入单词本"按钮，选择你的文件</li>
+              <li><strong>选择单词本</strong> - 点击单词本卡片激活</li>
+              <li><strong>选择学习模式</strong> - 选择题/拼写/浏览模式</li>
+              <li><strong>开始学习</strong> - 每个单词本的进度独立保存</li>
+            </ol>
+          </div>
+
+          <p class="help-tip">💡 <strong>提示：</strong>顶部始终显示当前词汇量、已掌握数量和学习进度</p>
+        </div>
+
+        <div class="help-section">
+          <h3>🌟 其他功能</h3>
+          <ul>
+            <li><strong>📊 查看统计</strong> - 查看学习数据和正确率</li>
+            <li><strong>🌓 切换主题</strong> - 在浅色和深色主题之间切换</li>
+            <li><strong>🔄 重置进度</strong> - 清除所有学习记录（需确认）</li>
+          </ul>
+        </div>
+
+        <div class="help-section">
+          <p class="help-footer">祝学习愉快！Buono studio! 🇮🇹</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="vocabulary.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

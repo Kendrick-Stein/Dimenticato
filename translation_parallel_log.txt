@@ -1,0 +1,1612 @@
+✓ Resuming from entry 2300/28787
+
+============================================================
+Processing 26487 remaining entries
+Using 8 CPU cores for parallel processing
+============================================================
+
+
+--- Batch 1/265 (entries 2301-2400) ---
+2026-02-12 23:18:39 WARNING: Language it package default expects mwt, which has been added
+2026-02-12 23:18:40 WARNING: Language it package default expects mwt, which has been added
+2026-02-12 23:18:40 WARNING: Language it package default expects mwt, which has been added
+2026-02-12 23:18:40 WARNING: Language it package default expects mwt, which has been added
+2026-02-12 23:18:43 WARNING: Language en package default expects mwt, which has been added
+2026-02-12 23:18:44 WARNING: Language en package default expects mwt, which has been added
+2026-02-12 23:18:44 WARNING: Language en package default expects mwt, which has been added
+2026-02-12 23:18:45 WARNING: Language en package default expects mwt, which has been added
+[2350/28787] autorizzato -> EN: Authorized, ZH: 核定数
+[2400/28787] confermare -> EN: confirm, ZH: 确认
+✓ Saved 2400 entries to data/vocabulary_progress.json
+✓ Batch 1 complete (2400/28787 total)
+
+--- Batch 2/265 (entries 2401-2500) ---
+[2450/28787] festival -> EN: festival, ZH: 节日
+[2500/28787] cacciare -> EN: hunting, ZH: 狩猎
+✓ Saved 2500 entries to data/vocabulary_progress.json
+✓ Batch 2 complete (2500/28787 total)
+
+--- Batch 3/265 (entries 2501-2600) ---
+[2550/28787] mensa -> EN: canteen, ZH: 餐厅
+[2600/28787] Toro -> EN: Toro, ZH: 托罗
+✓ Saved 2600 entries to data/vocabulary_progress.json
+✓ Batch 3 complete (2600/28787 total)
+
+--- Batch 4/265 (entries 2601-2700) ---
+[2650/28787] diamante -> EN: diamond, ZH: 钻石
+[2700/28787] verdetto -> EN: green, ZH: 绿色
+✓ Saved 2700 entries to data/vocabulary_progress.json
+✓ Batch 4 complete (2700/28787 total)
+
+--- Batch 5/265 (entries 2701-2800) ---
+[2750/28787] ignorare -> EN: ignoring, ZH: 忽略
+[2800/28787] scolastico -> EN: school, ZH: 学校
+✓ Saved 2800 entries to data/vocabulary_progress.json
+✓ Batch 5 complete (2800/28787 total)
+
+--- Batch 6/265 (entries 2801-2900) ---
+[2850/28787] lotteria -> EN: lottery, ZH: 彩票
+[2900/28787] grigio -> EN: grey, ZH: 灰色
+✓ Saved 2900 entries to data/vocabulary_progress.json
+✓ Batch 6 complete (2900/28787 total)
+
+--- Batch 7/265 (entries 2901-3000) ---
+[2950/28787] dimostrazione -> EN: demonstration, ZH: 演示
+[3000/28787] priorità -> EN: priority, ZH: 优先级
+✓ Saved 3000 entries to data/vocabulary_progress.json
+✓ Batch 7 complete (3000/28787 total)
+
+--- Batch 8/265 (entries 3001-3100) ---
+[3050/28787] cemento -> EN: concrete, ZH: 混凝土
+[3100/28787] malinteso -> EN: misunderstanding, ZH: 误解
+✓ Saved 3100 entries to data/vocabulary_progress.json
+✓ Batch 8 complete (3100/28787 total)
+
+--- Batch 9/265 (entries 3101-3200) ---
+[3150/28787] stima -> EN: estimate, ZH: 估计数
+[3200/28787] sorso -> EN: Sister, ZH: 师姐
+✓ Saved 3200 entries to data/vocabulary_progress.json
+✓ Batch 9 complete (3200/28787 total)
+
+--- Batch 10/265 (entries 3201-3300) ---
+[3250/28787] audio -> EN: audio audio, ZH: 音频
+[3300/28787] durare -> EN: last, ZH: 最后一个
+✓ Saved 3300 entries to data/vocabulary_progress.json
+✓ Batch 10 complete (3300/28787 total)
+
+--- Batch 11/265 (entries 3301-3400) ---
+[3350/28787] sostituto -> EN: replacement, ZH: 替换
+[3400/28787] clima -> EN: climate climate, ZH: 气候
+✓ Saved 3400 entries to data/vocabulary_progress.json
+✓ Batch 11 complete (3400/28787 total)
+
+--- Batch 12/265 (entries 3401-3500) ---
+[3450/28787] setta -> EN: set, ZH: 设定
+[3500/28787] violino -> EN: violin, ZH: 小提琴
+✓ Saved 3500 entries to data/vocabulary_progress.json
+✓ Batch 12 complete (3500/28787 total)
+
+--- Batch 13/265 (entries 3501-3600) ---
+[3550/28787] solitamente -> EN: usually, ZH: 通常
+[3600/28787] principalmente -> EN: mainly, ZH: 主要为
+✓ Saved 3600 entries to data/vocabulary_progress.json
+✓ Batch 13 complete (3600/28787 total)
+
+--- Batch 14/265 (entries 3601-3700) ---
+[3650/28787] gallo -> EN: gall, ZH: 胆量
+[3700/28787] estrazione -> EN: extraction, ZH: 提取
+✓ Saved 3700 entries to data/vocabulary_progress.json
+✓ Batch 14 complete (3700/28787 total)
+
+--- Batch 15/265 (entries 3701-3800) ---
+[3750/28787] impiego -> EN: employment, ZH: 就业
+[3800/28787] bagaglio -> EN: baggage, ZH: 行李
+✓ Saved 3800 entries to data/vocabulary_progress.json
+✓ Batch 15 complete (3800/28787 total)
+
+--- Batch 16/265 (entries 3801-3900) ---
+[3850/28787] damigella -> EN: Damigella, ZH: 达米吉拉
+[3900/28787] indagato -> EN: investigated, ZH: 调查
+✓ Saved 3900 entries to data/vocabulary_progress.json
+✓ Batch 16 complete (3900/28787 total)
+
+--- Batch 17/265 (entries 3901-4000) ---
+[3950/28787] Alaska -> EN: Alaska, ZH: 阿拉斯加
+[4000/28787] svenire -> EN: ♪, ZH: ? 吗?
+✓ Saved 4000 entries to data/vocabulary_progress.json
+✓ Batch 17 complete (4000/28787 total)
+
+--- Batch 18/265 (entries 4001-4100) ---
+[4050/28787] aglio -> EN: garlic, ZH: 蒜头
+[4100/28787] liquore -> EN: liquor, ZH: 酒类
+✓ Saved 4100 entries to data/vocabulary_progress.json
+✓ Batch 18 complete (4100/28787 total)
+
+--- Batch 19/265 (entries 4101-4200) ---
+[4150/28787] concentrarsi -> EN: focus focus, ZH: 重点
+[4200/28787] atteso -> EN: expected, ZH: 预期
+✓ Saved 4200 entries to data/vocabulary_progress.json
+✓ Batch 19 complete (4200/28787 total)
+
+--- Batch 20/265 (entries 4201-4300) ---
+[4250/28787] dialogo -> EN: dialogue, ZH: 对话
+[4300/28787] soia -> EN: Soy, ZH: 苏
+✓ Saved 4300 entries to data/vocabulary_progress.json
+✓ Batch 20 complete (4300/28787 total)
+
+--- Batch 21/265 (entries 4301-4400) ---
+[4350/28787] dogana -> EN: Customs, ZH: 海关
+[4400/28787] visibile -> EN: visible, ZH: 可见
+✓ Saved 4400 entries to data/vocabulary_progress.json
+✓ Batch 21 complete (4400/28787 total)
+
+--- Batch 22/265 (entries 4401-4500) ---
+[4450/28787] Luisa -> EN: Luisa, ZH: 路易萨
+[4500/28787] prenotare -> EN: Book, ZH: 书
+✓ Saved 4500 entries to data/vocabulary_progress.json
+✓ Batch 22 complete (4500/28787 total)
+
+--- Batch 23/265 (entries 4501-4600) ---
+[4550/28787] specializzato -> EN: specialized specialist, ZH: 专家
+[4600/28787] vagone -> EN: wagon, ZH: 货车
+✓ Saved 4600 entries to data/vocabulary_progress.json
+✓ Batch 23 complete (4600/28787 total)
+
+--- Batch 24/265 (entries 4601-4700) ---
+[4650/28787] rilassante -> EN: relaxing, ZH: 放松点
+[4700/28787] lampadina -> EN: bulb, ZH: 灯泡
+✓ Saved 4700 entries to data/vocabulary_progress.json
+✓ Batch 24 complete (4700/28787 total)
+
+--- Batch 25/265 (entries 4701-4800) ---
+[4750/28787] igiene -> EN: Hygiene, ZH: 卫生
+[4800/28787] mattone -> EN: brick, ZH: 砖头
+✓ Saved 4800 entries to data/vocabulary_progress.json
+✓ Batch 25 complete (4800/28787 total)
+
+--- Batch 26/265 (entries 4801-4900) ---
+[4850/28787] labbro -> EN: lipstick, ZH: 口红
+[4900/28787] nervo -> EN: nerve, ZH: 神经病
+✓ Saved 4900 entries to data/vocabulary_progress.json
+✓ Batch 26 complete (4900/28787 total)
+
+--- Batch 27/265 (entries 4901-5000) ---
+[4950/28787] polare -> EN: polar, ZH: 极点
+[5000/28787] ebbrezza -> EN: drunkenness, ZH: 醉酒 醉酒 醉酒 醉酒 醉酒
+✓ Saved 5000 entries to data/vocabulary_progress.json
+✓ Batch 27 complete (5000/28787 total)
+
+--- Batch 28/265 (entries 5001-5100) ---
+[5100/28787] soffio -> EN: blow, ZH: 吹嘘
+[5050/28787] reciproco -> EN: mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual, ZH: 双方互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通
+✓ Saved 5100 entries to data/vocabulary_progress.json
+✓ Batch 28 complete (5100/28787 total)
+
+--- Batch 29/265 (entries 5101-5200) ---
+[5150/28787] opposizione -> EN: opposition, ZH: 反对
+[5200/28787] approvare -> EN: approve, ZH: 核准
+✓ Saved 5200 entries to data/vocabulary_progress.json
+✓ Batch 29 complete (5200/28787 total)
+
+--- Batch 30/265 (entries 5201-5300) ---
+[5250/28787] sugo -> EN: sugo, ZH: 苏格
+[5300/28787] pelato -> EN: Peached, ZH: 被弹出
+✓ Saved 5300 entries to data/vocabulary_progress.json
+✓ Batch 30 complete (5300/28787 total)
+
+--- Batch 31/265 (entries 5301-5400) ---
+[5350/28787] rosario -> EN: rosary, ZH: 玫瑰花
+[5400/28787] affascinato -> EN: fascinated, ZH: 着迷
+✓ Saved 5400 entries to data/vocabulary_progress.json
+✓ Batch 31 complete (5400/28787 total)
+
+--- Batch 32/265 (entries 5401-5500) ---
+[5450/28787] scoppio -> EN: outbreak, ZH: 爆发
+[5500/28787] toccante -> EN: touching, ZH: 抚摸
+✓ Saved 5500 entries to data/vocabulary_progress.json
+✓ Batch 32 complete (5500/28787 total)
+
+--- Batch 33/265 (entries 5501-5600) ---
+[5550/28787] stampare -> EN: Printable print, ZH: 可打印打印
+[5600/28787] favorito -> EN: favorite, ZH: 最喜欢
+✓ Saved 5600 entries to data/vocabulary_progress.json
+✓ Batch 33 complete (5600/28787 total)
+
+--- Batch 34/265 (entries 5601-5700) ---
+[5650/28787] Zelanda -> EN: Netherlands, ZH: 荷兰
+[5700/28787] restrittivo -> EN: restrictive, ZH: 限制性
+✓ Saved 5700 entries to data/vocabulary_progress.json
+✓ Batch 34 complete (5700/28787 total)
+
+--- Batch 35/265 (entries 5701-5800) ---
+[5750/28787] digerire -> EN: digest, ZH: 摘要
+[5800/28787] aggirare -> EN: around, ZH: 环绕
+✓ Saved 5800 entries to data/vocabulary_progress.json
+✓ Batch 35 complete (5800/28787 total)
+
+--- Batch 36/265 (entries 5801-5900) ---
+[5850/28787] lanciatore -> EN: launcher, ZH: 发射器
+[5900/28787] invertire -> EN: invert, ZH: 反转
+✓ Saved 5900 entries to data/vocabulary_progress.json
+✓ Batch 36 complete (5900/28787 total)
+
+--- Batch 37/265 (entries 5901-6000) ---
+[5950/28787] scialuppa -> EN: Sludge, ZH: 滑动
+[6000/28787] giustificazione -> EN: justification, ZH: 说明
+✓ Saved 6000 entries to data/vocabulary_progress.json
+✓ Batch 37 complete (6000/28787 total)
+
+--- Batch 38/265 (entries 6001-6100) ---
+[6050/28787] celebrazione -> EN: celebration, ZH: 庆祝
+[6100/28787] mittente -> EN: sender, ZH: 发送者
+✓ Saved 6100 entries to data/vocabulary_progress.json
+✓ Batch 38 complete (6100/28787 total)
+
+--- Batch 39/265 (entries 6101-6200) ---
+[6150/28787] tossina -> EN: Toxin, ZH: 毒素
+[6200/28787] intenzionale -> EN: intentional, ZH: 故意行为
+✓ Saved 6200 entries to data/vocabulary_progress.json
+✓ Batch 39 complete (6200/28787 total)
+
+--- Batch 40/265 (entries 6201-6300) ---
+[6250/28787] primogenito -> EN: firstborn, ZH: 长子
+[6300/28787] traslocare -> EN: moving, ZH: 移动
+✓ Saved 6300 entries to data/vocabulary_progress.json
+✓ Batch 40 complete (6300/28787 total)
+
+--- Batch 41/265 (entries 6301-6400) ---
+[6350/28787] pulce -> EN: Flesh, ZH: 闪烁
+[6400/28787] gotta -> EN: ♪, ZH: ? 吗?
+✓ Saved 6400 entries to data/vocabulary_progress.json
+✓ Batch 41 complete (6400/28787 total)
+
+--- Batch 42/265 (entries 6401-6500) ---
+[6450/28787] immaturo -> EN: Immature, ZH: 性质
+[6500/28787] deviare -> EN: deviate, ZH: 偏离
+✓ Saved 6500 entries to data/vocabulary_progress.json
+✓ Batch 42 complete (6500/28787 total)
+
+--- Batch 43/265 (entries 6501-6600) ---
+[6550/28787] Medioevo -> EN: Middle Ages, ZH: 中世纪
+[6600/28787] miniatura -> EN: Miniature miniature, ZH: 微型微型
+✓ Saved 6600 entries to data/vocabulary_progress.json
+✓ Batch 43 complete (6600/28787 total)
+
+--- Batch 44/265 (entries 6601-6700) ---
+[6650/28787] pneumatico -> EN: pneumatic, ZH: 气动
+[6700/28787] seminare -> EN: sowing, ZH: 播种
+✓ Saved 6700 entries to data/vocabulary_progress.json
+✓ Batch 44 complete (6700/28787 total)
+
+--- Batch 45/265 (entries 6701-6800) ---
+[6750/28787] sterminio -> EN: extermination, ZH: 灭绝
+[6800/28787] spinello -> EN: pin, ZH: 针
+✓ Saved 6800 entries to data/vocabulary_progress.json
+✓ Batch 45 complete (6800/28787 total)
+
+--- Batch 46/265 (entries 6801-6900) ---
+[6850/28787] dentale -> EN: dental, ZH: 牙科
+[6900/28787] fava -> EN: Fancy, ZH: 风趣
+✓ Saved 6900 entries to data/vocabulary_progress.json
+✓ Batch 46 complete (6900/28787 total)
+
+--- Batch 47/265 (entries 6901-7000) ---
+[6950/28787] topless -> EN: topless, ZH: 无顶
+[7000/28787] mongolfiera -> EN: balloon, ZH: 气球
+✓ Saved 7000 entries to data/vocabulary_progress.json
+✓ Batch 47 complete (7000/28787 total)
+
+--- Batch 48/265 (entries 7001-7100) ---
+[7050/28787] canguro -> EN: kangaroo, ZH: 袋鼠
+[7100/28787] variabile -> EN: variable variable variable variable, ZH: 变量变量
+✓ Saved 7100 entries to data/vocabulary_progress.json
+✓ Batch 48 complete (7100/28787 total)
+
+--- Batch 49/265 (entries 7101-7200) ---
+[7150/28787] pennarello -> EN: Pencil, ZH: 笔会
+[7200/28787] marziano -> EN: Martian, ZH: 火星人
+✓ Saved 7200 entries to data/vocabulary_progress.json
+✓ Batch 49 complete (7200/28787 total)
+
+--- Batch 50/265 (entries 7201-7300) ---
+[7250/28787] brocca -> EN: brooding, ZH: 编织
+[7300/28787] sterno -> EN: sternum, ZH: 胸围
+✓ Saved 7300 entries to data/vocabulary_progress.json
+✓ Batch 50 complete (7300/28787 total)
+
+--- Batch 51/265 (entries 7301-7400) ---
+[7350/28787] dimettersi -> EN: resign, ZH: 辞职
+[7400/28787] idoneo -> EN: eligible, ZH: 合格
+✓ Saved 7400 entries to data/vocabulary_progress.json
+✓ Batch 51 complete (7400/28787 total)
+
+--- Batch 52/265 (entries 7401-7500) ---
+[7450/28787] zanzara -> EN: mosquito, ZH: 蚊子
+[7500/28787] prolungare -> EN: extension, ZH: 扩展
+✓ Saved 7500 entries to data/vocabulary_progress.json
+✓ Batch 52 complete (7500/28787 total)
+
+--- Batch 53/265 (entries 7501-7600) ---
+[7550/28787] Normandia -> EN: Normandy, ZH: 诺曼底
+[7600/28787] affrettato -> EN: Hurry, ZH: 快点
+✓ Saved 7600 entries to data/vocabulary_progress.json
+✓ Batch 53 complete (7600/28787 total)
+
+--- Batch 54/265 (entries 7601-7700) ---
+[7650/28787] maleducazione -> EN: maleducation, ZH: 恶性教育
+[7700/28787] cacare -> EN: cascading, ZH: 串联
+✓ Saved 7700 entries to data/vocabulary_progress.json
+✓ Batch 54 complete (7700/28787 total)
+
+--- Batch 55/265 (entries 7701-7800) ---
+[7750/28787] fotogramma -> EN: frame, ZH: 边框
+[7800/28787] pediatria -> EN: pediatrician, ZH: 儿科医生
+✓ Saved 7800 entries to data/vocabulary_progress.json
+✓ Batch 55 complete (7800/28787 total)
+
+--- Batch 56/265 (entries 7801-7900) ---
+[7850/28787] fisarmonica -> EN: accordion, ZH: 手风琴
+[7900/28787] vanto -> EN: vanity, ZH: 虚荣
+✓ Saved 7900 entries to data/vocabulary_progress.json
+✓ Batch 56 complete (7900/28787 total)
+
+--- Batch 57/265 (entries 7901-8000) ---
+[7950/28787] importazione -> EN: import, ZH: 导入
+[8000/28787] rompicoglioni -> EN: Fucking asshole!, ZH: 他妈的混蛋!
+✓ Saved 8000 entries to data/vocabulary_progress.json
+✓ Batch 57 complete (8000/28787 total)
+
+--- Batch 58/265 (entries 8001-8100) ---
+[8050/28787] PIL -> EN: GDP, ZH: 国内生产总值
+[8100/28787] saggiamente -> EN: wisely, ZH: 聪明
+✓ Saved 8100 entries to data/vocabulary_progress.json
+✓ Batch 58 complete (8100/28787 total)
+
+--- Batch 59/265 (entries 8101-8200) ---
+[8150/28787] resina -> EN: resin resin, ZH: 树脂树脂
+[8200/28787] adagio -> EN: Adagio, ZH: 阿达焦
+✓ Saved 8200 entries to data/vocabulary_progress.json
+✓ Batch 59 complete (8200/28787 total)
+
+--- Batch 60/265 (entries 8201-8300) ---
+[8250/28787] ghiacciaio -> EN: glacier, ZH: 冰川
+[8300/28787] spogliare -> EN: stripping, ZH: 剥离
+✓ Saved 8300 entries to data/vocabulary_progress.json
+✓ Batch 60 complete (8300/28787 total)
+
+--- Batch 61/265 (entries 8301-8400) ---
+[8350/28787] falena -> EN: moth, ZH: 蛾子
+[8400/28787] odissea -> EN: odysseus, ZH: 阴茎
+✓ Saved 8400 entries to data/vocabulary_progress.json
+✓ Batch 61 complete (8400/28787 total)
+
+--- Batch 62/265 (entries 8401-8500) ---
+[8450/28787] erroneamente -> EN: erroneously, ZH: 错了
+[8500/28787] innovativo -> EN: innovative innovation, ZH: 创新创新
+✓ Saved 8500 entries to data/vocabulary_progress.json
+✓ Batch 62 complete (8500/28787 total)
+
+--- Batch 63/265 (entries 8501-8600) ---
+[8550/28787] giacinto -> EN: jacinto, ZH: 鸡尾酒
+[8600/28787] prefettura -> EN: Prefecture, ZH: 县
+✓ Saved 8600 entries to data/vocabulary_progress.json
+✓ Batch 63 complete (8600/28787 total)
+
+--- Batch 64/265 (entries 8601-8700) ---
+[8650/28787] rubacuori -> EN: stealing, ZH: 偷窃
+[8700/28787] ossido -> EN: Oxide, ZH: 氧化物
+✓ Saved 8700 entries to data/vocabulary_progress.json
+✓ Batch 64 complete (8700/28787 total)
+
+--- Batch 65/265 (entries 8701-8800) ---
+[8750/28787] Toscana -> EN: Tuscany, ZH: 托斯卡纳
+[8800/28787] Ettore -> EN: Ettore, ZH: 埃托尔
+✓ Saved 8800 entries to data/vocabulary_progress.json
+✓ Batch 65 complete (8800/28787 total)
+
+--- Batch 66/265 (entries 8801-8900) ---
+[8850/28787] disfatto -> EN: discarded, ZH: 丢弃
+[8900/28787] moltitudine -> EN: multitude, ZH: 数量
+✓ Saved 8900 entries to data/vocabulary_progress.json
+✓ Batch 66 complete (8900/28787 total)
+
+--- Batch 67/265 (entries 8901-9000) ---
+[8950/28787] sconcio -> EN: Disturbation, ZH: 干扰
+[9000/28787] ferocia -> EN: ferocity, ZH: 剧烈
+✓ Saved 9000 entries to data/vocabulary_progress.json
+✓ Batch 67 complete (9000/28787 total)
+
+--- Batch 68/265 (entries 9001-9100) ---
+[9050/28787] dissezione -> EN: dissection, ZH: 解析
+[9100/28787] sgobbare -> EN: Smuggling, ZH: 走私
+✓ Saved 9100 entries to data/vocabulary_progress.json
+✓ Batch 68 complete (9100/28787 total)
+
+--- Batch 69/265 (entries 9101-9200) ---
+[9150/28787] nuvoloso -> EN: clouds, ZH: 云层
+[9200/28787] verificarsi -> EN: occurrence, ZH: 发生情况
+✓ Saved 9200 entries to data/vocabulary_progress.json
+✓ Batch 69 complete (9200/28787 total)
+
+--- Batch 70/265 (entries 9201-9300) ---
+[9250/28787] soave -> EN: ♪, ZH: ? 吗?
+[9300/28787] igienico -> EN: hygienic, ZH: 卫生
+✓ Saved 9300 entries to data/vocabulary_progress.json
+✓ Batch 70 complete (9300/28787 total)
+
+--- Batch 71/265 (entries 9301-9400) ---
+[9350/28787] panificio -> EN: bakery, ZH: 面包店
+[9400/28787] Lilla -> EN: Lille, ZH: 里尔
+✓ Saved 9400 entries to data/vocabulary_progress.json
+✓ Batch 71 complete (9400/28787 total)
+
+--- Batch 72/265 (entries 9401-9500) ---
+[9450/28787] fruscio -> EN: frustration, ZH: 沮丧
+[9500/28787] garbo -> EN: garb, ZH: 护栏
+✓ Saved 9500 entries to data/vocabulary_progress.json
+✓ Batch 72 complete (9500/28787 total)
+
+--- Batch 73/265 (entries 9501-9600) ---
+[9550/28787] rettitudine -> EN: rectitude, ZH: 直径
+[9600/28787] intimamente -> EN: intimately, ZH: 亲近
+✓ Saved 9600 entries to data/vocabulary_progress.json
+✓ Batch 73 complete (9600/28787 total)
+
+--- Batch 74/265 (entries 9601-9700) ---
+[9650/28787] pece -> EN: ♪, ZH: ? 吗?
+[9700/28787] secolare -> EN: centuries, ZH: 世纪
+✓ Saved 9700 entries to data/vocabulary_progress.json
+✓ Batch 74 complete (9700/28787 total)
+
+--- Batch 75/265 (entries 9701-9800) ---
+[9750/28787] migrazione -> EN: migration, ZH: 移徙
+[9800/28787] rabbrividire -> EN: Rabbrividi, ZH: 拉布布里维迪
+✓ Saved 9800 entries to data/vocabulary_progress.json
+✓ Batch 75 complete (9800/28787 total)
+
+--- Batch 76/265 (entries 9801-9900) ---
+[9850/28787] veduta -> EN: Viewed, ZH: 已查看
+[9900/28787] etnia -> EN: Ethnicism, ZH: 种族主义
+✓ Saved 9900 entries to data/vocabulary_progress.json
+✓ Batch 76 complete (9900/28787 total)
+
+--- Batch 77/265 (entries 9901-10000) ---
+[9950/28787] spatola -> EN: spatula, ZH: 斯图拉
+[10000/28787] festeggiamento -> EN: celebration, ZH: 庆祝
+✓ Saved 10000 entries to data/vocabulary_progress.json
+✓ Batch 77 complete (10000/28787 total)
+
+--- Batch 78/265 (entries 10001-10100) ---
+[10050/28787] piedino -> EN: feet, ZH: 脚
+[10100/28787] assemblare -> EN: assemble, ZH: 组装
+✓ Saved 10100 entries to data/vocabulary_progress.json
+✓ Batch 78 complete (10100/28787 total)
+
+--- Batch 79/265 (entries 10101-10200) ---
+[10150/28787] inesorabile -> EN: inexorable, ZH: 不可抗拒
+[10200/28787] illudere -> EN: illude, ZH: 低调
+✓ Saved 10200 entries to data/vocabulary_progress.json
+✓ Batch 79 complete (10200/28787 total)
+
+--- Batch 80/265 (entries 10201-10300) ---
+[10250/28787] intravedere -> EN: viewpoint, ZH: 视图
+[10300/28787] inquietudine -> EN: restlessness, ZH: 不安
+✓ Saved 10300 entries to data/vocabulary_progress.json
+✓ Batch 80 complete (10300/28787 total)
+
+--- Batch 81/265 (entries 10301-10400) ---
+[10350/28787] platonico -> EN: platonic, ZH: 柏拉图
+[10400/28787] circoncisione -> EN: circumcision, ZH: 割礼
+✓ Saved 10400 entries to data/vocabulary_progress.json
+✓ Batch 81 complete (10400/28787 total)
+
+--- Batch 82/265 (entries 10401-10500) ---
+[10450/28787] calvizie -> EN: baldness, ZH: 秃头
+[10500/28787] curiosamente -> EN: curiously, ZH: 奇怪的是,我们...
+✓ Saved 10500 entries to data/vocabulary_progress.json
+✓ Batch 82 complete (10500/28787 total)
+
+--- Batch 83/265 (entries 10501-10600) ---
+[10550/28787] possessivo -> EN: possessive, ZH: 拥有
+[10600/28787] alga -> EN: algae, ZH: 藻类
+✓ Saved 10600 entries to data/vocabulary_progress.json
+✓ Batch 83 complete (10600/28787 total)
+
+--- Batch 84/265 (entries 10601-10700) ---
+[10650/28787] autostoppista -> EN: Hitchhiker, ZH: 跳雪车
+[10700/28787] controller -> EN: controller, ZH: 控制器
+✓ Saved 10700 entries to data/vocabulary_progress.json
+✓ Batch 84 complete (10700/28787 total)
+
+--- Batch 85/265 (entries 10701-10800) ---
+[10750/28787] origano -> EN: oregano, ZH: 奥雷根诺
+[10800/28787] nepotismo -> EN: nepotism, ZH: 裙带关系
+✓ Saved 10800 entries to data/vocabulary_progress.json
+✓ Batch 85 complete (10800/28787 total)
+
+--- Batch 86/265 (entries 10801-10900) ---
+[10850/28787] impacco -> EN: bagging, ZH: 包装
+[10900/28787] misurazione -> EN: measurement, ZH: 测量
+✓ Saved 10900 entries to data/vocabulary_progress.json
+✓ Batch 86 complete (10900/28787 total)
+
+--- Batch 87/265 (entries 10901-11000) ---
+[10950/28787] antilope -> EN: antelope, ZH: 羚羊
+[11000/28787] mazzata -> EN: Masked, ZH: 蒙上面具
+✓ Saved 11000 entries to data/vocabulary_progress.json
+✓ Batch 87 complete (11000/28787 total)
+
+--- Batch 88/265 (entries 11001-11100) ---
+[11050/28787] regolazione -> EN: adjustment, ZH: 调整
+[11100/28787] inchinarsi -> EN: bowing, ZH: 叩头
+✓ Saved 11100 entries to data/vocabulary_progress.json
+✓ Batch 88 complete (11100/28787 total)
+
+--- Batch 89/265 (entries 11101-11200) ---
+[11150/28787] microbo -> EN: microbial, ZH: 微生物
+[11200/28787] soccorrere -> EN: aid, ZH: 援助
+✓ Saved 11200 entries to data/vocabulary_progress.json
+✓ Batch 89 complete (11200/28787 total)
+
+--- Batch 90/265 (entries 11201-11300) ---
+[11250/28787] Adolfo -> EN: Adolfo, ZH: 阿道夫,你好吗?
+[11300/28787] filamento -> EN: filament, ZH: 丝状
+✓ Saved 11300 entries to data/vocabulary_progress.json
+✓ Batch 90 complete (11300/28787 total)
+
+--- Batch 91/265 (entries 11301-11400) ---
+[11350/28787] Fabiana -> EN: Fabiana, ZH: 法比亚纳
+[11400/28787] medley -> EN: medley., ZH: 蜜德莉,你好吗?
+✓ Saved 11400 entries to data/vocabulary_progress.json
+✓ Batch 91 complete (11400/28787 total)
+
+--- Batch 92/265 (entries 11401-11500) ---
+[11450/28787] mastectomia -> EN: mastectomy, ZH: 乳房切除术
+[11500/28787] tramontare -> EN: tramontare, ZH: 贸易
+✓ Saved 11500 entries to data/vocabulary_progress.json
+✓ Batch 92 complete (11500/28787 total)
+
+--- Batch 93/265 (entries 11501-11600) ---
+[11550/28787] transfert -> EN: transfer, ZH: 转让
+[11600/28787] anice -> EN: anise, ZH: 动画
+✓ Saved 11600 entries to data/vocabulary_progress.json
+✓ Batch 93 complete (11600/28787 total)
+
+--- Batch 94/265 (entries 11601-11700) ---
+[11650/28787] plancton -> EN: Plankton, ZH: 浮游生物
+[11700/28787] timoroso -> EN: Timorous, ZH: 东帝汶人
+✓ Saved 11700 entries to data/vocabulary_progress.json
+✓ Batch 94 complete (11700/28787 total)
+
+--- Batch 95/265 (entries 11701-11800) ---
+[11750/28787] economista -> EN: economist, ZH: 经济学家
+[11800/28787] scissione -> EN: split, ZH: 分隔
+✓ Saved 11800 entries to data/vocabulary_progress.json
+✓ Batch 95 complete (11800/28787 total)
+
+--- Batch 96/265 (entries 11801-11900) ---
+[11850/28787] incontaminato -> EN: uncontaminated, ZH: 无污染
+[11900/28787] abaco -> EN: abaco, ZH: 烧烤
+✓ Saved 11900 entries to data/vocabulary_progress.json
+✓ Batch 96 complete (11900/28787 total)
+
+--- Batch 97/265 (entries 11901-12000) ---
+[11950/28787] abigeato -> EN: abige, ZH: 阿比欧
+[12000/28787] acceleratore (2) -> EN: accelerator (2), ZH: 加速器(2)
+✓ Saved 12000 entries to data/vocabulary_progress.json
+✓ Batch 97 complete (12000/28787 total)
+
+--- Batch 98/265 (entries 12001-12100) ---
+[12050/28787] acconciamente -> EN: nicely, ZH: 不错
+[12100/28787] acetofenone -> EN: acetofenone, ZH: 乙酮
+✓ Saved 12100 entries to data/vocabulary_progress.json
+✓ Batch 98 complete (12100/28787 total)
+
+--- Batch 99/265 (entries 12101-12200) ---
+[12150/28787] acqua distillata -> EN: distilled water, ZH: 蒸馏水
+[12200/28787] addebitare -> EN: charge, ZH: 收费
+✓ Saved 12200 entries to data/vocabulary_progress.json
+✓ Batch 99 complete (12200/28787 total)
+
+--- Batch 100/265 (entries 12201-12300) ---
+[12250/28787] adiposo -> EN: adipose, ZH: ip
+[12300/28787] aerodromo -> EN: aerodrome, ZH: 机场
+✓ Saved 12300 entries to data/vocabulary_progress.json
+✓ Batch 100 complete (12300/28787 total)
+
+--- Batch 101/265 (entries 12301-12400) ---
+[12350/28787] affettato (2) -> EN: sliced (2), ZH: 切片(2)
+[12400/28787] africanismo -> EN: Africanism, ZH: 非洲主义
+✓ Saved 12400 entries to data/vocabulary_progress.json
+✓ Batch 101 complete (12400/28787 total)
+
+--- Batch 102/265 (entries 12401-12500) ---
+[12450/28787] aggregato -> EN: aggregate, ZH: 合计
+[12500/28787] aguzzato -> EN: sharpened, ZH: 锐化
+✓ Saved 12500 entries to data/vocabulary_progress.json
+✓ Batch 102 complete (12500/28787 total)
+
+--- Batch 103/265 (entries 12501-12600) ---
+[12550/28787] alchimistico -> EN: alchemist, ZH: 炼金术师
+[12600/28787] alimentarsi -> EN: power supply, ZH: 供电
+✓ Saved 12600 entries to data/vocabulary_progress.json
+✓ Batch 103 complete (12600/28787 total)
+
+--- Batch 104/265 (entries 12601-12700) ---
+[12650/28787] allibrare -> EN: Allibrarian, ZH: Allibrarian 语言
+[12700/28787] altero -> EN: Alternate, ZH: 候补
+✓ Saved 12700 entries to data/vocabulary_progress.json
+✓ Batch 104 complete (12700/28787 total)
+
+--- Batch 105/265 (entries 12701-12800) ---
+[12750/28787] America del Nord -> EN: North America, ZH: 北美
+[12800/28787] ammonire -> EN: admonish, ZH: 劝告
+✓ Saved 12800 entries to data/vocabulary_progress.json
+✓ Batch 105 complete (12800/28787 total)
+
+--- Batch 106/265 (entries 12801-12900) ---
+[12850/28787] anaerobiosi -> EN: anaerobiosis, ZH: 厌氧生物
+[12900/28787] anchilosato -> EN: ankylosed, ZH: 已关闭
+✓ Saved 12900 entries to data/vocabulary_progress.json
+✓ Batch 106 complete (12900/28787 total)
+
+--- Batch 107/265 (entries 12901-13000) ---
+[12950/28787] angiotensinogeno -> EN: angiotensinogeno, ZH: 安吉奥滕西诺根诺
+[13000/28787] anno zero -> EN: year zero, ZH: 年份 0
+✓ Saved 13000 entries to data/vocabulary_progress.json
+✓ Batch 107 complete (13000/28787 total)
+
+--- Batch 108/265 (entries 13001-13100) ---
+[13050/28787] anticipatamente -> EN: in advance, ZH: 预
+[13100/28787] antivirale (2) -> EN: (2), ZH: (二)
+✓ Saved 13100 entries to data/vocabulary_progress.json
+✓ Batch 108 complete (13100/28787 total)
+
+--- Batch 109/265 (entries 13101-13200) ---
+[13150/28787] apologetico -> EN: apologetic, ZH: 杂音
+[13200/28787] appestato -> EN: Appeal, ZH: 上诉
+✓ Saved 13200 entries to data/vocabulary_progress.json
+✓ Batch 109 complete (13200/28787 total)
+
+--- Batch 110/265 (entries 13201-13300) ---
+[13250/28787] aracnofobia -> EN: arachnophobia, ZH: 恐惧症
+[13300/28787] architettura organica -> EN: organic architecture, ZH: 有机结构
+✓ Saved 13300 entries to data/vocabulary_progress.json
+✓ Batch 110 complete (13300/28787 total)
+
+--- Batch 111/265 (entries 13301-13400) ---
+[13350/28787] Aristofane -> EN: Aristophane, ZH: 亚里士多汉
+[13400/28787] arricciolare -> EN: curling, ZH: 卷曲
+✓ Saved 13400 entries to data/vocabulary_progress.json
+✓ Batch 111 complete (13400/28787 total)
+
+--- Batch 112/265 (entries 13401-13500) ---
+[13450/28787] artritico (2) -> EN: Arthritis (2), ZH: 关节炎(2)
+[13500/28787] assaggiatore -> EN: taster, ZH: 味觉
+✓ Saved 13500 entries to data/vocabulary_progress.json
+✓ Batch 112 complete (13500/28787 total)
+
+--- Batch 113/265 (entries 13501-13600) ---
+[13550/28787] assolutistico -> EN: Absolutism, ZH: 绝对主义
+[13600/28787] astrolatria -> EN: astrolatria, ZH: 天文学家
+✓ Saved 13600 entries to data/vocabulary_progress.json
+✓ Batch 113 complete (13600/28787 total)
+
+--- Batch 114/265 (entries 13601-13700) ---
+[13650/28787] attentare -> EN: bombing, ZH: 轰炸
+[13700/28787] ausiliare -> EN: auxiliary, ZH: 辅助
+✓ Saved 13700 entries to data/vocabulary_progress.json
+✓ Batch 114 complete (13700/28787 total)
+
+--- Batch 115/265 (entries 13701-13800) ---
+[13750/28787] automezzo -> EN: Automezzo, ZH: 自动菜单
+[13800/28787] avionico -> EN: avionic acid, ZH: 亚硫酸
+✓ Saved 13800 entries to data/vocabulary_progress.json
+✓ Batch 115 complete (13800/28787 total)
+
+--- Batch 116/265 (entries 13801-13900) ---
+[13850/28787] avvolgibile (2) -> EN: (2), ZH: (二)
+[13900/28787] bacucco -> EN: bacucco, ZH: 巴库科
+✓ Saved 13900 entries to data/vocabulary_progress.json
+✓ Batch 116 complete (13900/28787 total)
+
+--- Batch 117/265 (entries 13901-14000) ---
+[13950/28787] banca etica -> EN: Ethical bank, ZH: 道德银行
+[14000/28787] barione -> EN: barricade, ZH: 路障
+✓ Saved 14000 entries to data/vocabulary_progress.json
+✓ Batch 117 complete (14000/28787 total)
+
+--- Batch 118/265 (entries 14001-14100) ---
+[14050/28787] batisfera -> EN: batisfera, ZH: 贝蒂斯费拉
+[14100/28787] bella arte -> EN: beautiful art, ZH: 美丽的艺术
+✓ Saved 14100 entries to data/vocabulary_progress.json
+✓ Batch 118 complete (14100/28787 total)
+
+--- Batch 119/265 (entries 14101-14200) ---
+[14150/28787] bianchire -> EN: white, ZH: 白色
+[14200/28787] binario (2) -> EN: Track (2), ZH: 第(2)轨
+✓ Saved 14200 entries to data/vocabulary_progress.json
+✓ Batch 119 complete (14200/28787 total)
+
+--- Batch 120/265 (entries 14201-14300) ---
+[14250/28787] biorobotica -> EN: biorobodies, ZH: 生物体
+[14300/28787] bisso -> EN: biscuit, ZH: 饼干
+✓ Saved 14300 entries to data/vocabulary_progress.json
+✓ Batch 120 complete (14300/28787 total)
+
+--- Batch 121/265 (entries 14301-14400) ---
+[14350/28787] blu oltremare -> EN: blue overseas, ZH: 蓝色海外
+[14400/28787] bonariamente -> EN: properly, ZH: 适当的
+✓ Saved 14400 entries to data/vocabulary_progress.json
+✓ Batch 121 complete (14400/28787 total)
+
+--- Batch 122/265 (entries 14401-14500) ---
+[14450/28787] bove -> EN: Bove, ZH: 鲍夫
+[14500/28787] broccato -> EN: brocade, ZH: 红宝石
+✓ Saved 14500 entries to data/vocabulary_progress.json
+✓ Batch 122 complete (14500/28787 total)
+
+--- Batch 123/265 (entries 14501-14600) ---
+[14550/28787] buffonesco -> EN: Buffoonesco, ZH: 巴丰内斯科
+[14600/28787] cabardino -> EN: cabardino, ZH: 卡巴尔迪诺
+✓ Saved 14600 entries to data/vocabulary_progress.json
+✓ Batch 123 complete (14600/28787 total)
+
+--- Batch 124/265 (entries 14601-14700) ---
+[14650/28787] calamaio -> EN: squid, ZH: 鱿鱼
+[14700/28787] calzante -> EN: footwear, ZH: 鞋类
+✓ Saved 14700 entries to data/vocabulary_progress.json
+✓ Batch 124 complete (14700/28787 total)
+
+--- Batch 125/265 (entries 14701-14800) ---
+[14750/28787] canadese (2) -> EN: Canada (2), ZH: 加拿大(2)
+[14800/28787] capacità elettrica -> EN: electrical capacity, ZH: 电力容量
+✓ Saved 14800 entries to data/vocabulary_progress.json
+✓ Batch 125 complete (14800/28787 total)
+
+--- Batch 126/265 (entries 14801-14900) ---
+[14850/28787] cappuccio (2) -> EN: hood (2), ZH: 头罩(2)
+[14900/28787] cardiogenico -> EN: cardiogenic, ZH: 心脏病
+✓ Saved 14900 entries to data/vocabulary_progress.json
+✓ Batch 126 complete (14900/28787 total)
+
+--- Batch 127/265 (entries 14901-15000) ---
+[14950/28787] Carpazi -> EN: Carpathians, ZH: 喀尔巴阡山人
+[15000/28787] casistica -> EN: cases, ZH: 个案
+✓ Saved 15000 entries to data/vocabulary_progress.json
+✓ Batch 127 complete (15000/28787 total)
+
+--- Batch 128/265 (entries 15001-15100) ---
+[15050/28787] catione -> EN: Catch, ZH: 接着
+[15100/28787] celere -> EN: celery, ZH: 芹菜
+✓ Saved 15100 entries to data/vocabulary_progress.json
+✓ Batch 128 complete (15100/28787 total)
+
+--- Batch 129/265 (entries 15101-15200) ---
+[15150/28787] centuria -> EN: Hundred, ZH: 百强
+[15200/28787] cestista -> EN: cestist, ZH: 节奏者
+✓ Saved 15200 entries to data/vocabulary_progress.json
+✓ Batch 129 complete (15200/28787 total)
+
+--- Batch 130/265 (entries 15201-15300) ---
+[15250/28787] chimica analitica strumentale -> EN: instrumental analytical chemistry, ZH: 工具分析化学
+[15300/28787] cianfrinare -> EN: Cianfri, ZH: 钱弗里
+✓ Saved 15300 entries to data/vocabulary_progress.json
+✓ Batch 130 complete (15300/28787 total)
+
+--- Batch 131/265 (entries 15301-15400) ---
+[15350/28787] cinefilo -> EN: Cinefi, ZH: 锡内菲语Name
+[15400/28787] circonfondere -> EN: circumfonde, ZH: 环形
+✓ Saved 15400 entries to data/vocabulary_progress.json
+✓ Batch 131 complete (15400/28787 total)
+
+--- Batch 132/265 (entries 15401-15500) ---
+[15450/28787] citologia -> EN: cytology, ZH: 细胞学
+[15500/28787] clavicembalo -> EN: harpsichord, ZH: 竖琴
+✓ Saved 15500 entries to data/vocabulary_progress.json
+✓ Batch 132 complete (15500/28787 total)
+
+--- Batch 133/265 (entries 15501-15600) ---
+[15550/28787] coccatrice -> EN: Coccante, ZH: 科坎特语Name
+[15600/28787] colica -> EN: colic, ZH: 缩写
+✓ Saved 15600 entries to data/vocabulary_progress.json
+✓ Batch 133 complete (15600/28787 total)
+
+--- Batch 134/265 (entries 15601-15700) ---
+[15650/28787] colonna vertebrale -> EN: spine, ZH: 脊椎骨
+[15700/28787] compaginare -> EN: appearing, ZH: 显示
+✓ Saved 15700 entries to data/vocabulary_progress.json
+✓ Batch 134 complete (15700/28787 total)
+
+--- Batch 135/265 (entries 15701-15800) ---
+[15750/28787] composita -> EN: composita, ZH: 混凝土
+[15800/28787] concernente -> EN: concerning, ZH: 联 合 国
+✓ Saved 15800 entries to data/vocabulary_progress.json
+✓ Batch 135 complete (15800/28787 total)
+
+--- Batch 136/265 (entries 15801-15900) ---
+[15850/28787] conducibile -> EN: Conductable, ZH: 可操作
+[15900/28787] congratulare -> EN: congratulations, ZH: 祝贺你
+✓ Saved 15900 entries to data/vocabulary_progress.json
+✓ Batch 136 complete (15900/28787 total)
+
+--- Batch 137/265 (entries 15901-16000) ---
+[15950/28787] conseguentemente -> EN: consequently, ZH: 因此,
+[16000/28787] continente (2) -> EN: Country (2), ZH: 国家(2)
+✓ Saved 16000 entries to data/vocabulary_progress.json
+✓ Batch 137 complete (16000/28787 total)
+
+--- Batch 138/265 (entries 16001-16100) ---
+[16050/28787] controcanto -> EN: convict, ZH: 罪犯
+[16100/28787] convenzionare -> EN: agreement, ZH: 协议
+✓ Saved 16100 entries to data/vocabulary_progress.json
+✓ Batch 138 complete (16100/28787 total)
+
+--- Batch 139/265 (entries 16101-16200) ---
+[16150/28787] cordofono -> EN: string, ZH: 字符串
+[16200/28787] corrosivo -> EN: corrosive, ZH: 腐蚀性
+✓ Saved 16200 entries to data/vocabulary_progress.json
+✓ Batch 139 complete (16200/28787 total)
+
+--- Batch 140/265 (entries 16201-16300) ---
+[16250/28787] costeggiare -> EN: coastline, ZH: 海岸线
+[16300/28787] creanza -> EN: Creativity, ZH: 创意
+✓ Saved 16300 entries to data/vocabulary_progress.json
+✓ Batch 140 complete (16300/28787 total)
+
+--- Batch 141/265 (entries 16301-16400) ---
+[16350/28787] crio- -> EN: crio-, ZH: 克里欧
+[16400/28787] croce dal pié forcuto -> EN: cross from the pié forcuto, ZH: 十字路口从Pié Forcuto
+✓ Saved 16400 entries to data/vocabulary_progress.json
+✓ Batch 141 complete (16400/28787 total)
+
+--- Batch 142/265 (entries 16401-16500) ---
+[16450/28787] cromoproteina -> EN: chromoprotein, ZH: 染色体蛋白
+[16500/28787] curatela -> EN: care, ZH: 护理
+✓ Saved 16500 entries to data/vocabulary_progress.json
+✓ Batch 142 complete (16500/28787 total)
+
+--- Batch 143/265 (entries 16501-16600) ---
+[16550/28787] danza su ghiaccio -> EN: dance on ice, ZH: 冰上舞动
+[16600/28787] decarburare -> EN: decarburring, ZH: 拆车
+✓ Saved 16600 entries to data/vocabulary_progress.json
+✓ Batch 143 complete (16600/28787 total)
+
+--- Batch 144/265 (entries 16601-16700) ---
+[16650/28787] defenestrare -> EN: defenestrate, ZH: 退职
+[16700/28787] deionizzare -> EN: deionizing, ZH: 脱离
+✓ Saved 16700 entries to data/vocabulary_progress.json
+✓ Batch 144 complete (16700/28787 total)
+
+--- Batch 145/265 (entries 16701-16800) ---
+[16750/28787] denitrificare -> EN: denitrify, ZH: 脱硝
+[16800/28787] deragliatore -> EN: derailleur, ZH: 脱轨者
+✓ Saved 16800 entries to data/vocabulary_progress.json
+✓ Batch 145 complete (16800/28787 total)
+
+--- Batch 146/265 (entries 16801-16900) ---
+[16850/28787] destagionalizzare -> EN: seasonally adjusted, ZH: 季节性调整
+[16900/28787] devianti -> EN: deviant, ZH: 异常
+✓ Saved 16900 entries to data/vocabulary_progress.json
+✓ Batch 146 complete (16900/28787 total)
+
+--- Batch 147/265 (entries 16901-17000) ---
+[16950/28787] diboscare -> EN: deforestation, ZH: 毁林
+[17000/28787] digrignare -> EN: to dig, ZH: 要挖掘
+✓ Saved 17000 entries to data/vocabulary_progress.json
+✓ Batch 147 complete (17000/28787 total)
+
+--- Batch 148/265 (entries 17001-17100) ---
+[17050/28787] dinaro -> EN: Dinaro, ZH: 迪纳罗
+[17100/28787] diritto internazionale -> EN: international law, ZH: 国际法
+✓ Saved 17100 entries to data/vocabulary_progress.json
+✓ Batch 148 complete (17100/28787 total)
+
+--- Batch 149/265 (entries 17101-17200) ---
+[17150/28787] disbrigare -> EN: debriefing, ZH: 汇报
+[17200/28787] disfagia -> EN: Dysphagia, ZH: 斯法吉亚语Name
+✓ Saved 17200 entries to data/vocabulary_progress.json
+✓ Batch 149 complete (17200/28787 total)
+
+--- Batch 150/265 (entries 17201-17300) ---
+[17250/28787] dispnea -> EN: dispersion, ZH: 分散状态
+[17300/28787] distinto (2) -> EN: (2), ZH: (二)
+✓ Saved 17300 entries to data/vocabulary_progress.json
+✓ Batch 150 complete (17300/28787 total)
+
+--- Batch 151/265 (entries 17301-17400) ---
+[17350/28787] divorziato (2) -> EN: divorced (2), ZH: 离婚(2)
+[17400/28787] dopante -> EN: Dopante, ZH: 点缀
+✓ Saved 17400 entries to data/vocabulary_progress.json
+✓ Batch 151 complete (17400/28787 total)
+
+--- Batch 152/265 (entries 17401-17500) ---
+[17450/28787] ducato -> EN: Duchy, ZH: 杜齐
+[17500/28787] eclittica -> EN: ecliptic, ZH: 椭圆形
+✓ Saved 17500 entries to data/vocabulary_progress.json
+✓ Batch 152 complete (17500/28787 total)
+
+--- Batch 153/265 (entries 17501-17600) ---
+[17550/28787] edonistico -> EN: hedonistic, ZH: 享乐主义
+[17600/28787] elastomero -> EN: elastomer, ZH: 弹性
+✓ Saved 17600 entries to data/vocabulary_progress.json
+✓ Batch 153 complete (17600/28787 total)
+
+--- Batch 154/265 (entries 17601-17700) ---
+[17650/28787] elettrolitico -> EN: electrolyte, ZH: 电解质
+[17700/28787] elicotterista -> EN: helicopter, ZH: 直升机
+✓ Saved 17700 entries to data/vocabulary_progress.json
+✓ Batch 154 complete (17700/28787 total)
+
+--- Batch 155/265 (entries 17701-17800) ---
+[17750/28787] emersione -> EN: emerging, ZH: 新兴
+[17800/28787] encomiare -> EN: encomi, ZH: 新闻
+✓ Saved 17800 entries to data/vocabulary_progress.json
+✓ Batch 155 complete (17800/28787 total)
+
+--- Batch 156/265 (entries 17801-17900) ---
+[17850/28787] Enrica -> EN: Enrica, ZH: 埃里卡语Name
+[17900/28787] epidermide -> EN: epidermis, ZH: 缩写
+✓ Saved 17900 entries to data/vocabulary_progress.json
+✓ Batch 156 complete (17900/28787 total)
+
+--- Batch 157/265 (entries 17901-18000) ---
+[17950/28787] equilibrare -> EN: balancing, ZH: 平衡
+[18000/28787] Ermenegilda -> EN: Ermenegilda, ZH: 埃尔梅内吉尔达
+✓ Saved 18000 entries to data/vocabulary_progress.json
+✓ Batch 157 complete (18000/28787 total)
+
+--- Batch 158/265 (entries 18001-18100) ---
+[18050/28787] esattoriale -> EN: exacting, ZH: 强数
+[18100/28787] esordiente -> EN: Esordio, ZH: 埃索迪奥
+✓ Saved 18100 entries to data/vocabulary_progress.json
+✓ Batch 158 complete (18100/28787 total)
+
+--- Batch 159/265 (entries 18101-18200) ---
+[18150/28787] estendersi -> EN: extend, ZH: 扩展
+[18200/28787] eterolisi -> EN: heterolysis, ZH: 热解
+✓ Saved 18200 entries to data/vocabulary_progress.json
+✓ Batch 159 complete (18200/28787 total)
+
+--- Batch 160/265 (entries 18201-18300) ---
+[18250/28787] etruscologia -> EN: Etruscan, ZH: 伊特鲁里亚语Name
+[18300/28787] evirato -> EN: eviction, ZH: 驱逐
+✓ Saved 18300 entries to data/vocabulary_progress.json
+✓ Batch 160 complete (18300/28787 total)
+
+--- Batch 161/265 (entries 18301-18400) ---
+[18350/28787] fallare -> EN: fail, ZH: 失败
+[18400/28787] farmacodinamica -> EN: pharmacodynamics, ZH: 药剂动力学
+✓ Saved 18400 entries to data/vocabulary_progress.json
+✓ Batch 161 complete (18400/28787 total)
+
+--- Batch 162/265 (entries 18401-18500) ---
+[18450/28787] fattucchiera -> EN: invoice, ZH: 发票
+[18500/28787] fenicio -> EN: Phoenician, ZH: 腓尼基人
+✓ Saved 18500 entries to data/vocabulary_progress.json
+✓ Batch 162 complete (18500/28787 total)
+
+--- Batch 163/265 (entries 18501-18600) ---
+[18550/28787] ferroportina -> EN: Iron and steel, ZH: 钢铁
+[18600/28787] fievolmente -> EN: flexibly, ZH: 灵活
+✓ Saved 18600 entries to data/vocabulary_progress.json
+✓ Batch 163 complete (18600/28787 total)
+
+--- Batch 164/265 (entries 18601-18700) ---
+[18650/28787] filtropressa -> EN: filterpress, ZH: 过滤压缩
+[18700/28787] fisica della materia condensata -> EN: Condensed matter physics, ZH: 凝固物质物理
+✓ Saved 18700 entries to data/vocabulary_progress.json
+✓ Batch 164 complete (18700/28787 total)
+
+--- Batch 165/265 (entries 18701-18800) ---
+[18750/28787] flegma -> EN: ♪, ZH: ? 吗?
+[18800/28787] follicolo -> EN: follicle, ZH: 胶囊
+✓ Saved 18800 entries to data/vocabulary_progress.json
+✓ Batch 165 complete (18800/28787 total)
+
+--- Batch 166/265 (entries 18801-18900) ---
+[18850/28787] formico -> EN: Formal, ZH: 正式
+[18900/28787] fotocomporre -> EN: photocompose, ZH: 摄影
+✓ Saved 18900 entries to data/vocabulary_progress.json
+✓ Batch 166 complete (18900/28787 total)
+
+--- Batch 167/265 (entries 18901-19000) ---
+[18950/28787] franchismo -> EN: franchise, ZH: 特许权
+[19000/28787] frinire -> EN: frying, ZH: 煎饼
+✓ Saved 19000 entries to data/vocabulary_progress.json
+✓ Batch 167 complete (19000/28787 total)
+
+--- Batch 168/265 (entries 19001-19100) ---
+[19050/28787] fumoso -> EN: smoked, ZH: 吸烟
+[19100/28787] galvanometro -> EN: galvanometer, ZH: 恒温计
+✓ Saved 19100 entries to data/vocabulary_progress.json
+✓ Batch 168 complete (19100/28787 total)
+
+--- Batch 169/265 (entries 19101-19200) ---
+[19150/28787] gavitello -> EN: basket, ZH: 篮子
+[19200/28787] geobotanica -> EN: Georgian, ZH: 格鲁吉亚语Name
+✓ Saved 19200 entries to data/vocabulary_progress.json
+✓ Batch 169 complete (19200/28787 total)
+
+--- Batch 170/265 (entries 19201-19300) ---
+[19250/28787] geopsicologia -> EN: geopsychology, ZH: 地球心理学
+[19300/28787] gherminella -> EN: Cheese, ZH: 奶酪
+✓ Saved 19300 entries to data/vocabulary_progress.json
+✓ Batch 170 complete (19300/28787 total)
+
+--- Batch 171/265 (entries 19301-19400) ---
+[19350/28787] giavellotto -> EN: javelin, ZH: 贾维林
+[19400/28787] giroplano -> EN: airplane ride, ZH: 驾驶飞机
+✓ Saved 19400 entries to data/vocabulary_progress.json
+✓ Batch 171 complete (19400/28787 total)
+
+--- Batch 172/265 (entries 19401-19500) ---
+[19450/28787] glicolico -> EN: glycolic, ZH: 胶片
+[19500/28787] gonfalone -> EN: gonfalone, ZH: 苍蝇
+✓ Saved 19500 entries to data/vocabulary_progress.json
+✓ Batch 172 complete (19500/28787 total)
+
+--- Batch 173/265 (entries 19501-19600) ---
+[19550/28787] grande magazzino -> EN: large warehouse, ZH: 大仓库
+[19600/28787] grigio ardesia -> EN: grey slate, ZH: 灰色板块
+✓ Saved 19600 entries to data/vocabulary_progress.json
+✓ Batch 173 complete (19600/28787 total)
+
+--- Batch 174/265 (entries 19601-19700) ---
+[19650/28787] groviera -> EN: groviera, ZH: 杂草
+[19700/28787] guiderdone -> EN: guiderdo, ZH: 指南
+✓ Saved 19700 entries to data/vocabulary_progress.json
+✓ Batch 174 complete (19700/28787 total)
+
+--- Batch 175/265 (entries 19701-19800) ---
+[19750/28787] iconografia -> EN: iconography, ZH: 图标
+[19800/28787] idrologia -> EN: hydrology, ZH: 水文
+✓ Saved 19800 entries to data/vocabulary_progress.json
+✓ Batch 175 complete (19800/28787 total)
+
+--- Batch 176/265 (entries 19801-19900) ---
+[19850/28787] illegittimamente -> EN: unlawfully, ZH: 非法行动
+[19900/28787] immagazzinamento -> EN: storage, ZH: 存储
+✓ Saved 19900 entries to data/vocabulary_progress.json
+✓ Batch 176 complete (19900/28787 total)
+
+--- Batch 177/265 (entries 19901-20000) ---
+[19950/28787] immunologico -> EN: immunological, ZH: 免疫学
+[20000/28787] impetuosamente -> EN: impetuously, ZH: 冲动
+✓ Saved 20000 entries to data/vocabulary_progress.json
+✓ Batch 177 complete (20000/28787 total)
+
+--- Batch 178/265 (entries 20001-20100) ---
+[20050/28787] imprevedibilità -> EN: Unpredictable, ZH: 无法预测
+[20100/28787] inappuntabile -> EN: Unmissable, ZH: 不可错失
+✓ Saved 20100 entries to data/vocabulary_progress.json
+✓ Batch 178 complete (20100/28787 total)
+
+--- Batch 179/265 (entries 20101-20200) ---
+[20150/28787] incivilmente -> EN: Incidentally, ZH: 顺便说一句
+[20200/28787] increscioso -> EN: increscio, ZH: 内脏
+✓ Saved 20200 entries to data/vocabulary_progress.json
+✓ Batch 179 complete (20200/28787 total)
+
+--- Batch 180/265 (entries 20201-20300) ---
+[20250/28787] indiscutibilmente -> EN: unquestionably, ZH: 毫无疑问
+[20300/28787] ineffabile -> EN: ineffable, ZH: 无效
+✓ Saved 20300 entries to data/vocabulary_progress.json
+✓ Batch 180 complete (20300/28787 total)
+
+--- Batch 181/265 (entries 20301-20400) ---
+[20350/28787] infiammare -> EN: inflam, ZH: 炎症
+[20400/28787] ingegneria edile -> EN: Construction engineering, ZH: 建筑工程
+✓ Saved 20400 entries to data/vocabulary_progress.json
+✓ Batch 181 complete (20400/28787 total)
+
+--- Batch 182/265 (entries 20401-20500) ---
+[20450/28787] inibire -> EN: inhibit, ZH: 抑制
+[20500/28787] inquisire -> EN: Inquisition, ZH: 问讯处
+✓ Saved 20500 entries to data/vocabulary_progress.json
+✓ Batch 182 complete (20500/28787 total)
+
+--- Batch 183/265 (entries 20501-20600) ---
+[20550/28787] insperato -> EN: desperate, ZH: 绝望
+[20600/28787] intercalare -> EN: intercaling, ZH: 间距
+✓ Saved 20600 entries to data/vocabulary_progress.json
+✓ Batch 183 complete (20600/28787 total)
+
+--- Batch 184/265 (entries 20601-20700) ---
+[20650/28787] interzato in fascia -> EN: intersected in band, ZH: 在带中交叉
+[20700/28787] invadenza -> EN: intrusion, ZH: 干扰
+✓ Saved 20700 entries to data/vocabulary_progress.json
+✓ Batch 184 complete (20700/28787 total)
+
+--- Batch 185/265 (entries 20701-20800) ---
+[20750/28787] ipercloridria -> EN: hyperchloride, ZH: 超氯化物
+[20800/28787] irenico -> EN: hyrenic, ZH: 韵律
+✓ Saved 20800 entries to data/vocabulary_progress.json
+✓ Batch 185 complete (20800/28787 total)
+
+--- Batch 186/265 (entries 20801-20900) ---
+[20850/28787] ischemia -> EN: ischemia, ZH: 缺血症
+[20900/28787] istituzionalismo -> EN: institutionalism, ZH: 体制主义
+✓ Saved 20900 entries to data/vocabulary_progress.json
+✓ Batch 186 complete (20900/28787 total)
+
+--- Batch 187/265 (entries 20901-21000) ---
+[20950/28787] kafkiano -> EN: Kafkian, ZH: 卡夫坚
+[21000/28787] lager (2) -> EN: Lager (2), ZH: 拉格尔(2)
+✓ Saved 21000 entries to data/vocabulary_progress.json
+✓ Batch 187 complete (21000/28787 total)
+
+--- Batch 188/265 (entries 21001-21100) ---
+[21050/28787] lascivamente -> EN: I'm leaving, ZH: 我这就走
+[21100/28787] lealismo -> EN: loyalism, ZH: 忠诚
+✓ Saved 21100 entries to data/vocabulary_progress.json
+✓ Batch 188 complete (21100/28787 total)
+
+--- Batch 189/265 (entries 21101-21200) ---
+[21150/28787] lepegoso -> EN: Lepegous, ZH: 勒佩古斯语Name
+[21200/28787] libertinaggio -> EN: libertin, ZH: 利伯丁语Name
+✓ Saved 21200 entries to data/vocabulary_progress.json
+✓ Batch 189 complete (21200/28787 total)
+
+--- Batch 190/265 (entries 21201-21300) ---
+[21250/28787] linfoblasto -> EN: Lymphoblast, ZH: 淋巴弹
+[21300/28787] litania -> EN: Litania, ZH: 利塔纳
+✓ Saved 21300 entries to data/vocabulary_progress.json
+✓ Batch 190 complete (21300/28787 total)
+
+--- Batch 191/265 (entries 21301-21400) ---
+[21350/28787] logorroico -> EN: logorror, ZH: 标志
+[21400/28787] luminescente -> EN: luminescent, ZH: 发光
+✓ Saved 21400 entries to data/vocabulary_progress.json
+✓ Batch 191 complete (21400/28787 total)
+
+--- Batch 192/265 (entries 21401-21500) ---
+[21450/28787] macchina per ufficio -> EN: office machine, ZH: 办公机器
+[21500/28787] madreperla -> EN: Mother of pearl, ZH: 珍珠妈妈
+✓ Saved 21500 entries to data/vocabulary_progress.json
+✓ Batch 192 complete (21500/28787 total)
+
+--- Batch 193/265 (entries 21501-21600) ---
+[21550/28787] magnetron -> EN: magnetron, ZH: 磁铁
+[21600/28787] malefiche -> EN: curses, ZH: 诅咒
+✓ Saved 21600 entries to data/vocabulary_progress.json
+✓ Batch 193 complete (21600/28787 total)
+
+--- Batch 194/265 (entries 21601-21700) ---
+[21650/28787] mandorlato -> EN: Mandored, ZH: 涂鸦
+[21700/28787] manutenibilità -> EN: maintenance, ZH: 维修
+✓ Saved 21700 entries to data/vocabulary_progress.json
+✓ Batch 194 complete (21700/28787 total)
+
+--- Batch 195/265 (entries 21701-21800) ---
+[21750/28787] marrone capriolo -> EN: brown capricious, ZH: 棕色反复无常
+[21800/28787] mastice -> EN: mastic, ZH: 弹性
+✓ Saved 21800 entries to data/vocabulary_progress.json
+✓ Batch 195 complete (21800/28787 total)
+
+--- Batch 196/265 (entries 21801-21900) ---
+[21850/28787] meccanicista -> EN: mechanics, ZH: 机械
+[21900/28787] melagrana -> EN: pomegranate, ZH: 石榴
+✓ Saved 21900 entries to data/vocabulary_progress.json
+✓ Batch 196 complete (21900/28787 total)
+
+--- Batch 197/265 (entries 21901-22000) ---
+[21950/28787] mercantilismo -> EN: merchantism, ZH: 商贸主义
+[22000/28787] mestolone -> EN: mestolone, ZH: 镇静剂
+✓ Saved 22000 entries to data/vocabulary_progress.json
+✓ Batch 197 complete (22000/28787 total)
+
+--- Batch 198/265 (entries 22001-22100) ---
+[22050/28787] metronomo -> EN: metronome, ZH: 节拍器
+[22100/28787] microelettronico -> EN: microelectronics, ZH: 微电子
+✓ Saved 22100 entries to data/vocabulary_progress.json
+✓ Batch 198 complete (22100/28787 total)
+
+--- Batch 199/265 (entries 22101-22200) ---
+[22150/28787] millisecondo -> EN: millisecond, ZH: 毫秒( X)
+[22200/28787] miracolo economico -> EN: economic miracle, ZH: 经济奇迹
+✓ Saved 22200 entries to data/vocabulary_progress.json
+✓ Batch 199 complete (22200/28787 total)
+
+--- Batch 200/265 (entries 22201-22300) ---
+[22250/28787] modellazione -> EN: modelling, ZH: 建模
+[22300/28787] monarchismo -> EN: monarchism, ZH: 君主制
+✓ Saved 22300 entries to data/vocabulary_progress.json
+✓ Batch 200 complete (22300/28787 total)
+
+--- Batch 201/265 (entries 22301-22400) ---
+[22350/28787] monoplano -> EN: monoplane, ZH: 单机
+[22400/28787] morto (2) -> EN: dead (2), ZH: 已死亡(2)
+✓ Saved 22400 entries to data/vocabulary_progress.json
+✓ Batch 201 complete (22400/28787 total)
+
+--- Batch 202/265 (entries 22401-22500) ---
+[22450/28787] mucopolisaccaridosi -> EN: mucopolisaccharides, ZH: 木波利萨科里得斯
+[22500/28787] mutismo -> EN: Mutualism, ZH: 相互主义
+✓ Saved 22500 entries to data/vocabulary_progress.json
+✓ Batch 202 complete (22500/28787 total)
+
+--- Batch 203/265 (entries 22501-22600) ---
+[22550/28787] naturalismo -> EN: naturalism, ZH: 自然主义
+[22600/28787] neghittoso -> EN: negotiating, ZH: 谈判
+✓ Saved 22600 entries to data/vocabulary_progress.json
+✓ Batch 203 complete (22600/28787 total)
+
+--- Batch 204/265 (entries 22601-22700) ---
+[22650/28787] neurobiologia -> EN: neurobiology, ZH: 神经生物学
+[22700/28787] Niger -> EN: Niger, ZH: 尼日尔
+✓ Saved 22700 entries to data/vocabulary_progress.json
+✓ Batch 204 complete (22700/28787 total)
+
+--- Batch 205/265 (entries 22701-22800) ---
+[22750/28787] nomotesia -> EN: nomothesia, ZH: 无麻醉
+[22800/28787] nubifragio -> EN: nubifragio, ZH: 努比弗拉焦语Name
+✓ Saved 22800 entries to data/vocabulary_progress.json
+✓ Batch 205 complete (22800/28787 total)
+
+--- Batch 206/265 (entries 22801-22900) ---
+[22850/28787] Nuoro -> EN: Nuoro, ZH: 努罗
+[22900/28787] occhio della Provvidenza -> EN: eye of Providence, ZH: 普罗维登斯的眼睛
+✓ Saved 22900 entries to data/vocabulary_progress.json
+✓ Batch 206 complete (22900/28787 total)
+
+--- Batch 207/265 (entries 22901-23000) ---
+[22950/28787] oleandro -> EN: oleander, ZH: 兰德
+[23000/28787] omeotermia -> EN: omeothermia, ZH: 食肉动物
+✓ Saved 23000 entries to data/vocabulary_progress.json
+✓ Batch 207 complete (23000/28787 total)
+
+--- Batch 208/265 (entries 23001-23100) ---
+[23050/28787] ontologico -> EN: ontological, ZH: 肿瘤
+[23100/28787] orchestrazione -> EN: orchestration, ZH: 协调
+✓ Saved 23100 entries to data/vocabulary_progress.json
+✓ Batch 208 complete (23100/28787 total)
+
+--- Batch 209/265 (entries 23101-23200) ---
+[23150/28787] orrido (2) -> EN: horrid (2), ZH: 骇人听闻(2)
+[23200/28787] ossido di diazoto -> EN: Diazote oxide, ZH: 氧化二氮
+✓ Saved 23200 entries to data/vocabulary_progress.json
+✓ Batch 209 complete (23200/28787 total)
+
+--- Batch 210/265 (entries 23201-23300) ---
+[23250/28787] ottagono -> EN: octagon, ZH: 八边形
+[23300/28787] ozioso -> EN: ocious, ZH: 严重
+✓ Saved 23300 entries to data/vocabulary_progress.json
+✓ Batch 210 complete (23300/28787 total)
+
+--- Batch 211/265 (entries 23301-23400) ---
+[23350/28787] pallamano -> EN: Handball, ZH: 手球赛
+[23400/28787] pangrattato -> EN: breadcrumbs, ZH: 面包屑
+✓ Saved 23400 entries to data/vocabulary_progress.json
+✓ Batch 211 complete (23400/28787 total)
+
+--- Batch 212/265 (entries 23401-23500) ---
+[23450/28787] paramilitare -> EN: paramilitary, ZH: 准军事部队
+[23500/28787] paroliere -> EN: paroly, ZH: 简约
+✓ Saved 23500 entries to data/vocabulary_progress.json
+✓ Batch 212 complete (23500/28787 total)
+
+--- Batch 213/265 (entries 23501-23600) ---
+[23550/28787] passeggiatrice -> EN: walker, ZH: 行脚
+[23600/28787] paturnie -> EN: paturnie, ZH: pat
+✓ Saved 23600 entries to data/vocabulary_progress.json
+✓ Batch 213 complete (23600/28787 total)
+
+--- Batch 214/265 (entries 23601-23700) ---
+[23650/28787] pelvi -> EN: pelvis, ZH: 骨盆
+[23700/28787] per mille -> EN: per thousand, ZH: 每千个
+✓ Saved 23700 entries to data/vocabulary_progress.json
+✓ Batch 214 complete (23700/28787 total)
+
+--- Batch 215/265 (entries 23701-23800) ---
+[23750/28787] permeabilità -> EN: permeability, ZH: 渗透性
+[23800/28787] peso atomico -> EN: atomic weight, ZH: 原子重量
+✓ Saved 23800 entries to data/vocabulary_progress.json
+✓ Batch 215 complete (23800/28787 total)
+
+--- Batch 216/265 (entries 23801-23900) ---
+[23850/28787] piazzista -> EN: Piazzista, ZH: 皮亚齐斯塔
+[23900/28787] pinocitosi -> EN: pynocytes, ZH: 烟细胞
+✓ Saved 23900 entries to data/vocabulary_progress.json
+✓ Batch 216 complete (23900/28787 total)
+
+--- Batch 217/265 (entries 23901-24000) ---
+[23950/28787] PL -> EN: PLUS, ZH: 组合
+[24000/28787] plico -> EN: p, ZH: 页:1
+✓ Saved 24000 entries to data/vocabulary_progress.json
+✓ Batch 217 complete (24000/28787 total)
+
+--- Batch 218/265 (entries 24001-24100) ---
+[24050/28787] poliartrite -> EN: polyarthritis, ZH: 多关节炎
+[24100/28787] polittico -> EN: polyptych, ZH: 聚pt
+✓ Saved 24100 entries to data/vocabulary_progress.json
+✓ Batch 218 complete (24100/28787 total)
+
+--- Batch 219/265 (entries 24101-24200) ---
+[24150/28787] porgere (2) -> EN: (2), ZH: (二)
+[24200/28787] postmoderno -> EN: postmodern, ZH: 后现代
+✓ Saved 24200 entries to data/vocabulary_progress.json
+✓ Batch 219 complete (24200/28787 total)
+
+--- Batch 220/265 (entries 24201-24300) ---
+[24250/28787] precursore -> EN: precursor, ZH: 前体
+[24300/28787] preparatorio -> EN: preparation, ZH: 筹备
+✓ Saved 24300 entries to data/vocabulary_progress.json
+✓ Batch 220 complete (24300/28787 total)
+
+--- Batch 221/265 (entries 24301-24400) ---
+[24350/28787] priapismo -> EN: Priapism, ZH: 偏见
+[24400/28787] proctite -> EN: proctitis, ZH: 蛋白质炎
+✓ Saved 24400 entries to data/vocabulary_progress.json
+✓ Batch 221 complete (24400/28787 total)
+
+--- Batch 222/265 (entries 24401-24500) ---
+[24450/28787] prolattina -> EN: progeny, ZH: 子孙
+[24500/28787] proposizione contraria -> EN: proposition contrary, ZH: 主张相反
+✓ Saved 24500 entries to data/vocabulary_progress.json
+✓ Batch 222 complete (24500/28787 total)
+
+--- Batch 223/265 (entries 24501-24600) ---
+[24550/28787] protocollare -> EN: protocol, ZH: 协议
+[24600/28787] psicobiologia -> EN: psychobiology, ZH: 心理生物学
+✓ Saved 24600 entries to data/vocabulary_progress.json
+✓ Batch 223 complete (24600/28787 total)
+
+--- Batch 224/265 (entries 24601-24700) ---
+[24650/28787] puerperio -> EN: Puerperio, ZH: 皮尔佩里奥
+[24700/28787] purgativo -> EN: purgative, ZH: 净化
+✓ Saved 24700 entries to data/vocabulary_progress.json
+✓ Batch 224 complete (24700/28787 total)
+
+--- Batch 225/265 (entries 24701-24800) ---
+[24750/28787] quarantaquattro -> EN: Forty-four, ZH: 四十四岁
+[24800/28787] radeggiare -> EN: shading, ZH: 阴影
+✓ Saved 24800 entries to data/vocabulary_progress.json
+✓ Batch 225 complete (24800/28787 total)
+
+--- Batch 226/265 (entries 24801-24900) ---
+[24850/28787] raffazzonare -> EN: refinement, ZH: 完善
+[24900/28787] rapido (2) -> EN: Quick (2), ZH: 快点(2)
+✓ Saved 24900 entries to data/vocabulary_progress.json
+✓ Batch 226 complete (24900/28787 total)
+
+--- Batch 227/265 (entries 24901-25000) ---
+[24950/28787] realtà virtuale -> EN: virtual reality, ZH: 虚拟现实
+[25000/28787] reggipetto -> EN: Braided, ZH: 编程
+✓ Saved 25000 entries to data/vocabulary_progress.json
+✓ Batch 227 complete (25000/28787 total)
+
+--- Batch 228/265 (entries 25001-25100) ---
+[25050/28787] repleto -> EN: replenishment, ZH: 增资
+[25100/28787] retroversione -> EN: retroversion, ZH: 回转
+✓ Saved 25100 entries to data/vocabulary_progress.json
+✓ Batch 228 complete (25100/28787 total)
+
+--- Batch 229/265 (entries 25101-25200) ---
+[25150/28787] ricetrasmissione -> EN: transceiver, ZH: 收发机
+[25200/28787] rifinitura -> EN: finishing, ZH: 结束
+✓ Saved 25200 entries to data/vocabulary_progress.json
+✓ Batch 229 complete (25200/28787 total)
+
+--- Batch 230/265 (entries 25201-25300) ---
+[25250/28787] rimunerativo -> EN: remuneration, ZH: 薪酬
+[25300/28787] risacca -> EN: laugh, ZH: 笑一个
+✓ Saved 25300 entries to data/vocabulary_progress.json
+✓ Batch 230 complete (25300/28787 total)
+
+--- Batch 231/265 (entries 25301-25400) ---
+[25350/28787] rivoluzione industriale -> EN: Industrial revolution, ZH: 工业革命
+[25400/28787] roncola -> EN: Iron, ZH: 铁
+✓ Saved 25400 entries to data/vocabulary_progress.json
+✓ Batch 231 complete (25400/28787 total)
+
+--- Batch 232/265 (entries 25401-25500) ---
+[25450/28787] rototraslazione -> EN: rototranslation, ZH: 旋转翻译
+[25500/28787] ruttare -> EN: ruttare, ZH: 规则
+✓ Saved 25500 entries to data/vocabulary_progress.json
+✓ Batch 232 complete (25500/28787 total)
+
+--- Batch 233/265 (entries 25501-25600) ---
+[25550/28787] salgemma -> EN: salgema, ZH: 萨尔格马
+[25600/28787] Saragozza -> EN: Saragossa, ZH: 萨拉戈萨
+✓ Saved 25600 entries to data/vocabulary_progress.json
+✓ Batch 233 complete (25600/28787 total)
+
+--- Batch 234/265 (entries 25601-25700) ---
+[25650/28787] sbobinare -> EN: Sbobine, ZH: 斯波宾语
+[25700/28787] scanalato -> EN: grooved, ZH: 显示
+✓ Saved 25700 entries to data/vocabulary_progress.json
+✓ Batch 234 complete (25700/28787 total)
+
+--- Batch 235/265 (entries 25701-25800) ---
+[25750/28787] scenografo -> EN: stage, ZH: 阶段
+[25800/28787] sciattamente -> EN: skilfully, ZH: 熟练
+✓ Saved 25800 entries to data/vocabulary_progress.json
+✓ Batch 235 complete (25800/28787 total)
+
+--- Batch 236/265 (entries 25801-25900) ---
+[25850/28787] scolasticamente -> EN: schooling, ZH: 入学
+[25900/28787] sconvenientemente -> EN: inconvenience, ZH: 不便之处
+✓ Saved 25900 entries to data/vocabulary_progress.json
+✓ Batch 236 complete (25900/28787 total)
+
+--- Batch 237/265 (entries 25901-26000) ---
+[25950/28787] scucito -> EN: shaken, ZH: 摇晃
+[26000/28787] secondo (2) -> EN: (2), ZH: (二)
+✓ Saved 26000 entries to data/vocabulary_progress.json
+✓ Batch 237 complete (26000/28787 total)
+
+--- Batch 238/265 (entries 26001-26100) ---
+[26050/28787] semiasse -> EN: semi-, ZH: 半导体
+[26100/28787] Senegal -> EN: Senegal, ZH: 塞内加尔
+✓ Saved 26100 entries to data/vocabulary_progress.json
+✓ Batch 238 complete (26100/28787 total)
+
+--- Batch 239/265 (entries 26101-26200) ---
+[26150/28787] sessantasei -> EN: Sixty-six, ZH: 66个
+[26200/28787] sfaticato -> EN: vented, ZH: 通风
+✓ Saved 26200 entries to data/vocabulary_progress.json
+✓ Batch 239 complete (26200/28787 total)
+
+--- Batch 240/265 (entries 26201-26300) ---
+[26250/28787] sgombero -> EN: cleared, ZH: 清除
+[26300/28787] sigaretta elettronica -> EN: electronic cigarette, ZH: 电子香烟
+✓ Saved 26300 entries to data/vocabulary_progress.json
+✓ Batch 240 complete (26300/28787 total)
+
+--- Batch 241/265 (entries 26301-26400) ---
+[26350/28787] sinestetico -> EN: Synesthetic, ZH: 合成
+[26400/28787] sistemico -> EN: systems, ZH: 系统
+✓ Saved 26400 entries to data/vocabulary_progress.json
+✓ Batch 241 complete (26400/28787 total)
+
+--- Batch 242/265 (entries 26401-26500) ---
+[26450/28787] smisurato -> EN: Unpredicted, ZH: 未预测
+[26500/28787] sociologia dell'arte -> EN: sociology of art, ZH: 艺术的社会学
+✓ Saved 26500 entries to data/vocabulary_progress.json
+✓ Batch 242 complete (26500/28787 total)
+
+--- Batch 243/265 (entries 26501-26600) ---
+[26550/28787] solenoide -> EN: solenoid, ZH: 缩略语
+[26600/28787] sommaria -> EN: summary, ZH: 内容提要
+✓ Saved 26600 entries to data/vocabulary_progress.json
+✓ Batch 243 complete (26600/28787 total)
+
+--- Batch 244/265 (entries 26601-26700) ---
+[26650/28787] sororale -> EN: Soror, ZH: 索罗尔
+[26700/28787] sovesciare -> EN: Survive, ZH: 活着
+✓ Saved 26700 entries to data/vocabulary_progress.json
+✓ Batch 244 complete (26700/28787 total)
+
+--- Batch 245/265 (entries 26701-26800) ---
+[26750/28787] spartizione -> EN: partition, ZH: 分区
+[26800/28787] spersonalizzare -> EN: Spersonalize, ZH: 个性化
+✓ Saved 26800 entries to data/vocabulary_progress.json
+✓ Batch 245 complete (26800/28787 total)
+
+--- Batch 246/265 (entries 26801-26900) ---
+[26850/28787] spodestato -> EN: spoof, ZH: s
+[26900/28787] spudorato -> EN: shameless, ZH: 无耻
+✓ Saved 26900 entries to data/vocabulary_progress.json
+✓ Batch 246 complete (26900/28787 total)
+
+--- Batch 247/265 (entries 26901-27000) ---
+[26950/28787] staminale -> EN: stem, ZH: 树干
+[27000/28787] steatite -> EN: steat, ZH: 军舰
+✓ Saved 27000 entries to data/vocabulary_progress.json
+✓ Batch 247 complete (27000/28787 total)
+
+--- Batch 248/265 (entries 27001-27100) ---
+[27050/28787] stipula -> EN: stipulation, ZH: 规定
+[27100/28787] straduccia -> EN: strawberry, ZH: 草莓( 草莓)
+✓ Saved 27100 entries to data/vocabulary_progress.json
+✓ Batch 248 complete (27100/28787 total)
+
+--- Batch 249/265 (entries 27101-27200) ---
+[27150/28787] stronzio -> EN: Fucking bitch, ZH: 他妈的婊子
+[27200/28787] suburbano -> EN: suburban, ZH: 郊区
+✓ Saved 27200 entries to data/vocabulary_progress.json
+✓ Batch 249 complete (27200/28787 total)
+
+--- Batch 250/265 (entries 27201-27300) ---
+[27250/28787] superfluità -> EN: superfluous, ZH: 多余
+[27300/28787] svantaggioso -> EN: disadvantageous, ZH: 不利
+✓ Saved 27300 entries to data/vocabulary_progress.json
+✓ Batch 250 complete (27300/28787 total)
+
+--- Batch 251/265 (entries 27301-27400) ---
+[27350/28787] tachimetria -> EN: tachymetry, ZH: 纹理
+[27400/28787] tarchiato -> EN: tarchiato, ZH: 芋头
+✓ Saved 27400 entries to data/vocabulary_progress.json
+✓ Batch 251 complete (27400/28787 total)
+
+--- Batch 252/265 (entries 27401-27500) ---
+[27450/28787] tecnocratico -> EN: technocratic, ZH: 技术专家
+[27500/28787] televoto -> EN: televised, ZH: 电视
+✓ Saved 27500 entries to data/vocabulary_progress.json
+✓ Batch 252 complete (27500/28787 total)
+
+--- Batch 253/265 (entries 27501-27600) ---
+[27550/28787] teodolite -> EN: Theodolite, ZH: 西奥多利特
+[27600/28787] termoluminescenza -> EN: thermoluminescence, ZH: 热发光度
+✓ Saved 27600 entries to data/vocabulary_progress.json
+✓ Batch 253 complete (27600/28787 total)
+
+--- Batch 254/265 (entries 27601-27700) ---
+[27650/28787] terziario -> EN: Tertiary, ZH: 三年级
+[27700/28787] tetratomico -> EN: tetratory, ZH: 四进制
+✓ Saved 27700 entries to data/vocabulary_progress.json
+✓ Batch 254 complete (27700/28787 total)
+
+--- Batch 255/265 (entries 27701-27800) ---
+[27750/28787] tiroidectomia -> EN: thyroidctomy, ZH: 甲状腺切除术
+[27800/28787] toponomastica -> EN: toponomary, ZH: 自负式
+✓ Saved 27800 entries to data/vocabulary_progress.json
+✓ Batch 255 complete (27800/28787 total)
+
+--- Batch 256/265 (entries 27801-27900) ---
+[27850/28787] tracagnotto (2) -> EN: (2), ZH: (二)
+[27900/28787] transigere -> EN: transient, ZH: 短暂
+✓ Saved 27900 entries to data/vocabulary_progress.json
+✓ Batch 256 complete (27900/28787 total)
+
+--- Batch 257/265 (entries 27901-28000) ---
+[27950/28787] traslocazione -> EN: translocation, ZH: 转移
+[28000/28787] triangolo rettangolo -> EN: triangle rectangle, ZH: 三角矩形
+✓ Saved 28000 entries to data/vocabulary_progress.json
+✓ Batch 257 complete (28000/28787 total)
+
+--- Batch 258/265 (entries 28001-28100) ---
+[28050/28787] trisavolo -> EN: threesome, ZH: 三人组
+[28100/28787] tubista -> EN: tubes, ZH: 管子
+✓ Saved 28100 entries to data/vocabulary_progress.json
+✓ Batch 258 complete (28100/28787 total)
+
+--- Batch 259/265 (entries 28101-28200) ---
+[28150/28787] turpe -> EN: ♪, ZH: ? 吗?
+[28200/28787] umbro -> EN: ♪, ZH: ? 吗?
+✓ Saved 28200 entries to data/vocabulary_progress.json
+✓ Batch 259 complete (28200/28787 total)
+
+--- Batch 260/265 (entries 28201-28300) ---
+[28250/28787] urbanistico -> EN: urban planning, ZH: 城市规划
+[28300/28787] vagito -> EN: vagito, ZH: 紫罗兰
+✓ Saved 28300 entries to data/vocabulary_progress.json
+✓ Batch 260 complete (28300/28787 total)
+
+--- Batch 261/265 (entries 28301-28400) ---
+[28350/28787] vano (2) -> EN: (2), ZH: (二)
+[28400/28787] vello -> EN: sink, ZH: 隐藏
+✓ Saved 28400 entries to data/vocabulary_progress.json
+✓ Batch 261 complete (28400/28787 total)
+
+--- Batch 262/265 (entries 28401-28500) ---
+[28450/28787] verde cromo -> EN: green chrome, ZH: 绿色铬
+[28500/28787] verzura -> EN: verzura, ZH: 马祖拉
+✓ Saved 28500 entries to data/vocabulary_progress.json
+✓ Batch 262 complete (28500/28787 total)
+
+--- Batch 263/265 (entries 28501-28600) ---
+[28550/28787] videodipendente -> EN: videodependent, ZH: 视频依赖
+[28600/28787] violentatore -> EN: rapist, ZH: 强奸犯
+✓ Saved 28600 entries to data/vocabulary_progress.json
+✓ Batch 263 complete (28600/28787 total)
+
+--- Batch 264/265 (entries 28601-28700) ---
+[28650/28787] viziosamente -> EN: viciously, ZH: 恶毒
+[28700/28787] vulvovaginite -> EN: vulvovaginitis, ZH: 伏尔沃瓦金炎
+✓ Saved 28700 entries to data/vocabulary_progress.json
+✓ Batch 264 complete (28700/28787 total)
+
+--- Batch 265/265 (entries 28701-28787) ---
+[28750/28787] zigzagare -> EN: zigza, ZH: 齐格扎
+✓ Saved 28787 entries to data/vocabulary_progress.json
+✓ Batch 265 complete (28787/28787 total)
+✓ Saved 28787 entries to data/vocabulary.json
+
+============================================================
+✓ All 28787 entries processed successfully!
+✓ Enhanced vocabulary saved to data/vocabulary.json
+✓ Original backup at data/vocabulary.json.backup
+============================================================
+

@@ -1,0 +1,11 @@
+{
+  "total": 28787,
+  "withFrequency": 11885,
+  "withoutFrequency": 16902,
+  "levels": {
+    "beginner": 1000,
+    "intermediate": 3000,
+    "advanced": 5000,
+    "all": 28787
+  }
+}

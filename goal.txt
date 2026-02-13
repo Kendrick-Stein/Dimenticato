@@ -1,0 +1,232 @@
+
+---
+
+## 📌 Part 1 — 项目目标与功能需求说明书
+
+### 1.1 项目名称
+
+**意大利语背单词网页应用（本地离线版）**
+
+### 1.2 项目简介
+
+开发一个纯静态网页应用（HTML/CSS/JavaScript），用户打开本地文件即可使用，无需联网。页面展示意大利语单词列表（按频率排序）及英语翻译，支持：
+
+* 单词列表按频率排序
+* 意大利 → 英语/英语 → 意大利 双向翻译背诵
+* 简易记忆/抽认卡模式
+* 复习记录（本地浏览器存储）
+
+---
+
+### 1.3 功能清单
+
+#### 📌 前端核心功能
+
+| 功能   | 说明                       |
+| ---- | ------------------------ |
+| 单词展示 | 按使用频率从高到低显示意大利语单词及对应英语翻译 |
+| 搜索功能 | 支持关键字搜索（单词/翻译）           |
+| 记忆模式 | 抽认卡模式 —— 显示意大利语，点击翻译显示英语 |
+| 复习标记 | 用户标记“已掌握”“未掌握”           |
+| 本地存储 | 使用 LocalStorage 保存学习状态   |
+| 本地运行 | 用户下载后无需服务器可打开运行          |
+
+---
+
+### 1.4 技术要求
+
+#### 📌 技术栈
+
+* 前端：HTML5 + CSS3 + 原生 JavaScript（无需框架）
+* 数据格式：CSV 或 JSON
+* 运行平台：本地浏览器
+
+#### 📌 数据存储与结构
+
+建议使用 **CSV 或 JSON 数据文件**，结构例如：
+
+```csv
+italian,english,frequency_rank
+di,of,1
+e,and,2
+che,that,3
+...
+```
+
+或者 JSON 形式：
+
+```json
+[
+  {"italian":"di","english":"of","freq":1},
+  {"italian":"e","english":"and","freq":2},
+  ...
+]
+```
+
+---
+
+## 📌 Part 2 — 哪里能下载数据资源
+
+你需要意大利语单词按使用频率排序，并附英文翻译的词库。以下都是可用资源：
+
+### 🔹 推荐数据源（免费）
+
+1. **Word Frequency Lists ITA（GitHub）**
+   提供按词性分类的意大利语词频数据：名词、动词、形容词等，可以用作基础词库。 ([GitHub][1])
+
+   GitHub: `https://github.com/franfranz/Word_Frequency_Lists_ITA`
+
+2. **Top10000Words.com 意大利词频表**
+   提供 **前 10000 高频意大利语单词列表**，按频率排序。 ([Top 10000 Words][2])
+
+3. **1000italianwords.com**
+   自带 **1000 高频词**卡片库，可参考结构设计。 ([1000 Italian Words][3])
+
+4. **Wiktionary 频率词表 & 其他免费资源**
+   包含基于语料库统计的最常见意大利语词汇。 ([Tupuy][4])
+
+---
+
+### 🔹 如果你想快速开始
+
+获取一个 **意大利语前 1000 高频词集 + 英语翻译**：
+
+可以先用 Top10000Words 的列表 ==> 自行补上英语翻译（例如使用 Google Sheets + 自己翻译/查词典/使用 API 生成）。
+
+---
+
+## 📌 Part 3 — 实现步骤（从零到上线）
+
+---
+
+### STEP 1 — 准备数据文件
+
+1. 从 GitHub 下载频率词库 CSV 数据：
+   [https://github.com/franfranz/Word_Frequency_Lists_ITA](https://github.com/franfranz/Word_Frequency_Lists_ITA) ([GitHub][1])
+
+2. 把 CSV 合并成一个词表文件 `words.csv` 或转换成 `words.json`：
+
+   ```csv
+   italian,english,freq
+   di,of,1
+   e,and,2
+   che,that,3
+   ...
+   ```
+
+   ⚠️ 如果没有翻译，可以用工具生成或手工补充。
+
+---
+
+### STEP 2 — 构建前端界面
+
+#### 最基本页面结构
+
+```html
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>意大利语背单词</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <input id="search" placeholder="搜索单词或翻译">
+  <div id="word-list"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+```
+
+---
+
+### STEP 3 — 用 JavaScript 加载数据
+
+示例 JS 如何加载 JSON 并排序显示：
+
+```js
+fetch("words.json")
+  .then(res => res.json())
+  .then(data => {
+    data.sort((a, b) => a.freq - b.freq);
+    showWords(data);
+  });
+
+function showWords(list) {
+  const container = document.getElementById("word-list");
+  container.innerHTML = list.map(w =>
+    `<div>${w.italian} — ${w.english}</div>`
+  ).join("");
+}
+```
+
+---
+
+### STEP 4 — 添加搜索与抽认卡逻辑
+
+#### 搜索代码示例
+
+```js
+const searchInput = document.getElementById("search");
+searchInput.addEventListener("input", () => {
+  const val = searchInput.value.toLowerCase();
+  const filtered = words.filter(w =>
+    w.italian.includes(val) || w.english.includes(val)
+  );
+  showWords(filtered);
+});
+```
+
+#### 抽认卡逻辑
+
+可加一个按钮让用户“显示翻译”。
+
+---
+
+### STEP 5 — 保存用户学习状态
+
+借助 LocalStorage：
+
+```js
+localStorage.setItem("knownWords", JSON.stringify(knownList));
+const known = JSON.parse(localStorage.getItem("knownWords") || "[]");
+```
+
+---
+
+## 📌 Part 4 — 推荐工具与网页
+
+### 📌 资源列表
+
+🔗 免费频率词库下载：
+
+* GitHub: Word Frequency Lists ITA — 意大利语词频 CSV/ZIP ([GitHub][1])
+* Top10000 Italian Words — 前 10000 高频列表 ([Top 10000 Words][2])
+* 1000 最常用意大利语词汇网站（可参考格式） ([1000 Italian Words][3])
+
+🔗 实用辅助工具与学习网站：
+
+* DeclanSoftware 意大利语例句搜索工具（可查单词 + 示例） ([Reddit][5])
+* Wiktionary 词频列表（400+例句 + 频率） ([Tupuy][4])
+
+---
+
+## 📌 总结
+
+你将得到一个 **本地 HTML + JavaScript 静态网页应用**，可以：
+
+✅ 显示意大利语词频表
+✅ 支持意大利语 ↔ 英语对照
+✅ 支持搜索 + 练习模式
+✅ 本地离线运行，无需服务器
+
+---
+
+如果你需要 **现成的样例代码 + 数据 CSV 模板** 或者想加入 **记忆曲线算法（艾宾浩斯间隔重复）**，我也可以继续给你提供完整代码范例。欢迎随时继续问我。
+
+[1]: https://github.com/franfranz/Word_Frequency_Lists_ITA?utm_source=chatgpt.com "GitHub - franfranz/Word_Frequency_Lists_ITA: Handy frequency lists of words in Italian, collected from the ItWaC corpus (Baroni, Bernardini, Ferraresi, & Zanchetta, 2009)."
+[2]: https://www.top10000words.com/?utm_source=chatgpt.com "Top10000Words.com"
+[3]: https://1000italianwords.com/?utm_source=chatgpt.com "1000 Italian Words"
+[4]: https://tupuy.com/us/5000-most-common-italian-words.html?utm_source=chatgpt.com "5000 Most Common Italian Words - Printable Online"
+[5]: https://www.reddit.com/r/italianlearning/comments/wd0i53?utm_source=chatgpt.com "Lookup Italian Phrases - a free new resource or Italian language learners"
