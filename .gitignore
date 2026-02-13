@@ -1,0 +1,64 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+translation_log.txt
+translation_parallel_log.txt
+
+# Development files (不需要部署)
+enhance_translations_parallel.py
+enhance_translations.py
+test_translate.py
+process_data.js
+update_vocabulary_js.py
+TRANSLATION_STATUS.md
+
+# Backup files
+*.backup
+data/vocabulary.json.backup
+data/vocabulary_progress.json
+
+# Raw data files (已经打包到 vocabulary.js)
+data/vocabulary.json
+data/stats.json
+ita-eng/
+it_50k.txt
+newselfdata/
+
+# Keep only necessary files for deployment:
+# - index.html
+# - styles.css
+# - app.js
+# - vocabulary.js
+# - README.md
+# - TXT_FORMAT_GUIDE.md
+# - custom_wordbook_template.json
+# - custom_wordbook_template.txt
+# - goal.txt
