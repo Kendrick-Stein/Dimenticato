@@ -1297,11 +1297,15 @@ function bindEvents() {
     document.getElementById('wordbookFileInput').click();
   });
   
-  // 创建新单词本
+  // 创建新单词本（仅当 WordbookEditor 可用时）
   document.getElementById('createWordbookBtn').addEventListener('click', () => {
-    const wordbook = WordbookEditor.createNewWordbook();
-    if (wordbook) {
-      alert(`✅ 成功创建单词本"${wordbook.name}"！\n点击单词本卡片右上角的⚙️可以添加单词。`);
+    if (typeof WordbookEditor !== 'undefined') {
+      const wordbook = WordbookEditor.createNewWordbook();
+      if (wordbook) {
+        alert(`✅ 成功创建单词本"${wordbook.name}"！\n点击单词本卡片右上角的⚙️可以添加单词。`);
+      }
+    } else {
+      alert('❌ 单词本编辑功能未加载，请刷新页面重试。');
     }
   });
   
@@ -1433,10 +1437,14 @@ function bindEvents() {
     }
   });
   
-  // 统计弹窗 - 使用增强版本
+  // 统计弹窗 - 使用增强版本（如果可用）
   document.getElementById('statsBtn').removeEventListener('click', showStatsModal);
   document.getElementById('statsBtn').addEventListener('click', () => {
-    showEnhancedStatsModal();
+    if (typeof showEnhancedStatsModal !== 'undefined') {
+      showEnhancedStatsModal();
+    } else {
+      showStatsModal();
+    }
   });
   
   document.getElementById('closeStatsBtn').addEventListener('click', () => {
@@ -1466,9 +1474,9 @@ let durationUpdateInterval = null;
 function startSessionTracking() {
   sessionStartTime = Date.now();
   
-  // 每分钟更新一次学习时长
+  // 每分钟更新一次学习时长（仅当 StatsManager 可用时）
   durationUpdateInterval = setInterval(() => {
-    if (sessionStartTime) {
+    if (sessionStartTime && typeof StatsManager !== 'undefined') {
       const duration = Math.floor((Date.now() - sessionStartTime) / 1000);
       StatsManager.updateDuration(60); // 增加60秒
     }
@@ -1476,7 +1484,7 @@ function startSessionTracking() {
 }
 
 function stopSessionTracking() {
-  if (sessionStartTime) {
+  if (sessionStartTime && typeof StatsManager !== 'undefined') {
     const duration = Math.floor((Date.now() - sessionStartTime) / 1000);
     StatsManager.updateDuration(duration);
     sessionStartTime = null;
@@ -1490,30 +1498,32 @@ function stopSessionTracking() {
 
 // ==================== 集成 SM-2 算法到测验模式 ====================
 
-// 扩展 MultipleChoice 的 checkAnswer 方法
-const originalMCCheckAnswer = MultipleChoice.checkAnswer;
-MultipleChoice.checkAnswer = function(button) {
-  const startTime = this.questionStartTime || Date.now();
-  const timeSpent = Date.now() - startTime;
-  
-  originalMCCheckAnswer.call(this, button);
-  
-  // 记录到每日统计
-  const selectedAnswer = button.dataset.answer;
-  const correctAnswer = AppState.currentWord.english;
-  const isCorrect = selectedAnswer === correctAnswer;
-  
-  StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
-  
-  // 应用 SM-2 算法
-  const quality = SpacedRepetition.convertCorrectToQuality(isCorrect, timeSpent);
-  SpacedRepetition.calculateNextReview(AppState.currentWord, quality);
-  
-  // 如果是自定义单词本，保存更新后的数据
-  if (AppState.currentWordbook) {
-    WordbookManager.saveWordbooks();
-  }
-};
+// 扩展 MultipleChoice 的 checkAnswer 方法（仅当增强功能可用时）
+if (typeof StatsManager !== 'undefined' && typeof SpacedRepetition !== 'undefined') {
+  const originalMCCheckAnswer = MultipleChoice.checkAnswer;
+  MultipleChoice.checkAnswer = function(button) {
+    const startTime = this.questionStartTime || Date.now();
+    const timeSpent = Date.now() - startTime;
+    
+    originalMCCheckAnswer.call(this, button);
+    
+    // 记录到每日统计
+    const selectedAnswer = button.dataset.answer;
+    const correctAnswer = AppState.currentWord.english;
+    const isCorrect = selectedAnswer === correctAnswer;
+    
+    StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
+    
+    // 应用 SM-2 算法
+    const quality = SpacedRepetition.convertCorrectToQuality(isCorrect, timeSpent);
+    SpacedRepetition.calculateNextReview(AppState.currentWord, quality);
+    
+    // 如果是自定义单词本，保存更新后的数据
+    if (AppState.currentWordbook) {
+      WordbookManager.saveWordbooks();
+    }
+  };
+}
 
 MultipleChoice.loadQuestion = function() {
   if (AppState.quizIndex >= AppState.currentWords.length) {
@@ -1562,28 +1572,30 @@ MultipleChoice.loadQuestion = function() {
   document.getElementById('mcFeedback').classList.add('hidden');
 };
 
-// 扩展 Spelling 的 checkAnswer 方法
-const originalSpCheckAnswer = Spelling.checkAnswer;
-Spelling.checkAnswer = function() {
-  originalSpCheckAnswer.call(this);
-  
-  // 记录到每日统计
-  const input = document.getElementById('spInput');
-  const userAnswer = input.value.trim().toLowerCase();
-  const correctAnswer = AppState.currentWord.italian.toLowerCase();
-  const isCorrect = this.normalizeString(userAnswer) === this.normalizeString(correctAnswer);
-  
-  StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
-  
-  // 应用 SM-2 算法
-  const quality = SpacedRepetition.convertCorrectToQuality(isCorrect);
-  SpacedRepetition.calculateNextReview(AppState.currentWord, quality);
-  
-  // 如果是自定义单词本，保存更新后的数据
-  if (AppState.currentWordbook) {
-    WordbookManager.saveWordbooks();
-  }
-};
+// 扩展 Spelling 的 checkAnswer 方法（仅当增强功能可用时）
+if (typeof StatsManager !== 'undefined' && typeof SpacedRepetition !== 'undefined') {
+  const originalSpCheckAnswer = Spelling.checkAnswer;
+  Spelling.checkAnswer = function() {
+    originalSpCheckAnswer.call(this);
+    
+    // 记录到每日统计
+    const input = document.getElementById('spInput');
+    const userAnswer = input.value.trim().toLowerCase();
+    const correctAnswer = AppState.currentWord.italian.toLowerCase();
+    const isCorrect = this.normalizeString(userAnswer) === this.normalizeString(correctAnswer);
+    
+    StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
+    
+    // 应用 SM-2 算法
+    const quality = SpacedRepetition.convertCorrectToQuality(isCorrect);
+    SpacedRepetition.calculateNextReview(AppState.currentWord, quality);
+    
+    // 如果是自定义单词本，保存更新后的数据
+    if (AppState.currentWordbook) {
+      WordbookManager.saveWordbooks();
+    }
+  };
+}
 
 // ==================== 单词本卡片添加管理按钮 ====================
 
@@ -1598,7 +1610,7 @@ WordbookManager.renderWordbookCards = function() {
   
   container.innerHTML = AppState.customWordbooks.map(wb => `
     <div class="wordbook-card" data-wordbook-id="${wb.id}">
-      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); WordbookEditor.openEditor(${wb.id})" title="管理单词本">⚙️</button>
+      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); if(typeof WordbookEditor !== 'undefined') { WordbookEditor.openEditor(${wb.id}); } else { alert('❌ 单词本编辑功能未加载'); }" title="管理单词本">⚙️</button>
       <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
       <span class="wordbook-card-icon">📖</span>
       <span class="wordbook-card-name">${wb.name}</span>
