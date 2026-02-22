@@ -80,6 +80,11 @@
                 <span class="level-name">导入单词本</span>
                 <span class="level-count">支持 JSON / TXT</span>
               </button>
+              <button class="level-btn import-btn" id="createWordbookBtn" style="margin-top: 1rem;">
+                <span class="level-icon">📝</span>
+                <span class="level-name">创建新单词本</span>
+                <span class="level-count">从零开始创建</span>
+              </button>
               <p class="import-hint-small">
                 <a href="custom_wordbook_template.json" download>JSON模板</a> | 
                 <a href="custom_wordbook_template.txt" download>TXT模板</a>
@@ -132,6 +137,9 @@
             <div class="question-section">
               <p class="question-label">意大利语单词：</p>
               <h2 class="italian-word" id="mcItalianWord">-</h2>
+              <button class="hint-btn hidden" id="mcShowHintBtn" onclick="MultipleChoice.showHint()">
+                💡 显示提示
+              </button>
               <p class="chinese-hint hidden" id="mcChineseHint"></p>
             </div>
 
@@ -216,6 +224,12 @@
 
     <!-- 底部工具栏 -->
     <footer class="footer">
+      <button class="footer-btn" id="exportDataBtn">
+        📤 导出数据
+      </button>
+      <button class="footer-btn" id="importDataBtn">
+        📥 导入数据
+      </button>
       <button class="footer-btn" id="resetBtn">
         🔄 重置进度
       </button>
@@ -267,6 +281,192 @@
       </div>
     </div>
   </div>
+
+  <!-- 单词本编辑器模态框 -->
+  <div id="wordbookEditorModal" class="modal hidden">
+    <div class="modal-content editor-modal-content">
+      <div class="modal-header">
+        <h3>📝 编辑单词本: <span id="editorWordbookName"></span></h3>
+        <button class="close-btn" onclick="WordbookEditor.hideEditorModal()">×</button>
+      </div>
+      <div class="modal-body editor-modal-body">
+        <div class="editor-toolbar">
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="editor-toolbar-btn" onclick="WordbookEditor.addNewWord()">
+              ➕ 添加单词
+            </button>
+            <button class="editor-toolbar-btn" onclick="WordbookEditor.showExportDialog(WordbookEditor.currentEditingWordbook.id)" title="导出单词本">
+              📤 导出
+            </button>
+          </div>
+          <div class="editor-batch-actions" style="display: none;">
+            <button class="editor-toolbar-btn danger" onclick="WordbookEditor.batchDelete()">
+              🗑️ 删除选中
+            </button>
+          </div>
+        </div>
+        <div id="editorWordList" class="editor-word-list">
+          <!-- 动态生成单词列表 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 单词编辑对话框 -->
+  <div id="wordEditDialog" class="modal hidden">
+    <div class="modal-content" style="max-width: 600px;">
+      <div class="modal-header">
+        <h3 id="wordEditDialogTitle">编辑单词</h3>
+        <button class="close-btn" onclick="WordbookEditor.hideWordEditDialog()">×</button>
+      </div>
+      <div class="modal-body">
+        <form id="wordEditForm" onsubmit="event.preventDefault(); WordbookEditor.saveWordEdit();">
+          <div class="form-group">
+            <label for="editWordItalian">意大利语 *</label>
+            <input type="text" id="editWordItalian" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="editWordEnglish">英语翻译 *</label>
+            <input type="text" id="editWordEnglish" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="editWordChinese">中文翻译</label>
+            <input type="text" id="editWordChinese" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="editWordNotes">笔记</label>
+            <textarea id="editWordNotes" class="form-textarea" rows="3"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="form-btn cancel" onclick="WordbookEditor.hideWordEditDialog()">取消</button>
+            <button type="submit" class="form-btn primary">保存</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 单词本选择对话框 -->
+  <div id="wordbookSelectDialog" class="modal hidden">
+    <div class="modal-content" style="max-width: 500px;">
+      <div class="modal-header">
+        <h3>📚 选择单词本</h3>
+        <button class="close-btn" onclick="WordbookEditor.hideWordbookSelectDialog()">×</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 1rem; color: var(--text-secondary);">将单词添加到：</p>
+        <div id="wordbookSelectList" class="wordbook-select-list">
+          <!-- 动态生成单词本列表 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 增强统计模态框 -->
+  <div id="enhancedStatsModal" class="modal hidden">
+    <div class="modal-content enhanced-stats-modal">
+      <div class="modal-header">
+        <h3>📊 学习统计</h3>
+        <button class="close-btn" onclick="hideEnhancedStatsModal()">×</button>
+      </div>
+      <div class="modal-body enhanced-stats-body">
+        <!-- 标签页导航 -->
+        <div class="stats-tabs">
+          <button class="stats-tab-btn active" data-tab="overview" onclick="switchStatsTab('overview')">
+            概览
+          </button>
+          <button class="stats-tab-btn" data-tab="charts" onclick="switchStatsTab('charts')">
+            图表
+          </button>
+          <button class="stats-tab-btn" data-tab="history" onclick="switchStatsTab('history')">
+            历史记录
+          </button>
+        </div>
+
+        <!-- 概览标签页 -->
+        <div id="overviewTab" class="stats-tab-content active">
+          <div class="stats-section">
+            <h4>📈 今日统计</h4>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-card-label">学习单词</div>
+                <div class="stat-card-value" id="enhancedStatTodayWords">0</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card-label">学习时长</div>
+                <div class="stat-card-value" id="enhancedStatTodayDuration">0分钟</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card-label">正确率</div>
+                <div class="stat-card-value" id="enhancedStatTodayAccuracy">0%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-section">
+            <h4>🏆 总计统计</h4>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-card-label">累计学习单词</div>
+                <div class="stat-card-value" id="enhancedStatTotalWords">0</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card-label">累计学习时长</div>
+                <div class="stat-card-value" id="enhancedStatTotalDuration">0分钟</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card-label">平均正确率</div>
+                <div class="stat-card-value" id="enhancedStatTotalAccuracy">0%</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card-label">练习次数</div>
+                <div class="stat-card-value" id="enhancedStatTotalAttempts">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 图表标签页 -->
+        <div id="chartsTab" class="stats-tab-content">
+          <div class="chart-container">
+            <canvas id="weeklyTrendChart"></canvas>
+          </div>
+          <div class="charts-row">
+            <div class="chart-container">
+              <canvas id="dailyWordsChart"></canvas>
+            </div>
+            <div class="chart-container">
+              <canvas id="masteryDistributionChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- 历史记录标签页 -->
+        <div id="historyTab" class="stats-tab-content">
+          <h4>📅 最近 7 天学习记录</h4>
+          <div class="stats-table-container">
+            <table class="stats-table">
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>学习单词</th>
+                  <th>学习时长</th>
+                  <th>练习次数</th>
+                  <th>正确率</th>
+                </tr>
+              </thead>
+              <tbody id="dailyStatsTableBody">
+                <!-- 动态生成 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 数据导入文件选择器 -->
+  <input type="file" id="importDataFileInput" accept=".json" style="display: none;">
 
   <!-- 帮助弹窗 -->
   <div id="helpModal" class="modal hidden">
@@ -367,8 +567,17 @@ love
           <div class="feature-box">
             <h4>🎯 学习模式</h4>
             <ul>
-              <li><strong>✏️ 选择题模式</strong> - 显示意大利语单词，从4个选项中选择正确的英语翻译</li>
-              <li><strong>⌨️ 拼写模式</strong> - 显示英语翻译，输入意大利语单词</li>
+              <li><strong>✏️ 选择题模式</strong> - 显示意大利语单词，从4个选项中选择正确的英语翻译
+                <ul>
+                  <li>💡 中文提示默认隐藏，需要时点击"显示提示"按钮查看</li>
+                  <li>避免直接给出答案，提高学习效果</li>
+                </ul>
+              </li>
+              <li><strong>⌨️ 拼写模式</strong> - 显示英语翻译，输入意大利语单词
+                <ul>
+                  <li>中文提示默认显示，帮助理解单词含义</li>
+                </ul>
+              </li>
               <li><strong>📖 浏览模式</strong> - 查看完整单词列表，支持搜索和过滤</li>
             </ul>
           </div>
@@ -402,6 +611,42 @@ love
 
         <div class="help-section">
           <h3>🌟 其他功能</h3>
+          
+          <div class="feature-box">
+            <h4>📤 导出/导入学习记录</h4>
+            <ul>
+              <li><strong>📤 导出数据</strong> - 将所有学习进度、统计数据、自定义单词本导出为 JSON 文件
+                <ul>
+                  <li>包含系统词汇和自定义单词本的学习进度</li>
+                  <li>包含每日统计和练习记录</li>
+                  <li>文件名自动包含导出日期时间</li>
+                </ul>
+              </li>
+              <li><strong>📥 导入数据</strong> - 从之前导出的 JSON 文件恢复学习记录
+                <ul>
+                  <li><strong>覆盖模式</strong>：清空现有数据，用导入数据完全替换</li>
+                  <li><strong>合并模式</strong>：保留现有数据，将导入数据合并进来</li>
+                  <li>适用于跨设备同步学习进度</li>
+                </ul>
+              </li>
+            </ul>
+            <p class="help-tip">💡 <strong>提示：</strong>建议定期导出数据备份，换设备时可以通过导入恢复学习进度！</p>
+          </div>
+
+          <div class="feature-box">
+            <h4>📝 浏览模式高级功能</h4>
+            <ul>
+              <li><strong>添加到单词本</strong> - 在浏览模式中，点击单词旁的"➕"按钮可将单词添加到自定义单词本
+                <ul>
+                  <li>可以选择添加到哪个单词本</li>
+                  <li>方便从系统词库中挑选单词创建个性化学习集</li>
+                </ul>
+              </li>
+              <li><strong>搜索过滤</strong> - 支持按意大利语或英语搜索</li>
+              <li><strong>状态筛选</strong> - 可切换显示全部/已掌握/未掌握单词</li>
+            </ul>
+          </div>
+
           <ul>
             <li><strong>📊 查看统计</strong> - 查看学习数据和正确率</li>
             <li><strong>🌓 切换主题</strong> - 在浅色和深色主题之间切换</li>
@@ -416,7 +661,12 @@ love
     </div>
   </div>
 
+  <!-- Chart.js 库 (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  
   <script src="vocabulary.js"></script>
   <script src="app.js"></script>
+  <script src="app-enhanced.js"></script>
+  <script src="stats-charts.js"></script>
 </body>
 </html>

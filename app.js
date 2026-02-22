@@ -44,7 +44,8 @@ const Storage = {
     STATS: 'dimenticato_stats',
     LEVEL: 'dimenticato_level',
     THEME: 'dimenticato_theme',
-    CUSTOM_WORDBOOKS: 'dimenticato_custom_wordbooks'
+    CUSTOM_WORDBOOKS: 'dimenticato_custom_wordbooks',
+    DAILY_STATS: 'dimenticato_daily_stats'
   },
   
   save() {
@@ -118,6 +119,256 @@ const Storage = {
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     document.body.setAttribute('data-theme', newTheme);
     localStorage.setItem(this.KEYS.THEME, newTheme);
+  },
+  
+  // 导出所有学习数据
+  exportAllData() {
+    try {
+      // 收集所有 localStorage 数据
+      const exportData = {
+        version: '1.0',
+        exportDate: new Date().toISOString(),
+        exportedFrom: 'Dimenticato',
+        data: {
+          // 系统词汇学习进度
+          masteredWords: localStorage.getItem(this.KEYS.MASTERED) || '[]',
+          stats: localStorage.getItem(this.KEYS.STATS) || '{}',
+          level: localStorage.getItem(this.KEYS.LEVEL) || '1000',
+          theme: localStorage.getItem(this.KEYS.THEME) || 'light',
+          
+          // 自定义单词本
+          customWordbooks: localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS) || '[]',
+          
+          // 每日统计
+          dailyStats: localStorage.getItem(this.KEYS.DAILY_STATS) || '{}',
+          
+          // 每个单词本的学习进度
+          wordbookProgress: {}
+        }
+      };
+      
+      // 收集所有单词本的进度
+      const customWordbooks = JSON.parse(exportData.data.customWordbooks);
+      customWordbooks.forEach(wb => {
+        const progressKey = `dimenticato_progress_wb_${wb.id}`;
+        const progress = localStorage.getItem(progressKey);
+        if (progress) {
+          exportData.data.wordbookProgress[wb.id] = progress;
+        }
+      });
+      
+      // 转换为 JSON 字符串
+      const jsonString = JSON.stringify(exportData, null, 2);
+      
+      // 创建 Blob 并下载
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      
+      // 生成文件名（包含日期时间）
+      const now = new Date();
+      const dateStr = now.toISOString().split('T')[0];
+      const timeStr = now.toTimeString().split(' ')[0].replace(/:/g, '-');
+      a.download = `Dimenticato_学习数据_${dateStr}_${timeStr}.json`;
+      
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      
+      alert('✅ 学习数据导出成功！\n\n文件已保存，请妥善保管。');
+      
+    } catch (e) {
+      console.error('导出数据失败:', e);
+      alert('❌ 导出失败: ' + e.message);
+    }
+  },
+  
+  // 导入学习数据
+  importAllData(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      
+      reader.onload = (e) => {
+        try {
+          const content = e.target.result;
+          const importData = JSON.parse(content);
+          
+          // 验证数据格式
+          if (!importData.version || !importData.data) {
+            reject('无效的数据文件格式');
+            return;
+          }
+          
+          // 显示导入预览
+          const customWordbooks = JSON.parse(importData.data.customWordbooks || '[]');
+          const masteredWords = JSON.parse(importData.data.masteredWords || '[]');
+          const stats = JSON.parse(importData.data.stats || '{}');
+          
+          const confirmMsg = 
+            `📥 即将导入学习数据\n\n` +
+            `导出日期: ${new Date(importData.exportDate).toLocaleString()}\n` +
+            `系统词汇已掌握: ${masteredWords.length} 个\n` +
+            `自定义单词本: ${customWordbooks.length} 个\n` +
+            `练习次数: ${(stats.mcAttempts || 0) + (stats.spAttempts || 0)} 次\n\n` +
+            `选择导入模式：\n` +
+            `1 - 覆盖模式（清空现有数据，用导入数据替换）\n` +
+            `2 - 合并模式（保留现有数据，合并导入数据）\n` +
+            `0 - 取消\n\n` +
+            `请输入 0、1 或 2：`;
+          
+          const mode = prompt(confirmMsg);
+          
+          if (mode === '0' || mode === null) {
+            reject('用户取消导入');
+            return;
+          }
+          
+          if (mode === '1') {
+            // 覆盖模式：清空所有数据
+            this.importWithOverwrite(importData);
+            resolve('overwrite');
+          } else if (mode === '2') {
+            // 合并模式：合并数据
+            this.importWithMerge(importData);
+            resolve('merge');
+          } else {
+            reject('无效的选择');
+            return;
+          }
+          
+        } catch (error) {
+          reject('JSON 解析失败: ' + error.message);
+        }
+      };
+      
+      reader.onerror = () => {
+        reject('文件读取失败');
+      };
+      
+      reader.readAsText(file);
+    });
+  },
+  
+  // 覆盖模式导入
+  importWithOverwrite(importData) {
+    try {
+      const data = importData.data;
+      
+      // 清空所有相关数据
+      this.clearAllData();
+      
+      // 导入基本数据
+      localStorage.setItem(this.KEYS.MASTERED, data.masteredWords);
+      localStorage.setItem(this.KEYS.STATS, data.stats);
+      localStorage.setItem(this.KEYS.LEVEL, data.level);
+      localStorage.setItem(this.KEYS.THEME, data.theme);
+      localStorage.setItem(this.KEYS.CUSTOM_WORDBOOKS, data.customWordbooks);
+      localStorage.setItem(this.KEYS.DAILY_STATS, data.dailyStats);
+      
+      // 导入单词本进度
+      if (data.wordbookProgress) {
+        Object.keys(data.wordbookProgress).forEach(wbId => {
+          localStorage.setItem(`dimenticato_progress_wb_${wbId}`, data.wordbookProgress[wbId]);
+        });
+      }
+      
+      // 应用主题
+      document.body.setAttribute('data-theme', data.theme);
+      
+      // 重新加载数据
+      this.load();
+      AppState.customWordbooks = JSON.parse(data.customWordbooks);
+      
+      // 刷新UI
+      updateHeaderStats();
+      WordbookManager.renderWordbookCards();
+      highlightSelectedLevel();
+      
+      alert('✅ 数据导入成功（覆盖模式）！\n\n页面将刷新以应用新数据。');
+      setTimeout(() => location.reload(), 1000);
+      
+    } catch (e) {
+      console.error('导入数据失败:', e);
+      alert('❌ 导入失败: ' + e.message);
+    }
+  },
+  
+  // 合并模式导入
+  importWithMerge(importData) {
+    try {
+      const data = importData.data;
+      
+      // 合并已掌握的单词
+      const currentMastered = new Set(JSON.parse(localStorage.getItem(this.KEYS.MASTERED) || '[]'));
+      const importMastered = JSON.parse(data.masteredWords);
+      importMastered.forEach(word => currentMastered.add(word));
+      localStorage.setItem(this.KEYS.MASTERED, JSON.stringify([...currentMastered]));
+      
+      // 合并统计数据
+      const currentStats = JSON.parse(localStorage.getItem(this.KEYS.STATS) || '{}');
+      const importStats = JSON.parse(data.stats);
+      const mergedStats = {
+        mcAttempts: (currentStats.mcAttempts || 0) + (importStats.mcAttempts || 0),
+        mcCorrect: (currentStats.mcCorrect || 0) + (importStats.mcCorrect || 0),
+        spAttempts: (currentStats.spAttempts || 0) + (importStats.spAttempts || 0),
+        spCorrect: (currentStats.spCorrect || 0) + (importStats.spCorrect || 0),
+        totalLearned: Math.max(currentStats.totalLearned || 0, importStats.totalLearned || 0)
+      };
+      localStorage.setItem(this.KEYS.STATS, JSON.stringify(mergedStats));
+      
+      // 合并每日统计
+      const currentDailyStats = JSON.parse(localStorage.getItem(this.KEYS.DAILY_STATS) || '{}');
+      const importDailyStats = JSON.parse(data.dailyStats);
+      Object.keys(importDailyStats).forEach(date => {
+        if (!currentDailyStats[date]) {
+          currentDailyStats[date] = importDailyStats[date];
+        }
+      });
+      localStorage.setItem(this.KEYS.DAILY_STATS, JSON.stringify(currentDailyStats));
+      
+      // 合并自定义单词本（避免重复）
+      const currentWordbooks = JSON.parse(localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS) || '[]');
+      const importWordbooks = JSON.parse(data.customWordbooks);
+      const existingIds = new Set(currentWordbooks.map(wb => wb.id));
+      
+      importWordbooks.forEach(wb => {
+        if (!existingIds.has(wb.id)) {
+          currentWordbooks.push(wb);
+          // 导入该单词本的进度
+          if (data.wordbookProgress && data.wordbookProgress[wb.id]) {
+            localStorage.setItem(`dimenticato_progress_wb_${wb.id}`, data.wordbookProgress[wb.id]);
+          }
+        }
+      });
+      localStorage.setItem(this.KEYS.CUSTOM_WORDBOOKS, JSON.stringify(currentWordbooks));
+      
+      // 重新加载数据
+      this.load();
+      AppState.customWordbooks = currentWordbooks;
+      
+      // 刷新UI
+      updateHeaderStats();
+      WordbookManager.renderWordbookCards();
+      
+      alert('✅ 数据导入成功（合并模式）！\n\n已合并单词进度和统计数据。');
+      
+    } catch (e) {
+      console.error('导入数据失败:', e);
+      alert('❌ 导入失败: ' + e.message);
+    }
+  },
+  
+  // 清空所有数据（用于覆盖模式）
+  clearAllData() {
+    // 获取所有单词本的进度 key
+    const allKeys = Object.keys(localStorage);
+    allKeys.forEach(key => {
+      if (key.startsWith('dimenticato_')) {
+        localStorage.removeItem(key);
+      }
+    });
   }
 };
 
@@ -376,6 +627,15 @@ const MultipleChoice = {
   nextQuestion() {
     AppState.quizIndex++;
     this.loadQuestion();
+  },
+  
+  showHint() {
+    // 显示中文提示，隐藏按钮
+    const chineseHint = document.getElementById('mcChineseHint');
+    const showHintBtn = document.getElementById('mcShowHintBtn');
+    
+    chineseHint.classList.remove('hidden');
+    showHintBtn.classList.add('hidden');
   },
   
   showCompletion() {
@@ -1037,6 +1297,14 @@ function bindEvents() {
     document.getElementById('wordbookFileInput').click();
   });
   
+  // 创建新单词本
+  document.getElementById('createWordbookBtn').addEventListener('click', () => {
+    const wordbook = WordbookEditor.createNewWordbook();
+    if (wordbook) {
+      alert(`✅ 成功创建单词本"${wordbook.name}"！\n点击单词本卡片右上角的⚙️可以添加单词。`);
+    }
+  });
+  
   document.getElementById('wordbookFileInput').addEventListener('change', async (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -1113,6 +1381,30 @@ function bindEvents() {
   });
   
   // 底部工具栏
+  document.getElementById('exportDataBtn').addEventListener('click', () => {
+    Storage.exportAllData();
+  });
+  
+  document.getElementById('importDataBtn').addEventListener('click', () => {
+    document.getElementById('importDataFileInput').click();
+  });
+  
+  document.getElementById('importDataFileInput').addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    
+    try {
+      await Storage.importAllData(file);
+    } catch (error) {
+      if (error !== '用户取消导入') {
+        alert(`❌ 导入失败：${error}`);
+      }
+    }
+    
+    // 清空文件输入
+    e.target.value = '';
+  });
+  
   document.getElementById('resetBtn').addEventListener('click', () => {
     Storage.reset();
   });
@@ -1141,7 +1433,12 @@ function bindEvents() {
     }
   });
   
-  // 统计弹窗
+  // 统计弹窗 - 使用增强版本
+  document.getElementById('statsBtn').removeEventListener('click', showStatsModal);
+  document.getElementById('statsBtn').addEventListener('click', () => {
+    showEnhancedStatsModal();
+  });
+  
   document.getElementById('closeStatsBtn').addEventListener('click', () => {
     hideStatsModal();
   });
@@ -1152,7 +1449,172 @@ function bindEvents() {
       hideStatsModal();
     }
   });
+  
+  // 增强统计模态框关闭
+  document.getElementById('enhancedStatsModal')?.addEventListener('click', (e) => {
+    if (e.target.id === 'enhancedStatsModal') {
+      hideEnhancedStatsModal();
+    }
+  });
 }
+
+// ==================== 学习时长跟踪 ====================
+
+let sessionStartTime = null;
+let durationUpdateInterval = null;
+
+function startSessionTracking() {
+  sessionStartTime = Date.now();
+  
+  // 每分钟更新一次学习时长
+  durationUpdateInterval = setInterval(() => {
+    if (sessionStartTime) {
+      const duration = Math.floor((Date.now() - sessionStartTime) / 1000);
+      StatsManager.updateDuration(60); // 增加60秒
+    }
+  }, 60000); // 每分钟
+}
+
+function stopSessionTracking() {
+  if (sessionStartTime) {
+    const duration = Math.floor((Date.now() - sessionStartTime) / 1000);
+    StatsManager.updateDuration(duration);
+    sessionStartTime = null;
+  }
+  
+  if (durationUpdateInterval) {
+    clearInterval(durationUpdateInterval);
+    durationUpdateInterval = null;
+  }
+}
+
+// ==================== 集成 SM-2 算法到测验模式 ====================
+
+// 扩展 MultipleChoice 的 checkAnswer 方法
+const originalMCCheckAnswer = MultipleChoice.checkAnswer;
+MultipleChoice.checkAnswer = function(button) {
+  const startTime = this.questionStartTime || Date.now();
+  const timeSpent = Date.now() - startTime;
+  
+  originalMCCheckAnswer.call(this, button);
+  
+  // 记录到每日统计
+  const selectedAnswer = button.dataset.answer;
+  const correctAnswer = AppState.currentWord.english;
+  const isCorrect = selectedAnswer === correctAnswer;
+  
+  StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
+  
+  // 应用 SM-2 算法
+  const quality = SpacedRepetition.convertCorrectToQuality(isCorrect, timeSpent);
+  SpacedRepetition.calculateNextReview(AppState.currentWord, quality);
+  
+  // 如果是自定义单词本，保存更新后的数据
+  if (AppState.currentWordbook) {
+    WordbookManager.saveWordbooks();
+  }
+};
+
+MultipleChoice.loadQuestion = function() {
+  if (AppState.quizIndex >= AppState.currentWords.length) {
+    this.showCompletion();
+    return;
+  }
+  
+  AppState.currentWord = AppState.currentWords[AppState.quizIndex];
+  this.questionStartTime = Date.now(); // 记录开始时间
+  
+  // 更新进度
+  document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
+  document.getElementById('mcTotalWords').textContent = AppState.currentWords.length;
+  
+  // 更新正确率
+  const accuracy = AppState.quizTotal > 0 
+    ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100) 
+    : 0;
+  document.getElementById('mcAccuracy').textContent = accuracy + '%';
+  
+  // 显示意大利语单词
+  document.getElementById('mcItalianWord').textContent = AppState.currentWord.italian;
+  
+  // 处理中文提示 - 默认隐藏，显示"显示提示"按钮
+  const chineseHint = document.getElementById('mcChineseHint');
+  const showHintBtn = document.getElementById('mcShowHintBtn');
+  
+  if (AppState.currentWord.chinese) {
+    // 有中文翻译时，显示提示按钮，隐藏中文
+    chineseHint.textContent = `中文: ${AppState.currentWord.chinese}`;
+    chineseHint.classList.add('hidden');
+    showHintBtn.classList.remove('hidden');
+  } else {
+    // 没有中文翻译时，隐藏按钮和中文
+    chineseHint.classList.add('hidden');
+    showHintBtn.classList.add('hidden');
+  }
+  
+  // 显示 notes（如果存在）
+  this.displayNotes();
+  
+  // 生成选项
+  this.generateOptions();
+  
+  // 隐藏反馈
+  document.getElementById('mcFeedback').classList.add('hidden');
+};
+
+// 扩展 Spelling 的 checkAnswer 方法
+const originalSpCheckAnswer = Spelling.checkAnswer;
+Spelling.checkAnswer = function() {
+  originalSpCheckAnswer.call(this);
+  
+  // 记录到每日统计
+  const input = document.getElementById('spInput');
+  const userAnswer = input.value.trim().toLowerCase();
+  const correctAnswer = AppState.currentWord.italian.toLowerCase();
+  const isCorrect = this.normalizeString(userAnswer) === this.normalizeString(correctAnswer);
+  
+  StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
+  
+  // 应用 SM-2 算法
+  const quality = SpacedRepetition.convertCorrectToQuality(isCorrect);
+  SpacedRepetition.calculateNextReview(AppState.currentWord, quality);
+  
+  // 如果是自定义单词本，保存更新后的数据
+  if (AppState.currentWordbook) {
+    WordbookManager.saveWordbooks();
+  }
+};
+
+// ==================== 单词本卡片添加管理按钮 ====================
+
+const originalRenderWordbookCards = WordbookManager.renderWordbookCards;
+WordbookManager.renderWordbookCards = function() {
+  const container = document.getElementById('wordbookCards');
+  
+  if (AppState.customWordbooks.length === 0) {
+    container.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 1rem;">还没有导入任何单词本</p>';
+    return;
+  }
+  
+  container.innerHTML = AppState.customWordbooks.map(wb => `
+    <div class="wordbook-card" data-wordbook-id="${wb.id}">
+      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); WordbookEditor.openEditor(${wb.id})" title="管理单词本">⚙️</button>
+      <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
+      <span class="wordbook-card-icon">📖</span>
+      <span class="wordbook-card-name">${wb.name}</span>
+      <span class="wordbook-card-count">${wb.wordCount} 词</span>
+      <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
+    </div>
+  `).join('');
+  
+  // 绑定点击事件
+  container.querySelectorAll('.wordbook-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const wordbookId = parseInt(card.dataset.wordbookId);
+      this.selectWordbook(wordbookId);
+    });
+  });
+};
 
 // ==================== 初始化 ====================
 
@@ -1162,4 +1624,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // 渲染自定义单词本卡片
   WordbookManager.renderWordbookCards();
+  
+  // 开始会话跟踪
+  startSessionTracking();
+  
+  // 页面卸载时停止跟踪
+  window.addEventListener('beforeunload', () => {
+    stopSessionTracking();
+  });
 });
