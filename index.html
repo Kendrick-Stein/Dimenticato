@@ -298,10 +298,14 @@
             <button class="editor-toolbar-btn" onclick="WordbookEditor.addNewWord()">
               ➕ 添加单词
             </button>
+            <button class="editor-toolbar-btn" onclick="WordbookEditor.batchImportWords()">
+              📥 批量添加新单词
+            </button>
             <button class="editor-toolbar-btn" onclick="WordbookEditor.showExportDialog(WordbookEditor.currentEditingWordbook.id)" title="导出单词本">
               📤 导出
             </button>
           </div>
+          <input type="file" id="editorBatchImportInput" accept=".txt" style="display: none;">
           <div class="editor-batch-actions" style="display: none;">
             <button class="editor-toolbar-btn danger" onclick="WordbookEditor.batchDelete()">
               🗑️ 删除选中

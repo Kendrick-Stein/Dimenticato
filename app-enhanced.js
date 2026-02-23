@@ -636,6 +636,123 @@ const WordbookEditor = {
     }
   },
   
+  // 批量导入新单词到当前编辑的单词本
+  batchImportWords() {
+    if (!this.currentEditingWordbook) {
+      alert('请先打开一个单词本');
+      return;
+    }
+    
+    const fileInput = document.getElementById('editorBatchImportInput');
+    if (!fileInput) {
+      alert('文件输入元素不存在');
+      return;
+    }
+    
+    // 绑定文件选择事件
+    fileInput.onchange = (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        this.handleBatchImport(file);
+      }
+      // 清空 input，允许重复选择同一文件
+      fileInput.value = '';
+    };
+    
+    // 触发文件选择
+    fileInput.click();
+  },
+  
+  // 处理批量导入文件
+  async handleBatchImport(file) {
+    if (!this.currentEditingWordbook) return;
+    
+    // 只支持 TXT 格式
+    if (!file.name.toLowerCase().endsWith('.txt')) {
+      alert('批量导入仅支持 TXT 格式文件！');
+      return;
+    }
+    
+    try {
+      const text = await file.text();
+      
+      // 使用 WordbookManager 的 parseTxtWordbook 方法解析
+      const result = WordbookManager.parseTxtWordbook(text);
+      
+      if (!result || !result.words || result.words.length === 0) {
+        alert('文件中没有找到有效的单词！');
+        return;
+      }
+      
+      // 过滤重复单词（不区分大小写）
+      const existingWordsLower = new Set(
+        this.currentEditingWordbook.words.map(w => w.italian.toLowerCase())
+      );
+      
+      const newWords = [];
+      const duplicates = [];
+      
+      result.words.forEach(word => {
+        if (existingWordsLower.has(word.italian.toLowerCase())) {
+          duplicates.push(word.italian);
+        } else {
+          newWords.push(word);
+          existingWordsLower.add(word.italian.toLowerCase());
+        }
+      });
+      
+      // 如果没有新单词
+      if (newWords.length === 0) {
+        alert(`所有单词都已存在于"${this.currentEditingWordbook.name}"中！\n重复单词: ${duplicates.length} 个`);
+        return;
+      }
+      
+      // 添加新单词到单词本
+      this.currentEditingWordbook.words.push(...newWords);
+      this.currentEditingWordbook.wordCount = this.currentEditingWordbook.words.length;
+      
+      // 保存到 localStorage
+      WordbookManager.saveWordbooks();
+      
+      // 刷新编辑器显示
+      this.renderEditorWordList();
+      
+      // 如果当前正在学习这个单词本，更新显示
+      if (AppState.currentWordbook && AppState.currentWordbook.id === this.currentEditingWordbook.id) {
+        AppState.currentWordbook = this.currentEditingWordbook;
+        AppState.currentWords = this.currentEditingWordbook.words.map(w => ({
+          ...w,
+          rank: 999999
+        }));
+        updateHeaderStats();
+      }
+      
+      // 显示导入结果
+      let message = `✅ 批量导入完成！\n\n`;
+      message += `📥 成功添加: ${newWords.length} 个新单词\n`;
+      
+      if (duplicates.length > 0) {
+        message += `⚠️ 跳过重复: ${duplicates.length} 个\n`;
+      }
+      
+      if (result.autoMatchedCount > 0) {
+        message += `\n🎯 自动匹配翻译: ${result.autoMatchedCount} 个\n`;
+      }
+      
+      if (result.needManualCount > 0) {
+        message += `📝 未找到翻译: ${result.needManualCount} 个\n`;
+      }
+      
+      message += `\n当前单词本总数: ${this.currentEditingWordbook.wordCount} 个`;
+      
+      alert(message);
+      
+    } catch (error) {
+      console.error('批量导入失败:', error);
+      alert('导入失败: ' + error.message);
+    }
+  },
+  
   // 添加单词到单词本（从浏览模式）
   addWordToWordbook(word) {
     // 如果没有自定义单词本，提示创建

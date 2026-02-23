@@ -956,7 +956,17 @@ const WordbookManager = {
     return { valid: true };
   },
   
-  // 解析 TXT 格式单词本
+  // 在 VOCABULARY_DATA 中查找意大利语单词
+  lookupWord(italian) {
+    if (typeof VOCABULARY_DATA === 'undefined') {
+      return null;
+    }
+    
+    const normalizedItalian = italian.toLowerCase().trim();
+    return VOCABULARY_DATA.find(w => w.italian.toLowerCase() === normalizedItalian);
+  },
+  
+  // 解析 TXT 格式单词本（支持灵活格式 + 自动查找）
   parseTxtWordbook(text) {
     // 移除文件开头的空行
     text = text.trim();
@@ -965,31 +975,72 @@ const WordbookManager = {
     const blocks = text.split(/\n\s*\n+/);
     
     const words = [];
+    let autoMatchedCount = 0;
+    let needManualCount = 0;
+    
     for (let i = 0; i < blocks.length; i++) {
       const block = blocks[i].trim();
       if (!block) continue;
       
-      const lines = block.split('\n').map(line => line.trim());
+      const lines = block.split('\n').map(line => line.trim()).filter(line => line);
       
-      // 至少需要3行（意大利语、英语、中文）
-      if (lines.length < 3) {
-        throw new Error(`第 ${i + 1} 个单词块格式不正确，至少需要3行（意大利语、英语、中文）`);
-      }
+      if (lines.length === 0) continue;
       
-      const word = {
-        italian: lines[0],
-        english: lines[1],
-        chinese: lines[2] || ''
+      let word = {
+        italian: '',
+        english: '',
+        chinese: '',
+        notes: ''
       };
       
-      // 如果有第4行，作为 notes
-      if (lines.length >= 4 && lines[3]) {
-        word.notes = lines[3];
+      // 检测格式：1行=仅意大利语，2-4行=完整格式
+      if (lines.length === 1) {
+        // 仅意大利语，需要自动查找
+        word.italian = lines[0];
+        
+        // 在 VOCABULARY_DATA 中查找
+        const found = this.lookupWord(word.italian);
+        if (found) {
+          word.english = found.english || '';
+          word.chinese = found.chinese || '';
+          autoMatchedCount++;
+        } else {
+          // 未找到，留空英语和中文
+          word.english = '';
+          word.chinese = '';
+          needManualCount++;
+        }
+      } else if (lines.length >= 2) {
+        // 完整格式：意大利语、英语、中文（可选）、notes（可选）
+        word.italian = lines[0];
+        word.english = lines[1];
+        
+        if (lines.length >= 3) {
+          word.chinese = lines[2];
+        }
+        
+        if (lines.length >= 4) {
+          word.notes = lines[3];
+        }
+        
+        // 如果英语为空，尝试自动查找
+        if (!word.english) {
+          const found = this.lookupWord(word.italian);
+          if (found) {
+            word.english = found.english || '';
+            if (!word.chinese) {
+              word.chinese = found.chinese || '';
+            }
+            autoMatchedCount++;
+          } else {
+            needManualCount++;
+          }
+        }
       }
       
-      // 验证必填字段
-      if (!word.italian || !word.english) {
-        throw new Error(`第 ${i + 1} 个单词块缺少意大利语或英语翻译`);
+      // 验证必填字段（意大利语必须存在）
+      if (!word.italian) {
+        throw new Error(`第 ${i + 1} 个单词块缺少意大利语单词`);
       }
       
       words.push(word);
@@ -999,10 +1050,10 @@ const WordbookManager = {
       throw new Error('文件中没有找到有效的单词');
     }
     
-    return words;
+    return { words, autoMatchedCount, needManualCount };
   },
   
-  // 导入单词本
+  // 导入单词本（支持智能导入 + 重复检测）
   importFromFile(file) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -1012,10 +1063,19 @@ const WordbookManager = {
         try {
           const content = e.target.result;
           let data;
+          let importStats = {
+            autoMatchedCount: 0,
+            needManualCount: 0,
+            duplicatesSkipped: 0,
+            totalImported: 0
+          };
           
           if (isTxtFile) {
-            // 解析 TXT 格式
-            const words = this.parseTxtWordbook(content);
+            // 解析 TXT 格式（新格式支持自动查找）
+            const parseResult = this.parseTxtWordbook(content);
+            const words = parseResult.words;
+            importStats.autoMatchedCount = parseResult.autoMatchedCount;
+            importStats.needManualCount = parseResult.needManualCount;
             
             // 从文件名生成单词本名称（去掉扩展名）
             const fileName = file.name.replace(/\.txt$/i, '');
@@ -1036,23 +1096,103 @@ const WordbookManager = {
             }
           }
           
-          // 创建单词本对象
-          const wordbook = {
-            id: Date.now(), // 使用时间戳作为唯一 ID
-            name: data.name,
-            description: data.description || '',
-            words: data.words,
-            wordCount: data.words.length,
-            createdAt: new Date().toISOString()
-          };
+          // 检查是否存在同名单词本（用于重复检测）
+          const existingWordbook = AppState.customWordbooks.find(wb => wb.name === data.name);
+          let existingWords = new Set();
           
-          // 添加到列表
-          AppState.customWordbooks.push(wordbook);
+          if (existingWordbook) {
+            // 如果存在同名单词本，提供三个选项
+            const action = prompt(
+              `已存在同名单词本"${data.name}"（${existingWordbook.wordCount} 词）。\n\n` +
+              `请选择操作：\n` +
+              `1 - 批量添加到现有单词本（跳过重复，保留原有单词）\n` +
+              `2 - 创建新单词本（添加时间戳后缀）\n` +
+              `0 - 取消导入\n\n` +
+              `请输入 0、1 或 2：`
+            );
+            
+            if (action === '0' || action === null) {
+              reject('用户取消导入');
+              return;
+            } else if (action === '1') {
+              // 批量添加模式：收集现有单词（大小写不敏感）
+              existingWordbook.words.forEach(w => {
+                existingWords.add(w.italian.toLowerCase().trim());
+              });
+            } else if (action === '2') {
+              // 创建新单词本模式：不收集现有单词，后面会创建新单词本并添加时间戳
+              existingWordbook = null;
+            } else {
+              reject('无效的选择');
+              return;
+            }
+          }
           
-          // 保存到 LocalStorage
-          this.saveWordbooks();
+          // 去重处理
+          const wordsToImport = [];
+          const notFoundWords = []; // 需要手动编辑的单词（英语或中文为空）
+          const foundWords = []; // 已找到翻译的单词
           
-          resolve(wordbook);
+          data.words.forEach(word => {
+            const normalizedItalian = word.italian.toLowerCase().trim();
+            
+            // 检查重复
+            if (existingWords.has(normalizedItalian)) {
+              importStats.duplicatesSkipped++;
+              return;
+            }
+            
+            existingWords.add(normalizedItalian);
+            
+            // 分类：需要手动编辑 vs 已完整
+            if (!word.english || !word.chinese) {
+              notFoundWords.push(word);
+            } else {
+              foundWords.push(word);
+            }
+          });
+          
+          // 排序：需要手动编辑的单词放在最前面
+          wordsToImport.push(...notFoundWords, ...foundWords);
+          importStats.totalImported = wordsToImport.length;
+          
+          if (wordsToImport.length === 0) {
+            reject('所有单词都已存在，没有新单词需要导入');
+            return;
+          }
+          
+          // 创建或更新单词本
+          if (existingWordbook && existingWords.size > 0) {
+            // 合并到现有单词本
+            existingWordbook.words = [...existingWordbook.words, ...wordsToImport];
+            existingWordbook.wordCount = existingWordbook.words.length;
+            this.saveWordbooks();
+            
+            resolve({
+              wordbook: existingWordbook,
+              stats: importStats,
+              isMerge: true
+            });
+          } else {
+            // 创建新单词本
+            const wordbook = {
+              id: Date.now(),
+              name: data.name,
+              description: data.description || '',
+              words: wordsToImport,
+              wordCount: wordsToImport.length,
+              createdAt: new Date().toISOString()
+            };
+            
+            AppState.customWordbooks.push(wordbook);
+            this.saveWordbooks();
+            
+            resolve({
+              wordbook: wordbook,
+              stats: importStats,
+              isMerge: false
+            });
+          }
         } catch (error) {
           if (isTxtFile) {
             reject('TXT 解析失败: ' + error.message);
@@ -1379,8 +1519,36 @@ function bindEvents() {
     if (!file) return;
     
     try {
-      const wordbook = await WordbookManager.importFromFile(file);
-      alert(`✅ 成功导入单词本"${wordbook.name}"！\n包含 ${wordbook.wordCount} 个单词。`);
+      const result = await WordbookManager.importFromFile(file);
+      const { wordbook, stats, isMerge } = result;
+      
+      // 构建详细的导入报告
+      let message = isMerge 
+        ? `✅ 成功合并到单词本"${wordbook.name}"！\n\n`
+        : `✅ 成功导入单词本"${wordbook.name}"！\n\n`;
+      
+      message += `📊 导入统计：\n`;
+      message += `• 总计导入：${stats.totalImported} 个单词\n`;
+      
+      if (stats.autoMatchedCount > 0) {
+        message += `• 自动匹配：${stats.autoMatchedCount} 个\n`;
+      }
+      
+      if (stats.needManualCount > 0) {
+        message += `• 需手动编辑：${stats.needManualCount} 个（已放在最前面）\n`;
+      }
+      
+      if (stats.duplicatesSkipped > 0) {
+        message += `• 跳过重复：${stats.duplicatesSkipped} 个\n`;
+      }
+      
+      message += `\n单词本总数：${wordbook.wordCount} 个单词`;
+      
+      if (stats.needManualCount > 0) {
+        message += `\n\n💡 提示：点击单词本卡片右上角的⚙️可添加缺失的翻译`;
+      }
+      
+      alert(message);
       WordbookManager.renderWordbookCards();
     } catch (error) {
       alert(`❌ 导入失败：${error}`);
