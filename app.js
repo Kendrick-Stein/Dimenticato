@@ -3,6 +3,55 @@
  * 主应用逻辑
  */
 
+// ==================== Web Speech API 发音功能 ====================
+
+class ItalianSpeaker {
+  constructor() {
+    this.synth = window.speechSynthesis;
+    this.voice = null;
+    this.initVoice();
+  }
+  
+  initVoice() {
+    // 获取可用的语音
+    const loadVoices = () => {
+      const voices = this.synth.getVoices();
+      // 优先选择意大利语语音
+      this.voice = voices.find(v => v.lang.startsWith('it')) || voices[0];
+    };
+    
+    // 有些浏览器需要异步加载语音列表
+    loadVoices();
+    if (this.synth.onvoiceschanged !== undefined) {
+      this.synth.onvoiceschanged = loadVoices;
+    }
+  }
+  
+  speak(text, autoplay = false) {
+    if (!text) return;
+    
+    // 取消之前的朗读
+    this.synth.cancel();
+    
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'it-IT';
+    utterance.rate = 0.9; // 稍慢一点，便于学习
+    
+    if (this.voice) {
+      utterance.voice = this.voice;
+    }
+    
+    this.synth.speak(utterance);
+  }
+  
+  stop() {
+    this.synth.cancel();
+  }
+}
+
+// 创建全局 speaker 实例
+const italianSpeaker = new ItalianSpeaker();
+
 // ==================== 全局状态 ====================
 
 const AppState = {
@@ -512,6 +561,11 @@ const MultipleChoice = {
     // 显示意大利语单词
     document.getElementById('mcItalianWord').textContent = AppState.currentWord.italian;
     
+    // 自动朗读意大利语单词
+    setTimeout(() => {
+      italianSpeaker.speak(AppState.currentWord.italian, true);
+    }, 300); // 稍微延迟一下，让界面先更新
+    
     // 显示中文提示（如果存在）
     const chineseHint = document.getElementById('mcChineseHint');
     if (AppState.currentWord.chinese) {
@@ -829,9 +883,9 @@ const Browse = {
       const rankText = word.rank < 999999 ? `#${word.rank}` : '无排名';
       
       return `
-        <div class="word-item ${isMastered ? 'mastered' : ''}">
+        <div class="word-item ${isMastered ? 'mastered' : ''}" data-italian="${word.italian}">
           <div class="word-item-left">
-            <div class="word-italian">${word.italian}</div>
+            <div class="word-italian">🔊 ${word.italian}</div>
             <div class="word-english">${word.english}</div>
             ${word.chinese ? `<div class="word-chinese">${word.chinese}</div>` : ''}
             ${word.notes ? `<div class="word-notes">${word.notes}</div>` : ''}
@@ -843,6 +897,17 @@ const Browse = {
         </div>
       `;
     }).join('');
+    
+    // 为每个单词项添加点击朗读功能
+    container.querySelectorAll('.word-item').forEach(item => {
+      item.style.cursor = 'pointer';
+      item.addEventListener('click', () => {
+        const italian = item.dataset.italian;
+        if (italian) {
+          italianSpeaker.speak(italian);
+        }
+      });
+    });
   },
   
   toggleFilter() {
@@ -1365,6 +1430,13 @@ function bindEvents() {
     Spelling.nextQuestion();
   });
   
+  // 拼写模式发音按钮
+  document.getElementById('spPronunciationBtn').addEventListener('click', () => {
+    if (AppState.currentWord && AppState.currentWord.italian) {
+      italianSpeaker.speak(AppState.currentWord.italian);
+    }
+  });
+  
   // 浏览模式
   document.getElementById('brBackBtn').addEventListener('click', () => {
     // 返回欢迎页面前，重置当前单词本状态
@@ -1546,6 +1618,11 @@ MultipleChoice.loadQuestion = function() {
   
   // 显示意大利语单词
   document.getElementById('mcItalianWord').textContent = AppState.currentWord.italian;
+  
+  // 自动朗读意大利语单词
+  setTimeout(() => {
+    italianSpeaker.speak(AppState.currentWord.italian, true);
+  }, 300); // 稍微延迟一下，让界面先更新
   
   // 处理中文提示 - 默认隐藏，显示"显示提示"按钮
   const chineseHint = document.getElementById('mcChineseHint');

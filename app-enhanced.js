@@ -753,10 +753,10 @@ const BrowseEnhanced = {
       const isCustomWordbook = AppState.selectedSourceType === 'custom';
       
       return `
-        <div class="word-item ${isMastered ? 'mastered' : ''}" data-word-index="${index}">
+        <div class="word-item ${isMastered ? 'mastered' : ''}" data-word-index="${index}" data-italian="${word.italian}">
           <div class="word-item-left">
             <div class="editor-word-main">
-              <span class="word-italian">${word.italian}</span>
+              <span class="word-italian">🔊 ${word.italian}</span>
               <span class="word-english">${word.english}</span>
             </div>
             ${word.chinese ? `<div class="word-chinese">${word.chinese}</div>` : ''}
@@ -787,6 +787,20 @@ const BrowseEnhanced = {
     // 绑定事件（使用事件委托）
     container.querySelectorAll('.word-item').forEach((item, index) => {
       const word = words[index];
+      
+      // 添加点击朗读功能
+      item.style.cursor = 'pointer';
+      item.addEventListener('click', (e) => {
+        // 如果点击的是按钮，不触发朗读
+        if (e.target.classList.contains('word-action-btn') || 
+            e.target.closest('.word-action-btn')) {
+          return;
+        }
+        const italian = item.dataset.italian;
+        if (italian) {
+          italianSpeaker.speak(italian);
+        }
+      });
       
       // 收藏按钮
       const bookmarkBtn = item.querySelector('.bookmark-btn');

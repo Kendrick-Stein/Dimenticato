@@ -560,6 +560,32 @@ body {
   box-shadow: var(--shadow);
 }
 
+.pronunciation-btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.pronunciation-btn:hover {
+  background-color: var(--accent-secondary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.pronunciation-btn:active {
+  transform: translateY(0);
+}
+
 /* ==================== 选择题选项 ==================== */
 
 .options-section {
