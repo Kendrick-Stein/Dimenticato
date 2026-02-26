@@ -92,6 +92,26 @@
             </div>
           </div>
 
+          <!-- 社区词本 -->
+          <div class="community-wordbook-section">
+            <h2>🌍 社区词本 <span class="new-badge">✨NEW</span></h2>
+            <p class="subtitle">发现和分享优质学习资源</p>
+            
+            <div class="community-buttons">
+              <button class="level-btn community-btn" onclick="CommunityWordbooks.showBrowseScreen()">
+                <span class="level-icon">🔍</span>
+                <span class="level-name">浏览社区词本</span>
+                <span class="level-count">发现更多资源</span>
+              </button>
+              
+              <button class="level-btn community-btn" onclick="CommunityWordbooks.showUploadDialog()">
+                <span class="level-icon">⬆️</span>
+                <span class="level-name">上传我的词本</span>
+                <span class="level-count">分享给社区</span>
+              </button>
+            </div>
+          </div>
+
           <!-- 学习模式选择 -->
           <div class="mode-selection">
             <h2>📖 选择学习模式</h2>
@@ -475,6 +495,117 @@
   <!-- 数据导入文件选择器 -->
   <input type="file" id="importDataFileInput" accept=".json" style="display: none;">
 
+  <!-- 社区词本上传模态框 -->
+  <div id="communityUploadModal" class="modal hidden">
+    <div class="modal-content" style="max-width: 600px;">
+      <div class="modal-header">
+        <h3>⬆️ 上传词本到社区</h3>
+        <button class="close-btn" onclick="CommunityWordbooks.hideUploadDialog()">×</button>
+      </div>
+      <div class="modal-body">
+        <form id="communityUploadForm" onsubmit="event.preventDefault(); CommunityWordbooks.uploadWordbook();">
+          <div class="form-group">
+            <label for="uploadWordbookName">词本名称 *</label>
+            <input type="text" id="uploadWordbookName" class="form-input" required placeholder="例如：意大利旅游常用语">
+          </div>
+          
+          <div class="form-group">
+            <label for="uploadAuthorName">作者名 *</label>
+            <input type="text" id="uploadAuthorName" class="form-input" required placeholder="你的名字或昵称">
+          </div>
+          
+          <div class="form-group">
+            <label for="uploadDifficulty">难度级别 *</label>
+            <select id="uploadDifficulty" class="form-input" required>
+              <option value="Beginner">🌱 初级 (Beginner)</option>
+              <option value="Intermediate">🌿 中级 (Intermediate)</option>
+              <option value="Advanced">🌳 高级 (Advanced)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label>主题标签</label>
+            <div class="tag-selector">
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="旅游"> 旅游</label>
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="商务"> 商务</label>
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="日常"> 日常</label>
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="美食"> 美食</label>
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="文化"> 文化</label>
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="学术"> 学术</label>
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="医疗"> 医疗</label>
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="运动"> 运动</label>
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="艺术"> 艺术</label>
+              <label class="tag-option"><input type="checkbox" class="tag-checkbox" value="科技"> 科技</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="uploadDescription">描述</label>
+            <textarea id="uploadDescription" class="form-textarea" rows="3" placeholder="简单介绍一下这个词本的内容..."></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="uploadFileInput">选择文件 * (JSON/TXT, 最大5MB)</label>
+            <input type="file" id="uploadFileInput" accept=".json,.txt" style="display: none;" onchange="CommunityWordbooks.selectFile()">
+            <button type="button" class="form-btn" onclick="document.getElementById('uploadFileInput').click()">
+              📎 选择文件
+            </button>
+            <span id="uploadFileName" style="margin-left: 1rem; color: var(--text-secondary);">未选择文件</span>
+          </div>
+          
+          <div class="form-actions">
+            <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hideUploadDialog()">取消</button>
+            <button type="submit" class="form-btn primary" id="uploadWordbookBtn">🚀 上传到社区</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 社区词本浏览页面 -->
+  <section id="communityBrowseScreen" class="screen community-browse-screen">
+    <div class="browse-container">
+      <div class="browse-header">
+        <button class="back-btn" onclick="CommunityWordbooks.backToWelcome()">← 返回</button>
+        <input 
+          type="text" 
+          class="search-input" 
+          id="communitySearchInput" 
+          placeholder="🔍 搜索词本名称..."
+          oninput="CommunityWordbooks.searchWordbooks(this.value)"
+        >
+        <select class="filter-select" onchange="CommunityWordbooks.updateDifficultyFilter(this.value)">
+          <option value="all">全部难度</option>
+          <option value="Beginner">🌱 初级</option>
+          <option value="Intermediate">🌿 中级</option>
+          <option value="Advanced">🌳 高级</option>
+        </select>
+      </div>
+      
+      <div class="community-wordbook-list" id="communityWordbookList">
+        <!-- 动态生成词本列表 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 社区词本预览模态框 -->
+  <div id="communityPreviewModal" class="modal hidden">
+    <div class="modal-content" style="max-width: 700px;">
+      <div class="modal-header">
+        <h3>👁️ 预览: <span id="previewWordbookTitle"></span></h3>
+        <button class="close-btn" onclick="CommunityWordbooks.hidePreviewModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <div id="previewWordbookMeta"></div>
+        <div id="previewWordList" class="preview-word-list"></div>
+        <div class="form-actions">
+          <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hidePreviewModal()">关闭</button>
+          <button type="button" class="form-btn primary" id="previewDownloadBtn">📥 导入学习</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 帮助弹窗 -->
   <div id="helpModal" class="modal hidden">
     <div class="modal-content help-modal-content">
@@ -671,7 +802,12 @@ love
   <!-- Chart.js 库 (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   
+  <!-- Supabase SDK (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
   <script src="vocabulary.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="community-wordbooks.js"></script>
   <script src="app.js"></script>
   <script src="app-enhanced.js"></script>
   <script src="stats-charts.js"></script>
