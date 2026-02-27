@@ -96,6 +96,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-left: 56px; /* 为侧边栏留出空间 */
 }
 
 /* ==================== 顶部导航栏 ==================== */
@@ -1426,33 +1427,68 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
   font-weight: 600;
 }
 
-/* ==================== 底部工具栏 ==================== */
+/* ==================== 左侧工具栏（侧边栏）==================== */
 
-.footer {
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 56px;
   background-color: var(--bg-secondary);
-  padding: 1rem 2rem;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 0;
+  z-index: 200;
+  overflow: hidden;
+  transition: width 0.25s ease;
 }
 
-.footer-btn {
-  padding: 0.7rem 1.5rem;
-  background-color: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
+.sidebar:hover {
+  width: 160px;
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: none;
+  border: none;
   cursor: pointer;
+  color: var(--text-secondary);
   font-size: 0.95rem;
-  color: var(--text-primary);
-  transition: all 0.2s;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s;
+  text-align: left;
 }
 
-.footer-btn:hover {
+.sidebar-btn:hover {
   background-color: var(--accent-primary);
   color: white;
-  border-color: var(--accent-primary);
+}
+
+.sidebar-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  width: 36px;
+  text-align: center;
+}
+
+.sidebar-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+}
+
+.sidebar:hover .sidebar-label {
+  opacity: 1;
 }
 
 /* ==================== 弹窗 ==================== */
@@ -1594,13 +1630,52 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
     flex-direction: column;
   }
 
-  .footer {
-    padding: 1rem;
+  /* 移动端侧边栏：隐藏，改为底部小图标栏 */
+  .app {
+    padding-left: 0;
+    padding-bottom: 56px;
   }
 
-  .footer-btn {
-    font-size: 0.85rem;
-    padding: 0.6rem 1rem;
+  .sidebar {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    height: 56px;
+    flex-direction: row;
+    padding: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+  }
+
+  .sidebar:hover {
+    width: 100% !important;
+    height: 56px;
+  }
+
+  .sidebar-btn {
+    flex: 1;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.4rem 0.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-icon {
+    font-size: 1.3rem;
+    width: auto;
+  }
+
+  .sidebar-label {
+    font-size: 0.6rem;
+    opacity: 1;
+    white-space: nowrap;
+  }
+
+  .sidebar:hover .sidebar-label {
+    opacity: 1;
   }
 
   /* 社区单词本响应式 */
