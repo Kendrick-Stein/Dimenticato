@@ -665,6 +665,8 @@ const MultipleChoice = {
       feedbackText.textContent = '✅ 正确！';
       feedback.classList.remove('incorrect');
       feedback.classList.add('correct');
+      // 答对时，1秒后自动跳转下一题
+      setTimeout(() => this.nextQuestion(), 1000);
     } else {
       feedbackText.textContent = `❌ 错误！正确答案是：${correctAnswer}`;
       feedback.classList.remove('correct');
@@ -789,6 +791,8 @@ const Spelling = {
       feedbackText.textContent = '✅ 正确！';
       feedback.classList.remove('incorrect');
       feedback.classList.add('correct');
+      // 答对时，1秒后自动跳转下一题
+      setTimeout(() => this.nextQuestion(), 1000);
     } else {
       feedbackText.textContent = `❌ 错误！正确答案是：${AppState.currentWord.italian}`;
       feedback.classList.remove('correct');
