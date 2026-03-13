@@ -86,6 +86,17 @@ love
 - 过滤器：全部/已掌握/未掌握
 - 显示词频排名
 
+#### 🔄 动词变位练习模式（多时态）
+- 基于 Reverso 高频动词索引构建词库（目标前 2000，可续跑）
+- 支持在练习前选择时态（进入模块后可切换）
+- 题型兼容两类变位：
+  - **6 人称类**（如 Indicativo/Congiuntivo 等）
+  - **单形式类**（如 Infinito/Gerundio/Participio）
+- 支持两种练习方式：
+  - **填空模式**：给出动词原形 + 人称，输入变位
+  - **选择题模式**：四选一选择正确变位
+- 支持词量范围切换（前 50/100/500/1000/全部）
+
 ### 💾 进度追踪
 - 自动保存学习进度到浏览器本地存储
 - 记录已掌握的单词
@@ -151,6 +162,7 @@ Dimenticato/
 ├── index.html                      # 主页面
 ├── styles.css                      # 样式文件
 ├── app.js                          # 应用逻辑
+├── conjugation-app.js              # 动词变位练习逻辑
 ├── vocabulary.js                   # 词汇数据（内嵌28,787词）
 ├── custom_wordbook_template.json   # JSON 格式单词本模板
 ├── custom_wordbook_template.txt    # TXT 格式单词本模板（推荐）
@@ -160,6 +172,8 @@ Dimenticato/
 │   ├── vocabulary.json            # 原始词汇数据
 │   └── stats.json                 # 统计信息
 ├── process_data.js                # 数据处理脚本（开发用）
+├── scripts/
+│   └── reverso_presente_pipeline.py # 抓取 Reverso 高频动词并生成多时态词库（含旧版兼容输出）
 ├── ita-eng/                       # 原始词典数据
 │   └── output.json
 ├── it_50k.txt                     # 词频列表
@@ -194,6 +208,31 @@ node process_data.js
 2. 读取 `it_50k.txt` 词频文件
 3. 合并并清理数据
 4. 生成 `data/vocabulary.json` 和 `data/stats.json`
+
+### 生成动词变位词库（多时态）
+
+项目已提供自动化脚本，从 Reverso 高频动词页抓取并生成本地词库：
+
+```bash
+python3 scripts/reverso_presente_pipeline.py
+```
+
+当遇到限流（HTTP 429）时，推荐断点续跑：
+
+```bash
+python3 scripts/reverso_presente_pipeline.py --resume --sleep 0.45 --max 500
+```
+
+核心生成文件：
+- `data/reverso_high_frequency_verbs.json`（高频动词列表）
+- `data/conjugations-all-tenses.json`（多时态词库，JSON）
+- `data/conjugations-all-tenses.js`（前端优先加载）
+- `data/conjugations-all-tenses-failures.json`（失败记录，便于续跑）
+
+兼容生成文件（Presente-only，供旧逻辑回退）：
+- `data/conjugations-presente.json`
+- `data/conjugations-presente.js`
+- `data/conjugations-presente-failures.json`
 
 ### 数据统计
 - 总词汇量：28,787 词

@@ -292,6 +292,180 @@ body {
   border-top: 2px solid var(--border-color);
 }
 
+/* ==================== 动词变位模块（欢迎页） ==================== */
+
+.conjugation-module-section {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border-color);
+}
+
+.conjugation-module-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.conjugation-module-card {
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.2rem;
+  transition: all 0.25s;
+}
+
+.conjugation-module-card.conj-context-active {
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow);
+}
+
+.conj-module-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.conj-module-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.conj-module-toolbar select {
+  min-width: 140px;
+  padding: 0.55rem 0.75rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.conj-lesson-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.conj-lesson-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 110px;
+}
+
+#conjLessonLabel {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+#conjLessonCompletedBadge {
+  color: var(--accent-secondary);
+  font-size: 0.9rem;
+}
+
+.conj-tense-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conj-tense-btn {
+  padding: 0.75rem 0.6rem;
+  min-height: 88px;
+}
+
+.conj-tense-btn .level-name {
+  font-size: 0.96rem;
+}
+
+.conj-tense-btn .level-count {
+  font-size: 0.78rem;
+}
+
+.conj-tense-matrix {
+  display: grid;
+  grid-template-columns: 120px repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.conj-matrix-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-weight: 600;
+  min-height: 40px;
+  font-size: 0.9rem;
+}
+
+.conj-matrix-row-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.conj-matrix-cell {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--bg-card);
+  padding: 0.55rem;
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+
+.conj-matrix-empty {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 0.7rem 0;
+  font-size: 0.95rem;
+}
+
+.conj-extra-tenses {
+  margin-top: 0.8rem;
+}
+
+.conj-extra-title {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.conj-extra-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.6rem;
+}
+
+.conj-module-hint {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.9rem;
+}
+
 .community-wordbook-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
@@ -1083,6 +1257,110 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
   margin-bottom: 1.5rem;
 }
 
+.conj-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+#conjActiveLessonInfo {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.conj-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.conj-controls select {
+  min-width: 140px;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.conj-pronoun-line {
+  margin-top: 0.8rem;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.conj-tense-line {
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.conj-english-line {
+  margin-top: 0.55rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.conj-full-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.conj-full-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.conj-full-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.conj-full-item.correct {
+  border-color: var(--accent-secondary);
+  background-color: rgba(46, 204, 113, 0.08);
+}
+
+.conj-full-item.incorrect {
+  border-color: var(--accent-danger);
+  background-color: rgba(231, 76, 60, 0.08);
+}
+
+.conj-full-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.conj-full-input {
+  max-width: none;
+  font-size: 1.15rem;
+}
+
+.conj-full-answer {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
 .question-section {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -1618,8 +1896,17 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
     padding: 1.5rem;
   }
 
+  .conj-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .italian-word, .english-word {
     font-size: 1.8rem;
+  }
+
+  .conj-full-grid {
+    grid-template-columns: 1fr;
   }
 
   .options-grid {

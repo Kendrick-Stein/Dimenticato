@@ -1,0 +1,7994 @@
+[
+  {
+    "rank": 1,
+    "infinitive": "essere"
+  },
+  {
+    "rank": 2,
+    "infinitive": "vedere"
+  },
+  {
+    "rank": 3,
+    "infinitive": "avere"
+  },
+  {
+    "rank": 4,
+    "infinitive": "dire"
+  },
+  {
+    "rank": 5,
+    "infinitive": "andare"
+  },
+  {
+    "rank": 6,
+    "infinitive": "fare"
+  },
+  {
+    "rank": 7,
+    "infinitive": "trovare"
+  },
+  {
+    "rank": 8,
+    "infinitive": "sapere"
+  },
+  {
+    "rank": 9,
+    "infinitive": "prendere"
+  },
+  {
+    "rank": 10,
+    "infinitive": "parlare"
+  },
+  {
+    "rank": 11,
+    "infinitive": "garantire"
+  },
+  {
+    "rank": 12,
+    "infinitive": "lavorare"
+  },
+  {
+    "rank": 13,
+    "infinitive": "ottenere"
+  },
+  {
+    "rank": 14,
+    "infinitive": "vivere"
+  },
+  {
+    "rank": 15,
+    "infinitive": "creare"
+  },
+  {
+    "rank": 16,
+    "infinitive": "utilizzare"
+  },
+  {
+    "rank": 17,
+    "infinitive": "usare"
+  },
+  {
+    "rank": 18,
+    "infinitive": "dare"
+  },
+  {
+    "rank": 19,
+    "infinitive": "capire"
+  },
+  {
+    "rank": 20,
+    "infinitive": "migliorare"
+  },
+  {
+    "rank": 21,
+    "infinitive": "aiutare"
+  },
+  {
+    "rank": 22,
+    "infinitive": "venire"
+  },
+  {
+    "rank": 23,
+    "infinitive": "evitare"
+  },
+  {
+    "rank": 24,
+    "infinitive": "fornire"
+  },
+  {
+    "rank": 25,
+    "infinitive": "portare"
+  },
+  {
+    "rank": 26,
+    "infinitive": "sentire"
+  },
+  {
+    "rank": 27,
+    "infinitive": "pensare"
+  },
+  {
+    "rank": 28,
+    "infinitive": "mantenere"
+  },
+  {
+    "rank": 29,
+    "infinitive": "lasciare"
+  },
+  {
+    "rank": 30,
+    "infinitive": "uccidere"
+  },
+  {
+    "rank": 31,
+    "infinitive": "raggiungere"
+  },
+  {
+    "rank": 32,
+    "infinitive": "cercare"
+  },
+  {
+    "rank": 33,
+    "infinitive": "tenere"
+  },
+  {
+    "rank": 34,
+    "infinitive": "mettere"
+  },
+  {
+    "rank": 35,
+    "infinitive": "cambiare"
+  },
+  {
+    "rank": 36,
+    "infinitive": "tornare"
+  },
+  {
+    "rank": 37,
+    "infinitive": "ridurre"
+  },
+  {
+    "rank": 38,
+    "infinitive": "giocare"
+  },
+  {
+    "rank": 39,
+    "infinitive": "continuare"
+  },
+  {
+    "rank": 40,
+    "infinitive": "promuovere"
+  },
+  {
+    "rank": 41,
+    "infinitive": "controllare"
+  },
+  {
+    "rank": 42,
+    "infinitive": "scegliere"
+  },
+  {
+    "rank": 43,
+    "infinitive": "credere"
+  },
+  {
+    "rank": 44,
+    "infinitive": "mangiare"
+  },
+  {
+    "rank": 45,
+    "infinitive": "guardare"
+  },
+  {
+    "rank": 46,
+    "infinitive": "affrontare"
+  },
+  {
+    "rank": 47,
+    "infinitive": "morire"
+  },
+  {
+    "rank": 48,
+    "infinitive": "chiedere"
+  },
+  {
+    "rank": 49,
+    "infinitive": "provare"
+  },
+  {
+    "rank": 50,
+    "infinitive": "iniziare"
+  },
+  {
+    "rank": 51,
+    "infinitive": "adottare"
+  },
+  {
+    "rank": 52,
+    "infinitive": "rendere"
+  },
+  {
+    "rank": 53,
+    "infinitive": "scoprire"
+  },
+  {
+    "rank": 54,
+    "infinitive": "stare"
+  },
+  {
+    "rank": 55,
+    "infinitive": "diventare"
+  },
+  {
+    "rank": 56,
+    "infinitive": "sostenere"
+  },
+  {
+    "rank": 57,
+    "infinitive": "aumentare"
+  },
+  {
+    "rank": 58,
+    "infinitive": "perdere"
+  },
+  {
+    "rank": 59,
+    "infinitive": "salvare"
+  },
+  {
+    "rank": 60,
+    "infinitive": "proteggere"
+  },
+  {
+    "rank": 61,
+    "infinitive": "sviluppare"
+  },
+  {
+    "rank": 62,
+    "infinitive": "aggiungere"
+  },
+  {
+    "rank": 63,
+    "infinitive": "passare"
+  },
+  {
+    "rank": 64,
+    "infinitive": "leggere"
+  },
+  {
+    "rank": 65,
+    "infinitive": "offrire"
+  },
+  {
+    "rank": 66,
+    "infinitive": "assicurare"
+  },
+  {
+    "rank": 67,
+    "infinitive": "seguire"
+  },
+  {
+    "rank": 68,
+    "infinitive": "pagare"
+  },
+  {
+    "rank": 69,
+    "infinitive": "uscire"
+  },
+  {
+    "rank": 70,
+    "infinitive": "entrare"
+  },
+  {
+    "rank": 71,
+    "infinitive": "chiamare"
+  },
+  {
+    "rank": 72,
+    "infinitive": "rispondere"
+  },
+  {
+    "rank": 73,
+    "infinitive": "rimanere"
+  },
+  {
+    "rank": 74,
+    "infinitive": "dormire"
+  },
+  {
+    "rank": 75,
+    "infinitive": "presentare"
+  },
+  {
+    "rank": 76,
+    "infinitive": "costruire"
+  },
+  {
+    "rank": 77,
+    "infinitive": "combattere"
+  },
+  {
+    "rank": 78,
+    "infinitive": "aprire"
+  },
+  {
+    "rank": 79,
+    "infinitive": "risolvere"
+  },
+  {
+    "rank": 80,
+    "infinitive": "arrivare"
+  },
+  {
+    "rank": 81,
+    "infinitive": "modificare"
+  },
+  {
+    "rank": 82,
+    "infinitive": "conoscere"
+  },
+  {
+    "rank": 83,
+    "infinitive": "restare"
+  },
+  {
+    "rank": 84,
+    "infinitive": "applicare"
+  },
+  {
+    "rank": 85,
+    "infinitive": "visitare"
+  },
+  {
+    "rank": 86,
+    "infinitive": "imparare"
+  },
+  {
+    "rank": 87,
+    "infinitive": "ricordare"
+  },
+  {
+    "rank": 88,
+    "infinitive": "scrivere"
+  },
+  {
+    "rank": 89,
+    "infinitive": "valutare"
+  },
+  {
+    "rank": 90,
+    "infinitive": "comprare"
+  },
+  {
+    "rank": 91,
+    "infinitive": "rafforzare"
+  },
+  {
+    "rank": 92,
+    "infinitive": "soddisfare"
+  },
+  {
+    "rank": 93,
+    "infinitive": "accettare"
+  },
+  {
+    "rank": 94,
+    "infinitive": "gestire"
+  },
+  {
+    "rank": 95,
+    "infinitive": "aspettare"
+  },
+  {
+    "rank": 96,
+    "infinitive": "vincere"
+  },
+  {
+    "rank": 97,
+    "infinitive": "contribuire"
+  },
+  {
+    "rank": 98,
+    "infinitive": "ricevere"
+  },
+  {
+    "rank": 99,
+    "infinitive": "finire"
+  },
+  {
+    "rank": 100,
+    "infinitive": "realizzare"
+  },
+  {
+    "rank": 101,
+    "infinitive": "partire"
+  },
+  {
+    "rank": 102,
+    "infinitive": "condividere"
+  },
+  {
+    "rank": 103,
+    "infinitive": "consentire"
+  },
+  {
+    "rank": 104,
+    "infinitive": "decidere"
+  },
+  {
+    "rank": 105,
+    "infinitive": "vendere"
+  },
+  {
+    "rank": 106,
+    "infinitive": "acquistare"
+  },
+  {
+    "rank": 107,
+    "infinitive": "verificare"
+  },
+  {
+    "rank": 108,
+    "infinitive": "permettere"
+  },
+  {
+    "rank": 109,
+    "infinitive": "comprendere"
+  },
+  {
+    "rank": 110,
+    "infinitive": "dimostrare"
+  },
+  {
+    "rank": 111,
+    "infinitive": "partecipare"
+  },
+  {
+    "rank": 112,
+    "infinitive": "selezionare"
+  },
+  {
+    "rank": 113,
+    "infinitive": "stabilire"
+  },
+  {
+    "rank": 114,
+    "infinitive": "scaricare"
+  },
+  {
+    "rank": 115,
+    "infinitive": "guidare"
+  },
+  {
+    "rank": 116,
+    "infinitive": "organizzare"
+  },
+  {
+    "rank": 117,
+    "infinitive": "produrre"
+  },
+  {
+    "rank": 118,
+    "infinitive": "determinare"
+  },
+  {
+    "rank": 119,
+    "infinitive": "ascoltare"
+  },
+  {
+    "rank": 120,
+    "infinitive": "superare"
+  },
+  {
+    "rank": 121,
+    "infinitive": "discutere"
+  },
+  {
+    "rank": 122,
+    "infinitive": "eliminare"
+  },
+  {
+    "rank": 123,
+    "infinitive": "rispettare"
+  },
+  {
+    "rank": 124,
+    "infinitive": "accedere"
+  },
+  {
+    "rank": 125,
+    "infinitive": "dimenticare"
+  },
+  {
+    "rank": 126,
+    "infinitive": "riconoscere"
+  },
+  {
+    "rank": 127,
+    "infinitive": "definire"
+  },
+  {
+    "rank": 128,
+    "infinitive": "spiegare"
+  },
+  {
+    "rank": 129,
+    "infinitive": "crescere"
+  },
+  {
+    "rank": 130,
+    "infinitive": "ringraziare"
+  },
+  {
+    "rank": 131,
+    "infinitive": "inserire"
+  },
+  {
+    "rank": 132,
+    "infinitive": "incontrare"
+  },
+  {
+    "rank": 133,
+    "infinitive": "preparare"
+  },
+  {
+    "rank": 134,
+    "infinitive": "fermare"
+  },
+  {
+    "rank": 135,
+    "infinitive": "mostrare"
+  },
+  {
+    "rank": 136,
+    "infinitive": "funzionare"
+  },
+  {
+    "rank": 137,
+    "infinitive": "prevenire"
+  },
+  {
+    "rank": 138,
+    "infinitive": "esprimere"
+  },
+  {
+    "rank": 139,
+    "infinitive": "svolgere"
+  },
+  {
+    "rank": 140,
+    "infinitive": "impedire"
+  },
+  {
+    "rank": 141,
+    "infinitive": "servire"
+  },
+  {
+    "rank": 142,
+    "infinitive": "godere"
+  },
+  {
+    "rank": 143,
+    "infinitive": "cominciare"
+  },
+  {
+    "rank": 144,
+    "infinitive": "includere"
+  },
+  {
+    "rank": 145,
+    "infinitive": "smettere"
+  },
+  {
+    "rank": 146,
+    "infinitive": "chiudere"
+  },
+  {
+    "rank": 147,
+    "infinitive": "raccogliere"
+  },
+  {
+    "rank": 148,
+    "infinitive": "immaginare"
+  },
+  {
+    "rank": 149,
+    "infinitive": "indicare"
+  },
+  {
+    "rank": 150,
+    "infinitive": "agire"
+  },
+  {
+    "rank": 151,
+    "infinitive": "rimuovere"
+  },
+  {
+    "rank": 152,
+    "infinitive": "studiare"
+  },
+  {
+    "rank": 153,
+    "infinitive": "avviare"
+  },
+  {
+    "rank": 154,
+    "infinitive": "coprire"
+  },
+  {
+    "rank": 155,
+    "infinitive": "eseguire"
+  },
+  {
+    "rank": 156,
+    "infinitive": "effettuare"
+  },
+  {
+    "rank": 157,
+    "infinitive": "considerare"
+  },
+  {
+    "rank": 158,
+    "infinitive": "distruggere"
+  },
+  {
+    "rank": 159,
+    "infinitive": "inviare"
+  },
+  {
+    "rank": 160,
+    "infinitive": "sembrare"
+  },
+  {
+    "rank": 161,
+    "infinitive": "incoraggiare"
+  },
+  {
+    "rank": 162,
+    "infinitive": "recuperare"
+  },
+  {
+    "rank": 163,
+    "infinitive": "assumere"
+  },
+  {
+    "rank": 164,
+    "infinitive": "correre"
+  },
+  {
+    "rank": 165,
+    "infinitive": "comunicare"
+  },
+  {
+    "rank": 166,
+    "infinitive": "esaminare"
+  },
+  {
+    "rank": 167,
+    "infinitive": "richiedere"
+  },
+  {
+    "rank": 168,
+    "infinitive": "introdurre"
+  },
+  {
+    "rank": 169,
+    "infinitive": "individuare"
+  },
+  {
+    "rank": 170,
+    "infinitive": "limitare"
+  },
+  {
+    "rank": 171,
+    "infinitive": "causare"
+  },
+  {
+    "rank": 172,
+    "infinitive": "favorire"
+  },
+  {
+    "rank": 173,
+    "infinitive": "installare"
+  },
+  {
+    "rank": 174,
+    "infinitive": "cadere"
+  },
+  {
+    "rank": 175,
+    "infinitive": "sopravvivere"
+  },
+  {
+    "rank": 176,
+    "infinitive": "attuare"
+  },
+  {
+    "rank": 177,
+    "infinitive": "saltare"
+  },
+  {
+    "rank": 178,
+    "infinitive": "identificare"
+  },
+  {
+    "rank": 179,
+    "infinitive": "sparare"
+  },
+  {
+    "rank": 180,
+    "infinitive": "sostituire"
+  },
+  {
+    "rank": 181,
+    "infinitive": "amare"
+  },
+  {
+    "rank": 182,
+    "infinitive": "notare"
+  },
+  {
+    "rank": 183,
+    "infinitive": "ballare"
+  },
+  {
+    "rank": 184,
+    "infinitive": "finanziare"
+  },
+  {
+    "rank": 185,
+    "infinitive": "piacere"
+  },
+  {
+    "rank": 186,
+    "infinitive": "confermare"
+  },
+  {
+    "rank": 187,
+    "infinitive": "completare"
+  },
+  {
+    "rank": 188,
+    "infinitive": "difendere"
+  },
+  {
+    "rank": 189,
+    "infinitive": "nascondere"
+  },
+  {
+    "rank": 190,
+    "infinitive": "indossare"
+  },
+  {
+    "rank": 191,
+    "infinitive": "suonare"
+  },
+  {
+    "rank": 192,
+    "infinitive": "rubare"
+  },
+  {
+    "rank": 193,
+    "infinitive": "concludere"
+  },
+  {
+    "rank": 194,
+    "infinitive": "tagliare"
+  },
+  {
+    "rank": 195,
+    "infinitive": "proporre"
+  },
+  {
+    "rank": 196,
+    "infinitive": "girare"
+  },
+  {
+    "rank": 197,
+    "infinitive": "visualizzare"
+  },
+  {
+    "rank": 198,
+    "infinitive": "elaborare"
+  },
+  {
+    "rank": 199,
+    "infinitive": "sottolineare"
+  },
+  {
+    "rank": 200,
+    "infinitive": "contenere"
+  },
+  {
+    "rank": 201,
+    "infinitive": "ammettere"
+  },
+  {
+    "rank": 202,
+    "infinitive": "volare"
+  },
+  {
+    "rank": 203,
+    "infinitive": "proseguire"
+  },
+  {
+    "rank": 204,
+    "infinitive": "pregare"
+  },
+  {
+    "rank": 205,
+    "infinitive": "trattare"
+  },
+  {
+    "rank": 206,
+    "infinitive": "votare"
+  },
+  {
+    "rank": 207,
+    "infinitive": "camminare"
+  },
+  {
+    "rank": 208,
+    "infinitive": "viaggiare"
+  },
+  {
+    "rank": 209,
+    "infinitive": "cantare"
+  },
+  {
+    "rank": 210,
+    "infinitive": "toccare"
+  },
+  {
+    "rank": 211,
+    "infinitive": "trasformare"
+  },
+  {
+    "rank": 212,
+    "infinitive": "mandare"
+  },
+  {
+    "rank": 213,
+    "infinitive": "condurre"
+  },
+  {
+    "rank": 214,
+    "infinitive": "compiere"
+  },
+  {
+    "rank": 215,
+    "infinitive": "piangere"
+  },
+  {
+    "rank": 216,
+    "infinitive": "scappare"
+  },
+  {
+    "rank": 217,
+    "infinitive": "conservare"
+  },
+  {
+    "rank": 218,
+    "infinitive": "contare"
+  },
+  {
+    "rank": 219,
+    "infinitive": "esplorare"
+  },
+  {
+    "rank": 220,
+    "infinitive": "chiarire"
+  },
+  {
+    "rank": 221,
+    "infinitive": "riflettere"
+  },
+  {
+    "rank": 222,
+    "infinitive": "accogliere"
+  },
+  {
+    "rank": 223,
+    "infinitive": "facilitare"
+  },
+  {
+    "rank": 224,
+    "infinitive": "istituire"
+  },
+  {
+    "rank": 225,
+    "infinitive": "trasmettere"
+  },
+  {
+    "rank": 226,
+    "infinitive": "firmare"
+  },
+  {
+    "rank": 227,
+    "infinitive": "investire"
+  },
+  {
+    "rank": 228,
+    "infinitive": "contattare"
+  },
+  {
+    "rank": 229,
+    "infinitive": "lottare"
+  },
+  {
+    "rank": 230,
+    "infinitive": "respirare"
+  },
+  {
+    "rank": 231,
+    "infinitive": "pulire"
+  },
+  {
+    "rank": 232,
+    "infinitive": "spostare"
+  },
+  {
+    "rank": 233,
+    "infinitive": "osservare"
+  },
+  {
+    "rank": 234,
+    "infinitive": "riparare"
+  },
+  {
+    "rank": 235,
+    "infinitive": "fissare"
+  },
+  {
+    "rank": 236,
+    "infinitive": "trascorrere"
+  },
+  {
+    "rank": 237,
+    "infinitive": "informare"
+  },
+  {
+    "rank": 238,
+    "infinitive": "analizzare"
+  },
+  {
+    "rank": 239,
+    "infinitive": "esercitare"
+  },
+  {
+    "rank": 240,
+    "infinitive": "conseguire"
+  },
+  {
+    "rank": 241,
+    "infinitive": "concedere"
+  },
+  {
+    "rank": 242,
+    "infinitive": "insegnare"
+  },
+  {
+    "rank": 243,
+    "infinitive": "assistere"
+  },
+  {
+    "rank": 244,
+    "infinitive": "procedere"
+  },
+  {
+    "rank": 245,
+    "infinitive": "imporre"
+  },
+  {
+    "rank": 246,
+    "infinitive": "registrare"
+  },
+  {
+    "rank": 247,
+    "infinitive": "monitorare"
+  },
+  {
+    "rank": 248,
+    "infinitive": "ammirare"
+  },
+  {
+    "rank": 249,
+    "infinitive": "premere"
+  },
+  {
+    "rank": 250,
+    "infinitive": "trasferire"
+  },
+  {
+    "rank": 251,
+    "infinitive": "cancellare"
+  },
+  {
+    "rank": 252,
+    "infinitive": "specificare"
+  },
+  {
+    "rank": 253,
+    "infinitive": "sfruttare"
+  },
+  {
+    "rank": 254,
+    "infinitive": "integrare"
+  },
+  {
+    "rank": 255,
+    "infinitive": "tutelare"
+  },
+  {
+    "rank": 256,
+    "infinitive": "ordinare"
+  },
+  {
+    "rank": 257,
+    "infinitive": "sopportare"
+  },
+  {
+    "rank": 258,
+    "infinitive": "convincere"
+  },
+  {
+    "rank": 259,
+    "infinitive": "cucinare"
+  },
+  {
+    "rank": 260,
+    "infinitive": "fumare"
+  },
+  {
+    "rank": 261,
+    "infinitive": "festeggiare"
+  },
+  {
+    "rank": 262,
+    "infinitive": "formare"
+  },
+  {
+    "rank": 263,
+    "infinitive": "mentire"
+  },
+  {
+    "rank": 264,
+    "infinitive": "affermare"
+  },
+  {
+    "rank": 265,
+    "infinitive": "colpire"
+  },
+  {
+    "rank": 266,
+    "infinitive": "estendere"
+  },
+  {
+    "rank": 267,
+    "infinitive": "prevedere"
+  },
+  {
+    "rank": 268,
+    "infinitive": "succedere"
+  },
+  {
+    "rank": 269,
+    "infinitive": "prenotare"
+  },
+  {
+    "rank": 270,
+    "infinitive": "aggiornare"
+  },
+  {
+    "rank": 271,
+    "infinitive": "intervenire"
+  },
+  {
+    "rank": 272,
+    "infinitive": "sposare"
+  },
+  {
+    "rank": 273,
+    "infinitive": "misurare"
+  },
+  {
+    "rank": 274,
+    "infinitive": "collegare"
+  },
+  {
+    "rank": 275,
+    "infinitive": "volere"
+  },
+  {
+    "rank": 276,
+    "infinitive": "ripristinare"
+  },
+  {
+    "rank": 277,
+    "infinitive": "ospitare"
+  },
+  {
+    "rank": 278,
+    "infinitive": "generare"
+  },
+  {
+    "rank": 279,
+    "infinitive": "guadagnare"
+  },
+  {
+    "rank": 280,
+    "infinitive": "salire"
+  },
+  {
+    "rank": 281,
+    "infinitive": "impostare"
+  },
+  {
+    "rank": 282,
+    "infinitive": "raccontare"
+  },
+  {
+    "rank": 283,
+    "infinitive": "pubblicare"
+  },
+  {
+    "rank": 284,
+    "infinitive": "ridere"
+  },
+  {
+    "rank": 285,
+    "infinitive": "collaborare"
+  },
+  {
+    "rank": 286,
+    "infinitive": "disporre"
+  },
+  {
+    "rank": 287,
+    "infinitive": "gustare"
+  },
+  {
+    "rank": 288,
+    "infinitive": "consultare"
+  },
+  {
+    "rank": 289,
+    "infinitive": "rappresentare"
+  },
+  {
+    "rank": 290,
+    "infinitive": "intraprendere"
+  },
+  {
+    "rank": 291,
+    "infinitive": "descrivere"
+  },
+  {
+    "rank": 292,
+    "infinitive": "accadere"
+  },
+  {
+    "rank": 293,
+    "infinitive": "ripetere"
+  },
+  {
+    "rank": 294,
+    "infinitive": "lanciare"
+  },
+  {
+    "rank": 295,
+    "infinitive": "agevolare"
+  },
+  {
+    "rank": 296,
+    "infinitive": "operare"
+  },
+  {
+    "rank": 297,
+    "infinitive": "beneficiare"
+  },
+  {
+    "rank": 298,
+    "infinitive": "risparmiare"
+  },
+  {
+    "rank": 299,
+    "infinitive": "accelerare"
+  },
+  {
+    "rank": 300,
+    "infinitive": "sistemare"
+  },
+  {
+    "rank": 301,
+    "infinitive": "rivedere"
+  },
+  {
+    "rank": 302,
+    "infinitive": "celebrare"
+  },
+  {
+    "rank": 303,
+    "infinitive": "abbandonare"
+  },
+  {
+    "rank": 304,
+    "infinitive": "scendere"
+  },
+  {
+    "rank": 305,
+    "infinitive": "curare"
+  },
+  {
+    "rank": 306,
+    "infinitive": "togliere"
+  },
+  {
+    "rank": 307,
+    "infinitive": "fuggire"
+  },
+  {
+    "rank": 308,
+    "infinitive": "rinunciare"
+  },
+  {
+    "rank": 309,
+    "infinitive": "resistere"
+  },
+  {
+    "rank": 310,
+    "infinitive": "calcolare"
+  },
+  {
+    "rank": 311,
+    "infinitive": "catturare"
+  },
+  {
+    "rank": 312,
+    "infinitive": "approvare"
+  },
+  {
+    "rank": 313,
+    "infinitive": "giudicare"
+  },
+  {
+    "rank": 314,
+    "infinitive": "escludere"
+  },
+  {
+    "rank": 315,
+    "infinitive": "tentare"
+  },
+  {
+    "rank": 316,
+    "infinitive": "riuscire"
+  },
+  {
+    "rank": 317,
+    "infinitive": "coinvolgere"
+  },
+  {
+    "rank": 318,
+    "infinitive": "spendere"
+  },
+  {
+    "rank": 319,
+    "infinitive": "battere"
+  },
+  {
+    "rank": 320,
+    "infinitive": "soffrire"
+  },
+  {
+    "rank": 321,
+    "infinitive": "invitare"
+  },
+  {
+    "rank": 322,
+    "infinitive": "unire"
+  },
+  {
+    "rank": 323,
+    "infinitive": "riposare"
+  },
+  {
+    "rank": 324,
+    "infinitive": "caricare"
+  },
+  {
+    "rank": 325,
+    "infinitive": "rompere"
+  },
+  {
+    "rank": 326,
+    "infinitive": "ritornare"
+  },
+  {
+    "rank": 327,
+    "infinitive": "stimolare"
+  },
+  {
+    "rank": 328,
+    "infinitive": "riempire"
+  },
+  {
+    "rank": 329,
+    "infinitive": "costituire"
+  },
+  {
+    "rank": 330,
+    "infinitive": "preservare"
+  },
+  {
+    "rank": 331,
+    "infinitive": "annullare"
+  },
+  {
+    "rank": 332,
+    "infinitive": "arrestare"
+  },
+  {
+    "rank": 333,
+    "infinitive": "correggere"
+  },
+  {
+    "rank": 334,
+    "infinitive": "bloccare"
+  },
+  {
+    "rank": 335,
+    "infinitive": "incrementare"
+  },
+  {
+    "rank": 336,
+    "infinitive": "giustificare"
+  },
+  {
+    "rank": 337,
+    "infinitive": "apparire"
+  },
+  {
+    "rank": 338,
+    "infinitive": "sperare"
+  },
+  {
+    "rank": 339,
+    "infinitive": "bruciare"
+  },
+  {
+    "rank": 340,
+    "infinitive": "convertire"
+  },
+  {
+    "rank": 341,
+    "infinitive": "prestare"
+  },
+  {
+    "rank": 342,
+    "infinitive": "sperimentare"
+  },
+  {
+    "rank": 343,
+    "infinitive": "ignorare"
+  },
+  {
+    "rank": 344,
+    "infinitive": "liberare"
+  },
+  {
+    "rank": 345,
+    "infinitive": "acquisire"
+  },
+  {
+    "rank": 346,
+    "infinitive": "nuotare"
+  },
+  {
+    "rank": 347,
+    "infinitive": "negoziare"
+  },
+  {
+    "rank": 348,
+    "infinitive": "contrastare"
+  },
+  {
+    "rank": 349,
+    "infinitive": "ottimizzare"
+  },
+  {
+    "rank": 350,
+    "infinitive": "accrescere"
+  },
+  {
+    "rank": 351,
+    "infinitive": "lavare"
+  },
+  {
+    "rank": 352,
+    "infinitive": "rifiutare"
+  },
+  {
+    "rank": 353,
+    "infinitive": "tirare"
+  },
+  {
+    "rank": 354,
+    "infinitive": "urlare"
+  },
+  {
+    "rank": 355,
+    "infinitive": "influenzare"
+  },
+  {
+    "rank": 356,
+    "infinitive": "rilevare"
+  },
+  {
+    "rank": 357,
+    "infinitive": "trasportare"
+  },
+  {
+    "rank": 358,
+    "infinitive": "attraversare"
+  },
+  {
+    "rank": 359,
+    "infinitive": "dichiarare"
+  },
+  {
+    "rank": 360,
+    "infinitive": "diminuire"
+  },
+  {
+    "rank": 361,
+    "infinitive": "semplificare"
+  },
+  {
+    "rank": 362,
+    "infinitive": "rilasciare"
+  },
+  {
+    "rank": 363,
+    "infinitive": "cogliere"
+  },
+  {
+    "rank": 364,
+    "infinitive": "regolare"
+  },
+  {
+    "rank": 365,
+    "infinitive": "diffondere"
+  },
+  {
+    "rank": 366,
+    "infinitive": "annunciare"
+  },
+  {
+    "rank": 367,
+    "infinitive": "interrompere"
+  },
+  {
+    "rank": 368,
+    "infinitive": "attaccare"
+  },
+  {
+    "rank": 369,
+    "infinitive": "negare"
+  },
+  {
+    "rank": 370,
+    "infinitive": "salvaguardare"
+  },
+  {
+    "rank": 371,
+    "infinitive": "variare"
+  },
+  {
+    "rank": 372,
+    "infinitive": "sollevare"
+  },
+  {
+    "rank": 373,
+    "infinitive": "rovinare"
+  },
+  {
+    "rank": 374,
+    "infinitive": "ritirare"
+  },
+  {
+    "rank": 375,
+    "infinitive": "ampliare"
+  },
+  {
+    "rank": 376,
+    "infinitive": "reagire"
+  },
+  {
+    "rank": 377,
+    "infinitive": "rischiare"
+  },
+  {
+    "rank": 378,
+    "infinitive": "coordinare"
+  },
+  {
+    "rank": 379,
+    "infinitive": "perseguire"
+  },
+  {
+    "rank": 380,
+    "infinitive": "disegnare"
+  },
+  {
+    "rank": 381,
+    "infinitive": "fingere"
+  },
+  {
+    "rank": 382,
+    "infinitive": "competere"
+  },
+  {
+    "rank": 383,
+    "infinitive": "attivare"
+  },
+  {
+    "rank": 384,
+    "infinitive": "versare"
+  },
+  {
+    "rank": 385,
+    "infinitive": "provocare"
+  },
+  {
+    "rank": 386,
+    "infinitive": "apprezzare"
+  },
+  {
+    "rank": 387,
+    "infinitive": "indovinare"
+  },
+  {
+    "rank": 388,
+    "infinitive": "consegnare"
+  },
+  {
+    "rank": 389,
+    "infinitive": "appoggiare"
+  },
+  {
+    "rank": 390,
+    "infinitive": "dividere"
+  },
+  {
+    "rank": 391,
+    "infinitive": "cooperare"
+  },
+  {
+    "rank": 392,
+    "infinitive": "spingere"
+  },
+  {
+    "rank": 393,
+    "infinitive": "muovere"
+  },
+  {
+    "rank": 394,
+    "infinitive": "porre"
+  },
+  {
+    "rank": 395,
+    "infinitive": "giungere"
+  },
+  {
+    "rank": 396,
+    "infinitive": "autorizzare"
+  },
+  {
+    "rank": 397,
+    "infinitive": "citare"
+  },
+  {
+    "rank": 398,
+    "infinitive": "esistere"
+  },
+  {
+    "rank": 399,
+    "infinitive": "preoccupare"
+  },
+  {
+    "rank": 400,
+    "infinitive": "indagare"
+  },
+  {
+    "rank": 401,
+    "infinitive": "potenziare"
+  },
+  {
+    "rank": 402,
+    "infinitive": "compilare"
+  },
+  {
+    "rank": 403,
+    "infinitive": "ricorrere"
+  },
+  {
+    "rank": 404,
+    "infinitive": "rivelare"
+  },
+  {
+    "rank": 405,
+    "infinitive": "testimoniare"
+  },
+  {
+    "rank": 406,
+    "infinitive": "stampare"
+  },
+  {
+    "rank": 407,
+    "infinitive": "esplodere"
+  },
+  {
+    "rank": 408,
+    "infinitive": "cliccare"
+  },
+  {
+    "rank": 409,
+    "infinitive": "sparire"
+  },
+  {
+    "rank": 410,
+    "infinitive": "cuocere"
+  },
+  {
+    "rank": 411,
+    "infinitive": "compromettere"
+  },
+  {
+    "rank": 412,
+    "infinitive": "possedere"
+  },
+  {
+    "rank": 413,
+    "infinitive": "sospendere"
+  },
+  {
+    "rank": 414,
+    "infinitive": "aderire"
+  },
+  {
+    "rank": 415,
+    "infinitive": "riprendere"
+  },
+  {
+    "rank": 416,
+    "infinitive": "progettare"
+  },
+  {
+    "rank": 417,
+    "infinitive": "praticare"
+  },
+  {
+    "rank": 418,
+    "infinitive": "distinguere"
+  },
+  {
+    "rank": 419,
+    "infinitive": "adattare"
+  },
+  {
+    "rank": 420,
+    "infinitive": "scavare"
+  },
+  {
+    "rank": 421,
+    "infinitive": "intensificare"
+  },
+  {
+    "rank": 422,
+    "infinitive": "consolidare"
+  },
+  {
+    "rank": 423,
+    "infinitive": "guarire"
+  },
+  {
+    "rank": 424,
+    "infinitive": "precisare"
+  },
+  {
+    "rank": 425,
+    "infinitive": "ricostruire"
+  },
+  {
+    "rank": 426,
+    "infinitive": "dipingere"
+  },
+  {
+    "rank": 427,
+    "infinitive": "scambiare"
+  },
+  {
+    "rank": 428,
+    "infinitive": "danneggiare"
+  },
+  {
+    "rank": 429,
+    "infinitive": "usufruire"
+  },
+  {
+    "rank": 430,
+    "infinitive": "attirare"
+  },
+  {
+    "rank": 431,
+    "infinitive": "configurare"
+  },
+  {
+    "rank": 432,
+    "infinitive": "temere"
+  },
+  {
+    "rank": 433,
+    "infinitive": "segnalare"
+  },
+  {
+    "rank": 434,
+    "infinitive": "restituire"
+  },
+  {
+    "rank": 435,
+    "infinitive": "respingere"
+  },
+  {
+    "rank": 436,
+    "infinitive": "alleviare"
+  },
+  {
+    "rank": 437,
+    "infinitive": "armonizzare"
+  },
+  {
+    "rank": 438,
+    "infinitive": "mescolare"
+  },
+  {
+    "rank": 439,
+    "infinitive": "pianificare"
+  },
+  {
+    "rank": 440,
+    "infinitive": "testare"
+  },
+  {
+    "rank": 441,
+    "infinitive": "interpretare"
+  },
+  {
+    "rank": 442,
+    "infinitive": "distribuire"
+  },
+  {
+    "rank": 443,
+    "infinitive": "adeguare"
+  },
+  {
+    "rank": 444,
+    "infinitive": "apportare"
+  },
+  {
+    "rank": 445,
+    "infinitive": "importare"
+  },
+  {
+    "rank": 446,
+    "infinitive": "vietare"
+  },
+  {
+    "rank": 447,
+    "infinitive": "baciare"
+  },
+  {
+    "rank": 448,
+    "infinitive": "tradurre"
+  },
+  {
+    "rank": 449,
+    "infinitive": "sfuggire"
+  },
+  {
+    "rank": 450,
+    "infinitive": "condannare"
+  },
+  {
+    "rank": 451,
+    "infinitive": "noleggiare"
+  },
+  {
+    "rank": 452,
+    "infinitive": "constatare"
+  },
+  {
+    "rank": 453,
+    "infinitive": "parere"
+  },
+  {
+    "rank": 454,
+    "infinitive": "navigare"
+  },
+  {
+    "rank": 455,
+    "infinitive": "pescare"
+  },
+  {
+    "rank": 456,
+    "infinitive": "attendere"
+  },
+  {
+    "rank": 457,
+    "infinitive": "durare"
+  },
+  {
+    "rank": 458,
+    "infinitive": "copiare"
+  },
+  {
+    "rank": 459,
+    "infinitive": "abbassare"
+  },
+  {
+    "rank": 460,
+    "infinitive": "rinnovare"
+  },
+  {
+    "rank": 461,
+    "infinitive": "ribadire"
+  },
+  {
+    "rank": 462,
+    "infinitive": "personalizzare"
+  },
+  {
+    "rank": 463,
+    "infinitive": "dirigere"
+  },
+  {
+    "rank": 464,
+    "infinitive": "suggerire"
+  },
+  {
+    "rank": 465,
+    "infinitive": "insistere"
+  },
+  {
+    "rank": 466,
+    "infinitive": "confrontare"
+  },
+  {
+    "rank": 467,
+    "infinitive": "sorridere"
+  },
+  {
+    "rank": 468,
+    "infinitive": "conquistare"
+  },
+  {
+    "rank": 469,
+    "infinitive": "adempiere"
+  },
+  {
+    "rank": 470,
+    "infinitive": "riportare"
+  },
+  {
+    "rank": 471,
+    "infinitive": "concentrare"
+  },
+  {
+    "rank": 472,
+    "infinitive": "soggiornare"
+  },
+  {
+    "rank": 473,
+    "infinitive": "riferire"
+  },
+  {
+    "rank": 474,
+    "infinitive": "separare"
+  },
+  {
+    "rank": 475,
+    "infinitive": "esportare"
+  },
+  {
+    "rank": 476,
+    "infinitive": "estrarre"
+  },
+  {
+    "rank": 477,
+    "infinitive": "riprodurre"
+  },
+  {
+    "rank": 478,
+    "infinitive": "coltivare"
+  },
+  {
+    "rank": 479,
+    "infinitive": "spegnere"
+  },
+  {
+    "rank": 480,
+    "infinitive": "ritrovare"
+  },
+  {
+    "rank": 481,
+    "infinitive": "donare"
+  },
+  {
+    "rank": 482,
+    "infinitive": "perdonare"
+  },
+  {
+    "rank": 483,
+    "infinitive": "fidare"
+  },
+  {
+    "rank": 484,
+    "infinitive": "menzionare"
+  },
+  {
+    "rank": 485,
+    "infinitive": "litigare"
+  },
+  {
+    "rank": 486,
+    "infinitive": "montare"
+  },
+  {
+    "rank": 487,
+    "infinitive": "affittare"
+  },
+  {
+    "rank": 488,
+    "infinitive": "sconfiggere"
+  },
+  {
+    "rank": 489,
+    "infinitive": "ingannare"
+  },
+  {
+    "rank": 490,
+    "infinitive": "accendere"
+  },
+  {
+    "rank": 491,
+    "infinitive": "nominare"
+  },
+  {
+    "rank": 492,
+    "infinitive": "digitare"
+  },
+  {
+    "rank": 493,
+    "infinitive": "potere"
+  },
+  {
+    "rank": 494,
+    "infinitive": "approfondire"
+  },
+  {
+    "rank": 495,
+    "infinitive": "scopare"
+  },
+  {
+    "rank": 496,
+    "infinitive": "puntare"
+  },
+  {
+    "rank": 497,
+    "infinitive": "interferire"
+  },
+  {
+    "rank": 498,
+    "infinitive": "licenziare"
+  },
+  {
+    "rank": 499,
+    "infinitive": "nutrire"
+  },
+  {
+    "rank": 500,
+    "infinitive": "alzare"
+  },
+  {
+    "rank": 501,
+    "infinitive": "memorizzare"
+  },
+  {
+    "rank": 502,
+    "infinitive": "alimentare"
+  },
+  {
+    "rank": 503,
+    "infinitive": "significare"
+  },
+  {
+    "rank": 504,
+    "infinitive": "rientrare"
+  },
+  {
+    "rank": 505,
+    "infinitive": "accompagnare"
+  },
+  {
+    "rank": 506,
+    "infinitive": "evidenziare"
+  },
+  {
+    "rank": 507,
+    "infinitive": "esigere"
+  },
+  {
+    "rank": 508,
+    "infinitive": "terminare"
+  },
+  {
+    "rank": 509,
+    "infinitive": "combinare"
+  },
+  {
+    "rank": 510,
+    "infinitive": "formulare"
+  },
+  {
+    "rank": 511,
+    "infinitive": "ammazzare"
+  },
+  {
+    "rank": 512,
+    "infinitive": "badare"
+  },
+  {
+    "rank": 513,
+    "infinitive": "onorare"
+  },
+  {
+    "rank": 514,
+    "infinitive": "esporre"
+  },
+  {
+    "rank": 515,
+    "infinitive": "buttare"
+  },
+  {
+    "rank": 516,
+    "infinitive": "gridare"
+  },
+  {
+    "rank": 517,
+    "infinitive": "rallentare"
+  },
+  {
+    "rank": 518,
+    "infinitive": "rintracciare"
+  },
+  {
+    "rank": 519,
+    "infinitive": "avvenire"
+  },
+  {
+    "rank": 520,
+    "infinitive": "recitare"
+  },
+  {
+    "rank": 521,
+    "infinitive": "ritenere"
+  },
+  {
+    "rank": 522,
+    "infinitive": "trarre"
+  },
+  {
+    "rank": 523,
+    "infinitive": "gettare"
+  },
+  {
+    "rank": 524,
+    "infinitive": "colmare"
+  },
+  {
+    "rank": 525,
+    "infinitive": "accertare"
+  },
+  {
+    "rank": 526,
+    "infinitive": "desiderare"
+  },
+  {
+    "rank": 527,
+    "infinitive": "programmare"
+  },
+  {
+    "rank": 528,
+    "infinitive": "parcheggiare"
+  },
+  {
+    "rank": 529,
+    "infinitive": "espandere"
+  },
+  {
+    "rank": 530,
+    "infinitive": "sprecare"
+  },
+  {
+    "rank": 531,
+    "infinitive": "scattare"
+  },
+  {
+    "rank": 532,
+    "infinitive": "cucire"
+  },
+  {
+    "rank": 533,
+    "infinitive": "comportare"
+  },
+  {
+    "rank": 534,
+    "infinitive": "assegnare"
+  },
+  {
+    "rank": 535,
+    "infinitive": "scommettere"
+  },
+  {
+    "rank": 536,
+    "infinitive": "percepire"
+  },
+  {
+    "rank": 537,
+    "infinitive": "confessare"
+  },
+  {
+    "rank": 538,
+    "infinitive": "illustrare"
+  },
+  {
+    "rank": 539,
+    "infinitive": "piegare"
+  },
+  {
+    "rank": 540,
+    "infinitive": "trattenere"
+  },
+  {
+    "rank": 541,
+    "infinitive": "interagire"
+  },
+  {
+    "rank": 542,
+    "infinitive": "raccomandare"
+  },
+  {
+    "rank": 543,
+    "infinitive": "consumare"
+  },
+  {
+    "rank": 544,
+    "infinitive": "apprendere"
+  },
+  {
+    "rank": 545,
+    "infinitive": "aggiustare"
+  },
+  {
+    "rank": 546,
+    "infinitive": "incidere"
+  },
+  {
+    "rank": 547,
+    "infinitive": "divenire"
+  },
+  {
+    "rank": 548,
+    "infinitive": "assaggiare"
+  },
+  {
+    "rank": 549,
+    "infinitive": "consigliare"
+  },
+  {
+    "rank": 550,
+    "infinitive": "minimizzare"
+  },
+  {
+    "rank": 551,
+    "infinitive": "riesaminare"
+  },
+  {
+    "rank": 552,
+    "infinitive": "compensare"
+  },
+  {
+    "rank": 553,
+    "infinitive": "commettere"
+  },
+  {
+    "rank": 554,
+    "infinitive": "scomparire"
+  },
+  {
+    "rank": 555,
+    "infinitive": "conferire"
+  },
+  {
+    "rank": 556,
+    "infinitive": "progredire"
+  },
+  {
+    "rank": 557,
+    "infinitive": "cedere"
+  },
+  {
+    "rank": 558,
+    "infinitive": "odiare"
+  },
+  {
+    "rank": 559,
+    "infinitive": "sognare"
+  },
+  {
+    "rank": 560,
+    "infinitive": "dovere"
+  },
+  {
+    "rank": 561,
+    "infinitive": "impiegare"
+  },
+  {
+    "rank": 562,
+    "infinitive": "indurre"
+  },
+  {
+    "rank": 563,
+    "infinitive": "denunciare"
+  },
+  {
+    "rank": 564,
+    "infinitive": "assorbire"
+  },
+  {
+    "rank": 565,
+    "infinitive": "trascinare"
+  },
+  {
+    "rank": 566,
+    "infinitive": "sacrificare"
+  },
+  {
+    "rank": 567,
+    "infinitive": "governare"
+  },
+  {
+    "rank": 568,
+    "infinitive": "tracciare"
+  },
+  {
+    "rank": 569,
+    "infinitive": "vomitare"
+  },
+  {
+    "rank": 570,
+    "infinitive": "redigere"
+  },
+  {
+    "rank": 571,
+    "infinitive": "percorrere"
+  },
+  {
+    "rank": 572,
+    "infinitive": "cenare"
+  },
+  {
+    "rank": 573,
+    "infinitive": "ostacolare"
+  },
+  {
+    "rank": 574,
+    "infinitive": "spedire"
+  },
+  {
+    "rank": 575,
+    "infinitive": "approfittare"
+  },
+  {
+    "rank": 576,
+    "infinitive": "interrogare"
+  },
+  {
+    "rank": 577,
+    "infinitive": "punire"
+  },
+  {
+    "rank": 578,
+    "infinitive": "ripulire"
+  },
+  {
+    "rank": 579,
+    "infinitive": "dedicare"
+  },
+  {
+    "rank": 580,
+    "infinitive": "sciogliere"
+  },
+  {
+    "rank": 581,
+    "infinitive": "atterrare"
+  },
+  {
+    "rank": 582,
+    "infinitive": "ristabilire"
+  },
+  {
+    "rank": 583,
+    "infinitive": "ritardare"
+  },
+  {
+    "rank": 584,
+    "infinitive": "manipolare"
+  },
+  {
+    "rank": 585,
+    "infinitive": "svoltare"
+  },
+  {
+    "rank": 586,
+    "infinitive": "mancare"
+  },
+  {
+    "rank": 587,
+    "infinitive": "corrispondere"
+  },
+  {
+    "rank": 588,
+    "infinitive": "incentivare"
+  },
+  {
+    "rank": 589,
+    "infinitive": "riguardare"
+  },
+  {
+    "rank": 590,
+    "infinitive": "posizionare"
+  },
+  {
+    "rank": 591,
+    "infinitive": "attrarre"
+  },
+  {
+    "rank": 592,
+    "infinitive": "ricominciare"
+  },
+  {
+    "rank": 593,
+    "infinitive": "manifestare"
+  },
+  {
+    "rank": 594,
+    "infinitive": "cessare"
+  },
+  {
+    "rank": 595,
+    "infinitive": "seppellire"
+  },
+  {
+    "rank": 596,
+    "infinitive": "ferire"
+  },
+  {
+    "rank": 597,
+    "infinitive": "nascere"
+  },
+  {
+    "rank": 598,
+    "infinitive": "revocare"
+  },
+  {
+    "rank": 599,
+    "infinitive": "vestire"
+  },
+  {
+    "rank": 600,
+    "infinitive": "allineare"
+  },
+  {
+    "rank": 601,
+    "infinitive": "sopprimere"
+  },
+  {
+    "rank": 602,
+    "infinitive": "fallire"
+  },
+  {
+    "rank": 603,
+    "infinitive": "rinviare"
+  },
+  {
+    "rank": 604,
+    "infinitive": "avanzare"
+  },
+  {
+    "rank": 605,
+    "infinitive": "abbracciare"
+  },
+  {
+    "rank": 606,
+    "infinitive": "sedere"
+  },
+  {
+    "rank": 607,
+    "infinitive": "confondere"
+  },
+  {
+    "rank": 608,
+    "infinitive": "violare"
+  },
+  {
+    "rank": 609,
+    "infinitive": "disattivare"
+  },
+  {
+    "rank": 610,
+    "infinitive": "decorare"
+  },
+  {
+    "rank": 611,
+    "infinitive": "stabilizzare"
+  },
+  {
+    "rank": 612,
+    "infinitive": "riformare"
+  },
+  {
+    "rank": 613,
+    "infinitive": "conciliare"
+  },
+  {
+    "rank": 614,
+    "infinitive": "dubitare"
+  },
+  {
+    "rank": 615,
+    "infinitive": "legare"
+  },
+  {
+    "rank": 616,
+    "infinitive": "spezzare"
+  },
+  {
+    "rank": 617,
+    "infinitive": "sciare"
+  },
+  {
+    "rank": 618,
+    "infinitive": "scorrere"
+  },
+  {
+    "rank": 619,
+    "infinitive": "emettere"
+  },
+  {
+    "rank": 620,
+    "infinitive": "sorvegliare"
+  },
+  {
+    "rank": 621,
+    "infinitive": "influire"
+  },
+  {
+    "rank": 622,
+    "infinitive": "rimediare"
+  },
+  {
+    "rank": 623,
+    "infinitive": "cacciare"
+  },
+  {
+    "rank": 624,
+    "infinitive": "anticipare"
+  },
+  {
+    "rank": 625,
+    "infinitive": "asciugare"
+  },
+  {
+    "rank": 626,
+    "infinitive": "raddoppiare"
+  },
+  {
+    "rank": 627,
+    "infinitive": "attribuire"
+  },
+  {
+    "rank": 628,
+    "infinitive": "abolire"
+  },
+  {
+    "rank": 629,
+    "infinitive": "prorogare"
+  },
+  {
+    "rank": 630,
+    "infinitive": "prolungare"
+  },
+  {
+    "rank": 631,
+    "infinitive": "occupare"
+  },
+  {
+    "rank": 632,
+    "infinitive": "bere"
+  },
+  {
+    "rank": 633,
+    "infinitive": "sottoporre"
+  },
+  {
+    "rank": 634,
+    "infinitive": "instaurare"
+  },
+  {
+    "rank": 635,
+    "infinitive": "spaventare"
+  },
+  {
+    "rank": 636,
+    "infinitive": "designare"
+  },
+  {
+    "rank": 637,
+    "infinitive": "incolpare"
+  },
+  {
+    "rank": 638,
+    "infinitive": "educare"
+  },
+  {
+    "rank": 639,
+    "infinitive": "localizzare"
+  },
+  {
+    "rank": 640,
+    "infinitive": "appendere"
+  },
+  {
+    "rank": 641,
+    "infinitive": "alterare"
+  },
+  {
+    "rank": 642,
+    "infinitive": "invertire"
+  },
+  {
+    "rank": 643,
+    "infinitive": "proclamare"
+  },
+  {
+    "rank": 644,
+    "infinitive": "passeggiare"
+  },
+  {
+    "rank": 645,
+    "infinitive": "degustare"
+  },
+  {
+    "rank": 646,
+    "infinitive": "penetrare"
+  },
+  {
+    "rank": 647,
+    "infinitive": "raffreddare"
+  },
+  {
+    "rank": 648,
+    "infinitive": "ratificare"
+  },
+  {
+    "rank": 649,
+    "infinitive": "valorizzare"
+  },
+  {
+    "rank": 650,
+    "infinitive": "tradire"
+  },
+  {
+    "rank": 651,
+    "infinitive": "avvertire"
+  },
+  {
+    "rank": 652,
+    "infinitive": "inventare"
+  },
+  {
+    "rank": 653,
+    "infinitive": "ispirare"
+  },
+  {
+    "rank": 654,
+    "infinitive": "rilanciare"
+  },
+  {
+    "rank": 655,
+    "infinitive": "assaporare"
+  },
+  {
+    "rank": 656,
+    "infinitive": "bollire"
+  },
+  {
+    "rank": 657,
+    "infinitive": "mollare"
+  },
+  {
+    "rank": 658,
+    "infinitive": "predicare"
+  },
+  {
+    "rank": 659,
+    "infinitive": "scivolare"
+  },
+  {
+    "rank": 660,
+    "infinitive": "supporre"
+  },
+  {
+    "rank": 661,
+    "infinitive": "implementare"
+  },
+  {
+    "rank": 662,
+    "infinitive": "abitare"
+  },
+  {
+    "rank": 663,
+    "infinitive": "criticare"
+  },
+  {
+    "rank": 664,
+    "infinitive": "illuminare"
+  },
+  {
+    "rank": 665,
+    "infinitive": "stringere"
+  },
+  {
+    "rank": 666,
+    "infinitive": "pranzare"
+  },
+  {
+    "rank": 667,
+    "infinitive": "tacere"
+  },
+  {
+    "rank": 668,
+    "infinitive": "isolare"
+  },
+  {
+    "rank": 669,
+    "infinitive": "rimandare"
+  },
+  {
+    "rank": 670,
+    "infinitive": "pisciare"
+  },
+  {
+    "rank": 671,
+    "infinitive": "notificare"
+  },
+  {
+    "rank": 672,
+    "infinitive": "mobilitare"
+  },
+  {
+    "rank": 673,
+    "infinitive": "abbinare"
+  },
+  {
+    "rank": 674,
+    "infinitive": "disturbare"
+  },
+  {
+    "rank": 675,
+    "infinitive": "promettere"
+  },
+  {
+    "rank": 676,
+    "infinitive": "attenuare"
+  },
+  {
+    "rank": 677,
+    "infinitive": "subire"
+  },
+  {
+    "rank": 678,
+    "infinitive": "trascurare"
+  },
+  {
+    "rank": 679,
+    "infinitive": "tollerare"
+  },
+  {
+    "rank": 680,
+    "infinitive": "cavalcare"
+  },
+  {
+    "rank": 681,
+    "infinitive": "provvedere"
+  },
+  {
+    "rank": 682,
+    "infinitive": "sbloccare"
+  },
+  {
+    "rank": 683,
+    "infinitive": "forzare"
+  },
+  {
+    "rank": 684,
+    "infinitive": "sfidare"
+  },
+  {
+    "rank": 685,
+    "infinitive": "ricreare"
+  },
+  {
+    "rank": 686,
+    "infinitive": "concepire"
+  },
+  {
+    "rank": 687,
+    "infinitive": "contemplare"
+  },
+  {
+    "rank": 688,
+    "infinitive": "obbedire"
+  },
+  {
+    "rank": 689,
+    "infinitive": "rivivere"
+  },
+  {
+    "rank": 690,
+    "infinitive": "afferrare"
+  },
+  {
+    "rank": 691,
+    "infinitive": "minacciare"
+  },
+  {
+    "rank": 692,
+    "infinitive": "rivolgere"
+  },
+  {
+    "rank": 693,
+    "infinitive": "emergere"
+  },
+  {
+    "rank": 694,
+    "infinitive": "arricchire"
+  },
+  {
+    "rank": 695,
+    "infinitive": "pretendere"
+  },
+  {
+    "rank": 696,
+    "infinitive": "costringere"
+  },
+  {
+    "rank": 697,
+    "infinitive": "imitare"
+  },
+  {
+    "rank": 698,
+    "infinitive": "allargare"
+  },
+  {
+    "rank": 699,
+    "infinitive": "riscaldare"
+  },
+  {
+    "rank": 700,
+    "infinitive": "pronunciare"
+  },
+  {
+    "rank": 701,
+    "infinitive": "rapire"
+  },
+  {
+    "rank": 702,
+    "infinitive": "sorgere"
+  },
+  {
+    "rank": 703,
+    "infinitive": "ricercare"
+  },
+  {
+    "rank": 704,
+    "infinitive": "inseguire"
+  },
+  {
+    "rank": 705,
+    "infinitive": "rimborsare"
+  },
+  {
+    "rank": 706,
+    "infinitive": "telefonare"
+  },
+  {
+    "rank": 707,
+    "infinitive": "dominare"
+  },
+  {
+    "rank": 708,
+    "infinitive": "riunire"
+  },
+  {
+    "rank": 709,
+    "infinitive": "riscoprire"
+  },
+  {
+    "rank": 710,
+    "infinitive": "segnare"
+  },
+  {
+    "rank": 711,
+    "infinitive": "bussare"
+  },
+  {
+    "rank": 712,
+    "infinitive": "riconsiderare"
+  },
+  {
+    "rank": 713,
+    "infinitive": "scalare"
+  },
+  {
+    "rank": 714,
+    "infinitive": "regolamentare"
+  },
+  {
+    "rank": 715,
+    "infinitive": "concordare"
+  },
+  {
+    "rank": 716,
+    "infinitive": "protestare"
+  },
+  {
+    "rank": 717,
+    "infinitive": "stimare"
+  },
+  {
+    "rank": 718,
+    "infinitive": "frequentare"
+  },
+  {
+    "rank": 719,
+    "infinitive": "succhiare"
+  },
+  {
+    "rank": 720,
+    "infinitive": "valere"
+  },
+  {
+    "rank": 721,
+    "infinitive": "dipendere"
+  },
+  {
+    "rank": 722,
+    "infinitive": "convivere"
+  },
+  {
+    "rank": 723,
+    "infinitive": "indebolire"
+  },
+  {
+    "rank": 724,
+    "infinitive": "pregiudicare"
+  },
+  {
+    "rank": 725,
+    "infinitive": "abilitare"
+  },
+  {
+    "rank": 726,
+    "infinitive": "filtrare"
+  },
+  {
+    "rank": 727,
+    "infinitive": "fondare"
+  },
+  {
+    "rank": 728,
+    "infinitive": "sbattere"
+  },
+  {
+    "rank": 729,
+    "infinitive": "comporre"
+  },
+  {
+    "rank": 730,
+    "infinitive": "perfezionare"
+  },
+  {
+    "rank": 731,
+    "infinitive": "svegliare"
+  },
+  {
+    "rank": 732,
+    "infinitive": "appartenere"
+  },
+  {
+    "rank": 733,
+    "infinitive": "immettere"
+  },
+  {
+    "rank": 734,
+    "infinitive": "accusare"
+  },
+  {
+    "rank": 735,
+    "infinitive": "abbattere"
+  },
+  {
+    "rank": 736,
+    "infinitive": "assolvere"
+  },
+  {
+    "rank": 737,
+    "infinitive": "piantare"
+  },
+  {
+    "rank": 738,
+    "infinitive": "associare"
+  },
+  {
+    "rank": 739,
+    "infinitive": "rilassare"
+  },
+  {
+    "rank": 740,
+    "infinitive": "predisporre"
+  },
+  {
+    "rank": 741,
+    "infinitive": "infrangere"
+  },
+  {
+    "rank": 742,
+    "infinitive": "simulare"
+  },
+  {
+    "rank": 743,
+    "infinitive": "fabbricare"
+  },
+  {
+    "rank": 744,
+    "infinitive": "mirare"
+  },
+  {
+    "rank": 745,
+    "infinitive": "fronteggiare"
+  },
+  {
+    "rank": 746,
+    "infinitive": "depositare"
+  },
+  {
+    "rank": 747,
+    "infinitive": "chiacchierare"
+  },
+  {
+    "rank": 748,
+    "infinitive": "sottovalutare"
+  },
+  {
+    "rank": 749,
+    "infinitive": "marcire"
+  },
+  {
+    "rank": 750,
+    "infinitive": "sfamare"
+  },
+  {
+    "rank": 751,
+    "infinitive": "scaldare"
+  },
+  {
+    "rank": 752,
+    "infinitive": "riaprire"
+  },
+  {
+    "rank": 753,
+    "infinitive": "ingrandire"
+  },
+  {
+    "rank": 754,
+    "infinitive": "evacuare"
+  },
+  {
+    "rank": 755,
+    "infinitive": "posare"
+  },
+  {
+    "rank": 756,
+    "infinitive": "comandare"
+  },
+  {
+    "rank": 757,
+    "infinitive": "investigare"
+  },
+  {
+    "rank": 758,
+    "infinitive": "pervenire"
+  },
+  {
+    "rank": 759,
+    "infinitive": "avvicinare"
+  },
+  {
+    "rank": 760,
+    "infinitive": "riavviare"
+  },
+  {
+    "rank": 761,
+    "infinitive": "comparire"
+  },
+  {
+    "rank": 762,
+    "infinitive": "crollare"
+  },
+  {
+    "rank": 763,
+    "infinitive": "presumere"
+  },
+  {
+    "rank": 764,
+    "infinitive": "richiamare"
+  },
+  {
+    "rank": 765,
+    "infinitive": "scoraggiare"
+  },
+  {
+    "rank": 766,
+    "infinitive": "affidare"
+  },
+  {
+    "rank": 767,
+    "infinitive": "classificare"
+  },
+  {
+    "rank": 768,
+    "infinitive": "ovviare"
+  },
+  {
+    "rank": 769,
+    "infinitive": "elencare"
+  },
+  {
+    "rank": 770,
+    "infinitive": "piovere"
+  },
+  {
+    "rank": 771,
+    "infinitive": "ricaricare"
+  },
+  {
+    "rank": 772,
+    "infinitive": "agitare"
+  },
+  {
+    "rank": 773,
+    "infinitive": "fiorire"
+  },
+  {
+    "rank": 774,
+    "infinitive": "collocare"
+  },
+  {
+    "rank": 775,
+    "infinitive": "disciplinare"
+  },
+  {
+    "rank": 776,
+    "infinitive": "peggiorare"
+  },
+  {
+    "rank": 777,
+    "infinitive": "arrabbiare"
+  },
+  {
+    "rank": 778,
+    "infinitive": "divulgare"
+  },
+  {
+    "rank": 779,
+    "infinitive": "provenire"
+  },
+  {
+    "rank": 780,
+    "infinitive": "riciclare"
+  },
+  {
+    "rank": 781,
+    "infinitive": "accumulare"
+  },
+  {
+    "rank": 782,
+    "infinitive": "congelare"
+  },
+  {
+    "rank": 783,
+    "infinitive": "decifrare"
+  },
+  {
+    "rank": 784,
+    "infinitive": "obbligare"
+  },
+  {
+    "rank": 785,
+    "infinitive": "prosperare"
+  },
+  {
+    "rank": 786,
+    "infinitive": "incorporare"
+  },
+  {
+    "rank": 787,
+    "infinitive": "avvisare"
+  },
+  {
+    "rank": 788,
+    "infinitive": "documentare"
+  },
+  {
+    "rank": 789,
+    "infinitive": "staccare"
+  },
+  {
+    "rank": 790,
+    "infinitive": "figurare"
+  },
+  {
+    "rank": 791,
+    "infinitive": "elevare"
+  },
+  {
+    "rank": 792,
+    "infinitive": "optare"
+  },
+  {
+    "rank": 793,
+    "infinitive": "esortare"
+  },
+  {
+    "rank": 794,
+    "infinitive": "reggere"
+  },
+  {
+    "rank": 795,
+    "infinitive": "udire"
+  },
+  {
+    "rank": 796,
+    "infinitive": "intendere"
+  },
+  {
+    "rank": 797,
+    "infinitive": "calmare"
+  },
+  {
+    "rank": 798,
+    "infinitive": "meditare"
+  },
+  {
+    "rank": 799,
+    "infinitive": "sanguinare"
+  },
+  {
+    "rank": 800,
+    "infinitive": "prescrivere"
+  },
+  {
+    "rank": 801,
+    "infinitive": "salutare"
+  },
+  {
+    "rank": 802,
+    "infinitive": "sollecitare"
+  },
+  {
+    "rank": 803,
+    "infinitive": "aggirare"
+  },
+  {
+    "rank": 804,
+    "infinitive": "masticare"
+  },
+  {
+    "rank": 805,
+    "infinitive": "sedurre"
+  },
+  {
+    "rank": 806,
+    "infinitive": "brillare"
+  },
+  {
+    "rank": 807,
+    "infinitive": "derivare"
+  },
+  {
+    "rank": 808,
+    "infinitive": "reperire"
+  },
+  {
+    "rank": 809,
+    "infinitive": "soffocare"
+  },
+  {
+    "rank": 810,
+    "infinitive": "orientare"
+  },
+  {
+    "rank": 811,
+    "infinitive": "svelare"
+  },
+  {
+    "rank": 812,
+    "infinitive": "invecchiare"
+  },
+  {
+    "rank": 813,
+    "infinitive": "rovesciare"
+  },
+  {
+    "rank": 814,
+    "infinitive": "delegare"
+  },
+  {
+    "rank": 815,
+    "infinitive": "pilotare"
+  },
+  {
+    "rank": 816,
+    "infinitive": "bilanciare"
+  },
+  {
+    "rank": 817,
+    "infinitive": "flirtare"
+  },
+  {
+    "rank": 818,
+    "infinitive": "invadere"
+  },
+  {
+    "rank": 819,
+    "infinitive": "schiacciare"
+  },
+  {
+    "rank": 820,
+    "infinitive": "connettere"
+  },
+  {
+    "rank": 821,
+    "infinitive": "fotografare"
+  },
+  {
+    "rank": 822,
+    "infinitive": "rispecchiare"
+  },
+  {
+    "rank": 823,
+    "infinitive": "sospettare"
+  },
+  {
+    "rank": 824,
+    "infinitive": "alloggiare"
+  },
+  {
+    "rank": 825,
+    "infinitive": "ripensare"
+  },
+  {
+    "rank": 826,
+    "infinitive": "tremare"
+  },
+  {
+    "rank": 827,
+    "infinitive": "picchiare"
+  },
+  {
+    "rank": 828,
+    "infinitive": "invocare"
+  },
+  {
+    "rank": 829,
+    "infinitive": "prelevare"
+  },
+  {
+    "rank": 830,
+    "infinitive": "rimettere"
+  },
+  {
+    "rank": 831,
+    "infinitive": "riassumere"
+  },
+  {
+    "rank": 832,
+    "infinitive": "ristrutturare"
+  },
+  {
+    "rank": 833,
+    "infinitive": "adorare"
+  },
+  {
+    "rank": 834,
+    "infinitive": "quantificare"
+  },
+  {
+    "rank": 835,
+    "infinitive": "colorare"
+  },
+  {
+    "rank": 836,
+    "infinitive": "danzare"
+  },
+  {
+    "rank": 837,
+    "infinitive": "rimpiazzare"
+  },
+  {
+    "rank": 838,
+    "infinitive": "vigilare"
+  },
+  {
+    "rank": 839,
+    "infinitive": "giurare"
+  },
+  {
+    "rank": 840,
+    "infinitive": "persuadere"
+  },
+  {
+    "rank": 841,
+    "infinitive": "infilare"
+  },
+  {
+    "rank": 842,
+    "infinitive": "pesare"
+  },
+  {
+    "rank": 843,
+    "infinitive": "svuotare"
+  },
+  {
+    "rank": 844,
+    "infinitive": "perquisire"
+  },
+  {
+    "rank": 845,
+    "infinitive": "ripartire"
+  },
+  {
+    "rank": 846,
+    "infinitive": "sbagliare"
+  },
+  {
+    "rank": 847,
+    "infinitive": "modernizzare"
+  },
+  {
+    "rank": 848,
+    "infinitive": "mitigare"
+  },
+  {
+    "rank": 849,
+    "infinitive": "accordare"
+  },
+  {
+    "rank": 850,
+    "infinitive": "ragionare"
+  },
+  {
+    "rank": 851,
+    "infinitive": "regalare"
+  },
+  {
+    "rank": 852,
+    "infinitive": "scoppiare"
+  },
+  {
+    "rank": 853,
+    "infinitive": "prevalere"
+  },
+  {
+    "rank": 854,
+    "infinitive": "eludere"
+  },
+  {
+    "rank": 855,
+    "infinitive": "leccare"
+  },
+  {
+    "rank": 856,
+    "infinitive": "rivendicare"
+  },
+  {
+    "rank": 857,
+    "infinitive": "domandare"
+  },
+  {
+    "rank": 858,
+    "infinitive": "rassicurare"
+  },
+  {
+    "rank": 859,
+    "infinitive": "riscuotere"
+  },
+  {
+    "rank": 860,
+    "infinitive": "frenare"
+  },
+  {
+    "rank": 861,
+    "infinitive": "indirizzare"
+  },
+  {
+    "rank": 862,
+    "infinitive": "neutralizzare"
+  },
+  {
+    "rank": 863,
+    "infinitive": "saldare"
+  },
+  {
+    "rank": 864,
+    "infinitive": "spiare"
+  },
+  {
+    "rank": 865,
+    "infinitive": "ispezionare"
+  },
+  {
+    "rank": 866,
+    "infinitive": "minare"
+  },
+  {
+    "rank": 867,
+    "infinitive": "razionalizzare"
+  },
+  {
+    "rank": 868,
+    "infinitive": "corrompere"
+  },
+  {
+    "rank": 869,
+    "infinitive": "abrogare"
+  },
+  {
+    "rank": 870,
+    "infinitive": "allenare"
+  },
+  {
+    "rank": 871,
+    "infinitive": "affondare"
+  },
+  {
+    "rank": 872,
+    "infinitive": "sradicare"
+  },
+  {
+    "rank": 873,
+    "infinitive": "motivare"
+  },
+  {
+    "rank": 874,
+    "infinitive": "archiviare"
+  },
+  {
+    "rank": 875,
+    "infinitive": "commercializzare"
+  },
+  {
+    "rank": 876,
+    "infinitive": "dedurre"
+  },
+  {
+    "rank": 877,
+    "infinitive": "distrarre"
+  },
+  {
+    "rank": 878,
+    "infinitive": "capitare"
+  },
+  {
+    "rank": 879,
+    "infinitive": "suscitare"
+  },
+  {
+    "rank": 880,
+    "infinitive": "modellare"
+  },
+  {
+    "rank": 881,
+    "infinitive": "costare"
+  },
+  {
+    "rank": 882,
+    "infinitive": "filmare"
+  },
+  {
+    "rank": 883,
+    "infinitive": "torturare"
+  },
+  {
+    "rank": 884,
+    "infinitive": "preferire"
+  },
+  {
+    "rank": 885,
+    "infinitive": "allungare"
+  },
+  {
+    "rank": 886,
+    "infinitive": "destinare"
+  },
+  {
+    "rank": 887,
+    "infinitive": "erogare"
+  },
+  {
+    "rank": 888,
+    "infinitive": "interessare"
+  },
+  {
+    "rank": 889,
+    "infinitive": "sottoscrivere"
+  },
+  {
+    "rank": 890,
+    "infinitive": "risultare"
+  },
+  {
+    "rank": 891,
+    "infinitive": "scongiurare"
+  },
+  {
+    "rank": 892,
+    "infinitive": "divertire"
+  },
+  {
+    "rank": 893,
+    "infinitive": "rinforzare"
+  },
+  {
+    "rank": 894,
+    "infinitive": "iniettare"
+  },
+  {
+    "rank": 895,
+    "infinitive": "benedire"
+  },
+  {
+    "rank": 896,
+    "infinitive": "diversificare"
+  },
+  {
+    "rank": 897,
+    "infinitive": "incollare"
+  },
+  {
+    "rank": 898,
+    "infinitive": "meritare"
+  },
+  {
+    "rank": 899,
+    "infinitive": "impazzire"
+  },
+  {
+    "rank": 900,
+    "infinitive": "incastrare"
+  },
+  {
+    "rank": 901,
+    "infinitive": "coniugare"
+  },
+  {
+    "rank": 902,
+    "infinitive": "scusare"
+  },
+  {
+    "rank": 903,
+    "infinitive": "divorziare"
+  },
+  {
+    "rank": 904,
+    "infinitive": "recare"
+  },
+  {
+    "rank": 905,
+    "infinitive": "riconquistare"
+  },
+  {
+    "rank": 906,
+    "infinitive": "cagare"
+  },
+  {
+    "rank": 907,
+    "infinitive": "diagnosticare"
+  },
+  {
+    "rank": 908,
+    "infinitive": "evocare"
+  },
+  {
+    "rank": 909,
+    "infinitive": "tessere"
+  },
+  {
+    "rank": 910,
+    "infinitive": "mordere"
+  },
+  {
+    "rank": 911,
+    "infinitive": "maneggiare"
+  },
+  {
+    "rank": 912,
+    "infinitive": "bastare"
+  },
+  {
+    "rank": 913,
+    "infinitive": "custodire"
+  },
+  {
+    "rank": 914,
+    "infinitive": "fondere"
+  },
+  {
+    "rank": 915,
+    "infinitive": "sudare"
+  },
+  {
+    "rank": 916,
+    "infinitive": "amministrare"
+  },
+  {
+    "rank": 917,
+    "infinitive": "circolare"
+  },
+  {
+    "rank": 918,
+    "infinitive": "contestare"
+  },
+  {
+    "rank": 919,
+    "infinitive": "paragonare"
+  },
+  {
+    "rank": 920,
+    "infinitive": "addestrare"
+  },
+  {
+    "rank": 921,
+    "infinitive": "decorrere"
+  },
+  {
+    "rank": 922,
+    "infinitive": "discernere"
+  },
+  {
+    "rank": 923,
+    "infinitive": "evolvere"
+  },
+  {
+    "rank": 924,
+    "infinitive": "vendicare"
+  },
+  {
+    "rank": 925,
+    "infinitive": "predire"
+  },
+  {
+    "rank": 926,
+    "infinitive": "basare"
+  },
+  {
+    "rank": 927,
+    "infinitive": "proibire"
+  },
+  {
+    "rank": 928,
+    "infinitive": "mutare"
+  },
+  {
+    "rank": 929,
+    "infinitive": "ottemperare"
+  },
+  {
+    "rank": 930,
+    "infinitive": "strappare"
+  },
+  {
+    "rank": 931,
+    "infinitive": "convocare"
+  },
+  {
+    "rank": 932,
+    "infinitive": "ingoiare"
+  },
+  {
+    "rank": 933,
+    "infinitive": "rapinare"
+  },
+  {
+    "rank": 934,
+    "infinitive": "allegare"
+  },
+  {
+    "rank": 935,
+    "infinitive": "friggere"
+  },
+  {
+    "rank": 936,
+    "infinitive": "immagazzinare"
+  },
+  {
+    "rank": 937,
+    "infinitive": "impressionare"
+  },
+  {
+    "rank": 938,
+    "infinitive": "purificare"
+  },
+  {
+    "rank": 939,
+    "infinitive": "commemorare"
+  },
+  {
+    "rank": 940,
+    "infinitive": "reclutare"
+  },
+  {
+    "rank": 941,
+    "infinitive": "fottere"
+  },
+  {
+    "rank": 942,
+    "infinitive": "sorprendere"
+  },
+  {
+    "rank": 943,
+    "infinitive": "intrattenere"
+  },
+  {
+    "rank": 944,
+    "infinitive": "sabotare"
+  },
+  {
+    "rank": 945,
+    "infinitive": "scherzare"
+  },
+  {
+    "rank": 946,
+    "infinitive": "digerire"
+  },
+  {
+    "rank": 947,
+    "infinitive": "somministrare"
+  },
+  {
+    "rank": 948,
+    "infinitive": "eleggere"
+  },
+  {
+    "rank": 949,
+    "infinitive": "sorseggiare"
+  },
+  {
+    "rank": 950,
+    "infinitive": "sensibilizzare"
+  },
+  {
+    "rank": 951,
+    "infinitive": "perseverare"
+  },
+  {
+    "rank": 952,
+    "infinitive": "peccare"
+  },
+  {
+    "rank": 953,
+    "infinitive": "piazzare"
+  },
+  {
+    "rank": 954,
+    "infinitive": "scatenare"
+  },
+  {
+    "rank": 955,
+    "infinitive": "differire"
+  },
+  {
+    "rank": 956,
+    "infinitive": "innescare"
+  },
+  {
+    "rank": 957,
+    "infinitive": "pubblicizzare"
+  },
+  {
+    "rank": 958,
+    "infinitive": "reclamare"
+  },
+  {
+    "rank": 959,
+    "infinitive": "risalire"
+  },
+  {
+    "rank": 960,
+    "infinitive": "rotolare"
+  },
+  {
+    "rank": 961,
+    "infinitive": "svenire"
+  },
+  {
+    "rank": 962,
+    "infinitive": "lodare"
+  },
+  {
+    "rank": 963,
+    "infinitive": "falsare"
+  },
+  {
+    "rank": 964,
+    "infinitive": "innalzare"
+  },
+  {
+    "rank": 965,
+    "infinitive": "annegare"
+  },
+  {
+    "rank": 966,
+    "infinitive": "voltare"
+  },
+  {
+    "rank": 967,
+    "infinitive": "replicare"
+  },
+  {
+    "rank": 968,
+    "infinitive": "moltiplicare"
+  },
+  {
+    "rank": 969,
+    "infinitive": "regnare"
+  },
+  {
+    "rank": 970,
+    "infinitive": "oltrepassare"
+  },
+  {
+    "rank": 971,
+    "infinitive": "rettificare"
+  },
+  {
+    "rank": 972,
+    "infinitive": "vagare"
+  },
+  {
+    "rank": 973,
+    "infinitive": "esitare"
+  },
+  {
+    "rank": 974,
+    "infinitive": "restringere"
+  },
+  {
+    "rank": 975,
+    "infinitive": "imbrogliare"
+  },
+  {
+    "rank": 976,
+    "infinitive": "riservare"
+  },
+  {
+    "rank": 977,
+    "infinitive": "iscrivere"
+  },
+  {
+    "rank": 978,
+    "infinitive": "maturare"
+  },
+  {
+    "rank": 979,
+    "infinitive": "stipulare"
+  },
+  {
+    "rank": 980,
+    "infinitive": "ripagare"
+  },
+  {
+    "rank": 981,
+    "infinitive": "scadere"
+  },
+  {
+    "rank": 982,
+    "infinitive": "espellere"
+  },
+  {
+    "rank": 983,
+    "infinitive": "ricoprire"
+  },
+  {
+    "rank": 984,
+    "infinitive": "socializzare"
+  },
+  {
+    "rank": 985,
+    "infinitive": "stupire"
+  },
+  {
+    "rank": 986,
+    "infinitive": "attingere"
+  },
+  {
+    "rank": 987,
+    "infinitive": "recepire"
+  },
+  {
+    "rank": 988,
+    "infinitive": "risvegliare"
+  },
+  {
+    "rank": 989,
+    "infinitive": "convalidare"
+  },
+  {
+    "rank": 990,
+    "infinitive": "dotare"
+  },
+  {
+    "rank": 991,
+    "infinitive": "evadere"
+  },
+  {
+    "rank": 992,
+    "infinitive": "allevare"
+  },
+  {
+    "rank": 993,
+    "infinitive": "barare"
+  },
+  {
+    "rank": 994,
+    "infinitive": "intercettare"
+  },
+  {
+    "rank": 995,
+    "infinitive": "assomigliare"
+  },
+  {
+    "rank": 996,
+    "infinitive": "russare"
+  },
+  {
+    "rank": 997,
+    "infinitive": "seminare"
+  },
+  {
+    "rank": 998,
+    "infinitive": "esaltare"
+  },
+  {
+    "rank": 999,
+    "infinitive": "battezzare"
+  },
+  {
+    "rank": 1000,
+    "infinitive": "fluire"
+  },
+  {
+    "rank": 1001,
+    "infinitive": "arredare"
+  },
+  {
+    "rank": 1002,
+    "infinitive": "scordare"
+  },
+  {
+    "rank": 1003,
+    "infinitive": "impegnare"
+  },
+  {
+    "rank": 1004,
+    "infinitive": "detenere"
+  },
+  {
+    "rank": 1005,
+    "infinitive": "dialogare"
+  },
+  {
+    "rank": 1006,
+    "infinitive": "riscrivere"
+  },
+  {
+    "rank": 1007,
+    "infinitive": "smantellare"
+  },
+  {
+    "rank": 1008,
+    "infinitive": "stendere"
+  },
+  {
+    "rank": 1009,
+    "infinitive": "delineare"
+  },
+  {
+    "rank": 1010,
+    "infinitive": "marciare"
+  },
+  {
+    "rank": 1011,
+    "infinitive": "strisciare"
+  },
+  {
+    "rank": 1012,
+    "infinitive": "posticipare"
+  },
+  {
+    "rank": 1013,
+    "infinitive": "avvelenare"
+  },
+  {
+    "rank": 1014,
+    "infinitive": "scorgere"
+  },
+  {
+    "rank": 1015,
+    "infinitive": "aspirare"
+  },
+  {
+    "rank": 1016,
+    "infinitive": "legiferare"
+  },
+  {
+    "rank": 1017,
+    "infinitive": "formattare"
+  },
+  {
+    "rank": 1018,
+    "infinitive": "partorire"
+  },
+  {
+    "rank": 1019,
+    "infinitive": "avvolgere"
+  },
+  {
+    "rank": 1020,
+    "infinitive": "offendere"
+  },
+  {
+    "rank": 1021,
+    "infinitive": "scuotere"
+  },
+  {
+    "rank": 1022,
+    "infinitive": "spargere"
+  },
+  {
+    "rank": 1023,
+    "infinitive": "mascherare"
+  },
+  {
+    "rank": 1024,
+    "infinitive": "restaurare"
+  },
+  {
+    "rank": 1025,
+    "infinitive": "derogare"
+  },
+  {
+    "rank": 1026,
+    "infinitive": "deviare"
+  },
+  {
+    "rank": 1027,
+    "infinitive": "sigillare"
+  },
+  {
+    "rank": 1028,
+    "infinitive": "infliggere"
+  },
+  {
+    "rank": 1029,
+    "infinitive": "istruire"
+  },
+  {
+    "rank": 1030,
+    "infinitive": "intervistare"
+  },
+  {
+    "rank": 1031,
+    "infinitive": "nuocere"
+  },
+  {
+    "rank": 1032,
+    "infinitive": "riporre"
+  },
+  {
+    "rank": 1033,
+    "infinitive": "abusare"
+  },
+  {
+    "rank": 1034,
+    "infinitive": "decollare"
+  },
+  {
+    "rank": 1035,
+    "infinitive": "infettare"
+  },
+  {
+    "rank": 1036,
+    "infinitive": "annusare"
+  },
+  {
+    "rank": 1037,
+    "infinitive": "derubare"
+  },
+  {
+    "rank": 1038,
+    "infinitive": "equilibrare"
+  },
+  {
+    "rank": 1039,
+    "infinitive": "gareggiare"
+  },
+  {
+    "rank": 1040,
+    "infinitive": "deludere"
+  },
+  {
+    "rank": 1041,
+    "infinitive": "premiare"
+  },
+  {
+    "rank": 1042,
+    "infinitive": "masterizzare"
+  },
+  {
+    "rank": 1043,
+    "infinitive": "commentare"
+  },
+  {
+    "rank": 1044,
+    "infinitive": "erigere"
+  },
+  {
+    "rank": 1045,
+    "infinitive": "ridimensionare"
+  },
+  {
+    "rank": 1046,
+    "infinitive": "ridefinire"
+  },
+  {
+    "rank": 1047,
+    "infinitive": "allontanare"
+  },
+  {
+    "rank": 1048,
+    "infinitive": "deporre"
+  },
+  {
+    "rank": 1049,
+    "infinitive": "ridare"
+  },
+  {
+    "rank": 1050,
+    "infinitive": "stanziare"
+  },
+  {
+    "rank": 1051,
+    "infinitive": "assemblare"
+  },
+  {
+    "rank": 1052,
+    "infinitive": "radunare"
+  },
+  {
+    "rank": 1053,
+    "infinitive": "innovare"
+  },
+  {
+    "rank": 1054,
+    "infinitive": "riconciliare"
+  },
+  {
+    "rank": 1055,
+    "infinitive": "collezionare"
+  },
+  {
+    "rank": 1056,
+    "infinitive": "privare"
+  },
+  {
+    "rank": 1057,
+    "infinitive": "comparare"
+  },
+  {
+    "rank": 1058,
+    "infinitive": "miscelare"
+  },
+  {
+    "rank": 1059,
+    "infinitive": "sintetizzare"
+  },
+  {
+    "rank": 1060,
+    "infinitive": "certificare"
+  },
+  {
+    "rank": 1061,
+    "infinitive": "eccedere"
+  },
+  {
+    "rank": 1062,
+    "infinitive": "implorare"
+  },
+  {
+    "rank": 1063,
+    "infinitive": "velocizzare"
+  },
+  {
+    "rank": 1064,
+    "infinitive": "biasimare"
+  },
+  {
+    "rank": 1065,
+    "infinitive": "caratterizzare"
+  },
+  {
+    "rank": 1066,
+    "infinitive": "differenziare"
+  },
+  {
+    "rank": 1067,
+    "infinitive": "liberalizzare"
+  },
+  {
+    "rank": 1068,
+    "infinitive": "impiccare"
+  },
+  {
+    "rank": 1069,
+    "infinitive": "immergere"
+  },
+  {
+    "rank": 1070,
+    "infinitive": "aggravare"
+  },
+  {
+    "rank": 1071,
+    "infinitive": "penalizzare"
+  },
+  {
+    "rank": 1072,
+    "infinitive": "esentare"
+  },
+  {
+    "rank": 1073,
+    "infinitive": "insorgere"
+  },
+  {
+    "rank": 1074,
+    "infinitive": "raggruppare"
+  },
+  {
+    "rank": 1075,
+    "infinitive": "bagnare"
+  },
+  {
+    "rank": 1076,
+    "infinitive": "alleggerire"
+  },
+  {
+    "rank": 1077,
+    "infinitive": "massaggiare"
+  },
+  {
+    "rank": 1078,
+    "infinitive": "sfogliare"
+  },
+  {
+    "rank": 1079,
+    "infinitive": "affogare"
+  },
+  {
+    "rank": 1080,
+    "infinitive": "insultare"
+  },
+  {
+    "rank": 1081,
+    "infinitive": "presiedere"
+  },
+  {
+    "rank": 1082,
+    "infinitive": "padroneggiare"
+  },
+  {
+    "rank": 1083,
+    "infinitive": "spruzzare"
+  },
+  {
+    "rank": 1084,
+    "infinitive": "bandire"
+  },
+  {
+    "rank": 1085,
+    "infinitive": "smontare"
+  },
+  {
+    "rank": 1086,
+    "infinitive": "allentare"
+  },
+  {
+    "rank": 1087,
+    "infinitive": "pompare"
+  },
+  {
+    "rank": 1088,
+    "infinitive": "evangelizzare"
+  },
+  {
+    "rank": 1089,
+    "infinitive": "assassinare"
+  },
+  {
+    "rank": 1090,
+    "infinitive": "improvvisare"
+  },
+  {
+    "rank": 1091,
+    "infinitive": "strofinare"
+  },
+  {
+    "rank": 1092,
+    "infinitive": "diluire"
+  },
+  {
+    "rank": 1093,
+    "infinitive": "ricattare"
+  },
+  {
+    "rank": 1094,
+    "infinitive": "sputare"
+  },
+  {
+    "rank": 1095,
+    "infinitive": "vantare"
+  },
+  {
+    "rank": 1096,
+    "infinitive": "disfare"
+  },
+  {
+    "rank": 1097,
+    "infinitive": "riutilizzare"
+  },
+  {
+    "rank": 1098,
+    "infinitive": "ricavare"
+  },
+  {
+    "rank": 1099,
+    "infinitive": "rosolare"
+  },
+  {
+    "rank": 1100,
+    "infinitive": "plasmare"
+  },
+  {
+    "rank": 1101,
+    "infinitive": "proiettare"
+  },
+  {
+    "rank": 1102,
+    "infinitive": "persistere"
+  },
+  {
+    "rank": 1103,
+    "infinitive": "simboleggiare"
+  },
+  {
+    "rank": 1104,
+    "infinitive": "destabilizzare"
+  },
+  {
+    "rank": 1105,
+    "infinitive": "incassare"
+  },
+  {
+    "rank": 1106,
+    "infinitive": "emendare"
+  },
+  {
+    "rank": 1107,
+    "infinitive": "scartare"
+  },
+  {
+    "rank": 1108,
+    "infinitive": "automatizzare"
+  },
+  {
+    "rank": 1109,
+    "infinitive": "edificare"
+  },
+  {
+    "rank": 1110,
+    "infinitive": "rifornire"
+  },
+  {
+    "rank": 1111,
+    "infinitive": "accennare"
+  },
+  {
+    "rank": 1112,
+    "infinitive": "affinare"
+  },
+  {
+    "rank": 1113,
+    "infinitive": "recedere"
+  },
+  {
+    "rank": 1114,
+    "infinitive": "sincronizzare"
+  },
+  {
+    "rank": 1115,
+    "infinitive": "rammentare"
+  },
+  {
+    "rank": 1116,
+    "infinitive": "arginare"
+  },
+  {
+    "rank": 1117,
+    "infinitive": "comprimere"
+  },
+  {
+    "rank": 1118,
+    "infinitive": "consistere"
+  },
+  {
+    "rank": 1119,
+    "infinitive": "reprimere"
+  },
+  {
+    "rank": 1120,
+    "infinitive": "confidare"
+  },
+  {
+    "rank": 1121,
+    "infinitive": "ingaggiare"
+  },
+  {
+    "rank": 1122,
+    "infinitive": "rigenerare"
+  },
+  {
+    "rank": 1123,
+    "infinitive": "abbaiare"
+  },
+  {
+    "rank": 1124,
+    "infinitive": "fregare"
+  },
+  {
+    "rank": 1125,
+    "infinitive": "sfiorare"
+  },
+  {
+    "rank": 1126,
+    "infinitive": "rifare"
+  },
+  {
+    "rank": 1127,
+    "infinitive": "rimorchiare"
+  },
+  {
+    "rank": 1128,
+    "infinitive": "scovare"
+  },
+  {
+    "rank": 1129,
+    "infinitive": "disdire"
+  },
+  {
+    "rank": 1130,
+    "infinitive": "lucidare"
+  },
+  {
+    "rank": 1131,
+    "infinitive": "precipitare"
+  },
+  {
+    "rank": 1132,
+    "infinitive": "bombardare"
+  },
+  {
+    "rank": 1133,
+    "infinitive": "soffiare"
+  },
+  {
+    "rank": 1134,
+    "infinitive": "intimidire"
+  },
+  {
+    "rank": 1135,
+    "infinitive": "riorganizzare"
+  },
+  {
+    "rank": 1136,
+    "infinitive": "focalizzare"
+  },
+  {
+    "rank": 1137,
+    "infinitive": "sciacquare"
+  },
+  {
+    "rank": 1138,
+    "infinitive": "complicare"
+  },
+  {
+    "rank": 1139,
+    "infinitive": "innaffiare"
+  },
+  {
+    "rank": 1140,
+    "infinitive": "sovvenzionare"
+  },
+  {
+    "rank": 1141,
+    "infinitive": "condire"
+  },
+  {
+    "rank": 1142,
+    "infinitive": "esagerare"
+  },
+  {
+    "rank": 1143,
+    "infinitive": "porgere"
+  },
+  {
+    "rank": 1144,
+    "infinitive": "accontentare"
+  },
+  {
+    "rank": 1145,
+    "infinitive": "contrarre"
+  },
+  {
+    "rank": 1146,
+    "infinitive": "allattare"
+  },
+  {
+    "rank": 1147,
+    "infinitive": "gioire"
+  },
+  {
+    "rank": 1148,
+    "infinitive": "inibire"
+  },
+  {
+    "rank": 1149,
+    "infinitive": "sottrarre"
+  },
+  {
+    "rank": 1150,
+    "infinitive": "accarezzare"
+  },
+  {
+    "rank": 1151,
+    "infinitive": "stilare"
+  },
+  {
+    "rank": 1152,
+    "infinitive": "etichettare"
+  },
+  {
+    "rank": 1153,
+    "infinitive": "galleggiare"
+  },
+  {
+    "rank": 1154,
+    "infinitive": "addebitare"
+  },
+  {
+    "rank": 1155,
+    "infinitive": "aggredire"
+  },
+  {
+    "rank": 1156,
+    "infinitive": "demolire"
+  },
+  {
+    "rank": 1157,
+    "infinitive": "mischiare"
+  },
+  {
+    "rank": 1158,
+    "infinitive": "rivalutare"
+  },
+  {
+    "rank": 1159,
+    "infinitive": "assimilare"
+  },
+  {
+    "rank": 1160,
+    "infinitive": "sbarcare"
+  },
+  {
+    "rank": 1161,
+    "infinitive": "suddividere"
+  },
+  {
+    "rank": 1162,
+    "infinitive": "insinuare"
+  },
+  {
+    "rank": 1163,
+    "infinitive": "trapelare"
+  },
+  {
+    "rank": 1164,
+    "infinitive": "coesistere"
+  },
+  {
+    "rank": 1165,
+    "infinitive": "disinstallare"
+  },
+  {
+    "rank": 1166,
+    "infinitive": "incominciare"
+  },
+  {
+    "rank": 1167,
+    "infinitive": "stirare"
+  },
+  {
+    "rank": 1168,
+    "infinitive": "annientare"
+  },
+  {
+    "rank": 1169,
+    "infinitive": "bypassare"
+  },
+  {
+    "rank": 1170,
+    "infinitive": "augurare"
+  },
+  {
+    "rank": 1171,
+    "infinitive": "duplicare"
+  },
+  {
+    "rank": 1172,
+    "infinitive": "implicare"
+  },
+  {
+    "rank": 1173,
+    "infinitive": "falsificare"
+  },
+  {
+    "rank": 1174,
+    "infinitive": "inoltrare"
+  },
+  {
+    "rank": 1175,
+    "infinitive": "rivestire"
+  },
+  {
+    "rank": 1176,
+    "infinitive": "schivare"
+  },
+  {
+    "rank": 1177,
+    "infinitive": "brindare"
+  },
+  {
+    "rank": 1178,
+    "infinitive": "ereditare"
+  },
+  {
+    "rank": 1179,
+    "infinitive": "codificare"
+  },
+  {
+    "rank": 1180,
+    "infinitive": "commerciare"
+  },
+  {
+    "rank": 1181,
+    "infinitive": "speculare"
+  },
+  {
+    "rank": 1182,
+    "infinitive": "coincidere"
+  },
+  {
+    "rank": 1183,
+    "infinitive": "reinventare"
+  },
+  {
+    "rank": 1184,
+    "infinitive": "umiliare"
+  },
+  {
+    "rank": 1185,
+    "infinitive": "esibire"
+  },
+  {
+    "rank": 1186,
+    "infinitive": "processare"
+  },
+  {
+    "rank": 1187,
+    "infinitive": "ricambiare"
+  },
+  {
+    "rank": 1188,
+    "infinitive": "strutturare"
+  },
+  {
+    "rank": 1189,
+    "infinitive": "comperare"
+  },
+  {
+    "rank": 1190,
+    "infinitive": "dissipare"
+  },
+  {
+    "rank": 1191,
+    "infinitive": "pomiciare"
+  },
+  {
+    "rank": 1192,
+    "infinitive": "riprovare"
+  },
+  {
+    "rank": 1193,
+    "infinitive": "chattare"
+  },
+  {
+    "rank": 1194,
+    "infinitive": "enfatizzare"
+  },
+  {
+    "rank": 1195,
+    "infinitive": "rivitalizzare"
+  },
+  {
+    "rank": 1196,
+    "infinitive": "urinare"
+  },
+  {
+    "rank": 1197,
+    "infinitive": "coccolare"
+  },
+  {
+    "rank": 1198,
+    "infinitive": "tendere"
+  },
+  {
+    "rank": 1199,
+    "infinitive": "unificare"
+  },
+  {
+    "rank": 1200,
+    "infinitive": "obiettare"
+  },
+  {
+    "rank": 1201,
+    "infinitive": "ricostituire"
+  },
+  {
+    "rank": 1202,
+    "infinitive": "dibattere"
+  },
+  {
+    "rank": 1203,
+    "infinitive": "emanare"
+  },
+  {
+    "rank": 1204,
+    "infinitive": "placare"
+  },
+  {
+    "rank": 1205,
+    "infinitive": "rimbalzare"
+  },
+  {
+    "rank": 1206,
+    "infinitive": "traslocare"
+  },
+  {
+    "rank": 1207,
+    "infinitive": "dimezzare"
+  },
+  {
+    "rank": 1208,
+    "infinitive": "controbilanciare"
+  },
+  {
+    "rank": 1209,
+    "infinitive": "risplendere"
+  },
+  {
+    "rank": 1210,
+    "infinitive": "ammalare"
+  },
+  {
+    "rank": 1211,
+    "infinitive": "emigrare"
+  },
+  {
+    "rank": 1212,
+    "infinitive": "beccare"
+  },
+  {
+    "rank": 1213,
+    "infinitive": "risarcire"
+  },
+  {
+    "rank": 1214,
+    "infinitive": "capovolgere"
+  },
+  {
+    "rank": 1215,
+    "infinitive": "ravvivare"
+  },
+  {
+    "rank": 1216,
+    "infinitive": "convenire"
+  },
+  {
+    "rank": 1217,
+    "infinitive": "sanzionare"
+  },
+  {
+    "rank": 1218,
+    "infinitive": "intrecciare"
+  },
+  {
+    "rank": 1219,
+    "infinitive": "consolare"
+  },
+  {
+    "rank": 1220,
+    "infinitive": "saccheggiare"
+  },
+  {
+    "rank": 1221,
+    "infinitive": "giustiziare"
+  },
+  {
+    "rank": 1222,
+    "infinitive": "migrare"
+  },
+  {
+    "rank": 1223,
+    "infinitive": "screditare"
+  },
+  {
+    "rank": 1224,
+    "infinitive": "disperdere"
+  },
+  {
+    "rank": 1225,
+    "infinitive": "spremere"
+  },
+  {
+    "rank": 1226,
+    "infinitive": "ritagliare"
+  },
+  {
+    "rank": 1227,
+    "infinitive": "annotare"
+  },
+  {
+    "rank": 1228,
+    "infinitive": "amplificare"
+  },
+  {
+    "rank": 1229,
+    "infinitive": "compiacere"
+  },
+  {
+    "rank": 1230,
+    "infinitive": "distorcere"
+  },
+  {
+    "rank": 1231,
+    "infinitive": "espletare"
+  },
+  {
+    "rank": 1232,
+    "infinitive": "evaporare"
+  },
+  {
+    "rank": 1233,
+    "infinitive": "professare"
+  },
+  {
+    "rank": 1234,
+    "infinitive": "normalizzare"
+  },
+  {
+    "rank": 1235,
+    "infinitive": "smascherare"
+  },
+  {
+    "rank": 1236,
+    "infinitive": "abbreviare"
+  },
+  {
+    "rank": 1237,
+    "infinitive": "ammodernare"
+  },
+  {
+    "rank": 1238,
+    "infinitive": "contrassegnare"
+  },
+  {
+    "rank": 1239,
+    "infinitive": "sgattaiolare"
+  },
+  {
+    "rank": 1240,
+    "infinitive": "allestire"
+  },
+  {
+    "rank": 1241,
+    "infinitive": "impartire"
+  },
+  {
+    "rank": 1242,
+    "infinitive": "visionare"
+  },
+  {
+    "rank": 1243,
+    "infinitive": "condizionare"
+  },
+  {
+    "rank": 1244,
+    "infinitive": "gonfiare"
+  },
+  {
+    "rank": 1245,
+    "infinitive": "legittimare"
+  },
+  {
+    "rank": 1246,
+    "infinitive": "rinnegare"
+  },
+  {
+    "rank": 1247,
+    "infinitive": "snellire"
+  },
+  {
+    "rank": 1248,
+    "infinitive": "dissuadere"
+  },
+  {
+    "rank": 1249,
+    "infinitive": "incanalare"
+  },
+  {
+    "rank": 1250,
+    "infinitive": "sovrascrivere"
+  },
+  {
+    "rank": 1251,
+    "infinitive": "riscattare"
+  },
+  {
+    "rank": 1252,
+    "infinitive": "svanire"
+  },
+  {
+    "rank": 1253,
+    "infinitive": "applaudire"
+  },
+  {
+    "rank": 1254,
+    "infinitive": "divorare"
+  },
+  {
+    "rank": 1255,
+    "infinitive": "rileggere"
+  },
+  {
+    "rank": 1256,
+    "infinitive": "esaudire"
+  },
+  {
+    "rank": 1257,
+    "infinitive": "rinegoziare"
+  },
+  {
+    "rank": 1258,
+    "infinitive": "trascendere"
+  },
+  {
+    "rank": 1259,
+    "infinitive": "ammorbidire"
+  },
+  {
+    "rank": 1260,
+    "infinitive": "deliberare"
+  },
+  {
+    "rank": 1261,
+    "infinitive": "tassare"
+  },
+  {
+    "rank": 1262,
+    "infinitive": "contraddire"
+  },
+  {
+    "rank": 1263,
+    "infinitive": "risciacquare"
+  },
+  {
+    "rank": 1264,
+    "infinitive": "legalizzare"
+  },
+  {
+    "rank": 1265,
+    "infinitive": "perpetuare"
+  },
+  {
+    "rank": 1266,
+    "infinitive": "scortare"
+  },
+  {
+    "rank": 1267,
+    "infinitive": "calare"
+  },
+  {
+    "rank": 1268,
+    "infinitive": "stuprare"
+  },
+  {
+    "rank": 1269,
+    "infinitive": "accorciare"
+  },
+  {
+    "rank": 1270,
+    "infinitive": "annunziare"
+  },
+  {
+    "rank": 1271,
+    "infinitive": "azionare"
+  },
+  {
+    "rank": 1272,
+    "infinitive": "acconsentire"
+  },
+  {
+    "rank": 1273,
+    "infinitive": "spazzare"
+  },
+  {
+    "rank": 1274,
+    "infinitive": "accostare"
+  },
+  {
+    "rank": 1275,
+    "infinitive": "rimpiangere"
+  },
+  {
+    "rank": 1276,
+    "infinitive": "infondere"
+  },
+  {
+    "rank": 1277,
+    "infinitive": "clonare"
+  },
+  {
+    "rank": 1278,
+    "infinitive": "privilegiare"
+  },
+  {
+    "rank": 1279,
+    "infinitive": "contaminare"
+  },
+  {
+    "rank": 1280,
+    "infinitive": "privatizzare"
+  },
+  {
+    "rank": 1281,
+    "infinitive": "supplicare"
+  },
+  {
+    "rank": 1282,
+    "infinitive": "confiscare"
+  },
+  {
+    "rank": 1283,
+    "infinitive": "turbare"
+  },
+  {
+    "rank": 1284,
+    "infinitive": "risiedere"
+  },
+  {
+    "rank": 1285,
+    "infinitive": "concorrere"
+  },
+  {
+    "rank": 1286,
+    "infinitive": "forgiare"
+  },
+  {
+    "rank": 1287,
+    "infinitive": "sminuire"
+  },
+  {
+    "rank": 1288,
+    "infinitive": "strangolare"
+  },
+  {
+    "rank": 1289,
+    "infinitive": "macinare"
+  },
+  {
+    "rank": 1290,
+    "infinitive": "oscillare"
+  },
+  {
+    "rank": 1291,
+    "infinitive": "animare"
+  },
+  {
+    "rank": 1292,
+    "infinitive": "deglutire"
+  },
+  {
+    "rank": 1293,
+    "infinitive": "venerare"
+  },
+  {
+    "rank": 1294,
+    "infinitive": "ascendere"
+  },
+  {
+    "rank": 1295,
+    "infinitive": "resuscitare"
+  },
+  {
+    "rank": 1296,
+    "infinitive": "sbrigare"
+  },
+  {
+    "rank": 1297,
+    "infinitive": "calpestare"
+  },
+  {
+    "rank": 1298,
+    "infinitive": "inciampare"
+  },
+  {
+    "rank": 1299,
+    "infinitive": "domare"
+  },
+  {
+    "rank": 1300,
+    "infinitive": "pareggiare"
+  },
+  {
+    "rank": 1301,
+    "infinitive": "emulare"
+  },
+  {
+    "rank": 1302,
+    "infinitive": "inghiottire"
+  },
+  {
+    "rank": 1303,
+    "infinitive": "presenziare"
+  },
+  {
+    "rank": 1304,
+    "infinitive": "calibrare"
+  },
+  {
+    "rank": 1305,
+    "infinitive": "elogiare"
+  },
+  {
+    "rank": 1306,
+    "infinitive": "ingerire"
+  },
+  {
+    "rank": 1307,
+    "infinitive": "sbucciare"
+  },
+  {
+    "rank": 1308,
+    "infinitive": "pugnalare"
+  },
+  {
+    "rank": 1309,
+    "infinitive": "rinfrescare"
+  },
+  {
+    "rank": 1310,
+    "infinitive": "soccorrere"
+  },
+  {
+    "rank": 1311,
+    "infinitive": "sopraffare"
+  },
+  {
+    "rank": 1312,
+    "infinitive": "confutare"
+  },
+  {
+    "rank": 1313,
+    "infinitive": "guarnire"
+  },
+  {
+    "rank": 1314,
+    "infinitive": "rincorrere"
+  },
+  {
+    "rank": 1315,
+    "infinitive": "fantasticare"
+  },
+  {
+    "rank": 1316,
+    "infinitive": "perseguitare"
+  },
+  {
+    "rank": 1317,
+    "infinitive": "conversare"
+  },
+  {
+    "rank": 1318,
+    "infinitive": "celare"
+  },
+  {
+    "rank": 1319,
+    "infinitive": "perdurare"
+  },
+  {
+    "rank": 1320,
+    "infinitive": "rinascere"
+  },
+  {
+    "rank": 1321,
+    "infinitive": "terrorizzare"
+  },
+  {
+    "rank": 1322,
+    "infinitive": "marcare"
+  },
+  {
+    "rank": 1323,
+    "infinitive": "vibrare"
+  },
+  {
+    "rank": 1324,
+    "infinitive": "incrociare"
+  },
+  {
+    "rank": 1325,
+    "infinitive": "ripassare"
+  },
+  {
+    "rank": 1326,
+    "infinitive": "tossire"
+  },
+  {
+    "rank": 1327,
+    "infinitive": "addormentare"
+  },
+  {
+    "rank": 1328,
+    "infinitive": "scontare"
+  },
+  {
+    "rank": 1329,
+    "infinitive": "sterilizzare"
+  },
+  {
+    "rank": 1330,
+    "infinitive": "abortire"
+  },
+  {
+    "rank": 1331,
+    "infinitive": "asportare"
+  },
+  {
+    "rank": 1332,
+    "infinitive": "dettare"
+  },
+  {
+    "rank": 1333,
+    "infinitive": "tralasciare"
+  },
+  {
+    "rank": 1334,
+    "infinitive": "ubbidire"
+  },
+  {
+    "rank": 1335,
+    "infinitive": "dimagrire"
+  },
+  {
+    "rank": 1336,
+    "infinitive": "osare"
+  },
+  {
+    "rank": 1337,
+    "infinitive": "smaltire"
+  },
+  {
+    "rank": 1338,
+    "infinitive": "disarmare"
+  },
+  {
+    "rank": 1339,
+    "infinitive": "fluttuare"
+  },
+  {
+    "rank": 1340,
+    "infinitive": "riacquistare"
+  },
+  {
+    "rank": 1341,
+    "infinitive": "ipotizzare"
+  },
+  {
+    "rank": 1342,
+    "infinitive": "risuonare"
+  },
+  {
+    "rank": 1343,
+    "infinitive": "rivendere"
+  },
+  {
+    "rank": 1344,
+    "infinitive": "disinfettare"
+  },
+  {
+    "rank": 1345,
+    "infinitive": "sussurrare"
+  },
+  {
+    "rank": 1346,
+    "infinitive": "tormentare"
+  },
+  {
+    "rank": 1347,
+    "infinitive": "detrarre"
+  },
+  {
+    "rank": 1348,
+    "infinitive": "inchiodare"
+  },
+  {
+    "rank": 1349,
+    "infinitive": "sottomettere"
+  },
+  {
+    "rank": 1350,
+    "infinitive": "decodificare"
+  },
+  {
+    "rank": 1351,
+    "infinitive": "intrappolare"
+  },
+  {
+    "rank": 1352,
+    "infinitive": "inquinare"
+  },
+  {
+    "rank": 1353,
+    "infinitive": "ideare"
+  },
+  {
+    "rank": 1354,
+    "infinitive": "infastidire"
+  },
+  {
+    "rank": 1355,
+    "infinitive": "lenire"
+  },
+  {
+    "rank": 1356,
+    "infinitive": "perire"
+  },
+  {
+    "rank": 1357,
+    "infinitive": "sanare"
+  },
+  {
+    "rank": 1358,
+    "infinitive": "scolpire"
+  },
+  {
+    "rank": 1359,
+    "infinitive": "armare"
+  },
+  {
+    "rank": 1360,
+    "infinitive": "fermentare"
+  },
+  {
+    "rank": 1361,
+    "infinitive": "incorrere"
+  },
+  {
+    "rank": 1362,
+    "infinitive": "procurare"
+  },
+  {
+    "rank": 1363,
+    "infinitive": "accentuare"
+  },
+  {
+    "rank": 1364,
+    "infinitive": "affrettare"
+  },
+  {
+    "rank": 1365,
+    "infinitive": "inaugurare"
+  },
+  {
+    "rank": 1366,
+    "infinitive": "ridistribuire"
+  },
+  {
+    "rank": 1367,
+    "infinitive": "sponsorizzare"
+  },
+  {
+    "rank": 1368,
+    "infinitive": "trionfare"
+  },
+  {
+    "rank": 1369,
+    "infinitive": "espiare"
+  },
+  {
+    "rank": 1370,
+    "infinitive": "varare"
+  },
+  {
+    "rank": 1371,
+    "infinitive": "appurare"
+  },
+  {
+    "rank": 1372,
+    "infinitive": "riabilitare"
+  },
+  {
+    "rank": 1373,
+    "infinitive": "violentare"
+  },
+  {
+    "rank": 1374,
+    "infinitive": "riattivare"
+  },
+  {
+    "rank": 1375,
+    "infinitive": "sgomberare"
+  },
+  {
+    "rank": 1376,
+    "infinitive": "riguadagnare"
+  },
+  {
+    "rank": 1377,
+    "infinitive": "manovrare"
+  },
+  {
+    "rank": 1378,
+    "infinitive": "riordinare"
+  },
+  {
+    "rank": 1379,
+    "infinitive": "rivoluzionare"
+  },
+  {
+    "rank": 1380,
+    "infinitive": "intercedere"
+  },
+  {
+    "rank": 1381,
+    "infinitive": "indulgere"
+  },
+  {
+    "rank": 1382,
+    "infinitive": "pelare"
+  },
+  {
+    "rank": 1383,
+    "infinitive": "catalogare"
+  },
+  {
+    "rank": 1384,
+    "infinitive": "contrattare"
+  },
+  {
+    "rank": 1385,
+    "infinitive": "sequestrare"
+  },
+  {
+    "rank": 1386,
+    "infinitive": "barattare"
+  },
+  {
+    "rank": 1387,
+    "infinitive": "escogitare"
+  },
+  {
+    "rank": 1388,
+    "infinitive": "tritare"
+  },
+  {
+    "rank": 1389,
+    "infinitive": "uniformare"
+  },
+  {
+    "rank": 1390,
+    "infinitive": "finalizzare"
+  },
+  {
+    "rank": 1391,
+    "infinitive": "inscenare"
+  },
+  {
+    "rank": 1392,
+    "infinitive": "boicottare"
+  },
+  {
+    "rank": 1393,
+    "infinitive": "circondare"
+  },
+  {
+    "rank": 1394,
+    "infinitive": "lampeggiare"
+  },
+  {
+    "rank": 1395,
+    "infinitive": "puzzare"
+  },
+  {
+    "rank": 1396,
+    "infinitive": "splendere"
+  },
+  {
+    "rank": 1397,
+    "infinitive": "vegliare"
+  },
+  {
+    "rank": 1398,
+    "infinitive": "convergere"
+  },
+  {
+    "rank": 1399,
+    "infinitive": "graffiare"
+  },
+  {
+    "rank": 1400,
+    "infinitive": "scacciare"
+  },
+  {
+    "rank": 1401,
+    "infinitive": "setacciare"
+  },
+  {
+    "rank": 1402,
+    "infinitive": "sgombrare"
+  },
+  {
+    "rank": 1403,
+    "infinitive": "spuntare"
+  },
+  {
+    "rank": 1404,
+    "infinitive": "mediare"
+  },
+  {
+    "rank": 1405,
+    "infinitive": "confezionare"
+  },
+  {
+    "rank": 1406,
+    "infinitive": "consacrare"
+  },
+  {
+    "rank": 1407,
+    "infinitive": "incitare"
+  },
+  {
+    "rank": 1408,
+    "infinitive": "paralizzare"
+  },
+  {
+    "rank": 1409,
+    "infinitive": "affettare"
+  },
+  {
+    "rank": 1410,
+    "infinitive": "cospargere"
+  },
+  {
+    "rank": 1411,
+    "infinitive": "ingrassare"
+  },
+  {
+    "rank": 1412,
+    "infinitive": "estinguere"
+  },
+  {
+    "rank": 1413,
+    "infinitive": "irrigare"
+  },
+  {
+    "rank": 1414,
+    "infinitive": "avvitare"
+  },
+  {
+    "rank": 1415,
+    "infinitive": "riattaccare"
+  },
+  {
+    "rank": 1416,
+    "infinitive": "smentire"
+  },
+  {
+    "rank": 1417,
+    "infinitive": "ancorare"
+  },
+  {
+    "rank": 1418,
+    "infinitive": "digiunare"
+  },
+  {
+    "rank": 1419,
+    "infinitive": "rimproverare"
+  },
+  {
+    "rank": 1420,
+    "infinitive": "strillare"
+  },
+  {
+    "rank": 1421,
+    "infinitive": "vaccinare"
+  },
+  {
+    "rank": 1422,
+    "infinitive": "vergognare"
+  },
+  {
+    "rank": 1423,
+    "infinitive": "arrampicare"
+  },
+  {
+    "rank": 1424,
+    "infinitive": "impastare"
+  },
+  {
+    "rank": 1425,
+    "infinitive": "omettere"
+  },
+  {
+    "rank": 1426,
+    "infinitive": "rigettare"
+  },
+  {
+    "rank": 1427,
+    "infinitive": "sfondare"
+  },
+  {
+    "rank": 1428,
+    "infinitive": "esonerare"
+  },
+  {
+    "rank": 1429,
+    "infinitive": "abbellire"
+  },
+  {
+    "rank": 1430,
+    "infinitive": "sconvolgere"
+  },
+  {
+    "rank": 1431,
+    "infinitive": "ripiegare"
+  },
+  {
+    "rank": 1432,
+    "infinitive": "varcare"
+  },
+  {
+    "rank": 1433,
+    "infinitive": "essiccare"
+  },
+  {
+    "rank": 1434,
+    "infinitive": "scolare"
+  },
+  {
+    "rank": 1435,
+    "infinitive": "volgere"
+  },
+  {
+    "rank": 1436,
+    "infinitive": "calciare"
+  },
+  {
+    "rank": 1437,
+    "infinitive": "massacrare"
+  },
+  {
+    "rank": 1438,
+    "infinitive": "molestare"
+  },
+  {
+    "rank": 1439,
+    "infinitive": "mungere"
+  },
+  {
+    "rank": 1440,
+    "infinitive": "ricompensare"
+  },
+  {
+    "rank": 1441,
+    "infinitive": "curiosare"
+  },
+  {
+    "rank": 1442,
+    "infinitive": "irritare"
+  },
+  {
+    "rank": 1443,
+    "infinitive": "confortare"
+  },
+  {
+    "rank": 1444,
+    "infinitive": "debellare"
+  },
+  {
+    "rank": 1445,
+    "infinitive": "gongolare"
+  },
+  {
+    "rank": 1446,
+    "infinitive": "perlustrare"
+  },
+  {
+    "rank": 1447,
+    "infinitive": "piagnucolare"
+  },
+  {
+    "rank": 1448,
+    "infinitive": "spianare"
+  },
+  {
+    "rank": 1449,
+    "infinitive": "drenare"
+  },
+  {
+    "rank": 1450,
+    "infinitive": "squillare"
+  },
+  {
+    "rank": 1451,
+    "infinitive": "dirottare"
+  },
+  {
+    "rank": 1452,
+    "infinitive": "liquidare"
+  },
+  {
+    "rank": 1453,
+    "infinitive": "ribaltare"
+  },
+  {
+    "rank": 1454,
+    "infinitive": "allocare"
+  },
+  {
+    "rank": 1455,
+    "infinitive": "centrare"
+  },
+  {
+    "rank": 1456,
+    "infinitive": "detonare"
+  },
+  {
+    "rank": 1457,
+    "infinitive": "reintegrare"
+  },
+  {
+    "rank": 1458,
+    "infinitive": "sganciare"
+  },
+  {
+    "rank": 1459,
+    "infinitive": "ultimare"
+  },
+  {
+    "rank": 1460,
+    "infinitive": "coadiuvare"
+  },
+  {
+    "rank": 1461,
+    "infinitive": "esaurire"
+  },
+  {
+    "rank": 1462,
+    "infinitive": "imprecare"
+  },
+  {
+    "rank": 1463,
+    "infinitive": "indire"
+  },
+  {
+    "rank": 1464,
+    "infinitive": "necessitare"
+  },
+  {
+    "rank": 1465,
+    "infinitive": "oscurare"
+  },
+  {
+    "rank": 1466,
+    "infinitive": "risanare"
+  },
+  {
+    "rank": 1467,
+    "infinitive": "sniffare"
+  },
+  {
+    "rank": 1468,
+    "infinitive": "sterminare"
+  },
+  {
+    "rank": 1469,
+    "infinitive": "editare"
+  },
+  {
+    "rank": 1470,
+    "infinitive": "raddrizzare"
+  },
+  {
+    "rank": 1471,
+    "infinitive": "rifinire"
+  },
+  {
+    "rank": 1472,
+    "infinitive": "spalmare"
+  },
+  {
+    "rank": 1473,
+    "infinitive": "viziare"
+  },
+  {
+    "rank": 1474,
+    "infinitive": "precedere"
+  },
+  {
+    "rank": 1475,
+    "infinitive": "redimere"
+  },
+  {
+    "rank": 1476,
+    "infinitive": "impugnare"
+  },
+  {
+    "rank": 1477,
+    "infinitive": "pattinare"
+  },
+  {
+    "rank": 1478,
+    "infinitive": "soccombere"
+  },
+  {
+    "rank": 1479,
+    "infinitive": "standardizzare"
+  },
+  {
+    "rank": 1480,
+    "infinitive": "allertare"
+  },
+  {
+    "rank": 1481,
+    "infinitive": "arrossire"
+  },
+  {
+    "rank": 1482,
+    "infinitive": "fischiare"
+  },
+  {
+    "rank": 1483,
+    "infinitive": "frugare"
+  },
+  {
+    "rank": 1484,
+    "infinitive": "irrompere"
+  },
+  {
+    "rank": 1485,
+    "infinitive": "arrostire"
+  },
+  {
+    "rank": 1486,
+    "infinitive": "grattare"
+  },
+  {
+    "rank": 1487,
+    "infinitive": "invidiare"
+  },
+  {
+    "rank": 1488,
+    "infinitive": "pascolare"
+  },
+  {
+    "rank": 1489,
+    "infinitive": "truffare"
+  },
+  {
+    "rank": 1490,
+    "infinitive": "incantare"
+  },
+  {
+    "rank": 1491,
+    "infinitive": "incasinare"
+  },
+  {
+    "rank": 1492,
+    "infinitive": "sbocciare"
+  },
+  {
+    "rank": 1493,
+    "infinitive": "dimorare"
+  },
+  {
+    "rank": 1494,
+    "infinitive": "disobbedire"
+  },
+  {
+    "rank": 1495,
+    "infinitive": "imballare"
+  },
+  {
+    "rank": 1496,
+    "infinitive": "perforare"
+  },
+  {
+    "rank": 1497,
+    "infinitive": "sbirciare"
+  },
+  {
+    "rank": 1498,
+    "infinitive": "forare"
+  },
+  {
+    "rank": 1499,
+    "infinitive": "sondare"
+  },
+  {
+    "rank": 1500,
+    "infinitive": "deplorare"
+  },
+  {
+    "rank": 1501,
+    "infinitive": "disinnescare"
+  },
+  {
+    "rank": 1502,
+    "infinitive": "eccitare"
+  },
+  {
+    "rank": 1503,
+    "infinitive": "occultare"
+  },
+  {
+    "rank": 1504,
+    "infinitive": "cofinanziare"
+  },
+  {
+    "rank": 1505,
+    "infinitive": "colonizzare"
+  },
+  {
+    "rank": 1506,
+    "infinitive": "distogliere"
+  },
+  {
+    "rank": 1507,
+    "infinitive": "sventolare"
+  },
+  {
+    "rank": 1508,
+    "infinitive": "aggiudicare"
+  },
+  {
+    "rank": 1509,
+    "infinitive": "fruire"
+  },
+  {
+    "rank": 1510,
+    "infinitive": "glorificare"
+  },
+  {
+    "rank": 1511,
+    "infinitive": "maledire"
+  },
+  {
+    "rank": 1512,
+    "infinitive": "scavalcare"
+  },
+  {
+    "rank": 1513,
+    "infinitive": "contrabbandare"
+  },
+  {
+    "rank": 1514,
+    "infinitive": "incriminare"
+  },
+  {
+    "rank": 1515,
+    "infinitive": "annaffiare"
+  },
+  {
+    "rank": 1516,
+    "infinitive": "giacere"
+  },
+  {
+    "rank": 1517,
+    "infinitive": "resettare"
+  },
+  {
+    "rank": 1518,
+    "infinitive": "santificare"
+  },
+  {
+    "rank": 1519,
+    "infinitive": "apporre"
+  },
+  {
+    "rank": 1520,
+    "infinitive": "patire"
+  },
+  {
+    "rank": 1521,
+    "infinitive": "qualificare"
+  },
+  {
+    "rank": 1522,
+    "infinitive": "vagliare"
+  },
+  {
+    "rank": 1523,
+    "infinitive": "alternare"
+  },
+  {
+    "rank": 1524,
+    "infinitive": "idratare"
+  },
+  {
+    "rank": 1525,
+    "infinitive": "sovraccaricare"
+  },
+  {
+    "rank": 1526,
+    "infinitive": "affascinare"
+  },
+  {
+    "rank": 1527,
+    "infinitive": "articolare"
+  },
+  {
+    "rank": 1528,
+    "infinitive": "decomprimere"
+  },
+  {
+    "rank": 1529,
+    "infinitive": "fortificare"
+  },
+  {
+    "rank": 1530,
+    "infinitive": "inclinare"
+  },
+  {
+    "rank": 1531,
+    "infinitive": "schiantare"
+  },
+  {
+    "rank": 1532,
+    "infinitive": "accomodare"
+  },
+  {
+    "rank": 1533,
+    "infinitive": "agganciare"
+  },
+  {
+    "rank": 1534,
+    "infinitive": "declinare"
+  },
+  {
+    "rank": 1535,
+    "infinitive": "intagliare"
+  },
+  {
+    "rank": 1536,
+    "infinitive": "ungere"
+  },
+  {
+    "rank": 1537,
+    "infinitive": "autenticare"
+  },
+  {
+    "rank": 1538,
+    "infinitive": "brevettare"
+  },
+  {
+    "rank": 1539,
+    "infinitive": "pedalare"
+  },
+  {
+    "rank": 1540,
+    "infinitive": "rinchiudere"
+  },
+  {
+    "rank": 1541,
+    "infinitive": "sorvolare"
+  },
+  {
+    "rank": 1542,
+    "infinitive": "vacillare"
+  },
+  {
+    "rank": 1543,
+    "infinitive": "censurare"
+  },
+  {
+    "rank": 1544,
+    "infinitive": "formalizzare"
+  },
+  {
+    "rank": 1545,
+    "infinitive": "incarnare"
+  },
+  {
+    "rank": 1546,
+    "infinitive": "precludere"
+  },
+  {
+    "rank": 1547,
+    "infinitive": "somigliare"
+  },
+  {
+    "rank": 1548,
+    "infinitive": "deliziare"
+  },
+  {
+    "rank": 1549,
+    "infinitive": "dissentire"
+  },
+  {
+    "rank": 1550,
+    "infinitive": "patteggiare"
+  },
+  {
+    "rank": 1551,
+    "infinitive": "ringiovanire"
+  },
+  {
+    "rank": 1552,
+    "infinitive": "sussistere"
+  },
+  {
+    "rank": 1553,
+    "infinitive": "vincolare"
+  },
+  {
+    "rank": 1554,
+    "infinitive": "amalgamare"
+  },
+  {
+    "rank": 1555,
+    "infinitive": "arare"
+  },
+  {
+    "rank": 1556,
+    "infinitive": "criminalizzare"
+  },
+  {
+    "rank": 1557,
+    "infinitive": "deferire"
+  },
+  {
+    "rank": 1558,
+    "infinitive": "disprezzare"
+  },
+  {
+    "rank": 1559,
+    "infinitive": "eguagliare"
+  },
+  {
+    "rank": 1560,
+    "infinitive": "insabbiare"
+  },
+  {
+    "rank": 1561,
+    "infinitive": "ripercorrere"
+  },
+  {
+    "rank": 1562,
+    "infinitive": "arrecare"
+  },
+  {
+    "rank": 1563,
+    "infinitive": "riaccendere"
+  },
+  {
+    "rank": 1564,
+    "infinitive": "riesumare"
+  },
+  {
+    "rank": 1565,
+    "infinitive": "centralizzare"
+  },
+  {
+    "rank": 1566,
+    "infinitive": "commutare"
+  },
+  {
+    "rank": 1567,
+    "infinitive": "eccellere"
+  },
+  {
+    "rank": 1568,
+    "infinitive": "estrapolare"
+  },
+  {
+    "rank": 1569,
+    "infinitive": "procreare"
+  },
+  {
+    "rank": 1570,
+    "infinitive": "triplicare"
+  },
+  {
+    "rank": 1571,
+    "infinitive": "ardere"
+  },
+  {
+    "rank": 1572,
+    "infinitive": "crepare"
+  },
+  {
+    "rank": 1573,
+    "infinitive": "intuire"
+  },
+  {
+    "rank": 1574,
+    "infinitive": "lamentare"
+  },
+  {
+    "rank": 1575,
+    "infinitive": "scoreggiare"
+  },
+  {
+    "rank": 1576,
+    "infinitive": "destare"
+  },
+  {
+    "rank": 1577,
+    "infinitive": "estirpare"
+  },
+  {
+    "rank": 1578,
+    "infinitive": "fiutare"
+  },
+  {
+    "rank": 1579,
+    "infinitive": "ritrattare"
+  },
+  {
+    "rank": 1580,
+    "infinitive": "sbavare"
+  },
+  {
+    "rank": 1581,
+    "infinitive": "inasprire"
+  },
+  {
+    "rank": 1582,
+    "infinitive": "regolarizzare"
+  },
+  {
+    "rank": 1583,
+    "infinitive": "comprovare"
+  },
+  {
+    "rank": 1584,
+    "infinitive": "macchiare"
+  },
+  {
+    "rank": 1585,
+    "infinitive": "presupporre"
+  },
+  {
+    "rank": 1586,
+    "infinitive": "scagionare"
+  },
+  {
+    "rank": 1587,
+    "infinitive": "accoltellare"
+  },
+  {
+    "rank": 1588,
+    "infinitive": "corteggiare"
+  },
+  {
+    "rank": 1589,
+    "infinitive": "equipaggiare"
+  },
+  {
+    "rank": 1590,
+    "infinitive": "marinare"
+  },
+  {
+    "rank": 1591,
+    "infinitive": "recensire"
+  },
+  {
+    "rank": 1592,
+    "infinitive": "datare"
+  },
+  {
+    "rank": 1593,
+    "infinitive": "esacerbare"
+  },
+  {
+    "rank": 1594,
+    "infinitive": "germogliare"
+  },
+  {
+    "rank": 1595,
+    "infinitive": "ledere"
+  },
+  {
+    "rank": 1596,
+    "infinitive": "scongelare"
+  },
+  {
+    "rank": 1597,
+    "infinitive": "starnutire"
+  },
+  {
+    "rank": 1598,
+    "infinitive": "dispensare"
+  },
+  {
+    "rank": 1599,
+    "infinitive": "modulare"
+  },
+  {
+    "rank": 1600,
+    "infinitive": "remare"
+  },
+  {
+    "rank": 1601,
+    "infinitive": "spettegolare"
+  },
+  {
+    "rank": 1602,
+    "infinitive": "sporgere"
+  },
+  {
+    "rank": 1603,
+    "infinitive": "fomentare"
+  },
+  {
+    "rank": 1604,
+    "infinitive": "sovvertire"
+  },
+  {
+    "rank": 1605,
+    "infinitive": "deragliare"
+  },
+  {
+    "rank": 1606,
+    "infinitive": "impiantare"
+  },
+  {
+    "rank": 1607,
+    "infinitive": "moderare"
+  },
+  {
+    "rank": 1608,
+    "infinitive": "scaturire"
+  },
+  {
+    "rank": 1609,
+    "infinitive": "concretizzare"
+  },
+  {
+    "rank": 1610,
+    "infinitive": "levigare"
+  },
+  {
+    "rank": 1611,
+    "infinitive": "soffriggere"
+  },
+  {
+    "rank": 1612,
+    "infinitive": "accoppiare"
+  },
+  {
+    "rank": 1613,
+    "infinitive": "attestare"
+  },
+  {
+    "rank": 1614,
+    "infinitive": "dissolvere"
+  },
+  {
+    "rank": 1615,
+    "infinitive": "inizializzare"
+  },
+  {
+    "rank": 1616,
+    "infinitive": "offuscare"
+  },
+  {
+    "rank": 1617,
+    "infinitive": "risaltare"
+  },
+  {
+    "rank": 1618,
+    "infinitive": "addolcire"
+  },
+  {
+    "rank": 1619,
+    "infinitive": "gradire"
+  },
+  {
+    "rank": 1620,
+    "infinitive": "imprigionare"
+  },
+  {
+    "rank": 1621,
+    "infinitive": "spolverare"
+  },
+  {
+    "rank": 1622,
+    "infinitive": "subordinare"
+  },
+  {
+    "rank": 1623,
+    "infinitive": "infuriare"
+  },
+  {
+    "rank": 1624,
+    "infinitive": "movimentare"
+  },
+  {
+    "rank": 1625,
+    "infinitive": "raffinare"
+  },
+  {
+    "rank": 1626,
+    "infinitive": "canalizzare"
+  },
+  {
+    "rank": 1627,
+    "infinitive": "espirare"
+  },
+  {
+    "rank": 1628,
+    "infinitive": "sottostare"
+  },
+  {
+    "rank": 1629,
+    "infinitive": "imputare"
+  },
+  {
+    "rank": 1630,
+    "infinitive": "rimuginare"
+  },
+  {
+    "rank": 1631,
+    "infinitive": "trainare"
+  },
+  {
+    "rank": 1632,
+    "infinitive": "bluffare"
+  },
+  {
+    "rank": 1633,
+    "infinitive": "captare"
+  },
+  {
+    "rank": 1634,
+    "infinitive": "contrattaccare"
+  },
+  {
+    "rank": 1635,
+    "infinitive": "incazzare"
+  },
+  {
+    "rank": 1636,
+    "infinitive": "inspirare"
+  },
+  {
+    "rank": 1637,
+    "infinitive": "ritrarre"
+  },
+  {
+    "rank": 1638,
+    "infinitive": "spacciare"
+  },
+  {
+    "rank": 1639,
+    "infinitive": "appassire"
+  },
+  {
+    "rank": 1640,
+    "infinitive": "dimettere"
+  },
+  {
+    "rank": 1641,
+    "infinitive": "infornare"
+  },
+  {
+    "rank": 1642,
+    "infinitive": "seccare"
+  },
+  {
+    "rank": 1643,
+    "infinitive": "spaccare"
+  },
+  {
+    "rank": 1644,
+    "infinitive": "spazzolare"
+  },
+  {
+    "rank": 1645,
+    "infinitive": "discendere"
+  },
+  {
+    "rank": 1646,
+    "infinitive": "riscontrare"
+  },
+  {
+    "rank": 1647,
+    "infinitive": "spalare"
+  },
+  {
+    "rank": 1648,
+    "infinitive": "tatuare"
+  },
+  {
+    "rank": 1649,
+    "infinitive": "dondolare"
+  },
+  {
+    "rank": 1650,
+    "infinitive": "macellare"
+  },
+  {
+    "rank": 1651,
+    "infinitive": "origliare"
+  },
+  {
+    "rank": 1652,
+    "infinitive": "pestare"
+  },
+  {
+    "rank": 1653,
+    "infinitive": "poggiare"
+  },
+  {
+    "rank": 1654,
+    "infinitive": "digitalizzare"
+  },
+  {
+    "rank": 1655,
+    "infinitive": "fraintendere"
+  },
+  {
+    "rank": 1656,
+    "infinitive": "angolare"
+  },
+  {
+    "rank": 1657,
+    "infinitive": "attraccare"
+  },
+  {
+    "rank": 1658,
+    "infinitive": "insaporire"
+  },
+  {
+    "rank": 1659,
+    "infinitive": "levare"
+  },
+  {
+    "rank": 1660,
+    "infinitive": "prescindere"
+  },
+  {
+    "rank": 1661,
+    "infinitive": "trasporre"
+  },
+  {
+    "rank": 1662,
+    "infinitive": "arrendere"
+  },
+  {
+    "rank": 1663,
+    "infinitive": "campeggiare"
+  },
+  {
+    "rank": 1664,
+    "infinitive": "disperare"
+  },
+  {
+    "rank": 1665,
+    "infinitive": "estorcere"
+  },
+  {
+    "rank": 1666,
+    "infinitive": "monopolizzare"
+  },
+  {
+    "rank": 1667,
+    "infinitive": "pattugliare"
+  },
+  {
+    "rank": 1668,
+    "infinitive": "commissionare"
+  },
+  {
+    "rank": 1669,
+    "infinitive": "inalare"
+  },
+  {
+    "rank": 1670,
+    "infinitive": "inquadrare"
+  },
+  {
+    "rank": 1671,
+    "infinitive": "mendicare"
+  },
+  {
+    "rank": 1672,
+    "infinitive": "metabolizzare"
+  },
+  {
+    "rank": 1673,
+    "infinitive": "rianimare"
+  },
+  {
+    "rank": 1674,
+    "infinitive": "rinvigorire"
+  },
+  {
+    "rank": 1675,
+    "infinitive": "scassinare"
+  },
+  {
+    "rank": 1676,
+    "infinitive": "spogliare"
+  },
+  {
+    "rank": 1677,
+    "infinitive": "frignare"
+  },
+  {
+    "rank": 1678,
+    "infinitive": "impilare"
+  },
+  {
+    "rank": 1679,
+    "infinitive": "incaricare"
+  },
+  {
+    "rank": 1680,
+    "infinitive": "lievitare"
+  },
+  {
+    "rank": 1681,
+    "infinitive": "pedinare"
+  },
+  {
+    "rank": 1682,
+    "infinitive": "bisbigliare"
+  },
+  {
+    "rank": 1683,
+    "infinitive": "imboccare"
+  },
+  {
+    "rank": 1684,
+    "infinitive": "nevicare"
+  },
+  {
+    "rank": 1685,
+    "infinitive": "roteare"
+  },
+  {
+    "rank": 1686,
+    "infinitive": "scansionare"
+  },
+  {
+    "rank": 1687,
+    "infinitive": "sedare"
+  },
+  {
+    "rank": 1688,
+    "infinitive": "sviare"
+  },
+  {
+    "rank": 1689,
+    "infinitive": "delimitare"
+  },
+  {
+    "rank": 1690,
+    "infinitive": "parafrasare"
+  },
+  {
+    "rank": 1691,
+    "infinitive": "sprofondare"
+  },
+  {
+    "rank": 1692,
+    "infinitive": "affilare"
+  },
+  {
+    "rank": 1693,
+    "infinitive": "degradare"
+  },
+  {
+    "rank": 1694,
+    "infinitive": "deportare"
+  },
+  {
+    "rank": 1695,
+    "infinitive": "indennizzare"
+  },
+  {
+    "rank": 1696,
+    "infinitive": "riagganciare"
+  },
+  {
+    "rank": 1697,
+    "infinitive": "addivenire"
+  },
+  {
+    "rank": 1698,
+    "infinitive": "distillare"
+  },
+  {
+    "rank": 1699,
+    "infinitive": "falciare"
+  },
+  {
+    "rank": 1700,
+    "infinitive": "pentire"
+  },
+  {
+    "rank": 1701,
+    "infinitive": "ricucire"
+  },
+  {
+    "rank": 1702,
+    "infinitive": "settare"
+  },
+  {
+    "rank": 1703,
+    "infinitive": "soggiogare"
+  },
+  {
+    "rank": 1704,
+    "infinitive": "tonificare"
+  },
+  {
+    "rank": 1705,
+    "infinitive": "arrotondare"
+  },
+  {
+    "rank": 1706,
+    "infinitive": "assoggettare"
+  },
+  {
+    "rank": 1707,
+    "infinitive": "irradiare"
+  },
+  {
+    "rank": 1708,
+    "infinitive": "ostruire"
+  },
+  {
+    "rank": 1709,
+    "infinitive": "siglare"
+  },
+  {
+    "rank": 1710,
+    "infinitive": "tranquillizzare"
+  },
+  {
+    "rank": 1711,
+    "infinitive": "cifrare"
+  },
+  {
+    "rank": 1712,
+    "infinitive": "narrare"
+  },
+  {
+    "rank": 1713,
+    "infinitive": "radere"
+  },
+  {
+    "rank": 1714,
+    "infinitive": "diffamare"
+  },
+  {
+    "rank": 1715,
+    "infinitive": "inondare"
+  },
+  {
+    "rank": 1716,
+    "infinitive": "pizzicare"
+  },
+  {
+    "rank": 1717,
+    "infinitive": "salare"
+  },
+  {
+    "rank": 1718,
+    "infinitive": "stuzzicare"
+  },
+  {
+    "rank": 1719,
+    "infinitive": "discriminare"
+  },
+  {
+    "rank": 1720,
+    "infinitive": "odorare"
+  },
+  {
+    "rank": 1721,
+    "infinitive": "frustare"
+  },
+  {
+    "rank": 1722,
+    "infinitive": "ricamare"
+  },
+  {
+    "rank": 1723,
+    "infinitive": "sborsare"
+  },
+  {
+    "rank": 1724,
+    "infinitive": "disertare"
+  },
+  {
+    "rank": 1725,
+    "infinitive": "invalidare"
+  },
+  {
+    "rank": 1726,
+    "infinitive": "ricadere"
+  },
+  {
+    "rank": 1727,
+    "infinitive": "sostare"
+  },
+  {
+    "rank": 1728,
+    "infinitive": "sporcare"
+  },
+  {
+    "rank": 1729,
+    "infinitive": "accantonare"
+  },
+  {
+    "rank": 1730,
+    "infinitive": "pepare"
+  },
+  {
+    "rank": 1731,
+    "infinitive": "perturbare"
+  },
+  {
+    "rank": 1732,
+    "infinitive": "racimolare"
+  },
+  {
+    "rank": 1733,
+    "infinitive": "raschiare"
+  },
+  {
+    "rank": 1734,
+    "infinitive": "rivoltare"
+  },
+  {
+    "rank": 1735,
+    "infinitive": "sotterrare"
+  },
+  {
+    "rank": 1736,
+    "infinitive": "timbrare"
+  },
+  {
+    "rank": 1737,
+    "infinitive": "generalizzare"
+  },
+  {
+    "rank": 1738,
+    "infinitive": "opporre"
+  },
+  {
+    "rank": 1739,
+    "infinitive": "propagare"
+  },
+  {
+    "rank": 1740,
+    "infinitive": "revisionare"
+  },
+  {
+    "rank": 1741,
+    "infinitive": "svitare"
+  },
+  {
+    "rank": 1742,
+    "infinitive": "argomentare"
+  },
+  {
+    "rank": 1743,
+    "infinitive": "avvistare"
+  },
+  {
+    "rank": 1744,
+    "infinitive": "denigrare"
+  },
+  {
+    "rank": 1745,
+    "infinitive": "desistere"
+  },
+  {
+    "rank": 1746,
+    "infinitive": "intravedere"
+  },
+  {
+    "rank": 1747,
+    "infinitive": "sovrapporre"
+  },
+  {
+    "rank": 1748,
+    "infinitive": "trivellare"
+  },
+  {
+    "rank": 1749,
+    "infinitive": "cazzeggiare"
+  },
+  {
+    "rank": 1750,
+    "infinitive": "fugare"
+  },
+  {
+    "rank": 1751,
+    "infinitive": "fuorviare"
+  },
+  {
+    "rank": 1752,
+    "infinitive": "incendiare"
+  },
+  {
+    "rank": 1753,
+    "infinitive": "mutilare"
+  },
+  {
+    "rank": 1754,
+    "infinitive": "subentrare"
+  },
+  {
+    "rank": 1755,
+    "infinitive": "aggregare"
+  },
+  {
+    "rank": 1756,
+    "infinitive": "allacciare"
+  },
+  {
+    "rank": 1757,
+    "infinitive": "convogliare"
+  },
+  {
+    "rank": 1758,
+    "infinitive": "quadrare"
+  },
+  {
+    "rank": 1759,
+    "infinitive": "azzerare"
+  },
+  {
+    "rank": 1760,
+    "infinitive": "decapitare"
+  },
+  {
+    "rank": 1761,
+    "infinitive": "devastare"
+  },
+  {
+    "rank": 1762,
+    "infinitive": "dirimere"
+  },
+  {
+    "rank": 1763,
+    "infinitive": "frullare"
+  },
+  {
+    "rank": 1764,
+    "infinitive": "inumidire"
+  },
+  {
+    "rank": 1765,
+    "infinitive": "lubrificare"
+  },
+  {
+    "rank": 1766,
+    "infinitive": "ridire"
+  },
+  {
+    "rank": 1767,
+    "infinitive": "esordire"
+  },
+  {
+    "rank": 1768,
+    "infinitive": "lessare"
+  },
+  {
+    "rank": 1769,
+    "infinitive": "sorpassare"
+  },
+  {
+    "rank": 1770,
+    "infinitive": "ululare"
+  },
+  {
+    "rank": 1771,
+    "infinitive": "diffidare"
+  },
+  {
+    "rank": 1772,
+    "infinitive": "dissimulare"
+  },
+  {
+    "rank": 1773,
+    "infinitive": "gemere"
+  },
+  {
+    "rank": 1774,
+    "infinitive": "intaccare"
+  },
+  {
+    "rank": 1775,
+    "infinitive": "livellare"
+  },
+  {
+    "rank": 1776,
+    "infinitive": "mormorare"
+  },
+  {
+    "rank": 1777,
+    "infinitive": "sovrintendere"
+  },
+  {
+    "rank": 1778,
+    "infinitive": "stigmatizzare"
+  },
+  {
+    "rank": 1779,
+    "infinitive": "tardare"
+  },
+  {
+    "rank": 1780,
+    "infinitive": "appianare"
+  },
+  {
+    "rank": 1781,
+    "infinitive": "potare"
+  },
+  {
+    "rank": 1782,
+    "infinitive": "sbarazzare"
+  },
+  {
+    "rank": 1783,
+    "infinitive": "sommare"
+  },
+  {
+    "rank": 1784,
+    "infinitive": "fatturare"
+  },
+  {
+    "rank": 1785,
+    "infinitive": "raffrontare"
+  },
+  {
+    "rank": 1786,
+    "infinitive": "serrare"
+  },
+  {
+    "rank": 1787,
+    "infinitive": "avverare"
+  },
+  {
+    "rank": 1788,
+    "infinitive": "combaciare"
+  },
+  {
+    "rank": 1789,
+    "infinitive": "degenerare"
+  },
+  {
+    "rank": 1790,
+    "infinitive": "rinsaldare"
+  },
+  {
+    "rank": 1791,
+    "infinitive": "tostare"
+  },
+  {
+    "rank": 1792,
+    "infinitive": "accecare"
+  },
+  {
+    "rank": 1793,
+    "infinitive": "affiancare"
+  },
+  {
+    "rank": 1794,
+    "infinitive": "frantumare"
+  },
+  {
+    "rank": 1795,
+    "infinitive": "monetizzare"
+  },
+  {
+    "rank": 1796,
+    "infinitive": "sfociare"
+  },
+  {
+    "rank": 1797,
+    "infinitive": "sfumare"
+  },
+  {
+    "rank": 1798,
+    "infinitive": "annodare"
+  },
+  {
+    "rank": 1799,
+    "infinitive": "capitolare"
+  },
+  {
+    "rank": 1800,
+    "infinitive": "drogare"
+  },
+  {
+    "rank": 1801,
+    "infinitive": "gironzolare"
+  },
+  {
+    "rank": 1802,
+    "infinitive": "penzolare"
+  },
+  {
+    "rank": 1803,
+    "infinitive": "sormontare"
+  },
+  {
+    "rank": 1804,
+    "infinitive": "campionare"
+  },
+  {
+    "rank": 1805,
+    "infinitive": "demonizzare"
+  },
+  {
+    "rank": 1806,
+    "infinitive": "disconnettere"
+  },
+  {
+    "rank": 1807,
+    "infinitive": "indicizzare"
+  },
+  {
+    "rank": 1808,
+    "infinitive": "intralciare"
+  },
+  {
+    "rank": 1809,
+    "infinitive": "manomettere"
+  },
+  {
+    "rank": 1810,
+    "infinitive": "posporre"
+  },
+  {
+    "rank": 1811,
+    "infinitive": "rispedire"
+  },
+  {
+    "rank": 1812,
+    "infinitive": "sfogare"
+  },
+  {
+    "rank": 1813,
+    "infinitive": "svaligiare"
+  },
+  {
+    "rank": 1814,
+    "infinitive": "temporeggiare"
+  },
+  {
+    "rank": 1815,
+    "infinitive": "acchiappare"
+  },
+  {
+    "rank": 1816,
+    "infinitive": "accreditare"
+  },
+  {
+    "rank": 1817,
+    "infinitive": "complottare"
+  },
+  {
+    "rank": 1818,
+    "infinitive": "fertilizzare"
+  },
+  {
+    "rank": 1819,
+    "infinitive": "mietere"
+  },
+  {
+    "rank": 1820,
+    "infinitive": "annuire"
+  },
+  {
+    "rank": 1821,
+    "infinitive": "balbettare"
+  },
+  {
+    "rank": 1822,
+    "infinitive": "comminare"
+  },
+  {
+    "rank": 1823,
+    "infinitive": "impacchettare"
+  },
+  {
+    "rank": 1824,
+    "infinitive": "impersonare"
+  },
+  {
+    "rank": 1825,
+    "infinitive": "internalizzare"
+  },
+  {
+    "rank": 1826,
+    "infinitive": "sopravvalutare"
+  },
+  {
+    "rank": 1827,
+    "infinitive": "tappare"
+  },
+  {
+    "rank": 1828,
+    "infinitive": "attutire"
+  },
+  {
+    "rank": 1829,
+    "infinitive": "cantilenare"
+  },
+  {
+    "rank": 1830,
+    "infinitive": "fuoriuscire"
+  },
+  {
+    "rank": 1831,
+    "infinitive": "imbarcare"
+  },
+  {
+    "rank": 1832,
+    "infinitive": "racchiudere"
+  },
+  {
+    "rank": 1833,
+    "infinitive": "annoiare"
+  },
+  {
+    "rank": 1834,
+    "infinitive": "avallare"
+  },
+  {
+    "rank": 1835,
+    "infinitive": "ipnotizzare"
+  },
+  {
+    "rank": 1836,
+    "infinitive": "profanare"
+  },
+  {
+    "rank": 1837,
+    "infinitive": "truccare"
+  },
+  {
+    "rank": 1838,
+    "infinitive": "circoscrivere"
+  },
+  {
+    "rank": 1839,
+    "infinitive": "dosare"
+  },
+  {
+    "rank": 1840,
+    "infinitive": "erodere"
+  },
+  {
+    "rank": 1841,
+    "infinitive": "incentrare"
+  },
+  {
+    "rank": 1842,
+    "infinitive": "indugiare"
+  },
+  {
+    "rank": 1843,
+    "infinitive": "pungere"
+  },
+  {
+    "rank": 1844,
+    "infinitive": "salpare"
+  },
+  {
+    "rank": 1845,
+    "infinitive": "scalciare"
+  },
+  {
+    "rank": 1846,
+    "infinitive": "sfregare"
+  },
+  {
+    "rank": 1847,
+    "infinitive": "zoppicare"
+  },
+  {
+    "rank": 1848,
+    "infinitive": "decadere"
+  },
+  {
+    "rank": 1849,
+    "infinitive": "farcire"
+  },
+  {
+    "rank": 1850,
+    "infinitive": "gravare"
+  },
+  {
+    "rank": 1851,
+    "infinitive": "pitturare"
+  },
+  {
+    "rank": 1852,
+    "infinitive": "tramandare"
+  },
+  {
+    "rank": 1853,
+    "infinitive": "dilagare"
+  },
+  {
+    "rank": 1854,
+    "infinitive": "familiarizzare"
+  },
+  {
+    "rank": 1855,
+    "infinitive": "incorniciare"
+  },
+  {
+    "rank": 1856,
+    "infinitive": "instillare"
+  },
+  {
+    "rank": 1857,
+    "infinitive": "pernottare"
+  },
+  {
+    "rank": 1858,
+    "infinitive": "procrastinare"
+  },
+  {
+    "rank": 1859,
+    "infinitive": "schierare"
+  },
+  {
+    "rank": 1860,
+    "infinitive": "sezionare"
+  },
+  {
+    "rank": 1861,
+    "infinitive": "appiattire"
+  },
+  {
+    "rank": 1862,
+    "infinitive": "arruolare"
+  },
+  {
+    "rank": 1863,
+    "infinitive": "bestemmiare"
+  },
+  {
+    "rank": 1864,
+    "infinitive": "centrifugare"
+  },
+  {
+    "rank": 1865,
+    "infinitive": "deridere"
+  },
+  {
+    "rank": 1866,
+    "infinitive": "esorcizzare"
+  },
+  {
+    "rank": 1867,
+    "infinitive": "innamorare"
+  },
+  {
+    "rank": 1868,
+    "infinitive": "rescindere"
+  },
+  {
+    "rank": 1869,
+    "infinitive": "trascrivere"
+  },
+  {
+    "rank": 1870,
+    "infinitive": "riapparire"
+  },
+  {
+    "rank": 1871,
+    "infinitive": "rigirare"
+  },
+  {
+    "rank": 1872,
+    "infinitive": "saziare"
+  },
+  {
+    "rank": 1873,
+    "infinitive": "scarabocchiare"
+  },
+  {
+    "rank": 1874,
+    "infinitive": "scrutare"
+  },
+  {
+    "rank": 1875,
+    "infinitive": "verniciare"
+  },
+  {
+    "rank": 1876,
+    "infinitive": "adoperare"
+  },
+  {
+    "rank": 1877,
+    "infinitive": "commuovere"
+  },
+  {
+    "rank": 1878,
+    "infinitive": "esternalizzare"
+  },
+  {
+    "rank": 1879,
+    "infinitive": "fraternizzare"
+  },
+  {
+    "rank": 1880,
+    "infinitive": "giovare"
+  },
+  {
+    "rank": 1881,
+    "infinitive": "indurire"
+  },
+  {
+    "rank": 1882,
+    "infinitive": "schioccare"
+  },
+  {
+    "rank": 1883,
+    "infinitive": "segare"
+  },
+  {
+    "rank": 1884,
+    "infinitive": "sventare"
+  },
+  {
+    "rank": 1885,
+    "infinitive": "tingere"
+  },
+  {
+    "rank": 1886,
+    "infinitive": "usurpare"
+  },
+  {
+    "rank": 1887,
+    "infinitive": "virare"
+  },
+  {
+    "rank": 1888,
+    "infinitive": "amputare"
+  },
+  {
+    "rank": 1889,
+    "infinitive": "asserire"
+  },
+  {
+    "rank": 1890,
+    "infinitive": "decantare"
+  },
+  {
+    "rank": 1891,
+    "infinitive": "disonorare"
+  },
+  {
+    "rank": 1892,
+    "infinitive": "grattugiare"
+  },
+  {
+    "rank": 1893,
+    "infinitive": "infangare"
+  },
+  {
+    "rank": 1894,
+    "infinitive": "ondeggiare"
+  },
+  {
+    "rank": 1895,
+    "infinitive": "prosciugare"
+  },
+  {
+    "rank": 1896,
+    "infinitive": "ritoccare"
+  },
+  {
+    "rank": 1897,
+    "infinitive": "slittare"
+  },
+  {
+    "rank": 1898,
+    "infinitive": "tramare"
+  },
+  {
+    "rank": 1899,
+    "infinitive": "adornare"
+  },
+  {
+    "rank": 1900,
+    "infinitive": "ammortizzare"
+  },
+  {
+    "rank": 1901,
+    "infinitive": "maltrattare"
+  },
+  {
+    "rank": 1902,
+    "infinitive": "omogeneizzare"
+  },
+  {
+    "rank": 1903,
+    "infinitive": "opprimere"
+  },
+  {
+    "rank": 1904,
+    "infinitive": "pulsare"
+  },
+  {
+    "rank": 1905,
+    "infinitive": "puntualizzare"
+  },
+  {
+    "rank": 1906,
+    "infinitive": "ribollire"
+  },
+  {
+    "rank": 1907,
+    "infinitive": "sculacciare"
+  },
+  {
+    "rank": 1908,
+    "infinitive": "assaltare"
+  },
+  {
+    "rank": 1909,
+    "infinitive": "dissotterrare"
+  },
+  {
+    "rank": 1910,
+    "infinitive": "nidificare"
+  },
+  {
+    "rank": 1911,
+    "infinitive": "pettinare"
+  },
+  {
+    "rank": 1912,
+    "infinitive": "ricollegare"
+  },
+  {
+    "rank": 1913,
+    "infinitive": "sgocciolare"
+  },
+  {
+    "rank": 1914,
+    "infinitive": "camuffare"
+  },
+  {
+    "rank": 1915,
+    "infinitive": "mondare"
+  },
+  {
+    "rank": 1916,
+    "infinitive": "pendere"
+  },
+  {
+    "rank": 1917,
+    "infinitive": "promulgare"
+  },
+  {
+    "rank": 1918,
+    "infinitive": "sancire"
+  },
+  {
+    "rank": 1919,
+    "infinitive": "schiaffeggiare"
+  },
+  {
+    "rank": 1920,
+    "infinitive": "sterzare"
+  },
+  {
+    "rank": 1921,
+    "infinitive": "vanificare"
+  },
+  {
+    "rank": 1922,
+    "infinitive": "collaudare"
+  },
+  {
+    "rank": 1923,
+    "infinitive": "estradare"
+  },
+  {
+    "rank": 1924,
+    "infinitive": "vaporizzare"
+  },
+  {
+    "rank": 1925,
+    "infinitive": "bocciare"
+  },
+  {
+    "rank": 1926,
+    "infinitive": "macerare"
+  },
+  {
+    "rank": 1927,
+    "infinitive": "rimarcare"
+  },
+  {
+    "rank": 1928,
+    "infinitive": "sfatare"
+  },
+  {
+    "rank": 1929,
+    "infinitive": "canticchiare"
+  },
+  {
+    "rank": 1930,
+    "infinitive": "raffigurare"
+  },
+  {
+    "rank": 1931,
+    "infinitive": "saltellare"
+  },
+  {
+    "rank": 1932,
+    "infinitive": "acciuffare"
+  },
+  {
+    "rank": 1933,
+    "infinitive": "appiccare"
+  },
+  {
+    "rank": 1934,
+    "infinitive": "assecondare"
+  },
+  {
+    "rank": 1935,
+    "infinitive": "conformare"
+  },
+  {
+    "rank": 1936,
+    "infinitive": "filare"
+  },
+  {
+    "rank": 1937,
+    "infinitive": "fruttificare"
+  },
+  {
+    "rank": 1938,
+    "infinitive": "immatricolare"
+  },
+  {
+    "rank": 1939,
+    "infinitive": "intentare"
+  },
+  {
+    "rank": 1940,
+    "infinitive": "orchestrare"
+  },
+  {
+    "rank": 1941,
+    "infinitive": "recapitare"
+  },
+  {
+    "rank": 1942,
+    "infinitive": "scindere"
+  },
+  {
+    "rank": 1943,
+    "infinitive": "sgridare"
+  },
+  {
+    "rank": 1944,
+    "infinitive": "spaziare"
+  },
+  {
+    "rank": 1945,
+    "infinitive": "attrezzare"
+  },
+  {
+    "rank": 1946,
+    "infinitive": "dilatare"
+  },
+  {
+    "rank": 1947,
+    "infinitive": "esultare"
+  },
+  {
+    "rank": 1948,
+    "infinitive": "mercanteggiare"
+  },
+  {
+    "rank": 1949,
+    "infinitive": "omologare"
+  },
+  {
+    "rank": 1950,
+    "infinitive": "risollevare"
+  },
+  {
+    "rank": 1951,
+    "infinitive": "sfoggiare"
+  },
+  {
+    "rank": 1952,
+    "infinitive": "stordire"
+  },
+  {
+    "rank": 1953,
+    "infinitive": "transitare"
+  },
+  {
+    "rank": 1954,
+    "infinitive": "trapiantare"
+  },
+  {
+    "rank": 1955,
+    "infinitive": "adescare"
+  },
+  {
+    "rank": 1956,
+    "infinitive": "approdare"
+  },
+  {
+    "rank": 1957,
+    "infinitive": "cacare"
+  },
+  {
+    "rank": 1958,
+    "infinitive": "radicare"
+  },
+  {
+    "rank": 1959,
+    "infinitive": "ruggire"
+  },
+  {
+    "rank": 1960,
+    "infinitive": "sfilare"
+  },
+  {
+    "rank": 1961,
+    "infinitive": "vuotare"
+  },
+  {
+    "rank": 1962,
+    "infinitive": "annoverare"
+  },
+  {
+    "rank": 1963,
+    "infinitive": "appagare"
+  },
+  {
+    "rank": 1964,
+    "infinitive": "martellare"
+  },
+  {
+    "rank": 1965,
+    "infinitive": "ravvicinare"
+  },
+  {
+    "rank": 1966,
+    "infinitive": "riavvolgere"
+  },
+  {
+    "rank": 1967,
+    "infinitive": "riemergere"
+  },
+  {
+    "rank": 1968,
+    "infinitive": "ripopolare"
+  },
+  {
+    "rank": 1969,
+    "infinitive": "riqualificare"
+  },
+  {
+    "rank": 1970,
+    "infinitive": "scagliare"
+  },
+  {
+    "rank": 1971,
+    "infinitive": "svincolare"
+  },
+  {
+    "rank": 1972,
+    "infinitive": "zittire"
+  },
+  {
+    "rank": 1973,
+    "infinitive": "addomesticare"
+  },
+  {
+    "rank": 1974,
+    "infinitive": "approvvigionare"
+  },
+  {
+    "rank": 1975,
+    "infinitive": "curvare"
+  },
+  {
+    "rank": 1976,
+    "infinitive": "deformare"
+  },
+  {
+    "rank": 1977,
+    "infinitive": "economizzare"
+  },
+  {
+    "rank": 1978,
+    "infinitive": "riconfermare"
+  },
+  {
+    "rank": 1979,
+    "infinitive": "saggiare"
+  },
+  {
+    "rank": 1980,
+    "infinitive": "sfrattare"
+  },
+  {
+    "rank": 1981,
+    "infinitive": "statuire"
+  },
+  {
+    "rank": 1982,
+    "infinitive": "svalutare"
+  },
+  {
+    "rank": 1983,
+    "infinitive": "umanizzare"
+  },
+  {
+    "rank": 1984,
+    "infinitive": "auspicare"
+  },
+  {
+    "rank": 1985,
+    "infinitive": "imbarazzare"
+  },
+  {
+    "rank": 1986,
+    "infinitive": "imprimere"
+  },
+  {
+    "rank": 1987,
+    "infinitive": "lisciare"
+  },
+  {
+    "rank": 1988,
+    "infinitive": "riproporre"
+  },
+  {
+    "rank": 1989,
+    "infinitive": "affrancare"
+  },
+  {
+    "rank": 1990,
+    "infinitive": "ammonire"
+  },
+  {
+    "rank": 1991,
+    "infinitive": "cremare"
+  },
+  {
+    "rank": 1992,
+    "infinitive": "crocifiggere"
+  },
+  {
+    "rank": 1993,
+    "infinitive": "defecare"
+  },
+  {
+    "rank": 1994,
+    "infinitive": "democratizzare"
+  },
+  {
+    "rank": 1995,
+    "infinitive": "disintossicare"
+  },
+  {
+    "rank": 1996,
+    "infinitive": "levitare"
+  },
+  {
+    "rank": 1997,
+    "infinitive": "riavere"
+  },
+  {
+    "rank": 1998,
+    "infinitive": "ribattere"
+  }
+]

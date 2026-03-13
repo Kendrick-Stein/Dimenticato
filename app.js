@@ -68,6 +68,7 @@ const AppState = {
   // 选择状态
   selectedSource: null,     // 'system' 或 wordbook id
   selectedSourceType: null, // 'system' 或 'custom'
+  practiceContext: 'vocab', // 'vocab' | 'conjugation'
   
   // 测验状态
   quizIndex: 0,
@@ -516,6 +517,37 @@ function updateModeButtons() {
     btn.disabled = !hasSelection;
   });
 }
+
+function setPracticeContext(context = 'vocab') {
+  AppState.practiceContext = context;
+
+  const vocabModes = document.getElementById('vocabModeButtons');
+  const conjModes = document.getElementById('conjugationModeButtons');
+  const modeTitle = document.getElementById('modeSelectionTitle');
+  const modeSubtitle = document.getElementById('modeSelectionSubtitle');
+  const moduleSection = document.getElementById('conjModuleSection');
+
+  const isConjugation = context === 'conjugation';
+
+  if (vocabModes) vocabModes.classList.toggle('hidden', isConjugation);
+  if (conjModes) conjModes.classList.toggle('hidden', !isConjugation);
+
+  if (modeTitle) {
+    modeTitle.textContent = isConjugation ? '🧩 选择练习方式' : '📖 选择学习模式';
+  }
+
+  if (modeSubtitle) {
+    modeSubtitle.textContent = isConjugation
+      ? '请先在上方动词模块中选择时态，然后开始练习'
+      : '请先选择上方的词库，然后选择学习模式';
+  }
+
+  if (moduleSection) {
+    moduleSection.classList.toggle('conj-context-active', isConjugation);
+  }
+}
+
+window.setPracticeContext = setPracticeContext;
 
 function showScreen(screenId) {
   document.querySelectorAll('.screen').forEach(screen => {
@@ -1346,6 +1378,7 @@ const WordbookManager = {
     // 更新UI
     updateHeaderStats();
     highlightSelectedLevel();
+    setPracticeContext('vocab');
   },
   
   // 渲染单词本列表（旧的，保留作为备份）
@@ -1482,6 +1515,7 @@ function bindEvents() {
       // 更新UI
       updateHeaderStats();
       highlightSelectedLevel();
+      setPracticeContext('vocab');
       
       // 保存选择的级别
       localStorage.setItem(Storage.KEYS.LEVEL, AppState.selectedLevel.toString());
@@ -1882,6 +1916,7 @@ WordbookManager.renderWordbookCards = function() {
 document.addEventListener('DOMContentLoaded', () => {
   bindEvents();
   loadVocabulary();
+  setPracticeContext('vocab');
   
   // 渲染自定义单词本卡片
   WordbookManager.renderWordbookCards();

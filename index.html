@@ -92,9 +92,42 @@
             </div>
           </div>
 
+          <!-- 动词变位练习模块 -->
+          <div class="conjugation-module-section">
+            <h2>🔄 动词变位练习模块 <span class="new-badge">✨NEW</span></h2>
+            <p class="subtitle">先选时态，再在下方选择题型开始练习</p>
+
+            <div class="conjugation-module-card" id="conjModuleSection">
+              <div class="conj-module-toolbar">
+                <label>
+                  每课词数
+                  <select id="conjLessonSizeSelect">
+                    <option value="10" selected>10 词 / 课</option>
+                    <option value="20">20 词 / 课</option>
+                    <option value="30">30 词 / 课</option>
+                  </select>
+                </label>
+                <div class="conj-lesson-nav">
+                  <button class="back-btn" id="conjPrevLessonBtn">← 上一课</button>
+                  <div class="conj-lesson-status">
+                    <span id="conjLessonLabel">第 1 课</span>
+                    <span class="hidden" id="conjLessonCompletedBadge">✅ 已完成</span>
+                  </div>
+                  <button class="next-btn" id="conjNextLessonBtn">下一课 →</button>
+                </div>
+              </div>
+
+              <div class="conj-tense-buttons" id="conjTenseButtons">
+                <!-- 动态生成时态按钮 -->
+              </div>
+
+              <p class="conj-module-hint" id="conjModuleHint">选择一个时态后，按课次学习动词变位</p>
+            </div>
+          </div>
+
           <!-- 社区词本 -->
           <div class="community-wordbook-section">
-            <h2>🌍 社区词本 <span class="new-badge">✨NEW</span></h2>
+            <h2>🌍 社区词本</h2>
             <p class="subtitle">发现和分享优质学习资源</p>
             
             <div class="community-buttons">
@@ -114,26 +147,46 @@
 
           <!-- 学习模式选择 -->
           <div class="mode-selection">
-            <h2>📖 选择学习模式</h2>
-            <p class="subtitle">请先选择上方的词库，然后选择学习模式</p>
+            <h2 id="modeSelectionTitle">📖 选择学习模式</h2>
+            <p class="subtitle" id="modeSelectionSubtitle">请先选择上方的词库，然后选择学习模式</p>
             
-            <div class="mode-buttons">
+            <div class="mode-buttons" id="vocabModeButtons">
               <button class="mode-btn" id="multipleChoiceBtn" disabled>
                 <span class="mode-icon">✏️</span>
                 <span class="mode-name">选择题模式</span>
                 <span class="mode-desc">看意大利语选英语翻译</span>
               </button>
-              
+
               <button class="mode-btn" id="spellingBtn" disabled>
                 <span class="mode-icon">⌨️</span>
                 <span class="mode-name">拼写模式</span>
                 <span class="mode-desc">看英语拼写意大利语</span>
               </button>
-              
+
               <button class="mode-btn" id="browseBtn" disabled>
                 <span class="mode-icon">📚</span>
                 <span class="mode-name">浏览模式</span>
                 <span class="mode-desc">查看所有单词列表</span>
+              </button>
+            </div>
+
+            <div class="mode-buttons hidden" id="conjugationModeButtons">
+              <button class="mode-btn" id="conjModeMcqBtn">
+                <span class="mode-icon">🧩</span>
+                <span class="mode-name">选择题</span>
+                <span class="mode-desc">四选一选择正确变位</span>
+              </button>
+
+              <button class="mode-btn" id="conjModeTypingBtn">
+                <span class="mode-icon">⌨️</span>
+                <span class="mode-name">填空题</span>
+                <span class="mode-desc">输入当前题目的正确变位</span>
+              </button>
+
+              <button class="mode-btn" id="conjModeFullBtn">
+                <span class="mode-icon">📝</span>
+                <span class="mode-name">完整填空</span>
+                <span class="mode-desc">连续填空训练（完整模式）</span>
               </button>
             </div>
           </div>
@@ -239,6 +292,65 @@
 
           <div class="word-list" id="wordList">
             <!-- 动态生成单词列表 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 动词变位练习模式（多时态） -->
+      <section id="conjugationScreen" class="screen">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <button class="back-btn" id="conjBackBtn">← 返回</button>
+            <div class="quiz-progress">
+              <span id="conjCurrent">1</span> / <span id="conjTotal">0</span>
+            </div>
+            <div class="quiz-score">
+              正确率: <strong id="conjAccuracy">0%</strong>
+            </div>
+          </div>
+
+          <div class="conj-controls">
+            <span id="conjActiveLessonInfo">当前为第 1 课</span>
+            <button class="check-btn" id="conjRestartBtn">开始/重新开始</button>
+            <button class="next-btn hidden" id="conjAdvanceLessonBtn">完成本课，下一课 →</button>
+          </div>
+
+          <div class="quiz-card">
+            <div class="question-section">
+              <p class="question-label">请写出下列动词在所选时态下的正确变位：</p>
+              <p class="conj-tense-line"><strong>时态：</strong><span id="conjTenseTitle">-</span></p>
+              <h2 class="italian-word" id="conjInfinitive">-</h2>
+              <p class="conj-english-line hidden" id="conjEnglishLine"><strong>English：</strong><span id="conjEnglish">-</span></p>
+              <p class="conj-pronoun-line"><strong id="conjPromptLabel">人称：</strong><span id="conjPronoun">-</span></p>
+            </div>
+
+            <div class="spelling-section" id="conjTypingSection">
+              <p class="options-label">请输入正确变位：</p>
+              <input 
+                type="text" 
+                class="spelling-input" 
+                id="conjInput" 
+                placeholder="例如：parlo"
+                autocomplete="off"
+              >
+              <button class="check-btn" id="conjCheckBtn">检查答案</button>
+            </div>
+
+            <div class="conj-full-section hidden" id="conjFullSection">
+              <p class="options-label">请填写该动词在当前时态下的完整变位：</p>
+              <div class="conj-full-grid" id="conjFullGrid"></div>
+              <button class="check-btn" id="conjFullCheckBtn">检查整组答案</button>
+            </div>
+
+            <div class="options-section hidden" id="conjMcqSection">
+              <p class="options-label">请选择正确变位：</p>
+              <div class="options-grid" id="conjOptions"></div>
+            </div>
+          </div>
+
+          <div class="quiz-feedback hidden" id="conjFeedback">
+            <p class="feedback-text"></p>
+            <button class="next-btn" id="conjNextBtn">下一个 →</button>
           </div>
         </div>
       </section>
@@ -812,10 +924,13 @@ love
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   
   <script src="vocabulary.js"></script>
+  <script src="data/conjugations-all-tenses.js"></script>
+  <script src="data/conjugations-presente.js"></script>
   <script src="supabase-config.js"></script>
   <script src="community-wordbooks.js"></script>
   <script src="app.js"></script>
   <script src="app-enhanced.js"></script>
+  <script src="conjugation-app.js"></script>
   <script src="stats-charts.js"></script>
 </body>
 </html>
