@@ -75,6 +75,11 @@ const AppState = {
   selectedSource: null,     // 'system' 或 wordbook id
   selectedSourceType: null, // 'system' 或 'custom'
   practiceContext: 'vocab', // 'vocab' | 'conjugation'
+  activeModule: 'home',
+  currentScreen: 'welcomeScreen',
+  previousScreen: 'welcomeScreen',
+  selectedGrammarTopic: 'conjugation',
+  navigationStack: ['welcomeScreen'],
   
   // 测验状态
   quizIndex: 0,
@@ -89,6 +94,69 @@ const AppState = {
     spAttempts: 0,
     spCorrect: 0,
     totalLearned: 0
+  }
+};
+
+const ScreenMeta = {
+  welcomeScreen: {
+    module: 'home',
+    topNav: 'welcomeScreen',
+    breadcrumb: ['Home']
+  },
+  vocabularyScreen: {
+    module: 'vocabulary',
+    topNav: 'vocabularyScreen',
+    breadcrumb: ['Vocabulary', '内容来源']
+  },
+  vocabularyModesScreen: {
+    module: 'vocabulary',
+    topNav: 'vocabularyScreen',
+    breadcrumb: ['Vocabulary', '练习方式']
+  },
+  multipleChoiceScreen: {
+    module: 'vocabulary',
+    topNav: 'vocabularyScreen',
+    breadcrumb: ['Vocabulary', '练习中', '选择题']
+  },
+  spellingScreen: {
+    module: 'vocabulary',
+    topNav: 'vocabularyScreen',
+    breadcrumb: ['Vocabulary', '练习中', '拼写']
+  },
+  browseScreen: {
+    module: 'vocabulary',
+    topNav: 'vocabularyScreen',
+    breadcrumb: ['Vocabulary', '练习中', '浏览']
+  },
+  communityBrowseScreen: {
+    module: 'vocabulary',
+    topNav: 'vocabularyScreen',
+    breadcrumb: ['Vocabulary', '社区词本']
+  },
+  grammarScreen: {
+    module: 'grammar',
+    topNav: 'grammarScreen',
+    breadcrumb: ['Grammar', '主题选择']
+  },
+  conjugationSetupScreen: {
+    module: 'grammar',
+    topNav: 'grammarScreen',
+    breadcrumb: ['Grammar', '动词变位', '设置']
+  },
+  conjugationScreen: {
+    module: 'grammar',
+    topNav: 'grammarScreen',
+    breadcrumb: ['Grammar', '动词变位', '练习中']
+  },
+  progressScreen: {
+    module: 'progress',
+    topNav: 'progressScreen',
+    breadcrumb: ['Progress']
+  },
+  settingsScreen: {
+    module: 'settings',
+    topNav: 'settingsScreen',
+    breadcrumb: ['Settings & Data']
   }
 };
 
@@ -524,42 +592,119 @@ function updateModeButtons() {
   });
 }
 
+function getVocabularySelectionLabel() {
+  if (AppState.selectedSourceType === 'system') {
+    const levelLabel = AppState.selectedLevel === 'all'
+      ? '全部词汇'
+      : `系统词汇 ${AppState.selectedLevel.toLocaleString()} 词`;
+    return {
+      title: '系统词汇库',
+      detail: levelLabel
+    };
+  }
+
+  if (AppState.selectedSourceType === 'custom' && AppState.currentWordbook) {
+    return {
+      title: '我的词本',
+      detail: `${AppState.currentWordbook.name} · ${AppState.currentWordbook.wordCount} 词`
+    };
+  }
+
+  return {
+    title: '未选择来源',
+    detail: '请先在上一层选择一个词汇来源'
+  };
+}
+
+function updateVocabularySummary() {
+  const summary = document.getElementById('vocabularySelectionSummary');
+  const flowSummary = document.getElementById('vocabularyFlowSummary');
+  if (!summary || !flowSummary) return;
+
+  const selection = getVocabularySelectionLabel();
+  summary.innerHTML = `
+    <div class="selection-summary-item">
+      <span class="selection-summary-label">当前来源</span>
+      <strong>${selection.title}</strong>
+    </div>
+    <div class="selection-summary-item">
+      <span class="selection-summary-label">当前选择</span>
+      <span>${selection.detail}</span>
+    </div>
+    <div class="selection-summary-item">
+      <span class="selection-summary-label">下一步</span>
+      <span>选择题 / 拼写 / 浏览</span>
+    </div>
+  `;
+
+  flowSummary.textContent = AppState.selectedSourceType ? `${selection.title} · ${selection.detail}` : '请选择词汇来源';
+}
+
+function updateProgressScreenStats() {
+  const totalWords = AppState.currentWords.length;
+  const masteredCount = [...AppState.masteredWords].filter(word =>
+    AppState.currentWords.some(w => w.italian === word)
+  ).length;
+  const progress = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
+
+  const totalEl = document.getElementById('progressCurrentTotalWords');
+  const masteredEl = document.getElementById('progressCurrentMasteredWords');
+  const progressEl = document.getElementById('progressCurrentPercent');
+
+  if (totalEl) totalEl.textContent = totalWords.toLocaleString();
+  if (masteredEl) masteredEl.textContent = masteredCount.toLocaleString();
+  if (progressEl) progressEl.textContent = progress + '%';
+}
+
+function updateHeaderNavigation(screenId) {
+  const meta = ScreenMeta[screenId] || ScreenMeta.welcomeScreen;
+  AppState.activeModule = meta.module;
+
+  document.querySelectorAll('.top-nav-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.target === meta.topNav);
+  });
+
+  const breadcrumb = document.getElementById('breadcrumb');
+  if (breadcrumb) {
+    breadcrumb.innerHTML = meta.breadcrumb
+      .map((item, index) => `<span class="breadcrumb-item ${index === meta.breadcrumb.length - 1 ? 'current' : ''}">${item}</span>`)
+      .join('<span class="breadcrumb-separator">/</span>');
+  }
+}
+
 function setPracticeContext(context = 'vocab') {
   AppState.practiceContext = context;
-
-  const vocabModes = document.getElementById('vocabModeButtons');
-  const conjModes = document.getElementById('conjugationModeButtons');
-  const modeTitle = document.getElementById('modeSelectionTitle');
-  const modeSubtitle = document.getElementById('modeSelectionSubtitle');
   const moduleSection = document.getElementById('conjModuleSection');
 
-  const isConjugation = context === 'conjugation';
-
-  if (vocabModes) vocabModes.classList.toggle('hidden', isConjugation);
-  if (conjModes) conjModes.classList.toggle('hidden', !isConjugation);
-
-  if (modeTitle) {
-    modeTitle.innerHTML = `${renderIcon(isConjugation ? 'icon-puzzle' : 'icon-book-open')} ${isConjugation ? '选择练习方式' : '选择学习模式'}`;
-  }
-
-  if (modeSubtitle) {
-    modeSubtitle.textContent = isConjugation
-      ? '请先在上方动词模块中选择时态，然后开始练习'
-      : '请先选择上方的词库，然后选择学习模式';
-  }
-
   if (moduleSection) {
-    moduleSection.classList.toggle('conj-context-active', isConjugation);
+    moduleSection.classList.toggle('conj-context-active', context === 'conjugation');
   }
 }
 
 window.setPracticeContext = setPracticeContext;
 
-function showScreen(screenId) {
+function showScreen(screenId, options = {}) {
   document.querySelectorAll('.screen').forEach(screen => {
     screen.classList.remove('active');
   });
   document.getElementById(screenId).classList.add('active');
+
+  AppState.previousScreen = AppState.currentScreen;
+  AppState.currentScreen = screenId;
+
+  if (!options.skipHistory) {
+    AppState.navigationStack.push(screenId);
+  }
+
+  updateHeaderNavigation(screenId);
+
+  if (screenId === 'vocabularyModesScreen') {
+    updateVocabularySummary();
+  }
+
+  if (screenId === 'progressScreen') {
+    updateProgressScreenStats();
+  }
 }
 
 // ==================== 选择题模式 ====================
@@ -735,7 +880,7 @@ const MultipleChoice = {
   showCompletion() {
     const accuracy = Math.round((AppState.quizCorrect / AppState.quizTotal) * 100);
     alert(`练习完成\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
-    showScreen('welcomeScreen');
+    showScreen('vocabularyModesScreen');
   }
 };
 
@@ -875,7 +1020,7 @@ const Spelling = {
   showCompletion() {
     const accuracy = Math.round((AppState.quizCorrect / AppState.quizTotal) * 100);
     alert(`练习完成\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
-    showScreen('welcomeScreen');
+    showScreen('vocabularyModesScreen');
   }
 };
 
@@ -1385,6 +1530,7 @@ const WordbookManager = {
     updateHeaderStats();
     highlightSelectedLevel();
     setPracticeContext('vocab');
+    updateVocabularySummary();
   },
   
   // 渲染单词本列表（旧的，保留作为备份）
@@ -1498,6 +1644,36 @@ function shuffleArray(array) {
 // ==================== 事件绑定 ====================
 
 function bindEvents() {
+  document.querySelectorAll('.top-nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      showScreen(btn.dataset.target);
+    });
+  });
+
+  document.getElementById('goVocabularyBtn')?.addEventListener('click', () => showScreen('vocabularyScreen'));
+  document.getElementById('goGrammarBtn')?.addEventListener('click', () => showScreen('grammarScreen'));
+  document.getElementById('goProgressBtn')?.addEventListener('click', () => showScreen('progressScreen'));
+  document.getElementById('goSettingsBtn')?.addEventListener('click', () => showScreen('settingsScreen'));
+  document.getElementById('goConjugationSetupBtn')?.addEventListener('click', () => showScreen('conjugationSetupScreen'));
+  document.getElementById('browseCommunityBtn')?.addEventListener('click', () => CommunityWordbooks.showBrowseScreen());
+  document.getElementById('openProgressStatsBtn')?.addEventListener('click', () => {
+    if (typeof showEnhancedStatsModal !== 'undefined') showEnhancedStatsModal();
+  });
+
+  document.getElementById('vocabularyBackBtn')?.addEventListener('click', () => showScreen('welcomeScreen'));
+  document.getElementById('vocabularyModesBackBtn')?.addEventListener('click', () => showScreen('vocabularyScreen'));
+  document.getElementById('grammarBackBtn')?.addEventListener('click', () => showScreen('welcomeScreen'));
+  document.getElementById('conjugationSetupBackBtn')?.addEventListener('click', () => showScreen('grammarScreen'));
+  document.getElementById('progressBackBtn')?.addEventListener('click', () => showScreen('welcomeScreen'));
+  document.getElementById('settingsBackBtn')?.addEventListener('click', () => showScreen('welcomeScreen'));
+
+  document.getElementById('settingsExportBtn')?.addEventListener('click', () => Storage.exportAllData());
+  document.getElementById('settingsImportBtn')?.addEventListener('click', () => document.getElementById('importDataFileInput').click());
+  document.getElementById('settingsThemeBtn')?.addEventListener('click', () => Storage.toggleTheme());
+  document.getElementById('settingsHelpBtn')?.addEventListener('click', () => document.getElementById('helpModal').classList.remove('hidden'));
+  document.getElementById('settingsCommunityUploadBtn')?.addEventListener('click', () => CommunityWordbooks.showUploadDialog());
+  document.getElementById('settingsResetBtn')?.addEventListener('click', () => Storage.reset());
+
   // 系统词汇级别选择
   document.querySelectorAll('.vocab-source-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -1522,9 +1698,12 @@ function bindEvents() {
       updateHeaderStats();
       highlightSelectedLevel();
       setPracticeContext('vocab');
+      updateVocabularySummary();
       
       // 保存选择的级别
       localStorage.setItem(Storage.KEYS.LEVEL, AppState.selectedLevel.toString());
+
+      showScreen('vocabularyModesScreen');
     });
   });
   
@@ -1604,13 +1783,7 @@ function bindEvents() {
   
   // 选择题模式
   document.getElementById('mcBackBtn').addEventListener('click', () => {
-    // 返回欢迎页面前，重置当前单词本状态
-    AppState.currentWordbook = null;
-    // 重新加载系统词汇进度
-    Storage.load();
-    updateCurrentWords();
-    updateHeaderStats();
-    showScreen('welcomeScreen');
+    showScreen('vocabularyModesScreen');
   });
   
   document.getElementById('mcNextBtn').addEventListener('click', () => {
@@ -1619,13 +1792,7 @@ function bindEvents() {
   
   // 拼写模式
   document.getElementById('spBackBtn').addEventListener('click', () => {
-    // 返回欢迎页面前，重置当前单词本状态
-    AppState.currentWordbook = null;
-    // 重新加载系统词汇进度
-    Storage.load();
-    updateCurrentWords();
-    updateHeaderStats();
-    showScreen('welcomeScreen');
+    showScreen('vocabularyModesScreen');
   });
   
   document.getElementById('spCheckBtn').addEventListener('click', () => {
@@ -1651,13 +1818,7 @@ function bindEvents() {
   
   // 浏览模式
   document.getElementById('brBackBtn').addEventListener('click', () => {
-    // 返回欢迎页面前，重置当前单词本状态
-    AppState.currentWordbook = null;
-    // 重新加载系统词汇进度
-    Storage.load();
-    updateCurrentWords();
-    updateHeaderStats();
-    showScreen('welcomeScreen');
+    showScreen('vocabularyModesScreen');
   });
   
   document.getElementById('searchInput').addEventListener('input', (e) => {
@@ -1923,6 +2084,7 @@ document.addEventListener('DOMContentLoaded', () => {
   bindEvents();
   loadVocabulary();
   setPracticeContext('vocab');
+  updateHeaderNavigation('welcomeScreen');
   
   // 渲染自定义单词本卡片
   WordbookManager.renderWordbookCards();

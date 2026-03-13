@@ -200,7 +200,7 @@
     if (typeof window.setPracticeContext === 'function') {
       window.setPracticeContext('conjugation');
     }
-    document.getElementById('modeSelectionTitle')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.getElementById('conjugationSetupScreen')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   function setSelectedTense(tenseKey) {
@@ -533,7 +533,7 @@
       updateLessonUI();
       document.getElementById('conjAdvanceLessonBtn')?.classList.remove('hidden');
       alert(`🎉 动词变位练习完成！\n\n正确: ${state.correct}/${state.total}\n正确率: ${acc}%`);
-      if (typeof showScreen === 'function') showScreen('welcomeScreen');
+      if (typeof showScreen === 'function') showScreen('conjugationSetupScreen');
       if (typeof window.setPracticeContext === 'function') window.setPracticeContext('conjugation');
       return;
     }
@@ -739,7 +739,7 @@
     document.getElementById('conjNextBtn')?.addEventListener('click', nextQuestion);
     document.getElementById('conjRestartBtn')?.addEventListener('click', () => start(state.mode || 'typing'));
     document.getElementById('conjBackBtn')?.addEventListener('click', () => {
-      if (typeof showScreen === 'function') showScreen('welcomeScreen');
+      if (typeof showScreen === 'function') showScreen('conjugationSetupScreen');
       if (typeof window.setPracticeContext === 'function') window.setPracticeContext('conjugation');
     });
   }

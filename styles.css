@@ -61,6 +61,206 @@ body {
   display: block;
 }
 
+.header-center {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.top-nav-btn {
+  border: 1px solid var(--border-color);
+  background: var(--surface-strong);
+  color: var(--text-secondary);
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.top-nav-btn.active,
+.top-nav-btn:hover {
+  color: var(--text-primary);
+  border-color: rgba(85, 107, 96, 0.24);
+  background: rgba(85, 107, 96, 0.08);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.breadcrumb-item.current {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.hub-hero {
+  margin-bottom: 1rem;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.module-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  text-align: left;
+  cursor: pointer;
+  padding: 1.4rem;
+  border-radius: 22px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  transition: all 0.2s;
+}
+
+.module-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.module-card-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(85, 107, 96, 0.08);
+  color: var(--accent-primary);
+}
+
+.module-card-icon .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.module-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.module-card-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.danger-card {
+  border-color: rgba(142, 95, 88, 0.2);
+}
+
+.single-column-grid {
+  grid-template-columns: 1fr;
+}
+
+.compact-grid {
+  margin-top: 1rem;
+}
+
+.wide-card {
+  min-height: auto;
+}
+
+.module-view-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.module-view-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.section-back-btn {
+  align-self: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.subtitle.compact {
+  text-align: left;
+  margin: 0 0 1rem;
+  max-width: none;
+}
+
+.section-head-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.inline-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.single-action-row {
+  grid-template-columns: 1fr;
+}
+
+.no-divider {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.selection-summary-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 20px;
+  background: rgba(85, 107, 96, 0.05);
+  border: 1px solid var(--border-color);
+}
+
+.selection-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.selection-summary-label {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.progress-summary-grid,
+.settings-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 /* ==================== 加载动画 ==================== */
 
 .loading {
@@ -3458,6 +3658,10 @@ body {
     width: 100%;
     justify-content: flex-start;
   }
+
+  .module-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3467,7 +3671,7 @@ body {
   }
 
   .header {
-    padding: 1rem;
+  padding: 1.25rem;
     gap: 1rem;
   }
 
@@ -3475,6 +3679,28 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  .header-center,
+  .top-nav,
+  .breadcrumb,
+  .module-grid,
+  .section-head-row,
+  .inline-actions,
+  .selection-summary-card {
+    width: 100%;
+  }
+
+  .module-grid,
+  .selection-summary-card {
+    grid-template-columns: 1fr;
+  }
+
+  .top-nav,
+  .section-head-row,
+  .inline-actions {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .stat {

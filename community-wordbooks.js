@@ -640,6 +640,6 @@ const CommunityWordbooks = {
    * 返回主页
    */
   backToWelcome() {
-    showScreen('welcomeScreen');
+    showScreen('vocabularyScreen');
   }
 };
