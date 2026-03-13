@@ -77,7 +77,7 @@ const PRESET_TAGS = [
 
 // 难度级别映射
 const DIFFICULTY_LEVELS = {
-  'Beginner': { label: '初级', icon: '🌱' },
-  'Intermediate': { label: '中级', icon: '🌿' },
-  'Advanced': { label: '高级', icon: '🌳' }
+  'Beginner': { label: '初级', icon: 'icon-seed' },
+  'Intermediate': { label: '中级', icon: 'icon-leaf' },
+  'Advanced': { label: '高级', icon: 'icon-tree' }
 };

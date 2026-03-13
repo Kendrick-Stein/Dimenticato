@@ -52,6 +52,12 @@ class ItalianSpeaker {
 // 创建全局 speaker 实例
 const italianSpeaker = new ItalianSpeaker();
 
+function renderIcon(name) {
+  return `<svg class="icon"><use href="#${name}"></use></svg>`;
+}
+
+window.renderIcon = renderIcon;
+
 // ==================== 全局状态 ====================
 
 const AppState = {
@@ -533,7 +539,7 @@ function setPracticeContext(context = 'vocab') {
   if (conjModes) conjModes.classList.toggle('hidden', !isConjugation);
 
   if (modeTitle) {
-    modeTitle.textContent = isConjugation ? '🧩 选择练习方式' : '📖 选择学习模式';
+    modeTitle.innerHTML = `${renderIcon(isConjugation ? 'icon-puzzle' : 'icon-book-open')} ${isConjugation ? '选择练习方式' : '选择学习模式'}`;
   }
 
   if (modeSubtitle) {
@@ -628,7 +634,7 @@ const MultipleChoice = {
     }
     
     if (AppState.currentWord.notes) {
-      notesContainer.innerHTML = `<strong>📝 笔记：</strong>${AppState.currentWord.notes}`;
+      notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${AppState.currentWord.notes}`;
       notesContainer.style.display = 'block';
     } else {
       notesContainer.style.display = 'none';
@@ -694,13 +700,13 @@ const MultipleChoice = {
     const feedbackText = feedback.querySelector('.feedback-text');
     
     if (isCorrect) {
-      feedbackText.textContent = '✅ 正确！';
+      feedbackText.textContent = '回答正确';
       feedback.classList.remove('incorrect');
       feedback.classList.add('correct');
       // 答对时，1秒后自动跳转下一题
       setTimeout(() => this.nextQuestion(), 1000);
     } else {
-      feedbackText.textContent = `❌ 错误！正确答案是：${correctAnswer}`;
+      feedbackText.textContent = `回答有误，正确答案是：${correctAnswer}`;
       feedback.classList.remove('correct');
       feedback.classList.add('incorrect');
     }
@@ -728,7 +734,7 @@ const MultipleChoice = {
   
   showCompletion() {
     const accuracy = Math.round((AppState.quizCorrect / AppState.quizTotal) * 100);
-    alert(`🎉 完成！\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
+    alert(`练习完成\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
     showScreen('welcomeScreen');
   }
 };
@@ -820,13 +826,13 @@ const Spelling = {
     const feedbackText = feedback.querySelector('.feedback-text');
     
     if (isCorrect) {
-      feedbackText.textContent = '✅ 正确！';
+      feedbackText.textContent = '回答正确';
       feedback.classList.remove('incorrect');
       feedback.classList.add('correct');
       // 答对时，1秒后自动跳转下一题
       setTimeout(() => this.nextQuestion(), 1000);
     } else {
-      feedbackText.textContent = `❌ 错误！正确答案是：${AppState.currentWord.italian}`;
+      feedbackText.textContent = `回答有误，正确答案是：${AppState.currentWord.italian}`;
       feedback.classList.remove('correct');
       feedback.classList.add('incorrect');
     }
@@ -849,7 +855,7 @@ const Spelling = {
     }
     
     if (AppState.currentWord.notes) {
-      notesContainer.innerHTML = `<strong>📝 笔记：</strong>${AppState.currentWord.notes}`;
+      notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${AppState.currentWord.notes}`;
       notesContainer.style.display = 'block';
     } else {
       notesContainer.style.display = 'none';
@@ -868,7 +874,7 @@ const Spelling = {
   
   showCompletion() {
     const accuracy = Math.round((AppState.quizCorrect / AppState.quizTotal) * 100);
-    alert(`🎉 完成！\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
+    alert(`练习完成\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
     showScreen('welcomeScreen');
   }
 };
@@ -921,7 +927,7 @@ const Browse = {
       return `
         <div class="word-item ${isMastered ? 'mastered' : ''}" data-italian="${word.italian}">
           <div class="word-item-left">
-            <div class="word-italian">🔊 ${word.italian}</div>
+            <div class="word-italian">${renderIcon('icon-volume')} ${word.italian}</div>
             <div class="word-english">${word.english}</div>
             ${word.chinese ? `<div class="word-chinese">${word.chinese}</div>` : ''}
             ${word.notes ? `<div class="word-notes">${word.notes}</div>` : ''}
@@ -1340,7 +1346,7 @@ const WordbookManager = {
     container.innerHTML = AppState.customWordbooks.map(wb => `
       <div class="wordbook-card" data-wordbook-id="${wb.id}">
         <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
-        <span class="wordbook-card-icon">📖</span>
+        <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
         <span class="wordbook-card-name">${wb.name}</span>
         <span class="wordbook-card-count">${wb.wordCount} 词</span>
         <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
@@ -1388,7 +1394,7 @@ const WordbookManager = {
     if (AppState.customWordbooks.length === 0) {
       container.innerHTML = `
         <div class="wordbook-empty">
-          <div class="wordbook-empty-icon">📚</div>
+          <div class="wordbook-empty-icon">${renderIcon('icon-library')}</div>
           <p>还没有导入任何单词本</p>
           <p style="font-size: 0.9rem; margin-top: 0.5rem;">点击上方按钮导入 JSON 文件</p>
         </div>
@@ -1402,8 +1408,8 @@ const WordbookManager = {
           <div class="wordbook-name">${wb.name}</div>
           ${wb.description ? `<div class="wordbook-description">${wb.description}</div>` : ''}
           <div class="wordbook-meta">
-            <span>📝 ${wb.wordCount} 个单词</span>
-            <span>📅 ${new Date(wb.createdAt).toLocaleDateString()}</span>
+            <span>${renderIcon('icon-pen')} ${wb.wordCount} 个单词</span>
+            <span>${renderIcon('icon-calendar')} ${new Date(wb.createdAt).toLocaleDateString()}</span>
           </div>
         </div>
         <div class="wordbook-actions">
@@ -1545,10 +1551,10 @@ function bindEvents() {
     if (typeof WordbookEditor !== 'undefined') {
       const wordbook = WordbookEditor.createNewWordbook();
       if (wordbook) {
-        alert(`✅ 成功创建单词本"${wordbook.name}"！\n点击单词本卡片右上角的⚙️可以添加单词。`);
+        alert(`已成功创建单词本"${wordbook.name}"。\n点击单词本卡片右上角的设置按钮可以添加单词。`);
       }
     } else {
-      alert('❌ 单词本编辑功能未加载，请刷新页面重试。');
+      alert('单词本编辑功能未加载，请刷新页面重试。');
     }
   });
   
@@ -1565,7 +1571,7 @@ function bindEvents() {
         ? `✅ 成功合并到单词本"${wordbook.name}"！\n\n`
         : `✅ 成功导入单词本"${wordbook.name}"！\n\n`;
       
-      message += `📊 导入统计：\n`;
+      message += `导入统计：\n`;
       message += `• 总计导入：${stats.totalImported} 个单词\n`;
       
       if (stats.autoMatchedCount > 0) {
@@ -1583,13 +1589,13 @@ function bindEvents() {
       message += `\n单词本总数：${wordbook.wordCount} 个单词`;
       
       if (stats.needManualCount > 0) {
-        message += `\n\n💡 提示：点击单词本卡片右上角的⚙️可添加缺失的翻译`;
+        message += `\n\n提示：点击单词本卡片右上角的设置按钮可补充缺失翻译`;
       }
       
       alert(message);
       WordbookManager.renderWordbookCards();
     } catch (error) {
-      alert(`❌ 导入失败：${error}`);
+      alert(`导入失败：${error}`);
     }
     
     // 清空文件输入
@@ -1679,7 +1685,7 @@ function bindEvents() {
       await Storage.importAllData(file);
     } catch (error) {
       if (error !== '用户取消导入') {
-        alert(`❌ 导入失败：${error}`);
+        alert(`导入失败：${error}`);
       }
     }
     
@@ -1893,9 +1899,9 @@ WordbookManager.renderWordbookCards = function() {
   
   container.innerHTML = AppState.customWordbooks.map(wb => `
     <div class="wordbook-card" data-wordbook-id="${wb.id}">
-      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); if(typeof WordbookEditor !== 'undefined') { WordbookEditor.openEditor(${wb.id}); } else { alert('❌ 单词本编辑功能未加载'); }" title="管理单词本">⚙️</button>
+      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); if(typeof WordbookEditor !== 'undefined') { WordbookEditor.openEditor(${wb.id}); } else { alert('单词本编辑功能未加载'); }" title="管理单词本">${renderIcon('icon-settings')}</button>
       <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
-      <span class="wordbook-card-icon">📖</span>
+      <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
       <span class="wordbook-card-name">${wb.name}</span>
       <span class="wordbook-card-count">${wb.wordCount} 词</span>
       <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>

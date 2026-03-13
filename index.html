@@ -7,6 +7,36 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true" focusable="false">
+    <symbol id="icon-brand" viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 8.5h8M8 12h8M8 15.5h4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-library" viewBox="0 0 24 24"><path d="M5 6.5h10a2 2 0 0 1 2 2v10H7a2 2 0 0 0-2 2V6.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M7 18.5h11V8.5a2 2 0 0 0-2-2H7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m8.5 12 2.2 2.2 4.8-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M5 19V9M12 19V5M19 19v-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M4 19.5h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-seed" viewBox="0 0 24 24"><path d="M12 18c-2.7-2.4-4-4.7-4-7.1 0-2.6 1.9-4.4 4-4.9 2.1.5 4 2.3 4 4.9 0 2.4-1.3 4.7-4 7.1Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 18v3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M18.5 5.5c-5.5.2-9.5 3.7-10.4 9.3-.2 1.3-.2 2.6 0 3.7 1.1.2 2.4.2 3.7 0 5.6-.9 9.1-4.9 9.3-10.4-.8-.9-1.7-1.8-2.6-2.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 16c2.5-2.5 4.8-4.1 8.5-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-tree" viewBox="0 0 24 24"><path d="M12 4 6.5 11h3l-3 4.5h4V20h3v-4.5h4l-3-4.5h3L12 4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-stack" viewBox="0 0 24 24"><path d="m12 5 7 3.5-7 3.5-7-3.5L12 5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m5 12 7 3.5 7-3.5M5 15.5 12 19l7-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-pen" viewBox="0 0 24 24"><path d="M5 16.5V19h2.5L18 8.5 15.5 6 5 16.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m14.5 7 2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-cycle" viewBox="0 0 24 24"><path d="M6 9a6.5 6.5 0 0 1 11-2.8M18 15A6.5 6.5 0 0 1 7 17.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="m15.5 6.5 1.6-.3.3 1.6M8.5 17.5-7 0" fill="none"/><path d="m8.5 17.5-1.6.3-.3-1.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="5.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-upload" viewBox="0 0 24 24"><path d="M12 16V6M8.5 9.5 12 6l3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 18.5h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-book-open" viewBox="0 0 24 24"><path d="M6 6.5A2.5 2.5 0 0 1 8.5 4H18v14.5h-9.5A2.5 2.5 0 0 0 6 21V6.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M18 4h.5A1.5 1.5 0 0 1 20 5.5V20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24"><rect x="5" y="5" width="5.5" height="5.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="13.5" y="5" width="5.5" height="5.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="5" y="13.5" width="5.5" height="5.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="13.5" y="13.5" width="5.5" height="5.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="icon-keyboard" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 10.5h.01M10 10.5h.01M13 10.5h.01M16 10.5h.01M8 13.5h8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-puzzle" viewBox="0 0 24 24"><path d="M9 5h3a2 2 0 1 1 4 0h3v4a2 2 0 1 0 0 4v4h-4a2 2 0 1 1-4 0H7v-4a2 2 0 1 0 0-4V5h2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-volume" viewBox="0 0 24 24"><path d="M5 14h3l4 3V7L8 10H5v4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M15 10.5a3 3 0 0 1 0 3M17.5 8a6.5 6.5 0 0 1 0 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 6v10M8.5 12.5 12 16l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 18.5h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-reset" viewBox="0 0 24 24"><path d="M6 8V4.5H9.5M6.4 8A7 7 0 1 1 5 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-theme" viewBox="0 0 24 24"><path d="M14.5 4.5a7.5 7.5 0 1 0 5 14 8 8 0 1 1-5-14Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9.8 9.5a2.4 2.4 0 1 1 4 1.8c-.8.6-1.3 1-1.3 2.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M12 16.8h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M3.5 12s3-5 8.5-5 8.5 5 8.5 5-3 5-8.5 5-8.5-5-8.5-5Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="m8 5 8 8M9.5 12.5 5 17l2 2 4.5-4.5M13 4l7 7-3 1-5-5 1-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M6 7h12M9 7V5.5h6V7M8.5 9.5l.5 8h6l.5-8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-settings" viewBox="0 0 24 24"><path d="M12 8.8A3.2 3.2 0 1 1 12 15.2 3.2 3.2 0 0 1 12 8.8Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.5-2.3.7a7.8 7.8 0 0 0-1.7-1L14.5 3h-5l-.4 2.7a7.8 7.8 0 0 0-1.7 1L5 6l-2 3.5L5 11a7 7 0 0 0 0 2l-2 1.5L5 18l2.3-.7c.5.4 1.1.7 1.7 1l.5 2.7h5l.4-2.7c.6-.3 1.2-.6 1.7-1l2.3.7 2-3.5-2-1.5c.1-.3.1-.7.1-1Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="5" y="6" width="14" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 4.5v3M16 4.5v3M5 10h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 4 1.7 4.3L18 10l-4.3 1.7L12 16l-1.7-4.3L6 10l4.3-1.7L12 4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  </svg>
   <!-- 加载动画 -->
   <div id="loading" class="loading">
     <div class="spinner"></div>
@@ -18,11 +48,17 @@
     
     <!-- 顶部导航栏 -->
     <header class="header">
-      <h1>🇮🇹 意大利语背单词</h1>
+      <div class="brand-lockup">
+        <span class="brand-mark"><svg class="icon"><use href="#icon-brand"></use></svg></span>
+        <div>
+          <p class="eyebrow">Dimenticato</p>
+          <h1>意大利语背单词</h1>
+        </div>
+      </div>
       <div class="header-stats">
-        <span class="stat">📚 词汇量: <strong id="totalWords">0</strong></span>
-        <span class="stat">✅ 已掌握: <strong id="masteredWords">0</strong></span>
-        <span class="stat">📊 进度: <strong id="progressPercent">0%</strong></span>
+        <span class="stat"><svg class="icon"><use href="#icon-library"></use></svg><span>词汇量 <strong id="totalWords">0</strong></span></span>
+        <span class="stat"><svg class="icon"><use href="#icon-check-circle"></use></svg><span>已掌握 <strong id="masteredWords">0</strong></span></span>
+        <span class="stat"><svg class="icon"><use href="#icon-chart"></use></svg><span>进度 <strong id="progressPercent">0%</strong></span></span>
       </div>
     </header>
 
@@ -34,30 +70,30 @@
         <div class="welcome-card">
           <!-- 系统词汇库 -->
           <div class="vocab-section">
-            <h2>🎯 系统词汇库</h2>
+            <h2><svg class="icon"><use href="#icon-library"></use></svg>系统词汇库</h2>
             <p class="subtitle">根据词频排序，从最常用的单词开始学习</p>
             
             <div class="level-buttons">
               <button class="level-btn vocab-source-btn" data-level="1000" data-source="system">
-                <span class="level-icon">🌱</span>
+                <span class="level-icon"><svg class="icon"><use href="#icon-seed"></use></svg></span>
                 <span class="level-name">初级</span>
                 <span class="level-count">1,000 词</span>
               </button>
               
               <button class="level-btn vocab-source-btn" data-level="3000" data-source="system">
-                <span class="level-icon">🌿</span>
+                <span class="level-icon"><svg class="icon"><use href="#icon-leaf"></use></svg></span>
                 <span class="level-name">中级</span>
                 <span class="level-count">3,000 词</span>
               </button>
               
               <button class="level-btn vocab-source-btn" data-level="5000" data-source="system">
-                <span class="level-icon">🌳</span>
+                <span class="level-icon"><svg class="icon"><use href="#icon-tree"></use></svg></span>
                 <span class="level-name">高级</span>
                 <span class="level-count">5,000 词</span>
               </button>
               
               <button class="level-btn vocab-source-btn" data-level="all" data-source="system">
-                <span class="level-icon">🌲</span>
+                <span class="level-icon"><svg class="icon"><use href="#icon-stack"></use></svg></span>
                 <span class="level-name">全部</span>
                 <span class="level-count">28,787 词</span>
               </button>
@@ -66,7 +102,7 @@
 
           <!-- 自定义单词本 -->
           <div class="custom-wordbook-section">
-            <h2>📝 我的单词本</h2>
+            <h2><svg class="icon"><use href="#icon-pen"></use></svg>我的单词本</h2>
             <p class="subtitle">导入并学习自定义单词本</p>
             
             <div class="wordbook-cards" id="wordbookCards">
@@ -76,12 +112,12 @@
             <div class="import-wordbook-card">
               <input type="file" id="wordbookFileInput" accept=".json,.txt" style="display: none;">
               <button class="level-btn import-btn" id="importWordbookBtn">
-                <span class="level-icon">➕</span>
+                <span class="level-icon"><svg class="icon"><use href="#icon-plus"></use></svg></span>
                 <span class="level-name">导入单词本</span>
                 <span class="level-count">支持 JSON / TXT</span>
               </button>
               <button class="level-btn import-btn" id="createWordbookBtn" style="margin-top: 1rem;">
-                <span class="level-icon">📝</span>
+                <span class="level-icon"><svg class="icon"><use href="#icon-pen"></use></svg></span>
                 <span class="level-name">创建新单词本</span>
                 <span class="level-count">从零开始创建</span>
               </button>
@@ -94,7 +130,7 @@
 
           <!-- 动词变位练习模块 -->
           <div class="conjugation-module-section">
-            <h2>🔄 动词变位练习模块 <span class="new-badge">✨NEW</span></h2>
+            <h2><svg class="icon"><use href="#icon-cycle"></use></svg>动词变位练习模块 <span class="new-badge"><svg class="icon"><use href="#icon-spark"></use></svg>New</span></h2>
             <p class="subtitle">先选时态，再在下方选择题型开始练习</p>
 
             <div class="conjugation-module-card" id="conjModuleSection">
@@ -111,7 +147,7 @@
                   <button class="back-btn" id="conjPrevLessonBtn">← 上一课</button>
                   <div class="conj-lesson-status">
                     <span id="conjLessonLabel">第 1 课</span>
-                    <span class="hidden" id="conjLessonCompletedBadge">✅ 已完成</span>
+                    <span class="hidden" id="conjLessonCompletedBadge">已完成</span>
                   </div>
                   <button class="next-btn" id="conjNextLessonBtn">下一课 →</button>
                 </div>
@@ -127,18 +163,18 @@
 
           <!-- 社区词本 -->
           <div class="community-wordbook-section">
-            <h2>🌍 社区词本</h2>
+            <h2><svg class="icon"><use href="#icon-grid"></use></svg>社区词本</h2>
             <p class="subtitle">发现和分享优质学习资源</p>
             
             <div class="community-buttons">
               <button class="level-btn community-btn" onclick="CommunityWordbooks.showBrowseScreen()">
-                <span class="level-icon">🔍</span>
+                <span class="level-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
                 <span class="level-name">浏览社区词本</span>
                 <span class="level-count">发现更多资源</span>
               </button>
               
               <button class="level-btn community-btn" onclick="CommunityWordbooks.showUploadDialog()">
-                <span class="level-icon">⬆️</span>
+                <span class="level-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
                 <span class="level-name">上传我的词本</span>
                 <span class="level-count">分享给社区</span>
               </button>
@@ -147,24 +183,24 @@
 
           <!-- 学习模式选择 -->
           <div class="mode-selection">
-            <h2 id="modeSelectionTitle">📖 选择学习模式</h2>
+            <h2 id="modeSelectionTitle"><svg class="icon"><use href="#icon-book-open"></use></svg>选择学习模式</h2>
             <p class="subtitle" id="modeSelectionSubtitle">请先选择上方的词库，然后选择学习模式</p>
             
             <div class="mode-buttons" id="vocabModeButtons">
               <button class="mode-btn" id="multipleChoiceBtn" disabled>
-                <span class="mode-icon">✏️</span>
+                <span class="mode-icon"><svg class="icon"><use href="#icon-grid"></use></svg></span>
                 <span class="mode-name">选择题模式</span>
                 <span class="mode-desc">看意大利语选英语翻译</span>
               </button>
 
               <button class="mode-btn" id="spellingBtn" disabled>
-                <span class="mode-icon">⌨️</span>
+                <span class="mode-icon"><svg class="icon"><use href="#icon-keyboard"></use></svg></span>
                 <span class="mode-name">拼写模式</span>
                 <span class="mode-desc">看英语拼写意大利语</span>
               </button>
 
               <button class="mode-btn" id="browseBtn" disabled>
-                <span class="mode-icon">📚</span>
+                <span class="mode-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
                 <span class="mode-name">浏览模式</span>
                 <span class="mode-desc">查看所有单词列表</span>
               </button>
@@ -172,19 +208,19 @@
 
             <div class="mode-buttons hidden" id="conjugationModeButtons">
               <button class="mode-btn" id="conjModeMcqBtn">
-                <span class="mode-icon">🧩</span>
+                <span class="mode-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
                 <span class="mode-name">选择题</span>
                 <span class="mode-desc">四选一选择正确变位</span>
               </button>
 
               <button class="mode-btn" id="conjModeTypingBtn">
-                <span class="mode-icon">⌨️</span>
+                <span class="mode-icon"><svg class="icon"><use href="#icon-keyboard"></use></svg></span>
                 <span class="mode-name">填空题</span>
                 <span class="mode-desc">输入当前题目的正确变位</span>
               </button>
 
               <button class="mode-btn" id="conjModeFullBtn">
-                <span class="mode-icon">📝</span>
+                <span class="mode-icon"><svg class="icon"><use href="#icon-pen"></use></svg></span>
                 <span class="mode-name">完整填空</span>
                 <span class="mode-desc">连续填空训练（完整模式）</span>
               </button>
@@ -211,7 +247,7 @@
               <p class="question-label">意大利语单词：</p>
               <h2 class="italian-word" id="mcItalianWord">-</h2>
               <button class="hint-btn hidden" id="mcShowHintBtn" onclick="MultipleChoice.showHint()">
-                💡 显示提示
+                <svg class="icon"><use href="#icon-help"></use></svg>显示提示
               </button>
               <p class="chinese-hint hidden" id="mcChineseHint"></p>
             </div>
@@ -250,7 +286,7 @@
               <h2 class="english-word" id="spEnglishWord">-</h2>
               <p class="chinese-hint hidden" id="spChineseHint"></p>
               <button class="pronunciation-btn" id="spPronunciationBtn" title="点击朗读意大利语发音">
-                🔊 听发音
+                <svg class="icon"><use href="#icon-volume"></use></svg>听发音
               </button>
             </div>
 
@@ -283,7 +319,7 @@
               type="text" 
               class="search-input" 
               id="searchInput" 
-              placeholder="🔍 搜索单词或翻译..."
+              placeholder="搜索单词或翻译..."
             >
             <button class="filter-btn" id="filterBtn">
               <span id="filterText">全部</span> ▼
@@ -360,27 +396,27 @@
     <!-- 左侧工具栏 -->
     <aside class="sidebar">
       <button class="sidebar-btn" id="exportDataBtn" title="导出数据">
-        <span class="sidebar-icon">📤</span>
+        <span class="sidebar-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
         <span class="sidebar-label">导出数据</span>
       </button>
       <button class="sidebar-btn" id="importDataBtn" title="导入数据">
-        <span class="sidebar-icon">📥</span>
+        <span class="sidebar-icon"><svg class="icon"><use href="#icon-download"></use></svg></span>
         <span class="sidebar-label">导入数据</span>
       </button>
       <button class="sidebar-btn" id="resetBtn" title="重置进度">
-        <span class="sidebar-icon">🔄</span>
+        <span class="sidebar-icon"><svg class="icon"><use href="#icon-reset"></use></svg></span>
         <span class="sidebar-label">重置进度</span>
       </button>
       <button class="sidebar-btn" id="statsBtn" title="查看统计">
-        <span class="sidebar-icon">📊</span>
+        <span class="sidebar-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
         <span class="sidebar-label">查看统计</span>
       </button>
       <button class="sidebar-btn" id="themeBtn" title="切换主题">
-        <span class="sidebar-icon">🌓</span>
+        <span class="sidebar-icon"><svg class="icon"><use href="#icon-theme"></use></svg></span>
         <span class="sidebar-label">切换主题</span>
       </button>
       <button class="sidebar-btn" id="helpBtn" title="使用说明">
-        <span class="sidebar-icon">📖</span>
+        <span class="sidebar-icon"><svg class="icon"><use href="#icon-help"></use></svg></span>
         <span class="sidebar-label">使用说明</span>
       </button>
     </aside>
@@ -391,7 +427,7 @@
   <div id="statsModal" class="modal hidden">
     <div class="modal-content">
       <div class="modal-header">
-        <h3>📊 学习统计</h3>
+        <h3><svg class="icon"><use href="#icon-chart"></use></svg>学习统计</h3>
         <button class="close-btn" id="closeStatsBtn">×</button>
       </div>
       <div class="modal-body">
@@ -427,26 +463,26 @@
   <div id="wordbookEditorModal" class="modal hidden">
     <div class="modal-content editor-modal-content">
       <div class="modal-header">
-        <h3>📝 编辑单词本: <span id="editorWordbookName"></span></h3>
+        <h3><svg class="icon"><use href="#icon-pen"></use></svg>编辑单词本: <span id="editorWordbookName"></span></h3>
         <button class="close-btn" onclick="WordbookEditor.hideEditorModal()">×</button>
       </div>
       <div class="modal-body editor-modal-body">
         <div class="editor-toolbar">
           <div style="display: flex; gap: 0.5rem;">
             <button class="editor-toolbar-btn" onclick="WordbookEditor.addNewWord()">
-              ➕ 添加单词
+              <svg class="icon"><use href="#icon-plus"></use></svg>添加单词
             </button>
             <button class="editor-toolbar-btn" onclick="WordbookEditor.batchImportWords()">
-              📥 批量添加新单词
+              <svg class="icon"><use href="#icon-download"></use></svg>批量添加新单词
             </button>
             <button class="editor-toolbar-btn" onclick="WordbookEditor.showExportDialog(WordbookEditor.currentEditingWordbook.id)" title="导出单词本">
-              📤 导出
+              <svg class="icon"><use href="#icon-upload"></use></svg>导出
             </button>
           </div>
           <input type="file" id="editorBatchImportInput" accept=".txt" style="display: none;">
           <div class="editor-batch-actions" style="display: none;">
             <button class="editor-toolbar-btn danger" onclick="WordbookEditor.batchDelete()">
-              🗑️ 删除选中
+              <svg class="icon"><use href="#icon-trash"></use></svg>删除选中
             </button>
           </div>
         </div>
@@ -495,7 +531,7 @@
   <div id="wordbookSelectDialog" class="modal hidden">
     <div class="modal-content" style="max-width: 500px;">
       <div class="modal-header">
-        <h3>📚 选择单词本</h3>
+        <h3><svg class="icon"><use href="#icon-book-open"></use></svg>选择单词本</h3>
         <button class="close-btn" onclick="WordbookEditor.hideWordbookSelectDialog()">×</button>
       </div>
       <div class="modal-body">
@@ -511,7 +547,7 @@
   <div id="enhancedStatsModal" class="modal hidden">
     <div class="modal-content enhanced-stats-modal">
       <div class="modal-header">
-        <h3>📊 学习统计</h3>
+        <h3><svg class="icon"><use href="#icon-chart"></use></svg>学习统计</h3>
         <button class="close-btn" onclick="hideEnhancedStatsModal()">×</button>
       </div>
       <div class="modal-body enhanced-stats-body">
@@ -531,7 +567,7 @@
         <!-- 概览标签页 -->
         <div id="overviewTab" class="stats-tab-content active">
           <div class="stats-section">
-            <h4>📈 今日统计</h4>
+            <h4><svg class="icon"><use href="#icon-chart"></use></svg>今日统计</h4>
             <div class="stats-grid">
               <div class="stat-card">
                 <div class="stat-card-label">学习单词</div>
@@ -549,7 +585,7 @@
           </div>
 
           <div class="stats-section">
-            <h4>🏆 总计统计</h4>
+            <h4><svg class="icon"><use href="#icon-check-circle"></use></svg>总计统计</h4>
             <div class="stats-grid">
               <div class="stat-card">
                 <div class="stat-card-label">累计学习单词</div>
@@ -588,7 +624,7 @@
 
         <!-- 历史记录标签页 -->
         <div id="historyTab" class="stats-tab-content">
-          <h4>📅 最近 7 天学习记录</h4>
+          <h4><svg class="icon"><use href="#icon-calendar"></use></svg>最近 7 天学习记录</h4>
           <div class="stats-table-container">
             <table class="stats-table">
               <thead>
@@ -617,7 +653,7 @@
   <div id="communityUploadModal" class="modal hidden">
     <div class="modal-content" style="max-width: 600px;">
       <div class="modal-header">
-        <h3>⬆️ 上传词本到社区</h3>
+        <h3><svg class="icon"><use href="#icon-upload"></use></svg>上传词本到社区</h3>
         <button class="close-btn" onclick="CommunityWordbooks.hideUploadDialog()">×</button>
       </div>
       <div class="modal-body">
@@ -635,9 +671,9 @@
           <div class="form-group">
             <label for="uploadDifficulty">难度级别 *</label>
             <select id="uploadDifficulty" class="form-input" required>
-              <option value="Beginner">🌱 初级 (Beginner)</option>
-              <option value="Intermediate">🌿 中级 (Intermediate)</option>
-              <option value="Advanced">🌳 高级 (Advanced)</option>
+              <option value="Beginner">初级 (Beginner)</option>
+              <option value="Intermediate">中级 (Intermediate)</option>
+              <option value="Advanced">高级 (Advanced)</option>
             </select>
           </div>
           
@@ -666,14 +702,14 @@
             <label for="uploadFileInput">选择文件 * (JSON/TXT, 最大5MB)</label>
             <input type="file" id="uploadFileInput" accept=".json,.txt" style="display: none;" onchange="CommunityWordbooks.selectFile()">
             <button type="button" class="form-btn" onclick="document.getElementById('uploadFileInput').click()">
-              📎 选择文件
+              <svg class="icon"><use href="#icon-upload"></use></svg>选择文件
             </button>
             <span id="uploadFileName" style="margin-left: 1rem; color: var(--text-secondary);">未选择文件</span>
           </div>
           
           <div class="form-actions">
             <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hideUploadDialog()">取消</button>
-            <button type="submit" class="form-btn primary" id="uploadWordbookBtn">🚀 上传到社区</button>
+            <button type="submit" class="form-btn primary" id="uploadWordbookBtn"><svg class="icon"><use href="#icon-upload"></use></svg>上传到社区</button>
           </div>
         </form>
       </div>
@@ -689,14 +725,14 @@
           type="text" 
           class="search-input" 
           id="communitySearchInput" 
-          placeholder="🔍 搜索词本名称..."
+          placeholder="搜索词本名称..."
           oninput="CommunityWordbooks.searchWordbooks(this.value)"
         >
         <select class="filter-select" onchange="CommunityWordbooks.updateDifficultyFilter(this.value)">
           <option value="all">全部难度</option>
-          <option value="Beginner">🌱 初级</option>
-          <option value="Intermediate">🌿 中级</option>
-          <option value="Advanced">🌳 高级</option>
+          <option value="Beginner">初级</option>
+          <option value="Intermediate">中级</option>
+          <option value="Advanced">高级</option>
         </select>
       </div>
       
@@ -710,7 +746,7 @@
   <div id="communityPreviewModal" class="modal hidden">
     <div class="modal-content" style="max-width: 700px;">
       <div class="modal-header">
-        <h3>👁️ 预览: <span id="previewWordbookTitle"></span></h3>
+        <h3><svg class="icon"><use href="#icon-eye"></use></svg>预览: <span id="previewWordbookTitle"></span></h3>
         <button class="close-btn" onclick="CommunityWordbooks.hidePreviewModal()">×</button>
       </div>
       <div class="modal-body">
@@ -718,7 +754,7 @@
         <div id="previewWordList" class="preview-word-list"></div>
         <div class="form-actions">
           <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hidePreviewModal()">关闭</button>
-          <button type="button" class="form-btn primary" id="previewDownloadBtn">📥 导入学习</button>
+          <button type="button" class="form-btn primary" id="previewDownloadBtn"><svg class="icon"><use href="#icon-download"></use></svg>导入学习</button>
         </div>
       </div>
     </div>
@@ -728,36 +764,36 @@
   <div id="helpModal" class="modal hidden">
     <div class="modal-content help-modal-content">
       <div class="modal-header">
-        <h3>📖 使用说明</h3>
+        <h3><svg class="icon"><use href="#icon-help"></use></svg>使用说明</h3>
         <button class="close-btn" id="closeHelpBtn">×</button>
       </div>
       <div class="modal-body help-modal-body">
         <div class="help-section">
-          <h2>🇮🇹 Dimenticato - 意大利语背单词应用</h2>
+          <h2><svg class="icon"><use href="#icon-brand"></use></svg>Dimenticato - 意大利语背单词应用</h2>
           <p class="help-intro">一个纯静态的意大利语词汇学习网页应用，支持本地离线使用。</p>
         </div>
 
         <div class="help-section">
-          <h3>✨ 功能特点</h3>
+          <h3><svg class="icon"><use href="#icon-spark"></use></svg>功能特点</h3>
           
           <div class="feature-box">
-            <h4>📚 系统词汇库</h4>
+            <h4><svg class="icon"><use href="#icon-library"></use></svg>系统词汇库</h4>
             <ul>
               <li><strong>28,787</strong> 个意大利语单词及英语翻译</li>
               <li>按使用频率排序（从最常用到最少用）</li>
               <li>四个难度级别：
                 <ul>
-                  <li>🌱 初级：1,000 个高频词</li>
-                  <li>🌿 中级：3,000 个常用词</li>
-                  <li>🌳 高级：5,000 个词汇</li>
-                  <li>🌲 全部：28,787 个完整词库</li>
+                  <li>初级：1,000 个高频词</li>
+                  <li>中级：3,000 个常用词</li>
+                  <li>高级：5,000 个词汇</li>
+                  <li>全部：28,787 个完整词库</li>
                 </ul>
               </li>
             </ul>
           </div>
 
           <div class="feature-box">
-            <h4>📝 自定义单词本</h4>
+            <h4><svg class="icon"><use href="#icon-pen"></use></svg>自定义单词本</h4>
             <ul>
               <li><strong>导入自己的单词本</strong> - 支持 JSON 和 TXT 两种格式</li>
               <li><strong>独立进度跟踪</strong> - 每个单词本的学习进度独立保存</li>
@@ -767,7 +803,7 @@
           </div>
 
           <div class="feature-box highlight">
-            <h4>📄 TXT 格式 - 超简单的记笔记方式！</h4>
+            <h4><svg class="icon"><use href="#icon-book-open"></use></svg>TXT 格式 - 超简单的记笔记方式</h4>
             <p>不需要处理复杂的 JSON 语法，用记事本就能创建单词本！</p>
             
             <p><strong>基本规则：</strong></p>
@@ -805,10 +841,10 @@ love
 
             <p><strong>优势：</strong></p>
             <ul>
-              <li>✏️ 用任何文本编辑器都能编辑</li>
-              <li>🚀 快速记录，不用考虑语法</li>
-              <li>💾 纯文本，方便备份和版本控制</li>
-              <li>📝 想加笔记就加，不加也行</li>
+              <li>用任何文本编辑器都能编辑</li>
+              <li>快速记录，不用考虑语法</li>
+              <li>纯文本，方便备份和版本控制</li>
+              <li>想加笔记就加，不加也行</li>
             </ul>
 
             <p><strong>使用方法：</strong></p>
@@ -821,26 +857,26 @@ love
           </div>
 
           <div class="feature-box">
-            <h4>🎯 学习模式</h4>
+            <h4><svg class="icon"><use href="#icon-grid"></use></svg>学习模式</h4>
             <ul>
-              <li><strong>✏️ 选择题模式</strong> - 显示意大利语单词，从4个选项中选择正确的英语翻译
+              <li><strong>选择题模式</strong> - 显示意大利语单词，从4个选项中选择正确的英语翻译
                 <ul>
-                  <li>💡 中文提示默认隐藏，需要时点击"显示提示"按钮查看</li>
+                  <li>中文提示默认隐藏，需要时点击“显示提示”按钮查看</li>
                   <li>避免直接给出答案，提高学习效果</li>
                 </ul>
               </li>
-              <li><strong>⌨️ 拼写模式</strong> - 显示英语翻译，输入意大利语单词
+              <li><strong>拼写模式</strong> - 显示英语翻译，输入意大利语单词
                 <ul>
                   <li>中文提示默认显示，帮助理解单词含义</li>
                 </ul>
               </li>
-              <li><strong>📖 浏览模式</strong> - 查看完整单词列表，支持搜索和过滤</li>
+              <li><strong>浏览模式</strong> - 查看完整单词列表，支持搜索和过滤</li>
             </ul>
           </div>
         </div>
 
         <div class="help-section">
-          <h3>🚀 使用方法</h3>
+          <h3><svg class="icon"><use href="#icon-check-circle"></use></svg>使用方法</h3>
           
           <div class="usage-box">
             <h4>使用系统词汇库：</h4>
@@ -862,23 +898,23 @@ love
             </ol>
           </div>
 
-          <p class="help-tip">💡 <strong>提示：</strong>顶部始终显示当前词汇量、已掌握数量和学习进度</p>
+          <p class="help-tip"><strong>提示：</strong>顶部始终显示当前词汇量、已掌握数量和学习进度</p>
         </div>
 
         <div class="help-section">
-          <h3>🌟 其他功能</h3>
+          <h3><svg class="icon"><use href="#icon-spark"></use></svg>其他功能</h3>
           
           <div class="feature-box">
-            <h4>📤 导出/导入学习记录</h4>
+            <h4><svg class="icon"><use href="#icon-upload"></use></svg>导出/导入学习记录</h4>
             <ul>
-              <li><strong>📤 导出数据</strong> - 将所有学习进度、统计数据、自定义单词本导出为 JSON 文件
+              <li><strong>导出数据</strong> - 将所有学习进度、统计数据、自定义单词本导出为 JSON 文件
                 <ul>
                   <li>包含系统词汇和自定义单词本的学习进度</li>
                   <li>包含每日统计和练习记录</li>
                   <li>文件名自动包含导出日期时间</li>
                 </ul>
               </li>
-              <li><strong>📥 导入数据</strong> - 从之前导出的 JSON 文件恢复学习记录
+              <li><strong>导入数据</strong> - 从之前导出的 JSON 文件恢复学习记录
                 <ul>
                   <li><strong>覆盖模式</strong>：清空现有数据，用导入数据完全替换</li>
                   <li><strong>合并模式</strong>：保留现有数据，将导入数据合并进来</li>
@@ -886,11 +922,11 @@ love
                 </ul>
               </li>
             </ul>
-            <p class="help-tip">💡 <strong>提示：</strong>建议定期导出数据备份，换设备时可以通过导入恢复学习进度！</p>
+            <p class="help-tip"><strong>提示：</strong>建议定期导出数据备份，换设备时可以通过导入恢复学习进度。</p>
           </div>
 
           <div class="feature-box">
-            <h4>📝 浏览模式高级功能</h4>
+            <h4><svg class="icon"><use href="#icon-search"></use></svg>浏览模式高级功能</h4>
             <ul>
               <li><strong>添加到单词本</strong> - 在浏览模式中，点击单词旁的"➕"按钮可将单词添加到自定义单词本
                 <ul>
@@ -904,14 +940,14 @@ love
           </div>
 
           <ul>
-            <li><strong>📊 查看统计</strong> - 查看学习数据和正确率</li>
-            <li><strong>🌓 切换主题</strong> - 在浅色和深色主题之间切换</li>
-            <li><strong>🔄 重置进度</strong> - 清除所有学习记录（需确认）</li>
+            <li><strong>查看统计</strong> - 查看学习数据和正确率</li>
+            <li><strong>切换主题</strong> - 在浅色和深色主题之间切换</li>
+            <li><strong>重置进度</strong> - 清除所有学习记录（需确认）</li>
           </ul>
         </div>
 
         <div class="help-section">
-          <p class="help-footer">祝学习愉快！Buono studio! 🇮🇹</p>
+          <p class="help-footer">祝学习愉快。Buono studio.</p>
         </div>
       </div>
     </div>

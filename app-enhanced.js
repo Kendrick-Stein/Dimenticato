@@ -369,10 +369,10 @@ const WordbookEditor = {
         </div>
         <div class="editor-word-actions">
           <button class="editor-action-btn edit" onclick="WordbookEditor.editWord(${index})" title="编辑">
-            ✏️
+            ${renderIcon('icon-pen')}
           </button>
           <button class="editor-action-btn delete" onclick="WordbookEditor.deleteWord(${index})" title="删除">
-            🗑️
+            ${renderIcon('icon-trash')}
           </button>
         </div>
       </div>
@@ -570,7 +570,7 @@ const WordbookEditor = {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
     
-    alert(`✅ 已导出"${wordbook.name}"为 JSON 格式！`);
+    alert(`已导出"${wordbook.name}"为 JSON 格式。`);
   },
   
   // 导出单词本为 TXT
@@ -613,7 +613,7 @@ const WordbookEditor = {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
     
-    alert(`✅ 已导出"${wordbook.name}"为 TXT 格式！`);
+    alert(`已导出"${wordbook.name}"为 TXT 格式。`);
   },
   
   // 显示导出选项对话框
@@ -622,7 +622,7 @@ const WordbookEditor = {
     if (!wordbook) return;
     
     const format = prompt(
-      `📤 导出单词本"${wordbook.name}"\n\n` +
+      `导出单词本"${wordbook.name}"\n\n` +
       `请选择导出格式：\n` +
       `1 - JSON 格式（可重新导入）\n` +
       `2 - TXT 格式（易于编辑）\n\n` +
@@ -728,19 +728,19 @@ const WordbookEditor = {
       }
       
       // 显示导入结果
-      let message = `✅ 批量导入完成！\n\n`;
-      message += `📥 成功添加: ${newWords.length} 个新单词\n`;
+      let message = `批量导入完成\n\n`;
+      message += `成功添加: ${newWords.length} 个新单词\n`;
       
       if (duplicates.length > 0) {
-        message += `⚠️ 跳过重复: ${duplicates.length} 个\n`;
+        message += `跳过重复: ${duplicates.length} 个\n`;
       }
       
       if (result.autoMatchedCount > 0) {
-        message += `\n🎯 自动匹配翻译: ${result.autoMatchedCount} 个\n`;
+        message += `\n自动匹配翻译: ${result.autoMatchedCount} 个\n`;
       }
       
       if (result.needManualCount > 0) {
-        message += `📝 未找到翻译: ${result.needManualCount} 个\n`;
+        message += `未找到翻译: ${result.needManualCount} 个\n`;
       }
       
       message += `\n当前单词本总数: ${this.currentEditingWordbook.wordCount} 个`;
@@ -778,7 +778,7 @@ const WordbookEditor = {
     const list = document.getElementById('wordbookSelectList');
     list.innerHTML = AppState.customWordbooks.map(wb => `
       <div class="wordbook-select-item" onclick="WordbookEditor.addWordToSpecificWordbook(WordbookEditor.currentWordToAdd, ${wb.id})">
-        <span class="wordbook-select-icon">📖</span>
+        <span class="wordbook-select-icon">${renderIcon('icon-book-open')}</span>
         <div class="wordbook-select-info">
           <div class="wordbook-select-name">${wb.name}</div>
           <div class="wordbook-select-count">${wb.wordCount} 词</div>
@@ -825,7 +825,7 @@ const WordbookEditor = {
     wordbook.wordCount = wordbook.words.length;
     WordbookManager.saveWordbooks();
     
-    alert(`✅ 已添加到单词本"${wordbook.name}"！`);
+    alert(`已添加到单词本"${wordbook.name}"。`);
     this.hideWordbookSelectDialog();
   }
 };
@@ -873,7 +873,7 @@ const BrowseEnhanced = {
         <div class="word-item ${isMastered ? 'mastered' : ''}" data-word-index="${index}" data-italian="${word.italian}">
           <div class="word-item-left">
             <div class="editor-word-main">
-              <span class="word-italian">🔊 ${word.italian}</span>
+              <span class="word-italian">${renderIcon('icon-volume')} ${word.italian}</span>
               <span class="word-english">${word.english}</span>
             </div>
             ${word.chinese ? `<div class="word-chinese">${word.chinese}</div>` : ''}
@@ -888,11 +888,11 @@ const BrowseEnhanced = {
             <div class="word-actions">
               ${!isCustomWordbook ? `
                 <button class="word-action-btn bookmark-btn" title="收藏到单词本">
-                  📌
+                  ${renderIcon('icon-pin')}
                 </button>
               ` : `
                 <button class="word-action-btn edit-btn" title="编辑">
-                  ✏️
+                  ${renderIcon('icon-pen')}
                 </button>
               `}
             </div>

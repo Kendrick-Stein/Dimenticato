@@ -76,7 +76,7 @@ const CommunityWordbooks = {
     const fileExt = file.name.substring(file.name.lastIndexOf('.')).toLowerCase();
     
     if (!validTypes.includes(fileExt)) {
-      alert('❌ 请选择 JSON 或 TXT 格式的文件');
+      alert('请选择 JSON 或 TXT 格式的文件');
       input.value = '';
       document.getElementById('uploadFileName').textContent = '未选择文件';
       return;
@@ -84,7 +84,7 @@ const CommunityWordbooks = {
     
     // 验证文件大小（5MB）
     if (file.size > STORAGE_CONFIG.maxFileSize) {
-      alert('❌ 文件大小不能超过 5MB');
+      alert('文件大小不能超过 5MB');
       input.value = '';
       document.getElementById('uploadFileName').textContent = '未选择文件';
       return;
@@ -112,17 +112,17 @@ const CommunityWordbooks = {
       
       // 验证必填字段
       if (!name) {
-        alert('❌ 请输入词本名称');
+        alert('请输入词本名称');
         return;
       }
       
       if (!authorName) {
-        alert('❌ 请输入作者名');
+        alert('请输入作者名');
         return;
       }
       
       if (!file) {
-        alert('❌ 请选择要上传的文件');
+        alert('请选择要上传的文件');
         return;
       }
       
@@ -148,14 +148,14 @@ const CommunityWordbooks = {
           wordCount = parsedWords.length;
         }
       } catch (error) {
-        alert('❌ 文件格式错误: ' + error.message);
+        alert('文件格式错误: ' + error.message);
         uploadBtn.disabled = false;
         uploadBtn.textContent = originalText;
         return;
       }
       
       if (wordCount === 0) {
-        alert('❌ 文件中没有找到有效的单词');
+        alert('文件中没有找到有效的单词');
         uploadBtn.disabled = false;
         uploadBtn.textContent = originalText;
         return;
@@ -164,7 +164,7 @@ const CommunityWordbooks = {
       // 3. 上传文件到 Supabase Storage
       const client = getSupabaseClient();
       if (!client) {
-        alert('❌ Supabase 客户端未初始化');
+        alert('Supabase 客户端未初始化');
         uploadBtn.disabled = false;
         uploadBtn.textContent = originalText;
         return;
@@ -183,7 +183,7 @@ const CommunityWordbooks = {
       
       if (uploadError) {
         console.error('文件上传失败:', uploadError);
-        alert('❌ 文件上传失败: ' + uploadError.message);
+        alert('文件上传失败: ' + uploadError.message);
         uploadBtn.disabled = false;
         uploadBtn.textContent = originalText;
         return;
@@ -214,14 +214,14 @@ const CommunityWordbooks = {
       
       if (insertError) {
         console.error('数据库插入失败:', insertError);
-        alert('❌ 保存失败: ' + insertError.message);
+        alert('保存失败: ' + insertError.message);
         uploadBtn.disabled = false;
         uploadBtn.textContent = originalText;
         return;
       }
       
       // 6. 上传成功
-      alert(`✅ 上传成功！\n\n词本名称: ${name}\n单词数量: ${wordCount}\n感谢你的分享！`);
+      alert(`上传成功\n\n词本名称: ${name}\n单词数量: ${wordCount}\n感谢你的分享。`);
       
       // 重置按钮
       uploadBtn.disabled = false;
@@ -238,11 +238,11 @@ const CommunityWordbooks = {
       
     } catch (error) {
       console.error('上传词本失败:', error);
-      alert('❌ 上传失败: ' + error.message);
+      alert('上传失败: ' + error.message);
       
       const uploadBtn = document.getElementById('uploadWordbookBtn');
       uploadBtn.disabled = false;
-      uploadBtn.textContent = '🚀 上传到社区';
+      uploadBtn.textContent = '上传到社区';
     }
   },
   
@@ -291,7 +291,7 @@ const CommunityWordbooks = {
       
       const client = getSupabaseClient();
       if (!client) {
-        container.innerHTML = '<div class="error-message">❌ Supabase 客户端未初始化</div>';
+        container.innerHTML = '<div class="error-message">Supabase 客户端未初始化</div>';
         return;
       }
       
@@ -328,7 +328,7 @@ const CommunityWordbooks = {
       
       if (error) {
         console.error('获取词本列表失败:', error);
-        container.innerHTML = '<div class="error-message">❌ 加载失败: ' + error.message + '</div>';
+        container.innerHTML = '<div class="error-message">加载失败: ' + error.message + '</div>';
         return;
       }
       
@@ -338,7 +338,7 @@ const CommunityWordbooks = {
     } catch (error) {
       console.error('获取词本列表失败:', error);
       const container = document.getElementById('communityWordbookList');
-      container.innerHTML = '<div class="error-message">❌ 加载失败: ' + error.message + '</div>';
+      container.innerHTML = '<div class="error-message">加载失败: ' + error.message + '</div>';
     }
   },
   
@@ -351,7 +351,7 @@ const CommunityWordbooks = {
     if (!wordbooks || wordbooks.length === 0) {
       container.innerHTML = `
         <div class="empty-message">
-          <div class="empty-icon">📚</div>
+          <div class="empty-icon">${renderIcon('icon-library')}</div>
           <p>还没有社区词本</p>
           <p style="font-size: 0.9rem; margin-top: 0.5rem;">成为第一个分享者吧！</p>
         </div>
@@ -360,7 +360,7 @@ const CommunityWordbooks = {
     }
     
     container.innerHTML = wordbooks.map(wb => {
-      const difficultyInfo = DIFFICULTY_LEVELS[wb.difficulty] || { label: wb.difficulty, icon: '📖' };
+      const difficultyInfo = DIFFICULTY_LEVELS[wb.difficulty] || { label: wb.difficulty, icon: 'icon-book-open' };
       const tagsHtml = wb.tags && wb.tags.length > 0
         ? wb.tags.map(tag => `<span class="wordbook-tag">${tag}</span>`).join('')
         : '';
@@ -369,13 +369,13 @@ const CommunityWordbooks = {
         <div class="community-wordbook-card">
           <div class="wordbook-card-header">
             <h3 class="wordbook-card-title">${wb.name}</h3>
-            <span class="wordbook-difficulty-badge">${difficultyInfo.icon} ${difficultyInfo.label}</span>
+            <span class="wordbook-difficulty-badge">${renderIcon(difficultyInfo.icon)} ${difficultyInfo.label}</span>
           </div>
           
           <div class="wordbook-card-meta">
-            <span>👤 ${wb.author_name}</span>
-            <span>📝 ${wb.word_count} 词</span>
-            <span>⬇️ ${wb.download_count} 次下载</span>
+            <span>${renderIcon('icon-help')} ${wb.author_name}</span>
+            <span>${renderIcon('icon-pen')} ${wb.word_count} 词</span>
+            <span>${renderIcon('icon-download')} ${wb.download_count} 次下载</span>
           </div>
           
           ${tagsHtml ? `<div class="wordbook-card-tags">${tagsHtml}</div>` : ''}
@@ -384,10 +384,10 @@ const CommunityWordbooks = {
           
           <div class="wordbook-card-actions">
             <button class="wordbook-action-btn preview" onclick="CommunityWordbooks.previewWordbook('${wb.id}')">
-              👁️ 预览
+              ${renderIcon('icon-eye')} 预览
             </button>
             <button class="wordbook-action-btn download" onclick="CommunityWordbooks.downloadWordbook('${wb.id}')">
-              📥 导入学习
+              ${renderIcon('icon-download')} 导入学习
             </button>
           </div>
         </div>
@@ -441,7 +441,7 @@ const CommunityWordbooks = {
     try {
       const client = getSupabaseClient();
       if (!client) {
-        alert('❌ Supabase 客户端未初始化');
+        alert('Supabase 客户端未初始化');
         return;
       }
       
@@ -453,14 +453,14 @@ const CommunityWordbooks = {
         .single();
       
       if (fetchError || !wordbook) {
-        alert('❌ 获取词本信息失败');
+        alert('获取词本信息失败');
         return;
       }
       
       // 2. 下载文件内容
       const response = await fetch(wordbook.file_url);
       if (!response.ok) {
-        alert('❌ 下载文件失败');
+        alert('下载文件失败');
         return;
       }
       
@@ -477,7 +477,7 @@ const CommunityWordbooks = {
           words = parseResult.words;
         }
       } catch (error) {
-        alert('❌ 解析文件失败: ' + error.message);
+        alert('解析文件失败: ' + error.message);
         return;
       }
       
@@ -504,7 +504,7 @@ const CommunityWordbooks = {
         .eq('id', wordbookId);
       
       // 7. 成功提示
-      alert(`✅ 导入成功！\n\n"${wordbook.name}" 已添加到你的单词本列表。\n\n返回主页即可开始学习！`);
+      alert(`导入成功\n\n"${wordbook.name}" 已添加到你的单词本列表。\n\n返回主页即可开始学习。`);
       
       // 8. 刷新列表（更新下载次数）
       this.fetchAndDisplayWordbooks();
@@ -514,7 +514,7 @@ const CommunityWordbooks = {
       
     } catch (error) {
       console.error('下载词本失败:', error);
-      alert('❌ 下载失败: ' + error.message);
+      alert('下载失败: ' + error.message);
     }
   },
   
@@ -525,7 +525,7 @@ const CommunityWordbooks = {
     try {
       const client = getSupabaseClient();
       if (!client) {
-        alert('❌ Supabase 客户端未初始化');
+        alert('Supabase 客户端未初始化');
         return;
       }
       
@@ -537,14 +537,14 @@ const CommunityWordbooks = {
         .single();
       
       if (fetchError || !wordbook) {
-        alert('❌ 获取词本信息失败');
+        alert('获取词本信息失败');
         return;
       }
       
       // 2. 下载文件内容
       const response = await fetch(wordbook.file_url);
       if (!response.ok) {
-        alert('❌ 下载文件失败');
+        alert('下载文件失败');
         return;
       }
       
@@ -561,7 +561,7 @@ const CommunityWordbooks = {
           words = parseResult.words;
         }
       } catch (error) {
-        alert('❌ 解析文件失败: ' + error.message);
+        alert('解析文件失败: ' + error.message);
         return;
       }
       
@@ -570,7 +570,7 @@ const CommunityWordbooks = {
       
     } catch (error) {
       console.error('预览词本失败:', error);
-      alert('❌ 预览失败: ' + error.message);
+      alert('预览失败: ' + error.message);
     }
   },
   
@@ -581,7 +581,7 @@ const CommunityWordbooks = {
     const modal = document.getElementById('communityPreviewModal');
     if (!modal) return;
     
-    const difficultyInfo = DIFFICULTY_LEVELS[wordbook.difficulty] || { label: wordbook.difficulty, icon: '📖' };
+    const difficultyInfo = DIFFICULTY_LEVELS[wordbook.difficulty] || { label: wordbook.difficulty, icon: 'icon-book-open' };
     
     // 设置标题
     document.getElementById('previewWordbookTitle').textContent = wordbook.name;
@@ -589,10 +589,10 @@ const CommunityWordbooks = {
     // 设置元信息
     const metaHtml = `
       <div class="preview-meta">
-        <span>👤 作者: ${wordbook.author_name}</span>
-        <span>${difficultyInfo.icon} ${difficultyInfo.label}</span>
-        <span>📝 ${wordbook.word_count} 词</span>
-        <span>⬇️ ${wordbook.download_count} 次下载</span>
+        <span>${renderIcon('icon-help')} 作者: ${wordbook.author_name}</span>
+        <span>${renderIcon(difficultyInfo.icon)} ${difficultyInfo.label}</span>
+        <span>${renderIcon('icon-pen')} ${wordbook.word_count} 词</span>
+        <span>${renderIcon('icon-download')} ${wordbook.download_count} 次下载</span>
       </div>
       ${wordbook.tags && wordbook.tags.length > 0 ? `
         <div class="preview-tags">
