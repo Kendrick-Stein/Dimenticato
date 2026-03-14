@@ -238,29 +238,42 @@
     updateLessonUI();
   }
 
-  function renderTenseButtons() {
-    const wrap = document.getElementById('conjTenseButtons');
-    if (!wrap) return;
+  const MOOD_LABELS = {
+    indicativo: '直陈式',
+    condizionale: '条件式',
+    congiuntivo: '虚拟式'
+  };
 
-    const tenseList = getSortedTenseMeta();
+  const TIME_LABELS = {
+    present: '现在',
+    past: '过去',
+    future: '将来'
+  };
 
-    const matrixBuckets = {
+  function isMobileLayout() {
+    return window.innerWidth <= 640;
+  }
+
+  function buildMatrixBuckets(tenseList) {
+    const buckets = {
       indicativo: { present: [], past: [], future: [] },
       condizionale: { present: [], past: [], future: [] },
       congiuntivo: { present: [], past: [], future: [] }
     };
     const extras = [];
-
     tenseList.forEach(meta => {
       const mood = getMoodBucket(meta);
       const time = getTimeBucket(meta);
-      if (matrixBuckets[mood] && matrixBuckets[mood][time]) {
-        matrixBuckets[mood][time].push(meta);
+      if (buckets[mood] && buckets[mood][time]) {
+        buckets[mood][time].push(meta);
       } else {
         extras.push(meta);
       }
     });
+    return { buckets, extras };
+  }
 
+  function renderMatrixDesktop(wrap, buckets, extras) {
     const buildCell = (arr) => {
       if (!arr.length) return '<div class="conj-matrix-empty">—</div>';
       return arr.map(buildTenseButton).join('');
@@ -274,19 +287,19 @@
         <div class="conj-matrix-head">将来</div>
 
         <div class="conj-matrix-row-label">直陈式</div>
-        <div class="conj-matrix-cell">${buildCell(matrixBuckets.indicativo.present)}</div>
-        <div class="conj-matrix-cell">${buildCell(matrixBuckets.indicativo.past)}</div>
-        <div class="conj-matrix-cell">${buildCell(matrixBuckets.indicativo.future)}</div>
+        <div class="conj-matrix-cell">${buildCell(buckets.indicativo.present)}</div>
+        <div class="conj-matrix-cell">${buildCell(buckets.indicativo.past)}</div>
+        <div class="conj-matrix-cell">${buildCell(buckets.indicativo.future)}</div>
 
         <div class="conj-matrix-row-label">条件式</div>
-        <div class="conj-matrix-cell">${buildCell(matrixBuckets.condizionale.present)}</div>
-        <div class="conj-matrix-cell">${buildCell(matrixBuckets.condizionale.past)}</div>
-        <div class="conj-matrix-cell">${buildCell(matrixBuckets.condizionale.future)}</div>
+        <div class="conj-matrix-cell">${buildCell(buckets.condizionale.present)}</div>
+        <div class="conj-matrix-cell">${buildCell(buckets.condizionale.past)}</div>
+        <div class="conj-matrix-cell">${buildCell(buckets.condizionale.future)}</div>
 
         <div class="conj-matrix-row-label">虚拟式</div>
-        <div class="conj-matrix-cell">${buildCell(matrixBuckets.congiuntivo.present)}</div>
-        <div class="conj-matrix-cell">${buildCell(matrixBuckets.congiuntivo.past)}</div>
-        <div class="conj-matrix-cell">${buildCell(matrixBuckets.congiuntivo.future)}</div>
+        <div class="conj-matrix-cell">${buildCell(buckets.congiuntivo.present)}</div>
+        <div class="conj-matrix-cell">${buildCell(buckets.congiuntivo.past)}</div>
+        <div class="conj-matrix-cell">${buildCell(buckets.congiuntivo.future)}</div>
       </div>
       ${extras.length ? `
         <div class="conj-extra-tenses">
@@ -297,11 +310,79 @@
         </div>
       ` : ''}
     `;
+  }
+
+  function renderMatrixMobile(wrap, buckets, extras) {
+    const moods = ['indicativo', 'condizionale', 'congiuntivo'];
+    const times = ['present', 'past', 'future'];
+
+    const moodSections = moods.map(mood => {
+      const timeSections = times.map(time => {
+        const arr = buckets[mood][time];
+        if (!arr.length) return '';
+        return `
+          <div class="conj-mobile-time-group">
+            <span class="conj-mobile-time-label">${TIME_LABELS[time]}</span>
+            <div class="conj-mobile-time-btns">
+              ${arr.map(buildTenseButton).join('')}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      if (!timeSections.trim()) return '';
+
+      return `
+        <div class="conj-mobile-mood-section">
+          <div class="conj-mobile-mood-label">${MOOD_LABELS[mood]}</div>
+          <div class="conj-mobile-mood-body">${timeSections}</div>
+        </div>
+      `;
+    }).join('');
+
+    const extrasHtml = extras.length ? `
+      <div class="conj-mobile-mood-section">
+        <div class="conj-mobile-mood-label">其他时态</div>
+        <div class="conj-mobile-mood-body">
+          <div class="conj-mobile-time-group">
+            <div class="conj-mobile-time-btns">
+              ${extras.map(buildTenseButton).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    ` : '';
+
+    wrap.innerHTML = `<div class="conj-mobile-layout">${moodSections}${extrasHtml}</div>`;
+  }
+
+  function renderTenseButtons() {
+    const wrap = document.getElementById('conjTenseButtons');
+    if (!wrap) return;
+
+    const tenseList = getSortedTenseMeta();
+    const { buckets, extras } = buildMatrixBuckets(tenseList);
+
+    if (isMobileLayout()) {
+      renderMatrixMobile(wrap, buckets, extras);
+    } else {
+      renderMatrixDesktop(wrap, buckets, extras);
+    }
 
     wrap.querySelectorAll('.conj-tense-btn').forEach(btn => {
       btn.addEventListener('click', () => setSelectedTense(btn.dataset.tense));
     });
   }
+
+  // Re-render tense buttons on resize (debounced)
+  let _resizeTimer = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(_resizeTimer);
+    _resizeTimer = setTimeout(() => {
+      const wrap = document.getElementById('conjTenseButtons');
+      if (wrap && wrap.children.length) renderTenseButtons();
+    }, 180);
+  });
 
   function buildQueue() {
     const subset = getLessonSubset().words;

@@ -666,6 +666,82 @@ body {
   margin-top: 0.9rem;
 }
 
+/* ==================== 动词变位 — 移动端布局 ==================== */
+
+.conj-mobile-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.conj-mobile-mood-section {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.conj-mobile-mood-label {
+  padding: 0.6rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: rgba(85, 107, 96, 0.05);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.conj-mobile-mood-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.conj-mobile-time-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.conj-mobile-time-group:last-child {
+  border-bottom: none;
+}
+
+.conj-mobile-time-label {
+  flex-shrink: 0;
+  width: 2.4rem;
+  padding-top: 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+.conj-mobile-time-btns {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.conj-mobile-time-btns .conj-tense-btn {
+  flex: 1 1 auto;
+  min-width: 120px;
+  min-height: 64px;
+  padding: 0.6rem 0.75rem;
+  border-radius: 14px;
+}
+
+.conj-mobile-time-btns .conj-tense-btn .level-name {
+  font-size: 0.9rem;
+}
+
+.conj-mobile-time-btns .conj-tense-btn .level-count {
+  font-size: 0.74rem;
+}
+
 .community-wordbook-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
@@ -3765,6 +3841,64 @@ body {
   .preview-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Grammar setup toolbar: stack vertically */
+  .conj-module-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .conj-module-toolbar label {
+    justify-content: space-between;
+  }
+
+  .conj-module-toolbar select {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+  }
+
+  /* Lesson nav: stack prev/label/next vertically */
+  .conj-lesson-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .conj-lesson-status {
+    min-width: 0;
+    text-align: center;
+  }
+
+  /* Tense buttons in mobile layout: compact */
+  .conj-tense-btn {
+    min-height: 60px;
+  }
+
+  /* Mode buttons in conjugation setup: single column */
+  #conjugationModeButtons {
+    grid-template-columns: 1fr;
+  }
+
+  #conjugationModeButtons .mode-btn {
+    min-height: 100px;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 1rem;
+    padding: 1rem 1.1rem;
+  }
+
+  #conjugationModeButtons .mode-icon {
+    flex-shrink: 0;
+  }
+
+  #conjugationModeButtons .mode-desc {
+    text-align: left;
   }
 }
 
