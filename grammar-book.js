@@ -1,25 +1,23 @@
 /**
  * GrammarBook — 语法书阅读器
- * Fetches grammar_tree.json, builds sidebar nav, loads .md topic files via fetch,
- * renders with marked.js
+ * Uses embedded GRAMMAR_DATA (from data/grammar-data.js) instead of fetch()
+ * to avoid GitHub Pages issues with Chinese-character filenames.
  */
 const GrammarBook = (() => {
-  let tree = null;
   let initialized = false;
   let currentSlug = null;
 
-  async function init() {
+  function init() {
     if (initialized) return;
     initialized = true;
-    try {
-      const res = await fetch('data/grammar_tree.json');
-      if (!res.ok) throw new Error('Failed to load grammar_tree.json');
-      tree = await res.json();
-      buildNavTree(tree);
-    } catch (e) {
+
+    if (typeof GRAMMAR_DATA === 'undefined' || !GRAMMAR_DATA.tree) {
       document.getElementById('grammarNavTree').innerHTML =
-        '<p class="grammar-nav-error">目录加载失败：' + e.message + '</p>';
+        '<p class="grammar-nav-error">数据加载失败：GRAMMAR_DATA 未定义</p>';
+      return;
     }
+
+    buildNavTree(GRAMMAR_DATA.tree);
 
     document.getElementById('grammarSidebarToggle')
       ?.addEventListener('click', toggleSidebar);
@@ -30,7 +28,7 @@ const GrammarBook = (() => {
     if (!container) return;
     container.innerHTML = '';
 
-    (tree.parts || []).forEach((part, pi) => {
+    (tree.parts || []).forEach(part => {
       const partEl = document.createElement('div');
       partEl.className = 'grammar-part';
 
@@ -39,7 +37,7 @@ const GrammarBook = (() => {
       partHeading.textContent = part.title;
       partEl.appendChild(partHeading);
 
-      (part.chapters || []).forEach((ch, ci) => {
+      (part.chapters || []).forEach(ch => {
         const chapterEl = document.createElement('div');
         chapterEl.className = 'grammar-chapter';
 
@@ -78,7 +76,7 @@ const GrammarBook = (() => {
     });
   }
 
-  async function loadTopic(slug, title, partTitle, chapterTitle) {
+  function loadTopic(slug, title, partTitle, chapterTitle) {
     currentSlug = slug;
 
     // Update breadcrumb
@@ -99,30 +97,24 @@ const GrammarBook = (() => {
         list.classList.remove('collapsed');
         list.previousElementSibling?.classList.add('open');
       }
-      // Scroll sidebar to active link
       activeLink.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }
 
-    // Show loading state
     const body = document.getElementById('grammarContentBody');
-    if (body) body.innerHTML = '<div class="grammar-loading">加载中…</div>';
+    if (!body) return;
 
-    try {
-      const res = await fetch('data/grammar_content/' + slug + '.md');
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const text = await res.text();
-      if (body) {
-        body.innerHTML = '<div class="grammar-markdown">' + marked.parse(text) + '</div>';
-        body.scrollTop = 0;
-      }
-    } catch (e) {
-      if (body) body.innerHTML = '<div class="grammar-error">内容加载失败：' + e.message + '</div>';
+    const text = GRAMMAR_DATA.content[slug];
+    if (text === undefined) {
+      body.innerHTML = '<div class="grammar-error">内容未找到：' + escapeHtml(slug) + '</div>';
+      return;
     }
+
+    body.innerHTML = '<div class="grammar-markdown">' + marked.parse(text) + '</div>';
+    body.scrollTop = 0;
 
     // On mobile, close sidebar after selecting topic
     if (window.innerWidth < 768) {
-      const layout = document.querySelector('.grammar-book-layout');
-      layout?.classList.remove('sidebar-open');
+      document.querySelector('.grammar-book-layout')?.classList.remove('sidebar-open');
     }
   }
 
