@@ -148,6 +148,11 @@ const ScreenMeta = {
     topNav: 'grammarScreen',
     breadcrumb: ['Grammar', '动词变位', '练习中']
   },
+  grammarBookScreen: {
+    module: 'grammar',
+    topNav: 'grammarScreen',
+    breadcrumb: ['Grammar', '语法书']
+  },
   progressScreen: {
     module: 'progress',
     topNav: 'progressScreen',
@@ -1655,6 +1660,11 @@ function bindEvents() {
   document.getElementById('goProgressBtn')?.addEventListener('click', () => showScreen('progressScreen'));
   document.getElementById('goSettingsBtn')?.addEventListener('click', () => showScreen('settingsScreen'));
   document.getElementById('goConjugationSetupBtn')?.addEventListener('click', () => showScreen('conjugationSetupScreen'));
+  document.getElementById('goGrammarBookBtn')?.addEventListener('click', () => {
+    showScreen('grammarBookScreen');
+    if (typeof GrammarBook !== 'undefined') GrammarBook.init();
+  });
+  document.getElementById('grammarBookBackBtn')?.addEventListener('click', () => showScreen('grammarScreen'));
   document.getElementById('browseCommunityBtn')?.addEventListener('click', () => CommunityWordbooks.showBrowseScreen());
   document.getElementById('openProgressStatsBtn')?.addEventListener('click', () => {
     if (typeof showEnhancedStatsModal !== 'undefined') showEnhancedStatsModal();

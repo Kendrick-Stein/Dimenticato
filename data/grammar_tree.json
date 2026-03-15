@@ -1,0 +1,538 @@
+{
+  "parts": [
+    {
+      "title": "第一部分 词法（morfologia）",
+      "slug": "part1_morfologia",
+      "chapters": [
+        {
+          "title": "第一章 名词（sostantivo）",
+          "slug": "ch01",
+          "topics": [
+            {
+              "title": "1．名词的性（genere）",
+              "slug": "part1_morfologia/ch01/t01_名词的性"
+            },
+            {
+              "title": "2．名词的数（numero）",
+              "slug": "part1_morfologia/ch01/t02_名词的数"
+            }
+          ]
+        },
+        {
+          "title": "第二章 冠词（articolo）",
+          "slug": "ch02",
+          "topics": [
+            {
+              "title": "1．定冠词（articolo determinativo）",
+              "slug": "part1_morfologia/ch02/t01_定冠词"
+            },
+            {
+              "title": "2．不定冠词（articolo indeterminativo）",
+              "slug": "part1_morfologia/ch02/t02_不定冠词"
+            },
+            {
+              "title": "3．部分冠词（articolo partitivo）",
+              "slug": "part1_morfologia/ch02/t03_部分冠词"
+            },
+            {
+              "title": "4．介词与冠词的组合（preposizioni articolate）",
+              "slug": "part1_morfologia/ch02/t04_介词与冠"
+            }
+          ]
+        },
+        {
+          "title": "第三章 形容词（aggettivo）",
+          "slug": "ch03",
+          "topics": [
+            {
+              "title": "1．形容词的性、数变化（genere e numero dell'aggettivo）",
+              "slug": "part1_morfologia/ch03/t01_形容词的"
+            },
+            {
+              "title": "2．形容词的位置（collocazione dell'aggettivo）",
+              "slug": "part1_morfologia/ch03/t02_形容词的"
+            },
+            {
+              "title": "4．表示颜色的形容词的特殊用法（osservazioni su certi aggettivi che indicano colori)",
+              "slug": "part1_morfologia/ch03/t04_表示颜色"
+            },
+            {
+              "title": "5.grande,povero,buono等形容词的含义变化（mutamenti di significato in base alle diverse collocazioni degli aggettivi grande, povero, buono)",
+              "slug": "part1_morfologia/ch03/t05_等形容词"
+            }
+          ]
+        },
+        {
+          "title": "第四章 数词（numerale）",
+          "slug": "ch04",
+          "topics": [
+            {
+              "title": "1．基数词（numerali cardinali）",
+              "slug": "part1_morfologia/ch04/t01_基数词"
+            },
+            {
+              "title": "2．序数词（numerali ordinali）",
+              "slug": "part1_morfologia/ch04/t02_序数词"
+            },
+            {
+              "title": "3．分数与小数（frazioneefrazionedecimale）",
+              "slug": "part1_morfologia/ch04/t03_分数与小"
+            },
+            {
+              "title": "4．集合数词（numerali collettivi）",
+              "slug": "part1_morfologia/ch04/t04_集合数词"
+            }
+          ]
+        },
+        {
+          "title": "第五章 副词（avverbio）",
+          "slug": "ch05",
+          "topics": [
+            {
+              "title": "1．方式副词（avverbi di modo）",
+              "slug": "part1_morfologia/ch05/t01_方式副词"
+            },
+            {
+              "title": "2．时间副词（avverbi di tempo）",
+              "slug": "part1_morfologia/ch05/t02_时间副词"
+            },
+            {
+              "title": "3．地点副词（avverbi di luogo）",
+              "slug": "part1_morfologia/ch05/t03_地点副词"
+            },
+            {
+              "title": "4．数量副词（avverbi di quantità）",
+              "slug": "part1_morfologia/ch05/t04_数量副词"
+            },
+            {
+              "title": "5．副词的位置（collocazione degli avverbi）",
+              "slug": "part1_morfologia/ch05/t05_副词的位"
+            }
+          ]
+        },
+        {
+          "title": "第六章 人称代词（pronomi personali）",
+          "slug": "ch06",
+          "topics": [
+            {
+              "title": "1．主语代词（pronomi soggetto）",
+              "slug": "part1_morfologia/ch06/t01_主语代词"
+            },
+            {
+              "title": "2．重读代词（pronomi in forma tonica）",
+              "slug": "part1_morfologia/ch06/t02_重读代词"
+            },
+            {
+              "title": "3．非重读直接宾语代词（pronomi complemento oggetto in forma atona）",
+              "slug": "part1_morfologia/ch06/t03_非重读直"
+            },
+            {
+              "title": "5．组合代词（pronomi combinati）",
+              "slug": "part1_morfologia/ch06/t05_组合代词"
+            }
+          ]
+        },
+        {
+          "title": "第七章 小品词ci(vi）与ne，指示形容词与指示代词，物主形容词与物主代词，泛指形容词与泛指代词，连词（particelle ci[vi]e ne；aggettivi e pronomi dimostrativi; aggettivi e pronomi possessivi; aggettivi e pronomi indefiniti; congiunzioni)",
+          "slug": "ch07",
+          "topics": [
+            {
+              "title": "1．小品词ci(vi）与ne(particelle ci [vi] e ne）",
+              "slug": "part1_morfologia/ch07/t01_小品词与"
+            },
+            {
+              "title": "2．指示形容词与指示代词（aggettivi e pronomi dimostrativi）",
+              "slug": "part1_morfologia/ch07/t02_指示形容"
+            },
+            {
+              "title": "3．物主形容词与物主代词（aggettivi e pronomi possessivi）",
+              "slug": "part1_morfologia/ch07/t03_物主形容"
+            },
+            {
+              "title": "4．泛指形容词和泛指代词（aggettivi e pronomi indefiniti）",
+              "slug": "part1_morfologia/ch07/t04_泛指形容"
+            },
+            {
+              "title": "5．连词（congiunzioni）",
+              "slug": "part1_morfologia/ch07/t05_连词"
+            }
+          ]
+        },
+        {
+          "title": "第八章 介词（preposizione）",
+          "slug": "ch08",
+          "topics": [
+            {
+              "title": "1．介词与冠词的组合（preposizioni articolate）",
+              "slug": "part1_morfologia/ch08/t01_介词与冠"
+            },
+            {
+              "title": "2．介词的使用（uso delle preposizioni）",
+              "slug": "part1_morfologia/ch08/t02_介词的使"
+            }
+          ]
+        },
+        {
+          "title": "第九章 关系代词与关系副词、比较级与最高级（pronomi e avverbi relativi; grado comparativo e grado superlativo)",
+          "slug": "ch09",
+          "topics": [
+            {
+              "title": "1．关系代词与关系副词（pronomi e avverbi relativi）",
+              "slug": "part1_morfologia/ch09/t01_关系代词"
+            },
+            {
+              "title": "2．比较级与最高级（grado comparativo e grado superlativo）",
+              "slug": "part1_morfologia/ch09/t02_比较级与"
+            }
+          ]
+        },
+        {
+          "title": "第十章 动词I(verbo I）",
+          "slug": "ch10",
+          "topics": [
+            {
+              "title": "1．动词分类（categorie dei verbi）",
+              "slug": "part1_morfologia/ch10/t01_动词分类"
+            },
+            {
+              "title": "2．动词的语式、时态和变位（modi,tempi e coniugazioni dei verbi）",
+              "slug": "part1_morfologia/ch10/t02_动词的语"
+            }
+          ]
+        },
+        {
+          "title": "第十一章 动词II：直陈式（verbo II:indicativo）",
+          "slug": "ch11",
+          "topics": [
+            {
+              "title": "1．直陈式现在时（presente indicativo）",
+              "slug": "part1_morfologia/ch11/t01_直陈式现"
+            },
+            {
+              "title": "2．直陈式近过去时（passato prossimo indicativo）",
+              "slug": "part1_morfologia/ch11/t02_直陈式近"
+            },
+            {
+              "title": "4．直陈式远过去时（passato remoto）",
+              "slug": "part1_morfologia/ch11/t04_直陈式远"
+            },
+            {
+              "title": "5．直陈式愈过去时（trapassati dell'indicativo）",
+              "slug": "part1_morfologia/ch11/t05_直陈式愈"
+            },
+            {
+              "title": "6．直陈式简单将来时（futurosemplice）",
+              "slug": "part1_morfologia/ch11/t06_直陈式简"
+            },
+            {
+              "title": "7．直陈式先将来时（futuro anteriore）",
+              "slug": "part1_morfologia/ch11/t07_直陈式先"
+            }
+          ]
+        },
+        {
+          "title": "第十二章 动词III：命令式、条件式、虚拟式",
+          "slug": "ch12",
+          "topics": [
+            {
+              "title": "1．命令式（imperativo）",
+              "slug": "part1_morfologia/ch12/t01_命令式"
+            },
+            {
+              "title": "3．虚拟式（congiuntivo）",
+              "slug": "part1_morfologia/ch12/t03_虚拟式"
+            }
+          ]
+        },
+        {
+          "title": "第十三章 动词IV：不定式、副动词、分词式",
+          "slug": "ch13",
+          "topics": [
+            {
+              "title": "1．不定式（infinito）",
+              "slug": "part1_morfologia/ch13/t01_不定式"
+            },
+            {
+              "title": "2．副动词（gerundio）",
+              "slug": "part1_morfologia/ch13/t02_副动词"
+            },
+            {
+              "title": "3．分词式（participi）",
+              "slug": "part1_morfologia/ch13/t03_分词式"
+            }
+          ]
+        },
+        {
+          "title": "第十四章 动词V：自反动词（代词式动词）、被动语态、无人称句（verbo V:verbi riflessivi，forma passiva,forma impersonale)",
+          "slug": "ch14",
+          "topics": [
+            {
+              "title": "1．自反动词（verbi riflessivi）",
+              "slug": "part1_morfologia/ch14/t01_自反动词"
+            },
+            {
+              "title": "2．被动语态（forma passiva）",
+              "slug": "part1_morfologia/ch14/t02_被动语态"
+            },
+            {
+              "title": "3．无人称句（forma impersonale）",
+              "slug": "part1_morfologia/ch14/t03_无人称句"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "第二部分 句法（sintassi）",
+      "slug": "part2_sintassi",
+      "chapters": [
+        {
+          "title": "第一章 分句分析I(analisi della proposizione I）",
+          "slug": "ch01",
+          "topics": [
+            {
+              "title": "1．主语（soggetto）",
+              "slug": "part2_sintassi/ch01/t01_主语"
+            },
+            {
+              "title": "2．谓语（predicato）",
+              "slug": "part2_sintassi/ch01/t02_谓语"
+            },
+            {
+              "title": "3．定语（attributo）",
+              "slug": "part2_sintassi/ch01/t03_定语"
+            },
+            {
+              "title": "5．直接宾语（complemento oggetto）",
+              "slug": "part2_sintassi/ch01/t05_直接宾语"
+            },
+            {
+              "title": "6．间接宾语（complemento di termine）",
+              "slug": "part2_sintassi/ch01/t06_间接宾语"
+            },
+            {
+              "title": "7．谓语主语补语（complemento predicativo del soggetto）",
+              "slug": "part2_sintassi/ch01/t07_谓语主语"
+            },
+            {
+              "title": "8．谓语直接宾语补语（complemento predicativo dell'oggetto）",
+              "slug": "part2_sintassi/ch01/t08_谓语直接"
+            }
+          ]
+        },
+        {
+          "title": "第二章 分句分析II(analisi della proposizione II）",
+          "slug": "ch02",
+          "topics": [
+            {
+              "title": "1．地点补语（complemento di luogo）",
+              "slug": "part2_sintassi/ch02/t01_地点补语"
+            },
+            {
+              "title": "2．时间补语（complemento di tempo）",
+              "slug": "part2_sintassi/ch02/t02_时间补语"
+            },
+            {
+              "title": "3．目的补语（complemento di fine）",
+              "slug": "part2_sintassi/ch02/t03_目的补语"
+            },
+            {
+              "title": "4．原因补语（complemento di causa）",
+              "slug": "part2_sintassi/ch02/t04_原因补语"
+            },
+            {
+              "title": "5．方式补语（complemento di modo）",
+              "slug": "part2_sintassi/ch02/t05_方式补语"
+            },
+            {
+              "title": "6．工具补语（complemento di mezzo）",
+              "slug": "part2_sintassi/ch02/t06_工具补语"
+            },
+            {
+              "title": "7．陪伴补语（complemento di compagnia）",
+              "slug": "part2_sintassi/ch02/t07_陪伴补语"
+            }
+          ]
+        },
+        {
+          "title": "第三章 分句分析III(analisi della proposizione III）",
+          "slug": "ch03",
+          "topics": [
+            {
+              "title": "1．让步补语（complemento concessivo）",
+              "slug": "part2_sintassi/ch03/t01_让步补语"
+            },
+            {
+              "title": "2．替换补语（complemento di sostituzione）",
+              "slug": "part2_sintassi/ch03/t02_替换补语"
+            },
+            {
+              "title": "3．排除补语（complemento di esclusione）",
+              "slug": "part2_sintassi/ch03/t03_排除补语"
+            },
+            {
+              "title": "4．明确补语（complemento di specificazione）",
+              "slug": "part2_sintassi/ch03/t04_明确补语"
+            },
+            {
+              "title": "5．名称补语（complemento di denominazione）",
+              "slug": "part2_sintassi/ch03/t05_名称补语"
+            },
+            {
+              "title": "6．数量补语（complemento di quantità）",
+              "slug": "part2_sintassi/ch03/t06_数量补语"
+            },
+            {
+              "title": "7．质量补语（complemento di qualità）",
+              "slug": "part2_sintassi/ch03/t07_质量补语"
+            },
+            {
+              "title": "8．部分补语（complemento partitivo）",
+              "slug": "part2_sintassi/ch03/t08_部分补语"
+            },
+            {
+              "title": "9．拥有或缺少补语（complemento di abbondanza o di privazione）",
+              "slug": "part2_sintassi/ch03/t09_拥有或缺"
+            },
+            {
+              "title": "10．材料补语（complemento di materia）",
+              "slug": "part2_sintassi/ch03/t10_材料补语"
+            },
+            {
+              "title": "11．来源补语（complemento di origine）",
+              "slug": "part2_sintassi/ch03/t11_来源补语"
+            },
+            {
+              "title": "12．论题补语（complemennto di argomento）",
+              "slug": "part2_sintassi/ch03/t12_论题补语"
+            },
+            {
+              "title": "13．限定补语（complemento dli limitazione）",
+              "slug": "part2_sintassi/ch03/t13_限定补语"
+            },
+            {
+              "title": "14．单位补语（complemento distributivo）",
+              "slug": "part2_sintassi/ch03/t14_单位补语"
+            },
+            {
+              "title": "15．评价补语（complemento di stima）",
+              "slug": "part2_sintassi/ch03/t15_评价补语"
+            },
+            {
+              "title": "21．距离补语（complemento di distanza）",
+              "slug": "part2_sintassi/ch03/t21_距离补语"
+            },
+            {
+              "title": "22．尺度补语（complemento di estensione）",
+              "slug": "part2_sintassi/ch03/t22_尺度补语"
+            },
+            {
+              "title": "24．关系补语（complemento di relazione）",
+              "slug": "part2_sintassi/ch03/t24_关系补语"
+            },
+            {
+              "title": "26．招呼补语（complemento di vocazione）",
+              "slug": "part2_sintassi/ch03/t26_招呼补语"
+            },
+            {
+              "title": "27．感叹补语（complemento di esclamazione）",
+              "slug": "part2_sintassi/ch03/t27_感叹补语"
+            }
+          ]
+        },
+        {
+          "title": "第四章 复合句分析I(analisi del periodo I）",
+          "slug": "ch04",
+          "topics": [
+            {
+              "title": "1．并列句（proposizioni coordinate）",
+              "slug": "part2_sintassi/ch04/t01_并列句"
+            },
+            {
+              "title": "3．主语从句（proposizione soggettiva）",
+              "slug": "part2_sintassi/ch04/t03_主语从句"
+            },
+            {
+              "title": "4．直接宾语从句（proposizione oggettiva）",
+              "slug": "part2_sintassi/ch04/t04_直接宾语"
+            }
+          ]
+        },
+        {
+          "title": "第五章 复合句分析II(analisi del periodo II）",
+          "slug": "ch05",
+          "topics": [
+            {
+              "title": "1．关系从句（proposizione relativa）",
+              "slug": "part2_sintassi/ch05/t01_关系从句"
+            },
+            {
+              "title": "2．原因从句（proposizione causale）",
+              "slug": "part2_sintassi/ch05/t02_原因从句"
+            },
+            {
+              "title": "3．目的从句（proposizione finale）",
+              "slug": "part2_sintassi/ch05/t03_目的从句"
+            }
+          ]
+        },
+        {
+          "title": "第六章 复合句分析 III(analisi del periodo III）",
+          "slug": "ch06",
+          "topics": [
+            {
+              "title": "1．条件从句（proposizione condizionale）",
+              "slug": "part2_sintassi/ch06/t01_条件从句"
+            },
+            {
+              "title": "2．条件主从句（periodo ipotetico）",
+              "slug": "part2_sintassi/ch06/t02_条件主从"
+            },
+            {
+              "title": "3．因果从句（proposizione consecutiva）",
+              "slug": "part2_sintassi/ch06/t03_因果从句"
+            },
+            {
+              "title": "4．方式从句（proposizione modale）",
+              "slug": "part2_sintassi/ch06/t04_方式从句"
+            }
+          ]
+        },
+        {
+          "title": "第七章 复合句分析IV(analisi del periodo IV）",
+          "slug": "ch07",
+          "topics": [
+            {
+              "title": "1．比较从句（proposizione comparativa）",
+              "slug": "part2_sintassi/ch07/t01_比较从句"
+            },
+            {
+              "title": "2．间接疑问句（proposizione interrogativa indiretta）",
+              "slug": "part2_sintassi/ch07/t02_间接疑问"
+            },
+            {
+              "title": "3．例外从句（proposizione eccettuativa）",
+              "slug": "part2_sintassi/ch07/t03_例外从句"
+            },
+            {
+              "title": "4．排除从句（proposizione esclusiva）",
+              "slug": "part2_sintassi/ch07/t04_排除从句"
+            },
+            {
+              "title": "5．转折从句（proposizione avversativa）",
+              "slug": "part2_sintassi/ch07/t05_转折从句"
+            },
+            {
+              "title": "6．补充从句（proposizione aggiuntiva）",
+              "slug": "part2_sintassi/ch07/t06_补充从句"
+            },
+            {
+              "title": "7．限定从句（proposizione limitativa）",
+              "slug": "part2_sintassi/ch07/t07_限定从句"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

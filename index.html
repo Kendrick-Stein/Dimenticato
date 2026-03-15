@@ -236,6 +236,11 @@
               <span class="module-card-title">动词变位</span>
               <span class="module-card-desc">时态、课次与题型</span>
             </button>
+            <button class="module-card wide-card" id="goGrammarBookBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="module-card-title">语法书</span>
+              <span class="module-card-desc">意大利语语法全书，按章节浏览</span>
+            </button>
           </div>
         </div>
       </section>
@@ -547,6 +552,39 @@
           <div class="quiz-feedback hidden" id="conjFeedback">
             <p class="feedback-text"></p>
             <button class="next-btn" id="conjNextBtn">下一个 →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 语法书阅读器 -->
+      <section id="grammarBookScreen" class="screen">
+        <div class="grammar-book-layout">
+          <!-- 侧边栏导航 -->
+          <aside class="grammar-nav-sidebar" id="grammarNavSidebar">
+            <div class="grammar-nav-header">
+              <button class="back-btn grammar-book-back-btn" id="grammarBookBackBtn">← 返回 Grammar</button>
+              <h3 class="grammar-nav-title"><svg class="icon"><use href="#icon-book-open"></use></svg>语法书</h3>
+            </div>
+            <div class="grammar-nav-tree" id="grammarNavTree">
+              <p class="grammar-nav-loading">加载中...</p>
+            </div>
+          </aside>
+
+          <!-- 内容区 -->
+          <div class="grammar-content-area">
+            <div class="grammar-content-header">
+              <button class="grammar-sidebar-toggle" id="grammarSidebarToggle" title="切换目录">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </button>
+              <span class="grammar-content-breadcrumb" id="grammarContentBreadcrumb">选择左侧章节开始阅读</span>
+            </div>
+            <div class="grammar-content-body" id="grammarContentBody">
+              <div class="grammar-welcome">
+                <svg class="icon grammar-welcome-icon"><use href="#icon-book-open"></use></svg>
+                <h2>意大利语语法</h2>
+                <p>请从左侧目录选择章节开始阅读</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1116,6 +1154,9 @@ love
   <!-- Chart.js 库 (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   
+  <!-- marked.js for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
+
   <!-- Supabase SDK (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   
@@ -1128,5 +1169,6 @@ love
   <script src="app-enhanced.js"></script>
   <script src="conjugation-app.js"></script>
   <script src="stats-charts.js"></script>
+  <script src="grammar-book.js"></script>
 </body>
 </html>
