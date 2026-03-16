@@ -153,6 +153,16 @@ const ScreenMeta = {
     topNav: 'grammarScreen',
     breadcrumb: ['Grammar', '语法书']
   },
+  verbCollocationsScreen: {
+    module: 'grammar',
+    topNav: 'grammarScreen',
+    breadcrumb: ['Grammar', '动词搭配']
+  },
+  verbCollocationPracticeScreen: {
+    module: 'grammar',
+    topNav: 'grammarScreen',
+    breadcrumb: ['Grammar', '动词搭配练习']
+  },
   progressScreen: {
     module: 'progress',
     topNav: 'progressScreen',
@@ -1663,6 +1673,10 @@ function bindEvents() {
   document.getElementById('goGrammarBookBtn')?.addEventListener('click', () => {
     showScreen('grammarBookScreen');
     if (typeof GrammarBook !== 'undefined') GrammarBook.init();
+  });
+  document.getElementById('goVerbCollocationPracticeBtn')?.addEventListener('click', () => {
+    showScreen('verbCollocationPracticeScreen');
+    if (typeof VerbCollocationPractice !== 'undefined') VerbCollocationPractice.open();
   });
   document.getElementById('grammarBookBackBtn')?.addEventListener('click', () => showScreen('grammarScreen'));
   document.getElementById('browseCommunityBtn')?.addEventListener('click', () => CommunityWordbooks.showBrowseScreen());

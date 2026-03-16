@@ -4285,6 +4285,128 @@ body {
   opacity: 0.6;
 }
 
+/* ============================================================
+   VERB COLLOCATION PRACTICE — 动词搭配练习
+   ============================================================ */
+
+.vc-practice-container {
+  max-width: 960px;
+}
+
+.vc-practice-setup-card,
+.vc-practice-container .quiz-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.vc-practice-header {
+  gap: 0.35rem;
+}
+
+.vc-practice-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.vc-practice-config-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.vc-practice-config-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.vc-practice-label {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.vc-practice-summary {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.vc-practice-actions {
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.vc-practice-prompt {
+  white-space: pre-wrap;
+}
+
+.vc-practice-subprompt {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.vc-practice-hint {
+  margin-top: 0.6rem;
+}
+
+.vc-translation-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+}
+
+.vc-translation-token {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 88px;
+}
+
+.vc-translation-input {
+  width: 100%;
+  min-width: 88px;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.58);
+  color: var(--text-primary);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.vc-translation-placeholder {
+  font-family: 'Courier New', monospace;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+}
+
+.vc-translation-token.correct .vc-translation-input,
+.vc-translation-token.revealed .vc-translation-input {
+  border-color: rgba(124, 143, 132, 0.45);
+  background: rgba(124, 143, 132, 0.12);
+}
+
+.vc-translation-token.incorrect .vc-translation-input {
+  border-color: rgba(142, 95, 88, 0.45);
+  background: rgba(142, 95, 88, 0.12);
+}
+
+@media (max-width: 768px) {
+  .vc-practice-config-grid,
+  .vc-practice-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Part headings */
 .grammar-part-heading {
   font-size: 0.7rem;

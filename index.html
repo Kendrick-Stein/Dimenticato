@@ -246,6 +246,11 @@
               <span class="module-card-title">动词搭配</span>
               <span class="module-card-desc">1688个动词的介词搭配与例句</span>
             </button>
+            <button class="module-card wide-card" id="goVerbCollocationPracticeBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
+              <span class="module-card-title">动词搭配练习</span>
+              <span class="module-card-desc">单介词选择、多介词辨义、例句翻译</span>
+            </button>
           </div>
         </div>
       </section>
@@ -602,6 +607,82 @@
                 <p>左侧可按介词浏览，也可直接搜索一个动词查看它的全部介词搭配。</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="verbCollocationPracticeScreen" class="screen">
+        <div class="quiz-container vc-practice-container">
+          <div class="quiz-header">
+            <button class="back-btn" id="vcPracticeBackBtn">← 返回 Grammar</button>
+            <div class="quiz-progress">
+              <span id="vcPracticeCurrent">1</span> / <span id="vcPracticeTotal">0</span>
+            </div>
+            <div class="quiz-score">
+              正确率: <strong id="vcPracticeAccuracy">0%</strong>
+            </div>
+          </div>
+
+          <div class="quiz-card vc-practice-setup-card" id="vcPracticeSetupCard">
+            <div class="module-view-header vc-practice-header">
+              <div>
+                <p class="eyebrow">Grammar / Verb Collocations Practice</p>
+                <h2><svg class="icon"><use href="#icon-puzzle"></use></svg>动词搭配练习</h2>
+              </div>
+              <p class="subtitle compact">从动词搭配数据库中自动生成单介词选择、多介词辨义和例句翻译题。</p>
+            </div>
+
+            <div class="vc-practice-config-grid">
+              <div class="vc-practice-config-block">
+                <label class="vc-practice-label" for="vcPracticeTypeSelect">题型</label>
+                <select id="vcPracticeTypeSelect" class="form-input">
+                  <option value="mixed">混合练习</option>
+                  <option value="prep">介词选择（单介词动词）</option>
+                  <option value="contrast">同动词辨义（多介词动词）</option>
+                  <option value="translation">例句翻译</option>
+                </select>
+              </div>
+              <div class="vc-practice-config-block">
+                <label class="vc-practice-label" for="vcPracticeQuestionCount">题量</label>
+                <select id="vcPracticeQuestionCount" class="form-input">
+                  <option value="10">10 题</option>
+                  <option value="15" selected>15 题</option>
+                  <option value="20">20 题</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="selection-summary-card vc-practice-summary" id="vcPracticeSummary"></div>
+
+            <div class="form-actions vc-practice-actions">
+              <button class="form-btn primary" id="vcPracticeStartBtn"><svg class="icon"><use href="#icon-puzzle"></use></svg>开始练习</button>
+            </div>
+          </div>
+
+          <div class="quiz-card hidden" id="vcPracticeQuizCard">
+            <div class="question-section">
+              <p class="question-label" id="vcPracticeQuestionTypeLabel">题型</p>
+              <h2 class="italian-word vc-practice-prompt" id="vcPracticePrompt">-</h2>
+              <p class="vc-practice-subprompt" id="vcPracticeSubprompt"></p>
+              <p class="chinese-hint vc-practice-hint hidden" id="vcPracticeHint"></p>
+            </div>
+
+            <div class="options-section" id="vcPracticeOptionsSection">
+              <p class="options-label">请选择正确答案：</p>
+              <div class="options-grid" id="vcPracticeOptions"></div>
+            </div>
+
+            <div class="spelling-section hidden" id="vcPracticeInputSection">
+              <p class="options-label">请输入答案：</p>
+              <div class="vc-translation-grid" id="vcTranslationGrid"></div>
+              <button class="check-btn" id="vcPracticeCheckBtn">检查答案</button>
+              <button class="hint-btn" id="vcPracticeHintBtn"><svg class="icon"><use href="#icon-help"></use></svg>提示</button>
+            </div>
+          </div>
+
+          <div class="quiz-feedback hidden" id="vcPracticeFeedback">
+            <p class="feedback-text"></p>
+            <button class="next-btn" id="vcPracticeNextBtn">下一题 →</button>
           </div>
         </div>
       </section>
@@ -1223,5 +1304,6 @@ love
   <script src="grammar-book.js"></script>
   <script src="data/verb-collocations-data.js"></script>
   <script src="verb-collocations.js"></script>
+  <script src="verb-collocations-practice.js"></script>
 </body>
 </html>
