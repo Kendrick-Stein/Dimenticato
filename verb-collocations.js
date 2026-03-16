@@ -294,7 +294,7 @@ const VerbCollocations = (() => {
       '<div class="vc-panel-intro">' +
         '<span class="vc-kicker">介词浏览</span>' +
         '<h2>介词 ' + escapeHtml(prep) + '</h2>' +
-        '<p>共收录 ' + slugs.length + ' 个动词，' + totalExamples + ' 条搭配与例句。以下卡片默认展开。</p>' +
+        '<p>共收录 ' + slugs.length + ' 个动词，' + totalExamples + ' 条搭配与例句。</p>' +
       '</div>' +
       '<div class="vc-card-grid">' + cardsHtml + '</div>';
 
@@ -327,7 +327,7 @@ const VerbCollocations = (() => {
       '<div class="vc-panel-intro">' +
         '<span class="vc-kicker">动词搜索</span>' +
         '<h2>' + escapeHtml(verb.display) + '</h2>' +
-        '<p>共找到 ' + preps.length + ' 组介词搭配，' + totalExamples + ' 条搭配与例句。以下卡片默认展开。</p>' +
+        '<p>共找到 ' + preps.length + ' 组介词搭配，' + totalExamples + ' 条搭配与例句。</p>' +
       '</div>' +
       '<div class="vc-card-grid vc-card-grid-search">' + cardsHtml + '</div>';
 
