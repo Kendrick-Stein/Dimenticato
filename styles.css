@@ -3925,6 +3925,15 @@ body {
    GRAMMAR BOOK — 语法书阅读器
    ============================================================ */
 
+.main:has(#grammarBookScreen.screen.active),
+.main:has(#verbCollocationsScreen.screen.active) {
+  display: flex;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  padding: 0;
+}
+
 /* Override .screen defaults for the book layout */
 #grammarBookScreen.screen,
 #verbCollocationsScreen.screen {
@@ -3936,7 +3945,9 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 73px);
+  flex: 1;
+  min-height: 0;
+  width: 100%;
 }
 
 /* Two-column layout: sidebar + content */
@@ -4584,8 +4595,9 @@ body {
   .grammar-nav-sidebar {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
+    height: auto;
     z-index: 100;
     box-shadow: 2px 0 12px rgba(0,0,0,0.15);
     width: 0;

@@ -7,6 +7,10 @@ const GrammarBook = (() => {
   let initialized = false;
   let currentSlug = null;
 
+  function getLayout() {
+    return document.querySelector('#grammarBookScreen .grammar-book-layout');
+  }
+
   function init() {
     if (initialized) return;
     initialized = true;
@@ -114,12 +118,12 @@ const GrammarBook = (() => {
 
     // On mobile, close sidebar after selecting topic
     if (window.innerWidth < 768) {
-      document.querySelector('.grammar-book-layout')?.classList.remove('sidebar-open');
+      getLayout()?.classList.remove('sidebar-open');
     }
   }
 
   function toggleSidebar() {
-    const layout = document.querySelector('.grammar-book-layout');
+    const layout = getLayout();
     if (!layout) return;
     if (window.innerWidth < 768) {
       layout.classList.toggle('sidebar-open');
