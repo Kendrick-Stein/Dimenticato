@@ -3926,10 +3926,12 @@ body {
    ============================================================ */
 
 /* Override .screen defaults for the book layout */
-#grammarBookScreen.screen {
+#grammarBookScreen.screen,
+#verbCollocationsScreen.screen {
   display: none;
 }
-#grammarBookScreen.screen.active {
+#grammarBookScreen.screen.active,
+#verbCollocationsScreen.screen.active {
   padding: 0;
   overflow: hidden;
   display: flex;
@@ -3994,6 +3996,282 @@ body {
   flex: 1;
   overflow-y: auto;
   padding: 0.5rem 0;
+}
+
+/* ============================================================
+   VERB COLLOCATIONS — 动词搭配阅读器
+   ============================================================ */
+
+.vc-search-panel {
+  padding: 0.9rem 1rem 0.4rem;
+  border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.vc-search-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.45rem;
+}
+
+.vc-search-input-wrap {
+  position: relative;
+}
+
+.vc-search-icon {
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+.vc-search-input {
+  width: 100%;
+  min-width: 0;
+  padding-left: 2.8rem;
+  border-radius: 14px;
+}
+
+.vc-search-help {
+  margin-top: 0.55rem;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.vc-search-matches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+
+.vc-search-match-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  max-width: 100%;
+  padding: 0.42rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-strong);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 0.76rem;
+}
+
+.vc-search-match-btn:hover,
+.vc-search-match-btn.active {
+  background: rgba(85, 107, 96, 0.1);
+  border-color: rgba(85, 107, 96, 0.2);
+}
+
+.vc-search-match-name {
+  font-weight: 600;
+}
+
+.vc-search-match-meta {
+  color: var(--text-secondary);
+}
+
+.vc-preposition-tree {
+  padding-top: 0.55rem;
+}
+
+.vc-prep-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background: none;
+  border: none;
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.vc-prep-link:hover {
+  background: var(--hover-bg, rgba(0,0,0,0.04));
+}
+
+.vc-prep-link.active {
+  background: rgba(85, 107, 96, 0.08);
+  border-left-color: var(--accent-primary);
+}
+
+.vc-prep-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.vc-prep-count {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.vc-panel-intro {
+  margin-bottom: 1.35rem;
+}
+
+.vc-kicker {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.vc-panel-intro h2 {
+  font-size: 1.65rem;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin: 0 0 0.45rem;
+}
+
+.vc-panel-intro p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+}
+
+.vc-card-grid,
+.vc-search-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.vc-card {
+  padding: 1.1rem 1.15rem;
+  border: 1px solid var(--border-color);
+  border-radius: 22px;
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+}
+
+.vc-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.vc-card-title {
+  margin: 0;
+  font-size: 1.08rem;
+  color: var(--text-primary);
+}
+
+.vc-card-subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.vc-card-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(85, 107, 96, 0.08);
+  color: var(--accent-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.vc-example-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.vc-example-item {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--text-primary);
+  line-height: 1.65;
+  font-size: 0.94rem;
+}
+
+.vc-example-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-primary);
+}
+
+.vc-search-choice-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  text-align: left;
+  box-shadow: var(--shadow);
+}
+
+.vc-search-choice-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(85, 107, 96, 0.2);
+}
+
+.vc-search-choice-name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.vc-search-choice-meta {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+}
+
+.vc-empty-state {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.vc-empty-state h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.vc-empty-state p {
+  margin: 0;
+  max-width: 34rem;
+}
+
+.vc-empty-state-icon {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.6;
 }
 
 /* Part headings */
@@ -4299,6 +4577,10 @@ body {
     position: relative;
   }
 
+  #verbCollocationsScreen.screen {
+    position: relative;
+  }
+
   .grammar-nav-sidebar {
     position: absolute;
     top: 0;
@@ -4318,5 +4600,19 @@ body {
 
   .grammar-content-body {
     padding: 1rem 1rem 3rem;
+  }
+
+  .vc-search-panel {
+    padding: 0.85rem 0.85rem 0.35rem;
+  }
+
+  .vc-card-grid,
+  .vc-search-choice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vc-card-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

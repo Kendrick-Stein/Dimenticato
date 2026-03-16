@@ -241,6 +241,11 @@
               <span class="module-card-title">语法书</span>
               <span class="module-card-desc">意大利语语法全书，按章节浏览</span>
             </button>
+            <button class="module-card wide-card" id="goVerbCollocationsBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="module-card-title">动词搭配</span>
+              <span class="module-card-desc">1688个动词的介词搭配与例句</span>
+            </button>
           </div>
         </div>
       </section>
@@ -552,6 +557,51 @@
           <div class="quiz-feedback hidden" id="conjFeedback">
             <p class="feedback-text"></p>
             <button class="next-btn" id="conjNextBtn">下一个 →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 动词搭配 -->
+      <section id="verbCollocationsScreen" class="screen">
+        <div class="grammar-book-layout">
+          <aside class="grammar-nav-sidebar" id="vcNavSidebar">
+            <div class="grammar-nav-header">
+              <button class="back-btn grammar-book-back-btn" id="vcBackBtn">← 返回 Grammar</button>
+              <h3 class="grammar-nav-title"><svg class="icon"><use href="#icon-book-open"></use></svg>动词搭配</h3>
+            </div>
+            <div class="vc-search-panel">
+              <label class="vc-search-label" for="vcSearchInput">搜索动词</label>
+              <div class="vc-search-input-wrap">
+                <span class="vc-search-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
+                <input
+                  type="text"
+                  class="search-input vc-search-input"
+                  id="vcSearchInput"
+                  placeholder="例如：parlare"
+                  autocomplete="off"
+                >
+              </div>
+              <p class="vc-search-help" id="vcSearchHelp">输入动词后，右侧会按介词把该动词的搭配做成卡片显示。</p>
+              <div class="vc-search-matches" id="vcSearchMatches"></div>
+            </div>
+            <div class="grammar-nav-tree vc-preposition-tree" id="vcNavTree">
+              <p class="grammar-nav-loading">加载中...</p>
+            </div>
+          </aside>
+          <div class="grammar-content-area">
+            <div class="grammar-content-header">
+              <button class="grammar-sidebar-toggle" id="vcSidebarToggle" title="切换目录">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </button>
+              <span class="grammar-content-breadcrumb" id="vcBreadcrumb">可按介词浏览，也可搜索动词</span>
+            </div>
+            <div class="grammar-content-body" id="vcContentBody">
+              <div class="grammar-welcome">
+                <svg class="icon grammar-welcome-icon"><use href="#icon-book-open"></use></svg>
+                <h2>动词搭配大全</h2>
+                <p>左侧可按介词浏览，也可直接搜索一个动词查看它的全部介词搭配。</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1171,5 +1221,7 @@ love
   <script src="stats-charts.js"></script>
   <script src="data/grammar-data.js"></script>
   <script src="grammar-book.js"></script>
+  <script src="data/verb-collocations-data.js"></script>
+  <script src="verb-collocations.js"></script>
 </body>
 </html>
