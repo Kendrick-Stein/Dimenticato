@@ -805,8 +805,13 @@ const MultipleChoice = {
     const correctAnswer = AppState.currentWord.english;
     const options = [correctAnswer];
     
-    // 生成3个干扰选项（相似的翻译）
-    const otherWords = AppState.vocabulary.filter(w => 
+    // 优先从当前正在学习的词库中生成干扰选项，避免自定义词本出现系统词库混入
+    const optionSourceWords = (Array.isArray(AppState.currentWords) && AppState.currentWords.length > 1)
+      ? AppState.currentWords
+      : AppState.vocabulary;
+
+    // 生成3个干扰选项
+    const otherWords = optionSourceWords.filter(w => 
       w.italian !== AppState.currentWord.italian && 
       w.english !== correctAnswer
     );
