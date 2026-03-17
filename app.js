@@ -1546,6 +1546,7 @@ const WordbookManager = {
     highlightSelectedLevel();
     setPracticeContext('vocab');
     updateVocabularySummary();
+    showScreen('vocabularyModesScreen');
   },
   
   // 渲染单词本列表（旧的，保留作为备份）

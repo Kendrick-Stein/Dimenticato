@@ -1016,6 +1016,14 @@
   - `verb-collocations.js`：查阅 / 浏览
   - `verb-collocations-practice.js`：做题 / 练习
 
+### 2026-03-17（词本选择跳转修复）
+
+- 修复 Vocabulary 模块中的来源选择不一致问题：
+  - 选择“系统词汇库”后会进入 `vocabularyModesScreen`
+  - 选择“我的词本”后现在也会进入 `vocabularyModesScreen`
+- 修复位置：`app.js > WordbookManager.selectWordbook(id)`。
+- 说明：自定义词本卡片点击仍先完成 `selectedSource / selectedSourceType / currentWordbook / currentWords` 与进度加载，再统一跳转到练习方式页。
+
 ---
 
 ## 16. 快速索引（超简版）
