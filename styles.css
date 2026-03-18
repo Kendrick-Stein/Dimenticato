@@ -2045,6 +2045,34 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
   opacity: 1;
 }
 
+.mobile-floating-back {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  z-index: 320;
+  display: none;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 48px;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(85, 107, 96, 0.16);
+  border-radius: 999px;
+  background: rgba(29, 36, 32, 0.88);
+  color: #f7f5f0;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+}
+
+.mobile-floating-back .icon {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.mobile-floating-back:hover {
+  transform: translateY(-1px);
+}
+
 /* ==================== 弹窗 ==================== */
 
 .modal {
@@ -3818,6 +3846,10 @@ body {
     height: 72px;
   }
 
+  .mobile-floating-back {
+    display: inline-flex;
+  }
+
   .sidebar-btn {
     flex: 1;
     min-width: 0;
@@ -3918,6 +3950,13 @@ body {
   .community-buttons button,
   .wordbook-card {
     min-height: 132px;
+  }
+
+  .mobile-floating-back {
+    right: 0.85rem;
+    left: auto;
+    bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+    padding: 0.82rem 0.95rem;
   }
 }
 

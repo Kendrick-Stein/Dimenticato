@@ -226,7 +226,7 @@
 - 整个应用的 DOM 结构
 - 所有 screen / modal / dialog 的定义
 - 所有脚本加载顺序
-- 顶部导航、侧边栏、帮助、统计、社区上传等 UI 骨架
+- 顶部导航、侧边栏、帮助、统计、社区上传、移动端悬浮返回按钮等 UI 骨架
 
 当你要改：
 
@@ -278,6 +278,7 @@
 如果你要改以下内容，优先看 `app.js`：
 
 - 顶部导航和 screen 切换
+- 全局返回逻辑 / 历史回退
 - 系统词库练习逻辑
 - 词汇学习流程
 - localStorage key
@@ -872,6 +873,21 @@
 
 都要同步检查对应绑定。
 
+### 11.2.1 移动端返回现在有“全局悬浮返回按钮”
+
+`app.js` 现在提供统一的 `goBack()`：
+
+- 优先使用 `navigationStack` 做历史回退
+- 历史不可用时，再按当前 `screen` fallback
+
+移动端会显示全局悬浮返回按钮 `mobileFloatingBackBtn`，桌面端保持隐藏。
+
+因此后续如果新增新的二级 screen：
+
+- 需要检查它是否应该显示悬浮返回按钮
+- 需要检查 `getFallbackBackTarget()` 是否要补该 screen 的兜底返回目标
+- 如果子模块内部自己绑定了返回事件，也应优先复用 `goBack()` 而不是直接写死 `showScreen()`
+
 ### 11.3 `app-enhanced.js` 会覆盖已有逻辑
 
 最典型：
@@ -1023,6 +1039,21 @@
   - 选择“我的词本”后现在也会进入 `vocabularyModesScreen`
 - 修复位置：`app.js > WordbookManager.selectWordbook(id)`。
 - 说明：自定义词本卡片点击仍先完成 `selectedSource / selectedSourceType / currentWordbook / currentWords` 与进度加载，再统一跳转到练习方式页。
+
+### 2026-03-18（移动端返回体验优化）
+
+- 为手机端新增全局悬浮返回按钮：`index.html > mobileFloatingBackBtn`。
+- 在 `styles.css` 中新增移动端悬浮返回按钮样式，仅在小屏显示，并避开底部工具栏。
+- 在 `app.js` 中新增统一返回逻辑：
+  - `goBack()`
+  - `getFallbackBackTarget()`
+  - `updateMobileBackButton()`
+- 返回逻辑现在优先基于 `AppState.navigationStack` 做历史回退，历史不可用时再按 screen fallback。
+- 已接入的返回入口包括：
+  - Vocabulary / Grammar / Progress / Settings / 模式选择页顶部返回
+  - 选择题 / 拼写 / 浏览页返回
+  - 动词变位、语法书、动词搭配、动词搭配练习页返回
+- 设计目标：只增强手机端长页面返回体验，尽量不改变桌面端视觉布局。
 
 ---
 

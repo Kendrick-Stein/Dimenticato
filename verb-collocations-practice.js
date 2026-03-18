@@ -55,7 +55,10 @@ const VerbCollocationPractice = (() => {
   }
 
   function bindEvents() {
-    dom.backBtn?.addEventListener('click', () => showScreen('grammarScreen'));
+    dom.backBtn?.addEventListener('click', () => {
+      if (typeof goBack === 'function') goBack({ fallbackTarget: 'grammarScreen' });
+      else showScreen('grammarScreen');
+    });
     dom.startBtn?.addEventListener('click', start);
     dom.checkBtn?.addEventListener('click', checkInputAnswer);
     dom.hintBtn?.addEventListener('click', revealHint);

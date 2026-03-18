@@ -47,7 +47,10 @@ const VerbCollocations = (() => {
   }
 
   function bindEvents() {
-    dom.backBtn?.addEventListener('click', () => showScreen('grammarScreen'));
+    dom.backBtn?.addEventListener('click', () => {
+      if (typeof goBack === 'function') goBack({ fallbackTarget: 'grammarScreen' });
+      else showScreen('grammarScreen');
+    });
 
     dom.sidebarToggle?.addEventListener('click', toggleSidebar);
 

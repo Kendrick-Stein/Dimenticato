@@ -698,6 +698,79 @@ function setPracticeContext(context = 'vocab') {
 
 window.setPracticeContext = setPracticeContext;
 
+function getFallbackBackTarget(screenId = AppState.currentScreen) {
+  const fallbackMap = {
+    vocabularyScreen: 'welcomeScreen',
+    vocabularyModesScreen: 'vocabularyScreen',
+    multipleChoiceScreen: 'vocabularyModesScreen',
+    spellingScreen: 'vocabularyModesScreen',
+    browseScreen: 'vocabularyModesScreen',
+    communityBrowseScreen: 'vocabularyScreen',
+    grammarScreen: 'welcomeScreen',
+    conjugationSetupScreen: 'grammarScreen',
+    conjugationScreen: 'conjugationSetupScreen',
+    grammarBookScreen: 'grammarScreen',
+    verbCollocationsScreen: 'grammarScreen',
+    verbCollocationPracticeScreen: 'grammarScreen',
+    progressScreen: 'welcomeScreen',
+    settingsScreen: 'welcomeScreen'
+  };
+
+  return fallbackMap[screenId] || 'welcomeScreen';
+}
+
+function getPreviousScreenFromHistory() {
+  const stack = Array.isArray(AppState.navigationStack) ? AppState.navigationStack : [];
+  for (let i = stack.length - 2; i >= 0; i--) {
+    const candidate = stack[i];
+    if (candidate && candidate !== AppState.currentScreen) {
+      return candidate;
+    }
+  }
+  return null;
+}
+
+function shouldShowMobileBackButton(screenId = AppState.currentScreen) {
+  const hiddenScreens = new Set([
+    'welcomeScreen',
+    'vocabularyScreen',
+    'grammarScreen',
+    'progressScreen',
+    'settingsScreen'
+  ]);
+
+  return !hiddenScreens.has(screenId);
+}
+
+function updateMobileBackButton(screenId = AppState.currentScreen) {
+  const btn = document.getElementById('mobileFloatingBackBtn');
+  if (!btn) return;
+
+  const shouldShow = shouldShowMobileBackButton(screenId);
+  btn.classList.toggle('hidden', !shouldShow);
+}
+
+function goBack(options = {}) {
+  const fallbackTarget = options.fallbackTarget || getFallbackBackTarget(AppState.currentScreen);
+  const previousScreen = getPreviousScreenFromHistory();
+  const targetScreen = previousScreen || fallbackTarget;
+
+  if (!targetScreen || targetScreen === AppState.currentScreen) return;
+
+  if (previousScreen) {
+    if (Array.isArray(AppState.navigationStack) && AppState.navigationStack.length > 1) {
+      AppState.navigationStack.pop();
+      AppState.navigationStack.pop();
+    }
+    showScreen(targetScreen);
+    return;
+  }
+
+  showScreen(targetScreen, { skipHistory: true });
+}
+
+window.goBack = goBack;
+
 function showScreen(screenId, options = {}) {
   document.querySelectorAll('.screen').forEach(screen => {
     screen.classList.remove('active');
@@ -712,6 +785,7 @@ function showScreen(screenId, options = {}) {
   }
 
   updateHeaderNavigation(screenId);
+  updateMobileBackButton(screenId);
 
   if (screenId === 'vocabularyModesScreen') {
     updateVocabularySummary();
@@ -1684,18 +1758,20 @@ function bindEvents() {
     showScreen('verbCollocationPracticeScreen');
     if (typeof VerbCollocationPractice !== 'undefined') VerbCollocationPractice.open();
   });
-  document.getElementById('grammarBookBackBtn')?.addEventListener('click', () => showScreen('grammarScreen'));
+  document.getElementById('grammarBookBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'grammarScreen' }));
   document.getElementById('browseCommunityBtn')?.addEventListener('click', () => CommunityWordbooks.showBrowseScreen());
   document.getElementById('openProgressStatsBtn')?.addEventListener('click', () => {
     if (typeof showEnhancedStatsModal !== 'undefined') showEnhancedStatsModal();
   });
 
-  document.getElementById('vocabularyBackBtn')?.addEventListener('click', () => showScreen('welcomeScreen'));
-  document.getElementById('vocabularyModesBackBtn')?.addEventListener('click', () => showScreen('vocabularyScreen'));
-  document.getElementById('grammarBackBtn')?.addEventListener('click', () => showScreen('welcomeScreen'));
-  document.getElementById('conjugationSetupBackBtn')?.addEventListener('click', () => showScreen('grammarScreen'));
-  document.getElementById('progressBackBtn')?.addEventListener('click', () => showScreen('welcomeScreen'));
-  document.getElementById('settingsBackBtn')?.addEventListener('click', () => showScreen('welcomeScreen'));
+  document.getElementById('mobileFloatingBackBtn')?.addEventListener('click', () => goBack());
+
+  document.getElementById('vocabularyBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'welcomeScreen' }));
+  document.getElementById('vocabularyModesBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'vocabularyScreen' }));
+  document.getElementById('grammarBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'welcomeScreen' }));
+  document.getElementById('conjugationSetupBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'grammarScreen' }));
+  document.getElementById('progressBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'welcomeScreen' }));
+  document.getElementById('settingsBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'welcomeScreen' }));
 
   document.getElementById('settingsExportBtn')?.addEventListener('click', () => Storage.exportAllData());
   document.getElementById('settingsImportBtn')?.addEventListener('click', () => document.getElementById('importDataFileInput').click());
@@ -1813,7 +1889,7 @@ function bindEvents() {
   
   // 选择题模式
   document.getElementById('mcBackBtn').addEventListener('click', () => {
-    showScreen('vocabularyModesScreen');
+    goBack({ fallbackTarget: 'vocabularyModesScreen' });
   });
   
   document.getElementById('mcNextBtn').addEventListener('click', () => {
@@ -1822,7 +1898,7 @@ function bindEvents() {
   
   // 拼写模式
   document.getElementById('spBackBtn').addEventListener('click', () => {
-    showScreen('vocabularyModesScreen');
+    goBack({ fallbackTarget: 'vocabularyModesScreen' });
   });
   
   document.getElementById('spCheckBtn').addEventListener('click', () => {
@@ -1848,7 +1924,7 @@ function bindEvents() {
   
   // 浏览模式
   document.getElementById('brBackBtn').addEventListener('click', () => {
-    showScreen('vocabularyModesScreen');
+    goBack({ fallbackTarget: 'vocabularyModesScreen' });
   });
   
   document.getElementById('searchInput').addEventListener('input', (e) => {
@@ -2115,6 +2191,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadVocabulary();
   setPracticeContext('vocab');
   updateHeaderNavigation('welcomeScreen');
+  updateMobileBackButton('welcomeScreen');
   
   // 渲染自定义单词本卡片
   WordbookManager.renderWordbookCards();

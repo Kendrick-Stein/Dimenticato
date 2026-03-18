@@ -820,7 +820,8 @@
     document.getElementById('conjNextBtn')?.addEventListener('click', nextQuestion);
     document.getElementById('conjRestartBtn')?.addEventListener('click', () => start(state.mode || 'typing'));
     document.getElementById('conjBackBtn')?.addEventListener('click', () => {
-      if (typeof showScreen === 'function') showScreen('conjugationSetupScreen');
+      if (typeof goBack === 'function') goBack({ fallbackTarget: 'conjugationSetupScreen' });
+      else if (typeof showScreen === 'function') showScreen('conjugationSetupScreen');
       if (typeof window.setPracticeContext === 'function') window.setPracticeContext('conjugation');
     });
   }
