@@ -74,7 +74,6 @@
 
     <!-- 主内容区 -->
     <main class="main">
-      
       <!-- 欢迎页面 -->
       <section id="welcomeScreen" class="screen active">
         <div class="welcome-card">
@@ -105,6 +104,556 @@
               <span class="module-card-title">Settings &amp; Data</span>
               <span class="module-card-desc">数据、主题、帮助与社区发布</span>
             </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="germanWelcomeScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <div>
+              <p class="eyebrow">German</p>
+              <h2><svg class="icon"><use href="#icon-brand"></use></svg>Deutsch Lernportal</h2>
+            </div>
+            <p class="subtitle">第一阶段：先对齐意大利语站点的产品结构，后续再补充德语数据。</p>
+          </div>
+
+          <div class="module-grid">
+            <button class="module-card" id="goGermanVocabularyBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-library"></use></svg></span>
+              <span class="module-card-title">Vocabulary</span>
+              <span class="module-card-desc">系统词汇、我的词本、社区词本（骨架）</span>
+            </button>
+            <button class="module-card" id="goGermanGrammarBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
+              <span class="module-card-title">Grammar</span>
+              <span class="module-card-desc">语法书、变位、搭配练习（骨架）</span>
+            </button>
+            <button class="module-card" id="goGermanProgressBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
+              <span class="module-card-title">Progress</span>
+              <span class="module-card-desc">未来接入德语学习统计</span>
+            </button>
+            <button class="module-card" id="goGermanSettingsBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-settings"></use></svg></span>
+              <span class="module-card-title">Settings &amp; Data</span>
+              <span class="module-card-desc">未来接入德语词包、词本与导入导出</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="germanVocabularyScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="germanVocabularyBackBtn">返回 German Home</button>
+            <div>
+              <p class="eyebrow">German / Vocabulary</p>
+              <h2><svg class="icon"><use href="#icon-library"></use></svg>选择德语词汇内容来源</h2>
+            </div>
+            <p class="subtitle">结构先与意大利语对齐，具体词汇数据在第二阶段补充。</p>
+          </div>
+
+          <div class="module-grid">
+            <button class="module-card" id="germanSystemVocabularyBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-stack"></use></svg></span>
+              <span class="module-card-title">System Vocabulary</span>
+              <span class="module-card-desc">未来接入高频德语词表与难度分层</span>
+            </button>
+            <button class="module-card" id="germanWordbooksBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="module-card-title">My Wordbooks</span>
+              <span class="module-card-desc">未来支持德语自定义词本</span>
+            </button>
+            <button class="module-card" id="germanCommunityBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
+              <span class="module-card-title">Community Wordbooks</span>
+              <span class="module-card-desc">未来按语言区分社区词本</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="germanVocabularyModesScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="germanModesBackBtn">返回 Vocabulary</button>
+            <div>
+              <p class="eyebrow">German / Vocabulary</p>
+              <h2><svg class="icon"><use href="#icon-book-open"></use></svg>选择练习方式</h2>
+            </div>
+            <p class="subtitle">题型结构先保留，后续接入真实德语词汇数据。</p>
+          </div>
+
+          <div class="mode-buttons">
+            <button class="mode-btn" id="germanMultipleChoiceBtn" data-language="german" data-module="multiple-choice">
+              <span class="mode-icon"><svg class="icon"><use href="#icon-grid"></use></svg></span>
+              <span class="mode-name">Multiple Choice</span>
+              <span class="mode-desc">看德语词，选择释义</span>
+            </button>
+            <button class="mode-btn" id="germanSpellingBtn" data-language="german" data-module="spelling">
+              <span class="mode-icon"><svg class="icon"><use href="#icon-keyboard"></use></svg></span>
+              <span class="mode-name">Spelling</span>
+              <span class="mode-desc">看释义，拼写德语单词</span>
+            </button>
+            <button class="mode-btn" id="germanBrowseBtn" data-language="german" data-module="browse">
+              <span class="mode-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="mode-name">Browse</span>
+              <span class="mode-desc">浏览、搜索、筛选德语词汇</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="germanMultipleChoiceScreen" class="screen">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <button class="back-btn" id="germanMcBackBtn">← 返回</button>
+            <div class="quiz-progress">
+              <span id="germanMcCurrentWord">1</span> / <span id="germanMcTotalWords">0</span>
+            </div>
+            <div class="quiz-score">
+              正确率: <strong id="germanMcAccuracy">0%</strong>
+            </div>
+          </div>
+
+          <div class="quiz-card">
+            <div class="question-section">
+              <p class="question-label">德语单词：</p>
+              <h2 class="italian-word" id="germanMcWord">-</h2>
+              <button class="hint-btn hidden" id="germanMcShowHintBtn">
+                <svg class="icon"><use href="#icon-help"></use></svg>显示笔记
+              </button>
+              <p class="chinese-hint hidden" id="germanMcHint"></p>
+            </div>
+
+            <div class="options-section">
+              <p class="options-label">选择正确的中文释义：</p>
+              <div class="options-grid" id="germanMcOptions"></div>
+            </div>
+          </div>
+
+          <div class="quiz-feedback hidden" id="germanMcFeedback">
+            <p class="feedback-text"></p>
+            <button class="next-btn" id="germanMcNextBtn">下一个 →</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="germanSpellingScreen" class="screen">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <button class="back-btn" id="germanSpBackBtn">← 返回</button>
+            <div class="quiz-progress">
+              <span id="germanSpCurrentWord">1</span> / <span id="germanSpTotalWords">0</span>
+            </div>
+            <div class="quiz-score">
+              正确率: <strong id="germanSpAccuracy">0%</strong>
+            </div>
+          </div>
+
+          <div class="quiz-card">
+            <div class="question-section">
+              <p class="question-label">中文释义：</p>
+              <h2 class="english-word" id="germanSpMeaning">-</h2>
+              <p class="chinese-hint hidden" id="germanSpHint"></p>
+              <button class="pronunciation-btn" id="germanPronunciationBtn" title="点击朗读德语发音">
+                <svg class="icon"><use href="#icon-volume"></use></svg>听发音
+              </button>
+            </div>
+
+            <div class="spelling-section">
+              <p class="options-label">请输入德语单词：</p>
+              <input type="text" class="spelling-input" id="germanSpInput" placeholder="输入德语..." autocomplete="off">
+              <button class="check-btn" id="germanSpCheckBtn">检查答案</button>
+            </div>
+          </div>
+
+          <div class="quiz-feedback hidden" id="germanSpFeedback">
+            <p class="feedback-text"></p>
+            <button class="next-btn" id="germanSpNextBtn">下一个 →</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="germanBrowseScreen" class="screen">
+        <div class="browse-container">
+          <div class="browse-header">
+            <button class="back-btn" id="germanBrowseBackBtn">← 返回</button>
+            <input type="text" class="search-input" id="germanSearchInput" placeholder="搜索德语单词或释义...">
+            <button class="filter-btn" id="germanFilterBtn">
+              <span id="germanFilterText">全部</span> ▼
+            </button>
+          </div>
+
+          <div class="word-list" id="germanWordList"></div>
+        </div>
+      </section>
+
+      <section id="germanGrammarScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="germanGrammarBackBtn">返回 German Home</button>
+            <div>
+              <p class="eyebrow">German / Grammar</p>
+              <h2><svg class="icon"><use href="#icon-puzzle"></use></svg>选择德语语法主题</h2>
+            </div>
+            <p class="subtitle">保留与意大利语站一致的模块入口，后续再导入德语语法数据。</p>
+          </div>
+
+          <div class="module-grid single-column-grid">
+            <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="conjugation">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-cycle"></use></svg></span>
+              <span class="module-card-title">Verb Conjugation</span>
+              <span class="module-card-desc">未来接入德语动词变位数据与练习</span>
+            </button>
+            <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="grammar-book">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="module-card-title">Grammar Book</span>
+              <span class="module-card-desc">未来接入德语语法章节树与正文</span>
+            </button>
+            <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="collocations">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="module-card-title">Verb Collocations</span>
+              <span class="module-card-desc">未来接入德语动词搭配与例句</span>
+            </button>
+            <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="collocations-practice">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
+              <span class="module-card-title">Verb Collocations Practice</span>
+              <span class="module-card-desc">未来接入德语搭配练习题型</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="germanProgressScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="germanProgressBackBtn">返回 German Home</button>
+            <div>
+              <p class="eyebrow">German / Progress</p>
+              <h2><svg class="icon"><use href="#icon-chart"></use></svg>德语学习进度</h2>
+            </div>
+            <p class="subtitle">当前仍是结构占位，等德语词汇与练习数据导入后再接入真实统计。</p>
+          </div>
+
+          <div class="empty-state language-empty-state">
+            <div class="empty-state-icon">📊</div>
+            <p>German progress dashboard will be activated after vocabulary data is added.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="germanSettingsScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="germanSettingsBackBtn">返回 German Home</button>
+            <div>
+              <p class="eyebrow">German / Settings &amp; Data</p>
+              <h2><svg class="icon"><use href="#icon-settings"></use></svg>德语设置与数据</h2>
+            </div>
+            <p class="subtitle">后续将接入德语词汇包、词本导入、主题、学习备份与数据恢复。</p>
+          </div>
+
+          <div class="module-grid single-column-grid compact-grid">
+            <div class="module-card wide-card">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
+              <span class="module-card-title">第二阶段预留</span>
+              <span class="module-card-desc">导入 German vocabulary data、导入词本、备份学习记录、启用社区语言筛选。</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="englishWelcomeScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <div>
+              <p class="eyebrow">English</p>
+              <h2><svg class="icon"><use href="#icon-brand"></use></svg>English Learning Portal</h2>
+            </div>
+            <p class="subtitle">第一阶段：先复刻意大利语站点的信息架构，后续再补英语词汇、语法与练习数据。</p>
+          </div>
+
+          <div class="module-grid">
+            <button class="module-card" id="goEnglishVocabularyBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-library"></use></svg></span>
+              <span class="module-card-title">Vocabulary</span>
+              <span class="module-card-desc">系统词汇、词本、社区资源（骨架）</span>
+            </button>
+            <button class="module-card" id="goEnglishGrammarBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
+              <span class="module-card-title">Grammar</span>
+              <span class="module-card-desc">语法、verb forms、搭配练习（骨架）</span>
+            </button>
+            <button class="module-card" id="goEnglishProgressBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
+              <span class="module-card-title">Progress</span>
+              <span class="module-card-desc">未来接入英语学习统计与可视化</span>
+            </button>
+            <button class="module-card" id="goEnglishSettingsBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-settings"></use></svg></span>
+              <span class="module-card-title">Settings &amp; Data</span>
+              <span class="module-card-desc">未来接入英语词包与数据管理</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="englishVocabularyScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="englishVocabularyBackBtn">返回 English Home</button>
+            <div>
+              <p class="eyebrow">English / Vocabulary</p>
+              <h2><svg class="icon"><use href="#icon-library"></use></svg>Choose vocabulary source</h2>
+            </div>
+            <p class="subtitle">先保留与意大利语站一致的词汇层结构，二阶段再导入英语数据。</p>
+          </div>
+
+          <div class="module-grid">
+            <button class="module-card" id="englishSystemVocabularyBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-stack"></use></svg></span>
+              <span class="module-card-title">System Vocabulary</span>
+              <span class="module-card-desc">未来接入高频英语词表与分层</span>
+            </button>
+            <button class="module-card" id="englishWordbooksBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="module-card-title">My Wordbooks</span>
+              <span class="module-card-desc">未来支持英语自定义词本</span>
+            </button>
+            <button class="module-card" id="englishCommunityBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
+              <span class="module-card-title">Community Wordbooks</span>
+              <span class="module-card-desc">未来支持英语社区词本</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="englishVocabularyModesScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="englishModesBackBtn">返回 Vocabulary</button>
+            <div>
+              <p class="eyebrow">English / Vocabulary</p>
+              <h2><svg class="icon"><use href="#icon-book-open"></use></svg>Choose practice mode</h2>
+            </div>
+            <p class="subtitle">选择一种练习方式开始学习英语词汇。</p>
+          </div>
+
+          <div class="mode-buttons">
+            <button class="mode-btn" id="englishMultipleChoiceBtn" data-language="english" data-module="multiple-choice">
+              <span class="mode-icon"><svg class="icon"><use href="#icon-grid"></use></svg></span>
+              <span class="mode-name">Multiple Choice</span>
+              <span class="mode-desc">See English word, choose meaning</span>
+            </button>
+            <button class="mode-btn" id="englishSpellingBtn" data-language="english" data-module="spelling">
+              <span class="mode-icon"><svg class="icon"><use href="#icon-keyboard"></use></svg></span>
+              <span class="mode-name">Spelling</span>
+              <span class="mode-desc">See meaning, type the English word</span>
+            </button>
+            <button class="mode-btn" id="englishBrowseBtn" data-language="english" data-module="browse">
+              <span class="mode-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="mode-name">Browse</span>
+              <span class="mode-desc">Browse, search and filter English vocabulary</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="englishMultipleChoiceScreen" class="screen">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <button class="back-btn" id="englishMcBackBtn">← 返回</button>
+            <div class="quiz-progress">
+              <span id="englishMcCurrentWord">1</span> / <span id="englishMcTotalWords">0</span>
+            </div>
+            <div class="quiz-score">
+              正确率: <strong id="englishMcAccuracy">0%</strong>
+            </div>
+          </div>
+
+          <div class="quiz-card">
+            <div class="question-section">
+              <p class="question-label">英语单词：</p>
+              <h2 class="italian-word" id="englishMcWord">-</h2>
+              <button class="hint-btn hidden" id="englishMcShowHintBtn">
+                <svg class="icon"><use href="#icon-help"></use></svg>显示笔记
+              </button>
+              <p class="chinese-hint hidden" id="englishMcHint"></p>
+            </div>
+
+            <div class="options-section">
+              <p class="options-label">选择正确的中文释义：</p>
+              <div class="options-grid" id="englishMcOptions"></div>
+            </div>
+          </div>
+
+          <div class="quiz-feedback hidden" id="englishMcFeedback">
+            <p class="feedback-text"></p>
+            <button class="next-btn" id="englishMcNextBtn">下一个 →</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="englishSpellingScreen" class="screen">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <button class="back-btn" id="englishSpBackBtn">← 返回</button>
+            <div class="quiz-progress">
+              <span id="englishSpCurrentWord">1</span> / <span id="englishSpTotalWords">0</span>
+            </div>
+            <div class="quiz-score">
+              正确率: <strong id="englishSpAccuracy">0%</strong>
+            </div>
+          </div>
+
+          <div class="quiz-card">
+            <div class="question-section">
+              <p class="question-label">中文释义：</p>
+              <h2 class="english-word" id="englishSpMeaning">-</h2>
+              <p class="chinese-hint hidden" id="englishSpHint"></p>
+              <button class="pronunciation-btn" id="englishPronunciationBtn" title="点击朗读英语发音">
+                <svg class="icon"><use href="#icon-volume"></use></svg>听发音
+              </button>
+            </div>
+
+            <div class="spelling-section">
+              <p class="options-label">请输入英语单词：</p>
+              <input type="text" class="spelling-input" id="englishSpInput" placeholder="Type English word..." autocomplete="off">
+              <button class="check-btn" id="englishSpCheckBtn">检查答案</button>
+            </div>
+          </div>
+
+          <div class="quiz-feedback hidden" id="englishSpFeedback">
+            <p class="feedback-text"></p>
+            <button class="next-btn" id="englishSpNextBtn">下一个 →</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="englishBrowseScreen" class="screen">
+        <div class="browse-container">
+          <div class="browse-header">
+            <button class="back-btn" id="englishBrowseBackBtn">← 返回</button>
+            <input type="text" class="search-input" id="englishSearchInput" placeholder="搜索英语单词或释义...">
+            <button class="filter-btn" id="englishFilterBtn">
+              <span id="englishFilterText">全部</span> ▼
+            </button>
+          </div>
+
+          <div class="word-list" id="englishWordList"></div>
+        </div>
+      </section>
+
+      <section id="englishGrammarScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="englishGrammarBackBtn">返回 English Home</button>
+            <div>
+              <p class="eyebrow">English / Grammar</p>
+              <h2><svg class="icon"><use href="#icon-puzzle"></use></svg>Choose grammar topic</h2>
+            </div>
+            <p class="subtitle">先保留与意大利语站对应的模块结构，后续再将英语内容接入。</p>
+          </div>
+
+          <div class="module-grid single-column-grid">
+            <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="conjugation">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-cycle"></use></svg></span>
+              <span class="module-card-title">Verb Forms</span>
+              <span class="module-card-desc">未来接入英语时态、词形与不规则动词练习</span>
+            </button>
+            <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="grammar-book">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="module-card-title">Grammar Book</span>
+              <span class="module-card-desc">未来接入英语语法章节与阅读器</span>
+            </button>
+            <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="collocations">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
+              <span class="module-card-title">Collocations</span>
+              <span class="module-card-desc">未来接入英语动词搭配、介词搭配与例句</span>
+            </button>
+            <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="collocations-practice">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
+              <span class="module-card-title">Collocations Practice</span>
+              <span class="module-card-desc">未来接入英语搭配练习题型</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="englishProgressScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="englishProgressBackBtn">返回 English Home</button>
+            <div>
+              <p class="eyebrow">English / Progress</p>
+              <h2><svg class="icon"><use href="#icon-chart"></use></svg>English learning progress</h2>
+            </div>
+            <p class="subtitle">当前仍是结构占位，英语数据接入后将启用真实统计模块。</p>
+          </div>
+
+          <div class="empty-state language-empty-state">
+            <div class="empty-state-icon">📈</div>
+            <p>English progress tracking will be enabled in phase 2.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="englishSettingsScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="englishSettingsBackBtn">返回 English Home</button>
+            <div>
+              <p class="eyebrow">English / Settings &amp; Data</p>
+              <h2><svg class="icon"><use href="#icon-settings"></use></svg>English settings &amp; data</h2>
+            </div>
+            <p class="subtitle">未来接入英语词包导入、词本、备份恢复与社区资源筛选。</p>
+          </div>
+
+          <div class="module-grid single-column-grid compact-grid">
+            <div class="module-card wide-card">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
+              <span class="module-card-title">第二阶段预留</span>
+              <span class="module-card-desc">导入 English vocabulary data、导入词本、备份学习记录、启用 community language filter。</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="languageSkeletonPlaceholderScreen" class="screen">
+        <div class="welcome-card module-view-card language-skeleton-card">
+          <div class="module-view-header">
+            <button class="back-btn section-back-btn" id="languageSkeletonPlaceholderBackBtn">返回上一层</button>
+            <div>
+              <p class="eyebrow" id="languageSkeletonPlaceholderEyebrow">Placeholder</p>
+              <h2 id="languageSkeletonPlaceholderTitle"><svg class="icon"><use href="#icon-puzzle"></use></svg>模块占位页</h2>
+            </div>
+            <p class="subtitle" id="languageSkeletonPlaceholderDescription">当前是结构骨架，具体数据将在第二阶段接入。</p>
+          </div>
+
+          <div class="selection-summary-card">
+            <div class="selection-summary-item">
+              <span class="selection-summary-label">当前语言</span>
+              <strong id="languageSkeletonPlaceholderLanguage">-</strong>
+            </div>
+            <div class="selection-summary-item">
+              <span class="selection-summary-label">模块</span>
+              <strong id="languageSkeletonPlaceholderModule">-</strong>
+            </div>
+            <div class="selection-summary-item">
+              <span class="selection-summary-label">状态</span>
+              <strong>第一阶段骨架</strong>
+            </div>
+          </div>
+
+          <div class="module-grid single-column-grid compact-grid">
+            <div class="module-card wide-card">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-spark"></use></svg></span>
+              <span class="module-card-title">二阶段需要准备的数据</span>
+              <span class="module-card-desc" id="languageSkeletonPlaceholderDataHint">词汇主数据、模块目录、练习题数据、语言专属说明。</span>
+            </div>
           </div>
         </div>
       </section>
@@ -724,6 +1273,35 @@
 
     <!-- 左侧工具栏 -->
     <aside class="sidebar">
+      <div class="sidebar-language-switcher">
+        <button class="sidebar-btn" id="languageSwitchBtn" title="切换学习语言">
+          <span class="sidebar-icon"><svg class="icon"><use href="#icon-brand"></use></svg></span>
+          <span class="sidebar-label">语言</span>
+        </button>
+        <div class="language-switcher-popover hidden" id="languageSwitcherPopover">
+          <button class="language-switcher-option active" data-language="italian">
+            <span class="language-switcher-flag">🇮🇹</span>
+            <span class="language-switcher-copy">
+              <strong>Italian</strong>
+              <span>当前完整站点</span>
+            </span>
+          </button>
+          <button class="language-switcher-option" data-language="german">
+            <span class="language-switcher-flag">🇩🇪</span>
+            <span class="language-switcher-copy">
+              <strong>German</strong>
+              <span>第一阶段骨架</span>
+            </span>
+          </button>
+          <button class="language-switcher-option" data-language="english">
+            <span class="language-switcher-flag">🇬🇧</span>
+            <span class="language-switcher-copy">
+              <strong>English</strong>
+              <span>第一阶段骨架</span>
+            </span>
+          </button>
+        </div>
+      </div>
       <button class="sidebar-btn" id="exportDataBtn" title="导出数据">
         <span class="sidebar-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
         <span class="sidebar-label">导出数据</span>
@@ -1301,8 +1879,13 @@ love
   <script src="data/conjugations-presente.js"></script>
   <script src="supabase-config.js"></script>
   <script src="community-wordbooks.js"></script>
+  <script src="data/german-vocabulary.js"></script>
+  <script src="data/english-vocabulary.js"></script>
+  <script src="data/german-grammar-data.js"></script>
+  <script src="data/english-grammar-data.js"></script>
   <script src="app.js"></script>
   <script src="app-enhanced.js"></script>
+  <script src="german-app.js"></script>
   <script src="conjugation-app.js"></script>
   <script src="stats-charts.js"></script>
   <script src="data/grammar-data.js"></script>

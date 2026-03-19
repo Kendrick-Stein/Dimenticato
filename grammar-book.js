@@ -2,29 +2,41 @@
  * GrammarBook — 语法书阅读器
  * Uses embedded GRAMMAR_DATA (from data/grammar-data.js) instead of fetch()
  * to avoid GitHub Pages issues with Chinese-character filenames.
+ * Supports optional customData parameter to load different language grammar data.
  */
 const GrammarBook = (() => {
-  let initialized = false;
+  let sidebarListenerAdded = false;
   let currentSlug = null;
+  let activeData = null; // currently loaded grammar data
 
   function getLayout() {
     return document.querySelector('#grammarBookScreen .grammar-book-layout');
   }
 
-  function init() {
-    if (initialized) return;
-    initialized = true;
+  /**
+   * Initialize or reinitialize with optional custom data.
+   * Always rebuilds the nav tree so switching between Italian/German/English
+   * grammar data works correctly every time.
+   * @param {Object|null} customData - Grammar data object with .tree and .content.
+   *   If null/undefined, falls back to global GRAMMAR_DATA.
+   */
+  function init(customData) {
+    const data = customData || (typeof GRAMMAR_DATA !== 'undefined' ? GRAMMAR_DATA : null);
 
-    if (typeof GRAMMAR_DATA === 'undefined' || !GRAMMAR_DATA.tree) {
+    if (!data || !data.tree) {
       document.getElementById('grammarNavTree').innerHTML =
-        '<p class="grammar-nav-error">数据加载失败：GRAMMAR_DATA 未定义</p>';
+        '<p class="grammar-nav-error">数据加载失败：语法数据未定义</p>';
       return;
     }
 
-    buildNavTree(GRAMMAR_DATA.tree);
+    activeData = data;
+    buildNavTree(data.tree); // always rebuild tree when switching languages
 
-    document.getElementById('grammarSidebarToggle')
-      ?.addEventListener('click', toggleSidebar);
+    if (!sidebarListenerAdded) {
+      document.getElementById('grammarSidebarToggle')
+        ?.addEventListener('click', toggleSidebar);
+      sidebarListenerAdded = true;
+    }
   }
 
   function buildNavTree(tree) {
@@ -107,7 +119,7 @@ const GrammarBook = (() => {
     const body = document.getElementById('grammarContentBody');
     if (!body) return;
 
-    const text = GRAMMAR_DATA.content[slug];
+    const text = activeData && activeData.content ? activeData.content[slug] : undefined;
     if (text === undefined) {
       body.innerHTML = '<div class="grammar-error">内容未找到：' + escapeHtml(slug) + '</div>';
       return;

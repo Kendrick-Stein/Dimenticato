@@ -5,10 +5,12 @@
 
 // ==================== Web Speech API 发音功能 ====================
 
-class ItalianSpeaker {
+class LanguageSpeaker {
   constructor() {
     this.synth = window.speechSynthesis;
     this.voice = null;
+    this.currentLang = 'it-IT';
+    this.voiceMatcher = /^it/i;
     this.initVoice();
   }
   
@@ -16,8 +18,7 @@ class ItalianSpeaker {
     // 获取可用的语音
     const loadVoices = () => {
       const voices = this.synth.getVoices();
-      // 优先选择意大利语语音
-      this.voice = voices.find(v => v.lang.startsWith('it')) || voices[0];
+      this.voice = voices.find(v => this.voiceMatcher.test(v.lang)) || voices[0];
     };
     
     // 有些浏览器需要异步加载语音列表
@@ -25,6 +26,12 @@ class ItalianSpeaker {
     if (this.synth.onvoiceschanged !== undefined) {
       this.synth.onvoiceschanged = loadVoices;
     }
+  }
+
+  setLanguage(lang, matcher) {
+    this.currentLang = lang;
+    this.voiceMatcher = matcher || /^it/i;
+    this.initVoice();
   }
   
   speak(text, autoplay = false) {
@@ -34,7 +41,7 @@ class ItalianSpeaker {
     this.synth.cancel();
     
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'it-IT';
+    utterance.lang = this.currentLang;
     utterance.rate = 0.9; // 稍慢一点，便于学习
     
     if (this.voice) {
@@ -50,7 +57,7 @@ class ItalianSpeaker {
 }
 
 // 创建全局 speaker 实例
-const italianSpeaker = new ItalianSpeaker();
+const italianSpeaker = new LanguageSpeaker();
 
 function renderIcon(name) {
   return `<svg class="icon"><use href="#${name}"></use></svg>`;
@@ -184,7 +191,8 @@ const Storage = {
     LEVEL: 'dimenticato_level',
     THEME: 'dimenticato_theme',
     CUSTOM_WORDBOOKS: 'dimenticato_custom_wordbooks',
-    DAILY_STATS: 'dimenticato_daily_stats'
+    DAILY_STATS: 'dimenticato_daily_stats',
+    LANGUAGE: 'dimenticato_language'
   },
   
   save() {
@@ -2184,6 +2192,75 @@ WordbookManager.renderWordbookCards = function() {
   });
 };
 
+// ==================== 语言门户（多语言切换 + 颜色主题） ====================
+
+const LanguagePortal = {
+  // 每种语言对应的首屏
+  HOME_SCREENS: {
+    italian: 'welcomeScreen',
+    german:  'germanWelcomeScreen',
+    english: 'englishWelcomeScreen'
+  },
+
+  /**
+   * 切换到指定语言：
+   * 1. 设置 body[data-language] → 触发 CSS 颜色主题
+   * 2. 持久化到 localStorage
+   * 3. 更新侧边栏弹出层的 active 状态
+   * 4. 导航到对应语言首屏
+   */
+  selectLanguage(lang) {
+    const validLangs = ['italian', 'german', 'english'];
+    if (!validLangs.includes(lang)) return;
+
+    // 1. 设置 body 属性 → CSS per-language color theme 生效
+    if (lang === 'italian') {
+      // 意大利语是默认主题，移除 data-language 属性让 CSS 回落到默认值
+      document.body.removeAttribute('data-language');
+    } else {
+      document.body.setAttribute('data-language', lang);
+    }
+
+    // 2. 持久化
+    localStorage.setItem(Storage.KEYS.LANGUAGE, lang);
+
+    // 3. 更新弹出层 active 样式
+    document.querySelectorAll('.language-switcher-option').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.language === lang);
+    });
+
+    // 4. 关闭弹出层
+    const popover = document.getElementById('languageSwitcherPopover');
+    if (popover) popover.classList.add('hidden');
+
+    // 5. 跳转到对应语言首屏
+    const targetScreen = this.HOME_SCREENS[lang] || 'welcomeScreen';
+    showScreen(targetScreen);
+  },
+
+  /**
+   * 初始化：仅从 localStorage 恢复颜色主题和 active 状态。
+   * UI 事件绑定（弹出层开关、语言选项点击）由 german-app.js 的
+   * bindLanguageSwitcher() 统一负责，避免重复绑定冲突。
+   */
+  init() {
+    // 恢复上次选择的语言（仅恢复 CSS 颜色主题，不触发导航跳转）
+    const savedLang = localStorage.getItem(Storage.KEYS.LANGUAGE) || 'italian';
+    if (savedLang === 'italian') {
+      document.body.removeAttribute('data-language');
+    } else {
+      document.body.setAttribute('data-language', savedLang);
+    }
+    // 同步弹出层 active 状态
+    document.querySelectorAll('.language-switcher-option').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.language === savedLang);
+    });
+  }
+};
+
+// 暴露到全局，方便外部脚本调用
+window.LanguagePortal = LanguagePortal;
+
 // ==================== 初始化 ====================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -2192,6 +2269,9 @@ document.addEventListener('DOMContentLoaded', () => {
   setPracticeContext('vocab');
   updateHeaderNavigation('welcomeScreen');
   updateMobileBackButton('welcomeScreen');
+
+  // 初始化语言门户（恢复颜色主题 + 绑定切换事件）
+  LanguagePortal.init();
   
   // 渲染自定义单词本卡片
   WordbookManager.renderWordbookCards();

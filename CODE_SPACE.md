@@ -13,7 +13,7 @@
 
 ## 1. 项目定位
 
-**Dimenticato** 是一个以意大利语学习为核心的纯静态网页应用，主要服务于以下学习场景：
+**Dimenticato** 当前仍以意大利语学习站为核心，但已开始向“多语言学习站集合”演进。当前主要服务于以下学习场景：
 
 - 系统词汇学习
 - 自定义词本学习与管理
@@ -69,6 +69,11 @@
    - `data/verb-collocations-data.js`
    - `verb-collocations.js`
    - `verb-collocations-practice.js`
+   - `data/german-vocabulary.js`
+   - `data/german-grammar-data.js`
+   - `data/english-vocabulary.js`
+   - `data/english-grammar-data.js`
+   - `german-app.js`
 3. `app.js` 在 `DOMContentLoaded` 时执行：
    - `bindEvents()`
    - `loadVocabulary()`
@@ -78,18 +83,19 @@
 
 ### 2.2 架构分层
 
-可以把项目理解为 4 层：
+可以把项目理解为 5 层：
 
-1. **页面层**：`index.html`
-2. **主状态与主导航层**：`app.js`
-3. **功能模块层**：
+1. **语言切换层**：`index.html` + `app.js` 中的 sidebar language switcher / skeleton 导航
+2. **页面层**：`index.html`
+3. **主状态与主导航层**：`app.js`
+4. **功能模块层**：
    - `app-enhanced.js`
    - `community-wordbooks.js`
    - `conjugation-app.js`
    - `grammar-book.js`
    - `verb-collocations.js`
    - `stats-charts.js`
-4. **数据层**：
+5. **数据层**：
    - `vocabulary.js`
    - `data/*.js`
    - `data/*.json`
@@ -118,6 +124,9 @@
 - `verbCollocationPracticeScreen`：动词搭配练习器
 - `grammarBookScreen`：语法书阅读器
 - `communityBrowseScreen`：社区词本浏览页
+- `germanWelcomeScreen` / `germanVocabularyScreen` / `germanVocabularyModesScreen` / `germanGrammarScreen` / `germanProgressScreen` / `germanSettingsScreen`：德语站第一阶段骨架页
+- `englishWelcomeScreen` / `englishVocabularyScreen` / `englishVocabularyModesScreen` / `englishGrammarScreen` / `englishProgressScreen` / `englishSettingsScreen`：英语站第一阶段骨架页
+- `languageSkeletonPlaceholderScreen`：德语 / 英语二阶段数据模块占位页
 
 ### 3.2 modal / dialog
 
@@ -164,6 +173,8 @@
 - `currentWordbook`：当前选中的自定义词本
 - `selectedSource`：当前词汇来源 id
 - `selectedSourceType`：`system` / `custom`
+- `portalLanguage`：当前选中的学习语言（`italian` / `german` / `english`）
+- `languageSkeletonReturnScreen`：德语 / 英语占位页的返回目标
 - `practiceContext`：`vocab` / `conjugation`
 - `activeModule`：header 当前模块
 - `currentScreen` / `previousScreen` / `navigationStack`
@@ -206,6 +217,7 @@
 ### 4.3 子模块与主流程关系
 
 - `app.js` 是主控制器
+- `app.js` 现在同时承担“语言切换导航 + 意大利语主站导航 + 德语/英语骨架导航”三类职责
 - `app-enhanced.js` 是增强层，会**覆盖 / patch** 部分已有逻辑
 - `conjugation-app.js` 是独立练习模块，但复用 `showScreen()` 与部分主 UI
 - `grammar-book.js` 与 `verb-collocations.js` 是独立阅读型模块
@@ -223,12 +235,15 @@
 #### `index.html`
 负责：
 
+- sidebar 中的语言切换入口
 - 整个应用的 DOM 结构
 - 所有 screen / modal / dialog 的定义
 - 所有脚本加载顺序
 - 顶部导航、侧边栏、帮助、统计、社区上传、移动端悬浮返回按钮等 UI 骨架
 
 当你要改：
+- sidebar 语言切换器
+- German / English skeleton 页面
 
 - 页面布局
 - 增加新 screen
@@ -243,6 +258,8 @@
 
 当你要改：
 
+- 语言门户布局
+- German / English skeleton 样式
 - 颜色、布局、响应式
 - 卡片样式
 - modal 样式
@@ -261,6 +278,7 @@
 负责：
 
 - `ItalianSpeaker` 发音功能
+- `LanguagePortal` 语言切换状态、popover 与入口跳转
 - `AppState` 全局状态
 - `Storage` 本地存储
 - 系统词汇加载 `loadVocabulary()`
@@ -272,6 +290,13 @@
 - 自定义词本基础管理 `WordbookManager`
 - 数据导入导出 / 重置 / 主题切换
 - 全局事件绑定 `bindEvents()`
+
+第一阶段新增但仍保持“非侵入式”原则：
+
+- 默认仍进入原来的 `welcomeScreen`
+- 通过 sidebar 中的语言按钮切换 `Italian / German / English`
+- German / English 当前只接入 skeleton screen 和占位导航
+- 不改现有意大利语数据文件和练习逻辑
 
 #### 修改建议
 
@@ -526,7 +551,47 @@
 
 ---
 
-### 6.8 `supabase-config.js` — Supabase 配置
+### 6.8 `german-app.js` — 德语站 + 英语站控制器
+
+这是德语与英语学习模块的主控制文件，加载于所有德语/英语数据文件之后。
+
+负责：
+
+- `GermanApp`：德语词汇学习（MC / Spelling / Browse）+ 语法书入口
+  - `STORAGE_KEYS`：德语专属 localStorage keys（`DE_MASTERED`, `DE_STATS`, `DE_FILTER`）
+  - `init()`：加载 `GERMAN_VOCABULARY_DATA`，绑定所有事件
+  - `bindGrammarBookTriggers()`：绑定德语/英语语法书入口按钮（移除 `placeholder-trigger` class，挂载真实 `_openGrammarBook`）
+  - `_openGrammarBook(data, title, backFn)`：以指定语言数据初始化 `GrammarBook`，跳转到 `grammarBookScreen`
+  - MC / Spelling / Browse 完整练习逻辑（与意大利语站同构但独立）
+- `EnglishApp`：英语词汇学习（MC / Spelling / Browse）
+  - `STORAGE_KEYS`：英语专属 localStorage keys（`EN_MASTERED`, `EN_STATS`, `EN_FILTER`）
+  - `init(germanApp)`：加载 `ENGLISH_VOCABULARY_DATA`，绑定所有事件
+  - MC / Spelling / Browse 完整练习逻辑
+  - 依赖 `_germanApp`（GermanApp 实例）提供 `showScreen`, `bindClick`, `setText`, `showFeedback`, `resetFeedback`, `escapeHtml`, `escapeAttribute` 等工具方法
+
+依赖：
+
+- `GERMAN_VOCABULARY_DATA`（来自 `data/german-vocabulary.js`）
+- `ENGLISH_VOCABULARY_DATA`（来自 `data/english-vocabulary.js`）
+- `GERMAN_GRAMMAR_DATA`（来自 `data/german-grammar-data.js`）
+- `ENGLISH_GRAMMAR_DATA`（来自 `data/english-grammar-data.js`）
+- `GrammarBook`（来自 `grammar-book.js`）
+- `showScreen()`（来自 `app.js`）
+- `index.html` 中所有德语/英语 screen DOM
+
+#### 修改建议
+
+如果你要改：
+
+- 德语/英语词汇练习逻辑（MC/Spelling/Browse）
+- 德语/英语语法书入口
+- 德语/英语 localStorage key
+
+看 `german-app.js`。
+
+---
+
+### 6.9 `supabase-config.js` — Supabase 配置
 
 负责：
 
@@ -585,6 +650,40 @@
   - `meta`
   - `verbs`
   - `prepositions`
+
+#### `data/german-vocabulary.js`
+
+- 导出：`GERMAN_VOCABULARY_DATA`
+- 来源：`deutsch-data/vocab/pgh.csv`（经 `scripts/process_german_vocab.py` 处理）
+- 字段：`{ german, display, meaning, chinese, notes, rank, source }`
+- 供 `german-app.js > GermanApp` 使用
+
+#### `data/german-grammar-data.js`
+
+- 导出：`GERMAN_GRAMMAR_DATA`
+- 来源：`deutsch-data/grammar/docs/`（Docusaurus markdown 目录）
+- 结构：与 `GRAMMAR_DATA` 相同：`{ tree: { parts: [...] }, content: { slug: "markdown..." } }`
+- 包含 12 个 parts，27 个 topics（德语语法，中文注释）
+- 由 `scripts/build_german_grammar.py` 生成
+- 供 `german-app.js > GermanApp._openGrammarBook()` 使用
+
+#### `data/english-vocabulary.js`
+
+- 导出：`ENGLISH_VOCABULARY_DATA`
+- 来源：`english-data/english word/EnWords.csv`（注意目录名前有空格）
+- 字段：`{ english, meaning, chinese, notes, rank, source }`
+- 共约 20,000 条（从原始 103,976 条取前 20k）
+- 由 `scripts/build_english_vocab.py` 生成
+- 供 `german-app.js > EnglishApp` 使用
+
+#### `data/english-grammar-data.js`
+
+- 导出：`ENGLISH_GRAMMAR_DATA`
+- 来源：`english-data/logical-grammar-master/`（注意目录名前有空格）
+- 结构：与 `GRAMMAR_DATA` 相同：`{ tree: { parts: [...] }, content: { slug: "markdown..." } }`
+- 包含 5 个 parts（英语逻辑语法）
+- 由 `scripts/build_english_grammar.py` 生成
+- 供 `german-app.js > GermanApp._openGrammarBook()` 使用（英语语法书）
 
 ### 7.2 原始 / 中间数据
 
@@ -705,6 +804,71 @@
 
 ---
 
+### 8.5 `scripts/build_german_grammar.py`
+
+用途：
+
+- 读取 `deutsch-data/grammar/docs/` Docusaurus markdown 目录结构
+- 解析 `_category_.json` 提取 part/chapter 元数据
+- 把所有 topic markdown 内容嵌入一个 JS 文件
+
+输出：
+
+- `data/german-grammar-data.js`（导出 `GERMAN_GRAMMAR_DATA`）
+
+#### 什么时候需要跑
+
+- `deutsch-data/grammar/docs/` 中的 markdown 文件有更新
+- 需要重建德语语法数据文件
+
+---
+
+### 8.6 `scripts/build_english_vocab.py`
+
+用途：
+
+- 读取 ` english-data/english word/EnWords.csv`（⚠️ 目录名前有空格）
+- 取前 20,000 条，转换字段格式
+- 生成 JS 常量文件
+
+输出：
+
+- `data/english-vocabulary.js`（导出 `ENGLISH_VOCABULARY_DATA`）
+
+#### 什么时候需要跑
+
+- EnWords.csv 有更新
+- 想调整截取条数或字段映射
+
+#### 注意
+
+- 源目录 ` english-data/` 前有一个空格，路径引用时必须保留
+
+---
+
+### 8.7 `scripts/build_english_grammar.py`
+
+用途：
+
+- 读取 ` english-data/logical-grammar-master/` 目录（⚠️ 目录名前有空格）
+- 处理 markdown 文件，组装为语法树
+- 生成 JS 常量文件
+
+输出：
+
+- `data/english-grammar-data.js`（导出 `ENGLISH_GRAMMAR_DATA`）
+
+#### 什么时候需要跑
+
+- `logical-grammar-master/` 中的 markdown 文件有更新
+- 需要重建英语语法数据文件
+
+#### 注意
+
+- 源目录 ` english-data/` 前有一个空格，路径引用时必须保留
+
+---
+
 ## 9. 修改任务到文件的映射
 
 这一节是以后让 AI 快速定位文件的核心。
@@ -715,6 +879,14 @@
 
 - `index.html`
 - `app.js`
+
+如果是：
+
+- 改 sidebar 语言切换器
+- 改 German / English skeleton 导航
+- 改语言切换到 Italian / German / English 主站的跳转
+
+也看这两个文件。
 
 ### 9.2 改系统词汇学习流程
 
@@ -835,7 +1007,18 @@
 - `dimenticato_custom_wordbooks`
 - `dimenticato_daily_stats`
 
-### 10.2 动态 key
+### 10.2 德语 / 英语站专属 key
+
+定义在 `german-app.js > GermanApp.STORAGE_KEYS` 和 `EnglishApp.STORAGE_KEYS`：
+
+- `dimenticato_german_mastered`
+- `dimenticato_german_stats`
+- `dimenticato_german_filter`
+- `dimenticato_english_mastered`
+- `dimenticato_english_stats`
+- `dimenticato_english_filter`
+
+### 10.3 动态 key
 
 - 自定义词本学习进度：`dimenticato_progress_wb_<id>`
 - 动词变位课次：`dimenticato_conjugation_lessons`
@@ -1055,6 +1238,87 @@
   - 动词变位、语法书、动词搭配、动词搭配练习页返回
 - 设计目标：只增强手机端长页面返回体验，尽量不改变桌面端视觉布局。
 
+### 2026-03-19（多语言入口第一阶段）
+
+- 初版先尝试新增 `languagePortalScreen` 作为默认入口页，用于选择 Italian / German / English。
+- 在 `index.html` 中新增 German / English 第一阶段 skeleton screens：
+  - Home
+  - Vocabulary
+  - Vocabulary Modes
+  - Grammar
+  - Progress
+  - Settings & Data
+- 新增 `languageSkeletonPlaceholderScreen`，用于 German / English 二阶段模块占位与数据准备提示。
+- 在 `app.js` 中新增：
+  - `AppState.portalLanguage`
+  - `AppState.languageSkeletonReturnScreen`
+  - `LanguagePortal`
+  - German / English skeleton screen 的导航绑定与回退逻辑
+- 在 `styles.css` 中新增语言门户布局和 skeleton 页面样式。
+- 当前阶段说明：
+  - Italian 为真实可运行站点
+  - German / English 仅完成信息架构与导航骨架
+  - 二阶段再补词汇、语法、变位、搭配等数据
+
+### 2026-03-19（语言切换改为 sidebar）
+
+- 根据体验反馈，取消“大语言入口页”作为默认首页。
+- 默认入口恢复为原意大利语主站 `welcomeScreen`。
+- 在左侧 sidebar 新增语言切换按钮与 `languageSwitcherPopover`：
+  - Italian
+  - German
+  - English
+- `LanguagePortal` 现在主要负责：
+  - 当前语言状态同步
+  - 给 `body` 写入 `data-language`，驱动不同语言的视觉主题变量
+  - sidebar popover 展开/收起
+  - 切换后跳转到对应语言站点首页
+- `languagePortalScreen` 已不再参与主流程；German / English skeleton screens 保留，继续作为第二阶段数据接入前的骨架页面。
+
+### 2026-03-19（按语言切换色调）
+
+- 保留现有整体设计风格与变量体系，只在语言切换时通过 `body[data-language]` 覆盖主题变量。
+- 当前语言色调约定：
+  - Italian：现有鼠尾草绿 / muted green
+  - German：蓝灰 / slate blue
+  - English：英伦酒红 / muted burgundy
+- 实现位置：
+  - `app.js > LanguagePortal.selectLanguage(language)`：同步写入 `body[data-language]`
+  - `styles.css`：为 German / English 的明暗主题分别覆写 accent 变量与背景光晕
+
+### 2026-03-19（德语/英语数据第二阶段完整接入）
+
+本次将德语与英语数据完整接入多语言框架，German / English 从骨架页升级为可用站点。
+
+**新增数据文件（预编译 JS）：**
+- `data/german-grammar-data.js`（`GERMAN_GRAMMAR_DATA`）：德语语法书，12 parts，27 topics
+- `data/english-vocabulary.js`（`ENGLISH_VOCABULARY_DATA`）：英语词汇，约 20,000 条
+- `data/english-grammar-data.js`（`ENGLISH_GRAMMAR_DATA`）：英语逻辑语法书，5 parts
+
+**新增构建脚本：**
+- `scripts/build_german_grammar.py`：从 `deutsch-data/grammar/docs/` 生成德语语法 JS
+- `scripts/build_english_vocab.py`：从 `english-data/english word/EnWords.csv` 生成英语词汇 JS
+- `scripts/build_english_grammar.py`：从 `english-data/logical-grammar-master/` 生成英语语法 JS
+
+**新增前端模块：**
+- `german-app.js`：
+  - `GermanApp`：德语词汇练习（MC/Spelling/Browse）+ 语法书入口（含 `bindGrammarBookTriggers`）
+  - `EnglishApp`：英语词汇练习（MC/Spelling/Browse）
+  - 新增 6 个 localStorage key（德语/英语各 3 个）
+
+**修改文件：**
+- `index.html`：
+  - 新增英语练习 screens（`englishMultipleChoiceScreen`, `englishSpellingScreen`, `englishBrowseScreen`）
+  - 新增 5 个 `<script>` 标签（4 个数据文件 + `german-app.js`）
+- `grammar-book.js`：
+  - 移除 `initialized` 永久标志 BUG，改为每次调用 `init()` 都重建导航树
+  - 新增 `sidebarListenerAdded` 标志，仅防止 sidebar toggle 重复绑定
+  - 修复意大利语 → 德语 → 意大利语切换时语法书不重新加载的问题
+
+**数据格式约定（新增语言统一采用）：**
+- 词汇：`{ english/german, meaning, chinese, notes, rank, source }`
+- 语法：`{ tree: { parts: [{title, slug, chapters:[{title, slug, topics:[{title,slug}]}]}] }, content: { slug: "markdown..." } }`
+
 ---
 
 ## 16. 快速索引（超简版）
@@ -1073,3 +1337,7 @@
 - **改语法书构建** → `scripts/parse_grammar.py` + `scripts/build_grammar_data.py`
 - **改搭配数据构建** → `scripts/parse_verb_collocations.py`
 - **改变位数据构建** → `scripts/reverso_presente_pipeline.py`
+- **改德语词汇/练习** → `german-app.js` + `data/german-vocabulary.js`
+- **改德语语法书** → `grammar-book.js` + `data/german-grammar-data.js` + `scripts/build_german_grammar.py`
+- **改英语词汇/练习** → `german-app.js` (EnglishApp) + `data/english-vocabulary.js` + `scripts/build_english_vocab.py`
+- **改英语语法书** → `grammar-book.js` + `data/english-grammar-data.js` + `scripts/build_english_grammar.py`
