@@ -13,7 +13,7 @@
 
 ## 1. 项目定位
 
-**Dimenticato** 当前仍以意大利语学习站为核心，但已开始向“多语言学习站集合”演进。当前主要服务于以下学习场景：
+**Dimenticato** 当前已从“意大利语单语言学习站”演进为“多语言学习站集合”。目前 Italian 仍是功能最完整的主站，German / English 已接入基础可用版本。当前主要服务于以下学习场景：
 
 - 系统词汇学习
 - 自定义词本学习与管理
@@ -124,8 +124,8 @@
 - `verbCollocationPracticeScreen`：动词搭配练习器
 - `grammarBookScreen`：语法书阅读器
 - `communityBrowseScreen`：社区词本浏览页
-- `germanWelcomeScreen` / `germanVocabularyScreen` / `germanVocabularyModesScreen` / `germanGrammarScreen` / `germanProgressScreen` / `germanSettingsScreen`：德语站第一阶段骨架页
-- `englishWelcomeScreen` / `englishVocabularyScreen` / `englishVocabularyModesScreen` / `englishGrammarScreen` / `englishProgressScreen` / `englishSettingsScreen`：英语站第一阶段骨架页
+- `germanWelcomeScreen` / `germanVocabularyScreen` / `germanVocabularyModesScreen` / `germanGrammarScreen` / `germanProgressScreen` / `germanSettingsScreen`：德语站基础可用页
+- `englishWelcomeScreen` / `englishVocabularyScreen` / `englishVocabularyModesScreen` / `englishGrammarScreen` / `englishProgressScreen` / `englishSettingsScreen`：英语站基础可用页
 - `languageSkeletonPlaceholderScreen`：德语 / 英语二阶段数据模块占位页
 
 ### 3.2 modal / dialog
@@ -217,7 +217,7 @@
 ### 4.3 子模块与主流程关系
 
 - `app.js` 是主控制器
-- `app.js` 现在同时承担“语言切换导航 + 意大利语主站导航 + 德语/英语骨架导航”三类职责
+- `app.js` 现在同时承担“语言切换导航 + 意大利语主站导航 + 德语/英语基础站导航”三类职责
 - `app-enhanced.js` 是增强层，会**覆盖 / patch** 部分已有逻辑
 - `conjugation-app.js` 是独立练习模块，但复用 `showScreen()` 与部分主 UI
 - `grammar-book.js` 与 `verb-collocations.js` 是独立阅读型模块
@@ -291,11 +291,11 @@
 - 数据导入导出 / 重置 / 主题切换
 - 全局事件绑定 `bindEvents()`
 
-第一阶段新增但仍保持“非侵入式”原则：
+多语言阶段仍保持“非侵入式”原则：
 
 - 默认仍进入原来的 `welcomeScreen`
 - 通过 sidebar 中的语言按钮切换 `Italian / German / English`
-- German / English 当前只接入 skeleton screen 和占位导航
+- German / English 当前已接入词汇练习、语法书入口、基础 Progress / Settings & Data 页面
 - 不改现有意大利语数据文件和练习逻辑
 
 #### 修改建议
@@ -557,16 +557,20 @@
 
 负责：
 
-- `GermanApp`：德语词汇学习（MC / Spelling / Browse）+ 语法书入口
+- `GermanApp`：德语词汇学习（MC / Spelling / Browse）+ 语法书入口 + 德语 Progress / Settings 基础页逻辑 + 社区词库共享入口返回控制
   - `STORAGE_KEYS`：德语专属 localStorage keys（`DE_MASTERED`, `DE_STATS`, `DE_FILTER`）
   - `init()`：加载 `GERMAN_VOCABULARY_DATA`，绑定所有事件
   - `bindGrammarBookTriggers()`：绑定德语/英语语法书入口按钮（移除 `placeholder-trigger` class，挂载真实 `_openGrammarBook`）
+  - `bindLanguageSettingsAndProgress()`：绑定德语/英语的基础 Progress 与 Settings & Data 页面按钮
+  - `updateGermanProgressStats()`：渲染德语词汇总量、掌握数、选择题/拼写统计与综合正确率
+  - `openSharedCommunity(returnScreen)`：打开共享社区词库并记录返回页面
   - `_openGrammarBook(data, title, backFn)`：以指定语言数据初始化 `GrammarBook`，跳转到 `grammarBookScreen`
   - MC / Spelling / Browse 完整练习逻辑（与意大利语站同构但独立）
-- `EnglishApp`：英语词汇学习（MC / Spelling / Browse）
+- `EnglishApp`：英语词汇学习（MC / Spelling / Browse）+ 英语 Progress 基础统计
   - `STORAGE_KEYS`：英语专属 localStorage keys（`EN_MASTERED`, `EN_STATS`, `EN_FILTER`）
   - `init(germanApp)`：加载 `ENGLISH_VOCABULARY_DATA`，绑定所有事件
   - MC / Spelling / Browse 完整练习逻辑
+  - `updateProgressStats()`：渲染英语词汇总量、掌握数、选择题/拼写统计与综合正确率
   - 依赖 `_germanApp`（GermanApp 实例）提供 `showScreen`, `bindClick`, `setText`, `showFeedback`, `resetFeedback`, `escapeHtml`, `escapeAttribute` 等工具方法
 
 依赖：
@@ -585,6 +589,8 @@
 
 - 德语/英语词汇练习逻辑（MC/Spelling/Browse）
 - 德语/英语语法书入口
+- 德语/英语 Progress / Settings 基础页
+- 共享社区词库从德语/英语入口进入后的返回逻辑
 - 德语/英语 localStorage key
 
 看 `german-app.js`。
@@ -1018,6 +1024,11 @@
 - `dimenticato_english_stats`
 - `dimenticato_english_filter`
 
+说明：
+
+- German / English 各自的 Progress 页面直接读取这些语言专属 key
+- 全站导入 / 导出仍主要由 `app.js > Storage` 统一负责，因此如果后续要把德语/英语专属 key 一并纳入备份，需要同步扩展导入导出结构
+
 ### 10.3 动态 key
 
 - 自定义词本学习进度：`dimenticato_progress_wb_<id>`
@@ -1090,6 +1101,12 @@
 - 表结构不匹配
 
 社区上传 / 浏览 / 下载会失败，但本地学习功能不一定受影响。
+
+### 11.4.1 当前社区词库是“多语言共享池”
+
+- Italian / German / English 当前都进入同一个 `communityBrowseScreen`
+- `community-wordbooks.js > backToWelcome()` 不再固定返回 Italian 的 `vocabularyScreen`，而是优先读取 `window.GermanApp.communityReturnScreen`
+- 当前上传表单中的 `language` 字段仍默认写入 `Italian`，说明社区语言筛选尚未真正完成；如果未来要做按语言隔离或筛选，需同时修改前端上传、浏览查询与 Supabase 数据结构
 
 ### 11.5 语法书和动词搭配都采用“预编译 JS 数据”模式
 
@@ -1318,6 +1335,60 @@
 **数据格式约定（新增语言统一采用）：**
 - 词汇：`{ english/german, meaning, chinese, notes, rank, source }`
 - 语法：`{ tree: { parts: [{title, slug, chapters:[{title, slug, topics:[{title,slug}]}]}] }, content: { slug: "markdown..." } }`
+
+### 2026-03-20（德语/英语入口完善 + 多语言文案更新）
+
+- 将站点主标题从“意大利语背单词”统一改为“背单词”。
+- 更新 `index.html` 顶部品牌标题、`<title>` 与帮助说明文案，使其从意大利语单语言描述升级为多语言描述。
+- 更新 `README.md` 为多语言版本说明：
+  - Italian 为完整主站
+  - German / English 为基础可用版本
+  - 社区词库当前三种语言共享同一个资源池
+
+**德语模块调整：**
+- `German / Grammar` 现在只保留 `Grammar Book`。
+- 移除德语 Grammar 中原先的 Verb Conjugation / Verb Collocations / Verb Collocations Practice 占位入口。
+- `German / Vocabulary` 中的 `Community Wordbooks` 现在直接进入共享社区词库页面。
+- `German / Progress` 从占位页升级为基础统计页，展示：
+  - 词汇总量
+  - 已掌握数量
+  - 当前进度
+  - 选择题/拼写统计
+  - 综合正确率
+- `German / Settings & Data` 从占位页升级为基础说明页，增加：
+  - 当前支持能力说明
+  - 共享社区词库入口
+  - 跳转全站 `Settings & Data` 的入口
+
+**英语模块调整：**
+- `English / Grammar` 现在只保留 `Grammar Book`。
+- 移除英语 Grammar 中原先的 Verb Forms / Collocations / Collocations Practice 占位入口。
+- `English / Vocabulary` 中的 `Community Wordbooks` 现在直接进入共享社区词库页面。
+- `English / Progress` 从占位页升级为基础统计页，展示：
+  - 词汇总量
+  - 已掌握数量
+  - 当前进度
+  - 选择题/拼写统计
+  - 综合正确率
+- `English / Settings & Data` 从占位页升级为基础说明页，增加：
+  - 当前支持能力说明
+  - 共享社区词库入口
+  - 跳转全站 `Settings & Data` 的入口
+
+**相关代码变更：**
+- `index.html`
+  - 更新站点主标题与帮助说明
+  - 精简德语/英语 Grammar 入口为仅保留 `Grammar Book`
+  - 为德语/英语新增基础 Progress / Settings & Data 展示卡片与按钮
+- `german-app.js`
+  - 新增 `communityReturnScreen`
+  - 新增 `bindLanguageSettingsAndProgress()`
+  - 新增 `openSharedCommunity(returnScreen)`
+  - 新增 `updateGermanProgressStats()`
+  - 新增 `EnglishApp.updateProgressStats()`
+  - 暴露 `window.GermanApp` / `window.EnglishApp`
+- `community-wordbooks.js`
+  - `backToWelcome()` 改为按 `communityReturnScreen` 返回对应语言来源页，而不再固定返回意大利语 Vocabulary
 
 ---
 

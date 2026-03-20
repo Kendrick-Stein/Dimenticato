@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>意大利语背单词 - Dimenticato</title>
+  <title>背单词 - Dimenticato</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -52,7 +52,7 @@
         <span class="brand-mark"><svg class="icon"><use href="#icon-brand"></use></svg></span>
         <div>
           <p class="eyebrow">Dimenticato</p>
-          <h1>意大利语背单词</h1>
+          <h1>背单词</h1>
         </div>
       </div>
       <div class="header-center">
@@ -115,29 +115,29 @@
               <p class="eyebrow">German</p>
               <h2><svg class="icon"><use href="#icon-brand"></use></svg>Deutsch Lernportal</h2>
             </div>
-            <p class="subtitle">第一阶段：先对齐意大利语站点的产品结构，后续再补充德语数据。</p>
+            <p class="subtitle">德语模块现已接入词汇练习、语法书与基础数据页。</p>
           </div>
 
           <div class="module-grid">
             <button class="module-card" id="goGermanVocabularyBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-library"></use></svg></span>
               <span class="module-card-title">Vocabulary</span>
-              <span class="module-card-desc">系统词汇、我的词本、社区词本（骨架）</span>
+              <span class="module-card-desc">系统词汇、我的词本入口、社区词库</span>
             </button>
             <button class="module-card" id="goGermanGrammarBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
               <span class="module-card-title">Grammar</span>
-              <span class="module-card-desc">语法书、变位、搭配练习（骨架）</span>
+              <span class="module-card-desc">德语语法书阅读</span>
             </button>
             <button class="module-card" id="goGermanProgressBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
               <span class="module-card-title">Progress</span>
-              <span class="module-card-desc">未来接入德语学习统计</span>
+              <span class="module-card-desc">查看德语词汇练习进度与统计</span>
             </button>
             <button class="module-card" id="goGermanSettingsBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-settings"></use></svg></span>
               <span class="module-card-title">Settings &amp; Data</span>
-              <span class="module-card-desc">未来接入德语词包、词本与导入导出</span>
+              <span class="module-card-desc">查看德语数据说明与通用数据操作入口</span>
             </button>
           </div>
         </div>
@@ -151,25 +151,40 @@
               <p class="eyebrow">German / Vocabulary</p>
               <h2><svg class="icon"><use href="#icon-library"></use></svg>选择德语词汇内容来源</h2>
             </div>
-            <p class="subtitle">结构先与意大利语对齐，具体词汇数据在第二阶段补充。</p>
+            <p class="subtitle">可选择系统德语词汇、我的词本入口，或进入共享社区词库。</p>
           </div>
 
           <div class="module-grid">
             <button class="module-card" id="germanSystemVocabularyBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-stack"></use></svg></span>
               <span class="module-card-title">System Vocabulary</span>
-              <span class="module-card-desc">未来接入高频德语词表与难度分层</span>
+              <span class="module-card-desc">使用德语词汇内容开始练习与浏览</span>
             </button>
             <button class="module-card" id="germanWordbooksBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
               <span class="module-card-title">My Wordbooks</span>
-              <span class="module-card-desc">未来支持德语自定义词本</span>
+              <span class="module-card-desc">导入、创建并管理个人德语词本</span>
             </button>
             <button class="module-card" id="germanCommunityBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
               <span class="module-card-title">Community Wordbooks</span>
-              <span class="module-card-desc">未来按语言区分社区词本</span>
+              <span class="module-card-desc">进入共享社区词库，浏览并导入社区资源</span>
             </button>
+          </div>
+
+          <div class="custom-wordbook-section">
+            <div class="section-head-row">
+              <div>
+                <h3 class="section-title">我的德语词本</h3>
+                <p class="subtitle compact">仅显示 German 词本</p>
+              </div>
+              <div class="inline-actions">
+                <input type="file" id="germanWordbookFileInput" accept=".json,.txt" style="display: none;">
+                <button class="back-btn" id="germanImportWordbookBtn">导入词本</button>
+                <button class="next-btn" id="germanCreateWordbookBtn">创建新词本</button>
+              </div>
+            </div>
+            <div class="wordbook-cards" id="germanWordbookCards"></div>
           </div>
         </div>
       </section>
@@ -182,7 +197,7 @@
               <p class="eyebrow">German / Vocabulary</p>
               <h2><svg class="icon"><use href="#icon-book-open"></use></svg>选择练习方式</h2>
             </div>
-            <p class="subtitle">题型结构先保留，后续接入真实德语词汇数据。</p>
+            <p class="subtitle">选择一种方式开始德语词汇练习。</p>
           </div>
 
           <div class="mode-buttons">
@@ -298,29 +313,14 @@
               <p class="eyebrow">German / Grammar</p>
               <h2><svg class="icon"><use href="#icon-puzzle"></use></svg>选择德语语法主题</h2>
             </div>
-            <p class="subtitle">保留与意大利语站一致的模块入口，后续再导入德语语法数据。</p>
+            <p class="subtitle">德语语法部分当前仅保留语法书阅读入口。</p>
           </div>
 
           <div class="module-grid single-column-grid">
-            <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="conjugation">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-cycle"></use></svg></span>
-              <span class="module-card-title">Verb Conjugation</span>
-              <span class="module-card-desc">未来接入德语动词变位数据与练习</span>
-            </button>
             <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="grammar-book">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
               <span class="module-card-title">Grammar Book</span>
-              <span class="module-card-desc">未来接入德语语法章节树与正文</span>
-            </button>
-            <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="collocations">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="module-card-title">Verb Collocations</span>
-              <span class="module-card-desc">未来接入德语动词搭配与例句</span>
-            </button>
-            <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="collocations-practice">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
-              <span class="module-card-title">Verb Collocations Practice</span>
-              <span class="module-card-desc">未来接入德语搭配练习题型</span>
+              <span class="module-card-desc">使用已接入的德语语法章节树与正文内容</span>
             </button>
           </div>
         </div>
@@ -334,12 +334,42 @@
               <p class="eyebrow">German / Progress</p>
               <h2><svg class="icon"><use href="#icon-chart"></use></svg>德语学习进度</h2>
             </div>
-            <p class="subtitle">当前仍是结构占位，等德语词汇与练习数据导入后再接入真实统计。</p>
+            <p class="subtitle">基于当前德语词汇练习数据，查看掌握量与练习统计。</p>
           </div>
 
-          <div class="empty-state language-empty-state">
-            <div class="empty-state-icon">📊</div>
-            <p>German progress dashboard will be activated after vocabulary data is added.</p>
+          <div class="stats-grid progress-summary-grid">
+            <div class="stat-card">
+              <div class="stat-card-label">德语词汇总量</div>
+              <div class="stat-card-value" id="germanProgressTotalWords">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">已掌握</div>
+              <div class="stat-card-value" id="germanProgressMasteredWords">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">当前进度</div>
+              <div class="stat-card-value" id="germanProgressPercent">0%</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">选择题统计</div>
+              <div class="stat-card-value" id="germanProgressMcStats">0 / 0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">拼写统计</div>
+              <div class="stat-card-value" id="germanProgressSpStats">0 / 0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">综合正确率</div>
+              <div class="stat-card-value" id="germanProgressAccuracy">0%</div>
+            </div>
+          </div>
+
+          <div class="module-grid single-column-grid compact-grid">
+            <div class="module-card wide-card">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
+              <span class="module-card-title">说明</span>
+              <span class="module-card-desc">当前德语 Progress 统计的是德语系统词汇练习的本地学习记录。</span>
+            </div>
           </div>
         </div>
       </section>
@@ -352,14 +382,29 @@
               <p class="eyebrow">German / Settings &amp; Data</p>
               <h2><svg class="icon"><use href="#icon-settings"></use></svg>德语设置与数据</h2>
             </div>
-            <p class="subtitle">后续将接入德语词汇包、词本导入、主题、学习备份与数据恢复。</p>
+            <p class="subtitle">查看德语模块信息，并使用站点通用的数据与主题功能。</p>
           </div>
 
           <div class="module-grid single-column-grid compact-grid">
             <div class="module-card wide-card">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-library"></use></svg></span>
+              <span class="module-card-title">德语模块</span>
+              <span class="module-card-desc">德语系统词汇练习、德语语法书阅读、共享社区词库入口。</span>
+            </div>
+            <button class="module-card wide-card" id="germanSettingsCommunityBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
+              <span class="module-card-title">打开社区词库</span>
+              <span class="module-card-desc">浏览社区词库并导入需要的学习资源。</span>
+            </button>
+            <button class="module-card wide-card" id="germanSettingsGlobalDataBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-settings"></use></svg></span>
+              <span class="module-card-title">打开全站 Settings &amp; Data</span>
+              <span class="module-card-desc">打开站点数据、主题、帮助与重置功能。</span>
+            </button>
+            <div class="module-card wide-card">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
-              <span class="module-card-title">第二阶段预留</span>
-              <span class="module-card-desc">导入 German vocabulary data、导入词本、备份学习记录、启用社区语言筛选。</span>
+              <span class="module-card-title">数据说明</span>
+              <span class="module-card-desc">德语学习进度使用独立 localStorage key 保存；导入导出仍走全站统一数据结构。</span>
             </div>
           </div>
         </div>
@@ -372,29 +417,29 @@
               <p class="eyebrow">English</p>
               <h2><svg class="icon"><use href="#icon-brand"></use></svg>English Learning Portal</h2>
             </div>
-            <p class="subtitle">第一阶段：先复刻意大利语站点的信息架构，后续再补英语词汇、语法与练习数据。</p>
+            
           </div>
 
           <div class="module-grid">
             <button class="module-card" id="goEnglishVocabularyBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-library"></use></svg></span>
               <span class="module-card-title">Vocabulary</span>
-              <span class="module-card-desc">系统词汇、词本、社区资源（骨架）</span>
+              <span class="module-card-desc">系统词汇、我的词本入口、社区词库</span>
             </button>
             <button class="module-card" id="goEnglishGrammarBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
               <span class="module-card-title">Grammar</span>
-              <span class="module-card-desc">语法、verb forms、搭配练习（骨架）</span>
+              <span class="module-card-desc">英语语法书阅读</span>
             </button>
             <button class="module-card" id="goEnglishProgressBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
               <span class="module-card-title">Progress</span>
-              <span class="module-card-desc">未来接入英语学习统计与可视化</span>
+              <span class="module-card-desc">查看英语词汇练习进度与统计</span>
             </button>
             <button class="module-card" id="goEnglishSettingsBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-settings"></use></svg></span>
               <span class="module-card-title">Settings &amp; Data</span>
-              <span class="module-card-desc">未来接入英语词包与数据管理</span>
+              <span class="module-card-desc">查看英语数据说明与通用数据操作入口</span>
             </button>
           </div>
         </div>
@@ -408,25 +453,40 @@
               <p class="eyebrow">English / Vocabulary</p>
               <h2><svg class="icon"><use href="#icon-library"></use></svg>Choose vocabulary source</h2>
             </div>
-            <p class="subtitle">先保留与意大利语站一致的词汇层结构，二阶段再导入英语数据。</p>
+            <p class="subtitle">可选择系统英语词汇、我的词本入口，或进入共享社区词库。</p>
           </div>
 
           <div class="module-grid">
             <button class="module-card" id="englishSystemVocabularyBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-stack"></use></svg></span>
               <span class="module-card-title">System Vocabulary</span>
-              <span class="module-card-desc">未来接入高频英语词表与分层</span>
+              <span class="module-card-desc">使用英语词汇内容开始练习与浏览</span>
             </button>
             <button class="module-card" id="englishWordbooksBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
               <span class="module-card-title">My Wordbooks</span>
-              <span class="module-card-desc">未来支持英语自定义词本</span>
+              <span class="module-card-desc">导入、创建并管理个人英语词本</span>
             </button>
             <button class="module-card" id="englishCommunityBtn">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
               <span class="module-card-title">Community Wordbooks</span>
-              <span class="module-card-desc">未来支持英语社区词本</span>
+              <span class="module-card-desc">进入共享社区词库，浏览并导入社区资源</span>
             </button>
+          </div>
+
+          <div class="custom-wordbook-section">
+            <div class="section-head-row">
+              <div>
+                <h3 class="section-title">My English Wordbooks</h3>
+                <p class="subtitle compact">Only English wordbooks are shown here</p>
+              </div>
+              <div class="inline-actions">
+                <input type="file" id="englishWordbookFileInput" accept=".json,.txt" style="display: none;">
+                <button class="back-btn" id="englishImportWordbookBtn">Import</button>
+                <button class="next-btn" id="englishCreateWordbookBtn">Create</button>
+              </div>
+            </div>
+            <div class="wordbook-cards" id="englishWordbookCards"></div>
           </div>
         </div>
       </section>
@@ -555,29 +615,14 @@
               <p class="eyebrow">English / Grammar</p>
               <h2><svg class="icon"><use href="#icon-puzzle"></use></svg>Choose grammar topic</h2>
             </div>
-            <p class="subtitle">先保留与意大利语站对应的模块结构，后续再将英语内容接入。</p>
+            <p class="subtitle">英语语法部分当前仅保留 Grammar Book。</p>
           </div>
 
           <div class="module-grid single-column-grid">
-            <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="conjugation">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-cycle"></use></svg></span>
-              <span class="module-card-title">Verb Forms</span>
-              <span class="module-card-desc">未来接入英语时态、词形与不规则动词练习</span>
-            </button>
             <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="grammar-book">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
               <span class="module-card-title">Grammar Book</span>
-              <span class="module-card-desc">未来接入英语语法章节与阅读器</span>
-            </button>
-            <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="collocations">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="module-card-title">Collocations</span>
-              <span class="module-card-desc">未来接入英语动词搭配、介词搭配与例句</span>
-            </button>
-            <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="collocations-practice">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
-              <span class="module-card-title">Collocations Practice</span>
-              <span class="module-card-desc">未来接入英语搭配练习题型</span>
+              <span class="module-card-desc">使用已接入的英语语法章节与阅读器内容</span>
             </button>
           </div>
         </div>
@@ -591,12 +636,42 @@
               <p class="eyebrow">English / Progress</p>
               <h2><svg class="icon"><use href="#icon-chart"></use></svg>English learning progress</h2>
             </div>
-            <p class="subtitle">当前仍是结构占位，英语数据接入后将启用真实统计模块。</p>
+            <p class="subtitle">基于当前英语词汇练习数据，查看掌握量与练习统计。</p>
           </div>
 
-          <div class="empty-state language-empty-state">
-            <div class="empty-state-icon">📈</div>
-            <p>English progress tracking will be enabled in phase 2.</p>
+          <div class="stats-grid progress-summary-grid">
+            <div class="stat-card">
+              <div class="stat-card-label">English vocabulary</div>
+              <div class="stat-card-value" id="englishProgressTotalWords">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">Mastered</div>
+              <div class="stat-card-value" id="englishProgressMasteredWords">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">Progress</div>
+              <div class="stat-card-value" id="englishProgressPercent">0%</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">MC stats</div>
+              <div class="stat-card-value" id="englishProgressMcStats">0 / 0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">Spelling stats</div>
+              <div class="stat-card-value" id="englishProgressSpStats">0 / 0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-label">Accuracy</div>
+              <div class="stat-card-value" id="englishProgressAccuracy">0%</div>
+            </div>
+          </div>
+
+          <div class="module-grid single-column-grid compact-grid">
+            <div class="module-card wide-card">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
+              <span class="module-card-title">Note</span>
+              <span class="module-card-desc">Current English Progress reflects local learning records from the English vocabulary module.</span>
+            </div>
           </div>
         </div>
       </section>
@@ -609,14 +684,29 @@
               <p class="eyebrow">English / Settings &amp; Data</p>
               <h2><svg class="icon"><use href="#icon-settings"></use></svg>English settings &amp; data</h2>
             </div>
-            <p class="subtitle">未来接入英语词包导入、词本、备份恢复与社区资源筛选。</p>
+            <p class="subtitle">View English module information and use the site's shared data tools.</p>
           </div>
 
           <div class="module-grid single-column-grid compact-grid">
             <div class="module-card wide-card">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-library"></use></svg></span>
+              <span class="module-card-title">English module</span>
+              <span class="module-card-desc">English system vocabulary practice, English grammar book, and the shared community wordbook entry.</span>
+            </div>
+            <button class="module-card wide-card" id="englishSettingsCommunityBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
+              <span class="module-card-title">Open Community Wordbooks</span>
+              <span class="module-card-desc">Browse community wordbooks and import useful resources.</span>
+            </button>
+            <button class="module-card wide-card" id="englishSettingsGlobalDataBtn">
+              <span class="module-card-icon"><svg class="icon"><use href="#icon-settings"></use></svg></span>
+              <span class="module-card-title">Open Global Settings &amp; Data</span>
+              <span class="module-card-desc">Use export, import, theme, help and reset from the shared data center.</span>
+            </button>
+            <div class="module-card wide-card">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
-              <span class="module-card-title">第二阶段预留</span>
-              <span class="module-card-desc">导入 English vocabulary data、导入词本、备份学习记录、启用 community language filter。</span>
+              <span class="module-card-title">Data note</span>
+              <span class="module-card-desc">English learning progress is stored with dedicated localStorage keys, while import/export still uses the global data structure.</span>
             </div>
           </div>
         </div>
@@ -627,10 +717,10 @@
           <div class="module-view-header">
             <button class="back-btn section-back-btn" id="languageSkeletonPlaceholderBackBtn">返回上一层</button>
             <div>
-              <p class="eyebrow" id="languageSkeletonPlaceholderEyebrow">Placeholder</p>
-              <h2 id="languageSkeletonPlaceholderTitle"><svg class="icon"><use href="#icon-puzzle"></use></svg>模块占位页</h2>
+              <p class="eyebrow" id="languageSkeletonPlaceholderEyebrow">Module</p>
+              <h2 id="languageSkeletonPlaceholderTitle"><svg class="icon"><use href="#icon-puzzle"></use></svg>模块页面</h2>
             </div>
-            <p class="subtitle" id="languageSkeletonPlaceholderDescription">当前是结构骨架，具体数据将在第二阶段接入。</p>
+            <p class="subtitle" id="languageSkeletonPlaceholderDescription">查看当前模块内容与说明。</p>
           </div>
 
           <div class="selection-summary-card">
@@ -644,15 +734,15 @@
             </div>
             <div class="selection-summary-item">
               <span class="selection-summary-label">状态</span>
-              <strong>第一阶段骨架</strong>
+              <strong>可用</strong>
             </div>
           </div>
 
           <div class="module-grid single-column-grid compact-grid">
             <div class="module-card wide-card">
               <span class="module-card-icon"><svg class="icon"><use href="#icon-spark"></use></svg></span>
-              <span class="module-card-title">二阶段需要准备的数据</span>
-              <span class="module-card-desc" id="languageSkeletonPlaceholderDataHint">词汇主数据、模块目录、练习题数据、语言专属说明。</span>
+              <span class="module-card-title">模块内容</span>
+              <span class="module-card-desc" id="languageSkeletonPlaceholderDataHint">词汇数据、模块目录、练习内容与页面说明。</span>
             </div>
           </div>
         </div>
@@ -1283,21 +1373,21 @@
             <span class="language-switcher-flag">🇮🇹</span>
             <span class="language-switcher-copy">
               <strong>Italian</strong>
-              <span>当前完整站点</span>
+              <span>词汇、语法、进度、设置</span>
             </span>
           </button>
           <button class="language-switcher-option" data-language="german">
             <span class="language-switcher-flag">🇩🇪</span>
             <span class="language-switcher-copy">
               <strong>German</strong>
-              <span>第一阶段骨架</span>
+              <span>词汇、语法、进度、设置</span>
             </span>
           </button>
           <button class="language-switcher-option" data-language="english">
             <span class="language-switcher-flag">🇬🇧</span>
             <span class="language-switcher-copy">
               <strong>English</strong>
-              <span>第一阶段骨架</span>
+              <span>词汇、语法、进度、设置</span>
             </span>
           </button>
         </div>
@@ -1415,15 +1505,15 @@
       <div class="modal-body">
         <form id="wordEditForm" onsubmit="event.preventDefault(); WordbookEditor.saveWordEdit();">
           <div class="form-group">
-            <label for="editWordItalian">意大利语 *</label>
+            <label for="editWordItalian" id="editWordPrimaryLabel">意大利语 *</label>
             <input type="text" id="editWordItalian" class="form-input" required>
           </div>
           <div class="form-group">
-            <label for="editWordEnglish">英语翻译 *</label>
+            <label for="editWordEnglish" id="editWordSecondaryLabel">英语翻译 *</label>
             <input type="text" id="editWordEnglish" class="form-input" required>
           </div>
           <div class="form-group">
-            <label for="editWordChinese">中文翻译</label>
+            <label for="editWordChinese" id="editWordChineseLabel">中文翻译</label>
             <input type="text" id="editWordChinese" class="form-input">
           </div>
           <div class="form-group">
@@ -1681,26 +1771,30 @@
       </div>
       <div class="modal-body help-modal-body">
         <div class="help-section">
-          <h2><svg class="icon"><use href="#icon-brand"></use></svg>Dimenticato - 意大利语背单词应用</h2>
-          <p class="help-intro">一个纯静态的意大利语词汇学习网页应用，支持本地离线使用。</p>
+          <h2><svg class="icon"><use href="#icon-brand"></use></svg>Dimenticato - 背单词</h2>
+          <p class="help-intro">一个纯静态的多语言词汇学习网页应用，当前支持 Italian、German、English 三个语言入口，支持本地离线使用。</p>
         </div>
 
         <div class="help-section">
           <h3><svg class="icon"><use href="#icon-spark"></use></svg>功能特点</h3>
           
           <div class="feature-box">
+            <h4><svg class="icon"><use href="#icon-brand"></use></svg>多语言入口</h4>
+            <ul>
+              <li><strong>Italian</strong>：完整词汇、语法、动词变位、动词搭配、社区与统计体验</li>
+              <li><strong>German</strong>：系统词汇练习、德语语法书、基础 Progress、Settings &amp; Data</li>
+              <li><strong>English</strong>：系统词汇练习、英语语法书、基础 Progress、Settings &amp; Data</li>
+              <li><strong>社区词库</strong>：当前三个语言入口共用同一个社区词库池</li>
+            </ul>
+          </div>
+
+          <div class="feature-box">
             <h4><svg class="icon"><use href="#icon-library"></use></svg>系统词汇库</h4>
             <ul>
-              <li><strong>28,787</strong> 个意大利语单词及英语翻译</li>
-              <li>按使用频率排序（从最常用到最少用）</li>
-              <li>四个难度级别：
-                <ul>
-                  <li>初级：1,000 个高频词</li>
-                  <li>中级：3,000 个常用词</li>
-                  <li>高级：5,000 个词汇</li>
-                  <li>全部：28,787 个完整词库</li>
-                </ul>
-              </li>
+              <li><strong>Italian</strong>：28,787 个意大利语单词及英语翻译</li>
+              <li><strong>German</strong>：已接入德语系统词汇数据，可进行选择题 / 拼写 / 浏览练习</li>
+              <li><strong>English</strong>：已接入英语系统词汇数据，可进行选择题 / 拼写 / 浏览练习</li>
+              <li>系统词汇默认按词频或数据顺序组织，适合从高频内容逐步扩展</li>
             </ul>
           </div>
 
@@ -1793,6 +1887,7 @@ love
           <div class="usage-box">
             <h4>使用系统词汇库：</h4>
             <ol>
+              <li><strong>先选择语言</strong> - 在左侧 sidebar 中切换 Italian / German / English</li>
               <li><strong>选择难度级别</strong> - 初级/中级/高级/全部</li>
               <li><strong>选择学习模式</strong> - 选择题/拼写/浏览模式</li>
               <li><strong>开始学习</strong> - 进度自动保存</li>
@@ -1802,6 +1897,7 @@ love
           <div class="usage-box">
             <h4>使用自定义单词本：</h4>
             <ol>
+              <li><strong>先选择语言</strong> - 词本入口会跟随当前语言模块展示</li>
               <li><strong>创建单词本</strong> - 用记事本创建 <code>.txt</code> 文件，按格式添加单词</li>
               <li><strong>导入单词本</strong> - 点击"导入单词本"按钮，选择你的文件</li>
               <li><strong>选择单词本</strong> - 点击单词本卡片激活</li>
@@ -1834,7 +1930,7 @@ love
                 </ul>
               </li>
             </ul>
-            <p class="help-tip"><strong>提示：</strong>建议定期导出数据备份，换设备时可以通过导入恢复学习进度。</p>
+            <p class="help-tip"><strong>提示：</strong>建议定期导出数据备份；德语和英语虽然使用独立进度 key，但仍走统一导入导出流程。</p>
           </div>
 
           <div class="feature-box">

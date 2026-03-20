@@ -104,6 +104,15 @@ const AppState = {
   }
 };
 
+function getWordbookLanguage(wordbook) {
+  return wordbook?.language || 'italian';
+}
+
+function getWordbookProgressKey(id, language = 'italian') {
+  const normalizedLanguage = language || 'italian';
+  return `dimenticato_progress_wb_${normalizedLanguage}_${id}`;
+}
+
 const ScreenMeta = {
   welcomeScreen: {
     module: 'home',
@@ -199,7 +208,10 @@ const Storage = {
     try {
       // 如果当前在学习自定义单词本，保存到对应的 key
       if (AppState.currentWordbook) {
-        const key = `dimenticato_progress_wb_${AppState.currentWordbook.id}`;
+        const key = getWordbookProgressKey(
+          AppState.currentWordbook.id,
+          getWordbookLanguage(AppState.currentWordbook)
+        );
         localStorage.setItem(key, JSON.stringify([...AppState.masteredWords]));
       } else {
         // 否则保存到系统词汇的 key
@@ -237,7 +249,10 @@ const Storage = {
       
       const wordbooks = localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS);
       if (wordbooks) {
-        AppState.customWordbooks = JSON.parse(wordbooks);
+        AppState.customWordbooks = JSON.parse(wordbooks).map(wb => ({
+          language: 'italian',
+          ...wb
+        }));
       }
     } catch (e) {
       console.error('加载数据失败:', e);
@@ -1234,10 +1249,20 @@ const WordbookManager = {
       return { valid: false, error: 'words 字段必须是非空数组' };
     }
     
+    const language = data.language || 'italian';
+
     // 验证每个单词
     for (let i = 0; i < data.words.length; i++) {
       const word = data.words[i];
-      if (!word.italian || !word.english) {
+      if (language === 'german') {
+        if (!word.german && !word.display) {
+          return { valid: false, error: `第 ${i + 1} 个单词缺少 german/display 字段` };
+        }
+      } else if (language === 'english') {
+        if (!word.english) {
+          return { valid: false, error: `第 ${i + 1} 个单词缺少 english 字段` };
+        }
+      } else if (!word.italian || !word.english) {
         return { valid: false, error: `第 ${i + 1} 个单词缺少 italian 或 english 字段` };
       }
     }
@@ -1245,6 +1270,12 @@ const WordbookManager = {
     return { valid: true };
   },
   
+  getPrimaryWordValue(word, language = 'italian') {
+    if (language === 'german') return word.german || word.display || '';
+    if (language === 'english') return word.english || '';
+    return word.italian || '';
+  },
+
   // 在 VOCABULARY_DATA 中查找意大利语单词
   lookupWord(italian) {
     if (typeof VOCABULARY_DATA === 'undefined') {
@@ -1256,7 +1287,7 @@ const WordbookManager = {
   },
   
   // 解析 TXT 格式单词本（支持灵活格式 + 自动查找）
-  parseTxtWordbook(text) {
+  parseTxtWordbook(text, language = 'italian') {
     // 移除文件开头的空行
     text = text.trim();
     
@@ -1275,15 +1306,52 @@ const WordbookManager = {
       
       if (lines.length === 0) continue;
       
-      let word = {
-        italian: '',
-        english: '',
-        chinese: '',
-        notes: ''
-      };
+      let word = { chinese: '', notes: '' };
       
       // 检测格式：1行=仅意大利语，2-4行=完整格式
-      if (lines.length === 1) {
+      if (language === 'german') {
+        if (lines.length === 1) {
+          word.german = lines[0];
+          word.display = lines[0];
+          const found = (typeof GERMAN_VOCABULARY_DATA !== 'undefined' ? GERMAN_VOCABULARY_DATA : []).find(
+            item => (item.german || '').toLowerCase().trim() === word.german.toLowerCase().trim()
+          );
+          if (found) {
+            word.meaning = found.meaning || found.chinese || '';
+            word.chinese = found.chinese || '';
+            autoMatchedCount++;
+          } else {
+            word.meaning = '';
+            needManualCount++;
+          }
+        } else {
+          word.german = lines[0];
+          word.display = lines[0];
+          word.meaning = lines[1] || '';
+          if (lines.length >= 3) word.chinese = lines[2];
+          if (lines.length >= 4) word.notes = lines[3];
+        }
+      } else if (language === 'english') {
+        if (lines.length === 1) {
+          word.english = lines[0];
+          const found = (typeof ENGLISH_VOCABULARY_DATA !== 'undefined' ? ENGLISH_VOCABULARY_DATA : []).find(
+            item => (item.english || '').toLowerCase().trim() === word.english.toLowerCase().trim()
+          );
+          if (found) {
+            word.meaning = found.meaning || found.chinese || '';
+            word.chinese = found.chinese || '';
+            autoMatchedCount++;
+          } else {
+            word.meaning = '';
+            needManualCount++;
+          }
+        } else {
+          word.english = lines[0];
+          word.meaning = lines[1] || '';
+          if (lines.length >= 3) word.chinese = lines[2];
+          if (lines.length >= 4) word.notes = lines[3];
+        }
+      } else if (lines.length === 1) {
         // 仅意大利语，需要自动查找
         word.italian = lines[0];
         
@@ -1328,8 +1396,9 @@ const WordbookManager = {
       }
       
       // 验证必填字段（意大利语必须存在）
-      if (!word.italian) {
-        throw new Error(`第 ${i + 1} 个单词块缺少意大利语单词`);
+      const primaryField = language === 'german' ? 'german' : language === 'english' ? 'english' : 'italian';
+      if (!word[primaryField]) {
+        throw new Error(`第 ${i + 1} 个单词块缺少${primaryField}字段`);
       }
       
       words.push(word);
@@ -1344,6 +1413,10 @@ const WordbookManager = {
   
   // 导入单词本（支持智能导入 + 重复检测）
   importFromFile(file) {
+    return this.importFromFileWithLanguage(file, 'italian');
+  },
+
+  importFromFileWithLanguage(file, language = 'italian') {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
       const isTxtFile = file.name.toLowerCase().endsWith('.txt');
@@ -1361,7 +1434,7 @@ const WordbookManager = {
           
           if (isTxtFile) {
             // 解析 TXT 格式（新格式支持自动查找）
-            const parseResult = this.parseTxtWordbook(content);
+            const parseResult = this.parseTxtWordbook(content, language);
             const words = parseResult.words;
             importStats.autoMatchedCount = parseResult.autoMatchedCount;
             importStats.needManualCount = parseResult.needManualCount;
@@ -1372,11 +1445,13 @@ const WordbookManager = {
             data = {
               name: fileName,
               description: `从 TXT 文件导入（${new Date().toLocaleDateString()}）`,
+              language,
               words: words
             };
           } else {
             // 解析 JSON 格式
             data = JSON.parse(content);
+            data.language = data.language || language;
             const validation = this.validateWordbook(data);
             
             if (!validation.valid) {
@@ -1386,8 +1461,9 @@ const WordbookManager = {
           }
           
           // 检查是否存在同名单词本（用于重复检测）
-          const existingWordbook = AppState.customWordbooks.find(wb => wb.name === data.name);
+          let existingWordbook = AppState.customWordbooks.find(wb => wb.name === data.name && getWordbookLanguage(wb) === data.language);
           let existingWords = new Set();
+          const activeLanguage = data.language || language;
           
           if (existingWordbook) {
             // 如果存在同名单词本，提供三个选项
@@ -1406,7 +1482,7 @@ const WordbookManager = {
             } else if (action === '1') {
               // 批量添加模式：收集现有单词（大小写不敏感）
               existingWordbook.words.forEach(w => {
-                existingWords.add(w.italian.toLowerCase().trim());
+                existingWords.add(this.getPrimaryWordValue(w, activeLanguage).toLowerCase().trim());
               });
             } else if (action === '2') {
               // 创建新单词本模式：不收集现有单词，后面会创建新单词本并添加时间戳
@@ -1423,18 +1499,24 @@ const WordbookManager = {
           const foundWords = []; // 已找到翻译的单词
           
           data.words.forEach(word => {
-            const normalizedItalian = word.italian.toLowerCase().trim();
+            const normalizedPrimary = this.getPrimaryWordValue(word, activeLanguage).toLowerCase().trim();
             
             // 检查重复
-            if (existingWords.has(normalizedItalian)) {
+            if (existingWords.has(normalizedPrimary)) {
               importStats.duplicatesSkipped++;
               return;
             }
             
-            existingWords.add(normalizedItalian);
+            existingWords.add(normalizedPrimary);
             
             // 分类：需要手动编辑 vs 已完整
-            if (!word.english || !word.chinese) {
+            const secondaryValue = activeLanguage === 'german'
+              ? (word.meaning || '')
+              : activeLanguage === 'english'
+                ? (word.meaning || '')
+                : (word.english || '');
+
+            if (!secondaryValue || !word.chinese) {
               notFoundWords.push(word);
             } else {
               foundWords.push(word);
@@ -1467,6 +1549,7 @@ const WordbookManager = {
             const wordbook = {
               id: Date.now(),
               name: data.name,
+              language: data.language || language,
               description: data.description || '',
               words: wordsToImport,
               wordCount: wordsToImport.length,
@@ -1498,6 +1581,42 @@ const WordbookManager = {
       reader.readAsText(file);
     });
   },
+
+  getWordbooksByLanguage(language = 'italian') {
+    return AppState.customWordbooks.filter(wb => getWordbookLanguage(wb) === language);
+  },
+
+  mapWordbookWordsForLanguage(words = [], language = 'italian') {
+    return words.map((word) => {
+      if (language === 'german') {
+        return {
+          german: word.german || word.display || '',
+          display: word.display || word.german || '',
+          meaning: word.meaning || word.chinese || '',
+          chinese: word.chinese || '',
+          notes: word.notes || '',
+          rank: 999999,
+          source: 'custom'
+        };
+      }
+
+      if (language === 'english') {
+        return {
+          english: word.english || '',
+          meaning: word.meaning || word.chinese || '',
+          chinese: word.chinese || '',
+          notes: word.notes || '',
+          rank: 999999,
+          source: 'custom'
+        };
+      }
+
+      return {
+        ...word,
+        rank: 999999
+      };
+    });
+  },
   
   // 删除单词本
   deleteWordbook(id) {
@@ -1511,6 +1630,7 @@ const WordbookManager = {
         
         // 同时删除该单词本的学习进度
         localStorage.removeItem(`dimenticato_progress_wb_${id}`);
+        localStorage.removeItem(getWordbookProgressKey(id, getWordbookLanguage(wordbook)));
         
         // 如果删除的是当前选中的单词本，清除选择状态
         if (AppState.selectedSource === id) {
@@ -1526,7 +1646,9 @@ const WordbookManager = {
   // 保存单词本列表到 LocalStorage
   saveWordbooks() {
     try {
-      localStorage.setItem(Storage.KEYS.CUSTOM_WORDBOOKS, JSON.stringify(AppState.customWordbooks));
+      localStorage.setItem(Storage.KEYS.CUSTOM_WORDBOOKS, JSON.stringify(
+        AppState.customWordbooks.map(wb => ({ language: 'italian', ...wb }))
+      ));
     } catch (e) {
       console.error('保存单词本失败:', e);
       alert('保存失败，可能是存储空间不足');
@@ -1543,10 +1665,7 @@ const WordbookManager = {
     
     // 设置当前单词本和单词列表
     AppState.currentWordbook = wordbook;
-    AppState.currentWords = wordbook.words.map(w => ({
-      ...w,
-      rank: 999999 // 自定义单词本没有排名
-    }));
+    AppState.currentWords = this.mapWordbookWordsForLanguage(wordbook.words, getWordbookLanguage(wordbook));
     
     // 加载该单词本的学习进度
     this.loadWordbookProgress(id);
@@ -1568,7 +1687,8 @@ const WordbookManager = {
   loadWordbookProgress(id) {
     try {
       const key = `dimenticato_progress_wb_${id}`;
-      const progress = localStorage.getItem(key);
+      const languageKey = getWordbookProgressKey(id, getWordbookLanguage(AppState.currentWordbook || { language: 'italian' }));
+      const progress = localStorage.getItem(languageKey) || localStorage.getItem(key);
       if (progress) {
         const mastered = JSON.parse(progress);
         AppState.masteredWords = new Set(mastered);
@@ -1620,10 +1740,7 @@ const WordbookManager = {
     AppState.currentWordbook = wordbook;
     
     // 设置当前单词列表
-    AppState.currentWords = wordbook.words.map(w => ({
-      ...w,
-      rank: 999999
-    }));
+    AppState.currentWords = this.mapWordbookWordsForLanguage(wordbook.words, getWordbookLanguage(wordbook));
     
     // 加载该单词本的学习进度
     this.loadWordbookProgress(id);

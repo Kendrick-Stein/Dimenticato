@@ -26,6 +26,7 @@
     quizTotal: 0,
     browseFilter: 'all',
     activeLanguage: 'italian',
+    communityReturnScreen: 'vocabularyScreen',
 
     init() {
       if (typeof GERMAN_VOCABULARY_DATA === 'undefined') {
@@ -39,6 +40,7 @@
       this.bindGermanNavigation();
       this.bindGermanPractice();
       this.bindGrammarBookTriggers();
+      this.bindLanguageSettingsAndProgress();
       this.bindPlaceholderTriggers();
       this.applyInitialLanguage();
 
@@ -155,8 +157,8 @@
 
       this.bindClick('germanVocabularyBackBtn', () => this.showScreen('germanWelcomeScreen'));
       this.bindClick('germanSystemVocabularyBtn', () => this.showScreen('germanVocabularyModesScreen'));
-      this.bindClick('germanWordbooksBtn', () => this.showGermanPlaceholder('My Wordbooks', '未来支持德语自定义词本导入、编辑与独立练习记录。'));
-      this.bindClick('germanCommunityBtn', () => this.showGermanPlaceholder('Community Wordbooks', '未来支持德语社区词本浏览、导入和语言筛选。'));
+      this.bindClick('germanWordbooksBtn', () => this.renderLanguageWordbooks('german'));
+      this.bindClick('germanCommunityBtn', () => this.openSharedCommunity('germanVocabularyScreen'));
 
       this.bindClick('germanModesBackBtn', () => this.showScreen('germanVocabularyScreen'));
       this.bindClick('germanGrammarBackBtn', () => this.showScreen('germanWelcomeScreen'));
@@ -172,9 +174,162 @@
       this.bindClick('goEnglishProgressBtn', () => this.showScreen('englishProgressScreen'));
       this.bindClick('goEnglishSettingsBtn', () => this.showScreen('englishSettingsScreen'));
       this.bindClick('englishSystemVocabularyBtn', () => this.showScreen('englishVocabularyModesScreen'));
-      this.bindClick('englishWordbooksBtn', () => this.showEnglishPlaceholder('My Wordbooks', '未来支持英语自定义词本。'));
-      this.bindClick('englishCommunityBtn', () => this.showEnglishPlaceholder('Community Wordbooks', '未来支持英语社区词本。'));
+      this.bindClick('englishWordbooksBtn', () => this.renderLanguageWordbooks('english'));
+      this.bindClick('englishCommunityBtn', () => this.openSharedCommunity('englishVocabularyScreen'));
       this.bindClick('englishModesBackBtn', () => this.showScreen('englishVocabularyScreen'));
+
+      this.bindClick('germanImportWordbookBtn', () => document.getElementById('germanWordbookFileInput')?.click());
+      this.bindClick('englishImportWordbookBtn', () => document.getElementById('englishWordbookFileInput')?.click());
+      this.bindClick('germanCreateWordbookBtn', () => this.createLanguageWordbook('german'));
+      this.bindClick('englishCreateWordbookBtn', () => this.createLanguageWordbook('english'));
+
+      document.getElementById('germanWordbookFileInput')?.addEventListener('change', (e) => this.handleLanguageWordbookImport(e, 'german'));
+      document.getElementById('englishWordbookFileInput')?.addEventListener('change', (e) => this.handleLanguageWordbookImport(e, 'english'));
+    },
+
+    createLanguageWordbook(language) {
+      if (typeof WordbookEditor === 'undefined') {
+        alert('单词本编辑功能未加载。');
+        return;
+      }
+      const wordbook = WordbookEditor.createNewWordbook(language);
+      if (wordbook) {
+        this.renderLanguageWordbooks(language);
+      }
+    },
+
+    async handleLanguageWordbookImport(event, language) {
+      const file = event?.target?.files?.[0];
+      if (!file || typeof WordbookManager === 'undefined') return;
+      try {
+        const result = await WordbookManager.importFromFileWithLanguage(file, language);
+        alert(`已导入词本：${result.wordbook.name}`);
+        this.renderLanguageWordbooks(language);
+      } catch (error) {
+        alert(`导入失败：${error}`);
+      }
+      event.target.value = '';
+    },
+
+    renderLanguageWordbooks(language) {
+      const containerId = language === 'german' ? 'germanWordbookCards' : 'englishWordbookCards';
+      const screenId = language === 'german' ? 'germanVocabularyScreen' : 'englishVocabularyScreen';
+      const container = document.getElementById(containerId);
+      if (!container || typeof WordbookManager === 'undefined') {
+        this.showScreen(screenId);
+        return;
+      }
+
+      const wordbooks = WordbookManager.getWordbooksByLanguage(language);
+      if (!wordbooks.length) {
+        container.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 1rem;">还没有词本</p>';
+      } else {
+        container.innerHTML = wordbooks.map(wb => `
+          <div class="wordbook-card" data-language-wordbook-id="${wb.id}">
+            <button class="wordbook-card-manage-btn" data-manage-id="${wb.id}" title="管理单词本">${renderIcon('icon-settings')}</button>
+            <button class="wordbook-delete-btn" data-delete-id="${wb.id}" title="删除">×</button>
+            <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
+            <span class="wordbook-card-name">${this.escapeHtml(wb.name)}</span>
+            <span class="wordbook-card-count">${wb.wordCount} 词</span>
+            <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
+          </div>
+        `).join('');
+
+        container.querySelectorAll('[data-language-wordbook-id]').forEach(card => {
+          card.addEventListener('click', () => this.selectLanguageWordbook(parseInt(card.dataset.languageWordbookId, 10), language));
+        });
+        container.querySelectorAll('[data-manage-id]').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            WordbookEditor?.openEditor(parseInt(btn.dataset.manageId, 10));
+          });
+        });
+        container.querySelectorAll('[data-delete-id]').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            WordbookManager?.deleteWordbook(parseInt(btn.dataset.deleteId, 10));
+            this.renderLanguageWordbooks(language);
+          });
+        });
+      }
+
+      this.showScreen(screenId);
+    },
+
+    selectLanguageWordbook(id, language) {
+      const wordbook = (typeof WordbookManager !== 'undefined' ? WordbookManager.getWordbooksByLanguage(language) : []).find(wb => wb.id === id);
+      if (!wordbook || typeof WordbookManager === 'undefined') return;
+
+      this.showScreen(language === 'german' ? 'germanVocabularyModesScreen' : 'englishVocabularyModesScreen');
+
+      if (language === 'german') {
+        this.currentWordbook = wordbook;
+        this.sessionWords = [];
+        this.currentWord = null;
+        this.quizIndex = 0;
+        this.quizCorrect = 0;
+        this.quizTotal = 0;
+        this.words = WordbookManager.mapWordbookWordsForLanguage(wordbook.words, 'german');
+        this.loadWordbookProgress(id, 'german');
+      } else {
+        EnglishApp.currentWordbook = wordbook;
+        EnglishApp.words = WordbookManager.mapWordbookWordsForLanguage(wordbook.words, 'english');
+        EnglishApp.loadWordbookProgress?.(id, 'english');
+      }
+    },
+
+    loadWordbookProgress(id, language = 'german') {
+      try {
+        const raw = localStorage.getItem(`dimenticato_progress_wb_${language}_${id}`) || '[]';
+        this.mastered = new Set(JSON.parse(raw));
+      } catch (error) {
+        this.mastered = new Set();
+      }
+    },
+
+    bindLanguageSettingsAndProgress() {
+      this.bindClick('germanSettingsCommunityBtn', () => this.openSharedCommunity('germanSettingsScreen'));
+      this.bindClick('englishSettingsCommunityBtn', () => this.openSharedCommunity('englishSettingsScreen'));
+      this.bindClick('germanSettingsGlobalDataBtn', () => this.showScreen('settingsScreen'));
+      this.bindClick('englishSettingsGlobalDataBtn', () => this.showScreen('settingsScreen'));
+
+      this.bindClick('goGermanProgressBtn', () => {
+        this.updateGermanProgressStats();
+        this.showScreen('germanProgressScreen');
+      });
+      this.bindClick('goEnglishProgressBtn', () => {
+        this.updateEnglishProgressStats();
+        this.showScreen('englishProgressScreen');
+      });
+    },
+
+    openSharedCommunity(returnScreen) {
+      this.communityReturnScreen = returnScreen || 'vocabularyScreen';
+      if (typeof CommunityWordbooks !== 'undefined' && typeof CommunityWordbooks.showBrowseScreen === 'function') {
+        CommunityWordbooks.showBrowseScreen();
+      }
+    },
+
+    updateGermanProgressStats() {
+      const totalWords = this.words.length;
+      const masteredCount = [...this.mastered].filter(word => this.words.some(w => w.german === word)).length;
+      const progress = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
+      const totalAttempts = (this.stats.mcAttempts || 0) + (this.stats.spAttempts || 0);
+      const totalCorrect = (this.stats.mcCorrect || 0) + (this.stats.spCorrect || 0);
+      const accuracy = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
+
+      this.setText('germanProgressTotalWords', totalWords.toLocaleString());
+      this.setText('germanProgressMasteredWords', masteredCount.toLocaleString());
+      this.setText('germanProgressPercent', `${progress}%`);
+      this.setText('germanProgressMcStats', `${this.stats.mcCorrect || 0} / ${this.stats.mcAttempts || 0}`);
+      this.setText('germanProgressSpStats', `${this.stats.spCorrect || 0} / ${this.stats.spAttempts || 0}`);
+      this.setText('germanProgressAccuracy', `${accuracy}%`);
+    },
+
+    updateEnglishProgressStats() {
+      if (typeof EnglishApp !== 'undefined' && typeof EnglishApp.updateProgressStats === 'function') {
+        EnglishApp.updateProgressStats();
+      }
     },
 
     bindGrammarBookTriggers() {
@@ -277,14 +432,14 @@
       document.querySelectorAll('.german-placeholder-trigger').forEach((button) => {
         button.addEventListener('click', () => {
           const module = button.dataset.module || 'module';
-          this.showGermanPlaceholder(module, `德语 ${module} 模块已保留入口，后续可单独接入对应数据与界面。`);
+          this.showGermanPlaceholder(module, `查看德语 ${module} 模块内容。`);
         });
       });
 
       document.querySelectorAll('.english-placeholder-trigger').forEach((button) => {
         button.addEventListener('click', () => {
           const module = button.dataset.module || 'module';
-          this.showEnglishPlaceholder(module, `English ${module} 模块已保留入口，后续可单独接入对应数据与界面。`);
+          this.showEnglishPlaceholder(module, `Open the English ${module} module.`);
         });
       });
 
@@ -303,12 +458,12 @@
       this.activeLanguage = 'german';
       this.updateLanguageSwitcherUI('german');
       this.fillPlaceholder({
-        eyebrow: 'German / Placeholder',
+        eyebrow: 'German / Module',
         title: moduleTitle,
         language: 'German',
         module: moduleTitle,
         description,
-        dataHint: '德语专属数据、练习题和页面逻辑将按模块逐个接入。'
+        dataHint: '德语词汇、练习内容与页面说明。'
       });
       this.showScreen('languageSkeletonPlaceholderScreen');
     },
@@ -317,12 +472,12 @@
       this.activeLanguage = 'english';
       this.updateLanguageSwitcherUI('english');
       this.fillPlaceholder({
-        eyebrow: 'English / Placeholder',
+        eyebrow: 'English / Module',
         title: moduleTitle,
         language: 'English',
         module: moduleTitle,
         description,
-        dataHint: '英语数据和练习逻辑将按语言单独补齐。'
+        dataHint: 'English vocabulary, exercises, and module information.'
       });
       this.showScreen('languageSkeletonPlaceholderScreen');
     },
@@ -789,6 +944,15 @@
       });
     },
 
+    loadWordbookProgress(id, language = 'english') {
+      try {
+        const raw = localStorage.getItem(`dimenticato_progress_wb_${language}_${id}`) || '[]';
+        this.mastered = new Set(JSON.parse(raw));
+      } catch (error) {
+        this.mastered = new Set();
+      }
+    },
+
     startMultipleChoice() {
       if (!this.words.length) {
         alert('英语词汇数据尚未加载。');
@@ -1000,6 +1164,22 @@
       });
     },
 
+    updateProgressStats() {
+      const totalWords = this.words.length;
+      const masteredCount = [...this.mastered].filter(word => this.words.some(w => w.english === word)).length;
+      const progress = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
+      const totalAttempts = (this.stats.mcAttempts || 0) + (this.stats.spAttempts || 0);
+      const totalCorrect = (this.stats.mcCorrect || 0) + (this.stats.spCorrect || 0);
+      const accuracy = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
+
+      this._germanApp.setText('englishProgressTotalWords', totalWords.toLocaleString());
+      this._germanApp.setText('englishProgressMasteredWords', masteredCount.toLocaleString());
+      this._germanApp.setText('englishProgressPercent', `${progress}%`);
+      this._germanApp.setText('englishProgressMcStats', `${this.stats.mcCorrect || 0} / ${this.stats.mcAttempts || 0}`);
+      this._germanApp.setText('englishProgressSpStats', `${this.stats.spCorrect || 0} / ${this.stats.spAttempts || 0}`);
+      this._germanApp.setText('englishProgressAccuracy', `${accuracy}%`);
+    },
+
     _finishPractice(mode) {
       const acc = this._accuracy();
       const name = mode === 'spelling' ? 'Spelling' : 'Multiple Choice';
@@ -1038,4 +1218,7 @@
   } else {
     GermanApp.init();
   }
+
+  window.GermanApp = GermanApp;
+  window.EnglishApp = EnglishApp;
 })();

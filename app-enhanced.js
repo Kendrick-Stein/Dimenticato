@@ -274,9 +274,36 @@ const WordbookEditor = {
   currentEditingWordbook: null,
   currentEditingWord: null,
   selectedWords: new Set(),
+
+  getLanguageConfig(language = 'italian') {
+    if (language === 'german') {
+      return {
+        primaryKey: 'german',
+        secondaryKey: 'meaning',
+        primaryLabel: '德语',
+        secondaryLabel: '释义'
+      };
+    }
+
+    if (language === 'english') {
+      return {
+        primaryKey: 'english',
+        secondaryKey: 'meaning',
+        primaryLabel: '英语',
+        secondaryLabel: '释义'
+      };
+    }
+
+    return {
+      primaryKey: 'italian',
+      secondaryKey: 'english',
+      primaryLabel: '意大利语',
+      secondaryLabel: '英语翻译'
+    };
+  },
   
   // 创建新单词本
-  createNewWordbook() {
+  createNewWordbook(language = 'italian') {
     const name = prompt('请输入单词本名称：');
     if (!name || !name.trim()) {
       return null;
@@ -287,6 +314,7 @@ const WordbookEditor = {
     const wordbook = {
       id: Date.now(),
       name: name.trim(),
+      language,
       description: description ? description.trim() : '',
       words: [],
       wordCount: 0,
@@ -349,6 +377,7 @@ const WordbookEditor = {
     if (!container || !this.currentEditingWordbook) return;
     
     const words = this.currentEditingWordbook.words;
+    const config = this.getLanguageConfig(this.currentEditingWordbook.language);
     
     if (words.length === 0) {
       container.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">此单词本还没有单词</p>';
@@ -361,8 +390,8 @@ const WordbookEditor = {
           ${this.selectedWords.has(index) ? 'checked' : ''}>
         <div class="editor-word-content">
           <div class="editor-word-main">
-            <span class="editor-word-italian">${word.italian}</span>
-            <span class="editor-word-english">${word.english}</span>
+            <span class="editor-word-italian">${word[config.primaryKey] || word.display || ''}</span>
+            <span class="editor-word-english">${word[config.secondaryKey] || ''}</span>
           </div>
           ${word.chinese ? `<div class="editor-word-chinese">${word.chinese}</div>` : ''}
           ${word.notes ? `<div class="editor-word-notes">${word.notes}</div>` : ''}
@@ -420,11 +449,19 @@ const WordbookEditor = {
   showWordEditDialog(word) {
     const dialog = document.getElementById('wordEditDialog');
     if (!dialog) return;
+    const config = this.getLanguageConfig(this.currentEditingWordbook?.language || 'italian');
+
+    const primaryLabel = document.getElementById('editWordPrimaryLabel');
+    const secondaryLabel = document.getElementById('editWordSecondaryLabel');
+    const chineseLabel = document.getElementById('editWordChineseLabel');
+    if (primaryLabel) primaryLabel.textContent = `${config.primaryLabel} *`;
+    if (secondaryLabel) secondaryLabel.textContent = `${config.secondaryLabel} *`;
+    if (chineseLabel) chineseLabel.textContent = '中文翻译';
     
     // 填充表单
     if (word) {
-      document.getElementById('editWordItalian').value = word.italian || '';
-      document.getElementById('editWordEnglish').value = word.english || '';
+      document.getElementById('editWordItalian').value = word[config.primaryKey] || word.display || '';
+      document.getElementById('editWordEnglish').value = word[config.secondaryKey] || '';
       document.getElementById('editWordChinese').value = word.chinese || '';
       document.getElementById('editWordNotes').value = word.notes || '';
       document.getElementById('wordEditDialogTitle').textContent = '编辑单词';
@@ -451,23 +488,24 @@ const WordbookEditor = {
   // 保存单词编辑
   saveWordEdit() {
     if (!this.currentEditingWordbook) return;
+    const config = this.getLanguageConfig(this.currentEditingWordbook.language);
     
-    const italian = document.getElementById('editWordItalian').value.trim();
-    const english = document.getElementById('editWordEnglish').value.trim();
+    const primaryValue = document.getElementById('editWordItalian').value.trim();
+    const secondaryValue = document.getElementById('editWordEnglish').value.trim();
     const chinese = document.getElementById('editWordChinese').value.trim();
     const notes = document.getElementById('editWordNotes').value.trim();
     
-    if (!italian || !english) {
-      alert('意大利语和英语翻译不能为空！');
+    if (!primaryValue || !secondaryValue) {
+      alert(`${config.primaryLabel}和${config.secondaryLabel}不能为空！`);
       return;
     }
     
-    const wordData = {
-      italian,
-      english,
-      chinese,
-      notes
-    };
+    const wordData = { chinese, notes };
+    wordData[config.primaryKey] = primaryValue;
+    wordData[config.secondaryKey] = secondaryValue;
+    if (config.primaryKey === 'german') {
+      wordData.display = primaryValue;
+    }
     
     if (this.currentEditingWord) {
       // 编辑现有单词
@@ -490,10 +528,10 @@ const WordbookEditor = {
     // 如果当前正在学习这个单词本，更新显示
     if (AppState.currentWordbook && AppState.currentWordbook.id === this.currentEditingWordbook.id) {
       AppState.currentWordbook = this.currentEditingWordbook;
-      AppState.currentWords = this.currentEditingWordbook.words.map(w => ({
-        ...w,
-        rank: 999999
-      }));
+      AppState.currentWords = WordbookManager.mapWordbookWordsForLanguage(
+        this.currentEditingWordbook.words,
+        this.currentEditingWordbook.language || 'italian'
+      );
       updateHeaderStats();
     }
   },
@@ -511,10 +549,10 @@ const WordbookEditor = {
       // 更新当前学习状态
       if (AppState.currentWordbook && AppState.currentWordbook.id === this.currentEditingWordbook.id) {
         AppState.currentWordbook = this.currentEditingWordbook;
-        AppState.currentWords = this.currentEditingWordbook.words.map(w => ({
-          ...w,
-          rank: 999999
-        }));
+        AppState.currentWords = WordbookManager.mapWordbookWordsForLanguage(
+          this.currentEditingWordbook.words,
+          this.currentEditingWordbook.language || 'italian'
+        );
         updateHeaderStats();
       }
     }
@@ -720,10 +758,10 @@ const WordbookEditor = {
       // 如果当前正在学习这个单词本，更新显示
       if (AppState.currentWordbook && AppState.currentWordbook.id === this.currentEditingWordbook.id) {
         AppState.currentWordbook = this.currentEditingWordbook;
-        AppState.currentWords = this.currentEditingWordbook.words.map(w => ({
-          ...w,
-          rank: 999999
-        }));
+        AppState.currentWords = WordbookManager.mapWordbookWordsForLanguage(
+          this.currentEditingWordbook.words,
+          this.currentEditingWordbook.language || 'italian'
+        );
         updateHeaderStats();
       }
       
@@ -776,7 +814,7 @@ const WordbookEditor = {
     if (!dialog) return;
     
     const list = document.getElementById('wordbookSelectList');
-    list.innerHTML = AppState.customWordbooks.map(wb => `
+    list.innerHTML = AppState.customWordbooks.filter(wb => getWordbookLanguage(wb) === 'italian').map(wb => `
       <div class="wordbook-select-item" onclick="WordbookEditor.addWordToSpecificWordbook(WordbookEditor.currentWordToAdd, ${wb.id})">
         <span class="wordbook-select-icon">${renderIcon('icon-book-open')}</span>
         <div class="wordbook-select-info">
@@ -805,22 +843,33 @@ const WordbookEditor = {
   addWordToSpecificWordbook(word, wordbookId) {
     const wordbook = AppState.customWordbooks.find(wb => wb.id === wordbookId);
     if (!wordbook) return;
+    const language = wordbook.language || 'italian';
+    const config = this.getLanguageConfig(language);
+    const primaryValue = language === 'german'
+      ? (word.german || word.display || '')
+      : language === 'english'
+        ? (word.english || '')
+        : (word.italian || '');
     
     // 检查是否已存在
-    const exists = wordbook.words.some(w => w.italian === word.italian);
+    const exists = wordbook.words.some(w => (w[config.primaryKey] || w.display || '') === primaryValue);
     if (exists) {
-      alert(`单词"${word.italian}"已经在单词本"${wordbook.name}"中了！`);
+      alert(`单词"${primaryValue}"已经在单词本"${wordbook.name}"中了！`);
       this.hideWordbookSelectDialog();
       return;
     }
     
     // 添加单词
-    wordbook.words.push({
-      italian: word.italian,
-      english: word.english,
+    const wordData = {
       chinese: word.chinese || '',
       notes: word.notes || ''
-    });
+    };
+    wordData[config.primaryKey] = primaryValue;
+    wordData[config.secondaryKey] = language === 'italian'
+      ? (word.english || '')
+      : (word.meaning || word.chinese || '');
+    if (language === 'german') wordData.display = primaryValue;
+    wordbook.words.push(wordData);
     
     wordbook.wordCount = wordbook.words.length;
     WordbookManager.saveWordbooks();
