@@ -932,6 +932,30 @@
 
               <p class="conj-module-hint" id="conjModuleHint">选择一个时态后，按课次学习动词变位</p>
             </div>
+
+            <div class="conjugation-lookup-card">
+              <div class="conjugation-lookup-header">
+                <h3><svg class="icon"><use href="#icon-search"></use></svg>变位查询</h3>
+                <p>支持输入动词原形，或输入任意一个变位形式，查看该动词的完整变位。</p>
+              </div>
+
+              <div class="conjugation-lookup-form">
+                <input
+                  type="text"
+                  id="conjLookupInput"
+                  class="search-input conj-lookup-input"
+                  placeholder="例如：essere / sono / fossi / stato"
+                  autocomplete="off"
+                >
+                <div class="conjugation-lookup-actions">
+                  <button class="check-btn" id="conjLookupSearchBtn">查询变位</button>
+                  <button class="back-btn" id="conjLookupClearBtn" type="button">清空</button>
+                </div>
+              </div>
+
+              <div class="hidden" id="conjLookupEmptyState"></div>
+              <div class="conjugation-lookup-results hidden" id="conjLookupResults"></div>
+            </div>
           </div>
 
           <div class="mode-selection">

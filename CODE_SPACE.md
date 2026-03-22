@@ -399,6 +399,7 @@
 负责：
 
 - 变位数据准备
+- 变位查询（支持输入原形或任一变位形式反查并展示完整变位）
 - 时态矩阵渲染
 - 课次切分
 - 题目队列生成
@@ -423,6 +424,7 @@
 
 如果你要改：
 
+- 变位查询 / 原形反查 / 变位反查
 - 变位题型
 - 时态分组方式
 - lesson 切课规则
@@ -1389,6 +1391,18 @@
   - 暴露 `window.GermanApp` / `window.EnglishApp`
 - `community-wordbooks.js`
   - `backToWelcome()` 改为按 `communityReturnScreen` 返回对应语言来源页，而不再固定返回意大利语 Vocabulary
+
+### 2026-03-22（动词变位查询）
+
+- 在 `conjugationSetupScreen` 中新增“变位查询”区域，可直接输入：
+  - 动词原形（如 `essere`）
+  - 任意一个变位形式（如 `sono` / `fossi` / `stato`）
+- `conjugation-app.js` 新增查询索引构建与结果渲染逻辑：
+  - 启动时扫描 `CONJUGATION_ALL_TENSES_DATA`
+  - 建立“原形 -> 动词”和“变位形式 -> 原形候选”的前端索引
+  - 命中后展示该动词所有时态的完整变位
+- `styles.css` 新增查询区、结果卡片、时态卡片样式，并适配移动端。
+- 当前查询结果会忠实展示 `data/conjugations-all-tenses.js` 中已有数据；若源数据存在缺项或异常形式，查询结果也会原样反映。
 
 ---
 

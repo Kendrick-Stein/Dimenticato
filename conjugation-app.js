@@ -15,6 +15,7 @@
 
   const state = {
     verbs: [],
+    lookupIndex: null,
     tenseMeta: {},
     selectedTense: null,
     lessonSize: 10,
@@ -47,7 +48,190 @@
     return (form || '')
       .split('/')
       .map(v => v.trim())
-      .filter(Boolean);
+      .filter(v => v && normalizeText(v) !== 'none');
+  }
+
+  function escapeHtml(str) {
+    return (str || '').toString()
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function getTenseForms(tenseData) {
+    if (!tenseData) return [];
+    if (tenseData.type === 'person' && tenseData.forms && typeof tenseData.forms === 'object') {
+      return PERSON_ORDER.flatMap(person => splitAlternatives(tenseData.forms[person]));
+    }
+    if (Array.isArray(tenseData.forms)) {
+      return tenseData.forms.flatMap(form => splitAlternatives(form));
+    }
+    return [];
+  }
+
+  function createVerbLookupSummary(verb) {
+    return {
+      infinitive: verb.infinitive,
+      english: verb.english || '',
+      rank: verb.rank || null
+    };
+  }
+
+  function buildLookupIndex() {
+    const byInfinitive = new Map();
+    const byForm = new Map();
+
+    state.verbs.forEach(verb => {
+      const summary = createVerbLookupSummary(verb);
+      const infinitiveKey = normalizeText(verb.infinitive);
+      if (infinitiveKey) byInfinitive.set(infinitiveKey, summary);
+
+      Object.values(verb.tenses || {}).forEach(tenseData => {
+        getTenseForms(tenseData).forEach(form => {
+          const key = normalizeText(form);
+          if (!key) return;
+          if (!byForm.has(key)) byForm.set(key, []);
+          const list = byForm.get(key);
+          if (!list.some(item => item.infinitive === verb.infinitive)) {
+            list.push(summary);
+          }
+        });
+      });
+    });
+
+    state.lookupIndex = { byInfinitive, byForm };
+  }
+
+  function getVerbByInfinitive(infinitive) {
+    const key = normalizeText(infinitive);
+    return state.verbs.find(verb => normalizeText(verb.infinitive) === key) || null;
+  }
+
+  function searchVerbLookup(query) {
+    const key = normalizeText(query);
+    if (!key || !state.lookupIndex) return [];
+
+    const exactInfinitive = state.lookupIndex.byInfinitive.get(key);
+    if (exactInfinitive) {
+      return [getVerbByInfinitive(exactInfinitive.infinitive)].filter(Boolean);
+    }
+
+    const exactForms = state.lookupIndex.byForm.get(key) || [];
+    if (exactForms.length) {
+      return exactForms
+        .map(item => getVerbByInfinitive(item.infinitive))
+        .filter(Boolean);
+    }
+
+    const partialMatches = state.verbs.filter(verb => {
+      if (normalizeText(verb.infinitive).includes(key)) return true;
+      return Object.values(verb.tenses || {}).some(tenseData =>
+        getTenseForms(tenseData).some(form => normalizeText(form).includes(key))
+      );
+    });
+
+    return partialMatches;
+  }
+
+  function renderLookupTenseRows(tenseData) {
+    if (!tenseData) return '';
+
+    if (tenseData.type === 'person' && tenseData.forms && typeof tenseData.forms === 'object') {
+      return `
+        <div class="conj-lookup-rows">
+          ${PERSON_ORDER.map(person => {
+            const value = splitAlternatives(tenseData.forms[person]).join(' / ') || '—';
+            return `
+              <div class="conj-lookup-row">
+                <span class="conj-lookup-row-label">${escapeHtml(PERSON_LABEL[person] || person)}</span>
+                <span class="conj-lookup-row-value">${escapeHtml(value)}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+
+    const forms = Array.isArray(tenseData.forms) ? tenseData.forms : [];
+    return `
+      <div class="conj-lookup-rows">
+        ${forms.map((form, index) => {
+          const value = splitAlternatives(form).join(' / ') || '—';
+          return `
+            <div class="conj-lookup-row">
+              <span class="conj-lookup-row-label">形式 ${index + 1}</span>
+              <span class="conj-lookup-row-value">${escapeHtml(value)}</span>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }
+
+  function renderLookupResults(verbs, query) {
+    const resultsEl = document.getElementById('conjLookupResults');
+    const emptyEl = document.getElementById('conjLookupEmptyState');
+    if (!resultsEl || !emptyEl) return;
+
+    if (!query || !normalizeText(query)) {
+      resultsEl.innerHTML = '';
+      resultsEl.classList.add('hidden');
+      emptyEl.className = 'hidden';
+      emptyEl.textContent = '';
+      return;
+    }
+
+    if (!verbs.length) {
+      resultsEl.innerHTML = '';
+      resultsEl.classList.add('hidden');
+      emptyEl.className = 'conjugation-lookup-empty';
+      emptyEl.textContent = `未找到“${query}”对应的动词变位。`;
+      return;
+    }
+
+    emptyEl.className = 'hidden';
+    emptyEl.textContent = '';
+    resultsEl.classList.remove('hidden');
+    resultsEl.innerHTML = verbs.map(verb => {
+      const tenseCards = Object.entries(verb.tenses || {}).map(([key, tenseData]) => `
+        <article class="conj-lookup-tense-card" data-tense="${escapeHtml(key)}">
+          <div class="conj-lookup-tense-title">${escapeHtml(`${tenseData.group_label || ''} · ${tenseData.tense_label || key}`)}</div>
+          ${renderLookupTenseRows(tenseData)}
+        </article>
+      `).join('');
+
+      return `
+        <section class="conj-lookup-result-card">
+          <div class="conj-lookup-result-header">
+            <div>
+              <p class="eyebrow">Verb Lookup</p>
+              <h4>${escapeHtml(verb.infinitive)}</h4>
+            </div>
+            <div class="conj-lookup-meta">
+              ${verb.english ? `<span>${escapeHtml(verb.english)}</span>` : ''}
+              ${verb.rank ? `<span>Rank #${escapeHtml(String(verb.rank))}</span>` : ''}
+            </div>
+          </div>
+          <div class="conj-lookup-tense-grid">${tenseCards}</div>
+        </section>
+      `;
+    }).join('');
+  }
+
+  function runLookupSearch() {
+    const input = document.getElementById('conjLookupInput');
+    if (!input) return;
+    const query = input.value.trim();
+    const matches = searchVerbLookup(query);
+    renderLookupResults(matches, query);
+  }
+
+  function clearLookupSearch() {
+    const input = document.getElementById('conjLookupInput');
+    if (input) input.value = '';
+    renderLookupResults([], '');
   }
 
   function shuffle(arr) {
@@ -149,6 +333,7 @@
     });
 
     state.tenseMeta = meta;
+    buildLookupIndex();
     const firstTenseKey = Object.keys(meta)[0] || 'indicativo_presente';
     state.selectedTense = firstTenseKey;
   }
@@ -819,6 +1004,11 @@
 
     document.getElementById('conjNextBtn')?.addEventListener('click', nextQuestion);
     document.getElementById('conjRestartBtn')?.addEventListener('click', () => start(state.mode || 'typing'));
+    document.getElementById('conjLookupSearchBtn')?.addEventListener('click', runLookupSearch);
+    document.getElementById('conjLookupClearBtn')?.addEventListener('click', clearLookupSearch);
+    document.getElementById('conjLookupInput')?.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') runLookupSearch();
+    });
     document.getElementById('conjBackBtn')?.addEventListener('click', () => {
       if (typeof goBack === 'function') goBack({ fallbackTarget: 'conjugationSetupScreen' });
       else if (typeof showScreen === 'function') showScreen('conjugationSetupScreen');
@@ -838,7 +1028,8 @@
 
   window.ConjugationPractice = {
     init,
-    start
+    start,
+    searchVerbLookup
   };
 
   document.addEventListener('DOMContentLoaded', init);
