@@ -1,8 +1,4 @@
-// Italian Vocabulary Data - Enhanced with translations
-// Total entries: 28695
-// Structure: {italian, dictionary, english, chinese, frequency, rank}
-
-const VOCABULARY_DATA = [
+[
   {
     "italian": "e",
     "dictionary": "conjunction and",
@@ -229563,4 +229559,4 @@ const VOCABULARY_DATA = [
     "frequency": 0,
     "rank": 999999
   }
-];
+]
