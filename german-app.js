@@ -27,6 +27,39 @@
     browseFilter: 'all',
     activeLanguage: 'italian',
     communityReturnScreen: 'vocabularyScreen',
+    _mcEngine: null,
+
+    _getMcEngine() {
+      if (!this._mcEngine) {
+        this._mcEngine = new QuizEngine({
+          state: {
+            get words() { return GermanApp.sessionWords; },
+            get quizIndex() { return GermanApp.quizIndex; },
+            set quizIndex(v) { GermanApp.quizIndex = v; },
+            get quizCorrect() { return GermanApp.quizCorrect; },
+            set quizCorrect(v) { GermanApp.quizCorrect = v; },
+            get quizTotal() { return GermanApp.quizTotal; },
+            set quizTotal(v) { GermanApp.quizTotal = v; },
+            get currentWord() { return GermanApp.currentWord; },
+            set currentWord(v) { GermanApp.currentWord = v; }
+          },
+          stats: GermanApp.stats,
+          mastered: GermanApp.mastered,
+          fieldMap: { source: 'german', target: 'meaning' },
+          saveFn: function () { GermanApp.saveState(); },
+          onUpdateStats: function () {},
+          dom: {
+            optionsContainer: document.getElementById('germanMcOptions'),
+            feedbackEl: document.getElementById('germanMcFeedback'),
+            feedbackTextEl: document.querySelector('#germanMcFeedback .feedback-text'),
+            progressCurrent: document.getElementById('germanMcCurrentWord'),
+            progressTotal: document.getElementById('germanMcTotalWords'),
+            accuracyEl: document.getElementById('germanMcAccuracy')
+          }
+        });
+      }
+      return this._mcEngine;
+    },
 
     init() {
       if (typeof GERMAN_VOCABULARY_DATA === 'undefined') {
@@ -543,22 +576,10 @@
       if (!container || !this.currentWord) return;
 
       const correctMeaning = this.currentWord.meaning || this.currentWord.chinese || '';
-      const distractors = this.shuffle(
-        this.words.filter((word) => word.german !== this.currentWord.german && (word.meaning || word.chinese) !== correctMeaning)
-      ).slice(0, 3);
+      const engine = this._getMcEngine();
+      const options = engine.generateOptions(correctMeaning, this.words);
 
-      const options = this.shuffle([
-        correctMeaning,
-        ...distractors.map((word) => word.meaning || word.chinese || '')
-      ]);
-
-      container.innerHTML = options.map((option) => `
-        <button class="option-btn" data-answer="${escapeAttribute(option)}">${escapeHtml(option || '—')}</button>
-      `).join('');
-
-      container.querySelectorAll('.option-btn').forEach((button) => {
-        button.addEventListener('click', () => this.checkMultipleChoiceAnswer(button));
-      });
+      engine.renderOptions(options, (btn) => this.checkMultipleChoiceAnswer(btn));
     },
 
     checkMultipleChoiceAnswer(button) {
@@ -577,20 +598,13 @@
         this.mastered.add(this.currentWord.german);
       }
 
-      document.querySelectorAll('#germanMcOptions .option-btn').forEach((optionButton) => {
-        optionButton.disabled = true;
-        if ((optionButton.dataset.answer || '') === correctAnswer) {
-          optionButton.classList.add('correct');
-        } else if (optionButton === button && !isCorrect) {
-          optionButton.classList.add('incorrect');
-        }
-      });
+      var engine = this._getMcEngine();
+      engine.highlightOptions(correctAnswer);
+      if (!isCorrect) {
+        button.classList.add('incorrect');
+      }
 
-      this.showFeedback(
-        'germanMcFeedback',
-        isCorrect ? '回答正确' : `回答有误，正确释义：${correctAnswer}`,
-        isCorrect
-      );
+      engine.showFeedback(isCorrect, correctAnswer);
 
       this.setText('germanMcAccuracy', `${this.getAccuracy()}%`);
       this.saveState();
@@ -861,6 +875,39 @@
     quizTotal: 0,
     browseFilter: 'all',
     _germanApp: null,
+    _mcEngine: null,
+
+    _getMcEngine() {
+      if (!this._mcEngine) {
+        this._mcEngine = new QuizEngine({
+          state: {
+            get words() { return EnglishApp.sessionWords; },
+            get quizIndex() { return EnglishApp.quizIndex; },
+            set quizIndex(v) { EnglishApp.quizIndex = v; },
+            get quizCorrect() { return EnglishApp.quizCorrect; },
+            set quizCorrect(v) { EnglishApp.quizCorrect = v; },
+            get quizTotal() { return EnglishApp.quizTotal; },
+            set quizTotal(v) { EnglishApp.quizTotal = v; },
+            get currentWord() { return EnglishApp.currentWord; },
+            set currentWord(v) { EnglishApp.currentWord = v; }
+          },
+          stats: EnglishApp.stats,
+          mastered: EnglishApp.mastered,
+          fieldMap: { source: 'english', target: 'meaning' },
+          saveFn: function () { EnglishApp._saveState(); },
+          onUpdateStats: function () {},
+          dom: {
+            optionsContainer: document.getElementById('englishMcOptions'),
+            feedbackEl: document.getElementById('englishMcFeedback'),
+            feedbackTextEl: document.querySelector('#englishMcFeedback .feedback-text'),
+            progressCurrent: document.getElementById('englishMcCurrentWord'),
+            progressTotal: document.getElementById('englishMcTotalWords'),
+            accuracyEl: document.getElementById('englishMcAccuracy')
+          }
+        });
+      }
+      return this._mcEngine;
+    },
 
     init(germanApp) {
       this._germanApp = germanApp;
@@ -981,17 +1028,10 @@
       const container = document.getElementById('englishMcOptions');
       if (!container || !this.currentWord) return;
       const correct = this.currentWord.meaning || this.currentWord.chinese || '';
-      const distractors = this._shuffle(
-        this.words.filter(w => w.english !== this.currentWord.english && (w.meaning || w.chinese) !== correct)
-      ).slice(0, 3);
-      const options = this._shuffle([correct, ...distractors.map(w => w.meaning || w.chinese || '')]);
-      const g = this._germanApp;
-      container.innerHTML = options.map(o =>
-        `<button class="option-btn" data-answer="${escapeAttribute(o)}">${escapeHtml(o || '—')}</button>`
-      ).join('');
-      container.querySelectorAll('.option-btn').forEach(btn => {
-        btn.addEventListener('click', () => this._checkMcAnswer(btn));
-      });
+      const engine = this._getMcEngine();
+      const options = engine.generateOptions(correct, this.words);
+
+      engine.renderOptions(options, (btn) => this._checkMcAnswer(btn));
     },
 
     _checkMcAnswer(button) {
@@ -1005,14 +1045,14 @@
       this.stats.mcAttempts++;
       if (isCorrect) { this.quizCorrect++; this.stats.mcCorrect++; this.mastered.add(this.currentWord.english); }
 
-      document.querySelectorAll('#englishMcOptions .option-btn').forEach(btn => {
-        btn.disabled = true;
-        if (btn.dataset.answer === correct) btn.classList.add('correct');
-        else if (btn === button && !isCorrect) btn.classList.add('incorrect');
-      });
+      var engine = this._getMcEngine();
+      engine.highlightOptions(correct);
+      if (!isCorrect) {
+        button.classList.add('incorrect');
+      }
 
-      g.showFeedback('englishMcFeedback',
-        isCorrect ? '回答正确' : `回答有误，正确释义：${correct}`, isCorrect);
+      engine.showFeedback(isCorrect, correct);
+
       g.setText('englishMcAccuracy', `${this._accuracy()}%`);
       this._saveState();
       if (isCorrect) setTimeout(() => this.nextMcQuestion(), 900);

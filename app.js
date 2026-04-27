@@ -850,45 +850,79 @@ function showScreen(screenId, options = {}) {
 // ==================== 选择题模式 ====================
 
 const MultipleChoice = {
+  _engine: null,
+
+  _getEngine() {
+    if (!this._engine) {
+      this._engine = new QuizEngine({
+        state: {
+          get words() { return AppState.currentWords; },
+          get quizIndex() { return AppState.quizIndex; },
+          set quizIndex(v) { AppState.quizIndex = v; },
+          get quizCorrect() { return AppState.quizCorrect; },
+          set quizCorrect(v) { AppState.quizCorrect = v; },
+          get quizTotal() { return AppState.quizTotal; },
+          set quizTotal(v) { AppState.quizTotal = v; },
+          get currentWord() { return AppState.currentWord; },
+          set currentWord(v) { AppState.currentWord = v; }
+        },
+        stats: AppState.stats,
+        mastered: AppState.masteredWords,
+        fieldMap: { source: 'italian', target: 'english' },
+        saveFn: function () { Storage.save(); },
+        onUpdateStats: updateHeaderStats,
+        dom: {
+          optionsContainer: document.getElementById('mcOptions'),
+          feedbackEl: document.getElementById('mcFeedback'),
+          feedbackTextEl: document.querySelector('#mcFeedback .feedback-text'),
+          progressCurrent: document.getElementById('mcCurrentWord'),
+          progressTotal: document.getElementById('mcTotalWords'),
+          accuracyEl: document.getElementById('mcAccuracy')
+        }
+      });
+    }
+    return this._engine;
+  },
+
   start() {
     AppState.currentMode = 'mc';
     AppState.quizIndex = 0;
     AppState.quizCorrect = 0;
     AppState.quizTotal = 0;
-    
+
     // 随机打乱单词顺序
     AppState.currentWords = shuffleArray([...AppState.currentWords]);
-    
+
     showScreen('multipleChoiceScreen');
     this.loadQuestion();
   },
-  
+
   loadQuestion() {
     if (AppState.quizIndex >= AppState.currentWords.length) {
       this.showCompletion();
       return;
     }
-    
+
     AppState.currentWord = AppState.currentWords[AppState.quizIndex];
-    
+
     // 更新进度
     document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
     document.getElementById('mcTotalWords').textContent = AppState.currentWords.length;
-    
+
     // 更新正确率
-    const accuracy = AppState.quizTotal > 0 
-      ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100) 
+    const accuracy = AppState.quizTotal > 0
+      ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100)
       : 0;
     document.getElementById('mcAccuracy').textContent = accuracy + '%';
-    
+
     // 显示意大利语单词
     document.getElementById('mcItalianWord').textContent = AppState.currentWord.italian;
-    
+
     // 自动朗读意大利语单词
     setTimeout(() => {
       italianSpeaker.speak(AppState.currentWord.italian, true);
     }, 300); // 稍微延迟一下，让界面先更新
-    
+
     // 显示中文提示（如果存在）
     const chineseHint = document.getElementById('mcChineseHint');
     if (AppState.currentWord.chinese) {
@@ -897,17 +931,17 @@ const MultipleChoice = {
     } else {
       chineseHint.classList.add('hidden');
     }
-    
+
     // 显示 notes（如果存在）
     this.displayNotes();
-    
+
     // 生成选项
     this.generateOptions();
-    
+
     // 隐藏反馈
     document.getElementById('mcFeedback').classList.add('hidden');
   },
-  
+
   displayNotes() {
     // 查找或创建 notes 显示区域
     let notesContainer = document.querySelector('#multipleChoiceScreen .quiz-notes');
@@ -917,7 +951,7 @@ const MultipleChoice = {
       notesContainer.className = 'quiz-notes';
       questionSection.appendChild(notesContainer);
     }
-    
+
     if (AppState.currentWord.notes) {
       notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${escapeHtml(AppState.currentWord.notes)}`;
       notesContainer.style.display = 'block';
@@ -927,46 +961,20 @@ const MultipleChoice = {
   },
 
   generateOptions() {
-    const correctAnswer = AppState.currentWord.english;
-    const options = [correctAnswer];
-    
-    // 优先从当前正在学习的词库中生成干扰选项，避免自定义词本出现系统词库混入
-    const optionSourceWords = (Array.isArray(AppState.currentWords) && AppState.currentWords.length > 1)
+    var correctAnswer = AppState.currentWord.english;
+    var optionSource = (Array.isArray(AppState.currentWords) && AppState.currentWords.length > 1)
       ? AppState.currentWords
       : AppState.vocabulary;
-
-    // 生成3个干扰选项
-    const otherWords = optionSourceWords.filter(w => 
-      w.italian !== AppState.currentWord.italian && 
-      w.english !== correctAnswer
-    );
-    
-    // 随机选择干扰项
-    const shuffled = shuffleArray(otherWords);
-    for (let i = 0; i < 3 && i < shuffled.length; i++) {
-      options.push(shuffled[i].english);
-    }
-    
-    // 打乱选项顺序
-    const shuffledOptions = shuffleArray(options);
-    
-    // 渲染选项
-    const container = document.getElementById('mcOptions');
-    container.innerHTML = shuffledOptions.map(option =>
-      `<button class="option-btn" data-answer="${escapeHtml(option)}">${escapeHtml(option)}</button>`
-    ).join('');
-    
-    // 绑定点击事件
-    container.querySelectorAll('.option-btn').forEach(btn => {
-      btn.addEventListener('click', () => this.checkAnswer(btn));
-    });
+    var options = this._getEngine().generateOptions(correctAnswer, optionSource);
+    var self = this;
+    this._getEngine().renderOptions(options, function (btn) { self.checkAnswer(btn); });
   },
-  
+
   checkAnswer(button) {
-    const selectedAnswer = button.dataset.answer;
-    const correctAnswer = AppState.currentWord.english;
-    const isCorrect = selectedAnswer === correctAnswer;
-    
+    var selectedAnswer = button.dataset.answer;
+    var correctAnswer = AppState.currentWord.english;
+    var isCorrect = selectedAnswer === correctAnswer;
+
     AppState.quizTotal++;
     if (isCorrect) {
       AppState.quizCorrect++;
@@ -974,36 +982,21 @@ const MultipleChoice = {
       AppState.masteredWords.add(AppState.currentWord.italian);
     }
     AppState.stats.mcAttempts++;
-    
-    // 禁用所有选项
-    document.querySelectorAll('.option-btn').forEach(btn => {
-      btn.disabled = true;
-      if (btn.dataset.answer === correctAnswer) {
-        btn.classList.add('correct');
-      } else if (btn === button && !isCorrect) {
-        btn.classList.add('incorrect');
-      }
-    });
-    
-    // 显示反馈
-    const feedback = document.getElementById('mcFeedback');
-    const feedbackText = feedback.querySelector('.feedback-text');
-    
-    if (isCorrect) {
-      feedbackText.textContent = '回答正确';
-      feedback.classList.remove('incorrect');
-      feedback.classList.add('correct');
-      // 答对时，1秒后自动跳转下一题
-      setTimeout(() => this.nextQuestion(), 1000);
-    } else {
-      feedbackText.textContent = `回答有误，正确答案是：${correctAnswer}`;
-      feedback.classList.remove('correct');
-      feedback.classList.add('incorrect');
+
+    // Highlight all options
+    var engine = this._getEngine();
+    engine.highlightOptions(correctAnswer);
+    if (!isCorrect) {
+      button.classList.add('incorrect');
     }
-    
-    feedback.classList.remove('hidden');
-    
-    // 保存进度
+
+    engine.showFeedback(isCorrect, correctAnswer);
+
+    // 答对时，1秒后自动跳转下一题
+    if (isCorrect) {
+      setTimeout(() => this.nextQuestion(), 1000);
+    }
+
     Storage.save();
     updateHeaderStats();
   },
@@ -1032,40 +1025,74 @@ const MultipleChoice = {
 // ==================== 拼写模式 ====================
 
 const Spelling = {
+  _engine: null,
+
+  _getEngine() {
+    if (!this._engine) {
+      this._engine = new QuizEngine({
+        state: {
+          get words() { return AppState.currentWords; },
+          get quizIndex() { return AppState.quizIndex; },
+          set quizIndex(v) { AppState.quizIndex = v; },
+          get quizCorrect() { return AppState.quizCorrect; },
+          set quizCorrect(v) { AppState.quizCorrect = v; },
+          get quizTotal() { return AppState.quizTotal; },
+          set quizTotal(v) { AppState.quizTotal = v; },
+          get currentWord() { return AppState.currentWord; },
+          set currentWord(v) { AppState.currentWord = v; }
+        },
+        stats: AppState.stats,
+        mastered: AppState.masteredWords,
+        fieldMap: { source: 'english', target: 'italian' }, // reversed for spelling
+        saveFn: function () { Storage.save(); },
+        onUpdateStats: updateHeaderStats,
+        dom: {
+          optionsContainer: null, // not used in spelling
+          feedbackEl: document.getElementById('spFeedback'),
+          feedbackTextEl: document.querySelector('#spFeedback .feedback-text'),
+          progressCurrent: document.getElementById('spCurrentWord'),
+          progressTotal: document.getElementById('spTotalWords'),
+          accuracyEl: document.getElementById('spAccuracy')
+        }
+      });
+    }
+    return this._engine;
+  },
+
   start() {
     AppState.currentMode = 'sp';
     AppState.quizIndex = 0;
     AppState.quizCorrect = 0;
     AppState.quizTotal = 0;
-    
+
     // 随机打乱单词顺序
     AppState.currentWords = shuffleArray([...AppState.currentWords]);
-    
+
     showScreen('spellingScreen');
     this.loadQuestion();
   },
-  
+
   loadQuestion() {
     if (AppState.quizIndex >= AppState.currentWords.length) {
       this.showCompletion();
       return;
     }
-    
+
     AppState.currentWord = AppState.currentWords[AppState.quizIndex];
-    
+
     // 更新进度
     document.getElementById('spCurrentWord').textContent = AppState.quizIndex + 1;
     document.getElementById('spTotalWords').textContent = AppState.currentWords.length;
-    
+
     // 更新正确率
-    const accuracy = AppState.quizTotal > 0 
-      ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100) 
+    const accuracy = AppState.quizTotal > 0
+      ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100)
       : 0;
     document.getElementById('spAccuracy').textContent = accuracy + '%';
-    
+
     // 显示英语翻译
     document.getElementById('spEnglishWord').textContent = AppState.currentWord.english;
-    
+
     // 显示中文翻译（如果存在）
     const chineseHint = document.getElementById('spChineseHint');
     if (AppState.currentWord.chinese) {
@@ -1074,31 +1101,32 @@ const Spelling = {
     } else {
       chineseHint.classList.add('hidden');
     }
-    
+
     // 显示 notes（如果存在）
     this.displayNotes();
-    
+
     // 清空输入框
     const input = document.getElementById('spInput');
     input.value = '';
     input.disabled = false;
     input.focus();
-    
+
     // 启用检查按钮
     document.getElementById('spCheckBtn').disabled = false;
-    
+
     // 隐藏反馈
     document.getElementById('spFeedback').classList.add('hidden');
   },
-  
+
   checkAnswer() {
     const input = document.getElementById('spInput');
     const userAnswer = input.value.trim().toLowerCase();
     const correctAnswer = AppState.currentWord.italian.toLowerCase();
-    
-    // 检查答案（忽略大小写和重音符号）
-    const isCorrect = this.normalizeString(userAnswer) === this.normalizeString(correctAnswer);
-    
+
+    // 检查答案（忽略大小写和重音符号）- 使用 QuizEngine 的 normalizeString
+    const engine = this._getEngine();
+    const isCorrect = engine.normalizeString(userAnswer) === engine.normalizeString(correctAnswer);
+
     AppState.quizTotal++;
     if (isCorrect) {
       AppState.quizCorrect++;
@@ -1106,15 +1134,15 @@ const Spelling = {
       AppState.masteredWords.add(AppState.currentWord.italian);
     }
     AppState.stats.spAttempts++;
-    
+
     // 禁用输入
     input.disabled = true;
     document.getElementById('spCheckBtn').disabled = true;
-    
+
     // 显示反馈
     const feedback = document.getElementById('spFeedback');
     const feedbackText = feedback.querySelector('.feedback-text');
-    
+
     if (isCorrect) {
       feedbackText.textContent = '回答正确';
       feedback.classList.remove('incorrect');
@@ -1126,14 +1154,14 @@ const Spelling = {
       feedback.classList.remove('correct');
       feedback.classList.add('incorrect');
     }
-    
+
     feedback.classList.remove('hidden');
-    
+
     // 保存进度
     Storage.save();
     updateHeaderStats();
   },
-  
+
   displayNotes() {
     // 查找或创建 notes 显示区域
     let notesContainer = document.querySelector('#spellingScreen .quiz-notes');
@@ -1143,7 +1171,7 @@ const Spelling = {
       notesContainer.className = 'quiz-notes';
       questionSection.appendChild(notesContainer);
     }
-    
+
     if (AppState.currentWord.notes) {
       notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${escapeHtml(AppState.currentWord.notes)}`;
       notesContainer.style.display = 'block';
@@ -1152,16 +1180,11 @@ const Spelling = {
     }
   },
 
-  normalizeString(str) {
-    // 移除重音符号并转换为小写
-    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  },
-  
   nextQuestion() {
     AppState.quizIndex++;
     this.loadQuestion();
   },
-  
+
   showCompletion() {
     const accuracy = Math.round((AppState.quizCorrect / AppState.quizTotal) * 100);
     alert(`练习完成\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
