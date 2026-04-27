@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spaced Repetition (SM-2) Tests</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 2rem auto; padding: 1rem; background: #f5f7fa; color: #2c3e50; }
+    h1 { border-bottom: 2px solid #3498db; padding-bottom: 0.5rem; }
+    .pass { color: #2ecc71; } .fail { color: #e74c3c; }
+    .test { margin: 0.5rem 0; padding: 0.5rem 1rem; border-left: 3px solid #ddd; background: #fff; }
+    .test.pass { border-left-color: #2ecc71; } .test.fail { border-left-color: #e74c3c; }
+    .summary { font-size: 1.2rem; font-weight: bold; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+<h1>Spaced Repetition (SM-2) Tests</h1>
+<div id="results"></div>
+
+<script>
+(function () {
+  var results = document.getElementById('results');
+  var passed = 0, failed = 0;
+
+  function assert(condition, message) {
+    var div = document.createElement('div');
+    div.className = 'test ' + (condition ? 'pass' : 'fail');
+    div.textContent = (condition ? 'PASS' : 'FAIL') + ': ' + message;
+    results.appendChild(div);
+    if (condition) passed++; else failed++;
+  }
+
+  // Mirror the SM-2 implementation from app-enhanced.js for testing
+  var SpacedRepetition = {
+    DEFAULT_EASINESS: 2.5,
+    MIN_EASINESS: 1.3,
+
+    initWordSRData: function (word) {
+      if (!word.srData) {
+        word.srData = {
+          easiness: 2.5,
+          interval: 0,
+          repetitions: 0,
+          nextReviewDate: new Date().toISOString().split('T')[0],
+          lastReviewDate: null,
+          reviewHistory: []
+        };
+      }
+      return word;
+    },
+
+    calculateNextReview: function (word, quality) {
+      this.initWordSRData(word);
+      var sr = word.srData;
+      sr.reviewHistory.push({
+        date: new Date().toISOString(),
+        quality: quality,
+        interval: sr.interval
+      });
+      if (sr.reviewHistory.length > 20) {
+        sr.reviewHistory = sr.reviewHistory.slice(-20);
+      }
+      sr.easiness = Math.max(
+        this.MIN_EASINESS,
+        sr.easiness + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02))
+      );
+      if (quality < 3) {
+        sr.repetitions = 0;
+        sr.interval = 0;
+      } else {
+        if (sr.repetitions === 0) {
+          sr.interval = 1;
+        } else if (sr.repetitions === 1) {
+          sr.interval = 6;
+        } else {
+          sr.interval = Math.round(sr.interval * sr.easiness);
+        }
+        sr.repetitions++;
+      }
+      var nextDate = new Date();
+      nextDate.setDate(nextDate.getDate() + sr.interval);
+      sr.nextReviewDate = nextDate.toISOString().split('T')[0];
+      sr.lastReviewDate = new Date().toISOString().split('T')[0];
+      return word;
+    },
+
+    getDueWords: function (words) {
+      var today = new Date().toISOString().split('T')[0];
+      return words.filter(function (word) {
+        this.initWordSRData(word);
+        return word.srData.nextReviewDate <= today;
+      }.bind(this));
+    },
+
+    convertCorrectToQuality: function (isCorrect, timeSpent) {
+      if (isCorrect) {
+        if (!timeSpent || timeSpent < 3000) return 5;
+        if (timeSpent < 8000) return 4;
+        return 3;
+      }
+      return 1;
+    }
+  };
+
+  // Test 1: Initialization
+  var word = {};
+  SpacedRepetition.initWordSRData(word);
+  assert(word.srData !== undefined, 'initWordSRData creates srData');
+  assert(word.srData.easiness === 2.5, 'default easiness is 2.5');
+  assert(word.srData.interval === 0, 'default interval is 0');
+  assert(word.srData.repetitions === 0, 'default repetitions is 0');
+
+  // Test 2: Perfect quality (5) progresses word — first review
+  SpacedRepetition.calculateNextReview(word, 5);
+  assert(word.srData.repetitions === 1, 'quality 5: repetitions 0→1');
+  assert(word.srData.interval === 1, 'quality 5: first interval is 1 day');
+
+  // Test 3: Second perfect review
+  SpacedRepetition.calculateNextReview(word, 5);
+  assert(word.srData.repetitions === 2, 'quality 5: repetitions 1→2');
+  assert(word.srData.interval === 6, 'quality 5: second interval is 6 days');
+
+  // Test 4: Third perfect review (interval = round(6 * easiness))
+  SpacedRepetition.calculateNextReview(word, 5);
+  assert(word.srData.repetitions === 3, 'quality 5: repetitions 2→3');
+  assert(word.srData.interval >= 14, 'quality 5: third interval >= 14 (6 * ~2.5)');
+
+  // Test 5: Poor quality (< 3) resets progress
+  SpacedRepetition.calculateNextReview(word, 0);
+  assert(word.srData.repetitions === 0, 'quality 0: repetitions reset to 0');
+  assert(word.srData.interval === 0, 'quality 0: interval reset to 0');
+
+  // Test 6: Easiness decreases with poor quality
+  var word2 = {};
+  SpacedRepetition.initWordSRData(word2);
+  var initialEasiness = word2.srData.easiness;
+  SpacedRepetition.calculateNextReview(word2, 0);
+  assert(word2.srData.easiness < initialEasiness, 'easiness decreases with quality 0');
+
+  // Test 7: Easiness never goes below minimum
+  for (var i = 0; i < 200; i++) {
+    SpacedRepetition.calculateNextReview(word2, 0);
+  }
+  assert(word2.srData.easiness >= 1.3, 'easiness never below MIN_EASINESS (1.3) after 200 fails');
+
+  // Test 8: Review history is tracked
+  assert(Array.isArray(word.srData.reviewHistory), 'reviewHistory is an array');
+  assert(word.srData.reviewHistory.length > 0, 'reviewHistory records reviews');
+
+  // Test 9: Review history caps at 20
+  var word3 = {};
+  SpacedRepetition.initWordSRData(word3);
+  for (var j = 0; j < 30; j++) {
+    SpacedRepetition.calculateNextReview(word3, 5);
+  }
+  assert(word3.srData.reviewHistory.length <= 20, 'reviewHistory capped at 20 entries');
+
+  // Test 10: getDueWords returns words due today
+  var oldWord = {};
+  SpacedRepetition.initWordSRData(oldWord);
+  oldWord.srData.nextReviewDate = '2020-01-01'; // long overdue
+  var futureWord = {};
+  SpacedRepetition.initWordSRData(futureWord);
+  futureWord.srData.nextReviewDate = '2099-12-31'; // far future
+  var dueWords = SpacedRepetition.getDueWords([oldWord, futureWord]);
+  assert(dueWords.length === 1, 'getDueWords returns only overdue words');
+  assert(dueWords[0] === oldWord, 'getDueWords returns the overdue word');
+
+  // Test 11: convertCorrectToQuality
+  assert(SpacedRepetition.convertCorrectToQuality(true, 1000) === 5, 'fast correct = quality 5');
+  assert(SpacedRepetition.convertCorrectToQuality(true, 5000) === 4, 'medium correct = quality 4');
+  assert(SpacedRepetition.convertCorrectToQuality(true, 10000) === 3, 'slow correct = quality 3');
+  assert(SpacedRepetition.convertCorrectToQuality(false) === 1, 'incorrect = quality 1');
+
+  // Summary
+  var summary = document.createElement('div');
+  summary.className = 'summary';
+  summary.textContent = passed + ' passed, ' + failed + ' failed';
+  summary.style.color = failed === 0 ? '#2ecc71' : '#e74c3c';
+  results.insertBefore(summary, results.firstChild);
+})();
+</script>
+</body>
+</html>

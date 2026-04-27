@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizEngine Tests</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 2rem auto; padding: 1rem; background: #f5f7fa; color: #2c3e50; }
+    h1 { border-bottom: 2px solid #3498db; padding-bottom: 0.5rem; }
+    .pass { color: #2ecc71; } .fail { color: #e74c3c; }
+    .test { margin: 0.5rem 0; padding: 0.5rem 1rem; border-left: 3px solid #ddd; background: #fff; }
+    .test.pass { border-left-color: #2ecc71; } .test.fail { border-left-color: #e74c3c; }
+    .summary { font-size: 1.2rem; font-weight: bold; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+<h1>QuizEngine Tests</h1>
+<div id="results"></div>
+
+<script src="../lib/utils.js"></script>
+<script src="../lib/quiz-engine.js"></script>
+<script>
+(function () {
+  var results = document.getElementById('results');
+  var passed = 0, failed = 0;
+
+  function assert(condition, message) {
+    var div = document.createElement('div');
+    div.className = 'test ' + (condition ? 'pass' : 'fail');
+    div.textContent = (condition ? 'PASS' : 'FAIL') + ': ' + message;
+    results.appendChild(div);
+    if (condition) passed++; else failed++;
+  }
+
+  function assertEqual(actual, expected, message) {
+    var ok = actual === expected;
+    var div = document.createElement('div');
+    div.className = 'test ' + (ok ? 'pass' : 'fail');
+    div.textContent = (ok ? 'PASS' : 'FAIL') + ': ' + message
+      + (ok ? '' : ' (expected ' + JSON.stringify(expected) + ', got ' + JSON.stringify(actual) + ')');
+    results.appendChild(div);
+    if (ok) passed++; else failed++;
+  }
+
+  // --- Test: shuffleArray preserves elements ---
+  var engine = new QuizEngine({
+    state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: null },
+    stats: {},
+    mastered: new Set(),
+    fieldMap: { source: 'italian', target: 'english' },
+    saveFn: function () {},
+    onUpdateStats: function () {},
+    dom: {}
+  });
+
+  var input = [1, 2, 3, 4, 5];
+  var shuffled = engine.shuffleArray(input);
+  assert(Array.isArray(shuffled), 'shuffleArray returns an array');
+  assertEqual(shuffled.length, 5, 'shuffleArray preserves length');
+  assertEqual(shuffled.sort().join(','), '1,2,3,4,5', 'shuffleArray preserves all elements');
+
+  // --- Test: generateOptions includes correct answer ---
+  engine.config.state.currentWord = { italian: 'ciao', english: 'hello' };
+  var wordPool = [
+    { italian: 'ciao', english: 'hello' },
+    { italian: 'grazie', english: 'thank you' },
+    { italian: 'prego', english: "you're welcome" },
+    { italian: 'buongiorno', english: 'good morning' },
+    { italian: 'arrivederci', english: 'goodbye' }
+  ];
+  var options = engine.generateOptions('hello', wordPool);
+  assertEqual(options.length, 4, 'generateOptions returns 4 options');
+  assert(options.indexOf('hello') !== -1, 'options include correct answer');
+
+  // --- Test: options have no duplicates ---
+  var unique = [];
+  options.forEach(function(o) { if (unique.indexOf(o) === -1) unique.push(o); });
+  assertEqual(unique.length, options.length, 'options have no duplicates');
+
+  // --- Test: generateOptions excludes current word ---
+  engine.config.state.currentWord = { italian: 'ciao', english: 'hello' };
+  var smallPool = [
+    { italian: 'ciao', english: 'hello' },
+    { italian: 'grazie', english: 'thank you' },
+    { italian: 'buongiorno', english: 'good morning' }
+  ];
+  var options2 = engine.generateOptions('hello', smallPool);
+  // 'hello' should appear exactly once (as correct answer)
+  var helloCount = options2.filter(function(o) { return o === 'hello'; }).length;
+  assertEqual(helloCount, 1, 'correct answer appears exactly once in options');
+
+  // --- Test: normalizeString strips accents ---
+  assertEqual(engine.normalizeString('caffè'), engine.normalizeString('caffe'), 'normalizeString strips accents (caffè vs caffe)');
+  assertEqual(engine.normalizeString('  CIAO  '), 'ciao', 'normalizeString trims and lowercases');
+  assertEqual(engine.normalizeString('È'), 'e', 'normalizeString handles capital accented letters');
+
+  // --- Test: escapeHtml from utils ---
+  assertEqual(escapeHtml('<script>alert("xss")<\/script>'), '&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;', 'escapeHtml escapes HTML special chars');
+  assertEqual(escapeHtml("it's"), 'it&#39;s', 'escapeHtml escapes single quotes');
+  assertEqual(escapeHtml(null), '', 'escapeHtml handles null');
+  assertEqual(escapeHtml(undefined), '', 'escapeHtml handles undefined');
+  assertEqual(escapeHtml(123), '123', 'escapeHtml handles numbers');
+
+  // --- Test: escapeAttribute ---
+  assertEqual(escapeAttribute('`test`'), '&#96;test&#96;', 'escapeAttribute escapes backticks');
+
+  // --- Test: renderIcon ---
+  var icon = renderIcon('icon-brand');
+  assert(icon.indexOf('<svg') !== -1, 'renderIcon returns SVG markup');
+  assert(icon.indexOf('#icon-brand') !== -1, 'renderIcon includes icon name');
+
+  // --- Summary ---
+  var summary = document.createElement('div');
+  summary.className = 'summary';
+  summary.textContent = passed + ' passed, ' + failed + ' failed';
+  summary.style.color = failed === 0 ? '#2ecc71' : '#e74c3c';
+  results.insertBefore(summary, results.firstChild);
+})();
+</script>
+</body>
+</html>
