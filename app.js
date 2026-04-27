@@ -59,12 +59,6 @@ class LanguageSpeaker {
 // 创建全局 speaker 实例
 const italianSpeaker = new LanguageSpeaker();
 
-function renderIcon(name) {
-  return `<svg class="icon"><use href="#${name}"></use></svg>`;
-}
-
-window.renderIcon = renderIcon;
-
 // ==================== 全局状态 ====================
 
 const AppState = {

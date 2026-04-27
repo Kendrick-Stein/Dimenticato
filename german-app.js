@@ -229,7 +229,7 @@
             <button class="wordbook-card-manage-btn" data-manage-id="${wb.id}" title="管理单词本">${renderIcon('icon-settings')}</button>
             <button class="wordbook-delete-btn" data-delete-id="${wb.id}" title="删除">×</button>
             <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
-            <span class="wordbook-card-name">${this.escapeHtml(wb.name)}</span>
+            <span class="wordbook-card-name">${escapeHtml(wb.name)}</span>
             <span class="wordbook-card-count">${wb.wordCount} 词</span>
             <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
           </div>
@@ -496,7 +496,7 @@
 
       const titleEl = document.getElementById('languageSkeletonPlaceholderTitle');
       if (titleEl) {
-        titleEl.innerHTML = `<svg class="icon"><use href="#icon-puzzle"></use></svg>${this.escapeHtml(title)}`;
+        titleEl.innerHTML = `<svg class="icon"><use href="#icon-puzzle"></use></svg>${escapeHtml(title)}`;
       }
     },
 
@@ -553,7 +553,7 @@
       ]);
 
       container.innerHTML = options.map((option) => `
-        <button class="option-btn" data-answer="${this.escapeAttribute(option)}">${this.escapeHtml(option || '—')}</button>
+        <button class="option-btn" data-answer="${escapeAttribute(option)}">${escapeHtml(option || '—')}</button>
       `).join('');
 
       container.querySelectorAll('.option-btn').forEach((button) => {
@@ -742,11 +742,11 @@
       container.innerHTML = words.map((word) => {
         const mastered = this.mastered.has(word.german);
         return `
-          <div class="word-item ${mastered ? 'mastered' : ''}" data-word="${this.escapeAttribute(word.display || word.german || '')}">
+          <div class="word-item ${mastered ? 'mastered' : ''}" data-word="${escapeAttribute(word.display || word.german || '')}">
             <div class="word-item-left">
-              <div class="word-italian"><svg class="icon"><use href="#icon-volume"></use></svg> ${this.escapeHtml(word.display || word.german || '')}</div>
-              <div class="word-english">${this.escapeHtml(word.meaning || word.chinese || '—')}</div>
-              ${word.notes ? `<div class="word-notes">${this.escapeHtml(word.notes)}</div>` : ''}
+              <div class="word-italian"><svg class="icon"><use href="#icon-volume"></use></svg> ${escapeHtml(word.display || word.german || '')}</div>
+              <div class="word-english">${escapeHtml(word.meaning || word.chinese || '—')}</div>
+              ${word.notes ? `<div class="word-notes">${escapeHtml(word.notes)}</div>` : ''}
             </div>
             <div class="word-item-right">
               <span class="word-rank">#${word.rank || '-'}</span>
@@ -844,19 +844,6 @@
         [copy[i], copy[j]] = [copy[j], copy[i]];
       }
       return copy;
-    },
-
-    escapeHtml(value) {
-      return String(value)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-    },
-
-    escapeAttribute(value) {
-      return this.escapeHtml(value).replace(/`/g, '&#96;');
     }
   };
 
@@ -1000,7 +987,7 @@
       const options = this._shuffle([correct, ...distractors.map(w => w.meaning || w.chinese || '')]);
       const g = this._germanApp;
       container.innerHTML = options.map(o =>
-        `<button class="option-btn" data-answer="${g.escapeAttribute(o)}">${g.escapeHtml(o || '—')}</button>`
+        `<button class="option-btn" data-answer="${escapeAttribute(o)}">${escapeHtml(o || '—')}</button>`
       ).join('');
       container.querySelectorAll('.option-btn').forEach(btn => {
         btn.addEventListener('click', () => this._checkMcAnswer(btn));
@@ -1145,11 +1132,11 @@
       container.innerHTML = words.map(word => {
         const isMastered = this.mastered.has(word.english);
         return `
-          <div class="word-item ${isMastered ? 'mastered' : ''}" data-word="${g.escapeAttribute(word.english || '')}">
+          <div class="word-item ${isMastered ? 'mastered' : ''}" data-word="${escapeAttribute(word.english || '')}">
             <div class="word-item-left">
-              <div class="word-italian"><svg class="icon"><use href="#icon-volume"></use></svg> ${g.escapeHtml(word.english || '')}</div>
-              <div class="word-english">${g.escapeHtml(word.meaning || word.chinese || '—')}</div>
-              ${word.notes ? `<div class="word-notes">${g.escapeHtml(word.notes)}</div>` : ''}
+              <div class="word-italian"><svg class="icon"><use href="#icon-volume"></use></svg> ${escapeHtml(word.english || '')}</div>
+              <div class="word-english">${escapeHtml(word.meaning || word.chinese || '—')}</div>
+              ${word.notes ? `<div class="word-notes">${escapeHtml(word.notes)}</div>` : ''}
             </div>
             <div class="word-item-right">
               <span class="word-rank">#${word.rank || '-'}</span>

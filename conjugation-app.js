@@ -51,15 +51,6 @@
       .filter(v => v && normalizeText(v) !== 'none');
   }
 
-  function escapeHtml(str) {
-    return (str || '').toString()
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
-
   function getTenseForms(tenseData) {
     if (!tenseData) return [];
     if (tenseData.type === 'person' && tenseData.forms && typeof tenseData.forms === 'object') {
