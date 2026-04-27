@@ -10,6 +10,17 @@
 (function () {
   'use strict';
 
+  // === DOM Helper ===
+
+  function getContainer() {
+    var container = document.getElementById('cognatePracticeContainer');
+    if (!container) {
+      console.error('cognatePracticeContainer not found');
+      return null;
+    }
+    return container;
+  }
+
   // === Cognate State ===
   const CognateState = {
     words: [],           // 当前练习的 cognate 词表
@@ -142,7 +153,8 @@
 
     showQuestion() {
       const word = CognateState.words[CognateState.currentIndex];
-      const container = document.getElementById('cognatePracticeContainer');
+      const container = getContainer();
+      if (!container) return;
 
       container.innerHTML =
         '<div class="cognate-prompt-card">' +
@@ -231,7 +243,8 @@
     },
 
     showComplete() {
-      var container = document.getElementById('cognatePracticeContainer');
+      var container = getContainer();
+      if (!container) return;
       var accuracy = this.getAccuracy();
       container.innerHTML =
         '<div class="cognate-complete">' +
@@ -268,7 +281,8 @@
 
     showWord() {
       var word = CognateState.words[CognateState.currentIndex];
-      var container = document.getElementById('cognatePracticeContainer');
+      var container = getContainer();
+      if (!container) return;
       var diff = highlightDiff(word.italian, word.english);
 
       container.innerHTML =
@@ -314,7 +328,8 @@
     },
 
     showComplete() {
-      var container = document.getElementById('cognatePracticeContainer');
+      var container = getContainer();
+      if (!container) return;
       container.innerHTML =
         '<div class="cognate-complete">' +
           '<h2>Review Complete!</h2>' +
@@ -353,7 +368,8 @@
 
     showPatternSelection() {
       var groups = this.getPatternGroups(CognateState.words);
-      var container = document.getElementById('cognatePracticeContainer');
+      var container = getContainer();
+      if (!container) return;
 
       var groupCards = Object.entries(groups)
         .sort(function(a, b) { return b[1].length - a[1].length; })
@@ -394,7 +410,8 @@
     },
 
     showPatternIntro(pattern, words) {
-      var container = document.getElementById('cognatePracticeContainer');
+      var container = getContainer();
+      if (!container) return;
 
       var examples = words.slice(0, 5);
       var exampleHtml = examples.map(function(w) {
@@ -437,7 +454,8 @@
     },
 
     showList() {
-      var container = document.getElementById('cognatePracticeContainer');
+      var container = getContainer();
+      if (!container) return;
 
       var filterOptions =
         '<div class="browse-filter">' +
@@ -451,7 +469,7 @@
 
       var wordList = CognateState.words.slice(0, 100).map(function(w) {
         var diff = highlightDiff(w.italian, w.english);
-        return '<div class="browse-item" data-difficulty="' + w.difficulty + '">' +
+        return '<div class="browse-item" data-difficulty="' + escapeAttribute(w.difficulty) + '">' +
             '<div class="browse-italian">' + diff.italianHtml + '</div>' +
             '<div class="browse-english">' + diff.englishHtml + '</div>' +
             '<div class="browse-chinese">' + escapeHtml(w.chinese) + '</div>' +
@@ -488,13 +506,27 @@
 
   // === Cognate App Controller ===
 
+  var COGNATE_DATA = window.COGNATE_DATA || [];
+  if (COGNATE_DATA.length === 0) {
+    console.warn('COGNATE_DATA is empty or undefined');
+  }
+
+  function checkDataAndRender(container) {
+    if (!COGNATE_DATA || COGNATE_DATA.length === 0) {
+      container.innerHTML = '<div class="error-message">Cognate data not loaded. Please refresh.</div>';
+      return false;
+    }
+    return true;
+  }
+
   const CognateApp = {
     init() {
       loadCognateProgress();
     },
 
     showModeSelection() {
-      var container = document.getElementById('cognatePracticeContainer');
+      var container = getContainer();
+      if (!container) return;
       container.innerHTML =
         '<div class="cognate-mode-selection">' +
           '<h2>Cognate Practice</h2>' +
@@ -530,6 +562,9 @@
     },
 
     startEnglishPromptMode(difficulty) {
+      var container = getContainer();
+      if (!container) return;
+      if (!checkDataAndRender(container)) return;
       var words = COGNATE_DATA;
       if (difficulty) {
         words = words.filter(function(w) { return w.difficulty === difficulty; });
@@ -538,14 +573,23 @@
     },
 
     startContrastMode(filter) {
+      var container = getContainer();
+      if (!container) return;
+      if (!checkDataAndRender(container)) return;
       ContrastMode.start(COGNATE_DATA, filter);
     },
 
     startPatternGroupMode() {
+      var container = getContainer();
+      if (!container) return;
+      if (!checkDataAndRender(container)) return;
       PatternGroupMode.start(COGNATE_DATA);
     },
 
     startBrowseMode() {
+      var container = getContainer();
+      if (!container) return;
+      if (!checkDataAndRender(container)) return;
       BrowseMode.start(COGNATE_DATA);
     }
   };
