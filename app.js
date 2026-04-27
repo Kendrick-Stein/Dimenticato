@@ -73,8 +73,8 @@ const AppState = {
   currentWordbook: null,    // 当前正在学习的单词本
   
   // 选择状态
-  selectedSource: null,     // 'system' 或 wordbook id
-  selectedSourceType: null, // 'system' 或 'custom'
+  selectedSource: null,     // 'system', 'cognate' 或 wordbook id
+  selectedSourceType: null, // 'system', 'cognate' 或 'custom'
   practiceContext: 'vocab', // 'vocab' | 'conjugation'
   activeModule: 'home',
   currentScreen: 'welcomeScreen',
@@ -653,10 +653,32 @@ function highlightSelectedLevel() {
     if (card) {
       card.classList.add('selected');
     }
+  } else if (AppState.selectedSourceType === 'cognate') {
+    document.querySelectorAll('.cognate-btn').forEach(btn => {
+      btn.classList.add('selected');
+    });
   }
   
   // 更新模式按钮状态
   updateModeButtons();
+}
+
+function showCognateModeSelection() {
+  const cognateContainer = document.getElementById('cognatePracticeContainer');
+  if (cognateContainer) {
+    cognateContainer.classList.remove('hidden');
+  }
+
+  if (typeof CognateApp !== 'undefined') {
+    CognateApp.showModeSelection();
+  }
+}
+
+function hideCognateModeSelection() {
+  const cognateContainer = document.getElementById('cognatePracticeContainer');
+  if (cognateContainer) {
+    cognateContainer.classList.add('hidden');
+  }
 }
 
 function updateModeButtons() {
@@ -665,11 +687,18 @@ function updateModeButtons() {
     document.getElementById('spellingBtn'),
     document.getElementById('browseBtn')
   ];
-  
-  const hasSelection = AppState.selectedSourceType !== null;
+
+  const isCognate = AppState.selectedSourceType === 'cognate';
   modeButtons.forEach(btn => {
-    btn.disabled = !hasSelection;
+    if (btn) {
+      btn.disabled = isCognate || AppState.selectedSourceType === null;
+      btn.style.display = isCognate ? 'none' : '';
+    }
   });
+
+  if (isCognate && typeof CognateApp !== 'undefined') {
+    showCognateModeSelection();
+  }
 }
 
 function getVocabularySelectionLabel() {
@@ -2002,7 +2031,33 @@ function bindEvents() {
       showScreen('vocabularyModesScreen');
     });
   });
-  
+
+  // Cognate button handler
+  document.querySelectorAll('.cognate-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      AppState.selectedLevel = 'cognate';
+      AppState.selectedSource = 'cognate';
+      AppState.selectedSourceType = 'cognate';
+      AppState.currentWordbook = null;
+
+      // 加载 cognate 词汇
+      if (typeof COGNATE_DATA !== 'undefined') {
+        AppState.currentWords = COGNATE_DATA.slice(0, 1000);
+      }
+
+      // 重置进度
+      AppState.masteredWords = new Set();
+
+      // 更新 UI
+      updateHeaderStats();
+      updateSelectionHighlight();
+      showScreen('practiceModeScreen');
+
+      // 显示 cognate 模式选择
+      showCognateModeSelection();
+    });
+  });
+
   // 模式选择
   document.getElementById('multipleChoiceBtn').addEventListener('click', () => {
     MultipleChoice.start();
