@@ -661,7 +661,7 @@ function updateVocabularySummary() {
     </div>
     <div class="selection-summary-item">
       <span class="selection-summary-label">当前选择</span>
-      <span>${selection.detail}</span>
+      <span>${escapeHtml(selection.detail)}</span>
     </div>
     <div class="selection-summary-item">
       <span class="selection-summary-label">下一步</span>
@@ -885,13 +885,13 @@ const MultipleChoice = {
     }
     
     if (AppState.currentWord.notes) {
-      notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${AppState.currentWord.notes}`;
+      notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${escapeHtml(AppState.currentWord.notes)}`;
       notesContainer.style.display = 'block';
     } else {
       notesContainer.style.display = 'none';
     }
   },
-  
+
   generateOptions() {
     const correctAnswer = AppState.currentWord.english;
     const options = [correctAnswer];
@@ -918,8 +918,8 @@ const MultipleChoice = {
     
     // 渲染选项
     const container = document.getElementById('mcOptions');
-    container.innerHTML = shuffledOptions.map(option => 
-      `<button class="option-btn" data-answer="${option}">${option}</button>`
+    container.innerHTML = shuffledOptions.map(option =>
+      `<button class="option-btn" data-answer="${escapeHtml(option)}">${escapeHtml(option)}</button>`
     ).join('');
     
     // 绑定点击事件
@@ -1111,13 +1111,13 @@ const Spelling = {
     }
     
     if (AppState.currentWord.notes) {
-      notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${AppState.currentWord.notes}`;
+      notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${escapeHtml(AppState.currentWord.notes)}`;
       notesContainer.style.display = 'block';
     } else {
       notesContainer.style.display = 'none';
     }
   },
-  
+
   normalizeString(str) {
     // 移除重音符号并转换为小写
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -1179,14 +1179,14 @@ const Browse = {
     container.innerHTML = words.map(word => {
       const isMastered = AppState.masteredWords.has(word.italian);
       const rankText = word.rank < 999999 ? `#${word.rank}` : '无排名';
-      
+
       return `
-        <div class="word-item ${isMastered ? 'mastered' : ''}" data-italian="${word.italian}">
+        <div class="word-item ${isMastered ? 'mastered' : ''}" data-italian="${escapeHtml(word.italian)}">
           <div class="word-item-left">
-            <div class="word-italian">${renderIcon('icon-volume')} ${word.italian}</div>
-            <div class="word-english">${word.english}</div>
-            ${word.chinese ? `<div class="word-chinese">${word.chinese}</div>` : ''}
-            ${word.notes ? `<div class="word-notes">${word.notes}</div>` : ''}
+            <div class="word-italian">${renderIcon('icon-volume')} ${escapeHtml(word.italian)}</div>
+            <div class="word-english">${escapeHtml(word.english)}</div>
+            ${word.chinese ? `<div class="word-chinese">${escapeHtml(word.chinese)}</div>` : ''}
+            ${word.notes ? `<div class="word-notes">${escapeHtml(word.notes)}</div>` : ''}
           </div>
           <div class="word-item-right">
             <span class="word-rank">${rankText}</span>
@@ -1708,7 +1708,7 @@ const WordbookManager = {
       <div class="wordbook-card" data-wordbook-id="${wb.id}">
         <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
         <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
-        <span class="wordbook-card-name">${wb.name}</span>
+        <span class="wordbook-card-name">${escapeHtml(wb.name)}</span>
         <span class="wordbook-card-count">${wb.wordCount} 词</span>
         <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
       </div>
@@ -1765,8 +1765,8 @@ const WordbookManager = {
     container.innerHTML = AppState.customWordbooks.map(wb => `
       <div class="wordbook-item">
         <div class="wordbook-info">
-          <div class="wordbook-name">${wb.name}</div>
-          ${wb.description ? `<div class="wordbook-description">${wb.description}</div>` : ''}
+          <div class="wordbook-name">${escapeHtml(wb.name)}</div>
+          ${wb.description ? `<div class="wordbook-description">${escapeHtml(wb.description)}</div>` : ''}
           <div class="wordbook-meta">
             <span>${renderIcon('icon-pen')} ${wb.wordCount} 个单词</span>
             <span>${renderIcon('icon-calendar')} ${new Date(wb.createdAt).toLocaleDateString()}</span>
@@ -2288,7 +2288,7 @@ WordbookManager.renderWordbookCards = function() {
       <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); if(typeof WordbookEditor !== 'undefined') { WordbookEditor.openEditor(${wb.id}); } else { alert('单词本编辑功能未加载'); }" title="管理单词本">${renderIcon('icon-settings')}</button>
       <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
       <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
-      <span class="wordbook-card-name">${wb.name}</span>
+      <span class="wordbook-card-name">${escapeHtml(wb.name)}</span>
       <span class="wordbook-card-count">${wb.wordCount} 词</span>
       <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
     </div>
