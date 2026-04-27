@@ -107,82 +107,116 @@ function getWordbookProgressKey(id, language = 'italian') {
   return `dimenticato_progress_wb_${normalizedLanguage}_${id}`;
 }
 
-const ScreenMeta = {
-  welcomeScreen: {
-    module: 'home',
-    topNav: 'welcomeScreen',
-    breadcrumb: ['Home']
+// 为不同语言生成 screen 元数据的工厂函数
+function makeLanguageScreens(lang) {
+  const capLang = lang.charAt(0).toUpperCase() + lang.slice(1);
+  const prefix = lang === 'italian' ? '' : lang;
+  const breadcrumbHome = lang === 'italian' ? [] : [capLang];
+
+  // For Italian (no prefix), use lowercase screen names
+  // For German/English, prefix + capitalized screen name
+  const makeKey = (name) => prefix ? prefix + name : name.charAt(0).toLowerCase() + name.slice(1);
+
+  return {
+    [makeKey('VocabularyScreen')]: {
+      module: 'vocabulary',
+      topNav: 'vocabularyScreen',
+      breadcrumb: [...breadcrumbHome, 'Vocabulary', '内容来源']
+    },
+    [makeKey('VocabularyModesScreen')]: {
+      module: 'vocabulary',
+      topNav: 'vocabularyScreen',
+      breadcrumb: [...breadcrumbHome, 'Vocabulary', '练习方式']
+    },
+    [makeKey('MultipleChoiceScreen')]: {
+      module: 'vocabulary',
+      topNav: 'vocabularyScreen',
+      breadcrumb: [...breadcrumbHome, 'Vocabulary', '练习中', '选择题']
+    },
+    [makeKey('SpellingScreen')]: {
+      module: 'vocabulary',
+      topNav: 'vocabularyScreen',
+      breadcrumb: [...breadcrumbHome, 'Vocabulary', '练习中', '拼写']
+    },
+    [makeKey('BrowseScreen')]: {
+      module: 'vocabulary',
+      topNav: 'vocabularyScreen',
+      breadcrumb: [...breadcrumbHome, 'Vocabulary', '练习中', '浏览']
+    },
+    [makeKey('GrammarScreen')]: {
+      module: 'grammar',
+      topNav: 'grammarScreen',
+      breadcrumb: lang === 'italian' ? ['Grammar', '主题选择'] : [...breadcrumbHome, 'Grammar']
+    },
+    [makeKey('ProgressScreen')]: {
+      module: 'progress',
+      topNav: 'progressScreen',
+      breadcrumb: [...breadcrumbHome, 'Progress']
+    },
+    [makeKey('SettingsScreen')]: {
+      module: 'settings',
+      topNav: 'settingsScreen',
+      breadcrumb: [...breadcrumbHome, 'Settings & Data']
+    }
+  };
+}
+
+// Build the complete ScreenMeta object
+const ScreenMeta = Object.assign(
+  {
+    welcomeScreen: {
+      module: 'home',
+      topNav: 'welcomeScreen',
+      breadcrumb: ['Home']
+    }
   },
-  vocabularyScreen: {
-    module: 'vocabulary',
-    topNav: 'vocabularyScreen',
-    breadcrumb: ['Vocabulary', '内容来源']
-  },
-  vocabularyModesScreen: {
-    module: 'vocabulary',
-    topNav: 'vocabularyScreen',
-    breadcrumb: ['Vocabulary', '练习方式']
-  },
-  multipleChoiceScreen: {
-    module: 'vocabulary',
-    topNav: 'vocabularyScreen',
-    breadcrumb: ['Vocabulary', '练习中', '选择题']
-  },
-  spellingScreen: {
-    module: 'vocabulary',
-    topNav: 'vocabularyScreen',
-    breadcrumb: ['Vocabulary', '练习中', '拼写']
-  },
-  browseScreen: {
-    module: 'vocabulary',
-    topNav: 'vocabularyScreen',
-    breadcrumb: ['Vocabulary', '练习中', '浏览']
-  },
-  communityBrowseScreen: {
-    module: 'vocabulary',
-    topNav: 'vocabularyScreen',
-    breadcrumb: ['Vocabulary', '社区词本']
-  },
-  grammarScreen: {
-    module: 'grammar',
-    topNav: 'grammarScreen',
-    breadcrumb: ['Grammar', '主题选择']
-  },
-  conjugationSetupScreen: {
-    module: 'grammar',
-    topNav: 'grammarScreen',
-    breadcrumb: ['Grammar', '动词变位', '设置']
-  },
-  conjugationScreen: {
-    module: 'grammar',
-    topNav: 'grammarScreen',
-    breadcrumb: ['Grammar', '动词变位', '练习中']
-  },
-  grammarBookScreen: {
-    module: 'grammar',
-    topNav: 'grammarScreen',
-    breadcrumb: ['Grammar', '语法书']
-  },
-  verbCollocationsScreen: {
-    module: 'grammar',
-    topNav: 'grammarScreen',
-    breadcrumb: ['Grammar', '动词搭配']
-  },
-  verbCollocationPracticeScreen: {
-    module: 'grammar',
-    topNav: 'grammarScreen',
-    breadcrumb: ['Grammar', '动词搭配练习']
-  },
-  progressScreen: {
-    module: 'progress',
-    topNav: 'progressScreen',
-    breadcrumb: ['Progress']
-  },
-  settingsScreen: {
-    module: 'settings',
-    topNav: 'settingsScreen',
-    breadcrumb: ['Settings & Data']
-  }
+  makeLanguageScreens('italian'),
+  makeLanguageScreens('german'),
+  makeLanguageScreens('english')
+);
+
+// Italian-only screens (no German/English equivalents)
+ScreenMeta.communityBrowseScreen = {
+  module: 'vocabulary',
+  topNav: 'vocabularyScreen',
+  breadcrumb: ['Vocabulary', '社区词本']
+};
+ScreenMeta.conjugationSetupScreen = {
+  module: 'grammar',
+  topNav: 'grammarScreen',
+  breadcrumb: ['Grammar', '动词变位', '设置']
+};
+ScreenMeta.conjugationScreen = {
+  module: 'grammar',
+  topNav: 'grammarScreen',
+  breadcrumb: ['Grammar', '动词变位', '练习中']
+};
+ScreenMeta.grammarBookScreen = {
+  module: 'grammar',
+  topNav: 'grammarScreen',
+  breadcrumb: ['Grammar', '语法书']
+};
+ScreenMeta.verbCollocationsScreen = {
+  module: 'grammar',
+  topNav: 'grammarScreen',
+  breadcrumb: ['Grammar', '动词搭配']
+};
+ScreenMeta.verbCollocationPracticeScreen = {
+  module: 'grammar',
+  topNav: 'grammarScreen',
+  breadcrumb: ['Grammar', '动词搭配练习']
+};
+
+// German/English welcome screens (special — under 'home' module, not the factory pattern)
+ScreenMeta.germanWelcomeScreen = {
+  module: 'home',
+  topNav: 'welcomeScreen',
+  breadcrumb: ['German', 'Home']
+};
+ScreenMeta.englishWelcomeScreen = {
+  module: 'home',
+  topNav: 'welcomeScreen',
+  breadcrumb: ['English', 'Home']
 };
 
 // ==================== 本地存储 ====================
