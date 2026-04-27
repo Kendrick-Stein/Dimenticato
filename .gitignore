@@ -52,6 +52,10 @@ ita-eng/
 it_50k.txt
 newselfdata/
 
+# Git worktrees (isolated workspaces)
+.worktrees/
+worktrees/
+
 # Keep only necessary files for deployment:
 # - index.html
 # - styles.css
