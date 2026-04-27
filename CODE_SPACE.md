@@ -45,6 +45,47 @@
 - 一部分模块是“主流程”，一部分模块是“挂载式增强”
 - 数据文件多数预编译成 `.js` 常量，以规避 GitHub Pages 上中文路径 / fetch 问题
 
+### 1.3 项目结构
+
+```text
+├── index.html
+├── styles.css
+├── lib/
+│   ├── utils.js           ← 共享工具函数（escapeHtml, escapeAttribute, renderIcon）
+│   └── quiz-engine.js     ← 通用测验引擎（选择题/拼写/浏览共享逻辑）
+├── tests/
+│   ├── test-quiz-engine.html       ← QuizEngine 单元测试（19 个用例）
+│   └── test-spaced-repetition.html ← SM-2 算法测试（17 个用例）
+├── app.js                 ← Italian 主站控制器
+├── app-enhanced.js        ← 增强层（SM-2, StatsManager, WordbookEditor）
+├── community-wordbooks.js ← 社区词本模块
+├── conjugation-app.js     ← 动词变位练习
+├── grammar-book.js        ← 语法书阅读器
+├── verb-collocations.js   ← 动词搭配阅读器
+├── verb-collocations-practice.js ← 动词搭配练习
+├── stats-charts.js        ← 图表统计
+├── german-app.js          ← German/English 站控制器
+├── supabase-config.js     ← Supabase 配置
+├── vocabulary.js          ← Italian 系统词汇数据
+├── data/
+│   ├── conjugations-all-tenses.js
+│   ├── conjugations-presente.js
+│   ├── grammar-data.js
+│   ├── verb-collocations-data.js
+│   ├── german-vocabulary.js
+│   ├── german-grammar-data.js
+│   ├── english-vocabulary.js
+│   └── english-grammar-data.js
+└── scripts/
+    ├── parse_grammar.py
+    ├── build_grammar_data.py
+    ├── parse_verb_collocations.py
+    ├── reverso_presente_pipeline.py
+    ├── build_german_grammar.py
+    ├── build_english_vocab.py
+    └── build_english_grammar.py
+```
+
 ---
 
 ## 2. 运行模型总览
@@ -55,13 +96,20 @@
 
 1. 加载页面 DOM
 2. 顺序加载脚本：
+   - `lib/utils.js`          ← 共享工具（必须最先加载）
+   - `lib/quiz-engine.js`    ← 通用测验引擎
    - `vocabulary.js`
    - `data/conjugations-all-tenses.js`
    - `data/conjugations-presente.js`
    - `supabase-config.js`
    - `community-wordbooks.js`
+   - `data/german-vocabulary.js`
+   - `data/english-vocabulary.js`
+   - `data/german-grammar-data.js`
+   - `data/english-grammar-data.js`
    - `app.js`
    - `app-enhanced.js`
+   - `german-app.js`
    - `conjugation-app.js`
    - `stats-charts.js`
    - `data/grammar-data.js`
@@ -69,11 +117,6 @@
    - `data/verb-collocations-data.js`
    - `verb-collocations.js`
    - `verb-collocations-practice.js`
-   - `data/german-vocabulary.js`
-   - `data/german-grammar-data.js`
-   - `data/english-vocabulary.js`
-   - `data/english-grammar-data.js`
-   - `german-app.js`
 3. `app.js` 在 `DOMContentLoaded` 时执行：
    - `bindEvents()`
    - `loadVocabulary()`
@@ -320,7 +363,66 @@
 
 ---
 
-### 6.2 `app-enhanced.js` — 增强层 / Patch 层
+### 6.2 `lib/utils.js` — 共享工具函数
+
+**新增于 2026-04-27 codebase hardening.**
+
+提供全站共享的基础工具函数，必须在所有其他脚本之前加载。
+
+负责：
+
+- `escapeHtml(value)` — HTML 转义，防止 XSS 攻击
+- `escapeAttribute(value)` — HTML 属性值转义
+- `renderIcon(name)` — SVG 图标渲染
+
+**设计决策：**
+
+- 使用 IIFE 封装，通过 `window.escapeHtml` / `window.escapeAttribute` / `window.renderIcon` 暴露全局函数
+- 同时暴露 `window.DimenticatoUtils` 命名空间对象
+- 取代了此前在 7 个文件中各自定义的重复 `escapeHtml` 函数
+
+---
+
+### 6.3 `lib/quiz-engine.js` — 通用测验引擎
+
+**新增于 2026-04-27 codebase hardening.**
+
+为选择题、拼写、浏览三种学习模式提供共享逻辑。通过配置对象适配不同语言的字段名。
+
+负责：
+
+- `shuffleArray()` — Fisher-Yates 洗牌
+- `generateOptions()` — 生成选择题 4 个选项
+- `renderOptions()` — 渲染选项按钮 DOM
+- `showFeedback()` — 显示正确/错误反馈
+- `highlightOptions()` — 高亮正确答案
+- `updateProgress()` — 更新进度 UI
+- `normalizeString()` — 文本标准化（拼写模式）
+
+**设计决策：**
+
+- `app.js` (Italian) 和 `german-app.js` (German/English) 各自创建 QuizEngine 实例
+- 通过 `fieldMap` 配置适配不同语言（Italian: `{source:'italian', target:'english'}`, German: `{source:'german', target:'display'}`）
+- 使用懒初始化模式（`_getEngine()`）避免 DOM 就绪前创建引擎
+
+---
+
+### 6.4 `tests/` — 单元测试
+
+**新增于 2026-04-27 codebase hardening.**
+
+浏览器端自包含测试文件，可直接在浏览器中打开运行。
+
+- `tests/test-quiz-engine.html` — QuizEngine 单元测试（19 个测试用例）
+  - 涵盖：shuffleArray, generateOptions, normalizeString, escapeHtml, escapeAttribute, renderIcon
+- `tests/test-spaced-repetition.html` — SM-2 间隔重复算法测试（17 个测试用例）
+  - 涵盖：初始化、质量评分、间隔计算、easiness 边界、复习历史、getDueWords
+
+**使用方式：** 在浏览器中直接打开 HTML 文件即可查看测试结果（绿色 PASS / 红色 FAIL）。
+
+---
+
+### 6.5 `app-enhanced.js` — 增强层 / Patch 层
 
 这个文件不是独立应用，而是对 `app.js` 的增强扩展。
 
@@ -355,7 +457,7 @@
 
 ---
 
-### 6.3 `community-wordbooks.js` — 社区词本
+### 6.6 `community-wordbooks.js` — 社区词本
 
 负责：
 
@@ -392,7 +494,7 @@
 
 ---
 
-### 6.4 `conjugation-app.js` — 动词变位练习模块
+### 6.7 `conjugation-app.js` — 动词变位练习模块
 
 这是一个相对独立的子系统。
 
@@ -435,7 +537,7 @@
 
 ---
 
-### 6.5 `grammar-book.js` — 语法书阅读器
+### 6.8 `grammar-book.js` — 语法书阅读器
 
 负责：
 
@@ -464,7 +566,7 @@
 
 ---
 
-### 6.6 `verb-collocations.js` — 动词搭配阅读器
+### 6.9 `verb-collocations.js` — 动词搭配阅读器
 
 负责：
 
@@ -492,7 +594,7 @@
 
 看 `verb-collocations.js` + `data/verb-collocations-data.js`。
 
-### 6.6.1 `verb-collocations-practice.js` — 动词搭配练习模块
+### 6.9.1 `verb-collocations-practice.js` — 动词搭配练习模块
 
 负责：
 
@@ -525,7 +627,7 @@
 
 ---
 
-### 6.7 `stats-charts.js` — 图表统计模块
+### 6.10 `stats-charts.js` — 图表统计模块
 
 负责：
 
@@ -553,7 +655,7 @@
 
 ---
 
-### 6.8 `german-app.js` — 德语站 + 英语站控制器
+### 6.11 `german-app.js` — 德语站 + 英语站控制器
 
 这是德语与英语学习模块的主控制文件，加载于所有德语/英语数据文件之后。
 
@@ -599,7 +701,7 @@
 
 ---
 
-### 6.9 `supabase-config.js` — Supabase 配置
+### 6.12 `supabase-config.js` — Supabase 配置
 
 负责：
 
@@ -1404,6 +1506,27 @@
 - `styles.css` 新增查询区、结果卡片、时态卡片样式，并适配移动端。
 - 当前查询结果会忠实展示 `data/conjugations-all-tenses.js` 中已有数据；若源数据存在缺项或异常形式，查询结果也会原样反映。
 
+### 2026-04-27 — Codebase Hardening
+
+**安全修复：**
+- 修复 app.js 中所有 XSS 漏洞：wordbook 名称、描述、笔记、选项等用户数据均通过 `escapeHtml()` 转义
+- CDN 脚本添加 SRI integrity hash（Chart.js 4.4.0, marked.js 9.1.6, Supabase 2.39.0）
+- Supabase SDK 版本从 `@2`（自动大版本更新）锁定至 `@2.39.0`
+
+**代码质量：**
+- 新增 `lib/utils.js`：提取 7 个文件中的重复 `escapeHtml` 定义到共享模块
+- 新增 `lib/quiz-engine.js`：提取通用测验引擎，消除 Italian/German/English 练习模式代码重复
+- ScreenMeta 从 ~170 行手写定义重构为 `makeLanguageScreens()` 工厂函数
+
+**用户体验：**
+- 加载界面从静态 spinner 改为带动画进度条的加载流程，显示数据加载各阶段状态
+
+**测试：**
+- 新增 `tests/` 目录，包含 36 个浏览器端单元测试（QuizEngine 19 个 + SM-2 算法 17 个）
+
+**文档：**
+- 更新 CODE_SPACE.md 反映新的 lib/ 和 tests/ 目录、脚本加载顺序
+
 ---
 
 ## 16. 快速索引（超简版）
@@ -1419,6 +1542,9 @@
 - **改动词搭配** → `verb-collocations.js` + `data/verb-collocations-data.js`
 - **改动词搭配练习** → `verb-collocations-practice.js` + `data/verb-collocations-data.js`
 - **改统计图表** → `stats-charts.js`
+- **改共享工具函数** → `lib/utils.js`
+- **改通用测验引擎** → `lib/quiz-engine.js`
+- **改单元测试** → `tests/test-quiz-engine.html` + `tests/test-spaced-repetition.html`
 - **改语法书构建** → `scripts/parse_grammar.py` + `scripts/build_grammar_data.py`
 - **改搭配数据构建** → `scripts/parse_verb_collocations.py`
 - **改变位数据构建** → `scripts/reverso_presente_pipeline.py`
