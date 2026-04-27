@@ -14,12 +14,18 @@ const vocabPath = path.join(rootDir, 'vocabulary.js');
 
 // 读取 vocabulary.js 并提取 VOCABULARY_DATA
 const vocabContent = fs.readFileSync(vocabPath, 'utf8');
-const match = vocabContent.match(/const VOCABULARY_DATA = (\[[\s\S]*\]);/);
+const match = vocabContent.match(/const VOCABULARY_DATA = (\[[\s\S]*?\n\]);/);
 if (!match) {
   console.error('无法解析 vocabulary.js');
   process.exit(1);
 }
-const vocabulary = JSON.parse(match[1]);
+let vocabulary;
+try {
+  vocabulary = JSON.parse(match[1]);
+} catch (e) {
+  console.error('解析 vocabulary.js JSON 失败:', e.message);
+  process.exit(1);
+}
 
 console.log(`总词条数: ${vocabulary.length}`);
 
@@ -53,10 +59,12 @@ function levenshteinDistance(a, b) {
  * 根据编辑距离计算基础相似度分数
  */
 function baseSimilarityScore(distance, maxLen) {
-  if (distance <= 2) return 90 + (2 - distance) * 5; // 90-100
-  if (distance <= 4) return 70 + (4 - distance) * 5; // 70-89
-  if (distance <= 6) return 50 + (6 - distance) * 3; // 50-69
-  return Math.max(0, 40 - distance);
+  const ratio = maxLen > 0 ? distance / maxLen : 0;
+  if (ratio <= 0.1) return 100;
+  if (ratio <= 0.2) return 90 - Math.round(ratio * 10);
+  if (ratio <= 0.3) return 80 - Math.round(ratio * 10);
+  if (ratio <= 0.5) return 60 - Math.round(ratio * 20);
+  return Math.max(30, 50 - Math.round(ratio * 50));
 }
 
 // === 后缀模式定义 ===
@@ -138,6 +146,9 @@ vocabulary.forEach(entry => {
 
   // 只处理有英文翻译的词条
   if (!english || english.length < 2) return;
+
+  // 验证 rank 字段
+  if (typeof rank !== 'number' || rank <= 0) return;
 
   // 取英文翻译的第一个词（如果有多个）
   const firstEnglish = english.split(/[;,]/)[0].trim().toLowerCase();
