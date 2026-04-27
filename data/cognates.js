@@ -4,7 +4,7 @@
 // Generated on 2026-04-27
 // Structure: {italian, english, chinese, patternType, similarityScore, difficulty, rank}
 
-const COGNATE_DATA = [
+var COGNATE_DATA = [
   {
     "italian": "no",
     "english": "no",

@@ -5104,24 +5104,6 @@ body {
 
 /* === Cognate Practice Styles === */
 
-.cognate-section {
-  background: linear-gradient(135deg, rgba(52, 152, 219, 0.05), rgba(155, 89, 182, 0.05));
-}
-
-.cognate-btn {
-  background: linear-gradient(135deg, #3498db, #9b59b6);
-  border-color: #3498db;
-}
-
-.cognate-btn:hover {
-  background: linear-gradient(135deg, #2980b9, #8e44ad);
-}
-
-.cognate-btn.selected {
-  background: linear-gradient(135deg, #9b59b6, #3498db);
-  border-color: #9b59b6;
-}
-
 /* Cognate diff highlighting */
 .cognate-diff {
   color: #e67e22;
