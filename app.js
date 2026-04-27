@@ -564,32 +564,46 @@ const Storage = {
 
 // ==================== 数据加载 ====================
 
+function updateLoadingProgress(percent, message) {
+  var fill = document.getElementById('loadingProgressFill');
+  var detail = document.getElementById('loadingDetail');
+  if (fill) fill.style.width = percent + '%';
+  if (detail) detail.textContent = message || '';
+}
+
 function loadVocabulary() {
   try {
+    updateLoadingProgress(10, '正在加载词汇数据...');
+
     // 直接使用内嵌的词汇数据（从 vocabulary.js 加载）
     if (typeof VOCABULARY_DATA === 'undefined') {
       throw new Error('词汇数据未加载');
     }
-    
+
     AppState.vocabulary = VOCABULARY_DATA;
-    console.log(`✅ 成功加载 ${AppState.vocabulary.length} 个单词`);
-    
+    updateLoadingProgress(40, '已加载 ' + AppState.vocabulary.length.toLocaleString() + ' 个单词');
+
     // 加载本地存储的数据
+    updateLoadingProgress(60, '正在恢复学习进度...');
     Storage.load();
-    
+
     // 初始化当前词汇列表
+    updateLoadingProgress(80, '正在准备练习...');
     updateCurrentWords();
-    
+
     // 隐藏加载动画，显示应用
-    document.getElementById('loading').classList.add('hidden');
-    document.getElementById('app').classList.remove('hidden');
-    
+    updateLoadingProgress(100, '准备就绪');
+    setTimeout(function () {
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('app').classList.remove('hidden');
+    }, 300);
+
     // 更新头部统计
     updateHeaderStats();
-    
+
     // 高亮选中的难度级别
     highlightSelectedLevel();
-    
+
   } catch (error) {
     console.error('❌ 加载失败:', error);
     alert('加载词汇数据失败，请确保 vocabulary.js 文件存在。');
