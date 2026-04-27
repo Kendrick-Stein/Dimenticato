@@ -152,27 +152,28 @@
     },
 
     showQuestion() {
-      const word = CognateState.words[CognateState.currentIndex];
-      const container = getContainer();
+      var word = CognateState.words[CognateState.currentIndex];
+      var container = getContainer();
       if (!container) return;
 
       container.innerHTML =
-        '<div class="cognate-prompt-card">' +
-          '<div class="prompt-english">' +
-            '<span class="prompt-label">English:</span>' +
-            '<span class="prompt-word">' + escapeHtml(word.english) + '</span>' +
+        '<div class="quiz-card">' +
+          '<div class="quiz-header">' +
+            '<span class="quiz-progress">' + (CognateState.currentIndex + 1) + ' / ' + CognateState.words.length + '</span>' +
+            '<span class="quiz-accuracy">Accuracy: ' + this.getAccuracy() + '%</span>' +
           '</div>' +
-          '<div class="prompt-chinese">' + escapeHtml(word.chinese) + '</div>' +
-          '<input type="text" class="cognate-input" id="cognateInput" placeholder="Type Italian..." autocomplete="off">' +
-          '<div class="cognate-actions">' +
+          '<div class="quiz-content">' +
+            '<div class="quiz-prompt">' +
+              '<div class="prompt-english">English: <strong>' + escapeHtml(word.english) + '</strong></div>' +
+              '<div class="prompt-chinese">' + escapeHtml(word.chinese) + '</div>' +
+            '</div>' +
+            '<input type="text" class="spelling-input" id="cognateInput" placeholder="Type the Italian word..." autocomplete="off">' +
+          '</div>' +
+          '<div class="quiz-actions">' +
             '<button class="btn primary" id="cognateCheckBtn">Check</button>' +
             '<button class="btn" id="cognateSkipBtn">Skip</button>' +
           '</div>' +
-          '<div class="cognate-feedback hidden" id="cognateFeedback"></div>' +
-          '<div class="cognate-progress">' +
-            '<span id="cognateProgressNum">' + (CognateState.currentIndex + 1) + '</span> / ' + CognateState.words.length +
-            '<span class="accuracy">Accuracy: <span id="cognateAccuracy">' + this.getAccuracy() + '%</span></span>' +
-          '</div>' +
+          '<div class="quiz-feedback hidden" id="cognateFeedback"></div>' +
         '</div>';
 
       document.getElementById('cognateInput').focus();
@@ -186,6 +187,7 @@
     checkAnswer(word) {
       var input = document.getElementById('cognateInput');
       var feedback = document.getElementById('cognateFeedback');
+      var accuracyEl = document.querySelector('.quiz-accuracy');
       var userAnswer = input.value.trim();
 
       CognateState.totalCount++;
@@ -194,38 +196,47 @@
 
       if (isCorrect) {
         CognateState.correctCount++;
-        feedback.innerHTML = '<span class="correct-answer">✓ Correct! ' + escapeHtml(word.italian) + '</span>';
+        feedback.innerHTML = '<span class="feedback-text">✓ 正确！</span>';
         feedback.classList.remove('incorrect');
         feedback.classList.add('correct');
+        feedback.classList.remove('hidden');
+        if (accuracyEl) accuracyEl.textContent = 'Accuracy: ' + this.getAccuracy() + '%';
+        setTimeout(function() { EnglishPromptMode.nextQuestion(); }, 1200);
       } else {
         var diff = highlightDiff(word.italian, word.english);
         feedback.innerHTML =
-          '<span class="incorrect-answer">✗ Incorrect</span>' +
-          '<div class="contrast-display">' +
-            '<div>Italian: ' + diff.italianHtml + '</div>' +
-            '<div>English: ' + diff.englishHtml + '</div>' +
-          '</div>';
+          '<span class="feedback-text">✗ 错误，正确答案：</span>' +
+          '<div class="answer-comparison">' +
+            '<div><strong>Italian:</strong> ' + diff.italianHtml + '</div>' +
+            '<div><strong>English:</strong> ' + diff.englishHtml + '</div>' +
+          '</div>' +
+          '<button class="btn primary next-btn" id="cognateNextBtn">下一题 →</button>';
         feedback.classList.remove('correct');
         feedback.classList.add('incorrect');
+        feedback.classList.remove('hidden');
+        if (accuracyEl) accuracyEl.textContent = 'Accuracy: ' + this.getAccuracy() + '%';
+        input.disabled = true;
+        document.getElementById('cognateCheckBtn').disabled = true;
+        document.getElementById('cognateSkipBtn').disabled = true;
+        document.getElementById('cognateNextBtn').addEventListener('click', function() { EnglishPromptMode.nextQuestion(); });
       }
-
-      feedback.classList.remove('hidden');
-      document.getElementById('cognateAccuracy').textContent = this.getAccuracy() + '%';
-
-      setTimeout(function() { EnglishPromptMode.nextQuestion(); }, isCorrect ? 1000 : 2500);
     },
 
     skip(word) {
       var feedback = document.getElementById('cognateFeedback');
       var diff = highlightDiff(word.italian, word.english);
       feedback.innerHTML =
-        '<span class="skipped">Skipped</span>' +
-        '<div class="contrast-display">' +
-          '<div>Italian: ' + diff.italianHtml + '</div>' +
-          '<div>English: ' + diff.englishHtml + '</div>' +
-        '</div>';
+        '<span class="feedback-text">跳过，正确答案：</span>' +
+        '<div class="answer-comparison">' +
+          '<div><strong>Italian:</strong> ' + diff.italianHtml + '</div>' +
+          '<div><strong>English:</strong> ' + diff.englishHtml + '</div>' +
+        '</div>' +
+        '<button class="btn primary next-btn" id="cognateNextBtn">下一题 →</button>';
       feedback.classList.remove('hidden');
-      setTimeout(function() { EnglishPromptMode.nextQuestion(); }, 2000);
+      document.getElementById('cognateInput').disabled = true;
+      document.getElementById('cognateCheckBtn').disabled = true;
+      document.getElementById('cognateSkipBtn').disabled = true;
+      document.getElementById('cognateNextBtn').addEventListener('click', function() { EnglishPromptMode.nextQuestion(); });
     },
 
     nextQuestion() {
@@ -247,14 +258,20 @@
       if (!container) return;
       var accuracy = this.getAccuracy();
       container.innerHTML =
-        '<div class="cognate-complete">' +
-          '<h2>Practice Complete!</h2>' +
-          '<div class="stats-summary">' +
-            '<div>Correct: ' + CognateState.correctCount + ' / ' + CognateState.totalCount + '</div>' +
-            '<div>Accuracy: ' + accuracy + '%</div>' +
+        '<div class="quiz-card">' +
+          '<div class="quiz-header">' +
+            '<h2>练习完成！</h2>' +
           '</div>' +
-          '<button class="btn primary" onclick="CognateApp.startEnglishPromptMode()">Practice Again</button>' +
-          '<button class="btn" onclick="CognateApp.showModeSelection()">Back to Modes</button>' +
+          '<div class="quiz-content">' +
+            '<div class="complete-stats">' +
+              '<div class="stat-item">正确: <strong>' + CognateState.correctCount + ' / ' + CognateState.totalCount + '</strong></div>' +
+              '<div class="stat-item">准确率: <strong>' + accuracy + '%</strong></div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="quiz-actions">' +
+            '<button class="btn primary" onclick="CognateApp.startEnglishPromptMode()">再练一次</button>' +
+            '<button class="btn" onclick="CognateApp.showModeSelection()">返回模式选择</button>' +
+          '</div>' +
         '</div>';
     }
   };
@@ -528,27 +545,27 @@
       var container = getContainer();
       if (!container) return;
       container.innerHTML =
-        '<div class="cognate-mode-selection">' +
+        '<div class="mode-selection">' +
           '<h2>Cognate Practice</h2>' +
           '<p class="subtitle">Learn Italian words similar to English</p>' +
           '<div class="mode-buttons">' +
             '<button class="mode-btn" id="englishPromptBtn">' +
-              '<span class="mode-icon">📝</span>' +
+              '<span class="mode-icon"><svg class="icon"><use href="#icon-keyboard"></use></svg></span>' +
               '<span class="mode-name">English Prompt</span>' +
               '<span class="mode-desc">Type Italian from English hint</span>' +
             '</button>' +
             '<button class="mode-btn" id="contrastBtn">' +
-              '<span class="mode-icon">👁️</span>' +
+              '<span class="mode-icon"><svg class="icon"><use href="#icon-eye"></use></svg></span>' +
               '<span class="mode-name">Contrast View</span>' +
               '<span class="mode-desc">Compare IT/EN with highlights</span>' +
             '</button>' +
             '<button class="mode-btn" id="patternGroupBtn">' +
-              '<span class="mode-icon">📚</span>' +
+              '<span class="mode-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>' +
               '<span class="mode-name">Pattern Groups</span>' +
               '<span class="mode-desc">Learn by suffix patterns</span>' +
             '</button>' +
             '<button class="mode-btn" id="browseBtn">' +
-              '<span class="mode-icon">📖</span>' +
+              '<span class="mode-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>' +
               '<span class="mode-name">Browse</span>' +
               '<span class="mode-desc">Scroll through cognates</span>' +
             '</button>' +
