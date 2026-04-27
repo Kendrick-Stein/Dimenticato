@@ -2050,8 +2050,8 @@ function bindEvents() {
 
       // 更新 UI
       updateHeaderStats();
-      updateSelectionHighlight();
-      showScreen('practiceModeScreen');
+      highlightSelectedLevel();
+      showScreen('vocabularyModesScreen');
 
       // 显示 cognate 模式选择
       showCognateModeSelection();
