@@ -2024,6 +2024,14 @@ love
   <script src="lib/quiz-engine.js"></script>
 
   <script src="vocabulary.js"></script>
+  <script>
+    // 检测 vocabulary.js 是否成功加载
+    if (typeof VOCABULARY_DATA !== 'undefined') {
+      console.log('✅ vocabulary.js 加载成功，包含 ' + VOCABULARY_DATA.length + ' 个单词');
+    } else {
+      console.error('❌ vocabulary.js 加载失败或 VOCABULARY_DATA 未定义');
+    }
+  </script>
   <script src="data/conjugations-all-tenses.js"></script>
   <script src="data/conjugations-presente.js"></script>
   <script src="supabase-config.js"></script>

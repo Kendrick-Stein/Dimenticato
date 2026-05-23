@@ -577,7 +577,33 @@ function loadVocabulary() {
 
     // 直接使用内嵌的词汇数据（从 vocabulary.js 加载）
     if (typeof VOCABULARY_DATA === 'undefined') {
-      throw new Error('词汇数据未加载');
+      // 显示更详细的错误信息
+      const errorMsg = '词汇数据未加载。可能原因：\n1. vocabulary.js 文件加载失败\n2. 网络连接问题\n3. 文件过大导致加载超时';
+      console.error('❌ 加载失败:', errorMsg);
+      updateLoadingProgress(0, '加载失败：词汇数据未找到');
+
+      // 在小程序环境中显示友好的错误提示
+      setTimeout(function() {
+        document.getElementById('loading').innerHTML = `
+          <div style="text-align: center; padding: 40px 20px;">
+            <h2 style="color: #e74c3c; margin-bottom: 20px;">⚠️ 加载失败</h2>
+            <p style="margin-bottom: 10px;">词汇数据文件加载失败</p>
+            <p style="color: #7f8c8d; font-size: 14px; margin-bottom: 20px;">
+              这可能是由于网络问题或文件过大导致的
+            </p>
+            <button onclick="location.reload()" style="
+              background: #3498db;
+              color: white;
+              border: none;
+              padding: 12px 24px;
+              border-radius: 8px;
+              font-size: 16px;
+              cursor: pointer;
+            ">重新加载</button>
+          </div>
+        `;
+      }, 500);
+      return;
     }
 
     AppState.vocabulary = VOCABULARY_DATA;
@@ -606,7 +632,8 @@ function loadVocabulary() {
 
   } catch (error) {
     console.error('❌ 加载失败:', error);
-    alert('加载词汇数据失败，请确保 vocabulary.js 文件存在。');
+    updateLoadingProgress(0, '加载失败：' + error.message);
+    alert('加载词汇数据失败：' + error.message);
   }
 }
 
