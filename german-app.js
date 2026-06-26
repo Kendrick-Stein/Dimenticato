@@ -186,7 +186,8 @@
     bindGermanNavigation() {
       this.bindClick('goGermanVocabularyBtn', () => this.showScreen('germanVocabularyScreen'));
       this.bindClick('goGermanGrammarBtn', () => this.showScreen('germanGrammarScreen'));
-      this.bindClick('goGermanProgressBtn', () => this.showScreen('germanProgressScreen'));
+      // goGermanProgressBtn is bound in bindLanguageSettingsAndProgress() (it also
+      // refreshes the progress stats before showing the screen). Bound once there.
       this.bindClick('goGermanSettingsBtn', () => this.showScreen('germanSettingsScreen'));
 
       this.bindClick('germanVocabularyBackBtn', () => this.goBack('germanWelcomeScreen'));
@@ -205,7 +206,8 @@
       this.bindClick('englishSettingsBackBtn', () => this.goBack('englishWelcomeScreen'));
       this.bindClick('goEnglishVocabularyBtn', () => this.showScreen('englishVocabularyScreen'));
       this.bindClick('goEnglishGrammarBtn', () => this.showScreen('englishGrammarScreen'));
-      this.bindClick('goEnglishProgressBtn', () => this.showScreen('englishProgressScreen'));
+      // goEnglishProgressBtn is bound in bindLanguageSettingsAndProgress() (it also
+      // refreshes the progress stats before showing the screen). Bound once there.
       this.bindClick('goEnglishSettingsBtn', () => this.showScreen('englishSettingsScreen'));
       this.bindClick('englishSystemVocabularyBtn', () => this.showScreen('englishVocabularyModesScreen'));
       this.bindClick('englishWordbooksBtn', () => this.renderLanguageWordbooks('english'));

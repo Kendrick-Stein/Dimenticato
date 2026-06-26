@@ -1837,13 +1837,9 @@ const WordbookManager = {
     } else if (mode === '3') {
       this.startLearning(id, 'browse');
     }
-  },
-  
-  // 显示单词本管理页面
-  showManagementScreen() {
-    showScreen('wordbookScreen');
-    this.renderWordbookList();
   }
+  // NOTE: showManagementScreen() was removed in Stage 3 of the nav refactor —
+  // it had zero call sites and navigated to a non-existent 'wordbookScreen'.
 };
 
 // ==================== 统计弹窗 ====================
