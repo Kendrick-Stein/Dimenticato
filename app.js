@@ -819,8 +819,32 @@ function setPracticeContext(context = 'vocab') {
 
 window.setPracticeContext = setPracticeContext;
 
-function getFallbackBackTarget(screenId = AppState.currentScreen) {
-  const fallbackMap = {
+// Per-language fallback back targets for the German/English mirror sites.
+// These screens navigate with { skipHistory: true } (see GermanApp.showScreen),
+// so AppState.navigationStack is not reliable for them — the fallback map below
+// is the authoritative back path used by the global goBack()/mobile back button.
+function makeLanguageFallbackMap(lang) {
+  const cap = (name) => name.charAt(0).toUpperCase() + name.slice(1);
+  const home = `${lang}WelcomeScreen`;
+  const vocabulary = `${lang}VocabularyScreen`;
+  const modes = `${lang}VocabularyModesScreen`;
+  return {
+    [vocabulary]: home,
+    [modes]: vocabulary,
+    [`${lang}MultipleChoiceScreen`]: modes,
+    [`${lang}SpellingScreen`]: modes,
+    [`${lang}BrowseScreen`]: modes,
+    [`${lang}GrammarScreen`]: home,
+    [`${lang}ProgressScreen`]: home,
+    [`${lang}SettingsScreen`]: home,
+    // alias so cap-first lookups never miss
+    [`${lang}${cap('welcomeScreen')}`]: home
+  };
+}
+
+const FALLBACK_BACK_MAP = Object.assign(
+  {
+    // Italian main site
     vocabularyScreen: 'welcomeScreen',
     vocabularyModesScreen: 'vocabularyScreen',
     multipleChoiceScreen: 'vocabularyModesScreen',
@@ -835,9 +859,47 @@ function getFallbackBackTarget(screenId = AppState.currentScreen) {
     verbCollocationPracticeScreen: 'grammarScreen',
     progressScreen: 'welcomeScreen',
     settingsScreen: 'welcomeScreen'
-  };
+  },
+  makeLanguageFallbackMap('german'),
+  makeLanguageFallbackMap('english')
+);
 
-  return fallbackMap[screenId] || 'welcomeScreen';
+// A few screens are SHARED across languages (grammarBookScreen is opened by
+// Italian/German/English; communityBrowseScreen is a shared community pool).
+// Their correct back target depends on the active language, so resolve it from
+// body[data-language] rather than a fixed map entry.
+function getSharedScreenBackTarget(screenId, lang) {
+  if (lang !== 'german' && lang !== 'english') return null;
+  if (screenId === 'grammarBookScreen') return `${lang}GrammarScreen`;
+  if (screenId === 'communityBrowseScreen') return `${lang}VocabularyScreen`;
+  return null;
+}
+
+function getFallbackBackTarget(screenId = AppState.currentScreen) {
+  const lang = document.body ? document.body.getAttribute('data-language') : null;
+  return (
+    getSharedScreenBackTarget(screenId, lang) ||
+    FALLBACK_BACK_MAP[screenId] ||
+    'welcomeScreen'
+  );
+}
+
+// Shared screens that can be reached from any language site.
+const SHARED_SCREENS = new Set(['grammarBookScreen', 'communityBrowseScreen']);
+
+// Screens whose AppState.navigationStack entries are NOT trustworthy for back
+// navigation. This is true for:
+//   - German/English mirror screens (they navigate with { skipHistory: true })
+//   - shared screens (grammar book / community) while a German/English site is
+//     active, because the entry was reached via skipHistory navigation.
+// In these cases goBack() should use the fallback map instead of the stack.
+function isHistoryUnreliableScreen(screenId = AppState.currentScreen) {
+  if (/^(german|english)/.test(screenId)) return true;
+  if (SHARED_SCREENS.has(screenId)) {
+    const lang = document.body ? document.body.getAttribute('data-language') : null;
+    return lang === 'german' || lang === 'english';
+  }
+  return false;
 }
 
 function getPreviousScreenFromHistory() {
@@ -853,11 +915,24 @@ function getPreviousScreenFromHistory() {
 
 function shouldShowMobileBackButton(screenId = AppState.currentScreen) {
   const hiddenScreens = new Set([
+    // Italian top-level / hub screens
     'welcomeScreen',
     'vocabularyScreen',
     'grammarScreen',
     'progressScreen',
-    'settingsScreen'
+    'settingsScreen',
+    // German hub + top-level screens (mirror the Italian set)
+    'germanWelcomeScreen',
+    'germanVocabularyScreen',
+    'germanGrammarScreen',
+    'germanProgressScreen',
+    'germanSettingsScreen',
+    // English hub + top-level screens (mirror the Italian set)
+    'englishWelcomeScreen',
+    'englishVocabularyScreen',
+    'englishGrammarScreen',
+    'englishProgressScreen',
+    'englishSettingsScreen'
   ]);
 
   return !hiddenScreens.has(screenId);
@@ -873,6 +948,16 @@ function updateMobileBackButton(screenId = AppState.currentScreen) {
 
 function goBack(options = {}) {
   const fallbackTarget = options.fallbackTarget || getFallbackBackTarget(AppState.currentScreen);
+
+  // German/English screens navigate with { skipHistory: true }, so the shared
+  // navigationStack is stale/wrong for them. Use the fallback map directly.
+  if (isHistoryUnreliableScreen(AppState.currentScreen)) {
+    if (fallbackTarget && fallbackTarget !== AppState.currentScreen) {
+      showScreen(fallbackTarget, { skipHistory: true });
+    }
+    return;
+  }
+
   const previousScreen = getPreviousScreenFromHistory();
   const targetScreen = previousScreen || fallbackTarget;
 
@@ -2005,7 +2090,15 @@ function bindEvents() {
     showScreen('verbCollocationPracticeScreen');
     if (typeof VerbCollocationPractice !== 'undefined') VerbCollocationPractice.open();
   });
-  document.getElementById('grammarBookBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'grammarScreen' }));
+  // grammarBookScreen is SHARED by Italian/German/English. german-app.js binds its
+  // own language-aware handler on this same button. To avoid a double back-navigation
+  // (Italian goBack firing on top of the German/English handler), only run the Italian
+  // back path when the active language is Italian; otherwise defer to GermanApp.
+  document.getElementById('grammarBookBackBtn')?.addEventListener('click', () => {
+    const lang = document.body.getAttribute('data-language');
+    if (lang === 'german' || lang === 'english') return;
+    goBack({ fallbackTarget: 'grammarScreen' });
+  });
   document.getElementById('browseCommunityBtn')?.addEventListener('click', () => CommunityWordbooks.showBrowseScreen());
   document.getElementById('openProgressStatsBtn')?.addEventListener('click', () => {
     if (typeof showEnhancedStatsModal !== 'undefined') showEnhancedStatsModal();
@@ -2516,8 +2609,11 @@ const LanguagePortal = {
     if (popover) popover.classList.add('hidden');
 
     // 5. 跳转到对应语言首屏
+    // 切换语言是顶层上下文切换（等同于回到 Home），重置导航历史，
+    // 避免跨语言的历史污染（例如从德语切回意大利语后，返回栈仍残留德语屏幕）。
     const targetScreen = this.HOME_SCREENS[lang] || 'welcomeScreen';
-    showScreen(targetScreen);
+    AppState.navigationStack = [targetScreen];
+    showScreen(targetScreen, { skipHistory: true });
   },
 
   /**
