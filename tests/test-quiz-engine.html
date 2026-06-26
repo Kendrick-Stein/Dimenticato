@@ -18,6 +18,7 @@
 <div id="results"></div>
 
 <script src="../lib/utils.js"></script>
+<script src="../lib/word-similarity.js"></script>
 <script src="../lib/quiz-engine.js"></script>
 <script>
 (function () {
@@ -108,6 +109,92 @@
   var icon = renderIcon('icon-brand');
   assert(icon.indexOf('<svg') !== -1, 'renderIcon returns SVG markup');
   assert(icon.indexOf('#icon-brand') !== -1, 'renderIcon includes icon name');
+
+  // ===== word-similarity: editDistance =====
+  assertEqual(WordSimilarity.editDistance('casa', 'cosa'), 1, 'editDistance casa/cosa = 1');
+  assertEqual(WordSimilarity.editDistance('casa', 'casa'), 0, 'editDistance identical = 0');
+  assertEqual(WordSimilarity.editDistance('kitten', 'sitting'), 3, 'editDistance kitten/sitting = 3');
+  assertEqual(WordSimilarity.editDistance('caffè', 'caffe'), 0, 'editDistance is accent-insensitive');
+
+  // ===== word-similarity: closer words rank ahead =====
+  var simPrompt = { italian: 'casa', english: 'house', rank: 50 };
+  var simPool = [
+    simPrompt,
+    { italian: 'cosa', english: 'thing', rank: 60 },
+    { italian: 'caso', english: 'case', rank: 70 },
+    { italian: 'cassa', english: 'crate', rank: 80 },
+    { italian: 'aeroplano', english: 'airplane', rank: 90 },
+    { italian: 'montagna', english: 'mountain', rank: 95 }
+  ];
+  var simPicked = WordSimilarity.pickConfusableDistractors(simPrompt, simPool,
+    { count: 3, windowSize: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'house' });
+  var simSrcs = simPicked.map(function (w) { return w.italian; });
+  assertEqual(simPicked.length, 3, 'pickConfusableDistractors returns 3');
+  assert(simSrcs.indexOf('aeroplano') === -1 && simSrcs.indexOf('montagna') === -1, 'distant words are excluded from the closest window');
+  assert(simSrcs.indexOf('casa') === -1, 'prompt word itself is excluded');
+
+  // ===== word-similarity: short words use frequency proximity =====
+  var shortPrompt = { italian: 'e', english: 'and', rank: 1 };
+  var shortPool = [
+    shortPrompt,
+    { italian: 'di', english: 'of', rank: 2 },
+    { italian: 'ed', english: 'and(2)', rank: 3 },
+    { italian: 'la', english: 'the', rank: 4 },
+    { italian: 'è', english: 'is', rank: 200 }
+  ];
+  var shortPicked = WordSimilarity.pickConfusableDistractors(shortPrompt, shortPool,
+    { count: 3, windowSize: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'and' });
+  var shortSrcs = shortPicked.map(function (w) { return w.italian; });
+  assertEqual(shortPicked.length, 3, 'short prompt still yields 3 distractors');
+  assert(shortSrcs.indexOf('è') === -1, 'short prompt ranks by frequency, excluding far-rank edit-close decoy');
+
+  // ===== word-similarity: target-text dedupe =====
+  var dupPrompt = { italian: 'mela', english: 'apple', rank: 10 };
+  var dupPool = [
+    dupPrompt,
+    { italian: 'mona', english: 'X', rank: 11 },
+    { italian: 'mola', english: 'X', rank: 12 },
+    { italian: 'mara', english: 'Y', rank: 13 },
+    { italian: 'meta', english: 'apple', rank: 14 }
+  ];
+  var dupPicked = WordSimilarity.pickConfusableDistractors(dupPrompt, dupPool,
+    { count: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'apple' });
+  var dupTgts = dupPicked.map(function (w) { return w.english; });
+  var dupUnique = [];
+  dupTgts.forEach(function (t) { if (dupUnique.indexOf(t) === -1) dupUnique.push(t); });
+  assertEqual(dupUnique.length, dupTgts.length, 'distractor target texts are unique');
+  assert(dupTgts.indexOf('apple') === -1, 'distractors never equal the correct answer text');
+
+  // ===== quiz-engine: hard mode yields 4 distinct options via similarity =====
+  var hardEngine = new QuizEngine({
+    state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: { italian: 'casa', english: 'house', rank: 50 } },
+    stats: {}, mastered: new Set(),
+    fieldMap: { source: 'italian', target: 'english' },
+    difficulty: 'hard',
+    saveFn: function () {}, onUpdateStats: function () {}, dom: {}
+  });
+  var hardOptions = hardEngine.generateOptions('house', simPool);
+  assertEqual(hardOptions.length, 4, 'hard-mode generateOptions returns 4 options');
+  assert(hardOptions.indexOf('house') !== -1, 'hard-mode options include the correct answer');
+  var hardUnique = [];
+  hardOptions.forEach(function (o) { if (hardUnique.indexOf(o) === -1) hardUnique.push(o); });
+  assertEqual(hardUnique.length, hardOptions.length, 'hard-mode options have no duplicates');
+
+  // ===== quiz-engine: easy mode preserves random behavior (still 4 options) =====
+  var easyEngine = new QuizEngine({
+    state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: { italian: 'casa', english: 'house' } },
+    stats: {}, mastered: new Set(),
+    fieldMap: { source: 'italian', target: 'english' },
+    difficulty: 'easy',
+    saveFn: function () {}, onUpdateStats: function () {}, dom: {}
+  });
+  var easyOptions = easyEngine.generateOptions('house', simPool);
+  assertEqual(easyOptions.length, 4, 'easy-mode generateOptions returns 4 options');
+  assert(easyOptions.indexOf('house') !== -1, 'easy-mode options include the correct answer');
+
+  // ===== quiz-engine: difficulty static accessor defaults to hard =====
+  assertEqual(typeof QuizEngine.getDifficulty, 'function', 'QuizEngine.getDifficulty exists');
+  assertEqual(QuizEngine.getDifficulty(), 'hard', 'difficulty defaults to hard when unset');
 
   // --- Summary ---
   var summary = document.createElement('div');
