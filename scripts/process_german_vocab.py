@@ -209,7 +209,7 @@ def parse_entries() -> list[dict]:
     return entries
 
 
-def rank_by_frequency(entries: list[dict]) -> list[dict]:
+def rank_by_frequency(entries: list[dict]) -> tuple[list[dict], int, int]:
     """Sort by real German frequency (desc); append no-hit words after the
     ranked head in their original source order. Re-number `rank` 1..N."""
     for e in entries:
