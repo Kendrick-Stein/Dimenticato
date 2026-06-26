@@ -450,7 +450,7 @@ def _parse_handedict(needed: set[str]) -> dict[str, dict]:
         # byte-identical to the full build.
         rows = []
         for key, d in cand.items():
-            for idx, (simp, _tags) in enumerate(d["senses"]):
+            for idx, (simp, _) in enumerate(d["senses"]):
                 rows.append((key, d["display"], d["note"], idx, simp))
         rows.sort(key=lambda r: (r[0], r[3]))
         with open(HANDEDICT_SLICE, "w", encoding="utf-8", newline="") as f:
@@ -486,7 +486,7 @@ def _parse_handedict(needed: set[str]) -> dict[str, dict]:
     return {}
 
 
-def _build_handedict_entry(key: str, data: dict) -> dict | None:
+def _build_handedict_entry(data: dict) -> dict | None:
     """Turn a parsed HanDeDict candidate into a vocab entry, or None if unusable."""
     display = data["display"]
     # Collect distinct Chinese senses; prefer multi-character (more specific)
@@ -532,7 +532,7 @@ def expand_with_handedict(entries: list[dict]) -> tuple[list[dict], int]:
     for w in freq_words:
         if w in have or w not in cand:
             continue
-        entry = _build_handedict_entry(w, cand[w])
+        entry = _build_handedict_entry(cand[w])
         if entry is None:
             continue
         # Guard against a duplicate display colliding with an existing headword.
