@@ -52,9 +52,10 @@
 ├── styles.css
 ├── lib/
 │   ├── utils.js           ← 共享工具函数（escapeHtml, escapeAttribute, renderIcon）
+│   ├── word-similarity.js ← 词形相似度（困难模式相似干扰项，纯函数）
 │   └── quiz-engine.js     ← 通用测验引擎（选择题/拼写/浏览共享逻辑）
 ├── tests/
-│   ├── test-quiz-engine.html       ← QuizEngine 单元测试（19 个用例）
+│   ├── test-quiz-engine.html       ← QuizEngine + WordSimilarity 单元测试（36 个用例）
 │   └── test-spaced-repetition.html ← SM-2 算法测试（17 个用例）
 ├── app.js                 ← Italian 主站控制器
 ├── app-enhanced.js        ← 增强层（SM-2, StatsManager, WordbookEditor）
@@ -97,6 +98,7 @@
 1. 加载页面 DOM
 2. 顺序加载脚本：
    - `lib/utils.js`          ← 共享工具（必须最先加载）
+   - `lib/word-similarity.js` ← 词形相似度（在 quiz-engine.js 之前）
    - `lib/quiz-engine.js`    ← 通用测验引擎
    - `vocabulary.js`
    - `data/conjugations-all-tenses.js`
@@ -392,7 +394,8 @@
 负责：
 
 - `shuffleArray()` — Fisher-Yates 洗牌
-- `generateOptions()` — 生成选择题 4 个选项
+- `generateOptions()` — 生成选择题 4 个选项；按 `config.difficulty` 分支：`'hard'` 调用 `WordSimilarity.pickConfusableDistractors()` 生成相似干扰项，`'easy'`（及回退）使用随机干扰项
+- `QuizEngine.getDifficulty()` / `setDifficulty()` — 静态难度偏好读写（localStorage key `dimenticato_quiz_difficulty`，默认 `'hard'`）
 - `renderOptions()` — 渲染选项按钮 DOM
 - `showFeedback()` — 显示正确/错误反馈
 - `highlightOptions()` — 高亮正确答案
@@ -407,14 +410,37 @@
 
 ---
 
+### 6.3.1 `lib/word-similarity.js` — 词形相似度模块
+
+**新增于 2026-06-26（confusable distractors 功能）。**
+
+纯函数模块，无 DOM、无 localStorage，在 `lib/quiz-engine.js` 之前加载。为"困难"难度的选择题挑选与提示词拼写相近的干扰项，提升练习难度。三种语言共用同一逻辑。
+
+负责：
+
+- `editDistance(a, b)` — Levenshtein 编辑距离（归一化：去重音、小写、trim，与 `QuizEngine.normalizeString` 一致）
+- `pickConfusableDistractors(currentWord, pool, opts)` — 返回最多 `count` 个干扰项单词对象
+  - `opts = { count, sourceField, targetField, correctTarget, windowSize }`
+  - 排除当前词、目标文本为空或等于正确答案的词
+  - 1–2 字符提示词按频率（`rank`）邻近度排序，否则按编辑距离排序
+  - 取最近窗口打乱后取 `count` 个，按目标文本去重；候选不足时回退到窗口外候选、再回退到整池随机，保证选项数量
+
+**设计决策：**
+
+- 保持纯函数、可单元测试，难度读取由各 app 的 engine config 通过 `get difficulty()` getter 注入，引擎本身不读 localStorage
+- 无新增数据文件、无 payload 增长，契合纯静态部署
+
+---
+
 ### 6.4 `tests/` — 单元测试
 
-**新增于 2026-04-27 codebase hardening.**
+**新增于 2026-04-27 codebase hardening；2026-06-26 扩充 WordSimilarity / 难度测试。**
 
 浏览器端自包含测试文件，可直接在浏览器中打开运行。
 
-- `tests/test-quiz-engine.html` — QuizEngine 单元测试（19 个测试用例）
-  - 涵盖：shuffleArray, generateOptions, normalizeString, escapeHtml, escapeAttribute, renderIcon
+- `tests/test-quiz-engine.html` — QuizEngine + WordSimilarity 单元测试（36 个测试用例）
+  - 涵盖：shuffleArray, generateOptions（含难度分支）, normalizeString, escapeHtml, escapeAttribute, renderIcon
+  - WordSimilarity：editDistance 正确性、相近词优先、短词频率邻近、目标去重、easy/hard 行为、候选不足回退
 - `tests/test-spaced-repetition.html` — SM-2 间隔重复算法测试（17 个测试用例）
   - 涵盖：初始化、质量评分、间隔计算、easiness 边界、复习历史、getDueWords
 
@@ -1527,6 +1553,21 @@
 **文档：**
 - 更新 CODE_SPACE.md 反映新的 lib/ 和 tests/ 目录、脚本加载顺序
 
+### 2026-06-26 — 选择题相似干扰项（Confusable Distractors）
+
+**新功能：**
+- 新增"选择题难度"设置（Settings → 学习偏好）：`简单`=随机干扰项（旧行为），`困难`=拼写相近干扰项，默认 `困难`
+- 新增 `lib/word-similarity.js`（纯函数：Levenshtein 编辑距离 + 相似干扰项挑选）
+- `lib/quiz-engine.js` `generateOptions()` 按 `config.difficulty` 分支；新增静态 `getDifficulty()`/`setDifficulty()`（localStorage key `dimenticato_quiz_difficulty`）
+- Italian / German / English 三个 engine config 各增 `get difficulty()` getter，设置改动下一题即生效，无需刷新
+- `index.html` 加载新脚本并新增 `#difficultyToggle` 设置 UI；`app.js` `initDifficultyToggle()` 负责读写与高亮；`styles.css` 新增 `.settings-section` / `.difficulty-*` 样式
+
+**测试：**
+- `tests/test-quiz-engine.html` 扩充至 36 个用例（新增 WordSimilarity 与难度分支测试）
+
+**范围说明：**
+- 仅影响选择题模式；拼写、浏览模式不变。词性感知干扰项、预计算混淆集、意大利语"显示汉语"答案切换（Phase 2）暂未实现
+
 ---
 
 ## 16. 快速索引（超简版）
@@ -1544,6 +1585,7 @@
 - **改统计图表** → `stats-charts.js`
 - **改共享工具函数** → `lib/utils.js`
 - **改通用测验引擎** → `lib/quiz-engine.js`
+- **改选择题难度 / 相似干扰项** → `lib/word-similarity.js` + `lib/quiz-engine.js`（难度设置 UI 在 `index.html` `#difficultyToggle` + `app.js` `initDifficultyToggle()`）
 - **改单元测试** → `tests/test-quiz-engine.html` + `tests/test-spaced-repetition.html`
 - **改语法书构建** → `scripts/parse_grammar.py` + `scripts/build_grammar_data.py`
 - **改搭配数据构建** → `scripts/parse_verb_collocations.py`
