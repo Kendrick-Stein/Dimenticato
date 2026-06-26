@@ -939,6 +939,7 @@ const MultipleChoice = {
         stats: AppState.stats,
         mastered: AppState.masteredWords,
         fieldMap: { source: 'italian', target: 'english' },
+        get difficulty() { return QuizEngine.getDifficulty(); },
         saveFn: function () { Storage.save(); },
         onUpdateStats: updateHeaderStats,
         dom: {
@@ -2025,6 +2026,23 @@ function bindEvents() {
   document.getElementById('settingsHelpBtn')?.addEventListener('click', () => document.getElementById('helpModal').classList.remove('hidden'));
   document.getElementById('settingsCommunityUploadBtn')?.addEventListener('click', () => CommunityWordbooks.showUploadDialog());
   document.getElementById('settingsResetBtn')?.addEventListener('click', () => Storage.reset());
+
+  initDifficultyToggle();
+
+  function initDifficultyToggle() {
+    const toggle = document.getElementById('difficultyToggle');
+    if (!toggle) return;
+    const buttons = toggle.querySelectorAll('.difficulty-option');
+    const apply = (value) => {
+      buttons.forEach((b) => b.classList.toggle('active', b.dataset.difficulty === value));
+    };
+    apply(QuizEngine.getDifficulty());
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        apply(QuizEngine.setDifficulty(btn.dataset.difficulty));
+      });
+    });
+  }
 
   // 系统词汇级别选择
   document.querySelectorAll('.vocab-source-btn').forEach(btn => {

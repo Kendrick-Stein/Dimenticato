@@ -1081,6 +1081,26 @@
               <span class="module-card-desc">清空本地学习记录，执行前会再次确认。</span>
             </button>
           </div>
+
+          <div class="settings-section" id="learningPrefsSection">
+            <h3 class="settings-section-title">
+              <svg class="icon"><use href="#icon-settings"></use></svg>
+              学习偏好 / Learning preferences
+            </h3>
+            <div class="difficulty-setting">
+              <p class="difficulty-label">选择题难度</p>
+              <div class="difficulty-toggle" id="difficultyToggle" role="group" aria-label="选择题难度">
+                <button type="button" class="difficulty-option" data-difficulty="easy">
+                  <span class="difficulty-name">简单</span>
+                  <span class="difficulty-hint">随机干扰项</span>
+                </button>
+                <button type="button" class="difficulty-option" data-difficulty="hard">
+                  <span class="difficulty-name">困难</span>
+                  <span class="difficulty-hint">相似干扰项</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -2021,6 +2041,7 @@ love
   
   <!-- Dimenticato 共享工具（必须最先加载） -->
   <script src="lib/utils.js"></script>
+  <script src="lib/word-similarity.js"></script>
   <script src="lib/quiz-engine.js"></script>
 
   <script src="vocabulary.js"></script>

@@ -369,6 +369,68 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.settings-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.settings-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+  margin: 0 0 1rem;
+  color: var(--text-primary);
+}
+
+.difficulty-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem;
+}
+
+.difficulty-toggle {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.difficulty-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: all 0.2s;
+  min-width: 140px;
+}
+
+.difficulty-option:hover {
+  border-color: var(--accent-primary);
+}
+
+.difficulty-option.active {
+  border-color: var(--accent-primary);
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+.difficulty-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.difficulty-hint {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
 /* ==================== 加载动画 ==================== */
 
 .loading {

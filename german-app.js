@@ -46,6 +46,7 @@
           stats: GermanApp.stats,
           mastered: GermanApp.mastered,
           fieldMap: { source: 'german', target: 'meaning' },
+          get difficulty() { return QuizEngine.getDifficulty(); },
           saveFn: function () { GermanApp.saveState(); },
           onUpdateStats: function () {},
           dom: {
@@ -894,6 +895,7 @@
           stats: EnglishApp.stats,
           mastered: EnglishApp.mastered,
           fieldMap: { source: 'english', target: 'meaning' },
+          get difficulty() { return QuizEngine.getDifficulty(); },
           saveFn: function () { EnglishApp._saveState(); },
           onUpdateStats: function () {},
           dom: {
