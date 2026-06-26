@@ -7,9 +7,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "die",
     "display": "die",
-    "meaning": "见 der)",
-    "chinese": "见 der)",
-    "notes": "Art/Pron (",
+    "meaning": "定冠词 (阴性/复数); 见 der",
+    "chinese": "定冠词 (阴性/复数); 见 der",
+    "notes": "Art/Pron",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1
   },
@@ -34,9 +34,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "das",
     "display": "das",
-    "meaning": "见 der )",
-    "chinese": "见 der )",
-    "notes": "Art/Pron (",
+    "meaning": "定冠词 (中性); 见 der",
+    "chinese": "定冠词 (中性); 见 der",
+    "notes": "Art/Pron",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4
   },
@@ -169,9 +169,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "dass",
     "display": "dass",
-    "meaning": "连词: 带出主语、 宾语、定语、目的等从句)",
-    "chinese": "连词: 带出主语、 宾语、定语、目的等从句)",
-    "notes": "Konj (",
+    "meaning": "(连词: 带出主语、 宾语、定语、目的等从句)",
+    "chinese": "(连词: 带出主语、 宾语、定语、目的等从句)",
+    "notes": "Konj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 19
   },
@@ -223,9 +223,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "nach",
     "display": "nach",
-    "meaning": "目标)向, 到...去 2. (时间)在...后, 接着 3. 依据, 按照; nach und nach 逐渐",
-    "chinese": "目标)向, 到...去 2. (时间)在...后, 接着 3. 依据, 按照; nach und nach 逐渐",
-    "notes": "+ D Präp 1. (",
+    "meaning": "(目标)向, 到...去 2. (时间)在...后, 接着 3. 依据, 按照; nach und nach 逐渐",
+    "chinese": "(目标)向, 到...去 2. (时间)在...后, 接着 3. 依据, 按照; nach und nach 逐渐",
+    "notes": "+ D Präp 1.",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 25
   },
@@ -313,8 +313,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "haben",
     "display": "haben",
-    "meaning": "有; 得到 2.+ zu + Inf. 必须, 应该 3. (作完成时助动词",
-    "chinese": "有; 得到 2.+ zu + Inf. 必须, 应该 3. (作完成时助动词",
+    "meaning": "有; 得到 2.+ zu + Inf. 必须, 应该 3. 作完成时助动词",
+    "chinese": "有; 得到 2.+ zu + Inf. 必须, 应该 3. 作完成时助动词",
     "notes": "(hat, hatte, gehabt) 1. Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 35
@@ -916,9 +916,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "sondern",
     "display": "sondern",
-    "meaning": "不是)而是",
-    "chinese": "不是)而是",
-    "notes": "Konj (",
+    "meaning": "(不是)而是",
+    "chinese": "(不是)而是",
+    "notes": "Konj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 102
   },
@@ -1168,9 +1168,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Weg",
     "display": "Weg",
-    "meaning": "道)路; 路程, 旅途; 方法, 途径",
-    "chinese": "道)路; 路程, 旅途; 方法, 途径",
-    "notes": "m, -e (",
+    "meaning": "(道)路; 路程, 旅途; 方法, 途径",
+    "chinese": "(道)路; 路程, 旅途; 方法, 途径",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 130
   },
@@ -1519,8 +1519,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Fall",
     "display": "Fall",
-    "meaning": "情况, 事件; o. Pl) 跌落; auf jeden Fall 无论如何; auf keinen Fall 绝不",
-    "chinese": "情况, 事件; o. Pl) 跌落; auf jeden Fall 无论如何; auf keinen Fall 绝不",
+    "meaning": "情况, 事件; o. Pl 跌落; auf jeden Fall 无论如何; auf keinen Fall 绝不",
+    "chinese": "情况, 事件; o. Pl 跌落; auf jeden Fall 无论如何; auf keinen Fall 绝不",
     "notes": "m, ⸚e (o. Pl)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 169
@@ -1528,8 +1528,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "sicher",
     "display": "sicher",
-    "meaning": "安全的, 保险的, 肯定的, 有把握的,",
-    "chinese": "安全的, 保险的, 肯定的, 有把握的,",
+    "meaning": "安全的, 保险的, 肯定的, 有把握的",
+    "chinese": "安全的, 保险的, 肯定的, 有把握的",
     "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 170
@@ -1771,8 +1771,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "hin",
     "display": "hin",
-    "meaning": "从说话者离开)向 2. + auf A 按照",
-    "chinese": "从说话者离开)向 2. + auf A 按照",
+    "meaning": "从说话者离开向 2. + auf A 按照",
+    "chinese": "从说话者离开向 2. + auf A 按照",
     "notes": "Adv 1.",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 197
@@ -2176,9 +2176,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "überhaupt",
     "display": "überhaupt",
-    "meaning": "与否定词连用)完全(没有), 根本(不); 究竟, 到底; 一般地, 总的来说",
-    "chinese": "与否定词连用)完全(没有), 根本(不); 究竟, 到底; 一般地, 总的来说",
-    "notes": "Adv (",
+    "meaning": "(与否定词连用)完全(没有), 根本(不); 究竟, 到底; 一般地, 总的来说",
+    "chinese": "(与否定词连用)完全(没有), 根本(不); 究竟, 到底; 一般地, 总的来说",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 242
   },
@@ -3094,9 +3094,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Form",
     "display": "Form",
-    "meaning": "外表)形状, 形式",
-    "chinese": "外表)形状, 形式",
-    "notes": "f, -en (",
+    "meaning": "(外表)形状, 形式",
+    "chinese": "(外表)形状, 形式",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 344
   },
@@ -3760,8 +3760,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Scheiße",
     "display": "Scheiße",
-    "meaning": "粪, 屎； 2)表达失望、愤怒",
-    "chinese": "粪, 屎； 2)表达失望、愤怒",
+    "meaning": "粪, 屎； 2.表达失望、愤怒",
+    "chinese": "粪, 屎； 2.表达失望、愤怒",
     "notes": "f, 1)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 418
@@ -3778,9 +3778,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "wahrscheinlich",
     "display": "wahrscheinlich",
-    "meaning": "很)可能的, 大概的",
-    "chinese": "很)可能的, 大概的",
-    "notes": "Adj (",
+    "meaning": "(很)可能的, 大概的",
+    "chinese": "(很)可能的, 大概的",
+    "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 420
   },
@@ -4003,9 +4003,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "rechts",
     "display": "rechts",
-    "meaning": "在)右边",
-    "chinese": "在)右边",
-    "notes": "Adv (",
+    "meaning": "(在)右边",
+    "chinese": "(在)右边",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 445
   },
@@ -4201,9 +4201,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Band",
     "display": "Band",
-    "meaning": "书)卷、册、本",
-    "chinese": "书)卷、册、本",
-    "notes": "m, ⸚e (",
+    "meaning": "(书)卷、册、本",
+    "chinese": "(书)卷、册、本",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 467
   },
@@ -4543,9 +4543,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "welcher",
     "display": "welcher",
-    "meaning": "疑问代词)哪个, 哪些; (不定代词) 一些; (关系代词)",
-    "chinese": "疑问代词)哪个, 哪些; (不定代词) 一些; (关系代词)",
-    "notes": "(welches, welche, welche )Pron. (",
+    "meaning": "(疑问代词)哪个, 哪些; (不定代词) 一些; (关系代词)",
+    "chinese": "(疑问代词)哪个, 哪些; (不定代词) 一些; (关系代词)",
+    "notes": "(welches, welche, welche )Pron.",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 505
   },
@@ -4705,9 +4705,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "heraus",
     "display": "heraus",
-    "meaning": "从里面)出来",
-    "chinese": "从里面)出来",
-    "notes": "Adv (",
+    "meaning": "(从里面)出来",
+    "chinese": "(从里面)出来",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 523
   },
@@ -5272,9 +5272,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Projekt",
     "display": "Projekt",
-    "meaning": "科研或建设)项目",
-    "chinese": "科研或建设)项目",
-    "notes": "n, -e (",
+    "meaning": "(科研或建设)项目",
+    "chinese": "(科研或建设)项目",
+    "notes": "n, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 586
   },
@@ -5371,9 +5371,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Liste",
     "display": "Liste",
-    "meaning": "一览)表, 目录, 清单",
-    "chinese": "一览)表, 目录, 清单",
-    "notes": "f, -n (",
+    "meaning": "(一览)表, 目录, 清单",
+    "chinese": "(一览)表, 目录, 清单",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 597
   },
@@ -5479,9 +5479,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Verfügung",
     "display": "Verfügung",
-    "meaning": "有权)支配, 使用； jdm. zur Verfügung stehen 随时可供某人支配； jdm etw zur Verfügung stellen 将....供某人支配",
-    "chinese": "有权)支配, 使用； jdm. zur Verfügung stehen 随时可供某人支配； jdm etw zur Verfügung stellen 将....供某人支配",
-    "notes": "f, o. Pl (",
+    "meaning": "(有权)支配, 使用； jdm. zur Verfügung stehen 随时可供某人支配； jdm etw zur Verfügung stellen 将....供某人支配",
+    "chinese": "(有权)支配, 使用； jdm. zur Verfügung stehen 随时可供某人支配； jdm etw zur Verfügung stellen 将....供某人支配",
+    "notes": "f, o. Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 609
   },
@@ -5623,9 +5623,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Mannschaft",
     "display": "Mannschaft",
-    "meaning": "球)对, (全体)船员, 机组人员",
-    "chinese": "球)对, (全体)船员, 机组人员",
-    "notes": "f, -en (",
+    "meaning": "(球)对, (全体)船员, 机组人员",
+    "chinese": "(球)对, (全体)船员, 机组人员",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 625
   },
@@ -6082,9 +6082,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Universität",
     "display": "Universität",
-    "meaning": "综合)大学",
-    "chinese": "综合)大学",
-    "notes": "f, -en (",
+    "meaning": "(综合)大学",
+    "chinese": "(综合)大学",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 676
   },
@@ -7558,9 +7558,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Inhalt",
     "display": "Inhalt",
-    "meaning": "容器内的)东西; 内容",
-    "chinese": "容器内的)东西; 内容",
-    "notes": "m, -e (",
+    "meaning": "(容器内的)东西; 内容",
+    "chinese": "(容器内的)东西; 内容",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 840
   },
@@ -8341,9 +8341,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Arm",
     "display": "Arm",
-    "meaning": "胳)臂",
-    "chinese": "胳)臂",
-    "notes": "m, -e (",
+    "meaning": "(胳)臂",
+    "chinese": "(胳)臂",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 927
   },
@@ -10114,9 +10114,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Kommission",
     "display": "Kommission",
-    "meaning": "处理专门事务的)委员会; (商务)委托, 代理",
-    "chinese": "处理专门事务的)委员会; (商务)委托, 代理",
-    "notes": "f, -en (",
+    "meaning": "(处理专门事务的)委员会; (商务)委托, 代理",
+    "chinese": "(处理专门事务的)委员会; (商务)委托, 代理",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1124
   },
@@ -10384,9 +10384,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Pause",
     "display": "Pause",
-    "meaning": "短时间)休息, 停顿",
-    "chinese": "短时间)休息, 停顿",
-    "notes": "f, -n (",
+    "meaning": "(短时间)休息, 停顿",
+    "chinese": "(短时间)休息, 停顿",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1154
   },
@@ -10933,9 +10933,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Charakter",
     "display": "Charakter",
-    "meaning": "人的)性格, 品性; (事物)性质, 特性",
-    "chinese": "人的)性格, 品性; (事物)性质, 特性",
-    "notes": "m, -e (",
+    "meaning": "(人的)性格, 品性; (事物)性质, 特性",
+    "chinese": "(人的)性格, 品性; (事物)性质, 特性",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1215
   },
@@ -11059,9 +11059,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Termin",
     "display": "Termin",
-    "meaning": "约定的)日期; 约会",
-    "chinese": "约定的)日期; 约会",
-    "notes": "m, -e (",
+    "meaning": "(约定的)日期; 约会",
+    "chinese": "(约定的)日期; 约会",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1229
   },
@@ -11086,8 +11086,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Zugang",
     "display": "Zugang",
-    "meaning": "入口, 通道, 进入,",
-    "chinese": "入口, 通道, 进入,",
+    "meaning": "入口, 通道, 进入",
+    "chinese": "入口, 通道, 进入",
     "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1232
@@ -11095,8 +11095,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Zugang",
     "display": "Zugang",
-    "meaning": "入口; 理解能力,",
-    "chinese": "入口; 理解能力,",
+    "meaning": "入口; 理解能力",
+    "chinese": "入口; 理解能力",
     "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1233
@@ -11230,9 +11230,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "morgens",
     "display": "morgens",
-    "meaning": "在)早上, (在)清晨, 每天早上",
-    "chinese": "在)早上, (在)清晨, 每天早上",
-    "notes": "Adv (",
+    "meaning": "(在)早上, (在)清晨, 每天早上",
+    "chinese": "(在)早上, (在)清晨, 每天早上",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1248
   },
@@ -11392,9 +11392,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "hervor",
     "display": "hervor",
-    "meaning": "从后面, 里面)出来",
-    "chinese": "从后面, 里面)出来",
-    "notes": "Adv (",
+    "meaning": "(从后面, 里面)出来",
+    "chinese": "(从后面, 里面)出来",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1266
   },
@@ -11491,9 +11491,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Dauer",
     "display": "Dauer",
-    "meaning": "持续)时间; 持续存在 auf die Dauer 长时间地, 长此下去",
-    "chinese": "持续)时间; 持续存在 auf die Dauer 长时间地, 长此下去",
-    "notes": "f, o. Pl (",
+    "meaning": "(持续)时间; 持续存在 auf die Dauer 长时间地, 长此下去",
+    "chinese": "(持续)时间; 持续存在 auf die Dauer 长时间地, 长此下去",
+    "notes": "f, o. Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1277
   },
@@ -11644,9 +11644,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "verlangen",
     "display": "verlangen",
-    "meaning": "向......) 要求 2. Vi + nach 盼望, 渴望",
-    "chinese": "向......) 要求 2. Vi + nach 盼望, 渴望",
-    "notes": "1. Vt (+ von ) (",
+    "meaning": "(向......) 要求 2. Vi + nach 盼望, 渴望",
+    "chinese": "(向......) 要求 2. Vi + nach 盼望, 渴望",
+    "notes": "1. Vt (+ von )",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1294
   },
@@ -11995,8 +11995,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "scheinen",
     "display": "scheinen",
-    "meaning": "照耀, 发光；2)看来, 似乎",
-    "chinese": "照耀, 发光；2)看来, 似乎",
+    "meaning": "照耀, 发光；2.看来, 似乎",
+    "chinese": "照耀, 发光；2.看来, 似乎",
     "notes": "(schien, hat geschienen) Vi 1)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1333
@@ -12085,9 +12085,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "dasselbe",
     "display": "dasselbe",
-    "meaning": "见derselbe) 同一个",
-    "chinese": "见derselbe) 同一个",
-    "notes": "Pron (",
+    "meaning": "(见derselbe) 同一个",
+    "chinese": "(见derselbe) 同一个",
+    "notes": "Pron",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1343
   },
@@ -12652,9 +12652,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Status",
     "display": "Status",
-    "meaning": "社会, 法律的)地位, 状况, 身份",
-    "chinese": "社会, 法律的)地位, 状况, 身份",
-    "notes": "m, nur Sg (",
+    "meaning": "(社会, 法律的)地位, 状况, 身份",
+    "chinese": "(社会, 法律的)地位, 状况, 身份",
+    "notes": "m, nur Sg",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1406
   },
@@ -12796,9 +12796,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Mist",
     "display": "Mist",
-    "meaning": "动物)粪便; 粪, 肥; 废话, 胡扯",
-    "chinese": "动物)粪便; 粪, 肥; 废话, 胡扯",
-    "notes": "m, o. Pl (",
+    "meaning": "(动物)粪便; 粪, 肥; 废话, 胡扯",
+    "chinese": "(动物)粪便; 粪, 肥; 废话, 胡扯",
+    "notes": "m, o. Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1422
   },
@@ -12877,9 +12877,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "warm",
     "display": "warm",
-    "meaning": "温)热的; 保暖的, 暖和的; 热情的",
-    "chinese": "温)热的; 保暖的, 暖和的; 热情的",
-    "notes": "Adj (",
+    "meaning": "(温)热的; 保暖的, 暖和的; 热情的",
+    "chinese": "(温)热的; 保暖的, 暖和的; 热情的",
+    "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1431
   },
@@ -12994,9 +12994,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "erfolgen",
     "display": "erfolgen",
-    "meaning": "结果)出现, 发生",
-    "chinese": "结果)出现, 发生",
-    "notes": "Vi (",
+    "meaning": "(结果)出现, 发生",
+    "chinese": "(结果)出现, 发生",
+    "notes": "Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1444
   },
@@ -13696,9 +13696,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "genügend",
     "display": "genügend",
-    "meaning": "足)够的",
-    "chinese": "足)够的",
-    "notes": "Adj (",
+    "meaning": "(足)够的",
+    "chinese": "(足)够的",
+    "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1522
   },
@@ -13714,9 +13714,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "hinein",
     "display": "hinein",
-    "meaning": "此这儿外部)入内, 进入",
-    "chinese": "此这儿外部)入内, 进入",
-    "notes": "Adv (",
+    "meaning": "(此这儿外部)入内, 进入",
+    "chinese": "(此这儿外部)入内, 进入",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1524
   },
@@ -14029,9 +14029,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Lehre",
     "display": "Lehre",
-    "meaning": "学徒的)学习; 学说; 教训",
-    "chinese": "学徒的)学习; 学说; 教训",
-    "notes": "f, -n (",
+    "meaning": "(学徒的)学习; 学说; 教训",
+    "chinese": "(学徒的)学习; 学说; 教训",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1559
   },
@@ -14731,9 +14731,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "vergleichen",
     "display": "vergleichen",
-    "meaning": "用......与......)比较",
-    "chinese": "用......与......)比较",
-    "notes": "Vt + mit (vergleicht, verglich, verglichen ) (",
+    "meaning": "(用......与......)比较",
+    "chinese": "(用......与......)比较",
+    "notes": "Vt + mit (vergleicht, verglich, verglichen )",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1637
   },
@@ -15154,9 +15154,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Zucker",
     "display": "Zucker",
-    "meaning": "食)糖",
-    "chinese": "食)糖",
-    "notes": "m, o.Pl (",
+    "meaning": "(食)糖",
+    "chinese": "(食)糖",
+    "notes": "m, o.Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1684
   },
@@ -15289,9 +15289,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Liter",
     "display": "Liter",
-    "meaning": "公)升",
-    "chinese": "公)升",
-    "notes": "n/m, -s/- (",
+    "meaning": "(公)升",
+    "chinese": "(公)升",
+    "notes": "n/m, -s/-",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1699
   },
@@ -15487,8 +15487,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Ansatz",
     "display": "Ansatz",
-    "meaning": "开始, 征兆, 基本观点; 延长部分,",
-    "chinese": "开始, 征兆, 基本观点; 延长部分,",
+    "meaning": "开始, 征兆, 基本观点; 延长部分",
+    "chinese": "开始, 征兆, 基本观点; 延长部分",
     "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1721
@@ -16099,9 +16099,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Hut",
     "display": "Hut",
-    "meaning": "有边的)帽子",
-    "chinese": "有边的)帽子",
-    "notes": "m, ⸚e (",
+    "meaning": "(有边的)帽子",
+    "chinese": "(有边的)帽子",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1789
   },
@@ -16117,9 +16117,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Koalition",
     "display": "Koalition",
-    "meaning": "国家或党派之间的)联盟, 联合",
-    "chinese": "国家或党派之间的)联盟, 联合",
-    "notes": "f, -en (",
+    "meaning": "(国家或党派之间的)联盟, 联合",
+    "chinese": "(国家或党派之间的)联盟, 联合",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1791
   },
@@ -16657,9 +16657,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Hinsicht",
     "display": "Hinsicht",
-    "meaning": "只用于短语中)",
-    "chinese": "只用于短语中)",
-    "notes": "f, o.Pl (",
+    "meaning": "(只用于短语中)",
+    "chinese": "(只用于短语中)",
+    "notes": "f, o.Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1851
   },
@@ -17062,9 +17062,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Bischof",
     "display": "Bischof",
-    "meaning": "宗)主教; 红酒加酸橙皮的饮料",
-    "chinese": "宗)主教; 红酒加酸橙皮的饮料",
-    "notes": "m, ⸚e (",
+    "meaning": "(宗)主教; 红酒加酸橙皮的饮料",
+    "chinese": "(宗)主教; 红酒加酸橙皮的饮料",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1896
   },
@@ -17449,8 +17449,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Galerie",
     "display": "Galerie",
-    "meaning": "长廊, 2）画廊, 绘画馆",
-    "chinese": "长廊, 2）画廊, 绘画馆",
+    "meaning": "长廊, 2.画廊, 绘画馆",
+    "chinese": "长廊, 2.画廊, 绘画馆",
     "notes": "f, -n 1)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1939
@@ -17665,8 +17665,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "ausgerechnet",
     "display": "ausgerechnet",
-    "meaning": "恰好, 偏偏,(表 示不满",
-    "chinese": "恰好, 偏偏,(表 示不满",
+    "meaning": "恰好, 偏偏,表 示不满",
+    "chinese": "恰好, 偏偏,表 示不满",
     "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 1963
@@ -18439,9 +18439,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Vordergrund",
     "display": "Vordergrund",
-    "meaning": "图画等的)前景; 突出的地位",
-    "chinese": "图画等的)前景; 突出的地位",
-    "notes": "m, (",
+    "meaning": "(图画等的)前景; 突出的地位",
+    "chinese": "(图画等的)前景; 突出的地位",
+    "notes": "m",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2049
   },
@@ -18781,9 +18781,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Arena",
     "display": "Arena",
-    "meaning": "古罗马的)竞技 场; 运动场, 马戏场, 政治舞台",
-    "chinese": "古罗马的)竞技 场; 运动场, 马戏场, 政治舞台",
-    "notes": "f , ..nen (",
+    "meaning": "(古罗马的)竞技 场; 运动场, 马戏场, 政治舞台",
+    "chinese": "(古罗马的)竞技 场; 运动场, 马戏场, 政治舞台",
+    "notes": "f , ..nen",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2087
   },
@@ -19024,9 +19024,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Affäre",
     "display": "Affäre",
-    "meaning": "不愉快的)事情,事 件",
-    "chinese": "不愉快的)事情,事 件",
-    "notes": "f, -en (",
+    "meaning": "(不愉快的)事情,事 件",
+    "chinese": "(不愉快的)事情,事 件",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2114
   },
@@ -19051,9 +19051,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "belegen",
     "display": "belegen",
-    "meaning": "以...)铺, 涂, 盖 2. 预定, 占用; 3. 证明, 证实",
-    "chinese": "以...)铺, 涂, 盖 2. 预定, 占用; 3. 证明, 证实",
-    "notes": "Vt 1. (mit) (",
+    "meaning": "(以...)铺, 涂, 盖 2. 预定, 占用; 3. 证明, 证实",
+    "chinese": "(以...)铺, 涂, 盖 2. 预定, 占用; 3. 证明, 证实",
+    "notes": "Vt 1. (mit)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2117
   },
@@ -19420,9 +19420,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "erzielen",
     "display": "erzielen",
-    "meaning": "经努力)获得, 达到",
-    "chinese": "经努力)获得, 达到",
-    "notes": "Vt (",
+    "meaning": "(经努力)获得, 达到",
+    "chinese": "(经努力)获得, 达到",
+    "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2158
   },
@@ -19609,9 +19609,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "dieselbe",
     "display": "dieselbe",
-    "meaning": "见 derselbe)",
-    "chinese": "见 derselbe)",
-    "notes": "Pron (",
+    "meaning": "(见 derselbe)",
+    "chinese": "(见 derselbe)",
+    "notes": "Pron",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2179
   },
@@ -20041,9 +20041,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Hobby",
     "display": "Hobby",
-    "meaning": "业余)爱好",
-    "chinese": "业余)爱好",
-    "notes": "n, -s (",
+    "meaning": "(业余)爱好",
+    "chinese": "(业余)爱好",
+    "notes": "n, -s",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2227
   },
@@ -20086,9 +20086,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Ministerium",
     "display": "Ministerium",
-    "meaning": "政府)部",
-    "chinese": "政府)部",
-    "notes": "n, Ministerien (",
+    "meaning": "(政府)部",
+    "chinese": "(政府)部",
+    "notes": "n, Ministerien",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2232
   },
@@ -20428,9 +20428,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "zustande",
     "display": "zustande",
-    "meaning": "只用于短语) etw. zustande bringen 完成(实现)某事； zustande kommen 得到实现, 完成",
-    "chinese": "只用于短语) etw. zustande bringen 完成(实现)某事； zustande kommen 得到实现, 完成",
-    "notes": "Adv (",
+    "meaning": "(只用于短语) etw. zustande bringen 完成(实现)某事； zustande kommen 得到实现, 完成",
+    "chinese": "(只用于短语) etw. zustande bringen 完成(实现)某事； zustande kommen 得到实现, 完成",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2270
   },
@@ -20923,9 +20923,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Halbzeit",
     "display": "Halbzeit",
-    "meaning": "足球等的)半场; 两场间的休息时间",
-    "chinese": "足球等的)半场; 两场间的休息时间",
-    "notes": "f, -en (",
+    "meaning": "(足球等的)半场; 两场间的休息时间",
+    "chinese": "(足球等的)半场; 两场间的休息时间",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2325
   },
@@ -20968,9 +20968,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Jahrgang",
     "display": "Jahrgang",
-    "meaning": "出生的)年度; 年次",
-    "chinese": "出生的)年度; 年次",
-    "notes": "m, ⸚e (",
+    "meaning": "(出生的)年度; 年次",
+    "chinese": "(出生的)年度; 年次",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2330
   },
@@ -21373,9 +21373,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Opa",
     "display": "Opa",
-    "meaning": "儿童用语)(外)祖父, 爷爷, 老爷, 老公公",
-    "chinese": "儿童用语)(外)祖父, 爷爷, 老爷, 老公公",
-    "notes": "m, -s (",
+    "meaning": "(儿童用语)(外)祖父, 爷爷, 老爷, 老公公",
+    "chinese": "(儿童用语)(外)祖父, 爷爷, 老爷, 老公公",
+    "notes": "m, -s",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2375
   },
@@ -21598,9 +21598,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Gen",
     "display": "Gen",
-    "meaning": "生物)基因",
-    "chinese": "生物)基因",
-    "notes": "n, -e (",
+    "meaning": "(生物)基因",
+    "chinese": "(生物)基因",
+    "notes": "n, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2400
   },
@@ -21697,9 +21697,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Panik",
     "display": "Panik",
-    "meaning": "突然产生的)恐惧, 混乱, 惊慌失措",
-    "chinese": "突然产生的)恐惧, 混乱, 惊慌失措",
-    "notes": "f (",
+    "meaning": "(突然产生的)恐惧, 混乱, 惊慌失措",
+    "chinese": "(突然产生的)恐惧, 混乱, 惊慌失措",
+    "notes": "f",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2411
   },
@@ -22219,9 +22219,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Ferien",
     "display": "Ferien",
-    "meaning": "学校等的)假期",
-    "chinese": "学校等的)假期",
-    "notes": "f, Pl (",
+    "meaning": "(学校等的)假期",
+    "chinese": "(学校等的)假期",
+    "notes": "f, Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2469
   },
@@ -22885,9 +22885,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "begegnen",
     "display": "begegnen",
-    "meaning": "意外)遇到, 碰见",
-    "chinese": "意外)遇到, 碰见",
-    "notes": "Vi, (s) (",
+    "meaning": "(意外)遇到, 碰见",
+    "chinese": "(意外)遇到, 碰见",
+    "notes": "Vi, (s)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2543
   },
@@ -23119,8 +23119,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Scheibe",
     "display": "Scheibe",
-    "meaning": "圆盘, 圆片；2)切成的薄片; 3)靶子, 4)窗玻璃",
-    "chinese": "圆盘, 圆片；2)切成的薄片; 3)靶子, 4)窗玻璃",
+    "meaning": "圆盘, 圆片；2.切成的薄片; 3.靶子, 4.窗玻璃",
+    "chinese": "圆盘, 圆片；2.切成的薄片; 3.靶子, 4.窗玻璃",
     "notes": "f, -n 1)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2569
@@ -23299,9 +23299,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Kanzler",
     "display": "Kanzler",
-    "meaning": "某些国家的)总理, 首相",
-    "chinese": "某些国家的)总理, 首相",
-    "notes": "m, - (",
+    "meaning": "(某些国家的)总理, 首相",
+    "chinese": "(某些国家的)总理, 首相",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2589
   },
@@ -23731,9 +23731,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Rekord",
     "display": "Rekord",
-    "meaning": "最高)记录, 最佳成绩",
-    "chinese": "最高)记录, 最佳成绩",
-    "notes": "m, -e (",
+    "meaning": "(最高)记录, 最佳成绩",
+    "chinese": "(最高)记录, 最佳成绩",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2637
   },
@@ -23956,9 +23956,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "fressen",
     "display": "fressen",
-    "meaning": "指动物)吃",
-    "chinese": "指动物)吃",
-    "notes": "Vt (frisst, fraß, gefressen) (",
+    "meaning": "(指动物)吃",
+    "chinese": "(指动物)吃",
+    "notes": "Vt (frisst, fraß, gefressen)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2662
   },
@@ -24145,9 +24145,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Reporter",
     "display": "Reporter",
-    "meaning": "采访)记者, 通讯员, 新闻广播员",
-    "chinese": "采访)记者, 通讯员, 新闻广播员",
-    "notes": "m, - (",
+    "meaning": "(采访)记者, 通讯员, 新闻广播员",
+    "chinese": "(采访)记者, 通讯员, 新闻广播员",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2683
   },
@@ -24343,9 +24343,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "eröffnen",
     "display": "eröffnen",
-    "meaning": "宣布)开始, 开幕; 开设; 开(户头)",
-    "chinese": "宣布)开始, 开幕; 开设; 开(户头)",
-    "notes": "Vt (",
+    "meaning": "(宣布)开始, 开幕; 开设; 开(户头)",
+    "chinese": "(宣布)开始, 开幕; 开设; 开(户头)",
+    "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2705
   },
@@ -24802,8 +24802,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "nachweisen",
     "display": "nachweisen",
-    "meaning": "证明; 说明;",
-    "chinese": "证明; 说明;",
+    "meaning": "证明; 说明",
+    "chinese": "证明; 说明",
     "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2756
@@ -24829,9 +24829,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Pol",
     "display": "Pol",
-    "meaning": "地)极; 电极, 磁极",
-    "chinese": "地)极; 电极, 磁极",
-    "notes": "m, -e (",
+    "meaning": "(地)极; 电极, 磁极",
+    "chinese": "(地)极; 电极, 磁极",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2759
   },
@@ -25036,9 +25036,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "zurückkehren",
     "display": "zurück/kehren",
-    "meaning": "返)回",
-    "chinese": "返)回",
-    "notes": "Vi (",
+    "meaning": "(返)回",
+    "chinese": "(返)回",
+    "notes": "Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2782
   },
@@ -25612,9 +25612,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Horn",
     "display": "Horn",
-    "meaning": "兽)角, 角状物",
-    "chinese": "兽)角, 角状物",
-    "notes": "n, ⸚er (",
+    "meaning": "(兽)角, 角状物",
+    "chinese": "(兽)角, 角状物",
+    "notes": "n, ⸚er",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2846
   },
@@ -26395,9 +26395,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "grauen",
     "display": "grauen",
-    "meaning": "天）渐成灰色, sich +vor 恐惧; 不安",
-    "chinese": "天）渐成灰色, sich +vor 恐惧; 不安",
-    "notes": "Vi (+ vor D) （",
+    "meaning": "（天）渐成灰色, sich +vor 恐惧; 不安",
+    "chinese": "（天）渐成灰色, sich +vor 恐惧; 不安",
+    "notes": "Vi (+ vor D)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2933
   },
@@ -26863,9 +26863,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Rasse",
     "display": "Rasse",
-    "meaning": "动植物的)物种, 种, 品种; 人种",
-    "chinese": "动植物的)物种, 种, 品种; 人种",
-    "notes": "f, -n (",
+    "meaning": "(动植物的)物种, 种, 品种; 人种",
+    "chinese": "(动植物的)物种, 种, 品种; 人种",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2985
   },
@@ -26881,9 +26881,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Römer",
     "display": "Römer",
-    "meaning": "古)罗马人",
-    "chinese": "古)罗马人",
-    "notes": "m, - (",
+    "meaning": "(古)罗马人",
+    "chinese": "(古)罗马人",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2987
   },
@@ -26962,9 +26962,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Tasse",
     "display": "Tasse",
-    "meaning": "有把的)杯",
-    "chinese": "有把的)杯",
-    "notes": "f, -n (",
+    "meaning": "(有把的)杯",
+    "chinese": "(有把的)杯",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 2996
   },
@@ -27178,9 +27178,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Garage",
     "display": "Garage",
-    "meaning": "汽)车库",
-    "chinese": "汽)车库",
-    "notes": "f, -n (",
+    "meaning": "(汽)车库",
+    "chinese": "(汽)车库",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3020
   },
@@ -27781,9 +27781,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "vergehen",
     "display": "vergehen",
-    "meaning": "时间)流逝, 消逝, 消失, 失去, 没有的",
-    "chinese": "时间)流逝, 消逝, 消失, 失去, 没有的",
-    "notes": "Vi (vergeht, verging, ist vergangen) (",
+    "meaning": "(时间)流逝, 消逝, 消失, 失去, 没有的",
+    "chinese": "(时间)流逝, 消逝, 消失, 失去, 没有的",
+    "notes": "Vi (vergeht, verging, ist vergangen)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3087
   },
@@ -27808,8 +27808,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "werben",
     "display": "werben",
-    "meaning": "追求, 征求, 作宣传 2. Vt + um A) 招揽, 征募",
-    "chinese": "追求, 征求, 作宣传 2. Vt + um A) 招揽, 征募",
+    "meaning": "追求, 征求, 作宣传 2. Vt + um A 招揽, 征募",
+    "chinese": "追求, 征求, 作宣传 2. Vt + um A 招揽, 征募",
     "notes": "1. Vi (+ für A)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3090
@@ -27889,9 +27889,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Architekt",
     "display": "Architekt",
-    "meaning": "弱变化)建筑师",
-    "chinese": "弱变化)建筑师",
-    "notes": "n, -en (",
+    "meaning": "(弱变化)建筑师",
+    "chinese": "(弱变化)建筑师",
+    "notes": "n, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3099
   },
@@ -27970,9 +27970,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Bundesrat",
     "display": "Bundesrat",
-    "meaning": "德国)联邦参议院, (奥地利)联邦议会, (瑞士)联邦委员会",
-    "chinese": "德国)联邦参议院, (奥地利)联邦议会, (瑞士)联邦委员会",
-    "notes": "m (",
+    "meaning": "(德国)联邦参议院, (奥地利)联邦议会, (瑞士)联邦委员会",
+    "chinese": "(德国)联邦参议院, (奥地利)联邦议会, (瑞士)联邦委员会",
+    "notes": "m",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3108
   },
@@ -28177,9 +28177,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Praktikum",
     "display": "Praktikum",
-    "meaning": "校内外)实习(课)",
-    "chinese": "校内外)实习(课)",
-    "notes": "n, Praktika (",
+    "meaning": "(校内外)实习(课)",
+    "chinese": "(校内外)实习(课)",
+    "notes": "n, Praktika",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3131
   },
@@ -28195,9 +28195,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Prognose",
     "display": "Prognose",
-    "meaning": "气象行情等的)预测, 估计; (疾病)的预后",
-    "chinese": "气象行情等的)预测, 估计; (疾病)的预后",
-    "notes": "f, -n (",
+    "meaning": "(气象行情等的)预测, 估计; (疾病)的预后",
+    "chinese": "(气象行情等的)预测, 估计; (疾病)的预后",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3133
   },
@@ -28222,9 +28222,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Rucksack",
     "display": "Rucksack",
-    "meaning": "旅行)背包",
-    "chinese": "旅行)背包",
-    "notes": "m, ⸚e (",
+    "meaning": "(旅行)背包",
+    "chinese": "(旅行)背包",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3136
   },
@@ -28321,9 +28321,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "zugrunde",
     "display": "zugrunde",
-    "meaning": "只用于短语中) zugrunde gehen 毁灭, 崩溃",
-    "chinese": "只用于短语中) zugrunde gehen 毁灭, 崩溃",
-    "notes": "Adv (",
+    "meaning": "(只用于短语中) zugrunde gehen 毁灭, 崩溃",
+    "chinese": "(只用于短语中) zugrunde gehen 毁灭, 崩溃",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3147
   },
@@ -28420,9 +28420,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Fakultät",
     "display": "Fakultät",
-    "meaning": "大学的)学院, 系",
-    "chinese": "大学的)学院, 系",
-    "notes": "f, -en (",
+    "meaning": "(大学的)学院, 系",
+    "chinese": "(大学的)学院, 系",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3158
   },
@@ -28672,9 +28672,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "zuhören",
     "display": "zu/hören",
-    "meaning": "倾)听, 旁听",
-    "chinese": "倾)听, 旁听",
-    "notes": "Vt/Vi (",
+    "meaning": "(倾)听, 旁听",
+    "chinese": "(倾)听, 旁听",
+    "notes": "Vt/Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3186
   },
@@ -28978,9 +28978,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Anzug",
     "display": "Anzug",
-    "meaning": "男)西服, 套装",
-    "chinese": "男)西服, 套装",
-    "notes": "m, ⸚e (",
+    "meaning": "(男)西服, 套装",
+    "chinese": "(男)西服, 套装",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3220
   },
@@ -29005,9 +29005,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Auftakt",
     "display": "Auftakt",
-    "meaning": "乐)小节; (诗)弱起 音节;开始; 序曲",
-    "chinese": "乐)小节; (诗)弱起 音节;开始; 序曲",
-    "notes": "m, -e (",
+    "meaning": "(乐)小节; (诗)弱起 音节;开始; 序曲",
+    "chinese": "(乐)小节; (诗)弱起 音节;开始; 序曲",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3223
   },
@@ -29275,9 +29275,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "widmen",
     "display": "widmen",
-    "meaning": "向......)贡献, 致力于",
-    "chinese": "向......)贡献, 致力于",
-    "notes": "Vt/Vi (",
+    "meaning": "(向......)贡献, 致力于",
+    "chinese": "(向......)贡献, 致力于",
+    "notes": "Vt/Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3253
   },
@@ -29446,9 +29446,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Haltestelle",
     "display": "Haltestelle",
-    "meaning": "公共汽车、电车的)停靠站",
-    "chinese": "公共汽车、电车的)停靠站",
-    "notes": "f, -n (",
+    "meaning": "(公共汽车、电车的)停靠站",
+    "chinese": "(公共汽车、电车的)停靠站",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3272
   },
@@ -29473,9 +29473,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "hinauf",
     "display": "hinauf",
-    "meaning": "向那边)上去",
-    "chinese": "向那边)上去",
-    "notes": "Adv (",
+    "meaning": "(向那边)上去",
+    "chinese": "(向那边)上去",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3275
   },
@@ -29545,9 +29545,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Oberbürgermeister",
     "display": "Oberbürgermeister",
-    "meaning": "较大城市的)市长",
-    "chinese": "较大城市的)市长",
-    "notes": "m, - (",
+    "meaning": "(较大城市的)市长",
+    "chinese": "(较大城市的)市长",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3283
   },
@@ -29644,8 +29644,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Umstand",
     "display": "Umstand",
-    "meaning": "情况 2. Pl 麻烦, 过分(准备等",
-    "chinese": "情况 2. Pl 麻烦, 过分(准备等",
+    "meaning": "情况 2. Pl 麻烦, 过分准备等",
+    "chinese": "情况 2. Pl 麻烦, 过分准备等",
     "notes": "m, ⸚e 1.",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3294
@@ -30445,9 +30445,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "parken",
     "display": "parken",
-    "meaning": "汽车)停放, 停靠",
-    "chinese": "汽车)停放, 停靠",
-    "notes": "Vt/Vi (",
+    "meaning": "(汽车)停放, 停靠",
+    "chinese": "(汽车)停放, 停靠",
+    "notes": "Vt/Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3383
   },
@@ -30607,8 +30607,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "begehen",
     "display": "begehen",
-    "meaning": "在...上行走; 作出;",
-    "chinese": "在...上行走; 作出;",
+    "meaning": "在...上行走; 作出",
+    "chinese": "在...上行走; 作出",
     "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3401
@@ -31057,9 +31057,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Diplom",
     "display": "Diplom",
-    "meaning": "大学毕业)文凭, 学位证书",
-    "chinese": "大学毕业)文凭, 学位证书",
-    "notes": "n, -e (",
+    "meaning": "(大学毕业)文凭, 学位证书",
+    "chinese": "(大学毕业)文凭, 学位证书",
+    "notes": "n, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3451
   },
@@ -31678,9 +31678,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Kardinal",
     "display": "Kardinal",
-    "meaning": "罗马教的)主教长, 红衣主教",
-    "chinese": "罗马教的)主教长, 红衣主教",
-    "notes": "m, ⸚e (",
+    "meaning": "(罗马教的)主教长, 红衣主教",
+    "chinese": "(罗马教的)主教长, 红衣主教",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3520
   },
@@ -31840,9 +31840,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Becher",
     "display": "Becher",
-    "meaning": "无柄)杯",
-    "chinese": "无柄)杯",
-    "notes": "m, - (",
+    "meaning": "(无柄)杯",
+    "chinese": "(无柄)杯",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3538
   },
@@ -32254,8 +32254,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Bundeskanzler",
     "display": "Bundeskanzler",
-    "meaning": "德国、奥地利)联邦总理",
-    "chinese": "德国、奥地利)联邦总理",
+    "meaning": "德国、奥地利联邦总理",
+    "chinese": "德国、奥地利联邦总理",
     "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3584
@@ -32596,9 +32596,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Tagung",
     "display": "Tagung",
-    "meaning": "较大规模的)会议, 代表大会",
-    "chinese": "较大规模的)会议, 代表大会",
-    "notes": "f, -en (",
+    "meaning": "(较大规模的)会议, 代表大会",
+    "chinese": "(较大规模的)会议, 代表大会",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3622
   },
@@ -32704,9 +32704,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Aids",
     "display": "Aids",
-    "meaning": "一般不用冠词) 爱滋病",
-    "chinese": "一般不用冠词) 爱滋病",
-    "notes": "n (",
+    "meaning": "(一般不用冠词) 爱滋病",
+    "chinese": "(一般不用冠词) 爱滋病",
+    "notes": "n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3634
   },
@@ -32749,9 +32749,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Dose",
     "display": "Dose",
-    "meaning": "带盖的)盒, 罐",
-    "chinese": "带盖的)盒, 罐",
-    "notes": "f, -n (",
+    "meaning": "(带盖的)盒, 罐",
+    "chinese": "(带盖的)盒, 罐",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3639
   },
@@ -33073,8 +33073,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Schale",
     "display": "Schale",
-    "meaning": "果皮, 外皮, 外壳, 服装, 碗, 盘,",
-    "chinese": "果皮, 外皮, 外壳, 服装, 碗, 盘,",
+    "meaning": "果皮, 外皮, 外壳, 服装, 碗, 盘",
+    "chinese": "果皮, 外皮, 外壳, 服装, 碗, 盘",
     "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3675
@@ -33181,9 +33181,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Zensur",
     "display": "Zensur",
-    "meaning": "官方对出版物等的)检查 2.(学校的)成绩, 分数",
-    "chinese": "官方对出版物等的)检查 2.(学校的)成绩, 分数",
-    "notes": "f, -en 1. o.Pl (",
+    "meaning": "(官方对出版物等的)检查 2.(学校的)成绩, 分数",
+    "chinese": "(官方对出版物等的)检查 2.(学校的)成绩, 分数",
+    "notes": "f, -en 1. o.Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3687
   },
@@ -33811,9 +33811,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Kostüm",
     "display": "Kostüm",
-    "meaning": "短上衣会裙子的)女套装, 戏装",
-    "chinese": "短上衣会裙子的)女套装, 戏装",
-    "notes": "n, -e (",
+    "meaning": "(短上衣会裙子的)女套装, 戏装",
+    "chinese": "(短上衣会裙子的)女套装, 戏装",
+    "notes": "n, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3757
   },
@@ -33856,9 +33856,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "mittags",
     "display": "mittags",
-    "meaning": "每天)中午",
-    "chinese": "每天)中午",
-    "notes": "Adv (",
+    "meaning": "(每天)中午",
+    "chinese": "(每天)中午",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3762
   },
@@ -34558,9 +34558,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Gerichtshof",
     "display": "Gerichtshof",
-    "meaning": "高级的)法院, 法庭",
-    "chinese": "高级的)法院, 法庭",
-    "notes": "m, ⸚e (",
+    "meaning": "(高级的)法院, 法庭",
+    "chinese": "(高级的)法院, 法庭",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3840
   },
@@ -34630,8 +34630,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Hetze",
     "display": "Hetze",
-    "meaning": "追猎; 峻使; 匆忙;",
-    "chinese": "追猎; 峻使; 匆忙;",
+    "meaning": "追猎; 峻使; 匆忙",
+    "chinese": "追猎; 峻使; 匆忙",
     "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3848
@@ -35143,9 +35143,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Mütze",
     "display": "Mütze",
-    "meaning": "无帽檐的)帽子, 便帽",
-    "chinese": "无帽檐的)帽子, 便帽",
-    "notes": "f, -n (",
+    "meaning": "(无帽檐的)帽子, 便帽",
+    "chinese": "(无帽檐的)帽子, 便帽",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3905
   },
@@ -35188,9 +35188,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Verfasser",
     "display": "Verfasser",
-    "meaning": "著)作者",
-    "chinese": "著)作者",
-    "notes": "m, - (",
+    "meaning": "(著)作者",
+    "chinese": "(著)作者",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3910
   },
@@ -35791,9 +35791,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Bundespräsident",
     "display": "Bundespräsident",
-    "meaning": "弱变化)(德国, 奥地利)联邦总统; (瑞士)联邦主席",
-    "chinese": "弱变化)(德国, 奥地利)联邦总统; (瑞士)联邦主席",
-    "notes": "m, -en (",
+    "meaning": "(弱变化)(德国, 奥地利)联邦总统; (瑞士)联邦主席",
+    "chinese": "(弱变化)(德国, 奥地利)联邦总统; (瑞士)联邦主席",
+    "notes": "m, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3977
   },
@@ -35935,9 +35935,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Kellner",
     "display": "Kellner",
-    "meaning": "饭店或咖啡馆等的)服务员, 招待员",
-    "chinese": "饭店或咖啡馆等的)服务员, 招待员",
-    "notes": "m, - (",
+    "meaning": "(饭店或咖啡馆等的)服务员, 招待员",
+    "chinese": "(饭店或咖啡馆等的)服务员, 招待员",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 3993
   },
@@ -36079,9 +36079,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "saufen",
     "display": "saufen",
-    "meaning": "牲口)饮水; 酗酒; 狂饮",
-    "chinese": "牲口)饮水; 酗酒; 狂饮",
-    "notes": "Vi/Vt (",
+    "meaning": "(牲口)饮水; 酗酒; 狂饮",
+    "chinese": "(牲口)饮水; 酗酒; 狂饮",
+    "notes": "Vi/Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4009
   },
@@ -36214,8 +36214,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "aneinander",
     "display": "aneinander",
-    "meaning": "彼此靠近, 彼此紧 靠,互相,",
-    "chinese": "彼此靠近, 彼此紧 靠,互相,",
+    "meaning": "彼此靠近, 彼此紧 靠,互相",
+    "chinese": "彼此靠近, 彼此紧 靠,互相",
     "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4024
@@ -36349,9 +36349,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Gattin",
     "display": "Gattin",
-    "meaning": "他人的)夫人",
-    "chinese": "他人的)夫人",
-    "notes": "f, -nen (",
+    "meaning": "(他人的)夫人",
+    "chinese": "(他人的)夫人",
+    "notes": "f, -nen",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4039
   },
@@ -36736,9 +36736,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "erarbeiten",
     "display": "erarbeiten",
-    "meaning": "通过劳动)得到, 制订, 起草",
-    "chinese": "通过劳动)得到, 制订, 起草",
-    "notes": "Vt (",
+    "meaning": "(通过劳动)得到, 制订, 起草",
+    "chinese": "(通过劳动)得到, 制订, 起草",
+    "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4082
   },
@@ -36934,9 +36934,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Rektor",
     "display": "Rektor",
-    "meaning": "高等院校)校长, 院长",
-    "chinese": "高等院校)校长, 院长",
-    "notes": "m, -en (",
+    "meaning": "(高等院校)校长, 院长",
+    "chinese": "(高等院校)校长, 院长",
+    "notes": "m, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4104
   },
@@ -37069,8 +37069,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Abgrund",
     "display": "Abgrund",
-    "meaning": "深渊, 深谷;",
-    "chinese": "深渊, 深谷;",
+    "meaning": "深渊, 深谷",
+    "chinese": "深渊, 深谷",
     "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4119
@@ -37600,9 +37600,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "ausreichen",
     "display": "aus/reichen",
-    "meaning": "足)够",
-    "chinese": "足)够",
-    "notes": "Vi (",
+    "meaning": "(足)够",
+    "chinese": "(足)够",
+    "notes": "Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4178
   },
@@ -38338,17 +38338,17 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Referent",
     "display": "Referent",
-    "meaning": "专题)报告人; (政府机关中某一分管部门的)负责人",
-    "chinese": "专题)报告人; (政府机关中某一分管部门的)负责人",
-    "notes": "m, -en (",
+    "meaning": "(专题)报告人; (政府机关中某一分管部门的)负责人",
+    "chinese": "(专题)报告人; (政府机关中某一分管部门的)负责人",
+    "notes": "m, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4260
   },
   {
     "german": "Richtigkeit",
     "display": "Richtigkeit",
-    "meaning": "正确)性), 准确(性)",
-    "chinese": "正确)性), 准确(性)",
+    "meaning": "正确性, 准确(性)",
+    "chinese": "正确性, 准确(性)",
     "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4261
@@ -38914,9 +38914,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Vorlesung",
     "display": "Vorlesung",
-    "meaning": "大学)讲授, (讲)授课",
-    "chinese": "大学)讲授, (讲)授课",
-    "notes": "f, -en (",
+    "meaning": "(大学)讲授, (讲)授课",
+    "chinese": "(大学)讲授, (讲)授课",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4324
   },
@@ -39409,9 +39409,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Zweig",
     "display": "Zweig",
-    "meaning": "小)树枝; 部门, 分支",
-    "chinese": "小)树枝; 部门, 分支",
-    "notes": "m, -e (",
+    "meaning": "(小)树枝; 部门, 分支",
+    "chinese": "(小)树枝; 部门, 分支",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4379
   },
@@ -39697,9 +39697,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Schilling",
     "display": "Schilling",
-    "meaning": "奥地利货币单位) 先令",
-    "chinese": "奥地利货币单位) 先令",
-    "notes": "m, -e (",
+    "meaning": "(奥地利货币单位) 先令",
+    "chinese": "(奥地利货币单位) 先令",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4411
   },
@@ -40651,9 +40651,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Referat",
     "display": "Referat",
-    "meaning": "专题)报告; 评论(文章), 短评",
-    "chinese": "专题)报告; 评论(文章), 短评",
-    "notes": "n, -e (",
+    "meaning": "(专题)报告; 评论(文章), 短评",
+    "chinese": "(专题)报告; 评论(文章), 短评",
+    "notes": "n, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4517
   },
@@ -40813,9 +40813,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Ast",
     "display": "Ast",
-    "meaning": "树木的)粗枝;节瘤; 分枝",
-    "chinese": "树木的)粗枝;节瘤; 分枝",
-    "notes": "m, ⸚e (",
+    "meaning": "(树木的)粗枝;节瘤; 分枝",
+    "chinese": "(树木的)粗枝;节瘤; 分枝",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4535
   },
@@ -40840,9 +40840,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "auskommen",
     "display": "aus/kommen",
-    "meaning": "用 ......) 足够 2. + mit (与 ......)和睦相处 3. + ohne 没有 ......也行",
-    "chinese": "用 ......) 足够 2. + mit (与 ......)和睦相处 3. + ohne 没有 ......也行",
-    "notes": "(kommt aus, kam aus, ist ausgekommen) 1. + mit (",
+    "meaning": "(用 ......) 足够 2. + mit (与 ......)和睦相处 3. + ohne 没有 ......也行",
+    "chinese": "(用 ......) 足够 2. + mit (与 ......)和睦相处 3. + ohne 没有 ......也行",
+    "notes": "(kommt aus, kam aus, ist ausgekommen) 1. + mit",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4538
   },
@@ -41047,9 +41047,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "meinetwegen",
     "display": "meinetwegen",
-    "meaning": "就我而言)无所谓, 为了我的缘故",
-    "chinese": "就我而言)无所谓, 为了我的缘故",
-    "notes": "Adv (",
+    "meaning": "(就我而言)无所谓, 为了我的缘故",
+    "chinese": "(就我而言)无所谓, 为了我的缘故",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4561
   },
@@ -41164,9 +41164,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Schinken",
     "display": "Schinken",
-    "meaning": "多指猪的)腿肉, 火腿",
-    "chinese": "多指猪的)腿肉, 火腿",
-    "notes": "m, - (",
+    "meaning": "(多指猪的)腿肉, 火腿",
+    "chinese": "(多指猪的)腿肉, 火腿",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4574
   },
@@ -41299,9 +41299,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "zugute",
     "display": "zugute",
-    "meaning": "用于短语) 1. ( 与 kommen 连用 )于......有利 2. jdm etw. zugute halten 因......原谅某人",
-    "chinese": "用于短语) 1. ( 与 kommen 连用 )于......有利 2. jdm etw. zugute halten 因......原谅某人",
-    "notes": "Adv (",
+    "meaning": "(用于短语) 1. ( 与 kommen 连用 )于......有利 2. jdm etw. zugute halten 因......原谅某人",
+    "chinese": "(用于短语) 1. ( 与 kommen 连用 )于......有利 2. jdm etw. zugute halten 因......原谅某人",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4589
   },
@@ -41326,9 +41326,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Anlauf",
     "display": "Anlauf",
-    "meaning": "体)助跑; 起动, 加 速; 开始; 冲击",
-    "chinese": "体)助跑; 起动, 加 速; 开始; 冲击",
-    "notes": "m, ⸚e (",
+    "meaning": "(体)助跑; 起动, 加 速; 开始; 冲击",
+    "chinese": "(体)助跑; 起动, 加 速; 开始; 冲击",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4592
   },
@@ -42136,8 +42136,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "aufsteigen",
     "display": "auf/steigen",
-    "meaning": "上升; 乘上)交通工具)",
-    "chinese": "上升; 乘上)交通工具)",
+    "meaning": "上升; 乘上交通工具",
+    "chinese": "上升; 乘上交通工具",
     "notes": "(steigt auf, stieg auf, ist aufgestiegen)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4682
@@ -43027,9 +43027,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Dorn",
     "display": "Dorn",
-    "meaning": "植物的)刺; (制管)芯棒",
-    "chinese": "植物的)刺; (制管)芯棒",
-    "notes": "m, -en (",
+    "meaning": "(植物的)刺; (制管)芯棒",
+    "chinese": "(植物的)刺; (制管)芯棒",
+    "notes": "m, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4781
   },
@@ -43405,9 +43405,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Ausfahrt",
     "display": "Ausfahrt",
-    "meaning": "车辆等的)驶出 (口); (乘车)出发",
-    "chinese": "车辆等的)驶出 (口); (乘车)出发",
-    "notes": "f, -en (",
+    "meaning": "(车辆等的)驶出 (口); (乘车)出发",
+    "chinese": "(车辆等的)驶出 (口); (乘车)出发",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4823
   },
@@ -43720,9 +43720,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "simpel",
     "display": "simpel",
-    "meaning": "贬]简单的, 容易的",
-    "chinese": "贬]简单的, 容易的",
-    "notes": "Adj [",
+    "meaning": "[贬]简单的, 容易的",
+    "chinese": "[贬]简单的, 容易的",
+    "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4858
   },
@@ -43783,9 +43783,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "wehen",
     "display": "wehen",
-    "meaning": "风)吹, 飘动 2. Vt 吹掉, 把......吹向......",
-    "chinese": "风)吹, 飘动 2. Vt 吹掉, 把......吹向......",
-    "notes": "1. Vi (",
+    "meaning": "(风)吹, 飘动 2. Vt 吹掉, 把......吹向......",
+    "chinese": "(风)吹, 飘动 2. Vt 吹掉, 把......吹向......",
+    "notes": "1. Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4865
   },
@@ -43891,18 +43891,18 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "blond",
     "display": "blond",
-    "meaning": "头发)金黄色的",
-    "chinese": "头发)金黄色的",
-    "notes": "Adj (",
+    "meaning": "(头发)金黄色的",
+    "chinese": "(头发)金黄色的",
+    "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4877
   },
   {
     "german": "Dekan",
     "display": "Dekan",
-    "meaning": "大学)系主任; (宗)教长",
-    "chinese": "大学)系主任; (宗)教长",
-    "notes": "m, -e (",
+    "meaning": "(大学)系主任; (宗)教长",
+    "chinese": "(大学)系主任; (宗)教长",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4878
   },
@@ -44026,8 +44026,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Schacht",
     "display": "Schacht",
-    "meaning": "矿井, 井筒,",
-    "chinese": "矿井, 井筒,",
+    "meaning": "矿井, 井筒",
+    "chinese": "矿井, 井筒",
     "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4892
@@ -44215,9 +44215,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Anreise",
     "display": "Anreise",
-    "meaning": "到某地的)旅行; 到达",
-    "chinese": "到某地的)旅行; 到达",
-    "notes": "f, -n (",
+    "meaning": "(到某地的)旅行; 到达",
+    "chinese": "(到某地的)旅行; 到达",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4913
   },
@@ -44404,9 +44404,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Linde",
     "display": "Linde",
-    "meaning": "植)菩提树",
-    "chinese": "植)菩提树",
-    "notes": "f, -n (",
+    "meaning": "(植)菩提树",
+    "chinese": "(植)菩提树",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4934
   },
@@ -44629,9 +44629,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Bücherei",
     "display": "Bücherei",
-    "meaning": "中小型)图书馆",
-    "chinese": "中小型)图书馆",
-    "notes": "f, -en (",
+    "meaning": "(中小型)图书馆",
+    "chinese": "(中小型)图书馆",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4959
   },
@@ -44719,9 +44719,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Gabel",
     "display": "Gabel",
-    "meaning": "餐)叉, 叉子",
-    "chinese": "餐)叉, 叉子",
-    "notes": "f, -n (",
+    "meaning": "(餐)叉, 叉子",
+    "chinese": "(餐)叉, 叉子",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4969
   },
@@ -44737,9 +44737,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Hansestadt",
     "display": "Hansestadt",
-    "meaning": "参加)汉萨(同盟的)城市",
-    "chinese": "参加)汉萨(同盟的)城市",
-    "notes": "f, ⸚e (",
+    "meaning": "(参加)汉萨(同盟的)城市",
+    "chinese": "(参加)汉萨(同盟的)城市",
+    "notes": "f, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 4971
   },
@@ -45862,9 +45862,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "bellen",
     "display": "bellen",
-    "meaning": "动物)吠; 喊, 叫骂; 干咳",
-    "chinese": "动物)吠; 喊, 叫骂; 干咳",
-    "notes": "Vt/Vi (",
+    "meaning": "(动物)吠; 喊, 叫骂; 干咳",
+    "chinese": "(动物)吠; 喊, 叫骂; 干咳",
+    "notes": "Vt/Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5096
   },
@@ -45889,9 +45889,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Busen",
     "display": "Busen",
-    "meaning": "妇女的)胸部; 心胸; 海湾",
-    "chinese": "妇女的)胸部; 心胸; 海湾",
-    "notes": "m, - (",
+    "meaning": "(妇女的)胸部; 心胸; 海湾",
+    "chinese": "(妇女的)胸部; 心胸; 海湾",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5099
   },
@@ -45961,9 +45961,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "hinab",
     "display": "hinab",
-    "meaning": "向那边)下去",
-    "chinese": "向那边)下去",
-    "notes": "Adv (",
+    "meaning": "(向那边)下去",
+    "chinese": "(向那边)下去",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5107
   },
@@ -46024,9 +46024,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Manöver",
     "display": "Manöver",
-    "meaning": "军事)调动, 演习; 手腕, 策略",
-    "chinese": "军事)调动, 演习; 手腕, 策略",
-    "notes": "n, - (",
+    "meaning": "(军事)调动, 演习; 手腕, 策略",
+    "chinese": "(军事)调动, 演习; 手腕, 策略",
+    "notes": "n, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5114
   },
@@ -46438,9 +46438,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Lebzeiten",
     "display": "Lebzeiten",
-    "meaning": "只用于短语)生前, 在世时",
-    "chinese": "只用于短语)生前, 在世时",
-    "notes": "Pl (",
+    "meaning": "(只用于短语)生前, 在世时",
+    "chinese": "(只用于短语)生前, 在世时",
+    "notes": "Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5160
   },
@@ -46627,9 +46627,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "zirka",
     "display": "zirka",
-    "meaning": "缩写:ca.) Adv 大约, 大概",
-    "chinese": "缩写:ca.) Adv 大约, 大概",
-    "notes": "(",
+    "meaning": "(缩写:ca.) Adv 大约, 大概",
+    "chinese": "(缩写:ca.) Adv 大约, 大概",
+    "notes": "",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5181
   },
@@ -46915,9 +46915,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Rost",
     "display": "Rost",
-    "meaning": "铁)锈",
-    "chinese": "铁)锈",
-    "notes": "m, o.Pl (",
+    "meaning": "(铁)锈",
+    "chinese": "(铁)锈",
+    "notes": "m, o.Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5213
   },
@@ -47338,8 +47338,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Klischee",
     "display": "Klischee",
-    "meaning": "陈规俗套；铅板; 电铸版;",
-    "chinese": "陈规俗套；铅板; 电铸版;",
+    "meaning": "陈规俗套；铅板; 电铸版",
+    "chinese": "陈规俗套；铅板; 电铸版",
     "notes": "n, -s",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5260
@@ -47590,9 +47590,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "ununterbrochen",
     "display": "ununterbrochen",
-    "meaning": "连续)不断的",
-    "chinese": "连续)不断的",
-    "notes": "Adj (",
+    "meaning": "(连续)不断的",
+    "chinese": "(连续)不断的",
+    "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5288
   },
@@ -48238,9 +48238,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "forschen",
     "display": "forschen",
-    "meaning": "科学)研究 + nach 寻找, 探求",
-    "chinese": "科学)研究 + nach 寻找, 探求",
-    "notes": "Vi (",
+    "meaning": "(科学)研究 + nach 寻找, 探求",
+    "chinese": "(科学)研究 + nach 寻找, 探求",
+    "notes": "Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5360
   },
@@ -48418,9 +48418,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Panne",
     "display": "Panne",
-    "meaning": "交通工具)故障",
-    "chinese": "交通工具)故障",
-    "notes": "f, -e (",
+    "meaning": "(交通工具)故障",
+    "chinese": "(交通工具)故障",
+    "notes": "f, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5380
   },
@@ -48967,9 +48967,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Vorort",
     "display": "Vorort",
-    "meaning": "市)郊区",
-    "chinese": "市)郊区",
-    "notes": "m, -e (",
+    "meaning": "(市)郊区",
+    "chinese": "(市)郊区",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5441
   },
@@ -49075,9 +49075,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Gemahlin",
     "display": "Gemahlin",
-    "meaning": "他人的)夫人",
-    "chinese": "他人的)夫人",
-    "notes": "f, -nen (",
+    "meaning": "(他人的)夫人",
+    "chinese": "(他人的)夫人",
+    "notes": "f, -nen",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5453
   },
@@ -49282,9 +49282,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Schlagzeile",
     "display": "Schlagzeile",
-    "meaning": "报刊的)大字标题",
-    "chinese": "报刊的)大字标题",
-    "notes": "f, -n (",
+    "meaning": "(报刊的)大字标题",
+    "chinese": "(报刊的)大字标题",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5476
   },
@@ -50488,9 +50488,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Parlamentarier",
     "display": "Parlamentarier",
-    "meaning": "国会)议员",
-    "chinese": "国会)议员",
-    "notes": "m, - (",
+    "meaning": "(国会)议员",
+    "chinese": "(国会)议员",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5610
   },
@@ -51424,9 +51424,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "allerhand",
     "display": "allerhand",
-    "meaning": "不变化)各种各样的",
-    "chinese": "不变化)各种各样的",
-    "notes": "Adj (",
+    "meaning": "(不变化)各种各样的",
+    "chinese": "(不变化)各种各样的",
+    "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5714
   },
@@ -52387,9 +52387,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Intendant",
     "display": "Intendant",
-    "meaning": "剧院电台等)经理; 舞台监督",
-    "chinese": "剧院电台等)经理; 舞台监督",
-    "notes": "m, -en (",
+    "meaning": "(剧院电台等)经理; 舞台监督",
+    "chinese": "(剧院电台等)经理; 舞台监督",
+    "notes": "m, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 5821
   },
@@ -54394,9 +54394,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "durchlesen",
     "display": "durch/lesen",
-    "meaning": "从头至尾)读完, 通读",
-    "chinese": "从头至尾)读完, 通读",
-    "notes": "(",
+    "meaning": "(从头至尾)读完, 通读",
+    "chinese": "(从头至尾)读完, 通读",
+    "notes": "",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6044
   },
@@ -54538,9 +54538,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Rundfahrt",
     "display": "Rundfahrt",
-    "meaning": "乘车)周游, 环行",
-    "chinese": "乘车)周游, 环行",
-    "notes": "f, -en (",
+    "meaning": "(乘车)周游, 环行",
+    "chinese": "(乘车)周游, 环行",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6060
   },
@@ -54574,9 +54574,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Stickstoff",
     "display": "Stickstoff",
-    "meaning": "符号N) m 氮",
-    "chinese": "符号N) m 氮",
-    "notes": "(",
+    "meaning": "(符号N) m 氮",
+    "chinese": "(符号N) m 氮",
+    "notes": "",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6064
   },
@@ -54709,9 +54709,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Bettwäsche",
     "display": "Bettwäsche",
-    "meaning": "可换洗的)床上用品",
-    "chinese": "可换洗的)床上用品",
-    "notes": "f (",
+    "meaning": "(可换洗的)床上用品",
+    "chinese": "(可换洗的)床上用品",
+    "notes": "f",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6079
   },
@@ -55708,9 +55708,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Kluft",
     "display": "Kluft",
-    "meaning": "岩石的)裂缝; 深渊 2. f, -en 制服, 工作服, 运动衣",
-    "chinese": "岩石的)裂缝; 深渊 2. f, -en 制服, 工作服, 运动衣",
-    "notes": "1. f, ⸚e (",
+    "meaning": "(岩石的)裂缝; 深渊 2. f, -en 制服, 工作服, 运动衣",
+    "chinese": "(岩石的)裂缝; 深渊 2. f, -en 制服, 工作服, 运动衣",
+    "notes": "1. f, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6190
   },
@@ -56095,8 +56095,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "läuten",
     "display": "läuten",
-    "meaning": "钟, 铃)敲, 响",
-    "chinese": "钟, 铃)敲, 响",
+    "meaning": "钟, 铃敲, 响",
+    "chinese": "钟, 铃敲, 响",
     "notes": "Vt/Vi )",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6233
@@ -56167,9 +56167,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Raumstation",
     "display": "Raumstation",
-    "meaning": "宇) 空间站, 航行站",
-    "chinese": "宇) 空间站, 航行站",
-    "notes": "f, -en (",
+    "meaning": "(宇) 空间站, 航行站",
+    "chinese": "(宇) 空间站, 航行站",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6241
   },
@@ -56563,9 +56563,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Veilchen",
     "display": "Veilchen",
-    "meaning": "植)紫罗兰",
-    "chinese": "植)紫罗兰",
-    "notes": "n, - (",
+    "meaning": "(植)紫罗兰",
+    "chinese": "(植)紫罗兰",
+    "notes": "n, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6285
   },
@@ -56734,9 +56734,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Gatte",
     "display": "Gatte",
-    "meaning": "她人的)丈夫",
-    "chinese": "她人的)丈夫",
-    "notes": "m, -n (",
+    "meaning": "(她人的)丈夫",
+    "chinese": "(她人的)丈夫",
+    "notes": "m, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6304
   },
@@ -57364,8 +57364,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Zügel",
     "display": "Zügel",
-    "meaning": "缰绳, 控制;",
-    "chinese": "缰绳, 控制;",
+    "meaning": "缰绳, 控制",
+    "chinese": "缰绳, 控制",
     "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6374
@@ -57589,9 +57589,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Poet",
     "display": "Poet",
-    "meaning": "抒情)诗人",
-    "chinese": "抒情)诗人",
-    "notes": "m, -en (",
+    "meaning": "(抒情)诗人",
+    "chinese": "(抒情)诗人",
+    "notes": "m, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6399
   },
@@ -57643,8 +57643,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "überlaufen",
     "display": "überlaufen",
-    "meaning": "许多人来访的,",
-    "chinese": "许多人来访的,",
+    "meaning": "许多人来访的",
+    "chinese": "许多人来访的",
     "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6405
@@ -57733,9 +57733,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "zunichte",
     "display": "zunichte",
-    "meaning": "用于短语) zunichte werden 破灭, 成为泡影",
-    "chinese": "用于短语) zunichte werden 破灭, 成为泡影",
-    "notes": "Adv (",
+    "meaning": "(用于短语) zunichte werden 破灭, 成为泡影",
+    "chinese": "(用于短语) zunichte werden 破灭, 成为泡影",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6415
   },
@@ -58534,9 +58534,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Chauffeur",
     "display": "Chauffeur",
-    "meaning": "职业)汽车司机",
-    "chinese": "职业)汽车司机",
-    "notes": "m, -e (",
+    "meaning": "(职业)汽车司机",
+    "chinese": "(职业)汽车司机",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6504
   },
@@ -58777,9 +58777,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "anhaben",
     "display": "an/haben",
-    "meaning": "使)停住; 持续",
-    "chinese": "使)停住; 持续",
-    "notes": "Vt (hat an, hatte an, angehabt) (",
+    "meaning": "(使)停住; 持续",
+    "chinese": "(使)停住; 持续",
+    "notes": "Vt (hat an, hatte an, angehabt)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6531
   },
@@ -58822,8 +58822,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Aushilfe",
     "display": "Aushilfe",
-    "meaning": "临时工, (做)帮忙(工作",
-    "chinese": "临时工, (做)帮忙(工作",
+    "meaning": "临时工, (做)帮忙工作",
+    "chinese": "临时工, (做)帮忙工作",
     "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6536
@@ -59218,9 +59218,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Zahlungsmittel",
     "display": "Zahlungsmittel",
-    "meaning": "货币, 支票等)支付手段",
-    "chinese": "货币, 支票等)支付手段",
-    "notes": "n, - (",
+    "meaning": "(货币, 支票等)支付手段",
+    "chinese": "(货币, 支票等)支付手段",
+    "notes": "n, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6580
   },
@@ -59380,9 +59380,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Kalkulation",
     "display": "Kalkulation",
-    "meaning": "成本)计算, 核算; 估计",
-    "chinese": "成本)计算, 核算; 估计",
-    "notes": "f, -en (",
+    "meaning": "(成本)计算, 核算; 估计",
+    "chinese": "(成本)计算, 核算; 估计",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6598
   },
@@ -59443,9 +59443,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Staatsexamen",
     "display": "Staatsexamen",
-    "meaning": "法律、师范等)大学毕业国家考试",
-    "chinese": "法律、师范等)大学毕业国家考试",
-    "notes": "n, (",
+    "meaning": "(法律、师范等)大学毕业国家考试",
+    "chinese": "(法律、师范等)大学毕业国家考试",
+    "notes": "n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6605
   },
@@ -59542,8 +59542,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "anordnen",
     "display": "an/ordnen",
-    "meaning": "整理, 排列命令;,",
-    "chinese": "整理, 排列命令;,",
+    "meaning": "整理, 排列命令",
+    "chinese": "整理, 排列命令",
     "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6616
@@ -60361,8 +60361,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Klinke",
     "display": "Klinke",
-    "meaning": "门把, 手柄;",
-    "chinese": "门把, 手柄;",
+    "meaning": "门把, 手柄",
+    "chinese": "门把, 手柄",
     "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6707
@@ -60424,9 +60424,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Präparat",
     "display": "Präparat",
-    "meaning": "化学, 医学的)制剂, 配制品; 标本, 切片",
-    "chinese": "化学, 医学的)制剂, 配制品; 标本, 切片",
-    "notes": "n, -e (",
+    "meaning": "(化学, 医学的)制剂, 配制品; 标本, 切片",
+    "chinese": "(化学, 医学的)制剂, 配制品; 标本, 切片",
+    "notes": "n, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6714
   },
@@ -60928,9 +60928,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Brieftasche",
     "display": "Brieftasche",
-    "meaning": "放证件, 信件, 钱钞的)皮夹子",
-    "chinese": "放证件, 信件, 钱钞的)皮夹子",
-    "notes": "f, -n (",
+    "meaning": "(放证件, 信件, 钱钞的)皮夹子",
+    "chinese": "(放证件, 信件, 钱钞的)皮夹子",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6770
   },
@@ -61702,9 +61702,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Büchse",
     "display": "Büchse",
-    "meaning": "听装)小罐, 小盒",
-    "chinese": "听装)小罐, 小盒",
-    "notes": "f, -n (",
+    "meaning": "(听装)小罐, 小盒",
+    "chinese": "(听装)小罐, 小盒",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6856
   },
@@ -61720,9 +61720,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "dasjenige",
     "display": "dasjenige",
-    "meaning": "见 derjenige)",
-    "chinese": "见 derjenige)",
-    "notes": "Pron (",
+    "meaning": "(见 derjenige)",
+    "chinese": "(见 derjenige)",
+    "notes": "Pron",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6858
   },
@@ -61819,9 +61819,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Jugendherberge",
     "display": "Jugendherberge",
-    "meaning": "为青少年远足旅行设置的)青年旅社",
-    "chinese": "为青少年远足旅行设置的)青年旅社",
-    "notes": "f (",
+    "meaning": "(为青少年远足旅行设置的)青年旅社",
+    "chinese": "(为青少年远足旅行设置的)青年旅社",
+    "notes": "f",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6869
   },
@@ -62062,9 +62062,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "fortfahren",
     "display": "fort/fahren",
-    "meaning": "乘车、船等)离去, 继续",
-    "chinese": "乘车、船等)离去, 继续",
-    "notes": "Vi (fährt fort, fuhr fort, ist fortgefahren) (",
+    "meaning": "(乘车、船等)离去, 继续",
+    "chinese": "(乘车、船等)离去, 继续",
+    "notes": "Vi (fährt fort, fuhr fort, ist fortgefahren)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6896
   },
@@ -62422,18 +62422,18 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Korpus",
     "display": "Korpus",
-    "meaning": "戏谑语)身体, 弦乐器的共鸣箱体",
-    "chinese": "戏谑语)身体, 弦乐器的共鸣箱体",
-    "notes": "m, -se (",
+    "meaning": "(戏谑语)身体, 弦乐器的共鸣箱体",
+    "chinese": "(戏谑语)身体, 弦乐器的共鸣箱体",
+    "notes": "m, -se",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6936
   },
   {
     "german": "Kurzschluss",
     "display": "Kurzschluss",
-    "meaning": "电流)短路",
-    "chinese": "电流)短路",
-    "notes": "m, ⸚e (",
+    "meaning": "(电流)短路",
+    "chinese": "(电流)短路",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6937
   },
@@ -62638,9 +62638,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "herüber",
     "display": "herüber",
-    "meaning": "越过...)到这边来",
-    "chinese": "越过...)到这边来",
-    "notes": "Adv (",
+    "meaning": "(越过...)到这边来",
+    "chinese": "(越过...)到这边来",
+    "notes": "Adv",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6960
   },
@@ -62872,9 +62872,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Babysitter",
     "display": "Babysitter",
-    "meaning": "临时)保姆",
-    "chinese": "临时)保姆",
-    "notes": "m, - (",
+    "meaning": "(临时)保姆",
+    "chinese": "(临时)保姆",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6986
   },
@@ -62980,8 +62980,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "intim",
     "display": "intim",
-    "meaning": "亲密的, 知己的;",
-    "chinese": "亲密的, 知己的;",
+    "meaning": "亲密的, 知己的",
+    "chinese": "亲密的, 知己的",
     "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 6998
@@ -63934,9 +63934,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Wochentag",
     "display": "Wochentag",
-    "meaning": "除周末以外的)工作日, 平日",
-    "chinese": "除周末以外的)工作日, 平日",
-    "notes": "m, -e (",
+    "meaning": "(除周末以外的)工作日, 平日",
+    "chinese": "(除周末以外的)工作日, 平日",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7104
   },
@@ -64042,9 +64042,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Gemahl",
     "display": "Gemahl",
-    "meaning": "他人的)丈夫",
-    "chinese": "他人的)丈夫",
-    "notes": "m, -e (",
+    "meaning": "(他人的)丈夫",
+    "chinese": "(他人的)丈夫",
+    "notes": "m, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7116
   },
@@ -64276,9 +64276,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Vorspeise",
     "display": "Vorspeise",
-    "meaning": "正餐前的)冷盘, 小吃",
-    "chinese": "正餐前的)冷盘, 小吃",
-    "notes": "f, -n (",
+    "meaning": "(正餐前的)冷盘, 小吃",
+    "chinese": "(正餐前的)冷盘, 小吃",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7142
   },
@@ -65275,9 +65275,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Hupe",
     "display": "Hupe",
-    "meaning": "车辆上的)喇叭",
-    "chinese": "车辆上的)喇叭",
-    "notes": "f, -n (",
+    "meaning": "(车辆上的)喇叭",
+    "chinese": "(车辆上的)喇叭",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7253
   },
@@ -66067,9 +66067,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Inserat",
     "display": "Inserat",
-    "meaning": "报刊上的)广告, 启事",
-    "chinese": "报刊上的)广告, 启事",
-    "notes": "n, -e (",
+    "meaning": "(报刊上的)广告, 启事",
+    "chinese": "(报刊上的)广告, 启事",
+    "notes": "n, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7341
   },
@@ -66085,8 +66085,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Knotenpunkt",
     "display": "Knotenpunkt",
-    "meaning": "交通)联络点; 枢纽站; (物) 节点; (天)交点",
-    "chinese": "交通)联络点; 枢纽站; (物) 节点; (天)交点",
+    "meaning": "交通联络点; 枢纽站; (物) 节点; (天)交点",
+    "chinese": "交通联络点; 枢纽站; (物) 节点; (天)交点",
     "notes": "m, -e )",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7343
@@ -66337,9 +66337,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "erkaufen",
     "display": "erkaufen",
-    "meaning": "花代价)换来, 收买",
-    "chinese": "花代价)换来, 收买",
-    "notes": "Vt (",
+    "meaning": "(花代价)换来, 收买",
+    "chinese": "(花代价)换来, 收买",
+    "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7371
   },
@@ -66868,8 +66868,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "innig",
     "display": "innig",
-    "meaning": "衷心的,",
-    "chinese": "衷心的,",
+    "meaning": "衷心的",
+    "chinese": "衷心的",
     "notes": "Adj",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7430
@@ -67039,9 +67039,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Doppelzimmer",
     "display": "Doppelzimmer",
-    "meaning": "旅馆中)双人房间",
-    "chinese": "旅馆中)双人房间",
-    "notes": "n - (",
+    "meaning": "(旅馆中)双人房间",
+    "chinese": "(旅馆中)双人房间",
+    "notes": "n -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7449
   },
@@ -67318,9 +67318,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "durchblicken",
     "display": "durchblicken",
-    "meaning": "透过某物)看",
-    "chinese": "透过某物)看",
-    "notes": "Vi (",
+    "meaning": "(透过某物)看",
+    "chinese": "(透过某物)看",
+    "notes": "Vi",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7480
   },
@@ -67615,9 +67615,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "interviewen",
     "display": "interviewen",
-    "meaning": "记者的)采访, 访问",
-    "chinese": "记者的)采访, 访问",
-    "notes": "Vt (",
+    "meaning": "(记者的)采访, 访问",
+    "chinese": "(记者的)采访, 访问",
+    "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7513
   },
@@ -67822,8 +67822,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Hausherr",
     "display": "Hausherr",
-    "meaning": "家长; 主人; 房东;",
-    "chinese": "家长; 主人; 房东;",
+    "meaning": "家长; 主人; 房东",
+    "chinese": "家长; 主人; 房东",
     "notes": "m, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7536
@@ -68461,9 +68461,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "zügeln",
     "display": "zügeln",
-    "meaning": "用缰绳)勒住, 约束",
-    "chinese": "用缰绳)勒住, 约束",
-    "notes": "Vt/+ sich (",
+    "meaning": "(用缰绳)勒住, 约束",
+    "chinese": "(用缰绳)勒住, 约束",
+    "notes": "Vt/+ sich",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7607
   },
@@ -71224,9 +71224,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Bevollmächtigte",
     "display": "Bevollmächtigte",
-    "meaning": "按形容词变化)全权代表",
-    "chinese": "按形容词变化)全权代表",
-    "notes": "m/f (",
+    "meaning": "(按形容词变化)全权代表",
+    "chinese": "(按形容词变化)全权代表",
+    "notes": "m/f",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7914
   },
@@ -71566,8 +71566,8 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "löten",
     "display": "löten",
-    "meaning": "用铅锤测)水深)",
-    "chinese": "用铅锤测)水深)",
+    "meaning": "用铅锤测水深",
+    "chinese": "用铅锤测水深",
     "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7952
@@ -71593,9 +71593,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "multiplizieren",
     "display": "multiplizieren",
-    "meaning": "数)乘",
-    "chinese": "数)乘",
-    "notes": "Vt (",
+    "meaning": "(数)乘",
+    "chinese": "(数)乘",
+    "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 7955
   },
@@ -72907,9 +72907,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "umkommen",
     "display": "um/kommen",
-    "meaning": "因事故)死亡",
-    "chinese": "因事故)死亡",
-    "notes": "Vi (kommt um, kam um, ist umgekommen) (",
+    "meaning": "(因事故)死亡",
+    "chinese": "(因事故)死亡",
+    "notes": "Vi (kommt um, kam um, ist umgekommen)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8101
   },
@@ -73708,18 +73708,18 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Annonce",
     "display": "Annonce",
-    "meaning": "报纸或杂志上的) 广告",
-    "chinese": "报纸或杂志上的) 广告",
-    "notes": "f, -n (",
+    "meaning": "(报纸或杂志上的) 广告",
+    "chinese": "(报纸或杂志上的) 广告",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8190
   },
   {
     "german": "Asylant",
     "display": "Asylant",
-    "meaning": "弱变化)避难 者",
-    "chinese": "弱变化)避难 者",
-    "notes": "m, -en (",
+    "meaning": "(弱变化)避难 者",
+    "chinese": "(弱变化)避难 者",
+    "notes": "m, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8191
   },
@@ -75400,9 +75400,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Zugverbindung",
     "display": "Zugverbindung",
-    "meaning": "两地之间)铁路线连接; 火车联运",
-    "chinese": "两地之间)铁路线连接; 火车联运",
-    "notes": "f, -en (",
+    "meaning": "(两地之间)铁路线连接; 火车联运",
+    "chinese": "(两地之间)铁路线连接; 火车联运",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8378
   },
@@ -75508,9 +75508,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Gepräge",
     "display": "Gepräge",
-    "meaning": "硬币上)铸印的图案; 印记",
-    "chinese": "硬币上)铸印的图案; 印记",
-    "notes": "n (",
+    "meaning": "(硬币上)铸印的图案; 印记",
+    "chinese": "(硬币上)铸印的图案; 印记",
+    "notes": "n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8390
   },
@@ -75553,9 +75553,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "spreizen",
     "display": "spreizen",
-    "meaning": "手臂, 腿的)张开, 展开",
-    "chinese": "手臂, 腿的)张开, 展开",
-    "notes": "Vt (",
+    "meaning": "(手臂, 腿的)张开, 展开",
+    "chinese": "(手臂, 腿的)张开, 展开",
+    "notes": "Vt",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8395
   },
@@ -75904,9 +75904,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Fluggast",
     "display": "Fluggast",
-    "meaning": "飞机)乘客",
-    "chinese": "飞机)乘客",
-    "notes": "m, ⸚e (",
+    "meaning": "(飞机)乘客",
+    "chinese": "(飞机)乘客",
+    "notes": "m, ⸚e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8434
   },
@@ -76273,9 +76273,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Scherbe",
     "display": "Scherbe",
-    "meaning": "玻璃或瓷器)碎片",
-    "chinese": "玻璃或瓷器)碎片",
-    "notes": "f, -n (",
+    "meaning": "(玻璃或瓷器)碎片",
+    "chinese": "(玻璃或瓷器)碎片",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8475
   },
@@ -77263,9 +77263,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "galoppieren",
     "display": "galoppieren",
-    "meaning": "马）飞跑, 疾驰",
-    "chinese": "马）飞跑, 疾驰",
-    "notes": "Vi (h, s)（",
+    "meaning": "（马）飞跑, 疾驰",
+    "chinese": "（马）飞跑, 疾驰",
+    "notes": "Vi (h, s)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8585
   },
@@ -77929,9 +77929,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Tonbandgerät",
     "display": "Tonbandgerät",
-    "meaning": "磁带)录音机",
-    "chinese": "磁带)录音机",
-    "notes": "n, -e (",
+    "meaning": "(磁带)录音机",
+    "chinese": "(磁带)录音机",
+    "notes": "n, -e",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8659
   },
@@ -78037,9 +78037,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Emigrant",
     "display": "Emigrant",
-    "meaning": "政治)流亡者, 移居国外者",
-    "chinese": "政治)流亡者, 移居国外者",
-    "notes": "m, -en (",
+    "meaning": "(政治)流亡者, 移居国外者",
+    "chinese": "(政治)流亡者, 移居国外者",
+    "notes": "m, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8671
   },
@@ -78127,9 +78127,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "dividieren",
     "display": "dividieren",
-    "meaning": "数)除(尽)",
-    "chinese": "数)除(尽)",
-    "notes": "Vt (durch A) (",
+    "meaning": "(数)除(尽)",
+    "chinese": "(数)除(尽)",
+    "notes": "Vt (durch A)",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8681
   },
@@ -78748,9 +78748,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Wiederhören",
     "display": "Wiederhören",
-    "meaning": "电话或广播中)再见",
-    "chinese": "电话或广播中)再见",
-    "notes": "n, o.Pl (",
+    "meaning": "(电话或广播中)再见",
+    "chinese": "(电话或广播中)再见",
+    "notes": "n, o.Pl",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8750
   },
@@ -78793,9 +78793,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Exmatrikulation",
     "display": "Exmatrikulation",
-    "meaning": "大学生毕业或离校时)注销学籍",
-    "chinese": "大学生毕业或离校时)注销学籍",
-    "notes": "f (",
+    "meaning": "(大学生毕业或离校时)注销学籍",
+    "chinese": "(大学生毕业或离校时)注销学籍",
+    "notes": "f",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8755
   },
@@ -78865,9 +78865,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "vorstrecken",
     "display": "vor/strecken",
-    "meaning": "向前)伸出",
-    "chinese": "向前)伸出",
-    "notes": "(",
+    "meaning": "(向前)伸出",
+    "chinese": "(向前)伸出",
+    "notes": "",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8763
   },
@@ -79297,9 +79297,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Sprechblase",
     "display": "Sprechblase",
-    "meaning": "把画中人物说的话圈起来的)话语圈",
-    "chinese": "把画中人物说的话圈起来的)话语圈",
-    "notes": "f, -n (",
+    "meaning": "(把画中人物说的话圈起来的)话语圈",
+    "chinese": "(把画中人物说的话圈起来的)话语圈",
+    "notes": "f, -n",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8811
   },
@@ -79504,9 +79504,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Geschmeide",
     "display": "Geschmeide",
-    "meaning": "金银)首饰",
-    "chinese": "金银)首饰",
-    "notes": "n, - (",
+    "meaning": "(金银)首饰",
+    "chinese": "(金银)首饰",
+    "notes": "n, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8834
   },
@@ -80242,9 +80242,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Valenz",
     "display": "Valenz",
-    "meaning": "化合)价; (原子)价; 价, 配价",
-    "chinese": "化合)价; (原子)价; 价, 配价",
-    "notes": "f, -en (",
+    "meaning": "(化合)价; (原子)价; 价, 配价",
+    "chinese": "(化合)价; (原子)价; 价, 配价",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 8916
   },
@@ -81016,9 +81016,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Federhalter",
     "display": "Federhalter",
-    "meaning": "蘸水)钢笔杆",
-    "chinese": "蘸水)钢笔杆",
-    "notes": "m, - (",
+    "meaning": "(蘸水)钢笔杆",
+    "chinese": "(蘸水)钢笔杆",
+    "notes": "m, -",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 9002
   },
@@ -82825,9 +82825,9 @@ const GERMAN_VOCABULARY_DATA = [
   {
     "german": "Dreharbeit",
     "display": "Dreharbeit",
-    "meaning": "电影)拍摄工作",
-    "chinese": "电影)拍摄工作",
-    "notes": "f, -en (",
+    "meaning": "(电影)拍摄工作",
+    "chinese": "(电影)拍摄工作",
+    "notes": "f, -en",
     "source": "deutsch-data/vocab/pgh.csv",
     "rank": 9203
   },
