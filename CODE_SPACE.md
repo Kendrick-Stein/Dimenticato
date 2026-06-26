@@ -405,7 +405,8 @@
 **设计决策：**
 
 - `app.js` (Italian) 和 `german-app.js` (German/English) 各自创建 QuizEngine 实例
-- 通过 `fieldMap` 配置适配不同语言（Italian: `{source:'italian', target:'english'}`, German: `{source:'german', target:'display'}`）
+- 通过 `fieldMap` 配置适配不同语言（Italian: `{source:'italian', target:'english'}`, German: `{source:'german', target:'meaning'}`, English: `{source:'english', target:'meaning'}`）
+  - ⚠️ 历史勘误：本文件曾把 German target 写成 `display`，实际消费方 `german-app.js` 用的是 `meaning`（`display` 仅用于展示可分动词形式如 `ab/bauen`）
 - 使用懒初始化模式（`_getEngine()`）避免 DOM 就绪前创建引擎
 
 ---
@@ -792,6 +793,7 @@
 - 导出：`GERMAN_VOCABULARY_DATA`
 - 来源：`deutsch-data/vocab/pgh.csv`（经 `scripts/process_german_vocab.py` 处理）
 - 字段：`{ german, display, meaning, chinese, notes, rank, source }`
+- **2026-06-26 重建**：改为按 `wordfreq('de')` 词频排序（无词频命中的词按原序追加在词频段之后），修复 51 个引号缺失源行导致的错误 headword，保留 `notes` 与可分动词 `display`；共 9,361 条不变。top10 由 `ab, ab/bauen…` 变为 `die, und, in, das…`
 - 供 `german-app.js > GermanApp` 使用
 
 #### `data/german-grammar-data.js`
@@ -806,9 +808,9 @@
 #### `data/english-vocabulary.js`
 
 - 导出：`ENGLISH_VOCABULARY_DATA`
-- 来源：`english-data/english word/EnWords.csv`（注意目录名前有空格）
-- 字段：`{ english, meaning, chinese, notes, rank, source }`
-- 共约 20,000 条（从原始 103,976 条取前 20k）
+- 来源：`english-data/english word/EnWords.csv`（注意目录名前有空格）+ `wordfreq` 词频
+- 字段：`{ english, meaning, chinese, notes, rank, source }`，`source = "wordfreq+EnWords"`
+- **2026-06-26 重建**：改为按 `wordfreq` 真实词频排序（`rank` 1..N），剔除单字母 / 缩写 / 专有名词 / 无释义词，清洗释义；条目数 20,000 → **11,961**（质量优先）。top10 由 `a, aaal, aachen…` 变为 `the, to, and, of…`
 - 由 `scripts/build_english_vocab.py` 生成
 - 供 `german-app.js > EnglishApp` 使用
 
@@ -1567,6 +1569,31 @@
 
 **范围说明：**
 - 仅影响选择题模式；拼写、浏览模式不变。词性感知干扰项、预计算混淆集、意大利语"显示汉语"答案切换（Phase 2）暂未实现
+
+### 2026-06-26 — 三线并行改进（数据 / UI / 导航）
+
+通过 3 个 git worktree + 并行 subagent 完成三条互不重叠的改进线，分别合并入 main。
+
+**① 数据更正（`improve/data`）：**
+- English：`data/english-vocabulary.js` 按 `wordfreq` 真实词频重排，剔除缩写/专名/无释义词并清洗释义，20,000 → 11,961 条；重写 `scripts/build_english_vocab.py`
+- German：`data/german-vocabulary.js` 按 `wordfreq('de')` 词频重排，修复 51 个错误 headword，保留 `notes`/`display`；重写 `scripts/process_german_vocab.py`
+- Italian：新增 `scripts/clean_italian_dictionary.py`，剥离 `dictionary` 字段中的 IPA/音标噪声（19,303/27,117 条），`english`/`chinese`/`frequency`/`rank` 字节级不变
+- 勘误：实测 German/English 测验 `fieldMap.target` 为 `meaning`（本文件原误记为 `display`，已更正）
+- ⚠️ 已知遗留：German rank-1 `die` 的释义 `见 der)` 等少量源 CSV 排版瑕疵未清理（计划后续修复）
+
+**② UI 统一（`improve/ui`，仅 `styles.css`）：**
+- 将原先并存的两套配色（旧 flat-UI `:root` + 散落的 `rgba(85,107,96,…)` 硬编码）合并为**单一语义 token 体系**（accent ramp + `--accent-*-rgb` 通道、surface/elevation、text、border、radii/shadow/space/motion 标度、`--focus-ring`）
+- dark 主题与 german(slate)/english(burgundy) 语言主题改为**只覆盖 accent + surface token**，其余派生
+- 修复 dark 模式下若干白底泄漏 bug；新增全局 `:focus-visible` 焦点环
+- 注意：部分 `--space-*` / `--shadow-sm` / `--border-strong` 已定义但仅部分采用，留待增量推进
+
+**③ 导航修复（`improve/nav`，仅 `app.js`）：**
+- `getFallbackBackTarget()` 扩展德/英镜像站与共享屏（grammarBook/community 按 `body[data-language]` 解析返回目标）
+- `goBack()` 新增 `isHistoryUnreliableScreen()` 守卫：德/英屏（`skipHistory` 导航）改用 fallback map，避免读到陈旧 Italian 历史
+- `shouldShowMobileBackButton()` 对德/英 hub 与顶层屏隐藏悬浮返回按钮
+- 修复共享 `grammarBookBackBtn` 双重绑定（Italian 处理器在德/英下让位给 `GermanApp`）
+- `LanguagePortal.selectLanguage()` 切语言时重置 `navigationStack`
+- **未执行的提案（已获批，列入下一轮）**：抽取 `lib/navigation.js`、把德/英统一到真实历史栈、`ScreenMeta` 驱动 back-map、跨语言 hub 对齐、清理死代码/重复绑定
 
 ---
 
