@@ -53,7 +53,8 @@
 ├── lib/
 │   ├── utils.js           ← 共享工具函数（escapeHtml, escapeAttribute, renderIcon）
 │   ├── word-similarity.js ← 词形相似度（困难模式相似干扰项，纯函数）
-│   └── quiz-engine.js     ← 通用测验引擎（选择题/拼写/浏览共享逻辑）
+│   ├── quiz-engine.js     ← 通用测验引擎（选择题/拼写/浏览共享逻辑）
+│   └── navigation.js      ← 导航核心（showScreen/goBack/fallback/移动端返回；从 app.js 抽出）
 ├── tests/
 │   ├── test-quiz-engine.html       ← QuizEngine + WordSimilarity 单元测试（36 个用例）
 │   └── test-spaced-repetition.html ← SM-2 算法测试（17 个用例）
@@ -100,6 +101,7 @@
    - `lib/utils.js`          ← 共享工具（必须最先加载）
    - `lib/word-similarity.js` ← 词形相似度（在 quiz-engine.js 之前）
    - `lib/quiz-engine.js`    ← 通用测验引擎
+   - `lib/navigation.js`     ← 导航核心（在 app.js 之前；调用时才读取 app.js 的 AppState）
    - `vocabulary.js`
    - `data/conjugations-all-tenses.js`
    - `data/conjugations-presente.js`
@@ -327,7 +329,7 @@
 - `AppState` 全局状态
 - `Storage` 本地存储
 - 系统词汇加载 `loadVocabulary()`
-- screen 切换 `showScreen()`
+- screen 切换 `showScreen()`（**已移至 `lib/navigation.js`**，见 6.3.2；`app.js` 仍持有 `AppState`）
 - 顶部统计 / breadcrumb / nav 更新
 - 选择题模式 `MultipleChoice`
 - 拼写模式 `Spelling`
@@ -430,6 +432,28 @@
 
 - 保持纯函数、可单元测试，难度读取由各 app 的 engine config 通过 `get difficulty()` getter 注入，引擎本身不读 localStorage
 - 无新增数据文件、无 payload 增长，契合纯静态部署
+
+---
+
+### 6.3.2 `lib/navigation.js` — 导航核心模块
+
+**新增于 2026-06-26（nav god-object 拆分）。**
+
+把导航原语从 `app.js` 抽出为独立模块（IIFE，在 `app.js` **之前**加载），所有符号通过 `window.*` 别名暴露以保持向后兼容。
+
+负责（均挂在 `window` 上）：
+
+- `showScreen(id, {skipHistory})` / `goBack(options)`
+- `getFallbackBackTarget()` / `getSharedScreenBackTarget()` / `FALLBACK_BACK_MAP` / `makeLanguageFallbackMap()`
+- `getPreviousScreenFromHistory()` / `shouldShowMobileBackButton()` / `updateMobileBackButton()`
+- `setPracticeContext()`
+
+**设计决策 / 隐性依赖：**
+
+- 它在解析期不触碰 `AppState`（仍定义在 `app.js`，加载更晚）；只有在 DOMContentLoaded 之后被调用时才通过全局词法作用域读取 `AppState`，避免 load-order 崩溃。
+- `app.js` / `german-app.js` / `app-enhanced.js` 里的裸调用 `showScreen(...)`/`goBack(...)` 解析到 `window.*`，因此拆分对调用方透明。
+- `ScreenMeta` / `makeLanguageScreens()` 仍留在 `app.js`（仅被 app.js 消费）。
+- German/English 现已走真实历史栈（2026-06-26 第二轮），原 `isHistoryUnreliableScreen`/`skipHistory` 兜底已移除。
 
 ---
 
@@ -793,7 +817,8 @@
 - 导出：`GERMAN_VOCABULARY_DATA`
 - 来源：`deutsch-data/vocab/pgh.csv`（经 `scripts/process_german_vocab.py` 处理）
 - 字段：`{ german, display, meaning, chinese, notes, rank, source }`
-- **2026-06-26 重建**：改为按 `wordfreq('de')` 词频排序（无词频命中的词按原序追加在词频段之后），修复 51 个引号缺失源行导致的错误 headword，保留 `notes` 与可分动词 `display`；共 9,361 条不变。top10 由 `ab, ab/bauen…` 变为 `die, und, in, das…`
+- **2026-06-26 重建（两轮）**：① 改为按 `wordfreq('de')` 词频排序，修复 51 个引号缺失源行导致的错误 headword，保留 `notes` 与可分动词 `display`（9,361 条）；② 合并 [HanDeDict](https://github.com/gugray/HanDeDict)（**CC-BY-SA 3.0**，中→德反转去重后按词频并入）扩充至 **15,507** 条，并修复 287 处源 CSV 释义瑕疵（`die` → `定冠词 (阴性/复数); 见 der`，0 括号失衡）。合并切片 `deutsch-data/vocab/handedict-de-slice.csv`（452KB；`HANDEDICT_FULL=...` 可全量重建）。top10 由 `ab, ab/bauen…` 变为 `die, und, in, das…`
+- ⚠️ 许可：含 HanDeDict（CC-BY-SA 3.0）数据，公开分发需署名 + share-alike（README「数据来源与致谢」与 Help 弹窗已署名）
 - 供 `german-app.js > GermanApp` 使用
 
 #### `data/german-grammar-data.js`
@@ -810,7 +835,7 @@
 - 导出：`ENGLISH_VOCABULARY_DATA`
 - 来源：`english-data/english word/EnWords.csv`（注意目录名前有空格）+ `wordfreq` 词频
 - 字段：`{ english, meaning, chinese, notes, rank, source }`，`source = "wordfreq+EnWords"`
-- **2026-06-26 重建**：改为按 `wordfreq` 真实词频排序（`rank` 1..N），剔除单字母 / 缩写 / 专有名词 / 无释义词，清洗释义；条目数 20,000 → **11,961**（质量优先）。top10 由 `a, aaal, aachen…` 变为 `the, to, and, of…`
+- **2026-06-26 重建（两轮）**：① 改为按 `wordfreq` 真实词频排序（`rank` 1..N），剔除单字母 / 缩写 / 专有名词 / 无释义词，清洗释义（20,000 → 11,961）；② 引入 [ECDICT](https://github.com/skywind3000/ECDICT) 作为 EnWords 缺词时的回退释义源，扩充至 **24,000** 条（`source` 记 `wordfreq+EnWords` 或 `wordfreq+ECDICT`）。回退切片 ` english-data/english word/ecdict-slice.csv`（1.6MB，仅含用到的词头；`ECDICT_FULL=...` 可全量重建）。top10 由 `a, aaal, aachen…` 变为 `the, to, and, of…`
 - 由 `scripts/build_english_vocab.py` 生成
 - 供 `german-app.js > EnglishApp` 使用
 
@@ -1595,6 +1620,27 @@
 - `LanguagePortal.selectLanguage()` 切语言时重置 `navigationStack`
 - **未执行的提案（已获批，列入下一轮）**：抽取 `lib/navigation.js`、把德/英统一到真实历史栈、`ScreenMeta` 驱动 back-map、跨语言 hub 对齐、清理死代码/重复绑定
 
+### 2026-06-26 — 第二轮（数据扩充 / 导航重构 / 署名）
+
+承接上一轮提案，继续用 2 个 worktree + 并行 subagent 完成：
+
+**① 数据扩充（`improve/data-v2`）：**
+- English：引入 ECDICT 回退释义源，11,961 → **24,000**（committed `ecdict-slice.csv` 1.6MB）
+- German：合并 HanDeDict（CC-BY-SA 3.0），9,361 → **15,507**，并修复 287 处源释义瑕疵（committed `handedict-de-slice.csv` 452KB）
+- 字段契约与全局常量名不变；两文件均 0 空答案、rank 连续
+
+**② 导航重构（`improve/nav-refactor`，分 3 阶段）：**
+- 新增 `lib/navigation.js`，把导航核心从 `app.js` god-object 抽出（`window.*` 别名，行为不变，app.js -214 行）
+- German/English 改走真实历史栈，~20 个返回按钮统一走 `goBack()`；移除上一轮 `skipHistory` 兜底
+- 清理死代码 `WordbookManager.showManagementScreen()`、去重 `goGerman/EnglishProgressBtn` 双重绑定
+- 验证：50/50→57/57 行为对等 harness + headless Chrome 交互探针 + 渲染启动
+
+**③ 署名（CC-BY-SA / ECDICT）：**
+- `README.md` 新增「数据来源与致谢」表 + 许可证段 share-alike 提示
+- `index.html` Help 弹窗新增「数据来源与致谢」段（ECDICT / HanDeDict / wordfreq / Chart.js / marked.js）
+
+**仍未做（IA/内容决策，留待后续）：** 跨语言 hub 对齐（德/英 Grammar 缺意大利语独有模块，建议显式标注 Italian-only 或加 coming-soon stub）。
+
 ---
 
 ## 16. 快速索引（超简版）
@@ -1612,6 +1658,7 @@
 - **改统计图表** → `stats-charts.js`
 - **改共享工具函数** → `lib/utils.js`
 - **改通用测验引擎** → `lib/quiz-engine.js`
+- **改导航 / screen 切换 / 返回逻辑** → `lib/navigation.js`（`AppState` 仍在 `app.js`）
 - **改选择题难度 / 相似干扰项** → `lib/word-similarity.js` + `lib/quiz-engine.js`（难度设置 UI 在 `index.html` `#difficultyToggle` + `app.js` `initDifficultyToggle()`）
 - **改单元测试** → `tests/test-quiz-engine.html` + `tests/test-spaced-repetition.html`
 - **改语法书构建** → `scripts/parse_grammar.py` + `scripts/build_grammar_data.py`

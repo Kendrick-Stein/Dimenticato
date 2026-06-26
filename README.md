@@ -255,9 +255,24 @@ python3 scripts/build_english_grammar.py
 
 ---
 
+## 📚 数据来源与致谢
+
+| 数据 | 来源 | 许可 |
+|---|---|---|
+| English 释义（部分） | [ECDICT](https://github.com/skywind3000/ECDICT) | 开源聚合英汉词典数据 |
+| German 词汇（部分） | [HanDeDict](https://github.com/gugray/HanDeDict) | **CC-BY-SA 3.0** |
+| English / German 词频排序 | [wordfreq](https://github.com/rspeer/wordfreq) | 开源 |
+| 图表 / Markdown | [Chart.js](https://www.chartjs.org/) · [marked.js](https://marked.js.org/) | 开源 |
+
+每条词汇的 `source` 字段记录了其具体来源。
+
+---
+
 ## 📄 许可证
 
 本项目仅供个人学习使用。
+
+> ⚠️ 注意：German 词汇含 [HanDeDict](https://github.com/gugray/HanDeDict)（CC-BY-SA 3.0）数据。如**公开分发/部署**本项目，需遵守 CC-BY-SA 的署名（attribution）与相同方式共享（share-alike）要求 —— 上方“数据来源与致谢”即为署名，相应衍生数据亦沿用该协议。
 
 ---
 
