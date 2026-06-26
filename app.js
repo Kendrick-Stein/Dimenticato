@@ -813,9 +813,11 @@ function updateHeaderNavigation(screenId) {
 // 以下导航原语已迁移至 lib/navigation.js（在本文件之前加载），并通过 window.*
 // 以相同名字暴露，本文件及其它脚本继续以裸名字调用：
 //   setPracticeContext, makeLanguageFallbackMap, FALLBACK_BACK_MAP,
-//   getSharedScreenBackTarget, getFallbackBackTarget, SHARED_SCREENS,
-//   isHistoryUnreliableScreen, getPreviousScreenFromHistory,
-//   shouldShowMobileBackButton, updateMobileBackButton, goBack, showScreen
+//   getSharedScreenBackTarget, getFallbackBackTarget,
+//   getPreviousScreenFromHistory, shouldShowMobileBackButton,
+//   updateMobileBackButton, goBack, showScreen
+// (Stage 2 removed isHistoryUnreliableScreen/SHARED_SCREENS — German/English
+//  now push real history, so goBack relies on the shared navigationStack.)
 //
 // AppState / ScreenMeta / updateHeaderNavigation 仍保留在本文件；navigation.js
 // 在调用时（DOMContentLoaded 之后）通过共享全局作用域延迟解析它们，无 load-order 风险。

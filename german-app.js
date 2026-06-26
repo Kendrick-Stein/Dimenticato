@@ -150,9 +150,9 @@
     applyInitialLanguage() {
       this.updateLanguageSwitcherUI(this.activeLanguage);
       if (this.activeLanguage === 'german') {
-        this.showScreen('germanWelcomeScreen');
+        this.resetToScreen('germanWelcomeScreen');
       } else if (this.activeLanguage === 'english') {
-        this.showScreen('englishWelcomeScreen');
+        this.resetToScreen('englishWelcomeScreen');
       }
     },
 
@@ -168,11 +168,11 @@
         // 回退：LanguagePortal 未加载时的降级处理
         this.updateLanguageSwitcherUI(language);
         if (language === 'german') {
-          this.showScreen('germanWelcomeScreen');
+          this.resetToScreen('germanWelcomeScreen');
         } else if (language === 'english') {
-          this.showScreen('englishWelcomeScreen');
+          this.resetToScreen('englishWelcomeScreen');
         } else {
-          this.showScreen('welcomeScreen');
+          this.resetToScreen('welcomeScreen');
         }
       }
     },
@@ -189,20 +189,20 @@
       this.bindClick('goGermanProgressBtn', () => this.showScreen('germanProgressScreen'));
       this.bindClick('goGermanSettingsBtn', () => this.showScreen('germanSettingsScreen'));
 
-      this.bindClick('germanVocabularyBackBtn', () => this.showScreen('germanWelcomeScreen'));
+      this.bindClick('germanVocabularyBackBtn', () => this.goBack('germanWelcomeScreen'));
       this.bindClick('germanSystemVocabularyBtn', () => this.showScreen('germanVocabularyModesScreen'));
       this.bindClick('germanWordbooksBtn', () => this.renderLanguageWordbooks('german'));
       this.bindClick('germanCommunityBtn', () => this.openSharedCommunity('germanVocabularyScreen'));
 
-      this.bindClick('germanModesBackBtn', () => this.showScreen('germanVocabularyScreen'));
-      this.bindClick('germanGrammarBackBtn', () => this.showScreen('germanWelcomeScreen'));
-      this.bindClick('germanProgressBackBtn', () => this.showScreen('germanWelcomeScreen'));
-      this.bindClick('germanSettingsBackBtn', () => this.showScreen('germanWelcomeScreen'));
+      this.bindClick('germanModesBackBtn', () => this.goBack('germanVocabularyScreen'));
+      this.bindClick('germanGrammarBackBtn', () => this.goBack('germanWelcomeScreen'));
+      this.bindClick('germanProgressBackBtn', () => this.goBack('germanWelcomeScreen'));
+      this.bindClick('germanSettingsBackBtn', () => this.goBack('germanWelcomeScreen'));
 
-      this.bindClick('englishVocabularyBackBtn', () => this.showScreen('englishWelcomeScreen'));
-      this.bindClick('englishGrammarBackBtn', () => this.showScreen('englishWelcomeScreen'));
-      this.bindClick('englishProgressBackBtn', () => this.showScreen('englishWelcomeScreen'));
-      this.bindClick('englishSettingsBackBtn', () => this.showScreen('englishWelcomeScreen'));
+      this.bindClick('englishVocabularyBackBtn', () => this.goBack('englishWelcomeScreen'));
+      this.bindClick('englishGrammarBackBtn', () => this.goBack('englishWelcomeScreen'));
+      this.bindClick('englishProgressBackBtn', () => this.goBack('englishWelcomeScreen'));
+      this.bindClick('englishSettingsBackBtn', () => this.goBack('englishWelcomeScreen'));
       this.bindClick('goEnglishVocabularyBtn', () => this.showScreen('englishVocabularyScreen'));
       this.bindClick('goEnglishGrammarBtn', () => this.showScreen('englishGrammarScreen'));
       this.bindClick('goEnglishProgressBtn', () => this.showScreen('englishProgressScreen'));
@@ -210,7 +210,7 @@
       this.bindClick('englishSystemVocabularyBtn', () => this.showScreen('englishVocabularyModesScreen'));
       this.bindClick('englishWordbooksBtn', () => this.renderLanguageWordbooks('english'));
       this.bindClick('englishCommunityBtn', () => this.openSharedCommunity('englishVocabularyScreen'));
-      this.bindClick('englishModesBackBtn', () => this.showScreen('englishVocabularyScreen'));
+      this.bindClick('englishModesBackBtn', () => this.goBack('englishVocabularyScreen'));
 
       this.bindClick('germanImportWordbookBtn', () => document.getElementById('germanWordbookFileInput')?.click());
       this.bindClick('englishImportWordbookBtn', () => document.getElementById('englishWordbookFileInput')?.click());
@@ -378,7 +378,7 @@
           this._openGrammarBook(
             typeof GERMAN_GRAMMAR_DATA !== 'undefined' ? GERMAN_GRAMMAR_DATA : null,
             'German / Grammar Book',
-            () => this.showScreen('germanGrammarScreen')
+            () => this.goBack('germanGrammarScreen')
           );
         });
       }
@@ -393,7 +393,7 @@
           this._openGrammarBook(
             typeof ENGLISH_GRAMMAR_DATA !== 'undefined' ? ENGLISH_GRAMMAR_DATA : null,
             'English / Grammar Book',
-            () => this.showScreen('englishGrammarScreen')
+            () => this.goBack('englishGrammarScreen')
           );
         });
       }
@@ -404,7 +404,7 @@
         if (typeof this._grammarBookBackTarget === 'function') {
           this._grammarBookBackTarget();
         } else {
-          this.showScreen('grammarScreen');
+          this.goBack('grammarScreen');
         }
       });
     },
@@ -433,14 +433,14 @@
       this.bindClick('germanSpellingBtn', () => this.startSpelling());
       this.bindClick('germanBrowseBtn', () => this.openBrowse());
 
-      this.bindClick('germanMcBackBtn', () => this.showScreen('germanVocabularyModesScreen'));
+      this.bindClick('germanMcBackBtn', () => this.goBack('germanVocabularyModesScreen'));
       this.bindClick('germanMcShowHintBtn', () => {
         document.getElementById('germanMcHint')?.classList.remove('hidden');
         document.getElementById('germanMcShowHintBtn')?.classList.add('hidden');
       });
       this.bindClick('germanMcNextBtn', () => this.nextMultipleChoiceQuestion());
 
-      this.bindClick('germanSpBackBtn', () => this.showScreen('germanVocabularyModesScreen'));
+      this.bindClick('germanSpBackBtn', () => this.goBack('germanVocabularyModesScreen'));
       this.bindClick('germanSpCheckBtn', () => this.checkSpellingAnswer());
       this.bindClick('germanSpNextBtn', () => this.nextSpellingQuestion());
       this.bindClick('germanPronunciationBtn', () => {
@@ -455,7 +455,7 @@
         }
       });
 
-      this.bindClick('germanBrowseBackBtn', () => this.showScreen('germanVocabularyModesScreen'));
+      this.bindClick('germanBrowseBackBtn', () => this.goBack('germanVocabularyModesScreen'));
       this.bindClick('germanFilterBtn', () => this.toggleBrowseFilter());
       document.getElementById('germanSearchInput')?.addEventListener('input', (event) => {
         this.renderBrowse(event.target.value || '');
@@ -479,11 +479,11 @@
 
       this.bindClick('languageSkeletonPlaceholderBackBtn', () => {
         if (this.activeLanguage === 'german') {
-          this.showScreen('germanWelcomeScreen');
+          this.goBack('germanWelcomeScreen');
         } else if (this.activeLanguage === 'english') {
-          this.showScreen('englishWelcomeScreen');
+          this.goBack('englishWelcomeScreen');
         } else {
-          this.showScreen('welcomeScreen');
+          this.goBack('welcomeScreen');
         }
       });
     },
@@ -820,14 +820,41 @@
       window.speechSynthesis.speak(utterance);
     },
 
-    showScreen(screenId) {
+    // German/English now share the global history stack (Stage 2 of the nav
+    // refactor): forward navigations push history by default — exactly like the
+    // Italian site — so the global goBack() can pop reliably. Pass
+    // { skipHistory: true } only for top-level context resets (language switch /
+    // initial language application), where pushing would pollute the stack.
+    showScreen(screenId, options = {}) {
       if (typeof showScreen === 'function') {
-        showScreen(screenId, { skipHistory: true });
+        showScreen(screenId, options);
         return;
       }
 
       document.querySelectorAll('.screen').forEach((screen) => screen.classList.remove('active'));
       document.getElementById(screenId)?.classList.add('active');
+    },
+
+    // Route an in-page back button through the global goBack() so it pops real
+    // history when available, falling back to the per-language fallback map
+    // (FALLBACK_BACK_MAP in lib/navigation.js) when there is no usable history.
+    goBack(fallbackTarget) {
+      if (typeof goBack === 'function') {
+        goBack(fallbackTarget ? { fallbackTarget } : {});
+        return;
+      }
+      // Defensive fallback if navigation core is unavailable.
+      if (fallbackTarget) this.showScreen(fallbackTarget, { skipHistory: true });
+    },
+
+    // Show a language home as a fresh top-level context: reset the shared history
+    // stack to just that screen (mirrors LanguagePortal.selectLanguage) so a
+    // later goBack() never reaches into a stale cross-language history.
+    resetToScreen(screenId) {
+      if (typeof AppState !== 'undefined' && AppState) {
+        AppState.navigationStack = [screenId];
+      }
+      this.showScreen(screenId, { skipHistory: true });
     },
 
     bindClick(id, handler) {
@@ -954,7 +981,7 @@
       g.bindClick('englishBrowseBtn', () => this.openBrowse());
 
       // MC screen
-      g.bindClick('englishMcBackBtn', () => g.showScreen('englishVocabularyModesScreen'));
+      g.bindClick('englishMcBackBtn', () => g.goBack('englishVocabularyModesScreen'));
       g.bindClick('englishMcShowHintBtn', () => {
         document.getElementById('englishMcHint')?.classList.remove('hidden');
         document.getElementById('englishMcShowHintBtn')?.classList.add('hidden');
@@ -962,7 +989,7 @@
       g.bindClick('englishMcNextBtn', () => this.nextMcQuestion());
 
       // Spelling screen
-      g.bindClick('englishSpBackBtn', () => g.showScreen('englishVocabularyModesScreen'));
+      g.bindClick('englishSpBackBtn', () => g.goBack('englishVocabularyModesScreen'));
       g.bindClick('englishSpCheckBtn', () => this.checkSpelling());
       g.bindClick('englishSpNextBtn', () => this.nextSpelling());
       g.bindClick('englishPronunciationBtn', () => {
@@ -973,7 +1000,7 @@
       });
 
       // Browse screen
-      g.bindClick('englishBrowseBackBtn', () => g.showScreen('englishVocabularyModesScreen'));
+      g.bindClick('englishBrowseBackBtn', () => g.goBack('englishVocabularyModesScreen'));
       g.bindClick('englishFilterBtn', () => this._toggleFilter());
       document.getElementById('englishSearchInput')?.addEventListener('input', (e) => {
         this._renderBrowse(e.target.value || '');
