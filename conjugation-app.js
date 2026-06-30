@@ -3,15 +3,163 @@
  */
 
 (function () {
-  const PERSON_ORDER = ['io', 'tu', 'lui_lei', 'noi', 'voi', 'loro'];
-  const PERSON_LABEL = {
-    io: 'io',
-    tu: 'tu',
-    lui_lei: 'lui / lei',
-    noi: 'noi',
-    voi: 'voi',
-    loro: 'loro'
+  // ==================== 语言配置（language config） ====================
+  // 该模块原本硬编码意大利语；现在通过 `config` 描述当前语言，使同一套
+  // 屏幕/逻辑可服务意/德/英三语。意大利语为默认配置，行为与重构前完全一致。
+  //
+  // config 形态：
+  //   { lang, getData(), personOrder, personLabel,
+  //     moods: [{ key, label, match(meta) }], timeOf(meta),
+  //     storageKey, backTarget }
+  //   - moods 是矩阵的行（语气/式），按顺序渲染为最多三行；
+  //   - match(meta) 把某时态分到某个 mood；timeOf(meta) 返回
+  //     'present' | 'past' | 'future' | 'other' 作为矩阵的列。
+
+  function lc(s) {
+    return (s || '').toString().toLowerCase();
+  }
+
+  // ---- 意大利语（默认，行为与重构前一致） ----
+  const ITALIAN_CONFIG = {
+    lang: 'italian',
+    getData() {
+      if (typeof CONJUGATION_ALL_TENSES_DATA !== 'undefined' && Array.isArray(CONJUGATION_ALL_TENSES_DATA)) {
+        return CONJUGATION_ALL_TENSES_DATA;
+      }
+      return buildFallbackFromPresente();
+    },
+    personOrder: ['io', 'tu', 'lui_lei', 'noi', 'voi', 'loro'],
+    personLabel: {
+      io: 'io',
+      tu: 'tu',
+      lui_lei: 'lui / lei',
+      noi: 'noi',
+      voi: 'voi',
+      loro: 'loro'
+    },
+    moods: [
+      { key: 'indicativo', label: '直陈式', match: (meta) => lc(meta.group).includes('indicativo') },
+      { key: 'condizionale', label: '条件式', match: (meta) => lc(meta.group).includes('condizionale') },
+      { key: 'congiuntivo', label: '虚拟式', match: (meta) => lc(meta.group).includes('congiuntivo') }
+    ],
+    timeOf(meta) {
+      const t = lc(meta.tense);
+      if (t.includes('presente')) return 'present';
+      if (t.includes('futuro')) return 'future';
+      if (
+        t.includes('passato') ||
+        t.includes('imperfetto') ||
+        t.includes('trapassato') ||
+        t.includes('anteriore')
+      ) {
+        return 'past';
+      }
+      return 'other';
+    },
+    storageKey: 'dimenticato_conjugation_lessons',
+    backTarget: 'grammarScreen',
+    localeSort: 'it'
   };
+
+  // ---- 德语 ----
+  const GERMAN_CONFIG = {
+    lang: 'german',
+    getData() {
+      return (typeof GERMAN_CONJUGATION_DATA !== 'undefined' && Array.isArray(GERMAN_CONJUGATION_DATA))
+        ? GERMAN_CONJUGATION_DATA
+        : [];
+    },
+    personOrder: ['ich', 'du', 'er_sie_es', 'wir', 'ihr', 'sie'],
+    personLabel: {
+      ich: 'ich',
+      du: 'du',
+      er_sie_es: 'er / sie / es',
+      wir: 'wir',
+      ihr: 'ihr',
+      sie: 'sie'
+    },
+    moods: [
+      { key: 'indikativ', label: '直陈式', match: (meta) => lc(meta.group).includes('indikativ') },
+      { key: 'konjunktiv', label: '虚拟式', match: (meta) => lc(meta.group).includes('konjunktiv') },
+      { key: 'imperativ', label: '命令式', match: (meta) => lc(meta.group).includes('imperativ') }
+    ],
+    timeOf(meta) {
+      const t = lc(meta.tense);
+      if (t.includes('präsens') || t.includes('prasens') || t.includes('present')) return 'present';
+      if (t.includes('futur')) return 'future';
+      if (
+        t.includes('präteritum') || t.includes('prateritum') ||
+        t.includes('perfekt') ||           // Perfekt + Plusquamperfekt + Konjunktiv * Perfekt
+        t.includes('past')
+      ) {
+        return 'past';
+      }
+      // Bare Konjunktiv I / Konjunktiv II (würde-Form) and the Imperativ carry no
+      // present/past/future keyword; anchor them in the "present" column of their
+      // own mood row so the matrix shows them in place rather than in 其他时态.
+      if (t.includes('konjunktiv') || t.includes('imperativ')) return 'present';
+      return 'other';
+    },
+    storageKey: 'dimenticato_conjugation_lessons_de',
+    backTarget: 'germanGrammarScreen',
+    localeSort: 'de'
+  };
+
+  // ---- 英语 ----
+  const ENGLISH_CONFIG = {
+    lang: 'english',
+    getData() {
+      return (typeof ENGLISH_CONJUGATION_DATA !== 'undefined' && Array.isArray(ENGLISH_CONJUGATION_DATA))
+        ? ENGLISH_CONJUGATION_DATA
+        : [];
+    },
+    personOrder: ['i', 'you', 'he_she_it', 'we', 'you_pl', 'they'],
+    personLabel: {
+      i: 'I',
+      you: 'you',
+      he_she_it: 'he / she / it',
+      we: 'we',
+      you_pl: 'you (pl.)',
+      they: 'they'
+    },
+    moods: [
+      { key: 'indicative', label: '陈述式', match: (meta) => lc(meta.group).includes('indicative') },
+      { key: 'conditional', label: '条件式', match: (meta) => lc(meta.group).includes('conditional') },
+      { key: 'imperative', label: '命令式', match: (meta) => lc(meta.group).includes('imperative') }
+    ],
+    timeOf(meta) {
+      const t = lc(meta.tense);
+      const g = lc(meta.group);
+      // Conditional aspect labels (Present/Continuous/Perfect/Perfect continuous)
+      // and the Imperative lack a tense prefix; map them onto their own mood row:
+      // perfect aspects → 过去 column, the rest → 现在 column.
+      if (g.includes('conditional')) return t.includes('perfect') ? 'past' : 'present';
+      if (g.includes('imperative')) return 'present';
+      if (t.includes('present')) return 'present';
+      if (t.includes('future')) return 'future';
+      if (t.includes('past')) return 'past';
+      return 'other';
+    },
+    storageKey: 'dimenticato_conjugation_lessons_en',
+    backTarget: 'englishGrammarScreen',
+    localeSort: 'en'
+  };
+
+  const LANG_CONFIGS = {
+    italian: ITALIAN_CONFIG,
+    german: GERMAN_CONFIG,
+    english: ENGLISH_CONFIG
+  };
+
+  // 当前激活的语言配置。默认意大利语 → 保证自动初始化行为不变。
+  let config = ITALIAN_CONFIG;
+
+  // 便捷读取（替换原先硬编码的 PERSON_ORDER / PERSON_LABEL / STORAGE_KEY）。
+  function PERSON_ORDER() { return config.personOrder; }
+  function personLabelOf(person) {
+    return (config.personLabel && config.personLabel[person]) || person;
+  }
+  function storageKey() { return config.storageKey; }
 
   const state = {
     verbs: [],
@@ -28,8 +176,6 @@
     current: null,
     started: false
   };
-
-  const STORAGE_KEY = 'dimenticato_conjugation_lessons';
 
   function isGroupedFullQuestion(question) {
     return !!question && question.promptType === 'group';
@@ -54,7 +200,7 @@
   function getTenseForms(tenseData) {
     if (!tenseData) return [];
     if (tenseData.type === 'person' && tenseData.forms && typeof tenseData.forms === 'object') {
-      return PERSON_ORDER.flatMap(person => splitAlternatives(tenseData.forms[person]));
+      return PERSON_ORDER().flatMap(person => splitAlternatives(tenseData.forms[person]));
     }
     if (Array.isArray(tenseData.forms)) {
       return tenseData.forms.flatMap(form => splitAlternatives(form));
@@ -132,11 +278,11 @@
     if (tenseData.type === 'person' && tenseData.forms && typeof tenseData.forms === 'object') {
       return `
         <div class="conj-lookup-rows">
-          ${PERSON_ORDER.map(person => {
+          ${PERSON_ORDER().map(person => {
             const value = splitAlternatives(tenseData.forms[person]).join(' / ') || '—';
             return `
               <div class="conj-lookup-row">
-                <span class="conj-lookup-row-label">${escapeHtml(PERSON_LABEL[person] || person)}</span>
+                <span class="conj-lookup-row-label">${escapeHtml(personLabelOf(person))}</span>
                 <span class="conj-lookup-row-value">${escapeHtml(value)}</span>
               </div>
             `;
@@ -240,7 +386,7 @@
 
   function loadLessonStorage() {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
+      const raw = localStorage.getItem(storageKey());
       return raw ? JSON.parse(raw) : { completed: {}, lastViewed: {} };
     } catch {
       return { completed: {}, lastViewed: {} };
@@ -248,7 +394,7 @@
   }
 
   function saveLessonStorage(data) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    localStorage.setItem(storageKey(), JSON.stringify(data));
   }
 
   function persistLessonView() {
@@ -301,10 +447,8 @@
   }
 
   function prepareData() {
-    const raw =
-      typeof CONJUGATION_ALL_TENSES_DATA !== 'undefined' && Array.isArray(CONJUGATION_ALL_TENSES_DATA)
-        ? CONJUGATION_ALL_TENSES_DATA
-        : buildFallbackFromPresente();
+    const data = config.getData();
+    const raw = Array.isArray(data) ? data : [];
 
     state.verbs = [...raw].sort((a, b) => (a.rank || 999999) - (b.rank || 999999));
 
@@ -325,35 +469,25 @@
 
     state.tenseMeta = meta;
     buildLookupIndex();
-    const firstTenseKey = Object.keys(meta)[0] || 'indicativo_presente';
-    state.selectedTense = firstTenseKey;
+    // First available tense (or null when data is absent — handled gracefully by
+    // setSelectedTense / updateLessonUI rather than pointing at a bogus key).
+    state.selectedTense = Object.keys(meta)[0] || null;
   }
 
   function getSortedTenseMeta() {
-    return Object.values(state.tenseMeta).sort((a, b) => a.label.localeCompare(b.label, 'it'));
+    const locale = config.localeSort || 'en';
+    return Object.values(state.tenseMeta).sort((a, b) => a.label.localeCompare(b.label, locale));
   }
 
+  // Mood bucket = config-defined matrix row key (or 'other' for non-finite extras).
   function getMoodBucket(meta) {
-    const g = (meta.group || '').toLowerCase();
-    if (g.includes('indicativo')) return 'indicativo';
-    if (g.includes('condizionale')) return 'condizionale';
-    if (g.includes('congiuntivo')) return 'congiuntivo';
-    return 'other';
+    const mood = (config.moods || []).find(m => m.match(meta));
+    return mood ? mood.key : 'other';
   }
 
+  // Time bucket = matrix column ('present' | 'past' | 'future' | 'other').
   function getTimeBucket(meta) {
-    const t = (meta.tense || '').toLowerCase();
-    if (t.includes('presente')) return 'present';
-    if (t.includes('futuro')) return 'future';
-    if (
-      t.includes('passato') ||
-      t.includes('imperfetto') ||
-      t.includes('trapassato') ||
-      t.includes('anteriore')
-    ) {
-      return 'past';
-    }
-    return 'other';
+    return config.timeOf(meta) || 'other';
   }
 
   function buildTenseButton(meta) {
@@ -414,28 +548,23 @@
     updateLessonUI();
   }
 
-  const MOOD_LABELS = {
-    indicativo: '直陈式',
-    condizionale: '条件式',
-    congiuntivo: '虚拟式'
-  };
-
   const TIME_LABELS = {
     present: '现在',
     past: '过去',
     future: '将来'
   };
+  const TIME_ORDER = ['present', 'past', 'future'];
 
   function isMobileLayout() {
     return window.innerWidth <= 640;
   }
 
   function buildMatrixBuckets(tenseList) {
-    const buckets = {
-      indicativo: { present: [], past: [], future: [] },
-      condizionale: { present: [], past: [], future: [] },
-      congiuntivo: { present: [], past: [], future: [] }
-    };
+    // One row per config mood, each with present/past/future columns.
+    const buckets = {};
+    config.moods.forEach(mood => {
+      buckets[mood.key] = { present: [], past: [], future: [] };
+    });
     const extras = [];
     tenseList.forEach(meta => {
       const mood = getMoodBucket(meta);
@@ -455,27 +584,22 @@
       return arr.map(buildTenseButton).join('');
     };
 
+    const moodRows = config.moods.map(mood => {
+      const b = buckets[mood.key];
+      return `
+        <div class="conj-matrix-row-label">${mood.label}</div>
+        <div class="conj-matrix-cell">${buildCell(b.present)}</div>
+        <div class="conj-matrix-cell">${buildCell(b.past)}</div>
+        <div class="conj-matrix-cell">${buildCell(b.future)}</div>`;
+    }).join('\n');
+
     wrap.innerHTML = `
       <div class="conj-tense-matrix">
         <div class="conj-matrix-head">语气\\时间</div>
         <div class="conj-matrix-head">现在</div>
         <div class="conj-matrix-head">过去</div>
         <div class="conj-matrix-head">将来</div>
-
-        <div class="conj-matrix-row-label">直陈式</div>
-        <div class="conj-matrix-cell">${buildCell(buckets.indicativo.present)}</div>
-        <div class="conj-matrix-cell">${buildCell(buckets.indicativo.past)}</div>
-        <div class="conj-matrix-cell">${buildCell(buckets.indicativo.future)}</div>
-
-        <div class="conj-matrix-row-label">条件式</div>
-        <div class="conj-matrix-cell">${buildCell(buckets.condizionale.present)}</div>
-        <div class="conj-matrix-cell">${buildCell(buckets.condizionale.past)}</div>
-        <div class="conj-matrix-cell">${buildCell(buckets.condizionale.future)}</div>
-
-        <div class="conj-matrix-row-label">虚拟式</div>
-        <div class="conj-matrix-cell">${buildCell(buckets.congiuntivo.present)}</div>
-        <div class="conj-matrix-cell">${buildCell(buckets.congiuntivo.past)}</div>
-        <div class="conj-matrix-cell">${buildCell(buckets.congiuntivo.future)}</div>
+${moodRows}
       </div>
       ${extras.length ? `
         <div class="conj-extra-tenses">
@@ -489,12 +613,12 @@
   }
 
   function renderMatrixMobile(wrap, buckets, extras) {
-    const moods = ['indicativo', 'condizionale', 'congiuntivo'];
-    const times = ['present', 'past', 'future'];
+    const times = TIME_ORDER;
 
-    const moodSections = moods.map(mood => {
+    const moodSections = config.moods.map(mood => {
+      const moodBuckets = buckets[mood.key];
       const timeSections = times.map(time => {
-        const arr = buckets[mood][time];
+        const arr = moodBuckets[time];
         if (!arr.length) return '';
         return `
           <div class="conj-mobile-time-group">
@@ -510,7 +634,7 @@
 
       return `
         <div class="conj-mobile-mood-section">
-          <div class="conj-mobile-mood-label">${MOOD_LABELS[mood]}</div>
+          <div class="conj-mobile-mood-label">${mood.label}</div>
           <div class="conj-mobile-mood-body">${timeSections}</div>
         </div>
       `;
@@ -537,6 +661,19 @@
     if (!wrap) return;
 
     const tenseList = getSortedTenseMeta();
+
+    // Graceful degradation: no data loaded for this language (e.g. the German /
+    // English conjugation data scripts are absent) → show a friendly notice
+    // instead of an empty matrix. Never crash.
+    if (!tenseList.length) {
+      wrap.innerHTML = `
+        <div class="conj-matrix-empty" style="padding:2rem;text-align:center;">
+          数据未加载，请稍后再试。
+        </div>
+      `;
+      return;
+    }
+
     const { buckets, extras } = buildMatrixBuckets(tenseList);
 
     if (isMobileLayout()) {
@@ -569,13 +706,13 @@
       if (!tenseData) return;
 
       if (state.mode === 'full' && tenseData.type === 'person') {
-        const items = PERSON_ORDER.map(p => {
+        const items = PERSON_ORDER().map(p => {
           const form = tenseData.forms ? tenseData.forms[p] : null;
           const answers = splitAlternatives(form);
           if (!answers.length) return null;
           return {
             key: p,
-            promptLabel: PERSON_LABEL[p] || p,
+            promptLabel: personLabelOf(p),
             answers
           };
         }).filter(Boolean);
@@ -621,7 +758,7 @@
           });
         }
       } else if (tenseData.type === 'person') {
-        PERSON_ORDER.forEach(p => {
+        PERSON_ORDER().forEach(p => {
           const form = tenseData.forms ? tenseData.forms[p] : null;
           if (!form) return;
           const answers = splitAlternatives(form);
@@ -635,7 +772,7 @@
             groupLabel: tenseData.group_label,
             promptType: 'person',
             promptLabel: '人称',
-            promptValue: PERSON_LABEL[p] || p,
+            promptValue: personLabelOf(p),
             answers
           });
         });
@@ -1005,22 +1142,64 @@
       else if (typeof showScreen === 'function') showScreen('conjugationSetupScreen');
       if (typeof window.setPracticeContext === 'function') window.setPracticeContext('conjugation');
     });
+
+    // The Italian Grammar hub's 动词变位 card (#goConjugationSetupBtn, handler in
+    // app.js) only calls showScreen('conjugationSetupScreen') — it does NOT reset
+    // `config`. If German/English previously opened this SHARED screen, `config`
+    // would still be non-Italian and the Italian card would render the wrong
+    // language. Re-bind here to reset back to the Italian config first. Both
+    // handlers call showScreen on the same screen, which is idempotent.
+    document.getElementById('goConjugationSetupBtn')?.addEventListener('click', () => {
+      if (config !== ITALIAN_CONFIG) {
+        config = ITALIAN_CONFIG;
+        reloadForActiveConfig();
+      }
+    });
   }
 
-  function init() {
+  // Reload data + UI for the current `config` (shared by init / openFor).
+  function reloadForActiveConfig() {
     prepareData();
     const storage = loadLessonStorage();
     const savedLesson = storage.lastViewed[`${state.selectedTense}__${state.lessonSize}`];
     state.lessonIndex = Number.isInteger(savedLesson) ? savedLesson : 0;
+    state.started = false;
     renderTenseButtons();
     updateLessonUI();
+  }
+
+  function init() {
+    reloadForActiveConfig();
     bindEvents();
+  }
+
+  // Open the (SHARED) conjugation setup screen for a given language. Italian
+  // keeps using the DOMContentLoaded auto-init; German/English call this when
+  // their Grammar-hub 动词变位 card is clicked. Swaps `config`, reloads data with
+  // a per-language storageKey (so lesson progress never collides across
+  // languages), then shows the shared setup screen. The screen is pushed onto
+  // the global history stack via showScreen(), so goBack() pops back to the
+  // right grammar hub. config.backTarget is the no-history fallback target.
+  function openFor(lang) {
+    const next = LANG_CONFIGS[lang];
+    if (!next) return;
+
+    config = next;
+    reloadForActiveConfig();
+
+    if (typeof window.setPracticeContext === 'function') {
+      window.setPracticeContext('conjugation');
+    }
+    if (typeof showScreen === 'function') {
+      showScreen('conjugationSetupScreen');
+    }
   }
 
   window.ConjugationPractice = {
     init,
     start,
-    searchVerbLookup
+    searchVerbLookup,
+    openFor
   };
 
   document.addEventListener('DOMContentLoaded', init);
