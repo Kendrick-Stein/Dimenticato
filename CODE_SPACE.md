@@ -545,9 +545,9 @@
 
 ---
 
-### 6.7 `conjugation-app.js` — 动词变位练习模块
+### 6.7 `conjugation-app.js` — 动词变位练习模块（三语共用）
 
-这是一个相对独立的子系统。
+这是一个相对独立的子系统。**2026-06-30 起按语言 `config` 驱动**：`ITALIAN_CONFIG`（默认）/ `GERMAN_CONFIG` / `ENGLISH_CONFIG` 提供各自 `getData()`、人称、mood 矩阵、`timeOf`、`storageKey`、`backTarget`；`ConjugationPractice.openFor(lang)` 切换语言并复用同一套变位 screen（详见 2026-06-30 变更记录）。下文描述以意大利语为例，德/英同构。
 
 负责：
 
@@ -1641,6 +1641,30 @@
 
 **仍未做（IA/内容决策，留待后续）：** 跨语言 hub 对齐（德/英 Grammar 缺意大利语独有模块，建议显式标注 Italian-only 或加 coming-soon stub）。
 
+### 2026-06-30 — German / English 动词变位（Codex + Claude 协作）
+
+为德语 / 英语补齐综合动词变位（表格 + 练习），把 German/English 的 Grammar 从「仅语法书」升级到「语法书 + 动词变位」。**Codex 负责数据，Claude 负责前端 + 集成验证。**
+
+**新增数据（Codex，`scripts/build_*_conjugations.py` 生成）：**
+- `data/german-conjugations.js`（`GERMAN_CONJUGATION_DATA`，300 动词，按 wordfreq 排序）：Indikativ/Konjunktiv/Imperativ 全时态 + Partizip/Infinitiv。**规则生成 + 人工不规则表（对照 Reverso/Wiktionary 校验）**。
+- `data/english-conjugations.js`（`ENGLISH_CONJUGATION_DATA`，500 动词）：12 个 indicative aspect + conditional + imperative + non-finite。由 `verbecc`/`mlconjug3` 生成。
+- 两者 schema 与 `data/conjugations-all-tenses.js` 完全一致（`{rank,infinitive,frequency,english,chinese,tenses:{<key>:{type,group_label,tense_label,forms}}}`）。
+- 校验：58/58 人工抽查变位正确（含强变化动词 nehmen/essen/bitten… 的 Präteritum/Partizip II）、0 schema 缺陷。
+
+**前端改造（`conjugation-app.js`）：**
+- 从「硬编码意大利语」重构为 **按语言 `config` 驱动**（`{lang, getData(), personOrder, personLabel, moods:[{key,label,match}], timeOf(meta), storageKey, backTarget, localeSort}`）；`ITALIAN_CONFIG` 为默认，意大利语行为字节级不变。
+- 新增 `ConjugationPractice.openFor(lang)`：切换 config + 重建数据/时态矩阵/课次，复用**同一套** `conjugationSetupScreen`/`conjugationScreen`（与 grammar book 相同的「共享屏」模式）。每语言独立 lesson 进度 key（`dimenticato_conjugation_lessons` / `…_de` / `…_en`）。
+- `GERMAN_CONFIG.timeOf` 把 Konjunktiv I/II 与 Imperativ 归入「现在」列；`ENGLISH_CONFIG.timeOf` 处理 Conditional 体（perfect→过去，其余→现在）+ Imperative，避免落入「其他时态」。
+- 数据缺失时显示「数据未加载」而非崩溃。
+
+**其他文件：**
+- `index.html`：德/英 Grammar hub 各加「动词变位」卡片（`data-module="conjugation"`）；加载两个新数据脚本（在意大利语变位数据之后、`app.js` 之前）。
+- `german-app.js`：新增 `bindConjugationTriggers()` + `_openConjugation(lang)`（仿 `_openGrammarBook`）。
+- `lib/navigation.js`：`getSharedScreenBackTarget` 让德/英语境下 `conjugationSetupScreen`→`${lang}GrammarScreen`。
+- README / Help：补充 verbecc / mlconjug3 / 德语规则生成的署名。
+
+**已落地：** 这一项部分实现了上一轮遗留的「跨语言 hub 对齐」——德/英 Grammar 现与意大利语一样含动词变位（动词搭配仍为意大利语专属）。
+
 ---
 
 ## 16. 快速索引（超简版）
@@ -1651,7 +1675,8 @@
 - **改主学习流程** → `app.js`
 - **改词本编辑 / SM-2 / 增强浏览** → `app-enhanced.js`
 - **改社区词本** → `community-wordbooks.js` + `supabase-config.js`
-- **改动词变位** → `conjugation-app.js`
+- **改动词变位（三语共用引擎）** → `conjugation-app.js`（`ITALIAN/GERMAN/ENGLISH_CONFIG` + `openFor(lang)`，共享 `conjugationSetupScreen`/`conjugationScreen`）
+- **改德/英变位数据** → `data/german-conjugations.js` / `data/english-conjugations.js` + `scripts/build_german_conjugations.py` / `scripts/build_english_conjugations.py`
 - **改语法书** → `grammar-book.js` + `data/grammar-data.js`
 - **改动词搭配** → `verb-collocations.js` + `data/verb-collocations-data.js`
 - **改动词搭配练习** → `verb-collocations-practice.js` + `data/verb-collocations-data.js`

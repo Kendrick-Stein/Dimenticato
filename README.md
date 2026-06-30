@@ -249,8 +249,7 @@ python3 scripts/build_english_grammar.py
 
 ## 📝 说明
 
-- German / English 的 Grammar 当前只保留 Grammar Book
-- 德语动词变位、英语动词时态/词形练习如需补齐，建议后续单独建立数据抓取与生成 pipeline
+- German / English 的 Grammar 现已包含 Grammar Book 与 **动词变位练习**（综合时态）
 - 社区词库目前未按语言隔离，而是共享同一个词库池
 
 ---
@@ -262,6 +261,8 @@ python3 scripts/build_english_grammar.py
 | English 释义（部分） | [ECDICT](https://github.com/skywind3000/ECDICT) | 开源聚合英汉词典数据 |
 | German 词汇（部分） | [HanDeDict](https://github.com/gugray/HanDeDict) | **CC-BY-SA 3.0** |
 | English / German 词频排序 | [wordfreq](https://github.com/rspeer/wordfreq) | 开源 |
+| English 动词变位 | [verbecc](https://github.com/bretttolbert/verbecc) / [mlconjug3](https://github.com/Ars-Linguistica/mlconjug3) | 开源 |
+| German 动词变位 | 规则生成，不规则变位对照 Reverso / Wiktionary 校验 | 自建 |
 | 图表 / Markdown | [Chart.js](https://www.chartjs.org/) · [marked.js](https://marked.js.org/) | 开源 |
 
 每条词汇的 `source` 字段记录了其具体来源。
