@@ -74,6 +74,7 @@
       this.bindGermanNavigation();
       this.bindGermanPractice();
       this.bindGrammarBookTriggers();
+      this.bindConjugationTriggers();
       this.bindLanguageSettingsAndProgress();
       this.bindPlaceholderTriggers();
       this.applyInitialLanguage();
@@ -428,6 +429,41 @@
       }
 
       this.showScreen('grammarBookScreen');
+    },
+
+    // Conjugation practice (动词变位) — mirrors bindGrammarBookTriggers. The
+    // German/English Grammar hubs each carry a 动词变位 card; clicking it opens
+    // the SHARED conjugation setup screen via ConjugationPractice.openFor(lang),
+    // which swaps to that language's config + per-language lesson storage.
+    bindConjugationTriggers() {
+      const germanConjBtn = document.querySelector(
+        '#germanGrammarScreen .german-placeholder-trigger[data-module="conjugation"]'
+      );
+      if (germanConjBtn) {
+        // Drop the placeholder class so the generic placeholder handler won't fire.
+        germanConjBtn.classList.remove('german-placeholder-trigger');
+        germanConjBtn.addEventListener('click', () => this._openConjugation('german'));
+      }
+
+      const englishConjBtn = document.querySelector(
+        '#englishGrammarScreen .english-placeholder-trigger[data-module="conjugation"]'
+      );
+      if (englishConjBtn) {
+        englishConjBtn.classList.remove('english-placeholder-trigger');
+        englishConjBtn.addEventListener('click', () => this._openConjugation('english'));
+      }
+    },
+
+    // Open the shared conjugation flow for the given language. Degrades
+    // gracefully when ConjugationPractice (or the language's data) is absent.
+    _openConjugation(lang) {
+      if (typeof ConjugationPractice !== 'undefined' && typeof ConjugationPractice.openFor === 'function') {
+        ConjugationPractice.openFor(lang);
+        return;
+      }
+      // Defensive fallback: just show the shared setup screen (it will render its
+      // own "数据未加载" notice if no data is available).
+      this.showScreen('conjugationSetupScreen');
     },
 
     bindGermanPractice() {
