@@ -89,11 +89,15 @@
       if (t.includes('futur')) return 'future';
       if (
         t.includes('präteritum') || t.includes('prateritum') ||
-        t.includes('perfekt') ||           // Perfekt + Plusquamperfekt
+        t.includes('perfekt') ||           // Perfekt + Plusquamperfekt + Konjunktiv * Perfekt
         t.includes('past')
       ) {
         return 'past';
       }
+      // Bare Konjunktiv I / Konjunktiv II (würde-Form) and the Imperativ carry no
+      // present/past/future keyword; anchor them in the "present" column of their
+      // own mood row so the matrix shows them in place rather than in 其他时态.
+      if (t.includes('konjunktiv') || t.includes('imperativ')) return 'present';
       return 'other';
     },
     storageKey: 'dimenticato_conjugation_lessons_de',
@@ -125,6 +129,12 @@
     ],
     timeOf(meta) {
       const t = lc(meta.tense);
+      const g = lc(meta.group);
+      // Conditional aspect labels (Present/Continuous/Perfect/Perfect continuous)
+      // and the Imperative lack a tense prefix; map them onto their own mood row:
+      // perfect aspects → 过去 column, the rest → 现在 column.
+      if (g.includes('conditional')) return t.includes('perfect') ? 'past' : 'present';
+      if (g.includes('imperative')) return 'present';
       if (t.includes('present')) return 'present';
       if (t.includes('future')) return 'future';
       if (t.includes('past')) return 'past';
