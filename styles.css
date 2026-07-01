@@ -8,50 +8,37 @@
    ============================================================ */
 
 :root {
-  /* ---- Accent ramp (sage green) ---- */
-  --accent-primary: #556b60;          /* rgb(85, 107, 96) */
-  --accent-primary-rgb: 85, 107, 96;
-  --accent-secondary: #7c8f84;        /* rgb(124, 143, 132) */
-  --accent-secondary-rgb: 124, 143, 132;
-  --accent-danger: #8e5f58;           /* rgb(142, 95, 88) */
-  --accent-danger-rgb: 142, 95, 88;
-  --accent-warning: #8b7a63;          /* rgb(139, 122, 99) */
-  --accent-warning-rgb: 139, 122, 99;
-  /* alias kept for legacy grammar-book rules */
-  --accent-color: var(--accent-primary);
+  /* ---- Redesign canonical tokens — warm neutral base + single sage accent ---- */
+  --bg: #f3f1ea; --surface: #faf8f3; --card: #ffffff; --card-2: #f2efe7;
+  --border: #e6e2d8; --border-strong: #d5d0c3;
+  --ink: #211f1b; --ink-2: #544f46; --muted: #8f8a7d;
+  --accent: #4a7a5e; --accent-soft: #e7efe9;
+  --good: #4a7a5e; --good-soft: #e7efe9;
+  --bad: #b0564b; --bad-soft: #f6e8e5;
 
-  /* ---- Surfaces / elevation ---- */
-  --bg-primary: #f3efe7;
-  --bg-secondary: #faf7f1;
-  --bg-card: rgba(255, 252, 247, 0.86);
-  --surface-strong: rgba(255, 255, 255, 0.72);
-  --surface-raised: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.38));
-  --surface-input: rgba(255, 255, 255, 0.58);
-  --surface-glass: rgba(250, 247, 241, 0.78);
-  --surface-popover: rgba(250, 247, 241, 0.96);
+  /* ---- Legacy token names → aliases of canonical (whole legacy stylesheet
+         inherits the new palette; gradients/glass flattened to solid). ---- */
+  --accent-primary: var(--accent);   --accent-primary-rgb: 74, 122, 94;
+  --accent-secondary: var(--accent); --accent-secondary-rgb: 74, 122, 94;
+  --accent-danger: var(--bad);       --accent-danger-rgb: 176, 86, 75;
+  --accent-warning: var(--ink-2);    --accent-warning-rgb: 84, 79, 70;
+  --accent-color: var(--accent);
+
+  --bg-primary: var(--bg); --bg-secondary: var(--surface); --bg-card: var(--card);
+  --surface-strong: var(--card); --surface-raised: var(--card); --surface-input: var(--card);
+  --surface-glass: var(--surface); --surface-popover: var(--surface);
   --surface-overlay: rgba(19, 24, 22, 0.26);
 
-  /* ---- Text ---- */
-  --text-primary: #1d2420;
-  --text-secondary: #66706a;
-  --text-muted: #98a09a;
-  --text-on-accent: #f6f4ef;
+  --text-primary: var(--ink); --text-secondary: var(--ink-2); --text-muted: var(--muted);
+  --text-on-accent: #ffffff;
 
-  /* ---- Borders ---- */
-  --border-color: rgba(61, 74, 66, 0.12);
-  --border-strong: rgba(61, 74, 66, 0.2);
+  --border-color: var(--border);
 
-  /* ---- Soft accent tints (used for states / chips / hovers) ---- */
-  --accent-soft: rgba(var(--accent-primary-rgb), 0.08);
-  --accent-soft-strong: rgba(var(--accent-primary-rgb), 0.12);
-  --accent-border: rgba(var(--accent-primary-rgb), 0.2);
-  --accent-light: rgba(var(--accent-primary-rgb), 0.1);   /* grammar alias */
-  --success-soft: rgba(var(--accent-secondary-rgb), 0.12);
-  --success-border: rgba(var(--accent-secondary-rgb), 0.28);
-  --danger-soft: rgba(var(--accent-danger-rgb), 0.12);
-  --danger-border: rgba(var(--accent-danger-rgb), 0.25);
-  --warning-soft: rgba(var(--accent-warning-rgb), 0.12);
-  --hover-bg: var(--accent-soft);
+  --accent-soft-strong: var(--accent-soft); --accent-border: var(--border-strong);
+  --accent-light: var(--accent-soft); --hover-bg: var(--card-2);
+  --success-soft: var(--good-soft); --success-border: var(--good);
+  --danger-soft: var(--bad-soft); --danger-border: var(--bad);
+  --warning-soft: var(--card-2);
 
   /* ---- Focus ring (accessibility) ---- */
   --focus-ring: 0 0 0 3px rgba(var(--accent-primary-rgb), 0.32);
@@ -65,10 +52,10 @@
   --radius-xl: 28px;
   --radius-pill: 999px;
 
-  /* ---- Shadow scale ---- */
-  --shadow-sm: 0 4px 14px rgba(34, 40, 36, 0.05);
-  --shadow: 0 10px 30px rgba(34, 40, 36, 0.07);
-  --shadow-lg: 0 24px 60px rgba(34, 40, 36, 0.10);
+  /* ---- Shadow scale (flat rest, soft hover — no heavy elevation) ---- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 14px 30px -18px rgba(0, 0, 0, 0.2);
 
   /* ---- Spacing scale ---- */
   --space-1: 0.25rem;
@@ -84,94 +71,34 @@
   --transition: 0.2s ease;
   --transition-slow: 0.3s ease;
 
-  /* ---- Per-language background glow tint (overridden per theme) ---- */
-  --bg-glow: rgba(var(--accent-secondary-rgb), 0.08);
+  --bg-glow: transparent;
 }
 
 [data-theme="dark"] {
-  --bg-primary: #111614;
-  --bg-secondary: #171d1a;
-  --bg-card: rgba(26, 33, 29, 0.9);
-  --surface-strong: rgba(255, 255, 255, 0.04);
-  --surface-raised: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
-  --surface-input: rgba(255, 255, 255, 0.05);
-  --surface-glass: rgba(23, 29, 26, 0.78);
-  --surface-popover: rgba(23, 29, 26, 0.96);
+  /* Canonical tokens (aliases in :root resolve to these at use-time) */
+  --bg: #16150f; --surface: #1d1c16; --card: #232219; --card-2: #2b291f;
+  --border: #34322a; --border-strong: #454236;
+  --ink: #ece9df; --ink-2: #b7b3a6; --muted: #8b8578;
+  --accent: #83b191; --accent-soft: #25352c;
+  --good: #83b191; --good-soft: #25352c;
+  --bad: #d78d82; --bad-soft: #3a2925;
+
+  /* rgb triples (not derivable) + dark-specific alias values */
+  --accent-primary-rgb: 131, 177, 145;
+  --accent-secondary-rgb: 131, 177, 145;
+  --accent-danger-rgb: 215, 141, 130;
+  --accent-warning-rgb: 183, 179, 166;
+  --text-on-accent: #16150f;
   --surface-overlay: rgba(0, 0, 0, 0.5);
 
-  --text-primary: #edf1ed;
-  --text-secondary: #99a39c;
-  --text-muted: #6f7a73;
-  --text-on-accent: #111614;
-
-  --accent-primary: #b8c7bd;
-  --accent-primary-rgb: 184, 199, 189;
-  --accent-secondary: #8fa095;
-  --accent-secondary-rgb: 143, 160, 149;
-  --accent-danger: #c28f87;
-  --accent-danger-rgb: 194, 143, 135;
-  --accent-warning: #c7b59a;
-  --accent-warning-rgb: 199, 181, 154;
-
-  --border-color: rgba(208, 220, 211, 0.12);
-  --border-strong: rgba(208, 220, 211, 0.2);
-
-  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.22);
-  --shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
-  --shadow-lg: 0 28px 68px rgba(0, 0, 0, 0.36);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 14px 30px -18px rgba(0, 0, 0, 0.6);
 }
 
-/* ---- Language accents: light ---- */
-body[data-language="german"] {
-  --accent-primary: #4f667e;
-  --accent-primary-rgb: 79, 102, 126;
-  --accent-secondary: #748aa1;
-  --accent-secondary-rgb: 116, 138, 161;
-  --accent-danger: #8c6a63;
-  --accent-danger-rgb: 140, 106, 99;
-  --accent-warning: #8a7a67;
-  --accent-warning-rgb: 138, 122, 103;
-}
-
-body[data-language="english"] {
-  --accent-primary: #7b4351;
-  --accent-primary-rgb: 123, 67, 81;
-  --accent-secondary: #9b6572;
-  --accent-secondary-rgb: 155, 101, 114;
-  --accent-danger: #8b5d62;
-  --accent-danger-rgb: 139, 93, 98;
-  --accent-warning: #9a7a69;
-  --accent-warning-rgb: 154, 122, 105;
-}
-
-/* ---- Language accents: dark ---- */
-body[data-language="german"][data-theme="dark"] {
-  --accent-primary: #9eb4cb;
-  --accent-primary-rgb: 158, 180, 203;
-  --accent-secondary: #7d94ac;
-  --accent-secondary-rgb: 125, 148, 172;
-  --accent-danger: #c29b93;
-  --accent-danger-rgb: 194, 155, 147;
-  --accent-warning: #c6b29b;
-  --accent-warning-rgb: 198, 178, 155;
-}
-
-body[data-language="english"][data-theme="dark"] {
-  --accent-primary: #d4a4af;
-  --accent-primary-rgb: 212, 164, 175;
-  --accent-secondary: #b98591;
-  --accent-secondary-rgb: 185, 133, 145;
-  --accent-danger: #c19196;
-  --accent-danger-rgb: 193, 145, 150;
-  --accent-warning: #c7a490;
-  --accent-warning-rgb: 199, 164, 144;
-}
-
-/* ---- Per-language background glow (derives from accent token) ---- */
-body[data-language="german"],
-body[data-language="english"] {
-  --bg-glow: rgba(var(--accent-primary-rgb), 0.09);
-}
+/* ---- Per-language color themes REMOVED — the redesign uses a single sage
+       accent for all languages. The data-language attribute is still set on
+       <body> (other logic may read it); it just no longer changes hue. ---- */
 
 * {
   margin: 0;
@@ -180,12 +107,29 @@ body[data-language="english"] {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Manrope', 'Noto Sans SC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.65;
   min-height: 100vh;
   transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+/* Material Symbols Rounded — icon ligature helper */
+.msr {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ==================== 工具类 ==================== */
@@ -3491,11 +3435,8 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
 /* ==================== Premium minimalist refresh ==================== */
 
 body {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  background:
-    radial-gradient(circle at top left, var(--bg-glow), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.5), transparent 22%),
-    var(--bg-primary);
+  font-family: 'Manrope', 'Noto Sans SC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: var(--bg-primary);
   letter-spacing: -0.01em;
 }
 

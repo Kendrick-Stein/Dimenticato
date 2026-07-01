@@ -272,7 +272,7 @@ const Storage = {
       
       const theme = localStorage.getItem(this.KEYS.THEME);
       if (theme) {
-        document.body.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('data-theme', theme);
       }
       
       const wordbooks = localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS);
@@ -305,10 +305,11 @@ const Storage = {
   },
   
   toggleTheme() {
-    const currentTheme = document.body.getAttribute('data-theme');
+    const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.body.setAttribute('data-theme', newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem(this.KEYS.THEME, newTheme);
+    if (typeof syncThemeToggleUI === 'function') syncThemeToggleUI(newTheme);
   },
   
   // 导出所有学习数据
@@ -465,7 +466,7 @@ const Storage = {
       }
       
       // 应用主题
-      document.body.setAttribute('data-theme', data.theme);
+      document.documentElement.setAttribute('data-theme', data.theme);
       
       // 重新加载数据
       this.load();
