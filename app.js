@@ -793,12 +793,21 @@ function updateProgressScreenStats() {
   if (progressEl) progressEl.textContent = progress + '%';
 }
 
+const SECTION_BY_TOPNAV = {
+  welcomeScreen: 'home',
+  vocabularyScreen: 'vocab',
+  grammarScreen: 'grammar',
+  progressScreen: 'progress',
+  settingsScreen: 'settings'
+};
+
 function updateHeaderNavigation(screenId) {
   const meta = ScreenMeta[screenId] || ScreenMeta.welcomeScreen;
   AppState.activeModule = meta.module;
 
-  document.querySelectorAll('.top-nav-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.target === meta.topNav);
+  const section = SECTION_BY_TOPNAV[meta.topNav] || 'home';
+  document.querySelectorAll('.nav-item[data-section]').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.section === section);
   });
 
   const breadcrumb = document.getElementById('breadcrumb');
@@ -2416,10 +2425,11 @@ const LanguagePortal = {
     // 2. 持久化
     localStorage.setItem(Storage.KEYS.LANGUAGE, lang);
 
-    // 3. 更新弹出层 active 样式
+    // 3. 更新弹出层 active 样式 + 侧栏语言胶囊
     document.querySelectorAll('.language-switcher-option').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.language === lang);
     });
+    if (typeof syncLangPills === 'function') syncLangPills(lang);
 
     // 4. 关闭弹出层
     const popover = document.getElementById('languageSwitcherPopover');
@@ -2446,20 +2456,111 @@ const LanguagePortal = {
     } else {
       document.body.setAttribute('data-language', savedLang);
     }
-    // 同步弹出层 active 状态
+    // 同步弹出层 active 状态 + 侧栏语言胶囊
     document.querySelectorAll('.language-switcher-option').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.language === savedLang);
     });
+    if (typeof syncLangPills === 'function') syncLangPills(savedLang);
   }
 };
 
 // 暴露到全局，方便外部脚本调用
 window.LanguagePortal = LanguagePortal;
 
+// ==================== 侧边栏 / 顶栏 控制 ====================
+
+function getActiveLanguage() {
+  return document.body.getAttribute('data-language') || 'italian';
+}
+
+// 更新侧栏语言胶囊的选中态
+function syncLangPills(lang) {
+  const active = lang || getActiveLanguage();
+  document.querySelectorAll('.lang-pill[data-language]').forEach(pill => {
+    pill.classList.toggle('active', pill.dataset.language === active);
+  });
+}
+
+// 更新侧栏底部“主题切换”按钮的图标 + 文案
+function syncThemeToggleUI(theme) {
+  const t = theme || document.documentElement.getAttribute('data-theme') || 'light';
+  const dark = t === 'dark';
+  const icon = document.getElementById('themeToggleIcon');
+  const label = document.getElementById('themeToggleLabel');
+  if (icon) icon.textContent = dark ? 'light_mode' : 'dark_mode';
+  if (label) label.textContent = dark ? '浅色模式' : '深色模式';
+}
+window.syncThemeToggleUI = syncThemeToggleUI;
+window.syncLangPills = syncLangPills;
+
+// 侧栏菜单：section → 各语言首页；子模块复用各语言 welcome 卡片按钮的处理器
+const NAV_HOME_SCREEN = { italian: 'welcomeScreen', german: 'germanWelcomeScreen', english: 'englishWelcomeScreen' };
+const NAV_MODULE_BTN = {
+  vocab:    { italian: 'goVocabularyBtn', german: 'goGermanVocabularyBtn', english: 'goEnglishVocabularyBtn' },
+  grammar:  { italian: 'goGrammarBtn',    german: 'goGermanGrammarBtn',    english: 'goEnglishGrammarBtn' },
+  progress: { italian: 'goProgressBtn',   german: 'goGermanProgressBtn',   english: 'goEnglishProgressBtn' },
+  settings: { italian: 'goSettingsBtn',   german: 'goGermanSettingsBtn',   english: 'goEnglishSettingsBtn' }
+};
+
+function navigateSection(section) {
+  const lang = getActiveLanguage();
+  if (section === 'home') {
+    showScreen(NAV_HOME_SCREEN[lang] || 'welcomeScreen');
+    return;
+  }
+  const btnId = NAV_MODULE_BTN[section] && NAV_MODULE_BTN[section][lang];
+  const btn = btnId && document.getElementById(btnId);
+  if (btn) {
+    btn.click();               // reuse the exact per-language handler
+  } else {
+    // fallback: direct navigation to the Italian screen for this section
+    const targets = { vocab: 'vocabularyScreen', grammar: 'grammarScreen', progress: 'progressScreen', settings: 'settingsScreen' };
+    if (targets[section]) showScreen(targets[section]);
+  }
+}
+
+function closeDrawer() { document.body.classList.remove('drawer-open'); }
+
+function bindShellControls() {
+  // 品牌 → 当前语言首页
+  document.getElementById('brandHomeBtn')?.addEventListener('click', () => {
+    navigateSection('home');
+    closeDrawer();
+  });
+
+  // 侧栏菜单项（语言感知）
+  document.querySelectorAll('.nav-item[data-section]').forEach(item => {
+    item.addEventListener('click', () => {
+      navigateSection(item.dataset.section);
+      closeDrawer();
+    });
+  });
+
+  // 语言胶囊 → 切换语言
+  document.querySelectorAll('.lang-pill[data-language]').forEach(pill => {
+    pill.addEventListener('click', () => {
+      LanguagePortal.selectLanguage(pill.dataset.language);
+      syncLangPills(pill.dataset.language);
+      closeDrawer();
+    });
+  });
+
+  // 窄屏抽屉开关
+  document.getElementById('drawerToggle')?.addEventListener('click', () => {
+    document.body.classList.toggle('drawer-open');
+  });
+  document.getElementById('drawerScrim')?.addEventListener('click', closeDrawer);
+
+  // 初始同步
+  syncLangPills();
+  syncThemeToggleUI();
+}
+
 // ==================== 初始化 ====================
 
 document.addEventListener('DOMContentLoaded', () => {
   bindEvents();
+  bindShellControls();
   loadVocabulary();
   setPracticeContext('vocab');
   updateHeaderNavigation('welcomeScreen');
@@ -2467,6 +2568,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 初始化语言门户（恢复颜色主题 + 绑定切换事件）
   LanguagePortal.init();
+  syncThemeToggleUI();
   
   // 渲染自定义单词本卡片
   WordbookManager.renderWordbookCards();

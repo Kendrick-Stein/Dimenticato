@@ -55,34 +55,55 @@
   <!-- 主容器 -->
   <div id="app" class="app hidden">
     
-    <!-- 顶部导航栏 -->
-    <header class="header">
-      <div class="brand-lockup">
-        <span class="brand-mark"><svg class="icon"><use href="#icon-brand"></use></svg></span>
-        <div>
-          <p class="eyebrow">Dimenticato</p>
-          <h1>背单词</h1>
+    <!-- ==================== 侧边栏 ==================== -->
+    <aside class="sidebar" id="appSidebar">
+      <button class="brand" id="brandHomeBtn" title="Dimenticato">
+        <span class="brand-mark">D</span>
+        <span class="brand-copy">
+          <span class="brand-name">Dimenticato</span>
+          <span class="brand-cn">背单词</span>
+        </span>
+      </button>
+
+      <div class="side-label">Language</div>
+      <div class="lang-pills" id="langPills">
+        <button class="lang-pill active" data-language="italian">IT</button>
+        <button class="lang-pill" data-language="german">DE</button>
+        <button class="lang-pill" data-language="english">EN</button>
+      </div>
+
+      <div class="side-label">Menu</div>
+      <nav class="nav" id="sidebarNav">
+        <button class="nav-item active" data-section="home" data-target="welcomeScreen"><span class="msr">home</span>Home</button>
+        <button class="nav-item" data-section="vocab" data-target="vocabularyScreen"><span class="msr">translate</span>Vocabulary</button>
+        <button class="nav-item" data-section="grammar" data-target="grammarScreen"><span class="msr">menu_book</span>Grammar</button>
+        <button class="nav-item" data-section="progress" data-target="progressScreen"><span class="msr">monitoring</span>Progress</button>
+        <button class="nav-item" data-section="settings" data-target="settingsScreen"><span class="msr">tune</span>Settings &amp; Data</button>
+      </nav>
+
+      <div class="side-spacer"></div>
+      <div class="side-footer">
+        <button class="nav-item" id="themeBtn"><span class="msr" id="themeToggleIcon">dark_mode</span><span id="themeToggleLabel">深色模式</span></button>
+        <button class="nav-item" id="helpBtn"><span class="msr">help</span>使用说明</button>
+      </div>
+    </aside>
+
+    <!-- ==================== 主列（顶栏 + 内容） ==================== -->
+    <div class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <button class="hamburger" id="drawerToggle" type="button" aria-label="菜单"><span class="msr">menu</span></button>
+          <div class="breadcrumb" id="breadcrumb"></div>
+        </div>
+        <div class="stat-pills">
+          <span class="stat-pill">词汇量 <b id="totalWords">0</b></span>
+          <span class="stat-pill accent">已掌握 <b id="masteredWords">0</b></span>
+          <span class="stat-pill">进度 <b id="progressPercent">0%</b></span>
         </div>
       </div>
-      <div class="header-center">
-        <nav class="top-nav" id="topNav">
-          <button class="top-nav-btn active" data-target="welcomeScreen">Home</button>
-          <button class="top-nav-btn" data-target="vocabularyScreen">Vocabulary</button>
-          <button class="top-nav-btn" data-target="grammarScreen">Grammar</button>
-          <button class="top-nav-btn" data-target="progressScreen">Progress</button>
-          <button class="top-nav-btn" data-target="settingsScreen">Settings &amp; Data</button>
-        </nav>
-        <div class="breadcrumb" id="breadcrumb"></div>
-      </div>
-      <div class="header-stats">
-        <span class="stat"><svg class="icon"><use href="#icon-library"></use></svg><span>词汇量 <strong id="totalWords">0</strong></span></span>
-        <span class="stat"><svg class="icon"><use href="#icon-check-circle"></use></svg><span>已掌握 <strong id="masteredWords">0</strong></span></span>
-        <span class="stat"><svg class="icon"><use href="#icon-chart"></use></svg><span>进度 <strong id="progressPercent">0%</strong></span></span>
-      </div>
-    </header>
 
-    <!-- 主内容区 -->
-    <main class="main">
+      <!-- 主内容区 -->
+      <main class="content">
       <!-- 欢迎页面 -->
       <section id="welcomeScreen" class="screen active">
         <div class="welcome-card">
@@ -1436,64 +1457,26 @@
 
       <div id="cognatePracticeContainer" class="practice-container hidden"></div>
 
-    </main>
+      </main>
+    </div><!-- /.main -->
 
-    <!-- 左侧工具栏 -->
-    <aside class="sidebar">
-      <div class="sidebar-language-switcher">
-        <button class="sidebar-btn" id="languageSwitchBtn" title="切换学习语言">
-          <span class="sidebar-icon"><svg class="icon"><use href="#icon-brand"></use></svg></span>
-          <span class="sidebar-label">语言</span>
-        </button>
-        <div class="language-switcher-popover hidden" id="languageSwitcherPopover">
-          <button class="language-switcher-option active" data-language="italian">
-            <span class="language-switcher-flag">🇮🇹</span>
-            <span class="language-switcher-copy">
-              <strong>Italian</strong>
-              <span>词汇、语法、进度、设置</span>
-            </span>
-          </button>
-          <button class="language-switcher-option" data-language="german">
-            <span class="language-switcher-flag">🇩🇪</span>
-            <span class="language-switcher-copy">
-              <strong>German</strong>
-              <span>词汇、语法、进度、设置</span>
-            </span>
-          </button>
-          <button class="language-switcher-option" data-language="english">
-            <span class="language-switcher-flag">🇬🇧</span>
-            <span class="language-switcher-copy">
-              <strong>English</strong>
-              <span>词汇、语法、进度、设置</span>
-            </span>
-          </button>
-        </div>
+    <!-- 抽屉遮罩（窄屏侧栏） -->
+    <div class="scrim" id="drawerScrim"></div>
+
+    <!-- 旧工具栏：保留隐藏以维持导出/导入/重置/统计/语言弹层的事件绑定，
+         可见入口已迁移到 Settings 页与侧栏语言胶囊。 -->
+    <div class="legacy-actions hidden" aria-hidden="true">
+      <button id="languageSwitchBtn" type="button">语言</button>
+      <div class="language-switcher-popover hidden" id="languageSwitcherPopover">
+        <button class="language-switcher-option active" data-language="italian">Italian</button>
+        <button class="language-switcher-option" data-language="german">German</button>
+        <button class="language-switcher-option" data-language="english">English</button>
       </div>
-      <button class="sidebar-btn" id="exportDataBtn" title="导出数据">
-        <span class="sidebar-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
-        <span class="sidebar-label">导出数据</span>
-      </button>
-      <button class="sidebar-btn" id="importDataBtn" title="导入数据">
-        <span class="sidebar-icon"><svg class="icon"><use href="#icon-download"></use></svg></span>
-        <span class="sidebar-label">导入数据</span>
-      </button>
-      <button class="sidebar-btn" id="resetBtn" title="重置进度">
-        <span class="sidebar-icon"><svg class="icon"><use href="#icon-reset"></use></svg></span>
-        <span class="sidebar-label">重置进度</span>
-      </button>
-      <button class="sidebar-btn" id="statsBtn" title="查看统计">
-        <span class="sidebar-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
-        <span class="sidebar-label">查看统计</span>
-      </button>
-      <button class="sidebar-btn" id="themeBtn" title="切换主题">
-        <span class="sidebar-icon"><svg class="icon"><use href="#icon-theme"></use></svg></span>
-        <span class="sidebar-label">切换主题</span>
-      </button>
-      <button class="sidebar-btn" id="helpBtn" title="使用说明">
-        <span class="sidebar-icon"><svg class="icon"><use href="#icon-help"></use></svg></span>
-        <span class="sidebar-label">使用说明</span>
-      </button>
-    </aside>
+      <button id="exportDataBtn" type="button">导出数据</button>
+      <button id="importDataBtn" type="button">导入数据</button>
+      <button id="resetBtn" type="button">重置进度</button>
+      <button id="statsBtn" type="button">查看统计</button>
+    </div>
 
     <button class="mobile-floating-back hidden" id="mobileFloatingBackBtn" type="button" aria-label="返回上一级">
       <svg class="icon"><use href="#icon-book-open"></use></svg>
