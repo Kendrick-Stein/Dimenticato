@@ -1186,8 +1186,9 @@ const Browse = {
   start() {
     AppState.currentMode = 'browse';
     showScreen('browseScreen');
+    this.syncFilterChips();
     this.render();
-    
+
     // 清空搜索框
     document.getElementById('searchInput').value = '';
   },
@@ -1219,28 +1220,22 @@ const Browse = {
       return;
     }
     
-    container.innerHTML = words.map(word => {
+    container.innerHTML = '<div class="word-card">' + words.map(word => {
       const isMastered = AppState.masteredWords.has(word.italian);
-      const rankText = word.rank < 999999 ? `#${word.rank}` : '无排名';
 
       return `
-        <div class="word-item ${isMastered ? 'mastered' : ''}" data-italian="${escapeHtml(word.italian)}">
-          <div class="word-item-left">
-            <div class="word-italian">${renderIcon('icon-volume')} ${escapeHtml(word.italian)}</div>
-            <div class="word-english">${escapeHtml(word.english)}</div>
-            ${word.chinese ? `<div class="word-chinese">${escapeHtml(word.chinese)}</div>` : ''}
-            ${word.notes ? `<div class="word-notes">${escapeHtml(word.notes)}</div>` : ''}
-          </div>
-          <div class="word-item-right">
-            <span class="word-rank">${rankText}</span>
-            ${isMastered ? '<span class="mastered-badge">已掌握</span>' : ''}
-          </div>
+        <div class="word-line" data-italian="${escapeHtml(word.italian)}">
+          <span class="wl-word">${escapeHtml(word.italian)}</span>
+          <span class="wl-gloss">${escapeHtml(word.english)}${word.notes ? `<span class="wl-note">${escapeHtml(word.notes)}</span>` : ''}</span>
+          <span class="wl-cn">${word.chinese ? escapeHtml(word.chinese) : ''}</span>
+          <span class="wl-status"><span class="dot${isMastered ? ' good' : ''}"></span>${isMastered ? '已掌握' : '学习中'}</span>
+          <button class="wl-speaker" title="朗读"><span class="msr">volume_up</span></button>
         </div>
       `;
-    }).join('');
-    
+    }).join('') + '</div>';
+
     // 为每个单词项添加点击朗读功能
-    container.querySelectorAll('.word-item').forEach(item => {
+    container.querySelectorAll('.word-line').forEach(item => {
       item.style.cursor = 'pointer';
       item.addEventListener('click', () => {
         const italian = item.dataset.italian;
@@ -1250,22 +1245,25 @@ const Browse = {
       });
     });
   },
-  
+
+  setFilter(filter) {
+    if (!['all', 'mastered', 'unmastered'].includes(filter)) return;
+    this.currentFilter = filter;
+    this.syncFilterChips();
+    const searchTerm = document.getElementById('searchInput').value;
+    this.render(searchTerm);
+  },
+
+  syncFilterChips() {
+    document.querySelectorAll('#browseFilterChips .chip').forEach(chip => {
+      chip.classList.toggle('active', chip.dataset.filter === this.currentFilter);
+    });
+  },
+
   toggleFilter() {
     const filters = ['all', 'mastered', 'unmastered'];
     const currentIndex = filters.indexOf(this.currentFilter);
-    this.currentFilter = filters[(currentIndex + 1) % filters.length];
-    
-    const filterText = {
-      'all': '全部',
-      'mastered': '已掌握',
-      'unmastered': '未掌握'
-    };
-    
-    document.getElementById('filterText').textContent = filterText[this.currentFilter];
-    
-    const searchTerm = document.getElementById('searchInput').value;
-    this.render(searchTerm);
+    this.setFilter(filters[(currentIndex + 1) % filters.length]);
   }
 };
 
@@ -2140,8 +2138,10 @@ function bindEvents() {
     Browse.render(e.target.value);
   });
   
-  document.getElementById('filterBtn').addEventListener('click', () => {
-    Browse.toggleFilter();
+  document.querySelectorAll('#browseFilterChips .chip').forEach((chip) => {
+    chip.addEventListener('click', () => {
+      Browse.setFilter(chip.dataset.filter);
+    });
   });
   
   // 底部工具栏

@@ -910,56 +910,42 @@ const BrowseEnhanced = {
       return;
     }
     
-    container.innerHTML = words.map((word, index) => {
+    container.innerHTML = '<div class="word-card">' + words.map((word, index) => {
       const isMastered = AppState.masteredWords.has(word.italian);
-      const rankText = word.rank < 999999 ? `#${word.rank}` : '无排名';
       const srStatus = SpacedRepetition.getWordStatus(word);
-      
+      const statusLabel = isMastered ? '已掌握' : srStatus.label;
+      const dotGood = isMastered || srStatus.status === 'mastered';
+
       // 判断是否是自定义单词本
       const isCustomWordbook = AppState.selectedSourceType === 'custom';
-      
+
       return `
-        <div class="word-item ${isMastered ? 'mastered' : ''}" data-word-index="${index}" data-italian="${word.italian}">
-          <div class="word-item-left">
-            <div class="editor-word-main">
-              <span class="word-italian">${renderIcon('icon-volume')} ${word.italian}</span>
-              <span class="word-english">${word.english}</span>
-            </div>
-            ${word.chinese ? `<div class="word-chinese">${word.chinese}</div>` : ''}
-            ${word.notes ? `<div class="word-notes">${word.notes}</div>` : ''}
-            <div class="word-sr-status" style="color: ${srStatus.color}; font-size: 0.85rem; margin-top: 0.3rem;">
-              ${srStatus.label}
-            </div>
-          </div>
-          <div class="word-item-right">
-            <span class="word-rank">${rankText}</span>
-            ${isMastered ? '<span class="mastered-badge">已掌握</span>' : ''}
-            <div class="word-actions">
-              ${!isCustomWordbook ? `
-                <button class="word-action-btn bookmark-btn" title="收藏到单词本">
-                  ${renderIcon('icon-pin')}
-                </button>
-              ` : `
-                <button class="word-action-btn edit-btn" title="编辑">
-                  ${renderIcon('icon-pen')}
-                </button>
-              `}
-            </div>
-          </div>
+        <div class="word-line" data-word-index="${index}" data-italian="${word.italian}">
+          <span class="wl-word">${word.italian}</span>
+          <span class="wl-gloss">${word.english}${word.notes ? `<span class="wl-note">${word.notes}</span>` : ''}</span>
+          <span class="wl-cn">${word.chinese ? word.chinese : ''}</span>
+          <span class="wl-status"><span class="dot${dotGood ? ' good' : ''}"></span>${statusLabel}</span>
+          <span class="wl-actions">
+            <button class="wl-speaker speak-btn" title="朗读"><span class="msr">volume_up</span></button>
+            ${!isCustomWordbook ? `
+              <button class="wl-speaker bookmark-btn" title="收藏到单词本"><span class="msr">bookmark_add</span></button>
+            ` : `
+              <button class="wl-speaker edit-btn" title="编辑"><span class="msr">edit</span></button>
+            `}
+          </span>
         </div>
       `;
-    }).join('');
-    
+    }).join('') + '</div>';
+
     // 绑定事件（使用事件委托）
-    container.querySelectorAll('.word-item').forEach((item, index) => {
+    container.querySelectorAll('.word-line').forEach((item, index) => {
       const word = words[index];
-      
+
       // 添加点击朗读功能
       item.style.cursor = 'pointer';
       item.addEventListener('click', (e) => {
-        // 如果点击的是按钮，不触发朗读
-        if (e.target.classList.contains('word-action-btn') || 
-            e.target.closest('.word-action-btn')) {
+        // 如果点击的是操作按钮区，不触发朗读
+        if (e.target.closest('.wl-actions')) {
           return;
         }
         const italian = item.dataset.italian;
@@ -967,6 +953,18 @@ const BrowseEnhanced = {
           italianSpeaker.speak(italian);
         }
       });
+
+      // 朗读按钮
+      const speakBtn = item.querySelector('.speak-btn');
+      if (speakBtn) {
+        speakBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const italian = item.dataset.italian;
+          if (italian) {
+            italianSpeaker.speak(italian);
+          }
+        });
+      }
       
       // 收藏按钮
       const bookmarkBtn = item.querySelector('.bookmark-btn');

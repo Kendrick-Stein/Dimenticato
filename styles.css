@@ -5635,3 +5635,8 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
   .card-grid.cols-3,.card-grid.cols-2,.lang-cards,.big-stats,.progress-2col,.book-layout{grid-template-columns:1fr}
   .book-nav{position:static;max-height:none;flex-direction:row;overflow-x:auto}
 }
+
+/* ===== STREAM D ADDITIONS ===== */
+/* Browse rows: second action button + inline note under the gloss */
+.wl-actions{display:flex;align-items:center;gap:8px;justify-self:end}
+.wl-gloss .wl-note{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
