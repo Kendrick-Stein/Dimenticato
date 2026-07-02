@@ -262,13 +262,12 @@
         container.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 1rem;">还没有词本</p>';
       } else {
         container.innerHTML = wordbooks.map(wb => `
-          <div class="wordbook-card" data-language-wordbook-id="${wb.id}">
-            <button class="wordbook-card-manage-btn" data-manage-id="${wb.id}" title="管理单词本">${renderIcon('icon-settings')}</button>
+          <div class="card wordbook-card" data-language-wordbook-id="${wb.id}">
+            <button class="wordbook-card-manage-btn" data-manage-id="${wb.id}" title="管理单词本"><span class="msr">settings</span></button>
             <button class="wordbook-delete-btn" data-delete-id="${wb.id}" title="删除">×</button>
-            <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
-            <span class="wordbook-card-name">${escapeHtml(wb.name)}</span>
-            <span class="wordbook-card-count">${wb.wordCount} 词</span>
-            <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
+            <span class="card-chip"><span class="msr">bookmark</span></span>
+            <span class="card-title">${escapeHtml(wb.name)}</span>
+            <span class="card-desc">${wb.wordCount} 词 · ${new Date(wb.createdAt).toLocaleDateString()}</span>
           </div>
         `).join('');
 
