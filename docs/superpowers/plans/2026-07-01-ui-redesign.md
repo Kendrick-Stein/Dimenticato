@@ -1,6 +1,6 @@
 # Dimenticato UI Redesign — Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Reskin the existing Dimenticato static SPA (IT/DE/EN vocabulary app) to the approved warm-neutral + single-sage-accent design, consolidating the two-nav shell into one 250px sidebar + slim topbar, without changing any data, storage keys, routing, or feature behavior.
 
@@ -53,7 +53,7 @@
 
 **Files:** Modify `index.html:3-8` (head); Modify `styles.css` (top, after comment block).
 
-- [ ] **Step 1 — Add font links in `<head>`** (after the `<title>`, before `styles.css` link):
+- [x] **Step 1 — Add font links in `<head>`** (after the `<title>`, before `styles.css` link):
 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,14 +62,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
 ```
 
-- [ ] **Step 2 — Add `.msr` helper + base font stack** to `styles.css` (copy the `.msr` rule and `body` font-family/`-webkit-font-smoothing` from the mockup's `<style>`). Set `body{font-family:'Manrope','Noto Sans SC',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}` — merge into existing `body` rule, do not duplicate.
-- [ ] **Step 3 — Verify:** `SERVE`; `SHOT boot ""`; confirm text renders in Manrope and page is non-blank. Commit: `style: load Manrope/Noto SC/Material Symbols + .msr helper`.
+- [x] **Step 2 — Add `.msr` helper + base font stack** to `styles.css` (copy the `.msr` rule and `body` font-family/`-webkit-font-smoothing` from the mockup's `<style>`). Set `body{font-family:'Manrope','Noto Sans SC',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}` — merge into existing `body` rule, do not duplicate.
+- [x] **Step 3 — Verify:** `SERVE`; `SHOT boot ""`; confirm text renders in Manrope and page is non-blank. Commit: `style: load Manrope/Noto SC/Material Symbols + .msr helper`.
 
 ### Task 2: Re-value tokens (brief-canonical + legacy aliases), flatten surfaces, drop per-language themes
 
 **Files:** Modify `styles.css:10-140` (the `:root` / `[data-theme="dark"]` blocks) and the `[data-language="german"]` / `[data-language="english"]` blocks (locate via `grep -n 'data-language' styles.css`).
 
-- [ ] **Step 1 — Add brief tokens as canonical** at the top of `:root` (verbatim from the brief/mockup):
+- [x] **Step 1 — Add brief tokens as canonical** at the top of `:root` (verbatim from the brief/mockup):
 
 ```css
 :root{
@@ -82,7 +82,7 @@
 }
 ```
 
-- [ ] **Step 2 — Redefine legacy names as aliases** (so the whole legacy stylesheet adopts the new palette and loses gradients/glass). Replace the legacy values:
+- [x] **Step 2 — Redefine legacy names as aliases** (so the whole legacy stylesheet adopts the new palette and loses gradients/glass). Replace the legacy values:
 
 ```css
 :root{
@@ -108,37 +108,37 @@
 ```
 (Keep the existing radii/space/motion scale — those are fine. Where a legacy `rgba(var(--accent-*-rgb), a)` is used, it now resolves to the sage/bad rgb above.)
 
-- [ ] **Step 3 — Dark theme:** in `[data-theme="dark"]`, set the brief dark tokens verbatim, and point the same legacy aliases at them (mirror Step 2 with dark rgb: `--accent-primary-rgb:131,177,145; --accent-danger-rgb:215,141,130;`). Flatten `--surface-raised`/`--bg-card` to solid `var(--card)`.
-- [ ] **Step 4 — Neutralize per-language color themes:** in the `[data-language="german"]` and `[data-language="english"]` blocks, remove the accent/surface overrides (or set them to `var(--accent)` etc.) so all three languages render the single sage accent. Keep the `data-language` attribute mechanism itself (other logic may read it).
-- [ ] **Step 5 — Verify:** `SHOT tokens-light ""` and a dark + a german screenshot; confirm one sage accent everywhere, flat surfaces, no gradient/glass, no per-language hue. `HARNESS`. Commit: `style(tokens): brief palette canonical + legacy aliases, flatten surfaces, drop per-language hues`.
+- [x] **Step 3 — Dark theme:** in `[data-theme="dark"]`, set the brief dark tokens verbatim, and point the same legacy aliases at them (mirror Step 2 with dark rgb: `--accent-primary-rgb:131,177,145; --accent-danger-rgb:215,141,130;`). Flatten `--surface-raised`/`--bg-card` to solid `var(--card)`.
+- [x] **Step 4 — Neutralize per-language color themes:** in the `[data-language="german"]` and `[data-language="english"]` blocks, remove the accent/surface overrides (or set them to `var(--accent)` etc.) so all three languages render the single sage accent. Keep the `data-language` attribute mechanism itself (other logic may read it).
+- [x] **Step 5 — Verify:** `SHOT tokens-light ""` and a dark + a german screenshot; confirm one sage accent everywhere, flat surfaces, no gradient/glass, no per-language hue. `HARNESS`. Commit: `style(tokens): brief palette canonical + legacy aliases, flatten surfaces, drop per-language hues`.
 
 ### Task 3: Replace shell markup (header + aside → sidebar + topbar)
 
 **Files:** Modify `index.html:54-78` (delete `<header class="header">…`), `index.html` `<aside class="sidebar">…</aside>` block (`~1436-1492`, delete), insert new shell.
 
-- [ ] **Step 1 — Insert the new sidebar + topbar markup** at the top of `#app`, ported from the mockup's `<aside class="sidebar">` and `.topbar`, adapted so:
+- [x] **Step 1 — Insert the new sidebar + topbar markup** at the top of `#app`, ported from the mockup's `<aside class="sidebar">` and `.topbar`, adapted so:
   - Brand button → `onclick`/handler navigates to the language portal (reuse existing portal entry; if none, navigate to `welcomeScreen`).
   - Language pills carry `data-language="italian|german|english"` (match `LanguagePortal.selectLanguage` arg values) and get an `active` class.
   - Menu nav items carry `data-section="home|vocab|grammar|progress|settings"` and `data-target` = the corresponding screen id (`welcomeScreen`/`vocabularyScreen`/`grammarScreen`/`progressScreen`/`settingsScreen`) so existing click→`showScreen` wiring works.
   - Footer: theme toggle keeps `id="themeBtn"`; help keeps `id="helpBtn"`.
   - Topbar keeps `id="breadcrumb"` and three stat pills containing `id="totalWords"`, `id="masteredWords"`, `id="progressPercent"` (do not rename).
   - Add hamburger button (`.hamburger`, shows < 820px) + `.scrim` for the drawer.
-- [ ] **Step 2 — Preserve moved controls:** the old aside had `exportDataBtn / importDataBtn / resetBtn / statsBtn / languageSwitchBtn(+popover)`. These are also reachable from the Settings screen; confirm those Settings buttons exist and are wired (they do: `settingsExportBtn`, etc.). If any handler was bound ONLY to the aside id, re-bind it to the Settings equivalent or keep a hidden element to avoid a null-ref. Grep each removed id before deleting: `grep -n "getElementById('exportDataBtn')" app.js *.js`.
-- [ ] **Step 3 — Verify:** `SHOT shell ""`; sidebar shows text labels + Material Symbols, topbar shows breadcrumb + 3 pills. No console error (check `SERVE` log / add temporary `window.onerror`). Commit: `feat(shell): consolidate header+aside into sidebar+topbar`.
+- [x] **Step 2 — Preserve moved controls:** the old aside had `exportDataBtn / importDataBtn / resetBtn / statsBtn / languageSwitchBtn(+popover)`. These are also reachable from the Settings screen; confirm those Settings buttons exist and are wired (they do: `settingsExportBtn`, etc.). If any handler was bound ONLY to the aside id, re-bind it to the Settings equivalent or keep a hidden element to avoid a null-ref. Grep each removed id before deleting: `grep -n "getElementById('exportDataBtn')" app.js *.js`.
+- [x] **Step 3 — Verify:** `SHOT shell ""`; sidebar shows text labels + Material Symbols, topbar shows breadcrumb + 3 pills. No console error (check `SERVE` log / add temporary `window.onerror`). Commit: `feat(shell): consolidate header+aside into sidebar+topbar`.
 
 ### Task 4: Port the full mockup component CSS into `styles.css`
 
 **Files:** Modify `styles.css` (append a new clearly-commented section `/* ===== REDESIGN COMPONENT LIBRARY (from Dimenticato.dc.html) ===== */`).
 
-- [ ] **Step 1 — Copy the mockup's component CSS verbatim** for: `.shell/.sidebar/.brand/.lang-pills/.nav/.side-footer`, `.topbar/.breadcrumb/.stat-pill`, `.content/.container`, `.eyebrow/.page/.desc/.back-link`, `.card-grid/.card/.card-chip`, `.portal/.lang-card/.progress-track`, `.practice-head/.session-bar/.practice-card/.word/.speaker/.options/.option(+states)/.primary-btn`, `.spell-input/.pill-btn/.feedback`, `.browse-controls/.search-*/.chip/.word-card/.word-line`, `.conj-*`/`.tip-strip`, `.book-layout/.book-nav/.chapter-btn/.book-reader`, `.big-stat/.panel/.bar-chart/.acc-*`, `.settings-card/.data-row/.pref-row/.seg/.stepper`, and the `@media (max-width:820px)` drawer block. These use the brief token names added in Task 2, so they drop in unchanged.
-- [ ] **Step 2 — Guard against legacy collisions:** the mockup reuses generic names (`.card`, `.chip`, `.panel`, `.option`, `.search-input`). Grep each for existing definitions (`grep -n '\.card{' styles.css`). Where a legacy rule with the same selector exists and differs, prefer the redesign rule (place the library section AFTER legacy so it wins) OR namespace the legacy one. Document any collision resolved.
-- [ ] **Step 3 — Verify:** `SHOT` the hub + one card screen; cards show 16px radius, chip, hover lift. Commit: `style: import redesign component library`.
+- [x] **Step 1 — Copy the mockup's component CSS verbatim** for: `.shell/.sidebar/.brand/.lang-pills/.nav/.side-footer`, `.topbar/.breadcrumb/.stat-pill`, `.content/.container`, `.eyebrow/.page/.desc/.back-link`, `.card-grid/.card/.card-chip`, `.portal/.lang-card/.progress-track`, `.practice-head/.session-bar/.practice-card/.word/.speaker/.options/.option(+states)/.primary-btn`, `.spell-input/.pill-btn/.feedback`, `.browse-controls/.search-*/.chip/.word-card/.word-line`, `.conj-*`/`.tip-strip`, `.book-layout/.book-nav/.chapter-btn/.book-reader`, `.big-stat/.panel/.bar-chart/.acc-*`, `.settings-card/.data-row/.pref-row/.seg/.stepper`, and the `@media (max-width:820px)` drawer block. These use the brief token names added in Task 2, so they drop in unchanged.
+- [x] **Step 2 — Guard against legacy collisions:** the mockup reuses generic names (`.card`, `.chip`, `.panel`, `.option`, `.search-input`). Grep each for existing definitions (`grep -n '\.card{' styles.css`). Where a legacy rule with the same selector exists and differs, prefer the redesign rule (place the library section AFTER legacy so it wins) OR namespace the legacy one. Document any collision resolved.
+- [x] **Step 3 — Verify:** `SHOT` the hub + one card screen; cards show 16px radius, chip, hover lift. Commit: `style: import redesign component library`.
 
 ### Task 5: Re-wire JS (nav-active, theme toggle, language pills)
 
 **Files:** Modify `app.js:795-809` (`updateHeaderNavigation`), theme toggle handler (`app.js:2170` + `:308`), language pill binding (new), `LanguagePortal` (`app.js:2403-2447`).
 
-- [ ] **Step 1 — Nav active by section:** in `updateHeaderNavigation`, replace the `.top-nav-btn` loop with:
+- [x] **Step 1 — Nav active by section:** in `updateHeaderNavigation`, replace the `.top-nav-btn` loop with:
 
 ```js
 const SECTION_BY_TOPNAV = {
@@ -152,16 +152,16 @@ document.querySelectorAll('.nav-item[data-section]').forEach(btn => {
 ```
 Keep the breadcrumb block as-is (it already writes `#breadcrumb`). Style `.breadcrumb-item`/`.breadcrumb-separator` in the library to match the mockup's `--muted`/`b` treatment.
 
-- [ ] **Step 2 — Theme toggle icon/label:** ensure `#themeBtn` toggles `data-theme` on `body` (existing) and swaps the Material Symbol (`dark_mode`↔`light_mode`) + label (`深色模式`↔`浅色模式`). Reuse existing `toggleTheme` at `app.js:308`; add the icon/label swap.
-- [ ] **Step 3 — Language pills:** bind `.lang-pill[data-language]` clicks → `LanguagePortal.selectLanguage(lang)`. In `selectLanguage` (and `init`), sync `.lang-pill.active` (currently it syncs `.language-switcher-option`). Because Task 2 neutralized per-language CSS, the `body[data-language]` set here no longer changes hue — that is intended.
-- [ ] **Step 4 — Verify:** click each nav item → correct sidebar highlight + breadcrumb; toggle theme (persists across reload); switch IT/DE/EN → lands on that language's home, pill active, accent stays sage, stat pills update. `HARNESS`. Commit: `feat(nav): drive sidebar nav/theme/language from existing header system`.
+- [x] **Step 2 — Theme toggle icon/label:** ensure `#themeBtn` toggles `data-theme` on `body` (existing) and swaps the Material Symbol (`dark_mode`↔`light_mode`) + label (`深色模式`↔`浅色模式`). Reuse existing `toggleTheme` at `app.js:308`; add the icon/label swap.
+- [x] **Step 3 — Language pills:** bind `.lang-pill[data-language]` clicks → `LanguagePortal.selectLanguage(lang)`. In `selectLanguage` (and `init`), sync `.lang-pill.active` (currently it syncs `.language-switcher-option`). Because Task 2 neutralized per-language CSS, the `body[data-language]` set here no longer changes hue — that is intended.
+- [x] **Step 4 — Verify:** click each nav item → correct sidebar highlight + breadcrumb; toggle theme (persists across reload); switch IT/DE/EN → lands on that language's home, pill active, accent stays sage, stat pills update. `HARNESS`. Commit: `feat(nav): drive sidebar nav/theme/language from existing header system`.
 
 ### Task 6: Foundation acceptance gate
 
-- [ ] Run `HARNESS` (both) — pass counts unchanged.
-- [ ] `SHOT` hub + MC + spelling + browse + progress + settings + conjugation + grammar-book, light AND dark, and one DE + one EN — compare against `/tmp/dc_*.png` mockup renders; note any screen whose internals still look legacy (expected — Phase 2 polishes those).
-- [ ] `BEHAVIOR` smoke: theme persists; language persists; export → import round-trips; reset asks confirm; a full MC round + a spelling round record stats and update the topbar pills live.
-- [ ] Merge `redesign/foundation` → `redesign/ui` base branch. **Phase 2 worktrees branch from `redesign/ui`.**
+- [x] Run `HARNESS` (both) — pass counts unchanged.
+- [x] `SHOT` hub + MC + spelling + browse + progress + settings + conjugation + grammar-book, light AND dark, and one DE + one EN — compare against `/tmp/dc_*.png` mockup renders; note any screen whose internals still look legacy (expected — Phase 2 polishes those).
+- [x] `BEHAVIOR` smoke: theme persists; language persists; export → import round-trips; reset asks confirm; a full MC round + a spelling round record stats and update the topbar pills live.
+- [x] Merge `redesign/foundation` → `redesign/ui` base branch. **Phase 2 worktrees branch from `redesign/ui`.**
 
 ---
 
