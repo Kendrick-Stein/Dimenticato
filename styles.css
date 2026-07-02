@@ -5396,3 +5396,242 @@ textarea:focus-visible {
   .topbar { padding: 13px 18px; }
   #app .content { padding: 28px 18px 60px; }
 }
+
+/* ============================================================
+   REDESIGN COMPONENT LIBRARY (from Dimenticato.dc.html)
+   Ported verbatim for Phase 2 screen polish. Appended last so
+   redesign rules win over legacy ones at equal specificity.
+   Deviations from the mockup (documented per plan Task 4 Step 2):
+   - shell/sidebar/topbar/scrim rules omitted (already ported above);
+   - var(--shadow-rest) → var(--shadow), var(--shadow-hover) → var(--shadow-lg)
+     (same values; tokens were canonicalized under the legacy names);
+   - .search-input scoped under .search-wrap so the legacy browse
+     input keeps its styling until Stream D adds the new markup;
+   - .screen/.screen.active override legacy (adds fade); the
+     #grammarBookScreen/#verbCollocationsScreen display:flex rules
+     still win on specificity, as before.
+   Legacy rules intentionally superseded: .eyebrow, .hint-btn,
+   .chinese-hint (redesign look is the target for these shared names).
+   ============================================================ */
+.container{max-width:960px;margin:0 auto}
+.container.narrow{max-width:680px}
+
+/* ---- Common primitives ---- */
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.desc{color:var(--muted);font-size:14.5px;line-height:1.6;margin-top:10px;max-width:60ch}
+.back-link{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-weight:600;font-size:13px;margin-bottom:22px;transition:color .15s;background:none;border:none;cursor:pointer;padding:0}
+.back-link:hover{color:var(--ink)}
+.back-link .msr{font-size:18px}
+
+.card-grid{display:grid;gap:16px;margin-top:30px}
+.card-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.card-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:16px;
+  padding:22px;text-align:left;display:flex;flex-direction:column;gap:10px;
+  box-shadow:var(--shadow);transition:all .18s;
+}
+.card:hover{border-color:var(--border-strong);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.card-chip{
+  width:46px;height:46px;border-radius:13px;background:var(--card-2);
+  display:grid;place-items:center;color:var(--accent);
+}
+.card-chip .msr{font-size:24px}
+.card-title{font-weight:800;font-size:17px;letter-spacing:-.01em}
+.card-desc{color:var(--muted);font-size:13px;line-height:1.55}
+
+/* ---- Screens (router) ---- */
+.screen{display:none;animation:fade .18s ease}
+.screen.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+/* ---- Portal ---- */
+.portal{max-width:900px;margin:0 auto;text-align:center;padding-top:20px}
+.portal h1{font-size:44px;font-weight:800;letter-spacing:-.02em;margin-top:14px}
+.portal .desc{margin:14px auto 0}
+.lang-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px;text-align:left}
+.lang-card{
+  background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;
+  box-shadow:var(--shadow);transition:all .18s;
+}
+.lang-card:hover{border-color:var(--border-strong);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.lang-card .lc-name{font-size:22px;font-weight:800;letter-spacing:-.01em}
+.lang-card .lc-native{color:var(--muted);font-size:13px;font-weight:600;margin-top:2px}
+.progress-track{height:6px;background:var(--card-2);border-radius:99px;overflow:hidden;margin-top:20px}
+.progress-fill{height:100%;background:var(--accent);border-radius:99px}
+.lc-pct{font-size:12px;color:var(--muted);font-weight:600;margin-top:9px}
+
+/* ---- Practice (MC / Spelling / Conjugation) ---- */
+.practice-head{display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:14px}
+.practice-head .idx{color:var(--ink-2)}
+.practice-head .acc{color:var(--muted)}
+.practice-head .acc b{color:var(--accent)}
+.session-bar{height:5px;background:var(--card-2);border-radius:99px;overflow:hidden;margin:14px 0 22px}
+.session-fill{height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
+
+.practice-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:34px 30px;box-shadow:var(--shadow)}
+.word-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:10px}
+.word{font-size:40px;font-weight:800;letter-spacing:-.01em;text-align:center}
+.speaker{
+  width:38px;height:38px;border-radius:99px;border:1px solid var(--border);background:var(--card-2);
+  display:grid;place-items:center;color:var(--accent);flex:none;transition:all .15s;cursor:pointer;
+}
+.speaker:hover{border-color:var(--accent);background:var(--accent-soft)}
+.speaker .msr{font-size:20px}
+.hint-btn{display:block;margin:16px auto 0;color:var(--muted);font-weight:600;font-size:13px;text-decoration:underline;text-underline-offset:3px;background:none;border:none;cursor:pointer;padding:0;box-shadow:none;transform:none}
+.hint-btn:hover{background:none;transform:none;box-shadow:none;color:var(--ink)}
+.chinese-hint{text-align:center;color:var(--ink-2);font-size:16px;margin-top:14px;font-weight:500;font-style:normal}
+.field-label{font-size:13px;font-weight:700;color:var(--muted);margin:28px 0 12px;letter-spacing:.01em}
+
+.options{display:flex;flex-direction:column;gap:10px}
+.option{
+  width:100%;text-align:left;padding:15px 18px;border:1.5px solid var(--border);border-radius:13px;
+  background:var(--card);font-weight:600;font-size:15px;transition:all .15s;color:var(--ink);cursor:pointer;
+}
+.option:hover{border-color:var(--border-strong)}
+.option.correct{border-color:var(--good);color:var(--good);background:var(--good-soft)}
+.option.wrong{border-color:var(--bad);color:var(--bad);background:var(--bad-soft)}
+.option.faded{opacity:.45}
+
+.primary-btn{
+  width:100%;margin-top:18px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;
+  padding:15px;border-radius:13px;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:8px;
+  border:none;cursor:pointer;
+}
+.primary-btn:hover{filter:brightness(1.05)}
+.primary-btn.hidden{display:none}
+
+.spell-input,.text-input{
+  width:100%;padding:16px 18px;border:1.5px solid var(--border);border-radius:13px;background:var(--card);
+  font-family:inherit;font-size:18px;font-weight:600;color:var(--ink);transition:all .15s;
+}
+.spell-input:focus,.text-input:focus{outline:none;border-color:var(--accent)}
+.spell-input.good{border-color:var(--good);color:var(--good)}
+.spell-input.bad{border-color:var(--bad);color:var(--bad)}
+.pill-btn{
+  display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);background:var(--card-2);
+  border-radius:99px;padding:8px 16px;font-weight:600;font-size:13px;color:var(--ink-2);transition:all .15s;cursor:pointer;
+}
+.pill-btn:hover{border-color:var(--accent);color:var(--accent)}
+.pill-btn .msr{font-size:18px}
+.feedback{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;margin-top:20px}
+.feedback.ok{color:var(--good)}
+.feedback.no{color:var(--bad)}
+
+/* ---- Browse ---- */
+.browse-controls{display:flex;gap:12px;align-items:center;margin:26px 0 18px;flex-wrap:wrap}
+.search-wrap{position:relative;flex:1;min-width:220px}
+.search-wrap .msr{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:20px}
+.search-wrap .search-input{
+  width:100%;min-width:0;padding:12px 16px 12px 42px;border:1px solid var(--border);border-radius:12px;
+  background:var(--card);font-family:inherit;font-size:14px;color:var(--ink);
+}
+.search-wrap .search-input:focus{outline:none;border-color:var(--accent)}
+.chips{display:flex;gap:8px}
+.chip{
+  border:1px solid var(--border);background:var(--card);color:var(--ink-2);font-weight:600;font-size:13px;
+  padding:10px 16px;border-radius:99px;transition:all .15s;cursor:pointer;
+}
+.chip:hover{border-color:var(--border-strong)}
+.chip.active{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:700}
+
+.word-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.word-line{
+  display:grid;grid-template-columns:1.3fr 1.6fr 1.4fr auto auto;align-items:center;gap:16px;
+  padding:14px 20px;border-bottom:1px solid var(--border);transition:background .15s;
+}
+.word-line:last-child{border-bottom:none}
+.word-line:hover{background:var(--card-2)}
+.wl-word{font-weight:700}
+.wl-gloss{color:var(--ink-2);font-size:14px}
+.wl-cn{color:var(--muted);font-size:14px}
+.wl-status{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:99px;background:var(--border-strong)}
+.dot.good{background:var(--good)}
+.wl-speaker{width:32px;height:32px;border-radius:99px;border:1px solid var(--border);display:grid;place-items:center;color:var(--accent);transition:all .15s;background:none;cursor:pointer}
+.wl-speaker:hover{background:var(--accent-soft);border-color:var(--accent)}
+.wl-speaker .msr{font-size:17px}
+
+/* ---- Conjugation ---- */
+.conj-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.conj-verb{font-size:32px;font-weight:800;letter-spacing:-.01em}
+.conj-verb .en{color:var(--muted);font-size:18px;font-weight:600;margin-left:8px}
+.tense-chips{display:flex;gap:8px;flex-wrap:wrap}
+.conj-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.conj-line{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid var(--border)}
+.conj-line:last-child{border-bottom:none}
+.conj-person{color:var(--muted);font-weight:500}
+.conj-form{color:var(--ink);font-weight:700;font-size:16px}
+.tip-strip{
+  display:flex;align-items:center;gap:10px;margin-top:16px;background:var(--accent-soft);
+  border-radius:12px;padding:14px 18px;color:var(--accent);font-size:13.5px;font-weight:600;
+}
+.tip-strip .msr{font-size:20px;flex:none}
+
+/* ---- Grammar Book ---- */
+.book-layout{display:grid;grid-template-columns:250px 1fr;gap:24px;margin-top:20px}
+.book-nav{position:sticky;top:96px;align-self:start;display:flex;flex-direction:column;gap:4px;max-height:calc(100vh - 140px);overflow:auto}
+.chapter-btn{text-align:left;padding:11px 14px;border-radius:11px;color:var(--ink-2);font-weight:600;font-size:14px;transition:all .15s;background:none;border:none;cursor:pointer}
+.chapter-btn:hover{background:var(--card-2)}
+.chapter-btn.active{background:var(--accent-soft);color:var(--accent);font-weight:700}
+.book-reader{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:34px 36px;box-shadow:var(--shadow)}
+.book-reader h1{font-size:26px;font-weight:800;letter-spacing:-.02em;margin-bottom:18px}
+.book-reader p{color:var(--ink-2);font-size:15px;line-height:1.75;margin-bottom:16px}
+.book-reader h2{font-size:18px;font-weight:800;margin:26px 0 12px}
+
+/* ---- Progress ---- */
+.big-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.big-stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+.big-stat .bs-label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.big-stat .bs-value{font-size:38px;font-weight:800;letter-spacing:-.02em;margin-top:10px}
+.big-stat.accent .bs-value{color:var(--accent)}
+.progress-2col{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-top:16px}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+.panel-title{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+.bar-chart{display:flex;align-items:flex-end;gap:12px;height:160px}
+.bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;height:100%}
+.bar{width:100%;background:var(--card-2);border-radius:8px 8px 0 0;margin-top:auto;transition:height .3s}
+.bar.latest{background:var(--accent)}
+.bar-day{font-size:11px;color:var(--muted);font-weight:600}
+.acc-row{margin-bottom:18px}
+.acc-row .acc-top{display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin-bottom:7px}
+.acc-row .acc-top b{color:var(--accent)}
+.acc-track{height:7px;background:var(--card-2);border-radius:99px;overflow:hidden}
+.acc-fill{height:100%;background:var(--accent);border-radius:99px}
+.acc-total{border-top:1px solid var(--border);padding-top:14px;margin-top:22px;font-size:13px;color:var(--muted);font-weight:600;display:flex;justify-content:space-between}
+.acc-total b{color:var(--ink);font-weight:800}
+
+/* ---- Settings ---- */
+.settings-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);margin-top:20px}
+.settings-card-title{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:20px 22px 6px}
+.data-row{display:flex;align-items:center;gap:16px;padding:16px 22px;border-top:1px solid var(--border);width:100%;text-align:left;transition:background .15s;background:none;border-left:none;border-right:none;border-bottom:none;cursor:pointer}
+.settings-card-title + .data-row{border-top:none}
+.data-row:hover{background:var(--card-2)}
+.data-row .row-chip{width:40px;height:40px;border-radius:11px;background:var(--card-2);display:grid;place-items:center;color:var(--accent);flex:none}
+.data-row.danger .row-chip{color:var(--bad)}
+.data-row.danger .row-title{color:var(--bad)}
+.row-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.row-title{display:block;font-weight:700;font-size:15px}
+.row-sub{display:block;color:var(--muted);font-size:13px}
+.data-row .chev{color:var(--muted);font-size:22px}
+.pref-row{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-top:1px solid var(--border)}
+.pref-label{font-weight:600;font-size:14px}
+.segmented{display:flex;gap:6px}
+.seg{border:1px solid var(--border);background:var(--card);color:var(--ink-2);font-weight:600;font-size:13px;padding:8px 16px;border-radius:99px;transition:all .15s;cursor:pointer}
+.seg.active{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:700}
+.stepper{display:flex;align-items:center;gap:14px}
+.stepper button{width:34px;height:34px;border-radius:10px;border:1px solid var(--border);background:var(--card);display:grid;place-items:center;color:var(--ink-2);transition:all .15s;cursor:pointer}
+.stepper button:hover{border-color:var(--accent);color:var(--accent)}
+.stepper .val{font-weight:800;font-size:17px;min-width:28px;text-align:center}
+.about-body{padding:20px 22px;border-top:1px solid var(--border);color:var(--ink-2);font-size:14px;line-height:1.7}
+
+/* ---- Section list ---- */
+.sub-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:34px 0 14px}
+
+/* ---- Responsive: collapse library grids under 820px ---- */
+@media (max-width:820px){
+  .card-grid.cols-3,.card-grid.cols-2,.lang-cards,.big-stats,.progress-2col,.book-layout{grid-template-columns:1fr}
+  .book-nav{position:static;max-height:none;flex-direction:row;overflow-x:auto}
+}
