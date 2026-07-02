@@ -1748,12 +1748,11 @@ const WordbookManager = {
     }
     
     container.innerHTML = AppState.customWordbooks.map(wb => `
-      <div class="wordbook-card" data-wordbook-id="${wb.id}">
+      <div class="card wordbook-card" data-wordbook-id="${wb.id}">
         <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
-        <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
-        <span class="wordbook-card-name">${escapeHtml(wb.name)}</span>
-        <span class="wordbook-card-count">${wb.wordCount} 词</span>
-        <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
+        <span class="card-chip"><span class="msr">bookmark</span></span>
+        <span class="card-title">${escapeHtml(wb.name)}</span>
+        <span class="card-desc">${wb.wordCount} 词 · ${new Date(wb.createdAt).toLocaleDateString()}</span>
       </div>
     `).join('');
     
@@ -2374,13 +2373,12 @@ WordbookManager.renderWordbookCards = function() {
   }
   
   container.innerHTML = AppState.customWordbooks.map(wb => `
-    <div class="wordbook-card" data-wordbook-id="${wb.id}">
-      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); if(typeof WordbookEditor !== 'undefined') { WordbookEditor.openEditor(${wb.id}); } else { alert('单词本编辑功能未加载'); }" title="管理单词本">${renderIcon('icon-settings')}</button>
+    <div class="card wordbook-card" data-wordbook-id="${wb.id}">
+      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); if(typeof WordbookEditor !== 'undefined') { WordbookEditor.openEditor(${wb.id}); } else { alert('单词本编辑功能未加载'); }" title="管理单词本"><span class="msr">settings</span></button>
       <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
-      <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
-      <span class="wordbook-card-name">${escapeHtml(wb.name)}</span>
-      <span class="wordbook-card-count">${wb.wordCount} 词</span>
-      <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
+      <span class="card-chip"><span class="msr">bookmark</span></span>
+      <span class="card-title">${escapeHtml(wb.name)}</span>
+      <span class="card-desc">${wb.wordCount} 词 · ${new Date(wb.createdAt).toLocaleDateString()}</span>
     </div>
   `).join('');
   

@@ -5635,3 +5635,34 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
   .card-grid.cols-3,.card-grid.cols-2,.lang-cards,.big-stats,.progress-2col,.book-layout{grid-template-columns:1fr}
   .book-nav{position:static;max-height:none;flex-direction:row;overflow-x:auto}
 }
+
+/* ===== STREAM B ADDITIONS ===== */
+/* Vocabulary source/modes screens: library buttons are real <button>s here,
+   so give them the app font + pointer (the mockup used a global button reset
+   that was intentionally not ported). */
+button.card, button.chip, button.pill-btn, button.back-link { font-family: inherit; }
+button.card { cursor: pointer; color: var(--ink); }
+button.card:disabled { opacity: 0.45; cursor: not-allowed; }
+button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-color: var(--border); }
+
+/* Level-tier chips wrap on narrow screens; JS marks selection with .selected */
+.chips.wrap { flex-wrap: wrap; }
+.chip.selected { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+
+/* Sub-content spacing inside a top-level source card */
+.card > .sub-label { margin: 10px 0 0; }
+.card > .card-grid { margin-top: 4px; }
+
+/* Wordbook cards emitted by JS: .card look, soft-accent selected state
+   (overrides legacy solid-accent .wordbook-card.selected) */
+.card.wordbook-card { align-items: flex-start; }
+.card.wordbook-card.selected { background: var(--accent-soft); border-color: var(--accent); color: var(--ink); }
+
+/* "My wordbooks" header row on DE/EN source screens */
+.section-head-row { margin-top: 34px; align-items: flex-end; }
+.section-head-row .sub-label { margin: 0 0 4px; }
+.section-head-row + .card-grid { margin-top: 14px; }
+
+/* Selection summary sits between .desc and the mode cards */
+.selection-summary-card { margin-top: 22px; }
+/* ===== END STREAM B ===== */

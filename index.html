@@ -174,77 +174,67 @@
       </section>
 
       <section id="germanVocabularyScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="germanVocabularyBackBtn">返回 German Home</button>
+        <div class="container">
+          <button class="back-link" id="germanVocabularyBackBtn"><span class="msr">arrow_back</span>返回 German Home</button>
+          <div class="eyebrow">German / Vocabulary</div>
+          <h1 class="page">选择德语词汇内容来源</h1>
+          <p class="desc">可选择系统德语词汇、我的词本入口，或进入共享社区词库。</p>
+
+          <div class="card-grid cols-3">
+            <button class="card" id="germanSystemVocabularyBtn">
+              <span class="card-chip"><span class="msr">dataset</span></span>
+              <span class="card-title">System Vocabulary</span>
+              <span class="card-desc">使用德语词汇内容开始练习与浏览</span>
+            </button>
+            <button class="card" id="germanWordbooksBtn">
+              <span class="card-chip"><span class="msr">bookmark</span></span>
+              <span class="card-title">My Wordbooks</span>
+              <span class="card-desc">导入、创建并管理个人德语词本</span>
+            </button>
+            <button class="card" id="germanCommunityBtn">
+              <span class="card-chip"><span class="msr">groups</span></span>
+              <span class="card-title">Community Wordbooks</span>
+              <span class="card-desc">进入共享社区词库，浏览并导入社区资源</span>
+            </button>
+          </div>
+
+          <div class="section-head-row">
             <div>
-              <p class="eyebrow">German / Vocabulary</p>
-              <h2><svg class="icon"><use href="#icon-library"></use></svg>选择德语词汇内容来源</h2>
+              <div class="sub-label">我的德语词本</div>
+              <span class="card-desc">仅显示 German 词本</span>
             </div>
-            <p class="subtitle">可选择系统德语词汇、我的词本入口，或进入共享社区词库。</p>
-          </div>
-
-          <div class="module-grid">
-            <button class="module-card" id="germanSystemVocabularyBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-stack"></use></svg></span>
-              <span class="module-card-title">System Vocabulary</span>
-              <span class="module-card-desc">使用德语词汇内容开始练习与浏览</span>
-            </button>
-            <button class="module-card" id="germanWordbooksBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="module-card-title">My Wordbooks</span>
-              <span class="module-card-desc">导入、创建并管理个人德语词本</span>
-            </button>
-            <button class="module-card" id="germanCommunityBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
-              <span class="module-card-title">Community Wordbooks</span>
-              <span class="module-card-desc">进入共享社区词库，浏览并导入社区资源</span>
-            </button>
-          </div>
-
-          <div class="custom-wordbook-section">
-            <div class="section-head-row">
-              <div>
-                <h3 class="section-title">我的德语词本</h3>
-                <p class="subtitle compact">仅显示 German 词本</p>
-              </div>
-              <div class="inline-actions">
-                <input type="file" id="germanWordbookFileInput" accept=".json,.txt" style="display: none;">
-                <button class="back-btn" id="germanImportWordbookBtn">导入词本</button>
-                <button class="next-btn" id="germanCreateWordbookBtn">创建新词本</button>
-              </div>
+            <div class="inline-actions">
+              <input type="file" id="germanWordbookFileInput" accept=".json,.txt" style="display: none;">
+              <button class="pill-btn" id="germanImportWordbookBtn"><span class="msr">upload_file</span>导入词本</button>
+              <button class="pill-btn" id="germanCreateWordbookBtn"><span class="msr">add</span>创建新词本</button>
             </div>
-            <div class="wordbook-cards" id="germanWordbookCards"></div>
           </div>
+          <div class="card-grid cols-3" id="germanWordbookCards"></div>
         </div>
       </section>
 
       <section id="germanVocabularyModesScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="germanModesBackBtn">返回 Vocabulary</button>
-            <div>
-              <p class="eyebrow">German / Vocabulary</p>
-              <h2><svg class="icon"><use href="#icon-book-open"></use></svg>选择练习方式</h2>
-            </div>
-            <p class="subtitle">选择一种方式开始德语词汇练习。</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="germanModesBackBtn"><span class="msr">arrow_back</span>返回 Vocabulary</button>
+          <div class="eyebrow">German / Vocabulary</div>
+          <h1 class="page">选择练习方式</h1>
+          <p class="desc">选择一种方式开始德语词汇练习。</p>
 
-          <div class="mode-buttons">
-            <button class="mode-btn" id="germanMultipleChoiceBtn" data-language="german" data-module="multiple-choice">
-              <span class="mode-icon"><svg class="icon"><use href="#icon-grid"></use></svg></span>
-              <span class="mode-name">Multiple Choice</span>
-              <span class="mode-desc">看德语词，选择释义</span>
+          <div class="card-grid cols-3">
+            <button class="card" id="germanMultipleChoiceBtn" data-language="german" data-module="multiple-choice">
+              <span class="card-chip"><span class="msr">quiz</span></span>
+              <span class="card-title">Multiple Choice</span>
+              <span class="card-desc">看德语词，选择释义</span>
             </button>
-            <button class="mode-btn" id="germanSpellingBtn" data-language="german" data-module="spelling">
-              <span class="mode-icon"><svg class="icon"><use href="#icon-keyboard"></use></svg></span>
-              <span class="mode-name">Spelling</span>
-              <span class="mode-desc">看释义，拼写德语单词</span>
+            <button class="card" id="germanSpellingBtn" data-language="german" data-module="spelling">
+              <span class="card-chip"><span class="msr">keyboard</span></span>
+              <span class="card-title">Spelling</span>
+              <span class="card-desc">看释义，拼写德语单词</span>
             </button>
-            <button class="mode-btn" id="germanBrowseBtn" data-language="german" data-module="browse">
-              <span class="mode-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="mode-name">Browse</span>
-              <span class="mode-desc">浏览、搜索、筛选德语词汇</span>
+            <button class="card" id="germanBrowseBtn" data-language="german" data-module="browse">
+              <span class="card-chip"><span class="msr">list</span></span>
+              <span class="card-title">Browse</span>
+              <span class="card-desc">浏览、搜索、筛选德语词汇</span>
             </button>
           </div>
         </div>
@@ -481,77 +471,67 @@
       </section>
 
       <section id="englishVocabularyScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="englishVocabularyBackBtn">返回 English Home</button>
+        <div class="container">
+          <button class="back-link" id="englishVocabularyBackBtn"><span class="msr">arrow_back</span>返回 English Home</button>
+          <div class="eyebrow">English / Vocabulary</div>
+          <h1 class="page">Choose vocabulary source</h1>
+          <p class="desc">可选择系统英语词汇、我的词本入口，或进入共享社区词库。</p>
+
+          <div class="card-grid cols-3">
+            <button class="card" id="englishSystemVocabularyBtn">
+              <span class="card-chip"><span class="msr">dataset</span></span>
+              <span class="card-title">System Vocabulary</span>
+              <span class="card-desc">使用英语词汇内容开始练习与浏览</span>
+            </button>
+            <button class="card" id="englishWordbooksBtn">
+              <span class="card-chip"><span class="msr">bookmark</span></span>
+              <span class="card-title">My Wordbooks</span>
+              <span class="card-desc">导入、创建并管理个人英语词本</span>
+            </button>
+            <button class="card" id="englishCommunityBtn">
+              <span class="card-chip"><span class="msr">groups</span></span>
+              <span class="card-title">Community Wordbooks</span>
+              <span class="card-desc">进入共享社区词库，浏览并导入社区资源</span>
+            </button>
+          </div>
+
+          <div class="section-head-row">
             <div>
-              <p class="eyebrow">English / Vocabulary</p>
-              <h2><svg class="icon"><use href="#icon-library"></use></svg>Choose vocabulary source</h2>
+              <div class="sub-label">My English Wordbooks</div>
+              <span class="card-desc">Only English wordbooks are shown here</span>
             </div>
-            <p class="subtitle">可选择系统英语词汇、我的词本入口，或进入共享社区词库。</p>
-          </div>
-
-          <div class="module-grid">
-            <button class="module-card" id="englishSystemVocabularyBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-stack"></use></svg></span>
-              <span class="module-card-title">System Vocabulary</span>
-              <span class="module-card-desc">使用英语词汇内容开始练习与浏览</span>
-            </button>
-            <button class="module-card" id="englishWordbooksBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="module-card-title">My Wordbooks</span>
-              <span class="module-card-desc">导入、创建并管理个人英语词本</span>
-            </button>
-            <button class="module-card" id="englishCommunityBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
-              <span class="module-card-title">Community Wordbooks</span>
-              <span class="module-card-desc">进入共享社区词库，浏览并导入社区资源</span>
-            </button>
-          </div>
-
-          <div class="custom-wordbook-section">
-            <div class="section-head-row">
-              <div>
-                <h3 class="section-title">My English Wordbooks</h3>
-                <p class="subtitle compact">Only English wordbooks are shown here</p>
-              </div>
-              <div class="inline-actions">
-                <input type="file" id="englishWordbookFileInput" accept=".json,.txt" style="display: none;">
-                <button class="back-btn" id="englishImportWordbookBtn">Import</button>
-                <button class="next-btn" id="englishCreateWordbookBtn">Create</button>
-              </div>
+            <div class="inline-actions">
+              <input type="file" id="englishWordbookFileInput" accept=".json,.txt" style="display: none;">
+              <button class="pill-btn" id="englishImportWordbookBtn"><span class="msr">upload_file</span>Import</button>
+              <button class="pill-btn" id="englishCreateWordbookBtn"><span class="msr">add</span>Create</button>
             </div>
-            <div class="wordbook-cards" id="englishWordbookCards"></div>
           </div>
+          <div class="card-grid cols-3" id="englishWordbookCards"></div>
         </div>
       </section>
 
       <section id="englishVocabularyModesScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="englishModesBackBtn">返回 Vocabulary</button>
-            <div>
-              <p class="eyebrow">English / Vocabulary</p>
-              <h2><svg class="icon"><use href="#icon-book-open"></use></svg>Choose practice mode</h2>
-            </div>
-            <p class="subtitle">选择一种练习方式开始学习英语词汇。</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="englishModesBackBtn"><span class="msr">arrow_back</span>返回 Vocabulary</button>
+          <div class="eyebrow">English / Vocabulary</div>
+          <h1 class="page">Choose practice mode</h1>
+          <p class="desc">选择一种练习方式开始学习英语词汇。</p>
 
-          <div class="mode-buttons">
-            <button class="mode-btn" id="englishMultipleChoiceBtn" data-language="english" data-module="multiple-choice">
-              <span class="mode-icon"><svg class="icon"><use href="#icon-grid"></use></svg></span>
-              <span class="mode-name">Multiple Choice</span>
-              <span class="mode-desc">See English word, choose meaning</span>
+          <div class="card-grid cols-3">
+            <button class="card" id="englishMultipleChoiceBtn" data-language="english" data-module="multiple-choice">
+              <span class="card-chip"><span class="msr">quiz</span></span>
+              <span class="card-title">Multiple Choice</span>
+              <span class="card-desc">See English word, choose meaning</span>
             </button>
-            <button class="mode-btn" id="englishSpellingBtn" data-language="english" data-module="spelling">
-              <span class="mode-icon"><svg class="icon"><use href="#icon-keyboard"></use></svg></span>
-              <span class="mode-name">Spelling</span>
-              <span class="mode-desc">See meaning, type the English word</span>
+            <button class="card" id="englishSpellingBtn" data-language="english" data-module="spelling">
+              <span class="card-chip"><span class="msr">keyboard</span></span>
+              <span class="card-title">Spelling</span>
+              <span class="card-desc">See meaning, type the English word</span>
             </button>
-            <button class="mode-btn" id="englishBrowseBtn" data-language="english" data-module="browse">
-              <span class="mode-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="mode-name">Browse</span>
-              <span class="mode-desc">Browse, search and filter English vocabulary</span>
+            <button class="card" id="englishBrowseBtn" data-language="english" data-module="browse">
+              <span class="card-chip"><span class="msr">list</span></span>
+              <span class="card-title">Browse</span>
+              <span class="card-desc">Browse, search and filter English vocabulary</span>
             </button>
           </div>
         </div>
@@ -789,123 +769,87 @@
       </section>
 
       <section id="vocabularyScreen" class="screen">
-        <div class="welcome-card module-view-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="vocabularyBackBtn">返回 Home</button>
-            <div>
-              <p class="eyebrow">Vocabulary</p>
-              <h2><svg class="icon"><use href="#icon-library"></use></svg>选择词汇内容来源</h2>
-            </div>
-            <p class="subtitle">选择一个词汇来源</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="vocabularyBackBtn"><span class="msr">arrow_back</span>返回 Home</button>
+          <div class="eyebrow">Vocabulary</div>
+          <h1 class="page">选择词汇内容来源</h1>
+          <p class="desc">选择一个词汇来源，开始练习。</p>
 
-          <div class="vocab-section">
-            <h3 class="section-title">系统词汇库</h3>
-            <p class="subtitle compact">根据词频分层，从高频词逐步扩展。</p>
-            <div class="level-buttons">
-              <button class="level-btn vocab-source-btn" data-level="1000" data-source="system">
-                <span class="level-icon"><svg class="icon"><use href="#icon-seed"></use></svg></span>
-                <span class="level-name">初级</span>
-                <span class="level-count">1,000 词</span>
-              </button>
-              <button class="level-btn vocab-source-btn" data-level="3000" data-source="system">
-                <span class="level-icon"><svg class="icon"><use href="#icon-leaf"></use></svg></span>
-                <span class="level-name">中级</span>
-                <span class="level-count">3,000 词</span>
-              </button>
-              <button class="level-btn vocab-source-btn" data-level="5000" data-source="system">
-                <span class="level-icon"><svg class="icon"><use href="#icon-tree"></use></svg></span>
-                <span class="level-name">高级</span>
-                <span class="level-count">5,000 词</span>
-              </button>
-              <button class="level-btn vocab-source-btn" data-level="all" data-source="system">
-                <span class="level-icon"><svg class="icon"><use href="#icon-stack"></use></svg></span>
-                <span class="level-name">全部</span>
-                <span class="level-count">28,787 词</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="vocab-section cognate-section">
-            <h3 class="section-title">Cognates</h3>
-            <p class="subtitle compact">Italian words similar to English. Leverage your English vocabulary.</p>
-            <div class="level-buttons">
-              <button class="level-btn vocab-source-btn cognate-btn" data-level="cognate" data-source="cognate">
-                <span class="level-icon"><svg class="icon"><use href="#icon-link"></use></svg></span>
-                <span class="level-name">Cognates</span>
-                <span class="level-count">~1500 词</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="custom-wordbook-section">
-            <div class="section-head-row">
-              <div>
-                <h3 class="section-title">我的词本</h3>
-                <p class="subtitle compact">本地词本</p>
+          <div class="card-grid">
+            <div class="card">
+              <span class="card-chip"><span class="msr">dataset</span></span>
+              <span class="card-title">系统词汇库</span>
+              <span class="card-desc">根据词频分层，从高频词逐步扩展。</span>
+              <div class="chips wrap">
+                <button class="chip vocab-source-btn" data-level="1000" data-source="system">初级 · 1,000 词</button>
+                <button class="chip vocab-source-btn" data-level="3000" data-source="system">中级 · 3,000 词</button>
+                <button class="chip vocab-source-btn" data-level="5000" data-source="system">高级 · 5,000 词</button>
+                <button class="chip vocab-source-btn" data-level="all" data-source="system">全部 · 28,787 词</button>
               </div>
-              <div class="inline-actions">
+              <span class="sub-label">Cognates</span>
+              <span class="card-desc">Italian words similar to English. Leverage your English vocabulary.</span>
+              <div class="chips wrap">
+                <button class="chip vocab-source-btn cognate-btn" data-level="cognate" data-source="cognate">Cognates · ~1,500 词</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <span class="card-chip"><span class="msr">bookmark</span></span>
+              <span class="card-title">我的词本</span>
+              <span class="card-desc">本地词本，导入、创建与编辑。</span>
+              <div class="chips wrap">
                 <input type="file" id="wordbookFileInput" accept=".json,.txt" style="display: none;">
-                <button class="back-btn" id="importWordbookBtn">导入词本</button>
-                <button class="next-btn" id="createWordbookBtn">创建新词本</button>
+                <button class="pill-btn" id="importWordbookBtn"><span class="msr">upload_file</span>导入词本</button>
+                <button class="pill-btn" id="createWordbookBtn"><span class="msr">add</span>创建新词本</button>
               </div>
+              <div class="card-grid cols-3" id="wordbookCards">
+                <!-- 动态生成单词本卡片 -->
+              </div>
+              <p class="card-desc">
+                <a href="custom_wordbook_template.json" download>JSON模板</a> |
+                <a href="custom_wordbook_template.txt" download>TXT模板</a>
+              </p>
             </div>
-            <div class="wordbook-cards" id="wordbookCards">
-              <!-- 动态生成单词本卡片 -->
-            </div>
-            <p class="import-hint-small">
-              <a href="custom_wordbook_template.json" download>JSON模板</a> |
-              <a href="custom_wordbook_template.txt" download>TXT模板</a>
-            </p>
-          </div>
 
-          <div class="community-wordbook-section">
-            <h3 class="section-title">社区词本</h3>
-            <p class="subtitle compact">浏览并导入社区资源</p>
-            <div class="community-buttons single-action-row">
-              <button class="level-btn community-btn" id="browseCommunityBtn">
-                <span class="level-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
-                <span class="level-name">浏览社区词本</span>
-                <span class="level-count">查找并导入到我的词本</span>
-              </button>
+            <div class="card">
+              <span class="card-chip"><span class="msr">groups</span></span>
+              <span class="card-title">社区词本</span>
+              <span class="card-desc">浏览并导入社区资源。</span>
+              <div class="chips wrap">
+                <button class="pill-btn" id="browseCommunityBtn"><span class="msr">travel_explore</span>浏览社区词本</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section id="vocabularyModesScreen" class="screen">
-        <div class="welcome-card module-view-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="vocabularyModesBackBtn">返回内容来源</button>
-            <div>
-              <p class="eyebrow">Vocabulary</p>
-              <h2><svg class="icon"><use href="#icon-book-open"></use></svg>选择练习方式</h2>
-            </div>
-            <p class="subtitle" id="vocabularyFlowSummary">选择一个练习方式</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="vocabularyModesBackBtn"><span class="msr">arrow_back</span>返回内容来源</button>
+          <div class="eyebrow">Vocabulary</div>
+          <h1 class="page">选择练习方式</h1>
+          <p class="desc" id="vocabularyFlowSummary">选择一个练习方式</p>
 
           <div class="selection-summary-card" id="vocabularySelectionSummary"></div>
 
-          <div class="mode-selection no-divider">
-            <div class="mode-buttons" id="vocabModeButtons">
-              <button class="mode-btn" id="multipleChoiceBtn">
-                <span class="mode-icon"><svg class="icon"><use href="#icon-grid"></use></svg></span>
-                <span class="mode-name">选择题</span>
-                <span class="mode-desc">看意大利语选英语翻译</span>
-              </button>
+          <div class="card-grid cols-3" id="vocabModeButtons">
+            <button class="card" id="multipleChoiceBtn">
+              <span class="card-chip"><span class="msr">quiz</span></span>
+              <span class="card-title">选择题</span>
+              <span class="card-desc">看意大利语选英语翻译</span>
+            </button>
 
-              <button class="mode-btn" id="spellingBtn">
-                <span class="mode-icon"><svg class="icon"><use href="#icon-keyboard"></use></svg></span>
-                <span class="mode-name">拼写</span>
-                <span class="mode-desc">看英语拼写意大利语</span>
-              </button>
+            <button class="card" id="spellingBtn">
+              <span class="card-chip"><span class="msr">keyboard</span></span>
+              <span class="card-title">拼写</span>
+              <span class="card-desc">看英语拼写意大利语</span>
+            </button>
 
-              <button class="mode-btn" id="browseBtn">
-                <span class="mode-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-                <span class="mode-name">浏览</span>
-                <span class="mode-desc">查看词表、搜索、筛选与加入词本</span>
-              </button>
-            </div>
+            <button class="card" id="browseBtn">
+              <span class="card-chip"><span class="msr">list</span></span>
+              <span class="card-title">浏览</span>
+              <span class="card-desc">查看词表、搜索、筛选与加入词本</span>
+            </button>
           </div>
         </div>
       </section>
