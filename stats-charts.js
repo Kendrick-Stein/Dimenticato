@@ -5,9 +5,29 @@
 
 const ChartsManager = {
   charts: {},
-  
+
+  // 在绘制时读取设计 token（跟随当前主题；图表每次打开/切换标签页时
+  // 都会重建，因此 draw-time 读取即可在明暗主题间保持正确配色）
+  getTokens() {
+    const cs = getComputedStyle(document.documentElement);
+    const t = (name) => cs.getPropertyValue(name).trim();
+    return {
+      accent: t('--accent'),
+      card: t('--card'),
+      card2: t('--card-2'),
+      border: t('--border'),
+      borderStrong: t('--border-strong'),
+      ink: t('--ink'),
+      ink2: t('--ink-2'),
+      muted: t('--muted')
+    };
+  },
+
   // 初始化所有图表
   initCharts() {
+    if (typeof Chart !== 'undefined') {
+      Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
+    }
     this.createWeeklyTrendChart();
     this.createDailyWordsChart();
     this.createMasteryDistributionChart();
@@ -28,22 +48,23 @@ const ChartsManager = {
     
     const ctx = canvas.getContext('2d');
     const stats = StatsManager.getRecentStats(7);
-    
+    const tokens = this.getTokens();
+
     // 准备数据
     const labels = stats.map(s => {
       const date = new Date(s.date);
       return `${date.getMonth() + 1}/${date.getDate()}`;
     });
-    
+
     const wordsData = stats.map(s => s.wordsLearned);
-    const accuracyData = stats.map(s => 
+    const accuracyData = stats.map(s =>
       s.totalCount > 0 ? (s.correctCount / s.totalCount * 100).toFixed(1) : 0
     );
-    
+
     if (this.charts.weeklyTrend) {
       this.charts.weeklyTrend.destroy();
     }
-    
+
     this.charts.weeklyTrend = new Chart(ctx, {
       type: 'line',
       data: {
@@ -52,16 +73,16 @@ const ChartsManager = {
           {
             label: '学习单词数',
             data: wordsData,
-            borderColor: '#3498db',
-            backgroundColor: 'rgba(52, 152, 219, 0.1)',
+            borderColor: tokens.accent,
+            backgroundColor: 'transparent',
             tension: 0.4,
             yAxisID: 'y'
           },
           {
             label: '正确率 (%)',
             data: accuracyData,
-            borderColor: '#2ecc71',
-            backgroundColor: 'rgba(46, 204, 113, 0.1)',
+            borderColor: tokens.muted,
+            backgroundColor: 'transparent',
             tension: 0.4,
             yAxisID: 'y1'
           }
@@ -78,13 +99,13 @@ const ChartsManager = {
           legend: {
             position: 'top',
             labels: {
-              color: getComputedStyle(document.body).getPropertyValue('--text-primary')
+              color: tokens.ink
             }
           },
           title: {
             display: true,
             text: '最近 7 天学习趋势',
-            color: getComputedStyle(document.body).getPropertyValue('--text-primary'),
+            color: tokens.ink,
             font: {
               size: 16
             }
@@ -96,10 +117,10 @@ const ChartsManager = {
             display: true,
             position: 'left',
             ticks: {
-              color: getComputedStyle(document.body).getPropertyValue('--text-secondary')
+              color: tokens.muted
             },
             grid: {
-              color: getComputedStyle(document.body).getPropertyValue('--border-color')
+              color: tokens.border
             }
           },
           y1: {
@@ -109,7 +130,7 @@ const ChartsManager = {
             min: 0,
             max: 100,
             ticks: {
-              color: getComputedStyle(document.body).getPropertyValue('--text-secondary')
+              color: tokens.muted
             },
             grid: {
               drawOnChartArea: false
@@ -117,10 +138,10 @@ const ChartsManager = {
           },
           x: {
             ticks: {
-              color: getComputedStyle(document.body).getPropertyValue('--text-secondary')
+              color: tokens.muted
             },
             grid: {
-              color: getComputedStyle(document.body).getPropertyValue('--border-color')
+              color: tokens.border
             }
           }
         }
@@ -135,18 +156,21 @@ const ChartsManager = {
     
     const ctx = canvas.getContext('2d');
     const stats = StatsManager.getRecentStats(7);
-    
+    const tokens = this.getTokens();
+
     const labels = stats.map(s => {
       const date = new Date(s.date);
       return `${date.getMonth() + 1}/${date.getDate()}`;
     });
-    
+
     const wordsData = stats.map(s => s.wordsLearned);
-    
+
     if (this.charts.dailyWords) {
       this.charts.dailyWords.destroy();
     }
-    
+
+    // 最新一天用 --accent 强调，其余为中性色（同 .bar/.bar.latest）
+    const lastIndex = wordsData.length - 1;
     this.charts.dailyWords = new Chart(ctx, {
       type: 'bar',
       data: {
@@ -154,8 +178,8 @@ const ChartsManager = {
         datasets: [{
           label: '学习单词数',
           data: wordsData,
-          backgroundColor: 'rgba(52, 152, 219, 0.6)',
-          borderColor: '#3498db',
+          backgroundColor: wordsData.map((_, i) => (i === lastIndex ? tokens.accent : tokens.card2)),
+          borderColor: wordsData.map((_, i) => (i === lastIndex ? tokens.accent : tokens.border)),
           borderWidth: 1
         }]
       },
@@ -169,7 +193,7 @@ const ChartsManager = {
           title: {
             display: true,
             text: '每日学习单词量',
-            color: getComputedStyle(document.body).getPropertyValue('--text-primary'),
+            color: tokens.ink,
             font: {
               size: 16
             }
@@ -179,16 +203,16 @@ const ChartsManager = {
           y: {
             beginAtZero: true,
             ticks: {
-              color: getComputedStyle(document.body).getPropertyValue('--text-secondary'),
+              color: tokens.muted,
               stepSize: 10
             },
             grid: {
-              color: getComputedStyle(document.body).getPropertyValue('--border-color')
+              color: tokens.border
             }
           },
           x: {
             ticks: {
-              color: getComputedStyle(document.body).getPropertyValue('--text-secondary')
+              color: tokens.muted
             },
             grid: {
               display: false
@@ -225,7 +249,9 @@ const ChartsManager = {
     if (this.charts.masteryDistribution) {
       this.charts.masteryDistribution.destroy();
     }
-    
+
+    // 已熟练 = --accent；新词/学习中为中性色（--card-2 / --border-strong）
+    const tokens = this.getTokens();
     this.charts.masteryDistribution = new Chart(ctx, {
       type: 'doughnut',
       data: {
@@ -233,14 +259,14 @@ const ChartsManager = {
         datasets: [{
           data: [newWords, learningWords, masteredWords],
           backgroundColor: [
-            'rgba(52, 152, 219, 0.6)',
-            'rgba(243, 156, 18, 0.6)',
-            'rgba(46, 204, 113, 0.6)'
+            tokens.card2,
+            tokens.borderStrong,
+            tokens.accent
           ],
           borderColor: [
-            '#3498db',
-            '#f39c12',
-            '#2ecc71'
+            tokens.card,
+            tokens.card,
+            tokens.card
           ],
           borderWidth: 2
         }]
@@ -252,14 +278,14 @@ const ChartsManager = {
           legend: {
             position: 'bottom',
             labels: {
-              color: getComputedStyle(document.body).getPropertyValue('--text-primary'),
+              color: tokens.ink,
               padding: 15
             }
           },
           title: {
             display: true,
             text: '单词掌握度分布',
-            color: getComputedStyle(document.body).getPropertyValue('--text-primary'),
+            color: tokens.ink,
             font: {
               size: 16
             }
