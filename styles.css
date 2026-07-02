@@ -5666,3 +5666,8 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 /* Selection summary sits between .desc and the mode cards */
 .selection-summary-card { margin-top: 22px; }
 /* ===== END STREAM B ===== */
+
+/* ===== STREAM D ADDITIONS ===== */
+/* Browse rows: second action button + inline note under the gloss */
+.wl-actions{display:flex;align-items:center;gap:8px;justify-self:end}
+.wl-gloss .wl-note{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}

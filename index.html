@@ -305,12 +305,17 @@
 
       <section id="germanBrowseScreen" class="screen">
         <div class="browse-container">
-          <div class="browse-header">
-            <button class="back-btn" id="germanBrowseBackBtn">← 返回</button>
-            <input type="text" class="search-input" id="germanSearchInput" placeholder="搜索德语单词或释义...">
-            <button class="filter-btn" id="germanFilterBtn">
-              <span id="germanFilterText">全部</span> ▼
-            </button>
+          <button class="back-btn" id="germanBrowseBackBtn">← 返回</button>
+          <div class="browse-controls">
+            <div class="search-wrap">
+              <span class="msr">search</span>
+              <input type="text" class="search-input" id="germanSearchInput" placeholder="搜索德语单词或释义…">
+            </div>
+            <div class="chips" id="germanFilterChips">
+              <button class="chip active" data-filter="all">全部</button>
+              <button class="chip" data-filter="mastered">已掌握</button>
+              <button class="chip" data-filter="unmastered">学习中</button>
+            </div>
           </div>
 
           <div class="word-list" id="germanWordList"></div>
@@ -597,12 +602,17 @@
 
       <section id="englishBrowseScreen" class="screen">
         <div class="browse-container">
-          <div class="browse-header">
-            <button class="back-btn" id="englishBrowseBackBtn">← 返回</button>
-            <input type="text" class="search-input" id="englishSearchInput" placeholder="搜索英语单词或释义...">
-            <button class="filter-btn" id="englishFilterBtn">
-              <span id="englishFilterText">全部</span> ▼
-            </button>
+          <button class="back-btn" id="englishBrowseBackBtn">← 返回</button>
+          <div class="browse-controls">
+            <div class="search-wrap">
+              <span class="msr">search</span>
+              <input type="text" class="search-input" id="englishSearchInput" placeholder="搜索英语单词或释义…">
+            </div>
+            <div class="chips" id="englishFilterChips">
+              <button class="chip active" data-filter="all">全部</button>
+              <button class="chip" data-filter="mastered">已掌握</button>
+              <button class="chip" data-filter="unmastered">学习中</button>
+            </div>
           </div>
 
           <div class="word-list" id="englishWordList"></div>
@@ -1154,17 +1164,22 @@
       <!-- 浏览模式 -->
       <section id="browseScreen" class="screen">
         <div class="browse-container">
-          <div class="browse-header">
-            <button class="back-btn" id="brBackBtn">← 返回</button>
-            <input 
-              type="text" 
-              class="search-input" 
-              id="searchInput" 
-              placeholder="搜索单词或翻译..."
-            >
-            <button class="filter-btn" id="filterBtn">
-              <span id="filterText">全部</span> ▼
-            </button>
+          <button class="back-btn" id="brBackBtn">← 返回</button>
+          <div class="browse-controls">
+            <div class="search-wrap">
+              <span class="msr">search</span>
+              <input
+                type="text"
+                class="search-input"
+                id="searchInput"
+                placeholder="搜索单词或翻译…"
+              >
+            </div>
+            <div class="chips" id="browseFilterChips">
+              <button class="chip active" data-filter="all">全部</button>
+              <button class="chip" data-filter="mastered">已掌握</button>
+              <button class="chip" data-filter="unmastered">学习中</button>
+            </div>
           </div>
 
           <div class="word-list" id="wordList">
