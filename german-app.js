@@ -476,6 +476,11 @@
         document.getElementById('germanMcShowHintBtn')?.classList.add('hidden');
       });
       this.bindClick('germanMcNextBtn', () => this.nextMultipleChoiceQuestion());
+      this.bindClick('germanMcSpeakBtn', () => {
+        if (this.currentWord) {
+          this.speakGerman(this.currentWord.display || this.currentWord.german || '');
+        }
+      });
 
       this.bindClick('germanSpBackBtn', () => this.goBack('germanVocabularyModesScreen'));
       this.bindClick('germanSpCheckBtn', () => this.checkSpellingAnswer());
@@ -592,6 +597,7 @@
       const currentDisplay = this.currentWord.display || this.currentWord.german || '-';
       this.setText('germanMcCurrentWord', String(this.quizIndex + 1));
       this.setText('germanMcTotalWords', String(this.sessionWords.length));
+      this.updateSessionFill('germanMcSessionFill', this.quizIndex, this.sessionWords.length);
       this.setText('germanMcAccuracy', `${this.getAccuracy()}%`);
       this.setText('germanMcWord', currentDisplay);
 
@@ -641,7 +647,8 @@
       var engine = this._getMcEngine();
       engine.highlightOptions(correctAnswer);
       if (!isCorrect) {
-        button.classList.add('incorrect');
+        button.classList.remove('faded');
+        button.classList.add('wrong');
       }
 
       engine.showFeedback(isCorrect, correctAnswer);
@@ -677,6 +684,7 @@
       this.currentWord = this.sessionWords[this.quizIndex];
       this.setText('germanSpCurrentWord', String(this.quizIndex + 1));
       this.setText('germanSpTotalWords', String(this.sessionWords.length));
+      this.updateSessionFill('germanSpSessionFill', this.quizIndex, this.sessionWords.length);
       this.setText('germanSpAccuracy', `${this.getAccuracy()}%`);
       this.setText('germanSpMeaning', this.currentWord.meaning || this.currentWord.chinese || '-');
       this.setText('germanSpHint', this.currentWord.notes || '');
@@ -687,6 +695,7 @@
       if (input) {
         input.value = '';
         input.disabled = false;
+        input.classList.remove('good', 'bad');
         input.focus();
       }
       if (checkBtn) checkBtn.disabled = false;
@@ -716,7 +725,11 @@
         this.mastered.add(this.currentWord.german);
       }
 
-      if (input) input.disabled = true;
+      if (input) {
+        input.disabled = true;
+        input.classList.remove('good', 'bad');
+        input.classList.add(isCorrect ? 'good' : 'bad');
+      }
       if (checkBtn) checkBtn.disabled = true;
 
       const correctDisplay = this.currentWord.display || this.currentWord.german || '';
@@ -831,7 +844,12 @@
       const feedback = document.getElementById(id);
       if (!feedback) return;
       const textEl = feedback.querySelector('.feedback-text');
-      if (textEl) textEl.textContent = text;
+      if (textEl) {
+        const icon = isCorrect ? 'check_circle' : 'cancel';
+        textEl.innerHTML = `<span class="msr">${icon}</span>${escapeHtml(text)}`;
+        textEl.classList.remove('ok', 'no');
+        textEl.classList.add(isCorrect ? 'ok' : 'no');
+      }
       feedback.classList.remove('hidden', 'correct', 'incorrect');
       feedback.classList.add(isCorrect ? 'correct' : 'incorrect');
     },
@@ -842,7 +860,18 @@
       feedback.classList.add('hidden');
       feedback.classList.remove('correct', 'incorrect');
       const textEl = feedback.querySelector('.feedback-text');
-      if (textEl) textEl.textContent = '';
+      if (textEl) {
+        textEl.textContent = '';
+        textEl.classList.remove('ok', 'no');
+      }
+    },
+
+    // 更新练习界面顶部的进度条（redesign .session-bar/.session-fill）
+    updateSessionFill(id, index, total) {
+      const fill = document.getElementById(id);
+      if (!fill) return;
+      const pct = total > 0 ? Math.min(100, Math.round((index / total) * 100)) : 0;
+      fill.style.width = `${pct}%`;
     },
 
     speakGerman(text) {
@@ -1026,6 +1055,9 @@
         document.getElementById('englishMcShowHintBtn')?.classList.add('hidden');
       });
       g.bindClick('englishMcNextBtn', () => this.nextMcQuestion());
+      g.bindClick('englishMcSpeakBtn', () => {
+        if (this.currentWord) this._speak(this.currentWord.english || '');
+      });
 
       // Spelling screen
       g.bindClick('englishSpBackBtn', () => g.goBack('englishVocabularyModesScreen'));
@@ -1080,6 +1112,7 @@
       const word = this.currentWord.english || '-';
       g.setText('englishMcCurrentWord', String(this.quizIndex + 1));
       g.setText('englishMcTotalWords', String(this.sessionWords.length));
+      g.updateSessionFill('englishMcSessionFill', this.quizIndex, this.sessionWords.length);
       g.setText('englishMcAccuracy', `${this._accuracy()}%`);
       g.setText('englishMcWord', word);
 
@@ -1118,7 +1151,8 @@
       var engine = this._getMcEngine();
       engine.highlightOptions(correct);
       if (!isCorrect) {
-        button.classList.add('incorrect');
+        button.classList.remove('faded');
+        button.classList.add('wrong');
       }
 
       engine.showFeedback(isCorrect, correct);
@@ -1155,6 +1189,7 @@
       this.currentWord = this.sessionWords[this.quizIndex];
       g.setText('englishSpCurrentWord', String(this.quizIndex + 1));
       g.setText('englishSpTotalWords', String(this.sessionWords.length));
+      g.updateSessionFill('englishSpSessionFill', this.quizIndex, this.sessionWords.length);
       g.setText('englishSpAccuracy', `${this._accuracy()}%`);
       g.setText('englishSpMeaning', this.currentWord.meaning || this.currentWord.chinese || '-');
       g.setText('englishSpHint', this.currentWord.notes || '');
@@ -1162,7 +1197,7 @@
 
       const input = document.getElementById('englishSpInput');
       const checkBtn = document.getElementById('englishSpCheckBtn');
-      if (input) { input.value = ''; input.disabled = false; input.focus(); }
+      if (input) { input.value = ''; input.disabled = false; input.classList.remove('good', 'bad'); input.focus(); }
       if (checkBtn) checkBtn.disabled = false;
       g.resetFeedback('englishSpFeedback');
     },
@@ -1179,7 +1214,11 @@
       this.quizTotal++;
       this.stats.spAttempts++;
       if (isCorrect) { this.quizCorrect++; this.stats.spCorrect++; this.mastered.add(this.currentWord.english); }
-      if (input) input.disabled = true;
+      if (input) {
+        input.disabled = true;
+        input.classList.remove('good', 'bad');
+        input.classList.add(isCorrect ? 'good' : 'bad');
+      }
       if (checkBtn) checkBtn.disabled = true;
 
       g.showFeedback('englishSpFeedback',

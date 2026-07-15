@@ -233,72 +233,63 @@
       </section>
 
       <section id="germanMultipleChoiceScreen" class="screen">
-        <div class="quiz-container">
-          <div class="quiz-header">
-            <button class="back-btn" id="germanMcBackBtn">← 返回</button>
-            <div class="quiz-progress">
-              <span id="germanMcCurrentWord">1</span> / <span id="germanMcTotalWords">0</span>
-            </div>
-            <div class="quiz-score">
-              正确率: <strong id="germanMcAccuracy">0%</strong>
-            </div>
+        <div class="container narrow">
+          <button class="back-link" id="germanMcBackBtn"><span class="msr">arrow_back</span>返回</button>
+          <div class="practice-head">
+            <span class="idx"><span id="germanMcCurrentWord">1</span> / <span id="germanMcTotalWords">0</span></span>
+            <span class="acc">正确率 <b id="germanMcAccuracy">0%</b></span>
           </div>
+          <div class="session-bar"><div class="session-fill" id="germanMcSessionFill" style="width:0%"></div></div>
 
-          <div class="quiz-card">
+          <div class="practice-card">
             <div class="question-section">
-              <p class="question-label">德语单词：</p>
-              <h2 class="italian-word" id="germanMcWord">-</h2>
-              <button class="hint-btn hidden" id="germanMcShowHintBtn">
-                <svg class="icon"><use href="#icon-help"></use></svg>显示笔记
-              </button>
+              <div class="eyebrow" style="text-align:center">德语单词</div>
+              <div class="word-row">
+                <h2 class="word" id="germanMcWord">-</h2>
+                <button class="speaker" id="germanMcSpeakBtn" title="朗读发音"><span class="msr">volume_up</span></button>
+              </div>
+              <button class="hint-btn hidden" id="germanMcShowHintBtn">显示笔记</button>
               <p class="chinese-hint hidden" id="germanMcHint"></p>
             </div>
 
-            <div class="options-section">
-              <p class="options-label">选择正确的中文释义：</p>
-              <div class="options-grid" id="germanMcOptions"></div>
-            </div>
-          </div>
+            <div class="field-label">选择正确的中文释义</div>
+            <div class="options" id="germanMcOptions"></div>
 
-          <div class="quiz-feedback hidden" id="germanMcFeedback">
-            <p class="feedback-text"></p>
-            <button class="next-btn" id="germanMcNextBtn">下一个 →</button>
+            <div class="hidden" id="germanMcFeedback">
+              <p class="feedback feedback-text"></p>
+              <button class="primary-btn" id="germanMcNextBtn">下一个 <span class="msr">arrow_forward</span></button>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="germanSpellingScreen" class="screen">
-        <div class="quiz-container">
-          <div class="quiz-header">
-            <button class="back-btn" id="germanSpBackBtn">← 返回</button>
-            <div class="quiz-progress">
-              <span id="germanSpCurrentWord">1</span> / <span id="germanSpTotalWords">0</span>
-            </div>
-            <div class="quiz-score">
-              正确率: <strong id="germanSpAccuracy">0%</strong>
-            </div>
+        <div class="container narrow">
+          <button class="back-link" id="germanSpBackBtn"><span class="msr">arrow_back</span>返回</button>
+          <div class="practice-head">
+            <span class="idx"><span id="germanSpCurrentWord">1</span> / <span id="germanSpTotalWords">0</span></span>
+            <span class="acc">正确率 <b id="germanSpAccuracy">0%</b></span>
           </div>
+          <div class="session-bar"><div class="session-fill" id="germanSpSessionFill" style="width:0%"></div></div>
 
-          <div class="quiz-card">
+          <div class="practice-card">
             <div class="question-section">
-              <p class="question-label">中文释义：</p>
-              <h2 class="english-word" id="germanSpMeaning">-</h2>
+              <div class="eyebrow" style="text-align:center">中文释义</div>
+              <h2 class="word" style="font-size:32px" id="germanSpMeaning">-</h2>
               <p class="chinese-hint hidden" id="germanSpHint"></p>
-              <button class="pronunciation-btn" id="germanPronunciationBtn" title="点击朗读德语发音">
-                <svg class="icon"><use href="#icon-volume"></use></svg>听发音
-              </button>
+              <div style="text-align:center;margin-top:16px">
+                <button class="pill-btn" id="germanPronunciationBtn" title="点击朗读德语发音"><span class="msr">volume_up</span>听发音</button>
+              </div>
             </div>
 
-            <div class="spelling-section">
-              <p class="options-label">请输入德语单词：</p>
-              <input type="text" class="spelling-input" id="germanSpInput" placeholder="输入德语..." autocomplete="off">
-              <button class="check-btn" id="germanSpCheckBtn">检查答案</button>
-            </div>
-          </div>
+            <div class="field-label">请输入德语单词</div>
+            <input type="text" class="spell-input" id="germanSpInput" placeholder="输入德语..." autocomplete="off">
+            <button class="primary-btn" id="germanSpCheckBtn">检查答案</button>
 
-          <div class="quiz-feedback hidden" id="germanSpFeedback">
-            <p class="feedback-text"></p>
-            <button class="next-btn" id="germanSpNextBtn">下一个 →</button>
+            <div class="hidden" id="germanSpFeedback">
+              <p class="feedback feedback-text"></p>
+              <button class="primary-btn" id="germanSpNextBtn">下一个 <span class="msr">arrow_forward</span></button>
+            </div>
           </div>
         </div>
       </section>
@@ -521,72 +512,63 @@
       </section>
 
       <section id="englishMultipleChoiceScreen" class="screen">
-        <div class="quiz-container">
-          <div class="quiz-header">
-            <button class="back-btn" id="englishMcBackBtn">← 返回</button>
-            <div class="quiz-progress">
-              <span id="englishMcCurrentWord">1</span> / <span id="englishMcTotalWords">0</span>
-            </div>
-            <div class="quiz-score">
-              正确率: <strong id="englishMcAccuracy">0%</strong>
-            </div>
+        <div class="container narrow">
+          <button class="back-link" id="englishMcBackBtn"><span class="msr">arrow_back</span>返回</button>
+          <div class="practice-head">
+            <span class="idx"><span id="englishMcCurrentWord">1</span> / <span id="englishMcTotalWords">0</span></span>
+            <span class="acc">正确率 <b id="englishMcAccuracy">0%</b></span>
           </div>
+          <div class="session-bar"><div class="session-fill" id="englishMcSessionFill" style="width:0%"></div></div>
 
-          <div class="quiz-card">
+          <div class="practice-card">
             <div class="question-section">
-              <p class="question-label">英语单词：</p>
-              <h2 class="italian-word" id="englishMcWord">-</h2>
-              <button class="hint-btn hidden" id="englishMcShowHintBtn">
-                <svg class="icon"><use href="#icon-help"></use></svg>显示笔记
-              </button>
+              <div class="eyebrow" style="text-align:center">英语单词</div>
+              <div class="word-row">
+                <h2 class="word" id="englishMcWord">-</h2>
+                <button class="speaker" id="englishMcSpeakBtn" title="朗读发音"><span class="msr">volume_up</span></button>
+              </div>
+              <button class="hint-btn hidden" id="englishMcShowHintBtn">显示笔记</button>
               <p class="chinese-hint hidden" id="englishMcHint"></p>
             </div>
 
-            <div class="options-section">
-              <p class="options-label">选择正确的中文释义：</p>
-              <div class="options-grid" id="englishMcOptions"></div>
-            </div>
-          </div>
+            <div class="field-label">选择正确的中文释义</div>
+            <div class="options" id="englishMcOptions"></div>
 
-          <div class="quiz-feedback hidden" id="englishMcFeedback">
-            <p class="feedback-text"></p>
-            <button class="next-btn" id="englishMcNextBtn">下一个 →</button>
+            <div class="hidden" id="englishMcFeedback">
+              <p class="feedback feedback-text"></p>
+              <button class="primary-btn" id="englishMcNextBtn">下一个 <span class="msr">arrow_forward</span></button>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="englishSpellingScreen" class="screen">
-        <div class="quiz-container">
-          <div class="quiz-header">
-            <button class="back-btn" id="englishSpBackBtn">← 返回</button>
-            <div class="quiz-progress">
-              <span id="englishSpCurrentWord">1</span> / <span id="englishSpTotalWords">0</span>
-            </div>
-            <div class="quiz-score">
-              正确率: <strong id="englishSpAccuracy">0%</strong>
-            </div>
+        <div class="container narrow">
+          <button class="back-link" id="englishSpBackBtn"><span class="msr">arrow_back</span>返回</button>
+          <div class="practice-head">
+            <span class="idx"><span id="englishSpCurrentWord">1</span> / <span id="englishSpTotalWords">0</span></span>
+            <span class="acc">正确率 <b id="englishSpAccuracy">0%</b></span>
           </div>
+          <div class="session-bar"><div class="session-fill" id="englishSpSessionFill" style="width:0%"></div></div>
 
-          <div class="quiz-card">
+          <div class="practice-card">
             <div class="question-section">
-              <p class="question-label">中文释义：</p>
-              <h2 class="english-word" id="englishSpMeaning">-</h2>
+              <div class="eyebrow" style="text-align:center">中文释义</div>
+              <h2 class="word" style="font-size:32px" id="englishSpMeaning">-</h2>
               <p class="chinese-hint hidden" id="englishSpHint"></p>
-              <button class="pronunciation-btn" id="englishPronunciationBtn" title="点击朗读英语发音">
-                <svg class="icon"><use href="#icon-volume"></use></svg>听发音
-              </button>
+              <div style="text-align:center;margin-top:16px">
+                <button class="pill-btn" id="englishPronunciationBtn" title="点击朗读英语发音"><span class="msr">volume_up</span>听发音</button>
+              </div>
             </div>
 
-            <div class="spelling-section">
-              <p class="options-label">请输入英语单词：</p>
-              <input type="text" class="spelling-input" id="englishSpInput" placeholder="Type English word..." autocomplete="off">
-              <button class="check-btn" id="englishSpCheckBtn">检查答案</button>
-            </div>
-          </div>
+            <div class="field-label">请输入英语单词</div>
+            <input type="text" class="spell-input" id="englishSpInput" placeholder="Type English word..." autocomplete="off">
+            <button class="primary-btn" id="englishSpCheckBtn">检查答案</button>
 
-          <div class="quiz-feedback hidden" id="englishSpFeedback">
-            <p class="feedback-text"></p>
-            <button class="next-btn" id="englishSpNextBtn">下一个 →</button>
+            <div class="hidden" id="englishSpFeedback">
+              <p class="feedback feedback-text"></p>
+              <button class="primary-btn" id="englishSpNextBtn">下一个 <span class="msr">arrow_forward</span></button>
+            </div>
           </div>
         </div>
       </section>
@@ -1086,81 +1068,72 @@
 
       <!-- 选择题模式 -->
       <section id="multipleChoiceScreen" class="screen">
-        <div class="quiz-container">
-          <div class="quiz-header">
-            <button class="back-btn" id="mcBackBtn">← 返回</button>
-            <div class="quiz-progress">
-              <span id="mcCurrentWord">1</span> / <span id="mcTotalWords">0</span>
-            </div>
-            <div class="quiz-score">
-              正确率: <strong id="mcAccuracy">0%</strong>
-            </div>
+        <div class="container narrow">
+          <button class="back-link" id="mcBackBtn"><span class="msr">arrow_back</span>返回</button>
+          <div class="practice-head">
+            <span class="idx"><span id="mcCurrentWord">1</span> / <span id="mcTotalWords">0</span></span>
+            <span class="acc">正确率 <b id="mcAccuracy">0%</b></span>
           </div>
+          <div class="session-bar"><div class="session-fill" id="mcSessionFill" style="width:0%"></div></div>
 
-          <div class="quiz-card">
+          <div class="practice-card">
             <div class="question-section">
-              <p class="question-label">意大利语单词：</p>
-              <h2 class="italian-word" id="mcItalianWord">-</h2>
-              <button class="hint-btn hidden" id="mcShowHintBtn" onclick="MultipleChoice.showHint()">
-                <svg class="icon"><use href="#icon-help"></use></svg>显示提示
-              </button>
+              <div class="eyebrow" style="text-align:center">意大利语单词</div>
+              <div class="word-row">
+                <h2 class="word" id="mcItalianWord">-</h2>
+                <button class="speaker" id="mcSpeakerBtn" title="朗读发音"><span class="msr">volume_up</span></button>
+              </div>
+              <button class="hint-btn hidden" id="mcShowHintBtn" onclick="MultipleChoice.showHint()">显示提示</button>
               <p class="chinese-hint hidden" id="mcChineseHint"></p>
             </div>
 
-            <div class="options-section">
-              <p class="options-label">选择正确的英语翻译：</p>
-              <div class="options-grid" id="mcOptions">
-                <!-- 动态生成选项 -->
-              </div>
+            <div class="field-label">选择正确的英语翻译</div>
+            <div class="options" id="mcOptions">
+              <!-- 动态生成选项 -->
             </div>
-          </div>
 
-          <div class="quiz-feedback hidden" id="mcFeedback">
-            <p class="feedback-text"></p>
-            <button class="next-btn" id="mcNextBtn">下一个 →</button>
+            <div class="hidden" id="mcFeedback">
+              <p class="feedback feedback-text"></p>
+              <button class="primary-btn" id="mcNextBtn">下一个 <span class="msr">arrow_forward</span></button>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- 拼写模式 -->
       <section id="spellingScreen" class="screen">
-        <div class="quiz-container">
-          <div class="quiz-header">
-            <button class="back-btn" id="spBackBtn">← 返回</button>
-            <div class="quiz-progress">
-              <span id="spCurrentWord">1</span> / <span id="spTotalWords">0</span>
-            </div>
-            <div class="quiz-score">
-              正确率: <strong id="spAccuracy">0%</strong>
-            </div>
+        <div class="container narrow">
+          <button class="back-link" id="spBackBtn"><span class="msr">arrow_back</span>返回</button>
+          <div class="practice-head">
+            <span class="idx"><span id="spCurrentWord">1</span> / <span id="spTotalWords">0</span></span>
+            <span class="acc">正确率 <b id="spAccuracy">0%</b></span>
           </div>
+          <div class="session-bar"><div class="session-fill" id="spSessionFill" style="width:0%"></div></div>
 
-          <div class="quiz-card">
+          <div class="practice-card">
             <div class="question-section">
-              <p class="question-label">英语翻译：</p>
-              <h2 class="english-word" id="spEnglishWord">-</h2>
+              <div class="eyebrow" style="text-align:center">英语翻译</div>
+              <h2 class="word" style="font-size:32px" id="spEnglishWord">-</h2>
               <p class="chinese-hint hidden" id="spChineseHint"></p>
-              <button class="pronunciation-btn" id="spPronunciationBtn" title="点击朗读意大利语发音">
-                <svg class="icon"><use href="#icon-volume"></use></svg>听发音
-              </button>
+              <div style="text-align:center;margin-top:16px">
+                <button class="pill-btn" id="spPronunciationBtn" title="点击朗读意大利语发音"><span class="msr">volume_up</span>听发音</button>
+              </div>
             </div>
 
-            <div class="spelling-section">
-              <p class="options-label">请输入意大利语单词：</p>
-              <input 
-                type="text" 
-                class="spelling-input" 
-                id="spInput" 
-                placeholder="输入意大利语..."
-                autocomplete="off"
-              >
-              <button class="check-btn" id="spCheckBtn">检查答案</button>
-            </div>
-          </div>
+            <div class="field-label">请输入意大利语单词</div>
+            <input
+              type="text"
+              class="spell-input"
+              id="spInput"
+              placeholder="输入意大利语..."
+              autocomplete="off"
+            >
+            <button class="primary-btn" id="spCheckBtn">检查答案</button>
 
-          <div class="quiz-feedback hidden" id="spFeedback">
-            <p class="feedback-text"></p>
-            <button class="next-btn" id="spNextBtn">下一个 →</button>
+            <div class="hidden" id="spFeedback">
+              <p class="feedback feedback-text"></p>
+              <button class="primary-btn" id="spNextBtn">下一个 <span class="msr">arrow_forward</span></button>
+            </div>
           </div>
         </div>
       </section>

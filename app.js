@@ -894,6 +894,7 @@ const MultipleChoice = {
     // 更新进度
     document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
     document.getElementById('mcTotalWords').textContent = AppState.currentWords.length;
+    updateSessionFill('mcSessionFill', AppState.quizIndex, AppState.currentWords.length);
 
     // 更新正确率
     const accuracy = AppState.quizTotal > 0
@@ -973,7 +974,8 @@ const MultipleChoice = {
     var engine = this._getEngine();
     engine.highlightOptions(correctAnswer);
     if (!isCorrect) {
-      button.classList.add('incorrect');
+      button.classList.remove('faded');
+      button.classList.add('wrong');
     }
 
     engine.showFeedback(isCorrect, correctAnswer);
@@ -1069,6 +1071,7 @@ const Spelling = {
     // 更新进度
     document.getElementById('spCurrentWord').textContent = AppState.quizIndex + 1;
     document.getElementById('spTotalWords').textContent = AppState.currentWords.length;
+    updateSessionFill('spSessionFill', AppState.quizIndex, AppState.currentWords.length);
 
     // 更新正确率
     const accuracy = AppState.quizTotal > 0
@@ -1095,6 +1098,7 @@ const Spelling = {
     const input = document.getElementById('spInput');
     input.value = '';
     input.disabled = false;
+    input.classList.remove('good', 'bad');
     input.focus();
 
     // 启用检查按钮
@@ -1128,15 +1132,21 @@ const Spelling = {
     // 显示反馈
     const feedback = document.getElementById('spFeedback');
     const feedbackText = feedback.querySelector('.feedback-text');
+    input.classList.remove('good', 'bad');
+    input.classList.add(isCorrect ? 'good' : 'bad');
 
     if (isCorrect) {
-      feedbackText.textContent = '回答正确';
+      feedbackText.innerHTML = '<span class="msr">check_circle</span>回答正确';
+      feedbackText.classList.remove('no');
+      feedbackText.classList.add('ok');
       feedback.classList.remove('incorrect');
       feedback.classList.add('correct');
       // 答对时，1秒后自动跳转下一题
       setTimeout(() => this.nextQuestion(), 1000);
     } else {
-      feedbackText.textContent = `回答有误，正确答案是：${AppState.currentWord.italian}`;
+      feedbackText.innerHTML = `<span class="msr">cancel</span>回答有误，正确答案是：${escapeHtml(AppState.currentWord.italian)}`;
+      feedbackText.classList.remove('ok');
+      feedbackText.classList.add('no');
       feedback.classList.remove('correct');
       feedback.classList.add('incorrect');
     }
@@ -1891,6 +1901,14 @@ function shuffleArray(array) {
   return arr;
 }
 
+// 更新练习界面顶部的进度条（redesign .session-bar/.session-fill）
+function updateSessionFill(id, index, total) {
+  const fill = document.getElementById(id);
+  if (!fill) return;
+  const pct = total > 0 ? Math.min(100, Math.round((index / total) * 100)) : 0;
+  fill.style.width = pct + '%';
+}
+
 // ==================== 事件绑定 ====================
 
 function bindEvents() {
@@ -2097,9 +2115,16 @@ function bindEvents() {
   document.getElementById('mcBackBtn').addEventListener('click', () => {
     goBack({ fallbackTarget: 'vocabularyModesScreen' });
   });
-  
+
   document.getElementById('mcNextBtn').addEventListener('click', () => {
     MultipleChoice.nextQuestion();
+  });
+
+  // 选择题发音按钮
+  document.getElementById('mcSpeakerBtn')?.addEventListener('click', () => {
+    if (AppState.currentWord && AppState.currentWord.italian) {
+      italianSpeaker.speak(AppState.currentWord.italian);
+    }
   });
   
   // 拼写模式
@@ -2296,10 +2321,11 @@ MultipleChoice.loadQuestion = function() {
   // 更新进度
   document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
   document.getElementById('mcTotalWords').textContent = AppState.currentWords.length;
-  
+  updateSessionFill('mcSessionFill', AppState.quizIndex, AppState.currentWords.length);
+
   // 更新正确率
-  const accuracy = AppState.quizTotal > 0 
-    ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100) 
+  const accuracy = AppState.quizTotal > 0
+    ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100)
     : 0;
   document.getElementById('mcAccuracy').textContent = accuracy + '%';
   
@@ -2346,7 +2372,8 @@ if (typeof StatsManager !== 'undefined' && typeof SpacedRepetition !== 'undefine
     const input = document.getElementById('spInput');
     const userAnswer = input.value.trim().toLowerCase();
     const correctAnswer = AppState.currentWord.italian.toLowerCase();
-    const isCorrect = this.normalizeString(userAnswer) === this.normalizeString(correctAnswer);
+    const engine = this._getEngine();
+    const isCorrect = engine.normalizeString(userAnswer) === engine.normalizeString(correctAnswer);
     
     StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
     
