@@ -349,85 +349,76 @@
       </section>
 
       <section id="germanProgressScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="germanProgressBackBtn">返回 German Home</button>
-            <div>
-              <p class="eyebrow">German / Progress</p>
-              <h2><svg class="icon"><use href="#icon-chart"></use></svg>德语学习进度</h2>
-            </div>
-            <p class="subtitle">基于当前德语词汇练习数据，查看掌握量与练习统计。</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="germanProgressBackBtn"><span class="msr">arrow_back</span>返回 German Home</button>
+          <div class="eyebrow">German / Progress</div>
+          <h1 class="page">德语学习进度</h1>
+          <p class="desc">基于当前德语词汇练习数据，查看掌握量与练习统计。</p>
 
-          <div class="stats-grid progress-summary-grid">
-            <div class="stat-card">
-              <div class="stat-card-label">德语词汇总量</div>
-              <div class="stat-card-value" id="germanProgressTotalWords">0</div>
+          <div class="big-stats">
+            <div class="big-stat">
+              <div class="bs-label">德语词汇总量</div>
+              <div class="bs-value" id="germanProgressTotalWords">0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">已掌握</div>
-              <div class="stat-card-value" id="germanProgressMasteredWords">0</div>
+            <div class="big-stat accent">
+              <div class="bs-label">已掌握</div>
+              <div class="bs-value" id="germanProgressMasteredWords">0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">当前进度</div>
-              <div class="stat-card-value" id="germanProgressPercent">0%</div>
+            <div class="big-stat">
+              <div class="bs-label">当前进度</div>
+              <div class="bs-value" id="germanProgressPercent">0%</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">选择题统计</div>
-              <div class="stat-card-value" id="germanProgressMcStats">0 / 0</div>
+            <div class="big-stat">
+              <div class="bs-label">选择题统计</div>
+              <div class="bs-value" id="germanProgressMcStats">0 / 0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">拼写统计</div>
-              <div class="stat-card-value" id="germanProgressSpStats">0 / 0</div>
+            <div class="big-stat">
+              <div class="bs-label">拼写统计</div>
+              <div class="bs-value" id="germanProgressSpStats">0 / 0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">综合正确率</div>
-              <div class="stat-card-value" id="germanProgressAccuracy">0%</div>
+            <div class="big-stat accent">
+              <div class="bs-label">综合正确率</div>
+              <div class="bs-value" id="germanProgressAccuracy">0%</div>
             </div>
           </div>
 
-          <div class="module-grid single-column-grid compact-grid">
-            <div class="module-card wide-card">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
-              <span class="module-card-title">说明</span>
-              <span class="module-card-desc">当前德语 Progress 统计的是德语系统词汇练习的本地学习记录。</span>
-            </div>
+          <div class="panel" style="margin-top:16px">
+            <div class="panel-title">说明</div>
+            <div class="about-note">当前德语 Progress 统计的是德语系统词汇练习的本地学习记录。</div>
           </div>
         </div>
       </section>
 
       <section id="germanSettingsScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="germanSettingsBackBtn">返回 German Home</button>
-            <div>
-              <p class="eyebrow">German / Settings &amp; Data</p>
-              <h2><svg class="icon"><use href="#icon-settings"></use></svg>德语设置与数据</h2>
-            </div>
-            <p class="subtitle">查看德语模块信息，并使用站点通用的数据与主题功能。</p>
+        <div class="container">
+          <button class="back-link" id="germanSettingsBackBtn"><span class="msr">arrow_back</span>返回 German Home</button>
+          <div class="eyebrow">German / Settings &amp; Data</div>
+          <h1 class="page">德语设置与数据</h1>
+          <p class="desc">查看德语模块信息，并使用站点通用的数据与主题功能。</p>
+
+          <div class="settings-card">
+            <div class="settings-card-title">德语模块</div>
+            <div class="about-body">德语系统词汇练习、德语语法书阅读、共享社区词库入口。德语学习进度使用独立 localStorage key 保存；导入导出仍走全站统一数据结构。</div>
           </div>
 
-          <div class="module-grid single-column-grid compact-grid">
-            <div class="module-card wide-card">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-library"></use></svg></span>
-              <span class="module-card-title">德语模块</span>
-              <span class="module-card-desc">德语系统词汇练习、德语语法书阅读、共享社区词库入口。</span>
-            </div>
-            <button class="module-card wide-card" id="germanSettingsCommunityBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
-              <span class="module-card-title">打开社区词库</span>
-              <span class="module-card-desc">浏览社区词库并导入需要的学习资源。</span>
+          <div class="settings-card">
+            <div class="settings-card-title">数据与社区</div>
+            <button class="data-row" id="germanSettingsCommunityBtn">
+              <span class="row-chip"><span class="msr">groups</span></span>
+              <span class="row-body">
+                <span class="row-title">打开社区词库</span>
+                <span class="row-sub">浏览社区词库并导入需要的学习资源</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
             </button>
-            <button class="module-card wide-card" id="germanSettingsGlobalDataBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-settings"></use></svg></span>
-              <span class="module-card-title">打开全站 Settings &amp; Data</span>
-              <span class="module-card-desc">打开站点数据、主题、帮助与重置功能。</span>
+            <button class="data-row" id="germanSettingsGlobalDataBtn">
+              <span class="row-chip"><span class="msr">tune</span></span>
+              <span class="row-body">
+                <span class="row-title">打开全站 Settings &amp; Data</span>
+                <span class="row-sub">打开站点数据、主题、帮助与重置功能</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
             </button>
-            <div class="module-card wide-card">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
-              <span class="module-card-title">数据说明</span>
-              <span class="module-card-desc">德语学习进度使用独立 localStorage key 保存；导入导出仍走全站统一数据结构。</span>
-            </div>
           </div>
         </div>
       </section>
@@ -646,85 +637,76 @@
       </section>
 
       <section id="englishProgressScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="englishProgressBackBtn">返回 English Home</button>
-            <div>
-              <p class="eyebrow">English / Progress</p>
-              <h2><svg class="icon"><use href="#icon-chart"></use></svg>English learning progress</h2>
-            </div>
-            <p class="subtitle">基于当前英语词汇练习数据，查看掌握量与练习统计。</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="englishProgressBackBtn"><span class="msr">arrow_back</span>返回 English Home</button>
+          <div class="eyebrow">English / Progress</div>
+          <h1 class="page">English learning progress</h1>
+          <p class="desc">基于当前英语词汇练习数据，查看掌握量与练习统计。</p>
 
-          <div class="stats-grid progress-summary-grid">
-            <div class="stat-card">
-              <div class="stat-card-label">English vocabulary</div>
-              <div class="stat-card-value" id="englishProgressTotalWords">0</div>
+          <div class="big-stats">
+            <div class="big-stat">
+              <div class="bs-label">English vocabulary</div>
+              <div class="bs-value" id="englishProgressTotalWords">0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">Mastered</div>
-              <div class="stat-card-value" id="englishProgressMasteredWords">0</div>
+            <div class="big-stat accent">
+              <div class="bs-label">Mastered</div>
+              <div class="bs-value" id="englishProgressMasteredWords">0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">Progress</div>
-              <div class="stat-card-value" id="englishProgressPercent">0%</div>
+            <div class="big-stat">
+              <div class="bs-label">Progress</div>
+              <div class="bs-value" id="englishProgressPercent">0%</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">MC stats</div>
-              <div class="stat-card-value" id="englishProgressMcStats">0 / 0</div>
+            <div class="big-stat">
+              <div class="bs-label">MC stats</div>
+              <div class="bs-value" id="englishProgressMcStats">0 / 0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">Spelling stats</div>
-              <div class="stat-card-value" id="englishProgressSpStats">0 / 0</div>
+            <div class="big-stat">
+              <div class="bs-label">Spelling stats</div>
+              <div class="bs-value" id="englishProgressSpStats">0 / 0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">Accuracy</div>
-              <div class="stat-card-value" id="englishProgressAccuracy">0%</div>
+            <div class="big-stat accent">
+              <div class="bs-label">Accuracy</div>
+              <div class="bs-value" id="englishProgressAccuracy">0%</div>
             </div>
           </div>
 
-          <div class="module-grid single-column-grid compact-grid">
-            <div class="module-card wide-card">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
-              <span class="module-card-title">Note</span>
-              <span class="module-card-desc">Current English Progress reflects local learning records from the English vocabulary module.</span>
-            </div>
+          <div class="panel" style="margin-top:16px">
+            <div class="panel-title">Note</div>
+            <div class="about-note">Current English Progress reflects local learning records from the English vocabulary module.</div>
           </div>
         </div>
       </section>
 
       <section id="englishSettingsScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="englishSettingsBackBtn">返回 English Home</button>
-            <div>
-              <p class="eyebrow">English / Settings &amp; Data</p>
-              <h2><svg class="icon"><use href="#icon-settings"></use></svg>English settings &amp; data</h2>
-            </div>
-            <p class="subtitle">View English module information and use the site's shared data tools.</p>
+        <div class="container">
+          <button class="back-link" id="englishSettingsBackBtn"><span class="msr">arrow_back</span>返回 English Home</button>
+          <div class="eyebrow">English / Settings &amp; Data</div>
+          <h1 class="page">English settings &amp; data</h1>
+          <p class="desc">View English module information and use the site's shared data tools.</p>
+
+          <div class="settings-card">
+            <div class="settings-card-title">English module</div>
+            <div class="about-body">English system vocabulary practice, English grammar book, and the shared community wordbook entry. English learning progress is stored with dedicated localStorage keys, while import/export still uses the global data structure.</div>
           </div>
 
-          <div class="module-grid single-column-grid compact-grid">
-            <div class="module-card wide-card">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-library"></use></svg></span>
-              <span class="module-card-title">English module</span>
-              <span class="module-card-desc">English system vocabulary practice, English grammar book, and the shared community wordbook entry.</span>
-            </div>
-            <button class="module-card wide-card" id="englishSettingsCommunityBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
-              <span class="module-card-title">Open Community Wordbooks</span>
-              <span class="module-card-desc">Browse community wordbooks and import useful resources.</span>
+          <div class="settings-card">
+            <div class="settings-card-title">Data &amp; community</div>
+            <button class="data-row" id="englishSettingsCommunityBtn">
+              <span class="row-chip"><span class="msr">groups</span></span>
+              <span class="row-body">
+                <span class="row-title">Open Community Wordbooks</span>
+                <span class="row-sub">Browse community wordbooks and import useful resources</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
             </button>
-            <button class="module-card wide-card" id="englishSettingsGlobalDataBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-settings"></use></svg></span>
-              <span class="module-card-title">Open Global Settings &amp; Data</span>
-              <span class="module-card-desc">Use export, import, theme, help and reset from the shared data center.</span>
+            <button class="data-row" id="englishSettingsGlobalDataBtn">
+              <span class="row-chip"><span class="msr">tune</span></span>
+              <span class="row-body">
+                <span class="row-title">Open Global Settings &amp; Data</span>
+                <span class="row-sub">Use export, import, theme, help and reset from the shared data center</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
             </button>
-            <div class="module-card wide-card">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
-              <span class="module-card-title">Data note</span>
-              <span class="module-card-desc">English learning progress is stored with dedicated localStorage keys, while import/export still uses the global data structure.</span>
-            </div>
           </div>
         </div>
       </section>
@@ -979,103 +961,125 @@
       </section>
 
       <section id="progressScreen" class="screen">
-        <div class="welcome-card module-view-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="progressBackBtn">返回 Home</button>
-            <div>
-              <p class="eyebrow">Progress</p>
-              <h2><svg class="icon"><use href="#icon-chart"></use></svg>统计与学习进展</h2>
-            </div>
-            <p class="subtitle">查看当前学习数据</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="progressBackBtn"><span class="msr">arrow_back</span>返回 Home</button>
+          <div class="eyebrow">Progress</div>
+          <h1 class="page">统计与学习进展</h1>
+          <p class="desc">查看当前语言的学习数据与最近练习情况。</p>
 
-          <div class="stats-grid progress-summary-grid">
-            <div class="stat-card">
-              <div class="stat-card-label">当前词汇量范围</div>
-              <div class="stat-card-value" id="progressCurrentTotalWords">0</div>
+          <div class="big-stats">
+            <div class="big-stat">
+              <div class="bs-label">当前词汇量范围</div>
+              <div class="bs-value" id="progressCurrentTotalWords">0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">当前已掌握</div>
-              <div class="stat-card-value" id="progressCurrentMasteredWords">0</div>
+            <div class="big-stat accent">
+              <div class="bs-label">当前已掌握</div>
+              <div class="bs-value" id="progressCurrentMasteredWords">0</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-card-label">当前进度</div>
-              <div class="stat-card-value" id="progressCurrentPercent">0%</div>
+            <div class="big-stat">
+              <div class="bs-label">当前进度</div>
+              <div class="bs-value" id="progressCurrentPercent">0%</div>
             </div>
           </div>
 
-          <div class="module-grid single-column-grid compact-grid">
-            <button class="module-card wide-card" id="openProgressStatsBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-chart"></use></svg></span>
-              <span class="module-card-title">打开完整统计面板</span>
-              <span class="module-card-desc">概览、图表与历史记录</span>
+          <div class="progress-2col">
+            <div class="panel">
+              <div class="panel-title">最近 7 天练习量</div>
+              <div class="bar-chart" id="progressWeekBars"></div>
+            </div>
+            <div class="panel">
+              <div class="panel-title">正确率</div>
+              <div id="progressAccuracyRows"></div>
+              <div class="acc-total"><span>总练习次数</span><b id="progressTotalAttempts">0</b></div>
+            </div>
+          </div>
+
+          <div class="settings-card">
+            <button class="data-row" id="openProgressStatsBtn">
+              <span class="row-chip"><span class="msr">monitoring</span></span>
+              <span class="row-body">
+                <span class="row-title">打开完整统计面板</span>
+                <span class="row-sub">概览、图表与历史记录</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
             </button>
           </div>
         </div>
       </section>
 
       <section id="settingsScreen" class="screen">
-        <div class="welcome-card module-view-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="settingsBackBtn">返回 Home</button>
-            <div>
-              <p class="eyebrow">Settings &amp; Data</p>
-              <h2><svg class="icon"><use href="#icon-settings"></use></svg>设置、数据与辅助功能</h2>
-            </div>
-            <p class="subtitle">数据与辅助功能</p>
+        <div class="container">
+          <button class="back-link" id="settingsBackBtn"><span class="msr">arrow_back</span>返回 Home</button>
+          <div class="eyebrow">Settings &amp; Data</div>
+          <h1 class="page">设置、数据与辅助功能</h1>
+          <p class="desc">导入导出、主题切换、社区发布与学习偏好。</p>
+
+          <div class="settings-card">
+            <div class="settings-card-title">数据与辅助</div>
+            <button class="data-row" id="settingsExportBtn">
+              <span class="row-chip"><span class="msr">ios_share</span></span>
+              <span class="row-body">
+                <span class="row-title">导出数据</span>
+                <span class="row-sub">导出学习记录、自定义词本与统计数据</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
+            </button>
+            <button class="data-row" id="settingsImportBtn">
+              <span class="row-chip"><span class="msr">download</span></span>
+              <span class="row-body">
+                <span class="row-title">导入数据</span>
+                <span class="row-sub">恢复备份，支持覆盖或合并模式</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
+            </button>
+            <button class="data-row" id="settingsThemeBtn">
+              <span class="row-chip"><span class="msr">dark_mode</span></span>
+              <span class="row-body">
+                <span class="row-title">切换主题</span>
+                <span class="row-sub">在浅色与深色主题之间切换</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
+            </button>
+            <button class="data-row" id="settingsHelpBtn">
+              <span class="row-chip"><span class="msr">help</span></span>
+              <span class="row-body">
+                <span class="row-title">使用说明</span>
+                <span class="row-sub">查看功能说明、格式指南与学习建议</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
+            </button>
+            <button class="data-row" id="settingsCommunityUploadBtn">
+              <span class="row-chip"><span class="msr">upload_file</span></span>
+              <span class="row-body">
+                <span class="row-title">发布社区词本</span>
+                <span class="row-sub">把你的词本上传到社区，分享给其他学习者</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
+            </button>
+            <button class="data-row danger" id="settingsResetBtn">
+              <span class="row-chip"><span class="msr">restart_alt</span></span>
+              <span class="row-body">
+                <span class="row-title">重置学习数据</span>
+                <span class="row-sub">清空本地学习记录，执行前会再次确认</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
+            </button>
           </div>
 
-          <div class="module-grid settings-grid">
-            <button class="module-card" id="settingsExportBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
-              <span class="module-card-title">导出数据</span>
-              <span class="module-card-desc">导出学习记录、自定义词本与统计数据。</span>
-            </button>
-            <button class="module-card" id="settingsImportBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-download"></use></svg></span>
-              <span class="module-card-title">导入数据</span>
-              <span class="module-card-desc">恢复备份，支持覆盖或合并模式。</span>
-            </button>
-            <button class="module-card" id="settingsThemeBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-theme"></use></svg></span>
-              <span class="module-card-title">切换主题</span>
-              <span class="module-card-desc">在浅色与深色主题之间切换。</span>
-            </button>
-            <button class="module-card" id="settingsHelpBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-help"></use></svg></span>
-              <span class="module-card-title">使用说明</span>
-              <span class="module-card-desc">查看功能说明、格式指南与学习建议。</span>
-            </button>
-            <button class="module-card" id="settingsCommunityUploadBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-upload"></use></svg></span>
-              <span class="module-card-title">发布社区词本</span>
-              <span class="module-card-desc">把你的词本上传到社区，分享给其他学习者。</span>
-            </button>
-            <button class="module-card danger-card" id="settingsResetBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-reset"></use></svg></span>
-              <span class="module-card-title">重置学习数据</span>
-              <span class="module-card-desc">清空本地学习记录，执行前会再次确认。</span>
-            </button>
-          </div>
-
-          <div class="settings-section" id="learningPrefsSection">
-            <h3 class="settings-section-title">
-              <svg class="icon"><use href="#icon-settings"></use></svg>
-              学习偏好 / Learning preferences
-            </h3>
-            <div class="difficulty-setting">
-              <p class="difficulty-label">选择题难度</p>
-              <div class="difficulty-toggle" id="difficultyToggle" role="group" aria-label="选择题难度">
-                <button type="button" class="difficulty-option" data-difficulty="easy">
-                  <span class="difficulty-name">简单</span>
-                  <span class="difficulty-hint">随机干扰项</span>
-                </button>
-                <button type="button" class="difficulty-option" data-difficulty="hard">
-                  <span class="difficulty-name">困难</span>
-                  <span class="difficulty-hint">相似干扰项</span>
-                </button>
+          <div class="settings-card" id="learningPrefsSection">
+            <div class="settings-card-title">学习偏好</div>
+            <div class="pref-row">
+              <span class="pref-label">选择题难度</span>
+              <div class="segmented" id="difficultyToggle" role="group" aria-label="选择题难度">
+                <button type="button" class="seg difficulty-option" data-difficulty="easy" title="随机干扰项">简单</button>
+                <button type="button" class="seg difficulty-option" data-difficulty="hard" title="相似干扰项">困难</button>
               </div>
             </div>
+          </div>
+
+          <div class="settings-card">
+            <div class="settings-card-title">关于</div>
+            <div class="about-body">Dimenticato 是一个安静、专注的多语种背词工具，支持意大利语、德语与英语。词典数据来自 ECDICT、HanDeDict 等开源资源，变位数据基于 verbecc / mlconjug3。所有学习数据保存在本地浏览器中。</div>
           </div>
         </div>
       </section>
@@ -1401,6 +1405,39 @@
         </div>
       </section>
 
+      <!-- 社区词本浏览页面 -->
+      <section id="communityBrowseScreen" class="screen community-browse-screen">
+        <div class="container">
+          <button class="back-link" onclick="CommunityWordbooks.backToWelcome()"><span class="msr">arrow_back</span>返回</button>
+          <div class="eyebrow">Community</div>
+          <h1 class="page">社区词本</h1>
+          <p class="desc">浏览社区分享的词本，预览内容并导入到我的词本。</p>
+
+          <div class="browse-controls">
+            <div class="search-wrap">
+              <span class="msr">search</span>
+              <input
+                type="text"
+                class="search-input"
+                id="communitySearchInput"
+                placeholder="搜索词本名称..."
+                oninput="CommunityWordbooks.searchWordbooks(this.value)"
+              >
+            </div>
+            <select class="filter-select" onchange="CommunityWordbooks.updateDifficultyFilter(this.value)">
+              <option value="all">全部难度</option>
+              <option value="Beginner">初级</option>
+              <option value="Intermediate">中级</option>
+              <option value="Advanced">高级</option>
+            </select>
+          </div>
+
+          <div class="community-wordbook-list" id="communityWordbookList">
+            <!-- 动态生成词本列表 -->
+          </div>
+        </div>
+      </section>
+
       <div id="cognatePracticeContainer" class="practice-container hidden"></div>
 
       </main>
@@ -1435,7 +1472,7 @@
   <div id="statsModal" class="modal hidden">
     <div class="modal-content">
       <div class="modal-header">
-        <h3><svg class="icon"><use href="#icon-chart"></use></svg>学习统计</h3>
+        <h3><span class="msr">monitoring</span>学习统计</h3>
         <button class="close-btn" id="closeStatsBtn">×</button>
       </div>
       <div class="modal-body">
@@ -1471,26 +1508,26 @@
   <div id="wordbookEditorModal" class="modal hidden">
     <div class="modal-content editor-modal-content">
       <div class="modal-header">
-        <h3><svg class="icon"><use href="#icon-pen"></use></svg>编辑单词本: <span id="editorWordbookName"></span></h3>
+        <h3><span class="msr">edit</span>编辑单词本: <span id="editorWordbookName"></span></h3>
         <button class="close-btn" onclick="WordbookEditor.hideEditorModal()">×</button>
       </div>
       <div class="modal-body editor-modal-body">
         <div class="editor-toolbar">
           <div style="display: flex; gap: 0.5rem;">
             <button class="editor-toolbar-btn" onclick="WordbookEditor.addNewWord()">
-              <svg class="icon"><use href="#icon-plus"></use></svg>添加单词
+              <span class="msr">add</span>添加单词
             </button>
             <button class="editor-toolbar-btn" onclick="WordbookEditor.batchImportWords()">
-              <svg class="icon"><use href="#icon-download"></use></svg>批量添加新单词
+              <span class="msr">download</span>批量添加新单词
             </button>
             <button class="editor-toolbar-btn" onclick="WordbookEditor.showExportDialog(WordbookEditor.currentEditingWordbook.id)" title="导出单词本">
-              <svg class="icon"><use href="#icon-upload"></use></svg>导出
+              <span class="msr">ios_share</span>导出
             </button>
           </div>
           <input type="file" id="editorBatchImportInput" accept=".txt" style="display: none;">
           <div class="editor-batch-actions" style="display: none;">
             <button class="editor-toolbar-btn danger" onclick="WordbookEditor.batchDelete()">
-              <svg class="icon"><use href="#icon-trash"></use></svg>删除选中
+              <span class="msr">delete</span>删除选中
             </button>
           </div>
         </div>
@@ -1539,7 +1576,7 @@
   <div id="wordbookSelectDialog" class="modal hidden">
     <div class="modal-content" style="max-width: 500px;">
       <div class="modal-header">
-        <h3><svg class="icon"><use href="#icon-book-open"></use></svg>选择单词本</h3>
+        <h3><span class="msr">auto_stories</span>选择单词本</h3>
         <button class="close-btn" onclick="WordbookEditor.hideWordbookSelectDialog()">×</button>
       </div>
       <div class="modal-body">
@@ -1555,7 +1592,7 @@
   <div id="enhancedStatsModal" class="modal hidden">
     <div class="modal-content enhanced-stats-modal">
       <div class="modal-header">
-        <h3><svg class="icon"><use href="#icon-chart"></use></svg>学习统计</h3>
+        <h3><span class="msr">monitoring</span>学习统计</h3>
         <button class="close-btn" onclick="hideEnhancedStatsModal()">×</button>
       </div>
       <div class="modal-body enhanced-stats-body">
@@ -1575,7 +1612,7 @@
         <!-- 概览标签页 -->
         <div id="overviewTab" class="stats-tab-content active">
           <div class="stats-section">
-            <h4><svg class="icon"><use href="#icon-chart"></use></svg>今日统计</h4>
+            <h4><span class="msr">monitoring</span>今日统计</h4>
             <div class="stats-grid">
               <div class="stat-card">
                 <div class="stat-card-label">学习单词</div>
@@ -1593,7 +1630,7 @@
           </div>
 
           <div class="stats-section">
-            <h4><svg class="icon"><use href="#icon-check-circle"></use></svg>总计统计</h4>
+            <h4><span class="msr">check_circle</span>总计统计</h4>
             <div class="stats-grid">
               <div class="stat-card">
                 <div class="stat-card-label">累计学习单词</div>
@@ -1632,7 +1669,7 @@
 
         <!-- 历史记录标签页 -->
         <div id="historyTab" class="stats-tab-content">
-          <h4><svg class="icon"><use href="#icon-calendar"></use></svg>最近 7 天学习记录</h4>
+          <h4><span class="msr">calendar_month</span>最近 7 天学习记录</h4>
           <div class="stats-table-container">
             <table class="stats-table">
               <thead>
@@ -1661,7 +1698,7 @@
   <div id="communityUploadModal" class="modal hidden">
     <div class="modal-content" style="max-width: 600px;">
       <div class="modal-header">
-        <h3><svg class="icon"><use href="#icon-upload"></use></svg>上传词本到社区</h3>
+        <h3><span class="msr">ios_share</span>上传词本到社区</h3>
         <button class="close-btn" onclick="CommunityWordbooks.hideUploadDialog()">×</button>
       </div>
       <div class="modal-body">
@@ -1710,51 +1747,25 @@
             <label for="uploadFileInput">选择文件 * (JSON/TXT, 最大5MB)</label>
             <input type="file" id="uploadFileInput" accept=".json,.txt" style="display: none;" onchange="CommunityWordbooks.selectFile()">
             <button type="button" class="form-btn" onclick="document.getElementById('uploadFileInput').click()">
-              <svg class="icon"><use href="#icon-upload"></use></svg>选择文件
+              <span class="msr">ios_share</span>选择文件
             </button>
             <span id="uploadFileName" style="margin-left: 1rem; color: var(--text-secondary);">未选择文件</span>
           </div>
           
           <div class="form-actions">
             <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hideUploadDialog()">取消</button>
-            <button type="submit" class="form-btn primary" id="uploadWordbookBtn"><svg class="icon"><use href="#icon-upload"></use></svg>上传到社区</button>
+            <button type="submit" class="form-btn primary" id="uploadWordbookBtn"><span class="msr">ios_share</span>上传到社区</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 
-  <!-- 社区词本浏览页面 -->
-  <section id="communityBrowseScreen" class="screen community-browse-screen">
-    <div class="browse-container">
-      <div class="browse-header">
-        <button class="back-btn" onclick="CommunityWordbooks.backToWelcome()">← 返回</button>
-        <input 
-          type="text" 
-          class="search-input" 
-          id="communitySearchInput" 
-          placeholder="搜索词本名称..."
-          oninput="CommunityWordbooks.searchWordbooks(this.value)"
-        >
-        <select class="filter-select" onchange="CommunityWordbooks.updateDifficultyFilter(this.value)">
-          <option value="all">全部难度</option>
-          <option value="Beginner">初级</option>
-          <option value="Intermediate">中级</option>
-          <option value="Advanced">高级</option>
-        </select>
-      </div>
-      
-      <div class="community-wordbook-list" id="communityWordbookList">
-        <!-- 动态生成词本列表 -->
-      </div>
-    </div>
-  </section>
-
   <!-- 社区词本预览模态框 -->
   <div id="communityPreviewModal" class="modal hidden">
     <div class="modal-content" style="max-width: 700px;">
       <div class="modal-header">
-        <h3><svg class="icon"><use href="#icon-eye"></use></svg>预览: <span id="previewWordbookTitle"></span></h3>
+        <h3><span class="msr">visibility</span>预览: <span id="previewWordbookTitle"></span></h3>
         <button class="close-btn" onclick="CommunityWordbooks.hidePreviewModal()">×</button>
       </div>
       <div class="modal-body">
@@ -1762,7 +1773,7 @@
         <div id="previewWordList" class="preview-word-list"></div>
         <div class="form-actions">
           <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hidePreviewModal()">关闭</button>
-          <button type="button" class="form-btn primary" id="previewDownloadBtn"><svg class="icon"><use href="#icon-download"></use></svg>导入学习</button>
+          <button type="button" class="form-btn primary" id="previewDownloadBtn"><span class="msr">download</span>导入学习</button>
         </div>
       </div>
     </div>
@@ -1772,20 +1783,20 @@
   <div id="helpModal" class="modal hidden">
     <div class="modal-content help-modal-content">
       <div class="modal-header">
-        <h3><svg class="icon"><use href="#icon-help"></use></svg>使用说明</h3>
+        <h3><span class="msr">help</span>使用说明</h3>
         <button class="close-btn" id="closeHelpBtn">×</button>
       </div>
       <div class="modal-body help-modal-body">
         <div class="help-section">
-          <h2><svg class="icon"><use href="#icon-brand"></use></svg>Dimenticato - 背单词</h2>
+          <h2><span class="msr">translate</span>Dimenticato - 背单词</h2>
           <p class="help-intro">一个纯静态的多语言词汇学习网页应用，当前支持 Italian、German、English 三个语言入口，支持本地离线使用。</p>
         </div>
 
         <div class="help-section">
-          <h3><svg class="icon"><use href="#icon-spark"></use></svg>功能特点</h3>
+          <h3><span class="msr">auto_awesome</span>功能特点</h3>
           
           <div class="feature-box">
-            <h4><svg class="icon"><use href="#icon-brand"></use></svg>多语言入口</h4>
+            <h4><span class="msr">translate</span>多语言入口</h4>
             <ul>
               <li><strong>Italian</strong>：完整词汇、语法、动词变位、动词搭配、社区与统计体验</li>
               <li><strong>German</strong>：系统词汇练习、德语语法书、基础 Progress、Settings &amp; Data</li>
@@ -1795,7 +1806,7 @@
           </div>
 
           <div class="feature-box">
-            <h4><svg class="icon"><use href="#icon-library"></use></svg>系统词汇库</h4>
+            <h4><span class="msr">menu_book</span>系统词汇库</h4>
             <ul>
               <li><strong>Italian</strong>：28,787 个意大利语单词及英语翻译</li>
               <li><strong>German</strong>：已接入德语系统词汇数据，可进行选择题 / 拼写 / 浏览练习</li>
@@ -1805,7 +1816,7 @@
           </div>
 
           <div class="feature-box">
-            <h4><svg class="icon"><use href="#icon-pen"></use></svg>自定义单词本</h4>
+            <h4><span class="msr">edit</span>自定义单词本</h4>
             <ul>
               <li><strong>导入自己的单词本</strong> - 支持 JSON 和 TXT 两种格式</li>
               <li><strong>独立进度跟踪</strong> - 每个单词本的学习进度独立保存</li>
@@ -1815,7 +1826,7 @@
           </div>
 
           <div class="feature-box highlight">
-            <h4><svg class="icon"><use href="#icon-book-open"></use></svg>TXT 格式 - 超简单的记笔记方式</h4>
+            <h4><span class="msr">auto_stories</span>TXT 格式 - 超简单的记笔记方式</h4>
             <p>不需要处理复杂的 JSON 语法，用记事本就能创建单词本！</p>
             
             <p><strong>基本规则：</strong></p>
@@ -1869,7 +1880,7 @@ love
           </div>
 
           <div class="feature-box">
-            <h4><svg class="icon"><use href="#icon-grid"></use></svg>学习模式</h4>
+            <h4><span class="msr">grid_view</span>学习模式</h4>
             <ul>
               <li><strong>选择题模式</strong> - 显示意大利语单词，从4个选项中选择正确的英语翻译
                 <ul>
@@ -1888,7 +1899,7 @@ love
         </div>
 
         <div class="help-section">
-          <h3><svg class="icon"><use href="#icon-check-circle"></use></svg>使用方法</h3>
+          <h3><span class="msr">check_circle</span>使用方法</h3>
           
           <div class="usage-box">
             <h4>使用系统词汇库：</h4>
@@ -1916,10 +1927,10 @@ love
         </div>
 
         <div class="help-section">
-          <h3><svg class="icon"><use href="#icon-spark"></use></svg>其他功能</h3>
+          <h3><span class="msr">auto_awesome</span>其他功能</h3>
           
           <div class="feature-box">
-            <h4><svg class="icon"><use href="#icon-upload"></use></svg>导出/导入学习记录</h4>
+            <h4><span class="msr">ios_share</span>导出/导入学习记录</h4>
             <ul>
               <li><strong>导出数据</strong> - 将所有学习进度、统计数据、自定义单词本导出为 JSON 文件
                 <ul>
@@ -1940,7 +1951,7 @@ love
           </div>
 
           <div class="feature-box">
-            <h4><svg class="icon"><use href="#icon-search"></use></svg>浏览模式高级功能</h4>
+            <h4><span class="msr">search</span>浏览模式高级功能</h4>
             <ul>
               <li><strong>添加到单词本</strong> - 在浏览模式中，点击单词旁的"➕"按钮可将单词添加到自定义单词本
                 <ul>
@@ -1961,9 +1972,9 @@ love
         </div>
 
         <div class="help-section">
-          <h3><svg class="icon"><use href="#icon-book-open"></use></svg>数据来源与致谢</h3>
+          <h3><span class="msr">auto_stories</span>数据来源与致谢</h3>
           <div class="feature-box">
-            <h4><svg class="icon"><use href="#icon-library"></use></svg>词汇与释义数据</h4>
+            <h4><span class="msr">menu_book</span>词汇与释义数据</h4>
             <ul>
               <li><strong>English 释义</strong> - 部分释义来自 <a href="https://github.com/skywind3000/ECDICT" target="_blank" rel="noopener">ECDICT</a>（开源聚合英汉词典数据）</li>
               <li><strong>German 词汇</strong> - 部分词条来自 <a href="https://github.com/gugray/HanDeDict" target="_blank" rel="noopener">HanDeDict</a>，授权协议 <strong>CC&#8209;BY&#8209;SA&nbsp;3.0</strong>（本项目相应数据沿用 ShareAlike 协议）</li>
@@ -1973,7 +1984,7 @@ love
             </ul>
           </div>
           <div class="feature-box">
-            <h4><svg class="icon"><use href="#icon-spark"></use></svg>开源库</h4>
+            <h4><span class="msr">auto_awesome</span>开源库</h4>
             <ul>
               <li>图表统计 - <a href="https://www.chartjs.org/" target="_blank" rel="noopener">Chart.js</a></li>
               <li>Markdown 渲染 - <a href="https://marked.js.org/" target="_blank" rel="noopener">marked.js</a></li>

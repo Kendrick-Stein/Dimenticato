@@ -5671,3 +5671,102 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 /* Browse rows: second action button + inline note under the gloss */
 .wl-actions{display:flex;align-items:center;gap:8px;justify-self:end}
 .wl-gloss .wl-note{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+
+/* ============================================================
+   ===== STREAM F ADDITIONS =====
+   Progress + Settings + Community browse + modal reskins.
+   Only additions/overrides on top of the component library;
+   chromatic color limited to var(--accent) (+ --bad for danger).
+   ============================================================ */
+
+/* ---- DE/EN progress note text inside a .panel ---- */
+.about-note{color:var(--ink-2);font-size:14px;line-height:1.7}
+
+/* ---- Segmented difficulty control: neutralize legacy .difficulty-option box
+       (markup keeps .difficulty-option for the app.js toggle wiring) ---- */
+.segmented .difficulty-option{min-width:0;flex-direction:row;align-items:center;justify-content:center;gap:0}
+
+/* ---- Community browse: normalize from legacy fixed overlay to a normal screen ---- */
+.community-browse-screen{position:static;top:auto;left:auto;right:auto;bottom:auto;z-index:auto;background:transparent;padding:0;overflow:visible}
+.browse-controls .filter-select{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:11px 14px;font-size:14px;font-weight:600;color:var(--ink);cursor:pointer}
+.browse-controls .filter-select:hover{border-color:var(--border-strong)}
+.browse-controls .filter-select:focus{outline:none;border-color:var(--accent)}
+
+/* ---- Community wordbook cards ---- */
+.community-wordbook-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:8px}
+.community-wordbook-list .loading-message,
+.community-wordbook-list .error-message,
+.community-wordbook-list .empty-message{grid-column:1/-1;text-align:center;color:var(--muted);font-size:14px;padding:40px 0;background:none;border:none}
+.community-wordbook-list .empty-icon .msr{font-size:40px;color:var(--muted);margin-bottom:10px}
+.community-wordbook-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;transition:border-color .15s,box-shadow .15s;transform:none}
+.community-wordbook-card:hover{transform:none;border-color:var(--border-strong);box-shadow:var(--shadow-lg)}
+.wordbook-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin:0;padding:0;border:none}
+.wordbook-card-title{font-size:16px;font-weight:800;letter-spacing:-.01em;margin:0;color:var(--ink)}
+.wordbook-difficulty-badge{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.wordbook-card-meta{display:flex;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:12.5px;font-weight:600;margin:0}
+.wordbook-card-meta span{display:inline-flex;align-items:center;gap:4px;color:var(--muted)}
+.wordbook-card-meta .msr,.preview-meta .msr{font-size:16px}
+.wordbook-card-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+.wordbook-tag{border:1px solid var(--border);background:var(--card-2);color:var(--ink-2);font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:99px}
+.wordbook-card-description{color:var(--ink-2);font-size:13.5px;line-height:1.6;margin:0}
+.wordbook-card-actions{display:flex;gap:8px;margin-top:auto;padding-top:6px}
+.wordbook-card-actions .wordbook-action-btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;flex:1;padding:9px 12px;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;transition:all .15s}
+.wordbook-card-actions .wordbook-action-btn .msr{font-size:17px}
+.wordbook-card-actions .wordbook-action-btn.preview{background:var(--card);border:1px solid var(--border);color:var(--ink-2)}
+.wordbook-card-actions .wordbook-action-btn.preview:hover{border-color:var(--accent);color:var(--accent);background:var(--card)}
+.wordbook-card-actions .wordbook-action-btn.download{background:var(--accent);border:1px solid var(--accent);color:var(--text-on-accent)}
+.wordbook-card-actions .wordbook-action-btn.download:hover{opacity:.92;background:var(--accent)}
+
+/* ---- Modals: card surface + quieter header ---- */
+.modal-content{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow-lg)}
+.modal-header{padding:18px 22px;border-bottom:1px solid var(--border)}
+.modal-header h3{font-size:17px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:8px;color:var(--ink)}
+.modal-header h3 .msr{color:var(--accent);font-size:21px}
+.close-btn{font-size:1.5rem;border-radius:10px}
+.modal-body{padding:22px}
+
+/* statsModal rows */
+.stat-item{border-bottom:1px solid var(--border)}
+.stat-item .stat-label{font-size:13.5px;font-weight:600;color:var(--muted)}
+.stat-item .stat-value{font-size:16px;font-weight:800;color:var(--ink)}
+
+/* enhanced stats modal */
+.stats-tabs{background:var(--card-2);border-bottom:1px solid var(--border)}
+.stats-tab-btn{font-size:14px;font-weight:600;color:var(--muted);border-bottom:2px solid transparent;padding:13px}
+.stats-tab-btn:hover{background:transparent;color:var(--ink)}
+.stats-tab-btn.active{color:var(--accent);border-bottom-color:var(--accent);background:var(--card)}
+.enhanced-stats-body h4{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:6px;margin-bottom:14px;border:none;padding:0}
+.enhanced-stats-body h4 .msr{font-size:17px;color:var(--accent)}
+.modal .stat-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;text-align:left;box-shadow:none}
+.modal .stat-card:hover{transform:none;box-shadow:none}
+.modal .stat-card-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0}
+.modal .stat-card-value{font-size:26px;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-top:8px}
+.chart-container{background:var(--card);border:1px solid var(--border);border-radius:14px}
+.stats-table-container{background:var(--card);border:1px solid var(--border);border-radius:14px}
+.stats-table thead{background:var(--card-2)}
+.stats-table th{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border)}
+.stats-table td{border-bottom:1px solid var(--border);color:var(--ink-2)}
+
+/* editor + select dialogs */
+.editor-toolbar-btn{border-radius:10px;font-weight:600}
+.editor-toolbar-btn .msr,.editor-action-btn .msr{font-size:18px}
+.wordbook-select-icon .msr{font-size:20px;color:var(--accent)}
+
+/* preview modal */
+.preview-meta{display:flex;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:13px;font-weight:600;margin-bottom:12px}
+.preview-meta span{display:inline-flex;align-items:center;gap:4px}
+.preview-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.preview-description{color:var(--ink-2);font-size:13.5px;line-height:1.6;margin-bottom:12px}
+.preview-note{text-align:center;color:var(--muted);font-size:12.5px;padding:10px 0 0}
+
+/* help modal headings carry msr icons now */
+.help-section h2,.help-section h3,.help-section h4{display:flex;align-items:center;gap:8px}
+.help-section h2 .msr,.help-section h3 .msr,.help-section h4 .msr{font-size:1.1em;color:var(--accent)}
+.help-section h2{font-size:1.4rem;color:var(--ink)}
+.help-section h3{font-size:1.15rem;border-bottom:1px solid var(--border)}
+.help-section h4{font-size:1rem;color:var(--ink)}
+
+/* responsive: single-column community cards on narrow screens */
+@media (max-width:820px){
+  .community-wordbook-list{grid-template-columns:1fr}
+}
