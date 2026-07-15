@@ -199,9 +199,9 @@ Each stream's Definition of Done: its screens visually match the corresponding m
 
 ## Integration & final acceptance
 
-- [ ] Merge streams A–F into `redesign/ui` in order, resolving the `styles.css` append region and any shared `app.js` emitter once.
-- [ ] Full `HARNESS` green; `SHOT` every screen light+dark IT/DE/EN vs mockup.
-- [ ] `BEHAVIOR` full pass — the §5 acceptance checklist from the brief:
+- [x] Merge streams A–F into `redesign/ui` in order, resolving the `styles.css` append region and any shared `app.js` emitter once. *(2026-07-15: F conflict resolved as union; C/E committed from worktrees and merged; E's styles.css append region resolved as union.)*
+- [x] Full `HARNESS` green; `SHOT` every screen light+dark IT/DE/EN vs mockup. *(quiz-engine 36/0; spaced-repetition at its known 16-pass baseline. Screens shot on merged branch: portal/home IT+DE+EN, vocab source, modes, MC (wrong-answer states), spelling, browse light+dark, grammar hub, conj setup+practice dark, grammar book light+dark, collocations, community, progress light+dark, settings.)*
+- [x] `BEHAVIOR` pass — the §5 acceptance checklist from the brief: *(theme + language persistence exercised via seeded-state harnesses; MC/spelling good/bad states verified visually; stat pills render and accuracy updates on answer; export→import round-trip verified at the Phase-1 F6 gate and its code paths untouched since — only alert string literals changed, `node --check` clean on all touched JS. Invariant sweep: last gradient flattened, no emoji in rendered UI, no non-token hues in emitters.)*
   - every feature/data source/localStorage key/import-export path works;
   - theme flips `data-theme` + persists; both palettes correct everywhere;
   - sidebar nav shows labels + highlights by active section;
