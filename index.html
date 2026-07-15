@@ -336,26 +336,22 @@
       </section>
 
       <section id="germanGrammarScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="germanGrammarBackBtn">返回 German Home</button>
-            <div>
-              <p class="eyebrow">German / Grammar</p>
-              <h2><svg class="icon"><use href="#icon-puzzle"></use></svg>选择德语语法主题</h2>
-            </div>
-            <p class="subtitle">德语语法部分当前仅保留语法书阅读入口。</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="germanGrammarBackBtn"><span class="msr">arrow_back</span>返回 German Home</button>
+          <div class="eyebrow">German / Grammar</div>
+          <h1 class="page">选择德语语法主题</h1>
+          <p class="desc">德语语法部分当前提供动词变位与语法书阅读入口。</p>
 
-          <div class="module-grid single-column-grid">
-            <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="conjugation">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-cycle"></use></svg></span>
-              <span class="module-card-title">动词变位</span>
-              <span class="module-card-desc">时态、课次与题型</span>
+          <div class="card-grid cols-2">
+            <button class="card german-placeholder-trigger" data-language="german" data-module="conjugation">
+              <span class="card-chip"><span class="msr">sync_alt</span></span>
+              <span class="card-title">动词变位</span>
+              <span class="card-desc">时态、课次与题型</span>
             </button>
-            <button class="module-card wide-card german-placeholder-trigger" data-language="german" data-module="grammar-book">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="module-card-title">Grammar Book</span>
-              <span class="module-card-desc">使用已接入的德语语法章节树与正文内容</span>
+            <button class="card german-placeholder-trigger" data-language="german" data-module="grammar-book">
+              <span class="card-chip"><span class="msr">auto_stories</span></span>
+              <span class="card-title">Grammar Book</span>
+              <span class="card-desc">使用已接入的德语语法章节树与正文内容</span>
             </button>
           </div>
         </div>
@@ -643,26 +639,22 @@
       </section>
 
       <section id="englishGrammarScreen" class="screen">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="englishGrammarBackBtn">返回 English Home</button>
-            <div>
-              <p class="eyebrow">English / Grammar</p>
-              <h2><svg class="icon"><use href="#icon-puzzle"></use></svg>Choose grammar topic</h2>
-            </div>
-            <p class="subtitle">英语语法部分当前仅保留 Grammar Book。</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="englishGrammarBackBtn"><span class="msr">arrow_back</span>返回 English Home</button>
+          <div class="eyebrow">English / Grammar</div>
+          <h1 class="page">Choose grammar topic</h1>
+          <p class="desc">英语语法部分当前提供动词变位与 Grammar Book。</p>
 
-          <div class="module-grid single-column-grid">
-            <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="conjugation">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-cycle"></use></svg></span>
-              <span class="module-card-title">动词变位</span>
-              <span class="module-card-desc">时态、课次与题型</span>
+          <div class="card-grid cols-2">
+            <button class="card english-placeholder-trigger" data-language="english" data-module="conjugation">
+              <span class="card-chip"><span class="msr">sync_alt</span></span>
+              <span class="card-title">动词变位</span>
+              <span class="card-desc">时态、课次与题型</span>
             </button>
-            <button class="module-card wide-card english-placeholder-trigger" data-language="english" data-module="grammar-book">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="module-card-title">Grammar Book</span>
-              <span class="module-card-desc">使用已接入的英语语法章节与阅读器内容</span>
+            <button class="card english-placeholder-trigger" data-language="english" data-module="grammar-book">
+              <span class="card-chip"><span class="msr">auto_stories</span></span>
+              <span class="card-title">Grammar Book</span>
+              <span class="card-desc">使用已接入的英语语法章节与阅读器内容</span>
             </button>
           </div>
         </div>
@@ -911,128 +903,116 @@
       </section>
 
       <section id="grammarScreen" class="screen">
-        <div class="welcome-card module-view-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="grammarBackBtn">返回 Home</button>
-            <div>
-              <p class="eyebrow">Grammar</p>
-              <h2><svg class="icon"><use href="#icon-puzzle"></use></svg>选择语法主题</h2>
-            </div>
-            <p class="subtitle">选择一个语法主题</p>
-          </div>
+        <div class="container">
+          <button class="back-link" id="grammarBackBtn"><span class="msr">arrow_back</span>返回 Home</button>
+          <div class="eyebrow">Grammar</div>
+          <h1 class="page">选择语法主题</h1>
+          <p class="desc">选择一个语法主题，开始学习。</p>
 
-          <div class="module-grid single-column-grid">
-            <button class="module-card wide-card" id="goConjugationSetupBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-cycle"></use></svg></span>
-              <span class="module-card-title">动词变位</span>
-              <span class="module-card-desc">时态、课次与题型</span>
+          <div class="card-grid cols-2">
+            <button class="card" id="goConjugationSetupBtn">
+              <span class="card-chip"><span class="msr">sync_alt</span></span>
+              <span class="card-title">动词变位</span>
+              <span class="card-desc">时态、课次与题型</span>
             </button>
-            <button class="module-card wide-card" id="goGrammarBookBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="module-card-title">语法书</span>
-              <span class="module-card-desc">意大利语语法全书，按章节浏览</span>
+            <button class="card" id="goGrammarBookBtn">
+              <span class="card-chip"><span class="msr">auto_stories</span></span>
+              <span class="card-title">语法书</span>
+              <span class="card-desc">意大利语语法全书，按章节浏览</span>
             </button>
-            <button class="module-card wide-card" id="goVerbCollocationsBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-book-open"></use></svg></span>
-              <span class="module-card-title">动词搭配</span>
-              <span class="module-card-desc">1688个动词的介词搭配与例句</span>
+            <button class="card" id="goVerbCollocationsBtn">
+              <span class="card-chip"><span class="msr">link</span></span>
+              <span class="card-title">动词搭配</span>
+              <span class="card-desc">1688个动词的介词搭配与例句</span>
             </button>
-            <button class="module-card wide-card" id="goVerbCollocationPracticeBtn">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
-              <span class="module-card-title">动词搭配练习</span>
-              <span class="module-card-desc">单介词选择、多介词辨义、例句翻译</span>
+            <button class="card" id="goVerbCollocationPracticeBtn">
+              <span class="card-chip"><span class="msr">extension</span></span>
+              <span class="card-title">动词搭配练习</span>
+              <span class="card-desc">单介词选择、多介词辨义、例句翻译</span>
             </button>
           </div>
         </div>
       </section>
 
       <section id="conjugationSetupScreen" class="screen">
-        <div class="welcome-card module-view-card">
-          <div class="module-view-header">
-            <button class="back-btn section-back-btn" id="conjugationSetupBackBtn">返回 Grammar</button>
-            <div>
-              <p class="eyebrow">Grammar / Verb Conjugation</p>
-              <h2><svg class="icon"><use href="#icon-cycle"></use></svg>选择时态与练习方式</h2>
+        <div class="container">
+          <button class="back-link" id="conjugationSetupBackBtn"><span class="msr">arrow_back</span>返回 Grammar</button>
+          <div class="eyebrow">Grammar / Verb Conjugation</div>
+          <h1 class="page">选择时态与练习方式</h1>
+          <p class="desc">按课次选择时态开始练习，或直接查询任意动词的完整变位。</p>
+
+          <div class="conj-setup-panel" id="conjModuleSection">
+            <div class="conj-module-toolbar">
+              <label>
+                每课词数
+                <select id="conjLessonSizeSelect">
+                  <option value="10" selected>10 词 / 课</option>
+                  <option value="20">20 词 / 课</option>
+                  <option value="30">30 词 / 课</option>
+                </select>
+              </label>
+              <div class="conj-lesson-nav">
+                <button class="pill-btn" id="conjPrevLessonBtn"><span class="msr">arrow_back</span>上一课</button>
+                <div class="conj-lesson-status">
+                  <span id="conjLessonLabel">第 1 课</span>
+                  <span class="hidden" id="conjLessonCompletedBadge">已完成</span>
+                </div>
+                <button class="pill-btn" id="conjNextLessonBtn">下一课<span class="msr">arrow_forward</span></button>
+              </div>
             </div>
-            <p class="subtitle">选择时态、课次和题型</p>
+
+            <div class="conj-tense-buttons" id="conjTenseButtons">
+              <!-- 动态生成时态按钮 -->
+            </div>
+
+            <p class="conj-module-hint" id="conjModuleHint">选择一个时态后，按课次学习动词变位</p>
           </div>
 
-          <div class="conjugation-module-section no-divider">
-            <div class="conjugation-module-card" id="conjModuleSection">
-              <div class="conj-module-toolbar">
-                <label>
-                  每课词数
-                  <select id="conjLessonSizeSelect">
-                    <option value="10" selected>10 词 / 课</option>
-                    <option value="20">20 词 / 课</option>
-                    <option value="30">30 词 / 课</option>
-                  </select>
-                </label>
-                <div class="conj-lesson-nav">
-                  <button class="back-btn" id="conjPrevLessonBtn">← 上一课</button>
-                  <div class="conj-lesson-status">
-                    <span id="conjLessonLabel">第 1 课</span>
-                    <span class="hidden" id="conjLessonCompletedBadge">已完成</span>
-                  </div>
-                  <button class="next-btn" id="conjNextLessonBtn">下一课 →</button>
-                </div>
-              </div>
-
-              <div class="conj-tense-buttons" id="conjTenseButtons">
-                <!-- 动态生成时态按钮 -->
-              </div>
-
-              <p class="conj-module-hint" id="conjModuleHint">选择一个时态后，按课次学习动词变位</p>
+          <div class="conj-setup-panel conj-lookup-panel">
+            <div class="conjugation-lookup-header">
+              <h3><span class="msr">search</span>变位查询</h3>
+              <p>支持输入动词原形，或输入任意一个变位形式，查看该动词的完整变位。</p>
             </div>
 
-            <div class="conjugation-lookup-card">
-              <div class="conjugation-lookup-header">
-                <h3><svg class="icon"><use href="#icon-search"></use></svg>变位查询</h3>
-                <p>支持输入动词原形，或输入任意一个变位形式，查看该动词的完整变位。</p>
+            <div class="conjugation-lookup-form">
+              <input
+                type="text"
+                id="conjLookupInput"
+                class="conj-lookup-input"
+                placeholder="例如：essere / sono / fossi / stato"
+                autocomplete="off"
+              >
+              <div class="conjugation-lookup-actions">
+                <button class="pill-btn" id="conjLookupSearchBtn"><span class="msr">search</span>查询变位</button>
+                <button class="pill-btn" id="conjLookupClearBtn" type="button">清空</button>
               </div>
-
-              <div class="conjugation-lookup-form">
-                <input
-                  type="text"
-                  id="conjLookupInput"
-                  class="search-input conj-lookup-input"
-                  placeholder="例如：essere / sono / fossi / stato"
-                  autocomplete="off"
-                >
-                <div class="conjugation-lookup-actions">
-                  <button class="check-btn" id="conjLookupSearchBtn">查询变位</button>
-                  <button class="back-btn" id="conjLookupClearBtn" type="button">清空</button>
-                </div>
-              </div>
-
-              <div class="hidden" id="conjLookupEmptyState"></div>
-              <div class="conjugation-lookup-results hidden" id="conjLookupResults"></div>
             </div>
+
+            <div class="hidden" id="conjLookupEmptyState"></div>
+            <div class="conjugation-lookup-results hidden" id="conjLookupResults"></div>
           </div>
 
-          <div class="mode-selection">
-            <h2 id="modeSelectionTitle"><svg class="icon"><use href="#icon-puzzle"></use></svg>选择练习方式</h2>
-            <p class="subtitle" id="modeSelectionSubtitle">请选择适合当前语法主题的练习方式。</p>
+          <div class="sub-label" id="modeSelectionTitle">选择练习方式</div>
+          <p class="desc" id="modeSelectionSubtitle">请选择适合当前语法主题的练习方式。</p>
 
-            <div class="mode-buttons" id="conjugationModeButtons">
-              <button class="mode-btn" id="conjModeMcqBtn">
-                <span class="mode-icon"><svg class="icon"><use href="#icon-puzzle"></use></svg></span>
-                <span class="mode-name">选择题</span>
-                <span class="mode-desc">四选一选择正确变位</span>
-              </button>
+          <div class="card-grid cols-3" id="conjugationModeButtons">
+            <button class="card" id="conjModeMcqBtn">
+              <span class="card-chip"><span class="msr">quiz</span></span>
+              <span class="card-title">选择题</span>
+              <span class="card-desc">四选一选择正确变位</span>
+            </button>
 
-              <button class="mode-btn" id="conjModeTypingBtn">
-                <span class="mode-icon"><svg class="icon"><use href="#icon-keyboard"></use></svg></span>
-                <span class="mode-name">单空填空</span>
-                <span class="mode-desc">输入当前题目的正确变位</span>
-              </button>
+            <button class="card" id="conjModeTypingBtn">
+              <span class="card-chip"><span class="msr">keyboard</span></span>
+              <span class="card-title">单空填空</span>
+              <span class="card-desc">输入当前题目的正确变位</span>
+            </button>
 
-              <button class="mode-btn" id="conjModeFullBtn">
-                <span class="mode-icon"><svg class="icon"><use href="#icon-pen"></use></svg></span>
-                <span class="mode-name">完整填空</span>
-                <span class="mode-desc">整组人称连续填空训练</span>
-              </button>
-            </div>
+            <button class="card" id="conjModeFullBtn">
+              <span class="card-chip"><span class="msr">edit_note</span></span>
+              <span class="card-title">完整填空</span>
+              <span class="card-desc">整组人称连续填空训练</span>
+            </button>
           </div>
         </div>
       </section>
@@ -1244,59 +1224,55 @@
 
       <!-- 动词变位练习模式（多时态） -->
       <section id="conjugationScreen" class="screen">
-        <div class="quiz-container">
-          <div class="quiz-header">
-            <button class="back-btn" id="conjBackBtn">← 返回</button>
-            <div class="quiz-progress">
-              <span id="conjCurrent">1</span> / <span id="conjTotal">0</span>
-            </div>
-            <div class="quiz-score">
-              正确率: <strong id="conjAccuracy">0%</strong>
-            </div>
+        <div class="container narrow">
+          <button class="back-link" id="conjBackBtn"><span class="msr">arrow_back</span>返回</button>
+
+          <div class="practice-head">
+            <span class="idx"><span id="conjCurrent">1</span> / <span id="conjTotal">0</span></span>
+            <span class="acc">正确率 <b id="conjAccuracy">0%</b></span>
           </div>
 
           <div class="conj-controls">
             <span id="conjActiveLessonInfo">当前为第 1 课</span>
-            <button class="check-btn" id="conjRestartBtn">开始/重新开始</button>
-            <button class="next-btn hidden" id="conjAdvanceLessonBtn">完成本课，下一课 →</button>
+            <button class="pill-btn" id="conjRestartBtn"><span class="msr">replay</span>开始/重新开始</button>
+            <button class="pill-btn hidden" id="conjAdvanceLessonBtn">完成本课，下一课<span class="msr">arrow_forward</span></button>
           </div>
 
-          <div class="quiz-card">
-            <div class="question-section">
-              <p class="question-label">请写出下列动词在所选时态下的正确变位：</p>
-              <p class="conj-tense-line"><strong>时态：</strong><span id="conjTenseTitle">-</span></p>
-              <h2 class="italian-word" id="conjInfinitive">-</h2>
-              <p class="conj-english-line hidden" id="conjEnglishLine"><strong>English：</strong><span id="conjEnglish">-</span></p>
-              <p class="conj-pronoun-line"><strong id="conjPromptLabel">人称：</strong><span id="conjPronoun">-</span></p>
+          <div class="practice-card">
+            <div class="eyebrow" style="text-align:center">时态 · <span id="conjTenseTitle">-</span></div>
+            <div class="word-row">
+              <span class="word" id="conjInfinitive">-</span>
+              <span class="en hidden" id="conjEnglishLine">· <span id="conjEnglish">-</span></span>
             </div>
+            <p class="chinese-hint"><strong id="conjPromptLabel">人称：</strong><span id="conjPronoun">-</span></p>
 
-            <div class="spelling-section" id="conjTypingSection">
-              <p class="options-label">请输入正确变位：</p>
-              <input 
-                type="text" 
-                class="spelling-input" 
-                id="conjInput" 
+            <div id="conjTypingSection">
+              <div class="field-label">请输入正确变位</div>
+              <input
+                type="text"
+                class="spell-input"
+                id="conjInput"
                 placeholder="例如：parlo"
                 autocomplete="off"
               >
-              <button class="check-btn" id="conjCheckBtn">检查答案</button>
+              <button class="primary-btn" id="conjCheckBtn">检查答案</button>
             </div>
 
-            <div class="conj-full-section hidden" id="conjFullSection">
-              <p class="options-label">请填写该动词在当前时态下的完整变位：</p>
+            <div class="hidden" id="conjFullSection">
+              <div class="field-label">请填写该动词在当前时态下的完整变位</div>
               <div class="conj-full-grid" id="conjFullGrid"></div>
-              <button class="check-btn" id="conjFullCheckBtn">检查整组答案</button>
+              <button class="primary-btn" id="conjFullCheckBtn">检查整组答案</button>
             </div>
 
-            <div class="options-section hidden" id="conjMcqSection">
-              <p class="options-label">请选择正确变位：</p>
-              <div class="options-grid" id="conjOptions"></div>
+            <div class="hidden" id="conjMcqSection">
+              <div class="field-label">请选择正确变位</div>
+              <div class="options" id="conjOptions"></div>
             </div>
           </div>
 
-          <div class="quiz-feedback hidden" id="conjFeedback">
+          <div class="practice-feedback hidden" id="conjFeedback">
             <p class="feedback-text"></p>
-            <button class="next-btn" id="conjNextBtn">下一个 →</button>
+            <button class="primary-btn" id="conjNextBtn">下一个 <span class="msr">arrow_forward</span></button>
           </div>
         </div>
       </section>
@@ -1306,13 +1282,13 @@
         <div class="grammar-book-layout">
           <aside class="grammar-nav-sidebar" id="vcNavSidebar">
             <div class="grammar-nav-header">
-              <button class="back-btn grammar-book-back-btn" id="vcBackBtn">← 返回 Grammar</button>
-              <h3 class="grammar-nav-title"><svg class="icon"><use href="#icon-book-open"></use></svg>动词搭配</h3>
+              <button class="grammar-book-back-btn" id="vcBackBtn"><span class="msr">arrow_back</span>返回 Grammar</button>
+              <h3 class="grammar-nav-title"><span class="msr">link</span>动词搭配</h3>
             </div>
             <div class="vc-search-panel">
               <label class="vc-search-label" for="vcSearchInput">搜索动词</label>
               <div class="vc-search-input-wrap">
-                <span class="vc-search-icon"><svg class="icon"><use href="#icon-search"></use></svg></span>
+                <span class="vc-search-icon msr">search</span>
                 <input
                   type="text"
                   class="search-input vc-search-input"
@@ -1331,13 +1307,13 @@
           <div class="grammar-content-area">
             <div class="grammar-content-header">
               <button class="grammar-sidebar-toggle" id="vcSidebarToggle" title="切换目录">
-                <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                <span class="msr">menu</span>
               </button>
               <span class="grammar-content-breadcrumb" id="vcBreadcrumb">可按介词浏览，也可搜索动词</span>
             </div>
             <div class="grammar-content-body" id="vcContentBody">
               <div class="grammar-welcome">
-                <svg class="icon grammar-welcome-icon"><use href="#icon-book-open"></use></svg>
+                <span class="msr grammar-welcome-icon">link</span>
                 <h2>动词搭配大全</h2>
                 <p>左侧可按介词浏览，也可直接搜索一个动词查看它的全部介词搭配。</p>
               </div>
@@ -1347,25 +1323,18 @@
       </section>
 
       <section id="verbCollocationPracticeScreen" class="screen">
-        <div class="quiz-container vc-practice-container">
-          <div class="quiz-header">
-            <button class="back-btn" id="vcPracticeBackBtn">← 返回 Grammar</button>
-            <div class="quiz-progress">
-              <span id="vcPracticeCurrent">1</span> / <span id="vcPracticeTotal">0</span>
-            </div>
-            <div class="quiz-score">
-              正确率: <strong id="vcPracticeAccuracy">0%</strong>
-            </div>
+        <div class="container narrow">
+          <button class="back-link" id="vcPracticeBackBtn"><span class="msr">arrow_back</span>返回 Grammar</button>
+
+          <div class="practice-head">
+            <span class="idx"><span id="vcPracticeCurrent">1</span> / <span id="vcPracticeTotal">0</span></span>
+            <span class="acc">正确率 <b id="vcPracticeAccuracy">0%</b></span>
           </div>
 
-          <div class="quiz-card vc-practice-setup-card" id="vcPracticeSetupCard">
-            <div class="module-view-header vc-practice-header">
-              <div>
-                <p class="eyebrow">Grammar / Verb Collocations Practice</p>
-                <h2><svg class="icon"><use href="#icon-puzzle"></use></svg>动词搭配练习</h2>
-              </div>
-              <p class="subtitle compact">从动词搭配数据库中自动生成单介词选择、多介词辨义和例句翻译题。</p>
-            </div>
+          <div class="practice-card" id="vcPracticeSetupCard">
+            <div class="eyebrow">Grammar / Verb Collocations Practice</div>
+            <h2 class="vcp-title">动词搭配练习</h2>
+            <p class="desc">从动词搭配数据库中自动生成单介词选择、多介词辨义和例句翻译题。</p>
 
             <div class="vc-practice-config-grid">
               <div class="vc-practice-config-block">
@@ -1389,35 +1358,31 @@
 
             <div class="selection-summary-card vc-practice-summary" id="vcPracticeSummary"></div>
 
-            <div class="form-actions vc-practice-actions">
-              <button class="form-btn primary" id="vcPracticeStartBtn"><svg class="icon"><use href="#icon-puzzle"></use></svg>开始练习</button>
-            </div>
+            <button class="primary-btn" id="vcPracticeStartBtn"><span class="msr">play_arrow</span>开始练习</button>
           </div>
 
-          <div class="quiz-card hidden" id="vcPracticeQuizCard">
-            <div class="question-section">
-              <p class="question-label" id="vcPracticeQuestionTypeLabel">题型</p>
-              <h2 class="italian-word vc-practice-prompt" id="vcPracticePrompt">-</h2>
-              <p class="vc-practice-subprompt" id="vcPracticeSubprompt"></p>
-              <p class="chinese-hint vc-practice-hint hidden" id="vcPracticeHint"></p>
+          <div class="practice-card hidden" id="vcPracticeQuizCard">
+            <div class="eyebrow" style="text-align:center" id="vcPracticeQuestionTypeLabel">题型</div>
+            <div class="word vc-practice-prompt" id="vcPracticePrompt">-</div>
+            <p class="chinese-hint vc-practice-subprompt" id="vcPracticeSubprompt"></p>
+            <p class="chinese-hint vc-practice-hint hidden" id="vcPracticeHint"></p>
+
+            <div id="vcPracticeOptionsSection">
+              <div class="field-label">请选择正确答案</div>
+              <div class="options" id="vcPracticeOptions"></div>
             </div>
 
-            <div class="options-section" id="vcPracticeOptionsSection">
-              <p class="options-label">请选择正确答案：</p>
-              <div class="options-grid" id="vcPracticeOptions"></div>
-            </div>
-
-            <div class="spelling-section hidden" id="vcPracticeInputSection">
-              <p class="options-label">请输入答案：</p>
+            <div class="hidden" id="vcPracticeInputSection">
+              <div class="field-label">请输入答案</div>
               <div class="vc-translation-grid" id="vcTranslationGrid"></div>
-              <button class="check-btn" id="vcPracticeCheckBtn">检查答案</button>
-              <button class="hint-btn" id="vcPracticeHintBtn"><svg class="icon"><use href="#icon-help"></use></svg>提示</button>
+              <button class="primary-btn" id="vcPracticeCheckBtn">检查答案</button>
+              <button class="hint-btn" id="vcPracticeHintBtn">提示一个单词</button>
             </div>
           </div>
 
-          <div class="quiz-feedback hidden" id="vcPracticeFeedback">
+          <div class="practice-feedback hidden" id="vcPracticeFeedback">
             <p class="feedback-text"></p>
-            <button class="next-btn" id="vcPracticeNextBtn">下一题 →</button>
+            <button class="primary-btn" id="vcPracticeNextBtn">下一题 <span class="msr">arrow_forward</span></button>
           </div>
         </div>
       </section>
@@ -1428,8 +1393,8 @@
           <!-- 侧边栏导航 -->
           <aside class="grammar-nav-sidebar" id="grammarNavSidebar">
             <div class="grammar-nav-header">
-              <button class="back-btn grammar-book-back-btn" id="grammarBookBackBtn">← 返回 Grammar</button>
-              <h3 class="grammar-nav-title"><svg class="icon"><use href="#icon-book-open"></use></svg>语法书</h3>
+              <button class="grammar-book-back-btn" id="grammarBookBackBtn"><span class="msr">arrow_back</span>返回 Grammar</button>
+              <h3 class="grammar-nav-title"><span class="msr">auto_stories</span>语法书</h3>
             </div>
             <div class="grammar-nav-tree" id="grammarNavTree">
               <p class="grammar-nav-loading">加载中...</p>
@@ -1440,13 +1405,13 @@
           <div class="grammar-content-area">
             <div class="grammar-content-header">
               <button class="grammar-sidebar-toggle" id="grammarSidebarToggle" title="切换目录">
-                <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                <span class="msr">menu</span>
               </button>
               <span class="grammar-content-breadcrumb" id="grammarContentBreadcrumb">选择左侧章节开始阅读</span>
             </div>
             <div class="grammar-content-body" id="grammarContentBody">
               <div class="grammar-welcome">
-                <svg class="icon grammar-welcome-icon"><use href="#icon-book-open"></use></svg>
+                <span class="msr grammar-welcome-icon">auto_stories</span>
                 <h2>意大利语语法</h2>
                 <p>请从左侧目录选择章节开始阅读</p>
               </div>

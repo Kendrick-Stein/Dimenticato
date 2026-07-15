@@ -277,13 +277,13 @@
 
     if (tenseData.type === 'person' && tenseData.forms && typeof tenseData.forms === 'object') {
       return `
-        <div class="conj-lookup-rows">
+        <div class="conj-card conj-card-mini">
           ${PERSON_ORDER().map(person => {
             const value = splitAlternatives(tenseData.forms[person]).join(' / ') || '—';
             return `
-              <div class="conj-lookup-row">
-                <span class="conj-lookup-row-label">${escapeHtml(personLabelOf(person))}</span>
-                <span class="conj-lookup-row-value">${escapeHtml(value)}</span>
+              <div class="conj-line">
+                <span class="conj-person">${escapeHtml(personLabelOf(person))}</span>
+                <span class="conj-form">${escapeHtml(value)}</span>
               </div>
             `;
           }).join('')}
@@ -293,13 +293,13 @@
 
     const forms = Array.isArray(tenseData.forms) ? tenseData.forms : [];
     return `
-      <div class="conj-lookup-rows">
+      <div class="conj-card conj-card-mini">
         ${forms.map((form, index) => {
           const value = splitAlternatives(form).join(' / ') || '—';
           return `
-            <div class="conj-lookup-row">
-              <span class="conj-lookup-row-label">形式 ${index + 1}</span>
-              <span class="conj-lookup-row-value">${escapeHtml(value)}</span>
+            <div class="conj-line">
+              <span class="conj-person">形式 ${index + 1}</span>
+              <span class="conj-form">${escapeHtml(value)}</span>
             </div>
           `;
         }).join('')}
@@ -492,9 +492,9 @@
 
   function buildTenseButton(meta) {
     return `
-      <button class="level-btn conj-tense-btn ${meta.key === state.selectedTense ? 'selected' : ''}" data-tense="${meta.key}" title="${meta.label}">
-        <span class="level-name">${meta.tense}</span>
-        <span class="level-count">${meta.group || '时态'}</span>
+      <button class="chip conj-tense-btn ${meta.key === state.selectedTense ? 'active' : ''}" data-tense="${meta.key}" title="${meta.label}">
+        <span class="ct-name">${meta.tense}</span>
+        <span class="ct-group">${meta.group || '时态'}</span>
       </button>
     `;
   }
@@ -502,7 +502,7 @@
   function markSelectedTenseButton() {
     const buttons = document.querySelectorAll('#conjTenseButtons .conj-tense-btn');
     buttons.forEach(btn => {
-      btn.classList.toggle('selected', btn.dataset.tense === state.selectedTense);
+      btn.classList.toggle('active', btn.dataset.tense === state.selectedTense);
     });
   }
 
@@ -845,7 +845,7 @@ ${moodRows}
         <span class="conj-full-label">${item.promptLabel}</span>
         <input
           type="text"
-          class="spelling-input conj-full-input"
+          class="spell-input conj-full-input"
           data-index="${index}"
           placeholder="请输入"
           autocomplete="off"
@@ -874,10 +874,10 @@ ${moodRows}
     const options = shuffle([correct, ...distractors]);
 
     optionsWrap.innerHTML = options
-      .map(opt => `<button class="option-btn" data-answer="${opt.replace(/"/g, '&quot;')}">${opt}</button>`)
+      .map(opt => `<button class="option" data-answer="${opt.replace(/"/g, '&quot;')}">${opt}</button>`)
       .join('');
 
-    optionsWrap.querySelectorAll('.option-btn').forEach(btn => {
+    optionsWrap.querySelectorAll('.option').forEach(btn => {
       btn.addEventListener('click', () => checkMcqAnswer(btn));
     });
   }
@@ -926,7 +926,7 @@ ${moodRows}
       markLessonCompleted();
       updateLessonUI();
       document.getElementById('conjAdvanceLessonBtn')?.classList.remove('hidden');
-      alert(`🎉 动词变位练习完成！\n\n正确: ${state.correct}/${state.total}\n正确率: ${acc}%`);
+      alert(`动词变位练习完成！\n\n正确: ${state.correct}/${state.total}\n正确率: ${acc}%`);
       if (typeof showScreen === 'function') showScreen('conjugationSetupScreen');
       if (typeof window.setPracticeContext === 'function') window.setPracticeContext('conjugation');
       return;
@@ -988,11 +988,11 @@ ${moodRows}
     if (state.mode === 'full') {
       showFeedback(
         isCorrect,
-        isCorrect ? '✅ 正确！' : `❌ 错误，正确答案：${answerText}`,
+        isCorrect ? '正确！' : `错误，正确答案：${answerText}`,
         isCorrect ? 700 : 0
       );
     } else {
-      showFeedback(isCorrect, isCorrect ? '✅ 正确！' : `❌ 错误，正确答案：${answerText}`);
+      showFeedback(isCorrect, isCorrect ? '正确！' : `错误，正确答案：${answerText}`);
     }
   }
 
@@ -1023,7 +1023,7 @@ ${moodRows}
       input.disabled = true;
       row.classList.remove('correct', 'incorrect');
       row.classList.add(correct ? 'correct' : 'incorrect');
-      answerEl.textContent = correct ? '✅ 正确' : `正确答案：${item.answers.join(' / ')}`;
+      answerEl.textContent = correct ? '正确' : `正确答案：${item.answers.join(' / ')}`;
       answerEl.classList.remove('hidden');
     });
 
@@ -1036,8 +1036,8 @@ ${moodRows}
     showFeedback(
       allCorrect,
       allCorrect
-        ? '✅ 本组全部正确！'
-        : `❌ 本组答对 ${localCorrect}/${localTotal}`,
+        ? '本组全部正确！'
+        : `本组答对 ${localCorrect}/${localTotal}`,
       allCorrect ? 900 : 0
     );
   }
@@ -1051,17 +1051,18 @@ ${moodRows}
     if (isCorrect) state.correct += 1;
     updateProgress();
 
-    const buttons = document.querySelectorAll('#conjOptions .option-btn');
+    const buttons = document.querySelectorAll('#conjOptions .option');
     const correctNorm = normalizeText(state.current.answers[0]);
 
     buttons.forEach(btn => {
       btn.disabled = true;
       const norm = normalizeText(btn.dataset.answer || '');
       if (norm === correctNorm) btn.classList.add('correct');
-      else if (btn === button && !isCorrect) btn.classList.add('incorrect');
+      else if (btn === button && !isCorrect) btn.classList.add('wrong');
+      else btn.classList.add('faded');
     });
 
-    showFeedback(isCorrect, isCorrect ? '✅ 正确！' : `❌ 错误，正确答案：${state.current.answers.join(' / ')}`);
+    showFeedback(isCorrect, isCorrect ? '正确！' : `错误，正确答案：${state.current.answers.join(' / ')}`);
   }
 
   function nextQuestion() {

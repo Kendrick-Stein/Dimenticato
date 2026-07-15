@@ -60,7 +60,7 @@ const GrammarBook = (() => {
         const chapterBtn = document.createElement('button');
         chapterBtn.className = 'grammar-chapter-btn';
         chapterBtn.innerHTML =
-          '<span class="grammar-chapter-arrow">▶</span>' +
+          '<span class="grammar-chapter-arrow msr">chevron_right</span>' +
           '<span class="grammar-chapter-label">' + escapeHtml(ch.title) + '</span>';
 
         const topicList = document.createElement('div');
