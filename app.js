@@ -368,11 +368,11 @@ const Storage = {
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
       
-      alert('✅ 学习数据导出成功！\n\n文件已保存，请妥善保管。');
+      alert('学习数据导出成功！\n\n文件已保存，请妥善保管。');
       
     } catch (e) {
       console.error('导出数据失败:', e);
-      alert('❌ 导出失败: ' + e.message);
+      alert('导出失败: ' + e.message);
     }
   },
   
@@ -398,7 +398,7 @@ const Storage = {
           const stats = JSON.parse(importData.data.stats || '{}');
           
           const confirmMsg = 
-            `📥 即将导入学习数据\n\n` +
+            `即将导入学习数据\n\n` +
             `导出日期: ${new Date(importData.exportDate).toLocaleString()}\n` +
             `系统词汇已掌握: ${masteredWords.length} 个\n` +
             `自定义单词本: ${customWordbooks.length} 个\n` +
@@ -477,12 +477,12 @@ const Storage = {
       WordbookManager.renderWordbookCards();
       highlightSelectedLevel();
       
-      alert('✅ 数据导入成功（覆盖模式）！\n\n页面将刷新以应用新数据。');
+      alert('数据导入成功（覆盖模式）！\n\n页面将刷新以应用新数据。');
       setTimeout(() => location.reload(), 1000);
       
     } catch (e) {
       console.error('导入数据失败:', e);
-      alert('❌ 导入失败: ' + e.message);
+      alert('导入失败: ' + e.message);
     }
   },
   
@@ -543,11 +543,11 @@ const Storage = {
       updateHeaderStats();
       WordbookManager.renderWordbookCards();
       
-      alert('✅ 数据导入成功（合并模式）！\n\n已合并单词进度和统计数据。');
+      alert('数据导入成功（合并模式）！\n\n已合并单词进度和统计数据。');
       
     } catch (e) {
       console.error('导入数据失败:', e);
-      alert('❌ 导入失败: ' + e.message);
+      alert('导入失败: ' + e.message);
     }
   },
   
@@ -587,13 +587,13 @@ function loadVocabulary() {
       setTimeout(function() {
         document.getElementById('loading').innerHTML = `
           <div style="text-align: center; padding: 40px 20px;">
-            <h2 style="color: #e74c3c; margin-bottom: 20px;">⚠️ 加载失败</h2>
+            <h2 style="color: var(--bad, #b0564b); margin-bottom: 20px;">加载失败</h2>
             <p style="margin-bottom: 10px;">词汇数据文件加载失败</p>
-            <p style="color: #7f8c8d; font-size: 14px; margin-bottom: 20px;">
+            <p style="color: var(--muted, #8f8a7d); font-size: 14px; margin-bottom: 20px;">
               这可能是由于网络问题或文件过大导致的
             </p>
             <button onclick="location.reload()" style="
-              background: #3498db;
+              background: var(--accent, #4a7a5e);
               color: white;
               border: none;
               padding: 12px 24px;
@@ -2077,8 +2077,8 @@ function bindEvents() {
       
       // 构建详细的导入报告
       let message = isMerge 
-        ? `✅ 成功合并到单词本"${wordbook.name}"！\n\n`
-        : `✅ 成功导入单词本"${wordbook.name}"！\n\n`;
+        ? `成功合并到单词本"${wordbook.name}"！\n\n`
+        : `成功导入单词本"${wordbook.name}"！\n\n`;
       
       message += `导入统计：\n`;
       message += `• 总计导入：${stats.totalImported} 个单词\n`;

@@ -3672,9 +3672,9 @@ textarea:focus-visible {
 
 .level-btn.selected,
 .wordbook-card.selected {
-  background: linear-gradient(180deg, rgba(var(--accent-primary-rgb), 0.96), rgba(var(--accent-primary-rgb), 0.82));
+  background: var(--accent-soft);
   border-color: var(--accent-primary);
-  color: var(--text-on-accent);
+  color: var(--accent);
 }
 
 .level-btn.selected .level-count,
@@ -3682,7 +3682,7 @@ textarea:focus-visible {
 .wordbook-card.selected .wordbook-card-date,
 .level-btn.selected .level-name,
 .wordbook-card.selected .wordbook-card-name {
-  color: var(--text-on-accent);
+  color: inherit;
 }
 
 .level-icon,
@@ -5905,3 +5905,9 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 .vc-empty-state-icon.msr{width:auto;height:auto;font-size:40px;opacity:.4}
 .grammar-markdown{max-width:880px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:34px 36px;box-shadow:var(--shadow)}
 @media (max-width:768px){.grammar-markdown{padding:22px 18px}}
+
+/* ===== INTEGRATION FIXES ===== */
+/* In-content text links (e.g. wordbook template downloads) use the accent,
+   not the browser default blue */
+.content a{color:var(--accent);text-decoration-color:var(--border-strong)}
+.content a:hover{text-decoration-color:var(--accent)}
