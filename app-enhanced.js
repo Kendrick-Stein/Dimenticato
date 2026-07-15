@@ -398,10 +398,10 @@ const WordbookEditor = {
         </div>
         <div class="editor-word-actions">
           <button class="editor-action-btn edit" onclick="WordbookEditor.editWord(${index})" title="编辑">
-            ${renderIcon('icon-pen')}
+            <span class="msr">edit</span>
           </button>
           <button class="editor-action-btn delete" onclick="WordbookEditor.deleteWord(${index})" title="删除">
-            ${renderIcon('icon-trash')}
+            <span class="msr">delete</span>
           </button>
         </div>
       </div>
@@ -816,7 +816,7 @@ const WordbookEditor = {
     const list = document.getElementById('wordbookSelectList');
     list.innerHTML = AppState.customWordbooks.filter(wb => getWordbookLanguage(wb) === 'italian').map(wb => `
       <div class="wordbook-select-item" onclick="WordbookEditor.addWordToSpecificWordbook(WordbookEditor.currentWordToAdd, ${wb.id})">
-        <span class="wordbook-select-icon">${renderIcon('icon-book-open')}</span>
+        <span class="wordbook-select-icon"><span class="msr">auto_stories</span></span>
         <div class="wordbook-select-info">
           <div class="wordbook-select-name">${wb.name}</div>
           <div class="wordbook-select-count">${wb.wordCount} 词</div>
@@ -910,56 +910,42 @@ const BrowseEnhanced = {
       return;
     }
     
-    container.innerHTML = words.map((word, index) => {
+    container.innerHTML = '<div class="word-card">' + words.map((word, index) => {
       const isMastered = AppState.masteredWords.has(word.italian);
-      const rankText = word.rank < 999999 ? `#${word.rank}` : '无排名';
       const srStatus = SpacedRepetition.getWordStatus(word);
-      
+      const statusLabel = isMastered ? '已掌握' : srStatus.label;
+      const dotGood = isMastered || srStatus.status === 'mastered';
+
       // 判断是否是自定义单词本
       const isCustomWordbook = AppState.selectedSourceType === 'custom';
-      
+
       return `
-        <div class="word-item ${isMastered ? 'mastered' : ''}" data-word-index="${index}" data-italian="${word.italian}">
-          <div class="word-item-left">
-            <div class="editor-word-main">
-              <span class="word-italian">${renderIcon('icon-volume')} ${word.italian}</span>
-              <span class="word-english">${word.english}</span>
-            </div>
-            ${word.chinese ? `<div class="word-chinese">${word.chinese}</div>` : ''}
-            ${word.notes ? `<div class="word-notes">${word.notes}</div>` : ''}
-            <div class="word-sr-status" style="color: ${srStatus.color}; font-size: 0.85rem; margin-top: 0.3rem;">
-              ${srStatus.label}
-            </div>
-          </div>
-          <div class="word-item-right">
-            <span class="word-rank">${rankText}</span>
-            ${isMastered ? '<span class="mastered-badge">已掌握</span>' : ''}
-            <div class="word-actions">
-              ${!isCustomWordbook ? `
-                <button class="word-action-btn bookmark-btn" title="收藏到单词本">
-                  ${renderIcon('icon-pin')}
-                </button>
-              ` : `
-                <button class="word-action-btn edit-btn" title="编辑">
-                  ${renderIcon('icon-pen')}
-                </button>
-              `}
-            </div>
-          </div>
+        <div class="word-line" data-word-index="${index}" data-italian="${word.italian}">
+          <span class="wl-word">${word.italian}</span>
+          <span class="wl-gloss">${word.english}${word.notes ? `<span class="wl-note">${word.notes}</span>` : ''}</span>
+          <span class="wl-cn">${word.chinese ? word.chinese : ''}</span>
+          <span class="wl-status"><span class="dot${dotGood ? ' good' : ''}"></span>${statusLabel}</span>
+          <span class="wl-actions">
+            <button class="wl-speaker speak-btn" title="朗读"><span class="msr">volume_up</span></button>
+            ${!isCustomWordbook ? `
+              <button class="wl-speaker bookmark-btn" title="收藏到单词本"><span class="msr">bookmark_add</span></button>
+            ` : `
+              <button class="wl-speaker edit-btn" title="编辑"><span class="msr">edit</span></button>
+            `}
+          </span>
         </div>
       `;
-    }).join('');
-    
+    }).join('') + '</div>';
+
     // 绑定事件（使用事件委托）
-    container.querySelectorAll('.word-item').forEach((item, index) => {
+    container.querySelectorAll('.word-line').forEach((item, index) => {
       const word = words[index];
-      
+
       // 添加点击朗读功能
       item.style.cursor = 'pointer';
       item.addEventListener('click', (e) => {
-        // 如果点击的是按钮，不触发朗读
-        if (e.target.classList.contains('word-action-btn') || 
-            e.target.closest('.word-action-btn')) {
+        // 如果点击的是操作按钮区，不触发朗读
+        if (e.target.closest('.wl-actions')) {
           return;
         }
         const italian = item.dataset.italian;
@@ -967,6 +953,18 @@ const BrowseEnhanced = {
           italianSpeaker.speak(italian);
         }
       });
+
+      // 朗读按钮
+      const speakBtn = item.querySelector('.speak-btn');
+      if (speakBtn) {
+        speakBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const italian = item.dataset.italian;
+          if (italian) {
+            italianSpeaker.speak(italian);
+          }
+        });
+      }
       
       // 收藏按钮
       const bookmarkBtn = item.querySelector('.bookmark-btn');
@@ -994,3 +992,54 @@ const BrowseEnhanced = {
 
 // 覆盖原始的 Browse.render
 Browse.render = BrowseEnhanced.render;
+
+// ==================== Progress 页面统计面板（redesign） ====================
+// 填充 #progressWeekBars（最近 7 天练习量柱条，最新一天 .bar.latest 强调）
+// 与 #progressAccuracyRows（选择题 / 拼写 / 综合正确率条）。
+// lib/navigation.js 在 showScreen('progressScreen') 时调用全局
+// updateProgressScreenStats()，此处包装 app.js 的原函数以追加渲染。
+
+function renderProgressPanels() {
+  // 最近 7 天练习量
+  const bars = document.getElementById('progressWeekBars');
+  if (bars && typeof StatsManager !== 'undefined') {
+    const stats = StatsManager.getRecentStats(7);
+    const max = Math.max(1, ...stats.map(s => s.totalCount || 0));
+    const dayNames = ['日', '一', '二', '三', '四', '五', '六'];
+    bars.innerHTML = stats.map((s, i) => {
+      const count = s.totalCount || 0;
+      const pct = Math.round((count / max) * 100);
+      const day = dayNames[new Date(`${s.date}T00:00:00`).getDay()];
+      const latest = i === stats.length - 1 ? ' latest' : '';
+      return `<div class="bar-col"><div class="bar${latest}" style="height:${pct}%" title="${count} 次练习"></div><div class="bar-day">${day}</div></div>`;
+    }).join('');
+  }
+
+  // 正确率
+  const rows = document.getElementById('progressAccuracyRows');
+  if (rows && typeof AppState !== 'undefined' && AppState.stats) {
+    const st = AppState.stats;
+    const pct = (correct, total) => (total > 0 ? Math.round((correct / total) * 100) : 0);
+    const mc = pct(st.mcCorrect || 0, st.mcAttempts || 0);
+    const sp = pct(st.spCorrect || 0, st.spAttempts || 0);
+    const totalAttempts = (st.mcAttempts || 0) + (st.spAttempts || 0);
+    const overall = pct((st.mcCorrect || 0) + (st.spCorrect || 0), totalAttempts);
+    const row = (label, value) =>
+      `<div class="acc-row"><div class="acc-top"><span>${label}</span><b>${value}%</b></div>` +
+      `<div class="acc-track"><div class="acc-fill" style="width:${value}%"></div></div></div>`;
+    rows.innerHTML = row('选择题', mc) + row('拼写', sp) + row('综合', overall);
+
+    const totalEl = document.getElementById('progressTotalAttempts');
+    if (totalEl) totalEl.textContent = totalAttempts.toLocaleString();
+  }
+}
+
+(function () {
+  const originalUpdateProgressScreenStats = window.updateProgressScreenStats;
+  window.updateProgressScreenStats = function () {
+    if (typeof originalUpdateProgressScreenStats === 'function') {
+      originalUpdateProgressScreenStats.apply(this, arguments);
+    }
+    renderProgressPanels();
+  };
+})();

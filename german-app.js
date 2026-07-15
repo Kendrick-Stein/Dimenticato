@@ -262,13 +262,12 @@
         container.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 1rem;">还没有词本</p>';
       } else {
         container.innerHTML = wordbooks.map(wb => `
-          <div class="wordbook-card" data-language-wordbook-id="${wb.id}">
-            <button class="wordbook-card-manage-btn" data-manage-id="${wb.id}" title="管理单词本">${renderIcon('icon-settings')}</button>
+          <div class="card wordbook-card" data-language-wordbook-id="${wb.id}">
+            <button class="wordbook-card-manage-btn" data-manage-id="${wb.id}" title="管理单词本"><span class="msr">settings</span></button>
             <button class="wordbook-delete-btn" data-delete-id="${wb.id}" title="删除">×</button>
-            <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
-            <span class="wordbook-card-name">${escapeHtml(wb.name)}</span>
-            <span class="wordbook-card-count">${wb.wordCount} 词</span>
-            <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
+            <span class="card-chip"><span class="msr">bookmark</span></span>
+            <span class="card-title">${escapeHtml(wb.name)}</span>
+            <span class="card-desc">${wb.wordCount} 词 · ${new Date(wb.createdAt).toLocaleDateString()}</span>
           </div>
         `).join('');
 
@@ -477,6 +476,11 @@
         document.getElementById('germanMcShowHintBtn')?.classList.add('hidden');
       });
       this.bindClick('germanMcNextBtn', () => this.nextMultipleChoiceQuestion());
+      this.bindClick('germanMcSpeakBtn', () => {
+        if (this.currentWord) {
+          this.speakGerman(this.currentWord.display || this.currentWord.german || '');
+        }
+      });
 
       this.bindClick('germanSpBackBtn', () => this.goBack('germanVocabularyModesScreen'));
       this.bindClick('germanSpCheckBtn', () => this.checkSpellingAnswer());
@@ -494,7 +498,9 @@
       });
 
       this.bindClick('germanBrowseBackBtn', () => this.goBack('germanVocabularyModesScreen'));
-      this.bindClick('germanFilterBtn', () => this.toggleBrowseFilter());
+      document.querySelectorAll('#germanFilterChips .chip').forEach((chip) => {
+        chip.addEventListener('click', () => this.setBrowseFilter(chip.dataset.filter));
+      });
       document.getElementById('germanSearchInput')?.addEventListener('input', (event) => {
         this.renderBrowse(event.target.value || '');
       });
@@ -591,6 +597,7 @@
       const currentDisplay = this.currentWord.display || this.currentWord.german || '-';
       this.setText('germanMcCurrentWord', String(this.quizIndex + 1));
       this.setText('germanMcTotalWords', String(this.sessionWords.length));
+      this.updateSessionFill('germanMcSessionFill', this.quizIndex, this.sessionWords.length);
       this.setText('germanMcAccuracy', `${this.getAccuracy()}%`);
       this.setText('germanMcWord', currentDisplay);
 
@@ -640,7 +647,8 @@
       var engine = this._getMcEngine();
       engine.highlightOptions(correctAnswer);
       if (!isCorrect) {
-        button.classList.add('incorrect');
+        button.classList.remove('faded');
+        button.classList.add('wrong');
       }
 
       engine.showFeedback(isCorrect, correctAnswer);
@@ -676,6 +684,7 @@
       this.currentWord = this.sessionWords[this.quizIndex];
       this.setText('germanSpCurrentWord', String(this.quizIndex + 1));
       this.setText('germanSpTotalWords', String(this.sessionWords.length));
+      this.updateSessionFill('germanSpSessionFill', this.quizIndex, this.sessionWords.length);
       this.setText('germanSpAccuracy', `${this.getAccuracy()}%`);
       this.setText('germanSpMeaning', this.currentWord.meaning || this.currentWord.chinese || '-');
       this.setText('germanSpHint', this.currentWord.notes || '');
@@ -686,6 +695,7 @@
       if (input) {
         input.value = '';
         input.disabled = false;
+        input.classList.remove('good', 'bad');
         input.focus();
       }
       if (checkBtn) checkBtn.disabled = false;
@@ -715,7 +725,11 @@
         this.mastered.add(this.currentWord.german);
       }
 
-      if (input) input.disabled = true;
+      if (input) {
+        input.disabled = true;
+        input.classList.remove('good', 'bad');
+        input.classList.add(isCorrect ? 'good' : 'bad');
+      }
       if (checkBtn) checkBtn.disabled = true;
 
       const correctDisplay = this.currentWord.display || this.currentWord.german || '';
@@ -746,22 +760,24 @@
       this.renderBrowse('');
     },
 
-    toggleBrowseFilter() {
-      const filters = ['all', 'mastered', 'unmastered'];
-      const currentIndex = filters.indexOf(this.browseFilter);
-      this.browseFilter = filters[(currentIndex + 1) % filters.length];
+    setBrowseFilter(filter) {
+      if (!['all', 'mastered', 'unmastered'].includes(filter)) return;
+      this.browseFilter = filter;
       this.saveState();
       this.updateBrowseFilterText();
       this.renderBrowse(document.getElementById('germanSearchInput')?.value || '');
     },
 
+    toggleBrowseFilter() {
+      const filters = ['all', 'mastered', 'unmastered'];
+      const currentIndex = filters.indexOf(this.browseFilter);
+      this.setBrowseFilter(filters[(currentIndex + 1) % filters.length]);
+    },
+
     updateBrowseFilterText() {
-      const labels = {
-        all: '全部',
-        mastered: '已掌握',
-        unmastered: '未掌握'
-      };
-      this.setText('germanFilterText', labels[this.browseFilter] || '全部');
+      document.querySelectorAll('#germanFilterChips .chip').forEach((chip) => {
+        chip.classList.toggle('active', chip.dataset.filter === this.browseFilter);
+      });
     },
 
     renderBrowse(searchTerm = '') {
@@ -792,24 +808,22 @@
         return;
       }
 
-      container.innerHTML = words.map((word) => {
+      container.innerHTML = '<div class="word-card">' + words.map((word) => {
         const mastered = this.mastered.has(word.german);
+        const gloss = word.meaning || word.chinese || '—';
+        const cn = (word.meaning && word.chinese && word.chinese !== word.meaning) ? word.chinese : '';
         return `
-          <div class="word-item ${mastered ? 'mastered' : ''}" data-word="${escapeAttribute(word.display || word.german || '')}">
-            <div class="word-item-left">
-              <div class="word-italian"><svg class="icon"><use href="#icon-volume"></use></svg> ${escapeHtml(word.display || word.german || '')}</div>
-              <div class="word-english">${escapeHtml(word.meaning || word.chinese || '—')}</div>
-              ${word.notes ? `<div class="word-notes">${escapeHtml(word.notes)}</div>` : ''}
-            </div>
-            <div class="word-item-right">
-              <span class="word-rank">#${word.rank || '-'}</span>
-              ${mastered ? '<span class="mastered-badge">已掌握</span>' : ''}
-            </div>
+          <div class="word-line" data-word="${escapeAttribute(word.display || word.german || '')}">
+            <span class="wl-word">${escapeHtml(word.display || word.german || '')}</span>
+            <span class="wl-gloss">${escapeHtml(gloss)}${word.notes ? `<span class="wl-note">${escapeHtml(word.notes)}</span>` : ''}</span>
+            <span class="wl-cn">${escapeHtml(cn)}</span>
+            <span class="wl-status"><span class="dot${mastered ? ' good' : ''}"></span>${mastered ? '已掌握' : '学习中'}</span>
+            <button class="wl-speaker" title="朗读"><span class="msr">volume_up</span></button>
           </div>
         `;
-      }).join('');
+      }).join('') + '</div>';
 
-      container.querySelectorAll('.word-item').forEach((item) => {
+      container.querySelectorAll('.word-line').forEach((item) => {
         item.style.cursor = 'pointer';
         item.addEventListener('click', () => this.speakGerman(item.dataset.word || ''));
       });
@@ -830,7 +844,12 @@
       const feedback = document.getElementById(id);
       if (!feedback) return;
       const textEl = feedback.querySelector('.feedback-text');
-      if (textEl) textEl.textContent = text;
+      if (textEl) {
+        const icon = isCorrect ? 'check_circle' : 'cancel';
+        textEl.innerHTML = `<span class="msr">${icon}</span>${escapeHtml(text)}`;
+        textEl.classList.remove('ok', 'no');
+        textEl.classList.add(isCorrect ? 'ok' : 'no');
+      }
       feedback.classList.remove('hidden', 'correct', 'incorrect');
       feedback.classList.add(isCorrect ? 'correct' : 'incorrect');
     },
@@ -841,7 +860,18 @@
       feedback.classList.add('hidden');
       feedback.classList.remove('correct', 'incorrect');
       const textEl = feedback.querySelector('.feedback-text');
-      if (textEl) textEl.textContent = '';
+      if (textEl) {
+        textEl.textContent = '';
+        textEl.classList.remove('ok', 'no');
+      }
+    },
+
+    // 更新练习界面顶部的进度条（redesign .session-bar/.session-fill）
+    updateSessionFill(id, index, total) {
+      const fill = document.getElementById(id);
+      if (!fill) return;
+      const pct = total > 0 ? Math.min(100, Math.round((index / total) * 100)) : 0;
+      fill.style.width = `${pct}%`;
     },
 
     speakGerman(text) {
@@ -1025,6 +1055,9 @@
         document.getElementById('englishMcShowHintBtn')?.classList.add('hidden');
       });
       g.bindClick('englishMcNextBtn', () => this.nextMcQuestion());
+      g.bindClick('englishMcSpeakBtn', () => {
+        if (this.currentWord) this._speak(this.currentWord.english || '');
+      });
 
       // Spelling screen
       g.bindClick('englishSpBackBtn', () => g.goBack('englishVocabularyModesScreen'));
@@ -1039,7 +1072,9 @@
 
       // Browse screen
       g.bindClick('englishBrowseBackBtn', () => g.goBack('englishVocabularyModesScreen'));
-      g.bindClick('englishFilterBtn', () => this._toggleFilter());
+      document.querySelectorAll('#englishFilterChips .chip').forEach((chip) => {
+        chip.addEventListener('click', () => this._setFilter(chip.dataset.filter));
+      });
       document.getElementById('englishSearchInput')?.addEventListener('input', (e) => {
         this._renderBrowse(e.target.value || '');
       });
@@ -1077,6 +1112,7 @@
       const word = this.currentWord.english || '-';
       g.setText('englishMcCurrentWord', String(this.quizIndex + 1));
       g.setText('englishMcTotalWords', String(this.sessionWords.length));
+      g.updateSessionFill('englishMcSessionFill', this.quizIndex, this.sessionWords.length);
       g.setText('englishMcAccuracy', `${this._accuracy()}%`);
       g.setText('englishMcWord', word);
 
@@ -1115,7 +1151,8 @@
       var engine = this._getMcEngine();
       engine.highlightOptions(correct);
       if (!isCorrect) {
-        button.classList.add('incorrect');
+        button.classList.remove('faded');
+        button.classList.add('wrong');
       }
 
       engine.showFeedback(isCorrect, correct);
@@ -1152,6 +1189,7 @@
       this.currentWord = this.sessionWords[this.quizIndex];
       g.setText('englishSpCurrentWord', String(this.quizIndex + 1));
       g.setText('englishSpTotalWords', String(this.sessionWords.length));
+      g.updateSessionFill('englishSpSessionFill', this.quizIndex, this.sessionWords.length);
       g.setText('englishSpAccuracy', `${this._accuracy()}%`);
       g.setText('englishSpMeaning', this.currentWord.meaning || this.currentWord.chinese || '-');
       g.setText('englishSpHint', this.currentWord.notes || '');
@@ -1159,7 +1197,7 @@
 
       const input = document.getElementById('englishSpInput');
       const checkBtn = document.getElementById('englishSpCheckBtn');
-      if (input) { input.value = ''; input.disabled = false; input.focus(); }
+      if (input) { input.value = ''; input.disabled = false; input.classList.remove('good', 'bad'); input.focus(); }
       if (checkBtn) checkBtn.disabled = false;
       g.resetFeedback('englishSpFeedback');
     },
@@ -1176,7 +1214,11 @@
       this.quizTotal++;
       this.stats.spAttempts++;
       if (isCorrect) { this.quizCorrect++; this.stats.spCorrect++; this.mastered.add(this.currentWord.english); }
-      if (input) input.disabled = true;
+      if (input) {
+        input.disabled = true;
+        input.classList.remove('good', 'bad');
+        input.classList.add(isCorrect ? 'good' : 'bad');
+      }
       if (checkBtn) checkBtn.disabled = true;
 
       g.showFeedback('englishSpFeedback',
@@ -1200,18 +1242,24 @@
       this._renderBrowse('');
     },
 
-    _toggleFilter() {
-      const filters = ['all', 'mastered', 'unmastered'];
-      const idx = filters.indexOf(this.browseFilter);
-      this.browseFilter = filters[(idx + 1) % filters.length];
+    _setFilter(filter) {
+      if (!['all', 'mastered', 'unmastered'].includes(filter)) return;
+      this.browseFilter = filter;
       this._saveState();
       this._updateFilterText();
       this._renderBrowse(document.getElementById('englishSearchInput')?.value || '');
     },
 
+    _toggleFilter() {
+      const filters = ['all', 'mastered', 'unmastered'];
+      const idx = filters.indexOf(this.browseFilter);
+      this._setFilter(filters[(idx + 1) % filters.length]);
+    },
+
     _updateFilterText() {
-      const labels = { all: '全部', mastered: '已掌握', unmastered: '未掌握' };
-      this._germanApp.setText('englishFilterText', labels[this.browseFilter] || '全部');
+      document.querySelectorAll('#englishFilterChips .chip').forEach((chip) => {
+        chip.classList.toggle('active', chip.dataset.filter === this.browseFilter);
+      });
     },
 
     _renderBrowse(searchTerm = '') {
@@ -1236,23 +1284,21 @@
         return;
       }
 
-      container.innerHTML = words.map(word => {
+      container.innerHTML = '<div class="word-card">' + words.map(word => {
         const isMastered = this.mastered.has(word.english);
+        const gloss = word.meaning || word.chinese || '—';
+        const cn = (word.meaning && word.chinese && word.chinese !== word.meaning) ? word.chinese : '';
         return `
-          <div class="word-item ${isMastered ? 'mastered' : ''}" data-word="${escapeAttribute(word.english || '')}">
-            <div class="word-item-left">
-              <div class="word-italian"><svg class="icon"><use href="#icon-volume"></use></svg> ${escapeHtml(word.english || '')}</div>
-              <div class="word-english">${escapeHtml(word.meaning || word.chinese || '—')}</div>
-              ${word.notes ? `<div class="word-notes">${escapeHtml(word.notes)}</div>` : ''}
-            </div>
-            <div class="word-item-right">
-              <span class="word-rank">#${word.rank || '-'}</span>
-              ${isMastered ? '<span class="mastered-badge">已掌握</span>' : ''}
-            </div>
+          <div class="word-line" data-word="${escapeAttribute(word.english || '')}">
+            <span class="wl-word">${escapeHtml(word.english || '')}</span>
+            <span class="wl-gloss">${escapeHtml(gloss)}${word.notes ? `<span class="wl-note">${escapeHtml(word.notes)}</span>` : ''}</span>
+            <span class="wl-cn">${escapeHtml(cn)}</span>
+            <span class="wl-status"><span class="dot${isMastered ? ' good' : ''}"></span>${isMastered ? '已掌握' : '学习中'}</span>
+            <button class="wl-speaker" title="朗读"><span class="msr">volume_up</span></button>
           </div>`;
-      }).join('');
+      }).join('') + '</div>';
 
-      container.querySelectorAll('.word-item').forEach(item => {
+      container.querySelectorAll('.word-line').forEach(item => {
         item.style.cursor = 'pointer';
         item.addEventListener('click', () => this._speak(item.dataset.word || ''));
       });

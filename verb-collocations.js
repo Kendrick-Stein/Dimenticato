@@ -392,7 +392,7 @@ const VerbCollocations = (() => {
   function emptyStateHtml(message) {
     return (
       '<div class="vc-empty-state">' +
-        '<svg class="icon vc-empty-state-icon"><use href="#icon-search"></use></svg>' +
+        '<span class="msr vc-empty-state-icon">search</span>' +
         '<h2>没有可显示的内容</h2>' +
         '<p>' + message + '</p>' +
       '</div>'

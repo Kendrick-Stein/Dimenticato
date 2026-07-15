@@ -8,50 +8,37 @@
    ============================================================ */
 
 :root {
-  /* ---- Accent ramp (sage green) ---- */
-  --accent-primary: #556b60;          /* rgb(85, 107, 96) */
-  --accent-primary-rgb: 85, 107, 96;
-  --accent-secondary: #7c8f84;        /* rgb(124, 143, 132) */
-  --accent-secondary-rgb: 124, 143, 132;
-  --accent-danger: #8e5f58;           /* rgb(142, 95, 88) */
-  --accent-danger-rgb: 142, 95, 88;
-  --accent-warning: #8b7a63;          /* rgb(139, 122, 99) */
-  --accent-warning-rgb: 139, 122, 99;
-  /* alias kept for legacy grammar-book rules */
-  --accent-color: var(--accent-primary);
+  /* ---- Redesign canonical tokens — warm neutral base + single sage accent ---- */
+  --bg: #f3f1ea; --surface: #faf8f3; --card: #ffffff; --card-2: #f2efe7;
+  --border: #e6e2d8; --border-strong: #d5d0c3;
+  --ink: #211f1b; --ink-2: #544f46; --muted: #8f8a7d;
+  --accent: #4a7a5e; --accent-soft: #e7efe9;
+  --good: #4a7a5e; --good-soft: #e7efe9;
+  --bad: #b0564b; --bad-soft: #f6e8e5;
 
-  /* ---- Surfaces / elevation ---- */
-  --bg-primary: #f3efe7;
-  --bg-secondary: #faf7f1;
-  --bg-card: rgba(255, 252, 247, 0.86);
-  --surface-strong: rgba(255, 255, 255, 0.72);
-  --surface-raised: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.38));
-  --surface-input: rgba(255, 255, 255, 0.58);
-  --surface-glass: rgba(250, 247, 241, 0.78);
-  --surface-popover: rgba(250, 247, 241, 0.96);
+  /* ---- Legacy token names → aliases of canonical (whole legacy stylesheet
+         inherits the new palette; gradients/glass flattened to solid). ---- */
+  --accent-primary: var(--accent);   --accent-primary-rgb: 74, 122, 94;
+  --accent-secondary: var(--accent); --accent-secondary-rgb: 74, 122, 94;
+  --accent-danger: var(--bad);       --accent-danger-rgb: 176, 86, 75;
+  --accent-warning: var(--ink-2);    --accent-warning-rgb: 84, 79, 70;
+  --accent-color: var(--accent);
+
+  --bg-primary: var(--bg); --bg-secondary: var(--surface); --bg-card: var(--card);
+  --surface-strong: var(--card); --surface-raised: var(--card); --surface-input: var(--card);
+  --surface-glass: var(--surface); --surface-popover: var(--surface);
   --surface-overlay: rgba(19, 24, 22, 0.26);
 
-  /* ---- Text ---- */
-  --text-primary: #1d2420;
-  --text-secondary: #66706a;
-  --text-muted: #98a09a;
-  --text-on-accent: #f6f4ef;
+  --text-primary: var(--ink); --text-secondary: var(--ink-2); --text-muted: var(--muted);
+  --text-on-accent: #ffffff;
 
-  /* ---- Borders ---- */
-  --border-color: rgba(61, 74, 66, 0.12);
-  --border-strong: rgba(61, 74, 66, 0.2);
+  --border-color: var(--border);
 
-  /* ---- Soft accent tints (used for states / chips / hovers) ---- */
-  --accent-soft: rgba(var(--accent-primary-rgb), 0.08);
-  --accent-soft-strong: rgba(var(--accent-primary-rgb), 0.12);
-  --accent-border: rgba(var(--accent-primary-rgb), 0.2);
-  --accent-light: rgba(var(--accent-primary-rgb), 0.1);   /* grammar alias */
-  --success-soft: rgba(var(--accent-secondary-rgb), 0.12);
-  --success-border: rgba(var(--accent-secondary-rgb), 0.28);
-  --danger-soft: rgba(var(--accent-danger-rgb), 0.12);
-  --danger-border: rgba(var(--accent-danger-rgb), 0.25);
-  --warning-soft: rgba(var(--accent-warning-rgb), 0.12);
-  --hover-bg: var(--accent-soft);
+  --accent-soft-strong: var(--accent-soft); --accent-border: var(--border-strong);
+  --accent-light: var(--accent-soft); --hover-bg: var(--card-2);
+  --success-soft: var(--good-soft); --success-border: var(--good);
+  --danger-soft: var(--bad-soft); --danger-border: var(--bad);
+  --warning-soft: var(--card-2);
 
   /* ---- Focus ring (accessibility) ---- */
   --focus-ring: 0 0 0 3px rgba(var(--accent-primary-rgb), 0.32);
@@ -65,10 +52,10 @@
   --radius-xl: 28px;
   --radius-pill: 999px;
 
-  /* ---- Shadow scale ---- */
-  --shadow-sm: 0 4px 14px rgba(34, 40, 36, 0.05);
-  --shadow: 0 10px 30px rgba(34, 40, 36, 0.07);
-  --shadow-lg: 0 24px 60px rgba(34, 40, 36, 0.10);
+  /* ---- Shadow scale (flat rest, soft hover — no heavy elevation) ---- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 14px 30px -18px rgba(0, 0, 0, 0.2);
 
   /* ---- Spacing scale ---- */
   --space-1: 0.25rem;
@@ -84,94 +71,34 @@
   --transition: 0.2s ease;
   --transition-slow: 0.3s ease;
 
-  /* ---- Per-language background glow tint (overridden per theme) ---- */
-  --bg-glow: rgba(var(--accent-secondary-rgb), 0.08);
+  --bg-glow: transparent;
 }
 
 [data-theme="dark"] {
-  --bg-primary: #111614;
-  --bg-secondary: #171d1a;
-  --bg-card: rgba(26, 33, 29, 0.9);
-  --surface-strong: rgba(255, 255, 255, 0.04);
-  --surface-raised: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
-  --surface-input: rgba(255, 255, 255, 0.05);
-  --surface-glass: rgba(23, 29, 26, 0.78);
-  --surface-popover: rgba(23, 29, 26, 0.96);
+  /* Canonical tokens (aliases in :root resolve to these at use-time) */
+  --bg: #16150f; --surface: #1d1c16; --card: #232219; --card-2: #2b291f;
+  --border: #34322a; --border-strong: #454236;
+  --ink: #ece9df; --ink-2: #b7b3a6; --muted: #8b8578;
+  --accent: #83b191; --accent-soft: #25352c;
+  --good: #83b191; --good-soft: #25352c;
+  --bad: #d78d82; --bad-soft: #3a2925;
+
+  /* rgb triples (not derivable) + dark-specific alias values */
+  --accent-primary-rgb: 131, 177, 145;
+  --accent-secondary-rgb: 131, 177, 145;
+  --accent-danger-rgb: 215, 141, 130;
+  --accent-warning-rgb: 183, 179, 166;
+  --text-on-accent: #16150f;
   --surface-overlay: rgba(0, 0, 0, 0.5);
 
-  --text-primary: #edf1ed;
-  --text-secondary: #99a39c;
-  --text-muted: #6f7a73;
-  --text-on-accent: #111614;
-
-  --accent-primary: #b8c7bd;
-  --accent-primary-rgb: 184, 199, 189;
-  --accent-secondary: #8fa095;
-  --accent-secondary-rgb: 143, 160, 149;
-  --accent-danger: #c28f87;
-  --accent-danger-rgb: 194, 143, 135;
-  --accent-warning: #c7b59a;
-  --accent-warning-rgb: 199, 181, 154;
-
-  --border-color: rgba(208, 220, 211, 0.12);
-  --border-strong: rgba(208, 220, 211, 0.2);
-
-  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.22);
-  --shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
-  --shadow-lg: 0 28px 68px rgba(0, 0, 0, 0.36);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 14px 30px -18px rgba(0, 0, 0, 0.6);
 }
 
-/* ---- Language accents: light ---- */
-body[data-language="german"] {
-  --accent-primary: #4f667e;
-  --accent-primary-rgb: 79, 102, 126;
-  --accent-secondary: #748aa1;
-  --accent-secondary-rgb: 116, 138, 161;
-  --accent-danger: #8c6a63;
-  --accent-danger-rgb: 140, 106, 99;
-  --accent-warning: #8a7a67;
-  --accent-warning-rgb: 138, 122, 103;
-}
-
-body[data-language="english"] {
-  --accent-primary: #7b4351;
-  --accent-primary-rgb: 123, 67, 81;
-  --accent-secondary: #9b6572;
-  --accent-secondary-rgb: 155, 101, 114;
-  --accent-danger: #8b5d62;
-  --accent-danger-rgb: 139, 93, 98;
-  --accent-warning: #9a7a69;
-  --accent-warning-rgb: 154, 122, 105;
-}
-
-/* ---- Language accents: dark ---- */
-body[data-language="german"][data-theme="dark"] {
-  --accent-primary: #9eb4cb;
-  --accent-primary-rgb: 158, 180, 203;
-  --accent-secondary: #7d94ac;
-  --accent-secondary-rgb: 125, 148, 172;
-  --accent-danger: #c29b93;
-  --accent-danger-rgb: 194, 155, 147;
-  --accent-warning: #c6b29b;
-  --accent-warning-rgb: 198, 178, 155;
-}
-
-body[data-language="english"][data-theme="dark"] {
-  --accent-primary: #d4a4af;
-  --accent-primary-rgb: 212, 164, 175;
-  --accent-secondary: #b98591;
-  --accent-secondary-rgb: 185, 133, 145;
-  --accent-danger: #c19196;
-  --accent-danger-rgb: 193, 145, 150;
-  --accent-warning: #c7a490;
-  --accent-warning-rgb: 199, 164, 144;
-}
-
-/* ---- Per-language background glow (derives from accent token) ---- */
-body[data-language="german"],
-body[data-language="english"] {
-  --bg-glow: rgba(var(--accent-primary-rgb), 0.09);
-}
+/* ---- Per-language color themes REMOVED — the redesign uses a single sage
+       accent for all languages. The data-language attribute is still set on
+       <body> (other logic may read it); it just no longer changes hue. ---- */
 
 * {
   margin: 0;
@@ -180,12 +107,29 @@ body[data-language="english"] {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Manrope', 'Noto Sans SC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.65;
   min-height: 100vh;
   transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+/* Material Symbols Rounded — icon ligature helper */
+.msr {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ==================== 工具类 ==================== */
@@ -3491,11 +3435,8 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
 /* ==================== Premium minimalist refresh ==================== */
 
 body {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  background:
-    radial-gradient(circle at top left, var(--bg-glow), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.5), transparent 22%),
-    var(--bg-primary);
+  font-family: 'Manrope', 'Noto Sans SC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: var(--bg-primary);
   letter-spacing: -0.01em;
 }
 
@@ -3731,9 +3672,9 @@ textarea:focus-visible {
 
 .level-btn.selected,
 .wordbook-card.selected {
-  background: linear-gradient(180deg, rgba(var(--accent-primary-rgb), 0.96), rgba(var(--accent-primary-rgb), 0.82));
+  background: var(--accent-soft);
   border-color: var(--accent-primary);
-  color: var(--text-on-accent);
+  color: var(--accent);
 }
 
 .level-btn.selected .level-count,
@@ -3741,7 +3682,7 @@ textarea:focus-visible {
 .wordbook-card.selected .wordbook-card-date,
 .level-btn.selected .level-name,
 .wordbook-card.selected .wordbook-card-name {
-  color: var(--text-on-accent);
+  color: inherit;
 }
 
 .level-icon,
@@ -5318,3 +5259,655 @@ textarea:focus-visible {
   text-align: center;
   padding: 2rem;
 }
+
+/* ============================================================
+   REDESIGN SHELL (from Dimenticato.dc.html) — sidebar + topbar.
+   Appended last so it overrides the legacy .app/.sidebar/.main/.header
+   rules, whose old markup no longer exists. Screen-level component
+   styles are ported per-stream in Phase 2.
+   ============================================================ */
+.app.shell, #app.app {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+  max-width: none;
+  padding: 0;
+}
+
+/* ---- Sidebar ---- */
+#app .sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: auto;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 22px 16px;
+  box-shadow: none;
+  z-index: 20;
+}
+#app .sidebar .brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 4px 6px;
+  border-radius: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  text-align: left;
+}
+#app .sidebar .brand:hover { background: var(--card-2); }
+#app .sidebar .brand-mark {
+  width: 34px; height: 34px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  display: grid; place-items: center;
+  font-weight: 800; font-size: 18px;
+  flex: none;
+  border: none;
+}
+.brand-copy { display: flex; flex-direction: column; line-height: 1.1; }
+.brand-name { font-weight: 800; font-size: 16px; letter-spacing: -0.01em; color: var(--ink); }
+.brand-cn { font-size: 11px; color: var(--muted); font-weight: 600; }
+
+.side-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--muted);
+  padding: 0 8px; margin-bottom: -12px;
+}
+.lang-pills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.lang-pill {
+  border: 1px solid var(--border); background: transparent; color: var(--ink-2);
+  font-weight: 600; font-size: 13px; padding: 8px 0; border-radius: 99px;
+  transition: all var(--transition-fast); cursor: pointer;
+}
+.lang-pill:hover { border-color: var(--border-strong); }
+.lang-pill.active { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+
+#app .sidebar .nav { display: flex; flex-direction: column; gap: 2px; }
+.nav-item {
+  display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
+  padding: 10px 12px; border-radius: 11px; border: none; background: transparent;
+  color: var(--ink-2); font-weight: 600; font-size: 14px; cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.nav-item .msr { font-size: 21px; color: var(--muted); transition: color var(--transition-fast); }
+.nav-item:hover { background: var(--card-2); }
+.nav-item.active { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+.nav-item.active .msr { color: var(--accent); }
+
+.side-spacer { flex: 1; }
+.side-footer { border-top: 1px solid var(--border); padding-top: 14px; display: flex; flex-direction: column; gap: 2px; }
+.side-footer .nav-item { font-size: 13.5px; }
+
+/* ---- Main column ---- */
+#app .main {
+  display: flex; flex-direction: column; min-width: 0;
+  max-width: none; padding: 0; margin: 0;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  padding: 15px 32px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.topbar-left { display: flex; align-items: center; gap: 12px; min-width: 0; }
+#app .breadcrumb {
+  color: var(--muted); font-size: 13px; font-weight: 600;
+  display: flex; align-items: center; gap: 7px; min-width: 0; flex-wrap: wrap;
+}
+.breadcrumb-item { color: var(--muted); }
+.breadcrumb-item.current { color: var(--ink-2); font-weight: 700; }
+.breadcrumb-separator { opacity: 0.5; }
+.hamburger {
+  display: none; width: 38px; height: 38px; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--card); place-items: center;
+  color: var(--ink-2); cursor: pointer;
+}
+.stat-pills { display: flex; gap: 8px; }
+.stat-pill {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 7px 13px; font-size: 12.5px; font-weight: 600; color: var(--ink-2); white-space: nowrap;
+}
+.stat-pill b { font-weight: 800; color: var(--ink); }
+.stat-pill.accent b { color: var(--accent); }
+
+#app .content { padding: 40px 32px 72px; flex: 1; min-width: 0; max-width: none; }
+
+/* ---- Drawer scrim (mobile) ---- */
+.scrim { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 19; }
+
+/* ---- Responsive: collapse sidebar into an off-canvas drawer ---- */
+@media (max-width: 820px) {
+  #app.app { grid-template-columns: 1fr; }
+  #app .sidebar {
+    position: fixed; left: 0; top: 0; height: 100vh; width: 250px;
+    transform: translateX(-100%); transition: transform 0.2s;
+  }
+  body.drawer-open #app .sidebar { transform: none; }
+  body.drawer-open .scrim { display: block; }
+  .hamburger { display: grid; }
+  .stat-pills { display: none; }
+  .topbar { padding: 13px 18px; }
+  #app .content { padding: 28px 18px 60px; }
+}
+
+/* ============================================================
+   REDESIGN COMPONENT LIBRARY (from Dimenticato.dc.html)
+   Ported verbatim for Phase 2 screen polish. Appended last so
+   redesign rules win over legacy ones at equal specificity.
+   Deviations from the mockup (documented per plan Task 4 Step 2):
+   - shell/sidebar/topbar/scrim rules omitted (already ported above);
+   - var(--shadow-rest) → var(--shadow), var(--shadow-hover) → var(--shadow-lg)
+     (same values; tokens were canonicalized under the legacy names);
+   - .search-input scoped under .search-wrap so the legacy browse
+     input keeps its styling until Stream D adds the new markup;
+   - .screen/.screen.active override legacy (adds fade); the
+     #grammarBookScreen/#verbCollocationsScreen display:flex rules
+     still win on specificity, as before.
+   Legacy rules intentionally superseded: .eyebrow, .hint-btn,
+   .chinese-hint (redesign look is the target for these shared names).
+   ============================================================ */
+.container{max-width:960px;margin:0 auto}
+.container.narrow{max-width:680px}
+
+/* ---- Common primitives ---- */
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.desc{color:var(--muted);font-size:14.5px;line-height:1.6;margin-top:10px;max-width:60ch}
+.back-link{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-weight:600;font-size:13px;margin-bottom:22px;transition:color .15s;background:none;border:none;cursor:pointer;padding:0}
+.back-link:hover{color:var(--ink)}
+.back-link .msr{font-size:18px}
+
+.card-grid{display:grid;gap:16px;margin-top:30px}
+.card-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.card-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:16px;
+  padding:22px;text-align:left;display:flex;flex-direction:column;gap:10px;
+  box-shadow:var(--shadow);transition:all .18s;
+}
+.card:hover{border-color:var(--border-strong);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.card-chip{
+  width:46px;height:46px;border-radius:13px;background:var(--card-2);
+  display:grid;place-items:center;color:var(--accent);
+}
+.card-chip .msr{font-size:24px}
+.card-title{font-weight:800;font-size:17px;letter-spacing:-.01em}
+.card-desc{color:var(--muted);font-size:13px;line-height:1.55}
+
+/* ---- Screens (router) ---- */
+.screen{display:none;animation:fade .18s ease}
+.screen.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+/* ---- Portal ---- */
+.portal{max-width:900px;margin:0 auto;text-align:center;padding-top:20px}
+.portal h1{font-size:44px;font-weight:800;letter-spacing:-.02em;margin-top:14px}
+.portal .desc{margin:14px auto 0}
+.lang-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px;text-align:left}
+.lang-card{
+  background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;
+  box-shadow:var(--shadow);transition:all .18s;
+}
+.lang-card:hover{border-color:var(--border-strong);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.lang-card .lc-name{font-size:22px;font-weight:800;letter-spacing:-.01em}
+.lang-card .lc-native{color:var(--muted);font-size:13px;font-weight:600;margin-top:2px}
+.progress-track{height:6px;background:var(--card-2);border-radius:99px;overflow:hidden;margin-top:20px}
+.progress-fill{height:100%;background:var(--accent);border-radius:99px}
+.lc-pct{font-size:12px;color:var(--muted);font-weight:600;margin-top:9px}
+
+/* ---- Practice (MC / Spelling / Conjugation) ---- */
+.practice-head{display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:14px}
+.practice-head .idx{color:var(--ink-2)}
+.practice-head .acc{color:var(--muted)}
+.practice-head .acc b{color:var(--accent)}
+.session-bar{height:5px;background:var(--card-2);border-radius:99px;overflow:hidden;margin:14px 0 22px}
+.session-fill{height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
+
+.practice-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:34px 30px;box-shadow:var(--shadow)}
+.word-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:10px}
+.word{font-size:40px;font-weight:800;letter-spacing:-.01em;text-align:center}
+.speaker{
+  width:38px;height:38px;border-radius:99px;border:1px solid var(--border);background:var(--card-2);
+  display:grid;place-items:center;color:var(--accent);flex:none;transition:all .15s;cursor:pointer;
+}
+.speaker:hover{border-color:var(--accent);background:var(--accent-soft)}
+.speaker .msr{font-size:20px}
+.hint-btn{display:block;margin:16px auto 0;color:var(--muted);font-weight:600;font-size:13px;text-decoration:underline;text-underline-offset:3px;background:none;border:none;cursor:pointer;padding:0;box-shadow:none;transform:none}
+.hint-btn:hover{background:none;transform:none;box-shadow:none;color:var(--ink)}
+.chinese-hint{text-align:center;color:var(--ink-2);font-size:16px;margin-top:14px;font-weight:500;font-style:normal}
+.field-label{font-size:13px;font-weight:700;color:var(--muted);margin:28px 0 12px;letter-spacing:.01em}
+
+.options{display:flex;flex-direction:column;gap:10px}
+.option{
+  width:100%;text-align:left;padding:15px 18px;border:1.5px solid var(--border);border-radius:13px;
+  background:var(--card);font-weight:600;font-size:15px;transition:all .15s;color:var(--ink);cursor:pointer;
+}
+.option:hover{border-color:var(--border-strong)}
+.option.correct{border-color:var(--good);color:var(--good);background:var(--good-soft)}
+.option.wrong{border-color:var(--bad);color:var(--bad);background:var(--bad-soft)}
+.option.faded{opacity:.45}
+
+.primary-btn{
+  width:100%;margin-top:18px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;
+  padding:15px;border-radius:13px;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:8px;
+  border:none;cursor:pointer;
+}
+.primary-btn:hover{filter:brightness(1.05)}
+.primary-btn.hidden{display:none}
+
+.spell-input,.text-input{
+  width:100%;padding:16px 18px;border:1.5px solid var(--border);border-radius:13px;background:var(--card);
+  font-family:inherit;font-size:18px;font-weight:600;color:var(--ink);transition:all .15s;
+}
+.spell-input:focus,.text-input:focus{outline:none;border-color:var(--accent)}
+.spell-input.good{border-color:var(--good);color:var(--good)}
+.spell-input.bad{border-color:var(--bad);color:var(--bad)}
+.pill-btn{
+  display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);background:var(--card-2);
+  border-radius:99px;padding:8px 16px;font-weight:600;font-size:13px;color:var(--ink-2);transition:all .15s;cursor:pointer;
+}
+.pill-btn:hover{border-color:var(--accent);color:var(--accent)}
+.pill-btn .msr{font-size:18px}
+.feedback{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;margin-top:20px}
+.feedback.ok{color:var(--good)}
+.feedback.no{color:var(--bad)}
+
+/* ---- Browse ---- */
+.browse-controls{display:flex;gap:12px;align-items:center;margin:26px 0 18px;flex-wrap:wrap}
+.search-wrap{position:relative;flex:1;min-width:220px}
+.search-wrap .msr{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:20px}
+.search-wrap .search-input{
+  width:100%;min-width:0;padding:12px 16px 12px 42px;border:1px solid var(--border);border-radius:12px;
+  background:var(--card);font-family:inherit;font-size:14px;color:var(--ink);
+}
+.search-wrap .search-input:focus{outline:none;border-color:var(--accent)}
+.chips{display:flex;gap:8px}
+.chip{
+  border:1px solid var(--border);background:var(--card);color:var(--ink-2);font-weight:600;font-size:13px;
+  padding:10px 16px;border-radius:99px;transition:all .15s;cursor:pointer;
+}
+.chip:hover{border-color:var(--border-strong)}
+.chip.active{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:700}
+
+.word-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.word-line{
+  display:grid;grid-template-columns:1.3fr 1.6fr 1.4fr auto auto;align-items:center;gap:16px;
+  padding:14px 20px;border-bottom:1px solid var(--border);transition:background .15s;
+}
+.word-line:last-child{border-bottom:none}
+.word-line:hover{background:var(--card-2)}
+.wl-word{font-weight:700}
+.wl-gloss{color:var(--ink-2);font-size:14px}
+.wl-cn{color:var(--muted);font-size:14px}
+.wl-status{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:99px;background:var(--border-strong)}
+.dot.good{background:var(--good)}
+.wl-speaker{width:32px;height:32px;border-radius:99px;border:1px solid var(--border);display:grid;place-items:center;color:var(--accent);transition:all .15s;background:none;cursor:pointer}
+.wl-speaker:hover{background:var(--accent-soft);border-color:var(--accent)}
+.wl-speaker .msr{font-size:17px}
+
+/* ---- Conjugation ---- */
+.conj-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.conj-verb{font-size:32px;font-weight:800;letter-spacing:-.01em}
+.conj-verb .en{color:var(--muted);font-size:18px;font-weight:600;margin-left:8px}
+.tense-chips{display:flex;gap:8px;flex-wrap:wrap}
+.conj-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.conj-line{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid var(--border)}
+.conj-line:last-child{border-bottom:none}
+.conj-person{color:var(--muted);font-weight:500}
+.conj-form{color:var(--ink);font-weight:700;font-size:16px}
+.tip-strip{
+  display:flex;align-items:center;gap:10px;margin-top:16px;background:var(--accent-soft);
+  border-radius:12px;padding:14px 18px;color:var(--accent);font-size:13.5px;font-weight:600;
+}
+.tip-strip .msr{font-size:20px;flex:none}
+
+/* ---- Grammar Book ---- */
+.book-layout{display:grid;grid-template-columns:250px 1fr;gap:24px;margin-top:20px}
+.book-nav{position:sticky;top:96px;align-self:start;display:flex;flex-direction:column;gap:4px;max-height:calc(100vh - 140px);overflow:auto}
+.chapter-btn{text-align:left;padding:11px 14px;border-radius:11px;color:var(--ink-2);font-weight:600;font-size:14px;transition:all .15s;background:none;border:none;cursor:pointer}
+.chapter-btn:hover{background:var(--card-2)}
+.chapter-btn.active{background:var(--accent-soft);color:var(--accent);font-weight:700}
+.book-reader{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:34px 36px;box-shadow:var(--shadow)}
+.book-reader h1{font-size:26px;font-weight:800;letter-spacing:-.02em;margin-bottom:18px}
+.book-reader p{color:var(--ink-2);font-size:15px;line-height:1.75;margin-bottom:16px}
+.book-reader h2{font-size:18px;font-weight:800;margin:26px 0 12px}
+
+/* ---- Progress ---- */
+.big-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.big-stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+.big-stat .bs-label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.big-stat .bs-value{font-size:38px;font-weight:800;letter-spacing:-.02em;margin-top:10px}
+.big-stat.accent .bs-value{color:var(--accent)}
+.progress-2col{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-top:16px}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+.panel-title{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+.bar-chart{display:flex;align-items:flex-end;gap:12px;height:160px}
+.bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;height:100%}
+.bar{width:100%;background:var(--card-2);border-radius:8px 8px 0 0;margin-top:auto;transition:height .3s}
+.bar.latest{background:var(--accent)}
+.bar-day{font-size:11px;color:var(--muted);font-weight:600}
+.acc-row{margin-bottom:18px}
+.acc-row .acc-top{display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin-bottom:7px}
+.acc-row .acc-top b{color:var(--accent)}
+.acc-track{height:7px;background:var(--card-2);border-radius:99px;overflow:hidden}
+.acc-fill{height:100%;background:var(--accent);border-radius:99px}
+.acc-total{border-top:1px solid var(--border);padding-top:14px;margin-top:22px;font-size:13px;color:var(--muted);font-weight:600;display:flex;justify-content:space-between}
+.acc-total b{color:var(--ink);font-weight:800}
+
+/* ---- Settings ---- */
+.settings-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);margin-top:20px}
+.settings-card-title{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:20px 22px 6px}
+.data-row{display:flex;align-items:center;gap:16px;padding:16px 22px;border-top:1px solid var(--border);width:100%;text-align:left;transition:background .15s;background:none;border-left:none;border-right:none;border-bottom:none;cursor:pointer}
+.settings-card-title + .data-row{border-top:none}
+.data-row:hover{background:var(--card-2)}
+.data-row .row-chip{width:40px;height:40px;border-radius:11px;background:var(--card-2);display:grid;place-items:center;color:var(--accent);flex:none}
+.data-row.danger .row-chip{color:var(--bad)}
+.data-row.danger .row-title{color:var(--bad)}
+.row-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.row-title{display:block;font-weight:700;font-size:15px}
+.row-sub{display:block;color:var(--muted);font-size:13px}
+.data-row .chev{color:var(--muted);font-size:22px}
+.pref-row{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-top:1px solid var(--border)}
+.pref-label{font-weight:600;font-size:14px}
+.segmented{display:flex;gap:6px}
+.seg{border:1px solid var(--border);background:var(--card);color:var(--ink-2);font-weight:600;font-size:13px;padding:8px 16px;border-radius:99px;transition:all .15s;cursor:pointer}
+.seg.active{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:700}
+.stepper{display:flex;align-items:center;gap:14px}
+.stepper button{width:34px;height:34px;border-radius:10px;border:1px solid var(--border);background:var(--card);display:grid;place-items:center;color:var(--ink-2);transition:all .15s;cursor:pointer}
+.stepper button:hover{border-color:var(--accent);color:var(--accent)}
+.stepper .val{font-weight:800;font-size:17px;min-width:28px;text-align:center}
+.about-body{padding:20px 22px;border-top:1px solid var(--border);color:var(--ink-2);font-size:14px;line-height:1.7}
+
+/* ---- Section list ---- */
+.sub-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:34px 0 14px}
+
+/* ---- Responsive: collapse library grids under 820px ---- */
+@media (max-width:820px){
+  .card-grid.cols-3,.card-grid.cols-2,.lang-cards,.big-stats,.progress-2col,.book-layout{grid-template-columns:1fr}
+  .book-nav{position:static;max-height:none;flex-direction:row;overflow-x:auto}
+}
+
+/* ===== STREAM B ADDITIONS ===== */
+/* Vocabulary source/modes screens: library buttons are real <button>s here,
+   so give them the app font + pointer (the mockup used a global button reset
+   that was intentionally not ported). */
+button.card, button.chip, button.pill-btn, button.back-link { font-family: inherit; }
+button.card { cursor: pointer; color: var(--ink); }
+button.card:disabled { opacity: 0.45; cursor: not-allowed; }
+button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-color: var(--border); }
+
+/* Level-tier chips wrap on narrow screens; JS marks selection with .selected */
+.chips.wrap { flex-wrap: wrap; }
+.chip.selected { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+
+/* Sub-content spacing inside a top-level source card */
+.card > .sub-label { margin: 10px 0 0; }
+.card > .card-grid { margin-top: 4px; }
+
+/* Wordbook cards emitted by JS: .card look, soft-accent selected state
+   (overrides legacy solid-accent .wordbook-card.selected) */
+.card.wordbook-card { align-items: flex-start; }
+.card.wordbook-card.selected { background: var(--accent-soft); border-color: var(--accent); color: var(--ink); }
+
+/* "My wordbooks" header row on DE/EN source screens */
+.section-head-row { margin-top: 34px; align-items: flex-end; }
+.section-head-row .sub-label { margin: 0 0 4px; }
+.section-head-row + .card-grid { margin-top: 14px; }
+
+/* Selection summary sits between .desc and the mode cards */
+.selection-summary-card { margin-top: 22px; }
+/* ===== END STREAM B ===== */
+
+/* ===== STREAM D ADDITIONS ===== */
+/* Browse rows: second action button + inline note under the gloss */
+.wl-actions{display:flex;align-items:center;gap:8px;justify-self:end}
+.wl-gloss .wl-note{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+
+/* ============================================================
+   ===== STREAM F ADDITIONS =====
+   Progress + Settings + Community browse + modal reskins.
+   Only additions/overrides on top of the component library;
+   chromatic color limited to var(--accent) (+ --bad for danger).
+   ============================================================ */
+
+/* ---- DE/EN progress note text inside a .panel ---- */
+.about-note{color:var(--ink-2);font-size:14px;line-height:1.7}
+
+/* ---- Segmented difficulty control: neutralize legacy .difficulty-option box
+       (markup keeps .difficulty-option for the app.js toggle wiring) ---- */
+.segmented .difficulty-option{min-width:0;flex-direction:row;align-items:center;justify-content:center;gap:0}
+
+/* ---- Community browse: normalize from legacy fixed overlay to a normal screen ---- */
+.community-browse-screen{position:static;top:auto;left:auto;right:auto;bottom:auto;z-index:auto;background:transparent;padding:0;overflow:visible}
+.browse-controls .filter-select{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:11px 14px;font-size:14px;font-weight:600;color:var(--ink);cursor:pointer}
+.browse-controls .filter-select:hover{border-color:var(--border-strong)}
+.browse-controls .filter-select:focus{outline:none;border-color:var(--accent)}
+
+/* ---- Community wordbook cards ---- */
+.community-wordbook-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:8px}
+.community-wordbook-list .loading-message,
+.community-wordbook-list .error-message,
+.community-wordbook-list .empty-message{grid-column:1/-1;text-align:center;color:var(--muted);font-size:14px;padding:40px 0;background:none;border:none}
+.community-wordbook-list .empty-icon .msr{font-size:40px;color:var(--muted);margin-bottom:10px}
+.community-wordbook-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;transition:border-color .15s,box-shadow .15s;transform:none}
+.community-wordbook-card:hover{transform:none;border-color:var(--border-strong);box-shadow:var(--shadow-lg)}
+.wordbook-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin:0;padding:0;border:none}
+.wordbook-card-title{font-size:16px;font-weight:800;letter-spacing:-.01em;margin:0;color:var(--ink)}
+.wordbook-difficulty-badge{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.wordbook-card-meta{display:flex;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:12.5px;font-weight:600;margin:0}
+.wordbook-card-meta span{display:inline-flex;align-items:center;gap:4px;color:var(--muted)}
+.wordbook-card-meta .msr,.preview-meta .msr{font-size:16px}
+.wordbook-card-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+.wordbook-tag{border:1px solid var(--border);background:var(--card-2);color:var(--ink-2);font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:99px}
+.wordbook-card-description{color:var(--ink-2);font-size:13.5px;line-height:1.6;margin:0}
+.wordbook-card-actions{display:flex;gap:8px;margin-top:auto;padding-top:6px}
+.wordbook-card-actions .wordbook-action-btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;flex:1;padding:9px 12px;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;transition:all .15s}
+.wordbook-card-actions .wordbook-action-btn .msr{font-size:17px}
+.wordbook-card-actions .wordbook-action-btn.preview{background:var(--card);border:1px solid var(--border);color:var(--ink-2)}
+.wordbook-card-actions .wordbook-action-btn.preview:hover{border-color:var(--accent);color:var(--accent);background:var(--card)}
+.wordbook-card-actions .wordbook-action-btn.download{background:var(--accent);border:1px solid var(--accent);color:var(--text-on-accent)}
+.wordbook-card-actions .wordbook-action-btn.download:hover{opacity:.92;background:var(--accent)}
+
+/* ---- Modals: card surface + quieter header ---- */
+.modal-content{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow-lg)}
+.modal-header{padding:18px 22px;border-bottom:1px solid var(--border)}
+.modal-header h3{font-size:17px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:8px;color:var(--ink)}
+.modal-header h3 .msr{color:var(--accent);font-size:21px}
+.close-btn{font-size:1.5rem;border-radius:10px}
+.modal-body{padding:22px}
+
+/* statsModal rows */
+.stat-item{border-bottom:1px solid var(--border)}
+.stat-item .stat-label{font-size:13.5px;font-weight:600;color:var(--muted)}
+.stat-item .stat-value{font-size:16px;font-weight:800;color:var(--ink)}
+
+/* enhanced stats modal */
+.stats-tabs{background:var(--card-2);border-bottom:1px solid var(--border)}
+.stats-tab-btn{font-size:14px;font-weight:600;color:var(--muted);border-bottom:2px solid transparent;padding:13px}
+.stats-tab-btn:hover{background:transparent;color:var(--ink)}
+.stats-tab-btn.active{color:var(--accent);border-bottom-color:var(--accent);background:var(--card)}
+.enhanced-stats-body h4{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:6px;margin-bottom:14px;border:none;padding:0}
+.enhanced-stats-body h4 .msr{font-size:17px;color:var(--accent)}
+.modal .stat-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;text-align:left;box-shadow:none}
+.modal .stat-card:hover{transform:none;box-shadow:none}
+.modal .stat-card-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0}
+.modal .stat-card-value{font-size:26px;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-top:8px}
+.chart-container{background:var(--card);border:1px solid var(--border);border-radius:14px}
+.stats-table-container{background:var(--card);border:1px solid var(--border);border-radius:14px}
+.stats-table thead{background:var(--card-2)}
+.stats-table th{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border)}
+.stats-table td{border-bottom:1px solid var(--border);color:var(--ink-2)}
+
+/* editor + select dialogs */
+.editor-toolbar-btn{border-radius:10px;font-weight:600}
+.editor-toolbar-btn .msr,.editor-action-btn .msr{font-size:18px}
+.wordbook-select-icon .msr{font-size:20px;color:var(--accent)}
+
+/* preview modal */
+.preview-meta{display:flex;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:13px;font-weight:600;margin-bottom:12px}
+.preview-meta span{display:inline-flex;align-items:center;gap:4px}
+.preview-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.preview-description{color:var(--ink-2);font-size:13.5px;line-height:1.6;margin-bottom:12px}
+.preview-note{text-align:center;color:var(--muted);font-size:12.5px;padding:10px 0 0}
+
+/* help modal headings carry msr icons now */
+.help-section h2,.help-section h3,.help-section h4{display:flex;align-items:center;gap:8px}
+.help-section h2 .msr,.help-section h3 .msr,.help-section h4 .msr{font-size:1.1em;color:var(--accent)}
+.help-section h2{font-size:1.4rem;color:var(--ink)}
+.help-section h3{font-size:1.15rem;border-bottom:1px solid var(--border)}
+.help-section h4{font-size:1rem;color:var(--ink)}
+
+/* responsive: single-column community cards on narrow screens */
+@media (max-width:820px){
+  .community-wordbook-list{grid-template-columns:1fr}
+}
+
+/* ===== STREAM E ADDITIONS =====
+   Grammar hub / conjugation setup+practice / grammar book / verb
+   collocations reskin. Token-only; overrides legacy rules by cascade
+   position (appended last). */
+
+/* ---- Conjugation setup: panels ---- */
+.conj-setup-panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:var(--shadow);margin-top:24px;transition:border-color .15s}
+.conj-setup-panel.conj-context-active{border-color:var(--accent)}
+
+.conj-module-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.conj-module-toolbar label{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:13px;font-weight:600}
+.conj-module-toolbar select{min-width:0;padding:9px 12px;border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--ink);font-family:inherit;font-size:13.5px;font-weight:600}
+.conj-module-toolbar select:focus{outline:none;border-color:var(--accent)}
+.conj-lesson-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.conj-lesson-status{display:flex;flex-direction:row;align-items:center;gap:8px;min-width:0}
+#conjLessonLabel{font-weight:700;font-size:13.5px;color:var(--ink-2)}
+#conjLessonCompletedBadge{display:inline-flex;align-items:center;padding:2px 10px;border-radius:999px;background:var(--good-soft);color:var(--good);font-size:12px;font-weight:700}
+.pill-btn:disabled{opacity:.45;cursor:default;pointer-events:none}
+.conj-module-hint{text-align:center;color:var(--muted);font-size:12.5px;margin-top:14px}
+
+/* ---- Conjugation setup: tense matrix (dark-mode contrast fix — cards/labels
+       retokenized on --card/--ink-2/--border instead of legacy level-btn) ---- */
+.conj-matrix-head{border:none;background:none;color:var(--muted);font-weight:700;font-size:12px;letter-spacing:.06em;min-height:30px}
+.conj-matrix-row-label{border:none;background:var(--card-2);color:var(--ink-2);border-radius:12px;font-size:13px;font-weight:700;padding:8px}
+.conj-matrix-cell{border:1px solid var(--border);background:var(--surface);border-radius:12px;padding:8px;display:grid;gap:6px;align-content:start}
+.conj-matrix-empty{color:var(--muted);font-size:13px}
+.conj-extra-title{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:14px 0 8px}
+.conj-mobile-mood-section{border:1px solid var(--border);border-radius:12px}
+.conj-mobile-mood-label{background:var(--card-2);color:var(--ink-2);border-bottom:1px solid var(--border)}
+
+.chip.conj-tense-btn{display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-height:0;padding:9px 12px;border-radius:11px;background:var(--card);text-align:left}
+.chip.conj-tense-btn .ct-name{font-weight:700;font-size:13.5px;color:var(--ink);line-height:1.3}
+.chip.conj-tense-btn .ct-group{font-size:11px;font-weight:600;color:var(--muted);line-height:1.3}
+.chip.conj-tense-btn:hover{border-color:var(--border-strong)}
+.chip.conj-tense-btn.active{border-color:var(--accent);background:var(--accent-soft)}
+.chip.conj-tense-btn.active .ct-name,.chip.conj-tense-btn.active .ct-group{color:var(--accent)}
+
+/* ---- Conjugation setup: verb lookup ---- */
+.conjugation-lookup-header h3{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:800;color:var(--ink)}
+.conjugation-lookup-header h3 .msr{color:var(--accent);font-size:20px}
+.conjugation-lookup-header p{color:var(--muted);font-size:13px}
+.conj-lookup-input{flex:1;min-width:220px;padding:12px 16px;border:1.5px solid var(--border);border-radius:12px;background:var(--card);font-family:inherit;font-size:14px;font-weight:500;color:var(--ink);transition:border-color .15s}
+.conj-lookup-input:focus{outline:none;border-color:var(--accent)}
+.conjugation-lookup-empty{margin-top:14px;padding:12px 16px;border-radius:12px;background:var(--card-2);color:var(--ink-2);font-size:13.5px}
+.conj-lookup-result-card{padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+.conj-lookup-result-header h4{font-size:22px;font-weight:800;letter-spacing:-.01em;color:var(--ink)}
+.conj-lookup-meta span{padding:4px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700}
+.conj-lookup-tense-card{padding:0;border:none;background:none;box-shadow:none}
+.conj-lookup-tense-title{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--muted);margin-bottom:8px}
+.conj-card-mini .conj-line{padding:8px 14px}
+.conj-card-mini .conj-form{font-size:14px}
+.conj-card-mini .conj-person{font-size:13px}
+
+/* ---- Conjugation setup: mode cards ---- */
+.card.selected{border-color:var(--accent)}
+
+/* ---- Conjugation / collocation practice screens ---- */
+#conjugationScreen .practice-head,#verbCollocationPracticeScreen .practice-head{margin-bottom:14px}
+#conjugationScreen .practice-card,#verbCollocationPracticeScreen .practice-card{margin-top:6px}
+.conj-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:none;box-shadow:none;border:none;padding:0;margin:0 0 16px}
+#conjActiveLessonInfo{color:var(--muted);font-size:13px;font-weight:600;margin-right:auto}
+.word-row .en{color:var(--muted);font-size:18px;font-weight:600}
+
+.practice-feedback{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:16px;background:var(--card);border:1.5px solid var(--border);border-radius:13px;padding:12px 18px}
+.practice-feedback .feedback-text{margin:0;font-weight:700;font-size:15px}
+.practice-feedback.correct{border-color:var(--good);background:var(--good-soft)}
+.practice-feedback.correct .feedback-text{color:var(--good)}
+.practice-feedback.incorrect{border-color:var(--bad);background:var(--bad-soft)}
+.practice-feedback.incorrect .feedback-text{color:var(--bad)}
+.practice-feedback .primary-btn{width:auto;margin-top:0;padding:10px 16px;flex:none}
+
+.conj-full-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;width:100%}
+.conj-full-item{display:flex;flex-direction:column;gap:6px;padding:12px 14px;background:var(--card);border:1.5px solid var(--border);border-radius:13px;transition:all .15s}
+.conj-full-item.correct{border-color:var(--good);background:var(--good-soft)}
+.conj-full-item.incorrect{border-color:var(--bad);background:var(--bad-soft)}
+.conj-full-label{font-weight:700;font-size:13px;color:var(--ink-2);text-align:left}
+.conj-full-item .conj-full-input{font-size:15px;padding:10px 12px;max-width:none}
+.conj-full-answer{font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.conj-full-item.correct .conj-full-answer{color:var(--good)}
+.conj-full-item.incorrect .conj-full-answer{color:var(--bad)}
+
+.vcp-title{font-size:22px;font-weight:800;letter-spacing:-.01em;margin-top:4px}
+.vc-practice-config-grid{margin-top:18px}
+#vcPracticeSetupCard .form-input{padding:11px 14px;border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--ink);font-family:inherit;font-size:14px;font-weight:500}
+#vcPracticeSetupCard .form-input:focus{outline:none;border-color:var(--accent)}
+.vc-practice-summary{background:var(--surface);border:1px solid var(--border);border-radius:12px}
+.vc-practice-summary .selection-summary-label{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.04em}
+.vc-practice-summary .selection-summary-item{font-size:13.5px;color:var(--ink-2)}
+.vc-practice-summary .selection-summary-item strong{color:var(--ink)}
+#vcPracticeInputSection .hint-btn{margin-top:14px}
+
+/* ---- Grammar book + collocations reader panes ---- */
+.grammar-nav-sidebar{background:var(--surface);border-right-color:var(--border)}
+.grammar-nav-header{border-bottom-color:var(--border);padding:14px 14px 12px;gap:8px}
+.grammar-book-back-btn{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-weight:600;font-size:13px;opacity:1;background:none;border:none;cursor:pointer;padding:0;text-align:left;transition:color .15s}
+.grammar-book-back-btn:hover{color:var(--ink);text-decoration:none;opacity:1}
+.grammar-book-back-btn .msr{font-size:17px}
+.grammar-nav-title{font-size:15px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+.grammar-nav-title .msr{color:var(--accent);font-size:19px}
+.grammar-nav-tree{padding:8px}
+.grammar-part-heading{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:14px 8px 5px}
+.grammar-chapter-btn{align-items:center;gap:5px;padding:8px 8px;border-radius:10px;font-size:13px;font-weight:600;color:var(--ink-2);transition:background .15s}
+.grammar-chapter-btn:hover{background:var(--card-2)}
+.grammar-chapter-arrow{font-size:16px;margin-top:0;color:var(--muted)}
+.grammar-topic-link{padding:7px 8px 7px 29px;border-radius:9px;font-size:12.5px;font-weight:500;color:var(--ink-2);transition:all .15s}
+.grammar-topic-link:hover{background:var(--card-2);color:var(--ink)}
+.grammar-topic-link.active{background:var(--accent-soft);color:var(--accent);font-weight:700;border-right:none}
+.grammar-sidebar-toggle{border:1px solid var(--border);border-radius:9px;padding:5px;color:var(--ink-2);background:none}
+.grammar-sidebar-toggle:hover{background:var(--card-2)}
+.grammar-sidebar-toggle .msr{font-size:19px;display:block}
+.grammar-content-header{background:var(--bg);border-bottom-color:var(--border);padding:10px 20px}
+.grammar-content-breadcrumb{font-size:13px;font-weight:600;color:var(--muted)}
+.grammar-book-layout{background:var(--bg)}
+.msr.grammar-welcome-icon{width:auto;height:auto;font-size:44px;opacity:.35}
+.grammar-welcome h2{font-weight:800;letter-spacing:-.01em}
+
+.vc-search-panel{border-bottom-color:var(--border);padding:12px 14px 10px}
+.vc-search-label{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--ink-2)}
+.vc-search-icon.msr{font-size:18px;color:var(--muted)}
+.vc-search-input{border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--ink);font-family:inherit;font-size:13.5px;padding:10px 12px 10px 40px}
+.vc-search-input:focus{outline:none;border-color:var(--accent)}
+.vc-prep-link{border-radius:10px;border-left:none;padding:9px 10px;color:var(--ink-2);font-weight:600;transition:all .15s}
+.vc-prep-link:hover{background:var(--card-2)}
+.vc-prep-link.active{background:var(--accent-soft);border-left:none}
+.vc-prep-link.active .vc-prep-name,.vc-prep-link.active .vc-prep-count{color:var(--accent)}
+.vc-prep-name{font-size:13.5px;font-weight:700}
+.vc-prep-count{font-size:11.5px;color:var(--muted)}
+.vc-card,.vc-search-choice-btn{border-radius:16px;border-color:var(--border);background:var(--card);box-shadow:var(--shadow)}
+.vc-card-badge{background:var(--accent-soft);color:var(--accent)}
+.vc-kicker{color:var(--muted);letter-spacing:.14em;font-size:11px}
+.vc-panel-intro h2{font-weight:800;letter-spacing:-.01em}
+.vc-empty-state-icon.msr{width:auto;height:auto;font-size:40px;opacity:.4}
+.grammar-markdown{max-width:880px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:34px 36px;box-shadow:var(--shadow)}
+@media (max-width:768px){.grammar-markdown{padding:22px 18px}}
+
+/* ===== INTEGRATION FIXES ===== */
+/* In-content text links (e.g. wordbook template downloads) use the accent,
+   not the browser default blue */
+.content a{color:var(--accent);text-decoration-color:var(--border-strong)}
+.content a:hover{text-decoration-color:var(--accent)}

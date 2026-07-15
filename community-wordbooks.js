@@ -351,43 +351,43 @@ const CommunityWordbooks = {
     if (!wordbooks || wordbooks.length === 0) {
       container.innerHTML = `
         <div class="empty-message">
-          <div class="empty-icon">${renderIcon('icon-library')}</div>
+          <div class="empty-icon"><span class="msr">groups</span></div>
           <p>还没有社区词本</p>
           <p style="font-size: 0.9rem; margin-top: 0.5rem;">成为第一个分享者吧！</p>
         </div>
       `;
       return;
     }
-    
+
     container.innerHTML = wordbooks.map(wb => {
       const difficultyInfo = DIFFICULTY_LEVELS[wb.difficulty] || { label: wb.difficulty, icon: 'icon-book-open' };
       const tagsHtml = wb.tags && wb.tags.length > 0
         ? wb.tags.map(tag => `<span class="wordbook-tag">${tag}</span>`).join('')
         : '';
-      
+
       return `
         <div class="community-wordbook-card">
           <div class="wordbook-card-header">
             <h3 class="wordbook-card-title">${wb.name}</h3>
-            <span class="wordbook-difficulty-badge">${renderIcon(difficultyInfo.icon)} ${difficultyInfo.label}</span>
+            <span class="wordbook-difficulty-badge">${difficultyInfo.label}</span>
           </div>
-          
+
           <div class="wordbook-card-meta">
-            <span>${renderIcon('icon-help')} ${wb.author_name}</span>
-            <span>${renderIcon('icon-pen')} ${wb.word_count} 词</span>
-            <span>${renderIcon('icon-download')} ${wb.download_count} 次下载</span>
+            <span><span class="msr">person</span> ${wb.author_name}</span>
+            <span><span class="msr">menu_book</span> ${wb.word_count} 词</span>
+            <span><span class="msr">download</span> ${wb.download_count} 次下载</span>
           </div>
-          
+
           ${tagsHtml ? `<div class="wordbook-card-tags">${tagsHtml}</div>` : ''}
-          
+
           ${wb.description ? `<p class="wordbook-card-description">${wb.description}</p>` : ''}
-          
+
           <div class="wordbook-card-actions">
             <button class="wordbook-action-btn preview" onclick="CommunityWordbooks.previewWordbook('${wb.id}')">
-              ${renderIcon('icon-eye')} 预览
+              <span class="msr">visibility</span> 预览
             </button>
             <button class="wordbook-action-btn download" onclick="CommunityWordbooks.downloadWordbook('${wb.id}')">
-              ${renderIcon('icon-download')} 导入学习
+              <span class="msr">download</span> 导入学习
             </button>
           </div>
         </div>
@@ -589,10 +589,10 @@ const CommunityWordbooks = {
     // 设置元信息
     const metaHtml = `
       <div class="preview-meta">
-        <span>${renderIcon('icon-help')} 作者: ${wordbook.author_name}</span>
-        <span>${renderIcon(difficultyInfo.icon)} ${difficultyInfo.label}</span>
-        <span>${renderIcon('icon-pen')} ${wordbook.word_count} 词</span>
-        <span>${renderIcon('icon-download')} ${wordbook.download_count} 次下载</span>
+        <span><span class="msr">person</span> 作者: ${wordbook.author_name}</span>
+        <span><span class="msr">signal_cellular_alt</span> ${difficultyInfo.label}</span>
+        <span><span class="msr">menu_book</span> ${wordbook.word_count} 词</span>
+        <span><span class="msr">download</span> ${wordbook.download_count} 次下载</span>
       </div>
       ${wordbook.tags && wordbook.tags.length > 0 ? `
         <div class="preview-tags">

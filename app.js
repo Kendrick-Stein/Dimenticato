@@ -272,7 +272,7 @@ const Storage = {
       
       const theme = localStorage.getItem(this.KEYS.THEME);
       if (theme) {
-        document.body.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('data-theme', theme);
       }
       
       const wordbooks = localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS);
@@ -305,10 +305,11 @@ const Storage = {
   },
   
   toggleTheme() {
-    const currentTheme = document.body.getAttribute('data-theme');
+    const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.body.setAttribute('data-theme', newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem(this.KEYS.THEME, newTheme);
+    if (typeof syncThemeToggleUI === 'function') syncThemeToggleUI(newTheme);
   },
   
   // 导出所有学习数据
@@ -367,11 +368,11 @@ const Storage = {
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
       
-      alert('✅ 学习数据导出成功！\n\n文件已保存，请妥善保管。');
+      alert('学习数据导出成功！\n\n文件已保存，请妥善保管。');
       
     } catch (e) {
       console.error('导出数据失败:', e);
-      alert('❌ 导出失败: ' + e.message);
+      alert('导出失败: ' + e.message);
     }
   },
   
@@ -397,7 +398,7 @@ const Storage = {
           const stats = JSON.parse(importData.data.stats || '{}');
           
           const confirmMsg = 
-            `📥 即将导入学习数据\n\n` +
+            `即将导入学习数据\n\n` +
             `导出日期: ${new Date(importData.exportDate).toLocaleString()}\n` +
             `系统词汇已掌握: ${masteredWords.length} 个\n` +
             `自定义单词本: ${customWordbooks.length} 个\n` +
@@ -465,7 +466,7 @@ const Storage = {
       }
       
       // 应用主题
-      document.body.setAttribute('data-theme', data.theme);
+      document.documentElement.setAttribute('data-theme', data.theme);
       
       // 重新加载数据
       this.load();
@@ -476,12 +477,12 @@ const Storage = {
       WordbookManager.renderWordbookCards();
       highlightSelectedLevel();
       
-      alert('✅ 数据导入成功（覆盖模式）！\n\n页面将刷新以应用新数据。');
+      alert('数据导入成功（覆盖模式）！\n\n页面将刷新以应用新数据。');
       setTimeout(() => location.reload(), 1000);
       
     } catch (e) {
       console.error('导入数据失败:', e);
-      alert('❌ 导入失败: ' + e.message);
+      alert('导入失败: ' + e.message);
     }
   },
   
@@ -542,11 +543,11 @@ const Storage = {
       updateHeaderStats();
       WordbookManager.renderWordbookCards();
       
-      alert('✅ 数据导入成功（合并模式）！\n\n已合并单词进度和统计数据。');
+      alert('数据导入成功（合并模式）！\n\n已合并单词进度和统计数据。');
       
     } catch (e) {
       console.error('导入数据失败:', e);
-      alert('❌ 导入失败: ' + e.message);
+      alert('导入失败: ' + e.message);
     }
   },
   
@@ -586,13 +587,13 @@ function loadVocabulary() {
       setTimeout(function() {
         document.getElementById('loading').innerHTML = `
           <div style="text-align: center; padding: 40px 20px;">
-            <h2 style="color: #e74c3c; margin-bottom: 20px;">⚠️ 加载失败</h2>
+            <h2 style="color: var(--bad, #b0564b); margin-bottom: 20px;">加载失败</h2>
             <p style="margin-bottom: 10px;">词汇数据文件加载失败</p>
-            <p style="color: #7f8c8d; font-size: 14px; margin-bottom: 20px;">
+            <p style="color: var(--muted, #8f8a7d); font-size: 14px; margin-bottom: 20px;">
               这可能是由于网络问题或文件过大导致的
             </p>
             <button onclick="location.reload()" style="
-              background: #3498db;
+              background: var(--accent, #4a7a5e);
               color: white;
               border: none;
               padding: 12px 24px;
@@ -792,12 +793,21 @@ function updateProgressScreenStats() {
   if (progressEl) progressEl.textContent = progress + '%';
 }
 
+const SECTION_BY_TOPNAV = {
+  welcomeScreen: 'home',
+  vocabularyScreen: 'vocab',
+  grammarScreen: 'grammar',
+  progressScreen: 'progress',
+  settingsScreen: 'settings'
+};
+
 function updateHeaderNavigation(screenId) {
   const meta = ScreenMeta[screenId] || ScreenMeta.welcomeScreen;
   AppState.activeModule = meta.module;
 
-  document.querySelectorAll('.top-nav-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.target === meta.topNav);
+  const section = SECTION_BY_TOPNAV[meta.topNav] || 'home';
+  document.querySelectorAll('.nav-item[data-section]').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.section === section);
   });
 
   const breadcrumb = document.getElementById('breadcrumb');
@@ -884,6 +894,7 @@ const MultipleChoice = {
     // 更新进度
     document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
     document.getElementById('mcTotalWords').textContent = AppState.currentWords.length;
+    updateSessionFill('mcSessionFill', AppState.quizIndex, AppState.currentWords.length);
 
     // 更新正确率
     const accuracy = AppState.quizTotal > 0
@@ -963,7 +974,8 @@ const MultipleChoice = {
     var engine = this._getEngine();
     engine.highlightOptions(correctAnswer);
     if (!isCorrect) {
-      button.classList.add('incorrect');
+      button.classList.remove('faded');
+      button.classList.add('wrong');
     }
 
     engine.showFeedback(isCorrect, correctAnswer);
@@ -1059,6 +1071,7 @@ const Spelling = {
     // 更新进度
     document.getElementById('spCurrentWord').textContent = AppState.quizIndex + 1;
     document.getElementById('spTotalWords').textContent = AppState.currentWords.length;
+    updateSessionFill('spSessionFill', AppState.quizIndex, AppState.currentWords.length);
 
     // 更新正确率
     const accuracy = AppState.quizTotal > 0
@@ -1085,6 +1098,7 @@ const Spelling = {
     const input = document.getElementById('spInput');
     input.value = '';
     input.disabled = false;
+    input.classList.remove('good', 'bad');
     input.focus();
 
     // 启用检查按钮
@@ -1118,15 +1132,21 @@ const Spelling = {
     // 显示反馈
     const feedback = document.getElementById('spFeedback');
     const feedbackText = feedback.querySelector('.feedback-text');
+    input.classList.remove('good', 'bad');
+    input.classList.add(isCorrect ? 'good' : 'bad');
 
     if (isCorrect) {
-      feedbackText.textContent = '回答正确';
+      feedbackText.innerHTML = '<span class="msr">check_circle</span>回答正确';
+      feedbackText.classList.remove('no');
+      feedbackText.classList.add('ok');
       feedback.classList.remove('incorrect');
       feedback.classList.add('correct');
       // 答对时，1秒后自动跳转下一题
       setTimeout(() => this.nextQuestion(), 1000);
     } else {
-      feedbackText.textContent = `回答有误，正确答案是：${AppState.currentWord.italian}`;
+      feedbackText.innerHTML = `<span class="msr">cancel</span>回答有误，正确答案是：${escapeHtml(AppState.currentWord.italian)}`;
+      feedbackText.classList.remove('ok');
+      feedbackText.classList.add('no');
       feedback.classList.remove('correct');
       feedback.classList.add('incorrect');
     }
@@ -1176,8 +1196,9 @@ const Browse = {
   start() {
     AppState.currentMode = 'browse';
     showScreen('browseScreen');
+    this.syncFilterChips();
     this.render();
-    
+
     // 清空搜索框
     document.getElementById('searchInput').value = '';
   },
@@ -1209,28 +1230,22 @@ const Browse = {
       return;
     }
     
-    container.innerHTML = words.map(word => {
+    container.innerHTML = '<div class="word-card">' + words.map(word => {
       const isMastered = AppState.masteredWords.has(word.italian);
-      const rankText = word.rank < 999999 ? `#${word.rank}` : '无排名';
 
       return `
-        <div class="word-item ${isMastered ? 'mastered' : ''}" data-italian="${escapeHtml(word.italian)}">
-          <div class="word-item-left">
-            <div class="word-italian">${renderIcon('icon-volume')} ${escapeHtml(word.italian)}</div>
-            <div class="word-english">${escapeHtml(word.english)}</div>
-            ${word.chinese ? `<div class="word-chinese">${escapeHtml(word.chinese)}</div>` : ''}
-            ${word.notes ? `<div class="word-notes">${escapeHtml(word.notes)}</div>` : ''}
-          </div>
-          <div class="word-item-right">
-            <span class="word-rank">${rankText}</span>
-            ${isMastered ? '<span class="mastered-badge">已掌握</span>' : ''}
-          </div>
+        <div class="word-line" data-italian="${escapeHtml(word.italian)}">
+          <span class="wl-word">${escapeHtml(word.italian)}</span>
+          <span class="wl-gloss">${escapeHtml(word.english)}${word.notes ? `<span class="wl-note">${escapeHtml(word.notes)}</span>` : ''}</span>
+          <span class="wl-cn">${word.chinese ? escapeHtml(word.chinese) : ''}</span>
+          <span class="wl-status"><span class="dot${isMastered ? ' good' : ''}"></span>${isMastered ? '已掌握' : '学习中'}</span>
+          <button class="wl-speaker" title="朗读"><span class="msr">volume_up</span></button>
         </div>
       `;
-    }).join('');
-    
+    }).join('') + '</div>';
+
     // 为每个单词项添加点击朗读功能
-    container.querySelectorAll('.word-item').forEach(item => {
+    container.querySelectorAll('.word-line').forEach(item => {
       item.style.cursor = 'pointer';
       item.addEventListener('click', () => {
         const italian = item.dataset.italian;
@@ -1240,22 +1255,25 @@ const Browse = {
       });
     });
   },
-  
+
+  setFilter(filter) {
+    if (!['all', 'mastered', 'unmastered'].includes(filter)) return;
+    this.currentFilter = filter;
+    this.syncFilterChips();
+    const searchTerm = document.getElementById('searchInput').value;
+    this.render(searchTerm);
+  },
+
+  syncFilterChips() {
+    document.querySelectorAll('#browseFilterChips .chip').forEach(chip => {
+      chip.classList.toggle('active', chip.dataset.filter === this.currentFilter);
+    });
+  },
+
   toggleFilter() {
     const filters = ['all', 'mastered', 'unmastered'];
     const currentIndex = filters.indexOf(this.currentFilter);
-    this.currentFilter = filters[(currentIndex + 1) % filters.length];
-    
-    const filterText = {
-      'all': '全部',
-      'mastered': '已掌握',
-      'unmastered': '未掌握'
-    };
-    
-    document.getElementById('filterText').textContent = filterText[this.currentFilter];
-    
-    const searchTerm = document.getElementById('searchInput').value;
-    this.render(searchTerm);
+    this.setFilter(filters[(currentIndex + 1) % filters.length]);
   }
 };
 
@@ -1738,12 +1756,11 @@ const WordbookManager = {
     }
     
     container.innerHTML = AppState.customWordbooks.map(wb => `
-      <div class="wordbook-card" data-wordbook-id="${wb.id}">
+      <div class="card wordbook-card" data-wordbook-id="${wb.id}">
         <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
-        <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
-        <span class="wordbook-card-name">${escapeHtml(wb.name)}</span>
-        <span class="wordbook-card-count">${wb.wordCount} 词</span>
-        <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
+        <span class="card-chip"><span class="msr">bookmark</span></span>
+        <span class="card-title">${escapeHtml(wb.name)}</span>
+        <span class="card-desc">${wb.wordCount} 词 · ${new Date(wb.createdAt).toLocaleDateString()}</span>
       </div>
     `).join('');
     
@@ -1882,6 +1899,14 @@ function shuffleArray(array) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
+}
+
+// 更新练习界面顶部的进度条（redesign .session-bar/.session-fill）
+function updateSessionFill(id, index, total) {
+  const fill = document.getElementById(id);
+  if (!fill) return;
+  const pct = total > 0 ? Math.min(100, Math.round((index / total) * 100)) : 0;
+  fill.style.width = pct + '%';
 }
 
 // ==================== 事件绑定 ====================
@@ -2052,8 +2077,8 @@ function bindEvents() {
       
       // 构建详细的导入报告
       let message = isMerge 
-        ? `✅ 成功合并到单词本"${wordbook.name}"！\n\n`
-        : `✅ 成功导入单词本"${wordbook.name}"！\n\n`;
+        ? `成功合并到单词本"${wordbook.name}"！\n\n`
+        : `成功导入单词本"${wordbook.name}"！\n\n`;
       
       message += `导入统计：\n`;
       message += `• 总计导入：${stats.totalImported} 个单词\n`;
@@ -2090,9 +2115,16 @@ function bindEvents() {
   document.getElementById('mcBackBtn').addEventListener('click', () => {
     goBack({ fallbackTarget: 'vocabularyModesScreen' });
   });
-  
+
   document.getElementById('mcNextBtn').addEventListener('click', () => {
     MultipleChoice.nextQuestion();
+  });
+
+  // 选择题发音按钮
+  document.getElementById('mcSpeakerBtn')?.addEventListener('click', () => {
+    if (AppState.currentWord && AppState.currentWord.italian) {
+      italianSpeaker.speak(AppState.currentWord.italian);
+    }
   });
   
   // 拼写模式
@@ -2130,8 +2162,10 @@ function bindEvents() {
     Browse.render(e.target.value);
   });
   
-  document.getElementById('filterBtn').addEventListener('click', () => {
-    Browse.toggleFilter();
+  document.querySelectorAll('#browseFilterChips .chip').forEach((chip) => {
+    chip.addEventListener('click', () => {
+      Browse.setFilter(chip.dataset.filter);
+    });
   });
   
   // 底部工具栏
@@ -2287,10 +2321,11 @@ MultipleChoice.loadQuestion = function() {
   // 更新进度
   document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
   document.getElementById('mcTotalWords').textContent = AppState.currentWords.length;
-  
+  updateSessionFill('mcSessionFill', AppState.quizIndex, AppState.currentWords.length);
+
   // 更新正确率
-  const accuracy = AppState.quizTotal > 0 
-    ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100) 
+  const accuracy = AppState.quizTotal > 0
+    ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100)
     : 0;
   document.getElementById('mcAccuracy').textContent = accuracy + '%';
   
@@ -2337,7 +2372,8 @@ if (typeof StatsManager !== 'undefined' && typeof SpacedRepetition !== 'undefine
     const input = document.getElementById('spInput');
     const userAnswer = input.value.trim().toLowerCase();
     const correctAnswer = AppState.currentWord.italian.toLowerCase();
-    const isCorrect = this.normalizeString(userAnswer) === this.normalizeString(correctAnswer);
+    const engine = this._getEngine();
+    const isCorrect = engine.normalizeString(userAnswer) === engine.normalizeString(correctAnswer);
     
     StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
     
@@ -2364,13 +2400,12 @@ WordbookManager.renderWordbookCards = function() {
   }
   
   container.innerHTML = AppState.customWordbooks.map(wb => `
-    <div class="wordbook-card" data-wordbook-id="${wb.id}">
-      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); if(typeof WordbookEditor !== 'undefined') { WordbookEditor.openEditor(${wb.id}); } else { alert('单词本编辑功能未加载'); }" title="管理单词本">${renderIcon('icon-settings')}</button>
+    <div class="card wordbook-card" data-wordbook-id="${wb.id}">
+      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); if(typeof WordbookEditor !== 'undefined') { WordbookEditor.openEditor(${wb.id}); } else { alert('单词本编辑功能未加载'); }" title="管理单词本"><span class="msr">settings</span></button>
       <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
-      <span class="wordbook-card-icon">${renderIcon('icon-book-open')}</span>
-      <span class="wordbook-card-name">${escapeHtml(wb.name)}</span>
-      <span class="wordbook-card-count">${wb.wordCount} 词</span>
-      <span class="wordbook-card-date">${new Date(wb.createdAt).toLocaleDateString()}</span>
+      <span class="card-chip"><span class="msr">bookmark</span></span>
+      <span class="card-title">${escapeHtml(wb.name)}</span>
+      <span class="card-desc">${wb.wordCount} 词 · ${new Date(wb.createdAt).toLocaleDateString()}</span>
     </div>
   `).join('');
   
@@ -2415,10 +2450,11 @@ const LanguagePortal = {
     // 2. 持久化
     localStorage.setItem(Storage.KEYS.LANGUAGE, lang);
 
-    // 3. 更新弹出层 active 样式
+    // 3. 更新弹出层 active 样式 + 侧栏语言胶囊
     document.querySelectorAll('.language-switcher-option').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.language === lang);
     });
+    if (typeof syncLangPills === 'function') syncLangPills(lang);
 
     // 4. 关闭弹出层
     const popover = document.getElementById('languageSwitcherPopover');
@@ -2445,20 +2481,111 @@ const LanguagePortal = {
     } else {
       document.body.setAttribute('data-language', savedLang);
     }
-    // 同步弹出层 active 状态
+    // 同步弹出层 active 状态 + 侧栏语言胶囊
     document.querySelectorAll('.language-switcher-option').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.language === savedLang);
     });
+    if (typeof syncLangPills === 'function') syncLangPills(savedLang);
   }
 };
 
 // 暴露到全局，方便外部脚本调用
 window.LanguagePortal = LanguagePortal;
 
+// ==================== 侧边栏 / 顶栏 控制 ====================
+
+function getActiveLanguage() {
+  return document.body.getAttribute('data-language') || 'italian';
+}
+
+// 更新侧栏语言胶囊的选中态
+function syncLangPills(lang) {
+  const active = lang || getActiveLanguage();
+  document.querySelectorAll('.lang-pill[data-language]').forEach(pill => {
+    pill.classList.toggle('active', pill.dataset.language === active);
+  });
+}
+
+// 更新侧栏底部“主题切换”按钮的图标 + 文案
+function syncThemeToggleUI(theme) {
+  const t = theme || document.documentElement.getAttribute('data-theme') || 'light';
+  const dark = t === 'dark';
+  const icon = document.getElementById('themeToggleIcon');
+  const label = document.getElementById('themeToggleLabel');
+  if (icon) icon.textContent = dark ? 'light_mode' : 'dark_mode';
+  if (label) label.textContent = dark ? '浅色模式' : '深色模式';
+}
+window.syncThemeToggleUI = syncThemeToggleUI;
+window.syncLangPills = syncLangPills;
+
+// 侧栏菜单：section → 各语言首页；子模块复用各语言 welcome 卡片按钮的处理器
+const NAV_HOME_SCREEN = { italian: 'welcomeScreen', german: 'germanWelcomeScreen', english: 'englishWelcomeScreen' };
+const NAV_MODULE_BTN = {
+  vocab:    { italian: 'goVocabularyBtn', german: 'goGermanVocabularyBtn', english: 'goEnglishVocabularyBtn' },
+  grammar:  { italian: 'goGrammarBtn',    german: 'goGermanGrammarBtn',    english: 'goEnglishGrammarBtn' },
+  progress: { italian: 'goProgressBtn',   german: 'goGermanProgressBtn',   english: 'goEnglishProgressBtn' },
+  settings: { italian: 'goSettingsBtn',   german: 'goGermanSettingsBtn',   english: 'goEnglishSettingsBtn' }
+};
+
+function navigateSection(section) {
+  const lang = getActiveLanguage();
+  if (section === 'home') {
+    showScreen(NAV_HOME_SCREEN[lang] || 'welcomeScreen');
+    return;
+  }
+  const btnId = NAV_MODULE_BTN[section] && NAV_MODULE_BTN[section][lang];
+  const btn = btnId && document.getElementById(btnId);
+  if (btn) {
+    btn.click();               // reuse the exact per-language handler
+  } else {
+    // fallback: direct navigation to the Italian screen for this section
+    const targets = { vocab: 'vocabularyScreen', grammar: 'grammarScreen', progress: 'progressScreen', settings: 'settingsScreen' };
+    if (targets[section]) showScreen(targets[section]);
+  }
+}
+
+function closeDrawer() { document.body.classList.remove('drawer-open'); }
+
+function bindShellControls() {
+  // 品牌 → 当前语言首页
+  document.getElementById('brandHomeBtn')?.addEventListener('click', () => {
+    navigateSection('home');
+    closeDrawer();
+  });
+
+  // 侧栏菜单项（语言感知）
+  document.querySelectorAll('.nav-item[data-section]').forEach(item => {
+    item.addEventListener('click', () => {
+      navigateSection(item.dataset.section);
+      closeDrawer();
+    });
+  });
+
+  // 语言胶囊 → 切换语言
+  document.querySelectorAll('.lang-pill[data-language]').forEach(pill => {
+    pill.addEventListener('click', () => {
+      LanguagePortal.selectLanguage(pill.dataset.language);
+      syncLangPills(pill.dataset.language);
+      closeDrawer();
+    });
+  });
+
+  // 窄屏抽屉开关
+  document.getElementById('drawerToggle')?.addEventListener('click', () => {
+    document.body.classList.toggle('drawer-open');
+  });
+  document.getElementById('drawerScrim')?.addEventListener('click', closeDrawer);
+
+  // 初始同步
+  syncLangPills();
+  syncThemeToggleUI();
+}
+
 // ==================== 初始化 ====================
 
 document.addEventListener('DOMContentLoaded', () => {
   bindEvents();
+  bindShellControls();
   loadVocabulary();
   setPracticeContext('vocab');
   updateHeaderNavigation('welcomeScreen');
@@ -2466,6 +2593,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 初始化语言门户（恢复颜色主题 + 绑定切换事件）
   LanguagePortal.init();
+  syncThemeToggleUI();
   
   // 渲染自定义单词本卡片
   WordbookManager.renderWordbookCards();
