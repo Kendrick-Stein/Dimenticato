@@ -5770,3 +5770,138 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 @media (max-width:820px){
   .community-wordbook-list{grid-template-columns:1fr}
 }
+
+/* ===== STREAM E ADDITIONS =====
+   Grammar hub / conjugation setup+practice / grammar book / verb
+   collocations reskin. Token-only; overrides legacy rules by cascade
+   position (appended last). */
+
+/* ---- Conjugation setup: panels ---- */
+.conj-setup-panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:var(--shadow);margin-top:24px;transition:border-color .15s}
+.conj-setup-panel.conj-context-active{border-color:var(--accent)}
+
+.conj-module-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.conj-module-toolbar label{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:13px;font-weight:600}
+.conj-module-toolbar select{min-width:0;padding:9px 12px;border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--ink);font-family:inherit;font-size:13.5px;font-weight:600}
+.conj-module-toolbar select:focus{outline:none;border-color:var(--accent)}
+.conj-lesson-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.conj-lesson-status{display:flex;flex-direction:row;align-items:center;gap:8px;min-width:0}
+#conjLessonLabel{font-weight:700;font-size:13.5px;color:var(--ink-2)}
+#conjLessonCompletedBadge{display:inline-flex;align-items:center;padding:2px 10px;border-radius:999px;background:var(--good-soft);color:var(--good);font-size:12px;font-weight:700}
+.pill-btn:disabled{opacity:.45;cursor:default;pointer-events:none}
+.conj-module-hint{text-align:center;color:var(--muted);font-size:12.5px;margin-top:14px}
+
+/* ---- Conjugation setup: tense matrix (dark-mode contrast fix — cards/labels
+       retokenized on --card/--ink-2/--border instead of legacy level-btn) ---- */
+.conj-matrix-head{border:none;background:none;color:var(--muted);font-weight:700;font-size:12px;letter-spacing:.06em;min-height:30px}
+.conj-matrix-row-label{border:none;background:var(--card-2);color:var(--ink-2);border-radius:12px;font-size:13px;font-weight:700;padding:8px}
+.conj-matrix-cell{border:1px solid var(--border);background:var(--surface);border-radius:12px;padding:8px;display:grid;gap:6px;align-content:start}
+.conj-matrix-empty{color:var(--muted);font-size:13px}
+.conj-extra-title{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:14px 0 8px}
+.conj-mobile-mood-section{border:1px solid var(--border);border-radius:12px}
+.conj-mobile-mood-label{background:var(--card-2);color:var(--ink-2);border-bottom:1px solid var(--border)}
+
+.chip.conj-tense-btn{display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-height:0;padding:9px 12px;border-radius:11px;background:var(--card);text-align:left}
+.chip.conj-tense-btn .ct-name{font-weight:700;font-size:13.5px;color:var(--ink);line-height:1.3}
+.chip.conj-tense-btn .ct-group{font-size:11px;font-weight:600;color:var(--muted);line-height:1.3}
+.chip.conj-tense-btn:hover{border-color:var(--border-strong)}
+.chip.conj-tense-btn.active{border-color:var(--accent);background:var(--accent-soft)}
+.chip.conj-tense-btn.active .ct-name,.chip.conj-tense-btn.active .ct-group{color:var(--accent)}
+
+/* ---- Conjugation setup: verb lookup ---- */
+.conjugation-lookup-header h3{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:800;color:var(--ink)}
+.conjugation-lookup-header h3 .msr{color:var(--accent);font-size:20px}
+.conjugation-lookup-header p{color:var(--muted);font-size:13px}
+.conj-lookup-input{flex:1;min-width:220px;padding:12px 16px;border:1.5px solid var(--border);border-radius:12px;background:var(--card);font-family:inherit;font-size:14px;font-weight:500;color:var(--ink);transition:border-color .15s}
+.conj-lookup-input:focus{outline:none;border-color:var(--accent)}
+.conjugation-lookup-empty{margin-top:14px;padding:12px 16px;border-radius:12px;background:var(--card-2);color:var(--ink-2);font-size:13.5px}
+.conj-lookup-result-card{padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+.conj-lookup-result-header h4{font-size:22px;font-weight:800;letter-spacing:-.01em;color:var(--ink)}
+.conj-lookup-meta span{padding:4px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700}
+.conj-lookup-tense-card{padding:0;border:none;background:none;box-shadow:none}
+.conj-lookup-tense-title{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--muted);margin-bottom:8px}
+.conj-card-mini .conj-line{padding:8px 14px}
+.conj-card-mini .conj-form{font-size:14px}
+.conj-card-mini .conj-person{font-size:13px}
+
+/* ---- Conjugation setup: mode cards ---- */
+.card.selected{border-color:var(--accent)}
+
+/* ---- Conjugation / collocation practice screens ---- */
+#conjugationScreen .practice-head,#verbCollocationPracticeScreen .practice-head{margin-bottom:14px}
+#conjugationScreen .practice-card,#verbCollocationPracticeScreen .practice-card{margin-top:6px}
+.conj-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:none;box-shadow:none;border:none;padding:0;margin:0 0 16px}
+#conjActiveLessonInfo{color:var(--muted);font-size:13px;font-weight:600;margin-right:auto}
+.word-row .en{color:var(--muted);font-size:18px;font-weight:600}
+
+.practice-feedback{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:16px;background:var(--card);border:1.5px solid var(--border);border-radius:13px;padding:12px 18px}
+.practice-feedback .feedback-text{margin:0;font-weight:700;font-size:15px}
+.practice-feedback.correct{border-color:var(--good);background:var(--good-soft)}
+.practice-feedback.correct .feedback-text{color:var(--good)}
+.practice-feedback.incorrect{border-color:var(--bad);background:var(--bad-soft)}
+.practice-feedback.incorrect .feedback-text{color:var(--bad)}
+.practice-feedback .primary-btn{width:auto;margin-top:0;padding:10px 16px;flex:none}
+
+.conj-full-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;width:100%}
+.conj-full-item{display:flex;flex-direction:column;gap:6px;padding:12px 14px;background:var(--card);border:1.5px solid var(--border);border-radius:13px;transition:all .15s}
+.conj-full-item.correct{border-color:var(--good);background:var(--good-soft)}
+.conj-full-item.incorrect{border-color:var(--bad);background:var(--bad-soft)}
+.conj-full-label{font-weight:700;font-size:13px;color:var(--ink-2);text-align:left}
+.conj-full-item .conj-full-input{font-size:15px;padding:10px 12px;max-width:none}
+.conj-full-answer{font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.conj-full-item.correct .conj-full-answer{color:var(--good)}
+.conj-full-item.incorrect .conj-full-answer{color:var(--bad)}
+
+.vcp-title{font-size:22px;font-weight:800;letter-spacing:-.01em;margin-top:4px}
+.vc-practice-config-grid{margin-top:18px}
+#vcPracticeSetupCard .form-input{padding:11px 14px;border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--ink);font-family:inherit;font-size:14px;font-weight:500}
+#vcPracticeSetupCard .form-input:focus{outline:none;border-color:var(--accent)}
+.vc-practice-summary{background:var(--surface);border:1px solid var(--border);border-radius:12px}
+.vc-practice-summary .selection-summary-label{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.04em}
+.vc-practice-summary .selection-summary-item{font-size:13.5px;color:var(--ink-2)}
+.vc-practice-summary .selection-summary-item strong{color:var(--ink)}
+#vcPracticeInputSection .hint-btn{margin-top:14px}
+
+/* ---- Grammar book + collocations reader panes ---- */
+.grammar-nav-sidebar{background:var(--surface);border-right-color:var(--border)}
+.grammar-nav-header{border-bottom-color:var(--border);padding:14px 14px 12px;gap:8px}
+.grammar-book-back-btn{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-weight:600;font-size:13px;opacity:1;background:none;border:none;cursor:pointer;padding:0;text-align:left;transition:color .15s}
+.grammar-book-back-btn:hover{color:var(--ink);text-decoration:none;opacity:1}
+.grammar-book-back-btn .msr{font-size:17px}
+.grammar-nav-title{font-size:15px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+.grammar-nav-title .msr{color:var(--accent);font-size:19px}
+.grammar-nav-tree{padding:8px}
+.grammar-part-heading{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:14px 8px 5px}
+.grammar-chapter-btn{align-items:center;gap:5px;padding:8px 8px;border-radius:10px;font-size:13px;font-weight:600;color:var(--ink-2);transition:background .15s}
+.grammar-chapter-btn:hover{background:var(--card-2)}
+.grammar-chapter-arrow{font-size:16px;margin-top:0;color:var(--muted)}
+.grammar-topic-link{padding:7px 8px 7px 29px;border-radius:9px;font-size:12.5px;font-weight:500;color:var(--ink-2);transition:all .15s}
+.grammar-topic-link:hover{background:var(--card-2);color:var(--ink)}
+.grammar-topic-link.active{background:var(--accent-soft);color:var(--accent);font-weight:700;border-right:none}
+.grammar-sidebar-toggle{border:1px solid var(--border);border-radius:9px;padding:5px;color:var(--ink-2);background:none}
+.grammar-sidebar-toggle:hover{background:var(--card-2)}
+.grammar-sidebar-toggle .msr{font-size:19px;display:block}
+.grammar-content-header{background:var(--bg);border-bottom-color:var(--border);padding:10px 20px}
+.grammar-content-breadcrumb{font-size:13px;font-weight:600;color:var(--muted)}
+.grammar-book-layout{background:var(--bg)}
+.msr.grammar-welcome-icon{width:auto;height:auto;font-size:44px;opacity:.35}
+.grammar-welcome h2{font-weight:800;letter-spacing:-.01em}
+
+.vc-search-panel{border-bottom-color:var(--border);padding:12px 14px 10px}
+.vc-search-label{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--ink-2)}
+.vc-search-icon.msr{font-size:18px;color:var(--muted)}
+.vc-search-input{border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--ink);font-family:inherit;font-size:13.5px;padding:10px 12px 10px 40px}
+.vc-search-input:focus{outline:none;border-color:var(--accent)}
+.vc-prep-link{border-radius:10px;border-left:none;padding:9px 10px;color:var(--ink-2);font-weight:600;transition:all .15s}
+.vc-prep-link:hover{background:var(--card-2)}
+.vc-prep-link.active{background:var(--accent-soft);border-left:none}
+.vc-prep-link.active .vc-prep-name,.vc-prep-link.active .vc-prep-count{color:var(--accent)}
+.vc-prep-name{font-size:13.5px;font-weight:700}
+.vc-prep-count{font-size:11.5px;color:var(--muted)}
+.vc-card,.vc-search-choice-btn{border-radius:16px;border-color:var(--border);background:var(--card);box-shadow:var(--shadow)}
+.vc-card-badge{background:var(--accent-soft);color:var(--accent)}
+.vc-kicker{color:var(--muted);letter-spacing:.14em;font-size:11px}
+.vc-panel-intro h2{font-weight:800;letter-spacing:-.01em}
+.vc-empty-state-icon.msr{width:auto;height:auto;font-size:40px;opacity:.4}
+.grammar-markdown{max-width:880px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:34px 36px;box-shadow:var(--shadow)}
+@media (max-width:768px){.grammar-markdown{padding:22px 18px}}

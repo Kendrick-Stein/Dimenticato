@@ -318,9 +318,9 @@ const VerbCollocationPractice = (() => {
 
   function renderOptions(options, answer) {
     dom.options.innerHTML = options.map(option => (
-      `<button class="option-btn" data-answer="${escapeHtml(option)}">${escapeHtml(option)}</button>`
+      `<button class="option" data-answer="${escapeHtml(option)}">${escapeHtml(option)}</button>`
     )).join('');
-    dom.options.querySelectorAll('.option-btn').forEach(btn => {
+    dom.options.querySelectorAll('.option').forEach(btn => {
       btn.addEventListener('click', () => checkChoiceAnswer(btn, answer));
     });
   }
@@ -331,10 +331,11 @@ const VerbCollocationPractice = (() => {
     state.total += 1;
     if (isCorrect) state.correct += 1;
 
-    dom.options.querySelectorAll('.option-btn').forEach(btn => {
+    dom.options.querySelectorAll('.option').forEach(btn => {
       btn.disabled = true;
       if (btn.dataset.answer === answer) btn.classList.add('correct');
-      if (btn === button && !isCorrect) btn.classList.add('incorrect');
+      else if (btn === button && !isCorrect) btn.classList.add('wrong');
+      else btn.classList.add('faded');
     });
 
     showFeedback(isCorrect, answer);
