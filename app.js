@@ -139,6 +139,8 @@ const DimStorage = {
   ],
 
   // 每种语言“属于学习进度”的固定 key（动态的 progress_wb_* 另行枚举）
+  // dimenticato_mastery_streak_* 是“连续答对”计数，重置进度时必须一起清掉，
+  // 否则重置后残留的 streak 会让下一次答对立刻把词标成已掌握。
   PROGRESS_KEYS: {
     italian: [
       'dimenticato_mastered',
@@ -146,7 +148,8 @@ const DimStorage = {
       'dimenticato_daily_stats',
       'dimenticato_conjugation_lessons',
       'dimenticato_cognate_progress',
-      'dimenticato_srs_italian'
+      'dimenticato_srs_italian',
+      'dimenticato_mastery_streak_italian'
     ],
     german: [
       'dimenticato_german_mastered',
@@ -154,21 +157,24 @@ const DimStorage = {
       'dimenticato_german_course_level',
       'dimenticato_conjugation_lessons_de',
       'dimenticato_daily_stats_german',
-      'dimenticato_srs_german'
+      'dimenticato_srs_german',
+      'dimenticato_mastery_streak_german'
     ],
     english: [
       'dimenticato_english_mastered',
       'dimenticato_english_stats',
       'dimenticato_conjugation_lessons_en',
       'dimenticato_daily_stats_english',
-      'dimenticato_srs_english'
+      'dimenticato_srs_english',
+      'dimenticato_mastery_streak_english'
     ],
     french: [
       'dimenticato_french_mastered',
       'dimenticato_french_stats',
       'dimenticato_conjugation_lessons_fr',
       'dimenticato_daily_stats_french',
-      'dimenticato_srs_french'
+      'dimenticato_srs_french',
+      'dimenticato_mastery_streak_french'
     ]
   },
 
@@ -1376,6 +1382,36 @@ function updateHeaderNavigation(screenId) {
 // AppState / ScreenMeta / updateHeaderNavigation 仍保留在本文件；navigation.js
 // 在调用时（DOMContentLoaded 之后）通过共享全局作用域延迟解析它们，无 load-order 风险。
 
+// ==================== 掌握度（连续答对门槛） ====================
+//
+// 见 audit: it-mastered-after-one-lucky-guess —— 四选一里蒙对一次就把单词标成
+// “已掌握”，进度条凭运气上涨。现在选择题和拼写都统一走 lib/quiz-engine.js 里的
+// MasteryPolicy：连续答对 STREAK_REQUIRED 次（或 SM-2 已把它排到长间隔）才算
+// 掌握，答错立即清零重来。德语/英语/法语用同一套策略，只是 lang 参数不同。
+//
+// MasteryPolicy 一律在【调用时】通过 window 解析：lib/quiz-engine.js 虽然先于
+// app.js 加载，但解析期的 typeof 判断正是 SRS 整套功能从未安装的根因，这里不破例。
+//
+// 只做“晋级”，不做“降级”：dimenticato_mastered 里已有的词（老用户的存量进度）
+// 保持已掌握，不需要重新赚一次。
+function recordItalianMastery(word, isCorrect) {
+  const key = word && word.italian;
+  if (!key) return { streak: 0, mastered: false };
+
+  const policy = window.MasteryPolicy;
+  if (!policy || typeof policy.record !== 'function') {
+    // 策略模块缺失时不晋级。这条分支实际不可达：lib/quiz-engine.js 没加载的话，
+    // 选择题/拼写在 _getEngine() 里就已经因 QuizEngine 未定义而抛错了。
+    // 宁可不涨进度，也不能退回“蒙对一次就算掌握”。
+    return { streak: 0, mastered: false };
+  }
+
+  const outcome = policy.record('italian', key, isCorrect, { word }) || { streak: 0, mastered: false };
+  // AppState.masteredWords 在切换词源/词本时会被整体替换，所以这里在调用时才取它
+  if (outcome.mastered) AppState.masteredWords.add(key);
+  return outcome;
+}
+
 // ==================== 选择题模式 ====================
 
 const MultipleChoice = {
@@ -1510,9 +1546,10 @@ const MultipleChoice = {
     if (isCorrect) {
       AppState.quizCorrect++;
       AppState.stats.mcCorrect++;
-      AppState.masteredWords.add(AppState.currentWord.italian);
     }
     AppState.stats.mcAttempts++;
+    // 掌握与否交给 MasteryPolicy（连续答对才算数；答错清零）
+    recordItalianMastery(AppState.currentWord, isCorrect);
 
     // Highlight all options
     var engine = this._getEngine();
@@ -1665,9 +1702,10 @@ const Spelling = {
     if (isCorrect) {
       AppState.quizCorrect++;
       AppState.stats.spCorrect++;
-      AppState.masteredWords.add(AppState.currentWord.italian);
     }
     AppState.stats.spAttempts++;
+    // 拼写走同一套掌握度策略（key 仍是意大利语词条，与选择题共用连续答对计数）
+    recordItalianMastery(AppState.currentWord, isCorrect);
 
     // 禁用输入
     input.disabled = true;
@@ -2512,9 +2550,13 @@ function bindEvents() {
     showScreen('grammarBookScreen');
     if (typeof GrammarBook !== 'undefined') GrammarBook.init();
   });
+  // 这个按钮只存在于意大利语的 #grammarScreen 里，所以必须显式传 'italian'：
+  // 不传参时 VerbCollocationPractice 会沿用上一次的 state.lang，用户先看过德语搭配
+  // 再回意大利语点“开始练习”，练到的会是德语题目。
   document.getElementById('goVerbCollocationPracticeBtn')?.addEventListener('click', () => {
     showScreen('verbCollocationPracticeScreen');
-    if (typeof VerbCollocationPractice !== 'undefined') VerbCollocationPractice.open();
+    const practice = window.VerbCollocationPractice;
+    if (practice && typeof practice.open === 'function') practice.open('italian');
   });
   // grammarBookScreen 是四种语言共用的一块屏幕，#grammarBookBackBtn 上原本挂了
   // 两个监听器（这里一个 + german-app.js:471 无条件绑的一个）。旧版只在德/英
