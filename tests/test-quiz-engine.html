@@ -185,6 +185,20 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
       '删掉前导占位后不留下多余分隔符和空白');
     assertEqual(DimText.cleanGloss(''), '', 'cleanGloss 处理空串');
     assertEqual(DimText.cleanGloss(null), '', 'cleanGloss 处理 null');
+
+    // 只有**带括号的编号**才是占位符。裸数字义项在真实数据里全是真释义：
+    // score = "…,二十,…"、ein = "一, 一个, 某人, 某物"、quindici = "15"，
+    // 删掉它们就是在改词义（旧实现正是这么干的）。
+    assertEqual(DimText.cleanGloss('n.得分,乐谱,二十,终点线'), 'n.得分,乐谱,二十,终点线',
+      '裸数字义项 "二十"（score 的真义项）不会被当成占位符删掉');
+    assertEqual(DimText.cleanGloss('一, 一个, 某人, 某物'), '一, 一个, 某人, 某物',
+      '德语 ein 的 "一" 是真释义，必须保留');
+    assertEqual(DimText.cleanGloss('fifteen; 15'), 'fifteen; 15', '英文义项后的数字释义保留');
+    assertEqual(DimText.cleanGloss('n.技能,,技巧'), 'n.技能,,技巧',
+      '空片段也不改写（展示层不负责修数据）');
+    // 但带括号的编号占位仍然要删干净
+    assertEqual(DimText.cleanGloss('二; (2)'), '二', '"(2)" 删掉，同一条里的裸数字义项 "二" 留下');
+    assertEqual(DimText.cleanGloss('the; 【二】'), 'the', '【二】 这种编号占位同样删掉');
   });
 
   // ===== utils: 义项重叠 / 同义判定 =====
