@@ -47,7 +47,7 @@ const VOCABULARY_DATA = [
     "italian": "un",
     "dictionary": "article articolo indeterminativo: indica una persona, un animale o una cosa mai nominati precedentem",
     "english": "a; an; one",
-    "chinese": "一个；一",
+    "chinese": "阳性单数不定冠词，一个",
     "frequency": 3555300,
     "rank": 7
   },
@@ -63,7 +63,7 @@ const VOCABULARY_DATA = [
     "italian": "una",
     "dictionary": "noun (per antonomasia) l'ora dopo la mezzanotte: (per antonomasia) (popolare) l'",
     "english": "a; one (feminine)",
-    "chinese": "一个（阴性）",
+    "chinese": "阴性单数不定冠词，一个",
     "frequency": 2153925,
     "rank": 12
   },
@@ -71,7 +71,7 @@ const VOCABULARY_DATA = [
     "italian": "mi",
     "dictionary": "noun (musica) terza nota musicale della scala musicale di do maggiore E",
     "english": "me; to me; (2)",
-    "chinese": "我；对我; (二)",
+    "chinese": "非重读宾语代词：我，对我；反身代词：我自己",
     "frequency": 2013071,
     "rank": 13
   },
@@ -87,7 +87,7 @@ const VOCABULARY_DATA = [
     "italian": "con",
     "dictionary": "preposition indica compagnia o unione indica modo indica qualità with indica mezzo o strumento by wi",
     "english": "with",
-    "chinese": "和；与",
+    "chinese": "跟…一起，同；用，以（工具、方式）；带有",
     "frequency": 1440540,
     "rank": 22
   },
@@ -95,7 +95,7 @@ const VOCABULARY_DATA = [
     "italian": "no",
     "dictionary": "interjection (gergale) (ironico) negazione della frase precedente no nope",
     "english": "no",
-    "chinese": "不；没有",
+    "chinese": "不是，不行（回答时的否定，与“是的”相对）",
     "frequency": 1433410,
     "rank": 23
   },
@@ -119,7 +119,7 @@ const VOCABULARY_DATA = [
     "italian": "io",
     "dictionary": "noun soggetto pensante I me",
     "english": "I; (2)",
-    "chinese": "我; (二)",
+    "chinese": "主格人称代词“我”",
     "frequency": 1147459,
     "rank": 30
   },
@@ -175,7 +175,7 @@ const VOCABULARY_DATA = [
     "italian": "me",
     "dictionary": "pronoun particella pronominale della prima persona singolare me",
     "english": "me",
-    "chinese": "我",
+    "chinese": "重读人称代词“我”，用在介词或比较之后",
     "frequency": 742942,
     "rank": 42
   },
@@ -191,7 +191,7 @@ const VOCABULARY_DATA = [
     "italian": "era",
     "dictionary": "noun (storia) conteggio degli anni a partire da una data specifica era time (fisica) (geol",
     "english": "was; era",
-    "chinese": "是（过去）；时代",
+    "chinese": "曾是，那时是；时代，纪元",
     "frequency": 657610,
     "rank": 46
   },
@@ -215,7 +215,7 @@ const VOCABULARY_DATA = [
     "italian": "essere",
     "dictionary": "noun chi esiste be exist",
     "english": "to be; (2)",
-    "chinese": "是；存在; (二)",
+    "chinese": "是，存在；生命，生物",
     "frequency": 582628,
     "rank": 51
   },
@@ -223,7 +223,7 @@ const VOCABULARY_DATA = [
     "italian": "ora",
     "dictionary": "noun (fisica) (periodo di tempo) periodo di tempo di 60 minuti hour",
     "english": "now; hour",
-    "chinese": "现在；小时",
+    "chinese": "小时，钟点；现在，此刻",
     "frequency": 559590,
     "rank": 55
   },
@@ -247,7 +247,7 @@ const VOCABULARY_DATA = [
     "italian": "detto",
     "dictionary": "noun conciso aforisma above-mentioned aforementioned called dubbed known ad saying",
     "english": "Said",
-    "chinese": "说",
+    "chinese": "说过的，上述的；谚语，格言",
     "frequency": 530015,
     "rank": 61
   },
@@ -311,7 +311,7 @@ const VOCABULARY_DATA = [
     "italian": "tuo",
     "dictionary": "possessivePronoun pronome possessivo della seconda persona singolare your yours",
     "english": "Yours",
-    "chinese": "你们的",
+    "chinese": "阳性单数物主形容词：你的",
     "frequency": 415427,
     "rank": 81
   },
@@ -343,7 +343,7 @@ const VOCABULARY_DATA = [
     "italian": "tua",
     "dictionary": "possessiveAdjective your",
     "english": "Yours",
-    "chinese": "你们的",
+    "chinese": "阴性单数物主形容词：你的",
     "frequency": 382254,
     "rank": 91
   },
@@ -351,7 +351,7 @@ const VOCABULARY_DATA = [
     "italian": "suo",
     "dictionary": "possessiveAdjective che appartiene a lui/lei che ha come origine lui/lei her his",
     "english": "his own",
-    "chinese": "他的亲生儿子",
+    "chinese": "阳性单数物主形容词：他的，她的",
     "frequency": 381756,
     "rank": 92
   },
@@ -367,7 +367,7 @@ const VOCABULARY_DATA = [
     "italian": "qualcosa",
     "dictionary": "pronoun (sing, con art. indeterm.): una cosa non definita anything something",
     "english": "something",
-    "chinese": "东西",
+    "chinese": "某样东西，某件事；一点什么",
     "frequency": 375353,
     "rank": 94
   },
@@ -399,7 +399,7 @@ const VOCABULARY_DATA = [
     "italian": "sua",
     "dictionary": "possessiveAdjective femminile singolare di suo her his",
     "english": "his own",
-    "chinese": "他的亲生儿子",
+    "chinese": "阴性单数物主形容词：他的，她的",
     "frequency": 354383,
     "rank": 104
   },
@@ -423,7 +423,7 @@ const VOCABULARY_DATA = [
     "italian": "uno",
     "dictionary": "noun la cifra corrispondente alla quantità unitaria: one",
     "english": "One; (2); (1)",
-    "chinese": "一个; (二); (1) 国家",
+    "chinese": "一，数词一；某人，有人；不定冠词的阳性形式（用在 z、s+辅音等词前）",
     "frequency": 345353,
     "rank": 107
   },
@@ -431,7 +431,7 @@ const VOCABULARY_DATA = [
     "italian": "dove",
     "dictionary": "adverb in quale luogo where",
     "english": "where",
-    "chinese": "地点",
+    "chinese": "哪里，在哪儿；…的地方",
     "frequency": 344643,
     "rank": 108
   },
@@ -447,7 +447,7 @@ const VOCABULARY_DATA = [
     "italian": "vero",
     "dictionary": "adjective leale, fedele: genuino: legittimo: (logica) che ha valore logico vero: true",
     "english": "true; (2)",
-    "chinese": "真实; (二)",
+    "chinese": "真的，真实的；对吧（用于反问）",
     "frequency": 337704,
     "rank": 110
   },
@@ -479,7 +479,7 @@ const VOCABULARY_DATA = [
     "italian": "dire",
     "dictionary": "verb trasmettere uno o più messaggi, soprattutto parlando say tell (per estensione) parlar",
     "english": "to say",
-    "chinese": "说",
+    "chinese": "说，告诉；意味着",
     "frequency": 315462,
     "rank": 115
   },
@@ -503,7 +503,7 @@ const VOCABULARY_DATA = [
     "italian": "forse",
     "dictionary": "adverb chissà, indica incertezza o parziale verifica in merito all'eventualità che l'azione o comunq",
     "english": "Perhaps; (2)",
-    "chinese": "也许; (二)",
+    "chinese": "也许，可能",
     "frequency": 270956,
     "rank": 128
   },
@@ -519,7 +519,7 @@ const VOCABULARY_DATA = [
     "italian": "certo",
     "dictionary": "adjective la cui natura o essenza non pone dubbi certain one (matematica) (statistica) (di) evento c",
     "english": "Of course.; (2); (3)",
-    "chinese": "当然; (二); (三) 国家",
+    "chinese": "当然，的确；确定的，肯定的；某个（不确指的）",
     "frequency": 264768,
     "rank": 131
   },
@@ -543,7 +543,7 @@ const VOCABULARY_DATA = [
     "italian": "vita",
     "dictionary": "noun (biologia) (medicina) condizione propria di un essere vivente, che gli permette di mu",
     "english": "life",
-    "chinese": "生活状况",
+    "chinese": "生命，性命；生活；腰部",
     "frequency": 248223,
     "rank": 137
   },
@@ -607,7 +607,7 @@ const VOCABULARY_DATA = [
     "italian": "volta",
     "dictionary": "noun attimo in cui a qualcuno è consentito agire instance occasion turn (architettura) (e",
     "english": "time",
-    "chinese": "时间",
+    "chinese": "次，回（表示次数）；（建筑）拱顶",
     "frequency": 224925,
     "rank": 155
   },
@@ -631,7 +631,7 @@ const VOCABULARY_DATA = [
     "italian": "padre",
     "dictionary": "noun father dad",
     "english": "Father",
-    "chinese": "父亲",
+    "chinese": "父亲；神父",
     "frequency": 211947,
     "rank": 160
   },
@@ -655,7 +655,7 @@ const VOCABULARY_DATA = [
     "italian": "posto",
     "dictionary": "adjective (araldica) attributo araldico che si applica a: set in",
     "english": "place; (2)",
-    "chinese": "地点; (二)",
+    "chinese": "地方，位置；座位；职位",
     "frequency": 201344,
     "rank": 166
   },
@@ -735,7 +735,7 @@ const VOCABULARY_DATA = [
     "italian": "qualche",
     "dictionary": "adjective some",
     "english": "some",
-    "chinese": "有点",
+    "chinese": "一些，某些（后接单数名词）",
     "frequency": 176926,
     "rank": 185
   },
@@ -743,7 +743,7 @@ const VOCABULARY_DATA = [
     "italian": "tra",
     "dictionary": "preposition in mezzo a between within indica la distanza tra due luoghi indica una relazion",
     "english": "between",
-    "chinese": "介于",
+    "chinese": "在…之间；（时间）再过…以后",
     "frequency": 165237,
     "rank": 190
   },
@@ -791,7 +791,7 @@ const VOCABULARY_DATA = [
     "italian": "favore",
     "dictionary": "noun favour",
     "english": "Please",
-    "chinese": "请",
+    "chinese": "帮忙，恩惠，人情；（用在礼貌请求的短语里）请",
     "frequency": 157525,
     "rank": 204
   },
@@ -847,7 +847,7 @@ const VOCABULARY_DATA = [
     "italian": "prego",
     "dictionary": "interjection usato per rispondere gentilmente ad un ringraziamento don't mention it you are welcome",
     "english": "Please.",
-    "chinese": "请",
+    "chinese": "不客气；请（请进、请说）",
     "frequency": 138775,
     "rank": 226
   },
@@ -911,7 +911,7 @@ const VOCABULARY_DATA = [
     "italian": "gente",
     "dictionary": "noun insieme di persone: people",
     "english": "People",
-    "chinese": "人员",
+    "chinese": "人们，大家（集合名词）",
     "frequency": 129045,
     "rank": 245
   },
@@ -919,7 +919,7 @@ const VOCABULARY_DATA = [
     "italian": "sicuro",
     "dictionary": "adjective che è senza pericolo harmless safe (senso figurato) (familiare) attribuito a chi è coscien",
     "english": "safe",
-    "chinese": "保险",
+    "chinese": "安全的；确信的，肯定的",
     "frequency": 128972,
     "rank": 246
   },
@@ -943,7 +943,7 @@ const VOCABULARY_DATA = [
     "italian": "caso",
     "dictionary": "noun (filosofia) (statistica) evento imprevedibile chance coincidence (diritto) questione",
     "english": "case; chance",
-    "chinese": "情况；机会",
+    "chinese": "情况，场合；偶然，巧合；案件",
     "frequency": 123317,
     "rank": 253
   },
@@ -991,7 +991,7 @@ const VOCABULARY_DATA = [
     "italian": "stare",
     "dictionary": "verb essere in un posto senza muoversi stay essere in una determinata condizione (gergale) avere una",
     "english": "Stay",
-    "chinese": "留下来",
+    "chinese": "处于某状态，（身体）好不好；待，停留，在（某处）；正在做（后接副动词）",
     "frequency": 116354,
     "rank": 272
   },
@@ -1079,7 +1079,7 @@ const VOCABULARY_DATA = [
     "italian": "testa",
     "dictionary": "noun (biologia) (anatomia) (fisiologia) (medicina) parte superiore del corpo umano unita",
     "english": "head",
-    "chinese": "头",
+    "chinese": "头，脑袋；（队列的）最前面",
     "frequency": 106617,
     "rank": 291
   },
@@ -1111,7 +1111,7 @@ const VOCABULARY_DATA = [
     "italian": "scusa",
     "dictionary": "noun (gergale) intercalare per aprire un discorso o iniziare un dialogo excuse pardon so",
     "english": "Sorry.",
-    "chinese": "对不起",
+    "chinese": "对不起，抱歉；借口，托辞",
     "frequency": 101934,
     "rank": 302
   },
@@ -1167,7 +1167,7 @@ const VOCABULARY_DATA = [
     "italian": "persona",
     "dictionary": "noun person",
     "english": "person",
-    "chinese": "人员",
+    "chinese": "人，个人；本人",
     "frequency": 95254,
     "rank": 317
   },
@@ -1223,7 +1223,7 @@ const VOCABULARY_DATA = [
     "italian": "lì",
     "dictionary": "adverb avverbio di luogo che indica genericamente un luogo o una direzione relativamente lont",
     "english": "there",
-    "chinese": "那边",
+    "chinese": "那儿，那里（指较确定的地点）",
     "frequency": 89911,
     "rank": 326
   },
@@ -1255,7 +1255,7 @@ const VOCABULARY_DATA = [
     "italian": "fine",
     "dictionary": "adjective che presenta armonia d'aspetto end fine slender thin",
     "english": "end; fine; thin; (2); (3)",
-    "chinese": "结束；罚款；细的; (二); (三) 国家",
+    "chinese": "结尾，末尾，终结；精细的，优雅的",
     "frequency": 86358,
     "rank": 334
   },
@@ -1295,7 +1295,7 @@ const VOCABULARY_DATA = [
     "italian": "capo",
     "dictionary": "noun (biologia) (anatomia) (fisiologia) testa; in particolare, negli esseri umani, indica la regione",
     "english": "head; chief; boss",
-    "chinese": "头；首领；老板",
+    "chinese": "头儿，领导，老板；（衣服）一件；头部",
     "frequency": 83858,
     "rank": 344
   },
@@ -1327,7 +1327,7 @@ const VOCABULARY_DATA = [
     "italian": "trovare",
     "dictionary": "verb find come across to find",
     "english": "to find",
-    "chinese": "寻找",
+    "chinese": "找到，发现；觉得，认为",
     "frequency": 82166,
     "rank": 351
   },
@@ -1383,7 +1383,7 @@ const VOCABULARY_DATA = [
     "italian": "andato",
     "dictionary": "adjective passato gone passed",
     "english": "gone",
-    "chinese": "不见了",
+    "chinese": "走了的，去了的；坏掉的，完蛋的",
     "frequency": 79227,
     "rank": 363
   },
@@ -1391,7 +1391,7 @@ const VOCABULARY_DATA = [
     "italian": "tornare",
     "dictionary": "verb ritrovarsi nel medesimo luogo lasciato precedentemente (senso figurato) rivolgere",
     "english": "come back",
-    "chinese": "回来",
+    "chinese": "回来，返回；重新变成",
     "frequency": 78980,
     "rank": 365
   },
@@ -1407,7 +1407,7 @@ const VOCABULARY_DATA = [
     "italian": "vostro",
     "dictionary": "possessivePronoun pronome possessivo della seconda persona plurale your yours",
     "english": "Your",
-    "chinese": "",
+    "chinese": "阳性单数物主形容词：你们的",
     "frequency": 78512,
     "rank": 369
   },
@@ -1423,7 +1423,7 @@ const VOCABULARY_DATA = [
     "italian": "giro",
     "dictionary": "noun circle",
     "english": "around",
-    "chinese": "环绕",
+    "chinese": "兜一圈，转一转；圈，环；（钱、消息的）流通",
     "frequency": 77718,
     "rank": 372
   },
@@ -1511,7 +1511,7 @@ const VOCABULARY_DATA = [
     "italian": "andata",
     "dictionary": "noun atto dell'andare outward journey (sport) la prima parte di un torneo o campionato girone di and",
     "english": "Gone",
-    "chinese": "不见了",
+    "chinese": "去程，单程；（阴性过去分词）走了，去了",
     "frequency": 72631,
     "rank": 391
   },
@@ -1551,7 +1551,7 @@ const VOCABULARY_DATA = [
     "italian": "magari",
     "dictionary": "adverb piuttosto even maybe perhaps (familiare) con molta probabilità even even if if only maybe per",
     "english": "Maybe; (2)",
-    "chinese": "也许; (二)",
+    "chinese": "但愿如此，要是…就好了；说不定，也许",
     "frequency": 68849,
     "rank": 410
   },
@@ -1607,7 +1607,7 @@ const VOCABULARY_DATA = [
     "italian": "perso",
     "dictionary": "adjective (gergale) che è incapace di capire lost missed wasted",
     "english": "lost",
-    "chinese": "丢失",
+    "chinese": "丢了的，失去的；迷路的，不知所措的",
     "frequency": 67176,
     "rank": 421
   },
@@ -1631,7 +1631,7 @@ const VOCABULARY_DATA = [
     "italian": "papà",
     "dictionary": "noun dad daddy",
     "english": "Dad.",
-    "chinese": "父亲",
+    "chinese": "爸爸（口语称呼）",
     "frequency": 66780,
     "rank": 424
   },
@@ -1671,7 +1671,7 @@ const VOCABULARY_DATA = [
     "italian": "indietro",
     "dictionary": "adverb posizionato alla schiena di qualcuno (senso figurato) un tempo, spesso indefini",
     "english": "Back",
-    "chinese": "回来",
+    "chinese": "向后，往回；落后",
     "frequency": 64558,
     "rank": 441
   },
@@ -1687,7 +1687,7 @@ const VOCABULARY_DATA = [
     "italian": "piccolo",
     "dictionary": "adjective di dimensioni contenute, non eccessivamente sviluppato in larghezza o in altezza small lit",
     "english": "small",
-    "chinese": "小型",
+    "chinese": "小的，小型的；年幼的",
     "frequency": 63260,
     "rank": 446
   },
@@ -1895,7 +1895,7 @@ const VOCABULARY_DATA = [
     "italian": "piccola",
     "dictionary": "noun little small",
     "english": "small",
-    "chinese": "小型",
+    "chinese": "阴性形式：小的，年幼的；小姑娘，小家伙",
     "frequency": 56125,
     "rank": 501
   },
@@ -1919,7 +1919,7 @@ const VOCABULARY_DATA = [
     "italian": "stia",
     "dictionary": "noun gabbia, in particolare per uccelli chicken-coop",
     "english": "I'm sorry",
-    "chinese": "对不起",
+    "chinese": "您待着，您别动（尊称命令式）；愿您…，希望您…（虚拟式）",
     "frequency": 55698,
     "rank": 505
   },
@@ -1967,7 +1967,7 @@ const VOCABULARY_DATA = [
     "italian": "genere",
     "dictionary": "noun (biologia) nella tassonomia, la categoria compresa tra la famiglia e la specie",
     "english": "gender; genre; kind",
-    "chinese": "性别；类型",
+    "chinese": "种类，类型；体裁；（语法）性",
     "frequency": 53941,
     "rank": 518
   },
@@ -1983,7 +1983,7 @@ const VOCABULARY_DATA = [
     "italian": "dare",
     "dictionary": "noun (diritto) (economia) (commercio) (finanza) insieme delle spese di un'azienda debit",
     "english": "give; (2)",
-    "chinese": "给；给予; (二)",
+    "chinese": "给，给予；产生，结出",
     "frequency": 53534,
     "rank": 520
   },
@@ -2079,7 +2079,7 @@ const VOCABULARY_DATA = [
     "italian": "dottore",
     "dictionary": "noun doctor",
     "english": "Doctor",
-    "chinese": "医生",
+    "chinese": "医生，大夫；博士，大学毕业生",
     "frequency": 51471,
     "rank": 538
   },
@@ -2087,7 +2087,7 @@ const VOCABULARY_DATA = [
     "italian": "vivere",
     "dictionary": "verb (filosofia) (diritto) (biologia) (medicina) essere in vita cioè essere nella condiz",
     "english": "live life",
-    "chinese": "生活状况",
+    "chinese": "活着，生存；居住，过日子",
     "frequency": 50627,
     "rank": 541
   },
@@ -2127,7 +2127,7 @@ const VOCABULARY_DATA = [
     "italian": "sicura",
     "dictionary": "noun (armi) meccanismo di bloccaggio atto ad evitare un colpo accidentale safe safety se",
     "english": "safe",
-    "chinese": "保险",
+    "chinese": "阴性形式：安全的，确信的；（枪械的）保险栓",
     "frequency": 49481,
     "rank": 548
   },
@@ -2151,7 +2151,7 @@ const VOCABULARY_DATA = [
     "italian": "perdere",
     "dictionary": "verb non riuscire più a trovare subire una sconfitta lose",
     "english": "Lost",
-    "chinese": "丢失",
+    "chinese": "失去，丢掉；输掉；错过（车、机会）",
     "frequency": 49017,
     "rank": 551
   },
@@ -2175,7 +2175,7 @@ const VOCABULARY_DATA = [
     "italian": "esattamente",
     "dictionary": "adverb in modo esatto, con esattezza exactly precisely",
     "english": "accurately",
-    "chinese": "准确",
+    "chinese": "确切地，准确地；正是如此",
     "frequency": 47713,
     "rank": 558
   },
@@ -2191,7 +2191,7 @@ const VOCABULARY_DATA = [
     "italian": "esatto",
     "dictionary": "adjective di cosa fatta con cura e precisione, e il più possibile corrispondente al vero o alla real",
     "english": "exact; exact (2)",
-    "chinese": "准确; 准确(2)",
+    "chinese": "准确的，确切的；没错，正是（表示附和）",
     "frequency": 47389,
     "rank": 560
   },
@@ -2215,7 +2215,7 @@ const VOCABULARY_DATA = [
     "italian": "motivo",
     "dictionary": "noun la causa per cui si agisce reason (disegno) motivo continuo di un tessuto con motivi che si rip",
     "english": "reason; motive",
-    "chinese": "原因；动机",
+    "chinese": "动机，缘由；（音乐、图案的）主题，花纹",
     "frequency": 46493,
     "rank": 569
   },
@@ -2303,7 +2303,7 @@ const VOCABULARY_DATA = [
     "italian": "là",
     "dictionary": "adverb avverbio di luogo che indica genericamente un luogo o una direzione lontana sia da chi",
     "english": "there",
-    "chinese": "那边",
+    "chinese": "那边，那头（指较远或较笼统的地方）",
     "frequency": 43774,
     "rank": 588
   },
@@ -2351,7 +2351,7 @@ const VOCABULARY_DATA = [
     "italian": "facile",
     "dictionary": "adjective che si può svolgere senza troppo impegno easy simple facile effortless incli",
     "english": "easy",
-    "chinese": "简单",
+    "chinese": "容易的，不费力的",
     "frequency": 42003,
     "rank": 599
   },
@@ -2439,7 +2439,7 @@ const VOCABULARY_DATA = [
     "italian": "inizio",
     "dictionary": "noun attimo e azione con cui si avvia qualcosa beginning",
     "english": "start",
-    "chinese": "开始",
+    "chinese": "开始，开端；起初",
     "frequency": 40562,
     "rank": 623
   },
@@ -2447,7 +2447,7 @@ const VOCABULARY_DATA = [
     "italian": "causa",
     "dictionary": "noun (filosofia) (fisica) ciò che è origine, ragione, motivo determinante di qualcosa cau",
     "english": "cause",
-    "chinese": "原因",
+    "chinese": "原因，起因；诉讼，案件",
     "frequency": 40373,
     "rank": 625
   },
@@ -2535,7 +2535,7 @@ const VOCABULARY_DATA = [
     "italian": "situazione",
     "dictionary": "noun stato delle cose situation",
     "english": "situation",
-    "chinese": "情况",
+    "chinese": "形势，局面，处境",
     "frequency": 38688,
     "rank": 651
   },
@@ -2559,7 +2559,7 @@ const VOCABULARY_DATA = [
     "italian": "ottimo",
     "dictionary": "noun excellent optimus",
     "english": "excellent",
-    "chinese": "不错",
+    "chinese": "极好的，最佳的",
     "frequency": 38244,
     "rank": 655
   },
@@ -2583,7 +2583,7 @@ const VOCABULARY_DATA = [
     "italian": "provato",
     "dictionary": "adjective (per estensione) estremamente affaticato, talvolta con sofferenza demonstrate",
     "english": "tried",
-    "chinese": "尝试",
+    "chinese": "试过的，经过检验的；疲惫不堪的",
     "frequency": 38069,
     "rank": 658
   },
@@ -2599,7 +2599,7 @@ const VOCABULARY_DATA = [
     "italian": "arrivato",
     "dictionary": "adjective colui che ha realizzato un progetto o ha raggiunto un obiettivo. parvenu suc",
     "english": "arrived",
-    "chinese": "抵达",
+    "chinese": "已到达的，来了的；功成名就的人",
     "frequency": 37654,
     "rank": 665
   },
@@ -2703,7 +2703,7 @@ const VOCABULARY_DATA = [
     "italian": "alcuni",
     "dictionary": "pronoun some",
     "english": "some",
-    "chinese": "有点",
+    "chinese": "有些，几个（阳性复数）；有些人",
     "frequency": 35716,
     "rank": 699
   },
@@ -2735,7 +2735,7 @@ const VOCABULARY_DATA = [
     "italian": "buono",
     "dictionary": "adjective conforme al bene good tasty di buon sapore, piacevole al gusto; (riferito alle vivande) vo",
     "english": "good; (2)",
-    "chinese": "不错; (二)",
+    "chinese": "好的，善良的；好吃的，可口的",
     "frequency": 35576,
     "rank": 703
   },
@@ -2879,7 +2879,7 @@ const VOCABULARY_DATA = [
     "italian": "restare",
     "dictionary": "verb fermarsi in un luogo remain stay",
     "english": "Stay",
-    "chinese": "留下来",
+    "chinese": "留下，待着不走；剩下",
     "frequency": 33939,
     "rank": 731
   },
@@ -2887,7 +2887,7 @@ const VOCABULARY_DATA = [
     "italian": "chiamare",
     "dictionary": "verb attirare l'attenzione di qualcuno con la propria voce call address phone ring summ",
     "english": "call",
-    "chinese": "电话",
+    "chinese": "叫，呼唤；给…打电话；称作",
     "frequency": 33931,
     "rank": 732
   },
@@ -2919,7 +2919,7 @@ const VOCABULARY_DATA = [
     "italian": "fra",
     "dictionary": "preposition in mezzo a among between within indica la distanza tra due luoghi indica un periodo di t",
     "english": "between",
-    "chinese": "介于",
+    "chinese": "在…当中，…之中（与另一同义介词完全互换，只按顺口与否选用）；（时间）再过…",
     "frequency": 33297,
     "rank": 740
   },
@@ -2927,7 +2927,7 @@ const VOCABULARY_DATA = [
     "italian": "provare",
     "dictionary": "verb (senso figurato) cercare di compiere o realizzare obiettivi tanto desiderati, pers",
     "english": "Try",
-    "chinese": "尝试",
+    "chinese": "尝试，试着做；试穿；感到（某种情绪）",
     "frequency": 33239,
     "rank": 741
   },
@@ -2959,7 +2959,7 @@ const VOCABULARY_DATA = [
     "italian": "arrivo",
     "dictionary": "noun arrival di veicoli, treni in stazione, aerei in aeroporto, ecc (opposto a partenza)",
     "english": "Arrival",
-    "chinese": "抵达",
+    "chinese": "到达，抵达；到站，终点",
     "frequency": 32899,
     "rank": 747
   },
@@ -3039,7 +3039,7 @@ const VOCABULARY_DATA = [
     "italian": "fretta",
     "dictionary": "noun hurry haste",
     "english": "hurry",
-    "chinese": "快点",
+    "chinese": "匆忙，急忙；赶时间",
     "frequency": 31890,
     "rank": 771
   },
@@ -3103,7 +3103,7 @@ const VOCABULARY_DATA = [
     "italian": "vera",
     "dictionary": "noun real true",
     "english": "true",
-    "chinese": "真实",
+    "chinese": "阴性形式：真的，真实的；（名词）结婚戒指",
     "frequency": 31138,
     "rank": 785
   },
@@ -3127,7 +3127,7 @@ const VOCABULARY_DATA = [
     "italian": "semplice",
     "dictionary": "adjective (spregiativo) che risulta facilmente soggetto al raggiro; ignorante plain pure (per estens",
     "english": "simple; Simple (2)",
-    "chinese": "简单; 简单(2)",
+    "chinese": "简单的，单纯的；朴素的",
     "frequency": 31031,
     "rank": 788
   },
@@ -3135,7 +3135,7 @@ const VOCABULARY_DATA = [
     "italian": "riguardo",
     "dictionary": "noun respect",
     "english": "about",
-    "chinese": "关于",
+    "chinese": "关于，就…而言；尊重，顾虑",
     "frequency": 30963,
     "rank": 790
   },
@@ -3167,7 +3167,7 @@ const VOCABULARY_DATA = [
     "italian": "chiamata",
     "dictionary": "noun (teatro) applauso con cui gli spettatori chiamano gli attori a mostrarsi sul prosc",
     "english": "call",
-    "chinese": "电话",
+    "chinese": "通话，来电；召唤，传唤",
     "frequency": 30771,
     "rank": 795
   },
@@ -3183,7 +3183,7 @@ const VOCABULARY_DATA = [
     "italian": "permesso",
     "dictionary": "adjective che è consentito da leggi, regolamenti o consuetudini allowed licit permitted",
     "english": "Excuse me; (2)",
-    "chinese": "对不起; (二)",
+    "chinese": "许可，准许；通行证；（进门时）借过，我可以进来吗",
     "frequency": 30503,
     "rank": 797
   },
@@ -3207,7 +3207,7 @@ const VOCABULARY_DATA = [
     "italian": "circa",
     "dictionary": "adverb indicativamente concerning",
     "english": "about about",
-    "chinese": "关于",
+    "chinese": "大约，将近；关于",
     "frequency": 30207,
     "rank": 802
   },
@@ -3215,7 +3215,7 @@ const VOCABULARY_DATA = [
     "italian": "ovviamente",
     "dictionary": "adverb in modo ovvio obviously clearly naturally",
     "english": "of course.",
-    "chinese": "当然",
+    "chinese": "显然，明摆着；理所当然地",
     "frequency": 30051,
     "rank": 803
   },
@@ -3223,7 +3223,7 @@ const VOCABULARY_DATA = [
     "italian": "finire",
     "dictionary": "verb conclude complete end finish",
     "english": "finish",
-    "chinese": "结束",
+    "chinese": "结束，完成；用完",
     "frequency": 30046,
     "rank": 804
   },
@@ -3239,7 +3239,7 @@ const VOCABULARY_DATA = [
     "italian": "vostri",
     "dictionary": "possessiveAdjective maschile plurale di vostro your yours",
     "english": "Your",
-    "chinese": "",
+    "chinese": "阳性复数物主形容词：你们的",
     "frequency": 29765,
     "rank": 809
   },
@@ -3279,7 +3279,7 @@ const VOCABULARY_DATA = [
     "italian": "resta",
     "dictionary": "noun (armi) supporto di ferro, a forma di semicerchio, fissato pettorale destro della cor",
     "english": "Stay",
-    "chinese": "留下来",
+    "chinese": "待着别动，留下不走（第三人称单数现在时及命令式）",
     "frequency": 29301,
     "rank": 819
   },
@@ -3383,7 +3383,7 @@ const VOCABULARY_DATA = [
     "italian": "iniziato",
     "dictionary": "adjective (senso figurato) begun started",
     "english": "started; (2)",
-    "chinese": "开始; (二)",
+    "chinese": "已经开始的，开了头的",
     "frequency": 27923,
     "rank": 847
   },
@@ -3479,7 +3479,7 @@ const VOCABULARY_DATA = [
     "italian": "ormai",
     "dictionary": "adverb indica un'azione negativa che è iniziata o che si sta concludendo almost by now ne",
     "english": "by now",
-    "chinese": "现在",
+    "chinese": "如今，事到如今；已经，为时已晚",
     "frequency": 27060,
     "rank": 869
   },
@@ -3487,7 +3487,7 @@ const VOCABULARY_DATA = [
     "italian": "generale",
     "dictionary": "adjective che si riferisce a qualcuno o qualcosa costituenti un insieme general collective overall w",
     "english": "General; General (2)",
-    "chinese": "常规; 概况(2)",
+    "chinese": "总的，普遍的，全面的；将军",
     "frequency": 27020,
     "rank": 871
   },
@@ -3567,7 +3567,7 @@ const VOCABULARY_DATA = [
     "italian": "carino",
     "dictionary": "adjective di bell'aspetto e galante pretty good-looking (familiare) non proprio bellissimo ma [abbas",
     "english": "Nice.",
-    "chinese": "不错",
+    "chinese": "漂亮的，可爱的；（人）和气讨喜的",
     "frequency": 26641,
     "rank": 887
   },
@@ -3631,7 +3631,7 @@ const VOCABULARY_DATA = [
     "italian": "gentile",
     "dictionary": "adjective che tratta gli altri con modi garbati courteous decent genial graceful gracious kind chi d",
     "english": "kind of; friendly (2)",
-    "chinese": "有点; 友好组织(2)",
+    "chinese": "亲切的，有礼貌的；好心的",
     "frequency": 26075,
     "rank": 903
   },
@@ -3719,7 +3719,7 @@ const VOCABULARY_DATA = [
     "italian": "medico",
     "dictionary": "adjective attinente alla medicina, alle scienze curative riconosciute medical turismo medico: per il",
     "english": "Doctor",
-    "chinese": "医生",
+    "chinese": "医师，从医者；医学的，医疗的",
     "frequency": 25532,
     "rank": 921
   },
@@ -3815,7 +3815,7 @@ const VOCABULARY_DATA = [
     "italian": "do",
     "dictionary": "noun (musica) nome del primo grado della scala diatonica di Do C do doh",
     "english": "to give; donate",
-    "chinese": "给；捐赠",
+    "chinese": "我给，我给予（第一人称单数现在时）；（音乐）音阶第一音",
     "frequency": 25019,
     "rank": 942
   },
@@ -3823,7 +3823,7 @@ const VOCABULARY_DATA = [
     "italian": "normale",
     "dictionary": "adjective (matematica) (geometria) che forma un angolo di novanta gradi; perpendicolare average norm",
     "english": "normal; normal (2)",
-    "chinese": "常规; 常规(2)",
+    "chinese": "正常的，普通的",
     "frequency": 24942,
     "rank": 944
   },
@@ -3863,7 +3863,7 @@ const VOCABULARY_DATA = [
     "italian": "rimanere",
     "dictionary": "verb fermarsi in un luogo stay remain be left trovarsi in una situazione remain",
     "english": "Stay",
-    "chinese": "留下来",
+    "chinese": "剩下，余下；仍然处于（某种状态）；留在",
     "frequency": 24544,
     "rank": 956
   },
@@ -3919,7 +3919,7 @@ const VOCABULARY_DATA = [
     "italian": "fallo",
     "dictionary": "noun (letterario) azione inadeguata error mistake (sport) (calcio) azione di gioco irrego",
     "english": "Do it",
-    "chinese": "快点",
+    "chinese": "犯规，过失；（命令式加宾语代词的合写）做吧，动手做",
     "frequency": 24097,
     "rank": 973
   },
@@ -3967,7 +3967,7 @@ const VOCABULARY_DATA = [
     "italian": "intorno",
     "dictionary": "noun (matematica) un insieme o spazio topologico definito a partire da un punto (detto",
     "english": "around; (2)",
-    "chinese": "环绕; (二)",
+    "chinese": "在周围，四周；围绕着",
     "frequency": 23545,
     "rank": 990
   },

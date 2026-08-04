@@ -757,7 +757,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "geben",
     "frequency": 6.2445,
     "english": "to give; to hand, to pass",
-    "chinese": "给予, 演出(剧目)",
+    "chinese": "给予，给（把东西递给某人）；上演（剧目）",
     "auxiliary": [
       "haben"
     ],
@@ -2068,7 +2068,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "sehen",
     "frequency": 5.9865,
     "english": "to see; to have sight",
-    "chinese": "看",
+    "chinese": "看见，看到；能看得见",
     "auxiliary": [
       "haben"
     ],
@@ -2446,7 +2446,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "machen",
     "frequency": 5.851,
     "english": "to make, to produce; to make, prepare",
-    "chinese": "做, 制作; 干, 从事",
+    "chinese": "做，制作；使…变得（某种状态）",
     "auxiliary": [
       "haben"
     ],
@@ -3408,7 +3408,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "nehmen",
     "frequency": 5.6384,
     "english": "to take; to take from",
-    "chinese": "拿, 取",
+    "chinese": "拿，取（拿到手里）",
     "auxiliary": [
       "haben"
     ],
@@ -4934,7 +4934,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "brauchen",
     "frequency": 5.5224,
     "english": "to need, to be in need of; to need to, to have to",
-    "chinese": "需要",
+    "chinese": "需要，用得着；花费（时间、材料）",
     "auxiliary": [
       "haben"
     ],
@@ -5517,7 +5517,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "laufen",
     "frequency": 5.4465,
     "english": "to walk; to jog",
-    "chinese": "跑; 走, 步行",
+    "chinese": "跑，快步走；走，步行；（机器）运转",
     "auxiliary": [
       "sein"
     ],
@@ -5706,7 +5706,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "sprechen",
     "frequency": 5.438,
     "english": "to speak; to speak, to talk",
-    "chinese": "说, 说话",
+    "chinese": "说话，讲（某种语言）；交谈，谈论",
     "auxiliary": [
       "haben"
     ],
@@ -6462,7 +6462,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "meinen",
     "frequency": 5.4141,
     "english": "to opine, to think; to believe",
-    "chinese": "认为, 觉得; 指的是",
+    "chinese": "指的是，意思是；认为，觉得",
     "auxiliary": [
       "haben"
     ],
@@ -6856,7 +6856,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "tun",
     "frequency": 5.4112,
     "english": "to do",
-    "chinese": "做, 干; 放, 放入",
+    "chinese": "干，办（某事）；放，搁（某处）",
     "auxiliary": [
       "haben"
     ],
@@ -7242,7 +7242,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "setzen",
     "frequency": 5.3769,
     "english": "to set; to put",
-    "chinese": "放置, 列入, 安排; 坐",
+    "chinese": "使坐下，安放；（反身）坐下；下（赌注），设定（期限、目标）",
     "auxiliary": [
       "haben"
     ],
@@ -7439,7 +7439,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bestimmen",
     "frequency": 5.3678,
     "english": "to determine",
-    "chinese": "规定, 确定",
+    "chinese": "确定，测定；决定，支配（说了算）",
     "auxiliary": [
       "haben"
     ],
@@ -8583,7 +8583,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "beginnen",
     "frequency": 5.3026,
     "english": "to begin; to commence",
-    "chinese": "开始",
+    "chinese": "开始（书面、正式用语）",
     "auxiliary": [
       "haben"
     ],
@@ -9537,7 +9537,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "gewinnen",
     "frequency": 5.2225,
     "english": "to win; to be victorious",
-    "chinese": "获得, 赢得, 争取到; 开采",
+    "chinese": "赢得，获胜；开采，提炼（原料）",
     "auxiliary": [
       "haben"
     ],
@@ -10309,7 +10309,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bieten",
     "frequency": 5.2049,
     "english": "to offer; to present",
-    "chinese": "提供, 给予",
+    "chinese": "提供，给予（机会、可能性）；呈现",
     "auxiliary": [
       "haben"
     ],
@@ -11853,7 +11853,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufnehmen",
     "frequency": 5.1521,
     "english": "to pick up, lift up; to receive, to accommodate",
-    "chinese": "接待; 吸收, 接 纳",
+    "chinese": "接纳，收容（人）；录制，拍摄；吸收（养分、信息）；拿起，捡起",
     "auxiliary": [
       "haben"
     ],
@@ -12839,7 +12839,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "entscheiden",
     "frequency": 5.1258,
     "english": "to decide, to make a decision; to opt, to decide",
-    "chinese": "决定",
+    "chinese": "决定，裁决；作出抉择",
     "auxiliary": [
       "haben"
     ],
@@ -13028,7 +13028,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "verlassen",
     "frequency": 5.1189,
     "english": "to leave, to abandon; to depart",
-    "chinese": "离开",
+    "chinese": "离开，离弃（某地、某人）",
     "auxiliary": [
       "haben"
     ],
@@ -13217,7 +13217,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "entstehen",
     "frequency": 5.1114,
     "english": "to come into being, to arise; to develop",
-    "chinese": "出现, 产生",
+    "chinese": "产生，形成（新事物）",
     "auxiliary": [
       "sein"
     ],
@@ -13808,7 +13808,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "wünschen",
     "frequency": 5.0931,
     "english": "to wish for; to make a wish for",
-    "chinese": "希望, 祝愿; 想要",
+    "chinese": "祝愿，祝（生日快乐等）；想要，希望得到",
     "auxiliary": [
       "haben"
     ],
@@ -15770,7 +15770,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anfangen",
     "frequency": 5.0457,
     "english": "to begin; to commence",
-    "chinese": "开始",
+    "chinese": "开始做，动起手来（口语中更常用）",
     "auxiliary": [
       "haben"
     ],
@@ -17354,7 +17354,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "geschehen",
     "frequency": 5.02,
     "english": "to occur; to happen",
-    "chinese": "发生",
+    "chinese": "发生，出现（事情自然发生）",
     "auxiliary": [
       "sein"
     ],
@@ -17543,7 +17543,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "gelingen",
     "frequency": 5.0163,
     "english": "to turn out well, to work out",
-    "chinese": "成功",
+    "chinese": "成功，做成（某事顺利办成）",
     "auxiliary": [
       "sein"
     ],
@@ -18741,7 +18741,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "darstellen",
     "frequency": 4.9982,
     "english": "to depict; represent",
-    "chinese": "描述; 表演",
+    "chinese": "表现，表示；扮演（角色）；构成",
     "auxiliary": [
       "haben"
     ],
@@ -19143,7 +19143,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "rufen",
     "frequency": 4.9929,
     "english": "to call out, to shout; to call for, to request the presence of",
-    "chinese": "叫, 喊, 叫来",
+    "chinese": "喊，呼唤；叫来，召唤",
     "auxiliary": [
       "haben"
     ],
@@ -19521,7 +19521,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anbieten",
     "frequency": 4.9828,
     "english": "to offer, to provide; to offer for sale or rent",
-    "chinese": "提供; 敬(烟、酒、茶 等)",
+    "chinese": "主动提供，请人享用（烟、酒、茶）；供出售",
     "auxiliary": [
       "haben"
     ],
@@ -20120,7 +20120,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "schauen",
     "frequency": 4.9696,
     "english": "to watch, to view; to look",
-    "chinese": "看, 瞧, 看见",
+    "chinese": "看一看，瞧（南德和口语中常用）；观看",
     "auxiliary": [
       "haben"
     ],
@@ -20514,7 +20514,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "übernehmen",
     "frequency": 4.9626,
     "english": "to take over; to take on more than one can handle/master",
-    "chinese": "接受, 承担",
+    "chinese": "接管，承担（任务、责任）；（反身）逞能，揽事过多",
     "auxiliary": [
       "haben"
     ],
@@ -21089,7 +21089,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "fordern",
     "frequency": 4.9557,
     "english": "to demand, ask; to claim",
-    "chinese": "要求, 索取",
+    "chinese": "要求，索取（提出要求）",
     "auxiliary": [
       "haben"
     ],
@@ -21877,7 +21877,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ändern",
     "frequency": 4.9453,
     "english": "to change, to alter; to change, to vary",
-    "chinese": "改变",
+    "chinese": "更改，修改；改动",
     "auxiliary": [
       "haben"
     ],
@@ -22862,7 +22862,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "heißen",
     "frequency": 4.9192,
     "english": "to have a name; to mean, to signify",
-    "chinese": "叫, 称; 称作, 意即",
+    "chinese": "名叫，叫作；意思是，意味着",
     "auxiliary": [
       "haben"
     ],
@@ -23634,7 +23634,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "betreffen",
     "frequency": 4.8983,
     "english": "to concern, to have to do with or affect a business of; to encounter",
-    "chinese": "涉及, 关于",
+    "chinese": "涉及，与……有关",
     "auxiliary": [
       "haben"
     ],
@@ -24398,7 +24398,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "essen",
     "frequency": 4.877,
     "english": "to eat; to dine",
-    "chinese": "吃",
+    "chinese": "吃，吃饭",
     "auxiliary": [
       "haben"
     ],
@@ -25172,7 +25172,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "hinweisen",
     "frequency": 4.8614,
     "english": "to indicate; to point out",
-    "chinese": "指(向)",
+    "chinese": "指出，提醒注意",
     "auxiliary": [
       "haben"
     ],
@@ -25755,7 +25755,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "starten",
     "frequency": 4.858,
     "english": "to start; to start something",
-    "chinese": "开始, 起跑, 起飞",
+    "chinese": "启动，发动（机器、程序）；起跑，起飞",
     "auxiliary": [
       "sein"
     ],
@@ -26165,7 +26165,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "durchführen",
     "frequency": 4.8556,
     "english": "to perform, to conduct; to implement, to carry out",
-    "chinese": "实施, 进行",
+    "chinese": "实施，进行（计划、活动）",
     "auxiliary": [
       "haben"
     ],
@@ -26780,7 +26780,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "stecken",
     "frequency": 4.8497,
     "english": "causative of stecken when intransitive; to stick",
-    "chinese": "插入, 塞入, 放入",
+    "chinese": "插进，塞进（把东西放入）；卡着，插在（某处）",
     "auxiliary": [
       "haben"
     ],
@@ -27542,7 +27542,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "merken",
     "frequency": 4.8342,
     "english": "to notice, to sense; to memorize, remember",
-    "chinese": "发觉, 察觉",
+    "chinese": "发觉，察觉；记住，记牢（反身用法）",
     "auxiliary": [
       "haben"
     ],
@@ -27739,7 +27739,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ankommen",
     "frequency": 4.8335,
     "english": "to arrive; to depend",
-    "chinese": "到达",
+    "chinese": "到达（某地）；取决于（某事）",
     "auxiliary": [
       "sein"
     ],
@@ -28551,7 +28551,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "feststellen",
     "frequency": 4.8215,
     "english": "to determine, to ascertain; to notice, to realize",
-    "chinese": "发觉, 看到; 确诊, 确认",
+    "chinese": "查明，确认（事实）；发现，认识到",
     "auxiliary": [
       "haben"
     ],
@@ -28764,7 +28764,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "brechen",
     "frequency": 4.8177,
     "english": "to break; to refract",
-    "chinese": "折断",
+    "chinese": "打破，弄碎；折断；（光线）折射",
     "auxiliary": [
       "sein",
       "haben"
@@ -29151,7 +29151,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "melden",
     "frequency": 4.811,
     "english": "to report, to inform; to report",
-    "chinese": "通知, 报道",
+    "chinese": "报告，申报；报到，联系",
     "auxiliary": [
       "haben"
     ],
@@ -29537,7 +29537,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "sorgen",
     "frequency": 4.8083,
     "english": "to take care of, to care for; to bring about, to ensure",
-    "chinese": "关心, 照料, 安排",
+    "chinese": "操心，负责（为某人某事）；设法促成，保证（某事发生）",
     "auxiliary": [
       "haben"
     ],
@@ -31303,7 +31303,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "abgeben",
     "frequency": 4.7829,
     "english": "to give up, relinquish; to give away, give out",
-    "chinese": "交给, 交还, 寄存",
+    "chinese": "交出，上交（作业、物品）；分给，让出",
     "auxiliary": [
       "haben"
     ],
@@ -32895,7 +32895,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "töten",
     "frequency": 4.7645,
     "english": "to kill",
-    "chinese": "杀死",
+    "chinese": "杀死，致死",
     "auxiliary": [
       "haben"
     ],
@@ -33502,7 +33502,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "vorbereiten",
     "frequency": 4.7584,
     "english": "to prepare; to prepare, to get ready",
-    "chinese": "准备",
+    "chinese": "准备，为……做好准备",
     "auxiliary": [
       "haben"
     ],
@@ -33715,7 +33715,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "weisen",
     "frequency": 4.7563,
     "english": "to point; to indicate",
-    "chinese": "指, 引导; 指点",
+    "chinese": "指向，指明方向；指点，引导",
     "auxiliary": [
       "haben"
     ],
@@ -34298,7 +34298,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "sichern",
     "frequency": 4.7433,
     "english": "to secure; to guarantee",
-    "chinese": "使安全, 保险, 保障",
+    "chinese": "保障，确保安全；固定住，加保险；备份（数据）",
     "auxiliary": [
       "haben"
     ],
@@ -34495,7 +34495,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "beweisen",
     "frequency": 4.7396,
     "english": "to prove; to display, to show",
-    "chinese": "证明, 表明",
+    "chinese": "证明，论证；表现出（勇气等）",
     "auxiliary": [
       "haben"
     ],
@@ -34881,7 +34881,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "betreiben",
     "frequency": 4.7368,
     "english": "to run, to operate; to do",
-    "chinese": "促进; 从事",
+    "chinese": "经营，运营（企业、设备）；从事，进行（某活动）",
     "auxiliary": [
       "haben"
     ],
@@ -35070,7 +35070,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "klappen",
     "frequency": 4.7323,
     "english": "to clap; to fold",
-    "chinese": "成功, 顺利; 砰然出声",
+    "chinese": "顺利进行，行得通（口语）；翻起，折叠",
     "auxiliary": [
       "haben"
     ],
@@ -36268,7 +36268,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "zahlen",
     "frequency": 4.715,
     "english": "to pay; to pay, to atone",
-    "chinese": "付款, 支付",
+    "chinese": "付钱，缴纳（税款、房租等款项）；结账",
     "auxiliary": [
       "haben"
     ],
@@ -37072,7 +37072,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "beschließen",
     "frequency": 4.7044,
     "english": "to conclude, end; to terminate",
-    "chinese": "决定, 决议; 结束",
+    "chinese": "决议，正式作出决定；结束",
     "auxiliary": [
       "haben"
     ],
@@ -37639,7 +37639,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "einnehmen",
     "frequency": 4.6943,
     "english": "to take, take up; to take, to have",
-    "chinese": "吃, 服用(药); 收入",
+    "chinese": "服用（药）；用餐，进食；收入，进账；占据（位置）",
     "auxiliary": [
       "haben"
     ],
@@ -38270,7 +38270,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufstellen",
     "frequency": 4.687,
     "english": "to establish, to postulate; to field",
-    "chinese": "安放, 安置; 推举, 提名",
+    "chinese": "架设，竖立起来；提名，推举；提出（理论）",
     "auxiliary": [
       "haben"
     ],
@@ -38680,7 +38680,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "zwingen",
     "frequency": 4.6823,
     "english": "to force; to compel",
-    "chinese": "强迫",
+    "chinese": "强迫，迫使（用强力）",
     "auxiliary": [
       "haben"
     ],
@@ -39255,7 +39255,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "eingehen",
     "frequency": 4.677,
     "english": "to enter; to go inside",
-    "chinese": "到达; （纺织品）缩水",
+    "chinese": "深入探讨，理会（某话题、建议）；缔结，承担（合同、风险）；（衣物）缩水",
     "auxiliary": [
       "sein"
     ],
@@ -40462,7 +40462,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anrufen",
     "frequency": 4.6631,
     "english": "to call, to ring; to call on",
-    "chinese": "打电话(给 ......)",
+    "chinese": "致电，给某人打电话",
     "auxiliary": [
       "haben"
     ],
@@ -41421,7 +41421,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "schätzen",
     "frequency": 4.6574,
     "english": "to estimate; to guess",
-    "chinese": "评价, 估价, 估计; 尊重",
+    "chinese": "估算，估价（数量、价值）；珍视，看重",
     "auxiliary": [
       "haben"
     ],
@@ -42028,7 +42028,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anerkennen",
     "frequency": 4.6517,
     "english": "to acknowledge, to recognize",
-    "chinese": "承认; 赞许, 重视",
+    "chinese": "承认，正式认可；赞许，肯定",
     "auxiliary": [
       "haben"
     ],
@@ -43045,7 +43045,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ablehnen",
     "frequency": 4.6472,
     "english": "to decline, refuse",
-    "chinese": "拒绝",
+    "chinese": "拒绝，不接受（建议、邀请）",
     "auxiliary": [
       "haben"
     ],
@@ -43258,7 +43258,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anlegen",
     "frequency": 4.6466,
     "english": "to create; to put on, to strap on",
-    "chinese": "安放; 建立",
+    "chinese": "开辟，兴建（花园、道路）；投资；穿上，佩戴",
     "auxiliary": [
       "haben"
     ],
@@ -44275,7 +44275,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "benötigen",
     "frequency": 4.6399,
     "english": "to need, to require",
-    "chinese": "需要",
+    "chinese": "要用到，需用（书面、正式用语）",
     "auxiliary": [
       "haben"
     ],
@@ -44669,7 +44669,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "schützen",
     "frequency": 4.6387,
     "english": "to defend; to protect",
-    "chinese": "保护, 防护",
+    "chinese": "保护，防护（使免受伤害）",
     "auxiliary": [
       "haben"
     ],
@@ -45055,7 +45055,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "durchsetzen",
     "frequency": 4.6339,
     "english": "to establish; to establish oneself",
-    "chinese": "实施",
+    "chinese": "贯彻，使得以实现；取得成功，站住脚",
     "auxiliary": [
       "haben"
     ],
@@ -45473,7 +45473,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "erheben",
     "frequency": 4.63,
     "english": "to raise, lift; to levy, charge",
-    "chinese": "举起, 抬起; 提出",
+    "chinese": "抬起，举起；征收（税费）；起身",
     "auxiliary": [
       "haben"
     ],
@@ -45662,7 +45662,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "gebieten",
     "frequency": 4.6286,
     "english": "to demand; to command",
-    "chinese": "命令, 控制",
+    "chinese": "责成，命令（书面语）；要求，需要",
     "auxiliary": [
       "haben"
     ],
@@ -46631,7 +46631,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "angehen",
     "frequency": 4.622,
     "english": "to concern, regard; to tackle",
-    "chinese": "涉及, 关联",
+    "chinese": "与……相干，关系到；着手对付（问题）",
     "auxiliary": [
       "sein"
     ],
@@ -47435,7 +47435,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "mitnehmen",
     "frequency": 4.6139,
     "english": "to take with; to carry along",
-    "chinese": "带来, 携带(作礼物)带给, 送来",
+    "chinese": "带走，随身带上；捎上（某人）",
     "auxiliary": [
       "haben"
     ],
@@ -49438,7 +49438,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "sinken",
     "frequency": 4.6012,
     "english": "to sink; to submerge",
-    "chinese": "落下, 垂落, 下陷",
+    "chinese": "下沉，沉下去；（价格、温度）下降",
     "auxiliary": [
       "sein"
     ],
@@ -49627,7 +49627,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "stoßen",
     "frequency": 4.5995,
     "english": "to push; to shove",
-    "chinese": "推, 踢撞, 遇到",
+    "chinese": "撞，碰撞；猛推；偶然碰上（某人某事）",
     "auxiliary": [
       "sein",
       "haben"
@@ -50211,7 +50211,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "vorkommen",
     "frequency": 4.5948,
     "english": "to appear, to occur; to occur, to happen",
-    "chinese": "发生, 出现; 显得, 觉得",
+    "chinese": "显得，让人觉得；（在某处）出现，存在",
     "auxiliary": [
       "sein"
     ],
@@ -50605,7 +50605,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "vornehmen",
     "frequency": 4.5937,
     "english": "to undertake; to decide to do, plan to do",
-    "chinese": "从事; 着手做......, 打算......",
+    "chinese": "进行，实施（检查、改动）；打算做，决心做",
     "auxiliary": [
       "haben"
     ],
@@ -52370,7 +52370,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ausführen",
     "frequency": 4.5793,
     "english": "to take for a walk; to take to a restaurant, on a date etc",
-    "chinese": "执行, 实施, 完成; 输出",
+    "chinese": "执行，实施（计划、命令）；带……出去（散步、赴宴）；出口",
     "auxiliary": [
       "haben"
     ],
@@ -54144,7 +54144,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "gestalten",
     "frequency": 4.5551,
     "english": "to form, to shape; to organise, to structure",
-    "chinese": "塑造, 形成; 布局",
+    "chinese": "设计，安排（活动、版面）；塑造，使成形",
     "auxiliary": [
       "haben"
     ],
@@ -55752,7 +55752,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "abnehmen",
     "frequency": 4.5416,
     "english": "to take off; to shave off",
-    "chinese": "取下, 减少, 变瘦",
+    "chinese": "摘下，取下（帽子、眼镜）；减轻体重；减少",
     "auxiliary": [
       "haben"
     ],
@@ -56351,7 +56351,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "mitteilen",
     "frequency": 4.5386,
     "english": "to inform about, to tell; to share with, to impart",
-    "chinese": "通知, 告知",
+    "chinese": "告知，通知（把消息告诉某人）",
     "auxiliary": [
       "haben"
     ],
@@ -57384,7 +57384,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "schenken",
     "frequency": 4.5332,
     "english": "to give as a present, to gift; to spare one",
-    "chinese": "赠送, 给予",
+    "chinese": "赠送，送给（作为礼物）",
     "auxiliary": [
       "haben"
     ],
@@ -58575,7 +58575,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "übergeben",
     "frequency": 4.5199,
     "english": "to hand over; to vomit, to throw up",
-    "chinese": "交给",
+    "chinese": "移交，转交；呕吐",
     "auxiliary": [
       "haben"
     ],
@@ -58764,7 +58764,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "nachweisen",
     "frequency": 4.519,
     "english": "to prove, verify",
-    "chinese": "证明; 说明",
+    "chinese": "证实，拿出证据表明；检测出",
     "auxiliary": [
       "haben"
     ],
@@ -59552,7 +59552,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "auslösen",
     "frequency": 4.515,
     "english": "to trigger, to initiate; to ransom",
-    "chinese": "开动; 引起",
+    "chinese": "触发，引发（反应、警报、情绪）；赎回",
     "auxiliary": [
       "haben"
     ],
@@ -62121,7 +62121,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "belieben",
     "frequency": 4.4978,
     "english": "to please someone; to appeal to someone",
-    "chinese": "愿意, 爱好",
+    "chinese": "乐意，情愿（多用于旧式书面语）",
     "auxiliary": [
       "haben"
     ],
@@ -62318,7 +62318,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "wahrnehmen",
     "frequency": 4.4964,
     "english": "to sense, to perceive; to keep or make it to an appointment",
-    "chinese": "发觉; 感知, 利用",
+    "chinese": "感知，觉察（用感官）；利用（机会），履行（职责）",
     "auxiliary": [
       "haben"
     ],
@@ -62736,7 +62736,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "äußern",
     "frequency": 4.4926,
     "english": "to utter; to say",
-    "chinese": "表明, 说出",
+    "chinese": "发表看法，说出（意见、想法）；（反身）表态",
     "auxiliary": [
       "haben"
     ],
@@ -63532,7 +63532,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "festlegen",
     "frequency": 4.4879,
     "english": "to set, to determine; to commit oneself to…",
-    "chinese": "规定, 确定",
+    "chinese": "敲定，定下（日期、条件）；表态，作出承诺",
     "auxiliary": [
       "haben"
     ],
@@ -66535,7 +66535,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bereiten",
     "frequency": 4.4583,
     "english": "to prepare, to make; to give, to cause",
-    "chinese": "给予, 带来; 准备好..., 做好(饭菜)",
+    "chinese": "使产生，带来（快乐、麻烦）；做好，准备（饭菜）",
     "auxiliary": [
       "haben"
     ],
@@ -68924,7 +68924,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "mitbringen",
     "frequency": 4.4383,
     "english": "to bring, to accompany; to bring",
-    "chinese": "带来, 送来",
+    "chinese": "带来，捎来（礼物等）",
     "auxiliary": [
       "haben"
     ],
@@ -69531,7 +69531,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "erwarten",
     "frequency": 4.431,
     "english": "to expect, to consider likely; to await, to expect",
-    "chinese": "等候, 等待; 期待, 期望",
+    "chinese": "预料，期待，指望（某事会发生）；等着（某人到来）",
     "auxiliary": [
       "haben"
     ],
@@ -70926,7 +70926,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "auflösen",
     "frequency": 4.4147,
     "english": "to break up, dissipate; to dissolve",
-    "chinese": "解开, 解散",
+    "chinese": "溶解，使溶化；解散，撤销；解开（谜题）",
     "auxiliary": [
       "haben"
     ],
@@ -71139,7 +71139,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "zustimmen",
     "frequency": 4.4143,
     "english": "to agree; to agree with, to be in accord with",
-    "chinese": "同意, 赞成",
+    "chinese": "赞成，表示同意",
     "auxiliary": [
       "haben"
     ],
@@ -71959,7 +71959,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "hoffen",
     "frequency": 4.413,
     "english": "to hope",
-    "chinese": "希望, 盼望, 指望",
+    "chinese": "希望，盼望（事情能实现）",
     "auxiliary": [
       "haben"
     ],
@@ -72542,7 +72542,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "blicken",
     "frequency": 4.4092,
     "english": "to look; to get, to understand",
-    "chinese": "看, 注意",
+    "chinese": "望，看一眼；投去目光",
     "auxiliary": [
       "haben"
     ],
@@ -75120,7 +75120,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "gestehen",
     "frequency": 4.3915,
     "english": "to confess, to admit; to make known",
-    "chinese": "承认, 供认",
+    "chinese": "招认，坦白交代（罪行）",
     "auxiliary": [
       "haben"
     ],
@@ -75309,7 +75309,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "auswählen",
     "frequency": 4.3884,
     "english": "to choose, to select",
-    "chinese": "选择, 挑选",
+    "chinese": "挑选，选出（从若干当中选中）",
     "auxiliary": [
       "haben"
     ],
@@ -75522,7 +75522,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "erwerben",
     "frequency": 4.3874,
     "english": "to earn, gain; to acquire, to succeed to",
-    "chinese": "获得, 取得",
+    "chinese": "购入，置办（房产、股份）；学得，掌握（知识、技能、声誉）",
     "auxiliary": [
       "haben"
     ],
@@ -76507,7 +76507,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ausüben",
     "frequency": 4.3832,
     "english": "to practice / practise, to exert",
-    "chinese": "从事; 行使, 执行",
+    "chinese": "从事（职业）；行使，施加（影响、压力）",
     "auxiliary": [
       "haben"
     ],
@@ -76720,7 +76720,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufpassen",
     "frequency": 4.3813,
     "english": "to watch out, to be alert; to look after, to take care of",
-    "chinese": "注意, 当心; 照料",
+    "chinese": "当心，留神；照看，看管",
     "auxiliary": [
       "haben"
     ],
@@ -76933,7 +76933,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "erweisen",
     "frequency": 4.381,
     "english": "to prove, to show; to accord, to do",
-    "chinese": "证实; 提供",
+    "chinese": "显示出，表明；施予（恩惠、敬意）",
     "auxiliary": [
       "haben"
     ],
@@ -77122,7 +77122,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "empfinden",
     "frequency": 4.3808,
     "english": "to feel",
-    "chinese": "感觉, 感受, 感到",
+    "chinese": "感受，体会（内心的情感）；把…看作，觉得是",
     "auxiliary": [
       "haben"
     ],
@@ -77729,7 +77729,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "verwenden",
     "frequency": 4.3765,
     "english": "to use, to employ; to make expenses applied on a material object",
-    "chinese": "使用",
+    "chinese": "使用，把……用于某种用途",
     "auxiliary": [
       "haben"
     ],
@@ -79109,7 +79109,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "akzeptieren",
     "frequency": 4.3633,
     "english": "to accept, to approve",
-    "chinese": "同意; 承兑",
+    "chinese": "认可，予以接受",
     "auxiliary": [
       "haben"
     ],
@@ -79519,7 +79519,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "klären",
     "frequency": 4.3623,
     "english": "to clarify, to clear up; to clarify, to remove",
-    "chinese": "澄清",
+    "chinese": "弄清楚，把问题搞明白；净化（水）",
     "auxiliary": [
       "haben"
     ],
@@ -80512,7 +80512,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "verwirren",
     "frequency": 4.3558,
     "english": "to confuse",
-    "chinese": "使混乱, 使迷惑",
+    "chinese": "使困惑，把……弄糊涂；扰乱",
     "auxiliary": [
       "haben"
     ],
@@ -85756,7 +85756,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "angehören",
     "frequency": 4.3244,
     "english": "to belong to",
-    "chinese": "属于",
+    "chinese": "隶属于，是…的成员（团体、组织）",
     "auxiliary": [
       "haben"
     ],
@@ -85969,7 +85969,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "austauschen",
     "frequency": 4.3233,
     "english": "to exchange; to replace",
-    "chinese": "交换, 交流; 更 换, 调换",
+    "chinese": "交流（意见、经验）；更换，替换（零件）",
     "auxiliary": [
       "haben"
     ],
@@ -87995,7 +87995,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "umbringen",
     "frequency": 4.3149,
     "english": "to kill, to murder; to commit suicide",
-    "chinese": "杀死, 杀害",
+    "chinese": "杀害，害死；自杀",
     "auxiliary": [
       "haben"
     ],
@@ -88610,7 +88610,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bedenken",
     "frequency": 4.3073,
     "english": "to consider, bethink; to keep in mind",
-    "chinese": "考虑; 怀疑",
+    "chinese": "顾及，考虑到（某个因素）",
     "auxiliary": [
       "haben"
     ],
@@ -89201,7 +89201,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "entschließen",
     "frequency": 4.3043,
     "english": "to decide",
-    "chinese": "决定, 决心",
+    "chinese": "下决心，拿定主意",
     "auxiliary": [
       "haben"
     ],
@@ -89587,7 +89587,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "absetzen",
     "frequency": 4.3038,
     "english": "to set down; to drop off",
-    "chinese": "取下, 让......下车; 使沉淀",
+    "chinese": "卸下，把……放到地上；让……下车；撤职；使沉淀",
     "auxiliary": [
       "haben"
     ],
@@ -89800,7 +89800,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "begeben",
     "frequency": 4.3037,
     "english": "to go; to make one's way",
-    "chinese": "开始, 着手",
+    "chinese": "动身前往，去往（某处）",
     "auxiliary": [
       "haben"
     ],
@@ -89989,7 +89989,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "schildern",
     "frequency": 4.3031,
     "english": "to depict, to narrate; to be in full feather and have a characteristic spot",
-    "chinese": "描述, 描绘",
+    "chinese": "描述，详细叙述（经过、情景）",
     "auxiliary": [
       "haben"
     ],
@@ -91376,7 +91376,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "sicherstellen",
     "frequency": 4.2937,
     "english": "to seize; to ensure, to make sure",
-    "chinese": "使安全; 保障",
+    "chinese": "确保，保证做到；（官方）扣押，查封",
     "auxiliary": [
       "haben"
     ],
@@ -92393,7 +92393,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "entschuldigen",
     "frequency": 4.2874,
     "english": "to excuse someone; to offer excuse for someone’s absence",
-    "chinese": "原谅, 向...道歉",
+    "chinese": "道歉，赔不是（反身用法）；请…原谅，见谅；替…告假，为…开脱",
     "auxiliary": [
       "haben"
     ],
@@ -94592,7 +94592,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ablegen",
     "frequency": 4.2666,
     "english": "to take off; to stop wearing",
-    "chinese": "放下; 脱衣(帽)",
+    "chinese": "脱下（外衣、帽子）；归档存放；参加（考试）",
     "auxiliary": [
       "haben"
     ],
@@ -95396,7 +95396,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "drängen",
     "frequency": 4.2619,
     "english": "to push, press; to press, pressure",
-    "chinese": "推, 挤; 催促, 催逼",
+    "chinese": "催促，逼迫；（人群）拥挤，往前挤",
     "auxiliary": [
       "haben"
     ],
@@ -96381,7 +96381,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "zuordnen",
     "frequency": 4.2592,
     "english": "to categorize, to classify; to assign, to allocate",
-    "chinese": "列入, 划归, 附加于",
+    "chinese": "归类，把…归入（某一类）；分配给（某人）",
     "auxiliary": [
       "haben"
     ],
@@ -98211,7 +98211,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "deuten",
     "frequency": 4.2453,
     "english": "to interpret, to understand; to point, to indicate",
-    "chinese": "解释; 预报",
+    "chinese": "解读，阐释；指向，预示",
     "auxiliary": [
       "haben"
     ],
@@ -98408,7 +98408,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufklären",
     "frequency": 4.2451,
     "english": "to clear up, explain; to enlighten",
-    "chinese": "澄清, 说明",
+    "chinese": "查清，破（案）；启蒙，讲明真相",
     "auxiliary": [
       "haben"
     ],
@@ -99819,7 +99819,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "beibringen",
     "frequency": 4.2385,
     "english": "to teach; to break carefully to",
-    "chinese": "教, 传授",
+    "chinese": "教会，传授（某项本领）；委婉告知（坏消息）",
     "auxiliary": [
       "haben"
     ],
@@ -100812,7 +100812,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "rennen",
     "frequency": 4.2358,
     "english": "to run; to race",
-    "chinese": "跑, 奔跑",
+    "chinese": "奔跑，快跑",
     "auxiliary": [
       "sein"
     ],
@@ -101829,7 +101829,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "benutzen",
     "frequency": 4.2342,
     "english": "to make use",
-    "chinese": "使用, 利用",
+    "chinese": "利用，使用（工具、设施）",
     "auxiliary": [
       "haben"
     ],
@@ -102420,7 +102420,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "lehren",
     "frequency": 4.2258,
     "english": "to teach; to be a teacher",
-    "chinese": "教, 教导; 说明",
+    "chinese": "讲授，教（课程、学科）；当教师",
     "auxiliary": [
       "haben"
     ],
@@ -102617,7 +102617,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "eintreffen",
     "frequency": 4.2256,
     "english": "to arrive; to come true",
-    "chinese": "到达",
+    "chinese": "抵达，运到（人或货物）；（预言、估计）应验",
     "auxiliary": [
       "sein"
     ],
@@ -105612,7 +105612,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufmachen",
     "frequency": 4.2128,
     "english": "to open; to open for business",
-    "chinese": "打开; 开设",
+    "chinese": "开启，打开（口语）；开设，开张",
     "auxiliary": [
       "haben"
     ],
@@ -106219,7 +106219,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "begreifen",
     "frequency": 4.2104,
     "english": "to grasp fully; to comprehend",
-    "chinese": "理解, 领悟",
+    "chinese": "领会，想通（弄懂道理）",
     "auxiliary": [
       "haben"
     ],
@@ -106614,7 +106614,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "absteigen",
     "frequency": 4.2062,
     "english": "to dismount; to arrive in order to stay for one or more nights",
-    "chinese": "下(车, 马)",
+    "chinese": "下马，下车（从马、自行车上下来）；投宿，下榻",
     "auxiliary": [
       "sein"
     ],
@@ -107016,7 +107016,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "abbauen",
     "frequency": 4.2042,
     "english": "to dismantle, disassemble; to mine",
-    "chinese": "拆卸; 降低",
+    "chinese": "拆除，撤下；削减（人员、成本）；开采（矿产）",
     "auxiliary": [
       "haben"
     ],
@@ -107426,7 +107426,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "auffordern",
     "frequency": 4.1981,
     "english": "to ask, request; to invite",
-    "chinese": "要求, 请求",
+    "chinese": "敦促，请（某人做某事）；邀（人跳舞）",
     "auxiliary": [
       "haben"
     ],
@@ -108041,7 +108041,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "befehlen",
     "frequency": 4.1945,
     "english": "to command; to order",
-    "chinese": "命令, 吩咐",
+    "chinese": "命令，吩咐（下达指令）",
     "auxiliary": [
       "haben"
     ],
@@ -110208,7 +110208,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufkommen",
     "frequency": 4.1746,
     "english": "to arise, to appear; to come up",
-    "chinese": "起立; 病愈, 发生",
+    "chinese": "兴起，产生（风、疑虑、风潮）；承担（费用）",
     "auxiliary": [
       "sein"
     ],
@@ -110413,7 +110413,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "beachten",
     "frequency": 4.1738,
     "english": "to note, notice; to mind, heed",
-    "chinese": "注意, 重视",
+    "chinese": "留意，顾及；遵守（规定）",
     "auxiliary": [
       "haben"
     ],
@@ -111005,7 +111005,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "achten",
     "frequency": 4.1703,
     "english": "to care about, to pay attention to; to keep an eye on",
-    "chinese": "注意, 照看",
+    "chinese": "看重，重视；留心，照看",
     "auxiliary": [
       "haben"
     ],
@@ -113007,7 +113007,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "drucken",
     "frequency": 4.1631,
     "english": "to print",
-    "chinese": "打印, 印制, 盖了章",
+    "chinese": "印刷，印制（书报、图案）",
     "auxiliary": [
       "haben"
     ],
@@ -113204,7 +113204,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "nötigen",
     "frequency": 4.1619,
     "english": "to coerce; to oblige, railroad",
-    "chinese": "强迫; 力劝",
+    "chinese": "胁迫，逼迫；再三劝让",
     "auxiliary": [
       "haben"
     ],
@@ -114024,7 +114024,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ausweisen",
     "frequency": 4.1576,
     "english": "to expel, to banish; to designate, to demarcate",
-    "chinese": "驱逐; 表明",
+    "chinese": "驱逐出境；出示证件表明身份；标明，划定",
     "auxiliary": [
       "haben"
     ],
@@ -115270,7 +115270,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "scheiden",
     "frequency": 4.1531,
     "english": "to separate; to leave one another",
-    "chinese": "离开, 分离, 离婚",
+    "chinese": "分开，使分离；离婚；分别",
     "auxiliary": [
       "sein",
       "haben"
@@ -115854,7 +115854,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "auseinandersetzen",
     "frequency": 4.1472,
     "english": "to deal with, to occupy oneself with; to explain, to make understandable",
-    "chinese": "解释",
+    "chinese": "钻研，深入探讨（某问题）；向某人详细阐明",
     "auxiliary": [
       "haben"
     ],
@@ -116863,7 +116863,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ergreifen",
     "frequency": 4.1399,
     "english": "to seize, capture; to take up",
-    "chinese": "握住, 抓住,; 感动",
+    "chinese": "采取（措施）；一把抓住，抓获；使深受感动",
     "auxiliary": [
       "haben"
     ],
@@ -117257,7 +117257,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bestätigen",
     "frequency": 4.1379,
     "english": "to confirm, to corroborate",
-    "chinese": "证实, 证明, 确认",
+    "chinese": "确认，证实（消息、收到）",
     "auxiliary": [
       "haben"
     ],
@@ -120876,7 +120876,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aussteigen",
     "frequency": 4.1164,
     "english": "to exit, get off; to phase out, to back out",
-    "chinese": "下(车 、船等)",
+    "chinese": "下车，下船（从交通工具里出来）；退出，抽身",
     "auxiliary": [
       "sein"
     ],
@@ -122729,7 +122729,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "einlegen",
     "frequency": 4.1089,
     "english": "to insert; to put in",
-    "chinese": "插入, 存入; 提出",
+    "chinese": "装入，放进（光盘、胶卷）；腌渍；提出（申诉）",
     "auxiliary": [
       "haben"
     ],
@@ -123951,7 +123951,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "austragen",
     "frequency": 4.105,
     "english": "to deliver sth; to take someone or something off a list",
-    "chinese": "解决; 分送",
+    "chinese": "投送，分送（报纸、邮件）；举办（比赛）；从名单上划掉",
     "auxiliary": [
       "haben"
     ],
@@ -124550,7 +124550,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "vertreiben",
     "frequency": 4.1037,
     "english": "to force to leave, to drive away; to pass",
-    "chinese": "驱逐; 销售",
+    "chinese": "赶走，撵走；销售，经销；消磨（时间）",
     "auxiliary": [
       "haben"
     ],
@@ -124739,7 +124739,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bewerben",
     "frequency": 4.1029,
     "english": "to apply; to try to win favour/favor",
-    "chinese": "谋求, 申请",
+    "chinese": "应聘，求职应征（谋求职位）",
     "auxiliary": [
       "haben"
     ],
@@ -125125,7 +125125,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "losgehen",
     "frequency": 4.102,
     "english": "to leave; to start",
-    "chinese": "动身, 出发; 开始",
+    "chinese": "出发，动身；（活动）开始",
     "auxiliary": [
       "sein"
     ],
@@ -126765,7 +126765,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "abbilden",
     "frequency": 4.0953,
     "english": "to portray, to depict; to map, to outline",
-    "chinese": "塑造",
+    "chinese": "画出，绘出（用图像再现）；映射",
     "auxiliary": [
       "haben"
     ],
@@ -128594,7 +128594,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "weigern",
     "frequency": 4.0864,
     "english": "to refuse",
-    "chinese": "拒绝(做......)",
+    "chinese": "不肯，拒不（做某事）",
     "auxiliary": [
       "haben"
     ],
@@ -128791,7 +128791,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufgehen",
     "frequency": 4.0851,
     "english": "to open, come undone; to rise, expand",
-    "chinese": "上升, 打开",
+    "chinese": "自行打开，松开（门、结）；升起（太阳）；（面团）发起来",
     "auxiliary": [
       "sein"
     ],
@@ -130005,7 +130005,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ablösen",
     "frequency": 4.0788,
     "english": "to detach, to remove; to supersede, to displace",
-    "chinese": "解开, 松开; 接替, 换班",
+    "chinese": "揭下，剥离；接替，换班",
     "auxiliary": [
       "haben"
     ],
@@ -131195,7 +131195,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bezahlen",
     "frequency": 4.0752,
     "english": "to pay, to balance a bill; to pay a sum of money",
-    "chinese": "付款, 支付",
+    "chinese": "付清，支付（账单、商品、报酬）",
     "auxiliary": [
       "haben"
     ],
@@ -131582,7 +131582,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "einbinden",
     "frequency": 4.0736,
     "english": "to bind something; to cover",
-    "chinese": "覆盖, 铺",
+    "chinese": "装订，包上书皮；把…编入，让…参与其中",
     "auxiliary": [
       "haben"
     ],
@@ -132189,7 +132189,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bewahren",
     "frequency": 4.0709,
     "english": "to keep, to preserve",
-    "chinese": "保护, 防止...受损失; 保持",
+    "chinese": "保持，维持（镇定、秘密）；使免遭损失",
     "auxiliary": [
       "haben"
     ],
@@ -132386,7 +132386,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "umwandeln",
     "frequency": 4.0701,
     "english": "to convert, change; to transform, transmute",
-    "chinese": "改变, 改造; 转变, 转换",
+    "chinese": "转换，改造（使变成另一种形态）",
     "auxiliary": [
       "haben"
     ],
@@ -132796,7 +132796,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufteilen",
     "frequency": 4.0677,
     "english": "to divide, to divide up; to carve up",
-    "chinese": "分配, 分割, 分开",
+    "chinese": "分割，把……分成几份；分摊",
     "auxiliary": [
       "haben"
     ],
@@ -135240,7 +135240,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bezweifeln",
     "frequency": 4.0595,
     "english": "to doubt, to question",
-    "chinese": "怀疑",
+    "chinese": "质疑，不相信（某事属实）",
     "auxiliary": [
       "haben"
     ],
@@ -137684,7 +137684,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufgreifen",
     "frequency": 4.0481,
     "english": "to capture, apprehend; to continue, to take up",
-    "chinese": "抓住, 捡起; 着手 研究",
+    "chinese": "采纳，接着谈（话题、建议）；抓获（逃犯）",
     "auxiliary": [
       "haben"
     ],
@@ -138299,7 +138299,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufsteigen",
     "frequency": 4.0453,
     "english": "to get on, to mount; to advance",
-    "chinese": "上升; 乘上交通工具",
+    "chinese": "上升，攀升；骑上（车、马）；晋级",
     "auxiliary": [
       "sein"
     ],
@@ -138717,7 +138717,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "angucken",
     "frequency": 4.0426,
     "english": "to watch, look at; to inspect, diagnose",
-    "chinese": "看, 注视",
+    "chinese": "看看，瞧（口语，仔细看某物）",
     "auxiliary": [
       "haben"
     ],
@@ -140333,7 +140333,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "verdächtigen",
     "frequency": 4.0393,
     "english": "to suspect",
-    "chinese": "怀疑",
+    "chinese": "怀疑某人（作案、有罪）；把嫌疑加在某人身上",
     "auxiliary": [
       "haben"
     ],
@@ -140940,7 +140940,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "nachgehen",
     "frequency": 4.0351,
     "english": "to follow, to pursue; to run slow",
-    "chinese": "跟随; 探究",
+    "chinese": "追查，探究（某件事）；从事（某项工作）；（钟表）走慢",
     "auxiliary": [
       "sein"
     ],
@@ -141555,7 +141555,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "verschaffen",
     "frequency": 4.0325,
     "english": "to provide, supply",
-    "chinese": "取得, 获得",
+    "chinese": "弄来，替某人搞到（工作、证据）",
     "auxiliary": [
       "haben"
     ],
@@ -143959,7 +143959,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "hinnehmen",
     "frequency": 4.0212,
     "english": "to accept; to take",
-    "chinese": "接受; 忍受",
+    "chinese": "容忍，默默承受（不愉快的事）",
     "auxiliary": [
       "haben"
     ],
@@ -144550,7 +144550,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "spenden",
     "frequency": 4.0192,
     "english": "to donate, to give as charity; To cause the action implied by a noun to take",
-    "chinese": "捐助; 捐献",
+    "chinese": "捐赠，捐献（钱物、血液）；给予（掌声、安慰）",
     "auxiliary": [
       "haben"
     ],
@@ -145354,7 +145354,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anstreben",
     "frequency": 4.0174,
     "english": "to strive, to seek",
-    "chinese": "谋求, 力图",
+    "chinese": "力求，追求（目标）",
     "auxiliary": [
       "haben"
     ],
@@ -146379,7 +146379,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "glänzen",
     "frequency": 4.0128,
     "english": "to shine, gleam; to be good, to stand out",
-    "chinese": "发光, 闪光",
+    "chinese": "闪光，有光泽（表面反射光）；表现出色，出风头",
     "auxiliary": [
       "haben"
     ],
@@ -147191,7 +147191,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "werten",
     "frequency": 4.0079,
     "english": "to rate; to grade",
-    "chinese": "评价",
+    "chinese": "评分，评定（成绩、表现）",
     "auxiliary": [
       "haben"
     ],
@@ -147585,7 +147585,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anfertigen",
     "frequency": 4.0071,
     "english": "to manufacture, to make",
-    "chinese": "生产, 制作",
+    "chinese": "做出，制成（按要求单件加工）",
     "auxiliary": [
       "haben"
     ],
@@ -148208,7 +148208,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "täuschen",
     "frequency": 4.0041,
     "english": "to deceive; to be wrong, to be mistaken",
-    "chinese": "欺骗; 弄错",
+    "chinese": "蒙骗，使产生错觉；看错，弄错",
     "auxiliary": [
       "haben"
     ],
@@ -149398,7 +149398,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "aufbrechen",
     "frequency": 3.999,
     "english": "to break open, through; to be broken through",
-    "chinese": "动身",
+    "chinese": "动身启程，出发；撬开，破开（门、锁）",
     "auxiliary": [
       "sein",
       "haben"
@@ -150826,7 +150826,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "danken",
     "frequency": 3.993,
     "english": "to thank",
-    "chinese": "感谢, 道谢",
+    "chinese": "感谢，道谢",
     "auxiliary": [
       "haben"
     ],
@@ -151023,7 +151023,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "vollziehen",
     "frequency": 3.9926,
     "english": "to put into practice, to implement; to consummate",
-    "chinese": "执行, 实施",
+    "chinese": "履行，实行（仪式、行为）；发生，进行",
     "auxiliary": [
       "haben"
     ],
@@ -152008,7 +152008,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "flüchten",
     "frequency": 3.9869,
     "english": "to flee; to flee, to seek refuge or shelter",
-    "chinese": "逃跑, 逃走",
+    "chinese": "逃亡，避难（逃到安全的地方）",
     "auxiliary": [
       "haben"
     ],
@@ -154790,7 +154790,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "abspielen",
     "frequency": 3.9743,
     "english": "to play; to replay",
-    "chinese": "发生, 进行",
+    "chinese": "回放，播放（录音、影片）；（反身）发生，上演",
     "auxiliary": [
       "haben"
     ],
@@ -155003,7 +155003,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "verändern",
     "frequency": 3.9733,
     "english": "to alter, to change; to change",
-    "chinese": "改变, 变化",
+    "chinese": "改变，使变样；发生变化",
     "auxiliary": [
       "haben"
     ],
@@ -156209,7 +156209,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "beobachten",
     "frequency": 3.968,
     "english": "to watch, to observe",
-    "chinese": "观察(活动或过程)",
+    "chinese": "观察，留心注视（活动或过程）",
     "auxiliary": [
       "haben"
     ],
@@ -158219,7 +158219,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "verfehlen",
     "frequency": 3.9632,
     "english": "to miss, to meet or hit not",
-    "chinese": "错过; 耽误",
+    "chinese": "没打中，没击中；未达到（目标）；走岔，没碰上（人）",
     "auxiliary": [
       "haben"
     ],
@@ -158416,7 +158416,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "wiedergeben",
     "frequency": 3.9623,
     "english": "to give back, to return; to render, to echo",
-    "chinese": "归还, 表达, 复述",
+    "chinese": "复述，转述；再现，表达（感情、原貌）；归还",
     "auxiliary": [
       "haben"
     ],
@@ -158999,7 +158999,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "auffinden",
     "frequency": 3.9597,
     "english": "to find, to locate",
-    "chinese": "找到, 发现",
+    "chinese": "寻获，查找到（下落不明的人或物）",
     "auxiliary": [
       "haben"
     ],
@@ -160442,7 +160442,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "betrachten",
     "frequency": 3.9553,
     "english": "to look at, to consider; to regard, to consider",
-    "chinese": "观察; 认为, 看作",
+    "chinese": "端详，仔细打量；看作，认为",
     "auxiliary": [
       "haben"
     ],
@@ -161648,7 +161648,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anschreiben",
     "frequency": 3.9506,
     "english": "to write to; to write on/up",
-    "chinese": "向上, 到(较高的地方",
+    "chinese": "写信给（某人）；写在（黑板上）；记账，赊账",
     "auxiliary": [
       "haben"
     ],
@@ -162042,7 +162042,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "erbringen",
     "frequency": 3.9498,
     "english": "to render, yield",
-    "chinese": "取得; 带来, 提供",
+    "chinese": "取得，做出（成绩、证明）；带来（收益）",
     "auxiliary": [
       "haben"
     ],
@@ -163445,7 +163445,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "ansteigen",
     "frequency": 3.9464,
     "english": "to rise, increase",
-    "chinese": "上升, 增加",
+    "chinese": "增长，上涨（数量、价格）；（地势）升高",
     "auxiliary": [
       "sein"
     ],
@@ -163650,7 +163650,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "auskommen",
     "frequency": 3.9462,
     "english": "to get along; to be able to get by",
-    "chinese": "(用 ......) 足够",
+    "chinese": "（靠……）勉强过活，将就；与……相处得来",
     "auxiliary": [
       "sein"
     ],
@@ -164249,7 +164249,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "auswerten",
     "frequency": 3.9411,
     "english": "to evaluate, assess; to analyze",
-    "chinese": "充分利用; 评价",
+    "chinese": "分析，评估（数据、结果）",
     "auxiliary": [
       "haben"
     ],
@@ -165283,7 +165283,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "präsentieren",
     "frequency": 3.9388,
     "english": "to present, to showcase; to introduce",
-    "chinese": "赠送; 提出",
+    "chinese": "呈现，展现（成果、产品）；介绍推出",
     "auxiliary": [
       "haben"
     ],
@@ -166710,7 +166710,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "durchbrechen",
     "frequency": 3.9332,
     "english": "to break something in two; to break in two",
-    "chinese": "折断, 打通",
+    "chinese": "折断，弄成两截；突破，冲破",
     "auxiliary": [
       "sein"
     ],
@@ -167112,7 +167112,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "passieren",
     "frequency": 3.9322,
     "english": "to happen; to move beyond",
-    "chinese": "发生; 经过, 通过",
+    "chinese": "经过，通过（某处）；发生，出事",
     "auxiliary": [
       "sein"
     ],
@@ -167309,7 +167309,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "bedanken",
     "frequency": 3.9308,
     "english": "to thank, to express thanks; to thank for",
-    "chinese": "感谢",
+    "chinese": "道谢，向某人表示谢意（反身用法）",
     "auxiliary": [
       "haben"
     ],
@@ -168696,7 +168696,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anheben",
     "frequency": 3.9268,
     "english": "to lift up; to raise, to increase",
-    "chinese": "举起",
+    "chinese": "上调，提高（价格、工资）；稍稍抬起",
     "auxiliary": [
       "haben"
     ],
@@ -169106,7 +169106,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "beitreten",
     "frequency": 3.9262,
     "english": "to join",
-    "chinese": "参加; 同意",
+    "chinese": "加入（组织、政党、协议）；赞同（某观点）",
     "auxiliary": [
       "sein"
     ],
@@ -170903,7 +170903,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "raten",
     "frequency": 3.9197,
     "english": "to advise; to recommend",
-    "chinese": "建议, 劝告",
+    "chinese": "劝告，出主意；猜，猜测",
     "auxiliary": [
       "haben"
     ],
@@ -171699,7 +171699,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "wandeln",
     "frequency": 3.9173,
     "english": "to wander, to stroll; to walk",
-    "chinese": "改变",
+    "chinese": "转变，变化（多用反身）；漫步，徐行（书面语）",
     "auxiliary": [
       "haben"
     ],
@@ -172693,7 +172693,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "betrügen",
     "frequency": 3.9124,
     "english": "to deceive; to defraud",
-    "chinese": "欺骗",
+    "chinese": "欺骗，诈骗（骗取钱财）；对……不忠",
     "auxiliary": [
       "haben"
     ],
@@ -173859,7 +173859,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "abweisen",
     "frequency": 3.9046,
     "english": "to dismiss; to repel an attack",
-    "chinese": "拒绝, 谢绝; 击退",
+    "chinese": "回绝，把……拒之门外；击退",
     "auxiliary": [
       "haben"
     ],
@@ -174458,7 +174458,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "agieren",
     "frequency": 3.9037,
     "english": "to act, to perform a task; to act, to behave",
-    "chinese": "使混乱, 使激动, 行为",
+    "chinese": "行事，采取行动；扮演，表演",
     "auxiliary": [
       "haben"
     ],
@@ -174868,7 +174868,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "absichern",
     "frequency": 3.9016,
     "english": "to secure, safeguard; to hedge",
-    "chinese": "使安全, 使保险, 使得 到保障",
+    "chinese": "防范风险，使…有保障；（给自己）留后路",
     "auxiliary": [
       "haben"
     ],
@@ -176082,7 +176082,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "hinlegen",
     "frequency": 3.8993,
     "english": "to put down, lay down; to lie down",
-    "chinese": "放下, 搁下; 支付",
+    "chinese": "搁下，平放（把东西放到某处）；躺下休息",
     "auxiliary": [
       "haben"
     ],
@@ -176484,7 +176484,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "zweifeln",
     "frequency": 3.8987,
     "english": "to doubt, to be doubtful",
-    "chinese": "怀疑",
+    "chinese": "怀疑，感到疑惑",
     "auxiliary": [
       "haben"
     ],
@@ -178049,7 +178049,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "stiften",
     "frequency": 3.8905,
     "english": "to found, to create; to sponsor, to fund",
-    "chinese": "捐助, 创办, 促成",
+    "chinese": "创办，捐资设立（基金、奖项）；引起，制造（混乱）",
     "auxiliary": [
       "haben"
     ],
@@ -178853,7 +178853,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "nachholen",
     "frequency": 3.8894,
     "english": "to do at a later time than planned; to get, fetch at another time or one more",
-    "chinese": "赶上; 补做, 补上",
+    "chinese": "补做，补上（错过的事、落下的功课）",
     "auxiliary": [
       "haben"
     ],
@@ -179066,7 +179066,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "zuweisen",
     "frequency": 3.8887,
     "english": "to assign; to allocate, to appropriate",
-    "chinese": "分配",
+    "chinese": "分派，指派（给某人分配任务、名额）",
     "auxiliary": [
       "haben"
     ],
@@ -179854,7 +179854,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "vorantreiben",
     "frequency": 3.8868,
     "english": "to advance, to promote",
-    "chinese": "推",
+    "chinese": "推进，加快推动（工作、进程）",
     "auxiliary": [
       "haben"
     ],
@@ -183219,7 +183219,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "weiterführen",
     "frequency": 3.8793,
     "english": "to continue",
-    "chinese": "继续, 连续",
+    "chinese": "接着往下做，继续办下去",
     "auxiliary": [
       "haben"
     ],
@@ -183629,7 +183629,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "zubereiten",
     "frequency": 3.877,
     "english": "to prepare",
-    "chinese": "准备, 调制",
+    "chinese": "烹制，调制（饭菜、饮料）",
     "auxiliary": [
       "haben"
     ],
@@ -185442,7 +185442,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "übereinstimmen",
     "frequency": 3.8647,
     "english": "to coincide, match; to concur, agree",
-    "chinese": "符合, 相一致, 协调",
+    "chinese": "意见一致，取得共识；（数据、说法）相吻合",
     "auxiliary": [
       "haben"
     ],
@@ -185860,7 +185860,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "prägen",
     "frequency": 3.8594,
     "english": "to mint; to shape",
-    "chinese": "打印, 铸造, 给...打上烙印",
+    "chinese": "铸造，压印（硬币、花纹）；塑造，深刻影响",
     "auxiliary": [
       "haben"
     ],
@@ -187649,7 +187649,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anmachen",
     "frequency": 3.8552,
     "english": "to switch on, to turn on; to light, to start",
-    "chinese": "点燃; 开(灯、收音 机等)",
+    "chinese": "开灯，打开（灯、电器等，口语说法）；调拌（沙拉）",
     "auxiliary": [
       "haben"
     ],
@@ -187862,7 +187862,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "überreichen",
     "frequency": 3.8544,
     "english": "to hand something over, to present",
-    "chinese": "递交, 呈献, 授予",
+    "chinese": "颁发，当面呈交（奖品、证书）；呈献",
     "auxiliary": [
       "haben"
     ],
@@ -188059,7 +188059,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "zugreifen",
     "frequency": 3.8543,
     "english": "to grab, to seize; to serve oneself, to help oneself",
-    "chinese": "拿, 取",
+    "chinese": "伸手去抓，抓住；（吃饭时）自己取用；存取（数据）",
     "auxiliary": [
       "haben"
     ],
@@ -188650,7 +188650,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "darlegen",
     "frequency": 3.8508,
     "english": "to present facts; to explain",
-    "chinese": "解释, 说明, 陈述",
+    "chinese": "阐述，陈述（观点、理由）",
     "auxiliary": [
       "haben"
     ],
@@ -188863,7 +188863,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "zutrauen",
     "frequency": 3.8502,
     "english": "to think capable; not to put it past to do",
-    "chinese": "信任",
+    "chinese": "认为某人能做到，觉得某人干得出（某事）",
     "auxiliary": [
       "haben"
     ],
@@ -194878,7 +194878,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "festsetzen",
     "frequency": 3.8334,
     "english": "to set; to arrest, to put in prison",
-    "chinese": "规定, 约定; 拘捕",
+    "chinese": "核定，定出（价格、期限）；扣留，关押（某人）",
     "auxiliary": [
       "haben"
     ],
@@ -195288,7 +195288,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "anbringen",
     "frequency": 3.8319,
     "english": "to add; to fix, to affix",
-    "chinese": "带来; 按排",
+    "chinese": "安装，固定上（把某物装在某处）",
     "auxiliary": [
       "haben"
     ],
@@ -195903,7 +195903,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "kneipen",
     "frequency": 3.8299,
     "english": "to booze, to treat oneself in the pub",
-    "chinese": "<俗>豪饮",
+    "chinese": "豪饮，泡在酒馆里喝酒",
     "auxiliary": [
       "haben"
     ],
@@ -196691,7 +196691,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "telefonieren",
     "frequency": 3.8269,
     "english": "to have a telephone call",
-    "chinese": "打电话",
+    "chinese": "打电话，通电话",
     "auxiliary": [
       "haben"
     ],
@@ -198339,7 +198339,7 @@ const GERMAN_CONJUGATION_DATA = [
     "infinitive": "auspacken",
     "frequency": 3.8222,
     "english": "to unbox, to unpack; to come clean, to tell all",
-    "chinese": "打开(包裹等); 坦白地说出",
+    "chinese": "拆开包装，取出（包裹里的东西）；和盘托出，坦白",
     "auxiliary": [
       "haben"
     ],
