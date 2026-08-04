@@ -229,7 +229,7 @@
         <div class="container">
           <div class="eyebrow">French</div>
           <h1 class="page">Portail d'apprentissage du français</h1>
-          <p class="desc">词汇覆盖 A1 到 B2，并配套 A1-B1 语法、动词变位与独立学习进度。</p>
+          <p class="desc">词汇覆盖 A1 到 C1，并配套 A1-B2 语法、动词变位与独立学习进度。</p>
           <div class="card-grid cols-2">
             <button class="card" id="goFrenchVocabularyBtn">
               <span class="card-chip"><span class="msr">translate</span></span>
@@ -239,7 +239,7 @@
             <button class="card" id="goFrenchGrammarBtn">
               <span class="card-chip"><span class="msr">menu_book</span></span>
               <span class="card-title">语法</span>
-              <span class="card-desc">A1-B1 语法书与高频动词变位</span>
+              <span class="card-desc">A1-B2 语法书（109 个专题）与 1,888 个动词变位</span>
             </button>
             <button class="card" id="goFrenchProgressBtn">
               <span class="card-chip"><span class="msr">monitoring</span></span>
@@ -265,7 +265,7 @@
             <button class="card" id="frenchSystemVocabularyBtn">
               <span class="card-chip"><span class="msr">dataset</span></span>
               <span class="card-title">系统词汇库</span>
-              <span class="card-desc"><span id="frenchSystemVocabularyCount">0</span> 个 A1-B2 教材词条与主题表达</span>
+              <span class="card-desc"><span id="frenchSystemVocabularyCount">0</span> 个 A1-C1 词条：教材总词汇表 + 词频核心词库</span>
             </button>
             <button class="card" id="frenchWordbooksBtn">
               <span class="card-chip"><span class="msr">bookmark</span></span>
@@ -424,7 +424,7 @@
           <button class="back-link" id="frenchGrammarBackBtn"><span class="msr">arrow_back</span>返回法语首页</button>
           <div class="eyebrow">French / Grammar</div>
           <h1 class="page">Grammaire et conjugaison</h1>
-          <p class="desc">按 A1-B1 进阶阅读语法，并通过练习掌握高频动词变位。</p>
+          <p class="desc">按 A1-B2 进阶阅读语法，并通过练习掌握高频动词变位。</p>
           <div class="card-grid cols-2">
             <button class="card" id="frenchConjugationBtn">
               <span class="card-chip"><span class="msr">sync_alt</span></span>
@@ -434,7 +434,7 @@
             <button class="card" id="frenchGrammarBookBtn">
               <span class="card-chip"><span class="msr">auto_stories</span></span>
               <span class="card-title">语法书</span>
-              <span class="card-desc">23 个 A1-B1 中文语法主题与法语例句</span>
+              <span class="card-desc">109 个 A1-B2 中文语法主题与法语例句</span>
             </button>
           </div>
         </div>
@@ -501,7 +501,7 @@
           <p class="desc">查看课程范围，并进入共享数据工具。</p>
           <div class="settings-card">
             <div class="settings-card-title">课程说明</div>
-            <div class="about-body">词汇覆盖《你好！法语》1-4 书末三语总词汇表（A1-B2），语法与变位按 A1-B1 课程重新组织。网页只保存词条数据，不包含教材扫描页。</div>
+            <div class="about-body">词汇由三部分合并而成：《你好！法语》1-4 课程词表、书末三语总词汇表（A1-B2），以及按 Lexique 3.83 词频排序的 A1-C1 核心词库；同一词条只出现一次，人工整理的释义优先于机器释义。语法 109 个 A1-B2 专题，变位覆盖 1,888 个动词。网页只保存词条数据，不包含教材扫描页。</div>
           </div>
           <div class="settings-card">
             <div class="settings-card-title">数据与社区</div>
