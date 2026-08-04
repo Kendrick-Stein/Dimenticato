@@ -623,10 +623,16 @@
       const glossary = typeof FRENCH_GLOSSARY_VOCABULARY_DATA !== 'undefined'
         ? FRENCH_GLOSSARY_VOCABULARY_DATA
         : [];
+      // 词频核心库（Lexique 3.83 排序的 22,380 条）放在最后：合并规则是「先到的
+      // 来源定主释义」，核心库的中文是经英文转写来的机器释义，绝不能顶掉
+      // 课程表和教材表里人工整理的义项。它自身按词频有序，追加后相对顺序不变。
+      const core = typeof FRENCH_CORE_VOCABULARY_DATA !== 'undefined'
+        ? FRENCH_CORE_VOCABULARY_DATA
+        : [];
       const byKey = new Map();
       const order = [];
 
-      [...FRENCH_VOCABULARY_DATA, ...glossary].forEach(entry => {
+      [...FRENCH_VOCABULARY_DATA, ...glossary, ...core].forEach(entry => {
         if (!entry) return;
         const parsed = parseHeadword(entry.french);
         const key = headwordKey(parsed.french);
