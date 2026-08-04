@@ -64,6 +64,12 @@
   var COGNATE_SCREEN_ID = 'cognatePracticeScreen';
   var PAGE_SIZE = 100;
 
+  // 同源词对英语母语/英语跳板的学习者才成立，所以 LANG_CONFIG 里没有 english。
+  // 这张表记的是「这门语言没有同源词模块时该把人送到哪」。
+  var LANG_HOME_SCREEN = {
+    english: 'englishVocabularyScreen'
+  };
+
   function configFor(lang) {
     return LANG_CONFIG[lang] || LANG_CONFIG[DEFAULT_LANG];
   }
@@ -231,12 +237,62 @@
   function similarityLabel(word) {
     var score = word && typeof word.similarityScore === 'number' ? word.similarityScore : null;
     if (score === null) return '';
-    // 法语 faux amis 的 similarityScore 比的是「法语词 vs 那个陷阱英语词」，
-    // 不是它真正的英文释义 —— 照抄成 "% similar" 会是谎话。
-    if (word.similarityBasis === 'lookalike' && word.lookalike) {
-      return score + '% 形似 “' + word.lookalike + '”';
-    }
+    // 假朋友的 similarityScore 比的是「本语言的词 vs 那个陷阱英语词」，不是它
+    // 真正的英文释义 —— 照抄成「% 与英语相似」会是谎话：德语 also 的释义是
+    // "so, therefore"，却挂着 100%，因为那 100% 说的是它和英语 also 长得一样。
+    // 法语数据用 similarityBasis + lookalike 标这件事，德语数据用 falseFriendOf，
+    // 两边都要认。
+    var basis = (word.similarityBasis === 'lookalike' && word.lookalike)
+      ? word.lookalike
+      : (word.falseFriend ? (word.lookalike || word.falseFriendOf) : null);
+    if (basis) return score + '% 形似 “' + basis + '”';
     return score + '% 与英语相似';
+  }
+
+  /**
+   * 「规律」这一栏的文字说明。patternType 一共有四种写法，只有第一种是
+   * `源语言/英语` 的后缀对应，照着 split('/') 一把梭会把另外三种渲染成胡话
+   * （最大的那组 identisch 396 词会显示成「Deutsch 侧的 “identisch” 对应英语的
+   * “English”」）：
+   *   1. `-isch/-ic`      后缀对应，左源右英；英语侧可能是 Ø（-ieren/-Ø）
+   *   2. `c↔k`            字母对应；标签方向不统一（h↔Ø 是德左英右，其余相反），
+   *                       所以这里只陈述「存在这组对应」，不认定哪边是哪边
+   *   3. identisch / 同形词 identical / falscher Freund / 假朋友 faux-ami
+   *   4. Other            patternType 为空的兜底组
+   */
+  var SUFFIX_PATTERN_RE = /^(-[^/]+)\/(-[^（(]*)(?:[（(](.+)[)）])?$/;
+  var LETTER_PATTERN_RE = /^([^↔]+)↔([^↔]+)$/;
+  var NAMED_PATTERNS = {
+    'Other': '这一组没有归纳出统一的词形规律，按和英语的相似度收在一起。',
+    'identisch': '这一组词和英语拼写完全一样，只有发音和词性需要单独记。',
+    '同形词 identical': '这一组词和英语拼写完全一样，只有发音和词性需要单独记。',
+    'falscher Freund': '长得像英语词，意思并不一样。每条都标了它真正对应的英语词。',
+    '假朋友 faux-ami': '长得像英语词，意思并不一样。每条都标了它真正对应的英语词。'
+  };
+  var EMPTY_SUFFIX_RE = /^-?[Ø∅]$/;
+
+  function patternExplanation(pattern) {
+    var label = cfg().label;
+    if (NAMED_PATTERNS[pattern]) return NAMED_PATTERNS[pattern];
+
+    var letters = LETTER_PATTERN_RE.exec(pattern);
+    if (letters) {
+      return '这一组词在英语和 ' + label + ' 之间存在 “' + letters[1].trim() +
+        ' ↔ ' + letters[2].trim() + '” 的字母对应。';
+    }
+
+    var suffix = SUFFIX_PATTERN_RE.exec(pattern);
+    if (suffix) {
+      var src = suffix[1];
+      var en = suffix[2];
+      var note = suffix[3] ? '（' + suffix[3] + '）' : '';
+      if (EMPTY_SUFFIX_RE.test(en)) {
+        return label + ' 侧的词尾 “' + src + '” 在英语里没有对应后缀' + note + '。';
+      }
+      return label + ' 侧的词尾 “' + src + '” 对应英语的 “' + en + '”' + note + '。';
+    }
+
+    return '这一组词共享同一条与英语的对应规律。';
   }
 
   function countFalseFriends(words) {
@@ -696,9 +752,7 @@
           '<h2>Pattern: ' + escapeHtml(pattern) + '</h2>' +
           '<div class="pattern-explanation panel">' +
             '<div class="panel-title">对应关系</div>' +
-            '<p class="card-desc">' + escapeHtml(cfg().label) + ' 侧的 “' +
-              escapeHtml(pattern.split('/')[0].replace('-', '')) + '” 对应英语的 “' +
-              escapeHtml(pattern.split('/')[1] || 'English') + '”。</p>' +
+            '<p class="card-desc">' + escapeHtml(patternExplanation(pattern)) + '</p>' +
           '</div>' +
           '<div class="pattern-examples word-card" style="margin-top:18px">' + exampleHtml + '</div>' +
           '<div class="browse-controls">' +
@@ -851,6 +905,16 @@
     /** 供 lib/router.js 深链接补水与入口按钮调用 */
     open(lang, options) {
       var opts = options || {};
+
+      // 英语没有「和英语同源」这回事，LANG_CONFIG 里也就没有 english。可是
+      // cognatePracticeScreen 是跨语言共享屏，#/en/vocab/cognates 照样能解析出来，
+      // 不拦的话会在「英语 / 词汇 / 同源词」的面包屑底下渲染意大利语词表。
+      // 送回该语言的词汇页，别拿别人的数据糊弄。
+      if (lang && !LANG_CONFIG[lang] && LANG_HOME_SCREEN[lang]) {
+        redirectUnsupported(LANG_HOME_SCREEN[lang]);
+        return;
+      }
+
       var target = LANG_CONFIG[lang] ? lang : DEFAULT_LANG;
 
       if (target !== CognateState.lang) {
@@ -996,6 +1060,20 @@
       section: 'vocab',
       crumb: ['词汇', '同源词']
     });
+  }
+
+  /**
+   * 深链接落到一门没有同源词数据的语言时的兜底。
+   * 不能直接同步 showScreen：router.apply() 是在 withSuspendedSync() 里调
+   * hydrate() 的，那段时间 DimRouter.sync() 被静音，屏幕换了地址栏还会留在
+   * #/en/vocab/cognates。推到下一个 tick 再切，地址栏才会被 replaceState 改掉。
+   */
+  function redirectUnsupported(screenId) {
+    window.setTimeout(function () {
+      if (typeof window.showScreen === 'function') {
+        window.showScreen(screenId, { replaceRoute: true });
+      }
+    }, 0);
   }
 
   function syncScreenChrome() {

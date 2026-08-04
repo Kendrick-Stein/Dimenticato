@@ -35,6 +35,30 @@
     { value: 'all', label: '不限题量' }
   ];
 
+  // 本模块托管的三门语言各自的首页。italian 不在表里：意大利语首页归 app.js 管。
+  const LANGUAGE_HOME_SCREENS = {
+    german: 'germanWelcomeScreen',
+    english: 'englishWelcomeScreen',
+    french: 'frenchWelcomeScreen'
+  };
+
+  /**
+   * 地址栏是不是已经指向本语言里【首页以外】的某一块屏。
+   * 用来区分「冷启动，该去首页」和「深链接把这门语言的包拉起来了，别抢屏」。
+   * DimRouter 可能还没就绪（冷启动时 init() 跑在 DimRouter.start() 之前），
+   * 那时返回 false，走原来的回首页逻辑，随后路由自己会把目标屏放上来。
+   */
+  function deepLinkedWithin(lang, homeScreenId) {
+    const router = window.DimRouter;
+    if (!router || typeof router.resolve !== 'function') return false;
+    try {
+      const route = router.resolve(window.location.hash);
+      return !!(route && route.lang === lang && route.screenId !== homeScreenId);
+    } catch (err) {
+      return false;
+    }
+  }
+
   const CEFR_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
   // 数值分层 → 最高 CEFR 等级。数据集补上 level/cefr 后自动生效；没有该字段时
   // 回落到词频 rank（两个词库都是 rank 连续升序的频率表）。
@@ -542,13 +566,19 @@
 
     applyInitialLanguage() {
       this.updateLanguageSwitcherUI(this.activeLanguage);
-      if (this.activeLanguage === 'german') {
-        this.resetToScreen('germanWelcomeScreen');
-      } else if (this.activeLanguage === 'english') {
-        this.resetToScreen('englishWelcomeScreen');
-      } else if (this.activeLanguage === 'french') {
-        this.resetToScreen('frenchWelcomeScreen');
+      const home = LANGUAGE_HOME_SCREENS[this.activeLanguage];
+      if (!home) return;
+
+      // 本模块是懒加载的：从别的语言深链接过去（#/de/vocab/cognates 会触发
+      // LangLoader.ensure('german')）时，init() 是在路由已经把目标屏显示出来
+      // 之后才跑的。那时无条件回首页会把用户刚打开的那一屏顶掉，地址栏也被
+      // 一起改写成 #/de/home。地址栏已经指向本语言的另一块屏时就只重置导航栈，
+      // 不抢屏幕。
+      if (deepLinkedWithin(this.activeLanguage, home)) {
+        if (typeof AppState !== 'undefined' && AppState) AppState.navigationStack = [home];
+        return;
       }
+      this.resetToScreen(home);
     },
 
     switchLanguage(language) {
@@ -562,15 +592,7 @@
       } else {
         // 回退：LanguagePortal 未加载时的降级处理
         this.updateLanguageSwitcherUI(language);
-        if (language === 'german') {
-          this.resetToScreen('germanWelcomeScreen');
-        } else if (language === 'english') {
-          this.resetToScreen('englishWelcomeScreen');
-        } else if (language === 'french') {
-          this.resetToScreen('frenchWelcomeScreen');
-        } else {
-          this.resetToScreen('welcomeScreen');
-        }
+        this.resetToScreen(LANGUAGE_HOME_SCREENS[language] || 'welcomeScreen');
       }
 
       this.refreshActiveHeaderStats();
