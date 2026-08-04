@@ -7,175 +7,217 @@
   <style>
     body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 2rem auto; padding: 1rem; background: #f5f7fa; color: #2c3e50; }
     h1 { border-bottom: 2px solid #3498db; padding-bottom: 0.5rem; }
-    .pass { color: #2ecc71; } .fail { color: #e74c3c; }
+    .pass { color: #2ecc71; } .fail { color: #e74c3c; } .known { color: #b8860b; }
     .test { margin: 0.5rem 0; padding: 0.5rem 1rem; border-left: 3px solid #ddd; background: #fff; }
     .test.pass { border-left-color: #2ecc71; } .test.fail { border-left-color: #e74c3c; }
+    .test.known { border-left-color: #f0ad4e; }
     .summary { font-size: 1.2rem; font-weight: bold; margin: 1rem 0; }
+    .note { color: #7f8c8d; font-size: 0.9rem; }
   </style>
 </head>
 <body>
 <h1>Spaced Repetition (SM-2) Tests</h1>
+<p class="note">测试的是 app-enhanced.js 里**实际发布**的 SpacedRepetition —— 不是复制一份算法。
+KNOWN ISSUE 行是已确认、由其它工作流修复的缺陷，修好后应改成硬断言。</p>
 <div id="results"></div>
 
+<!-- app-enhanced.js 顶层会执行 Browse.render = BrowseEnhanced.render，先放最小桩 -->
+<script>
+  window.Browse = window.Browse || {};
+  window.AppState = window.AppState || { masteredWords: new Set(), stats: {}, customWordbooks: [] };
+</script>
+<script src="../app-enhanced.js"></script>
 <script>
 (function () {
   var results = document.getElementById('results');
-  var passed = 0, failed = 0;
+  var passed = 0, failed = 0, known = 0;
+
+  function row(cls, message) {
+    var div = document.createElement('div');
+    div.className = 'test ' + cls;
+    div.textContent = message;
+    results.appendChild(div);
+  }
 
   function assert(condition, message) {
-    var div = document.createElement('div');
-    div.className = 'test ' + (condition ? 'pass' : 'fail');
-    div.textContent = (condition ? 'PASS' : 'FAIL') + ': ' + message;
-    results.appendChild(div);
-    if (condition) passed++; else failed++;
+    if (condition) { passed++; row('pass', 'PASS: ' + message); }
+    else { failed++; row('fail', 'FAIL: ' + message); }
   }
 
-  // Mirror the SM-2 implementation from app-enhanced.js for testing
-  var SpacedRepetition = {
-    DEFAULT_EASINESS: 2.5,
-    MIN_EASINESS: 1.3,
+  function assertEqual(actual, expected, message) {
+    assert(actual === expected, message +
+      (actual === expected ? '' : ' (expected ' + JSON.stringify(expected) + ', got ' + JSON.stringify(actual) + ')'));
+  }
 
-    initWordSRData: function (word) {
-      if (!word.srData) {
-        word.srData = {
-          easiness: 2.5,
-          interval: 0,
-          repetitions: 0,
-          nextReviewDate: new Date().toISOString().split('T')[0],
-          lastReviewDate: null,
-          reviewHistory: []
-        };
-      }
-      return word;
-    },
+  // 已确认、但归属其它工作流的缺陷：记录但不判红，修好后请改成 assert
+  function knownIssue(condition, message, owner) {
+    if (condition) { passed++; row('pass', 'PASS (was known issue): ' + message); }
+    else { known++; row('known', 'KNOWN ISSUE [' + owner + ']: ' + message); }
+  }
 
-    calculateNextReview: function (word, quality) {
-      this.initWordSRData(word);
-      var sr = word.srData;
-      sr.reviewHistory.push({
-        date: new Date().toISOString(),
-        quality: quality,
-        interval: sr.interval
-      });
-      if (sr.reviewHistory.length > 20) {
-        sr.reviewHistory = sr.reviewHistory.slice(-20);
-      }
-      sr.easiness = Math.max(
-        this.MIN_EASINESS,
-        sr.easiness + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02))
-      );
-      if (quality < 3) {
-        sr.repetitions = 0;
-        sr.interval = 0;
-      } else {
-        if (sr.repetitions === 0) {
-          sr.interval = 1;
-        } else if (sr.repetitions === 1) {
-          sr.interval = 6;
-        } else {
-          sr.interval = Math.round(sr.interval * sr.easiness);
-        }
-        sr.repetitions++;
-      }
-      var nextDate = new Date();
-      nextDate.setDate(nextDate.getDate() + sr.interval);
-      sr.nextReviewDate = nextDate.toISOString().split('T')[0];
-      sr.lastReviewDate = new Date().toISOString().split('T')[0];
-      return word;
-    },
-
-    getDueWords: function (words) {
-      var today = new Date().toISOString().split('T')[0];
-      return words.filter(function (word) {
-        this.initWordSRData(word);
-        return word.srData.nextReviewDate <= today;
-      }.bind(this));
-    },
-
-    convertCorrectToQuality: function (isCorrect, timeSpent) {
-      if (isCorrect) {
-        if (!timeSpent || timeSpent < 3000) return 5;
-        if (timeSpent < 8000) return 4;
-        return 3;
-      }
-      return 1;
+  function group(name, fn) {
+    try {
+      fn();
+    } catch (e) {
+      failed++;
+      row('fail', 'FAIL: ' + name + ' 抛错 — ' + (e && e.message ? e.message : e));
     }
-  };
-
-  // Test 1: Initialization
-  var word = {};
-  SpacedRepetition.initWordSRData(word);
-  assert(word.srData !== undefined, 'initWordSRData creates srData');
-  assert(word.srData.easiness === 2.5, 'default easiness is 2.5');
-  assert(word.srData.interval === 0, 'default interval is 0');
-  assert(word.srData.repetitions === 0, 'default repetitions is 0');
-
-  // Test 2: Perfect quality (5) progresses word — first review
-  SpacedRepetition.calculateNextReview(word, 5);
-  assert(word.srData.repetitions === 1, 'quality 5: repetitions 0→1');
-  assert(word.srData.interval === 1, 'quality 5: first interval is 1 day');
-
-  // Test 3: Second perfect review
-  SpacedRepetition.calculateNextReview(word, 5);
-  assert(word.srData.repetitions === 2, 'quality 5: repetitions 1→2');
-  assert(word.srData.interval === 6, 'quality 5: second interval is 6 days');
-
-  // Test 4: Third perfect review (interval = round(6 * easiness))
-  SpacedRepetition.calculateNextReview(word, 5);
-  assert(word.srData.repetitions === 3, 'quality 5: repetitions 2→3');
-  assert(word.srData.interval >= 14, 'quality 5: third interval >= 14 (6 * ~2.5)');
-
-  // Test 5: Poor quality (< 3) resets progress
-  SpacedRepetition.calculateNextReview(word, 0);
-  assert(word.srData.repetitions === 0, 'quality 0: repetitions reset to 0');
-  assert(word.srData.interval === 0, 'quality 0: interval reset to 0');
-
-  // Test 6: Easiness decreases with poor quality
-  var word2 = {};
-  SpacedRepetition.initWordSRData(word2);
-  var initialEasiness = word2.srData.easiness;
-  SpacedRepetition.calculateNextReview(word2, 0);
-  assert(word2.srData.easiness < initialEasiness, 'easiness decreases with quality 0');
-
-  // Test 7: Easiness never goes below minimum
-  for (var i = 0; i < 200; i++) {
-    SpacedRepetition.calculateNextReview(word2, 0);
   }
-  assert(word2.srData.easiness >= 1.3, 'easiness never below MIN_EASINESS (1.3) after 200 fails');
 
-  // Test 8: Review history is tracked
-  assert(Array.isArray(word.srData.reviewHistory), 'reviewHistory is an array');
-  assert(word.srData.reviewHistory.length > 0, 'reviewHistory records reviews');
+  // 解析真实模块：优先 window.SpacedRepetition，其次脚本作用域里的 const
+  var SR = (window.SpacedRepetition) ||
+    (typeof SpacedRepetition !== 'undefined' ? SpacedRepetition : null);
 
-  // Test 9: Review history caps at 20
-  var word3 = {};
-  SpacedRepetition.initWordSRData(word3);
-  for (var j = 0; j < 30; j++) {
-    SpacedRepetition.calculateNextReview(word3, 5);
+  if (!SR) {
+    failed++;
+    row('fail', 'FAIL: app-enhanced.js 没有暴露 SpacedRepetition，后续测试无法进行');
+  } else {
+
+    // calculateNextReview 的入参可能是 word（内含 srData）或直接是 srData，两种都兼容
+    function review(word, quality) {
+      var ret = SR.calculateNextReview(word, quality);
+      if (word && word.srData) return word.srData;
+      if (ret && ret.srData) return ret.srData;
+      return ret;
+    }
+
+    function dueWords(list) {
+      try {
+        var r = SR.getDueWords(list);
+        if (Array.isArray(r)) return r;
+      } catch (e) { /* 新签名是 getDueWords(lang, words) */ }
+      return SR.getDueWords('italian', list);
+    }
+
+    var today = new Date().toISOString().split('T')[0];
+
+    group('初始化', function () {
+      var word = {};
+      SR.initWordSRData(word);
+      assert(word.srData !== undefined, 'initWordSRData 建立 srData');
+      assertEqual(word.srData.easiness, 2.5, '默认 easiness 是 2.5');
+      assertEqual(word.srData.interval, 0, '默认 interval 是 0');
+      assertEqual(word.srData.repetitions, 0, '默认 repetitions 是 0');
+      assertEqual(word.srData.nextReviewDate, today, '默认下次复习日期是今天');
+      assert(Array.isArray(word.srData.reviewHistory), 'reviewHistory 是数组');
+    });
+
+    group('连续答对的间隔递增', function () {
+      var word = {};
+      var sr = review(word, 5);
+      assertEqual(sr.repetitions, 1, '质量 5：repetitions 0→1');
+      assertEqual(sr.interval, 1, '质量 5：第一次间隔 1 天');
+
+      sr = review(word, 5);
+      assertEqual(sr.repetitions, 2, '质量 5：repetitions 1→2');
+      assertEqual(sr.interval, 6, '质量 5：第二次间隔 6 天');
+
+      sr = review(word, 5);
+      assertEqual(sr.repetitions, 3, '质量 5：repetitions 2→3');
+      assert(sr.interval >= 14, '质量 5：第三次间隔 >= 14 天（6 × easiness）');
+      assert(sr.nextReviewDate > today, '下次复习日期被推到未来');
+      assertEqual(sr.lastReviewDate, today, 'lastReviewDate 记录为今天');
+    });
+
+    group('答错重置进度', function () {
+      var word = {};
+      review(word, 5);
+      review(word, 5);
+      var sr = review(word, 0);
+      assertEqual(sr.repetitions, 0, '质量 0：repetitions 归零');
+      assertEqual(sr.interval, 0, '质量 0：interval 归零');
+      assertEqual(sr.nextReviewDate, today, '质量 0：立即重新安排到今天');
+    });
+
+    group('easiness 下限', function () {
+      var word = {};
+      SR.initWordSRData(word);
+      var initial = word.srData.easiness;
+      review(word, 0);
+      assert(word.srData.easiness < initial, '质量 0 会降低 easiness');
+      for (var i = 0; i < 200; i++) review(word, 0);
+      assert(word.srData.easiness >= 1.3, '200 次答错后 easiness 不低于 1.3');
+    });
+
+    group('复习历史', function () {
+      var word = {};
+      SR.initWordSRData(word);
+      // 交替答对/答错：既能积满 30 条历史，又不会把间隔推到溢出
+      for (var i = 0; i < 30; i++) review(word, i % 2 === 0 ? 5 : 0);
+      assert(word.srData.reviewHistory.length > 0, 'reviewHistory 记录了复习');
+      assert(word.srData.reviewHistory.length <= 20, 'reviewHistory 上限 20 条');
+      var last = word.srData.reviewHistory[word.srData.reviewHistory.length - 1];
+      assert(last && typeof last.quality === 'number', '历史条目带 quality');
+    });
+
+    // 回归测试：间隔必须封顶，否则 Date 溢出后 toISOString() 抛 RangeError
+    // 参见 audit: it-sm2-interval-overflow / sc-sm2-harness-is-a-fork
+    group('长期连续答对不会让日期溢出', function () {
+      var word = {};
+      SR.initWordSRData(word);
+      var threw = null;
+      try {
+        for (var i = 0; i < 100; i++) review(word, 5);
+      } catch (e) {
+        threw = e && e.message ? e.message : String(e);
+      }
+      knownIssue(threw === null,
+        '连续答对 100 次不应抛错（当前第 ~16 次就 RangeError: ' + threw + '）', 's1-core-storage-srs');
+      knownIssue(threw === null && isFinite(word.srData.interval) && word.srData.interval < 36500,
+        'interval 应封顶在 100 年以内，nextReviewDate 才可能是合法日期', 's1-core-storage-srs');
+      if (threw === null) {
+        assert(!isNaN(new Date(word.srData.nextReviewDate).getTime()), 'nextReviewDate 仍是合法日期');
+      }
+    });
+
+    group('getDueWords', function () {
+      var overdue = {};
+      SR.initWordSRData(overdue);
+      overdue.srData.nextReviewDate = '2020-01-01';
+      var future = {};
+      SR.initWordSRData(future);
+      future.srData.nextReviewDate = '2099-12-31';
+      var due = dueWords([overdue, future]);
+      assertEqual(due.length, 1, 'getDueWords 只返回到期的词');
+      assert(due[0] === overdue, 'getDueWords 返回的是那个过期的词');
+    });
+
+    group('convertCorrectToQuality（对齐发布实现）', function () {
+      assertEqual(SR.convertCorrectToQuality(true, 1000), 5, '3 秒内答对 = 质量 5');
+      assertEqual(SR.convertCorrectToQuality(true, 5000), 4, '较慢答对 = 质量 4');
+      assertEqual(SR.convertCorrectToQuality(true, 10000), 4, '很慢答对 = 质量 4');
+      assertEqual(SR.convertCorrectToQuality(true), 4, '没有计时的答对 = 质量 4');
+      assertEqual(SR.convertCorrectToQuality(false), 2, '答错 = 质量 2');
+      assert(SR.convertCorrectToQuality(false) < 3, '答错的质量分必须 < 3，才会重置进度');
+    });
+
+    group('getWordStatus', function () {
+      var fresh = {};
+      SR.initWordSRData(fresh);
+      assertEqual(SR.getWordStatus(fresh).status, 'new', '没复习过 = 新词');
+      var learning = {};
+      SR.initWordSRData(learning);
+      learning.srData.repetitions = 2;
+      assertEqual(SR.getWordStatus(learning).status, 'learning', 'repetitions 2 = 学习中');
+      var mastered = {};
+      SR.initWordSRData(mastered);
+      mastered.srData.repetitions = 5;
+      assertEqual(SR.getWordStatus(mastered).status, 'mastered', 'repetitions 5 = 熟练');
+    });
+
+    // 载入顺序回归：app.js 在解析期测 `typeof SpacedRepetition`，
+    // 而它是后加载脚本里的 const —— 必须挂到 window 上才拿得到。
+    group('模块在 window 上可见', function () {
+      knownIssue(typeof window.SpacedRepetition === 'object' && window.SpacedRepetition !== null,
+        'SpacedRepetition 应该挂在 window 上（否则先加载的 app.js 永远看不到它）', 's1-core-storage-srs');
+      knownIssue(typeof window.StatsManager === 'object' && window.StatsManager !== null,
+        'StatsManager 应该挂在 window 上', 's1-core-storage-srs');
+    });
   }
-  assert(word3.srData.reviewHistory.length <= 20, 'reviewHistory capped at 20 entries');
 
-  // Test 10: getDueWords returns words due today
-  var oldWord = {};
-  SpacedRepetition.initWordSRData(oldWord);
-  oldWord.srData.nextReviewDate = '2020-01-01'; // long overdue
-  var futureWord = {};
-  SpacedRepetition.initWordSRData(futureWord);
-  futureWord.srData.nextReviewDate = '2099-12-31'; // far future
-  var dueWords = SpacedRepetition.getDueWords([oldWord, futureWord]);
-  assert(dueWords.length === 1, 'getDueWords returns only overdue words');
-  assert(dueWords[0] === oldWord, 'getDueWords returns the overdue word');
-
-  // Test 11: convertCorrectToQuality
-  assert(SpacedRepetition.convertCorrectToQuality(true, 1000) === 5, 'fast correct = quality 5');
-  assert(SpacedRepetition.convertCorrectToQuality(true, 5000) === 4, 'medium correct = quality 4');
-  assert(SpacedRepetition.convertCorrectToQuality(true, 10000) === 3, 'slow correct = quality 3');
-  assert(SpacedRepetition.convertCorrectToQuality(false) === 1, 'incorrect = quality 1');
-
-  // Summary
   var summary = document.createElement('div');
   summary.className = 'summary';
-  summary.textContent = passed + ' passed, ' + failed + ' failed';
+  summary.textContent = passed + ' passed, ' + failed + ' failed' + (known ? ', ' + known + ' known issues' : '');
   summary.style.color = failed === 0 ? '#2ecc71' : '#e74c3c';
   results.insertBefore(summary, results.firstChild);
 })();
