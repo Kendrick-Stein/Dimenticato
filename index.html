@@ -178,12 +178,25 @@
           <h1 class="page">选择德语词汇内容来源</h1>
           <p class="desc">可选择系统德语词汇、我的词本，或进入共享社区词库。</p>
 
-          <div class="card-grid cols-3">
+          <!-- 加了同源词之后是 4 张卡：cols-3 会剩一张孤零零地占三分之一，改成 2×2 -->
+          <div class="card-grid cols-2">
             <button class="card" id="germanSystemVocabularyBtn">
               <span class="card-chip"><span class="msr">dataset</span></span>
               <span class="card-title">系统词汇库</span>
               <span class="card-desc"><b data-count="german-vocab">15,507</b> 个德语词，按词频开始练习与浏览</span>
             </button>
+            <!-- 同源词入口：位置与交互对齐意大利语那颗（.chip + data-cognate-lang），
+                 但不带 .vocab-source-btn / .cognate-btn —— 那两个 class 是 app.js 里
+                 意大利语专用 handler 的选择器，挂上去会被拖进意大利语的流程。
+                 .vocab-source-btn 在 styles.css 里没有任何规则，样式全部来自 .chip。 -->
+            <div class="card">
+              <span class="card-chip"><span class="msr">compare_arrows</span></span>
+              <span class="card-title">同源词 · 借力英语</span>
+              <span class="card-desc">和英语同源的德语词；falsche Freunde（假朋友）单独标注。</span>
+              <div class="chips wrap">
+                <button class="chip" data-cognate-lang="german">同源词 · <span data-count="german-cognates">1,310</span> 词</button>
+              </div>
+            </div>
             <button class="card" id="germanWordbooksBtn">
               <span class="card-chip"><span class="msr">bookmark</span></span>
               <span class="card-title">我的词本</span>
@@ -765,7 +778,9 @@
               <span class="card-title">同源词 · 借力英语</span>
               <span class="card-desc">和英语长得像的意大利语单词，用已有的英语词汇量抄近路。</span>
               <div class="chips wrap">
-                <button class="chip vocab-source-btn cognate-btn" data-level="cognate" data-source="cognate">同源词 · <span data-count="italian-cognates">1,587</span> 词</button>
+                <!-- data-cognate-lang 是 cognate-app.js 的统一入口标记（三门语言同一套委托）。
+                     .cognate-btn / .vocab-source-btn 只保留给 app.js 里的老 handler。 -->
+                <button class="chip vocab-source-btn cognate-btn" data-level="cognate" data-source="cognate" data-cognate-lang="italian">同源词 · <span data-count="italian-cognates">1,587</span> 词</button>
               </div>
             </div>
 
@@ -1403,7 +1418,24 @@
         </div>
       </section>
 
-      <div id="cognatePracticeContainer" class="practice-container hidden"></div>
+      <!-- 同源词练习：意 / 德 / 法 共用一块屏，语境按 body[data-language] 解析
+           （和 grammarBookScreen / conjugationSetupScreen 同一套路），
+           层级树登记在 cognate-app.js 的 registerCognateScreen() 里。
+
+           #cognatePracticeContainer 原来是 <main> 末尾一个游离的 div：不在任何
+           .screen 里，一旦显示就再也不会被切屏隐藏，会一直挂在别的页面下面。
+           这里把它搬进正式屏幕，id 与初始 class 都保持不变，app.js 里那句
+           getElementById('cognatePracticeContainer').classList.remove('hidden')
+           照旧生效。 -->
+      <section id="cognatePracticeScreen" class="screen">
+        <div class="container">
+          <button class="back-link" id="cognateBackBtn"><span class="msr">arrow_back</span>返回内容来源</button>
+          <div class="eyebrow" id="cognateEyebrow">Italian / Cognates</div>
+          <h1 class="page">同源词</h1>
+          <p class="desc" id="cognateScreenDesc">和英语长得像的单词，用已有的英语词汇量抄近路。</p>
+          <div id="cognatePracticeContainer" class="practice-container hidden"></div>
+        </div>
+      </section>
 
       </main>
     </div><!-- /.main -->
