@@ -107,6 +107,519 @@ function getWordbookProgressKey(id, language = 'italian') {
   return `dimenticato_progress_wb_${normalizedLanguage}_${id}`;
 }
 
+// ==================== 跨语言存储核心 (DimStorage) ====================
+//
+// 全站唯一的 localStorage 出入口。三条不可违反的规则：
+//   1. 永远不调用 localStorage.clear()（会连主题、自定义词本一起抹掉）
+//   2. 导出必须覆盖全部四种语言 + 自定义词本 + 每个词本的进度 + 主题
+//   3. 覆盖导入只写它真正要恢复的 key，绝不裸删它不打算恢复的 key
+//
+// 语言前缀：意大利语沿用无前缀的历史 key（dimenticato_mastered），其余语言
+// 统一为 dimenticato_<lang>_*。合并/重置用到的纯函数都挂在对象上，便于用
+// node 单独测试（见 DimStorage.mergeValueForKey / keysForScope）。
+
+const DimStorage = {
+  PREFIX: 'dimenticato_',
+  EXPORT_VERSION: '2.0',
+  LANGS: ['italian', 'german', 'english', 'french'],
+
+  LANGUAGE_LABELS: {
+    italian: '意大利语',
+    german: '德语',
+    english: '英语',
+    french: '法语'
+  },
+
+  // 偏好设置 / 用户内容 —— 任何“重置进度”都必须保留
+  PRESERVED_KEYS: [
+    'dimenticato_theme',
+    'dimenticato_language',
+    'dimenticato_quiz_difficulty',
+    'dimenticato_custom_wordbooks'
+  ],
+
+  // 每种语言“属于学习进度”的固定 key（动态的 progress_wb_* 另行枚举）
+  PROGRESS_KEYS: {
+    italian: [
+      'dimenticato_mastered',
+      'dimenticato_stats',
+      'dimenticato_daily_stats',
+      'dimenticato_conjugation_lessons',
+      'dimenticato_cognate_progress',
+      'dimenticato_srs_italian'
+    ],
+    german: [
+      'dimenticato_german_mastered',
+      'dimenticato_german_stats',
+      'dimenticato_german_course_level',
+      'dimenticato_conjugation_lessons_de',
+      'dimenticato_daily_stats_german',
+      'dimenticato_srs_german'
+    ],
+    english: [
+      'dimenticato_english_mastered',
+      'dimenticato_english_stats',
+      'dimenticato_conjugation_lessons_en',
+      'dimenticato_daily_stats_english',
+      'dimenticato_srs_english'
+    ],
+    french: [
+      'dimenticato_french_mastered',
+      'dimenticato_french_stats',
+      'dimenticato_conjugation_lessons_fr',
+      'dimenticato_daily_stats_french',
+      'dimenticato_srs_french'
+    ]
+  },
+
+  prefixFor(lang) {
+    if (!lang || lang === 'italian') return '';
+    return `dimenticato_${lang}_`;
+  },
+
+  // ---------- 低层读写 ----------
+
+  allKeys() {
+    try {
+      return Object.keys(localStorage).filter(key => key.startsWith(this.PREFIX));
+    } catch (e) {
+      console.error('读取 localStorage 键列表失败:', e);
+      return [];
+    }
+  },
+
+  safeParse(raw, fallback) {
+    if (raw === null || raw === undefined) return fallback;
+    try {
+      const parsed = JSON.parse(raw);
+      return parsed === null || parsed === undefined ? fallback : parsed;
+    } catch (e) {
+      console.error('解析本地数据失败:', e);
+      return fallback;
+    }
+  },
+
+  _quotaNotified: false,
+
+  // 写入失败（多为 QuotaExceededError）时先裁剪最旧的每日统计再重试一次，
+  // 仍失败则本次会话提示一次，绝不静默丢弃用户进度。
+  safeSetItem(key, value) {
+    try {
+      localStorage.setItem(key, value);
+      return true;
+    } catch (e) {
+      console.error('保存失败:', key, e);
+      if (this._pruneDailyStats()) {
+        try {
+          localStorage.setItem(key, value);
+          return true;
+        } catch (e2) {
+          console.error('裁剪后仍然保存失败:', key, e2);
+        }
+      }
+      if (!this._quotaNotified) {
+        this._quotaNotified = true;
+        try {
+          alert('存储空间已满，本次学习进度未能保存。\n\n请在 Settings & Data 中导出备份，并删除一些不再使用的自定义词本。');
+        } catch (e3) {
+          /* 无 UI 环境（测试）时忽略 */
+        }
+      }
+      return false;
+    }
+  },
+
+  // 丢掉 30 天以前的每日统计，为进度数据腾出空间
+  _pruneDailyStats() {
+    let pruned = false;
+    const cutoff = new Date(Date.now() - 30 * 864e5).toISOString().split('T')[0];
+    this.allKeys()
+      .filter(key => key.indexOf('dimenticato_daily_stats') === 0)
+      .forEach(key => {
+        const stats = this.safeParse(localStorage.getItem(key), null);
+        if (!stats || typeof stats !== 'object') return;
+        const kept = {};
+        Object.keys(stats).forEach(date => {
+          if (date >= cutoff) kept[date] = stats[date];
+        });
+        if (Object.keys(kept).length < Object.keys(stats).length) {
+          try {
+            localStorage.setItem(key, JSON.stringify(kept));
+            pruned = true;
+          } catch (e) {
+            /* 裁剪本身失败就放弃 */
+          }
+        }
+      });
+    return pruned;
+  },
+
+  // ---------- 迁移 ----------
+
+  // 语言重构之前，词本进度写在 dimenticato_progress_wb_<id>（无语言段）。
+  // 把这些遗留 key 复制到带语言的新 key，老用户不丢数据。
+  migrateLegacyWordbookProgress() {
+    let migrated = 0;
+    const wordbooks = this.safeParse(localStorage.getItem('dimenticato_custom_wordbooks'), []) || [];
+    const languageById = {};
+    if (Array.isArray(wordbooks)) {
+      wordbooks.forEach(wb => {
+        if (wb && wb.id !== undefined) languageById[String(wb.id)] = wb.language || 'italian';
+      });
+    }
+    this.allKeys().forEach(key => {
+      const match = /^dimenticato_progress_wb_([^_]+)$/.exec(key);
+      if (!match) return;
+      const id = match[1];
+      const target = getWordbookProgressKey(id, languageById[id] || 'italian');
+      if (target === key) return;
+      if (localStorage.getItem(target) === null) {
+        this.safeSetItem(target, localStorage.getItem(key));
+        migrated++;
+      }
+    });
+    return migrated;
+  },
+
+  // ---------- 快照 / 导出 ----------
+
+  snapshot() {
+    const keys = {};
+    this.allKeys().forEach(key => {
+      const value = localStorage.getItem(key);
+      if (typeof value === 'string') keys[key] = value;
+    });
+    return keys;
+  },
+
+  // 全语言、带版本号的导出载荷。`keys` 是权威数据；`data` 是 1.0 兼容层，
+  // 让旧版本的 Dimenticato 仍然能读出意大利语部分。
+  exportAll() {
+    const keys = this.snapshot();
+    const wordbooks = this.safeParse(keys['dimenticato_custom_wordbooks'], []) || [];
+    const wordbookProgress = {};
+    if (Array.isArray(wordbooks)) {
+      wordbooks.forEach(wb => {
+        if (!wb || wb.id === undefined) return;
+        const value = keys[getWordbookProgressKey(wb.id, getWordbookLanguage(wb))];
+        if (value) wordbookProgress[wb.id] = value;
+      });
+    }
+
+    return {
+      version: this.EXPORT_VERSION,
+      exportDate: new Date().toISOString(),
+      exportedFrom: 'Dimenticato',
+      languages: this.LANGS.slice(),
+      keys,
+      // ---- 1.0 兼容层 ----
+      data: {
+        masteredWords: keys['dimenticato_mastered'] || '[]',
+        stats: keys['dimenticato_stats'] || '{}',
+        level: keys['dimenticato_level'] || '1000',
+        theme: keys['dimenticato_theme'] || 'light',
+        customWordbooks: keys['dimenticato_custom_wordbooks'] || '[]',
+        dailyStats: keys['dimenticato_daily_stats'] || '{}',
+        wordbookProgress
+      }
+    };
+  },
+
+  // 导出摘要（给导入前的确认框用）
+  describePayload(payload) {
+    const keys = this.normalizePayload(payload);
+    const counts = { languages: [], wordbooks: 0, keys: Object.keys(keys).length };
+    this.LANGS.forEach(lang => {
+      const masteredKey = lang === 'italian'
+        ? 'dimenticato_mastered'
+        : `dimenticato_${lang}_mastered`;
+      const mastered = this.safeParse(keys[masteredKey], []) || [];
+      if (Array.isArray(mastered) && mastered.length) {
+        counts.languages.push(`${this.LANGUAGE_LABELS[lang]} ${mastered.length} 词`);
+      }
+    });
+    const wordbooks = this.safeParse(keys['dimenticato_custom_wordbooks'], []) || [];
+    counts.wordbooks = Array.isArray(wordbooks) ? wordbooks.length : 0;
+    return counts;
+  },
+
+  // ---------- 导入 ----------
+
+  // 把 1.0 / 2.0 两种载荷统一成 { key: rawString } 的纯对象（纯函数，可单测）
+  normalizePayload(payload) {
+    const keys = {};
+    if (!payload || typeof payload !== 'object') return keys;
+
+    if (payload.keys && typeof payload.keys === 'object') {
+      Object.keys(payload.keys).forEach(key => {
+        const value = payload.keys[key];
+        if (key.indexOf(this.PREFIX) === 0 && typeof value === 'string') keys[key] = value;
+      });
+      return keys;
+    }
+
+    const data = payload.data;
+    if (!data || typeof data !== 'object') return keys;
+
+    const legacyMap = {
+      masteredWords: 'dimenticato_mastered',
+      stats: 'dimenticato_stats',
+      level: 'dimenticato_level',
+      theme: 'dimenticato_theme',
+      customWordbooks: 'dimenticato_custom_wordbooks',
+      dailyStats: 'dimenticato_daily_stats'
+    };
+    Object.keys(legacyMap).forEach(field => {
+      if (typeof data[field] === 'string') keys[legacyMap[field]] = data[field];
+    });
+
+    // 1.0 的 wordbookProgress 用的是无语言段的旧 key，这里补回语言
+    if (data.wordbookProgress && typeof data.wordbookProgress === 'object') {
+      const wordbooks = this.safeParse(data.customWordbooks, []) || [];
+      const languageById = {};
+      if (Array.isArray(wordbooks)) {
+        wordbooks.forEach(wb => {
+          if (wb && wb.id !== undefined) languageById[String(wb.id)] = wb.language || 'italian';
+        });
+      }
+      Object.keys(data.wordbookProgress).forEach(id => {
+        const value = data.wordbookProgress[id];
+        if (typeof value !== 'string') return;
+        keys[getWordbookProgressKey(id, languageById[String(id)] || 'italian')] = value;
+      });
+    }
+
+    return keys;
+  },
+
+  // ---- 合并用纯函数（全部输入输出都是字符串，方便单测） ----
+
+  mergeArrayUnion(existing, incoming) {
+    const a = this.safeParse(existing, []) || [];
+    const b = this.safeParse(incoming, []) || [];
+    if (!Array.isArray(a) || !Array.isArray(b)) return incoming;
+    return JSON.stringify([...new Set([...a, ...b])]);
+  },
+
+  mergeCounters(existing, incoming) {
+    const a = this.safeParse(existing, {}) || {};
+    const b = this.safeParse(incoming, {}) || {};
+    const merged = Object.assign({}, a);
+    Object.keys(b).forEach(field => {
+      const av = a[field];
+      const bv = b[field];
+      if (typeof av === 'number' && typeof bv === 'number') {
+        merged[field] = field === 'totalLearned' ? Math.max(av, bv) : av + bv;
+      } else if (av === undefined) {
+        merged[field] = bv;
+      }
+    });
+    return JSON.stringify(merged);
+  },
+
+  mergeDailyStats(existing, incoming) {
+    const a = this.safeParse(existing, {}) || {};
+    const b = this.safeParse(incoming, {}) || {};
+    const merged = Object.assign({}, a);
+    Object.keys(b).forEach(date => {
+      if (!merged[date]) merged[date] = b[date];
+    });
+    return JSON.stringify(merged);
+  },
+
+  mergeWordbooks(existing, incoming) {
+    const a = this.safeParse(existing, []) || [];
+    const b = this.safeParse(incoming, []) || [];
+    if (!Array.isArray(a) || !Array.isArray(b)) return incoming;
+    const seen = new Set(a.map(wb => wb && wb.id));
+    const merged = a.slice();
+    b.forEach(wb => {
+      if (wb && !seen.has(wb.id)) {
+        seen.add(wb.id);
+        merged.push(wb);
+      }
+    });
+    return JSON.stringify(merged);
+  },
+
+  mergeSrsStore(existing, incoming) {
+    const a = this.safeParse(existing, {}) || {};
+    const b = this.safeParse(incoming, {}) || {};
+    const merged = Object.assign({}, a);
+    Object.keys(b).forEach(word => {
+      const mine = merged[word];
+      const theirs = b[word];
+      if (!mine) {
+        merged[word] = theirs;
+        return;
+      }
+      // 保留最近复习过的一份
+      if ((theirs && theirs.lastReviewDate || '') > (mine && mine.lastReviewDate || '')) {
+        merged[word] = theirs;
+      }
+    });
+    return JSON.stringify(merged);
+  },
+
+  // 按 key 的形状选择合并策略（纯函数）
+  mergeValueForKey(key, existing, incoming) {
+    if (existing === null || existing === undefined) return incoming;
+    if (/_mastered$/.test(key) || key.indexOf('dimenticato_progress_wb_') === 0) {
+      return this.mergeArrayUnion(existing, incoming);
+    }
+    if (/_stats$/.test(key) && key.indexOf('daily') === -1) {
+      return this.mergeCounters(existing, incoming);
+    }
+    if (key.indexOf('dimenticato_daily_stats') === 0) {
+      return this.mergeDailyStats(existing, incoming);
+    }
+    if (key === 'dimenticato_custom_wordbooks') {
+      return this.mergeWordbooks(existing, incoming);
+    }
+    if (key.indexOf('dimenticato_srs_') === 0) {
+      return this.mergeSrsStore(existing, incoming);
+    }
+    // 其它 key（主题、语言、级别、变位课程…）保留现有值
+    return existing;
+  },
+
+  /**
+   * 导入。
+   * mode 'overwrite'：逐 key 覆盖写入 —— 只写载荷里真正存在的 key，
+   *                   绝不裸删（也就不会像旧实现那样连带清空另外三种语言）。
+   * mode 'merge'    ：按 key 形状合并（已掌握取并集、计数相加、每日统计按日期补齐）。
+   */
+  importAll(payload, options = {}) {
+    const mode = options.mode === 'overwrite' ? 'overwrite' : 'merge';
+    const keys = this.normalizePayload(payload);
+    const names = Object.keys(keys);
+    if (names.length === 0) {
+      throw new Error('数据文件中没有可导入的内容');
+    }
+
+    let written = 0;
+    names.forEach(key => {
+      const incoming = keys[key];
+      const value = mode === 'overwrite'
+        ? incoming
+        : this.mergeValueForKey(key, localStorage.getItem(key), incoming);
+      if (value === null || value === undefined) return;
+      if (this.safeSetItem(key, value)) written++;
+    });
+
+    return { mode, keys: names.length, written };
+  },
+
+  // ---------- 重置 ----------
+
+  // scope: 'all' | 'italian' | 'german' | 'english' | 'french'（纯函数，可单测）
+  keysForScope(scope, allKeys) {
+    const langs = scope === 'all' ? this.LANGS : [scope];
+    const targets = new Set();
+    langs.forEach(lang => {
+      (this.PROGRESS_KEYS[lang] || []).forEach(key => targets.add(key));
+      const wbPrefix = `dimenticato_progress_wb_${lang}_`;
+      allKeys.forEach(key => {
+        if (key.indexOf(wbPrefix) === 0) targets.add(key);
+        // 未迁移的遗留词本进度 key 归意大利语
+        if (lang === 'italian' && /^dimenticato_progress_wb_[^_]+$/.test(key)) targets.add(key);
+      });
+    });
+    // 偏好设置与自定义词本内容永不删除
+    this.PRESERVED_KEYS.forEach(key => targets.delete(key));
+    return [...targets];
+  },
+
+  reset(options = {}) {
+    const scope = options.scope && (options.scope === 'all' || this.LANGS.includes(options.scope))
+      ? options.scope
+      : 'all';
+    const removed = [];
+    this.keysForScope(scope, this.allKeys()).forEach(key => {
+      if (localStorage.getItem(key) !== null) {
+        localStorage.removeItem(key);
+        removed.push(key);
+      }
+    });
+    return { scope, removed };
+  }
+};
+
+window.DimStorage = DimStorage;
+
+// ==================== 顶栏统计胶囊（语言感知） ====================
+//
+// #totalWords / #masteredWords / #progressPercent 是全站共用的一组元素，
+// 以前只有意大利语和法语写它，所以在德语/英语站点上显示的是别的语言的数字。
+// 现在所有语言都通过 HeaderStats.set(lang, {total, mastered}) 写入，并且
+// 只有“当前 body[data-language]”对应的数字才会被画到顶栏上。
+
+const HeaderStats = {
+  _cache: {},
+
+  set(lang, stats) {
+    const language = lang || getActiveLanguage();
+    if (stats && typeof stats === 'object') {
+      this._cache[language] = {
+        total: Number(stats.total) || 0,
+        mastered: Number(stats.mastered) || 0
+      };
+    }
+    if (language !== getActiveLanguage()) return;
+    this._paint(this._cache[language]);
+  },
+
+  refresh(lang) {
+    const language = lang || getActiveLanguage();
+    const stats = this.compute(language) || this._cache[language];
+    if (stats) this._cache[language] = stats;
+    this._paint(this._cache[language]);
+  },
+
+  // 当某个语言模块还没有主动上报时，直接从它自己的运行时状态推算
+  compute(lang) {
+    try {
+      if (lang === 'italian') {
+        return {
+          total: AppState.currentWords.length,
+          mastered: countMasteredInCurrentWords()
+        };
+      }
+      const app = lang === 'german'
+        ? window.GermanApp
+        : lang === 'english'
+          ? window.EnglishApp
+          : lang === 'french'
+            ? window.FrenchApp
+            : null;
+      if (!app || !Array.isArray(app.words)) return null;
+      const key = lang === 'german' ? 'german' : lang === 'english' ? 'english' : 'french';
+      const wordKeys = new Set(app.words.map(w => w[key] || w.display || ''));
+      const mastered = app.mastered instanceof Set ? app.mastered : new Set();
+      let count = 0;
+      mastered.forEach(word => { if (wordKeys.has(word)) count++; });
+      return { total: app.words.length, mastered: count };
+    } catch (e) {
+      return null;
+    }
+  },
+
+  _paint(stats) {
+    const totalEl = document.getElementById('totalWords');
+    const masteredEl = document.getElementById('masteredWords');
+    const percentEl = document.getElementById('progressPercent');
+    if (!totalEl || !masteredEl || !percentEl) return;
+    const total = stats ? stats.total : 0;
+    const mastered = stats ? stats.mastered : 0;
+    const progress = total > 0 ? Math.round((mastered / total) * 100) : 0;
+    totalEl.textContent = total.toLocaleString();
+    masteredEl.textContent = mastered.toLocaleString();
+    percentEl.textContent = progress + '%';
+  }
+};
+
+window.HeaderStats = HeaderStats;
+
 // 为不同语言生成 screen 元数据的工厂函数
 function makeLanguageScreens(lang) {
   const capLang = lang.charAt(0).toUpperCase() + lang.slice(1);
@@ -176,36 +689,68 @@ const ScreenMeta = Object.assign(
   makeLanguageScreens('french')
 );
 
-// Italian-only screens (no German/English equivalents)
+// SHARED screens — 四种语言都会进入同一个 DOM 屏幕（语法书、动词变位、社区词本、
+// 动词搭配）。它们的 breadcrumb 写成“当前语言 → 面包屑”的函数，这样在深层页面上
+// 用户仍然知道自己在哪种语言里（updateHeaderNavigation 在渲染时求值）。
+const LANGUAGE_CRUMB = {
+  italian: 'Italian',
+  german: 'German',
+  english: 'English',
+  french: 'French'
+};
+
+function makeSharedBreadcrumb(tail) {
+  return (lang) => [LANGUAGE_CRUMB[lang] || 'Italian', ...tail];
+}
+
 ScreenMeta.communityBrowseScreen = {
   module: 'vocabulary',
   topNav: 'vocabularyScreen',
-  breadcrumb: ['Vocabulary', '社区词本']
+  breadcrumb: makeSharedBreadcrumb(['Vocabulary', '社区词本'])
 };
 ScreenMeta.conjugationSetupScreen = {
   module: 'grammar',
   topNav: 'grammarScreen',
-  breadcrumb: ['Grammar', '动词变位', '设置']
+  breadcrumb: makeSharedBreadcrumb(['Grammar', '动词变位', '设置'])
 };
 ScreenMeta.conjugationScreen = {
   module: 'grammar',
   topNav: 'grammarScreen',
-  breadcrumb: ['Grammar', '动词变位', '练习中']
+  breadcrumb: makeSharedBreadcrumb(['Grammar', '动词变位', '练习中'])
 };
 ScreenMeta.grammarBookScreen = {
   module: 'grammar',
   topNav: 'grammarScreen',
-  breadcrumb: ['Grammar', '语法书']
+  breadcrumb: makeSharedBreadcrumb(['Grammar', '语法书'])
 };
 ScreenMeta.verbCollocationsScreen = {
   module: 'grammar',
   topNav: 'grammarScreen',
-  breadcrumb: ['Grammar', '动词搭配']
+  breadcrumb: makeSharedBreadcrumb(['Grammar', '动词搭配'])
 };
 ScreenMeta.verbCollocationPracticeScreen = {
   module: 'grammar',
   topNav: 'grammarScreen',
-  breadcrumb: ['Grammar', '动词搭配练习']
+  breadcrumb: makeSharedBreadcrumb(['Grammar', '动词搭配练习'])
+};
+
+// german-course.js 在运行时注入 germanCourseScreen，此前它没有任何 ScreenMeta，
+// 于是回退到 welcomeScreen —— 面包屑显示 “Home”、侧栏高亮 Home。
+ScreenMeta.germanCourseScreen = {
+  module: 'vocabulary',
+  topNav: 'vocabularyScreen',
+  breadcrumb: ['German', 'Kursplan', 'A1-C1']
+};
+ScreenMeta.languageSkeletonPlaceholderScreen = {
+  module: 'home',
+  topNav: 'welcomeScreen',
+  breadcrumb: (lang) => [LANGUAGE_CRUMB[lang] || 'Italian', '模块']
+};
+// 跨语言总览（app-enhanced.js 的 GlobalHome 在运行时注入这块屏幕）
+ScreenMeta.globalHomeScreen = {
+  module: 'home',
+  topNav: 'globalHomeScreen',
+  breadcrumb: ['Overview', '全部语言']
 };
 
 // Non-Italian welcome screens (special — under 'home' module, not the factory pattern)
@@ -239,63 +784,88 @@ const Storage = {
   },
   
   save() {
-    try {
+    // 逐条写入：任何一条失败都不应该连累后面的（旧实现是一个大 try，
+    // 第一条抛异常就把统计和级别一起丢掉了）。
+    if (AppState.currentWordbook) {
       // 如果当前在学习自定义单词本，保存到对应的 key
-      if (AppState.currentWordbook) {
-        const key = getWordbookProgressKey(
-          AppState.currentWordbook.id,
-          getWordbookLanguage(AppState.currentWordbook)
-        );
-        localStorage.setItem(key, JSON.stringify([...AppState.masteredWords]));
-      } else {
-        // 否则保存到系统词汇的 key
-        localStorage.setItem(this.KEYS.MASTERED, JSON.stringify([...AppState.masteredWords]));
-      }
-      
-      localStorage.setItem(this.KEYS.STATS, JSON.stringify(AppState.stats));
-      localStorage.setItem(this.KEYS.LEVEL, AppState.selectedLevel.toString());
-    } catch (e) {
-      console.error('保存数据失败:', e);
+      const key = getWordbookProgressKey(
+        AppState.currentWordbook.id,
+        getWordbookLanguage(AppState.currentWordbook)
+      );
+      DimStorage.safeSetItem(key, JSON.stringify([...AppState.masteredWords]));
+    } else {
+      // 否则保存到系统词汇的 key
+      DimStorage.safeSetItem(this.KEYS.MASTERED, JSON.stringify([...AppState.masteredWords]));
     }
+
+    DimStorage.safeSetItem(this.KEYS.STATS, JSON.stringify(AppState.stats));
+    DimStorage.safeSetItem(this.KEYS.LEVEL, AppState.selectedLevel.toString());
   },
-  
+
   load() {
-    try {
-      const mastered = localStorage.getItem(this.KEYS.MASTERED);
-      if (mastered) {
-        AppState.masteredWords = new Set(JSON.parse(mastered));
-      }
-      
-      const stats = localStorage.getItem(this.KEYS.STATS);
-      if (stats) {
-        AppState.stats = JSON.parse(stats);
-      }
-      
-      const level = localStorage.getItem(this.KEYS.LEVEL);
-      if (level) {
-        AppState.selectedLevel = level === 'all' ? 'all' : parseInt(level);
-      }
-      
-      const theme = localStorage.getItem(this.KEYS.THEME);
-      if (theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-      }
-      
-      const wordbooks = localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS);
-      if (wordbooks) {
-        AppState.customWordbooks = JSON.parse(wordbooks).map(wb => ({
-          language: 'italian',
-          ...wb
-        }));
-      }
-    } catch (e) {
-      console.error('加载数据失败:', e);
+    // 每个 key 单独解析：一条损坏的记录不能让其余全部读不出来
+    const mastered = DimStorage.safeParse(localStorage.getItem(this.KEYS.MASTERED), null);
+    if (Array.isArray(mastered)) {
+      AppState.masteredWords = new Set(mastered);
+    }
+
+    const stats = DimStorage.safeParse(localStorage.getItem(this.KEYS.STATS), null);
+    if (stats && typeof stats === 'object') {
+      AppState.stats = Object.assign({
+        mcAttempts: 0,
+        mcCorrect: 0,
+        spAttempts: 0,
+        spCorrect: 0,
+        totalLearned: 0
+      }, stats);
+    }
+
+    const level = localStorage.getItem(this.KEYS.LEVEL);
+    if (level) {
+      const parsed = level === 'all' ? 'all' : parseInt(level, 10);
+      if (parsed === 'all' || Number.isFinite(parsed)) AppState.selectedLevel = parsed;
+    }
+
+    const theme = localStorage.getItem(this.KEYS.THEME);
+    if (theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+
+    const wordbooks = DimStorage.safeParse(localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS), null);
+    if (Array.isArray(wordbooks)) {
+      AppState.customWordbooks = wordbooks.map(wb => ({
+        language: 'italian',
+        ...wb
+      }));
     }
   },
-  
+
+  // 重置学习进度。
+  // 旧实现调用 localStorage.clear()，会连带删掉主题、自定义词本内容以及
+  // 同一域名下其它应用的数据。现在按语言范围、按 key 精确删除。
   reset() {
-    if (confirm('确定要重置所有学习进度吗？此操作不可恢复。')) {
-      localStorage.clear();
+    const promptMsg =
+      '重置学习进度\n\n' +
+      '请选择要重置的范围：\n' +
+      '1 - 意大利语\n' +
+      '2 - 德语\n' +
+      '3 - 英语\n' +
+      '4 - 法语\n' +
+      '5 - 全部语言\n' +
+      '0 - 取消\n\n' +
+      '（主题设置与自定义词本内容会保留，只清除练习进度）\n' +
+      '请输入 0-5：';
+    const choice = prompt(promptMsg);
+    const scopeByChoice = { '1': 'italian', '2': 'german', '3': 'english', '4': 'french', '5': 'all' };
+    const scope = scopeByChoice[choice];
+    if (!scope) return;
+
+    const label = scope === 'all' ? '全部语言' : DimStorage.LANGUAGE_LABELS[scope];
+    if (!confirm(`确定要重置【${label}】的学习进度吗？此操作不可恢复。`)) return;
+
+    const result = DimStorage.reset({ scope });
+
+    if (scope === 'all' || scope === 'italian') {
       AppState.masteredWords.clear();
       AppState.stats = {
         mcAttempts: 0,
@@ -306,10 +876,12 @@ const Storage = {
       };
       this.save();
       updateHeaderStats();
-      alert('进度已重置！');
     }
+
+    alert(`【${label}】进度已重置（清除 ${result.removed.length} 项）。\n\n页面将刷新以应用变更。`);
+    setTimeout(() => location.reload(), 600);
   },
-  
+
   toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -318,45 +890,18 @@ const Storage = {
     if (typeof syncThemeToggleUI === 'function') syncThemeToggleUI(newTheme);
   },
   
-  // 导出所有学习数据
+  // 导出所有学习数据（四种语言 + 自定义词本 + 每本词本的进度 + 主题）
   exportAllData() {
     try {
-      // 收集所有 localStorage 数据
-      const exportData = {
-        version: '1.0',
-        exportDate: new Date().toISOString(),
-        exportedFrom: 'Dimenticato',
-        data: {
-          // 系统词汇学习进度
-          masteredWords: localStorage.getItem(this.KEYS.MASTERED) || '[]',
-          stats: localStorage.getItem(this.KEYS.STATS) || '{}',
-          level: localStorage.getItem(this.KEYS.LEVEL) || '1000',
-          theme: localStorage.getItem(this.KEYS.THEME) || 'light',
-          
-          // 自定义单词本
-          customWordbooks: localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS) || '[]',
-          
-          // 每日统计
-          dailyStats: localStorage.getItem(this.KEYS.DAILY_STATS) || '{}',
-          
-          // 每个单词本的学习进度
-          wordbookProgress: {}
-        }
-      };
-      
-      // 收集所有单词本的进度
-      const customWordbooks = JSON.parse(exportData.data.customWordbooks);
-      customWordbooks.forEach(wb => {
-        const progressKey = `dimenticato_progress_wb_${wb.id}`;
-        const progress = localStorage.getItem(progressKey);
-        if (progress) {
-          exportData.data.wordbookProgress[wb.id] = progress;
-        }
-      });
-      
+      const exportData = DimStorage.exportAll();
+      if (Object.keys(exportData.keys).length === 0) {
+        alert('目前还没有任何学习数据可以导出。\n\n先做几组练习，或导入一个自定义词本再试。');
+        return;
+      }
+
       // 转换为 JSON 字符串
       const jsonString = JSON.stringify(exportData, null, 2);
-      
+
       // 创建 Blob 并下载
       const blob = new Blob([jsonString], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
@@ -374,198 +919,121 @@ const Storage = {
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
       
-      alert('学习数据导出成功！\n\n文件已保存，请妥善保管。');
-      
+      const summary = DimStorage.describePayload(exportData);
+      const detail = summary.languages.length ? summary.languages.join('、') : '暂无已掌握词汇';
+      alert(`学习数据导出成功！\n\n${detail}\n自定义词本 ${summary.wordbooks} 个\n\n文件已保存，请妥善保管。`);
+
     } catch (e) {
       console.error('导出数据失败:', e);
       alert('导出失败: ' + e.message);
     }
   },
   
-  // 导入学习数据
+  // 导入学习数据（1.0 旧文件与 2.0 全语言文件都能读）
   importAllData(file) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
-      
+
       reader.onload = (e) => {
         try {
-          const content = e.target.result;
-          const importData = JSON.parse(content);
-          
-          // 验证数据格式
-          if (!importData.version || !importData.data) {
+          const importData = JSON.parse(e.target.result);
+
+          // 验证数据格式：2.0 用 keys，1.0 用 data
+          if (!importData || (!importData.keys && !importData.data)) {
             reject('无效的数据文件格式');
             return;
           }
-          
-          // 显示导入预览
-          const customWordbooks = JSON.parse(importData.data.customWordbooks || '[]');
-          const masteredWords = JSON.parse(importData.data.masteredWords || '[]');
-          const stats = JSON.parse(importData.data.stats || '{}');
-          
-          const confirmMsg = 
+
+          const summary = DimStorage.describePayload(importData);
+          if (summary.keys === 0) {
+            reject('数据文件中没有可导入的内容');
+            return;
+          }
+
+          const exportedAt = importData.exportDate
+            ? new Date(importData.exportDate).toLocaleString()
+            : '未知';
+          const langLine = summary.languages.length ? summary.languages.join('\n') : '（无已掌握词汇）';
+
+          const confirmMsg =
             `即将导入学习数据\n\n` +
-            `导出日期: ${new Date(importData.exportDate).toLocaleString()}\n` +
-            `系统词汇已掌握: ${masteredWords.length} 个\n` +
-            `自定义单词本: ${customWordbooks.length} 个\n` +
-            `练习次数: ${(stats.mcAttempts || 0) + (stats.spAttempts || 0)} 次\n\n` +
+            `导出日期: ${exportedAt}\n` +
+            `数据版本: ${importData.version || '1.0'}\n` +
+            `${langLine}\n` +
+            `自定义单词本: ${summary.wordbooks} 个\n\n` +
             `选择导入模式：\n` +
-            `1 - 覆盖模式（清空现有数据，用导入数据替换）\n` +
+            `1 - 覆盖模式（文件中出现的项目按文件内容替换）\n` +
             `2 - 合并模式（保留现有数据，合并导入数据）\n` +
             `0 - 取消\n\n` +
             `请输入 0、1 或 2：`;
-          
+
           const mode = prompt(confirmMsg);
-          
+
           if (mode === '0' || mode === null) {
             reject('用户取消导入');
             return;
           }
-          
+
           if (mode === '1') {
-            // 覆盖模式：清空所有数据
-            this.importWithOverwrite(importData);
+            this.applyImport(importData, 'overwrite');
             resolve('overwrite');
           } else if (mode === '2') {
-            // 合并模式：合并数据
-            this.importWithMerge(importData);
+            this.applyImport(importData, 'merge');
             resolve('merge');
           } else {
             reject('无效的选择');
-            return;
           }
-          
+
         } catch (error) {
           reject('JSON 解析失败: ' + error.message);
         }
       };
-      
+
       reader.onerror = () => {
         reject('文件读取失败');
       };
-      
+
       reader.readAsText(file);
     });
   },
-  
-  // 覆盖模式导入
-  importWithOverwrite(importData) {
+
+  // 实际落盘 + 刷新 UI。
+  // 覆盖模式只覆盖“文件里出现过的 key”——旧实现先 clearAllData() 把所有
+  // dimenticato_* 全删了，于是从一个只含意大利语的备份恢复会连德/英/法进度
+  // 和主题一起抹掉。现在不再有任何裸删。
+  applyImport(importData, mode) {
     try {
-      const data = importData.data;
-      
-      // 清空所有相关数据
-      this.clearAllData();
-      
-      // 导入基本数据
-      localStorage.setItem(this.KEYS.MASTERED, data.masteredWords);
-      localStorage.setItem(this.KEYS.STATS, data.stats);
-      localStorage.setItem(this.KEYS.LEVEL, data.level);
-      localStorage.setItem(this.KEYS.THEME, data.theme);
-      localStorage.setItem(this.KEYS.CUSTOM_WORDBOOKS, data.customWordbooks);
-      localStorage.setItem(this.KEYS.DAILY_STATS, data.dailyStats);
-      
-      // 导入单词本进度
-      if (data.wordbookProgress) {
-        Object.keys(data.wordbookProgress).forEach(wbId => {
-          localStorage.setItem(`dimenticato_progress_wb_${wbId}`, data.wordbookProgress[wbId]);
-        });
-      }
-      
+      const result = DimStorage.importAll(importData, { mode });
+
       // 应用主题
-      document.documentElement.setAttribute('data-theme', data.theme);
-      
-      // 重新加载数据
+      const theme = localStorage.getItem(this.KEYS.THEME);
+      if (theme) document.documentElement.setAttribute('data-theme', theme);
+
+      // 重新加载内存状态
       this.load();
-      AppState.customWordbooks = JSON.parse(data.customWordbooks);
-      
+
       // 刷新UI
       updateHeaderStats();
       WordbookManager.renderWordbookCards();
       highlightSelectedLevel();
-      
-      alert('数据导入成功（覆盖模式）！\n\n页面将刷新以应用新数据。');
+
+      const label = mode === 'overwrite' ? '覆盖模式' : '合并模式';
+      alert(`数据导入成功（${label}）！\n\n共写入 ${result.written} 项。\n页面将刷新以应用新数据。`);
       setTimeout(() => location.reload(), 1000);
-      
+
     } catch (e) {
       console.error('导入数据失败:', e);
       alert('导入失败: ' + e.message);
     }
   },
-  
-  // 合并模式导入
+
+  // 兼容旧调用点
+  importWithOverwrite(importData) {
+    this.applyImport(importData, 'overwrite');
+  },
+
   importWithMerge(importData) {
-    try {
-      const data = importData.data;
-      
-      // 合并已掌握的单词
-      const currentMastered = new Set(JSON.parse(localStorage.getItem(this.KEYS.MASTERED) || '[]'));
-      const importMastered = JSON.parse(data.masteredWords);
-      importMastered.forEach(word => currentMastered.add(word));
-      localStorage.setItem(this.KEYS.MASTERED, JSON.stringify([...currentMastered]));
-      
-      // 合并统计数据
-      const currentStats = JSON.parse(localStorage.getItem(this.KEYS.STATS) || '{}');
-      const importStats = JSON.parse(data.stats);
-      const mergedStats = {
-        mcAttempts: (currentStats.mcAttempts || 0) + (importStats.mcAttempts || 0),
-        mcCorrect: (currentStats.mcCorrect || 0) + (importStats.mcCorrect || 0),
-        spAttempts: (currentStats.spAttempts || 0) + (importStats.spAttempts || 0),
-        spCorrect: (currentStats.spCorrect || 0) + (importStats.spCorrect || 0),
-        totalLearned: Math.max(currentStats.totalLearned || 0, importStats.totalLearned || 0)
-      };
-      localStorage.setItem(this.KEYS.STATS, JSON.stringify(mergedStats));
-      
-      // 合并每日统计
-      const currentDailyStats = JSON.parse(localStorage.getItem(this.KEYS.DAILY_STATS) || '{}');
-      const importDailyStats = JSON.parse(data.dailyStats);
-      Object.keys(importDailyStats).forEach(date => {
-        if (!currentDailyStats[date]) {
-          currentDailyStats[date] = importDailyStats[date];
-        }
-      });
-      localStorage.setItem(this.KEYS.DAILY_STATS, JSON.stringify(currentDailyStats));
-      
-      // 合并自定义单词本（避免重复）
-      const currentWordbooks = JSON.parse(localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS) || '[]');
-      const importWordbooks = JSON.parse(data.customWordbooks);
-      const existingIds = new Set(currentWordbooks.map(wb => wb.id));
-      
-      importWordbooks.forEach(wb => {
-        if (!existingIds.has(wb.id)) {
-          currentWordbooks.push(wb);
-          // 导入该单词本的进度
-          if (data.wordbookProgress && data.wordbookProgress[wb.id]) {
-            localStorage.setItem(`dimenticato_progress_wb_${wb.id}`, data.wordbookProgress[wb.id]);
-          }
-        }
-      });
-      localStorage.setItem(this.KEYS.CUSTOM_WORDBOOKS, JSON.stringify(currentWordbooks));
-      
-      // 重新加载数据
-      this.load();
-      AppState.customWordbooks = currentWordbooks;
-      
-      // 刷新UI
-      updateHeaderStats();
-      WordbookManager.renderWordbookCards();
-      
-      alert('数据导入成功（合并模式）！\n\n已合并单词进度和统计数据。');
-      
-    } catch (e) {
-      console.error('导入数据失败:', e);
-      alert('导入失败: ' + e.message);
-    }
-  },
-  
-  // 清空所有数据（用于覆盖模式）
-  clearAllData() {
-    // 获取所有单词本的进度 key
-    const allKeys = Object.keys(localStorage);
-    allKeys.forEach(key => {
-      if (key.startsWith('dimenticato_')) {
-        localStorage.removeItem(key);
-      }
-    });
+    this.applyImport(importData, 'merge');
   }
 };
 
@@ -655,16 +1123,44 @@ function updateCurrentWords() {
 
 // ==================== UI 更新 ====================
 
+// 统计“当前词表里已掌握的词数”。
+// 旧实现是 [...mastered].filter(w => currentWords.some(...))，即 O(n·m)：
+// 全部 27,117 词 + 5,000 已掌握时单次要跑近 1 秒，而每答一题都会调用它。
+// 这里改成先把 currentWords 的 italian 建成 Set 再求交集（O(n+m)），
+// 并按 currentWords 数组身份缓存 Set，避免同一词表反复重建。
+let _currentWordsKeySet = null;
+let _currentWordsKeySetSource = null;
+
+function getCurrentWordsKeySet() {
+  const words = AppState.currentWords;
+  if (_currentWordsKeySetSource !== words) {
+    _currentWordsKeySetSource = words;
+    _currentWordsKeySet = new Set((words || []).map(w => w.italian));
+  }
+  return _currentWordsKeySet;
+}
+
+function countMasteredInCurrentWords() {
+  const keys = getCurrentWordsKeySet();
+  const mastered = AppState.masteredWords;
+  if (!mastered || !keys.size) return 0;
+  // 遍历较小的一侧
+  if (mastered.size <= keys.size) {
+    let count = 0;
+    mastered.forEach(word => { if (keys.has(word)) count++; });
+    return count;
+  }
+  let count = 0;
+  keys.forEach(word => { if (mastered.has(word)) count++; });
+  return count;
+}
+
 function updateHeaderStats() {
   const totalWords = AppState.currentWords.length;
-  const masteredCount = [...AppState.masteredWords].filter(word => 
-    AppState.currentWords.some(w => w.italian === word)
-  ).length;
-  const progress = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
-  
-  document.getElementById('totalWords').textContent = totalWords.toLocaleString();
-  document.getElementById('masteredWords').textContent = masteredCount.toLocaleString();
-  document.getElementById('progressPercent').textContent = progress + '%';
+  const masteredCount = countMasteredInCurrentWords();
+  // 顶栏三个数字统一由 HeaderStats 渲染：它只在“当前语言 === italian”时才落笔，
+  // 因此德/英/法界面上不会再出现意大利语的数字。
+  HeaderStats.set('italian', { total: totalWords, mastered: masteredCount });
 }
 
 function highlightSelectedLevel() {
@@ -785,9 +1281,7 @@ function updateVocabularySummary() {
 
 function updateProgressScreenStats() {
   const totalWords = AppState.currentWords.length;
-  const masteredCount = [...AppState.masteredWords].filter(word =>
-    AppState.currentWords.some(w => w.italian === word)
-  ).length;
+  const masteredCount = countMasteredInCurrentWords();
   const progress = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
 
   const totalEl = document.getElementById('progressCurrentTotalWords');
@@ -799,12 +1293,33 @@ function updateProgressScreenStats() {
   if (progressEl) progressEl.textContent = progress + '%';
 }
 
+// 语法书是四种语言共用的一块屏幕。german-app.js 的 _openGrammarBook 会改写标题、
+// 并且把返回按钮的 textContent 直接写成 '← 返回'（连带删掉里面的 Material 图标）。
+// 意大利语/法语的入口没有把标题改回来，于是从德语转到意大利语会看到
+// “German / Grammar Book”。这里在每次进入该屏幕时统一归位。
+const GRAMMAR_BOOK_TITLES = {
+  italian: '意大利语语法',
+  french: '法语语法'
+};
+
+function normalizeGrammarBookChrome() {
+  const lang = getActiveLanguage();
+  const title = GRAMMAR_BOOK_TITLES[lang];
+  if (title) {
+    const welcomeEl = document.querySelector('#grammarBookScreen .grammar-welcome h2');
+    if (welcomeEl) welcomeEl.textContent = title;
+  }
+  const backBtn = document.getElementById('grammarBookBackBtn');
+  if (backBtn) backBtn.innerHTML = '<span class="msr">arrow_back</span>返回';
+}
+
 const SECTION_BY_TOPNAV = {
   welcomeScreen: 'home',
   vocabularyScreen: 'vocab',
   grammarScreen: 'grammar',
   progressScreen: 'progress',
-  settingsScreen: 'settings'
+  settingsScreen: 'settings',
+  globalHomeScreen: 'overview'
 };
 
 function updateHeaderNavigation(screenId) {
@@ -818,9 +1333,32 @@ function updateHeaderNavigation(screenId) {
 
   const breadcrumb = document.getElementById('breadcrumb');
   if (breadcrumb) {
-    breadcrumb.innerHTML = meta.breadcrumb
-      .map((item, index) => `<span class="breadcrumb-item ${index === meta.breadcrumb.length - 1 ? 'current' : ''}">${item}</span>`)
+    // breadcrumb 可以是数组，也可以是 (lang) => 数组 —— 共享屏幕（语法书 / 动词
+    // 变位 / 社区词本 / 动词搭配）四种语言共用同一个 DOM，需要按当前语言求值。
+    const rawCrumbs = typeof meta.breadcrumb === 'function'
+      ? meta.breadcrumb(getActiveLanguage())
+      : meta.breadcrumb;
+    const crumbs = Array.isArray(rawCrumbs) ? rawCrumbs : [];
+    const esc = window.escapeHtml || (s => String(s));
+    breadcrumb.innerHTML = crumbs
+      .map((item, index) => `<span class="breadcrumb-item ${index === crumbs.length - 1 ? 'current' : ''}">${esc(item)}</span>`)
       .join('<span class="breadcrumb-separator">/</span>');
+  }
+
+  if (screenId === 'grammarBookScreen') normalizeGrammarBookChrome();
+
+  // 复习会话钩子。必须挂在这里而不是包装 window.showScreen：lib/navigation.js
+  // 的 goBack() 调用的是它自己闭包里的 showScreen，包装 window.showScreen 对
+  // goBack 无效；而 updateHeaderNavigation 是 app.js 的顶层函数声明（挂在 window
+  // 上），navigation.js 以裸名字调用它，因此每一次屏幕切换都会走到这里。
+  // 顺序很重要：先还原复习会话的词表，再刷新顶栏数字。
+  if (window.ReviewSession && typeof window.ReviewSession.onScreenChange === 'function') {
+    window.ReviewSession.onScreenChange(screenId);
+  }
+
+  // 顶栏统计跟随当前语言（HeaderStats 在 call time 通过 window 解析各语言模块）
+  if (window.HeaderStats) {
+    window.HeaderStats.refresh();
   }
 }
 
@@ -1743,14 +2281,10 @@ const WordbookManager = {
   
   // 保存单词本列表到 LocalStorage
   saveWordbooks() {
-    try {
-      localStorage.setItem(Storage.KEYS.CUSTOM_WORDBOOKS, JSON.stringify(
-        AppState.customWordbooks.map(wb => ({ language: 'italian', ...wb }))
-      ));
-    } catch (e) {
-      console.error('保存单词本失败:', e);
-      alert('保存失败，可能是存储空间不足');
-    }
+    // safeSetItem 在配额不足时会先裁剪旧的每日统计再重试，并且只提示一次
+    DimStorage.safeSetItem(Storage.KEYS.CUSTOM_WORDBOOKS, JSON.stringify(
+      AppState.customWordbooks.map(wb => ({ language: 'italian', ...wb }))
+    ));
   },
   
   // 开始学习指定单词本
@@ -1921,11 +2455,9 @@ function showStatsModal() {
     ? Math.round((totalCorrect / totalAttempts) * 100) 
     : 0;
   
-  const masteredCount = [...AppState.masteredWords].filter(word => 
-    AppState.currentWords.some(w => w.italian === word)
-  ).length;
-  
-  const progress = AppState.currentWords.length > 0 
+  const masteredCount = countMasteredInCurrentWords();
+
+  const progress = AppState.currentWords.length > 0
     ? Math.round((masteredCount / AppState.currentWords.length) * 100) 
     : 0;
   
@@ -1984,15 +2516,40 @@ function bindEvents() {
     showScreen('verbCollocationPracticeScreen');
     if (typeof VerbCollocationPractice !== 'undefined') VerbCollocationPractice.open();
   });
-  // grammarBookScreen is SHARED by Italian/German/English. german-app.js binds its
-  // own language-aware handler on this same button. To avoid a double back-navigation
-  // (Italian goBack firing on top of the German/English handler), only run the Italian
-  // back path when the active language is Italian; otherwise defer to GermanApp.
-  document.getElementById('grammarBookBackBtn')?.addEventListener('click', () => {
-    const lang = document.body.getAttribute('data-language');
-    if (lang === 'german' || lang === 'english') return;
+  // grammarBookScreen 是四种语言共用的一块屏幕，#grammarBookBackBtn 上原本挂了
+  // 两个监听器（这里一个 + german-app.js:471 无条件绑的一个）。旧版只在德/英
+  // 时提前 return，所以意大利语和法语点一次返回会连退两屏。
+  //
+  // 这里改为在 document 上用【捕获阶段】接管这个按钮：捕获监听器先于目标节点上的
+  // 冒泡监听器执行，stopPropagation() 之后 german-app.js 的那个监听器不会再收到
+  // 事件，于是无论哪种语言都只发生一次返回。
+  document.addEventListener('click', (event) => {
+    const btn = event.target && event.target.closest
+      ? event.target.closest('#grammarBookBackBtn')
+      : null;
+    if (!btn) return;
+    event.stopPropagation();
+
+    const lang = getActiveLanguage();
+    const germanApp = window.GermanApp;
+
+    if ((lang === 'german' || lang === 'english') && germanApp) {
+      // _openGrammarBook 记下了“是谁打开的语法书”
+      if (typeof germanApp._grammarBookBackTarget === 'function') {
+        germanApp._grammarBookBackTarget();
+      } else {
+        germanApp.goBack(`${lang}GrammarScreen`);
+      }
+      return;
+    }
+
+    if (lang === 'french') {
+      goBack({ fallbackTarget: 'frenchGrammarScreen' });
+      return;
+    }
+
     goBack({ fallbackTarget: 'grammarScreen' });
-  });
+  }, true);
   document.getElementById('browseCommunityBtn')?.addEventListener('click', () => CommunityWordbooks.showBrowseScreen());
   document.getElementById('openProgressStatsBtn')?.addEventListener('click', () => {
     if (typeof showEnhancedStatsModal !== 'undefined') showEnhancedStatsModal();
@@ -2308,25 +2865,28 @@ function bindEvents() {
 let sessionStartTime = null;
 let durationUpdateInterval = null;
 
+// StatsManager 定义在 app-enhanced.js（本文件之后加载），因此只能在【调用时】
+// 通过 window 解析——绝不能在解析期用 typeof 判断。
 function startSessionTracking() {
   sessionStartTime = Date.now();
-  
-  // 每分钟更新一次学习时长（仅当 StatsManager 可用时）
+
+  // 每分钟把学习时长记到“当前语言”的当日统计上
   durationUpdateInterval = setInterval(() => {
-    if (sessionStartTime && typeof StatsManager !== 'undefined') {
-      const duration = Math.floor((Date.now() - sessionStartTime) / 1000);
-      StatsManager.updateDuration(60); // 增加60秒
+    if (sessionStartTime && window.StatsManager) {
+      window.StatsManager.updateDuration(60, getActiveLanguage()); // 增加60秒
     }
   }, 60000); // 每分钟
 }
 
 function stopSessionTracking() {
-  if (sessionStartTime && typeof StatsManager !== 'undefined') {
+  if (sessionStartTime && window.StatsManager) {
     const duration = Math.floor((Date.now() - sessionStartTime) / 1000);
-    StatsManager.updateDuration(duration);
+    // 只补记不足一分钟的尾巴，避免和上面的定时器重复累加
+    const remainder = duration % 60;
+    if (remainder > 0) window.StatsManager.updateDuration(remainder, getActiveLanguage());
     sessionStartTime = null;
   }
-  
+
   if (durationUpdateInterval) {
     clearInterval(durationUpdateInterval);
     durationUpdateInterval = null;
@@ -2334,33 +2894,16 @@ function stopSessionTracking() {
 }
 
 // ==================== 集成 SM-2 算法到测验模式 ====================
-
-// 扩展 MultipleChoice 的 checkAnswer 方法（仅当增强功能可用时）
-if (typeof StatsManager !== 'undefined' && typeof SpacedRepetition !== 'undefined') {
-  const originalMCCheckAnswer = MultipleChoice.checkAnswer;
-  MultipleChoice.checkAnswer = function(button) {
-    const startTime = this.questionStartTime || Date.now();
-    const timeSpent = Date.now() - startTime;
-    
-    originalMCCheckAnswer.call(this, button);
-    
-    // 记录到每日统计
-    const selectedAnswer = button.dataset.answer;
-    const correctAnswer = AppState.currentWord.english;
-    const isCorrect = selectedAnswer === correctAnswer;
-    
-    StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
-    
-    // 应用 SM-2 算法
-    const quality = SpacedRepetition.convertCorrectToQuality(isCorrect, timeSpent);
-    SpacedRepetition.calculateNextReview(AppState.currentWord, quality);
-    
-    // 如果是自定义单词本，保存更新后的数据
-    if (AppState.currentWordbook) {
-      WordbookManager.saveWordbooks();
-    }
-  };
-}
+//
+// 这里原本有两段 `if (typeof StatsManager !== 'undefined' && typeof
+// SpacedRepetition !== 'undefined') { ... }` 包裹的 MultipleChoice / Spelling
+// 包装器。StatsManager 和 SpacedRepetition 是 app-enhanced.js 里的顶层 const，
+// 而 app-enhanced.js 在本文件【之后】加载 —— 于是这两个 typeof 在本文件执行时
+// 永远是 'undefined'，两个包装器从来没有安装过：整个间隔重复系统（SRS）
+// 从上线起就是死代码，dimenticato_daily_stats 里除了 duration 之外全是 0。
+//
+// 现在这些包装器统一由 app-enhanced.js 安装（那时两个模块都已存在，并且一律通过
+// window.* 在调用时解析），四种语言都会接入。本文件不再做任何解析期 typeof 判断。
 
 MultipleChoice.loadQuestion = function() {
   if (AppState.quizIndex >= AppState.currentWords.length) {
@@ -2415,31 +2958,7 @@ MultipleChoice.loadQuestion = function() {
   document.getElementById('mcFeedback').classList.add('hidden');
 };
 
-// 扩展 Spelling 的 checkAnswer 方法（仅当增强功能可用时）
-if (typeof StatsManager !== 'undefined' && typeof SpacedRepetition !== 'undefined') {
-  const originalSpCheckAnswer = Spelling.checkAnswer;
-  Spelling.checkAnswer = function() {
-    originalSpCheckAnswer.call(this);
-    
-    // 记录到每日统计
-    const input = document.getElementById('spInput');
-    const userAnswer = input.value.trim().toLowerCase();
-    const correctAnswer = AppState.currentWord.italian.toLowerCase();
-    const engine = this._getEngine();
-    const isCorrect = engine.normalizeString(userAnswer) === engine.normalizeString(correctAnswer);
-    
-    StatsManager.recordActivity(AppState.currentWord, isCorrect, false);
-    
-    // 应用 SM-2 算法
-    const quality = SpacedRepetition.convertCorrectToQuality(isCorrect);
-    SpacedRepetition.calculateNextReview(AppState.currentWord, quality);
-    
-    // 如果是自定义单词本，保存更新后的数据
-    if (AppState.currentWordbook) {
-      WordbookManager.saveWordbooks();
-    }
-  };
-}
+// （Spelling 的 SM-2 包装器同样移到 app-enhanced.js，原因见上。）
 
 // ==================== 单词本卡片添加管理按钮 ====================
 
@@ -2520,7 +3039,8 @@ const LanguagePortal = {
     const targetScreen = this.HOME_SCREENS[lang] || 'welcomeScreen';
     AppState.navigationStack = [targetScreen];
     showScreen(targetScreen, { skipHistory: true });
-    if (lang === 'french') window.FrenchApp?.updateHeaderStats();
+    // 顶栏统计胶囊改用统一的 HeaderStats（四种语言都刷新，不再只有法语）
+    HeaderStats.refresh(lang);
   },
 
   /**
@@ -2546,6 +3066,20 @@ const LanguagePortal = {
 
 // 暴露到全局，方便外部脚本调用
 window.LanguagePortal = LanguagePortal;
+
+// 其它脚本（app-enhanced.js 及各语言模块）一律通过 window.* 在【调用时】解析这些
+// 符号，绝不在解析期用裸 typeof 判断 —— 那正是 SRS 整套功能从未安装的根因。
+window.AppState = AppState;
+window.ScreenMeta = ScreenMeta;
+window.Storage = Storage;
+window.WordbookManager = WordbookManager;
+window.MultipleChoice = MultipleChoice;
+window.Spelling = Spelling;
+window.updateHeaderStats = updateHeaderStats;
+window.countMasteredInCurrentWords = countMasteredInCurrentWords;
+window.getActiveLanguage = getActiveLanguage;
+window.getWordbookProgressKey = getWordbookProgressKey;
+window.navigateSection = navigateSection;
 
 // ==================== 侧边栏 / 顶栏 控制 ====================
 
@@ -2589,6 +3123,15 @@ const NAV_MODULE_BTN = {
 
 function navigateSection(section) {
   const lang = getActiveLanguage();
+  // 跨语言总览（GlobalHome 由 app-enhanced.js 在运行时注入并暴露到 window）
+  if (section === 'overview') {
+    if (window.GlobalHome && typeof window.GlobalHome.show === 'function') {
+      window.GlobalHome.show();
+    } else {
+      showScreen(NAV_HOME_SCREEN[lang] || 'welcomeScreen');
+    }
+    return;
+  }
   if (section === 'home') {
     showScreen(NAV_HOME_SCREEN[lang] || 'welcomeScreen');
     return;
@@ -2606,7 +3149,26 @@ function navigateSection(section) {
 
 function closeDrawer() { document.body.classList.remove('drawer-open'); }
 
+// 在侧栏顶部补一个“Overview（全部语言）”入口。
+// 用 :not 判断保证幂等——如果别的脚本已经放了同一个 section，就不再重复注入。
+function ensureOverviewNavItem() {
+  const nav = document.getElementById('sidebarNav');
+  if (!nav) return;
+  if (nav.querySelector('.nav-item[data-section="overview"]')) return;
+  const first = nav.querySelector('.nav-item[data-section]');
+  const html =
+    '<button class="nav-item" data-section="overview" id="navOverviewBtn">' +
+    '<span class="msr">language</span>Overview</button>';
+  if (first) {
+    first.insertAdjacentHTML('beforebegin', html);
+  } else {
+    nav.insertAdjacentHTML('afterbegin', html);
+  }
+}
+
 function bindShellControls() {
+  ensureOverviewNavItem();
+
   // 品牌 → 当前语言首页
   document.getElementById('brandHomeBtn')?.addEventListener('click', () => {
     navigateSection('home');
@@ -2644,6 +3206,9 @@ function bindShellControls() {
 // ==================== 初始化 ====================
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 把旧版无语言段的词本进度 key 迁到带语言的新 key（老用户不丢进度）
+  DimStorage.migrateLegacyWordbookProgress();
+
   bindEvents();
   bindShellControls();
   loadVocabulary();
