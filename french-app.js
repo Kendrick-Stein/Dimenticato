@@ -609,6 +609,7 @@
       if (typeof window.showEnhancedStatsModal === 'function') {
         document.getElementById('frenchProgressStatsPanelCard')?.classList.remove('hidden');
       }
+      this.watchShellLanguage();
       if (document.body.getAttribute('data-language') === 'french') {
         this.updateHeaderStats();
       }
@@ -691,6 +692,7 @@
         console.error('FrenchApp 掌握记录加载失败:', error);
         this.mastered = new Set();
       }
+      this.migrateMasteredKeys();
       try {
         this.stats = { ...this.stats, ...JSON.parse(localStorage.getItem(STORAGE_KEYS.STATS) || '{}') };
       } catch (error) {
@@ -716,6 +718,94 @@
         console.error('FrenchApp 偏好加载失败:', error);
       }
       this.browseLevel = this.levelFilter;
+    },
+
+    // ==================== 已掌握记录的键迁移 ====================
+    // 词头改写（acteur(trice) → acteur、petit(-)déjeuner → petit déjeuner）让旧版
+    // 写下的一部分掌握记录再也匹配不上任何 word.french：用户的"已掌握"数会凭空
+    // 掉下去，浏览页里那些词也会退回"学习中"。这里在读档时做一次幂等迁移——
+    // 能解析回新词头的就改写，解析不到的丢弃；顺带修好历史上去了重音的旧键。
+
+    masteredKeyIndex() {
+      if (this._masteredKeyIndex && this._masteredKeyIndexSource === this.systemWords) {
+        return this._masteredKeyIndex;
+      }
+      const exact = new Map();
+      const loose = new Map();
+      // 第一轮只登记规范词头，保证 word.french 永远优先于别的词条的变体形式
+      this.systemWords.forEach(word => {
+        const canonical = word.french;
+        if (!canonical) return;
+        const strict = headwordKey(canonical);
+        if (strict && !exact.has(strict)) exact.set(strict, canonical);
+        const relaxed = looseKey(canonical);
+        if (relaxed && !loose.has(relaxed)) loose.set(relaxed, canonical);
+      });
+      // 第二轮补上展示形/变体形/可接受写法，只填空缺
+      this.systemWords.forEach(word => {
+        const canonical = word.french;
+        if (!canonical) return;
+        const forms = [word.display, word.variant, word.key]
+          .concat(Array.isArray(word.accepted) ? word.accepted : []);
+        forms.forEach(form => {
+          if (!form) return;
+          const strict = headwordKey(form);
+          if (strict && !exact.has(strict)) exact.set(strict, canonical);
+          const relaxed = looseKey(form);
+          if (relaxed && !loose.has(relaxed)) loose.set(relaxed, canonical);
+        });
+      });
+      this._masteredKeyIndex = { exact, loose };
+      this._masteredKeyIndexSource = this.systemWords;
+      return this._masteredKeyIndex;
+    },
+
+    // 返回该旧键对应的现行 word.french；解析不出来时返回空串（调用方丢弃）
+    resolveMasteredKey(key) {
+      const raw = String(key == null ? '' : key).trim();
+      if (!raw) return '';
+      const index = this.masteredKeyIndex();
+      const candidates = [raw];
+      // 旧键本身就是改写前的词头，用同一个解析器还原成新词头即可
+      const parsed = parseHeadword(raw);
+      if (parsed.french) candidates.push(parsed.french);
+      if (Array.isArray(parsed.accepted)) {
+        parsed.accepted.forEach(form => { if (form) candidates.push(form); });
+      }
+      for (const form of candidates) {
+        const hit = index.exact.get(headwordKey(form));
+        if (hit) return hit;
+      }
+      for (const form of candidates) {
+        const hit = index.loose.get(looseKey(form));
+        if (hit) return hit;
+      }
+      return '';
+    },
+
+    migrateMasteredKeys() {
+      // 词表没加载出来时绝不动用户的记录，否则会把整份进度清空
+      if (!this.systemWords.length) return false;
+      if (!(this.mastered instanceof Set) || !this.mastered.size) return false;
+      const migrated = new Set();
+      let changed = false;
+      this.mastered.forEach(key => {
+        const resolved = this.resolveMasteredKey(key);
+        if (!resolved) { changed = true; return; }
+        if (resolved !== key) changed = true;
+        migrated.add(resolved);
+      });
+      if (!changed) return false;
+      this.mastered = migrated;
+      // 迁移只针对系统词库的记录：词本进度存在各自的 key 下，不受词头改写影响
+      if (!this.currentWordbookId) {
+        try {
+          localStorage.setItem(STORAGE_KEYS.MASTERED, JSON.stringify([...migrated]));
+        } catch (error) {
+          console.warn('FrenchApp: 掌握记录迁移写入失败:', error);
+        }
+      }
+      return true;
     },
 
     saveState() {
@@ -845,6 +935,7 @@
         const result = original.apply(this, arguments);
         try {
           app.scopeSharedBreadcrumb(screenId);
+          app.syncShellHeaderStats();
         } catch (error) {
           console.warn('FrenchApp: 面包屑语言归属处理失败:', error);
         }
@@ -878,6 +969,7 @@
       } catch (_) {
         this.mastered = new Set();
       }
+      this.migrateMasteredKeys();
       this.buildGlossIndex();
       this.syncScopeChips();
       this.updateHeaderStats();
@@ -1147,6 +1239,31 @@
       }
     },
 
+    // 四选一蒙对一次就标记"已掌握"会让进度条凭运气上涨且永不回落，
+    // 因此改由共享的 MasteryPolicy 判定：连续答对够次数才算掌握，答错清零。
+    // MasteryPolicy 定义在 lib/quiz-engine.js，一律在【调用时】通过 window 解析。
+    // 掌握集合与 countMastered/renderBrowse 一样以 word.french 为键，
+    // 迁移后的旧记录（见 migrateMasteredKeys）用的正是同一套键，两者不冲突。
+    recordMastery(word, isCorrect) {
+      const key = word && word.french;
+      if (!key) return { streak: 0, mastered: false };
+      const policy = window.MasteryPolicy;
+      if (!policy || typeof policy.record !== 'function') {
+        // 没有共享策略时退回旧行为，至少不丢进度
+        if (isCorrect) this.mastered.add(key);
+        return { streak: isCorrect ? 1 : 0, mastered: !!isCorrect };
+      }
+      let outcome;
+      try {
+        outcome = policy.record('french', key, isCorrect, { word });
+      } catch (error) {
+        console.warn('FrenchApp: 掌握度策略写入失败:', error);
+        return { streak: 0, mastered: false };
+      }
+      if (outcome && outcome.mastered) this.mastered.add(key);
+      return outcome || { streak: 0, mastered: false };
+    },
+
     // 旧版签名是 recordActivity(word, isCorrect, isReview)，它会把
     // 'french' 当成单词写进意大利语的每日统计里；因此只有确认共享核心
     // 已经升级成语言感知版本（与 DimStorage 同批交付）时才调用。
@@ -1241,8 +1358,8 @@
       if (isCorrect) {
         this.quizCorrect++;
         this.stats.mcCorrect++;
-        this.mastered.add(word.french);
       }
+      this.recordMastery(word, isCorrect);
       const engine = this.getMcEngine();
       engine.highlightOptions(correct);
       if (!isCorrect) { button.classList.remove('faded'); button.classList.add('wrong'); }
@@ -1343,8 +1460,8 @@
       if (isCorrect) {
         this.quizCorrect++;
         this.stats.spCorrect++;
-        this.mastered.add(word.french);
       }
+      this.recordMastery(word, isCorrect);
       input.disabled = true;
       document.getElementById('frenchSpCheckBtn')?.classList.add('hidden');
       this.showSpellingFeedback(verdict, word);
@@ -1527,18 +1644,82 @@
     updateHeaderStats() {
       const total = this.words.length;
       const masteredCount = this.countMastered();
+      const isFrenchShell = this.isFrenchShell();
       if (window.HeaderStats && typeof window.HeaderStats.set === 'function') {
         try {
           window.HeaderStats.set('french', { total, mastered: masteredCount });
+          if (!isFrenchShell) this.restoreShellHeaderStats();
           return;
         } catch (error) {
           console.warn('FrenchApp: 共享统计条写入失败:', error);
         }
       }
-      if (document.body && document.body.getAttribute('data-language') !== 'french') return;
+      if (!isFrenchShell) return this.restoreShellHeaderStats();
       this.setText('totalWords', total.toLocaleString());
       this.setText('masteredWords', masteredCount.toLocaleString());
       this.setText('progressPercent', this.formatPercent(masteredCount, total));
+    },
+
+    isFrenchShell() {
+      return !document.body || document.body.getAttribute('data-language') === 'french';
+    },
+
+    // 顶栏那三个数字只有一份 DOM：法语不是当前语言时必须把它交还给当前语言，
+    // 只是"不写"还不够 —— 上一次法语会话留下的 2,157 / 0 会一直挂在意大利语首页上。
+    restoreShellHeaderStats() {
+      if (this._restoringHeaderStats) return;
+      this._restoringHeaderStats = true;
+      try {
+        const shared = window.HeaderStats;
+        if (shared && typeof shared.refresh === 'function') shared.refresh();
+        else if (typeof window.updateHeaderStats === 'function') window.updateHeaderStats();
+      } catch (error) {
+        console.warn('FrenchApp: 顶栏统计交还失败:', error);
+      } finally {
+        this._restoringHeaderStats = false;
+      }
+    },
+
+    // 语言切换的入口有好几个（LanguagePortal.selectLanguage、DimRouter 的
+    // setLanguageSilently、深链接恢复），它们唯一的共同点是改写 body[data-language]。
+    // 因此直接盯住这个属性：一旦从 french 切走就把顶栏交还给新语言。
+    watchShellLanguage() {
+      const body = document.body;
+      this._shellLanguage = (body && body.getAttribute('data-language')) || 'italian';
+      if (!body || this._shellLanguageWatched) return;
+      this._shellLanguageWatched = true;
+      // 只包住 body 这一个元素上的两个方法：属性一改完就同步交还顶栏，
+      // 调用方不必等下一个微任务（MutationObserver 是异步的）。
+      const app = this;
+      ['setAttribute', 'removeAttribute'].forEach(method => {
+        const original = body[method];
+        if (typeof original !== 'function') return;
+        body[method] = function (name) {
+          const result = original.apply(this, arguments);
+          // 这里绝不能抛：整站的语言切换都要经过 setAttribute
+          try {
+            if (name === 'data-language') app.syncShellHeaderStats();
+          } catch (error) {
+            console.warn('FrenchApp: 顶栏语言同步失败:', error);
+          }
+          return result;
+        };
+      });
+      // 兜底：绕过上面两个方法改属性（或直接换掉 body）时仍能收到通知
+      if (typeof MutationObserver === 'function') {
+        this._shellLanguageObserver = new MutationObserver(() => this.syncShellHeaderStats());
+        this._shellLanguageObserver.observe(body, { attributes: true, attributeFilter: ['data-language'] });
+      }
+    },
+
+    // 屏幕切换是所有语言切换路径的必经之地，在这里同步跑一次，
+    // 调用方读顶栏时不必先等 MutationObserver 的微任务。
+    syncShellHeaderStats() {
+      const next = (document.body && document.body.getAttribute('data-language')) || 'italian';
+      const previous = this._shellLanguage;
+      if (next === previous) return;
+      this._shellLanguage = next;
+      if (previous === 'french' && next !== 'french') this.restoreShellHeaderStats();
     },
 
     openCommunity(returnScreen) {
