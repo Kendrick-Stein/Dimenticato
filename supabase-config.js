@@ -1,6 +1,11 @@
 /**
  * Supabase 配置文件
  * 用于社区词本功能
+ *
+ * 安全说明：anonKey 是 Supabase 的 anon 角色公钥，按设计就是要下发到浏览器的，
+ * 因此提交进仓库本身不构成密钥泄露。但这也意味着社区词本的全部安全性都依赖
+ * Supabase 侧的 Row Level Security 策略（见 supabase-setup.sql）——策略必须
+ * 禁止匿名 UPDATE/DELETE，并限制 INSERT 的字段长度与 file_url 来源。
  */
 
 // Supabase 项目配置
@@ -12,15 +17,20 @@ const SUPABASE_CONFIG = {
 // 初始化 Supabase 客户端
 let supabaseClient = null;
 
+// Supabase SDK 是否可用（CDN 可能被网络环境拦截）
+function isSupabaseAvailable() {
+  return typeof window !== 'undefined' && typeof window.supabase !== 'undefined';
+}
+
 function initSupabase() {
-  if (typeof supabase === 'undefined') {
+  if (!isSupabaseAvailable()) {
     console.error('❌ Supabase SDK 未加载，请确保已引入 Supabase JS 库');
     return null;
   }
-  
+
   if (!supabaseClient) {
     try {
-      supabaseClient = supabase.createClient(
+      supabaseClient = window.supabase.createClient(
         SUPABASE_CONFIG.url,
         SUPABASE_CONFIG.anonKey,
         {
@@ -81,3 +91,32 @@ const DIFFICULTY_LEVELS = {
   'Intermediate': { label: '中级', icon: 'icon-leaf' },
   'Advanced': { label: '高级', icon: 'icon-tree' }
 };
+
+// 社区词本语言映射
+// key = 应用内部语言标识；db = 数据库 language 列的取值；label = 界面中文名
+// 历史数据中 language 可能为空或写作小写，统一按“意大利语”处理（见 normalizeLanguage）
+const COMMUNITY_LANGUAGES = [
+  { key: 'italian', db: 'Italian', label: '意大利语' },
+  { key: 'german', db: 'German', label: '德语' },
+  { key: 'english', db: 'English', label: '英语' },
+  { key: 'french', db: 'French', label: '法语' }
+];
+
+// 上传字段长度上限（与 supabase-setup.sql 中的 CHECK 约束保持一致）
+const COMMUNITY_FIELD_LIMITS = {
+  name: 80,
+  authorName: 40,
+  description: 500
+};
+
+// 暴露到 window：其它脚本必须在“调用时”通过 window 解析这些配置，
+// 顶层 const 只存在于全局词法作用域，先加载的脚本读不到。
+window.SUPABASE_CONFIG = SUPABASE_CONFIG;
+window.STORAGE_CONFIG = STORAGE_CONFIG;
+window.PRESET_TAGS = PRESET_TAGS;
+window.DIFFICULTY_LEVELS = DIFFICULTY_LEVELS;
+window.COMMUNITY_LANGUAGES = COMMUNITY_LANGUAGES;
+window.COMMUNITY_FIELD_LIMITS = COMMUNITY_FIELD_LIMITS;
+window.isSupabaseAvailable = isSupabaseAvailable;
+window.initSupabase = initSupabase;
+window.getSupabaseClient = getSupabaseClient;
