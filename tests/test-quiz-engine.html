@@ -152,6 +152,41 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     assert(!DimText.isPlaceholderGloss('（阴性定冠词）'), '中文括号说明不是占位符');
   });
 
+  // ===== cleanGloss 必须是非破坏性的 =====
+  // 见 review: cleanGloss-rewrites-15346-glosses —— 旧实现无条件按 [;；,，、/／|｜]
+  // 重切并用 "; " 重拼，改写了 24000 条英文释义里 15346 条**没有任何占位符**的展示文本，
+  // 还会切到括号里面去（"[数、物]" → "[数; 物]"）。
+  // 这条链路是 displayGloss → 每个选项文字 + "回答有误，正确答案是：" 横幅。
+  group('cleanGloss 非破坏性', function () {
+    // 括号 / 方括号 / 中文括号内部的分隔符不是义项分隔符
+    assertEqual(DimText.cleanGloss('n.[数、物]常数,恒量adj.不变的,持续的,坚决的'),
+      'n.[数、物]常数,恒量adj.不变的,持续的,坚决的', '[数、物] 里的顿号不会被当成分隔符');
+    assertEqual(DimText.cleanGloss('star (TV/music)'), 'star (TV/music)', '括号里的 / 不会被改成分号');
+    assertEqual(DimText.cleanGloss('I mean, you know what?'), 'I mean, you know what?',
+      '英文逗号原样保留，不会变成 "I mean; you know what?"');
+    assertEqual(DimText.cleanGloss('prep.向,往,给...,于...,直到...为止,...,[表示程度、范围] 到,达'),
+      'prep.向,往,给...,于...,直到...为止,...,[表示程度、范围] 到,达',
+      '[表示程度、范围] 与省略号义项都不被改写');
+    assertEqual(DimText.cleanGloss('定冠词 (阴性/复数); 见 der'), '定冠词 (阴性/复数); 见 der',
+      '(阴性/复数) 保持完整');
+    assertEqual(DimText.cleanGloss('n.(一)对,(一)双,夫妇'), 'n.(一)对,(一)双,夫妇',
+      '没有占位义项时，"(一)" 这种量词标记一个都不动');
+
+    // 没有占位符时逐字节返回原文（含首尾空白）
+    var untouched = ['hello', 'a, b, c', 'a; b', '中文, 释义', ' padded ', 'x/y', 'to be|to exist'];
+    var rewritten = untouched.filter(function (s) { return DimText.cleanGloss(s) !== s; });
+    assertEqual(rewritten.length, 0, '不含占位义项的释义 cleanGloss 后逐字节不变（' +
+      JSON.stringify(rewritten) + '）');
+
+    // 真的有占位义项时才动手，而且用原来的分隔符重拼
+    assertEqual(DimText.cleanGloss('a,(2),b'), 'a,b', '删占位义项后用原来的逗号重拼，不改成 "; "');
+    assertEqual(DimText.cleanGloss('a; (2); b'), 'a; b', '原来是分号就还用分号');
+    assertEqual(DimText.cleanGloss('(2); star (TV/music)'), 'star (TV/music)',
+      '删掉前导占位后不留下多余分隔符和空白');
+    assertEqual(DimText.cleanGloss(''), '', 'cleanGloss 处理空串');
+    assertEqual(DimText.cleanGloss(null), '', 'cleanGloss 处理 null');
+  });
+
   // ===== utils: 义项重叠 / 同义判定 =====
   group('DimText 义项比较', function () {
     assert(DimText.glossesOverlap('search; look for', 'search'), '"search" 与 "search; look for" 同义');
@@ -384,6 +419,116 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     MasteryPolicy.clear(LANG);
   });
 
+  // ===== MasteryPolicy.record 的完整契约 =====
+  // 三个语言 lane 正在按 window.MasteryPolicy.record(lang, key, isCorrect, {word}) 写代码，
+  // 这里把 streak 生命周期、幂等性、存储不可用时的降级都钉死。
+  group('MasteryPolicy.record 契约：streak 生命周期', function () {
+    var LANG = 'contractlang';
+    var N = MasteryPolicy.STREAK_REQUIRED;
+    assert(N >= 2, 'STREAK_REQUIRED >= 2（一次蒙对绝不能算掌握）');
+
+    // N-1 次答对都不算掌握
+    MasteryPolicy.clear(LANG);
+    for (var i = 1; i < N; i++) {
+      var r = MasteryPolicy.record(LANG, 'w', true, {});
+      assertEqual(r.streak, i, '第 ' + i + ' 次答对 streak = ' + i);
+      assertEqual(r.mastered, false, '连对 ' + i + ' 次（< ' + N + '）不算掌握');
+      assertEqual(MasteryPolicy.getStreak(LANG, 'w'), i, 'streak 被持久化：' + i);
+    }
+    // 第 N 次才算
+    var nth = MasteryPolicy.record(LANG, 'w', true, {});
+    assertEqual(nth.streak, N, '第 ' + N + ' 次答对 streak = ' + N);
+    assertEqual(nth.mastered, true, '连对 ' + N + ' 次才算掌握');
+    assertEqual(MasteryPolicy.getStreak(LANG, 'w'), 0, '掌握后 streak 条目从存储里清掉');
+
+    // 在 N-1 处答错 -> 归零
+    MasteryPolicy.clear(LANG);
+    for (var j = 1; j < N; j++) MasteryPolicy.record(LANG, 'x', true, {});
+    assertEqual(MasteryPolicy.getStreak(LANG, 'x'), N - 1, '答错前 streak = ' + (N - 1));
+    var wrong = MasteryPolicy.record(LANG, 'x', false, {});
+    assertEqual(wrong.streak, 0, '在门槛前一步答错，streak 归零');
+    assertEqual(wrong.mastered, false, '答错不算掌握');
+    assertEqual(MasteryPolicy.getStreak(LANG, 'x'), 0, '归零后存储里也不再有该词条');
+    // 归零后要重新从 1 数起
+    assertEqual(MasteryPolicy.record(LANG, 'x', true, {}).streak, 1, '答错后重新从 streak = 1 开始');
+    assertEqual(MasteryPolicy.record(LANG, 'x', true, {}).mastered, N === 2,
+      '重新连对 ' + N + ' 次才再次掌握');
+
+    // 分语言隔离
+    MasteryPolicy.clear(LANG);
+    MasteryPolicy.clear(LANG + '2');
+    MasteryPolicy.record(LANG, 'shared', true, {});
+    assertEqual(MasteryPolicy.getStreak(LANG + '2', 'shared'), 0, 'streak 按语言隔离存储');
+    MasteryPolicy.clear(LANG);
+    MasteryPolicy.clear(LANG + '2');
+  });
+
+  group('MasteryPolicy.record 契约：幂等 / 健壮性', function () {
+    var LANG = 'contractlang';
+    MasteryPolicy.clear(LANG);
+
+    // 已掌握的词再答对，仍然返回 mastered（不会"退回未掌握"）
+    for (var i = 0; i < MasteryPolicy.STREAK_REQUIRED; i++) MasteryPolicy.record(LANG, 'w', true, {});
+    var again = MasteryPolicy.record(LANG, 'w', true, { mastered: true });
+    assertEqual(again.mastered, true, '已掌握的词再答对一次仍然是掌握（幂等）');
+    var again2 = MasteryPolicy.record(LANG, 'w', true, { mastered: true });
+    assertEqual(again2.mastered, true, '连续重复调用结果稳定');
+    assertEqual(MasteryPolicy.getStreak(LANG, 'w'), 0, '掌握态下不会往存储里堆 streak');
+
+    // 连续答错是幂等的
+    assertEqual(MasteryPolicy.record(LANG, 'w', false, {}).streak, 0, '答错 streak = 0');
+    assertEqual(MasteryPolicy.record(LANG, 'w', false, {}).streak, 0, '再答错还是 0，不会变成负数');
+
+    // 空 key 不写存储、不抛错
+    MasteryPolicy.clear(LANG);
+    [null, undefined, ''].forEach(function (bad) {
+      var r = MasteryPolicy.record(LANG, bad, true, {});
+      assertEqual(r.streak, 0, 'key=' + JSON.stringify(bad) + ' 时 streak = 0');
+      assertEqual(r.mastered, false, 'key=' + JSON.stringify(bad) + ' 时不算掌握');
+    });
+    assertEqual(localStorage.getItem(MasteryPolicy.storageKey(LANG)), null, '空 key 不会写出存储条目');
+    assertEqual(MasteryPolicy.getStreak(LANG, null), 0, 'getStreak 处理空 key');
+
+    // 存储被写坏（字符串 / 数组 / 非数字 streak）时不能抛
+    MasteryPolicy.clear(LANG);
+    ['"nonsense"', '[1,2,3]', 'null', '{"w":"abc"}', '{"w":-5}', 'not json at all'].forEach(function (junk) {
+      localStorage.setItem(MasteryPolicy.storageKey(LANG), junk);
+      var r = MasteryPolicy.record(LANG, 'w', true, {});
+      assertEqual(r.streak, 1, '存储内容为 ' + junk + ' 时安全地从 streak = 1 重新开始');
+    });
+    MasteryPolicy.clear(LANG);
+
+    // localStorage 完全不可用时：不抛错，且同一会话内 streak 仍然成立
+    var origDesc = Object.getOwnPropertyDescriptor(window, 'localStorage');
+    var stubbed = false;
+    try {
+      Object.defineProperty(window, 'localStorage', {
+        configurable: true,
+        get: function () { throw new Error('storage denied'); }
+      });
+      stubbed = true;
+    } catch (e) {}
+    assert(stubbed, '能临时禁用 localStorage 以验证降级路径');
+    if (stubbed) {
+      var noLsErr = null, noLs1 = null, noLs2 = null;
+      try {
+        noLs1 = MasteryPolicy.record('nols', 'w', true, {});
+        noLs2 = MasteryPolicy.record('nols', 'w', true, {});
+        MasteryPolicy.getStreak('nols', 'w');
+        MasteryPolicy.clear('nols');
+      } catch (e) { noLsErr = e; }
+      if (origDesc) Object.defineProperty(window, 'localStorage', origDesc);
+      else delete window.localStorage;
+      assertEqual(noLsErr, null, 'localStorage 不可用时 record/getStreak/clear 都不抛错');
+      assertEqual(noLs1 && noLs1.streak, 1, 'localStorage 不可用时第一次答对 streak = 1');
+      assertEqual(noLs2 && noLs2.streak, 2, 'localStorage 不可用时仍能累计 streak（会话内兜底）');
+      assertEqual(noLs2 && noLs2.mastered, MasteryPolicy.STREAK_REQUIRED <= 2,
+        'localStorage 不可用时掌握判定仍然按门槛走');
+    }
+    assertEqual(typeof localStorage.getItem, 'function', 'localStorage 已恢复');
+    MasteryPolicy.clear(LANG);
+  });
+
   group('recordAnswer 维护 mastered 集合', function () {
     var LANG = 'testlang';
     MasteryPolicy.clear(LANG);
@@ -425,12 +570,90 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     assertEqual(QuizEngine.getDifficulty('german'), 'easy', '全局设置会清掉分语言覆盖');
     QuizEngine.setDifficulty('hard');
 
-    // 引擎实例：显式配置 > 分语言 > 全局
+    // 引擎实例：分语言设置 > 显式字面量配置 > 全局
     QuizEngine.setDifficulty('easy', 'french');
     var frEngine = makeEngine({ language: 'french', fieldMap: { source: 'french', target: 'meaning' } });
     assertEqual(frEngine.getDifficulty(), 'easy', '引擎按自己的语言读难度');
+    var forcedWhileScoped = makeEngine({ language: 'french', difficulty: 'hard' });
+    assertEqual(forcedWhileScoped.getDifficulty(), 'easy',
+      '分语言设置压过显式 difficulty 配置 —— 用户点过的开关最大');
+
+    // 没有分语言设置时，显式字面量才压过全局
+    localStorage.removeItem(QuizEngine.difficultyKeyFor('french'));
+    QuizEngine.setDifficulty('easy');
     var forced = makeEngine({ language: 'french', difficulty: 'hard' });
-    assertEqual(forced.getDifficulty(), 'hard', '显式 difficulty 配置优先级最高');
+    assertEqual(forced.getDifficulty(), 'hard',
+      '没有分语言设置时，显式 difficulty 字面量压过全局设置');
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+  });
+
+  // ===== 回归：分语言开关必须真的影响出题，而不只是亮一下 =====
+  // 见 review: per-language-difficulty-toggles-are-inert
+  // 四个 App 传给 QuizEngine 的都是这行（german-app.js:288 / app.js:1401 /
+  // german-app.js:1637 / french-app.js:1180）：
+  //     get difficulty() { return QuizEngine.getDifficulty(); }
+  // 这个 getter 永远返回 'easy'|'hard'。如果它优先于分语言设置，
+  // 用户在德语设置页点"简单"就永远不生效 —— 控件亮着却在骗人。
+  group('回归：分语言难度真的作用到引擎（App 的 getter 不能压过它）', function () {
+    var KEYS = ['dimenticato_quiz_difficulty'];
+    QuizEngine.LANGUAGES.forEach(function (l) { KEYS.push(QuizEngine.difficultyKeyFor(l)); });
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+
+    // 逐字复制各 App 的配置写法（difficulty 必须是 getter，不能先取值再赋值）
+    function appStyleEngine(lang, source, currentWord) {
+      return new QuizEngine({
+        state: {
+          words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0,
+          currentWord: currentWord || null
+        },
+        stats: {},
+        mastered: new Set(),
+        fieldMap: { source: source, target: 'meaning' },
+        language: lang,
+        get difficulty() { return QuizEngine.getDifficulty(); },
+        saveFn: function () {},
+        onUpdateStats: function () {},
+        dom: {}
+      });
+    }
+    assert(!('value' in Object.getOwnPropertyDescriptor(appStyleEngine('german', 'german').config, 'difficulty')),
+      '测试夹具确实保留了 App 的 difficulty getter（不是被求值成字面量）');
+
+    var germanEngine = appStyleEngine('german', 'german');
+    assertEqual(germanEngine.getDifficulty(), 'hard', '没设置过时德语引擎用全局默认 hard');
+
+    localStorage.setItem('dimenticato_quiz_difficulty_german', 'easy');
+    assertEqual(QuizEngine.getDifficulty('german'), 'easy', '分语言设置已写入');
+    assertEqual(germanEngine.getDifficulty(), 'easy',
+      '存了 dimenticato_quiz_difficulty_german=easy 后，GermanApp 风格的引擎返回 easy');
+    assertEqual(appStyleEngine('italian', 'italian').getDifficulty(), 'hard',
+      '德语的分语言设置不影响意大利语引擎');
+
+    // 生成的选项也必须走 easy 分支（hard 分支才会用 WordSimilarity 挑形近词）
+    var pool = [
+      { german: 'Haus', meaning: '房子' }, { german: 'Maus', meaning: '老鼠' },
+      { german: 'Laus', meaning: '虱子' }, { german: 'Baum', meaning: '树' },
+      { german: 'Tisch', meaning: '桌子' }, { german: 'Stuhl', meaning: '椅子' }
+    ];
+    var easyEngineDe = appStyleEngine('german', 'german', pool[0]);
+    var savedPick = WordSimilarity.pickConfusableDistractors;
+    var hardBranchHits = 0;
+    WordSimilarity.pickConfusableDistractors = function () { hardBranchHits++; return savedPick.apply(this, arguments); };
+    easyEngineDe.generateOptions('房子', pool);
+    WordSimilarity.pickConfusableDistractors = savedPick;
+    assertEqual(hardBranchHits, 0, 'easy 时不再走 hard 的形近干扰项分支');
+
+    // 法语 / 英语同理
+    localStorage.setItem('dimenticato_quiz_difficulty_french', 'easy');
+    assertEqual(appStyleEngine('french', 'french').getDifficulty(), 'easy',
+      '法语分语言设置作用到 FrenchApp 风格的引擎');
+    localStorage.setItem('dimenticato_quiz_difficulty_english', 'hard');
+    localStorage.setItem('dimenticato_quiz_difficulty', 'easy');   // 全局改成简单
+    assertEqual(appStyleEngine('english', 'english').getDifficulty(), 'hard',
+      '英语分语言设置压过全局设置');
+    assertEqual(appStyleEngine('italian', 'italian').getDifficulty(), 'easy',
+      '没有分语言覆盖的语言仍然跟随全局设置');
+
     KEYS.forEach(function (k) { localStorage.removeItem(k); });
   });
 
