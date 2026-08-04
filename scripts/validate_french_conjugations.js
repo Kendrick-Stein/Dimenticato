@@ -685,7 +685,7 @@ const GOLD = {
   },
   'croître': {
     // the circumflex is obligatory in every form homographic with croire,
-    // including the imperative (Verbiste drops it there)
+    // including the imperative
     indicatif_present: { je: 'croîs', il_elle_on: 'croît', nous: 'croissons' },
     indicatif_passe_simple: { je: 'crûs' },
     imperatif_present: { tu: 'croîs' },
@@ -702,8 +702,11 @@ const GOLD = {
     subjonctif_present: { nous: 'riions' },
     participe_passe: ['ri'],
   },
+  // "il éclot" and "il éclôt" are both standard (fr.wiktionary prints
+  // "il/elle/on éclot ou éclôt"); the circumflex form is the one the
+  // conjugation table we build from spells out, so that is what must ship.
   'éclore': {
-    indicatif_present: { il_elle_on: 'éclot' },
+    indicatif_present: { il_elle_on: 'éclôt' },
     participe_passe: ['éclos'],
   },
   "s'asseoir": {
@@ -749,7 +752,7 @@ const GOLD_NEGATIVE = {
   'commencer': { indicatif_imparfait: { nous: 'commençions', vous: 'commençiez' },
     subjonctif_present: { nous: 'commençions', vous: 'commençiez' } },
   'aller': { indicatif_passe_compose: { je: 'allé' } },
-  // impersonal: Verbiste's -ger model would emit these, Wiktionary dashes them
+  // impersonal: a blind -ger paradigm would emit these, Wiktionary dashes them
   'neiger': { indicatif_present: { je: 'neige', nous: 'neigeons' },
     indicatif_imparfait: { je: 'neigeais' } },
 };

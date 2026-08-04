@@ -118,11 +118,13 @@ assert.ok(
   'French grammar has incomplete topics'
 );
 
-// 35 -> 1888：content/fr-conj 用语料词频重建了整张变位表。
-assert.equal(conjugations.length, 1888, 'French verb count changed unexpectedly');
+// 35 -> 1888 -> 1934：变位表最初按语料词频重建（1888 个动词），
+// 之后换掉 GPL 的 Verbiste 数据源、改从 Wiktionary/kaikki + Lexique 生成，
+// 词形一个没少，还多出 46 个新动词（词频前 1800 名 + 每个变位型补一个代表）。
+assert.equal(conjugations.length, 1934, 'French verb count changed unexpectedly');
 assert.equal(new Set(conjugations.map(verb => verb.infinitive)).size, conjugations.length, 'French conjugation list contains duplicate verbs');
 
-// 原来 35 个动词都恰好 7 组时态；重建后主流动词是 20 组（1801/1888），
+// 原来 35 个动词都恰好 7 组时态；重建后主流动词是 20 组（1856/1934），
 // 缺陷动词（如 falloir）天然少几组，所以只断言下限和每组的完整性。
 for (const verb of conjugations) {
   const tenseEntries = Object.entries(verb.tenses);
