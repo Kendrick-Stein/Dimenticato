@@ -11,7 +11,7 @@
   /* ---- Redesign canonical tokens — warm neutral base + single sage accent ---- */
   --bg: #f3f1ea; --surface: #faf8f3; --card: #ffffff; --card-2: #f2efe7;
   --border: #e6e2d8; --border-strong: #d5d0c3;
-  --ink: #211f1b; --ink-2: #544f46; --muted: #8f8a7d;
+  --ink: #211f1b; --ink-2: #544f46; --muted: #6f6a5e;
   --accent: #4a7a5e; --accent-soft: #e7efe9;
   --good: #4a7a5e; --good-soft: #e7efe9;
   --bad: #b0564b; --bad-soft: #f6e8e5;
@@ -40,9 +40,11 @@
   --danger-soft: var(--bad-soft); --danger-border: var(--bad);
   --warning-soft: var(--card-2);
 
-  /* ---- Focus ring (accessibility) ---- */
-  --focus-ring: 0 0 0 3px rgba(var(--accent-primary-rgb), 0.32);
-  --focus-ring-soft: 0 0 0 4px rgba(var(--accent-primary-rgb), 0.14);
+  /* ---- Focus ring (accessibility) — solid accent band separated from the
+         control by a surface-coloured gap, so it clears WCAG 2.2 SC 1.4.11
+         (3:1) on both --bg and --card. ---- */
+  --focus-ring: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent);
+  --focus-ring-soft: var(--focus-ring);
 
   /* ---- Radii scale ---- */
   --radius-xs: 8px;
@@ -51,6 +53,14 @@
   --radius-lg: 20px;
   --radius-xl: 28px;
   --radius-pill: 999px;
+
+  /* ---- Control heights (one primitive height for pill-shaped controls) ---- */
+  --control-h: 38px;
+  --control-h-sm: 34px;
+
+  /* ---- Content column widths ---- */
+  --content-max: 1040px;
+  --content-max-narrow: 780px;
 
   /* ---- Shadow scale (flat rest, soft hover — no heavy elevation) ---- */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.03);
@@ -78,7 +88,7 @@
   /* Canonical tokens (aliases in :root resolve to these at use-time) */
   --bg: #16150f; --surface: #1d1c16; --card: #232219; --card-2: #2b291f;
   --border: #34322a; --border-strong: #454236;
-  --ink: #ece9df; --ink-2: #b7b3a6; --muted: #8b8578;
+  --ink: #ece9df; --ink-2: #b7b3a6; --muted: #9a9488;
   --accent: #83b191; --accent-soft: #25352c;
   --good: #83b191; --good-soft: #25352c;
   --bad: #d78d82; --bad-soft: #3a2925;
@@ -2230,7 +2240,7 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
 /* ==================== 浏览模式 ==================== */
 
 .browse-container {
-  max-width: 1000px;
+  max-width: var(--content-max);
   margin: 0 auto;
 }
 
@@ -2414,26 +2424,38 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
 .mobile-floating-back {
   position: fixed;
   right: 1rem;
-  bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
   z-index: 320;
   display: none;
   align-items: center;
   gap: 0.45rem;
   min-height: 48px;
-  padding: 0.85rem 1rem;
-  border: 1px solid rgba(var(--accent-primary-rgb), 0.16);
+  padding: 0.85rem 1.05rem;
+  border: 1px solid transparent;
   border-radius: var(--radius-pill);
-  background: rgba(29, 36, 32, 0.92);
-  color: var(--text-on-accent);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(12px);
+  /* Inverts with the theme — the old hardcoded rgba(29,36,32,.92) put
+     near-black text on a near-black pill in dark mode (1.14:1). */
+  background: var(--ink);
+  color: var(--bg);
+  font-weight: 700;
+  box-shadow: var(--shadow-lg);
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
+/* The markup ships an #icon-book-open glyph on a Back control; suppress it and
+   draw the same arrow_back ligature the in-page .back-link uses. */
 .mobile-floating-back .icon {
-  width: 0.95rem;
-  height: 0.95rem;
+  display: none;
+}
+
+.mobile-floating-back::before {
+  content: 'arrow_back';
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1;
+  -webkit-font-feature-settings: 'liga';
 }
 
 .mobile-floating-back:hover {
@@ -3733,7 +3755,7 @@ textarea:focus-visible {
 
 .quiz-container,
 .browse-container {
-  max-width: 980px;
+  max-width: var(--content-max);
 }
 
 .quiz-header,
@@ -4344,8 +4366,8 @@ textarea:focus-visible {
   .mobile-floating-back {
     right: 0.85rem;
     left: auto;
-    bottom: calc(84px + env(safe-area-inset-bottom, 0px));
-    padding: 0.82rem 0.95rem;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    padding: 0.82rem 1rem;
   }
 }
 
@@ -5294,7 +5316,7 @@ textarea:focus-visible {
   align-items: center;
   gap: 11px;
   padding: 4px 6px;
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   background: transparent;
   border: none;
   cursor: pointer;
@@ -5303,10 +5325,10 @@ textarea:focus-visible {
 }
 #app .sidebar .brand:hover { background: var(--card-2); }
 #app .sidebar .brand-mark {
-  width: 34px; height: 34px;
-  border-radius: 10px;
+  width: var(--control-h-sm); height: var(--control-h-sm);
+  border-radius: var(--radius-xs);
   background: var(--accent);
-  color: #fff;
+  color: var(--text-on-accent);
   display: grid; place-items: center;
   font-weight: 800; font-size: 18px;
   flex: none;
@@ -5321,10 +5343,13 @@ textarea:focus-visible {
   text-transform: uppercase; color: var(--muted);
   padding: 0 8px; margin-bottom: -12px;
 }
-.lang-pills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+/* Flex (not a fixed column count) so the row absorbs a 4th/5th language
+   without orphaning one pill onto a half-width second row. */
+.lang-pills { display: flex; flex-wrap: nowrap; gap: 6px; }
 .lang-pill {
+  flex: 1 1 0; min-width: 0; min-height: var(--control-h-sm);
   border: 1px solid var(--border); background: transparent; color: var(--ink-2);
-  font-weight: 600; font-size: 13px; padding: 8px 0; border-radius: 99px;
+  font-weight: 600; font-size: 13px; padding: 0 4px; border-radius: var(--radius-pill);
   transition: all var(--transition-fast); cursor: pointer;
 }
 .lang-pill:hover { border-color: var(--border-strong); }
@@ -5333,7 +5358,7 @@ textarea:focus-visible {
 #app .sidebar .nav { display: flex; flex-direction: column; gap: 2px; }
 .nav-item {
   display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
-  padding: 10px 12px; border-radius: 11px; border: none; background: transparent;
+  padding: 10px 12px; border-radius: var(--radius-xs); border: none; background: transparent;
   color: var(--ink-2); font-weight: 600; font-size: 14px; cursor: pointer;
   transition: all var(--transition-fast);
 }
@@ -5365,14 +5390,15 @@ textarea:focus-visible {
 .breadcrumb-item.current { color: var(--ink-2); font-weight: 700; }
 .breadcrumb-separator { opacity: 0.5; }
 .hamburger {
-  display: none; width: 38px; height: 38px; border-radius: 10px;
+  display: none; width: var(--control-h); height: var(--control-h); border-radius: var(--radius-xs);
   border: 1px solid var(--border); background: var(--card); place-items: center;
   color: var(--ink-2); cursor: pointer;
 }
 .stat-pills { display: flex; gap: 8px; }
 .stat-pill {
-  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-  padding: 7px 13px; font-size: 12.5px; font-weight: 600; color: var(--ink-2); white-space: nowrap;
+  display: inline-flex; align-items: center; min-height: var(--control-h-sm);
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-pill);
+  padding: 0 13px; font-size: 12.5px; font-weight: 600; color: var(--ink-2); white-space: nowrap;
 }
 .stat-pill b { font-weight: 800; color: var(--ink); }
 .stat-pill.accent b { color: var(--accent); }
@@ -5392,7 +5418,12 @@ textarea:focus-visible {
   body.drawer-open #app .sidebar { transform: none; }
   body.drawer-open .scrim { display: block; }
   .hamburger { display: grid; }
-  .stat-pills { display: none; }
+  /* Keep the progress readout on phones (it used to be display:none with no
+     replacement): drop the two detail pills, keep the compact percentage. */
+  .stat-pills { display: flex; gap: 4px; flex: none; }
+  .stat-pill:not(:last-child) { display: none; }
+  .stat-pill { min-height: 30px; padding: 0 10px; font-size: 11.5px; }
+  .stat-pill:last-child b { color: var(--accent); }
   .topbar { padding: 13px 18px; }
   #app .content { padding: 28px 18px 60px; }
 }
@@ -5413,29 +5444,37 @@ textarea:focus-visible {
    Legacy rules intentionally superseded: .eyebrow, .hint-btn,
    .chinese-hint (redesign look is the target for these shared names).
    ============================================================ */
-.container{max-width:960px;margin:0 auto}
-.container.narrow{max-width:680px}
+.container{max-width:var(--content-max);margin:0 auto}
+.container.narrow{max-width:var(--content-max-narrow)}
 
 /* ---- Common primitives ---- */
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
-h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
-.desc{color:var(--muted);font-size:14.5px;line-height:1.6;margin-top:10px;max-width:60ch}
+h1.page{font-size:clamp(30px,2.3vw,34px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.desc{color:var(--ink-2);font-size:14.5px;line-height:1.6;margin-top:10px;max-width:60ch}
 .back-link{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-weight:600;font-size:13px;margin-bottom:22px;transition:color .15s;background:none;border:none;cursor:pointer;padding:0}
 .back-link:hover{color:var(--ink)}
 .back-link .msr{font-size:18px}
 
-.card-grid{display:grid;gap:16px;margin-top:30px}
+/* A bare .card-grid used to silently collapse to one column; auto-fit keeps
+   any un-modified grid laid out like the cols-* ones. */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:18px;margin-top:32px}
 .card-grid.cols-3{grid-template-columns:repeat(3,1fr)}
 .card-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+/* Odd trailing card spans the row instead of stranding a half-empty one
+   (German home injects a 5th card into a 2-column grid at runtime; the Italian
+   vocabulary-source screen is a bare 3-card grid). Both are 2-up at every width
+   the 1040px content column allows, so spanning the last card is always right. */
+.card-grid.cols-2 > :last-child:nth-child(odd),
+.card-grid:not(.cols-2):not(.cols-3) > :last-child:nth-child(odd){grid-column:1/-1}
 
 .card{
-  background:var(--card);border:1px solid var(--border);border-radius:16px;
-  padding:22px;text-align:left;display:flex;flex-direction:column;gap:10px;
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);
+  padding:24px;text-align:left;display:flex;flex-direction:column;gap:11px;
   box-shadow:var(--shadow);transition:all .18s;
 }
 .card:hover{border-color:var(--border-strong);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
 .card-chip{
-  width:46px;height:46px;border-radius:13px;background:var(--card-2);
+  width:48px;height:48px;border-radius:var(--radius-sm);background:var(--card-2);
   display:grid;place-items:center;color:var(--accent);
 }
 .card-chip .msr{font-size:24px}
@@ -5453,14 +5492,14 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .portal .desc{margin:14px auto 0}
 .lang-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px;text-align:left}
 .lang-card{
-  background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;
   box-shadow:var(--shadow);transition:all .18s;
 }
 .lang-card:hover{border-color:var(--border-strong);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
 .lang-card .lc-name{font-size:22px;font-weight:800;letter-spacing:-.01em}
 .lang-card .lc-native{color:var(--muted);font-size:13px;font-weight:600;margin-top:2px}
-.progress-track{height:6px;background:var(--card-2);border-radius:99px;overflow:hidden;margin-top:20px}
-.progress-fill{height:100%;background:var(--accent);border-radius:99px}
+.progress-track{height:6px;background:var(--border-strong);border-radius:var(--radius-pill);overflow:hidden;margin-top:20px}
+.progress-fill{height:100%;background:var(--accent);border-radius:var(--radius-pill)}
 .lc-pct{font-size:12px;color:var(--muted);font-weight:600;margin-top:9px}
 
 /* ---- Practice (MC / Spelling / Conjugation) ---- */
@@ -5468,14 +5507,16 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .practice-head .idx{color:var(--ink-2)}
 .practice-head .acc{color:var(--muted)}
 .practice-head .acc b{color:var(--accent)}
-.session-bar{height:5px;background:var(--card-2);border-radius:99px;overflow:hidden;margin:14px 0 22px}
-.session-fill{height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
+/* Track uses --border-strong, not --card-2: --card-2 on --bg is 1.02:1, i.e. the
+   session progress bar was invisible in light mode. */
+.session-bar{height:6px;background:var(--border-strong);border-radius:var(--radius-pill);overflow:hidden;margin:14px 0 22px}
+.session-fill{height:100%;min-width:6px;background:var(--accent);border-radius:var(--radius-pill);transition:width .3s}
 
-.practice-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:34px 30px;box-shadow:var(--shadow)}
+.practice-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:34px 30px;box-shadow:var(--shadow)}
 .word-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:10px}
 .word{font-size:40px;font-weight:800;letter-spacing:-.01em;text-align:center}
 .speaker{
-  width:38px;height:38px;border-radius:99px;border:1px solid var(--border);background:var(--card-2);
+  width:38px;height:38px;border-radius:var(--radius-pill);border:1px solid var(--border);background:var(--card-2);
   display:grid;place-items:center;color:var(--accent);flex:none;transition:all .15s;cursor:pointer;
 }
 .speaker:hover{border-color:var(--accent);background:var(--accent-soft)}
@@ -5487,7 +5528,7 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 
 .options{display:flex;flex-direction:column;gap:10px}
 .option{
-  width:100%;text-align:left;padding:15px 18px;border:1.5px solid var(--border);border-radius:13px;
+  width:100%;text-align:left;padding:15px 18px;border:1.5px solid var(--border);border-radius:var(--radius-sm);
   background:var(--card);font-weight:600;font-size:15px;transition:all .15s;color:var(--ink);cursor:pointer;
 }
 .option:hover{border-color:var(--border-strong)}
@@ -5496,23 +5537,24 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .option.faded{opacity:.45}
 
 .primary-btn{
-  width:100%;margin-top:18px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;
-  padding:15px;border-radius:13px;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;margin-top:18px;background:var(--accent);color:var(--text-on-accent);font-weight:700;font-size:15px;
+  padding:15px;border-radius:var(--radius-sm);transition:all .15s;display:flex;align-items:center;justify-content:center;gap:8px;
   border:none;cursor:pointer;
 }
 .primary-btn:hover{filter:brightness(1.05)}
 .primary-btn.hidden{display:none}
 
 .spell-input,.text-input{
-  width:100%;padding:16px 18px;border:1.5px solid var(--border);border-radius:13px;background:var(--card);
+  width:100%;padding:16px 18px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:var(--card);
   font-family:inherit;font-size:18px;font-weight:600;color:var(--ink);transition:all .15s;
 }
 .spell-input:focus,.text-input:focus{outline:none;border-color:var(--accent)}
 .spell-input.good{border-color:var(--good);color:var(--good)}
 .spell-input.bad{border-color:var(--bad);color:var(--bad)}
 .pill-btn{
-  display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);background:var(--card-2);
-  border-radius:99px;padding:8px 16px;font-weight:600;font-size:13px;color:var(--ink-2);transition:all .15s;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:var(--control-h);
+  border:1px solid var(--border);background:var(--card-2);
+  border-radius:var(--radius-pill);padding:0 16px;font-weight:600;font-size:13px;color:var(--ink-2);transition:all .15s;cursor:pointer;
 }
 .pill-btn:hover{border-color:var(--accent);color:var(--accent)}
 .pill-btn .msr{font-size:18px}
@@ -5525,19 +5567,20 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .search-wrap{position:relative;flex:1;min-width:220px}
 .search-wrap .msr{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:20px}
 .search-wrap .search-input{
-  width:100%;min-width:0;padding:12px 16px 12px 42px;border:1px solid var(--border);border-radius:12px;
+  width:100%;min-width:0;padding:12px 16px 12px 42px;border:1px solid var(--border);border-radius:var(--radius-sm);
   background:var(--card);font-family:inherit;font-size:14px;color:var(--ink);
 }
 .search-wrap .search-input:focus{outline:none;border-color:var(--accent)}
 .chips{display:flex;gap:8px}
 .chip{
+  display:inline-flex;align-items:center;justify-content:center;min-height:var(--control-h);
   border:1px solid var(--border);background:var(--card);color:var(--ink-2);font-weight:600;font-size:13px;
-  padding:10px 16px;border-radius:99px;transition:all .15s;cursor:pointer;
+  padding:0 16px;border-radius:var(--radius-pill);transition:all .15s;cursor:pointer;
 }
 .chip:hover{border-color:var(--border-strong)}
 .chip.active{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:700}
 
-.word-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.word-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow)}
 .word-line{
   display:grid;grid-template-columns:1.3fr 1.6fr 1.4fr auto auto;align-items:center;gap:16px;
   padding:14px 20px;border-bottom:1px solid var(--border);transition:background .15s;
@@ -5548,9 +5591,9 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .wl-gloss{color:var(--ink-2);font-size:14px}
 .wl-cn{color:var(--muted);font-size:14px}
 .wl-status{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--muted)}
-.dot{width:8px;height:8px;border-radius:99px;background:var(--border-strong)}
+.dot{width:8px;height:8px;border-radius:var(--radius-pill);background:var(--border-strong)}
 .dot.good{background:var(--good)}
-.wl-speaker{width:32px;height:32px;border-radius:99px;border:1px solid var(--border);display:grid;place-items:center;color:var(--accent);transition:all .15s;background:none;cursor:pointer}
+.wl-speaker{width:32px;height:32px;border-radius:var(--radius-pill);border:1px solid var(--border);display:grid;place-items:center;color:var(--accent);transition:all .15s;background:none;cursor:pointer}
 .wl-speaker:hover{background:var(--accent-soft);border-color:var(--accent)}
 .wl-speaker .msr{font-size:17px}
 
@@ -5559,57 +5602,59 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .conj-verb{font-size:32px;font-weight:800;letter-spacing:-.01em}
 .conj-verb .en{color:var(--muted);font-size:18px;font-weight:600;margin-left:8px}
 .tense-chips{display:flex;gap:8px;flex-wrap:wrap}
-.conj-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.conj-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow)}
 .conj-line{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid var(--border)}
 .conj-line:last-child{border-bottom:none}
 .conj-person{color:var(--muted);font-weight:500}
 .conj-form{color:var(--ink);font-weight:700;font-size:16px}
 .tip-strip{
   display:flex;align-items:center;gap:10px;margin-top:16px;background:var(--accent-soft);
-  border-radius:12px;padding:14px 18px;color:var(--accent);font-size:13.5px;font-weight:600;
+  border-radius:var(--radius-sm);padding:14px 18px;color:var(--accent);font-size:13.5px;font-weight:600;
 }
 .tip-strip .msr{font-size:20px;flex:none}
 
 /* ---- Grammar Book ---- */
 .book-layout{display:grid;grid-template-columns:250px 1fr;gap:24px;margin-top:20px}
 .book-nav{position:sticky;top:96px;align-self:start;display:flex;flex-direction:column;gap:4px;max-height:calc(100vh - 140px);overflow:auto}
-.chapter-btn{text-align:left;padding:11px 14px;border-radius:11px;color:var(--ink-2);font-weight:600;font-size:14px;transition:all .15s;background:none;border:none;cursor:pointer}
+.chapter-btn{text-align:left;padding:11px 14px;border-radius:var(--radius-xs);color:var(--ink-2);font-weight:600;font-size:14px;transition:all .15s;background:none;border:none;cursor:pointer}
 .chapter-btn:hover{background:var(--card-2)}
 .chapter-btn.active{background:var(--accent-soft);color:var(--accent);font-weight:700}
-.book-reader{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:34px 36px;box-shadow:var(--shadow)}
+.book-reader{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);padding:34px 36px;box-shadow:var(--shadow)}
 .book-reader h1{font-size:26px;font-weight:800;letter-spacing:-.02em;margin-bottom:18px}
 .book-reader p{color:var(--ink-2);font-size:15px;line-height:1.75;margin-bottom:16px}
 .book-reader h2{font-size:18px;font-weight:800;margin:26px 0 12px}
 
 /* ---- Progress ---- */
 .big-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
-.big-stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+.big-stat{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;box-shadow:var(--shadow)}
 .big-stat .bs-label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .big-stat .bs-value{font-size:38px;font-weight:800;letter-spacing:-.02em;margin-top:10px}
 .big-stat.accent .bs-value{color:var(--accent)}
 .progress-2col{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-top:16px}
-.panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;box-shadow:var(--shadow)}
 .panel-title{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
 .bar-chart{display:flex;align-items:flex-end;gap:12px;height:160px}
 .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;height:100%}
-.bar{width:100%;background:var(--card-2);border-radius:8px 8px 0 0;margin-top:auto;transition:height .3s}
+/* min-height keeps a baseline tick on zero-activity days, so the empty chart
+   reads as "no data yet" instead of a blank panel. */
+.bar{width:100%;min-height:3px;background:var(--border-strong);border-radius:var(--radius-xs) var(--radius-xs) 0 0;margin-top:auto;transition:height .3s}
 .bar.latest{background:var(--accent)}
 .bar-day{font-size:11px;color:var(--muted);font-weight:600}
 .acc-row{margin-bottom:18px}
 .acc-row .acc-top{display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin-bottom:7px}
 .acc-row .acc-top b{color:var(--accent)}
-.acc-track{height:7px;background:var(--card-2);border-radius:99px;overflow:hidden}
-.acc-fill{height:100%;background:var(--accent);border-radius:99px}
+.acc-track{height:7px;background:var(--border-strong);border-radius:var(--radius-pill);overflow:hidden}
+.acc-fill{height:100%;background:var(--accent);border-radius:var(--radius-pill)}
 .acc-total{border-top:1px solid var(--border);padding-top:14px;margin-top:22px;font-size:13px;color:var(--muted);font-weight:600;display:flex;justify-content:space-between}
 .acc-total b{color:var(--ink);font-weight:800}
 
 /* ---- Settings ---- */
-.settings-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);margin-top:20px}
-.settings-card-title{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:20px 22px 6px}
+.settings-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow);margin-top:20px}
+.settings-card-title{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);padding:20px 22px 6px}
 .data-row{display:flex;align-items:center;gap:16px;padding:16px 22px;border-top:1px solid var(--border);width:100%;text-align:left;transition:background .15s;background:none;border-left:none;border-right:none;border-bottom:none;cursor:pointer}
 .settings-card-title + .data-row{border-top:none}
 .data-row:hover{background:var(--card-2)}
-.data-row .row-chip{width:40px;height:40px;border-radius:11px;background:var(--card-2);display:grid;place-items:center;color:var(--accent);flex:none}
+.data-row .row-chip{width:40px;height:40px;border-radius:var(--radius-xs);background:var(--card-2);display:grid;place-items:center;color:var(--accent);flex:none}
 .data-row.danger .row-chip{color:var(--bad)}
 .data-row.danger .row-title{color:var(--bad)}
 .row-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
@@ -5619,16 +5664,19 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .pref-row{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-top:1px solid var(--border)}
 .pref-label{font-weight:600;font-size:14px}
 .segmented{display:flex;gap:6px}
-.seg{border:1px solid var(--border);background:var(--card);color:var(--ink-2);font-weight:600;font-size:13px;padding:8px 16px;border-radius:99px;transition:all .15s;cursor:pointer}
+.seg{display:inline-flex;align-items:center;justify-content:center;min-height:var(--control-h);border:1px solid var(--border);background:var(--card);color:var(--ink-2);font-weight:600;font-size:13px;padding:0 16px;border-radius:var(--radius-pill);transition:all .15s;cursor:pointer}
 .seg.active{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:700}
 .stepper{display:flex;align-items:center;gap:14px}
-.stepper button{width:34px;height:34px;border-radius:10px;border:1px solid var(--border);background:var(--card);display:grid;place-items:center;color:var(--ink-2);transition:all .15s;cursor:pointer}
+.stepper button{width:var(--control-h);height:var(--control-h);border-radius:var(--radius-xs);border:1px solid var(--border);background:var(--card);display:grid;place-items:center;color:var(--ink-2);transition:all .15s;cursor:pointer}
 .stepper button:hover{border-color:var(--accent);color:var(--accent)}
 .stepper .val{font-weight:800;font-size:17px;min-width:28px;text-align:center}
 .about-body{padding:20px 22px;border-top:1px solid var(--border);color:var(--ink-2);font-size:14px;line-height:1.7}
 
-/* ---- Section list ---- */
-.sub-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:34px 0 14px}
+/* ---- Section list ----
+   .sub-label and .settings-card-title are the SAME tier (a label for a block
+   inside a container) and share one treatment: bigger + darker + tighter
+   tracking than .eyebrow, which is the page-level kicker. */
+.sub-label{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);margin:34px 0 14px}
 
 /* ---- Responsive: collapse library grids under 820px ---- */
 @media (max-width:820px){
@@ -5642,8 +5690,11 @@ h1.page{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
    that was intentionally not ported). */
 button.card, button.chip, button.pill-btn, button.back-link { font-family: inherit; }
 button.card { cursor: pointer; color: var(--ink); }
-button.card:disabled { opacity: 0.45; cursor: not-allowed; }
-button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-color: var(--border); }
+/* De-emphasise a disabled card by recessing its surface, not by fading its
+   text (opacity .45 dropped the description to 1.56:1). */
+button.card:disabled { background: var(--card-2); box-shadow: none; cursor: not-allowed; }
+button.card:disabled .card-chip { background: var(--card); color: var(--muted); }
+button.card:disabled:hover { transform: none; box-shadow: none; border-color: var(--border); }
 
 /* Level-tier chips wrap on narrow screens; JS marks selection with .selected */
 .chips.wrap { flex-wrap: wrap; }
@@ -5688,7 +5739,7 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 
 /* ---- Community browse: normalize from legacy fixed overlay to a normal screen ---- */
 .community-browse-screen{position:static;top:auto;left:auto;right:auto;bottom:auto;z-index:auto;background:transparent;padding:0;overflow:visible}
-.browse-controls .filter-select{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:11px 14px;font-size:14px;font-weight:600;color:var(--ink);cursor:pointer}
+.browse-controls .filter-select{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:11px 14px;font-size:14px;font-weight:600;color:var(--ink);cursor:pointer}
 .browse-controls .filter-select:hover{border-color:var(--border-strong)}
 .browse-controls .filter-select:focus{outline:none;border-color:var(--accent)}
 
@@ -5698,19 +5749,19 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 .community-wordbook-list .error-message,
 .community-wordbook-list .empty-message{grid-column:1/-1;text-align:center;color:var(--muted);font-size:14px;padding:40px 0;background:none;border:none}
 .community-wordbook-list .empty-icon .msr{font-size:40px;color:var(--muted);margin-bottom:10px}
-.community-wordbook-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;transition:border-color .15s,box-shadow .15s;transform:none}
+.community-wordbook-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;transition:border-color .15s,box-shadow .15s;transform:none}
 .community-wordbook-card:hover{transform:none;border-color:var(--border-strong);box-shadow:var(--shadow-lg)}
 .wordbook-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin:0;padding:0;border:none}
 .wordbook-card-title{font-size:16px;font-weight:800;letter-spacing:-.01em;margin:0;color:var(--ink)}
-.wordbook-difficulty-badge{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.wordbook-difficulty-badge{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700;padding:3px 10px;border-radius:var(--radius-pill);white-space:nowrap}
 .wordbook-card-meta{display:flex;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:12.5px;font-weight:600;margin:0}
 .wordbook-card-meta span{display:inline-flex;align-items:center;gap:4px;color:var(--muted)}
 .wordbook-card-meta .msr,.preview-meta .msr{font-size:16px}
 .wordbook-card-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0}
-.wordbook-tag{border:1px solid var(--border);background:var(--card-2);color:var(--ink-2);font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:99px}
+.wordbook-tag{border:1px solid var(--border);background:var(--card-2);color:var(--ink-2);font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:var(--radius-pill)}
 .wordbook-card-description{color:var(--ink-2);font-size:13.5px;line-height:1.6;margin:0}
 .wordbook-card-actions{display:flex;gap:8px;margin-top:auto;padding-top:6px}
-.wordbook-card-actions .wordbook-action-btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;flex:1;padding:9px 12px;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;transition:all .15s}
+.wordbook-card-actions .wordbook-action-btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;flex:1;padding:9px 12px;border-radius:var(--radius-xs);font-size:13px;font-weight:700;cursor:pointer;transition:all .15s}
 .wordbook-card-actions .wordbook-action-btn .msr{font-size:17px}
 .wordbook-card-actions .wordbook-action-btn.preview{background:var(--card);border:1px solid var(--border);color:var(--ink-2)}
 .wordbook-card-actions .wordbook-action-btn.preview:hover{border-color:var(--accent);color:var(--accent);background:var(--card)}
@@ -5718,11 +5769,11 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 .wordbook-card-actions .wordbook-action-btn.download:hover{opacity:.92;background:var(--accent)}
 
 /* ---- Modals: card surface + quieter header ---- */
-.modal-content{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow-lg)}
+.modal-content{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);box-shadow:var(--shadow-lg)}
 .modal-header{padding:18px 22px;border-bottom:1px solid var(--border)}
 .modal-header h3{font-size:17px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:8px;color:var(--ink)}
 .modal-header h3 .msr{color:var(--accent);font-size:21px}
-.close-btn{font-size:1.5rem;border-radius:10px}
+.close-btn{font-size:1.5rem;border-radius:var(--radius-xs)}
 .modal-body{padding:22px}
 
 /* statsModal rows */
@@ -5737,18 +5788,18 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 .stats-tab-btn.active{color:var(--accent);border-bottom-color:var(--accent);background:var(--card)}
 .enhanced-stats-body h4{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:6px;margin-bottom:14px;border:none;padding:0}
 .enhanced-stats-body h4 .msr{font-size:17px;color:var(--accent)}
-.modal .stat-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;text-align:left;box-shadow:none}
+.modal .stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px;text-align:left;box-shadow:none}
 .modal .stat-card:hover{transform:none;box-shadow:none}
 .modal .stat-card-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0}
 .modal .stat-card-value{font-size:26px;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-top:8px}
-.chart-container{background:var(--card);border:1px solid var(--border);border-radius:14px}
-.stats-table-container{background:var(--card);border:1px solid var(--border);border-radius:14px}
+.chart-container{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm)}
+.stats-table-container{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm)}
 .stats-table thead{background:var(--card-2)}
 .stats-table th{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border)}
 .stats-table td{border-bottom:1px solid var(--border);color:var(--ink-2)}
 
 /* editor + select dialogs */
-.editor-toolbar-btn{border-radius:10px;font-weight:600}
+.editor-toolbar-btn{border-radius:var(--radius-xs);font-weight:600}
 .editor-toolbar-btn .msr,.editor-action-btn .msr{font-size:18px}
 .wordbook-select-icon .msr{font-size:20px;color:var(--accent)}
 
@@ -5777,31 +5828,34 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
    position (appended last). */
 
 /* ---- Conjugation setup: panels ---- */
-.conj-setup-panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:var(--shadow);margin-top:24px;transition:border-color .15s}
+.conj-setup-panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);padding:22px;box-shadow:var(--shadow);margin-top:24px;transition:border-color .15s}
 .conj-setup-panel.conj-context-active{border-color:var(--accent)}
 
 .conj-module-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px}
 .conj-module-toolbar label{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:13px;font-weight:600}
-.conj-module-toolbar select{min-width:0;padding:9px 12px;border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--ink);font-family:inherit;font-size:13.5px;font-weight:600}
+.conj-module-toolbar select{min-width:0;padding:9px 12px;border:1px solid var(--border);border-radius:var(--radius-xs);background:var(--card);color:var(--ink);font-family:inherit;font-size:13.5px;font-weight:600}
 .conj-module-toolbar select:focus{outline:none;border-color:var(--accent)}
 .conj-lesson-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .conj-lesson-status{display:flex;flex-direction:row;align-items:center;gap:8px;min-width:0}
 #conjLessonLabel{font-weight:700;font-size:13.5px;color:var(--ink-2)}
-#conjLessonCompletedBadge{display:inline-flex;align-items:center;padding:2px 10px;border-radius:999px;background:var(--good-soft);color:var(--good);font-size:12px;font-weight:700}
-.pill-btn:disabled{opacity:.45;cursor:default;pointer-events:none}
+#conjLessonCompletedBadge{display:inline-flex;align-items:center;padding:2px 10px;border-radius:var(--radius-pill);background:var(--good-soft);color:var(--good);font-size:12px;font-weight:700}
+.pill-btn:disabled{opacity:1;color:var(--muted);background:var(--card);border-color:var(--border);cursor:default;pointer-events:none}
 .conj-module-hint{text-align:center;color:var(--muted);font-size:12.5px;margin-top:14px}
 
 /* ---- Conjugation setup: tense matrix (dark-mode contrast fix — cards/labels
        retokenized on --card/--ink-2/--border instead of legacy level-btn) ---- */
-.conj-matrix-head{border:none;background:none;color:var(--muted);font-weight:700;font-size:12px;letter-spacing:.06em;min-height:30px}
-.conj-matrix-row-label{border:none;background:var(--card-2);color:var(--ink-2);border-radius:12px;font-size:13px;font-weight:700;padding:8px}
-.conj-matrix-cell{border:1px solid var(--border);background:var(--surface);border-radius:12px;padding:8px;display:grid;gap:6px;align-content:start}
-.conj-matrix-empty{color:var(--muted);font-size:13px}
+/* Column headers left-align with the cells below them; the row label hugs its
+   text instead of stretching into a full-height beige block; the cell loses its
+   border so the tense buttons inside are not double-boxed. */
+.conj-matrix-head{border:none;background:none;color:var(--muted);font-weight:700;font-size:12px;letter-spacing:.06em;min-height:24px;justify-content:flex-start;padding-left:2px}
+.conj-matrix-row-label{align-self:start;justify-content:flex-start;text-align:left;border:none;background:var(--card-2);color:var(--ink-2);border-radius:var(--radius-xs);font-size:13px;font-weight:700;padding:9px 12px}
+.conj-matrix-cell{border:none;background:none;border-radius:0;padding:0;display:grid;gap:6px;align-content:start}
+.conj-matrix-empty{color:var(--muted);font-size:13px;text-align:left;padding:9px 2px;opacity:.7}
 .conj-extra-title{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:14px 0 8px}
-.conj-mobile-mood-section{border:1px solid var(--border);border-radius:12px}
+.conj-mobile-mood-section{border:1px solid var(--border);border-radius:var(--radius-sm)}
 .conj-mobile-mood-label{background:var(--card-2);color:var(--ink-2);border-bottom:1px solid var(--border)}
 
-.chip.conj-tense-btn{display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-height:0;padding:9px 12px;border-radius:11px;background:var(--card);text-align:left}
+.chip.conj-tense-btn{display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-height:0;padding:9px 12px;border-radius:var(--radius-xs);background:var(--card);text-align:left}
 .chip.conj-tense-btn .ct-name{font-weight:700;font-size:13.5px;color:var(--ink);line-height:1.3}
 .chip.conj-tense-btn .ct-group{font-size:11px;font-weight:600;color:var(--muted);line-height:1.3}
 .chip.conj-tense-btn:hover{border-color:var(--border-strong)}
@@ -5812,12 +5866,12 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 .conjugation-lookup-header h3{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:800;color:var(--ink)}
 .conjugation-lookup-header h3 .msr{color:var(--accent);font-size:20px}
 .conjugation-lookup-header p{color:var(--muted);font-size:13px}
-.conj-lookup-input{flex:1;min-width:220px;padding:12px 16px;border:1.5px solid var(--border);border-radius:12px;background:var(--card);font-family:inherit;font-size:14px;font-weight:500;color:var(--ink);transition:border-color .15s}
+.conj-lookup-input{flex:1;min-width:220px;padding:12px 16px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:var(--card);font-family:inherit;font-size:14px;font-weight:500;color:var(--ink);transition:border-color .15s}
 .conj-lookup-input:focus{outline:none;border-color:var(--accent)}
-.conjugation-lookup-empty{margin-top:14px;padding:12px 16px;border-radius:12px;background:var(--card-2);color:var(--ink-2);font-size:13.5px}
-.conj-lookup-result-card{padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+.conjugation-lookup-empty{margin-top:14px;padding:12px 16px;border-radius:var(--radius-sm);background:var(--card-2);color:var(--ink-2);font-size:13.5px}
+.conj-lookup-result-card{padding:18px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface)}
 .conj-lookup-result-header h4{font-size:22px;font-weight:800;letter-spacing:-.01em;color:var(--ink)}
-.conj-lookup-meta span{padding:4px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700}
+.conj-lookup-meta span{padding:4px 12px;border-radius:var(--radius-pill);background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700}
 .conj-lookup-tense-card{padding:0;border:none;background:none;box-shadow:none}
 .conj-lookup-tense-title{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--muted);margin-bottom:8px}
 .conj-card-mini .conj-line{padding:8px 14px}
@@ -5834,7 +5888,7 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 #conjActiveLessonInfo{color:var(--muted);font-size:13px;font-weight:600;margin-right:auto}
 .word-row .en{color:var(--muted);font-size:18px;font-weight:600}
 
-.practice-feedback{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:16px;background:var(--card);border:1.5px solid var(--border);border-radius:13px;padding:12px 18px}
+.practice-feedback{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:16px;background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:12px 18px}
 .practice-feedback .feedback-text{margin:0;font-weight:700;font-size:15px}
 .practice-feedback.correct{border-color:var(--good);background:var(--good-soft)}
 .practice-feedback.correct .feedback-text{color:var(--good)}
@@ -5843,7 +5897,7 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 .practice-feedback .primary-btn{width:auto;margin-top:0;padding:10px 16px;flex:none}
 
 .conj-full-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;width:100%}
-.conj-full-item{display:flex;flex-direction:column;gap:6px;padding:12px 14px;background:var(--card);border:1.5px solid var(--border);border-radius:13px;transition:all .15s}
+.conj-full-item{display:flex;flex-direction:column;gap:6px;padding:12px 14px;background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius-sm);transition:all .15s}
 .conj-full-item.correct{border-color:var(--good);background:var(--good-soft)}
 .conj-full-item.incorrect{border-color:var(--bad);background:var(--bad-soft)}
 .conj-full-label{font-weight:700;font-size:13px;color:var(--ink-2);text-align:left}
@@ -5854,9 +5908,9 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 
 .vcp-title{font-size:22px;font-weight:800;letter-spacing:-.01em;margin-top:4px}
 .vc-practice-config-grid{margin-top:18px}
-#vcPracticeSetupCard .form-input{padding:11px 14px;border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--ink);font-family:inherit;font-size:14px;font-weight:500}
+#vcPracticeSetupCard .form-input{padding:11px 14px;border:1px solid var(--border);border-radius:var(--radius-xs);background:var(--card);color:var(--ink);font-family:inherit;font-size:14px;font-weight:500}
 #vcPracticeSetupCard .form-input:focus{outline:none;border-color:var(--accent)}
-.vc-practice-summary{background:var(--surface);border:1px solid var(--border);border-radius:12px}
+.vc-practice-summary{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm)}
 .vc-practice-summary .selection-summary-label{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.04em}
 .vc-practice-summary .selection-summary-item{font-size:13.5px;color:var(--ink-2)}
 .vc-practice-summary .selection-summary-item strong{color:var(--ink)}
@@ -5872,13 +5926,13 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 .grammar-nav-title .msr{color:var(--accent);font-size:19px}
 .grammar-nav-tree{padding:8px}
 .grammar-part-heading{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:14px 8px 5px}
-.grammar-chapter-btn{align-items:center;gap:5px;padding:8px 8px;border-radius:10px;font-size:13px;font-weight:600;color:var(--ink-2);transition:background .15s}
+.grammar-chapter-btn{align-items:center;gap:5px;padding:8px 8px;border-radius:var(--radius-xs);font-size:13px;font-weight:600;color:var(--ink-2);transition:background .15s}
 .grammar-chapter-btn:hover{background:var(--card-2)}
 .grammar-chapter-arrow{font-size:16px;margin-top:0;color:var(--muted)}
-.grammar-topic-link{padding:7px 8px 7px 29px;border-radius:9px;font-size:12.5px;font-weight:500;color:var(--ink-2);transition:all .15s}
+.grammar-topic-link{padding:7px 8px 7px 29px;border-radius:var(--radius-xs);font-size:12.5px;font-weight:500;color:var(--ink-2);transition:all .15s}
 .grammar-topic-link:hover{background:var(--card-2);color:var(--ink)}
 .grammar-topic-link.active{background:var(--accent-soft);color:var(--accent);font-weight:700;border-right:none}
-.grammar-sidebar-toggle{border:1px solid var(--border);border-radius:9px;padding:5px;color:var(--ink-2);background:none}
+.grammar-sidebar-toggle{border:1px solid var(--border);border-radius:var(--radius-xs);padding:5px;color:var(--ink-2);background:none}
 .grammar-sidebar-toggle:hover{background:var(--card-2)}
 .grammar-sidebar-toggle .msr{font-size:19px;display:block}
 .grammar-content-header{background:var(--bg);border-bottom-color:var(--border);padding:10px 20px}
@@ -5890,20 +5944,20 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
 .vc-search-panel{border-bottom-color:var(--border);padding:12px 14px 10px}
 .vc-search-label{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--ink-2)}
 .vc-search-icon.msr{font-size:18px;color:var(--muted)}
-.vc-search-input{border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--ink);font-family:inherit;font-size:13.5px;padding:10px 12px 10px 40px}
+.vc-search-input{border:1px solid var(--border);border-radius:var(--radius-xs);background:var(--card);color:var(--ink);font-family:inherit;font-size:13.5px;padding:10px 12px 10px 40px}
 .vc-search-input:focus{outline:none;border-color:var(--accent)}
-.vc-prep-link{border-radius:10px;border-left:none;padding:9px 10px;color:var(--ink-2);font-weight:600;transition:all .15s}
+.vc-prep-link{border-radius:var(--radius-xs);border-left:none;padding:9px 10px;color:var(--ink-2);font-weight:600;transition:all .15s}
 .vc-prep-link:hover{background:var(--card-2)}
 .vc-prep-link.active{background:var(--accent-soft);border-left:none}
 .vc-prep-link.active .vc-prep-name,.vc-prep-link.active .vc-prep-count{color:var(--accent)}
 .vc-prep-name{font-size:13.5px;font-weight:700}
 .vc-prep-count{font-size:11.5px;color:var(--muted)}
-.vc-card,.vc-search-choice-btn{border-radius:16px;border-color:var(--border);background:var(--card);box-shadow:var(--shadow)}
+.vc-card,.vc-search-choice-btn{border-radius:var(--radius-md);border-color:var(--border);background:var(--card);box-shadow:var(--shadow)}
 .vc-card-badge{background:var(--accent-soft);color:var(--accent)}
 .vc-kicker{color:var(--muted);letter-spacing:.14em;font-size:11px}
 .vc-panel-intro h2{font-weight:800;letter-spacing:-.01em}
 .vc-empty-state-icon.msr{width:auto;height:auto;font-size:40px;opacity:.4}
-.grammar-markdown{max-width:880px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:34px 36px;box-shadow:var(--shadow)}
+.grammar-markdown{max-width:880px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);padding:34px 36px;box-shadow:var(--shadow)}
 @media (max-width:768px){.grammar-markdown{padding:22px 18px}}
 
 /* ===== INTEGRATION FIXES ===== */
@@ -5911,3 +5965,108 @@ button.card:disabled:hover { transform: none; box-shadow: var(--shadow); border-
    not the browser default blue */
 .content a{color:var(--accent);text-decoration-color:var(--border-strong)}
 .content a:hover{text-decoration-color:var(--accent)}
+
+/* ============================================================
+   ===== VISUAL CONSISTENCY PASS =====
+   Contrast, one back component, one native-select look, calmer
+   modal, responsive behaviour down to 390px, reduced motion.
+   Appended last so it wins by cascade order at equal specificity.
+   ============================================================ */
+
+/* ---- Native selects: match .pill-btn instead of the OS widget ---- */
+.conj-module-toolbar select,
+.browse-controls .filter-select,
+select.form-input{
+  appearance:none;-webkit-appearance:none;
+  padding-right:34px;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%236f6a5e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 12px center;
+  cursor:pointer;
+}
+[data-theme="dark"] .conj-module-toolbar select,
+[data-theme="dark"] .browse-controls .filter-select,
+[data-theme="dark"] select.form-input{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%239a9488' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+}
+
+/* ---- One back component: the legacy .back-btn pill on the browse screens
+       now renders as the same quiet text link as .back-link ---- */
+.back-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  min-height:0;padding:0;margin-bottom:22px;
+  background:none;border:none;border-radius:0;
+  color:var(--muted);font-family:inherit;font-weight:600;font-size:13px;
+  transition:color .15s;cursor:pointer;
+}
+.back-btn:hover{background:none;border-color:transparent;color:var(--ink);transform:none}
+
+/* ---- Modal: one radius family, one active-tab signal, lighter scrim ---- */
+.modal{backdrop-filter:blur(4px)}
+.modal-content{border-radius:var(--radius-lg)}
+.stats-tab-btn{min-height:var(--control-h);border-radius:var(--radius-pill);border-bottom:0}
+.stats-tab-btn.active{background:var(--accent-soft);color:var(--accent);border-bottom-color:transparent}
+
+/* ---- Legacy control group: same height as the redesign primitives ---- */
+.next-btn,
+.check-btn,
+.pronunciation-btn,
+.filter-btn,
+.form-btn,
+.editor-toolbar-btn,
+.wordbook-card-actions button,
+.preview-download-btn{min-height:var(--control-h)}
+
+/* ---- Desktop vertical rhythm: the four language homes used to end at ~60%
+       of a 900px viewport with a void underneath. Let the portal grid claim
+       the remaining height so the tiles read as the page, not as a strip. ---- */
+@media (min-width:900px) and (min-height:700px){
+  #welcomeScreen > .container,
+  #germanWelcomeScreen > .container,
+  #englishWelcomeScreen > .container,
+  #frenchWelcomeScreen > .container{
+    display:flex;flex-direction:column;justify-content:center;
+    min-height:calc(100vh - 190px);
+  }
+  #welcomeScreen > .container > .card-grid,
+  #germanWelcomeScreen > .container > .card-grid,
+  #englishWelcomeScreen > .container > .card-grid,
+  #frenchWelcomeScreen > .container > .card-grid{
+    grid-auto-rows:minmax(168px,auto);
+  }
+}
+
+/* ---- Responsive: phones (down to 390px) ---- */
+@media (max-width:560px){
+  :root{--control-h:44px;--control-h-sm:38px}
+  h1.page{font-size:24px}
+  .portal h1{font-size:32px}
+  .word{font-size:32px}
+  .practice-card{padding:22px 18px;border-radius:var(--radius-md)}
+  .card{padding:18px}
+  .card-grid{gap:12px;margin-top:22px}
+  .browse-controls{gap:8px;margin:18px 0 14px}
+  .chips{flex-wrap:wrap}
+  /* the 5-column browse row cannot hold 3 text columns on a phone */
+  .word-line{grid-template-columns:1fr auto;gap:4px 10px;padding:12px 14px}
+  .wl-word{grid-column:1}
+  .wl-gloss,.wl-cn{grid-column:1;font-size:13px}
+  .wl-status{grid-column:1;margin-top:2px}
+  .wl-speaker,.wl-actions{grid-column:2;grid-row:1;align-self:start}
+  .big-stat{padding:18px}
+  .big-stat .bs-value{font-size:30px}
+  .conj-verb{font-size:26px}
+  .practice-feedback{flex-direction:column;align-items:stretch;gap:10px}
+  .practice-feedback .primary-btn{width:100%}
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+    scroll-behavior:auto !important;
+  }
+  .card:hover,.lang-card:hover,.community-wordbook-card:hover,.mobile-floating-back:hover{transform:none}
+}
