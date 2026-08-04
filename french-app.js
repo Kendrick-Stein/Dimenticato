@@ -233,22 +233,22 @@
           <div class="card-grid cols-2">
             <button class="card" id="goFrenchVocabularyBtn">
               <span class="card-chip"><span class="msr">translate</span></span>
-              <span class="card-title">Vocabulary</span>
+              <span class="card-title">词汇</span>
               <span class="card-desc">主题词汇、我的词本与三种练习模式</span>
             </button>
             <button class="card" id="goFrenchGrammarBtn">
               <span class="card-chip"><span class="msr">menu_book</span></span>
-              <span class="card-title">Grammar</span>
+              <span class="card-title">语法</span>
               <span class="card-desc">A1-B1 语法书与高频动词变位</span>
             </button>
             <button class="card" id="goFrenchProgressBtn">
               <span class="card-chip"><span class="msr">monitoring</span></span>
-              <span class="card-title">Progress</span>
+              <span class="card-title">学习进度</span>
               <span class="card-desc">查看法语词汇掌握量与练习统计</span>
             </button>
             <button class="card" id="goFrenchSettingsBtn">
               <span class="card-chip"><span class="msr">tune</span></span>
-              <span class="card-title">Settings &amp; Data</span>
+              <span class="card-title">设置与数据</span>
               <span class="card-desc">课程说明、社区词本与全站数据工具</span>
             </button>
           </div>
@@ -257,30 +257,30 @@
 
       <section id="frenchVocabularyScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="frenchVocabularyBackBtn"><span class="msr">arrow_back</span>返回 French Home</button>
+          <button class="back-link" id="frenchVocabularyBackBtn"><span class="msr">arrow_back</span>返回法语首页</button>
           <div class="eyebrow">French / Vocabulary</div>
           <h1 class="page">Choisir le vocabulaire</h1>
           <p class="desc">选择系统法语课程、个人词本或共享社区词库。</p>
           <div class="card-grid cols-3">
             <button class="card" id="frenchSystemVocabularyBtn">
               <span class="card-chip"><span class="msr">dataset</span></span>
-              <span class="card-title">System Vocabulary</span>
+              <span class="card-title">系统词汇库</span>
               <span class="card-desc"><span id="frenchSystemVocabularyCount">0</span> 个 A1-B2 教材词条与主题表达</span>
             </button>
             <button class="card" id="frenchWordbooksBtn">
               <span class="card-chip"><span class="msr">bookmark</span></span>
-              <span class="card-title">My Wordbooks</span>
+              <span class="card-title">我的词本</span>
               <span class="card-desc">导入、创建并管理个人法语词本</span>
             </button>
             <button class="card" id="frenchCommunityBtn">
               <span class="card-chip"><span class="msr">groups</span></span>
-              <span class="card-title">Community Wordbooks</span>
+              <span class="card-title">社区词本</span>
               <span class="card-desc">浏览并导入共享社区资源</span>
             </button>
           </div>
           <div class="section-head-row">
             <div>
-              <div class="sub-label">My French Wordbooks</div>
+              <div class="sub-label">我的法语词本</div>
               <span class="card-desc">这里只显示 French 词本</span>
             </div>
             <div class="inline-actions">
@@ -295,7 +295,7 @@
 
       <section id="frenchVocabularyModesScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="frenchModesBackBtn"><span class="msr">arrow_back</span>返回 Vocabulary</button>
+          <button class="back-link" id="frenchModesBackBtn"><span class="msr">arrow_back</span>返回词汇</button>
           <div class="eyebrow">French / Vocabulary</div>
           <h1 class="page">Choisir un mode</h1>
           <p class="desc">选择一种方式练习当前法语词汇。</p>
@@ -321,17 +321,17 @@
           <div class="card-grid cols-3">
             <button class="card" id="frenchMultipleChoiceBtn">
               <span class="card-chip"><span class="msr">quiz</span></span>
-              <span class="card-title">Multiple Choice</span>
+              <span class="card-title">选择题</span>
               <span class="card-desc">看法语，选择正确中文释义</span>
             </button>
             <button class="card" id="frenchSpellingBtn">
               <span class="card-chip"><span class="msr">keyboard</span></span>
-              <span class="card-title">Spelling</span>
+              <span class="card-title">拼写</span>
               <span class="card-desc">看中文，输入法语单词或短语</span>
             </button>
             <button class="card" id="frenchBrowseBtn">
               <span class="card-chip"><span class="msr">list</span></span>
-              <span class="card-title">Browse</span>
+              <span class="card-title">浏览</span>
               <span class="card-desc">浏览、搜索并筛选法语词汇</span>
             </button>
           </div>
@@ -421,7 +421,7 @@
 
       <section id="frenchGrammarScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="frenchGrammarBackBtn"><span class="msr">arrow_back</span>返回 French Home</button>
+          <button class="back-link" id="frenchGrammarBackBtn"><span class="msr">arrow_back</span>返回法语首页</button>
           <div class="eyebrow">French / Grammar</div>
           <h1 class="page">Grammaire et conjugaison</h1>
           <p class="desc">按 A1-B1 进阶阅读语法，并通过练习掌握高频动词变位。</p>
@@ -433,7 +433,7 @@
             </button>
             <button class="card" id="frenchGrammarBookBtn">
               <span class="card-chip"><span class="msr">auto_stories</span></span>
-              <span class="card-title">Grammar Book</span>
+              <span class="card-title">语法书</span>
               <span class="card-desc">23 个 A1-B1 中文语法主题与法语例句</span>
             </button>
           </div>
@@ -442,7 +442,7 @@
 
       <section id="frenchProgressScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="frenchProgressBackBtn"><span class="msr">arrow_back</span>返回 French Home</button>
+          <button class="back-link" id="frenchProgressBackBtn"><span class="msr">arrow_back</span>返回法语首页</button>
           <div class="eyebrow">French / Progress</div>
           <h1 class="page">Progression en français</h1>
           <p class="desc">基于本机保存的法语词汇练习记录统计。</p>
@@ -495,16 +495,16 @@
 
       <section id="frenchSettingsScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="frenchSettingsBackBtn"><span class="msr">arrow_back</span>返回 French Home</button>
+          <button class="back-link" id="frenchSettingsBackBtn"><span class="msr">arrow_back</span>返回法语首页</button>
           <div class="eyebrow">French / Settings &amp; Data</div>
           <h1 class="page">Paramètres du module français</h1>
           <p class="desc">查看课程范围，并进入共享数据工具。</p>
           <div class="settings-card">
-            <div class="settings-card-title">French curriculum</div>
+            <div class="settings-card-title">课程说明</div>
             <div class="about-body">词汇覆盖《你好！法语》1-4 书末三语总词汇表（A1-B2），语法与变位按 A1-B1 课程重新组织。网页只保存词条数据，不包含教材扫描页。</div>
           </div>
           <div class="settings-card">
-            <div class="settings-card-title">Data &amp; community</div>
+            <div class="settings-card-title">数据与社区</div>
             <button class="data-row" id="frenchSettingsCommunityBtn">
               <span class="row-chip"><span class="msr">groups</span></span>
               <span class="row-body"><span class="row-title">Open Community Wordbooks</span><span class="row-sub">浏览并导入共享词本</span></span>
