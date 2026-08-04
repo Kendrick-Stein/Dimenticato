@@ -59,6 +59,7 @@ import csv
 import json
 import os
 import re
+import sys
 from collections import Counter
 from pathlib import Path
 
@@ -566,6 +567,23 @@ def rank_by_frequency(entries: list[dict]) -> tuple[list[dict], int, int]:
 
 
 def main() -> None:
+    # data/german-vocabulary.js is now produced by the richer
+    # scripts/build_german_vocabulary.py, which imports parse_entries() from
+    # this module for the in-repo pgh.csv Chinese glossary.  Running this
+    # script's own writer would silently downgrade the dataset (no English
+    # gloss, no part of speech, no CEFR level, duplicate headwords), so it
+    # refuses unless it is explicitly asked for the legacy output.
+    if os.environ.get("GERMAN_VOCAB_LEGACY_OVERWRITE") != "1":
+        sys.exit(
+            "refusing to overwrite data/german-vocabulary.js.\n"
+            "  This is the legacy builder; it is kept because\n"
+            "  scripts/build_german_vocabulary.py imports parse_entries()\n"
+            "  from it to read deutsch-data/vocab/pgh.csv.\n"
+            "  To rebuild the dataset run:\n"
+            "      python3 scripts/build_german_vocabulary.py\n"
+            "  To produce the old 15,507-entry file anyway:\n"
+            "      GERMAN_VOCAB_LEGACY_OVERWRITE=1 python3 "
+            "scripts/process_german_vocab.py")
     entries = parse_entries()
     n_pgh = len(entries)
     entries, n_added = expand_with_handedict(entries)
