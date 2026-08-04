@@ -213,25 +213,33 @@ group('合并导入不覆盖本地进度', function () {
 });
 
 // ===== 重置 / 清空的作用域 =====
-group('clearAllData 只删自己的键', function () {
+// 原来测的是 Storage.clearAllData()。s1 存储流把它整个删掉了，改成
+// DimStorage.reset({ scope })——按语言范围、按 key 精确删除。断言的意图
+// （只删自己的前缀、不碰同源里别人的数据）没变，只是换成了现在的入口。
+group('DimStorage.reset 只删自己的键', function () {
   resetStorage();
   ls.setItem('dimenticato_mastered', '["ciao"]');
   ls.setItem('unrelated_app_token', 'keep-me');
-  Storage.clearAllData();
-  assertEqual(ls.getItem('dimenticato_mastered'), null, 'clearAllData 删掉 dimenticato_ 前缀的键');
-  assertEqual(ls.getItem('unrelated_app_token'), 'keep-me', 'clearAllData 不动同源的其它键');
+  win.DimStorage.reset({ scope: 'all' });
+  assertEqual(ls.getItem('dimenticato_mastered'), null, 'reset 删掉 dimenticato_ 前缀的键');
+  assertEqual(ls.getItem('unrelated_app_token'), 'keep-me', 'reset 不动同源的其它键');
 });
 
 group('reset 不应清空整个 origin', function () {
   resetStorage();
   ls.setItem('unrelated_app_token', 'keep-me');
   ls.setItem('dimenticato_progress_wb_german_wb1', '["Haus"]');
+  // Storage.reset() 会先 prompt 选范围、再 confirm。不作答的话 prompt 返回
+  // null，函数直接 return，什么都不会发生 —— 之前这条测试量的其实是「没作答」，
+  // 不是重置行为。'5' = 全部语言。
+  win._promptAnswer = '5';
+  win._confirmAnswer = true;
   try {
     Storage.reset();  // 内部会调用 UI 刷新函数，缺 DOM 时可能抛错，不影响存储断言
   } catch (e) { /* UI 刷新失败无所谓 */ }
-  knownIssue(ls.getItem('unrelated_app_token') === 'keep-me',
-    'reset() 用的是 localStorage.clear()，会连同源里别的应用数据一起清掉；应改成只删自己的前缀',
-    's1-core-storage-srs');
+  win._promptAnswer = null;
+  assert(ls.getItem('unrelated_app_token') === 'keep-me',
+    'reset() 只删自己的前缀，不碰同源里别的应用数据');
   assertEqual(ls.getItem('dimenticato_mastered'), '[]', 'reset 之后已掌握单词被清空并落盘');
 });
 
