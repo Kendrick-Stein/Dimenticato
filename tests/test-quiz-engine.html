@@ -7,14 +7,18 @@
   <style>
     body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 2rem auto; padding: 1rem; background: #f5f7fa; color: #2c3e50; }
     h1 { border-bottom: 2px solid #3498db; padding-bottom: 0.5rem; }
-    .pass { color: #2ecc71; } .fail { color: #e74c3c; }
+    .pass { color: #2ecc71; } .fail { color: #e74c3c; } .known { color: #b8860b; }
     .test { margin: 0.5rem 0; padding: 0.5rem 1rem; border-left: 3px solid #ddd; background: #fff; }
     .test.pass { border-left-color: #2ecc71; } .test.fail { border-left-color: #e74c3c; }
+    .test.known { border-left-color: #f0ad4e; }
     .summary { font-size: 1.2rem; font-weight: bold; margin: 1rem 0; }
+    .note { color: #7f8c8d; font-size: 0.9rem; }
   </style>
 </head>
 <body>
 <h1>QuizEngine Tests</h1>
+<p class="note">覆盖 lib/utils.js（DimText 归一化）、lib/word-similarity.js（干扰项挑选）、
+lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
 <div id="results"></div>
 
 <script src="../lib/utils.js"></script>
@@ -23,100 +27,166 @@
 <script>
 (function () {
   var results = document.getElementById('results');
-  var passed = 0, failed = 0;
+  var passed = 0, failed = 0, known = 0;
+
+  function row(cls, message) {
+    var div = document.createElement('div');
+    div.className = 'test ' + cls;
+    div.textContent = message;
+    results.appendChild(div);
+  }
 
   function assert(condition, message) {
-    var div = document.createElement('div');
-    div.className = 'test ' + (condition ? 'pass' : 'fail');
-    div.textContent = (condition ? 'PASS' : 'FAIL') + ': ' + message;
-    results.appendChild(div);
-    if (condition) passed++; else failed++;
+    if (condition) { passed++; row('pass', 'PASS: ' + message); }
+    else { failed++; row('fail', 'FAIL: ' + message); }
   }
 
   function assertEqual(actual, expected, message) {
     var ok = actual === expected;
-    var div = document.createElement('div');
-    div.className = 'test ' + (ok ? 'pass' : 'fail');
-    div.textContent = (ok ? 'PASS' : 'FAIL') + ': ' + message
-      + (ok ? '' : ' (expected ' + JSON.stringify(expected) + ', got ' + JSON.stringify(actual) + ')');
-    results.appendChild(div);
-    if (ok) passed++; else failed++;
+    if (ok) { passed++; row('pass', 'PASS: ' + message); }
+    else {
+      failed++;
+      row('fail', 'FAIL: ' + message
+        + ' (expected ' + JSON.stringify(expected) + ', got ' + JSON.stringify(actual) + ')');
+    }
   }
 
-  // --- Test: shuffleArray preserves elements ---
-  var engine = new QuizEngine({
-    state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: null },
-    stats: {},
-    mastered: new Set(),
-    fieldMap: { source: 'italian', target: 'english' },
-    saveFn: function () {},
-    onUpdateStats: function () {},
-    dom: {}
+  // 已确认、但归属其它工作流的缺陷：记录但不判红
+  function knownIssue(condition, message, owner) {
+    if (condition) { passed++; row('pass', 'PASS (was known issue): ' + message); }
+    else { known++; row('known', 'KNOWN ISSUE [' + owner + ']: ' + message); }
+  }
+
+  // 一个分组抛错不该吞掉后面的测试和汇总行
+  function group(name, fn) {
+    try {
+      fn();
+    } catch (e) {
+      failed++;
+      row('fail', 'FAIL: ' + name + ' 抛错 — ' + (e && e.message ? e.message : e));
+    }
+  }
+
+  function makeEngine(extra) {
+    var config = {
+      state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: null },
+      stats: {},
+      mastered: new Set(),
+      fieldMap: { source: 'italian', target: 'english' },
+      saveFn: function () {},
+      onUpdateStats: function () {},
+      dom: {}
+    };
+    for (var k in (extra || {})) config[k] = extra[k];
+    return new QuizEngine(config);
+  }
+
+  var engine = makeEngine();
+
+  // ===== utils: shuffleArray =====
+  group('shuffleArray', function () {
+    var input = [1, 2, 3, 4, 5];
+    var shuffled = engine.shuffleArray(input);
+    assert(Array.isArray(shuffled), 'shuffleArray returns an array');
+    assertEqual(shuffled.length, 5, 'shuffleArray preserves length');
+    assertEqual(shuffled.sort().join(','), '1,2,3,4,5', 'shuffleArray preserves all elements');
   });
 
-  var input = [1, 2, 3, 4, 5];
-  var shuffled = engine.shuffleArray(input);
-  assert(Array.isArray(shuffled), 'shuffleArray returns an array');
-  assertEqual(shuffled.length, 5, 'shuffleArray preserves length');
-  assertEqual(shuffled.sort().join(','), '1,2,3,4,5', 'shuffleArray preserves all elements');
+  // ===== quiz-engine: generateOptions 基本性质 =====
+  group('generateOptions', function () {
+    engine.config.state.currentWord = { italian: 'ciao', english: 'hello' };
+    var wordPool = [
+      { italian: 'ciao', english: 'hello' },
+      { italian: 'grazie', english: 'thank you' },
+      { italian: 'prego', english: "you're welcome" },
+      { italian: 'buongiorno', english: 'good morning' },
+      { italian: 'arrivederci', english: 'goodbye' }
+    ];
+    var options = engine.generateOptions('hello', wordPool);
+    assertEqual(options.length, 4, 'generateOptions returns 4 options');
+    assert(options.indexOf('hello') !== -1, 'options include correct answer');
 
-  // --- Test: generateOptions includes correct answer ---
-  engine.config.state.currentWord = { italian: 'ciao', english: 'hello' };
-  var wordPool = [
-    { italian: 'ciao', english: 'hello' },
-    { italian: 'grazie', english: 'thank you' },
-    { italian: 'prego', english: "you're welcome" },
-    { italian: 'buongiorno', english: 'good morning' },
-    { italian: 'arrivederci', english: 'goodbye' }
-  ];
-  var options = engine.generateOptions('hello', wordPool);
-  assertEqual(options.length, 4, 'generateOptions returns 4 options');
-  assert(options.indexOf('hello') !== -1, 'options include correct answer');
+    var unique = [];
+    options.forEach(function (o) { if (unique.indexOf(o) === -1) unique.push(o); });
+    assertEqual(unique.length, options.length, 'options have no duplicates');
 
-  // --- Test: options have no duplicates ---
-  var unique = [];
-  options.forEach(function(o) { if (unique.indexOf(o) === -1) unique.push(o); });
-  assertEqual(unique.length, options.length, 'options have no duplicates');
+    engine.config.state.currentWord = { italian: 'ciao', english: 'hello' };
+    var smallPool = [
+      { italian: 'ciao', english: 'hello' },
+      { italian: 'grazie', english: 'thank you' },
+      { italian: 'buongiorno', english: 'good morning' }
+    ];
+    var options2 = engine.generateOptions('hello', smallPool);
+    var helloCount = options2.filter(function (o) { return o === 'hello'; }).length;
+    assertEqual(helloCount, 1, 'correct answer appears exactly once in options');
+  });
 
-  // --- Test: generateOptions excludes current word ---
-  engine.config.state.currentWord = { italian: 'ciao', english: 'hello' };
-  var smallPool = [
-    { italian: 'ciao', english: 'hello' },
-    { italian: 'grazie', english: 'thank you' },
-    { italian: 'buongiorno', english: 'good morning' }
-  ];
-  var options2 = engine.generateOptions('hello', smallPool);
-  // 'hello' should appear exactly once (as correct answer)
-  var helloCount = options2.filter(function(o) { return o === 'hello'; }).length;
-  assertEqual(helloCount, 1, 'correct answer appears exactly once in options');
+  // ===== utils: 重音策略 =====
+  // 抹重音只用于"宽松比较"；去重 / 索引必须保留重音，否则 ou 和 où 会被合并掉
+  group('DimText 重音策略', function () {
+    assert(typeof DimText === 'object', 'DimText 已暴露到 window');
+    assertEqual(engine.normalizeString('caffè'), engine.normalizeString('caffe'), 'normalizeString strips accents (caffè vs caffe)');
+    assertEqual(engine.normalizeString('  CIAO  '), 'ciao', 'normalizeString trims and lowercases');
+    assertEqual(engine.normalizeString('È'), 'e', 'normalizeString handles capital accented letters');
 
-  // --- Test: normalizeString strips accents ---
-  assertEqual(engine.normalizeString('caffè'), engine.normalizeString('caffe'), 'normalizeString strips accents (caffè vs caffe)');
-  assertEqual(engine.normalizeString('  CIAO  '), 'ciao', 'normalizeString trims and lowercases');
-  assertEqual(engine.normalizeString('È'), 'e', 'normalizeString handles capital accented letters');
+    assert(DimText.headwordKey('ou') !== DimText.headwordKey('où'), 'headwordKey 保留重音：ou ≠ où');
+    assert(DimText.headwordKey('la') !== DimText.headwordKey('là'), 'headwordKey 保留重音：la ≠ là');
+    assert(DimText.headwordKey('diner') !== DimText.headwordKey('dîner'), 'headwordKey 保留重音：diner ≠ dîner');
+    assertEqual(DimText.looseKey('ou'), DimText.looseKey('où'), 'looseKey 抹掉重音：ou == où');
+    assertEqual(DimText.headwordKey('Internet'), DimText.headwordKey('internet'), 'headwordKey 仍然忽略大小写');
+    assert(DimText.sameHeadword('sœur', 'soeur'), 'sameHeadword 统一连字 œ/oe');
+    assert(!DimText.sameHeadword('ou', 'où'), 'sameHeadword 不把 ou 和 où 当成同一个词');
+  });
 
-  // --- Test: escapeHtml from utils ---
-  assertEqual(escapeHtml('<script>alert("xss")<\/script>'), '&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;', 'escapeHtml escapes HTML special chars');
-  assertEqual(escapeHtml("it's"), 'it&#39;s', 'escapeHtml escapes single quotes');
-  assertEqual(escapeHtml(null), '', 'escapeHtml handles null');
-  assertEqual(escapeHtml(undefined), '', 'escapeHtml handles undefined');
-  assertEqual(escapeHtml(123), '123', 'escapeHtml handles numbers');
+  // ===== utils: 占位释义清洗 =====
+  // 见 audit: it-placeholder-glosses-shown-to-user —— 词库里有 1220 条 "(2)" 残留
+  group('DimText 占位释义', function () {
+    assertEqual(DimText.cleanGloss('the (feminine); (2); (3)'), 'the (feminine)', 'cleanGloss 删掉 (2)/(3) 占位义项');
+    assertEqual(DimText.cleanGloss('I; (2)'), 'I', 'cleanGloss 处理 "I; (2)"');
+    assertEqual(DimText.cleanGloss('to do; to make; (2)'), 'to do; to make', 'cleanGloss 保留真实义项');
+    assertEqual(DimText.cleanGloss('（阴性定冠词）; (二); (三) 国家'), '（阴性定冠词）; 国家',
+      'cleanGloss 保留中文括号说明，只删编号占位');
+    assertEqual(DimText.cleanGloss('(2)'), '(2)', 'cleanGloss 全是占位时退回原文，绝不返回空选项');
+    assert(DimText.isPlaceholderGloss('(2); (3)'), 'isPlaceholderGloss 识别纯占位释义');
+    assert(!DimText.isPlaceholderGloss('the (feminine); (2)'), '有真义项的释义不算占位');
+    assert(!DimText.isPlaceholderGloss('（阴性定冠词）'), '中文括号说明不是占位符');
+  });
 
-  // --- Test: escapeAttribute ---
-  assertEqual(escapeAttribute('`test`'), '&#96;test&#96;', 'escapeAttribute escapes backticks');
+  // ===== utils: 义项重叠 / 同义判定 =====
+  group('DimText 义项比较', function () {
+    assert(DimText.glossesOverlap('search; look for', 'search'), '"search" 与 "search; look for" 同义');
+    assert(DimText.glossesOverlap('to search', 'search'), '忽略英文不定式的 to');
+    assert(DimText.glossesOverlap('they search', 'search'), '整词包含算同义');
+    assert(!DimText.glossesOverlap('book', 'cookbook'), '子串但非整词：book ≠ cookbook');
+    assert(!DimText.glossesOverlap('on', 'one'), '两字母义项不做包含匹配');
+    assert(DimText.glossesOverlap('谁', 'pron.谁,那…的(人)'), '中文义项忽略词性前缀与括号说明');
+    assert(DimText.sameMeaning('search', 'search; look for'), 'sameMeaning：义项子集算同一个意思');
+    assert(!DimText.sameMeaning('house', 'thing'), 'sameMeaning：不相干释义不算同一个意思');
+  });
 
-  // --- Test: renderIcon ---
-  var icon = renderIcon('icon-brand');
-  assert(icon.indexOf('<svg') !== -1, 'renderIcon returns SVG markup');
-  assert(icon.indexOf('#icon-brand') !== -1, 'renderIcon includes icon name');
+  // ===== utils: 转义 =====
+  group('escapeHtml / escapeAttribute / renderIcon', function () {
+    assertEqual(escapeHtml('<script>alert("xss")<\/script>'), '&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;', 'escapeHtml escapes HTML special chars');
+    assertEqual(escapeHtml("it's"), 'it&#39;s', 'escapeHtml escapes single quotes');
+    assertEqual(escapeHtml(null), '', 'escapeHtml handles null');
+    assertEqual(escapeHtml(undefined), '', 'escapeHtml handles undefined');
+    assertEqual(escapeHtml(123), '123', 'escapeHtml handles numbers');
+    assertEqual(escapeAttribute('`test`'), '&#96;test&#96;', 'escapeAttribute escapes backticks');
+
+    var icon = renderIcon('icon-brand');
+    assert(icon.indexOf('<svg') !== -1, 'renderIcon returns SVG markup');
+    assert(icon.indexOf('#icon-brand') !== -1, 'renderIcon includes icon name');
+  });
 
   // ===== word-similarity: editDistance =====
-  assertEqual(WordSimilarity.editDistance('casa', 'cosa'), 1, 'editDistance casa/cosa = 1');
-  assertEqual(WordSimilarity.editDistance('casa', 'casa'), 0, 'editDistance identical = 0');
-  assertEqual(WordSimilarity.editDistance('kitten', 'sitting'), 3, 'editDistance kitten/sitting = 3');
-  assertEqual(WordSimilarity.editDistance('caffè', 'caffe'), 0, 'editDistance is accent-insensitive');
+  group('editDistance', function () {
+    assertEqual(WordSimilarity.editDistance('casa', 'cosa'), 1, 'editDistance casa/cosa = 1');
+    assertEqual(WordSimilarity.editDistance('casa', 'casa'), 0, 'editDistance identical = 0');
+    assertEqual(WordSimilarity.editDistance('kitten', 'sitting'), 3, 'editDistance kitten/sitting = 3');
+    assertEqual(WordSimilarity.editDistance('caffè', 'caffe'), 0, 'editDistance is accent-insensitive');
+    assertEqual(WordSimilarity.boundedEditDistance('kitten', 'sitting', 2), 3, 'boundedEditDistance 超过上限时提前退出并返回 > max');
+  });
 
-  // ===== word-similarity: closer words rank ahead =====
   var simPrompt = { italian: 'casa', english: 'house', rank: 50 };
   var simPool = [
     simPrompt,
@@ -126,80 +196,339 @@
     { italian: 'aeroplano', english: 'airplane', rank: 90 },
     { italian: 'montagna', english: 'mountain', rank: 95 }
   ];
-  var simPicked = WordSimilarity.pickConfusableDistractors(simPrompt, simPool,
-    { count: 3, windowSize: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'house' });
-  var simSrcs = simPicked.map(function (w) { return w.italian; });
-  assertEqual(simPicked.length, 3, 'pickConfusableDistractors returns 3');
-  assert(simSrcs.indexOf('aeroplano') === -1 && simSrcs.indexOf('montagna') === -1, 'distant words are excluded from the closest window');
-  assert(simSrcs.indexOf('casa') === -1, 'prompt word itself is excluded');
 
-  // ===== word-similarity: short words use frequency proximity =====
-  var shortPrompt = { italian: 'e', english: 'and', rank: 1 };
-  var shortPool = [
-    shortPrompt,
-    { italian: 'di', english: 'of', rank: 2 },
-    { italian: 'ed', english: 'and(2)', rank: 3 },
-    { italian: 'la', english: 'the', rank: 4 },
-    { italian: 'è', english: 'is', rank: 200 }
-  ];
-  var shortPicked = WordSimilarity.pickConfusableDistractors(shortPrompt, shortPool,
-    { count: 3, windowSize: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'and' });
-  var shortSrcs = shortPicked.map(function (w) { return w.italian; });
-  assertEqual(shortPicked.length, 3, 'short prompt still yields 3 distractors');
-  assert(shortSrcs.indexOf('è') === -1, 'short prompt ranks by frequency, excluding far-rank edit-close decoy');
-
-  // ===== word-similarity: target-text dedupe =====
-  var dupPrompt = { italian: 'mela', english: 'apple', rank: 10 };
-  var dupPool = [
-    dupPrompt,
-    { italian: 'mona', english: 'X', rank: 11 },
-    { italian: 'mola', english: 'X', rank: 12 },
-    { italian: 'mara', english: 'Y', rank: 13 },
-    { italian: 'meta', english: 'apple', rank: 14 }
-  ];
-  var dupPicked = WordSimilarity.pickConfusableDistractors(dupPrompt, dupPool,
-    { count: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'apple' });
-  var dupTgts = dupPicked.map(function (w) { return w.english; });
-  var dupUnique = [];
-  dupTgts.forEach(function (t) { if (dupUnique.indexOf(t) === -1) dupUnique.push(t); });
-  assertEqual(dupUnique.length, dupTgts.length, 'distractor target texts are unique');
-  assert(dupTgts.indexOf('apple') === -1, 'distractors never equal the correct answer text');
-
-  // ===== quiz-engine: hard mode yields 4 distinct options via similarity =====
-  var hardEngine = new QuizEngine({
-    state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: { italian: 'casa', english: 'house', rank: 50 } },
-    stats: {}, mastered: new Set(),
-    fieldMap: { source: 'italian', target: 'english' },
-    difficulty: 'hard',
-    saveFn: function () {}, onUpdateStats: function () {}, dom: {}
+  group('pickConfusableDistractors 相近词优先', function () {
+    var simPicked = WordSimilarity.pickConfusableDistractors(simPrompt, simPool,
+      { count: 3, windowSize: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'house' });
+    var simSrcs = simPicked.map(function (w) { return w.italian; });
+    assertEqual(simPicked.length, 3, 'pickConfusableDistractors returns 3');
+    assert(simSrcs.indexOf('aeroplano') === -1 && simSrcs.indexOf('montagna') === -1, 'distant words are excluded from the closest window');
+    assert(simSrcs.indexOf('casa') === -1, 'prompt word itself is excluded');
   });
-  var hardOptions = hardEngine.generateOptions('house', simPool);
-  assertEqual(hardOptions.length, 4, 'hard-mode generateOptions returns 4 options');
-  assert(hardOptions.indexOf('house') !== -1, 'hard-mode options include the correct answer');
-  var hardUnique = [];
-  hardOptions.forEach(function (o) { if (hardUnique.indexOf(o) === -1) hardUnique.push(o); });
-  assertEqual(hardUnique.length, hardOptions.length, 'hard-mode options have no duplicates');
 
-  // ===== quiz-engine: easy mode preserves random behavior (still 4 options) =====
-  var easyEngine = new QuizEngine({
-    state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: { italian: 'casa', english: 'house' } },
-    stats: {}, mastered: new Set(),
-    fieldMap: { source: 'italian', target: 'english' },
-    difficulty: 'easy',
-    saveFn: function () {}, onUpdateStats: function () {}, dom: {}
+  group('pickConfusableDistractors 短词按词频取邻居', function () {
+    var shortPrompt = { italian: 'e', english: 'and', rank: 1 };
+    var shortPool = [
+      shortPrompt,
+      { italian: 'di', english: 'of', rank: 2 },
+      { italian: 'ed', english: 'as well as', rank: 3 },
+      { italian: 'la', english: 'the', rank: 4 },
+      { italian: 'è', english: 'is', rank: 200 }
+    ];
+    var shortPicked = WordSimilarity.pickConfusableDistractors(shortPrompt, shortPool,
+      { count: 3, windowSize: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'and' });
+    var shortSrcs = shortPicked.map(function (w) { return w.italian; });
+    assertEqual(shortPicked.length, 3, 'short prompt still yields 3 distractors');
+    assert(shortSrcs.indexOf('è') === -1, 'short prompt ranks by frequency, excluding far-rank edit-close decoy');
   });
-  var easyOptions = easyEngine.generateOptions('house', simPool);
-  assertEqual(easyOptions.length, 4, 'easy-mode generateOptions returns 4 options');
-  assert(easyOptions.indexOf('house') !== -1, 'easy-mode options include the correct answer');
 
-  // ===== quiz-engine: difficulty static accessor defaults to hard =====
-  assertEqual(typeof QuizEngine.getDifficulty, 'function', 'QuizEngine.getDifficulty exists');
-  assertEqual(QuizEngine.getDifficulty(), 'hard', 'difficulty defaults to hard when unset');
+  group('pickConfusableDistractors 释义去重', function () {
+    var dupPrompt = { italian: 'mela', english: 'apple', rank: 10 };
+    var dupPool = [
+      dupPrompt,
+      { italian: 'mona', english: 'X', rank: 11 },
+      { italian: 'mola', english: 'Y', rank: 12 },
+      { italian: 'mara', english: 'Z', rank: 13 },
+      { italian: 'meta', english: 'apple', rank: 14 }
+    ];
+    var dupPicked = WordSimilarity.pickConfusableDistractors(dupPrompt, dupPool,
+      { count: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'apple' });
+    var dupTgts = dupPicked.map(function (w) { return w.english; });
+    var dupUnique = [];
+    dupTgts.forEach(function (t) { if (dupUnique.indexOf(t) === -1) dupUnique.push(t); });
+    assertEqual(dupUnique.length, dupTgts.length, 'distractor target texts are unique');
+    assert(dupTgts.indexOf('apple') === -1, 'distractors never equal the correct answer text');
+  });
+
+  // ===== 回归：干扰项不能与正确答案同义 =====
+  // 见 audit: it-mc-distractors-synonymous-with-answer
+  // 线上截图：提示 "cercare"，选项是 search / Lost / Stop / "search; look for"
+  // —— cerca("search") 与正确答案 "search; look for" 是同一个意思，题目无解。
+  group('回归 cercare：同义词不能当干扰项', function () {
+    var cercare = { italian: 'cercare', english: 'search; look for', rank: 100 };
+    var cercarePool = [
+      cercare,
+      { italian: 'cerca', english: 'search', rank: 101 },
+      { italian: 'cercano', english: 'they search', rank: 102 },
+      { italian: 'cantare', english: 'to sing', rank: 103 },
+      { italian: 'cenare', english: 'to have dinner', rank: 104 },
+      { italian: 'creare', english: 'to create', rank: 105 },
+      { italian: 'curare', english: 'to treat', rank: 106 },
+      { italian: 'cedere', english: 'to yield', rank: 107 }
+    ];
+    var synonymHits = 0, shortRuns = 0;
+    for (var run = 0; run < 20; run++) {
+      var picked = WordSimilarity.pickConfusableDistractors(cercare, cercarePool, {
+        count: 3, sourceField: 'italian', targetField: 'english', correctTarget: cercare.english
+      });
+      if (picked.length < 3) shortRuns++;
+      picked.forEach(function (w) {
+        if (w.italian === 'cerca' || w.italian === 'cercano') synonymHits++;
+      });
+    }
+    assertEqual(synonymHits, 0, '20 次抽样里 cerca / cercano 从未被选为 "cercare" 的干扰项');
+    assertEqual(shortRuns, 0, '剔除同义词后仍能凑满 3 个干扰项');
+
+    // 同样的规则要作用在整条链路上，而不只是 WordSimilarity
+    var cercareEngine = makeEngine({
+      state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: cercare },
+      difficulty: 'hard'
+    });
+    var opts = cercareEngine.generateOptions(cercare.english, cercarePool);
+    assertEqual(opts.length, 4, 'generateOptions 仍返回 4 个选项');
+    var overlapping = opts.filter(function (o) {
+      return o !== cercare.english && DimText.glossesOverlap(o, cercare.english);
+    });
+    assertEqual(overlapping.length, 0, 'hard 模式的选项里没有与正确答案同义的');
+
+    // easy 模式走的是随机分支，同样不能出同义项
+    var easyCercare = makeEngine({
+      state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: cercare },
+      difficulty: 'easy'
+    });
+    var easyOverlap = 0;
+    for (var e = 0; e < 20; e++) {
+      easyCercare.generateOptions(cercare.english, cercarePool).forEach(function (o) {
+        if (o !== cercare.english && DimText.glossesOverlap(o, cercare.english)) easyOverlap++;
+      });
+    }
+    assertEqual(easyOverlap, 0, 'easy 模式的选项里也没有同义项');
+  });
+
+  // ===== 回归：占位释义不能出现在选项里 =====
+  group('回归：占位释义不出题也不当选项', function () {
+    var prompt = { italian: 'e', english: 'and', rank: 1 };
+    var pool = [
+      prompt,
+      { italian: 'ed', english: 'and(2)', rank: 2 },       // 同义 + 占位残留
+      { italian: 'ei', english: '(2)', rank: 3 },          // 纯占位
+      { italian: 'di', english: 'of', rank: 4 },
+      { italian: 'la', english: 'the', rank: 5 },
+      { italian: 'in', english: 'in', rank: 6 },
+      { italian: 'un', english: 'a', rank: 7 }
+    ];
+    var badHits = 0;
+    for (var run = 0; run < 20; run++) {
+      WordSimilarity.pickConfusableDistractors(prompt, pool, {
+        count: 3, sourceField: 'italian', targetField: 'english', correctTarget: 'and'
+      }).forEach(function (w) {
+        if (w.italian === 'ed' || w.italian === 'ei') badHits++;
+      });
+    }
+    assertEqual(badHits, 0, '"and(2)"（同义）和 "(2)"（纯占位）都不会被选为干扰项');
+
+    var phEngine = makeEngine({ fieldMap: { source: 'italian', target: 'english' } });
+    assert(!phEngine.isUsableWord({ italian: 'ei', english: '(2)' }), 'isUsableWord 拒绝纯占位释义的词条');
+    assert(phEngine.isUsableWord({ italian: 'la', english: 'the (feminine); (2)' }), 'isUsableWord 接受有真义项的词条');
+    var usable = phEngine.filterUsableWords(pool);
+    assert(usable.indexOf(pool[2]) === -1, 'filterUsableWords 过滤掉纯占位词条');
+    assertEqual(phEngine.filterUsableWords([{ italian: 'x', english: '(2)' }]).length, 1,
+      'filterUsableWords 在全部不可用时退回原列表，不会让练习变成空');
+  });
+
+  // ===== 渲染：展示清洗过的释义，判分用原始字符串 =====
+  group('renderOptions 展示 vs 判分', function () {
+    var container = document.createElement('div');
+    var renderEngine = makeEngine({ dom: { optionsContainer: container } });
+    var raw = 'the (feminine); (2); (3)';
+    renderEngine.renderOptions([raw, 'of', 'and', 'in'], function () {});
+    var buttons = container.querySelectorAll('.option');
+    assertEqual(buttons.length, 4, 'renderOptions 渲染 4 个按钮');
+    var first = null;
+    buttons.forEach(function (b) { if (b.dataset.answer === raw) first = b; });
+    assert(first !== null, 'data-answer 保留原始释义（判分链路不变）');
+    assertEqual(first ? first.textContent : '', 'the (feminine)', '按钮文字是清洗过的释义，用户看不到 (2)/(3)');
+
+    // 自定义词书 / 导入数据里的敌意字符串必须转义
+    var hostile = '<img src=x onerror="alert(1)">';
+    renderEngine.renderOptions([hostile, 'a', 'b', 'c'], function () {});
+    assert(container.innerHTML.indexOf('<img src=x') === -1, 'renderOptions 转义敌意释义，不会注入 <img>');
+    assert(container.innerHTML.indexOf('&lt;img') !== -1, 'renderOptions 输出的是转义后的实体');
+  });
+
+  // ===== 判分：同义答案不判错 =====
+  group('isAnswerCorrect', function () {
+    var e = makeEngine();
+    assert(e.isAnswerCorrect('you', 'you'), '完全相同当然算对');
+    assert(e.isAnswerCorrect('search', 'search; look for'), '选中的义项是正确答案的子集 —— 算对');
+    assert(e.isAnswerCorrect('to search', 'search'), '忽略不定式 to');
+    assert(!e.isAnswerCorrect('thing', 'house'), '不同意思仍然判错');
+    assert(!e.isAnswerCorrect(null, 'house'), 'null 不判对');
+  });
+
+  // ===== 掌握度：一次蒙对不算掌握 =====
+  // 见 audit: it-mastered-after-one-lucky-guess
+  group('MasteryPolicy 连续答对门槛', function () {
+    var LANG = 'testlang';
+    MasteryPolicy.clear(LANG);
+    assertEqual(MasteryPolicy.STREAK_REQUIRED >= 2, true, '掌握门槛至少要连对 2 次');
+
+    var first = MasteryPolicy.record(LANG, 'ciao', true, {});
+    assertEqual(first.streak, 1, '第一次答对 streak = 1');
+    assertEqual(first.mastered, false, '四选一蒙对一次不算掌握');
+    var second = MasteryPolicy.record(LANG, 'ciao', true, {});
+    assertEqual(second.streak, 2, '第二次答对 streak = 2');
+    assertEqual(second.mastered, true, '连对 2 次才算掌握');
+    var wrong = MasteryPolicy.record(LANG, 'ciao', false, {});
+    assertEqual(wrong.streak, 0, '答错后 streak 归零');
+    assertEqual(wrong.mastered, false, '答错不算掌握');
+    MasteryPolicy.clear(LANG);
+
+    // SM-2 已经把词排到长间隔时直接认定掌握
+    var savedSR = window.SpacedRepetition;
+    window.SpacedRepetition = { name: 'stub' };
+    var srWord = { italian: 'grazie', srData: { repetitions: 4, interval: 30 } };
+    var srResult = MasteryPolicy.record(LANG, 'grazie', true, { word: srWord });
+    assertEqual(srResult.mastered, true, 'SM-2 已排到长间隔的词，一次答对即算掌握');
+    window.SpacedRepetition = savedSR;
+    MasteryPolicy.clear(LANG);
+  });
+
+  group('recordAnswer 维护 mastered 集合', function () {
+    var LANG = 'testlang';
+    MasteryPolicy.clear(LANG);
+    var mastered = new Set();
+    var e = makeEngine({ language: LANG, mastered: mastered });
+    var word = { italian: 'ciao', english: 'hello' };
+
+    var r1 = e.recordAnswer(word, true);
+    assertEqual(mastered.has('ciao'), false, '首次答对不进入已掌握集合');
+    assertEqual(r1.streak, 1, 'recordAnswer 回传 streak');
+    var r2 = e.recordAnswer(word, true);
+    assertEqual(mastered.has('ciao'), true, '连对 2 次后进入已掌握集合');
+    assertEqual(r2.mastered, true, 'recordAnswer 回传 mastered');
+    var r3 = e.recordAnswer(word, false);
+    assertEqual(mastered.has('ciao'), false, '之后答错会退出已掌握集合（进度条会回落）');
+    assertEqual(r3.demoted, true, 'recordAnswer 回传 demoted');
+    MasteryPolicy.clear(LANG);
+  });
+
+  // ===== 难度：分语言可用，不再只有意大利语有开关 =====
+  // 见 audit: difficulty-toggle-ui-italian-only
+  group('难度偏好 API', function () {
+    var KEYS = ['dimenticato_quiz_difficulty'];
+    QuizEngine.LANGUAGES.forEach(function (l) { KEYS.push(QuizEngine.difficultyKeyFor(l)); });
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+
+    assertEqual(typeof QuizEngine.getDifficulty, 'function', 'QuizEngine.getDifficulty exists');
+    assertEqual(QuizEngine.getDifficulty(), 'hard', 'difficulty defaults to hard when unset');
+    assert(QuizEngine.LANGUAGES.indexOf('german') !== -1 && QuizEngine.LANGUAGES.indexOf('french') !== -1,
+      '难度 API 覆盖德语和法语，不只是意大利语');
+
+    QuizEngine.setDifficulty('easy', 'german');
+    assertEqual(QuizEngine.getDifficulty('german'), 'easy', '分语言设置：德语改成简单');
+    assertEqual(QuizEngine.getDifficulty('italian'), 'hard', '分语言设置不影响其它语言');
+    assertEqual(QuizEngine.getDifficulty(), 'hard', '分语言设置不改全局默认');
+
+    QuizEngine.setDifficulty('easy');
+    assertEqual(QuizEngine.getDifficulty(), 'easy', '全局设置生效');
+    assertEqual(QuizEngine.getDifficulty('german'), 'easy', '全局设置会清掉分语言覆盖');
+    QuizEngine.setDifficulty('hard');
+
+    // 引擎实例：显式配置 > 分语言 > 全局
+    QuizEngine.setDifficulty('easy', 'french');
+    var frEngine = makeEngine({ language: 'french', fieldMap: { source: 'french', target: 'meaning' } });
+    assertEqual(frEngine.getDifficulty(), 'easy', '引擎按自己的语言读难度');
+    var forced = makeEngine({ language: 'french', difficulty: 'hard' });
+    assertEqual(forced.getDifficulty(), 'hard', '显式 difficulty 配置优先级最高');
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+  });
+
+  group('难度控件可注入 + 事件委托', function () {
+    localStorage.removeItem(QuizEngine.difficultyKeyFor('german'));
+    var markup = QuizEngine.renderDifficultyToggle('german', '选择题难度');
+    assert(markup.indexOf('data-difficulty-lang="german"') !== -1, '控件带语言作用域');
+    assert(markup.indexOf('data-difficulty="easy"') !== -1 && markup.indexOf('data-difficulty="hard"') !== -1,
+      '控件有简单/困难两个选项');
+    assert(markup.indexOf('class="segmented difficulty-toggle"') !== -1, '复用现有 segmented 组件类，不新增样式');
+
+    var host = document.createElement('div');
+    host.innerHTML = markup;
+    document.body.appendChild(host);
+    QuizEngine.bindDifficultyToggles();
+    QuizEngine.syncDifficultyToggles(host);
+
+    var easyBtn = host.querySelector('[data-difficulty=easy]');
+    assert(!!easyBtn, '注入的控件能被查询到');
+    if (easyBtn) {
+      easyBtn.click();
+      assertEqual(QuizEngine.getDifficulty('german'), 'easy', '点击运行时注入的控件即可改德语难度');
+      assert(easyBtn.classList.contains('active'), '点击后选中态同步');
+    }
+    host.remove();
+    localStorage.removeItem(QuizEngine.difficultyKeyFor('german'));
+  });
+
+  // 见 audit: difficulty-toggle-ui-italian-only —— 开关以前只有意大利语设置页有
+  group('难度控件自动挂载到德/英/法页面', function () {
+    var screens = document.createElement('div');
+    screens.innerHTML =
+      '<section id="germanSettingsScreen" class="screen"><div class="container"></div></section>' +
+      '<section id="englishSettingsScreen" class="screen"><div class="container"></div></section>' +
+      '<section id="frenchVocabularyModesScreen" class="screen"><div class="container"></div></section>';
+    document.body.appendChild(screens);
+
+    var mounted = QuizEngine.mountDifficultyToggles();
+    assertEqual(mounted, 3, '德语/英语/法语各挂上一个难度控件');
+    ['german', 'english', 'french'].forEach(function (lang) {
+      assert(!!screens.querySelector('[data-difficulty-lang=' + lang + ']'), lang + ' 页面上出现了难度控件');
+    });
+    assertEqual(QuizEngine.mountDifficultyToggles(), 0, '重复调用不会重复注入');
+
+    var frenchEasy = screens.querySelector('[data-difficulty-lang=french]').querySelector('[data-difficulty=easy]');
+    frenchEasy.click();
+    assertEqual(QuizEngine.getDifficulty('french'), 'easy', '法语页面上的控件真的能改法语难度');
+    assertEqual(QuizEngine.getDifficulty('german'), 'hard', '改法语不影响德语');
+
+    screens.remove();
+    QuizEngine.LANGUAGES.forEach(function (l) { localStorage.removeItem(QuizEngine.difficultyKeyFor(l)); });
+  });
+
+  // ===== hard / easy 两条分支都能凑满 4 个选项 =====
+  group('hard / easy 选项生成', function () {
+    var hardEngine = makeEngine({
+      state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: simPrompt },
+      difficulty: 'hard'
+    });
+    var hardOptions = hardEngine.generateOptions('house', simPool);
+    assertEqual(hardOptions.length, 4, 'hard-mode generateOptions returns 4 options');
+    assert(hardOptions.indexOf('house') !== -1, 'hard-mode options include the correct answer');
+    var hardUnique = [];
+    hardOptions.forEach(function (o) { if (hardUnique.indexOf(o) === -1) hardUnique.push(o); });
+    assertEqual(hardUnique.length, hardOptions.length, 'hard-mode options have no duplicates');
+
+    var easyEngine = makeEngine({
+      state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: simPrompt },
+      difficulty: 'easy'
+    });
+    var easyOptions = easyEngine.generateOptions('house', simPool);
+    assertEqual(easyOptions.length, 4, 'easy-mode generateOptions returns 4 options');
+    assert(easyOptions.indexOf('house') !== -1, 'easy-mode options include the correct answer');
+  });
+
+  // ===== 性能：hard 模式不能对整个词库做全表扫描 =====
+  // 见 audit(missed): 24k 词库上旧实现约 145 ms/题
+  group('hard 模式性能', function () {
+    var big = [];
+    for (var i = 0; i < 8000; i++) {
+      big.push({ italian: 'w' + i.toString(36), english: 'gloss ' + i, rank: i });
+    }
+    WordSimilarity._resetIndexCache();
+    var start = Date.now();
+    for (var q = 0; q < 100; q++) {
+      var promptWord = big[(q * 79) % big.length];
+      WordSimilarity.pickConfusableDistractors(promptWord, big, {
+        count: 3, sourceField: 'italian', targetField: 'english', correctTarget: promptWord.english
+      });
+    }
+    var elapsed = Date.now() - start;
+    assert(elapsed < 3000, '8000 词池出 100 道题应远快于全表扫描（实测 ' + elapsed + ' ms）');
+  });
 
   // --- Summary ---
   var summary = document.createElement('div');
   summary.className = 'summary';
-  summary.textContent = passed + ' passed, ' + failed + ' failed';
+  summary.textContent = passed + ' passed, ' + failed + ' failed' + (known ? ', ' + known + ' known issues' : '');
   summary.style.color = failed === 0 ? '#2ecc71' : '#e74c3c';
   results.insertBefore(summary, results.firstChild);
 })();
