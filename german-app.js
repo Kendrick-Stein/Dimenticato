@@ -94,36 +94,58 @@
     return sr;
   }
 
-  // 调用共享 SpacedRepetition.calculateNextReview。兼容两种签名：
-  //   calculateNextReview(word, quality)  —— 读写 word.srData
-  //   calculateNextReview(srData, quality)
-  // 两种都拿不到有效结果时退回本地实现。
+  // 一条 srData 是否真的被算过：只看 repetitions / interval / reviewHistory 的
+  // 前后快照。
+  // ⚠ 绝对不能用 nextReviewDate 判断 —— 它是从上一条记录拷过来的，永远是真值，
+  // 于是“共享实现根本没碰这个对象”会被误判成“算好了”，函数把【原样未变】的旧
+  // 记录返回出去，间隔从此再也不增长（每个词永远排到明天）。
+  function srSnapshot(sr) {
+    return {
+      repetitions: sr.repetitions,
+      interval: sr.interval,
+      history: Array.isArray(sr.reviewHistory) ? sr.reviewHistory.length : 0
+    };
+  }
+
+  function srWasScheduled(sr, before) {
+    if (!sr || typeof sr !== 'object' || !sr.nextReviewDate) return false;
+    if (sr.repetitions !== before.repetitions) return true;
+    if (sr.interval !== before.interval) return true;
+    // 答错时 repetitions/interval 可能本来就是 0 → 0，用共享实现必写的复习历史兜底
+    return Array.isArray(sr.reviewHistory) && sr.reviewHistory.length > before.history;
+  }
+
+  function withoutHistory(sr) {
+    const out = Object.assign({}, sr);
+    // 15,507 个词各存 20 条复习历史会撑爆 localStorage，这里只落盘调度字段
+    delete out.reviewHistory;
+    return out;
+  }
+
+  // 调用共享 SpacedRepetition.calculateNextReview。
+  // 契约签名是 calculateNextReview(srData, quality)：它就地改写【传进去的那个
+  // srData】并把它返回，所以必须先按这个签名调用，并从被改写的对象上读结果。
+  // 旧签名 calculateNextReview(word, quality)（读写 word.srData）只作为兜底，
+  // 是否生效一律由 srWasScheduled() 的快照对比判断。两种都没算 → 本地实现。
   function scheduleReview(previous, quality) {
     const SR = typeof window !== 'undefined' ? window.SpacedRepetition : null;
     if (SR && typeof SR.calculateNextReview === 'function') {
+      // ① 契约签名：srData 本身
       try {
-        // reviewHistory 必须是数组：共享实现会往里 push 一条复习记录。
-        const carrier = { srData: previous ? Object.assign({ reviewHistory: [] }, previous) : undefined };
+        const srData = Object.assign({ reviewHistory: [] }, emptySrData(), previous || {});
+        if (!Array.isArray(srData.reviewHistory)) srData.reviewHistory = [];
+        const before = srSnapshot(srData);
+        const returned = SR.calculateNextReview(srData, quality);
+        // 实现可能返回同一个对象，也可能返回新对象；两者都要能识别
+        const sr = (returned && typeof returned === 'object' && 'easiness' in returned) ? returned : srData;
+        if (srWasScheduled(sr, before)) return withoutHistory(sr);
+      } catch (error) { /* 降级到旧签名 */ }
+      // ② 旧签名兜底：carrier.srData
+      try {
+        const carrier = { srData: Object.assign({ reviewHistory: [] }, emptySrData(), previous || {}) };
+        const before = srSnapshot(carrier.srData);
         SR.calculateNextReview(carrier, quality);
-        if (carrier.srData && carrier.srData.nextReviewDate) {
-          const out = Object.assign({}, carrier.srData);
-          delete out.reviewHistory;
-          return out;
-        }
-      } catch (error) { /* 降级到下一种签名 */ }
-      try {
-        const direct = Object.assign({ reviewHistory: [] }, emptySrData(), previous || {});
-        const result = SR.calculateNextReview(direct, quality) || direct;
-        if (result && result.nextReviewDate && result !== direct) {
-          const out = Object.assign({}, result);
-          delete out.reviewHistory;
-          return out;
-        }
-        if (direct.nextReviewDate && direct.repetitions !== (previous && previous.repetitions)) {
-          const out = Object.assign({}, direct);
-          delete out.reviewHistory;
-          return out;
-        }
+        if (srWasScheduled(carrier.srData, before)) return withoutHistory(carrier.srData);
       } catch (error) { /* 降级到本地实现 */ }
     }
     return fallbackSchedule(previous, quality);
@@ -132,6 +154,28 @@
   function correctnessToQuality(isCorrect, durationMs) {
     if (!isCorrect) return 2;
     return durationMs && durationMs < 3000 ? 5 : 4;
+  }
+
+  // 掌握门槛。四选一蒙对的概率是 25%，"答对一次 = 已掌握" 会让进度条凭运气上涨
+  // 且永不回落。统一走共享的 window.MasteryPolicy（key: dimenticato_mastery_streak_<lang>）：
+  // 连续答对 STREAK_REQUIRED 次（或 SM-2 已把它排到长间隔）才算掌握，答错清零。
+  // 与 lib/quiz-engine.js 里意大利语/法语走的是同一份策略，这里只在调用时解析。
+  const LOCAL_STREAKS = {};
+
+  function recordMastery(lang, key, isCorrect, word) {
+    const policy = typeof window !== 'undefined' ? window.MasteryPolicy : null;
+    if (policy && typeof policy.record === 'function') {
+      try {
+        const outcome = policy.record(lang, key, isCorrect, { word: word }) || {};
+        return { streak: Number(outcome.streak) || 0, mastered: !!outcome.mastered };
+      } catch (error) { /* 回落到本地等价实现 */ }
+    }
+    // MasteryPolicy 缺失时的本地等价实现（只在内存里记连击，语义保持一致）
+    const required = (policy && Number(policy.STREAK_REQUIRED)) || 2;
+    const store = LOCAL_STREAKS[lang] || (LOCAL_STREAKS[lang] = {});
+    const streak = isCorrect ? (store[key] || 0) + 1 : 0;
+    store[key] = streak;
+    return { streak: streak, mastered: isCorrect && streak >= required };
   }
 
   // 每日统计（连续学习天数 / 图表）目前只有意大利语在写，德语/英语在这里补上。
@@ -148,10 +192,11 @@
   }
 
   // 顶栏 词汇量 / 已掌握 / 进度。优先用共享 HeaderStats，缺失时直接写 DOM。
+  // HeaderStats.set 自己会判断"当前语言"再决定要不要落笔，所以上报一律不设条件：
+  // 不是当前语言时它只更新缓存，等切回这门语言时顶栏就已经是新数字了
+  // （以前在这里提前 return，连缓存都不写，切回来还是旧的总词数/已掌握数）。
   function setHeaderStats(lang, total, mastered) {
     if (typeof document === 'undefined' || !document.body) return;
-    const active = document.body.getAttribute('data-language') || 'italian';
-    if (active !== lang) return;
     const safeTotal = Number(total) || 0;
     const safeMastered = Number(mastered) || 0;
     const header = typeof window !== 'undefined' ? window.HeaderStats : null;
@@ -161,6 +206,10 @@
         return;
       } catch (error) { /* 回落到直接写 DOM */ }
     }
+    // 没有 HeaderStats 时才自己写 DOM —— 这时必须自己做"当前语言"判断，
+    // 否则会把别的语言的数字画到顶栏上。
+    const active = document.body.getAttribute('data-language') || 'italian';
+    if (active !== lang) return;
     const percent = safeTotal > 0 ? Math.round((safeMastered / safeTotal) * 100) : 0;
     const write = (id, value) => {
       const el = document.getElementById(id);
@@ -690,6 +739,9 @@
       renderChips(document.getElementById('germanSessionChips'), SESSION_OPTIONS, this.sessionSize, 'data-german-session');
     },
 
+    // 词频分层换了 → this.words 换了 → 顶栏的"词汇量 / 已掌握 / 进度"必须跟着换。
+    // 和 selectSystemVocabulary / selectCourseVocabulary 一样显式刷新一次，
+    // 不依赖 saveState() 的副作用（localStorage 写失败或以后被重构掉都会静默漏刷）。
     setTier(tier) {
       if (!TIER_OPTIONS.some((option) => option.value === tier)) return;
       this.tier = tier;
@@ -699,6 +751,7 @@
       }
       this.saveState();
       this.renderScopeControls();
+      this.updateHeaderStats();
     },
 
     setSessionSize(size) {
@@ -709,6 +762,7 @@
       }
       this.saveState();
       this.renderScopeControls();
+      this.updateHeaderStats();
     },
 
     async handleLanguageWordbookImport(event, language) {
@@ -1157,16 +1211,20 @@
       return Math.max(0, Math.min(600000, Date.now() - this._questionStartedAt));
     },
 
-    // 一次作答的统一记录点：掌握集合、SM-2 复习计划、今日学习统计。
-    // 答错时降级（移出已掌握），否则一个词只要蒙对过一次就永远算掌握。
+    // 一次作答的统一记录点：SM-2 复习计划、掌握集合、今日学习统计。
+    // 掌握与否由共享的 MasteryPolicy 说了算（连续答对 STREAK_REQUIRED 次），
+    // 四选一蒙对一次不再直接标记掌握；答错清零连击并降级。
     recordAnswer(word, isCorrect) {
       if (!word) return;
       const elapsedMs = this._elapsedMs();
       this._questionStartedAt = 0;
       const key = this.masteredKey(word);
-      if (isCorrect) this.mastered.add(key);
-      else this.mastered.delete(key);
+      // 先算 SM-2：MasteryPolicy 会看 srData 判断"已经排到长间隔"的词。
       this.srData[key] = scheduleReview(this.srData[key], correctnessToQuality(isCorrect, elapsedMs));
+      const outcome = recordMastery('german', key, isCorrect,
+        Object.assign({}, word, { srData: this.srData[key] }));
+      if (outcome.mastered) this.mastered.add(key);
+      else if (!isCorrect) this.mastered.delete(key);
       recordDailyActivity('german', isCorrect, elapsedMs);
     },
 
@@ -1852,6 +1910,7 @@
       renderChips(document.getElementById('englishSessionChips'), SESSION_OPTIONS, this.sessionSize, 'data-english-session');
     },
 
+    // 同德语侧：换了词频分层就显式刷新一次顶栏统计，不依赖 _saveState() 的副作用。
     setTier(tier) {
       if (!TIER_OPTIONS.some((option) => option.value === tier)) return;
       this.tier = tier;
@@ -1861,6 +1920,7 @@
       }
       this._saveState();
       this._renderScopeControls();
+      this.updateHeaderStats();
     },
 
     setSessionSize(size) {
@@ -1871,6 +1931,7 @@
       }
       this._saveState();
       this._renderScopeControls();
+      this.updateHeaderStats();
     },
 
     _bindPractice() {
@@ -1962,14 +2023,18 @@
       return Math.max(0, Math.min(600000, Date.now() - this._questionStartedAt));
     },
 
+    // 同德语侧 recordAnswer：掌握与否交给共享的 MasteryPolicy，
+    // 连续答对 STREAK_REQUIRED 次才算掌握，答错清零并降级。
     _recordAnswer(word, isCorrect) {
       if (!word) return;
       const elapsedMs = this._elapsedMs();
       this._questionStartedAt = 0;
       const key = this.masteredKey(word);
-      if (isCorrect) this.mastered.add(key);
-      else this.mastered.delete(key);
       this.srData[key] = scheduleReview(this.srData[key], correctnessToQuality(isCorrect, elapsedMs));
+      const outcome = recordMastery('english', key, isCorrect,
+        Object.assign({}, word, { srData: this.srData[key] }));
+      if (outcome.mastered) this.mastered.add(key);
+      else if (!isCorrect) this.mastered.delete(key);
       recordDailyActivity('english', isCorrect, elapsedMs);
     },
 
