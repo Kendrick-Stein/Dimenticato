@@ -1081,7 +1081,7 @@
               </span>
               <span class="msr chev">chevron_right</span>
             </button>
-            <div class="about-body">Dimenticato 是一个安静、专注的多语种背词工具，支持意大利语、德语、英语与法语。词典数据来自 ECDICT、HanDeDict 等开源资源，变位数据基于 verbecc / mlconjug3。所有学习数据保存在本地浏览器中。</div>
+            <div class="about-body">Dimenticato 是一个安静、专注的多语种背词工具，支持意大利语、德语、英语与法语。词典与变位数据来自 Wiktionary/Wiktextract、Lexique 3.83、HanDeDict、Tatoeba 等开放语料（多为 CC BY-SA），逐项出处见「数据来源与致谢」。所有学习数据保存在本地浏览器中。</div>
           </div>
         </div>
       </section>
@@ -1976,11 +1976,14 @@ love
           <div class="feature-box">
             <h4><span class="msr">menu_book</span>词汇与释义数据</h4>
             <ul>
-              <li><strong>English 释义</strong> - 部分释义来自 <a href="https://github.com/skywind3000/ECDICT" target="_blank" rel="noopener">ECDICT</a>（开源聚合英汉词典数据）</li>
-              <li><strong>German 词汇</strong> - 部分词条来自 <a href="https://github.com/gugray/HanDeDict" target="_blank" rel="noopener">HanDeDict</a>，授权协议 <strong>CC&#8209;BY&#8209;SA&nbsp;3.0</strong>（本项目相应数据沿用 ShareAlike 协议）</li>
+              <li><strong>释义 · 词性 · 词形</strong> - 法/德/英三语来自 <a href="https://en.wiktionary.org/" target="_blank" rel="noopener">English Wiktionary</a>，经 <a href="https://kaikki.org/" target="_blank" rel="noopener">Wiktextract / kaikki.org</a> 提取，授权协议 <strong>CC&#8209;BY&#8209;SA&nbsp;4.0</strong>（+ GFDL）</li>
+              <li><strong>French 词频与变位</strong> - 词频、语料排名与过去分词配合形来自 <a href="http://www.lexique.org/" target="_blank" rel="noopener">Lexique&nbsp;3.83</a>，授权协议 <strong>CC&#8209;BY&#8209;SA&nbsp;4.0</strong></li>
+              <li><strong>例句</strong> - French / German 搭配与课程例句来自 <a href="https://tatoeba.org/" target="_blank" rel="noopener">Tatoeba</a>，授权协议 <strong>CC&#8209;BY&nbsp;2.0&nbsp;FR</strong></li>
+              <li><strong>German 词汇</strong> - 部分中文释义来自 <a href="https://github.com/gugray/HanDeDict" target="_blank" rel="noopener">HanDeDict</a>，授权协议 <strong>CC&#8209;BY&#8209;SA&nbsp;3.0</strong>；变位对照 <a href="https://github.com/languagetool-org/german-pos-dict" target="_blank" rel="noopener">german&#8209;pos&#8209;dict / Morphy</a>（<strong>CC&#8209;BY&#8209;SA&nbsp;4.0</strong>）校验</li>
               <li><strong>词频排序</strong> - English / German 词表按 <a href="https://github.com/rspeer/wordfreq" target="_blank" rel="noopener">wordfreq</a> 真实词频排序</li>
-              <li><strong>English 动词变位</strong> - 由 <a href="https://github.com/bretttolbert/verbecc" target="_blank" rel="noopener">verbecc</a> / <a href="https://github.com/Ars-Linguistica/mlconjug3" target="_blank" rel="noopener">mlconjug3</a> 生成</li>
-              <li><strong>German 动词变位</strong> - 规则生成，不规则变位对照 Reverso / Wiktionary 校验</li>
+              <li><strong>英→中中转释义</strong> - 部分中文释义经 <a href="https://github.com/skywind3000/ECDICT" target="_blank" rel="noopener">ECDICT</a> 由英语中转而来，并已人工复核</li>
+              <li><strong>English 动词变位</strong> - 由本项目的规则引擎生成（scripts/build_english_conjugations.py）</li>
+              <li class="attribution-note">本项目相应衍生数据沿用 ShareAlike 协议；逐文件的完整来源对照见仓库根目录的 <strong>ATTRIBUTION.md</strong>。</li>
             </ul>
           </div>
           <div class="feature-box">

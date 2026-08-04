@@ -294,15 +294,19 @@ python3 scripts/build_french_vocabulary_glossary.py REVIEWED_OCR.json data/frenc
 
 | 数据 | 来源 | 许可 |
 |---|---|---|
-| English 释义（部分） | [ECDICT](https://github.com/skywind3000/ECDICT) | 开源聚合英汉词典数据 |
-| German 词汇（部分） | [HanDeDict](https://github.com/gugray/HanDeDict) | **CC-BY-SA 3.0** |
-| English / German 词频排序 | [wordfreq](https://github.com/rspeer/wordfreq) | 开源 |
-| English 动词变位 | [verbecc](https://github.com/bretttolbert/verbecc) / [mlconjug3](https://github.com/Ars-Linguistica/mlconjug3) | 开源 |
-| German 动词变位 | 规则生成，不规则变位对照 Reverso / Wiktionary 校验 | 自建 |
-| French 词汇 / 语法 / 动词变位 | 《你好！法语》1-4 总词汇表（A1-B2）与独立整理的 A1-B1 语法、变位 | 自建，仅供学习 |
-| 图表 / Markdown | [Chart.js](https://www.chartjs.org/) · [marked.js](https://marked.js.org/) | 开源 |
+| 法/德/英 释义、词性、词形 | [English Wiktionary](https://en.wiktionary.org/) via [Wiktextract](https://github.com/tatuylonen/wiktextract) / [kaikki.org](https://kaikki.org/) | **CC BY-SA 4.0**（+ GFDL） |
+| French 词频、排名、动词变位词形 | [Lexique 3.83](http://www.lexique.org/) | **CC BY-SA 4.0** |
+| French / German 例句 | [Tatoeba](https://tatoeba.org/) | **CC BY 2.0 FR** |
+| German 词汇中文释义（部分） | [HanDeDict](https://github.com/gugray/HanDeDict) | **CC BY-SA 3.0** |
+| German 变位交叉校验 | [german-pos-dict / Morphy](https://github.com/languagetool-org/german-pos-dict) | **CC BY-SA 4.0** |
+| English / German 词频排序 | [wordfreq](https://github.com/rspeer/wordfreq) | MIT（代码） |
+| 英→中中转释义 | [ECDICT](https://github.com/skywind3000/ECDICT) | 代码仓库标 MIT，数据分发包无 LICENSE，待核实 |
+| English 动词变位 | `scripts/build_english_conjugations.py` 规则生成 | 自建 |
+| French 语法讲解 / German 语法讲解 / 搭配表 | 为本项目原创撰写 | 自建 |
+| French 教材词表 | 《你好！法语》1-4 总词汇表（A1-B2） | 仅供学习，不分发教材原文 |
+| 图表 / Markdown | [Chart.js](https://www.chartjs.org/) · [marked.js](https://marked.js.org/) | MIT |
 
-每条词汇的 `source` 字段记录了其具体来源。
+逐文件的完整对照见 **[ATTRIBUTION.md](ATTRIBUTION.md)**；每条词汇的 `source` 字段还记录了逐字段的出处。
 
 ---
 
@@ -310,7 +314,7 @@ python3 scripts/build_french_vocabulary_glossary.py REVIEWED_OCR.json data/frenc
 
 本项目仅供个人学习使用。
 
-> ⚠️ 注意：German 词汇含 [HanDeDict](https://github.com/gugray/HanDeDict)（CC-BY-SA 3.0）数据。如**公开分发/部署**本项目，需遵守 CC-BY-SA 的署名（attribution）与相同方式共享（share-alike）要求 —— 上方“数据来源与致谢”即为署名，相应衍生数据亦沿用该协议。
+> ⚠️ 注意：本项目的法/德/英数据大量来自 CC BY-SA 系列语料（Wiktionary/Wiktextract、Lexique 3.83、HanDeDict、Tatoeba）。如**公开分发/部署**本项目，需遵守 CC-BY-SA 的署名（attribution）与相同方式共享（share-alike）要求 —— [ATTRIBUTION.md](ATTRIBUTION.md) 即为署名，相应衍生数据亦沿用该协议。项目自身尚未声明开源协议，选定时必须与 CC BY-SA 相容。
 
 ---
 

@@ -306,6 +306,7 @@
 
   const state = {
     verbs: [],
+    aspirateForms: null,
     lookupIndex: null,
     tenseMeta: {},
     selectedTense: null,
@@ -347,6 +348,27 @@
   // config.elision 描述“人称代词在元音开头前缩合”这条规则；数据集只存动词
   // 形式本身（法语 "ai été"），显示与判分都由这里推导（"j'ai été"）。
 
+  // 嘘音 h 的判定以【数据集自己的 aspirateH 标志】为准，而不是词形白名单：
+  // 白名单漏一个词就会渲染出 j'hèle 这种错形，而数据集每新增一个动词都自带标志。
+  // 只收以 h 开头的形式：复合时态的 "ai haï" 由助动词开头，那里省音是对的（j'ai haï）。
+  function collectAspirateForms(verbs) {
+    const set = new Set();
+    (verbs || []).forEach(verb => {
+      if (!verb || !verb.aspirateH) return;
+      Object.values(verb.tenses || {}).forEach(tense => {
+        const forms = tense && tense.forms;
+        const values = Array.isArray(forms) ? forms : Object.values(forms || {});
+        values.forEach(value => {
+          String(value || '').split(/\s*[,/]\s*/).forEach(one => {
+            const norm = normalizeText(one.trim());
+            if (norm && norm.charAt(0) === 'h') set.add(norm);
+          });
+        });
+      });
+    });
+    return set;
+  }
+
   // pronoun 写在 form 前面时的缩合形；不缩合则返回 ''。
   function contractionFor(pronoun, form) {
     const rule = config.elision;
@@ -357,6 +379,7 @@
     if (!head || !rule.vowel || !rule.vowel.test(head)) return '';
     // 嘘音 h（h aspiré）不省音：je hais，而不是 j'hais。
     const norm = normalizeText(head);
+    if (state.aspirateForms && state.aspirateForms.has(norm)) return '';
     if ((rule.aspirate || []).some(word => norm.startsWith(normalizeText(word)))) return '';
     return contracted;
   }
@@ -674,6 +697,7 @@
     const raw = Array.isArray(data) ? data : [];
 
     state.verbs = [...raw].sort((a, b) => (a.rank || 999999) - (b.rank || 999999));
+    state.aspirateForms = collectAspirateForms(state.verbs);
 
     const meta = {};
     state.verbs.forEach(verb => {
