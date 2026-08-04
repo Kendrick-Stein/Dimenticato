@@ -31,30 +31,48 @@ const mergeBy = keyFn => {
 const vocabulary = mergeBy(normalizeHeadword);
 
 assert.equal(coreVocabulary.length, 372, 'French core vocabulary size changed unexpectedly');
-assert.equal(glossaryVocabulary.length, 2008, 'French textbook glossary size changed unexpectedly');
+// 2008 -> 1996：教材词汇表重建时把 acteur(trice) 这类带阴性括注的条目
+// 规范成了词元 + feminine/display/printed 三个字段（123 条带阴性形），
+// 原来分列的阴阳性条目因此并成一条。少的 12 条是并条，不是丢词。
+assert.equal(glossaryVocabulary.length, 1996, 'French textbook glossary size changed unexpectedly');
+assert.ok(glossaryVocabulary.every(item => item.printed), 'French glossary lost the printed textbook form');
+assert.ok(
+  glossaryVocabulary.some(item => item.french === 'acteur' && item.feminine === 'actrice' && item.printed === 'acteur(trice)'),
+  'French glossary lost the normalized gendered headword'
+);
 assert.deepEqual(
   Object.fromEntries(['A1', 'A2', 'B1', 'B2'].map(level => [
     level,
     glossaryVocabulary.filter(item => item.level === level).length
   ])),
-  { A1: 543, A2: 414, B1: 547, B2: 504 },
+  { A1: 540, A2: 410, B1: 544, B2: 502 },
   'French textbook glossary level counts changed unexpectedly'
 );
-assert.equal(vocabulary.length, 2185, 'Merged French vocabulary size changed unexpectedly');
+assert.equal(vocabulary.length, 2156, 'Merged French vocabulary size changed unexpectedly');
 assert.equal(new Set(vocabulary.map(item => normalizeHeadword(item.french))).size, vocabulary.length, 'French vocabulary contains duplicate headwords');
 assert.ok(vocabulary.every(item => item.french && item.meaning && item.rank && item.source), 'French vocabulary has incomplete entries');
 assert.ok(glossaryVocabulary.every(item => item.textbookPage && item.level && item.partOfSpeech), 'French glossary entries lost textbook provenance');
 assert.ok(glossaryVocabulary.some(item => item.french === 'montgolfière' && item.level === 'B2'), 'Reviewed B2 accent correction is missing');
 
-// ===== 重音回归：ou/où、la/là、diner/dîner 必须同时存在 =====
+// ===== 重音回归：ou/où、la/là 必须同时存在 =====
 // 见 audit: fr-accent-blind-dedupe-drops-a1-words
+//
+// diner/dîner 从这组里拿掉了：它俩是同一个词的两种拼法（1990 年改革后
+// 两种都合法），词汇表重建后统一收 dîner，教材印的 diner 保留在 printed
+// 字段里。ou/où、la/là 则是真正的不同词，仍然必须各占一条 —— 下面单独
+// 断言 dîner 的教材拼法没丢。
 const headwords = new Set(vocabulary.map(item => item.french));
-for (const pair of [['ou', 'où'], ['la', 'là'], ['diner', 'dîner']]) {
+for (const pair of [['ou', 'où'], ['la', 'là']]) {
   assert.ok(
     headwords.has(pair[0]) && headwords.has(pair[1]),
     `Accent-preserving dedupe must keep both "${pair[0]}" and "${pair[1]}"`
   );
 }
+assert.ok(
+  glossaryVocabulary.some(item => item.french === 'dîner' && item.printed === 'diner'),
+  'Textbook spelling "diner" must survive as the printed form of dîner'
+);
+
 // 大小写仍然合并（Internet / internet 是同一个词）
 assert.equal(
   vocabulary.filter(item => normalizeHeadword(item.french) === 'internet').length,
@@ -69,7 +87,9 @@ const droppedByAccentBlindness = vocabulary
   .map(item => item.french);
 assert.deepEqual(
   droppedByAccentBlindness.sort(),
-  ['diner', 'là', 'ou'].sort(),
+  // 原来是 ['diner', 'là', 'ou']；词汇表重建把 diner 并进 dîner 之后，
+  // 抹重音会丢的只剩这两个真·最小对立对。
+  ['là', 'ou'].sort(),
   'Accent-blind dedupe drops exactly these A1 words — do not switch back to it'
 );
 
@@ -86,22 +106,35 @@ if (!/DimText\.headwordKey|headwordKey\(/.test(frenchAppSource)) {
 const topics = grammar.tree.parts.flatMap(part =>
   part.chapters.flatMap(chapter => chapter.topics)
 );
-assert.equal(topics.length, 23, 'French grammar topic count changed unexpectedly');
+// 23 -> 109：content/fr-grammar 把语法书从 A1-B1 的 23 个主题扩到 A1-B2 的 109 个。
+assert.equal(topics.length, 109, 'French grammar topic count changed unexpectedly');
+assert.deepEqual(
+  [...new Set(topics.map(topic => topic.level))].sort(),
+  ['A1', 'A2', 'B1', 'B2'],
+  'French grammar must span A1-B2'
+);
 assert.ok(
   topics.every(topic => topic.slug && topic.title && grammar.content[topic.slug]),
   'French grammar has incomplete topics'
 );
 
-assert.equal(conjugations.length, 35, 'French verb count changed unexpectedly');
+// 35 -> 1888：content/fr-conj 用语料词频重建了整张变位表。
+assert.equal(conjugations.length, 1888, 'French verb count changed unexpectedly');
 assert.equal(new Set(conjugations.map(verb => verb.infinitive)).size, conjugations.length, 'French conjugation list contains duplicate verbs');
 
+// 原来 35 个动词都恰好 7 组时态；重建后主流动词是 20 组（1801/1888），
+// 缺陷动词（如 falloir）天然少几组，所以只断言下限和每组的完整性。
 for (const verb of conjugations) {
   const tenseEntries = Object.entries(verb.tenses);
-  assert.equal(tenseEntries.length, 7, `${verb.infinitive} should expose seven tense/mood groups`);
+  assert.ok(tenseEntries.length >= 3, `${verb.infinitive} should expose at least three tense/mood groups`);
   for (const [tenseId, tense] of tenseEntries) {
     assert.ok(tenseId && tense.tense_label && tense.forms, `${verb.infinitive} has an incomplete tense`);
   }
 }
+assert.ok(
+  conjugations.filter(verb => Object.keys(verb.tenses).length >= 20).length >= 1700,
+  'The vast majority of French verbs should carry the full twenty tense/mood groups'
+);
 
 const etre = conjugations.find(verb => verb.infinitive === 'être');
 const etrePresent = etre.tenses.indicatif_present.forms;

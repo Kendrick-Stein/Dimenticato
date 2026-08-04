@@ -249,11 +249,39 @@
         .trim();
     },
 
+    // 课程单元的 headword 里有大量屈折形（复数 Frauen、比较级 kleiner、
+    // 第二分词 gegessen）。词库自己带 plural / principalParts，用它们建一张
+    // 屈折形 → 词条的索引，这些词才点得开卡片。
+    //
+    // 分两轮：先索引原形（german / display），再索引屈折形，且屈折形只在
+    // 键位空着时才写入 —— 否则「schalen」这种「A 的屈折形恰好是 B 的原形」
+    // 的碰撞会把原形词条顶掉。
+    inflectedForms(word) {
+      const forms = [];
+      if (word.plural) forms.push(word.plural);
+      if (word.principalParts) {
+        String(word.principalParts).split(',').forEach((part) => {
+          part.trim().split(/\s+/).forEach((token) => {
+            // 主要变化形写作「isst, aß, hat gegessen」，助动词不是词形
+            if (token && !/^(hat|ist|haben|sein|hast|bin)$/.test(token)) forms.push(token);
+          });
+        });
+      }
+      return forms;
+    },
+
     buildWordIndex() {
       if (this.wordIndex) return this.wordIndex;
       const index = new Map();
-      this.getSystemWords().forEach((word) => {
+      const words = this.getSystemWords();
+      words.forEach((word) => {
         [word.german, word.display].filter(Boolean).forEach((value) => {
+          const key = this.normalize(value);
+          if (key && !index.has(key)) index.set(key, word);
+        });
+      });
+      words.forEach((word) => {
+        this.inflectedForms(word).forEach((value) => {
           const key = this.normalize(value);
           if (key && !index.has(key)) index.set(key, word);
         });
