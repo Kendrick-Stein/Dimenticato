@@ -9,15 +9,222 @@
   const STORAGE_KEYS = {
     MASTERED: 'dimenticato_french_mastered',
     STATS: 'dimenticato_french_stats',
-    FILTER: 'dimenticato_french_filter'
+    FILTER: 'dimenticato_french_filter',
+    LEVEL: 'dimenticato_french_level',
+    SESSION: 'dimenticato_french_session',
+    DAILY: 'dimenticato_french_daily',
+    SRS: 'dimenticato_french_srs'
   };
 
-  function installFrenchScreens() {
-    if (document.getElementById('frenchWelcomeScreen')) return;
-    const anchor = document.getElementById('languageSkeletonPlaceholderScreen');
-    if (!anchor) return;
+  const LEVELS = ['A1', 'A2', 'B1', 'B2'];
+  const SESSION_SIZES = [20, 50, 100, 0];
+  const DAILY_HISTORY_DAYS = 60;
+  const SHARED_SCREENS = new Set([
+    'grammarBookScreen',
+    'conjugationSetupScreen',
+    'conjugationScreen',
+    'communityBrowseScreen',
+    'verbCollocationsScreen',
+    'verbCollocationPracticeScreen'
+  ]);
 
-    anchor.insertAdjacentHTML('beforebegin', `
+  // ==================== 文本归一化 ====================
+  // 法语的重音是区别性的（ou / où、la / là、sur / sûr），因此词条去重与
+  // 拼写判分都保留重音；只统一排版差异（撇号、连字符、œ 连写、空白）。
+
+  const stripAccents = value => String(value == null ? '' : value)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+
+  function foldText(value) {
+    return String(value == null ? '' : value)
+      .normalize('NFC')
+      .replace(/[\u2018\u2019\u02bc\u00b4`]/g, "'")
+      .replace(/[\u2010-\u2015]/g, '-')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  // 词条去重键：保留重音，折叠 œ/æ 与大小写（sœur = soeur、Internet = internet）
+  function headwordKey(value) {
+    return foldText(value)
+      .toLowerCase()
+      .replace(/œ/g, 'oe')
+      .replace(/æ/g, 'ae');
+  }
+
+  // 去重音的宽松键，只用于“差一点”提示与词形推导校验，不用于判分
+  function looseKey(value) {
+    return stripAccents(headwordKey(value)).replace(/[^a-z0-9' -]/g, '');
+  }
+
+  // 拼写判分键：保留重音，容忍撇号写法、连字符与空格的差异
+  function spellKey(value) {
+    return headwordKey(value)
+      .replace(/\s*'\s*/g, "'")
+      .replace(/-/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  // ==================== 词条解析 ====================
+  // 教材词汇表把阴性/变体写进词头（acteur(trice)、ami(e)、cher(ère)），
+  // 也把动词的介词搭配写进括号（répondre(à)）。这里拆成
+  // { french 基本形（作答案）, variant 变体形, construction 搭配, display 展示 }。
+
+  const COMPLEMENT_MARKERS = new Set([
+    'à', 'de', "d'", 'que', "qu'", 'qn', 'qch',
+    'à qn', 'à qch', 'de qn', 'de qch', 'avec qn', 'avec qch'
+  ]);
+  const ARTICLE_MARKERS = new Set(['la', 'les', "l'"]);
+  const TRAILING_NOISE = /^(n|m|f|pl|adi|adj|adv)$/i;
+
+  // 常见阴性构词规则；命中后仍需通过“结尾必须等于括号内容”的校验
+  const FEMININE_RULES = [
+    { end: /teur$/, make: base => base.replace(/teur$/i, 'trice') },
+    { end: /eur$/, make: base => base.replace(/eur$/i, 'euse') },
+    { end: /er$/, make: base => base.replace(/er$/i, 'ère') },
+    { end: /if$/, make: base => base.replace(/if$/i, 'ive') },
+    { end: /f$/, make: base => base.replace(/f$/i, 've') },
+    { end: /x$/, make: base => base.replace(/x$/i, 'se') },
+    { end: /(ien|een|en|on|an)$/, make: base => base + 'ne' },
+    { end: /(el|ul|eil)$/, make: base => base + 'le' },
+    { end: /et$/, make: base => base.replace(/et$/i, 'ète') },
+    { end: /et$/, make: base => base + 'te' },
+    { end: /(at|ot|ut)$/, make: base => base + 'te' },
+    { end: /(as|os)$/, make: base => base + 'se' },
+    { end: /c$/, make: base => base.replace(/c$/i, 'que') },
+    { end: /g$/, make: base => base + 'ue' },
+    { end: /./, make: base => base + 'e' }
+  ];
+
+  function deriveVariant(base, suffix) {
+    const wanted = looseKey(suffix);
+    if (!wanted) return '';
+    const baseLoose = looseKey(base);
+    // 最常见的写法 xxx(e)：直接加 e
+    if (wanted === 'e') return /e$/i.test(base) ? '' : base + suffix;
+    // 括号内是完整的另一个词（copain(copine)）
+    if (wanted.length >= 4 && baseLoose.slice(0, 3) === wanted.slice(0, 3)) return suffix;
+
+    const candidates = [];
+    const endTest = stripAccents(base).toLowerCase();
+    FEMININE_RULES.forEach(rule => {
+      if (rule.end.test(endTest)) candidates.push(rule.make(base));
+    });
+    candidates.push(base + suffix);
+    for (let cut = 1; cut <= 4 && cut < base.length; cut++) {
+      candidates.push(base.slice(0, base.length - cut) + suffix);
+    }
+    for (const candidate of candidates) {
+      const loose = looseKey(candidate);
+      if (!loose || loose === baseLoose) continue;
+      if (candidate.length - base.length > suffix.length) continue;
+      if (loose.endsWith(wanted)) return candidate;
+    }
+    return base + suffix;
+  }
+
+  function parseHeadword(raw) {
+    const text = foldText(raw);
+    const result = { french: text, display: text, variant: '', construction: '', accepted: [text] };
+    if (!text) return result;
+
+    if (!text.includes('(')) {
+      const slash = /^([^/]+?)\s*\/\s*([^/]+)$/.exec(text);
+      if (slash) {
+        result.french = slash[1].trim();
+        result.variant = slash[2].trim();
+        result.display = `${result.french} / ${result.variant}`;
+        result.accepted = [result.french, result.variant];
+      }
+      return result;
+    }
+
+    const match = /^(.*?)\s*\(([^)]*)\)\s*(.*)$/.exec(text);
+    if (!match) return result;
+
+    const head = match[1].trim();
+    const inner = match[2].trim();
+    let tail = match[3].trim();
+    if (TRAILING_NOISE.test(tail)) tail = ''; // OCR 残留：Italien(ne)n、tolérant(e)adi
+    if (!head) return result;
+
+    // petit(-)déjeuner：连字符可有可无
+    if (!inner || inner === '-') {
+      const spaced = tail ? `${head} ${tail}` : head;
+      const joined = tail ? `${head}-${tail}` : head;
+      result.french = spaced;
+      result.display = spaced;
+      result.variant = joined === spaced ? '' : joined;
+      result.accepted = [spaced, joined, text];
+      return result;
+    }
+
+    if (tail) {
+      const withTail = `${head} ${tail}`;
+      result.french = withTail;
+      result.display = `${head}(${inner}) ${tail}`;
+      result.accepted = [withTail, `${head}${inner} ${tail}`, text];
+      return result;
+    }
+
+    const lowerInner = inner.toLowerCase();
+    if (COMPLEMENT_MARKERS.has(lowerInner) || /\b(qn|qch)\b/.test(lowerInner)) {
+      result.french = head;
+      result.construction = inner;
+      result.display = `${head} (${inner})`;
+      result.accepted = [head, `${head} ${inner}`];
+      return result;
+    }
+    if (ARTICLE_MARKERS.has(lowerInner)) {
+      result.french = head;
+      result.construction = inner;
+      result.display = `${inner} ${head}`;
+      result.accepted = [head, `${inner} ${head}`];
+      return result;
+    }
+
+    const variant = deriveVariant(head, inner);
+    result.french = head;
+    result.variant = variant;
+    result.display = variant ? `${head} (${variant})` : head;
+    result.accepted = [head, variant, text].filter(Boolean);
+    return result;
+  }
+
+  // ==================== 备注解析 ====================
+
+  const LEVEL_PATTERN = /^(A1|A2|B1|B2|C1|C2)$/;
+  const GENERIC_TOPICS = new Set(['教材总词汇表']);
+  const GENDER_LABELS = { 'n.m': '阳性', 'n.f': '阴性', 'n.m.pl': '阳性复数', 'n.f.pl': '阴性复数' };
+
+  function splitNotes(notes) {
+    const parts = String(notes == null ? '' : notes).split('·').map(part => part.trim()).filter(Boolean);
+    let level = '';
+    const topics = [];
+    parts.forEach(part => {
+      if (!level && LEVEL_PATTERN.test(part)) level = part;
+      else topics.push(part);
+    });
+    return { level, topics };
+  }
+
+  function buildNotes(item) {
+    const pos = item.partOfSpeech || '';
+    // 有阴阳性变体的词条（acteur(trice)）在教材表里只标了阴性词性；
+    // 跨来源存在多个义项时（aller 既是动词又是名词）词性也只对其中一个义项成立。
+    // 这两种情况直接写“阴性/阳性”会误导，因此只显示词性本身。
+    const ambiguous = item.variant || (Array.isArray(item.senses) && item.senses.length > 0);
+    const gender = !ambiguous && GENDER_LABELS[pos] ? `${pos}（${GENDER_LABELS[pos]}）` : pos;
+    const topics = item.topics.filter(topic => topic !== pos && !GENERIC_TOPICS.has(topic));
+    return [item.level, gender, ...topics].filter(Boolean).join(' · ');
+  }
+
+  // ==================== 页面安装 ====================
+
+  function frenchScreensMarkup() {
+    return `
       <section id="frenchWelcomeScreen" class="screen">
         <div class="container">
           <div class="eyebrow">French</div>
@@ -58,7 +265,7 @@
             <button class="card" id="frenchSystemVocabularyBtn">
               <span class="card-chip"><span class="msr">dataset</span></span>
               <span class="card-title">System Vocabulary</span>
-              <span class="card-desc">2,183 个 A1-B2 教材词条与主题表达</span>
+              <span class="card-desc"><span id="frenchSystemVocabularyCount">0</span> 个 A1-B2 教材词条与主题表达</span>
             </button>
             <button class="card" id="frenchWordbooksBtn">
               <span class="card-chip"><span class="msr">bookmark</span></span>
@@ -92,6 +299,25 @@
           <div class="eyebrow">French / Vocabulary</div>
           <h1 class="page">Choisir un mode</h1>
           <p class="desc">选择一种方式练习当前法语词汇。</p>
+          <div class="panel" style="margin-top:24px">
+            <div class="panel-title">练习范围</div>
+            <div class="field-label" style="margin-top:0">CEFR 等级</div>
+            <div class="chips" id="frenchLevelChips" style="flex-wrap:wrap">
+              <button class="chip active" data-level="all">全部</button>
+              <button class="chip" data-level="A1">A1</button>
+              <button class="chip" data-level="A2">A2</button>
+              <button class="chip" data-level="B1">B1</button>
+              <button class="chip" data-level="B2">B2</button>
+            </div>
+            <div class="field-label">每组题量</div>
+            <div class="chips" id="frenchSessionChips" style="flex-wrap:wrap">
+              <button class="chip active" data-size="20">20 题</button>
+              <button class="chip" data-size="50">50 题</button>
+              <button class="chip" data-size="100">100 题</button>
+              <button class="chip" data-size="0">全部</button>
+            </div>
+            <div class="acc-total"><span id="frenchScopeSummary">当前范围</span><b id="frenchScopeCount">0</b></div>
+          </div>
           <div class="card-grid cols-3">
             <button class="card" id="frenchMultipleChoiceBtn">
               <span class="card-chip"><span class="msr">quiz</span></span>
@@ -181,6 +407,13 @@
               <button class="chip" data-filter="mastered">已掌握</button>
               <button class="chip" data-filter="unmastered">学习中</button>
             </div>
+            <div class="chips" id="frenchBrowseLevelChips" style="flex-wrap:wrap">
+              <button class="chip active" data-level="all">全部等级</button>
+              <button class="chip" data-level="A1">A1</button>
+              <button class="chip" data-level="A2">A2</button>
+              <button class="chip" data-level="B1">B1</button>
+              <button class="chip" data-level="B2">B2</button>
+            </div>
           </div>
           <div class="word-list" id="frenchWordList"></div>
         </div>
@@ -221,6 +454,42 @@
             <div class="big-stat"><div class="bs-label">Spelling stats</div><div class="bs-value" id="frenchProgressSpStats">0 / 0</div></div>
             <div class="big-stat accent"><div class="bs-label">Accuracy</div><div class="bs-value" id="frenchProgressAccuracy">0%</div></div>
           </div>
+
+          <div class="progress-2col">
+            <div class="panel">
+              <div class="panel-title">最近 7 天练习量</div>
+              <div class="bar-chart" id="frenchProgressWeekBars"></div>
+            </div>
+            <div class="panel">
+              <div class="panel-title">正确率</div>
+              <div id="frenchProgressAccuracyRows"></div>
+              <div class="acc-total"><span>总练习次数</span><b id="frenchProgressTotalAttempts">0</b></div>
+              <div class="acc-total"><span>连续学习天数</span><b id="frenchProgressStreak">0</b></div>
+            </div>
+          </div>
+
+          <div style="margin-top:28px">
+            <div class="panel-title">最近 7 天记录</div>
+            <div class="stats-table-container">
+              <table class="stats-table">
+                <thead>
+                  <tr><th>日期</th><th>练习词数</th><th>时长</th><th>作答</th><th>正确率</th></tr>
+                </thead>
+                <tbody id="frenchProgressHistoryBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="settings-card hidden" id="frenchProgressStatsPanelCard">
+            <button class="data-row" id="frenchOpenProgressStatsBtn">
+              <span class="row-chip"><span class="msr">monitoring</span></span>
+              <span class="row-body">
+                <span class="row-title">打开完整统计面板</span>
+                <span class="row-sub">概览、图表与历史记录</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -249,10 +518,55 @@
           </div>
         </div>
       </section>
-    `);
+    `;
   }
 
-  installFrenchScreens();
+  // French 是唯一在运行时注入页面的语言，锚点一旦消失整个模块都会失踪。
+  // 因此这里显式报错，并按顺序尝试多个挂载点，最后兜底到 document.body。
+  function installFrenchScreens() {
+    if (document.getElementById('frenchWelcomeScreen')) return true;
+    const markup = frenchScreensMarkup();
+    const mounts = [];
+    const anchor = document.getElementById('languageSkeletonPlaceholderScreen');
+    if (anchor) {
+      mounts.push(() => anchor.insertAdjacentHTML('beforebegin', markup));
+    } else {
+      console.error('FrenchApp: 未找到锚点 #languageSkeletonPlaceholderScreen，改用回退挂载点安装法语页面。');
+    }
+    const sibling = document.querySelector('section.screen');
+    if (sibling && sibling.parentNode) {
+      mounts.push(() => sibling.parentNode.insertAdjacentHTML('beforeend', markup));
+    }
+    if (document.body) {
+      mounts.push(() => document.body.insertAdjacentHTML('beforeend', markup));
+    }
+
+    for (const mount of mounts) {
+      try {
+        mount();
+      } catch (error) {
+        console.error('FrenchApp: 安装法语页面时出错:', error);
+        continue;
+      }
+      if (document.getElementById('frenchWelcomeScreen')) return true;
+    }
+
+    console.error('FrenchApp: 法语页面安装失败，French 模块不可用。');
+    try {
+      if (document.body) {
+        document.body.insertAdjacentHTML('beforeend',
+          '<section id="frenchWelcomeScreen" class="screen"><div class="container">' +
+          '<div class="eyebrow">French</div><h1 class="page">French 模块加载失败</h1>' +
+          '<p class="desc">页面结构缺少法语模块的挂载点，请刷新页面；若仍失败请重新部署站点。</p>' +
+          '</div></section>');
+      }
+    } catch (error) {
+      console.error('FrenchApp: 兜底提示也无法插入:', error);
+    }
+    return false;
+  }
+
+  const screensInstalled = installFrenchScreens();
 
   const FrenchApp = {
     words: [],
@@ -266,56 +580,142 @@
     quizCorrect: 0,
     quizTotal: 0,
     browseFilter: 'all',
+    browseLevel: 'all',
+    levelFilter: 'all',
+    sessionSize: 20,
+    glossIndex: new Map(),
+    srs: {},
     _mcEngine: null,
+    _questionStartedAt: 0,
 
     init() {
+      if (!screensInstalled) return;
       if (typeof FRENCH_VOCABULARY_DATA === 'undefined') {
         console.warn('FRENCH_VOCABULARY_DATA 未加载，跳过 FrenchApp 初始化');
         return;
       }
       this.systemWords = this.buildSystemVocabulary();
       this.words = this.systemWords.slice();
+      this.buildGlossIndex();
       this.loadState();
       this.bindNavigation();
       this.bindPractice();
       this.bindGrammar();
       this.bindWordbooks();
       this.renderWordbooks();
+      this.installBreadcrumbScope();
+      this.setText('frenchSystemVocabularyCount', this.systemWords.length.toLocaleString());
+      this.syncScopeChips();
+      if (typeof window.showEnhancedStatsModal === 'function') {
+        document.getElementById('frenchProgressStatsPanelCard')?.classList.remove('hidden');
+      }
       if (document.body.getAttribute('data-language') === 'french') {
         this.updateHeaderStats();
       }
     },
 
+    // 教材总词汇表与手写课程表按“字段级并集”合并：同一词条只出现一次，
+    // 但 level / partOfSpeech / textbookPage / 主题 / 释义 会从所有来源补齐，
+    // 而不是让先出现的来源整条胜出（旧实现丢掉了 CEFR 等级与词性）。
+    // 去重键保留重音（ou ≠ où、la ≠ là、a ≠ à），只折叠 œ 与大小写（sœur = soeur）。
     buildSystemVocabulary() {
       const glossary = typeof FRENCH_GLOSSARY_VOCABULARY_DATA !== 'undefined'
         ? FRENCH_GLOSSARY_VOCABULARY_DATA
         : [];
-      const seen = new Set();
-      const normalize = value => String(value || '')
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .toLowerCase()
-        .replace(/[’']/g, "'")
-        .trim();
+      const byKey = new Map();
+      const order = [];
 
-      return [...FRENCH_VOCABULARY_DATA, ...glossary]
-        .filter(item => {
-          const key = normalize(item.french);
-          if (!key || seen.has(key)) return false;
-          seen.add(key);
-          return true;
-        })
-        .map((item, index) => ({ ...item, rank: index + 1 }));
+      [...FRENCH_VOCABULARY_DATA, ...glossary].forEach(entry => {
+        if (!entry) return;
+        const parsed = parseHeadword(entry.french);
+        const key = headwordKey(parsed.french);
+        if (!key) return;
+        if (!byKey.has(key)) {
+          byKey.set(key, { accepted: [], topics: [], senses: [] });
+          order.push(key);
+        }
+        const target = byKey.get(key);
+        const { level, topics } = splitNotes(entry.notes);
+
+        target.french = target.french || parsed.french;
+        // 展示形式只在后来的来源补上了性数变体时才替换，
+        // 否则保留先出现的正字法（sœur 不应被教材表的 soeur 覆盖）。
+        if (!target.display || (parsed.variant && !target.variant)) target.display = parsed.display;
+        target.variant = target.variant || parsed.variant;
+        target.construction = target.construction || parsed.construction;
+        parsed.accepted.forEach(form => {
+          if (form && !target.accepted.includes(form)) target.accepted.push(form);
+        });
+        // 主释义保留课程表里人工整理的义项，教材表的其它义项作为补充义保留，
+        // 这样既不丢信息，也不会把 aller 的“去程（名词）”顶成主释义。
+        const meaning = String(entry.meaning || '').trim();
+        if (meaning && !target.senses.includes(meaning)) target.senses.push(meaning);
+        target.meaning = target.meaning || meaning;
+        target.level = target.level || entry.level || level || '';
+        target.partOfSpeech = target.partOfSpeech || entry.partOfSpeech || '';
+        target.textbookPage = target.textbookPage || entry.textbookPage || '';
+        target.source = target.source || entry.source || '';
+        topics.forEach(topic => {
+          if (!target.topics.includes(topic)) target.topics.push(topic);
+        });
+      });
+
+      return order.map((key, index) => {
+        const item = byKey.get(key);
+        item.key = key;
+        item.chinese = item.meaning;
+        item.senses = item.senses.filter(sense => sense !== item.meaning);
+        item.notes = buildNotes(item);
+        item.rank = index + 1;
+        delete item.topics;
+        return item;
+      });
+    },
+
+    // 同一条中文释义可能对应多个法语词（因为 → parce que / car），
+    // 拼写模式据此接受任意同义词条，选择题据此排除重复选项。
+    buildGlossIndex() {
+      this.glossIndex = new Map();
+      this.words.forEach(word => {
+        const gloss = String(word.meaning || '').trim();
+        if (!gloss) return;
+        if (!this.glossIndex.has(gloss)) this.glossIndex.set(gloss, []);
+        this.glossIndex.get(gloss).push(word);
+      });
     },
 
     loadState() {
       try {
         this.mastered = new Set(JSON.parse(localStorage.getItem(STORAGE_KEYS.MASTERED) || '[]'));
-        this.stats = { ...this.stats, ...JSON.parse(localStorage.getItem(STORAGE_KEYS.STATS) || '{}') };
-        this.browseFilter = localStorage.getItem(STORAGE_KEYS.FILTER) || 'all';
       } catch (error) {
-        console.error('FrenchApp 状态加载失败:', error);
+        console.error('FrenchApp 掌握记录加载失败:', error);
+        this.mastered = new Set();
       }
+      try {
+        this.stats = { ...this.stats, ...JSON.parse(localStorage.getItem(STORAGE_KEYS.STATS) || '{}') };
+      } catch (error) {
+        console.error('FrenchApp 统计加载失败:', error);
+      }
+      try {
+        this.srs = JSON.parse(localStorage.getItem(STORAGE_KEYS.SRS) || '{}') || {};
+      } catch (error) {
+        console.error('FrenchApp 复习计划加载失败:', error);
+        this.srs = {};
+      }
+      try {
+        this.browseFilter = localStorage.getItem(STORAGE_KEYS.FILTER) || 'all';
+        const level = localStorage.getItem(STORAGE_KEYS.LEVEL);
+        if (level && (level === 'all' || LEVELS.includes(level))) this.levelFilter = level;
+        // 注意 Number(null) === 0，而 0 是合法的“全部”档位，
+        // 因此必须先判断确实存过值，否则首次访问会默认成一次练全部 2157 词。
+        const rawSize = localStorage.getItem(STORAGE_KEYS.SESSION);
+        if (rawSize !== null && rawSize !== '' && SESSION_SIZES.includes(Number(rawSize))) {
+          this.sessionSize = Number(rawSize);
+        }
+      } catch (error) {
+        console.error('FrenchApp 偏好加载失败:', error);
+      }
+      this.browseLevel = this.levelFilter;
     },
 
     saveState() {
@@ -326,6 +726,8 @@
         localStorage.setItem(masteredKey, JSON.stringify([...this.mastered]));
         localStorage.setItem(STORAGE_KEYS.STATS, JSON.stringify(this.stats));
         localStorage.setItem(STORAGE_KEYS.FILTER, this.browseFilter);
+        localStorage.setItem(STORAGE_KEYS.LEVEL, this.levelFilter);
+        localStorage.setItem(STORAGE_KEYS.SESSION, String(this.sessionSize));
         this.updateHeaderStats();
       } catch (error) {
         console.error('FrenchApp 状态保存失败:', error);
@@ -355,6 +757,9 @@
       this.bindClick('frenchCommunityBtn', () => this.openCommunity('frenchVocabularyScreen'));
       this.bindClick('frenchSettingsCommunityBtn', () => this.openCommunity('frenchSettingsScreen'));
       this.bindClick('frenchSettingsGlobalDataBtn', () => this.showScreen('settingsScreen'));
+      this.bindClick('frenchOpenProgressStatsBtn', () => {
+        if (typeof window.showEnhancedStatsModal === 'function') window.showEnhancedStatsModal();
+      });
     },
 
     bindPractice() {
@@ -378,6 +783,15 @@
       });
       document.querySelectorAll('#frenchFilterChips .chip').forEach(chip => {
         chip.addEventListener('click', () => this.setBrowseFilter(chip.dataset.filter));
+      });
+      document.querySelectorAll('#frenchBrowseLevelChips .chip').forEach(chip => {
+        chip.addEventListener('click', () => this.setBrowseLevel(chip.dataset.level));
+      });
+      document.querySelectorAll('#frenchLevelChips .chip').forEach(chip => {
+        chip.addEventListener('click', () => this.setLevelFilter(chip.dataset.level));
+      });
+      document.querySelectorAll('#frenchSessionChips .chip').forEach(chip => {
+        chip.addEventListener('click', () => this.setSessionSize(Number(chip.dataset.size)));
       });
     },
 
@@ -418,6 +832,44 @@
       });
     },
 
+    // ==================== 共享页面的面包屑语言归属 ====================
+    // grammarBookScreen / conjugation* / community 由四种语言共用，
+    // 面包屑由 app.js 的 ScreenMeta 统一渲染。若 s1 提供了语言感知的
+    // ScreenMeta API 就直接调用它；否则只在 French 上下文里补一个前缀。
+    installBreadcrumbScope() {
+      if (this._breadcrumbHooked) return;
+      const original = window.showScreen;
+      if (typeof original !== 'function') return;
+      const app = this;
+      window.showScreen = function (screenId, options) {
+        const result = original.apply(this, arguments);
+        try {
+          app.scopeSharedBreadcrumb(screenId);
+        } catch (error) {
+          console.warn('FrenchApp: 面包屑语言归属处理失败:', error);
+        }
+        return result;
+      };
+      this._breadcrumbHooked = true;
+    },
+
+    scopeSharedBreadcrumb(screenId) {
+      if (!SHARED_SCREENS.has(screenId)) return;
+      if (document.body.getAttribute('data-language') !== 'french') return;
+      const meta = window.ScreenMeta;
+      const setter = meta && (meta.setLanguage || meta.setLanguageContext || meta.applyLanguage);
+      if (typeof setter === 'function') {
+        setter.call(meta, 'french', screenId);
+        return;
+      }
+      const breadcrumb = document.getElementById('breadcrumb');
+      if (!breadcrumb) return;
+      const first = breadcrumb.querySelector('.breadcrumb-item');
+      if (!first || first.textContent.trim() === 'French') return;
+      breadcrumb.insertAdjacentHTML('afterbegin',
+        '<span class="breadcrumb-item">French</span><span class="breadcrumb-separator">/</span>');
+    },
+
     selectSystemVocabulary() {
       this.currentWordbookId = null;
       this.words = this.systemWords.slice();
@@ -426,6 +878,8 @@
       } catch (_) {
         this.mastered = new Set();
       }
+      this.buildGlossIndex();
+      this.syncScopeChips();
       this.updateHeaderStats();
       this.showScreen('frenchVocabularyModesScreen');
     },
@@ -439,12 +893,12 @@
         return;
       }
       container.innerHTML = wordbooks.map(wordbook => `
-        <div class="card wordbook-card" data-french-wordbook-id="${wordbook.id}">
-          <button class="wordbook-card-manage-btn" data-manage-id="${wordbook.id}" title="管理"><span class="msr">settings</span></button>
-          <button class="wordbook-delete-btn" data-delete-id="${wordbook.id}" title="删除">×</button>
+        <div class="card wordbook-card" data-french-wordbook-id="${escapeAttribute(wordbook.id)}">
+          <button class="wordbook-card-manage-btn" data-manage-id="${escapeAttribute(wordbook.id)}" title="管理"><span class="msr">settings</span></button>
+          <button class="wordbook-delete-btn" data-delete-id="${escapeAttribute(wordbook.id)}" title="删除">×</button>
           <span class="card-chip"><span class="msr">bookmark</span></span>
           <span class="card-title">${escapeHtml(wordbook.name)}</span>
-          <span class="card-desc">${wordbook.wordCount} 词</span>
+          <span class="card-desc">${escapeHtml(String(wordbook.wordCount))} 词</span>
         </div>
       `).join('');
       container.querySelectorAll('[data-french-wordbook-id]').forEach(card => {
@@ -475,9 +929,236 @@
       } catch (_) {
         this.mastered = new Set();
       }
+      // 自定义词本没有 CEFR 等级，等级筛选在词本模式下自动回到全部
+      this.levelFilter = 'all';
+      this.browseLevel = 'all';
+      this.buildGlossIndex();
+      this.syncScopeChips();
       this.updateHeaderStats();
       this.showScreen('frenchVocabularyModesScreen');
     },
+
+    // ==================== 练习范围 ====================
+
+    setLevelFilter(level) {
+      if (level !== 'all' && !LEVELS.includes(level)) return;
+      this.levelFilter = level;
+      this.browseLevel = level;
+      this.syncScopeChips();
+      this.saveState();
+    },
+
+    setSessionSize(size) {
+      if (!SESSION_SIZES.includes(size)) return;
+      this.sessionSize = size;
+      this.syncScopeChips();
+      this.saveState();
+    },
+
+    syncScopeChips() {
+      document.querySelectorAll('#frenchLevelChips .chip').forEach(chip => {
+        chip.classList.toggle('active', chip.dataset.level === this.levelFilter);
+      });
+      document.querySelectorAll('#frenchSessionChips .chip').forEach(chip => {
+        chip.classList.toggle('active', Number(chip.dataset.size) === this.sessionSize);
+      });
+      document.querySelectorAll('#frenchBrowseLevelChips .chip').forEach(chip => {
+        chip.classList.toggle('active', chip.dataset.level === this.browseLevel);
+      });
+      const scoped = this.getScopedWords();
+      const size = this.sessionSize > 0 ? Math.min(this.sessionSize, scoped.length) : scoped.length;
+      this.setText('frenchScopeSummary',
+        `${this.levelFilter === 'all' ? '全部等级' : this.levelFilter} · 每组 ${this.sessionSize > 0 ? `${this.sessionSize} 题` : '全部'}`);
+      this.setText('frenchScopeCount', `${size.toLocaleString()} / ${scoped.length.toLocaleString()}`);
+    },
+
+    getScopedWords() {
+      if (this.levelFilter === 'all') return this.words.slice();
+      return this.words.filter(word => word.level === this.levelFilter);
+    },
+
+    buildSession() {
+      const pool = this.getScopedWords();
+      if (!pool.length) return [];
+      const due = this.getDueWords(pool);
+      let ordered = this.shuffle(pool);
+      if (due.length && due.length < pool.length) {
+        const dueKeys = new Set(due.map(word => this.wordKey(word)));
+        ordered = [
+          ...ordered.filter(word => dueKeys.has(this.wordKey(word))),
+          ...ordered.filter(word => !dueKeys.has(this.wordKey(word)))
+        ];
+      }
+      return this.sessionSize > 0 ? ordered.slice(0, this.sessionSize) : ordered;
+    },
+
+    // ==================== 间隔重复（共享层可用时接入） ====================
+
+    wordKey(word) {
+      return word && word.key ? word.key : headwordKey(word && word.french);
+    },
+
+    getDueWords(pool) {
+      const shared = window.SpacedRepetition;
+      // 旧版是 getDueWords(words)，传语言名会直接抛错，而且它会往词条对象上
+      // 写 srData；只有语言感知的新版（两个参数）才交给共享层。
+      if (shared && typeof shared.getDueWords === 'function' && shared.getDueWords.length >= 2) {
+        try {
+          const result = shared.getDueWords('french', pool);
+          if (Array.isArray(result)) return result;
+        } catch (error) {
+          console.warn('FrenchApp: 共享复习队列不可用，改用本地记录。', error);
+        }
+      }
+      const today = new Date().toISOString().split('T')[0];
+      return pool.filter(word => {
+        const entry = this.srs[this.wordKey(word)];
+        return entry && entry.nextReviewDate && entry.nextReviewDate <= today;
+      });
+    },
+
+    recordSrs(word, isCorrect, durationMs) {
+      const shared = window.SpacedRepetition;
+      if (!shared || typeof shared.calculateNextReview !== 'function') return;
+      const key = this.wordKey(word);
+      if (!key) return;
+      try {
+        const quality = typeof shared.convertCorrectToQuality === 'function'
+          ? shared.convertCorrectToQuality(isCorrect, durationMs)
+          : (isCorrect ? 4 : 2);
+        // 同时兼容 calculateNextReview(word, quality)（旧：状态在 word.srData 上，
+        // 且要求 reviewHistory 已存在）与 calculateNextReview(srData, quality)
+        // （新：状态就在第一个参数上）。把已有进度同时放在顶层和 srData 里，
+        // 两种实现都能读到上次的间隔；nextReviewDate 故意不预填，
+        // 这样才能靠“谁写了 nextReviewDate”判断哪个对象是结果。
+        const previous = this.srs[key] || {};
+        const seed = {
+          easiness: Number(previous.easiness) || 2.5,
+          interval: Number(previous.interval) || 0,
+          repetitions: Number(previous.repetitions) || 0,
+          reviewHistory: []
+        };
+        const holder = Object.assign({}, seed, { srData: Object.assign({}, seed) });
+        const returned = shared.calculateNextReview(holder, quality);
+        const next = [returned, holder, holder.srData]
+          .find(candidate => candidate && candidate.nextReviewDate);
+        if (!next) return;
+        const parsed = new Date(`${next.nextReviewDate}T00:00:00`);
+        if (Number.isNaN(parsed.getTime())) return;
+        // SM-2 的间隔没有上限，累计几十次正确后会让 Date 溢出；这里统一夹到 10 年内。
+        const interval = Math.max(0, Math.min(Number(next.interval) || 0, 3650));
+        this.srs[key] = {
+          easiness: Number(next.easiness) || 2.5,
+          interval,
+          repetitions: Math.max(0, Number(next.repetitions) || 0),
+          nextReviewDate: next.nextReviewDate,
+          lastReviewDate: next.lastReviewDate || new Date().toISOString().split('T')[0]
+        };
+        localStorage.setItem(STORAGE_KEYS.SRS, JSON.stringify(this.srs));
+      } catch (error) {
+        console.warn('FrenchApp: 复习计划写入失败:', error);
+      }
+    },
+
+    // ==================== 每日练习记录 ====================
+
+    loadDaily() {
+      try {
+        const raw = JSON.parse(localStorage.getItem(STORAGE_KEYS.DAILY) || '{}');
+        return raw && typeof raw === 'object' ? raw : {};
+      } catch (error) {
+        console.error('FrenchApp 每日记录加载失败:', error);
+        return {};
+      }
+    },
+
+    recordDaily(word, isCorrect, durationMs) {
+      try {
+        const daily = this.loadDaily();
+        const today = new Date().toISOString().split('T')[0];
+        const entry = daily[today] || { date: today, totalCount: 0, correctCount: 0, durationMs: 0, words: [] };
+        entry.totalCount += 1;
+        if (isCorrect) entry.correctCount += 1;
+        entry.durationMs += Math.max(0, Math.min(durationMs || 0, 5 * 60 * 1000));
+        const key = this.wordKey(word);
+        if (key && !entry.words.includes(key)) entry.words.push(key);
+        daily[today] = entry;
+        const cutoff = new Date();
+        cutoff.setDate(cutoff.getDate() - DAILY_HISTORY_DAYS);
+        const cutoffKey = cutoff.toISOString().split('T')[0];
+        Object.keys(daily).forEach(date => {
+          if (date < cutoffKey) delete daily[date];
+        });
+        localStorage.setItem(STORAGE_KEYS.DAILY, JSON.stringify(daily));
+      } catch (error) {
+        console.error('FrenchApp 每日记录保存失败:', error);
+      }
+    },
+
+    getRecentDaily(days = 7) {
+      const daily = this.loadDaily();
+      const result = [];
+      for (let offset = days - 1; offset >= 0; offset--) {
+        const date = new Date();
+        date.setDate(date.getDate() - offset);
+        const key = date.toISOString().split('T')[0];
+        const entry = daily[key];
+        result.push({
+          date: key,
+          totalCount: entry?.totalCount || 0,
+          correctCount: entry?.correctCount || 0,
+          durationMs: entry?.durationMs || 0,
+          words: entry?.words?.length || 0
+        });
+      }
+      return result;
+    },
+
+    getStreak() {
+      const daily = this.loadDaily();
+      let streak = 0;
+      for (let offset = 0; offset < DAILY_HISTORY_DAYS; offset++) {
+        const date = new Date();
+        date.setDate(date.getDate() - offset);
+        const key = date.toISOString().split('T')[0];
+        const entry = daily[key];
+        if (entry && entry.totalCount > 0) streak++;
+        else if (offset > 0) break;
+      }
+      return streak;
+    },
+
+    recordAnswer(word, isCorrect) {
+      const now = Date.now();
+      const durationMs = this._questionStartedAt ? now - this._questionStartedAt : 0;
+      this._questionStartedAt = now;
+      this.recordDaily(word, isCorrect, durationMs);
+      this.recordSrs(word, isCorrect, durationMs);
+      if (this.hasLanguageAwareStats()) {
+        try {
+          window.StatsManager.recordActivity('french', {
+            correct: isCorrect ? 1 : 0,
+            total: 1,
+            durationMs: Math.max(0, Math.min(durationMs, 5 * 60 * 1000))
+          });
+        } catch (error) {
+          console.warn('FrenchApp: 共享统计写入失败:', error);
+        }
+      }
+    },
+
+    // 旧版签名是 recordActivity(word, isCorrect, isReview)，它会把
+    // 'french' 当成单词写进意大利语的每日统计里；因此只有确认共享核心
+    // 已经升级成语言感知版本（与 DimStorage 同批交付）时才调用。
+    hasLanguageAwareStats() {
+      const stats = window.StatsManager;
+      if (!stats || typeof stats.recordActivity !== 'function') return false;
+      if (stats.recordActivity.length >= 3) return false;
+      const storage = window.DimStorage;
+      return !!(storage && typeof storage.prefixFor === 'function');
+    },
+
+    // ==================== 选择题 ====================
 
     getMcEngine() {
       if (!this._mcEngine) {
@@ -515,9 +1196,10 @@
     },
 
     startMultipleChoice() {
-      if (!this.words.length) return alert('法语词汇数据尚未加载。');
+      const session = this.buildSession();
+      if (!session.length) return alert(this.emptyScopeMessage());
       this.resetQuiz();
-      this.sessionWords = this.shuffle(this.words);
+      this.sessionWords = session;
       this.showScreen('frenchMultipleChoiceScreen');
       this.loadMultipleChoice();
     },
@@ -525,37 +1207,48 @@
     loadMultipleChoice() {
       if (this.quizIndex >= this.sessionWords.length) return this.finishPractice('选择题');
       this.currentWord = this.sessionWords[this.quizIndex];
+      this._questionStartedAt = Date.now();
       this.setText('frenchMcCurrentWord', String(this.quizIndex + 1));
       this.setText('frenchMcTotalWords', String(this.sessionWords.length));
       this.setText('frenchMcAccuracy', `${this.accuracy()}%`);
-      this.setText('frenchMcWord', this.currentWord.french || '-');
+      this.setText('frenchMcWord', this.currentWord.display || this.currentWord.french || '-');
       this.updateFill('frenchMcSessionFill');
       const hint = document.getElementById('frenchMcHint');
       const hintButton = document.getElementById('frenchMcShowHintBtn');
-      if (hint) { hint.textContent = this.currentWord.notes || ''; hint.classList.add('hidden'); }
-      if (hintButton) hintButton.classList.toggle('hidden', !this.currentWord.notes);
+      const noteText = this.hintFor(this.currentWord);
+      if (hint) { hint.textContent = noteText; hint.classList.add('hidden'); }
+      if (hintButton) hintButton.classList.toggle('hidden', !noteText);
       const correct = this.currentWord.meaning || this.currentWord.chinese || '';
       const engine = this.getMcEngine();
-      engine.renderOptions(engine.generateOptions(correct, this.words), button => this.checkMultipleChoice(button));
+      engine.renderOptions(engine.generateOptions(correct, this.distractorPool(correct)),
+        button => this.checkMultipleChoice(button));
       this.resetFeedback('frenchMcFeedback');
       this.speak(this.currentWord.french);
+    },
+
+    // 同义词条（释义字符串相同）绝不能进入干扰项，否则会出现两个"正确"选项
+    distractorPool(correct) {
+      const target = String(correct || '').trim();
+      return this.words.filter(word => String(word.meaning || '').trim() !== target);
     },
 
     checkMultipleChoice(button) {
       const correct = this.currentWord.meaning || this.currentWord.chinese || '';
       const isCorrect = (button.dataset.answer || '') === correct;
+      const word = this.currentWord;
       this.quizTotal++;
       this.stats.mcAttempts++;
       if (isCorrect) {
         this.quizCorrect++;
         this.stats.mcCorrect++;
-        this.mastered.add(this.currentWord.french);
+        this.mastered.add(word.french);
       }
       const engine = this.getMcEngine();
       engine.highlightOptions(correct);
       if (!isCorrect) { button.classList.remove('faded'); button.classList.add('wrong'); }
       engine.showFeedback(isCorrect, correct);
       this.setText('frenchMcAccuracy', `${this.accuracy()}%`);
+      this.recordAnswer(word, isCorrect);
       this.saveState();
       if (isCorrect) setTimeout(() => this.nextMultipleChoice(), 900);
     },
@@ -565,10 +1258,13 @@
       this.loadMultipleChoice();
     },
 
+    // ==================== 拼写 ====================
+
     startSpelling() {
-      if (!this.words.length) return alert('法语词汇数据尚未加载。');
+      const session = this.buildSession();
+      if (!session.length) return alert(this.emptyScopeMessage());
       this.resetQuiz();
-      this.sessionWords = this.shuffle(this.words);
+      this.sessionWords = session;
       this.showScreen('frenchSpellingScreen');
       this.loadSpelling();
     },
@@ -576,6 +1272,7 @@
     loadSpelling() {
       if (this.quizIndex >= this.sessionWords.length) return this.finishPractice('拼写');
       this.currentWord = this.sessionWords[this.quizIndex];
+      this._questionStartedAt = Date.now();
       this.setText('frenchSpCurrentWord', String(this.quizIndex + 1));
       this.setText('frenchSpTotalWords', String(this.sessionWords.length));
       this.setText('frenchSpAccuracy', `${this.accuracy()}%`);
@@ -583,8 +1280,9 @@
       this.updateFill('frenchSpSessionFill');
       const hint = document.getElementById('frenchSpHint');
       if (hint) {
-        hint.textContent = this.currentWord.notes || '';
-        hint.classList.toggle('hidden', !this.currentWord.notes);
+        const noteText = this.hintFor(this.currentWord, true);
+        hint.textContent = noteText;
+        hint.classList.toggle('hidden', !noteText);
       }
       const input = document.getElementById('frenchSpInput');
       if (input) { input.value = ''; input.disabled = false; input.focus(); }
@@ -592,32 +1290,95 @@
       this.resetFeedback('frenchSpFeedback');
     },
 
+    // 词性/性数与搭配信息是同义释义的唯一区分线索，拼写模式必须显示
+    hintFor(word, includeCollision = false) {
+      const parts = [];
+      if (word.notes) parts.push(word.notes);
+      if (word.construction) parts.push(`搭配：${word.construction}`);
+      if (Array.isArray(word.senses) && word.senses.length) parts.push(`另义：${word.senses.join('；')}`);
+      if (includeCollision) {
+        const twins = this.glossTwins(word);
+        if (twins.length) parts.push(`该释义有 ${twins.length + 1} 种说法，任一正确写法均可`);
+      }
+      return parts.join(' · ');
+    },
+
+    glossTwins(word) {
+      const group = this.glossIndex.get(String(word.meaning || '').trim()) || [];
+      return group.filter(item => item !== word && this.wordKey(item) !== this.wordKey(word));
+    },
+
+    acceptedForms(word) {
+      if (Array.isArray(word.accepted) && word.accepted.length) return word.accepted;
+      return [word.french].filter(Boolean);
+    },
+
+    // 法语重音是正字法的一部分：重音写错记为“差一点”，不判对也不计入掌握。
+    gradeSpelling(answer, word) {
+      const given = spellKey(answer);
+      if (!given) return { status: 'wrong' };
+      if (this.acceptedForms(word).some(form => spellKey(form) === given)) {
+        return { status: 'correct' };
+      }
+      const twin = this.glossTwins(word)
+        .find(item => this.acceptedForms(item).some(form => spellKey(form) === given));
+      if (twin) return { status: 'correct', twin };
+      const loose = looseKey(answer);
+      if (this.acceptedForms(word).some(form => looseKey(form) === loose)) {
+        return { status: 'accent' };
+      }
+      return { status: 'wrong' };
+    },
+
     checkSpelling() {
       const input = document.getElementById('frenchSpInput');
       if (!input || input.disabled || !this.currentWord) return;
       const answer = input.value.trim();
       if (!answer) return;
-      const normalize = value => String(value || '').trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      const isCorrect = normalize(answer) === normalize(this.currentWord.french);
+      const word = this.currentWord;
+      const verdict = this.gradeSpelling(answer, word);
+      const isCorrect = verdict.status === 'correct';
       this.quizTotal++;
       this.stats.spAttempts++;
       if (isCorrect) {
         this.quizCorrect++;
         this.stats.spCorrect++;
-        this.mastered.add(this.currentWord.french);
+        this.mastered.add(word.french);
       }
       input.disabled = true;
       document.getElementById('frenchSpCheckBtn')?.classList.add('hidden');
-      this.showSimpleFeedback('frenchSpFeedback', isCorrect, this.currentWord.french);
+      this.showSpellingFeedback(verdict, word);
       this.setText('frenchSpAccuracy', `${this.accuracy()}%`);
+      this.recordAnswer(word, isCorrect);
       this.saveState();
       if (isCorrect) setTimeout(() => this.nextSpelling(), 900);
+    },
+
+    showSpellingFeedback(verdict, word) {
+      const wrapper = document.getElementById('frenchSpFeedback');
+      const text = wrapper?.querySelector('.feedback-text');
+      if (!wrapper || !text) return;
+      const target = word.display || word.french;
+      if (verdict.status === 'correct') {
+        text.innerHTML = verdict.twin
+          ? `<span class="msr">check_circle</span>回答正确（同义写法，参考答案：${escapeHtml(target)}）`
+          : '<span class="msr">check_circle</span>回答正确';
+      } else if (verdict.status === 'accent') {
+        text.innerHTML = `<span class="msr">error</span>差一点：重音符号有误，正确写法是：${escapeHtml(target)}`;
+      } else {
+        text.innerHTML = `<span class="msr">cancel</span>回答有误，正确答案是：${escapeHtml(target)}`;
+      }
+      text.classList.toggle('ok', verdict.status === 'correct');
+      text.classList.toggle('no', verdict.status !== 'correct');
+      wrapper.classList.remove('hidden');
     },
 
     nextSpelling() {
       this.quizIndex++;
       this.loadSpelling();
     },
+
+    // ==================== 浏览 ====================
 
     openBrowse() {
       this.showScreen('frenchBrowseScreen');
@@ -635,9 +1396,19 @@
       this.renderBrowse(document.getElementById('frenchSearchInput')?.value || '');
     },
 
+    setBrowseLevel(level) {
+      if (level !== 'all' && !LEVELS.includes(level)) return;
+      this.browseLevel = level;
+      this.syncFilterChips();
+      this.renderBrowse(document.getElementById('frenchSearchInput')?.value || '');
+    },
+
     syncFilterChips() {
       document.querySelectorAll('#frenchFilterChips .chip').forEach(chip => {
         chip.classList.toggle('active', chip.dataset.filter === this.browseFilter);
+      });
+      document.querySelectorAll('#frenchBrowseLevelChips .chip').forEach(chip => {
+        chip.classList.toggle('active', chip.dataset.level === this.browseLevel);
       });
     },
 
@@ -646,10 +1417,12 @@
       if (!container) return;
       const term = searchTerm.toLowerCase().trim();
       let words = this.words.slice();
+      if (this.browseLevel !== 'all') words = words.filter(word => word.level === this.browseLevel);
       if (this.browseFilter === 'mastered') words = words.filter(word => this.mastered.has(word.french));
       if (this.browseFilter === 'unmastered') words = words.filter(word => !this.mastered.has(word.french));
       if (term) {
-        words = words.filter(word => [word.french, word.meaning, word.chinese, word.notes]
+        words = words.filter(word => [word.french, word.display, word.variant, word.meaning, word.chinese, word.notes,
+          Array.isArray(word.senses) ? word.senses.join(' ') : '']
           .some(value => String(value || '').toLowerCase().includes(term)));
       }
       if (!words.length) {
@@ -660,7 +1433,7 @@
         const mastered = this.mastered.has(word.french);
         return `
           <div class="word-line" data-french="${escapeAttribute(word.french)}">
-            <span class="wl-word">${escapeHtml(word.french)}</span>
+            <span class="wl-word">${escapeHtml(word.display || word.french)}</span>
             <span class="wl-gloss">${escapeHtml(word.meaning || '')}<span class="wl-note">${escapeHtml(word.notes || '')}</span></span>
             <span class="wl-status"><span class="dot${mastered ? ' good' : ''}"></span>${mastered ? '已掌握' : '学习中'}</span>
             <button class="wl-speaker" title="朗读"><span class="msr">volume_up</span></button>
@@ -671,31 +1444,101 @@
       });
     },
 
+    // ==================== 进度 ====================
+
+    countMastered() {
+      const keys = new Set(this.words.map(word => word.french));
+      let count = 0;
+      this.mastered.forEach(value => { if (keys.has(value)) count++; });
+      return count;
+    },
+
+    // 10 / 2157 会四舍五入成 0%，让人以为进度没保存；不足 1% 时保留一位小数
+    formatPercent(part, total) {
+      if (!total || !part) return '0%';
+      const pct = part / total * 100;
+      if (pct > 0 && pct < 1) return `${pct.toFixed(1)}%`;
+      return `${Math.round(pct)}%`;
+    },
+
     renderProgress() {
-      const masteredCount = [...this.mastered].filter(value => this.words.some(word => word.french === value)).length;
+      const masteredCount = this.countMastered();
       const total = this.words.length;
-      const progress = total ? Math.round(masteredCount / total * 100) : 0;
       const attempts = (this.stats.mcAttempts || 0) + (this.stats.spAttempts || 0);
       const correct = (this.stats.mcCorrect || 0) + (this.stats.spCorrect || 0);
-      const accuracy = attempts ? Math.round(correct / attempts * 100) : 0;
       this.setText('frenchProgressTotalWords', total.toLocaleString());
       this.setText('frenchProgressMasteredWords', masteredCount.toLocaleString());
-      this.setText('frenchProgressPercent', `${progress}%`);
+      this.setText('frenchProgressPercent', this.formatPercent(masteredCount, total));
       this.setText('frenchProgressMcStats', `${this.stats.mcCorrect || 0} / ${this.stats.mcAttempts || 0}`);
       this.setText('frenchProgressSpStats', `${this.stats.spCorrect || 0} / ${this.stats.spAttempts || 0}`);
-      this.setText('frenchProgressAccuracy', `${accuracy}%`);
+      this.setText('frenchProgressAccuracy', this.formatPercent(correct, attempts));
+      this.renderProgressPanels();
       this.updateHeaderStats();
     },
 
+    renderProgressPanels() {
+      const recent = this.getRecentDaily(7);
+      const bars = document.getElementById('frenchProgressWeekBars');
+      if (bars) {
+        const max = Math.max(1, ...recent.map(day => day.totalCount));
+        const dayNames = ['日', '一', '二', '三', '四', '五', '六'];
+        bars.innerHTML = recent.map((day, index) => {
+          const pct = Math.round(day.totalCount / max * 100);
+          const label = dayNames[new Date(`${day.date}T00:00:00`).getDay()];
+          const latest = index === recent.length - 1 ? ' latest' : '';
+          return `<div class="bar-col"><div class="bar${latest}" style="height:${pct}%" title="${day.totalCount} 次练习"></div><div class="bar-day">${label}</div></div>`;
+        }).join('');
+      }
+
+      const rows = document.getElementById('frenchProgressAccuracyRows');
+      if (rows) {
+        const pct = (part, whole) => (whole > 0 ? Math.round(part / whole * 100) : 0);
+        const mc = pct(this.stats.mcCorrect || 0, this.stats.mcAttempts || 0);
+        const sp = pct(this.stats.spCorrect || 0, this.stats.spAttempts || 0);
+        const attempts = (this.stats.mcAttempts || 0) + (this.stats.spAttempts || 0);
+        const overall = pct((this.stats.mcCorrect || 0) + (this.stats.spCorrect || 0), attempts);
+        const row = (label, value) =>
+          `<div class="acc-row"><div class="acc-top"><span>${label}</span><b>${value}%</b></div>` +
+          `<div class="acc-track"><div class="acc-fill" style="width:${value}%"></div></div></div>`;
+        rows.innerHTML = row('选择题', mc) + row('拼写', sp) + row('综合', overall);
+        this.setText('frenchProgressTotalAttempts', attempts.toLocaleString());
+        this.setText('frenchProgressStreak', `${this.getStreak()} 天`);
+      }
+
+      const body = document.getElementById('frenchProgressHistoryBody');
+      if (body) {
+        body.innerHTML = recent.slice().reverse().map(day => {
+          const accuracy = day.totalCount > 0 ? (day.correctCount / day.totalCount * 100).toFixed(1) : '0.0';
+          const date = new Date(`${day.date}T00:00:00`);
+          const label = `${date.getMonth() + 1}月${date.getDate()}日`;
+          return `<tr><td>${label}</td><td>${day.words}</td><td>${this.formatDuration(day.durationMs)}</td><td>${day.totalCount}</td><td>${accuracy}%</td></tr>`;
+        }).join('');
+      }
+    },
+
+    formatDuration(durationMs) {
+      const minutes = Math.round((durationMs || 0) / 60000);
+      if (minutes < 60) return `${minutes} 分钟`;
+      return `${Math.floor(minutes / 60)} 小时 ${minutes % 60} 分钟`;
+    },
+
+    // 顶部统计条是四种语言共用的：优先交给共享层，否则只在 French 生效，
+    // 避免把法语数字留在意大利语/德语/英语页面上。
     updateHeaderStats() {
       const total = this.words.length;
-      const masteredCount = [...this.mastered].filter(value =>
-        this.words.some(word => word.french === value)
-      ).length;
-      const progress = total ? Math.round(masteredCount / total * 100) : 0;
+      const masteredCount = this.countMastered();
+      if (window.HeaderStats && typeof window.HeaderStats.set === 'function') {
+        try {
+          window.HeaderStats.set('french', { total, mastered: masteredCount });
+          return;
+        } catch (error) {
+          console.warn('FrenchApp: 共享统计条写入失败:', error);
+        }
+      }
+      if (document.body && document.body.getAttribute('data-language') !== 'french') return;
       this.setText('totalWords', total.toLocaleString());
       this.setText('masteredWords', masteredCount.toLocaleString());
-      this.setText('progressPercent', `${progress}%`);
+      this.setText('progressPercent', this.formatPercent(masteredCount, total));
     },
 
     openCommunity(returnScreen) {
@@ -711,21 +1554,15 @@
       this.currentWord = null;
     },
 
+    emptyScopeMessage() {
+      if (!this.words.length) return '法语词汇数据尚未加载。';
+      return `当前等级（${this.levelFilter}）下没有词条，请选择其它等级。`;
+    },
+
     finishPractice(mode) {
       alert(`French ${mode}练习完成\n\n正确：${this.quizCorrect}/${this.quizTotal}\n正确率：${this.accuracy()}%`);
       this.showScreen('frenchVocabularyModesScreen');
-    },
-
-    showSimpleFeedback(id, isCorrect, correctAnswer) {
-      const wrapper = document.getElementById(id);
-      const text = wrapper?.querySelector('.feedback-text');
-      if (!wrapper || !text) return;
-      text.innerHTML = isCorrect
-        ? '<span class="msr">check_circle</span>回答正确'
-        : `<span class="msr">cancel</span>回答有误，正确答案是：${escapeHtml(correctAnswer)}`;
-      text.classList.toggle('ok', isCorrect);
-      text.classList.toggle('no', !isCorrect);
-      wrapper.classList.remove('hidden');
+      this.syncScopeChips();
     },
 
     resetFeedback(id) {
@@ -782,6 +1619,7 @@
   };
 
   window.FrenchApp = FrenchApp;
+  FrenchApp._internals = { parseHeadword, headwordKey, spellKey, looseKey, deriveVariant, buildNotes, splitNotes };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => FrenchApp.init());
