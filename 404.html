@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>页面不存在 · Dimenticato</title>
+  <meta name="theme-color" content="#4a7a5e">
+  <!--
+    GitHub Pages 对未知路径返回这个文件。
+    Dimenticato 是 hash 路由的单页应用（#/<语言>/<板块>），正常深链接不会走到这里；
+    走到这里的一般是拼错的路径或旧的、非 hash 的链接。
+    这里把路径尽量翻译成 hash 路由再跳回应用首页，跳不了就给一个手动入口。
+    这个页面刻意不依赖 styles.css：应用样式表是给应用外壳写的，
+    独立错误页需要在任何目录深度下都能自己渲染。
+  -->
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #faf8f3;
+      color: #2f2c26;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                   "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+    }
+    .box { max-width: 30rem; padding: 2.5rem 1.5rem; text-align: center; }
+    h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 .5rem; }
+    p { color: #6f6a5f; margin: 0 0 1.5rem; }
+    a {
+      display: inline-block;
+      padding: .65rem 1.4rem;
+      border-radius: .6rem;
+      background: #4a7a5e;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1c1e1c; color: #e6e3da; }
+      p { color: #9c988c; }
+      a { background: #83b191; color: #14231a; }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>页面不存在</h1>
+    <p>这个地址在 Dimenticato 里没有对应的页面。正在把你送回应用首页……</p>
+    <a id="homeLink" href="/">回到 Dimenticato</a>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+      var segments = location.pathname.split('/').filter(Boolean);
+
+      // GitHub Pages 项目页的路径永远是 /<仓库名>/...，用户页和自定义域名没有这一段。
+      // 项目页时把第一段当作站点根目录保留，其余部分才是“想去的地方”。
+      var isProjectPage = /\.github\.io$/i.test(location.hostname) && segments.length > 0;
+      var base = isProjectPage ? '/' + segments[0] + '/' : '/';
+
+      // 把 /vocab、/de/grammar 这类旧式路径翻译成 #/de/grammar
+      var rest = segments.slice(isProjectPage ? 1 : 0)
+        .filter(function (s) { return !/\.html?$/i.test(s); })
+        .join('/');
+      var target = base + (rest ? '#/' + rest : '');
+
+      var link = document.getElementById('homeLink');
+      if (link) link.href = target;
+      setTimeout(function () { location.replace(target); }, 1200);
+    })();
+  </script>
+</body>
+</html>
