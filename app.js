@@ -114,7 +114,7 @@ function makeLanguageScreens(lang) {
   const breadcrumbHome = lang === 'italian' ? [] : [capLang];
 
   // For Italian (no prefix), use lowercase screen names
-  // For German/English, prefix + capitalized screen name
+  // For German/English/French, prefix + capitalized screen name
   const makeKey = (name) => prefix ? prefix + name : name.charAt(0).toLowerCase() + name.slice(1);
 
   return {
@@ -172,7 +172,8 @@ const ScreenMeta = Object.assign(
   },
   makeLanguageScreens('italian'),
   makeLanguageScreens('german'),
-  makeLanguageScreens('english')
+  makeLanguageScreens('english'),
+  makeLanguageScreens('french')
 );
 
 // Italian-only screens (no German/English equivalents)
@@ -207,7 +208,7 @@ ScreenMeta.verbCollocationPracticeScreen = {
   breadcrumb: ['Grammar', '动词搭配练习']
 };
 
-// German/English welcome screens (special — under 'home' module, not the factory pattern)
+// Non-Italian welcome screens (special — under 'home' module, not the factory pattern)
 ScreenMeta.germanWelcomeScreen = {
   module: 'home',
   topNav: 'welcomeScreen',
@@ -217,6 +218,11 @@ ScreenMeta.englishWelcomeScreen = {
   module: 'home',
   topNav: 'welcomeScreen',
   breadcrumb: ['English', 'Home']
+};
+ScreenMeta.frenchWelcomeScreen = {
+  module: 'home',
+  topNav: 'welcomeScreen',
+  breadcrumb: ['French', 'Home']
 };
 
 // ==================== 本地存储 ====================
@@ -1307,6 +1313,10 @@ const WordbookManager = {
         if (!word.english) {
           return { valid: false, error: `第 ${i + 1} 个单词缺少 english 字段` };
         }
+      } else if (language === 'french') {
+        if (!word.french && !word.display) {
+          return { valid: false, error: `第 ${i + 1} 个单词缺少 french/display 字段` };
+        }
       } else if (!word.italian || !word.english) {
         return { valid: false, error: `第 ${i + 1} 个单词缺少 italian 或 english 字段` };
       }
@@ -1318,6 +1328,7 @@ const WordbookManager = {
   getPrimaryWordValue(word, language = 'italian') {
     if (language === 'german') return word.german || word.display || '';
     if (language === 'english') return word.english || '';
+    if (language === 'french') return word.french || word.display || '';
     return word.italian || '';
   },
 
@@ -1396,6 +1407,28 @@ const WordbookManager = {
           if (lines.length >= 3) word.chinese = lines[2];
           if (lines.length >= 4) word.notes = lines[3];
         }
+      } else if (language === 'french') {
+        if (lines.length === 1) {
+          word.french = lines[0];
+          word.display = lines[0];
+          const found = (typeof FRENCH_VOCABULARY_DATA !== 'undefined' ? FRENCH_VOCABULARY_DATA : []).find(
+            item => (item.french || '').toLowerCase().trim() === word.french.toLowerCase().trim()
+          );
+          if (found) {
+            word.meaning = found.meaning || found.chinese || '';
+            word.chinese = found.chinese || '';
+            autoMatchedCount++;
+          } else {
+            word.meaning = '';
+            needManualCount++;
+          }
+        } else {
+          word.french = lines[0];
+          word.display = lines[0];
+          word.meaning = lines[1] || '';
+          if (lines.length >= 3) word.chinese = lines[2];
+          if (lines.length >= 4) word.notes = lines[3];
+        }
       } else if (lines.length === 1) {
         // 仅意大利语，需要自动查找
         word.italian = lines[0];
@@ -1441,7 +1474,13 @@ const WordbookManager = {
       }
       
       // 验证必填字段（意大利语必须存在）
-      const primaryField = language === 'german' ? 'german' : language === 'english' ? 'english' : 'italian';
+      const primaryField = language === 'german'
+        ? 'german'
+        : language === 'english'
+          ? 'english'
+          : language === 'french'
+            ? 'french'
+            : 'italian';
       if (!word[primaryField]) {
         throw new Error(`第 ${i + 1} 个单词块缺少${primaryField}字段`);
       }
@@ -1559,7 +1598,9 @@ const WordbookManager = {
               ? (word.meaning || '')
               : activeLanguage === 'english'
                 ? (word.meaning || '')
-                : (word.english || '');
+                : activeLanguage === 'french'
+                  ? (word.meaning || '')
+                  : (word.english || '');
 
             if (!secondaryValue || !word.chinese) {
               notFoundWords.push(word);
@@ -1648,6 +1689,18 @@ const WordbookManager = {
       if (language === 'english') {
         return {
           english: word.english || '',
+          meaning: word.meaning || word.chinese || '',
+          chinese: word.chinese || '',
+          notes: word.notes || '',
+          rank: 999999,
+          source: 'custom'
+        };
+      }
+
+      if (language === 'french') {
+        return {
+          french: word.french || word.display || '',
+          display: word.display || word.french || '',
           meaning: word.meaning || word.chinese || '',
           chinese: word.chinese || '',
           notes: word.notes || '',
@@ -2425,7 +2478,8 @@ const LanguagePortal = {
   HOME_SCREENS: {
     italian: 'welcomeScreen',
     german:  'germanWelcomeScreen',
-    english: 'englishWelcomeScreen'
+    english: 'englishWelcomeScreen',
+    french:  'frenchWelcomeScreen'
   },
 
   /**
@@ -2436,7 +2490,7 @@ const LanguagePortal = {
    * 4. 导航到对应语言首屏
    */
   selectLanguage(lang) {
-    const validLangs = ['italian', 'german', 'english'];
+    const validLangs = ['italian', 'german', 'english', 'french'];
     if (!validLangs.includes(lang)) return;
 
     // 1. 设置 body 属性 → CSS per-language color theme 生效
@@ -2466,6 +2520,7 @@ const LanguagePortal = {
     const targetScreen = this.HOME_SCREENS[lang] || 'welcomeScreen';
     AppState.navigationStack = [targetScreen];
     showScreen(targetScreen, { skipHistory: true });
+    if (lang === 'french') window.FrenchApp?.updateHeaderStats();
   },
 
   /**
@@ -2519,12 +2574,17 @@ window.syncThemeToggleUI = syncThemeToggleUI;
 window.syncLangPills = syncLangPills;
 
 // 侧栏菜单：section → 各语言首页；子模块复用各语言 welcome 卡片按钮的处理器
-const NAV_HOME_SCREEN = { italian: 'welcomeScreen', german: 'germanWelcomeScreen', english: 'englishWelcomeScreen' };
+const NAV_HOME_SCREEN = {
+  italian: 'welcomeScreen',
+  german: 'germanWelcomeScreen',
+  english: 'englishWelcomeScreen',
+  french: 'frenchWelcomeScreen'
+};
 const NAV_MODULE_BTN = {
-  vocab:    { italian: 'goVocabularyBtn', german: 'goGermanVocabularyBtn', english: 'goEnglishVocabularyBtn' },
-  grammar:  { italian: 'goGrammarBtn',    german: 'goGermanGrammarBtn',    english: 'goEnglishGrammarBtn' },
-  progress: { italian: 'goProgressBtn',   german: 'goGermanProgressBtn',   english: 'goEnglishProgressBtn' },
-  settings: { italian: 'goSettingsBtn',   german: 'goGermanSettingsBtn',   english: 'goEnglishSettingsBtn' }
+  vocab:    { italian: 'goVocabularyBtn', german: 'goGermanVocabularyBtn', english: 'goEnglishVocabularyBtn', french: 'goFrenchVocabularyBtn' },
+  grammar:  { italian: 'goGrammarBtn',    german: 'goGermanGrammarBtn',    english: 'goEnglishGrammarBtn', french: 'goFrenchGrammarBtn' },
+  progress: { italian: 'goProgressBtn',   german: 'goGermanProgressBtn',   english: 'goEnglishProgressBtn', french: 'goFrenchProgressBtn' },
+  settings: { italian: 'goSettingsBtn',   german: 'goGermanSettingsBtn',   english: 'goEnglishSettingsBtn', french: 'goFrenchSettingsBtn' }
 };
 
 function navigateSection(section) {

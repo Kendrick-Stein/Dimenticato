@@ -12,6 +12,7 @@
 
   const GermanApp = {
     words: [],
+    systemWords: [],
     sessionWords: [],
     mastered: new Set(),
     stats: {
@@ -59,6 +60,8 @@
           }
         });
       }
+      this._mcEngine.config.stats = this.stats;
+      this._mcEngine.config.mastered = this.mastered;
       return this._mcEngine;
     },
 
@@ -68,7 +71,8 @@
         return;
       }
 
-      this.words = Array.isArray(GERMAN_VOCABULARY_DATA) ? GERMAN_VOCABULARY_DATA.slice() : [];
+      this.systemWords = Array.isArray(GERMAN_VOCABULARY_DATA) ? GERMAN_VOCABULARY_DATA.slice() : [];
+      this.words = this.systemWords.slice();
       this.loadState();
       this.bindLanguageSwitcher();
       this.bindGermanNavigation();
@@ -114,7 +118,10 @@
 
     saveState() {
       try {
-        localStorage.setItem(STORAGE_KEYS.MASTERED, JSON.stringify([...this.mastered]));
+        const masteredKey = this.currentWordbook
+          ? `dimenticato_progress_wb_german_${this.currentWordbook.id}`
+          : STORAGE_KEYS.MASTERED;
+        localStorage.setItem(masteredKey, JSON.stringify([...this.mastered]));
         localStorage.setItem(STORAGE_KEYS.STATS, JSON.stringify(this.stats));
         localStorage.setItem(STORAGE_KEYS.FILTER, this.browseFilter);
         localStorage.setItem(STORAGE_KEYS.LANGUAGE, this.activeLanguage);
@@ -154,6 +161,8 @@
         this.resetToScreen('germanWelcomeScreen');
       } else if (this.activeLanguage === 'english') {
         this.resetToScreen('englishWelcomeScreen');
+      } else if (this.activeLanguage === 'french') {
+        this.resetToScreen('frenchWelcomeScreen');
       }
     },
 
@@ -172,6 +181,8 @@
           this.resetToScreen('germanWelcomeScreen');
         } else if (language === 'english') {
           this.resetToScreen('englishWelcomeScreen');
+        } else if (language === 'french') {
+          this.resetToScreen('frenchWelcomeScreen');
         } else {
           this.resetToScreen('welcomeScreen');
         }
@@ -192,7 +203,7 @@
       this.bindClick('goGermanSettingsBtn', () => this.showScreen('germanSettingsScreen'));
 
       this.bindClick('germanVocabularyBackBtn', () => this.goBack('germanWelcomeScreen'));
-      this.bindClick('germanSystemVocabularyBtn', () => this.showScreen('germanVocabularyModesScreen'));
+      this.bindClick('germanSystemVocabularyBtn', () => this.selectSystemVocabulary());
       this.bindClick('germanWordbooksBtn', () => this.renderLanguageWordbooks('german'));
       this.bindClick('germanCommunityBtn', () => this.openSharedCommunity('germanVocabularyScreen'));
 
@@ -233,6 +244,50 @@
       if (wordbook) {
         this.renderLanguageWordbooks(language);
       }
+    },
+
+    loadSystemMastery() {
+      try {
+        this.mastered = new Set(JSON.parse(localStorage.getItem(STORAGE_KEYS.MASTERED) || '[]'));
+      } catch (error) {
+        this.mastered = new Set();
+      }
+    },
+
+    updateGermanModesCopy(title, description) {
+      const screen = document.getElementById('germanVocabularyModesScreen');
+      if (!screen) return;
+      const titleElement = screen.querySelector('h1.page');
+      const descriptionElement = screen.querySelector('p.desc');
+      if (titleElement) titleElement.textContent = title;
+      if (descriptionElement) descriptionElement.textContent = description;
+    },
+
+    selectSystemVocabulary() {
+      this.currentWordbook = null;
+      this.words = this.systemWords.slice();
+      this.loadSystemMastery();
+      this.updateGermanModesCopy(
+        '选择练习方式',
+        `当前使用完整德语系统词库，共 ${this.words.length.toLocaleString()} 词。`
+      );
+      this.showScreen('germanVocabularyModesScreen');
+    },
+
+    selectCourseVocabulary({ label, words }) {
+      const selectedWords = Array.isArray(words) ? words.filter(Boolean) : [];
+      if (selectedWords.length < 4) {
+        alert('这个课程单元暂时没有足够的可练习词汇。');
+        return;
+      }
+      this.currentWordbook = null;
+      this.words = selectedWords;
+      this.loadSystemMastery();
+      this.updateGermanModesCopy(
+        label,
+        `课程核心词汇 ${selectedWords.length} 个；可使用选择题、拼写或浏览模式。`
+      );
+      this.showScreen('germanVocabularyModesScreen');
     },
 
     async handleLanguageWordbookImport(event, language) {
@@ -296,8 +351,6 @@
       const wordbook = (typeof WordbookManager !== 'undefined' ? WordbookManager.getWordbooksByLanguage(language) : []).find(wb => wb.id === id);
       if (!wordbook || typeof WordbookManager === 'undefined') return;
 
-      this.showScreen(language === 'german' ? 'germanVocabularyModesScreen' : 'englishVocabularyModesScreen');
-
       if (language === 'german') {
         this.currentWordbook = wordbook;
         this.sessionWords = [];
@@ -307,11 +360,17 @@
         this.quizTotal = 0;
         this.words = WordbookManager.mapWordbookWordsForLanguage(wordbook.words, 'german');
         this.loadWordbookProgress(id, 'german');
+        this.updateGermanModesCopy(
+          wordbook.name,
+          `当前使用个人德语词本，共 ${this.words.length.toLocaleString()} 词。`
+        );
       } else {
         EnglishApp.currentWordbook = wordbook;
         EnglishApp.words = WordbookManager.mapWordbookWordsForLanguage(wordbook.words, 'english');
         EnglishApp.loadWordbookProgress?.(id, 'english');
       }
+
+      this.showScreen(language === 'german' ? 'germanVocabularyModesScreen' : 'englishVocabularyModesScreen');
     },
 
     loadWordbookProgress(id, language = 'german') {
@@ -347,8 +406,15 @@
     },
 
     updateGermanProgressStats() {
-      const totalWords = this.words.length;
-      const masteredCount = [...this.mastered].filter(word => this.words.some(w => w.german === word)).length;
+      const progressWords = this.systemWords.length ? this.systemWords : this.words;
+      let systemMastered = new Set();
+      try {
+        systemMastered = new Set(JSON.parse(localStorage.getItem(STORAGE_KEYS.MASTERED) || '[]'));
+      } catch (error) {
+        systemMastered = new Set();
+      }
+      const totalWords = progressWords.length;
+      const masteredCount = [...systemMastered].filter(word => progressWords.some(w => w.german === word)).length;
       const progress = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
       const totalAttempts = (this.stats.mcAttempts || 0) + (this.stats.spAttempts || 0);
       const totalCorrect = (this.stats.mcCorrect || 0) + (this.stats.spCorrect || 0);

@@ -7,12 +7,15 @@
 - 🇮🇹 Italian
 - 🇩🇪 German
 - 🇬🇧 English
+- 🇫🇷 French
 
 其中：
 
 - **Italian** 仍然是功能最完整的主站
-- **German / English** 已接入系统词汇练习、语法书、基础 Progress、Settings & Data
-- **社区词库** 当前由三种语言共享同一个资源池
+- **German / English / French** 已接入系统词汇练习、语法书、基础 Progress、Settings & Data
+- **German** 另有基于本地教材范围整理的 A1-C1 课程路线
+- **French** 另有 35 个高频动词的 7 组时态 / 语式变位练习
+- **社区词库** 当前由四种语言共享同一个资源池
 
 ---
 
@@ -20,9 +23,9 @@
 
 ### 1. 多语言入口
 
-- 左侧 sidebar 可切换 Italian / German / English
+- 左侧 sidebar 可切换 Italian / German / English / French
 - 不同语言会切换对应首页、主题色和模块入口
-- German / English 使用独立的学习进度存储 key
+- German / English / French 使用独立的学习进度存储 key
 
 ### 2. 系统词汇练习
 
@@ -32,12 +35,19 @@
 - 支持分层学习：1,000 / 3,000 / 5,000 / 全部
 
 #### German
-- 已接入德语系统词汇数据
+- 15,507 个系统词条与 300 个高频动词变位
+- A1-C1 五级课程路线，共 54 个教材主题单元
+- 每个单元可直接练习对应核心词，并显示相关语法重点
 - 支持：选择题 / 拼写 / 浏览
 
 #### English
 - 已接入英语系统词汇数据
 - 支持：选择题 / 拼写 / 浏览
+
+#### French
+- 2,183 个 A1-B2 词条：372 个核心课程词条 + 四本《你好！法语》书末总词汇表
+- 支持：选择题 / 拼写 / 浏览
+- 法语朗读使用浏览器的 `fr-FR` 语音
 
 ### 3. 自定义词本
 
@@ -51,7 +61,7 @@
 - 浏览社区词本
 - 预览词本内容
 - 导入到本地“我的词本”中学习
-- 当前 Italian / German / English 共用同一个社区词库池
+- 当前 Italian / German / English / French 共用同一个社区词库池
 
 ### 5. 语法模块
 
@@ -62,15 +72,22 @@
 - 动词搭配练习
 
 #### German
-- 当前仅保留 **Grammar Book**
+- **Grammar Book**
+- 高频动词变位练习
 
 #### English
-- 当前仅保留 **Grammar Book**
+- **Grammar Book**
+- 高频动词变位练习
+
+#### French
+- 23 个 A1-B1 中文语法专题与法语例句
+- 35 个高频动词
+- 直陈式、条件式、虚拟式和命令式共 7 组时态 / 语式
 
 ### 6. Progress / Settings & Data
 
 - Italian：完整统计与图表体验
-- German / English：已提供基础 progress 数据页
+- German / English / French：已提供基础 progress 数据页
 - 全站共享：导出数据、导入数据、主题切换、帮助、重置学习数据
 
 ---
@@ -124,6 +141,11 @@ grazie mille = 非常感谢
 - 浏览完整词表
 - 搜索
 - 已掌握 / 未掌握过滤
+
+### German 课程路线
+- 按 A1 / A2 / B1 / B2 / C1 选择学习阶段
+- 查看 54 个课程单元的主题与语法重点
+- 可练习单课核心词，或合并练习整个级别
 
 ### Italian 专属扩展
 - 动词变位练习（多时态）
@@ -192,6 +214,8 @@ Dimenticato/
 ├── app.js
 ├── app-enhanced.js
 ├── german-app.js
+├── german-course.js
+├── french-app.js
 ├── conjugation-app.js
 ├── grammar-book.js
 ├── verb-collocations.js
@@ -199,6 +223,11 @@ Dimenticato/
 ├── community-wordbooks.js
 ├── vocabulary.js
 ├── data/
+│   ├── german-course-data.js
+│   ├── french-vocabulary.js
+│   ├── french-vocabulary-glossary.js
+│   ├── french-grammar-data.js
+│   └── french-conjugations.js
 ├── scripts/
 ├── deutsch-data/
 ├──  english-data/
@@ -245,12 +274,19 @@ python3 scripts/build_english_vocab.py
 python3 scripts/build_english_grammar.py
 ```
 
+### French 教材总词汇表数据构建
+
+```bash
+python3 scripts/build_french_vocabulary_glossary.py REVIEWED_OCR.json data/french-vocabulary-glossary.js
+```
+
 ---
 
 ## 📝 说明
 
-- German / English 的 Grammar 现已包含 Grammar Book 与 **动词变位练习**（综合时态）
+- German / English / French 的 Grammar 现已包含 Grammar Book 与 **动词变位练习**（综合时态）
 - 社区词库目前未按语言隔离，而是共享同一个词库池
+- French 词汇覆盖用户本地《你好！法语》1-4 书末三语总词汇表（A1-B2）；语法讲解和变位按 A1-B1 课程独立整理；项目不包含或分发教材扫描页
 
 ---
 
@@ -263,6 +299,7 @@ python3 scripts/build_english_grammar.py
 | English / German 词频排序 | [wordfreq](https://github.com/rspeer/wordfreq) | 开源 |
 | English 动词变位 | [verbecc](https://github.com/bretttolbert/verbecc) / [mlconjug3](https://github.com/Ars-Linguistica/mlconjug3) | 开源 |
 | German 动词变位 | 规则生成，不规则变位对照 Reverso / Wiktionary 校验 | 自建 |
+| French 词汇 / 语法 / 动词变位 | 《你好！法语》1-4 总词汇表（A1-B2）与独立整理的 A1-B1 语法、变位 | 自建，仅供学习 |
 | 图表 / Markdown | [Chart.js](https://www.chartjs.org/) · [marked.js](https://marked.js.org/) | 开源 |
 
 每条词汇的 `source` 字段记录了其具体来源。
@@ -277,4 +314,4 @@ python3 scripts/build_english_grammar.py
 
 ---
 
-**祝学习愉快！Buono studio!**
+**祝学习愉快！Buono studio ! Bon apprentissage !**

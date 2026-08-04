@@ -15,7 +15,7 @@ const GrammarBook = (() => {
 
   /**
    * Initialize or reinitialize with optional custom data.
-   * Always rebuilds the nav tree so switching between Italian/German/English
+   * Always rebuilds the nav tree so switching between Italian/German/English/French
    * grammar data works correctly every time.
    * @param {Object|null} customData - Grammar data object with .tree and .content.
    *   If null/undefined, falls back to global GRAMMAR_DATA.
@@ -30,7 +30,22 @@ const GrammarBook = (() => {
     }
 
     activeData = data;
+    currentSlug = null;
     buildNavTree(data.tree); // always rebuild tree when switching languages
+
+    if (data.meta) {
+      const breadcrumb = document.getElementById('grammarContentBreadcrumb');
+      const body = document.getElementById('grammarContentBody');
+      if (breadcrumb) breadcrumb.textContent = '选择左侧章节开始阅读';
+      if (body) {
+        body.innerHTML = `
+          <div class="grammar-welcome">
+            <span class="msr grammar-welcome-icon">auto_stories</span>
+            <h2>${escapeHtml(data.meta.title || '语法书')}</h2>
+            <p>${escapeHtml(data.meta.description || '请从左侧目录选择章节开始阅读')}</p>
+          </div>`;
+      }
+    }
 
     if (!sidebarListenerAdded) {
       document.getElementById('grammarSidebarToggle')

@@ -5,7 +5,7 @@
 (function () {
   // ==================== 语言配置（language config） ====================
   // 该模块原本硬编码意大利语；现在通过 `config` 描述当前语言，使同一套
-  // 屏幕/逻辑可服务意/德/英三语。意大利语为默认配置，行为与重构前完全一致。
+  // 屏幕/逻辑可服务意/德/英/法四语。意大利语为默认配置，行为与重构前完全一致。
   //
   // config 形态：
   //   { lang, getData(), personOrder, personLabel,
@@ -58,7 +58,8 @@
     },
     storageKey: 'dimenticato_conjugation_lessons',
     backTarget: 'grammarScreen',
-    localeSort: 'it'
+    localeSort: 'it',
+    lookupPlaceholder: '例如：essere / sono / fossi / stato'
   };
 
   // ---- 德语 ----
@@ -102,7 +103,8 @@
     },
     storageKey: 'dimenticato_conjugation_lessons_de',
     backTarget: 'germanGrammarScreen',
-    localeSort: 'de'
+    localeSort: 'de',
+    lookupPlaceholder: '例如：sein / bin / war / gewesen'
   };
 
   // ---- 英语 ----
@@ -142,13 +144,57 @@
     },
     storageKey: 'dimenticato_conjugation_lessons_en',
     backTarget: 'englishGrammarScreen',
-    localeSort: 'en'
+    localeSort: 'en',
+    lookupPlaceholder: '例如：be / am / was / been'
+  };
+
+  // ---- 法语 ----
+  const FRENCH_CONFIG = {
+    lang: 'french',
+    getData() {
+      return (typeof FRENCH_CONJUGATION_DATA !== 'undefined' && Array.isArray(FRENCH_CONJUGATION_DATA))
+        ? FRENCH_CONJUGATION_DATA
+        : [];
+    },
+    personOrder: ['je', 'tu', 'il_elle_on', 'nous', 'vous', 'ils_elles'],
+    personLabel: {
+      je: 'je',
+      tu: 'tu',
+      il_elle_on: 'il / elle / on',
+      nous: 'nous',
+      vous: 'vous',
+      ils_elles: 'ils / elles'
+    },
+    moods: [
+      { key: 'indicatif', label: '直陈式', match: (meta) => lc(meta.group).includes('indicatif') },
+      { key: 'conditionnel', label: '条件式', match: (meta) => lc(meta.group).includes('conditionnel') },
+      { key: 'subjonctif', label: '虚拟式', match: (meta) => lc(meta.group).includes('subjonctif') },
+      { key: 'imperatif', label: '命令式', match: (meta) => lc(meta.group).includes('impératif') || lc(meta.group).includes('imperatif') }
+    ],
+    timeOf(meta) {
+      const t = lc(meta.tense);
+      const g = lc(meta.group);
+      if (g.includes('conditionnel') || g.includes('subjonctif') || g.includes('imperatif') || g.includes('impératif')) {
+        return 'present';
+      }
+      if (t.includes('futur')) return 'future';
+      if (t.includes('passé') || t.includes('passe') || t.includes('imparfait') || t.includes('plus-que-parfait')) {
+        return 'past';
+      }
+      if (t.includes('présent') || t.includes('present')) return 'present';
+      return 'other';
+    },
+    storageKey: 'dimenticato_conjugation_lessons_fr',
+    backTarget: 'frenchGrammarScreen',
+    localeSort: 'fr',
+    lookupPlaceholder: '例如：être / suis / étais / été'
   };
 
   const LANG_CONFIGS = {
     italian: ITALIAN_CONFIG,
     german: GERMAN_CONFIG,
-    english: ENGLISH_CONFIG
+    english: ENGLISH_CONFIG,
+    french: FRENCH_CONFIG
   };
 
   // 当前激活的语言配置。默认意大利语 → 保证自动初始化行为不变。
@@ -663,7 +709,7 @@ ${moodRows}
     const tenseList = getSortedTenseMeta();
 
     // Graceful degradation: no data loaded for this language (e.g. the German /
-    // English conjugation data scripts are absent) → show a friendly notice
+    // English/French conjugation data scripts are absent) → show a friendly notice
     // instead of an empty matrix. Never crash.
     if (!tenseList.length) {
       wrap.innerHTML = `
@@ -1146,8 +1192,9 @@ ${moodRows}
 
     // The Italian Grammar hub's 动词变位 card (#goConjugationSetupBtn, handler in
     // app.js) only calls showScreen('conjugationSetupScreen') — it does NOT reset
-    // `config`. If German/English previously opened this SHARED screen, `config`
-    // would still be non-Italian and the Italian card would render the wrong
+    // `config`. If German/English/French previously opened this SHARED screen,
+    // `config` would still be
+    // non-Italian and the Italian card would render the wrong
     // language. Re-bind here to reset back to the Italian config first. Both
     // handlers call showScreen on the same screen, which is idempotent.
     document.getElementById('goConjugationSetupBtn')?.addEventListener('click', () => {
@@ -1165,6 +1212,8 @@ ${moodRows}
     const savedLesson = storage.lastViewed[`${state.selectedTense}__${state.lessonSize}`];
     state.lessonIndex = Number.isInteger(savedLesson) ? savedLesson : 0;
     state.started = false;
+    const lookupInput = document.getElementById('conjLookupInput');
+    if (lookupInput) lookupInput.placeholder = config.lookupPlaceholder || '输入动词原形或变位形式';
     renderTenseButtons();
     updateLessonUI();
   }
@@ -1175,7 +1224,7 @@ ${moodRows}
   }
 
   // Open the (SHARED) conjugation setup screen for a given language. Italian
-  // keeps using the DOMContentLoaded auto-init; German/English call this when
+  // keeps using the DOMContentLoaded auto-init; German/English/French call this when
   // their Grammar-hub 动词变位 card is clicked. Swaps `config`, reloads data with
   // a per-language storageKey (so lesson progress never collides across
   // languages), then shows the shared setup screen. The screen is pushed onto

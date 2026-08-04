@@ -294,6 +294,15 @@ const WordbookEditor = {
       };
     }
 
+    if (language === 'french') {
+      return {
+        primaryKey: 'french',
+        secondaryKey: 'meaning',
+        primaryLabel: '法语',
+        secondaryLabel: '释义'
+      };
+    }
+
     return {
       primaryKey: 'italian',
       secondaryKey: 'english',
@@ -503,7 +512,7 @@ const WordbookEditor = {
     const wordData = { chinese, notes };
     wordData[config.primaryKey] = primaryValue;
     wordData[config.secondaryKey] = secondaryValue;
-    if (config.primaryKey === 'german') {
+    if (config.primaryKey === 'german' || config.primaryKey === 'french') {
       wordData.display = primaryValue;
     }
     
@@ -619,14 +628,13 @@ const WordbookEditor = {
       return;
     }
     
-    // 创建 TXT 内容
+    // 创建 TXT 内容（按词本语言使用对应字段）
     let txtContent = '';
+    const config = this.getLanguageConfig(wordbook.language || 'italian');
     
     wordbook.words.forEach((word, index) => {
-      // 添加意大利语
-      txtContent += word.italian + '\n';
-      // 添加英语
-      txtContent += word.english + '\n';
+      txtContent += (word[config.primaryKey] || word.display || '') + '\n';
+      txtContent += (word[config.secondaryKey] || '') + '\n';
       // 添加中文（如果有）
       txtContent += (word.chinese || '') + '\n';
       // 添加笔记（如果有）
@@ -714,8 +722,11 @@ const WordbookEditor = {
     try {
       const text = await file.text();
       
-      // 使用 WordbookManager 的 parseTxtWordbook 方法解析
-      const result = WordbookManager.parseTxtWordbook(text);
+      const language = this.currentEditingWordbook.language || 'italian';
+      const config = this.getLanguageConfig(language);
+
+      // 使用当前词本的语言解析 TXT
+      const result = WordbookManager.parseTxtWordbook(text, language);
       
       if (!result || !result.words || result.words.length === 0) {
         alert('文件中没有找到有效的单词！');
@@ -724,18 +735,21 @@ const WordbookEditor = {
       
       // 过滤重复单词（不区分大小写）
       const existingWordsLower = new Set(
-        this.currentEditingWordbook.words.map(w => w.italian.toLowerCase())
+        this.currentEditingWordbook.words
+          .map(w => (w[config.primaryKey] || w.display || '').toLowerCase())
+          .filter(Boolean)
       );
       
       const newWords = [];
       const duplicates = [];
       
       result.words.forEach(word => {
-        if (existingWordsLower.has(word.italian.toLowerCase())) {
-          duplicates.push(word.italian);
+        const primaryValue = (word[config.primaryKey] || word.display || '').toLowerCase();
+        if (existingWordsLower.has(primaryValue)) {
+          duplicates.push(word[config.primaryKey] || word.display || '');
         } else {
           newWords.push(word);
-          existingWordsLower.add(word.italian.toLowerCase());
+          existingWordsLower.add(primaryValue);
         }
       });
       
@@ -849,7 +863,9 @@ const WordbookEditor = {
       ? (word.german || word.display || '')
       : language === 'english'
         ? (word.english || '')
-        : (word.italian || '');
+        : language === 'french'
+          ? (word.french || word.display || '')
+          : (word.italian || '');
     
     // 检查是否已存在
     const exists = wordbook.words.some(w => (w[config.primaryKey] || w.display || '') === primaryValue);
@@ -868,7 +884,7 @@ const WordbookEditor = {
     wordData[config.secondaryKey] = language === 'italian'
       ? (word.english || '')
       : (word.meaning || word.chinese || '');
-    if (language === 'german') wordData.display = primaryValue;
+    if (language === 'german' || language === 'french') wordData.display = primaryValue;
     wordbook.words.push(wordData);
     
     wordbook.wordCount = wordbook.words.length;

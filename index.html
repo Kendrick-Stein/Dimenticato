@@ -70,6 +70,7 @@
         <button class="lang-pill active" data-language="italian">IT</button>
         <button class="lang-pill" data-language="german">DE</button>
         <button class="lang-pill" data-language="english">EN</button>
+        <button class="lang-pill" data-language="french">FR</button>
       </div>
 
       <div class="side-label">Menu</div>
@@ -139,7 +140,7 @@
         <div class="container">
           <div class="eyebrow">German</div>
           <h1 class="page">Deutsch Lernportal</h1>
-          <p class="desc">德语词汇练习、语法书、学习进度与数据设置，全部集中在一个安静的空间里。</p>
+          <p class="desc">A1-C1 课程路线、词汇练习、语法书、动词变位与学习进度，全部集中在一个安静的空间里。</p>
           <div class="card-grid cols-2">
             <button class="card" id="goGermanVocabularyBtn">
               <span class="card-chip"><span class="msr">translate</span></span>
@@ -176,7 +177,7 @@
             <button class="card" id="germanSystemVocabularyBtn">
               <span class="card-chip"><span class="msr">dataset</span></span>
               <span class="card-title">System Vocabulary</span>
-              <span class="card-desc">使用德语词汇内容开始练习与浏览</span>
+              <span class="card-desc">15,507 个德语词，按词频开始练习与浏览</span>
             </button>
             <button class="card" id="germanWordbooksBtn">
               <span class="card-chip"><span class="msr">bookmark</span></span>
@@ -385,7 +386,7 @@
 
           <div class="settings-card">
             <div class="settings-card-title">德语模块</div>
-            <div class="about-body">德语系统词汇练习、德语语法书阅读、共享社区词库入口。德语学习进度使用独立 localStorage key 保存；导入导出仍走全站统一数据结构。</div>
+            <div class="about-body">德语模块包含 A1-C1 五级课程路线与 54 个主题单元、15,507 个系统词条、语法书、高频动词变位和共享社区词库入口。德语学习进度使用独立 localStorage key 保存；导入导出仍走全站统一数据结构。</div>
           </div>
 
           <div class="settings-card">
@@ -1041,7 +1042,7 @@
 
           <div class="settings-card">
             <div class="settings-card-title">关于</div>
-            <div class="about-body">Dimenticato 是一个安静、专注的多语种背词工具，支持意大利语、德语与英语。词典数据来自 ECDICT、HanDeDict 等开源资源，变位数据基于 verbecc / mlconjug3。所有学习数据保存在本地浏览器中。</div>
+            <div class="about-body">Dimenticato 是一个安静、专注的多语种背词工具，支持意大利语、德语、英语与法语。词典数据来自 ECDICT、HanDeDict 等开源资源，变位数据基于 verbecc / mlconjug3。所有学习数据保存在本地浏览器中。</div>
           </div>
         </div>
       </section>
@@ -1392,6 +1393,7 @@
         <button class="language-switcher-option active" data-language="italian">Italian</button>
         <button class="language-switcher-option" data-language="german">German</button>
         <button class="language-switcher-option" data-language="english">English</button>
+        <button class="language-switcher-option" data-language="french">French</button>
       </div>
       <button id="exportDataBtn" type="button">导出数据</button>
       <button id="importDataBtn" type="button">导入数据</button>
@@ -1727,7 +1729,7 @@
       <div class="modal-body help-modal-body">
         <div class="help-section">
           <h2><span class="msr">translate</span>Dimenticato - 背单词</h2>
-          <p class="help-intro">一个纯静态的多语言词汇学习网页应用，当前支持 Italian、German、English 三个语言入口，支持本地离线使用。</p>
+          <p class="help-intro">一个纯静态的多语言词汇学习网页应用，当前支持 Italian、German、English、French 四个语言入口，支持本地离线使用。</p>
         </div>
 
         <div class="help-section">
@@ -1737,9 +1739,10 @@
             <h4><span class="msr">translate</span>多语言入口</h4>
             <ul>
               <li><strong>Italian</strong>：完整词汇、语法、动词变位、动词搭配、社区与统计体验</li>
-              <li><strong>German</strong>：系统词汇练习、德语语法书、基础 Progress、Settings &amp; Data</li>
+              <li><strong>German</strong>：A1-C1 课程路线、系统词汇、语法书、动词变位、Progress、Settings &amp; Data</li>
               <li><strong>English</strong>：系统词汇练习、英语语法书、基础 Progress、Settings &amp; Data</li>
-              <li><strong>社区词库</strong>：当前三个语言入口共用同一个社区词库池</li>
+              <li><strong>French</strong>：A1-B2 教材词汇、中文语法专题、动词变位、Progress、Settings &amp; Data</li>
+              <li><strong>社区词库</strong>：当前四个语言入口共用同一个社区词库池</li>
             </ul>
           </div>
 
@@ -1747,8 +1750,9 @@
             <h4><span class="msr">menu_book</span>系统词汇库</h4>
             <ul>
               <li><strong>Italian</strong>：28,787 个意大利语单词及英语翻译</li>
-              <li><strong>German</strong>：已接入德语系统词汇数据，可进行选择题 / 拼写 / 浏览练习</li>
+              <li><strong>German</strong>：15,507 个系统词条，可进行选择题 / 拼写 / 浏览练习</li>
               <li><strong>English</strong>：已接入英语系统词汇数据，可进行选择题 / 拼写 / 浏览练习</li>
+              <li><strong>French</strong>：2,183 个 A1-B2 课程词条，可进行选择题 / 拼写 / 浏览练习</li>
               <li>系统词汇默认按词频或数据顺序组织，适合从高频内容逐步扩展</li>
             </ul>
           </div>
@@ -1842,7 +1846,7 @@ love
           <div class="usage-box">
             <h4>使用系统词汇库：</h4>
             <ol>
-              <li><strong>先选择语言</strong> - 在左侧 sidebar 中切换 Italian / German / English</li>
+              <li><strong>先选择语言</strong> - 在左侧 sidebar 中切换 Italian / German / English / French</li>
               <li><strong>选择难度级别</strong> - 初级/中级/高级/全部</li>
               <li><strong>选择学习模式</strong> - 选择题/拼写/浏览模式</li>
               <li><strong>开始学习</strong> - 进度自动保存</li>
@@ -1971,17 +1975,24 @@ love
   <script src="data/conjugations-presente.js"></script>
   <script src="data/german-conjugations.js"></script>
   <script src="data/english-conjugations.js"></script>
+  <script src="data/french-conjugations.js"></script>
   <script src="supabase-config.js"></script>
   <script src="community-wordbooks.js"></script>
   <script src="data/german-vocabulary.js"></script>
+  <script src="data/german-course-data.js"></script>
   <script src="data/english-vocabulary.js"></script>
+  <script src="data/french-vocabulary.js"></script>
+  <script src="data/french-vocabulary-glossary.js"></script>
   <script src="data/cognates.js"></script>
   <script src="cognate-app.js"></script>
   <script src="data/german-grammar-data.js"></script>
   <script src="data/english-grammar-data.js"></script>
+  <script src="data/french-grammar-data.js"></script>
   <script src="app.js"></script>
   <script src="app-enhanced.js"></script>
   <script src="german-app.js"></script>
+  <script src="german-course.js"></script>
+  <script src="french-app.js"></script>
   <script src="conjugation-app.js"></script>
   <script src="stats-charts.js"></script>
   <script src="data/grammar-data.js"></script>
