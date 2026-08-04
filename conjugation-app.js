@@ -14,6 +14,17 @@
   //   - moods 是矩阵的行（语气/式），按顺序渲染为最多三行；
   //   - match(meta) 把某时态分到某个 mood；timeOf(meta) 返回
   //     'present' | 'past' | 'future' | 'other' 作为矩阵的列。
+  //
+  // 可选字段（缺省即保持原行为）：
+  //   - subjectPronouns: { personKey: [主语代词, …] }
+  //       判分时额外接受“主语 + 变位”的写法（io parlo / je suis / j'ai su）。
+  //   - elision: { contract: { pronoun: 缩合形 }, vowel: RegExp, aspirate: [词, …] }
+  //       描述人称代词在元音开头前的缩合（法语 je + ai → j'ai）。
+  //   - subjectInForms: true 时，变位表把主语一起写出来（法语惯例）。
+  //   - personLabelOverrides: { tenseKey: { personKey: 标签 } }（如命令式的 Lei/Loro）。
+  //   - hiddenPersons: { tenseKey: [personKey, …] }（该时态不存在的人称，不显示空行）。
+  //   - formLabels: { tenseKey: [标签, …] }，替换数组型时态的“形式 N”。
+  //   - typingPlaceholder / lookupPlaceholder: 两个输入框的示例文案。
 
   function lc(s) {
     return (s || '').toString().toLowerCase();
@@ -37,13 +48,38 @@
       voi: 'voi',
       loro: 'loro'
     },
+    subjectPronouns: {
+      io: ['io'],
+      tu: ['tu'],
+      lui_lei: ['lui', 'lei'],
+      noi: ['noi'],
+      voi: ['voi'],
+      loro: ['loro']
+    },
+    // 命令式的第三人称是敬语 Lei / Loro，第一人称单数不存在。
+    personLabelOverrides: {
+      imperativo_affermativo: { lui_lei: 'Lei', loro: 'Loro' },
+      imperativo_non: { lui_lei: 'Lei', loro: 'Loro' }
+    },
+    hiddenPersons: {
+      imperativo_affermativo: ['io'],
+      imperativo_non: ['io']
+    },
+    formLabels: {
+      infinito_gerundio: ['Infinito', 'Participio passato', 'Gerundio'],
+      participio: ['Participio presente', 'Passato m.s.', 'Passato f.s.', 'Passato m.p.', 'Passato f.p.']
+    },
     moods: [
       { key: 'indicativo', label: '直陈式', match: (meta) => lc(meta.group).includes('indicativo') },
       { key: 'condizionale', label: '条件式', match: (meta) => lc(meta.group).includes('condizionale') },
-      { key: 'congiuntivo', label: '虚拟式', match: (meta) => lc(meta.group).includes('congiuntivo') }
+      { key: 'congiuntivo', label: '虚拟式', match: (meta) => lc(meta.group).includes('congiuntivo') },
+      { key: 'imperativo', label: '命令式', match: (meta) => lc(meta.group).includes('imperativo') }
     ],
     timeOf(meta) {
       const t = lc(meta.tense);
+      // 命令式的时态标签是 Affermativo / Negativo，不含时间关键词；
+      // 固定放在自己那一行的“现在”列，而不是掉进“其他时态”。
+      if (lc(meta.group).includes('imperativo')) return 'present';
       if (t.includes('presente')) return 'present';
       if (t.includes('futuro')) return 'future';
       if (
@@ -59,7 +95,8 @@
     storageKey: 'dimenticato_conjugation_lessons',
     backTarget: 'grammarScreen',
     localeSort: 'it',
-    lookupPlaceholder: '例如：essere / sono / fossi / stato'
+    lookupPlaceholder: '例如：essere / sono / fossi / stato',
+    typingPlaceholder: '例如：parlo / ho parlato'
   };
 
   // ---- 德语 ----
@@ -78,6 +115,14 @@
       wir: 'wir',
       ihr: 'ihr',
       sie: 'sie'
+    },
+    subjectPronouns: {
+      ich: ['ich'],
+      du: ['du'],
+      er_sie_es: ['er', 'sie', 'es'],
+      wir: ['wir'],
+      ihr: ['ihr'],
+      sie: ['sie', 'Sie']
     },
     moods: [
       { key: 'indikativ', label: '直陈式', match: (meta) => lc(meta.group).includes('indikativ') },
@@ -104,7 +149,8 @@
     storageKey: 'dimenticato_conjugation_lessons_de',
     backTarget: 'germanGrammarScreen',
     localeSort: 'de',
-    lookupPlaceholder: '例如：sein / bin / war / gewesen'
+    lookupPlaceholder: '例如：sein / bin / war / gewesen',
+    typingPlaceholder: '例如：bin / war / gewesen'
   };
 
   // ---- 英语 ----
@@ -123,6 +169,14 @@
       we: 'we',
       you_pl: 'you (pl.)',
       they: 'they'
+    },
+    subjectPronouns: {
+      i: ['I'],
+      you: ['you'],
+      he_she_it: ['he', 'she', 'it'],
+      we: ['we'],
+      you_pl: ['you'],
+      they: ['they']
     },
     moods: [
       { key: 'indicative', label: '陈述式', match: (meta) => lc(meta.group).includes('indicative') },
@@ -145,7 +199,8 @@
     storageKey: 'dimenticato_conjugation_lessons_en',
     backTarget: 'englishGrammarScreen',
     localeSort: 'en',
-    lookupPlaceholder: '例如：be / am / was / been'
+    lookupPlaceholder: '例如：be / am / was / been',
+    typingPlaceholder: '例如：am / was / have been'
   };
 
   // ---- 法语 ----
@@ -164,6 +219,33 @@
       nous: 'nous',
       vous: 'vous',
       ils_elles: 'ils / elles'
+    },
+    subjectPronouns: {
+      je: ['je'],
+      tu: ['tu'],
+      il_elle_on: ['il', 'elle', 'on'],
+      nous: ['nous'],
+      vous: ['vous'],
+      ils_elles: ['ils', 'elles']
+    },
+    // 省音（élision）：je 在元音或哑音 h 前缩写为 j'（j'ai été / j'habite），
+    // 但在嘘音 h（h aspiré）前保持完整（je hais）。数据集只存动词形式本身，
+    // 变位表与判分都由这条规则推导，法语数据重建后无需改动引擎。
+    elision: {
+      contract: { je: "j'" },
+      vowel: /^[aeiouyhàâäéèêëîïôöùûüœæ]/i,
+      aspirate: [
+        'hair', 'haïr', 'hais', 'hait', 'haissons', 'haïssons', 'haissez', 'haïssez', 'haissent', 'haïssent',
+        'hache', 'halte', 'hanche', 'hante', 'harcele', 'hasarde', 'hate', 'hâte', 'hausse',
+        'heurte', 'hisse', 'hoche', 'honte', 'hue', 'hurle'
+      ]
+    },
+    // 法语变位表按 Bescherelle 惯例连主语一起写出（j'ai été / tu as été）；
+    // 命令式本身不带主语（sache !），所以那一组排除在外。
+    subjectInForms: (meta) => !/imp[ée]ratif/i.test(meta.group || ''),
+    // 法语命令式只有 tu / nous / vous 三个形式。
+    hiddenPersons: {
+      imperatif_present: ['je', 'il_elle_on', 'ils_elles']
     },
     moods: [
       { key: 'indicatif', label: '直陈式', match: (meta) => lc(meta.group).includes('indicatif') },
@@ -187,7 +269,8 @@
     storageKey: 'dimenticato_conjugation_lessons_fr',
     backTarget: 'frenchGrammarScreen',
     localeSort: 'fr',
-    lookupPlaceholder: '例如：être / suis / étais / été'
+    lookupPlaceholder: '例如：être / suis / étais / été',
+    typingPlaceholder: "例如：suis / étais / ai été（j'ai été 也算对）"
   };
 
   const LANG_CONFIGS = {
@@ -202,8 +285,22 @@
 
   // 便捷读取（替换原先硬编码的 PERSON_ORDER / PERSON_LABEL / STORAGE_KEY）。
   function PERSON_ORDER() { return config.personOrder; }
-  function personLabelOf(person) {
+  // tenseKey 可选：命令式等时态需要覆盖人称标签（lui/lei → Lei）。
+  function personLabelOf(person, tenseKey) {
+    const overrides = (config.personLabelOverrides || {})[tenseKey];
+    if (overrides && overrides[person]) return overrides[person];
     return (config.personLabel && config.personLabel[person]) || person;
+  }
+  // 该时态实际存在的人称（命令式没有第一人称单数）。
+  function personsForTense(tenseKey) {
+    const hidden = (config.hiddenPersons || {})[tenseKey];
+    if (!hidden || !hidden.length) return PERSON_ORDER();
+    return PERSON_ORDER().filter(person => !hidden.includes(person));
+  }
+  // 数组型时态（不定式/分词等）的槽位名称，缺省回落到“形式 N”。
+  function formLabelOf(tenseKey, index) {
+    const labels = (config.formLabels || {})[tenseKey];
+    return (labels && labels[index]) || `形式 ${index + 1}`;
   }
   function storageKey() { return config.storageKey; }
 
@@ -233,7 +330,10 @@
       .trim()
       .toLowerCase()
       .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '');
+      .replace(/[\u0300-\u036f]/g, '')
+      // 输入法/移动键盘常把撇号打成弯引号；统一成直撇号，否则 j’ai 判错。
+      .replace(/[\u2018\u2019\u02bc\u00b4`]/g, "'")
+      .replace(/\s+/g, ' ');
   }
 
   function splitAlternatives(form) {
@@ -241,6 +341,81 @@
       .split('/')
       .map(v => v.trim())
       .filter(v => v && normalizeText(v) !== 'none');
+  }
+
+  // ---- 省音（elision）与主语前缀 ----
+  // config.elision 描述“人称代词在元音开头前缩合”这条规则；数据集只存动词
+  // 形式本身（法语 "ai été"），显示与判分都由这里推导（"j'ai été"）。
+
+  // pronoun 写在 form 前面时的缩合形；不缩合则返回 ''。
+  function contractionFor(pronoun, form) {
+    const rule = config.elision;
+    if (!rule || !rule.contract) return '';
+    const contracted = rule.contract[lc(pronoun)];
+    if (!contracted) return '';
+    const head = (form || '').trim();
+    if (!head || !rule.vowel || !rule.vowel.test(head)) return '';
+    // 嘘音 h（h aspiré）不省音：je hais，而不是 j'hais。
+    const norm = normalizeText(head);
+    if ((rule.aspirate || []).some(word => norm.startsWith(normalizeText(word)))) return '';
+    return contracted;
+  }
+
+  // 该人称 + 变位形式的自然写法（j'ai été / tu as été / io parlo）。
+  function withSubject(person, form) {
+    const pronouns = (config.subjectPronouns || {})[person] || [];
+    if (!pronouns.length || !form) return form || '';
+    const pronoun = pronouns[0];
+    const contracted = contractionFor(pronoun, form);
+    return contracted ? `${contracted}${form}` : `${pronoun} ${form}`;
+  }
+
+  // config.subjectInForms 可以是 true，也可以是 meta => boolean（命令式不带主语）。
+  function showsSubject(tenseKey) {
+    const rule = config.subjectInForms;
+    if (!rule) return false;
+    if (typeof rule !== 'function') return true;
+    return !!rule(state.tenseMeta[tenseKey] || { key: tenseKey, group: '', tense: '' });
+  }
+
+  // 变位表里展示的形式：法语连主语一起写，其余语言保持原样。
+  function displayForm(person, form, tenseKey) {
+    return showsSubject(tenseKey) ? withSubject(person, form) : form;
+  }
+
+  // 判分时除了裸形式，也接受带主语的写法（je suis / j'ai su / j' ai su）。
+  function expandAcceptedAnswers(answers, person) {
+    const out = [];
+    const seen = new Set();
+    const push = (value) => {
+      const key = normalizeText(value);
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      out.push(value);
+    };
+    (answers || []).forEach(ans => {
+      push(ans);
+      ((config.subjectPronouns || {})[person] || []).forEach(pronoun => {
+        push(`${pronoun} ${ans}`);
+        const contracted = contractionFor(pronoun, ans);
+        if (contracted) {
+          push(`${contracted}${ans}`);
+          push(`${contracted} ${ans}`);
+        }
+      });
+    });
+    return out;
+  }
+
+  function matchesAnswer(answers, person, value) {
+    const user = normalizeText(value);
+    if (!user) return false;
+    return expandAcceptedAnswers(answers, person).some(ans => normalizeText(ans) === user);
+  }
+
+  // 反馈里展示的“正确答案”：法语补上主语，其余语言保持原样。
+  function answerDisplayText(answers, person, tenseKey) {
+    return (answers || []).map(ans => displayForm(person, ans, tenseKey)).join(' / ');
   }
 
   function getTenseForms(tenseData) {
@@ -318,17 +493,19 @@
     return partialMatches;
   }
 
-  function renderLookupTenseRows(tenseData) {
+  function renderLookupTenseRows(tenseData, tenseKey) {
     if (!tenseData) return '';
 
     if (tenseData.type === 'person' && tenseData.forms && typeof tenseData.forms === 'object') {
       return `
         <div class="conj-card conj-card-mini">
-          ${PERSON_ORDER().map(person => {
-            const value = splitAlternatives(tenseData.forms[person]).join(' / ') || '—';
+          ${personsForTense(tenseKey).map(person => {
+            const value = splitAlternatives(tenseData.forms[person])
+              .map(form => displayForm(person, form, tenseKey))
+              .join(' / ') || '—';
             return `
               <div class="conj-line">
-                <span class="conj-person">${escapeHtml(personLabelOf(person))}</span>
+                <span class="conj-person">${escapeHtml(personLabelOf(person, tenseKey))}</span>
                 <span class="conj-form">${escapeHtml(value)}</span>
               </div>
             `;
@@ -344,7 +521,7 @@
           const value = splitAlternatives(form).join(' / ') || '—';
           return `
             <div class="conj-line">
-              <span class="conj-person">形式 ${index + 1}</span>
+              <span class="conj-person">${escapeHtml(formLabelOf(tenseKey, index))}</span>
               <span class="conj-form">${escapeHtml(value)}</span>
             </div>
           `;
@@ -381,7 +558,7 @@
       const tenseCards = Object.entries(verb.tenses || {}).map(([key, tenseData]) => `
         <article class="conj-lookup-tense-card" data-tense="${escapeHtml(key)}">
           <div class="conj-lookup-tense-title">${escapeHtml(`${tenseData.group_label || ''} · ${tenseData.tense_label || key}`)}</div>
-          ${renderLookupTenseRows(tenseData)}
+          ${renderLookupTenseRows(tenseData, key)}
         </article>
       `).join('');
 
@@ -752,13 +929,14 @@ ${moodRows}
       if (!tenseData) return;
 
       if (state.mode === 'full' && tenseData.type === 'person') {
-        const items = PERSON_ORDER().map(p => {
+        const items = personsForTense(state.selectedTense).map(p => {
           const form = tenseData.forms ? tenseData.forms[p] : null;
           const answers = splitAlternatives(form);
           if (!answers.length) return null;
           return {
             key: p,
-            promptLabel: personLabelOf(p),
+            person: p,
+            promptLabel: personLabelOf(p, state.selectedTense),
             answers
           };
         }).filter(Boolean);
@@ -784,7 +962,7 @@ ${moodRows}
           if (!answers.length) return null;
           return {
             key: `form_${idx + 1}`,
-            promptLabel: `形式 ${idx + 1}`,
+            promptLabel: formLabelOf(state.selectedTense, idx),
             answers
           };
         }).filter(Boolean);
@@ -804,7 +982,7 @@ ${moodRows}
           });
         }
       } else if (tenseData.type === 'person') {
-        PERSON_ORDER().forEach(p => {
+        personsForTense(state.selectedTense).forEach(p => {
           const form = tenseData.forms ? tenseData.forms[p] : null;
           if (!form) return;
           const answers = splitAlternatives(form);
@@ -817,8 +995,9 @@ ${moodRows}
             tenseLabel: tenseData.tense_label,
             groupLabel: tenseData.group_label,
             promptType: 'person',
+            person: p,
             promptLabel: '人称',
-            promptValue: personLabelOf(p),
+            promptValue: personLabelOf(p, state.selectedTense),
             answers
           });
         });
@@ -836,7 +1015,7 @@ ${moodRows}
             groupLabel: tenseData.group_label,
             promptType: 'single',
             promptLabel: '形式',
-            promptValue: `${idx + 1}`,
+            promptValue: formLabelOf(state.selectedTense, idx),
             answers
           });
         });
@@ -887,8 +1066,8 @@ ${moodRows}
     if (!wrap || !isGroupedFullQuestion(state.current)) return;
 
     wrap.innerHTML = state.current.items.map((item, index) => `
-      <label class="conj-full-item" data-key="${item.key}">
-        <span class="conj-full-label">${item.promptLabel}</span>
+      <label class="conj-full-item" data-key="${escapeAttribute(item.key)}">
+        <span class="conj-full-label">${escapeHtml(item.promptLabel)}</span>
         <input
           type="text"
           class="spell-input conj-full-input"
@@ -920,7 +1099,7 @@ ${moodRows}
     const options = shuffle([correct, ...distractors]);
 
     optionsWrap.innerHTML = options
-      .map(opt => `<button class="option" data-answer="${opt.replace(/"/g, '&quot;')}">${opt}</button>`)
+      .map(opt => `<button class="option" data-answer="${escapeAttribute(opt)}">${escapeHtml(opt)}</button>`)
       .join('');
 
     optionsWrap.querySelectorAll('.option').forEach(btn => {
@@ -1020,8 +1199,7 @@ ${moodRows}
     const checkBtn = document.getElementById('conjCheckBtn');
     if (!input) return;
 
-    const user = normalizeText(input.value);
-    const isCorrect = state.current.answers.some(ans => normalizeText(ans) === user);
+    const isCorrect = matchesAnswer(state.current.answers, state.current.person, input.value);
 
     state.total += 1;
     if (isCorrect) state.correct += 1;
@@ -1030,7 +1208,7 @@ ${moodRows}
     input.disabled = true;
     if (checkBtn) checkBtn.disabled = true;
 
-    const answerText = state.current.answers.join(' / ');
+    const answerText = answerDisplayText(state.current.answers, state.current.person, state.current.tenseKey);
     if (state.mode === 'full') {
       showFeedback(
         isCorrect,
@@ -1059,8 +1237,7 @@ ${moodRows}
       const answerEl = row?.querySelector('.conj-full-answer');
       if (!input || !row || !answerEl) return;
 
-      const user = normalizeText(input.value);
-      const correct = item.answers.some(ans => normalizeText(ans) === user);
+      const correct = matchesAnswer(item.answers, item.person, input.value);
 
       localTotal += 1;
       if (correct) localCorrect += 1;
@@ -1069,7 +1246,9 @@ ${moodRows}
       input.disabled = true;
       row.classList.remove('correct', 'incorrect');
       row.classList.add(correct ? 'correct' : 'incorrect');
-      answerEl.textContent = correct ? '正确' : `正确答案：${item.answers.join(' / ')}`;
+      answerEl.textContent = correct
+        ? '正确'
+        : `正确答案：${answerDisplayText(item.answers, item.person, state.current.tenseKey)}`;
       answerEl.classList.remove('hidden');
     });
 
@@ -1214,6 +1393,10 @@ ${moodRows}
     state.started = false;
     const lookupInput = document.getElementById('conjLookupInput');
     if (lookupInput) lookupInput.placeholder = config.lookupPlaceholder || '输入动词原形或变位形式';
+    // #conjInput 的 placeholder 在 index.html 里写死成意大利语示例（例如：parlo），
+    // 切到德/英/法时会误导用户；跟着当前语言一起换。
+    const typingInput = document.getElementById('conjInput');
+    if (typingInput) typingInput.placeholder = config.typingPlaceholder || '请输入正确变位';
     renderTenseButtons();
     updateLessonUI();
   }
