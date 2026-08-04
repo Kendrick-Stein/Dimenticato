@@ -6,7 +6,8 @@
  * 改动即可直接出题；没有数据时显示明确的空状态而不是弹一个 alert。
  */
 const VerbCollocationPractice = (() => {
-  let initialized = false;
+  let initialized = false;    // DOM 已缓存、事件已绑定
+  let openedByEntry = false;  // 是否已经有入口显式打开过（入口一定会带上语言）
   const state = {
     lang: 'italian',
     queue: [],
@@ -48,11 +49,24 @@ const VerbCollocationPractice = (() => {
     return !!(data && data.verbs && Object.keys(data.verbs).length);
   }
 
+  function knownLangs() {
+    const api = collocations();
+    return (api && api.LANGUAGES) || ['italian', 'german', 'english', 'french'];
+  }
+
   function detectLang() {
     const bodyLang = document.body ? document.body.getAttribute('data-language') : null;
-    const api = collocations();
-    const known = (api && api.LANGUAGES) || ['italian', 'german', 'english', 'french'];
-    return known.indexOf(bodyLang) >= 0 ? bodyLang : 'italian';
+    return knownLangs().indexOf(bodyLang) >= 0 ? bodyLang : 'italian';
+  }
+
+  /**
+   * 语言必须在【每次打开时】重新解析。本屏是四种语言共用的一块屏幕，外壳语言
+   * 在启动之后随时可能被切换；只要在启动时锁定一次（旧代码的
+   * `initialized ? state.lang : detectLang()`），意大利语入口就会永远停在
+   * 上一次使用的语言上，且切回意大利语也救不回来。
+   */
+  function resolveLang(lang) {
+    return knownLangs().indexOf(lang) >= 0 ? lang : detectLang();
   }
 
   /** prep 条目可以是 ['例句'] 也可以是 { case, examples }。 */
@@ -94,26 +108,40 @@ const VerbCollocationPractice = (() => {
 
   // ==================== 生命周期 ====================
 
+  /** DOM 缓存与事件绑定只做一次，且【不碰语言】。 */
+  function prepare() {
+    if (initialized) return;
+    initialized = true;
+    cacheDom();
+    bindEvents();
+  }
+
   function init(lang) {
-    const target = lang || (initialized ? state.lang : detectLang());
-    state.lang = target;
-
-    if (!initialized) {
-      initialized = true;
-      cacheDom();
-      bindEvents();
-    }
-
+    state.lang = resolveLang(lang);
+    prepare();
     applyChrome();
     renderSummary();
   }
 
   function open(lang) {
+    openedByEntry = true; // 必须先置位：showScreen 会同步广播 screenchange
     showScreen('verbCollocationPracticeScreen');
     init(lang);
     resetPracticeUI();
     renderSummary();
   }
+
+  /**
+   * 兜底：万一这块屏幕不经入口就被切出来（路由/外部调用），语言按外壳解析补一次，
+   * 免得停在静态标记上。入口打开过之后不再接管，语言以入口给的为准。
+   */
+  document.addEventListener('dimenticato:screenchange', (event) => {
+    const screenId = event.detail && event.detail.screenId;
+    if (screenId !== 'verbCollocationPracticeScreen' || openedByEntry) return;
+    openedByEntry = true;
+    init();
+    resetPracticeUI();
+  });
 
   function cacheDom() {
     dom.backBtn = document.getElementById('vcPracticeBackBtn');
@@ -565,11 +593,12 @@ const VerbCollocationPractice = (() => {
     }[kind] || '练习';
   }
 
-  return { init, open, getLanguage: () => state.lang };
+  return { init, open, prepare, getLanguage: () => state.lang };
 })();
 
 window.VerbCollocationPractice = VerbCollocationPractice;
 
+// 启动时只绑事件、不定语言：这块屏幕没有「默认语言」，语言由入口在打开时给出。
 document.addEventListener('DOMContentLoaded', () => {
-  VerbCollocationPractice.init();
+  VerbCollocationPractice.prepare();
 });

@@ -51,7 +51,8 @@ const VerbCollocations = (() => {
   // 德语支配格标签（数据里出现 case 时才用得上）
   const CASE_LABELS = { A: '第四格', D: '第三格', G: '第二格', N: '第一格' };
 
-  let boundLang = null; // 已经绑定事件与导航的语言
+  let boundLang = null;       // 已经绑定事件与导航的语言
+  let openedByEntry = false;  // 是否已经有入口显式打开过（入口一定会带上语言）
   const state = {
     lang: 'italian',
     activePrep: null,
@@ -207,10 +208,25 @@ const VerbCollocations = (() => {
   }
 
   function open(lang) {
+    openedByEntry = true; // 必须先置位：showScreen 会同步广播 screenchange
     showScreen('verbCollocationsScreen');
     init(lang);
     if (hasDataset(state.lang)) renderCurrentView();
   }
+
+  /**
+   * 这块屏幕也可能不经任何入口就被切出来：刷新一个
+   * `#/de/grammar/collocations` 书签时，lib/router.js 直接 showScreen()，
+   * 没人告诉阅读器该显示哪种语言，结果是一块从未渲染过的空壳。
+   * 这里只在「本次会话还没有入口打开过阅读器」时补一次初始化，语言按外壳解析；
+   * 已经打开过就保持现状，不覆盖用户正在浏览的语言（例如空状态里跨语言跳过来的）。
+   */
+  document.addEventListener('dimenticato:screenchange', (event) => {
+    const screenId = event.detail && event.detail.screenId;
+    if (screenId !== 'verbCollocationsScreen' || openedByEntry) return;
+    openedByEntry = true;
+    init();
+  });
 
   function cacheDom() {
     dom.navTree = document.getElementById('vcNavTree');
@@ -726,6 +742,35 @@ window.VerbCollocations = VerbCollocations;
       grid.appendChild(practiceBtn);
     });
   }
+
+  function openPractice(lang) {
+    const practice = window.VerbCollocationPractice;
+    if (practice && typeof practice.open === 'function') practice.open(lang);
+    else if (typeof window.showScreen === 'function') window.showScreen('verbCollocationPracticeScreen');
+  }
+
+  /**
+   * 在 document 上用【捕获阶段】接管一个按钮：捕获监听器先于目标节点上的冒泡
+   * 监听器执行，stopPropagation() 之后目标节点自己的监听器不会再收到事件。
+   * 同一节点（document）上的其它捕获监听器不受影响（那需要 stopImmediatePropagation）。
+   */
+  function interceptClick(selector, handler) {
+    document.addEventListener('click', (event) => {
+      const hit = event.target && event.target.closest ? event.target.closest(selector) : null;
+      if (!hit) return;
+      event.stopPropagation();
+      handler(hit, event);
+    }, true);
+  }
+
+  // 这两个按钮所在的屏幕语言是固定的/可知的，必须显式把语言传进去，绝不能让
+  // 练习模块去猜外壳语言：
+  //   · #goVerbCollocationPracticeBtn 在 #grammarScreen 里，只可能是意大利语。
+  //     app.js 上原有的监听器调的是无参 open()，会跟着外壳语言走；这里接管掉。
+  //   · #vcStartPracticeBtn 在查阅器里，语言 = 查阅器当前正在浏览的语言
+  //     （lib/router.js 原本是转发去点意大利语入口，跨语言时会串味）。
+  interceptClick('#goVerbCollocationPracticeBtn', () => openPractice('italian'));
+  interceptClick('#vcStartPracticeBtn', () => openPractice(VerbCollocations.getLanguage()));
 
   // Wire up the card buttons — runs after DOM is ready
   document.addEventListener('DOMContentLoaded', () => {
