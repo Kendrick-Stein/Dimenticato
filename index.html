@@ -1979,27 +1979,37 @@ love
   -->
 
   <script>
-    // defer 会让脚本在 readyState === 'interactive' 时执行，而 german-app.js /
-    // german-course.js / french-app.js 都用 `readyState === 'loading'` 判断要不要
-    // 等 DOMContentLoaded。不做处理的话它们会抢在 app.js 的 DOMContentLoaded
-    // 初始化之前同步跑完，初始语言与初始屏幕会被随后的 app.js 覆盖回意大利语。
-    // 这里在 DOMContentLoaded 之前把 readyState 暂时伪装成 'loading'，
-    // 让所有模块的初始化顺序与加 defer 之前逐字一致，事件一到立刻还原。
+    // 各模块分两派：german-app.js / german-course.js / french-app.js /
+    // community-wordbooks.js / lib/router.js / lib/quiz-engine.js 用
+    // `readyState === 'loading'` 决定要不要等 DOMContentLoaded；app.js /
+    // app-enhanced.js / conjugation-app.js / verb-collocations*.js 则是裸监听。
+    // 不做处理的话前一派会在脚本执行的当场同步跑完，抢在 app.js 之前，
+    // 初始语言与初始屏幕会被随后的 app.js 覆盖回意大利语。
+    //
+    // 这道闸门把 readyState 伪装成 'loading'，逼两派都走 DOMContentLoaded，
+    // 初始化顺序因此与「全静态 <script>」时代逐字一致。
+    // 现在它还多担一个职责：语言包是动态注入的，闸门要一直关到
+    // 「当前语言的数据 + 全部代码」都执行完，由 LangLoader.boot() 调 release()
+    // 放行并派发合成 DOMContentLoaded。所以这里**不再**监听真事件。
     (function () {
       'use strict';
       var pretendLoading = true;
+      var supported = true;
       try {
         Object.defineProperty(document, 'readyState', {
           configurable: true,
           get: function () { return pretendLoading ? 'loading' : 'complete'; }
         });
       } catch (err) {
-        return; // 浏览器不允许覆盖就保持原生行为
+        supported = false; // 浏览器不允许覆盖就保持原生行为
       }
-      document.addEventListener('DOMContentLoaded', function () {
-        pretendLoading = false;
-        delete document.readyState;
-      });
+      window.__ReadyGate = {
+        release: function () {
+          if (!supported || !pretendLoading) return;
+          pretendLoading = false;
+          delete document.readyState;
+        }
+      };
     })();
   </script>
 
@@ -2072,52 +2082,28 @@ love
           crossorigin="anonymous"
           onerror="window.CdnFallback.supabase()"></script>
 
-  <!-- Dimenticato 共享工具（必须最先加载） -->
-  <script defer src="lib/utils.js"></script>
-  <script defer src="lib/word-similarity.js"></script>
-  <script defer src="lib/quiz-engine.js"></script>
-  <script defer src="lib/navigation.js"></script>
-  <script defer src="lib/router.js"></script>
-
-  <script defer src="vocabulary.js"></script>
-  <script defer src="data/conjugations-all-tenses.js"></script>
-  <script defer src="data/conjugations-presente.js"></script>
-  <script defer src="data/german-conjugations.js"></script>
-  <script defer src="data/english-conjugations.js"></script>
-  <script defer src="data/french-conjugations.js"></script>
-  <script defer src="supabase-config.js"></script>
-  <script defer src="community-wordbooks.js"></script>
-  <script defer src="data/german-vocabulary.js"></script>
-  <script defer src="data/german-course-data.js"></script>
-  <script defer src="data/english-vocabulary.js"></script>
-  <script defer src="data/french-vocabulary.js"></script>
-  <script defer src="data/french-vocabulary-glossary.js"></script>
-  <script defer src="data/cognates.js"></script>
-  <script defer src="cognate-app.js"></script>
-  <script defer src="data/german-grammar-data.js"></script>
-  <script defer src="data/english-grammar-data.js"></script>
-  <script defer src="data/french-grammar-data.js"></script>
-  <script defer src="app.js"></script>
-  <script defer src="app-enhanced.js"></script>
-  <script defer src="german-app.js"></script>
-  <script defer src="german-course.js"></script>
-  <script defer src="french-app.js"></script>
-  <script defer src="conjugation-app.js"></script>
-  <script defer src="stats-charts.js"></script>
-  <script defer src="data/grammar-data.js"></script>
-  <script defer src="grammar-book.js"></script>
-  <script defer src="data/verb-collocations-data.js"></script>
-  <script defer src="verb-collocations.js"></script>
-  <script defer src="verb-collocations-practice.js"></script>
+  <!--
+    数据与应用代码不再写死在这里，改由 lib/lang-loader.js 按语言动态注入：
+    首屏只加载「共享代码 + 当前语言的数据」，其余语言在切过去时才补。
+    清单、注入顺序和补初始化的理由都写在 lib/lang-loader.js 顶部。
+  -->
+  <script defer src="lib/lang-loader.js"></script>
+  <script defer src="lib/boot.js"></script>
 
   <script>
-    // 词库自检。必须等 defer 脚本全部执行完才有意义，所以挂在 DOMContentLoaded 上。
-    document.addEventListener('DOMContentLoaded', function () {
-      if (typeof VOCABULARY_DATA !== 'undefined') {
-        console.log('vocabulary.js 加载成功，包含 ' + VOCABULARY_DATA.length + ' 个单词');
-      } else {
-        console.error('vocabulary.js 加载失败或 VOCABULARY_DATA 未定义');
+    // 词库自检。挂在 LangLoader 的 done 上而不是 DOMContentLoaded：真事件触发时
+    // 语言包还没注入，那时查 VOCABULARY_DATA 只会报一条假的加载失败。
+    // 只在意大利语包就位时校验意大利语词库；其它语言各自有自己的错误卡。
+    window.LangLoader.on(function (type, detail) {
+      if (type !== 'done') return;
+      if (detail.lang === 'italian') {
+        if (typeof VOCABULARY_DATA !== 'undefined') {
+          console.log('vocabulary.js 加载成功，包含 ' + VOCABULARY_DATA.length + ' 个单词');
+        } else {
+          console.error('vocabulary.js 加载失败或 VOCABULARY_DATA 未定义');
+        }
       }
+      if (!detail.boot) return;
       // CDN 兜底兜底：onerror 不触发但脚本仍未生效时（例如被拦截器静默替换）也能降级
       window.CdnFallback.chart();
       window.CdnFallback.marked();

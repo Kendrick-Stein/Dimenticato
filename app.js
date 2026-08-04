@@ -1058,6 +1058,15 @@ function loadVocabulary() {
 
     // 直接使用内嵌的词汇数据（从 vocabulary.js 加载）
     if (typeof VOCABULARY_DATA === 'undefined') {
+      // 意大利语词库现在是按需加载的。首屏进的是德/法/英时它本来就不该在，
+      // 这不是错误：直接放行进应用，等真正切到意大利语时 LangLoader 会补跑本函数。
+      const bootLang = window.LangLoader ? window.LangLoader.detectLanguage() : 'italian';
+      if (bootLang !== 'italian') {
+        document.getElementById('loading')?.classList.add('hidden');
+        document.getElementById('app')?.classList.remove('hidden');
+        return;
+      }
+
       // 显示更详细的错误信息
       const errorMsg = '词汇数据未加载。可能原因：\n1. vocabulary.js 文件加载失败\n2. 网络连接问题\n3. 文件过大导致加载超时';
       console.error('❌ 加载失败:', errorMsg);
@@ -3053,6 +3062,14 @@ const LanguagePortal = {
   selectLanguage(lang) {
     const validLangs = ['italian', 'german', 'english', 'french'];
     if (!validLangs.includes(lang)) return;
+
+    // 0. 该语言的词库是按需加载的，首次切过去时要先等数据到位再跳屏，
+    //    否则会先闪一屏「0 个词」的空壳。已加载过则同步走完，无额外开销。
+    const loader = window.LangLoader;
+    if (loader && !loader.isLoaded(lang)) {
+      loader.ensure(lang).then(() => this.selectLanguage(lang));
+      return;
+    }
 
     // 1. 设置 body 属性 → CSS per-language color theme 生效
     if (lang === 'italian') {
