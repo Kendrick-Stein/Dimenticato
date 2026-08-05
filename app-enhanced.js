@@ -1542,6 +1542,10 @@ const ReviewSession = {
       const card = document.getElementById(this.cardId(lang));
       if (card) card.setAttribute('data-due-count', String(count));
     });
+    // 同步刷新首页 hero 区的"今日复习"数字
+    if (window.HeroStats) {
+      try { window.HeroStats.paintActive(); } catch (_) {}
+    }
   },
 
   onAnswered(lang) {
@@ -1763,6 +1767,57 @@ function DimSelfCheck() {
 }
 
 window.DimSelfCheck = DimSelfCheck;
+
+// ==================== Hero stats (首页 hero 区的词汇量/已掌握/今日复习) ====================
+//
+// 复用 HeaderStats.compute(lang) + ReviewSession.dueCount(lang)，把数字写进
+// 每种语言首页 .hero-stats 里的三个 [data-hs] 节点。完全独立于 app.js：只在
+// app-enhanced 里追加，不改 _paint / 不动顶栏契约。
+const HeroStats = {
+  paint(lang) {
+    if (!lang) return;
+    const box = document.querySelector(`.hero-stats[data-hero-stats="${lang}"]`);
+    if (!box) return;
+    const base = (window.HeaderStats && window.HeaderStats.compute(lang)) || { total: 0, mastered: 0 };
+    const due = window.ReviewSession ? window.ReviewSession.dueCount(lang) : 0;
+    const fmt = n => Number(n).toLocaleString();
+    const set = (k, v) => {
+      const el = box.querySelector(`[data-hs="${k}"]`);
+      if (el) el.textContent = v;
+    };
+    set('total', fmt(base.total || 0));
+    set('mastered', fmt(base.mastered || 0));
+    set('due', fmt(due || 0));
+  },
+  paintActive() {
+    const active = document.querySelector('.screen.active');
+    if (!active) return;
+    const box = active.querySelector('.hero-stats[data-hero-stats]');
+    if (box) this.paint(box.getAttribute('data-hero-stats'));
+  }
+};
+window.HeroStats = HeroStats;
+
+// 零侵入：观察 .screen.active 的变化，每次切屏后刷新当前首页 hero 数字。
+// 同时观察 body[data-language]（切语言时 HeaderStats 缓存切换）。
+// 注意：tests/test-spaced-repetition.html 在 Node 里直接加载本文件（无 DOM /
+// MutationObserver），所以这里全部用 typeof 守卫，缺啥就退化成 no-op。
+(function installHeroStatsObserver() {
+  if (typeof document === 'undefined' || typeof MutationObserver === 'undefined') return;
+  const refresh = () => { try { HeroStats.paintActive(); } catch (_) {} };
+  const run = () => {
+    refresh();
+    const obs = new MutationObserver(() => { refresh(); });
+    const content = document.querySelector('#app .content') || document.querySelector('main.content') || document.body;
+    if (content) obs.observe(content, { subtree: true, attributes: true, attributeFilter: ['class'] });
+    if (document.body) obs.observe(document.body, { attributes: true, attributeFilter: ['data-language'] });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run, { once: true });
+  } else {
+    run();
+  }
+})();
 
 // ==================== 启动 ====================
 

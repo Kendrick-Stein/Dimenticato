@@ -55,6 +55,7 @@ newselfdata/
 # Agent / tooling scratch (绝不能进部署)
 .claude/
 .agents/
+.zcode/
 skills-lock.json
 
 # 与本站无关的 Pinme 模板副本

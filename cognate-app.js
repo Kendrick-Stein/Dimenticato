@@ -1061,7 +1061,7 @@
           '<h2>同源词练习</h2>' +
           '<p class="subtitle">借力英语词汇量学' + escapeHtml(cfg().langCn) + '：' +
             fmt(data.length) + ' 条与英语相似的词' +
-            (ff ? '，其中 ' + fmt(ff) + ' 条是「假朋友」——长得像、意思不一样，界面上会单独标出来。' : '。') +
+            (ff ? '，其中 ' + fmt(ff) + ' 条是「假朋友」，长得像、意思不一样，界面上会单独标出来。' : '。') +
           '</p>' +
           '<div class="mode-buttons">' +
             '<button class="mode-btn" id="cognateEnglishPromptBtn">' +

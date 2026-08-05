@@ -525,7 +525,7 @@
           ${personsForTense(tenseKey).map(person => {
             const value = splitAlternatives(tenseData.forms[person])
               .map(form => displayForm(person, form, tenseKey))
-              .join(' / ') || '—';
+              .join(' / ') || '-';
             return `
               <div class="conj-line">
                 <span class="conj-person">${escapeHtml(personLabelOf(person, tenseKey))}</span>
@@ -541,7 +541,7 @@
     return `
       <div class="conj-card conj-card-mini">
         ${forms.map((form, index) => {
-          const value = splitAlternatives(form).join(' / ') || '—';
+          const value = splitAlternatives(form).join(' / ') || '-';
           return `
             <div class="conj-line">
               <span class="conj-person">${escapeHtml(formLabelOf(tenseKey, index))}</span>
@@ -827,7 +827,7 @@
 
   function renderMatrixDesktop(wrap, buckets, extras) {
     const buildCell = (arr) => {
-      if (!arr.length) return '<div class="conj-matrix-empty">—</div>';
+      if (!arr.length) return '<div class="conj-matrix-empty">·</div>';
       return arr.map(buildTenseButton).join('');
     };
 

@@ -1527,7 +1527,7 @@
     browseRowHtml(word) {
       const mastered = this.isMastered(word);
       const headword = word.display || word.german || '';
-      const gloss = word.meaning || word.chinese || '—';
+      const gloss = word.meaning || word.chinese || '-';
       const cn = (word.meaning && word.chinese && word.chinese !== word.meaning) ? word.chinese : '';
       return `
         <div class="word-line" data-word="${escapeAttribute(headword)}" style="cursor:pointer">
@@ -2322,7 +2322,7 @@
       // meaning 是 "词性 + 中文释义"，chinese 是同一条释义去掉词性，notes 又是
       // 同一个词性标签 —— 原来一行里把同一份内容显示了三遍。这里拆开：
       // 释义只留中文，词性放到小字注释，第三列改成词频。
-      const gloss = word.chinese || word.meaning || '—';
+      const gloss = word.chinese || word.meaning || '-';
       const pos = word.notes || '';
       const rank = Number(word.rank);
       const rankText = Number.isFinite(rank) && rank > 0 ? `词频 #${rank.toLocaleString()}` : '';

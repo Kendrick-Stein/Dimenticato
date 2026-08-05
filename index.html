@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>背单词 - Dimenticato</title>
-  <meta name="description" content="Dimenticato — 意大利语 / 德语 / 英语 / 法语 词汇与语法练习，进度全部保存在本地浏览器。">
+  <meta name="description" content="Dimenticato - 意大利语 / 德语 / 英语 / 法语 词汇与语法练习，进度全部保存在本地浏览器。">
   <meta name="theme-color" content="#4a7a5e">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -47,7 +49,11 @@
   </svg>
   <!-- 加载动画 -->
   <div id="loading" class="loading">
-    <div class="spinner"></div>
+    <div class="skeleton-block" aria-hidden="true">
+      <div class="skel-line title"></div>
+      <div class="skel-line short"></div>
+      <div class="skel-grid"><div class="skel-card"></div><div class="skel-card"></div></div>
+    </div>
     <p id="loadingMessage">加载中...</p>
     <div class="loading-progress-bar">
       <div id="loadingProgressFill" class="loading-progress-fill"></div>
@@ -114,26 +120,35 @@
       <!-- 欢迎页面 -->
       <section id="welcomeScreen" class="screen active">
         <div class="container">
-          <div class="eyebrow">Italian</div>
-          <h1 class="page">Italiano Portale</h1>
-          <p class="desc">词汇练习、语法手册、学习进度与数据设置，全部集中在一个安静的空间里。</p>
+          <div class="hero">
+            <div class="hero-main">
+              <div class="eyebrow">Italian</div>
+              <h1 class="page hero-title">Italiano Portale</h1>
+              <p class="desc">词汇练习、语法手册、学习进度与数据设置，全部集中在一个安静的空间里。</p>
+            </div>
+            <div class="hero-stats" data-hero-stats="italian">
+              <div class="hero-stat"><span class="hs-value" data-hs="total">·</span><span class="hs-label">词汇量</span></div>
+              <div class="hero-stat accent"><span class="hs-value" data-hs="mastered">·</span><span class="hs-label">已掌握</span></div>
+              <div class="hero-stat"><span class="hs-value" data-hs="due">·</span><span class="hs-label">今日复习</span></div>
+            </div>
+          </div>
           <div class="card-grid cols-2">
-            <button class="card" id="goVocabularyBtn">
+            <button class="card" id="goVocabularyBtn" style="--ci:0">
               <span class="card-chip"><span class="msr">translate</span></span>
               <span class="card-title">词汇</span>
               <span class="card-desc">系统词汇、同源词、我的词本、社区词本</span>
             </button>
-            <button class="card" id="goGrammarBtn">
+            <button class="card" id="goGrammarBtn" style="--ci:1">
               <span class="card-chip"><span class="msr">menu_book</span></span>
               <span class="card-title">语法</span>
               <span class="card-desc">语法书、动词变位、动词搭配</span>
             </button>
-            <button class="card" id="goProgressBtn">
+            <button class="card" id="goProgressBtn" style="--ci:2">
               <span class="card-chip"><span class="msr">monitoring</span></span>
               <span class="card-title">学习进度</span>
               <span class="card-desc">概览、图表、历史记录</span>
             </button>
-            <button class="card" id="goSettingsBtn">
+            <button class="card" id="goSettingsBtn" style="--ci:3">
               <span class="card-chip"><span class="msr">tune</span></span>
               <span class="card-title">设置与数据</span>
               <span class="card-desc">备份导入导出、主题与学习偏好</span>
@@ -144,26 +159,35 @@
 
       <section id="germanWelcomeScreen" class="screen">
         <div class="container">
-          <div class="eyebrow">German</div>
-          <h1 class="page">Deutsch Lernportal</h1>
-          <p class="desc">A1-C1 课程路线、词汇练习、语法书、动词变位与学习进度，全部集中在一个安静的空间里。</p>
+          <div class="hero">
+            <div class="hero-main">
+              <div class="eyebrow">German</div>
+              <h1 class="page hero-title">Deutsch Lernportal</h1>
+              <p class="desc">A1-C1 课程路线、词汇练习、语法书、动词变位与学习进度，全部集中在一个安静的空间里。</p>
+            </div>
+            <div class="hero-stats" data-hero-stats="german">
+              <div class="hero-stat"><span class="hs-value" data-hs="total">·</span><span class="hs-label">词汇量</span></div>
+              <div class="hero-stat accent"><span class="hs-value" data-hs="mastered">·</span><span class="hs-label">已掌握</span></div>
+              <div class="hero-stat"><span class="hs-value" data-hs="due">·</span><span class="hs-label">今日复习</span></div>
+            </div>
+          </div>
           <div class="card-grid cols-2">
-            <button class="card" id="goGermanVocabularyBtn">
+            <button class="card" id="goGermanVocabularyBtn" style="--ci:0">
               <span class="card-chip"><span class="msr">translate</span></span>
               <span class="card-title">词汇</span>
               <span class="card-desc">系统词汇、我的词本、社区词本</span>
             </button>
-            <button class="card" id="goGermanGrammarBtn">
+            <button class="card" id="goGermanGrammarBtn" style="--ci:1">
               <span class="card-chip"><span class="msr">menu_book</span></span>
               <span class="card-title">语法</span>
               <span class="card-desc">德语语法书与动词变位</span>
             </button>
-            <button class="card" id="goGermanProgressBtn">
+            <button class="card" id="goGermanProgressBtn" style="--ci:2">
               <span class="card-chip"><span class="msr">monitoring</span></span>
               <span class="card-title">学习进度</span>
               <span class="card-desc">查看德语词汇练习进度与统计</span>
             </button>
-            <button class="card" id="goGermanSettingsBtn">
+            <button class="card" id="goGermanSettingsBtn" style="--ci:3">
               <span class="card-chip"><span class="msr">info</span></span>
               <span class="card-title">模块说明</span>
               <span class="card-desc">德语模块的数据范围与社区词库入口</span>
@@ -175,53 +199,41 @@
       <section id="germanVocabularyScreen" class="screen">
         <div class="container">
           <button class="back-link" id="germanVocabularyBackBtn"><span class="msr">arrow_back</span>返回德语首页</button>
-          <h1 class="page">选择德语词汇内容来源</h1>
-          <p class="desc">可选择系统德语词汇、我的词本，或进入共享社区词库。</p>
+          <h1 class="page">词汇</h1>
+          <p class="desc">选一个来源开始练习。</p>
 
-          <!-- 加了同源词之后是 4 张卡：cols-3 会剩一张孤零零地占三分之一，改成 2×2 -->
           <div class="card-grid cols-2">
             <button class="card" id="germanSystemVocabularyBtn">
               <span class="card-chip"><span class="msr">dataset</span></span>
               <span class="card-title">系统词汇库</span>
-              <span class="card-desc"><b data-count="german-vocab">24,314</b> 个德语词，按词频开始练习与浏览</span>
+              <span class="card-desc"><b data-count="german-vocab">24,314</b> 个德语词，按词频分层</span>
             </button>
-            <!-- 同源词入口：位置与交互对齐意大利语那颗（.chip + data-cognate-lang），
-                 但不带 .vocab-source-btn / .cognate-btn —— 那两个 class 是 app.js 里
-                 意大利语专用 handler 的选择器，挂上去会被拖进意大利语的流程。
-                 .vocab-source-btn 在 styles.css 里没有任何规则，样式全部来自 .chip。 -->
             <div class="card">
               <span class="card-chip"><span class="msr">compare_arrows</span></span>
-              <span class="card-title">同源词 · 借力英语</span>
-              <span class="card-desc">和英语同源的德语词；falsche Freunde（假朋友）单独标注。</span>
+              <span class="card-title">同源词</span>
+              <span class="card-desc">和英语同源的德语词，假朋友单独标注。</span>
               <div class="chips wrap">
-                <button class="chip" data-cognate-lang="german">同源词 · <span data-count="german-cognates">2,349</span> 词</button>
+                <button class="chip" data-cognate-lang="german">同源词 <span data-count="german-cognates">2,349</span></button>
               </div>
             </div>
-            <button class="card" id="germanWordbooksBtn">
-              <span class="card-chip"><span class="msr">bookmark</span></span>
-              <span class="card-title">我的词本</span>
-              <span class="card-desc">导入、创建并管理个人德语词本（在本页下方）</span>
-            </button>
             <button class="card" id="germanCommunityBtn">
               <span class="card-chip"><span class="msr">groups</span></span>
               <span class="card-title">社区词本</span>
-              <span class="card-desc">进入共享社区词库，浏览并导入社区资源</span>
+              <span class="card-desc">浏览、导入或发布词本。</span>
             </button>
           </div>
 
           <div class="section-head-row">
-            <div>
-              <div class="sub-label">我的德语词本</div>
-              <span class="card-desc">只列出德语词本，其它语言的词本在对应语言里</span>
-            </div>
-            <div class="inline-actions">
-              <input type="file" id="germanWordbookFileInput" accept=".json,.txt" style="display: none;">
-              <button class="pill-btn" id="germanImportWordbookBtn"><span class="msr">upload_file</span>导入词本</button>
-              <button class="pill-btn" id="germanCreateWordbookBtn"><span class="msr">add</span>创建新词本</button>
+            <div class="sub-label">我的词本</div>
+            <div class="chips wrap">
+              <input type="file" id="germanWordbookFileInput" accept=".json,.txt" style="display:none;">
+              <button class="pill-btn" id="germanImportWordbookBtn"><span class="msr">upload_file</span>导入</button>
+              <button class="pill-btn" id="germanCreateWordbookBtn"><span class="msr">add</span>新建</button>
+              <button class="pill-btn" id="germanWordbooksBtn"><span class="msr">bookmark</span>我的词本</button>
             </div>
           </div>
           <div class="card-grid cols-3" id="germanWordbookCards"></div>
-          <p class="card-desc hidden" id="germanWordbookEmpty">还没有德语词本 —— 用右上角的「导入词本」或「创建新词本」添加第一个。</p>
+          <p class="card-desc hidden" id="germanWordbookEmpty">还没有德语词本，用上方「导入」或「新建」添加第一个。</p>
         </div>
       </section>
 
@@ -433,26 +445,35 @@
 
       <section id="englishWelcomeScreen" class="screen">
         <div class="container">
-          <div class="eyebrow">English</div>
-          <h1 class="page">English Learning Portal</h1>
-          <p class="desc">英语词汇练习、语法书与学习进度，全部集中在一个安静的空间里。</p>
+          <div class="hero">
+            <div class="hero-main">
+              <div class="eyebrow">English</div>
+              <h1 class="page hero-title">English Learning Portal</h1>
+              <p class="desc">英语词汇练习、语法书与学习进度，全部集中在一个安静的空间里。</p>
+            </div>
+            <div class="hero-stats" data-hero-stats="english">
+              <div class="hero-stat"><span class="hs-value" data-hs="total">·</span><span class="hs-label">词汇量</span></div>
+              <div class="hero-stat accent"><span class="hs-value" data-hs="mastered">·</span><span class="hs-label">已掌握</span></div>
+              <div class="hero-stat"><span class="hs-value" data-hs="due">·</span><span class="hs-label">今日复习</span></div>
+            </div>
+          </div>
           <div class="card-grid cols-2">
-            <button class="card" id="goEnglishVocabularyBtn">
+            <button class="card" id="goEnglishVocabularyBtn" style="--ci:0">
               <span class="card-chip"><span class="msr">translate</span></span>
               <span class="card-title">词汇</span>
               <span class="card-desc">系统词汇、我的词本、社区词本</span>
             </button>
-            <button class="card" id="goEnglishGrammarBtn">
+            <button class="card" id="goEnglishGrammarBtn" style="--ci:1">
               <span class="card-chip"><span class="msr">menu_book</span></span>
               <span class="card-title">语法</span>
               <span class="card-desc">英语语法书与动词变位</span>
             </button>
-            <button class="card" id="goEnglishProgressBtn">
+            <button class="card" id="goEnglishProgressBtn" style="--ci:2">
               <span class="card-chip"><span class="msr">monitoring</span></span>
               <span class="card-title">学习进度</span>
               <span class="card-desc">查看英语词汇练习进度与统计</span>
             </button>
-            <button class="card" id="goEnglishSettingsBtn">
+            <button class="card" id="goEnglishSettingsBtn" style="--ci:3">
               <span class="card-chip"><span class="msr">info</span></span>
               <span class="card-title">模块说明</span>
               <span class="card-desc">英语模块的数据范围与社区词库入口</span>
@@ -464,40 +485,33 @@
       <section id="englishVocabularyScreen" class="screen">
         <div class="container">
           <button class="back-link" id="englishVocabularyBackBtn"><span class="msr">arrow_back</span>返回英语首页</button>
-          <h1 class="page">选择英语词汇内容来源</h1>
-          <p class="desc">可选择系统英语词汇、我的词本，或进入共享社区词库。</p>
+          <h1 class="page">词汇</h1>
+          <p class="desc">选一个来源开始练习。</p>
 
-          <div class="card-grid cols-3">
+          <div class="card-grid cols-2">
             <button class="card" id="englishSystemVocabularyBtn">
               <span class="card-chip"><span class="msr">dataset</span></span>
               <span class="card-title">系统词汇库</span>
-              <span class="card-desc">使用英语词汇内容开始练习与浏览</span>
-            </button>
-            <button class="card" id="englishWordbooksBtn">
-              <span class="card-chip"><span class="msr">bookmark</span></span>
-              <span class="card-title">我的词本</span>
-              <span class="card-desc">导入、创建并管理个人英语词本（在本页下方）</span>
+              <span class="card-desc">按词频分层的英语词汇。</span>
             </button>
             <button class="card" id="englishCommunityBtn">
               <span class="card-chip"><span class="msr">groups</span></span>
               <span class="card-title">社区词本</span>
-              <span class="card-desc">进入共享社区词库，浏览并导入社区资源</span>
+              <span class="card-desc">浏览、导入或发布词本。</span>
             </button>
           </div>
 
           <div class="section-head-row">
-            <div>
-              <div class="sub-label">我的英语词本</div>
-              <span class="card-desc">只列出英语词本，其它语言的词本在对应语言里</span>
-            </div>
-            <div class="inline-actions">
-              <input type="file" id="englishWordbookFileInput" accept=".json,.txt" style="display: none;">
-              <button class="pill-btn" id="englishImportWordbookBtn"><span class="msr">upload_file</span>导入词本</button>
-              <button class="pill-btn" id="englishCreateWordbookBtn"><span class="msr">add</span>创建新词本</button>
+            <div class="sub-label">我的词本</div>
+            <div class="chips wrap">
+              <input type="file" id="englishWordbookFileInput" accept=".json,.txt" style="display:none;">
+              <button class="pill-btn" id="englishImportWordbookBtn"><span class="msr">upload_file</span>导入</button>
+              <button class="pill-btn" id="englishCreateWordbookBtn"><span class="msr">add</span>新建</button>
+              <button class="pill-btn" id="englishWordbooksBtn"><span class="msr">bookmark</span>我的词本</button>
             </div>
           </div>
           <div class="card-grid cols-3" id="englishWordbookCards"></div>
-          <p class="card-desc hidden" id="englishWordbookEmpty">还没有英语词本 —— 用右上角的「导入词本」或「创建新词本」添加第一个。</p>
+          <p class="card-desc hidden" id="englishWordbookEmpty">还没有英语词本，用上方「导入」或「新建」添加第一个。</p>
         </div>
       </section>
 
@@ -756,71 +770,54 @@
       <section id="vocabularyScreen" class="screen">
         <div class="container">
           <button class="back-link" id="vocabularyBackBtn"><span class="msr">arrow_back</span>返回意大利语首页</button>
-          <h1 class="page">选择词汇内容来源</h1>
-          <p class="desc">四个来源都是完整的练习入口，选一个开始。</p>
+          <h1 class="page">词汇</h1>
+          <p class="desc">选一个来源开始练习。</p>
 
-          <!-- 四个来源现在是平级的卡片，一屏内全部可见；同源词不再藏在系统词汇库里面 -->
           <div class="card-grid cols-2">
             <div class="card">
               <span class="card-chip"><span class="msr">dataset</span></span>
               <span class="card-title">系统词汇库</span>
-              <span class="card-desc">根据词频分层，从高频词逐步扩展。</span>
+              <span class="card-desc">按词频分层，从高频词开始。</span>
               <div class="chips wrap">
-                <button class="chip vocab-source-btn" data-level="1000" data-source="system">初级 · 1,000 词</button>
-                <button class="chip vocab-source-btn" data-level="3000" data-source="system">中级 · 3,000 词</button>
-                <button class="chip vocab-source-btn" data-level="5000" data-source="system">高级 · 5,000 词</button>
-                <button class="chip vocab-source-btn" data-level="all" data-source="system">全部 · <span data-count="italian-vocab">27,117</span> 词</button>
+                <button class="chip vocab-source-btn" data-level="1000" data-source="system">1,000</button>
+                <button class="chip vocab-source-btn" data-level="3000" data-source="system">3,000</button>
+                <button class="chip vocab-source-btn" data-level="5000" data-source="system">5,000</button>
+                <button class="chip vocab-source-btn" data-level="all" data-source="system">全部 <span data-count="italian-vocab">27,117</span></button>
               </div>
             </div>
 
             <div class="card">
               <span class="card-chip"><span class="msr">compare_arrows</span></span>
-              <span class="card-title">同源词 · 借力英语</span>
-              <span class="card-desc">和英语长得像的意大利语单词，用已有的英语词汇量抄近路。</span>
+              <span class="card-title">同源词</span>
+              <span class="card-desc">和英语长得像的词，借力英语抄近路。</span>
               <div class="chips wrap">
-                <!-- data-cognate-lang 是 cognate-app.js 的统一入口标记（三门语言同一套委托）。
-                     .cognate-btn / .vocab-source-btn 只保留给 app.js 里的老 handler。 -->
-                <button class="chip vocab-source-btn cognate-btn" data-level="cognate" data-source="cognate" data-cognate-lang="italian">同源词 · <span data-count="italian-cognates">1,586</span> 词</button>
+                <button class="chip vocab-source-btn cognate-btn" data-level="cognate" data-source="cognate" data-cognate-lang="italian">同源词 <span data-count="italian-cognates">1,586</span></button>
               </div>
-            </div>
-
-            <div class="card">
-              <span class="card-chip"><span class="msr">bookmark</span></span>
-              <span class="card-title">我的词本</span>
-              <span class="card-desc">本地词本，导入、创建与编辑（列表在本页下方）。</span>
-              <div class="chips wrap">
-                <input type="file" id="wordbookFileInput" accept=".json,.txt" style="display: none;">
-                <button class="pill-btn" id="importWordbookBtn"><span class="msr">upload_file</span>导入词本</button>
-                <button class="pill-btn" id="createWordbookBtn"><span class="msr">add</span>创建新词本</button>
-              </div>
-              <p class="card-desc">
-                <a href="custom_wordbook_template.json" download>JSON模板</a> |
-                <a href="custom_wordbook_template.txt" download>TXT模板</a>
-              </p>
             </div>
 
             <div class="card">
               <span class="card-chip"><span class="msr">groups</span></span>
               <span class="card-title">社区词本</span>
-              <span class="card-desc">浏览、导入，或把自己的词本发布出去。</span>
+              <span class="card-desc">浏览、导入或发布词本。</span>
               <div class="chips wrap">
-                <button class="pill-btn" id="browseCommunityBtn"><span class="msr">travel_explore</span>浏览社区词本</button>
-                <!-- 发布入口从 Settings 挪到这里：浏览与发布本来就是同一个功能 -->
-                <button class="pill-btn" id="settingsCommunityUploadBtn"><span class="msr">upload_file</span>发布社区词本</button>
+                <button class="pill-btn" id="browseCommunityBtn"><span class="msr">travel_explore</span>浏览</button>
+                <button class="pill-btn" id="settingsCommunityUploadBtn"><span class="msr">upload_file</span>发布</button>
               </div>
             </div>
           </div>
 
           <div class="section-head-row">
-            <div>
-              <div class="sub-label">我的意大利语词本</div>
-              <span class="card-desc">只列出意大利语词本，其它语言的词本在对应语言里</span>
+            <div class="sub-label">我的词本</div>
+            <input type="file" id="wordbookFileInput" accept=".json,.txt" style="display:none;">
+            <div class="chips wrap">
+              <button class="pill-btn" id="importWordbookBtn"><span class="msr">upload_file</span>导入</button>
+              <button class="pill-btn" id="createWordbookBtn"><span class="msr">add</span>新建</button>
             </div>
           </div>
           <div class="card-grid cols-3" id="wordbookCards">
             <!-- 动态生成单词本卡片 -->
           </div>
-          <p class="card-desc hidden" id="italianWordbookEmpty">还没有词本 —— 用上面的「导入词本」或「创建新词本」添加第一个。</p>
+          <p class="card-desc hidden" id="italianWordbookEmpty">还没有词本，用上方「导入」或「新建」添加第一个。<a href="custom_wordbook_template.json" download>JSON</a> / <a href="custom_wordbook_template.txt" download>TXT</a> 模板</p>
         </div>
       </section>
 

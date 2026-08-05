@@ -229,26 +229,35 @@
     return `
       <section id="frenchWelcomeScreen" class="screen">
         <div class="container">
-          <div class="eyebrow">French</div>
-          <h1 class="page">Portail d'apprentissage du français</h1>
-          <p class="desc">词汇覆盖 A1 到 C1，并配套 A1-B2 语法、动词变位与独立学习进度。</p>
+          <div class="hero">
+            <div class="hero-main">
+              <div class="eyebrow">French</div>
+              <h1 class="page hero-title">Portail d'apprentissage du français</h1>
+              <p class="desc">词汇覆盖 A1 到 C1，并配套 A1-B2 语法、动词变位与独立学习进度。</p>
+            </div>
+            <div class="hero-stats" data-hero-stats="french">
+              <div class="hero-stat"><span class="hs-value" data-hs="total">·</span><span class="hs-label">词汇量</span></div>
+              <div class="hero-stat accent"><span class="hs-value" data-hs="mastered">·</span><span class="hs-label">已掌握</span></div>
+              <div class="hero-stat"><span class="hs-value" data-hs="due">·</span><span class="hs-label">今日复习</span></div>
+            </div>
+          </div>
           <div class="card-grid cols-2">
-            <button class="card" id="goFrenchVocabularyBtn">
+            <button class="card" id="goFrenchVocabularyBtn" style="--ci:0">
               <span class="card-chip"><span class="msr">translate</span></span>
               <span class="card-title">词汇</span>
               <span class="card-desc">主题词汇、我的词本与三种练习模式</span>
             </button>
-            <button class="card" id="goFrenchGrammarBtn">
+            <button class="card" id="goFrenchGrammarBtn" style="--ci:1">
               <span class="card-chip"><span class="msr">menu_book</span></span>
               <span class="card-title">语法</span>
               <span class="card-desc">A1-B2 语法书（109 个专题）与 1,888 个动词变位</span>
             </button>
-            <button class="card" id="goFrenchProgressBtn">
+            <button class="card" id="goFrenchProgressBtn" style="--ci:2">
               <span class="card-chip"><span class="msr">monitoring</span></span>
               <span class="card-title">学习进度</span>
               <span class="card-desc">查看法语词汇掌握量与练习统计</span>
             </button>
-            <button class="card" id="goFrenchSettingsBtn">
+            <button class="card" id="goFrenchSettingsBtn" style="--ci:3">
               <span class="card-chip"><span class="msr">tune</span></span>
               <span class="card-title">设置与数据</span>
               <span class="card-desc">课程说明、社区词本与全站数据工具</span>
@@ -260,35 +269,27 @@
       <section id="frenchVocabularyScreen" class="screen">
         <div class="container">
           <button class="back-link" id="frenchVocabularyBackBtn"><span class="msr">arrow_back</span>返回法语首页</button>
-          <div class="eyebrow">French / Vocabulary</div>
-          <h1 class="page">Choisir le vocabulaire</h1>
-          <p class="desc">选择系统法语课程、个人词本或共享社区词库。</p>
-          <div class="card-grid cols-3">
+          <h1 class="page">词汇</h1>
+          <p class="desc">选一个来源开始练习。</p>
+          <div class="card-grid cols-2">
             <button class="card" id="frenchSystemVocabularyBtn">
               <span class="card-chip"><span class="msr">dataset</span></span>
               <span class="card-title">系统词汇库</span>
-              <span class="card-desc"><span id="frenchSystemVocabularyCount">0</span> 个 A1-C1 词条：教材总词汇表 + 词频核心词库</span>
-            </button>
-            <button class="card" id="frenchWordbooksBtn">
-              <span class="card-chip"><span class="msr">bookmark</span></span>
-              <span class="card-title">我的词本</span>
-              <span class="card-desc">导入、创建并管理个人法语词本</span>
+              <span class="card-desc"><span id="frenchSystemVocabularyCount">0</span> 个 A1-C1 词条</span>
             </button>
             <button class="card" id="frenchCommunityBtn">
               <span class="card-chip"><span class="msr">groups</span></span>
               <span class="card-title">社区词本</span>
-              <span class="card-desc">浏览并导入共享社区资源</span>
+              <span class="card-desc">浏览、导入或发布词本。</span>
             </button>
           </div>
           <div class="section-head-row">
-            <div>
-              <div class="sub-label">我的法语词本</div>
-              <span class="card-desc">这里只显示 French 词本</span>
-            </div>
-            <div class="inline-actions">
+            <div class="sub-label">我的词本</div>
+            <div class="chips wrap">
               <input type="file" id="frenchWordbookFileInput" accept=".json,.txt" style="display:none">
-              <button class="pill-btn" id="frenchImportWordbookBtn"><span class="msr">upload_file</span>Import</button>
-              <button class="pill-btn" id="frenchCreateWordbookBtn"><span class="msr">add</span>Create</button>
+              <button class="pill-btn" id="frenchImportWordbookBtn"><span class="msr">upload_file</span>导入</button>
+              <button class="pill-btn" id="frenchCreateWordbookBtn"><span class="msr">add</span>新建</button>
+              <button class="pill-btn" id="frenchWordbooksBtn"><span class="msr">bookmark</span>我的词本</button>
             </div>
           </div>
           <div class="card-grid cols-3" id="frenchWordbookCards"></div>
