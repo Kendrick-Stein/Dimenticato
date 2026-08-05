@@ -16,7 +16,9 @@
     SRS: 'dimenticato_french_srs'
   };
 
-  const LEVELS = ['A1', 'A2', 'B1', 'B2'];
+  // 核心词库（Lexique 3.83）里 C1 有 6,829 条、C2 有 10,456 条，占系统词库的 70%。
+  // 这里原本只列到 B2，那些词只能在「全部」下出现，没有任何等级筛选够得着。
+  const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
   const SESSION_SIZES = [20, 50, 100, 0];
   const DAILY_HISTORY_DAYS = 60;
   const SHARED_SCREENS = new Set([
@@ -308,6 +310,8 @@
               <button class="chip" data-level="A2">A2</button>
               <button class="chip" data-level="B1">B1</button>
               <button class="chip" data-level="B2">B2</button>
+              <button class="chip" data-level="C1">C1</button>
+              <button class="chip" data-level="C2">C2</button>
             </div>
             <div class="field-label">每组题量</div>
             <div class="chips" id="frenchSessionChips" style="flex-wrap:wrap">
@@ -413,6 +417,8 @@
               <button class="chip" data-level="A2">A2</button>
               <button class="chip" data-level="B1">B1</button>
               <button class="chip" data-level="B2">B2</button>
+              <button class="chip" data-level="C1">C1</button>
+              <button class="chip" data-level="C2">C2</button>
             </div>
           </div>
           <div class="word-list" id="frenchWordList"></div>
