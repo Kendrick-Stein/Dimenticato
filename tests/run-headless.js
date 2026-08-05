@@ -23,6 +23,20 @@ const ROOT = path.resolve(TESTS_DIR, '..');
 const HTML_HARNESSES = ['test-quiz-engine.html', 'test-spaced-repetition.html'];
 const NODE_HARNESSES = ['test-french-data.js', 'test-german-course-data.js', 'test-storage.js'];
 
+// 数据集校验器。上面的 harness 一个都不 require *cognates.js / *-vocabulary.js，
+// 生成数据和它的输入分头改动时（语法树重命名、词库重建）不会有任何测试变红——
+// 已经这样漏过三次。校验器覆盖的正是这块，接进来当阻断项。
+const VALIDATORS = [
+  'scripts/validate_italian_extras.js',
+  'scripts/validate_french_extras.js',
+  'scripts/validate_french_vocabulary.js',
+  'scripts/validate_french_conjugations.js',
+  'scripts/validate_french_grammar.js',
+  'scripts/validate_german_extras.js',
+  'scripts/validate_german_vocabulary.js',
+  'scripts/validate_german_grammar.js',
+];
+
 function extractScripts(html) {
   const out = [];
   const re = /<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
@@ -90,12 +104,12 @@ function parseCounts(line) {
   return { passed: Number(m[1]), failed: Number(m[2]), known: Number(m[3] || 0) };
 }
 
-function runNodeHarness(file) {
-  const abs = path.join(TESTS_DIR, file);
+function runNodeHarness(file, baseDir) {
+  const abs = path.join(baseDir || TESTS_DIR, file);
   if (!fs.existsSync(abs)) return null;
   try {
     const stdout = execFileSync(process.execPath, [abs], { cwd: ROOT, encoding: 'utf8' });
-    const summary = stdout.trim().split('\n').pop();
+    const summary = stdout.trim().split('\n').pop().trim();
     const counts = parseCounts(summary) || { passed: 1, failed: 0, known: 0 };
     return { file, summary, failures: [], errors: [], ...counts };
   } catch (e) {
@@ -114,13 +128,17 @@ function main() {
     const r = runNodeHarness(f);
     if (r) reports.push(r);
   });
+  VALIDATORS.filter(pick).forEach(f => {
+    const r = runNodeHarness(f, ROOT);
+    if (r) reports.push(r);
+  });
 
   let bad = 0;
   reports.forEach(r => {
     const status = (r.failed || r.errors.length) ? 'FAIL' : 'OK  ';
     let counts = r.summary || `${r.passed} passed, ${r.failed} failed`;
     if (r.known && counts.indexOf('known') === -1) counts += ` (${r.known} known issues)`;
-    console.log(`${status} ${r.file.padEnd(30)} ${counts}`);
+    console.log(`${status} ${r.file.padEnd(36)} ${counts}`);
     r.failures.forEach(f => console.log('       ' + f));
     r.errors.forEach(e => console.log('       ERROR ' + e));
     if (r.failed || r.errors.length) bad++;
