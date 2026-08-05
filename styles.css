@@ -2462,6 +2462,19 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
   transform: translateY(-1px);
 }
 
+/* 同源词的沉浸式练习视图（对比卡片 / 拼写题）里，页面最底下就是「下一个 →」「下一题 →」，
+   390×844 逐条实测这颗悬浮按钮会盖在主操作按钮上：对比模式 DE 88/2347、FR 64/4272、
+   IT 9/1587 条矩形相叠（几乎全是多一条假朋友提示条、卡片更高的词条），其中 DE 70、FR 44、
+   IT 5 条连按钮中心都被吃掉，点下去触发的是 goBack()，直接退出练习；拼写题的「下一题 →」
+   是通栏按钮，右半截几乎每题都被压住（抽查 200 题：DE 192 / FR 197 / IT 199）。
+   这两种视图里把悬浮按钮让出去，返回改走屏内顶部的 #cognateBackBtn（内容不长，首屏可见）；
+   浏览 / 规律列表 / 模式选择这类要长滚的视图不加这个类，悬浮按钮照常保留。
+   选择器同时要求同源词屏 active，所以那个类万一没被清掉也漏不到别的屏幕上。 */
+#app:has(#cognatePracticeScreen.screen.active #cognatePracticeContainer.cognate-immersive)
+.mobile-floating-back {
+  display: none;
+}
+
 /* ==================== 弹窗 ==================== */
 
 .modal {

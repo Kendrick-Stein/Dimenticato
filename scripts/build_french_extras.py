@@ -504,10 +504,201 @@ FAUX_AMIS_IT = [
     ("chercher", "to look for", "寻找", "cercare", "同源同义，可直接迁移"),
 ]
 
+# ---------------------------------------------------------------------------
+# 3b. 同形巧合 / 经典 faux-amis 补充（2026 修：释义不再走英语跳板）
+# ---------------------------------------------------------------------------
+# 上面那批是原有的手写表。下面这批补的是两类漏网之鱼：
+#
+#   A. 「同形词 identical」档里的纯拼写巧合。法语 rue / chat / pub / cap …
+#      跟英语同形词毫无语义交集，却被包装成「拼写完全一样，只有发音和词性
+#      需要单独记」的最安全一档，中文抄的还是英语同形词的义（rue→懊悔、
+#      chat→聊天）。它们其实是最好的 faux-ami 素材，全部改成 faux-ami。
+#
+#   B. 教科书级 faux-amis（décevoir / conducteur / entrée / pièce …）。原来
+#      以普通同源词身份混在表里，中文写的恰恰是学习者最该避开的那个义。
+#      讽刺的是 déception 早就被正确标成 faux-ami 写「失望」，而动词
+#      décevoir 写「欺骗」—— 同一份数据里自己打自己的脸。
+#
+# 中文一律按法语词本身的义写，不看英语 look-alike。
+FAUX_AMIS_2026 = [
+    # ---- A. 同形巧合 -------------------------------------------------------
+    ("rue", "street", "街道；马路", "rue", "≠ 英语 rue（懊悔）= regretter"),
+    ("chat", "cat", "猫", "chat", "≠ 英语 chat（聊天）= bavarder / tchatter"),
+    ("pub", "advert", "广告；宣传", "pub", "pub 是 publicité 的缩写；≠ 英语 pub（酒馆）= bar / bistrot"),
+    ("sol", "ground, floor", "地面；土壤", "sol", "≠ 英语 sol（音名 G）；「地面」= ground"),
+    ("fan", "fan, supporter", "粉丝；爱好者", "fan", "≠ 英语 fan（风扇；扇子）= ventilateur / éventail"),
+    ("cap", "cape; course", "海角；航向", "cap", "≠ 英语 cap（帽子）= casquette"),
+    ("pic", "peak", "山峰；尖镐", "pick", "≠ 英语 pick（挑选）= choisir"),
+    ("trac", "stage fright", "怯场；紧张", "track", "≠ 英语 track（轨道）= piste / voie"),
+    ("cor", "horn; corn (on the foot)", "号角；鸡眼", "corn", "≠ 英语 corn（玉米）= maïs"),
+    ("bas", "low; stocking", "低的；长袜", "bass", "≠ 英语 bass（低音）= basse / grave"),
+    ("receler", "to harbour, to receive stolen goods", "窝藏；藏有", "receive",
+     "≠ 英语 receive（收到）= recevoir"),
+    # ---- B. 经典 faux-amis -------------------------------------------------
+    ("décevoir", "to disappoint", "使失望", "deceive", "≠ 英语 deceive（欺骗）= tromper"),
+    ("conducteur", "driver", "司机；驾驶员", "conductor",
+     "≠ 英语 conductor（乐队指挥；售票员）= chef d'orchestre / contrôleur"),
+    ("entrée", "entrance; starter", "入口；前菜", "entry", "≠ 英语 entry（登录；词条）= saisie"),
+    ("propre", "clean; own", "干净的；自己的", "proper", "≠ 英语 proper（恰当的）= approprié"),
+    ("ancien", "former; old", "从前的；旧的", "ancient", "≠ 英语 ancient（远古的）= antique"),
+    ("front", "forehead", "额头", "front", "≠ 英语 front（前面）= devant / avant"),
+    ("marche", "walking; step", "走路；台阶", "march", "≠ 英语 march（行军）= marche militaire"),
+    ("partition", "musical score", "乐谱", "partition", "≠ 英语 partition（分割；隔断）= cloison"),
+    ("cabinet", "office; practice; cabinet", "诊所；事务所；内阁", "cabinet",
+     "≠ 英语 cabinet（橱柜）= placard / armoire"),
+    ("tissu", "fabric, cloth", "布料；织物", "tissue", "≠ 英语 tissue（纸巾）= mouchoir en papier"),
+    ("caméra", "video camera", "摄像机", "camera", "≠ 英语 camera（照相机）= appareil photo"),
+    ("pièce", "room; part; coin", "房间；零件；硬币", "piece", "≠ 英语 piece（一块）= morceau"),
+    ("général", "general (army officer)", "将军", "general",
+     "le général 是名词「将军」；同形形容词 général 才是「普通的」"),
+    ("banc", "bench", "长凳", "bank", "≠ 英语 bank（银行）= banque"),
+    ("sentence", "verdict", "判决", "sentence", "≠ 英语 sentence（句子）= phrase"),
+    ("corne", "horn", "角", "corn", "≠ 英语 corn（玉米）= maïs"),
+    ("mars", "March", "三月", "march", "≠ 英语 march（行军）= marche"),
+    ("reste", "remainder", "剩余；其余", "rest", "≠ 英语 rest（休息）= repos"),
+    ("donner", "to give", "给；给予", "donate", "≠ 英语 donate（捐赠）= faire un don"),
+    ("arrêter", "to stop", "停止；停下", "arrest", "arrêter 也有「逮捕」义，但基本义是「停止」"),
+    ("comprendre", "to understand", "理解；懂", "comprise", "≠ 英语 comprise（包含）—— 基本义是「理解」"),
+    ("asseoir", "to seat, to sit down", "坐下；使坐下", "assert", "≠ 英语 assert（断言）= affirmer"),
+    ("désolé", "sorry", "抱歉的", "desolate", "≠ 英语 desolate（荒凉的）= désertique"),
+    ("corps", "body", "身体", "corps", "≠ 英语 corps（军团）= corps d'armée"),
+    ("joli", "pretty", "漂亮的", "jolly", "≠ 英语 jolly（欢乐的）= joyeux"),
+    ("compter", "to count", "数；计算", "comprise", "≠ 英语 comprise（包含）= comprendre"),
+    ("partie", "part", "部分", "party", "≠ 英语 party（政党）= parti；（聚会）= fête"),
+    ("carte", "map; card", "地图；卡片", "card", "carte = 地图／卡片；纸牌 = carte à jouer"),
+    ("prix", "price; prize", "价格；奖项", "prize", "prix 首义是「价格」，「奖项」是次义"),
+    ("blanc", "white", "白色的", "blank", "≠ 英语 blank（空白的）= vierge"),
+    ("scène", "stage", "舞台；场景", "scene", "≠ 英语 scene（现场）= lieu / les lieux"),
+    ("professeur", "teacher", "老师", "professor", "≠ 英语 professor（大学教授）= professeur d'université"),
+    ("poste", "post office", "邮局", "position", "la poste = 邮局；le poste = 岗位／机台"),
+    ("manière", "way, manner", "方式；方法", "manners", "≠ 英语 manners（礼貌）= bonnes manières"),
+    ("époque", "era, period", "时代；时期", "epoch", "≠ 英语 epoch（新纪元）= ère"),
+    ("magasin", "shop, store", "商店", "magazine", "≠ 英语 magazine（杂志）= revue"),
+    ("glace", "ice; ice cream; mirror", "冰；冰淇淋；镜子", "glass", "≠ 英语 glass（玻璃杯）= verre"),
+    ("croisière", "cruise", "巡航；乘船游览", "cruiser", "≠ 英语 cruiser（巡洋舰）= croiseur"),
+    ("communier", "to receive communion", "领圣餐", "communicate", "≠ 英语 communicate（沟通）= communiquer"),
+    ("pochette", "clutch bag; pocket square", "小手袋；口袋巾", "pocket", "≠ 英语 pocket（衣袋）= poche"),
+    # ---- C. 语义闸门查出来的其余错配 ---------------------------------------
+    ("retirer", "to withdraw, to take off", "取出；撤回；脱下", "retire",
+     "≠ 英语 retire（退休）= prendre sa retraite"),
+    ("dessin", "drawing", "图画；素描", "design", "≠ 英语 design（设计）= conception"),
+    ("essai", "attempt, test", "尝试；试验", "essay", "≠ 英语 essay（散文；论文）= dissertation"),
+    ("barbe", "beard", "胡子；胡须", "barb", "≠ 英语 barb（倒钩）= barbelure"),
+    ("défaut", "flaw, defect", "缺点；缺陷", "default", "≠ 英语 default（默认值）= valeur par défaut"),
+    ("stade", "stadium; stage", "体育场；阶段", "stage", "≠ 英语 stage（舞台）= scène；法语 stage 是「实习」"),
+    ("grossier", "coarse, rude", "粗糙的；粗鲁的", "gross", "≠ 英语 gross（总的）= brut"),
+    ("stand", "stand, stall (at a fair)", "展台；摊位", "stand", "≠ 英语 stand（站立）= être debout"),
+    ("ride", "wrinkle", "皱纹", "ride", "≠ 英语 ride（骑；乘）= monter / rouler"),
+    ("fourniture", "supply, supplies", "供应；用品", "furniture", "≠ 英语 furniture（家具）= meubles"),
+    ("chaire", "pulpit; professorship", "讲坛；教席", "chair", "≠ 英语 chair（椅子）= chaise"),
+    # ---- D. 拼写完全一样、义项却错位的（原先挂在「同形词」档，最容易骗人）----
+    ("siège", "seat; head office", "座位；总部", "siege", "≠ 英语 siege（围攻）；法语 siège 首义是「座位／总部」"),
+    ("canon", "cannon; standard", "大炮；准则", "canon", "≠ 英语 canon（教规）；「大炮」的英语是 cannon，两个 n"),
+    ("plateau", "tray; set (film)", "托盘；摄影棚", "plateau", "≠ 英语 plateau（高原；停滞期）；法语首义是「托盘」"),
+    ("reconnaissance", "gratitude; recognition", "感激；承认", "reconnaissance",
+     "≠ 英语 reconnaissance（侦察）；法语首义是「感激／承认」"),
+    ("lot", "batch; prize", "一批；奖品", "lot", "≠ 英语 a lot（许多）= beaucoup"),
+    ("instance", "authority; court level", "机构；审级", "instance", "≠ 英语 instance（例子）= exemple"),
+]
+
 # Lexique's dominant reading is not always the one the faux-ami trap lives in
 # ("nouvelle" is far more frequent as an adjective, but the trap is the noun).
 FAUX_AMI_CGRAM = {
     "nouvelle": "NOM",
+}
+
+# 新增 faux-amis 的词性/阴阳性一律写死：这样「整表重建」和「只重跑释义层」
+# 两条路径拿到的行完全一样，不依赖 Lexique 的主导读法。
+FAUX_AMI_POS = {
+    "rue": ("NOM", "f"), "chat": ("NOM", "m"), "pub": ("NOM", "f"), "sol": ("NOM", "m"),
+    "fan": ("NOM", "m"), "cap": ("NOM", "m"), "pic": ("NOM", "m"), "trac": ("NOM", "m"),
+    "cor": ("NOM", "m"), "bas": ("ADJ", None), "receler": ("VER", None),
+    "décevoir": ("VER", None), "conducteur": ("NOM", "m"), "entrée": ("NOM", "f"),
+    "propre": ("ADJ", None), "ancien": ("ADJ", None), "front": ("NOM", "m"),
+    "marche": ("NOM", "f"), "partition": ("NOM", "f"), "cabinet": ("NOM", "m"),
+    "tissu": ("NOM", "m"), "caméra": ("NOM", "f"), "pièce": ("NOM", "f"),
+    "général": ("NOM", "m"), "banc": ("NOM", "m"), "sentence": ("NOM", "f"),
+    "corne": ("NOM", "f"), "mars": ("NOM", "m"), "reste": ("NOM", "m"),
+    "donner": ("VER", None), "arrêter": ("VER", None), "comprendre": ("VER", None),
+    "asseoir": ("VER", None), "désolé": ("ADJ", None), "corps": ("NOM", "m"),
+    "joli": ("ADJ", None), "compter": ("VER", None), "partie": ("NOM", "f"),
+    "carte": ("NOM", "f"), "prix": ("NOM", "m"), "blanc": ("ADJ", None),
+    "scène": ("NOM", "f"), "professeur": ("NOM", "m"), "poste": ("NOM", "f"),
+    "manière": ("NOM", "f"), "époque": ("NOM", "f"), "magasin": ("NOM", "m"),
+    "glace": ("NOM", "f"), "croisière": ("NOM", "f"), "communier": ("VER", None),
+    "pochette": ("NOM", "f"), "retirer": ("VER", None), "dessin": ("NOM", "m"),
+    "essai": ("NOM", "m"), "barbe": ("NOM", "f"), "défaut": ("NOM", "m"),
+    "stade": ("NOM", "m"), "grossier": ("ADJ", None), "stand": ("NOM", "m"),
+    "ride": ("NOM", "f"), "fourniture": ("NOM", "f"), "chaire": ("NOM", "f"),
+    "siège": ("NOM", "m"), "canon": ("NOM", "m"), "plateau": ("NOM", "m"),
+    "reconnaissance": ("NOM", "f"), "lot": ("NOM", "m"), "instance": ("NOM", "f"),
+}
+
+# ---------------------------------------------------------------------------
+# 3c. 手写中文覆盖表（词条本身是真同源词，只是 ECDICT 挑错了义项）
+# ---------------------------------------------------------------------------
+# 这些条目的英法配对没问题，问题在「英语词的哪个义项」：gin 是酒不是陷阱，
+# clonage 是克隆不是「研制兼容产品」，relativement 是「相对地」不是「相关地」。
+# 语义闸门会把它们判为可疑；有了这张表就不必整条丢掉。
+AUTHORED_GLOSSES = {
+    # 同形巧合里仍然成立的借词 / 真同源词
+    "match": "比赛；对手", "bar": "酒吧", "kid": "小孩（口语）；小山羊",
+    "gin": "杜松子酒", "omission": "遗漏；疏忽", "clonage": "克隆",
+    "auditionner": "试镜；面试（演员）", "relativement": "相对地；比较而言",
+    "tendresse": "温柔；柔情",
+    # 语义闸门查出来、但英法配对成立的
+    "passer": "经过；通过；度过", "forme": "形状；形式", "entier": "整个的；全部的",
+    "société": "社会；公司", "cour": "庭院；宫廷；法院", "déposer": "放下；存放",
+    "élever": "抬高；抚养", "saluer": "问候；致敬", "balancer": "摇摆；平衡",
+    "retraite": "退休；撤退", "terme": "术语；期限", "marié": "已婚的",
+    "trembler": "发抖；颤抖", "autoriser": "准许；授权", "tendre": "温柔的；嫩的",
+    "rose": "粉红色的；玫瑰色的", "commandement": "命令；指挥",
+    "normalement": "通常；正常地", "abuser": "滥用；欺骗", "net": "清晰的；净的",
+    "employer": "雇用；使用", "populaire": "受欢迎的；大众的", "scénario": "剧本；情节",
+    "portefeuille": "钱包；投资组合", "pasteur": "牧师", "capacité": "能力；容量",
+    "peste": "瘟疫；鼠疫", "féminin": "女性的；阴性的", "disposition": "布置；安排；意向",
+    "dépôt": "存放；仓库；沉积物", "activer": "启动；激活",
+    "industrie": "工业；产业", "évoquer": "唤起；提及", "menu": "菜单",
+    "grille": "栅栏；格子表", "réplique": "回答；台词；复制品", "grandeur": "大小；伟大",
+    "accéder": "进入；到达；访问", "bonnet": "无边帽；软帽", "précédent": "先例；前一个",
+    "orphelin": "孤儿", "satané": "该死的", "qualifier": "限定；称之为",
+    "gorille": "大猩猩", "conjurer": "恳求；驱除", "franchise": "坦率；免赔额；特许经营",
+    "vicieux": "恶劣的；不正当的", "roulette": "小轮子；轮盘赌", "hypocrite": "伪君子",
+    "déplacement": "移动；出差", "attaché": "附加的；专员", "intrigue": "阴谋；情节",
+    "agitation": "骚动；激动", "chargeur": "充电器；弹匣", "reconstituer": "重建；还原",
+    "protecteur": "保护者；保护的", "démocrate": "民主人士；民主党人",
+    "fraternité": "博爱；手足情谊", "recul": "后退；退让", "timing": "时机；节奏把握",
+    "descendant": "后代；子孙", "vigile": "保安；警卫", "implanter": "植入；设立",
+    "médiocre": "平庸的；中等的", "indigène": "土著的；本地的", "tata": "姑妈；阿姨（儿语）",
+    "priser": "珍视；吸鼻烟", "surcharger": "使超载；超负荷", "chronique": "慢性的",
+    "singulier": "单数的；奇特的", "endosser": "背书；承担",
+    "élaborer": "制定；精心拟定", "verbe": "动词", "restriction": "限制；限定",
+    "chauffeur": "司机", "cabaret": "歌舞餐厅；卡巴莱", "décliner": "婉拒；下降；变格",
+    # 人工抽样复核时逮到的：义项挑得太偏（不是同形陷阱，是选错了那一条义）
+    "ordre": "命令；秩序；次序", "point": "点；地点；程度；观点", "servir": "服务；招待；用作",
+    "choix": "选择；挑选", "acte": "行为；证书；（戏剧）幕", "vacance": "空缺；空位",
+    "enchanté": "幸会；很高兴认识您", "majesté": "陛下；威严", "calcul": "计算；演算",
+    "profil": "侧面；轮廓；简介", "profiler": "描绘轮廓；使显现", "électricité": "电；电力",
+    "obsession": "痴迷；强迫观念", "visualiser": "想象；使可见", "tequila": "龙舌兰酒",
+    "édition": "版本；出版", "organisme": "机构；生物体",
+    "débiter": "记入借方；切割；说出", "optique": "光学的；视角", "dard": "毒刺；标枪",
+    "butte": "小丘；土墩", "débit": "流量；借方；零售", "terrier": "洞穴；梗犬",
+    "collet": "衣领；圈套", "suite": "接下来的部分；套房；续集",
+}
+
+# ---------------------------------------------------------------------------
+# 3d. 直接删掉的条目：配对本身就是垃圾，给不出可靠中文
+# ---------------------------------------------------------------------------
+DROP_COGNATES = {
+    "are": "英语 are 是 be 的变位形式，不是可对照的实词；法语 are（公亩）与它毫无关系",
+    "berline": "配的英语 berlin 是专有名词/生僻织物词，学习者用不上",
+    "tire": "法语 tire 是动词变位形式，配 en tire（轮胎/疲劳）纯属巧合",
+    "casse": "法语 casse 多为动词变位，配 en case 无语义交集",
+    "paye": "配 en payer（支付者）错位，paye 是「工资」",
+    "colon": "配 en colonel（上校）错位，colon 是「殖民者／结肠」",
+    "raie": "配 en ray（光线）错位，raie 是「条纹／鳐鱼」",
+    "rider": "法语 rider 是「使起皱」，配 en ride（骑）纯属同形",
+    "volée": "ECDICT 释义本身就是残句「(箭」，无法修复",
 }
 
 
@@ -1092,6 +1283,10 @@ FR_EN_PATTERNS = [
     ("ment", "ment", "-ment/-ment"),
     ("age", "age", "-age/-age"),
     ("ure", "ure", "-ure/-ure"),
+    # -esse 有两条对应：tendresse/tenderness、richesse/richness 走 -ness，
+    # adresse/address、hôtesse/hostess 走 -ess。-ness 必须排在前面，否则
+    # "tenderness" 会先被 -esse/-ess 吃掉（词干 tendern，看着也像对得上）。
+    ("esse", "ness", "-esse/-ness"),
     ("esse", "ess", "-esse/-ess"),
     ("ance", "ancy", "-ance/-ancy"),
     ("ie", "y", "-ie/-y"),
@@ -1328,6 +1523,462 @@ def english_candidates(kaikki_entries, cgram):
     return out[:6]
 
 
+# ===========================================================================
+# 7b. 释义层：权威教材 > 手写表 > ECDICT 英语跳板（并给跳板加语义闸门）
+# ===========================================================================
+# 老管线是「先给法语词配一个拼写像的英语词，再把那个英语词的 ECDICT 中文抄
+# 过来」。法语词和英语 look-alike 语义不重合时中文就是错的（rue→懊悔、
+# glace→玻璃、pièce→块），而且没有任何标注。
+#
+# 本仓库其实早就有权威的法→中层（教材词表），当初没接上。现在的优先级链：
+#
+#   1. 手写 faux-amis / 手写覆盖表（authored）
+#   2. data/french-vocabulary.js         课程整理 372 条
+#   3. data/french-vocabulary-glossary.js 教材总词汇表 1996 条
+#   4. ECDICT 英语跳板，且必须通过语义闸门
+#   5. 都拿不到 → 删条目（宁可少给，不要给错）
+#
+# 注意 data/french-vocabulary-core.js 不在权威层里：它自己的文件头就写着
+# 「中文经英文转写 ECDICT」，跟这里要修的是同一个根因（berge 被写成「银行」）。
+# 它只被用来提供**英文**释义 —— 那一列是 Wiktionary/kaikki 的法→英，可信，
+# 正好用来当语义闸门的裁判。
+
+PIPE_TABLE_RE_TMPL = r"%s\s*=\s*`\n([\s\S]*?)`"
+
+
+def load_pipe_table(path, const_name, columns):
+    """data/french-vocabulary.js 是竖线分隔的模板字符串，不是 JSON 数组。"""
+    with open(path, encoding="utf-8") as fh:
+        text = fh.read()
+    m = re.search(PIPE_TABLE_RE_TMPL % re.escape(const_name), text)
+    if not m:
+        raise SystemExit("cannot parse %s from %s" % (const_name, path))
+    rows = []
+    for line in m.group(1).split("\n"):
+        line = line.strip()
+        if not line or line.startswith("//"):
+            continue
+        parts = line.split("|")
+        if len(parts) < len(columns):
+            continue
+        rows.append(dict(zip(columns, parts)))
+    return rows
+
+
+ZH_SENSE_SPLIT_RE = re.compile(r"[;；,，、/]")
+ZH_PAREN_RE = re.compile(r"[（(][^）)]*[）)]")
+LATIN_RE = re.compile(r"[A-Za-z]")
+MARKUP_RE = re.compile(r"[<>\[\]《》]")
+
+
+def usable_zh(text, headword=""):
+    """能不能直接进 `chinese` 字段（跟 validate_french_extras.js 的规则对齐）。"""
+    t = (text or "").strip()
+    if not t or is_bad_gloss(t, headword):
+        return ""
+    if not CJK_RE.search(t) or LATIN_RE.search(t) or MARKUP_RE.search(t):
+        return ""
+    return t
+
+
+def zh_units(text):
+    return [u.strip() for u in ZH_SENSE_SPLIT_RE.split(ZH_PAREN_RE.sub("", text or "")) if u.strip()]
+
+
+ZH_STOP_CHARS = set("的地得了着之其一有为是不很多少不个")
+
+
+def zh_share_sense(a, b):
+    """两串中文释义是否至少共享一个义项。
+
+    只做字符串包含会把同义不同词判成不共享（时刻/瞬间、出租车/出租汽车、
+    公交车/公共汽车），而这一层的判定要用来删条目，宁可判松不判严：所以
+    再加一条「义项之间共享实义汉字」。「猫/聊天」「街道/懊悔」「身体/军团」
+    这类真的没交集的，仍然一个字都不共享。
+    """
+    ua, ub = zh_units(a), zh_units(b)
+    for x in ua:
+        for y in ub:
+            if x == y or x in y or y in x:
+                return True
+            if (set(x) & set(y)) - ZH_STOP_CHARS:
+                return True
+    return False
+
+
+def english_gloss_words(full_gloss):
+    """把 Wiktionary 的法→英释义串拆成可查 ECDICT 的单词，主义项排在最前。"""
+    out = []
+    for i, seg in enumerate(str(full_gloss or "").split(";")):
+        seg = re.sub(r"\([^)]*\)", "", seg)
+        for part in seg.split(","):
+            part = part.strip().lower()
+            part = re.sub(r"^(to|a|an|the)\s+", "", part)
+            part = re.sub(r"[^a-z\- ]", "", part).strip()
+            if not part or " " in part or len(part) < 2:
+                continue
+            if part not in [w for w, _ in out]:
+                out.append((part, i == 0))
+    return out
+
+
+class GlossContext(object):
+    """释义层要用到的全部词典，全部来自仓库内文件（不联网）。"""
+
+    def __init__(self, root):
+        self.auth_zh = {}
+        self.auth_src = {}
+        self.wiktionary_en = {}
+        gloss_path = os.path.join(root, "data", "french-vocabulary-glossary.js")
+        for w in load_js_array(gloss_path, "FRENCH_GLOSSARY_VOCABULARY_DATA"):
+            k = (w.get("french") or "").lower()
+            if not k:
+                continue
+            if k not in self.auth_zh:
+                self.auth_zh[k] = w.get("meaning") or w.get("chinese") or ""
+                self.auth_src[k] = "french-vocabulary-glossary.js（教材总词汇表）"
+            self.wiktionary_en.setdefault(k, w.get("english") or "")
+        curr_path = os.path.join(root, "data", "french-vocabulary.js")
+        cols = ["french", "display", "feminine", "meaning", "english", "notes",
+                "partOfSpeech", "gender", "level", "frequency", "freqRank"]
+        for w in load_pipe_table(curr_path, "FRENCH_VOCABULARY_DATA", cols):
+            k = (w.get("french") or "").lower()
+            if not k:
+                continue
+            self.auth_zh[k] = w.get("meaning") or ""       # 课程词表优先级更高
+            self.auth_src[k] = "french-vocabulary.js（课程整理词表）"
+            if w.get("english"):
+                self.wiktionary_en[k] = w["english"]
+        core_path = os.path.join(root, "data", "french-vocabulary-core.js")
+        for w in load_js_array(core_path, "FRENCH_CORE_VOCABULARY_DATA"):
+            k = (w.get("french") or "").lower()
+            if k:                                          # 只取英文列，中文列是跳板货
+                self.wiktionary_en.setdefault(k, w.get("english") or "")
+        self.en_vocab = {}
+        for w in load_js_array(os.path.join(root, "data", "english-vocabulary.js"),
+                               "ENGLISH_VOCABULARY_DATA"):
+            key = (w.get("english") or "").lower()
+            if key and key not in self.en_vocab:
+                self.en_vocab[key] = w
+
+    def pivot_zh(self, english, cgram):
+        """英语词经 ECDICT 得到的中文首义（对**英语词**是可信的）。"""
+        ev = self.en_vocab.get((english or "").lower())
+        return chinese_for(ev, cgram) if ev else ""
+
+    def english_senses(self, english, cgram):
+        """英语词在 ECDICT 里的**全部**义项。闸门要看全集，不能只看被挑中的那一个：
+        information 的首义被挑成「通知」，但它同样收了「信息」。"""
+        ev = self.en_vocab.get((english or "").lower())
+        return ecdict_sense_units(ev, cgram) if ev else []
+
+    def english_is_primary_gloss(self, french, english):
+        """英语词是不是法语词**主义项**里的英文释义。
+
+        Wiktionary 的法→英释义按义项排序，第一段就是主义项：rue 是
+        "street, road"（"rue" 那个植物义排在后面），chat 是 "cat (feline)"。
+        所以这一条能干净地把「法英同形但主义项不同」挑出来。
+        """
+        full = self.wiktionary_en.get((french or "").lower())
+        if not full:
+            return None
+        primary = str(full).split(";")[0].lower()
+        return re.search(r"\b%s\b" % re.escape((english or "").lower()), primary) is not None
+
+    def anchor_senses(self, french, cgram):
+        """法语词自己的义项锚：把它的 Wiktionary 法→英释义逐个过 ECDICT。"""
+        full = self.wiktionary_en.get((french or "").lower())
+        if not full:
+            return []
+        out = []
+        for word, _primary in english_gloss_words(full):
+            out.extend(self.english_senses(word, cgram))
+        return out
+
+
+CGRAM_FROM_POS = {"n.m": "NOM", "n.f": "NOM", "v.": "VER", "adj.": "ADJ", "adv.": "ADV"}
+
+
+def ecdict_sense_units(entry, cgram):
+    """ECDICT 的 meaning 串 -> 干净的中文义项列表（丢掉词性标记和词典标注）。"""
+    if not entry:
+        return []
+    meaning = entry.get("meaning") or entry.get("chinese") or ""
+    out = []
+    for _marker, text in split_ecdict(meaning):
+        text = re.sub(r"[<《][^>》]*[>》]", "", text or "")
+        text = re.sub(r"\[[^\]]*\]?", "", text)
+        for part in re.split(r"[;,；，、]", text):
+            part = BRACKET_RE.sub("", part).strip(" .;,:：")
+            if part and CJK_RE.search(part) and not re.search(r"[a-zA-Z]", part):
+                out.append(part)
+    return out
+
+
+def semantic_gate(french, english, cgram, trusted_zh, ctx):
+    """英语 look-alike 的义，跟法语词自己的义，是否至少共享一个义项。
+
+    返回 'pass' / 'fail' / 'unknown'。'unknown' = 手上没有能裁决的材料，
+    既不算证据也不算反证。
+
+    判定结果会用来删条目，所以取「两路都不通才算 fail」的保守口径：
+      * 英文侧：英语词是不是法语词主义项的英文释义（moment/moment、
+        hôtel/hotel、taxi/taxi 靠这一条留住）；
+      * 中文侧：有权威中文就拿它跟英语词的**全部** ECDICT 义项比
+        （information 的首义被挑成「通知」，但它同样收了「信息」）；
+        没有权威中文，就用法语词自己的英文释义过一遍 ECDICT 当锚。
+    """
+    if ctx.english_is_primary_gloss(french, english):
+        return "pass"
+    en_senses = ctx.english_senses(english, cgram)
+    if not en_senses:
+        return "unknown"
+    if trusted_zh:
+        return "pass" if zh_share_sense(trusted_zh, "；".join(en_senses)) else "fail"
+    anchor = ctx.anchor_senses(french, cgram)
+    if not anchor:
+        return "unknown"
+    pivot = ctx.pivot_zh(english, cgram)
+    if not pivot:
+        return "unknown"
+    return "pass" if zh_share_sense(pivot, "；".join(anchor)) else "fail"
+
+
+def resolve_chinese(row, ctx):
+    """按优先级链定出 (中文, chineseSource, 闸门结论)；中文为空表示这条要删。"""
+    french = row["french"]
+    key = french.lower()
+    cgram = CGRAM_FROM_POS.get(row.get("partOfSpeech") or "", "")
+
+    trusted = usable_zh(AUTHORED_GLOSSES.get(key, ""), french)
+    source = "authored（手写覆盖）"
+    if not trusted:
+        trusted = usable_zh(ctx.auth_zh.get(key, ""), french)
+        source = ctx.auth_src.get(key, "")
+    gate = semantic_gate(french, row["english"], cgram, trusted, ctx)
+    if trusted:
+        return trusted, source, gate
+
+    if gate == "fail":
+        return "", "", gate       # 跳板中文可疑，又没有权威中文兜底 -> 删
+
+    pivot = usable_zh(ctx.pivot_zh(row["english"], cgram), french)
+    if pivot:
+        suffix = "（语义闸门通过）" if gate == "pass" else "（闸门无法裁决）"
+        return pivot, "english-vocabulary.js (ECDICT) via EN pivot" + suffix, gate
+    return "", "", gate
+
+
+def refine_pattern(row):
+    """后缀组自动校验：法语词尾 + 英语词尾 + 去重音词干编辑距离 <= 2。
+
+    croisière/cruiser、communier/communicate、pochette/pocket 这种「后缀对得上、
+    词根其实是另一个词」的错配，先由手写 faux-amis 表接走；这里兜住剩下的。
+    不满足的踢回 Other（patternType=null）并写明原因。
+    """
+    pattern = classify(row["french"], row["english"], FR_EN_PATTERNS)
+    if not pattern or pattern in (IDENTICAL_LABEL, FAUX_AMI_LABEL):
+        return pattern, None
+    fr, en = row["french"].lower(), row["english"].lower()
+    for sa, sb, label in FR_EN_PATTERNS:
+        if label != pattern:
+            continue
+        if not fr.endswith(sa):
+            return None, "后缀组校验未通过：法语词不以 -%s 结尾（待复核）" % sa
+        if sb and not en.endswith(sb):
+            return None, "后缀组校验未通过：英语词不以 -%s 结尾（待复核）" % sb
+        stem_a = strip_accents(fr[:-len(sa)] if sa else fr)
+        stem_b = strip_accents(en[:-len(sb)] if sb else en)
+        d = edit_distance(stem_a, stem_b)
+        if d > 2:
+            return None, "后缀组校验未通过：词干 %s / %s 编辑距离 %d > 2（待复核）" % (stem_a, stem_b, d)
+        return pattern, None
+    return pattern, None
+
+
+def apply_gloss_layer(rows, ctx, stats):
+    """就地重算每一行的中文 / 来源 / 后缀组标签，并删掉给不出可靠中文的行。
+
+    只依赖 (french, english, partOfSpeech) 和仓库内词典，不读自己写过的字段，
+    所以重复跑结果一样 —— 「整表重建」和「只重跑释义层」两条路径同解。
+    """
+    for key in sorted(rows):
+        row = rows[key]
+        if row.get("falseFriend"):
+            continue                       # 手写 faux-amis 行整行都是手写的
+        if row["french"].lower() in DROP_COGNATES:
+            stats["dropped_bad_pairing"] += 1
+            del rows[key]
+            continue
+        zh, src, gate = resolve_chinese(row, ctx)
+        if not zh:
+            stats["dropped_no_trusted_chinese"] += 1
+            del rows[key]
+            continue
+        if zh != row["chinese"]:
+            stats["chinese_rewritten"] += 1
+        row["chinese"] = zh
+        row["chineseSource"] = src
+        row["semanticGate"] = gate
+        stats["source_" + src.split("（")[0].strip()] += 1
+        pattern, note = refine_pattern(row)
+        if pattern != row.get("patternType"):
+            stats["pattern_refined"] += 1
+        row["patternType"] = pattern
+        if pattern is None:
+            row["patternNote"] = note or row.get("patternNote") or "无规则后缀对应（仅词形接近）"
+        else:
+            row.pop("patternNote", None)
+        # 同形词档的语义闸门：法语词的真实义与英语同形词的义必须共享义项。
+        # 闸门没过、连权威中文都没有的行，在 resolve_chinese 里已经被判空删掉了；
+        # 能走到这里的都拿着教材/手写中文，释义本身可信，留着（真正会骗人的
+        # siège / canon / plateau / lot 这类已经被手写 faux-amis 表接走）。
+        if pattern == IDENTICAL_LABEL and gate == "fail":
+            stats["identical_gate_fail_kept"] += 1
+
+    # 释义换掉之后可能出现新的「重音变体 + 同一个释义」重卡
+    dedup_by_shape(rows, stats, "dropped_shape_duplicate")
+    return rows
+
+
+def dedup_by_shape(rows, stats, counter_key):
+    """"suicide" 和 "suicidé" 是两个词，但释义也一样时就是同一张卡片两遍。"""
+    by_shape = {}
+    for key in sorted(rows, key=lambda k: (len(k), rows[k]["rank"], k)):
+        r = rows[key]
+        shape = (strip_accents(r["french"].lower()), r["english"], r["chinese"])
+        if shape in by_shape and not r.get("falseFriend"):
+            stats[counter_key] += 1
+            del rows[key]
+            continue
+        by_shape[shape] = key
+    return rows
+
+
+def add_faux_amis(rows, lex, kaikki, max_rank):
+    """把手写 faux-amis 表写进 rows（同名的挖掘行一律被顶掉）。"""
+    for french, english, zh, lookalike, warning in (
+            FAUX_AMIS + FAUX_AMIS_2026 + [f[:5] for f in FAUX_AMIS_IT]):
+        head = french.split()[0]
+        rank = lex.rank.get(head) or lex.rank.get(french) or (max_rank + 1)
+        score, _ = similarity(french, lookalike, FR_EN_PATTERNS)
+        forced = FAUX_AMI_POS.get(french)
+        cgram = (forced[0] if forced else None) or FAUX_AMI_CGRAM.get(french) or lex.cgram.get(head)
+        pos = POS_MAP.get(cgram, "expr.")
+        gender = (forced[1] if forced else None) or (lex.genre.get(head) if cgram == "NOM" else None)
+        if cgram == "NOM" and not gender:      # Wiktionary fallback, as above
+            for e in (kaikki or {}).get(head, []):
+                if e["p"] == "noun" and ("masculine" in e["t"] or "feminine" in e["t"]):
+                    gender = "m" if "masculine" in e["t"] else "f"
+                    break
+        if cgram == "NOM":
+            if not gender:
+                raise SystemExit("faux-ami noun without gender: %s" % french)
+            pos = "n.m" if gender == "m" else "n.f"
+        row = {
+            "french": french,
+            "english": english,
+            "chinese": zh,
+            "patternType": FAUX_AMI_LABEL,
+            "similarityScore": score,
+            "difficulty": "hard",
+            "rank": rank,
+            "partOfSpeech": pos,
+            "similarityBasis": "lookalike",
+            "falseFriend": True,
+            "lookalike": lookalike,
+            "warning": warning,
+            "source": "authored faux-amis table",
+            "chineseSource": "authored（手写 faux-amis 表）",
+        }
+        if gender:
+            row["gender"] = gender
+        old = rows.get(french)
+        if old and "italian" in old:           # 保住已有的意语桥接
+            for k in ("italian", "italianSimilarity", "italianPatternType"):
+                if k in old:
+                    row[k] = old[k]
+        rows[french] = row
+    return rows
+
+
+def write_cognates(rows, out_path, stats):
+    data = sorted(rows.values(), key=lambda r: (-r["similarityScore"], r["rank"], r["french"]))
+    faux = sum(1 for r in data if r.get("falseFriend"))
+    header = (
+        "// French cognate data — French <-> English (with an Italian bridge) look-alikes.\n"
+        "// Mirrors data/cognates.js exactly, with `french` replacing `italian`:\n"
+        "//   {french, english, chinese, patternType, similarityScore, difficulty, rank}\n"
+        "// Additive fields: partOfSpeech, gender, falseFriend, lookalike, warning,\n"
+        "//   italian / italianSimilarity / italianPatternType, similarityBasis,\n"
+        "//   patternNote (reason when patternType is null), source, chineseSource,\n"
+        "//   semanticGate (pass|fail|unknown — 见下).\n"
+        "// similarityBasis='english' -> similarityScore compares french vs english;\n"
+        "// similarityBasis='lookalike' (faux amis) -> it compares french vs the trap word.\n"
+        "//\n"
+        "// 中文释义的优先级链（2026 修：不再无条件走英语跳板）：\n"
+        "//   1. 手写 faux-amis 表 / 手写覆盖表 ....... chineseSource 以 authored 开头\n"
+        "//   2. data/french-vocabulary.js（课程整理词表）\n"
+        "//   3. data/french-vocabulary-glossary.js（教材总词汇表）\n"
+        "//   4. ECDICT 英语跳板，且必须通过语义闸门（法语词的真实义与英语 look-alike\n"
+        "//      的 ECDICT 义至少共享一个义项）；闸门不过又没有权威中文兜底的直接删\n"
+        "//   5. 都拿不到可靠中文的条目直接删掉（宁可少给，不要给错）\n"
+        "// Sources: Lexique 3.83 (CC BY-SA 4.0), Wiktionary/Wiktextract (CC BY-SA 3.0),\n"
+        "//   ECDICT-derived data/english-vocabulary.js, hand-authored faux-amis table,\n"
+        "//   in-repo French textbook glossaries (authoritative FR->ZH layer).\n"
+        "// Rebuild: python3 scripts/build_french_extras.py            (整表重建，需要联网缓存)\n"
+        "//          python3 scripts/build_french_extras.py --only cognate-glosses  (只重跑释义层)\n"
+        "// Total entries: %d (faux amis: %d)\n" % (len(data), faux)
+    )
+    body = "const FRENCH_COGNATE_DATA = %s;\n\n" % json.dumps(data, ensure_ascii=False, indent=2)
+    tail = ("if (typeof window !== 'undefined') { window.FRENCH_COGNATE_DATA = FRENCH_COGNATE_DATA; }\n"
+            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COGNATE_DATA; }\n")
+    with open(out_path, "w", encoding="utf-8") as fh:
+        fh.write(header + "\n" + body + tail)
+    log("cognates: %d entries (%d faux amis)" % (len(data), faux))
+    log("  gloss layer: %s" % dict(sorted(stats.items())))
+    npat = sum(1 for r in data if r["patternType"])
+    log("  classified patternType: %d / %d  (italian bridge: %d)"
+        % (npat, len(data), sum(1 for r in data if r.get("italian"))))
+    return data
+
+
+class _RowLexique(object):
+    """只重跑释义层时没有 Lexique 缓存；已有数据行里就带着 rank/词性/阴阳性。"""
+
+    def __init__(self, rows):
+        self.rank = {}
+        self.cgram = {}
+        self.genre = {}
+        for key, r in rows.items():
+            self.rank[key] = r["rank"]
+            cg = CGRAM_FROM_POS.get(r.get("partOfSpeech") or "")
+            if cg:
+                self.cgram[key] = cg
+            if r.get("gender"):
+                self.genre[key] = r["gender"]
+
+
+def refresh_cognate_glosses(out_path):
+    """只重跑释义层：读现成的 data/french-cognates.js，重算中文/来源/后缀组。
+
+    不需要 620MB 的下载缓存。释义层只依赖 (french, english, partOfSpeech) 和
+    仓库内词典，所以重复跑字节一致，跟整表重建走的也是同一段代码。
+    """
+    existing = load_js_array(out_path, "FRENCH_COGNATE_DATA")
+    rows = {}
+    for r in existing:
+        rows[r["french"]] = dict(r)
+    lex = _RowLexique(rows)
+    max_rank = max(r["rank"] for r in rows.values())
+    stats = Counter()
+    add_faux_amis(rows, lex, {}, max_rank)
+    dedup_by_shape(rows, stats, "dropped_accent_variant")
+    ctx = GlossContext(ROOT)
+    apply_gloss_layer(rows, ctx, stats)
+    return write_cognates(rows, out_path, stats)
+
+
 def build_cognates(cache, lex, out_path, max_rank=12000, min_score=50):
     log("loading glossaries ...")
     kaikki = load_kaikki(os.path.join(cache, "fr_kaikki_slim.jsonl"))
@@ -1446,82 +2097,20 @@ def build_cognates(cache, lex, out_path, max_rank=12000, min_score=50):
         rows[lemma] = row
 
     # ---- faux amis ---------------------------------------------------------
-    faux_added = 0
-    for french, english, zh, lookalike, warning in FAUX_AMIS + [f[:5] for f in FAUX_AMIS_IT]:
-        head = french.split()[0]
-        rank = lex.rank.get(head) or lex.rank.get(french) or (max_rank + 1)
-        score, _ = similarity(french, lookalike, FR_EN_PATTERNS)
-        cgram = FAUX_AMI_CGRAM.get(french) or lex.cgram.get(head)
-        pos = POS_MAP.get(cgram, "expr.")
-        gender = lex.genre.get(head) if cgram == "NOM" else None
-        if cgram == "NOM" and not gender:      # Wiktionary fallback, as above
-            for e in kaikki.get(head, []):
-                if e["p"] == "noun" and ("masculine" in e["t"] or "feminine" in e["t"]):
-                    gender = "m" if "masculine" in e["t"] else "f"
-                    break
-        if cgram == "NOM":
-            if not gender:
-                raise SystemExit("faux-ami noun without gender: %s" % french)
-            pos = "n.m" if gender == "m" else "n.f"
-        row = {
-            "french": french,
-            "english": english,
-            "chinese": zh,
-            "patternType": FAUX_AMI_LABEL,
-            "similarityScore": score,
-            "difficulty": "hard",
-            "rank": rank,
-            "partOfSpeech": pos,
-            "similarityBasis": "lookalike",
-            "falseFriend": True,
-            "lookalike": lookalike,
-            "warning": warning,
-            "source": "authored faux-amis table",
-            "chineseSource": "authored",
-        }
-        if gender:
-            row["gender"] = gender
-        rows[french] = row      # faux-ami entry always wins over the mined one
+    add_faux_amis(rows, lex, kaikki, max_rank)
 
     # "suicide" and "suicidé" are different words, but when they also share the
     # same English and Chinese gloss they are the same flash-card twice.
-    by_shape = {}
-    for key in sorted(rows, key=lambda k: (len(k), rows[k]["rank"])):
-        r = rows[key]
-        shape = (strip_accents(r["french"].lower()), r["english"], r["chinese"])
-        if shape in by_shape and not r.get("falseFriend"):
-            rejected["accent_variant_duplicate"] += 1
-            del rows[key]
-            continue
-        by_shape[shape] = key
+    stats = Counter()
+    dedup_by_shape(rows, stats, "dropped_accent_variant")
 
-    faux_added = sum(1 for r in rows.values() if r.get("falseFriend"))
-    data = sorted(rows.values(), key=lambda r: (-r["similarityScore"], r["rank"]))
-    header = (
-        "// French cognate data — French <-> English (with an Italian bridge) look-alikes.\n"
-        "// Mirrors data/cognates.js exactly, with `french` replacing `italian`:\n"
-        "//   {french, english, chinese, patternType, similarityScore, difficulty, rank}\n"
-        "// Additive fields: partOfSpeech, gender, falseFriend, lookalike, warning,\n"
-        "//   italian / italianSimilarity / italianPatternType, similarityBasis,\n"
-        "//   patternNote (reason when patternType is null), source, chineseSource.\n"
-        "// similarityBasis='english' -> similarityScore compares french vs english;\n"
-        "// similarityBasis='lookalike' (faux amis) -> it compares french vs the trap word.\n"
-        "// Sources: Lexique 3.83 (CC BY-SA 4.0), Wiktionary/Wiktextract (CC BY-SA 3.0),\n"
-        "//   ECDICT-derived data/english-vocabulary.js, hand-authored faux-amis table.\n"
-        "// Rebuild: python3 scripts/build_french_extras.py\n"
-        "// Total entries: %d (faux amis: %d)\n" % (len(data), faux_added)
-    )
-    body = "const FRENCH_COGNATE_DATA = %s;\n\n" % json.dumps(data, ensure_ascii=False, indent=2)
-    tail = ("if (typeof window !== 'undefined') { window.FRENCH_COGNATE_DATA = FRENCH_COGNATE_DATA; }\n"
-            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COGNATE_DATA; }\n")
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write(header + "\n" + body + tail)
-    log("cognates: %d entries (%d faux amis)" % (len(data), faux_added))
+    # ---- 释义层：权威教材 > 手写表 > 带语义闸门的 ECDICT 跳板 ----------------
+    # 跟 --only cognate-glosses 走的是同一段代码，且只依赖仓库内词典，
+    # 所以两条路径的输出一致。
+    apply_gloss_layer(rows, GlossContext(ROOT), stats)
+
     log("  rejected: %s" % dict(rejected))
-    npat = sum(1 for r in data if r["patternType"])
-    log("  classified patternType: %d / %d  (italian bridge: %d)"
-        % (npat, len(data), sum(1 for r in data if r.get("italian"))))
-    return data
+    return write_cognates(rows, out_path, stats)
 
 
 # ===========================================================================
@@ -1531,8 +2120,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cache", default=DEFAULT_CACHE)
     ap.add_argument("--offline", action="store_true")
-    ap.add_argument("--only", choices=["collocations", "cognates"])
+    ap.add_argument("--only", choices=["collocations", "cognates", "cognate-glosses"])
     args = ap.parse_args()
+
+    # 只重跑释义层：不碰 Lexique / kaikki 缓存，材料全在仓库里。
+    if args.only == "cognate-glosses":
+        refresh_cognate_glosses(os.path.join(ROOT, "data", "french-cognates.js"))
+        return
 
     cache = ensure_sources(args.cache, args.offline)
     if not HAVE_ZHCONV:

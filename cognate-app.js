@@ -190,6 +190,25 @@
     return container;
   }
 
+  /**
+   * 「沉浸式」视图标记 —— 只在对比卡片 / 拼写题这两种「页面最底下就是主操作按钮」
+   * 的视图上打开。390×844 逐条实测：这两种视图里 .mobile-floating-back 会和主按钮
+   * 矩形相叠（对比模式 DE 88/2347、FR 64/4272、IT 9/1587 条，几乎全是多一条假朋友
+   * 提示条、卡片更高的词条；拼写题的「下一题 →」是通栏按钮，右半截几乎每题都被压住），
+   * 其中一部分连按钮中心都被悬浮按钮吃掉，点下去触发 goBack() 直接退出练习。
+   *
+   * 打开时由 CSS 把悬浮返回按钮隐掉，改用屏内顶部的 #cognateBackBtn 返回（这两种
+   * 视图内容都不长，顶部返回链接在首屏之内）。列表类视图（浏览 / 规律列表 / 模式
+   * 选择）要滚很久，悬浮按钮照常保留。
+   *
+   * 标记打在容器自身而不是 body 上：CSS 侧还要求同源词屏处于 active，
+   * 所以哪怕跳转时这个类没被清掉，也不会漏到别的屏幕上。
+   */
+  function setImmersive(on) {
+    var container = getContainer();
+    if (container) container.classList.toggle('cognate-immersive', !!on);
+  }
+
   // === 词条字段读取（全部经 LANG_CONFIG，不出现具体语言字段名） ===
 
   function headwordOf(word) {
@@ -361,6 +380,32 @@
       .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   }
 
+  /** 比对前再把词间空白压成一个空格（"die  Session" 也认） */
+  function normalizeAnswer(str) {
+    return normalizeForCompare(str).replace(/\s+/g, ' ');
+  }
+
+  /**
+   * 答案比对：带冠词的 display 与裸词形两种写法都算对。
+   *
+   * 德语 2,347 条同源词里 1,724 条的 display 带定冠词（"die Session"），而答错 / 跳过时
+   * 反馈区照 display 印「正确答案」。只比 headwordOf() 的裸词形的话，把 app 自己印出来
+   * 的答案原样抄回去照样判错；反过来带冠词的名词只写裸词也不该判错 —— 数据里并没有
+   * 「必须写冠词」这条要求，判错等于系统性训练用户不写冠词。
+   *
+   * 只放行这两种写法本身：两边都是全等比对，不做前缀 / 包含式的宽松匹配，
+   * 「答案里多打了别的东西」照旧算错。
+   * 意 / 法数据没有 display 字段（display 回落成裸词形），对它们这里是恒等变换。
+   */
+  function isAnswerCorrect(word, userAnswer) {
+    var typed = normalizeAnswer(userAnswer);
+    if (!typed) return false;
+    var head = normalizeAnswer(headwordOf(word));
+    if (head && typed === head) return true;
+    var display = normalizeAnswer(word && word.display);
+    return !!display && typed === display;
+  }
+
   /**
    * HTML 转义
    */
@@ -428,6 +473,7 @@
       var word = CognateState.words[CognateState.currentIndex];
       var container = getContainer();
       if (!container) return;
+      setImmersive(true);
 
       container.innerHTML =
         '<div class="quiz-card">' +
@@ -487,7 +533,7 @@
 
       CognateState.totalCount++;
 
-      var isCorrect = normalizeForCompare(userAnswer) === normalizeForCompare(headwordOf(word));
+      var isCorrect = isAnswerCorrect(word, userAnswer);
 
       if (isCorrect) {
         CognateState.correctCount++;
@@ -531,6 +577,7 @@
     showComplete() {
       var container = getContainer();
       if (!container) return;
+      setImmersive(false);
       var accuracy = this.getAccuracy();
       // 走完一整组规律 == 掌握了这条规律。旧版有 markPatternComplete() 但没有任何
       // 调用点，所以「已完成」标记永远不会亮，进度存储也就成了死代码。
@@ -591,6 +638,7 @@
       var container = getContainer();
       if (!container) return;
       if (!word) return this.showComplete();
+      setImmersive(true);
       var diff = diffOf(word);
       var total = CognateState.words.length;
       var pct = total ? Math.round(((CognateState.currentIndex + 1) / total) * 100) : 0;
@@ -642,6 +690,7 @@
     showComplete() {
       var container = getContainer();
       if (!container) return;
+      setImmersive(false);
       container.innerHTML =
         datasetHeader('对比模式') +
         '<div class="cognate-complete practice-card">' +
@@ -688,6 +737,7 @@
       var groups = this.getPatternGroups(CognateState.words);
       var container = getContainer();
       if (!container) return;
+      setImmersive(false);
 
       var entries = Object.entries(groups).sort(function(a, b) { return b[1].length - a[1].length; });
       var groupCards = entries
@@ -734,6 +784,7 @@
       var container = getContainer();
       if (!container) return;
 
+      setImmersive(false);
       var examples = words.slice(0, 5);
       var exampleHtml = examples.map(function(w) {
         var diff = diffOf(w);
@@ -802,6 +853,7 @@
       var container = getContainer();
       if (!container) return;
 
+      setImmersive(false);
       var matched = this.visibleWords();
       var shown = matched.slice(0, CognateState.browseLimit);
       var hasFalseFriends = countFalseFriends(CognateState.words) > 0;
@@ -881,6 +933,7 @@
 
   function checkDataAndRender(container) {
     if (currentData().length === 0) {
+      setImmersive(false);
       container.innerHTML = '<div class="error-message">' + escapeHtml(cfg().langCn) +
         '同源词数据尚未加载完成，请稍候或刷新页面。</div>';
       return false;
@@ -942,6 +995,7 @@
       if (currentData().length === 0 && window.LangLoader && typeof window.LangLoader.ensure === 'function') {
         var container = getContainer();
         if (container) {
+          setImmersive(false);
           container.innerHTML = '<div class="panel"><div class="panel-title">同源词 · ' +
             escapeHtml(cfg().label) + '</div><div class="card-desc">正在加载' +
             escapeHtml(cfg().langCn) + '词库…</div></div>';
@@ -962,6 +1016,7 @@
       if (!container) return;
       revealContainer();
       syncScreenChrome();
+      setImmersive(false);
 
       var data = currentData();
       var ff = countFalseFriends(data);
