@@ -599,6 +599,19 @@ FAUX_AMIS_2026 = [
      "≠ 英语 reconnaissance（侦察）；法语首义是「感激／承认」"),
     ("lot", "batch; prize", "一批；奖品", "lot", "≠ 英语 a lot（许多）= beaucoup"),
     ("instance", "authority; court level", "机构；审级", "instance", "≠ 英语 instance（例子）= exemple"),
+    # ---- E. 英语同形词把中文带偏的（第二轮抽查）-----------------------------
+    # 这几条的中文原来直接抄英语同形词的 ECDICT 首义，抄出来的是另一个词的义：
+    # tempe→temple→「庙」、pôle→pole→「棒」、môle→mole→「痣」。
+    ("tempe", "temple (side of the head)", "太阳穴；鬓角", "temple",
+     "英语 temple 的常用义是「庙宇」；法语 tempe 只有「太阳穴」义，庙宇是 temple"),
+    ("pôle", "pole (of the earth, of a magnet)", "极；极地；中心", "pole",
+     "≠ 英语 pole（杆；棒）= perche / poteau"),
+    ("môle", "breakwater, mole (pier)", "防波堤；码头", "mole",
+     "≠ 英语 mole（痣；鼹鼠）= grain de beauté / taupe"),
+    ("party", "party (social gathering)", "聚会；派对", "party",
+     "法语 party 只有「聚会」义；「政党」是 parti"),
+    ("ban", "proclamation; banns; ostracism", "公告；结婚公告；放逐", "ban",
+     "≠ 英语 ban（禁令）= interdiction；法语 ban 是「公告」，mettre au ban 才是「排斥」"),
 ]
 
 # Lexique's dominant reading is not always the one the faux-ami trap lives in
@@ -632,6 +645,8 @@ FAUX_AMI_POS = {
     "ride": ("NOM", "f"), "fourniture": ("NOM", "f"), "chaire": ("NOM", "f"),
     "siège": ("NOM", "m"), "canon": ("NOM", "m"), "plateau": ("NOM", "m"),
     "reconnaissance": ("NOM", "f"), "lot": ("NOM", "m"), "instance": ("NOM", "f"),
+    "tempe": ("NOM", "f"), "pôle": ("NOM", "m"), "môle": ("NOM", "m"),
+    "party": ("NOM", "f"), "ban": ("NOM", "m"),
 }
 
 # ---------------------------------------------------------------------------
@@ -684,6 +699,115 @@ AUTHORED_GLOSSES = {
     "débiter": "记入借方；切割；说出", "optique": "光学的；视角", "dard": "毒刺；标枪",
     "butte": "小丘；土墩", "débit": "流量；借方；零售", "terrier": "洞穴；梗犬",
     "collet": "衣领；圈套", "suite": "接下来的部分；套房；续集",
+
+    # -----------------------------------------------------------------------
+    # 第二轮：接入 core 之后逐条抽查补的三组
+    # -----------------------------------------------------------------------
+    # (a) 复核点名的高频错义：中文抄的是英语同形词的义，不是法语词的义
+    "avocat": "律师；辩护人；鳄梨", "presse": "新闻界；报刊；压榨机",
+    "staff": "全体职员；工作班子", "impressionner": "使有印象；使感动",
+    "ambulance": "救护车",
+
+    # (b) core 覆盖不到、只能靠英语跳板的行，逐条判读后改对
+    "caravane": "大篷车；旅行拖车；商队", "boxer": "拳击",
+    "liqueur": "利口酒；甜烧酒", "équation": "方程；方程式",
+    "rétro": "复古的；怀旧的", "parachuter": "空投；伞降",
+    "synchronisation": "同步", "originaire": "原籍的；来自某地的",
+    "sire": "陛下", "grappin": "抓钩；四爪锚", "finale": "决赛；终曲",
+    "prescription": "处方；规定；时效", "invalide": "残疾的；无效的",
+    "inceste": "乱伦", "démolition": "拆除；拆毁",
+    "favoriser": "偏袒；有利于；促进", "forge": "锻造车间；铁匠铺",
+    "implant": "植入物；植入体", "invoquer": "援引；祈求",
+    "prêcher": "布道；说教", "harcèlement": "骚扰", "vanité": "虚荣；自负",
+    "intrigant": "搞阴谋的；诡计多端的", "infidélité": "不忠；背叛",
+    "progressivement": "逐渐地；渐进地", "cohérent": "连贯的；一致的",
+    "funky": "放克风格的；时髦的", "barré": "划掉的；封锁的",
+    "indéfiniment": "无限期地", "recompter": "重新数；重新清点",
+    "hit": "热门歌曲；轰动一时的作品", "pipeau": "牧笛；小笛", "gamma": "伽马",
+    "sketch": "小品；短剧", "allocation": "津贴；补助金", "joker": "百搭牌；王牌",
+    "loser": "失败者", "ring": "拳击台", "gentilhomme": "贵族；绅士",
+    "compatible": "兼容的；相容的", "immaculé": "洁白无瑕的；一尘不染的",
+    "méticuleux": "一丝不苟的", "lobe": "叶；裂片；耳垂",
+    "séparément": "分别地；单独地", "promo": "促销；宣传", "astronaute": "宇航员",
+    "projecteur": "投影仪；探照灯", "canot": "小艇；救生艇",
+    "commune": "市镇；公社", "clergé": "神职人员", "illégalement": "非法地",
+    "patio": "内院；露台", "indulgence": "宽容；纵容",
+    "délicatesse": "细腻；体贴；精致", "cassette": "盒式磁带；小盒",
+    "parer": "装饰；招架", "intervention": "介入；干预；手术",
+    "réhabilitation": "康复；平反", "grotesque": "荒诞的；滑稽可笑的",
+    "sobre": "节制的；朴素的", "dégénéré": "堕落的；退化的",
+    "cutter": "美工刀；裁纸刀", "présidence": "主席职务；总统任期",
+
+    # (c) core 也会犯「英语同形词」的错（joint→seal→海豹、lime→file→档案），
+    #     以及 ECDICT 义项挑偏、说明句太长的，一并按法语词本身的义重写
+    "plaque": "板；牌匾；牙菌斑", "vase": "花瓶", "joint": "接缝；垫圈",
+    "balance": "天平；秤", "sinistre": "阴森的；不祥的", "étiquette": "标签；礼节",
+    "obstruction": "阻塞；妨碍", "lime": "锉刀；酸橙", "stratège": "战略家",
+    "malice": "恶意；狡黠", "remémorer": "回忆起；使想起", "réclame": "广告；宣传",
+    "hangar": "库棚；机库", "rayure": "条纹；划痕", "relaxer": "放松；释放",
+    "décréter": "颁布；下令", "concorder": "一致；相符", "délibérer": "商议；审议",
+    "ruse": "诡计；花招", "trait": "线条；特征；笔画", "pose": "姿势；安放",
+    "spectre": "幽灵；光谱", "clarté": "明亮；清晰", "gel": "结冰；凝胶",
+    "autorisé": "获准的；权威的", "bloc": "块；集团；街区", "sauce": "调味汁；酱汁",
+    "affecter": "影响；分配；假装", "dispenser": "免除；分发",
+    "braver": "不畏；顶住；蔑视", "mutation": "突变；变异；调动",
+    "muse": "缪斯；灵感女神", "transaction": "交易；和解", "arc": "弓；弧；拱",
+    "bit": "比特；位", "master": "硕士学位；硕士课程", "palme": "棕榈叶；蹼泳脚蹼",
+    "bey": "贝伊（奥斯曼帝国的地方长官）", "matrice": "矩阵；母体；模具",
+    "finition": "修整；精加工", "probation": "缓刑；见习期",
+    "zoomer": "变焦；推拉镜头", "shoot": "射门", "blues": "布鲁斯音乐；忧郁",
+    "tank": "坦克；箱柜", "relayer": "接替；转播", "émission": "节目；播放；发射",
+    "express": "特快的；快速的", "icône": "图标；圣像",
+    "convenance": "合适；方便；礼节", "conditionner": "包装；制约",
+    "ardu": "艰巨的；费力的", "phénoménal": "非凡的；惊人的",
+    "pâlir": "变苍白；褪色", "représentatif": "有代表性的；典型的",
+    "spécialiser": "使专门化；专攻", "itinéraire": "路线；行程",
+    "alléger": "减轻；使轻便", "album": "相册；唱片专辑",
+    "agressif": "好斗的；侵略性的", "jet": "喷射；投掷",
+    "engagement": "承诺；约定；投入", "torture": "酷刑；折磨",
+    "tolérer": "容忍；宽容", "griller": "烤；烘烤",
+    "pénétrer": "进入；穿透；渗透", "équipage": "全体船员；机组人员",
+    "liaison": "联系；联络；私情", "réserve": "储备；保留；保护区",
+    "associé": "合伙人；同伴", "pressé": "匆忙的；紧迫的", "renoncer": "放弃；抛弃",
+    "unité": "单位；单元；统一", "attacher": "系；拴；附上",
+    "superbe": "华丽的；极好的", "survivre": "幸存；生还", "départ": "出发；启程",
+    "super": "极好的；超级的", "sûr": "确信的；可靠的；安全的",
+    "casino": "赌场", "conteneur": "集装箱", "container": "集装箱",
+    "légion": "军团；大批", "collage": "拼贴画", "plaquer": "镀；贴面；抛弃",
+    "conférer": "授予；商议",
+
+    # (d) 闸门无法裁决的跳板行：这些词 core 里没有（或没过 core 闸门），英语侧
+    #     又拿不到能裁决的义项集合，闸门只能给 unknown。原来它们照样挂着跳板
+    #     中文，界面上跟裁决通过的行长得一模一样，看不出「这条没人核过」。
+    #     逐条人工判读后写进手写层：判对的按法语词本身的义补全，ECDICT 括号
+    #     注释太啰嗦的削掉，判错的（ban → 「禁令」是英语义）改走 faux-amis 表。
+    "rivière": "河流；河", "flûte": "长笛", "euro": "欧元",
+    "carnaval": "狂欢节；嘉年华", "constitution": "宪法；构成；体质",
+    "secte": "教派；宗派", "barbelé": "带倒刺的；有刺的",
+    "palestinien": "巴勒斯坦的；巴勒斯坦人的", "prototype": "原型；样机",
+    "bourbon": "波旁威士忌；波旁王朝", "réconciliation": "和解；和好",
+    "fascisme": "法西斯主义", "caricature": "漫画；讽刺画",
+    "masturbation": "手淫", "faction": "派系；派别；站岗",
+    "confidentialité": "保密性；机密性", "testostérone": "睾酮；睾丸激素",
+    "dopamine": "多巴胺", "extrémiste": "极端主义者",
+    "combiner": "组合；结合；策划", "lasagne": "千层面；烤宽面条",
+    "anémie": "贫血", "musée": "博物馆", "plain": "平坦的；平的",
+    "torpille": "鱼雷；电鳐", "diagnostiquer": "诊断",
+
+    # (e) 教材词表里搭配义项掉了省略号，只剩光杆虚词（"把；看作"）。虚词单元
+    #     由 drop_bare_particles 兜底剔掉，但剔完剩下的半句还是不成话，这几条
+    #     按搭配本身补全。
+    "considérer": "认为；把…看作", "réagir": "作出反应；起反应",
+    "consacrer": "奉献；把…用于", "dater": "注明日期；追溯到",
+    "confronter": "使对质；对照", "collaborer": "合作；协作",
+    "tarder": "延迟；拖延；迟迟不做", "correctement": "正确地；恰当地",
+
+    # (f) 抽查残句时顺带撞见的选义错（都是 ECDICT 把英语同形词的义挑了过来）
+    "navigateur": "浏览器；航海者；导航员",   # ≠ navigator，现代法语首义是浏览器
+    "stressant": "令人紧张的；有压力的",       # 原为动词 stress 的义「着重；重读」
+    "gravité": "重力；地心引力；严重性",       # 原末项「严格」是 gravity 的误挑
+    "préfecture": "省政府；省会",             # 原为日式「地方长官辖区」
+    "brigadier": "警长；下士；工头",           # ≠ 英语 brigadier（准将）
 }
 
 # ---------------------------------------------------------------------------
@@ -698,7 +822,7 @@ DROP_COGNATES = {
     "colon": "配 en colonel（上校）错位，colon 是「殖民者／结肠」",
     "raie": "配 en ray（光线）错位，raie 是「条纹／鳐鱼」",
     "rider": "法语 rider 是「使起皱」，配 en ride（骑）纯属同形",
-    "volée": "ECDICT 释义本身就是残句「(箭」，无法修复",
+    "volée": "ECDICT 释义是残句「(箭」；第二轮的括号配对修复能还原成「齐射」，但整行上一轮已删，两条重建路径要一致，保持删除",
 }
 
 
@@ -1458,6 +1582,44 @@ POS_MARKER_RE = re.compile(r"(?<![a-zA-Z])(n|vt|vi|v|adj|adv|ad|num|prep|conj|pr
 WANT_MARKERS = {"NOM": {"n"}, "VER": {"v", "vt", "vi"}, "ADJ": {"adj", "a"}, "ADV": {"adv", "ad"}}
 BRACKET_RE = re.compile(r"^[\[(（【][^\])）】]*[\])）】]\s*")
 
+# ECDICT 把限定说明写在括号里，而括号里照样有逗号（"(光,热等的)发射,射出"）。
+# 按逗号硬切会切出「(光」这种括号不配对的残句，而「纯中日韩字符」这类校验
+# 查不出来 —— 残句里一个汉字都不缺。所以：切义项要跳过括号内部的分隔符，
+# 切完再逐条查括号配对，不配对的一律不用。
+BRACKET_PAIRS = {"(": ")", "（": "）", "[": "]", "【": "】",
+                 "《": "》", "〈": "〉", "〔": "〕", "{": "}"}
+BRACKET_CLOSERS = {v: k for k, v in BRACKET_PAIRS.items()}
+SENSE_SEPARATORS = "；;，,、"
+
+
+def brackets_balanced(text):
+    """括号是否成对且嵌套正确（残句检测的唯一判据）。"""
+    stack = []
+    for ch in text or "":
+        if ch in BRACKET_PAIRS:
+            stack.append(BRACKET_PAIRS[ch])
+        elif ch in BRACKET_CLOSERS:
+            if not stack or stack.pop() != ch:
+                return False
+    return not stack
+
+
+def split_senses(text, seps=SENSE_SEPARATORS):
+    """按义项分隔符切分，但括号深度 > 0 时的分隔符不算数。"""
+    parts, buf, depth = [], [], 0
+    for ch in text or "":
+        if ch in BRACKET_PAIRS:
+            depth += 1
+        elif ch in BRACKET_CLOSERS and depth:
+            depth -= 1
+        if depth == 0 and ch in seps:
+            parts.append("".join(buf))
+            buf = []
+        else:
+            buf.append(ch)
+    parts.append("".join(buf))
+    return [p for p in parts if p.strip()]
+
 
 def split_ecdict(meaning):
     """-> [(pos_marker, text), ...] in source order."""
@@ -1478,11 +1640,14 @@ def first_clean_sense(text):
     # the comma inside the bracket), then take the leading sense.
     text = re.sub(r"[<《][^>》]*[>》]", "", text or "")
     text = re.sub(r"\[[^\]]*\]?", "", text)
-    part = re.split(r"[;,；，、]", text)[0]
+    parts = split_senses(text)
+    part = parts[0] if parts else ""
     part = BRACKET_RE.sub("", part).strip(" .;,:：")
     if not part or not CJK_RE.search(part):
         return ""
     if re.search(r"[a-zA-Z]", part):        # leftover POS artefact / latin noise
+        return ""
+    if not brackets_balanced(part):         # 括号残句（"(光"、"容器(箱"）
         return ""
     return part
 
@@ -1533,15 +1698,24 @@ def english_candidates(kaikki_entries, cgram):
 # 本仓库其实早就有权威的法→中层（教材词表），当初没接上。现在的优先级链：
 #
 #   1. 手写 faux-amis / 手写覆盖表（authored）
-#   2. data/french-vocabulary.js         课程整理 372 条
-#   3. data/french-vocabulary-glossary.js 教材总词汇表 1996 条
-#   4. ECDICT 英语跳板，且必须通过语义闸门
-#   5. 都拿不到 → 删条目（宁可少给，不要给错）
+#   2. data/french-vocabulary.js          课程整理词表
+#   3. data/french-vocabulary-glossary.js 教材总词汇表
+#   4. data/french-vocabulary-core.js     词频核心词表，且必须通过 core 闸门
+#   5. ECDICT 英语跳板，且必须通过语义闸门
+#   6. 都拿不到 → 删条目（宁可少给，不要给错）
 #
-# 注意 data/french-vocabulary-core.js 不在权威层里：它自己的文件头就写着
-# 「中文经英文转写 ECDICT」，跟这里要修的是同一个根因（berge 被写成「银行」）。
-# 它只被用来提供**英文**释义 —— 那一列是 Wiktionary/kaikki 的法→英，可信，
-# 正好用来当语义闸门的裁判。
+# 关于第 4 层 core：它的文件头写着「中文经英文转写 ECDICT」，跟这里要修的是
+# 同一类根因，所以不能算权威层。但两条跳板的**起点**不一样，质量差一个量级：
+#
+#   core   ：法语词自己的 Wiktionary 词条 → 那条词条的英文释义 → ECDICT
+#   本表旧路：跟法语词**拼写最像**的英语词 → ECDICT
+#
+# 前者起点至少是这个法语词，错也只错在 ECDICT 挑哪个义项；后者起点就可能是
+# 另一个词（valeur→valor→英勇、tempe→temple→庙），错得没边。所以 core 排在
+# 跳板前面，但要过一道 core 闸门（见 GlossContext.core_gate）：它的中文必须能
+# 被独立推出来的义项集合佐证，凭空冒出来的（cassette→矿体）不采用。
+# core 仍然会犯「英语同形词」的错（joint→seal→海豹、lime→file→档案），逐条
+# 抽查出来的那些走手写覆盖表 AUTHORED_GLOSSES。
 
 PIPE_TABLE_RE_TMPL = r"%s\s*=\s*`\n([\s\S]*?)`"
 
@@ -1571,18 +1745,50 @@ LATIN_RE = re.compile(r"[A-Za-z]")
 MARKUP_RE = re.compile(r"[<>\[\]《》]")
 
 
+# 教材词表把「把…看作」「与…合作」这类搭配义项的省略号丢了，只剩一个光杆
+# 介词／助词单元（"把；看作"、"与；合作"）。它在卡片上就是个没有意义的残字，
+# 跟括号残句是同一类毛病，只是括号配对查不出来 —— 单元长度为 1 且落在这张
+# 虚词表里的，落盘前一律剔掉；剔空了就当没有中文（走下一层来源）。
+BARE_PARTICLES = set("与和或使把被给对向为从在让同跟并的地得了着之而就都也再又将该欲以由到于")
+
+
+def drop_bare_particles(text):
+    units = [u.strip() for u in split_senses(text or "") if u.strip()]
+    kept = [u for u in units if not (len(u) == 1 and u in BARE_PARTICLES)]
+    return "；".join(kept) if len(kept) != len(units) else (text or "")
+
+
 def usable_zh(text, headword=""):
     """能不能直接进 `chinese` 字段（跟 validate_french_extras.js 的规则对齐）。"""
-    t = (text or "").strip()
+    t = drop_bare_particles((text or "").strip()).strip()
     if not t or is_bad_gloss(t, headword):
         return ""
     if not CJK_RE.search(t) or LATIN_RE.search(t) or MARKUP_RE.search(t):
+        return ""
+    if not brackets_balanced(t):            # 括号残句一律不进 `chinese`
         return ""
     return t
 
 
 def zh_units(text):
     return [u.strip() for u in ZH_SENSE_SPLIT_RE.split(ZH_PAREN_RE.sub("", text or "")) if u.strip()]
+
+
+# core 的中文自带两类噪音：它自己的消歧后缀「（阳性名词）」和 ECDICT 的语域
+# 标记「〈非正〉」「(非正式)」。同源词卡片另有 partOfSpeech / gender 两列，
+# 这些后缀是重复信息，进卡片之前去掉。
+CORE_POS_TAIL_RE = re.compile(
+    r"[（(](?:阳性|阴性)?(?:名词|动词|形容词|副词|代词|介词|连词|数词|感叹词|冠词)[）)]\s*$")
+CORE_MARKUP_RE = re.compile(r"[〈《<][^〉》>]*[〉》>]")
+CORE_REGISTER_RE = re.compile(r"[（(](?:非正式|非正|口语|口|俚语|俚|书面|书)[）)]")
+
+
+def clean_core_zh(text):
+    t = CORE_MARKUP_RE.sub("", text or "")
+    t = CORE_REGISTER_RE.sub("", t)
+    t = CORE_POS_TAIL_RE.sub("", t)
+    units = [u.strip(" ；;，,、") for u in split_senses(t, "；;")]
+    return "；".join(u for u in units if u)
 
 
 ZH_STOP_CHARS = set("的地得了着之其一有为是不很多少不个")
@@ -1649,11 +1855,14 @@ class GlossContext(object):
             self.auth_src[k] = "french-vocabulary.js（课程整理词表）"
             if w.get("english"):
                 self.wiktionary_en[k] = w["english"]
+        self.core_zh = {}
         core_path = os.path.join(root, "data", "french-vocabulary-core.js")
         for w in load_js_array(core_path, "FRENCH_CORE_VOCABULARY_DATA"):
             k = (w.get("french") or "").lower()
-            if k:                                          # 只取英文列，中文列是跳板货
-                self.wiktionary_en.setdefault(k, w.get("english") or "")
+            if not k:
+                continue
+            self.wiktionary_en.setdefault(k, w.get("english") or "")
+            self.core_zh.setdefault(k, w.get("chinese") or w.get("meaning") or "")
         self.en_vocab = {}
         for w in load_js_array(os.path.join(root, "data", "english-vocabulary.js"),
                                "ENGLISH_VOCABULARY_DATA"):
@@ -1685,6 +1894,21 @@ class GlossContext(object):
         primary = str(full).split(";")[0].lower()
         return re.search(r"\b%s\b" % re.escape((english or "").lower()), primary) is not None
 
+    def core_gate(self, french, core_zh, english, cgram):
+        """core 闸门：core 的中文必须有旁证才能采用。
+
+        core 的中文也是英语跳板的产物，不能白纸黑字照抄。旁证有两路，沾上
+        任意一路即通过：
+          * 法语词自己的义项锚（它的 Wiktionary 法→英释义逐个过 ECDICT）；
+          * 本行英语 look-alike 的**全部** ECDICT 义项。
+        两路都不沾，说明这条中文在仓库里找不到第二个来源支持（cassette→
+        「矿体」就是这样冒出来的），不采用，退回跳板。
+        """
+        for pool in (self.anchor_senses(french, cgram), self.english_senses(english, cgram)):
+            if pool and zh_share_sense(core_zh, "；".join(pool)):
+                return True
+        return False
+
     def anchor_senses(self, french, cgram):
         """法语词自己的义项锚：把它的 Wiktionary 法→英释义逐个过 ECDICT。"""
         full = self.wiktionary_en.get((french or "").lower())
@@ -1708,10 +1932,13 @@ def ecdict_sense_units(entry, cgram):
     for _marker, text in split_ecdict(meaning):
         text = re.sub(r"[<《][^>》]*[>》]", "", text or "")
         text = re.sub(r"\[[^\]]*\]?", "", text)
-        for part in re.split(r"[;,；，、]", text):
+        for part in split_senses(text):
             part = BRACKET_RE.sub("", part).strip(" .;,:：")
-            if part and CJK_RE.search(part) and not re.search(r"[a-zA-Z]", part):
-                out.append(part)
+            if not part or not CJK_RE.search(part) or re.search(r"[a-zA-Z]", part):
+                continue
+            if not brackets_balanced(part):
+                continue
+            out.append(part)
     return out
 
 
@@ -1758,6 +1985,13 @@ def resolve_chinese(row, ctx):
     gate = semantic_gate(french, row["english"], cgram, trusted, ctx)
     if trusted:
         return trusted, source, gate
+
+    # 第 4 层：词频核心词表。起点是法语词自己的 Wiktionary 词条，比「拼写最像
+    # 的英语词」这条跳板可靠一个量级，但仍要过 core 闸门。
+    core = usable_zh(clean_core_zh(ctx.core_zh.get(key, "")), french)
+    if core and ctx.core_gate(french, core, row["english"], cgram):
+        gate = semantic_gate(french, row["english"], cgram, core, ctx)
+        return core, "french-vocabulary-core.js（词频核心词表）", gate
 
     if gate == "fail":
         return "", "", gate       # 跳板中文可疑，又没有权威中文兜底 -> 删
@@ -1904,6 +2138,11 @@ def add_faux_amis(rows, lex, kaikki, max_rank):
 
 def write_cognates(rows, out_path, stats):
     data = sorted(rows.values(), key=lambda r: (-r["similarityScore"], r["rank"], r["french"]))
+    # 构建期硬检查：括号残句绝不允许落盘。「纯中日韩字符」查不出 "(光"、
+    # "容器(箱" 这类被逗号切断的 ECDICT 说明，只有配对检查能查出来。
+    broken = [(r["french"], r["chinese"]) for r in data if not brackets_balanced(r["chinese"])]
+    if broken:
+        raise SystemExit("括号残句（括号不配对的中文释义）：%s" % broken[:10])
     faux = sum(1 for r in data if r.get("falseFriend"))
     header = (
         "// French cognate data — French <-> English (with an Italian bridge) look-alikes.\n"
@@ -1964,6 +2203,11 @@ def refresh_cognate_glosses(out_path):
 
     不需要 620MB 的下载缓存。释义层只依赖 (french, english, partOfSpeech) 和
     仓库内词典，所以重复跑字节一致，跟整表重建走的也是同一段代码。
+
+    但它只是「现有行的不动点」，不等于整表重建的结果：它不重新挖行（缓存换成
+    新的 kaikki 快照后多出来的词进不来），也不给手写 faux-amis 行补意大利语桥
+    （那一步在 build_cognates 里）。所以发布前的最后一次落盘要走整表重建，
+    --only cognate-glosses 只用来快速迭代释义层。
     """
     existing = load_js_array(out_path, "FRENCH_COGNATE_DATA")
     rows = {}

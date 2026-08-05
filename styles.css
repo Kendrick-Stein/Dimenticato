@@ -2463,16 +2463,37 @@ body:has(#communityBrowseScreen:not(.hidden)) .footer {
 }
 
 /* 同源词的沉浸式练习视图（对比卡片 / 拼写题）里，页面最底下就是「下一个 →」「下一题 →」，
-   390×844 逐条实测这颗悬浮按钮会盖在主操作按钮上：对比模式 DE 88/2347、FR 64/4272、
-   IT 9/1587 条矩形相叠（几乎全是多一条假朋友提示条、卡片更高的词条），其中 DE 70、FR 44、
-   IT 5 条连按钮中心都被吃掉，点下去触发的是 goBack()，直接退出练习；拼写题的「下一题 →」
-   是通栏按钮，右半截几乎每题都被压住（抽查 200 题：DE 192 / FR 197 / IT 199）。
-   这两种视图里把悬浮按钮让出去，返回改走屏内顶部的 #cognateBackBtn（内容不长，首屏可见）；
-   浏览 / 规律列表 / 模式选择这类要长滚的视图不加这个类，悬浮按钮照常保留。
+   窄屏逐条实测这颗悬浮按钮会盖在主操作按钮上：多一条假朋友提示条、卡片更高的词条会让
+   两个矩形相叠，其中一部分连按钮中心都被吃掉，点下去触发的是 goBack()，直接退出练习；
+   拼写题的「下一题 →」是通栏按钮，右半截几乎每题都被压住。这两种视图里把悬浮按钮让出去，
+   返回改走下面那颗常驻的屏内 #cognateBackBtn；浏览 / 规律列表 / 模式选择这类只往下滚、
+   底部没有主操作按钮的视图不加这个类，悬浮按钮照常保留。
    选择器同时要求同源词屏 active，所以那个类万一没被清掉也漏不到别的屏幕上。 */
 #app:has(#cognatePracticeScreen.screen.active #cognatePracticeContainer.cognate-immersive)
 .mobile-floating-back {
   display: none;
+}
+
+/* 悬浮按钮让位之后，返回全靠屏内这颗 —— 但它原来跟着页面滚：假朋友词条的卡片比一屏高，
+   滚到够得着底部主按钮时，顶部返回链接早已滚进顶栏底下（.topbar 是 sticky 且不透明，
+   盖住即等于不可点），整屏一个可达的返回控件都没有。这里把它钉在顶栏正下方，做成一颗
+   不占通栏、不吃误触的浮丸：位置在顶部，和底部的主操作按钮天生不可能相叠。
+   偏移量 --cognate-sticky-top 由 cognate-app.js 按实测的 .topbar 高度写入（顶栏高度随
+   断点变，CSS 没法引用别的元素的高度）；这里的兜底值只在脚本没跑到时生效。 */
+@media (max-width: 768px) {
+  #cognatePracticeScreen.screen.active:has(#cognatePracticeContainer.cognate-immersive)
+  #cognateBackBtn {
+    position: sticky;
+    top: calc(var(--cognate-sticky-top, 71px) + 8px);
+    /* 低于 .topbar 的 10：万一算出的偏移偏小，也是从顶栏底下过，不会盖住面包屑 */
+    z-index: 9;
+    padding: 8px 13px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--card);
+    color: var(--ink);
+    box-shadow: var(--shadow-lg);
+  }
 }
 
 /* ==================== 弹窗 ==================== */

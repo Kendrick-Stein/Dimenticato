@@ -83,6 +83,21 @@ function strip(s) {
   return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 }
 
+// ECDICT 把限定说明写在括号里，括号里照样有逗号（"(光,热等的)发射"）。按逗号
+// 硬切会切出 "(光"、"容器(箱" 这种残句 —— 它们全是中日韩字符，上面「chinese
+// 必须是纯中日韩字符」那条断言一个都查不出来，只有括号配对查得出来。
+const BRACKET_OPEN = { '(': ')', '（': '）', '[': ']', '【': '】', '《': '》', '〈': '〉', '〔': '〕', '{': '}' };
+const BRACKET_CLOSE = new Set(Object.values(BRACKET_OPEN));
+
+function bracketsBalanced(value) {
+  const stack = [];
+  for (const ch of String(value || '')) {
+    if (BRACKET_OPEN[ch]) stack.push(BRACKET_OPEN[ch]);
+    else if (BRACKET_CLOSE.has(ch) && stack.pop() !== ch) return false;
+  }
+  return stack.length === 0;
+}
+
 // ===========================================================================
 // 1. files load, globals exist, module.exports tail present
 // ===========================================================================
@@ -304,6 +319,10 @@ COGNATES.forEach((row, i) => {
   check(!LATIN.test(row.chinese || ''), `${where}: chinese carries latin/POS artefacts -> ${JSON.stringify(row.chinese)}`);
   check(!/[<>[\]《》]/.test(row.chinese || ''),
     `${where}: chinese carries dictionary markup -> ${JSON.stringify(row.chinese)}`);
+  check(bracketsBalanced(row.chinese || ''),
+    `${where}: chinese is a bracket-truncated fragment -> ${JSON.stringify(row.chinese)}`);
+  check(bracketsBalanced(row.warning || ''),
+    `${where}: warning is a bracket-truncated fragment -> ${JSON.stringify(row.warning)}`);
   check(strip(row.chinese || '') !== strip(row.french || ''), `${where}: chinese is the headword`);
 
   // similarity + difficulty

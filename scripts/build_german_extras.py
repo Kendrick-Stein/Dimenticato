@@ -1499,6 +1499,14 @@ SHIFT_RULES = [
     (r'ocht', 'ought', 'gh↔ch'),
     (r'auch', 'ough', 'gh↔ch'),
     (r'sch', 'sh', 'sh↔sch'),
+    # 德语的 s-Verhärtung：sl-/sm-/sn-/sw- 一律写成 schl-/schm-/schn-/schw-
+    # （Schwan/swan、Schmuggel/smuggle）；词尾的 -sch 对应英语 -s（falsch/false）。
+    # 这条以前没有自己的规则，sch→sh 再掉个 h 的两步派生让这些词被 Ø↔h 兜走，
+    # 界面就会说成「德语比英语多一个 h」，而真实差异是 sch↔s。
+    # 只写这两个真实环境，不写成裸的 sch→s：规则表一宽，同分的候选就会换人，
+    # scheinen/shine、schaffen/shape 这些走 sh↔sch 的词对会被顶掉。
+    (r'sch(?=[lmnw])', 's', 's↔sch'),
+    (r'sch$', 's', 's↔sch'),
     (r'tz', 't', 't↔z/tz'),
     (r'z', 't', 't↔z/tz'),
     (r'z', 'c', 'c↔z'),
@@ -1543,7 +1551,7 @@ SHIFT_RULES = [
 # 要归到后缀族，而不是被字母规则抢走。
 LABEL_PRIORITY = [lab for _, _, lab in SUFFIX_RULES] + [
     't↔z/tz', 't↔ss/ß', 'p↔pf', 'p↔f', 'k↔ch', 'gh↔ch', 'd↔t', 'th↔d',
-    'v↔b', 'y↔g', 'f↔v', 'sh↔sch', 'c↔k', 'c↔z', 'v↔w',
+    'v↔b', 'y↔g', 'f↔v', 'sh↔sch', 's↔sch', 'c↔k', 'c↔z', 'v↔w',
     'ou↔au', 'ow↔au', 'oo↔u', 'ee↔ie', 'ea↔ie', 'i↔ei', 'o↔ei', 'oa↔ei',
     'u↔ü', 'i↔ü', 'ee↔ü', 'e↔ö', 'e↔ä', 'a↔ä', 'o↔u', 'o↔a', 'Ø↔h',
 ]
@@ -1565,6 +1573,19 @@ MIN_PATTERN_GROUP = 5
 # 对不上的标签一律丢掉，全丢光就落到 null（界面上的 Other）。
 # --------------------------------------------------------------------------
 EMPTY_SIDE = ('Ø', '∅', '')
+
+# 单个 h 的表面检验要认二合字母：ch/sch/ph/th 里的 h 不是一个自成一体的 h，
+# 它属于前面那个字母。不认这一条，Ø↔h（「德语有 h、英语没有」）就会去兜
+# 真实差异是 sch↔s 的词——Schwan/swan 表面上「德语有 h、英语没 h」全对，
+# 可那个 h 是 sch 的一半，界面却会说成「存在 Ø ↔ h 的字母对应」。
+BARE_H_RE = re.compile(r'(?<![cpst])h')
+
+
+def _occurs(letters, word):
+    """标签一侧的字母串是否作为独立音位出现在词里。"""
+    if letters == 'h':
+        return BARE_H_RE.search(word) is not None
+    return letters in word
 
 
 def _split_sides(label):
@@ -1600,12 +1621,12 @@ def label_holds(label, german, english):
                 if en and de.rstrip('$') in de_real]
             return not any(e.endswith(a) for a in siblings)
         return any(e.endswith(a) for a in en_real)
-    if de_real and not any(a in g for a in de_real):
+    if de_real and not any(_occurs(a, g) for a in de_real):
         return False
     if en_real:
-        return any(a in e for a in en_real)
+        return any(_occurs(a, e) for a in en_real)
     # 英语侧是 Ø：要求德语侧那串字母在英语里确实不出现
-    return not any(a in e for a in de_real)
+    return not any(_occurs(a, e) for a in de_real)
 
 
 COMPILED_SUFFIX =[(re.compile(p), r, lab) for p, r, lab in SUFFIX_RULES]
@@ -2172,6 +2193,10 @@ def build_cognates(german_vocab, english_vocab):
             continue
         cands = candidates_for(german)
         best = None
+        # 只取分数最高的那个候选，同分的由 cands 的插入顺序（也就是规则表的
+        # 排列）决定。这意味着往规则表里加一条规则就可能换掉一条同分的词对
+        # （scheinen 到 shine 和到 seine 都是 62 分），所以新加的规则要写窄、
+        # 写到真实的音变环境上，加完必须对比前后的词对增删。
         for cand, labels in cands.items():
             hit = en_by_word.get(cand) or en_collapsed.get(collapse_doubles(cand))
             if not hit:
@@ -2188,13 +2213,21 @@ def build_cognates(german_vocab, english_vocab):
     #     并入前先试一次更笼统的后缀族：Biografie/biography 走的是 -grafie/-graphy
     #     这条只有 3 个词的派生路径，但它同时实实在在是一条 -ie/-y，落到 Other 冤枉。
     #     只放宽到后缀标签（两头都锚在词尾，误贴的余地小），字母标签不做这个回退。
-    for _ in range(4):
+    #
+    #     回退会把词从一个组挪到另一个组，所以它自己就可能把某个组抽到线下，
+    #     得反复跑到不动点。跑够轮数不等于收敛：轮数用完时必须真的再数一遍，
+    #     否则数据一变就可能悄悄发出一个 thin 组。
+    def thin_labels():
         sizes = defaultdict(int)
         for c in results.values():
             if c['patternType']:
                 sizes[c['patternType']] += 1
-        thin = {lab for lab, n in sizes.items()
+        return {lab: n for lab, n in sizes.items()
                 if n < MIN_PATTERN_GROUP and lab != 'identisch'}
+
+    MAX_THIN_PASSES = 8
+    for _ in range(MAX_THIN_PASSES):
+        thin = thin_labels()
         if not thin:
             break
         for c in results.values():
@@ -2205,6 +2238,14 @@ def build_cognates(german_vocab, english_vocab):
                 c['german'], c['english'])
             c['patternType'] = fallback
             rejected['pattern_group_too_thin'] += 1
+
+    leftover = thin_labels()
+    if leftover:
+        raise RuntimeError(
+            'MIN_PATTERN_GROUP=%d 未收敛：跑满 %d 轮后仍有小组 %s。'
+            '不要放宽阈值，先查是哪条规则在来回抢词。'
+            % (MIN_PATTERN_GROUP, MAX_THIN_PASSES,
+               ', '.join('%s=%d' % kv for kv in sorted(leftover.items()))))
 
     return list(results.values()), rejected
 # --------------------------------------------------------------------------

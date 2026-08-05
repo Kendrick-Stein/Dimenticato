@@ -22,6 +22,23 @@
 // 修正时若 english 换了词（"ta" → "den, lair" 这种），similarityScore 用归一化
 // Levenshtein 重算（floor((1-d/maxlen)*100)，该公式能复现原数据里 libreria=62）；
 // 重算结果低于 50 的直接置 null —— 宁可不显示，也不显示假的「与英语相似」。
+//
+// 2026-08-05 第二轮：补掉第一轮漏下的中文侧残渣，并把 difficulty 的档位契约钉死。
+//   1. difficulty 一律由 similarityScore 推出，不再手填：
+//        >= 80 → easy    50-79 → medium    < 50 或 null → hard
+//      浏览模式的筛选器把这三档明文写成「Easy（≥80%）/ Medium（50-79%）/ Hard（<50%）」，
+//      任何一条对不上，用户按档位筛出来的词就带着打脸的百分比。假朋友条目也照此办理
+//      （它们的分数比的是那个陷阱英语词，但档位仍然要跟展示的百分比一致）。
+//      similarityScore = null 表示「重算后不足 50，或根本没有可信的英语形似对象」，
+//      归入 hard —— 这类词得纯靠背，没有拼写红利。
+//   2. 中文侧只允许汉字加全角标点（，；（）），不许有拉丁字母，也不许有 ASCII 半角
+//      空格（第一轮的正则没含空格，「决 定」「受 难」这类整批漏网）。
+//   3. 一批词的 english 本身就是抓取残渣（"mit"/"reigns"/"colt"/"cost"），中文是照着
+//      这个残渣翻的。这种改 english 为真义、similarityScore 按上面的规则重算或置 null，
+//      而不是保留一个凑出来的百分比。专有名词沿用数据里既有的写法："mark (name)" +
+//      「马可（名字）」。
+//   4. 联合国语料带来的机构义（Brasile→「联合国」、strumento→「文书」）一律换成词典义。
+// 以上不变量由 scripts/validate_italian_extras.js 固化，改动这份数据后必须跑它。
 
 var COGNATE_DATA = [
   {
@@ -322,7 +339,9 @@ var COGNATE_DATA = [
     "rank": 1488,
     "falseFriend": true,
     "falseFriendOf": "bob",
-    "falseFriendChinese": "上下晃动；波波头"
+    "falseFriendChinese": "上下晃动",
+    "italianFor": "oscillare",
+    "warning": "≠ bob（上下晃动）= oscillare"
   },
   {
     "italian": "stazione",
@@ -380,8 +399,8 @@ var COGNATE_DATA = [
   },
   {
     "italian": "Anna",
-    "english": "anna",
-    "chinese": "甊",
+    "english": "anna (name)",
+    "chinese": "安娜（名字）",
     "patternType": null,
     "similarityScore": 100,
     "difficulty": "easy",
@@ -654,7 +673,7 @@ var COGNATE_DATA = [
     "chinese": "噩梦",
     "patternType": null,
     "similarityScore": 71,
-    "difficulty": "easy",
+    "difficulty": "medium",
     "rank": 2756
   },
   {
@@ -1119,7 +1138,7 @@ var COGNATE_DATA = [
   {
     "italian": "considerazione",
     "english": "consideration",
-    "chinese": "审议",
+    "chinese": "考虑，考量",
     "patternType": "-zione/-tion",
     "similarityScore": 100,
     "difficulty": "easy",
@@ -1244,11 +1263,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "negro",
-    "english": "negro",
-    "chinese": "内鬼",
+    "english": "black",
+    "chinese": "黑色的（旧用法；指人时为冒犯语）",
     "patternType": null,
-    "similarityScore": 100,
-    "difficulty": "easy",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 4509
   },
   {
@@ -1338,7 +1357,7 @@ var COGNATE_DATA = [
     "chinese": "老虎",
     "patternType": null,
     "similarityScore": 60,
-    "difficulty": "easy",
+    "difficulty": "medium",
     "rank": 4922
   },
   {
@@ -1415,11 +1434,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "ala",
-    "english": "ala",
-    "chinese": "亚拉",
+    "english": "wing",
+    "chinese": "翅膀，机翼；（球队）边锋",
     "patternType": null,
-    "similarityScore": 100,
-    "difficulty": "easy",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 5103
   },
   {
@@ -1443,7 +1462,7 @@ var COGNATE_DATA = [
   {
     "italian": "presentazione",
     "english": "presentation",
-    "chinese": "列报",
+    "chinese": "介绍，展示；提交",
     "patternType": "-zione/-tion",
     "similarityScore": 100,
     "difficulty": "easy",
@@ -1748,11 +1767,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "Toro",
-    "english": "toro",
-    "chinese": "托罗",
+    "english": "bull",
+    "chinese": "公牛；（星座）金牛座",
     "patternType": null,
-    "similarityScore": 100,
-    "difficulty": "easy",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 5885
   },
   {
@@ -2186,7 +2205,7 @@ var COGNATE_DATA = [
   {
     "italian": "polo",
     "english": "polo",
-    "chinese": "波罗",
+    "chinese": "马球；（地球的）极",
     "patternType": null,
     "similarityScore": 100,
     "difficulty": "easy",
@@ -2234,13 +2253,13 @@ var COGNATE_DATA = [
     "chinese": "鹰，雕",
     "patternType": null,
     "similarityScore": null,
-    "difficulty": "easy",
+    "difficulty": "hard",
     "rank": 7425
   },
   {
     "italian": "bacon",
     "english": "bacon",
-    "chinese": "培根鱼",
+    "chinese": "培根，咸肉",
     "patternType": null,
     "similarityScore": 100,
     "difficulty": "easy",
@@ -2266,11 +2285,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "cognato",
-    "english": "cognato",
-    "chinese": "可可纳托",
+    "english": "brother-in-law",
+    "chinese": "姐夫，妹夫；大伯子，小叔子",
     "patternType": null,
-    "similarityScore": 100,
-    "difficulty": "easy",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 7526
   },
   {
@@ -2303,7 +2322,7 @@ var COGNATE_DATA = [
   {
     "italian": "distratto",
     "english": "distracted",
-    "chinese": "专注",
+    "chinese": "心不在焉的，分心的",
     "patternType": "-atto/-at",
     "similarityScore": 100,
     "difficulty": "easy",
@@ -2555,7 +2574,7 @@ var COGNATE_DATA = [
   {
     "italian": "SUV",
     "english": "suv",
-    "chinese": "苏维埃",
+    "chinese": "运动型多用途车，越野车",
     "patternType": null,
     "similarityScore": 100,
     "difficulty": "easy",
@@ -2960,7 +2979,7 @@ var COGNATE_DATA = [
   {
     "italian": "dorsale",
     "english": "dorsal",
-    "chinese": "嫁妆",
+    "chinese": "背部的；（山、海）脊",
     "patternType": "-ale/-al",
     "similarityScore": 100,
     "difficulty": "easy",
@@ -3095,7 +3114,7 @@ var COGNATE_DATA = [
   {
     "italian": "identico",
     "english": "identical",
-    "chinese": "不变",
+    "chinese": "完全相同的",
     "patternType": "-ico/-ic",
     "similarityScore": 100,
     "difficulty": "easy",
@@ -3149,7 +3168,7 @@ var COGNATE_DATA = [
   {
     "italian": "cola",
     "english": "cola",
-    "chinese": "科拉岛",
+    "chinese": "可乐",
     "patternType": null,
     "similarityScore": 100,
     "difficulty": "easy",
@@ -3158,7 +3177,7 @@ var COGNATE_DATA = [
   {
     "italian": "Iran",
     "english": "iran",
-    "chinese": "伊朗伊斯兰共和国",
+    "chinese": "伊朗",
     "patternType": null,
     "similarityScore": 100,
     "difficulty": "easy",
@@ -3334,7 +3353,7 @@ var COGNATE_DATA = [
   {
     "italian": "Secondo",
     "english": "second",
-    "chinese": "第二届",
+    "chinese": "第二的；按照，根据",
     "patternType": null,
     "similarityScore": 99,
     "difficulty": "easy",
@@ -3667,7 +3686,7 @@ var COGNATE_DATA = [
   {
     "italian": "profilo",
     "english": "profile",
-    "chinese": "配置文件",
+    "chinese": "侧面，轮廓；简介",
     "patternType": null,
     "similarityScore": 99,
     "difficulty": "easy",
@@ -3946,7 +3965,7 @@ var COGNATE_DATA = [
   {
     "italian": "amministratore",
     "english": "administrator",
-    "chinese": "署长",
+    "chinese": "管理员，管理者",
     "patternType": null,
     "similarityScore": 99,
     "difficulty": "easy",
@@ -4297,7 +4316,7 @@ var COGNATE_DATA = [
   {
     "italian": "modesto",
     "english": "modest",
-    "chinese": "微调",
+    "chinese": "谦虚的；适度的，不多的",
     "patternType": null,
     "similarityScore": 99,
     "difficulty": "easy",
@@ -4615,7 +4634,7 @@ var COGNATE_DATA = [
     "chinese": "准备好的",
     "patternType": null,
     "similarityScore": 66,
-    "difficulty": "easy",
+    "difficulty": "medium",
     "rank": 2110
   },
   {
@@ -4720,7 +4739,7 @@ var COGNATE_DATA = [
   {
     "italian": "scala",
     "english": "scale",
-    "chinese": "缩放",
+    "chinese": "楼梯；比例尺；音阶",
     "patternType": null,
     "similarityScore": 98,
     "difficulty": "easy",
@@ -4737,11 +4756,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "fiero",
-    "english": "fiery",
-    "chinese": "燃烧",
+    "english": "proud",
+    "chinese": "自豪的，骄傲的",
     "patternType": null,
-    "similarityScore": 98,
-    "difficulty": "easy",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 2982
   },
   {
@@ -5151,11 +5170,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "colto",
-    "english": "colt",
-    "chinese": "骆驼",
+    "english": "cultured, learned",
+    "chinese": "有学识的，有教养的",
     "patternType": null,
-    "similarityScore": 98,
-    "difficulty": "easy",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 6495
   },
   {
@@ -5170,7 +5189,7 @@ var COGNATE_DATA = [
   {
     "italian": "barone",
     "english": "baron",
-    "chinese": "拜伦",
+    "chinese": "男爵",
     "patternType": null,
     "similarityScore": 98,
     "difficulty": "easy",
@@ -5217,12 +5236,14 @@ var COGNATE_DATA = [
     "english": "plague",
     "chinese": "瘟疫，鼠疫",
     "patternType": "假朋友 faux-ami",
-    "similarityScore": 98,
+    "similarityScore": 80,
     "difficulty": "easy",
     "rank": 7193,
     "falseFriend": true,
-    "falseFriendOf": "pesto",
-    "falseFriendChinese": "罗勒青酱"
+    "falseFriendOf": "pest",
+    "falseFriendChinese": "害虫",
+    "italianFor": "parassita",
+    "warning": "≠ pest（害虫）= parassita"
   },
   {
     "italian": "iniziativa",
@@ -5344,7 +5365,7 @@ var COGNATE_DATA = [
   {
     "italian": "divino",
     "english": "divine",
-    "chinese": "向导",
+    "chinese": "神圣的，神的",
     "patternType": null,
     "similarityScore": 98,
     "difficulty": "easy",
@@ -6423,11 +6444,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "Coso",
-    "english": "cost",
-    "chinese": "费用",
+    "english": "thing, thingy",
+    "chinese": "那个东西，那家伙（口语）",
     "patternType": null,
-    "similarityScore": 87,
-    "difficulty": "easy",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 2604
   },
   {
@@ -6739,7 +6760,7 @@ var COGNATE_DATA = [
   {
     "italian": "patetico",
     "english": "pathetic",
-    "chinese": "鸡",
+    "chinese": "可悲的，可怜的",
     "patternType": null,
     "similarityScore": 87,
     "difficulty": "easy",
@@ -6883,7 +6904,7 @@ var COGNATE_DATA = [
   {
     "italian": "strumento",
     "english": "instrument",
-    "chinese": "文书",
+    "chinese": "工具，器械；乐器",
     "patternType": null,
     "similarityScore": 87,
     "difficulty": "easy",
@@ -7251,11 +7272,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "mito",
-    "english": "mit",
-    "chinese": "光标",
+    "english": "myth",
+    "chinese": "神话；传奇人物",
     "patternType": null,
-    "similarityScore": 87,
-    "difficulty": "easy",
+    "similarityScore": 50,
+    "difficulty": "medium",
     "rank": 7308
   },
   {
@@ -7288,7 +7309,7 @@ var COGNATE_DATA = [
   {
     "italian": "determinato",
     "english": "determined",
-    "chinese": "决 定",
+    "chinese": "坚定的；确定的，特定的",
     "patternType": null,
     "similarityScore": 87,
     "difficulty": "easy",
@@ -7351,7 +7372,7 @@ var COGNATE_DATA = [
   {
     "italian": "corriere",
     "english": "courier",
-    "chinese": "库里尔",
+    "chinese": "快递员，信使",
     "patternType": null,
     "similarityScore": 87,
     "difficulty": "easy",
@@ -7378,7 +7399,7 @@ var COGNATE_DATA = [
   {
     "italian": "Brasile",
     "english": "brazil",
-    "chinese": "联合国",
+    "chinese": "巴西",
     "patternType": null,
     "similarityScore": 87,
     "difficulty": "easy",
@@ -7621,11 +7642,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "osservato",
-    "english": "observation",
-    "chinese": "意 见",
+    "english": "observed",
+    "chinese": "被观察到的；被遵守的",
     "patternType": null,
-    "similarityScore": 87,
-    "difficulty": "easy",
+    "similarityScore": 55,
+    "difficulty": "medium",
     "rank": 9723
   },
   {
@@ -8697,11 +8718,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "esca",
-    "english": "escape",
-    "chinese": "越狱",
+    "english": "bait, lure",
+    "chinese": "鱼饵，诱饵",
     "patternType": null,
-    "similarityScore": 63,
-    "difficulty": "medium",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 2885
   },
   {
@@ -8851,7 +8872,7 @@ var COGNATE_DATA = [
   {
     "italian": "versi",
     "english": "verses",
-    "chinese": "符号",
+    "chinese": "诗句，诗行",
     "patternType": null,
     "similarityScore": 63,
     "difficulty": "medium",
@@ -8887,7 +8908,7 @@ var COGNATE_DATA = [
   {
     "italian": "informato",
     "english": "informed",
-    "chinese": "知情情况",
+    "chinese": "知情的，了解情况的",
     "patternType": null,
     "similarityScore": 63,
     "difficulty": "medium",
@@ -8986,7 +9007,7 @@ var COGNATE_DATA = [
   {
     "italian": "ambasciatore",
     "english": "ambassador",
-    "chinese": "联合国",
+    "chinese": "大使",
     "patternType": null,
     "similarityScore": 63,
     "difficulty": "medium",
@@ -9256,7 +9277,7 @@ var COGNATE_DATA = [
   {
     "italian": "tenero",
     "english": "tender",
-    "chinese": "投标",
+    "chinese": "柔软的；温柔的",
     "patternType": null,
     "similarityScore": 63,
     "difficulty": "medium",
@@ -9463,7 +9484,7 @@ var COGNATE_DATA = [
   {
     "italian": "tre",
     "english": "three",
-    "chinese": "3个",
+    "chinese": "三",
     "patternType": null,
     "similarityScore": 62,
     "difficulty": "medium",
@@ -9894,8 +9915,8 @@ var COGNATE_DATA = [
   },
   {
     "italian": "Marco",
-    "english": "mark",
-    "chinese": "标记",
+    "english": "mark (name)",
+    "chinese": "马可（名字）",
     "patternType": null,
     "similarityScore": 62,
     "difficulty": "medium",
@@ -10039,7 +10060,7 @@ var COGNATE_DATA = [
   {
     "italian": "monte",
     "english": "mount",
-    "chinese": "挂载",
+    "chinese": "山，山峰",
     "patternType": null,
     "similarityScore": 62,
     "difficulty": "medium",
@@ -10048,7 +10069,7 @@ var COGNATE_DATA = [
   {
     "italian": "sofferenza",
     "english": "suffering",
-    "chinese": "受 难",
+    "chinese": "痛苦，苦难",
     "patternType": null,
     "similarityScore": 62,
     "difficulty": "medium",
@@ -10701,7 +10722,7 @@ var COGNATE_DATA = [
   {
     "italian": "inglese",
     "english": "english",
-    "chinese": "联合国",
+    "chinese": "英语；英国的",
     "patternType": null,
     "similarityScore": 61,
     "difficulty": "medium",
@@ -10836,7 +10857,7 @@ var COGNATE_DATA = [
   {
     "italian": "attaccato",
     "english": "attached",
-    "chinese": "附 录",
+    "chinese": "附着的，粘住的；被攻击的",
     "patternType": null,
     "similarityScore": 61,
     "difficulty": "medium",
@@ -10880,10 +10901,10 @@ var COGNATE_DATA = [
   },
   {
     "italian": "soffrire",
-    "english": "suffering",
-    "chinese": "受 难",
+    "english": "suffer",
+    "chinese": "受苦，遭受；患（病）",
     "patternType": null,
-    "similarityScore": 61,
+    "similarityScore": 50,
     "difficulty": "medium",
     "rank": 3112
   },
@@ -10908,7 +10929,7 @@ var COGNATE_DATA = [
   {
     "italian": "russo",
     "english": "russian",
-    "chinese": "俄罗斯联邦",
+    "chinese": "俄语；俄罗斯的",
     "patternType": null,
     "similarityScore": 61,
     "difficulty": "medium",
@@ -11205,7 +11226,7 @@ var COGNATE_DATA = [
   {
     "italian": "Colonia",
     "english": "cologne",
-    "chinese": "科隆岛",
+    "chinese": "科隆（德国城市）",
     "patternType": null,
     "similarityScore": 61,
     "difficulty": "medium",
@@ -11775,7 +11796,7 @@ var COGNATE_DATA = [
     "chinese": "这样的；某个",
     "patternType": "假朋友 faux-ami",
     "similarityScore": 100,
-    "difficulty": "medium",
+    "difficulty": "easy",
     "rank": 1395,
     "falseFriend": true,
     "falseFriendOf": "tale",
@@ -11906,7 +11927,7 @@ var COGNATE_DATA = [
     "chinese": "该死的",
     "patternType": null,
     "similarityScore": null,
-    "difficulty": "medium",
+    "difficulty": "hard",
     "rank": 2395
   },
   {
@@ -11938,11 +11959,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "galera",
-    "english": "galley",
-    "chinese": "货柜",
+    "english": "prison, jail",
+    "chinese": "监狱，牢房",
     "patternType": null,
-    "similarityScore": 60,
-    "difficulty": "medium",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 2693
   },
   {
@@ -12155,7 +12176,7 @@ var COGNATE_DATA = [
   {
     "italian": "roccia",
     "english": "rock",
-    "chinese": "摇滚",
+    "chinese": "岩石，岩壁",
     "patternType": null,
     "similarityScore": 60,
     "difficulty": "medium",
@@ -12227,7 +12248,7 @@ var COGNATE_DATA = [
   {
     "italian": "duca",
     "english": "duke",
-    "chinese": "达克",
+    "chinese": "公爵",
     "patternType": null,
     "similarityScore": 60,
     "difficulty": "medium",
@@ -12289,11 +12310,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "rene",
-    "english": "reigns",
-    "chinese": "调整",
+    "english": "kidney",
+    "chinese": "肾，肾脏",
     "patternType": null,
-    "similarityScore": 60,
-    "difficulty": "medium",
+    "similarityScore": null,
+    "difficulty": "hard",
     "rank": 5931
   },
   {
@@ -12464,7 +12485,7 @@ var COGNATE_DATA = [
     "chinese": "巢穴，窝",
     "patternType": null,
     "similarityScore": null,
-    "difficulty": "medium",
+    "difficulty": "hard",
     "rank": 7489
   },
   {
@@ -13216,11 +13237,11 @@ var COGNATE_DATA = [
   },
   {
     "italian": "adrenalina",
-    "english": "adrenaline rush",
-    "chinese": "肾上腺素急症",
+    "english": "adrenaline",
+    "chinese": "肾上腺素",
     "patternType": null,
-    "similarityScore": 52,
-    "difficulty": "medium",
+    "similarityScore": 90,
+    "difficulty": "easy",
     "rank": 8416
   },
   {
@@ -13405,10 +13426,10 @@ var COGNATE_DATA = [
   },
   {
     "italian": "interessato",
-    "english": "interested party",
-    "chinese": "有关当事方",
+    "english": "interested, concerned",
+    "chinese": "感兴趣的；有关的",
     "patternType": null,
-    "similarityScore": 51,
+    "similarityScore": 63,
     "difficulty": "medium",
     "rank": 2698
   },
@@ -13688,7 +13709,7 @@ var COGNATE_DATA = [
     "chinese": "瞬间移动，传送",
     "patternType": null,
     "similarityScore": null,
-    "difficulty": "medium",
+    "difficulty": "hard",
     "rank": 9361
   },
   {

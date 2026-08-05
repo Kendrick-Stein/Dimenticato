@@ -191,15 +191,29 @@
   }
 
   /**
+   * 顶栏底下那颗常驻返回丸的偏移量。.topbar 是 sticky 且不透明，压在它下面的东西
+   * 等于点不到；而顶栏高度随断点变（窄屏比宽屏高一档），CSS 又没有「引用另一个元素
+   * 的高度」这种能力，所以这里量一次写进自定义属性，样式表只管 position:sticky。
+   */
+  function syncStickyTop() {
+    var bar = document.querySelector('.topbar');
+    if (!bar) return;
+    var h = bar.getBoundingClientRect().height;
+    if (h > 0) document.documentElement.style.setProperty('--cognate-sticky-top', Math.round(h) + 'px');
+  }
+
+  /**
    * 「沉浸式」视图标记 —— 只在对比卡片 / 拼写题这两种「页面最底下就是主操作按钮」
-   * 的视图上打开。390×844 逐条实测：这两种视图里 .mobile-floating-back 会和主按钮
-   * 矩形相叠（对比模式 DE 88/2347、FR 64/4272、IT 9/1587 条，几乎全是多一条假朋友
-   * 提示条、卡片更高的词条；拼写题的「下一题 →」是通栏按钮，右半截几乎每题都被压住），
-   * 其中一部分连按钮中心都被悬浮按钮吃掉，点下去触发 goBack() 直接退出练习。
+   * 的视图上打开。窄屏逐条实测：这两种视图里 .mobile-floating-back 会和主按钮矩形
+   * 相叠（几乎全是多一条假朋友提示条、卡片更高的词条；拼写题的「下一题 →」是通栏
+   * 按钮，右半截几乎每题都被压住），其中一部分连按钮中心都被悬浮按钮吃掉，
+   * 点下去触发 goBack() 直接退出练习。
    *
-   * 打开时由 CSS 把悬浮返回按钮隐掉，改用屏内顶部的 #cognateBackBtn 返回（这两种
-   * 视图内容都不长，顶部返回链接在首屏之内）。列表类视图（浏览 / 规律列表 / 模式
-   * 选择）要滚很久，悬浮按钮照常保留。
+   * 打开时由 CSS 做两件事：把悬浮返回按钮隐掉，同时把屏内的 #cognateBackBtn 钉在
+   * 顶栏正下方常驻。两件事必须一起做 —— 只隐悬浮按钮的话，卡片高过一屏的词条滚到
+   * 够得着底部主按钮时，屏内返回链接已经滚进顶栏底下，整屏没有任何可达的返回控件。
+   * 列表类视图（浏览 / 规律列表 / 模式选择）底部没有主操作按钮，不加这个类，
+   * 悬浮按钮照常保留。
    *
    * 标记打在容器自身而不是 body 上：CSS 侧还要求同源词屏处于 active，
    * 所以哪怕跳转时这个类没被清掉，也不会漏到别的屏幕上。
@@ -207,6 +221,7 @@
   function setImmersive(on) {
     var container = getContainer();
     if (container) container.classList.toggle('cognate-immersive', !!on);
+    if (on) syncStickyTop();
   }
 
   // === 词条字段读取（全部经 LANG_CONFIG，不出现具体语言字段名） ===
@@ -271,11 +286,11 @@
   /**
    * 「规律」这一栏的文字说明。patternType 一共有四种写法，只有第一种是
    * `源语言/英语` 的后缀对应，照着 split('/') 一把梭会把另外三种渲染成胡话
-   * （最大的那组 identisch 396 词会显示成「Deutsch 侧的 “identisch” 对应英语的
-   * “English”」）：
+   * （最大的那组 identisch 会显示成「Deutsch 侧的 “identisch” 对应英语的 “English”」）：
    *   1. `-isch/-ic`      后缀对应，左源右英；英语侧可能是 Ø（-ieren/-Ø）
-   *   2. `c↔k`            字母对应；标签方向不统一（h↔Ø 是德左英右，其余相反），
-   *                       所以这里只陈述「存在这组对应」，不认定哪边是哪边
+   *   2. `c↔k`            字母对应。方向由数据决定、这里不认定：德语数据现在整齐
+   *                       统一成「英↔德」，但这是数据侧的约定，改一版就可能翻个面，
+   *                       所以这里只陈述「存在这组对应」，谁在左谁在右不写死
    *   3. identisch / 同形词 identical / falscher Freund / 假朋友 faux-ami
    *   4. Other            patternType 为空的兜底组
    */
@@ -373,10 +388,16 @@
   }
 
   /**
-   * 标准化文本用于答案比对（忽略重音）
+   * 标准化文本用于答案比对（忽略重音；ß 与 ss 视为同一种写法）
+   *
+   * ß↔ss 在德语正字法里本来就是同一个字的两种书写变体（瑞士德语一律写 ss），
+   * 而学习者用美式键盘根本打不出 ß —— 不折叠的话 "die Strasse" 会被判错，
+   * 界面又从头到尾没告诉过他那个字符要怎么输入。折叠只会把「仅 ß/ss 不同」的
+   * 两串合并，不会让别的词互相认错。
    */
   function normalizeForCompare(str) {
     return (str || '').trim().toLowerCase()
+      .replace(/ß/g, 'ss')
       .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   }
 
@@ -386,12 +407,17 @@
   }
 
   /**
-   * 答案比对：带冠词的 display 与裸词形两种写法都算对。
+   * 答案比对：带冠词的完整写法与裸词形两种都算对。
    *
-   * 德语 2,347 条同源词里 1,724 条的 display 带定冠词（"die Session"），而答错 / 跳过时
-   * 反馈区照 display 印「正确答案」。只比 headwordOf() 的裸词形的话，把 app 自己印出来
-   * 的答案原样抄回去照样判错；反过来带冠词的名词只写裸词也不该判错 —— 数据里并没有
+   * 德语数据里大半条目的 display 带定冠词（"die Session"），而答错 / 跳过时反馈区
+   * 照 display 印「正确答案」。只比 headwordOf() 的裸词形的话，把 app 自己印出来的
+   * 答案原样抄回去照样判错；反过来带冠词的名词只写裸词也不该判错 —— 数据里并没有
    * 「必须写冠词」这条要求，判错等于系统性训练用户不写冠词。
+   *
+   * 「带冠词那一串」取的是 displayPartsOf() 拼回来的 prefix + head，不是 word.display
+   * 本身：反馈区印的就是这两段拼出来的东西（见 diffOf()），只有当 display 恰好以裸
+   * 词形结尾时它才等于 display。拿渲染用的同一个函数做比对，「界面印什么就接受什么」
+   * 才是结构性成立的，而不是靠现有数据碰巧满足那个后缀条件。
    *
    * 只放行这两种写法本身：两边都是全等比对，不做前缀 / 包含式的宽松匹配，
    * 「答案里多打了别的东西」照旧算错。
@@ -400,10 +426,11 @@
   function isAnswerCorrect(word, userAnswer) {
     var typed = normalizeAnswer(userAnswer);
     if (!typed) return false;
-    var head = normalizeAnswer(headwordOf(word));
+    var parts = displayPartsOf(word);
+    var head = normalizeAnswer(parts.head);
     if (head && typed === head) return true;
-    var display = normalizeAnswer(word && word.display);
-    return !!display && typed === display;
+    var printed = normalizeAnswer(parts.prefix + parts.head);
+    return !!printed && typed === printed;
   }
 
   /**
@@ -949,6 +976,8 @@
       installFrenchEntry();
       bindEntryButtons();
       bindBackButton();
+      // 转屏 / 改窗宽会换断点，顶栏高度跟着变，常驻返回丸的偏移量要重算
+      window.addEventListener('resize', syncStickyTop);
     },
 
     getLanguage() {
@@ -1191,6 +1220,12 @@
     grid.classList.remove('cols-3');
     grid.classList.add('cols-2');
 
+    // 词数不写死：本函数跑在 DOMContentLoaded，法语包多半还没懒加载进来，读不到就先
+    // 留一个省略号，等 lib/router.js 的 syncDatasetCounts() 在数据到位后填真数。
+    // （写死一个数的下场上一轮见过：数据一改，界面就一直挂着骗人的旧值。）
+    var frenchCount = datasetFor('french').length;
+    var frenchLabel = frenchCount ? fmt(frenchCount) : '…';
+
     var card = document.createElement('div');
     card.className = 'card';
     card.innerHTML =
@@ -1198,7 +1233,8 @@
       '<span class="card-title">同源词 · 借力英语</span>' +
       '<span class="card-desc">和英语同源的法语词；faux amis（假朋友）单独标注。</span>' +
       '<div class="chips wrap">' +
-        '<button class="chip" data-cognate-lang="french">同源词 · <span data-count="french-cognates">4,272</span> 词</button>' +
+        '<button class="chip" data-cognate-lang="french">同源词 · <span data-count="french-cognates">' +
+          frenchLabel + '</span> 词</button>' +
       '</div>';
     grid.appendChild(card);
   }

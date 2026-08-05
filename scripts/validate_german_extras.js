@@ -319,6 +319,28 @@ check(Array.isArray(collocations.meta.licenses) && collocations.meta.licenses.le
   const coverage = typed / cognates.length;
   check(coverage >= 0.7, CAT, 'patternType coverage ' + (coverage * 100).toFixed(1) +
     '% is below the 70% bar');
+
+  // -- 规律组不能太小 ------------------------------------------------------
+  // 界面上每个 patternType 都会单独出一张卡片，还会写一句「这一组词……存在
+  // 某某对应」。只兜住两三个词的组撑不起这句话，构建脚本里的
+  // MIN_PATTERN_GROUP 会把它们并进 Other。那边是个跑到不动点的循环，这里
+  // 独立复核落地结果，免得循环哪天不收敛、thin 组静悄悄发出去。
+  // 数值跟 scripts/build_german_extras.py 的 MIN_PATTERN_GROUP 对齐。
+  const MIN_PATTERN_GROUP = 5;
+  const EXEMPT = ['identisch', 'falscher Freund'];  // 不是规则标签，不受此限
+  const groupSize = new Map();
+  cognates.forEach(function (entry) {
+    const p = entry.patternType;
+    if (!p || EXEMPT.indexOf(p) !== -1) return;
+    groupSize.set(p, (groupSize.get(p) || 0) + 1);
+  });
+  const thin = [];
+  groupSize.forEach(function (n, p) {
+    if (n < MIN_PATTERN_GROUP) thin.push(p + '=' + n);
+  });
+  check(thin.length === 0, CAT, 'pattern groups below MIN_PATTERN_GROUP=' +
+    MIN_PATTERN_GROUP + ': ' + thin.sort().join(', '));
+  check(groupSize.size > 0, CAT, 'no rule-based pattern groups at all');
 })();
 
 // ---------------------------------------------------------------------------
