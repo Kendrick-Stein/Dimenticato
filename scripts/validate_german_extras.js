@@ -355,9 +355,34 @@ check(Array.isArray(collocations.meta.licenses) && collocations.meta.licenses.le
   const normalize = function (value) {
     return String(value || '').normalize('NFKC').toLocaleLowerCase('de-DE').replace(/\//g, '').trim();
   };
+  // The index has to mirror GermanCourse.buildWordIndex() in german-course.js,
+  // otherwise this gate fails headwords the app resolves perfectly well.  The
+  // renderer indexes the lemma (german / display) *and* the inflected forms the
+  // dictionary already carries (plural, principal parts), so "Frauen" finds
+  // "Frau" and "gegessen" finds "essen".  Two passes, lemmas first: an inflected
+  // form must never displace a word whose own lemma is spelled the same way.
+  const inflectedForms = function (word) {
+    const forms = [];
+    if (word.plural) forms.push(word.plural);
+    if (word.principalParts) {
+      String(word.principalParts).split(',').forEach(function (part) {
+        part.trim().split(/\s+/).forEach(function (token) {
+          // "isst, aß, hat gegessen" — the auxiliary is not a word form
+          if (token && !/^(hat|ist|haben|sein|hast|bin)$/.test(token)) forms.push(token);
+        });
+      });
+    }
+    return forms;
+  };
   const vocabIndex = new Map();
   vocabulary.forEach(function (word) {
     [word.german, word.display].forEach(function (value) {
+      const key = normalize(value);
+      if (key && !vocabIndex.has(key)) vocabIndex.set(key, word);
+    });
+  });
+  vocabulary.forEach(function (word) {
+    inflectedForms(word).forEach(function (value) {
       const key = normalize(value);
       if (key && !vocabIndex.has(key)) vocabIndex.set(key, word);
     });
@@ -404,12 +429,16 @@ check(Array.isArray(collocations.meta.licenses) && collocations.meta.licenses.le
         const word = vocabIndex.get(normalize(headword));
         if (!check(!!word, CAT, where + ': headword "' + headword +
           '" does not resolve against german-vocabulary.js')) return;
-        check(!localSeen.has(word.german), CAT,
-          where + ': "' + headword + '" resolves to the same entry twice');
         localSeen.add(word.german);
         check(!badText(word.meaning || word.chinese), CAT,
           where + ': headword "' + headword + '" has no usable gloss');
       });
+      // Two headwords may legitimately land on the same entry now that the
+      // index knows inflections ("Frau" + "Frauen"); the renderer drops the
+      // duplicate silently.  What actually matters is the size of the practice
+      // pool the learner ends up with, so assert that instead.
+      check(localSeen.size >= 20, CAT, where + ': only ' + localSeen.size +
+        ' distinct words after deduplication (need >= 20)');
       headwords += (unit.headwords || []).length;
 
       // -- real example sentences with real translations ------------------

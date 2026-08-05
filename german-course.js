@@ -8,40 +8,53 @@
   const LEVEL_KEY = 'dimenticato_german_course_level';
 
   // ── 课程语法标签 → 语法书章节 ──────────────────────────────────────────────
-  // 课程数据里有 144 个语法标签，德语语法书只有 27 个条目 slug。下面把标签映射
-  // 到最贴近的章节：先查精确覆盖表，再按关键词规则（自上而下，先匹配先生效）。
-  // 映射不到的标签仍然作为纯文本展示，不会渲染成可点击的 chip。
+  // 权威映射表在 data/german-course-data.js 的 GERMAN_COURSE_GRAMMAR_SLUGS 里，
+  // 它是跟着语法书一起维护的；这里先查它，两边就不可能再各说各话。
+  // 下面的覆盖表 + 关键词规则只是它没有收录的标签的兜底（自上而下，先匹配先生效），
+  // 目标章节必须是语法树里真实存在的 slug —— 语法书重建时这里也要跟着改。
+  // 映射不到、或映射到的章节不存在的标签，仍然作为纯文本展示，不渲染成可点击的 chip。
   const GRAMMAR_SLUG_OVERRIDES = {
-    '同义转述': '句法/句法',
+    '同义转述': '其他/其他',
     '句中时间/原因/情态/地点成分': '句法/句法',
-    '对立/选择/情态从句': '句法/句法',
-    '名词/动词/形容词介词搭配': '介词/介词',
+    '对立/选择/情态从句': '连词/从属连词总表',
+    '名词/动词/形容词介词搭配': '动词/用法模式',
     '语气小品词': '句法/句法',
-    '属格文学表达': '冠词/冠词'
+    '属格文学表达': '名词/名词'
   };
 
   const GRAMMAR_SLUG_RULES = [
     [/Konjunktiv|虚拟语气|间接引语|转述|要求句|Imperativ/, '动词/叙述方式'],
-    [/Partizip|分词/, '动词/分词'],
-    [/Infinitiv|不定式|um \.\.\. zu|ohne zu|brauchen \+ zu/, '动词/不定式'],
+    [/扩展分词/, '非限定形式/扩展分词定语'],
+    [/Partizip|分词/, '非限定形式/分词'],
+    // 「werden + Infinitiv」是将来时，不是不定式结构：这里只认「zu + Infinitiv」
+    // 这种显式写法，光有 Infinitiv 一词的标签留给下面的时态规则。
+    [/zu \+ Infinitiv|不定式|um \.\.\. zu|ohne zu|brauchen \+ zu/, '非限定形式/带zu的不定式'],
     [/被动|[Pp]assiv/, '动词/行动方式'],
     [/可分|前缀/, '动词/动词前缀'],
-    [/Präsens|Präteritum|Perfekt|Plusquamperfekt|Futur|时态|变位/, '动词/变位'],
+    [/Präsens|Präteritum|Perfekt|Plusquamperfekt|Futur|werden \+ Infinitiv|时态|变位/, '动词/变位'],
+    // 「条件句 mit sollen」讲的是条件句，不是情态动词：要排在下面这条 sollen 规则前面
+    [/条件/, '条件与比较/条件句'],
     [/情态|dürfen|können|müssen|wollen|mögen|sollen|sollte|brauchen|wissen|werden|haben|sein\b/, '动词/动词'],
     [/n-Deklination|弱变化/, '名词/阳性弱变化'],
     [/词尾/, '形容词/形容词变格'],
     [/名词化|名词|单复数|复数|同位语/, '名词/名词'],
     [/形容词|Adjektive|比较级|最高级/, '形容词/形容词'],
-    [/代副词/, '副词/副词'],
+    [/代副词/, '副词/代副词da-wo'],
     [/冠词|kein|welch-/, '冠词/冠词'],
     [/代词|einander|man\b|es 的功能/, '代词/代词'],
-    [/副词|Adverbien/, '副词/副词'],
+    [/方位副词/, '副词/hin与her'],
+    [/副词|Adverbien/, '副词/副词的种类与位置'],
     [/介词 auf 与 in|介词辨析/, '介词/介词辨析'],
     [/Dativ 介词|Genitiv 介词|双向介词|mit \+ Dativ|für\/ohne|trotz|während\/wegen|支配格/, '介词/介词支配格'],
     [/介词/, '介词/介词'],
     [/Akkusativ|Dativ|Genitiv|属格/, '冠词/冠词'],
-    [/连词|连接词|连接副词|二项连接|成对连词|并列连词|连续|让步/, '连词/连词'],
-    [/dass|weil|obwohl|nachdem|damit|bevor|seit|während|als\/wenn|wenn|je \.\.\. desto|ohne dass|条件|finale/, '连词/连词'],
+    [/并列连词/, '连词/并列连词'],
+    [/二项连接|成对连词|je \.\.\. desto/, '连词/双重连词'],
+    [/nachdem|bevor|seit|während|als\/wenn|wenn 从句|时间从句/, '连词/时间从句连词'],
+    [/damit|finale|因果|原因|结果|目的/, '连词/原因结果与目的'],
+    [/obwohl|让步|对比/, '连词/让步与对比'],
+    [/连词|连接词|连接副词|连续/, '连词/从属连词总表'],
+    [/dass|weil|wenn|ohne dass/, '连词/从属连词总表'],
     [/从句|句|语序|语体|文本|衔接|结构|论证|定义|表达|搭配|功能|成分|Modalsätze/, '句法/句法'],
     [/动词/, '动词/动词'],
     [/数词/, '数词/数词'],
@@ -51,6 +64,8 @@
   function grammarSlugFor(tag) {
     const key = String(tag || '').trim();
     if (!key) return '';
+    const shared = typeof GERMAN_COURSE_DATA !== 'undefined' && GERMAN_COURSE_DATA.grammarSlugs;
+    if (shared && shared[key]) return shared[key];
     if (GRAMMAR_SLUG_OVERRIDES[key]) return GRAMMAR_SLUG_OVERRIDES[key];
     const rule = GRAMMAR_SLUG_RULES.find((entry) => entry[0].test(key));
     return rule ? rule[1] : '';

@@ -23,7 +23,15 @@
  *   - faux-ami entries carry the whole field set (the app renders `warning`
  *     first and ignores `italianFor` without it, so half-populated rows are
  *     invisible bugs),
- *   - headwords are unique and patternType is a recognised label.
+ *   - headwords are unique and patternType is a recognised label,
+ *   - no gloss carries a machine-translation tail (「家庭情况」「同事们」「鼻头」), a
+ *     software/UN-only rendering (「端口」「特派团」「职等」), or a phonetic
+ *     transliteration of the headword itself (「克鲁瓦塔」「奥卡」「马高」),
+ *   - nothing the quiz would hand back as *the* correct answer is a word the app has no
+ *     business teaching: banned headwords, slurs on the english side, and glosses that
+ *     need an "offensive/slur" marker are all hard failures. This is the negro lesson —
+ *     the quiz shows `english` and grades the headword, so fixing only the Chinese gloss
+ *     left the app teaching a slur as the way to say "black".
  *
  * Exits 0 when clean, 1 on the first non-empty error list.
  */
@@ -66,6 +74,42 @@ const PLACEHOLDER = /^(\?+|n\/?a|todo|tbd|-+|\(n\)|null|none|undefined|xxx+)$/i;
 const MOJIBAKE = /[�-]|Ã[\x80-\xBF]|â€|Â[\xA0-\xBF]/;
 // patternType：`-意语后缀/-英语后缀` 的对应，或假朋友标签
 const PATTERN_OK = /^(假朋友 faux-ami|-[^/\s]+\/-?[^/\s]+)$/;
+
+// ---------------------------------------------------------------------------
+// 第三轮加进来的三类残渣指纹。每一类都是「整份数据里扫出来、有几十条同类」的模式，
+// 不是单条特例，所以写成断言而不是修一条算一条。
+// ---------------------------------------------------------------------------
+
+// (1) 机械残渣后缀：机翻把上下文里的搭配词粘在词条上（famiglia→「家庭情况」、
+//     popolo→「人员」、collega→「同事们」）。判据是「义项以这些字收尾、且不止这些字」——
+//     situazione→「情况」、attività→「活动」本身是对的，被粘在别的词后面才是错的。
+const RESIDUE_TAILS = ['情况', '问题', '人员', '活动', '说明', '们'];
+
+// (2) 软件 / 联合国本地化义：这些译法在各自的语料里没错，但作为学习者词典义永远是错的，
+//     而且整份数据里没有任何一条正当用法（porto→「端口」、missione→「特派团」、
+//     presidente→「庭长」、livello→「职等」）。带域的词只挑这种「词典里绝不会这么写」的，
+//     像「系统」「状态」「安装」那种两边都成立的不进表，靠下面的回归表钉住。
+const LOCALIZATION_ONLY = ['端口', '条目', '图标', '特派团', '职等', '庭长', '司长', '养恤金', '支助'];
+
+// (3) 纯音译释义：english 侧存的是意大利语原词本身（抓取残渣），中文是照着那个原词音译的
+//     （cravatta→「克鲁瓦塔」、oca→「奥卡」、mago→「马高」）。指纹是「english === italian
+//     且中文整串都由音译常用字组成」。真正的外来词/人名当然也长这样，逐条列在下面。
+const TRANSLITERATION_CHARS = new Set(
+  ('阿埃艾奥澳巴拜邦保鲍贝本比彼波伯勃博布采查察昌达大戴丹当道德登迪蒂狄丁东杜多厄恩尔法凡菲费芬佛弗福伏噶盖甘冈戈哥格各根古瓜圭贵哈海罕汉豪合河赫黑亨侯呼胡华怀霍基吉几加贾杰捷金卡凯坎康考柯科克肯孔库夸奎昆拉莱兰朗劳勒雷黎里理利丽力莉连列林琳灵留龙隆卢鲁路伦罗洛马迈曼芒茅梅美门蒙孟弥米密缪莫墨姆穆拿纳内奈尼涅宁纽努诺欧帕潘庞培佩彭皮平珀普齐奇契恰乔切钦琼丘让日荣茹瑞若萨塞赛桑瑟森莎沙山珊尚舍圣施诗石史士舒斯司丝苏所索塔台泰坦汤唐特腾提蒂天铁廷托妥瓦万王威韦维魏温文沃乌吾西希锡夏仙香肖谢辛欣休胥叙宣薛雅亚扬耶叶伊依宜以易因音英尤于约越云泽扎詹哲珍震芝之志治中仲朱兹佐').split('')
+);
+// english === italian 且释义确实是音译 —— 这几条是真的外来词/人名，不是残渣。
+const LOANWORD_TRANSLITERATIONS = new Set(
+  ['alice', 'oscar', 'maya', 'vodka', 'ella', 'melissa', 'montgomery', 'celia', 'gene']
+);
+
+// (4) 「答案本身不该被教」：出题模式拿 english 当题面、拿词条当唯一正确答案，
+//     所以释义里加一句警告救不了 —— 一个词只要在 english 侧占着一个常用词，
+//     就等于被 App 推荐使用。negro 就是这么变成「教中文学习者用它表达『黑色』」的。
+//     这类词只能删，中文侧一旦需要「蔑称/冒犯语/贬称」这种标注，就是删除信号。
+const OFFENSIVE_MARKER = /蔑称|冒犯语|贬称|种族歧视/;
+const SLUR_EN = /\b(negro|negroes|nigg\w*|coloured|colored\s+people|retard|retarded|midget|cripple|faggot|spastic|mongoloid)\b/i;
+// 直接禁掉词头本身：删过的词别被下一个批量脚本从原始抓取里捡回来。
+const BANNED_HEADWORDS = new Set(['negro']);
 
 function badText(value) {
   if (typeof value !== 'string') return 'not a string';
@@ -186,6 +230,36 @@ DATA.forEach((row, i) => {
       `${where}: chinese lists the same sense twice -> ${JSON.stringify(row.chinese)}`);
   }
 
+  // --- 第三轮的三类残渣指纹 ---------------------------------------------
+  check(!BANNED_HEADWORDS.has(key),
+    `${where}: headword is on the ban list — it was removed because the quiz modes would hand it ` +
+    `to the learner as the one correct answer, and a warning in the gloss cannot undo that`);
+  check(!OFFENSIVE_MARKER.test(row.chinese || ''),
+    `${where}: chinese needs an "offensive/slur" marker -> ${JSON.stringify(row.chinese)}. ` +
+    `A word that needs that marker must not be in a set the quiz asks the learner to produce; delete it`);
+  check(!SLUR_EN.test(row.english || '') && !SLUR_EN.test(row.falseFriendOf || ''),
+    `${where}: english side carries a slur -> ${JSON.stringify(row.english)}`);
+
+  for (const seg of (row.chinese || '').split(/[，；、]/).map((s) => s.trim()).filter(Boolean)) {
+    const tail = RESIDUE_TAILS.find((t) => seg.endsWith(t) && seg.length > t.length);
+    check(!tail,
+      `${where}: chinese sense "${seg}" ends in the machine-translation tail "${tail}" ` +
+      `-> ${JSON.stringify(row.chinese)}`);
+    check(!LOCALIZATION_ONLY.includes(seg),
+      `${where}: chinese sense "${seg}" is a software/UN localisation rendering, not a dictionary gloss ` +
+      `-> ${JSON.stringify(row.chinese)}`);
+  }
+
+  // 大写词头是专有名词（Chicago、Roberto、Alaska），音译就是它们正确的释义，跳过。
+  const isProperNoun = /^[A-Z]/.test(row.italian || '');
+  if (!isProperNoun && (row.english || '').toLowerCase() === key && !LOANWORD_TRANSLITERATIONS.has(key)) {
+    const zh = (row.chinese || '').replace(/[（），、；：。？！“”‘’…—·]/g, '');
+    const translit = zh.length >= 2 && zh.split('').every((c) => TRANSLITERATION_CHARS.has(c));
+    check(!translit,
+      `${where}: english is just the Italian headword and the gloss ${JSON.stringify(row.chinese)} ` +
+      `is a phonetic transliteration of it — that is scraping residue, not a translation`);
+  }
+
   // --- similarity + difficulty -----------------------------------------
   const score = row.similarityScore;
   check(score === null || (Number.isInteger(score) && score >= 0 && score <= 100),
@@ -254,11 +328,40 @@ check(maxRank > DATA.length,
 check(nullScore < DATA.length * 0.05,
   `cognates: ${nullScore}/${DATA.length} entries have no similarity score — the dataset is losing its point`);
 
-// 第一轮点名改成假朋友的词，别被后续的批量脚本改回去
-for (const w of ['ape', 'libreria', 'agenda', 'educato', 'collegio', 'babbo', 'tale', 'peste', 'bob']) {
+// 第一 / 三轮点名改成假朋友的词，别被后续的批量脚本改回去
+for (const w of ['ape', 'libreria', 'agenda', 'educato', 'collegio', 'babbo', 'tale', 'peste', 'bob',
+  'deficiente', 'confidenza']) {
   const row = DATA.find((r) => r.italian === w);
   if (check(!!row, `cognates: required faux ami "${w}" is missing`)) {
     check(row.falseFriend === true, `cognates: "${w}" is not flagged as a faux ami`);
+  }
+}
+
+// 上面三条通用规则抓不住的那些「就是译错了」的高频词：钉成回归表。
+// 值是被改掉的旧释义，重新出现即为回归（重新抓一遍原始数据最容易把它们带回来）。
+const REGRESSED_GLOSSES = {
+  successo: '成绩', film: '胶片', segreto: '隐藏', appuntamento: '任命', occasione: '时间',
+  segno: '签名', trappola: '设置', entrata: '条目', angelo: '安吉尔', sistemare: '系统',
+  anatra: '动画', cesso: '必需', astronave: '天文学家', convivere: '聚集点', stalla: '稳定',
+  presentimento: '当前', statale: '状态', modella: '模式', droga: '药物', giardino: '园艺',
+  banda: '带', genio: '天赋', succedere: '成功', polizia: '警务', preside: '庭长',
+};
+for (const [w, stale] of Object.entries(REGRESSED_GLOSSES)) {
+  const row = DATA.find((r) => r.italian === w);
+  if (check(!!row, `cognates: "${w}" is missing`)) {
+    check(row.chinese !== stale,
+      `cognates: "${w}" is back to the mistranslation ${JSON.stringify(stale)}`);
+  }
+}
+
+// polo/「极」那一类：english 侧压根不表示中文里写的那个义项，出题模式就会拿一个英语词
+// 去问它并不表示的意思。整份数据没法机器判定，这里只钉住已经查过的这几对。
+for (const [w, en] of Object.entries({ polo: 'pole', pero: 'pear tree', preside: 'principal' })) {
+  const row = DATA.find((r) => r.italian === w);
+  if (check(!!row, `cognates: "${w}" is missing`)) {
+    check(row.english === en,
+      `cognates: "${w}" english is ${JSON.stringify(row.english)}, expected ${JSON.stringify(en)} — ` +
+      `the two sides were realigned by hand, see the header of data/cognates.js`);
   }
 }
 
