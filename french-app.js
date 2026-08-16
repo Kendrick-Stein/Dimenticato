@@ -340,6 +340,15 @@
               <span class="card-desc">浏览、搜索并筛选法语词汇</span>
             </button>
           </div>
+
+          <button class="card typing-feature-card" data-typing-game-lang="french">
+            <span class="card-chip"><span class="msr">surfing</span></span>
+            <span class="typing-feature-text">
+              <span class="card-title">打字游戏 · 激流勇进</span>
+              <span class="card-desc">单词顺流而下，看释义、打字击落！支持背单词与动词变位两种玩法。</span>
+            </span>
+            <span class="msr typing-feature-arrow">arrow_forward</span>
+          </button>
         </div>
       </section>
 

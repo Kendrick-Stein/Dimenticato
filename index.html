@@ -260,6 +260,15 @@
               <span class="card-desc">浏览、搜索、筛选德语词汇</span>
             </button>
           </div>
+
+          <button class="card typing-feature-card" data-typing-game-lang="german">
+            <span class="card-chip"><span class="msr">surfing</span></span>
+            <span class="typing-feature-text">
+              <span class="card-title">打字游戏 · 激流勇进</span>
+              <span class="card-desc">单词顺流而下，看释义、打字击落！支持背单词与动词变位两种玩法。</span>
+            </span>
+            <span class="msr typing-feature-arrow">arrow_forward</span>
+          </button>
         </div>
       </section>
 
@@ -538,6 +547,15 @@
               <span class="card-desc">浏览、搜索、筛选英语词汇</span>
             </button>
           </div>
+
+          <button class="card typing-feature-card" data-typing-game-lang="english">
+            <span class="card-chip"><span class="msr">surfing</span></span>
+            <span class="typing-feature-text">
+              <span class="card-title">打字游戏 · 激流勇进</span>
+              <span class="card-desc">单词顺流而下，看释义、打字击落！支持背单词与动词变位两种玩法。</span>
+            </span>
+            <span class="msr typing-feature-arrow">arrow_forward</span>
+          </button>
         </div>
       </section>
 
@@ -847,6 +865,46 @@
               <span class="card-title">浏览</span>
               <span class="card-desc">查看词表、搜索、筛选与加入词本</span>
             </button>
+          </div>
+
+          <button class="card typing-feature-card" data-typing-game-lang="italian">
+            <span class="card-chip"><span class="msr">surfing</span></span>
+            <span class="typing-feature-text">
+              <span class="card-title">打字游戏 · 激流勇进</span>
+              <span class="card-desc">单词顺流而下，看释义、打字击落！支持背单词与动词变位两种玩法。</span>
+            </span>
+            <span class="msr typing-feature-arrow">arrow_forward</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="typingGameScreen" class="screen">
+        <div class="container">
+          <button class="back-link" id="typingGameBackBtn"><span class="msr">arrow_back</span>返回</button>
+          <div class="eyebrow" id="typingGameEyebrow">Typing Game</div>
+          <h1 class="page">激流勇进 · 打字背词</h1>
+          <p class="desc" id="typingGameDesc">单词顺流而下，看释义、打字击落！</p>
+
+          <div id="typingGameSetup"></div>
+
+          <div id="typingGamePlay" class="hidden">
+            <div class="typing-hud">
+              <div class="typing-hud-cell"><span>得分</span><b id="typingHudScore">0</b></div>
+              <div class="typing-hud-cell"><span>连击</span><b id="typingHudCombo">—</b></div>
+              <div class="typing-hud-cell"><span>等级</span><b id="typingHudLevel">Lv.1</b></div>
+              <div class="typing-hud-cell typing-hud-lives"><span>生命</span><b id="typingHudLives">❤❤❤</b></div>
+              <div class="typing-hud-cell"><span>击落</span><b id="typingHudCleared">0</b></div>
+            </div>
+            <div class="typing-canvas-wrap" id="typingGameCanvasWrap">
+              <canvas id="typingGameCanvas"></canvas>
+              <div id="typingGameOverlay" class="hidden"></div>
+            </div>
+            <div class="typing-input-row">
+              <span class="msr">keyboard</span>
+              <input type="text" id="typingGameInput" autocomplete="off" autocorrect="off"
+                autocapitalize="off" spellcheck="false" placeholder="打出上方高亮的单词…（可省略重音）">
+            </div>
+            <p class="typing-tip">打完整单词自动击落 · 回车提前提交 · 漏到河底的单词会扣一条命</p>
           </div>
         </div>
       </section>

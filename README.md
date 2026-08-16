@@ -29,6 +29,12 @@
 
 ### 2. 系统词汇练习
 
+#### 全语言
+- **打字游戏 · 激流勇进**：单词顺流而下，看释义、打字击落，3 条命
+  - 两种玩法：**背单词**（看中文释义打外语单词）/ **动词变位**（看动词+时态+人称打变位形式）
+  - 三档难度（简单/普通/困难），连击倍率、等级递增、本地最佳纪录
+  - 输入可省略重音符号（é 可打 e），击落时可选朗读发音
+
 #### Italian
 - 28,787 个意大利语单词及英语翻译
 - 按使用频率排序
@@ -221,7 +227,14 @@ Dimenticato/
 ├── verb-collocations.js
 ├── verb-collocations-practice.js
 ├── community-wordbooks.js
+├── cognate-app.js
+├── typing-game-app.js   ← 打字游戏（数据接入 + 游戏屏渲染）
 ├── vocabulary.js
+├── lib/
+│   ├── boot.js
+│   ├── lang-loader.js
+│   ├── typing-game.js   ← 打字游戏引擎（逻辑/渲染分离）
+│   └── …
 ├── data/
 │   ├── german-course-data.js
 │   ├── french-vocabulary.js
