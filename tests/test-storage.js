@@ -76,6 +76,9 @@ if (!Storage || !AppState) {
 }
 
 function resetStorage() {
+  // save() 是延迟写（脏标记 + 500ms 合并）：先冲刷再清库，
+  // 否则上一组的挂起写会在清库后落地，污染下一组
+  if (typeof Storage.flush === 'function') Storage.flush();
   ls.clear();
   AppState.currentWordbook = null;
   AppState.masteredWords = new Set();
@@ -107,6 +110,7 @@ group('save / load 往返', function () {
   AppState.stats = { mcAttempts: 10, mcCorrect: 7, spAttempts: 4, spCorrect: 3, totalLearned: 2 };
   AppState.selectedLevel = 3000;
   Storage.save();
+  Storage.flush();
 
   AppState.masteredWords = new Set();
   AppState.stats = {};
@@ -133,6 +137,7 @@ group('单词本进度 key 分语言', function () {
   AppState.currentWordbook = { id: 'wb1', language: 'german' };
   AppState.masteredWords = new Set(['Haus']);
   Storage.save();
+  Storage.flush();
   assert(ls.getItem(de) !== null, '学习自定义单词本时，进度写进分语言的 key');
   assertEqual(ls.getItem(Storage.KEYS.MASTERED), null, '单词本进度不会污染系统词汇的进度');
   AppState.currentWordbook = null;

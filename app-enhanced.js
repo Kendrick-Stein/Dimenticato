@@ -1151,50 +1151,73 @@ const WordbookEditor = {
 
 // 扩展浏览模式，添加收藏按钮
 const BrowseEnhanced = {
+  // 分页渲染状态：filtered 是**筛选后**的词表（行内 data-word-index 指向它），
+  // rendered 记录已画出的行数，其余行通过「加载更多」按页追加。
+  _filtered: [],
+  _rendered: 0,
+  _pageSize: 200,
+
   render(searchTerm = '') {
     let words = [...AppState.currentWords];
-    
+
     // 应用过滤器
     if (Browse.currentFilter === 'mastered') {
       words = words.filter(w => AppState.masteredWords.has(w.italian));
     } else if (Browse.currentFilter === 'unmastered') {
       words = words.filter(w => !AppState.masteredWords.has(w.italian));
     }
-    
+
     // 应用搜索
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
-      words = words.filter(w => 
-        w.italian.toLowerCase().includes(term) || 
+      words = words.filter(w =>
+        w.italian.toLowerCase().includes(term) ||
         w.english.toLowerCase().includes(term)
       );
     }
-    
+
     // 渲染列表
     const container = document.getElementById('wordList');
-    
+
+    // 注意：本方法会被赋给 Browse.render，以 Browse 为接收者调用，
+    // 所以内部一律显式写 BrowseEnhanced.xxx，不能用 this。
+    BrowseEnhanced._filtered = words;
+    BrowseEnhanced._rendered = 0;
+
     if (words.length === 0) {
       container.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">没有找到单词</p>';
       return;
     }
-    
+
+    container.innerHTML = '<div class="word-card" id="browseWordRows"></div><div id="browseFooter"></div>';
+    BrowseEnhanced.bindDelegatedEvents(container);
+    BrowseEnhanced.renderBrowsePage();
+  },
+
+  renderBrowsePage() {
+    // 同 render()：可能经 Browse.render 间接进入，显式用 BrowseEnhanced 引用
+    const rows = document.getElementById('browseWordRows');
+    const footer = document.getElementById('browseFooter');
+    if (!rows) return;
+
     // 这些字段可能来自用户导入的 CSV/JSON 或社区词本，必须转义。
-    // （BrowseEnhanced.render 在下面会覆盖 Browse.render —— app.js 里的原版本
-    //  是转义过的，覆盖之后转义就丢了，这正是存储型 XSS 的入口。）
+    // （BrowseEnhanced.render 覆盖了 app.js 里转义过的 Browse.render，
+    //  覆盖之后转义不能丢，这正是存储型 XSS 的入口。）
     const esc = window.escapeHtml || (s => String(s == null ? '' : s));
     const escAttr = window.escapeAttribute || esc;
+    const isCustomWordbook = AppState.selectedSourceType === 'custom';
 
-    container.innerHTML = '<div class="word-card">' + words.map((word, index) => {
+    const all = BrowseEnhanced._filtered;
+    const start = BrowseEnhanced._rendered;
+    const end = Math.min(all.length, start + BrowseEnhanced._pageSize);
+    rows.insertAdjacentHTML('beforeend', all.slice(start, end).map((word, index) => {
       const isMastered = AppState.masteredWords.has(word.italian);
       const srStatus = SpacedRepetition.getWordStatus(word);
       const statusLabel = isMastered ? '已掌握' : srStatus.label;
       const dotGood = isMastered || srStatus.status === 'mastered';
 
-      // 判断是否是自定义单词本
-      const isCustomWordbook = AppState.selectedSourceType === 'custom';
-
       return `
-        <div class="word-line" data-word-index="${index}" data-italian="${escAttr(word.italian)}">
+        <div class="word-line" data-word-index="${start + index}" data-italian="${escAttr(word.italian)}" style="cursor:pointer">
           <span class="wl-word">${esc(word.italian)}</span>
           <span class="wl-gloss">${esc(word.english)}${word.notes ? `<span class="wl-note">${esc(word.notes)}</span>` : ''}</span>
           <span class="wl-cn">${word.chinese ? esc(word.chinese) : ''}</span>
@@ -1209,56 +1232,54 @@ const BrowseEnhanced = {
           </span>
         </div>
       `;
-    }).join('') + '</div>';
+    }).join(''));
+    BrowseEnhanced._rendered = end;
 
-    // 绑定事件（使用事件委托）
-    container.querySelectorAll('.word-line').forEach((item, index) => {
-      const word = words[index];
+    if (footer) {
+      footer.innerHTML = end < all.length
+        ? `<button class="pill-btn" type="button" data-browse-more style="margin-top:14px"><span class="msr">expand_more</span>加载更多（已显示 ${end} / ${all.length}）</button>`
+        : `<div class="about-note" style="margin-top:14px">共 ${all.length} 个词条</div>`;
+    }
+  },
 
-      // 添加点击朗读功能
-      item.style.cursor = 'pointer';
-      item.addEventListener('click', (e) => {
-        // 如果点击的是操作按钮区，不触发朗读
-        if (e.target.closest('.wl-actions')) {
-          return;
-        }
-        const italian = item.dataset.italian;
-        if (italian) {
-          italianSpeaker.speak(italian);
-        }
-      });
-
-      // 朗读按钮
-      const speakBtn = item.querySelector('.speak-btn');
-      if (speakBtn) {
-        speakBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const italian = item.dataset.italian;
-          if (italian) {
-            italianSpeaker.speak(italian);
-          }
-        });
+  /**
+   * 词表交互统一挂在容器上一个委托监听器（首次 render 时绑定一次）。
+   * 逐行挂监听器的旧实现配合分页会产生数千个闭包，且每次重渲染都要重新挂。
+   * 事件里通过 data-word-index 找回 _filtered 里的词条对象（收藏 / 编辑要用）。
+   */
+  bindDelegatedEvents(container) {
+    if (this._delegatedBound) return;
+    this._delegatedBound = true;
+    container.addEventListener('click', (e) => {
+      if (e.target.closest('[data-browse-more]')) {
+        BrowseEnhanced.renderBrowsePage();
+        return;
       }
-      
-      // 收藏按钮
-      const bookmarkBtn = item.querySelector('.bookmark-btn');
-      if (bookmarkBtn) {
-        bookmarkBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          WordbookEditor.addWordToWordbook(word);
-        });
+      const row = e.target.closest('.word-line');
+      if (!row) return;
+      const word = BrowseEnhanced._filtered[Number(row.dataset.wordIndex)];
+
+      if (e.target.closest('.speak-btn')) {
+        e.stopPropagation();
+        if (row.dataset.italian) italianSpeaker.speak(row.dataset.italian);
+        return;
       }
-      
-      // 编辑按钮
-      const editBtn = item.querySelector('.edit-btn');
-      if (editBtn) {
-        editBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
+      if (e.target.closest('.bookmark-btn')) {
+        e.stopPropagation();
+        if (word) WordbookEditor.addWordToWordbook(word);
+        return;
+      }
+      if (e.target.closest('.edit-btn')) {
+        e.stopPropagation();
+        if (word) {
           const wordIndex = AppState.currentWords.indexOf(word);
-          if (wordIndex !== -1) {
-            WordbookEditor.editWord(wordIndex);
-          }
-        });
+          if (wordIndex !== -1) WordbookEditor.editWord(wordIndex);
+        }
+        return;
+      }
+      // 点行体：朗读（点操作按钮区不触发）
+      if (!e.target.closest('.wl-actions') && row.dataset.italian) {
+        italianSpeaker.speak(row.dataset.italian);
       }
     });
   }

@@ -789,7 +789,24 @@ const Storage = {
     LANGUAGE: 'dimenticato_language'
   },
   
+  // 延迟落盘句柄：每答一题就整份 stringify mastered + stats 在词库上万后
+  // 是可感知的卡顿，改成脏标记 + 500ms 合并写（关闭页面 / 切后台统一冲刷，
+  // 见 lib/utils.js deferredPersist）。
+  _persist: null,
+
+  /** 立即冲刷挂起的写。切换词本 / 导入导出 / 重置前必须先调用，
+   *  否则挂起的写会按切换后的 currentWordbook 落进错误的 key，
+   *  或在导入后用旧状态覆盖刚导入的数据。 */
+  flush() {
+    if (this._persist) this._persist.flush();
+  },
+
   save() {
+    if (!this._persist) this._persist = window.deferredPersist(() => Storage._write(), 500);
+    this._persist();
+  },
+
+  _write() {
     // 逐条写入：任何一条失败都不应该连累后面的（旧实现是一个大 try，
     // 第一条抛异常就把统计和级别一起丢掉了）。
     if (AppState.currentWordbook) {
@@ -869,6 +886,11 @@ const Storage = {
     const label = scope === 'all' ? '全部语言' : DimStorage.LANGUAGE_LABELS[scope];
     if (!confirm(`确定要重置【${label}】的学习进度吗？此操作不可恢复。`)) return;
 
+    // 先冲刷全部延迟写：挂起的写如果在删除之后落地，会把刚清掉的进度复活
+    if (window.DimenticatoUtils && window.DimenticatoUtils.flushAllPersisters) {
+      window.DimenticatoUtils.flushAllPersisters();
+    }
+
     const result = DimStorage.reset({ scope });
 
     if (scope === 'all' || scope === 'italian') {
@@ -881,6 +903,7 @@ const Storage = {
         totalLearned: 0
       };
       this.save();
+      this.flush(); // 重置后 600ms 就刷新页面，不能等 500ms 的延迟写
       updateHeaderStats();
     }
 
@@ -899,6 +922,10 @@ const Storage = {
   // 导出所有学习数据（四种语言 + 自定义词本 + 每本词本的进度 + 主题）
   exportAllData() {
     try {
+      // 导出必须读到最后状态：四语言的 save 都是延迟写，先统一冲刷
+      if (window.DimenticatoUtils && window.DimenticatoUtils.flushAllPersisters) {
+        window.DimenticatoUtils.flushAllPersisters();
+      }
       const exportData = DimStorage.exportAll();
       if (Object.keys(exportData.keys).length === 0) {
         alert('目前还没有任何学习数据可以导出。\n\n先做几组练习，或导入一个自定义词本再试。');
@@ -938,6 +965,10 @@ const Storage = {
   // 导入学习数据（1.0 旧文件与 2.0 全语言文件都能读）
   importAllData(file) {
     return new Promise((resolve, reject) => {
+      // 导入前先冲刷：挂起的延迟写会在导入后用旧状态覆盖刚导入的数据
+      if (window.DimenticatoUtils && window.DimenticatoUtils.flushAllPersisters) {
+        window.DimenticatoUtils.flushAllPersisters();
+      }
       const reader = new FileReader();
 
       reader.onload = (e) => {
@@ -2411,7 +2442,11 @@ const WordbookManager = {
   selectWordbook(id) {
     const wordbook = AppState.customWordbooks.find(wb => wb.id === id);
     if (!wordbook) return;
-    
+
+    // 先冲刷挂起的延迟写：Storage._write 在落盘那一刻才读 currentWordbook，
+    // 不冲刷的话上一个来源最后的答题进度会写进新选词本的 key
+    Storage.flush();
+
     // 设置选择状态
     AppState.selectedSource = id;
     AppState.selectedSourceType = 'custom';
@@ -2659,6 +2694,8 @@ function bindEvents() {
   // 系统词汇级别选择
   document.querySelectorAll('.vocab-source-btn').forEach(btn => {
     btn.addEventListener('click', () => {
+      // 同 selectWordbook：换来源前先冲刷，避免旧来源进度落错 key
+      Storage.flush();
       const level = btn.dataset.level;
       AppState.selectedLevel = level === 'all' ? 'all' : parseInt(level);
       AppState.selectedSource = 'system';
@@ -2836,8 +2873,12 @@ function bindEvents() {
     goBack({ fallbackTarget: 'vocabularyModesScreen' });
   });
   
+  // 27k 词的列表不能每键整表重建：搜索去抖（德语站既有模式）
+  const debouncedBrowseSearch = window.debounce
+    ? window.debounce((value) => Browse.render(value), 200)
+    : (value) => Browse.render(value);
   document.getElementById('searchInput').addEventListener('input', (e) => {
-    Browse.render(e.target.value);
+    debouncedBrowseSearch(e.target.value);
   });
   
   document.querySelectorAll('#browseFilterChips .chip').forEach((chip) => {

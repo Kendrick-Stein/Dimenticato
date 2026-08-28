@@ -877,6 +877,33 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     assert(global.indexOf('data-direction-lang') === -1, '不传语言时是全局控件');
   });
 
+  // ===== lib/utils.js：debounce / deferredPersist（大词表搜索防抖 + 延迟落盘） =====
+  // 注意：headless runner 同步收结果，这里只测同步可见的契约；
+  // 「防抖/延迟到期后真的执行」由浏览器冒烟覆盖。
+  group('debounce / deferredPersist', function () {
+    assert(typeof window.debounce === 'function', 'debounce 已暴露到 window');
+    assert(typeof window.deferredPersist === 'function', 'deferredPersist 已暴露到 window');
+
+    // debounce：防抖窗口内的连续调用一个都不立即执行
+    var calls = [];
+    var debounced = window.debounce(function (v) { calls.push(v); }, 5000);
+    debounced('a'); debounced('ab'); debounced('abc');
+    assertEqual(calls.length, 0, '防抖窗口内不执行');
+
+    // deferredPersist：脏标记合并 + 手动冲刷语义（导出 / 关闭页前用得上）
+    var writes = 0;
+    var persist = window.deferredPersist(function () { writes++; }, 5000);
+    persist(); persist(); persist();
+    assertEqual(writes, 0, '延迟窗口内不落盘');
+    persist.flush();
+    assertEqual(writes, 1, '多次脏标记合并成一次写');
+    persist.flush();
+    assertEqual(writes, 1, '无脏数据时 flush 是空操作');
+    persist();
+    window.DimenticatoUtils.flushAllPersisters();
+    assertEqual(writes, 2, 'flushAllPersisters 冲刷全部实例');
+  });
+
   // --- Summary ---
   var summary = document.createElement('div');
   summary.className = 'summary';

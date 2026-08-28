@@ -521,7 +521,23 @@
       }
     },
 
+    // 延迟落盘：每答一题 7 次 setItem（含整份 mastered 数组）在上万词库后
+    // 是可感知的卡顿。脏标记 + 500ms 合并写，关闭页面 / 切后台统一冲刷。
+    _persist: null,
+
+    /** 立即冲刷挂起的写：切换词库来源前必须调用（_writeState 落盘时才读
+     *  currentWordbook，不冲刷会把旧来源的进度写进新来源的 key）。 */
+    flushState() {
+      if (this._persist) this._persist.flush();
+    },
+
     saveState() {
+      if (!this._persist) this._persist = window.deferredPersist(() => this._writeState(), 500);
+      this._persist();
+      this.updateHeaderStats();
+    },
+
+    _writeState() {
       try {
         const masteredKey = this.currentWordbook
           ? `dimenticato_progress_wb_german_${this.currentWordbook.id}`
@@ -536,7 +552,6 @@
       } catch (error) {
         console.error('GermanApp 状态保存失败:', error);
       }
-      this.updateHeaderStats();
     },
 
     updateHeaderStats() {
@@ -716,6 +731,7 @@
     },
 
     selectSystemVocabulary() {
+      this.flushState();
       this.currentWordbook = null;
       this.sourceType = 'system';
       this.words = tierWords(this.systemWords, this.tier);
@@ -742,6 +758,7 @@
         alert('这个课程单元暂时没有足够的可练习词汇。');
         return;
       }
+      this.flushState();
       this.currentWordbook = null;
       this.sourceType = 'course';
       this.words = selectedWords;
@@ -890,6 +907,11 @@
     selectLanguageWordbook(id, language) {
       const wordbook = (typeof WordbookManager !== 'undefined' ? WordbookManager.getWordbooksByLanguage(language) : []).find(wb => wb.id === id);
       if (!wordbook || typeof WordbookManager === 'undefined') return;
+
+      // 换来源前冲刷延迟写，避免旧来源进度落进新来源的 key（两侧各自再冲一次，
+      // 保证从任何入口进来都安全）
+      this.flushState();
+      if (window.EnglishApp) EnglishApp._flushState();
 
       if (language === 'german') {
         this.currentWordbook = wordbook;
@@ -1906,7 +1928,20 @@
       }
     },
 
+    // 与 GermanApp 相同的延迟落盘模式（见上方 GermanApp._persist 注释）
+    _persist: null,
+
+    _flushState() {
+      if (this._persist) this._persist.flush();
+    },
+
     _saveState() {
+      if (!this._persist) this._persist = window.deferredPersist(() => this._writeState(), 500);
+      this._persist();
+      this.updateHeaderStats();
+    },
+
+    _writeState() {
       try {
         // 关键：个人词本的进度必须写进词本自己的 key。之前无论当前用的是
         // 系统词库还是词本，都往 EN_MASTERED 里写，导致选一次词本就把系统
@@ -1923,7 +1958,6 @@
       } catch (e) {
         console.error('EnglishApp 状态保存失败:', e);
       }
-      this.updateHeaderStats();
     },
 
     updateHeaderStats() {
@@ -1959,6 +1993,7 @@
     // 之前点“System Vocabulary”只是切屏，用过个人词本之后 words / mastered
     // 仍然停留在词本上，系统词库再也回不来。
     selectSystemVocabulary() {
+      this._flushState();
       this.currentWordbook = null;
       this.sourceType = 'system';
       this.words = tierWords(this.systemWords, this.tier);
@@ -1973,6 +2008,7 @@
 
     selectWordbook(wordbook) {
       if (!wordbook || typeof WordbookManager === 'undefined') return;
+      this._flushState();
       this.currentWordbook = wordbook;
       this.sourceType = 'wordbook';
       this.sessionWords = [];

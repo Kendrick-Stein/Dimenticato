@@ -603,6 +603,7 @@
     srs: {},
     _mcEngine: null,
     _questionStartedAt: 0,
+    _browse: { words: [], rendered: 0, pageSize: 200 },
 
     init() {
       if (!screensInstalled) return;
@@ -830,7 +831,30 @@
       return true;
     },
 
+    // 延迟落盘：每答一题最多 8 次 setItem（mastered / stats / SRS / 每日记录
+    // 各自全量写）在两万词库后是可感知的卡顿。脏标记 + 500ms 合并写，
+    // 关闭页面 / 切后台统一冲刷（见 lib/utils.js deferredPersist）。
+    _persist: null,
+    _persistSrs: null,
+    _persistDaily: null,
+    _dailyCache: null,
+
+    /** 立即冲刷挂起的写。切换词库来源前必须调用：
+     *  _writeState 落盘那一刻才读 currentWordbookId，不冲刷的话旧来源
+     *  最后的答题进度会写进新来源的 key。 */
+    flushState() {
+      if (this._persist) this._persist.flush();
+      if (this._persistSrs) this._persistSrs.flush();
+      if (this._persistDaily) this._persistDaily.flush();
+    },
+
     saveState() {
+      if (!this._persist) this._persist = window.deferredPersist(() => this._writeState(), 500);
+      this._persist();
+      this.updateHeaderStats();
+    },
+
+    _writeState() {
       try {
         const masteredKey = this.currentWordbookId
           ? `dimenticato_progress_wb_french_${this.currentWordbookId}`
@@ -840,7 +864,6 @@
         localStorage.setItem(STORAGE_KEYS.FILTER, this.browseFilter);
         localStorage.setItem(STORAGE_KEYS.LEVEL, this.levelFilter);
         localStorage.setItem(STORAGE_KEYS.SESSION, String(this.sessionSize));
-        this.updateHeaderStats();
       } catch (error) {
         console.error('FrenchApp 状态保存失败:', error);
       }
@@ -890,8 +913,20 @@
       document.getElementById('frenchSpInput')?.addEventListener('keypress', event => {
         if (event.key === 'Enter') this.checkSpelling();
       });
+      // 两万多词的列表不能每键整表重建（德语站踩过的坑）：搜索去抖 + 分页 + 事件委托
+      const debouncedBrowseSearch = window.debounce
+        ? window.debounce(value => this.renderBrowse(value), 200)
+        : value => this.renderBrowse(value);
       document.getElementById('frenchSearchInput')?.addEventListener('input', event => {
-        this.renderBrowse(event.target.value || '');
+        debouncedBrowseSearch(event.target.value || '');
+      });
+      document.getElementById('frenchWordList')?.addEventListener('click', event => {
+        if (event.target.closest('[data-french-browse-more]')) {
+          this.renderBrowsePage();
+          return;
+        }
+        const row = event.target.closest('.word-line');
+        if (row) this.speak(row.dataset.french || '');
       });
       document.querySelectorAll('#frenchFilterChips .chip').forEach(chip => {
         chip.addEventListener('click', () => this.setBrowseFilter(chip.dataset.filter));
@@ -984,6 +1019,7 @@
     },
 
     selectSystemVocabulary() {
+      this.flushState();
       this.currentWordbookId = null;
       this.words = this.systemWords.slice();
       try {
@@ -1036,6 +1072,7 @@
     selectWordbook(id) {
       const wordbook = WordbookManager.getWordbooksByLanguage('french').find(item => item.id === id);
       if (!wordbook) return;
+      this.flushState();
       this.currentWordbookId = id;
       this.words = WordbookManager.mapWordbookWordsForLanguage(wordbook.words, 'french');
       try {
@@ -1168,7 +1205,12 @@
           nextReviewDate: next.nextReviewDate,
           lastReviewDate: next.lastReviewDate || new Date().toISOString().split('T')[0]
         };
-        localStorage.setItem(STORAGE_KEYS.SRS, JSON.stringify(this.srs));
+        // 写的是 this.srs 本身（flush 时读最新值），可以安全延迟
+        if (!this._persistSrs) this._persistSrs = window.deferredPersist(() => {
+          try { localStorage.setItem(STORAGE_KEYS.SRS, JSON.stringify(this.srs)); }
+          catch (error) { console.warn('FrenchApp: 复习计划写入失败:', error); }
+        }, 500);
+        this._persistSrs();
       } catch (error) {
         console.warn('FrenchApp: 复习计划写入失败:', error);
       }
@@ -1176,14 +1218,18 @@
 
     // ==================== 每日练习记录 ====================
 
+    // 每日记录以内存缓存为唯一真相：写是延迟的，若每次都从 localStorage
+    // 重读，同一窗口内的连续答题会互相看不到对方的增量（后写覆盖前写）。
     loadDaily() {
+      if (this._dailyCache) return this._dailyCache;
       try {
         const raw = JSON.parse(localStorage.getItem(STORAGE_KEYS.DAILY) || '{}');
-        return raw && typeof raw === 'object' ? raw : {};
+        this._dailyCache = raw && typeof raw === 'object' ? raw : {};
       } catch (error) {
         console.error('FrenchApp 每日记录加载失败:', error);
-        return {};
+        this._dailyCache = {};
       }
+      return this._dailyCache;
     },
 
     recordDaily(word, isCorrect, durationMs) {
@@ -1203,7 +1249,11 @@
         Object.keys(daily).forEach(date => {
           if (date < cutoffKey) delete daily[date];
         });
-        localStorage.setItem(STORAGE_KEYS.DAILY, JSON.stringify(daily));
+        if (!this._persistDaily) this._persistDaily = window.deferredPersist(() => {
+          try { localStorage.setItem(STORAGE_KEYS.DAILY, JSON.stringify(this._dailyCache)); }
+          catch (error) { console.error('FrenchApp 每日记录保存失败:', error); }
+        }, 500);
+        this._persistDaily();
       } catch (error) {
         console.error('FrenchApp 每日记录保存失败:', error);
       }
@@ -1562,11 +1612,13 @@
       });
     },
 
+    // 分页渲染：先把筛选/搜索结果存进 _browse.words，首屏只画 200 行，
+    // 其余通过「加载更多」追加（点击由 bindPractice 里的事件委托处理）。
     renderBrowse(searchTerm = '') {
       const container = document.getElementById('frenchWordList');
       if (!container) return;
       const term = searchTerm.toLowerCase().trim();
-      let words = this.words.slice();
+      let words = this.words;
       if (this.browseLevel !== 'all') words = words.filter(word => word.level === this.browseLevel);
       if (this.browseFilter === 'mastered') words = words.filter(word => this.mastered.has(word.french));
       if (this.browseFilter === 'unmastered') words = words.filter(word => !this.mastered.has(word.french));
@@ -1575,23 +1627,41 @@
           Array.isArray(word.senses) ? word.senses.join(' ') : '']
           .some(value => String(value || '').toLowerCase().includes(term)));
       }
+      this._browse.words = words;
+      this._browse.rendered = 0;
       if (!words.length) {
         container.innerHTML = '<p style="text-align:center;color:var(--text-secondary);padding:2rem">没有找到匹配的法语词汇</p>';
         return;
       }
-      container.innerHTML = words.map(word => {
-        const mastered = this.mastered.has(word.french);
-        return `
-          <div class="word-line" data-french="${escapeAttribute(word.french)}">
-            <span class="wl-word">${escapeHtml(word.display || word.french)}</span>
-            <span class="wl-gloss">${escapeHtml(word.meaning || '')}<span class="wl-note">${escapeHtml(word.notes || '')}</span></span>
-            <span class="wl-status"><span class="dot${mastered ? ' good' : ''}"></span>${mastered ? '已掌握' : '学习中'}</span>
-            <button class="wl-speaker" title="朗读"><span class="msr">volume_up</span></button>
-          </div>`;
-      }).join('');
-      container.querySelectorAll('[data-french]').forEach(row => {
-        row.addEventListener('click', () => this.speak(row.dataset.french));
-      });
+      container.innerHTML = '<div id="frenchWordRows"></div><div id="frenchBrowseFooter"></div>';
+      this.renderBrowsePage();
+    },
+
+    renderBrowsePage() {
+      const rows = document.getElementById('frenchWordRows');
+      const footer = document.getElementById('frenchBrowseFooter');
+      if (!rows) return;
+      const all = this._browse.words;
+      const start = this._browse.rendered;
+      const end = Math.min(all.length, start + this._browse.pageSize);
+      rows.insertAdjacentHTML('beforeend', all.slice(start, end).map(word => this.browseRowHtml(word)).join(''));
+      this._browse.rendered = end;
+      if (footer) {
+        footer.innerHTML = end < all.length
+          ? `<button class="pill-btn" type="button" data-french-browse-more style="margin-top:14px"><span class="msr">expand_more</span>加载更多（已显示 ${end} / ${all.length}）</button>`
+          : `<div class="about-note" style="margin-top:14px">共 ${all.length} 个词条</div>`;
+      }
+    },
+
+    browseRowHtml(word) {
+      const mastered = this.mastered.has(word.french);
+      return `
+        <div class="word-line" data-french="${escapeAttribute(word.french)}">
+          <span class="wl-word">${escapeHtml(word.display || word.french)}</span>
+          <span class="wl-gloss">${escapeHtml(word.meaning || '')}<span class="wl-note">${escapeHtml(word.notes || '')}</span></span>
+          <span class="wl-status"><span class="dot${mastered ? ' good' : ''}"></span>${mastered ? '已掌握' : '学习中'}</span>
+          <button class="wl-speaker" title="朗读"><span class="msr">volume_up</span></button>
+        </div>`;
     },
 
     // ==================== 进度 ====================
