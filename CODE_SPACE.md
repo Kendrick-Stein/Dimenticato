@@ -1715,6 +1715,26 @@
 浏览器实测确认过：游戏运行、击落计分、结算浮层出现均正常；上述问题以代码证据 + DOM 状态
 + 无头回归用例三方定位。
 
+### 2026-08-28 — CI + 仓库瘦身
+
+**CI / 工程化：**
+- 新增 `.github/workflows/ci.yml`：push / PR 到 main 时跑 `npm test`
+- 新增 `package.json`（`scripts.test = node tests/run-headless.js`）：无依赖，
+  把 16 个 harness（单元 + 10 个数据校验器）变成一条命令入口
+
+**仓库瘦身（`git rm --cached`，本地文件均保留）：**
+- 取消跟踪约 90MB 的版权词典原件：`deutsch-data/grammar/docs/学习资源/assets/*.zip`
+  （Duden 10 卷 / Langenscheidt / 新德汉词典）。`.gitignore` 已加对应规则防回潮。
+  ⚠️ 注意：这只是让**后续提交**不再包含它们，git 历史里仍在（`.git` 体积不变）；
+  若要从历史彻底抹除需要 `git filter-repo` + force push，属于破坏性操作，未执行
+- 取消跟踪"早已写进 .gitignore 但此前已被跟踪"的一次性产物：
+  `ita-eng/`、`newselfdata/`、`it_50k.txt`、`data/vocabulary*.json*`、
+  `data/stats.json`、`translation*_log.txt`、`enhance_translations*.py`、
+  `test_translate.py`、`process_data.js`、`update_vocabulary_js.py`、
+  `TRANSLATION_STATUS.md`、`.vscode/`
+- 保留：` english-data/`（含 EnWords.csv + ecdict-slice.csv，是
+  `scripts/build_english_vocab.py` 的重建输入）、`memory-bank/`（24K agent 上下文笔记）
+
 ---
 
 ## 16. 快速索引（超简版）

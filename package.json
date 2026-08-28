@@ -1,0 +1,10 @@
+{
+  "name": "dimenticato",
+  "version": "1.0.0",
+  "private": true,
+  "description": "多语言背单词静态站（意/德/英/法）。纯前端，无构建、无运行时依赖。",
+  "scripts": {
+    "test": "node tests/run-headless.js",
+    "test:filter": "node tests/run-headless.js"
+  }
+}
