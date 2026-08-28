@@ -377,6 +377,16 @@
 
     const entries = mode === 'conjugation' ? conjEntries(session.lang) : vocabEntries(session.lang);
     if (!entries.length) {
+      // 变位数据是按模块懒加载的（随开随拉），拉到后自动重试开局
+      if (mode === 'conjugation' && window.LangLoader
+        && typeof window.LangLoader.ensureModule === 'function'
+        && !window.LangLoader.isModuleLoaded(session.lang, 'conjugations')) {
+        const lang = session.lang;
+        window.LangLoader.ensureModule(lang, 'conjugations').then(() => {
+          if (session && session.lang === lang) startGame();
+        });
+        return;
+      }
       const tip = $id('typingGameDesc');
       if (tip) tip.textContent = '该语言的' + (mode === 'conjugation' ? '变位数据' : '词汇数据') + '还没加载好，稍等片刻再试，或先切换到另一门语言。';
       return;

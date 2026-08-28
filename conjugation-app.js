@@ -1441,6 +1441,16 @@ ${moodRows}
     const next = LANG_CONFIGS[lang];
     if (!next) return;
 
+    // 变位数据按模块懒加载（意 8.9MB / 德 10.4MB / 法 9.3MB，只有进本模块
+    // 才用得上）。缺席时补拉后重试；拉不到再走 prepareData 里的「数据未加载」。
+    const dataNow = (typeof next.getData === 'function') ? next.getData() : null;
+    if ((!dataNow || !dataNow.length) && window.LangLoader
+      && typeof window.LangLoader.ensureModule === 'function'
+      && !window.LangLoader.isModuleLoaded(lang, 'conjugations')) {
+      window.LangLoader.ensureModule(lang, 'conjugations').then(() => openFor(lang));
+      return;
+    }
+
     config = next;
     reloadForActiveConfig();
 

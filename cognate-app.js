@@ -1020,8 +1020,9 @@
         }
       }
 
-      // 懒加载下这门语言的数据可能还没到（例如从别的语言深链接过来）
-      if (currentData().length === 0 && window.LangLoader && typeof window.LangLoader.ensure === 'function') {
+      // 懒加载下这门语言的数据可能还没到（例如从别的语言深链接过来）。
+      // 同源词数据属于二级模块（MODULES.cognates），不再随语言包下发。
+      if (currentData().length === 0 && window.LangLoader && typeof window.LangLoader.ensureModule === 'function') {
         var container = getContainer();
         if (container) {
           setImmersive(false);
@@ -1029,7 +1030,7 @@
             escapeHtml(cfg().label) + '</div><div class="card-desc">正在加载' +
             escapeHtml(cfg().langCn) + '词库…</div></div>';
         }
-        window.LangLoader.ensure(target).then(function () {
+        window.LangLoader.ensureModule(target, 'cognates').then(function () {
           if (CognateState.lang !== target) return; // 加载期间又切走了
           CognateApp.showModeSelection(target);
         });

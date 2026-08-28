@@ -94,39 +94,20 @@
 
 ### 2.1 启动流程
 
-浏览器打开 `index.html` 后：
+浏览器打开 `index.html` 后（**2026-08 起为按语言 + 按模块两级懒加载**，旧的全静态清单已废弃）：
 
-1. 加载页面 DOM
-2. 顺序加载脚本：
-   - `lib/utils.js`          ← 共享工具（必须最先加载）
-   - `lib/word-similarity.js` ← 词形相似度（在 quiz-engine.js 之前）
-   - `lib/quiz-engine.js`    ← 通用测验引擎
-   - `lib/navigation.js`     ← 导航核心（在 app.js 之前；调用时才读取 app.js 的 AppState）
-   - `vocabulary.js`
-   - `data/conjugations-all-tenses.js`
-   - `data/conjugations-presente.js`
-   - `supabase-config.js`
-   - `community-wordbooks.js`
-   - `data/german-vocabulary.js`
-   - `data/english-vocabulary.js`
-   - `data/german-grammar-data.js`
-   - `data/english-grammar-data.js`
-   - `app.js`
-   - `app-enhanced.js`
-   - `german-app.js`
-   - `conjugation-app.js`
-   - `stats-charts.js`
-   - `data/grammar-data.js`
-   - `grammar-book.js`
-   - `data/verb-collocations-data.js`
-   - `verb-collocations.js`
-   - `verb-collocations-practice.js`
-3. `app.js` 在 `DOMContentLoaded` 时执行：
-   - `bindEvents()`
-   - `loadVocabulary()`
-   - 初始化导航与学习上下文
-   - 渲染自定义词本卡片
-4. 其他子模块也在 `DOMContentLoaded` 或按钮点击时初始化
+1. 加载页面 DOM；`index.html` 内联脚本伪装 `readyState='loading'`（`__ReadyGate`），直到语言包就绪才放行
+2. `lib/lang-loader.js` + `lib/boot.js`（仅有的两个静态 `<script defer>`，另有 Chart.js / marked / Supabase 三个 CDN）启动引导：
+   - **首屏**：`LangLoader.boot()` 按 URL hash / 上次选择判定当前语言，只注入「该语言的词库数据 + 全部共享代码」
+     - 词库清单（`DATA`）：意 `vocabulary.js`；德 `german-vocabulary + german-course-data`；英 `english-vocabulary`；法 `french-vocabulary(-core/-glossary)`
+     - 共享代码（`CODE`，顺序承重）：`utils → word-similarity → quiz-engine → typing-game → navigation → router → supabase-config → community-wordbooks → cognate-app → typing-game-app → app → app-enhanced → german-app → german-course → french-app → conjugation-app → stats-charts → grammar-book → verb-collocations → verb-collocations-practice`
+   - 注入用 `script.async = false`：并行下载、按序执行
+   - 就绪后 `__ReadyGate.release()` + 派发合成 `DOMContentLoaded`，各模块按原顺序初始化
+3. **二级模块懒加载**（`MODULES` + `LangLoader.ensureModule(lang, module)`）：变位 / 语法书 / 动词搭配 / 同源词四类数据只在对应模块被打开时才拉。守卫在各 opener 内部：
+   - `ConjugationPractice.openFor` / `GrammarBook.init` / `VerbCollocations init` / `VerbCollocationPractice.renderMissingDataset` / `CognateApp.open` / `typing-game-app startGame`（变位模式）/ `app.js` 意语 cognate-btn / `french-app bindGrammar`
+   - 首屏因此从「意 16.4MB / 法 28MB」降到「意 5.7MB / 法 15.3MB」
+   - `boot.js` 对 `module:start` / `module:done` 事件显示 / 撤加载遮罩
+4. `app.js` 在合成 `DOMContentLoaded` 时执行 `bindEvents()` / `loadVocabulary()` 等；其他子模块同样初始化
 
 ### 2.2 架构分层
 
@@ -1734,6 +1715,41 @@
   `TRANSLATION_STATUS.md`、`.vscode/`
 - 保留：` english-data/`（含 EnWords.csv + ecdict-slice.csv，是
   `scripts/build_english_vocab.py` 的重建输入）、`memory-bank/`（24K agent 上下文笔记）
+
+### 2026-08-28 — 性能三连：浏览页分页 / localStorage 延迟落盘 / 干扰项有界采样
+
+**浏览页（意/法此前每键全表重建）：**
+- `lib/utils.js` 新增共享 `debounce`；意/法搜索框 200ms 防抖
+- `BrowseEnhanced`（意）与 `FrenchApp.renderBrowse`（法）改为 200 行/页分页 +
+  「加载更多」+ 容器级事件委托（德语站既有模式）
+- ⚠️ `Browse.render = BrowseEnhanced.render` 赋值后接收者是 `Browse`，
+  BrowseEnhanced 方法内部一律显式 `BrowseEnhanced.xxx`，不能写 `this`
+
+**localStorage 延迟落盘：**
+- `lib/utils.js` 新增 `deferredPersist(fn, wait)`：脏标记 + 500ms 合并写，
+  `pagehide` / `visibilitychange→hidden` 统一冲刷；`flushAllPersisters()` 冲全部
+- 四语言 save 全部延迟化；法语 SRS / 每日记录一并延迟（每日记录改内存缓存为真相）
+- **一致性契约**：切词本 / 切系统词库 / 切课程 / 导出 / 导入 / 重置前必须先
+  flush（`Storage.flush()` / `flushState()` / `flushAllPersisters()`），
+  否则挂起写会落错 key 或覆盖刚导入的数据
+- 重置后立即同步落盘（600ms 后刷新页面）
+
+**干扰项有界采样：**
+- `QuizEngine.sampleDistractorPool`（静态，源自德语站实现）：词频邻域 + 等距抽样，
+  池恒 ≤800；意/法 MC 接线（此前 27k/24k 全池每题全表扫描）；德语本地实现改为别名
+- 法语 `countMastered` 的 key Set 按词表身份缓存
+
+### 2026-08-28 — 数据二级按模块懒加载
+
+- `lib/lang-loader.js`：`DATA` 瘦身为纯词库清单；新增 `MODULES`
+  （conjugations / grammar / collocations / cognates × 语言）与
+  `ensureModule(lang, module)` / `isModuleLoaded`；模块就绪发
+  `module:start|module:done` 事件并刷 `syncDatasetCounts`
+- 首屏：意 16.4→5.7MB、德 23.6→11.0MB、英 9.4→5.5MB、法 28.1→15.3MB
+- 守卫位置见 §2.1；法语 `frenchGrammarBookBtn` 原「数据不存在就不打开」
+  改为补拉后重试（其它入口本就传 null 进 init 走守卫）
+- 浏览器实测：意语语法书 / 变位 / 同源词随开随拉，法语 #/fr 直达语法书、
+  变位均正常；MC 出题 + 延迟落盘（答题后 flush 前后对比）验证通过
 
 ---
 

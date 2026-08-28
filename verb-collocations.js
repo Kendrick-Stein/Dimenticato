@@ -204,6 +204,12 @@ const VerbCollocations = (() => {
     applyChrome();
 
     if (!hasDataset(target)) {
+      // 搭配数据按模块懒加载：缺席时补拉后重试 init；拉不到才显示缺数状态
+      if (window.LangLoader && typeof window.LangLoader.ensureModule === 'function'
+        && !window.LangLoader.isModuleLoaded(target, 'collocations')) {
+        window.LangLoader.ensureModule(target, 'collocations').then(() => init(target));
+        return;
+      }
       renderMissingDataset();
       return;
     }

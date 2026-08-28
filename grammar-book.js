@@ -116,9 +116,25 @@ const GrammarBook = (() => {
    * @param {Object} [options] - { lang } 可显式指定语言，缺省时自动识别。
    */
   function init(customData, options) {
-    const data = customData || dataGlobalFor('italian') || null;
+    // 语言解析前置：调用方可能传 options.lang（router）或 options.language
+    // （german-app），都不传时回落到 resolveLang 的推断。语法数据现在是
+    // 按模块懒加载的（lib/lang-loader.js MODULES.grammar），缺席时先补拉。
+    const explicit = options && (options.lang || options.language);
+    const targetLang = (explicit && LANG_PROFILES[explicit])
+      ? explicit
+      : resolveLang(customData, options);
 
-    activeLang = resolveLang(data, options);
+    const data = customData || dataGlobalFor(targetLang) || null;
+
+    if ((!data || !data.tree) && window.LangLoader
+      && typeof window.LangLoader.ensureModule === 'function'
+      && !window.LangLoader.isModuleLoaded(targetLang, 'grammar')) {
+      window.LangLoader.ensureModule(targetLang, 'grammar')
+        .then(() => init(customData, options));
+      return; // 拉到后重试；仍缺席则走下方的错误 UI
+    }
+
+    activeLang = targetLang;
 
     if (!data || !data.tree) {
       const container = document.getElementById('grammarNavTree');

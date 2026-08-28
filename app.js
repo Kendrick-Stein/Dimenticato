@@ -2591,7 +2591,15 @@ function bindEvents() {
   document.getElementById('goGrammarBtn')?.addEventListener('click', () => showScreen('grammarScreen'));
   document.getElementById('goProgressBtn')?.addEventListener('click', () => showScreen('progressScreen'));
   document.getElementById('goSettingsBtn')?.addEventListener('click', () => showScreen('settingsScreen'));
-  document.getElementById('goConjugationSetupBtn')?.addEventListener('click', () => showScreen('conjugationSetupScreen'));
+  // 变位数据已改为按模块懒加载：入口统一走 openFor（内部会在数据缺席时
+  // 先补拉再进屏），直接 showScreen 会得到一块「数据未加载」的空壳
+  document.getElementById('goConjugationSetupBtn')?.addEventListener('click', () => {
+    if (window.ConjugationPractice && typeof window.ConjugationPractice.openFor === 'function') {
+      window.ConjugationPractice.openFor('italian');
+    } else {
+      showScreen('conjugationSetupScreen');
+    }
+  });
   document.getElementById('goGrammarBookBtn')?.addEventListener('click', () => {
     showScreen('grammarBookScreen');
     if (typeof GrammarBook !== 'undefined') GrammarBook.init();
@@ -2736,9 +2744,13 @@ function bindEvents() {
       AppState.selectedSourceType = 'cognate';
       AppState.currentWordbook = null;
 
-      // 加载 cognate 词汇
+      // 加载 cognate 词汇（数据按模块懒加载，缺席时补拉后重进流程）
       if (typeof COGNATE_DATA !== 'undefined') {
         AppState.currentWords = COGNATE_DATA.slice(0, 1000);
+      } else if (window.LangLoader && typeof window.LangLoader.ensureModule === 'function'
+        && !window.LangLoader.isModuleLoaded('italian', 'cognates')) {
+        window.LangLoader.ensureModule('italian', 'cognates').then(() => btn.click());
+        return;
       }
 
       // 重置进度

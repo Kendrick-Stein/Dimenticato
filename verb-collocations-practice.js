@@ -275,7 +275,7 @@ const VerbCollocationPractice = (() => {
   }
 
   /** 该语言还没有搭配数据时的明确空状态（不再是点了开始才弹 alert）。 */
-  function renderMissingDataset() {
+  function renderMissingDataset(retry) {
     const profile = profileFor(state.lang);
     setStartEnabled(false);
     dom.quizCard?.classList.add('hidden');
@@ -291,6 +291,16 @@ const VerbCollocationPractice = (() => {
           '<p>' + escapeHtml(profile.title) + '词库还在建设中，练习题目暂时无法生成。' +
             '数据落盘后本页会自动出题，无需更新应用。</p>' +
         '</div>';
+    }
+
+    // 搭配数据是按模块懒加载的：第一次缺席先补拉再重渲染（重试标志防止死循环）
+    if (retry !== false && window.LangLoader && typeof window.LangLoader.ensureModule === 'function'
+      && !window.LangLoader.isModuleLoaded(state.lang, 'collocations')) {
+      const lang = state.lang;
+      window.LangLoader.ensureModule(lang, 'collocations').then(() => {
+        if (state.lang !== lang) return;
+        renderSummary();
+      });
     }
   }
 

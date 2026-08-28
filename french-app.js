@@ -946,10 +946,20 @@
 
     bindGrammar() {
       this.bindClick('frenchGrammarBookBtn', () => {
-        if (typeof GrammarBook !== 'undefined' && typeof FRENCH_GRAMMAR_DATA !== 'undefined') {
-          GrammarBook.init(FRENCH_GRAMMAR_DATA);
-          this.showScreen('grammarBookScreen');
+        if (typeof GrammarBook === 'undefined') return;
+        // 语法数据按模块懒加载：缺席时补拉后重试点击（GrammarBook.init 里
+        // 也有同款守卫兜底）；拉不到就不进屏，避免空壳
+        if (typeof FRENCH_GRAMMAR_DATA === 'undefined') {
+          if (window.LangLoader && typeof window.LangLoader.ensureModule === 'function'
+            && !window.LangLoader.isModuleLoaded('french', 'grammar')) {
+            window.LangLoader.ensureModule('french', 'grammar').then(() => {
+              document.getElementById('frenchGrammarBookBtn')?.click();
+            });
+          }
+          return;
         }
+        GrammarBook.init(FRENCH_GRAMMAR_DATA);
+        this.showScreen('grammarBookScreen');
       });
       this.bindClick('frenchConjugationBtn', () => {
         if (window.ConjugationPractice) {
