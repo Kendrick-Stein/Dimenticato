@@ -100,7 +100,7 @@
 2. `lib/lang-loader.js` + `lib/boot.js`（仅有的两个静态 `<script defer>`，另有 Chart.js / marked / Supabase 三个 CDN）启动引导：
    - **首屏**：`LangLoader.boot()` 按 URL hash / 上次选择判定当前语言，只注入「该语言的词库数据 + 全部共享代码」
      - 词库清单（`DATA`）：意 `vocabulary.js`；德 `german-vocabulary + german-course-data`；英 `english-vocabulary`；法 `french-vocabulary(-core/-glossary)`
-     - 共享代码（`CODE`，顺序承重）：`utils → word-similarity → quiz-engine → typing-game → navigation → router → supabase-config → community-wordbooks → cognate-app → typing-game-app → app → app-enhanced → german-app → german-course → french-app → conjugation-app → stats-charts → grammar-book → verb-collocations → verb-collocations-practice`
+     - 共享代码（`CODE`，顺序承重）：`utils → word-similarity → quiz-engine → practice-flow → typing-game → navigation → router → supabase-config → community-wordbooks → cognate-app → typing-game-app → app → app-enhanced → german-app → german-course → french-app → conjugation-app → stats-charts → grammar-book → verb-collocations → verb-collocations-practice`
    - 注入用 `script.async = false`：并行下载、按序执行
    - 就绪后 `__ReadyGate.release()` + 派发合成 `DOMContentLoaded`，各模块按原顺序初始化
 3. **二级模块懒加载**（`MODULES` + `LangLoader.ensureModule(lang, module)`）：变位 / 语法书 / 动词搭配 / 同源词四类数据只在对应模块被打开时才拉。守卫在各 opener 内部：
@@ -1750,6 +1750,37 @@
   改为补拉后重试（其它入口本就传 null 进 init 走守卫）
 - 浏览器实测：意语语法书 / 变位 / 同源词随开随拉，法语 #/fr 直达语法书、
   变位均正常；MC 出题 + 延迟落盘（答题后 flush 前后对比）验证通过
+
+### 2026-08-28 — 选择题判分收敛 + 猴子补丁清理
+
+**新增 `lib/practice-flow.js`（PracticeFlow）：**
+- 四语言 MC check 原是四份逐行同构的手抄（state 计数 → 掌握记录 → 高亮 →
+  反馈 → 准确率 → 保存 → 自动下一题），「同一题计 2 次」的统计 bug 即源于此
+- `PracticeFlow.mcAnswer(env)`：判分与 UI 流程共享；语言差异（掌握策略、
+  准确率文案、保存动作、下一题延迟）由 env 适配器注入
+- 答题遥测（StatsManager / SpacedRepetition / ReviewSession）原由
+  app-enhanced 的 QuizIntegration 用「计数器差分」挂在 check 外面，现内联到
+  共享流程；QuizIntegration 收缩为只包拼写模式
+- 拼写判分（德语大小写宽容 / 法语重音宽容）是真实语言差异，保留在各 app
+
+**四个 MC check 全部改为 ~15 行适配器：** app.js `MultipleChoice.checkAnswer`、
+german-app `checkMultipleChoiceAnswer` / `_checkMcAnswer`、french-app
+`checkMultipleChoice`。`startedAt` 由返回值存回各自的 `_questionStartedAt`。
+
+**猴子补丁清理：**
+- `MultipleChoice.loadQuestion` 双定义合并：生效版（带方向出题）搬进对象
+  字面量，删除文件末尾的迟到覆盖赋值；`questionStartTime` 更名
+  `_questionStartedAt`
+- `Browse.render = BrowseEnhanced.render` 覆盖赋值删除：app.js 的
+  `Browse.render` 显式委托 `BrowseEnhanced.render`
+- `QuizEngine` 的 `saveFn` 死配置删除（引擎从不调用，四个 app 与测试均不再传）
+
+**验证：** 402 用例全过（新增 PracticeFlow 16 个）；浏览器实测意语 MC 答题
+（统计/每日记录均只 +1）、拼写（包装仍生效）、浏览页委托 + 分页 200/1000。
+
+**剩余收敛边界（后续可做）：** 拼写判分流程、browse 状态管理、
+loadState/saveState 骨架仍在各 app 内平铺；app-enhanced 的
+WordbookManager.renderWordbookCards 覆盖与 updateProgressScreenStats 包装仍在。
 
 ---
 

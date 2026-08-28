@@ -1475,7 +1475,6 @@ const MultipleChoice = {
         mastered: AppState.masteredWords,
         fieldMap: { source: 'italian', target: 'english' },
         get difficulty() { return QuizEngine.getDifficulty(); },
-        saveFn: function () { Storage.save(); },
         onUpdateStats: updateHeaderStats,
         dom: {
           optionsContainer: document.getElementById('mcOptions'),
@@ -1503,6 +1502,9 @@ const MultipleChoice = {
     this.loadQuestion();
   },
 
+  // 历史上这里曾有一份「朴素版」loadQuestion，随后在文件末尾被 SRS 增强版
+  // 整个覆盖（双定义，读代码的人要跳到 3000 行外才知道哪份生效）。
+  // 2026-08-28 合并为单一定义：下面就是原「增强版」的全部内容。
   loadQuestion() {
     if (AppState.quizIndex >= AppState.currentWords.length) {
       this.showCompletion();
@@ -1510,6 +1512,7 @@ const MultipleChoice = {
     }
 
     AppState.currentWord = AppState.currentWords[AppState.quizIndex];
+    this._questionStartedAt = Date.now(); // PracticeFlow 遥测算答题时长用
 
     // 更新进度
     document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
@@ -1522,21 +1525,36 @@ const MultipleChoice = {
       : 0;
     document.getElementById('mcAccuracy').textContent = accuracy + '%';
 
-    // 显示意大利语单词（本方法被文件末尾的 SRS 增强版 loadQuestion 覆盖，见 ~2979）
-    document.getElementById('mcItalianWord').textContent = AppState.currentWord.italian;
+    // 题面跟着出题方向走：正向显示意大利语单词，反向显示释义
+    const mcEngine = this._getEngine();
+    document.getElementById('mcItalianWord').textContent =
+      mcEngine.questionTextFor(AppState.currentWord);
+    mcEngine.applyDirectionLabels(
+      { question: 'mcQuestionLabel', options: 'mcOptionsLabel' },
+      { question: '意大利语单词', options: '选择正确的英语翻译' },
+      { question: '英语释义', options: '选择正确的意大利语单词' }
+    );
 
-    // 自动朗读意大利语单词
-    setTimeout(() => {
-      italianSpeaker.speak(AppState.currentWord.italian, true);
-    }, 300); // 稍微延迟一下，让界面先更新
+    // 自动朗读意大利语单词（反向模式题面是释义，朗读词形等于报答案）
+    if (mcEngine.shouldSpeakQuestion()) {
+      setTimeout(() => {
+        italianSpeaker.speak(AppState.currentWord.italian, true);
+      }, 300); // 稍微延迟一下，让界面先更新
+    }
 
-    // 显示中文提示（如果存在）
+    // 处理中文提示 - 默认隐藏，显示"显示提示"按钮
     const chineseHint = document.getElementById('mcChineseHint');
+    const showHintBtn = document.getElementById('mcShowHintBtn');
+
     if (AppState.currentWord.chinese) {
+      // 有中文翻译时，显示提示按钮，隐藏中文
       chineseHint.textContent = `中文: ${AppState.currentWord.chinese}`;
-      chineseHint.classList.remove('hidden');
-    } else {
       chineseHint.classList.add('hidden');
+      showHintBtn.classList.remove('hidden');
+    } else {
+      // 没有中文翻译时，隐藏按钮和中文
+      chineseHint.classList.add('hidden');
+      showHintBtn.classList.add('hidden');
     }
 
     // 显示 notes（如果存在）
@@ -1579,37 +1597,27 @@ const MultipleChoice = {
     this._getEngine().renderOptions(options, function (btn) { self.checkAnswer(btn); });
   },
 
+  // 上一题的开始时刻（PracticeFlow 遥测算答题时长用；0 = 未知）
+  _questionStartedAt: 0,
+
+  // 判分流程共享自 lib/practice-flow.js（四语言同一实现），
+  // 语言差异全部通过 env 注入：掌握策略、保存动作、下一题延迟。
   checkAnswer(button) {
-    var selectedAnswer = button.dataset.answer;
-    var correctAnswer = this._getEngine().correctAnswerFor(AppState.currentWord);
-    var isCorrect = selectedAnswer === correctAnswer;
-
-    AppState.quizTotal++;
-    if (isCorrect) {
-      AppState.quizCorrect++;
-      AppState.stats.mcCorrect++;
-    }
-    AppState.stats.mcAttempts++;
-    // 掌握与否交给 MasteryPolicy（连续答对才算数；答错清零）
-    recordItalianMastery(AppState.currentWord, isCorrect);
-
-    // Highlight all options
-    var engine = this._getEngine();
-    engine.highlightOptions(correctAnswer);
-    if (!isCorrect) {
-      button.classList.remove('faded');
-      button.classList.add('wrong');
-    }
-
-    engine.showFeedback(isCorrect, correctAnswer);
-
-    // 答对时，1秒后自动跳转下一题
-    if (isCorrect) {
-      setTimeout(() => this.nextQuestion(), 1000);
-    }
-
-    Storage.save();
-    updateHeaderStats();
+    var self = this;
+    this._questionStartedAt = window.PracticeFlow.mcAnswer({
+      lang: 'italian',
+      engine: function () { return self._getEngine(); },
+      button: button,
+      word: AppState.currentWord,
+      state: AppState,
+      stats: AppState.stats,
+      // 掌握与否交给 MasteryPolicy（连续答对才算数；答错清零）
+      recordMastery: function (word, ok) { recordItalianMastery(word, ok); },
+      save: function () { Storage.save(); updateHeaderStats(); },
+      next: function () { self.nextQuestion(); },
+      nextDelay: 1000,
+      startedAt: this._questionStartedAt || 0
+    });
   },
   
   nextQuestion() {
@@ -1655,7 +1663,6 @@ const Spelling = {
         stats: AppState.stats,
         mastered: AppState.masteredWords,
         fieldMap: { source: 'english', target: 'italian' }, // reversed for spelling
-        saveFn: function () { Storage.save(); },
         onUpdateStats: updateHeaderStats,
         dom: {
           optionsContainer: null, // not used in spelling
@@ -1827,57 +1834,11 @@ const Browse = {
     document.getElementById('searchInput').value = '';
   },
   
+  // 渲染实现住在 app-enhanced.js 的 BrowseEnhanced（分页 + 事件委托 + SRS 状态），
+  // 2026-08-28 起由这里显式委托，取代原先「app-enhanced 末尾覆盖 Browse.render」
+  // 的猴子补丁写法 —— 现在读 app.js 就能知道渲染走哪份实现。
   render(searchTerm = '') {
-    let words = [...AppState.currentWords];
-    
-    // 应用过滤器
-    if (this.currentFilter === 'mastered') {
-      words = words.filter(w => AppState.masteredWords.has(w.italian));
-    } else if (this.currentFilter === 'unmastered') {
-      words = words.filter(w => !AppState.masteredWords.has(w.italian));
-    }
-    
-    // 应用搜索
-    if (searchTerm) {
-      const term = searchTerm.toLowerCase();
-      words = words.filter(w => 
-        w.italian.toLowerCase().includes(term) || 
-        w.english.toLowerCase().includes(term)
-      );
-    }
-    
-    // 渲染列表
-    const container = document.getElementById('wordList');
-    
-    if (words.length === 0) {
-      container.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 2rem;">没有找到单词</p>';
-      return;
-    }
-    
-    container.innerHTML = '<div class="word-card">' + words.map(word => {
-      const isMastered = AppState.masteredWords.has(word.italian);
-
-      return `
-        <div class="word-line" data-italian="${escapeHtml(word.italian)}">
-          <span class="wl-word">${escapeHtml(word.italian)}</span>
-          <span class="wl-gloss">${escapeHtml(word.english)}${word.notes ? `<span class="wl-note">${escapeHtml(word.notes)}</span>` : ''}</span>
-          <span class="wl-cn">${word.chinese ? escapeHtml(word.chinese) : ''}</span>
-          <span class="wl-status"><span class="dot${isMastered ? ' good' : ''}"></span>${isMastered ? '已掌握' : '学习中'}</span>
-          <button class="wl-speaker" title="朗读"><span class="msr">volume_up</span></button>
-        </div>
-      `;
-    }).join('') + '</div>';
-
-    // 为每个单词项添加点击朗读功能
-    container.querySelectorAll('.word-line').forEach(item => {
-      item.style.cursor = 'pointer';
-      item.addEventListener('click', () => {
-        const italian = item.dataset.italian;
-        if (italian) {
-          italianSpeaker.speak(italian);
-        }
-      });
-    });
+    return BrowseEnhanced.render(searchTerm);
   },
 
   setFilter(filter) {
@@ -3018,79 +2979,14 @@ function stopSessionTracking() {
 
 // ==================== 集成 SM-2 算法到测验模式 ====================
 //
-// 这里原本有两段 `if (typeof StatsManager !== 'undefined' && typeof
-// SpacedRepetition !== 'undefined') { ... }` 包裹的 MultipleChoice / Spelling
-// 包装器。StatsManager 和 SpacedRepetition 是 app-enhanced.js 里的顶层 const，
-// 而 app-enhanced.js 在本文件【之后】加载 —— 于是这两个 typeof 在本文件执行时
-// 永远是 'undefined'，两个包装器从来没有安装过：整个间隔重复系统（SRS）
-// 从上线起就是死代码，dimenticato_daily_stats 里除了 duration 之外全是 0。
-//
-// 现在这些包装器统一由 app-enhanced.js 安装（那时两个模块都已存在，并且一律通过
-// window.* 在调用时解析），四种语言都会接入。本文件不再做任何解析期 typeof 判断。
-
-MultipleChoice.loadQuestion = function() {
-  if (AppState.quizIndex >= AppState.currentWords.length) {
-    this.showCompletion();
-    return;
-  }
-  
-  AppState.currentWord = AppState.currentWords[AppState.quizIndex];
-  this.questionStartTime = Date.now(); // 记录开始时间
-  
-  // 更新进度
-  document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
-  document.getElementById('mcTotalWords').textContent = AppState.currentWords.length;
-  updateSessionFill('mcSessionFill', AppState.quizIndex, AppState.currentWords.length);
-
-  // 更新正确率
-  const accuracy = AppState.quizTotal > 0
-    ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100)
-    : 0;
-  document.getElementById('mcAccuracy').textContent = accuracy + '%';
-  
-    // 题面跟着出题方向走：正向显示意大利语单词，反向显示释义
-    const mcEngine = this._getEngine();
-    document.getElementById('mcItalianWord').textContent =
-      mcEngine.questionTextFor(AppState.currentWord);
-    mcEngine.applyDirectionLabels(
-      { question: 'mcQuestionLabel', options: 'mcOptionsLabel' },
-      { question: '意大利语单词', options: '选择正确的英语翻译' },
-      { question: '英语释义', options: '选择正确的意大利语单词' }
-    );
-
-    // 自动朗读意大利语单词（反向模式题面是释义，朗读词形等于报答案）
-    if (mcEngine.shouldSpeakQuestion()) {
-      setTimeout(() => {
-        italianSpeaker.speak(AppState.currentWord.italian, true);
-      }, 300); // 稍微延迟一下，让界面先更新
-    }
-  
-  // 处理中文提示 - 默认隐藏，显示"显示提示"按钮
-  const chineseHint = document.getElementById('mcChineseHint');
-  const showHintBtn = document.getElementById('mcShowHintBtn');
-  
-  if (AppState.currentWord.chinese) {
-    // 有中文翻译时，显示提示按钮，隐藏中文
-    chineseHint.textContent = `中文: ${AppState.currentWord.chinese}`;
-    chineseHint.classList.add('hidden');
-    showHintBtn.classList.remove('hidden');
-  } else {
-    // 没有中文翻译时，隐藏按钮和中文
-    chineseHint.classList.add('hidden');
-    showHintBtn.classList.add('hidden');
-  }
-  
-  // 显示 notes（如果存在）
-  this.displayNotes();
-  
-  // 生成选项
-  this.generateOptions();
-  
-  // 隐藏反馈
-  document.getElementById('mcFeedback').classList.add('hidden');
-};
-
-// （Spelling 的 SM-2 包装器同样移到 app-enhanced.js，原因见上。）
+// 这里原本有两段 `if (typeof StatsManager !== 'undefined' &&
+// typeof SpacedRepetition !== 'undefined') { ... }` 包裹的 MultipleChoice / Spelling
+// 包装器，以及一版在此覆盖 MultipleChoice.loadQuestion 的「SRS 增强版」。
+// 那些全部收口了：
+//   * SRS/统计包装器统一由 app-enhanced.js 的 QuizIntegration 安装（拼写模式）；
+//   * 选择题的判分与遥测走 lib/practice-flow.js 共享流程（四语言同一实现）；
+//   * loadQuestion 的双定义已合并进上方 MultipleChoice 对象字面量。
+// 本文件不再做任何解析期 typeof 判断，也不再在文件末尾覆盖自身方法。
 
 // ==================== 单词本卡片添加管理按钮 ====================
 

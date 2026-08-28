@@ -1285,8 +1285,8 @@ const BrowseEnhanced = {
   }
 };
 
-// 覆盖原始的 Browse.render
-Browse.render = BrowseEnhanced.render;
+// （原「覆盖原始的 Browse.render」的赋值已删除：app.js 的 Browse.render
+//  现在显式委托到上面的实现，读代码不再需要知道这层覆盖关系。）
 
 // ==================== Progress 页面统计面板（redesign） ====================
 // 填充 #progressWeekBars（最近 7 天练习量柱条，最新一天 .bar.latest 强调）
@@ -1439,19 +1439,19 @@ const QuizIntegration = {
 
   installItalian() {
     if (this.installed.italian) return false;
-    const mc = window.MultipleChoice || (typeof MultipleChoice !== 'undefined' ? MultipleChoice : null);
+    // 选择题的遥测已内联到 lib/practice-flow.js 的共享判分流程里
+    //（四个语言的 MC check 都委托给它），这里只包拼写。
     const sp = window.Spelling || (typeof Spelling !== 'undefined' ? Spelling : null);
-    const okMc = this.wrap(mc, 'checkAnswer', 'italian', 'mc');
-    const okSp = this.wrap(sp, 'checkAnswer', 'italian', 'sp');
-    this.installed.italian = okMc && okSp;
+    this.installed.italian = this.wrap(sp, 'checkAnswer', 'italian', 'sp');
     return this.installed.italian;
   },
 
-  // 德/英/法的模块对象由后加载的脚本创建，必须等到 DOMContentLoaded 再包装
+  // 德/英/法的模块对象由后加载的脚本创建，必须等到 DOMContentLoaded 再包装。
+  // 选择题已走共享判分（遥测内联），只剩拼写需要包装。
   METHODS: {
-    german: [['checkMultipleChoiceAnswer', 'mc'], ['checkSpellingAnswer', 'sp']],
-    english: [['_checkMcAnswer', 'mc'], ['checkSpelling', 'sp']],
-    french: [['checkMultipleChoice', 'mc'], ['checkSpelling', 'sp']]
+    german: [['checkSpellingAnswer', 'sp']],
+    english: [['checkSpelling', 'sp']],
+    french: [['checkSpelling', 'sp']]
   },
 
   installLanguage(lang) {

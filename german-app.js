@@ -386,7 +386,6 @@
           mastered: GermanApp.mastered,
           fieldMap: { source: 'german', target: 'meaning' },
           get difficulty() { return QuizEngine.getDifficulty(); },
-          saveFn: function () { GermanApp.saveState(); },
           onUpdateStats: function () {},
           dom: {
             optionsContainer: document.getElementById('germanMcOptions'),
@@ -1354,35 +1353,23 @@
     },
 
     checkMultipleChoiceAnswer(button) {
-      if (!this.currentWord) return;
-
-      const correctAnswer = this._getMcEngine().correctAnswerFor(this.currentWord);
-      const selectedAnswer = button.dataset.answer || '';
-      const isCorrect = selectedAnswer === correctAnswer;
-
-      this.quizTotal += 1;
-      this.stats.mcAttempts += 1;
-      if (isCorrect) {
-        this.quizCorrect += 1;
-        this.stats.mcCorrect += 1;
-      }
-      this.recordAnswer(this.currentWord, isCorrect);
-
-      var engine = this._getMcEngine();
-      engine.highlightOptions(correctAnswer);
-      if (!isCorrect) {
-        button.classList.remove('faded');
-        button.classList.add('wrong');
-      }
-
-      engine.showFeedback(isCorrect, correctAnswer);
-
-      this.setText('germanMcAccuracy', `${this.getAccuracy()}%`);
-      this.saveState();
-
-      if (isCorrect) {
-        setTimeout(() => this.nextMultipleChoiceQuestion(), 900);
-      }
+      const self = this;
+      this._questionStartedAt = window.PracticeFlow.mcAnswer({
+        lang: 'german',
+        engine: () => this._getMcEngine(),
+        button,
+        word: this.currentWord,
+        state: this,
+        stats: this.stats,
+        recordMastery: (word, ok) => this.recordAnswer(word, ok),
+        setText: (id, text) => this.setText(id, text),
+        accuracyId: 'germanMcAccuracy',
+        accuracyText: () => `${this.getAccuracy()}%`,
+        save: () => this.saveState(),
+        next: () => this.nextMultipleChoiceQuestion(),
+        nextDelay: 900,
+        startedAt: this._questionStartedAt || 0
+      });
     },
 
     nextMultipleChoiceQuestion() {
@@ -1767,7 +1754,6 @@
           mastered: EnglishApp.mastered,
           fieldMap: { source: 'english', target: 'meaning' },
           get difficulty() { return QuizEngine.getDifficulty(); },
-          saveFn: function () { EnglishApp._saveState(); },
           onUpdateStats: function () {},
           dom: {
             optionsContainer: document.getElementById('englishMcOptions'),
@@ -2268,29 +2254,23 @@
     },
 
     _checkMcAnswer(button) {
-      if (!this.currentWord) return;
       const g = this._germanApp;
-      const correct = this._getMcEngine().correctAnswerFor(this.currentWord);
-      const selected = button.dataset.answer || '';
-      const isCorrect = selected === correct;
-
-      this.quizTotal++;
-      this.stats.mcAttempts++;
-      if (isCorrect) { this.quizCorrect++; this.stats.mcCorrect++; }
-      this._recordAnswer(this.currentWord, isCorrect);
-
-      var engine = this._getMcEngine();
-      engine.highlightOptions(correct);
-      if (!isCorrect) {
-        button.classList.remove('faded');
-        button.classList.add('wrong');
-      }
-
-      engine.showFeedback(isCorrect, correct);
-
-      g.setText('englishMcAccuracy', `${this._accuracy()}%`);
-      this._saveState();
-      if (isCorrect) setTimeout(() => this.nextMcQuestion(), 900);
+      this._questionStartedAt = window.PracticeFlow.mcAnswer({
+        lang: 'english',
+        engine: () => this._getMcEngine(),
+        button,
+        word: this.currentWord,
+        state: this,
+        stats: this.stats,
+        recordMastery: (word, ok) => this._recordAnswer(word, ok),
+        setText: (id, text) => g.setText(id, text),
+        accuracyId: 'englishMcAccuracy',
+        accuracyText: () => `${this._accuracy()}%`,
+        save: () => this._saveState(),
+        next: () => this.nextMcQuestion(),
+        nextDelay: 900,
+        startedAt: this._questionStartedAt || 0
+      });
     },
 
     nextMcQuestion() {

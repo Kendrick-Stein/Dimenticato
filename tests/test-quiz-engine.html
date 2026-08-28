@@ -24,6 +24,7 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
 <script src="../lib/utils.js"></script>
 <script src="../lib/word-similarity.js"></script>
 <script src="../lib/quiz-engine.js"></script>
+<script src="../lib/practice-flow.js"></script>
 <script>
 (function () {
   var results = document.getElementById('results');
@@ -73,7 +74,6 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
       stats: {},
       mastered: new Set(),
       fieldMap: { source: 'italian', target: 'english' },
-      saveFn: function () {},
       onUpdateStats: function () {},
       dom: {}
     };
@@ -625,7 +625,6 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
         fieldMap: { source: source, target: 'meaning' },
         language: lang,
         get difficulty() { return QuizEngine.getDifficulty(); },
-        saveFn: function () {},
         onUpdateStats: function () {},
         dom: {}
       });
@@ -916,6 +915,93 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     assert(sampled.length >= 400, '采样结果足够大（覆盖词频段，实际 ' + sampled.length + '）');
     var sampledNoRank = QuizEngine.sampleDistractorPool(bigPool, null);
     assert(sampledNoRank.length > 0 && sampledNoRank.length <= 800, '无当前词时等距抽样兜底');
+  });
+
+  // ===== PracticeFlow：四语言共享的选择题判分流程 =====
+  group('PracticeFlow.mcAnswer', function () {
+    assert(typeof window.PracticeFlow === 'object', 'PracticeFlow 已暴露到 window');
+    if (typeof window.PracticeFlow !== 'object') return;
+
+    function fakeButton(answer) {
+      return {
+        dataset: { answer: answer },
+        classList: {
+          removed: [], added: [],
+          remove: function (c) { this.removed.push(c); },
+          add: function (c) { this.added.push(c); }
+        }
+      };
+    }
+
+    var classStub = { remove: function () {}, add: function () {} };
+    var engine = makeEngine({
+      difficulty: 'easy',
+      dom: {
+        optionsContainer: { querySelectorAll: function () { return []; } },
+        feedbackEl: { innerHTML: '', classList: classStub },
+        feedbackTextEl: { innerHTML: '', classList: classStub }
+      }
+    });
+    var recorded = [];
+    window.StatsManager = { recordActivity: function (lang, d) { recorded.push([lang, d]); } };
+    try {
+      var env = {
+        lang: 'italian',
+        engine: engine,
+        button: fakeButton('house'),
+        word: { italian: 'casa', english: 'house' },
+        state: { quizTotal: 0, quizCorrect: 0 },
+        stats: { mcAttempts: 0, mcCorrect: 0 },
+        masteryHooked: 0, saveCalls: 0, nextCalls: 0,
+        recordMastery: function () { this.masteryHooked++; },
+        save: function () { this.saveCalls++; },
+        next: function () { this.nextCalls++; },
+        nextDelay: 1,
+        startedAt: 0
+      };
+      var newStart = window.PracticeFlow.mcAnswer(env);
+
+      assertEqual(env.state.quizTotal, 1, '答对：quizTotal +1');
+      assertEqual(env.stats.mcAttempts, 1, '答对：mcAttempts +1');
+      assertEqual(env.stats.mcCorrect, 1, '答对：mcCorrect +1');
+      assertEqual(env.state.quizCorrect, 1, '答对：quizCorrect +1');
+      assertEqual(env.masteryHooked, 1, '掌握策略被调用一次');
+      assertEqual(env.saveCalls, 1, 'save 被调用一次');
+      assert(typeof newStart === 'number' && newStart > 0, '返回新一题的开始时刻');
+      assert(recorded.length === 1 && recorded[0][0] === 'italian', '遥测按语言记录一次');
+      assertEqual(recorded[0][1].correct, 1, '遥测记录答对');
+      assertEqual(recorded[0][1].total, 1, '遥测只记一题（不再有差分双计数）');
+
+      // 答错路径
+      var env2 = {
+        lang: 'italian',
+        engine: engine,
+        button: fakeButton('wrong-gloss'),
+        word: { italian: 'casa', english: 'house' },
+        state: { quizTotal: 0, quizCorrect: 0 },
+        stats: { mcAttempts: 0, mcCorrect: 0 },
+        nextCalls: 0,
+        save: function () {},
+        next: function () { this.nextCalls++; },
+        startedAt: 0
+      };
+      window.PracticeFlow.mcAnswer(env2);
+      assertEqual(env2.stats.mcCorrect, 0, '答错：mcCorrect 不加');
+      assert(env2.button.classList.added.indexOf('wrong') !== -1, '答错：按钮标 wrong');
+      assertEqual(env2.nextCalls, 0, '答错不自动下一题');
+
+      // 空词守卫
+      var env3 = {
+        lang: 'italian', engine: engine, button: fakeButton('x'), word: null,
+        state: { quizTotal: 0, quizCorrect: 0 }, stats: { mcAttempts: 0, mcCorrect: 0 },
+        startedAt: 0
+      };
+      var r3 = window.PracticeFlow.mcAnswer(env3);
+      assertEqual(env3.state.quizTotal, 0, '空词时直接返回不计数');
+      assert(r3 === 0, '空词时返回 startedAt 原值');
+    } finally {
+      delete window.StatsManager;
+    }
   });
 
   // --- Summary ---
