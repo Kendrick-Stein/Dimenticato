@@ -1569,9 +1569,11 @@ const MultipleChoice = {
 
   generateOptions() {
     var correctAnswer = this._getEngine().correctAnswerFor(AppState.currentWord);
-    var optionSource = (Array.isArray(AppState.currentWords) && AppState.currentWords.length > 1)
+    var fullPool = (Array.isArray(AppState.currentWords) && AppState.currentWords.length > 1)
       ? AppState.currentWords
       : AppState.vocabulary;
+    // 27k 全池直接喂给引擎 = 每题一次全表扫描 + 全表洗牌；先有界采样到 800
+    var optionSource = QuizEngine.sampleDistractorPool(fullPool, AppState.currentWord);
     var options = this._getEngine().generateOptions(correctAnswer, optionSource);
     var self = this;
     this._getEngine().renderOptions(options, function (btn) { self.checkAnswer(btn); });

@@ -315,26 +315,10 @@
   // （lib/word-similarity.js），在 24,000 条上是每题 ~145ms 的主线程停顿。
   const DISTRACTOR_POOL_SIZE = 800;
 
-  function sampleDistractorPool(source, currentWord) {
-    const pool = Array.isArray(source) ? source : [];
-    if (pool.length <= DISTRACTOR_POOL_SIZE) return pool.slice();
-
-    const picked = [];
-    // 1) 词频邻域：难度接近的词更适合做干扰项（两个词库都按 rank 升序）
-    const rank = currentWord && Number(currentWord.rank);
-    if (Number.isFinite(rank) && pool[rank - 1] && pool[rank - 1].rank === rank) {
-      const half = Math.floor(DISTRACTOR_POOL_SIZE / 2);
-      const start = Math.max(0, rank - 1 - half);
-      picked.push(...pool.slice(start, start + DISTRACTOR_POOL_SIZE));
-    }
-    // 2) 等距抽样兜底 / 补足：覆盖各个词频段
-    const stride = pool.length / (DISTRACTOR_POOL_SIZE / 2);
-    for (let i = 0; picked.length < DISTRACTOR_POOL_SIZE && i < pool.length; i += 1) {
-      const index = Math.floor(i * stride) % pool.length;
-      picked.push(pool[index]);
-    }
-    return picked;
-  }
+  // 实现已提升到 lib/quiz-engine.js（QuizEngine.sampleDistractorPool），
+  // 意/法共用同一份；这里留个别名，调用点不变。
+  const sampleDistractorPool = (source, currentWord) =>
+    QuizEngine.sampleDistractorPool(source, currentWord, DISTRACTOR_POOL_SIZE);
 
   function debounce(fn, wait) {
     let timer = null;

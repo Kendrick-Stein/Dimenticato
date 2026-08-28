@@ -902,6 +902,20 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     persist();
     window.DimenticatoUtils.flushAllPersisters();
     assertEqual(writes, 2, 'flushAllPersisters 冲刷全部实例');
+
+    // 有界干扰项采样：generateOptions 的 easy/回退路径对池做整表 filter+洗牌，
+    // 24k+ 全池直接喂进来每题几十毫秒。采样必须把池压到常数上界。
+    assert(typeof QuizEngine.sampleDistractorPool === 'function', 'sampleDistractorPool 是共享静态方法');
+    var tinyPool = [{ italian: 'a', english: 'g1' }, { italian: 'b', english: 'g2' }];
+    assertEqual(QuizEngine.sampleDistractorPool(tinyPool, tinyPool[0]).length, 2,
+      '小池原样返回（不超过池大小）');
+    var bigPool = [];
+    for (var bi = 0; bi < 5000; bi++) bigPool.push({ italian: 'w' + bi, english: 'g' + bi, rank: bi + 1 });
+    var sampled = QuizEngine.sampleDistractorPool(bigPool, bigPool[2500]);
+    assert(sampled.length <= 800, '大池采样结果不超过上界 800（实际 ' + sampled.length + '）');
+    assert(sampled.length >= 400, '采样结果足够大（覆盖词频段，实际 ' + sampled.length + '）');
+    var sampledNoRank = QuizEngine.sampleDistractorPool(bigPool, null);
+    assert(sampledNoRank.length > 0 && sampledNoRank.length <= 800, '无当前词时等距抽样兜底');
   });
 
   // --- Summary ---

@@ -604,6 +604,8 @@
     _mcEngine: null,
     _questionStartedAt: 0,
     _browse: { words: [], rendered: 0, pageSize: 200 },
+    _keysCache: null,
+    _keysCacheSource: null,
 
     init() {
       if (!screensInstalled) return;
@@ -1428,8 +1430,12 @@
     // 同义词条（释义字符串相同）绝不能进入干扰项，否则会出现两个"正确"选项
     // （反向模式下由 QuizEngine.generateOptions 的同义排除兜底）
     distractorPool(correct) {
+      // 每题对 24k 词表 filter 出新数组有两重代价：O(n) 遍历本身，以及
+      // WordSimilarity 的索引按「池数组身份」缓存、每题新数组让它永远重建。
+      // 改成稳定的有界采样（同义/同形排除由引擎自己做，那里才是正确归属）。
       const target = String(correct || '').trim();
-      return this.words.filter(word => String(word.meaning || '').trim() !== target);
+      return QuizEngine.sampleDistractorPool(this.words, this.currentWord)
+        .filter(word => String(word.meaning || '').trim() !== target);
     },
 
     checkMultipleChoice(button) {
@@ -1667,7 +1673,13 @@
     // ==================== 进度 ====================
 
     countMastered() {
-      const keys = new Set(this.words.map(word => word.french));
+      // 词表身份缓存：key set 只在切词源（this.words 换引用）时重建，
+      // 此前每答一题都全表建一次 24k 的 Set
+      if (this._keysCacheSource !== this.words) {
+        this._keysCacheSource = this.words;
+        this._keysCache = new Set(this.words.map(word => word.french));
+      }
+      const keys = this._keysCache;
       let count = 0;
       this.mastered.forEach(value => { if (keys.has(value)) count++; });
       return count;
