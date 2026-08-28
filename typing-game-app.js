@@ -64,7 +64,9 @@
       out.push({
         answer: answer,
         prompt: prompt.slice(0, 18),
-        sub: String(e.sub || '').trim().slice(0, 26)
+        // 34 字符：变位模式的「人称 · 时态标签」需要这个宽度（26 会把时态
+        // 切到只剩一半）；气泡宽度本身会按文字自适应，上限只防极端长释义。
+        sub: String(e.sub || '').trim().slice(0, 34)
       });
     }
     return out;
@@ -121,7 +123,9 @@
     italian: { io: '我', tu: '你', lui_lei: '他/她', noi: '我们', voi: '你们', loro: '他们' },
     german: { ich: '我', du: '你', er_sie_es: '他/她/它', wir: '我们', ihr: '你们', sie: '他们/您' },
     french: { je: '我', tu: '你', il_elle_on: '他/她/on', nous: '我们', vous: '您/你们', ils_elles: '他们/她们' },
-    english: { io: 'I', tu: 'you', lui_lei: 'he/she', noi: 'we', voi: 'you', loro: 'they' }
+    // 英语变位数据的人称键是 i/you/he_she_it/we/you_pl/they（与意语键不同），
+    // 此前按意语键查表全部落空，题面会显示原始键名（"he_she_it"）。
+    english: { i: '我', you: '你', he_she_it: '他/她/它', we: '我们', you_pl: '你们', they: '他们' }
   };
 
   function conjEntries(lang) {
@@ -146,10 +150,12 @@
           for (const pk of Object.keys(t.forms)) {
             const f = String(t.forms[pk] || '').trim();
             if (!f || f.length > 40) continue;
+            // 人称放最前：变位标签（"Indicative Present simple"）较长，
+            // 放前面的话人称会被 clean() 的长度截断整个切掉，题面就无法区分人称。
             out.push({
               answer: f,
               prompt: String(v.infinitive).slice(0, 18),
-              sub: label + ' · ' + (persons[pk] || pk)
+              sub: (persons[pk] || pk) + ' · ' + label
             });
           }
         } else if (t.type === 'single') {
@@ -404,6 +410,10 @@
     // 先显示游戏区再量尺寸：隐藏容器 clientWidth 为 0，首帧坐标会挤在左侧
     if (play) play.classList.remove('hidden');
     if (setup) setup.classList.add('hidden');
+    // 「再来一局」直接走 startGame，不经过 renderSetup（那里才会收起浮层）；
+    // 不在这里隐藏的话，深色模糊的结算浮层会一直盖住新开的这局。
+    const overlay = $id('typingGameOverlay');
+    if (overlay) overlay.classList.add('hidden');
 
     // 画布尺寸：先按 CSS 布局给一个初始值，之后由 Renderer 每帧按
     // clientWidth × DPR 自适应（含窗口缩放），这里只保证首帧前逻辑坐标可用。

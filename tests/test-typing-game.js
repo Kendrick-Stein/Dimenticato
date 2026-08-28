@@ -204,5 +204,34 @@ group('pool refill', () => {
   assert(game._pool.length > 0, '池耗尽后 refill 应重新填充');
 });
 
+// ===== 下落速度上限（回归：maxSpeed 曾是没接线的死常量） =====
+group('speed cap', () => {
+  const game = TypingGame.create({
+    pool: [{ prompt: 'x', answer: 'parola' }],
+    baseInterval: 999999,
+    baseSpeed: 125,        // 困难档
+    speedPerLevel: 1.09,
+    maxSpeed: 260
+  });
+  game.start();
+  game.level = 50;         // 高等级下 125 * 1.09^49 ≈ 8800，远超上限
+  const it = game.spawn();
+  assert(it, '应能生成漂流物');
+  assert(it.speed <= 260, '高等级下落速度应封顶在 maxSpeed=260（实测 ' + it.speed.toFixed(1) + '）');
+});
+
+// ===== 特效老化（回归：粒子/漂浮分数的 t 从不增长，永久堆积） =====
+group('fx aging', () => {
+  const R = TypingGame.Renderer;
+  R._parts = [{ t: 0, x: 10, y: 10, vx: 0, vy: 0, r: 2, color: '#fff' }];
+  R._floats = [{ t: 0, x: 10, y: 10, text: '+10', color: '#ffe082' }];
+  R._advanceFx(300);
+  assertEqual(R._parts[0].t, 300, '粒子 t 应随帧时长增长');
+  assertEqual(R._floats[0].t, 300, '漂浮分数 t 应随帧时长增长');
+  R._advanceFx(400);
+  assertEqual(R._parts[0].t, 700, '连续帧应累加（700 > 600 过滤阈值后会被清掉）');
+  assertEqual(R._floats[0].t, 700, '漂浮分数同理（>900 后消失）');
+});
+
 console.log(`Typing OK: ${passed} passed, ${failed} failed`);
 process.exit(failed ? 1 : 0);

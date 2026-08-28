@@ -183,5 +183,46 @@ group('best score', () => {
   TypingGameApp.close();
 });
 
+// ===== 重开一局应收起结算浮层（回归：浮层曾一直盖住新开的局） =====
+group('restart hides overlay', () => {
+  TypingGameApp.open('italian');
+  win.document.getElementById('typingStartBtn').click();
+  const overlay = win.document.getElementById('typingGameOverlay');
+  // 模拟 showGameOver 的效果：浮层显示
+  overlay.classList.remove('hidden');
+  // 「再来一局」的处理等价于再次 startGame
+  win.document.getElementById('typingStartBtn').click();
+  assert(overlay.classList.contains('hidden'), 'startGame 应收起结算浮层');
+  const session = TypingGameApp.getSession();
+  assert(session && session.game && session.game.running, '新局应处于运行状态');
+  TypingGameApp.close();
+});
+
+// ===== 英语变位模式的人称标签（回归：键不匹配时显示原始键名 he_she_it） =====
+group('english conjugation person labels', () => {
+  win.ENGLISH_CONJUGATION_DATA = [{
+    rank: 1, infinitive: 'be', english: 'to be',
+    tenses: {
+      indicative_present_simple: {
+        type: 'person', group_label: 'Indicative', tense_label: 'Present simple',
+        forms: { i: 'am', you: 'are', he_she_it: 'is', we: 'are', you_pl: 'are', they: 'are' }
+      }
+    }
+  }];
+  TypingGameApp.open('english');
+  const setup = win.document.getElementById('typingGameSetup');
+  setup.querySelector('[data-typing-mode="conjugation"]').click();
+  win.document.getElementById('typingStartBtn').click();
+  const game = TypingGameApp.getSession().game;
+  // 在场只有随机 2 条，人称不确定；池 + 在场合起来覆盖全部条目
+  const subs = game._pool.map((p) => p.sub)
+    .concat(game.items.map((i) => i.sub)).join(' | ');
+  assert(subs.indexOf('他/她/它') !== -1, '英语人称应显示中文标签，实得：' + subs);
+  assert(subs.indexOf('he_she_it') === -1, '不应残留原始键名 he_she_it');
+  assert(subs.indexOf('我') !== -1, '第一人称应显示「我」');
+  TypingGameApp.close();
+  delete win.ENGLISH_CONJUGATION_DATA;
+});
+
 console.log(`Typing App OK: ${passed} passed, ${failed} failed`);
 process.exit(failed ? 1 : 0);
