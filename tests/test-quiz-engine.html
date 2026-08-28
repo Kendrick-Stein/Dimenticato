@@ -762,6 +762,121 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     assert(elapsed < 3000, '8000 词池出 100 道题应远快于全表扫描（实测 ' + elapsed + ' ms）');
   });
 
+  // ===== 出题方向（正向=看外语选释义 / 反向=看释义选外语） =====
+  group('出题方向 API', function () {
+    var KEYS = ['dimenticato_quiz_direction'];
+    QuizEngine.LANGUAGES.forEach(function (l) { KEYS.push(QuizEngine.directionKeyFor(l)); });
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+
+    assertEqual(typeof QuizEngine.getDirection, 'function', 'QuizEngine.getDirection exists');
+    assertEqual(QuizEngine.getDirection(), 'forward', 'direction defaults to forward when unset');
+
+    QuizEngine.setDirection('reverse', 'german');
+    assertEqual(QuizEngine.getDirection('german'), 'reverse', '分语言方向：德语改成反向');
+    assertEqual(QuizEngine.getDirection('italian'), 'forward', '分语言方向不影响其它语言');
+    assertEqual(QuizEngine.getDirection(), 'forward', '分语言方向不改全局默认');
+
+    QuizEngine.setDirection('reverse');
+    assertEqual(QuizEngine.getDirection(), 'reverse', '全局反向生效');
+    assertEqual(QuizEngine.getDirection('german'), 'reverse', '全局设置会清掉分语言覆盖');
+
+    var frEngine = makeEngine({ language: 'french', fieldMap: { source: 'french', target: 'meaning' } });
+    assertEqual(frEngine.isReverse(), true, '引擎按全局设置读到反向');
+    assertEqual(frEngine.shouldSpeakQuestion(), false, '反向模式不朗读题面（答案就是词形）');
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+    assertEqual(frEngine.isReverse(), false, '清除设置后回到正向');
+    assertEqual(frEngine.shouldSpeakQuestion(), true, '正向模式正常朗读题面');
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+  });
+
+  group('反向选项生成', function () {
+    var KEYS = ['dimenticato_quiz_direction'];
+    QuizEngine.LANGUAGES.forEach(function (l) { KEYS.push(QuizEngine.directionKeyFor(l)); });
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+    QuizEngine.setDirection('reverse');
+
+    var pool = [
+      { italian: 'casa', english: 'house' },
+      { italian: 'cane', english: 'dog' },
+      { italian: 'gatto', english: 'cat' },
+      { italian: 'porta', english: 'door' },
+      { italian: 'tavolo', english: 'table' }
+    ];
+    var prompt = pool[0];
+
+    var revEngine = makeEngine({
+      state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: prompt },
+      difficulty: 'easy'
+    });
+    assertEqual(revEngine.questionTextFor(prompt), 'house', '反向题面显示释义');
+    assertEqual(revEngine.correctAnswerFor(prompt), 'casa', '反向正确答案是外语词形');
+
+    var options = revEngine.generateOptions('casa', pool);
+    assertEqual(options.length, 4, '反向也生成 4 个选项');
+    assert(options.indexOf('casa') !== -1, '反向选项包含正确外语词形');
+    var italianValues = pool.map(function (w) { return w.italian; });
+    assert(options.every(function (o) { return italianValues.indexOf(o) !== -1; }),
+      '反向选项全部来自外语词形字段');
+    assert(options.every(function (o) { return o !== 'house' && o !== 'dog'; }),
+      '反向选项不再混入释义');
+
+    // 同义 twin：两个词条释义相同，反向题里两个选项都"对"，必须排除
+    var twinPool = [
+      { italian: 'casa', english: 'house' },
+      { italian: 'dimora', english: 'house' },
+      { italian: 'cane', english: 'dog' },
+      { italian: 'gatto', english: 'cat' },
+      { italian: 'porta', english: 'door' }
+    ];
+    var twinEngine = makeEngine({
+      state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: twinPool[0] },
+      difficulty: 'easy'
+    });
+    var twinOptions = twinEngine.generateOptions('casa', twinPool);
+    assert(twinOptions.indexOf('dimora') === -1, '反向排除同义词条（释义相同的 twin）');
+    assertEqual(twinOptions.length, 4, '排除 twin 后仍凑满 4 个选项');
+
+    // hard + reverse：干扰项按外语拼写相近挑选
+    var hardPool = [
+      { italian: 'cane', english: 'dog', rank: 10 },
+      { italian: 'casa', english: 'house', rank: 20 },
+      { italian: 'cara', english: 'dear', rank: 30 },
+      { italian: 'cava', english: 'cave', rank: 40 },
+      { italian: 'zona', english: 'zone', rank: 50 }
+    ];
+    var hardRev = makeEngine({
+      state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: hardPool[0] },
+      difficulty: 'hard'
+    });
+    var hardRevOptions = hardRev.generateOptions('cane', hardPool);
+    assertEqual(hardRevOptions.length, 4, 'hard+reverse 生成 4 个选项');
+    assert(hardRevOptions.indexOf('cane') !== -1, 'hard+reverse 包含正确词形');
+    assert(hardRevOptions.indexOf('zona') === -1, '拼写不相近的词不进入 hard+reverse 选项');
+
+    // 正向回归：行为与方向功能加入前一致
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+    var fwdEngine = makeEngine({
+      state: { words: [], quizIndex: 0, quizCorrect: 0, quizTotal: 0, currentWord: prompt },
+      difficulty: 'easy'
+    });
+    assertEqual(fwdEngine.questionTextFor(prompt), 'casa', '正向题面显示外语词形');
+    assertEqual(fwdEngine.correctAnswerFor(prompt), 'house', '正向正确答案是释义');
+    var fwdOptions = fwdEngine.generateOptions('house', pool);
+    assert(fwdOptions.indexOf('house') !== -1, '正向选项包含正确释义');
+    assert(fwdOptions.every(function (o) { return italianValues.indexOf(o) === -1; }),
+      '正向选项仍是释义而非词形');
+    KEYS.forEach(function (k) { localStorage.removeItem(k); });
+  });
+
+  group('出题方向控件', function () {
+    var html = QuizEngine.renderDirectionToggle('german');
+    assert(html.indexOf('data-direction-lang="german"') !== -1, '分语言方向控件带语言标记');
+    assert(html.indexOf('data-direction="reverse"') !== -1, '方向控件含反向按钮');
+    assert(html.indexOf('data-direction="forward"') !== -1, '方向控件含正向按钮');
+    var global = QuizEngine.renderDirectionToggle();
+    assert(global.indexOf('data-direction-lang') === -1, '不传语言时是全局控件');
+  });
+
   // --- Summary ---
   var summary = document.createElement('div');
   summary.className = 'summary';

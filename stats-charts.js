@@ -230,13 +230,20 @@ const ChartsManager = {
     
     const ctx = canvas.getContext('2d');
     
-    // 统计不同状态的单词数量
+    // 统计不同状态的单词数量。词表必须跟着当前语言走：AppState.currentWords
+    // 是意大利语专属状态，从德/法进度页打开统计时用它会把别的语言的数据
+    // 画进来。ReviewSession.wordsFor() 是现成的按语言取词入口。
+    const lang = window.getActiveLanguage ? window.getActiveLanguage() : 'italian';
+    const words = (window.ReviewSession && typeof window.ReviewSession.wordsFor === 'function')
+      ? window.ReviewSession.wordsFor(lang)
+      : (window.AppState && Array.isArray(window.AppState.currentWords) ? window.AppState.currentWords : []);
+
     let newWords = 0;
     let learningWords = 0;
     let masteredWords = 0;
-    
-    AppState.currentWords.forEach(word => {
-      const status = SpacedRepetition.getWordStatus(word);
+
+    words.forEach(word => {
+      const status = SpacedRepetition.getWordStatus(word, lang);
       if (status.status === 'new') {
         newWords++;
       } else if (status.status === 'learning') {

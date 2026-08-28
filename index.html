@@ -283,7 +283,7 @@
 
           <div class="practice-card">
             <div class="question-section">
-              <div class="eyebrow" style="text-align:center">德语单词</div>
+              <div class="eyebrow" style="text-align:center" id="germanMcQuestionLabel">德语单词</div>
               <div class="word-row">
                 <h2 class="word" id="germanMcWord">-</h2>
                 <button class="speaker" id="germanMcSpeakBtn" title="朗读发音"><span class="msr">volume_up</span></button>
@@ -292,7 +292,7 @@
               <p class="chinese-hint hidden" id="germanMcHint"></p>
             </div>
 
-            <div class="field-label">选择正确的中文释义</div>
+            <div class="field-label" id="germanMcOptionsLabel">选择正确的中文释义</div>
             <div class="options" id="germanMcOptions"></div>
 
             <div class="hidden" id="germanMcFeedback">
@@ -370,11 +370,8 @@
               <span class="card-title">动词变位</span>
               <span class="card-desc">时态、课次与题型，边学边练</span>
             </button>
-            <div class="card" aria-disabled="true" style="opacity:.5">
-              <span class="card-chip"><span class="msr">link</span></span>
-              <span class="card-title">动词搭配</span>
-              <span class="card-desc">德语动词搭配数据尚未接入 · 即将推出</span>
-            </div>
+            <!-- 动词搭配 / 动词搭配练习入口由 verb-collocations.js 运行时注入：
+                 数据懒加载到位后自动从「建设中」升级为可用，不在这里写死。 -->
           </div>
         </div>
       </section>
@@ -412,9 +409,40 @@
             </div>
           </div>
 
-          <div class="panel" style="margin-top:16px">
-            <div class="panel-title">说明</div>
-            <div class="about-note">当前德语 Progress 统计的是德语系统词汇练习的本地学习记录。</div>
+          <div class="progress-2col">
+            <div class="panel">
+              <div class="panel-title">最近 7 天练习量</div>
+              <div class="bar-chart" id="germanProgressWeekBars"></div>
+            </div>
+            <div class="panel">
+              <div class="panel-title">正确率</div>
+              <div id="germanProgressAccuracyRows"></div>
+              <div class="acc-total"><span>总练习次数</span><b id="germanProgressTotalAttempts">0</b></div>
+              <div class="acc-total"><span>连续学习天数</span><b id="germanProgressStreak">0</b></div>
+            </div>
+          </div>
+
+          <div style="margin-top:28px">
+            <div class="panel-title">最近 7 天记录</div>
+            <div class="stats-table-container">
+              <table class="stats-table">
+                <thead>
+                  <tr><th>日期</th><th>练习词数</th><th>时长</th><th>作答</th><th>正确率</th></tr>
+                </thead>
+                <tbody id="germanProgressHistoryBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="settings-card hidden" id="germanProgressStatsPanelCard">
+            <button class="data-row" id="germanOpenProgressStatsBtn">
+              <span class="row-chip"><span class="msr">monitoring</span></span>
+              <span class="row-body">
+                <span class="row-title">打开完整统计面板</span>
+                <span class="row-sub">概览、图表与历史记录</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
+            </button>
           </div>
         </div>
       </section>
@@ -570,7 +598,7 @@
 
           <div class="practice-card">
             <div class="question-section">
-              <div class="eyebrow" style="text-align:center">英语单词</div>
+              <div class="eyebrow" style="text-align:center" id="englishMcQuestionLabel">英语单词</div>
               <div class="word-row">
                 <h2 class="word" id="englishMcWord">-</h2>
                 <button class="speaker" id="englishMcSpeakBtn" title="朗读发音"><span class="msr">volume_up</span></button>
@@ -579,7 +607,7 @@
               <p class="chinese-hint hidden" id="englishMcHint"></p>
             </div>
 
-            <div class="field-label">选择正确的中文释义</div>
+            <div class="field-label" id="englishMcOptionsLabel">选择正确的中文释义</div>
             <div class="options" id="englishMcOptions"></div>
 
             <div class="hidden" id="englishMcFeedback">
@@ -657,11 +685,7 @@
               <span class="card-title">动词变位</span>
               <span class="card-desc">时态、课次与题型，边学边练</span>
             </button>
-            <div class="card" aria-disabled="true" style="opacity:.5">
-              <span class="card-chip"><span class="msr">link</span></span>
-              <span class="card-title">动词搭配</span>
-              <span class="card-desc">英语动词搭配数据尚未接入 · 即将推出</span>
-            </div>
+            <!-- 动词搭配入口由 verb-collocations.js 运行时注入（当前英语暂无数据，显示建设中）。 -->
           </div>
         </div>
       </section>
@@ -699,9 +723,40 @@
             </div>
           </div>
 
-          <div class="panel" style="margin-top:16px">
-            <div class="panel-title">说明</div>
-            <div class="about-note">当前英语 Progress 统计的是英语系统词汇练习的本地学习记录。</div>
+          <div class="progress-2col">
+            <div class="panel">
+              <div class="panel-title">最近 7 天练习量</div>
+              <div class="bar-chart" id="englishProgressWeekBars"></div>
+            </div>
+            <div class="panel">
+              <div class="panel-title">正确率</div>
+              <div id="englishProgressAccuracyRows"></div>
+              <div class="acc-total"><span>总练习次数</span><b id="englishProgressTotalAttempts">0</b></div>
+              <div class="acc-total"><span>连续学习天数</span><b id="englishProgressStreak">0</b></div>
+            </div>
+          </div>
+
+          <div style="margin-top:28px">
+            <div class="panel-title">最近 7 天记录</div>
+            <div class="stats-table-container">
+              <table class="stats-table">
+                <thead>
+                  <tr><th>日期</th><th>练习词数</th><th>时长</th><th>作答</th><th>正确率</th></tr>
+                </thead>
+                <tbody id="englishProgressHistoryBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="settings-card hidden" id="englishProgressStatsPanelCard">
+            <button class="data-row" id="englishOpenProgressStatsBtn">
+              <span class="row-chip"><span class="msr">monitoring</span></span>
+              <span class="row-body">
+                <span class="row-title">打开完整统计面板</span>
+                <span class="row-sub">概览、图表与历史记录</span>
+              </span>
+              <span class="msr chev">chevron_right</span>
+            </button>
           </div>
         </div>
       </section>
@@ -1088,6 +1143,13 @@
                 <button type="button" class="seg difficulty-option" data-difficulty="hard" title="相似干扰项">困难</button>
               </div>
             </div>
+            <div class="pref-row">
+              <span class="pref-label">出题方向</span>
+              <div class="segmented" id="directionToggle" role="group" aria-label="出题方向">
+                <button type="button" class="seg direction-option" data-direction="forward" title="看外语单词，选释义">正向</button>
+                <button type="button" class="seg direction-option" data-direction="reverse" title="看释义，选外语单词（召回式练习）">反向</button>
+              </div>
+            </div>
             <button class="data-row" id="settingsThemeBtn">
               <span class="row-chip"><span class="msr">dark_mode</span></span>
               <span class="row-body">
@@ -1153,7 +1215,7 @@
 
           <div class="practice-card">
             <div class="question-section">
-              <div class="eyebrow" style="text-align:center">意大利语单词</div>
+              <div class="eyebrow" style="text-align:center" id="mcQuestionLabel">意大利语单词</div>
               <div class="word-row">
                 <h2 class="word" id="mcItalianWord">-</h2>
                 <button class="speaker" id="mcSpeakerBtn" title="朗读发音"><span class="msr">volume_up</span></button>
@@ -1162,7 +1224,7 @@
               <p class="chinese-hint hidden" id="mcChineseHint"></p>
             </div>
 
-            <div class="field-label">选择正确的英语翻译</div>
+            <div class="field-label" id="mcOptionsLabel">选择正确的英语翻译</div>
             <div class="options" id="mcOptions">
               <!-- 动态生成选项 -->
             </div>

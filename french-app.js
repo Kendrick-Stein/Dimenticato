@@ -362,7 +362,7 @@
           <div class="session-bar"><div class="session-fill" id="frenchMcSessionFill" style="width:0%"></div></div>
           <div class="practice-card">
             <div class="question-section">
-              <div class="eyebrow" style="text-align:center">Mot français</div>
+              <div class="eyebrow" style="text-align:center" id="frenchMcQuestionLabel">Mot français</div>
               <div class="word-row">
                 <h2 class="word" id="frenchMcWord">-</h2>
                 <button class="speaker" id="frenchMcSpeakBtn" title="朗读法语"><span class="msr">volume_up</span></button>
@@ -370,7 +370,7 @@
               <button class="hint-btn hidden" id="frenchMcShowHintBtn">显示笔记</button>
               <p class="chinese-hint hidden" id="frenchMcHint"></p>
             </div>
-            <div class="field-label">选择正确的中文释义</div>
+            <div class="field-label" id="frenchMcOptionsLabel">选择正确的中文释义</div>
             <div class="options" id="frenchMcOptions"></div>
             <div class="hidden" id="frenchMcFeedback">
               <p class="feedback feedback-text"></p>
@@ -1347,32 +1347,43 @@
       if (this.quizIndex >= this.sessionWords.length) return this.finishPractice('选择题');
       this.currentWord = this.sessionWords[this.quizIndex];
       this._questionStartedAt = Date.now();
+      const engine = this.getMcEngine();
+      const reverse = engine.isReverse();
       this.setText('frenchMcCurrentWord', String(this.quizIndex + 1));
       this.setText('frenchMcTotalWords', String(this.sessionWords.length));
       this.setText('frenchMcAccuracy', `${this.accuracy()}%`);
-      this.setText('frenchMcWord', this.currentWord.display || this.currentWord.french || '-');
+      // 题面跟着出题方向走：反向显示释义，而不是法语词形
+      this.setText('frenchMcWord', reverse
+        ? engine.questionTextFor(this.currentWord)
+        : (this.currentWord.display || this.currentWord.french || '-'));
+      engine.applyDirectionLabels(
+        { question: 'frenchMcQuestionLabel', options: 'frenchMcOptionsLabel' },
+        { question: 'Mot français', options: '选择正确的中文释义' },
+        { question: '中文释义', options: '选择正确的法语单词' }
+      );
       this.updateFill('frenchMcSessionFill');
       const hint = document.getElementById('frenchMcHint');
       const hintButton = document.getElementById('frenchMcShowHintBtn');
       const noteText = this.hintFor(this.currentWord);
       if (hint) { hint.textContent = noteText; hint.classList.add('hidden'); }
       if (hintButton) hintButton.classList.toggle('hidden', !noteText);
-      const correct = this.currentWord.meaning || this.currentWord.chinese || '';
-      const engine = this.getMcEngine();
+      const correct = engine.correctAnswerFor(this.currentWord);
       engine.renderOptions(engine.generateOptions(correct, this.distractorPool(correct)),
         button => this.checkMultipleChoice(button));
       this.resetFeedback('frenchMcFeedback');
-      this.speak(this.currentWord.french);
+      // 反向模式的答案就是法语词形，朗读等于报答案
+      if (!reverse) this.speak(this.currentWord.french);
     },
 
     // 同义词条（释义字符串相同）绝不能进入干扰项，否则会出现两个"正确"选项
+    // （反向模式下由 QuizEngine.generateOptions 的同义排除兜底）
     distractorPool(correct) {
       const target = String(correct || '').trim();
       return this.words.filter(word => String(word.meaning || '').trim() !== target);
     },
 
     checkMultipleChoice(button) {
-      const correct = this.currentWord.meaning || this.currentWord.chinese || '';
+      const correct = this.getMcEngine().correctAnswerFor(this.currentWord);
       const isCorrect = (button.dataset.answer || '') === correct;
       const word = this.currentWord;
       this.quizTotal++;

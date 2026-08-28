@@ -202,17 +202,56 @@
     return { streak: streak, mastered: isCorrect && streak >= required };
   }
 
-  // 每日统计（连续学习天数 / 图表）目前只有意大利语在写，德语/英语在这里补上。
-  function recordDailyActivity(lang, isCorrect, durationMs) {
+  // 德/英进度页的统计面板（与法语 Progress 对齐）：7 天柱状图、模式正确率、
+  // 连续天数与 7 天记录表。数据来自共享 StatsManager（按语言分 storage key），
+  // 由 app-enhanced.js 的 QuizIntegration 包装器在答题时写入，这里只读。
+  function renderProgressPanels(lang, prefix, stats, setText) {
     const manager = typeof window !== 'undefined' ? window.StatsManager : null;
-    if (!manager || typeof manager.recordActivity !== 'function') return;
-    try {
-      manager.recordActivity(lang, {
-        correct: isCorrect ? 1 : 0,
-        total: 1,
-        durationMs: Math.max(0, Number(durationMs) || 0)
-      });
-    } catch (error) { /* 统计失败不影响练习 */ }
+    const recent = (manager && typeof manager.getRecentStats === 'function')
+      ? manager.getRecentStats(7, lang)
+      : [];
+
+    const bars = document.getElementById(`${prefix}ProgressWeekBars`);
+    if (bars && recent.length) {
+      const max = Math.max(1, ...recent.map(day => day.totalCount));
+      const dayNames = ['日', '一', '二', '三', '四', '五', '六'];
+      bars.innerHTML = recent.map((day, index) => {
+        const pct = Math.round(day.totalCount / max * 100);
+        const label = dayNames[new Date(`${day.date}T00:00:00`).getDay()];
+        const latest = index === recent.length - 1 ? ' latest' : '';
+        return `<div class="bar-col"><div class="bar${latest}" style="height:${pct}%" title="${day.totalCount} 次作答"></div><div class="bar-day">${label}</div></div>`;
+      }).join('');
+    }
+
+    const rows = document.getElementById(`${prefix}ProgressAccuracyRows`);
+    if (rows) {
+      const pct = (part, whole) => (whole > 0 ? Math.round(part / whole * 100) : 0);
+      const mc = pct(stats.mcCorrect || 0, stats.mcAttempts || 0);
+      const sp = pct(stats.spCorrect || 0, stats.spAttempts || 0);
+      const attempts = (stats.mcAttempts || 0) + (stats.spAttempts || 0);
+      const overall = pct((stats.mcCorrect || 0) + (stats.spCorrect || 0), attempts);
+      const row = (label, value) =>
+        `<div class="acc-row"><div class="acc-top"><span>${label}</span><b>${value}%</b></div>` +
+        `<div class="acc-track"><div class="acc-fill" style="width:${value}%"></div></div></div>`;
+      rows.innerHTML = row('选择题', mc) + row('拼写', sp) + row('综合', overall);
+      setText(`${prefix}ProgressTotalAttempts`, attempts.toLocaleString());
+      const streak = (manager && typeof manager.getStreak === 'function') ? manager.getStreak(lang) : 0;
+      setText(`${prefix}ProgressStreak`, `${streak} 天`);
+    }
+
+    const body = document.getElementById(`${prefix}ProgressHistoryBody`);
+    if (body && recent.length) {
+      body.innerHTML = recent.slice().reverse().map(day => {
+        const accuracy = day.totalCount > 0 ? (day.correctCount / day.totalCount * 100).toFixed(1) : '0.0';
+        const date = new Date(`${day.date}T00:00:00`);
+        const label = `${date.getMonth() + 1}月${date.getDate()}日`;
+        const minutes = Math.round((day.duration || 0) / 60);
+        const durationLabel = minutes < 60
+          ? `${minutes} 分钟`
+          : `${Math.floor(minutes / 60)} 小时 ${minutes % 60} 分钟`;
+        return `<tr><td>${label}</td><td>${day.wordsLearned}</td><td>${durationLabel}</td><td>${day.totalCount}</td><td>${accuracy}%</td></tr>`;
+      }).join('');
+    }
   }
 
   // 顶栏 词汇量 / 已掌握 / 进度。优先用共享 HeaderStats，缺失时直接写 DOM。
@@ -311,6 +350,10 @@
       <button class="chip${option.value === activeValue ? ' active' : ''}" type="button" ${attribute}="${escapeAttribute(option.value)}">${escapeHtml(option.label)}</button>
     `).join('');
   }
+
+  // grammarBookScreen 的返回按钮是德/英共用的共享屏，双侧初始化顺序不确定
+  // （英语直连 #/en/… 时 GermanApp 可能永远不 init），谁先到谁绑，只绑一次。
+  let grammarBookBackBound = false;
 
   const GermanApp = {
     words: [],
@@ -894,6 +937,13 @@
         this.updateEnglishProgressStats();
         this.showScreen('englishProgressScreen');
       });
+      // 德语的完整统计面板入口（英语侧由 EnglishApp.init 自己绑，避免双绑）
+      if (typeof window.showEnhancedStatsModal === 'function') {
+        document.getElementById('germanProgressStatsPanelCard')?.classList.remove('hidden');
+      }
+      this.bindClick('germanOpenProgressStatsBtn', () => {
+        if (typeof window.showEnhancedStatsModal === 'function') window.showEnhancedStatsModal();
+      });
     },
 
     openSharedCommunity(returnScreen) {
@@ -930,6 +980,7 @@
       this.setText('germanProgressMcStats', `${this.stats.mcCorrect || 0} / ${this.stats.mcAttempts || 0}`);
       this.setText('germanProgressSpStats', `${this.stats.spCorrect || 0} / ${this.stats.spAttempts || 0}`);
       this.setText('germanProgressAccuracy', `${accuracy}%`);
+      renderProgressPanels('german', 'german', this.stats, (id, value) => this.setText(id, value));
       this.updateHeaderStats();
     },
 
@@ -952,30 +1003,22 @@
         });
       }
 
-      // English Grammar Book — real data (handled by EnglishApp, but wired here too for safety)
-      const englishGrammarBookBtn = document.querySelector(
-        '#englishGrammarScreen .english-placeholder-trigger[data-module="grammar-book"]'
-      );
-      if (englishGrammarBookBtn) {
-        englishGrammarBookBtn.classList.remove('english-placeholder-trigger');
-        englishGrammarBookBtn.addEventListener('click', () => {
-          this._openGrammarBook(
-            typeof ENGLISH_GRAMMAR_DATA !== 'undefined' ? ENGLISH_GRAMMAR_DATA : null,
-            'English / Grammar Book',
-            () => this.goBack('englishGrammarScreen')
-          );
-        });
-      }
+      // 英语语法书入口由 EnglishApp._bindGrammarHubCards() 绑定：英语直连
+      // （#/en/…）时德语词库不在、GermanApp.init 提前退出，绑在这里英语卡片
+      // 会是死的。class 摘除本身即幂等标志，两侧谁先绑另一侧都查不到节点。
 
       // Grammar book back button — returns to whichever screen opened it
       this._grammarBookBackTarget = null;
-      this.bindClick('grammarBookBackBtn', () => {
-        if (typeof this._grammarBookBackTarget === 'function') {
-          this._grammarBookBackTarget();
-        } else {
-          this.goBack('grammarScreen');
-        }
-      });
+      if (!grammarBookBackBound) {
+        grammarBookBackBound = true;
+        this.bindClick('grammarBookBackBtn', () => {
+          if (typeof this._grammarBookBackTarget === 'function') {
+            this._grammarBookBackTarget();
+          } else {
+            this.goBack('grammarScreen');
+          }
+        });
+      }
     },
 
     // 德语语法书入口（课程单元的语法标签也会走这里并直接定位到某个章节）。
@@ -1046,14 +1089,7 @@
         germanConjBtn.classList.remove('german-placeholder-trigger');
         germanConjBtn.addEventListener('click', () => this._openConjugation('german'));
       }
-
-      const englishConjBtn = document.querySelector(
-        '#englishGrammarScreen .english-placeholder-trigger[data-module="conjugation"]'
-      );
-      if (englishConjBtn) {
-        englishConjBtn.classList.remove('english-placeholder-trigger');
-        englishConjBtn.addEventListener('click', () => this._openConjugation('english'));
-      }
+      // 英语变位入口同样由 EnglishApp._bindGrammarHubCards() 绑定，理由同上。
     },
 
     // Open the shared conjugation flow for the given language. Degrades
@@ -1247,7 +1283,8 @@
         Object.assign({}, word, { srData: this.srData[key] }));
       if (outcome.mastered) this.mastered.add(key);
       else if (!isCorrect) this.mastered.delete(key);
-      recordDailyActivity('german', isCorrect, elapsedMs);
+      // 每日统计（StatsManager）由 app-enhanced.js 的 QuizIntegration 包装器统一记录，
+      // 这里不再重复上报 —— 否则同一道题会记成 2 次作答。
     },
 
     startMultipleChoice() {
@@ -1266,12 +1303,20 @@
       }
 
       this.currentWord = this.sessionWords[this.quizIndex];
+      const mcEngine = this._getMcEngine();
       const currentDisplay = this.currentWord.display || this.currentWord.german || '-';
+      const reverse = mcEngine.isReverse();
       this.setText('germanMcCurrentWord', String(this.quizIndex + 1));
       this.setText('germanMcTotalWords', String(this.sessionWords.length));
       this.updateSessionFill('germanMcSessionFill', this.quizIndex, this.sessionWords.length);
       this.setText('germanMcAccuracy', `${this.getAccuracy()}%`);
-      this.setText('germanMcWord', currentDisplay);
+      // 题面跟着出题方向走：反向显示释义，而不是德语词形
+      this.setText('germanMcWord', reverse ? mcEngine.questionTextFor(this.currentWord) : currentDisplay);
+      mcEngine.applyDirectionLabels(
+        { question: 'germanMcQuestionLabel', options: 'germanMcOptionsLabel' },
+        { question: '德语单词', options: '选择正确的中文释义' },
+        { question: '中文释义', options: '选择正确的德语单词' }
+      );
 
       const hint = document.getElementById('germanMcHint');
       const hintBtn = document.getElementById('germanMcShowHintBtn');
@@ -1287,15 +1332,16 @@
       this.renderMcOptions();
       this.resetFeedback('germanMcFeedback');
       this._questionStartedAt = Date.now();
-      this.speakGerman(currentDisplay);
+      // 反向模式的答案就是德语词形，朗读等于报答案
+      if (!reverse) this.speakGerman(currentDisplay);
     },
 
     renderMcOptions() {
       const container = document.getElementById('germanMcOptions');
       if (!container || !this.currentWord) return;
 
-      const correctMeaning = this.currentWord.meaning || this.currentWord.chinese || '';
       const engine = this._getMcEngine();
+      const correctMeaning = engine.correctAnswerFor(this.currentWord);
       const options = engine.generateOptions(correctMeaning, this.distractorPool());
 
       engine.renderOptions(options, (btn) => this.checkMultipleChoiceAnswer(btn));
@@ -1304,7 +1350,7 @@
     checkMultipleChoiceAnswer(button) {
       if (!this.currentWord) return;
 
-      const correctAnswer = this.currentWord.meaning || this.currentWord.chinese || '';
+      const correctAnswer = this._getMcEngine().correctAnswerFor(this.currentWord);
       const selectedAnswer = button.dataset.answer || '';
       const isCorrect = selectedAnswer === correctAnswer;
 
@@ -1745,7 +1791,65 @@
       this._loadState();
       this.words = tierWords(this.systemWords, this.tier);
       this._bindPractice();
+      this._bindGrammarHubCards();
+      this._bindProgressPanels();
       this._installScopeControls();
+    },
+
+    // 英语进度页的完整统计面板入口。与语法书入口同理：英语直连时
+    // GermanApp.init 不跑，不能把绑定只放在它那边（GermanApp 刻意不绑英语侧，
+    // 避免德语启动级联到这里时双绑）。
+    _bindProgressPanels() {
+      const g = this._germanApp;
+      if (typeof window.showEnhancedStatsModal === 'function') {
+        document.getElementById('englishProgressStatsPanelCard')?.classList.remove('hidden');
+      }
+      g.bindClick('englishOpenProgressStatsBtn', () => {
+        if (typeof window.showEnhancedStatsModal === 'function') window.showEnhancedStatsModal();
+      });
+    },
+
+    // 英语站的语法书 / 动词变位入口原本绑在 GermanApp.init 的级联里，英语直连
+    // （#/en/…）时德语词库不在、级联断掉，这两张卡会是死的。改由这里绑定；
+    // GermanApp 那侧已让位（节点 class 摘除后查询不到，天然幂等）。
+    // 传入的 germanApp 只当 DOM 工具用（_openGrammarBook / goBack / bindClick），
+    // 不依赖 GermanApp 自身 init 是否成功 —— 与 lang-loader 的既有约定一致。
+    _bindGrammarHubCards() {
+      const g = this._germanApp || GermanApp;
+
+      const grammarBtn = document.querySelector(
+        '#englishGrammarScreen .english-placeholder-trigger[data-module="grammar-book"]'
+      );
+      if (grammarBtn) {
+        grammarBtn.classList.remove('english-placeholder-trigger');
+        grammarBtn.addEventListener('click', () => {
+          g._openGrammarBook(
+            typeof ENGLISH_GRAMMAR_DATA !== 'undefined' ? ENGLISH_GRAMMAR_DATA : null,
+            'English / Grammar Book',
+            () => g.goBack('englishGrammarScreen')
+          );
+        });
+      }
+
+      const conjBtn = document.querySelector(
+        '#englishGrammarScreen .english-placeholder-trigger[data-module="conjugation"]'
+      );
+      if (conjBtn) {
+        conjBtn.classList.remove('english-placeholder-trigger');
+        conjBtn.addEventListener('click', () => g._openConjugation('english'));
+      }
+
+      // 共享语法书返回按钮：德/英谁先初始化谁绑，只绑一次。
+      if (!grammarBookBackBound) {
+        grammarBookBackBound = true;
+        g.bindClick('grammarBookBackBtn', () => {
+          if (typeof g._grammarBookBackTarget === 'function') {
+            g._grammarBookBackTarget();
+          } else {
+            g.goBack('grammarScreen');
+          }
+        });
+      }
     },
 
     _showVocabularyLoadError() {
@@ -2057,7 +2161,7 @@
         Object.assign({}, word, { srData: this.srData[key] }));
       if (outcome.mastered) this.mastered.add(key);
       else if (!isCorrect) this.mastered.delete(key);
-      recordDailyActivity('english', isCorrect, elapsedMs);
+      // 每日统计由 QuizIntegration 包装器统一记录（与德语侧同理由，避免双计）
     },
 
     // 词条释义里常常带着答案本身（"n. 露营, 营地；野营房（camp复数）" ← camps），
@@ -2104,13 +2208,21 @@
         return;
       }
       const g = this._germanApp;
+      const mcEngine = this._getMcEngine();
+      const reverse = mcEngine.isReverse();
       this.currentWord = this.sessionWords[this.quizIndex];
       const word = this.currentWord.english || '-';
       g.setText('englishMcCurrentWord', String(this.quizIndex + 1));
       g.setText('englishMcTotalWords', String(this.sessionWords.length));
       g.updateSessionFill('englishMcSessionFill', this.quizIndex, this.sessionWords.length);
       g.setText('englishMcAccuracy', `${this._accuracy()}%`);
-      g.setText('englishMcWord', word);
+      // 题面跟着出题方向走：反向显示释义，而不是英语词形
+      g.setText('englishMcWord', reverse ? mcEngine.questionTextFor(this.currentWord) : word);
+      mcEngine.applyDirectionLabels(
+        { question: 'englishMcQuestionLabel', options: 'englishMcOptionsLabel' },
+        { question: '英语单词', options: '选择正确的中文释义' },
+        { question: '中文释义', options: '选择正确的英语单词' }
+      );
 
       const hintText = this._hintFor(this.currentWord, 'multiple-choice');
       const hint = document.getElementById('englishMcHint');
@@ -2121,14 +2233,15 @@
       this._renderMcOptions();
       g.resetFeedback('englishMcFeedback');
       this._questionStartedAt = Date.now();
-      this._speak(word);
+      // 反向模式的答案就是英语词形，朗读等于报答案
+      if (!reverse) this._speak(word);
     },
 
     _renderMcOptions() {
       const container = document.getElementById('englishMcOptions');
       if (!container || !this.currentWord) return;
-      const correct = this.currentWord.meaning || this.currentWord.chinese || '';
       const engine = this._getMcEngine();
+      const correct = engine.correctAnswerFor(this.currentWord);
       const options = engine.generateOptions(correct, this._distractorPool());
 
       engine.renderOptions(options, (btn) => this._checkMcAnswer(btn));
@@ -2137,7 +2250,7 @@
     _checkMcAnswer(button) {
       if (!this.currentWord) return;
       const g = this._germanApp;
-      const correct = this.currentWord.meaning || this.currentWord.chinese || '';
+      const correct = this._getMcEngine().correctAnswerFor(this.currentWord);
       const selected = button.dataset.answer || '';
       const isCorrect = selected === correct;
 
@@ -2362,6 +2475,8 @@
       this._germanApp.setText('englishProgressMcStats', `${this.stats.mcCorrect || 0} / ${this.stats.mcAttempts || 0}`);
       this._germanApp.setText('englishProgressSpStats', `${this.stats.spCorrect || 0} / ${this.stats.spAttempts || 0}`);
       this._germanApp.setText('englishProgressAccuracy', `${accuracy}%`);
+      renderProgressPanels('english', 'english', this.stats,
+        (id, value) => this._germanApp.setText(id, value));
       this.updateHeaderStats();
     },
 

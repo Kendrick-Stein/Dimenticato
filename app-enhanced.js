@@ -1392,7 +1392,9 @@ const QuizIntegration = {
             window.StatsManager.recordActivity(lang, {
               correct: isCorrect ? 1 : 0,
               total: 1,
-              durationMs: 0,
+              // 德/英的 recordAnswer 原本也各自调一次 recordActivity（只补时长），
+              // 同一道题会被计成 2 次；现在时长在这里一并带上，那些调用已删。
+              durationMs: timeSpent || 0,
               words: word ? [word] : []
             });
           }

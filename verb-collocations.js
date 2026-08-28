@@ -15,8 +15,9 @@
  *              } } },
  *     prepositions: { prep: [verbSlug, ...] } }              // 可选，缺省时自动倒排
  *
- * 目前只有意大利语有数据；其余语言进入本屏时显示明确的空状态，而不是让功能
- * 悄无声息地不存在。数据一旦落盘（后续 workflow），无需改动本文件即可生效。
+ * 意大利语 / 德语 / 法语已有数据；英语数据尚未落盘，进入本屏时显示明确的
+ * 空状态，而不是让功能悄无声息地不存在。数据一旦落盘（后续 workflow），
+ * 无需改动本文件即可生效。
  */
 const VerbCollocations = (() => {
   const LANGUAGES = ['italian', 'german', 'english', 'french'];
@@ -706,44 +707,60 @@ window.VerbCollocations = VerbCollocations;
 
 (function wireEntryPoints() {
   /**
-   * 德语/英语/法语的语法中心原本没有任何动词搭配入口，功能等于不存在。
+   * 德语/英语/法语的语法中心没有任何静态动词搭配入口，功能等于不存在。
    * 这里在运行时补上入口卡片（不改 index.html），数据缺失时卡片文案明确说明
-   * 「暂无数据」，点进去看到的是空状态而不是坏页。数据落盘后自动升级为可用入口。
+   * 「暂无数据」，点进去看到的是空状态而不是坏页。
+   *
+   * 幂等且可升级：卡片已存在时只同步文案；数据懒加载到位后（LangLoader 'done'）
+   * 重跑一次，「建设中」卡片就地升级，练习卡片补插。练习卡在数据消失时移除
+   * （正常不会发生，防御性处理）。
    */
+  const CARD_DESC = {
+    ready: '按介词浏览动词搭配与例句',
+    empty: '该语言暂无动词搭配数据（建设中）',
+  };
+
   function installLanguageHubCards() {
     ['german', 'english', 'french'].forEach(lang => {
       const profile = VerbCollocations.profileFor(lang);
       const grid = document.querySelector(profile.hubSelector);
-      if (!grid || grid.querySelector(`[data-vc-lang="${lang}"]`)) return;
+      if (!grid) return;
 
       const ready = VerbCollocations.hasDataset(lang);
 
-      const browseBtn = document.createElement('button');
-      browseBtn.className = 'card';
-      browseBtn.dataset.vcLang = lang;
-      browseBtn.innerHTML =
-        '<span class="card-chip"><span class="msr">link</span></span>' +
-        '<span class="card-title">动词搭配</span>' +
-        '<span class="card-desc">' +
-          (ready ? '按介词浏览动词搭配与例句' : '该语言暂无动词搭配数据（建设中）') +
-        '</span>';
-      browseBtn.addEventListener('click', () => VerbCollocations.open(lang));
-      grid.appendChild(browseBtn);
+      let browseBtn = grid.querySelector(`[data-vc-lang="${lang}"]:not([data-vc-mode])`);
+      if (browseBtn) {
+        const desc = browseBtn.querySelector('.card-desc');
+        if (desc) desc.textContent = ready ? CARD_DESC.ready : CARD_DESC.empty;
+      } else {
+        browseBtn = document.createElement('button');
+        browseBtn.className = 'card';
+        browseBtn.dataset.vcLang = lang;
+        browseBtn.innerHTML =
+          '<span class="card-chip"><span class="msr">link</span></span>' +
+          '<span class="card-title">动词搭配</span>' +
+          '<span class="card-desc">' + (ready ? CARD_DESC.ready : CARD_DESC.empty) + '</span>';
+        browseBtn.addEventListener('click', () => VerbCollocations.open(lang));
+        grid.appendChild(browseBtn);
+      }
 
-      if (!ready) return;
-
-      const practiceBtn = document.createElement('button');
-      practiceBtn.className = 'card';
-      practiceBtn.dataset.vcLang = lang;
-      practiceBtn.dataset.vcMode = 'practice';
-      practiceBtn.innerHTML =
-        '<span class="card-chip"><span class="msr">extension</span></span>' +
-        '<span class="card-title">动词搭配练习</span>' +
-        '<span class="card-desc">单介词选择、多介词辨义、例句翻译</span>';
-      practiceBtn.addEventListener('click', () => {
-        if (window.VerbCollocationPractice) window.VerbCollocationPractice.open(lang);
-      });
-      grid.appendChild(practiceBtn);
+      const practiceBtn = grid.querySelector(`[data-vc-lang="${lang}"][data-vc-mode="practice"]`);
+      if (ready && !practiceBtn) {
+        const btn = document.createElement('button');
+        btn.className = 'card';
+        btn.dataset.vcLang = lang;
+        btn.dataset.vcMode = 'practice';
+        btn.innerHTML =
+          '<span class="card-chip"><span class="msr">extension</span></span>' +
+          '<span class="card-title">动词搭配练习</span>' +
+          '<span class="card-desc">单介词选择、多介词辨义、例句翻译</span>';
+        btn.addEventListener('click', () => {
+          if (window.VerbCollocationPractice) window.VerbCollocationPractice.open(lang);
+        });
+        grid.appendChild(btn);
+      } else if (!ready && practiceBtn) {
+        practiceBtn.remove();
+      }
     });
   }
 
@@ -783,4 +800,12 @@ window.VerbCollocations = VerbCollocations;
 
     installLanguageHubCards();
   });
+
+  // 懒加载场景：首屏进意语时德/法词库还没到，上面的注入只能渲染「建设中」。
+  // 订阅 LangLoader 的 'done' 事件，任一语言数据就位后就地升级入口卡片。
+  if (window.LangLoader && typeof window.LangLoader.on === 'function') {
+    window.LangLoader.on((type, detail) => {
+      if (type === 'done' && detail && detail.lang) installLanguageHubCards();
+    });
+  }
 })();

@@ -1665,9 +1665,61 @@
 
 **已落地：** 这一项部分实现了上一轮遗留的「跨语言 hub 对齐」——德/英 Grammar 现与意大利语一样含动词变位（动词搭配仍为意大利语专属）。
 
+### 2026-08-21 — 反向出题 + P0 收尾 + 德/英进度对齐
+
+**清理：**
+- 删除内层 `dimenticato/`（PinMe 全栈模板脚手架，未被 git 跟踪、无引用）：不做账号/云同步，避免混淆
+- 删除 `vocabulary_fixed.js`（6.3MB，仅被一次性修正脚本作为输出产物引用，应用不加载）
+
+**P0 修复：**
+- 德/英语法中心的「动词搭配·即将推出」静态禁用卡片删除（index.html）；入口统一由 `verb-collocations.js` 运行时注入
+- `installLanguageHubCards()` 重写为幂等可升级：卡片文案随数据状态刷新、练习卡随就绪补插/移除；并订阅 `LangLoader.on('done')`，修复懒加载下（先启动别门语言）搭配卡片整个会话停留在「建设中」的 bug
+- 英语语法书/动词变位卡片绑定从 `GermanApp.init` 级联挪到 `EnglishApp._bindGrammarHubCards()`（EnglishApp.init 调用）：修复英语直连 `#/en/…` 时德语词库缺席、级联断掉导致英语卡片失活；共享 `grammarBookBackBtn` 用闭包标志 `grammarBookBackBound` 防双绑
+- `stats-charts.js` 掌握度环形图改用 `ReviewSession.wordsFor(lang)` + `getWordStatus(word, lang)`：从德/法进度页打开完整统计不再画意语数据
+- `verb-collocations.js` 头部过时注释（「只有意大利语有数据」）更正
+
+**反向出题模式（选择题出题方向）：**
+- `lib/quiz-engine.js` 新增方向偏好：`getDirection/setDirection`（全局 key `dimenticato_quiz_direction`，分语言 `_lang` 后缀，语义与难度开关一致）；实例方法 `isReverse/correctAnswerFor/questionTextFor/shouldSpeakQuestion/applyDirectionLabels`
+- `generateOptions()` 方向感知：反向时选项取外语词形、干扰项按外语拼写相近挑选（hard 档），并排除「释义与题面同义」的 twin 词条（两个词释义相同时反向题里两个选项都对）
+- 四语言 MC 流程接线（题面/标签/判分字段/朗读防护——反向朗读词形等于报答案）：`app.js`（意）、`german-app.js`（德/英）、`french-app.js`（法）；四个 MC 屏的题面/选项标签加 id 并按方向切换文案
+- 设置 UI：意语全站设置页静态开关（`#directionToggle` + `app.js initDirectionToggle()`）；德/英/法由 `QuizEngine.renderDirectionToggle` 注入，与难度开关共用「学习偏好」卡片（`mountDifficultyToggles` 一并挂载、`sync/bindDirectionToggles` 委托绑定）
+- 注意：`app.js` 的 `MultipleChoice.loadQuestion` 有两个定义——对象字面量里的那份被文件末尾 SRS 增强版（~2979）覆盖，方向逻辑改在生效的那份上
+- 测试：`tests/test-quiz-engine.html` 新增 30 个用例（方向 API、反向选项生成、twin 排除、hard+reverse、正向回归、控件标记），总计 363 用例全过
+
+**德/英进度页对齐法语：**
+- `index.html` 德/英 Progress 屏新增：7 天练习量柱状图、模式正确率+总次数+连续天数、最近 7 天记录表、「打开完整统计面板」入口卡（有 `showEnhancedStatsModal` 才显示）
+- `german-app.js` 新增 `renderProgressPanels(lang, prefix, stats, setText)`（数据只读自共享 StatsManager，按语言分 key）；`updateGermanProgressStats` / `EnglishApp.updateProgressStats` 调用；英语侧统计卡入口由 `EnglishApp._bindProgressPanels` 自绑（同英语直连问题）
+- 修复统计双重计数：德/英答题原本同时被 `QuizIntegration.wrap`（app-enhanced，记 total+words 但 durationMs=0）和 `recordDailyActivity`（german-app，记 duration）各写一次 `StatsManager.recordActivity`，同一题计 2 次。现在包装器带真实 `durationMs` 成为唯一记录点，`recordDailyActivity` 及其调用删除（浏览器实测：每答一题统计 +1）
+
+### 2026-08-21 — 打字游戏六项 bug 修复
+
+**修复（lib/typing-game.js）：**
+- 击落特效（粒子 + "+N" 漂浮分数）的 `t` 从不增长：`_draw` 的过滤条件 `t<600/900` 永远为真，
+  特效以满透明度**永久**停在击落点并无限堆积，长局会糊满河面。新增 `Renderer._advanceFx(dt)`
+  在 `_loop` 里按真实帧时长老化（独立成方法便于无头测试）
+- `_drawItem` 先测量后设字体：量宽时继承上一段的 11px 标签字体、绘制却用 16px，
+  长中文题面系统性溢出气泡框。现在先设字体再 `measureText`
+- `maxSpeed` 是没接线的死常量：下落速度按 `1.09^level` 无上限增长，高等级快到不可反应。
+  现在 `spawn()` 里 `Math.min(o.maxSpeed, …)` 真正封顶
+
+**修复（typing-game-app.js）：**
+- 「再来一局」不经过 `renderSetup()`（唯一收起结算浮层的地方），深色模糊的 gameover
+  浮层会一直盖住新开的这局。`startGame()` 现在直接隐藏 `#typingGameOverlay`
+- 英语变位数据的人称键是 `i/you/he_she_it/we/you_pl/they`，而 `PERSON_CN.english` 按意语键
+  （io/tu/…）查表全部落空，题面显示原始键名。已改为英语自己的键集
+- `clean()` 把 sub 硬截 26 字符，英语/法语/德语的「时态标签 · 人称」超长，
+  **人称被整个截掉**（多个形式无法区分）。人称移到最前 + 截断上限放宽到 34
+
+**测试：** `tests/test-typing-game.js` 新增 speed cap / fx aging 两组，`tests/test-typing-game-app.js`
+新增 restart-hides-overlay / english-person-labels 两组（合计 +11 用例，全套 374 通过）。
+浏览器实测确认过：游戏运行、击落计分、结算浮层出现均正常；上述问题以代码证据 + DOM 状态
++ 无头回归用例三方定位。
+
 ---
 
 ## 16. 快速索引（超简版）
+
+
 
 如果只是想快速定位文件，可直接看这里：
 
@@ -1685,6 +1737,7 @@
 - **改通用测验引擎** → `lib/quiz-engine.js`
 - **改导航 / screen 切换 / 返回逻辑** → `lib/navigation.js`（`AppState` 仍在 `app.js`）
 - **改选择题难度 / 相似干扰项** → `lib/word-similarity.js` + `lib/quiz-engine.js`（难度设置 UI 在 `index.html` `#difficultyToggle` + `app.js` `initDifficultyToggle()`）
+- **改出题方向（正向/反向）** → `lib/quiz-engine.js`（方向 API + 方向感知 `generateOptions`；意语开关在 `index.html` `#directionToggle` + `app.js` `initDirectionToggle()`，德/英/法由 `renderDirectionToggle` 运行时注入）
 - **改单元测试** → `tests/test-quiz-engine.html` + `tests/test-spaced-repetition.html`
 - **改语法书构建** → `scripts/parse_grammar.py` + `scripts/build_grammar_data.py`
 - **改搭配数据构建** → `scripts/parse_verb_collocations.py`

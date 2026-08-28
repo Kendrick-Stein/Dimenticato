@@ -1491,7 +1491,7 @@ const MultipleChoice = {
       : 0;
     document.getElementById('mcAccuracy').textContent = accuracy + '%';
 
-    // 显示意大利语单词
+    // 显示意大利语单词（本方法被文件末尾的 SRS 增强版 loadQuestion 覆盖，见 ~2979）
     document.getElementById('mcItalianWord').textContent = AppState.currentWord.italian;
 
     // 自动朗读意大利语单词
@@ -1537,7 +1537,7 @@ const MultipleChoice = {
   },
 
   generateOptions() {
-    var correctAnswer = AppState.currentWord.english;
+    var correctAnswer = this._getEngine().correctAnswerFor(AppState.currentWord);
     var optionSource = (Array.isArray(AppState.currentWords) && AppState.currentWords.length > 1)
       ? AppState.currentWords
       : AppState.vocabulary;
@@ -1548,7 +1548,7 @@ const MultipleChoice = {
 
   checkAnswer(button) {
     var selectedAnswer = button.dataset.answer;
-    var correctAnswer = AppState.currentWord.english;
+    var correctAnswer = this._getEngine().correctAnswerFor(AppState.currentWord);
     var isCorrect = selectedAnswer === correctAnswer;
 
     AppState.quizTotal++;
@@ -2623,6 +2623,7 @@ function bindEvents() {
   document.getElementById('settingsResetBtn')?.addEventListener('click', () => Storage.reset());
 
   initDifficultyToggle();
+  initDirectionToggle();
 
   function initDifficultyToggle() {
     const toggle = document.getElementById('difficultyToggle');
@@ -2635,6 +2636,22 @@ function bindEvents() {
     buttons.forEach((btn) => {
       btn.addEventListener('click', () => {
         apply(QuizEngine.setDifficulty(btn.dataset.difficulty));
+      });
+    });
+  }
+
+  // 出题方向（全局设置；德/英/法的分语言开关由 QuizEngine 运行时注入）
+  function initDirectionToggle() {
+    const toggle = document.getElementById('directionToggle');
+    if (!toggle) return;
+    const buttons = toggle.querySelectorAll('.direction-option');
+    const apply = (value) => {
+      buttons.forEach((b) => b.classList.toggle('active', b.dataset.direction === value));
+    };
+    apply(QuizEngine.getDirection());
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        apply(QuizEngine.setDirection(btn.dataset.direction));
       });
     });
   }
@@ -2976,13 +2993,22 @@ MultipleChoice.loadQuestion = function() {
     : 0;
   document.getElementById('mcAccuracy').textContent = accuracy + '%';
   
-  // 显示意大利语单词
-  document.getElementById('mcItalianWord').textContent = AppState.currentWord.italian;
-  
-  // 自动朗读意大利语单词
-  setTimeout(() => {
-    italianSpeaker.speak(AppState.currentWord.italian, true);
-  }, 300); // 稍微延迟一下，让界面先更新
+    // 题面跟着出题方向走：正向显示意大利语单词，反向显示释义
+    const mcEngine = this._getEngine();
+    document.getElementById('mcItalianWord').textContent =
+      mcEngine.questionTextFor(AppState.currentWord);
+    mcEngine.applyDirectionLabels(
+      { question: 'mcQuestionLabel', options: 'mcOptionsLabel' },
+      { question: '意大利语单词', options: '选择正确的英语翻译' },
+      { question: '英语释义', options: '选择正确的意大利语单词' }
+    );
+
+    // 自动朗读意大利语单词（反向模式题面是释义，朗读词形等于报答案）
+    if (mcEngine.shouldSpeakQuestion()) {
+      setTimeout(() => {
+        italianSpeaker.speak(AppState.currentWord.italian, true);
+      }, 300); // 稍微延迟一下，让界面先更新
+    }
   
   // 处理中文提示 - 默认隐藏，显示"显示提示"按钮
   const chineseHint = document.getElementById('mcChineseHint');
