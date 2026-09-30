@@ -65,6 +65,7 @@ from collections import Counter, defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import vocab_schema  # noqa: E402  (data/vocab/*.js reader)
+from data_module import register_footer
 DEFAULT_CACHE = "/tmp/dimenticato-fr-extras"
 
 TATOEBA_LICENSE = "Tatoeba CC BY 2.0 FR"
@@ -1442,7 +1443,8 @@ def build_collocations(cache, lex, out_path):
     )
     body = "const FRENCH_COLLOCATIONS_DATA = %s;\n\n" % json.dumps(data, ensure_ascii=False, indent=2)
     tail = ("if (typeof window !== 'undefined') { window.FRENCH_COLLOCATIONS_DATA = FRENCH_COLLOCATIONS_DATA; }\n"
-            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COLLOCATIONS_DATA; }\n")
+            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COLLOCATIONS_DATA; }\n"
+            + register_footer('collocations', 'fr', 'FRENCH_COLLOCATIONS_DATA'))
     with open(out_path, "w", encoding="utf-8") as fh:
         fh.write(header + "\n" + body + tail)
     log("collocations: %d verbs, %d examples (curated pairs %d, corpus pairs %d, rejected pairs %d, noun collocations %d)"
@@ -2265,7 +2267,8 @@ def write_cognates(rows, out_path, stats):
     )
     body = "const FRENCH_COGNATE_DATA = %s;\n\n" % json.dumps(data, ensure_ascii=False, indent=2)
     tail = ("if (typeof window !== 'undefined') { window.FRENCH_COGNATE_DATA = FRENCH_COGNATE_DATA; }\n"
-            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COGNATE_DATA; }\n")
+            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COGNATE_DATA; }\n"
+            + register_footer('cognates', 'fr', 'FRENCH_COGNATE_DATA'))
     with open(out_path, "w", encoding="utf-8") as fh:
         fh.write(header + "\n" + body + tail)
     log("cognates: %d entries (%d faux amis)" % (len(data), faux))

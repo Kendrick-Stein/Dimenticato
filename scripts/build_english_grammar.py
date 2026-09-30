@@ -53,6 +53,7 @@ import os
 import re
 import sys
 import unicodedata
+from data_module import register_footer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.join(HERE, 'english_grammar_src')
@@ -214,7 +215,7 @@ def main(argv):
     lines.append("if (typeof module !== 'undefined' && module.exports) {")
     lines.append('  module.exports = ENGLISH_GRAMMAR_DATA;')
     lines.append('}')
-    lines.append('')
+    lines.append(register_footer('grammar', 'en', 'ENGLISH_GRAMMAR_DATA'))
 
     with open(out_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))

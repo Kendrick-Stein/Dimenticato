@@ -36,6 +36,7 @@ import json
 import os
 import re
 import unicodedata
+from data_module import register_footer
 
 OUT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'french-grammar-data.js')
 
@@ -6494,7 +6495,7 @@ def main():
     lines.append("if (typeof module !== 'undefined' && module.exports) {")
     lines.append('  module.exports = FRENCH_GRAMMAR_DATA;')
     lines.append('}')
-    lines.append('')
+    lines.append(register_footer('grammar', 'fr', 'FRENCH_GRAMMAR_DATA'))
 
     with open(OUT_FILE, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))

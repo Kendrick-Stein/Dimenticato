@@ -46,18 +46,9 @@ const GrammarBook = (() => {
     return document.querySelector('#grammarBookScreen .grammar-book-layout');
   }
 
-  /**
-   * 各语言的语法数据都是 `const` 全局（不会挂到 window 上），所以只能在
-   * 「调用时」用裸名字 + typeof 解析，绝不能在 parse 阶段读 window.X。
-   */
+  // 语法数据按模块懒加载，注册在 DIM_DATA.grammar.<code>，调用时取
   function dataGlobalFor(lang) {
-    switch (lang) {
-      case 'german': return typeof GERMAN_GRAMMAR_DATA !== 'undefined' ? GERMAN_GRAMMAR_DATA : undefined;
-      case 'english': return typeof ENGLISH_GRAMMAR_DATA !== 'undefined' ? ENGLISH_GRAMMAR_DATA : undefined;
-      case 'french': return typeof FRENCH_GRAMMAR_DATA !== 'undefined' ? FRENCH_GRAMMAR_DATA : undefined;
-      case 'italian': return typeof GRAMMAR_DATA !== 'undefined' ? GRAMMAR_DATA : undefined;
-      default: return undefined;
-    }
+    return window.LangLoader ? window.LangLoader.data(lang, 'grammar') : null;
   }
 
   /** 从「调用方传进来的数据对象」反推语言，调用方无需改代码。 */
@@ -101,7 +92,7 @@ const GrammarBook = (() => {
    * Always rebuilds the nav tree AND the reading pane so switching between
    * Italian/German/English/French grammar data works correctly every time.
    * @param {Object|null} customData - Grammar data object with .tree and .content.
-   *   If null/undefined, falls back to global GRAMMAR_DATA.
+   *   If null/undefined, falls back to LangLoader.data(lang, 'grammar').
    * @param {Object} [options] - { lang } 可显式指定语言，缺省时自动识别。
    */
   function init(customData, options) {

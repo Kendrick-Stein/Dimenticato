@@ -54,6 +54,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_PATH = ROOT / "data" / "german-conjugations.js"
 sys.path.insert(0, str(ROOT / "scripts"))
 import vocab_schema  # noqa: E402  (data/vocab/*.js reader)
+from data_module import register_footer
 
 CACHE = Path("/tmp/dimenticato-de-conj")
 KAIKKI_URL = (
@@ -1329,7 +1330,8 @@ def main() -> None:
         + "const GERMAN_CONJUGATION_DATA = "
         + json.dumps(selected, ensure_ascii=False, indent=2)
         + ";\n\n"
-        + "if (typeof module !== 'undefined' && module.exports) { module.exports = GERMAN_CONJUGATION_DATA; }\n",
+        + "if (typeof module !== 'undefined' && module.exports) { module.exports = GERMAN_CONJUGATION_DATA; }\n"
+        + register_footer("conjugations", "de", "GERMAN_CONJUGATION_DATA"),
         encoding="utf-8",
     )
     print(f"Wrote {len(selected)} entries to {OUT_PATH}")

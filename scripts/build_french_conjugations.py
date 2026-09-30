@@ -58,6 +58,7 @@ import sqlite3
 import sys
 import unicodedata
 from collections import Counter, OrderedDict
+from data_module import register_footer
 
 DOWNLOADS = """
   https://kaikki.org/dictionary/French/pos-verb/kaikki.org-dictionary-French-by-pos-verb.jsonl
@@ -1537,7 +1538,10 @@ def main():
           '  if (typeof window !== \'undefined\') {\n'
           '    window.FRENCH_CONJUGATION_DATA = FRENCH_CONJUGATION_DATA;\n  }\n\n'
           '  if (typeof module !== \'undefined\' && module.exports) {\n'
-          '    module.exports = FRENCH_CONJUGATION_DATA;\n  }\n})();\n')
+          '    module.exports = FRENCH_CONJUGATION_DATA;\n  }\n' +
+          ''.join('  ' + l if l.strip() else l
+                  for l in register_footer('conjugations', 'fr', 'FRENCH_CONJUGATION_DATA').splitlines(True)) +
+          '})();\n')
     with open(args.out, 'w', encoding='utf-8') as f:
         f.write(js)
 

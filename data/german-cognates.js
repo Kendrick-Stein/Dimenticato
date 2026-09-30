@@ -37962,3 +37962,7 @@ GERMAN_COGNATE_DATA.falseFriends = GERMAN_COGNATE_DATA.filter(function (w) { ret
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = GERMAN_COGNATE_DATA;
 }
+
+// 统一注册：消费方经 LangLoader.data(lang, module) 取数（lib/lang-loader.js）
+(globalThis.DIM_DATA = globalThis.DIM_DATA || {});
+(globalThis.DIM_DATA.cognates = globalThis.DIM_DATA.cognates || {}).de = GERMAN_COGNATE_DATA;

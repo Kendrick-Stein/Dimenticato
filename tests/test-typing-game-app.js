@@ -7,7 +7,7 @@
  * 引擎测试（test-typing-game.js）只覆盖纯逻辑；这里用 dom-shim 把
  * typing-game-app.js 整个加载起来，验证：入口卡片委托 → open() 渲染设置屏
  * → 点开始 → 会话建立 → 模拟打字自动击落 → 变位模式建池 → 本地纪录写入。
- * 数据文件用最小桩（DIM_VOCAB schema v1 + lib/vocab.js / CONJUGATION_ALL_TENSES_DATA），
+ * 数据文件用最小桩（DIM_VOCAB schema v1 + lib/vocab.js / DIM_DATA.conjugations），
  * 不加载真实词库，跑得快。
  */
 'use strict';
@@ -81,7 +81,12 @@ win.DIM_VOCAB = {
     ]
   }
 };
-win.CONJUGATION_ALL_TENSES_DATA = [{
+// 模块数据桩：只要 LangLoader.data（真 loader 会往 document 里插 <script>）
+win.LangLoader = {
+  data: (lang, module) => ((win.DIM_DATA || {})[module] || {})[win.Languages.code(lang)] || null
+};
+win.DIM_DATA = { conjugations: {} };
+win.DIM_DATA.conjugations.it = [{
   rank: 1, infinitive: 'essere', english: 'to be',
   tenses: {
     indicativo_presente: {
@@ -277,7 +282,7 @@ group('restart hides overlay', () => {
 
 // ===== 英语变位模式的人称标签（回归：键不匹配时显示原始键名 he_she_it） =====
 group('english conjugation person labels', () => {
-  win.ENGLISH_CONJUGATION_DATA = [{
+  win.DIM_DATA.conjugations.en = [{
     rank: 1, infinitive: 'be', english: 'to be',
     tenses: {
       indicative_present_simple: {
@@ -298,7 +303,7 @@ group('english conjugation person labels', () => {
   assert(subs.indexOf('he_she_it') === -1, '不应残留原始键名 he_she_it');
   assert(subs.indexOf('我') !== -1, '第一人称应显示「我」');
   TypingGameApp.close();
-  delete win.ENGLISH_CONJUGATION_DATA;
+  delete win.DIM_DATA.conjugations.en;
 });
 
 console.log(`Typing App OK: ${passed} passed, ${failed} failed`);

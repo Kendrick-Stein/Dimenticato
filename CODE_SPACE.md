@@ -115,10 +115,10 @@ lib/utils → lib/vocab → lib/storage → lib/srs → lib/word-similarity
 ### 2.2 两级懒加载
 
 - 两级清单都由 `lib/languages.js` 各档案的 `files` 生成（`files.vocab` → `DATA`，其余键 → `MODULES`）
-- **一级（词库，`LangLoader.DATA`）**：意 `data/vocab/it.js`；德 `data/vocab/de.js` + `data/german-course-data.js`；英 `data/vocab/en.js`；法 `data/vocab/fr.js`。切语言时 `LangLoader.ensure(lang)` 补拉，就绪后同样走 `App.onLanguageData`
-- **二级（模块，`LangLoader.MODULES`）**：`conjugations` / `grammar` / `collocations` / `cognates` × 语言（英语无 cognates）。`LangLoader.ensureModule(lang, module)` 幂等；发 `module:start` / `module:done`，`boot.js` 显示 / 撤遮罩，并调 `App.refreshCounts()`
+- **一级（词库，`LangLoader.DATA`）**：意 `data/vocab/it.js`；德 `data/vocab/de.js`；英 `data/vocab/en.js`；法 `data/vocab/fr.js`。切语言时 `LangLoader.ensure(lang)` 补拉，就绪后同样走 `App.onLanguageData`
+- **二级（模块，`LangLoader.MODULES`）**：`conjugations` / `grammar` / `collocations` / `cognates` / `course` × 语言（英语无 cognates，只有德语有 course）。`LangLoader.ensureModule(lang, module)` 幂等；发 `module:start` / `module:done`，`boot.js` 显示 / 撤遮罩，并调 `App.refreshCounts()`
 - **守卫位置**：各模块 opener 内部检测数据缺席 → `ensureModule` → 重试一次；仍缺席走各自「数据未加载」降级 UI。见 `ConjugationPractice.openFor`、`GrammarBook.init`、`VerbCollocations` 的 `init`、`VerbCollocationPractice.open`、`CognateApp.open`、`TypingGameApp`（变位模式）、`App.openGrammarBook`、`GermanCourse`
-- 数据文件是顶层 `const`，动态注入的 classic script 同样进全局词法环境，消费方一律调用时 `typeof X !== 'undefined'` 取数——**不能改成 `type="module"`**
+- 功能模块的数据文件把载荷注册为 `DIM_DATA.<module>.<code>`，消费方一律调用时经 `LangLoader.data(lang, module)` 取数（未加载为 `null`）；数据文件是 classic script——**不能改成 `type="module"`**
 - `LangLoader.prefetch(lang)` 可在空闲时预取
 
 ### 2.3 架构分层
@@ -311,7 +311,7 @@ paper/ink 编辑风设计系统，一套配色覆盖全部语言（不再有按�
 内部结构（按文件顺序）：
 
 - 常量：`LEVELS`、`LEVEL_NAMES`、`BROWSE_PAGE = 200`、`SESSION_SIZES`（拼写屏特殊字母键取自档案的 `accents`）
-- `grammarData(l)`：按语言取 `GRAMMAR_DATA` / `GERMAN_GRAMMAR_DATA` / `ENGLISH_GRAMMAR_DATA` / `FRENCH_GRAMMAR_DATA`（裸名字，`typeof` 守卫）
+- `grammarData(l)`：`LangLoader.data(l, 'grammar')`
 - `Speaker`：Web Speech 朗读（rate 0.9，按档案 `voice` 正则选音色）
 - `Progress`：已掌握 Set 缓存（按 key）、统计计数器（按语言）、`touch` / `flush` / `forget`
 - 练习来源：`currentSource` / `buildSession`（§4.1、§4.2）
@@ -345,18 +345,18 @@ paper/ink 编辑风设计系统，一套配色覆盖全部语言（不再有按�
 
 ### 6.3 `lib/languages.js` — 语言档案
 
-「唯一知道有哪些语言」的地方。每条档案：`code`（it/de/en/fr，URL 与 `DIM_VOCAB` 用）、`key`（italian…，存储与模块名，沿用旧版以保证旧进度 / 备份有效）、`name`、`cn`、`en`、`tts`、`voice`、`spell`、`accents`（拼写屏特殊字母键）、`motto`、`modules`、`grammarGlobal`（语法数据文件定义的顶层 const 名）、`files`（lang-loader 注入的数据文件，`vocab` 随语言加载，其余按模块懒加载）。
+「唯一知道有哪些语言」的地方。每条档案：`code`（it/de/en/fr，URL 与 `DIM_VOCAB` 用）、`key`（italian…，存储与模块名，沿用旧版以保证旧进度 / 备份有效）、`name`、`cn`、`en`、`tts`、`voice`、`spell`、`accents`（拼写屏特殊字母键）、`motto`、`files`（lang-loader 注入的数据文件，`vocab` 随语言加载，其余按模块懒加载）。`files` 里除 `vocab` 外的键就是这门语言有的可选模块——没有单独的开关表，`Languages.hasModule(lang, module)` 直接看 `files[module]`。
 
-当前 `modules`：
+当前模块：
 
-| | cognates | conjugation | grammar | collocations | course |
+| | cognates | conjugations | grammar | collocations | course |
 |---|---|---|---|---|---|
 | it | ✓ | ✓ | ✓ | ✓ | |
 | de | ✓ | ✓ | ✓ | ✓ | ✓ |
 | en | | ✓ | ✓ | ✓ | |
 | fr | ✓ | ✓ | ✓ | ✓ | |
 
-API：`Languages.list` / `codes` / `keys` / `DEFAULT` / `DEFAULT_KEY` / `get(codeOrKey)` / `code()` / `key()` / `has()` / `label()` / `byKeyMap(fn)`。`get` 同时接受 `'de'` 与 `'german'`。
+API：`Languages.list` / `codes` / `keys` / `DEFAULT` / `DEFAULT_KEY` / `get(codeOrKey)` / `code()` / `key()` / `has()` / `hasModule(codeOrKey, module)` / `label()` / `byKeyMap(fn)`。`get` 同时接受 `'de'` 与 `'german'`。
 
 shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表、code↔key 映射、中文名、数据文件清单都从这里派生，不再各自写死。
 
@@ -443,7 +443,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 入口 `node tests/run-headless.js [filter]`（`npm test` 同义；CI `.github/workflows/ci.yml` 在 push / PR 到 main 时跑）。共 17 个 harness：
 
 - HTML（在 Node `vm` + `tests/dom-shim.js` 里按 `<script src>` 顺序执行）：`test-quiz-engine.html`、`test-spaced-repetition.html`
-- Node：`test-french-data.js`、`test-german-course-data.js`、`test-storage.js`、`test-typing-game.js`、`test-typing-game-app.js`
+- Node：`check-icons.js`、`check-data-modules.js`、`test-french-data.js`、`test-german-course-data.js`、`test-storage.js`、`test-typing-game.js`、`test-typing-game-app.js`
 - 数据校验器（阻断项）：`scripts/validate_vocab.js`、`validate_italian_extras.js`、`validate_french_extras.js`、`validate_french_conjugations.js`、`validate_english_conjugations.js`、`validate_french_grammar.js`、`validate_german_extras.js`、`validate_german_grammar.js`、`validate_english_grammar.js`、`validate_english_collocations.js`
 
 `scripts/validate_german_conjugations.js` 存在但未接入 harness。任何 FAIL / 抛错 / 缺汇总行都让退出码非 0。
@@ -466,11 +466,13 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 - 校验：`node scripts/validate_vocab.js`；Python 读写 `scripts/vocab_schema.py`，各管线原生形状 → v1 的适配在 `scripts/vocab_legacy.py`；Node 读取 `scripts/vocab_node.js`
 - ⚠️ 许可：德语含 HanDeDict（CC-BY-SA 3.0），英语含 ECDICT；README「数据来源与致谢」与 Help 弹窗已署名，见 `ATTRIBUTION.md`
 
+下表的「全局」是文件里的顶层名，只留给 Node 校验脚本在 vm 里读；页面代码一律 `LangLoader.data(lang, module)`（每个文件末尾把载荷注册成 `DIM_DATA.<module>.<code>`，尾巴由 `scripts/data_module.py register_footer` 统一生成，`tests/check-data-modules.js` 检查）。
+
 #### 动词变位（模块 `conjugations`）
 
 | 语言 | 文件 | 全局 |
 |---|---|---|
-| it | `data/conjugations-all-tenses.js`（主）+ `data/conjugations-presente.js`（fallback） | `CONJUGATION_ALL_TENSES_DATA` / `CONJUGATION_PRESENTE_DATA` |
+| it | `data/conjugations-all-tenses.js` | `CONJUGATION_ALL_TENSES_DATA` |
 | de | `data/german-conjugations.js` | `GERMAN_CONJUGATION_DATA` |
 | en | `data/english-conjugations.js` | `ENGLISH_CONJUGATION_DATA` |
 | fr | `data/french-conjugations.js` | `FRENCH_CONJUGATION_DATA` |
@@ -496,7 +498,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 `data/cognates.js`（`COGNATE_DATA`）、`data/german-cognates.js`（`GERMAN_COGNATE_DATA`，另有 `falseFriend` / `pos` / `englishGloss`）、`data/french-cognates.js`（`FRENCH_COGNATE_DATA`）。英语无同源词数据。
 
-#### 德语课程（随德语词库一级加载）
+#### 德语课程（模块 `course`，打开课程路线时懒加载）
 
 `data/german-course-data.js`：`GERMAN_COURSE_DATA`（54 单元）、`GERMAN_COURSE_GRAMMAR_SLUGS`、`GERMAN_COURSE_UNIT_EXTRAS`。
 
@@ -534,7 +536,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 | 脚本 | 输出 | 校验 |
 |---|---|---|
-| `fix_italian_conjugations.py` | 就地修 `data/conjugations-all-tenses.js` / `conjugations-presente.js` | — |
+| `fix_italian_conjugations.py` | 就地修 `data/conjugations-all-tenses.js` | — |
 | `build_german_conjugations.py` | `data/german-conjugations.js` | `validate_german_conjugations.js`（未接入 harness） |
 | `build_english_conjugations.py` | `data/english-conjugations.js` | `validate_english_conjugations.js` |
 | `build_french_conjugations.py` | `data/french-conjugations.js` | `validate_french_conjugations.js` |
@@ -591,9 +593,9 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 ### 9.5 新增一门语言
 
 1. 产出 `data/vocab/<code>.js`（`docs/vocab-schema.md`「Adding a language」）
-2. `lib/languages.js` 加一条档案：`code` / `key` / `cn` / `tts` / `spell` / `accents` / `modules` / `grammarGlobal` / `files`。路由、加载清单、存储 key（`progressKeysFor`）、重置菜单、加载文案全部自动派生
+2. `lib/languages.js` 加一条档案：`code` / `key` / `cn` / `tts` / `spell` / `accents` / `files`。路由、加载清单、存储 key（`progressKeysFor`）、重置菜单、加载文案全部自动派生
 3. `.lang-switch` 按钮由 `app.js renderLangSwitch()` 生成（`index.html` 里的静态按钮只是首帧占位，可顺手补上）
-4. 开了哪些 `modules`，就给对应功能模块（conjugation-app / grammar-book / verb-collocations / cognate-app）补该语言的 config
+4. 要带哪个模块，就在 `files` 里列出它的数据文件（文件末尾用 `register_footer(module, code, NAME)` 注册），再给对应功能模块（conjugation-app 的人称/时态表、cognate-app 的 headword 字段等）补该语言的 config；取数不需要改
 
 ### 9.6 个人单词本 / 社区词书
 
@@ -688,9 +690,9 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 模块既有「`document.readyState === 'loading'` 就等 `DOMContentLoaded`」的写法，也有裸 `DOMContentLoaded` 监听；两者都依赖 `__ReadyGate` + 合成 `DOMContentLoaded`。**不要**在 `LangLoader.boot()` 之外再派发 `DOMContentLoaded`，也不要让模块在解析期访问词库或 DOM。
 
-### 11.3 数据是顶层 `const`，不一定在 `window` 上
+### 11.3 模块数据只经 `LangLoader.data` 取
 
-`GRAMMAR_DATA`、`CONJUGATION_ALL_TENSES_DATA` 等是顶层 `const`，只能用裸名字 + `typeof` 守卫读取（`app.js grammarData`、`typing-game-app.js lateGlobal`）；少数文件（法语 / 德语 extras）额外挂了 `window.*`。`DIM_VOCAB` 挂在 `globalThis` 上。
+`GRAMMAR_DATA`、`CONJUGATION_ALL_TENSES_DATA` 等顶层 `const` 仍在（Node 校验脚本按名字读），但页面代码不要再用裸名字：一律 `LangLoader.data(lang, module)`，它读 `DIM_DATA.<module>.<code>`，`lang` 接受 code 或旧 key。新增 / 重建数据文件忘了注册尾巴时 `tests/check-data-modules.js` 会失败。`DIM_VOCAB` 挂在 `globalThis` 上。
 
 ### 11.4 DOM ID 强绑定
 

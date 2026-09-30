@@ -59446,3 +59446,7 @@ const FRENCH_COLLOCATIONS_DATA = {
 
 if (typeof window !== 'undefined') { window.FRENCH_COLLOCATIONS_DATA = FRENCH_COLLOCATIONS_DATA; }
 if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COLLOCATIONS_DATA; }
+
+// 统一注册：消费方经 LangLoader.data(lang, module) 取数（lib/lang-loader.js）
+(globalThis.DIM_DATA = globalThis.DIM_DATA || {});
+(globalThis.DIM_DATA.collocations = globalThis.DIM_DATA.collocations || {}).fr = FRENCH_COLLOCATIONS_DATA;

@@ -14390,3 +14390,7 @@ var COGNATE_DATA = [
     "rank": 9606
   }
 ];
+
+// 统一注册：消费方经 LangLoader.data(lang, module) 取数（lib/lang-loader.js）
+(globalThis.DIM_DATA = globalThis.DIM_DATA || {});
+(globalThis.DIM_DATA.cognates = globalThis.DIM_DATA.cognates || {}).it = COGNATE_DATA;

@@ -27,6 +27,7 @@ TARGET_COUNT = 1800
 PEOPLE = ["i", "you", "he_she_it", "we", "you_pl", "they"]
 
 from lemminflect import getAllInflections  # build-time only: pip install lemminflect
+from data_module import register_footer
 
 try:
     from wordfreq import zipf_frequency
@@ -415,7 +416,8 @@ def main() -> None:
         + "[\n"
         # 一行一个动词：比 indent=2 小约 3 倍（这个文件按需懒加载，但仍要下载）
         + ",\n".join(json.dumps(e, ensure_ascii=False, separators=(",", ":")) for e in data)
-        + "\n];\n",
+        + "\n];\n"
+        + register_footer("conjugations", "en", "ENGLISH_CONJUGATION_DATA"),
         encoding="utf-8",
     )
     print(f"Wrote {len(data)} entries to {OUT_PATH}")

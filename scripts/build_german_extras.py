@@ -43,6 +43,7 @@ import sys
 import unicodedata
 import urllib.request
 from collections import defaultdict
+from data_module import register_footer
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
@@ -586,7 +587,7 @@ def js_dump(obj):
     return json.dumps(obj, ensure_ascii=False, indent=2)
 
 
-def write_js(path, header, global_name, payload, extra_tail=''):
+def write_js(path, header, global_name, payload, module, extra_tail=''):
     # `var` so the browser global matches the Italian datasets, plus an explicit
     # window assignment (harmless in a classic script, required under a bundler)
     # and the CommonJS export so the file can be loaded head-less in Node.
@@ -594,7 +595,8 @@ def write_js(path, header, global_name, payload, extra_tail=''):
     body += ("if (typeof window !== 'undefined') {\n  window.%s = %s;\n}\n"
              % (global_name, global_name))
     text = header + '\n' + body + extra_tail + \
-        "\nif (typeof module !== 'undefined' && module.exports) {\n  module.exports = %s;\n}\n" % global_name
+        "\nif (typeof module !== 'undefined' && module.exports) {\n  module.exports = %s;\n}\n" % global_name + \
+        register_footer(module, 'de', global_name)
     with io.open(path, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write(text)
     return len(text.encode('utf-8'))
@@ -2979,6 +2981,7 @@ def emit_course(course, enriched, path):
     parts.append('  ]\n};\n')
     parts.append("\nif (typeof module !== 'undefined' && module.exports) {\n"
                  "  module.exports = GERMAN_COURSE_DATA;\n}\n")
+    parts.append(register_footer('course', 'de', 'GERMAN_COURSE_DATA'))
     text = ''.join(parts)
     with io.open(path, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write(text)
@@ -3060,7 +3063,7 @@ def main():
         data['nounVerb'] = build_noun_verb(pairs)
         size = write_js(
             os.path.join(DATA, 'german-collocations-data.js'),
-            COLLOC_HEADER, 'GERMAN_COLLOCATIONS_DATA', data)
+            COLLOC_HEADER, 'GERMAN_COLLOCATIONS_DATA', data, 'collocations')
         report['collocations'] = {
             'verbs': data['meta']['totalVerbs'],
             'examples': data['meta']['totalExamples'],
@@ -3093,7 +3096,7 @@ def main():
                 "GERMAN_COGNATE_DATA.filter(function (w) { return w.falseFriend; });\n")
         size = write_js(
             os.path.join(DATA, 'german-cognates.js'),
-            COGNATE_HEADER, 'GERMAN_COGNATE_DATA', allc, extra_tail=tail)
+            COGNATE_HEADER, 'GERMAN_COGNATE_DATA', allc, 'cognates', extra_tail=tail)
         patterns = defaultdict(int)
         for c in allc:
             patterns[c['patternType']] += 1

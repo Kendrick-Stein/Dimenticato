@@ -2133,3 +2133,7 @@ const GERMAN_COURSE_DATA = {
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = GERMAN_COURSE_DATA;
 }
+
+// 统一注册：消费方经 LangLoader.data(lang, module) 取数（lib/lang-loader.js）
+(globalThis.DIM_DATA = globalThis.DIM_DATA || {});
+(globalThis.DIM_DATA.course = globalThis.DIM_DATA.course || {}).de = GERMAN_COURSE_DATA;

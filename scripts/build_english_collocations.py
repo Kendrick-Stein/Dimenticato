@@ -47,6 +47,7 @@ import re
 import sys
 from collections import OrderedDict, defaultdict
 from pathlib import Path
+from data_module import register_footer
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = ROOT / 'scripts' / 'english_collocations_source'
@@ -368,7 +369,8 @@ def write(dataset):
         f'// Total verbs: {meta["totalVerbs"]} / Total examples: {meta["totalExamples"]}\n\n'
     )
     body = json.dumps(dataset, ensure_ascii=False, indent=2)
-    OUT.write_text(header + 'const ENGLISH_VERB_COLLOCATIONS_DATA = ' + body + ';\n', encoding='utf-8')
+    OUT.write_text(header + 'const ENGLISH_VERB_COLLOCATIONS_DATA = ' + body + ';\n'
+                   + register_footer('collocations', 'en', 'ENGLISH_VERB_COLLOCATIONS_DATA'), encoding='utf-8')
 
 
 def main(argv):

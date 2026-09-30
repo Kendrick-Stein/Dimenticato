@@ -62,27 +62,9 @@ const VerbCollocations = (() => {
 
   // ==================== 数据解析（全部在调用时做） ====================
 
-  /**
-   * 数据集都是 `const` 全局，不会挂到 window 上，因此必须在调用时用裸名字
-   * + typeof 解析；绝不能在 parse 阶段读 window.X。
-   */
+  // 搭配数据按模块懒加载，注册在 DIM_DATA.collocations.<code>，调用时取
   function resolveDataset(lang) {
-    switch (lang) {
-      case 'german':
-        if (typeof GERMAN_VERB_COLLOCATIONS_DATA !== 'undefined') return GERMAN_VERB_COLLOCATIONS_DATA;
-        // 新建的德语搭配库用的是 GERMAN_COLLOCATIONS_DATA（少一个 VERB_），
-        // 形状与旧库一致。数据文件是生成产物，改读取端而不是去改生成脚本。
-        return window.GERMAN_COLLOCATIONS_DATA || null;
-      case 'english':
-        return typeof ENGLISH_VERB_COLLOCATIONS_DATA !== 'undefined' ? ENGLISH_VERB_COLLOCATIONS_DATA : null;
-      case 'french':
-        if (typeof FRENCH_VERB_COLLOCATIONS_DATA !== 'undefined') return FRENCH_VERB_COLLOCATIONS_DATA;
-        return window.FRENCH_COLLOCATIONS_DATA || null;
-      case 'italian':
-        return typeof VERB_COLLOCATIONS_DATA !== 'undefined' ? VERB_COLLOCATIONS_DATA : null;
-      default:
-        return null;
-    }
+    return window.LangLoader ? window.LangLoader.data(lang, 'collocations') : null;
   }
 
   function hasDataset(lang) {

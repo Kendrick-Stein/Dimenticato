@@ -38,6 +38,7 @@ import json
 import os
 import re
 import sys
+from data_module import register_footer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -7013,6 +7014,7 @@ def build():
 
     js = 'const %s = %s;\n\nif (typeof module !== \'undefined\' && module.exports) {\n  module.exports = %s;\n}\n' % (
         GLOBAL_NAME, json.dumps(data, ensure_ascii=False, indent=2), GLOBAL_NAME)
+    js += register_footer('grammar', 'de', GLOBAL_NAME)
 
     with open(OUT_FILE, 'w', encoding='utf-8') as fh:
         fh.write(js)

@@ -3,7 +3,8 @@
 """Repair the generated Italian conjugation datasets in place.
 
 The original generator (scripts/build_it50k_conjugations.py, no longer in the
-repo) produced data/conjugations-all-tenses.js and data/conjugations-presente.js
+repo) produced data/conjugations-all-tenses.js (and a presente-only fallback file
+that has since been dropped: every entry here carries indicativo_presente)
 with four systematic defects:
 
   1. Every compound tense (passato prossimo, trapassato prossimo / remoto,
@@ -20,7 +21,7 @@ with four systematic defects:
      generation artifacts (restringere's doubled "re" prefix, a leaked Python
      None, bogus participles such as perdere -> "perdo").
 
-This script rewrites both datasets, keeping the exact file shape the app
+This script rewrites the dataset, keeping the exact file shape the app
 expects (`const CONJUGATION_ALL_TENSES_DATA = [...];`).
 
 Run from the repo root:  python3 scripts/fix_italian_conjugations.py
@@ -30,10 +31,10 @@ import json
 import os
 import re
 import sys
+from data_module import register_footer
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ALL_TENSES = os.path.join(ROOT, 'data', 'conjugations-all-tenses.js')
-PRESENTE = os.path.join(ROOT, 'data', 'conjugations-presente.js')
 
 PERSONS = ['io', 'tu', 'lui_lei', 'noi', 'voi', 'loro']
 
@@ -237,7 +238,7 @@ def read_dataset(path):
     with open(path, encoding='utf-8') as fh:
         src = fh.read()
     start = src.index('[')
-    end = src.rindex(']')
+    end = src.rindex(']', 0, src.index('\n// 统一注册') if '\n// 统一注册' in src else len(src))
     header, _, _ = src[:start].rpartition('=')
     return header.rstrip(), json.loads(src[start:end + 1])
 
@@ -246,6 +247,7 @@ def write_dataset(path, header, data):
     body = json.dumps(data, ensure_ascii=False)
     with open(path, 'w', encoding='utf-8') as fh:
         fh.write('%s = %s;\n' % (header, body))
+        fh.write(register_footer('conjugations', 'it', 'CONJUGATION_ALL_TENSES_DATA'))
 
 
 def clean(value):
@@ -392,7 +394,6 @@ def build_imperative(verb):
 # ---------------------------------------------------------------------------
 def main():
     header_all, data_all = read_dataset(ALL_TENSES)
-    header_pres, data_pres = read_dataset(PRESENTE)
 
     # 0a. drop the lemmatiser's non-words. Every one of these is a mangled stem
     # of a real verb that is already in the dataset under its correct spelling
@@ -525,29 +526,13 @@ def main():
                     new_forms.append(cleaned)
                 block['forms'] = new_forms
 
-    # 7. the presente fallback dataset shares the gloss + restringere defects
-    for verb in data_pres:
-        if verb['infinitive'] == 'restringere':
-            verb['presente'] = {
-                p: '/'.join(
-                    alt[2:] if alt.startswith('rer') else alt
-                    for alt in str(v).split('/')
-                )
-                for p, v in (verb.get('presente') or {}).items()
-            }
-        if not (verb.get('english') or '').strip():
-            verb['english'] = ENGLISH_GLOSSES.get(verb['infinitive'], '')
-        verb['presente'] = {p: clean(v) for p, v in (verb.get('presente') or {}).items()}
-
     write_dataset(ALL_TENSES, header_all, data_all)
-    write_dataset(PRESENTE, header_pres, data_pres)
 
     report['junk_lemmas_dropped'] = len(dropped_junk)
     for key in sorted(report):
         print('%-22s %s' % (key, report[key]))
     print('%-22s %s' % ('dropped', ' '.join(sorted(dropped_junk))))
     print('%-22s %s' % ('verbs_all_tenses', len(data_all)))
-    print('%-22s %s' % ('verbs_presente', len(data_pres)))
 
     # sanity: nothing may still say "None"
     leaked = 0

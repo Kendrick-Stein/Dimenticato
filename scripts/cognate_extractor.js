@@ -197,6 +197,10 @@ const jsContent = `// Cognate Vocabulary Data
 // Structure: {italian, english, chinese, patternType, similarityScore, difficulty, rank}
 
 const COGNATE_DATA = ${JSON.stringify(cognates, null, 2)};
+
+// 统一注册：消费方经 LangLoader.data(lang, module) 取数（lib/lang-loader.js）
+(globalThis.DIM_DATA = globalThis.DIM_DATA || {});
+(globalThis.DIM_DATA.cognates = globalThis.DIM_DATA.cognates || {}).it = COGNATE_DATA;
 `;
 
 const outputPath = process.argv[2] ? path.resolve(process.argv[2]) : path.join(rootDir, 'data', 'cognates.js');

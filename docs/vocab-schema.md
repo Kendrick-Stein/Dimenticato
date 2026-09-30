@@ -86,4 +86,4 @@ headword shape and unique `glossKey(zh)`).
 1. Add the code to `LANGS` in `scripts/vocab_schema.py`.
 2. Produce entries with the fields above, then call `finalize()` and `write_vocab()`.
 3. Add a row to `LANGS` in `scripts/validate_vocab.js` with the POS coverage floor and a few gold entries (and a `check` hook for language-specific rules).
-4. Add a profile in `lib/languages.js` (including `files`, `accents`, `grammarGlobal`); routing, loading, storage keys and labels are derived from it. The header language switch is rendered from it too.
+4. Add a profile in `lib/languages.js` (including `files` and `accents`; every non-vocab `files` key is an optional module whose data files register `DIM_DATA.<module>.<code>`); routing, loading, storage keys and labels are derived from it. The header language switch is rendered from it too.

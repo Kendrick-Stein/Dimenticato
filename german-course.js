@@ -62,10 +62,16 @@
     [/发音/, '其他/发音']
   ];
 
+  // 课程 / 语法书数据按模块懒加载，注册在 DIM_DATA.<module>.de，调用时取
+  function moduleData(module) {
+    return window.LangLoader ? window.LangLoader.data('german', module) : null;
+  }
+
   function grammarSlugFor(tag) {
     const key = String(tag || '').trim();
     if (!key) return '';
-    const shared = typeof GERMAN_COURSE_DATA !== 'undefined' && GERMAN_COURSE_DATA.grammarSlugs;
+    const course = moduleData('course');
+    const shared = course && course.grammarSlugs;
     if (shared && shared[key]) return shared[key];
     if (GRAMMAR_SLUG_OVERRIDES[key]) return GRAMMAR_SLUG_OVERRIDES[key];
     const rule = GRAMMAR_SLUG_RULES.find((entry) => entry[0].test(key));
@@ -123,11 +129,12 @@
       this.watchScreen();
     },
 
-    // 课程数据随德语词库一起懒加载（lib/languages.js 德语 files.vocab）：
-    // 启动在别的语言时这里还没到，所以就绪检查放在每次渲染前，而不是 init。
+    // 课程数据是德语的二级懒加载模块（lib/languages.js 德语 files.course），
+    // open() 负责补拉；就绪检查放在每次渲染前，而不是 init。
     // 没就绪就把原因说清楚，不渲染一堆「0 个核心词」的空壳。
     ensureReady() {
-      if (typeof GERMAN_COURSE_DATA === 'undefined') {
+      const course = moduleData('course');
+      if (!course) {
         this.showUnavailable('data/german-course-data.js 未能载入，课程路线暂不可用。');
         return false;
       }
@@ -138,7 +145,7 @@
       if (!this.levelRestored) {
         this.levelRestored = true;
         const savedLevel = localStorage.getItem(LEVEL_KEY);
-        if (GERMAN_COURSE_DATA.levels.some((level) => level.id === savedLevel)) {
+        if (course.levels.some((level) => level.id === savedLevel)) {
           this.activeLevelId = savedLevel;
         }
       }
@@ -205,7 +212,7 @@
     availableGrammarSlugs() {
       if (this.grammarSlugs) return this.grammarSlugs;
       const slugs = new Set();
-      const data = typeof GERMAN_GRAMMAR_DATA !== 'undefined' ? GERMAN_GRAMMAR_DATA : null;
+      const data = moduleData('grammar');
       const parts = data && data.tree && Array.isArray(data.tree.parts) ? data.tree.parts : [];
       parts.forEach((part) => {
         (part.chapters || []).forEach((chapter) => {
@@ -231,13 +238,17 @@
     open() {
       this.init();
       this.wordIndex = null;
-      if (this.ensureReady()) this.render();
+      const loader = window.LangLoader;
+      const missing = (module) => !moduleData(module) && loader
+        && typeof loader.ensureModule === 'function' && !loader.isModuleLoaded('german', module);
+      // 课程数据没到时先不渲染（否则会闪一下「未能载入」）
+      if (!missing('course') && this.ensureReady()) this.render();
       if (typeof window.showScreen === 'function') window.showScreen('germanCourseScreen');
-      // 语法书数据是二级懒加载模块：没到之前语法标签全是纯文本，到了再重渲染成可点 chip
-      if (typeof GERMAN_GRAMMAR_DATA === 'undefined' && window.LangLoader
-        && typeof window.LangLoader.ensureModule === 'function'
-        && !window.LangLoader.isModuleLoaded('german', 'grammar')) {
-        window.LangLoader.ensureModule('german', 'grammar').then(() => {
+      // 课程数据和语法书都是二级懒加载模块；语法书没到之前语法标签全是纯文本，
+      // 到了再重渲染成可点 chip
+      const pending = ['course', 'grammar'].filter(missing).map((module) => loader.ensureModule('german', module));
+      if (pending.length) {
+        Promise.all(pending).then(() => {
           this.grammarSlugs = null;
           if (this.ensureReady()) this.render();
         });
@@ -245,15 +256,15 @@
     },
 
     selectLevel(levelId) {
-      if (!GERMAN_COURSE_DATA.levels.some((level) => level.id === levelId)) return;
+      if (!moduleData('course').levels.some((level) => level.id === levelId)) return;
       this.activeLevelId = levelId;
       localStorage.setItem(LEVEL_KEY, levelId);
       this.render();
     },
 
     getActiveLevel() {
-      return GERMAN_COURSE_DATA.levels.find((level) => level.id === this.activeLevelId)
-        || GERMAN_COURSE_DATA.levels[0];
+      const levels = moduleData('course').levels;
+      return levels.find((level) => level.id === this.activeLevelId) || levels[0];
     },
 
     getSystemWords() {
@@ -377,7 +388,7 @@
       if (!level) return;
       const chips = document.getElementById('germanCourseLevelChips');
       if (chips) {
-        chips.innerHTML = GERMAN_COURSE_DATA.levels.map((item) => `
+        chips.innerHTML = moduleData('course').levels.map((item) => `
           <button class="chip${item.id === level.id ? ' active' : ''}" type="button" data-german-course-level="${item.id}">${item.id}</button>
         `).join('');
       }

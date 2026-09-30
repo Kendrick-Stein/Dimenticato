@@ -20,20 +20,9 @@
   const SPEECH_LANG = { italian: 'it-IT', german: 'de-DE', english: 'en-US', french: 'fr-FR' };
   const LANG_CN = { italian: '意大利语', german: '德语', english: '英语', french: '法语' };
 
-  // 变位数据都是顶层 const，parse 期碰不到，一律调用时解析
-  function lateGlobal(name) {
-    if (global[name] !== undefined) return global[name];
-    try {
-      switch (name) {
-        case 'CONJUGATION_ALL_TENSES_DATA': return CONJUGATION_ALL_TENSES_DATA;
-        case 'GERMAN_CONJUGATION_DATA': return GERMAN_CONJUGATION_DATA;
-        case 'FRENCH_CONJUGATION_DATA': return FRENCH_CONJUGATION_DATA;
-        case 'ENGLISH_CONJUGATION_DATA': return ENGLISH_CONJUGATION_DATA;
-        default: return null;
-      }
-    } catch (err) {
-      return null;
-    }
+  // 变位数据按模块懒加载，注册在 DIM_DATA.conjugations.<code>，一律调用时取
+  function conjData(lang) {
+    return global.LangLoader ? global.LangLoader.data(lang, 'conjugations') : null;
   }
 
   function $id(id) { return document.getElementById(id); }
@@ -93,12 +82,7 @@
   };
 
   function conjEntries(lang) {
-    const data = {
-      italian: lateGlobal('CONJUGATION_ALL_TENSES_DATA'),
-      german: lateGlobal('GERMAN_CONJUGATION_DATA'),
-      french: lateGlobal('FRENCH_CONJUGATION_DATA'),
-      english: lateGlobal('ENGLISH_CONJUGATION_DATA')
-    }[lang];
+    const data = conjData(lang);
     if (!data || !data.length) return [];
     const persons = PERSON_CN[lang] || {};
     const out = [];

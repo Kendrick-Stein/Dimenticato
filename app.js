@@ -40,18 +40,11 @@
   // 外语单词标上 lang：读屏按对应语言发音，浏览器按对应语言断字
   function langAttr(l) { return ' lang="' + global.Languages.code(l || lang()) + '"'; }
   function profile(l) { return global.Languages.get(l || lang()); }
-  function hasModule(name, l) { var p = profile(l); return !!(p && p.modules && p.modules[name]); }
+  function hasModule(name, l) { return global.Languages.hasModule(l || lang(), name); }
   function readJson(key, fallback) {
     try { return global.DimStorage.safeParse(localStorage.getItem(key), fallback); } catch (e) { return fallback; }
   }
-  // 语法数据文件把数据写成顶层 const（不在 window 上），只能按裸名字取：
-  // 名字来自 profile.grammarGlobal，用间接 eval 在全局词法环境里查（名字是本地常量，不含用户输入）
-  function grammarData(l) {
-    var p = profile(l);
-    var name = p && p.grammarGlobal;
-    if (!name || !/^[A-Z_]+$/.test(name)) return null;
-    try { return (0, eval)('typeof ' + name + " !== 'undefined' ? " + name + ' : null'); } catch (e) { return null; }
-  }
+  function grammarData(l) { return global.LangLoader ? global.LangLoader.data(l || lang(), 'grammar') : null; }
   function grammarBook() {
     return global.GrammarBook || (typeof GrammarBook !== 'undefined' ? GrammarBook : null);
   }
@@ -550,14 +543,14 @@
     if (where === 'home') {
       card('go-vocab', 'style', '词汇练习', '选择题、拼写、浏览、打字游戏，外加个人单词本。');
       if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', '按章节查阅的' + profile(l).cn + '语法全书。');
-      if (hasModule('conjugation', l)) card('conjugation', 'sync_alt', '动词变位', '查任意动词的完整变位，或按时态分课练习。');
+      if (hasModule('conjugations', l)) card('conjugation', 'sync_alt', '动词变位', '查任意动词的完整变位，或按时态分课练习。');
       if (hasModule('collocations', l)) card('collocations', 'link', '动词搭配', '动词与介词、宾语的固定搭配和例句。');
       if (hasModule('cognates', l)) card('cognates', 'join_inner', '同源词', '和英语长得像的词，借已有词汇量抄近路。');
       if (hasModule('course', l)) card('course', 'route', '课程路线 A1–C1', '54 个教材主题，语法重点与核心词汇一一对应。');
       card('go-progress', 'insights', '学习进度', '每周走势、各等级掌握度与复习计划。');
     } else if (where === 'grammar') {
       if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', '按章节查阅，左侧目录，右侧正文。');
-      if (hasModule('conjugation', l)) card('conjugation', 'sync_alt', '动词变位', '变位查询；按课次选时态练习选择题与填空。');
+      if (hasModule('conjugations', l)) card('conjugation', 'sync_alt', '动词变位', '变位查询；按课次选时态练习选择题与填空。');
       if (hasModule('collocations', l)) {
         card('collocations', 'travel_explore', '动词搭配 · 浏览', '按动词查搭配与例句。');
         card('collocation-practice', 'extension', '动词搭配 · 练习', '看例句选出正确的介词或搭配。');

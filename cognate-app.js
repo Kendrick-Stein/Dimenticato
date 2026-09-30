@@ -9,15 +9,13 @@
  *
  * 三条本文件必须守住的约定：
  *
- * A. 数据集一律在【调用时】用裸标识符 + typeof 守卫解析。
- *    data/cognates.js 是 `var COGNATE_DATA`，德/法两份是顶层 `const`（顶层 const
- *    不挂 window，只进全局词法环境）。而 lib/lang-loader.js 是按语言懒加载的：
- *    首屏进德语时意大利语数据根本还没注入。原来这里写的是模块顶层的
- *    `var COGNATE_DATA = window.COGNATE_DATA || []`，那一行在懒加载下必然快照到
- *    空数组，之后数据补到了也永远读不回来 —— 所以解析必须推迟到每次调用。
+ * A. 数据集一律在【调用时】经 LangLoader.data(lang, 'cognates') 取
+ *    （data 文件注册在 DIM_DATA.cognates.<code>）。lib/lang-loader.js 按模块懒加载：
+ *    首屏进德语时意大利语数据根本还没注入，模块顶层快照必然拿到空数组，
+ *    之后数据补到了也读不回来 —— 所以解析必须推迟到每次调用。
  *
- * B. 语言差异全部收敛到 LANG_CONFIG 一张表里（headwordField / dataGlobalName /
- *    label），渲染代码不出现任何一门具体语言的字段名。
+ * B. 语言差异全部收敛到 LANG_CONFIG 一张表里（headwordField / label），
+ *    渲染代码不出现任何一门具体语言的字段名。
  *
  * C. 进度按语言分 key 存。三门语言的「已掌握规律」是三套东西，共用一个 key 会互相
  *    覆盖；旧版只有意大利语在写，所以启动时把老 key 迁移到意大利语那一份。
@@ -31,12 +29,10 @@
   // headwordField  该数据集里「目标语言词形」的字段名。注意法语数据里另有一个
   //                `italian` 字段（意语桥接词），所以字段名必须显式指定，
   //                绝不能靠猜或靠遍历。
-  // dataGlobalName 数据集的全局名字，调用时才解析（见文件头 A 条）。
   // label          界面上给这门语言的标签。
   var LANG_CONFIG = {
     italian: {
       headwordField: 'italian',
-      dataGlobalName: 'COGNATE_DATA',
       label: 'Italian',
       langCn: '意大利语',
       countKey: 'italian-cognates',
@@ -44,7 +40,6 @@
     },
     german: {
       headwordField: 'german',
-      dataGlobalName: 'GERMAN_COGNATE_DATA',
       label: 'Deutsch',
       langCn: '德语',
       countKey: 'german-cognates',
@@ -52,7 +47,6 @@
     },
     french: {
       headwordField: 'french',
-      dataGlobalName: 'FRENCH_COGNATE_DATA',
       label: 'Français',
       langCn: '法语',
       countKey: 'french-cognates',
@@ -74,29 +68,9 @@
     return LANG_CONFIG[lang] || LANG_CONFIG[DEFAULT_LANG];
   }
 
-  /**
-   * 调用时解析数据集：裸标识符 + typeof 守卫。
-   * 绝不能在 parse 期做这件事，也不能写 window.X —— 顶层 const 不在 window 上。
-   */
-  function resolveDataset(name) {
-    try {
-      switch (name) {
-        case 'COGNATE_DATA':
-          return typeof COGNATE_DATA !== 'undefined' ? COGNATE_DATA : null;
-        case 'GERMAN_COGNATE_DATA':
-          return typeof GERMAN_COGNATE_DATA !== 'undefined' ? GERMAN_COGNATE_DATA : null;
-        case 'FRENCH_COGNATE_DATA':
-          return typeof FRENCH_COGNATE_DATA !== 'undefined' ? FRENCH_COGNATE_DATA : null;
-        default:
-          return null;
-      }
-    } catch (err) {
-      return null;
-    }
-  }
-
   function datasetFor(lang) {
-    var data = resolveDataset(configFor(lang).dataGlobalName);
+    var cfgLang = LANG_CONFIG[lang] ? lang : DEFAULT_LANG;
+    var data = window.LangLoader ? window.LangLoader.data(cfgLang, 'cognates') : null;
     return Array.isArray(data) ? data : [];
   }
 

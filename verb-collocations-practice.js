@@ -37,7 +37,7 @@ const VerbCollocationPractice = (() => {
   function datasetFor(lang) {
     const api = collocations();
     if (api && typeof api.resolveDataset === 'function') return api.resolveDataset(lang);
-    return typeof VERB_COLLOCATIONS_DATA !== 'undefined' ? VERB_COLLOCATIONS_DATA : null;
+    return window.LangLoader ? window.LangLoader.data(lang, 'collocations') : null;
   }
 
   function activeDataset() {

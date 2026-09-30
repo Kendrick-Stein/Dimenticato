@@ -8,7 +8,7 @@
   // 屏幕/逻辑可服务意/德/英/法四语。意大利语为默认配置，行为与重构前完全一致。
   //
   // config 形态：
-  //   { lang, getData(), personOrder, personLabel,
+  //   { lang, personOrder, personLabel,
   //     moods: [{ key, label, match(meta) }], timeOf(meta),
   //     storageKey, backTarget }
   //   - moods 是矩阵的行（语气/式），按顺序渲染为最多三行；
@@ -33,12 +33,6 @@
   // ---- 意大利语（默认，行为与重构前一致） ----
   const ITALIAN_CONFIG = {
     lang: 'italian',
-    getData() {
-      if (typeof CONJUGATION_ALL_TENSES_DATA !== 'undefined' && Array.isArray(CONJUGATION_ALL_TENSES_DATA)) {
-        return CONJUGATION_ALL_TENSES_DATA;
-      }
-      return buildFallbackFromPresente();
-    },
     personOrder: ['io', 'tu', 'lui_lei', 'noi', 'voi', 'loro'],
     personLabel: {
       io: 'io',
@@ -102,11 +96,6 @@
   // ---- 德语 ----
   const GERMAN_CONFIG = {
     lang: 'german',
-    getData() {
-      return (typeof GERMAN_CONJUGATION_DATA !== 'undefined' && Array.isArray(GERMAN_CONJUGATION_DATA))
-        ? GERMAN_CONJUGATION_DATA
-        : [];
-    },
     personOrder: ['ich', 'du', 'er_sie_es', 'wir', 'ihr', 'sie'],
     personLabel: {
       ich: 'ich',
@@ -156,11 +145,6 @@
   // ---- 英语 ----
   const ENGLISH_CONFIG = {
     lang: 'english',
-    getData() {
-      return (typeof ENGLISH_CONJUGATION_DATA !== 'undefined' && Array.isArray(ENGLISH_CONJUGATION_DATA))
-        ? ENGLISH_CONJUGATION_DATA
-        : [];
-    },
     personOrder: ['i', 'you', 'he_she_it', 'we', 'you_pl', 'they'],
     personLabel: {
       i: 'I',
@@ -206,11 +190,6 @@
   // ---- 法语 ----
   const FRENCH_CONFIG = {
     lang: 'french',
-    getData() {
-      return (typeof FRENCH_CONJUGATION_DATA !== 'undefined' && Array.isArray(FRENCH_CONJUGATION_DATA))
-        ? FRENCH_CONJUGATION_DATA
-        : [];
-    },
     personOrder: ['je', 'tu', 'il_elle_on', 'nous', 'vous', 'ils_elles'],
     personLabel: {
       je: 'je',
@@ -675,25 +654,14 @@
     };
   }
 
-  function buildFallbackFromPresente() {
-    if (typeof CONJUGATION_PRESENTE_DATA === 'undefined') return [];
-    return CONJUGATION_PRESENTE_DATA.map(v => ({
-      rank: v.rank,
-      infinitive: v.infinitive,
-      english: v.english || '',
-      tenses: {
-        indicativo_presente: {
-          type: 'person',
-          group_label: 'Indicativo',
-          tense_label: 'Presente',
-          forms: v.presente || {}
-        }
-      }
-    }));
+  // 变位数据由 data/*.js 注册到 DIM_DATA.conjugations.<code>，统一经 LangLoader.data 取
+  function dataFor(lang) {
+    const data = window.LangLoader && window.LangLoader.data(lang, 'conjugations');
+    return Array.isArray(data) ? data : [];
   }
 
   function prepareData() {
-    const data = config.getData();
+    const data = dataFor(config.lang);
     const raw = Array.isArray(data) ? data : [];
 
     state.verbs = [...raw].sort((a, b) => (a.rank || 999999) - (b.rank || 999999));
@@ -1440,7 +1408,7 @@ ${moodRows}
 
     // 变位数据按模块懒加载（意 8.9MB / 德 10.4MB / 法 9.3MB，只有进本模块
     // 才用得上）。缺席时补拉后重试；拉不到再走 prepareData 里的「数据未加载」。
-    const dataNow = (typeof next.getData === 'function') ? next.getData() : null;
+    const dataNow = dataFor(next.lang);
     if ((!dataNow || !dataNow.length) && window.LangLoader
       && typeof window.LangLoader.ensureModule === 'function'
       && !window.LangLoader.isModuleLoaded(lang, 'conjugations')) {

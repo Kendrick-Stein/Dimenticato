@@ -38050,3 +38050,7 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
     ]
   }
 };
+
+// 统一注册：消费方经 LangLoader.data(lang, module) 取数（lib/lang-loader.js）
+(globalThis.DIM_DATA = globalThis.DIM_DATA || {});
+(globalThis.DIM_DATA.collocations = globalThis.DIM_DATA.collocations || {}).en = ENGLISH_VERB_COLLOCATIONS_DATA;
