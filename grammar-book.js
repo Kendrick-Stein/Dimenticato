@@ -143,7 +143,7 @@ const GrammarBook = (() => {
     buildNavTree(data.tree); // always rebuild tree when switching languages
     renderWelcome();         // always reset the reading pane — otherwise the
                              // previous language's chapter stays on screen
-    announceScreenLanguage(activeLang);
+    announceScreenLanguage();
 
     if (!sidebarListenerAdded) {
       document.getElementById('grammarSidebarToggle')
@@ -190,24 +190,9 @@ const GrammarBook = (() => {
     body.scrollTop = 0;
   }
 
-  /**
-   * 共享屏的语言上下文交给导航层（ScreenMeta）处理——这里只做通知，不重新实现。
-   * ScreenMeta / AppState 都是 app.js 里的 const，只能用裸名字 + typeof 解析。
-   */
-  function announceScreenLanguage(lang) {
-    try {
-      const meta = (typeof ScreenMeta !== 'undefined' && ScreenMeta) || window.ScreenMeta;
-      if (meta && typeof meta.setSharedScreenLanguage === 'function') {
-        meta.setSharedScreenLanguage('grammarBookScreen', lang);
-      }
-      const onGrammarBook = typeof AppState !== 'undefined' && AppState
-        && AppState.currentScreen === 'grammarBookScreen';
-      if (onGrammarBook && typeof window.updateHeaderNavigation === 'function') {
-        window.updateHeaderNavigation('grammarBookScreen');
-      }
-    } catch (error) {
-      // 导航层尚未就绪时静默降级：阅读器自身的标题/面包屑已经带上语言了
-    }
+  /** 共享屏的语言上下文由 Shell 统一渲染（面包屑 / 顶栏），这里只通知重绘。 */
+  function announceScreenLanguage() {
+    if (window.Shell) window.Shell.renderChrome();
   }
 
   function buildNavTree(tree) {
@@ -461,3 +446,5 @@ const GrammarBook = (() => {
     getCurrentSlug: () => currentSlug
   };
 })();
+
+window.GrammarBook = GrammarBook;

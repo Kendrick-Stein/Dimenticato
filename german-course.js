@@ -1,6 +1,7 @@
 /**
- * GermanCourse — A1-C1 guided course route backed by the existing German
- * vocabulary and practice engines.
+ * GermanCourse — A1-C1 guided course route backed by the unified German
+ * vocabulary (Vocab.entries('german')) and the App's practice engines.
+ * 入口卡片由 App 渲染，直接调用 GermanCourse.open()。
  */
 (function () {
   'use strict';
@@ -71,26 +72,15 @@
     return rule ? rule[1] : '';
   }
 
+  // 课程屏的 DOM 由本模块自己建，挂到统一的 <main id="main"> 末尾。
   function installGermanCourseScreens() {
-    const homeGrid = document.querySelector('#germanWelcomeScreen .card-grid');
-    const vocabularyCard = document.getElementById('goGermanVocabularyBtn');
-    if (homeGrid && vocabularyCard && !document.getElementById('goGermanCourseBtn')) {
-      vocabularyCard.insertAdjacentHTML('afterend', `
-        <button class="card" id="goGermanCourseBtn">
-          <span class="card-chip"><span class="msr">route</span></span>
-          <span class="card-title">Kursplan A1-C1</span>
-          <span class="card-desc">54 个教材主题、语法重点与核心词汇练习</span>
-        </button>
-      `);
-    }
-
     if (document.getElementById('germanCourseScreen')) return;
-    const anchor = document.getElementById('germanVocabularyScreen');
-    if (!anchor) return;
-    anchor.insertAdjacentHTML('beforebegin', `
+    const main = document.getElementById('main');
+    if (!main) return;
+    main.insertAdjacentHTML('beforeend', `
       <section id="germanCourseScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="germanCourseBackBtn"><span class="msr">arrow_back</span>返回 German Home</button>
+          <button class="back-link" id="germanCourseBackBtn"><span class="msr">arrow_back</span>返回首页</button>
           <div class="eyebrow">German / Kursplan</div>
           <h1 class="page">A1-C1 德语课程路线</h1>
           <p class="desc">按教材主题选择课程，查看对应语法重点，并用现有词库练习核心词汇。</p>
@@ -122,24 +112,37 @@
     wordIndex: null,
     grammarSlugs: null,
 
+    bound: false,
+    levelRestored: false,
+
     init() {
-      if (typeof GERMAN_COURSE_DATA === 'undefined') {
-        this.showUnavailable('data/german-course-data.js 未能载入，课程路线暂不可用。');
-        return;
-      }
-      // 词库没就绪时，课程屏只会渲染出一堆“0 个核心词”的空壳。与其静默降级，
-      // 不如把原因说清楚，并且不再绑定会失败的交互。
-      if (!window.GermanApp || !window.GermanApp.ready) {
-        this.showUnavailable('德语词库尚未加载，课程核心词练习暂不可用。请刷新页面重试。');
-        return;
-      }
-      const savedLevel = localStorage.getItem(LEVEL_KEY);
-      if (GERMAN_COURSE_DATA.levels.some((level) => level.id === savedLevel)) {
-        this.activeLevelId = savedLevel;
-      }
+      installGermanCourseScreens();
+      if (this.bound || !document.getElementById('germanCourseScreen')) return;
+      this.bound = true;
       this.bindEvents();
       this.watchScreen();
-      this.render();
+    },
+
+    // 课程数据随德语词库一起懒加载（lib/lang-loader.js DATA.german）：
+    // 启动在别的语言时这里还没到，所以就绪检查放在每次渲染前，而不是 init。
+    // 没就绪就把原因说清楚，不渲染一堆「0 个核心词」的空壳。
+    ensureReady() {
+      if (typeof GERMAN_COURSE_DATA === 'undefined') {
+        this.showUnavailable('data/german-course-data.js 未能载入，课程路线暂不可用。');
+        return false;
+      }
+      if (!window.Vocab || !window.Vocab.ready('german')) {
+        this.showUnavailable('德语词库尚未加载，课程核心词练习暂不可用。请刷新页面重试。');
+        return false;
+      }
+      if (!this.levelRestored) {
+        this.levelRestored = true;
+        const savedLevel = localStorage.getItem(LEVEL_KEY);
+        if (GERMAN_COURSE_DATA.levels.some((level) => level.id === savedLevel)) {
+          this.activeLevelId = savedLevel;
+        }
+      }
+      return true;
     },
 
     showUnavailable(message) {
@@ -150,17 +153,11 @@
           <div class="about-body">${escapeHtml(message)}</div>
         `;
       }
-      const entry = document.getElementById('goGermanCourseBtn');
-      if (entry) {
-        entry.disabled = true;
-        entry.title = message;
-      }
     },
 
     bindEvents() {
-      document.getElementById('goGermanCourseBtn')?.addEventListener('click', () => this.open());
       document.getElementById('germanCourseBackBtn')?.addEventListener('click', () => {
-        window.GermanApp.goBack('germanWelcomeScreen');
+        if (typeof window.goBack === 'function') window.goBack({ fallbackTarget: 'homeScreen' });
       });
       document.getElementById('germanCourseLevelChips')?.addEventListener('click', (event) => {
         const button = event.target.closest('[data-german-course-level]');
@@ -199,7 +196,7 @@
       const screen = document.getElementById('germanCourseScreen');
       if (!screen || typeof MutationObserver === 'undefined') return;
       const observer = new MutationObserver(() => {
-        if (screen.classList.contains('active')) this.render();
+        if (screen.classList.contains('active') && this.ensureReady()) this.render();
       });
       observer.observe(screen, { attributes: true, attributeFilter: ['class'] });
     },
@@ -217,7 +214,7 @@
           });
         });
       });
-      this.grammarSlugs = slugs;
+      if (data) this.grammarSlugs = slugs; // 语法书还没懒加载到时不缓存空集
       return slugs;
     },
 
@@ -227,14 +224,24 @@
     },
 
     openGrammarTopic(slug) {
-      if (!slug || typeof window.GermanApp?.openGermanGrammarBook !== 'function') return;
-      window.GermanApp.openGermanGrammarBook(slug);
+      if (!slug || !window.App || typeof window.App.openGrammarBook !== 'function') return;
+      window.App.openGrammarBook('german', slug);
     },
 
     open() {
+      this.init();
       this.wordIndex = null;
-      this.render();
-      window.GermanApp.showScreen('germanCourseScreen');
+      if (this.ensureReady()) this.render();
+      if (typeof window.showScreen === 'function') window.showScreen('germanCourseScreen');
+      // 语法书数据是二级懒加载模块：没到之前语法标签全是纯文本，到了再重渲染成可点 chip
+      if (typeof GERMAN_GRAMMAR_DATA === 'undefined' && window.LangLoader
+        && typeof window.LangLoader.ensureModule === 'function'
+        && !window.LangLoader.isModuleLoaded('german', 'grammar')) {
+        window.LangLoader.ensureModule('german', 'grammar').then(() => {
+          this.grammarSlugs = null;
+          if (this.ensureReady()) this.render();
+        });
+      }
     },
 
     selectLevel(levelId) {
@@ -250,10 +257,7 @@
     },
 
     getSystemWords() {
-      if (Array.isArray(window.GermanApp.systemWords) && window.GermanApp.systemWords.length) {
-        return window.GermanApp.systemWords;
-      }
-      return typeof GERMAN_VOCABULARY_DATA !== 'undefined' ? GERMAN_VOCABULARY_DATA : [];
+      return window.Vocab ? window.Vocab.entries('german') : [];
     },
 
     normalize(value) {
@@ -265,17 +269,18 @@
     },
 
     // 课程单元的 headword 里有大量屈折形（复数 Frauen、比较级 kleiner、
-    // 第二分词 gegessen）。词库自己带 plural / principalParts，用它们建一张
+    // 第二分词 gegessen）。词条 forms 自带 plural / principalParts，用它们建一张
     // 屈折形 → 词条的索引，这些词才点得开卡片。
     //
-    // 分两轮：先索引原形（german / display），再索引屈折形，且屈折形只在
+    // 分两轮：先索引原形（word / display），再索引屈折形，且屈折形只在
     // 键位空着时才写入 —— 否则「schalen」这种「A 的屈折形恰好是 B 的原形」
     // 的碰撞会把原形词条顶掉。
     inflectedForms(word) {
       const forms = [];
-      if (word.plural) forms.push(word.plural);
-      if (word.principalParts) {
-        String(word.principalParts).split(',').forEach((part) => {
+      const f = word.forms || {};
+      if (f.plural) forms.push(f.plural);
+      if (f.principalParts) {
+        String(f.principalParts).split(',').forEach((part) => {
           part.trim().split(/\s+/).forEach((token) => {
             // 主要变化形写作「isst, aß, hat gegessen」，助动词不是词形
             if (token && !/^(hat|ist|haben|sein|hast|bin)$/.test(token)) forms.push(token);
@@ -290,7 +295,7 @@
       const index = new Map();
       const words = this.getSystemWords();
       words.forEach((word) => {
-        [word.german, word.display].filter(Boolean).forEach((value) => {
+        [word.word, word.display].filter(Boolean).forEach((value) => {
           const key = this.normalize(value);
           if (key && !index.has(key)) index.set(key, word);
         });
@@ -309,8 +314,8 @@
       const index = this.buildWordIndex();
       const seen = new Set();
       return headwords.map((headword) => index.get(this.normalize(headword))).filter((word) => {
-        if (!word || seen.has(word.german)) return false;
-        seen.add(word.german);
+        if (!word || seen.has(word.word)) return false;
+        seen.add(word.word);
         return true;
       });
     },
@@ -322,27 +327,24 @@
     getLevelWords(level) {
       const seen = new Set();
       return level.units.flatMap((unit) => this.getUnitWords(unit)).filter((word) => {
-        if (seen.has(word.german)) return false;
-        seen.add(word.german);
+        if (seen.has(word.word)) return false;
+        seen.add(word.word);
         return true;
       });
     },
 
-    // 课程进度必须读系统词库的掌握集合：GermanApp.mastered 在选了个人词本
-    // 之后会被整个换掉，直接用它会把词本的进度当成课程进度。
+    // 课程进度读系统词库的掌握集合（entry.word 数组），与个人词本无关。
     getSystemMastered() {
+      const key = window.DimStorage ? window.DimStorage.masteredKey('german') : 'dimenticato_german_mastered';
       try {
-        return new Set(JSON.parse(localStorage.getItem('dimenticato_german_mastered') || '[]'));
+        return new Set(JSON.parse(localStorage.getItem(key) || '[]'));
       } catch (error) {
         return new Set();
       }
     },
 
     masteredKey(word) {
-      if (typeof window.GermanApp?.masteredKey === 'function') {
-        return window.GermanApp.masteredKey(word);
-      }
-      return word ? word.german : '';
+      return word ? word.word : '';
     },
 
     countMastered(words, mastered) {
@@ -425,20 +427,15 @@
       const level = this.getActiveLevel();
       const unit = level?.units.find((item) => item.id === unitId);
       if (!unit) return;
-      const words = this.getUnitWords(unit);
-      window.GermanApp.selectCourseVocabulary({
-        label: `${level.id} · Lektion ${unit.number} · ${unit.title}`,
-        words
-      });
+      if (!window.App || typeof window.App.practiceEntries !== 'function') return;
+      window.App.practiceEntries(`${level.id} · Lektion ${unit.number} · ${unit.title}`, this.getUnitWords(unit));
     },
 
     openLevelPractice() {
       const level = this.getActiveLevel();
       if (!level) return;
-      window.GermanApp.selectCourseVocabulary({
-        label: `${level.id} · ${level.title}`,
-        words: this.getLevelWords(level)
-      });
+      if (!window.App || typeof window.App.practiceEntries !== 'function') return;
+      window.App.practiceEntries(`${level.id} · ${level.title}`, this.getLevelWords(level));
     }
   };
 

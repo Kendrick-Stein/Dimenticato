@@ -27,26 +27,22 @@ const VerbCollocations = (() => {
     italian: {
       label: '意大利语',
       title: '意大利语动词搭配',
-      fallbackPreps: ['a', 'di', 'da', 'con', 'per', 'in'],
-      hubSelector: '#grammarScreen .card-grid'
+      fallbackPreps: ['a', 'di', 'da', 'con', 'per', 'in']
     },
     german: {
       label: '德语',
       title: '德语动词搭配',
-      fallbackPreps: ['an', 'auf', 'für', 'mit', 'nach', 'über', 'um', 'von', 'zu'],
-      hubSelector: '#germanGrammarScreen .card-grid'
+      fallbackPreps: ['an', 'auf', 'für', 'mit', 'nach', 'über', 'um', 'von', 'zu']
     },
     english: {
       label: '英语',
       title: '英语动词搭配',
-      fallbackPreps: ['about', 'at', 'for', 'from', 'in', 'of', 'on', 'to', 'with'],
-      hubSelector: '#englishGrammarScreen .card-grid'
+      fallbackPreps: ['about', 'at', 'for', 'from', 'in', 'of', 'on', 'to', 'with']
     },
     french: {
       label: '法语',
       title: '法语动词搭配',
-      fallbackPreps: ['à', 'de', 'en', 'par', 'pour', 'sur', 'dans', 'avec'],
-      hubSelector: '#frenchGrammarScreen .card-grid'
+      fallbackPreps: ['à', 'de', 'en', 'par', 'pour', 'sur', 'dans', 'avec']
     }
   };
 
@@ -228,7 +224,7 @@ const VerbCollocations = (() => {
 
   /**
    * 这块屏幕也可能不经任何入口就被切出来：刷新一个
-   * `#/de/grammar/collocations` 书签时，lib/router.js 直接 showScreen()，
+   * `#/de/grammar/collocations` 书签时，路由（lib/shell.js）直接 showScreen()，
    * 没人告诉阅读器该显示哪种语言，结果是一块从未渲染过的空壳。
    * 这里只在「本次会话还没有入口打开过阅读器」时补一次初始化，语言按外壳解析；
    * 已经打开过就保持现状，不覆盖用户正在浏览的语言（例如空状态里跨语言跳过来的）。
@@ -254,9 +250,8 @@ const VerbCollocations = (() => {
 
   function bindEvents() {
     dom.backBtn?.addEventListener('click', () => {
-      const fallback = state.lang === 'italian' ? 'grammarScreen' : `${state.lang}GrammarScreen`;
-      if (typeof goBack === 'function') goBack({ fallbackTarget: fallback });
-      else showScreen(fallback);
+      if (typeof goBack === 'function') goBack({ fallbackTarget: 'grammarScreen' });
+      else showScreen('grammarScreen');
     });
 
     dom.sidebarToggle?.addEventListener('click', toggleSidebar);
@@ -284,8 +279,7 @@ const VerbCollocations = (() => {
       dom.navTitle.innerHTML = '<span class="msr">link</span>' + escapeHtml(profile.title);
     }
     if (dom.backBtn) {
-      dom.backBtn.innerHTML = '<span class="msr">arrow_back</span>返回 ' +
-        escapeHtml(state.lang === 'italian' ? 'Grammar' : profile.label + '语法');
+      dom.backBtn.innerHTML = '<span class="msr">arrow_back</span>返回语法';
     }
     if (dom.searchInput) {
       dom.searchInput.disabled = false;
@@ -712,123 +706,12 @@ const VerbCollocations = (() => {
 // 供 verb-collocations-practice.js 复用的语言/数据解析层
 window.VerbCollocations = VerbCollocations;
 
-(function wireEntryPoints() {
-  /**
-   * 德语/英语/法语的语法中心没有任何静态动词搭配入口，功能等于不存在。
-   * 这里在运行时补上入口卡片（不改 index.html），数据缺失时卡片文案明确说明
-   * 「暂无数据」，点进去看到的是空状态而不是坏页。
-   *
-   * 幂等且可升级：卡片已存在时只同步文案；数据懒加载到位后（LangLoader 'done'）
-   * 重跑一次，「建设中」卡片就地升级，练习卡片补插。练习卡在数据消失时移除
-   * （正常不会发生，防御性处理）。
-   */
-  const CARD_DESC = {
-    ready: '按介词浏览动词搭配与例句',
-    empty: '该语言暂无动词搭配数据（建设中）',
-  };
-
-  /**
-   * 搭配数据按模块懒加载：进语法中心时通常还没拉。只要 LangLoader 登记了该语言的
-   * 搭配数据文件，入口就按「可用」渲染——点进去时查阅器 / 练习器会自己 ensureModule。
-   * 已尝试加载却仍然没有数据（文件缺失）时才回落到「建设中」。
-   */
-  function collocationsAvailable(lang) {
-    if (VerbCollocations.hasDataset(lang)) return true;
-    const loader = window.LangLoader;
-    const files = loader && loader.MODULES && loader.MODULES.collocations && loader.MODULES.collocations[lang];
-    if (!files || !files.length) return false;
-    return !(typeof loader.isModuleLoaded === 'function' && loader.isModuleLoaded(lang, 'collocations'));
-  }
-
-  function installLanguageHubCards() {
-    ['german', 'english', 'french'].forEach(lang => {
-      const profile = VerbCollocations.profileFor(lang);
-      const grid = document.querySelector(profile.hubSelector);
-      if (!grid) return;
-
-      const ready = collocationsAvailable(lang);
-
-      let browseBtn = grid.querySelector(`[data-vc-lang="${lang}"]:not([data-vc-mode])`);
-      if (browseBtn) {
-        const desc = browseBtn.querySelector('.card-desc');
-        if (desc) desc.textContent = ready ? CARD_DESC.ready : CARD_DESC.empty;
-      } else {
-        browseBtn = document.createElement('button');
-        browseBtn.className = 'card';
-        browseBtn.dataset.vcLang = lang;
-        browseBtn.innerHTML =
-          '<span class="card-chip"><span class="msr">link</span></span>' +
-          '<span class="card-title">动词搭配</span>' +
-          '<span class="card-desc">' + (ready ? CARD_DESC.ready : CARD_DESC.empty) + '</span>';
-        browseBtn.addEventListener('click', () => VerbCollocations.open(lang));
-        grid.appendChild(browseBtn);
-      }
-
-      const practiceBtn = grid.querySelector(`[data-vc-lang="${lang}"][data-vc-mode="practice"]`);
-      if (ready && !practiceBtn) {
-        const btn = document.createElement('button');
-        btn.className = 'card';
-        btn.dataset.vcLang = lang;
-        btn.dataset.vcMode = 'practice';
-        btn.innerHTML =
-          '<span class="card-chip"><span class="msr">extension</span></span>' +
-          '<span class="card-title">动词搭配练习</span>' +
-          '<span class="card-desc">单介词选择、多介词辨义、例句翻译</span>';
-        btn.addEventListener('click', () => {
-          if (window.VerbCollocationPractice) window.VerbCollocationPractice.open(lang);
-        });
-        grid.appendChild(btn);
-      } else if (!ready && practiceBtn) {
-        practiceBtn.remove();
-      }
-    });
-  }
-
-  function openPractice(lang) {
+// 入口卡片由 App 统一渲染并直接调用 VerbCollocations.open(lang) /
+// VerbCollocationPractice.open(lang)；这里只剩查阅器内「开始练习」按钮，
+// 语言 = 查阅器当前正在浏览的语言。
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('vcStartPracticeBtn')?.addEventListener('click', () => {
     const practice = window.VerbCollocationPractice;
-    if (practice && typeof practice.open === 'function') practice.open(lang);
-    else if (typeof window.showScreen === 'function') window.showScreen('verbCollocationPracticeScreen');
-  }
-
-  /**
-   * 在 document 上用【捕获阶段】接管一个按钮：捕获监听器先于目标节点上的冒泡
-   * 监听器执行，stopPropagation() 之后目标节点自己的监听器不会再收到事件。
-   * 同一节点（document）上的其它捕获监听器不受影响（那需要 stopImmediatePropagation）。
-   */
-  function interceptClick(selector, handler) {
-    document.addEventListener('click', (event) => {
-      const hit = event.target && event.target.closest ? event.target.closest(selector) : null;
-      if (!hit) return;
-      event.stopPropagation();
-      handler(hit, event);
-    }, true);
-  }
-
-  // 这两个按钮所在的屏幕语言是固定的/可知的，必须显式把语言传进去，绝不能让
-  // 练习模块去猜外壳语言：
-  //   · #goVerbCollocationPracticeBtn 在 #grammarScreen 里，只可能是意大利语。
-  //     app.js 上原有的监听器调的是无参 open()，会跟着外壳语言走；这里接管掉。
-  //   · #vcStartPracticeBtn 在查阅器里，语言 = 查阅器当前正在浏览的语言
-  //     （lib/router.js 原本是转发去点意大利语入口，跨语言时会串味）。
-  interceptClick('#goVerbCollocationPracticeBtn', () => openPractice('italian'));
-  interceptClick('#vcStartPracticeBtn', () => openPractice(VerbCollocations.getLanguage()));
-
-  // Wire up the card buttons — runs after DOM is ready
-  document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('goVerbCollocationsBtn')
-      ?.addEventListener('click', () => VerbCollocations.open('italian'));
-
-    installLanguageHubCards();
+    if (practice && typeof practice.open === 'function') practice.open(VerbCollocations.getLanguage());
   });
-
-  // 懒加载场景：首屏进意语时德/法词库还没到，上面的注入只能渲染「建设中」。
-  // 订阅 LangLoader 的 'done' 事件，任一语言数据就位后就地升级入口卡片。
-  if (window.LangLoader && typeof window.LangLoader.on === 'function') {
-    window.LangLoader.on((type, detail) => {
-      if (!detail || !detail.lang) return;
-      if (type === 'done' || (type === 'module:done' && detail.module === 'collocations')) {
-        installLanguageHubCards();
-      }
-    });
-  }
-})();
+});

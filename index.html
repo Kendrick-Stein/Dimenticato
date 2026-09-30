@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>背单词 - Dimenticato</title>
-  <meta name="description" content="Dimenticato - 意大利语 / 德语 / 英语 / 法语 词汇与语法练习，进度全部保存在本地浏览器。">
-  <meta name="theme-color" content="#4a7a5e">
+  <title>Dimenticato · 多语种词汇与语法</title>
+  <meta name="description" content="Dimenticato — 意大利语 / 德语 / 英语 / 法语的词汇与语法练习。统一的 CEFR 词库，进度全部保存在本地浏览器。">
+  <meta name="theme-color" content="#f6f2e8">
+  <script>
+    // 主题在首帧之前定下来，避免深色模式闪白
+    (function () {
+      try {
+        if (localStorage.getItem('dimenticato_theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) { /* 隐私模式下读不到存储，保持浅色 */ }
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-language="italian">
   <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true" focusable="false">
     <symbol id="icon-brand" viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 8.5h8M8 12h8M8 15.5h4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
     <symbol id="icon-library" viewBox="0 0 24 24"><path d="M5 6.5h10a2 2 0 0 1 2 2v10H7a2 2 0 0 0-2 2V6.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M7 18.5h11V8.5a2 2 0 0 0-2-2H7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
@@ -47,893 +53,149 @@
     <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 4 1.7 4.3L18 10l-4.3 1.7L12 16l-1.7-4.3L6 10l4.3-1.7L12 4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
     <symbol id="icon-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   </svg>
-  <!-- 加载动画 -->
-  <div id="loading" class="loading">
-    <div class="skeleton-block" aria-hidden="true">
-      <div class="skel-line title"></div>
-      <div class="skel-line short"></div>
-      <div class="skel-grid"><div class="skel-card"></div><div class="skel-card"></div></div>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <div id="loading" class="loading" role="status" aria-live="polite">
+    <div class="loading-inner">
+      <span class="brand-mark">D</span>
+      <p id="loadingMessage" class="loading-title">Dimenticato</p>
+      <div class="loading-progress-bar"><div id="loadingProgressFill" class="loading-progress-fill"></div></div>
+      <p id="loadingDetail" class="loading-detail">正在准备…</p>
     </div>
-    <p id="loadingMessage">加载中...</p>
-    <div class="loading-progress-bar">
-      <div id="loadingProgressFill" class="loading-progress-fill"></div>
-    </div>
-    <p id="loadingDetail" class="loading-detail"></p>
   </div>
 
-  <!-- 主容器 -->
   <div id="app" class="app hidden">
-    
-    <!-- ==================== 侧边栏 ==================== -->
-    <aside class="sidebar" id="appSidebar">
-      <button class="brand" id="brandHomeBtn" title="Dimenticato">
-        <span class="brand-mark">D</span>
-        <span class="brand-copy">
-          <span class="brand-name">Dimenticato</span>
-          <span class="brand-cn">背单词</span>
-        </span>
-      </button>
-
-      <div class="side-label">语言</div>
-      <div class="lang-pills" id="langPills">
-        <button class="lang-pill active" data-language="italian">IT</button>
-        <button class="lang-pill" data-language="german">DE</button>
-        <button class="lang-pill" data-language="english">EN</button>
-        <button class="lang-pill" data-language="french">FR</button>
-      </div>
-
-      <div class="side-label">学习</div>
-      <nav class="nav" id="sidebarNav">
-        <button class="nav-item" id="globalOverviewBtn" data-section="overview"><span class="msr">grid_view</span>总览</button>
-        <button class="nav-item active" data-section="home" data-target="welcomeScreen"><span class="msr">home</span>语言首页</button>
-        <button class="nav-item hidden" id="navCourseBtn" data-section="course"><span class="msr">route</span>课程</button>
-        <button class="nav-item" data-section="vocab" data-target="vocabularyScreen"><span class="msr">translate</span>词汇</button>
-        <button class="nav-item" data-section="grammar" data-target="grammarScreen"><span class="msr">menu_book</span>语法</button>
-        <button class="nav-item" data-section="progress" data-target="progressScreen"><span class="msr">monitoring</span>进度</button>
-      </nav>
-
-      <div class="side-spacer"></div>
-      <!-- 全站级入口：设置 / 主题 / 帮助 与语言无关，统一放在侧栏底部 -->
-      <div class="side-footer">
-        <button class="nav-item" id="globalSettingsBtn"><span class="msr">tune</span>设置与数据</button>
-        <button class="nav-item" id="themeBtn"><span class="msr" id="themeToggleIcon">dark_mode</span><span id="themeToggleLabel">深色模式</span></button>
-        <button class="nav-item" id="helpBtn"><span class="msr">help</span>使用说明</button>
-      </div>
-    </aside>
-
-    <!-- ==================== 主列（顶栏 + 内容） ==================== -->
-    <div class="main">
-      <div class="topbar">
-        <div class="topbar-left">
-          <button class="hamburger" id="drawerToggle" type="button" aria-label="菜单"><span class="msr">menu</span></button>
-          <div class="breadcrumb" id="breadcrumb"></div>
-        </div>
-        <div class="stat-pills">
-          <span class="stat-pill">词汇量 <b id="totalWords">0</b></span>
-          <span class="stat-pill accent">已掌握 <b id="masteredWords">0</b></span>
-          <span class="stat-pill">进度 <b id="progressPercent">0%</b></span>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#/" data-nav-screen="homeScreen" aria-label="Dimenticato 首页">
+          <span class="brand-mark" aria-hidden="true">D</span>
+          <span class="brand-name">Dimen<em>ticato</em></span>
+        </a>
+        <nav class="topnav" id="topnav" aria-label="主导航">
+          <a href="#/" data-nav="home" data-nav-screen="homeScreen">首页</a>
+          <a href="#/" data-nav="vocab" data-nav-screen="vocabScreen">词汇</a>
+          <a href="#/" data-nav="grammar" data-nav-screen="grammarScreen">语法</a>
+          <a href="#/" data-nav="progress" data-nav-screen="progressScreen">进度</a>
+          <a href="#/" data-nav="settings" data-nav-screen="settingsScreen">设置</a>
+        </nav>
+        <div class="topbar-tools">
+          <div class="lang-switch" role="group" aria-label="学习语言">
+            <button type="button" data-lang="italian" aria-pressed="true" title="意大利语">IT</button>
+            <button type="button" data-lang="german" aria-pressed="false" title="德语">DE</button>
+            <button type="button" data-lang="english" aria-pressed="false" title="英语">EN</button>
+            <button type="button" data-lang="french" aria-pressed="false" title="法语">FR</button>
+          </div>
+          <button type="button" class="icon-btn" id="themeToggle" aria-label="切换到深色"><span class="msr">dark_mode</span></button>
+          <button type="button" class="icon-btn nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false" aria-controls="topnav"><span class="msr">menu</span></button>
         </div>
       </div>
+    </header>
 
-      <!-- 主内容区 -->
-      <main class="content">
-      <!-- 欢迎页面 -->
-      <section id="welcomeScreen" class="screen active">
-        <div class="container">
-          <div class="hero">
-            <div class="hero-main">
-              <div class="eyebrow">Italian</div>
-              <h1 class="page hero-title">Italiano Portale</h1>
-              <p class="desc">词汇练习、语法手册、学习进度与数据设置，全部集中在一个安静的空间里。</p>
-            </div>
-            <div class="hero-stats" data-hero-stats="italian">
-              <div class="hero-stat"><span class="hs-value" data-hs="total">·</span><span class="hs-label">词汇量</span></div>
-              <div class="hero-stat accent"><span class="hs-value" data-hs="mastered">·</span><span class="hs-label">已掌握</span></div>
-              <div class="hero-stat"><span class="hs-value" data-hs="due">·</span><span class="hs-label">今日复习</span></div>
-            </div>
-          </div>
-          <div class="card-grid cols-2">
-            <button class="card" id="goVocabularyBtn" style="--ci:0">
-              <span class="card-chip"><span class="msr">translate</span></span>
-              <span class="card-title">词汇</span>
-              <span class="card-desc">系统词汇、同源词、我的词本、社区词本</span>
-            </button>
-            <button class="card" id="goGrammarBtn" style="--ci:1">
-              <span class="card-chip"><span class="msr">menu_book</span></span>
-              <span class="card-title">语法</span>
-              <span class="card-desc">语法书、动词变位、动词搭配</span>
-            </button>
-            <button class="card" id="goProgressBtn" style="--ci:2">
-              <span class="card-chip"><span class="msr">monitoring</span></span>
-              <span class="card-title">学习进度</span>
-              <span class="card-desc">概览、图表、历史记录</span>
-            </button>
-            <button class="card" id="goSettingsBtn" style="--ci:3">
-              <span class="card-chip"><span class="msr">tune</span></span>
-              <span class="card-title">设置与数据</span>
-              <span class="card-desc">备份导入导出、主题与学习偏好</span>
-            </button>
-          </div>
-        </div>
+    <nav class="crumbs" id="crumbs" aria-label="当前位置" hidden></nav>
+
+    <main id="main" tabindex="-1">
+
+      <!-- ============ 首页 ============ -->
+      <section id="homeScreen" class="screen active" aria-label="首页">
+        <div class="wrap" id="homeView" data-view></div>
       </section>
 
-      <section id="germanWelcomeScreen" class="screen">
-        <div class="container">
-          <div class="hero">
-            <div class="hero-main">
-              <div class="eyebrow">German</div>
-              <h1 class="page hero-title">Deutsch Lernportal</h1>
-              <p class="desc">A1-C1 课程路线、词汇练习、语法书、动词变位与学习进度，全部集中在一个安静的空间里。</p>
-            </div>
-            <div class="hero-stats" data-hero-stats="german">
-              <div class="hero-stat"><span class="hs-value" data-hs="total">·</span><span class="hs-label">词汇量</span></div>
-              <div class="hero-stat accent"><span class="hs-value" data-hs="mastered">·</span><span class="hs-label">已掌握</span></div>
-              <div class="hero-stat"><span class="hs-value" data-hs="due">·</span><span class="hs-label">今日复习</span></div>
-            </div>
-          </div>
-          <div class="card-grid cols-2">
-            <button class="card" id="goGermanVocabularyBtn" style="--ci:0">
-              <span class="card-chip"><span class="msr">translate</span></span>
-              <span class="card-title">词汇</span>
-              <span class="card-desc">系统词汇、我的词本、社区词本</span>
-            </button>
-            <button class="card" id="goGermanGrammarBtn" style="--ci:1">
-              <span class="card-chip"><span class="msr">menu_book</span></span>
-              <span class="card-title">语法</span>
-              <span class="card-desc">德语语法书与动词变位</span>
-            </button>
-            <button class="card" id="goGermanProgressBtn" style="--ci:2">
-              <span class="card-chip"><span class="msr">monitoring</span></span>
-              <span class="card-title">学习进度</span>
-              <span class="card-desc">查看德语词汇练习进度与统计</span>
-            </button>
-            <button class="card" id="goGermanSettingsBtn" style="--ci:3">
-              <span class="card-chip"><span class="msr">info</span></span>
-              <span class="card-title">模块说明</span>
-              <span class="card-desc">德语模块的数据范围与社区词库入口</span>
-            </button>
-          </div>
-        </div>
+      <!-- ============ 词汇 ============ -->
+      <section id="vocabScreen" class="screen" aria-label="词汇练习">
+        <div class="wrap" id="vocabView" data-view></div>
       </section>
 
-      <section id="germanVocabularyScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="germanVocabularyBackBtn"><span class="msr">arrow_back</span>返回德语首页</button>
-          <h1 class="page">词汇</h1>
-          <p class="desc">选一个来源开始练习。</p>
-
-          <div class="card-grid cols-2">
-            <button class="card" id="germanSystemVocabularyBtn">
-              <span class="card-chip"><span class="msr">dataset</span></span>
-              <span class="card-title">系统词汇库</span>
-              <span class="card-desc"><b data-count="german-vocab">24,314</b> 个德语词，按词频分层</span>
-            </button>
-            <div class="card">
-              <span class="card-chip"><span class="msr">compare_arrows</span></span>
-              <span class="card-title">同源词</span>
-              <span class="card-desc">和英语同源的德语词，假朋友单独标注。</span>
-              <div class="chips wrap">
-                <button class="chip" data-cognate-lang="german">同源词 <span data-count="german-cognates">2,349</span></button>
-              </div>
-            </div>
-            <button class="card" id="germanCommunityBtn">
-              <span class="card-chip"><span class="msr">groups</span></span>
-              <span class="card-title">社区词本</span>
-              <span class="card-desc">浏览、导入或发布词本。</span>
-            </button>
-          </div>
-
-          <div class="section-head-row">
-            <div class="sub-label">我的词本</div>
-            <div class="chips wrap">
-              <input type="file" id="germanWordbookFileInput" accept=".json,.txt" style="display:none;">
-              <button class="pill-btn" id="germanImportWordbookBtn"><span class="msr">upload_file</span>导入</button>
-              <button class="pill-btn" id="germanCreateWordbookBtn"><span class="msr">add</span>新建</button>
-              <button class="pill-btn" id="germanWordbooksBtn"><span class="msr">bookmark</span>我的词本</button>
-            </div>
-          </div>
-          <div class="card-grid cols-3" id="germanWordbookCards"></div>
-          <p class="card-desc hidden" id="germanWordbookEmpty">还没有德语词本，用上方「导入」或「新建」添加第一个。</p>
-        </div>
-      </section>
-
-      <section id="germanVocabularyModesScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="germanModesBackBtn"><span class="msr">arrow_back</span>返回内容来源</button>
-          <h1 class="page">选择练习方式</h1>
-          <p class="desc">选择一种方式开始德语词汇练习。</p>
-
-          <div class="card-grid cols-3">
-            <button class="card" id="germanMultipleChoiceBtn" data-language="german" data-module="multiple-choice">
-              <span class="card-chip"><span class="msr">quiz</span></span>
-              <span class="card-title">选择题</span>
-              <span class="card-desc">看德语词，选择释义</span>
-            </button>
-            <button class="card" id="germanSpellingBtn" data-language="german" data-module="spelling">
-              <span class="card-chip"><span class="msr">keyboard</span></span>
-              <span class="card-title">拼写</span>
-              <span class="card-desc">看释义，拼写德语单词</span>
-            </button>
-            <button class="card" id="germanBrowseBtn" data-language="german" data-module="browse">
-              <span class="card-chip"><span class="msr">list</span></span>
-              <span class="card-title">浏览</span>
-              <span class="card-desc">浏览、搜索、筛选德语词汇</span>
-            </button>
-          </div>
-
-          <button class="card typing-feature-card" data-typing-game-lang="german">
-            <span class="card-chip"><span class="msr">surfing</span></span>
-            <span class="typing-feature-text">
-              <span class="card-title">打字游戏 · 激流勇进</span>
-              <span class="card-desc">单词顺流而下，看释义、打字击落！支持背单词与动词变位两种玩法。</span>
-            </span>
-            <span class="msr typing-feature-arrow">arrow_forward</span>
-          </button>
-        </div>
-      </section>
-
-      <section id="germanMultipleChoiceScreen" class="screen">
-        <div class="container narrow">
-          <button class="back-link" id="germanMcBackBtn"><span class="msr">arrow_back</span>返回</button>
+      <!-- 选择题 -->
+      <section id="quizScreen" class="screen" aria-label="选择题">
+        <div class="wrap narrow practice">
           <div class="practice-head">
-            <span class="idx"><span id="germanMcCurrentWord">1</span> / <span id="germanMcTotalWords">0</span></span>
-            <span class="acc">正确率 <b id="germanMcAccuracy">0%</b></span>
+            <button type="button" class="back-link" data-back><span class="msr">arrow_back</span>结束</button>
+            <span class="practice-label" id="quizLabel"></span>
+            <span class="practice-count num"><span id="quizProgressCurrent">0</span> / <span id="quizProgressTotal">0</span> · <span id="quizAccuracy">0%</span></span>
           </div>
-          <div class="session-bar"><div class="session-fill" id="germanMcSessionFill" style="width:0%"></div></div>
+          <div class="progress-track thin"><div class="progress-fill" id="quizBar"></div></div>
 
-          <div class="practice-card">
-            <div class="question-section">
-              <div class="eyebrow" style="text-align:center" id="germanMcQuestionLabel">德语单词</div>
-              <div class="word-row">
-                <h2 class="word" id="germanMcWord">-</h2>
-                <button class="speaker" id="germanMcSpeakBtn" title="朗读发音"><span class="msr">volume_up</span></button>
+          <div class="practice-body" id="quizBody">
+            <div class="prompt-card">
+              <span class="kicker" id="quizPromptLabel">这个词是什么意思？</span>
+              <div class="prompt-word-row">
+                <h2 class="prompt-word" id="quizWord"></h2>
+                <button type="button" class="icon-btn speaker" id="quizSpeak" aria-label="朗读 (R)"><span class="msr">volume_up</span></button>
               </div>
-              <button class="hint-btn hidden" id="germanMcShowHintBtn">显示笔记</button>
-              <p class="chinese-hint hidden" id="germanMcHint"></p>
+              <p class="prompt-meta num" id="quizMeta"></p>
+              <p class="prompt-hint hidden" id="quizHint"></p>
             </div>
-
-            <div class="field-label" id="germanMcOptionsLabel">选择正确的中文释义</div>
-            <div class="options" id="germanMcOptions"></div>
-
-            <div class="hidden" id="germanMcFeedback">
-              <p class="feedback feedback-text"></p>
-              <button class="primary-btn" id="germanMcNextBtn">下一个 <span class="msr">arrow_forward</span></button>
+            <div class="options" id="quizMcOptions"></div>
+            <div class="feedback hidden" id="quizFeedback" role="status" aria-live="polite">
+              <p class="feedback-text" id="quizFeedbackText"></p>
+              <p class="feedback-usage" id="quizUsage"></p>
             </div>
+            <div class="practice-actions">
+              <button type="button" class="btn" id="quizHintBtn">显示提示</button>
+              <button type="button" class="primary-btn hidden" id="quizNextBtn">下一题<span class="msr">arrow_forward</span></button>
+            </div>
+            <p class="shortcut-hint">键盘：<kbd>1</kbd>–<kbd>4</kbd> 选择 · <kbd>Enter</kbd> 下一题 · <kbd>R</kbd> 朗读</p>
           </div>
+          <div class="session-done hidden" id="quizDone"></div>
         </div>
       </section>
 
-      <section id="germanSpellingScreen" class="screen">
-        <div class="container narrow">
-          <button class="back-link" id="germanSpBackBtn"><span class="msr">arrow_back</span>返回</button>
+      <!-- 拼写 -->
+      <section id="spellScreen" class="screen" aria-label="拼写">
+        <div class="wrap narrow practice">
           <div class="practice-head">
-            <span class="idx"><span id="germanSpCurrentWord">1</span> / <span id="germanSpTotalWords">0</span></span>
-            <span class="acc">正确率 <b id="germanSpAccuracy">0%</b></span>
+            <button type="button" class="back-link" data-back><span class="msr">arrow_back</span>结束</button>
+            <span class="practice-label" id="spellLabel"></span>
+            <span class="practice-count num"><span id="spellProgressCurrent">0</span> / <span id="spellProgressTotal">0</span> · <span id="spellAccuracy">0%</span></span>
           </div>
-          <div class="session-bar"><div class="session-fill" id="germanSpSessionFill" style="width:0%"></div></div>
+          <div class="progress-track thin"><div class="progress-fill" id="spellBar"></div></div>
 
-          <div class="practice-card">
-            <div class="question-section">
-              <div class="eyebrow" style="text-align:center">中文释义</div>
-              <h2 class="word" style="font-size:32px" id="germanSpMeaning">-</h2>
-              <p class="chinese-hint hidden" id="germanSpHint"></p>
-              <div style="text-align:center;margin-top:16px">
-                <button class="pill-btn" id="germanPronunciationBtn" title="点击朗读德语发音"><span class="msr">volume_up</span>听发音</button>
-              </div>
+          <div class="practice-body" id="spellBody">
+            <div class="prompt-card">
+              <span class="kicker">写出这个词</span>
+              <h2 class="prompt-word is-gloss" id="spellGloss"></h2>
+              <p class="prompt-meta num" id="spellMeta"></p>
+              <p class="prompt-hint hidden" id="spellHint"></p>
             </div>
-
-            <div class="field-label">请输入德语单词</div>
-            <input type="text" class="spell-input" id="germanSpInput" placeholder="输入德语..." autocomplete="off">
-            <button class="primary-btn" id="germanSpCheckBtn">检查答案</button>
-
-            <div class="hidden" id="germanSpFeedback">
-              <p class="feedback feedback-text"></p>
-              <button class="primary-btn" id="germanSpNextBtn">下一个 <span class="msr">arrow_forward</span></button>
+            <form class="spell-form" id="spellForm" autocomplete="off">
+              <input type="text" class="spell-input" id="spellInput" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="拼写答案">
+              <button type="submit" class="primary-btn" id="spellSubmit">检查</button>
+            </form>
+            <div class="accent-keys" id="spellKeys" aria-label="特殊字母"></div>
+            <div class="feedback hidden" id="spellFeedback" role="status" aria-live="polite">
+              <p class="feedback-text" id="spellFeedbackText"></p>
+              <p class="feedback-usage" id="spellUsage"></p>
             </div>
+            <div class="practice-actions">
+              <button type="button" class="btn" id="spellHintBtn">显示提示</button>
+              <button type="button" class="btn" id="spellRevealBtn">不会，看答案</button>
+              <button type="button" class="icon-btn" id="spellSpeakBtn" aria-label="朗读"><span class="msr">volume_up</span></button>
+              <button type="button" class="primary-btn hidden" id="spellNextBtn">下一题<span class="msr">arrow_forward</span></button>
+            </div>
+            <p class="shortcut-hint"><kbd>Enter</kbd> 提交 / 下一题</p>
           </div>
+          <div class="session-done hidden" id="spellDone"></div>
         </div>
       </section>
 
-      <section id="germanBrowseScreen" class="screen">
-        <div class="browse-container">
-          <button class="back-link" id="germanBrowseBackBtn"><span class="msr">arrow_back</span>返回</button>
-          <div class="browse-controls">
-            <div class="search-wrap">
-              <span class="msr">search</span>
-              <input type="text" class="search-input" id="germanSearchInput" placeholder="搜索德语单词或释义…">
-            </div>
-            <div class="chips" id="germanFilterChips">
-              <button class="chip active" data-filter="all">全部</button>
-              <button class="chip" data-filter="mastered">已掌握</button>
-              <button class="chip" data-filter="unmastered">学习中</button>
-            </div>
+      <!-- 浏览 -->
+      <section id="browseScreen" class="screen" aria-label="浏览词库">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">Sfoglia</span>
+            <h1 class="page-title" id="browseTitle">词库</h1>
           </div>
-
-          <div class="word-list" id="germanWordList"></div>
-        </div>
-      </section>
-
-      <section id="germanGrammarScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="germanGrammarBackBtn"><span class="msr">arrow_back</span>返回德语首页</button>
-          <h1 class="page">选择德语语法主题</h1>
-          <p class="desc">按主题进入：语法书用于查阅，动词变位用于练习。</p>
-
-          <div class="card-grid cols-3">
-            <button class="card german-placeholder-trigger" data-language="german" data-module="grammar-book">
-              <span class="card-chip"><span class="msr">auto_stories</span></span>
-              <span class="card-title">语法书</span>
-              <span class="card-desc">德语语法章节树与正文，按章节查阅</span>
-            </button>
-            <button class="card german-placeholder-trigger" data-language="german" data-module="conjugation">
-              <span class="card-chip"><span class="msr">sync_alt</span></span>
-              <span class="card-title">动词变位</span>
-              <span class="card-desc">时态、课次与题型，边学边练</span>
-            </button>
-            <!-- 动词搭配 / 动词搭配练习入口由 verb-collocations.js 运行时注入：
-                 数据懒加载到位后自动从「建设中」升级为可用，不在这里写死。 -->
+          <div class="browse-controls panel">
+            <label class="search-field">
+              <span class="msr" aria-hidden="true">search</span>
+              <input type="search" id="browseSearch" placeholder="搜索单词、中文或英文释义" aria-label="搜索">
+            </label>
+            <div class="chips" id="browseLevels"></div>
+            <div class="chips" id="browseStatus"></div>
+            <span class="browse-count num muted" id="browseCount"></span>
           </div>
-        </div>
-      </section>
-
-      <section id="germanProgressScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="germanProgressBackBtn"><span class="msr">arrow_back</span>返回德语首页</button>
-          <h1 class="page">德语学习进度</h1>
-          <p class="desc">基于当前德语词汇练习数据，查看掌握量与练习统计。</p>
-
-          <div class="big-stats">
-            <div class="big-stat">
-              <div class="bs-label">德语词汇总量</div>
-              <div class="bs-value" id="germanProgressTotalWords">0</div>
-            </div>
-            <div class="big-stat accent">
-              <div class="bs-label">已掌握</div>
-              <div class="bs-value" id="germanProgressMasteredWords">0</div>
-            </div>
-            <div class="big-stat">
-              <div class="bs-label">当前进度</div>
-              <div class="bs-value" id="germanProgressPercent">0%</div>
-            </div>
-            <div class="big-stat">
-              <div class="bs-label">选择题统计</div>
-              <div class="bs-value" id="germanProgressMcStats">0 / 0</div>
-            </div>
-            <div class="big-stat">
-              <div class="bs-label">拼写统计</div>
-              <div class="bs-value" id="germanProgressSpStats">0 / 0</div>
-            </div>
-            <div class="big-stat accent">
-              <div class="bs-label">综合正确率</div>
-              <div class="bs-value" id="germanProgressAccuracy">0%</div>
-            </div>
-          </div>
-
-          <div class="progress-2col">
-            <div class="panel">
-              <div class="panel-title">最近 7 天练习量</div>
-              <div class="bar-chart" id="germanProgressWeekBars"></div>
-            </div>
-            <div class="panel">
-              <div class="panel-title">正确率</div>
-              <div id="germanProgressAccuracyRows"></div>
-              <div class="acc-total"><span>总练习次数</span><b id="germanProgressTotalAttempts">0</b></div>
-              <div class="acc-total"><span>连续学习天数</span><b id="germanProgressStreak">0</b></div>
-            </div>
-          </div>
-
-          <div style="margin-top:28px">
-            <div class="panel-title">最近 7 天记录</div>
-            <div class="stats-table-container">
-              <table class="stats-table">
-                <thead>
-                  <tr><th>日期</th><th>练习词数</th><th>时长</th><th>作答</th><th>正确率</th></tr>
-                </thead>
-                <tbody id="germanProgressHistoryBody"></tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="settings-card hidden" id="germanProgressStatsPanelCard">
-            <button class="data-row" id="germanOpenProgressStatsBtn">
-              <span class="row-chip"><span class="msr">monitoring</span></span>
-              <span class="row-body">
-                <span class="row-title">打开完整统计面板</span>
-                <span class="row-sub">概览、图表与历史记录</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section id="germanSettingsScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="germanSettingsBackBtn"><span class="msr">arrow_back</span>返回德语首页</button>
-          <h1 class="page">德语模块说明</h1>
-          <p class="desc">本页只介绍德语模块的范围；主题、备份与重置等全站设置在侧栏底部的「设置与数据」里。</p>
-
-          <div class="settings-card">
-            <div class="settings-card-title">德语模块</div>
-            <div class="about-body">德语模块包含 A1-C1 五级课程路线与 54 个主题单元、<b data-count="german-vocab">24,314</b> 个系统词条、语法书、高频动词变位和共享社区词库入口。德语学习进度使用独立 localStorage key 保存；导入导出仍走全站统一数据结构。</div>
-          </div>
-
-          <div class="settings-card">
-            <div class="settings-card-title">相关入口</div>
-            <button class="data-row" id="germanSettingsCommunityBtn">
-              <span class="row-chip"><span class="msr">groups</span></span>
-              <span class="row-body">
-                <span class="row-title">打开社区词库</span>
-                <span class="row-sub">浏览社区词库并导入需要的学习资源</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-            <button class="data-row" id="germanSettingsGlobalDataBtn">
-              <span class="row-chip"><span class="msr">tune</span></span>
-              <span class="row-body">
-                <span class="row-title">打开全站 Settings &amp; Data</span>
-                <span class="row-sub">打开站点数据、主题、帮助与重置功能</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section id="englishWelcomeScreen" class="screen">
-        <div class="container">
-          <div class="hero">
-            <div class="hero-main">
-              <div class="eyebrow">English</div>
-              <h1 class="page hero-title">English Learning Portal</h1>
-              <p class="desc">英语词汇练习、语法书与学习进度，全部集中在一个安静的空间里。</p>
-            </div>
-            <div class="hero-stats" data-hero-stats="english">
-              <div class="hero-stat"><span class="hs-value" data-hs="total">·</span><span class="hs-label">词汇量</span></div>
-              <div class="hero-stat accent"><span class="hs-value" data-hs="mastered">·</span><span class="hs-label">已掌握</span></div>
-              <div class="hero-stat"><span class="hs-value" data-hs="due">·</span><span class="hs-label">今日复习</span></div>
-            </div>
-          </div>
-          <div class="card-grid cols-2">
-            <button class="card" id="goEnglishVocabularyBtn" style="--ci:0">
-              <span class="card-chip"><span class="msr">translate</span></span>
-              <span class="card-title">词汇</span>
-              <span class="card-desc">系统词汇、我的词本、社区词本</span>
-            </button>
-            <button class="card" id="goEnglishGrammarBtn" style="--ci:1">
-              <span class="card-chip"><span class="msr">menu_book</span></span>
-              <span class="card-title">语法</span>
-              <span class="card-desc">语法书、动词变位、动词搭配</span>
-            </button>
-            <button class="card" id="goEnglishProgressBtn" style="--ci:2">
-              <span class="card-chip"><span class="msr">monitoring</span></span>
-              <span class="card-title">学习进度</span>
-              <span class="card-desc">查看英语词汇练习进度与统计</span>
-            </button>
-            <button class="card" id="goEnglishSettingsBtn" style="--ci:3">
-              <span class="card-chip"><span class="msr">info</span></span>
-              <span class="card-title">模块说明</span>
-              <span class="card-desc">英语模块的数据范围与社区词库入口</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section id="englishVocabularyScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="englishVocabularyBackBtn"><span class="msr">arrow_back</span>返回英语首页</button>
-          <h1 class="page">词汇</h1>
-          <p class="desc">选一个来源开始练习。</p>
-
-          <div class="card-grid cols-2">
-            <button class="card" id="englishSystemVocabularyBtn">
-              <span class="card-chip"><span class="msr">dataset</span></span>
-              <span class="card-title">系统词汇库</span>
-              <span class="card-desc">按词频分层的英语词汇。</span>
-            </button>
-            <button class="card" id="englishCommunityBtn">
-              <span class="card-chip"><span class="msr">groups</span></span>
-              <span class="card-title">社区词本</span>
-              <span class="card-desc">浏览、导入或发布词本。</span>
-            </button>
-          </div>
-
-          <div class="section-head-row">
-            <div class="sub-label">我的词本</div>
-            <div class="chips wrap">
-              <input type="file" id="englishWordbookFileInput" accept=".json,.txt" style="display:none;">
-              <button class="pill-btn" id="englishImportWordbookBtn"><span class="msr">upload_file</span>导入</button>
-              <button class="pill-btn" id="englishCreateWordbookBtn"><span class="msr">add</span>新建</button>
-              <button class="pill-btn" id="englishWordbooksBtn"><span class="msr">bookmark</span>我的词本</button>
-            </div>
-          </div>
-          <div class="card-grid cols-3" id="englishWordbookCards"></div>
-          <p class="card-desc hidden" id="englishWordbookEmpty">还没有英语词本，用上方「导入」或「新建」添加第一个。</p>
-        </div>
-      </section>
-
-      <section id="englishVocabularyModesScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="englishModesBackBtn"><span class="msr">arrow_back</span>返回内容来源</button>
-          <h1 class="page">选择练习方式</h1>
-          <p class="desc">选择一种练习方式开始学习英语词汇。</p>
-
-          <div class="card-grid cols-3">
-            <button class="card" id="englishMultipleChoiceBtn" data-language="english" data-module="multiple-choice">
-              <span class="card-chip"><span class="msr">quiz</span></span>
-              <span class="card-title">选择题</span>
-              <span class="card-desc">看英语词，选择中文释义</span>
-            </button>
-            <button class="card" id="englishSpellingBtn" data-language="english" data-module="spelling">
-              <span class="card-chip"><span class="msr">keyboard</span></span>
-              <span class="card-title">拼写</span>
-              <span class="card-desc">看中文释义，拼写英语单词</span>
-            </button>
-            <button class="card" id="englishBrowseBtn" data-language="english" data-module="browse">
-              <span class="card-chip"><span class="msr">list</span></span>
-              <span class="card-title">浏览</span>
-              <span class="card-desc">浏览、搜索、筛选英语词汇</span>
-            </button>
-          </div>
-
-          <button class="card typing-feature-card" data-typing-game-lang="english">
-            <span class="card-chip"><span class="msr">surfing</span></span>
-            <span class="typing-feature-text">
-              <span class="card-title">打字游戏 · 激流勇进</span>
-              <span class="card-desc">单词顺流而下，看释义、打字击落！支持背单词与动词变位两种玩法。</span>
-            </span>
-            <span class="msr typing-feature-arrow">arrow_forward</span>
-          </button>
-        </div>
-      </section>
-
-      <section id="englishMultipleChoiceScreen" class="screen">
-        <div class="container narrow">
-          <button class="back-link" id="englishMcBackBtn"><span class="msr">arrow_back</span>返回</button>
-          <div class="practice-head">
-            <span class="idx"><span id="englishMcCurrentWord">1</span> / <span id="englishMcTotalWords">0</span></span>
-            <span class="acc">正确率 <b id="englishMcAccuracy">0%</b></span>
-          </div>
-          <div class="session-bar"><div class="session-fill" id="englishMcSessionFill" style="width:0%"></div></div>
-
-          <div class="practice-card">
-            <div class="question-section">
-              <div class="eyebrow" style="text-align:center" id="englishMcQuestionLabel">英语单词</div>
-              <div class="word-row">
-                <h2 class="word" id="englishMcWord">-</h2>
-                <button class="speaker" id="englishMcSpeakBtn" title="朗读发音"><span class="msr">volume_up</span></button>
-              </div>
-              <button class="hint-btn hidden" id="englishMcShowHintBtn">显示笔记</button>
-              <p class="chinese-hint hidden" id="englishMcHint"></p>
-            </div>
-
-            <div class="field-label" id="englishMcOptionsLabel">选择正确的中文释义</div>
-            <div class="options" id="englishMcOptions"></div>
-
-            <div class="hidden" id="englishMcFeedback">
-              <p class="feedback feedback-text"></p>
-              <button class="primary-btn" id="englishMcNextBtn">下一个 <span class="msr">arrow_forward</span></button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="englishSpellingScreen" class="screen">
-        <div class="container narrow">
-          <button class="back-link" id="englishSpBackBtn"><span class="msr">arrow_back</span>返回</button>
-          <div class="practice-head">
-            <span class="idx"><span id="englishSpCurrentWord">1</span> / <span id="englishSpTotalWords">0</span></span>
-            <span class="acc">正确率 <b id="englishSpAccuracy">0%</b></span>
-          </div>
-          <div class="session-bar"><div class="session-fill" id="englishSpSessionFill" style="width:0%"></div></div>
-
-          <div class="practice-card">
-            <div class="question-section">
-              <div class="eyebrow" style="text-align:center">中文释义</div>
-              <h2 class="word" style="font-size:32px" id="englishSpMeaning">-</h2>
-              <p class="chinese-hint hidden" id="englishSpHint"></p>
-              <div style="text-align:center;margin-top:16px">
-                <button class="pill-btn" id="englishPronunciationBtn" title="点击朗读英语发音"><span class="msr">volume_up</span>听发音</button>
-              </div>
-            </div>
-
-            <div class="field-label">请输入英语单词</div>
-            <input type="text" class="spell-input" id="englishSpInput" placeholder="Type English word..." autocomplete="off">
-            <button class="primary-btn" id="englishSpCheckBtn">检查答案</button>
-
-            <div class="hidden" id="englishSpFeedback">
-              <p class="feedback feedback-text"></p>
-              <button class="primary-btn" id="englishSpNextBtn">下一个 <span class="msr">arrow_forward</span></button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="englishBrowseScreen" class="screen">
-        <div class="browse-container">
-          <button class="back-link" id="englishBrowseBackBtn"><span class="msr">arrow_back</span>返回</button>
-          <div class="browse-controls">
-            <div class="search-wrap">
-              <span class="msr">search</span>
-              <input type="text" class="search-input" id="englishSearchInput" placeholder="搜索英语单词或释义…">
-            </div>
-            <div class="chips" id="englishFilterChips">
-              <button class="chip active" data-filter="all">全部</button>
-              <button class="chip" data-filter="mastered">已掌握</button>
-              <button class="chip" data-filter="unmastered">学习中</button>
-            </div>
-          </div>
-
-          <div class="word-list" id="englishWordList"></div>
-        </div>
-      </section>
-
-      <section id="englishGrammarScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="englishGrammarBackBtn"><span class="msr">arrow_back</span>返回英语首页</button>
-          <h1 class="page">选择英语语法主题</h1>
-          <p class="desc">按主题进入：语法书用于查阅，动词变位与动词搭配用于练习。</p>
-
-          <div class="card-grid cols-3">
-            <button class="card english-placeholder-trigger" data-language="english" data-module="grammar-book">
-              <span class="card-chip"><span class="msr">auto_stories</span></span>
-              <span class="card-title">语法书</span>
-              <span class="card-desc">A1-C1 词法与句法专题，中文讲解 + 英文例句</span>
-            </button>
-            <button class="card english-placeholder-trigger" data-language="english" data-module="conjugation">
-              <span class="card-chip"><span class="msr">sync_alt</span></span>
-              <span class="card-title">动词变位</span>
-              <span class="card-desc">时态、课次与题型，边学边练</span>
-            </button>
-            <!-- 动词搭配 / 动词搭配练习入口由 verb-collocations.js 运行时注入
-                 （数据 data/english-collocations-data.js 按模块懒加载）。 -->
-          </div>
-        </div>
-      </section>
-
-      <section id="englishProgressScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="englishProgressBackBtn"><span class="msr">arrow_back</span>返回英语首页</button>
-          <h1 class="page">英语学习进度</h1>
-          <p class="desc">基于当前英语词汇练习数据，查看掌握量与练习统计。</p>
-
-          <div class="big-stats">
-            <div class="big-stat">
-              <div class="bs-label">英语词汇总量</div>
-              <div class="bs-value" id="englishProgressTotalWords">0</div>
-            </div>
-            <div class="big-stat accent">
-              <div class="bs-label">已掌握</div>
-              <div class="bs-value" id="englishProgressMasteredWords">0</div>
-            </div>
-            <div class="big-stat">
-              <div class="bs-label">当前进度</div>
-              <div class="bs-value" id="englishProgressPercent">0%</div>
-            </div>
-            <div class="big-stat">
-              <div class="bs-label">选择题统计</div>
-              <div class="bs-value" id="englishProgressMcStats">0 / 0</div>
-            </div>
-            <div class="big-stat">
-              <div class="bs-label">拼写统计</div>
-              <div class="bs-value" id="englishProgressSpStats">0 / 0</div>
-            </div>
-            <div class="big-stat accent">
-              <div class="bs-label">综合正确率</div>
-              <div class="bs-value" id="englishProgressAccuracy">0%</div>
-            </div>
-          </div>
-
-          <div class="progress-2col">
-            <div class="panel">
-              <div class="panel-title">最近 7 天练习量</div>
-              <div class="bar-chart" id="englishProgressWeekBars"></div>
-            </div>
-            <div class="panel">
-              <div class="panel-title">正确率</div>
-              <div id="englishProgressAccuracyRows"></div>
-              <div class="acc-total"><span>总练习次数</span><b id="englishProgressTotalAttempts">0</b></div>
-              <div class="acc-total"><span>连续学习天数</span><b id="englishProgressStreak">0</b></div>
-            </div>
-          </div>
-
-          <div style="margin-top:28px">
-            <div class="panel-title">最近 7 天记录</div>
-            <div class="stats-table-container">
-              <table class="stats-table">
-                <thead>
-                  <tr><th>日期</th><th>练习词数</th><th>时长</th><th>作答</th><th>正确率</th></tr>
-                </thead>
-                <tbody id="englishProgressHistoryBody"></tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="settings-card hidden" id="englishProgressStatsPanelCard">
-            <button class="data-row" id="englishOpenProgressStatsBtn">
-              <span class="row-chip"><span class="msr">monitoring</span></span>
-              <span class="row-body">
-                <span class="row-title">打开完整统计面板</span>
-                <span class="row-sub">概览、图表与历史记录</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section id="englishSettingsScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="englishSettingsBackBtn"><span class="msr">arrow_back</span>返回英语首页</button>
-          <h1 class="page">英语模块说明</h1>
-          <p class="desc">本页只介绍英语模块的范围；主题、备份与重置等全站设置在侧栏底部的「设置与数据」里。</p>
-
-          <div class="settings-card">
-            <div class="settings-card-title">英语模块</div>
-            <div class="about-body">英语模块包含系统词汇练习、英语语法书与共享社区词库入口。英语学习进度使用独立 localStorage key 保存；导入导出仍走全站统一数据结构。</div>
-          </div>
-
-          <div class="settings-card">
-            <div class="settings-card-title">相关入口</div>
-            <button class="data-row" id="englishSettingsCommunityBtn">
-              <span class="row-chip"><span class="msr">groups</span></span>
-              <span class="row-body">
-                <span class="row-title">打开社区词库</span>
-                <span class="row-sub">浏览社区词库并导入需要的学习资源</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-            <button class="data-row" id="englishSettingsGlobalDataBtn">
-              <span class="row-chip"><span class="msr">tune</span></span>
-              <span class="row-body">
-                <span class="row-title">打开全站「设置与数据」</span>
-                <span class="row-sub">备份导入导出、主题、学习偏好与重置</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!--
-        ⚠️ 结构锚点，不要删除、不要改 id。
-        french-app.js 的 installFrenchScreens() 用 insertBefore(#languageSkeletonPlaceholderScreen)
-        注入全部 9 个法语屏幕，找不到这个节点就直接 return —— 法语会整块静默消失。
-
-        这个屏幕本身已经不可达：german-app.js 的 bindGrammarBookTriggers() /
-        bindConjugationTriggers() 会先把 .german-placeholder-trigger 与
-        .english-placeholder-trigger 两个 class 摘掉，之后 bindPlaceholderTriggers()
-        再查就一个都查不到了。因此它只作为插入锚点保留，并对辅助技术隐藏。
-      -->
-      <section id="languageSkeletonPlaceholderScreen" class="screen" aria-hidden="true">
-        <div class="welcome-card module-view-card language-skeleton-card">
-          <div class="module-view-header">
-            <button class="back-link section-back-btn" id="languageSkeletonPlaceholderBackBtn"><span class="msr">arrow_back</span>返回上一层</button>
-            <div>
-              <p class="eyebrow" id="languageSkeletonPlaceholderEyebrow">Module</p>
-              <h2 id="languageSkeletonPlaceholderTitle"><svg class="icon"><use href="#icon-puzzle"></use></svg>模块页面</h2>
-            </div>
-            <p class="subtitle" id="languageSkeletonPlaceholderDescription">查看当前模块内容与说明。</p>
-          </div>
-
-          <div class="selection-summary-card">
-            <div class="selection-summary-item">
-              <span class="selection-summary-label">当前语言</span>
-              <strong id="languageSkeletonPlaceholderLanguage">-</strong>
-            </div>
-            <div class="selection-summary-item">
-              <span class="selection-summary-label">模块</span>
-              <strong id="languageSkeletonPlaceholderModule">-</strong>
-            </div>
-            <div class="selection-summary-item">
-              <span class="selection-summary-label">状态</span>
-              <strong>可用</strong>
-            </div>
-          </div>
-
-          <div class="module-grid single-column-grid compact-grid">
-            <div class="module-card wide-card">
-              <span class="module-card-icon"><svg class="icon"><use href="#icon-spark"></use></svg></span>
-              <span class="module-card-title">模块内容</span>
-              <span class="module-card-desc" id="languageSkeletonPlaceholderDataHint">词汇数据、模块目录、练习内容与页面说明。</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="vocabularyScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="vocabularyBackBtn"><span class="msr">arrow_back</span>返回意大利语首页</button>
-          <h1 class="page">词汇</h1>
-          <p class="desc">选一个来源开始练习。</p>
-
-          <div class="card-grid cols-2">
-            <div class="card">
-              <span class="card-chip"><span class="msr">dataset</span></span>
-              <span class="card-title">系统词汇库</span>
-              <span class="card-desc">按词频分层，从高频词开始。</span>
-              <div class="chips wrap">
-                <button class="chip vocab-source-btn" data-level="1000" data-source="system">1,000</button>
-                <button class="chip vocab-source-btn" data-level="3000" data-source="system">3,000</button>
-                <button class="chip vocab-source-btn" data-level="5000" data-source="system">5,000</button>
-                <button class="chip vocab-source-btn" data-level="all" data-source="system">全部 <span data-count="italian-vocab">27,117</span></button>
-              </div>
-            </div>
-
-            <div class="card">
-              <span class="card-chip"><span class="msr">compare_arrows</span></span>
-              <span class="card-title">同源词</span>
-              <span class="card-desc">和英语长得像的词，借力英语抄近路。</span>
-              <div class="chips wrap">
-                <button class="chip vocab-source-btn cognate-btn" data-level="cognate" data-source="cognate" data-cognate-lang="italian">同源词 <span data-count="italian-cognates">1,586</span></button>
-              </div>
-            </div>
-
-            <div class="card">
-              <span class="card-chip"><span class="msr">groups</span></span>
-              <span class="card-title">社区词本</span>
-              <span class="card-desc">浏览、导入或发布词本。</span>
-              <div class="chips wrap">
-                <button class="pill-btn" id="browseCommunityBtn"><span class="msr">travel_explore</span>浏览</button>
-                <button class="pill-btn" id="settingsCommunityUploadBtn"><span class="msr">upload_file</span>发布</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="section-head-row">
-            <div class="sub-label">我的词本</div>
-            <input type="file" id="wordbookFileInput" accept=".json,.txt" style="display:none;">
-            <div class="chips wrap">
-              <button class="pill-btn" id="importWordbookBtn"><span class="msr">upload_file</span>导入</button>
-              <button class="pill-btn" id="createWordbookBtn"><span class="msr">add</span>新建</button>
-            </div>
-          </div>
-          <div class="card-grid cols-3" id="wordbookCards">
-            <!-- 动态生成单词本卡片 -->
-          </div>
-          <p class="card-desc hidden" id="italianWordbookEmpty">还没有词本，用上方「导入」或「新建」添加第一个。<a href="custom_wordbook_template.json" download>JSON</a> / <a href="custom_wordbook_template.txt" download>TXT</a> 模板</p>
-        </div>
-      </section>
-
-      <section id="vocabularyModesScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="vocabularyModesBackBtn"><span class="msr">arrow_back</span>返回内容来源</button>
-          <h1 class="page">选择练习方式</h1>
-          <p class="desc" id="vocabularyFlowSummary">选择一个练习方式</p>
-
-          <div class="selection-summary-card" id="vocabularySelectionSummary"></div>
-
-          <div class="sub-label">每组题量</div>
-          <div class="chips wrap" id="mcSessionChips" aria-label="选择每组题量"></div>
-
-          <div class="card-grid cols-3" id="vocabModeButtons">
-            <button class="card" id="multipleChoiceBtn">
-              <span class="card-chip"><span class="msr">quiz</span></span>
-              <span class="card-title">选择题</span>
-              <span class="card-desc">看意大利语选英语翻译</span>
-            </button>
-
-            <button class="card" id="spellingBtn">
-              <span class="card-chip"><span class="msr">keyboard</span></span>
-              <span class="card-title">拼写</span>
-              <span class="card-desc">看英语拼写意大利语</span>
-            </button>
-
-            <button class="card" id="browseBtn">
-              <span class="card-chip"><span class="msr">list</span></span>
-              <span class="card-title">浏览</span>
-              <span class="card-desc">查看词表、搜索、筛选与加入词本</span>
-            </button>
-          </div>
-
-          <button class="card typing-feature-card" data-typing-game-lang="italian">
-            <span class="card-chip"><span class="msr">surfing</span></span>
-            <span class="typing-feature-text">
-              <span class="card-title">打字游戏 · 激流勇进</span>
-              <span class="card-desc">单词顺流而下，看释义、打字击落！支持背单词与动词变位两种玩法。</span>
-            </span>
-            <span class="msr typing-feature-arrow">arrow_forward</span>
-          </button>
+          <ul class="word-list" id="browseList" data-view></ul>
+          <div class="center"><button type="button" class="btn hidden" id="browseMore">加载更多</button></div>
         </div>
       </section>
 
@@ -968,36 +230,51 @@
         </div>
       </section>
 
-      <section id="grammarScreen" class="screen">
+      <section id="cognatePracticeScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="grammarBackBtn"><span class="msr">arrow_back</span>返回意大利语首页</button>
-          <h1 class="page">选择语法主题</h1>
-          <p class="desc">按主题进入，每个主题内部再分「查阅」和「练习」。</p>
+          <button class="back-link" id="cognateBackBtn"><span class="msr">arrow_back</span>返回词汇</button>
+          <div class="eyebrow" id="cognateEyebrow">Italian / Cognates</div>
+          <h1 class="page">同源词</h1>
+          <p class="desc" id="cognateScreenDesc">和英语长得像的单词，用已有的英语词汇量抄近路。</p>
+          <div id="cognatePracticeContainer" class="practice-container hidden"></div>
+        </div>
+      </section>
 
-          <!-- 按主题分组（语法书 / 动词变位 / 动词搭配），
-               而不是把同一主题的“浏览”和“练习”拆成两张平级卡片 -->
-          <div class="card-grid cols-3">
-            <button class="card" id="goGrammarBookBtn">
-              <span class="card-chip"><span class="msr">auto_stories</span></span>
-              <span class="card-title">语法书</span>
-              <span class="card-desc">意大利语语法全书，按章节查阅</span>
-            </button>
-            <button class="card" id="goConjugationSetupBtn">
-              <span class="card-chip"><span class="msr">sync_alt</span></span>
-              <span class="card-title">动词变位</span>
-              <span class="card-desc">查询任意动词的完整变位，或按课次时态练习</span>
-            </button>
-            <div class="card">
-              <span class="card-chip"><span class="msr">link</span></span>
-              <span class="card-title">动词搭配</span>
-              <span class="card-desc">1711 个动词的介词搭配与例句</span>
-              <div class="chips wrap">
-                <button class="pill-btn" id="goVerbCollocationsBtn"><span class="msr">travel_explore</span>浏览搭配</button>
-                <button class="pill-btn" id="goVerbCollocationPracticeBtn"><span class="msr">extension</span>开始练习</button>
-              </div>
+      <section id="communityBrowseScreen" class="screen community-browse-screen">
+        <div class="container">
+          <button class="back-link" onclick="CommunityWordbooks.backToWelcome()"><span class="msr">arrow_back</span>返回</button>
+          <div class="eyebrow">Community</div>
+          <h1 class="page">社区词本</h1>
+          <p class="desc">浏览社区分享的词本，预览内容并导入到我的词本。</p>
+
+          <div class="browse-controls">
+            <div class="search-wrap">
+              <span class="msr">search</span>
+              <input
+                type="text"
+                class="search-input"
+                id="communitySearchInput"
+                placeholder="搜索词本名称..."
+                oninput="CommunityWordbooks.searchWordbooks(this.value)"
+              >
             </div>
+            <select class="filter-select" onchange="CommunityWordbooks.updateDifficultyFilter(this.value)">
+              <option value="all">全部难度</option>
+              <option value="Beginner">初级</option>
+              <option value="Intermediate">中级</option>
+              <option value="Advanced">高级</option>
+            </select>
+          </div>
+
+          <div class="community-wordbook-list" id="communityWordbookList">
+            <!-- 动态生成词本列表 -->
           </div>
         </div>
+      </section>
+
+      <!-- ============ 语法 ============ -->
+      <section id="grammarScreen" class="screen" aria-label="语法">
+        <div class="wrap" id="grammarView" data-view></div>
       </section>
 
       <section id="conjugationSetupScreen" class="screen">
@@ -1083,230 +360,6 @@
         </div>
       </section>
 
-      <section id="progressScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="progressBackBtn"><span class="msr">arrow_back</span>返回意大利语首页</button>
-          <h1 class="page">统计与学习进展</h1>
-          <p class="desc">查看当前语言的学习数据与最近练习情况。</p>
-
-          <!-- 主要动作（完整统计面板）提到最上面，不再排在两屏图表之后 -->
-          <div class="settings-card">
-            <button class="data-row" id="openProgressStatsBtn">
-              <span class="row-chip"><span class="msr">monitoring</span></span>
-              <span class="row-body">
-                <span class="row-title">打开完整统计面板</span>
-                <span class="row-sub">概览、图表与历史记录</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-          </div>
-
-          <div class="big-stats">
-            <div class="big-stat">
-              <div class="bs-label">当前词汇量范围</div>
-              <div class="bs-value" id="progressCurrentTotalWords">0</div>
-            </div>
-            <div class="big-stat accent">
-              <div class="bs-label">当前已掌握</div>
-              <div class="bs-value" id="progressCurrentMasteredWords">0</div>
-            </div>
-            <div class="big-stat">
-              <div class="bs-label">当前进度</div>
-              <div class="bs-value" id="progressCurrentPercent">0%</div>
-            </div>
-          </div>
-
-          <div class="progress-2col">
-            <div class="panel">
-              <div class="panel-title">最近 7 天练习量</div>
-              <div class="bar-chart" id="progressWeekBars"></div>
-            </div>
-            <div class="panel">
-              <div class="panel-title">正确率</div>
-              <div id="progressAccuracyRows"></div>
-              <div class="acc-total"><span>总练习次数</span><b id="progressTotalAttempts">0</b></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="settingsScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="settingsBackBtn"><span class="msr">arrow_back</span>返回首页</button>
-          <h1 class="page">设置与数据</h1>
-          <p class="desc">全站通用，与当前语言无关：先是学习偏好，然后是备份与重置。</p>
-
-          <!-- 拆成三组：偏好 / 数据 / 帮助与关于。
-               社区发布已经搬到「词汇 → 社区词本」，和浏览放在一起。 -->
-          <div class="settings-card" id="learningPrefsSection">
-            <div class="settings-card-title">学习偏好</div>
-            <div class="pref-row">
-              <span class="pref-label">选择题难度</span>
-              <div class="segmented" id="difficultyToggle" role="group" aria-label="选择题难度">
-                <button type="button" class="seg difficulty-option" data-difficulty="easy" title="随机干扰项">简单</button>
-                <button type="button" class="seg difficulty-option" data-difficulty="hard" title="相似干扰项">困难</button>
-              </div>
-            </div>
-            <div class="pref-row">
-              <span class="pref-label">出题方向</span>
-              <div class="segmented" id="directionToggle" role="group" aria-label="出题方向">
-                <button type="button" class="seg direction-option" data-direction="forward" title="看外语单词，选释义">正向</button>
-                <button type="button" class="seg direction-option" data-direction="reverse" title="看释义，选外语单词（召回式练习）">反向</button>
-              </div>
-            </div>
-            <button class="data-row" id="settingsThemeBtn">
-              <span class="row-chip"><span class="msr">dark_mode</span></span>
-              <span class="row-body">
-                <span class="row-title">切换主题</span>
-                <span class="row-sub">在浅色与深色主题之间切换</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-          </div>
-
-          <div class="settings-card">
-            <div class="settings-card-title">数据备份</div>
-            <button class="data-row" id="settingsExportBtn">
-              <span class="row-chip"><span class="msr">ios_share</span></span>
-              <span class="row-body">
-                <span class="row-title">导出数据</span>
-                <span class="row-sub">导出学习记录、自定义词本与统计数据</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-            <button class="data-row" id="settingsImportBtn">
-              <span class="row-chip"><span class="msr">download</span></span>
-              <span class="row-body">
-                <span class="row-title">导入数据</span>
-                <span class="row-sub">恢复备份，支持覆盖或合并模式</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-            <button class="data-row danger" id="settingsResetBtn">
-              <span class="row-chip"><span class="msr">restart_alt</span></span>
-              <span class="row-body">
-                <span class="row-title">重置学习数据</span>
-                <span class="row-sub">清空本地学习记录，执行前会再次确认</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-          </div>
-
-          <div class="settings-card">
-            <div class="settings-card-title">帮助与关于</div>
-            <button class="data-row" id="settingsHelpBtn">
-              <span class="row-chip"><span class="msr">help</span></span>
-              <span class="row-body">
-                <span class="row-title">使用说明</span>
-                <span class="row-sub">查看功能说明、格式指南与学习建议</span>
-              </span>
-              <span class="msr chev">chevron_right</span>
-            </button>
-            <div class="about-body">Dimenticato 是一个安静、专注的多语种背词工具，支持意大利语、德语、英语与法语。词典与变位数据来自 Wiktionary/Wiktextract、Lexique 3.83、HanDeDict、Tatoeba 等开放语料（多为 CC BY-SA），逐项出处见「数据来源与致谢」。所有学习数据保存在本地浏览器中。</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 选择题模式 -->
-      <section id="multipleChoiceScreen" class="screen">
-        <div class="container narrow">
-          <button class="back-link" id="mcBackBtn"><span class="msr">arrow_back</span>返回</button>
-          <div class="practice-head">
-            <span class="idx"><span id="mcCurrentWord">1</span> / <span id="mcTotalWords">0</span></span>
-            <span class="acc">正确率 <b id="mcAccuracy">0%</b></span>
-          </div>
-          <div class="session-bar"><div class="session-fill" id="mcSessionFill" style="width:0%"></div></div>
-
-          <div class="practice-card">
-            <div class="question-section">
-              <div class="eyebrow" style="text-align:center" id="mcQuestionLabel">意大利语单词</div>
-              <div class="word-row">
-                <h2 class="word" id="mcItalianWord">-</h2>
-                <button class="speaker" id="mcSpeakerBtn" title="朗读发音"><span class="msr">volume_up</span></button>
-              </div>
-              <button class="hint-btn hidden" id="mcShowHintBtn" onclick="MultipleChoice.showHint()">显示提示</button>
-              <p class="chinese-hint hidden" id="mcChineseHint"></p>
-            </div>
-
-            <div class="field-label" id="mcOptionsLabel">选择正确的英语翻译</div>
-            <div class="options" id="mcOptions">
-              <!-- 动态生成选项 -->
-            </div>
-
-            <div class="hidden" id="mcFeedback">
-              <p class="feedback feedback-text"></p>
-              <button class="primary-btn" id="mcNextBtn">下一个 <span class="msr">arrow_forward</span></button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 拼写模式 -->
-      <section id="spellingScreen" class="screen">
-        <div class="container narrow">
-          <button class="back-link" id="spBackBtn"><span class="msr">arrow_back</span>返回</button>
-          <div class="practice-head">
-            <span class="idx"><span id="spCurrentWord">1</span> / <span id="spTotalWords">0</span></span>
-            <span class="acc">正确率 <b id="spAccuracy">0%</b></span>
-          </div>
-          <div class="session-bar"><div class="session-fill" id="spSessionFill" style="width:0%"></div></div>
-
-          <div class="practice-card">
-            <div class="question-section">
-              <div class="eyebrow" style="text-align:center">英语翻译</div>
-              <h2 class="word" style="font-size:32px" id="spEnglishWord">-</h2>
-              <p class="chinese-hint hidden" id="spChineseHint"></p>
-              <div style="text-align:center;margin-top:16px">
-                <button class="pill-btn" id="spPronunciationBtn" title="点击朗读意大利语发音"><span class="msr">volume_up</span>听发音</button>
-              </div>
-            </div>
-
-            <div class="field-label">请输入意大利语单词</div>
-            <input
-              type="text"
-              class="spell-input"
-              id="spInput"
-              placeholder="输入意大利语..."
-              autocomplete="off"
-            >
-            <button class="primary-btn" id="spCheckBtn">检查答案</button>
-
-            <div class="hidden" id="spFeedback">
-              <p class="feedback feedback-text"></p>
-              <button class="primary-btn" id="spNextBtn">下一个 <span class="msr">arrow_forward</span></button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 浏览模式 -->
-      <section id="browseScreen" class="screen">
-        <div class="browse-container">
-          <button class="back-link" id="brBackBtn"><span class="msr">arrow_back</span>返回</button>
-          <div class="browse-controls">
-            <div class="search-wrap">
-              <span class="msr">search</span>
-              <input
-                type="text"
-                class="search-input"
-                id="searchInput"
-                placeholder="搜索单词或翻译…"
-              >
-            </div>
-            <div class="chips" id="browseFilterChips">
-              <button class="chip active" data-filter="all">全部</button>
-              <button class="chip" data-filter="mastered">已掌握</button>
-              <button class="chip" data-filter="unmastered">学习中</button>
-            </div>
-          </div>
-
-          <div class="word-list" id="wordList">
-            <!-- 动态生成单词列表 -->
-          </div>
-        </div>
-      </section>
-
-      <!-- 动词变位练习模式（多时态） -->
       <section id="conjugationScreen" class="screen">
         <div class="container narrow">
           <button class="back-link" id="conjBackBtn"><span class="msr">arrow_back</span>返回</button>
@@ -1361,7 +414,6 @@
         </div>
       </section>
 
-      <!-- 动词搭配 -->
       <section id="verbCollocationsScreen" class="screen">
         <div class="grammar-book-layout">
           <aside class="grammar-nav-sidebar" id="vcNavSidebar">
@@ -1473,7 +525,6 @@
         </div>
       </section>
 
-      <!-- 语法书阅读器 -->
       <section id="grammarBookScreen" class="screen">
         <div class="grammar-book-layout">
           <!-- 侧边栏导航 -->
@@ -1506,184 +557,124 @@
         </div>
       </section>
 
-      <!-- 社区词本浏览页面 -->
-      <section id="communityBrowseScreen" class="screen community-browse-screen">
-        <div class="container">
-          <button class="back-link" onclick="CommunityWordbooks.backToWelcome()"><span class="msr">arrow_back</span>返回</button>
-          <div class="eyebrow">Community</div>
-          <h1 class="page">社区词本</h1>
-          <p class="desc">浏览社区分享的词本，预览内容并导入到我的词本。</p>
+      <!-- ============ 进度 ============ -->
+      <section id="progressScreen" class="screen" aria-label="学习进度">
+        <div class="wrap" id="progressView" data-view></div>
+      </section>
 
-          <div class="browse-controls">
-            <div class="search-wrap">
-              <span class="msr">search</span>
-              <input
-                type="text"
-                class="search-input"
-                id="communitySearchInput"
-                placeholder="搜索词本名称..."
-                oninput="CommunityWordbooks.searchWordbooks(this.value)"
-              >
+      <!-- ============ 设置 ============ -->
+      <section id="settingsScreen" class="screen" aria-label="设置">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">Impostazioni</span>
+            <h1 class="page-title">设置</h1>
+            <p>练习偏好、外观，以及本地学习数据的备份与恢复。</p>
+          </div>
+          <div class="settings-grid">
+            <div class="panel">
+              <div class="panel-title">练习偏好</div>
+              <div id="settingsPrefs" data-view></div>
             </div>
-            <select class="filter-select" onchange="CommunityWordbooks.updateDifficultyFilter(this.value)">
-              <option value="all">全部难度</option>
-              <option value="Beginner">初级</option>
-              <option value="Intermediate">中级</option>
-              <option value="Advanced">高级</option>
-            </select>
-          </div>
-
-          <div class="community-wordbook-list" id="communityWordbookList">
-            <!-- 动态生成词本列表 -->
+            <div class="panel">
+              <div class="panel-title">学习数据</div>
+              <p class="muted small">全部进度只保存在这台设备的浏览器里。换设备或清理浏览器之前，先导出一份。</p>
+              <div class="btn-row">
+                <button type="button" class="btn" id="settingsExportBtn"><span class="msr">download</span>导出备份</button>
+                <button type="button" class="btn" id="settingsImportBtn"><span class="msr">upload</span>导入备份</button>
+                <button type="button" class="btn danger" id="settingsResetBtn"><span class="msr">restart_alt</span>重置进度</button>
+              </div>
+              <input type="file" id="importDataFileInput" accept=".json" hidden>
+            </div>
+            <div class="panel">
+              <div class="panel-title">社区词书</div>
+              <p class="muted small">浏览别人分享的单词本，或把自己的上传到社区。</p>
+              <div class="btn-row">
+                <button type="button" class="btn" data-action="community"><span class="msr">groups</span>浏览社区</button>
+                <button type="button" class="btn" data-action="community-upload"><span class="msr">ios_share</span>上传词本</button>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-title">关于</div>
+              <p class="small">Dimenticato 是一个安静、专注的多语种背词工具：意大利语、德语、英语、法语共用同一套 CEFR 分级词库格式与练习方式。所有学习数据保存在本地浏览器中。</p>
+              <dl class="kv small">
+                <dt>选择题</dt><dd><kbd>1</kbd>–<kbd>4</kbd> 作答，<kbd>Enter</kbd> 下一题，<kbd>R</kbd> 朗读</dd>
+                <dt>拼写</dt><dd><kbd>Enter</kbd> 提交 / 下一题</dd>
+                <dt>弹窗</dt><dd><kbd>Esc</kbd> 关闭</dd>
+              </dl>
+              <div class="btn-row">
+                <button type="button" class="btn" data-action="help"><span class="msr">help</span>使用说明与数据来源</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- 同源词练习：意 / 德 / 法 共用一块屏，语境按 body[data-language] 解析
-           （和 grammarBookScreen / conjugationSetupScreen 同一套路），
-           层级树登记在 cognate-app.js 的 registerCognateScreen() 里。
+    </main>
 
-           #cognatePracticeContainer 原来是 <main> 末尾一个游离的 div：不在任何
-           .screen 里，一旦显示就再也不会被切屏隐藏，会一直挂在别的页面下面。
-           这里把它搬进正式屏幕，id 与初始 class 都保持不变，app.js 里那句
-           getElementById('cognatePracticeContainer').classList.remove('hidden')
-           照旧生效。 -->
-      <section id="cognatePracticeScreen" class="screen">
-        <div class="container">
-          <button class="back-link" id="cognateBackBtn"><span class="msr">arrow_back</span>返回内容来源</button>
-          <div class="eyebrow" id="cognateEyebrow">Italian / Cognates</div>
-          <h1 class="page">同源词</h1>
-          <p class="desc" id="cognateScreenDesc">和英语长得像的单词，用已有的英语词汇量抄近路。</p>
-          <div id="cognatePracticeContainer" class="practice-container hidden"></div>
-        </div>
-      </section>
-
-      </main>
-    </div><!-- /.main -->
-
-    <!-- 抽屉遮罩（窄屏侧栏） -->
-    <div class="scrim" id="drawerScrim"></div>
-
-    <!-- 旧工具栏：保留隐藏以维持导出/导入/重置/统计/语言弹层的事件绑定，
-         可见入口已迁移到 Settings 页与侧栏语言胶囊。 -->
-    <div class="legacy-actions hidden" aria-hidden="true">
-      <button id="languageSwitchBtn" type="button">语言</button>
-      <div class="language-switcher-popover hidden" id="languageSwitcherPopover">
-        <button class="language-switcher-option active" data-language="italian">Italian</button>
-        <button class="language-switcher-option" data-language="german">German</button>
-        <button class="language-switcher-option" data-language="english">English</button>
-        <button class="language-switcher-option" data-language="french">French</button>
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <span><span class="brand-name">Dimen<em>ticato</em></span> · 词汇数据 CC BY-SA，来源见「使用说明」</span>
+        <a href="https://github.com/Kendrick-Stein/Dimenticato" target="_blank" rel="noopener">GitHub</a>
       </div>
-      <button id="exportDataBtn" type="button">导出数据</button>
-      <button id="importDataBtn" type="button">导入数据</button>
-      <button id="resetBtn" type="button">重置进度</button>
-      <button id="statsBtn" type="button">查看统计</button>
-    </div>
-
-    <button class="mobile-floating-back hidden" id="mobileFloatingBackBtn" type="button" aria-label="返回上一级">
-      <svg class="icon"><use href="#icon-book-open"></use></svg>
-      <span>返回</span>
-    </button>
-
+    </footer>
   </div>
 
-  <!-- 统计弹窗 -->
-  <div id="statsModal" class="modal hidden">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3><span class="msr">monitoring</span>学习统计</h3>
-        <button class="close-btn" id="closeStatsBtn">×</button>
-      </div>
-      <div class="modal-body">
-        <div class="stat-item">
-          <span class="stat-label">总学习单词数：</span>
-          <span class="stat-value" id="statTotalLearned">0</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">已掌握单词数：</span>
-          <span class="stat-value" id="statMastered">0</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">学习进度：</span>
-          <span class="stat-value" id="statProgress">0%</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">选择题练习次数：</span>
-          <span class="stat-value" id="statMCAttempts">0</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">拼写练习次数：</span>
-          <span class="stat-value" id="statSpAttempts">0</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">总正确率：</span>
-          <span class="stat-value" id="statAccuracy">0%</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <input type="file" id="wordbookFileInput" accept=".json,.txt" hidden>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <!-- 单词本编辑器模态框 -->
-  <div id="wordbookEditorModal" class="modal hidden">
+  <!-- ============ 弹窗 ============ -->
+
+  <!-- 单词本编辑器 -->
+  <div id="wordbookEditorModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="editorTitle">
     <div class="modal-content editor-modal-content">
       <div class="modal-header">
-        <h3><span class="msr">edit</span>编辑单词本: <span id="editorWordbookName"></span></h3>
-        <button class="close-btn" onclick="WordbookEditor.hideEditorModal()">×</button>
+        <h3 id="editorTitle"><span class="msr">edit</span>编辑单词本：<span id="editorWordbookName"></span></h3>
+        <button type="button" class="close-btn" data-editor="close" aria-label="关闭">×</button>
       </div>
       <div class="modal-body editor-modal-body">
         <div class="editor-toolbar">
-          <div style="display: flex; gap: 0.5rem;">
-            <button class="editor-toolbar-btn" onclick="WordbookEditor.addNewWord()">
-              <span class="msr">add</span>添加单词
-            </button>
-            <button class="editor-toolbar-btn" onclick="WordbookEditor.batchImportWords()">
-              <span class="msr">download</span>批量添加新单词
-            </button>
-            <button class="editor-toolbar-btn" onclick="WordbookEditor.showExportDialog(WordbookEditor.currentEditingWordbook.id)" title="导出单词本">
-              <span class="msr">ios_share</span>导出
-            </button>
+          <div class="btn-row">
+            <button type="button" class="editor-toolbar-btn" data-editor="add"><span class="msr">add</span>添加单词</button>
+            <button type="button" class="editor-toolbar-btn" data-editor="batch-import"><span class="msr">playlist_add</span>批量添加</button>
+            <button type="button" class="editor-toolbar-btn" data-editor="export"><span class="msr">ios_share</span>导出</button>
           </div>
-          <input type="file" id="editorBatchImportInput" accept=".txt" style="display: none;">
+          <input type="file" id="editorBatchImportInput" accept=".txt" hidden>
           <div class="editor-batch-actions" style="display: none;">
-            <button class="editor-toolbar-btn danger" onclick="WordbookEditor.batchDelete()">
-              <span class="msr">delete</span>删除选中
-            </button>
+            <button type="button" class="editor-toolbar-btn danger" data-editor="batch-delete"><span class="msr">delete</span>删除选中</button>
           </div>
         </div>
-        <div id="editorWordList" class="editor-word-list">
-          <!-- 动态生成单词列表 -->
-        </div>
+        <div id="editorWordList" class="editor-word-list"></div>
       </div>
     </div>
   </div>
 
-  <!-- 单词编辑对话框 -->
-  <div id="wordEditDialog" class="modal hidden">
-    <div class="modal-content" style="max-width: 600px;">
+  <!-- 单词编辑 -->
+  <div id="wordEditDialog" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="wordEditDialogTitle">
+    <div class="modal-content" style="max-width: 560px;">
       <div class="modal-header">
         <h3 id="wordEditDialogTitle">编辑单词</h3>
-        <button class="close-btn" onclick="WordbookEditor.hideWordEditDialog()">×</button>
+        <button type="button" class="close-btn" data-editor="cancel-word" aria-label="关闭">×</button>
       </div>
       <div class="modal-body">
-        <form id="wordEditForm" onsubmit="event.preventDefault(); WordbookEditor.saveWordEdit();">
+        <form id="wordEditForm">
           <div class="form-group">
-            <label for="editWordItalian" id="editWordPrimaryLabel">意大利语 *</label>
-            <input type="text" id="editWordItalian" class="form-input" required>
+            <label for="editWordText" id="editWordTextLabel">单词 *</label>
+            <input type="text" id="editWordText" class="form-input" required>
           </div>
           <div class="form-group">
-            <label for="editWordEnglish" id="editWordSecondaryLabel">英语翻译 *</label>
-            <input type="text" id="editWordEnglish" class="form-input" required>
+            <label for="editWordZh">中文释义 *</label>
+            <input type="text" id="editWordZh" class="form-input">
           </div>
           <div class="form-group">
-            <label for="editWordChinese" id="editWordChineseLabel">中文翻译</label>
-            <input type="text" id="editWordChinese" class="form-input">
+            <label for="editWordEn">英文释义</label>
+            <input type="text" id="editWordEn" class="form-input">
           </div>
           <div class="form-group">
             <label for="editWordNotes">笔记</label>
             <textarea id="editWordNotes" class="form-textarea" rows="3"></textarea>
           </div>
           <div class="form-actions">
-            <button type="button" class="form-btn cancel" onclick="WordbookEditor.hideWordEditDialog()">取消</button>
+            <button type="button" class="form-btn cancel" data-editor="cancel-word">取消</button>
             <button type="submit" class="form-btn primary">保存</button>
           </div>
         </form>
@@ -1691,21 +682,20 @@
     </div>
   </div>
 
-  <!-- 单词本选择对话框 -->
-  <div id="wordbookSelectDialog" class="modal hidden">
-    <div class="modal-content" style="max-width: 500px;">
+  <!-- 加入单词本 -->
+  <div id="wordbookSelectDialog" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="wordbookSelectTitle">
+    <div class="modal-content" style="max-width: 480px;">
       <div class="modal-header">
-        <h3><span class="msr">auto_stories</span>选择单词本</h3>
-        <button class="close-btn" onclick="WordbookEditor.hideWordbookSelectDialog()">×</button>
+        <h3 id="wordbookSelectTitle"><span class="msr">bookmark_add</span>加入单词本</h3>
+        <button type="button" class="close-btn" data-close-modal aria-label="关闭">×</button>
       </div>
       <div class="modal-body">
-        <p style="margin-bottom: 1rem; color: var(--text-secondary);">将单词添加到：</p>
-        <div id="wordbookSelectList" class="wordbook-select-list">
-          <!-- 动态生成单词本列表 -->
-        </div>
+        <p class="muted small">将这个词添加到：</p>
+        <div id="wordbookSelectList" class="wordbook-select-list"></div>
       </div>
     </div>
   </div>
+
 
   <!-- 增强统计模态框 -->
   <div id="enhancedStatsModal" class="modal hidden">
@@ -1810,9 +800,6 @@
     </div>
   </div>
 
-  <!-- 数据导入文件选择器 -->
-  <input type="file" id="importDataFileInput" accept=".json" style="display: none;">
-
   <!-- 社区词本上传模态框 -->
   <div id="communityUploadModal" class="modal hidden">
     <div class="modal-content" style="max-width: 600px;">
@@ -1898,198 +885,59 @@
     </div>
   </div>
 
-  <!-- 帮助弹窗 -->
-  <div id="helpModal" class="modal hidden">
+  <!-- 使用说明 -->
+  <div id="helpModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
     <div class="modal-content help-modal-content">
       <div class="modal-header">
-        <h3><span class="msr">help</span>使用说明</h3>
-        <button class="close-btn" id="closeHelpBtn">×</button>
+        <h3 id="helpTitle"><span class="msr">help</span>使用说明</h3>
+        <button type="button" class="close-btn" data-close-modal aria-label="关闭">×</button>
       </div>
       <div class="modal-body help-modal-body">
         <div class="help-section">
-          <h2><span class="msr">translate</span>Dimenticato - 背单词</h2>
-          <p class="help-intro">一个纯静态的多语言词汇学习网页应用，当前支持 Italian、German、English、French 四个语言入口，支持本地离线使用。</p>
+          <h3><span class="msr">explore</span>怎么用</h3>
+          <div class="feature-box">
+            <ul>
+              <li><strong>换语言</strong> — 顶栏右侧 IT / DE / EN / FR。四门语言的页面、练习方式和词库格式完全一样，进度各自独立。</li>
+              <li><strong>词汇</strong> — 先选范围（系统词库的某个 CEFR 等级，或你自己的单词本），再选练习方式：选择题、拼写、浏览、打字游戏，意/德/法还有同源词。</li>
+              <li><strong>复习</strong> — 答过的词按 SM-2 间隔重复排期，到期的词会排在每组练习的最前面；首页和进度页也有「复习到期」入口。</li>
+              <li><strong>语法</strong> — 语法书、动词变位、动词搭配；德语另有 A1–C1 课程路线。</li>
+              <li><strong>进度 / 设置</strong> — 每周走势与各等级掌握度；练习方向与难度、深色模式、备份与恢复。</li>
+            </ul>
+          </div>
         </div>
 
         <div class="help-section">
-          <h3><span class="msr">auto_awesome</span>功能特点</h3>
-          
+          <h3><span class="msr">edit_note</span>自定义单词本</h3>
           <div class="feature-box">
-            <h4><span class="msr">translate</span>多语言入口</h4>
+            <p>支持导入 JSON（本应用导出的格式）或 TXT。TXT 用记事本就能写：每个词一段，段与段之间空一行。</p>
             <ul>
-              <li><strong>Italian</strong>：完整词汇、语法、动词变位、动词搭配、社区与统计体验</li>
-              <li><strong>German</strong>：A1-C1 课程路线、系统词汇、语法书、动词变位、Progress、Settings &amp; Data</li>
-              <li><strong>English</strong>：系统词汇练习、英语语法书、动词变位、动词搭配（介词搭配与短语动词）、基础 Progress、Settings &amp; Data</li>
-              <li><strong>French</strong>：A1-C1 词汇、中文语法专题、动词变位、动词搭配、Progress、Settings &amp; Data</li>
-              <li><strong>社区词库</strong>：当前四个语言入口共用同一个社区词库池</li>
+              <li>第 1 行：单词（德语名词可带冠词，如 <code>der Hund</code>）</li>
+              <li>第 2 行：中文释义</li>
+              <li>第 3 行（可选）：如果第 2 行写的是英文，这一行写中文</li>
+              <li>第 4 行（可选）：笔记</li>
+              <li>只写一行单词也行——会自动在系统词库里查释义</li>
             </ul>
-          </div>
-
-          <div class="feature-box">
-            <h4><span class="msr">menu_book</span>系统词汇库</h4>
-            <ul>
-              <li><strong>Italian</strong>：<span data-count="italian-vocab">27,117</span> 个意大利语单词及英语翻译（含 <span data-count="italian-cognates">1,586</span> 个同源词）</li>
-              <li><strong>German</strong>：<span data-count="german-vocab">24,314</span> 个系统词条，可进行选择题 / 拼写 / 浏览练习</li>
-              <li><strong>English</strong>：<span data-count="english-vocab">24,000</span> 个系统词条，可进行选择题 / 拼写 / 浏览练习</li>
-              <li><strong>French</strong>：<span data-count="french-vocab">24,536</span> 个 A1-C2 词条，可进行选择题 / 拼写 / 浏览练习</li>
-              <li>系统词汇默认按词频或数据顺序组织，适合从高频内容逐步扩展</li>
-            </ul>
-          </div>
-
-          <div class="feature-box">
-            <h4><span class="msr">edit</span>自定义单词本</h4>
-            <ul>
-              <li><strong>导入自己的单词本</strong> - 支持 JSON 和 TXT 两种格式</li>
-              <li><strong>独立进度跟踪</strong> - 每个单词本的学习进度独立保存</li>
-              <li><strong>添加个人笔记</strong> - 为每个单词添加你自己的学习笔记</li>
-              <li><strong>随时管理</strong> - 导入、删除、切换单词本</li>
-            </ul>
-          </div>
-
-          <div class="feature-box highlight">
-            <h4><span class="msr">auto_stories</span>TXT 格式 - 超简单的记笔记方式</h4>
-            <p>不需要处理复杂的 JSON 语法，用记事本就能创建单词本！</p>
-            
-            <p><strong>基本规则：</strong></p>
-            <ol>
-              <li>每个单词用<strong>空行</strong>分隔</li>
-              <li>每个单词包含 <strong>3-4 行</strong>：
-                <ul>
-                  <li>第 1 行：意大利语</li>
-                  <li>第 2 行：英语</li>
-                  <li>第 3 行：中文</li>
-                  <li>第 4 行（可选）：笔记</li>
-                </ul>
-              </li>
-            </ol>
-
-            <p><strong>示例：</strong></p>
-            <pre class="code-block">ciao
-hello, hi, bye
+            <pre class="help-code">ciao
 你好，再见
-非正式场合使用，既可以表示问候也可以表示告别
+非正式场合，问候与告别都可以用
 
 grazie
 thank you
 谢谢
-grazie mille = 非常感谢
 
-acqua
-water
-水
-
-amore
-love
-爱
-意大利文化中非常重要的词汇</pre>
-
-            <p><strong>优势：</strong></p>
-            <ul>
-              <li>用任何文本编辑器都能编辑</li>
-              <li>快速记录，不用考虑语法</li>
-              <li>纯文本，方便备份和版本控制</li>
-              <li>想加笔记就加，不加也行</li>
-            </ul>
-
-            <p><strong>使用方法：</strong></p>
-            <ol>
-              <li>创建 <code>.txt</code> 文件，按格式添加单词</li>
-              <li>在应用中点击"导入单词本"</li>
-              <li>选择你的 TXT 文件</li>
-              <li>开始学习！</li>
-            </ol>
-          </div>
-
-          <div class="feature-box">
-            <h4><span class="msr">grid_view</span>学习模式</h4>
-            <ul>
-              <li><strong>选择题模式</strong> - 显示意大利语单词，从4个选项中选择正确的英语翻译
-                <ul>
-                  <li>中文提示默认隐藏，需要时点击“显示提示”按钮查看</li>
-                  <li>避免直接给出答案，提高学习效果</li>
-                </ul>
-              </li>
-              <li><strong>拼写模式</strong> - 显示英语翻译，输入意大利语单词
-                <ul>
-                  <li>中文提示默认显示，帮助理解单词含义</li>
-                </ul>
-              </li>
-              <li><strong>浏览模式</strong> - 查看完整单词列表，支持搜索和过滤</li>
-            </ul>
+acqua</pre>
           </div>
         </div>
 
         <div class="help-section">
-          <h3><span class="msr">check_circle</span>使用方法</h3>
-          
-          <div class="usage-box">
-            <h4>使用系统词汇库：</h4>
-            <ol>
-              <li><strong>先选择语言</strong> - 在左侧 sidebar 中切换 Italian / German / English / French</li>
-              <li><strong>选择难度级别</strong> - 初级/中级/高级/全部</li>
-              <li><strong>选择学习模式</strong> - 选择题/拼写/浏览模式</li>
-              <li><strong>开始学习</strong> - 进度自动保存</li>
-            </ol>
-          </div>
-
-          <div class="usage-box">
-            <h4>使用自定义单词本：</h4>
-            <ol>
-              <li><strong>先选择语言</strong> - 词本入口会跟随当前语言模块展示</li>
-              <li><strong>创建单词本</strong> - 用记事本创建 <code>.txt</code> 文件，按格式添加单词</li>
-              <li><strong>导入单词本</strong> - 点击"导入单词本"按钮，选择你的文件</li>
-              <li><strong>选择单词本</strong> - 点击单词本卡片激活</li>
-              <li><strong>选择学习模式</strong> - 选择题/拼写/浏览模式</li>
-              <li><strong>开始学习</strong> - 每个单词本的进度独立保存</li>
-            </ol>
-          </div>
-
-          <p class="help-tip"><strong>提示：</strong>顶部始终显示当前词汇量、已掌握数量和学习进度</p>
-        </div>
-
-        <div class="help-section">
-          <h3><span class="msr">auto_awesome</span>其他功能</h3>
-          
+          <h3><span class="msr">backup</span>学习数据</h3>
           <div class="feature-box">
-            <h4><span class="msr">ios_share</span>导出/导入学习记录</h4>
             <ul>
-              <li><strong>导出数据</strong> - 将所有学习进度、统计数据、自定义单词本导出为 JSON 文件
-                <ul>
-                  <li>包含系统词汇和自定义单词本的学习进度</li>
-                  <li>包含每日统计和练习记录</li>
-                  <li>文件名自动包含导出日期时间</li>
-                </ul>
-              </li>
-              <li><strong>导入数据</strong> - 从之前导出的 JSON 文件恢复学习记录
-                <ul>
-                  <li><strong>覆盖模式</strong>：清空现有数据，用导入数据完全替换</li>
-                  <li><strong>合并模式</strong>：保留现有数据，将导入数据合并进来</li>
-                  <li>适用于跨设备同步学习进度</li>
-                </ul>
-              </li>
-            </ul>
-            <p class="help-tip"><strong>提示：</strong>建议定期导出数据备份；德语和英语虽然使用独立进度 key，但仍走统一导入导出流程。</p>
-          </div>
-
-          <div class="feature-box">
-            <h4><span class="msr">search</span>浏览模式高级功能</h4>
-            <ul>
-              <li><strong>添加到单词本</strong> - 在浏览模式中，点击单词旁的添加按钮可将单词添加到自定义单词本
-                <ul>
-                  <li>可以选择添加到哪个单词本</li>
-                  <li>方便从系统词库中挑选单词创建个性化学习集</li>
-                </ul>
-              </li>
-              <li><strong>搜索过滤</strong> - 支持按意大利语或英语搜索</li>
-              <li><strong>状态筛选</strong> - 可切换显示全部/已掌握/未掌握单词</li>
+              <li>所有进度保存在浏览器本地（localStorage），不会上传。</li>
+              <li>「设置 → 导出备份」得到一个 JSON 文件；在另一台设备上「导入备份」，可选择覆盖或合并。</li>
+              <li>旧版本导出的备份可以直接导入。</li>
             </ul>
           </div>
-
-          <ul>
-            <li><strong>查看统计</strong> - 查看学习数据和正确率</li>
-            <li><strong>切换主题</strong> - 在浅色和深色主题之间切换</li>
-            <li><strong>重置进度</strong> - 清除所有学习记录（需确认）</li>
-          </ul>
         </div>
 
         <div class="help-section">
@@ -2116,6 +964,7 @@ love
           </div>
         </div>
 
+
         <div class="help-section">
           <p class="help-footer">祝学习愉快。Buono studio.</p>
         </div>
@@ -2123,30 +972,11 @@ love
     </div>
   </div>
 
-  <!--
-    脚本加载策略
-    ------------
-    所有外链脚本一律带 defer：
-      · defer 不阻塞 HTML 解析，加载动画能立刻画出来，不用等 29MB 的词库跑完；
-      · defer 之间**严格保持文档顺序**执行，依赖链（utils → navigation → router →
-        数据 → app → 各语言模块）和以前完全一致，行为不变；
-      · 所有模块的 DOMContentLoaded 依旧在全部 defer 脚本执行完之后触发。
-    本次不做按语言拆包 / 懒加载，那需要改各模块自身，属于下一轮。
-  -->
-
+  <!-- 第三方库兜底 + 就绪闸门；业务代码与词库由 lib/lang-loader.js 按语言注入 -->
   <script>
-    // 各模块分两派：german-app.js / german-course.js / french-app.js /
-    // community-wordbooks.js / lib/router.js / lib/quiz-engine.js 用
-    // `readyState === 'loading'` 决定要不要等 DOMContentLoaded；app.js /
-    // app-enhanced.js / conjugation-app.js / verb-collocations*.js 则是裸监听。
-    // 不做处理的话前一派会在脚本执行的当场同步跑完，抢在 app.js 之前，
-    // 初始语言与初始屏幕会被随后的 app.js 覆盖回意大利语。
-    //
-    // 这道闸门把 readyState 伪装成 'loading'，逼两派都走 DOMContentLoaded，
-    // 初始化顺序因此与「全静态 <script>」时代逐字一致。
-    // 现在它还多担一个职责：语言包是动态注入的，闸门要一直关到
-    // 「当前语言的数据 + 全部代码」都执行完，由 LangLoader.boot() 调 release()
-    // 放行并派发合成 DOMContentLoaded。所以这里**不再**监听真事件。
+    // 就绪闸门：把 document.readyState 伪装成 'loading'，直到 LangLoader 把
+    // 「共享代码 + 当前语言词库」全部注入执行完，再由 release() 放行并派发合成
+    // DOMContentLoaded。这样各模块无论用哪种写法等待 DOM 就绪，初始化顺序都一致。
     (function () {
       'use strict';
       var pretendLoading = true;
@@ -2245,6 +1075,5 @@ love
   -->
   <script defer src="lib/lang-loader.js"></script>
   <script defer src="lib/boot.js"></script>
-
 </body>
 </html>

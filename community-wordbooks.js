@@ -21,8 +21,7 @@ const CommunityWordbooks = {
   allWordbooks: [], // 缓存所有词本数据（未按语言过滤）
 
   activeLanguage: 'italian', // 打开社区页面时所处的语言入口
-  returnScreen: 'vocabularyScreen', // 返回目标
-  pendingWordbookRefresh: null, // 返回时需要重新渲染的语言词本列表
+  returnScreen: 'vocabScreen', // 返回目标
   bound: false, // 事件是否已绑定（init 幂等）
   serverLanguageFilter: true, // 服务端 language 过滤是否可用（老库可能没有该列）
 
@@ -94,26 +93,9 @@ const CommunityWordbooks = {
     return this.normalizeLanguage(document.body.getAttribute('data-language'));
   },
 
-  RETURN_SCREENS: {
-    italian: 'vocabularyScreen',
-    german: 'germanVocabularyScreen',
-    english: 'englishVocabularyScreen',
-    french: 'frenchVocabularyScreen'
-  },
-
-  /**
-   * 解析返回目标。
-   * GermanApp.communityReturnScreen 只在德/英/法入口被赋值，意大利语入口不会重置它，
-   * 因此只接受与当前语言入口匹配的值，否则回落到该语言的词汇页。
-   */
-  resolveReturnScreen(language) {
-    const fallback = this.RETURN_SCREENS[language] || 'vocabularyScreen';
-    const requested = window.GermanApp && window.GermanApp.communityReturnScreen;
-    if (typeof requested !== 'string' || !requested) return fallback;
-    const belongs = language === 'italian'
-      ? !/^(german|english|french)/.test(requested)
-      : requested.indexOf(language) === 0;
-    return belongs ? requested : fallback;
+  /** 返回目标：统一的词汇页（四门语言共用一套屏幕）。 */
+  resolveReturnScreen() {
+    return 'vocabScreen';
   },
 
   // ==================== 生命周期 ====================
@@ -338,7 +320,7 @@ const CommunityWordbooks = {
           parsedWords = jsonData.words || jsonData;
           wordCount = Array.isArray(parsedWords) ? parsedWords.length : 0;
         } else if (file.name.endsWith('.txt')) {
-          const parseResult = WordbookManager.parseTxtWordbook(fileContent, language);
+          const parseResult = window.Wordbooks.parseTxt(fileContent, language);
           parsedWords = parseResult.words;
           wordCount = parsedWords.length;
         }
@@ -834,12 +816,7 @@ const CommunityWordbooks = {
         return Array.isArray(words) ? words : [];
       }
       if (wordbook.file_url.endsWith('.txt')) {
-        if (typeof WordbookManager === 'undefined') {
-          alert('单词本模块未加载，无法解析文件');
-          return null;
-        }
-        const parseResult = WordbookManager.parseTxtWordbook(fileContent, language);
-        return parseResult.words;
+        return window.Wordbooks.parseTxt(fileContent, language).words;
       }
     } catch (error) {
       alert('解析文件失败: ' + error.message);
@@ -883,7 +860,7 @@ const CommunityWordbooks = {
         return;
       }
 
-      if (typeof WordbookManager === 'undefined' || typeof AppState === 'undefined') {
+      if (!window.Wordbooks) {
         alert('单词本模块未加载，无法导入');
         return;
       }
@@ -902,8 +879,7 @@ const CommunityWordbooks = {
       };
 
       // 5. 保存到本地
-      AppState.customWordbooks.push(localWordbook);
-      WordbookManager.saveWordbooks();
+      window.Wordbooks.add(localWordbook);
 
       // 6. 更新下载计数
       await this.incrementDownloadCount(client, wordbookId, wordbook.download_count);
@@ -914,8 +890,6 @@ const CommunityWordbooks = {
       // 8. 刷新列表（更新下载次数）
       this.fetchAndDisplayWordbooks();
 
-      // 9. 刷新本地单词本卡片（不切屏的那些可以立即刷新）
-      this.refreshLocalWordbookViews(language);
 
     } catch (error) {
       console.error('下载词本失败:', error);
@@ -945,25 +919,7 @@ const CommunityWordbooks = {
   },
 
   /**
-   * 导入后刷新对应语言的本地词本列表。
-   * 德/英的渲染函数会顺带切屏，所以只在返回时刷新（见 backToWelcome）。
-   */
-  refreshLocalWordbookViews(language) {
-    if (language === 'italian' && typeof WordbookManager !== 'undefined') {
-      WordbookManager.renderWordbookCards();
-      return;
-    }
-    if (language === 'french' && window.FrenchApp && typeof window.FrenchApp.renderWordbooks === 'function') {
-      window.FrenchApp.renderWordbooks();
-      return;
-    }
-    if (language === 'german' || language === 'english') {
-      this.pendingWordbookRefresh = language;
-    }
-  },
-
-  /**
-   * 预览词本
+   * 预览词本（前 20 个单词）
    */
   async previewWordbook(wordbookId) {
     try {
@@ -973,7 +929,6 @@ const CommunityWordbooks = {
         return;
       }
 
-      // 1. 获取词本元数据
       const { data: wordbook, error: fetchError } = await this.withTimeout(client
         .from('community_wordbooks')
         .select('*')
@@ -985,50 +940,19 @@ const CommunityWordbooks = {
         return;
       }
 
-      // 2/3. 下载并解析文件
       const language = this.normalizeLanguage(wordbook.language);
       const words = await this.fetchWordbookFile(wordbook, language);
       if (!words) return;
 
-      // 4. 显示预览（前20个单词）
-      this.showPreviewModal(wordbook, words.slice(0, 20), language);
-
+      // 社区文件可能是任意历史格式，统一成 { word, zh, en } 再展示
+      const book = window.Wordbooks.normalizeBook({ language, words: words.slice(0, 20) });
+      this.showPreviewModal(wordbook, book ? book.words : [], language);
     } catch (error) {
       console.error('预览词本失败:', error);
       alert('预览失败: ' + error.message);
     }
   },
 
-  /**
-   * 取出预览用的三行文本（不同语言的主字段不同）
-   */
-  previewWordFields(word, language) {
-    if (!word || typeof word !== 'object') {
-      return { primary: String(word == null ? '' : word), secondary: '', chinese: '' };
-    }
-
-    const byLanguage = {
-      italian: word.italian,
-      german: word.german,
-      english: word.english,
-      french: word.french
-    };
-    const primary = byLanguage[language] || word.display
-      || word.italian || word.german || word.french || word.english || '';
-    const secondary = language === 'italian'
-      ? (word.english || word.meaning || '')
-      : (word.meaning || word.english || '');
-
-    return {
-      primary: primary,
-      secondary: secondary,
-      chinese: word.chinese && word.chinese !== secondary ? word.chinese : ''
-    };
-  },
-
-  /**
-   * 显示预览模态框
-   */
   showPreviewModal(wordbook, words, language) {
     const modal = document.getElementById('communityPreviewModal');
     if (!modal) return;
@@ -1037,10 +961,8 @@ const CommunityWordbooks = {
     const difficultyInfo = difficultyLevels[wordbook.difficulty] || { label: wordbook.difficulty || '未分级' };
     const languageKey = language || this.normalizeLanguage(wordbook.language);
 
-    // 设置标题（textContent，天然安全）
     document.getElementById('previewWordbookTitle').textContent = wordbook.name || '';
 
-    // 设置元信息
     const metaHtml = `
       <div class="preview-meta">
         <span><span class="msr">translate</span> ${this.esc(this.languageLabel(languageKey))}</span>
@@ -1058,61 +980,37 @@ const CommunityWordbooks = {
     `;
     document.getElementById('previewWordbookMeta').innerHTML = metaHtml;
 
-    // 渲染单词列表
-    const wordsHtml = words.map(word => {
-      const fields = this.previewWordFields(word, languageKey);
-      return `
+    const wordsHtml = words.map(word => `
       <div class="preview-word-item">
-        <div class="preview-word-italian">${this.esc(fields.primary)}</div>
-        <div class="preview-word-english">${this.esc(fields.secondary)}</div>
-        ${fields.chinese ? `<div class="preview-word-chinese">${this.esc(fields.chinese)}</div>` : ''}
+        <div class="preview-word-italian">${this.esc(word.word)}</div>
+        <div class="preview-word-english">${this.esc(word.zh)}</div>
+        ${word.en ? `<div class="preview-word-chinese">${this.esc(word.en)}</div>` : ''}
       </div>
-    `;
-    }).join('');
+    `).join('');
 
     document.getElementById('previewWordList').innerHTML = wordsHtml +
       `<p class="preview-note">仅显示前 20 个单词</p>`;
 
-    // 设置下载按钮
     const downloadBtn = document.getElementById('previewDownloadBtn');
     downloadBtn.onclick = () => {
       this.hidePreviewModal();
       this.downloadWordbook(wordbook.id);
     };
 
-    // 显示模态框
     modal.classList.remove('hidden');
   },
 
-  /**
-   * 隐藏预览模态框
-   */
   hidePreviewModal() {
     const modal = document.getElementById('communityPreviewModal');
-    if (modal) {
-      modal.classList.add('hidden');
-    }
+    if (modal) modal.classList.add('hidden');
   },
 
   /**
    * 返回来源页面
    */
   backToWelcome() {
-    const language = this.activeLanguage || this.resolveActiveLanguage();
-    const returnScreen = this.returnScreen || this.resolveReturnScreen(language);
-
-    // 德语/英语的词本网格挂在词汇页上，且渲染函数会自己切屏，只能在返回时刷新
-    const pending = this.pendingWordbookRefresh;
-    this.pendingWordbookRefresh = null;
-    if (pending && returnScreen === this.RETURN_SCREENS[pending]
-      && window.GermanApp && typeof window.GermanApp.renderLanguageWordbooks === 'function') {
-      window.GermanApp.renderLanguageWordbooks(pending);
-      return;
-    }
-
-    if (typeof window.showScreen === 'function') {
-      window.showScreen(returnScreen);
-    }
+    const returnScreen = this.returnScreen || this.resolveReturnScreen();
+    if (typeof window.showScreen === 'function') window.showScreen(returnScreen);
   }
 };
 

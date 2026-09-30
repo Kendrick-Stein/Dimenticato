@@ -39,7 +39,6 @@ const VALIDATORS = [
   'scripts/validate_german_grammar.js',
   'scripts/validate_english_grammar.js',
   'scripts/validate_english_collocations.js',
-  'scripts/validate_index_counts.js',
 ];
 
 function extractScripts(html) {

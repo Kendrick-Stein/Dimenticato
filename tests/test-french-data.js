@@ -115,15 +115,7 @@ assert.deepEqual(
   'Accent-blind dedupe drops exactly these A1 words — do not switch back to it'
 );
 
-// 运行时也必须用保留重音的 key，否则数据对了、用户看到的词表还是少的
-const frenchAppSource = fs.readFileSync(path.join(__dirname, '..', 'french-app.js'), 'utf8');
-if (!/DimText\.headwordKey|headwordKey\(/.test(frenchAppSource)) {
-  console.warn(
-    'KNOWN ISSUE [french-app]: french-app.js buildSystemVocabulary() 仍在用抹重音的 key 去重，' +
-    `运行时会丢掉 ${droppedByAccentBlindness.length} 个词（${droppedByAccentBlindness.join('、')}）；` +
-    '应改成 window.DimText.headwordKey()。'
-  );
-}
+// 运行时（lib/vocab.js）直接使用 fr.js 的词条，不再自行去重，所以上面的数据断言就是用户看到的词表。
 
 const topics = grammar.tree.parts.flatMap(part =>
   part.chapters.flatMap(chapter => chapter.topics)

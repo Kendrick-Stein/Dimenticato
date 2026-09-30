@@ -230,13 +230,12 @@ const ChartsManager = {
     
     const ctx = canvas.getContext('2d');
     
-    // 统计不同状态的单词数量。词表必须跟着当前语言走：AppState.currentWords
-    // 是意大利语专属状态，从德/法进度页打开统计时用它会把别的语言的数据
-    // 画进来。ReviewSession.wordsFor() 是现成的按语言取词入口。
+    // 统计不同状态的单词数量。词表跟着当前语言走：优先 ReviewSession.wordsFor()，
+    // 否则直接取统一词库；条目都是 v1 entry，SRS 以 entry.word 为键。
     const lang = window.getActiveLanguage ? window.getActiveLanguage() : 'italian';
     const words = (window.ReviewSession && typeof window.ReviewSession.wordsFor === 'function')
       ? window.ReviewSession.wordsFor(lang)
-      : (window.AppState && Array.isArray(window.AppState.currentWords) ? window.AppState.currentWords : []);
+      : (window.Vocab ? window.Vocab.entries(lang) : []);
 
     let newWords = 0;
     let learningWords = 0;
@@ -429,3 +428,7 @@ function switchStatsTab(tabName) {
     }, 100);
   }
 }
+
+window.showEnhancedStatsModal = showEnhancedStatsModal;
+window.hideEnhancedStatsModal = hideEnhancedStatsModal;
+window.switchStatsTab = switchStatsTab;

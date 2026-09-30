@@ -172,9 +172,8 @@ const VerbCollocationPractice = (() => {
 
   function bindEvents() {
     dom.backBtn?.addEventListener('click', () => {
-      const fallback = state.lang === 'italian' ? 'grammarScreen' : `${state.lang}GrammarScreen`;
-      if (typeof goBack === 'function') goBack({ fallbackTarget: fallback });
-      else showScreen(fallback);
+      if (typeof goBack === 'function') goBack({ fallbackTarget: 'verbCollocationsScreen' });
+      else showScreen('verbCollocationsScreen');
     });
     dom.startBtn?.addEventListener('click', start);
     dom.checkBtn?.addEventListener('click', checkInputAnswer);
@@ -191,8 +190,7 @@ const VerbCollocationPractice = (() => {
     if (dom.title) dom.title.textContent = `${profile.label}动词搭配练习`;
     if (dom.eyebrow) dom.eyebrow.textContent = `${profile.label} / Verb Collocations Practice`;
     if (dom.backBtn) {
-      dom.backBtn.innerHTML = '<span class="msr">arrow_back</span>返回 ' +
-        escapeHtml(state.lang === 'italian' ? 'Grammar' : profile.label + '语法');
+      dom.backBtn.innerHTML = '<span class="msr">arrow_back</span>返回语法';
     }
   }
 

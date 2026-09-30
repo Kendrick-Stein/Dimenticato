@@ -147,7 +147,7 @@
       return 'other';
     },
     storageKey: 'dimenticato_conjugation_lessons_de',
-    backTarget: 'germanGrammarScreen',
+    backTarget: 'grammarScreen',
     localeSort: 'de',
     lookupPlaceholder: '例如：sein / bin / war / gewesen',
     typingPlaceholder: '例如：bin / war / gewesen'
@@ -197,7 +197,7 @@
       return 'other';
     },
     storageKey: 'dimenticato_conjugation_lessons_en',
-    backTarget: 'englishGrammarScreen',
+    backTarget: 'grammarScreen',
     localeSort: 'en',
     lookupPlaceholder: '例如：be / am / was / been',
     typingPlaceholder: '例如：am / was / have been'
@@ -267,7 +267,7 @@
       return 'other';
     },
     storageKey: 'dimenticato_conjugation_lessons_fr',
-    backTarget: 'frenchGrammarScreen',
+    backTarget: 'grammarScreen',
     localeSort: 'fr',
     lookupPlaceholder: '例如：être / suis / étais / été',
     typingPlaceholder: "例如：suis / étais / ai été（j'ai été 也算对）"
@@ -1393,18 +1393,9 @@ ${moodRows}
       if (typeof window.setPracticeContext === 'function') window.setPracticeContext('conjugation');
     });
 
-    // The Italian Grammar hub's 动词变位 card (#goConjugationSetupBtn, handler in
-    // app.js) only calls showScreen('conjugationSetupScreen') — it does NOT reset
-    // `config`. If German/English/French previously opened this SHARED screen,
-    // `config` would still be
-    // non-Italian and the Italian card would render the wrong
-    // language. Re-bind here to reset back to the Italian config first. Both
-    // handlers call showScreen on the same screen, which is idempotent.
-    document.getElementById('goConjugationSetupBtn')?.addEventListener('click', () => {
-      if (config !== ITALIAN_CONFIG) {
-        config = ITALIAN_CONFIG;
-        reloadForActiveConfig();
-      }
+    // 设置页的「返回语法」：父屏是统一的 grammarScreen（config.backTarget）。
+    document.getElementById('conjugationSetupBackBtn')?.addEventListener('click', () => {
+      if (typeof goBack === 'function') goBack({ fallbackTarget: config.backTarget || 'grammarScreen' });
     });
   }
 
@@ -1430,9 +1421,8 @@ ${moodRows}
     bindEvents();
   }
 
-  // Open the (SHARED) conjugation setup screen for a given language. Italian
-  // keeps using the DOMContentLoaded auto-init; German/English/French call this when
-  // their Grammar-hub 动词变位 card is clicked. Swaps `config`, reloads data with
+  // Open the (SHARED) conjugation setup screen for a given language. The App's
+  // grammar-hub 动词变位 card calls this for every language. Swaps `config`, reloads data with
   // a per-language storageKey (so lesson progress never collides across
   // languages), then shows the shared setup screen. The screen is pushed onto
   // the global history stack via showScreen(), so goBack() pops back to the

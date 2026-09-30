@@ -7,8 +7,8 @@
  * 引擎测试（test-typing-game.js）只覆盖纯逻辑；这里用 dom-shim 把
  * typing-game-app.js 整个加载起来，验证：入口卡片委托 → open() 渲染设置屏
  * → 点开始 → 会话建立 → 模拟打字自动击落 → 变位模式建池 → 本地纪录写入。
- * 数据文件用最小桩（window.VOCABULARY_DATA / CONJUGATION_ALL_TENSES_DATA），
- * 不加载 5MB 真实词库，跑得快。
+ * 数据文件用最小桩（DIM_VOCAB schema v1 + lib/vocab.js / CONJUGATION_ALL_TENSES_DATA），
+ * 不加载真实词库，跑得快。
  */
 'use strict';
 
@@ -67,14 +67,20 @@ win.document.body.innerHTML =
   '</section>' +
   '<button class="card typing-feature-card" data-typing-game-lang="german">德语入口</button>';
 
-win.VOCABULARY_DATA = [
-  { italian: 'gatto', english: 'cat', chinese: '猫' },
-  { italian: 'cane', english: 'dog', chinese: '狗' },
-  { italian: 'libro', english: 'book', chinese: '书' },
-  { italian: 'acqua', english: 'water', chinese: '水' },
-  { italian: 'sole', english: 'sun', chinese: '太阳' },
-  { italian: 'luna', english: 'moon', chinese: '月亮' }
-];
+// schema v1 词库桩：lib/vocab.js 经 lib/languages.js 把 'italian' 映射到 'it'
+win.DIM_VOCAB = {
+  it: {
+    meta: { schema: 1, lang: 'it' },
+    entries: [
+      { word: 'gatto', pos: 'noun', level: 'A1', rank: 1, zh: '猫', en: 'cat' },
+      { word: 'cane', pos: 'noun', level: 'A1', rank: 2, zh: '狗', en: 'dog' },
+      { word: 'libro', pos: 'noun', level: 'A1', rank: 3, zh: '书', en: 'book' },
+      { word: 'acqua', pos: 'noun', level: 'A1', rank: 4, zh: '水', en: 'water' },
+      { word: 'sole', pos: 'noun', level: 'A1', rank: 5, zh: '太阳', en: 'sun' },
+      { word: 'luna', pos: 'noun', level: 'A1', rank: 6, zh: '月亮', en: 'moon' }
+    ]
+  }
+};
 win.CONJUGATION_ALL_TENSES_DATA = [{
   rank: 1, infinitive: 'essere', english: 'to be',
   tenses: {
@@ -87,7 +93,7 @@ win.CONJUGATION_ALL_TENSES_DATA = [{
 }];
 
 // ===== 加载模块 + 触发 DOMContentLoaded =====
-['lib/typing-game.js', 'typing-game-app.js'].forEach((file) => {
+['lib/languages.js', 'lib/vocab.js', 'lib/typing-game.js', 'typing-game-app.js'].forEach((file) => {
   const abs = path.join(ROOT, file);
   vm.runInContext(fs.readFileSync(abs, 'utf8'), context, { filename: abs });
 });
@@ -184,28 +190,29 @@ group('telemetry', () => {
   assertEqual(srsCalls.length, 0, '变位模式不应写 SRS');
   TypingGameApp.close();
 
-  // 德语：answer 是带冠词的 display，SRS 必须按词头（german 字段）写 ——
+  // 德语：answer 是带冠词的 display，SRS 必须按词头（entry.word）写 ——
   // 否则 "der Mann" 成了选择题/复习永远读不到的孤儿条目。
   statsCalls.length = 0;
   srsCalls.length = 0;
-  win.GERMAN_VOCABULARY_DATA = [
-    { german: 'Mann', display: 'der Mann', chinese: '男人' },
-    { german: 'Frau', display: 'die Frau', chinese: '女人' },
-    { german: 'Tag', display: 'der Tag', chinese: '白天' },
-    { german: 'Haus', display: 'das Haus', chinese: '房子' }
+  const deEntries = [
+    { word: 'Mann', display: 'der Mann', pos: 'noun', gender: 'm', level: 'A1', rank: 1, zh: '男人' },
+    { word: 'Frau', display: 'die Frau', pos: 'noun', gender: 'f', level: 'A1', rank: 2, zh: '女人' },
+    { word: 'Tag', display: 'der Tag', pos: 'noun', gender: 'm', level: 'A1', rank: 3, zh: '白天' },
+    { word: 'Haus', display: 'das Haus', pos: 'noun', gender: 'n', level: 'A1', rank: 4, zh: '房子' }
   ];
+  win.DIM_VOCAB.de = { meta: { schema: 1, lang: 'de' }, entries: deEntries };
   TypingGameApp.open('german');
   win.document.getElementById('typingStartBtn').click();
   const deItem = TypingGameApp.getSession().game.items[0];
   const deInput = win.document.getElementById('typingGameInput');
   deInput.value = deItem.answer;
   deInput.dispatchEvent({ type: 'input' });
-  const headword = win.GERMAN_VOCABULARY_DATA.find((w) => w.display === deItem.answer).german;
+  const headword = deEntries.find((w) => w.display === deItem.answer).word;
   assertEqual(srsCalls.length, 1, '德语击落应写 SM-2');
   assertEqual(srsCalls[0][1], headword, 'SM-2 键应为德语词头而不是带冠词的 display');
   assertEqual(statsCalls[0][1].words[0], headword, '每日统计同样记词头');
   TypingGameApp.close();
-  delete win.GERMAN_VOCABULARY_DATA;
+  delete win.DIM_VOCAB.de;
 
   delete win.StatsManager;
   delete win.SpacedRepetition;

@@ -8,12 +8,10 @@
  * 与 lib/typing-game.js（纯引擎）配合：本文件负责数据、DOM、路由与本地纪录。
  *
  * 接线：
- *   - index.html 里每门语言的「词汇 → 练习方式」屏各加一张
- *     <button data-typing-game-lang="xxx"> 卡片，点击走全局委托进本屏；
- *   - lib/router.js 的 HYDRATE.typingGameScreen → TypingGameApp.open(lang)，
- *     保证深链接 #/<code>/vocab/typing 也能直接进游戏设置；
- *   - lib/navigation.js 的 SCREEN_TREE 注册 typingGameScreen（共享屏，
- *     parent 指向各语言的 VocabularyModesScreen）。
+ *   - App 的词汇模式卡片（及任何 [data-typing-game-lang] 按钮）→ TypingGameApp.open(lang)；
+ *   - 深链接 #/<code>/vocab/typing 由 Shell 路由的 opener 调 open(lang)；
+ *   - typingGameScreen 在统一屏幕树里，父级是 vocabScreen。
+ * 背单词的词源是 Vocab.entries(lang)（schema v1），四门语言同一套字段。
  */
 (function (global) {
   'use strict';
@@ -22,14 +20,11 @@
   const SPEECH_LANG = { italian: 'it-IT', german: 'de-DE', english: 'en-US', french: 'fr-FR' };
   const LANG_CN = { italian: '意大利语', german: '德语', english: '英语', french: '法语' };
 
-  // 数据都是顶层 const，parse 期碰不到，一律调用时解析（同 lib/router.js 的 lateGlobal）
+  // 变位数据都是顶层 const，parse 期碰不到，一律调用时解析
   function lateGlobal(name) {
     if (global[name] !== undefined) return global[name];
     try {
       switch (name) {
-        case 'VOCABULARY_DATA': return VOCABULARY_DATA;
-        case 'GERMAN_VOCABULARY_DATA': return GERMAN_VOCABULARY_DATA;
-        case 'ENGLISH_VOCABULARY_DATA': return ENGLISH_VOCABULARY_DATA;
         case 'CONJUGATION_ALL_TENSES_DATA': return CONJUGATION_ALL_TENSES_DATA;
         case 'GERMAN_CONJUGATION_DATA': return GERMAN_CONJUGATION_DATA;
         case 'FRENCH_CONJUGATION_DATA': return FRENCH_CONJUGATION_DATA;
@@ -67,64 +62,25 @@
         // 34 字符：变位模式的「人称 · 时态标签」需要这个宽度（26 会把时态
         // 切到只剩一半）；气泡宽度本身会按文字自适应，上限只防极端长释义。
         sub: String(e.sub || '').trim().slice(0, 34),
-        // SM-2 store 按各语言的词头字段索引（SpacedRepetition.WORD_FIELD）。
-        // 德语的 answer 是带冠词的 display（"der Mann"），词头是 "Mann"；
-        // 按 answer 写 SRS 会生成选择题/复习永远读不到的孤儿条目。
+        // SM-2 store 按 entry.word 索引。德语的 answer 是带冠词的 display
+        //（"der Mann"），词头是 "Mann"；按 answer 写 SRS 会生成孤儿条目。
         srsKey: String(e.srsKey || answer).trim()
       });
     }
     return out;
   }
 
+  // 答案 = Vocab.headword(e)（德语是带冠词的 display，如 "der Mann"），
+  // 释义 = e.zh，SRS / 统计键 = e.word（词头唯一键）。
   function vocabEntries(lang) {
-    let list = [];
-    switch (lang) {
-      case 'italian': {
-        const d = lateGlobal('VOCABULARY_DATA')
-          || (global.AppState && global.AppState.vocabulary) || [];
-        list = d.map((w) => ({
-          answer: w.italian,
-          srsKey: w.italian,
-          prompt: w.chinese || w.english || '',
-          sub: w.english || ''
-        }));
-        break;
-      }
-      case 'german': {
-        const d = lateGlobal('GERMAN_VOCABULARY_DATA')
-          || (global.GermanApp && global.GermanApp.systemWords) || [];
-        list = d.map((w) => ({
-          answer: w.display || w.german,
-          srsKey: w.german,
-          prompt: w.chinese || w.meaning || '',
-          sub: w.english || w.meaning || ''
-        }));
-        break;
-      }
-      case 'english': {
-        const d = lateGlobal('ENGLISH_VOCABULARY_DATA')
-          || (global.EnglishApp && global.EnglishApp.systemWords) || [];
-        list = d.map((w) => ({
-          answer: w.english,
-          srsKey: w.english,
-          prompt: w.chinese || w.meaning || '',
-          sub: w.meaning || ''
-        }));
-        break;
-      }
-      case 'french': {
-        const d = (global.FrenchApp && global.FrenchApp.systemWords)
-          || lateGlobal('FRENCH_VOCABULARY_DATA') || [];
-        list = d.map((w) => ({
-          answer: w.display || w.french,
-          srsKey: w.french,
-          prompt: w.chinese || w.meaning || '',
-          sub: w.english || w.meaning || ''
-        }));
-        break;
-      }
-    }
-    return clean(list);
+    const V = global.Vocab;
+    if (!V) return [];
+    return clean(V.entries(lang).map((e) => ({
+      answer: V.headword(e),
+      srsKey: e.word,
+      prompt: e.zh || e.en || '',
+      sub: e.en || ''
+    })));
   }
 
   const PERSON_CN = {
@@ -542,6 +498,7 @@
   const TypingGameApp = {
     open: function (lang, opts) {
       opts = opts || {};
+      lang = lang || (typeof global.getActiveLanguage === 'function' && global.getActiveLanguage()) || 'italian';
       if (session) stopGame();
       session = { lang: lang, mode: 'vocab', difficulty: 'easy', game: null, renderer: null, speak: true, maxLives: 3 };
       renderSetup();
@@ -574,7 +531,7 @@
 
   // ==================== 全局接线 ====================
 
-  // 1) 各语言练习方式屏里的入口卡片（data-typing-game-lang）
+  // 1) 任何带 data-typing-game-lang 的入口按钮（委托）
   document.addEventListener('click', function (event) {
     const btn = event.target && event.target.closest
       ? event.target.closest('[data-typing-game-lang]')
@@ -603,7 +560,7 @@
       }
     });
     $id('typingGameBackBtn').addEventListener('click', function () {
-      if (typeof global.goBack === 'function') global.goBack({ fallbackTarget: 'vocabularyModesScreen' });
+      if (typeof global.goBack === 'function') global.goBack({ fallbackTarget: 'vocabScreen' });
     });
 
     // 离开本屏即停局（含浏览器后退）

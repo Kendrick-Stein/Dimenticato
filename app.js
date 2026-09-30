@@ -1,3355 +1,1403 @@
 /**
- * Dimenticato - 意大利语背单词应用
- * 主应用逻辑
+ * Dimenticato 统一运行时。
+ *
+ * 四门语言共用同一套屏幕与同一份逻辑；语言差异只来自三处数据：
+ *   lib/languages.js  语言档案（TTS、拼写判分风格、有哪些可选模块）
+ *   data/vocab/<code>.js  统一格式的词库（schema v1，见 lib/vocab.js）
+ *   各功能模块自己的数据（变位 / 语法书 / 搭配 / 同源词，按需懒加载）
+ *
+ * 本文件负责：首页、词汇练习（选择题 / 拼写 / 浏览）、单词本入口、进度、设置、
+ * 语言切换，以及把各功能模块挂到统一的入口卡片上。导航与地址栏在 lib/shell.js。
+ *
+ * 存储 key 与旧版逐字相同（见 lib/storage.js），旧备份可以直接导入。
  */
+(function (global) {
+  'use strict';
 
-// ==================== Web Speech API 发音功能 ====================
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return global.escapeHtml(s == null ? '' : String(s)); };
+  var escAttr = function (s) { return global.escapeAttribute(s == null ? '' : String(s)); };
+  var fmt = function (n) { return Number(n || 0).toLocaleString('en-US'); };
 
-class LanguageSpeaker {
-  constructor() {
-    this.synth = window.speechSynthesis;
-    this.voice = null;
-    this.currentLang = 'it-IT';
-    this.voiceMatcher = /^it/i;
-    this.initVoice();
+  var LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  var LEVEL_NAMES = { A1: '入门', A2: '基础', B1: '进阶', B2: '中高级', C1: '高级', C2: '精通' };
+  var LANGUAGE_KEY = 'dimenticato_language';
+  var THEME_KEY = 'dimenticato_theme';
+  var BROWSE_PAGE = 200;
+  var SESSION_SIZES = ['20', '50', '100', 'all'];
+  var SPECIAL_KEYS = {
+    italian: ['à', 'è', 'é', 'ì', 'ò', 'ù'],
+    german: ['ä', 'ö', 'ü', 'ß', 'Ä', 'Ö', 'Ü'],
+    french: ['é', 'è', 'ê', 'ë', 'à', 'â', 'ç', 'î', 'ï', 'ô', 'û', 'ù', 'œ'],
+    english: []
+  };
+
+  function shuffleArray(list) {
+    var a = list.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
   }
-  
-  initVoice() {
-    // 获取可用的语音
-    const loadVoices = () => {
-      const voices = this.synth.getVoices();
-      this.voice = voices.find(v => this.voiceMatcher.test(v.lang)) || voices[0];
-    };
-    
-    // 有些浏览器需要异步加载语音列表
-    loadVoices();
-    if (this.synth.onvoiceschanged !== undefined) {
-      this.synth.onvoiceschanged = loadVoices;
+  global.shuffleArray = shuffleArray;
+
+  function lang() { return global.getActiveLanguage(); }
+  function profile(l) { return global.Languages.get(l || lang()); }
+  function hasModule(name, l) { var p = profile(l); return !!(p && p.modules && p.modules[name]); }
+  function readJson(key, fallback) {
+    try { return global.DimStorage.safeParse(localStorage.getItem(key), fallback); } catch (e) { return fallback; }
+  }
+  // 功能模块把全局数据写成顶层 const（不在 window 上），只能按裸名字取
+  function grammarData(l) {
+    switch (l) {
+      case 'italian': return typeof GRAMMAR_DATA !== 'undefined' ? GRAMMAR_DATA : null;
+      case 'german': return typeof GERMAN_GRAMMAR_DATA !== 'undefined' ? GERMAN_GRAMMAR_DATA : null;
+      case 'english': return typeof ENGLISH_GRAMMAR_DATA !== 'undefined' ? ENGLISH_GRAMMAR_DATA : null;
+      case 'french': return typeof FRENCH_GRAMMAR_DATA !== 'undefined' ? FRENCH_GRAMMAR_DATA : null;
     }
+    return null;
+  }
+  function grammarBook() {
+    return global.GrammarBook || (typeof GrammarBook !== 'undefined' ? GrammarBook : null);
   }
 
-  setLanguage(lang, matcher) {
-    this.currentLang = lang;
-    this.voiceMatcher = matcher || /^it/i;
-    this.initVoice();
-  }
-  
-  speak(text, autoplay = false) {
-    if (!text) return;
-    
-    // 取消之前的朗读
-    this.synth.cancel();
-    
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = this.currentLang;
-    utterance.rate = 0.9; // 稍慢一点，便于学习
-    
-    if (this.voice) {
-      utterance.voice = this.voice;
-    }
-    
-    this.synth.speak(utterance);
-  }
-  
-  stop() {
-    this.synth.cancel();
-  }
-}
+  // ==================== 朗读 ====================
 
-// 创建全局 speaker 实例
-const italianSpeaker = new LanguageSpeaker();
-
-// ==================== 全局状态 ====================
-
-const AppState = {
-  vocabulary: [],           // 完整词汇表
-  currentWords: [],         // 当前难度级别的词汇
-  selectedLevel: 1000,      // 选择的难度级别
-  masteredWords: new Set(), // 已掌握的单词
-  currentMode: null,        // 当前学习模式
-  
-  // 自定义单词本
-  customWordbooks: [],      // 已导入的单词本列表
-  currentWordbook: null,    // 当前正在学习的单词本
-  
-  // 选择状态
-  selectedSource: null,     // 'system', 'cognate' 或 wordbook id
-  selectedSourceType: null, // 'system', 'cognate' 或 'custom'
-  practiceContext: 'vocab', // 'vocab' | 'conjugation'
-  activeModule: 'home',
-  currentScreen: 'welcomeScreen',
-  previousScreen: 'welcomeScreen',
-  selectedGrammarTopic: 'conjugation',
-  navigationStack: ['welcomeScreen'],
-  
-  // 测验状态
-  quizIndex: 0,
-  quizCorrect: 0,
-  quizTotal: 0,
-  currentWord: null,
-  
-  // 统计数据
-  stats: {
-    mcAttempts: 0,
-    mcCorrect: 0,
-    spAttempts: 0,
-    spCorrect: 0,
-    totalLearned: 0
-  }
-};
-
-function getWordbookLanguage(wordbook) {
-  return wordbook?.language || 'italian';
-}
-
-function getWordbookProgressKey(id, language = 'italian') {
-  const normalizedLanguage = language || 'italian';
-  return `dimenticato_progress_wb_${normalizedLanguage}_${id}`;
-}
-
-// ==================== 跨语言存储核心 (DimStorage) ====================
-//
-// 全站唯一的 localStorage 出入口。三条不可违反的规则：
-//   1. 永远不调用 localStorage.clear()（会连主题、自定义词本一起抹掉）
-//   2. 导出必须覆盖全部四种语言 + 自定义词本 + 每个词本的进度 + 主题
-//   3. 覆盖导入只写它真正要恢复的 key，绝不裸删它不打算恢复的 key
-//
-// 语言前缀：意大利语沿用无前缀的历史 key（dimenticato_mastered），其余语言
-// 统一为 dimenticato_<lang>_*。合并/重置用到的纯函数都挂在对象上，便于用
-// node 单独测试（见 DimStorage.mergeValueForKey / keysForScope）。
-
-const DimStorage = {
-  PREFIX: 'dimenticato_',
-  EXPORT_VERSION: '2.0',
-  LANGS: ['italian', 'german', 'english', 'french'],
-
-  LANGUAGE_LABELS: {
-    italian: '意大利语',
-    german: '德语',
-    english: '英语',
-    french: '法语'
-  },
-
-  // 偏好设置 / 用户内容 —— 任何“重置进度”都必须保留
-  PRESERVED_KEYS: [
-    'dimenticato_theme',
-    'dimenticato_language',
-    'dimenticato_quiz_difficulty',
-    'dimenticato_custom_wordbooks'
-  ],
-
-  // 每种语言“属于学习进度”的固定 key（动态的 progress_wb_* 另行枚举）
-  // dimenticato_mastery_streak_* 是“连续答对”计数，重置进度时必须一起清掉，
-  // 否则重置后残留的 streak 会让下一次答对立刻把词标成已掌握。
-  PROGRESS_KEYS: {
-    italian: [
-      'dimenticato_mastered',
-      'dimenticato_stats',
-      'dimenticato_daily_stats',
-      'dimenticato_conjugation_lessons',
-      'dimenticato_cognate_progress',
-      'dimenticato_srs_italian',
-      'dimenticato_mastery_streak_italian'
-    ],
-    german: [
-      'dimenticato_german_mastered',
-      'dimenticato_german_stats',
-      'dimenticato_german_course_level',
-      'dimenticato_conjugation_lessons_de',
-      'dimenticato_daily_stats_german',
-      'dimenticato_srs_german',
-      'dimenticato_mastery_streak_german'
-    ],
-    english: [
-      'dimenticato_english_mastered',
-      'dimenticato_english_stats',
-      'dimenticato_conjugation_lessons_en',
-      'dimenticato_daily_stats_english',
-      'dimenticato_srs_english',
-      'dimenticato_mastery_streak_english'
-    ],
-    french: [
-      'dimenticato_french_mastered',
-      'dimenticato_french_stats',
-      'dimenticato_conjugation_lessons_fr',
-      'dimenticato_daily_stats_french',
-      'dimenticato_srs_french',
-      'dimenticato_mastery_streak_french'
-    ]
-  },
-
-  prefixFor(lang) {
-    if (!lang || lang === 'italian') return '';
-    return `dimenticato_${lang}_`;
-  },
-
-  // ---------- 低层读写 ----------
-
-  allKeys() {
-    try {
-      return Object.keys(localStorage).filter(key => key.startsWith(this.PREFIX));
-    } catch (e) {
-      console.error('读取 localStorage 键列表失败:', e);
-      return [];
-    }
-  },
-
-  safeParse(raw, fallback) {
-    if (raw === null || raw === undefined) return fallback;
-    try {
-      const parsed = JSON.parse(raw);
-      return parsed === null || parsed === undefined ? fallback : parsed;
-    } catch (e) {
-      console.error('解析本地数据失败:', e);
-      return fallback;
-    }
-  },
-
-  _quotaNotified: false,
-
-  // 写入失败（多为 QuotaExceededError）时先裁剪最旧的每日统计再重试一次，
-  // 仍失败则本次会话提示一次，绝不静默丢弃用户进度。
-  safeSetItem(key, value) {
-    try {
-      localStorage.setItem(key, value);
-      return true;
-    } catch (e) {
-      console.error('保存失败:', key, e);
-      if (this._pruneDailyStats()) {
-        try {
-          localStorage.setItem(key, value);
-          return true;
-        } catch (e2) {
-          console.error('裁剪后仍然保存失败:', key, e2);
-        }
-      }
-      if (!this._quotaNotified) {
-        this._quotaNotified = true;
-        try {
-          alert('存储空间已满，本次学习进度未能保存。\n\n请在 Settings & Data 中导出备份，并删除一些不再使用的自定义词本。');
-        } catch (e3) {
-          /* 无 UI 环境（测试）时忽略 */
-        }
-      }
-      return false;
-    }
-  },
-
-  // 丢掉 30 天以前的每日统计，为进度数据腾出空间
-  _pruneDailyStats() {
-    let pruned = false;
-    const cutoff = new Date(Date.now() - 30 * 864e5).toISOString().split('T')[0];
-    this.allKeys()
-      .filter(key => key.indexOf('dimenticato_daily_stats') === 0)
-      .forEach(key => {
-        const stats = this.safeParse(localStorage.getItem(key), null);
-        if (!stats || typeof stats !== 'object') return;
-        const kept = {};
-        Object.keys(stats).forEach(date => {
-          if (date >= cutoff) kept[date] = stats[date];
-        });
-        if (Object.keys(kept).length < Object.keys(stats).length) {
-          try {
-            localStorage.setItem(key, JSON.stringify(kept));
-            pruned = true;
-          } catch (e) {
-            /* 裁剪本身失败就放弃 */
-          }
-        }
-      });
-    return pruned;
-  },
-
-  // ---------- 迁移 ----------
-
-  // 语言重构之前，词本进度写在 dimenticato_progress_wb_<id>（无语言段）。
-  // 把这些遗留 key 复制到带语言的新 key，老用户不丢数据。
-  migrateLegacyWordbookProgress() {
-    let migrated = 0;
-    const wordbooks = this.safeParse(localStorage.getItem('dimenticato_custom_wordbooks'), []) || [];
-    const languageById = {};
-    if (Array.isArray(wordbooks)) {
-      wordbooks.forEach(wb => {
-        if (wb && wb.id !== undefined) languageById[String(wb.id)] = wb.language || 'italian';
-      });
-    }
-    this.allKeys().forEach(key => {
-      const match = /^dimenticato_progress_wb_([^_]+)$/.exec(key);
-      if (!match) return;
-      const id = match[1];
-      const target = getWordbookProgressKey(id, languageById[id] || 'italian');
-      if (target === key) return;
-      if (localStorage.getItem(target) === null) {
-        this.safeSetItem(target, localStorage.getItem(key));
-        migrated++;
-      }
-    });
-    return migrated;
-  },
-
-  // ---------- 快照 / 导出 ----------
-
-  snapshot() {
-    const keys = {};
-    this.allKeys().forEach(key => {
-      const value = localStorage.getItem(key);
-      if (typeof value === 'string') keys[key] = value;
-    });
-    return keys;
-  },
-
-  // 全语言、带版本号的导出载荷。`keys` 是权威数据；`data` 是 1.0 兼容层，
-  // 让旧版本的 Dimenticato 仍然能读出意大利语部分。
-  exportAll() {
-    const keys = this.snapshot();
-    const wordbooks = this.safeParse(keys['dimenticato_custom_wordbooks'], []) || [];
-    const wordbookProgress = {};
-    if (Array.isArray(wordbooks)) {
-      wordbooks.forEach(wb => {
-        if (!wb || wb.id === undefined) return;
-        const value = keys[getWordbookProgressKey(wb.id, getWordbookLanguage(wb))];
-        if (value) wordbookProgress[wb.id] = value;
-      });
-    }
-
-    return {
-      version: this.EXPORT_VERSION,
-      exportDate: new Date().toISOString(),
-      exportedFrom: 'Dimenticato',
-      languages: this.LANGS.slice(),
-      keys,
-      // ---- 1.0 兼容层 ----
-      data: {
-        masteredWords: keys['dimenticato_mastered'] || '[]',
-        stats: keys['dimenticato_stats'] || '{}',
-        level: keys['dimenticato_level'] || '1000',
-        theme: keys['dimenticato_theme'] || 'light',
-        customWordbooks: keys['dimenticato_custom_wordbooks'] || '[]',
-        dailyStats: keys['dimenticato_daily_stats'] || '{}',
-        wordbookProgress
-      }
-    };
-  },
-
-  // 导出摘要（给导入前的确认框用）
-  describePayload(payload) {
-    const keys = this.normalizePayload(payload);
-    const counts = { languages: [], wordbooks: 0, keys: Object.keys(keys).length };
-    this.LANGS.forEach(lang => {
-      const masteredKey = lang === 'italian'
-        ? 'dimenticato_mastered'
-        : `dimenticato_${lang}_mastered`;
-      const mastered = this.safeParse(keys[masteredKey], []) || [];
-      if (Array.isArray(mastered) && mastered.length) {
-        counts.languages.push(`${this.LANGUAGE_LABELS[lang]} ${mastered.length} 词`);
-      }
-    });
-    const wordbooks = this.safeParse(keys['dimenticato_custom_wordbooks'], []) || [];
-    counts.wordbooks = Array.isArray(wordbooks) ? wordbooks.length : 0;
-    return counts;
-  },
-
-  // ---------- 导入 ----------
-
-  // 把 1.0 / 2.0 两种载荷统一成 { key: rawString } 的纯对象（纯函数，可单测）
-  normalizePayload(payload) {
-    const keys = {};
-    if (!payload || typeof payload !== 'object') return keys;
-
-    if (payload.keys && typeof payload.keys === 'object') {
-      Object.keys(payload.keys).forEach(key => {
-        const value = payload.keys[key];
-        if (key.indexOf(this.PREFIX) === 0 && typeof value === 'string') keys[key] = value;
-      });
-      return keys;
-    }
-
-    const data = payload.data;
-    if (!data || typeof data !== 'object') return keys;
-
-    const legacyMap = {
-      masteredWords: 'dimenticato_mastered',
-      stats: 'dimenticato_stats',
-      level: 'dimenticato_level',
-      theme: 'dimenticato_theme',
-      customWordbooks: 'dimenticato_custom_wordbooks',
-      dailyStats: 'dimenticato_daily_stats'
-    };
-    Object.keys(legacyMap).forEach(field => {
-      if (typeof data[field] === 'string') keys[legacyMap[field]] = data[field];
-    });
-
-    // 1.0 的 wordbookProgress 用的是无语言段的旧 key，这里补回语言
-    if (data.wordbookProgress && typeof data.wordbookProgress === 'object') {
-      const wordbooks = this.safeParse(data.customWordbooks, []) || [];
-      const languageById = {};
-      if (Array.isArray(wordbooks)) {
-        wordbooks.forEach(wb => {
-          if (wb && wb.id !== undefined) languageById[String(wb.id)] = wb.language || 'italian';
-        });
-      }
-      Object.keys(data.wordbookProgress).forEach(id => {
-        const value = data.wordbookProgress[id];
-        if (typeof value !== 'string') return;
-        keys[getWordbookProgressKey(id, languageById[String(id)] || 'italian')] = value;
-      });
-    }
-
-    return keys;
-  },
-
-  // ---- 合并用纯函数（全部输入输出都是字符串，方便单测） ----
-
-  mergeArrayUnion(existing, incoming) {
-    const a = this.safeParse(existing, []) || [];
-    const b = this.safeParse(incoming, []) || [];
-    if (!Array.isArray(a) || !Array.isArray(b)) return incoming;
-    return JSON.stringify([...new Set([...a, ...b])]);
-  },
-
-  mergeCounters(existing, incoming) {
-    const a = this.safeParse(existing, {}) || {};
-    const b = this.safeParse(incoming, {}) || {};
-    const merged = Object.assign({}, a);
-    Object.keys(b).forEach(field => {
-      const av = a[field];
-      const bv = b[field];
-      if (typeof av === 'number' && typeof bv === 'number') {
-        merged[field] = field === 'totalLearned' ? Math.max(av, bv) : av + bv;
-      } else if (av === undefined) {
-        merged[field] = bv;
-      }
-    });
-    return JSON.stringify(merged);
-  },
-
-  mergeDailyStats(existing, incoming) {
-    const a = this.safeParse(existing, {}) || {};
-    const b = this.safeParse(incoming, {}) || {};
-    const merged = Object.assign({}, a);
-    Object.keys(b).forEach(date => {
-      if (!merged[date]) merged[date] = b[date];
-    });
-    return JSON.stringify(merged);
-  },
-
-  mergeWordbooks(existing, incoming) {
-    const a = this.safeParse(existing, []) || [];
-    const b = this.safeParse(incoming, []) || [];
-    if (!Array.isArray(a) || !Array.isArray(b)) return incoming;
-    const seen = new Set(a.map(wb => wb && wb.id));
-    const merged = a.slice();
-    b.forEach(wb => {
-      if (wb && !seen.has(wb.id)) {
-        seen.add(wb.id);
-        merged.push(wb);
-      }
-    });
-    return JSON.stringify(merged);
-  },
-
-  mergeSrsStore(existing, incoming) {
-    const a = this.safeParse(existing, {}) || {};
-    const b = this.safeParse(incoming, {}) || {};
-    const merged = Object.assign({}, a);
-    Object.keys(b).forEach(word => {
-      const mine = merged[word];
-      const theirs = b[word];
-      if (!mine) {
-        merged[word] = theirs;
-        return;
-      }
-      // 保留最近复习过的一份
-      if ((theirs && theirs.lastReviewDate || '') > (mine && mine.lastReviewDate || '')) {
-        merged[word] = theirs;
-      }
-    });
-    return JSON.stringify(merged);
-  },
-
-  // 按 key 的形状选择合并策略（纯函数）
-  mergeValueForKey(key, existing, incoming) {
-    if (existing === null || existing === undefined) return incoming;
-    if (/_mastered$/.test(key) || key.indexOf('dimenticato_progress_wb_') === 0) {
-      return this.mergeArrayUnion(existing, incoming);
-    }
-    if (/_stats$/.test(key) && key.indexOf('daily') === -1) {
-      return this.mergeCounters(existing, incoming);
-    }
-    if (key.indexOf('dimenticato_daily_stats') === 0) {
-      return this.mergeDailyStats(existing, incoming);
-    }
-    if (key === 'dimenticato_custom_wordbooks') {
-      return this.mergeWordbooks(existing, incoming);
-    }
-    if (key.indexOf('dimenticato_srs_') === 0) {
-      return this.mergeSrsStore(existing, incoming);
-    }
-    // 其它 key（主题、语言、级别、变位课程…）保留现有值
-    return existing;
-  },
-
-  /**
-   * 导入。
-   * mode 'overwrite'：逐 key 覆盖写入 —— 只写载荷里真正存在的 key，
-   *                   绝不裸删（也就不会像旧实现那样连带清空另外三种语言）。
-   * mode 'merge'    ：按 key 形状合并（已掌握取并集、计数相加、每日统计按日期补齐）。
-   */
-  importAll(payload, options = {}) {
-    const mode = options.mode === 'overwrite' ? 'overwrite' : 'merge';
-    const keys = this.normalizePayload(payload);
-    const names = Object.keys(keys);
-    if (names.length === 0) {
-      throw new Error('数据文件中没有可导入的内容');
-    }
-
-    let written = 0;
-    names.forEach(key => {
-      const incoming = keys[key];
-      const value = mode === 'overwrite'
-        ? incoming
-        : this.mergeValueForKey(key, localStorage.getItem(key), incoming);
-      if (value === null || value === undefined) return;
-      if (this.safeSetItem(key, value)) written++;
-    });
-
-    return { mode, keys: names.length, written };
-  },
-
-  // ---------- 重置 ----------
-
-  // scope: 'all' | 'italian' | 'german' | 'english' | 'french'（纯函数，可单测）
-  keysForScope(scope, allKeys) {
-    const langs = scope === 'all' ? this.LANGS : [scope];
-    const targets = new Set();
-    langs.forEach(lang => {
-      (this.PROGRESS_KEYS[lang] || []).forEach(key => targets.add(key));
-      const wbPrefix = `dimenticato_progress_wb_${lang}_`;
-      allKeys.forEach(key => {
-        if (key.indexOf(wbPrefix) === 0) targets.add(key);
-        // 未迁移的遗留词本进度 key 归意大利语
-        if (lang === 'italian' && /^dimenticato_progress_wb_[^_]+$/.test(key)) targets.add(key);
-      });
-    });
-    // 偏好设置与自定义词本内容永不删除
-    this.PRESERVED_KEYS.forEach(key => targets.delete(key));
-    return [...targets];
-  },
-
-  reset(options = {}) {
-    const scope = options.scope && (options.scope === 'all' || this.LANGS.includes(options.scope))
-      ? options.scope
-      : 'all';
-    const removed = [];
-    this.keysForScope(scope, this.allKeys()).forEach(key => {
-      if (localStorage.getItem(key) !== null) {
-        localStorage.removeItem(key);
-        removed.push(key);
-      }
-    });
-    return { scope, removed };
-  }
-};
-
-window.DimStorage = DimStorage;
-
-// ==================== 顶栏统计胶囊（语言感知） ====================
-//
-// #totalWords / #masteredWords / #progressPercent 是全站共用的一组元素，
-// 以前只有意大利语和法语写它，所以在德语/英语站点上显示的是别的语言的数字。
-// 现在所有语言都通过 HeaderStats.set(lang, {total, mastered}) 写入，并且
-// 只有“当前 body[data-language]”对应的数字才会被画到顶栏上。
-
-const HeaderStats = {
-  _cache: {},
-
-  set(lang, stats) {
-    const language = lang || getActiveLanguage();
-    if (stats && typeof stats === 'object') {
-      this._cache[language] = {
-        total: Number(stats.total) || 0,
-        mastered: Number(stats.mastered) || 0
-      };
-    }
-    if (language !== getActiveLanguage()) return;
-    this._paint(this._cache[language]);
-  },
-
-  refresh(lang) {
-    const language = lang || getActiveLanguage();
-    const stats = this.compute(language) || this._cache[language];
-    if (stats) this._cache[language] = stats;
-    this._paint(this._cache[language]);
-  },
-
-  // 当某个语言模块还没有主动上报时，直接从它自己的运行时状态推算
-  compute(lang) {
-    try {
-      if (lang === 'italian') {
-        return {
-          total: AppState.currentWords.length,
-          mastered: countMasteredInCurrentWords()
-        };
-      }
-      const app = lang === 'german'
-        ? window.GermanApp
-        : lang === 'english'
-          ? window.EnglishApp
-          : lang === 'french'
-            ? window.FrenchApp
-            : null;
-      if (!app || !Array.isArray(app.words)) return null;
-      const key = lang === 'german' ? 'german' : lang === 'english' ? 'english' : 'french';
-      const wordKeys = new Set(app.words.map(w => w[key] || w.display || ''));
-      const mastered = app.mastered instanceof Set ? app.mastered : new Set();
-      let count = 0;
-      mastered.forEach(word => { if (wordKeys.has(word)) count++; });
-      return { total: app.words.length, mastered: count };
-    } catch (e) {
-      return null;
-    }
-  },
-
-  _paint(stats) {
-    const totalEl = document.getElementById('totalWords');
-    const masteredEl = document.getElementById('masteredWords');
-    const percentEl = document.getElementById('progressPercent');
-    if (!totalEl || !masteredEl || !percentEl) return;
-    const total = stats ? stats.total : 0;
-    const mastered = stats ? stats.mastered : 0;
-    const progress = total > 0 ? Math.round((mastered / total) * 100) : 0;
-    totalEl.textContent = total.toLocaleString();
-    masteredEl.textContent = mastered.toLocaleString();
-    percentEl.textContent = progress + '%';
-  }
-};
-
-window.HeaderStats = HeaderStats;
-
-// 为不同语言生成 screen 元数据的工厂函数
-function makeLanguageScreens(lang) {
-  const capLang = lang.charAt(0).toUpperCase() + lang.slice(1);
-  const prefix = lang === 'italian' ? '' : lang;
-  const breadcrumbHome = lang === 'italian' ? [] : [capLang];
-
-  // For Italian (no prefix), use lowercase screen names
-  // For German/English/French, prefix + capitalized screen name
-  const makeKey = (name) => prefix ? prefix + name : name.charAt(0).toLowerCase() + name.slice(1);
-
-  return {
-    [makeKey('VocabularyScreen')]: {
-      module: 'vocabulary',
-      topNav: 'vocabularyScreen',
-      breadcrumb: [...breadcrumbHome, 'Vocabulary', '内容来源']
+  var Speaker = {
+    voices: [],
+    init: function () {
+      var synth = global.speechSynthesis;
+      if (!synth) return;
+      var self = this;
+      var load = function () { self.voices = synth.getVoices() || []; };
+      load();
+      if (synth.addEventListener) synth.addEventListener('voiceschanged', load);
     },
-    [makeKey('VocabularyModesScreen')]: {
-      module: 'vocabulary',
-      topNav: 'vocabularyScreen',
-      breadcrumb: [...breadcrumbHome, 'Vocabulary', '练习方式']
-    },
-    [makeKey('MultipleChoiceScreen')]: {
-      module: 'vocabulary',
-      topNav: 'vocabularyScreen',
-      breadcrumb: [...breadcrumbHome, 'Vocabulary', '练习中', '选择题']
-    },
-    [makeKey('SpellingScreen')]: {
-      module: 'vocabulary',
-      topNav: 'vocabularyScreen',
-      breadcrumb: [...breadcrumbHome, 'Vocabulary', '练习中', '拼写']
-    },
-    [makeKey('BrowseScreen')]: {
-      module: 'vocabulary',
-      topNav: 'vocabularyScreen',
-      breadcrumb: [...breadcrumbHome, 'Vocabulary', '练习中', '浏览']
-    },
-    [makeKey('GrammarScreen')]: {
-      module: 'grammar',
-      topNav: 'grammarScreen',
-      breadcrumb: lang === 'italian' ? ['Grammar', '主题选择'] : [...breadcrumbHome, 'Grammar']
-    },
-    [makeKey('ProgressScreen')]: {
-      module: 'progress',
-      topNav: 'progressScreen',
-      breadcrumb: [...breadcrumbHome, 'Progress']
-    },
-    [makeKey('SettingsScreen')]: {
-      module: 'settings',
-      topNav: 'settingsScreen',
-      breadcrumb: [...breadcrumbHome, 'Settings & Data']
+    speak: function (text, l) {
+      var synth = global.speechSynthesis;
+      if (!synth || !text || typeof SpeechSynthesisUtterance === 'undefined') return;
+      var p = profile(l);
+      synth.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = p.tts;
+      u.rate = 0.9; // 稍慢，便于跟读
+      var voice = this.voices.find(function (v) { return p.voice.test(v.lang); });
+      if (voice) u.voice = voice;
+      synth.speak(u);
     }
   };
-}
 
-// Build the complete ScreenMeta object
-const ScreenMeta = Object.assign(
-  {
-    welcomeScreen: {
-      module: 'home',
-      topNav: 'welcomeScreen',
-      breadcrumb: ['Home']
-    }
-  },
-  makeLanguageScreens('italian'),
-  makeLanguageScreens('german'),
-  makeLanguageScreens('english'),
-  makeLanguageScreens('french')
-);
+  // ==================== 进度（已掌握集合 + 计数器） ====================
+  //
+  // 已掌握集合按「来源」分 key：系统词库用 DimStorage.masteredKey(lang)，
+  // 单词本用各自的 progress key。统计计数器按语言存。改动只标脏，
+  // deferredPersist 合并写盘，关页前自动冲刷。
 
-// SHARED screens — 四种语言都会进入同一个 DOM 屏幕（语法书、动词变位、社区词本、
-// 动词搭配）。它们的 breadcrumb 写成“当前语言 → 面包屑”的函数，这样在深层页面上
-// 用户仍然知道自己在哪种语言里（updateHeaderNavigation 在渲染时求值）。
-const LANGUAGE_CRUMB = {
-  italian: 'Italian',
-  german: 'German',
-  english: 'English',
-  french: 'French'
-};
+  var Progress = {
+    sets: {},
+    stats: {},
+    dirty: {},
 
-function makeSharedBreadcrumb(tail) {
-  return (lang) => [LANGUAGE_CRUMB[lang] || 'Italian', ...tail];
-}
-
-ScreenMeta.communityBrowseScreen = {
-  module: 'vocabulary',
-  topNav: 'vocabularyScreen',
-  breadcrumb: makeSharedBreadcrumb(['Vocabulary', '社区词本'])
-};
-ScreenMeta.conjugationSetupScreen = {
-  module: 'grammar',
-  topNav: 'grammarScreen',
-  breadcrumb: makeSharedBreadcrumb(['Grammar', '动词变位', '设置'])
-};
-ScreenMeta.conjugationScreen = {
-  module: 'grammar',
-  topNav: 'grammarScreen',
-  breadcrumb: makeSharedBreadcrumb(['Grammar', '动词变位', '练习中'])
-};
-ScreenMeta.grammarBookScreen = {
-  module: 'grammar',
-  topNav: 'grammarScreen',
-  breadcrumb: makeSharedBreadcrumb(['Grammar', '语法书'])
-};
-ScreenMeta.verbCollocationsScreen = {
-  module: 'grammar',
-  topNav: 'grammarScreen',
-  breadcrumb: makeSharedBreadcrumb(['Grammar', '动词搭配'])
-};
-ScreenMeta.verbCollocationPracticeScreen = {
-  module: 'grammar',
-  topNav: 'grammarScreen',
-  breadcrumb: makeSharedBreadcrumb(['Grammar', '动词搭配练习'])
-};
-
-// german-course.js 在运行时注入 germanCourseScreen，此前它没有任何 ScreenMeta，
-// 于是回退到 welcomeScreen —— 面包屑显示 “Home”、侧栏高亮 Home。
-ScreenMeta.germanCourseScreen = {
-  module: 'vocabulary',
-  topNav: 'vocabularyScreen',
-  breadcrumb: ['German', 'Kursplan', 'A1-C1']
-};
-ScreenMeta.languageSkeletonPlaceholderScreen = {
-  module: 'home',
-  topNav: 'welcomeScreen',
-  breadcrumb: (lang) => [LANGUAGE_CRUMB[lang] || 'Italian', '模块']
-};
-// 跨语言总览（app-enhanced.js 的 GlobalHome 在运行时注入这块屏幕）
-ScreenMeta.globalHomeScreen = {
-  module: 'home',
-  topNav: 'globalHomeScreen',
-  breadcrumb: ['Overview', '全部语言']
-};
-
-// Non-Italian welcome screens (special — under 'home' module, not the factory pattern)
-ScreenMeta.germanWelcomeScreen = {
-  module: 'home',
-  topNav: 'welcomeScreen',
-  breadcrumb: ['German', 'Home']
-};
-ScreenMeta.englishWelcomeScreen = {
-  module: 'home',
-  topNav: 'welcomeScreen',
-  breadcrumb: ['English', 'Home']
-};
-ScreenMeta.frenchWelcomeScreen = {
-  module: 'home',
-  topNav: 'welcomeScreen',
-  breadcrumb: ['French', 'Home']
-};
-
-// ==================== 本地存储 ====================
-
-const Storage = {
-  KEYS: {
-    MASTERED: 'dimenticato_mastered',
-    STATS: 'dimenticato_stats',
-    LEVEL: 'dimenticato_level',
-    THEME: 'dimenticato_theme',
-    CUSTOM_WORDBOOKS: 'dimenticato_custom_wordbooks',
-    DAILY_STATS: 'dimenticato_daily_stats',
-    LANGUAGE: 'dimenticato_language',
-    MC_SESSION: 'dimenticato_mc_session'
-  },
-  
-  // 延迟落盘句柄：每答一题就整份 stringify mastered + stats 在词库上万后
-  // 是可感知的卡顿，改成脏标记 + 500ms 合并写（关闭页面 / 切后台统一冲刷，
-  // 见 lib/utils.js deferredPersist）。
-  _persist: null,
-
-  /** 立即冲刷挂起的写。切换词本 / 导入导出 / 重置前必须先调用，
-   *  否则挂起的写会按切换后的 currentWordbook 落进错误的 key，
-   *  或在导入后用旧状态覆盖刚导入的数据。 */
-  flush() {
-    if (this._persist) this._persist.flush();
-  },
-
-  save() {
-    if (!this._persist) this._persist = window.deferredPersist(() => Storage._write(), 500);
-    this._persist();
-  },
-
-  _write() {
-    // 逐条写入：任何一条失败都不应该连累后面的（旧实现是一个大 try，
-    // 第一条抛异常就把统计和级别一起丢掉了）。
-    if (AppState.currentWordbook) {
-      // 如果当前在学习自定义单词本，保存到对应的 key
-      const key = getWordbookProgressKey(
-        AppState.currentWordbook.id,
-        getWordbookLanguage(AppState.currentWordbook)
-      );
-      DimStorage.safeSetItem(key, JSON.stringify([...AppState.masteredWords]));
-    } else {
-      // 否则保存到系统词汇的 key
-      DimStorage.safeSetItem(this.KEYS.MASTERED, JSON.stringify([...AppState.masteredWords]));
-    }
-
-    DimStorage.safeSetItem(this.KEYS.STATS, JSON.stringify(AppState.stats));
-    DimStorage.safeSetItem(this.KEYS.LEVEL, AppState.selectedLevel.toString());
-  },
-
-  load() {
-    // 每个 key 单独解析：一条损坏的记录不能让其余全部读不出来
-    const mastered = DimStorage.safeParse(localStorage.getItem(this.KEYS.MASTERED), null);
-    if (Array.isArray(mastered)) {
-      AppState.masteredWords = new Set(mastered);
-    }
-
-    const stats = DimStorage.safeParse(localStorage.getItem(this.KEYS.STATS), null);
-    if (stats && typeof stats === 'object') {
-      AppState.stats = Object.assign({
-        mcAttempts: 0,
-        mcCorrect: 0,
-        spAttempts: 0,
-        spCorrect: 0,
-        totalLearned: 0
-      }, stats);
-    }
-
-    const level = localStorage.getItem(this.KEYS.LEVEL);
-    if (level) {
-      const parsed = level === 'all' ? 'all' : parseInt(level, 10);
-      if (parsed === 'all' || Number.isFinite(parsed)) AppState.selectedLevel = parsed;
-    }
-
-    const theme = localStorage.getItem(this.KEYS.THEME);
-    if (theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-    }
-
-    const wordbooks = DimStorage.safeParse(localStorage.getItem(this.KEYS.CUSTOM_WORDBOOKS), null);
-    if (Array.isArray(wordbooks)) {
-      AppState.customWordbooks = wordbooks.map(wb => ({
-        language: 'italian',
-        ...wb
-      }));
-    }
-  },
-
-  // 重置学习进度。
-  // 旧实现调用 localStorage.clear()，会连带删掉主题、自定义词本内容以及
-  // 同一域名下其它应用的数据。现在按语言范围、按 key 精确删除。
-  reset() {
-    const promptMsg =
-      '重置学习进度\n\n' +
-      '请选择要重置的范围：\n' +
-      '1 - 意大利语\n' +
-      '2 - 德语\n' +
-      '3 - 英语\n' +
-      '4 - 法语\n' +
-      '5 - 全部语言\n' +
-      '0 - 取消\n\n' +
-      '（主题设置与自定义词本内容会保留，只清除练习进度）\n' +
-      '请输入 0-5：';
-    const choice = prompt(promptMsg);
-    const scopeByChoice = { '1': 'italian', '2': 'german', '3': 'english', '4': 'french', '5': 'all' };
-    const scope = scopeByChoice[choice];
-    if (!scope) return;
-
-    const label = scope === 'all' ? '全部语言' : DimStorage.LANGUAGE_LABELS[scope];
-    if (!confirm(`确定要重置【${label}】的学习进度吗？此操作不可恢复。`)) return;
-
-    // 先冲刷全部延迟写：挂起的写如果在删除之后落地，会把刚清掉的进度复活
-    if (window.DimenticatoUtils && window.DimenticatoUtils.flushAllPersisters) {
-      window.DimenticatoUtils.flushAllPersisters();
-    }
-
-    const result = DimStorage.reset({ scope });
-
-    if (scope === 'all' || scope === 'italian') {
-      AppState.masteredWords.clear();
-      AppState.stats = {
-        mcAttempts: 0,
-        mcCorrect: 0,
-        spAttempts: 0,
-        spCorrect: 0,
-        totalLearned: 0
-      };
-      this.save();
-      this.flush(); // 重置后 600ms 就刷新页面，不能等 500ms 的延迟写
-      updateHeaderStats();
-    }
-
-    alert(`【${label}】进度已重置（清除 ${result.removed.length} 项）。\n\n页面将刷新以应用变更。`);
-    setTimeout(() => location.reload(), 600);
-  },
-
-  toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem(this.KEYS.THEME, newTheme);
-    if (typeof syncThemeToggleUI === 'function') syncThemeToggleUI(newTheme);
-  },
-  
-  // 导出所有学习数据（四种语言 + 自定义词本 + 每本词本的进度 + 主题）
-  exportAllData() {
-    try {
-      // 导出必须读到最后状态：四语言的 save 都是延迟写，先统一冲刷
-      if (window.DimenticatoUtils && window.DimenticatoUtils.flushAllPersisters) {
-        window.DimenticatoUtils.flushAllPersisters();
+    mastered: function (key) {
+      if (!this.sets[key]) {
+        var list = readJson(key, []);
+        this.sets[key] = new Set(Array.isArray(list) ? list : []);
       }
-      const exportData = DimStorage.exportAll();
-      if (Object.keys(exportData.keys).length === 0) {
+      return this.sets[key];
+    },
+    systemKey: function (l) { return global.DimStorage.masteredKey(l || lang()); },
+    systemMastered: function (l) { return this.mastered(this.systemKey(l)); },
+
+    statsFor: function (l) {
+      var key = global.DimStorage.statsKey(l);
+      if (!this.stats[key]) {
+        var s = readJson(key, {});
+        this.stats[key] = Object.assign({ mcAttempts: 0, mcCorrect: 0, spAttempts: 0, spCorrect: 0 },
+          s && typeof s === 'object' ? s : {});
+      }
+      return this.stats[key];
+    },
+
+    touch: function (key) { this.dirty[key] = true; this.persist(); },
+    touchStats: function (l) { this.dirty[global.DimStorage.statsKey(l)] = true; this.persist(); },
+
+    flush: function () {
+      var self = this;
+      Object.keys(this.dirty).forEach(function (key) {
+        var value = self.sets[key] ? Array.from(self.sets[key]) : self.stats[key];
+        if (value !== undefined) global.DimStorage.safeSetItem(key, JSON.stringify(value));
+      });
+      this.dirty = {};
+    },
+
+    /** 迁移 / 导入改写了存储之后，丢掉这门语言的缓存，下次按新数据读。 */
+    forget: function (l) {
+      this.flush();
+      var sysKey = this.systemKey(l);
+      var wbPrefix = 'dimenticato_progress_wb_' + l + '_';
+      var self = this;
+      Object.keys(this.sets).forEach(function (key) {
+        if (key === sysKey || key.indexOf(wbPrefix) === 0) delete self.sets[key];
+      });
+      delete this.stats[global.DimStorage.statsKey(l)];
+    }
+  };
+  Progress.persist = global.deferredPersist(function () { Progress.flush(); }, 400);
+
+  // ==================== 练习来源 ====================
+  //
+  // Prefs（dimenticato_prefs，按语言）：source 'system' | 'wb:<id>' | 'course'，
+  // level 'A1'..'C2' | 'all'，filter 'all' | 'new' | 'due'，session '20'|'50'|'100'|'all'
+
+  var courseSelection = null; // { lang, label, entries } —— 德语课程路线选中的单元词表
+
+  function prefs(l) { return global.Prefs.get(l || lang()); }
+  function setPrefs(patch, l) { return global.Prefs.set(l || lang(), patch); }
+
+  function currentSource(l) {
+    l = l || lang();
+    var p = prefs(l);
+    if (p.source && p.source.indexOf('wb:') === 0) {
+      var wb = global.Wordbooks.get(p.source.slice(3));
+      if (wb && wb.language === l) {
+        return {
+          kind: 'wordbook', id: wb.id, label: wb.name,
+          entries: global.Wordbooks.entries(wb),
+          key: global.Wordbooks.progressKey(wb)
+        };
+      }
+    }
+    if (p.source === 'course' && courseSelection && courseSelection.lang === l) {
+      return { kind: 'course', label: courseSelection.label, entries: courseSelection.entries, key: Progress.systemKey(l) };
+    }
+    var level = LEVELS.indexOf(p.level) >= 0 ? p.level : 'all';
+    return {
+      kind: 'system',
+      label: level === 'all' ? '全部等级' : level + ' · ' + LEVEL_NAMES[level],
+      level: level,
+      entries: level === 'all' ? global.Vocab.entries(l) : global.Vocab.atLevel(l, level),
+      key: Progress.systemKey(l)
+    };
+  }
+
+  /** 到期复习优先，其次未掌握（按词频顺序），最后是已掌握；取够一组后打乱。 */
+  function buildSession(l, src, filter, size) {
+    var mastered = Progress.mastered(src.key);
+    var dueList = global.SpacedRepetition ? global.SpacedRepetition.getDueWords(l, src.entries) : [];
+    var due = new Set(dueList);
+    var fresh = [];
+    var known = [];
+    src.entries.forEach(function (e) {
+      if (due.has(e)) return;
+      (mastered.has(e.word) ? known : fresh).push(e);
+    });
+    var ordered = filter === 'due' ? dueList
+      : filter === 'new' ? dueList.filter(function (e) { return !mastered.has(e.word); }).concat(fresh)
+        : dueList.concat(fresh, known);
+    var n = size === 'all' ? ordered.length : parseInt(size, 10) || 20;
+    return shuffleArray(ordered.slice(0, n));
+  }
+
+  function countDue(l, entries) {
+    return global.SpacedRepetition ? global.SpacedRepetition.countDueWords(l, entries) : 0;
+  }
+
+  // ==================== 练习会话（选择题 / 拼写） ====================
+
+  var session = null;
+
+  function makeEngine(s) {
+    return new global.QuizEngine({
+      language: s.lang,
+      fieldMap: { source: 'word', target: 'zh' },
+      state: s,
+      mastered: s.mastered,
+      dom: {
+        optionsContainer: $('quizMcOptions'),
+        feedbackEl: $('quizFeedback'),
+        feedbackTextEl: $('quizFeedbackText'),
+        progressCurrent: $('quizProgressCurrent'),
+        progressTotal: $('quizProgressTotal'),
+        accuracyEl: $('quizAccuracy')
+      }
+    });
+  }
+
+  function startSession(mode, opts) {
+    opts = opts || {};
+    var l = lang();
+    var src = opts.entries
+      ? { entries: opts.entries, key: opts.key || Progress.systemKey(l), label: opts.label || '复习' }
+      : currentSource(l);
+    var p = prefs(l);
+    var words = opts.entries ? shuffleArray(opts.entries).slice(0, 200) : buildSession(l, src, p.filter, p.session);
+
+    var s = {
+      mode: mode, lang: l, label: src.label, key: src.key,
+      mastered: Progress.mastered(src.key),
+      words: [], quizIndex: 0, quizTotal: 0, quizCorrect: 0, currentWord: null,
+      startedAt: Date.now(), answered: false, hintStage: 0, masteredAtStart: 0,
+      // 干扰项从整门语言取，小单词本也能凑满四个选项
+      distractorSource: src.entries.length >= 60 ? src.entries : global.Vocab.entries(l)
+    };
+    s.engine = makeEngine(s);
+    s.words = s.engine.filterUsableWords(words);
+    if (!s.words.length) {
+      toast(p.filter === 'due' ? '目前没有到期要复习的词' : '这个范围里没有可练的词');
+      return;
+    }
+    s.masteredAtStart = s.words.filter(function (w) { return s.mastered.has(w.word); }).length;
+    session = s;
+    global.setPracticeContext(mode);
+
+    var screen = mode === 'quiz' ? 'quizScreen' : 'spellScreen';
+    $(mode === 'quiz' ? 'quizDone' : 'spellDone').classList.add('hidden');
+    $(mode === 'quiz' ? 'quizBody' : 'spellBody').classList.remove('hidden');
+    $(mode === 'quiz' ? 'quizLabel' : 'spellLabel').textContent = s.label;
+    global.showScreen(screen);
+    if (mode === 'quiz') renderQuiz(); else renderSpell();
+  }
+
+  function sessionBar(prefix) {
+    var s = session;
+    $(prefix + 'ProgressCurrent').textContent = Math.min(s.quizIndex + 1, s.words.length);
+    $(prefix + 'ProgressTotal').textContent = s.words.length;
+    $(prefix + 'Accuracy').textContent = (s.quizTotal ? Math.round(s.quizCorrect / s.quizTotal * 100) : 0) + '%';
+    $(prefix + 'Bar').style.width = (s.quizIndex / s.words.length * 100) + '%';
+  }
+
+  function usageHtml(w) {
+    var parts = [];
+    var gram = global.Vocab.grammarLine(w);
+    if (gram) parts.push('<span class="num">' + esc(gram) + '</span>');
+    if (w.en) parts.push('EN ' + esc(w.en));
+    var usage = global.Vocab.usageLine(w);
+    if (usage) parts.push(esc(usage));
+    return '<strong>' + esc(global.Vocab.headword(w)) + '</strong> — ' + esc(w.zh) +
+      (parts.length ? '<br><span class="muted">' + parts.join(' · ') + '</span>' : '');
+  }
+
+  // ---------- 选择题 ----------
+
+  function renderQuiz() {
+    var s = session;
+    if (!s || s.mode !== 'quiz') return;
+    if (s.quizIndex >= s.words.length) { finishSession(); return; }
+    var w = s.currentWord = s.words[s.quizIndex];
+    var eng = s.engine;
+    var reverse = eng.isReverse();
+    s.answered = false;
+
+    $('quizPromptLabel').textContent = reverse ? '哪个词是这个意思？' : '这个词是什么意思？';
+    var word = $('quizWord');
+    word.textContent = reverse ? eng.questionTextFor(w) : global.Vocab.headword(w);
+    word.classList.toggle('is-gloss', reverse);
+    $('quizMeta').textContent = reverse ? (global.Vocab.POS_LABEL[w.pos] || '') : global.Vocab.grammarLine(w);
+    $('quizSpeak').classList.toggle('hidden', !eng.shouldSpeakQuestion());
+
+    var correct = eng.correctAnswerFor(w);
+    var pool = global.QuizEngine.sampleDistractorPool(s.distractorSource, w, 800);
+    eng.renderOptions(eng.generateOptions(correct, pool), onQuizAnswer);
+
+    $('quizFeedback').classList.add('hidden');
+    $('quizUsage').innerHTML = '';
+    $('quizNextBtn').classList.add('hidden');
+    s.hintStage = global.PracticeFlow.hintReset($('quizHint'), $('quizHintBtn'), '显示提示');
+    sessionBar('quiz');
+  }
+
+  function onQuizAnswer(btn) {
+    var s = session;
+    if (!s || s.answered) return;
+    s.answered = true;
+    var index = s.quizIndex;
+    var stats = Progress.statsFor(s.lang);
+    s.startedAt = global.PracticeFlow.mcAnswer({
+      lang: s.lang,
+      engine: s.engine,
+      button: btn,
+      word: s.currentWord,
+      state: s,
+      stats: stats,
+      recordMastery: function (w, ok) { s.engine.recordAnswer(w, ok); Progress.touch(s.key); },
+      save: function () { Progress.touchStats(s.lang); },
+      next: function () { if (session === s && s.quizIndex === index) nextQuestion(); },
+      nextDelay: 1100,
+      startedAt: s.startedAt
+    });
+    $('quizUsage').innerHTML = usageHtml(s.currentWord);
+    $('quizNextBtn').classList.remove('hidden');
+    $('quizHintBtn').classList.add('hidden');
+    sessionBar('quiz');
+  }
+
+  function quizHintStages(s) {
+    var w = s.currentWord;
+    var reverse = s.engine.isReverse();
+    return [
+      { text: global.PracticeFlow.initialHint(reverse ? w.word : s.engine.displayGloss(w.zh)), label: '显示提示' },
+      { text: w.en ? 'English: ' + w.en : '', label: '英文释义' },
+      { text: reverse ? global.Vocab.grammarLine(w) : '', label: '词性' }
+    ];
+  }
+
+  // ---------- 拼写 ----------
+
+  function renderSpell() {
+    var s = session;
+    if (!s || s.mode !== 'spell') return;
+    if (s.quizIndex >= s.words.length) { finishSession(); return; }
+    var w = s.currentWord = s.words[s.quizIndex];
+    s.answered = false;
+    $('spellGloss').textContent = s.engine.displayGloss(w.zh);
+    var meta = [global.Vocab.POS_LABEL[w.pos], w.gender && global.Vocab.GENDER_LABEL[w.gender], w.level].filter(Boolean);
+    $('spellMeta').textContent = meta.join(' · ');
+    var input = $('spellInput');
+    input.value = '';
+    input.disabled = false;
+    input.classList.remove('ok', 'no');
+    $('spellFeedback').classList.add('hidden');
+    $('spellNextBtn').classList.add('hidden');
+    $('spellSubmit').classList.remove('hidden');
+    $('spellRevealBtn').classList.remove('hidden');
+    s.hintStage = global.PracticeFlow.hintReset($('spellHint'), $('spellHintBtn'), '显示提示');
+    sessionBar('spell');
+    setTimeout(function () { input.focus(); }, 30);
+  }
+
+  function checkSpelling(reveal) {
+    var s = session;
+    if (!s || s.answered) return;
+    var w = s.currentWord;
+    var answer = $('spellInput').value;
+    if (!reveal && !answer.trim()) return;
+    var grade = reveal ? { status: 'wrong' } : global.Vocab.gradeSpelling(s.lang, answer, w);
+    var ok = grade.status === 'correct';
+
+    s.answered = true;
+    s.quizTotal += 1;
+    var stats = Progress.statsFor(s.lang);
+    stats.spAttempts += 1;
+    if (ok) { s.quizCorrect += 1; stats.spCorrect += 1; }
+    s.engine.recordAnswer(w, ok);
+    Progress.touch(s.key);
+    Progress.touchStats(s.lang);
+    s.startedAt = global.PracticeFlow.recordTelemetry(s.lang, { correct: ok, word: w, startedAt: s.startedAt });
+
+    var head = global.Vocab.headword(w);
+    var text;
+    if (ok) text = '<span class="msr">check_circle</span>正确' + (grade.note ? '<span class="muted"> · ' + esc(grade.note) + '</span>' : '');
+    else if (grade.status === 'accent') text = '<span class="msr">error</span>字母对了，重音不对：<strong>' + esc(head) + '</strong>';
+    else text = '<span class="msr">cancel</span>' + (reveal ? '答案是' : '正确拼写是') + '：<strong>' + esc(head) + '</strong>';
+
+    var input = $('spellInput');
+    input.disabled = true;
+    input.classList.add(ok ? 'ok' : 'no');
+    var fb = $('spellFeedback');
+    fb.classList.remove('hidden', 'correct', 'incorrect');
+    fb.classList.add(ok ? 'correct' : 'incorrect');
+    $('spellFeedbackText').innerHTML = text;
+    $('spellUsage').innerHTML = usageHtml(w);
+    $('spellSubmit').classList.add('hidden');
+    $('spellRevealBtn').classList.add('hidden');
+    $('spellHintBtn').classList.add('hidden');
+    $('spellNextBtn').classList.remove('hidden');
+    $('spellNextBtn').focus();
+    sessionBar('spell');
+    Speaker.speak(head, s.lang);
+  }
+
+  function spellHintStages(s) {
+    var w = s.currentWord;
+    return [
+      { text: global.PracticeFlow.initialHint(w.word), label: '显示提示' },
+      { text: w.en ? 'English: ' + w.en : '', label: '英文释义' },
+      { text: global.Vocab.grammarLine(w), label: '语法信息' }
+    ];
+  }
+
+  function insertAtCursor(input, text) {
+    var start = input.selectionStart == null ? input.value.length : input.selectionStart;
+    var end = input.selectionEnd == null ? input.value.length : input.selectionEnd;
+    input.value = input.value.slice(0, start) + text + input.value.slice(end);
+    input.selectionStart = input.selectionEnd = start + text.length;
+    input.focus();
+  }
+
+  // ---------- 通用 ----------
+
+  function nextQuestion() {
+    var s = session;
+    if (!s) return;
+    s.quizIndex += 1;
+    if (s.mode === 'quiz') renderQuiz(); else renderSpell();
+  }
+
+  function finishSession() {
+    var s = session;
+    var prefix = s.mode === 'quiz' ? 'quiz' : 'spell';
+    Progress.flush();
+    var nowMastered = s.words.filter(function (w) { return s.mastered.has(w.word); }).length;
+    var gained = Math.max(0, nowMastered - s.masteredAtStart);
+    var acc = s.quizTotal ? Math.round(s.quizCorrect / s.quizTotal * 100) : 0;
+    $(prefix + 'Bar').style.width = '100%';
+    $(prefix + 'Body').classList.add('hidden');
+    var done = $(prefix + 'Done');
+    done.innerHTML =
+      '<span class="kicker">本组完成</span>' +
+      '<h2>' + (acc >= 90 ? 'Ottimo — 干得漂亮' : acc >= 60 ? '稳步前进' : '再来一组会更好') + '</h2>' +
+      '<dl class="stat-strip compact">' +
+        stat('答对', s.quizCorrect + ' / ' + s.quizTotal) +
+        stat('正确率', acc + '%') +
+        stat('新掌握', gained) +
+      '</dl>' +
+      '<div class="actions">' +
+        '<button class="primary-btn" data-action="again" data-mode="' + s.mode + '">再来一组</button>' +
+        '<button class="btn" data-go="vocabScreen">返回词汇</button>' +
+      '</div>';
+    done.classList.remove('hidden');
+  }
+
+  function stat(label, value, note) {
+    return '<div class="stat"><dt>' + esc(label) + '</dt><dd class="num">' + esc(value) + '</dd>' +
+      (note ? '<span class="stat-note">' + esc(note) + '</span>' : '') + '</div>';
+  }
+
+  // ==================== 首页 ====================
+
+  function wordOfTheDay(l) {
+    var pool = global.Vocab.upToLevel(l, 'B1');
+    if (!pool.length) pool = global.Vocab.entries(l);
+    if (!pool.length) return null;
+    var day = new Date().toISOString().slice(0, 10) + l;
+    var h = 0;
+    for (var i = 0; i < day.length; i++) h = (h * 31 + day.charCodeAt(i)) >>> 0;
+    return pool[h % pool.length];
+  }
+
+  function renderHome() {
+    var l = lang();
+    var p = profile(l);
+    var entries = global.Vocab.entries(l);
+    var mastered = Progress.systemMastered(l);
+    var due = countDue(l, entries);
+    var streak = global.StatsManager ? global.StatsManager.getStreak(l) : 0;
+    var counts = global.Vocab.levelCounts(l);
+    var wotd = wordOfTheDay(l);
+
+    var levelMastered = {};
+    LEVELS.forEach(function (lv) { levelMastered[lv] = 0; });
+    entries.forEach(function (e) { if (mastered.has(e.word)) levelMastered[e.level] = (levelMastered[e.level] || 0) + 1; });
+
+    var html = '' +
+      '<header class="hero">' +
+        '<div class="hero-copy">' +
+          '<span class="kicker">' + esc(p.en) + ' · ' + esc(p.cn) + '</span>' +
+          '<h1 class="hero-title">' + esc(p.motto) + '</h1>' +
+          '<p class="hero-lede">' + esc(p.cn) + '词库 <span class="num">' + fmt(entries.length) + '</span> 条，按 CEFR A1–C2 分级。' +
+            '选择题、拼写、浏览与打字游戏共用同一份进度，语法书与动词变位按需加载。学习记录只保存在这台设备的浏览器里。</p>' +
+          '<div class="actions">' +
+            '<button class="primary-btn" data-action="start" data-mode="quiz"><span class="msr">play_arrow</span>开始一组练习</button>' +
+            (due ? '<button class="btn" data-action="review"><span class="msr">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
+            '<button class="btn" data-go="vocabScreen">练习设置</button>' +
+          '</div>' +
+        '</div>' +
+        (wotd ? renderWotd(wotd, l) : '') +
+      '</header>' +
+      '<dl class="stat-strip">' +
+        stat('词汇量', fmt(entries.length)) +
+        stat('已掌握', fmt(mastered.size), entries.length ? (mastered.size / entries.length * 100).toFixed(1) + '%' : '') +
+        stat('待复习', fmt(due)) +
+        stat('连续学习', streak + ' 天') +
+      '</dl>' +
+      '<section class="section">' +
+        '<div class="section-head"><span class="kicker">CEFR</span><h2>按等级学习</h2>' +
+          '<p>每一级都是一份完整词表。点开即以该等级为练习范围。</p></div>' +
+        '<div class="level-grid">' + LEVELS.map(function (lv) {
+          var total = counts[lv] || 0;
+          var done = levelMastered[lv] || 0;
+          var pct = total ? done / total * 100 : 0;
+          return '<button class="card level-card" data-action="level" data-level="' + lv + '"' + (total ? '' : ' disabled') + '>' +
+            '<span class="level-code">' + lv + '</span>' +
+            '<span class="card-title">' + LEVEL_NAMES[lv] + '</span>' +
+            '<span class="card-foot"><span class="num">' + fmt(done) + ' / ' + fmt(total) + '</span><span class="num">' + pct.toFixed(0) + '%</span></span>' +
+            '<span class="progress-track"><span class="progress-fill" style="width:' + pct.toFixed(1) + '%"></span></span>' +
+          '</button>';
+        }).join('') + '</div>' +
+      '</section>' +
+      '<section class="section">' +
+        '<div class="section-head"><span class="kicker">Moduli</span><h2>学习模块</h2></div>' +
+        '<div class="card-grid">' + moduleCards(l, 'home') + '</div>' +
+      '</section>';
+    $('homeView').innerHTML = html;
+  }
+
+  function renderWotd(e, l) {
+    return '<aside class="wotd">' +
+      '<span class="kicker">今日一词 · <span class="num">' + esc(e.level || '') + '</span></span>' +
+      '<div class="wotd-word"><span>' + esc(global.Vocab.headword(e)) + '</span>' +
+        '<button class="icon-btn speaker" data-speak="' + escAttr(global.Vocab.headword(e)) + '" aria-label="朗读"><span class="msr">volume_up</span></button></div>' +
+      '<p class="wotd-gram num">' + esc(global.Vocab.grammarLine(e)) + '</p>' +
+      '<p class="wotd-gloss">' + esc(e.zh) + '</p>' +
+      (e.en ? '<p class="wotd-en muted">' + esc(e.en) + '</p>' : '') +
+    '</aside>';
+  }
+
+  /** 模块入口卡片：首页、词汇页、语法页共用一份定义，按语言档案显示/隐藏。 */
+  function moduleCards(l, where) {
+    var cards = [];
+    var card = function (action, icon, title, desc, extra) {
+      cards.push('<button class="card" data-action="' + action + '"' + (extra || '') + '>' +
+        '<span class="card-icon"><span class="msr">' + icon + '</span></span>' +
+        '<span class="card-title">' + title + '</span><span class="card-desc">' + desc + '</span></button>');
+    };
+    if (where === 'home') {
+      card('go-vocab', 'style', '词汇练习', '选择题、拼写、浏览、打字游戏，外加个人单词本。');
+      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', '按章节查阅的' + profile(l).cn + '语法全书。');
+      if (hasModule('conjugation', l)) card('conjugation', 'sync_alt', '动词变位', '查任意动词的完整变位，或按时态分课练习。');
+      if (hasModule('collocations', l)) card('collocations', 'link', '动词搭配', '动词与介词、宾语的固定搭配和例句。');
+      if (hasModule('cognates', l)) card('cognates', 'join_inner', '同源词', '和英语长得像的词，借已有词汇量抄近路。');
+      if (hasModule('course', l)) card('course', 'route', '课程路线 A1–C1', '54 个教材主题，语法重点与核心词汇一一对应。');
+      card('go-progress', 'insights', '学习进度', '每周走势、各等级掌握度与复习计划。');
+    } else if (where === 'grammar') {
+      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', '按章节查阅，左侧目录，右侧正文。');
+      if (hasModule('conjugation', l)) card('conjugation', 'sync_alt', '动词变位', '变位查询；按课次选时态练习选择题与填空。');
+      if (hasModule('collocations', l)) {
+        card('collocations', 'travel_explore', '动词搭配 · 浏览', '按动词查搭配与例句。');
+        card('collocation-practice', 'extension', '动词搭配 · 练习', '看例句选出正确的介词或搭配。');
+      }
+      if (hasModule('course', l)) card('course', 'route', '课程路线 A1–C1', '按教材主题查看语法重点并练习核心词汇。');
+    }
+    return cards.join('');
+  }
+
+  // ==================== 词汇页 ====================
+
+  function chip(label, attrs, active, count) {
+    return '<button type="button" class="chip' + (active ? ' active' : '') + '" aria-pressed="' + (active ? 'true' : 'false') + '" ' + attrs + '>' +
+      esc(label) + (count != null ? ' <span class="chip-count num">' + fmt(count) + '</span>' : '') + '</button>';
+  }
+
+  function renderVocab() {
+    var l = lang();
+    var p = profile(l);
+    var pr = prefs(l);
+    var books = global.Wordbooks.list(l);
+    var src = currentSource(l);
+    var mastered = Progress.mastered(src.key);
+    var counts = global.Vocab.levelCounts(l);
+    var due = countDue(l, src.entries);
+    var masteredIn = 0;
+    src.entries.forEach(function (e) { if (mastered.has(e.word)) masteredIn++; });
+    var sessionN = pr.session === 'all' ? src.entries.length : Math.min(parseInt(pr.session, 10) || 20, src.entries.length);
+
+    var sourceChips = chip('系统词库', 'data-source="system"', src.kind === 'system') +
+      (books.length ? books.map(function (b) {
+        return chip(b.name, 'data-source="wb:' + escAttr(b.id) + '"', src.kind === 'wordbook' && src.id === b.id, b.words.length);
+      }).join('') : '') +
+      (courseSelection && courseSelection.lang === l ? chip('课程：' + courseSelection.label, 'data-source="course"', src.kind === 'course', courseSelection.entries.length) : '');
+
+    var levelRow = src.kind !== 'system' ? '' :
+      '<div class="pref-row"><span class="pref-label">等级</span><div class="chips">' +
+        chip('全部', 'data-level="all"', src.level === 'all', global.Vocab.entries(l).length) +
+        LEVELS.filter(function (lv) { return counts[lv]; }).map(function (lv) {
+          return chip(lv, 'data-level="' + lv + '" title="' + LEVEL_NAMES[lv] + '"', src.level === lv, counts[lv]);
+        }).join('') +
+      '</div></div>';
+
+    var html = '' +
+      '<div class="section-head-row">' +
+        '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Vocabolario</span>' +
+          '<h1 class="page-title">词汇练习</h1>' +
+          '<p>先选范围，再选练习方式。到期复习的词总是排在最前面。</p></div>' +
+      '</div>' +
+      '<div class="vocab-layout">' +
+        '<div class="panel setup-panel">' +
+          '<div class="panel-title">练习范围</div>' +
+          '<div class="pref-row"><span class="pref-label">词源</span><div class="chips">' + sourceChips + '</div></div>' +
+          levelRow +
+          '<div class="pref-row"><span class="pref-label">筛选</span><div class="chips">' +
+            chip('全部', 'data-filter="all"', pr.filter === 'all') +
+            chip('未掌握', 'data-filter="new"', pr.filter === 'new') +
+            chip('到期复习', 'data-filter="due"', pr.filter === 'due', due) +
+          '</div></div>' +
+          '<div class="pref-row"><span class="pref-label">每组</span><div class="segmented">' +
+            SESSION_SIZES.map(function (n) {
+              return '<button type="button" class="seg' + (pr.session === n ? ' active' : '') + '" aria-pressed="' + (pr.session === n) + '" data-session="' + n + '">' + (n === 'all' ? '全部' : n) + '</button>';
+            }).join('') +
+          '</div></div>' +
+          '<p class="setup-summary num">' + esc(src.label) + ' · 共 ' + fmt(src.entries.length) + ' 词 · 已掌握 ' + fmt(masteredIn) +
+            ' · 待复习 ' + fmt(due) + ' · 本组 ' + fmt(sessionN) + '</p>' +
+        '</div>' +
+        '<div class="panel wordbook-panel">' +
+          '<div class="panel-title">我的单词本</div>' +
+          (books.length ? '<ul class="wordbook-list">' + books.map(function (b) {
+            return '<li class="wordbook-item' + (src.kind === 'wordbook' && src.id === b.id ? ' current' : '') + '">' +
+              '<button class="wordbook-name" data-source="wb:' + escAttr(b.id) + '">' + esc(b.name) +
+                ' <span class="num muted">' + fmt(b.words.length) + '</span></button>' +
+              '<span class="wordbook-actions">' +
+                '<button class="icon-btn" data-wb="edit" data-id="' + escAttr(b.id) + '" title="编辑"><span class="msr">edit</span></button>' +
+                '<button class="icon-btn" data-wb="export" data-id="' + escAttr(b.id) + '" title="导出"><span class="msr">download</span></button>' +
+                '<button class="icon-btn" data-wb="delete" data-id="' + escAttr(b.id) + '" title="删除"><span class="msr">delete</span></button>' +
+              '</span></li>';
+          }).join('') + '</ul>' : '<p class="muted small">还没有' + esc(p.cn) + '单词本。可以新建、导入 TXT / JSON，或从社区下载。</p>') +
+          '<div class="btn-row">' +
+            '<button class="pill-btn" data-wb="new"><span class="msr">add</span>新建</button>' +
+            '<button class="pill-btn" data-wb="import"><span class="msr">upload_file</span>导入</button>' +
+            '<button class="pill-btn" data-action="community"><span class="msr">groups</span>社区词书</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="section"><div class="section-head"><h2>练习方式</h2></div>' +
+        '<div class="card-grid mode-grid">' +
+          modeCard('quiz', 'quiz', '选择题', '看' + p.cn + '选释义，或反过来。1–4 选择，Enter 下一题。') +
+          modeCard('spell', 'keyboard', '拼写', '看释义写出单词，' + (l === 'german' ? '名词大小写有提示。' : l === 'french' ? '重音写错会单独指出。' : '支持特殊字母按键。')) +
+          modeCard('browse', 'menu_book', '浏览', '搜索、按等级筛选、标记已掌握、加入单词本。') +
+          modeCard('typing', 'sports_esports', '打字游戏', '单词顺流而下，看释义打字击落。') +
+          (hasModule('cognates', l) ? modeCard('cognates', 'join_inner', '同源词', '和英语同源的词，按构词规律成组学习。') : '') +
+        '</div></div>';
+    $('vocabView').innerHTML = html;
+  }
+
+  function modeCard(mode, icon, title, desc) {
+    return '<button class="card" data-action="start" data-mode="' + mode + '">' +
+      '<span class="card-icon"><span class="msr">' + icon + '</span></span>' +
+      '<span class="card-title">' + title + '</span><span class="card-desc">' + desc + '</span></button>';
+  }
+
+  // ==================== 浏览 ====================
+
+  var browse = { q: '', level: 'all', status: 'all', limit: BROWSE_PAGE, list: [] };
+
+  function renderBrowse() {
+    var l = lang();
+    var src = currentSource(l);
+    var counts = global.Vocab.levelCounts(l);
+    $('browseTitle').textContent = src.kind === 'system' ? profile(l).cn + '词库' : src.label;
+    $('browseLevels').innerHTML = src.kind !== 'system' ? '' :
+      chip('全部', 'data-browse-level="all"', browse.level === 'all') +
+      LEVELS.filter(function (lv) { return counts[lv]; }).map(function (lv) {
+        return chip(lv, 'data-browse-level="' + lv + '"', browse.level === lv);
+      }).join('');
+    $('browseStatus').innerHTML =
+      chip('全部', 'data-browse-status="all"', browse.status === 'all') +
+      chip('未掌握', 'data-browse-status="new"', browse.status === 'new') +
+      chip('已掌握', 'data-browse-status="known"', browse.status === 'known');
+    $('browseSearch').value = browse.q;
+    browse.limit = BROWSE_PAGE;
+    renderBrowseList();
+  }
+
+  function renderBrowseList() {
+    var l = lang();
+    var src = currentSource(l);
+    var mastered = Progress.mastered(src.key);
+    var q = browse.q.trim();
+    var qKey = q ? global.Vocab.looseKey(q) : '';
+    // 系统词库浏览全部等级（等级由上面的筛选控制），不受练习范围里选的等级限制
+    var base = src.kind === 'system' ? global.Vocab.entries(l) : src.entries;
+    var list = base.filter(function (e) {
+      if (src.kind === 'system' && browse.level !== 'all' && e.level !== browse.level) return false;
+      if (browse.status === 'new' && mastered.has(e.word)) return false;
+      if (browse.status === 'known' && !mastered.has(e.word)) return false;
+      if (!q) return true;
+      return global.Vocab.looseKey(e.word).indexOf(qKey) >= 0 ||
+        (e.display && global.Vocab.looseKey(e.display).indexOf(qKey) >= 0) ||
+        String(e.zh || '').indexOf(q) >= 0 ||
+        (e.en && e.en.toLowerCase().indexOf(q.toLowerCase()) >= 0);
+    });
+    // 搜索时把词头精确/前缀命中排在前面
+    if (q) {
+      var rank = function (e) {
+        var k = global.Vocab.looseKey(e.word);
+        return k === qKey ? 0 : k.indexOf(qKey) === 0 ? 1 : 2;
+      };
+      list = list.map(function (e, i) { return { e: e, r: rank(e), i: i }; })
+        .sort(function (a, b) { return a.r - b.r || a.i - b.i; })
+        .map(function (x) { return x.e; });
+    }
+    browse.list = list;
+    $('browseCount').textContent = fmt(list.length) + ' 条';
+    var shown = list.slice(0, browse.limit);
+    $('browseList').innerHTML = shown.length ? shown.map(function (e, i) {
+      var known = mastered.has(e.word);
+      return '<li class="word-row' + (known ? ' known' : '') + '" data-i="' + i + '">' +
+        '<div class="word-main">' +
+          '<span class="word-head">' + esc(global.Vocab.headword(e)) + '</span>' +
+          (e.level ? '<span class="tag">' + esc(e.level) + '</span>' : '') +
+          '<span class="word-gram num">' + esc(global.Vocab.grammarLine(e)) + '</span>' +
+        '</div>' +
+        '<div class="word-gloss">' + esc(e.zh) + (e.en ? '<span class="muted"> · ' + esc(e.en) + '</span>' : '') + '</div>' +
+        '<div class="word-actions">' +
+          '<button class="icon-btn speaker" data-row="speak" aria-label="朗读"><span class="msr">volume_up</span></button>' +
+          '<button class="icon-btn" data-row="known" aria-pressed="' + known + '" title="' + (known ? '取消已掌握' : '标记已掌握') + '"><span class="msr">' + (known ? 'task_alt' : 'radio_button_unchecked') + '</span></button>' +
+          '<button class="icon-btn" data-row="add" title="加入单词本"><span class="msr">bookmark_add</span></button>' +
+        '</div></li>';
+    }).join('') : '<li class="empty">没有匹配的词</li>';
+    $('browseMore').classList.toggle('hidden', list.length <= browse.limit);
+  }
+
+  // ==================== 语法页 ====================
+
+  function renderGrammar() {
+    var l = lang();
+    var p = profile(l);
+    $('grammarView').innerHTML =
+      '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Grammatica</span>' +
+        '<h1 class="page-title">语法</h1><p>语法书用来查，变位与搭配用来练。数据在打开时才下载。</p></div>' +
+      '<div class="card-grid cols-2">' + moduleCards(l, 'grammar') + '</div>';
+  }
+
+  // ==================== 进度页 ====================
+
+  function renderProgress() {
+    var l = lang();
+    var p = profile(l);
+    var entries = global.Vocab.entries(l);
+    var mastered = Progress.systemMastered(l);
+    var stats = Progress.statsFor(l);
+    var SM = global.StatsManager;
+    var week = SM ? SM.getRecentStats(7, l) : [];
+    var total = SM ? SM.getTotalStats(l) : { totalAttempts: 0, averageAccuracy: 0, totalDuration: 0 };
+    var today = week.length ? week[week.length - 1] : { totalCount: 0, correctCount: 0 };
+    var due = countDue(l, entries);
+    var counts = global.Vocab.levelCounts(l);
+    var byLevel = {};
+    entries.forEach(function (e) { if (mastered.has(e.word)) byLevel[e.level] = (byLevel[e.level] || 0) + 1; });
+    var maxDay = Math.max.apply(null, [1].concat(week.map(function (d) { return d.totalCount; })));
+    var pct = function (a, b) { return b ? Math.round(a / b * 100) + '%' : '—'; };
+
+    $('progressView').innerHTML =
+      '<div class="section-head-row">' +
+        '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Progressi</span>' +
+          '<h1 class="page-title">学习进度</h1><p>只统计' + esc(p.cn) + '。换语言请用顶栏的语言切换。</p></div>' +
+        '<div class="btn-row">' +
+          '<button class="btn" data-action="stats-modal"><span class="msr">monitoring</span>详细图表</button>' +
+          (due ? '<button class="primary-btn" data-action="review">复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
+        '</div>' +
+      '</div>' +
+      '<dl class="stat-strip">' +
+        stat('已掌握', fmt(mastered.size), entries.length ? (mastered.size / entries.length * 100).toFixed(1) + '% 词库' : '') +
+        stat('今日答题', fmt(today.totalCount), '正确率 ' + pct(today.correctCount, today.totalCount)) +
+        stat('累计答题', fmt(total.totalAttempts), '正确率 ' + total.averageAccuracy + '%') +
+        stat('连续学习', (SM ? SM.getStreak(l) : 0) + ' 天') +
+      '</dl>' +
+      '<div class="progress-grid">' +
+        '<div class="panel"><div class="panel-title">最近 7 天</div>' +
+          '<div class="week-bars">' + week.map(function (d) {
+            var h = d.totalCount / maxDay * 100;
+            var ok = d.totalCount ? d.correctCount / d.totalCount * 100 : 0;
+            var date = new Date(d.date + 'T00:00:00');
+            return '<div class="week-bar" title="' + escAttr(d.date + '：' + d.totalCount + ' 题，答对 ' + d.correctCount) + '">' +
+              '<span class="week-value num">' + (d.totalCount || '') + '</span>' +
+              '<span class="week-track"><span class="week-fill" style="height:' + h.toFixed(1) + '%"><span class="week-ok" style="height:' + ok.toFixed(1) + '%"></span></span></span>' +
+              '<span class="week-label num">' + (date.getMonth() + 1) + '/' + date.getDate() + '</span></div>';
+          }).join('') + '</div>' +
+          '<p class="muted small">柱高 = 答题数，深色部分 = 答对。</p></div>' +
+        '<div class="panel"><div class="panel-title">各等级掌握度</div>' +
+          '<ul class="level-bars">' + LEVELS.filter(function (lv) { return counts[lv]; }).map(function (lv) {
+            var done = byLevel[lv] || 0;
+            var w = done / counts[lv] * 100;
+            return '<li><span class="tag">' + lv + '</span>' +
+              '<span class="progress-track"><span class="progress-fill" style="width:' + w.toFixed(1) + '%"></span></span>' +
+              '<span class="num">' + fmt(done) + ' / ' + fmt(counts[lv]) + '</span></li>';
+          }).join('') + '</ul></div>' +
+        '<div class="panel"><div class="panel-title">练习方式</div>' +
+          '<dl class="kv">' +
+            '<dt>选择题</dt><dd class="num">' + fmt(stats.mcCorrect) + ' / ' + fmt(stats.mcAttempts) + ' · ' + pct(stats.mcCorrect, stats.mcAttempts) + '</dd>' +
+            '<dt>拼写</dt><dd class="num">' + fmt(stats.spCorrect) + ' / ' + fmt(stats.spAttempts) + ' · ' + pct(stats.spCorrect, stats.spAttempts) + '</dd>' +
+            '<dt>待复习</dt><dd class="num">' + fmt(due) + '</dd>' +
+          '</dl>' +
+          '<p class="muted small">连续答对两次记为已掌握；答错会退回未掌握，并按 SM-2 安排复习。</p></div>' +
+      '</div>';
+  }
+
+  // ==================== 设置页 ====================
+
+  function renderSettings() {
+    var l = lang();
+    var p = profile(l);
+    var theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    $('settingsPrefs').innerHTML =
+      '<p class="muted small">以下两项只对' + esc(p.cn) + '生效。</p>' +
+      global.QuizEngine.renderDifficultyToggle(l, '选择题难度') +
+      global.QuizEngine.renderDirectionToggle(l, '出题方向') +
+      '<div class="pref-row"><span class="pref-label">外观</span><div class="segmented" role="group" aria-label="外观">' +
+        '<button type="button" class="seg' + (theme === 'light' ? ' active' : '') + '" data-theme-set="light">纸张</button>' +
+        '<button type="button" class="seg' + (theme === 'dark' ? ' active' : '') + '" data-theme-set="dark">墨色</button>' +
+      '</div></div>';
+  }
+
+  // ==================== 主题 ====================
+
+  function applyTheme(theme) {
+    var t = theme === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', t === 'dark' ? '#14201a' : '#f6f2e8');
+    var btn = $('themeToggle');
+    if (btn) {
+      btn.setAttribute('aria-label', t === 'dark' ? '切换到浅色' : '切换到深色');
+      btn.querySelector('.msr').textContent = t === 'dark' ? 'light_mode' : 'dark_mode';
+    }
+  }
+
+  function setTheme(theme) {
+    applyTheme(theme);
+    try { localStorage.setItem(THEME_KEY, theme); } catch (e) { /* ignore */ }
+    if (Shell().current() === 'settingsScreen') renderSettings();
+  }
+
+  // ==================== 备份 / 重置 ====================
+
+  function flushAll() {
+    Progress.flush();
+    if (global.DimenticatoUtils && global.DimenticatoUtils.flushAllPersisters) global.DimenticatoUtils.flushAllPersisters();
+  }
+
+  function exportAllData() {
+    try {
+      flushAll();
+      var data = global.DimStorage.exportAll();
+      if (!Object.keys(data.keys).length) {
         alert('目前还没有任何学习数据可以导出。\n\n先做几组练习，或导入一个自定义词本再试。');
         return;
       }
-
-      // 转换为 JSON 字符串
-      const jsonString = JSON.stringify(exportData, null, 2);
-
-      // 创建 Blob 并下载
-      const blob = new Blob([jsonString], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      
-      // 生成文件名（包含日期时间）
-      const now = new Date();
-      const dateStr = now.toISOString().split('T')[0];
-      const timeStr = now.toTimeString().split(' ')[0].replace(/:/g, '-');
-      a.download = `Dimenticato_学习数据_${dateStr}_${timeStr}.json`;
-      
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-      
-      const summary = DimStorage.describePayload(exportData);
-      const detail = summary.languages.length ? summary.languages.join('、') : '暂无已掌握词汇';
-      alert(`学习数据导出成功！\n\n${detail}\n自定义词本 ${summary.wordbooks} 个\n\n文件已保存，请妥善保管。`);
-
-    } catch (e) {
-      console.error('导出数据失败:', e);
-      alert('导出失败: ' + e.message);
+      var now = new Date();
+      var pad = function (n) { return String(n).padStart(2, '0'); };
+      var name = 'Dimenticato_学习数据_' + now.getFullYear() + pad(now.getMonth() + 1) + pad(now.getDate()) +
+        '_' + pad(now.getHours()) + pad(now.getMinutes()) + '.json';
+      download(name, JSON.stringify(data, null, 2), 'application/json');
+      var d = global.DimStorage.describePayload(data);
+      alert('学习数据已导出：' + name + '\n\n' +
+        (d.languages.length ? d.languages.join('，') : '暂无已掌握单词') + '\n单词本 ' + d.wordbooks + ' 个 · 共 ' + d.keys + ' 项数据');
+    } catch (err) {
+      console.error(err);
+      alert('导出失败：' + err.message);
     }
-  },
-  
-  // 导入学习数据（1.0 旧文件与 2.0 全语言文件都能读）
-  importAllData(file) {
-    return new Promise((resolve, reject) => {
-      // 导入前先冲刷：挂起的延迟写会在导入后用旧状态覆盖刚导入的数据
-      if (window.DimenticatoUtils && window.DimenticatoUtils.flushAllPersisters) {
-        window.DimenticatoUtils.flushAllPersisters();
-      }
-      const reader = new FileReader();
-
-      reader.onload = (e) => {
-        try {
-          const importData = JSON.parse(e.target.result);
-
-          // 验证数据格式：2.0 用 keys，1.0 用 data
-          if (!importData || (!importData.keys && !importData.data)) {
-            reject('无效的数据文件格式');
-            return;
-          }
-
-          const summary = DimStorage.describePayload(importData);
-          if (summary.keys === 0) {
-            reject('数据文件中没有可导入的内容');
-            return;
-          }
-
-          const exportedAt = importData.exportDate
-            ? new Date(importData.exportDate).toLocaleString()
-            : '未知';
-          const langLine = summary.languages.length ? summary.languages.join('\n') : '（无已掌握词汇）';
-
-          const confirmMsg =
-            `即将导入学习数据\n\n` +
-            `导出日期: ${exportedAt}\n` +
-            `数据版本: ${importData.version || '1.0'}\n` +
-            `${langLine}\n` +
-            `自定义单词本: ${summary.wordbooks} 个\n\n` +
-            `选择导入模式：\n` +
-            `1 - 覆盖模式（文件中出现的项目按文件内容替换）\n` +
-            `2 - 合并模式（保留现有数据，合并导入数据）\n` +
-            `0 - 取消\n\n` +
-            `请输入 0、1 或 2：`;
-
-          const mode = prompt(confirmMsg);
-
-          if (mode === '0' || mode === null) {
-            reject('用户取消导入');
-            return;
-          }
-
-          if (mode === '1') {
-            this.applyImport(importData, 'overwrite');
-            resolve('overwrite');
-          } else if (mode === '2') {
-            this.applyImport(importData, 'merge');
-            resolve('merge');
-          } else {
-            reject('无效的选择');
-          }
-
-        } catch (error) {
-          reject('JSON 解析失败: ' + error.message);
-        }
-      };
-
-      reader.onerror = () => {
-        reject('文件读取失败');
-      };
-
-      reader.readAsText(file);
-    });
-  },
-
-  // 实际落盘 + 刷新 UI。
-  // 覆盖模式只覆盖“文件里出现过的 key”——旧实现先 clearAllData() 把所有
-  // dimenticato_* 全删了，于是从一个只含意大利语的备份恢复会连德/英/法进度
-  // 和主题一起抹掉。现在不再有任何裸删。
-  applyImport(importData, mode) {
-    try {
-      const result = DimStorage.importAll(importData, { mode });
-
-      // 应用主题
-      const theme = localStorage.getItem(this.KEYS.THEME);
-      if (theme) document.documentElement.setAttribute('data-theme', theme);
-
-      // 重新加载内存状态
-      this.load();
-
-      // 刷新UI
-      updateHeaderStats();
-      WordbookManager.renderWordbookCards();
-      highlightSelectedLevel();
-
-      const label = mode === 'overwrite' ? '覆盖模式' : '合并模式';
-      alert(`数据导入成功（${label}）！\n\n共写入 ${result.written} 项。\n页面将刷新以应用新数据。`);
-      setTimeout(() => location.reload(), 1000);
-
-    } catch (e) {
-      console.error('导入数据失败:', e);
-      alert('导入失败: ' + e.message);
-    }
-  },
-
-  // 兼容旧调用点
-  importWithOverwrite(importData) {
-    this.applyImport(importData, 'overwrite');
-  },
-
-  importWithMerge(importData) {
-    this.applyImport(importData, 'merge');
   }
-};
 
-// ==================== 数据加载 ====================
-
-function updateLoadingProgress(percent, message) {
-  var fill = document.getElementById('loadingProgressFill');
-  var detail = document.getElementById('loadingDetail');
-  if (fill) fill.style.width = percent + '%';
-  if (detail) detail.textContent = message || '';
-}
-
-function loadVocabulary() {
-  try {
-    updateLoadingProgress(10, '正在加载词汇数据...');
-
-    // 直接使用内嵌的词汇数据（从 vocabulary.js 加载）
-    if (typeof VOCABULARY_DATA === 'undefined') {
-      // 意大利语词库现在是按需加载的。首屏进的是德/法/英时它本来就不该在，
-      // 这不是错误：直接放行进应用，等真正切到意大利语时 LangLoader 会补跑本函数。
-      const bootLang = window.LangLoader ? window.LangLoader.detectLanguage() : 'italian';
-      if (bootLang !== 'italian') {
-        document.getElementById('loading')?.classList.add('hidden');
-        document.getElementById('app')?.classList.remove('hidden');
+  function importAllData(file) {
+    var reader = new FileReader();
+    reader.onload = function (event) {
+      var payload;
+      try { payload = JSON.parse(event.target.result); } catch (err) {
+        alert('文件不是有效的 JSON，无法导入。');
         return;
       }
-
-      // 显示更详细的错误信息
-      const errorMsg = '词汇数据未加载。可能原因：\n1. vocabulary.js 文件加载失败\n2. 网络连接问题\n3. 文件过大导致加载超时';
-      console.error('❌ 加载失败:', errorMsg);
-      updateLoadingProgress(0, '加载失败：词汇数据未找到');
-
-      // 在小程序环境中显示友好的错误提示
-      setTimeout(function() {
-        document.getElementById('loading').innerHTML = `
-          <div style="text-align: center; padding: 40px 20px;">
-            <h2 style="color: var(--bad, #b0564b); margin-bottom: 20px;">加载失败</h2>
-            <p style="margin-bottom: 10px;">词汇数据文件加载失败</p>
-            <p style="color: var(--muted, #8f8a7d); font-size: 14px; margin-bottom: 20px;">
-              这可能是由于网络问题或文件过大导致的
-            </p>
-            <button onclick="location.reload()" style="
-              background: var(--accent, #4a7a5e);
-              color: white;
-              border: none;
-              padding: 12px 24px;
-              border-radius: 8px;
-              font-size: 16px;
-              cursor: pointer;
-            ">重新加载</button>
-          </div>
-        `;
-      }, 500);
-      return;
-    }
-
-    AppState.vocabulary = VOCABULARY_DATA;
-    updateLoadingProgress(40, '已加载 ' + AppState.vocabulary.length.toLocaleString() + ' 个单词');
-
-    // 加载本地存储的数据
-    updateLoadingProgress(60, '正在恢复学习进度...');
-    Storage.load();
-
-    // 初始化当前词汇列表
-    updateLoadingProgress(80, '正在准备练习...');
-    updateCurrentWords();
-
-    // 隐藏加载动画，显示应用
-    updateLoadingProgress(100, '准备就绪');
-    setTimeout(function () {
-      document.getElementById('loading').classList.add('hidden');
-      document.getElementById('app').classList.remove('hidden');
-    }, 300);
-
-    // 更新头部统计
-    updateHeaderStats();
-
-    // 高亮选中的难度级别
-    highlightSelectedLevel();
-
-  } catch (error) {
-    console.error('❌ 加载失败:', error);
-    updateLoadingProgress(0, '加载失败：' + error.message);
-    alert('加载词汇数据失败：' + error.message);
-  }
-}
-
-// 更新当前难度级别的单词列表
-function updateCurrentWords() {
-  if (AppState.selectedLevel === 'all') {
-    AppState.currentWords = [...AppState.vocabulary];
-  } else {
-    AppState.currentWords = AppState.vocabulary.slice(0, AppState.selectedLevel);
-  }
-}
-
-// ==================== UI 更新 ====================
-
-// 统计“当前词表里已掌握的词数”。
-// 旧实现是 [...mastered].filter(w => currentWords.some(...))，即 O(n·m)：
-// 全部 27,117 词 + 5,000 已掌握时单次要跑近 1 秒，而每答一题都会调用它。
-// 这里改成先把 currentWords 的 italian 建成 Set 再求交集（O(n+m)），
-// 并按 currentWords 数组身份缓存 Set，避免同一词表反复重建。
-let _currentWordsKeySet = null;
-let _currentWordsKeySetSource = null;
-
-function getCurrentWordsKeySet() {
-  const words = AppState.currentWords;
-  if (_currentWordsKeySetSource !== words) {
-    _currentWordsKeySetSource = words;
-    _currentWordsKeySet = new Set((words || []).map(w => w.italian));
-  }
-  return _currentWordsKeySet;
-}
-
-function countMasteredInCurrentWords() {
-  const keys = getCurrentWordsKeySet();
-  const mastered = AppState.masteredWords;
-  if (!mastered || !keys.size) return 0;
-  // 遍历较小的一侧
-  if (mastered.size <= keys.size) {
-    let count = 0;
-    mastered.forEach(word => { if (keys.has(word)) count++; });
-    return count;
-  }
-  let count = 0;
-  keys.forEach(word => { if (mastered.has(word)) count++; });
-  return count;
-}
-
-function updateHeaderStats() {
-  const totalWords = AppState.currentWords.length;
-  const masteredCount = countMasteredInCurrentWords();
-  // 顶栏三个数字统一由 HeaderStats 渲染：它只在“当前语言 === italian”时才落笔，
-  // 因此德/英/法界面上不会再出现意大利语的数字。
-  HeaderStats.set('italian', { total: totalWords, mastered: masteredCount });
-}
-
-function highlightSelectedLevel() {
-  // 清除所有选中状态
-  document.querySelectorAll('.vocab-source-btn, .wordbook-card').forEach(btn => {
-    btn.classList.remove('selected');
-  });
-  
-  // 根据选择类型高亮
-  if (AppState.selectedSourceType === 'system') {
-    document.querySelectorAll('.vocab-source-btn').forEach(btn => {
-      const level = btn.dataset.level;
-      if ((level === 'all' && AppState.selectedLevel === 'all') ||
-          (level !== 'all' && parseInt(level) === AppState.selectedLevel)) {
-        btn.classList.add('selected');
+      if (!payload || typeof payload !== 'object' || (!payload.keys && !payload.data)) {
+        alert('这不是 Dimenticato 的备份文件。');
+        return;
       }
-    });
-  } else if (AppState.selectedSourceType === 'custom' && AppState.selectedSource) {
-    const card = document.querySelector(`.wordbook-card[data-wordbook-id="${AppState.selectedSource}"]`);
-    if (card) {
-      card.classList.add('selected');
-    }
-  } else if (AppState.selectedSourceType === 'cognate') {
-    document.querySelectorAll('.cognate-btn').forEach(btn => {
-      btn.classList.add('selected');
-    });
-  }
-  
-  // 更新模式按钮状态
-  updateModeButtons();
-}
-
-function showCognateModeSelection() {
-  const cognateContainer = document.getElementById('cognatePracticeContainer');
-  if (cognateContainer) {
-    cognateContainer.classList.remove('hidden');
-  }
-
-  if (typeof CognateApp !== 'undefined') {
-    CognateApp.showModeSelection();
-  }
-}
-
-function hideCognateModeSelection() {
-  const cognateContainer = document.getElementById('cognatePracticeContainer');
-  if (cognateContainer) {
-    cognateContainer.classList.add('hidden');
-  }
-}
-
-function updateModeButtons() {
-  const modeButtons = [
-    document.getElementById('multipleChoiceBtn'),
-    document.getElementById('spellingBtn'),
-    document.getElementById('browseBtn')
-  ];
-
-  const isCognate = AppState.selectedSourceType === 'cognate';
-  modeButtons.forEach(btn => {
-    if (btn) {
-      btn.disabled = isCognate || AppState.selectedSourceType === null;
-      btn.style.display = isCognate ? 'none' : '';
-    }
-  });
-
-  if (isCognate && typeof CognateApp !== 'undefined') {
-    showCognateModeSelection();
-  }
-}
-
-function getVocabularySelectionLabel() {
-  if (AppState.selectedSourceType === 'system') {
-    const levelLabel = AppState.selectedLevel === 'all'
-      ? '全部词汇'
-      : `系统词汇 ${AppState.selectedLevel.toLocaleString()} 词`;
-    return {
-      title: '系统词汇库',
-      detail: levelLabel
+      var mode = prompt('导入方式：\n\n1 - 覆盖（用备份替换本机同名数据）\n2 - 合并（保留两边的进度，取并集 / 较大值）\n\n请输入 1 或 2：', '2');
+      if (mode !== '1' && mode !== '2') return;
+      try {
+        flushAll();
+        var result = global.DimStorage.importAll(payload, { mode: mode === '1' ? 'overwrite' : 'merge' });
+        global.DimStorage.LANGS.forEach(function (l) {
+          if (global.Vocab.ready(l)) global.LegacyMigration.run(l);
+        });
+        var theme = localStorage.getItem(THEME_KEY);
+        if (theme) applyTheme(theme);
+        alert('导入完成' + (result && result.written != null ? '（写入 ' + result.written + ' 项）' : '') + '。\n\n页面将刷新以应用变更。');
+        setTimeout(function () { location.reload(); }, 400);
+      } catch (err) {
+        console.error(err);
+        alert('导入失败：' + err.message);
+      }
     };
+    reader.readAsText(file);
   }
 
-  if (AppState.selectedSourceType === 'custom' && AppState.currentWordbook) {
-    return {
-      title: '我的词本',
-      detail: `${AppState.currentWordbook.name} · ${AppState.currentWordbook.wordCount} 词`
-    };
+  function resetProgress() {
+    var labels = global.DimStorage.LANGUAGE_LABELS;
+    var choice = prompt('要重置哪一部分的学习进度？\n\n1 - ' + labels.italian + '\n2 - ' + labels.german + '\n3 - ' + labels.english +
+      '\n4 - ' + labels.french + '\n5 - 全部语言\n\n单词本内容、主题和偏好设置不会被删除。请输入 1-5：');
+    var scope = { 1: 'italian', 2: 'german', 3: 'english', 4: 'french', 5: 'all' }[String(choice || '').trim()];
+    if (!scope) return;
+    var label = scope === 'all' ? '全部语言' : labels[scope];
+    if (!confirm('确定要重置【' + label + '】的学习进度吗？此操作不可撤销。\n\n建议先导出一份备份。')) return;
+    flushAll();
+    var result = global.DimStorage.reset({ scope: scope });
+    alert('【' + label + '】进度已重置（清除 ' + result.removed.length + ' 项）。\n\n页面将刷新以应用变更。');
+    setTimeout(function () { location.reload(); }, 400);
   }
 
-  return {
-    title: '未选择来源',
-    detail: '请先在上一层选择一个词汇来源'
-  };
-}
-
-function updateVocabularySummary() {
-  const summary = document.getElementById('vocabularySelectionSummary');
-  const flowSummary = document.getElementById('vocabularyFlowSummary');
-  if (!summary || !flowSummary) return;
-
-  const selection = getVocabularySelectionLabel();
-  summary.innerHTML = `
-    <div class="selection-summary-item">
-      <span class="selection-summary-label">当前来源</span>
-      <strong>${selection.title}</strong>
-    </div>
-    <div class="selection-summary-item">
-      <span class="selection-summary-label">当前选择</span>
-      <span>${escapeHtml(selection.detail)}</span>
-    </div>
-    <div class="selection-summary-item">
-      <span class="selection-summary-label">下一步</span>
-      <span>选择题 / 拼写 / 浏览</span>
-    </div>
-  `;
-
-  flowSummary.textContent = AppState.selectedSourceType ? `${selection.title} · ${selection.detail}` : '请选择词汇来源';
-}
-
-function updateProgressScreenStats() {
-  const totalWords = AppState.currentWords.length;
-  const masteredCount = countMasteredInCurrentWords();
-  const progress = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
-
-  const totalEl = document.getElementById('progressCurrentTotalWords');
-  const masteredEl = document.getElementById('progressCurrentMasteredWords');
-  const progressEl = document.getElementById('progressCurrentPercent');
-
-  if (totalEl) totalEl.textContent = totalWords.toLocaleString();
-  if (masteredEl) masteredEl.textContent = masteredCount.toLocaleString();
-  if (progressEl) progressEl.textContent = progress + '%';
-}
-
-// 语法书是四种语言共用的一块屏幕。german-app.js 的 _openGrammarBook 会改写标题、
-// 并且把返回按钮的 textContent 直接写成 '← 返回'（连带删掉里面的 Material 图标）。
-// 意大利语/法语的入口没有把标题改回来，于是从德语转到意大利语会看到
-// “German / Grammar Book”。这里在每次进入该屏幕时统一归位。
-const GRAMMAR_BOOK_TITLES = {
-  italian: '意大利语语法',
-  french: '法语语法'
-};
-
-function normalizeGrammarBookChrome() {
-  const lang = getActiveLanguage();
-  const title = GRAMMAR_BOOK_TITLES[lang];
-  if (title) {
-    const welcomeEl = document.querySelector('#grammarBookScreen .grammar-welcome h2');
-    if (welcomeEl) welcomeEl.textContent = title;
-  }
-  const backBtn = document.getElementById('grammarBookBackBtn');
-  if (backBtn) backBtn.innerHTML = '<span class="msr">arrow_back</span>返回';
-}
-
-const SECTION_BY_TOPNAV = {
-  welcomeScreen: 'home',
-  vocabularyScreen: 'vocab',
-  grammarScreen: 'grammar',
-  progressScreen: 'progress',
-  settingsScreen: 'settings',
-  globalHomeScreen: 'overview'
-};
-
-function updateHeaderNavigation(screenId) {
-  const meta = ScreenMeta[screenId] || ScreenMeta.welcomeScreen;
-  AppState.activeModule = meta.module;
-
-  const section = SECTION_BY_TOPNAV[meta.topNav] || 'home';
-  document.querySelectorAll('.nav-item[data-section]').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.section === section);
-  });
-
-  const breadcrumb = document.getElementById('breadcrumb');
-  if (breadcrumb) {
-    // breadcrumb 可以是数组，也可以是 (lang) => 数组 —— 共享屏幕（语法书 / 动词
-    // 变位 / 社区词本 / 动词搭配）四种语言共用同一个 DOM，需要按当前语言求值。
-    const rawCrumbs = typeof meta.breadcrumb === 'function'
-      ? meta.breadcrumb(getActiveLanguage())
-      : meta.breadcrumb;
-    const crumbs = Array.isArray(rawCrumbs) ? rawCrumbs : [];
-    const esc = window.escapeHtml || (s => String(s));
-    breadcrumb.innerHTML = crumbs
-      .map((item, index) => `<span class="breadcrumb-item ${index === crumbs.length - 1 ? 'current' : ''}">${esc(item)}</span>`)
-      .join('<span class="breadcrumb-separator">/</span>');
+  function download(name, text, type) {
+    var blob = new Blob([text], { type: type || 'text/plain' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
   }
 
-  if (screenId === 'grammarBookScreen') normalizeGrammarBookChrome();
+  // ==================== 提示条 ====================
 
-  // 复习会话钩子。必须挂在这里而不是包装 window.showScreen：lib/navigation.js
-  // 的 goBack() 调用的是它自己闭包里的 showScreen，包装 window.showScreen 对
-  // goBack 无效；而 updateHeaderNavigation 是 app.js 的顶层函数声明（挂在 window
-  // 上），navigation.js 以裸名字调用它，因此每一次屏幕切换都会走到这里。
-  // 顺序很重要：先还原复习会话的词表，再刷新顶栏数字。
-  if (window.ReviewSession && typeof window.ReviewSession.onScreenChange === 'function') {
-    window.ReviewSession.onScreenChange(screenId);
+  var toastTimer = null;
+  function toast(message) {
+    var el = $('toast');
+    if (!el) return;
+    el.textContent = message;
+    el.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2400);
   }
 
-  // 顶栏统计跟随当前语言（HeaderStats 在 call time 通过 window 解析各语言模块）
-  if (window.HeaderStats) {
-    window.HeaderStats.refresh();
-  }
-}
-
-// ==================== 导航核心已抽取到 lib/navigation.js ====================
-//
-// 以下导航原语已迁移至 lib/navigation.js（在本文件之前加载），并通过 window.*
-// 以相同名字暴露，本文件及其它脚本继续以裸名字调用：
-//   setPracticeContext, makeLanguageFallbackMap, FALLBACK_BACK_MAP,
-//   getSharedScreenBackTarget, getFallbackBackTarget,
-//   getPreviousScreenFromHistory, shouldShowMobileBackButton,
-//   updateMobileBackButton, goBack, showScreen
-// (Stage 2 removed isHistoryUnreliableScreen/SHARED_SCREENS — German/English
-//  now push real history, so goBack relies on the shared navigationStack.)
-//
-// AppState / ScreenMeta / updateHeaderNavigation 仍保留在本文件；navigation.js
-// 在调用时（DOMContentLoaded 之后）通过共享全局作用域延迟解析它们，无 load-order 风险。
-
-// ==================== 掌握度（连续答对门槛） ====================
-//
-// 见 audit: it-mastered-after-one-lucky-guess —— 四选一里蒙对一次就把单词标成
-// “已掌握”，进度条凭运气上涨。现在选择题和拼写都统一走 lib/quiz-engine.js 里的
-// MasteryPolicy：连续答对 STREAK_REQUIRED 次（或 SM-2 已把它排到长间隔）才算
-// 掌握，答错立即清零重来。德语/英语/法语用同一套策略，只是 lang 参数不同。
-//
-// MasteryPolicy 一律在【调用时】通过 window 解析：lib/quiz-engine.js 虽然先于
-// app.js 加载，但解析期的 typeof 判断正是 SRS 整套功能从未安装的根因，这里不破例。
-//
-// 只做“晋级”，不做“降级”：dimenticato_mastered 里已有的词（老用户的存量进度）
-// 保持已掌握，不需要重新赚一次。
-function recordItalianMastery(word, isCorrect) {
-  const key = word && word.italian;
-  if (!key) return { streak: 0, mastered: false };
-
-  const policy = window.MasteryPolicy;
-  if (!policy || typeof policy.record !== 'function') {
-    // 策略模块缺失时不晋级。这条分支实际不可达：lib/quiz-engine.js 没加载的话，
-    // 选择题/拼写在 _getEngine() 里就已经因 QuizEngine 未定义而抛错了。
-    // 宁可不涨进度，也不能退回“蒙对一次就算掌握”。
-    return { streak: 0, mastered: false };
-  }
-
-  const outcome = policy.record('italian', key, isCorrect, { word }) || { streak: 0, mastered: false };
-  // AppState.masteredWords 在切换词源/词本时会被整体替换，所以这里在调用时才取它
-  if (outcome.mastered) AppState.masteredWords.add(key);
-  return outcome;
-}
-
-// ==================== 选择题模式 ====================
-
-const MultipleChoice = {
-  _engine: null,
-
-  // 每组题量（与 GermanApp 的 SESSION_OPTIONS 同一套）
-  MC_SESSION_OPTIONS: [
-    { value: '20', label: '20 题' },
-    { value: '50', label: '50 题' },
-    { value: '100', label: '100 题' },
-    { value: 'all', label: '不限' }
-  ],
-  sessionSize: '20',
-
-  _getEngine() {
-    if (!this._engine) {
-      this._engine = new QuizEngine({
-        state: {
-          get words() { return AppState.currentWords; },
-          get quizIndex() { return AppState.quizIndex; },
-          set quizIndex(v) { AppState.quizIndex = v; },
-          get quizCorrect() { return AppState.quizCorrect; },
-          set quizCorrect(v) { AppState.quizCorrect = v; },
-          get quizTotal() { return AppState.quizTotal; },
-          set quizTotal(v) { AppState.quizTotal = v; },
-          get currentWord() { return AppState.currentWord; },
-          set currentWord(v) { AppState.currentWord = v; }
-        },
-        stats: AppState.stats,
-        mastered: AppState.masteredWords,
-        fieldMap: { source: 'italian', target: 'english' },
-        get difficulty() { return QuizEngine.getDifficulty(); },
-        onUpdateStats: updateHeaderStats,
-        dom: {
-          optionsContainer: document.getElementById('mcOptions'),
-          feedbackEl: document.getElementById('mcFeedback'),
-          feedbackTextEl: document.querySelector('#mcFeedback .feedback-text'),
-          progressCurrent: document.getElementById('mcCurrentWord'),
-          progressTotal: document.getElementById('mcTotalWords'),
-          accuracyEl: document.getElementById('mcAccuracy')
-        }
-      });
-    }
-    return this._engine;
-  },
-
-  loadSessionSize() {
-    try {
-      const saved = localStorage.getItem(Storage.KEYS.MC_SESSION);
-      if (saved && this.MC_SESSION_OPTIONS.some((option) => option.value === saved)) {
-        this.sessionSize = saved;
-      }
-    } catch (err) { /* 隐私模式下读不到就算了，用默认 20 */ }
-  },
-
-  setSessionSize(size) {
-    if (!this.MC_SESSION_OPTIONS.some((option) => option.value === size)) return;
-    this.sessionSize = size;
-    DimStorage.safeSetItem(Storage.KEYS.MC_SESSION, size);
-    this.renderSessionChips();
-  },
-
-  renderSessionChips() {
-    const container = document.getElementById('mcSessionChips');
-    if (!container) return;
-    container.innerHTML = this.MC_SESSION_OPTIONS.map((option) => (
-      `<button class="chip${option.value === this.sessionSize ? ' active' : ''}" type="button" data-mc-session="${escapeAttribute(option.value)}">${escapeHtml(option.label)}</button>`
-    )).join('');
-  },
-
-  // 一组练习不再是「把整个词表洗牌到底」：先按 复习到期 → 未掌握 → 其余
-  // 排序，再截取每组题量（与 GermanApp.buildSession 同构）。这样选择题
-  // 才有可达成的结束点与总结；此前意语一次洗牌 1000/27k 词，
-  // 进度条 "1/1000" 永远走不完。
-  buildSession() {
-    const pool = Array.isArray(AppState.currentWords) ? AppState.currentWords.slice() : [];
-    if (!pool.length) return pool;
-    const sr = window.SpacedRepetition;
-    // 到期词来自共享 SM-2 store（PracticeFlow 每次作答都在写）；
-    // 此前意语选题完全不看它，复习只能靠首页的"今日待复习"卡片。
-    const dueSet = new Set(sr ? sr.getDueWords('italian', pool) : []);
-    const mastered = AppState.masteredWords;
-    const due = [];
-    const fresh = [];
-    const rest = [];
-    pool.forEach((word) => {
-      if (dueSet.has(word)) due.push(word);
-      else if (!mastered.has(word.italian)) fresh.push(word);
-      else rest.push(word);
-    });
-    const ordered = [
-      ...shuffleArray(due),
-      ...shuffleArray(fresh),
-      ...shuffleArray(rest)
-    ];
-    if (this.sessionSize === 'all') return ordered;
-    const size = Number(this.sessionSize) || 20;
-    return ordered.slice(0, Math.max(1, size));
-  },
-
-  start() {
-    AppState.currentMode = 'mc';
-    AppState.quizIndex = 0;
-    AppState.quizCorrect = 0;
-    AppState.quizTotal = 0;
-
-    // 只练这一组。currentWords 本身不再被替换/洗牌 —— 拼写、浏览和
-    // 干扰项池仍然用完整的分层词表。
-    this.loadSessionSize();
-    this._session = this.buildSession();
-    this._pool = AppState.currentWords.slice();
-
-    showScreen('multipleChoiceScreen');
-    this.loadQuestion();
-  },
-
-  // 历史上这里曾有一份「朴素版」loadQuestion，随后在文件末尾被 SRS 增强版
-  // 整个覆盖（双定义，读代码的人要跳到 3000 行外才知道哪份生效）。
-  // 2026-08-28 合并为单一定义：下面就是原「增强版」的全部内容。
-  loadQuestion() {
-    const session = Array.isArray(this._session) ? this._session : [];
-    if (AppState.quizIndex >= session.length) {
-      this.showCompletion();
-      return;
-    }
-
-    AppState.currentWord = session[AppState.quizIndex];
-    this._questionStartedAt = Date.now(); // PracticeFlow 遥测算答题时长用
-
-    // 更新进度（分母是本组题量，不再是整个词表）
-    document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
-    document.getElementById('mcTotalWords').textContent = session.length;
-    updateSessionFill('mcSessionFill', AppState.quizIndex, session.length);
-
-    // 更新正确率
-    const accuracy = AppState.quizTotal > 0
-      ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100)
-      : 0;
-    document.getElementById('mcAccuracy').textContent = accuracy + '%';
-
-    // 题面跟着出题方向走：正向显示意大利语单词，反向显示释义
-    const mcEngine = this._getEngine();
-    document.getElementById('mcItalianWord').textContent =
-      mcEngine.questionTextFor(AppState.currentWord);
-    mcEngine.applyDirectionLabels(
-      { question: 'mcQuestionLabel', options: 'mcOptionsLabel' },
-      { question: '意大利语单词', options: '选择正确的英语翻译' },
-      { question: '英语释义', options: '选择正确的意大利语单词' }
-    );
-
-    // 自动朗读意大利语单词（反向模式题面是释义，朗读词形等于报答案）
-    if (mcEngine.shouldSpeakQuestion()) {
-      setTimeout(() => {
-        italianSpeaker.speak(AppState.currentWord.italian, true);
-      }, 300); // 稍微延迟一下，让界面先更新
-    }
-
-    // 递进式提示（showHint）：重置到第一档。首字母档永远可用，
-    // 中文释义档只在有中文翻译时出现 —— 中文 ≈ 直接送答案，不该是第一档。
-    const chineseHint = document.getElementById('mcChineseHint');
-    const showHintBtn = document.getElementById('mcShowHintBtn');
-
-    this._hintStage = window.PracticeFlow.hintReset(chineseHint, showHintBtn);
-
-    // 显示 notes（如果存在）
-    this.displayNotes();
-
-    // 生成选项
-    this.generateOptions();
-
-    // 隐藏反馈
-    document.getElementById('mcFeedback').classList.add('hidden');
-  },
-
-  displayNotes() {
-    // 查找或创建 notes 显示区域
-    let notesContainer = document.querySelector('#multipleChoiceScreen .quiz-notes');
-    if (!notesContainer) {
-      const questionSection = document.querySelector('#multipleChoiceScreen .question-section');
-      notesContainer = document.createElement('div');
-      notesContainer.className = 'quiz-notes';
-      questionSection.appendChild(notesContainer);
-    }
-
-    if (AppState.currentWord.notes) {
-      notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${escapeHtml(AppState.currentWord.notes)}`;
-      notesContainer.style.display = 'block';
-    } else {
-      notesContainer.style.display = 'none';
-    }
-  },
-
-  generateOptions() {
-    var correctAnswer = this._getEngine().correctAnswerFor(AppState.currentWord);
-    // 干扰项来自完整的分层词表（_pool），不是本组 20 题 —— 组太小的话
-    // 几趟下来就能靠排除法猜出答案。复习会话（ReviewSession）会把
-    // currentWords 换成很小的到期列表，同样不够当池子，退回全词库。
-    var fullPool = (Array.isArray(this._pool) && this._pool.length >= 40)
-      ? this._pool
-      : AppState.vocabulary;
-    // 27k 全池直接喂给引擎 = 每题一次全表扫描 + 全表洗牌；先有界采样到 800
-    var optionSource = QuizEngine.sampleDistractorPool(fullPool, AppState.currentWord);
-    var options = this._getEngine().generateOptions(correctAnswer, optionSource);
-    var self = this;
-    this._getEngine().renderOptions(options, function (btn) { self.checkAnswer(btn); });
-  },
-
-  // 上一题的开始时刻（PracticeFlow 遥测算答题时长用；0 = 未知）
-  _questionStartedAt: 0,
-
-  // 判分流程共享自 lib/practice-flow.js（四语言同一实现），
-  // 语言差异全部通过 env 注入：掌握策略、保存动作、下一题延迟。
-  checkAnswer(button) {
-    var self = this;
-    this._questionStartedAt = window.PracticeFlow.mcAnswer({
-      lang: 'italian',
-      engine: function () { return self._getEngine(); },
-      button: button,
-      word: AppState.currentWord,
-      state: AppState,
-      stats: AppState.stats,
-      // 掌握与否交给 MasteryPolicy（连续答对才算数；答错清零）
-      recordMastery: function (word, ok) { recordItalianMastery(word, ok); },
-      save: function () { Storage.save(); updateHeaderStats(); },
-      next: function () { self.nextQuestion(); },
-      nextDelay: 1000,
-      startedAt: this._questionStartedAt || 0
-    });
-  },
-  
-  nextQuestion() {
-    AppState.quizIndex++;
-    this.loadQuestion();
-  },
-  
-  // 递进式提示：第一档只给答案首字母 + 字母数；中文释义 ≈ 直接送答案
-  // （实测点一下选择题就没意义了），降级为第二档，用户试过首字母之后才给。
-  _hintStage: 0,
-
-  showHint() {
-    const word = AppState.currentWord;
-    if (!word) return;
-    const hintEl = document.getElementById('mcChineseHint');
-    const btn = document.getElementById('mcShowHintBtn');
-    // 原始释义带 "(2)" 编号与多义项（"the; la (feminine); (2)"），直接数长度
-    // 会把分号、括号都算成字母。用展示用清洗后的释义（initialHint 只取第一个义项）。
-    const engine = this._getEngine();
-    const raw = String(engine.correctAnswerFor(word) || '');
-    this._hintStage = window.PracticeFlow.hintAdvance(this._hintStage, {
-      hintEl: hintEl,
-      btn: btn,
-      stages: [
-        { text: window.PracticeFlow.initialHint(engine.displayGloss(raw) || raw) },
-        { text: word.chinese ? `中文: ${word.chinese}` : '', label: '显示中文释义' }
-      ]
-    });
-  },
-
-  showCompletion() {
-    const accuracy = AppState.quizTotal > 0
-      ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100)
-      : 0;
-    alert(`本组练习完成\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
-    showScreen('vocabularyModesScreen');
-  }
-};
-
-// ==================== 拼写模式 ====================
-
-const Spelling = {
-  _engine: null,
-
-  _getEngine() {
-    if (!this._engine) {
-      this._engine = new QuizEngine({
-        state: {
-          get words() { return AppState.currentWords; },
-          get quizIndex() { return AppState.quizIndex; },
-          set quizIndex(v) { AppState.quizIndex = v; },
-          get quizCorrect() { return AppState.quizCorrect; },
-          set quizCorrect(v) { AppState.quizCorrect = v; },
-          get quizTotal() { return AppState.quizTotal; },
-          set quizTotal(v) { AppState.quizTotal = v; },
-          get currentWord() { return AppState.currentWord; },
-          set currentWord(v) { AppState.currentWord = v; }
-        },
-        stats: AppState.stats,
-        mastered: AppState.masteredWords,
-        fieldMap: { source: 'english', target: 'italian' }, // reversed for spelling
-        onUpdateStats: updateHeaderStats,
-        dom: {
-          optionsContainer: null, // not used in spelling
-          feedbackEl: document.getElementById('spFeedback'),
-          feedbackTextEl: document.querySelector('#spFeedback .feedback-text'),
-          progressCurrent: document.getElementById('spCurrentWord'),
-          progressTotal: document.getElementById('spTotalWords'),
-          accuracyEl: document.getElementById('spAccuracy')
-        }
-      });
-    }
-    return this._engine;
-  },
-
-  start() {
-    AppState.currentMode = 'sp';
-    AppState.quizIndex = 0;
-    AppState.quizCorrect = 0;
-    AppState.quizTotal = 0;
-
-    // 随机打乱单词顺序
-    AppState.currentWords = shuffleArray([...AppState.currentWords]);
-
-    showScreen('spellingScreen');
-    this.loadQuestion();
-  },
-
-  loadQuestion() {
-    if (AppState.quizIndex >= AppState.currentWords.length) {
-      this.showCompletion();
-      return;
-    }
-
-    AppState.currentWord = AppState.currentWords[AppState.quizIndex];
-
-    // 更新进度
-    document.getElementById('spCurrentWord').textContent = AppState.quizIndex + 1;
-    document.getElementById('spTotalWords').textContent = AppState.currentWords.length;
-    updateSessionFill('spSessionFill', AppState.quizIndex, AppState.currentWords.length);
-
-    // 更新正确率
-    const accuracy = AppState.quizTotal > 0
-      ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100)
-      : 0;
-    document.getElementById('spAccuracy').textContent = accuracy + '%';
-
-    // 显示英语翻译
-    document.getElementById('spEnglishWord').textContent = AppState.currentWord.english;
-
-    // 显示中文翻译（如果存在）
-    const chineseHint = document.getElementById('spChineseHint');
-    if (AppState.currentWord.chinese) {
-      chineseHint.textContent = `中文: ${AppState.currentWord.chinese}`;
-      chineseHint.classList.remove('hidden');
-    } else {
-      chineseHint.classList.add('hidden');
-    }
-
-    // 显示 notes（如果存在）
-    this.displayNotes();
-
-    // 清空输入框
-    const input = document.getElementById('spInput');
-    input.value = '';
-    input.disabled = false;
-    input.classList.remove('good', 'bad');
-    input.focus();
-
-    // 启用检查按钮
-    document.getElementById('spCheckBtn').disabled = false;
-
-    // 隐藏反馈
-    document.getElementById('spFeedback').classList.add('hidden');
-  },
-
-  checkAnswer() {
-    const input = document.getElementById('spInput');
-    const userAnswer = input.value.trim().toLowerCase();
-    const correctAnswer = AppState.currentWord.italian.toLowerCase();
-
-    // 检查答案（忽略大小写和重音符号）- 使用 QuizEngine 的 normalizeString
-    const engine = this._getEngine();
-    const isCorrect = engine.normalizeString(userAnswer) === engine.normalizeString(correctAnswer);
-
-    AppState.quizTotal++;
-    if (isCorrect) {
-      AppState.quizCorrect++;
-      AppState.stats.spCorrect++;
-    }
-    AppState.stats.spAttempts++;
-    // 拼写走同一套掌握度策略（key 仍是意大利语词条，与选择题共用连续答对计数）
-    recordItalianMastery(AppState.currentWord, isCorrect);
-
-    // 禁用输入
-    input.disabled = true;
-    document.getElementById('spCheckBtn').disabled = true;
-
-    // 显示反馈
-    const feedback = document.getElementById('spFeedback');
-    const feedbackText = feedback.querySelector('.feedback-text');
-    input.classList.remove('good', 'bad');
-    input.classList.add(isCorrect ? 'good' : 'bad');
-
-    if (isCorrect) {
-      feedbackText.innerHTML = '<span class="msr">check_circle</span>回答正确';
-      feedbackText.classList.remove('no');
-      feedbackText.classList.add('ok');
-      feedback.classList.remove('incorrect');
-      feedback.classList.add('correct');
-      // 答对时，1秒后自动跳转下一题
-      setTimeout(() => this.nextQuestion(), 1000);
-    } else {
-      feedbackText.innerHTML = `<span class="msr">cancel</span>回答有误，正确答案是：${escapeHtml(AppState.currentWord.italian)}`;
-      feedbackText.classList.remove('ok');
-      feedbackText.classList.add('no');
-      feedback.classList.remove('correct');
-      feedback.classList.add('incorrect');
-    }
-
-    feedback.classList.remove('hidden');
-
-    // 保存进度
-    Storage.save();
-    updateHeaderStats();
-  },
-
-  displayNotes() {
-    // 查找或创建 notes 显示区域
-    let notesContainer = document.querySelector('#spellingScreen .quiz-notes');
-    if (!notesContainer) {
-      const questionSection = document.querySelector('#spellingScreen .question-section');
-      notesContainer = document.createElement('div');
-      notesContainer.className = 'quiz-notes';
-      questionSection.appendChild(notesContainer);
-    }
-
-    if (AppState.currentWord.notes) {
-      notesContainer.innerHTML = `<strong>${renderIcon('icon-pen')} 笔记：</strong>${escapeHtml(AppState.currentWord.notes)}`;
-      notesContainer.style.display = 'block';
-    } else {
-      notesContainer.style.display = 'none';
-    }
-  },
-
-  nextQuestion() {
-    AppState.quizIndex++;
-    this.loadQuestion();
-  },
-
-  showCompletion() {
-    const accuracy = Math.round((AppState.quizCorrect / AppState.quizTotal) * 100);
-    alert(`练习完成\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
-    showScreen('vocabularyModesScreen');
-  }
-};
-
-// ==================== 浏览模式 ====================
-
-const Browse = {
-  currentFilter: 'all', // all, mastered, unmastered
-  
-  start() {
-    AppState.currentMode = 'browse';
-    showScreen('browseScreen');
-    this.syncFilterChips();
-    this.render();
-
-    // 清空搜索框
-    document.getElementById('searchInput').value = '';
-  },
-  
-  // 渲染实现住在 app-enhanced.js 的 BrowseEnhanced（分页 + 事件委托 + SRS 状态），
-  // 2026-08-28 起由这里显式委托，取代原先「app-enhanced 末尾覆盖 Browse.render」
-  // 的猴子补丁写法 —— 现在读 app.js 就能知道渲染走哪份实现。
-  render(searchTerm = '') {
-    return BrowseEnhanced.render(searchTerm);
-  },
-
-  setFilter(filter) {
-    if (!['all', 'mastered', 'unmastered'].includes(filter)) return;
-    this.currentFilter = filter;
-    this.syncFilterChips();
-    const searchTerm = document.getElementById('searchInput').value;
-    this.render(searchTerm);
-  },
-
-  syncFilterChips() {
-    document.querySelectorAll('#browseFilterChips .chip').forEach(chip => {
-      chip.classList.toggle('active', chip.dataset.filter === this.currentFilter);
-    });
-  },
-
-  toggleFilter() {
-    const filters = ['all', 'mastered', 'unmastered'];
-    const currentIndex = filters.indexOf(this.currentFilter);
-    this.setFilter(filters[(currentIndex + 1) % filters.length]);
-  }
-};
-
-// ==================== 自定义单词本管理 ====================
-
-const WordbookManager = {
-  // 验证 JSON 格式
-  validateWordbook(data) {
-    if (!data || typeof data !== 'object') {
-      return { valid: false, error: '无效的 JSON 格式' };
-    }
-    
-    if (!data.name || typeof data.name !== 'string') {
-      return { valid: false, error: '缺少 name 字段或格式不正确' };
-    }
-    
-    if (!Array.isArray(data.words) || data.words.length === 0) {
-      return { valid: false, error: 'words 字段必须是非空数组' };
-    }
-    
-    const language = data.language || 'italian';
-
-    // 验证每个单词
-    for (let i = 0; i < data.words.length; i++) {
-      const word = data.words[i];
-      if (language === 'german') {
-        if (!word.german && !word.display) {
-          return { valid: false, error: `第 ${i + 1} 个单词缺少 german/display 字段` };
-        }
-      } else if (language === 'english') {
-        if (!word.english) {
-          return { valid: false, error: `第 ${i + 1} 个单词缺少 english 字段` };
-        }
-      } else if (language === 'french') {
-        if (!word.french && !word.display) {
-          return { valid: false, error: `第 ${i + 1} 个单词缺少 french/display 字段` };
-        }
-      } else if (!word.italian || !word.english) {
-        return { valid: false, error: `第 ${i + 1} 个单词缺少 italian 或 english 字段` };
-      }
-    }
-    
-    return { valid: true };
-  },
-  
-  getPrimaryWordValue(word, language = 'italian') {
-    if (language === 'german') return word.german || word.display || '';
-    if (language === 'english') return word.english || '';
-    if (language === 'french') return word.french || word.display || '';
-    return word.italian || '';
-  },
-
-  // 在 VOCABULARY_DATA 中查找意大利语单词
-  lookupWord(italian) {
-    if (typeof VOCABULARY_DATA === 'undefined') {
-      return null;
-    }
-    
-    const normalizedItalian = italian.toLowerCase().trim();
-    return VOCABULARY_DATA.find(w => w.italian.toLowerCase() === normalizedItalian);
-  },
-  
-  // 解析 TXT 格式单词本（支持灵活格式 + 自动查找）
-  parseTxtWordbook(text, language = 'italian') {
-    // 移除文件开头的空行
-    text = text.trim();
-    
-    // 按双换行符（空行）分割成单词块
-    const blocks = text.split(/\n\s*\n+/);
-    
-    const words = [];
-    let autoMatchedCount = 0;
-    let needManualCount = 0;
-    
-    for (let i = 0; i < blocks.length; i++) {
-      const block = blocks[i].trim();
-      if (!block) continue;
-      
-      const lines = block.split('\n').map(line => line.trim()).filter(line => line);
-      
-      if (lines.length === 0) continue;
-      
-      let word = { chinese: '', notes: '' };
-      
-      // 检测格式：1行=仅意大利语，2-4行=完整格式
-      if (language === 'german') {
-        if (lines.length === 1) {
-          word.german = lines[0];
-          word.display = lines[0];
-          const found = (typeof GERMAN_VOCABULARY_DATA !== 'undefined' ? GERMAN_VOCABULARY_DATA : []).find(
-            item => (item.german || '').toLowerCase().trim() === word.german.toLowerCase().trim()
-          );
-          if (found) {
-            word.meaning = found.meaning || found.chinese || '';
-            word.chinese = found.chinese || '';
-            autoMatchedCount++;
-          } else {
-            word.meaning = '';
-            needManualCount++;
-          }
-        } else {
-          word.german = lines[0];
-          word.display = lines[0];
-          word.meaning = lines[1] || '';
-          if (lines.length >= 3) word.chinese = lines[2];
-          if (lines.length >= 4) word.notes = lines[3];
-        }
-      } else if (language === 'english') {
-        if (lines.length === 1) {
-          word.english = lines[0];
-          const found = (typeof ENGLISH_VOCABULARY_DATA !== 'undefined' ? ENGLISH_VOCABULARY_DATA : []).find(
-            item => (item.english || '').toLowerCase().trim() === word.english.toLowerCase().trim()
-          );
-          if (found) {
-            word.meaning = found.meaning || found.chinese || '';
-            word.chinese = found.chinese || '';
-            autoMatchedCount++;
-          } else {
-            word.meaning = '';
-            needManualCount++;
-          }
-        } else {
-          word.english = lines[0];
-          word.meaning = lines[1] || '';
-          if (lines.length >= 3) word.chinese = lines[2];
-          if (lines.length >= 4) word.notes = lines[3];
-        }
-      } else if (language === 'french') {
-        if (lines.length === 1) {
-          word.french = lines[0];
-          word.display = lines[0];
-          const found = (typeof FRENCH_VOCABULARY_DATA !== 'undefined' ? FRENCH_VOCABULARY_DATA : []).find(
-            item => (item.french || '').toLowerCase().trim() === word.french.toLowerCase().trim()
-          );
-          if (found) {
-            word.meaning = found.meaning || found.chinese || '';
-            word.chinese = found.chinese || '';
-            autoMatchedCount++;
-          } else {
-            word.meaning = '';
-            needManualCount++;
-          }
-        } else {
-          word.french = lines[0];
-          word.display = lines[0];
-          word.meaning = lines[1] || '';
-          if (lines.length >= 3) word.chinese = lines[2];
-          if (lines.length >= 4) word.notes = lines[3];
-        }
-      } else if (lines.length === 1) {
-        // 仅意大利语，需要自动查找
-        word.italian = lines[0];
-        
-        // 在 VOCABULARY_DATA 中查找
-        const found = this.lookupWord(word.italian);
-        if (found) {
-          word.english = found.english || '';
-          word.chinese = found.chinese || '';
-          autoMatchedCount++;
-        } else {
-          // 未找到，留空英语和中文
-          word.english = '';
-          word.chinese = '';
-          needManualCount++;
-        }
-      } else if (lines.length >= 2) {
-        // 完整格式：意大利语、英语、中文（可选）、notes（可选）
-        word.italian = lines[0];
-        word.english = lines[1];
-        
-        if (lines.length >= 3) {
-          word.chinese = lines[2];
-        }
-        
-        if (lines.length >= 4) {
-          word.notes = lines[3];
-        }
-        
-        // 如果英语为空，尝试自动查找
-        if (!word.english) {
-          const found = this.lookupWord(word.italian);
-          if (found) {
-            word.english = found.english || '';
-            if (!word.chinese) {
-              word.chinese = found.chinese || '';
-            }
-            autoMatchedCount++;
-          } else {
-            needManualCount++;
-          }
-        }
-      }
-      
-      // 验证必填字段（意大利语必须存在）
-      const primaryField = language === 'german'
-        ? 'german'
-        : language === 'english'
-          ? 'english'
-          : language === 'french'
-            ? 'french'
-            : 'italian';
-      if (!word[primaryField]) {
-        throw new Error(`第 ${i + 1} 个单词块缺少${primaryField}字段`);
-      }
-      
-      words.push(word);
-    }
-    
-    if (words.length === 0) {
-      throw new Error('文件中没有找到有效的单词');
-    }
-    
-    return { words, autoMatchedCount, needManualCount };
-  },
-  
-  // 导入单词本（支持智能导入 + 重复检测）
-  importFromFile(file) {
-    return this.importFromFileWithLanguage(file, 'italian');
-  },
-
-  importFromFileWithLanguage(file, language = 'italian') {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      const isTxtFile = file.name.toLowerCase().endsWith('.txt');
-      
-      reader.onload = (e) => {
-        try {
-          const content = e.target.result;
-          let data;
-          let importStats = {
-            autoMatchedCount: 0,
-            needManualCount: 0,
-            duplicatesSkipped: 0,
-            totalImported: 0
-          };
-          
-          if (isTxtFile) {
-            // 解析 TXT 格式（新格式支持自动查找）
-            const parseResult = this.parseTxtWordbook(content, language);
-            const words = parseResult.words;
-            importStats.autoMatchedCount = parseResult.autoMatchedCount;
-            importStats.needManualCount = parseResult.needManualCount;
-            
-            // 从文件名生成单词本名称（去掉扩展名）
-            const fileName = file.name.replace(/\.txt$/i, '');
-            
-            data = {
-              name: fileName,
-              description: `从 TXT 文件导入（${new Date().toLocaleDateString()}）`,
-              language,
-              words: words
-            };
-          } else {
-            // 解析 JSON 格式
-            data = JSON.parse(content);
-            data.language = data.language || language;
-            const validation = this.validateWordbook(data);
-            
-            if (!validation.valid) {
-              reject(validation.error);
-              return;
-            }
-          }
-          
-          // 检查是否存在同名单词本（用于重复检测）
-          let existingWordbook = AppState.customWordbooks.find(wb => wb.name === data.name && getWordbookLanguage(wb) === data.language);
-          let existingWords = new Set();
-          const activeLanguage = data.language || language;
-          
-          if (existingWordbook) {
-            // 如果存在同名单词本，提供三个选项
-            const action = prompt(
-              `已存在同名单词本"${data.name}"（${existingWordbook.wordCount} 词）。\n\n` +
-              `请选择操作：\n` +
-              `1 - 批量添加到现有单词本（跳过重复，保留原有单词）\n` +
-              `2 - 创建新单词本（添加时间戳后缀）\n` +
-              `0 - 取消导入\n\n` +
-              `请输入 0、1 或 2：`
-            );
-            
-            if (action === '0' || action === null) {
-              reject('用户取消导入');
-              return;
-            } else if (action === '1') {
-              // 批量添加模式：收集现有单词（大小写不敏感）
-              existingWordbook.words.forEach(w => {
-                existingWords.add(this.getPrimaryWordValue(w, activeLanguage).toLowerCase().trim());
-              });
-            } else if (action === '2') {
-              // 创建新单词本模式：不收集现有单词，后面会创建新单词本并添加时间戳
-              existingWordbook = null;
-            } else {
-              reject('无效的选择');
-              return;
-            }
-          }
-          
-          // 去重处理
-          const wordsToImport = [];
-          const notFoundWords = []; // 需要手动编辑的单词（英语或中文为空）
-          const foundWords = []; // 已找到翻译的单词
-          
-          data.words.forEach(word => {
-            const normalizedPrimary = this.getPrimaryWordValue(word, activeLanguage).toLowerCase().trim();
-            
-            // 检查重复
-            if (existingWords.has(normalizedPrimary)) {
-              importStats.duplicatesSkipped++;
-              return;
-            }
-            
-            existingWords.add(normalizedPrimary);
-            
-            // 分类：需要手动编辑 vs 已完整
-            const secondaryValue = activeLanguage === 'german'
-              ? (word.meaning || '')
-              : activeLanguage === 'english'
-                ? (word.meaning || '')
-                : activeLanguage === 'french'
-                  ? (word.meaning || '')
-                  : (word.english || '');
-
-            if (!secondaryValue || !word.chinese) {
-              notFoundWords.push(word);
-            } else {
-              foundWords.push(word);
-            }
+  // ==================== 模块入口 ====================
+
+  function Shell() { return global.Shell; }
+
+  function openGrammarBook(l, slug) {
+    l = global.Languages.key(l || lang());
+    var go = function () {
+      var gb = grammarBook();
+      if (!gb) { toast('语法书模块未能加载'); return; }
+      gb.init(grammarData(l), { lang: l });
+      global.showScreen('grammarBookScreen');
+      if (!slug) return;
+      var data = grammarData(l);
+      var parts = data && data.tree && data.tree.parts || [];
+      parts.forEach(function (part) {
+        (part.chapters || []).forEach(function (chapter) {
+          (chapter.topics || []).forEach(function (topic) {
+            if (topic.slug === slug) gb.loadTopic(slug, topic.title, part.title, chapter.title);
           });
-          
-          // 排序：需要手动编辑的单词放在最前面
-          wordsToImport.push(...notFoundWords, ...foundWords);
-          importStats.totalImported = wordsToImport.length;
-          
-          if (wordsToImport.length === 0) {
-            reject('所有单词都已存在，没有新单词需要导入');
-            return;
-          }
-          
-          // 创建或更新单词本
-          if (existingWordbook && existingWords.size > 0) {
-            // 合并到现有单词本
-            existingWordbook.words = [...existingWordbook.words, ...wordsToImport];
-            existingWordbook.wordCount = existingWordbook.words.length;
-            this.saveWordbooks();
-            
-            resolve({
-              wordbook: existingWordbook,
-              stats: importStats,
-              isMerge: true
-            });
-          } else {
-            // 创建新单词本
-            const wordbook = {
-              id: Date.now(),
-              name: data.name,
-              language: data.language || language,
-              description: data.description || '',
-              words: wordsToImport,
-              wordCount: wordsToImport.length,
-              createdAt: new Date().toISOString()
-            };
-            
-            AppState.customWordbooks.push(wordbook);
-            this.saveWordbooks();
-            
-            resolve({
-              wordbook: wordbook,
-              stats: importStats,
-              isMerge: false
-            });
-          }
-        } catch (error) {
-          if (isTxtFile) {
-            reject('TXT 解析失败: ' + error.message);
-          } else {
-            reject('JSON 解析失败: ' + error.message);
-          }
-        }
-      };
-      
-      reader.onerror = () => {
-        reject('文件读取失败');
-      };
-      
-      reader.readAsText(file);
-    });
-  },
-
-  getWordbooksByLanguage(language = 'italian') {
-    return AppState.customWordbooks.filter(wb => getWordbookLanguage(wb) === language);
-  },
-
-  mapWordbookWordsForLanguage(words = [], language = 'italian') {
-    return words.map((word) => {
-      if (language === 'german') {
-        return {
-          german: word.german || word.display || '',
-          display: word.display || word.german || '',
-          meaning: word.meaning || word.chinese || '',
-          chinese: word.chinese || '',
-          notes: word.notes || '',
-          rank: 999999,
-          source: 'custom'
-        };
-      }
-
-      if (language === 'english') {
-        return {
-          english: word.english || '',
-          meaning: word.meaning || word.chinese || '',
-          chinese: word.chinese || '',
-          notes: word.notes || '',
-          rank: 999999,
-          source: 'custom'
-        };
-      }
-
-      if (language === 'french') {
-        return {
-          french: word.french || word.display || '',
-          display: word.display || word.french || '',
-          meaning: word.meaning || word.chinese || '',
-          chinese: word.chinese || '',
-          notes: word.notes || '',
-          rank: 999999,
-          source: 'custom'
-        };
-      }
-
-      return {
-        ...word,
-        rank: 999999
-      };
-    });
-  },
-  
-  // 删除单词本
-  deleteWordbook(id) {
-    const index = AppState.customWordbooks.findIndex(wb => wb.id === id);
-    if (index !== -1) {
-      const wordbook = AppState.customWordbooks[index];
-      if (confirm(`确定要删除单词本"${wordbook.name}"吗？`)) {
-        AppState.customWordbooks.splice(index, 1);
-        this.saveWordbooks();
-        this.renderWordbookCards();
-        
-        // 同时删除该单词本的学习进度
-        localStorage.removeItem(`dimenticato_progress_wb_${id}`);
-        localStorage.removeItem(getWordbookProgressKey(id, getWordbookLanguage(wordbook)));
-        
-        // 如果删除的是当前选中的单词本，清除选择状态
-        if (AppState.selectedSource === id) {
-          AppState.selectedSource = null;
-          AppState.selectedSourceType = null;
-          AppState.currentWordbook = null;
-          updateModeButtons();
-        }
-      }
-    }
-  },
-  
-  // 保存单词本列表到 LocalStorage
-  saveWordbooks() {
-    // safeSetItem 在配额不足时会先裁剪旧的每日统计再重试，并且只提示一次
-    DimStorage.safeSetItem(Storage.KEYS.CUSTOM_WORDBOOKS, JSON.stringify(
-      AppState.customWordbooks.map(wb => ({ language: 'italian', ...wb }))
-    ));
-  },
-  
-  // 开始学习指定单词本
-  startLearning(id, mode) {
-    const wordbook = AppState.customWordbooks.find(wb => wb.id === id);
-    if (!wordbook) {
-      alert('单词本不存在');
-      return;
-    }
-    
-    // 设置当前单词本和单词列表
-    AppState.currentWordbook = wordbook;
-    AppState.currentWords = this.mapWordbookWordsForLanguage(wordbook.words, getWordbookLanguage(wordbook));
-    
-    // 加载该单词本的学习进度
-    this.loadWordbookProgress(id);
-    
-    // 更新头部统计
-    updateHeaderStats();
-    
-    // 启动对应的学习模式
-    if (mode === 'mc') {
-      MultipleChoice.start();
-    } else if (mode === 'spelling') {
-      Spelling.start();
-    } else if (mode === 'browse') {
-      Browse.start();
-    }
-  },
-  
-  // 加载单词本的学习进度
-  loadWordbookProgress(id) {
-    try {
-      const key = `dimenticato_progress_wb_${id}`;
-      const languageKey = getWordbookProgressKey(id, getWordbookLanguage(AppState.currentWordbook || { language: 'italian' }));
-      const progress = localStorage.getItem(languageKey) || localStorage.getItem(key);
-      if (progress) {
-        const mastered = JSON.parse(progress);
-        AppState.masteredWords = new Set(mastered);
-      } else {
-        AppState.masteredWords = new Set();
-      }
-    } catch (e) {
-      console.error('加载单词本进度失败:', e);
-      AppState.masteredWords = new Set();
-    }
-  },
-  
-  // 渲染单词本卡片（在欢迎页面）
-  renderWordbookCards() {
-    const container = document.getElementById('wordbookCards');
-    
-    if (AppState.customWordbooks.length === 0) {
-      container.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 1rem;">还没有导入任何单词本</p>';
-      return;
-    }
-    
-    container.innerHTML = AppState.customWordbooks.map(wb => `
-      <div class="card wordbook-card" data-wordbook-id="${wb.id}">
-        <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
-        <span class="card-chip"><span class="msr">bookmark</span></span>
-        <span class="card-title">${escapeHtml(wb.name)}</span>
-        <span class="card-desc">${wb.wordCount} 词 · ${new Date(wb.createdAt).toLocaleDateString()}</span>
-      </div>
-    `).join('');
-    
-    // 绑定点击事件
-    container.querySelectorAll('.wordbook-card').forEach(card => {
-      card.addEventListener('click', () => {
-        const wordbookId = parseInt(card.dataset.wordbookId);
-        this.selectWordbook(wordbookId);
+        });
       });
-    });
-  },
-  
-  // 选择单词本
-  selectWordbook(id) {
-    const wordbook = AppState.customWordbooks.find(wb => wb.id === id);
-    if (!wordbook) return;
-
-    // 先冲刷挂起的延迟写：Storage._write 在落盘那一刻才读 currentWordbook，
-    // 不冲刷的话上一个来源最后的答题进度会写进新选词本的 key
-    Storage.flush();
-
-    // 设置选择状态
-    AppState.selectedSource = id;
-    AppState.selectedSourceType = 'custom';
-    AppState.currentWordbook = wordbook;
-    
-    // 设置当前单词列表
-    AppState.currentWords = this.mapWordbookWordsForLanguage(wordbook.words, getWordbookLanguage(wordbook));
-    
-    // 加载该单词本的学习进度
-    this.loadWordbookProgress(id);
-    
-    // 更新UI
-    updateHeaderStats();
-    highlightSelectedLevel();
-    setPracticeContext('vocab');
-    updateVocabularySummary();
-    showScreen('vocabularyModesScreen');
-  },
-  
-  // 渲染单词本列表（旧的，保留作为备份）
-  renderWordbookList() {
-    const container = document.getElementById('wordbookList');
-    
-    if (AppState.customWordbooks.length === 0) {
-      container.innerHTML = `
-        <div class="wordbook-empty">
-          <div class="wordbook-empty-icon">${renderIcon('icon-library')}</div>
-          <p>还没有导入任何单词本</p>
-          <p style="font-size: 0.9rem; margin-top: 0.5rem;">点击上方按钮导入 JSON 文件</p>
-        </div>
-      `;
-      return;
-    }
-    
-    container.innerHTML = AppState.customWordbooks.map(wb => `
-      <div class="wordbook-item">
-        <div class="wordbook-info">
-          <div class="wordbook-name">${escapeHtml(wb.name)}</div>
-          ${wb.description ? `<div class="wordbook-description">${escapeHtml(wb.description)}</div>` : ''}
-          <div class="wordbook-meta">
-            <span>${renderIcon('icon-pen')} ${wb.wordCount} 个单词</span>
-            <span>${renderIcon('icon-calendar')} ${new Date(wb.createdAt).toLocaleDateString()}</span>
-          </div>
-        </div>
-        <div class="wordbook-actions">
-          <button class="wordbook-action-btn learn" onclick="WordbookManager.showModeSelection(${wb.id})">
-            开始学习
-          </button>
-          <button class="wordbook-action-btn delete" onclick="WordbookManager.deleteWordbook(${wb.id})">
-            删除
-          </button>
-        </div>
-      </div>
-    `).join('');
-  },
-  
-  // 显示模式选择对话框
-  showModeSelection(id) {
-    const wordbook = AppState.customWordbooks.find(wb => wb.id === id);
-    if (!wordbook) return;
-    
-    const mode = prompt(
-      `请选择学习模式：\n\n` +
-      `1 - 选择题模式（看意大利语选英语翻译）\n` +
-      `2 - 拼写模式（看英语拼写意大利语）\n` +
-      `3 - 浏览模式（查看所有单词）\n\n` +
-      `请输入 1、2 或 3：`
-    );
-    
-    if (mode === '1') {
-      this.startLearning(id, 'mc');
-    } else if (mode === '2') {
-      this.startLearning(id, 'spelling');
-    } else if (mode === '3') {
-      this.startLearning(id, 'browse');
-    }
-  }
-  // NOTE: showManagementScreen() was removed in Stage 3 of the nav refactor —
-  // it had zero call sites and navigated to a non-existent 'wordbookScreen'.
-};
-
-// ==================== 统计弹窗 ====================
-
-function showStatsModal() {
-  const totalAttempts = AppState.stats.mcAttempts + AppState.stats.spAttempts;
-  const totalCorrect = AppState.stats.mcCorrect + AppState.stats.spCorrect;
-  const overallAccuracy = totalAttempts > 0 
-    ? Math.round((totalCorrect / totalAttempts) * 100) 
-    : 0;
-  
-  const masteredCount = countMasteredInCurrentWords();
-
-  const progress = AppState.currentWords.length > 0
-    ? Math.round((masteredCount / AppState.currentWords.length) * 100) 
-    : 0;
-  
-  document.getElementById('statTotalLearned').textContent = AppState.masteredWords.size;
-  document.getElementById('statMastered').textContent = masteredCount;
-  document.getElementById('statProgress').textContent = progress + '%';
-  document.getElementById('statMCAttempts').textContent = AppState.stats.mcAttempts;
-  document.getElementById('statSpAttempts').textContent = AppState.stats.spAttempts;
-  document.getElementById('statAccuracy').textContent = overallAccuracy + '%';
-  
-  document.getElementById('statsModal').classList.remove('hidden');
-}
-
-function hideStatsModal() {
-  document.getElementById('statsModal').classList.add('hidden');
-}
-
-// ==================== 工具函数 ====================
-
-function shuffleArray(array) {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
-// 更新练习界面顶部的进度条（redesign .session-bar/.session-fill）
-function updateSessionFill(id, index, total) {
-  const fill = document.getElementById(id);
-  if (!fill) return;
-  const pct = total > 0 ? Math.min(100, Math.round((index / total) * 100)) : 0;
-  fill.style.width = pct + '%';
-}
-
-// ==================== 事件绑定 ====================
-
-function bindEvents() {
-  document.querySelectorAll('.top-nav-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      showScreen(btn.dataset.target);
-    });
-  });
-
-  document.getElementById('goVocabularyBtn')?.addEventListener('click', () => showScreen('vocabularyScreen'));
-  document.getElementById('goGrammarBtn')?.addEventListener('click', () => showScreen('grammarScreen'));
-  document.getElementById('goProgressBtn')?.addEventListener('click', () => showScreen('progressScreen'));
-  document.getElementById('goSettingsBtn')?.addEventListener('click', () => showScreen('settingsScreen'));
-  // 变位数据已改为按模块懒加载：入口统一走 openFor（内部会在数据缺席时
-  // 先补拉再进屏），直接 showScreen 会得到一块「数据未加载」的空壳
-  document.getElementById('goConjugationSetupBtn')?.addEventListener('click', () => {
-    if (window.ConjugationPractice && typeof window.ConjugationPractice.openFor === 'function') {
-      window.ConjugationPractice.openFor('italian');
-    } else {
-      showScreen('conjugationSetupScreen');
-    }
-  });
-  document.getElementById('goGrammarBookBtn')?.addEventListener('click', () => {
-    showScreen('grammarBookScreen');
-    if (typeof GrammarBook !== 'undefined') GrammarBook.init();
-  });
-  // 这个按钮只存在于意大利语的 #grammarScreen 里，所以必须显式传 'italian'：
-  // 不传参时 VerbCollocationPractice 会沿用上一次的 state.lang，用户先看过德语搭配
-  // 再回意大利语点“开始练习”，练到的会是德语题目。
-  document.getElementById('goVerbCollocationPracticeBtn')?.addEventListener('click', () => {
-    showScreen('verbCollocationPracticeScreen');
-    const practice = window.VerbCollocationPractice;
-    if (practice && typeof practice.open === 'function') practice.open('italian');
-  });
-  // grammarBookScreen 是四种语言共用的一块屏幕，#grammarBookBackBtn 上原本挂了
-  // 两个监听器（这里一个 + german-app.js:471 无条件绑的一个）。旧版只在德/英
-  // 时提前 return，所以意大利语和法语点一次返回会连退两屏。
-  //
-  // 这里改为在 document 上用【捕获阶段】接管这个按钮：捕获监听器先于目标节点上的
-  // 冒泡监听器执行，stopPropagation() 之后 german-app.js 的那个监听器不会再收到
-  // 事件，于是无论哪种语言都只发生一次返回。
-  document.addEventListener('click', (event) => {
-    const btn = event.target && event.target.closest
-      ? event.target.closest('#grammarBookBackBtn')
-      : null;
-    if (!btn) return;
-    event.stopPropagation();
-
-    const lang = getActiveLanguage();
-    const germanApp = window.GermanApp;
-
-    if ((lang === 'german' || lang === 'english') && germanApp) {
-      // _openGrammarBook 记下了“是谁打开的语法书”
-      if (typeof germanApp._grammarBookBackTarget === 'function') {
-        germanApp._grammarBookBackTarget();
-      } else {
-        germanApp.goBack(`${lang}GrammarScreen`);
-      }
-      return;
-    }
-
-    if (lang === 'french') {
-      goBack({ fallbackTarget: 'frenchGrammarScreen' });
-      return;
-    }
-
-    goBack({ fallbackTarget: 'grammarScreen' });
-  }, true);
-  document.getElementById('browseCommunityBtn')?.addEventListener('click', () => CommunityWordbooks.showBrowseScreen());
-  document.getElementById('openProgressStatsBtn')?.addEventListener('click', () => {
-    if (typeof showEnhancedStatsModal !== 'undefined') showEnhancedStatsModal();
-  });
-
-  document.getElementById('mobileFloatingBackBtn')?.addEventListener('click', () => goBack());
-
-  document.getElementById('vocabularyBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'welcomeScreen' }));
-  document.getElementById('vocabularyModesBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'vocabularyScreen' }));
-  document.getElementById('grammarBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'welcomeScreen' }));
-  document.getElementById('conjugationSetupBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'grammarScreen' }));
-  document.getElementById('progressBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'welcomeScreen' }));
-  document.getElementById('settingsBackBtn')?.addEventListener('click', () => goBack({ fallbackTarget: 'welcomeScreen' }));
-
-  document.getElementById('settingsExportBtn')?.addEventListener('click', () => Storage.exportAllData());
-  document.getElementById('settingsImportBtn')?.addEventListener('click', () => document.getElementById('importDataFileInput').click());
-  document.getElementById('settingsThemeBtn')?.addEventListener('click', () => Storage.toggleTheme());
-  document.getElementById('settingsHelpBtn')?.addEventListener('click', () => document.getElementById('helpModal').classList.remove('hidden'));
-  document.getElementById('settingsCommunityUploadBtn')?.addEventListener('click', () => CommunityWordbooks.showUploadDialog());
-  document.getElementById('settingsResetBtn')?.addEventListener('click', () => Storage.reset());
-
-  initDifficultyToggle();
-  initDirectionToggle();
-
-  function initDifficultyToggle() {
-    const toggle = document.getElementById('difficultyToggle');
-    if (!toggle) return;
-    const buttons = toggle.querySelectorAll('.difficulty-option');
-    const apply = (value) => {
-      buttons.forEach((b) => b.classList.toggle('active', b.dataset.difficulty === value));
     };
-    apply(QuizEngine.getDifficulty());
-    buttons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        apply(QuizEngine.setDifficulty(btn.dataset.difficulty));
-      });
+    if (grammarData(l)) go();
+    else global.LangLoader.ensureModule(l, 'grammar').then(go);
+  }
+
+  var MODULE_OPENERS = {
+    'grammar-book': function (l) { openGrammarBook(l); },
+    conjugation: function (l) {
+      if (global.ConjugationPractice) global.ConjugationPractice.openFor(l);
+      else global.showScreen('conjugationSetupScreen');
+    },
+    collocations: function (l) { if (global.VerbCollocations) global.VerbCollocations.open(l); },
+    'collocation-practice': function (l) { if (global.VerbCollocationPractice) global.VerbCollocationPractice.open(l); },
+    cognates: function (l) { if (global.CognateApp) global.CognateApp.open(l); },
+    typing: function (l) { if (global.TypingGameApp) global.TypingGameApp.open(l); },
+    course: function () { if (global.GermanCourse) global.GermanCourse.open(); },
+    community: function () { if (global.CommunityWordbooks) global.CommunityWordbooks.showBrowseScreen(); }
+  };
+
+  function openModule(name) {
+    var fn = MODULE_OPENERS[name];
+    if (!fn) return;
+    try { fn(lang()); } catch (err) {
+      console.error('[app] 打开模块失败：' + name, err);
+      toast('模块打开失败，请刷新后重试');
+    }
+  }
+
+  // ==================== 语言切换 ====================
+
+  var SECTION_ROOTS = { homeScreen: 1, vocabScreen: 1, browseScreen: 1, grammarScreen: 1, progressScreen: 1, settingsScreen: 1 };
+
+  function syncLangSwitch() {
+    var l = lang();
+    document.querySelectorAll('[data-lang]').forEach(function (btn) {
+      btn.setAttribute('aria-pressed', btn.getAttribute('data-lang') === l ? 'true' : 'false');
+    });
+    var p = profile(l);
+    document.documentElement.setAttribute('lang', 'zh-CN');
+    document.title = 'Dimenticato · ' + p.cn + '词汇与语法';
+  }
+
+  function setLanguage(l, opts) {
+    opts = opts || {};
+    var key = global.Languages.key(l);
+    if (!key) return Promise.resolve();
+    var changed = key !== lang();
+    if (changed) {
+      Progress.flush();
+      session = null;
+      document.body.setAttribute('data-language', key);
+      try { localStorage.setItem(LANGUAGE_KEY, key); } catch (e) { /* ignore */ }
+      syncLangSwitch();
+    }
+    return global.LangLoader.ensure(key).then(function () {
+      if (opts.skipRoute) return;
+      var current = Shell().current() || 'homeScreen';
+      var meta = Shell().SCREENS[current] || {};
+      var target = opts.screen || (SECTION_ROOTS[current] ? current
+        : meta.section === 'grammar' ? 'grammarScreen'
+          : meta.section === 'vocab' ? 'vocabScreen' : 'homeScreen');
+      global.showScreen(target, { keepScroll: target === current });
     });
   }
 
-  // 出题方向（全局设置；德/英/法的分语言开关由 QuizEngine 运行时注入）
-  function initDirectionToggle() {
-    const toggle = document.getElementById('directionToggle');
-    if (!toggle) return;
-    const buttons = toggle.querySelectorAll('.direction-option');
-    const apply = (value) => {
-      buttons.forEach((b) => b.classList.toggle('active', b.dataset.direction === value));
-    };
-    apply(QuizEngine.getDirection());
-    buttons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        apply(QuizEngine.setDirection(btn.dataset.direction));
-      });
-    });
+  // ==================== 渲染调度 ====================
+
+  var RENDERERS = {
+    homeScreen: renderHome,
+    vocabScreen: renderVocab,
+    browseScreen: renderBrowse,
+    grammarScreen: renderGrammar,
+    progressScreen: renderProgress,
+    settingsScreen: renderSettings
+  };
+
+  function renderScreen(id) {
+    var fn = RENDERERS[id];
+    if (!fn) return;
+    if (!global.Vocab.ready(lang())) {
+      var host = document.querySelector('#' + id + ' [data-view]');
+      if (host) host.innerHTML = '<p class="empty">' + esc(profile().cn) + '词库没有加载成功。请检查网络后刷新页面。</p>';
+      return;
+    }
+    try { fn(); } catch (err) { console.error('[app] 渲染失败：' + id, err); }
   }
 
-  // 系统词汇级别选择
-  document.querySelectorAll('.vocab-source-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      // 同 selectWordbook：换来源前先冲刷，避免旧来源进度落错 key
-      Storage.flush();
-      const level = btn.dataset.level;
-      AppState.selectedLevel = level === 'all' ? 'all' : parseInt(level);
-      AppState.selectedSource = 'system';
-      AppState.selectedSourceType = 'system';
-      AppState.currentWordbook = null;
-      
-      // 更新当前词汇列表
-      updateCurrentWords();
-      
-      // 重新加载系统词汇的进度（不覆盖 selectedLevel）
-      const mastered = localStorage.getItem(Storage.KEYS.MASTERED);
-      if (mastered) {
-        AppState.masteredWords = new Set(JSON.parse(mastered));
-      } else {
-        AppState.masteredWords = new Set();
-      }
-      
-      // 更新UI
-      updateHeaderStats();
-      highlightSelectedLevel();
-      setPracticeContext('vocab');
-      updateVocabularySummary();
-      
-      // 保存选择的级别
-      localStorage.setItem(Storage.KEYS.LEVEL, AppState.selectedLevel.toString());
+  // ==================== 事件 ====================
 
-      showScreen('vocabularyModesScreen');
-    });
-  });
+  function bind() {
+    document.addEventListener('click', function (event) {
+      var t = event.target;
+      if (!t.closest) return;
 
-  // Cognate button handler
-  document.querySelectorAll('.cognate-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      AppState.selectedLevel = 'cognate';
-      AppState.selectedSource = 'cognate';
-      AppState.selectedSourceType = 'cognate';
-      AppState.currentWordbook = null;
+      var langBtn = t.closest('[data-lang]');
+      if (langBtn) { setLanguage(langBtn.getAttribute('data-lang')); closeNav(); return; }
 
-      // 加载 cognate 词汇（数据按模块懒加载，缺席时补拉后重进流程）
-      if (typeof COGNATE_DATA !== 'undefined') {
-        AppState.currentWords = COGNATE_DATA.slice(0, 1000);
-      } else if (window.LangLoader && typeof window.LangLoader.ensureModule === 'function'
-        && !window.LangLoader.isModuleLoaded('italian', 'cognates')) {
-        window.LangLoader.ensureModule('italian', 'cognates').then(() => btn.click());
+      var navLink = t.closest('[data-nav-screen]');
+      if (navLink) {
+        event.preventDefault();
+        global.showScreen(navLink.getAttribute('data-nav-screen'));
+        closeNav();
         return;
       }
 
-      // 重置进度
-      AppState.masteredWords = new Set();
+      var go = t.closest('[data-go]');
+      if (go) { global.showScreen(go.getAttribute('data-go')); return; }
 
-      // 更新 UI
-      updateHeaderStats();
-      highlightSelectedLevel();
-      showScreen('vocabularyModesScreen');
+      var speak = t.closest('[data-speak]');
+      if (speak) { Speaker.speak(speak.getAttribute('data-speak')); return; }
 
-      // 显示 cognate 模式选择
-      showCognateModeSelection();
+      if (t.closest('[data-back]')) { global.goBack(); return; }
+
+      var themeSet = t.closest('[data-theme-set]');
+      if (themeSet) { setTheme(themeSet.getAttribute('data-theme-set')); return; }
+
+      var closeModal = t.closest('[data-close-modal]');
+      if (closeModal) { closeModal.closest('.modal').classList.add('hidden'); return; }
+      if (t.classList.contains('modal')) { t.classList.add('hidden'); return; }
+
+      var action = t.closest('[data-action]');
+      if (action) { onAction(action.getAttribute('data-action'), action); return; }
+
+      if (onVocabClick(t)) return;
+      onBrowseClick(t);
     });
-  });
 
-  // 模式选择
-  document.getElementById('multipleChoiceBtn').addEventListener('click', () => {
-    MultipleChoice.start();
-  });
+    document.addEventListener('keydown', function (event) {
+      if (event.key !== 'Escape') return;
+      var open = Array.prototype.filter.call(document.querySelectorAll('.modal'), function (m) {
+        return !m.classList.contains('hidden');
+      });
+      if (open.length) open[open.length - 1].classList.add('hidden');
+    });
 
-  // 每组题量 chips（渲染 + 点击委托，与德语的 germanSessionChips 同构）
-  MultipleChoice.renderSessionChips();
-  document.getElementById('mcSessionChips').addEventListener('click', (event) => {
-    const chip = event.target.closest('[data-mc-session]');
-    if (chip) MultipleChoice.setSessionSize(chip.dataset.mcSession);
-  });
-  
-  document.getElementById('spellingBtn').addEventListener('click', () => {
-    Spelling.start();
-  });
-  
-  document.getElementById('browseBtn').addEventListener('click', () => {
-    Browse.start();
-  });
-  
-  // 自定义单词本导入
-  document.getElementById('importWordbookBtn').addEventListener('click', () => {
-    document.getElementById('wordbookFileInput').click();
-  });
-  
-  // 创建新单词本（仅当 WordbookEditor 可用时）
-  document.getElementById('createWordbookBtn').addEventListener('click', () => {
-    if (typeof WordbookEditor !== 'undefined') {
-      const wordbook = WordbookEditor.createNewWordbook();
-      if (wordbook) {
-        alert(`已成功创建单词本"${wordbook.name}"。\n点击单词本卡片右上角的设置按钮可以添加单词。`);
+    $('themeToggle').addEventListener('click', function () {
+      setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+    $('navToggle').addEventListener('click', function () {
+      var open = document.body.classList.toggle('nav-open');
+      $('navToggle').setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    // 选择题
+    $('quizNextBtn').addEventListener('click', nextQuestion);
+    $('quizSpeak').addEventListener('click', function () {
+      if (session && session.currentWord) Speaker.speak(global.Vocab.headword(session.currentWord), session.lang);
+    });
+    $('quizHintBtn').addEventListener('click', function () {
+      if (!session) return;
+      session.hintStage = global.PracticeFlow.hintAdvance(session.hintStage, {
+        stages: quizHintStages(session), hintEl: $('quizHint'), btn: $('quizHintBtn')
+      });
+    });
+
+    // 拼写
+    $('spellForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (session && session.answered) nextQuestion();
+      else checkSpelling(false);
+    });
+    $('spellNextBtn').addEventListener('click', nextQuestion);
+    $('spellRevealBtn').addEventListener('click', function () { checkSpelling(true); });
+    $('spellSpeakBtn').addEventListener('click', function () {
+      if (session && session.currentWord && session.answered) Speaker.speak(global.Vocab.headword(session.currentWord), session.lang);
+      else toast('答完之后才能听发音');
+    });
+    $('spellHintBtn').addEventListener('click', function () {
+      if (!session) return;
+      session.hintStage = global.PracticeFlow.hintAdvance(session.hintStage, {
+        stages: spellHintStages(session), hintEl: $('spellHint'), btn: $('spellHintBtn')
+      });
+    });
+    $('spellKeys').addEventListener('click', function (event) {
+      var key = event.target.closest('[data-char]');
+      if (key && !$('spellInput').disabled) insertAtCursor($('spellInput'), key.getAttribute('data-char'));
+    });
+
+    // 浏览
+    var onSearch = global.debounce(function () {
+      browse.q = $('browseSearch').value;
+      browse.limit = BROWSE_PAGE;
+      renderBrowseList();
+    }, 160);
+    $('browseSearch').addEventListener('input', onSearch);
+    $('browseMore').addEventListener('click', function () { browse.limit += BROWSE_PAGE; renderBrowseList(); });
+
+    // 设置
+    $('settingsExportBtn').addEventListener('click', exportAllData);
+    $('settingsImportBtn').addEventListener('click', function () { $('importDataFileInput').click(); });
+    $('importDataFileInput').addEventListener('change', function (event) {
+      var file = event.target.files[0];
+      if (file) importAllData(file);
+      event.target.value = '';
+    });
+    $('settingsResetBtn').addEventListener('click', resetProgress);
+
+    // 单词本导入
+    $('wordbookFileInput').addEventListener('change', function (event) {
+      var file = event.target.files[0];
+      event.target.value = '';
+      if (!file) return;
+      global.Wordbooks.importFile(file, lang()).then(function (res) {
+        if (!res) return;
+        setPrefs({ source: 'wb:' + res.wordbook.id });
+        toast((res.isMerge ? '已合并到「' : '已导入「') + res.wordbook.name + '」');
+        renderVocab();
+      }).catch(function (err) { alert('导入失败：' + err.message); });
+    });
+
+    // 单词本编辑器工具栏
+    $('wordbookEditorModal').addEventListener('click', function (event) {
+      var btn = event.target.closest('[data-editor]');
+      if (!btn) return;
+      var E = global.WordbookEditor;
+      var what = btn.getAttribute('data-editor');
+      if (what === 'add') E.addNewWord();
+      else if (what === 'batch-import') E.batchImportWords();
+      else if (what === 'export' && E.current) E.showExportDialog(E.current.id);
+      else if (what === 'batch-delete') E.batchDelete();
+      else if (what === 'close') E.hideEditorModal();
+    });
+    $('wordEditDialog').addEventListener('click', function (event) {
+      if (event.target.closest('[data-editor="cancel-word"]')) global.WordbookEditor.hideWordEditDialog();
+    });
+
+    // 语法书的返回键（grammar-book.js 只管内容；变位页的返回键由 conjugation-app.js 自己绑定）
+    var gbBack = $('grammarBookBackBtn');
+    if (gbBack) gbBack.addEventListener('click', function () { global.goBack(); });
+
+    document.addEventListener('dimenticato:wordbooks', function () {
+      var current = Shell().current();
+      if (current === 'vocabScreen' || current === 'browseScreen') renderScreen(current);
+    });
+  }
+
+  function closeNav() {
+    document.body.classList.remove('nav-open');
+    var t = $('navToggle');
+    if (t) t.setAttribute('aria-expanded', 'false');
+  }
+
+  function onAction(action, el) {
+    var l = lang();
+    switch (action) {
+      case 'start': {
+        var mode = el.getAttribute('data-mode');
+        if (mode === 'quiz' || mode === 'spell') startSession(mode);
+        else if (mode === 'browse') global.showScreen('browseScreen');
+        else openModule(mode);
+        return;
       }
-    } else {
-      alert('单词本编辑功能未加载，请刷新页面重试。');
+      case 'again':
+        startSession(el.getAttribute('data-mode'));
+        return;
+      case 'review': {
+        var due = global.SpacedRepetition.getDueWords(l, global.Vocab.entries(l));
+        if (!due.length) { toast('目前没有到期要复习的词'); return; }
+        startSession('quiz', { entries: due, key: Progress.systemKey(l), label: '到期复习' });
+        return;
+      }
+      case 'level':
+        setPrefs({ level: el.getAttribute('data-level'), source: 'system' });
+        global.showScreen('vocabScreen');
+        return;
+      case 'go-vocab': global.showScreen('vocabScreen'); return;
+      case 'go-progress': global.showScreen('progressScreen'); return;
+      case 'stats-modal':
+        if (typeof global.showEnhancedStatsModal === 'function') global.showEnhancedStatsModal();
+        return;
+      case 'help':
+        $('helpModal').classList.remove('hidden');
+        return;
+      case 'community-upload':
+        if (global.CommunityWordbooks) global.CommunityWordbooks.showUploadDialog();
+        return;
+      default:
+        openModule(action);
     }
-  });
-  
-  document.getElementById('wordbookFileInput').addEventListener('change', async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    
-    try {
-      const result = await WordbookManager.importFromFile(file);
-      const { wordbook, stats, isMerge } = result;
-      
-      // 构建详细的导入报告
-      let message = isMerge 
-        ? `成功合并到单词本"${wordbook.name}"！\n\n`
-        : `成功导入单词本"${wordbook.name}"！\n\n`;
-      
-      message += `导入统计：\n`;
-      message += `• 总计导入：${stats.totalImported} 个单词\n`;
-      
-      if (stats.autoMatchedCount > 0) {
-        message += `• 自动匹配：${stats.autoMatchedCount} 个\n`;
-      }
-      
-      if (stats.needManualCount > 0) {
-        message += `• 需手动编辑：${stats.needManualCount} 个（已放在最前面）\n`;
-      }
-      
-      if (stats.duplicatesSkipped > 0) {
-        message += `• 跳过重复：${stats.duplicatesSkipped} 个\n`;
-      }
-      
-      message += `\n单词本总数：${wordbook.wordCount} 个单词`;
-      
-      if (stats.needManualCount > 0) {
-        message += `\n\n提示：点击单词本卡片右上角的设置按钮可补充缺失翻译`;
-      }
-      
-      alert(message);
-      WordbookManager.renderWordbookCards();
-    } catch (error) {
-      alert(`导入失败：${error}`);
-    }
-    
-    // 清空文件输入
-    e.target.value = '';
-  });
-  
-  // 选择题模式
-  document.getElementById('mcBackBtn').addEventListener('click', () => {
-    goBack({ fallbackTarget: 'vocabularyModesScreen' });
-  });
+  }
 
-  document.getElementById('mcNextBtn').addEventListener('click', () => {
-    MultipleChoice.nextQuestion();
-  });
-
-  // 选择题发音按钮
-  document.getElementById('mcSpeakerBtn')?.addEventListener('click', () => {
-    if (AppState.currentWord && AppState.currentWord.italian) {
-      italianSpeaker.speak(AppState.currentWord.italian);
-    }
-  });
-  
-  // 拼写模式
-  document.getElementById('spBackBtn').addEventListener('click', () => {
-    goBack({ fallbackTarget: 'vocabularyModesScreen' });
-  });
-  
-  document.getElementById('spCheckBtn').addEventListener('click', () => {
-    Spelling.checkAnswer();
-  });
-  
-  document.getElementById('spInput').addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-      Spelling.checkAnswer();
-    }
-  });
-  
-  document.getElementById('spNextBtn').addEventListener('click', () => {
-    Spelling.nextQuestion();
-  });
-  
-  // 拼写模式发音按钮
-  document.getElementById('spPronunciationBtn').addEventListener('click', () => {
-    if (AppState.currentWord && AppState.currentWord.italian) {
-      italianSpeaker.speak(AppState.currentWord.italian);
-    }
-  });
-  
-  // 浏览模式
-  document.getElementById('brBackBtn').addEventListener('click', () => {
-    goBack({ fallbackTarget: 'vocabularyModesScreen' });
-  });
-  
-  // 27k 词的列表不能每键整表重建：搜索去抖（德语站既有模式）
-  const debouncedBrowseSearch = window.debounce
-    ? window.debounce((value) => Browse.render(value), 200)
-    : (value) => Browse.render(value);
-  document.getElementById('searchInput').addEventListener('input', (e) => {
-    debouncedBrowseSearch(e.target.value);
-  });
-  
-  document.querySelectorAll('#browseFilterChips .chip').forEach((chip) => {
-    chip.addEventListener('click', () => {
-      Browse.setFilter(chip.dataset.filter);
-    });
-  });
-  
-  // 底部工具栏
-  document.getElementById('exportDataBtn').addEventListener('click', () => {
-    Storage.exportAllData();
-  });
-  
-  document.getElementById('importDataBtn').addEventListener('click', () => {
-    document.getElementById('importDataFileInput').click();
-  });
-  
-  document.getElementById('importDataFileInput').addEventListener('change', async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    
-    try {
-      await Storage.importAllData(file);
-    } catch (error) {
-      if (error !== '用户取消导入') {
-        alert(`导入失败：${error}`);
+  function onVocabClick(t) {
+    if (!t.closest('#vocabScreen')) return false;
+    var source = t.closest('[data-source]');
+    if (source) { setPrefs({ source: source.getAttribute('data-source') }); renderVocab(); return true; }
+    var level = t.closest('[data-level]');
+    if (level) { setPrefs({ level: level.getAttribute('data-level') }); renderVocab(); return true; }
+    var filter = t.closest('[data-filter]');
+    if (filter) { setPrefs({ filter: filter.getAttribute('data-filter') }); renderVocab(); return true; }
+    var size = t.closest('[data-session]');
+    if (size) { setPrefs({ session: size.getAttribute('data-session') }); renderVocab(); return true; }
+    var wb = t.closest('[data-wb]');
+    if (!wb) return false;
+    var l = lang();
+    var id = wb.getAttribute('data-id');
+    switch (wb.getAttribute('data-wb')) {
+      case 'new': {
+        var created = global.WordbookEditor.createNewWordbook(l);
+        if (created) { setPrefs({ source: 'wb:' + created.id }); global.WordbookEditor.openEditor(created.id); renderVocab(); }
+        break;
+      }
+      case 'import': $('wordbookFileInput').click(); break;
+      case 'edit': global.WordbookEditor.openEditor(id); break;
+      case 'export': global.WordbookEditor.showExportDialog(id); break;
+      case 'delete': {
+        var book = global.Wordbooks.get(id);
+        if (book && confirm('删除单词本「' + book.name + '」及其学习进度？此操作不可撤销。')) {
+          global.Wordbooks.remove(id);
+          if (prefs(l).source === 'wb:' + id) setPrefs({ source: 'system' });
+          renderVocab();
+        }
+        break;
       }
     }
-    
-    // 清空文件输入
-    e.target.value = '';
-  });
-  
-  document.getElementById('resetBtn').addEventListener('click', () => {
-    Storage.reset();
-  });
-  
-  document.getElementById('statsBtn').addEventListener('click', () => {
-    showStatsModal();
-  });
-  
-  document.getElementById('themeBtn').addEventListener('click', () => {
-    Storage.toggleTheme();
-  });
-  
-  document.getElementById('helpBtn').addEventListener('click', () => {
-    document.getElementById('helpModal').classList.remove('hidden');
-  });
-
-  // 关闭帮助弹窗
-  document.getElementById('closeHelpBtn').addEventListener('click', () => {
-    document.getElementById('helpModal').classList.add('hidden');
-  });
-
-  // 点击背景关闭帮助弹窗
-  document.getElementById('helpModal').addEventListener('click', (e) => {
-    if (e.target.id === 'helpModal') {
-      document.getElementById('helpModal').classList.add('hidden');
-    }
-  });
-  
-  // 统计弹窗 - 使用增强版本（如果可用）
-  document.getElementById('statsBtn').removeEventListener('click', showStatsModal);
-  document.getElementById('statsBtn').addEventListener('click', () => {
-    if (typeof showEnhancedStatsModal !== 'undefined') {
-      showEnhancedStatsModal();
-    } else {
-      showStatsModal();
-    }
-  });
-  
-  document.getElementById('closeStatsBtn').addEventListener('click', () => {
-    hideStatsModal();
-  });
-  
-  // 点击弹窗外部关闭
-  document.getElementById('statsModal').addEventListener('click', (e) => {
-    if (e.target.id === 'statsModal') {
-      hideStatsModal();
-    }
-  });
-  
-  // 增强统计模态框关闭
-  document.getElementById('enhancedStatsModal')?.addEventListener('click', (e) => {
-    if (e.target.id === 'enhancedStatsModal') {
-      hideEnhancedStatsModal();
-    }
-  });
-}
-
-// ==================== 学习时长跟踪 ====================
-
-let sessionStartTime = null;
-let durationUpdateInterval = null;
-
-// StatsManager 定义在 app-enhanced.js（本文件之后加载），因此只能在【调用时】
-// 通过 window 解析——绝不能在解析期用 typeof 判断。
-function startSessionTracking() {
-  sessionStartTime = Date.now();
-
-  // 每分钟把学习时长记到“当前语言”的当日统计上
-  durationUpdateInterval = setInterval(() => {
-    if (sessionStartTime && window.StatsManager) {
-      window.StatsManager.updateDuration(60, getActiveLanguage()); // 增加60秒
-    }
-  }, 60000); // 每分钟
-}
-
-function stopSessionTracking() {
-  if (sessionStartTime && window.StatsManager) {
-    const duration = Math.floor((Date.now() - sessionStartTime) / 1000);
-    // 只补记不足一分钟的尾巴，避免和上面的定时器重复累加
-    const remainder = duration % 60;
-    if (remainder > 0) window.StatsManager.updateDuration(remainder, getActiveLanguage());
-    sessionStartTime = null;
+    return true;
   }
 
-  if (durationUpdateInterval) {
-    clearInterval(durationUpdateInterval);
-    durationUpdateInterval = null;
-  }
-}
-
-// ==================== 集成 SM-2 算法到测验模式 ====================
-//
-// 这里原本有两段 `if (typeof StatsManager !== 'undefined' &&
-// typeof SpacedRepetition !== 'undefined') { ... }` 包裹的 MultipleChoice / Spelling
-// 包装器，以及一版在此覆盖 MultipleChoice.loadQuestion 的「SRS 增强版」。
-// 那些全部收口了：
-//   * SRS/统计包装器统一由 app-enhanced.js 的 QuizIntegration 安装（拼写模式）；
-//   * 选择题的判分与遥测走 lib/practice-flow.js 共享流程（四语言同一实现）；
-//   * loadQuestion 的双定义已合并进上方 MultipleChoice 对象字面量。
-// 本文件不再做任何解析期 typeof 判断，也不再在文件末尾覆盖自身方法。
-
-// ==================== 单词本卡片添加管理按钮 ====================
-
-const originalRenderWordbookCards = WordbookManager.renderWordbookCards;
-WordbookManager.renderWordbookCards = function() {
-  const container = document.getElementById('wordbookCards');
-  
-  if (AppState.customWordbooks.length === 0) {
-    container.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 1rem;">还没有导入任何单词本</p>';
-    return;
-  }
-  
-  container.innerHTML = AppState.customWordbooks.map(wb => `
-    <div class="card wordbook-card" data-wordbook-id="${wb.id}">
-      <button class="wordbook-card-manage-btn" onclick="event.stopPropagation(); if(typeof WordbookEditor !== 'undefined') { WordbookEditor.openEditor(${wb.id}); } else { alert('单词本编辑功能未加载'); }" title="管理单词本"><span class="msr">settings</span></button>
-      <button class="wordbook-delete-btn" onclick="event.stopPropagation(); WordbookManager.deleteWordbook(${wb.id})" title="删除">×</button>
-      <span class="card-chip"><span class="msr">bookmark</span></span>
-      <span class="card-title">${escapeHtml(wb.name)}</span>
-      <span class="card-desc">${wb.wordCount} 词 · ${new Date(wb.createdAt).toLocaleDateString()}</span>
-    </div>
-  `).join('');
-  
-  // 绑定点击事件
-  container.querySelectorAll('.wordbook-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const wordbookId = parseInt(card.dataset.wordbookId);
-      this.selectWordbook(wordbookId);
-    });
-  });
-};
-
-// ==================== 语言门户（多语言切换 + 颜色主题） ====================
-
-const LanguagePortal = {
-  // 每种语言对应的首屏
-  HOME_SCREENS: {
-    italian: 'welcomeScreen',
-    german:  'germanWelcomeScreen',
-    english: 'englishWelcomeScreen',
-    french:  'frenchWelcomeScreen'
-  },
-
-  /**
-   * 切换到指定语言：
-   * 1. 设置 body[data-language] → 触发 CSS 颜色主题
-   * 2. 持久化到 localStorage
-   * 3. 更新侧边栏弹出层的 active 状态
-   * 4. 导航到对应语言首屏
-   */
-  selectLanguage(lang) {
-    const validLangs = ['italian', 'german', 'english', 'french'];
-    if (!validLangs.includes(lang)) return;
-
-    // 0. 该语言的词库是按需加载的，首次切过去时要先等数据到位再跳屏，
-    //    否则会先闪一屏「0 个词」的空壳。已加载过则同步走完，无额外开销。
-    const loader = window.LangLoader;
-    if (loader && !loader.isLoaded(lang)) {
-      loader.ensure(lang).then(() => this.selectLanguage(lang));
-      return;
+  function onBrowseClick(t) {
+    if (!t.closest('#browseScreen')) return;
+    var lv = t.closest('[data-browse-level]');
+    if (lv) { browse.level = lv.getAttribute('data-browse-level'); renderBrowse(); return; }
+    var st = t.closest('[data-browse-status]');
+    if (st) { browse.status = st.getAttribute('data-browse-status'); renderBrowse(); return; }
+    var btn = t.closest('[data-row]');
+    if (!btn) return;
+    var row = btn.closest('.word-row');
+    var e = browse.list[Number(row.getAttribute('data-i'))];
+    if (!e) return;
+    var what = btn.getAttribute('data-row');
+    if (what === 'speak') Speaker.speak(global.Vocab.headword(e));
+    else if (what === 'add') global.WordbookEditor.addEntryToWordbook(e, lang());
+    else if (what === 'known') {
+      var src = currentSource();
+      var set = Progress.mastered(src.key);
+      var known = !set.has(e.word);
+      if (known) set.add(e.word); else set.delete(e.word);
+      Progress.touch(src.key);
+      row.classList.toggle('known', known);
+      btn.setAttribute('aria-pressed', String(known));
+      btn.querySelector('.msr').textContent = known ? 'task_alt' : 'radio_button_unchecked';
     }
+  }
 
-    // 1. 设置 body 属性 → CSS per-language color theme 生效
-    if (lang === 'italian') {
-      // 意大利语是默认主题，移除 data-language 属性让 CSS 回落到默认值
-      document.body.removeAttribute('data-language');
-    } else {
-      document.body.setAttribute('data-language', lang);
+  // ==================== 对外 ====================
+
+  var routerStarted = false;
+
+  var App = {
+    lang: lang,
+    toast: toast,
+    speak: function (text, l) { Speaker.speak(text, l); },
+    setLanguage: setLanguage,
+    openGrammarBook: openGrammarBook,
+    openModule: openModule,
+    masteredWords: function (l) { return Progress.systemMastered(l || lang()); },
+    startSession: startSession,
+
+    /** 德语课程路线：把一个单元的核心词作为练习来源，进入词汇页。 */
+    practiceEntries: function (label, entries) {
+      var l = lang();
+      courseSelection = { lang: l, label: label, entries: (entries || []).filter(Boolean) };
+      setPrefs({ source: 'course' });
+      global.showScreen('vocabScreen');
+    },
+
+    /** LangLoader：某门语言的词库到位（首屏或中途切换）。幂等。 */
+    onLanguageData: function (l) {
+      try { global.LegacyMigration.run(l); } catch (err) { console.error('[app] 旧进度迁移失败', err); }
+      Progress.forget(l);
+      if (!routerStarted) {
+        routerStarted = true;
+        global.DimRouter.start();
+        return;
+      }
+      if (l === lang()) renderScreen(Shell().current());
+    },
+
+    /** 模块数据到位后刷新首页上的数字。 */
+    refreshCounts: function () {
+      var current = Shell() && Shell().current();
+      if (current === 'homeScreen') renderScreen(current);
+    },
+
+    init: function () {
+      if (App._inited) return;
+      App._inited = true;
+      var theme = null;
+      try { theme = localStorage.getItem(THEME_KEY); } catch (e) { /* ignore */ }
+      applyTheme(theme || 'light');
+      document.body.setAttribute('data-language', global.LangLoader.detectLanguage());
+      syncLangSwitch();
+      global.DimStorage.migrateLegacyWordbookProgress();
+      $('spellKeys').innerHTML = '';
+      Speaker.init();
+      bind();
+      Shell().onEnter(function (id) {
+        renderScreen(id);
+        if (id === 'spellScreen') {
+          var chars = SPECIAL_KEYS[lang()] || [];
+          $('spellKeys').innerHTML = chars.map(function (c) {
+            return '<button type="button" class="key" data-char="' + escAttr(c) + '">' + esc(c) + '</button>';
+          }).join('');
+        }
+      });
+
+      // 深链接直达功能模块屏时，由各模块自己的 open 负责装数据再切屏
+      var R = Shell().registerOpener;
+      R('grammarBookScreen', function (l) { openGrammarBook(l); });
+      R('conjugationSetupScreen', function (l) { MODULE_OPENERS.conjugation(l); });
+      R('verbCollocationsScreen', function (l) { MODULE_OPENERS.collocations(l); });
+      R('typingGameScreen', function (l) { MODULE_OPENERS.typing(l); });
+      R('cognatePracticeScreen', function (l) {
+        if (hasModule('cognates', l)) MODULE_OPENERS.cognates(l); else global.showScreen('vocabScreen', { replaceRoute: true });
+      });
+      R('communityBrowseScreen', function () { MODULE_OPENERS.community(); });
+      R('germanCourseScreen', function (l) {
+        if (l === 'german') MODULE_OPENERS.course(); else global.showScreen('homeScreen', { replaceRoute: true });
+      });
     }
+  };
 
-    // 2. 持久化
-    localStorage.setItem(Storage.KEYS.LANGUAGE, lang);
+  // ReviewSession：stats-charts 等旧调用方用它取「当前语言的词表」
+  global.ReviewSession = {
+    wordsFor: function (l) { return global.Vocab.entries(l || lang()); },
+    onAnswered: function () { /* 复习计数在 SpacedRepetition 里，界面在切屏时刷新 */ }
+  };
 
-    // 3. 更新弹出层 active 样式 + 侧栏语言胶囊
-    document.querySelectorAll('.language-switcher-option').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.language === lang);
-    });
-    if (typeof syncLangPills === 'function') syncLangPills(lang);
+  global.App = App;
 
-    // 4. 关闭弹出层
-    const popover = document.getElementById('languageSwitcherPopover');
-    if (popover) popover.classList.add('hidden');
-
-    // 5. 跳转到对应语言首屏
-    // 切换语言是顶层上下文切换（等同于回到 Home），重置导航历史，
-    // 避免跨语言的历史污染（例如从德语切回意大利语后，返回栈仍残留德语屏幕）。
-    const targetScreen = this.HOME_SCREENS[lang] || 'welcomeScreen';
-    AppState.navigationStack = [targetScreen];
-    showScreen(targetScreen, { skipHistory: true });
-    // 顶栏统计胶囊改用统一的 HeaderStats（四种语言都刷新，不再只有法语）
-    HeaderStats.refresh(lang);
-  },
-
-  /**
-   * 初始化：仅从 localStorage 恢复颜色主题和 active 状态。
-   * UI 事件绑定（弹出层开关、语言选项点击）由 german-app.js 的
-   * bindLanguageSwitcher() 统一负责，避免重复绑定冲突。
-   */
-  init() {
-    // 恢复上次选择的语言（仅恢复 CSS 颜色主题，不触发导航跳转）
-    const savedLang = localStorage.getItem(Storage.KEYS.LANGUAGE) || 'italian';
-    if (savedLang === 'italian') {
-      document.body.removeAttribute('data-language');
-    } else {
-      document.body.setAttribute('data-language', savedLang);
-    }
-    // 同步弹出层 active 状态 + 侧栏语言胶囊
-    document.querySelectorAll('.language-switcher-option').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.language === savedLang);
-    });
-    if (typeof syncLangPills === 'function') syncLangPills(savedLang);
-  }
-};
-
-// 暴露到全局，方便外部脚本调用
-window.LanguagePortal = LanguagePortal;
-
-// 其它脚本（app-enhanced.js 及各语言模块）一律通过 window.* 在【调用时】解析这些
-// 符号，绝不在解析期用裸 typeof 判断 —— 那正是 SRS 整套功能从未安装的根因。
-window.AppState = AppState;
-window.ScreenMeta = ScreenMeta;
-window.Storage = Storage;
-window.WordbookManager = WordbookManager;
-window.MultipleChoice = MultipleChoice;
-window.Spelling = Spelling;
-window.updateHeaderStats = updateHeaderStats;
-window.countMasteredInCurrentWords = countMasteredInCurrentWords;
-window.getActiveLanguage = getActiveLanguage;
-window.getWordbookProgressKey = getWordbookProgressKey;
-window.navigateSection = navigateSection;
-
-// ==================== 侧边栏 / 顶栏 控制 ====================
-
-function getActiveLanguage() {
-  return document.body.getAttribute('data-language') || 'italian';
-}
-
-// 更新侧栏语言胶囊的选中态
-function syncLangPills(lang) {
-  const active = lang || getActiveLanguage();
-  document.querySelectorAll('.lang-pill[data-language]').forEach(pill => {
-    pill.classList.toggle('active', pill.dataset.language === active);
-  });
-}
-
-// 更新侧栏底部“主题切换”按钮的图标 + 文案
-function syncThemeToggleUI(theme) {
-  const t = theme || document.documentElement.getAttribute('data-theme') || 'light';
-  const dark = t === 'dark';
-  const icon = document.getElementById('themeToggleIcon');
-  const label = document.getElementById('themeToggleLabel');
-  if (icon) icon.textContent = dark ? 'light_mode' : 'dark_mode';
-  if (label) label.textContent = dark ? '浅色模式' : '深色模式';
-}
-window.syncThemeToggleUI = syncThemeToggleUI;
-window.syncLangPills = syncLangPills;
-
-// 侧栏菜单：section → 各语言首页；子模块复用各语言 welcome 卡片按钮的处理器
-const NAV_HOME_SCREEN = {
-  italian: 'welcomeScreen',
-  german: 'germanWelcomeScreen',
-  english: 'englishWelcomeScreen',
-  french: 'frenchWelcomeScreen'
-};
-const NAV_MODULE_BTN = {
-  vocab:    { italian: 'goVocabularyBtn', german: 'goGermanVocabularyBtn', english: 'goEnglishVocabularyBtn', french: 'goFrenchVocabularyBtn' },
-  grammar:  { italian: 'goGrammarBtn',    german: 'goGermanGrammarBtn',    english: 'goEnglishGrammarBtn', french: 'goFrenchGrammarBtn' },
-  progress: { italian: 'goProgressBtn',   german: 'goGermanProgressBtn',   english: 'goEnglishProgressBtn', french: 'goFrenchProgressBtn' },
-  settings: { italian: 'goSettingsBtn',   german: 'goGermanSettingsBtn',   english: 'goEnglishSettingsBtn', french: 'goFrenchSettingsBtn' }
-};
-
-function navigateSection(section) {
-  const lang = getActiveLanguage();
-  // 跨语言总览（GlobalHome 由 app-enhanced.js 在运行时注入并暴露到 window）
-  if (section === 'overview') {
-    if (window.GlobalHome && typeof window.GlobalHome.show === 'function') {
-      window.GlobalHome.show();
-    } else {
-      showScreen(NAV_HOME_SCREEN[lang] || 'welcomeScreen');
-    }
-    return;
-  }
-  if (section === 'home') {
-    showScreen(NAV_HOME_SCREEN[lang] || 'welcomeScreen');
-    return;
-  }
-  const btnId = NAV_MODULE_BTN[section] && NAV_MODULE_BTN[section][lang];
-  const btn = btnId && document.getElementById(btnId);
-  if (btn) {
-    btn.click();               // reuse the exact per-language handler
-  } else {
-    // fallback: direct navigation to the Italian screen for this section
-    const targets = { vocab: 'vocabularyScreen', grammar: 'grammarScreen', progress: 'progressScreen', settings: 'settingsScreen' };
-    if (targets[section]) showScreen(targets[section]);
-  }
-}
-
-function closeDrawer() { document.body.classList.remove('drawer-open'); }
-
-// 在侧栏顶部补一个“Overview（全部语言）”入口。
-// 用 :not 判断保证幂等——如果别的脚本已经放了同一个 section，就不再重复注入。
-function ensureOverviewNavItem() {
-  const nav = document.getElementById('sidebarNav');
-  if (!nav) return;
-  if (nav.querySelector('.nav-item[data-section="overview"]')) return;
-  const first = nav.querySelector('.nav-item[data-section]');
-  const html =
-    '<button class="nav-item" data-section="overview" id="navOverviewBtn">' +
-    '<span class="msr">language</span>Overview</button>';
-  if (first) {
-    first.insertAdjacentHTML('beforebegin', html);
-  } else {
-    nav.insertAdjacentHTML('afterbegin', html);
-  }
-}
-
-function bindShellControls() {
-  ensureOverviewNavItem();
-
-  // 品牌 → 当前语言首页
-  document.getElementById('brandHomeBtn')?.addEventListener('click', () => {
-    navigateSection('home');
-    closeDrawer();
-  });
-
-  // 侧栏菜单项（语言感知）
-  document.querySelectorAll('.nav-item[data-section]').forEach(item => {
-    item.addEventListener('click', () => {
-      navigateSection(item.dataset.section);
-      closeDrawer();
-    });
-  });
-
-  // 语言胶囊 → 切换语言
-  document.querySelectorAll('.lang-pill[data-language]').forEach(pill => {
-    pill.addEventListener('click', () => {
-      LanguagePortal.selectLanguage(pill.dataset.language);
-      syncLangPills(pill.dataset.language);
-      closeDrawer();
-    });
-  });
-
-  // 窄屏抽屉开关
-  document.getElementById('drawerToggle')?.addEventListener('click', () => {
-    document.body.classList.toggle('drawer-open');
-  });
-  document.getElementById('drawerScrim')?.addEventListener('click', closeDrawer);
-
-  // 初始同步
-  syncLangPills();
-  syncThemeToggleUI();
-}
-
-// ==================== 初始化 ====================
-
-document.addEventListener('DOMContentLoaded', () => {
-  // 把旧版无语言段的词本进度 key 迁到带语言的新 key（老用户不丢进度）
-  DimStorage.migrateLegacyWordbookProgress();
-
-  bindEvents();
-  bindShellControls();
-  loadVocabulary();
-  setPracticeContext('vocab');
-  updateHeaderNavigation('welcomeScreen');
-  updateMobileBackButton('welcomeScreen');
-
-  // 初始化语言门户（恢复颜色主题 + 绑定切换事件）
-  LanguagePortal.init();
-  syncThemeToggleUI();
-  
-  // 渲染自定义单词本卡片
-  WordbookManager.renderWordbookCards();
-  
-  // 开始会话跟踪
-  startSessionTracking();
-  
-  // 页面卸载时停止跟踪
-  window.addEventListener('beforeunload', () => {
-    stopSessionTracking();
-  });
-});
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', App.init);
+  else App.init();
+})(window);

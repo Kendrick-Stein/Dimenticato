@@ -2,14 +2,10 @@
 /**
  * Dimenticato — 存储层测试
  *
- * 审计结论：tests/ 里对共享存储层零覆盖，所以导出丢进度、重置清空整个 origin
- * 这类问题一直没人发现。这个 harness 用 tests/dom-shim.js 在 Node 里把 app.js
- * 整个加载起来，直接调用真实的 Storage，而不是复制一份实现。
+ * 用 tests/dom-shim.js 在 Node 里加载真实的 lib/storage.js（DimStorage / Prefs /
+ * LegacyMigration），直接调用发布出去的实现，而不是复制一份。
  *
  *   node tests/test-storage.js
- *
- * KNOWN ISSUE 行 = 已确认、但修复归属其它工作流（存储/SRS 流）的缺陷；
- * 它们不影响退出码，等对方修好后应改成硬断言。
  */
 'use strict';
 
@@ -20,7 +16,7 @@ const { createWindow } = require('./dom-shim.js');
 
 const ROOT = path.resolve(__dirname, '..');
 
-let passed = 0, failed = 0, known = 0;
+let passed = 0, failed = 0;
 
 function assert(condition, message) {
   if (condition) { passed++; return; }
@@ -32,12 +28,6 @@ function assertEqual(actual, expected, message) {
   assert(actual === expected, message + ' (expected ' + JSON.stringify(expected) + ', got ' + JSON.stringify(actual) + ')');
 }
 
-function knownIssue(condition, message, owner) {
-  if (condition) { passed++; console.log('NOTE: 已修复，可以把这条改成硬断言 —— ' + message); return; }
-  known++;
-  console.log('KNOWN ISSUE [' + owner + ']: ' + message);
-}
-
 function group(name, fn) {
   try {
     fn();
@@ -47,210 +37,191 @@ function group(name, fn) {
   }
 }
 
-// ===== 把真实的 app.js 加载进垫片环境 =====
+// ===== 加载真实模块 =====
 const win = createWindow();
 const context = vm.createContext(win);
-const captured = { blobs: [] };
-win.Blob = function Blob(parts) { captured.blobs.push(String(parts && parts[0])); this.parts = parts; };
 
-// 导入/重置流程结束时会刷新这几处 UI，先把它们建出来，免得真实报错被 UI 噪音掩盖
-win.document.body.innerHTML =
-  '<span id="totalWords"></span><span id="masteredWords"></span>' +
-  '<span id="progressPercent"></span><div id="wordbookCards"></div>';
+// 最小 schema v1 词库：德语名词 + 一个带旧 id 的词，用来测旧进度迁移
+win.DIM_VOCAB = {
+  de: {
+    meta: { schema: 1, lang: 'de' },
+    entries: [
+      { word: 'Haus', display: 'das Haus', pos: 'noun', gender: 'n', zh: '房子', en: 'house', level: 'A1', rank: 1, legacyId: 'de-00001' },
+      { word: 'Buch', display: 'das Buch', pos: 'noun', gender: 'n', zh: '书', en: 'book', level: 'A1', rank: 2, legacyId: 'de-00002' }
+    ]
+  }
+};
 
-['lib/utils.js', 'lib/word-similarity.js', 'lib/quiz-engine.js', 'app.js'].forEach(function (file) {
+['lib/utils.js', 'lib/languages.js', 'lib/vocab.js', 'lib/storage.js'].forEach(function (file) {
   const abs = path.join(ROOT, file);
   vm.runInContext(fs.readFileSync(abs, 'utf8'), context, { filename: abs });
 });
 
-// app.js 里 Storage / AppState 是顶层 const —— 不在 window 上，只能从词法作用域取
-const Storage = vm.runInContext('typeof Storage !== "undefined" ? Storage : null', context);
-const AppState = vm.runInContext('typeof AppState !== "undefined" ? AppState : null', context);
+const DimStorage = win.DimStorage;
+const Prefs = win.Prefs;
+const LegacyMigration = win.LegacyMigration;
 const getWordbookProgressKey = vm.runInContext(
   'typeof getWordbookProgressKey === "function" ? getWordbookProgressKey : null', context);
 const ls = win.localStorage;
 
-if (!Storage || !AppState) {
-  console.error('FAIL: app.js 没有暴露 Storage / AppState，存储层无法测试');
+if (!DimStorage || !Prefs || !LegacyMigration) {
+  console.error('FAIL: lib/storage.js 没有暴露 DimStorage / Prefs / LegacyMigration');
   process.exit(1);
 }
 
-function resetStorage() {
-  // save() 是延迟写（脏标记 + 500ms 合并）：先冲刷再清库，
-  // 否则上一组的挂起写会在清库后落地，污染下一组
-  if (typeof Storage.flush === 'function') Storage.flush();
-  ls.clear();
-  AppState.currentWordbook = null;
-  AppState.masteredWords = new Set();
-  AppState.customWordbooks = [];
-  AppState.stats = { mcAttempts: 0, mcCorrect: 0, spAttempts: 0, spCorrect: 0, totalLearned: 0 };
-  AppState.selectedLevel = 1000;
-}
+// ===== 分语言的 key =====
+group('分语言的 key', function () {
+  assertEqual(DimStorage.masteredKey('italian'), 'dimenticato_mastered', '意大利语沿用历史 key');
+  assertEqual(DimStorage.masteredKey('german'), 'dimenticato_german_mastered', '德语已掌握 key');
+  assertEqual(DimStorage.statsKey('french'), 'dimenticato_french_stats', '法语统计 key');
 
-// ===== 跨模块契约（由存储/SRS 工作流提供） =====
-group('跨模块契约', function () {
-  knownIssue(!!win.DimStorage, 'window.DimStorage 应该存在（统一的分语言存储门面）', 's1-core-storage-srs');
-  if (win.DimStorage) {
-    ['LANGS', 'prefixFor', 'exportAll', 'importAll', 'reset'].forEach(function (k) {
-      assert(win.DimStorage[k] !== undefined, 'DimStorage.' + k + ' 存在');
-    });
-  }
-  knownIssue(!!(win.StatsManager && typeof win.StatsManager.recordActivity === 'function'),
-    'window.StatsManager.recordActivity 应该存在', 's1-core-storage-srs');
-  knownIssue(!!(win.HeaderStats && typeof win.HeaderStats.set === 'function'),
-    'window.HeaderStats.set 应该存在', 's1-core-storage-srs');
-  // 见 audit: app.js 在解析期测 `typeof SpacedRepetition`，而它是后加载脚本的 const
-  knownIssue(!!win.SpacedRepetition, 'window.SpacedRepetition 应该存在（否则 SRS 集成是死代码）', 's1-core-storage-srs');
-});
-
-// ===== save / load 往返 =====
-group('save / load 往返', function () {
-  resetStorage();
-  AppState.masteredWords = new Set(['ciao', 'grazie']);
-  AppState.stats = { mcAttempts: 10, mcCorrect: 7, spAttempts: 4, spCorrect: 3, totalLearned: 2 };
-  AppState.selectedLevel = 3000;
-  Storage.save();
-  Storage.flush();
-
-  AppState.masteredWords = new Set();
-  AppState.stats = {};
-  AppState.selectedLevel = 1000;
-  Storage.load();
-
-  assertEqual(AppState.masteredWords.size, 2, 'load 恢复已掌握单词数量');
-  assert(AppState.masteredWords.has('ciao') && AppState.masteredWords.has('grazie'), 'load 恢复具体单词');
-  assertEqual(AppState.stats.mcCorrect, 7, 'load 恢复统计数据');
-  assertEqual(AppState.selectedLevel, 3000, 'load 恢复所选词表层级');
-});
-
-// ===== 单词本进度必须按语言分区 =====
-group('单词本进度 key 分语言', function () {
   assert(typeof getWordbookProgressKey === 'function', 'getWordbookProgressKey 存在');
-  if (typeof getWordbookProgressKey !== 'function') return;
   const it = getWordbookProgressKey('wb1', 'italian');
   const de = getWordbookProgressKey('wb1', 'german');
   assert(it !== de, '同一个单词本在不同语言下用不同的 key');
   assert(de.indexOf('german') !== -1, 'key 里带语言段');
   assertEqual(getWordbookProgressKey('wb1'), it, '不传语言时默认意大利语');
-
-  resetStorage();
-  AppState.currentWordbook = { id: 'wb1', language: 'german' };
-  AppState.masteredWords = new Set(['Haus']);
-  Storage.save();
-  Storage.flush();
-  assert(ls.getItem(de) !== null, '学习自定义单词本时，进度写进分语言的 key');
-  assertEqual(ls.getItem(Storage.KEYS.MASTERED), null, '单词本进度不会污染系统词汇的进度');
-  AppState.currentWordbook = null;
 });
 
-// ===== 导出必须带上单词本进度 =====
-// 见 app.js: 写入用 `dimenticato_progress_wb_${language}_${id}`，
-// 导出却读 `dimenticato_progress_wb_${id}` —— 键名对不上，进度静默丢失。
-group('导出包含单词本进度', function () {
-  resetStorage();
-  const wordbook = { id: 'wb1', name: '我的词本', language: 'german', words: [] };
-  ls.setItem(Storage.KEYS.CUSTOM_WORDBOOKS, JSON.stringify([wordbook]));
-  ls.setItem(Storage.KEYS.MASTERED, JSON.stringify(['ciao']));
+// ===== 导出 =====
+group('导出包含全部语言与单词本进度', function () {
+  ls.clear();
+  ls.setItem('dimenticato_custom_wordbooks', JSON.stringify([{ id: 'wb1', name: '我的词本', language: 'german', words: [] }]));
+  ls.setItem('dimenticato_mastered', JSON.stringify(['ciao']));
+  ls.setItem('dimenticato_german_mastered', JSON.stringify(['Haus']));
   ls.setItem(getWordbookProgressKey('wb1', 'german'), JSON.stringify(['Haus', 'Buch']));
+  ls.setItem('unrelated_app_token', 'x');
 
-  captured.blobs.length = 0;
-  Storage.exportAllData();
-  assert(captured.blobs.length === 1, 'exportAllData 生成了一个下载文件');
-  const dump = captured.blobs.length ? JSON.parse(captured.blobs[0]) : { data: {} };
-  assertEqual(JSON.parse(dump.data.masteredWords).length, 1, '导出包含系统词汇进度');
-  assertEqual(JSON.parse(dump.data.customWordbooks).length, 1, '导出包含自定义单词本');
-  knownIssue(!!(dump.data.wordbookProgress && dump.data.wordbookProgress.wb1),
-    '导出应包含自定义单词本的学习进度（导出读的键名少了语言段，进度会静默丢失）',
-    's1-core-storage-srs');
+  const dump = DimStorage.exportAll();
+  assertEqual(dump.version, '2.0', '导出带版本号');
+  assert(dump.keys['dimenticato_german_mastered'] !== undefined, '导出包含德语进度');
+  assert(dump.keys['unrelated_app_token'] === undefined, '导出不带同源其它应用的键');
+  assertEqual(JSON.parse(dump.data.masteredWords).length, 1, '1.0 兼容层含意大利语进度');
+  assert(!!dump.data.wordbookProgress.wb1, '1.0 兼容层含单词本进度');
+
+  const desc = DimStorage.describePayload(dump);
+  assertEqual(desc.wordbooks, 1, '摘要统计单词本数');
+  assertEqual(desc.languages.length, 2, '摘要列出有进度的语言');
 });
 
-// ===== 导入往返 =====
-group('覆盖导入往返', function () {
-  resetStorage();
+// ===== 导入 =====
+group('覆盖导入（1.0 旧备份）', function () {
+  ls.clear();
   const payload = {
     version: '1.0',
     data: {
       masteredWords: JSON.stringify(['ciao', 'grazie']),
-      stats: JSON.stringify({ mcAttempts: 5, mcCorrect: 4, spAttempts: 2, spCorrect: 1, totalLearned: 2 }),
-      level: '2000',
+      stats: JSON.stringify({ mcAttempts: 5, mcCorrect: 4, spAttempts: 2, spCorrect: 1 }),
       theme: 'dark',
       customWordbooks: JSON.stringify([{ id: 'wb1', name: '我的词本', language: 'german', words: [] }]),
       dailyStats: JSON.stringify({ '2026-01-01': { learned: 3 } }),
       wordbookProgress: { wb1: JSON.stringify(['Haus']) }
     }
   };
-  Storage.importWithOverwrite(payload);
-
-  assertEqual(JSON.parse(ls.getItem(Storage.KEYS.MASTERED)).length, 2, '覆盖导入写入已掌握单词');
-  assertEqual(JSON.parse(ls.getItem(Storage.KEYS.STATS)).mcCorrect, 4, '覆盖导入写入统计');
-  assertEqual(ls.getItem(Storage.KEYS.LEVEL), '2000', '覆盖导入写入层级');
-  assertEqual(JSON.parse(ls.getItem(Storage.KEYS.CUSTOM_WORDBOOKS)).length, 1, '覆盖导入写入单词本');
-  knownIssue(ls.getItem(getWordbookProgressKey('wb1', 'german')) !== null,
-    '导入的单词本进度应落在应用真正会读的分语言 key 上', 's1-core-storage-srs');
+  const result = DimStorage.importAll(payload, { mode: 'overwrite' });
+  assertEqual(result.mode, 'overwrite', '覆盖模式');
+  assertEqual(JSON.parse(ls.getItem('dimenticato_mastered')).length, 2, '写入已掌握单词');
+  assertEqual(JSON.parse(ls.getItem('dimenticato_stats')).mcCorrect, 4, '写入统计');
+  assertEqual(ls.getItem('dimenticato_theme'), 'dark', '写入主题');
+  assert(ls.getItem(getWordbookProgressKey('wb1', 'german')) !== null, '旧备份的单词本进度落到分语言 key');
 });
 
-group('合并导入不覆盖本地进度', function () {
-  resetStorage();
-  ls.setItem(Storage.KEYS.MASTERED, JSON.stringify(['ciao']));
-  ls.setItem(Storage.KEYS.STATS, JSON.stringify({ mcAttempts: 2, mcCorrect: 1, spAttempts: 0, spCorrect: 0, totalLearned: 1 }));
-  ls.setItem(Storage.KEYS.CUSTOM_WORDBOOKS, JSON.stringify([{ id: 'local', name: '本地', language: 'italian', words: [] }]));
+group('合并导入保留本地进度', function () {
+  ls.clear();
+  ls.setItem('dimenticato_mastered', JSON.stringify(['ciao']));
+  ls.setItem('dimenticato_stats', JSON.stringify({ mcAttempts: 2, mcCorrect: 1, spAttempts: 0, spCorrect: 0 }));
+  ls.setItem('dimenticato_custom_wordbooks', JSON.stringify([{ id: 'local', name: '本地', language: 'italian', words: [] }]));
 
-  Storage.importWithMerge({
-    version: '1.0',
-    data: {
-      masteredWords: JSON.stringify(['grazie']),
-      stats: JSON.stringify({ mcAttempts: 3, mcCorrect: 2, spAttempts: 1, spCorrect: 1, totalLearned: 5 }),
-      level: '1000',
-      theme: 'light',
-      customWordbooks: JSON.stringify([{ id: 'wb1', name: '导入的', language: 'german', words: [] }]),
-      dailyStats: JSON.stringify({}),
-      wordbookProgress: {}
+  DimStorage.importAll({
+    version: '2.0',
+    keys: {
+      dimenticato_mastered: JSON.stringify(['grazie']),
+      dimenticato_stats: JSON.stringify({ mcAttempts: 3, mcCorrect: 2, spAttempts: 1, spCorrect: 1 }),
+      dimenticato_custom_wordbooks: JSON.stringify([{ id: 'wb1', name: '导入的', language: 'german', words: [] }]),
+      not_ours: 'x'
     }
-  });
+  }, { mode: 'merge' });
 
-  const merged = JSON.parse(ls.getItem(Storage.KEYS.MASTERED));
-  assertEqual(merged.length, 2, '合并导入保留本地已掌握单词并加上导入的');
-  assert(merged.indexOf('ciao') !== -1 && merged.indexOf('grazie') !== -1, '合并结果包含双方的单词');
-  const stats = JSON.parse(ls.getItem(Storage.KEYS.STATS));
-  assertEqual(stats.mcAttempts, 5, '合并导入累加尝试次数');
-  assertEqual(stats.totalLearned, 5, 'totalLearned 取两边最大值');
-  assertEqual(JSON.parse(ls.getItem(Storage.KEYS.CUSTOM_WORDBOOKS)).length, 2, '合并导入保留双方的单词本');
+  const merged = JSON.parse(ls.getItem('dimenticato_mastered'));
+  assertEqual(merged.length, 2, '已掌握单词取并集');
+  assertEqual(JSON.parse(ls.getItem('dimenticato_stats')).mcAttempts, 5, '计数器累加');
+  assertEqual(JSON.parse(ls.getItem('dimenticato_custom_wordbooks')).length, 2, '保留双方的单词本');
+  assertEqual(ls.getItem('not_ours'), null, '只导入 dimenticato_ 前缀的键');
 });
 
-// ===== 重置 / 清空的作用域 =====
-// 原来测的是 Storage.clearAllData()。s1 存储流把它整个删掉了，改成
-// DimStorage.reset({ scope })——按语言范围、按 key 精确删除。断言的意图
-// （只删自己的前缀、不碰同源里别人的数据）没变，只是换成了现在的入口。
-group('DimStorage.reset 只删自己的键', function () {
-  resetStorage();
+group('空载荷导入报错', function () {
+  let threw = false;
+  try { DimStorage.importAll({ version: '2.0', keys: {} }); } catch (e) { threw = true; }
+  assert(threw, '没有可导入的内容时抛错，调用方给出提示');
+});
+
+// ===== 重置 =====
+group('reset 按语言、只删进度', function () {
+  ls.clear();
   ls.setItem('dimenticato_mastered', '["ciao"]');
+  ls.setItem('dimenticato_german_mastered', '["Haus"]');
+  ls.setItem('dimenticato_progress_wb_german_wb1', '["Haus"]');
+  ls.setItem('dimenticato_custom_wordbooks', '[]');
+  ls.setItem('dimenticato_theme', 'dark');
+  ls.setItem('dimenticato_prefs', '{}');
   ls.setItem('unrelated_app_token', 'keep-me');
-  win.DimStorage.reset({ scope: 'all' });
-  assertEqual(ls.getItem('dimenticato_mastered'), null, 'reset 删掉 dimenticato_ 前缀的键');
-  assertEqual(ls.getItem('unrelated_app_token'), 'keep-me', 'reset 不动同源的其它键');
+  ls.setItem('dimenticato_cognate_progress_german', '{}');
+  ls.setItem('dimenticato_typing_best_german_vocab', '120');
+
+  const res = DimStorage.reset({ scope: 'german' });
+  assertEqual(res.scope, 'german', '范围是德语');
+  assertEqual(ls.getItem('dimenticato_german_mastered'), null, '删掉德语已掌握');
+  assertEqual(ls.getItem('dimenticato_progress_wb_german_wb1'), null, '删掉德语单词本进度');
+  assertEqual(ls.getItem('dimenticato_mastered'), '["ciao"]', '不动意大利语');
+  assertEqual(ls.getItem('dimenticato_cognate_progress_german'), null, '删掉德语同源词进度');
+  assertEqual(ls.getItem('dimenticato_typing_best_german_vocab'), null, '删掉德语打字游戏纪录');
+
+  DimStorage.reset({ scope: 'all' });
+  assertEqual(ls.getItem('dimenticato_mastered'), null, '全部重置删掉意大利语');
+  assertEqual(ls.getItem('dimenticato_custom_wordbooks'), '[]', '单词本内容保留');
+  assertEqual(ls.getItem('dimenticato_theme'), 'dark', '主题保留');
+  assertEqual(ls.getItem('dimenticato_prefs'), '{}', '练习偏好保留');
+  assertEqual(ls.getItem('unrelated_app_token'), 'keep-me', '不碰同源里别的应用数据');
 });
 
-group('reset 不应清空整个 origin', function () {
-  resetStorage();
-  ls.setItem('unrelated_app_token', 'keep-me');
-  ls.setItem('dimenticato_progress_wb_german_wb1', '["Haus"]');
-  // Storage.reset() 会先 prompt 选范围、再 confirm。不作答的话 prompt 返回
-  // null，函数直接 return，什么都不会发生 —— 之前这条测试量的其实是「没作答」，
-  // 不是重置行为。'5' = 全部语言。
-  win._promptAnswer = '5';
-  win._confirmAnswer = true;
-  try {
-    Storage.reset();  // 内部会调用 UI 刷新函数，缺 DOM 时可能抛错，不影响存储断言
-  } catch (e) { /* UI 刷新失败无所谓 */ }
-  win._promptAnswer = null;
-  assert(ls.getItem('unrelated_app_token') === 'keep-me',
-    'reset() 只删自己的前缀，不碰同源里别的应用数据');
-  assertEqual(ls.getItem('dimenticato_mastered'), '[]', 'reset 之后已掌握单词被清空并落盘');
+// ===== Prefs =====
+group('Prefs 按语言保存、带默认值', function () {
+  ls.clear();
+  assertEqual(Prefs.get('german').level, 'A2', '默认等级 A2');
+  Prefs.set('german', { level: 'B1', filter: 'due' });
+  assertEqual(Prefs.get('german').level, 'B1', '写入后读回');
+  assertEqual(Prefs.get('german').session, '20', '未写的字段仍是默认值');
+  assertEqual(Prefs.get('french').level, 'A2', '不同语言互不影响');
+});
+
+// ===== 旧进度迁移 =====
+group('LegacyMigration 把旧 id / 旧 SRS key 改写成 entry.word', function () {
+  ls.clear();
+  ls.setItem('dimenticato_german_mastered', JSON.stringify(['de-00001', 'Buch']));
+  ls.setItem('dimenticato_german_sr', JSON.stringify({ 'de-00002': { interval: 3, lastReviewDate: '2026-01-02' } }));
+  ls.setItem('dimenticato_mastery_streak_german', JSON.stringify({ 'de-00001': 1 }));
+
+  const res = LegacyMigration.run('german');
+  assert(res.changed > 0, '有改动');
+  const mastered = JSON.parse(ls.getItem('dimenticato_german_mastered'));
+  assert(mastered.indexOf('Haus') !== -1 && mastered.indexOf('Buch') !== -1, '旧 id 改成词形');
+  assertEqual(mastered.length, 2, '不重复');
+  const srs = JSON.parse(ls.getItem('dimenticato_srs_german'));
+  assert(!!srs.Buch, '旧 SRS 并入 dimenticato_srs_german 并改键');
+  assertEqual(ls.getItem('dimenticato_german_sr'), null, '旧 SRS key 并入后删除');
+  assertEqual(JSON.parse(ls.getItem('dimenticato_mastery_streak_german')).Haus, 1, '连续答对计数改键');
+
+  const again = LegacyMigration.run('german');
+  assertEqual(again.changed, 0, '幂等：第二次运行没有改动');
+
+  ls.setItem('dimenticato_german_mastered', JSON.stringify(['Unbekannt']));
+  LegacyMigration.run('german');
+  assertEqual(JSON.parse(ls.getItem('dimenticato_german_mastered'))[0], 'Unbekannt', '解析不出的旧键原样保留');
 });
 
 // ===== 汇总 =====
-resetStorage();
-const summary = passed + ' passed, ' + failed + ' failed' + (known ? ', ' + known + ' known issues' : '');
+ls.clear();
+const summary = passed + ' passed, ' + failed + ' failed';
 if (failed) {
   console.error('Storage FAILED: ' + summary);
   process.exit(1);

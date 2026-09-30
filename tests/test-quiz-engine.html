@@ -722,27 +722,20 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
   });
 
   // 见 audit: difficulty-toggle-ui-italian-only —— 开关以前只有意大利语设置页有
-  group('难度控件自动挂载到德/英/法页面', function () {
-    var screens = document.createElement('div');
-    screens.innerHTML =
-      '<section id="germanSettingsScreen" class="screen"><div class="container"></div></section>' +
-      '<section id="englishSettingsScreen" class="screen"><div class="container"></div></section>' +
-      '<section id="frenchVocabularyModesScreen" class="screen"><div class="container"></div></section>';
-    document.body.appendChild(screens);
+  group('难度控件：统一设置页渲染 + 委托绑定', function () {
+    // 统一运行时里设置页直接渲染 renderDifficultyToggle(当前语言)，不再往各语言页面注入
+    var host = document.createElement('div');
+    host.innerHTML = QuizEngine.renderDifficultyToggle('french') + QuizEngine.renderDifficultyToggle('german');
+    document.body.appendChild(host);
+    assert(!!host.querySelector('[data-difficulty-lang=french]'), '法语难度控件渲染出来了');
+    assert(!!host.querySelector('[data-difficulty-lang=german]'), '德语难度控件渲染出来了');
 
-    var mounted = QuizEngine.mountDifficultyToggles();
-    assertEqual(mounted, 3, '德语/英语/法语各挂上一个难度控件');
-    ['german', 'english', 'french'].forEach(function (lang) {
-      assert(!!screens.querySelector('[data-difficulty-lang=' + lang + ']'), lang + ' 页面上出现了难度控件');
-    });
-    assertEqual(QuizEngine.mountDifficultyToggles(), 0, '重复调用不会重复注入');
-
-    var frenchEasy = screens.querySelector('[data-difficulty-lang=french]').querySelector('[data-difficulty=easy]');
+    var frenchEasy = host.querySelector('[data-difficulty-lang=french]').querySelector('[data-difficulty=easy]');
     frenchEasy.click();
-    assertEqual(QuizEngine.getDifficulty('french'), 'easy', '法语页面上的控件真的能改法语难度');
+    assertEqual(QuizEngine.getDifficulty('french'), 'easy', '点法语控件真的改了法语难度');
     assertEqual(QuizEngine.getDifficulty('german'), 'hard', '改法语不影响德语');
 
-    screens.remove();
+    host.remove();
     QuizEngine.LANGUAGES.forEach(function (l) { localStorage.removeItem(QuizEngine.difficultyKeyFor(l)); });
   });
 

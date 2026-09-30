@@ -67,7 +67,7 @@
   // 同源词对英语母语/英语跳板的学习者才成立，所以 LANG_CONFIG 里没有 english。
   // 这张表记的是「这门语言没有同源词模块时该把人送到哪」。
   var LANG_HOME_SCREEN = {
-    english: 'englishVocabularyScreen'
+    english: 'vocabScreen'
   };
 
   function configFor(lang) {
@@ -859,7 +859,7 @@
   const BrowseMode = {
     start(words) {
       // slice() 之后再排序：旧版直接 sort(words) 会就地重排数据集本身，
-      // 把 data/*.js 里的词频顺序永久打乱（app.js 还会 COGNATE_DATA.slice(0,1000)）。
+      // 把 data/*.js 里的词频顺序永久打乱。
       CognateState.words = words.slice().sort(function(a, b) { return (a.rank || 0) - (b.rank || 0); });
       CognateState.currentMode = 'browse';
       CognateState.browseLimit = PAGE_SIZE;
@@ -972,8 +972,6 @@
     init() {
       migrateLegacyProgress();
       loadCognateProgress(CognateState.lang);
-      registerCognateScreen();
-      installFrenchEntry();
       bindEntryButtons();
       bindBackButton();
       // 转屏 / 改窗宽会换断点，顶栏高度跟着变，常驻返回丸的偏移量要重算
@@ -984,7 +982,7 @@
       return CognateState.lang;
     },
 
-    /** 供 lib/router.js 深链接补水与入口按钮调用 */
+    /** 供 App 入口卡片与深链接（Shell 路由）调用 */
     open(lang, options) {
       var opts = options || {};
 
@@ -1012,9 +1010,6 @@
       syncScreenChrome();
 
       if (!opts.skipNavigate) {
-        // 意大利语那颗按钮上还挂着 app.js 里的老 handler，它会先跳到
-        // vocabularyModesScreen 并压进一条历史；这里用 replaceState 覆盖掉那条，
-        // 免得用户按一次「返回」停在一块空的练习方式页上。
         if (typeof window.showScreen === 'function') {
           window.showScreen(COGNATE_SCREEN_ID, { replaceRoute: !!opts.replaceRoute });
         }
@@ -1131,27 +1126,10 @@
   // === 屏幕 / 入口接线 ===
 
   /**
-   * cognatePracticeScreen 是三门语言共用的一块屏（和 grammarBookScreen 同一套路），
-   * 父级按 body[data-language] 解析。不登记的话面包屑会退化、返回键找不到上一层。
-   */
-  function registerCognateScreen() {
-    var t = window.ScreenTree;
-    if (!t || typeof t.register !== 'function') return;
-    t.register(COGNATE_SCREEN_ID, {
-      parent: function (lang) {
-        return lang === 'italian' ? 'vocabularyScreen' : lang + 'VocabularyScreen';
-      },
-      slug: 'vocab/cognates',
-      section: 'vocab',
-      crumb: ['词汇', '同源词']
-    });
-  }
-
-  /**
    * 深链接落到一门没有同源词数据的语言时的兜底。
-   * 不能直接同步 showScreen：router.apply() 是在 withSuspendedSync() 里调
-   * hydrate() 的，那段时间 DimRouter.sync() 被静音，屏幕换了地址栏还会留在
-   * #/en/vocab/cognates。推到下一个 tick 再切，地址栏才会被 replaceState 改掉。
+   * 不能直接同步 showScreen：DimRouter.apply() 调 opener 期间 sync 被静音，
+   * 屏幕换了地址栏还会留在 #/en/vocab/cognates。推到下一个 tick 再切，
+   * 地址栏才会被 replaceState 改掉。
    */
   function redirectUnsupported(screenId) {
     window.setTimeout(function () {
@@ -1170,29 +1148,12 @@
     }
   }
 
-  /**
-   * 入口按钮统一用 [data-cognate-lang] 标记，事件用委托。
-   *
-   * 分两个阶段挂是为了和 app.js 里那颗老的 .cognate-btn 共处：
-   *   捕获阶段 —— 先把语言定下来，这样 app.js 随后同步调用的
-   *              CognateApp.showModeSelection()（无参）不会拿着上一门语言去渲染；
-   *   冒泡阶段 —— 在 app.js 的 showScreen('vocabularyModesScreen') 之后再跳一次，
-   *              最终停在同源词屏上。
-   */
+  /** 入口按钮统一用 [data-cognate-lang] 标记，事件用委托。 */
   function bindEntryButtons() {
     document.addEventListener('click', function (event) {
       var el = event.target && event.target.closest && event.target.closest('[data-cognate-lang]');
       if (!el) return;
-      var lang = el.getAttribute('data-cognate-lang');
-      if (LANG_CONFIG[lang]) CognateState.lang = lang;
-    }, true);
-
-    document.addEventListener('click', function (event) {
-      var el = event.target && event.target.closest && event.target.closest('[data-cognate-lang]');
-      if (!el) return;
-      CognateApp.open(el.getAttribute('data-cognate-lang'), {
-        replaceRoute: el.classList.contains('cognate-btn')
-      });
+      CognateApp.open(el.getAttribute('data-cognate-lang'));
     });
   }
 
@@ -1202,42 +1163,6 @@
     btn.addEventListener('click', function () {
       if (typeof window.goBack === 'function') window.goBack();
     });
-  }
-
-  /**
-   * 法语的全部屏幕由 french-app.js 在运行时注入（index.html 里没有任何法语 DOM），
-   * 所以法语这颗入口只能在这里补挂。french-app.js 在自己的 IIFE 顶层就调用了
-   * installFrenchScreens()，而本函数跑在 DOMContentLoaded，那时屏幕已经在 DOM 上。
-   * 幂等：已经挂过就直接返回。
-   */
-  function installFrenchEntry() {
-    var screen = document.getElementById('frenchVocabularyScreen');
-    if (!screen) return;
-    if (screen.querySelector('[data-cognate-lang="french"]')) return;
-    var grid = screen.querySelector('.card-grid');
-    if (!grid) return;
-
-    // 3 张卡变 4 张：cols-3 会剩一张孤零零地占三分之一，改成 2×2
-    grid.classList.remove('cols-3');
-    grid.classList.add('cols-2');
-
-    // 词数不写死：本函数跑在 DOMContentLoaded，法语包多半还没懒加载进来，读不到就先
-    // 留一个省略号，等 lib/router.js 的 syncDatasetCounts() 在数据到位后填真数。
-    // （写死一个数的下场上一轮见过：数据一改，界面就一直挂着骗人的旧值。）
-    var frenchCount = datasetFor('french').length;
-    var frenchLabel = frenchCount ? fmt(frenchCount) : '…';
-
-    var card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML =
-      '<span class="card-chip"><span class="msr">compare_arrows</span></span>' +
-      '<span class="card-title">同源词 · 借力英语</span>' +
-      '<span class="card-desc">和英语同源的法语词；faux amis（假朋友）单独标注。</span>' +
-      '<div class="chips wrap">' +
-        '<button class="chip" data-cognate-lang="french">同源词 · <span data-count="french-cognates">' +
-          frenchLabel + '</span> 词</button>' +
-      '</div>';
-    grid.appendChild(card);
   }
 
   // Expose to global

@@ -17,16 +17,13 @@
 </head>
 <body>
 <h1>Spaced Repetition (SM-2) Tests</h1>
-<p class="note">测试的是 app-enhanced.js 里**实际发布**的 SpacedRepetition —— 不是复制一份算法。
+<p class="note">测试的是 lib/srs.js 里**实际发布**的 SpacedRepetition —— 不是复制一份算法。
 KNOWN ISSUE 行是已确认、由其它工作流修复的缺陷，修好后应改成硬断言。</p>
 <div id="results"></div>
 
-<!-- app-enhanced.js 顶层会执行 Browse.render = BrowseEnhanced.render，先放最小桩 -->
-<script>
-  window.Browse = window.Browse || {};
-  window.AppState = window.AppState || { masteredWords: new Set(), stats: {}, customWordbooks: [] };
-</script>
-<script src="../app-enhanced.js"></script>
+<script src="../lib/utils.js"></script>
+<script src="../lib/storage.js"></script>
+<script src="../lib/srs.js"></script>
 <script>
 (function () {
   var results = document.getElementById('results');
@@ -70,7 +67,7 @@ KNOWN ISSUE 行是已确认、由其它工作流修复的缺陷，修好后应�
 
   if (!SR) {
     failed++;
-    row('fail', 'FAIL: app-enhanced.js 没有暴露 SpacedRepetition，后续测试无法进行');
+    row('fail', 'FAIL: lib/srs.js 没有暴露 SpacedRepetition，后续测试无法进行');
   } else {
 
     // calculateNextReview 的入参可能是 word（内含 srData）或直接是 srData，两种都兼容
@@ -180,8 +177,8 @@ KNOWN ISSUE 行是已确认、由其它工作流修复的缺陷，修好后应�
     // 改成走真实路径：给词一个 headword，用 review() 让它「复习过」，
     // 再把 store 里的到期日改到过去/未来。
     group('getDueWords', function () {
-      var overdue = { italian: 'sr-overdue' };
-      var future = { italian: 'sr-future' };
+      var overdue = { word: 'sr-overdue' };
+      var future = { word: 'sr-future' };
       SR.review('italian', overdue, 5);
       SR.review('italian', future, 5);
       var store = SR.loadStore('italian');
@@ -191,7 +188,7 @@ KNOWN ISSUE 行是已确认、由其它工作流修复的缺陷，修好后应�
       assertEqual(due.length, 1, 'getDueWords 只返回到期的词');
       assert(due[0] === overdue, 'getDueWords 返回的是那个过期的词');
 
-      var fresh = { italian: 'sr-never-reviewed' };
+      var fresh = { word: 'sr-never-reviewed' };
       SR.initWordSRData(fresh);
       fresh.srData.nextReviewDate = '2020-01-01';
       assertEqual(dueWords([fresh]).length, 0, '从没复习过的新词不算待复习');
