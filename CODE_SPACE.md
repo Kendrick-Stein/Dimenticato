@@ -822,12 +822,12 @@
 
 #### `data/english-grammar-data.js`
 
-- 导出：`ENGLISH_GRAMMAR_DATA`
-- 来源：`english-data/logical-grammar-master/`（注意目录名前有空格）
-- 结构：与 `GRAMMAR_DATA` 相同：`{ tree: { parts: [...] }, content: { slug: "markdown..." } }`
-- 包含 5 个 parts（英语逻辑语法）
-- 由 `scripts/build_english_grammar.py` 生成
-- 供 `german-app.js > GermanApp._openGrammarBook()` 使用（英语语法书）
+- 导出：`ENGLISH_GRAMMAR_DATA`（另有 `ENGLISH_GRAMMAR_CONTENT` / `ENGLISH_GRAMMAR_TREE`，末尾带 `module.exports`）
+- 来源：`scripts/english_grammar_src/*.md`（每章一个 Markdown 源文件，全部为 Dimenticato 原创中文讲解 + 英文例句）
+- 结构：与 `FRENCH_GRAMMAR_DATA` 相同：`{ meta, tree: { parts: [{ chapters: [{ topics: [{ title, slug, level }] }] }] }, content: { slug: "markdown..." } }`，`level` 为 A1–C1
+- 2 个 parts（词法 / 句法），体量与法语语法书相当；具体数字见文件头注释
+- 由 `scripts/build_english_grammar.py` 生成，`scripts/validate_english_grammar.js` 校验（已接入 `npm test`）
+- 旧版导入的 ` english-data/logical-grammar-master/`（英语逻辑语法要略）上游仓库没有任何许可证，不能再分发，已不再收录
 
 ### 7.2 原始 / 中间数据
 
@@ -994,9 +994,9 @@
 
 用途：
 
-- 读取 ` english-data/logical-grammar-master/` 目录（⚠️ 目录名前有空格）
-- 处理 markdown 文件，组装为语法树
-- 生成 JS 常量文件
+- 读取 `scripts/english_grammar_src/p<P>-ch<NN>-<name>.md`（按文件名排序 = 阅读顺序）
+- 每个文件开头 `<!-- part: ... / chapter: ... -->`，每个专题以 `=== tNN-slug | LEVEL` 开头、紧跟 `# N．标题`
+- 组装为语法树并生成 JS 常量文件
 
 输出：
 
@@ -1004,12 +1004,12 @@
 
 #### 什么时候需要跑
 
-- `logical-grammar-master/` 中的 markdown 文件有更新
-- 需要重建英语语法数据文件
+- `scripts/english_grammar_src/` 下任一源文件有改动
+- 改完后跑 `node scripts/validate_english_grammar.js`（`--only p1-ch01 --out /tmp/x.js` + `--file /tmp/x.js --partial` 可只校验部分章节）
 
 #### 注意
 
-- 源目录 ` english-data/` 前有一个空格，路径引用时必须保留
+- 源文本必须原创：不得摘抄 ` english-data/薄冰英语语法.docx` 等受版权保护的语法书
 
 ---
 

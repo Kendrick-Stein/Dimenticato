@@ -42,7 +42,7 @@ const GrammarBook = (() => {
     english: {
       label: '英语',
       title: '英语语法',
-      description: '请从左侧目录选择专题开始阅读',
+      description: '请从左侧目录选择 A1-C1 专题开始阅读',
       backLabel: 'English Grammar'
     },
     french: {
