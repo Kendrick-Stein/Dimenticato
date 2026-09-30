@@ -223,6 +223,24 @@ function validateCollocationBlock(label, data, requireCase) {
 }
 
 const collocStats = validateCollocationBlock('GERMAN_COLLOCATIONS_DATA', collocations, true);
+// coverage floor: the authored layer (scripts/sources/german-rektion) brought the
+// dataset to Italian-style breadth; a build that silently drops the source dir
+// would fall back to ~350 verbs, so lock the floor in
+if (collocStats) {
+  check(collocStats.verbs >= 800, 'collocations',
+    'only ' + collocStats.verbs + ' Rektion headwords (floor 800) - scripts/sources/german-rektion not picked up?');
+  check(collocStats.examples >= 2500, 'collocations',
+    'only ' + collocStats.examples + ' Rektion examples (floor 2500)');
+}
+// authored example sentences must be tagged as such in the structured entries
+Object.keys(collocations.verbs).forEach(function (name) {
+  (collocations.verbs[name].entries || []).forEach(function (e) {
+    (e.examples || []).forEach(function (x) {
+      check(x && (x.source === 'Dimenticato (authored)' || x.source === 'Tatoeba CC BY 2.0 FR'),
+        'collocations', name + ': example without a known source ' + JSON.stringify(x));
+    });
+  });
+});
 // the Funktionsverbgefuege block keys "prepositions" by light verb, not by
 // preposition, so the case rule does not apply to it
 const nounVerbStats = collocations.nounVerb

@@ -402,6 +402,11 @@ for (const w of ['actuellement', 'assister', 'librairie', 'sensible', 'journée'
   }
 }
 
+// coverage floor: the authored layer (scripts/sources/french-collocations) brought
+// the dataset toward Italian breadth; a build that drops it would fall back to ~780
+check(verbCount >= 1300, `collocations: only ${verbCount} verbs (floor 1300) - authored sources not picked up?`);
+check(exampleCount >= 4500, `collocations: only ${exampleCount} examples (floor 4500)`);
+
 const fauxCount = COGNATES.filter((r) => r.falseFriend).length;
 notes.push(`collocations: ${verbCount} verbs, ${exampleCount} examples, ` +
   `${Object.keys(COLLOC.prepositions).length} prepositions`);
