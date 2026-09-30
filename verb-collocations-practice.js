@@ -190,7 +190,7 @@ const VerbCollocationPractice = (() => {
     if (dom.title) dom.title.textContent = `${profile.label}动词搭配练习`;
     if (dom.eyebrow) dom.eyebrow.textContent = `${profile.label} / Verb Collocations Practice`;
     if (dom.backBtn) {
-      dom.backBtn.innerHTML = '<span class="msr">arrow_back</span>返回语法';
+      dom.backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回语法';
     }
   }
 
@@ -284,7 +284,7 @@ const VerbCollocationPractice = (() => {
       dom.summary.style.display = 'block';
       dom.summary.innerHTML =
         '<div class="vc-empty-state">' +
-          '<span class="msr vc-empty-state-icon">hourglass_empty</span>' +
+          '<span class="msr vc-empty-state-icon" aria-hidden="true">hourglass_empty</span>' +
           '<h2>该语言暂无动词搭配数据</h2>' +
           '<p>' + escapeHtml(profile.title) + '词库还在建设中，练习题目暂时无法生成。' +
             '数据落盘后本页会自动出题，无需更新应用。</p>' +

@@ -243,7 +243,7 @@
         '<div class="typing-record"><span>变位最佳</span><b>' + fmt(bestConj) + '</b></div>' +
       '</div>' +
       '<button class="primary-btn typing-start-btn" id="typingStartBtn">' +
-        '<span class="msr">sports_esports</span> 开始激流勇进' +
+        '<span class="msr" aria-hidden="true">sports_esports</span> 开始激流勇进' +
       '</button>' +
       '<p class="typing-tip">单词会从上方顺流而下，看释义、打单词把它击落！' +
       '输入时无需按回车，打完整就自动击落；输到一半按回车可提前提交。' +
@@ -327,8 +327,8 @@
         (isRecord ? ' · <b class="typing-new-record">🏆 新纪录！</b>' : '') + '</p>' +
         '<p class="typing-overlay-best">历史最佳：' + fmt(Math.max(prevBest, stats.score)) + '</p>' +
         '<div class="typing-overlay-actions">' +
-          '<button class="primary-btn" id="typingRestartBtn"><span class="msr">replay</span> 再来一局</button>' +
-          '<button class="pill-btn" id="typingBackSetupBtn"><span class="msr">settings</span> 返回设置</button>' +
+          '<button class="primary-btn" id="typingRestartBtn"><span class="msr" aria-hidden="true">replay</span> 再来一局</button>' +
+          '<button class="pill-btn" id="typingBackSetupBtn"><span class="msr" aria-hidden="true">settings</span> 返回设置</button>' +
         '</div>' +
       '</div>';
     overlay.classList.remove('hidden');

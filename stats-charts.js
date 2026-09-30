@@ -308,6 +308,10 @@ const ChartsManager = {
   }
 };
 
+function loadChartLib() {
+  return window.CdnFallback ? window.CdnFallback.load('chart') : Promise.resolve();
+}
+
 // 显示增强的统计模态框
 function showEnhancedStatsModal() {
   const modal = document.getElementById('enhancedStatsModal');
@@ -322,10 +326,10 @@ function showEnhancedStatsModal() {
   // 更新每日统计
   updateDailyStats();
   
-  // 初始化图表
-  setTimeout(() => {
-    ChartsManager.initCharts();
-  }, 100);
+  // 初始化图表（chart.js 按需加载，见 index.html CdnFallback.load）
+  loadChartLib().then(() => {
+    if (!modal.classList.contains('hidden')) ChartsManager.initCharts();
+  });
   
   // 显示模态框
   modal.classList.remove('hidden');
@@ -423,9 +427,7 @@ function switchStatsTab(tabName) {
   
   // 如果切换到图表标签页，更新图表
   if (tabName === 'charts') {
-    setTimeout(() => {
-      ChartsManager.updateAllCharts();
-    }, 100);
+    loadChartLib().then(() => ChartsManager.updateAllCharts());
   }
 }
 

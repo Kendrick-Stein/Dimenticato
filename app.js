@@ -37,6 +37,8 @@
   global.shuffleArray = shuffleArray;
 
   function lang() { return global.getActiveLanguage(); }
+  // 外语单词标上 lang：读屏按对应语言发音，浏览器按对应语言断字
+  function langAttr(l) { return ' lang="' + global.Languages.code(l || lang()) + '"'; }
   function profile(l) { return global.Languages.get(l || lang()); }
   function hasModule(name, l) { var p = profile(l); return !!(p && p.modules && p.modules[name]); }
   function readJson(key, fallback) {
@@ -266,7 +268,7 @@
     if (w.en) parts.push('EN ' + esc(w.en));
     var usage = global.Vocab.usageLine(w);
     if (usage) parts.push(esc(usage));
-    return '<strong>' + esc(global.Vocab.headword(w)) + '</strong> — ' + esc(w.zh) +
+    return '<strong' + langAttr() + '>' + esc(global.Vocab.headword(w)) + '</strong> — ' + esc(w.zh) +
       (parts.length ? '<br><span class="muted">' + parts.join(' · ') + '</span>' : '');
   }
 
@@ -285,6 +287,7 @@
     var word = $('quizWord');
     word.textContent = reverse ? eng.questionTextFor(w) : global.Vocab.headword(w);
     word.classList.toggle('is-gloss', reverse);
+    if (reverse) word.removeAttribute('lang'); else word.setAttribute('lang', global.Languages.code(s.lang));
     $('quizMeta').textContent = reverse ? (global.Vocab.POS_LABEL[w.pos] || '') : global.Vocab.grammarLine(w);
     $('quizSpeak').classList.toggle('hidden', !eng.shouldSpeakQuestion());
 
@@ -379,9 +382,9 @@
 
     var head = global.Vocab.headword(w);
     var text;
-    if (ok) text = '<span class="msr">check_circle</span>正确' + (grade.note ? '<span class="muted"> · ' + esc(grade.note) + '</span>' : '');
-    else if (grade.status === 'accent') text = '<span class="msr">error</span>字母对了，重音不对：<strong>' + esc(head) + '</strong>';
-    else text = '<span class="msr">cancel</span>' + (reveal ? '答案是' : '正确拼写是') + '：<strong>' + esc(head) + '</strong>';
+    if (ok) text = '<span class="msr" aria-hidden="true">check_circle</span>正确' + (grade.note ? '<span class="muted"> · ' + esc(grade.note) + '</span>' : '');
+    else if (grade.status === 'accent') text = '<span class="msr" aria-hidden="true">error</span>字母对了，重音不对：<strong' + langAttr(s.lang) + '>' + esc(head) + '</strong>';
+    else text = '<span class="msr" aria-hidden="true">cancel</span>' + (reveal ? '答案是' : '正确拼写是') + '：<strong' + langAttr(s.lang) + '>' + esc(head) + '</strong>';
 
     var input = $('spellInput');
     input.disabled = true;
@@ -490,8 +493,8 @@
           '<p class="hero-lede">' + esc(p.cn) + '词库 <span class="num">' + fmt(entries.length) + '</span> 条，按 CEFR A1–C2 分级。' +
             '选择题、拼写、浏览与打字游戏共用同一份进度，语法书与动词变位按需加载。学习记录只保存在这台设备的浏览器里。</p>' +
           '<div class="actions">' +
-            '<button class="primary-btn" data-action="start" data-mode="quiz"><span class="msr">play_arrow</span>开始一组练习</button>' +
-            (due ? '<button class="btn" data-action="review"><span class="msr">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
+            '<button class="primary-btn" data-action="start" data-mode="quiz"><span class="msr" aria-hidden="true">play_arrow</span>开始一组练习</button>' +
+            (due ? '<button class="btn" data-action="review"><span class="msr" aria-hidden="true">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
             '<button class="btn" data-go="vocabScreen">练习设置</button>' +
           '</div>' +
         '</div>' +
@@ -528,8 +531,8 @@
   function renderWotd(e, l) {
     return '<aside class="wotd">' +
       '<span class="kicker">今日一词 · <span class="num">' + esc(e.level || '') + '</span></span>' +
-      '<div class="wotd-word"><span>' + esc(global.Vocab.headword(e)) + '</span>' +
-        '<button class="icon-btn speaker" data-speak="' + escAttr(global.Vocab.headword(e)) + '" aria-label="朗读"><span class="msr">volume_up</span></button></div>' +
+      '<div class="wotd-word"><span' + langAttr(l) + '>' + esc(global.Vocab.headword(e)) + '</span>' +
+        '<button class="icon-btn speaker" data-speak="' + escAttr(global.Vocab.headword(e)) + '" aria-label="朗读"><span class="msr" aria-hidden="true">volume_up</span></button></div>' +
       '<p class="wotd-gram num">' + esc(global.Vocab.grammarLine(e)) + '</p>' +
       '<p class="wotd-gloss">' + esc(e.zh) + '</p>' +
       (e.en ? '<p class="wotd-en muted">' + esc(e.en) + '</p>' : '') +
@@ -541,7 +544,7 @@
     var cards = [];
     var card = function (action, icon, title, desc, extra) {
       cards.push('<button class="card" data-action="' + action + '"' + (extra || '') + '>' +
-        '<span class="card-icon"><span class="msr">' + icon + '</span></span>' +
+        '<span class="card-icon"><span class="msr" aria-hidden="true">' + icon + '</span></span>' +
         '<span class="card-title">' + title + '</span><span class="card-desc">' + desc + '</span></button>');
     };
     if (where === 'home') {
@@ -629,15 +632,15 @@
               '<button class="wordbook-name" data-source="wb:' + escAttr(b.id) + '">' + esc(b.name) +
                 ' <span class="num muted">' + fmt(b.words.length) + '</span></button>' +
               '<span class="wordbook-actions">' +
-                '<button class="icon-btn" data-wb="edit" data-id="' + escAttr(b.id) + '" title="编辑"><span class="msr">edit</span></button>' +
-                '<button class="icon-btn" data-wb="export" data-id="' + escAttr(b.id) + '" title="导出"><span class="msr">download</span></button>' +
-                '<button class="icon-btn" data-wb="delete" data-id="' + escAttr(b.id) + '" title="删除"><span class="msr">delete</span></button>' +
+                '<button class="icon-btn" data-wb="edit" data-id="' + escAttr(b.id) + '" title="编辑"><span class="msr" aria-hidden="true">edit</span></button>' +
+                '<button class="icon-btn" data-wb="export" data-id="' + escAttr(b.id) + '" title="导出"><span class="msr" aria-hidden="true">download</span></button>' +
+                '<button class="icon-btn" data-wb="delete" data-id="' + escAttr(b.id) + '" title="删除"><span class="msr" aria-hidden="true">delete</span></button>' +
               '</span></li>';
           }).join('') + '</ul>' : '<p class="muted small">还没有' + esc(p.cn) + '单词本。可以新建、导入 TXT / JSON，或从社区下载。</p>') +
           '<div class="btn-row">' +
-            '<button class="pill-btn" data-wb="new"><span class="msr">add</span>新建</button>' +
-            '<button class="pill-btn" data-wb="import"><span class="msr">upload_file</span>导入</button>' +
-            '<button class="pill-btn" data-action="community"><span class="msr">groups</span>社区词书</button>' +
+            '<button class="pill-btn" data-wb="new"><span class="msr" aria-hidden="true">add</span>新建</button>' +
+            '<button class="pill-btn" data-wb="import"><span class="msr" aria-hidden="true">upload_file</span>导入</button>' +
+            '<button class="pill-btn" data-action="community"><span class="msr" aria-hidden="true">groups</span>社区词书</button>' +
           '</div>' +
         '</div>' +
       '</div>' +
@@ -654,7 +657,7 @@
 
   function modeCard(mode, icon, title, desc) {
     return '<button class="card" data-action="start" data-mode="' + mode + '">' +
-      '<span class="card-icon"><span class="msr">' + icon + '</span></span>' +
+      '<span class="card-icon"><span class="msr" aria-hidden="true">' + icon + '</span></span>' +
       '<span class="card-title">' + title + '</span><span class="card-desc">' + desc + '</span></button>';
   }
 
@@ -722,15 +725,15 @@
       var known = mastered.has(e.word);
       return '<li class="word-row' + (known ? ' known' : '') + '" data-i="' + i + '">' +
         '<div class="word-main">' +
-          '<span class="word-head">' + esc(global.Vocab.headword(e)) + '</span>' +
+          '<span class="word-head"' + langAttr() + '>' + esc(global.Vocab.headword(e)) + '</span>' +
           (e.level ? '<span class="tag">' + esc(e.level) + '</span>' : '') +
           '<span class="word-gram num">' + esc(global.Vocab.grammarLine(e)) + '</span>' +
         '</div>' +
         '<div class="word-gloss">' + esc(e.zh) + (e.en ? '<span class="muted"> · ' + esc(e.en) + '</span>' : '') + '</div>' +
         '<div class="word-actions">' +
-          '<button class="icon-btn speaker" data-row="speak" aria-label="朗读"><span class="msr">volume_up</span></button>' +
-          '<button class="icon-btn" data-row="known" aria-pressed="' + known + '" title="' + (known ? '取消已掌握' : '标记已掌握') + '"><span class="msr">' + (known ? 'task_alt' : 'radio_button_unchecked') + '</span></button>' +
-          '<button class="icon-btn" data-row="add" title="加入单词本"><span class="msr">bookmark_add</span></button>' +
+          '<button class="icon-btn speaker" data-row="speak" aria-label="朗读"><span class="msr" aria-hidden="true">volume_up</span></button>' +
+          '<button class="icon-btn" data-row="known" aria-pressed="' + known + '" title="' + (known ? '取消已掌握' : '标记已掌握') + '"><span class="msr" aria-hidden="true">' + (known ? 'task_alt' : 'radio_button_unchecked') + '</span></button>' +
+          '<button class="icon-btn" data-row="add" title="加入单词本"><span class="msr" aria-hidden="true">bookmark_add</span></button>' +
         '</div></li>';
     }).join('') : '<li class="empty">没有匹配的词</li>';
     $('browseMore').classList.toggle('hidden', list.length <= browse.limit);
@@ -771,7 +774,7 @@
         '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Progressi</span>' +
           '<h1 class="page-title">学习进度</h1><p>只统计' + esc(p.cn) + '。换语言请用顶栏的语言切换。</p></div>' +
         '<div class="btn-row">' +
-          '<button class="btn" data-action="stats-modal"><span class="msr">monitoring</span>详细图表</button>' +
+          '<button class="btn" data-action="stats-modal"><span class="msr" aria-hidden="true">monitoring</span>详细图表</button>' +
           (due ? '<button class="primary-btn" data-action="review">复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
         '</div>' +
       '</div>' +
@@ -787,7 +790,7 @@
             var h = d.totalCount / maxDay * 100;
             var ok = d.totalCount ? d.correctCount / d.totalCount * 100 : 0;
             var date = global.parseLocalDay(d.date);
-            return '<div class="week-bar" title="' + escAttr(d.date + '：' + d.totalCount + ' 题，答对 ' + d.correctCount) + '">' +
+            return '<div class="week-bar' + (d.totalCount ? '' : ' is-empty') + '" title="' + escAttr(d.date + '：' + d.totalCount + ' 题，答对 ' + d.correctCount) + '">' +
               '<span class="week-value num">' + (d.totalCount || '') + '</span>' +
               '<span class="week-track"><span class="week-fill" style="height:' + h.toFixed(1) + '%"><span class="week-ok" style="height:' + ok.toFixed(1) + '%"></span></span></span>' +
               '<span class="week-label num">' + (date.getMonth() + 1) + '/' + date.getDate() + '</span></div>';
@@ -845,6 +848,65 @@
     applyTheme(theme);
     try { localStorage.setItem(THEME_KEY, theme); } catch (e) { /* ignore */ }
     if (Shell().current() === 'settingsScreen') renderSettings();
+  }
+
+  // ==================== 弹窗焦点 ====================
+
+  var FOCUSABLE = 'button:not([disabled]), [href], input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+  function visibleModals() {
+    return Array.prototype.filter.call(document.querySelectorAll('.modal'), function (m) {
+      return !m.classList.contains('hidden');
+    });
+  }
+
+  /**
+   * 所有 .modal 都是切 hidden class 显隐的，打开入口散在各模块里。这里统一接管焦点：
+   * 打开时记下触发元素、焦点移进弹窗；Tab 在弹窗内循环；关闭时焦点还给触发元素。
+   */
+  function trapModalFocus() {
+    var opener = new Map();
+    var observer = new MutationObserver(function (records) {
+      records.forEach(function (r) {
+        var modal = r.target;
+        var open = !modal.classList.contains('hidden');
+        if (open && !opener.has(modal)) {
+          opener.set(modal, document.activeElement);
+          // 等打开方把内容渲染完（很多弹窗是先显示再同步填内容）
+          global.setTimeout(function () {
+            if (modal.classList.contains('hidden') || modal.contains(document.activeElement)) return;
+            var first = modal.querySelector('.modal-body ' + FOCUSABLE.split(', ').join(', .modal-body ')) ||
+              modal.querySelector(FOCUSABLE);
+            if (first) first.focus();
+          }, 0);
+        } else if (!open && opener.has(modal)) {
+          var back = opener.get(modal);
+          opener.delete(modal);
+          if (back && document.contains(back) && typeof back.focus === 'function' &&
+            (!document.activeElement || document.activeElement === document.body || modal.contains(document.activeElement))) {
+            back.focus();
+          }
+        }
+      });
+    });
+    document.querySelectorAll('.modal').forEach(function (m) {
+      observer.observe(m, { attributes: true, attributeFilter: ['class'] });
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key !== 'Tab') return;
+      var open = visibleModals();
+      if (!open.length) return;
+      var modal = open[open.length - 1];
+      var items = Array.prototype.filter.call(modal.querySelectorAll(FOCUSABLE), function (el) {
+        return el.offsetParent !== null;
+      });
+      if (!items.length) return;
+      var first = items[0], last = items[items.length - 1];
+      if (!modal.contains(document.activeElement)) { event.preventDefault(); first.focus(); }
+      else if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
   }
 
   // ==================== 备份 / 重置 ====================
@@ -1118,6 +1180,8 @@
       });
       if (open.length) open[open.length - 1].classList.add('hidden');
     });
+
+    trapModalFocus();
 
     $('themeToggle').addEventListener('click', function () {
       setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');

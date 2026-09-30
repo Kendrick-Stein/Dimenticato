@@ -80,7 +80,7 @@
     main.insertAdjacentHTML('beforeend', `
       <section id="germanCourseScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="germanCourseBackBtn"><span class="msr">arrow_back</span>返回首页</button>
+          <button class="back-link" id="germanCourseBackBtn"><span class="msr" aria-hidden="true">arrow_back</span>返回首页</button>
           <div class="eyebrow">German / Kursplan</div>
           <h1 class="page">A1-C1 德语课程路线</h1>
           <p class="desc">按教材主题选择课程，查看对应语法重点，并用现有词库练习核心词汇。</p>
@@ -413,7 +413,7 @@
         // button 嵌套 button（解析器会把外层 button 提前闭合，卡片直接裂开）。
         return `
           <div class="card" role="button" tabindex="0" style="cursor:pointer" data-german-course-unit="${escapeAttribute(unit.id)}">
-            <span class="card-chip"><span class="msr">school</span></span>
+            <span class="card-chip"><span class="msr" aria-hidden="true">school</span></span>
             <span class="card-title">Lektion ${unit.number} · ${escapeHtml(unit.title)}</span>
             <span class="card-desc">${escapeHtml(unit.summary)}</span>
             ${this.renderGrammarTags(unit)}

@@ -263,7 +263,7 @@
     var note = falseFriendNote(word);
     if (!note) return '';
     return '<div class="tip-strip cognate-false-friend">' +
-        '<span class="msr">warning</span>' +
+        '<span class="msr" aria-hidden="true">warning</span>' +
         '<span><b>假朋友</b> · ' + escapeHtml(note) + '</span>' +
       '</div>';
   }

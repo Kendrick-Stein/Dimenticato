@@ -339,7 +339,7 @@ const CommunityWordbooks = {
       }
 
       // 3. 上传文件到 Supabase Storage
-      const client = this.getClient();
+      const client = await this.getClient();
       if (!client) {
         alert(this.unavailableMessage());
         uploadBtn.disabled = false;
@@ -441,8 +441,9 @@ const CommunityWordbooks = {
 
   // ==================== 浏览词本 ====================
 
-  /** 运行时获取 Supabase 客户端（SDK 可能被网络环境拦截） */
-  getClient() {
+  /** 运行时获取 Supabase 客户端。SDK 按需加载（index.html CdnFallback.load），可能被网络环境拦截 */
+  async getClient() {
+    if (window.CdnFallback) await this.withTimeout(window.CdnFallback.load('supabase'), 20000).catch(() => {});
     if (typeof window.getSupabaseClient !== 'function') return null;
     try {
       return window.getSupabaseClient();
@@ -536,7 +537,7 @@ const CommunityWordbooks = {
       return;
     }
 
-    const client = this.getClient();
+    const client = await this.getClient();
     if (!client) {
       this.renderStatus('cloud_off', '社区功能暂时不可用', this.unavailableMessage(), true);
       return;
@@ -639,12 +640,12 @@ const CommunityWordbooks = {
     if (!container) return;
 
     const retryHtml = retryable
-      ? '<button type="button" class="pill-btn" data-community-action="retry"><span class="msr">refresh</span>重试</button>'
+      ? '<button type="button" class="pill-btn" data-community-action="retry"><span class="msr" aria-hidden="true">refresh</span>重试</button>'
       : '';
 
     container.innerHTML = `
       <div class="empty-message">
-        <div class="empty-icon"><span class="msr">${this.esc(icon)}</span></div>
+        <div class="empty-icon"><span class="msr" aria-hidden="true">${this.esc(icon)}</span></div>
         <p>${this.esc(title)}</p>
         <p style="font-size: 0.9rem; margin-top: 0.5rem;">${this.esc(detail)}</p>
         <div style="margin-top: 1rem; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
@@ -670,7 +671,7 @@ const CommunityWordbooks = {
           `还没有${this.languageLabel(this.currentFilters.language)}词本`,
           '换个语言看看，或者成为第一个分享者。',
           false,
-          '<button type="button" class="pill-btn" data-community-action="show-all-languages"><span class="msr">translate</span>查看全部语言</button>'
+          '<button type="button" class="pill-btn" data-community-action="show-all-languages"><span class="msr" aria-hidden="true">translate</span>查看全部语言</button>'
         );
         return;
       }
@@ -695,10 +696,10 @@ const CommunityWordbooks = {
           </div>
 
           <div class="wordbook-card-meta">
-            <span><span class="msr">translate</span> ${this.esc(this.languageLabel(language))}</span>
-            <span><span class="msr">person</span> ${this.esc(wb.author_name)}</span>
-            <span><span class="msr">menu_book</span> ${this.toCount(wb.word_count)} 词</span>
-            <span><span class="msr">download</span> ${this.toCount(wb.download_count)} 次下载</span>
+            <span><span class="msr" aria-hidden="true">translate</span> ${this.esc(this.languageLabel(language))}</span>
+            <span><span class="msr" aria-hidden="true">person</span> ${this.esc(wb.author_name)}</span>
+            <span><span class="msr" aria-hidden="true">menu_book</span> ${this.toCount(wb.word_count)} 词</span>
+            <span><span class="msr" aria-hidden="true">download</span> ${this.toCount(wb.download_count)} 次下载</span>
           </div>
 
           ${tagsHtml ? `<div class="wordbook-card-tags">${tagsHtml}</div>` : ''}
@@ -707,10 +708,10 @@ const CommunityWordbooks = {
 
           <div class="wordbook-card-actions">
             <button type="button" class="wordbook-action-btn preview" data-community-action="preview" data-community-id="${this.escAttr(wb.id)}">
-              <span class="msr">visibility</span> 预览
+              <span class="msr" aria-hidden="true">visibility</span> 预览
             </button>
             <button type="button" class="wordbook-action-btn download" data-community-action="download" data-community-id="${this.escAttr(wb.id)}">
-              <span class="msr">download</span> 导入学习
+              <span class="msr" aria-hidden="true">download</span> 导入学习
             </button>
           </div>
         </div>
@@ -839,7 +840,7 @@ const CommunityWordbooks = {
    */
   async downloadWordbook(wordbookId) {
     try {
-      const client = this.getClient();
+      const client = await this.getClient();
       if (!client) {
         alert(this.unavailableMessage());
         return;
@@ -930,7 +931,7 @@ const CommunityWordbooks = {
    */
   async previewWordbook(wordbookId) {
     try {
-      const client = this.getClient();
+      const client = await this.getClient();
       if (!client) {
         alert(this.unavailableMessage());
         return;
@@ -972,11 +973,11 @@ const CommunityWordbooks = {
 
     const metaHtml = `
       <div class="preview-meta">
-        <span><span class="msr">translate</span> ${this.esc(this.languageLabel(languageKey))}</span>
-        <span><span class="msr">person</span> 作者: ${this.esc(wordbook.author_name)}</span>
-        <span><span class="msr">signal_cellular_alt</span> ${this.esc(difficultyInfo.label)}</span>
-        <span><span class="msr">menu_book</span> ${this.toCount(wordbook.word_count)} 词</span>
-        <span><span class="msr">download</span> ${this.toCount(wordbook.download_count)} 次下载</span>
+        <span><span class="msr" aria-hidden="true">translate</span> ${this.esc(this.languageLabel(languageKey))}</span>
+        <span><span class="msr" aria-hidden="true">person</span> 作者: ${this.esc(wordbook.author_name)}</span>
+        <span><span class="msr" aria-hidden="true">signal_cellular_alt</span> ${this.esc(difficultyInfo.label)}</span>
+        <span><span class="msr" aria-hidden="true">menu_book</span> ${this.toCount(wordbook.word_count)} 词</span>
+        <span><span class="msr" aria-hidden="true">download</span> ${this.toCount(wordbook.download_count)} 次下载</span>
       </div>
       ${Array.isArray(wordbook.tags) && wordbook.tags.length > 0 ? `
         <div class="preview-tags">

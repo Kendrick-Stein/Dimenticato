@@ -276,10 +276,10 @@ const VerbCollocations = (() => {
   function applyChrome() {
     const profile = profileFor(state.lang);
     if (dom.navTitle) {
-      dom.navTitle.innerHTML = '<span class="msr">link</span>' + escapeHtml(profile.title);
+      dom.navTitle.innerHTML = '<span class="msr" aria-hidden="true">link</span>' + escapeHtml(profile.title);
     }
     if (dom.backBtn) {
-      dom.backBtn.innerHTML = '<span class="msr">arrow_back</span>返回语法';
+      dom.backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回语法';
     }
     if (dom.searchInput) {
       dom.searchInput.disabled = false;
@@ -631,7 +631,7 @@ const VerbCollocations = (() => {
   function emptyStateHtml({ title, message, icon } = {}) {
     return (
       '<div class="vc-empty-state">' +
-        '<span class="msr vc-empty-state-icon">' + escapeHtml(icon || 'search') + '</span>' +
+        '<span class="msr vc-empty-state-icon" aria-hidden="true">' + escapeHtml(icon || 'search') + '</span>' +
         '<h2>' + escapeHtml(title || '没有可显示的内容') + '</h2>' +
         '<p>' + escapeHtml(message || '') + '</p>' +
       '</div>'

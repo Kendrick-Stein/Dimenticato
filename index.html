@@ -6,6 +6,16 @@
   <title>Dimenticato · 多语种词汇与语法</title>
   <meta name="description" content="Dimenticato — 意大利语 / 德语 / 英语 / 法语的词汇与语法练习。统一的 CEFR 词库，进度全部保存在本地浏览器。">
   <meta name="theme-color" content="#f6f2e8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dimenticato">
+  <meta property="og:title" content="Dimenticato · 多语种词汇与语法">
+  <meta property="og:description" content="意大利语 / 德语 / 英语 / 法语的词汇与语法练习。统一的 CEFR 词库，进度全部保存在本地浏览器。">
+  <meta property="og:url" content="https://kendrick-stein.github.io/Dimenticato/">
+  <meta property="og:image" content="https://kendrick-stein.github.io/Dimenticato/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <script>
     // 主题在首帧之前定下来，避免深色模式闪白
     (function () {
@@ -16,9 +26,10 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
+  <!-- 图标字体只取用到的图标（icon_names 必须按字母序）：整套 ~900KB，子集 ~20KB。
+       新增图标要加进这里，否则会显示成英文字；tests/check-icons.js 会拦住漏加的。 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&amp;icon_names=add,arrow_back,arrow_forward,auto_awesome,auto_stories,backup,bookmark_add,broken_image,calendar_month,cancel,check_circle,chevron_right,cloud_off,dark_mode,delete,download,edit,edit_note,error,explore,extension,groups,help,history,hourglass_empty,insights,ios_share,join_inner,keyboard,light_mode,link,menu,menu_book,monitoring,person,play_arrow,playlist_add,quiz,radio_button_unchecked,refresh,replay,restart_alt,route,school,search,settings,signal_cellular_alt,sports_esports,style,sync_alt,task_alt,translate,travel_explore,upload,upload_file,visibility,volume_up,warning&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-language="italian">
@@ -86,8 +97,8 @@
             <button type="button" data-lang="english" aria-pressed="false" title="英语">EN</button>
             <button type="button" data-lang="french" aria-pressed="false" title="法语">FR</button>
           </div>
-          <button type="button" class="icon-btn" id="themeToggle" aria-label="切换到深色"><span class="msr">dark_mode</span></button>
-          <button type="button" class="icon-btn nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false" aria-controls="topnav"><span class="msr">menu</span></button>
+          <button type="button" class="icon-btn" id="themeToggle" aria-label="切换到深色"><span class="msr" aria-hidden="true">dark_mode</span></button>
+          <button type="button" class="icon-btn nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false" aria-controls="topnav"><span class="msr" aria-hidden="true">menu</span></button>
         </div>
       </div>
     </header>
@@ -110,7 +121,7 @@
       <section id="quizScreen" class="screen" aria-label="选择题">
         <div class="wrap narrow practice">
           <div class="practice-head">
-            <button type="button" class="back-link" data-back><span class="msr">arrow_back</span>结束</button>
+            <button type="button" class="back-link" data-back><span class="msr" aria-hidden="true">arrow_back</span>结束</button>
             <span class="practice-label" id="quizLabel"></span>
             <span class="practice-count num"><span id="quizProgressCurrent">0</span> / <span id="quizProgressTotal">0</span> · <span id="quizAccuracy">0%</span></span>
           </div>
@@ -121,7 +132,7 @@
               <span class="kicker" id="quizPromptLabel">这个词是什么意思？</span>
               <div class="prompt-word-row">
                 <h2 class="prompt-word" id="quizWord"></h2>
-                <button type="button" class="icon-btn speaker" id="quizSpeak" aria-label="朗读 (R)"><span class="msr">volume_up</span></button>
+                <button type="button" class="icon-btn speaker" id="quizSpeak" aria-label="朗读 (R)"><span class="msr" aria-hidden="true">volume_up</span></button>
               </div>
               <p class="prompt-meta num" id="quizMeta"></p>
               <p class="prompt-hint hidden" id="quizHint"></p>
@@ -133,7 +144,7 @@
             </div>
             <div class="practice-actions">
               <button type="button" class="btn" id="quizHintBtn">显示提示</button>
-              <button type="button" class="primary-btn hidden" id="quizNextBtn">下一题<span class="msr">arrow_forward</span></button>
+              <button type="button" class="primary-btn hidden" id="quizNextBtn">下一题<span class="msr" aria-hidden="true">arrow_forward</span></button>
             </div>
             <p class="shortcut-hint">键盘：<kbd>1</kbd>–<kbd>4</kbd> 选择 · <kbd>Enter</kbd> 下一题 · <kbd>R</kbd> 朗读</p>
           </div>
@@ -145,7 +156,7 @@
       <section id="spellScreen" class="screen" aria-label="拼写">
         <div class="wrap narrow practice">
           <div class="practice-head">
-            <button type="button" class="back-link" data-back><span class="msr">arrow_back</span>结束</button>
+            <button type="button" class="back-link" data-back><span class="msr" aria-hidden="true">arrow_back</span>结束</button>
             <span class="practice-label" id="spellLabel"></span>
             <span class="practice-count num"><span id="spellProgressCurrent">0</span> / <span id="spellProgressTotal">0</span> · <span id="spellAccuracy">0%</span></span>
           </div>
@@ -170,8 +181,8 @@
             <div class="practice-actions">
               <button type="button" class="btn" id="spellHintBtn">显示提示</button>
               <button type="button" class="btn" id="spellRevealBtn">不会，看答案</button>
-              <button type="button" class="icon-btn" id="spellSpeakBtn" aria-label="朗读"><span class="msr">volume_up</span></button>
-              <button type="button" class="primary-btn hidden" id="spellNextBtn">下一题<span class="msr">arrow_forward</span></button>
+              <button type="button" class="icon-btn" id="spellSpeakBtn" aria-label="朗读"><span class="msr" aria-hidden="true">volume_up</span></button>
+              <button type="button" class="primary-btn hidden" id="spellNextBtn">下一题<span class="msr" aria-hidden="true">arrow_forward</span></button>
             </div>
             <p class="shortcut-hint"><kbd>Enter</kbd> 提交 / 下一题</p>
           </div>
@@ -202,7 +213,7 @@
 
       <section id="typingGameScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="typingGameBackBtn"><span class="msr">arrow_back</span>返回</button>
+          <button class="back-link" id="typingGameBackBtn"><span class="msr" aria-hidden="true">arrow_back</span>返回</button>
           <div class="eyebrow" id="typingGameEyebrow">Typing Game</div>
           <h1 class="page">激流勇进 · 打字背词</h1>
           <p class="desc" id="typingGameDesc">单词顺流而下，看释义、打字击落！</p>
@@ -222,8 +233,8 @@
               <div id="typingGameOverlay" class="hidden"></div>
             </div>
             <div class="typing-input-row">
-              <span class="msr">keyboard</span>
-              <input type="text" id="typingGameInput" autocomplete="off" autocorrect="off"
+              <span class="msr" aria-hidden="true">keyboard</span>
+              <input type="text" id="typingGameInput" aria-label="输入单词" autocomplete="off" autocorrect="off"
                 autocapitalize="off" spellcheck="false" placeholder="打出上方高亮的单词…（可省略重音）">
             </div>
             <p class="typing-tip">打完整单词自动击落 · 回车提前提交 · 漏到河底的单词会扣一条命</p>
@@ -233,7 +244,7 @@
 
       <section id="cognatePracticeScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="cognateBackBtn"><span class="msr">arrow_back</span>返回词汇</button>
+          <button class="back-link" id="cognateBackBtn"><span class="msr" aria-hidden="true">arrow_back</span>返回词汇</button>
           <div class="eyebrow" id="cognateEyebrow">Italian / Cognates</div>
           <h1 class="page">同源词</h1>
           <p class="desc" id="cognateScreenDesc">和英语长得像的单词，用已有的英语词汇量抄近路。</p>
@@ -243,23 +254,24 @@
 
       <section id="communityBrowseScreen" class="screen community-browse-screen">
         <div class="container">
-          <button class="back-link" onclick="CommunityWordbooks.backToWelcome()"><span class="msr">arrow_back</span>返回</button>
+          <button class="back-link" onclick="CommunityWordbooks.backToWelcome()"><span class="msr" aria-hidden="true">arrow_back</span>返回</button>
           <div class="eyebrow">Community</div>
           <h1 class="page">社区词本</h1>
           <p class="desc">浏览社区分享的词本，预览内容并导入到我的词本。</p>
 
           <div class="browse-controls">
             <div class="search-wrap">
-              <span class="msr">search</span>
+              <span class="msr" aria-hidden="true">search</span>
               <input
                 type="text"
                 class="search-input"
                 id="communitySearchInput"
+                aria-label="搜索社区词本"
                 placeholder="搜索词本名称..."
                 oninput="CommunityWordbooks.searchWordbooks(this.value)"
               >
             </div>
-            <select class="filter-select" onchange="CommunityWordbooks.updateDifficultyFilter(this.value)">
+            <select class="filter-select" aria-label="按难度筛选" onchange="CommunityWordbooks.updateDifficultyFilter(this.value)">
               <option value="all">全部难度</option>
               <option value="Beginner">初级</option>
               <option value="Intermediate">中级</option>
@@ -280,7 +292,7 @@
 
       <section id="conjugationSetupScreen" class="screen">
         <div class="container">
-          <button class="back-link" id="conjugationSetupBackBtn"><span class="msr">arrow_back</span>返回语法</button>
+          <button class="back-link" id="conjugationSetupBackBtn"><span class="msr" aria-hidden="true">arrow_back</span>返回语法</button>
           <div class="eyebrow">Grammar / Verb Conjugation</div>
           <h1 class="page">选择时态与练习方式</h1>
           <p class="desc">按课次选择时态开始练习，或直接查询任意动词的完整变位。</p>
@@ -296,12 +308,12 @@
                 </select>
               </label>
               <div class="conj-lesson-nav">
-                <button class="pill-btn" id="conjPrevLessonBtn"><span class="msr">arrow_back</span>上一课</button>
+                <button class="pill-btn" id="conjPrevLessonBtn"><span class="msr" aria-hidden="true">arrow_back</span>上一课</button>
                 <div class="conj-lesson-status">
                   <span id="conjLessonLabel">第 1 课</span>
                   <span class="hidden" id="conjLessonCompletedBadge">已完成</span>
                 </div>
-                <button class="pill-btn" id="conjNextLessonBtn">下一课<span class="msr">arrow_forward</span></button>
+                <button class="pill-btn" id="conjNextLessonBtn">下一课<span class="msr" aria-hidden="true">arrow_forward</span></button>
               </div>
             </div>
 
@@ -314,7 +326,7 @@
 
           <div class="conj-setup-panel conj-lookup-panel">
             <div class="conjugation-lookup-header">
-              <h3><span class="msr">search</span>变位查询</h3>
+              <h3><span class="msr" aria-hidden="true">search</span>变位查询</h3>
               <p>支持输入动词原形，或输入任意一个变位形式，查看该动词的完整变位。</p>
             </div>
 
@@ -322,12 +334,13 @@
               <input
                 type="text"
                 id="conjLookupInput"
+                aria-label="查询动词变位"
                 class="conj-lookup-input"
                 placeholder="例如：essere / sono / fossi / stato"
                 autocomplete="off"
               >
               <div class="conjugation-lookup-actions">
-                <button class="pill-btn" id="conjLookupSearchBtn"><span class="msr">search</span>查询变位</button>
+                <button class="pill-btn" id="conjLookupSearchBtn"><span class="msr" aria-hidden="true">search</span>查询变位</button>
                 <button class="pill-btn" id="conjLookupClearBtn" type="button">清空</button>
               </div>
             </div>
@@ -341,19 +354,19 @@
 
           <div class="card-grid cols-3" id="conjugationModeButtons">
             <button class="card" id="conjModeMcqBtn">
-              <span class="card-chip"><span class="msr">quiz</span></span>
+              <span class="card-chip"><span class="msr" aria-hidden="true">quiz</span></span>
               <span class="card-title">选择题</span>
               <span class="card-desc">四选一选择正确变位</span>
             </button>
 
             <button class="card" id="conjModeTypingBtn">
-              <span class="card-chip"><span class="msr">keyboard</span></span>
+              <span class="card-chip"><span class="msr" aria-hidden="true">keyboard</span></span>
               <span class="card-title">单空填空</span>
               <span class="card-desc">输入当前题目的正确变位</span>
             </button>
 
             <button class="card" id="conjModeFullBtn">
-              <span class="card-chip"><span class="msr">edit_note</span></span>
+              <span class="card-chip"><span class="msr" aria-hidden="true">edit_note</span></span>
               <span class="card-title">完整填空</span>
               <span class="card-desc">整组人称连续填空训练</span>
             </button>
@@ -363,7 +376,7 @@
 
       <section id="conjugationScreen" class="screen">
         <div class="container narrow">
-          <button class="back-link" id="conjBackBtn"><span class="msr">arrow_back</span>返回</button>
+          <button class="back-link" id="conjBackBtn"><span class="msr" aria-hidden="true">arrow_back</span>返回</button>
 
           <div class="practice-head">
             <span class="idx"><span id="conjCurrent">1</span> / <span id="conjTotal">0</span></span>
@@ -372,8 +385,8 @@
 
           <div class="conj-controls">
             <span id="conjActiveLessonInfo">当前为第 1 课</span>
-            <button class="pill-btn" id="conjRestartBtn"><span class="msr">replay</span>开始/重新开始</button>
-            <button class="pill-btn hidden" id="conjAdvanceLessonBtn">完成本课，下一课<span class="msr">arrow_forward</span></button>
+            <button class="pill-btn" id="conjRestartBtn"><span class="msr" aria-hidden="true">replay</span>开始/重新开始</button>
+            <button class="pill-btn hidden" id="conjAdvanceLessonBtn">完成本课，下一课<span class="msr" aria-hidden="true">arrow_forward</span></button>
           </div>
 
           <div class="practice-card">
@@ -390,6 +403,7 @@
                 type="text"
                 class="spell-input"
                 id="conjInput"
+                aria-label="填写变位"
                 placeholder="例如：parlo"
                 autocomplete="off"
               >
@@ -410,7 +424,7 @@
 
           <div class="practice-feedback hidden" id="conjFeedback">
             <p class="feedback-text"></p>
-            <button class="primary-btn" id="conjNextBtn">下一个 <span class="msr">arrow_forward</span></button>
+            <button class="primary-btn" id="conjNextBtn">下一个 <span class="msr" aria-hidden="true">arrow_forward</span></button>
           </div>
         </div>
       </section>
@@ -419,15 +433,15 @@
         <div class="grammar-book-layout">
           <aside class="grammar-nav-sidebar" id="vcNavSidebar">
             <div class="grammar-nav-header">
-              <button class="grammar-book-back-btn" id="vcBackBtn"><span class="msr">arrow_back</span>返回语法</button>
-              <h3 class="grammar-nav-title"><span class="msr">link</span>动词搭配</h3>
+              <button class="grammar-book-back-btn" id="vcBackBtn"><span class="msr" aria-hidden="true">arrow_back</span>返回语法</button>
+              <h3 class="grammar-nav-title"><span class="msr" aria-hidden="true">link</span>动词搭配</h3>
               <!-- 浏览页里直接能进练习，不用退回上一层 -->
-              <button class="pill-btn" id="vcStartPracticeBtn"><span class="msr">extension</span>开始搭配练习</button>
+              <button class="pill-btn" id="vcStartPracticeBtn"><span class="msr" aria-hidden="true">extension</span>开始搭配练习</button>
             </div>
             <div class="vc-search-panel">
               <label class="vc-search-label" for="vcSearchInput">搜索动词</label>
               <div class="vc-search-input-wrap">
-                <span class="vc-search-icon msr">search</span>
+                <span class="vc-search-icon msr" aria-hidden="true">search</span>
                 <input
                   type="text"
                   class="search-input vc-search-input"
@@ -446,13 +460,13 @@
           <div class="grammar-content-area">
             <div class="grammar-content-header">
               <button class="grammar-sidebar-toggle" id="vcSidebarToggle" title="切换目录">
-                <span class="msr">menu</span>
+                <span class="msr" aria-hidden="true">menu</span>
               </button>
               <span class="grammar-content-breadcrumb" id="vcBreadcrumb">可按介词浏览，也可搜索动词</span>
             </div>
             <div class="grammar-content-body" id="vcContentBody">
               <div class="grammar-welcome">
-                <span class="msr grammar-welcome-icon">link</span>
+                <span class="msr grammar-welcome-icon" aria-hidden="true">link</span>
                 <h2>动词搭配大全</h2>
                 <p>左侧可按介词浏览，也可直接搜索一个动词查看它的全部介词搭配。</p>
               </div>
@@ -463,7 +477,7 @@
 
       <section id="verbCollocationPracticeScreen" class="screen">
         <div class="container narrow">
-          <button class="back-link" id="vcPracticeBackBtn"><span class="msr">arrow_back</span>返回语法</button>
+          <button class="back-link" id="vcPracticeBackBtn"><span class="msr" aria-hidden="true">arrow_back</span>返回语法</button>
 
           <div class="practice-head">
             <span class="idx"><span id="vcPracticeCurrent">1</span> / <span id="vcPracticeTotal">0</span></span>
@@ -497,7 +511,7 @@
 
             <div class="selection-summary-card vc-practice-summary" id="vcPracticeSummary"></div>
 
-            <button class="primary-btn" id="vcPracticeStartBtn"><span class="msr">play_arrow</span>开始练习</button>
+            <button class="primary-btn" id="vcPracticeStartBtn"><span class="msr" aria-hidden="true">play_arrow</span>开始练习</button>
           </div>
 
           <div class="practice-card hidden" id="vcPracticeQuizCard">
@@ -521,7 +535,7 @@
 
           <div class="practice-feedback hidden" id="vcPracticeFeedback">
             <p class="feedback-text"></p>
-            <button class="primary-btn" id="vcPracticeNextBtn">下一题 <span class="msr">arrow_forward</span></button>
+            <button class="primary-btn" id="vcPracticeNextBtn">下一题 <span class="msr" aria-hidden="true">arrow_forward</span></button>
           </div>
         </div>
       </section>
@@ -531,8 +545,8 @@
           <!-- 侧边栏导航 -->
           <aside class="grammar-nav-sidebar" id="grammarNavSidebar">
             <div class="grammar-nav-header">
-              <button class="grammar-book-back-btn" id="grammarBookBackBtn"><span class="msr">arrow_back</span>返回语法</button>
-              <h3 class="grammar-nav-title"><span class="msr">auto_stories</span>语法书</h3>
+              <button class="grammar-book-back-btn" id="grammarBookBackBtn"><span class="msr" aria-hidden="true">arrow_back</span>返回语法</button>
+              <h3 class="grammar-nav-title"><span class="msr" aria-hidden="true">auto_stories</span>语法书</h3>
             </div>
             <div class="grammar-nav-tree" id="grammarNavTree">
               <p class="grammar-nav-loading">加载中...</p>
@@ -543,13 +557,13 @@
           <div class="grammar-content-area">
             <div class="grammar-content-header">
               <button class="grammar-sidebar-toggle" id="grammarSidebarToggle" title="切换目录">
-                <span class="msr">menu</span>
+                <span class="msr" aria-hidden="true">menu</span>
               </button>
               <span class="grammar-content-breadcrumb" id="grammarContentBreadcrumb">选择左侧章节开始阅读</span>
             </div>
             <div class="grammar-content-body" id="grammarContentBody">
               <div class="grammar-welcome">
-                <span class="msr grammar-welcome-icon">auto_stories</span>
+                <span class="msr grammar-welcome-icon" aria-hidden="true">auto_stories</span>
                 <h2>意大利语语法</h2>
                 <p>请从左侧目录选择章节开始阅读</p>
               </div>
@@ -580,9 +594,9 @@
               <div class="panel-title">学习数据</div>
               <p class="muted small">全部进度只保存在这台设备的浏览器里。换设备或清理浏览器之前，先导出一份。</p>
               <div class="btn-row">
-                <button type="button" class="btn" id="settingsExportBtn"><span class="msr">download</span>导出备份</button>
-                <button type="button" class="btn" id="settingsImportBtn"><span class="msr">upload</span>导入备份</button>
-                <button type="button" class="btn danger" id="settingsResetBtn"><span class="msr">restart_alt</span>重置进度</button>
+                <button type="button" class="btn" id="settingsExportBtn"><span class="msr" aria-hidden="true">download</span>导出备份</button>
+                <button type="button" class="btn" id="settingsImportBtn"><span class="msr" aria-hidden="true">upload</span>导入备份</button>
+                <button type="button" class="btn danger" id="settingsResetBtn"><span class="msr" aria-hidden="true">restart_alt</span>重置进度</button>
               </div>
               <input type="file" id="importDataFileInput" accept=".json" hidden>
             </div>
@@ -590,8 +604,8 @@
               <div class="panel-title">社区词书</div>
               <p class="muted small">浏览别人分享的单词本，或把自己的上传到社区。</p>
               <div class="btn-row">
-                <button type="button" class="btn" data-action="community"><span class="msr">groups</span>浏览社区</button>
-                <button type="button" class="btn" data-action="community-upload"><span class="msr">ios_share</span>上传词本</button>
+                <button type="button" class="btn" data-action="community"><span class="msr" aria-hidden="true">groups</span>浏览社区</button>
+                <button type="button" class="btn" data-action="community-upload"><span class="msr" aria-hidden="true">ios_share</span>上传词本</button>
               </div>
             </div>
             <div class="panel">
@@ -603,7 +617,7 @@
                 <dt>弹窗</dt><dd><kbd>Esc</kbd> 关闭</dd>
               </dl>
               <div class="btn-row">
-                <button type="button" class="btn" data-action="help"><span class="msr">help</span>使用说明与数据来源</button>
+                <button type="button" class="btn" data-action="help"><span class="msr" aria-hidden="true">help</span>使用说明与数据来源</button>
               </div>
             </div>
           </div>
@@ -629,19 +643,19 @@
   <div id="wordbookEditorModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="editorTitle">
     <div class="modal-content editor-modal-content">
       <div class="modal-header">
-        <h3 id="editorTitle"><span class="msr">edit</span>编辑单词本：<span id="editorWordbookName"></span></h3>
+        <h3 id="editorTitle"><span class="msr" aria-hidden="true">edit</span>编辑单词本：<span id="editorWordbookName"></span></h3>
         <button type="button" class="close-btn" data-editor="close" aria-label="关闭">×</button>
       </div>
       <div class="modal-body editor-modal-body">
         <div class="editor-toolbar">
           <div class="btn-row">
-            <button type="button" class="editor-toolbar-btn" data-editor="add"><span class="msr">add</span>添加单词</button>
-            <button type="button" class="editor-toolbar-btn" data-editor="batch-import"><span class="msr">playlist_add</span>批量添加</button>
-            <button type="button" class="editor-toolbar-btn" data-editor="export"><span class="msr">ios_share</span>导出</button>
+            <button type="button" class="editor-toolbar-btn" data-editor="add"><span class="msr" aria-hidden="true">add</span>添加单词</button>
+            <button type="button" class="editor-toolbar-btn" data-editor="batch-import"><span class="msr" aria-hidden="true">playlist_add</span>批量添加</button>
+            <button type="button" class="editor-toolbar-btn" data-editor="export"><span class="msr" aria-hidden="true">ios_share</span>导出</button>
           </div>
           <input type="file" id="editorBatchImportInput" accept=".txt" hidden>
           <div class="editor-batch-actions" style="display: none;">
-            <button type="button" class="editor-toolbar-btn danger" data-editor="batch-delete"><span class="msr">delete</span>删除选中</button>
+            <button type="button" class="editor-toolbar-btn danger" data-editor="batch-delete"><span class="msr" aria-hidden="true">delete</span>删除选中</button>
           </div>
         </div>
         <div id="editorWordList" class="editor-word-list"></div>
@@ -687,7 +701,7 @@
   <div id="wordbookSelectDialog" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="wordbookSelectTitle">
     <div class="modal-content" style="max-width: 480px;">
       <div class="modal-header">
-        <h3 id="wordbookSelectTitle"><span class="msr">bookmark_add</span>加入单词本</h3>
+        <h3 id="wordbookSelectTitle"><span class="msr" aria-hidden="true">bookmark_add</span>加入单词本</h3>
         <button type="button" class="close-btn" data-close-modal aria-label="关闭">×</button>
       </div>
       <div class="modal-body">
@@ -699,11 +713,11 @@
 
 
   <!-- 增强统计模态框 -->
-  <div id="enhancedStatsModal" class="modal hidden">
+  <div id="enhancedStatsModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="statsModalTitle">
     <div class="modal-content enhanced-stats-modal">
       <div class="modal-header">
-        <h3><span class="msr">monitoring</span>学习统计</h3>
-        <button class="close-btn" onclick="hideEnhancedStatsModal()">×</button>
+        <h3 id="statsModalTitle"><span class="msr" aria-hidden="true">monitoring</span>学习统计</h3>
+        <button class="close-btn" aria-label="关闭" onclick="hideEnhancedStatsModal()">×</button>
       </div>
       <div class="modal-body enhanced-stats-body">
         <!-- 标签页导航 -->
@@ -722,7 +736,7 @@
         <!-- 概览标签页 -->
         <div id="overviewTab" class="stats-tab-content active">
           <div class="stats-section">
-            <h4><span class="msr">monitoring</span>今日统计</h4>
+            <h4><span class="msr" aria-hidden="true">monitoring</span>今日统计</h4>
             <div class="stats-grid">
               <div class="stat-card">
                 <div class="stat-card-label">学习单词</div>
@@ -740,7 +754,7 @@
           </div>
 
           <div class="stats-section">
-            <h4><span class="msr">check_circle</span>总计统计</h4>
+            <h4><span class="msr" aria-hidden="true">check_circle</span>总计统计</h4>
             <div class="stats-grid">
               <div class="stat-card">
                 <div class="stat-card-label">累计学习单词</div>
@@ -779,7 +793,7 @@
 
         <!-- 历史记录标签页 -->
         <div id="historyTab" class="stats-tab-content">
-          <h4><span class="msr">calendar_month</span>最近 7 天学习记录</h4>
+          <h4><span class="msr" aria-hidden="true">calendar_month</span>最近 7 天学习记录</h4>
           <div class="stats-table-container">
             <table class="stats-table">
               <thead>
@@ -802,11 +816,11 @@
   </div>
 
   <!-- 社区词本上传模态框 -->
-  <div id="communityUploadModal" class="modal hidden">
+  <div id="communityUploadModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="uploadModalTitle">
     <div class="modal-content" style="max-width: 600px;">
       <div class="modal-header">
-        <h3><span class="msr">ios_share</span>上传词本到社区</h3>
-        <button class="close-btn" onclick="CommunityWordbooks.hideUploadDialog()">×</button>
+        <h3 id="uploadModalTitle"><span class="msr" aria-hidden="true">ios_share</span>上传词本到社区</h3>
+        <button class="close-btn" aria-label="关闭" onclick="CommunityWordbooks.hideUploadDialog()">×</button>
       </div>
       <div class="modal-body">
         <form id="communityUploadForm" onsubmit="event.preventDefault(); CommunityWordbooks.uploadWordbook();">
@@ -854,14 +868,14 @@
             <label for="uploadFileInput">选择文件 * (JSON/TXT, 最大5MB)</label>
             <input type="file" id="uploadFileInput" accept=".json,.txt" style="display: none;" onchange="CommunityWordbooks.selectFile()">
             <button type="button" class="form-btn" onclick="document.getElementById('uploadFileInput').click()">
-              <span class="msr">ios_share</span>选择文件
+              <span class="msr" aria-hidden="true">ios_share</span>选择文件
             </button>
             <span id="uploadFileName" style="margin-left: 1rem; color: var(--text-secondary);">未选择文件</span>
           </div>
           
           <div class="form-actions">
             <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hideUploadDialog()">取消</button>
-            <button type="submit" class="form-btn primary" id="uploadWordbookBtn"><span class="msr">ios_share</span>上传到社区</button>
+            <button type="submit" class="form-btn primary" id="uploadWordbookBtn"><span class="msr" aria-hidden="true">ios_share</span>上传到社区</button>
           </div>
         </form>
       </div>
@@ -869,18 +883,18 @@
   </div>
 
   <!-- 社区词本预览模态框 -->
-  <div id="communityPreviewModal" class="modal hidden">
+  <div id="communityPreviewModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="previewModalTitle">
     <div class="modal-content" style="max-width: 700px;">
       <div class="modal-header">
-        <h3><span class="msr">visibility</span>预览: <span id="previewWordbookTitle"></span></h3>
-        <button class="close-btn" onclick="CommunityWordbooks.hidePreviewModal()">×</button>
+        <h3 id="previewModalTitle"><span class="msr" aria-hidden="true">visibility</span>预览: <span id="previewWordbookTitle"></span></h3>
+        <button class="close-btn" aria-label="关闭" onclick="CommunityWordbooks.hidePreviewModal()">×</button>
       </div>
       <div class="modal-body">
         <div id="previewWordbookMeta"></div>
         <div id="previewWordList" class="preview-word-list"></div>
         <div class="form-actions">
           <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hidePreviewModal()">关闭</button>
-          <button type="button" class="form-btn primary" id="previewDownloadBtn"><span class="msr">download</span>导入学习</button>
+          <button type="button" class="form-btn primary" id="previewDownloadBtn"><span class="msr" aria-hidden="true">download</span>导入学习</button>
         </div>
       </div>
     </div>
@@ -890,12 +904,12 @@
   <div id="helpModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
     <div class="modal-content help-modal-content">
       <div class="modal-header">
-        <h3 id="helpTitle"><span class="msr">help</span>使用说明</h3>
+        <h3 id="helpTitle"><span class="msr" aria-hidden="true">help</span>使用说明</h3>
         <button type="button" class="close-btn" data-close-modal aria-label="关闭">×</button>
       </div>
       <div class="modal-body help-modal-body">
         <div class="help-section">
-          <h3><span class="msr">explore</span>怎么用</h3>
+          <h3><span class="msr" aria-hidden="true">explore</span>怎么用</h3>
           <div class="feature-box">
             <ul>
               <li><strong>换语言</strong> — 顶栏右侧 IT / DE / EN / FR。四门语言的页面、练习方式和词库格式完全一样，进度各自独立。</li>
@@ -908,7 +922,7 @@
         </div>
 
         <div class="help-section">
-          <h3><span class="msr">edit_note</span>自定义单词本</h3>
+          <h3><span class="msr" aria-hidden="true">edit_note</span>自定义单词本</h3>
           <div class="feature-box">
             <p>支持导入 JSON（本应用导出的格式）或 TXT。TXT 用记事本就能写：每个词一段，段与段之间空一行。</p>
             <ul>
@@ -931,7 +945,7 @@ acqua</pre>
         </div>
 
         <div class="help-section">
-          <h3><span class="msr">backup</span>学习数据</h3>
+          <h3><span class="msr" aria-hidden="true">backup</span>学习数据</h3>
           <div class="feature-box">
             <ul>
               <li>所有进度保存在浏览器本地（localStorage），不会上传。</li>
@@ -942,9 +956,9 @@ acqua</pre>
         </div>
 
         <div class="help-section">
-          <h3><span class="msr">auto_stories</span>数据来源与致谢</h3>
+          <h3><span class="msr" aria-hidden="true">auto_stories</span>数据来源与致谢</h3>
           <div class="feature-box">
-            <h4><span class="msr">menu_book</span>词汇与释义数据</h4>
+            <h4><span class="msr" aria-hidden="true">menu_book</span>词汇与释义数据</h4>
             <ul>
               <li><strong>释义 · 词性 · 词形</strong> - 法/德/英三语来自 <a href="https://en.wiktionary.org/" target="_blank" rel="noopener">English Wiktionary</a>，经 <a href="https://kaikki.org/" target="_blank" rel="noopener">Wiktextract / kaikki.org</a> 提取，授权协议 <strong>CC&#8209;BY&#8209;SA&nbsp;4.0</strong>（+ GFDL）</li>
               <li><strong>French 词频与变位</strong> - 词频、语料排名与过去分词配合形来自 <a href="http://www.lexique.org/" target="_blank" rel="noopener">Lexique&nbsp;3.83</a>，授权协议 <strong>CC&#8209;BY&#8209;SA&nbsp;4.0</strong></li>
@@ -957,7 +971,7 @@ acqua</pre>
             </ul>
           </div>
           <div class="feature-box">
-            <h4><span class="msr">auto_awesome</span>开源库</h4>
+            <h4><span class="msr" aria-hidden="true">auto_awesome</span>开源库</h4>
             <ul>
               <li>图表统计 - <a href="https://www.chartjs.org/" target="_blank" rel="noopener">Chart.js</a></li>
               <li>Markdown 渲染 - <a href="https://marked.js.org/" target="_blank" rel="noopener">marked.js</a></li>
@@ -1007,7 +1021,7 @@ acqua</pre>
       function note(name) {
         console.warn('[cdn] ' + name + ' 加载失败，已启用降级实现');
       }
-      return {
+      const fallbacks = {
         chart() {
           if (typeof window.Chart !== 'undefined') return;
           note('chart.js');
@@ -1048,26 +1062,55 @@ acqua</pre>
           note('supabase-js');
         }
       };
+      // 三个库都只在对应功能里用到，按需加载，不占首屏：
+      // chart.js -> 统计图表，marked -> 语法书，supabase -> 社区词本。
+      const LIBS = {
+        chart: {
+          global: 'Chart',
+          src: 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js',
+          integrity: 'sha384-e6nUZLBkQ86NJ6TVVKAeSaK8jWa3NhkYWZFomE39AvDbQWeie9PlQqM3pmYW5d1g'
+        },
+        marked: {
+          global: 'marked',
+          src: 'https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js',
+          integrity: 'sha384-odPBjvtXVM/5hOYIr3A1dB+flh0c3wAT3bSesIOqEGmyUA4JoKf/YTWy0XKOYAY7'
+        },
+        // 版本锁定至 2.39.0 防止大版本自动更新
+        supabase: {
+          global: 'supabase',
+          src: 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.0/dist/umd/supabase.min.js',
+          integrity: 'sha384-wgi7s9Y2xefdDru3II6Xb11y/YNoKVbuydTikWejwId9z2xRd8SveCTrJjj/QAnH'
+        }
+      };
+      const pending = {};
+      /** 注入一次；成功失败都 resolve（失败时已装好降级实现），调用方直接 then 着用。 */
+      fallbacks.load = function (name) {
+        const lib = LIBS[name];
+        if (!lib || typeof window[lib.global] !== 'undefined') return Promise.resolve();
+        if (pending[name]) return pending[name];
+        pending[name] = new Promise((resolve) => {
+          const script = document.createElement('script');
+          script.src = lib.src;
+          script.integrity = lib.integrity;
+          script.crossOrigin = 'anonymous';
+          const done = () => {
+            // onload 了但全局没出现（被拦截器静默替换）也要降级
+            if (typeof window[lib.global] === 'undefined') fallbacks[name]();
+            resolve();
+          };
+          script.onload = done;
+          script.onerror = () => {
+            // 失败后允许下次重试（supabase 没有降级实现，重连网络后还能再拉）
+            delete pending[name];
+            done();
+          };
+          document.head.appendChild(script);
+        });
+        return pending[name];
+      };
+      return fallbacks;
     })();
   </script>
-
-  <!-- Chart.js 库 (CDN) -->
-  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"
-          integrity="sha384-e6nUZLBkQ86NJ6TVVKAeSaK8jWa3NhkYWZFomE39AvDbQWeie9PlQqM3pmYW5d1g"
-          crossorigin="anonymous"
-          onerror="window.CdnFallback.chart()"></script>
-
-  <!-- marked.js for Markdown rendering -->
-  <script defer src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"
-          integrity="sha384-odPBjvtXVM/5hOYIr3A1dB+flh0c3wAT3bSesIOqEGmyUA4JoKf/YTWy0XKOYAY7"
-          crossorigin="anonymous"
-          onerror="window.CdnFallback.marked()"></script>
-
-  <!-- Supabase SDK (CDN) — 版本锁定至 2.39.0 防止大版本自动更新 -->
-  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.0/dist/umd/supabase.min.js"
-          integrity="sha384-wgi7s9Y2xefdDru3II6Xb11y/YNoKVbuydTikWejwId9z2xRd8SveCTrJjj/QAnH"
-          crossorigin="anonymous"
-          onerror="window.CdnFallback.supabase()"></script>
 
   <!--
     数据与应用代码不再写死在这里，改由 lib/lang-loader.js 按语言动态注入：

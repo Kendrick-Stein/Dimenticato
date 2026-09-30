@@ -158,12 +158,12 @@ const GrammarBook = (() => {
 
     const navTitle = document.querySelector('#grammarBookScreen .grammar-nav-title');
     if (navTitle) {
-      navTitle.innerHTML = '<span class="msr">auto_stories</span>' + escapeHtml(getTitle());
+      navTitle.innerHTML = '<span class="msr" aria-hidden="true">auto_stories</span>' + escapeHtml(getTitle());
     }
 
     const backBtn = document.getElementById('grammarBookBackBtn');
     if (backBtn) {
-      backBtn.innerHTML = '<span class="msr">arrow_back</span>返回 ' + escapeHtml(profile.backLabel);
+      backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回 ' + escapeHtml(profile.backLabel);
     }
   }
 
@@ -182,7 +182,7 @@ const GrammarBook = (() => {
 
     body.innerHTML = `
       <div class="grammar-welcome">
-        <span class="msr grammar-welcome-icon">auto_stories</span>
+        <span class="msr grammar-welcome-icon" aria-hidden="true">auto_stories</span>
         <h2>${escapeHtml(getTitle())}</h2>
         <p>${escapeHtml(getDescription())}</p>
         ${scale}
@@ -238,7 +238,7 @@ const GrammarBook = (() => {
         const chapterBtn = document.createElement('button');
         chapterBtn.className = 'grammar-chapter-btn' + (expandByDefault ? ' open' : '');
         chapterBtn.innerHTML =
-          '<span class="grammar-chapter-arrow msr">chevron_right</span>' +
+          '<span class="grammar-chapter-arrow msr" aria-hidden="true">chevron_right</span>' +
           '<span class="grammar-chapter-label">' + escapeHtml(ch.title) + '</span>';
 
         const topicList = document.createElement('div');
@@ -316,6 +316,16 @@ const GrammarBook = (() => {
     const text = activeData && activeData.content ? activeData.content[slug] : undefined;
     if (text === undefined) {
       body.innerHTML = '<div class="grammar-error">内容未找到：' + escapeHtml(slug) + '</div>';
+      return;
+    }
+
+    // marked 按需加载（index.html CdnFallback.load）。通常语法数据加载时已一并拉好，
+    // 这里兜底：还没到就先占位，到了再按同一个 slug 重渲染（期间切走了就不管）。
+    if (typeof window.marked === 'undefined' && window.CdnFallback) {
+      body.innerHTML = '<div class="loading-message">加载中...</div>';
+      window.CdnFallback.load('marked').then(() => {
+        if (currentSlug === slug) loadTopic(slug, title, partTitle, chapterTitle);
+      });
       return;
     }
 
@@ -424,7 +434,7 @@ const GrammarBook = (() => {
     const placeholder = document.createElement('span');
     placeholder.className = 'grammar-error grammar-figure-missing';
     placeholder.style.display = 'block';
-    placeholder.innerHTML = '<span class="msr">broken_image</span> 图示缺失：' + escapeHtml(file || '未知文件');
+    placeholder.innerHTML = '<span class="msr" aria-hidden="true">broken_image</span> 图示缺失：' + escapeHtml(file || '未知文件');
     img.parentNode.replaceChild(placeholder, img);
   }
 

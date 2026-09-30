@@ -14,7 +14,7 @@
   --card: #fbf8f1;
   --ink: #1e332a;
   --ink-soft: #52645a;
-  --muted: #6d7a70;
+  --muted: #5a665d; /* 在 paper/paper-deep/card 上都 ≥4.5:1（原 #6d7a70 在 paper-deep 上只有 3.4） */
   --line: #d9d0ba;
   --line-ink: #24382e;
   --red: #8e2f2b;
@@ -110,6 +110,8 @@ kbd {
 }
 
 :focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+/* 切屏时程序聚焦的标题（lib/shell.js focusScreenHeading）只为读屏服务，不画焦点框 */
+h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
 
 .hidden, [hidden] { display: none !important; }
 .num { font-family: var(--mono); font-weight: 500; letter-spacing: -0.02em; }
@@ -245,8 +247,11 @@ kbd {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: none;
   width: 2.5rem;
   height: 2.5rem;
+  /* 固定基准字号：放进大标题（今日一词）时图标不跟着放大溢出按钮 */
+  font-size: 1rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--card);
@@ -531,7 +536,8 @@ textarea {
 }
 textarea { min-height: 7rem; resize: vertical; line-height: 1.5; }
 select { appearance: none; padding-right: 2rem; background-image: linear-gradient(45deg, transparent 50%, var(--ink-soft) 50%), linear-gradient(135deg, var(--ink-soft) 50%, transparent 50%); background-position: calc(100% - 1rem) 55%, calc(100% - 0.7rem) 55%; background-size: 0.3rem 0.3rem; background-repeat: no-repeat; }
-.form-input:focus, input:focus, select:focus, textarea:focus { outline: none; border-color: var(--line-ink); box-shadow: 0 0 0 3px var(--paper-deep); }
+/* 焦点环要和底色有 ≥3:1 对比：原来的 paper-deep 光晕只有 1.2:1，几乎看不见 */
+.form-input:focus, input:focus, select:focus, textarea:focus { outline: 2px solid var(--red); outline-offset: 1px; border-color: var(--line-ink); }
 label { font-size: 0.9rem; }
 .form-row { display: grid; gap: 0.35rem; margin-bottom: 0.9rem; }
 .form-row > span, .form-label { color: var(--ink-soft); font-size: 0.85rem; font-weight: 500; }
@@ -906,8 +912,10 @@ input.spell-input {
 .week-bars { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; height: 10rem; margin-bottom: 0.6rem; }
 .week-bar { display: flex; flex-direction: column; gap: 0.25rem; align-items: center; min-width: 0; }
 .week-value { min-height: 1em; color: var(--muted); font-size: 0.72rem; }
-.week-track { position: relative; display: flex; flex: 1; align-items: flex-end; width: 100%; max-width: 2rem; background: var(--paper-soft); }
+/* 轨道不铺底色：整根浅色轨道在没学习的日子看起来像满格柱子，只留一条基线 */
+.week-track { position: relative; display: flex; flex: 1; align-items: flex-end; width: 100%; max-width: 2rem; border-bottom: 1px solid var(--line); }
 .week-fill { position: relative; display: flex; align-items: flex-end; width: 100%; background: var(--paper-deep); border-top: 2px solid var(--line-ink); }
+.week-bar.is-empty .week-fill { display: none; }
 .week-ok { display: block; width: 100%; background: var(--ink); }
 .week-label { color: var(--muted); font-size: 0.72rem; }
 .level-bars { display: grid; gap: 0.7rem; margin: 0; padding: 0; list-style: none; }
@@ -1380,7 +1388,7 @@ h1.page {
   background: var(--card);
   transition: box-shadow var(--ease), border-color var(--ease);
 }
-.typing-input-row:focus-within { box-shadow: 0 0 0 3px var(--paper-deep); }
+.typing-input-row:focus-within { outline: 2px solid var(--red); outline-offset: 1px; }
 .typing-input-row .msr { color: var(--muted); }
 #typingGameInput {
   flex: 1;
@@ -1394,7 +1402,7 @@ h1.page {
   font-size: 1.25rem;
   font-weight: 500;
 }
-#typingGameInput:focus { box-shadow: none; }
+#typingGameInput:focus { outline: none; box-shadow: none; }
 #typingGameInput::placeholder { color: var(--muted); font-family: var(--sans); font-size: 0.92rem; font-weight: 400; }
 
 @keyframes typing-shake {
