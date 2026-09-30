@@ -1399,6 +1399,8 @@ ${moodRows}
     });
   }
 
+  let lookupConfig = null; // 查词结果属于哪门语言的 config
+
   // Reload data + UI for the current `config` (shared by init / openFor).
   function reloadForActiveConfig() {
     prepareData();
@@ -1408,6 +1410,11 @@ ${moodRows}
     state.started = false;
     const lookupInput = document.getElementById('conjLookupInput');
     if (lookupInput) lookupInput.placeholder = config.lookupPlaceholder || '输入动词原形或变位形式';
+    // 换了语言就清掉上一门语言的查词输入和结果，否则德语页会挂着意大利语的变位表
+    if (lookupConfig !== config) {
+      if (lookupConfig) clearLookupSearch();
+      lookupConfig = config;
+    }
     // #conjInput 的 placeholder 在 index.html 里写死成意大利语示例（例如：parlo），
     // 切到德/英/法时会误导用户；跟着当前语言一起换。
     const typingInput = document.getElementById('conjInput');

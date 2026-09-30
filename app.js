@@ -462,7 +462,7 @@
     var pool = global.Vocab.upToLevel(l, 'B1');
     if (!pool.length) pool = global.Vocab.entries(l);
     if (!pool.length) return null;
-    var day = new Date().toISOString().slice(0, 10) + l;
+    var day = global.localDay() + l;
     var h = 0;
     for (var i = 0; i < day.length; i++) h = (h * 31 + day.charCodeAt(i)) >>> 0;
     return pool[h % pool.length];
@@ -661,6 +661,12 @@
   // ==================== 浏览 ====================
 
   var browse = { q: '', level: 'all', status: 'all', limit: BROWSE_PAGE, list: [] };
+  // 搜索词和筛选是按语言的：切语言时清空，否则德语页会拿意大利语的搜索词过滤
+  function resetBrowse() {
+    browse.q = ''; browse.level = 'all'; browse.status = 'all'; browse.limit = BROWSE_PAGE; browse.list = [];
+    var q = document.getElementById('browseSearch');
+    if (q) q.value = '';
+  }
 
   function renderBrowse() {
     var l = lang();
@@ -780,7 +786,7 @@
           '<div class="week-bars">' + week.map(function (d) {
             var h = d.totalCount / maxDay * 100;
             var ok = d.totalCount ? d.correctCount / d.totalCount * 100 : 0;
-            var date = new Date(d.date + 'T00:00:00');
+            var date = global.parseLocalDay(d.date);
             return '<div class="week-bar" title="' + escAttr(d.date + '：' + d.totalCount + ' 题，答对 ' + d.correctCount) + '">' +
               '<span class="week-value num">' + (d.totalCount || '') + '</span>' +
               '<span class="week-track"><span class="week-fill" style="height:' + h.toFixed(1) + '%"><span class="week-ok" style="height:' + ok.toFixed(1) + '%"></span></span></span>' +
@@ -975,7 +981,9 @@
       });
     };
     if (grammarData(l)) go();
-    else global.LangLoader.ensureModule(l, 'grammar').then(go);
+    else global.LangLoader.ensureModule(l, 'grammar').then(function () {
+      if (lang() === l) go(); // 加载期间切走了语言就不再打开（否则会用旧语言渲染）
+    });
   }
 
   var MODULE_OPENERS = {
@@ -1023,11 +1031,14 @@
     if (changed) {
       Progress.flush();
       session = null;
+      resetBrowse();
       document.body.setAttribute('data-language', key);
       try { localStorage.setItem(LANGUAGE_KEY, key); } catch (e) { /* ignore */ }
       syncLangSwitch();
     }
     return global.LangLoader.ensure(key).then(function () {
+      // 加载期间用户又切到了别的语言：那次 setLanguage 会自己负责渲染
+      if (lang() !== key) return;
       if (opts.skipRoute) return;
       var current = Shell().current() || 'homeScreen';
       var meta = Shell().SCREENS[current] || {};

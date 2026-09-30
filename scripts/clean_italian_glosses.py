@@ -6,7 +6,7 @@
 
   1. token 级重复      "road road" / "China China China" / "丈夫 丈夫"
   2. 短语级对半重复    "High school high school" / "奶油奶油 奶油 奶油"
-  3. 编号义项残留      "acid; acid (2); acid (3)" —— 释义没翻出来，
+  3. 编号义项残留      "acid; acid (2); acid (3)"、"好; (二); (三) 国家" —— 释义没翻出来，
                        只剩带编号的同一释义（运行时 cleanGloss 会删 "(2)"，
                        但删完仍显示 "acid; acid; acid"，得在数据里去重）
 
@@ -40,7 +40,15 @@ import vocab_schema as vs  # noqa: E402
 
 BUILDER = 'scripts/clean_italian_glosses.py'
 
-NUMBERING_TAIL = re.compile(r'\s*[\(（\[]\d{1,3}[\)）\]]\s*$')
+NUMBERING_TAIL = re.compile(r'\s*[\(（\[](?:\d{1,3}|[一二三四五六七八九十]{1,2})[\)）\]]\s*$')
+# 以中文编号开头的义项「(二)」「(三) 国家」：机翻把 "(2)" / "(3) ..." 编号义项译坏的残留，
+# 编号后的文字与词义无关（la / su / molto 都被带出了「国家」），整个义项丢弃。
+# 编号后必须是空白或结尾：「(一)群」「(一)双」是量词说明，是合法释义，不能动。
+NUMBERED_RESIDUE = re.compile(r'^\s*[\(（][一二三四五六七八九十]{1,2}[\)）](?:\s|$)')
+# 残留剥掉后只剩机翻碎片、没有可用中文的词条，手工补释义。
+MANUAL_ZH = {
+    'vermiglio': '朱红色的',   # 原文 "ver; (二)"
+}
 CJK_RANGE = ('\u4e00', '\u9fff')
 
 
@@ -117,6 +125,8 @@ def collapse_cjk_token(token):
 
 def clean_sense(sense):
     """清洗单个义项：剥尾部编号 + 折叠重复 token。返回空串表示整个丢弃。"""
+    if NUMBERED_RESIDUE.match(sense):
+        return ''
     body = NUMBERING_TAIL.sub('', sense.strip()).strip()
     if not body:
         return ''
@@ -153,6 +163,10 @@ def clean_gloss(raw):
 def clean_entries(entries):
     fixed_english = fixed_chinese = 0
     for entry in entries:
+        manual = MANUAL_ZH.get(entry.get('word'))
+        if manual and entry.get('zh') != manual:
+            entry['zh'] = manual
+            fixed_chinese += 1
         for field in ('en', 'zh'):
             new_value, changed = clean_gloss(entry.get(field))
             if changed:

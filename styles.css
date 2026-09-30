@@ -1007,7 +1007,7 @@ p.small { margin-top: 0.6rem; }
 
 @media (max-width: 600px) {
   .wrap { padding-top: 1.4rem; }
-  .brand-name { display: none; }
+  .topbar .brand-name { display: none; }
   .lang-switch button { min-width: 2.3rem; padding: 0 0.4rem; }
   .stat-strip { grid-template-columns: repeat(2, 1fr); }
   .stat:nth-child(odd) { border-left: 0; }

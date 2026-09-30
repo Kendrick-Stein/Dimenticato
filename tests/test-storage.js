@@ -144,7 +144,15 @@ group('合并导入保留本地进度', function () {
 
   const merged = JSON.parse(ls.getItem('dimenticato_mastered'));
   assertEqual(merged.length, 2, '已掌握单词取并集');
-  assertEqual(JSON.parse(ls.getItem('dimenticato_stats')).mcAttempts, 5, '计数器累加');
+  assertEqual(JSON.parse(ls.getItem('dimenticato_stats')).mcAttempts, 3, '计数器取较大值');
+
+  // 同一份备份再合并一次：结果不变（幂等），计数不能翻倍
+  const again = { version: '2.0', keys: { dimenticato_stats: ls.getItem('dimenticato_stats') } };
+  DimStorage.importAll(again, { mode: 'merge' });
+  DimStorage.importAll(again, { mode: 'merge' });
+  const stats = JSON.parse(ls.getItem('dimenticato_stats'));
+  assertEqual(stats.mcAttempts, 3, '重复合并不翻倍');
+  assertEqual(stats.mcCorrect, 2, '重复合并不翻倍（答对数）');
   assertEqual(JSON.parse(ls.getItem('dimenticato_custom_wordbooks')).length, 2, '保留双方的单词本');
   assertEqual(ls.getItem('not_ours'), null, '只导入 dimenticato_ 前缀的键');
 });

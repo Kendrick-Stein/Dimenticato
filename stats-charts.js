@@ -52,7 +52,7 @@ const ChartsManager = {
 
     // 准备数据
     const labels = stats.map(s => {
-      const date = new Date(s.date);
+      const date = parseLocalDay(s.date);
       return `${date.getMonth() + 1}/${date.getDate()}`;
     });
 
@@ -159,7 +159,7 @@ const ChartsManager = {
     const tokens = this.getTokens();
 
     const labels = stats.map(s => {
-      const date = new Date(s.date);
+      const date = parseLocalDay(s.date);
       return `${date.getMonth() + 1}/${date.getDate()}`;
     });
 

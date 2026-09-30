@@ -352,12 +352,13 @@ const CommunityWordbooks = {
       const randomStr = Math.random().toString(36).substring(7);
       const fileName = `${timestamp}_${randomStr}_${file.name}`;
 
-      const { data: uploadData, error: uploadError } = await client.storage
+      // 上传 / 插入同样套超时：网络挂住时按钮不能永远停在「上传中」
+      const { data: uploadData, error: uploadError } = await this.withTimeout(client.storage
         .from(bucketName)
         .upload(fileName, file, {
           cacheControl: '3600',
           upsert: false
-        });
+        }), 60000);
 
       if (uploadError) {
         console.error('文件上传失败:', uploadError);
@@ -375,7 +376,7 @@ const CommunityWordbooks = {
       const fileUrl = urlData.publicUrl;
 
       // 5. 保存元数据到数据库
-      const { data: insertData, error: insertError } = await client
+      const { data: insertData, error: insertError } = await this.withTimeout(client
         .from('community_wordbooks')
         .insert({
           name: name,
@@ -388,7 +389,7 @@ const CommunityWordbooks = {
           download_count: 0,
           file_url: fileUrl
         })
-        .select();
+        .select());
 
       if (insertError) {
         console.error('数据库插入失败:', insertError);
@@ -541,8 +542,13 @@ const CommunityWordbooks = {
       return;
     }
 
+    // 请求令牌：切语言/重试时旧请求可能晚到，只认最后一次发起的
+    const token = this.listRequestToken = (this.listRequestToken || 0) + 1;
+    const stale = () => token !== this.listRequestToken;
+
     try {
       const { data, error } = await this.runListQuery(client);
+      if (stale()) return;
 
       if (error) {
         console.error('获取词本列表失败:', error);
@@ -554,6 +560,7 @@ const CommunityWordbooks = {
       this.renderWordbookList(this.filterByLanguage(this.allWordbooks));
 
     } catch (error) {
+      if (stale()) return;
       console.error('获取词本列表失败:', error);
       this.renderStatus('error', '加载失败', (error && error.message) || '无法连接社区服务器。', true);
     }

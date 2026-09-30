@@ -95,6 +95,10 @@ function checkGlossBasics(e, where, err) {
   if (PLACEHOLDER.test(e.zh.trim())) err(`${where}: placeholder zh`);
   else if (!CJK.test(e.zh)) noCjk = true;
   if (e.en && e.en === e.zh && !noCjk) err(`${where}: en identical to zh`);
+  // 机翻编号残留「(二)」「(三) 国家」：见 scripts/clean_italian_glosses.py NUMBERED_RESIDUE
+  if (e.zh.split(/[;；]\s*/).some((s) => /^\s*[(（][一二三四五六七八九十]{1,2}[)）](?:\s|$)/.test(s))) {
+    err(`${where}: numbered-sense residue in zh ${JSON.stringify(e.zh.slice(0, 40))}`);
+  }
   [e.word, e.display, e.zh, e.en, ...(e.zhAlt || [])].forEach((v) => {
     if (typeof v === 'string' && MOJIBAKE.test(v)) err(`${where}: mojibake ${JSON.stringify(v.slice(0, 40))}`);
   });
