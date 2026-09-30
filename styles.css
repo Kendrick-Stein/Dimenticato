@@ -927,11 +927,16 @@ dl.kv dd { margin: 0; text-align: right; }
 
 .settings-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
 }
+/* 四张卡片固定两列：auto-fit 在宽屏排成 3+1，第二行只剩一张孤卡 */
+@media (min-width: 48rem) { .settings-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .settings-grid .panel + .panel { margin-top: 0; }
+/* 说明文字 / 快捷键表和下面的按钮行之间留出间距 */
+.settings-grid .panel > p.small,
+.settings-grid .panel > dl.kv { margin-bottom: 1rem; }
 .btn.danger { border-color: var(--red); color: var(--red); }
 @media (hover: hover) { .btn.danger:hover { background: var(--red-soft); } }
 .small { font-size: 0.84rem; }
