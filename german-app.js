@@ -1419,6 +1419,7 @@
       if (!this.currentWord) return;
       const input = document.getElementById('germanSpInput');
       const checkBtn = document.getElementById('germanSpCheckBtn');
+      if (!input || input.disabled || (checkBtn && checkBtn.disabled)) return;
       const userAnswer = input ? input.value.trim() : '';
 
       const forms = [this.currentWord.german, this.currentWord.display].filter(Boolean);
@@ -2322,6 +2323,7 @@
       const g = this._germanApp;
       const input = document.getElementById('englishSpInput');
       const checkBtn = document.getElementById('englishSpCheckBtn');
+      if (!input || input.disabled || (checkBtn && checkBtn.disabled)) return;
       const userAnswer = input ? input.value.trim().toLowerCase().replace(/\s+/g, ' ') : '';
       const correct = (this.currentWord.english || '').trim().toLowerCase().replace(/\s+/g, ' ');
       const isCorrect = userAnswer === correct;

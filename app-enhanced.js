@@ -342,9 +342,6 @@ const StatsManager = {
     this.saveDailyStats(allStats, language);
   },
 
-  // 同一次作答被两处代码同时上报时去重（各语言模块可能自己也接了埋点）
-  _lastRecord: null,
-
   /**
    * 记录一次学习活动。
    *   新签名：recordActivity(lang, { correct, total, durationMs, words, review })
@@ -386,15 +383,8 @@ const StatsManager = {
       reviewCount = legacyIsReview ? 1 : 0;
     }
 
-    // 去重：同一语言、同一批次、同样的词，100ms 内只记一次
-    const signature = `${language}|${correct}|${total}|${words.join(',')}`;
-    const now = Date.now();
-    if (this._lastRecord
-      && this._lastRecord.signature === signature
-      && now - this._lastRecord.at < 100) {
-      return this._lastRecord.stats;
-    }
-
+    // 每个作答只由一个记录点负责。不能按 100ms/相同词启发式去重：
+    // 快速连续的独立题目也可能有相同答案；重复提交由题目控件的 disabled 守卫拦截。
     const todayStats = this.getTodayStats(language);
     words.forEach(word => {
       const key = typeof word === 'string'
@@ -408,7 +398,6 @@ const StatsManager = {
     if (durationMs > 0) todayStats.duration += Math.round(durationMs / 1000);
 
     this._persistToday(language, todayStats);
-    this._lastRecord = { signature, at: now, stats: todayStats };
     return todayStats;
   },
 
@@ -1394,7 +1383,7 @@ const QuizIntegration = {
     const attemptField = mode === 'mc' ? 'mcAttempts' : 'spAttempts';
 
     target[methodName] = function () {
-      const startedAt = this.questionStartTime || self._questionStartedAt || null;
+      const startedAt = this._questionStartedAt || this.questionStartTime || self._questionStartedAt || null;
       const word = self.currentWordFor(lang);
       const counters = self.counterHolder(lang) || {};
       const beforeCorrect = counters[correctField] || 0;

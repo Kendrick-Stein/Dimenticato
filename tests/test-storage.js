@@ -58,7 +58,7 @@ win.document.body.innerHTML =
   '<span id="totalWords"></span><span id="masteredWords"></span>' +
   '<span id="progressPercent"></span><div id="wordbookCards"></div>';
 
-['lib/utils.js', 'lib/word-similarity.js', 'lib/quiz-engine.js', 'app.js'].forEach(function (file) {
+['lib/utils.js', 'lib/word-similarity.js', 'lib/quiz-engine.js', 'app.js', 'app-enhanced.js'].forEach(function (file) {
   const abs = path.join(ROOT, file);
   vm.runInContext(fs.readFileSync(abs, 'utf8'), context, { filename: abs });
 });
@@ -95,12 +95,12 @@ group('跨模块契约', function () {
       assert(win.DimStorage[k] !== undefined, 'DimStorage.' + k + ' 存在');
     });
   }
-  knownIssue(!!(win.StatsManager && typeof win.StatsManager.recordActivity === 'function'),
+  assert(!!(win.StatsManager && typeof win.StatsManager.recordActivity === 'function'),
     'window.StatsManager.recordActivity 应该存在', 's1-core-storage-srs');
   knownIssue(!!(win.HeaderStats && typeof win.HeaderStats.set === 'function'),
     'window.HeaderStats.set 应该存在', 's1-core-storage-srs');
   // 见 audit: app.js 在解析期测 `typeof SpacedRepetition`，而它是后加载脚本的 const
-  knownIssue(!!win.SpacedRepetition, 'window.SpacedRepetition 应该存在（否则 SRS 集成是死代码）', 's1-core-storage-srs');
+  assert(!!win.SpacedRepetition, 'window.SpacedRepetition 应该存在（否则 SRS 集成是死代码）', 's1-core-storage-srs');
 });
 
 // ===== save / load 往返 =====
