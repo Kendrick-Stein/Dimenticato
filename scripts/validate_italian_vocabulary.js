@@ -125,6 +125,7 @@ function main() {
   });
 
   if (headwordIssues) problems.push(`${headwordIssues} 条词条缺 italian 词头`);
+  checkTags(entries, problems);
   if (repetitionIssues) {
     problems.push(`${repetitionIssues} 条释义仍有机器翻译退化重复：`);
     repetitionSamples.forEach((s) => problems.push('  ' + s));
@@ -144,7 +145,76 @@ function main() {
 }
 
 function passedCount() {
-  return 2; // 结构加载 + 全量重复扫描
+  return 3 + TAG_GOLD.length; // 结构加载 + 全量重复扫描 + 标注结构 + 金标
+}
+
+// ---- partOfSpeech / gender / level（scripts/build_italian_vocabulary_tags.py）
+const POS = new Set(['noun', 'verb', 'adjective', 'adverb', 'pronoun', 'determiner',
+  'article', 'preposition', 'conjunction', 'numeral', 'interjection', 'properNoun',
+  'prefix', 'suffix', 'phrase']);
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+const GENDERS = new Set(['m', 'f', 'm/f']);
+// 已知答案：词性（及名词的性）必须命中，防止启发式回退到旧 dictionary 字段的错标
+const TAG_GOLD = [
+  ['e', 'conjunction'], ['di', 'preposition'], ['la', 'article'], ['una', 'article'],
+  ['io', 'pronoun'], ['mi', 'pronoun'], ['sei', 'numeral'], ['era', 'verb'],
+  ['fare', 'verb'], ['essere', 'verb'], ['credo', 'verb'], ['dire', 'verb'],
+  ['sempre', 'adverb'], ['vero', 'adjective'], ['Felice', 'adjective'],
+  ['casa', 'noun', 'f'], ['problema', 'noun', 'm'], ['mano', 'noun', 'f'],
+  ['tempo', 'noun', 'm'], ['vita', 'noun', 'f'], ['cantante', 'noun', 'm/f'],
+];
+
+function checkTags(entries, problems) {
+  let bad = 0;
+  const samples = [];
+  const flag = (msg) => { bad++; if (samples.length < 10) samples.push(msg); };
+  let withPos = 0;
+  let rankedNouns = 0;
+  let rankedNounsWithGender = 0;
+  let previousBand = 0;
+  const byRank = entries.filter((e) => e.levelSource === 'freq-band')
+    .sort((a, b) => a.rank - b.rank);
+  for (const e of entries) {
+    if (e.partOfSpeech != null) {
+      withPos++;
+      if (!POS.has(e.partOfSpeech)) flag(`${e.italian}: 未知 partOfSpeech ${e.partOfSpeech}`);
+    }
+    if (e.gender != null) {
+      if (e.partOfSpeech !== 'noun') flag(`${e.italian}: 非名词却有 gender`);
+      if (!GENDERS.has(e.gender)) flag(`${e.italian}: gender 取值 ${e.gender}`);
+    }
+    if (!LEVELS.includes(e.level)) flag(`${e.italian}: level 取值 ${e.level}`);
+    const expectSource = e.frequency ? 'freq-band' : 'unranked';
+    if (e.levelSource !== expectSource) flag(`${e.italian}: levelSource ${e.levelSource}`);
+    if (e.levelSource === 'unranked' && e.level !== 'C2') flag(`${e.italian}: 无词频却不是 C2`);
+    if (e.partOfSpeech === 'noun' && e.frequency) {
+      rankedNouns++;
+      if (e.gender) rankedNounsWithGender++;
+    }
+  }
+  // 等级随词频单调：排名靠前的词不会比靠后的更难
+  for (const e of byRank) {
+    const band = LEVELS.indexOf(e.level);
+    if (band < previousBand) { flag(`${e.italian}: level 与词频排名不单调`); break; }
+    previousBand = band;
+  }
+  if (withPos / entries.length < 0.995) {
+    flag(`partOfSpeech 覆盖率 ${(100 * withPos / entries.length).toFixed(1)}% < 99.5%`);
+  }
+  if (rankedNouns && rankedNounsWithGender / rankedNouns < 0.9) {
+    flag(`有词频的名词 gender 覆盖率 ${(100 * rankedNounsWithGender / rankedNouns).toFixed(1)}% < 90%`);
+  }
+  const byWord = new Map(entries.map((e) => [e.italian, e]));
+  for (const [word, pos, gender] of TAG_GOLD) {
+    const e = byWord.get(word);
+    if (!e) { flag(`金标词 ${word} 不在词表中`); continue; }
+    if (e.partOfSpeech !== pos) flag(`金标 ${word}: partOfSpeech ${e.partOfSpeech}，应为 ${pos}`);
+    if (gender && e.gender !== gender) flag(`金标 ${word}: gender ${e.gender}，应为 ${gender}`);
+  }
+  if (bad) {
+    problems.push(`${bad} 处词性/性/等级标注问题：`);
+    samples.forEach((s) => problems.push('  ' + s));
+  }
 }
 
 main();

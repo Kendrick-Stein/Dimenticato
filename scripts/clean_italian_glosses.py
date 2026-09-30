@@ -171,7 +171,9 @@ def load_vocabulary_js(path):
 
 
 def save_vocabulary_js(path, entries, head, tail):
-    body = json.dumps(entries, ensure_ascii=False, indent=2)
+    # one entry per line, same layout as scripts/build_italian_vocabulary_tags.py
+    body = '[\n' + ',\n'.join(json.dumps(e, ensure_ascii=False, separators=(',', ':'))
+                               for e in entries) + '\n]'
     path.write_text(f'{head}{body}{tail}', encoding='utf-8')
 
 

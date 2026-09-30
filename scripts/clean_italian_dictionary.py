@@ -107,7 +107,9 @@ def main() -> None:
     # Reproduce the original file layout: header/const prefix, the array
     # serialized with 2-space indent (matching the source), and the original
     # trailing text (the ';' and any newline).
-    payload = json.dumps(arr, ensure_ascii=False, indent=2)
+    # one entry per line, same layout as scripts/build_italian_vocabulary_tags.py
+    payload = '[\n' + ',\n'.join(json.dumps(e, ensure_ascii=False, separators=(',', ':'))
+                                  for e in arr) + '\n]'
     TARGET.write_text(prefix + payload + suffix, encoding="utf-8")
     print(f"Wrote {TARGET}")
 
