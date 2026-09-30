@@ -4,7 +4,7 @@
  * 数据源按语言解析：
  *   italian → VERB_COLLOCATIONS_DATA        (data/verb-collocations-data.js)
  *   german  → GERMAN_VERB_COLLOCATIONS_DATA
- *   english → ENGLISH_VERB_COLLOCATIONS_DATA
+ *   english → ENGLISH_VERB_COLLOCATIONS_DATA (data/english-collocations-data.js)
  *   french  → FRENCH_VERB_COLLOCATIONS_DATA
  *
  * 数据形状（德语额外支持 case 标记）：
@@ -15,9 +15,10 @@
  *              } } },
  *     prepositions: { prep: [verbSlug, ...] } }              // 可选，缺省时自动倒排
  *
- * 意大利语 / 德语 / 法语已有数据；英语数据尚未落盘，进入本屏时显示明确的
- * 空状态，而不是让功能悄无声息地不存在。数据一旦落盘（后续 workflow），
- * 无需改动本文件即可生效。
+ * 四种语言都有数据（按模块懒加载，见 lib/lang-loader.js MODULES.collocations）。
+ * 英语的 prep 键除介词外还包括短语动词小品词（up / out / off …）和多词序列
+ * （up with），meta.keyKinds 标明是介词还是小品词；渲染器无需区分。
+ * 某语言数据缺席时进入本屏显示明确的空状态，而不是让功能悄无声息地不存在。
  */
 const VerbCollocations = (() => {
   const LANGUAGES = ['italian', 'german', 'english', 'french'];
@@ -726,13 +727,26 @@ window.VerbCollocations = VerbCollocations;
     empty: '该语言暂无动词搭配数据（建设中）',
   };
 
+  /**
+   * 搭配数据按模块懒加载：进语法中心时通常还没拉。只要 LangLoader 登记了该语言的
+   * 搭配数据文件，入口就按「可用」渲染——点进去时查阅器 / 练习器会自己 ensureModule。
+   * 已尝试加载却仍然没有数据（文件缺失）时才回落到「建设中」。
+   */
+  function collocationsAvailable(lang) {
+    if (VerbCollocations.hasDataset(lang)) return true;
+    const loader = window.LangLoader;
+    const files = loader && loader.MODULES && loader.MODULES.collocations && loader.MODULES.collocations[lang];
+    if (!files || !files.length) return false;
+    return !(typeof loader.isModuleLoaded === 'function' && loader.isModuleLoaded(lang, 'collocations'));
+  }
+
   function installLanguageHubCards() {
     ['german', 'english', 'french'].forEach(lang => {
       const profile = VerbCollocations.profileFor(lang);
       const grid = document.querySelector(profile.hubSelector);
       if (!grid) return;
 
-      const ready = VerbCollocations.hasDataset(lang);
+      const ready = collocationsAvailable(lang);
 
       let browseBtn = grid.querySelector(`[data-vc-lang="${lang}"]:not([data-vc-mode])`);
       if (browseBtn) {
@@ -811,7 +825,10 @@ window.VerbCollocations = VerbCollocations;
   // 订阅 LangLoader 的 'done' 事件，任一语言数据就位后就地升级入口卡片。
   if (window.LangLoader && typeof window.LangLoader.on === 'function') {
     window.LangLoader.on((type, detail) => {
-      if (type === 'done' && detail && detail.lang) installLanguageHubCards();
+      if (!detail || !detail.lang) return;
+      if (type === 'done' || (type === 'module:done' && detail.module === 'collocations')) {
+        installLanguageHubCards();
+      }
     });
   }
 })();
