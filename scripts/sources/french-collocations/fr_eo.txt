@@ -1,0 +1,799 @@
+# French verb collocations, letters e-o (verb initial ignoring se/s')
+# ---- NEW verbs ----
+C|s'emparer|de|s'emparer de qqch|夺取；抓住
+E|s'emparer|de|Le voleur s'est emparé du sac et a disparu dans la foule.|小偷抢走了包，消失在人群中。
+E|s'emparer|de|Les rebelles se sont emparés de la capitale en une nuit.|叛军一夜之间占领了首都。
+E|s'emparer|de|Une grande tristesse s'empara d'elle quand elle relut la lettre.|她重读那封信时，一阵巨大的悲伤涌上心头。
+C|emprunter|à|emprunter qqch à qqn|向某人借某物
+E|emprunter|à|J'ai emprunté cinquante euros à mon frère.|我向哥哥借了五十欧元。
+E|emprunter|à|Tu peux emprunter un parapluie à la réception.|你可以在前台借一把伞。
+E|emprunter|à|Le français a emprunté beaucoup de mots à l'anglais.|法语从英语中借用了很多词。
+C|enlever|à|enlever qqch à qqn|从某人那里拿走某物；夺走
+E|enlever|à|La maîtresse a enlevé son téléphone à l'élève pendant le cours.|老师在课上没收了那个学生的手机。
+E|enlever|à|Cette mauvaise nouvelle a enlevé à tout le monde l'envie de sortir.|这个坏消息让大家都没了出门的兴致。
+C|enlever|de|enlever qqch de qqch|从某处拿掉某物
+E|enlever|de|Enlève tes pieds de la table, s'il te plaît.|请把你的脚从桌子上拿下来。
+E|enlever|de|Il faut enlever cette tache de ta chemise avant qu'elle sèche.|得趁这块污渍没干，把它从你的衬衫上弄掉。
+N|enlever|à|enlever qqch à qqn = 从某人手里拿走（à 引出失去东西的人）；enlever qqch de qqch = 从某处移开（de 引出地点）
+N|enlever|de|enlever qqch de qqch = 从某处拿掉；enlever qqch à qqn = 从某人那里夺走
+C|s'ennuyer|de|s'ennuyer de qqn/qqch|想念某人（某物）
+E|s'ennuyer|de|Depuis qu'il vit à Montréal, il s'ennuie de sa famille.|自从住在蒙特利尔，他一直很想念家人。
+E|s'ennuyer|de|Tu ne t'ennuies pas de ton ancien quartier ?|你不想念你以前住的街区吗？
+C|s'entraîner|à|s'entraîner à qqch / à faire qqch|练习（做某事）
+E|s'entraîner|à|Elle s'entraîne à parler en public devant son miroir.|她对着镜子练习当众讲话。
+E|s'entraîner|à|Les enfants se sont entraînés au saut en longueur tout l'après-midi.|孩子们整个下午都在练跳远。
+E|s'entraîner|à|Entraîne-toi à taper sans regarder le clavier.|练习不看键盘打字吧。
+C|s'entraîner|pour|s'entraîner pour qqch|为某事（比赛等）进行训练
+E|s'entraîner|pour|Il s'entraîne tous les matins pour le marathon de Paris.|他每天早上为巴黎马拉松进行训练。
+E|s'entraîner|pour|L'équipe s'entraînera deux fois par jour pour la finale.|为了决赛，球队将每天训练两次。
+N|s'entraîner|à|s'entraîner à + 技能／动词 = 练习某项本领；s'entraîner pour + 目标（比赛、考试）= 为某个目标而训练
+N|s'entraîner|pour|s'entraîner pour = 为（比赛等）备战；s'entraîner à = 练习某种技能
+C|entraîner|dans|entraîner qqn dans qqch|把某人卷入某事
+E|entraîner|dans|Ne m'entraîne pas dans tes histoires !|别把我卷进你的事情里！
+E|entraîner|dans|Ses mauvais amis l'ont entraîné dans une affaire de vol.|他那帮坏朋友把他拖进了一起盗窃案。
+C|entraîner|à|entraîner qqn à qqch / à faire qqch|训练某人做某事
+E|entraîner|à|Ce coach entraîne les jeunes à garder leur calme sous la pression.|这位教练训练年轻人在压力下保持冷静。
+E|entraîner|à|On entraîne les chiens policiers à détecter la drogue.|警犬受过专门训练，能嗅出毒品。
+N|entraîner|dans|entraîner qqn dans qqch = 把某人拖入（麻烦、事件）；entraîner qqn à faire qqch = 训练某人做某事
+N|entraîner|à|entraîner qqn à = 训练；entraîner qqn dans = 卷入、拖进
+C|imposer|à|imposer qqch à qqn|把某事强加给某人
+E|imposer|à|Le directeur a imposé de nouveaux horaires à tout le personnel.|经理给全体员工强行规定了新的作息时间。
+E|imposer|à|Je ne veux pas imposer mes idées à mes enfants.|我不想把自己的想法强加给孩子们。
+E|imposer|à|Ce régime impose aux malades de manger sans sel.|这种饮食要求病人吃无盐食物。
+C|interroger|sur|interroger qqn sur qqch|就某事询问某人
+E|interroger|sur|La police l'a interrogé sur son emploi du temps de la veille.|警察询问了他前一天的行踪。
+E|interroger|sur|Le professeur nous interrogera sur le chapitre trois.|老师会考问我们第三章的内容。
+C|s'interroger|sur|s'interroger sur qqch|对某事感到疑惑；思考
+E|s'interroger|sur|Beaucoup de gens s'interrogent sur l'avenir de leur métier.|许多人对自己职业的前途感到疑惑。
+E|s'interroger|sur|Je m'interroge sur ses vraies intentions.|我在琢磨他的真实意图。
+C|libérer|de|libérer qqn de qqch|使某人摆脱某事
+E|libérer|de|Ce nouveau logiciel nous libère des tâches répétitives.|这个新软件把我们从重复性工作中解放了出来。
+E|libérer|de|Les pompiers ont libéré le conducteur de sa voiture écrasée.|消防员把司机从压扁的车里救了出来。
+E|libérer|de|Après l'examen, je me suis senti libéré d'un grand poids.|考完试后，我感到如释重负。
+C|fournir|à|fournir qqch à qqn|向某人提供某物
+E|fournir|à|L'école fournit les livres à tous les élèves.|学校为所有学生提供课本。
+E|fournir|à|Il faudra fournir une photo d'identité à l'administration.|需要向行政部门提交一张证件照。
+C|fournir|en|fournir qqn en qqch|向某人供应某物
+E|fournir|en|Cette ferme fournit tout le village en lait frais.|这家农场为全村供应新鲜牛奶。
+E|fournir|en|Une entreprise chinoise fournit l'usine en pièces détachées.|一家中国企业为这家工厂供应零部件。
+N|fournir|à|fournir qqch à qqn：直接宾语是物品，à 引出接受者；fournir qqn en qqch：直接宾语是接受者，en 引出物品（多指长期供货）
+N|fournir|en|fournir qqn en qqch = 为某人供应某物；fournir qqch à qqn = 把某物提供给某人
+C|louer|à|louer qqch à qqn|把某物租给某人
+E|louer|à|Ils louent leur appartement à des étudiants.|他们把公寓租给学生。
+E|louer|à|Mon oncle loue une chambre à un jeune couple.|我叔叔把一个房间租给了一对年轻夫妇。
+C|louer|pour|louer qqn pour qqch|因某事称赞某人
+E|louer|pour|Tout le monde a loué l'infirmière pour son dévouement.|大家都称赞这位护士的敬业精神。
+E|louer|pour|Le critique loue le réalisateur pour son audace.|评论家称赞导演的大胆。
+N|louer|à|louer qqch à qqn = 把东西租给某人（出租）；louer qqn pour qqch = 因某事称赞某人（louer 另一义）
+N|louer|pour|louer qqn pour qqch = 赞扬某人；louer qqch à qqn = 出租
+C|montrer|à|montrer qqch à qqn|给某人看某物
+E|montrer|à|Montre tes photos de vacances à ta grand-mère.|把你的假期照片给奶奶看看。
+E|montrer|à|Le guide a montré aux touristes le chemin du musée.|导游给游客们指了去博物馆的路。
+E|montrer|à|Elle a montré à son fils comment faire un nœud de cravate.|她教儿子怎么打领带。
+C|murmurer|à|murmurer qqch à qqn|对某人低声说某事
+E|murmurer|à|Il a murmuré quelque chose à l'oreille de sa voisine.|他在邻座女士耳边低声说了什么。
+E|murmurer|à|Elle murmura à son bébé une vieille chanson.|她轻声给宝宝哼了一首老歌。
+C|s'énerver|contre|s'énerver contre qqn/qqch|对某人（某事）发火
+E|s'énerver|contre|Ne t'énerve pas contre moi, ce n'est pas ma faute !|别冲我发火，这不是我的错！
+E|s'énerver|contre|Il s'énerve toujours contre son ordinateur quand il plante.|电脑一死机，他总是冲它发脾气。
+E|s'énerver|contre|Les voyageurs se sont énervés contre le retard du train.|乘客们因为火车晚点而恼火。
+C|foncer|sur|foncer sur qqn/qqch|向某人（某物）猛冲
+E|foncer|sur|Le taureau a foncé sur le torero.|公牛朝斗牛士猛冲过去。
+E|foncer|sur|Dès qu'il a vu le buffet, il a foncé sur les desserts.|他一看到自助餐，就直奔甜点而去。
+C|foncer|vers|foncer vers un lieu|飞快地奔向某处
+E|foncer|vers|L'ambulance fonçait vers l'hôpital, sirène hurlante.|救护车拉着警笛朝医院飞驰。
+E|foncer|vers|Les enfants ont foncé vers la plage dès leur arrivée.|孩子们一到就朝海滩冲了过去。
+C|figurer|dans|figurer dans qqch|出现在（名单、书等）中
+E|figurer|dans|Ce mot ne figure dans aucun dictionnaire.|这个词哪本词典都没收录。
+E|figurer|dans|Ce tableau figure dans la collection du musée depuis 1920.|这幅画自一九二〇年起就是博物馆的藏品。
+E|figurer|dans|Cette clause figure dans le contrat que tu as signé.|这一条款写在你签的合同里。
+C|étaler|sur|étaler qqch sur qqch|把某物涂抹（铺开、分摊）在某物上
+E|étaler|sur|Étale la confiture sur ta tartine avec un couteau.|用刀把果酱抹在面包片上。
+E|étaler|sur|Il a étalé la carte sur la table pour chercher la route.|他把地图摊在桌上找路。
+E|étaler|sur|Nous allons étaler les paiements sur six mois.|我们会把付款分摊到六个月。
+C|employer|à|employer qqch à faire qqch|把某物用于做某事
+E|employer|à|Il emploie tout son temps libre à peindre.|他把所有空闲时间都用来画画。
+E|employer|à|Cet argent sera employé à rénover l'école.|这笔钱将用于翻修学校。
+C|frotter|contre|frotter qqch contre qqch|把某物在某物上摩擦
+E|frotter|contre|Le chat frotte sa tête contre mes jambes.|猫用头蹭我的腿。
+E|frotter|contre|Il a frotté deux pierres l'une contre l'autre pour faire du feu.|他把两块石头互相摩擦来生火。
+C|frotter|avec|frotter qqch avec qqch|用某物擦某物
+E|frotter|avec|Frotte la casserole avec une éponge et un peu de sel.|用海绵加一点盐擦洗锅子。
+E|frotter|avec|Elle frottait les vitres avec un vieux journal.|她用旧报纸擦窗玻璃。
+N|frotter|contre|frotter qqch contre qqch = 让某物与另一物相蹭；frotter qqch avec qqch = 用工具擦洗
+N|frotter|avec|frotter avec = 用……擦；frotter contre = 在……上蹭
+C|ôter|à|ôter qqch à qqn|夺去某人的某物
+E|ôter|à|Cette maladie a ôté à mon père le goût de vivre.|这场病让我父亲失去了生活的兴致。
+E|ôter|à|On a ôté aux prisonniers leurs lacets et leurs ceintures.|囚犯们的鞋带和腰带都被收走了。
+C|ôter|de|ôter qqch de qqch|从某处移走某物
+E|ôter|de|Ôte ce vase de la fenêtre, il va tomber.|把花瓶从窗台上拿开，它要掉下去了。
+E|ôter|de|Ôte tes affaires de mon lit, j'ai besoin de dormir.|把你的东西从我床上拿走，我要睡觉了。
+N|ôter|à|ôter qqch à qqn = 夺走某人的东西；ôter qqch de qqch = 从某处拿开
+N|ôter|de|ôter qqch de + 地点 = 从某处移走；ôter qqch à qqn = 从某人那里拿走
+C|s'identifier|à|s'identifier à qqn|认同某人；与某人产生共鸣
+E|s'identifier|à|Beaucoup d'adolescents s'identifient au héros de ce roman.|许多青少年在这部小说的主人公身上看到了自己。
+E|s'identifier|à|Je ne me suis jamais identifiée à ce personnage.|我从来没有认同过这个角色。
+C|entreprendre|de|entreprendre de faire qqch|着手做某事
+E|entreprendre|de|Mon père a entrepris de repeindre toute la maison.|我父亲着手把整栋房子重新粉刷一遍。
+E|entreprendre|de|Elle entreprit d'apprendre le chinois à soixante ans.|她六十岁时开始学中文。
+C|justifier|de|justifier de qqch|证明（身份、资历等）
+E|justifier|de|Les candidats doivent justifier de trois ans d'expérience.|应聘者须证明自己有三年工作经验。
+E|justifier|de|À la frontière, il faut justifier de son identité.|在边境必须出示身份证明。
+C|gratter|à|gratter à la porte|挠门（用爪子等）
+E|gratter|à|Le chien gratte à la porte pour sortir.|狗在挠门想出去。
+E|gratter|à|J'ai entendu quelque chose gratter à la fenêtre cette nuit.|昨晚我听到有东西在挠窗户。
+C|embêter|avec|embêter qqn avec qqch|拿某事烦某人
+E|embêter|avec|Arrête de m'embêter avec tes questions !|别再拿你的问题烦我了！
+E|embêter|avec|Je ne veux pas t'embêter avec mes problèmes.|我不想用我的烦心事打扰你。
+C|jaillir|de|jaillir de qqch|从某处喷出、涌出
+E|jaillir|de|L'eau jaillissait du tuyau cassé.|水从破裂的管子里喷涌而出。
+E|jaillir|de|Des flammes ont jailli de la fenêtre du deuxième étage.|火焰从三楼的窗户里窜了出来。
+E|jaillir|de|Un cri jaillit de la foule.|人群中爆发出一声叫喊。
+C|manifester|contre|manifester contre qqch|示威反对某事
+E|manifester|contre|Des milliers d'étudiants ont manifesté contre la réforme.|数千名学生举行示威反对这项改革。
+E|manifester|contre|Les agriculteurs manifestent contre la baisse des prix.|农民们示威抗议价格下跌。
+C|manifester|pour|manifester pour qqch|为争取某事而示威
+E|manifester|pour|Les infirmières manifestent pour de meilleurs salaires.|护士们上街示威要求提高工资。
+E|manifester|pour|Nous avons manifesté pour la défense du climat.|我们为保护气候举行了游行。
+N|manifester|contre|manifester contre = 示威反对；manifester pour = 示威争取、声援
+N|manifester|pour|manifester pour = 为争取某事游行；manifester contre = 为反对某事游行
+C|enregistrer|sur|enregistrer qqch sur qqch|把某物保存（录制）在某物上
+E|enregistrer|sur|N'oublie pas d'enregistrer le document sur une clé USB.|别忘了把文件存到优盘上。
+E|enregistrer|sur|J'ai enregistré sa voix sur mon téléphone.|我用手机录下了他的声音。
+C|gémir|de|gémir de douleur|因（疼痛等）呻吟
+E|gémir|de|Le blessé gémissait de douleur dans l'ambulance.|伤员在救护车里痛苦地呻吟。
+E|gémir|de|Le vieux chien gémit de peur pendant l'orage.|雷雨时那只老狗吓得直哼哼。
+C|loger|chez|loger chez qqn|寄住在某人家
+E|loger|chez|Pendant mes études, je logeais chez une vieille dame.|上学期间，我寄住在一位老太太家里。
+E|loger|chez|Tu peux loger chez nous le temps de trouver un appartement.|在找到公寓之前，你可以住在我们家。
+C|loger|dans|loger dans un lieu|住在某处
+E|loger|dans|Les joueurs logeront dans un hôtel près du stade.|球员们将住在体育场附近的一家酒店。
+E|loger|dans|Nous avons logé dans une petite auberge de montagne.|我们住在一家山间小旅馆里。
+C|envier|à|envier qqch à qqn|羡慕某人的某物
+E|envier|à|J'envie à ma sœur sa patience avec les enfants.|我羡慕姐姐对孩子的那份耐心。
+E|envier|à|Les autres pays envient à la Suisse sa stabilité.|其他国家都羡慕瑞士的稳定。
+C|s'évanouir|de|s'évanouir de qqch|因某事昏倒
+E|s'évanouir|de|Elle a failli s'évanouir de fatigue après le concert.|演唱会结束后，她累得差点晕倒。
+E|s'évanouir|de|Un spectateur s'est évanoui de chaleur pendant la cérémonie.|典礼上一名观众热晕了。
+C|mépriser|pour|mépriser qqn pour qqch|因某事看不起某人
+E|mépriser|pour|On le méprisait pour sa lâcheté.|人们因他的懦弱而鄙视他。
+E|mépriser|pour|Ne méprise personne pour son accent.|别因为口音看不起任何人。
+C|éliminer|de|éliminer qqn/qqch de qqch|把某人（某物）从中淘汰或清除
+E|éliminer|de|Notre équipe a été éliminée de la compétition au premier tour.|我们队在第一轮就被淘汰出局了。
+E|éliminer|de|Le médecin m'a conseillé d'éliminer le sucre de mon alimentation.|医生建议我在饮食中戒掉糖。
+C|enchanter|de|être enchanté de qqch / de faire qqch|对某事非常高兴
+E|enchanter|de|Enchantée de faire votre connaissance !|很高兴认识您！
+E|enchanter|de|Les enfants sont enchantés de leur séjour à la mer.|孩子们对海边的旅行非常满意。
+E|enchanter|de|Je serais enchanté de vous faire visiter la ville.|我很乐意带您参观这座城市。
+C|errer|dans|errer dans un lieu|在某处游荡
+E|errer|dans|Le chien errait dans les rues à la recherche de nourriture.|那只狗在街上游荡找吃的。
+E|errer|dans|Nous avons erré des heures dans la vieille ville sans carte.|我们没带地图，在老城里转悠了好几个小时。
+C|isoler|de|isoler qqn/qqch de qqch|把某人（某物）与外界隔开
+E|isoler|de|La neige a isolé le village du reste du pays.|大雪使这个村子与外界隔绝了。
+E|isoler|de|Il faut isoler les personnes contagieuses des autres patients.|必须把有传染性的人与其他病人隔离。
+C|mélanger|avec|mélanger qqch avec qqch|把某物和某物混合
+E|mélanger|avec|Mélangez la farine avec les œufs, puis ajoutez le lait.|把面粉和鸡蛋拌匀，然后加入牛奶。
+E|mélanger|avec|Il ne faut jamais mélanger l'alcool avec des médicaments.|绝对不要把酒和药混在一起吃。
+E|mélanger|avec|Tu mélanges toujours mon nom avec celui de ma sœur.|你总是把我和我姐姐的名字搞混。
+C|imprimer|sur|imprimer qqch sur qqch|把某物印在某物上
+E|imprimer|sur|Le logo est imprimé sur chaque tee-shirt.|每件短袖衫上都印着标志。
+E|imprimer|sur|Peux-tu imprimer ce document sur du papier recyclé ?|你能用再生纸打印这份文件吗？
+C|garantir|contre|garantir qqch contre qqch|保证某物不受某事损害
+E|garantir|contre|Ce contrat vous garantit contre le vol et l'incendie.|这份合同为您提供防盗和火灾保障。
+E|garantir|contre|Cette assurance garantit la maison contre les inondations.|这份保险为房屋提供水灾保障。
+C|garantir|à|garantir qqch à qqn|向某人保证某事
+E|garantir|à|Le vendeur a garanti à ma mère que la machine durerait dix ans.|售货员向我母亲保证这台机器能用十年。
+E|garantir|à|L'État doit garantir à chaque enfant l'accès à l'école.|国家必须保证每个孩子都能上学。
+N|garantir|contre|garantir qqch contre qqch = 保障某物不受（风险）损害；garantir qqch à qqn = 向某人担保某事
+N|garantir|à|garantir à qqn = 向某人保证；garantir contre = 防范某种风险
+C|se flatter|de|se flatter de qqch / de faire qqch|以某事自夸
+E|se flatter|de|Il se flatte de parler cinq langues.|他自夸会说五种语言。
+E|se flatter|de|Elle se flatte d'avoir toujours raison.|她自诩总是对的。
+C|nouer|avec|nouer des liens avec qqn|与某人建立关系
+E|nouer|avec|Pendant son séjour, il a noué des amitiés avec des pêcheurs du village.|逗留期间，他和村里的渔民交上了朋友。
+E|nouer|avec|L'entreprise cherche à nouer des contacts avec des partenaires asiatiques.|公司正在设法与亚洲伙伴建立联系。
+C|émerger|de|émerger de qqch|从某处浮现、冒出
+E|émerger|de|Un sous-marin a émergé de l'eau près du port.|一艘潜艇在港口附近浮出水面。
+E|émerger|de|Il a mis du temps à émerger de son sommeil.|他过了好一会儿才从睡梦中清醒过来。
+C|entasser|dans|entasser qqn/qqch dans qqch|把……堆（挤）在某处
+E|entasser|dans|On a entassé tous les cartons dans le garage.|所有的纸箱都堆在车库里了。
+E|entasser|dans|Les passagers étaient entassés dans un bus trop petit.|乘客们挤在一辆过小的公共汽车里。
+C|expédier|à|expédier qqch à qqn|把某物寄给某人
+E|expédier|à|Nous expédierons votre commande à l'adresse indiquée.|我们会把您的订单寄往所填写的地址。
+E|expédier|à|J'ai expédié le colis à mes cousins mardi dernier.|上周二我把包裹寄给了表兄弟们。
+C|négocier|avec|négocier avec qqn|与某人谈判
+E|négocier|avec|Le gouvernement refuse de négocier avec les ravisseurs.|政府拒绝与绑匪谈判。
+E|négocier|avec|J'ai négocié avec le vendeur et il m'a fait une réduction.|我跟卖家讲了价，他给我打了折。
+C|multiplier|par|multiplier qqch par un nombre|用某数乘；使增加若干倍
+E|multiplier|par|Multiplie ce nombre par trois et tu obtiens le résultat.|把这个数乘以三就得到结果。
+E|multiplier|par|Les loyers ont été multipliés par deux en dix ans.|十年间房租翻了一番。
+C|graver|sur|graver qqch sur qqch|把某物刻在某物上
+E|graver|sur|Ils ont fait graver leurs initiales sur leurs alliances.|他们在结婚戒指上刻了各自名字的首字母。
+E|graver|sur|Quelqu'un a gravé un cœur sur le tronc de l'arbre.|有人在树干上刻了一颗心。
+C|graver|dans|être gravé dans la mémoire|铭刻在（记忆）中
+E|graver|dans|Ce jour-là restera gravé dans ma mémoire.|那一天将永远铭刻在我的记忆中。
+E|graver|dans|Son visage est gravé dans mon cœur.|他的面容深深印在我心里。
+C|évacuer|vers|évacuer qqn vers un lieu|把某人疏散（转送）到某处
+E|évacuer|vers|Les habitants ont été évacués vers une école voisine.|居民们被疏散到附近的一所学校。
+E|évacuer|vers|On évacuera les blessés vers l'hôpital le plus proche.|伤员将被转送到最近的医院。
+C|feindre|de|feindre de faire qqch|假装做某事
+E|feindre|de|Il feignit de dormir quand sa mère entra.|母亲进来时，他装作睡着了。
+E|feindre|de|Elle feint de ne pas comprendre pour éviter la question.|她装作听不懂，好回避这个问题。
+C|engueuler|pour|engueuler qqn pour qqch|因某事骂某人（俗）
+E|engueuler|pour|Mon père m'a engueulé pour une fenêtre cassée.|我爸因为一扇打碎的窗户把我骂了一顿。
+E|engueuler|pour|Le chef l'a engueulée pour son retard.|老板因为她迟到把她臭骂了一顿。
+C|investir|dans|investir dans qqch|投资于某事
+E|investir|dans|Il a investi toutes ses économies dans l'immobilier.|他把全部积蓄都投到了房地产上。
+E|investir|dans|La ville va investir dans les transports publics.|这座城市将投资公共交通。
+E|investir|dans|Investir dans l'éducation, c'est préparer l'avenir.|投资教育就是为未来做准备。
+C|grossir|de|grossir de tant de kilos|胖了（若干公斤）；增加
+E|grossir|de|J'ai grossi de trois kilos pendant les fêtes.|过节期间我胖了三公斤。
+E|grossir|de|Tu as grossi de combien depuis l'été ?|从夏天到现在你胖了多少？
+C|maigrir|de|maigrir de tant de kilos|瘦了（若干公斤）
+E|maigrir|de|Elle a maigri de cinq kilos en deux mois.|她两个月瘦了五公斤。
+E|maigrir|de|Mon grand-père a maigri de dix kilos pendant son séjour à l'hôpital.|我爷爷住院期间瘦了十公斤。
+C|mentionner|à|mentionner qqch à qqn|向某人提及某事
+E|mentionner|à|Tu n'as rien mentionné à tes parents ?|你什么都没跟父母提吗？
+E|mentionner|à|Il a mentionné ce problème au médecin lors de sa visite.|他就诊时向医生提到了这个问题。
+C|élire|à|élire qqn à un poste|选举某人担任某职
+E|élire|à|Elle a été élue à la tête du syndicat.|她当选为工会领导人。
+E|élire|à|Les habitants l'ont élu au conseil municipal.|居民们把他选进了市议会。
+C|extraire|de|extraire qqch de qqch|从某物中提取、取出
+E|extraire|de|On extrait l'huile des olives mûres.|橄榄油是从成熟的橄榄中榨取的。
+E|extraire|de|Ce passage est extrait d'un roman de Victor Hugo.|这段文字摘自维克多·雨果的一部小说。
+E|extraire|de|Les mineurs extrayaient le charbon de la montagne.|矿工们从山里开采煤炭。
+C|se faufiler|entre|se faufiler entre qqch|在……之间穿行
+E|se faufiler|entre|Le scooter se faufile entre les voitures.|小摩托在汽车之间穿梭。
+E|se faufiler|entre|Il s'est faufilé entre les invités jusqu'au buffet.|他在宾客之间钻来钻去，一直挤到自助餐台。
+C|se faufiler|dans|se faufiler dans un lieu|溜进某处
+E|se faufiler|dans|Le chat s'est faufilé dans la cuisine sans bruit.|猫悄无声息地溜进了厨房。
+E|se faufiler|dans|Nous nous sommes faufilés dans la salle après le début du film.|电影开始后我们才悄悄溜进放映厅。
+C|s'indigner|de|s'indigner de qqch|对某事感到愤慨
+E|s'indigner|de|Les parents s'indignent de la fermeture de l'école.|家长们对学校关闭感到愤慨。
+E|s'indigner|de|Je m'indigne de voir tant de gaspillage.|看到这么多浪费我很气愤。
+C|s'indigner|contre|s'indigner contre qqn/qqch|对某人（某事）表示抗议
+E|s'indigner|contre|Toute la presse s'est indignée contre cette décision injuste.|所有媒体都对这项不公正的决定表示愤慨。
+E|s'indigner|contre|Les voisins s'indignent contre le bruit de l'usine.|邻居们对工厂的噪音感到愤怒。
+N|s'indigner|de|s'indigner de = 因某事（原因）感到气愤；s'indigner contre = 针对某人／某事表示抗议，对抗意味更强
+N|s'indigner|contre|s'indigner contre = 对……提出抗议；s'indigner de = 为……感到愤慨
+C|infliger|à|infliger qqch à qqn|对某人施加（惩罚等）
+E|infliger|à|Le juge a infligé une lourde amende à l'entreprise.|法官对这家公司处以巨额罚款。
+E|infliger|à|L'équipe locale a infligé aux visiteurs une défaite humiliante.|主队让客队遭受了一场屈辱的失败。
+C|enrichir|de|enrichir qqch de qqch|用某物丰富某物
+E|enrichir|de|Cette nouvelle édition est enrichie de nombreuses photos.|新版增加了大量照片。
+E|enrichir|de|Il a enrichi sa collection d'un tableau rare.|他的收藏又添了一幅珍贵的画。
+C|s'obstiner|à|s'obstiner à faire qqch|固执地做某事
+E|s'obstiner|à|Il s'obstine à refuser toute aide.|他固执地拒绝任何帮助。
+E|s'obstiner|à|Pourquoi t'obstines-tu à porter ces chaussures trop petites ?|你为什么非要穿这双太小的鞋？
+E|s'obstiner|à|Elle s'est obstinée à finir la course malgré sa blessure.|她尽管受了伤，仍坚持跑完了比赛。
+C|se fiancer|avec|se fiancer avec qqn|与某人订婚
+E|se fiancer|avec|Ma cousine s'est fiancée avec un pompier.|我表姐和一名消防员订婚了。
+E|se fiancer|avec|Il va se fiancer avec sa petite amie cet été.|今年夏天他要和女朋友订婚。
+C|munir|de|munir qqn/qqch de qqch|给某人（某物）配备某物
+E|munir|de|Munissez-vous d'une pièce d'identité avant de venir.|来之前请带好身份证件。
+E|munir|de|Toutes les chambres sont munies d'un coffre-fort.|所有房间都配有保险箱。
+C|s'empresser|de|s'empresser de faire qqch|赶紧做某事
+E|s'empresser|de|Dès son arrivée, il s'est empressé d'appeler sa mère.|他一到就赶紧给母亲打了电话。
+E|s'empresser|de|Elle s'empressa de cacher la lettre sous un livre.|她急忙把信藏到一本书下面。
+C|s'épanouir|dans|s'épanouir dans qqch|在某环境中充分发展
+E|s'épanouir|dans|Ma fille s'épanouit vraiment dans sa nouvelle école.|我女儿在新学校里真是如鱼得水。
+E|s'épanouir|dans|Il ne s'épanouissait pas dans ce métier trop routinier.|这份过于刻板的工作让他无法施展。
+C|se méprendre|sur|se méprendre sur qqn/qqch|误会某人（某事）
+E|se méprendre|sur|Ne vous méprenez pas sur mes intentions.|请不要误会我的用意。
+E|se méprendre|sur|Je me suis mépris sur son compte, il est très gentil.|我看错他了，他人非常好。
+C|s'infiltrer|dans|s'infiltrer dans qqch|渗入；潜入某处
+E|s'infiltrer|dans|L'eau de pluie s'est infiltrée dans le mur.|雨水渗进了墙里。
+E|s'infiltrer|dans|Un journaliste s'était infiltré dans la secte.|一名记者潜入了那个邪教组织。
+C|initier|à|initier qqn à qqch|引导某人入门某事
+E|initier|à|C'est mon grand-père qui m'a initié aux échecs.|是我祖父带我入门国际象棋的。
+E|initier|à|Cet atelier initie les enfants à la programmation.|这个工作坊引导孩子们入门编程。
+C|inclure|dans|inclure qqch dans qqch|把某物包括在某物中
+E|inclure|dans|Le petit-déjeuner est inclus dans le prix de la chambre.|房价包含早餐。
+E|inclure|dans|N'oublie pas de m'inclure dans la liste des invités.|别忘了把我列进客人名单。
+C|se lamenter|sur|se lamenter sur qqch|为某事哀叹
+E|se lamenter|sur|Il passe ses journées à se lamenter sur son sort.|他整天哀叹自己的命运。
+E|se lamenter|sur|Au lieu de te lamenter sur le passé, pense à demain.|与其为过去哀叹，不如想想明天。
+C|se métamorphoser|en|se métamorphoser en qqch|变成某物
+E|se métamorphoser|en|La chenille se métamorphose en papillon.|毛毛虫蜕变成蝴蝶。
+E|se métamorphoser|en|En quelques années, le village s'est métamorphosé en station touristique.|几年之内，这个村子变成了旅游胜地。
+C|incorporer|à|incorporer qqch à qqch|把某物加入（混入）某物
+E|incorporer|à|Incorporez délicatement les blancs d'œufs à la pâte.|把蛋白轻轻拌入面糊中。
+E|incorporer|à|Ses remarques ont été incorporées au rapport final.|他的意见被纳入了最终报告。
+C|enduire|de|enduire qqch de qqch|给某物涂上某物
+E|enduire|de|Enduisez le moule de beurre avant d'y verser la pâte.|倒入面糊之前，先在模具上抹一层黄油。
+E|enduire|de|Il s'est enduit le visage de crème solaire.|他往脸上抹了防晒霜。
+C|s'extasier|sur|s'extasier sur qqch|对某物赞叹不已
+E|s'extasier|sur|Les touristes s'extasient sur la beauté du paysage.|游客们对风景之美赞叹不已。
+E|s'extasier|sur|Tout le monde s'est extasié sur le gâteau de mariage.|大家都对婚礼蛋糕赞不绝口。
+C|s'interposer|entre|s'interposer entre qqn et qqn|介入某人之间（调停）
+E|s'interposer|entre|Le professeur s'est interposé entre les deux garçons.|老师插到两个男孩中间把他们拉开。
+E|s'interposer|entre|Un policier s'est interposé entre les manifestants et les passants.|一名警察站到了示威者和路人之间。
+C|insérer|dans|insérer qqch dans qqch|把某物插入某物
+E|insérer|dans|Insérez votre carte dans le lecteur et tapez votre code.|请将卡插入读卡器并输入密码。
+E|insérer|dans|J'ai inséré un graphique dans mon rapport.|我在报告里插入了一张图表。
+C|médire|de|médire de qqn|说某人坏话
+E|médire|de|Elle passe son temps à médire de ses voisins.|她整天说邻居的坏话。
+E|médire|de|Il ne faut pas médire des absents.|不要在背后说别人坏话。
+C|intercéder|pour|intercéder pour qqn|为某人求情
+E|intercéder|pour|Sa mère a intercédé pour lui auprès du directeur.|他母亲为他向校长求情。
+E|intercéder|pour|Personne n'a voulu intercéder pour le prisonnier.|没有人愿意为这名囚犯说情。
+C|s'engouffrer|dans|s'engouffrer dans qqch|冲进；涌入
+E|s'engouffrer|dans|Le vent s'engouffrait dans la cheminée.|风灌进了烟囱。
+E|s'engouffrer|dans|Les voyageurs se sont engouffrés dans le métro.|乘客们一窝蜂地涌进了地铁。
+C|enfoncer|dans|enfoncer qqch dans qqch|把某物插进（钉进）某物
+E|enfoncer|dans|Il a enfoncé un clou dans le mur.|他在墙上钉了一颗钉子。
+E|enfoncer|dans|L'infirmière a enfoncé doucement l'aiguille dans le bras du patient.|护士轻轻地把针扎进了病人的胳膊。
+E|enfoncer|dans|Elle enfonça les mains dans ses poches.|她把双手插进了口袋。
+C|s'entourer|de|s'entourer de qqn/qqch|让自己身边围绕着某人（某物）
+E|s'entourer|de|Un bon chef sait s'entourer de gens compétents.|好领导懂得让能干的人围在自己身边。
+E|s'entourer|de|Elle aime s'entourer de livres et de plantes.|她喜欢身边摆满书和植物。
+C|s'entêter|à|s'entêter à faire qqch|执意做某事
+E|s'entêter|à|Il s'entête à réparer la voiture lui-même.|他执意要自己修车。
+E|s'entêter|à|Ne t'entête pas à vouloir tout contrôler.|别总想着什么都要掌控。
+C|s'évertuer|à|s'évertuer à faire qqch|竭力做某事
+E|s'évertuer|à|Je m'évertue à lui expliquer, mais il ne comprend rien.|我费尽口舌给他解释，可他什么都不懂。
+E|s'évertuer|à|Les secouristes se sont évertués à ranimer la victime.|急救人员竭尽全力抢救伤者。
+C|se féliciter|de|se féliciter de qqch|对某事感到庆幸、满意
+E|se féliciter|de|Je me félicite d'avoir pris le train de sept heures.|幸亏我坐了七点的火车。
+E|se féliciter|de|Le ministre s'est félicité des bons résultats de l'économie.|部长对经济的良好表现表示满意。
+C|s'offusquer|de|s'offusquer de qqch|因某事感到被冒犯
+E|s'offusquer|de|Elle s'est offusquée de ma remarque sur sa coiffure.|我评论她的发型，她觉得被冒犯了。
+E|s'offusquer|de|Ne t'offusque pas de sa franchise, il est comme ça.|别在意他说话直，他就是这样的人。
+C|se mesurer|à|se mesurer à qqn|与某人较量
+E|se mesurer|à|Notre équipe va se mesurer aux champions d'Europe.|我们队将与欧洲冠军一较高下。
+E|se mesurer|à|Il rêve de se mesurer aux meilleurs joueurs du monde.|他梦想与世界顶尖选手较量。
+C|s'enticher|de|s'enticher de qqn/qqch|迷上某人（某物）
+E|s'enticher|de|Ma fille s'est entichée d'un chanteur coréen.|我女儿迷上了一个韩国歌手。
+E|s'enticher|de|Il s'entiche d'un nouveau passe-temps tous les mois.|他每个月都会迷上一个新爱好。
+C|s'émerveiller|de|s'émerveiller de qqch|对某事惊叹
+E|s'émerveiller|de|Les enfants s'émerveillent de tout à cet âge.|这个年纪的孩子对什么都感到新奇。
+E|s'émerveiller|de|Je m'émerveille encore de la patience de ma mère.|我至今仍对母亲的耐心感到惊叹。
+C|s'ingénier|à|s'ingénier à faire qqch|想方设法做某事
+E|s'ingénier|à|Mon petit frère s'ingénie à m'agacer.|我弟弟千方百计地惹我生气。
+E|s'ingénier|à|Les organisateurs se sont ingéniés à satisfaire tout le monde.|组织者想尽办法让每个人都满意。
+C|influer|sur|influer sur qqch|影响某事
+E|influer|sur|Le climat influe sur notre humeur.|气候会影响我们的情绪。
+E|influer|sur|Ses conseils ont beaucoup influé sur ma décision.|他的建议对我的决定影响很大。
+C|injecter|dans|injecter qqch dans qqch|把某物注入某物
+E|injecter|dans|L'infirmière a injecté le vaccin dans le bras de l'enfant.|护士把疫苗注射到孩子的手臂里。
+E|injecter|dans|L'État a injecté des milliards dans l'économie.|国家向经济注入了数十亿资金。
+C|fouiller|dans|fouiller dans qqch|在某处翻找
+E|fouiller|dans|Ne fouille pas dans mon sac !|别翻我的包！
+E|fouiller|dans|Il a fouillé dans ses poches pour trouver ses clés.|他在口袋里摸来摸去找钥匙。
+E|fouiller|dans|J'ai fouillé dans les archives de la mairie.|我在市政厅的档案里翻查过。
+C|se gêner|pour|ne pas se gêner pour faire qqch|毫不客气地做某事
+E|se gêner|pour|Il ne s'est pas gêné pour me dire ce qu'il pensait.|他毫不客气地把想法告诉了我。
+E|se gêner|pour|Ne te gêne pas pour moi, fais comme chez toi.|别因为我拘束，就当在自己家一样。
+C|former|à|former qqn à qqch|培训某人做某事
+E|former|à|L'entreprise forme ses employés aux nouvelles technologies.|公司对员工进行新技术培训。
+E|former|à|Cette école forme les jeunes aux métiers du bois.|这所学校培养年轻人从事木工行业。
+C|opérer|de|opérer qqn de qqch|给某人做（某病的）手术
+E|opérer|de|Mon grand-père s'est fait opérer de la cataracte.|我爷爷做了白内障手术。
+E|opérer|de|Elle a été opérée du genou la semaine dernière.|她上周做了膝盖手术。
+C|épargner|à|épargner qqch à qqn|使某人免受某事
+E|épargner|à|Je voulais épargner cette douleur à ma mère.|我想让母亲免受这份痛苦。
+E|épargner|à|Cette machine épargne aux ouvriers les tâches les plus pénibles.|这台机器让工人们免去了最繁重的活儿。
+C|fourrer|dans|fourrer qqch dans qqch|把某物塞进某处（口）
+E|fourrer|dans|Il a fourré ses vêtements sales dans son sac.|他把脏衣服胡乱塞进了包里。
+E|fourrer|dans|Arrête de fourrer ton nez dans mes affaires !|别再管我的闲事了！
+C|emballer|dans|emballer qqch dans qqch|用某物包装某物
+E|emballer|dans|Emballe les verres dans du papier journal.|用报纸把玻璃杯包好。
+E|emballer|dans|Le cadeau était emballé dans un joli papier doré.|礼物用漂亮的金色包装纸包着。
+C|enfouir|dans|enfouir qqch dans qqch|把某物埋进（藏进）某处
+E|enfouir|dans|Le chien a enfoui son os dans le jardin.|狗把骨头埋在了花园里。
+E|enfouir|dans|Elle enfouit son visage dans l'oreiller et pleura.|她把脸埋进枕头里哭了。
+C|navrer|de|être navré de qqch / de faire qqch|对某事深感抱歉
+E|navrer|de|Je suis navré de vous avoir fait attendre.|很抱歉让您久等了。
+E|navrer|de|Nous sommes navrés de cette erreur de facturation.|对于这一开票错误，我们深表歉意。
+C|empiler|sur|empiler qqch sur qqch|把某物堆在某物上
+E|empiler|sur|Il a empilé les assiettes sur l'évier.|他把盘子摞在洗碗池上。
+E|empiler|sur|Les dossiers s'empilent sur mon bureau.|文件在我桌上堆积如山。
+C|éclabousser|de|éclabousser qqn de qqch|把某物溅到某人身上
+E|éclabousser|de|Une voiture m'a éclaboussé de boue en passant.|一辆车经过时溅了我一身泥。
+E|éclabousser|de|Le bébé a éclaboussé toute la salle de bains d'eau savonneuse.|宝宝把肥皂水溅得满浴室都是。
+C|jucher|sur|être juché sur qqch|高高地坐在（站在）某物上
+E|jucher|sur|L'enfant était juché sur les épaules de son père.|孩子骑在爸爸的肩膀上。
+E|jucher|sur|Des pigeons étaient juchés sur le toit de l'église.|几只鸽子栖在教堂屋顶上。
+C|joncher|de|être jonché de qqch|撒满某物（地面）
+E|joncher|de|Après la fête, le sol était jonché de confettis.|派对结束后，地上撒满了彩纸屑。
+E|joncher|de|Le chemin est jonché de feuilles mortes en automne.|秋天，小路上铺满了落叶。
+C|ligoter|à|ligoter qqn à qqch|把某人绑在某物上
+E|ligoter|à|Les bandits l'ont ligoté à une chaise.|强盗把他绑在了椅子上。
+E|ligoter|à|On avait ligoté le prisonnier à un poteau.|囚犯被绑在一根柱子上。
+C|muter|à|muter qqn à un lieu|把某人调往某地
+E|muter|à|Mon père a été muté à Lyon l'année dernière.|我父亲去年被调到了里昂。
+E|muter|à|Elle a demandé à être mutée à Marseille pour se rapprocher de sa famille.|她申请调到马赛，以便离家人近些。
+C|imbiber|de|imbiber qqch de qqch|使某物浸透某物
+E|imbiber|de|Imbibez les biscuits de café avant de les poser dans le plat.|先让饼干吸满咖啡，再放进盘里。
+E|imbiber|de|Le coton était imbibé d'alcool.|棉花浸透了酒精。
+C|griffonner|sur|griffonner qqch sur qqch|在某物上潦草地写
+E|griffonner|sur|Il a griffonné son numéro sur un ticket de métro.|他在一张地铁票上潦草地写下了自己的号码。
+E|griffonner|sur|L'élève griffonnait des dessins sur son cahier.|那个学生在本子上乱涂乱画。
+C|inculper|de|inculper qqn de qqch|指控某人犯有某罪
+E|inculper|de|Le suspect a été inculpé de meurtre.|嫌疑人被控谋杀罪。
+E|inculper|de|On l'a inculpé de fraude fiscale.|他被控逃税。
+C|importuner|avec|importuner qqn avec qqch|用某事打扰某人
+E|importuner|avec|Je suis désolé de vous importuner avec cette demande.|很抱歉拿这个请求来打扰您。
+E|importuner|avec|Il importune tout le monde avec ses histoires de pêche.|他逢人就讲他的钓鱼经，烦死人了。
+C|fouiner|dans|fouiner dans qqch|在某处东翻西找、打探
+E|fouiner|dans|Elle aime fouiner dans les brocantes le dimanche.|她喜欢星期天去旧货市场淘宝。
+E|fouiner|dans|Qui a fouiné dans mes tiroirs ?|谁翻了我的抽屉？
+C|échoir|à|échoir à qqn|落到某人头上
+E|échoir|à|La maison est échue à la fille aînée.|房子归了大女儿。
+E|échoir|à|C'est à moi qu'échoit la tâche de lui annoncer la nouvelle.|把消息告诉他的任务落在了我身上。
+C|exercer|sur|exercer qqch sur qqn/qqch|对某人（某物）施加（影响、压力）
+E|exercer|sur|Ce professeur exerce une grande influence sur ses élèves.|这位老师对学生有很大影响。
+E|exercer|sur|Les syndicats exercent une forte pression sur le gouvernement.|工会对政府施加了很大压力。
+C|orner|de|orner qqch de qqch|用某物装饰某物
+E|orner|de|Les rues étaient ornées de lanternes rouges.|街道上挂满了红灯笼。
+E|orner|de|Elle a orné la table de bougies et de fleurs.|她用蜡烛和鲜花装点了餐桌。
+C|négliger|de|négliger de faire qqch|疏忽而没做某事
+E|négliger|de|Il a négligé de vérifier les freins avant de partir.|他出发前疏忽了检查刹车。
+E|négliger|de|Ne négligez pas de boire assez d'eau en été.|夏天别忘了多喝水。
+C|émigrer|en|émigrer en + pays|移居到某国
+E|émigrer|en|Ses grands-parents ont émigré en Argentine après la guerre.|他的祖父母战后移居到了阿根廷。
+E|émigrer|en|Beaucoup d'Irlandais émigrèrent en Amérique au dix-neuvième siècle.|十九世纪很多爱尔兰人移民到了美洲。
+C|s'orienter|vers|s'orienter vers qqch|转向；选择（某方向）
+E|s'orienter|vers|Après le lycée, elle s'est orientée vers la médecine.|高中毕业后，她选择了学医。
+E|s'orienter|vers|L'entreprise s'oriente vers les énergies renouvelables.|公司正在转向可再生能源。
+C|miser|sur|miser sur qqn/qqch|押注于；指望
+E|miser|sur|J'ai misé dix euros sur le cheval numéro sept.|我在七号马身上押了十欧元。
+E|miser|sur|Le club mise sur ses jeunes joueurs cette saison.|这个赛季俱乐部把希望寄托在年轻球员身上。
+C|s'intégrer|dans|s'intégrer dans qqch|融入某群体（环境）
+E|s'intégrer|dans|Il s'est vite intégré dans sa nouvelle équipe.|他很快融入了新团队。
+E|s'intégrer|dans|Ce bâtiment moderne s'intègre bien dans le paysage.|这座现代建筑与周围景观融为一体。
+C|se gaver|de|se gaver de qqch|大吃特吃某物；过量享用
+E|se gaver|de|Les enfants se sont gavés de bonbons à la fête.|孩子们在聚会上猛吃糖果。
+E|se gaver|de|Arrête de te gaver de séries, va dormir.|别再狂刷剧了，去睡觉吧。
+C|se mobiliser|contre|se mobiliser contre qqch|动员起来反对某事
+E|se mobiliser|contre|Les habitants se mobilisent contre la construction de l'autoroute.|居民们动员起来反对修建高速公路。
+E|se mobiliser|contre|Tout le quartier s'est mobilisé contre la fermeture de la poste.|整个街区都行动起来反对关闭邮局。
+C|se mobiliser|pour|se mobiliser pour qqn/qqch|为某人（某事）动员起来
+E|se mobiliser|pour|Les élèves se sont mobilisés pour aider les sinistrés.|学生们行动起来帮助受灾群众。
+E|se mobiliser|pour|Des bénévoles se mobilisent pour sauver la forêt.|志愿者们动员起来拯救森林。
+N|se mobiliser|contre|se mobiliser contre = 为反对某事而行动；se mobiliser pour = 为支持、帮助某事而行动
+N|se mobiliser|pour|se mobiliser pour = 为（帮助、争取）某事动员；se mobiliser contre = 为反对某事动员
+C|s'enivrer|de|s'enivrer de qqch|陶醉于某事
+E|s'enivrer|de|Il s'enivrait du parfum des roses.|他陶醉于玫瑰的芬芳。
+E|s'enivrer|de|Les jeunes vainqueurs s'enivraient de leur succès.|年轻的胜利者们陶醉于自己的成功。
+C|exceller|en|exceller en qqch|在某学科上出类拔萃
+E|exceller|en|Mon fils excelle en mathématiques mais pas en dessin.|我儿子数学很好，但画画不行。
+E|exceller|en|Elle a toujours excellé en langues étrangères.|她一向外语出众。
+C|exceller|dans|exceller dans qqch|在某领域表现卓越
+E|exceller|dans|Ce chef excelle dans la cuisine du poisson.|这位厨师擅长烹制鱼类菜肴。
+E|exceller|dans|Il excelle dans l'art de raconter des histoires.|他特别会讲故事。
+C|exceller|à|exceller à faire qqch|擅长做某事
+E|exceller|à|Elle excelle à mettre les gens à l'aise.|她特别善于让人感到自在。
+E|exceller|à|Les chats excellent à trouver la place la plus chaude.|猫最擅长找到最暖和的地方。
+N|exceller|en|exceller en + 学科名（不带冠词）；exceller dans + 带冠词的领域；exceller à + 动词不定式
+N|exceller|dans|exceller dans + 带冠词的领域或活动；exceller en + 不带冠词的学科；exceller à + 不定式
+N|exceller|à|exceller à faire qqch = 擅长做某事；名词补语则用 en（学科）或 dans（领域）
+C|se faire|à|se faire à qqch|习惯某事
+E|se faire|à|Je n'arrive pas à me faire au froid de l'hiver.|我实在适应不了冬天的寒冷。
+E|se faire|à|Tu verras, tu te feras vite à ta nouvelle vie.|你会看到，你很快就会习惯新生活的。
+E|se faire|à|Il a fini par se faire à son nouveau patron.|他最终习惯了新老板。
+C|se garder|de|se garder de faire qqch|注意不做某事；避免
+E|se garder|de|Gardez-vous de juger trop vite.|千万别过早下结论。
+E|se garder|de|Il s'est bien gardé de dire la vérité à sa femme.|他小心翼翼地没把真相告诉妻子。
+C|lancer|à|lancer qqch à qqn|把某物扔给某人
+E|lancer|à|Il a lancé les clés à son frère par la fenêtre.|他从窗口把钥匙扔给了弟弟。
+E|lancer|à|L'enfant lance du pain aux canards.|孩子给鸭子扔面包。
+C|lancer|sur|lancer qqch sur qqn/qqch|把某物砸向某人（某物）
+E|lancer|sur|Des manifestants ont lancé des pierres sur la police.|示威者向警察扔石头。
+E|lancer|sur|Un inconnu a lancé des œufs sur la voiture du ministre.|一个陌生人朝部长的车扔鸡蛋。
+N|lancer|à|lancer qqch à qqn = 扔给某人（让对方接住）；lancer qqch sur qqn = 砸向某人（带敌意）
+N|lancer|sur|lancer sur = 朝……砸去；lancer à = 抛给（对方接）
+C|militer|pour|militer pour qqch|为某事奔走、斗争
+E|militer|pour|Elle milite depuis vingt ans pour les droits des femmes.|她二十年来一直为妇女权益奔走。
+E|militer|pour|Cette association milite pour la protection des abeilles.|这个协会致力于保护蜜蜂。
+C|militer|contre|militer contre qqch|为反对某事而斗争
+E|militer|contre|Il milite contre la peine de mort.|他致力于反对死刑。
+E|militer|contre|Nous militons contre le gaspillage alimentaire.|我们积极反对浪费粮食。
+N|militer|pour|militer pour = 为争取某事而斗争；militer contre = 为反对某事而斗争
+N|militer|contre|militer contre = 反对；militer pour = 支持、争取
+C|lésiner|sur|lésiner sur qqch|在某方面吝啬
+E|lésiner|sur|Ne lésine pas sur la qualité des ingrédients.|在食材质量上可别省钱。
+E|lésiner|sur|Pour son mariage, il n'a pas lésiné sur les dépenses.|他的婚礼可谓不惜工本。
+C|loucher|sur|loucher sur qqch|眼馋某物（口）
+E|loucher|sur|Le petit louchait sur le gâteau au chocolat.|小家伙眼巴巴地盯着巧克力蛋糕。
+E|loucher|sur|Plusieurs entreprises louchent sur ce terrain.|好几家公司都盯上了这块地。
+C|fusionner|avec|fusionner avec qqch|与某机构合并
+E|fusionner|avec|Notre banque va fusionner avec un groupe allemand.|我们银行将与一家德国集团合并。
+E|fusionner|avec|La commune a fusionné avec sa voisine en 2019.|这个市镇于二〇一九年与邻镇合并。
+C|flirter|avec|flirter avec qqn/qqch|与某人调情；接近（某种状态）
+E|flirter|avec|Il flirte avec toutes les serveuses du café.|他跟咖啡馆里所有的女服务员调情。
+E|flirter|avec|Le pays flirte avec la récession depuis des mois.|几个月来该国一直徘徊在经济衰退的边缘。
+C|fraterniser|avec|fraterniser avec qqn|与某人亲如兄弟、打成一片
+E|fraterniser|avec|Les soldats ont fraternisé avec les habitants du village.|士兵们和村民打成了一片。
+E|fraterniser|avec|Il refuse de fraterniser avec l'ennemi.|他拒绝与敌人称兄道弟。
+C|interférer|avec|interférer avec qqch|干扰某事
+E|interférer|avec|Ce médicament peut interférer avec la pilule.|这种药可能会影响避孕药的效果。
+E|interférer|avec|Les téléphones peuvent interférer avec les appareils de l'avion.|手机可能会干扰飞机上的设备。
+C|jongler|avec|jongler avec qqch|用某物抛接杂耍；同时应付
+E|jongler|avec|Le clown jongle avec cinq balles.|小丑用五个球耍杂技。
+E|jongler|avec|Elle jongle avec son travail, ses enfants et ses études.|她要同时兼顾工作、孩子和学业。
+C|se familiariser|avec|se familiariser avec qqch|熟悉某事
+E|se familiariser|avec|Prenez le temps de vous familiariser avec le logiciel.|请花点时间熟悉这个软件。
+E|se familiariser|avec|Je me suis vite familiarisé avec les habitudes locales.|我很快就熟悉了当地的习俗。
+C|s'insurger|contre|s'insurger contre qqch|起来反抗某事
+E|s'insurger|contre|Les syndicats s'insurgent contre le recul de l'âge de la retraite.|工会强烈反对推迟退休年龄。
+E|s'insurger|contre|Le peuple s'est insurgé contre le tyran.|人民起来反抗暴君。
+C|osciller|entre|osciller entre qqch et qqch|在两者之间摇摆（波动）
+E|osciller|entre|Les températures oscillent entre dix et quinze degrés.|气温在十到十五度之间波动。
+E|osciller|entre|Il oscille entre l'espoir et le découragement.|他在希望与沮丧之间摇摆。
+C|exhorter|à|exhorter qqn à faire qqch|劝勉某人做某事
+E|exhorter|à|Le maire a exhorté les habitants à rester chez eux.|市长呼吁居民待在家里。
+E|exhorter|à|Son entraîneur l'exhortait à ne jamais abandonner.|教练一再勉励他永不放弃。
+C|exempter|de|exempter qqn de qqch|免除某人的某事
+E|exempter|de|Son handicap l'exempte du service militaire.|他因残疾被免服兵役。
+E|exempter|de|Les petits revenus sont exemptés de cet impôt.|低收入者免缴这项税。
+C|extorquer|à|extorquer qqch à qqn|向某人勒索某物
+E|extorquer|à|Le gang extorquait de l'argent aux commerçants du quartier.|这帮人向街区的商贩勒索钱财。
+E|extorquer|à|Les enquêteurs ont extorqué des aveux au suspect.|调查人员逼嫌疑人招了供。
+C|octroyer|à|octroyer qqch à qqn|给予某人某物
+E|octroyer|à|La banque a octroyé un prêt à la jeune entreprise.|银行向这家新企业发放了一笔贷款。
+E|octroyer|à|On a octroyé une prime à tous les employés.|全体员工都得到了一笔奖金。
+C|imputer|à|imputer qqch à qqn/qqch|把某事归咎于某人（某物）
+E|imputer|à|On a imputé l'accident à une erreur humaine.|事故被归咎于人为失误。
+E|imputer|à|Il impute tous ses échecs à la malchance.|他把所有的失败都归咎于运气不好。
+C|inculquer|à|inculquer qqch à qqn|向某人灌输某事
+E|inculquer|à|Il faut inculquer aux enfants le goût de la lecture.|要培养孩子们对阅读的兴趣。
+E|inculquer|à|Ce professeur a inculqué à ses élèves l'amour des sciences.|这位老师向学生们灌输了对科学的热爱。
+C|incomber|à|incomber à qqn|落在某人身上（责任）
+E|incomber|à|Cette décision incombe au directeur.|这个决定应由主任来做。
+E|incomber|à|La charge de la preuve incombe à l'accusation.|举证责任在控方。
+C|nommer|à|nommer qqn à un poste|任命某人担任某职
+E|nommer|à|Elle vient d'être nommée à la direction de l'hôpital.|她刚被任命为医院院长。
+E|nommer|à|Le gouvernement l'a nommé à un poste important.|政府任命他担任一个要职。
+C|faillir|à|faillir à qqch|未履行（义务、诺言）
+E|faillir|à|Il n'a jamais failli à sa parole.|他从未食言。
+E|faillir|à|Un médecin ne doit pas faillir à son devoir.|医生不能失职。
+C|obtempérer|à|obtempérer à qqch|服从（命令）
+E|obtempérer|à|Le conducteur a refusé d'obtempérer aux ordres des gendarmes.|司机拒不服从宪兵的命令。
+E|obtempérer|à|Les élèves ont obtempéré à la consigne sans discuter.|学生们毫无异议地照指示做了。
+C|étouffer|de|étouffer de qqch|憋得喘不过气（因某事）
+E|étouffer|de|On étouffe de chaleur dans ce bureau.|这间办公室热得让人透不过气。
+E|étouffer|de|Elle étouffait de rire en lisant le message.|她读着那条消息，笑得喘不过气来。
+C|exploser|de|exploser de qqch|迸发（情绪）
+E|exploser|de|Les supporters ont explosé de joie au coup de sifflet final.|终场哨响时，球迷们欣喜若狂。
+E|exploser|de|Il a explosé de colère en voyant la facture.|看到账单，他顿时火冒三丈。
+C|hurler|de|hurler de qqch|因（痛苦、恐惧等）大叫
+E|hurler|de|Le petit garçon hurlait de peur dans le noir.|小男孩在黑暗中吓得大叫。
+E|hurler|de|Nous avons hurlé de rire devant ce film.|看这部电影时我们笑得前仰后合。
+C|frémir|de|frémir de qqch|因某事颤抖
+E|frémir|de|Je frémis d'horreur rien qu'en y pensant.|光是想想我就不寒而栗。
+E|frémir|de|Elle frémissait d'impatience avant le départ.|出发前她急不可耐，浑身发颤。
+C|grelotter|de|grelotter de froid|冻得发抖
+E|grelotter|de|Les enfants grelottaient de froid à l'arrêt de bus.|孩子们在公交车站冻得直哆嗦。
+E|grelotter|de|Il grelotte de fièvre depuis ce matin.|他从早上开始发烧打寒战。
+C|fourmiller|de|fourmiller de qqch|充满（大量某物）
+E|fourmiller|de|Ce texte fourmille de fautes d'orthographe.|这篇文章满是拼写错误。
+E|fourmiller|de|Le marché fourmillait de touristes ce matin.|今天早上集市上游客熙熙攘攘。
+C|importer|de|importer qqch d'un pays|从某地进口某物
+E|importer|de|La France importe beaucoup de gaz de Norvège.|法国从挪威进口大量天然气。
+E|importer|de|Ces meubles sont importés d'Italie.|这些家具是从意大利进口的。
+C|garnir|de|garnir qqch de qqch|用某物装饰（填满）某物
+E|garnir|de|Garnissez la tarte de fraises fraîches.|在馅饼上铺满新鲜草莓。
+E|garnir|de|Les étagères étaient garnies de vieux livres.|书架上摆满了旧书。
+C|farcir|de|farcir qqch de qqch|用某物填塞某物
+E|farcir|de|Ma grand-mère farcit les tomates de viande hachée.|我奶奶在西红柿里塞上肉馅。
+E|farcir|de|Ce film est farci de clichés.|这部电影充斥着陈词滥调。
+# ---- New pairs on existing verbs ----
+C|mourir|de|mourir de qqch|死于某事；（夸张）……得要命
+E|mourir|de|Des milliers de personnes meurent de faim chaque jour.|每天都有成千上万的人死于饥饿。
+E|mourir|de|Je meurs de soif, tu as de l'eau ?|我渴死了，你有水吗？
+E|mourir|de|Son grand-père est mort d'une crise cardiaque.|他祖父死于心脏病发作。
+C|envoyer|à|envoyer qqch à qqn|把某物寄（发）给某人
+E|envoyer|à|J'ai envoyé une carte postale à mes grands-parents.|我给爷爷奶奶寄了一张明信片。
+E|envoyer|à|Elle envoie des photos du bébé à toute la famille.|她把宝宝的照片发给全家人。
+E|envoyer|à|Le médecin a envoyé un courriel à tous ses patients.|医生给他所有的病人发了一封电子邮件。
+C|écrire|à|écrire à qqn|给某人写信
+E|écrire|à|J'écris souvent à ma correspondante italienne.|我经常给我的意大利笔友写信。
+E|écrire|à|Écris à ta grand-mère pour la remercier.|给奶奶写封信谢谢她。
+C|expliquer|à|expliquer qqch à qqn|向某人解释某事
+E|expliquer|à|Peux-tu expliquer cet exercice à ta sœur ?|你能给你妹妹讲讲这道练习吗？
+E|expliquer|à|Le médecin a expliqué aux parents les risques de l'opération.|医生向家长说明了手术的风险。
+C|laisser|à|laisser qqch à qqn|把某物留给（让给）某人
+E|laisser|à|Laisse ta place à cette dame âgée.|把座位让给这位老太太。
+E|laisser|à|Elle a laissé ses clés à la voisine.|她把钥匙留给了邻居。
+C|lire|à|lire qqch à qqn|给某人读某物
+E|lire|à|Chaque soir, je lis une histoire à ma fille.|每天晚上我都给女儿读一个故事。
+E|lire|à|Le secrétaire a lu la lettre aux membres du comité.|秘书向委员会成员宣读了那封信。
+C|monter|à|monter à cheval / à vélo|骑（马、自行车）
+E|monter|à|Ma fille apprend à monter à cheval.|我女儿在学骑马。
+E|monter|à|Mon grand-père monte encore à vélo à quatre-vingts ans.|我爷爷八十岁了还骑自行车。
+C|lutter|pour|lutter pour qqch|为某事而斗争
+E|lutter|pour|Ces ouvriers luttent pour de meilleures conditions de travail.|这些工人为改善工作条件而斗争。
+E|lutter|pour|Le blessé a lutté pour survivre pendant des heures.|伤者挣扎了好几个小时，拼命活下来。
+N|lutter|pour|lutter pour = 为争取某事而斗争；lutter contre = 与某事（疾病、贫困）作斗争
+N|lutter|contre|lutter contre = 与……作斗争、对抗；lutter pour = 为……而奋斗
+C|fonctionner|à|fonctionner à qqch|靠（某种能源）运转
+E|fonctionner|à|Cette voiture fonctionne à l'électricité.|这辆车靠电驱动。
+E|fonctionner|à|Notre vieux poêle fonctionne encore au bois.|我们的旧炉子还是烧柴的。
+C|s'inscrire|à|s'inscrire à qqch|报名参加某事
+E|s'inscrire|à|Je me suis inscrite à un cours de yoga.|我报了一个瑜伽班。
+E|s'inscrire|à|Il faut s'inscrire à l'examen avant le quinze mars.|三月十五日之前必须报名参加考试。
+C|embarquer|dans|s'embarquer dans qqch|着手（冒险的事）；卷入
+E|embarquer|dans|Je ne sais pas dans quoi je me suis embarqué !|真不知道我卷进了什么事里！
+E|embarquer|dans|Ils se sont embarqués dans un projet trop ambitieux.|他们着手了一个过于宏大的项目。
+# ---- Top-ups of thin existing pairs ----
+C|embarquer|pour|s'embarquer pour un lieu|乘船（机）前往某地
+E|embarquer|pour|Nous embarquerons pour la Corse demain à l'aube.|我们明天拂晓登船前往科西嘉。
+C|embarquer|sur|embarquer sur un navire|登上（船只）
+E|embarquer|sur|Les touristes ont embarqué sur un petit bateau pour visiter les îles.|游客们登上一艘小船去游览群岛。
+C|embaucher|pour|embaucher qqn pour faire qqch|雇某人做某事
+E|embaucher|pour|Le restaurant embauche des étudiants pour l'été.|这家餐馆夏天招学生打工。
+C|emmener|avec|emmener qqn avec soi|带某人一起去
+E|emmener|avec|Emmène ton petit frère avec toi au parc.|带上你弟弟一起去公园。
+C|emménager|dans|emménager dans un lieu|搬进某处
+E|emménager|dans|Nous emménagerons dans notre nouvelle maison en juin.|我们六月份搬进新房子。
+E|emménager|dans|Une famille japonaise vient d'emménager dans l'appartement d'en face.|一个日本家庭刚搬进对面的公寓。
+C|emménager|avec|emménager avec qqn|和某人搬到一起住
+E|emménager|avec|Elle a emménagé avec son copain après deux ans de relation.|交往两年后，她和男朋友搬到了一起住。
+C|empiéter|sur|empiéter sur qqch|侵占；侵犯
+E|empiéter|sur|La réunion a empiété sur ma pause déjeuner.|会议占用了我的午休时间。
+E|empiéter|sur|La clôture du voisin empiète sur notre terrain.|邻居的篱笆占了我们的地。
+C|emporter|avec|emporter qqch avec soi|随身带走某物
+E|emporter|avec|N'oublie pas d'emporter ton passeport avec toi.|别忘了随身带上护照。
+C|encombrer|de|être encombré de qqch|被某物堆满、塞满
+E|encombrer|de|Son bureau est encombré de papiers.|他的办公桌上堆满了文件。
+E|encombrer|de|Ne t'encombre pas de bagages inutiles.|别带些没用的行李拖累自己。
+C|enfuir|avec|s'enfuir avec qqn/qqch|带着某人（某物）逃走
+E|enfuir|avec|La jeune fille s'est enfuie avec un musicien.|那个姑娘跟一个音乐家私奔了。
+C|s'enfuir|en|s'enfuir en courant|逃走（以某种方式）
+E|s'enfuir|en|Les voleurs se sont enfuis en voiture.|小偷们开车逃跑了。
+C|engager|dans|s'engager dans qqch|投身于某事；驶入
+E|engager|dans|Il s'est engagé dans l'armée à dix-huit ans.|他十八岁参了军。
+E|engager|dans|La voiture s'est engagée dans une petite rue.|汽车拐进了一条小街。
+C|ennuyer|avec|ennuyer qqn avec qqch|用某事使某人厌烦
+E|ennuyer|avec|Ne m'ennuie pas avec tes histoires de bureau.|别拿你办公室里的事来烦我。
+C|entourer|de|entourer qqn/qqch de qqch|用某物围绕某人（某物）
+E|entourer|de|Le village est entouré de collines.|村子四周群山环绕。
+E|entourer|de|Ses parents l'ont toujours entouré d'affection.|他父母一直给他满满的关爱。
+C|envoyer|par|envoyer qqch par la poste|通过（某方式）寄送某物
+E|envoyer|par|Je vous enverrai les documents par la poste.|我会把文件邮寄给您。
+C|exprimer|en|s'exprimer en + langue|用某种语言表达
+E|exprimer|en|Elle s'exprime en français sans aucun accent.|她说法语一点口音都没有。
+C|exprimer|par|exprimer qqch par qqch|通过某种方式表达某事
+E|exprimer|par|Les enfants expriment souvent leurs émotions par le dessin.|孩子们常常通过绘画来表达情感。
+E|faire attention|à|Fais attention à la marche en descendant.|往下走的时候注意台阶。
+E|faire attention|à|Faites attention à ce que vous dites.|说话注意点。
+E|faire semblant|de|Il fait semblant de lire, mais il dort.|他装作在看书，其实在睡觉。
+E|faire semblant|de|Arrête de faire semblant de ne pas m'entendre !|别装没听见我说话！
+C|flâner|dans|flâner dans un lieu|在某处闲逛
+E|flâner|dans|Le dimanche, nous aimons flâner dans les marchés.|星期天我们喜欢逛集市。
+C|fonder|sur|fonder qqch sur qqch|把某事建立在某事的基础上
+E|fonder|sur|Ce film est fondé sur une histoire vraie.|这部电影根据真实故事改编。
+E|fonder|sur|Notre amitié est fondée sur la confiance.|我们的友谊建立在信任之上。
+C|fondre|sur|fondre sur qqn/qqch|扑向（猛禽等）
+E|fondre|sur|L'aigle a fondu sur sa proie.|老鹰向猎物猛扑下去。
+C|frissonner|de|frissonner de qqch|因某事发抖
+E|frissonner|de|Elle frissonnait de peur en écoutant l'histoire.|听着这个故事，她吓得直发抖。
+C|fâcher|avec|se fâcher avec qqn|与某人闹翻
+E|fâcher|avec|Il s'est fâché avec son frère pour une histoire d'héritage.|他因为遗产的事和哥哥闹翻了。
+E|féliciter|de|Je vous félicite de votre promotion.|祝贺您升职。
+E|gagner|en|Avec l'âge, ce vin gagne en saveur.|这种葡萄酒越陈越香。
+E|gagner|contre|Notre équipe a gagné contre les favoris.|我们队战胜了夺冠热门。
+C|garder|en|garder qqn/qqch en + état|使某人（某物）保持某种状态
+E|garder|en|Les médecins l'ont gardé en vie grâce à une machine.|医生靠一台机器维持着他的生命。
+C|garder|pour|garder qqch pour qqn / pour soi|为某人留着某物；不对外说
+E|garder|pour|Garde une part de gâteau pour ta sœur, elle rentre tard.|给你妹妹留一块蛋糕，她回来得晚。
+E|garder|pour|Il garde toujours ses soucis pour lui.|他总把烦恼藏在心里。
+C|garer|dans|garer sa voiture dans un lieu|把车停在某处
+E|garer|dans|J'ai garé la voiture dans le parking souterrain.|我把车停在了地下停车场。
+E|goûter|à|Tu n'as même pas goûté à ta soupe !|你连汤都没尝一口！
+C|grignoter|entre|grignoter entre les repas|两餐之间吃零食
+E|grignoter|entre|Mon médecin m'a interdit de grignoter entre les repas.|医生不许我在两餐之间吃零食。
+C|grouiller|de|grouiller de qqn/qqch|挤满（人、虫等）
+E|grouiller|de|La plage grouillait de monde ce week-end.|这个周末海滩上人山人海。
+E|grouiller|de|Cette vieille cave grouille de rats.|这个旧地窖里到处是老鼠。
+C|honorer|de|honorer qqn de qqch|以某事给某人荣誉
+E|honorer|de|Le président nous a honorés de sa présence.|总统亲临，令我们倍感荣幸。
+E|hésiter|entre|J'hésite entre la robe rouge et la robe noire.|我在红裙子和黑裙子之间拿不定主意。
+E|hésiter|entre|Il hésitait entre partir et rester.|他在走和留之间犹豫不决。
+C|implorer|de|implorer qqn de faire qqch|恳求某人做某事
+E|implorer|de|Elle l'implora de ne pas partir.|她哀求他不要走。
+C|imprégner|de|être imprégné de qqch|浸透；充满某物
+E|imprégner|de|Ses vêtements étaient imprégnés d'une odeur de tabac.|他的衣服上满是烟味。
+C|informer|sur|informer qqn sur qqch|向某人介绍某事的情况
+E|informer|sur|Ce site informe les voyageurs sur les conditions météo.|这个网站向旅客提供天气信息。
+C|inonder|de|inonder qqn/qqch de qqch|使某处充斥某物
+E|inonder|de|Les fans ont inondé la chanteuse de lettres.|歌迷们给这位女歌手寄来了雪片般的信。
+C|inscrire|dans|inscrire qqn dans qqch|给某人在某处报名、注册
+E|inscrire|dans|Ils ont inscrit leur fils dans une école privée.|他们给儿子报了一所私立学校。
+C|s'inscrire|dans|s'inscrire dans qqch|属于（某框架）的一部分
+E|s'inscrire|dans|Ce projet s'inscrit dans un plan de rénovation urbaine.|这个项目是城市改造计划的一部分。
+C|inspirer|de|s'inspirer de qqch|从某事中获得灵感
+E|inspirer|de|Le peintre s'est inspiré des paysages de Provence.|这位画家从普罗旺斯的风景中汲取灵感。
+E|inspirer|de|Ce roman s'inspire de la vie de l'auteur.|这部小说取材于作者的亲身经历。
+C|installer|sur|installer qqch sur qqch|把某物安装在某物上
+E|installer|sur|J'ai installé une nouvelle application sur mon téléphone.|我在手机上装了一个新应用。
+C|intervenir|dans|intervenir dans qqch|介入；干预某事
+E|intervenir|dans|La police a dû intervenir dans la bagarre.|警察不得不介入这场斗殴。
+C|introduire|dans|introduire qqch dans qqch|把某物放入（引入）某处
+E|introduire|dans|Introduisez la pièce dans la fente.|把硬币投进投币口。
+C|jeter|dans|jeter qqch dans qqch|把某物扔进某处
+E|jeter|dans|Ne jette pas de papiers dans la rivière !|别往河里扔纸！
+E|jeter|dans|Il a jeté la lettre dans le feu sans la lire.|他没看就把信扔进了火里。
+C|languir|de|se languir de qqn|思念某人
+E|languir|de|Elle se languit de son pays natal.|她思念着故乡。
+C|larguer|sur|larguer qqch sur qqch|从空中投下某物
+E|larguer|sur|Des avions ont largué des vivres sur la région isolée.|飞机向这个与外界隔绝的地区空投了食物。
+C|se lever|pour|se lever pour faire qqch|起身（起床）去做某事
+E|se lever|pour|Je me lève à six heures pour aller courir.|我六点起床去跑步。
+C|lire|sur|lire qqch sur qqch|在某物上读出某事
+E|lire|sur|On pouvait lire la déception sur son visage.|他脸上写满了失望。
+C|livrer|à|livrer qqn/qqch à qqn|把某人（某物）交给某人
+E|livrer|à|Le suspect a été livré à la police.|嫌疑人被交给了警方。
+C|léguer|à|léguer qqch à qqn|把某物遗赠给某人
+E|léguer|à|Ma tante a légué sa maison à une association.|我姑妈把房子遗赠给了一个协会。
+C|méditer|sur|méditer sur qqch|对某事深思
+E|méditer|sur|Le philosophe médite sur le sens de la vie.|哲学家思考人生的意义。
+C|méfier|de|se méfier de qqch|对某事保持警惕
+E|méfier|de|Méfie-toi des promesses trop belles.|对太美好的承诺要当心。
+C|naviguer|sur|naviguer sur qqch|在（海上、网上）航行或浏览
+E|naviguer|sur|Les pêcheurs naviguent sur cette mer depuis des siècles.|几个世纪以来，渔民们一直在这片海上航行。
+C|noter|dans|noter qqch dans qqch|把某事记在某处
+E|noter|dans|Note bien la date dans ton agenda.|把日期记在你的日程本上。
+C|noyer|dans|noyer qqch dans qqch|把某物淹没在某物中
+E|noyer|dans|Il noie son chagrin dans l'alcool.|他借酒浇愁。
+C|omettre|de|omettre de faire qqch|漏做某事
+E|omettre|de|Il a omis de mentionner un détail important.|他漏说了一个重要细节。
+C|s'enorgueillir|de|s'enorgueillir de qqch|以某事为荣
+E|s'enorgueillir|de|La ville s'enorgueillit de sa cathédrale gothique.|这座城市以其哥特式大教堂为傲。
+C|s'entretenir|avec|s'entretenir avec qqn|与某人交谈、会谈
+E|s'entretenir|avec|Le ministre s'est entretenu avec son homologue italien.|部长与意大利同行进行了会谈。
+C|s'envelopper|dans|s'envelopper dans qqch|用某物把自己裹起来
+E|s'envelopper|dans|Il s'est enveloppé dans son manteau pour affronter le vent.|他裹紧大衣迎着风走去。
+C|s'envoler|pour|s'envoler pour un lieu|飞往某地
+E|s'envoler|pour|Demain, nous nous envolons pour Tokyo.|明天我们飞往东京。
+C|s'immiscer|dans|s'immiscer dans qqch|插手某事
+E|s'immiscer|dans|Je refuse que ma belle-mère s'immisce dans notre couple.|我不许婆婆插手我们夫妻的事。
+E|s'inquiéter|de|Elle s'inquiète de l'absence de nouvelles.|一直没有消息，她很担心。
+C|s'inquiéter|pour|s'inquiéter pour qqn|为某人担心
+E|s'inquiéter|pour|Ne t'inquiète pas pour moi, je rentrerai en taxi.|别为我担心，我打车回去。
+C|s'installer|en|s'installer en + pays ou région|在某地定居
+E|s'installer|en|Après sa retraite, il s'est installé en Bretagne.|退休后他在布列塔尼定居了。
+C|s'introduire|dans|s'introduire dans un lieu|潜入某处
+E|s'introduire|dans|Des pirates se sont introduits dans le système informatique.|黑客侵入了计算机系统。
+C|s'écarter|de|s'écarter de qqch|偏离；离开某处
+E|s'écarter|de|Ne vous écartez pas du sentier balisé.|不要偏离标记好的小路。
+C|s'éloigner|de|s'éloigner de qqn/qqch|远离某人（某物）
+E|s'éloigner|de|Éloignez-vous du bord du quai.|请远离站台边缘。
+E|s'éloigner|de|Depuis son mariage, il s'est éloigné de ses anciens amis.|结婚后，他和老朋友们疏远了。
+E|s'étonner|de|Je m'étonne de ne pas l'avoir vu à la réunion.|我很奇怪在会上没看到他。
+C|se ficher|de|se ficher de qqch|根本不在乎某事（口）
+E|se ficher|de|Je me fiche de ce que pensent les voisins.|我才不管邻居们怎么想。
+E|se heurter|à|Le projet se heurte à l'opposition des habitants.|该项目遭到居民的反对。
+C|se jeter|dans|se jeter dans qqch|扑进；（河流）注入
+E|se jeter|dans|L'enfant s'est jeté dans les bras de sa mère.|孩子扑进了妈妈的怀里。
+E|se joindre|à|Voulez-vous vous joindre à nous pour le dîner ?|您愿意和我们一起吃晚饭吗？
+E|se lancer|dans|Après ses études, elle s'est lancée dans la politique.|毕业后她投身政界。
+E|se limiter|à|Cette fois, je me limiterai à deux verres.|这次我最多喝两杯。
+C|se monter|à|se monter à + somme|达到（总额）
+E|se monter|à|Les dégâts se montent à plusieurs millions d'euros.|损失高达数百万欧元。
+C|se mêler|de|se mêler de qqch|插手某事
+E|se mêler|de|Mêle-toi de tes affaires !|管好你自己的事！
+C|se noyer|dans|se noyer dans qqch|淹没在某事中；（喻）被小事难倒
+E|se noyer|dans|Il se noie dans un verre d'eau dès qu'il y a un petit problème.|一有点小问题，他就手足无措。
+E|échanger|contre|J'ai échangé mon vélo contre une guitare.|我用自行车换了一把吉他。
+C|échouer|sur|s'échouer sur qqch|搁浅在某处（船、鲸）
+E|échouer|sur|Le cargo s'est échoué sur un banc de sable.|货轮在沙洲上搁浅了。
+C|échouer|dans|échouer dans qqch|在某事上失败
+E|échouer|dans|Il a échoué dans toutes ses tentatives de réconciliation.|他所有和解的尝试都失败了。
+C|économiser|pour|économiser pour qqch|为某事存钱
+E|économiser|pour|Nous économisons pour les études de nos enfants.|我们在为孩子上学攒钱。
+C|écrire|sur|écrire sur qqch|写关于某事的文章
+E|écrire|sur|Ce journaliste écrit surtout sur l'Afrique.|这位记者主要写有关非洲的报道。
+C|égarer|dans|s'égarer dans un lieu|在某处迷路
+E|égarer|dans|Les randonneurs se sont égarés dans la forêt.|徒步者在森林里迷了路。
+C|éprendre|de|s'éprendre de qqn|爱上某人
+E|éprendre|de|Il s'est épris d'une violoniste rencontrée à Vienne.|他爱上了在维也纳结识的一位小提琴手。
+C|évader|de|s'évader de qqch|从某处逃出
+E|évader|de|Trois détenus se sont évadés de la prison la nuit dernière.|昨晚有三名囚犯越狱了。
+C|évoluer|en|évoluer en qqch|演变成某事
+E|évoluer|en|La dispute a vite évolué en bagarre générale.|争吵很快演变成了一场群殴。
+E|être d'accord|avec|Je ne suis pas du tout d'accord avec toi.|我完全不同意你的看法。
+E|être d'accord|avec|Tout le monde était d'accord avec la proposition.|大家都同意这个提议。
+E|s'engager|à|Il s'est engagé à rembourser la somme avant Noël.|他承诺在圣诞节前还清这笔钱。
+E|s'engager|à|Le gouvernement s'engage à réduire les impôts.|政府承诺减税。

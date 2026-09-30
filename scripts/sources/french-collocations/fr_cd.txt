@@ -1,0 +1,674 @@
+# French verb collocations — letters c/d (verb initial ignoring se / s')
+# ---- NEW verbs: c ----
+C|cadrer|avec|cadrer avec qqch|与……相符；与……吻合
+E|cadrer|avec|Son témoignage ne cadre pas avec les faits.|他的证词与事实不符。
+E|cadrer|avec|Ce projet cadre parfaitement avec nos objectifs.|这个项目与我们的目标完全吻合。
+E|cadrer|avec|Ses dépenses ne cadraient plus avec son salaire.|他的开销和他的工资已经对不上了。
+C|calquer|sur|calquer qqch sur qqch|照搬；仿照……制作
+E|calquer|sur|Ils ont calqué leur système sur le modèle allemand.|他们照搬了德国模式来建立自己的体制。
+E|calquer|sur|Ne calque pas ta vie sur celle de tes parents.|别照着你父母的样子过一辈子。
+E|calquer|sur|Ce mot anglais est calqué sur une expression française.|这个英语单词是仿照一个法语表达造出来的。
+C|camoufler|en|camoufler qqch en qqch|把……伪装成……
+E|camoufler|en|Les voleurs avaient camouflé le camion en ambulance.|小偷们把卡车伪装成了救护车。
+E|camoufler|en|Il a camouflé le meurtre en accident.|他把谋杀伪装成了意外。
+C|se cantonner|à|se cantonner à qqch|局限于；只限于
+E|se cantonner|à|Le professeur s'est cantonné à la théorie.|老师只讲了理论。
+E|se cantonner|à|Ne te cantonne pas à un seul auteur, lis plus largement.|别只局限于一位作家，读得广一点。
+E|se cantonner|à|Son rôle se cantonnait à répondre au téléphone.|她的工作仅限于接电话。
+C|se caractériser|par|se caractériser par qqch|以……为特征
+E|se caractériser|par|Cette région se caractérise par des hivers très froids.|这个地区的特点是冬天非常寒冷。
+E|se caractériser|par|Son style se caractérise par des phrases courtes.|他的文风以短句为特色。
+E|se caractériser|par|La maladie se caractérise par une forte fièvre.|这种病的典型症状是高烧。
+C|centrer|sur|centrer qqch sur qqch|使……以……为中心
+E|centrer|sur|Le débat a été centré sur la question du logement.|辩论集中在住房问题上。
+E|centrer|sur|Nous allons centrer notre travail sur les jeunes.|我们将把工作重点放在年轻人身上。
+C|se chamailler|avec|se chamailler avec qqn|和某人拌嘴
+E|se chamailler|avec|Elle se chamaille sans cesse avec sa sœur.|她老是和她妹妹拌嘴。
+E|se chamailler|avec|Arrête de te chamailler avec ton frère pour rien !|别再为了一点小事跟你弟弟斗嘴了！
+E|se chamailler|avec|Enfant, je me chamaillais avec mes cousins à chaque repas.|小时候，我每顿饭都要和表兄弟们吵吵闹闹。
+C|se charger|de|se charger de qqch|负责；承担
+E|se charger|de|Je me charge des boissons pour la fête.|派对的饮料我来负责。
+E|se charger|de|Qui va se charger de réserver l'hôtel ?|谁来负责订酒店？
+E|se charger|de|Ne t'inquiète pas, elle se chargera de tout demain.|别担心，明天她会把一切都处理好。
+C|chasser|de|chasser qqn de qqch|把某人赶出某处
+E|chasser|de|Le propriétaire les a chassés de l'appartement.|房东把他们赶出了公寓。
+E|chasser|de|Chasse ces idées noires de ta tête !|把这些悲观的念头从脑子里赶走！
+E|chasser|de|Le vent chassait les nuages du ciel.|风把天上的云吹散了。
+C|se chiffrer|à|se chiffrer à qqch|总计达；数额达
+E|se chiffrer|à|Les dégâts se chiffrent à plusieurs millions d'euros.|损失达数百万欧元。
+E|se chiffrer|à|La facture se chiffrait à trois mille euros.|账单总额为三千欧元。
+C|chuter|de|chuter de qqch|下降（若干）；从……摔下
+E|chuter|de|Les ventes ont chuté de vingt pour cent cette année.|今年销量下降了百分之二十。
+E|chuter|de|La température va chuter de dix degrés cette nuit.|今晚气温将骤降十度。
+E|chuter|de|Il a chuté du haut de l'échelle.|他从梯子顶上摔了下来。
+C|citer|en|citer qqn/qqch en exemple|把某人／某物作为榜样举出
+E|citer|en|Le directeur a cité son travail en exemple.|校长把他的作业当作范例。
+E|citer|en|On cite souvent ce pays en exemple pour son système de santé.|人们常以这个国家的医疗体系为例。
+C|cligner|de|cligner de l'œil|眨眼；使眼色
+E|cligner|de|Il m'a cligné de l'œil pour que je me taise.|他朝我使了个眼色，让我别说话。
+E|cligner|de|Le soleil était si fort qu'on clignait des yeux.|阳光太强烈，我们直眨眼睛。
+C|coexister|avec|coexister avec qqch/qqn|与……共存
+E|coexister|avec|Les traditions coexistent ici avec la modernité.|在这里，传统与现代并存。
+E|coexister|avec|Ces animaux coexistent pacifiquement avec les humains.|这些动物与人类和平共处。
+C|cogner|à|cogner à qqch|敲打（门、窗）
+E|cogner|à|Quelqu'un cogne à la porte depuis cinq minutes.|有人已经敲了五分钟的门了。
+E|cogner|à|La pluie cognait aux vitres toute la nuit.|雨点整夜敲打着窗玻璃。
+C|se cogner|contre|se cogner contre qqch|撞到……上
+E|se cogner|contre|Je me suis cogné contre la table dans le noir.|我在黑暗中撞到了桌子上。
+E|se cogner|contre|Attention, tu vas te cogner contre la porte !|小心，你要撞到门上了！
+E|se cogner|contre|L'oiseau s'est cogné contre la fenêtre.|那只鸟撞上了窗户。
+C|collaborer|avec|collaborer avec qqn|与某人合作
+E|collaborer|avec|Nous collaborons avec une entreprise japonaise.|我们正在和一家日本公司合作。
+E|collaborer|avec|Elle a collaboré avec plusieurs chercheurs étrangers.|她曾和好几位外国研究人员合作过。
+E|collaborer|avec|Pendant la guerre, certains ont collaboré avec l'ennemi.|战争期间，有些人与敌人勾结。
+C|collaborer|à|collaborer à qqch|参与（某项工作）
+E|collaborer|à|Il a collaboré à la rédaction du dictionnaire.|他参与了这部词典的编写。
+E|collaborer|à|Tous les élèves ont collaboré au journal de l'école.|全体学生都参与了校报的工作。
+N|collaborer|avec|collaborer avec qqn = 与某人合作；collaborer à qqch = 参与某项工作
+N|collaborer|à|collaborer à qqch = 参与某项工作；collaborer avec qqn = 与某人合作
+C|combiner|avec|combiner qqch avec qqch|把……与……结合
+E|combiner|avec|Elle combine ses études avec un travail à mi-temps.|她一边上学一边做兼职。
+E|combiner|avec|Ce plat combine le sucré avec le salé.|这道菜把甜味和咸味结合在一起。
+E|combiner|avec|Il faut combiner le sport avec une bonne alimentation.|运动要和良好的饮食相结合。
+C|combler|de|combler qqn de qqch|使某人充满；给某人大量……
+E|combler|de|Ses grands-parents le comblent de cadeaux.|他的祖父母送给他很多礼物。
+E|combler|de|Cette nouvelle m'a comblé de joie.|这个消息让我满心欢喜。
+E|combler|de|Le public l'a comblée d'applaudissements.|观众给了她雷鸣般的掌声。
+C|commander|à|commander à qqn de faire qqch|命令某人做某事
+E|commander|à|Le capitaine a commandé à ses hommes de reculer.|队长命令他的士兵后退。
+E|commander|à|Personne ne peut commander à son cœur.|谁也无法支配自己的心。
+C|commercer|avec|commercer avec qqn|与某人做生意
+E|commercer|avec|La France commerce beaucoup avec l'Allemagne.|法国与德国的贸易往来很多。
+E|commercer|avec|Autrefois, cette ville commerçait avec tout l'Orient.|从前，这座城市和整个东方都有贸易往来。
+C|compenser|par|compenser qqch par qqch|用……弥补……
+E|compenser|par|Il compense son manque de talent par beaucoup de travail.|他用勤奋弥补天分的不足。
+E|compenser|par|Les pertes seront compensées par une hausse des prix.|损失将通过涨价来弥补。
+E|compenser|par|Elle a compensé sa timidité par un grand sens de l'humour.|她用极强的幽默感弥补了自己的腼腆。
+C|se complaire|dans|se complaire dans qqch|沉溺于；以……自得
+E|se complaire|dans|Il se complaît dans son malheur.|他沉湎于自己的不幸之中。
+E|se complaire|dans|Elle se complaisait dans le rôle de victime.|她乐于扮演受害者的角色。
+C|comprendre|à|ne rien comprendre à qqch|对……一窍不通
+E|comprendre|à|Je ne comprends rien à la politique.|我对政治一窍不通。
+E|comprendre|à|Il n'a rien compris à l'exercice de maths.|这道数学题他完全没看懂。
+E|comprendre|à|Tu comprends quelque chose à ce film, toi ?|你看得懂这部电影吗？
+C|concéder|à|concéder qqch à qqn|向某人让步；承认某人……
+E|concéder|à|Il a dû concéder à son rival que celui-ci avait raison.|他不得不向对手承认对方是对的。
+E|concéder|à|L'équipe a concédé un penalty à ses adversaires.|这支球队送给对手一个点球。
+C|concilier|avec|concilier qqch avec qqch|使……与……兼顾
+E|concilier|avec|Il est difficile de concilier le travail avec la vie de famille.|工作和家庭生活很难兼顾。
+E|concilier|avec|Elle essaie de concilier ses rêves avec la réalité.|她努力让梦想与现实相协调。
+C|conclure|de|conclure qqch de qqch|从……得出结论
+E|conclure|de|Que concluez-vous de cette expérience ?|您从这个实验中得出什么结论？
+E|conclure|de|J'ai conclu de son silence qu'il ne viendrait pas.|从他的沉默中我断定他不会来了。
+E|conclure|de|On ne peut rien conclure d'un seul exemple.|仅凭一个例子什么也说明不了。
+C|concorder|avec|concorder avec qqch|与……一致
+E|concorder|avec|Les résultats concordent avec nos prévisions.|结果与我们的预测相符。
+E|concorder|avec|Sa version ne concorde pas avec celle de sa femme.|他的说法和他妻子的说法对不上。
+C|concourir|à|concourir à qqch|有助于；促成
+E|concourir|à|Plusieurs facteurs ont concouru à son succès.|多种因素促成了他的成功。
+E|concourir|à|Le sport concourt à une bonne santé.|运动有助于身体健康。
+C|concourir|pour|concourir pour qqch|角逐；参加……的竞争
+E|concourir|pour|Dix films concourent pour la Palme d'or.|十部电影角逐金棕榈奖。
+E|concourir|pour|Elle concourra pour le poste de directrice.|她将竞争主任一职。
+N|concourir|à|concourir à qqch = 有助于、促成；concourir pour qqch = 角逐某奖项／职位
+N|concourir|pour|concourir pour qqch = 角逐某奖项／职位；concourir à qqch = 有助于、促成
+C|se conduire|avec|se conduire bien/mal avec qqn|对某人表现好／不好
+E|se conduire|avec|Il s'est très mal conduit avec ses invités.|他对客人非常失礼。
+E|se conduire|avec|Conduis-toi correctement avec ta grand-mère.|对你奶奶要规矩一点。
+C|conférer|à|conférer qqch à qqn/qqch|授予；赋予
+E|conférer|à|L'université a conféré le titre de docteur honoris causa à l'écrivain.|大学授予这位作家名誉博士称号。
+E|conférer|à|Cette lumière confère à la pièce une atmosphère chaleureuse.|这种灯光使房间显得温馨。
+C|confier|à|confier qqch à qqn|把……托付给某人；向某人吐露
+E|confier|à|Nous avons confié nos clés à la voisine.|我们把钥匙交给了邻居。
+E|confier|à|Elle a confié un secret important à son frère.|她把一个重要的秘密告诉了她哥哥。
+E|confier|à|On a confié la direction du projet à une jeune ingénieure.|项目的领导工作交给了一位年轻的女工程师。
+C|se confier|à|se confier à qqn|向某人倾诉心事
+E|se confier|à|Elle se confie souvent à sa meilleure amie.|她常常向最好的朋友倾诉心事。
+E|se confier|à|Tu peux te confier à moi, je ne dirai rien.|你可以对我说心里话，我不会说出去的。
+E|se confier|à|Il ne se confiait à personne.|他从不向任何人吐露心声。
+C|confiner|à|confiner à qqch|近乎；接近于
+E|confiner|à|Son courage confine à la folie.|他的勇气近乎疯狂。
+E|confiner|à|Cette générosité confinait à la naïveté.|这种慷慨近乎天真。
+C|se confondre|en|se confondre en excuses|连声道歉
+E|se confondre|en|Le serveur s'est confondu en excuses.|服务员连连道歉。
+E|se confondre|en|Elle se confondait en remerciements.|她千恩万谢。
+C|conjuguer|à|conjuguer un verbe à un temps|把动词变位成某个时态
+E|conjuguer|à|Conjuguez ces verbes au passé composé.|请把这些动词变成复合过去时。
+E|conjuguer|à|Je n'arrive pas à conjuguer ce verbe au subjonctif.|我不会把这个动词变成虚拟式。
+E|conjuguer|à|Sais-tu conjuguer le verbe aller au futur ?|你会把动词「去」变成将来时吗？
+C|conjurer|de|conjurer qqn de faire qqch|恳求某人做某事
+E|conjurer|de|Je vous conjure de m'écouter.|我恳求您听我说。
+E|conjurer|de|Sa mère l'a conjuré de ne pas partir.|他母亲苦苦哀求他不要走。
+C|connecter|à|connecter qqch à qqch|把……连接到……
+E|connecter|à|Connecte ton ordinateur au réseau de l'hôtel.|把你的电脑连上酒店的网络。
+E|connecter|à|L'imprimante n'est pas connectée à l'ordinateur.|打印机没有连到电脑上。
+E|connecter|à|Connectez l'enceinte à votre téléphone avant de lancer la musique.|放音乐之前，先把音箱连到您的手机上。
+C|consoler|de|consoler qqn de qqch|安慰某人（因某事而来的痛苦）
+E|consoler|de|Rien ne pouvait la consoler de la perte de son chien.|什么都无法抚平她失去爱犬的伤痛。
+E|consoler|de|Il a essayé de me consoler de mon échec.|他试着帮我走出失败的阴影。
+C|conspirer|contre|conspirer contre qqn|密谋反对某人
+E|conspirer|contre|Ils conspiraient contre le roi.|他们密谋推翻国王。
+E|conspirer|contre|J'ai l'impression que tout conspire contre moi aujourd'hui.|我觉得今天一切都在跟我作对。
+C|contacter|par|contacter qqn par qqch|通过……联系某人
+E|contacter|par|Vous pouvez nous contacter par téléphone ou par mail.|您可以通过电话或邮件联系我们。
+E|contacter|par|Je l'ai contacté par l'intermédiaire d'un ami.|我通过一个朋友联系上了他。
+C|contraster|avec|contraster avec qqch|与……形成对比
+E|contraster|avec|Le rouge du toit contraste avec le blanc des murs.|红色的屋顶和白色的墙壁形成鲜明对比。
+E|contraster|avec|Son calme contrastait avec l'agitation générale.|他的镇定与众人的慌乱形成了反差。
+E|contraster|avec|Ces chiffres contrastent avec ceux de l'an dernier.|这些数字和去年的数字截然不同。
+C|contrevenir|à|contrevenir à qqch|违反（规定、法律）
+E|contrevenir|à|Cette décision contrevient à la loi.|这项决定违反了法律。
+E|contrevenir|à|Les joueurs qui contreviennent au règlement seront exclus.|违反规则的选手将被取消资格。
+C|converser|avec|converser avec qqn|与某人交谈
+E|converser|avec|J'ai conversé longuement avec le vieux pêcheur.|我和那位老渔夫聊了很久。
+E|converser|avec|Elle aime converser avec les touristes en anglais.|她喜欢用英语和游客交谈。
+C|convier|à|convier qqn à qqch|邀请某人参加……
+E|convier|à|Nous sommes conviés à un dîner chez le maire.|我们受邀到市长家赴晚宴。
+E|convier|à|Elle a convié tous ses collègues à son mariage.|她邀请了所有同事参加她的婚礼。
+C|convoquer|à|convoquer qqn à qqch|召集某人参加……；传唤
+E|convoquer|à|Le directeur m'a convoqué à une réunion urgente.|经理召我去参加一个紧急会议。
+E|convoquer|à|Tous les candidats seront convoqués à un entretien.|所有候选人都将被通知参加面试。
+E|convoquer|à|Il a été convoqué au commissariat.|他被传唤到警察局。
+C|coopérer|avec|coopérer avec qqn|与某人合作
+E|coopérer|avec|Le suspect refuse de coopérer avec la police.|嫌疑人拒绝与警方配合。
+E|coopérer|avec|Notre école coopère avec plusieurs universités étrangères.|我们学校与多所外国大学有合作。
+E|coopérer|avec|Il faudra que tu coopères avec les autres services.|你得和其他部门配合。
+C|copier|sur|copier sur qqn|抄某人的（考试作弊）
+E|copier|sur|Il a copié sur son voisin pendant l'examen.|考试时他抄了邻座的答案。
+E|copier|sur|Ne copie pas sur moi, fais ton propre travail !|别抄我的，自己做作业！
+C|cotiser|à|cotiser à qqch|缴纳（会费、保险费等）
+E|cotiser|à|Les salariés cotisent à la caisse de retraite.|雇员缴纳养老保险金。
+E|cotiser|à|Il a cotisé à une mutuelle pendant vingt ans.|他交了二十年的互助保险费。
+C|cotiser|pour|cotiser pour qqch|凑钱买……
+E|cotiser|pour|Nous avons cotisé pour offrir un cadeau au professeur.|我们凑钱给老师买了份礼物。
+E|cotiser|pour|Toute l'équipe a cotisé pour son pot de départ.|全组的人凑钱为他办了欢送会。
+N|cotiser|à|cotiser à qqch = 缴纳（保险、会费）；cotiser pour qqch = 凑钱做某事
+N|cotiser|pour|cotiser pour qqch = 凑钱做某事；cotiser à qqch = 缴纳（保险、会费）
+C|coudre|sur|coudre qqch sur qqch|把……缝到……上
+E|coudre|sur|Peux-tu coudre ce bouton sur ma chemise ?|你能把这颗扣子缝到我衬衫上吗？
+E|coudre|sur|Elle a cousu un écusson sur son sac.|她在包上缝了一个徽章。
+C|se couper|de|se couper de qqn/qqch|与……断绝联系
+E|se couper|de|Depuis son divorce, il s'est coupé de ses amis.|离婚以后，他和朋友们断了来往。
+E|se couper|de|Il ne faut pas se couper du monde.|不要与世隔绝。
+C|se cramponner|à|se cramponner à qqch|紧紧抓住
+E|se cramponner|à|L'enfant se cramponnait à la main de sa mère.|孩子紧紧抓着妈妈的手。
+E|se cramponner|à|Cramponne-toi à la rampe, l'escalier est glissant.|抓紧扶手，楼梯很滑。
+E|se cramponner|à|Il se cramponne à ses vieilles habitudes.|他死抱着自己的老习惯不放。
+C|craquer|pour|craquer pour qqn/qqch|迷上；忍不住买下
+E|craquer|pour|J'ai craqué pour cette robe rouge.|我没忍住，买下了这条红裙子。
+E|craquer|pour|Toutes les filles craquent pour lui.|所有女孩都为他着迷。
+C|cribler|de|cribler qqch de qqch|使布满（弹孔、债务等）
+E|cribler|de|La voiture était criblée de balles.|车身上布满了弹孔。
+E|cribler|de|Il est criblé de dettes depuis la faillite.|破产以来他债台高筑。
+C|crier|sur|crier sur qqn|冲某人吼
+E|crier|sur|Arrête de crier sur les enfants !|别再冲孩子们吼了！
+E|crier|sur|Mon chef a crié sur moi devant tout le monde.|老板当着所有人的面冲我大吼。
+C|crier|de|crier de qqch|因……而叫喊
+E|crier|de|Les supporters criaient de joie.|球迷们欢呼雀跃。
+E|crier|de|Le blessé criait de douleur.|伤者痛得大叫。
+C|crier|à|crier à qqch|呼喊（求救等）；斥为……
+E|crier|à|Elle a crié à l'aide mais personne n'est venu.|她大声呼救，可是没人来。
+E|crier|à|Les journaux ont crié au scandale.|各大报纸纷纷斥之为丑闻。
+N|crier|sur|crier sur qqn = 冲某人吼；crier de joie = 因……而叫；crier à l'aide = 呼救
+N|crier|de|crier de qqch = 因（喜悦、疼痛）而叫；crier sur qqn = 冲某人吼
+N|crier|à|crier à qqch = 呼喊（à l'aide）、斥为（au scandale）；crier sur qqn = 冲某人吼
+C|croquer|dans|croquer dans qqch|咬一口
+E|croquer|dans|Il a croqué dans une pomme bien rouge.|他咬了一口红彤彤的苹果。
+E|croquer|dans|Les enfants croquaient dans leurs tartines en riant.|孩子们笑着啃着涂了果酱的面包片。
+C|cuire|à|cuire qqch à feu doux / au four|用（文火、烤箱）烹煮
+E|cuire|à|Faites cuire la sauce à feu doux pendant vingt minutes.|用文火把酱汁煮二十分钟。
+E|cuire|à|Le poulet cuit au four depuis une heure.|鸡已经在烤箱里烤了一个小时。
+E|cuire|à|Je préfère cuire les légumes à la vapeur.|我更喜欢把蔬菜蒸着吃。
+C|culminer|à|culminer à qqch|最高点达到……
+E|culminer|à|Le mont Blanc culmine à plus de quatre mille huit cents mètres.|勃朗峰最高点海拔四千八百多米。
+E|culminer|à|Le chômage a culminé à douze pour cent en mars.|失业率在三月份达到了百分之十二的最高点。
+C|chiper|à|chiper qqch à qqn|从某人那里顺手拿走（偷）
+E|chiper|à|Mon petit frère a chipé des bonbons à notre sœur.|我弟弟偷拿了我们妹妹的糖果。
+E|chiper|à|Elle chipe toujours des frites à son copain.|她总是偷吃男朋友的薯条。
+C|chipoter|sur|chipoter sur qqch|在……上斤斤计较
+E|chipoter|sur|Il chipote sur chaque centime.|他一分钱都要计较。
+E|chipoter|sur|Ne chipotons pas sur les détails, l'essentiel est fait.|别在细节上纠缠了，主要的都做完了。
+C|cohabiter|avec|cohabiter avec qqn|与某人同住；与……共处
+E|cohabiter|avec|Il cohabite avec trois étudiants dans un petit appartement.|他和三个学生合住在一套小公寓里。
+E|cohabiter|avec|Notre chat cohabite très bien avec le chien.|我们的猫和狗相处得很好。
+E|cohabiter|avec|Elle a appris à cohabiter avec sa maladie.|她学会了与疾病共存。
+C|colorier|en|colorier qqch en qqch|把……涂成（某种颜色）
+E|colorier|en|L'enfant a colorié le soleil en violet.|孩子把太阳涂成了紫色。
+E|colorier|en|Coloriez les pays européens en vert.|把欧洲国家涂成绿色。
+C|comploter|contre|comploter contre qqn|密谋陷害某人
+E|comploter|contre|Ses collègues complotaient contre lui depuis des mois.|他的同事们几个月来一直在暗中算计他。
+E|comploter|contre|On l'accuse d'avoir comploté contre le gouvernement.|他被指控密谋颠覆政府。
+C|se comporter|avec|se comporter avec qqn|对待某人（的态度）
+E|se comporter|avec|Il se comporte avec ses employés comme un tyran.|他对待员工像个暴君。
+E|se comporter|avec|Elle s'est toujours comportée gentiment avec les personnes âgées.|她对老人一向很和善。
+E|se comporter|avec|Comment se comporte-t-il avec les autres enfants ?|他跟其他孩子相处得怎么样？
+C|se concerter|avec|se concerter avec qqn|与某人协商
+E|se concerter|avec|Je dois me concerter avec mon associé avant de signer.|签字之前我得和合伙人商量一下。
+E|se concerter|avec|Le ministre s'est concerté avec les syndicats.|部长与工会进行了磋商。
+C|condescendre|à|condescendre à faire qqch|屈尊做某事
+E|condescendre|à|Il a enfin condescendu à répondre à ma lettre.|他终于屈尊回了我的信。
+E|condescendre|à|La star n'a pas condescendu à saluer ses fans.|那个明星连跟粉丝打个招呼都不屑。
+C|créditer|de|créditer qqn/qqch de qqch|把（款项）记入；认为某人有……
+E|créditer|de|Votre compte sera crédité de cent euros.|您的账户将入账一百欧元。
+E|créditer|de|Les sondages le créditent de trente pour cent des voix.|民调显示他能获得百分之三十的选票。
+# ---- NEW verbs: d ----
+C|débarquer|chez|débarquer chez qqn|突然到某人家里
+E|débarquer|chez|Mes cousins ont débarqué chez nous sans prévenir.|我表兄弟们没打招呼就跑到我们家来了。
+E|débarquer|chez|Tu ne peux pas débarquer chez moi à minuit !|你不能半夜跑到我家来！
+C|débarquer|de|débarquer de qqch|从（船、飞机）上下来
+E|débarquer|de|Les passagers débarquent du ferry un par un.|乘客们一个接一个地下了渡轮。
+E|débarquer|de|Il venait de débarquer de l'avion quand je l'ai appelé.|我打电话给他时，他刚下飞机。
+N|débarquer|chez|débarquer chez qqn = 突然登门；débarquer de qqch = 下船／下飞机
+N|débarquer|de|débarquer de qqch = 下船／下飞机；débarquer chez qqn = 突然登门
+C|se débattre|contre|se débattre contre qqch|与……挣扎搏斗
+E|se débattre|contre|Il se débat contre des difficultés financières.|他在经济困境中苦苦挣扎。
+E|se débattre|contre|La petite librairie se débat contre la concurrence d'internet.|这家小书店在网络的冲击下艰难求生。
+C|débiter|en|débiter qqch en qqch|把……切成（块、片）
+E|débiter|en|Le boucher a débité la viande en petits morceaux.|屠夫把肉切成了小块。
+E|débiter|en|On débite le tronc en planches à la scierie.|在锯木厂，树干被锯成木板。
+C|déboucher|sur|déboucher sur qqch|通往；导致
+E|déboucher|sur|Cette rue débouche sur une grande place.|这条街通向一个大广场。
+E|déboucher|sur|Les discussions ont débouché sur un compromis.|讨论最终达成了妥协。
+E|déboucher|sur|Ce diplôme débouche sur de nombreux métiers.|这个文凭可以通向许多职业。
+C|débourser|pour|débourser qqch pour qqch|为……掏钱
+E|débourser|pour|J'ai déboursé deux cents euros pour ce manteau.|我为这件大衣掏了两百欧元。
+E|débourser|pour|Combien faut-il débourser pour un billet ?|一张票要花多少钱？
+C|décerner|à|décerner qqch à qqn|颁发给某人
+E|décerner|à|Le jury a décerné le premier prix à une jeune pianiste.|评委会把一等奖颁给了一位年轻的女钢琴家。
+E|décerner|à|Une médaille sera décernée à chaque participant.|每位参赛者都将获得一枚奖牌。
+C|décharger|de|décharger qqn de qqch|免除某人的（责任、任务）
+E|décharger|de|On l'a déchargé de ses fonctions.|他被解除了职务。
+E|décharger|de|Mon collègue m'a déchargé d'une partie du travail.|同事替我分担了一部分工作。
+C|se déchaîner|contre|se déchaîner contre qqn/qqch|猛烈抨击
+E|se déchaîner|contre|La presse s'est déchaînée contre le ministre.|媒体对部长展开了猛烈抨击。
+E|se déchaîner|contre|Sur les réseaux sociaux, les internautes se déchaînent contre la marque.|社交网络上，网民们对该品牌口诛笔伐。
+C|déclarer|à|déclarer qqch à qqn|向某人申报；宣布
+E|déclarer|à|Vous devez déclarer vos revenus aux impôts.|您必须向税务局申报收入。
+E|déclarer|à|En 1914, l'Allemagne a déclaré la guerre à la France.|一九一四年，德国向法国宣战。
+E|déclarer|à|Il a enfin déclaré son amour à sa voisine.|他终于向邻居女孩表白了。
+C|décomposer|en|décomposer qqch en qqch|把……分解为……
+E|décomposer|en|Décomposez ce nombre en facteurs premiers.|把这个数分解成质因数。
+E|décomposer|en|Le prisme décompose la lumière en plusieurs couleurs.|棱镜把光分解成多种颜色。
+C|découler|de|découler de qqch|由……产生；源于
+E|découler|de|Tous nos problèmes découlent de cette erreur.|我们所有的问题都源于这个错误。
+E|découler|de|Ce droit découle directement de la Constitution.|这项权利直接源于宪法。
+E|découler|de|Les retards découlaient d'une mauvaise organisation.|延误是组织不善造成的。
+C|découper|en|découper qqch en qqch|把……切成／剪成……
+E|découper|en|Découpe le gâteau en huit parts.|把蛋糕切成八块。
+E|découper|en|Elle a découpé le papier en petits carrés.|她把纸剪成了小方块。
+E|découper|en|Le livre est découpé en trois parties.|这本书分为三部分。
+C|décourager|de|décourager qqn de faire qqch|使某人打消做某事的念头
+E|décourager|de|Ses parents l'ont découragé de devenir acteur.|他父母劝他打消了当演员的念头。
+E|décourager|de|Le mauvais temps nous a découragés de sortir.|坏天气让我们没了出门的兴致。
+E|décourager|de|Ne laisse personne te décourager de poursuivre tes rêves.|别让任何人阻止你追求梦想。
+C|dédaigner|de|dédaigner de faire qqch|不屑于做某事
+E|dédaigner|de|Il dédaigne de répondre aux critiques.|他不屑回应批评。
+E|dédaigner|de|Elle a dédaigné de nous saluer.|她连招呼都懒得跟我们打。
+C|dédicacer|à|dédicacer qqch à qqn|给某人签名题赠
+E|dédicacer|à|L'auteur a dédicacé son dernier roman à ma mère.|作者给我母亲签名题赠了他的新小说。
+E|dédicacer|à|Il a dédicacé la photo à sa fan la plus jeune.|他在照片上签了名，送给最小的那位粉丝。
+C|dédommager|de|dédommager qqn de qqch|赔偿某人的（损失）
+E|dédommager|de|L'assurance va vous dédommager de tous les dégâts.|保险公司会赔偿您的全部损失。
+E|dédommager|de|La compagnie aérienne nous a dédommagés du retard.|航空公司就延误对我们进行了补偿。
+C|déduire|de|déduire qqch de qqch|从……推断出；从……中扣除
+E|déduire|de|Que faut-il déduire de son silence ?|从他的沉默中该得出什么结论呢？
+E|déduire|de|Le détective a déduit de ces indices que le voleur était gaucher.|侦探从这些线索推断出小偷是左撇子。
+E|déduire|de|Vous pouvez déduire ces frais de vos impôts.|这些费用可以从您的税款中扣除。
+C|se défaire|de|se défaire de qqch|摆脱；丢弃
+E|se défaire|de|J'ai du mal à me défaire de mes vieux livres.|我舍不得扔掉旧书。
+E|se défaire|de|Il faut te défaire de cette mauvaise habitude.|你得改掉这个坏习惯。
+E|se défaire|de|Elle s'est défaite de ses meubles avant de déménager.|搬家前她把家具都处理掉了。
+C|défier|de|défier qqn de faire qqch|激某人做某事；赌某人做不到
+E|défier|de|Je te défie de manger ce piment entier.|我赌你不敢把这整个辣椒吃下去。
+E|défier|de|Ses amis l'ont défié de sauter dans le lac.|朋友们激他跳进湖里。
+C|se défier|de|se défier de qqn/qqch|提防；不信任
+E|se défier|de|Défie-toi des gens trop aimables.|要提防过分热情的人。
+E|se défier|de|Il se défie de tout ce qui est nouveau.|他对一切新事物都心存戒备。
+C|dégénérer|en|dégénérer en qqch|恶化为……
+E|dégénérer|en|La dispute a dégénéré en bagarre.|争吵演变成了斗殴。
+E|dégénérer|en|Son rhume a dégénéré en bronchite.|他的感冒恶化成了支气管炎。
+E|dégénérer|en|La manifestation risque de dégénérer en émeute.|这场游行有可能演变成暴乱。
+C|dégoûter|de|dégoûter qqn de qqch|使某人厌恶……
+E|dégoûter|de|Ce reportage m'a dégoûté de la viande.|这个报道让我对肉倒了胃口。
+E|dégoûter|de|L'échec l'a dégoûtée de la politique.|这次失败使她对政治心灰意冷。
+E|dégoûter|de|Trop de devoirs dégoûtent les enfants de l'école.|作业太多会让孩子厌学。
+C|se délecter|de|se délecter de qqch|以……为乐；尽情享受
+E|se délecter|de|Il se délecte des malheurs des autres.|他幸灾乐祸。
+E|se délecter|de|Nous nous sommes délectés de ce fromage.|我们津津有味地享用了这块奶酪。
+C|déléguer|à|déléguer qqch à qqn|把……委托给某人
+E|déléguer|à|Un bon chef sait déléguer des tâches à son équipe.|好领导懂得把任务分派给团队。
+E|déléguer|à|Elle a délégué la gestion du budget à son adjoint.|她把预算管理交给了副手。
+C|délibérer|sur|délibérer sur qqch|就……进行审议
+E|délibérer|sur|Le conseil municipal délibère sur le nouveau budget.|市议会正在审议新预算。
+E|délibérer|sur|Le jury a délibéré pendant trois heures sur la sentence.|陪审团就判决讨论了三个小时。
+C|délier|de|délier qqn de qqch|解除某人的（誓言、义务）
+E|délier|de|Je vous délie de votre promesse.|您不必再履行对我的承诺了。
+E|délier|de|Le contrat ne le délie pas de ses obligations.|这份合同并不能免除他的义务。
+C|délivrer|de|délivrer qqn de qqch|把某人从……中解救出来
+E|délivrer|de|Le chevalier a délivré la princesse de sa prison.|骑士把公主从牢笼中救了出来。
+E|délivrer|de|Ce médicament m'a délivré de mes migraines.|这种药让我摆脱了偏头痛。
+C|déloger|de|déloger qqn de qqch|把某人从……赶出
+E|déloger|de|La police a délogé les squatteurs de l'immeuble.|警方把非法占住者赶出了大楼。
+E|déloger|de|Impossible de déloger le chat du canapé !|根本没法把猫从沙发上赶下来！
+C|se démarquer|de|se démarquer de qqn/qqch|与……区别开来；与……划清界限
+E|se démarquer|de|Cette marque cherche à se démarquer de ses concurrents.|这个品牌力图与竞争对手区别开来。
+E|se démarquer|de|Le candidat s'est démarqué de son parti sur cette question.|在这个问题上，这位候选人与本党划清了界限。
+C|se démettre|de|se démettre de qqch|辞去（职务）
+E|se démettre|de|Le ministre s'est démis de ses fonctions hier.|部长昨天辞去了职务。
+E|se démettre|de|Elle a refusé de se démettre de son mandat.|她拒绝辞去职务。
+C|démontrer|à|démontrer qqch à qqn|向某人证明
+E|démontrer|à|Il a démontré à tout le monde qu'il avait raison.|他向所有人证明了自己是对的。
+E|démontrer|à|Elle veut démontrer à ses parents qu'elle est capable de vivre seule.|她想向父母证明自己能够独立生活。
+C|démordre|de|ne pas démordre de qqch|坚持（观点）不放
+E|démordre|de|Il ne démord pas de son idée.|他死抱着自己的想法不放。
+E|démordre|de|Elle n'a jamais démordu de sa version des faits.|她一直坚持自己对事情的说法。
+C|dénoncer|à|dénoncer qqn à qqn|向……告发某人
+E|dénoncer|à|Un voisin l'a dénoncé à la police.|一个邻居向警方告发了他。
+E|dénoncer|à|Il n'a pas voulu dénoncer son camarade au professeur.|他不愿向老师揭发同学。
+C|se départir|de|se départir de qqch|放弃；失去（某种态度）
+E|se départir|de|Il ne s'est jamais départi de son calme.|他始终保持镇静。
+E|se départir|de|Elle ne se départit pas de son sourire.|她一直面带微笑。
+C|dépasser|de|dépasser qqn de qqch|比某人高出／多出（若干）
+E|dépasser|de|Mon fils me dépasse d'une tête.|我儿子比我高一个头。
+E|dépasser|de|Les dépenses ont dépassé le budget de dix pour cent.|开支超出预算百分之十。
+C|déposséder|de|déposséder qqn de qqch|剥夺某人的……
+E|déposséder|de|On les a dépossédés de leurs terres.|他们的土地被剥夺了。
+E|déposséder|de|Le roi fut dépossédé de son trône.|国王被夺去了王位。
+C|dépouiller|de|dépouiller qqn de qqch|抢走某人的……
+E|dépouiller|de|Des voleurs l'ont dépouillé de tout son argent.|小偷把他的钱全抢走了。
+E|dépouiller|de|L'automne dépouille les arbres de leurs feuilles.|秋天使树木落尽了叶子。
+C|se dépêtrer|de|se dépêtrer de qqch|从（困境）中脱身
+E|se dépêtrer|de|Il n'arrive pas à se dépêtrer de ses dettes.|他没法摆脱债务。
+E|se dépêtrer|de|Elle a mis des mois à se dépêtrer de cette affaire.|她花了几个月才从这件事里脱身。
+C|déraper|sur|déraper sur qqch|在……上打滑
+E|déraper|sur|La voiture a dérapé sur le verglas.|汽车在薄冰上打滑了。
+E|déraper|sur|Attention à ne pas déraper sur les feuilles mouillées !|小心别在湿树叶上滑倒！
+C|dériver|de|dériver de qqch|源于；派生自
+E|dériver|de|Le mot « chef » dérive du latin.|「首领」这个词源自拉丁语。
+E|dériver|de|Beaucoup de médicaments dérivent de plantes.|许多药物是从植物中提取的。
+E|dériver|de|Ces difficultés dérivent d'un manque de communication.|这些困难源于缺乏沟通。
+C|déroger|à|déroger à qqch|违背；破例不遵守
+E|déroger|à|Il ne déroge jamais à ses principes.|他从不违背自己的原则。
+E|déroger|à|Pour une fois, nous allons déroger à la règle.|这一次我们就破个例吧。
+C|descendre|de|descendre de qqch|从……下来；是……的后代
+E|descendre|de|Descends de cet arbre tout de suite !|马上从树上下来！
+E|descendre|de|Elle est descendue du train à Dijon.|她在第戎下了火车。
+E|descendre|de|Selon la légende, cette famille descend d'un roi.|据传说，这个家族是一位国王的后裔。
+C|descendre|dans|descendre dans la rue|上街（抗议）
+E|descendre|dans|Des milliers de personnes sont descendues dans la rue.|成千上万的人走上街头抗议。
+E|descendre|dans|Les étudiants descendront dans la rue jeudi.|学生们星期四将上街游行。
+N|descendre|de|descendre de qqch = 从……下来、是……的后代；descendre dans la rue = 上街抗议
+N|descendre|dans|descendre dans la rue = 上街抗议；descendre de qqch = 从……下来
+C|se désabonner|de|se désabonner de qqch|退订；取消订阅
+E|se désabonner|de|Je me suis désabonné de cette newsletter.|我退订了这份电子简报。
+E|se désabonner|de|Comment se désabonner de ce service ?|怎么取消这项服务？
+C|se désinscrire|de|se désinscrire de qqch|注销；退出（报名、名单）
+E|se désinscrire|de|Il s'est désinscrit du cours de yoga.|他退掉了瑜伽课。
+E|se désinscrire|de|Tu peux te désinscrire de la liste à tout moment.|你可以随时从名单中退出。
+C|désespérer|de|désespérer de qqch|对……感到绝望
+E|désespérer|de|Je commence à désespérer de le revoir un jour.|我开始对再见到他不抱希望了。
+E|désespérer|de|Ne désespère pas de trouver du travail, ça viendra.|别对找工作失去希望，机会总会来的。
+E|désespérer|de|Les médecins désespéraient de la sauver.|医生们对救活她已经不抱希望。
+C|se déshabituer|de|se déshabituer de qqch|戒掉（习惯）
+E|se déshabituer|de|J'essaie de me déshabituer du sucre.|我正在努力戒糖。
+E|se déshabituer|de|Il s'est déshabitué de fumer après sa maladie.|病后他戒了烟。
+C|désigner|pour|désigner qqn pour faire qqch|指派某人做某事
+E|désigner|pour|On l'a désigné pour représenter la classe.|他被选为班级代表。
+E|désigner|pour|Qui a été désigné pour ce poste ?|谁被任命担任这个职位？
+C|se désintéresser|de|se désintéresser de qqch|不再关心……
+E|se désintéresser|de|Beaucoup de jeunes se désintéressent de la politique.|许多年轻人对政治不再关心。
+E|se désintéresser|de|Il s'est peu à peu désintéressé de ses études.|他渐渐对学业失去了兴趣。
+C|désoler|de|être désolé de faire qqch|很抱歉做某事
+E|désoler|de|Je suis désolé de vous déranger si tard.|很抱歉这么晚打扰您。
+E|désoler|de|Nous sommes désolés d'apprendre la nouvelle.|得知这个消息我们很难过。
+E|désoler|de|Elle était désolée de ne pas pouvoir venir.|她很遗憾不能来。
+C|se désolidariser|de|se désolidariser de qqn/qqch|不再支持；与……撇清关系
+E|se désolidariser|de|Plusieurs députés se sont désolidarisés du gouvernement.|几位议员不再支持政府。
+E|se désolidariser|de|L'entreprise se désolidarise des propos de son directeur.|公司与其总经理的言论撇清了关系。
+C|détacher|de|détacher qqch de qqch|把……从……上取下／解开
+E|détacher|de|Détachez le coupon de la feuille.|把回执从纸上撕下来。
+E|détacher|de|Il ne pouvait pas détacher ses yeux de l'écran.|他的眼睛离不开屏幕。
+E|détacher|de|Elle a détaché le chien de l'arbre.|她把狗从树上解开了。
+C|déteindre|sur|déteindre sur qqn/qqch|掉色染到……上；对……产生影响
+E|déteindre|sur|Le pull rouge a déteint sur mes chemises blanches.|红毛衣把我的白衬衫染红了。
+E|déteindre|sur|Sa bonne humeur déteint sur toute l'équipe.|他的好心情感染了整个团队。
+C|détonner|avec|détonner avec qqch|与……不协调
+E|détonner|avec|Ce canapé moderne détonne avec le reste du salon.|这张现代沙发与客厅其他陈设格格不入。
+E|détonner|avec|Sa tenue détonnait avec l'ambiance de la soirée.|他的穿着与晚会的气氛很不协调。
+C|détourner|de|détourner qqn/qqch de qqch|使……偏离；使……转移
+E|détourner|de|Rien ne pourra le détourner de son objectif.|什么也不能让他偏离自己的目标。
+E|détourner|de|Elle a détourné les yeux de la scène.|她把目光从那一幕移开了。
+E|détourner|de|Ce jeu détourne les enfants de leurs devoirs.|这个游戏让孩子们无心做作业。
+C|déverser|dans|déverser qqch dans qqch|把……倒入……
+E|déverser|dans|L'usine déversait ses déchets dans la rivière.|工厂过去一直把废料倒进河里。
+E|déverser|dans|Le camion a déversé son sable dans le fossé.|卡车把沙子卸进了沟里。
+C|dévier|de|dévier de qqch|偏离……
+E|dévier|de|L'avion a dévié de sa trajectoire.|飞机偏离了航线。
+E|dévier|de|Ne déviez pas du sujet, s'il vous plaît.|请不要偏离主题。
+C|se dévouer|pour|se dévouer pour faire qqch|自告奋勇做某事
+E|se dévouer|pour|Qui se dévoue pour faire la vaisselle ?|谁自告奋勇去洗碗？
+E|se dévouer|pour|Je me suis dévoué pour aller chercher les pizzas.|我主动去取了比萨。
+C|se dévouer|à|se dévouer à qqn/qqch|献身于……
+E|se dévouer|à|Elle s'est dévouée à sa famille toute sa vie.|她一生都在为家庭奉献。
+E|se dévouer|à|Ce médecin se dévoue entièrement à ses patients.|这位医生全心全意为病人服务。
+N|se dévouer|pour|se dévouer pour faire qqch = 自告奋勇做（麻烦事）；se dévouer à qqch = 献身于
+N|se dévouer|à|se dévouer à qqn/qqch = 献身于；se dévouer pour faire qqch = 自告奋勇做
+C|diagnostiquer|chez|diagnostiquer qqch chez qqn|在某人身上诊断出……
+E|diagnostiquer|chez|On a diagnostiqué un diabète chez mon père.|我父亲被诊断出糖尿病。
+E|diagnostiquer|chez|Cette maladie est rarement diagnostiquée chez les enfants.|这种病很少在儿童身上被诊断出来。
+C|dialoguer|avec|dialoguer avec qqn|与某人对话
+E|dialoguer|avec|Le président veut dialoguer avec les jeunes.|总统希望与年轻人对话。
+E|dialoguer|avec|Il est impossible de dialoguer avec lui, il n'écoute personne.|没法跟他沟通，他谁的话都不听。
+C|dicter|à|dicter qqch à qqn|向某人口授；强加给某人
+E|dicter|à|Le patron dicte une lettre à sa secrétaire.|老板向秘书口述一封信。
+E|dicter|à|Tu n'as pas à dicter ta loi à tout le monde !|你没资格对所有人发号施令！
+E|dicter|à|Le professeur a dicté un texte aux élèves.|老师给学生们听写了一篇短文。
+C|diffuser|sur|diffuser qqch sur qqch|在……上播放／传播
+E|diffuser|sur|Le match sera diffusé sur la deuxième chaîne.|比赛将在二台播出。
+E|diffuser|sur|Il a diffusé la vidéo sur internet sans permission.|他未经许可把视频发到了网上。
+C|diluer|dans|diluer qqch dans qqch|把……溶解／稀释在……中
+E|diluer|dans|Diluez le sirop dans un verre d'eau froide.|把糖浆兑进一杯凉水里。
+E|diluer|dans|Le médicament doit être dilué dans du lait.|这种药要用牛奶冲服。
+C|dîner|avec|dîner avec qqn|和某人吃晚饭
+E|dîner|avec|Ce soir, je dîne avec des amis d'enfance.|今晚我和几个儿时的朋友吃晚饭。
+E|dîner|avec|Tu veux dîner avec nous samedi ?|星期六你想和我们一起吃晚饭吗？
+C|dîner|chez|dîner chez qqn|在某人家吃晚饭
+E|dîner|chez|Nous avons dîné chez mes beaux-parents dimanche.|星期天我们在岳父母家吃了晚饭。
+E|dîner|chez|On dînera chez toi ou chez moi ?|我们在你家还是在我家吃晚饭？
+C|disculper|de|disculper qqn de qqch|为某人开脱（罪责）
+E|disculper|de|Ce témoignage l'a disculpé de toute accusation.|这份证词洗清了他所有的罪名。
+E|disculper|de|Elle a essayé de disculper son fils de ce vol.|她试图为儿子开脱这次盗窃的罪责。
+C|discourir|sur|discourir sur qqch|就……高谈阔论
+E|discourir|sur|Il peut discourir des heures sur la philosophie.|他能就哲学侃侃而谈好几个小时。
+E|discourir|sur|Au lieu de discourir sur le problème, agissons !|与其空谈这个问题，不如行动起来！
+C|disparaître|de|disparaître de qqch|从……消失
+E|disparaître|de|Mon portefeuille a disparu de mon sac.|我的钱包从包里不见了。
+E|disparaître|de|Ce chanteur a disparu de la scène depuis dix ans.|这位歌手已经离开舞台十年了。
+E|disparaître|de|Disparais de ma vue !|从我眼前消失！
+C|dispenser|de|dispenser qqn de qqch|免除某人的……
+E|dispenser|de|Le médecin l'a dispensé de sport pendant un mois.|医生让他免上一个月体育课。
+E|dispenser|de|Je vous dispense de vos commentaires.|您的评论就免了吧。
+E|dispenser|de|Les enfants de moins de six ans sont dispensés de payer.|六岁以下儿童免票。
+C|disserter|sur|disserter sur qqch|就……论述
+E|disserter|sur|Les élèves doivent disserter sur la liberté.|学生们要写一篇关于自由的论文。
+E|disserter|sur|Il aime disserter sur le sens de la vie.|他喜欢大谈人生的意义。
+C|dissimuler|à|dissimuler qqch à qqn|对某人隐瞒……
+E|dissimuler|à|Il a dissimulé la vérité à sa femme.|他对妻子隐瞒了真相。
+E|dissimuler|à|Elle ne peut rien dissimuler à sa mère.|她什么都瞒不过她妈妈。
+C|se dissocier|de|se dissocier de qqn/qqch|与……划清界限
+E|se dissocier|de|Le parti s'est dissocié de ces déclarations.|该党与这些言论划清了界限。
+E|se dissocier|de|Je tiens à me dissocier de cette décision.|我要声明我与这个决定无关。
+C|distraire|de|distraire qqn de qqch|使某人从……分心
+E|distraire|de|Le bruit me distrait de mon travail.|噪音让我无法专心工作。
+E|distraire|de|Ne le distrais pas de ses révisions.|别打扰他复习。
+C|diverger|sur|diverger sur qqch|在……上有分歧
+E|diverger|sur|Les experts divergent sur ce point.|专家们在这一点上意见不一。
+E|diverger|sur|Nos avis divergent sur l'éducation des enfants.|在孩子教育问题上我们看法不同。
+C|diverger|de|diverger de qqch|与……不同；偏离
+E|diverger|de|Sa version diverge beaucoup de la mienne.|他的说法和我的相差很大。
+E|diverger|de|Les résultats divergent de nos prévisions.|结果与我们的预期有出入。
+N|diverger|sur|diverger sur qqch = 在某问题上有分歧；diverger de qqch = 与……不同
+N|diverger|de|diverger de qqch = 与……不同；diverger sur qqch = 在某问题上有分歧
+C|diviser|en|diviser qqch en qqch|把……分成……
+E|diviser|en|Le professeur a divisé la classe en quatre groupes.|老师把全班分成四个小组。
+E|diviser|en|La France est divisée en régions.|法国被划分为若干大区。
+E|diviser|en|Divise la pâte en deux boules.|把面团分成两个球。
+C|diviser|par|diviser qqch par qqch|用……除……
+E|diviser|par|Douze divisé par trois égale quatre.|十二除以三等于四。
+E|diviser|par|Divisez le total par le nombre de personnes.|用总数除以人数。
+E|diviser|par|Le prix a été divisé par deux.|价格降了一半。
+N|diviser|en|diviser en = 分成（若干份）；diviser par = 除以（数学）
+N|diviser|par|diviser par = 除以（数学）；diviser en = 分成（若干份）
+C|se documenter|sur|se documenter sur qqch|查阅关于……的资料
+E|se documenter|sur|Avant le voyage, je me suis documenté sur le Japon.|旅行前我查阅了有关日本的资料。
+E|se documenter|sur|L'écrivain s'est longuement documenté sur la Révolution.|这位作家花了很长时间研究大革命的资料。
+C|se douter|de|se douter de qqch|料到；猜到
+E|se douter|de|Je me doutais de quelque chose.|我早就觉得有点不对劲。
+E|se douter|de|Elle ne se doute de rien.|她一点都没察觉。
+E|se douter|de|Tu te doutes sûrement de la raison de ma visite.|你肯定猜得到我为什么来。
+N|se douter|de|se douter de qqch = 料到、猜到；douter de qqch = 怀疑（不相信）
+C|se draper|dans|se draper dans qqch|以……自居；裹上
+E|se draper|dans|Il se drape dans sa dignité pour ne pas s'excuser.|他摆出一副清高的样子，就是不肯道歉。
+E|se draper|dans|Elle s'est drapée dans une grande serviette.|她裹上了一条大浴巾。
+C|dresser|contre|dresser qqn contre qqn|挑唆某人反对某人
+E|dresser|contre|Elle a dressé les enfants contre leur père.|她挑唆孩子们反对他们的父亲。
+E|dresser|contre|Ce projet a dressé tout le village contre le maire.|这个计划让全村人都起来反对村长。
+# ---- TOP-UPS / new pairs on existing verbs ----
+C|cacher|à|cacher qqch à qqn|对某人隐瞒某事
+E|cacher|à|Il cache la vérité à ses parents depuis des mois.|几个月来他一直对父母隐瞒真相。
+E|cacher|à|Ne cache rien à ton médecin, c'est important.|什么都别瞒着你的医生，这很重要。
+E|cacher|à|Elle a caché sa grossesse à ses collègues.|她对同事们隐瞒了怀孕的事。
+C|se cacher|de|se cacher de qqn|躲着某人；瞒着某人
+E|se cacher|de|Il fume en se cachant de ses parents.|他瞒着父母偷偷抽烟。
+E|se cacher|de|Elle ne se cache pas de ses opinions.|她从不掩饰自己的观点。
+C|casser|en|casser qqch en qqch|把……打碎成／掰成……
+E|casser|en|Le vase s'est cassé en mille morceaux.|花瓶摔得粉碎。
+E|casser|en|Il a cassé la tablette de chocolat en deux.|他把巧克力掰成两半。
+C|causer|avec|causer avec qqn|和某人聊天
+E|causer|avec|J'ai causé un moment avec la boulangère.|我和面包店老板娘聊了一会儿。
+E|causer|avec|Les voisins aiment causer avec nous sur le balcon.|邻居们喜欢在阳台上和我们闲聊。
+C|chercher|dans|chercher qqch dans qqch|在……里找某物
+E|chercher|dans|J'ai cherché mes clés dans tous mes tiroirs.|我在所有抽屉里都找过钥匙了。
+E|chercher|dans|Cherche ce mot dans le dictionnaire.|在词典里查一下这个词。
+C|chuchoter|à|chuchoter qqch à qqn|对某人耳语
+E|chuchoter|à|Elle a chuchoté quelque chose à son voisin.|她对旁边的人低声说了些什么。
+E|chuchoter|à|Il m'a chuchoté la réponse à l'oreille.|他在我耳边悄悄说出了答案。
+C|circuler|sur|circuler sur qqch|在……上流传；在……上行驶
+E|circuler|sur|Une fausse rumeur circule sur les réseaux sociaux.|一条谣言在社交网络上流传。
+E|circuler|sur|Il est interdit de circuler sur la voie de gauche.|禁止在左侧车道行驶。
+C|classer|par|classer qqch par qqch|按……分类
+E|classer|par|Classe ces documents par date.|把这些文件按日期归类。
+E|classer|par|Les vins sont classés par région.|这些葡萄酒按产区分类。
+C|cliquer|sur|cliquer sur qqch|点击……
+E|cliquer|sur|Cliquez sur le lien pour vous inscrire.|点击链接即可注册。
+E|cliquer|sur|J'ai cliqué sur le mauvais bouton.|我点错按钮了。
+C|combattre|pour|combattre pour qqch|为……而战
+E|combattre|pour|Ils combattaient pour la liberté de leur peuple.|他们为人民的自由而战。
+E|combattre|pour|Mon grand-père a combattu pour la France en 1940.|我祖父在一九四〇年为法国作战。
+C|communiquer|avec|communiquer avec qqn|与某人交流
+E|communiquer|avec|Nous communiquons avec nos clients par mail.|我们通过邮件与客户沟通。
+E|communiquer|avec|Grâce à internet, on peut communiquer avec le monde entier.|有了互联网，人们可以和全世界交流。
+E|communiquer|avec|J'ai du mal à communiquer avec mon fils adolescent.|我很难和我十几岁的儿子沟通。
+E|comparer|avec|Compare ta réponse avec celle de ton voisin.|把你的答案和同桌的对一对。
+E|comparer|avec|Compare les prix de cette année avec ceux de l'an dernier.|把今年的价格和去年的比一比。
+C|compatir|à|compatir à qqch|同情（某人的痛苦）
+E|compatir|à|Je compatis à votre douleur.|我对您的痛苦深表同情。
+E|compatir|à|Tout le village a compati au malheur de cette famille.|全村人都同情这家人的不幸。
+E|consentir|à|Ses parents ont finalement consenti à son mariage.|她父母最终同意了她的婚事。
+E|consentir|à|Il a consenti à nous prêter sa voiture.|他答应把车借给我们。
+E|consister|en|Le repas consistait en une soupe et un peu de pain.|这顿饭就是一碗汤和一点面包。
+E|consister|en|L'examen consiste en trois épreuves écrites.|考试包括三门笔试。
+C|construire|en|construire qqch en qqch|用（某种材料）建造
+E|construire|en|Autrefois, on construisait les maisons en bois.|从前人们用木头盖房子。
+E|construire|en|Ce pont a été construit en pierre.|这座桥是用石头建的。
+C|contenter|de|se contenter de qqch|满足于；仅仅做……
+E|contenter|de|Je me contenterai d'un sandwich à midi.|中午我吃个三明治就行了。
+E|contenter|de|Il s'est contenté de sourire sans répondre.|他只是笑了笑，没有回答。
+C|convertir|à|se convertir à qqch|皈依；改用
+E|convertir|à|Elle s'est convertie au bouddhisme à trente ans.|她三十岁时皈依了佛教。
+E|convertir|à|Mon père s'est enfin converti au numérique.|我爸爸终于开始用数码产品了。
+C|correspondre|avec|correspondre avec qqn|与某人通信
+E|correspondre|avec|Je corresponds avec une amie canadienne depuis dix ans.|我和一位加拿大朋友通信十年了。
+E|correspondre|avec|Les élèves correspondent avec une classe italienne.|学生们与一个意大利班级互通书信。
+N|correspondre|avec|correspondre avec qqn = 与某人通信；correspondre à qqch = 与……相符
+N|correspondre|à|correspondre à qqch = 与……相符；correspondre avec qqn = 与某人通信
+C|couronner|de|être couronné de succès|取得成功
+E|couronner|de|Nos efforts ont enfin été couronnés de succès.|我们的努力终于获得了成功。
+E|couronner|de|L'opération n'a pas été couronnée de succès.|这次行动没有成功。
+C|critiquer|pour|critiquer qqn pour qqch|因……批评某人
+E|critiquer|pour|On l'a beaucoup critiqué pour ses propos.|他因为言论而饱受批评。
+E|critiquer|pour|Le gouvernement est critiqué pour sa lenteur.|政府因行动迟缓而受到批评。
+E|dater|de|Cette église date du douzième siècle.|这座教堂建于十二世纪。
+E|dater|de|Notre dernière rencontre date de l'été dernier.|我们上次见面还是去年夏天。
+C|différencier|de|différencier qqch de qqch|把……与……区分开
+E|différencier|de|Je n'arrive pas à différencier ce jumeau de son frère.|我分不清这对双胞胎。
+E|différencier|de|Qu'est-ce qui différencie ce téléphone des autres ?|这款手机和其他手机有什么区别？
+C|diminuer|de|diminuer de qqch|减少（若干）
+E|diminuer|de|Le nombre d'accidents a diminué de moitié.|事故数量减少了一半。
+E|diminuer|de|Les prix diminueront de cinq pour cent en janvier.|一月份价格将下降百分之五。
+C|diplômer|en|être diplômé en qqch|获得……专业的文凭
+E|diplômer|en|Ma sœur est diplômée en droit.|我姐姐拿到了法学学位。
+E|diplômer|en|Il sera bientôt diplômé en informatique.|他很快就要拿到计算机专业的文凭了。
+C|dissuader|de|dissuader qqn de faire qqch|劝阻某人做某事
+E|dissuader|de|J'ai réussi à le dissuader de démissionner.|我成功劝他打消了辞职的念头。
+E|dissuader|de|Les prix élevés dissuadent les touristes de venir.|高昂的价格让游客望而却步。
+E|distinguer|entre|Il faut savoir distinguer entre le vrai et le faux.|要学会分辨真假。
+E|distinguer|entre|Le chien ne distingue pas bien entre le rouge et le vert.|狗分不太清红色和绿色。
+E|donner|sur|Ma chambre donne sur la mer.|我的房间面朝大海。
+E|donner|sur|La porte de derrière donne sur un petit jardin.|后门通向一个小花园。
+C|débattre|sur|débattre sur qqch|就……展开辩论
+E|débattre|sur|Les députés ont débattu toute la nuit sur la réforme.|议员们就改革辩论了一整夜。
+E|débattre|sur|On pourrait débattre longtemps sur cette question.|这个问题可以争论很久。
+C|déborder|de|déborder de qqch|充满；洋溢着
+E|déborder|de|Les enfants débordent d'énergie.|孩子们精力旺盛。
+E|déborder|de|Elle débordait de joie en apprenant la nouvelle.|得知消息后她满心欢喜。
+C|débuter|par|débuter par qqch|以……开始
+E|débuter|par|Le concert a débuté par une chanson populaire.|音乐会以一首流行歌曲开场。
+E|débuter|par|Chaque journée débute par une réunion d'équipe.|每天都以团队会议开始。
+C|déchirer|en|déchirer qqch en qqch|把……撕成……
+E|déchirer|en|Il a déchiré la photo en petits morceaux.|他把照片撕成了碎片。
+E|déchirer|en|Déchire la feuille en deux et donne-m'en une moitié.|把这张纸撕成两半，给我一半。
+C|décorer|avec|décorer qqch avec qqch|用……装饰……
+E|décorer|avec|Nous avons décoré le sapin avec des guirlandes.|我们用彩带装饰了圣诞树。
+E|décorer|avec|Elle décore ses gâteaux avec des fruits frais.|她用新鲜水果装饰蛋糕。
+C|défendre|contre|défendre qqn contre qqn/qqch|保护某人免受……
+E|défendre|contre|Ces remparts défendaient la ville contre les envahisseurs.|这些城墙曾保卫城市抵御入侵者。
+E|défendre|contre|Le chien a défendu son maître contre l'agresseur.|狗保护主人免遭袭击者的伤害。
+C|déjeuner|avec|déjeuner avec qqn|和某人吃午饭
+E|déjeuner|avec|Je déjeune avec un client demain.|明天我和一位客户共进午餐。
+E|déjeuner|avec|Tu veux déjeuner avec moi à la cantine ?|你想和我一起在食堂吃午饭吗？
+C|démener|pour|se démener pour faire qqch|为做某事而四处奔忙
+E|démener|pour|Elle s'est démenée pour trouver un logement.|她为了找住处四处奔波。
+E|démener|pour|Il se démène pour que ses enfants réussissent.|他为了孩子们的成功费尽心力。
+C|dénuer|de|être dénué de qqch|毫无……
+E|dénuer|de|Ce film est dénué d'intérêt.|这部电影毫无意思。
+E|dénuer|de|C'est un homme dénué de tout scrupule.|这是个毫无顾忌的人。
+C|dépenser|pour|dépenser qqch pour qqch|为……花钱
+E|dépenser|pour|Combien as-tu dépensé pour ce voyage ?|这次旅行你花了多少钱？
+E|dépenser|pour|Ils dépensent beaucoup pour leurs vacances.|他们在度假上花很多钱。
+E|déplaire|à|Ta remarque a beaucoup déplu à ton oncle.|你的话让你舅舅很不高兴。
+E|déplaire|à|Ce genre de musique ne déplaît pas aux jeunes.|年轻人并不讨厌这类音乐。
+C|déposer|à|déposer qqn à qqch|开车把某人送到……
+E|déposer|à|Tu peux me déposer à l'aéroport demain ?|明天你能开车送我去机场吗？
+E|déposer|à|Elle dépose les enfants à l'école à huit heures.|她八点钟送孩子们去学校。
+E|désobéir|à|L'enfant a encore désobéi à sa mère.|这孩子又不听妈妈的话了。
+E|désobéir|à|Les soldats qui désobéissent aux ordres sont punis.|违抗命令的士兵会受到惩罚。
+C|se changer|en|se changer en qqch|变成……
+E|se changer|en|La citrouille s'est changée en carrosse.|南瓜变成了马车。
+E|se changer|en|Sa colère s'est vite changée en tristesse.|他的愤怒很快变成了悲伤。
+C|se couvrir|de|se couvrir de qqch|被……覆盖
+E|se couvrir|de|Le ciel se couvre de nuages noirs.|天空布满了乌云。
+E|se couvrir|de|En hiver, la montagne se couvre de neige.|冬天，山上覆盖着白雪。
+C|se dissoudre|dans|se dissoudre dans qqch|溶于……
+E|se dissoudre|dans|Le sel se dissout vite dans l'eau chaude.|盐在热水里溶解得很快。
+E|se dissoudre|dans|Ce comprimé se dissout dans un verre d'eau.|这片药可以溶在一杯水里。
+C|se distinguer|par|se distinguer par qqch|以……而出众
+E|se distinguer|par|Cette élève se distingue par sa curiosité.|这个学生以好奇心强而出众。
+E|se distinguer|par|Le restaurant se distingue par la qualité de son service.|这家餐厅以优质服务著称。
+C|se débarrasser|de|se débarrasser de qqch/qqn|摆脱；处理掉
+E|se débarrasser|de|Je voudrais me débarrasser de ces vieux meubles.|我想把这些旧家具处理掉。
+E|se débarrasser|de|On n'arrive pas à se débarrasser des souris.|我们没法赶走家里的老鼠。
+E|se débarrasser|de|Débarrasse-toi de ce manteau et assieds-toi.|把大衣脱了，坐下吧。
+C|se déplacer|en|se déplacer en qqch|乘坐（交通工具）出行
+E|se déplacer|en|En ville, je me déplace toujours en métro.|在城里我总是坐地铁出行。
+E|se déplacer|en|Elle se déplace en fauteuil roulant depuis l'accident.|车祸后她一直靠轮椅行动。

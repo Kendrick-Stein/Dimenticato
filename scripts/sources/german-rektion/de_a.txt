@@ -1,0 +1,685 @@
+# German Rektion — headwords starting with a/ä
+# ===== Top-ups for existing thin entries =====
+E|appellieren|an|A|Die Regierung appelliert an die Bürger, Energie zu sparen.|政府呼吁市民节约能源。
+E|appellieren|an|A|Der Lehrer appellierte an die Vernunft seiner Schüler.|老师诉诸学生们的理智。
+E|appellieren|an|A|Wir appellieren an alle Autofahrer, langsamer zu fahren.|我们呼吁所有司机减速慢行。
+E|sich anpassen|an|A|Kinder passen sich schnell an eine neue Umgebung an.|孩子们很快就能适应新环境。
+E|sich anpassen|an|A|Ich musste mich erst an das kalte Klima anpassen.|我得先适应寒冷的气候。
+E|sich anpassen|an|A|Die Firma hat sich an die Wünsche der Kunden angepasst.|公司已经根据客户的需求做出了调整。
+E|arbeiten|an|D|Wir arbeiten gerade an einer Lösung für das Problem.|我们正在为这个问题寻找解决办法。
+E|arbeiten|an|D|Sie hat drei Jahre an ihrer Doktorarbeit gearbeitet.|她花了三年时间写博士论文。
+E|antworten|auf|A|Bitte antworten Sie bis Freitag auf diese E-Mail.|请在周五之前回复这封邮件。
+E|antworten|auf|A|Auf meine Frage hat er nicht geantwortet.|他没有回答我的问题。
+E|aufmerksam machen|auf|A|Die Kollegin hat mich auf einen Fehler im Bericht aufmerksam gemacht.|那位同事提醒我注意报告中的一个错误。
+E|aufmerksam machen|auf|A|Mit dieser Aktion wollen wir auf den Klimawandel aufmerksam machen.|我们想通过这次活动唤起人们对气候变化的关注。
+E|aufmerksam machen|auf|A|Darf ich Sie auf unser neues Angebot aufmerksam machen?|我可以请您留意一下我们的新优惠吗？
+E|sich auswirken|auf|A|Zu wenig Schlaf wirkt sich negativ auf die Konzentration aus.|睡眠不足会对注意力产生负面影响。
+E|sich auswirken|auf|A|Wie wird sich die Krise auf die Preise auswirken?|这场危机会对物价产生怎样的影响？
+E|sich auswirken|auf|A|Die neue Regel hat sich kaum auf unseren Alltag ausgewirkt.|新规定对我们的日常生活几乎没有影响。
+E|anspielen|auf|A|Mit dieser Bemerkung spielte er auf ihren Fehler an.|他这句话是在影射她的错误。
+E|anspielen|auf|A|Worauf willst du eigentlich anspielen?|你到底在暗指什么？
+E|anspielen|auf|A|Der Titel des Films spielt auf ein berühmtes Gedicht an.|这部电影的片名暗指一首著名的诗。
+E|sich auszeichnen|durch|A|Das Hotel zeichnet sich durch seinen freundlichen Service aus.|这家酒店以服务热情见长。
+E|sich auszeichnen|durch|A|Unsere Mitarbeiterin zeichnet sich durch große Geduld aus.|我们这位员工的突出特点是极有耐心。
+E|sich auskennen|in|D|Kennst du dich in dieser Stadt aus?|你熟悉这座城市吗？
+E|sich auskennen|in|D|Mein Bruder kennt sich gut in Computertechnik aus.|我哥哥对计算机技术很在行。
+E|sich auskennen|in|D|In diesem Viertel kenne ich mich leider nicht aus.|可惜我对这个街区不熟。
+E|sich abfinden|mit|D|Sie hat sich mit der Situation abgefunden.|她已经接受了这个现状。
+E|sich abfinden|mit|D|Mit dieser Entscheidung kann ich mich nicht abfinden.|我无法接受这个决定。
+E|sich abfinden|mit|D|Man muss sich damit abfinden, dass nicht alles perfekt ist.|人必须接受并非一切都完美这一事实。
+E|sich auseinandersetzen|mit|D|Im Seminar setzen wir uns mit der deutschen Geschichte auseinander.|在研讨课上我们深入探讨德国历史。
+E|sich auseinandersetzen|mit|D|Er hat sich nie ernsthaft mit seinen Problemen auseinandergesetzt.|他从未认真面对过自己的问题。
+E|sich auseinandersetzen|mit|D|Mit diesem Thema sollte man sich gründlich auseinandersetzen.|这个话题值得深入研究。
+E|sich anfreunden|mit|D|Im Urlaub habe ich mich mit einer Familie aus Spanien angefreundet.|度假时我和一个西班牙家庭交上了朋友。
+E|sich anfreunden|mit|D|Mit dem Gedanken kann ich mich langsam anfreunden.|我慢慢开始能接受这个想法了。
+E|sich anfreunden|mit|D|Unser Sohn freundet sich schnell mit anderen Kindern an.|我们的儿子很快就能和别的孩子交上朋友。
+E|aussehen|nach|D|Es sieht nach Regen aus, nimm lieber einen Schirm mit.|看样子要下雨了，你最好带把伞。
+E|aussehen|nach|D|Das sieht ganz nach einem Missverständnis aus.|这看起来完全是个误会。
+E|sich aufregen|über|A|Mein Vater regt sich über jeden kleinen Fehler auf.|我父亲为每一个小错误都会发火。
+E|sich aufregen|über|A|Reg dich doch nicht über so eine Kleinigkeit auf!|别为这么点小事生气！
+E|abraten|von|D|Der Arzt hat mir vom Rauchen dringend abgeraten.|医生极力劝我不要吸烟。
+E|abraten|von|D|Ich würde dir von diesem Kauf abraten.|我会劝你别买这个。
+E|abraten|von|D|Freunde rieten ihr davon ab, den Job zu kündigen.|朋友们劝她不要辞职。
+E|absehen|von|D|Wir sehen diesmal von einer Strafe ab.|这次我们不予处罚。
+E|absehen|von|D|Von kleinen Fehlern abgesehen, war die Arbeit sehr gut.|除了一些小错误之外，这份作业非常好。
+E|absehen|von|D|Die Firma hat von einer Preiserhöhung abgesehen.|公司放弃了涨价。
+E|abweichen|von|D|Der Pilot musste von der geplanten Route abweichen.|飞行员不得不偏离原定航线。
+E|abweichen|von|D|Das Ergebnis weicht stark von unseren Erwartungen ab.|结果与我们的预期相差甚远。
+E|abweichen|von|D|Bitte weichen Sie nicht vom Thema ab.|请不要偏离主题。
+E|sich äußern|zu|D|Der Minister wollte sich nicht zu den Vorwürfen äußern.|部长不愿就这些指责发表评论。
+E|sich äußern|zu|D|Können Sie sich kurz zu diesem Vorschlag äußern?|您能就这个建议简单谈谈看法吗？
+E|sich äußern|zu|D|Zu seinem Privatleben äußert sich der Sänger nie.|这位歌手从不谈论他的私生活。
+E|sich äußern|über|A|Sie hat sich sehr positiv über ihre neue Chefin geäußert.|她对新上司评价很高。
+E|sich äußern|über|A|Er äußerte sich abfällig über die Politik der Regierung.|他对政府的政策颇有微词。
+E|sich äußern|über|A|Über dieses Thema möchte ich mich lieber nicht äußern.|关于这个话题我还是不发表意见为好。
+E|auffordern|zu|D|Die Polizei forderte die Menschen zum Verlassen des Gebäudes auf.|警察要求人们离开大楼。
+E|auffordern|zu|D|Er hat sie auf der Party zum Tanz aufgefordert.|他在聚会上邀请她跳舞。
+E|auffordern|zu|D|Der Lehrer fordert die Schüler zur Mitarbeit auf.|老师要求学生们积极参与课堂。
+E|adressieren|an|A|Der Brief war an meine Großmutter adressiert.|这封信是寄给我祖母的。
+E|adressieren|an|A|An wen soll ich die Beschwerde adressieren?|我该把投诉寄给谁？
+E|anknüpfen|an|A|Die neue Regierung knüpft an die Politik ihrer Vorgänger an.|新政府延续了前任的政策。
+E|anknüpfen|an|A|Ich möchte an unser letztes Gespräch anknüpfen.|我想接着我们上次的谈话继续说。
+E|anknüpfen|an|A|Der Roman knüpft an den Erfolg des ersten Bandes an.|这部小说延续了第一卷的成功。
+E|abnehmen|an|D|Seit der Diät hat er stark an Gewicht abgenommen.|节食以来他体重减轻了很多。
+E|abnehmen|an|D|Der Sturm nimmt allmählich an Stärke ab.|风暴的强度在逐渐减弱。
+E|abnehmen|an|D|Das Thema hat inzwischen an Bedeutung abgenommen.|这个话题如今已不那么重要了。
+E|arm sein|an|D|Diese Region ist arm an Bodenschätzen.|这个地区矿产资源匮乏。
+E|arm sein|an|D|Das Essen im Krankenhaus war arm an Vitaminen.|医院里的饭菜缺乏维生素。
+E|arm sein|an|D|Sein Leben war nicht arm an Abenteuern.|他的一生不乏冒险经历。
+E|Appetit haben|auf|A|Ich habe heute richtig Appetit auf Pizza.|我今天特别想吃披萨。
+E|Appetit haben|auf|A|Hast du Appetit auf etwas Süßes?|你想吃点甜的吗？
+E|Appetit haben|auf|A|Nach dem Sport hatte sie großen Appetit auf Nudeln.|运动之后她特别想吃面。
+E|Anspruch haben|auf|A|Jeder Arbeitnehmer hat Anspruch auf bezahlten Urlaub.|每个雇员都有权享受带薪假期。
+E|Anspruch haben|auf|A|Sie haben keinen Anspruch auf eine Erstattung.|您无权要求退款。
+E|Anspruch haben|auf|A|Nach dem Unfall hatte er Anspruch auf Schadenersatz.|事故发生后他有权获得赔偿。
+E|aufmerksam werden|auf|A|Wie sind Sie auf unsere Firma aufmerksam geworden?|您是怎么注意到我们公司的？
+E|aufmerksam werden|auf|A|Die Nachbarn wurden auf den Rauch aufmerksam.|邻居们注意到了烟雾。
+E|aufmerksam werden|auf|A|Durch einen Zeitungsartikel wurde ich auf das Problem aufmerksam.|我是通过一篇报纸文章注意到这个问题的。
+E|aufbauen|auf|D|Die Studie baut auf früheren Forschungen auf.|这项研究以先前的研究为基础。
+E|aufbauen|auf|D|Eine gute Beziehung baut auf Vertrauen auf.|良好的关系建立在信任之上。
+E|aufbauen|auf|D|Der zweite Kurs baut auf dem ersten auf.|第二门课是在第一门课的基础上展开的。
+E|anrufen|bei|D|Ruf doch mal bei deiner Oma an!|你给奶奶打个电话吧！
+E|anrufen|bei|D|Ich habe schon dreimal bei der Versicherung angerufen.|我已经给保险公司打了三次电话。
+E|anrufen|bei|D|Wenn es Probleme gibt, rufen Sie bitte beim Kundendienst an.|如有问题，请致电客服部。
+E|allergisch sein|gegen|A|Meine Schwester ist allergisch gegen Nüsse.|我妹妹对坚果过敏。
+E|allergisch sein|gegen|A|Bist du gegen irgendwelche Medikamente allergisch?|你对什么药物过敏吗？
+E|allergisch sein|gegen|A|Viele Menschen sind gegen Katzenhaare allergisch.|很多人对猫毛过敏。
+E|abhängig sein|von|D|Die Insel ist vom Tourismus abhängig.|这座岛依赖旅游业。
+E|abhängig sein|von|D|Mit 30 ist er immer noch von seinen Eltern abhängig.|他三十岁了还依赖父母。
+E|abhängig sein|von|D|Ob wir fahren, ist vom Wetter abhängig.|我们是否出行取决于天气。
+E|Auskunft geben|über|A|Die Mitarbeiterin gab uns Auskunft über die Öffnungszeiten.|工作人员向我们介绍了开放时间。
+E|Auskunft geben|über|A|Über laufende Verfahren können wir keine Auskunft geben.|关于正在进行的程序，我们无法提供信息。
+E|Auskunft geben|über|A|Können Sie mir Auskunft über die Zugverbindungen geben?|您能告诉我有关火车班次的信息吗？
+# ===== New headwords, part 1 =====
+R|sich amüsieren|über|A|to be amused by, to make fun of|取笑，觉得…好笑|sich über den Witz amüsieren|被这个笑话逗乐|B1
+E|sich amüsieren|über|A|Die Kinder amüsierten sich über den tollpatschigen Clown.|孩子们被那个笨手笨脚的小丑逗得很开心。
+E|sich amüsieren|über|A|Amüsierst du dich etwa über meine Aussprache?|你是在笑话我的发音吗？
+E|sich amüsieren|über|A|Alle haben sich köstlich über seine Geschichte amüsiert.|大家都被他的故事逗得哈哈大笑。
+R|sich anmelden|zu|D|to sign up for, to register for|报名参加|sich zu einem Sprachkurs anmelden|报名参加语言课程|A2
+E|sich anmelden|zu|D|Hast du dich schon zur Prüfung angemeldet?|你已经报名参加考试了吗？
+E|sich anmelden|zu|D|Ich melde mich morgen zum Schwimmkurs an.|我明天去报名游泳课。
+E|sich anmelden|zu|D|Zu dem Workshop haben sich nur fünf Leute angemeldet.|只有五个人报名参加了这个研讨会。
+R|sich anmelden|bei|D|to register with, to make an appointment with|在…登记，向…预约|sich beim Arzt anmelden|在医生那里挂号|A2
+E|sich anmelden|bei|D|Nach dem Umzug muss man sich beim Bürgeramt anmelden.|搬家后必须到市民服务处登记。
+E|sich anmelden|bei|D|Sie hat sich bei einem Fitnessstudio angemeldet.|她在一家健身房办了会员。
+E|sich anmelden|bei|D|Bitte melden Sie sich am Empfang bei der Sekretärin an.|请在前台向秘书登记。
+R|sich anschließen|an|A|to follow on from, to adjoin|紧接着，与…相连|sich an den Vortrag anschließen|紧接在报告之后|B2
+E|sich anschließen|an|A|An den Vortrag schließt sich eine Diskussion an.|报告之后紧接着是讨论。
+E|sich anschließen|an|A|An das Abendessen schloss sich ein kurzer Spaziergang an.|晚饭后紧接着是一小段散步。
+E|sich anschließen|an|A|An das Wohnzimmer schließt sich eine kleine Terrasse an.|客厅外连着一个小露台。
+R|anschließen|an|A|to connect to|把…连接到|den Drucker an den Computer anschließen|把打印机连到电脑上|B1
+E|anschließen|an|A|Kannst du den Fernseher an die Steckdose anschließen?|你能把电视插上电源吗？
+E|anschließen|an|A|Das Haus wurde letztes Jahr an das Gasnetz angeschlossen.|这栋房子去年接通了燃气管网。
+E|anschließen|an|A|Ich habe die Lautsprecher an meinen Laptop angeschlossen.|我把音箱连到了我的笔记本电脑上。
+R|angeben|mit|D|to show off with, to brag about|炫耀|mit seinem neuen Auto angeben|炫耀自己的新车|B1
+E|angeben|mit|D|Er gibt ständig mit seinem Gehalt an.|他总是炫耀自己的工资。
+E|angeben|mit|D|Hör auf, mit deinen Noten anzugeben!|别再炫耀你的分数了！
+E|angeben|mit|D|Damit musst du nicht so angeben.|这没什么好炫耀的。
+R|sich anhören|nach|D|to sound like|听起来像是|sich nach einem guten Plan anhören|听起来是个好计划|B1
+E|sich anhören|nach|D|Das hört sich nach einer tollen Idee an.|这听起来是个好主意。
+E|sich anhören|nach|D|Ihre Stimme hörte sich nach Erkältung an.|她的声音听起来像是感冒了。
+E|sich anhören|nach|D|Für mich hört sich das nach viel Arbeit an.|在我听来这意味着很多工作。
+R|aussteigen|aus|D|to get off, to get out of|从…下车；退出|aus dem Bus aussteigen|下公交车|A1
+E|aussteigen|aus|D|Wir müssen an der nächsten Haltestelle aus der Straßenbahn aussteigen.|我们得在下一站下电车。
+E|aussteigen|aus|D|Sie stieg langsam aus dem Taxi aus.|她慢慢地下了出租车。
+E|aussteigen|aus|D|Der Partner ist letztes Jahr aus dem Projekt ausgestiegen.|这个合作伙伴去年退出了项目。
+R|ausziehen|aus|D|to move out of|从…搬出|aus der Wohnung ausziehen|搬出公寓|A2
+E|ausziehen|aus|D|Mit 19 bin ich aus meinem Elternhaus ausgezogen.|我十九岁就从父母家搬出来了。
+E|ausziehen|aus|D|Unsere Nachbarn ziehen nächsten Monat aus dem Haus aus.|我们的邻居下个月要搬出这栋房子。
+E|ausziehen|aus|D|Warum willst du aus der WG ausziehen?|你为什么想从合租公寓搬出去？
+R|auswandern|nach|D|to emigrate to|移民到|nach Kanada auswandern|移民到加拿大|B1
+E|auswandern|nach|D|Seine Großeltern sind 1960 nach Australien ausgewandert.|他的祖父母于一九六零年移民到了澳大利亚。
+E|auswandern|nach|D|Viele junge Leute wollen nach Neuseeland auswandern.|很多年轻人想移民新西兰。
+E|auswandern|nach|D|Nach dem Krieg wanderte die Familie nach Amerika aus.|战后这家人移民去了美国。
+R|ausscheiden|aus|D|to leave, to be eliminated from|退出，被淘汰出|aus dem Turnier ausscheiden|被淘汰出锦标赛|B2
+E|ausscheiden|aus|D|Unsere Mannschaft ist schon in der ersten Runde aus dem Wettbewerb ausgeschieden.|我们的队伍在第一轮就被淘汰出局了。
+E|ausscheiden|aus|D|Der Direktor scheidet Ende des Jahres aus dem Unternehmen aus.|这位经理年底将离开公司。
+E|ausscheiden|aus|D|Nach der Verletzung musste sie aus dem Rennen ausscheiden.|受伤后她不得不退出比赛。
+R|austreten|aus|D|to leave, to resign from (an organisation)|退出（组织）|aus der Kirche austreten|退出教会|B2
+E|austreten|aus|D|Er ist letztes Jahr aus der Partei ausgetreten.|他去年退党了。
+E|austreten|aus|D|Warum möchtest du aus dem Sportverein austreten?|你为什么想退出体育俱乐部？
+E|austreten|aus|D|Großbritannien trat 2020 aus der Europäischen Union aus.|英国于二零二零年退出了欧盟。
+R|sich ausruhen|von|D|to rest after, to recover from|从…中休息恢复|sich von der Reise ausruhen|旅行后好好休息|B1
+E|sich ausruhen|von|D|Am Wochenende will ich mich von der anstrengenden Woche ausruhen.|周末我想从劳累的一周中缓过来。
+E|sich ausruhen|von|D|Von der langen Wanderung mussten wir uns erst einmal ausruhen.|长途徒步之后，我们得先好好歇一歇。
+E|sich ausruhen|von|D|Ruh dich erst mal vom Umzug aus!|你先从搬家的劳累中歇歇吧！
+R|sich aussprechen|für|A|to speak out in favour of|表态支持|sich für den Vorschlag aussprechen|表态支持这个建议|B2
+E|sich aussprechen|für|A|Die Mehrheit hat sich für ein Rauchverbot ausgesprochen.|大多数人表态支持禁烟。
+E|sich aussprechen|für|A|Der Bürgermeister sprach sich für den Bau einer neuen Schule aus.|市长表示支持修建一所新学校。
+E|sich aussprechen|für|A|Ich spreche mich klar für mehr Radwege aus.|我明确支持修建更多自行车道。
+R|sich aussprechen|gegen|A|to speak out against|表态反对|sich gegen die Reform aussprechen|表态反对改革|B2
+E|sich aussprechen|gegen|A|Viele Eltern haben sich gegen die Schließung der Schule ausgesprochen.|很多家长表态反对关闭这所学校。
+E|sich aussprechen|gegen|A|Die Ärztin spricht sich gegen den Einsatz des Medikaments aus.|这位医生反对使用这种药物。
+E|sich aussprechen|gegen|A|Die Gewerkschaft sprach sich deutlich gegen längere Arbeitszeiten aus.|工会明确反对延长工作时间。
+R|sich austauschen|über|A|to exchange views on|就…交流|sich über Erfahrungen austauschen|交流经验|B1
+E|sich austauschen|über|A|In der Pause tauschen sich die Studenten über die Vorlesung aus.|课间学生们交流对讲座的看法。
+E|sich austauschen|über|A|Wir haben uns lange über unsere Reisepläne ausgetauscht.|我们就各自的旅行计划聊了很久。
+E|sich austauschen|über|A|Im Forum können sich Eltern über Erziehungsfragen austauschen.|家长们可以在论坛上交流育儿问题。
+R|sich austauschen|mit|D|to exchange ideas with|与…交流|sich mit Kollegen austauschen|与同事交流|B1
+E|sich austauschen|mit|D|Ich tausche mich regelmäßig mit anderen Lehrern aus.|我定期和其他老师交流。
+E|sich austauschen|mit|D|Auf der Konferenz konnte sie sich mit Experten austauschen.|她在会议上得以与专家交流。
+E|sich austauschen|mit|D|Es hilft, sich mit Menschen in derselben Situation auszutauschen.|与处境相同的人交流是有帮助的。
+R|austauschen|gegen|A|to exchange for, to replace with|把…换成|den alten Reifen gegen einen neuen austauschen|把旧轮胎换成新的|B1
+E|austauschen|gegen|A|Der Mechaniker hat die Batterie gegen eine neue ausgetauscht.|修理工把电池换成了新的。
+E|austauschen|gegen|A|Kann ich die Hose gegen eine größere austauschen?|我可以把这条裤子换成大一号的吗？
+E|austauschen|gegen|A|Wir sollten die alten Fenster gegen moderne austauschen.|我们应该把旧窗户换成新式的。
+R|abstimmen|über|A|to vote on|就…投票表决|über den Vorschlag abstimmen|就这项提议投票|B1
+E|abstimmen|über|A|Morgen stimmt das Parlament über das neue Gesetz ab.|明天议会将就新法律进行表决。
+E|abstimmen|über|A|Die Mitglieder haben über den neuen Vorstand abgestimmt.|会员们投票选出了新的理事会。
+E|abstimmen|über|A|Lasst uns einfach darüber abstimmen!|我们干脆投票决定吧！
+R|sich absprechen|mit|D|to coordinate with, to agree with|与…商定|sich mit dem Team absprechen|与团队商量好|B2
+E|sich absprechen|mit|D|Ich muss mich erst mit meinem Partner absprechen.|我得先和我的伴侣商量一下。
+E|sich absprechen|mit|D|Der Zeuge hatte sich offenbar mit dem Angeklagten abgesprochen.|这个证人显然事先和被告串通过。
+E|sich absprechen|mit|D|Bitte sprechen Sie sich vorher mit der Abteilungsleiterin ab.|请事先与部门主管商定。
+R|abschließen|mit|D|to come to terms with, to finish with|了结，与…做个了断|mit der Vergangenheit abschließen|与过去做个了断|B2
+E|abschließen|mit|D|Nach der Trennung wollte sie endlich mit dem Thema abschließen.|分手之后她想彻底放下这件事。
+E|abschließen|mit|D|Er hat mit seinem alten Leben abgeschlossen.|他已经和过去的生活一刀两断了。
+E|abschließen|mit|D|Mit dieser Beziehung habe ich endgültig abgeschlossen.|这段感情我已经彻底放下了。
+R|ablenken|von|D|to distract from|使从…分心|jemanden von der Arbeit ablenken|使某人工作分心|B1
+E|ablenken|von|D|Das Handy lenkt mich ständig vom Lernen ab.|手机总让我学习时分心。
+E|ablenken|von|D|Er versuchte, vom eigentlichen Problem abzulenken.|他试图转移对真正问题的注意力。
+E|ablenken|von|D|Ein Spaziergang lenkt dich vielleicht von deinen Sorgen ab.|散散步或许能让你暂时忘却烦恼。
+R|abhalten|von|D|to keep from, to prevent from|阻止…做|jemanden von der Arbeit abhalten|妨碍某人工作|B2
+E|abhalten|von|D|Der Regen hielt uns nicht vom Spaziergang ab.|下雨也没能阻止我们去散步。
+E|abhalten|von|D|Ich will dich nicht von deiner Arbeit abhalten.|我不想耽误你工作。
+E|abhalten|von|D|Nichts kann ihn davon abhalten, seinen Traum zu verwirklichen.|没有什么能阻止他实现梦想。
+R|abbringen|von|D|to dissuade from|劝阻…放弃|jemanden von seinem Plan abbringen|劝某人放弃计划|C1
+E|abbringen|von|D|Niemand konnte sie von ihrer Idee abbringen.|谁也劝不动她放弃这个想法。
+E|abbringen|von|D|Seine Freunde versuchten, ihn vom Glücksspiel abzubringen.|他的朋友们试图劝他戒赌。
+E|abbringen|von|D|Davon lasse ich mich nicht abbringen.|我不会被劝退的。
+R|abkommen|von|D|to stray from, to deviate from|偏离|vom Weg abkommen|迷路，偏离道路|B2
+E|abkommen|von|D|Bei Glatteis kam das Auto von der Straße ab.|路面结冰时汽车驶离了道路。
+E|abkommen|von|D|Wir sind vom Thema abgekommen.|我们跑题了。
+E|abkommen|von|D|Die Firma ist inzwischen von diesem Konzept abgekommen.|公司如今已放弃了这个方案。
+R|abstammen|von|D|to be descended from|是…的后代，源自|von einer alten Familie abstammen|出身于古老家族|B2
+E|abstammen|von|D|Der Mensch und der Affe stammen von gemeinsamen Vorfahren ab.|人类和猿类源自共同的祖先。
+E|abstammen|von|D|Sie stammt von französischen Einwanderern ab.|她是法国移民的后代。
+E|abstammen|von|D|Viele deutsche Wörter stammen vom Lateinischen ab.|很多德语单词源自拉丁语。
+R|sich abgrenzen|von|D|to distance oneself from, to set oneself apart from|与…划清界限|sich von den anderen abgrenzen|与其他人划清界限|C1
+E|sich abgrenzen|von|D|Jugendliche wollen sich oft von ihren Eltern abgrenzen.|青少年常常想和父母划清界限。
+E|sich abgrenzen|von|D|Die Partei grenzt sich klar von extremen Positionen ab.|该党明确与极端立场划清界限。
+E|sich abgrenzen|von|D|Im Job musst du lernen, dich von fremden Problemen abzugrenzen.|在工作中你得学会不被别人的问题牵着走。
+R|abheben|von|D|to withdraw from|从…提取|Geld vom Konto abheben|从账户取钱|A2
+E|abheben|von|D|Ich muss noch schnell Geld von meinem Sparkonto abheben.|我还得赶紧从储蓄账户里取点钱。
+E|abheben|von|D|Er hat gestern 200 Euro von seinem Girokonto abgehoben.|他昨天从活期账户里取了两百欧元。
+E|abheben|von|D|Von diesem Konto kann man nur einmal im Monat Geld abheben.|这个账户每月只能取一次钱。
+R|sich abheben|von|D|to stand out from|与…形成对比，从…中突显出来|sich von der Konkurrenz abheben|从竞争对手中脱颖而出|C1
+E|sich abheben|von|D|Mit diesem Design hebt sich das Produkt von der Konkurrenz ab.|凭借这个设计，该产品在竞争中脱颖而出。
+E|sich abheben|von|D|Die roten Dächer heben sich schön vom blauen Himmel ab.|红色屋顶在蓝天映衬下格外好看。
+E|sich abheben|von|D|Wodurch hebt sich Ihre Bewerbung von den anderen ab?|您的求职申请与其他人相比有何突出之处？
+R|abholen|von|D|to pick up from|从…接|jemanden vom Bahnhof abholen|去火车站接某人|A1
+E|abholen|von|D|Kannst du mich um sechs vom Flughafen abholen?|你六点能到机场接我吗？
+E|abholen|von|D|Ich hole die Kinder heute von der Schule ab.|今天我去学校接孩子。
+E|abholen|von|D|Sie hat das Paket von der Post abgeholt.|她去邮局取了包裹。
+R|absteigen|von|D|to get off, to dismount from|从…下来|vom Fahrrad absteigen|下自行车|B1
+E|absteigen|von|D|An der Ampel stieg sie vom Rad ab.|她在红绿灯前下了自行车。
+E|absteigen|von|D|Der Reiter ist vorsichtig vom Pferd abgestiegen.|骑手小心地下了马。
+E|absteigen|von|D|Bitte steigen Sie in der Fußgängerzone vom Fahrrad ab.|在步行区请下车推行。
+R|abziehen|von|D|to deduct from, to subtract from|从…扣除|die Steuern vom Gehalt abziehen|从工资里扣税|B1
+E|abziehen|von|D|Die Miete wird direkt von meinem Lohn abgezogen.|房租直接从我的工资里扣。
+E|abziehen|von|D|Wenn man drei von zehn abzieht, bleiben sieben.|十减三等于七。
+E|abziehen|von|D|Für jeden Fehler wird ein Punkt von der Gesamtpunktzahl abgezogen.|每个错误扣一分。
+# ===== New headwords, part 2 =====
+R|abgeben|an|A|to hand over to, to pass on to|把…交给|die Verantwortung an den Nachfolger abgeben|把责任移交给继任者|B1
+E|abgeben|an|A|Beim Auszug müssen Sie alle Schlüssel an den Hausmeister abgeben.|搬出时您必须把所有钥匙交给管理员。
+E|abgeben|an|A|Der Chef hat einen Teil seiner Aufgaben an seine Stellvertreterin abgegeben.|老板把一部分工作交给了他的副手。
+E|abgeben|an|A|Wir geben unsere alten Möbel kostenlos an Studenten ab.|我们把旧家具免费送给学生。
+R|anfragen|bei|D|to enquire with|向…询问|bei der Firma anfragen|向公司询问|B2
+E|anfragen|bei|D|Ich habe beim Hotel angefragt, ob noch Zimmer frei sind.|我问过酒店是否还有空房。
+E|anfragen|bei|D|Fragen Sie am besten direkt bei der Stadtverwaltung an.|您最好直接向市政府咨询。
+E|anfragen|bei|D|Wir werden bei mehreren Anbietern nach einem Angebot anfragen.|我们会向几家供应商询价。
+R|sich anlehnen|an|A|to lean against; to be modelled on|靠在…上；仿照|sich an die Wand anlehnen|靠在墙上|B2
+E|sich anlehnen|an|A|Müde lehnte sie sich an die Schulter ihres Freundes an.|她疲倦地靠在男友肩上。
+E|sich anlehnen|an|A|Der Film lehnt sich stark an den gleichnamigen Roman an.|这部电影在很大程度上借鉴了同名小说。
+E|sich anlehnen|an|A|Die Architektur lehnt sich an antike Vorbilder an.|这座建筑仿照了古典范例。
+R|sich annähern|an|A|to approach, to move closer to|向…靠拢，接近|sich an die Position des Gegners annähern|向对方立场靠拢|C1
+E|sich annähern|an|A|Die Gewerkschaft hat sich an die Position der Arbeitgeber angenähert.|工会向雇主的立场靠拢了。
+E|sich annähern|an|A|Die Preise nähern sich langsam an das Niveau vor der Krise an.|价格正慢慢接近危机前的水平。
+E|sich annähern|an|A|Mit den Jahren hat sich der Sohn wieder an seinen Vater angenähert.|这些年来，儿子和父亲又慢慢亲近了起来。
+R|sich anlegen|mit|D|to pick a fight with|与…作对，招惹|sich mit dem Chef anlegen|跟老板对着干|B2
+E|sich anlegen|mit|D|Mit dem solltest du dich lieber nicht anlegen.|你最好别去招惹他。
+E|sich anlegen|mit|D|Sie hat sich schon wieder mit der Nachbarin angelegt.|她又和邻居吵起来了。
+E|sich anlegen|mit|D|Wer sich mit der Mafia anlegt, lebt gefährlich.|与黑手党作对的人会有危险。
+R|ankämpfen|gegen|A|to fight against|与…抗争|gegen die Müdigkeit ankämpfen|与困意作斗争|B2
+E|ankämpfen|gegen|A|Der Schwimmer musste gegen die starke Strömung ankämpfen.|游泳者不得不与强劲的水流搏斗。
+E|ankämpfen|gegen|A|Sie kämpft seit Jahren gegen ihre Angst vor dem Fliegen an.|多年来她一直在克服对飞行的恐惧。
+E|ankämpfen|gegen|A|Während des Vortrags kämpfte ich gegen den Schlaf an.|讲座期间我一直在和睡意作斗争。
+R|anrechnen|auf|A|to credit towards, to count towards|把…计入|die Zeit auf das Studium anrechnen|把这段时间计入学业|C1
+E|anrechnen|auf|A|Das Praktikum wird auf die Ausbildung angerechnet.|这段实习可以计入培训时间。
+E|anrechnen|auf|A|Die Anzahlung rechnen wir auf den Gesamtpreis an.|定金我们会从总价里抵扣。
+E|anrechnen|auf|A|Können mir die Kurse aus Spanien auf mein Studium angerechnet werden?|我在西班牙修的课程能计入我的学业吗？
+R|sich anstecken|bei|D|to catch an illness from|被…传染|sich bei einem Kollegen anstecken|被同事传染|B1
+E|sich anstecken|bei|D|Ich habe mich bei meiner Tochter mit der Grippe angesteckt.|我被女儿传染了流感。
+E|sich anstecken|bei|D|Pass auf, dass du dich nicht bei ihm ansteckst!|小心别被他传染了！
+E|sich anstecken|bei|D|Wahrscheinlich hat sie sich bei einem Kind im Kindergarten angesteckt.|她很可能是被幼儿园里的一个孩子传染的。
+R|anstoßen|auf|A|to toast to|为…干杯|auf das Geburtstagskind anstoßen|为寿星干杯|B1
+E|anstoßen|auf|A|Lasst uns auf das neue Jahr anstoßen!|让我们为新年干杯！
+E|anstoßen|auf|A|Wir haben mit Sekt auf ihren Erfolg angestoßen.|我们用起泡酒为她的成功干杯。
+E|anstoßen|auf|A|Worauf wollen wir anstoßen?|我们为什么干杯呢？
+R|ansprechen|auf|A|to ask someone about, to approach someone about|就…向某人问起|jemanden auf das Problem ansprechen|就这个问题向某人提起|B2
+E|ansprechen|auf|A|Ein Journalist sprach die Ministerin auf den Skandal an.|一位记者向部长问起了那桩丑闻。
+E|ansprechen|auf|A|Ich werde meinen Chef morgen auf eine Gehaltserhöhung ansprechen.|明天我要跟老板提加薪的事。
+E|ansprechen|auf|A|Sie wird oft auf ihren Akzent angesprochen.|经常有人问起她的口音。
+R|anwenden|auf|A|to apply to|把…应用于|die Regel auf den Fall anwenden|把规则应用于此案|B2
+E|anwenden|auf|A|Diese Methode lässt sich auf viele Probleme anwenden.|这种方法可以应用于许多问题。
+E|anwenden|auf|A|Man darf das Gesetz nicht einfach auf jeden Fall anwenden.|不能把这条法律简单地套用到每个案例上。
+E|anwenden|auf|A|Die Schüler sollen die Formel auf eine neue Aufgabe anwenden.|学生们要把公式运用到一道新题上。
+R|abzielen|auf|A|to aim at|旨在，针对|auf junge Kunden abzielen|针对年轻客户|C1
+E|abzielen|auf|A|Die Werbung zielt vor allem auf Jugendliche ab.|这则广告主要针对青少年。
+E|abzielen|auf|A|Worauf zielt deine Frage eigentlich ab?|你这个问题到底想问什么？
+E|abzielen|auf|A|Die Reform zielt auf eine Senkung der Kosten ab.|这项改革旨在降低成本。
+R|antreten|gegen|A|to compete against|与…比赛|gegen den Titelverteidiger antreten|迎战卫冕冠军|B2
+E|antreten|gegen|A|Am Samstag tritt unser Verein gegen Bayern München an.|周六我们俱乐部将迎战拜仁慕尼黑。
+E|antreten|gegen|A|Bei der Wahl tritt sie gegen den amtierenden Bürgermeister an.|她将在选举中挑战现任市长。
+E|antreten|gegen|A|Gegen wen musst du im Finale antreten?|你在决赛中要对阵谁？
+R|anhalten|zu|D|to urge to, to encourage to|督促…做|die Kinder zur Ordnung anhalten|督促孩子们守规矩|C1
+E|anhalten|zu|D|Die Eltern hielten ihre Kinder zur Sparsamkeit an.|父母督促孩子们要节俭。
+E|anhalten|zu|D|Der Trainer hält die Spieler zu mehr Disziplin an.|教练督促队员们更加自律。
+E|anhalten|zu|D|Unsere Lehrerin hat uns stets zum selbstständigen Denken angehalten.|我们的老师总是鼓励我们独立思考。
+R|anhalten|um|A|to propose to, to ask for someone's hand|向…求婚|um ihre Hand anhalten|向她求婚|C1
+E|anhalten|um|A|Er hielt beim Abendessen um ihre Hand an.|他在晚餐时向她求婚了。
+E|anhalten|um|A|Früher musste man beim Vater um die Hand der Tochter anhalten.|过去求婚要先向女方的父亲提亲。
+E|anhalten|um|A|Nach fünf Jahren Beziehung hat er endlich um ihre Hand angehalten.|恋爱五年后他终于向她求婚了。
+R|anstiften|zu|D|to incite to|唆使…做|jemanden zu einem Verbrechen anstiften|教唆某人犯罪|C1
+E|anstiften|zu|D|Der ältere Junge hatte die anderen zum Diebstahl angestiftet.|那个大一点的男孩唆使其他人去偷东西。
+E|anstiften|zu|D|Die Polizei vermutet, dass jemand die Jugendlichen zu der Tat angestiftet hat.|警方怀疑有人唆使这些青少年作案。
+E|anstiften|zu|D|Wer hat dich zu diesem Unsinn angestiftet?|是谁怂恿你干这种蠢事的？
+R|animieren|zu|D|to encourage to, to motivate to|鼓动…做|jemanden zum Mitmachen animieren|鼓动某人参与|B2
+E|animieren|zu|D|Die Musik animierte alle Gäste zum Tanzen.|音乐带动所有客人跳起舞来。
+E|animieren|zu|D|Die App soll Nutzer zu mehr Bewegung animieren.|这款应用旨在鼓励用户多运动。
+E|animieren|zu|D|Der Moderator animierte das Publikum zum Mitsingen.|主持人带动观众一起唱。
+R|anspornen|zu|D|to spur on to|激励…做|jemanden zu Höchstleistungen anspornen|激励某人发挥最佳水平|C1
+E|anspornen|zu|D|Die Zuschauer spornten die Läufer zu einem schnelleren Tempo an.|观众们激励跑步者加快速度。
+E|anspornen|zu|D|Das Lob hat ihn zu noch mehr Fleiß angespornt.|这番表扬激励他更加勤奋。
+E|anspornen|zu|D|Eine gute Note kann Schüler zum Weiterlernen anspornen.|好成绩能激励学生继续学习。
+R|antreiben|zu|D|to drive to, to push to|驱使…做|jemanden zur Eile antreiben|催促某人快点|B2
+E|antreiben|zu|D|Die Angst vor dem Scheitern trieb sie zu immer mehr Arbeit an.|对失败的恐惧驱使她越来越拼命地工作。
+E|antreiben|zu|D|Der Busfahrer trieb die Touristen zur Eile an.|司机催促游客们快点。
+E|antreiben|zu|D|Was treibt ihn zu solchen Leistungen an?|是什么驱使他取得这样的成绩？
+R|anregen|zu|D|to stimulate to, to prompt to|激发…做|zum Nachdenken anregen|引人深思|B2
+E|anregen|zu|D|Der Film regt zum Nachdenken an.|这部电影引人深思。
+E|anregen|zu|D|Die Lehrerin regte die Klasse zu einer Diskussion an.|老师引导全班展开讨论。
+E|anregen|zu|D|Das schöne Wetter hat uns zu einem Ausflug angeregt.|好天气让我们起了出游的念头。
+R|angehen|gegen|A|to take action against|采取措施反对，对付|gegen die Entscheidung angehen|对这个决定提出抗争|C1
+E|angehen|gegen|A|Die Anwohner wollen gegen den Lärm vom Flughafen angehen.|居民们想采取措施对付机场的噪音。
+E|angehen|gegen|A|Die Stadt geht entschlossen gegen illegale Müllentsorgung an.|市政府坚决打击非法倾倒垃圾。
+E|angehen|gegen|A|Er ist rechtlich gegen die Kündigung angegangen.|他通过法律途径对解雇提出了抗争。
+R|ansteigen|auf|A|to rise to|上升到|auf 30 Grad ansteigen|上升到三十度|B2
+E|ansteigen|auf|A|Die Temperatur steigt morgen auf 35 Grad an.|明天气温将升至三十五度。
+E|ansteigen|auf|A|Die Zahl der Studierenden ist auf über 20000 angestiegen.|学生人数已增至两万多人。
+E|ansteigen|auf|A|Der Wasserspiegel stieg in der Nacht auf fast acht Meter an.|夜里水位上涨到将近八米。
+R|anwachsen|auf|A|to grow to|增长到|auf eine Million anwachsen|增长到一百万|C1
+E|anwachsen|auf|A|Die Schulden sind inzwischen auf mehrere Millionen angewachsen.|债务已经增长到几百万。
+E|anwachsen|auf|A|Die kleine Demonstration wuchs schnell auf tausende Teilnehmer an.|这场小规模示威很快增长到数千人。
+E|anwachsen|auf|A|Bis 2050 könnte die Bevölkerung auf zehn Milliarden anwachsen.|到二零五零年人口可能增长到一百亿。
+R|anbinden|an|A|to tie to|把…拴在|den Hund an den Baum anbinden|把狗拴在树上|B1
+E|anbinden|an|A|Er hat sein Boot an einen Pfahl angebunden.|他把船拴在一根木桩上。
+E|anbinden|an|A|Vor dem Laden band sie ihr Pferd an den Zaun an.|她在商店前把马拴在篱笆上。
+E|anbinden|an|A|Das Dorf soll besser an das Verkehrsnetz angebunden werden.|这个村子应该更好地接入交通网络。
+R|anhängen|an|A|to attach to|把…附加到，挂到|eine Datei an die E-Mail anhängen|在邮件中添加附件|B1
+E|anhängen|an|A|Ich habe meinen Lebenslauf an die Nachricht angehängt.|我把简历附在消息里了。
+E|anhängen|an|A|Der Bauer hängte den Anhänger an den Traktor an.|农夫把拖车挂到拖拉机上。
+E|anhängen|an|A|Vergiss nicht, die Fotos an die Mail anzuhängen!|别忘了把照片附在邮件里！
+R|abfärben|auf|A|to rub off on|影响到，传染给|auf die Kinder abfärben|影响到孩子们|C1
+E|abfärben|auf|A|Die rote Socke hat auf die weiße Wäsche abgefärbt.|那只红袜子把白衣服染色了。
+E|abfärben|auf|A|Ihre gute Laune färbt auf das ganze Team ab.|她的好心情感染了整个团队。
+E|abfärben|auf|A|Die schlechten Gewohnheiten seiner Freunde färben langsam auf ihn ab.|朋友们的坏习惯渐渐影响到了他。
+R|anreisen|mit|D|to travel (to a destination) by|乘…前往|mit der Bahn anreisen|乘火车前往|B1
+E|anreisen|mit|D|Die meisten Gäste reisen mit dem Auto an.|大多数客人都是开车来的。
+E|anreisen|mit|D|Wir empfehlen, mit öffentlichen Verkehrsmitteln anzureisen.|我们建议乘坐公共交通前来。
+E|anreisen|mit|D|Sie ist gestern mit dem Flugzeug aus Peking angereist.|她昨天从北京乘飞机抵达。
+R|ausüben|auf|A|to exert on|对…施加|Druck auf jemanden ausüben|对某人施压|B2
+E|ausüben|auf|A|Die Eltern übten großen Druck auf ihren Sohn aus.|父母给儿子施加了很大压力。
+E|ausüben|auf|A|Das Meer übt eine besondere Faszination auf mich aus.|大海对我有一种特别的吸引力。
+E|ausüben|auf|A|Der Mond übt eine starke Anziehungskraft auf die Erde aus.|月球对地球施加着强大的引力。
+R|auslösen|bei|D|to trigger in, to cause in|在…身上引起|eine Allergie bei jemandem auslösen|引起某人过敏|B2
+E|auslösen|bei|D|Die Nachricht löste bei allen große Freude aus.|这个消息让所有人都非常高兴。
+E|auslösen|bei|D|Erdbeeren lösen bei manchen Menschen eine Allergie aus.|草莓会引起某些人过敏。
+E|auslösen|bei|D|Seine Bemerkung hat bei den Zuhörern Empörung ausgelöst.|他的话在听众中引起了愤慨。
+R|aufsteigen|zu|D|to rise to, to be promoted to|晋升为|zum Abteilungsleiter aufsteigen|晋升为部门主管|B2
+E|aufsteigen|zu|D|Innerhalb von fünf Jahren stieg sie zur Direktorin auf.|五年之内她就升任总监。
+E|aufsteigen|zu|D|Die kleine Firma ist zum Marktführer aufgestiegen.|这家小公司已跃升为市场领头羊。
+E|aufsteigen|zu|D|Er möchte eines Tages zum Kapitän der Mannschaft aufsteigen.|他希望有一天能成为球队队长。
+R|aufsehen|zu|D|to look up to|敬仰，仰视|zu seinem Vater aufsehen|敬仰自己的父亲|B2
+E|aufsehen|zu|D|Die jüngeren Schüler sehen zu ihm auf.|低年级学生都很敬仰他。
+E|aufsehen|zu|D|Als Kind habe ich immer zu meiner großen Schwester aufgesehen.|小时候我一直很崇拜我姐姐。
+E|aufsehen|zu|D|Zu einem so mutigen Menschen kann man nur aufsehen.|对这样勇敢的人，只能心生敬仰。
+R|aufblicken|zu|D|to look up to, to admire|仰望，敬仰|zu einem Vorbild aufblicken|敬仰榜样|B2
+E|aufblicken|zu|D|Viele Jugendliche blicken zu Sportstars auf.|很多青少年崇拜体育明星。
+E|aufblicken|zu|D|Er blickte bewundernd zu seinem Lehrer auf.|他满怀敬佩地仰望着自己的老师。
+E|aufblicken|zu|D|Die Kinder blickten staunend zu dem riesigen Baum auf.|孩子们惊奇地仰望着那棵大树。
+# ===== New headwords, part 3 =====
+R|aufnehmen|in|A|to admit to, to include in|接纳进，收入|jemanden in den Verein aufnehmen|接纳某人入会|B1
+E|aufnehmen|in|A|Sie wurde in das Förderprogramm der Universität aufgenommen.|她被大学的资助项目录取了。
+E|aufnehmen|in|A|Das Wort wurde erst 2010 in den Duden aufgenommen.|这个词直到二零一零年才被收入杜登词典。
+E|aufnehmen|in|A|Wir möchten Sie gern in unser Team aufnehmen.|我们很愿意让您加入我们的团队。
+R|aufteilen|in|A|to divide into|把…分成|den Kuchen in zwölf Stücke aufteilen|把蛋糕切成十二块|B1
+E|aufteilen|in|A|Der Lehrer teilte die Klasse in vier Gruppen auf.|老师把全班分成四个小组。
+E|aufteilen|in|A|Das Buch ist in drei Teile aufgeteilt.|这本书分为三个部分。
+E|aufteilen|in|A|Wir sollten die Arbeit in kleinere Aufgaben aufteilen.|我们应该把工作分解成较小的任务。
+R|aufteilen|unter|D|to share out among|在…之间分配|das Erbe unter den Kindern aufteilen|在孩子们之间分配遗产|B2
+E|aufteilen|unter|D|Die Beute wurde unter den Dieben aufgeteilt.|赃物在小偷之间瓜分了。
+E|aufteilen|unter|D|Wir teilen die Kosten gerecht unter uns auf.|我们把费用在彼此之间公平分摊。
+E|aufteilen|unter|D|Das Geld soll unter allen Mitarbeitern aufgeteilt werden.|这笔钱将分给所有员工。
+R|ausbrechen|aus|D|to break out of, to escape from|从…逃出|aus dem Gefängnis ausbrechen|越狱|B2
+E|ausbrechen|aus|D|Zwei Häftlinge sind letzte Nacht aus dem Gefängnis ausgebrochen.|昨晚有两名犯人越狱了。
+E|ausbrechen|aus|D|Ein Tiger ist aus dem Zoo ausgebrochen.|一只老虎从动物园逃了出来。
+E|ausbrechen|aus|D|Manchmal möchte ich einfach aus dem Alltag ausbrechen.|有时我真想逃离日常生活。
+R|ausbrechen|in|A|to burst into|突然…起来|in Tränen ausbrechen|突然大哭起来|B2
+E|ausbrechen|in|A|Als sie die Nachricht hörte, brach sie in Tränen aus.|听到这个消息，她一下子哭了出来。
+E|ausbrechen|in|A|Das Publikum brach in lauten Jubel aus.|观众爆发出热烈的欢呼声。
+E|ausbrechen|in|A|Bei seinem Witz sind alle in Gelächter ausgebrochen.|听了他的笑话，大家哄堂大笑。
+R|auswählen|aus|D|to choose from, to select from|从…中挑选|ein Kleid aus dem Katalog auswählen|从目录中挑一条裙子|A2
+E|auswählen|aus|D|Sie können aus drei verschiedenen Menüs auswählen.|您可以从三种不同的套餐中选择。
+E|auswählen|aus|D|Die Jury wählte den Sieger aus über hundert Bewerbern aus.|评委从一百多名申请者中选出了获胜者。
+E|auswählen|aus|D|Wähl dir ein Buch aus meinem Regal aus!|从我的书架上挑一本书吧！
+R|sich aufhalten|mit|D|to waste time on, to dwell on|在…上耽搁时间|sich nicht mit Details aufhalten|不在细节上浪费时间|C1
+E|sich aufhalten|mit|D|Wir sollten uns nicht zu lange mit dieser Frage aufhalten.|我们不该在这个问题上耽搁太久。
+E|sich aufhalten|mit|D|Mit Kleinigkeiten hält sich der Chef nicht auf.|老板不在琐事上浪费时间。
+E|sich aufhalten|mit|D|Halte dich nicht mit der Einleitung auf, komm zum Punkt!|别在开场白上磨蹭了，直接说重点！
+R|aufkommen|für|A|to pay for, to be liable for|承担…的费用|für den Schaden aufkommen|赔偿损失|C1
+E|aufkommen|für|A|Die Versicherung kommt für den Schaden am Auto auf.|保险公司负责赔偿汽车的损失。
+E|aufkommen|für|A|Wer kommt für die Kosten der Reparatur auf?|修理费由谁来承担？
+E|aufkommen|für|A|Die Eltern müssen für den Unterhalt ihrer Kinder aufkommen.|父母必须承担子女的抚养费。
+R|sich aufopfern|für|A|to sacrifice oneself for|为…牺牲自己|sich für die Familie aufopfern|为家庭牺牲自己|C1
+E|sich aufopfern|für|A|Meine Mutter hat sich jahrelang für uns aufgeopfert.|我母亲多年来一直为我们无私奉献。
+E|sich aufopfern|für|A|Er opfert sich völlig für seine Firma auf.|他为公司完全牺牲了自己。
+E|sich aufopfern|für|A|Man sollte sich nicht ganz für andere aufopfern.|人不应该完全为别人牺牲自己。
+R|aufwenden|für|A|to spend on, to devote to|在…上花费|viel Zeit für das Projekt aufwenden|在项目上花费大量时间|C1
+E|aufwenden|für|A|Die Stadt hat Millionen für die Renovierung des Theaters aufgewendet.|市政府花了几百万翻修剧院。
+E|aufwenden|für|A|Wie viel Zeit wendest du täglich für deine Hausaufgaben auf?|你每天在家庭作业上花多少时间？
+E|aufwenden|für|A|Für die Forschung wurden enorme Mittel aufgewendet.|这项研究投入了巨额资金。
+R|aufbringen|für|A|to muster, to summon up for|对…拿出，筹集|Verständnis für jemanden aufbringen|对某人表示理解|C1
+E|aufbringen|für|A|Für sein Verhalten kann ich kein Verständnis aufbringen.|我无法理解他的行为。
+E|aufbringen|für|A|Sie konnte nicht genug Geld für die Miete aufbringen.|她凑不够房租。
+E|aufbringen|für|A|Er bringt einfach keine Geduld für kleine Kinder auf.|他对小孩子就是没有耐心。
+R|aufheben|für|A|to save for, to keep for|为…保留|ein Stück Kuchen für später aufheben|留一块蛋糕以后吃|B1
+E|aufheben|für|A|Ich habe dir ein Stück Pizza für morgen aufgehoben.|我给你留了一块披萨明天吃。
+E|aufheben|für|A|Die guten Nachrichten heben wir uns für den Schluss auf.|好消息我们留到最后说。
+E|aufheben|für|A|Sie hebt die alten Briefe für ihre Enkel auf.|她把那些旧信保留下来留给孙辈。
+R|aufschieben|auf|A|to postpone until|把…推迟到|die Arbeit auf morgen aufschieben|把工作推到明天|B2
+E|aufschieben|auf|A|Er schiebt unangenehme Aufgaben immer auf den letzten Moment auf.|他总是把讨厌的任务拖到最后一刻。
+E|aufschieben|auf|A|Wir müssen die Hochzeit auf den nächsten Sommer aufschieben.|我们不得不把婚礼推迟到明年夏天。
+E|aufschieben|auf|A|Der Termin wurde auf nächste Woche aufgeschoben.|约会被推迟到了下周。
+R|sich auflehnen|gegen|A|to rebel against|反抗|sich gegen die Eltern auflehnen|反抗父母|C1
+E|sich auflehnen|gegen|A|Die Bauern lehnten sich gegen die hohen Steuern auf.|农民们起来反抗高额赋税。
+E|sich auflehnen|gegen|A|In der Pubertät lehnen sich viele Jugendliche gegen Autoritäten auf.|青春期时很多青少年会反抗权威。
+E|sich auflehnen|gegen|A|Niemand wagte es, sich gegen den Diktator aufzulehnen.|没人敢反抗那个独裁者。
+R|aufbegehren|gegen|A|to revolt against|起来反抗|gegen die Ungerechtigkeit aufbegehren|反抗不公|C2
+E|aufbegehren|gegen|A|Die Arbeiter begehrten gegen die schlechten Bedingungen auf.|工人们起来反抗恶劣的工作条件。
+E|aufbegehren|gegen|A|Irgendwann begehrte sie gegen ihren strengen Vater auf.|终于有一天她开始反抗严厉的父亲。
+E|aufbegehren|gegen|A|Gegen dieses Urteil hat kaum jemand aufbegehrt.|几乎没有人对这个判决提出抗议。
+R|aufklären|über|A|to inform about, to enlighten about|向…说明，普及…知识|die Bevölkerung über die Risiken aufklären|向民众说明风险|B2
+E|aufklären|über|A|Der Arzt muss den Patienten über mögliche Nebenwirkungen aufklären.|医生必须向病人说明可能的副作用。
+E|aufklären|über|A|Die Kampagne klärt Jugendliche über die Gefahren von Drogen auf.|这项宣传活动向青少年普及毒品的危害。
+E|aufklären|über|A|Hat dich jemand über deine Rechte aufgeklärt?|有人告诉过你你有哪些权利吗？
+R|aufrufen|zu|D|to call for|号召，呼吁|zum Streik aufrufen|号召罢工|B2
+E|aufrufen|zu|D|Die Gewerkschaft hat zu einem Streik aufgerufen.|工会号召举行罢工。
+E|aufrufen|zu|D|Der Präsident rief die Bevölkerung zur Ruhe auf.|总统呼吁民众保持冷静。
+E|aufrufen|zu|D|Die Organisation ruft zu Spenden für die Opfer auf.|该组织呼吁为受害者捐款。
+R|aufgehen|in|D|to be absorbed in, to be wrapped up in|全身心投入于|in seiner Arbeit aufgehen|全身心投入工作|C1
+E|aufgehen|in|D|Sie geht völlig in ihrer Rolle als Mutter auf.|她完全沉浸在母亲这个角色中。
+E|aufgehen|in|D|Er ging ganz in seiner Musik auf.|他全身心地投入到音乐中。
+E|aufgehen|in|D|Die kleine Firma ist später in einem großen Konzern aufgegangen.|这家小公司后来并入了一家大集团。
+R|aufwachen|aus|D|to wake up from|从…中醒来|aus einem Traum aufwachen|从梦中醒来|B1
+E|aufwachen|aus|D|Sie wachte schweißgebadet aus einem Albtraum auf.|她从噩梦中惊醒，浑身是汗。
+E|aufwachen|aus|D|Nach zwei Tagen ist der Patient aus dem Koma aufgewacht.|两天后病人从昏迷中醒了过来。
+E|aufwachen|aus|D|Endlich ist er aus seiner Illusion aufgewacht.|他终于从幻想中醒悟过来。
+R|ausbilden|zu|D|to train as|把…培养成|jemanden zum Koch ausbilden|把某人培养成厨师|B2
+E|ausbilden|zu|D|Die Firma bildet junge Leute zu Mechatronikern aus.|这家公司培养年轻人成为机电技师。
+E|ausbilden|zu|D|Sie wurde in Hamburg zur Krankenschwester ausgebildet.|她在汉堡接受培训成为护士。
+E|ausbilden|zu|D|Der Hund wurde zum Blindenhund ausgebildet.|这条狗被训练成导盲犬。
+R|ausbauen|zu|D|to convert into, to expand into|把…改建成|den Dachboden zu einem Zimmer ausbauen|把阁楼改建成房间|B2
+E|ausbauen|zu|D|Wir haben den Keller zu einem Hobbyraum ausgebaut.|我们把地下室改建成了一间娱乐室。
+E|ausbauen|zu|D|Die Straße soll zu einer Autobahn ausgebaut werden.|这条路将扩建成高速公路。
+E|ausbauen|zu|D|Der kleine Laden wurde zu einem erfolgreichen Unternehmen ausgebaut.|这家小店发展成了一家成功的企业。
+R|ausrüsten|mit|D|to equip with|用…装备|die Polizei mit neuen Waffen ausrüsten|给警察配备新武器|B2
+E|ausrüsten|mit|D|Alle Schulen werden mit neuen Computern ausgerüstet.|所有学校都将配备新电脑。
+E|ausrüsten|mit|D|Die Bergsteiger waren mit Sauerstoffflaschen ausgerüstet.|登山者们配备了氧气瓶。
+E|ausrüsten|mit|D|Das Auto ist mit einem modernen Navigationssystem ausgerüstet.|这辆车装有现代化的导航系统。
+R|ausstatten|mit|D|to furnish with, to equip with|为…配备|das Zimmer mit Möbeln ausstatten|给房间配备家具|B2
+E|ausstatten|mit|D|Alle Zimmer sind mit einer Klimaanlage ausgestattet.|所有房间都配有空调。
+E|ausstatten|mit|D|Die Eltern haben ihre Tochter mit allem Nötigen für das Studium ausgestattet.|父母为女儿上大学准备好了一切必需品。
+E|ausstatten|mit|D|Die neue Bibliothek wird mit bequemen Sesseln ausgestattet.|新图书馆将配备舒适的扶手椅。
+R|auskommen|mit|D|to get along with; to manage with|与…相处；靠…过活|gut mit den Nachbarn auskommen|和邻居相处融洽|B1
+E|auskommen|mit|D|Ich komme gut mit meinen Kollegen aus.|我和同事们相处得很好。
+E|auskommen|mit|D|Mit 800 Euro im Monat kann man in München kaum auskommen.|在慕尼黑每月八百欧元几乎没法过日子。
+E|auskommen|mit|D|Früher kam sie nicht besonders gut mit ihrer Schwiegermutter aus.|以前她和婆婆相处得不太好。
+R|aushelfen|bei|D|to help out with, to help out at|在…帮忙|beim Umzug aushelfen|帮忙搬家|B1
+E|aushelfen|bei|D|Am Wochenende helfe ich manchmal beim Bäcker aus.|周末我有时在面包店帮忙。
+E|aushelfen|bei|D|Kannst du morgen bei der Organisation des Festes aushelfen?|你明天能帮忙筹备庆祝活动吗？
+E|aushelfen|bei|D|Die Nachbarn haben bei der Ernte ausgeholfen.|邻居们帮忙收了庄稼。
+R|ausreichen|für|A|to be enough for|足够…用|für zwei Personen ausreichen|够两个人用|B1
+E|ausreichen|für|A|Das Essen reicht für alle Gäste aus.|饭菜够所有客人吃。
+E|ausreichen|für|A|Mein Gehalt reicht kaum für die Miete aus.|我的工资几乎不够付房租。
+E|ausreichen|für|A|Reicht die Zeit für eine Pause aus?|时间够休息一下吗？
+R|ausrichten|auf|A|to orient towards, to gear to|使…适应，以…为导向|das Angebot auf junge Kunden ausrichten|使产品面向年轻客户|C1
+E|ausrichten|auf|A|Die Schule richtet ihren Unterricht stark auf die Praxis aus.|这所学校的教学非常注重实践。
+E|ausrichten|auf|A|Das Hotel hat sich ganz auf Familien mit Kindern ausgerichtet.|这家酒店完全以带孩子的家庭为服务对象。
+E|ausrichten|auf|A|Wir müssen unsere Strategie auf den internationalen Markt ausrichten.|我们必须让战略面向国际市场。
+R|sich ausschweigen|über|A|to remain silent about|对…保持沉默|sich über seine Pläne ausschweigen|对自己的计划守口如瓶|C1
+E|sich ausschweigen|über|A|Die Firma schweigt sich über die Gründe der Entlassung aus.|公司对解雇的原因闭口不谈。
+E|sich ausschweigen|über|A|Über sein Privatleben schweigt er sich hartnäckig aus.|他对自己的私生活始终缄口不言。
+E|sich ausschweigen|über|A|Warum schweigst du dich darüber aus?|你为什么对此只字不提？
+R|sich auslassen|über|A|to hold forth about, to go on about|对…大发议论|sich über die Politik auslassen|对政治大发议论|C1
+E|sich auslassen|über|A|Beim Essen ließ er sich lang und breit über seine Kollegen aus.|吃饭时他对同事们大发议论，没完没了。
+E|sich auslassen|über|A|Sie hat sich im Internet über das schlechte Hotel ausgelassen.|她在网上大肆抱怨那家糟糕的酒店。
+E|sich auslassen|über|A|Über dieses Thema lässt sich der Autor ausführlich aus.|作者对这个话题进行了详尽的论述。
+R|ausschließen|aus|D|to exclude from, to expel from|把…排除在外，开除|jemanden aus der Gruppe ausschließen|把某人排除在小组之外|B2
+E|ausschließen|aus|D|Der Spieler wurde wegen Dopings aus dem Verein ausgeschlossen.|这名球员因服用兴奋剂被俱乐部开除。
+E|ausschließen|aus|D|Die Kinder haben ihn aus ihrem Spiel ausgeschlossen.|孩子们不让他一起玩。
+E|ausschließen|aus|D|Niemand sollte aus der Gesellschaft ausgeschlossen werden.|任何人都不应被社会排斥。
+R|sich ausweinen|bei|D|to have a good cry on someone's shoulder|向…哭诉|sich bei der besten Freundin ausweinen|向好友哭诉|B2
+E|sich ausweinen|bei|D|Nach der Trennung hat sie sich bei ihrer Mutter ausgeweint.|分手后她向母亲哭诉了一场。
+E|sich ausweinen|bei|D|Du kannst dich jederzeit bei mir ausweinen.|你随时都可以找我倾诉。
+E|sich ausweinen|bei|D|Er kam zu mir, um sich bei mir auszuweinen.|他来找我诉苦。
+R|aussagen|gegen|A|to testify against|作不利于…的证词|gegen den Angeklagten aussagen|作证指控被告|C1
+E|aussagen|gegen|A|Der Zeuge hat vor Gericht gegen seinen ehemaligen Chef ausgesagt.|证人在法庭上作证指控他的前老板。
+E|aussagen|gegen|A|Niemand wollte gegen die Bande aussagen.|没人愿意作证指控这个团伙。
+E|aussagen|gegen|A|Sogar seine eigene Frau hat gegen ihn ausgesagt.|连他自己的妻子都作证指控他。
+R|ausliefern|an|A|to extradite to, to deliver to|把…引渡给，交付给|den Verdächtigen an die USA ausliefern|把嫌疑人引渡到美国|C1
+E|ausliefern|an|A|Der Verdächtige wurde an Deutschland ausgeliefert.|嫌疑人被引渡到了德国。
+E|ausliefern|an|A|Die Ware wird morgen an die Kunden ausgeliefert.|货物明天发给客户。
+E|ausliefern|an|A|Das Land weigert sich, den Journalisten an sein Heimatland auszuliefern.|该国拒绝将这名记者引渡回其本国。
+R|austeilen|an|A|to hand out to, to distribute to|把…分发给|die Blätter an die Schüler austeilen|把试卷发给学生|B1
+E|austeilen|an|A|Die Lehrerin teilte die Tests an die Klasse aus.|老师把试卷发给了全班。
+E|austeilen|an|A|Freiwillige teilen Essen an Obdachlose aus.|志愿者向无家可归者分发食物。
+E|austeilen|an|A|Könntest du die Programme an die Gäste austeilen?|你能把节目单发给客人们吗？
+R|abschicken|an|A|to send off to|把…寄给|den Brief an die Behörde abschicken|把信寄给主管部门|A2
+E|abschicken|an|A|Ich habe die Bewerbung gestern an die Firma abgeschickt.|我昨天把求职申请寄给了那家公司。
+E|abschicken|an|A|Hast du die Einladungen schon an alle Gäste abgeschickt?|你已经把请柬寄给所有客人了吗？
+E|abschicken|an|A|Das Paket wird morgen an Ihre Adresse abgeschickt.|包裹明天会寄到您的地址。
+R|aushandeln|mit|D|to negotiate with|与…谈判达成|einen Vertrag mit dem Partner aushandeln|与合作伙伴谈成一份合同|C1
+E|aushandeln|mit|D|Die Gewerkschaft hat mit den Arbeitgebern höhere Löhne ausgehandelt.|工会与雇主谈判争取到了更高的工资。
+E|aushandeln|mit|D|Er handelte mit dem Verkäufer einen besseren Preis aus.|他和卖家谈成了一个更好的价格。
+E|aushandeln|mit|D|Mit den Nachbarländern wurde ein Abkommen ausgehandelt.|与邻国谈判达成了一项协议。
+R|auswechseln|gegen|A|to replace with, to substitute with|用…替换|den Spieler gegen einen anderen auswechseln|用另一名球员把他换下|B2
+E|auswechseln|gegen|A|Der Trainer wechselte den Stürmer in der zweiten Halbzeit gegen einen jungen Spieler aus.|下半场教练用一名年轻球员换下了前锋。
+E|auswechseln|gegen|A|Die kaputte Glühbirne muss gegen eine neue ausgewechselt werden.|坏了的灯泡得换个新的。
+E|auswechseln|gegen|A|Wir haben das alte Schloss gegen ein sicheres ausgewechselt.|我们把旧锁换成了一把更安全的。
+R|sich ausdehnen|auf|A|to extend to, to spread to|扩展到|sich auf das ganze Land ausdehnen|蔓延到全国|C1
+E|sich ausdehnen|auf|A|Der Streik hat sich inzwischen auf andere Städte ausgedehnt.|罢工已蔓延到其他城市。
+E|sich ausdehnen|auf|A|Das Feuer dehnte sich schnell auf den ganzen Wald aus.|大火迅速蔓延到整片森林。
+E|sich ausdehnen|auf|A|Die Kontrollen sollen sich künftig auf alle Grenzen ausdehnen.|今后检查将扩大到所有边境。
+# ===== New headwords, part 4 =====
+R|abschreiben|von|D|to copy from|抄袭…的|von dem Nachbarn abschreiben|抄同桌的|B1
+E|abschreiben|von|D|In der Prüfung hat er von seiner Nachbarin abgeschrieben.|考试时他抄了邻座女生的答案。
+E|abschreiben|von|D|Du darfst die Hausaufgaben nicht einfach vom Internet abschreiben.|你不能直接从网上抄作业。
+E|abschreiben|von|D|Der Politiker soll große Teile seiner Doktorarbeit von anderen Autoren abgeschrieben haben.|据说这位政客的博士论文大部分抄袭了其他作者。
+R|abgehen|von|D|to leave (school); to depart from|从…退学；背离|von der Schule abgehen|退学，从学校毕业离开|B2
+E|abgehen|von|D|Mit 16 ist er von der Schule abgegangen.|他十六岁就离开了学校。
+E|abgehen|von|D|Von diesem Prinzip gehen wir nicht ab.|我们不会背离这一原则。
+E|abgehen|von|D|Nach der zehnten Klasse ist sie vom Gymnasium abgegangen.|她读完十年级就离开了文理中学。
+R|ablesen|von|D|to read off from|从…读出|die Rede vom Blatt ablesen|照稿念演讲|B2
+E|ablesen|von|D|Der Minister las seine Rede vom Papier ab.|部长照着稿子念了他的讲话。
+E|ablesen|von|D|Sie konnte ihm jeden Wunsch von den Augen ablesen.|她能从他的眼神里读出他的每一个心愿。
+E|ablesen|von|D|Die Temperatur kann man direkt vom Display ablesen.|温度可以直接从显示屏上读出来。
+R|abtrennen|von|D|to separate from, to detach from|把…与…分开|den Abschnitt vom Formular abtrennen|把回执从表格上撕下|B2
+E|abtrennen|von|D|Bitte trennen Sie den unteren Teil vom Brief ab.|请把信的下半部分撕下来。
+E|abtrennen|von|D|Die Küche ist durch eine Glaswand vom Wohnzimmer abgetrennt.|厨房和客厅之间隔着一道玻璃墙。
+E|abtrennen|von|D|Nach dem Krieg wurde die Region vom Rest des Landes abgetrennt.|战后该地区与国家的其他部分分离了。
+R|sich abmelden|von|D|to deregister from, to sign out of|注销，退出|sich vom Kurs abmelden|退出课程|B1
+E|sich abmelden|von|D|Ich habe mich vom Newsletter abgemeldet.|我退订了新闻简报。
+E|sich abmelden|von|D|Vergiss nicht, dich vom Computer abzumelden!|别忘了从电脑上注销登录！
+E|sich abmelden|von|D|Wer sich nicht rechtzeitig von der Prüfung abmeldet, bekommt eine schlechte Note.|没有及时退考的人会拿到很差的分数。
+R|sich abwenden|von|D|to turn away from|背弃，离开|sich von der Kirche abwenden|背离教会|C1
+E|sich abwenden|von|D|Nach dem Skandal wandten sich viele Fans von dem Sänger ab.|丑闻之后很多歌迷离开了这位歌手。
+E|sich abwenden|von|D|Sie wandte sich enttäuscht von ihm ab.|她失望地转身离开了他。
+E|sich abwenden|von|D|Immer mehr Wähler wenden sich von den großen Parteien ab.|越来越多的选民背离大党。
+R|sich absetzen|von|D|to distance oneself from, to pull away from|与…拉开距离|sich von der Konkurrenz absetzen|甩开竞争对手|C1
+E|sich absetzen|von|D|Der Läufer konnte sich früh vom Rest des Feldes absetzen.|这名跑步者很早就甩开了其他选手。
+E|sich absetzen|von|D|Die Partei versucht, sich von ihrem früheren Vorsitzenden abzusetzen.|该党试图与其前主席划清界限。
+E|sich absetzen|von|D|Mit diesem Preis setzt sich das Produkt deutlich von anderen ab.|凭借这个价格，该产品与其他产品明显拉开了差距。
+R|ablassen|von|D|to give up, to desist from|放弃，停止|von seinem Plan ablassen|放弃计划|C1
+E|ablassen|von|D|Der Hund wollte nicht von seinem Knochen ablassen.|那只狗死活不肯松开骨头。
+E|ablassen|von|D|Trotz aller Warnungen ließ er nicht von seinem Vorhaben ab.|尽管有种种警告，他仍然不肯放弃计划。
+E|ablassen|von|D|Lass endlich von ihr ab!|你别再纠缠她了！
+R|abrücken|von|D|to back away from, to distance oneself from|与…保持距离，放弃|von seiner Meinung abrücken|放弃自己的观点|C1
+E|abrücken|von|D|Die Regierung rückt langsam von ihren Plänen ab.|政府正慢慢放弃它的计划。
+E|abrücken|von|D|Er ist nie von seiner Aussage abgerückt.|他从未改口。
+E|abrücken|von|D|Nach der Kritik rückten viele Politiker von dem Minister ab.|批评出现后，许多政客与这位部长拉开了距离。
+R|sich abmühen|mit|D|to struggle with|为…费尽力气|sich mit einer schweren Aufgabe abmühen|费力完成一项艰难任务|C1
+E|sich abmühen|mit|D|Er mühte sich lange mit dem schweren Koffer ab.|他费了好大劲才搬动那只沉重的箱子。
+E|sich abmühen|mit|D|Seit Stunden müht sie sich mit der Steuererklärung ab.|她已经为报税单忙了好几个小时。
+E|sich abmühen|mit|D|Warum mühst du dich damit ab, wenn es eine App dafür gibt?|既然有应用可以做，你何必费这个劲？
+R|sich aussöhnen|mit|D|to be reconciled with|与…和解|sich mit dem Bruder aussöhnen|与兄弟和解|C1
+E|sich aussöhnen|mit|D|Nach zehn Jahren hat er sich mit seinem Vater ausgesöhnt.|十年之后他终于和父亲和解了。
+E|sich aussöhnen|mit|D|Nach dem Krieg söhnte sich Frankreich mit Deutschland aus.|战后法国与德国实现了和解。
+E|sich aussöhnen|mit|D|Mit ihrem Schicksal hat sie sich inzwischen ausgesöhnt.|她如今已与命运和解。
+R|sich abhärten|gegen|A|to toughen oneself against|增强对…的抵抗力|sich gegen Kälte abhärten|锻炼耐寒能力|C1
+E|sich abhärten|gegen|A|Mit kalten Duschen härtet er sich gegen Erkältungen ab.|他用冷水淋浴来增强对感冒的抵抗力。
+E|sich abhärten|gegen|A|Im Laufe der Jahre hat sie sich gegen Kritik abgehärtet.|这些年来她对批评已经练就了一副铁石心肠。
+E|sich abhärten|gegen|A|Kinder sollten sich früh gegen Wind und Wetter abhärten.|孩子们应该从小锻炼，不怕风吹雨打。
+R|sich absichern|gegen|A|to protect oneself against, to insure oneself against|为防范…做好保障|sich gegen Risiken absichern|防范风险|C1
+E|sich absichern|gegen|A|Viele Selbstständige sichern sich gegen Krankheit ab.|许多自由职业者会为疾病风险投保。
+E|sich absichern|gegen|A|Wie kann ich mich gegen Betrug im Internet absichern?|我怎样才能防范网络诈骗？
+E|sich absichern|gegen|A|Die Firma hat sich vertraglich gegen Verluste abgesichert.|公司通过合同为损失提供了保障。
+R|angeln|nach|D|to fish for|钓…；想方设法得到|nach Komplimenten angeln|讨要恭维|C1
+E|angeln|nach|D|Sie angelt schon wieder nach Komplimenten.|她又在讨别人夸她了。
+E|angeln|nach|D|Er angelte unter dem Sofa nach der Fernbedienung.|他在沙发底下摸索着找遥控器。
+E|angeln|nach|D|Im See angeln die Männer nach Forellen.|男人们在湖里钓鳟鱼。
+R|ächzen|unter|D|to groan under|在…重压下呻吟|unter der Last ächzen|在重压下呻吟|C1
+E|ächzen|unter|D|Die alten Balken ächzten unter dem Gewicht des Schnees.|老旧的房梁在积雪的重压下吱嘎作响。
+E|ächzen|unter|D|Die Stadt ächzt unter der Hitze.|这座城市在酷暑中苦苦煎熬。
+E|ächzen|unter|D|Viele Familien ächzen unter den hohen Energiepreisen.|许多家庭在高昂的能源价格下苦不堪言。
+R|angewiesen sein|auf|A|to be dependent on, to rely on|依赖，需要|auf Hilfe angewiesen sein|需要帮助|B2
+E|angewiesen sein|auf|A|Nach dem Unfall war sie auf einen Rollstuhl angewiesen.|事故后她只能依靠轮椅。
+E|angewiesen sein|auf|A|Wir sind auf Ihre Unterstützung angewiesen.|我们需要您的支持。
+E|angewiesen sein|auf|A|Auf dem Land ist man oft auf das Auto angewiesen.|在乡下人们常常离不开汽车。
+R|ärgerlich sein|über|A|to be annoyed about|对…感到恼火|über die Verspätung ärgerlich sein|对延误感到恼火|B1
+E|ärgerlich sein|über|A|Der Chef war sehr ärgerlich über den Fehler.|老板对这个错误非常恼火。
+E|ärgerlich sein|über|A|Bist du noch ärgerlich über gestern Abend?|你还在为昨晚的事生气吗？
+E|ärgerlich sein|über|A|Die Kunden waren ärgerlich über die langen Wartezeiten.|顾客们对漫长的等待感到恼火。
+R|angetan sein|von|D|to be taken with, to be impressed by|被…吸引，对…颇有好感|von der Idee angetan sein|对这个想法很欣赏|C1
+E|angetan sein|von|D|Meine Eltern waren sehr von meinem neuen Freund angetan.|我父母对我的新男友很有好感。
+E|angetan sein|von|D|Von dem Hotel waren wir nicht besonders angetan.|我们对这家酒店不太满意。
+E|angetan sein|von|D|Die Jury war sofort von ihrer Stimme angetan.|评委们立刻被她的嗓音打动了。
+R|aufgeschlossen sein|für|A|to be open to|对…持开放态度|für neue Ideen aufgeschlossen sein|对新想法持开放态度|C1
+E|aufgeschlossen sein|für|A|Unser neuer Chef ist für Vorschläge aufgeschlossen.|我们的新老板乐于接受建议。
+E|aufgeschlossen sein|für|A|Junge Menschen sind oft aufgeschlossener für neue Technik.|年轻人往往对新技术更开放。
+E|aufgeschlossen sein|für|A|Sie war schon immer für andere Kulturen aufgeschlossen.|她一向对其他文化持开放态度。
+R|anfällig sein|für|A|to be prone to, to be susceptible to|容易患…，易受…影响|für Erkältungen anfällig sein|容易感冒|B2
+E|anfällig sein|für|A|Im Winter bin ich besonders anfällig für Erkältungen.|冬天我特别容易感冒。
+E|anfällig sein|für|A|Ältere Computer sind anfälliger für Viren.|老电脑更容易感染病毒。
+E|anfällig sein|für|A|Wer gestresst ist, ist anfällig für Fehler.|压力大的人容易出错。
+R|aufgebracht sein|über|A|to be outraged about|对…感到愤慨|über die Entscheidung aufgebracht sein|对这个决定感到愤慨|C1
+E|aufgebracht sein|über|A|Die Anwohner sind aufgebracht über die geplante Mülldeponie.|居民们对规划中的垃圾填埋场感到愤慨。
+E|aufgebracht sein|über|A|Sie war völlig aufgebracht über seine Lüge.|她对他的谎言极为愤怒。
+E|aufgebracht sein|über|A|Worüber bist du so aufgebracht?|你为什么这么激动？
+R|aufgeregt sein|vor|D|to be nervous before|在…之前紧张|vor der Prüfung aufgeregt sein|考试前紧张|A2
+E|aufgeregt sein|vor|D|Vor seinem ersten Auftritt war er furchtbar aufgeregt.|第一次登台前他紧张极了。
+E|aufgeregt sein|vor|D|Die Kinder sind vor Weihnachten immer ganz aufgeregt.|圣诞节前孩子们总是特别兴奋。
+E|aufgeregt sein|vor|D|Bist du vor dem Vorstellungsgespräch aufgeregt?|面试前你紧张吗？
+R|angesehen sein|bei|D|to be respected by|受…尊重|bei den Kollegen angesehen sein|受同事尊敬|C1
+E|angesehen sein|bei|D|Die Ärztin ist bei ihren Patienten sehr angesehen.|这位医生很受病人尊敬。
+E|angesehen sein|bei|D|Bei den Schülern war der alte Lehrer hoch angesehen.|那位老教师在学生中威望很高。
+E|angesehen sein|bei|D|Handwerker sind bei uns nicht immer gut angesehen.|在我们这里手艺人并不总是受人尊重。
+R|Anteil nehmen|an|D|to sympathise with, to take an interest in|关心，同情|am Schicksal anderer Anteil nehmen|关心他人的命运|C1
+E|Anteil nehmen|an|D|Die ganze Stadt nahm am Tod des Bürgermeisters Anteil.|全城都为市长的去世感到悲痛。
+E|Anteil nehmen|an|D|Sie nimmt großen Anteil an den Sorgen ihrer Freunde.|她很关心朋友们的烦恼。
+E|Anteil nehmen|an|D|Wir nehmen herzlich Anteil an Ihrem Verlust.|对您的不幸我们深表同情。
+R|Abschied nehmen|von|D|to say goodbye to|向…告别|von der Familie Abschied nehmen|与家人告别|B2
+E|Abschied nehmen|von|D|Am Bahnhof nahm sie Abschied von ihren Eltern.|她在火车站与父母告别。
+E|Abschied nehmen|von|D|Heute nehmen wir Abschied von einem guten Freund.|今天我们向一位好朋友告别。
+E|Abschied nehmen|von|D|Es fällt mir schwer, von dieser Stadt Abschied zu nehmen.|要和这座城市告别，我很难过。
+R|Abstand nehmen|von|D|to refrain from, to abandon|放弃|von einem Plan Abstand nehmen|放弃一个计划|C1
+E|Abstand nehmen|von|D|Die Firma hat von dem Kauf Abstand genommen.|公司放弃了这笔收购。
+E|Abstand nehmen|von|D|Nach langen Gesprächen nahm er von seiner Klage Abstand.|经过长时间的商谈，他撤回了诉讼。
+E|Abstand nehmen|von|D|Wir bitten Sie, von weiteren Anrufen Abstand zu nehmen.|请您不要再打电话了。
+R|Anstoß nehmen|an|D|to take offence at|对…感到不满|an seinem Verhalten Anstoß nehmen|对他的行为感到不满|C1
+E|Anstoß nehmen|an|D|Einige Zuschauer nahmen Anstoß an der Werbung.|一些观众对这则广告很反感。
+E|Anstoß nehmen|an|D|Niemand hat an ihrer Kleidung Anstoß genommen.|没有人对她的穿着有意见。
+E|Anstoß nehmen|an|D|Woran nehmen Sie eigentlich Anstoß?|您到底对什么不满？
+R|Ahnung haben|von|D|to have an idea about, to know about|对…有所了解|keine Ahnung von Technik haben|对技术一窍不通|A2
+E|Ahnung haben|von|D|Ich habe leider keine Ahnung von Autos.|可惜我对汽车一窍不通。
+E|Ahnung haben|von|D|Hast du eine Ahnung von Steuerrecht?|你懂税法吗？
+E|Ahnung haben|von|D|Er hatte keine Ahnung davon, was seine Frau plante.|他完全不知道妻子在计划什么。
+R|Ausschau halten|nach|D|to look out for|留意寻找|nach einem Taxi Ausschau halten|四处张望找出租车|B2
+E|Ausschau halten|nach|D|Wir halten nach einer größeren Wohnung Ausschau.|我们正在留意找一套更大的房子。
+E|Ausschau halten|nach|D|Am Bahnsteig hielt sie nach ihrem Bruder Ausschau.|她在站台上四处张望找她弟弟。
+E|Ausschau halten|nach|D|Der Verein hält nach neuen Talenten Ausschau.|俱乐部正在物色新秀。
+R|Antrag stellen|auf|A|to apply for|申请|einen Antrag auf Elterngeld stellen|申请育儿津贴|B2
+E|Antrag stellen|auf|A|Er hat einen Antrag auf Arbeitslosengeld gestellt.|他申请了失业救济金。
+E|Antrag stellen|auf|A|Wo kann ich einen Antrag auf einen neuen Pass stellen?|我在哪里可以申请新护照？
+E|Antrag stellen|auf|A|Die Familie stellte einen Antrag auf Asyl.|这家人申请了庇护。
+R|Anspruch erheben|auf|A|to lay claim to|要求获得，声称拥有|Anspruch auf das Erbe erheben|要求继承遗产|C1
+E|Anspruch erheben|auf|A|Beide Länder erheben Anspruch auf die Insel.|两国都声称对这座岛拥有主权。
+E|Anspruch erheben|auf|A|Nach seinem Tod erhob ein unbekannter Sohn Anspruch auf das Haus.|他去世后，一个此前无人知晓的儿子要求继承那栋房子。
+E|Anspruch erheben|auf|A|Die Studie erhebt keinen Anspruch auf Vollständigkeit.|这项研究并不声称详尽无遗。
+R|Anlass geben|zu|D|to give cause for|引起，成为…的理由|zur Sorge Anlass geben|令人担忧|C1
+E|Anlass geben|zu|D|Die neuen Zahlen geben Anlass zur Hoffnung.|新的数据让人看到了希望。
+E|Anlass geben|zu|D|Sein Gesundheitszustand gibt keinen Anlass zur Sorge.|他的健康状况无需担忧。
+E|Anlass geben|zu|D|Das Urteil gab Anlass zu heftigen Diskussionen.|这个判决引发了激烈的讨论。
+R|Aussicht haben|auf|A|to have prospects of|有…的希望|Aussicht auf Erfolg haben|有成功的希望|B2
+E|Aussicht haben|auf|A|Mit diesen Noten hast du gute Aussicht auf einen Studienplatz.|凭这样的成绩你很有希望拿到大学名额。
+E|Aussicht haben|auf|A|Die Mannschaft hat kaum noch Aussicht auf den Titel.|这支球队几乎已经没有夺冠的希望了。
+E|Aussicht haben|auf|A|Hat die Klage überhaupt Aussicht auf Erfolg?|这起诉讼到底有没有胜诉的希望？
+R|Abneigung haben|gegen|A|to have an aversion to|厌恶|eine Abneigung gegen Fisch haben|讨厌吃鱼|C1
+E|Abneigung haben|gegen|A|Schon als Kind hatte sie eine Abneigung gegen Milch.|她从小就讨厌牛奶。
+E|Abneigung haben|gegen|A|Viele Menschen haben eine Abneigung gegen Spinnen.|很多人讨厌蜘蛛。
+E|Abneigung haben|gegen|A|Er hat eine tiefe Abneigung gegen jede Form von Bürokratie.|他对一切形式的官僚主义深恶痛绝。
+R|Ärger haben|mit|D|to have trouble with|与…有麻烦|Ärger mit dem Vermieter haben|和房东闹矛盾|B1
+E|Ärger haben|mit|D|Wir haben ständig Ärger mit den Nachbarn.|我们总和邻居闹矛盾。
+E|Ärger haben|mit|D|Hast du etwa schon wieder Ärger mit deinem Chef?|你是不是又跟老板闹矛盾了？
+E|Ärger haben|mit|D|Letzte Woche hatte ich Ärger mit meinem Internetanbieter.|上周我和网络服务商闹了点麻烦。
+R|Anzeige erstatten|gegen|A|to report someone to the police, to press charges against|对…提起控告，报案|Anzeige gegen den Täter erstatten|对肇事者报案|C1
+E|Anzeige erstatten|gegen|A|Das Opfer hat Anzeige gegen den Fahrer erstattet.|受害者对司机提起了控告。
+E|Anzeige erstatten|gegen|A|Wir werden Anzeige gegen Unbekannt erstatten.|我们将对身份不明者报案。
+E|Anzeige erstatten|gegen|A|Die Firma erstattete Anzeige gegen einen ehemaligen Mitarbeiter.|公司对一名前员工提起了控告。
+R|Auswirkungen haben|auf|A|to have effects on|对…有影响|Auswirkungen auf die Umwelt haben|对环境有影响|B2
+E|Auswirkungen haben|auf|A|Der Klimawandel hat Auswirkungen auf die Landwirtschaft.|气候变化对农业有影响。
+E|Auswirkungen haben|auf|A|Die Entscheidung wird große Auswirkungen auf unser Leben haben.|这个决定将对我们的生活产生巨大影响。
+E|Auswirkungen haben|auf|A|Welche Auswirkungen hat Stress auf den Körper?|压力对身体有什么影响？
+R|Achtung haben|vor|D|to have respect for|尊重，敬重|Achtung vor dem Alter haben|敬老|B2
+E|Achtung haben|vor|D|Ich habe große Achtung vor ihrer Leistung.|我非常敬佩她的成就。
+E|Achtung haben|vor|D|Kinder sollten Achtung vor der Natur haben.|孩子们应该尊重自然。
+E|Achtung haben|vor|D|Vor Menschen, die ehrlich sind, habe ich viel Achtung.|我很敬重诚实的人。
+R|Anrecht haben|auf|A|to be entitled to|有权获得|ein Anrecht auf Unterstützung haben|有权获得资助|C1
+E|Anrecht haben|auf|A|Jedes Kind hat ein Anrecht auf Bildung.|每个孩子都有受教育的权利。
+E|Anrecht haben|auf|A|Als Mitglied haben Sie ein Anrecht auf einen Rabatt.|作为会员，您有权享受折扣。
+E|Anrecht haben|auf|A|Sie glaubte, ein Anrecht auf die Wohnung ihrer Mutter zu haben.|她认为自己有权继承母亲的房子。
+R|Abstand halten|zu|D|to keep one's distance from|与…保持距离|Abstand zum Vordermann halten|与前车保持车距|B1
+E|Abstand halten|zu|D|Bitte halten Sie Abstand zu den anderen Wartenden.|请与其他候车的人保持距离。
+E|Abstand halten|zu|D|Auf der Autobahn muss man genug Abstand zum vorderen Auto halten.|在高速公路上必须与前车保持足够的距离。
+E|Abstand halten|zu|D|Nach dem Streit hielt sie lieber Abstand zu ihm.|吵架之后她宁愿和他保持距离。
+R|Ausnahme machen|bei|D|to make an exception for|对…破例|bei ihm eine Ausnahme machen|对他破例|B2
+E|Ausnahme machen|bei|D|Bei Ihnen machen wir heute eine Ausnahme.|今天我们对您破个例。
+E|Ausnahme machen|bei|D|Normalerweise esse ich kein Fleisch, aber bei Omas Braten mache ich eine Ausnahme.|平时我不吃肉，但奶奶做的烤肉例外。
+E|Ausnahme machen|bei|D|Können Sie bei der Frist nicht eine Ausnahme machen?|您不能在截止日期上破个例吗？
+R|achtgeben|auf|A|to take care of, to pay attention to|照看，注意|auf die Kinder achtgeben|照看孩子们|B1
+E|achtgeben|auf|A|Gib gut auf dich acht!|好好照顾自己！
+E|achtgeben|auf|A|Wer hat während des Ausflugs auf die Kleinen achtgegeben?|郊游时谁照看着小孩子们？
+E|achtgeben|auf|A|Beim Überqueren der Straße musst du auf den Verkehr achtgeben.|过马路时你必须注意来往车辆。
+# ===== Additional senses for existing headwords =====
+R|ankommen|in|D|to arrive in|到达|in Berlin ankommen|到达柏林|A1
+E|ankommen|in|D|Wann kommt der Zug in Hamburg an?|火车什么时候到达汉堡？
+E|ankommen|in|D|Wir sind erst spät in der Nacht im Hotel angekommen.|我们深夜才到酒店。
+E|ankommen|in|D|Ruf mich an, sobald du in Wien angekommen bist!|你一到维也纳就给我打电话！
+R|ankommen|bei|D|to go down well with|受…欢迎|gut bei den Kunden ankommen|受顾客欢迎|B2
+E|ankommen|bei|D|Die neue Serie kommt bei jungen Zuschauern sehr gut an.|这部新剧很受年轻观众欢迎。
+E|ankommen|bei|D|Mit solchen Witzen kommst du bei ihr nicht an.|你这种笑话在她那儿可不讨好。
+E|ankommen|bei|D|Wie ist dein Vorschlag beim Chef angekommen?|你的建议老板觉得怎么样？
+R|Angst haben|um|A|to be worried about, to fear for|为…担心|Angst um die Kinder haben|为孩子们担心|B1
+E|Angst haben|um|A|Die Mutter hatte große Angst um ihren kranken Sohn.|母亲非常担心她生病的儿子。
+E|Angst haben|um|A|Viele Menschen haben Angst um ihren Arbeitsplatz.|很多人担心保不住工作。
+E|Angst haben|um|A|Du brauchst keine Angst um mich zu haben.|你不用为我担心。

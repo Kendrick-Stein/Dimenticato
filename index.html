@@ -503,7 +503,7 @@
             <button class="card" id="goEnglishGrammarBtn" style="--ci:1">
               <span class="card-chip"><span class="msr">menu_book</span></span>
               <span class="card-title">语法</span>
-              <span class="card-desc">英语语法书与动词变位</span>
+              <span class="card-desc">语法书、动词变位、动词搭配</span>
             </button>
             <button class="card" id="goEnglishProgressBtn" style="--ci:2">
               <span class="card-chip"><span class="msr">monitoring</span></span>
@@ -672,20 +672,21 @@
         <div class="container">
           <button class="back-link" id="englishGrammarBackBtn"><span class="msr">arrow_back</span>返回英语首页</button>
           <h1 class="page">选择英语语法主题</h1>
-          <p class="desc">按主题进入：语法书用于查阅，动词变位用于练习。</p>
+          <p class="desc">按主题进入：语法书用于查阅，动词变位与动词搭配用于练习。</p>
 
           <div class="card-grid cols-3">
             <button class="card english-placeholder-trigger" data-language="english" data-module="grammar-book">
               <span class="card-chip"><span class="msr">auto_stories</span></span>
               <span class="card-title">语法书</span>
-              <span class="card-desc">英语语法章节与正文，按章节查阅</span>
+              <span class="card-desc">A1-C1 词法与句法专题，中文讲解 + 英文例句</span>
             </button>
             <button class="card english-placeholder-trigger" data-language="english" data-module="conjugation">
               <span class="card-chip"><span class="msr">sync_alt</span></span>
               <span class="card-title">动词变位</span>
               <span class="card-desc">时态、课次与题型，边学边练</span>
             </button>
-            <!-- 动词搭配入口由 verb-collocations.js 运行时注入（当前英语暂无数据，显示建设中）。 -->
+            <!-- 动词搭配 / 动词搭配练习入口由 verb-collocations.js 运行时注入
+                 （数据 data/english-collocations-data.js 按模块懒加载）。 -->
           </div>
         </div>
       </section>
@@ -989,7 +990,7 @@
             <div class="card">
               <span class="card-chip"><span class="msr">link</span></span>
               <span class="card-title">动词搭配</span>
-              <span class="card-desc">1688 个动词的介词搭配与例句</span>
+              <span class="card-desc">1711 个动词的介词搭配与例句</span>
               <div class="chips wrap">
                 <button class="pill-btn" id="goVerbCollocationsBtn"><span class="msr">travel_explore</span>浏览搭配</button>
                 <button class="pill-btn" id="goVerbCollocationPracticeBtn"><span class="msr">extension</span>开始练习</button>
@@ -1918,7 +1919,7 @@
             <ul>
               <li><strong>Italian</strong>：完整词汇、语法、动词变位、动词搭配、社区与统计体验</li>
               <li><strong>German</strong>：A1-C1 课程路线、系统词汇、语法书、动词变位、Progress、Settings &amp; Data</li>
-              <li><strong>English</strong>：系统词汇练习、英语语法书、基础 Progress、Settings &amp; Data</li>
+              <li><strong>English</strong>：系统词汇练习、英语语法书、动词变位、动词搭配（介词搭配与短语动词）、基础 Progress、Settings &amp; Data</li>
               <li><strong>French</strong>：A1-C1 词汇、中文语法专题、动词变位、动词搭配、Progress、Settings &amp; Data</li>
               <li><strong>社区词库</strong>：当前四个语言入口共用同一个社区词库池</li>
             </ul>
@@ -2102,7 +2103,7 @@ love
               <li><strong>German 词汇</strong> - 部分中文释义来自 <a href="https://github.com/gugray/HanDeDict" target="_blank" rel="noopener">HanDeDict</a>，授权协议 <strong>CC&#8209;BY&#8209;SA&nbsp;3.0</strong>；变位对照 <a href="https://github.com/languagetool-org/german-pos-dict" target="_blank" rel="noopener">german&#8209;pos&#8209;dict / Morphy</a>（<strong>CC&#8209;BY&#8209;SA&nbsp;4.0</strong>）校验</li>
               <li><strong>词频排序</strong> - English / German 词表按 <a href="https://github.com/rspeer/wordfreq" target="_blank" rel="noopener">wordfreq</a> 真实词频排序</li>
               <li><strong>英→中中转释义</strong> - 部分中文释义经 <a href="https://github.com/skywind3000/ECDICT" target="_blank" rel="noopener">ECDICT</a> 由英语中转而来，并已人工复核</li>
-              <li><strong>English 动词变位</strong> - 由本项目的规则引擎生成（scripts/build_english_conjugations.py）</li>
+              <li><strong>English 动词变位</strong> - 1800 个常用动词，由 scripts/build_english_conjugations.py 生成（lemminflect 词形 + ECDICT 动词义项）</li>
               <li class="attribution-note">本项目相应衍生数据沿用 ShareAlike 协议；逐文件的完整来源对照见仓库根目录的 <strong>ATTRIBUTION.md</strong>。</li>
             </ul>
           </div>
@@ -2245,24 +2246,5 @@ love
   <script defer src="lib/lang-loader.js"></script>
   <script defer src="lib/boot.js"></script>
 
-  <script>
-    // 词库自检。挂在 LangLoader 的 done 上而不是 DOMContentLoaded：真事件触发时
-    // 语言包还没注入，那时查 VOCABULARY_DATA 只会报一条假的加载失败。
-    // 只在意大利语包就位时校验意大利语词库；其它语言各自有自己的错误卡。
-    window.LangLoader.on(function (type, detail) {
-      if (type !== 'done') return;
-      if (detail.lang === 'italian') {
-        if (typeof VOCABULARY_DATA !== 'undefined') {
-          console.log('vocabulary.js 加载成功，包含 ' + VOCABULARY_DATA.length + ' 个单词');
-        } else {
-          console.error('vocabulary.js 加载失败或 VOCABULARY_DATA 未定义');
-        }
-      }
-      if (!detail.boot) return;
-      // CDN 兜底兜底：onerror 不触发但脚本仍未生效时（例如被拦截器静默替换）也能降级
-      window.CdnFallback.chart();
-      window.CdnFallback.marked();
-    });
-  </script>
 </body>
 </html>

@@ -371,6 +371,41 @@ CURATED += [
     ("s'agir", "de", "il s'agit de qqch", "事关某事；是关于某事"),
 ]
 
+# Third authoring pass: scripts/sources/french-collocations/*.txt
+#   C|verb|prep|frame|中文释义          extra curated government line (-> CURATED)
+#   E|verb|prep|Phrase française.|中文译文。  authored example sentence
+#   N|verb|prep|对比说明                 à/de contrast note (-> CONTRAST_NOTE)
+# Authored for this repo; examples are shown after the frame line(s) and
+# before the Tatoeba sentences.
+FR_SOURCE_DIR = os.path.join(ROOT, "scripts", "sources", "french-collocations")
+AUTHORED_EXAMPLES = defaultdict(list)     # (verb, prep) -> [(fr, zh, where)]
+
+
+def load_authored_sources():
+    if not os.path.isdir(FR_SOURCE_DIR):
+        return
+    for name in sorted(os.listdir(FR_SOURCE_DIR)):
+        if not name.endswith(".txt"):
+            continue
+        with open(os.path.join(FR_SOURCE_DIR, name), encoding="utf-8") as fh:
+            for lineno, line in enumerate(fh, 1):
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                parts = [x.strip() for x in line.split("|")]
+                where = "%s:%d" % (name, lineno)
+                if len(parts) < 2 or (len(parts) > 2 and parts[2] not in PREPSET):
+                    raise SystemExit("%s: bad row / unknown preposition: %s" % (where, line))
+                if parts[0] == "C" and len(parts) == 5:
+                    CURATED.append(tuple(parts[1:]))
+                elif parts[0] == "N" and len(parts) == 4:
+                    CONTRAST_NOTE[(parts[1], parts[2])] = parts[3]
+                elif parts[0] == "E" and len(parts) == 5:
+                    AUTHORED_EXAMPLES[(parts[1], parts[2])].append((parts[3], parts[4], where))
+                else:
+                    raise SystemExit("%s: bad row: %s" % (where, line))
+
+
 # ===========================================================================
 # 2. VERB + NOUN COLLOCATIONS (additive layer; corpus-checked in build)
 #    (verb_display, collocation, chinese)
@@ -834,7 +869,7 @@ def log(msg):
     sys.stderr.flush()
 
 
-def ensure_sources(cache, offline=False):
+def ensure_sources(cache, offline=False, need_kaikki=True):
     os.makedirs(cache, exist_ok=True)
     for name, url in SOURCES.items():
         dest = os.path.join(cache, name)
@@ -848,7 +883,8 @@ def ensure_sources(cache, offline=False):
     if not os.path.exists(os.path.join(lexdir, "Lexique383.tsv")):
         subprocess.check_call(["unzip", "-o", "-q", os.path.join(cache, "Lexique383.zip"), "-d", lexdir])
     kaikki = os.path.join(cache, "fr_kaikki_slim.jsonl")
-    if not os.path.exists(kaikki) or os.path.getsize(kaikki) < 1000:
+    # 搭配层只用 Tatoeba + Lexique；570 MB 的 kaikki 仅同源词层需要。
+    if need_kaikki and (not os.path.exists(kaikki) or os.path.getsize(kaikki) < 1000):
         if offline:
             raise SystemExit("missing %s and --offline given" % kaikki)
         log("streaming kaikki French dump (570 MB) -> slim jsonl ...")
@@ -1244,15 +1280,29 @@ def build_collocations(cache, lex, out_path):
         if meta.get("note"):
             e["notes"][prep] = meta["note"]
 
+    load_authored_sources()
     curated_by_pair = defaultdict(list)
     for verb, prep, frame, zh in CURATED:
         curated_by_pair[(verb, prep)].append((frame, zh))
+    for (verb, prep), items in AUTHORED_EXAMPLES.items():
+        if (verb, prep) not in curated_by_pair:
+            raise SystemExit("%s: authored example for %s + %s has no C (frame) line"
+                             % (items[0][2], verb, prep))
 
     all_pairs = set(curated_by_pair) | set(pair_count)
     # The contrast drill prompts with the Chinese half and asks for the
     # preposition, so one verb must never carry the same Chinese gloss under two
     # different prepositions — that question would have two correct answers.
     zh_by_verb = defaultdict(set)
+    # same key the validator uses to reject a French sentence repeated
+    # inside one verb (an authored sentence can coincide with a mined one)
+    fr_by_verb = defaultdict(set)
+
+    def fr_key(s):
+        s = unicodedata.normalize("NFD", s.lower())
+        s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+        return re.sub(r"[^a-z ]", "", s).strip()
+
     for (verb, prep) in sorted(all_pairs):
         entries = []
         note = CONTRAST_NOTE.get((verb, prep))
@@ -1267,6 +1317,19 @@ def build_collocations(cache, lex, out_path):
                     raise SystemExit("curated gloss %r is ambiguous for verb %r" % (zh, verb))
                 zh_by_verb[verb].add(zh)
                 entries.append((text, {"kind": "curated", "authored": True}))
+            for fr_s, zh_s, where in AUTHORED_EXAMPLES.get((verb, prep), []):
+                text = "%s %s" % (fr_s, zh_s)
+                got_fr, got_zh = js_extract(text)
+                if (got_fr != fr_s or got_zh != zh_s or clean_fr(fr_s, 2, 30) != fr_s
+                        or not CJK_RE.search(zh_s) or CJK_RE.search(fr_s)):
+                    raise SystemExit("%s: authored example not parseable by the app: %r" % (where, text))
+                if zh_s in zh_by_verb[verb]:
+                    raise SystemExit("%s: Chinese %r repeats another example of %r" % (where, zh_s, verb))
+                if fr_key(fr_s) in fr_by_verb[verb]:
+                    raise SystemExit("%s: French sentence repeats another example of %r" % (where, verb))
+                zh_by_verb[verb].add(zh_s)
+                fr_by_verb[verb].add(fr_key(fr_s))
+                entries.append((text, {"kind": "authored", "authored": True}))
             kept_curated += 1
         else:
             n = pair_count.get((verb, prep), 0)
@@ -1280,11 +1343,12 @@ def build_collocations(cache, lex, out_path):
                 continue
         added = 0
         for text, meta in examples.get((verb, prep), []):
-            _, zh_part = js_extract(text)
-            if zh_part in zh_by_verb[verb]:
+            fr_part, zh_part = js_extract(text)
+            if zh_part in zh_by_verb[verb] or fr_key(fr_part) in fr_by_verb[verb]:
                 stats["dup"] += 1
                 continue
             zh_by_verb[verb].add(zh_part)
+            fr_by_verb[verb].add(fr_key(fr_part))
             entries.append((text, meta))
             added += 1
             if added >= MAX_EXAMPLES:
@@ -1344,6 +1408,7 @@ def build_collocations(cache, lex, out_path):
             "language": "french",
             "sources": [
                 {"id": "curated", "label": "本项目自编动词支配表（依据标准法语语法）", "license": "project-authored"},
+                {"id": "authored", "label": "本项目自编例句（scripts/sources/french-collocations）", "license": "project-authored"},
                 {"id": "direct", "label": "Tatoeba fra-cmn 直接对译", "license": TATOEBA_LICENSE},
                 {"id": "indirect", "label": "Tatoeba fra→eng→cmn 间接对译", "license": TATOEBA_LICENSE},
                 {"id": "lexique", "label": "Lexique 3.83（词元与频率）", "license": LEXIQUE_LICENSE},
@@ -2372,7 +2437,8 @@ def main():
         refresh_cognate_glosses(os.path.join(ROOT, "data", "french-cognates.js"))
         return
 
-    cache = ensure_sources(args.cache, args.offline)
+    cache = ensure_sources(args.cache, args.offline,
+                           need_kaikki=args.only != "collocations")
     if not HAVE_ZHCONV:
         log("WARNING: zhconv not installed — Traditional-Chinese sentences will be dropped")
     log("loading Lexique 3.83 ...")

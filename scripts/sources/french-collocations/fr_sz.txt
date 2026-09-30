@@ -1,0 +1,481 @@
+# French verb collocations — letters s/t/u/v/w/x/y/z (verb initial ignoring se / s')
+# ---- NEW verbs: s ----
+C|sauver|de|sauver qqn/qqch de qqch|把某人／某物从……中救出
+E|sauver|de|Les pompiers ont sauvé trois enfants de l'incendie.|消防员从火灾中救出了三个孩子。
+E|sauver|de|Ce prêt a sauvé l'entreprise de la faillite.|这笔贷款让公司免于破产。
+E|sauver|de|Tu m'as sauvé d'une situation très gênante.|你帮我摆脱了一个非常尴尬的处境。
+C|souhaiter|à|souhaiter qqch à qqn|祝愿某人……
+E|souhaiter|à|Nous souhaitons un bon anniversaire à notre grand-mère.|我们祝奶奶生日快乐。
+E|souhaiter|à|Je souhaite bonne chance à tous les candidats.|我祝所有考生好运。
+E|souhaiter|à|Elle a souhaité une bonne année à tous ses collègues.|她祝所有同事新年快乐。
+C|signer|avec|signer (un contrat) avec qqn|与某人签约
+E|signer|avec|Le joueur vient de signer avec un club italien.|这名球员刚和一家意大利俱乐部签了约。
+E|signer|avec|Notre société a signé un accord avec un partenaire chinois.|我们公司和一家中国合作伙伴签订了协议。
+E|signer|avec|La chanteuse signera bientôt avec une grande maison de disques.|这位女歌手很快将与一家大唱片公司签约。
+C|signaler|à|signaler qqch à qqn|向某人报告、指出某事
+E|signaler|à|Il faut signaler ce vol à la police.|必须向警方报告这起盗窃案。
+E|signaler|à|J'ai signalé l'erreur au professeur après le cours.|下课后我向老师指出了那个错误。
+E|signaler|à|Signalez tout problème technique au service client.|任何技术问题都请告知客服部门。
+C|soupirer|de|soupirer de qqch|因……而叹气
+E|soupirer|de|Elle a soupiré de soulagement en voyant les résultats.|看到结果，她松了一口气。
+E|soupirer|de|Les élèves soupiraient d'ennui pendant la longue conférence.|漫长的讲座中，学生们无聊得直叹气。
+C|se venger|de|se venger de qqn/qqch|报复某人；为某事报仇
+E|se venger|de|Il a juré de se venger de ses anciens associés.|他发誓要报复他以前的合伙人。
+E|se venger|de|Elle s'est vengée de cette humiliation des années plus tard.|多年以后，她为那次羞辱报了仇。
+E|se venger|de|Ne cherche pas à te venger de lui, ça n'en vaut pas la peine.|别想着报复他，不值得。
+C|se venger|sur|se venger sur qqn|拿某人出气；迁怒于某人
+E|se venger|sur|Quand il a une mauvaise journée au travail, il se venge sur son chien.|他工作上一不顺心，就拿狗出气。
+E|se venger|sur|Ne te venge pas sur ta petite sœur, elle n'y est pour rien.|别拿你妹妹撒气，这不关她的事。
+N|se venger|de|se venger de qqn/qqch = 向（冒犯者）报复、为（某事）报仇；se venger sur qqn = 把怒气发泄到（无辜的）某人身上
+N|se venger|sur|se venger sur qqn = 迁怒于某人；se venger de qqn = 直接报复冒犯自己的人
+C|se tordre|de|se tordre de rire/douleur|笑得／疼得直不起腰
+E|se tordre|de|Toute la salle se tordait de rire.|全场观众笑得前仰后合。
+E|se tordre|de|Le blessé se tordait de douleur sur le sol.|伤者疼得在地上打滚。
+E|se tordre|de|Après ce repas, il s'est tordu de douleur toute la nuit.|吃完那顿饭，他整夜疼得直不起腰。
+C|succomber|à|succomber à qqch|经受不住（诱惑等）；死于（伤病）
+E|succomber|à|J'ai encore succombé à la tentation du chocolat.|我又没忍住巧克力的诱惑。
+E|succomber|à|Le blessé a succombé à ses blessures pendant la nuit.|伤者夜里因伤势过重死亡。
+E|succomber|à|Elle a fini par succomber au charme de la ville.|她最终被这座城市的魅力征服了。
+C|suffoquer|de|suffoquer de qqch|喘不过气（因……）
+E|suffoquer|de|On suffoquait de chaleur dans ce train bondé.|在这列挤满人的火车里，热得让人喘不过气。
+E|suffoquer|de|Il suffoquait de colère en lisant la lettre.|他读着那封信，气得透不过气来。
+C|substituer|à|substituer qqch à qqch|用某物代替某物
+E|substituer|à|On peut substituer le miel au sucre dans cette recette.|在这个食谱里可以用蜂蜜代替糖。
+E|substituer|à|L'usine a substitué des machines aux ouvriers.|工厂用机器取代了工人。
+C|se substituer|à|se substituer à qqn/qqch|取代某人／某物；替代
+E|se substituer|à|Les parents ne peuvent pas se substituer aux professeurs.|父母不能取代老师。
+E|se substituer|à|Le courrier électronique s'est peu à peu substitué aux lettres.|电子邮件逐渐取代了书信。
+C|sommer|de|sommer qqn de faire qqch|勒令某人做某事
+E|sommer|de|Le juge l'a sommé de s'expliquer.|法官勒令他作出解释。
+E|sommer|de|La mairie a sommé le propriétaire de réparer le toit.|市政府责令房东修缮屋顶。
+C|sévir|contre|sévir contre qqn/qqch|严厉惩处；严打
+E|sévir|contre|La police va sévir contre les conducteurs imprudents.|警方将严厉打击鲁莽驾驶的司机。
+E|sévir|contre|Le directeur a promis de sévir contre la triche.|校长承诺将严惩作弊行为。
+C|siéger|à|siéger à qqch|在（议会、委员会等）任职；设于某地
+E|siéger|à|Elle siège au conseil municipal depuis dix ans.|她在市议会任职已有十年。
+E|siéger|à|Le tribunal siège à Lyon.|该法院设在里昂。
+E|siéger|à|Il a siégé à l'Assemblée nationale pendant deux mandats.|他曾在国民议会担任了两届议员。
+C|sevrer|de|sevrer qqn de qqch|使某人戒掉某物；给（婴儿）断奶
+E|sevrer|de|Il est difficile de sevrer les adolescents de leur téléphone.|让青少年戒掉手机很难。
+E|sevrer|de|Le médecin essaie de le sevrer de ces médicaments.|医生正设法让他戒掉这些药。
+C|soustraire|de|soustraire qqch de qqch|从……中减去某数
+E|soustraire|de|Soustrais sept de vingt, et tu obtiens treize.|二十减七，就得到十三。
+E|soustraire|de|Il faut soustraire les impôts du salaire brut.|要从税前工资里扣除税款。
+C|se soustraire|à|se soustraire à qqch|逃避（义务、责任、检查）
+E|se soustraire|à|Personne ne peut se soustraire à la loi.|谁都不能逃避法律。
+E|se soustraire|à|Il a tenté de se soustraire à ses obligations familiales.|他试图逃避对家庭的义务。
+E|se soustraire|à|Elle s'est soustraite aux regards en passant par la porte de derrière.|她从后门离开，躲开了众人的目光。
+C|saupoudrer|de|saupoudrer qqch de qqch|在……上撒（糖、粉等）
+E|saupoudrer|de|Saupoudrez le gâteau de sucre glace avant de servir.|上桌前在蛋糕上撒一层糖粉。
+E|saupoudrer|de|Ma mère saupoudrait toujours la soupe de persil.|我妈妈总在汤里撒点欧芹。
+C|statuer|sur|statuer sur qqch|对某事作出裁决
+E|statuer|sur|Le tribunal statuera sur cette affaire la semaine prochaine.|法院下周将对此案作出裁决。
+E|statuer|sur|Le comité n'a pas encore statué sur ta demande.|委员会还没有对你的申请作出决定。
+C|se solidariser|avec|se solidariser avec qqn|声援某人；与某人团结一致
+E|se solidariser|avec|Les étudiants se sont solidarisés avec les grévistes.|学生们声援罢工者。
+E|se solidariser|avec|Tout le village s'est solidarisé avec la famille sinistrée.|全村人都与受灾的那家人站在一起。
+C|se scandaliser|de|se scandaliser de qqch|对某事感到愤慨
+E|se scandaliser|de|Les habitants se scandalisent de la hausse des loyers.|居民们对房租上涨感到愤慨。
+E|se scandaliser|de|Elle s'est scandalisée de son manque de respect.|他的无礼让她十分气愤。
+C|subordonner|à|subordonner qqch à qqch|使某事以……为前提
+E|subordonner|à|La banque subordonne le prêt à plusieurs garanties.|银行发放贷款要以几项担保为前提。
+E|subordonner|à|Mes parents ont subordonné le voyage à mes résultats scolaires.|我父母说能不能去旅行要看我的成绩。
+C|suppléer|à|suppléer à qqch|弥补（不足）
+E|suppléer|à|Son enthousiasme supplée à son manque d'expérience.|他的热情弥补了经验的不足。
+E|suppléer|à|Nous avons dû suppléer au manque de personnel en travaillant le week-end.|我们只好周末加班来弥补人手不足。
+C|se serrer|contre|se serrer contre qqn|紧紧依偎着某人
+E|se serrer|contre|L'enfant s'est serré contre sa mère pendant l'orage.|暴风雨时，孩子紧紧依偎在妈妈身边。
+E|se serrer|contre|Serrez-vous les uns contre les autres pour la photo.|拍照时大家挤紧一点。
+C|se soulever|contre|se soulever contre qqn/qqch|起来反抗某人／某事
+E|se soulever|contre|Le peuple s'est soulevé contre le tyran.|人民起来反抗暴君。
+E|se soulever|contre|Les paysans se soulevèrent contre les nouveaux impôts.|农民们起来反抗新税。
+C|surcharger|de|surcharger qqn/qqch de qqch|使……负担过重
+E|surcharger|de|Le patron nous surcharge de travail avant les fêtes.|节前老板给我们压了太多工作。
+E|surcharger|de|Ne surcharge pas tes diapositives de texte.|别在幻灯片上塞太多文字。
+C|se solder|par|se solder par qqch|以……告终
+E|se solder|par|La réunion s'est soldée par un échec.|会议以失败告终。
+E|se solder|par|Le match s'est soldé par une défaite de notre équipe.|比赛以我们队的落败收场。
+E|se solder|par|Cette tentative se soldera sans doute par une perte d'argent.|这次尝试多半会以亏钱收场。
+C|souscrire|à|souscrire à qqch|认购；赞同（意见）
+E|souscrire|à|Il a souscrit à l'augmentation de capital de l'entreprise.|他认购了公司增资发行的股份。
+E|souscrire|à|Je souscris entièrement à votre analyse.|我完全赞同您的分析。
+E|souscrire|à|Beaucoup de petits épargnants ont souscrit à l'emprunt.|许多小储户认购了这笔债券。
+C|sensibiliser|à|sensibiliser qqn à qqch|提高某人对某事的意识
+E|sensibiliser|à|Cette campagne vise à sensibiliser les jeunes aux dangers de l'alcool.|这场宣传活动旨在让年轻人认识到酒精的危害。
+E|sensibiliser|à|L'école sensibilise les élèves au tri des déchets.|学校培养学生垃圾分类的意识。
+E|sensibiliser|à|Il faut sensibiliser le public à la protection des océans.|必须提高公众保护海洋的意识。
+C|sélectionner|pour|sélectionner qqn pour qqch|选拔某人参加某事
+E|sélectionner|pour|Elle a été sélectionnée pour les Jeux olympiques.|她入选了奥运会代表队。
+E|sélectionner|pour|On m'a sélectionné pour représenter l'école au concours.|我被选中代表学校参加比赛。
+C|spéculer|sur|spéculer sur qqch|投机于；对……作揣测
+E|spéculer|sur|Il a perdu beaucoup d'argent en spéculant sur les matières premières.|他炒大宗商品亏了很多钱。
+E|spéculer|sur|Les journaux spéculent sur les raisons de sa démission.|报纸纷纷猜测他辞职的原因。
+E|spéculer|sur|Ne spéculons pas sur l'avenir, attendons les faits.|我们别揣测未来了，等事实说话吧。
+C|sécher|sur|sécher sur qqch|被……难住；答不上来（口语）
+E|sécher|sur|J'ai séché sur la dernière question de l'examen.|考试的最后一道题把我难住了。
+E|sécher|sur|Même le professeur a séché sur cette énigme.|连老师都被这个谜题难住了。
+C|surenchérir|sur|surenchérir sur qqn/qqch|抬价超过；（言论上）变本加厉
+E|surenchérir|sur|Un collectionneur a surenchéri sur toutes les offres.|一位收藏家出价高过了所有人。
+E|surenchérir|sur|Chaque candidat surenchérit sur les promesses de l'autre.|每位候选人都在对手的承诺上层层加码。
+C|sonder|sur|sonder qqn sur qqch|试探某人对某事的想法
+E|sonder|sur|J'ai sondé mon frère sur ses projets pour l'été.|我探了探哥哥暑假的打算。
+E|sonder|sur|L'institut a sondé mille Français sur leurs habitudes de lecture.|该机构就阅读习惯调查了一千名法国人。
+C|souiller|de|souiller qqch de qqch|用……弄脏、玷污
+E|souiller|de|Ses chaussures étaient souillées de boue.|他的鞋子沾满了泥。
+E|souiller|de|Les mains du meurtrier étaient souillées de sang.|凶手的双手沾满了鲜血。
+C|surpasser|en|surpasser qqn en qqch|在……方面胜过某人
+E|surpasser|en|Elle surpasse tous ses camarades en mathématiques.|她的数学超过了所有同学。
+E|surpasser|en|Ce modèle surpasse l'ancien en rapidité.|这款型号在速度上胜过旧款。
+C|saturer|de|saturer qqn/qqch de qqch|使……充斥、饱和
+E|saturer|de|La publicité sature nos écrans de messages inutiles.|广告让我们的屏幕上充斥着无用的信息。
+E|saturer|de|L'air était saturé d'humidité après l'orage.|暴雨过后，空气中的湿度达到了饱和。
+C|scinder|en|scinder qqch en qqch|把某物分成（几部分）
+E|scinder|en|Le professeur a scindé la classe en deux groupes.|老师把全班分成了两组。
+E|scinder|en|Le parti s'est scindé en trois courants rivaux.|该党分裂成三个对立的派别。
+C|sculpter|dans|sculpter qqch dans qqch|用（某种材料）雕刻
+E|sculpter|dans|Cette statue a été sculptée dans un seul bloc de marbre.|这座雕像是用一整块大理石雕成的。
+E|sculpter|dans|Mon grand-père sculptait des animaux dans le bois.|我爷爷常用木头雕小动物。
+C|soutirer|à|soutirer qqch à qqn|从某人那里骗取、套出某物
+E|soutirer|à|L'escroc a soutiré mille euros à une vieille dame.|骗子从一位老太太那里骗走了一千欧元。
+E|soutirer|à|Les journalistes n'ont rien pu soutirer au ministre.|记者们没能从部长口中套出任何话。
+C|subdiviser|en|subdiviser qqch en qqch|把……再细分为
+E|subdiviser|en|Chaque chapitre est subdivisé en plusieurs sections.|每一章又细分为若干节。
+E|subdiviser|en|La ville est subdivisée en vingt arrondissements.|这座城市下分二十个区。
+C|susurrer|à|susurrer qqch à qqn|对某人低声细语
+E|susurrer|à|Il a susurré un secret à sa voisine de table.|他对邻座的女士悄悄说了一个秘密。
+E|susurrer|à|Elle susurrait des mots doux à son bébé.|她对着宝宝轻声说着温柔的话。
+C|sursauter|à|sursauter à qqch|吓一跳（听到／看到……）
+E|sursauter|à|Le chat sursaute au moindre bruit.|有一点动静猫就会吓一跳。
+E|sursauter|à|J'ai sursauté à la sonnerie du téléphone.|电话铃一响，我吓了一跳。
+C|sauvegarder|sur|sauvegarder qqch sur qqch|把（文件）保存到……上
+E|sauvegarder|sur|N'oublie pas de sauvegarder ton travail sur une clé USB.|别忘了把作业存到U盘里。
+E|sauvegarder|sur|Toutes mes photos sont sauvegardées sur le cloud.|我所有的照片都备份在云端。
+C|synchroniser|avec|synchroniser qqch avec qqch|使……与……同步
+E|synchroniser|avec|J'ai synchronisé mon téléphone avec mon ordinateur.|我把手机和电脑同步了。
+E|synchroniser|avec|Il faut synchroniser le son avec l'image.|必须让声音和画面同步。
+C|surseoir|à|surseoir à qqch|暂缓、推迟执行某事（法律）
+E|surseoir|à|Le juge a décidé de surseoir à l'exécution de la peine.|法官决定暂缓执行刑罚。
+E|surseoir|à|La mairie a sursis aux travaux en attendant l'expertise.|在鉴定结果出来前，市政府暂缓了工程。
+C|suinter|de|suinter de qqch|渗出（水、湿气等）
+E|suinter|de|Les murs de la cave suintent d'humidité.|地窖的墙壁渗着潮气。
+E|suinter|de|Après chaque pluie, les rochers suintaient d'eau.|每次下雨后，岩石上都会渗出水来。
+# ---- NEW verbs: t ----
+C|témoigner|de|témoigner de qqch|证明；表明
+E|témoigner|de|Ces ruines témoignent d'une civilisation très ancienne.|这些遗迹见证了一个非常古老的文明。
+E|témoigner|de|Son geste témoigne de sa grande générosité.|他的举动表明他非常慷慨。
+E|témoigner|de|Les cicatrices sur ses mains témoignaient de sa vie difficile.|他手上的伤疤说明了他生活的艰辛。
+C|témoigner|contre|témoigner contre qqn|出庭作证指控某人
+E|témoigner|contre|Le voisin a accepté de témoigner contre l'accusé.|邻居同意出庭指证被告。
+E|témoigner|contre|Elle a peur de témoigner contre son ancien patron.|她害怕出庭指证她以前的老板。
+C|témoigner|en|témoigner en faveur de qqn|为某人作有利的证明
+E|témoigner|en|Plusieurs collègues ont témoigné en sa faveur au procès.|审判时有好几位同事为他作了有利的证词。
+E|témoigner|en|Qui pourrait témoigner en faveur de mon client ?|谁能为我的当事人作证开脱？
+N|témoigner|de|témoigner de qqch = 表明、证明（事物作主语居多）；témoigner contre qqn = 作证指控；témoigner en faveur de qqn = 作证为其辩护
+N|témoigner|contre|témoigner contre qqn = 作不利于某人的证词；témoigner en faveur de qqn 正相反；témoigner de qqch = 证明某事
+N|témoigner|en|témoigner en faveur de qqn = 作有利于某人的证词；témoigner contre qqn = 指证某人；témoigner de qqch = 证明某事
+C|trancher|avec|trancher avec qqch|与……形成鲜明对比
+E|trancher|avec|Sa robe rouge tranchait avec le décor tout blanc.|她的红裙子和全白的布景形成了鲜明对比。
+E|trancher|avec|Ce discours tranche avec ses déclarations habituelles.|这番讲话和他平时的言论截然不同。
+E|trancher|avec|Son calme tranchait avec la panique générale.|他的镇定与众人的慌乱形成强烈反差。
+C|vibrer|de|vibrer de qqch|因（激情等）而颤动、激动
+E|vibrer|de|Sa voix vibrait d'émotion quand il a parlé de son père.|说起父亲时，他的声音因激动而颤抖。
+E|vibrer|de|Le stade vibrait de l'enthousiasme des supporters.|整个体育场随着球迷的热情沸腾起来。
+C|triompher|de|triompher de qqn/qqch|战胜；克服
+E|triompher|de|L'équipe locale a triomphé de son rival en finale.|主队在决赛中战胜了对手。
+E|triompher|de|Elle a fini par triompher de sa timidité.|她最终克服了自己的羞怯。
+E|triompher|de|La vérité triomphera toujours du mensonge.|真理终将战胜谎言。
+C|transférer|à|transférer qqch à qqn|把某物转交、转发给某人
+E|transférer|à|J'ai transféré le courriel du directeur à toute l'équipe.|我把主任的邮件转发给了全组。
+E|transférer|à|Le club a transféré son meilleur joueur à une équipe anglaise.|俱乐部把最好的球员转会到了一支英格兰球队。
+E|transférer|à|Il a transféré la propriété de la maison à ses enfants.|他把房子的产权转给了子女。
+C|tester|sur|tester qqch sur qqn/qqch|在……身上试验某物
+E|tester|sur|Ce vaccin n'a jamais été testé sur des humains.|这种疫苗从未在人身上做过试验。
+E|tester|sur|Teste d'abord la crème sur une petite zone de peau.|先在一小块皮肤上试一下这个面霜。
+E|tester|sur|Nos produits ne sont pas testés sur les animaux.|我们的产品不做动物试验。
+C|trinquer|à|trinquer à qqch|为……干杯
+E|trinquer|à|Trinquons à la santé des mariés !|让我们为新人的健康干杯！
+E|trinquer|à|Nous avons trinqué à la réussite du projet.|我们为项目的成功干了杯。
+C|trinquer|avec|trinquer avec qqn|与某人碰杯
+E|trinquer|avec|Le maire a trinqué avec chaque invité.|市长和每位来宾都碰了杯。
+E|trinquer|avec|Viens trinquer avec nous, c'est mon anniversaire !|来和我们碰个杯吧，今天是我生日！
+C|tapisser|de|tapisser qqch de qqch|用……铺满、贴满
+E|tapisser|de|Elle a tapissé les murs de sa chambre de photos.|她在卧室墙上贴满了照片。
+E|tapisser|de|Tapissez le moule de papier cuisson.|在模具里铺上一层烘焙纸。
+E|tapisser|de|En automne, le sol est tapissé de feuilles mortes.|秋天，地上铺满了落叶。
+C|teindre|en|teindre qqch en (couleur)|把某物染成……色
+E|teindre|en|Elle s'est teint les cheveux en roux.|她把头发染成了红棕色。
+E|teindre|en|On a teint ce vieux pull en bleu marine.|我们把这件旧毛衣染成了藏青色。
+C|valoir|pour|valoir pour qqn/qqch|适用于某人／某事
+E|valoir|pour|Cette règle vaut pour tout le monde, sans exception.|这条规定适用于所有人，没有例外。
+E|valoir|pour|Ce que je dis là vaut aussi pour toi.|我刚才说的话对你也同样适用。
+E|valoir|pour|Le billet vaut pour deux personnes.|这张票可供两人使用。
+C|valoir|à|valoir qqch à qqn|给某人带来（后果、奖赏）
+E|valoir|à|Ce roman a valu à son auteur un prix prestigieux.|这部小说为作者赢得了一个著名奖项。
+E|valoir|à|Ses retards répétés ont valu à Paul un avertissement du chef.|保罗屡次迟到，招来了上司的一次警告。
+N|valoir|pour|valoir pour qqn/qqch = 对……有效、适用；valoir qqch à qqn = 给某人招来／赢得某物
+N|valoir|à|valoir qqch à qqn = 使某人得到（奖赏或惩罚）；valoir pour qqn = 对某人同样适用
+C|tabler|sur|tabler sur qqch|指望；以……为估算依据
+E|tabler|sur|Le gouvernement table sur une croissance de deux pour cent.|政府预计经济增长百分之二。
+E|tabler|sur|Ne table pas trop sur son aide.|别太指望他的帮助。
+E|tabler|sur|Nous tablions sur trois cents participants.|我们原本估计会有三百人参加。
+C|taxer|de|taxer qqn de qqch|指责某人……；说某人是……
+E|taxer|de|On l'a taxé de naïveté après cette décision.|这个决定之后，大家说他太天真。
+E|taxer|de|Elle refuse d'être taxée de paresse.|她不愿被人说成懒惰。
+C|se terrer|dans|se terrer dans qqch|躲藏在……里
+E|se terrer|dans|Le renard s'est terré dans son trou.|狐狸躲进了洞里。
+E|se terrer|dans|Depuis le scandale, il se terre dans sa maison de campagne.|丑闻爆发后，他一直躲在乡间别墅里。
+C|transiger|sur|transiger sur qqch|在某事上让步、妥协
+E|transiger|sur|Je ne transigerai jamais sur la sécurité des enfants.|在孩子的安全问题上我绝不让步。
+E|transiger|sur|Le syndicat refuse de transiger sur les salaires.|工会拒绝在工资问题上妥协。
+C|tressaillir|de|tressaillir de qqch|因……而颤抖、一震
+E|tressaillir|de|Elle a tressailli de joie en recevant la nouvelle.|接到消息时，她高兴得浑身一颤。
+E|tressaillir|de|Le chien tressaillait de peur à chaque coup de tonnerre.|每打一声雷，狗都吓得发抖。
+C|troquer|contre|troquer qqch contre qqch|用……换……
+E|troquer|contre|Les enfants troquent leurs cartes contre des bonbons.|孩子们用卡片换糖果。
+E|troquer|contre|Il a troqué son costume contre un jean.|他脱下西装换上了牛仔裤。
+E|troquer|contre|J'ai troqué ma vieille guitare contre un vélo.|我拿旧吉他换了一辆自行车。
+C|se tuer|à|se tuer à faire qqch|拼命做某事；反复做某事却白费力气
+E|se tuer|à|Je me tue à te dire de ranger ta chambre !|我都跟你说了多少遍了，收拾你的房间！
+E|se tuer|à|Elle se tue à la tâche pour nourrir sa famille.|她为了养家拼命工作。
+C|se tracasser|pour|se tracasser pour qqn/qqch|为……操心、发愁
+E|se tracasser|pour|Ne te tracasse pas pour si peu.|别为这点小事发愁。
+E|se tracasser|pour|Ma mère se tracasse toujours pour ma santé.|我妈妈总为我的身体操心。
+C|se tourmenter|pour|se tourmenter pour qqn/qqch|为……忧心忡忡
+E|se tourmenter|pour|Il se tourmente pour l'avenir de ses enfants.|他为孩子们的前途忧心忡忡。
+E|se tourmenter|pour|Tu te tourmentes pour rien, tout ira bien.|你是白担心，一切都会好的。
+C|teinter|de|teinter qqch de qqch|使……带有（某种色彩、意味）
+E|teinter|de|Sa réponse était teintée d'ironie.|他的回答带着几分讽刺。
+E|teinter|de|Le ciel se teintait de rose au coucher du soleil.|日落时，天空染上了一抹粉红。
+C|télécharger|sur|télécharger qqch sur qqch|把某物下载到……上
+E|télécharger|sur|J'ai téléchargé l'application sur mon téléphone.|我把这个应用下载到了手机上。
+E|télécharger|sur|Tu peux télécharger le formulaire sur le site de la mairie.|你可以在市政府网站上下载这张表格。
+E|télécharger|sur|Elle télécharge des livres sur sa liseuse.|她往电子阅读器里下载书。
+C|se tapir|dans|se tapir dans qqch|蜷缩、潜伏在……里
+E|se tapir|dans|Le chat s'est tapi dans l'herbe pour guetter l'oiseau.|猫伏在草丛里盯着那只鸟。
+E|se tapir|dans|Les enfants se tapissaient dans le noir pour nous faire peur.|孩子们躲在黑暗里想吓我们一跳。
+C|tchatter|avec|tchatter avec qqn|和某人网上聊天
+E|tchatter|avec|Elle passe ses soirées à tchatter avec ses amis.|她每天晚上都在网上跟朋友聊天。
+E|tchatter|avec|J'ai tchatté avec un client pendant une heure.|我跟一位客户在线聊了一个小时。
+C|toquer|à|toquer à qqch|敲（门、窗）（轻轻）
+E|toquer|à|Quelqu'un toque à la porte.|有人在敲门。
+E|toquer|à|Toque à la fenêtre si la porte est fermée.|要是门关着，你就敲敲窗户。
+C|tambouriner|à|tambouriner à/sur qqch|使劲、连续地敲打
+E|tambouriner|à|La police tambourinait à la porte en pleine nuit.|半夜里警察在拼命砸门。
+E|tambouriner|à|Il a tambouriné à la vitre pour attirer notre attention.|他猛敲窗玻璃想引起我们的注意。
+C|trépigner|de|trépigner de qqch|直跺脚（因急躁、愤怒）
+E|trépigner|de|Les enfants trépignaient d'impatience devant les cadeaux.|孩子们在礼物前急得直跺脚。
+E|trépigner|de|Il trépignait de rage en attendant le bus.|等公交时他气得直跺脚。
+C|taquiner|sur|taquiner qqn sur qqch|拿某事逗弄某人
+E|taquiner|sur|Ses amis le taquinent sur son accent du Sud.|朋友们拿他的南方口音开玩笑。
+E|taquiner|sur|Arrête de me taquiner sur ma nouvelle coiffure.|别再拿我的新发型取笑我了。
+C|tatouer|sur|(se faire) tatouer qqch sur qqch|在（身体某处）文上……
+E|tatouer|sur|Il s'est fait tatouer un dragon sur le bras.|他在胳膊上文了一条龙。
+E|tatouer|sur|Elle a le nom de sa fille tatoué sur le poignet.|她手腕上文着女儿的名字。
+C|tapoter|sur|tapoter sur qqch|轻轻敲击……
+E|tapoter|sur|Il tapotait nerveusement sur la table.|他紧张地用手指轻敲桌子。
+E|tapoter|sur|Elle tapote sur son clavier toute la journée.|她整天在键盘上敲来敲去。
+C|tartiner|sur|tartiner qqch sur qqch|把（黄油、果酱等）抹在……上
+E|tartiner|sur|Il tartine du beurre sur sa tranche de pain.|他在面包片上抹黄油。
+E|tartiner|sur|Tartine un peu de confiture sur ta crêpe.|在你的可丽饼上抹点果酱吧。
+C|tempêter|contre|tempêter contre qqn/qqch|对……大发雷霆
+E|tempêter|contre|Le client tempêtait contre le retard de sa commande.|顾客因订单延误大发雷霆。
+E|tempêter|contre|Mon père tempête contre les prix de l'essence.|我爸爸对油价怨气冲天。
+C|tiquer|sur|tiquer sur qqch|对……表示不满、皱眉（口语）
+E|tiquer|sur|Le directeur a tiqué sur le montant de la facture.|看到账单金额，主任皱了皱眉。
+E|tiquer|sur|Personne n'a tiqué sur ce détail pendant la réunion.|会上没有人对这个细节提出异议。
+C|transcrire|en|transcrire qqch en qqch|把……转写成（另一种文字、形式）
+E|transcrire|en|Les noms chinois sont transcrits en alphabet latin.|中文名字被转写成拉丁字母。
+E|transcrire|en|Elle a transcrit l'entretien en texte pour le journal.|她把采访录音整理成了文字交给报社。
+C|transiter|par|transiter par qqch|途经、中转于某地
+E|transiter|par|Notre vol transite par Dubaï.|我们的航班在迪拜中转。
+E|transiter|par|Toutes les marchandises transitent par ce port.|所有货物都经由这个港口转运。
+E|transiter|par|Les données transitent par des serveurs étrangers.|这些数据要经过国外的服务器。
+C|transparaître|dans|transparaître dans qqch|在……中流露出来
+E|transparaître|dans|Sa fatigue transparaissait dans sa voix.|他的声音里透着疲惫。
+E|transparaître|dans|Son amour du pays transparaît dans tous ses romans.|他所有的小说都流露出对祖国的热爱。
+C|se tirer|de|se tirer de qqch|摆脱（困境）
+E|se tirer|de|Il s'est tiré d'affaire grâce à son avocat.|多亏了律师，他才脱了身。
+E|se tirer|de|Comment vas-tu te tirer de ce mauvais pas ?|你打算怎么摆脱这个困境？
+C|tailler|dans|tailler dans qqch|削减（预算、开支）；从……中切下
+E|tailler|dans|Le gouvernement a dû tailler dans les dépenses publiques.|政府不得不削减公共开支。
+E|tailler|dans|Il a taillé une flûte dans un morceau de bambou.|他用一截竹子削了一支笛子。
+# ---- NEW verbs: v-z ----
+C|vaquer|à|vaquer à ses occupations|忙于（日常事务）
+E|vaquer|à|Après le déjeuner, chacun est retourné vaquer à ses occupations.|午饭后，大家各自回去忙自己的事了。
+E|vaquer|à|Ma grand-mère vaquait à ses tâches ménagères en chantant.|奶奶一边唱歌一边做家务。
+C|vieillir|de|vieillir de (durée)|老了（若干年）（看上去）
+E|vieillir|de|Il a vieilli de dix ans en quelques mois.|几个月里他仿佛老了十岁。
+E|vieillir|de|Cette coiffure te vieillit de dix ans.|这个发型让你显老十岁。
+C|verdir|de|verdir de qqch|脸色发青（因恐惧、嫉妒）
+E|verdir|de|Il a verdi de peur en voyant le serpent.|看到那条蛇，他吓得脸都青了。
+E|verdir|de|Sa sœur va verdir de jalousie quand elle verra ta voiture.|等她姐姐看到你的车，一定会嫉妒得要命。
+C|vendre|à|vendre qqch à qqn|把某物卖给某人
+E|vendre|à|J'ai vendu mon vieux vélo à un voisin.|我把旧自行车卖给了一个邻居。
+E|vendre|à|Ce magasin ne vend pas d'alcool aux mineurs.|这家店不向未成年人出售酒类。
+E|vendre|à|Ils vendront leur maison à un jeune couple.|他们要把房子卖给一对年轻夫妇。
+C|voisiner|avec|voisiner avec qqch|与……相邻；与……并存
+E|voisiner|avec|Dans ce quartier, les boutiques de luxe voisinent avec les petits commerces.|在这个街区，奢侈品店与小商铺比邻而立。
+E|voisiner|avec|Chez lui, l'humour voisine souvent avec la tristesse.|在他身上，幽默常常与忧伤并存。
+C|vivoter|de|vivoter de qqch|靠……勉强度日
+E|vivoter|de|Pendant ses études, il vivotait de petits boulots.|上学期间，他靠打零工勉强过活。
+E|vivoter|de|L'artiste vivote de la vente de quelques tableaux.|这位画家靠卖几幅画勉强糊口。
+C|vociférer|contre|vociférer contre qqn/qqch|冲……大吼大叫
+E|vociférer|contre|Un homme vociférait contre l'arbitre depuis les tribunes.|一个男人在看台上冲着裁判大吼大叫。
+E|vociférer|contre|Elle vociférait contre les automobilistes qui klaxonnaient.|她冲着按喇叭的司机们破口大骂。
+C|virer|à|virer à qqch|转向（左右）；（颜色、局势）转变为
+E|virer|à|Au prochain carrefour, virez à gauche.|到下一个路口向左转。
+E|virer|à|Le ciel a viré au rouge au coucher du soleil.|日落时天空变成了红色。
+E|virer|à|La discussion a vite viré à la dispute.|讨论很快演变成了争吵。
+C|verser|à|verser qqch à qqn|付给某人（款项）
+E|verser|à|L'entreprise verse une prime à tous ses employés en décembre.|公司十二月给全体员工发奖金。
+E|verser|à|Il verse une pension à son ex-femme chaque mois.|他每月付给前妻一笔赡养费。
+C|verser|dans|verser qqch dans qqch / verser dans qqch|把……倒进……；陷入（某种风格）
+E|verser|dans|Verse le lait dans la casserole et fais-le chauffer.|把牛奶倒进锅里加热。
+E|verser|dans|Il a versé un peu de sucre dans son café.|他往咖啡里加了点糖。
+E|verser|dans|Le film verse parfois dans le mélodrame.|这部电影有时流于煽情。
+N|verser|à|verser qqch à qqn = 付款给某人；verser qqch dans qqch = 倒入；verser dans qqch = 陷入某种倾向
+N|verser|dans|verser dans = 倒进；（喻）流于、陷入某种风格；verser à qqn = 付给某人（钱）
+C|se vautrer|dans|se vautrer dans qqch|懒洋洋地躺在……里；沉溺于
+E|se vautrer|dans|Il s'est vautré dans le canapé devant la télé.|他瘫在沙发里看电视。
+E|se vautrer|dans|Les cochons se vautrent dans la boue.|猪在泥里打滚。
+E|se vautrer|dans|Arrête de te vautrer dans le luxe et aide-nous un peu.|别再贪图享受了，来帮我们一把。
+C|zapper|sur|zapper sur qqch|换到……频道（换台）
+E|zapper|sur|Il a zappé sur une chaîne de sport pendant la pub.|广告时间他把台换到了一个体育频道。
+E|zapper|sur|Zappe sur la deux, il y a un bon film ce soir.|换到二台，今晚有部好电影。
+C|zigzaguer|entre|zigzaguer entre qqch|在……之间穿来穿去
+E|zigzaguer|entre|Le coursier zigzaguait entre les voitures.|快递员骑车在车流中穿来穿去。
+E|zigzaguer|entre|Le skieur a zigzagué entre les piquets à toute vitesse.|滑雪运动员飞速绕过一根根旗门。
+C|zoomer|sur|zoomer sur qqch|把镜头拉近到……上；聚焦于
+E|zoomer|sur|Le caméraman a zoomé sur le visage du gagnant.|摄像师把镜头推到了获胜者的脸上。
+E|zoomer|sur|Zoome sur la photo pour lire le panneau.|把照片放大，看看牌子上写的什么。
+E|zoomer|sur|Ce reportage zoome sur la vie des agriculteurs.|这篇报道聚焦于农民的生活。
+# ---- TOP-UPS and new pairs on existing verbs ----
+C|s'unir|pour|s'unir pour faire qqch|联合起来做某事
+E|s'unir|pour|Les habitants se sont unis pour sauver la vieille école.|居民们联合起来挽救那所老学校。
+E|s'unir|pour|Il faut nous unir pour faire face à la crise.|我们必须团结起来应对危机。
+C|s'unir|contre|s'unir contre qqn/qqch|联合起来对抗……
+E|s'unir|contre|Les petits pays se sont unis contre l'envahisseur.|小国们联合起来抵抗侵略者。
+E|s'unir|contre|Les voisins se sont unis contre le projet d'autoroute.|邻居们联合起来反对修建高速公路的计划。
+C|sacrifier|pour|(se) sacrifier (qqch) pour qqn/qqch|为……牺牲（自己或某物）
+E|sacrifier|pour|Beaucoup de parents se sacrifient pour leurs enfants.|许多父母为孩子牺牲了自己。
+E|sacrifier|pour|Elle a sacrifié sa carrière pour s'occuper de sa mère.|她为了照顾母亲放弃了事业。
+C|se séparer|de|se séparer de qqn/qqch|与某人分开；舍弃某物
+E|se séparer|de|Il ne se sépare jamais de son vieux carnet.|那个旧本子他从不离身。
+E|se séparer|de|L'entreprise a dû se séparer de vingt employés.|公司不得不辞退了二十名员工。
+C|se targuer|de|se targuer de qqch / de faire qqch|以……自夸
+E|se targuer|de|Ce restaurant se targue d'utiliser uniquement des produits locaux.|这家餐厅标榜只用本地食材。
+E|se targuer|de|Elle se targuait de n'avoir jamais été malade.|她总夸口说自己从没生过病。
+E|se tromper|de|Excusez-moi, je me suis trompé de numéro.|对不起，我打错电话了。
+E|se tromper|de|Nous nous sommes trompés de route et nous sommes arrivés en retard.|我们走错了路，结果迟到了。
+C|se tromper|sur|se tromper sur qqn/qqch|看错某人；对某事判断失误
+E|se tromper|sur|Je me suis complètement trompé sur lui, il est très gentil.|我完全看错他了，他人很好。
+E|se tromper|sur|Les experts se sont trompés sur l'évolution des prix.|专家们对价格走势判断错了。
+N|se tromper|de|se tromper de + 名词（不带冠词）= 弄错（选错了对象：车、门、日期）；se tromper sur qqn/qqch = 对某人／某事的判断错误
+N|se tromper|sur|se tromper sur qqn = 看错人、误判；se tromper de qqch = 拿错、走错、选错
+C|se vendre|à|se vendre à (prix / unité)|以……价格（或单位）出售
+E|se vendre|à|Ces tableaux se vendent à des prix incroyables.|这些画卖出了令人难以置信的价格。
+E|se vendre|à|Son premier roman s'est vendu à un million d'exemplaires.|他的第一部小说卖了一百万册。
+C|signifier|pour|signifier qqch pour qqn|对某人意味着……
+E|signifier|pour|Ce prix signifie énormément pour toute l'équipe.|这个奖对整个团队意义非凡。
+E|signifier|pour|Qu'est-ce que cette décision signifie pour nous ?|这个决定对我们来说意味着什么？
+C|sombrer|dans|sombrer dans qqch|陷入（绝望、沉睡等）
+E|sombrer|dans|Après la mort de sa femme, il a sombré dans la dépression.|妻子去世后，他陷入了抑郁。
+E|sombrer|dans|Épuisée, elle a sombré dans un profond sommeil.|她筋疲力尽，沉沉睡去。
+C|souffler|sur|souffler sur qqch|对着……吹气
+E|souffler|sur|Souffle sur ta soupe, elle est brûlante.|吹一吹你的汤，太烫了。
+E|souffler|sur|L'enfant a soufflé sur les bougies de son gâteau.|孩子吹灭了蛋糕上的蜡烛。
+C|souffler|dans|souffler dans qqch|往……里吹气
+E|souffler|dans|Le policier m'a demandé de souffler dans l'éthylotest.|警察让我对着酒精测试仪吹气。
+E|souffler|dans|Il soufflait dans sa trompette tous les soirs.|他每天晚上都吹小号。
+C|souffler|à|souffler qqch à qqn|悄悄告诉某人（答案等）
+E|souffler|à|Il a soufflé la réponse à son voisin pendant l'interrogation.|小测验时他偷偷把答案告诉了同桌。
+E|souffler|à|Qui a soufflé cette idée à ton frère ?|是谁给你哥哥出的这个主意？
+C|soulager|de|soulager qqn de qqch|减轻某人的（负担、痛苦）
+E|soulager|de|Ce médicament va te soulager de tes douleurs.|这种药能缓解你的疼痛。
+E|soulager|de|Laisse-moi te soulager de ce gros sac.|我来帮你拿这个大包吧。
+C|sourire|à|sourire à qqn|向某人微笑；（运气）眷顾某人
+E|sourire|à|La serveuse souriait à tous les clients.|女服务员对每位顾客都面带微笑。
+E|sourire|à|Cette année, la chance a enfin souri à notre équipe.|今年，好运终于眷顾了我们队。
+C|spécialiser|dans|se spécialiser dans qqch|专门从事……
+E|spécialiser|dans|Notre agence s'est spécialisée dans les voyages en Asie.|我们旅行社专做亚洲游。
+E|spécialiser|dans|Ce garage est spécialisé dans les voitures anciennes.|这家修车厂专修老爷车。
+E|succéder|à|Le prince succédera à son père sur le trône.|王子将继承他父亲的王位。
+E|succéder|à|À la pluie a succédé un beau soleil.|雨过之后，出了大太阳。
+E|suivre|de|Le chat suivait la mouche des yeux.|猫的眼睛一直盯着那只苍蝇。
+E|suivre|sur|J'ai suivi la course sur mon téléphone.|我在手机上看了比赛直播。
+E|suivre|avec|Tout le monde suivait le débat avec intérêt.|大家都饶有兴趣地关注着这场辩论。
+C|supplier|de|supplier qqn de faire qqch|恳求某人做某事
+E|supplier|de|Je te supplie de ne rien dire à mes parents.|求求你别告诉我父母。
+E|supplier|de|Les enfants ont supplié leur mère de garder le chiot.|孩子们求妈妈把小狗留下。
+C|surfer|sur|surfer sur qqch|在……上冲浪；借……之势
+E|surfer|sur|Il surfe sur Internet au lieu de réviser.|他不复习，却在网上闲逛。
+E|surfer|sur|Cette marque surfe sur la mode du bio.|这个品牌借势有机食品的潮流。
+C|surgir|de|surgir de qqch|从……中突然冒出
+E|surgir|de|Un cerf a surgi de la forêt devant notre voiture.|一头鹿突然从树林里窜到我们车前。
+E|surgir|de|Des souvenirs surgissaient de son passé.|往事一幕幕从他的记忆中涌现出来。
+C|surprendre|en|surprendre qqn en train de faire qqch|撞见某人正在做某事
+E|surprendre|en|Sa mère l'a surpris en train de fumer.|他妈妈撞见他在抽烟。
+E|surprendre|en|Je les ai surpris en pleine dispute.|我撞见他们正在吵架。
+C|sympathiser|avec|sympathiser avec qqn|与某人合得来、交上朋友
+E|sympathiser|avec|J'ai tout de suite sympathisé avec ma voisine.|我和邻居一见如故。
+E|sympathiser|avec|En Espagne, il a sympathisé avec des étudiants de son âge.|在西班牙，他和同龄的学生交上了朋友。
+C|satisfaire|à|satisfaire à qqch|满足（条件、要求）
+E|satisfaire|à|Votre dossier ne satisfait pas à toutes les conditions.|您的材料不符合所有条件。
+E|satisfaire|à|Ce produit satisfait aux normes européennes.|该产品符合欧洲标准。
+C|suggérer|à|suggérer qqch à qqn|向某人建议某事
+E|suggérer|à|Le médecin a suggéré une semaine de repos à ma mère.|医生建议我妈妈休息一周。
+E|suggérer|à|J'ai suggéré à Paul de prendre le train.|我建议保罗坐火车去。
+C|sauter|sur|sauter sur qqn/qqch|扑向；抓住（机会）
+E|sauter|sur|Il a sauté sur l'occasion sans hésiter.|他毫不犹豫地抓住了这个机会。
+E|sauter|sur|Le chien a sauté sur le facteur dès qu'il a ouvert le portail.|邮递员一打开大门，狗就扑了上去。
+E|sauter|sur|Le chat a sauté sur la souris.|猫猛地扑向老鼠。
+C|tacher|de|tacher qqch de qqch|用……弄脏
+E|tacher|de|Tu as taché la nappe de vin rouge.|你把红酒洒在桌布上了。
+E|tacher|de|Ses doigts étaient tachés d'encre.|他的手指上沾满了墨水。
+E|tendre|vers|Le nombre d'élèves par classe tend vers trente.|每班学生人数趋近三十人。
+E|tendre|vers|Nous devons tendre vers l'égalité entre tous les élèves.|我们应当力求所有学生都享有平等。
+C|tenir|dans|tenir dans qqch|装得下；容纳于……
+E|tenir|dans|Toutes mes affaires tiennent dans une seule valise.|我所有的东西一个箱子就装得下。
+E|tenir|dans|Son discours tient dans une page.|他的讲稿一页纸就写得下。
+C|tirer|de|tirer qqch/qqn de qqch|从……中得出；把某人从……中拉出
+E|tirer|de|Il faut tirer une leçon de cet échec.|必须从这次失败中吸取教训。
+E|tirer|de|Ce film est tiré d'un roman célèbre.|这部电影改编自一部名著。
+E|tirer|de|Le bruit m'a tiré de mon sommeil.|噪音把我从睡梦中吵醒了。
+C|tremper|dans|tremper qqch dans qqch / tremper dans qqch|把某物浸入……；参与（不法之事）
+E|tremper|dans|Il trempe son croissant dans son café.|他把牛角面包泡进咖啡里。
+E|tremper|dans|Le maire aurait trempé dans une affaire de corruption.|据说市长卷入了一起贪腐案。
+C|truffer|de|truffer qqch de qqch|在……中塞满（错误、引语等）
+E|truffer|de|Ton devoir est truffé de fautes d'orthographe.|你的作业满是拼写错误。
+E|truffer|de|Il truffe ses discours de citations latines.|他的演讲里塞满了拉丁语引文。
+C|trébucher|sur|trébucher sur qqch|被……绊倒；在……上卡壳
+E|trébucher|sur|Elle a trébuché sur une racine dans le parc.|她在公园里被一根树根绊了一下。
+E|trébucher|sur|L'élève trébuchait sur chaque mot difficile.|这名学生每遇到难词就结巴。
+C|tâcher|de|tâcher de faire qqch|尽力做某事
+E|tâcher|de|Tâche d'arriver à l'heure demain.|明天尽量准时到。
+E|tâcher|de|Je tâcherai de ne pas faire de bruit.|我会尽量不出声。
+E|travailler|chez|Ma sœur travaille chez un grand constructeur automobile.|我姐姐在一家大汽车公司上班。
+E|travailler|chez|Il a travaillé trois ans chez un architecte.|他在一位建筑师那里干了三年。
+C|user|de|user de qqch|运用、使用（权力、手段等）
+E|user|de|Le directeur a usé de son autorité pour régler le conflit.|经理动用自己的权威平息了冲突。
+E|user|de|Il faut user de patience avec les jeunes enfants.|对待小孩子要有耐心。
+C|vacciner|contre|vacciner qqn contre qqch|给某人接种预防……的疫苗
+E|vacciner|contre|Tous les enfants doivent être vaccinés contre la rougeole.|所有孩子都必须接种麻疹疫苗。
+E|vacciner|contre|Faites-vous vacciner contre la fièvre jaune avant le voyage.|出行前请去接种黄热病疫苗。
+E|vacciner|contre|Cet échec l'a vacciné contre les promesses faciles.|这次失败让他对轻易许下的承诺有了免疫力。
+E|veiller|sur|La grand-mère veille sur les petits pendant l'été.|夏天由奶奶照看孩子们。
+E|veiller|sur|Que Dieu veille sur toi pendant ce long voyage.|愿上帝在你漫长的旅途中保佑你。
+C|vider|de|vider qqch de qqch|把……中的（东西）清空
+E|vider|de|On a vidé le grenier de tous ses vieux meubles.|我们把阁楼里的旧家具都清空了。
+E|vider|de|Les vacances ont vidé la ville de ses habitants.|假期一到，城里的居民几乎走空了。
+E|viser|à|Ce programme vise à réduire le chômage des jeunes.|这项计划旨在减少青年失业。
+E|viser|à|Nos efforts visaient à améliorer la vie des habitants.|我们的努力是为了改善居民的生活。
+C|vivre|avec|vivre avec qqn/qqch|与某人同住；带着（病痛等）生活
+E|vivre|avec|Elle vit avec son copain depuis deux ans.|她和男朋友同居两年了。
+E|vivre|avec|Il a appris à vivre avec sa maladie.|他学会了与病共存。
+C|voler|à|voler qqch à qqn|偷某人的东西
+E|voler|à|Quelqu'un a volé son portefeuille à mon père dans le métro.|有人在地铁里偷了我爸爸的钱包。
+E|voler|à|Un pickpocket a volé son téléphone à une touriste.|一个扒手偷了一名女游客的手机。
+C|vouloir|à|en vouloir à qqn|怨恨某人；生某人的气
+E|vouloir|à|Tu en veux encore à ton frère pour hier soir ?|你还在为昨晚的事生你哥哥的气吗？
+E|vouloir|à|Je n'en veux pas à ma sœur, elle ne l'a pas fait exprès.|我不怪我妹妹，她不是故意的。
+E|vouloir|à|Il en a voulu à ses parents pendant des années.|他怨恨了父母好多年。

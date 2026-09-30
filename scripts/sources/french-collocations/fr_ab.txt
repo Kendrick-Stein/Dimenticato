@@ -1,0 +1,540 @@
+# French verb collocations — letters a/b (verb initial ignoring se / s')
+# ---- NEW verbs: a ----
+C|s'abattre|sur|s'abattre sur qqn/qqch|突然降临到……上（灾祸、暴雨等）
+E|s'abattre|sur|Un violent orage s'est abattu sur la ville hier soir.|昨晚一场猛烈的暴风雨袭击了这座城市。
+E|s'abattre|sur|Le malheur s'abat souvent sur les plus fragiles.|不幸往往落在最脆弱的人身上。
+E|s'abattre|sur|Les critiques se sont abattues sur le ministre dès le lendemain.|第二天，批评就铺天盖地地落到了部长头上。
+C|s'abîmer|dans|s'abîmer dans qqch|沉浸于；陷入（思绪等）
+E|s'abîmer|dans|Elle s'abîmait dans ses pensées pendant des heures.|她常常一连几个小时陷入沉思。
+E|s'abîmer|dans|Après son départ, il s'est abîmé dans le travail.|她走后，他一头扎进了工作里。
+C|abdiquer|en|abdiquer en faveur de qqn|让位给某人
+E|abdiquer|en|Le vieux roi a abdiqué en faveur de son fils.|老国王把王位让给了儿子。
+E|abdiquer|en|La reine abdiquera en faveur de sa fille l'année prochaine.|女王明年将让位给她的女儿。
+C|aboutir|à|aboutir à qqch|最终达成；导致
+E|aboutir|à|Les négociations ont enfin abouti à un accord.|谈判终于达成了协议。
+E|aboutir|à|Ce chemin aboutit à une petite plage.|这条小路通向一片小海滩。
+E|aboutir|à|Tes efforts finiront par aboutir à quelque chose.|你的努力终究会有结果的。
+C|abreuver|de|abreuver qqn de qqch|让某人饱受（辱骂、信息等）
+E|abreuver|de|Les supporters ont abreuvé l'arbitre d'insultes.|球迷们对裁判破口大骂。
+E|abreuver|de|On nous abreuve d'informations inutiles toute la journée.|我们整天被灌输无用的信息。
+C|absoudre|de|absoudre qqn de qqch|赦免某人的（罪过）
+E|absoudre|de|Le prêtre l'a absous de ses péchés.|神父赦免了他的罪。
+E|absoudre|de|Le tribunal ne peut pas l'absoudre de toute responsabilité.|法庭不能免除他的一切责任。
+C|s'acclimater|à|s'acclimater à qqch|适应（气候、新环境）
+E|s'acclimater|à|Il m'a fallu un mois pour m'acclimater à la chaleur.|我花了一个月才适应这里的炎热。
+E|s'acclimater|à|Les enfants se sont vite acclimatés à leur nouvelle école.|孩子们很快就适应了新学校。
+E|s'acclimater|à|Cette plante ne s'acclimate pas au froid.|这种植物适应不了寒冷。
+C|s'accommoder|de|s'accommoder de qqch|将就；勉强接受
+E|s'accommoder|de|Nous nous accommoderons d'une petite chambre.|我们住个小房间也就将就了。
+E|s'accommoder|de|Elle s'accommode mal du bruit de la ville.|她很难忍受城市的噪音。
+E|s'accommoder|de|Il faut savoir s'accommoder de ce qu'on a.|要懂得满足于自己所拥有的。
+C|accoucher|de|accoucher de qqn|生下（孩子）
+E|accoucher|de|Elle a accouché d'une petite fille en pleine nuit.|她在深夜生下了一个女儿。
+E|accoucher|de|Ma sœur accouchera de jumeaux en mars.|我姐姐三月份要生双胞胎。
+E|accoucher|de|Après des mois de travail, le comité a accouché d'un rapport très court.|委员会忙了几个月，最后只拿出一份很短的报告。
+C|s'accouder|à|s'accouder à qqch|把胳膊肘支在……上
+E|s'accouder|à|Il s'est accoudé au comptoir pour commander un café.|他把胳膊肘靠在吧台上点了一杯咖啡。
+E|s'accouder|à|Accoudée à la fenêtre, elle regardait passer les gens.|她倚着窗台，看着行人来来往往。
+C|accourir|vers|accourir vers qqn|朝某人跑过来
+E|accourir|vers|Les enfants sont accourus vers leur grand-mère.|孩子们朝奶奶跑了过去。
+E|accourir|vers|Dès qu'il a entendu le cri, il est accouru vers la rivière.|一听到叫声，他就向河边奔去。
+C|s'acharner|sur|s'acharner sur qqn/qqch|对……紧咬不放；拼命折腾
+E|s'acharner|sur|Pourquoi la presse s'acharne-t-elle sur cette actrice ?|为什么媒体对这位女演员穷追猛打？
+E|s'acharner|sur|Il s'acharne sur ce problème de maths depuis ce matin.|他从早上起就一直死磕这道数学题。
+C|s'acharner|contre|s'acharner contre qqn/qqch|与……顽强对抗；执意反对
+E|s'acharner|contre|Le sort semble s'acharner contre cette famille.|命运似乎总跟这一家人过不去。
+E|s'acharner|contre|Les pompiers se sont acharnés contre les flammes toute la nuit.|消防员整夜与大火顽强搏斗。
+C|s'acharner|à|s'acharner à faire qqch|执意要做某事；拼命做某事
+E|s'acharner|à|Elle s'acharne à réparer ce vieux vélo.|她非要把这辆旧自行车修好不可。
+E|s'acharner|à|Pourquoi t'acharnes-tu à vouloir tout contrôler ?|你为什么非要什么都掌控不可？
+N|s'acharner|à|s'acharner à faire = 执意、拼命去做；s'acharner sur / contre qqn = 对某人穷追猛打、跟某人过不去
+N|s'acharner|sur|s'acharner sur qqn/qqch = 盯住不放（对人：迫害；对事：死磕）；s'acharner à faire = 拼命去做
+N|s'acharner|contre|s'acharner contre = 顽强对抗、与……作对，语气强调敌对；s'acharner sur 更强调“盯住一个对象”
+C|acheminer|vers|acheminer qqch vers un lieu|把……运送到某地
+E|acheminer|vers|L'aide humanitaire sera acheminée vers les villages isolés.|人道主义援助将被运往偏远的村庄。
+E|acheminer|vers|On achemine le courrier vers le centre de tri chaque nuit.|每天夜里，邮件都会被运往分拣中心。
+C|achopper|sur|achopper sur qqch|在……上受阻；卡在某个问题上
+E|achopper|sur|Les discussions ont achoppé sur la question des salaires.|讨论卡在了工资问题上。
+E|achopper|sur|Le projet achoppe toujours sur le financement.|这个项目一直卡在资金问题上。
+C|acquiescer|à|acquiescer à qqch|同意；应允
+E|acquiescer|à|Le directeur a acquiescé à notre demande.|主任答应了我们的请求。
+E|acquiescer|à|Elle acquiesçait à tout ce que disait son père.|父亲说什么她都点头同意。
+C|s'acquitter|de|s'acquitter de qqch|履行（义务）；还清（债务）
+E|s'acquitter|de|Il s'est acquitté de sa mission avec sérieux.|他认真地完成了自己的任务。
+E|s'acquitter|de|Vous devez vous acquitter de cette dette avant juin.|您必须在六月前还清这笔债。
+E|s'acquitter|de|Chaque citoyen doit s'acquitter de ses impôts.|每个公民都必须缴纳税款。
+C|s'acoquiner|avec|s'acoquiner avec qqn|与某人勾搭；与坏人为伍
+E|s'acoquiner|avec|Il s'est acoquiné avec une bande de voyous.|他跟一帮流氓混在了一起。
+E|s'acoquiner|avec|Sa mère a peur qu'elle s'acoquine avec des gens peu recommandables.|她母亲怕她跟不三不四的人混在一起。
+C|acculer|à|acculer qqn à qqch|把某人逼到（绝境）
+E|acculer|à|La crise a acculé l'entreprise à la faillite.|危机把公司逼到了破产的地步。
+E|acculer|à|Ses dettes l'ont acculé à vendre sa maison.|债务逼得他不得不卖掉房子。
+C|adjoindre|à|adjoindre qqn/qqch à qqn/qqch|给……增添；派……协助
+E|adjoindre|à|La direction a adjoint deux ingénieurs au chef de projet.|管理层给项目负责人增派了两名工程师。
+E|adjoindre|à|Nous avons adjoint une annexe au rapport.|我们给报告加了一份附件。
+C|adjuger|à|adjuger qqch à qqn|判给某人；授予（拍卖中）
+E|adjuger|à|Le tableau a été adjugé à un collectionneur chinois.|这幅画被一位中国收藏家拍得。
+E|adjuger|à|Le jury a adjugé le premier prix à une jeune pianiste.|评委会把一等奖授予了一位年轻的钢琴家。
+C|administrer|à|administrer qqch à qqn|给某人服用（药物）；施以
+E|administrer|à|L'infirmière a administré un calmant au patient.|护士给病人用了镇静剂。
+E|administrer|à|Il ne faut jamais administrer ce médicament à un enfant.|绝不能给儿童服用这种药。
+C|admettre|à|admettre qqn à qqch|准许某人参加；录取
+E|admettre|à|Seuls les membres sont admis à la réunion.|只有会员才能参加这次会议。
+E|admettre|à|Elle a été admise à l'examen oral.|她获准参加口试了。
+C|admettre|dans|admettre qqn dans qqch|接纳某人进入（学校、团体等）
+E|admettre|dans|Il a été admis dans une grande école d'ingénieurs.|他被一所著名的工程师学校录取了。
+E|admettre|dans|Les chiens ne sont pas admis dans ce restaurant.|这家餐厅禁止带狗入内。
+N|admettre|à|admettre qqn à un examen / à faire = 准许参加、获准做；admettre qqn dans une école / un club = 接纳进入某机构
+N|admettre|dans|admettre dans = 接纳进入某个地方或团体；admettre à = 准许参加某项活动或考试
+C|s'adosser|à|s'adosser à qqch|背靠着……
+E|s'adosser|à|Il s'est adossé à un arbre pour se reposer.|他背靠着一棵树休息。
+E|s'adosser|à|Adossée à la porte, elle écoutait la conversation.|她背靠着门偷听谈话。
+C|s'adosser|contre|s'adosser contre qqch|背倚在……上
+E|s'adosser|contre|Ne t'adosse pas contre la vitre, elle est fragile.|别背靠在玻璃上，它很容易碎。
+E|s'adosser|contre|Les deux hommes s'adossaient contre le mur en fumant.|两个男人背倚着墙抽烟。
+C|s'affairer|à|s'affairer à faire qqch|忙着做某事
+E|s'affairer|à|Toute la famille s'affairait à préparer le repas de Noël.|全家人都在忙着准备圣诞大餐。
+E|s'affairer|à|Les serveurs s'affairent à dresser les tables avant midi.|服务员们在中午前忙着摆桌子。
+C|s'affaler|sur|s'affaler sur qqch|瘫坐在……上
+E|s'affaler|sur|En rentrant, il s'est affalé sur le canapé.|一回到家，他就瘫倒在沙发上。
+E|s'affaler|sur|Ne t'affale pas sur la table quand tu manges.|吃饭时别趴在桌子上。
+C|s'affilier|à|s'affilier à qqch|加入（组织、协会）
+E|s'affilier|à|Elle s'est affiliée à un syndicat l'an dernier.|她去年加入了工会。
+E|s'affilier|à|Notre club va s'affilier à la fédération nationale.|我们俱乐部将加入全国联合会。
+C|s'affliger|de|s'affliger de qqch|为某事感到悲伤
+E|s'affliger|de|Il s'afflige de voir son village se vider.|看到村子里的人越来越少，他很伤心。
+E|s'affliger|de|Ne t'afflige pas de si peu.|别为这点小事难过。
+C|affluer|vers|affluer vers un lieu|涌向某地
+E|affluer|vers|Les touristes affluent vers la côte en août.|八月份游客纷纷涌向海边。
+E|affluer|vers|Après le concert, la foule a afflué vers la sortie.|音乐会结束后，人群涌向出口。
+C|affluer|à|affluer à un lieu|大量涌到；（血液）涌上
+E|affluer|à|Les candidatures affluent au bureau depuis lundi.|从周一起，申请材料就源源不断地送到办公室。
+E|affluer|à|Le sang lui affluait au visage.|他的血一下子涌上了脸。
+C|s'affranchir|de|s'affranchir de qqch|摆脱（束缚）
+E|s'affranchir|de|Elle voulait s'affranchir de l'autorité de ses parents.|她想摆脱父母的管束。
+E|s'affranchir|de|Il est difficile de s'affranchir de ses vieilles habitudes.|摆脱旧习惯很难。
+E|s'affranchir|de|Le pays s'est affranchi de la domination coloniale en 1960.|这个国家在1960年摆脱了殖民统治。
+C|affubler|de|affubler qqn de qqch|给某人套上（可笑的衣服、绰号）
+E|affubler|de|Ses camarades l'ont affublé d'un surnom ridicule.|同学们给他起了一个可笑的外号。
+E|affubler|de|Elle était affublée d'un chapeau énorme.|她戴着一顶大得出奇的帽子。
+C|agrémenter|de|agrémenter qqch de qqch|用……点缀、装点
+E|agrémenter|de|Il a agrémenté son discours de quelques anecdotes.|他在讲话中穿插了几则趣闻。
+E|agrémenter|de|Agrémentez la salade de quelques noix.|在沙拉里加些核桃点缀一下。
+C|aiguiller|vers|aiguiller qqn vers qqch|引导某人走向……
+E|aiguiller|vers|Le conseiller l'a aiguillée vers une formation d'infirmière.|顾问引导她去参加护士培训。
+E|aiguiller|vers|À l'accueil, on vous aiguillera vers le bon service.|接待处会把您引到相应的部门。
+C|ajouter|à|ajouter qqch à qqch|把……加到……里
+E|ajouter|à|Ajoute un peu de sel à la sauce.|往酱汁里加点盐。
+E|ajouter|à|J'ai ajouté ton nom à la liste des invités.|我把你的名字加到宾客名单上了。
+E|ajouter|à|Cette pluie ajoute encore à notre fatigue.|这场雨让我们更加疲惫了。
+C|s'alarmer|de|s'alarmer de qqch|对某事感到担忧
+E|s'alarmer|de|Les médecins s'alarment de la hausse des cas de diabète.|医生们对糖尿病病例的增加感到担忧。
+E|s'alarmer|de|Ne vous alarmez pas de ce petit retard.|别为这点小小的延误担心。
+C|alerter|sur|alerter qqn sur qqch|提醒某人注意（危险）
+E|alerter|sur|Les scientifiques alertent l'opinion sur le réchauffement climatique.|科学家们提醒公众关注气候变暖问题。
+E|alerter|sur|Il faut alerter les parents sur les dangers d'internet.|必须提醒家长们注意网络的危险。
+C|s'aligner|sur|s'aligner sur qqn/qqch|向……看齐；与……保持一致
+E|s'aligner|sur|Les petits magasins doivent s'aligner sur les prix des supermarchés.|小商店不得不向超市的价格看齐。
+E|s'aligner|sur|Le parti s'est aligné sur la position du gouvernement.|该党与政府立场保持了一致。
+C|alimenter|en|alimenter qqch en qqch|向……供应（水、电等）
+E|alimenter|en|Ce barrage alimente toute la région en électricité.|这座水坝为整个地区供电。
+E|alimenter|en|Le village est alimenté en eau par une source.|村子的用水来自一眼泉水。
+C|s'allier|à|s'allier à qqn|与某人结盟
+E|s'allier|à|La France s'est alliée à l'Angleterre pendant la guerre.|战争期间法国与英国结成了同盟。
+E|s'allier|à|Le petit parti s'alliera à la gauche aux élections.|这个小党将在选举中与左派联合。
+C|s'allier|avec|s'allier avec qqn|和某人联手
+E|s'allier|avec|Pour gagner, il a dû s'allier avec son ancien rival.|为了获胜，他不得不和昔日的对手联手。
+E|s'allier|avec|Les deux entreprises se sont alliées avec un groupe japonais.|两家公司与一家日本集团合作了。
+C|alterner|avec|alterner avec qqch|与……交替
+E|alterner|avec|Chez nous, la pluie alterne avec le soleil au printemps.|我们这里春天时雨时晴。
+E|alterner|avec|Dans ce cours, la théorie alterne avec la pratique.|这门课理论与实践交替进行。
+C|amarrer|à|amarrer qqch à qqch|把（船等）系在……上
+E|amarrer|à|Le pêcheur a amarré sa barque au ponton.|渔夫把小船系在了浮码头上。
+E|amarrer|à|Le bateau restera amarré au quai tout l'hiver.|这艘船整个冬天都会停泊在码头边。
+C|s'améliorer|en|s'améliorer en qqch|在（某科目、技能）上进步
+E|s'améliorer|en|Mon fils s'est beaucoup amélioré en anglais cette année.|我儿子今年英语进步很大。
+E|s'améliorer|en|Tu t'amélioreras en dessin si tu pratiques tous les jours.|如果每天练习，你的画画水平会提高的。
+C|aménager|en|aménager qqch en qqch|把……改建成……
+E|aménager|en|Ils ont aménagé le grenier en chambre d'amis.|他们把阁楼改成了客房。
+E|aménager|en|L'ancienne usine sera aménagée en centre culturel.|旧工厂将被改建成文化中心。
+E|aménager|en|Nous aimerions aménager ce garage en atelier.|我们想把这个车库改成工作室。
+C|s'amouracher|de|s'amouracher de qqn|迷恋上某人（一时的）
+E|s'amouracher|de|À seize ans, elle s'est amourachée de son professeur de guitare.|十六岁时，她迷上了自己的吉他老师。
+E|s'amouracher|de|Il s'amourache d'une nouvelle fille chaque été.|他每个夏天都会迷上一个新女孩。
+C|amputer|de|amputer qqn/qqch de qqch|截去某人的（肢体）；削减
+E|amputer|de|Après l'accident, on a dû l'amputer d'une jambe.|事故之后，医生不得不给他截掉一条腿。
+E|amputer|de|Le budget de la culture a été amputé d'un tiers.|文化预算被削减了三分之一。
+C|s'ancrer|dans|s'ancrer dans qqch|扎根于；深深印在……中
+E|s'ancrer|dans|Cette idée s'est ancrée dans l'esprit des gens.|这个观念已深入人心。
+E|s'ancrer|dans|Ces traditions s'ancrent dans une histoire très ancienne.|这些传统植根于悠久的历史。
+C|annexer|à|annexer qqch à qqch|把……附于；吞并
+E|annexer|à|Veuillez annexer une copie du contrat à votre demande.|请在申请中附上一份合同副本。
+E|annexer|à|Ce territoire a été annexé à l'empire au dix-neuvième siècle.|这片领土在十九世纪被并入了帝国。
+C|annoncer|à|annoncer qqch à qqn|向某人宣布、告知某事
+E|annoncer|à|Il a annoncé la nouvelle à ses parents hier soir.|他昨晚把这个消息告诉了父母。
+E|annoncer|à|Qui va annoncer aux employés que l'usine ferme ?|谁去告诉员工工厂要关门了？
+E|annoncer|à|Elle annoncera son mariage à toute la famille à Noël.|她会在圣诞节向全家宣布她要结婚了。
+C|anticiper|sur|anticiper sur qqch|预先考虑；抢先谈论（后面的事）
+E|anticiper|sur|N'anticipons pas sur la suite de l'histoire.|我们先别提前讲故事的后续。
+E|anticiper|sur|Il anticipe toujours sur les problèmes à venir.|他总是提前考虑将来可能出现的问题。
+C|s'apitoyer|sur|s'apitoyer sur qqn/qqch|怜悯；同情
+E|s'apitoyer|sur|Arrête de t'apitoyer sur ton sort et agis !|别再自怨自艾了，行动起来！
+E|s'apitoyer|sur|Tout le monde s'apitoyait sur ce pauvre chien abandonné.|大家都很同情这只被遗弃的可怜小狗。
+E|s'apitoyer|sur|Elle ne veut pas qu'on s'apitoie sur elle.|她不想让别人可怜她。
+C|s'apparenter|à|s'apparenter à qqch|类似于；近乎
+E|s'apparenter|à|Ce qu'il a fait s'apparente à du vol.|他的所作所为近乎偷窃。
+E|s'apparenter|à|Le catalan s'apparente à l'espagnol et au français.|加泰罗尼亚语与西班牙语和法语相近。
+C|s'appesantir|sur|s'appesantir sur qqch|在（某话题）上纠缠、多谈
+E|s'appesantir|sur|Je ne vais pas m'appesantir sur les détails.|我就不细说这些细节了。
+E|s'appesantir|sur|Le rapport s'appesantit trop sur les erreurs du passé.|这份报告在过去的错误上着墨太多。
+C|apporter|à|apporter qqch à qqn|给某人带来某物
+E|apporter|à|J'ai apporté des fleurs à ma grand-mère.|我给奶奶带了些花。
+E|apporter|à|Ce voyage a apporté beaucoup de joie à toute la famille.|这次旅行给全家人带来了很多快乐。
+E|apporter|à|Apporte ce dossier au directeur, s'il te plaît.|请把这份文件拿给主任。
+C|apposer|sur|apposer qqch sur qqch|在……上加盖、贴上
+E|apposer|sur|Le notaire a apposé son cachet sur le document.|公证人在文件上盖了章。
+E|apposer|sur|Il est interdit d'apposer des affiches sur ce mur.|禁止在这面墙上张贴广告。
+C|appréhender|de|appréhender de faire qqch|害怕做某事；担心
+E|appréhender|de|J'appréhende de le revoir après tant d'années.|这么多年了，我有点害怕再见到他。
+E|appréhender|de|Elle appréhendait de prendre l'avion pour la première fois.|第一次坐飞机，她心里很忐忑。
+C|arguer|de|arguer de qqch|以……为借口、理由
+E|arguer|de|Il a argué de sa maladie pour ne pas venir.|他以生病为由没来。
+E|arguer|de|Le ministre argue de la crise pour réduire les dépenses.|部长以危机为借口削减开支。
+C|s'armer|de|s'armer de qqch|以……武装自己；（喻）拿出（耐心、勇气）
+E|s'armer|de|Il faut s'armer de patience avec les enfants.|对孩子要有足够的耐心。
+E|s'armer|de|Elle s'est armée de courage et a frappé à la porte.|她鼓起勇气敲了门。
+E|s'armer|de|Les manifestants s'étaient armés de bâtons.|示威者们手里拿着棍棒。
+C|arracher|à|arracher qqch à qqn|从某人手中夺走；使某人摆脱
+E|arracher|à|Le voleur a arraché son sac à une vieille dame.|小偷抢走了一位老太太的包。
+E|arracher|à|La sonnerie l'a arraché à ses rêves.|铃声把他从梦中惊醒。
+E|arracher|à|Personne n'a réussi à arracher un aveu au suspect.|谁也没能让嫌疑人招供。
+C|arracher|de|arracher qqch de qqch|从……上拔出、撕下
+E|arracher|de|Il a arraché une page de son cahier.|他从本子上撕下了一页。
+E|arracher|de|Le vent a arraché plusieurs tuiles du toit.|风把屋顶上的好几块瓦掀掉了。
+N|arracher|à|arracher qqch à qqn = 从“人”手里夺走（或使人摆脱某状态）；arracher qqch de qqch = 从“物、地方”上拔下、撕下
+N|arracher|de|arracher de = 从某物/某处拔、撕；arracher à = 从某人那里夺走
+C|arroser|de|arroser qqch de qqch|往……上浇、洒
+E|arroser|de|Arrosez le poulet de son jus toutes les vingt minutes.|每隔二十分钟往鸡肉上浇一次汤汁。
+E|arroser|de|Il a arrosé son dessert de rhum.|他在甜点上浇了些朗姆酒。
+C|asperger|de|asperger qqn/qqch de qqch|往……上喷、溅
+E|asperger|de|Les enfants s'aspergeaient d'eau dans le jardin.|孩子们在花园里互相泼水。
+E|asperger|de|Une voiture m'a aspergé de boue en passant.|一辆车开过时溅了我一身泥。
+C|assaillir|de|assaillir qqn de qqch|用（问题等）围攻某人
+E|assaillir|de|Les journalistes l'ont assailli de questions.|记者们向他连珠炮似地提问。
+E|assaillir|de|Elle est assaillie de doutes depuis sa décision.|自从做了决定，她就疑虑重重。
+C|assener|à|assener qqch à qqn|给某人（一击）；对某人说出（狠话）
+E|assener|à|Il a assené un coup de poing à son adversaire.|他狠狠给了对手一拳。
+E|assener|à|Elle a assené quelques vérités désagréables à son patron.|她对老板说了几句不中听的大实话。
+C|assigner|à|assigner qqch à qqn / qqn à qqch|分配给某人；指定
+E|assigner|à|On a assigné une tâche précise à chaque bénévole.|每个志愿者都被分派了具体的任务。
+E|assigner|à|L'ancien ministre a été assigné à résidence.|前部长被软禁在家。
+C|assimiler|à|assimiler qqn/qqch à qqn/qqch|把……等同于……
+E|assimiler|à|On ne peut pas assimiler cette erreur à une faute grave.|不能把这个失误等同于严重过错。
+E|assimiler|à|Certains assimilent encore les jeux vidéo à une perte de temps.|有些人仍然把电子游戏看作浪费时间。
+C|associer|à|associer qqn/qqch à qqch|把……与……联系起来；让某人参与
+E|associer|à|J'associe toujours cette chanson à mon enfance.|我总是把这首歌和我的童年联系在一起。
+E|associer|à|Nous voulons associer les habitants à ce projet.|我们希望让居民参与到这个项目中来。
+E|associer|à|On associe souvent la couleur rouge à la chance en Chine.|在中国，人们常把红色和好运联系在一起。
+C|assortir|à|assortir qqch à qqch|使……与……相配
+E|assortir|à|Elle assortit toujours son sac à ses chaussures.|她总是让包和鞋子搭配。
+E|assortir|à|Les rideaux sont assortis au canapé.|窗帘和沙发很相配。
+C|assortir|de|assortir qqch de qqch|给……附加（条件等）
+E|assortir|de|Le prêt est assorti de conditions très strictes.|这笔贷款附带了非常严格的条件。
+E|assortir|de|Le juge a assorti la peine d'un sursis.|法官对该刑罚宣告了缓期执行。
+N|assortir|à|assortir à = 使相配、搭配；assortir de = 附加上（条件、说明等）
+N|assortir|de|assortir de = 附带、附加；assortir à = 与……相配
+C|assujettir|à|assujettir qqn/qqch à qqch|使……受制于；使……必须缴纳
+E|assujettir|à|Ces revenus sont assujettis à l'impôt.|这些收入需要缴税。
+E|assujettir|à|Le peuple était assujetti à un pouvoir étranger.|这个民族曾受外族统治。
+C|assurer|de|assurer qqn de qqch|向某人保证某事
+E|assurer|de|Je vous assure de mon entier soutien.|我向您保证全力支持。
+E|assurer|de|Il m'a assuré de sa bonne foi.|他向我保证他是真诚的。
+C|assurer|contre|assurer qqch contre qqch|为……投保（以防）
+E|assurer|contre|Nous avons assuré la maison contre l'incendie.|我们给房子上了火灾险。
+E|assurer|contre|Votre voiture est-elle assurée contre le vol ?|您的车保了盗窃险吗？
+N|assurer|de|assurer qqn de qqch = 向某人保证；assurer qqch contre qqch = 给某物投保以防某种风险
+N|assurer|contre|assurer contre = 投保防范（火灾、盗窃）；assurer de = 保证、担保（某种态度）
+C|s'assurer|de|s'assurer de qqch|确认；确保
+E|s'assurer|de|Assure-toi d'avoir bien fermé la porte.|确认一下你是不是把门关好了。
+E|s'assurer|de|Le guide s'est assuré de la présence de tout le monde.|导游确认大家都到齐了。
+E|s'assurer|de|Il faut que tu t'assures de l'heure du départ.|你得确认一下出发时间。
+C|astreindre|à|astreindre qqn à qqch|强迫某人做；使某人受约束
+E|astreindre|à|Le médecin l'a astreint à un régime sévère.|医生让他严格节食。
+E|astreindre|à|Les employés sont astreints au secret professionnel.|员工必须遵守职业保密义务。
+C|s'atteler|à|s'atteler à qqch|着手、投入（工作）
+E|s'atteler|à|Demain, je m'attelle à la rédaction de mon mémoire.|明天我就开始动笔写论文。
+E|s'atteler|à|Le gouvernement s'est attelé à la réforme des retraites.|政府着手进行养老金改革。
+C|s'attarder|sur|s'attarder sur qqch|在……上多作停留
+E|s'attarder|sur|Le professeur s'est attardé sur ce point difficile.|老师在这个难点上多讲了一会儿。
+E|s'attarder|sur|Ne nous attardons pas sur ce sujet.|我们别在这个话题上多耽搁了。
+C|s'attaquer|à|s'attaquer à qqn/qqch|攻击；着手解决（问题）
+E|s'attaquer|à|Il faut s'attaquer aux causes de la pauvreté.|必须从根源上解决贫困问题。
+E|s'attaquer|à|Le requin ne s'attaque presque jamais à l'homme.|鲨鱼几乎从不攻击人类。
+E|s'attaquer|à|Cette année, je m'attaque enfin à l'apprentissage du piano.|今年我终于开始学钢琴了。
+C|s'attendrir|sur|s'attendrir sur qqn/qqch|对……心软、动情
+E|s'attendrir|sur|Elle s'attendrit sur les photos de ses petits-enfants.|她看着孙辈们的照片心都软了。
+E|s'attendrir|sur|Ne t'attendris pas sur son sort, il l'a bien cherché.|别心疼他，他这是自找的。
+C|attenter|à|attenter à qqch|侵犯；危害
+E|attenter|à|Il a tenté d'attenter à la vie du président.|他企图谋害总统。
+E|attenter|à|Cette loi attente à la liberté d'expression.|这项法律侵犯了言论自由。
+C|attester|de|attester de qqch|证明；证实
+E|attester|de|Ces ruines attestent de la richesse de l'ancienne ville.|这些废墟证明了古城昔日的繁荣。
+E|attester|de|Plusieurs témoins peuvent attester de sa présence ce soir-là.|好几个证人可以证明他那天晚上在场。
+C|s'attrister|de|s'attrister de qqch|为某事感到难过
+E|s'attrister|de|Il s'attriste de voir ses amis partir un à un.|看着朋友们一个个离开，他很难过。
+E|s'attrister|de|Ne t'attriste pas de cet échec.|别为这次失败难过。
+C|augurer|de|augurer bien/mal de qqch|对……作出（好/坏）预测
+E|augurer|de|Ce premier entretien laisse bien augurer de la suite.|这第一次面谈预示着后续会很顺利。
+E|augurer|de|Je n'augure rien de bon de cette réunion.|我对这次会议不抱什么好的期待。
+C|s'aventurer|dans|s'aventurer dans qqch|冒险进入
+E|s'aventurer|dans|Ne vous aventurez pas dans la forêt la nuit.|夜里不要贸然进入森林。
+E|s'aventurer|dans|Il s'est aventuré dans des affaires douteuses.|他冒险涉足了一些可疑的生意。
+C|s'aviser|de|s'aviser de qqch / de faire qqch|发觉；竟敢做某事
+E|s'aviser|de|Ne t'avise pas de toucher à mon ordinateur !|你敢碰我的电脑试试！
+E|s'aviser|de|Il s'est avisé trop tard de son erreur.|他发现自己的错误时已经太晚了。
+C|avouer|à|avouer qqch à qqn|向某人承认、坦白
+E|avouer|à|Il a fini par avouer la vérité à sa femme.|他最后还是向妻子坦白了真相。
+E|avouer|à|Elle n'a jamais osé avouer son amour à Paul.|她一直没敢向保罗表白。
+E|avouer|à|Il n'ose pas avouer à ses parents qu'il a raté son bac.|他不敢向父母承认自己高考没考过。
+C|s'abandonner|à|s'abandonner à qqch|沉溺于；任由（情绪）支配
+E|s'abandonner|à|Il s'est abandonné au désespoir après sa faillite.|破产之后，他陷入了绝望。
+E|s'abandonner|à|En vacances, elle s'abandonne enfin au plaisir de ne rien faire.|度假时，她终于可以尽情享受无所事事的乐趣。
+C|s'aider|de|s'aider de qqch|借助某物
+E|s'aider|de|Tu peux t'aider d'un dictionnaire pour cet exercice.|做这个练习时你可以借助词典。
+E|s'aider|de|Le vieil homme marchait en s'aidant d'une canne.|老人拄着拐杖走路。
+E|s'aider|de|Aidez-vous de vos notes pour répondre.|请参考你们的笔记来回答。
+C|s'arc-bouter|contre|s'arc-bouter contre qqch|用力抵住……
+E|s'arc-bouter|contre|Il s'est arc-bouté contre la porte pour la bloquer.|他用身子死死抵住门，不让它打开。
+E|s'arc-bouter|contre|Le syndicat s'arc-boute contre toute réforme.|工会顽固地反对一切改革。
+C|s'avachir|sur|s'avachir sur qqch|懒洋洋地瘫在……上
+E|s'avachir|sur|Tous les soirs, il s'avachit sur le canapé devant la télé.|每天晚上他都懒洋洋地瘫在沙发上看电视。
+E|s'avachir|sur|Tiens-toi droit, ne t'avachis pas sur ta chaise.|坐直了，别在椅子上瘫着。
+C|arrimer|à|arrimer qqch à qqch|把……系牢在……上
+E|arrimer|à|Il faut bien arrimer les bagages au toit de la voiture.|必须把行李牢牢捆在车顶上。
+E|arrimer|à|Les caisses étaient arrimées au pont du navire.|箱子被牢牢固定在船的甲板上。
+C|s'activer|à|s'activer à faire qqch|忙着、赶紧做某事
+E|s'activer|à|Les cuisiniers s'activent à préparer le banquet.|厨师们正忙着准备宴席。
+E|s'activer|à|Allez, activez-vous à ranger vos affaires !|快，赶紧收拾你们的东西！
+C|appâter|avec|appâter qqn/qqch avec qqch|用……引诱
+E|appâter|avec|On appâte les poissons avec des morceaux de pain.|人们用面包屑引鱼上钩。
+E|appâter|avec|Ils essaient d'appâter les clients avec des prix très bas.|他们试图用超低价吸引顾客。
+# ---- NEW verbs: b ----
+C|badigeonner|de|badigeonner qqch de qqch|在……上涂抹
+E|badigeonner|de|Badigeonnez la pâte de jaune d'œuf avant la cuisson.|烘烤前在面团上刷一层蛋黄。
+E|badigeonner|de|L'infirmière a badigeonné la plaie d'antiseptique.|护士在伤口上涂了消毒药水。
+C|badiner|avec|badiner avec qqch|拿……开玩笑（多用于否定）
+E|badiner|avec|On ne badine pas avec la sécurité des enfants.|孩子的安全可不是闹着玩的。
+E|badiner|avec|Ce professeur ne badine pas avec la discipline.|这位老师在纪律问题上一点也不含糊。
+C|se bagarrer|avec|se bagarrer avec qqn|和某人打架
+E|se bagarrer|avec|Mon fils s'est encore bagarré avec un camarade à la récré.|我儿子课间又和同学打架了。
+E|se bagarrer|avec|Arrêtez de vous bagarrer avec vos cousins !|别再和你们的表兄弟打架了！
+C|bâiller|de|bâiller de qqch|因……而打哈欠
+E|bâiller|de|Pendant la conférence, tout le monde bâillait d'ennui.|讲座期间，大家都无聊得直打哈欠。
+E|bâiller|de|Le bébé bâille de fatigue, il est temps de le coucher.|宝宝困得直打哈欠，该哄他睡觉了。
+C|baisser|de|baisser de qqch|下降了（多少）
+E|baisser|de|Le prix de l'essence a baissé de dix centimes.|汽油价格降了十欧分。
+E|baisser|de|La température baissera de cinq degrés cette nuit.|今晚气温将下降五度。
+E|baisser|de|Le nombre de chômeurs a baissé de 3 % en un an.|失业人数一年内下降了3%。
+C|bannir|de|bannir qqn/qqch de qqch|把……逐出；从……中剔除
+E|bannir|de|Le poète fut banni de son pays natal.|这位诗人被逐出了祖国。
+E|bannir|de|J'ai banni le sucre de mon alimentation.|我的饮食里已经完全不吃糖了。
+E|bannir|de|Il faut bannir ce mot de ton vocabulaire.|你得把这个词从你的词汇里删掉。
+C|barbouiller|de|barbouiller qqch de qqch|用……把……涂得乱七八糟
+E|barbouiller|de|Le petit a barbouillé le mur de peinture.|小家伙用颜料把墙涂得乱七八糟。
+E|barbouiller|de|Il avait le visage barbouillé de chocolat.|他满脸都是巧克力。
+C|barder|de|être bardé de qqch|满身都是；（喻）拥有大量（文凭等）
+E|barder|de|Il est bardé de diplômes mais n'a aucune expérience.|他文凭一大堆，却毫无经验。
+E|barder|de|Le rôti était bardé de lard.|烤肉外面裹了一层肥肉片。
+C|se barricader|dans|se barricader dans qqch|把自己关在……里；躲进
+E|se barricader|dans|Le suspect s'est barricadé dans son appartement.|嫌疑人躲在公寓里，把门窗都堵死了。
+E|se barricader|dans|Après la dispute, elle s'est barricadée dans sa chambre.|吵完架，她把自己锁在了房间里。
+C|basculer|dans|basculer dans qqch|陷入；转入（某种状态）
+E|basculer|dans|Le pays a basculé dans la guerre civile.|这个国家陷入了内战。
+E|basculer|dans|Après l'accident, sa vie a basculé dans le cauchemar.|事故之后，他的生活陷入了噩梦。
+E|basculer|dans|Il a basculé dans la délinquance à quinze ans.|他十五岁时就走上了犯罪道路。
+C|bassiner|avec|bassiner qqn avec qqch|用……烦扰某人（口语）
+E|bassiner|avec|Il nous bassine avec ses histoires de pêche.|他老拿他钓鱼的事烦我们。
+E|bassiner|avec|Arrête de me bassiner avec tes problèmes de voiture !|别再拿你那车的问题来烦我了！
+C|batailler|pour|batailler pour qqch / pour faire qqch|为……费力争取
+E|batailler|pour|Elle a bataillé pour obtenir un rendez-vous chez le spécialiste.|她费了好大劲才约上专科医生。
+E|batailler|pour|Les habitants bataillent pour garder leur école ouverte.|居民们极力争取让学校继续开办。
+C|bénéficier|de|bénéficier de qqch|享有；受益于
+E|bénéficier|de|Les étudiants bénéficient d'une réduction au cinéma.|学生看电影可以享受优惠。
+E|bénéficier|de|Il a bénéficié de l'aide de ses voisins.|他得到了邻居们的帮助。
+E|bénéficier|de|Demain, toute la région bénéficiera d'un temps ensoleillé.|明天整个地区都将阳光明媚。
+C|se bercer|de|se bercer de qqch|沉浸于（幻想）；自我陶醉
+E|se bercer|de|Ne te berce pas d'illusions, il ne reviendra pas.|别抱幻想了，他不会回来的。
+E|se bercer|de|Elle se berçait de rêves de gloire.|她沉浸在功成名就的梦想里。
+C|bifurquer|vers|bifurquer vers qqch|转向；改行
+E|bifurquer|vers|Au carrefour, bifurquez vers la gauche.|到了路口向左转。
+E|bifurquer|vers|Après ses études de droit, il a bifurqué vers le journalisme.|读完法律后，他改行做了记者。
+C|blaguer|sur|blaguer sur qqch|拿……开玩笑
+E|blaguer|sur|Il blague sur tout, même sur sa maladie.|他什么都拿来开玩笑，连自己的病也不例外。
+E|blaguer|sur|On ne blague pas sur ce genre de sujet.|这种话题可不能拿来开玩笑。
+C|blinder|contre|être blindé contre qqch|对……有了免疫力（口语）；加固以防
+E|blinder|contre|Après tant de critiques, elle est blindée contre les insultes.|经历了那么多批评，她对辱骂已经无动于衷了。
+E|blinder|contre|Ils ont blindé la porte contre les cambrioleurs.|他们加固了门以防盗贼。
+C|se blottir|contre|se blottir contre qqn/qqch|紧紧依偎着
+E|se blottir|contre|L'enfant s'est blotti contre sa mère.|孩子紧紧依偎在妈妈怀里。
+E|se blottir|contre|Le chat se blottit contre le radiateur en hiver.|冬天，猫蜷缩在暖气片旁边。
+C|se blottir|dans|se blottir dans qqch|蜷缩在……里
+E|se blottir|dans|Elle s'est blottie dans son lit sous trois couvertures.|她盖着三床被子蜷在床上。
+E|se blottir|dans|Les oiseaux se blottissent dans leur nid.|鸟儿们蜷缩在巢里。
+C|bombarder|de|bombarder qqn de qqch|用……对某人狂轰滥炸
+E|bombarder|de|Les enfants ont bombardé le guide de questions.|孩子们向导游提出了一连串问题。
+E|bombarder|de|On nous bombarde de publicités à la télé.|电视上的广告铺天盖地地向我们砸来。
+C|bondir|de|bondir de qqch|因（喜悦、愤怒）而跳起来
+E|bondir|de|Quand elle a reçu la lettre, elle a bondi de joie.|收到信时，她高兴得跳了起来。
+E|bondir|de|Il a bondi de sa chaise en entendant la nouvelle.|听到消息，他从椅子上一跃而起。
+C|bondir|sur|bondir sur qqn/qqch|扑向；抓住（机会）
+E|bondir|sur|Le chat a bondi sur la souris.|猫扑向了老鼠。
+E|bondir|sur|Il a bondi sur l'occasion sans hésiter.|他毫不犹豫地抓住了机会。
+N|bondir|de|bondir de joie / de colère = 因某种情绪而跳起（也可表示从某处跳起）；bondir sur = 扑向某物、抓住机会
+N|bondir|sur|bondir sur = 扑到……上（目标）；bondir de = 由于……跳起、从……跳起（来源）
+C|boiter|de|boiter de la jambe|瘸（某条腿）
+E|boiter|de|Depuis sa chute, il boite de la jambe droite.|自从摔了一跤，他右腿就有点瘸。
+E|boiter|de|Le cheval boitait d'une patte arrière.|那匹马的一条后腿瘸了。
+C|bosser|sur|bosser sur qqch|忙于、做（某项工作，口语）
+E|bosser|sur|Je bosse sur un nouveau projet en ce moment.|我现在在忙一个新项目。
+E|bosser|sur|Elle a bossé sur ce dossier tout le week-end.|她整个周末都在弄这份材料。
+C|bouillonner|de|bouillonner de qqch|充满（活力、怒气等）
+E|bouillonner|de|Cette jeune équipe bouillonne d'idées.|这支年轻的团队满脑子都是点子。
+E|bouillonner|de|Il bouillonnait de colère mais ne disait rien.|他心里怒火翻腾，却一言不发。
+C|bourdonner|de|bourdonner de qqch|充斥着……的嗡嗡声
+E|bourdonner|de|Le marché bourdonne d'activité dès six heures.|市场从六点起就一片热闹。
+E|bourdonner|de|Le jardin bourdonnait d'abeilles.|花园里蜜蜂嗡嗡作响。
+C|brancher|sur|brancher qqch sur qqch|把……接到（电源、频道）上
+E|brancher|sur|Branche ton téléphone sur le secteur, il n'a plus de batterie.|把你的手机插上电源，没电了。
+E|brancher|sur|La radio était branchée sur une station de jazz.|收音机调到了一个爵士乐电台。
+C|braquer|sur|braquer qqch sur qqn/qqch|把（枪、目光）对准……
+E|braquer|sur|Le policier a braqué son arme sur le suspect.|警察把枪口对准了嫌疑人。
+E|braquer|sur|Tous les regards étaient braqués sur elle.|所有的目光都集中在她身上。
+C|briller|par|briller par qqch|以……而出众（常带讽刺）
+E|briller|par|Il brille par son intelligence.|他以聪明过人著称。
+E|briller|par|Le directeur a encore brillé par son absence.|主任又一次“缺席得很显眼”。
+C|briller|de|briller de qqch|因……而闪闪发亮
+E|briller|de|Ses yeux brillaient de joie.|她的眼里闪烁着喜悦。
+E|briller|de|Le soir, la tour Eiffel brille de mille feux.|夜晚，埃菲尔铁塔流光溢彩。
+N|briller|par|briller par = 以……而出众（briller par son absence 是反讽：因缺席而引人注目）；briller de = 闪耀着（光芒、情感）
+N|briller|de|briller de joie / de mille feux = 闪耀着；briller par = 以……出众
+C|broder|sur|broder qqch sur qqch|在……上绣
+E|broder|sur|Ma grand-mère a brodé mes initiales sur la serviette.|奶奶在毛巾上绣了我名字的首字母。
+E|broder|sur|Elle brodait des fleurs sur un coussin.|她在靠垫上绣花。
+C|se brouiller|avec|se brouiller avec qqn|与某人闹翻
+E|se brouiller|avec|Il s'est brouillé avec son frère pour une histoire d'héritage.|他因为遗产的事和哥哥闹翻了。
+E|se brouiller|avec|Je ne veux pas me brouiller avec mes voisins.|我不想和邻居们闹僵。
+C|bûcher|sur|bûcher sur qqch|埋头苦学（口语）
+E|bûcher|sur|Il a bûché sur ses maths toute la semaine.|他整个星期都在埋头啃数学。
+E|bûcher|sur|Les étudiants bûchent sur leurs examens.|学生们在埋头准备考试。
+C|buter|contre|buter contre qqch|撞在……上；绊到
+E|buter|contre|J'ai buté contre une pierre et je suis tombé.|我绊到一块石头摔倒了。
+E|buter|contre|Dans le noir, elle a buté contre la table basse.|黑暗中，她撞到了茶几。
+C|buter|sur|buter sur qqch|在……上卡住、受阻
+E|buter|sur|Il bute toujours sur les mots difficiles.|他一碰到难词就结巴。
+E|buter|sur|Les enquêteurs butent sur un mystère.|调查人员遇到了一个难解之谜。
+N|buter|contre|buter contre = 身体撞到、绊到（具体物体）；buter sur = 被（难题、单词）卡住
+N|buter|sur|buter sur = 在难点上卡住；buter contre = 撞上、绊到实物
+# ---- TOP-UPS of existing thin pairs ----
+C|abaisser|à|s'abaisser à qqch / à faire qqch|降低身份去做；屈尊
+E|abaisser|à|Je refuse de m'abaisser à lui demander pardon.|我不肯低声下气地去求他原谅。
+E|abaisser|à|Elle ne s'abaisserait jamais à mentir pour de l'argent.|她绝不会为了钱而降低身份去说谎。
+C|abriter|de|abriter qqn de qqch / s'abriter de qqch|为……遮挡；躲避
+E|abriter|de|Ce vieux mur abrite le jardin du vent du nord.|这堵老墙为花园挡住了北风。
+E|abriter|de|Abritons-nous de l'orage sous ce porche.|我们到这个门廊下躲一下暴雨吧。
+C|accabler|de|accabler qqn de qqch|使某人承受大量（工作、指责等）
+E|accabler|de|Son chef l'accable de travail depuis des semaines.|几个星期来，他的上司一直给他压很多活儿。
+E|accabler|de|Ne l'accable pas de reproches, il est déjà assez triste.|别再责备他了，他已经够难过了。
+C|accueillir|avec|accueillir qqn/qqch avec qqch|以……（态度）接待、对待
+E|accueillir|avec|Le public a accueilli la nouvelle avec enthousiasme.|观众对这个消息反响热烈。
+E|accueillir|avec|Ils nous ont accueillis avec beaucoup de gentillesse.|他们非常热情地接待了我们。
+C|adhérer|à|adhérer à qqch|加入（组织）；赞同（观点）；粘附于
+E|adhérer|à|J'ai adhéré à une association de protection des animaux.|我加入了一个动物保护协会。
+E|adhérer|à|Je n'adhère pas du tout à cette théorie.|我完全不赞同这个理论。
+C|adresser|à|adresser qqch à qqn|把……寄给、致予某人
+E|adresser|à|Adressez votre candidature au service du personnel.|请把求职申请寄给人事部。
+E|adresser|à|Il a adressé une lettre de remerciements à ses professeurs.|他给老师们写了一封感谢信。
+C|agir|avec|agir avec qqch|以……（方式、态度）行事
+E|agir|avec|Dans cette situation, il faut agir avec prudence.|在这种情况下，行事必须谨慎。
+E|agir|avec|Le maire a agi avec courage pendant la crise.|危机期间，市长表现得很有勇气。
+C|agir|en|agir en qqn|以……的身份、方式行事
+E|agir|en|Arrête de faire l'enfant et agis en adulte.|别再孩子气了，像个大人一样做事。
+E|agir|en|Elle a agi en véritable amie.|她做得真像个好朋友。
+C|approvisionner|en|approvisionner qqn/qqch en qqch|向……供应某物
+E|approvisionner|en|Des camions approvisionnent la ville en nourriture.|卡车为城市运送食物。
+E|approvisionner|en|Ce fournisseur nous approvisionne en papier depuis dix ans.|这家供应商为我们供应纸张已经十年了。
+C|apprêter|à|s'apprêter à faire qqch|正要做某事
+E|apprêter|à|Nous nous apprêtions à sortir quand il a commencé à pleuvoir.|我们正要出门，天就下起雨来了。
+E|apprêter|à|Le pays s'apprête à célébrer son centenaire.|这个国家即将庆祝建国一百周年。
+C|appuyer|contre|appuyer qqch contre qqch|把……靠在……上
+E|appuyer|contre|Il a appuyé l'échelle contre le mur.|他把梯子靠在墙上。
+E|appuyer|contre|N'appuie pas ton vélo contre ma voiture.|别把你的自行车靠在我的车上。
+C|avancer|vers|avancer vers qqn/qqch|朝……前进
+E|avancer|vers|Les manifestants avançaient lentement vers la place.|示威者缓缓向广场行进。
+E|avancer|vers|Le bateau avance vers le port malgré la tempête.|尽管有风暴，船仍朝港口驶去。
+E|avoir besoin|de|J'ai besoin de ton aide pour déménager.|我搬家需要你帮忙。
+E|avoir besoin|de|Les plantes ont besoin de lumière pour pousser.|植物生长需要光照。
+E|avoir confiance|en|J'ai entièrement confiance en toi.|我完全信任你。
+E|avoir confiance|en|Il n'a plus confiance en personne.|他再也不相信任何人了。
+E|avoir envie|de|J'ai envie d'une glace à la fraise.|我想吃草莓冰淇淋。
+E|avoir envie|de|Tu as envie de sortir ce soir ?|你今晚想出去吗？
+E|avoir peur|de|Ma fille a peur du noir.|我女儿怕黑。
+E|avoir peur|de|Il avait peur de rater son train.|他怕赶不上火车。
+C|balader|dans|se balader dans qqch|在……里闲逛
+E|balader|dans|Le dimanche, on se balade dans le vieux quartier.|星期天我们会在老城区逛逛。
+E|balader|dans|Ils se sont baladés dans les rues de Lyon jusqu'à minuit.|他们在里昂街头一直逛到半夜。
+C|battre|avec|se battre avec qqn|和某人打架、争斗
+E|battre|avec|Mon petit frère se bat souvent avec le voisin.|我弟弟经常和邻居家的孩子打架。
+E|battre|avec|Il s'est battu avec un inconnu à la sortie du bar.|他在酒吧门口和一个陌生人打了起来。
+C|bavarder|avec|bavarder avec qqn|和某人闲聊
+E|bavarder|avec|Elle bavarde avec sa voisine tous les matins.|她每天早上都和邻居聊天。
+E|bavarder|avec|Au lieu de bavarder avec ton voisin, écoute le professeur !|别跟同桌聊天了，好好听老师讲课！
+C|bayer|à|bayer aux corneilles|发呆；呆看着出神
+E|bayer|à|Pendant le cours, il bayait aux corneilles par la fenêtre.|上课时他望着窗外发呆。
+C|border|de|border qqch de qqch|用……镶边；沿……排列
+E|border|de|La route est bordée de platanes.|道路两旁种着梧桐树。
+E|border|de|Elle a bordé la nappe d'une dentelle blanche.|她给桌布镶上了白色花边。
+C|bourrer|de|bourrer qqch de qqch|往……里塞满
+E|bourrer|de|Il a bourré son sac de vêtements.|他把包里塞满了衣服。
+E|bourrer|de|Ne te bourre pas de bonbons avant le dîner.|晚饭前别吃那么多糖。
+C|briser|en|briser qqch en qqch|把……打碎成……
+E|briser|en|Le verre s'est brisé en mille morceaux sur le carrelage.|杯子掉在瓷砖上摔得粉碎。
+E|briser|en|Il a brisé la tablette de chocolat en quatre morceaux.|他把巧克力板掰成了四块。
+C|s'abstenir|de|s'abstenir de qqch / de faire qqch|避免、克制做某事
+E|s'abstenir|de|Abstenez-vous de tout commentaire, s'il vous plaît.|请不要发表任何评论。
+E|s'abstenir|de|Le médecin m'a conseillé de m'abstenir d'alcool.|医生建议我戒酒。
+C|s'accorder|avec|s'accorder avec qqn/qqch|与……一致；与……相配
+E|s'accorder|avec|L'adjectif s'accorde avec le nom en genre et en nombre.|形容词在性和数上要与名词配合。
+E|s'accorder|avec|Ses actes ne s'accordent pas avec ses paroles.|他言行不一。
+C|s'adonner|à|s'adonner à qqch|沉迷于；专心从事
+E|s'adonner|à|Depuis sa retraite, il s'adonne à la peinture.|退休以后，他潜心作画。
+E|s'adonner|à|Elle s'adonnait au jeu en cachette.|她偷偷沉迷于赌博。
+E|s'adresser|à|Pour tout renseignement, adressez-vous à l'accueil.|如需咨询，请到接待处询问。
+E|s'adresser|à|Ce livre s'adresse aux jeunes lecteurs.|这本书是面向青少年读者的。
+C|s'allonger|sur|s'allonger sur qqch|躺在……上
+E|s'allonger|sur|Allonge-toi sur le lit si tu es fatigué.|累了就在床上躺一会儿。
+E|s'allonger|sur|Le patient s'est allongé sur la table d'examen.|病人躺到了检查台上。
+C|s'appliquer|à|s'appliquer à qqn/qqch / à faire qqch|适用于；专心致力于
+E|s'appliquer|à|Cette loi s'applique à tous les citoyens.|这部法律适用于全体公民。
+E|s'appliquer|à|L'élève s'applique à écrire proprement.|这个学生专心地把字写整齐。
+C|s'appuyer|sur|s'appuyer sur qqn/qqch|依靠；以……为依据
+E|s'appuyer|sur|Tu peux toujours t'appuyer sur tes amis.|你随时都可以依靠你的朋友。
+E|s'appuyer|sur|Son raisonnement s'appuie sur des faits précis.|他的推理以确凿的事实为依据。
+C|s'arranger|pour|s'arranger pour faire qqch|设法做到某事
+E|s'arranger|pour|Arrange-toi pour arriver avant huit heures.|你想办法八点前到。
+E|s'arranger|pour|Elle s'est arrangée pour avoir sa journée libre.|她设法空出了一整天。
+E|se borner|à|Il s'est borné à répondre par oui ou par non.|他只回答了是或不是。
+E|se borner|à|Borne-toi à l'essentiel dans ton exposé.|你的报告只讲要点就行。
+E|s'approvisionner|de|Avant l'hiver, nous nous approvisionnons de bois de chauffage.|入冬前我们会备好柴火。
+# ---- new pairs on existing verbs ----
+C|brûler|de|brûler de qqch / de faire qqch|渴望；（情感）强烈
+E|brûler|de|Je brûle d'impatience de te revoir.|我迫不及待地想再见到你。
+E|brûler|de|Il brûlait de lui dire la vérité.|他很想把真相告诉她。
+C|boire|à|boire à qqch|为……干杯
+E|boire|à|Buvons à la santé des jeunes mariés !|让我们为新婚夫妇的健康干杯！
+E|boire|à|Nous avons bu à notre réussite.|我们为我们的成功干了杯。
+C|allouer|à|allouer qqch à qqn/qqch|把（款项、时间）拨给……
+E|allouer|à|L'État a alloué deux millions d'euros à la rénovation du musée.|国家拨款两百万欧元用于博物馆翻修。
+E|allouer|à|La mairie alloue une subvention à chaque association sportive.|市政府给每个体育协会拨了一笔补贴。
+C|affecter|à|affecter qqn/qqch à qqch|把某人分配到；把……拨作
+E|affecter|à|Le jeune professeur a été affecté à un lycée de banlieue.|这位年轻老师被分配到郊区的一所高中。
+E|affecter|à|Ces fonds seront affectés à la recherche médicale.|这笔资金将用于医学研究。

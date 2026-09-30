@@ -45,7 +45,7 @@ ECDICT 的代码仓库声明 MIT，但**其 sqlite 数据分发包内不含 LICE
 | `data/french-vocabulary.js` | 同上（core 与 glossary 的合并视图） |
 | `data/french-grammar-data.js` | 讲解与例句 = 为本项目原创撰写；变位表 = `scripts/build_french_grammar.py` 内置引擎生成，事实对照 French Wiktionary（CC BY-SA 3.0）与 `data/french-conjugations.js` |
 | `data/french-cognates.js` | Lexique 3.83 + Wiktionary/Wiktextract + `data/english-vocabulary.js`；假朋友表为原创撰写 |
-| `data/french-collocations-data.js` | 原创搭配表 + Tatoeba（CC BY 2.0 FR）例句 + Lexique 3.83 |
+| `data/french-collocations-data.js` | 原创搭配表与原创例句（`scripts/sources/french-collocations/`）+ Tatoeba（CC BY 2.0 FR）例句 + Lexique 3.83 |
 
 ### 德语
 
@@ -56,7 +56,7 @@ ECDICT 的代码仓库声明 MIT，但**其 sqlite 数据分发包内不含 LICE
 | `data/german-course-data.js` | 课程结构参照《走遍德国 / Passwort Deutsch》A1-B1 与《Mittelpunkt》B2-C1 的主题编排（仅结构，不含教材原文）；例句 = Tatoeba（CC BY 2.0 FR） |
 | `data/german-grammar-data.js` | 讲解与例句为本项目原创撰写 |
 | `data/german-cognates.js` | 由 `data/german-vocabulary.js` 与 `data/english-vocabulary.js` 派生 |
-| `data/german-collocations-data.js` | 原创搭配表 + Tatoeba（CC BY 2.0 FR）例句 |
+| `data/german-collocations-data.js` | 原创搭配表与原创例句（`scripts/sources/german-rektion/`）+ Tatoeba（CC BY 2.0 FR）例句 |
 
 ### 英语
 
