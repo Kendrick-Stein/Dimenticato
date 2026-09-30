@@ -141,6 +141,76 @@ group('play flow', () => {
   assertEqual(TypingGameApp.getSession(), null, 'close 后会话清空');
 });
 
+// ===== 学习遥测：击落写入每日统计与 SM-2（此前打字游戏零遥测） =====
+group('telemetry', () => {
+  const statsCalls = [];
+  const srsCalls = [];
+  win.StatsManager = { recordActivity: (lang, payload) => statsCalls.push([lang, payload]) };
+  win.SpacedRepetition = { review: (lang, word, q) => srsCalls.push([lang, word, q]) };
+
+  // 背单词模式：击落 = 统计 +1、SM-2 q4
+  TypingGameApp.open('italian');
+  win.document.getElementById('typingStartBtn').click();
+  const game = TypingGameApp.getSession().game;
+  const item = game.items[0];
+  const input = win.document.getElementById('typingGameInput');
+  input.value = item.answer;
+  input.dispatchEvent({ type: 'input' });
+  assertEqual(statsCalls.length, 1, '击落应记一次每日统计');
+  assertEqual(statsCalls[0][0], 'italian', '统计语言应为当前语言');
+  assertEqual(statsCalls[0][1].correct, 1, '击落应为 correct');
+  assert(Array.isArray(statsCalls[0][1].words)
+    && statsCalls[0][1].words.indexOf(item.answer) !== -1, '统计应包含被击落的词');
+  assertEqual(srsCalls.length, 1, '背单词模式击落应写 SM-2');
+  assertEqual(srsCalls[0][0], 'italian', 'SM-2 语言应为当前语言');
+  assertEqual(srsCalls[0][1], item.answer, 'SM-2应以被击落词为键');
+  assertEqual(srsCalls[0][2], 4, '击落质量应为 q4');
+  TypingGameApp.close();
+
+  // 变位模式：记统计但不写 SRS —— 变位形式不是词头，写进按词头
+  // 索引的 SRS store 会污染调度。
+  statsCalls.length = 0;
+  srsCalls.length = 0;
+  TypingGameApp.open('italian');
+  const setup = win.document.getElementById('typingGameSetup');
+  setup.querySelector('[data-typing-mode="conjugation"]').click();
+  win.document.getElementById('typingStartBtn').click();
+  const conjGame = TypingGameApp.getSession().game;
+  const conjItem = conjGame.items[0];
+  const conjInput = win.document.getElementById('typingGameInput');
+  conjInput.value = conjItem.answer;
+  conjInput.dispatchEvent({ type: 'input' });
+  assertEqual(statsCalls.length, 1, '变位击落也应记每日统计');
+  assertEqual(srsCalls.length, 0, '变位模式不应写 SRS');
+  TypingGameApp.close();
+
+  // 德语：answer 是带冠词的 display，SRS 必须按词头（german 字段）写 ——
+  // 否则 "der Mann" 成了选择题/复习永远读不到的孤儿条目。
+  statsCalls.length = 0;
+  srsCalls.length = 0;
+  win.GERMAN_VOCABULARY_DATA = [
+    { german: 'Mann', display: 'der Mann', chinese: '男人' },
+    { german: 'Frau', display: 'die Frau', chinese: '女人' },
+    { german: 'Tag', display: 'der Tag', chinese: '白天' },
+    { german: 'Haus', display: 'das Haus', chinese: '房子' }
+  ];
+  TypingGameApp.open('german');
+  win.document.getElementById('typingStartBtn').click();
+  const deItem = TypingGameApp.getSession().game.items[0];
+  const deInput = win.document.getElementById('typingGameInput');
+  deInput.value = deItem.answer;
+  deInput.dispatchEvent({ type: 'input' });
+  const headword = win.GERMAN_VOCABULARY_DATA.find((w) => w.display === deItem.answer).german;
+  assertEqual(srsCalls.length, 1, '德语击落应写 SM-2');
+  assertEqual(srsCalls[0][1], headword, 'SM-2 键应为德语词头而不是带冠词的 display');
+  assertEqual(statsCalls[0][1].words[0], headword, '每日统计同样记词头');
+  TypingGameApp.close();
+  delete win.GERMAN_VOCABULARY_DATA;
+
+  delete win.StatsManager;
+  delete win.SpacedRepetition;
+});
+
 // ===== 变位模式建池 =====
 group('conjugation mode', () => {
   TypingGameApp.open('italian');

@@ -786,7 +786,8 @@ const Storage = {
     THEME: 'dimenticato_theme',
     CUSTOM_WORDBOOKS: 'dimenticato_custom_wordbooks',
     DAILY_STATS: 'dimenticato_daily_stats',
-    LANGUAGE: 'dimenticato_language'
+    LANGUAGE: 'dimenticato_language',
+    MC_SESSION: 'dimenticato_mc_session'
   },
   
   // 延迟落盘句柄：每答一题就整份 stringify mastered + stats 在词库上万后
@@ -1457,6 +1458,15 @@ function recordItalianMastery(word, isCorrect) {
 const MultipleChoice = {
   _engine: null,
 
+  // 每组题量（与 GermanApp 的 SESSION_OPTIONS 同一套）
+  MC_SESSION_OPTIONS: [
+    { value: '20', label: '20 题' },
+    { value: '50', label: '50 题' },
+    { value: '100', label: '100 题' },
+    { value: 'all', label: '不限' }
+  ],
+  sessionSize: '20',
+
   _getEngine() {
     if (!this._engine) {
       this._engine = new QuizEngine({
@@ -1489,14 +1499,71 @@ const MultipleChoice = {
     return this._engine;
   },
 
+  loadSessionSize() {
+    try {
+      const saved = localStorage.getItem(Storage.KEYS.MC_SESSION);
+      if (saved && this.MC_SESSION_OPTIONS.some((option) => option.value === saved)) {
+        this.sessionSize = saved;
+      }
+    } catch (err) { /* 隐私模式下读不到就算了，用默认 20 */ }
+  },
+
+  setSessionSize(size) {
+    if (!this.MC_SESSION_OPTIONS.some((option) => option.value === size)) return;
+    this.sessionSize = size;
+    DimStorage.safeSetItem(Storage.KEYS.MC_SESSION, size);
+    this.renderSessionChips();
+  },
+
+  renderSessionChips() {
+    const container = document.getElementById('mcSessionChips');
+    if (!container) return;
+    container.innerHTML = this.MC_SESSION_OPTIONS.map((option) => (
+      `<button class="chip${option.value === this.sessionSize ? ' active' : ''}" type="button" data-mc-session="${escapeAttribute(option.value)}">${escapeHtml(option.label)}</button>`
+    )).join('');
+  },
+
+  // 一组练习不再是「把整个词表洗牌到底」：先按 复习到期 → 未掌握 → 其余
+  // 排序，再截取每组题量（与 GermanApp.buildSession 同构）。这样选择题
+  // 才有可达成的结束点与总结；此前意语一次洗牌 1000/27k 词，
+  // 进度条 "1/1000" 永远走不完。
+  buildSession() {
+    const pool = Array.isArray(AppState.currentWords) ? AppState.currentWords.slice() : [];
+    if (!pool.length) return pool;
+    const sr = window.SpacedRepetition;
+    // 到期词来自共享 SM-2 store（PracticeFlow 每次作答都在写）；
+    // 此前意语选题完全不看它，复习只能靠首页的"今日待复习"卡片。
+    const dueSet = new Set(sr ? sr.getDueWords('italian', pool) : []);
+    const mastered = AppState.masteredWords;
+    const due = [];
+    const fresh = [];
+    const rest = [];
+    pool.forEach((word) => {
+      if (dueSet.has(word)) due.push(word);
+      else if (!mastered.has(word.italian)) fresh.push(word);
+      else rest.push(word);
+    });
+    const ordered = [
+      ...shuffleArray(due),
+      ...shuffleArray(fresh),
+      ...shuffleArray(rest)
+    ];
+    if (this.sessionSize === 'all') return ordered;
+    const size = Number(this.sessionSize) || 20;
+    return ordered.slice(0, Math.max(1, size));
+  },
+
   start() {
     AppState.currentMode = 'mc';
     AppState.quizIndex = 0;
     AppState.quizCorrect = 0;
     AppState.quizTotal = 0;
 
-    // 随机打乱单词顺序
-    AppState.currentWords = shuffleArray([...AppState.currentWords]);
+    // 只练这一组。currentWords 本身不再被替换/洗牌 —— 拼写、浏览和
+    // 干扰项池仍然用完整的分层词表。
+    this.loadSessionSize();
+    this._session = this.buildSession();
+    this._pool = AppState.currentWords.slice();
 
     showScreen('multipleChoiceScreen');
     this.loadQuestion();
@@ -1506,18 +1573,19 @@ const MultipleChoice = {
   // 整个覆盖（双定义，读代码的人要跳到 3000 行外才知道哪份生效）。
   // 2026-08-28 合并为单一定义：下面就是原「增强版」的全部内容。
   loadQuestion() {
-    if (AppState.quizIndex >= AppState.currentWords.length) {
+    const session = Array.isArray(this._session) ? this._session : [];
+    if (AppState.quizIndex >= session.length) {
       this.showCompletion();
       return;
     }
 
-    AppState.currentWord = AppState.currentWords[AppState.quizIndex];
+    AppState.currentWord = session[AppState.quizIndex];
     this._questionStartedAt = Date.now(); // PracticeFlow 遥测算答题时长用
 
-    // 更新进度
+    // 更新进度（分母是本组题量，不再是整个词表）
     document.getElementById('mcCurrentWord').textContent = AppState.quizIndex + 1;
-    document.getElementById('mcTotalWords').textContent = AppState.currentWords.length;
-    updateSessionFill('mcSessionFill', AppState.quizIndex, AppState.currentWords.length);
+    document.getElementById('mcTotalWords').textContent = session.length;
+    updateSessionFill('mcSessionFill', AppState.quizIndex, session.length);
 
     // 更新正确率
     const accuracy = AppState.quizTotal > 0
@@ -1542,20 +1610,12 @@ const MultipleChoice = {
       }, 300); // 稍微延迟一下，让界面先更新
     }
 
-    // 处理中文提示 - 默认隐藏，显示"显示提示"按钮
+    // 递进式提示（showHint）：重置到第一档。首字母档永远可用，
+    // 中文释义档只在有中文翻译时出现 —— 中文 ≈ 直接送答案，不该是第一档。
     const chineseHint = document.getElementById('mcChineseHint');
     const showHintBtn = document.getElementById('mcShowHintBtn');
 
-    if (AppState.currentWord.chinese) {
-      // 有中文翻译时，显示提示按钮，隐藏中文
-      chineseHint.textContent = `中文: ${AppState.currentWord.chinese}`;
-      chineseHint.classList.add('hidden');
-      showHintBtn.classList.remove('hidden');
-    } else {
-      // 没有中文翻译时，隐藏按钮和中文
-      chineseHint.classList.add('hidden');
-      showHintBtn.classList.add('hidden');
-    }
+    this._hintStage = window.PracticeFlow.hintReset(chineseHint, showHintBtn);
 
     // 显示 notes（如果存在）
     this.displayNotes();
@@ -1587,8 +1647,11 @@ const MultipleChoice = {
 
   generateOptions() {
     var correctAnswer = this._getEngine().correctAnswerFor(AppState.currentWord);
-    var fullPool = (Array.isArray(AppState.currentWords) && AppState.currentWords.length > 1)
-      ? AppState.currentWords
+    // 干扰项来自完整的分层词表（_pool），不是本组 20 题 —— 组太小的话
+    // 几趟下来就能靠排除法猜出答案。复习会话（ReviewSession）会把
+    // currentWords 换成很小的到期列表，同样不够当池子，退回全词库。
+    var fullPool = (Array.isArray(this._pool) && this._pool.length >= 40)
+      ? this._pool
       : AppState.vocabulary;
     // 27k 全池直接喂给引擎 = 每题一次全表扫描 + 全表洗牌；先有界采样到 800
     var optionSource = QuizEngine.sampleDistractorPool(fullPool, AppState.currentWord);
@@ -1625,18 +1688,34 @@ const MultipleChoice = {
     this.loadQuestion();
   },
   
+  // 递进式提示：第一档只给答案首字母 + 字母数；中文释义 ≈ 直接送答案
+  // （实测点一下选择题就没意义了），降级为第二档，用户试过首字母之后才给。
+  _hintStage: 0,
+
   showHint() {
-    // 显示中文提示，隐藏按钮
-    const chineseHint = document.getElementById('mcChineseHint');
-    const showHintBtn = document.getElementById('mcShowHintBtn');
-    
-    chineseHint.classList.remove('hidden');
-    showHintBtn.classList.add('hidden');
+    const word = AppState.currentWord;
+    if (!word) return;
+    const hintEl = document.getElementById('mcChineseHint');
+    const btn = document.getElementById('mcShowHintBtn');
+    // 原始释义带 "(2)" 编号与多义项（"the; la (feminine); (2)"），直接数长度
+    // 会把分号、括号都算成字母。用展示用清洗后的释义（initialHint 只取第一个义项）。
+    const engine = this._getEngine();
+    const raw = String(engine.correctAnswerFor(word) || '');
+    this._hintStage = window.PracticeFlow.hintAdvance(this._hintStage, {
+      hintEl: hintEl,
+      btn: btn,
+      stages: [
+        { text: window.PracticeFlow.initialHint(engine.displayGloss(raw) || raw) },
+        { text: word.chinese ? `中文: ${word.chinese}` : '', label: '显示中文释义' }
+      ]
+    });
   },
-  
+
   showCompletion() {
-    const accuracy = Math.round((AppState.quizCorrect / AppState.quizTotal) * 100);
-    alert(`练习完成\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
+    const accuracy = AppState.quizTotal > 0
+      ? Math.round((AppState.quizCorrect / AppState.quizTotal) * 100)
+      : 0;
+    alert(`本组练习完成\n\n正确: ${AppState.quizCorrect}/${AppState.quizTotal}\n正确率: ${accuracy}%`);
     showScreen('vocabularyModesScreen');
   }
 };
@@ -2730,6 +2809,13 @@ function bindEvents() {
   // 模式选择
   document.getElementById('multipleChoiceBtn').addEventListener('click', () => {
     MultipleChoice.start();
+  });
+
+  // 每组题量 chips（渲染 + 点击委托，与德语的 germanSessionChips 同构）
+  MultipleChoice.renderSessionChips();
+  document.getElementById('mcSessionChips').addEventListener('click', (event) => {
+    const chip = event.target.closest('[data-mc-session]');
+    if (chip) MultipleChoice.setSessionSize(chip.dataset.mcSession);
   });
   
   document.getElementById('spellingBtn').addEventListener('click', () => {

@@ -38,7 +38,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "la",
     "dictionary": "article articolo determinativo femminile singolare da usare solo con tutte le parole di genere femmi",
-    "english": "the (feminine); (2); (3)",
+    "english": "the (feminine)",
     "chinese": "（阴性定冠词）; (二); (三) 国家",
     "frequency": 3887197,
     "rank": 5
@@ -70,7 +70,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mi",
     "dictionary": "noun (musica) terza nota musicale della scala musicale di do maggiore E",
-    "english": "me; to me; (2)",
+    "english": "me; to me",
     "chinese": "非重读宾语代词：我，对我；反身代词：我自己",
     "frequency": 2013071,
     "rank": 13
@@ -110,7 +110,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "come",
     "dictionary": "adverb avverbio interrogativo how подобно",
-    "english": "how; as; like; (2)",
+    "english": "how; as; like",
     "chinese": "如何；作为；像; (二)",
     "frequency": 1248657,
     "rank": 29
@@ -118,7 +118,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "io",
     "dictionary": "noun soggetto pensante I me",
-    "english": "I; (2)",
+    "english": "I",
     "chinese": "主格人称代词“我”",
     "frequency": 1147459,
     "rank": 30
@@ -126,7 +126,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bene",
     "dictionary": "interjection esclamazione di approvazione well",
-    "english": "well; good; (2)",
+    "english": "well; good",
     "chinese": "好；很好; (二)",
     "frequency": 978877,
     "rank": 34
@@ -142,7 +142,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sei",
     "dictionary": "noun (scuola) voto sufficiente D",
-    "english": "six; you are; (1)",
+    "english": "six; you are",
     "chinese": "六；你是; (1) 国家",
     "frequency": 921410,
     "rank": 36
@@ -158,7 +158,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "solo",
     "dictionary": "adjective senza la presenza di altri alone (obsoleto) unico, senz'altro only single sole",
-    "english": "only; alone; solo; (2); (3)",
+    "english": "only; alone; solo",
     "chinese": "唯一的；独自的; (二); (三) 国家",
     "frequency": 791998,
     "rank": 39
@@ -198,7 +198,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fatto",
     "dictionary": "adjective che è stato portato a compimento completed done",
-    "english": "fact; deed; done; (2)",
+    "english": "fact; deed; done",
     "chinese": "事实；行为；已完成的; (二)",
     "frequency": 599010,
     "rank": 49
@@ -206,7 +206,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fare",
     "dictionary": "noun l'operare per realizzare qualcosa make",
-    "english": "to do; to make; (2)",
+    "english": "to do; to make",
     "chinese": "做；制作; (二)",
     "frequency": 583810,
     "rank": 50
@@ -214,7 +214,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "essere",
     "dictionary": "noun chi esiste be exist",
-    "english": "to be; (2)",
+    "english": "to be",
     "chinese": "是，存在；生命，生物",
     "frequency": 582628,
     "rank": 51
@@ -238,7 +238,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ne",
     "dictionary": "adverb avverbio di luogo; indica la provenienza da un luogo già nominato in precedenza: from there",
-    "english": "of it; about it; (2)",
+    "english": "of it; about it",
     "chinese": "关于它；从中; (二)",
     "frequency": 545511,
     "rank": 58
@@ -294,7 +294,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "molto",
     "dictionary": "adjective grande per quantità, molto abbondante o numeroso very a lot a lot of much very much often",
-    "english": "very much; (2); (3)",
+    "english": "very much",
     "chinese": "非常喜欢; (二); (三) 国家",
     "frequency": 430250,
     "rank": 77
@@ -302,7 +302,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "perché",
     "dictionary": "adverb (interrogativo) introduce una domanda nella quale si richiede una motivazione; per quale moti",
-    "english": "because; (2)",
+    "english": "because",
     "chinese": "因为; (二)",
     "frequency": 417508,
     "rank": 80
@@ -334,7 +334,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "allora",
     "dictionary": "adverb in quel tempo then",
-    "english": "then; (2)",
+    "english": "then",
     "chinese": "接下来; (二)",
     "frequency": 394873,
     "rank": 86
@@ -358,8 +358,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "niente",
     "dictionary": "adjective (familiare) nessuno, nessuna nothing",
-    "english": "Nothing.; Nothing (2); Nothing (3)",
-    "chinese": "没什么; 无(2); 无(3)",
+    "english": "Nothing.; Nothing",
+    "chinese": "没什么; 无",
     "frequency": 376096,
     "rank": 93
   },
@@ -382,7 +382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ancora",
     "dictionary": "adverb esprime continuità nel tempo still nelle frasi negative ha il significato di sinora, intenden",
-    "english": "Still; (2)",
+    "english": "Still",
     "chinese": "还是; (二)",
     "frequency": 357766,
     "rank": 100
@@ -390,7 +390,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fa",
     "dictionary": "adverb (familiare) trascorso da tempo ago",
-    "english": "ago; (2)",
+    "english": "ago",
     "chinese": "刚才; (二)",
     "frequency": 356906,
     "rank": 103
@@ -422,7 +422,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "uno",
     "dictionary": "noun la cifra corrispondente alla quantità unitaria: one",
-    "english": "One; (2); (1)",
+    "english": "One",
     "chinese": "一，数词一；某人，有人；不定冠词的阳性形式（用在 z、s+辅音等词前）",
     "frequency": 345353,
     "rank": 107
@@ -438,7 +438,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "su",
     "dictionary": "adverb in alto, verso l'alto on up addosso on",
-    "english": "up; (2); (3)",
+    "english": "up",
     "chinese": "上楼; (二); (三) 国家",
     "frequency": 340528,
     "rank": 109
@@ -446,7 +446,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vero",
     "dictionary": "adjective leale, fedele: genuino: legittimo: (logica) che ha valore logico vero: true",
-    "english": "true; (2)",
+    "english": "true",
     "chinese": "真的，真实的；对吧（用于反问）",
     "frequency": 337704,
     "rank": 110
@@ -486,7 +486,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sempre",
     "dictionary": "adverb (per estensione) per tutta la vita, talvolta anche oltre (spregiativo) immancabil",
-    "english": "always always",
+    "english": "always",
     "chinese": "总是",
     "frequency": 293460,
     "rank": 119
@@ -502,7 +502,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "forse",
     "dictionary": "adverb chissà, indica incertezza o parziale verifica in merito all'eventualità che l'azione o comunq",
-    "english": "Perhaps; (2)",
+    "english": "Perhaps",
     "chinese": "也许，可能",
     "frequency": 270956,
     "rank": 128
@@ -518,7 +518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "certo",
     "dictionary": "adjective la cui natura o essenza non pone dubbi certain one (matematica) (statistica) (di) evento c",
-    "english": "Of course.; (2); (3)",
+    "english": "Of course.",
     "chinese": "当然，的确；确定的，肯定的；某个（不确指的）",
     "frequency": 264768,
     "rank": 131
@@ -550,7 +550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "quanto",
     "dictionary": "adjective aggettivo utilizzato per chiedere la quantità di qualcosa how many how much how",
-    "english": "how much; (2)",
+    "english": "how much",
     "chinese": "多少钱; (二)",
     "frequency": 244964,
     "rank": 140
@@ -646,15 +646,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "amico",
     "dictionary": "adjective che manifesta aiuto, attaccamento e sensibilità (matematica) di ogni numero di una coppia ",
-    "english": "friend; Friend (2)",
-    "chinese": "朋友们; 朋友(2)",
+    "english": "friend",
+    "chinese": "朋友们; 朋友",
     "frequency": 205236,
     "rank": 164
   },
   {
     "italian": "posto",
     "dictionary": "adjective (araldica) attributo araldico che si applica a: set in",
-    "english": "place; (2)",
+    "english": "place",
     "chinese": "地方，位置；座位；职位",
     "frequency": 201344,
     "rank": 166
@@ -662,7 +662,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "nessuno",
     "dictionary": "adjective neanche uno no one nobody no none",
-    "english": "Nobody.; (2)",
+    "english": "Nobody.",
     "chinese": "没人; (二)",
     "frequency": 198499,
     "rank": 167
@@ -686,7 +686,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "meglio",
     "dictionary": "adjective molto buono, buonissimo (comunque anche con funzione di avverbio; es: Questo romanzo mi se",
-    "english": "better; (2)",
+    "english": "better",
     "chinese": "比较好; (二)",
     "frequency": 190791,
     "rank": 172
@@ -694,7 +694,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cazzo",
     "dictionary": "interjection interiezione usata per esprimere sorpresa o rabbia Christ fuck usato per enfatizzare il",
-    "english": "Fuck!; (1)",
+    "english": "Fuck!",
     "chinese": "他妈的!; (1) 国家",
     "frequency": 190133,
     "rank": 173
@@ -806,7 +806,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "giusto",
     "dictionary": "adjective che agisce secondo giustizia conforme a qualcuno o qualcosa (religione) persona di levatur",
-    "english": "Right.; (2)",
+    "english": "Right.",
     "chinese": "对; (二)",
     "frequency": 155910,
     "rank": 208
@@ -814,7 +814,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "avere",
     "dictionary": "noun (commercio) lato passivo di un conto in partita doppia; credito credit have",
-    "english": "to have; (2)",
+    "english": "to have",
     "chinese": "拥有; (二)",
     "frequency": 151301,
     "rank": 212
@@ -830,7 +830,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "nostro",
     "dictionary": "possessiveAdjective aggettivo possessivo della prima persona plurale; our",
-    "english": "our; (2)",
+    "english": "our",
     "chinese": "我们; (二)",
     "frequency": 140377,
     "rank": 224
@@ -838,7 +838,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tipo",
     "dictionary": "adjective che può essere usato come modello typical",
-    "english": "type; kind; (2)",
+    "english": "type; kind",
     "chinese": "类型；种类; (二)",
     "frequency": 139082,
     "rank": 225
@@ -854,7 +854,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "appena",
     "dictionary": "adverb poco tempo fa just con fatica barely hardly",
-    "english": "As soon as; (2)",
+    "english": "As soon as",
     "chinese": "尽快; (二)",
     "frequency": 135684,
     "rank": 230
@@ -862,7 +862,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sapere",
     "dictionary": "noun (filosofia) (psicologia) insieme di conoscenze umane knowledge",
-    "english": "know; (2)",
+    "english": "know",
     "chinese": "认识; (二)",
     "frequency": 133642,
     "rank": 234
@@ -870,7 +870,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tre",
     "dictionary": "adjective (matematica) numero naturale che segue due e precede quattro, rappresentato da 3 nel siste",
-    "english": "three; 3 (2)",
+    "english": "three; 3",
     "chinese": "3个; 第3(2)条",
     "frequency": 132830,
     "rank": 235
@@ -926,7 +926,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dentro",
     "dictionary": "adverb all'interno: inside in within (senso figurato) nell'intimo: inside",
-    "english": "inside; (2)",
+    "english": "inside",
     "chinese": "内部; (二)",
     "frequency": 124725,
     "rank": 250
@@ -966,8 +966,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "mondo",
     "dictionary": "adjective che è pulito (per estensione) \"libero\" da grave \"trasgressione\" (toscano) pulito dalla buc",
-    "english": "world; World (2)",
-    "chinese": "世界; 世界(2)",
+    "english": "world",
+    "chinese": "世界",
     "frequency": 118133,
     "rank": 266
   },
@@ -998,7 +998,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "insieme",
     "dictionary": "adverb in compagnia di qualcuno o in unione a qualcosa along with, alongside with communally jointly",
-    "english": "together; (2); (3)",
+    "english": "together",
     "chinese": "一起来; (二); (三) 国家",
     "frequency": 115108,
     "rank": 274
@@ -1022,7 +1022,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "subito",
     "dictionary": "adverb senza ritardo at once subito dopo: a seguire immediately after",
-    "english": "immediately immediately",
+    "english": "immediately",
     "chinese": "马上",
     "frequency": 113842,
     "rank": 277
@@ -1094,7 +1094,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sotto",
     "dictionary": "adverb in basso, nella parte inferiore under below",
-    "english": "below; (2)",
+    "english": "below",
     "chinese": "下级; (二)",
     "frequency": 106013,
     "rank": 294
@@ -1126,7 +1126,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "porta",
     "dictionary": "noun oggetto mobile, generalmente un infisso costituito da una o più imposte, posto a ri",
-    "english": "door door",
+    "english": "door",
     "chinese": "门",
     "frequency": 98021,
     "rank": 308
@@ -1158,8 +1158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "morto",
     "dictionary": "adjective (filosofia) (diritto) (biologia) (medicina) di persona o animale nella quale è avvenuta la",
-    "english": "dead dead dead; dead (2)",
-    "chinese": "死了没死; 已死亡(2)",
+    "english": "dead",
+    "chinese": "死了没死; 已死亡",
     "frequency": 97060,
     "rank": 314
   },
@@ -1198,8 +1198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "Secondo",
     "dictionary": "pronoun Secondo",
-    "english": "Second; second; (2); (2)",
-    "chinese": "第二届; (二); (二)",
+    "english": "Second",
+    "chinese": "第二届; (二)",
     "frequency": 90669,
     "rank": 323
   },
@@ -1238,8 +1238,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "letto",
     "dictionary": "adjective che può essere utilizzato per dormire bed",
-    "english": "bed; bed (2)",
-    "chinese": "床单; 床位(2)",
+    "english": "bed",
+    "chinese": "床单; 床位",
     "frequency": 87334,
     "rank": 330
   },
@@ -1254,7 +1254,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fine",
     "dictionary": "adjective che presenta armonia d'aspetto end fine slender thin",
-    "english": "end; fine; thin; (2); (3)",
+    "english": "end; fine; thin",
     "chinese": "结尾，末尾，终结；精细的，优雅的",
     "frequency": 86358,
     "rank": 334
@@ -1310,7 +1310,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "piano",
     "dictionary": "adverb con flemma quietly softly",
-    "english": "piano; (2)",
+    "english": "piano",
     "chinese": "钢琴; (二)",
     "frequency": 82812,
     "rank": 349
@@ -1334,7 +1334,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "comunque",
     "dictionary": "adverb in ogni caso anyhow anyway however",
-    "english": "Anyway; (2)",
+    "english": "Anyway",
     "chinese": "总之; (二)",
     "frequency": 82046,
     "rank": 352
@@ -1358,7 +1358,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "presto",
     "dictionary": "adverb tra poco tempo, entro breve tempo soon easily nelle prime ore del giorno, nelle prime ore del",
-    "english": "early; (2)",
+    "english": "early",
     "chinese": "早期; (二)",
     "frequency": 80233,
     "rank": 358
@@ -1374,8 +1374,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bambino",
     "dictionary": "adjective di persona che si comporta in modo infantile (gergale) soprattutto nei mass media, assieme",
-    "english": "child; Children (2)",
-    "chinese": "儿童; 儿童(2)",
+    "english": "child; Children",
+    "chinese": "儿童",
     "frequency": 79508,
     "rank": 362
   },
@@ -1398,7 +1398,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "primo",
     "dictionary": "noun la prima fra le portate principali in un pranzo o in una cena, consistente solitamen",
-    "english": "first; (1)",
+    "english": "first",
     "chinese": "第一个; (1) 国家",
     "frequency": 78747,
     "rank": 368
@@ -1470,7 +1470,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "quasi",
     "dictionary": "adverb about just un po' meno di, all'incirca almost maybe nearly perhaps anche nel tempo",
-    "english": "almost almost",
+    "english": "almost",
     "chinese": "差点",
     "frequency": 75598,
     "rank": 381
@@ -1478,7 +1478,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "piacere",
     "dictionary": "noun (filosofia) (psicologia) percezione di condizioni favorevoli delight joy (spregiativo) mera sod",
-    "english": "pleasure; (2)",
+    "english": "pleasure",
     "chinese": "荣幸; (二)",
     "frequency": 75430,
     "rank": 382
@@ -1542,7 +1542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "passato",
     "dictionary": "noun tempo già trascorso: finished last past (gastronomia) preparato o minestra ottenut",
-    "english": "past past",
+    "english": "past",
     "chinese": "过去",
     "frequency": 69134,
     "rank": 409
@@ -1550,7 +1550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "magari",
     "dictionary": "adverb piuttosto even maybe perhaps (familiare) con molta probabilità even even if if only maybe per",
-    "english": "Maybe; (2)",
+    "english": "Maybe",
     "chinese": "但愿如此，要是…就好了；说不定，也许",
     "frequency": 68849,
     "rank": 410
@@ -1566,7 +1566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "strada",
     "dictionary": "noun (architettura) (ingegneria) striscia di terreno, battuto o pavimentato, tracciato p",
-    "english": "road road",
+    "english": "road",
     "chinese": "公路",
     "frequency": 67968,
     "rank": 414
@@ -1622,7 +1622,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "parlato",
     "dictionary": "adjective (di film) che è sonoro speech spoken talking",
-    "english": "speech spoken; (2)",
+    "english": "speech spoken",
     "chinese": "发言; (二)",
     "frequency": 66990,
     "rank": 423
@@ -1662,7 +1662,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scuola",
     "dictionary": "noun school",
-    "english": "school school",
+    "english": "school",
     "chinese": "学校",
     "frequency": 65965,
     "rank": 432
@@ -1702,7 +1702,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tardi",
     "dictionary": "adverb a ora avanzata late",
-    "english": "late late",
+    "english": "late",
     "chinese": "迟到",
     "frequency": 63126,
     "rank": 448
@@ -1719,7 +1719,7 @@ const VOCABULARY_DATA = [
     "italian": "marito",
     "dictionary": "noun (diritto) uomo che ha contratto matrimonio husband",
     "english": "husband",
-    "chinese": "丈夫 丈夫",
+    "chinese": "丈夫",
     "frequency": 62553,
     "rank": 450
   },
@@ -1782,7 +1782,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "numero",
     "dictionary": "noun (matematica) (aritmetica) entità astratta usata per descrivere una quantità. I nume",
-    "english": "number number",
+    "english": "number",
     "chinese": "编号",
     "frequency": 60059,
     "rank": 470
@@ -1822,7 +1822,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "acqua",
     "dictionary": "noun (chimica inorganica) sostanza formata da molecole composte di due atomi di idrogeno",
-    "english": "water water",
+    "english": "water",
     "chinese": "饮用水",
     "frequency": 58651,
     "rank": 482
@@ -1846,7 +1846,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "forte",
     "dictionary": "adjective che può sopportare un grande affaticamento considerable great heavy large che possiede por",
-    "english": "strong; (2)",
+    "english": "strong",
     "chinese": "强; (二)",
     "frequency": 57843,
     "rank": 486
@@ -1902,7 +1902,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vicino",
     "dictionary": "adjective che è poco distante da un luogo o da un avvenimento (familiare) una o più persone frequent",
-    "english": "near; (2); (3)",
+    "english": "near",
     "chinese": "近处; (二); (三) 国家",
     "frequency": 55996,
     "rank": 502
@@ -1950,7 +1950,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "festa",
     "dictionary": "noun (sociologia) giorno di solennità religiosa o civile, che viene commemorato con ceri",
-    "english": "party party",
+    "english": "party",
     "chinese": "政党",
     "frequency": 54052,
     "rank": 516
@@ -1982,7 +1982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dare",
     "dictionary": "noun (diritto) (economia) (commercio) (finanza) insieme delle spese di un'azienda debit",
-    "english": "give; (2)",
+    "english": "give",
     "chinese": "给，给予；产生，结出",
     "frequency": 53534,
     "rank": 520
@@ -2006,7 +2006,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pure",
     "dictionary": "adverb avverbio even",
-    "english": "I can't do that.; (2)",
+    "english": "I can't do that.",
     "chinese": "我不能这样做。; (二)",
     "frequency": 53047,
     "rank": 523
@@ -2030,7 +2030,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ufficio",
     "dictionary": "noun office",
-    "english": "office office",
+    "english": "office",
     "chinese": "办公室",
     "frequency": 52768,
     "rank": 527
@@ -2190,7 +2190,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "esatto",
     "dictionary": "adjective di cosa fatta con cura e precisione, e il più possibile corrispondente al vero o alla real",
-    "english": "exact; exact (2)",
+    "english": "exact",
     "chinese": "准确的，确切的；没错，正是（表示附和）",
     "frequency": 47389,
     "rank": 560
@@ -2222,7 +2222,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cavolo",
     "dictionary": "interjection usato per esprimere stupore o disappunto sure!",
-    "english": "Damn it!; (2)",
+    "english": "Damn it!",
     "chinese": "该死!; (二)",
     "frequency": 45826,
     "rank": 571
@@ -2254,7 +2254,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mente",
     "dictionary": "suffix ly",
-    "english": "mind; (2)",
+    "english": "mind",
     "chinese": "头脑; (二)",
     "frequency": 44663,
     "rank": 580
@@ -2262,8 +2262,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "mangiare",
     "dictionary": "noun consumazione di cibi a mezzogiorno o a sera beat capture corrode squander take waste (per esten",
-    "english": "eat food; Food (2)",
-    "chinese": "吃饭; 粮食(2)",
+    "english": "eat food; Food",
+    "chinese": "吃饭; 粮食",
     "frequency": 44651,
     "rank": 581
   },
@@ -2310,8 +2310,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "entrambi",
     "dictionary": "adjective tutti e due, sia l'uno che l'altro both",
-    "english": "both of us.; both (2)",
-    "chinese": "我们俩; 两者(2)",
+    "english": "both of us.; both",
+    "chinese": "我们俩; 两者",
     "frequency": 43640,
     "rank": 589
   },
@@ -2366,7 +2366,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sicurezza",
     "dictionary": "noun security safety certainty confidence rialibility",
-    "english": "safety safety",
+    "english": "safety",
     "chinese": "安全防护",
     "frequency": 41672,
     "rank": 605
@@ -2518,7 +2518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ospedale",
     "dictionary": "noun istituzione col fine di fornire assistenza medica, ricovero e cura nei confronti",
-    "english": "hospital hospital",
+    "english": "hospital",
     "chinese": "医院",
     "frequency": 39345,
     "rank": 642
@@ -2542,7 +2542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "omicidio",
     "dictionary": "noun (diritto) reato punito da tutte le legislazioni storiche, che consiste nel caus",
-    "english": "murder murder",
+    "english": "murder",
     "chinese": "谋杀",
     "frequency": 38605,
     "rank": 652
@@ -2574,7 +2574,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "durante",
     "dictionary": "adjective (antico) che dura throughout",
-    "english": "during; (2)",
+    "english": "during",
     "chinese": "期间; (二)",
     "frequency": 38077,
     "rank": 657
@@ -2686,8 +2686,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "assolutamente",
     "dictionary": "adverb (in frasi negative) ad ogni costo, senza restrizioni (grammatica) con cost",
-    "english": "absolutely absolutely",
-    "chinese": "绝对绝对",
+    "english": "absolutely",
+    "chinese": "绝对",
     "frequency": 36177,
     "rank": 691
   },
@@ -2734,7 +2734,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "buono",
     "dictionary": "adjective conforme al bene good tasty di buon sapore, piacevole al gusto; (riferito alle vivande) vo",
-    "english": "good; (2)",
+    "english": "good",
     "chinese": "好的，善良的；好吃的，可口的",
     "frequency": 35576,
     "rank": 703
@@ -2798,7 +2798,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dieci",
     "dictionary": "noun cifra 10 (scuola) il voto più alto in tutti i sistemi di valutazione, corrisponden",
-    "english": "Ten; 10 (2)",
+    "english": "Ten; 10",
     "chinese": "十个; 第10(2)条",
     "frequency": 35039,
     "rank": 714
@@ -2854,8 +2854,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "voce",
     "dictionary": "noun voice",
-    "english": "voice voice voice",
-    "chinese": "语音语音",
+    "english": "voice",
+    "chinese": "语音",
     "frequency": 34514,
     "rank": 722
   },
@@ -2870,7 +2870,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cane",
     "dictionary": "noun (mammalogia) animale domestico utilizzato per la caccia, difesa, compagnia, soccorso",
-    "english": "dog dog",
+    "english": "dog",
     "chinese": "狗养的狗",
     "frequency": 33958,
     "rank": 730
@@ -2910,8 +2910,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "giovane",
     "dictionary": "adjective (sociologia) (psicologia) (antropologia) (fisiologia) che è nell'età della giovinezza rela",
-    "english": "Young; Young woman (2); Young (3)",
-    "chinese": "年轻; 年轻妇女(2); 年轻(3)",
+    "english": "Young; Young woman",
+    "chinese": "年轻; 年轻妇女",
     "frequency": 33539,
     "rank": 738
   },
@@ -2934,7 +2934,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "minuto",
     "dictionary": "adjective formato da piccolissimi elementi fine detailed minuscule minute moment thin",
-    "english": "minute; (2)",
+    "english": "minute",
     "chinese": "分钟; (二)",
     "frequency": 33161,
     "rank": 742
@@ -2942,7 +2942,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "lontano",
     "dictionary": "adjective di distanza raggiungibile o inarrivabile distant faraway (senso figurato) con distacco far",
-    "english": "far away; (2)",
+    "english": "far away",
     "chinese": "很远; (二)",
     "frequency": 33054,
     "rank": 744
@@ -2974,7 +2974,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "passo",
     "dictionary": "adjective (obsoleto se non al femminile singolare) che è appassito, che ha perso tutta l'acqua prece",
-    "english": "Step by step; (2)",
+    "english": "Step by step",
     "chinese": "一步步前进; (二)",
     "frequency": 32787,
     "rank": 751
@@ -3070,8 +3070,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "incidente",
     "dictionary": "adjective che incide accident argument dispute incident intervention objection (matematica) (geometr",
-    "english": "accident accident; accident (2)",
-    "chinese": "事故; 事故(2)",
+    "english": "accident",
+    "chinese": "事故",
     "frequency": 31346,
     "rank": 779
   },
@@ -3086,7 +3086,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "speciale",
     "dictionary": "adjective (gergale) quando riferito ad un alimento, per esempio ad un frutto, significa che possiede",
-    "english": "special; (2)",
+    "english": "special",
     "chinese": "特殊的；特别的; (二)",
     "frequency": 31144,
     "rank": 783
@@ -3118,7 +3118,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "oltre",
     "dictionary": "adverb più in avanti, in posizione più avanzata farther further on past by",
-    "english": "beyond; (2)",
+    "english": "beyond",
     "chinese": "外加; (二)",
     "frequency": 31088,
     "rank": 787
@@ -3126,7 +3126,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "semplice",
     "dictionary": "adjective (spregiativo) che risulta facilmente soggetto al raggiro; ignorante plain pure (per estens",
-    "english": "simple; Simple (2)",
+    "english": "simple",
     "chinese": "简单的，单纯的；朴素的",
     "frequency": 31031,
     "rank": 788
@@ -3182,7 +3182,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "permesso",
     "dictionary": "adjective che è consentito da leggi, regolamenti o consuetudini allowed licit permitted",
-    "english": "Excuse me; (2)",
+    "english": "Excuse me",
     "chinese": "许可，准许；通行证；（进门时）借过，我可以进来吗",
     "frequency": 30503,
     "rank": 797
@@ -3190,7 +3190,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "giocare",
     "dictionary": "verb dedicare del tempo al gioco, ad una attività ludica, per svago (per estensione),",
-    "english": "play play",
+    "english": "play",
     "chinese": "播放游戏",
     "frequency": 30267,
     "rank": 800
@@ -3206,7 +3206,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "circa",
     "dictionary": "adverb indicativamente concerning",
-    "english": "about about",
+    "english": "about",
     "chinese": "大约，将近；关于",
     "frequency": 30207,
     "rank": 802
@@ -3246,15 +3246,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "occhio",
     "dictionary": "suffix itis",
-    "english": "eye; eye (2)",
-    "chinese": "眼睛; 双眼(2)",
+    "english": "eye",
+    "chinese": "眼睛; 双眼",
     "frequency": 29742,
     "rank": 810
   },
   {
     "italian": "mattina",
     "dictionary": "noun forenoon",
-    "english": "morning morning",
+    "english": "morning",
     "chinese": "早间",
     "frequency": 29693,
     "rank": 813
@@ -3286,16 +3286,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "prossimo",
     "dictionary": "adjective vicino, o nello spazio, o nel tempo, o anche in senso figurato forthcoming near close fell",
-    "english": "Next; Next (2)",
-    "chinese": "ưμ㼯A; 下一个(2)",
+    "english": "Next",
+    "chinese": "ưμ㼯A; 下一个",
     "frequency": 29085,
     "rank": 821
   },
   {
     "italian": "potere",
     "dictionary": "noun capacità di modificare qualcosa power can (raro) volontà espressa apertamente per ottenere qual",
-    "english": "power; can; be able; power (2)",
-    "chinese": "权力；能够; 动力(2)",
+    "english": "power; can; be able",
+    "chinese": "权力；能够; 动力",
     "frequency": 28726,
     "rank": 825
   },
@@ -3310,7 +3310,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fermo",
     "dictionary": "adjective (fisica) (meccanica) che non si sposta custody detention determined dull firm flat (araldi",
-    "english": "stop; (2)",
+    "english": "stop",
     "chinese": "停车; (二)",
     "frequency": 28645,
     "rank": 830
@@ -3382,7 +3382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "iniziato",
     "dictionary": "adjective (senso figurato) begun started",
-    "english": "started; (2)",
+    "english": "started",
     "chinese": "已经开始的，开了头的",
     "frequency": 27923,
     "rank": 847
@@ -3390,7 +3390,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Libero",
     "dictionary": "pronoun Nome proprio di persona. Libero",
-    "english": "Free; free",
+    "english": "Free",
     "chinese": "免费",
     "frequency": 27782,
     "rank": 850
@@ -3446,7 +3446,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "completamente",
     "dictionary": "adverb completely entirely totally fully utterly quite",
-    "english": "completely completely completely",
+    "english": "completely",
     "chinese": "完全彻底地",
     "frequency": 27354,
     "rank": 860
@@ -3462,8 +3462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "veloce",
     "dictionary": "/ veˈlot͡ʃe / (gergale) talvolta sostituisce l'avverbio velocemente bright quick ready",
-    "english": "fast speed; fast (2)",
-    "chinese": "快捷键; 快速(2)",
+    "english": "fast speed; fast",
+    "chinese": "快捷键; 快速",
     "frequency": 27221,
     "rank": 864
   },
@@ -3486,7 +3486,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "generale",
     "dictionary": "adjective che si riferisce a qualcuno o qualcosa costituenti un insieme general collective overall w",
-    "english": "General; General (2)",
+    "english": "General",
     "chinese": "总的，普遍的，全面的；将军",
     "frequency": 27020,
     "rank": 871
@@ -3494,7 +3494,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tenere",
     "dictionary": "adjective femminile plurale di tenero keep an eye (on)",
-    "english": "Hold on; (2)",
+    "english": "Hold on",
     "chinese": "坚持住; (二)",
     "frequency": 27007,
     "rank": 873
@@ -3502,15 +3502,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "pazzo",
     "dictionary": "adjective (per estensione) (spregiativo) affetto da malattia mentale crazy mad insane lunatic (senso",
-    "english": "Crazy; Crazy (2)",
-    "chinese": "疯了; 疯狂(2)",
+    "english": "Crazy",
+    "chinese": "疯了; 疯狂",
     "frequency": 26992,
     "rank": 874
   },
   {
     "italian": "vittima",
     "dictionary": "noun (religione) animale destinato al sacrificio sacrifice (religione) persona sacrific",
-    "english": "Victim victim",
+    "english": "Victim",
     "chinese": "受害者",
     "frequency": 26978,
     "rank": 875
@@ -3526,7 +3526,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "semplicemente",
     "dictionary": "adverb in modo semplice, con semplicità simply only plainly unceremoniously",
-    "english": "simply simply",
+    "english": "simply",
     "chinese": "很简单",
     "frequency": 26865,
     "rank": 880
@@ -3550,7 +3550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "specie",
     "dictionary": "adverb specialmente, soprattutto. aspect especially form guise particularly",
-    "english": "species; (2)",
+    "english": "species",
     "chinese": "物种; (二)",
     "frequency": 26799,
     "rank": 883
@@ -3590,7 +3590,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Sole",
     "dictionary": "pronoun (astronomia) stella gialla di classe spettrale G2 visibile nel braccio di Orione d",
-    "english": "Sun; sunshine; (2)",
+    "english": "Sun; sunshine",
     "chinese": "太阳; 阳光; (二)",
     "frequency": 26400,
     "rank": 893
@@ -3606,7 +3606,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "spesso",
     "dictionary": "adjective (geometria) (fisica) che ha un certo spessore dense thick crowded",
-    "english": "often; (1)",
+    "english": "often",
     "chinese": "经常; (1) 国家",
     "frequency": 26288,
     "rank": 896
@@ -3622,7 +3622,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scena",
     "dictionary": "noun (teatro) area fisica, palcoscenico od anche luogo immaginario che costituisce lo sf",
-    "english": "scene scene",
+    "english": "scene",
     "chinese": "场景",
     "frequency": 26156,
     "rank": 899
@@ -3630,7 +3630,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "gentile",
     "dictionary": "adjective che tratta gli altri con modi garbati courteous decent genial graceful gracious kind chi d",
-    "english": "kind of; friendly (2)",
+    "english": "kind of; friendly",
     "chinese": "亲切的，有礼貌的；好心的",
     "frequency": 26075,
     "rank": 903
@@ -3646,8 +3646,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "incontro",
     "dictionary": "adverb (raro), (raro) che si trova di fronte toward towards",
-    "english": "meeting; Meeting (2)",
-    "chinese": "会议; 会议(2)",
+    "english": "meeting",
+    "chinese": "会议",
     "frequency": 25891,
     "rank": 908
   },
@@ -3758,8 +3758,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "personale",
     "dictionary": "adjective (filosofia) (antropologia) proprio di una persona, relativo ad essa, privato personal",
-    "english": "Staff; Staff (2); Staff (3)",
-    "chinese": "工作人员; 工作人员(2); 工作人员(3)",
+    "english": "Staff",
+    "chinese": "工作人员",
     "frequency": 25317,
     "rank": 929
   },
@@ -3798,8 +3798,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "diverso",
     "dictionary": "adjective che è dissimile different che si distingue tra tante persone different diverse (per estens",
-    "english": "different; Other (2)",
-    "chinese": "不同; 其他(2)",
+    "english": "different; Other",
+    "chinese": "不同; 其他",
     "frequency": 25123,
     "rank": 938
   },
@@ -3822,7 +3822,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "normale",
     "dictionary": "adjective (matematica) (geometria) che forma un angolo di novanta gradi; perpendicolare average norm",
-    "english": "normal; normal (2)",
+    "english": "normal",
     "chinese": "正常的，普通的",
     "frequency": 24942,
     "rank": 944
@@ -3886,7 +3886,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "chiuso",
     "dictionary": "adjective (araldica) attributo araldico che si applica a mani, corone, elmi, porte, libri (ma non de",
-    "english": "closed; (2)",
+    "english": "closed",
     "chinese": "关闭; (二)",
     "frequency": 24272,
     "rank": 967
@@ -3926,7 +3926,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "impossibile",
     "dictionary": "adjective (filosofia) (arte) non possibile (matematica) (statistica) (di) evento che non si può veri",
-    "english": "impossible; (2)",
+    "english": "impossible",
     "chinese": "无法; (二)",
     "frequency": 23949,
     "rank": 976
@@ -3966,7 +3966,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "intorno",
     "dictionary": "noun (matematica) un insieme o spazio topologico definito a partire da un punto (detto",
-    "english": "around; (2)",
+    "english": "around",
     "chinese": "在周围，四周；围绕着",
     "frequency": 23545,
     "rank": 990
@@ -3974,7 +3974,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dolce",
     "dictionary": "adjective (gastronomia) che ha un sapore delicato, né aspro né forte, tipico dello zucchero da tavol",
-    "english": "sweet dessert; (2)",
+    "english": "sweet dessert",
     "chinese": "甜点; (二)",
     "frequency": 23316,
     "rank": 996
@@ -3982,8 +3982,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cervello",
     "dictionary": "noun (anatomia) parte encefalica del sistema nervoso contenuto nella scatola cranica",
-    "english": "brain brain brain",
-    "chinese": "大脑大脑",
+    "english": "brain",
+    "chinese": "大脑",
     "frequency": 23237,
     "rank": 998
   },
@@ -4022,16 +4022,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "aereo",
     "dictionary": "adjective che vive o fluttua nell'aria aerial",
-    "english": "Airplane; Aircraft (2)",
-    "chinese": "飞机; 飞机(2)",
+    "english": "Airplane; Aircraft",
+    "chinese": "飞机",
     "frequency": 23170,
     "rank": 1004
   },
   {
     "italian": "rubato",
     "dictionary": "adjective di oggetto che è stato sottratto a qualcuno senza il suo consenso appropriated stolen",
-    "english": "stolen; stolen (2)",
-    "chinese": "被盗; 被盗(2)",
+    "english": "stolen",
+    "chinese": "被盗",
     "frequency": 23127,
     "rank": 1006
   },
@@ -4046,7 +4046,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sette",
     "dictionary": "noun (sport) angolo formato dalla traversa e dal palo verticale nelle porte del campi di",
-    "english": "seven; (2)",
+    "english": "seven",
     "chinese": "7个; (二)",
     "frequency": 22922,
     "rank": 1011
@@ -4102,8 +4102,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "denaro",
     "dictionary": "noun (economia) (commercio) (finanza) strumento di scambio, conto e valore di beni e ser",
-    "english": "money money",
-    "chinese": "钱 钱",
+    "english": "money",
+    "chinese": "钱",
     "frequency": 22464,
     "rank": 1027
   },
@@ -4142,7 +4142,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vestito",
     "dictionary": "adjective che ha indosso i vestiti clothes (araldica) attributo araldico che si applica a: vetu",
-    "english": "Dressed dress; (2)",
+    "english": "Dressed dress",
     "chinese": "着装; (二)",
     "frequency": 22386,
     "rank": 1032
@@ -4158,8 +4158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ex",
     "dictionary": "noun (linguaggio giovanile) persona con la quale si è avuta una storia d'amore poi conclusa",
-    "english": "ex; ex (2)",
-    "chinese": "前一个; 原 (2)",
+    "english": "ex",
+    "chinese": "前一个; 原",
     "frequency": 22343,
     "rank": 1034
   },
@@ -4182,7 +4182,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "conosciuto",
     "dictionary": "adjective che è noto known well-known tried trusted",
-    "english": "known; (2)",
+    "english": "known",
     "chinese": "已经知道; (二)",
     "frequency": 22190,
     "rank": 1041
@@ -4222,7 +4222,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "notizia",
     "dictionary": "noun item",
-    "english": "news news",
+    "english": "news",
     "chinese": "新闻",
     "frequency": 21790,
     "rank": 1052
@@ -4366,7 +4366,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pubblico",
     "dictionary": "adjective che è di proprietà e utilizzabile da tutti public",
-    "english": "public; (2)",
+    "english": "public",
     "chinese": "公开; (二)",
     "frequency": 20894,
     "rank": 1087
@@ -4430,8 +4430,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "computer",
     "dictionary": "noun (forestierismo) macchina elettronica automatica predisposta per compiere operazi",
-    "english": "computer computer computer",
-    "chinese": "计算机计算机 计算机",
+    "english": "computer",
+    "chinese": "计算机",
     "frequency": 20462,
     "rank": 1104
   },
@@ -4454,7 +4454,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "entro",
     "dictionary": "adverb (letterario) by",
-    "english": "within; (2)",
+    "english": "within",
     "chinese": "在内部; (二)",
     "frequency": 20281,
     "rank": 1110
@@ -4462,8 +4462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "freddo",
     "dictionary": "adjective (fisica) (chimica) di oggetto che ha temperatura bassa o più bassa rispetto a quella ambie",
-    "english": "cold cold cold; cold (2)",
-    "chinese": "凉了 凉了; 寒冷(2)",
+    "english": "cold",
+    "chinese": "凉了; 寒冷",
     "frequency": 20250,
     "rank": 1113
   },
@@ -4502,7 +4502,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dunque",
     "dictionary": "conjunction per questa ragione so therefore",
-    "english": "therefore; (2)",
+    "english": "therefore",
     "chinese": "因此,; (二)",
     "frequency": 20031,
     "rank": 1120
@@ -4542,7 +4542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ballo",
     "dictionary": "noun (arte) (musica) (danza) movimento essenzialmente dei piedi e quindi del corpo a ritm",
-    "english": "dance dance",
+    "english": "dance",
     "chinese": "舞会",
     "frequency": 19776,
     "rank": 1139
@@ -4574,7 +4574,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "oro",
     "dictionary": "noun (tecnologia) metallo prezioso di colore giallo brillante, molto duttile e malleabile;",
-    "english": "gold gold",
+    "english": "gold",
     "chinese": "黄金",
     "frequency": 19535,
     "rank": 1148
@@ -4678,7 +4678,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "borsa",
     "dictionary": "noun (tessile) (abbigliamento) contenitore non rigido per solidi che sia portatile e perc",
-    "english": "bag bag",
+    "english": "bag",
     "chinese": "袋装",
     "frequency": 19209,
     "rank": 1166
@@ -4718,8 +4718,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "reale",
     "dictionary": "adjective (filosofia) (fisica) che esiste, che è vero (per estensione) di ciò che eccelle per maesto",
-    "english": "real; royal; Real (2)",
-    "chinese": "真实的；皇家的; 实际(2)",
+    "english": "real; royal",
+    "chinese": "真实的；皇家的; 实际",
     "frequency": 19096,
     "rank": 1177
   },
@@ -4743,7 +4743,7 @@ const VOCABULARY_DATA = [
     "italian": "regina",
     "dictionary": "noun (politica) monarca di sesso femminile o moglie di un re (scacchi) pezzo del gioco",
     "english": "Queen",
-    "chinese": "皇后 皇后 皇后 皇后",
+    "chinese": "皇后",
     "frequency": 19028,
     "rank": 1182
   },
@@ -4758,8 +4758,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "braccio",
     "dictionary": "noun (biologia) (fisiologia) (medicina) arto superiore del corpo umano, racchiuso tra la spalla e il",
-    "english": "armrest arm; armrest (2)",
-    "chinese": "臂臂 臂臂 臂臂 臂臂; 臂架(2)",
+    "english": "armrest arm; armrest",
+    "chinese": "臂; 臂架",
     "frequency": 18971,
     "rank": 1186
   },
@@ -4774,7 +4774,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "chiesa",
     "dictionary": "noun (architettura) struttura sacra dove vengono officiati pubblicamente gli atti di cult",
-    "english": "church church",
+    "english": "church",
     "chinese": "教会",
     "frequency": 18917,
     "rank": 1191
@@ -4798,8 +4798,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "paziente",
     "dictionary": "adjective che tollera con rassegnazione circostanze sfavorevoli patient tolerant",
-    "english": "patient patient; patient (2)",
-    "chinese": "患者; 患者(2)",
+    "english": "patient",
+    "chinese": "患者",
     "frequency": 18818,
     "rank": 1197
   },
@@ -4846,7 +4846,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mica",
     "dictionary": "adverb (familiare) per niente certainly",
-    "english": "- No.; (2); (3)",
+    "english": "- No.",
     "chinese": "- 没有。; (二); (三) 国家",
     "frequency": 18564,
     "rank": 1213
@@ -4878,15 +4878,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "direttore",
     "dictionary": "adjective che indica un senso di marcia editor head headmaster master principal warden",
-    "english": "Director; Director (2)",
-    "chinese": "司长; 司长(2)",
+    "english": "Director",
+    "chinese": "司长",
     "frequency": 18481,
     "rank": 1218
   },
   {
     "italian": "intelligente",
     "dictionary": "adjective (per estensione) di chi ha una visione sapiente al di là della norma,",
-    "english": "smart smart",
+    "english": "smart",
     "chinese": "聪明",
     "frequency": 18474,
     "rank": 1219
@@ -4902,7 +4902,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bianco",
     "dictionary": "adjective (colori) (fisica) del colore che è il risultato dell'addizione dei sette colori dell'iride",
-    "english": "white; (2)",
+    "english": "white",
     "chinese": "白色; (二)",
     "frequency": 18178,
     "rank": 1228
@@ -4910,7 +4910,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tavolo",
     "dictionary": "noun (falegnameria) articolo di arredamento costituito da un piano di vario materiale e",
-    "english": "table table table",
+    "english": "table",
     "chinese": "表格列表",
     "frequency": 18145,
     "rank": 1229
@@ -4998,8 +4998,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "inglese",
     "dictionary": "adjective (geografia) relativo all'Inghilterra o alla lingua parlata nei paesi anglosassoni English ",
-    "english": "English; English (2)",
-    "chinese": "联合国; 英文(2)",
+    "english": "English",
+    "chinese": "联合国; 英文",
     "frequency": 17887,
     "rank": 1243
   },
@@ -5054,7 +5054,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "trovata",
     "dictionary": "noun brainwave",
-    "english": "Found found",
+    "english": "Found",
     "chinese": "已找到",
     "frequency": 17647,
     "rank": 1258
@@ -5102,16 +5102,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "caldo",
     "dictionary": "adjective (fisica) (chimica) dall'alta temperatura warm hot heat",
-    "english": "hot hot; (2)",
-    "chinese": "热热; (二)",
+    "english": "hot",
+    "chinese": "热; (二)",
     "frequency": 17493,
     "rank": 1272
   },
   {
     "italian": "pelle",
     "dictionary": "noun (biologia) (anatomia) (fisiologia) (medicina) rivestimento esterno del c",
-    "english": "leather; leather (2)",
-    "chinese": "皮革; 皮革(2)",
+    "english": "leather",
+    "chinese": "皮革",
     "frequency": 17491,
     "rank": 1273
   },
@@ -5190,7 +5190,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "figliolo",
     "dictionary": "noun son",
-    "english": "Son son",
+    "english": "Son",
     "chinese": "儿子们",
     "frequency": 17178,
     "rank": 1292
@@ -5206,7 +5206,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "presente",
     "dictionary": "adjective che è in un luogo, per esempio in un'abitazione, in un negozio e simili, in una via o piaz",
-    "english": "present; (2)",
+    "english": "present",
     "chinese": "当前; (二)",
     "frequency": 17117,
     "rank": 1296
@@ -5230,7 +5230,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "barca",
     "dictionary": "noun (marina) mezzo di trasporto di dimensioni limitate si usa in mare o in fiumi o laghi",
-    "english": "boat boat",
+    "english": "boat",
     "chinese": "轮船",
     "frequency": 16976,
     "rank": 1300
@@ -5238,7 +5238,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "maledizione",
     "dictionary": "interjection forma di imprecazione contro qualcosa o qualcuno con significato di detestare damn godd",
-    "english": "Damn it!; (2)",
+    "english": "Damn it!",
     "chinese": "该死!; (二)",
     "frequency": 16939,
     "rank": 1301
@@ -5318,7 +5318,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "radio",
     "dictionary": "noun (anatomia) (medicina) osso che assieme all'ulna costituisce lo scheletro dell'avambraccio radiu",
-    "english": "radio; (2)",
+    "english": "radio",
     "chinese": "电台; (二)",
     "frequency": 16467,
     "rank": 1323
@@ -5326,7 +5326,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "comune",
     "dictionary": "adjective caratteristico di più persone posseduto da più cose dello stesso genere (economia) che app",
-    "english": "common; (2)",
+    "english": "common",
     "chinese": "常见; (二)",
     "frequency": 16466,
     "rank": 1325
@@ -5342,7 +5342,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "responsabile",
     "dictionary": "adjective che deve rispondere del proprio o dell'altrui comportamento conscientious responsible (fam",
-    "english": "responsible; (2)",
+    "english": "responsible",
     "chinese": "负责; (二)",
     "frequency": 16300,
     "rank": 1333
@@ -5358,8 +5358,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bomba",
     "dictionary": "noun (militare) (arma) (chimica) esplosivo con un dispositivo che lo fa scoppiare all'urt",
-    "english": "bomb bomb bomb",
-    "chinese": "炸弹炸弹",
+    "english": "bomb",
+    "chinese": "炸弹",
     "frequency": 16243,
     "rank": 1337
   },
@@ -5398,7 +5398,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "accidenti",
     "dictionary": "interjection interiezione stizzosa, rabbiosa, causata da evento negativo non atteso damn!",
-    "english": "Damn!; (2)",
+    "english": "Damn!",
     "chinese": "该死!; (二)",
     "frequency": 16054,
     "rank": 1351
@@ -5470,7 +5470,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ufficiale",
     "dictionary": "adjective (burocrazia) di notizie, decisioni e documenti emanati da un'autorità competente con carat",
-    "english": "official official",
+    "english": "official",
     "chinese": "官方官员",
     "frequency": 15822,
     "rank": 1369
@@ -5478,15 +5478,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "vincere",
     "dictionary": "verb (sport) arrivare primo in una gara win (militare) (politica) (sport) sconfiggere",
-    "english": "win win win",
-    "chinese": "赢赢赢赢",
+    "english": "win",
+    "chinese": "赢",
     "frequency": 15805,
     "rank": 1371
   },
   {
     "italian": "pressione",
     "dictionary": "noun (fisica) grandezza fisica intensiva, pari al rapporto tra il modulo della forza ag",
-    "english": "pressure pressure",
+    "english": "pressure",
     "chinese": "压力",
     "frequency": 15803,
     "rank": 1373
@@ -5502,7 +5502,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "nascosto",
     "dictionary": "adjective (senso figurato) che non è rivelato concealed hidden",
-    "english": "Hidden hidden",
+    "english": "Hidden",
     "chinese": "隐藏",
     "frequency": 15760,
     "rank": 1376
@@ -5510,8 +5510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "maestro",
     "dictionary": "adjective che è molto rilevante teacher",
-    "english": "master; Master (2)",
-    "chinese": "师傅; 师傅(2)",
+    "english": "master",
+    "chinese": "师傅",
     "frequency": 15758,
     "rank": 1377
   },
@@ -5534,8 +5534,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vite",
     "dictionary": "noun (botanica) (enologia) arbusto coltivato per le sue bacche succose a grappolo, l'uva,",
-    "english": "screw screw screw",
-    "chinese": "螺丝螺丝",
+    "english": "screw",
+    "chinese": "螺丝",
     "frequency": 15641,
     "rank": 1384
   },
@@ -5558,7 +5558,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "testimone",
     "dictionary": "noun witness (sport) baton baton",
-    "english": "witness witness",
+    "english": "witness",
     "chinese": "证人",
     "frequency": 15549,
     "rank": 1388
@@ -5590,7 +5590,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tale",
     "dictionary": "adjective (qualificativo) che ha determinate caratteristiche o qualità, che ricade in una data categ",
-    "english": "This; (2)",
+    "english": "This",
     "chinese": "这个; (二)",
     "frequency": 15425,
     "rank": 1395
@@ -5654,8 +5654,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pianeta",
     "dictionary": "noun (religione), (cristianesimo), (abbigliamento) indumento liturgico simile ad un mantello, ricama",
-    "english": "planet; planet (2)",
-    "chinese": "行星; 行星(2)",
+    "english": "planet",
+    "chinese": "行星",
     "frequency": 15272,
     "rank": 1414
   },
@@ -5694,7 +5694,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "arrabbiato",
     "dictionary": "adjective (medicina) in relazione a cani, contagiato dalla rabbia implacable inveter",
-    "english": "Angry angry",
+    "english": "Angry",
     "chinese": "愤怒的愤怒",
     "frequency": 15106,
     "rank": 1426
@@ -5782,8 +5782,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "finestra",
     "dictionary": "noun (architettura) apertura di una parete di un edificio a scopo di illuminazione o r",
-    "english": "window window window",
-    "chinese": "窗口窗口",
+    "english": "window",
+    "chinese": "窗口",
     "frequency": 14847,
     "rank": 1448
   },
@@ -5806,7 +5806,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "correre",
     "dictionary": "verb run",
-    "english": "running running",
+    "english": "running",
     "chinese": "运行",
     "frequency": 14808,
     "rank": 1453
@@ -5830,8 +5830,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "collo",
     "dictionary": "noun (anatomia) parte del corpo che unisce testa e resto del corpo neck merce racchiusa",
-    "english": "neck neck",
-    "chinese": "颈颈",
+    "english": "neck",
+    "chinese": "颈",
     "frequency": 14762,
     "rank": 1457
   },
@@ -5878,7 +5878,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "arte",
     "dictionary": "noun attività umana regolata da accorgimenti tecnici e fondata sullo studio e sull'esperie",
-    "english": "art art",
+    "english": "art",
     "chinese": "艺术",
     "frequency": 14528,
     "rank": 1473
@@ -5918,7 +5918,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "carriera",
     "dictionary": "noun affirmation assertion profession",
-    "english": "career career",
+    "english": "career",
     "chinese": "职业经历",
     "frequency": 14351,
     "rank": 1482
@@ -5982,7 +5982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "emergenza",
     "dictionary": "noun act emergence finding phenomenon (psicologia) (medicina) situazione negativa",
-    "english": "emergency emergency",
+    "english": "emergency",
     "chinese": "紧急情况",
     "frequency": 14212,
     "rank": 1494
@@ -6014,7 +6014,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "contrario",
     "dictionary": "adjective che si oppone a qualcosa o qualcuno adverse against unfavorable",
-    "english": "contrary; (2)",
+    "english": "contrary",
     "chinese": "相反; (二)",
     "frequency": 14149,
     "rank": 1501
@@ -6022,7 +6022,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "terzo",
     "dictionary": "noun (frazionario) una delle tre parti in cui è diviso l'intero third",
-    "english": "third; (2)",
+    "english": "third",
     "chinese": "第三届; (二)",
     "frequency": 14109,
     "rank": 1502
@@ -6102,7 +6102,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Massimo",
     "dictionary": "pronoun Max Maxim",
-    "english": "Maximum; maximum",
+    "english": "Maximum",
     "chinese": "最大值; 上限",
     "frequency": 13947,
     "rank": 1522
@@ -6126,7 +6126,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rumore",
     "dictionary": "noun (fisica) suono forte e fastidioso, solitamente privo di espressione e irregolare no",
-    "english": "noise noise",
+    "english": "noise",
     "chinese": "噪声",
     "frequency": 13903,
     "rank": 1526
@@ -6134,7 +6134,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "torta",
     "dictionary": "noun (gastronomia) preparato di pasticceria, tipicamente abbondante e fatto p",
-    "english": "cake cake",
+    "english": "cake",
     "chinese": "蛋糕饼",
     "frequency": 13889,
     "rank": 1527
@@ -6150,7 +6150,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "eroe",
     "dictionary": "noun (mitologia) nel mito classico, semidio o uomo dotato di virtù eccezionali e autore di",
-    "english": "hero hero",
+    "english": "hero",
     "chinese": "英雄英雄们",
     "frequency": 13837,
     "rank": 1531
@@ -6206,7 +6206,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "grave",
     "dictionary": "adjective molto pesante deep hard harsh heavy low severe che è difficile da sopportare o affrontare,",
-    "english": "serious; (2)",
+    "english": "serious",
     "chinese": "严重; (二)",
     "frequency": 13610,
     "rank": 1551
@@ -6214,8 +6214,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "memoria",
     "dictionary": "noun documento che raccoglie fatti autobiografici essay memoria di lavoro, parte di mem",
-    "english": "memory memory memory",
-    "chinese": "记忆记忆",
+    "english": "memory",
+    "chinese": "记忆",
     "frequency": 13603,
     "rank": 1553
   },
@@ -6302,7 +6302,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "anello",
     "dictionary": "noun cerchietto di metallo (nobile o meno), da indossare al dito in qualità di ornamento",
-    "english": "ring ring",
+    "english": "ring",
     "chinese": "环",
     "frequency": 13386,
     "rank": 1578
@@ -6310,7 +6310,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "piede",
     "dictionary": "noun (biologia) (anatomia) (fisiologia) (medicina) parte estrema degli arti inferiori del",
-    "english": "foot foot",
+    "english": "foot",
     "chinese": "脚步",
     "frequency": 13269,
     "rank": 1581
@@ -6318,7 +6318,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ferita",
     "dictionary": "noun (medicina) lacerazione traumatica della pelle di tutti gli animali, compreso l'uomo",
-    "english": "wound wound",
+    "english": "wound",
     "chinese": "伤口",
     "frequency": 13266,
     "rank": 1582
@@ -6326,8 +6326,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ferito",
     "dictionary": "adjective che è stato leso (senso figurato) che soffre in seguito ad ingiustizie bruised distressed ",
-    "english": "injured; wounded (2)",
-    "chinese": "受伤; 受伤(2)",
+    "english": "injured; wounded",
+    "chinese": "受伤",
     "frequency": 13251,
     "rank": 1583
   },
@@ -6390,7 +6390,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "basso",
     "dictionary": "adjective di statura ridotta, di poca altezza low",
-    "english": "Low; Low (2)",
+    "english": "Low",
     "chinese": "低档; 低(2)级",
     "frequency": 13088,
     "rank": 1599
@@ -6406,7 +6406,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "anzi",
     "dictionary": "conjunction Con valore avversativo dopo una frase di senso negativo actually Con valore rafforzativo",
-    "english": "On the contrary; (2)",
+    "english": "On the contrary",
     "chinese": "相反; (二)",
     "frequency": 13065,
     "rank": 1602
@@ -6470,8 +6470,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fidanzato",
     "dictionary": "adjective che ha comunicato l'intenzione di sposarsi boyfriend",
-    "english": "boyfriend; Boyfriend (2)",
-    "chinese": "{\\fn黑体\\fs20\\shad2\\2aH82\\3aH20\\4aH33\\fscx95\\3cH592001\\be1}男朋友 {\\fn黑体\\fs20\\shad2\\2aH82\\3aH20\\4aH33\\fscx95\\3cH592001\\be1}男朋友 {\\fn黑体\\fs20\\shad2\\2aH82\\3aH20\\4aH33\\fscx95\\3cH592001\\be1}; 男朋友(2)",
+    "english": "boyfriend",
+    "chinese": "{\\fn黑体\\fs20\\shad2\\2aH82\\3aH20\\4aH33\\fscx95\\3cH592001\\be1}男朋友 {\\fn黑体\\fs20\\shad2\\2aH82\\3aH20\\4aH33\\fscx95\\3cH592001\\be1}; 男朋友",
     "frequency": 12881,
     "rank": 1619
   },
@@ -6486,15 +6486,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "legale",
     "dictionary": "adjective che rispetta una legge lawful legal legitimate",
-    "english": "Legal; Legal (2)",
-    "chinese": "法律; 法律(2)",
+    "english": "Legal",
+    "chinese": "法律",
     "frequency": 12848,
     "rank": 1622
   },
   {
     "italian": "compito",
     "dictionary": "adjective arrivato alla fine congenial courteous polite",
-    "english": "task; (2)",
+    "english": "task",
     "chinese": "任务; (二)",
     "frequency": 12795,
     "rank": 1624
@@ -6518,7 +6518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "obiettivo",
     "dictionary": "adjective non affetto da pregiudizio oggettivo, basato su misurazione o dati di fatto, non soggettiv",
-    "english": "Objective; (2)",
+    "english": "Objective",
     "chinese": "目标; (二)",
     "frequency": 12724,
     "rank": 1635
@@ -6606,8 +6606,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ballare",
     "dictionary": "verb (musica) (danza) muovere il corpo, in particolare i piedi, in maniera ritmata al s",
-    "english": "dancing dancing dancing",
-    "chinese": "跳舞 跳舞",
+    "english": "dancing",
+    "chinese": "跳舞",
     "frequency": 12588,
     "rank": 1653
   },
@@ -6630,8 +6630,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "verde",
     "dictionary": "adjective di cibo, che per effetto di verdure o di aromi, spec. prezzemolo o basilico, assume una co",
-    "english": "green; Green (2); Green (3)",
-    "chinese": "绿色; 绿色(2); 绿色(3)",
+    "english": "green",
+    "chinese": "绿色",
     "frequency": 12526,
     "rank": 1660
   },
@@ -6670,7 +6670,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "continuo",
     "dictionary": "adjective (soprattutto al plurale) di eventi che si ripetono a ritmo incessante e con frequenza ravv",
-    "english": "continuous; (2)",
+    "english": "continuous",
     "chinese": "连续; (二)",
     "frequency": 12497,
     "rank": 1669
@@ -6678,8 +6678,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "peso",
     "dictionary": "adjective (dialettale) (familiare), (toscano) pesante peso heavy weighty",
-    "english": "weight; weight (2); weight (3)",
-    "chinese": "重量; 重量(2); 重量(3)",
+    "english": "weight",
+    "chinese": "重量",
     "frequency": 12488,
     "rank": 1670
   },
@@ -6710,7 +6710,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "soluzione",
     "dictionary": "noun (fisica) (chimica) miscela omogenea dove una o più sostanze sono contenute in u",
-    "english": "solution solution",
+    "english": "solution",
     "chinese": "解决方案",
     "frequency": 12462,
     "rank": 1675
@@ -6758,7 +6758,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sveglia",
     "dictionary": "adjective femminile di sveglio reveille early call",
-    "english": "Wake up!; (2)",
+    "english": "Wake up!",
     "chinese": "醒来!; (二)",
     "frequency": 12332,
     "rank": 1687
@@ -6782,8 +6782,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "innocente",
     "dictionary": "adjective (diritto) che non è colpevole blameless guiltless harmless innocent not guilty (per estens",
-    "english": "innocent; innocent (2)",
-    "chinese": "无罪; 无辜(2)",
+    "english": "innocent",
+    "chinese": "无罪; 无辜",
     "frequency": 12287,
     "rank": 1694
   },
@@ -6798,7 +6798,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "coltello",
     "dictionary": "noun knife",
-    "english": "knife knife",
+    "english": "knife",
     "chinese": "刀锋",
     "frequency": 12280,
     "rank": 1696
@@ -6854,7 +6854,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "centrale",
     "dictionary": "adjective che sta al centro (fonetica) (linguistica) tipo di suono caratterizzato da una posizione a",
-    "english": "Central central",
+    "english": "Central",
     "chinese": "中枢",
     "frequency": 12128,
     "rank": 1708
@@ -6870,8 +6870,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "principe",
     "dictionary": "adjective il più rilevante prince primo in ordine di tempo prince leading main principal",
-    "english": "Prince; Prince (2)",
-    "chinese": "亲王; 亲王(2)",
+    "english": "Prince",
+    "chinese": "亲王",
     "frequency": 12104,
     "rank": 1710
   },
@@ -6934,7 +6934,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ridicolo",
     "dictionary": "adjective che provoca riso ridiculous funny laughable absurd farcical foolish (spregiativo) stupido ",
-    "english": "ridiculous.; (2)",
+    "english": "ridiculous.",
     "chinese": "荒谬; (二)",
     "frequency": 11991,
     "rank": 1729
@@ -6950,16 +6950,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "americano",
     "dictionary": "adjective (geografia) dell'America, relativo all'America American",
-    "english": "American; American (2)",
-    "chinese": "美国人; 美国人(2)",
+    "english": "American",
+    "chinese": "美国人",
     "frequency": 11964,
     "rank": 1736
   },
   {
     "italian": "francese",
     "dictionary": "adjective (geografia) relativo alla Francia French",
-    "english": "French; French (2); French (3)",
-    "chinese": "法语; 法语(2); 法语(3)",
+    "english": "French",
+    "chinese": "法语",
     "frequency": 11950,
     "rank": 1738
   },
@@ -7006,8 +7006,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "buio",
     "dictionary": "adjective irraggiato da poca o nessuna luce dark",
-    "english": "dark darkness; black (2)",
-    "chinese": "黑暗的阴暗; 黑色(2)",
+    "english": "dark darkness; black",
+    "chinese": "黑暗的阴暗; 黑色",
     "frequency": 11871,
     "rank": 1749
   },
@@ -7070,7 +7070,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "nonostante",
     "dictionary": "conjunction malgrado che although",
-    "english": "despite; (2)",
+    "english": "despite",
     "chinese": "尽管; (二)",
     "frequency": 11744,
     "rank": 1767
@@ -7182,7 +7182,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "principale",
     "dictionary": "adjective che rappresenta per primo un determinato ambito main principal major",
-    "english": "Main; (2)",
+    "english": "Main",
     "chinese": "主要; (二)",
     "frequency": 11550,
     "rank": 1796
@@ -7246,7 +7246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "campione",
     "dictionary": "noun (sport) (calcio) atleta particolarmente bravo nella sua disciplina oppure squadra",
-    "english": "sample sample",
+    "english": "sample",
     "chinese": "样本",
     "frequency": 11446,
     "rank": 1806
@@ -7270,8 +7270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "mercato",
     "dictionary": "noun (diritto) (economia) (commercio) (finanza) luogo ideale o concreto di acquisto e v",
-    "english": "market market",
-    "chinese": "市场市场",
+    "english": "market",
+    "chinese": "市场",
     "frequency": 11363,
     "rank": 1818
   },
@@ -7326,8 +7326,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "conversazione",
     "dictionary": "noun conversation talk",
-    "english": "conversation conversation",
-    "chinese": "对话对话",
+    "english": "conversation",
+    "chinese": "对话",
     "frequency": 11169,
     "rank": 1838
   },
@@ -7366,15 +7366,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "malato",
     "dictionary": "adjective che è affetto da una malattia ill sick",
-    "english": "sick person; sick (2)",
-    "chinese": "患者; 患病(2)",
+    "english": "sick person; sick",
+    "chinese": "患者; 患病",
     "frequency": 11096,
     "rank": 1847
   },
   {
     "italian": "sedia",
     "dictionary": "noun (falegnameria) pezzo di arredamento utilizzato per potersi sedere, formato da un sed",
-    "english": "chair chair",
+    "english": "chair",
     "chinese": "轮椅",
     "frequency": 11086,
     "rank": 1849
@@ -7382,7 +7382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "finale",
     "dictionary": "adjective ciò che è decisivo, determinante per la conclusione final",
-    "english": "final final",
+    "english": "final",
     "chinese": "最后决定",
     "frequency": 11075,
     "rank": 1853
@@ -7414,8 +7414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ghiaccio",
     "dictionary": "adjective ghiacciato icy cold",
-    "english": "ice cream; Ice (2)",
-    "chinese": "冰激凌; 冰块(2)",
+    "english": "ice cream; Ice",
+    "chinese": "冰激凌; 冰块",
     "frequency": 11028,
     "rank": 1861
   },
@@ -7494,7 +7494,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "milione",
     "dictionary": "noun quantità numerica composta di un milione di unità million",
-    "english": "million million",
+    "english": "million",
     "chinese": "百万美元",
     "frequency": 10915,
     "rank": 1878
@@ -7558,7 +7558,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "camion",
     "dictionary": "noun lorry truck van",
-    "english": "truck truck",
+    "english": "truck",
     "chinese": "卡车",
     "frequency": 10818,
     "rank": 1896
@@ -7566,7 +7566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "parco",
     "dictionary": "adjective di individuo moderato in ciò che fa careful chary frugal parsimonious sparing",
-    "english": "park; (2)",
+    "english": "park",
     "chinese": "公园; (二)",
     "frequency": 10793,
     "rank": 1897
@@ -7582,8 +7582,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "privato",
     "dictionary": "adjective che riguarda l'uomo inteso come singolo cittadino, al di fuori del fatto di operare per lo",
-    "english": "Private; Private (2)",
-    "chinese": "私营; 私人(2)",
+    "english": "Private",
+    "chinese": "私营; 私人",
     "frequency": 10781,
     "rank": 1899
   },
@@ -7622,7 +7622,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "direttamente",
     "dictionary": "adverb direct directly straight",
-    "english": "directly directly",
+    "english": "directly",
     "chinese": "直接",
     "frequency": 10664,
     "rank": 1914
@@ -7718,8 +7718,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "nazionale",
     "dictionary": "adjective (politica) (diritto) della o relativo alla nazione national",
-    "english": "national national; National (2)",
-    "chinese": "国家; 国家(2)",
+    "english": "national",
+    "chinese": "国家",
     "frequency": 10470,
     "rank": 1943
   },
@@ -7750,7 +7750,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "stella",
     "dictionary": "noun star (araldica) figura araldica convenzionale che rappresenta una stella con un num",
-    "english": "star star",
+    "english": "star",
     "chinese": "恒星点",
     "frequency": 10423,
     "rank": 1952
@@ -7782,15 +7782,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "vissuto",
     "dictionary": "adjective che ha fatto esperienze experienced real",
-    "english": "lived; lived (2)",
-    "chinese": "活着; 居住(2)",
+    "english": "lived",
+    "chinese": "活着; 居住",
     "frequency": 10399,
     "rank": 1961
   },
   {
     "italian": "Cancro",
     "dictionary": "pronoun costellazione dello zodiaco Cancer",
-    "english": "Cancer; cancer cancer",
+    "english": "Cancer",
     "chinese": "癌症",
     "frequency": 10360,
     "rank": 1968
@@ -7942,7 +7942,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "completo",
     "dictionary": "adjective compiuto in tutte le sue parti, che ha tutti gli elementi considerati necessari absolute c",
-    "english": "complete; (2)",
+    "english": "complete",
     "chinese": "完成; (二)",
     "frequency": 10155,
     "rank": 2007
@@ -7950,7 +7950,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "liceo",
     "dictionary": "noun (storia) sede della scuola di Aristotele high school lyceum secondary school",
-    "english": "High school high school",
+    "english": "High school",
     "chinese": "中学",
     "frequency": 10127,
     "rank": 2010
@@ -7958,8 +7958,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "innamorato",
     "dictionary": "adjective che ama appassionatamente qualcuno boyfriend crazy fond lover loving sweetheart",
-    "english": "in love; in love (2)",
-    "chinese": "恋爱; 恋爱(2)",
+    "english": "in love",
+    "chinese": "恋爱",
     "frequency": 10120,
     "rank": 2013
   },
@@ -8014,7 +8014,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "erba",
     "dictionary": "noun (botanica) pianta bassa con fusto non legnoso grass tappeto erboso grass lawn (gergal",
-    "english": "grass grass grass",
+    "english": "grass",
     "chinese": "草丛草",
     "frequency": 10060,
     "rank": 2027
@@ -8046,8 +8046,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "maledetto",
     "dictionary": "adjective che ha subito una maledizione horrific insufferable terrible unbearable vile",
-    "english": "Damn you!; Damn (2)",
-    "chinese": "该死的!; 该死的(2)",
+    "english": "Damn you!; Damn",
+    "chinese": "该死的!; 该死的",
     "frequency": 10004,
     "rank": 2035
   },
@@ -8094,8 +8094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "partito",
     "dictionary": "adjective (araldica) attributo araldico che si applica a uno scudo, o una figura, diviso in due part",
-    "english": "party; party (2)",
-    "chinese": "政党; 当事方(2)",
+    "english": "party",
+    "chinese": "政党; 当事方",
     "frequency": 9971,
     "rank": 2044
   },
@@ -8134,7 +8134,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "taglio",
     "dictionary": "noun (fisica) (meccanica) (tecnologia) (ingegneria) troncamento di oggetti haircut blendi",
-    "english": "cut cut",
+    "english": "cut",
     "chinese": "切开",
     "frequency": 9927,
     "rank": 2054
@@ -8142,8 +8142,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "velocemente",
     "dictionary": "adverb in modo veloce quickly readily speedily",
-    "english": "fast fast fast",
-    "chinese": "快点快点",
+    "english": "fast",
+    "chinese": "快点",
     "frequency": 9917,
     "rank": 2055
   },
@@ -8214,7 +8214,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "assurdo",
     "dictionary": "adjective (per estensione) di \"credenza\" senza fondamento di verità absurd ludicrous nonsensical pre",
-    "english": "absurdity; (2)",
+    "english": "absurdity",
     "chinese": "荒谬; (二)",
     "frequency": 9832,
     "rank": 2070
@@ -8270,8 +8270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "corrente",
     "dictionary": "adjective che corre flowing running (araldica) attributo degli animali raffigurati nell'atto di corr",
-    "english": "current; flowing; Current (2)",
-    "chinese": "水流；电流；当前的; 目前(2)",
+    "english": "current; flowing",
+    "chinese": "水流；电流；当前的; 目前",
     "frequency": 9770,
     "rank": 2089
   },
@@ -8294,16 +8294,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "doppio",
     "dictionary": "adjective (matematica) (economia) (statistica) che corrisponde a due volte ciò che si prende come ri",
-    "english": "double double; Double (2); double (3)",
-    "chinese": "双倍; 双倍(2); 双(3)",
+    "english": "double",
+    "chinese": "双倍; 双",
     "frequency": 9736,
     "rank": 2093
   },
   {
     "italian": "immagine",
     "dictionary": "noun (matematica) complesso di elementi di un insieme corrispondenti ad un elemento",
-    "english": "image image image",
-    "chinese": "图像图像",
+    "english": "image",
+    "chinese": "图像",
     "frequency": 9735,
     "rank": 2094
   },
@@ -8318,8 +8318,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "militare",
     "dictionary": "adjective carriera militare: diversamente dal normale servizio militare, i cui esercitanti in molti ",
-    "english": "Military; Military (2)",
-    "chinese": "军事; 军事(2)",
+    "english": "Military",
+    "chinese": "军事",
     "frequency": 9686,
     "rank": 2100
   },
@@ -8350,7 +8350,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "direzione",
     "dictionary": "noun punto verso cui è rivolta una persona o una cosa direction course way (diritto)",
-    "english": "direction direction",
+    "english": "direction",
     "chinese": "方向",
     "frequency": 9631,
     "rank": 2111
@@ -8398,7 +8398,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "invitato",
     "dictionary": "noun che prende parte ad una festa come ospite guest invite",
-    "english": "invited; (2)",
+    "english": "invited",
     "chinese": "邀请; (二)",
     "frequency": 9556,
     "rank": 2119
@@ -8478,8 +8478,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dritto",
     "dictionary": "adjective che è in linea retta crafty directly knit plain plain stitch right side",
-    "english": "Straight straight; (1); Straight (3)",
-    "chinese": "直线; (1) 国家; 直线(3)",
+    "english": "Straight",
+    "chinese": "直线; (1) 国家",
     "frequency": 9393,
     "rank": 2148
   },
@@ -8494,7 +8494,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "atto",
     "dictionary": "adjective adeguato, adatto, volto a apt",
-    "english": "Act; (2)",
+    "english": "Act",
     "chinese": "行为; (二)",
     "frequency": 9374,
     "rank": 2155
@@ -8550,8 +8550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "est",
     "dictionary": "adjective in senso opposto a quello occidentale east eastern",
-    "english": "east; East (2)",
-    "chinese": "东; 东(2)",
+    "english": "east",
+    "chinese": "东",
     "frequency": 9216,
     "rank": 2182
   },
@@ -8630,23 +8630,23 @@ const VOCABULARY_DATA = [
   {
     "italian": "criminale",
     "dictionary": "adjective (diritto) contrario alle leggi penali di uno stato criminal felon offender",
-    "english": "criminal offence; criminal (2)",
-    "chinese": "刑事犯罪; 刑事(2)",
+    "english": "criminal offence; criminal",
+    "chinese": "刑事犯罪; 刑事",
     "frequency": 9110,
     "rank": 2208
   },
   {
     "italian": "giacca",
     "dictionary": "noun (abbigliamento) indumento caratteristico dell'abbigliamento maschile e di alcune v",
-    "english": "jacket jacket",
-    "chinese": "夹克夹克",
+    "english": "jacket",
+    "chinese": "夹克",
     "frequency": 9106,
     "rank": 2210
   },
   {
     "italian": "scomparso",
     "dictionary": "adjective deceduto sparito dalla circolazione dead perished",
-    "english": "missing; (2)",
+    "english": "missing",
     "chinese": "缺少; (二)",
     "frequency": 9087,
     "rank": 2214
@@ -8710,8 +8710,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "carico",
     "dictionary": "adjective che è oberato da un oggetto pesante da muovere burdened load",
-    "english": "load; Loading (2)",
-    "chinese": "装入; 装入(2)",
+    "english": "load; Loading",
+    "chinese": "装入",
     "frequency": 8969,
     "rank": 2232
   },
@@ -8758,7 +8758,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tè",
     "dictionary": "noun tea",
-    "english": "Tea tea",
+    "english": "Tea",
     "chinese": "茶叶",
     "frequency": 8898,
     "rank": 2242
@@ -8766,15 +8766,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "profondo",
     "dictionary": "adjective che si estende verticalmente verso il basso, ad estrema profondità che si estende (in qual",
-    "english": "deep; deep (2)",
-    "chinese": "深处; 深处(2)",
+    "english": "deep",
+    "chinese": "深处",
     "frequency": 8887,
     "rank": 2244
   },
   {
     "italian": "cella",
     "dictionary": "noun cell (archeologia) (architettura) parte interna di un tempio greco o romano cella",
-    "english": "cell cell",
+    "english": "cell",
     "chinese": "单元格",
     "frequency": 8879,
     "rank": 2246
@@ -8902,7 +8902,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sedere",
     "dictionary": "noun (anatomia) parte del corpo tra la schiena e le cosce bottom",
-    "english": "seat; (2)",
+    "english": "seat",
     "chinese": "席位; (二)",
     "frequency": 8673,
     "rank": 2288
@@ -8958,7 +8958,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fumo",
     "dictionary": "noun (fisica) (chimica) (meteorologia) prodotto della combustione che si sprigiona come ga",
-    "english": "smoke smoke",
+    "english": "smoke",
     "chinese": "烟雾",
     "frequency": 8627,
     "rank": 2302
@@ -9030,8 +9030,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "falso",
     "dictionary": "adjective cosa o persona che non dice o tace il vero supposizione non vera di fatti o di princìpi fa",
-    "english": "false; fake (2)",
-    "chinese": "虚假; 伪造(2)",
+    "english": "false; fake",
+    "chinese": "虚假; 伪造",
     "frequency": 8585,
     "rank": 2314
   },
@@ -9094,8 +9094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "totale",
     "dictionary": "adjective del \"tutto\" esaustivo absolute complete total utter",
-    "english": "total; Total (2)",
-    "chinese": "共计; 共计(2)",
+    "english": "total",
+    "chinese": "共计",
     "frequency": 8481,
     "rank": 2328
   },
@@ -9134,7 +9134,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "superiore",
     "dictionary": "adjective più grande above higher upper",
-    "english": "upper; (2)",
+    "english": "upper",
     "chinese": "上层; (二)",
     "frequency": 8397,
     "rank": 2351
@@ -9142,8 +9142,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "volare",
     "dictionary": "adjective (anatomia) Termine comparativo riferito all'estremità distale degli arti, indica una strut",
-    "english": "fly; fly (2)",
-    "chinese": "飞; 飞行(2)",
+    "english": "fly",
+    "chinese": "飞; 飞行",
     "frequency": 8363,
     "rank": 2354
   },
@@ -9174,8 +9174,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ospite",
     "dictionary": "adjective che ospita o, più correttamente, che viene ospitato host",
-    "english": "guest; Guest (2)",
-    "chinese": "来宾; 来宾(2)",
+    "english": "guest",
+    "chinese": "来宾",
     "frequency": 8330,
     "rank": 2361
   },
@@ -9206,7 +9206,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "amato",
     "dictionary": "adjective che è oggetto di amore beloved",
-    "english": "beloved; (2)",
+    "english": "beloved",
     "chinese": "亲爱的; (二)",
     "frequency": 8293,
     "rank": 2371
@@ -9238,8 +9238,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "licenziato",
     "dictionary": "adjective che è stato mandato via discharged dismissed",
-    "english": "fired; dismissed (2)",
-    "chinese": "发射; 开除(2)",
+    "english": "fired; dismissed",
+    "chinese": "发射; 开除",
     "frequency": 8252,
     "rank": 2382
   },
@@ -9326,8 +9326,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cinese",
     "dictionary": "adjective originario della Cina; caratteristico della Cina Chinese",
-    "english": "Chinese; China (2)",
-    "chinese": "中国语; 中国(2)",
+    "english": "Chinese; China",
+    "chinese": "中国语; 中国",
     "frequency": 8161,
     "rank": 2410
   },
@@ -9390,7 +9390,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scrivania",
     "dictionary": "noun desk",
-    "english": "desk desk desk",
+    "english": "desk",
     "chinese": "服务台",
     "frequency": 8093,
     "rank": 2427
@@ -9422,7 +9422,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "traffico",
     "dictionary": "noun (diritto) (economia) (commercio) (finanza) commercio di beni specie se illeciti t",
-    "english": "traffic traffic",
+    "english": "traffic",
     "chinese": "交通",
     "frequency": 8049,
     "rank": 2436
@@ -9462,8 +9462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "motore",
     "dictionary": "adjective in grado di procurare un moto un movimento da cui deriva driving motor",
-    "english": "engine; engine (2)",
-    "chinese": "引擎; 发动机(2)",
+    "english": "engine",
+    "chinese": "引擎; 发动机",
     "frequency": 7973,
     "rank": 2450
   },
@@ -9502,15 +9502,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "piatto",
     "dictionary": "adjective (geografia) di terreno uniforme che è privo di rilievi flat linear straight",
-    "english": "dish; flat (2)",
-    "chinese": "盘子; 平面(2)",
+    "english": "dish; flat",
+    "chinese": "盘子; 平面",
     "frequency": 7928,
     "rank": 2464
   },
   {
     "italian": "folle",
     "dictionary": "adjective (psicologia) (medicina) (psichiatria) (psicanalisi) che si comporta con sventatezza (dirit",
-    "english": "Crazy; (2)",
+    "english": "Crazy",
     "chinese": "疯了; (二)",
     "frequency": 7927,
     "rank": 2465
@@ -9542,7 +9542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "virus",
     "dictionary": "noun (biologia) (medicina) agente infettivo con carattere di parassita obbligato, che può",
-    "english": "virus virus virus",
+    "english": "virus",
     "chinese": "艾滋病毒/艾滋病",
     "frequency": 7901,
     "rank": 2471
@@ -9566,8 +9566,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "calcio",
     "dictionary": "noun (chimica) elemento chimico solido di colore bianco argenteo, facente parte del gruppo dei metal",
-    "english": "football; football (2)",
-    "chinese": "橄榄球; 足球(2)",
+    "english": "football",
+    "chinese": "橄榄球; 足球",
     "frequency": 7835,
     "rank": 2487
   },
@@ -9606,7 +9606,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pioggia",
     "dictionary": "noun (meteorologia) precipitazione atmosferica che consiste in gocce separate d'acqua",
-    "english": "rain rain",
+    "english": "rain",
     "chinese": "风雨",
     "frequency": 7785,
     "rank": 2500
@@ -9622,7 +9622,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "taglia",
     "dictionary": "noun (metrologia) (abbigliamento) misura di un capo di vestiario; build height ransom siz",
-    "english": "size size",
+    "english": "size",
     "chinese": "大小",
     "frequency": 7747,
     "rank": 2504
@@ -9630,7 +9630,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pietra",
     "dictionary": "noun (geologia) insieme di pietre, roccia pezzo di roccia stone rock",
-    "english": "stone stone",
+    "english": "stone",
     "chinese": "石块",
     "frequency": 7732,
     "rank": 2507
@@ -9646,7 +9646,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sito",
     "dictionary": "adjective posto, locato located situated",
-    "english": "website; (2)",
+    "english": "website",
     "chinese": "网站; (二)",
     "frequency": 7731,
     "rank": 2509
@@ -9670,7 +9670,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "camicia",
     "dictionary": "noun (abbigliamento) capo d'abbigliamento di stoffa che copre il busto, con bottoni su",
-    "english": "Shirt shirt",
+    "english": "Shirt",
     "chinese": "衬衫",
     "frequency": 7720,
     "rank": 2514
@@ -9742,24 +9742,24 @@ const VOCABULARY_DATA = [
   {
     "italian": "spazzatura",
     "dictionary": "adjective aggettivo trash",
-    "english": "garbage; trash (2)",
-    "chinese": "垃圾; 垃圾 (2)",
+    "english": "garbage; trash",
+    "chinese": "垃圾",
     "frequency": 7638,
     "rank": 2532
   },
   {
     "italian": "divorzio",
     "dictionary": "noun (sessualità) (diritto) istituto legislativo che decreta la fine di un matrimonio",
-    "english": "divorce divorce divorce",
-    "chinese": "离婚 离婚",
+    "english": "divorce",
+    "chinese": "离婚",
     "frequency": 7631,
     "rank": 2533
   },
   {
     "italian": "tagliato",
     "dictionary": "adjective che ha avuto un taglio shortened (araldica) attributo araldico che si applica a uno scudo,",
-    "english": "cut; sliced; Cut (2)",
-    "chinese": "切好的；切片的; 切(2)",
+    "english": "cut; sliced",
+    "chinese": "切好的；切片的; 切",
     "frequency": 7626,
     "rank": 2535
   },
@@ -9782,7 +9782,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "volto",
     "dictionary": "adjective (araldica) attributo araldico che si applica a: three-quarter face",
-    "english": "face face; (2)",
+    "english": "face",
     "chinese": "脸庞; (二)",
     "frequency": 7600,
     "rank": 2541
@@ -9822,15 +9822,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "team",
     "dictionary": "noun team",
-    "english": "team team",
-    "chinese": "团队团队",
+    "english": "team",
+    "chinese": "团队",
     "frequency": 7592,
     "rank": 2548
   },
   {
     "italian": "soccorso",
     "dictionary": "adjective (medicina) (per estensione) aid helped help rescue saved",
-    "english": "Help; (2)",
+    "english": "Help",
     "chinese": "帮助; (二)",
     "frequency": 7574,
     "rank": 2553
@@ -9862,8 +9862,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "panico",
     "dictionary": "adjective (mitologia) riguardante Pan, divinità agreste della mitologia greca Panic (letterario) ine",
-    "english": "panic; panic (2)",
-    "chinese": "恐慌; 恐慌(2)",
+    "english": "panic",
+    "chinese": "恐慌",
     "frequency": 7570,
     "rank": 2557
   },
@@ -9910,7 +9910,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "carica",
     "dictionary": "noun office (per estensione) investitura tackle",
-    "english": "charge charge",
+    "english": "charge",
     "chinese": "收费",
     "frequency": 7532,
     "rank": 2568
@@ -9958,7 +9958,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "costretto",
     "dictionary": "adjective (per estensione) che ha qualche impedimento, materiale o psicologico compel",
-    "english": "forced forced",
+    "english": "forced",
     "chinese": "强迫",
     "frequency": 7518,
     "rank": 2575
@@ -9966,7 +9966,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "limite",
     "dictionary": "noun boundary",
-    "english": "limit limit",
+    "english": "limit",
     "chinese": "限制",
     "frequency": 7506,
     "rank": 2578
@@ -9998,8 +9998,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bugiardo",
     "dictionary": "adjective che non dice la verità che si comporta come un \" Lorenzini\" deceitful false che tenta di c",
-    "english": "liar!; Liar (2)",
-    "chinese": "骗子!; 骗子(2)",
+    "english": "liar!; Liar",
+    "chinese": "骗子!; 骗子",
     "frequency": 7469,
     "rank": 2588
   },
@@ -10038,7 +10038,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "custodia",
     "dictionary": "noun protection contenitore fatto per custodire o difendere cose di pregio o facili a",
-    "english": "case case",
+    "english": "case",
     "chinese": "个案",
     "frequency": 7434,
     "rank": 2598
@@ -10070,7 +10070,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "terreno",
     "dictionary": "adjective collocato a livello della strada Boden ground ground-level",
-    "english": "land; (2)",
+    "english": "land",
     "chinese": "土地; (二)",
     "frequency": 7404,
     "rank": 2607
@@ -10094,8 +10094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "gelato",
     "dictionary": "adjective che si è trasformato in ghiaccio frozen icy very cold",
-    "english": "ice cream; Ice cream (2)",
-    "chinese": "冰激凌; 冰淇淋(2)",
+    "english": "ice cream",
+    "chinese": "冰激凌; 冰淇淋",
     "frequency": 7342,
     "rank": 2620
   },
@@ -10110,7 +10110,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "lentamente",
     "dictionary": "adverb slowly",
-    "english": "slowly slowly",
+    "english": "slowly",
     "chinese": "慢慢来",
     "frequency": 7335,
     "rank": 2623
@@ -10238,7 +10238,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pari",
     "dictionary": "adjective (matematica) (di) numero divisibile per 2 even",
-    "english": "parities; (2)",
+    "english": "parities",
     "chinese": "平价; (二)",
     "frequency": 7230,
     "rank": 2652
@@ -10278,7 +10278,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "volere",
     "dictionary": "noun intento, determinazione will",
-    "english": "want; will; (2); (3)",
+    "english": "want; will",
     "chinese": "想要；意愿; (二); (三) 国家",
     "frequency": 7196,
     "rank": 2664
@@ -10294,8 +10294,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "rapina",
     "dictionary": "noun mugging raid robbery",
-    "english": "robbery robbery",
-    "chinese": "抢劫抢劫",
+    "english": "robbery",
+    "chinese": "抢劫",
     "frequency": 7176,
     "rank": 2669
   },
@@ -10358,7 +10358,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "abito",
     "dictionary": "noun (abbigliamento) (tessile) (tecnologia) indumento da indossare sopra la biancheria in",
-    "english": "dress dress",
+    "english": "dress",
     "chinese": "穿着礼服",
     "frequency": 7114,
     "rank": 2686
@@ -10374,7 +10374,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "uguale",
     "dictionary": "adjective pari, compagno, della stessa forma, dimensione, altezza, grossezza, quantità, lunghezza, s",
-    "english": "Other; (2)",
+    "english": "Other",
     "chinese": "其他人员; (二)",
     "frequency": 7112,
     "rank": 2688
@@ -10382,7 +10382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ginocchio",
     "dictionary": "noun (anatomia) (medicina) parte dell'arto inferiore, corrispondente all'articolazio",
-    "english": "Knee Knee",
+    "english": "Knee",
     "chinese": "膝盖",
     "frequency": 7095,
     "rank": 2692
@@ -10398,8 +10398,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "familiare",
     "dictionary": "adjective che riguarda la famiglia station wagon che è semplice e cordiale, tale da evocare sentimen",
-    "english": "Family; Family (2); family (3)",
-    "chinese": "家庭; 家庭(2); 家庭(3)",
+    "english": "Family",
+    "chinese": "家庭",
     "frequency": 7088,
     "rank": 2697
   },
@@ -10542,16 +10542,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "morale",
     "dictionary": "adjective che è relativo al comportamento ed al giudizio che ognuno stabilisce tra ciò che è bene e ",
-    "english": "morality; moral (2)",
-    "chinese": "道德; 道德(2)",
+    "english": "morality; moral",
+    "chinese": "道德",
     "frequency": 6977,
     "rank": 2739
   },
   {
     "italian": "fallito",
     "dictionary": "adjective che non è riuscito good-for-nothing loser missed unsuccessful (diritto) che ha subito una ",
-    "english": "failed; failed (2)",
-    "chinese": "失败; 失败(2)",
+    "english": "failed",
+    "chinese": "失败",
     "frequency": 6968,
     "rank": 2743
   },
@@ -10566,7 +10566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "esperto",
     "dictionary": "adjective che ha conoscenze specifiche in un ben delineato settore expert capable experienced season",
-    "english": "expert expert; (2)",
+    "english": "expert",
     "chinese": "专家; (二)",
     "frequency": 6957,
     "rank": 2746
@@ -10638,7 +10638,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tasca",
     "dictionary": "noun pocket",
-    "english": "pocket pocket",
+    "english": "pocket",
     "chinese": "口袋",
     "frequency": 6905,
     "rank": 2762
@@ -10678,8 +10678,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "eccellente",
     "dictionary": "adjective che eccelle delicious excellent eminent exquisite fantastic first-class",
-    "english": "excellent; Excellent (2)",
-    "chinese": "不错; 不错(2)",
+    "english": "excellent",
+    "chinese": "不错",
     "frequency": 6879,
     "rank": 2774
   },
@@ -10710,7 +10710,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "riposo",
     "dictionary": "noun repose break rest",
-    "english": "rest rest",
+    "english": "rest",
     "chinese": "请休息",
     "frequency": 6844,
     "rank": 2787
@@ -10718,8 +10718,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "esterno",
     "dictionary": "adjective che è all'aperto che è intorno external outer outside",
-    "english": "exterior; exterior (2)",
-    "chinese": "外部; 外部(2)",
+    "english": "exterior",
+    "chinese": "外部",
     "frequency": 6834,
     "rank": 2790
   },
@@ -10766,7 +10766,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "firma",
     "dictionary": "noun scrittura olografa del proprio nome e cognome signature signing",
-    "english": "signature signature",
+    "english": "signature",
     "chinese": "签名",
     "frequency": 6780,
     "rank": 2805
@@ -10782,8 +10782,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "furto",
     "dictionary": "noun (diritto) l'atto di rubare qualcosa theft",
-    "english": "theft theft theft",
-    "chinese": "盗窃 盗窃",
+    "english": "theft",
+    "chinese": "盗窃",
     "frequency": 6772,
     "rank": 2810
   },
@@ -10822,8 +10822,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "mostrare",
     "dictionary": "verb show",
-    "english": "show show",
-    "chinese": "显示显示",
+    "english": "show",
+    "chinese": "显示",
     "frequency": 6731,
     "rank": 2822
   },
@@ -10838,7 +10838,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "materiale",
     "dictionary": "adjective (per estensione) (senso figurato) (spregiativo) che riguarda la materialità, quanto è cost",
-    "english": "material; (2)",
+    "english": "material",
     "chinese": "材料; (二)",
     "frequency": 6719,
     "rank": 2825
@@ -10846,7 +10846,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "superato",
     "dictionary": "adjective sorpassato, obsoleto obsolete old old-fashioned out-of-date outdated outmode",
-    "english": "exceeded exceeded exceeded",
+    "english": "exceeded",
     "chinese": "超过",
     "frequency": 6705,
     "rank": 2828
@@ -10894,7 +10894,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "leader",
     "dictionary": "noun (politica) capo di un partito politico leader",
-    "english": "leader leader",
+    "english": "leader",
     "chinese": "领导人",
     "frequency": 6659,
     "rank": 2842
@@ -10942,8 +10942,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "costume",
     "dictionary": "noun (antropologia), (etnologia) morale comune (diritto) costume swimsuit complesso di",
-    "english": "costume costume",
-    "chinese": "服装服装",
+    "english": "costume",
+    "chinese": "服装",
     "frequency": 6619,
     "rank": 2857
   },
@@ -11038,8 +11038,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tunnel",
     "dictionary": "noun (forestierismo) (ingegneria) passaggio sotterraneo tunnel",
-    "english": "tunnel tunnel",
-    "chinese": "隧道隧道",
+    "english": "tunnel",
+    "chinese": "隧道",
     "frequency": 6534,
     "rank": 2886
   },
@@ -11054,7 +11054,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "foresta",
     "dictionary": "noun (geografia) (botanica) vasta zona incolta, dove la vegetazione, ed in particolare",
-    "english": "forest forest",
+    "english": "forest",
     "chinese": "森林",
     "frequency": 6530,
     "rank": 2891
@@ -11102,7 +11102,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "trattato",
     "dictionary": "adjective di materia sottoposta ad una specifica lavorazione processed treatise",
-    "english": "Treaty; (2)",
+    "english": "Treaty",
     "chinese": "条约; (二)",
     "frequency": 6473,
     "rank": 2904
@@ -11110,8 +11110,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fabbrica",
     "dictionary": "noun (economia) (architettura) edificio munito di operai e macchinari per la produzion",
-    "english": "factory factory factory",
-    "chinese": "工厂工厂",
+    "english": "factory",
+    "chinese": "工厂",
     "frequency": 6465,
     "rank": 2909
   },
@@ -11126,8 +11126,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cieco",
     "dictionary": "adjective (medicina) non vedente, che non possiede la vista. (senso figurato) che non ragiona. (per ",
-    "english": "blind blind; blind (2)",
-    "chinese": "盲点; 盲人(2)",
+    "english": "blind",
+    "chinese": "盲点; 盲人",
     "frequency": 6459,
     "rank": 2911
   },
@@ -11182,7 +11182,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sufficiente",
     "dictionary": "adjective che è adeguato per numero, misura o qualità ad un dato scopo, senza tuttavia eccedere di m",
-    "english": "sufficient; (2)",
+    "english": "sufficient",
     "chinese": "足够; (二)",
     "frequency": 6419,
     "rank": 2926
@@ -11214,7 +11214,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pene",
     "dictionary": "noun (anatomia) organo esterno riproduttivo maschile del corpo animale e umano (in questo",
-    "english": "Penis Penis",
+    "english": "Penis",
     "chinese": "阴茎",
     "frequency": 6415,
     "rank": 2932
@@ -11223,7 +11223,7 @@ const VOCABULARY_DATA = [
     "italian": "amare",
     "dictionary": "verb (sessualità), (sociologia), (psicologia) provare forte attrazione emotiva e fisica n",
     "english": "love to love",
-    "chinese": "爱爱爱",
+    "chinese": "爱",
     "frequency": 6415,
     "rank": 2933
   },
@@ -11350,7 +11350,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "segreta",
     "dictionary": "noun (storia) (architettura) in alcune prigioni del passato, cella sotterranea senza fi",
-    "english": "Secret secret",
+    "english": "Secret",
     "chinese": "秘诀",
     "frequency": 6312,
     "rank": 2976
@@ -11478,7 +11478,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "corda",
     "dictionary": "noun (tessile) filo, o oggetto filiforme, realizzato in fibra organica o materiale sintet",
-    "english": "rope rope",
+    "english": "rope",
     "chinese": "绳子绳",
     "frequency": 6213,
     "rank": 3009
@@ -11526,7 +11526,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "disposto",
     "dictionary": "adjective detto di persona pronta a fare qualcosa willing",
-    "english": "Article; (2)",
+    "english": "Article",
     "chinese": "条款; (二)",
     "frequency": 6168,
     "rank": 3027
@@ -11590,8 +11590,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "accusato",
     "dictionary": "adjective (diritto) che è soggetto ad un'accusa che è reputato colpevole di qualche colpa accused",
-    "english": "accused; accused (2)",
-    "chinese": "被告; 被告(2)",
+    "english": "accused",
+    "chinese": "被告",
     "frequency": 6133,
     "rank": 3044
   },
@@ -11606,7 +11606,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "specchio",
     "dictionary": "noun superficie abbastanza lucida da permettere la riflessione di immagini. Solitamente",
-    "english": "mirror mirror",
+    "english": "mirror",
     "chinese": "镜像",
     "frequency": 6127,
     "rank": 3047
@@ -11662,7 +11662,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fico",
     "dictionary": "adjective (gergale) (popolare) molto bello, alla moda, di successo cool",
-    "english": "fig; (2)",
+    "english": "fig",
     "chinese": "无花果; (二)",
     "frequency": 6091,
     "rank": 3066
@@ -11710,7 +11710,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "distretto",
     "dictionary": "noun (politica) (militare) (diritto) suddivisione del territorio per scopi amministrativi, giudiziar",
-    "english": "district district",
+    "english": "district",
     "chinese": "县级行政区",
     "frequency": 6074,
     "rank": 3074
@@ -11734,7 +11734,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "inviato",
     "dictionary": "adjective che è spedito in un luogo in rappresentanza di un potere costituito generalmente con un in",
-    "english": "sent en route; (2)",
+    "english": "sent en route",
     "chinese": "在途中发送; (二)",
     "frequency": 6058,
     "rank": 3079
@@ -11742,7 +11742,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "illegale",
     "dictionary": "adjective (diritto) che non è ammesso dalla legge criminal illegal illicit unlawful",
-    "english": "illegal illegal illegal",
+    "english": "illegal",
     "chinese": "非法、非法和",
     "frequency": 6053,
     "rank": 3082
@@ -11870,8 +11870,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "veleno",
     "dictionary": "noun poison (chimica) (medicina) (farmacologia) sostanza tossica e letale per un organis",
-    "english": "poison poison poison",
-    "chinese": "毒药毒药",
+    "english": "poison",
+    "chinese": "毒药",
     "frequency": 5942,
     "rank": 3129
   },
@@ -11902,7 +11902,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "salvo",
     "dictionary": "adjective salvato, messo al sicuro save",
-    "english": "Save; (2)",
+    "english": "Save",
     "chinese": "保存; (二)",
     "frequency": 5921,
     "rank": 3139
@@ -11918,7 +11918,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "legato",
     "dictionary": "adjective (araldica) attributo araldico che si applica a corni, mazze d'armi, chiavi papali, scudi, ",
-    "english": "alloy; (2)",
+    "english": "alloy",
     "chinese": "合金; (二)",
     "frequency": 5910,
     "rank": 3144
@@ -11942,8 +11942,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "inverno",
     "dictionary": "noun (astronomia) l'ultima stagione dell'anno, compresa fra il 22 dicembre e il 20 marz",
-    "english": "winter winter",
-    "chinese": "冬季 冬季",
+    "english": "winter",
+    "chinese": "冬季",
     "frequency": 5899,
     "rank": 3151
   },
@@ -11998,7 +11998,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "civile",
     "dictionary": "adjective (militare) che non appartiene a o non riguarda l'esercito o comunque le forze armate milit",
-    "english": "civil servants; (2)",
+    "english": "civil servants",
     "chinese": "公务员; (二)",
     "frequency": 5867,
     "rank": 3163
@@ -12030,7 +12030,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "grasso",
     "dictionary": "noun (tecnica) sostanza molto viscosa in grado di abbassare l'attrito di superfici sulle",
-    "english": "fat fat",
+    "english": "fat",
     "chinese": "脂肪",
     "frequency": 5853,
     "rank": 3172
@@ -12078,16 +12078,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "riso",
     "dictionary": "noun (botanica) cariosside di una pianta dallo stesso nome, costituito da chicchi bianchi, duri e ri",
-    "english": "Rice; Rice (2)",
-    "chinese": "稻米; 水稻(2)",
+    "english": "Rice",
+    "chinese": "稻米; 水稻",
     "frequency": 5830,
     "rank": 3187
   },
   {
     "italian": "russo",
     "dictionary": "adjective (geografia) della Russia Russian",
-    "english": "Russian; Russian (2); Russian (3)",
-    "chinese": "俄罗斯联邦; 俄语(2); 俄语(3)",
+    "english": "Russian",
+    "chinese": "俄罗斯联邦; 俄语",
     "frequency": 5828,
     "rank": 3188
   },
@@ -12150,7 +12150,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "resistenza",
     "dictionary": "noun (fisica) (meccanica) proprietà di un corpo di non subire rottura sotto sforzo",
-    "english": "resistance resistance",
+    "english": "resistance",
     "chinese": "抵制",
     "frequency": 5783,
     "rank": 3210
@@ -12214,7 +12214,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "stretto",
     "dictionary": "adjective di dimensioni limitate in larghezza narrow tight premuto o afferrato con forza tight (di p",
-    "english": "narrow; (2)",
+    "english": "narrow",
     "chinese": "缩窄; (二)",
     "frequency": 5767,
     "rank": 3219
@@ -12254,8 +12254,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "porno",
     "dictionary": "adjective abbreviazione di pornografico porn porno",
-    "english": "porn porn; porn (2)",
-    "chinese": "色情电影; 色情制品(2)",
+    "english": "porn",
+    "chinese": "色情电影; 色情制品",
     "frequency": 5736,
     "rank": 3230
   },
@@ -12326,8 +12326,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "deserto",
     "dictionary": "adjective che è luogo desolato o spopolato (letterario) desert",
-    "english": "desert desert; Desert (2)",
-    "chinese": "沙漠; 沙漠(2)",
+    "english": "desert",
+    "chinese": "沙漠",
     "frequency": 5672,
     "rank": 3258
   },
@@ -12383,7 +12383,7 @@ const VOCABULARY_DATA = [
     "italian": "zombie",
     "dictionary": "noun zombie",
     "english": "zombie",
-    "chinese": "僵尸 僵尸 僵尸 僵尸",
+    "chinese": "僵尸",
     "frequency": 5622,
     "rank": 3280
   },
@@ -12406,7 +12406,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "quadro",
     "dictionary": "adjective (matematica) numero elevato alla seconda potenza: x^2 si legge \"x quadro\" o anche \"x quadr",
-    "english": "framework; (2)",
+    "english": "framework",
     "chinese": "框架; (二)",
     "frequency": 5586,
     "rank": 3288
@@ -12494,7 +12494,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "professionista",
     "dictionary": "noun (sport) chi esercita una professione sportiva a tempo pieno ed è perciò rem",
-    "english": "professional professional",
+    "english": "professional",
     "chinese": "专业",
     "frequency": 5519,
     "rank": 3316
@@ -12502,8 +12502,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "Cina",
     "dictionary": "pronoun (toponimo) (geografia) stato dell'Asia orientale; è il più popoloso del mondo e",
-    "english": "China China China",
-    "chinese": "中国 中国 中国",
+    "english": "China",
+    "chinese": "中国",
     "frequency": 5507,
     "rank": 3323
   },
@@ -12558,16 +12558,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "gigante",
     "dictionary": "adjective che è fuori dalla normalità giant gigantic colossal enormous huge",
-    "english": "giant giant; giant (2)",
-    "chinese": "大块头; 巨型(2)",
+    "english": "giant",
+    "chinese": "大块头; 巨型",
     "frequency": 5464,
     "rank": 3339
   },
   {
     "italian": "negativo",
     "dictionary": "adjective (senso figurato) che non accetta talune verità e/o vi è contrario in modo palese; che prov",
-    "english": "negative; negative (2)",
-    "chinese": "负数; 负(2)",
+    "english": "negative",
+    "chinese": "负数; 负",
     "frequency": 5453,
     "rank": 3341
   },
@@ -12590,8 +12590,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "penna",
     "dictionary": "noun (zoologia), (ornitologia) appendice modulare, leggera e fibrosa, che copre il corpo",
-    "english": "pen pen pen",
-    "chinese": "笔笔",
+    "english": "pen",
+    "chinese": "笔",
     "frequency": 5443,
     "rank": 3345
   },
@@ -12606,7 +12606,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "condizione",
     "dictionary": "noun (filosofia) (diritto) circostanza da cui dipende l'avverarsi di una situazione",
-    "english": "condition condition",
+    "english": "condition",
     "chinese": "条件",
     "frequency": 5429,
     "rank": 3354
@@ -12654,7 +12654,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "corretto",
     "dictionary": "adjective (gergale) di liquore che è aggiunto soprattutto nel caffè laced (per estensi",
-    "english": "correct correct correct",
+    "english": "correct",
     "chinese": "正确无误",
     "frequency": 5389,
     "rank": 3380
@@ -12686,7 +12686,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "splendido",
     "dictionary": "adjective (fisica) che ha luminosità molto intensa bright splendid beautiful brilliant gorgeous magn",
-    "english": "beautiful; (2)",
+    "english": "beautiful",
     "chinese": "美丽; (二)",
     "frequency": 5361,
     "rank": 3390
@@ -12726,8 +12726,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "velocità",
     "dictionary": "noun (fisica) (meccanica) modalità di moto, movimento, talvolta di prestazione, capa",
-    "english": "speed speed speed",
-    "chinese": "速度 速度",
+    "english": "speed",
+    "chinese": "速度",
     "frequency": 5325,
     "rank": 3408
   },
@@ -12766,7 +12766,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "saggio",
     "dictionary": "adjective (di persona) fornito di accortezza ed esperienza knowledgeable wise (di oggetto)) caratter",
-    "english": "essay; (2)",
+    "english": "essay",
     "chinese": "论文; (二)",
     "frequency": 5304,
     "rank": 3419
@@ -12790,8 +12790,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "romantico",
     "dictionary": "adjective che riguarda atteggiamenti dominati da sentimenti, passioni e sogni romantic sentimental",
-    "english": "Romantic; Romantic (2)",
-    "chinese": "浪漫主义; 浪漫主义(2)",
+    "english": "Romantic",
+    "chinese": "浪漫主义",
     "frequency": 5298,
     "rank": 3425
   },
@@ -12838,7 +12838,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "prigioniero",
     "dictionary": "adjective di individuo che, serrato in un luogo angusto, è senza libertà, è nelle mani di altre pers",
-    "english": "prisoner; (2)",
+    "english": "prisoner",
     "chinese": "囚犯; (二)",
     "frequency": 5283,
     "rank": 3433
@@ -12894,15 +12894,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "buffo",
     "dictionary": "adjective impacciato, che ispira ironia comical droll funny",
-    "english": "Funny; funny (2)",
-    "chinese": "真有趣 , 开玩笑; 风趣(2)",
+    "english": "Funny",
+    "chinese": "真有趣 , 开玩笑; 风趣",
     "frequency": 5248,
     "rank": 3450
   },
   {
     "italian": "tenuta",
     "dictionary": "adjective femminile di tenuto endurance residence",
-    "english": "sealing; (2)",
+    "english": "sealing",
     "chinese": "密封; (二)",
     "frequency": 5246,
     "rank": 3451
@@ -13038,7 +13038,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Pesci",
     "dictionary": "pronoun (astronomia) costellazione dello zodiaco Pisces Fishes",
-    "english": "Fish; fish",
+    "english": "Fish",
     "chinese": "鱼",
     "frequency": 5159,
     "rank": 3496
@@ -13078,7 +13078,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bruciato",
     "dictionary": "adjective che è stato sottoposto all'azione del fuoco barren burned burnt frostbitten parched scorch",
-    "english": "burned down; (2)",
+    "english": "burned down",
     "chinese": "烧了; (二)",
     "frequency": 5148,
     "rank": 3504
@@ -13111,7 +13111,7 @@ const VOCABULARY_DATA = [
     "italian": "vasca",
     "dictionary": "noun tank vat bathtub",
     "english": "Bath tub",
-    "chinese": "浴缸 浴缸",
+    "chinese": "浴缸",
     "frequency": 5134,
     "rank": 3515
   },
@@ -13150,8 +13150,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "coraggioso",
     "dictionary": "adjective che ha coraggio, che denota coraggio, ma non è imprudente bold brave courageous daring val",
-    "english": "courageous; Brave (2)",
-    "chinese": "勇敢一点; 勇敢的(2)",
+    "english": "courageous; Brave",
+    "chinese": "勇敢一点; 勇敢的",
     "frequency": 5114,
     "rank": 3528
   },
@@ -13166,7 +13166,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "potenza",
     "dictionary": "noun (matematica) il prodotto di un numero, detto base, moltiplicato per se stesso tan",
-    "english": "power power",
+    "english": "power",
     "chinese": "电力",
     "frequency": 5099,
     "rank": 3534
@@ -13190,8 +13190,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "uniforme",
     "dictionary": "adjective privo di differenze (fisica) (meccanica) (di) moto di un punto la cui velocità scalare è c",
-    "english": "uniform; uniform (2)",
-    "chinese": "制服; 制服(2)",
+    "english": "uniform",
+    "chinese": "制服",
     "frequency": 5088,
     "rank": 3538
   },
@@ -13222,8 +13222,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "salutare",
     "dictionary": "adjective che fa bene al proprio benessere bracing healthy salubrious wholesome",
-    "english": "Say hello; Healthy (2)",
-    "chinese": "打个招呼; 健康(2)",
+    "english": "Say hello; Healthy",
+    "chinese": "打个招呼; 健康",
     "frequency": 5056,
     "rank": 3552
   },
@@ -13246,8 +13246,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "argento",
     "dictionary": "noun (chimica) (mineralogia) (metallurgia) elemento chimico solido, di aspetto bianco",
-    "english": "silver silver",
-    "chinese": "银色银色",
+    "english": "silver",
+    "chinese": "银色",
     "frequency": 5028,
     "rank": 3565
   },
@@ -13382,7 +13382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "novità",
     "dictionary": "noun item novelty insieme di cambiamenti apportati in una certa attività change evolutio",
-    "english": "news news",
+    "english": "news",
     "chinese": "新闻",
     "frequency": 4983,
     "rank": 3598
@@ -13391,7 +13391,7 @@ const VOCABULARY_DATA = [
     "italian": "vampiro",
     "dictionary": "noun (mammalogia) pipistrello diffuso nell'America centrale e nel sud (mitologia) nella",
     "english": "vampire",
-    "chinese": "吸血鬼 吸血鬼 吸血鬼 吸血鬼 吸血鬼",
+    "chinese": "吸血鬼",
     "frequency": 4982,
     "rank": 3599
   },
@@ -13486,7 +13486,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "massa",
     "dictionary": "noun (fisica) (meccanica) quantità di materia, inerzia, peso, stazza heap load lot lots m",
-    "english": "mass mass",
+    "english": "mass",
     "chinese": "质量",
     "frequency": 4905,
     "rank": 3640
@@ -13494,7 +13494,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cintura",
     "dictionary": "noun belt",
-    "english": "belt belt",
+    "english": "belt",
     "chinese": "腰带",
     "frequency": 4898,
     "rank": 3643
@@ -13502,8 +13502,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "traditore",
     "dictionary": "adjective che tradisce treacherous unfaithful",
-    "english": "traitor; traitor (2)",
-    "chinese": "卖国贼; 叛徒(2)",
+    "english": "traitor",
+    "chinese": "卖国贼; 叛徒",
     "frequency": 4896,
     "rank": 3645
   },
@@ -13518,7 +13518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cavo",
     "dictionary": "noun (elettrotecnica) (elettronica) (tecnologia) (ingegneria) conduttore o insieme di cond",
-    "english": "cable cable",
+    "english": "cable",
     "chinese": "有线电缆",
     "frequency": 4877,
     "rank": 3653
@@ -13622,7 +13622,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fisico",
     "dictionary": "adjective (matematica) (fisica) relativo alla disciplina della fisica physicist (biologia) (anatomia",
-    "english": "physical body; (2)",
+    "english": "physical body",
     "chinese": "身体状况; (二)",
     "frequency": 4842,
     "rank": 3673
@@ -13646,7 +13646,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "veicolo",
     "dictionary": "noun (meccanica) mezzo usato per la circolazione, generalmente su strada, con un motore",
-    "english": "vehicle vehicle",
+    "english": "vehicle",
     "chinese": "车辆",
     "frequency": 4839,
     "rank": 3679
@@ -13654,7 +13654,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "raccolto",
     "dictionary": "adjective messo insieme harvest crop gathered di individuo con gli arti attaccati al tronco harvest ",
-    "english": "crop harvest; (2)",
+    "english": "crop harvest",
     "chinese": "作物收成; (二)",
     "frequency": 4839,
     "rank": 3680
@@ -13678,8 +13678,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "Vergine",
     "dictionary": "pronoun costellazione dello zodiaco Virgo",
-    "english": "Virgin Mary; Virgin; Virgin (2)",
-    "chinese": "圣母玛利亚; 处女; 处女(2)",
+    "english": "Virgin Mary; Virgin",
+    "chinese": "圣母玛利亚; 处女",
     "frequency": 4837,
     "rank": 3685
   },
@@ -13718,7 +13718,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "largo",
     "dictionary": "adjective che si estende wide broad che ha una certa larghezza wide make one’s way through push one’",
-    "english": "wide; (2)",
+    "english": "wide",
     "chinese": "宽; (二)",
     "frequency": 4822,
     "rank": 3698
@@ -13726,8 +13726,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "adulto",
     "dictionary": "adjective (biologia) di essere vivente che ha raggiunto la piena capacità riproduttiva (sociologia) ",
-    "english": "Adult; Adult (2)",
-    "chinese": "成人; 成人(2)",
+    "english": "Adult",
+    "chinese": "成人",
     "frequency": 4820,
     "rank": 3700
   },
@@ -13742,16 +13742,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "gabbia",
     "dictionary": "noun piccola struttura generalmente in ferro atta a imprigionare una persona o un animal",
-    "english": "cage cage",
-    "chinese": "笼盖笼盖",
+    "english": "cage",
+    "chinese": "笼盖",
     "frequency": 4810,
     "rank": 3706
   },
   {
     "italian": "avventura",
     "dictionary": "noun impresa piena di rischi ed imprevisti adventure",
-    "english": "adventure adventure adventure",
-    "chinese": "冒险冒险",
+    "english": "adventure",
+    "chinese": "冒险",
     "frequency": 4804,
     "rank": 3710
   },
@@ -13790,7 +13790,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "appunto",
     "dictionary": "adverb (per precisar qualcosa) esattamente proprio challenge criticism exactly indeed objection prec",
-    "english": "note; (2)",
+    "english": "note",
     "chinese": "说明; (二)",
     "frequency": 4788,
     "rank": 3719
@@ -13862,16 +13862,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "giapponese",
     "dictionary": "adjective (geografia) relativo al Giappone Japanese Japan (gergale) (spregiativo) schematico, amante",
-    "english": "Japanese; Japanese (2)",
-    "chinese": "日语; 日语(2)",
+    "english": "Japanese",
+    "chinese": "日语",
     "frequency": 4759,
     "rank": 3741
   },
   {
     "italian": "spagnolo",
     "dictionary": "adjective (geografia) relativo alla Spagna Spanish (linguistica) relativo allo spagnolo (la lingua, ",
-    "english": "Spanish; Spanish (2); Spanish (3)",
-    "chinese": "西班牙语; 西班牙语(2); 西班牙语(3)",
+    "english": "Spanish",
+    "chinese": "西班牙语",
     "frequency": 4746,
     "rank": 3746
   },
@@ -13918,7 +13918,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "felicità",
     "dictionary": "noun (filosofia) (psicologia) stato di piena soddisfazione dei propri intenti deligh",
-    "english": "happiness happiness",
+    "english": "happiness",
     "chinese": "幸福快乐",
     "frequency": 4725,
     "rank": 3762
@@ -13926,7 +13926,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "album",
     "dictionary": "noun volume destinato alla raccolta di autografi-ricordo, cartoline, fotografie, francobo",
-    "english": "album album",
+    "english": "album",
     "chinese": "专辑",
     "frequency": 4724,
     "rank": 3764
@@ -14071,7 +14071,7 @@ const VOCABULARY_DATA = [
     "italian": "Barbara",
     "dictionary": "pronoun Barbara",
     "english": "Barbara; beard",
-    "chinese": "芭芭拉 芭芭拉 芭芭拉; 胡须",
+    "chinese": "芭芭拉; 胡须",
     "frequency": 4683,
     "rank": 3795
   },
@@ -14110,8 +14110,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "danza",
     "dictionary": "noun (arte) (musica) (danza) serie di movimenti del corpo successivi e ritmati, in gener",
-    "english": "dance dance dance",
-    "chinese": "舞蹈舞蹈",
+    "english": "dance",
+    "chinese": "舞蹈",
     "frequency": 4674,
     "rank": 3802
   },
@@ -14134,7 +14134,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cancello",
     "dictionary": "noun (architettura) (edilizia) (tecnologia) (ingegneria) chiusura a una o due ante c",
-    "english": "gate gate",
+    "english": "gate",
     "chinese": "大门",
     "frequency": 4667,
     "rank": 3806
@@ -14150,7 +14150,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "viaggiare",
     "dictionary": "verb travel journey tour andare in luoghi e paesi lontani, peregrinare, fare un viag",
-    "english": "travel travel",
+    "english": "travel",
     "chinese": "旅费",
     "frequency": 4660,
     "rank": 3811
@@ -14190,7 +14190,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Bibbia",
     "dictionary": "pronoun (per estensione) copia tipografica, singolo libro o edizione del testo sacro Bib",
-    "english": "Bible Bible; bible",
+    "english": "Bible",
     "chinese": "圣经",
     "frequency": 4645,
     "rank": 3821
@@ -14222,7 +14222,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "singolo",
     "dictionary": "noun (musica) brano musicale estratto da un album e messo in commercio a parte individu",
-    "english": "single single",
+    "english": "single",
     "chinese": "单身",
     "frequency": 4633,
     "rank": 3827
@@ -14254,7 +14254,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "burro",
     "dictionary": "noun (per estensione) materiali diversi dal burro di latte, ma simili per caratteristiche",
-    "english": "butter butter",
+    "english": "butter",
     "chinese": "黄油",
     "frequency": 4623,
     "rank": 3834
@@ -14270,8 +14270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "italiano",
     "dictionary": "adjective (geografia) pertinente alla Italia Italian",
-    "english": "Italian; Italian (2)",
-    "chinese": "意大利语Name; 意大利语(2)",
+    "english": "Italian",
+    "chinese": "意大利语Name; 意大利语",
     "frequency": 4622,
     "rank": 3836
   },
@@ -14334,8 +14334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sinistro",
     "dictionary": "adjective che è situato dal lato del cuore evil foreboding left left-hander malevolent menacing",
-    "english": "left; Left (2)",
-    "chinese": "左边; 左边(2)",
+    "english": "left",
+    "chinese": "左边",
     "frequency": 4593,
     "rank": 3853
   },
@@ -14350,7 +14350,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "calore",
     "dictionary": "noun (fisica) (chimica) forma di energia con la tendenza a trasferirsi da un corpo a te",
-    "english": "heat heat",
+    "english": "heat",
     "chinese": "热量",
     "frequency": 4589,
     "rank": 3857
@@ -14422,7 +14422,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fresco",
     "dictionary": "adjective cool fresh wet",
-    "english": "fresh fresh",
+    "english": "fresh",
     "chinese": "新鲜的",
     "frequency": 4538,
     "rank": 3886
@@ -14430,15 +14430,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "plastica",
     "dictionary": "noun plastic",
-    "english": "plastic plastic plastic",
-    "chinese": "塑料塑料",
+    "english": "plastic",
+    "chinese": "塑料",
     "frequency": 4525,
     "rank": 3896
   },
   {
     "italian": "dispositivo",
     "dictionary": "adjective che è diretto e indirizzato a stabilire qualcosa enacting",
-    "english": "device; (2)",
+    "english": "device",
     "chinese": "设备; (二)",
     "frequency": 4522,
     "rank": 3898
@@ -14478,8 +14478,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tocco",
     "dictionary": "adjective (di frutto) che è schiacciato bruised stroke (di persona) che è un po' bizzarra bizzarre s",
-    "english": "touch; touch (2)",
-    "chinese": "触摸; 触摸(2)",
+    "english": "touch",
+    "chinese": "触摸",
     "frequency": 4503,
     "rank": 3911
   },
@@ -14510,7 +14510,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "disegno",
     "dictionary": "noun (arte) (architettura) (tecnologia) rappresentazione grafica di un oggetto su una s",
-    "english": "design design",
+    "english": "design",
     "chinese": "设计",
     "frequency": 4495,
     "rank": 3920
@@ -14534,8 +14534,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "volante",
     "dictionary": "adjective (araldica) attributo araldico che si applica a tutto ciò che vola: se ne indica la direzio",
-    "english": "steering wheel; Wheelchair (2)",
-    "chinese": "方向盘; 轮椅(2)",
+    "english": "steering wheel; Wheelchair",
+    "chinese": "方向盘; 轮椅",
     "frequency": 4488,
     "rank": 3925
   },
@@ -14550,7 +14550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cancellato",
     "dictionary": "adjective (araldica) attributo araldico che si applica allo scudo caricato di alme",
-    "english": "deleted deleted deleted",
+    "english": "deleted",
     "chinese": "删除",
     "frequency": 4483,
     "rank": 3929
@@ -14574,7 +14574,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "temperatura",
     "dictionary": "noun (fisica), (chimica) intensità di energia delle particelle che formano un corpo",
-    "english": "temperature temperature",
+    "english": "temperature",
     "chinese": "温度",
     "frequency": 4479,
     "rank": 3933
@@ -14598,7 +14598,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "catena",
     "dictionary": "noun (araldica) figura araldica convenzionale costituita da un alternarsi di anelli meta",
-    "english": "chain chain",
+    "english": "chain",
     "chinese": "链条链",
     "frequency": 4460,
     "rank": 3942
@@ -14646,7 +14646,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ruota",
     "dictionary": "noun ruota degli esposti meccanismo girevole dove i neonati erano abbandonati per essere",
-    "english": "wheel wheel",
+    "english": "wheel",
     "chinese": "轮子",
     "frequency": 4433,
     "rank": 3953
@@ -14710,7 +14710,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "imbecille",
     "dictionary": "adjective (psicologia) (medicina) (psichiatria) (psicanalisi) affetto da imbecillità detto di person",
-    "english": "imbecile; (2)",
+    "english": "imbecile",
     "chinese": "无智; (二)",
     "frequency": 4413,
     "rank": 3966
@@ -14734,7 +14734,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sodo",
     "dictionary": "adverb in gran quantità deeply hard hard-boiled soundly",
-    "english": "I know; (2)",
+    "english": "I know",
     "chinese": "и笵; (二)",
     "frequency": 4410,
     "rank": 3970
@@ -14758,15 +14758,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "affetto",
     "dictionary": "adjective chi è impressionato o colpito affected affection fondness love suffering tenderness",
-    "english": "affection; Love (2); Love (3)",
-    "chinese": "爱; 爱(2); 爱(3)",
+    "english": "affection; Love",
+    "chinese": "爱",
     "frequency": 4398,
     "rank": 3978
   },
   {
     "italian": "trauma",
     "dictionary": "noun injury trauma",
-    "english": "trauma trauma",
+    "english": "trauma",
     "chinese": "创伤",
     "frequency": 4384,
     "rank": 3990
@@ -14798,7 +14798,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pagano",
     "dictionary": "adjective (religione) che riguarda il paganesimo pagan heathen",
-    "english": "pay; (2)",
+    "english": "pay",
     "chinese": "工资; (二)",
     "frequency": 4360,
     "rank": 4011
@@ -14814,7 +14814,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "identità",
     "dictionary": "noun (per estensione) (antropologia) (sociologia) (psicologia) coscienza di sé come pe",
-    "english": "identity identity",
+    "english": "identity",
     "chinese": "身份认同",
     "frequency": 4357,
     "rank": 4015
@@ -14846,7 +14846,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cabina",
     "dictionary": "noun in vari mezzi di trasporto, piccolo vano, consentire un'ampia visione dell'esterno,",
-    "english": "cabin cabin",
+    "english": "cabin",
     "chinese": "客舱",
     "frequency": 4348,
     "rank": 4024
@@ -14918,7 +14918,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fiore",
     "dictionary": "noun (biologia) (botanica) organo riproduttivo delle piante a frutto, dove si sviluppano",
-    "english": "flower flower",
+    "english": "flower",
     "chinese": "花开",
     "frequency": 4325,
     "rank": 4044
@@ -14934,15 +14934,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "gomma",
     "dictionary": "noun (chimica) materiale naturale o sintetico che si può allungare in modo notevole per p",
-    "english": "rubber rubber rubber",
-    "chinese": "橡胶橡胶",
+    "english": "rubber",
+    "chinese": "橡胶",
     "frequency": 4321,
     "rank": 4049
   },
   {
     "italian": "tatuaggio",
     "dictionary": "noun (arte) incisione di un disegno decorativo incancellabile sulla pelle tattoo (pe",
-    "english": "tattoo tattoo",
+    "english": "tattoo",
     "chinese": "纹身",
     "frequency": 4320,
     "rank": 4051
@@ -14958,7 +14958,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "qualità",
     "dictionary": "noun (matematica) (statistica) caratteristica propria di una variabile con un valore no",
-    "english": "quality quality",
+    "english": "quality",
     "chinese": "质量",
     "frequency": 4316,
     "rank": 4053
@@ -15030,8 +15030,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "potenziale",
     "dictionary": "adjective (per estensione) possibile, probabile, eventuale force power strength",
-    "english": "potential potential; potential (2)",
-    "chinese": "潜在潜力; 潜力(2)",
+    "english": "potential",
+    "chinese": "潜在潜力; 潜力",
     "frequency": 4289,
     "rank": 4075
   },
@@ -15070,7 +15070,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scoperta",
     "dictionary": "adjective femminile di scoperto identification open uncovered",
-    "english": "discovery; (2)",
+    "english": "discovery",
     "chinese": "发现; (二)",
     "frequency": 4271,
     "rank": 4089
@@ -15150,7 +15150,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cameriere",
     "dictionary": "noun (professione) chi svolge le faccende domestiche e serve a tavola nelle case priv",
-    "english": "Waiter waiter",
+    "english": "Waiter",
     "chinese": "服务员",
     "frequency": 4244,
     "rank": 4107
@@ -15158,7 +15158,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fantasia",
     "dictionary": "noun (filosofia), (arte) visione della mente dovuta all'immaginazione fantasy imagi",
-    "english": "fantasy fantasy",
+    "english": "fantasy",
     "chinese": "幻想梦",
     "frequency": 4243,
     "rank": 4108
@@ -15206,8 +15206,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "classico",
     "dictionary": "adjective che descrive qualcosa di caratteristico o tipico classic (musica) in riferimento alla musi",
-    "english": "classic; Classic (2)",
-    "chinese": "经典; 经典(2)",
+    "english": "classic",
+    "chinese": "经典",
     "frequency": 4225,
     "rank": 4128
   },
@@ -15262,8 +15262,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fedele",
     "dictionary": "adjective (religione) che appartiene convintamente ad una religione true faithful (familiare) che ma",
-    "english": "faithful; faithful (2)",
-    "chinese": "忠诚; 忠诚者(2)",
+    "english": "faithful",
+    "chinese": "忠诚; 忠诚者",
     "frequency": 4210,
     "rank": 4140
   },
@@ -15278,7 +15278,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "accetta",
     "dictionary": "adjective femminile singolare di accetto welcome well-received",
-    "english": "accept; (2)",
+    "english": "accept",
     "chinese": "接受; (二)",
     "frequency": 4202,
     "rank": 4148
@@ -15286,8 +15286,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "spinta",
     "dictionary": "noun (fisica) (meccanica) spostamento di un oggetto per mezzo di una pressione push shov",
-    "english": "push push",
-    "chinese": "用力推 用力推",
+    "english": "push",
+    "chinese": "用力推",
     "frequency": 4201,
     "rank": 4150
   },
@@ -15406,8 +15406,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sopravvissuto",
     "dictionary": "adjective che è rimasto in vita surviving",
-    "english": "survivor; survivor (2)",
-    "chinese": "幸存者; 幸存者(2)",
+    "english": "survivor",
+    "chinese": "幸存者",
     "frequency": 4151,
     "rank": 4180
   },
@@ -15438,7 +15438,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "coperto",
     "dictionary": "adjective (araldica) attributo araldico che si applica a: roofed",
-    "english": "covered; (2)",
+    "english": "covered",
     "chinese": "覆盖; (二)",
     "frequency": 4141,
     "rank": 4193
@@ -15470,8 +15470,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "temporale",
     "dictionary": "adjective (fisica) (astronomia) del o relativo al tempo (grammaticale) proposizione temporale: propo",
-    "english": "thunderstorm; Time (2); Time (3)",
-    "chinese": "雷电; 时间(2); 时间(3)",
+    "english": "thunderstorm; Time",
+    "chinese": "雷电; 时间",
     "frequency": 4137,
     "rank": 4200
   },
@@ -15486,8 +15486,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ebreo",
     "dictionary": "adjective (religione) relativo all'ebraismo Jewish",
-    "english": "Jew; Jewish (2)",
-    "chinese": "犹太人; 犹太人(2)",
+    "english": "Jew; Jewish",
+    "chinese": "犹太人",
     "frequency": 4130,
     "rank": 4209
   },
@@ -15534,7 +15534,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "frigo",
     "dictionary": "adjective aggettivo refrigerated",
-    "english": "fridge; (2)",
+    "english": "fridge",
     "chinese": "冰箱; (二)",
     "frequency": 4113,
     "rank": 4220
@@ -15550,8 +15550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "popolare",
     "dictionary": "adjective riferito alla popolazione popular cheap colonize common famous folk",
-    "english": "Popular Popular; Popular (2)",
-    "chinese": "民众; 大众(2)",
+    "english": "Popular",
+    "chinese": "民众; 大众",
     "frequency": 4106,
     "rank": 4226
   },
@@ -15574,8 +15574,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "corona",
     "dictionary": "noun garland crown (araldica) la corona, oltre a essere una figura araldica che può comp",
-    "english": "crown crown crown",
-    "chinese": "皇冠 皇冠",
+    "english": "crown",
+    "chinese": "皇冠",
     "frequency": 4102,
     "rank": 4233
   },
@@ -15622,7 +15622,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ideale",
     "dictionary": "adjective perfetto, senza alcun difetto abstract fanciful ideal imaginary",
-    "english": "ideal ideal",
+    "english": "ideal",
     "chinese": "理想的理想",
     "frequency": 4092,
     "rank": 4247
@@ -15710,15 +15710,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "filmato",
     "dictionary": "adjective ripreso con una telecamera o videocamera filmed shot",
-    "english": "filmed; film (2)",
-    "chinese": "拍摄; 电影(2)",
+    "english": "filmed; film",
+    "chinese": "拍摄; 电影",
     "frequency": 4061,
     "rank": 4268
   },
   {
     "italian": "ricompensa",
     "dictionary": "noun (senso figurato) benessere per effettiva capacità espressa in modo meritorio e",
-    "english": "reward reward",
+    "english": "reward",
     "chinese": "奖励",
     "frequency": 4061,
     "rank": 4269
@@ -15798,8 +15798,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "crema",
     "dictionary": "noun (colore) tonalità di colore tndente al giallo ma estremamente pallido, quasi bianco (chimica) (",
-    "english": "cream cream cream",
-    "chinese": "奶油奶油 奶油 奶油",
+    "english": "cream",
+    "chinese": "奶油",
     "frequency": 4044,
     "rank": 4291
   },
@@ -15846,8 +15846,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "politico",
     "dictionary": "adjective inerente alla politica political",
-    "english": "political policy; political (2)",
-    "chinese": "政治政策; 政治(2)",
+    "english": "political policy; political",
+    "chinese": "政治政策; 政治",
     "frequency": 4032,
     "rank": 4303
   },
@@ -15894,7 +15894,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "complice",
     "dictionary": "adjective che assume comportamento di complicità accomplice party",
-    "english": "accomplice; (2)",
+    "english": "accomplice",
     "chinese": "共犯; (二)",
     "frequency": 4018,
     "rank": 4315
@@ -16102,7 +16102,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "spaziale",
     "dictionary": "adjective space (matematica) (geometria) (fisica) (astronomia) che riguarda lo spazi",
-    "english": "space space",
+    "english": "space",
     "chinese": "空间",
     "frequency": 3952,
     "rank": 4377
@@ -16158,8 +16158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "interrogatorio",
     "dictionary": "adjective relativo a chi chiede, domanda interrogative",
-    "english": "interrogation; interview (2)",
-    "chinese": "审讯; 面谈(2)",
+    "english": "interrogation; interview",
+    "chinese": "审讯; 面谈",
     "frequency": 3937,
     "rank": 4393
   },
@@ -16502,8 +16502,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "collana",
     "dictionary": "noun ornamento che si mette al collo necklace",
-    "english": "necklace necklace",
-    "chinese": "项链项链",
+    "english": "necklace",
+    "chinese": "项链",
     "frequency": 3839,
     "rank": 4504
   },
@@ -16534,8 +16534,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "giallo",
     "dictionary": "adjective di colore intermedio tra il verde e l'arancione yellow",
-    "english": "yellow; yellow (2)",
-    "chinese": "黄色; 黄色(2)",
+    "english": "yellow",
+    "chinese": "黄色",
     "frequency": 3830,
     "rank": 4512
   },
@@ -16550,8 +16550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "chitarra",
     "dictionary": "noun guitar",
-    "english": "guitar guitar",
-    "chinese": "吉他吉他",
+    "english": "guitar",
+    "chinese": "吉他",
     "frequency": 3824,
     "rank": 4518
   },
@@ -16566,7 +16566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "onde",
     "dictionary": "adverb (letterario) da dove hence waves whence whose",
-    "english": "waves; (2)",
+    "english": "waves",
     "chinese": "风波; (二)",
     "frequency": 3822,
     "rank": 4521
@@ -16654,7 +16654,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "secco",
     "dictionary": "adjective (familiare) diversamente dal clima, quando invece attribuito all'aria, significa molto asc",
-    "english": "dry dry",
+    "english": "dry",
     "chinese": "干燥",
     "frequency": 3795,
     "rank": 4549
@@ -16662,7 +16662,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bambola",
     "dictionary": "noun riproduzione di un essere umano (adulto o bambino), generalmente realizzato in pla",
-    "english": "doll doll",
+    "english": "doll",
     "chinese": "洋娃娃",
     "frequency": 3790,
     "rank": 4555
@@ -16670,8 +16670,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "hamburger",
     "dictionary": "noun (forestierismo) (gastronomia) polpetta di carne di manzo hamburger",
-    "english": "burger burger",
-    "chinese": "汉堡汉堡",
+    "english": "burger",
+    "chinese": "汉堡",
     "frequency": 3789,
     "rank": 4556
   },
@@ -16694,8 +16694,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cittadino",
     "dictionary": "adjective relativo, che riguarda la città urban town",
-    "english": "citizen; City (2)",
-    "chinese": "公民; 城市(2)",
+    "english": "citizen; City",
+    "chinese": "公民; 城市",
     "frequency": 3786,
     "rank": 4561
   },
@@ -16742,7 +16742,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ordinare",
     "dictionary": "verb mettere in ordine command order arrange give orders",
-    "english": "order order",
+    "english": "order",
     "chinese": "顺序",
     "frequency": 3769,
     "rank": 4575
@@ -16750,7 +16750,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "complesso",
     "dictionary": "adjective che risulta dall'unione di varie parti o diversi elementi complex che si manifesta sotto m",
-    "english": "complex; (2)",
+    "english": "complex",
     "chinese": "复杂; (二)",
     "frequency": 3763,
     "rank": 4578
@@ -16774,7 +16774,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "altrettanto",
     "dictionary": "adjective uguale quantità as",
-    "english": "The same; (2); (3)",
+    "english": "The same",
     "chinese": "一样; (二); (三) 国家",
     "frequency": 3759,
     "rank": 4583
@@ -16798,8 +16798,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "romanzo",
     "dictionary": "adjective (linguistica) (geografia) che riguarda le parlate indoeuropee che derivano dal latino Roma",
-    "english": "novel; novel (2)",
-    "chinese": "小说; 小说(2)",
+    "english": "novel",
+    "chinese": "小说",
     "frequency": 3752,
     "rank": 4589
   },
@@ -16814,7 +16814,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "condotto",
     "dictionary": "adjective (medicina) relativo a chi presta servizio in accordo ad una determinata condotta district ",
-    "english": "conduit; (2)",
+    "english": "conduit",
     "chinese": "管道; (二)",
     "frequency": 3738,
     "rank": 4597
@@ -16854,7 +16854,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "merce",
     "dictionary": "noun ware",
-    "english": "goods goods",
+    "english": "goods",
     "chinese": "货物",
     "frequency": 3731,
     "rank": 4608
@@ -16990,7 +16990,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sacro",
     "dictionary": "adjective (religione) che riguarda il culto di Dio holy sacred (biologia) (anatomia) (fis",
-    "english": "sacred sacred sacred sacred",
+    "english": "sacred",
     "chinese": "神圣的神圣的神圣不可侵犯",
     "frequency": 3667,
     "rank": 4665
@@ -17022,16 +17022,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "bandiera",
     "dictionary": "noun flag banner (araldica) figura araldica che, oltre che comparire nello stemma, può",
-    "english": "flag flag flag flag flag",
-    "chinese": "旗帜 旗帜 旗帜 旗帜",
+    "english": "flag",
+    "chinese": "旗帜",
     "frequency": 3657,
     "rank": 4676
   },
   {
     "italian": "stabile",
     "dictionary": "adjective (senso figurato) che dura con il tempo assets constant firm house immovable property (fisi",
-    "english": "stable; (2); stable (3)",
-    "chinese": "稳定; (二); 稳定(3)",
+    "english": "stable",
+    "chinese": "稳定; (二)",
     "frequency": 3654,
     "rank": 4680
   },
@@ -17078,7 +17078,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "lusso",
     "dictionary": "noun (per estensione) scelta migliore che si possa obiettivamente fare tra più opportunit",
-    "english": "luxury luxury luxury",
+    "english": "luxury",
     "chinese": "豪华奢侈品",
     "frequency": 3643,
     "rank": 4694
@@ -17198,7 +17198,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "metallo",
     "dictionary": "noun (elemento chimico) elemento chimico semplice e lucente, buon conduttore di elettri",
-    "english": "metal metal",
+    "english": "metal",
     "chinese": "金属",
     "frequency": 3600,
     "rank": 4733
@@ -17207,7 +17207,7 @@ const VOCABULARY_DATA = [
     "italian": "pelo",
     "dictionary": "noun (biologia) (anatomia) piccola formazione sottile e filiforme che cresce sulla pelle di",
     "english": "fur coat",
-    "chinese": "毛皮大衣 毛皮大衣",
+    "chinese": "毛皮大衣",
     "frequency": 3598,
     "rank": 4736
   },
@@ -17262,8 +17262,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "parere",
     "dictionary": "noun giudizio soggettivo su qualcuno o qualcosa; spesso specialistico (es. parere legale; parere med",
-    "english": "Opinion; Opinion (2)",
-    "chinese": "意 见; 意见(2)",
+    "english": "Opinion",
+    "chinese": "意 见; 意见",
     "frequency": 3588,
     "rank": 4751
   },
@@ -17342,7 +17342,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "macchia",
     "dictionary": "noun stain screzio di sporco o di colore di qualunque forma o dimensione mark (botanica)",
-    "english": "spot spot",
+    "english": "spot",
     "chinese": "点",
     "frequency": 3565,
     "rank": 4772
@@ -17350,8 +17350,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "perduto",
     "dictionary": "adjective extint lost",
-    "english": "lost lost lost",
-    "chinese": "输了 输了",
+    "english": "lost",
+    "chinese": "输了",
     "frequency": 3564,
     "rank": 4774
   },
@@ -17382,7 +17382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scommessa",
     "dictionary": "noun (gioco) (diritto) (economia) messa in palio di una somma di denaro, la cui proba",
-    "english": "Bet bet",
+    "english": "Bet",
     "chinese": "赌注",
     "frequency": 3553,
     "rank": 4788
@@ -17390,8 +17390,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "imputato",
     "dictionary": "adjective attribuito a qualcuno o a qualcosa accused charged",
-    "english": "defendant; defendant (2)",
-    "chinese": "被告人; 被告(2)",
+    "english": "defendant",
+    "chinese": "被告人; 被告",
     "frequency": 3553,
     "rank": 4790
   },
@@ -17470,8 +17470,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "lama",
     "dictionary": "noun (metallurgia) parte metallica tagliente ed affilata di un coltello, di un attrezzo o di una spa",
-    "english": "Blame; Blade (2)",
-    "chinese": "责怪; 刀锋(2)",
+    "english": "Blame; Blade",
+    "chinese": "责怪; 刀锋",
     "frequency": 3522,
     "rank": 4810
   },
@@ -17566,7 +17566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tecnico",
     "dictionary": "adjective che riguarda gli aspetti pratici e strumentali di un'attività technician technical enginee",
-    "english": "technical; (2)",
+    "english": "technical",
     "chinese": "技术; (二)",
     "frequency": 3496,
     "rank": 4841
@@ -17574,7 +17574,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ridotto",
     "dictionary": "adjective di una cosa più piccola del normale cut foyere redoubt reduced short",
-    "english": "reduced; (2); (3)",
+    "english": "reduced",
     "chinese": "减少; (二); (三) 国家",
     "frequency": 3493,
     "rank": 4843
@@ -17582,7 +17582,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "miniera",
     "dictionary": "noun mine",
-    "english": "Mine mine",
+    "english": "Mine",
     "chinese": "我的矿",
     "frequency": 3493,
     "rank": 4845
@@ -17774,8 +17774,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "assoluto",
     "dictionary": "adjective privo di collegamenti privo di difetti (matematica) di numero reale maggiore di zero (fisi",
-    "english": "absolute; Absolute (2)",
-    "chinese": "绝对; 绝对(2)",
+    "english": "absolute",
+    "chinese": "绝对",
     "frequency": 3395,
     "rank": 4935
   },
@@ -17814,8 +17814,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "manuale",
     "dictionary": "adjective fatto a mano, relativo all'uso delle mani manual handbook textbook hand physical",
-    "english": "manual manual manual; manual (2)",
-    "chinese": "手动手册; 手册(2)",
+    "english": "manual",
+    "chinese": "手动手册; 手册",
     "frequency": 3385,
     "rank": 4947
   },
@@ -18006,7 +18006,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "lento",
     "dictionary": "adjective slow",
-    "english": "slow slow slow",
+    "english": "slow",
     "chinese": "慢缓慢",
     "frequency": 3341,
     "rank": 5004
@@ -18054,7 +18054,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fascino",
     "dictionary": "noun allure appeal charm fascination",
-    "english": "charm charm",
+    "english": "charm",
     "chinese": "魅力护身符",
     "frequency": 3328,
     "rank": 5017
@@ -18070,8 +18070,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tessuto",
     "dictionary": "adjective che ha subito lavorazione tessile cloth fabric textile woven",
-    "english": "fabric; fabric (2)",
-    "chinese": "织物; 织物(2)",
+    "english": "fabric",
+    "chinese": "织物",
     "frequency": 3326,
     "rank": 5021
   },
@@ -18094,7 +18094,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "antico",
     "dictionary": "adjective che appartiene a un passato remoto (storia) che riguarda gli avvenimenti del m",
-    "english": "ancient ancient",
+    "english": "ancient",
     "chinese": "古老的古迹",
     "frequency": 3319,
     "rank": 5029
@@ -18110,7 +18110,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "gravidanza",
     "dictionary": "noun (biologia) (anatomia) (fisiologia) (medicina) condizione fisica delle femmine",
-    "english": "pregnancy pregnancy",
+    "english": "pregnancy",
     "chinese": "怀孕",
     "frequency": 3314,
     "rank": 5032
@@ -18118,15 +18118,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "portatile",
     "dictionary": "adjective riferito a un oggetto che si può trasportare facilmente portable",
-    "english": "laptop; Portable (2)",
-    "chinese": "笔记本电脑; 便携式(2)",
+    "english": "laptop; Portable",
+    "chinese": "笔记本电脑; 便携式",
     "frequency": 3312,
     "rank": 5036
   },
   {
     "italian": "guerriero",
     "dictionary": "adjective che è pronto alla battaglia bellicose hostile warlike",
-    "english": "warrior; (2)",
+    "english": "warrior",
     "chinese": "战士; (二)",
     "frequency": 3306,
     "rank": 5043
@@ -18198,8 +18198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "riparare",
     "dictionary": "verb dare riparo, fornire protezione nei confronti di qualcuno o qualcosa protect shel",
-    "english": "repair repair",
-    "chinese": "修理修理",
+    "english": "repair",
+    "chinese": "修理",
     "frequency": 3281,
     "rank": 5074
   },
@@ -18238,7 +18238,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "impianto",
     "dictionary": "noun (senso figurato) ossatura di un'opera artistica establishment foundation framewor",
-    "english": "plant plant",
+    "english": "plant",
     "chinese": "植物",
     "frequency": 3260,
     "rank": 5095
@@ -18302,7 +18302,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bicicletta",
     "dictionary": "noun (ecologia) (tecnologia) mezzo meccanico di trasporto su due ruote azionato da",
-    "english": "bicycle bicycle",
+    "english": "bicycle",
     "chinese": "自行车",
     "frequency": 3246,
     "rank": 5112
@@ -18326,7 +18326,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "perdente",
     "dictionary": "adjective che ha perso losing (senso figurato) che è un buono a nulla failure",
-    "english": "Loser; (2)",
+    "english": "Loser",
     "chinese": "失败者; (二)",
     "frequency": 3240,
     "rank": 5118
@@ -18390,7 +18390,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "solare",
     "dictionary": "adjective solar sun (astronomia) che riguarda il Sole del solaio clear evident obvious (",
-    "english": "solar solar",
+    "english": "solar",
     "chinese": "太阳能",
     "frequency": 3224,
     "rank": 5142
@@ -18414,7 +18414,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "circolo",
     "dictionary": "noun cerchio o circonferenza, in senso più ampio qualunque cosa che ritorni al punto",
-    "english": "circle circle",
+    "english": "circle",
     "chinese": "圆圈",
     "frequency": 3219,
     "rank": 5149
@@ -18486,7 +18486,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "indiano",
     "dictionary": "noun nato o residente in India (linguistica) lingua parlata in India Indian",
-    "english": "Indian Indian",
+    "english": "Indian",
     "chinese": "印度语",
     "frequency": 3202,
     "rank": 5172
@@ -18502,7 +18502,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cuscino",
     "dictionary": "noun pillow cushion",
-    "english": "cushion cushion",
+    "english": "cushion",
     "chinese": "衬垫",
     "frequency": 3198,
     "rank": 5179
@@ -18526,7 +18526,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scarpa",
     "dictionary": "noun (abbigliamento) capo d'abbigliamento che si mette sul piede, allo scopo di coprirlo",
-    "english": "shoe shoe",
+    "english": "shoe",
     "chinese": "脚鞋",
     "frequency": 3189,
     "rank": 5190
@@ -18574,8 +18574,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "salvatore",
     "dictionary": "adjective che salva saving",
-    "english": "savior; savior (2)",
-    "chinese": "救赎; 救世主(2)",
+    "english": "savior",
+    "chinese": "救赎; 救世主",
     "frequency": 3181,
     "rank": 5204
   },
@@ -18606,7 +18606,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "autorizzato",
     "dictionary": "adjective che ha facoltà di fare qualcosa authorized allowed empowered permitted",
-    "english": "Authorized; (2)",
+    "english": "Authorized",
     "chinese": "核定数; (二)",
     "frequency": 3172,
     "rank": 5213
@@ -18662,8 +18662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sepolto",
     "dictionary": "adjective che è messo nella tomba (senso figurato) buried plunged steeped",
-    "english": "buried; buried (2); buried (3)",
-    "chinese": "埋没; 被埋(2); 被埋(3)",
+    "english": "buried",
+    "chinese": "埋没; 被埋",
     "frequency": 3148,
     "rank": 5246
   },
@@ -18782,7 +18782,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "stabilito",
     "dictionary": "noun A legal document signed by all parties at the conclusion of mediation agreed appointed arranged",
-    "english": "established; (2)",
+    "english": "established",
     "chinese": "已设立; (二)",
     "frequency": 3116,
     "rank": 5292
@@ -18806,8 +18806,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "lavare",
     "dictionary": "verb pulire qualcosa utilizzando l' acqua ed anche il sapone wash",
-    "english": "wash wash wash wash",
-    "chinese": "洗涤洗涤洗涤",
+    "english": "wash",
+    "chinese": "洗涤",
     "frequency": 3111,
     "rank": 5300
   },
@@ -18918,8 +18918,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "scandalo",
     "dictionary": "noun (sociologia) azione in grado di sconvolgere la sensibilità morale pubblica e di r",
-    "english": "scandal scandal scandal scandal",
-    "chinese": "丑闻丑闻丑闻",
+    "english": "scandal",
+    "chinese": "丑闻",
     "frequency": 3084,
     "rank": 5334
   },
@@ -18942,8 +18942,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "viola",
     "dictionary": "noun (colore) (fisica) colore secondario dato dall'unione di rosso e blu violet purple",
-    "english": "Purple; Purple (2)",
-    "chinese": "紫色; 紫色(2)",
+    "english": "Purple",
+    "chinese": "紫色",
     "frequency": 3075,
     "rank": 5342
   },
@@ -19022,8 +19022,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cassetto",
     "dictionary": "noun drawer glove compartment",
-    "english": "drawer drawer",
-    "chinese": "抽屉抽屉",
+    "english": "drawer",
+    "chinese": "抽屉",
     "frequency": 3059,
     "rank": 5363
   },
@@ -19086,8 +19086,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "abilità",
     "dictionary": "noun (filosofia) (psicologia) capacità di svolgere compiti e risolvere problemi skill c",
-    "english": "skill skill skill",
-    "chinese": "技能技能",
+    "english": "skill",
+    "chinese": "技能",
     "frequency": 3046,
     "rank": 5379
   },
@@ -19126,8 +19126,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "malvagio",
     "dictionary": "adjective relativo a persona o cosa particolarmente cattiva, crudele evil contemptible cruel wicked",
-    "english": "evil; evil (2)",
-    "chinese": "邪恶; 邪恶(2)",
+    "english": "evil",
+    "chinese": "邪恶",
     "frequency": 3035,
     "rank": 5391
   },
@@ -19230,7 +19230,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "eterno",
     "dictionary": "adjective (religione), (filosofia) che, pur avendo avuto inizio, non avrà mai fine, o ch",
-    "english": "eternal eternal",
+    "english": "eternal",
     "chinese": "永远",
     "frequency": 3017,
     "rank": 5422
@@ -19238,8 +19238,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ciclo",
     "dictionary": "noun sequenza di movimenti o di avvenimenti che si reiterano cycle loop (familiare) bic",
-    "english": "cycle cycle",
-    "chinese": "周期周期",
+    "english": "cycle",
+    "chinese": "周期",
     "frequency": 3016,
     "rank": 5423
   },
@@ -19294,8 +19294,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "acido",
     "dictionary": "adjective (chimica) (chimica analitica) che ha le caratteristiche proprie degli acidi acidic",
-    "english": "Acid; acid (2); acid (3)",
-    "chinese": "酸盐; 酸 (2); 氨酸(3)",
+    "english": "Acid",
+    "chinese": "酸盐; 酸; 氨酸",
     "frequency": 3002,
     "rank": 5441
   },
@@ -19334,8 +19334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "adolescente",
     "dictionary": "adjective relativo all'adolescenza adolescent teenage youth",
-    "english": "teenager; teenager (2)",
-    "chinese": "青少年; 青少年(2)",
+    "english": "teenager",
+    "chinese": "青少年",
     "frequency": 2991,
     "rank": 5454
   },
@@ -19350,7 +19350,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tortura",
     "dictionary": "noun torture",
-    "english": "torture torture",
+    "english": "torture",
     "chinese": "酷刑",
     "frequency": 2991,
     "rank": 5457
@@ -19358,7 +19358,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "talpa",
     "dictionary": "adjective (colore)grigio scuro moleskin",
-    "english": "mole; (2)",
+    "english": "mole",
     "chinese": "摩尔; (二)",
     "frequency": 2990,
     "rank": 5458
@@ -19510,7 +19510,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "truffa",
     "dictionary": "noun (diritto) ottenimento di un vantaggio a scapito di un altro soggetto indotto in err",
-    "english": "scam scam",
+    "english": "scam",
     "chinese": "骗局",
     "frequency": 2960,
     "rank": 5501
@@ -19526,15 +19526,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "pervertito",
     "dictionary": "adjective (sessualità) che maliziosamente e volutamente confonde elementi volgari, impudichi oppure ",
-    "english": "pervert; pervert (2)",
-    "chinese": "变态; 变态(2)",
+    "english": "pervert",
+    "chinese": "变态",
     "frequency": 2950,
     "rank": 5509
   },
   {
     "italian": "parete",
     "dictionary": "noun (architettura) (edilizia) (tecnologia) (ingegneria) muro che divide un appartamento",
-    "english": "wall wall",
+    "english": "wall",
     "chinese": "墙壁",
     "frequency": 2945,
     "rank": 5516
@@ -19606,7 +19606,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sfigato",
     "dictionary": "adjective (sociologia) di chi non ha fortuna cursed jinxed loser unlucky",
-    "english": "Whoo!; (2)",
+    "english": "Whoo!",
     "chinese": "呜!; (二)",
     "frequency": 2931,
     "rank": 5537
@@ -19942,8 +19942,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vaso",
     "dictionary": "noun (botanica) elemento conduttore del legno. Costituito da cellule allungate, morte, di",
-    "english": "vase vase",
-    "chinese": "花瓶花瓶",
+    "english": "vase",
+    "chinese": "花瓶",
     "frequency": 2855,
     "rank": 5656
   },
@@ -20310,8 +20310,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "torneo",
     "dictionary": "noun tournament",
-    "english": "tournament tournament tournament tournament",
-    "chinese": "锦标赛锦标赛",
+    "english": "tournament",
+    "chinese": "锦标赛",
     "frequency": 2783,
     "rank": 5777
   },
@@ -20406,8 +20406,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "divorziato",
     "dictionary": "adjective di chi ha posto fine al proprio matrimonio con un divorzio divorced",
-    "english": "divorced; divorced (2)",
-    "chinese": "离婚情况; 离婚(2)",
+    "english": "divorced",
+    "chinese": "离婚情况; 离婚",
     "frequency": 2762,
     "rank": 5814
   },
@@ -20526,8 +20526,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "avversario",
     "dictionary": "adjective che è contrario in modo provocatorio o ostile adversary antagonist opponent rival",
-    "english": "opponent; opponent (2)",
-    "chinese": "对手; 对手(2)",
+    "english": "opponent",
+    "chinese": "对手",
     "frequency": 2728,
     "rank": 5865
   },
@@ -20542,8 +20542,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "attivo",
     "dictionary": "adjective che agisce o che funziona operating operative (di) dispositivo elettrico dove la relazione",
-    "english": "active active active",
-    "chinese": "活动活动",
+    "english": "active",
+    "chinese": "活动",
     "frequency": 2726,
     "rank": 5869
   },
@@ -20606,7 +20606,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "frutto",
     "dictionary": "noun (botanica) (gastronomia) prodotto di una pianta che deriva dal fiore, soprattutto q",
-    "english": "fruit fruit",
+    "english": "fruit",
     "chinese": "果实",
     "frequency": 2717,
     "rank": 5887
@@ -20614,8 +20614,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "schiavo",
     "dictionary": "adjective che è in condizione di schiavitù, di asservimento, che non è libero e indipendente captive",
-    "english": "slave; slave (2)",
-    "chinese": "奴隶; 奴隶(2)",
+    "english": "slave",
+    "chinese": "奴隶",
     "frequency": 2714,
     "rank": 5891
   },
@@ -20630,7 +20630,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vivente",
     "dictionary": "adjective uomo man",
-    "english": "living living living",
+    "english": "living",
     "chinese": "活下来的人",
     "frequency": 2705,
     "rank": 5902
@@ -20654,7 +20654,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "arco",
     "dictionary": "noun (matematica) (geometria) parte della circonferenza compresa tra due punti arc bow (ar",
-    "english": "arch arch arch arch arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc",
+    "english": "arch arc",
     "chinese": "拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱门拱",
     "frequency": 2698,
     "rank": 5909
@@ -20742,8 +20742,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "regolare",
     "dictionary": "adjective di fatto che accade di nuovo a intervalli di tempo esatti e continui (matematica) (di) fun",
-    "english": "regular; Regular (2)",
-    "chinese": "常设经常; 经常(2)",
+    "english": "regular",
+    "chinese": "常设经常; 经常",
     "frequency": 2681,
     "rank": 5941
   },
@@ -20774,7 +20774,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vitale",
     "dictionary": "adjective (biologia) della vita active alive dynamic vital (senso figurato) che riguarda",
-    "english": "vital vital vital life",
+    "english": "vital life",
     "chinese": "生命中的重要生命",
     "frequency": 2677,
     "rank": 5947
@@ -20822,7 +20822,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "satellite",
     "dictionary": "noun (fisica) (astronomia) corpo celeste che orbita intorno a un altro (astronautica)",
-    "english": "satellite satellite",
+    "english": "satellite",
     "chinese": "卫星",
     "frequency": 2663,
     "rank": 5969
@@ -20878,8 +20878,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "giocattolo",
     "dictionary": "noun toy novelty",
-    "english": "toy toy",
-    "chinese": "玩具玩具",
+    "english": "toy",
+    "chinese": "玩具",
     "frequency": 2655,
     "rank": 5983
   },
@@ -20918,7 +20918,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sentimento",
     "dictionary": "noun perception sensation sense condizione cognitivo-affettiva più duratura di un'em",
-    "english": "feeling feeling",
+    "english": "feeling",
     "chinese": "感觉",
     "frequency": 2645,
     "rank": 6001
@@ -21030,8 +21030,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "contenuto",
     "dictionary": "adjective controllato, misurato restrained controlled",
-    "english": "content; Contents (2)",
-    "chinese": "内容; 目录(2)",
+    "english": "content; Contents",
+    "chinese": "内容; 目录",
     "frequency": 2623,
     "rank": 6038
   },
@@ -21070,8 +21070,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "Bruno",
     "dictionary": "pronoun Bruno",
-    "english": "♪; brown; Brown (2)",
-    "chinese": "(待修复); 褐色(2)",
+    "english": "♪; brown",
+    "chinese": "(待修复); 褐色",
     "frequency": 2617,
     "rank": 6052
   },
@@ -21110,16 +21110,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "ciascuno",
     "dictionary": "adjective ogni each everybody everyone",
-    "english": "each; each (2)",
-    "chinese": "每个; 每个(2)",
+    "english": "each",
+    "chinese": "每个",
     "frequency": 2605,
     "rank": 6062
   },
   {
     "italian": "lampada",
     "dictionary": "noun lamp light",
-    "english": "lamp lamp lamp",
-    "chinese": "灯灯",
+    "english": "lamp",
+    "chinese": "灯",
     "frequency": 2603,
     "rank": 6063
   },
@@ -21158,8 +21158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "attendere",
     "dictionary": "verb (antico) stare attento, considerare, osservare await wait",
-    "english": "wait wait wait",
-    "chinese": "单单 单单",
+    "english": "wait",
+    "chinese": "单单",
     "frequency": 2598,
     "rank": 6072
   },
@@ -21174,7 +21174,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "competizione",
     "dictionary": "noun (sociologia) (politica) (biologia) (ecologia) interazione tra esseri viventi",
-    "english": "competition competition",
+    "english": "competition",
     "chinese": "竞争",
     "frequency": 2597,
     "rank": 6076
@@ -21182,16 +21182,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "selvaggio",
     "dictionary": "adjective di ambiente, persona o animale che ha carattere primitivo o distaccato (in negativo) dalla",
-    "english": "wild; Wild (2)",
-    "chinese": "疯狂; 野性(2)",
+    "english": "wild",
+    "chinese": "疯狂; 野性",
     "frequency": 2597,
     "rank": 6077
   },
   {
     "italian": "vernice",
     "dictionary": "noun paint",
-    "english": "paint paint paint",
-    "chinese": "油漆油漆",
+    "english": "paint",
+    "chinese": "油漆",
     "frequency": 2595,
     "rank": 6079
   },
@@ -21278,7 +21278,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "flusso",
     "dictionary": "noun (fisica) (meccanica) l'avanzamento di un fluido flow flux stream",
-    "english": "flow flow",
+    "english": "flow",
     "chinese": "流量",
     "frequency": 2581,
     "rank": 6102
@@ -21406,7 +21406,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scaricare",
     "dictionary": "verb dispose drop release togliere il carico trasportato hail rain shower (da un’arma",
-    "english": "download download",
+    "english": "download",
     "chinese": "下载",
     "frequency": 2539,
     "rank": 6175
@@ -21550,8 +21550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "meccanico",
     "dictionary": "adjective (fisica) (meccanica) che riguarda un ente visibile e i suoi movimenti mechanical",
-    "english": "mechanical mechanical mechanic; Mechanical (2)",
-    "chinese": "机械机械师; 机械(2)",
+    "english": "mechanical mechanic; Mechanical",
+    "chinese": "机械机械师; 机械",
     "frequency": 2511,
     "rank": 6218
   },
@@ -21598,8 +21598,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "costante",
     "dictionary": "adjective che non varia nel corso del tempo constant di persona che segue tenacemente le proprie ide",
-    "english": "constant; constant (2)",
-    "chinese": "常数; 常数 (2)",
+    "english": "constant",
+    "chinese": "常数",
     "frequency": 2502,
     "rank": 6238
   },
@@ -21734,8 +21734,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "commedia",
     "dictionary": "noun (teatro) (cinematografia) opera teatrale o cinematografica che tratta temi legger",
-    "english": "comedy comedy",
-    "chinese": "喜剧喜剧",
+    "english": "comedy",
+    "chinese": "喜剧",
     "frequency": 2473,
     "rank": 6302
   },
@@ -21798,7 +21798,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "volontario",
     "dictionary": "adjective che viene fatto con volontà da parte di chi agisce intentional spontaneous voluntary volun",
-    "english": "Volunteering; (2)",
+    "english": "Volunteering",
     "chinese": "志愿工作; (二)",
     "frequency": 2455,
     "rank": 6341
@@ -21839,7 +21839,7 @@ const VOCABULARY_DATA = [
     "italian": "pisciare",
     "dictionary": "verb (popolare) (volgare) urinare piss urinate",
     "english": "piss",
-    "chinese": "撒尿 撒尿",
+    "chinese": "撒尿",
     "frequency": 2450,
     "rank": 6355
   },
@@ -21934,8 +21934,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "amichevole",
     "dictionary": "adjective proprio di chi è amico (sport) di incontro che non fa parte di un torneo o di un campionat",
-    "english": "friendly; friendly (2)",
-    "chinese": "亲切; 友好组织(2)",
+    "english": "friendly",
+    "chinese": "亲切; 友好组织",
     "frequency": 2433,
     "rank": 6380
   },
@@ -21966,7 +21966,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fisso",
     "dictionary": "noun assegno stabile, opposto ad incerto o eventuale engrossed fixated focused immovable",
-    "english": "fixed fixed fixed",
+    "english": "fixed",
     "chinese": "固定固定设备",
     "frequency": 2426,
     "rank": 6390
@@ -21974,7 +21974,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "espresso",
     "dictionary": "adjective detto in modo chiaro, evidente, esplicito. explicit express instant",
-    "english": "Expression; (2)",
+    "english": "Expression",
     "chinese": "表达式; (二)",
     "frequency": 2426,
     "rank": 6392
@@ -21998,8 +21998,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "affamato",
     "dictionary": "adjective che patisce la fame hungry starving avid desirous (senso figurato) hungry avid desirous",
-    "english": "hungry; hungry (2)",
-    "chinese": "饿了; 饥饿(2)",
+    "english": "hungry",
+    "chinese": "饿了; 饥饿",
     "frequency": 2421,
     "rank": 6400
   },
@@ -22022,8 +22022,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "curva",
     "dictionary": "noun curve",
-    "english": "curve curve curve",
-    "chinese": "曲线曲线",
+    "english": "curve",
+    "chinese": "曲线",
     "frequency": 2411,
     "rank": 6417
   },
@@ -22054,8 +22054,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "maschile",
     "dictionary": "adjective (biologia) di qualcosa che si riferisce ai maschi masculine boys' male man's mannish men's",
-    "english": "Male; Male (2)",
-    "chinese": "男性; 男性(2)",
+    "english": "Male",
+    "chinese": "男性",
     "frequency": 2407,
     "rank": 6421
   },
@@ -22070,8 +22070,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "portale",
     "dictionary": "porta a lei, portal",
-    "english": "portal; portal (2)",
-    "chinese": "门户; 门户(2)",
+    "english": "portal",
+    "chinese": "门户",
     "frequency": 2405,
     "rank": 6424
   },
@@ -22134,7 +22134,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "iniezione",
     "dictionary": "noun (meccanica) (tecnologia) (ingegneria) alimentazione di un motore con un piccol",
-    "english": "injection injection",
+    "english": "injection",
     "chinese": "注射剂",
     "frequency": 2396,
     "rank": 6449
@@ -22174,8 +22174,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "scolastico",
     "dictionary": "adjective (scuola) che riguarda la scuola educational scholastic di nozione o disciplina appresa a l",
-    "english": "school; school (2)",
-    "chinese": "学校; 学校(2)",
+    "english": "school",
+    "chinese": "学校",
     "frequency": 2384,
     "rank": 6473
   },
@@ -22230,8 +22230,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "esplosivo",
     "dictionary": "adjective (fisica) (chimica) che è in grado di esplodere critical dangerous explosive sudden violent",
-    "english": "explosive; explosive (2)",
-    "chinese": "炸药; 爆炸物(2)",
+    "english": "explosive",
+    "chinese": "炸药; 爆炸物",
     "frequency": 2379,
     "rank": 6491
   },
@@ -22310,8 +22310,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "circuito",
     "dictionary": "adjective tratto in inganno, abbindolato circuit circuite",
-    "english": "circuit; circuit (2)",
-    "chinese": "电路；巡回; 电路(2)",
+    "english": "circuit",
+    "chinese": "电路；巡回; 电路",
     "frequency": 2366,
     "rank": 6522
   },
@@ -22390,7 +22390,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "prato",
     "dictionary": "noun meadow grass",
-    "english": "lawn lawn",
+    "english": "lawn",
     "chinese": "草坪",
     "frequency": 2342,
     "rank": 6568
@@ -22486,8 +22486,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "messicano",
     "dictionary": "adjective (geografia) relativo al Messico Mexican",
-    "english": "Mexican Mexican; Mexican (2)",
-    "chinese": "墨西哥语; 墨西哥(2)",
+    "english": "Mexican",
+    "chinese": "墨西哥语; 墨西哥",
     "frequency": 2331,
     "rank": 6590
   },
@@ -22526,8 +22526,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ricercato",
     "dictionary": "adjective (familiare) di grande qualità polished refined",
-    "english": "researched; searched (2)",
-    "chinese": "已研究; 搜索(2)",
+    "english": "researched; searched",
+    "chinese": "已研究; 搜索",
     "frequency": 2322,
     "rank": 6603
   },
@@ -22646,15 +22646,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "candela",
     "dictionary": "noun (fisica) unità di misura dell'intensità luminosa nel Sistema internazionale, defin",
-    "english": "candle candle candle",
-    "chinese": "蜡烛 蜡烛",
+    "english": "candle",
+    "chinese": "蜡烛",
     "frequency": 2306,
     "rank": 6646
   },
   {
     "italian": "concentrato",
     "dictionary": "adjective riunito in un unico posto heap pile persona nell'atto di approfondire, per esempio uno stu",
-    "english": "concentrate; (2)",
+    "english": "concentrate",
     "chinese": "集中精神; (二)",
     "frequency": 2306,
     "rank": 6647
@@ -22670,7 +22670,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "look",
     "dictionary": "noun look",
-    "english": "look look",
+    "english": "look",
     "chinese": "看着",
     "frequency": 2305,
     "rank": 6650
@@ -22694,7 +22694,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "inferiore",
     "dictionary": "adjective più basso inferior lesser lower subordinate",
-    "english": "Bottom; (2)",
+    "english": "Bottom",
     "chinese": "下层; (二)",
     "frequency": 2299,
     "rank": 6658
@@ -22766,7 +22766,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "postale",
     "dictionary": "adjective (storia) (diritto) (economia) che riguarda la posta mail boat mail train packet",
-    "english": "Post post",
+    "english": "Post",
     "chinese": "员额",
     "frequency": 2288,
     "rank": 6686
@@ -22774,24 +22774,24 @@ const VOCABULARY_DATA = [
   {
     "italian": "maniaco",
     "dictionary": "adjective aggettivo crazy mad maniac maniacal",
-    "english": "maniac; manic (2)",
-    "chinese": "疯子; 狂躁症(2)",
+    "english": "maniac; manic",
+    "chinese": "疯子; 狂躁症",
     "frequency": 2286,
     "rank": 6689
   },
   {
     "italian": "soffitto",
     "dictionary": "noun (architettura) (edilizia) (tecnologia) (ingegneria) limite superiore interno di una stanza ceil",
-    "english": "ceiling ceiling ceiling",
-    "chinese": "上限上限",
+    "english": "ceiling",
+    "chinese": "上限",
     "frequency": 2281,
     "rank": 6698
   },
   {
     "italian": "statale",
     "dictionary": "adjective (storia) (politica) (diritto) (economia) dello stato civil servant government state state ",
-    "english": "State; State (2)",
-    "chinese": "状态; 国家(2)",
+    "english": "State",
+    "chinese": "状态; 国家",
     "frequency": 2281,
     "rank": 6699
   },
@@ -22830,7 +22830,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "venditore",
     "dictionary": "adjective che vende selling",
-    "english": "seller; (2)",
+    "english": "seller",
     "chinese": "卖方; (二)",
     "frequency": 2276,
     "rank": 6709
@@ -22918,7 +22918,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "aggiunto",
     "dictionary": "adjective (matematica) di ente che è associato a un altro ente spesso omogeneo added additional",
-    "english": "added value; (2)",
+    "english": "added value",
     "chinese": "增值; (二)",
     "frequency": 2259,
     "rank": 6750
@@ -22958,16 +22958,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "agitato",
     "dictionary": "adjective (di mare) che è ondoso rough (senso figurato) (di persona) che è irrequieto excited fidget",
-    "english": "agitated; agitated (2)",
-    "chinese": "激动; 煽动(2)",
+    "english": "agitated",
+    "chinese": "激动; 煽动",
     "frequency": 2255,
     "rank": 6759
   },
   {
     "italian": "grigio",
     "dictionary": "adjective (colore) (fisica) di colore intermedio tra il bianco e il nero (senso figurato) incerto, s",
-    "english": "grey; grey (2)",
-    "chinese": "灰色; 灰色(2)",
+    "english": "grey",
+    "chinese": "灰色",
     "frequency": 2255,
     "rank": 6760
   },
@@ -22990,7 +22990,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "frattura",
     "dictionary": "noun (medicina) rottura parziale o totale di un osso del corpo fracture (geologia) spa",
-    "english": "fracture fracture",
+    "english": "fracture",
     "chinese": "骨折断裂",
     "frequency": 2248,
     "rank": 6776
@@ -23126,7 +23126,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "inevitabile",
     "dictionary": "adjective che non può essere evitato inescapable inevitable unavoidable",
-    "english": "unavoidable; (2)",
+    "english": "unavoidable",
     "chinese": "不可避免的; (二)",
     "frequency": 2236,
     "rank": 6811
@@ -23166,7 +23166,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sciopero",
     "dictionary": "noun (sociologia) (politica) (diritto) (economia) interruzione volontaria della prestazi",
-    "english": "strike strike",
+    "english": "strike",
     "chinese": "罢工",
     "frequency": 2231,
     "rank": 6824
@@ -23222,8 +23222,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "blog",
     "dictionary": "noun blog",
-    "english": "blog blog",
-    "chinese": "博客博客",
+    "english": "blog",
+    "chinese": "博客",
     "frequency": 2225,
     "rank": 6843
   },
@@ -23270,7 +23270,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "precisione",
     "dictionary": "noun (matematica) (statistica) totale mancanza del minimo errore exactitude precis",
-    "english": "precision precision",
+    "english": "precision",
     "chinese": "精确度",
     "frequency": 2213,
     "rank": 6869
@@ -23278,7 +23278,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "estratto",
     "dictionary": "adjective tirato fuori dall'urna tramite sorteggio drawn excerpt extract extracted selected statemen",
-    "english": "extract; (2)",
+    "english": "extract",
     "chinese": "提取; (二)",
     "frequency": 2208,
     "rank": 6881
@@ -23318,7 +23318,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "silenzioso",
     "dictionary": "adjective mum mute soundless voiceless che ama il silenzio, di poche parole quiet s",
-    "english": "silent silent silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence",
+    "english": "silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence silent silence",
     "chinese": "寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂静寂",
     "frequency": 2204,
     "rank": 6899
@@ -23334,8 +23334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dipingere",
     "dictionary": "verb paint",
-    "english": "paint paint paint",
-    "chinese": "油漆油漆",
+    "english": "paint",
+    "chinese": "油漆",
     "frequency": 2202,
     "rank": 6901
   },
@@ -23398,7 +23398,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tattica",
     "dictionary": "noun (militare) sul campo di battaglia, l'ordine delle truppe e/o dei soldati secondo s",
-    "english": "ta ta ta ta ta ta ta ta",
+    "english": "ta",
     "chinese": "ta:",
     "frequency": 2195,
     "rank": 6924
@@ -23438,8 +23438,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "intimo",
     "dictionary": "adjective che è nascosto e perciò non si vede deep heartfelt",
-    "english": "Underwear; Underwear (2)",
-    "chinese": "内衣; 内衣(2)",
+    "english": "Underwear",
+    "chinese": "内衣",
     "frequency": 2185,
     "rank": 6942
   },
@@ -23566,8 +23566,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "marrone",
     "dictionary": "adjective (colore) di colore castano brown",
-    "english": "brown; brown (2)",
-    "chinese": "棕色; 褐色(2)",
+    "english": "brown",
+    "chinese": "棕色; 褐色",
     "frequency": 2171,
     "rank": 6989
   },
@@ -23662,7 +23662,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scheda",
     "dictionary": "noun foglio rettangolare per annotare informazioni foglio utilizzato per votare (elettronica) (infor",
-    "english": "Cardboard; (2)",
+    "english": "Cardboard",
     "chinese": "纸板; (二)",
     "frequency": 2155,
     "rank": 7027
@@ -23742,8 +23742,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pompa",
     "dictionary": "noun (idraulica) (meccanica) (tecnologia) (ingegneria) macchina idraulica operatrice impi",
-    "english": "pump pump",
-    "chinese": "泵泵",
+    "english": "pump",
+    "chinese": "泵",
     "frequency": 2144,
     "rank": 7052
   },
@@ -23830,8 +23830,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sapone",
     "dictionary": "noun (chimica) (farmacologia) prodotto usato come detergente formato da sostanze alcalin",
-    "english": "soap soap soap",
-    "chinese": "肥皂肥皂",
+    "english": "soap",
+    "chinese": "肥皂",
     "frequency": 2126,
     "rank": 7089
   },
@@ -23854,15 +23854,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "posa",
     "dictionary": "noun gesto di posare dregs pose posing sediment contegno di chi deve essere ritratto o fotografato e",
-    "english": "installation; installation (2)",
-    "chinese": "安装; 安装(2)",
+    "english": "installation",
+    "chinese": "安装",
     "frequency": 2125,
     "rank": 7094
   },
   {
     "italian": "Settimo",
     "dictionary": "pronoun Settimo",
-    "english": "The Week; seventh; (2)",
+    "english": "The Week; seventh",
     "chinese": "该周; 第七届; (二)",
     "frequency": 2125,
     "rank": 7097
@@ -23902,8 +23902,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "rapido",
     "dictionary": "adjective (metallurgia) (tecnologia) (ingegneria) (di) acciaio speciale che si usa per fabbricare ut",
-    "english": "fast speed; Quick (2)",
-    "chinese": "快捷键; 快点(2)",
+    "english": "fast speed; Quick",
+    "chinese": "快捷键; 快点",
     "frequency": 2120,
     "rank": 7108
   },
@@ -23918,7 +23918,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "spaghetti",
     "dictionary": "noun spaghetti",
-    "english": "spaghetti spaghetti",
+    "english": "spaghetti",
     "chinese": "意大利面条",
     "frequency": 2115,
     "rank": 7114
@@ -23990,15 +23990,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "permanente",
     "dictionary": "noun arricciatura non naturale e durevole dei capelli conseguita mediante calore o c",
-    "english": "permanent permanent permanent permanent",
-    "chinese": "常设常设常设",
+    "english": "permanent",
+    "chinese": "常设",
     "frequency": 2100,
     "rank": 7146
   },
   {
     "italian": "schianto",
     "dictionary": "noun (senso figurato) grande dolore bang crack crash (senso figurato) (familiare) cosa,",
-    "english": "crash; crash",
+    "english": "crash",
     "chinese": "撞击；坠毁",
     "frequency": 2100,
     "rank": 7147
@@ -24038,7 +24038,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "estraneo",
     "dictionary": "adjective di individuo, che è fuori da un ambiente strange extraneous irrelevant stranger unknown un",
-    "english": "foreign; (2)",
+    "english": "foreign",
     "chinese": "外国; (二)",
     "frequency": 2091,
     "rank": 7167
@@ -24150,8 +24150,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "elettrico",
     "dictionary": "adjective (fisica) (elettrotecnica) (tecnologia) (ingegneria) che ha a che fare con l'elettricità el",
-    "english": "electric electric electric electric; Electricity (2)",
-    "chinese": "电力; 电力(2)",
+    "english": "electric; Electricity",
+    "chinese": "电力",
     "frequency": 2076,
     "rank": 7204
   },
@@ -24222,8 +24222,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "liscio",
     "dictionary": "adjective privo di rughe e grinze easy mishit simple smoooth",
-    "english": "- Yeah.; Lyrics (2)",
-    "chinese": "- 对; 词组(2)",
+    "english": "- Yeah.; Lyrics",
+    "chinese": "- 对; 词组",
     "frequency": 2064,
     "rank": 7236
   },
@@ -24246,7 +24246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "prosciutto",
     "dictionary": "noun ham",
-    "english": "ha ha ha ha ha ha ha ha ha ha ha",
+    "english": "ha",
     "chinese": "ha乎.",
     "frequency": 2057,
     "rank": 7257
@@ -24286,8 +24286,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "alimentare",
     "dictionary": "adjective (gastronomia) (biologia) relativo agli alimenti alimentary dietary",
-    "english": "Food; Food (2); Food (3)",
-    "chinese": "粮食; 粮食(2); 粮食(3)",
+    "english": "Food",
+    "chinese": "粮食",
     "frequency": 2053,
     "rank": 7268
   },
@@ -24326,8 +24326,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "limone",
     "dictionary": "noun (botanica) pianta, proveniente dall'Asia, delle Rutacee che produce questo frutto; la sua class",
-    "english": "lemon lemon; lemon (2)",
-    "chinese": "柠檬柠檬; 柠檬(2)",
+    "english": "lemon",
+    "chinese": "柠檬",
     "frequency": 2047,
     "rank": 7283
   },
@@ -24382,7 +24382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "contadino",
     "dictionary": "adjective relativo al contado boorish oafish rough",
-    "english": "farmer; (2)",
+    "english": "farmer",
     "chinese": "农民; (二)",
     "frequency": 2041,
     "rank": 7302
@@ -24398,7 +24398,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "missile",
     "dictionary": "noun suitable for throwing (armi) (militare) proiettile teleguidato munito di propulsor",
-    "english": "missile missile",
+    "english": "missile",
     "chinese": "导弹",
     "frequency": 2040,
     "rank": 7306
@@ -24558,7 +24558,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "malinteso",
     "dictionary": "adjective male interpretato misinterpreted mistaken misunderstanding misunderstood",
-    "english": "misunderstanding; (2)",
+    "english": "misunderstanding",
     "chinese": "误解; (二)",
     "frequency": 2020,
     "rank": 7362
@@ -24646,15 +24646,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "country",
     "dictionary": "adjective (forestierismo) (musica) relativo allo stile musicale popolare tipico della campagna degli",
-    "english": "country; Country (2)",
-    "chinese": "国家; 国家(2)",
+    "english": "country",
+    "chinese": "国家",
     "frequency": 2008,
     "rank": 7388
   },
   {
     "italian": "Franco",
     "dictionary": "pronoun Francis Frank",
-    "english": "Franco; franc; (2)",
+    "english": "Franco; franc",
     "chinese": "弗兰科; 法郎; (二)",
     "frequency": 2007,
     "rank": 7393
@@ -24751,7 +24751,7 @@ const VOCABULARY_DATA = [
     "italian": "gelosia",
     "dictionary": "noun jealousy (psicologia) timore di essere tradito dalla persona amata; con di si spe",
     "english": "jealousy",
-    "chinese": "吃醋 吃醋 吃醋 吃醋",
+    "chinese": "吃醋",
     "frequency": 1999,
     "rank": 7423
   },
@@ -24774,7 +24774,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bestiame",
     "dictionary": "noun cattle livestock",
-    "english": "livestock livestock",
+    "english": "livestock",
     "chinese": "畜牧业",
     "frequency": 1998,
     "rank": 7426
@@ -24838,8 +24838,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "caviglia",
     "dictionary": "noun (biologia) regione del collo del piede, in corrispondenza dei malleoli grossa vite",
-    "english": "ankle ankle ankle ankle ankle",
-    "chinese": "脚踝 脚踝",
+    "english": "ankle",
+    "chinese": "脚踝",
     "frequency": 1993,
     "rank": 7445
   },
@@ -24878,7 +24878,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "iniziale",
     "dictionary": "adjective dell'inizio initial beginning first opening starting",
-    "english": "initial; (2)",
+    "english": "initial",
     "chinese": "初始数据; (二)",
     "frequency": 1987,
     "rank": 7460
@@ -24886,8 +24886,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "eletto",
     "dictionary": "adjective che è stato nominato tramite elezioni newly elected (senso figurato) che è prediletto; il ",
-    "english": "vote; elected (2)",
-    "chinese": "表决; 当选(2)",
+    "english": "vote; elected",
+    "chinese": "表决; 当选",
     "frequency": 1984,
     "rank": 7464
   },
@@ -24966,8 +24966,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sentimentale",
     "dictionary": "adjective (letteratura) (cinematografia) di opera cinematografica o letteraria che tratta di una sto",
-    "english": "sentimental; Love (2)",
-    "chinese": "感伤; 爱(2)",
+    "english": "sentimental; Love",
+    "chinese": "感伤; 爱",
     "frequency": 1973,
     "rank": 7488
   },
@@ -24982,8 +24982,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cedere",
     "dictionary": "verb (con complemento di termine, o di causa, oppure assoluto) non riuscire più a resistere all'effe",
-    "english": "yield; transfer (2)",
-    "chinese": "产量; 转让(2)",
+    "english": "yield; transfer",
+    "chinese": "产量; 转让",
     "frequency": 1973,
     "rank": 7491
   },
@@ -25022,8 +25022,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sottomarino",
     "dictionary": "adjective che sta o che è posto sotto la superficie del mare submarine undersea underwater",
-    "english": "submarine; Submarine (2)",
-    "chinese": "潜艇; 潜艇(2)",
+    "english": "submarine",
+    "chinese": "潜艇",
     "frequency": 1968,
     "rank": 7503
   },
@@ -25046,8 +25046,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "stufato",
     "dictionary": "adjective scaldato nella stufa (senso figurato) (familiare) stew",
-    "english": "stew; stew (2)",
-    "chinese": "炖; 炖(2)",
+    "english": "stew",
+    "chinese": "炖",
     "frequency": 1967,
     "rank": 7508
   },
@@ -25070,8 +25070,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "seme",
     "dictionary": "noun (biologia), (botanica) organo vegetale che deriva dall'ovulo fecondato e che nelle a",
-    "english": "seed seed",
-    "chinese": "种子种子",
+    "english": "seed",
+    "chinese": "种子",
     "frequency": 1966,
     "rank": 7515
   },
@@ -25158,7 +25158,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scrittura",
     "dictionary": "noun (economia), (commercio), (finanza) rappresentazione dei movimenti economici e fi",
-    "english": "writing writing",
+    "english": "writing",
     "chinese": "写作",
     "frequency": 1955,
     "rank": 7546
@@ -25175,7 +25175,7 @@ const VOCABULARY_DATA = [
     "italian": "Enrico",
     "dictionary": "pronoun Henry Harry",
     "english": "Henry.",
-    "chinese": "亨利 亨利 亨利 亨利 亨利 Henry.",
+    "chinese": "亨利 Henry.",
     "frequency": 1954,
     "rank": 7549
   },
@@ -25198,7 +25198,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "immediato",
     "dictionary": "adjective che accade subito dopo un evento direct immediate instant prompt spontaneous privo di inte",
-    "english": "immediate immediate",
+    "english": "immediate",
     "chinese": "即时",
     "frequency": 1949,
     "rank": 7565
@@ -25246,7 +25246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "composto",
     "dictionary": "adjective formato da più sostanze unite fra loro composed (araldica) attributo araldico che si appli",
-    "english": "compound; (2)",
+    "english": "compound",
     "chinese": "化合物; (二)",
     "frequency": 1942,
     "rank": 7586
@@ -25278,8 +25278,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vigliacco",
     "dictionary": "adjective che manca di coraggio (per estensione) che, anche se con paure, approfitta della debolezza",
-    "english": "cowardice; cowardice (2)",
-    "chinese": "胆小; 懦夫(2)",
+    "english": "cowardice",
+    "chinese": "胆小; 懦夫",
     "frequency": 1936,
     "rank": 7602
   },
@@ -25310,7 +25310,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "calendario",
     "dictionary": "noun (astronomia) elenco di date, generalmente annuale, che regola un determinato pe",
-    "english": "calendar calendar",
+    "english": "calendar",
     "chinese": "日历",
     "frequency": 1931,
     "rank": 7614
@@ -25334,8 +25334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ognuna",
     "dictionary": "pronoun everyone",
-    "english": "each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each",
-    "chinese": "/ each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/ each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/  each/",
+    "english": "each",
+    "chinese": "/ each/",
     "frequency": 1928,
     "rank": 7623
   },
@@ -25358,8 +25358,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "frontiera",
     "dictionary": "noun (diritto) (geografia) postazione al limite di uno stato per il controllo e la pe",
-    "english": "frontier border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border crossing border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border",
-    "chinese": "边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境边境",
+    "english": "frontier border crossing border",
+    "chinese": "边境",
     "frequency": 1925,
     "rank": 7629
   },
@@ -25374,7 +25374,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "profitto",
     "dictionary": "noun beneficio materiale o spirituale (economia) (commercio) (finanza) eccedenza del r",
-    "english": "profit profit profit",
+    "english": "profit",
     "chinese": "利润",
     "frequency": 1925,
     "rank": 7633
@@ -25486,16 +25486,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "comunista",
     "dictionary": "adjective (storia) (filosofia) del comunismo (politica) (storia) proprio del comunismo Communist com",
-    "english": "communist communist; Communist (2)",
-    "chinese": "共产主义; 共产党(2)",
+    "english": "communist",
+    "chinese": "共产主义; 共产党",
     "frequency": 1913,
     "rank": 7666
   },
   {
     "italian": "tenero",
     "dictionary": "adjective che è morbido tender soft delicate fond gentle loving",
-    "english": "tender; soft (2)",
-    "chinese": "投标; 软(2)",
+    "english": "tender; soft",
+    "chinese": "投标; 软",
     "frequency": 1913,
     "rank": 7668
   },
@@ -25510,8 +25510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "digitale",
     "dictionary": "adjective (biologia) (anatomia) (fisiologia) relativo al dito o a più dita delle estremità foxglove ",
-    "english": "digital digital; digital (2)",
-    "chinese": "数字数字; 数字(2)",
+    "english": "digital",
+    "chinese": "数字",
     "frequency": 1909,
     "rank": 7679
   },
@@ -25542,15 +25542,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "donatore",
     "dictionary": "adjective che dona donor",
-    "english": "donor; donor (2)",
-    "chinese": "捐助者; 捐助者(2)",
+    "english": "donor",
+    "chinese": "捐助者",
     "frequency": 1904,
     "rank": 7695
   },
   {
     "italian": "biologico",
     "dictionary": "adjective biological organic",
-    "english": "organic organic organic",
+    "english": "organic",
     "chinese": "有机有机体",
     "frequency": 1904,
     "rank": 7696
@@ -25566,8 +25566,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "picnic",
     "dictionary": "noun picnic",
-    "english": "picnic picnic picnic",
-    "chinese": "野餐野餐",
+    "english": "picnic",
+    "chinese": "野餐",
     "frequency": 1902,
     "rank": 7700
   },
@@ -25718,7 +25718,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "operativo",
     "dictionary": "adjective che mette in atto un intento operating operational operative (economia) che riguarda i pro",
-    "english": "operating; (2)",
+    "english": "operating",
     "chinese": "运行; (二)",
     "frequency": 1876,
     "rank": 7766
@@ -25742,7 +25742,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "audio",
     "dictionary": "noun il sonoro di una trasmissione audio",
-    "english": "audio audio",
+    "english": "audio",
     "chinese": "音频",
     "frequency": 1874,
     "rank": 7774
@@ -25750,7 +25750,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "esposto",
     "dictionary": "adjective che è posto in vista exhibited manifested shown",
-    "english": "exposed; (2)",
+    "english": "exposed",
     "chinese": "已曝光; (二)",
     "frequency": 1873,
     "rank": 7777
@@ -25758,8 +25758,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "Cristiano",
     "dictionary": "pronoun Cristiano Christian",
-    "english": "Christian; Christian Christian; Christian (2)",
-    "chinese": "基督教徒; 基督教徒(2)",
+    "english": "Christian",
+    "chinese": "基督教徒",
     "frequency": 1871,
     "rank": 7784
   },
@@ -25830,8 +25830,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "protesta",
     "dictionary": "noun complaint remonstrance (per estensione) non accettazione, talvolta con \"tentativi",
-    "english": "protest protest",
-    "chinese": "抗议抗议",
+    "english": "protest",
+    "chinese": "抗议",
     "frequency": 1864,
     "rank": 7806
   },
@@ -25862,8 +25862,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cantiere",
     "dictionary": "noun (edilizia) (tecnologia) (ingegneria) il posto in cui si eseguono lavori edilizi,",
-    "english": "yard yard yard yard yard yard yard",
-    "chinese": "院子 院子 院子",
+    "english": "yard",
+    "chinese": "院子",
     "frequency": 1862,
     "rank": 7811
   },
@@ -25886,7 +25886,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vaccino",
     "dictionary": "adjective di vacca cow cow's cow's milk cows' di animale vaccino bovine cattle",
-    "english": "vaccine; (2)",
+    "english": "vaccine",
     "chinese": "疫苗; (二)",
     "frequency": 1859,
     "rank": 7825
@@ -25894,8 +25894,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "individuo",
     "dictionary": "adjective (letterario) subject",
-    "english": "individual; Individual (2)",
-    "chinese": "个人; 个人(2)",
+    "english": "individual",
+    "chinese": "个人",
     "frequency": 1858,
     "rank": 7826
   },
@@ -25974,8 +25974,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "creatore",
     "dictionary": "adjective che crea (per estensione) che produce, inventa creativ designer",
-    "english": "creator; creator (2)",
-    "chinese": "创建者; 创建者(2)",
+    "english": "creator",
+    "chinese": "创建者",
     "frequency": 1852,
     "rank": 7847
   },
@@ -26054,7 +26054,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "terrorismo",
     "dictionary": "noun terrorism",
-    "english": "terrorism terrorism terrorism",
+    "english": "terrorism",
     "chinese": "恐怖主义",
     "frequency": 1841,
     "rank": 7873
@@ -26158,7 +26158,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "essenziale",
     "dictionary": "adjective che costituisce l'essenza di qualcosa essential basica (chimica) che si riferisce a essenz",
-    "english": "essential; (2)",
+    "english": "essential",
     "chinese": "关键; (二)",
     "frequency": 1827,
     "rank": 7912
@@ -26238,8 +26238,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "maleducato",
     "dictionary": "adjective che non ha ricevuto una buona educazione e/o si comporta in modo incivile che denota inciv",
-    "english": "rude; misguided (2)",
-    "chinese": "粗鲁; 被误导(2)",
+    "english": "rude; misguided",
+    "chinese": "粗鲁; 被误导",
     "frequency": 1819,
     "rank": 7945
   },
@@ -26382,16 +26382,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "passeggero",
     "dictionary": "adjective che passa, che è di passaggio fleeting short-lived",
-    "english": "Passenger; Passenger (2)",
-    "chinese": "乘客; 乘客(2)",
+    "english": "Passenger",
+    "chinese": "乘客",
     "frequency": 1808,
     "rank": 7990
   },
   {
     "italian": "vincente",
     "dictionary": "adjective che arriva primo in una competizione successful winner winning",
-    "english": "Winner; Winner (2)",
-    "chinese": "赢家; 赢家(2)",
+    "english": "Winner",
+    "chinese": "赢家",
     "frequency": 1808,
     "rank": 7991
   },
@@ -26430,7 +26430,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "addetto",
     "dictionary": "adjective assegnato allo svolgimento di un lavoro assigned intended",
-    "english": "Representative; (2)",
+    "english": "Representative",
     "chinese": "代表; (二)",
     "frequency": 1803,
     "rank": 8008
@@ -26462,8 +26462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fritto",
     "dictionary": "adjective (senso figurato) reiterato con monotonia finished",
-    "english": "fried; fried (2)",
-    "chinese": "炸开; 油炸(2)",
+    "english": "fried",
+    "chinese": "炸开; 油炸",
     "frequency": 1797,
     "rank": 8032
   },
@@ -26486,8 +26486,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "critico",
     "dictionary": "adjective (gergale) che, spesso senza validi motivi, tende a voler continuamente trovare i difetti d",
-    "english": "critic; critic (2)",
-    "chinese": "评论家; 评论者(2)",
+    "english": "critic",
+    "chinese": "评论家; 评论者",
     "frequency": 1794,
     "rank": 8046
   },
@@ -26550,7 +26550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "griglia",
     "dictionary": "noun (per estensione) assieme di sostegni, solitamente travi, con una specifica armonia",
-    "english": "grill grill",
+    "english": "grill",
     "chinese": "烧烤架",
     "frequency": 1787,
     "rank": 8073
@@ -26654,8 +26654,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "editore",
     "dictionary": "adjective che compra e vende opere letterarie, musicali, cinematografiche, di divulgazione e simili ",
-    "english": "publisher; publisher (2)",
-    "chinese": "出版社; 出版社(2)",
+    "english": "publisher",
+    "chinese": "出版社",
     "frequency": 1776,
     "rank": 8114
   },
@@ -26702,7 +26702,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "soddisfare",
     "dictionary": "verb rendere soddisfatto satisfy content (matematica) verificare una legge o condizione satisfy",
-    "english": "content; (2)",
+    "english": "content",
     "chinese": "内容; (二)",
     "frequency": 1772,
     "rank": 8130
@@ -26726,8 +26726,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "aggressivo",
     "dictionary": "adjective che tende ad aggredire (senso figurato) che riesce a colpire fortemente i sensi weapon",
-    "english": "aggressive; aggressive (2)",
-    "chinese": "攻击性; 攻击性(2)",
+    "english": "aggressive",
+    "chinese": "攻击性",
     "frequency": 1770,
     "rank": 8141
   },
@@ -26854,8 +26854,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "orientale",
     "dictionary": "adjective (geografia) che è posto verso est rispetto ai quattro punti cardinali terrestri o della vo",
-    "english": "eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern; (2)",
-    "chinese": "东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东莞 东区 东莞 东莞 东莞 东莞 东莞 东 东莞 东莞 东莞 东莞 东 东莞 东莞 东 东莞 东 东莞 东莞 东; (二)",
+    "english": "eastern",
+    "chinese": "东莞 东区 东莞 东 东莞 东 东莞 东 东莞 东 东莞 东; (二)",
     "frequency": 1756,
     "rank": 8188
   },
@@ -26886,7 +26886,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tossico",
     "dictionary": "adjective (chimica) (medicina) (farmacologia) nocivo per la salute poison poisonous toxic toxicant",
-    "english": "toxic; (2)",
+    "english": "toxic",
     "chinese": "毒性; (二)",
     "frequency": 1751,
     "rank": 8205
@@ -27046,7 +27046,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "spiritoso",
     "dictionary": "adjective che racchiude alcool smarty wiseass che è fornito di senso dell'umorismo witty funny smart",
-    "english": "spirit; (2)",
+    "english": "spirit",
     "chinese": "精神; (二)",
     "frequency": 1733,
     "rank": 8267
@@ -27278,8 +27278,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "grotta",
     "dictionary": "noun (geografia) (geologia) caverna, cavità in un monte o nelle viscere della terra part",
-    "english": "cave cave",
-    "chinese": "洞穴 洞穴 洞穴 洞穴 洞穴",
+    "english": "cave",
+    "chinese": "洞穴",
     "frequency": 1698,
     "rank": 8353
   },
@@ -27294,7 +27294,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sospensione",
     "dictionary": "noun blocco temporaneo di qualcosa (fisica) (chimica) (medicina) (farmacologia) mis",
-    "english": "suspension suspension",
+    "english": "suspension",
     "chinese": "暂停",
     "frequency": 1697,
     "rank": 8356
@@ -27374,7 +27374,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "allegro",
     "dictionary": "adjective di persona che prova, sente o dimostra allegria, portata per natura all'allegria cheerful ",
-    "english": "cheerful; (2)",
+    "english": "cheerful",
     "chinese": "高兴; (二)",
     "frequency": 1692,
     "rank": 8379
@@ -27382,7 +27382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tosto",
     "dictionary": "adjective ostinato, caparbio attraente al limite dell'inverosimile at once immediately tough",
-    "english": "toast; (2)",
+    "english": "toast",
     "chinese": "祝酒词; (二)",
     "frequency": 1690,
     "rank": 8384
@@ -27390,8 +27390,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "immortale",
     "dictionary": "adjective (filosofia) (religione) non mortale (senso figurato) che dura in eterno everlasting immort",
-    "english": "immortal; immortal (2)",
-    "chinese": "长生不老; 长生不老(2)",
+    "english": "immortal",
+    "chinese": "长生不老",
     "frequency": 1689,
     "rank": 8387
   },
@@ -27446,7 +27446,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "azzurro",
     "dictionary": "adjective di colore azzurro; light-blue",
-    "english": "blue; (2)",
+    "english": "blue",
     "chinese": "蓝色; (二)",
     "frequency": 1684,
     "rank": 8400
@@ -27462,8 +27462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "neonato",
     "dictionary": "adjective che è nato da poco tempo infant newborn",
-    "english": "baby; baby (2)",
-    "chinese": "宝宝; 婴儿(2)",
+    "english": "baby",
+    "chinese": "宝宝; 婴儿",
     "frequency": 1681,
     "rank": 8408
   },
@@ -27510,8 +27510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "automatico",
     "dictionary": "adjective (tecnologia) (ingegneria) in grado di funzionare da sé (senso figurato) logico, implicito,",
-    "english": "automatic automatic",
-    "chinese": "自动自动",
+    "english": "automatic",
+    "chinese": "自动",
     "frequency": 1677,
     "rank": 8426
   },
@@ -27558,7 +27558,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "moderno",
     "dictionary": "adjective del tempo presente, attuale o contemporaneo modern contemporary",
-    "english": "modern modern",
+    "english": "modern",
     "chinese": "现代",
     "frequency": 1672,
     "rank": 8439
@@ -27598,7 +27598,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "genetica",
     "dictionary": "noun (biologia) ramo della biologia che si occupa dei caratteri trasmissibili dai ge",
-    "english": "genetic genetic engineering",
+    "english": "genetic engineering",
     "chinese": "遗传工程",
     "frequency": 1669,
     "rank": 8452
@@ -27742,7 +27742,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "separazione",
     "dictionary": "noun azione e risultato del separare o del separarsi separation detachment divisi",
-    "english": "separation separation",
+    "english": "separation",
     "chinese": "离职",
     "frequency": 1657,
     "rank": 8497
@@ -27782,8 +27782,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "riflesso",
     "dictionary": "adjective che ha ricevuto un procedimento di riflessione consequence effect glint mirrored reflected",
-    "english": "reflection; reflex (2)",
-    "chinese": "反思; 反射(2)",
+    "english": "reflection; reflex",
+    "chinese": "反思; 反射",
     "frequency": 1654,
     "rank": 8510
   },
@@ -27862,8 +27862,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "comico",
     "dictionary": "adjective che suscita ilarità comic comical",
-    "english": "comedian; comic (2)",
-    "chinese": "喜剧演员; 漫画(2)",
+    "english": "comedian; comic",
+    "chinese": "喜剧演员; 漫画",
     "frequency": 1644,
     "rank": 8533
   },
@@ -27974,8 +27974,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pompino",
     "dictionary": "noun (volgare) fellazione blow job",
-    "english": "blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob",
-    "chinese": "口交 口交 口交 口交 口交 口交 口交 口交",
+    "english": "blowjob",
+    "chinese": "口交",
     "frequency": 1632,
     "rank": 8576
   },
@@ -27990,7 +27990,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "specialista",
     "dictionary": "adjective di medico esperto in un particolare settore professionale consultant expert specialist spe",
-    "english": "specialist; (2)",
+    "english": "specialist",
     "chinese": "专家; (二)",
     "frequency": 1632,
     "rank": 8578
@@ -28262,7 +28262,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "arancione",
     "dictionary": "noun (colore) colore dell'arancia orange",
-    "english": "orange orange",
+    "english": "orange",
     "chinese": "橙红色",
     "frequency": 1604,
     "rank": 8696
@@ -28270,7 +28270,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rio",
     "dictionary": "adjective ostile (antico) colpevole rivulet stream",
-    "english": "♪; (2)",
+    "english": "♪",
     "chinese": "(待修复); (二)",
     "frequency": 1604,
     "rank": 8697
@@ -28326,8 +28326,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tragico",
     "dictionary": "adjective attinente alla tragedia tragic tragical",
-    "english": "tragic; (2); Tragic (3)",
-    "chinese": "悲剧; (二); 悲剧(3)",
+    "english": "tragic",
+    "chinese": "悲剧; (二)",
     "frequency": 1600,
     "rank": 8714
   },
@@ -28414,8 +28414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "industriale",
     "dictionary": "adjective (economia) (tecnologia) che riguarda l'industria industrial",
-    "english": "industrial industry; Industrial (2)",
-    "chinese": "工业; 工业(2)",
+    "english": "industrial industry; Industrial",
+    "chinese": "工业",
     "frequency": 1594,
     "rank": 8740
   },
@@ -28438,8 +28438,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bandito",
     "dictionary": "adjective che è stato messo al bando banned outlawed prohibited",
-    "english": "banished; band (2)",
-    "chinese": "被驱逐; 带(2)",
+    "english": "banished; band",
+    "chinese": "被驱逐; 带",
     "frequency": 1591,
     "rank": 8747
   },
@@ -28526,8 +28526,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "deficiente",
     "dictionary": "adjective notevolmente scarso o insufficiente inadequate insufficient (per estensione) (spregiativo)",
-    "english": "Deficient; defiant (2)",
-    "chinese": "不足; 反对者(2)",
+    "english": "Deficient; defiant",
+    "chinese": "不足; 反对者",
     "frequency": 1584,
     "rank": 8774
   },
@@ -28574,7 +28574,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "lavandino",
     "dictionary": "noun washbasin washbowl",
-    "english": "sink sink",
+    "english": "sink",
     "chinese": "沉没槽",
     "frequency": 1578,
     "rank": 8800
@@ -28598,8 +28598,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "documentario",
     "dictionary": "adjective di documento ciò che è atto a documentare (linguistica) caratteristica di ciò che fornisce",
-    "english": "documentary documentary; documentary (2)",
-    "chinese": "纪录片; 记录(2)",
+    "english": "documentary",
+    "chinese": "纪录片; 记录",
     "frequency": 1576,
     "rank": 8815
   },
@@ -28782,8 +28782,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sportivo",
     "dictionary": "adjective (riferito solo a persone) che ama lo sport sporty",
-    "english": "sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports; Sports (2)",
-    "chinese": "体育体育 体育体育 体育体育 体育体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育 体育; 体育(2)",
+    "english": "sports",
+    "chinese": "体育",
     "frequency": 1559,
     "rank": 8884
   },
@@ -28878,7 +28878,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "colla",
     "dictionary": "noun sostanza adesiva o appiccicosa glue",
-    "english": "glue; (2)",
+    "english": "glue",
     "chinese": "胶; (二)",
     "frequency": 1553,
     "rank": 8917
@@ -28918,8 +28918,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "chimico",
     "dictionary": "adjective (chimica) relativo alla disciplina della chimica chemical",
-    "english": "chemical; Chemicals (2)",
-    "chinese": "化学; 化学品(2)",
+    "english": "chemical; Chemicals",
+    "chinese": "化学; 化学品",
     "frequency": 1549,
     "rank": 8940
   },
@@ -28942,15 +28942,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "logico",
     "dictionary": "adjective (filosofia) (matematica) inerente alla logica logical obvious (di persona) che ragiona in ",
-    "english": "logic; logic (2)",
-    "chinese": "逻辑; 逻辑(2)",
+    "english": "logic",
+    "chinese": "逻辑",
     "frequency": 1548,
     "rank": 8945
   },
   {
     "italian": "appassionato",
     "dictionary": "adjective che sente una forte attrazione per una persona o una cosa; che ha una disposizione natural",
-    "english": "passionate; (1)",
+    "english": "passionate",
     "chinese": "热情; (1) 国家",
     "frequency": 1548,
     "rank": 8947
@@ -28990,16 +28990,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "temporaneo",
     "dictionary": "adjective limitato nel tempo di una cosa, di un fatto che ha un inizio ed una fine m",
-    "english": "temporary temporary temporary",
-    "chinese": "临时临时",
+    "english": "temporary",
+    "chinese": "临时",
     "frequency": 1545,
     "rank": 8960
   },
   {
     "italian": "adesivo",
     "dictionary": "adjective che si può attaccare, appiccicare o incollare grazie a una parte o superficie collosa. C'è",
-    "english": "sticker; adhesive (2)",
-    "chinese": "标签; 粘合物 (2)",
+    "english": "sticker; adhesive",
+    "chinese": "标签; 粘合物",
     "frequency": 1545,
     "rank": 8962
   },
@@ -29126,8 +29126,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "circolare",
     "dictionary": "adjective (diritto) (economia) (commercio) (finanza) (di) modulo di credito che, una volta opportuna",
-    "english": "circular; Circular (2); Circular (3)",
-    "chinese": "圆形; 通知(2); 通知(3)",
+    "english": "circular",
+    "chinese": "圆形; 通知",
     "frequency": 1532,
     "rank": 9014
   },
@@ -29246,7 +29246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "master",
     "dictionary": "noun (forestierismo) titolo di studio di tipo professionale, successivo alla laurea (tec",
-    "english": "master master",
+    "english": "master",
     "chinese": "师傅",
     "frequency": 1514,
     "rank": 9075
@@ -29294,7 +29294,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rientro",
     "dictionary": "noun re-entry return",
-    "english": "return return",
+    "english": "return",
     "chinese": "返回回归",
     "frequency": 1510,
     "rank": 9098
@@ -29422,8 +29422,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "turco",
     "dictionary": "adjective (geografia) relativo alla Turchia Turkish Turk",
-    "english": "Turkey; Turkish (2); Turkish (3)",
-    "chinese": "土耳其; 土耳其(2); 土耳其(3)",
+    "english": "Turkey; Turkish",
+    "chinese": "土耳其",
     "frequency": 1498,
     "rank": 9138
   },
@@ -29454,8 +29454,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "camino",
     "dictionary": "noun (edilizia) (architettura) (ecologia) nelle abitazioni impianto , ricavato da un mur",
-    "english": "fireplace fireplace fireplace fireplace",
-    "chinese": "壁炉 壁炉 壁炉 壁炉",
+    "english": "fireplace",
+    "chinese": "壁炉",
     "frequency": 1496,
     "rank": 9152
   },
@@ -29471,7 +29471,7 @@ const VOCABULARY_DATA = [
     "italian": "beccata",
     "dictionary": "noun peck",
     "english": "caught.",
-    "chinese": "抓住了 抓住了 抓住了",
+    "chinese": "抓住了",
     "frequency": 1494,
     "rank": 9158
   },
@@ -29486,8 +29486,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "idraulico",
     "dictionary": "adjective (fisica) (idraulica) (tecnologia) (ingegneria) attinente alla scienza idraulica plumbing",
-    "english": "hydraulic; hydraulics (2)",
-    "chinese": "液压; 液压设备(2)",
+    "english": "hydraulic; hydraulics",
+    "chinese": "液压; 液压设备",
     "frequency": 1494,
     "rank": 9161
   },
@@ -29534,7 +29534,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "formale",
     "dictionary": "adjective (grammatica) (filosofia) che riguarda la forma formal (matematica) (statistic",
-    "english": "formal formal",
+    "english": "formal",
     "chinese": "正式正规",
     "frequency": 1490,
     "rank": 9176
@@ -29758,8 +29758,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "guasto",
     "dictionary": "adjective che è inutilizzabile (di cibo) che è andato a male breakdown fault failure damage glitch m",
-    "english": "fault; fault (2)",
-    "chinese": "错; 过失(2)",
+    "english": "fault",
+    "chinese": "错; 过失",
     "frequency": 1471,
     "rank": 9247
   },
@@ -29806,8 +29806,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "maturo",
     "dictionary": "adjective (botanica) di frutto che è pronto per essere commestibile ripe adult mature sensible wise",
-    "english": "mature; Mature (2)",
-    "chinese": "成熟; 性质(2)",
+    "english": "mature",
+    "chinese": "成熟; 性质",
     "frequency": 1467,
     "rank": 9269
   },
@@ -29830,8 +29830,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "testardo",
     "dictionary": "adjective che persiste nel restare caparbiamente attaccato al proprio modo di pensare , rifiutando d",
-    "english": "stubborn; Duck (2)",
-    "chinese": "固执; 鸭子(2)",
+    "english": "stubborn; Duck",
+    "chinese": "固执; 鸭子",
     "frequency": 1466,
     "rank": 9277
   },
@@ -30014,8 +30014,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "velo",
     "dictionary": "noun (abbigliamento) leggero tessuto diafano di cotone o di seta voile",
-    "english": "veil veil veil veil veil veil veil veil veil veil veil veil veil veil",
-    "chinese": "面纱 面纱 面纱 面纱",
+    "english": "veil",
+    "chinese": "面纱",
     "frequency": 1451,
     "rank": 9346
   },
@@ -30126,8 +30126,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "serbatoio",
     "dictionary": "noun cistern",
-    "english": "tank tank",
-    "chinese": "坦克坦克",
+    "english": "tank",
+    "chinese": "坦克",
     "frequency": 1440,
     "rank": 9393
   },
@@ -30182,7 +30182,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "formato",
     "dictionary": "adjective che è compiuto format fully-developed fully-grown grown-up size",
-    "english": "format; (2)",
+    "english": "format",
     "chinese": "格式; (二)",
     "frequency": 1435,
     "rank": 9410
@@ -30190,7 +30190,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ansioso",
     "dictionary": "adjective che prova ansia anxious eager impatient (psicologia) (medicina) (psichiatria) (psicanalisi",
-    "english": "anxious; (2)",
+    "english": "anxious",
     "chinese": "焦虑; (二)",
     "frequency": 1435,
     "rank": 9415
@@ -30238,8 +30238,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "distinguere",
     "dictionary": "verb distinguish (raro) avere la possibilità di scegliere tra cose piacevoli e desi",
-    "english": "distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguish between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguish between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguish between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguish between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing",
-    "chinese": "区分区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别 区别",
+    "english": "distinguishing between distinguishing between distinguishing between distinguishing between distinguishing between distinguishing between distinguishing between distinguishing between distinguishing distinguish between distinguishing distinguish between distinguishing distinguish between distinguishing distinguish between distinguishing",
+    "chinese": "区分区别 区别",
     "frequency": 1429,
     "rank": 9438
   },
@@ -30278,7 +30278,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "telecomando",
     "dictionary": "noun (elettronica) dispositivo per comandare a distanza, per telecomandare remote c",
-    "english": "remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote",
+    "english": "remote",
     "chinese": "遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥遥望",
     "frequency": 1424,
     "rank": 9459
@@ -30318,7 +30318,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "valvola",
     "dictionary": "noun (idraulica) (meccanica) (tecnologia) (ingegneria) dispositivo meccanico che blocca",
-    "english": "valve valve",
+    "english": "valve",
     "chinese": "阀门",
     "frequency": 1423,
     "rank": 9470
@@ -30398,8 +30398,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "visivo",
     "dictionary": "adjective visual",
-    "english": "visual visual visual",
-    "chinese": "视觉视觉",
+    "english": "visual",
+    "chinese": "视觉",
     "frequency": 1418,
     "rank": 9502
   },
@@ -30551,7 +30551,7 @@ const VOCABULARY_DATA = [
     "italian": "pelliccia",
     "dictionary": "noun (araldica) smalto araldico che può essere utilizzato sia come metallo che come",
     "english": "fur coat",
-    "chinese": "毛皮大衣 毛皮大衣",
+    "chinese": "毛皮大衣",
     "frequency": 1404,
     "rank": 9555
   },
@@ -30718,7 +30718,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "estivo",
     "dictionary": "adjective summery summer",
-    "english": "summer summer",
+    "english": "summer",
     "chinese": "夏令时",
     "frequency": 1395,
     "rank": 9609
@@ -30854,8 +30854,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dirigente",
     "dictionary": "adjective che concerne l'attività di direzione leading managing ruling",
-    "english": "executive; manager (2)",
-    "chinese": "执行; 经理(2)",
+    "english": "executive; manager",
+    "chinese": "执行; 经理",
     "frequency": 1385,
     "rank": 9662
   },
@@ -30902,8 +30902,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "continente",
     "dictionary": "adjective moderato, che sa contenersi, frenarsi moderate restraint",
-    "english": "continent; Country (2)",
-    "chinese": "大陆; 国家(2)",
+    "english": "continent; Country",
+    "chinese": "大陆; 国家",
     "frequency": 1381,
     "rank": 9677
   },
@@ -31030,7 +31030,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "guscio",
     "dictionary": "noun shell",
-    "english": "shell shell",
+    "english": "shell",
     "chinese": "贝壳",
     "frequency": 1373,
     "rank": 9720
@@ -31038,8 +31038,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ignoto",
     "dictionary": "adjective che non è conosciuto unknown",
-    "english": "unknown; Unknown (2)",
-    "chinese": "不详; 未知(2)",
+    "english": "unknown",
+    "chinese": "不详; 未知",
     "frequency": 1373,
     "rank": 9721
   },
@@ -31094,8 +31094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "coreano",
     "dictionary": "adjective (geografia) proveniente dalla Corea oppure relazionato con essa Korean",
-    "english": "Korean; Korean (2); Korean (3)",
-    "chinese": "韩语; 韩语(2); 韩语(3)",
+    "english": "Korean",
+    "chinese": "韩语",
     "frequency": 1371,
     "rank": 9732
   },
@@ -31118,8 +31118,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "esemplare",
     "dictionary": "adjective che rappresenta un originale copy exemplary model persona con caratteristiche ammirevoli c",
-    "english": "specimen; specimen (2)",
-    "chinese": "标本; 标本(2)",
+    "english": "specimen",
+    "chinese": "标本",
     "frequency": 1369,
     "rank": 9738
   },
@@ -31190,8 +31190,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ombrello",
     "dictionary": "noun (tessile) strumento per ripararsi dalla pioggia o dal sole, formato da un manico",
-    "english": "umbrella umbrella umbrella",
-    "chinese": "伞伞",
+    "english": "umbrella",
+    "chinese": "伞",
     "frequency": 1363,
     "rank": 9765
   },
@@ -31206,8 +31206,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "domestico",
     "dictionary": "adjective relativo alla casa domestic familyhold homehold household servant di animale allevato in c",
-    "english": "Home; House (2)",
-    "chinese": "页 次; 房屋(2)",
+    "english": "Home; House",
+    "chinese": "页 次; 房屋",
     "frequency": 1363,
     "rank": 9767
   },
@@ -31246,7 +31246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "comunale",
     "dictionary": "adjective civic municipal town",
-    "english": "municipal municipal",
+    "english": "municipal",
     "chinese": "市政府",
     "frequency": 1362,
     "rank": 9774
@@ -31286,7 +31286,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "grana",
     "dictionary": "noun oggetto granuloso grain (gastronomia) formaggio caratteristico dell'Emilia e della Lombardia Gr",
-    "english": "grain; (2)",
+    "english": "grain",
     "chinese": "谷物; (二)",
     "frequency": 1359,
     "rank": 9794
@@ -31534,8 +31534,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "truffatore",
     "dictionary": "adjective che è ideatore di truffe cheater crook swindler",
-    "english": "fraud; cheating (2)",
-    "chinese": "欺诈; 欺骗(2)",
+    "english": "fraud; cheating",
+    "chinese": "欺诈; 欺骗",
     "frequency": 1344,
     "rank": 9876
   },
@@ -31743,7 +31743,7 @@ const VOCABULARY_DATA = [
     "italian": "sbronza",
     "dictionary": "noun leggera ubriacatura drunk loaded plastered stoned tight",
     "english": "drunkenness",
-    "chinese": "醉酒 醉酒 醉酒 醉酒 醉酒",
+    "chinese": "醉酒",
     "frequency": 1326,
     "rank": 9973
   },
@@ -31894,7 +31894,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "preliminare",
     "dictionary": "adjective che è preparatorio a qualcos'altro provisional temporary",
-    "english": "preliminary preliminary; (2)",
+    "english": "preliminary",
     "chinese": "初步初步数据; (二)",
     "frequency": 1314,
     "rank": 10035
@@ -31918,8 +31918,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "omosessuale",
     "dictionary": "adjective (sessualità) relativo all'omosessualità (sessualità) di persona che ha relazioni affettive",
-    "english": "homosexual; homosexual (2)",
-    "chinese": "同性恋; 同性恋(2)",
+    "english": "homosexual",
+    "chinese": "同性恋",
     "frequency": 1313,
     "rank": 10048
   },
@@ -31951,7 +31951,7 @@ const VOCABULARY_DATA = [
     "italian": "macello",
     "dictionary": "noun abattoir",
     "english": "Butcher",
-    "chinese": "屠夫 屠夫 屠夫",
+    "chinese": "屠夫",
     "frequency": 1310,
     "rank": 10063
   },
@@ -31959,15 +31959,15 @@ const VOCABULARY_DATA = [
     "italian": "Giacomo",
     "dictionary": "pronoun James Jack Jake Jim",
     "english": "James",
-    "chinese": "詹姆士 詹姆士 詹姆士",
+    "chinese": "詹姆士",
     "frequency": 1309,
     "rank": 10067
   },
   {
     "italian": "urina",
     "dictionary": "noun (biologia) (biochimica) (fisiologia) (medicina) liquido giallo chiaro espulso (dal p",
-    "english": "urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine",
-    "chinese": "尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿尿",
+    "english": "urine",
+    "chinese": "尿",
     "frequency": 1309,
     "rank": 10068
   },
@@ -32038,7 +32038,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "interiore",
     "dictionary": "adjective che è all'interno inner inside interior internal inward (senso figurato) ch",
-    "english": "interior interior",
+    "english": "interior",
     "chinese": "内部",
     "frequency": 1305,
     "rank": 10093
@@ -32158,8 +32158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ignorante",
     "dictionary": "adjective (filosofia) (psicologia) che ignora qualcosa ignorant unaware unknowing (per estensione) c",
-    "english": "ignorant; ignorant (2)",
-    "chinese": "无知; 无知(2)",
+    "english": "ignorant",
+    "chinese": "无知",
     "frequency": 1298,
     "rank": 10137
   },
@@ -32175,7 +32175,7 @@ const VOCABULARY_DATA = [
     "italian": "culturale",
     "dictionary": "adjective cultural",
     "english": "cultural culture",
-    "chinese": "文化文化",
+    "chinese": "文化",
     "frequency": 1297,
     "rank": 10148
   },
@@ -32198,8 +32198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "carbonio",
     "dictionary": "noun (chimica) elemento chimico solido, facente parte del gruppo dei non metalli, aven",
-    "english": "carbon carbon carbon",
-    "chinese": "碳碳 碳",
+    "english": "carbon",
+    "chinese": "碳",
     "frequency": 1295,
     "rank": 10163
   },
@@ -32254,7 +32254,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "alleato",
     "dictionary": "adjective che ha stipulato un patto di alleanza allied ally brother fellow",
-    "english": "ally; (2)",
+    "english": "ally",
     "chinese": "爱丽; (二)",
     "frequency": 1292,
     "rank": 10177
@@ -32286,7 +32286,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "serbo",
     "dictionary": "adjective (geografia) relativo alla Serbia Serbian relativo agli abitanti della Serbia Serb Serbian",
-    "english": "Serious; (2)",
+    "english": "Serious",
     "chinese": "严重; (二)",
     "frequency": 1290,
     "rank": 10185
@@ -32318,7 +32318,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vagabondo",
     "dictionary": "adjective (antropologia) (sociologia) (diritto) di persona o animale che non ha fissa dimora, che è ",
-    "english": "wandering; (2)",
+    "english": "wandering",
     "chinese": "闲逛; (二)",
     "frequency": 1289,
     "rank": 10192
@@ -32390,8 +32390,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "canadese",
     "dictionary": "adjective (geografia) (diritto) relativo al Canada Canadian",
-    "english": "Canada; Canada (2)",
-    "chinese": "加拿大; 加拿大(2)",
+    "english": "Canada",
+    "chinese": "加拿大",
     "frequency": 1286,
     "rank": 10213
   },
@@ -32414,7 +32414,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sportiva",
     "dictionary": "noun (sport) persona che pratica sport sportsperson sportswoman sporty",
-    "english": "sports sports sports",
+    "english": "sports",
     "chinese": "体育运动",
     "frequency": 1284,
     "rank": 10223
@@ -32454,8 +32454,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "messaggero",
     "dictionary": "adjective che porta un messaggio harbinger messenger",
-    "english": "messenger; messenger (2)",
-    "chinese": "送信员; 送信员(2)",
+    "english": "messenger",
+    "chinese": "送信员",
     "frequency": 1282,
     "rank": 10233
   },
@@ -32726,7 +32726,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "forzato",
     "dictionary": "adjective costretto, obbligato a forza, privo di naturalezza arbitrary contrived forced strained twi",
-    "english": "forced; (2)",
+    "english": "forced",
     "chinese": "强制; (二)",
     "frequency": 1265,
     "rank": 10335
@@ -32806,16 +32806,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "intento",
     "dictionary": "adjective che manifesta volontà potenziale aim attempt busy goal purpose",
-    "english": "intent; intent (2)",
-    "chinese": "意图; 意图(2)",
+    "english": "intent",
+    "chinese": "意图",
     "frequency": 1263,
     "rank": 10361
   },
   {
     "italian": "schiuma",
     "dictionary": "noun foam",
-    "english": "foam foam foam",
-    "chinese": "泡沫泡沫泡沫",
+    "english": "foam",
+    "chinese": "泡沫",
     "frequency": 1262,
     "rank": 10364
   },
@@ -32854,7 +32854,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scolastica",
     "dictionary": "noun (religione) (cristianesimo) (storia) (filosofia) sistema filosofico che tende a",
-    "english": "school school",
+    "english": "school",
     "chinese": "学校",
     "frequency": 1260,
     "rank": 10379
@@ -32886,8 +32886,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cappuccio",
     "dictionary": "adjective di tipi di piante simili ad un cappuccio cap",
-    "english": "hood; hood (2)",
-    "chinese": "头罩; 头罩(2)",
+    "english": "hood",
+    "chinese": "头罩",
     "frequency": 1257,
     "rank": 10394
   },
@@ -32918,7 +32918,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "concentrarsi",
     "dictionary": "verb assemble (familiare) prestare attenzione studiare con cura (per estensione)",
-    "english": "focus focus",
+    "english": "focus",
     "chinese": "重点",
     "frequency": 1255,
     "rank": 10406
@@ -32967,7 +32967,7 @@ const VOCABULARY_DATA = [
     "italian": "budino",
     "dictionary": "noun (gastronomia) dolce cotto in forma e fatto con semolino, latte uova, zucchero, cioc",
     "english": "pudding",
-    "chinese": "-布丁 -布丁 -布丁 -布丁",
+    "chinese": "-布丁",
     "frequency": 1254,
     "rank": 10423
   },
@@ -33014,7 +33014,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "striscia",
     "dictionary": "noun slip strap swathe (tessile), (abbigliamento) pezzo di tessuto lungo e stretto stri",
-    "english": "Stripe Stripe",
+    "english": "Stripe",
     "chinese": "条纹",
     "frequency": 1251,
     "rank": 10440
@@ -33038,7 +33038,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "binario",
     "dictionary": "adjective (elettronica) (informatica) qualifica di dispositivi in grado di eseguire operazioni aritm",
-    "english": "binary binary track; Track (2)",
+    "english": "binary track; Track",
     "chinese": "二进制轨道; 第(2)轨",
     "frequency": 1250,
     "rank": 10447
@@ -33094,8 +33094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "simulazione",
     "dictionary": "noun azione e risultato del simulare simulation feigning play-acting pretence",
-    "english": "simulation simulation simulation",
-    "chinese": "模拟模拟模拟",
+    "english": "simulation",
+    "chinese": "模拟",
     "frequency": 1247,
     "rank": 10461
   },
@@ -33134,8 +33134,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "disgraziato",
     "dictionary": "adjective infelice, colpito dalla disgrazia rascal rogue scoundrel wretch che ha subito una disgrazi",
-    "english": "disgraced; misfortune (2)",
-    "chinese": "丢人; 不幸(2)",
+    "english": "disgraced; misfortune",
+    "chinese": "丢人; 不幸",
     "frequency": 1246,
     "rank": 10467
   },
@@ -33367,7 +33367,7 @@ const VOCABULARY_DATA = [
     "italian": "piscio",
     "dictionary": "noun (gergale), (familiare), (volgare) termine informale e volgare per urina piss",
     "english": "piss",
-    "chinese": "撒尿 撒尿",
+    "chinese": "撒尿",
     "frequency": 1230,
     "rank": 10556
   },
@@ -33398,7 +33398,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sacerdote",
     "dictionary": "noun (professione) (religione) chi presiede alle cerimonie del culto di una religio",
-    "english": "priest priest",
+    "english": "priest",
     "chinese": "牧师",
     "frequency": 1229,
     "rank": 10561
@@ -33406,8 +33406,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vassoio",
     "dictionary": "noun }} hawk tray",
-    "english": "Tray tray",
-    "chinese": "托盘托盘",
+    "english": "Tray",
+    "chinese": "托盘",
     "frequency": 1228,
     "rank": 10566
   },
@@ -33422,8 +33422,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "parassita",
     "dictionary": "adjective (elettrotecnica) di corrente elettrica, generata da una macchina, che dissipa energia para",
-    "english": "parasite; parasite (2)",
-    "chinese": "寄生虫; 寄生虫(2)",
+    "english": "parasite",
+    "chinese": "寄生虫",
     "frequency": 1227,
     "rank": 10570
   },
@@ -33510,8 +33510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ballerino",
     "dictionary": "adjective (senso figurato) instabile dancing unstable",
-    "english": "dancer; dancer (2)",
-    "chinese": "舞者们; 舞者(2)",
+    "english": "dancer",
+    "chinese": "舞者们; 舞者",
     "frequency": 1221,
     "rank": 10614
   },
@@ -33566,7 +33566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "satellitare",
     "dictionary": "adjective satellite",
-    "english": "Satellite satellite",
+    "english": "Satellite",
     "chinese": "卫星",
     "frequency": 1218,
     "rank": 10632
@@ -33686,7 +33686,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "interamente",
     "dictionary": "adverb completely entirely quite wholly",
-    "english": "entirely entirely entirely",
+    "english": "entirely",
     "chinese": "完全彻底的",
     "frequency": 1212,
     "rank": 10676
@@ -33750,7 +33750,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "preliminari",
     "dictionary": "noun (sessualità) atti sessuali preparativi al coito introductory preliminary preparatory",
-    "english": "preliminary preliminary",
+    "english": "preliminary",
     "chinese": "初步初步数据",
     "frequency": 1207,
     "rank": 10708
@@ -33782,7 +33782,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tendenza",
     "dictionary": "noun propensione naturale inclination penchant tendency trend (per estensione) attitu",
-    "english": "trend trend",
+    "english": "trend",
     "chinese": "趋势",
     "frequency": 1205,
     "rank": 10720
@@ -33870,7 +33870,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "minorenne",
     "dictionary": "adjective che non ha raggiunto la maggiore età underage",
-    "english": "minor; (2)",
+    "english": "minor",
     "chinese": "轻微; (二)",
     "frequency": 1198,
     "rank": 10751
@@ -33902,8 +33902,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "acceleratore",
     "dictionary": "adjective che accelera accelerant accelerator",
-    "english": "accelerator; accelerator (2)",
-    "chinese": "加速器; 加速器(2)",
+    "english": "accelerator",
+    "chinese": "加速器",
     "frequency": 1196,
     "rank": 10759
   },
@@ -33926,7 +33926,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "alimentari",
     "dictionary": "noun generi commestibili food alimentary",
-    "english": "food food",
+    "english": "food",
     "chinese": "食品",
     "frequency": 1194,
     "rank": 10772
@@ -33982,7 +33982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "radice",
     "dictionary": "noun (botanica) parte della pianta che si trova sotto terra (linguistica) parte comune",
-    "english": "root root",
+    "english": "root",
     "chinese": "根根头",
     "frequency": 1191,
     "rank": 10788
@@ -34054,8 +34054,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "scansione",
     "dictionary": "noun (metrica) pronuncia intervallata ed esatta delle parole o delle sillabe scansion",
-    "english": "scan scan scan",
-    "chinese": "扫描扫描",
+    "english": "scan",
+    "chinese": "扫描",
     "frequency": 1188,
     "rank": 10810
   },
@@ -34214,8 +34214,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "combattente",
     "dictionary": "adjective (storia) (militare) che prende parte a uno scontro armato combatant fighting",
-    "english": "fighter; fighter (2)",
-    "chinese": "战斗机; 战斗机(2)",
+    "english": "fighter",
+    "chinese": "战斗机",
     "frequency": 1180,
     "rank": 10872
   },
@@ -34230,7 +34230,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bilancio",
     "dictionary": "noun (diritto) (economia) (commercio) (finanza) differenza calcolata, in un periodo d",
-    "english": "budget budget",
+    "english": "budget",
     "chinese": "预算",
     "frequency": 1179,
     "rank": 10877
@@ -34262,7 +34262,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "universale",
     "dictionary": "adjective general universal",
-    "english": "universal universal",
+    "english": "universal",
     "chinese": "普遍性",
     "frequency": 1178,
     "rank": 10887
@@ -34270,8 +34270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vestire",
     "dictionary": "noun vestiario clothes clothing fit wardrobe",
-    "english": "dress up; dress (2)",
-    "chinese": "打扮起来; 服装(2)",
+    "english": "dress up; dress",
+    "chinese": "打扮起来; 服装",
     "frequency": 1177,
     "rank": 10894
   },
@@ -34318,8 +34318,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "console",
     "dictionary": "noun (storia) nella Roma repubblicana, ognuno dei due magistrati investiti del pieno potere esecutiv",
-    "english": "console console",
-    "chinese": "控制台控制台",
+    "english": "console",
+    "chinese": "控制台",
     "frequency": 1174,
     "rank": 10920
   },
@@ -34334,7 +34334,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "stagno",
     "dictionary": "adjective che ha una perfetta tenuta di liquidi, aria o di gas leakproof",
-    "english": "tin; (2); (3)",
+    "english": "tin",
     "chinese": "锡; (二); (三) 国家",
     "frequency": 1174,
     "rank": 10923
@@ -34574,7 +34574,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fotocamera",
     "dictionary": "noun camera",
-    "english": "camera camera",
+    "english": "camera",
     "chinese": "摄影机",
     "frequency": 1156,
     "rank": 11027
@@ -34622,8 +34622,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "manipolare",
     "dictionary": "adjective (storia) manipular",
-    "english": "manipulate; manipulate (2)",
-    "chinese": "操纵; 操纵 (2)",
+    "english": "manipulate",
+    "chinese": "操纵",
     "frequency": 1154,
     "rank": 11039
   },
@@ -34702,7 +34702,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vago",
     "dictionary": "adjective incerto, indeterminato oppure non definito vagal vague (letteratura) dicesi di cosa o pers",
-    "english": "vague; (2)",
+    "english": "vague",
     "chinese": "模糊; (二)",
     "frequency": 1150,
     "rank": 11069
@@ -34886,8 +34886,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "stupefacente",
     "dictionary": "adjective estremamente interessante amazing astonishing incredible",
-    "english": "Amazing; Amazing (2)",
-    "chinese": "厉害; 厉害(2)",
+    "english": "Amazing",
+    "chinese": "厉害",
     "frequency": 1136,
     "rank": 11164
   },
@@ -34910,8 +34910,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "visibile",
     "dictionary": "adjective che può essere distinto dall'occhio apparent clear evident obvious viewable visible",
-    "english": "visible; visible (2)",
-    "chinese": "可见; 可见(2)",
+    "english": "visible",
+    "chinese": "可见",
     "frequency": 1134,
     "rank": 11176
   },
@@ -34990,7 +34990,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "convinzione",
     "dictionary": "noun saldo convincimento per cose false o per cose vere belief certainty",
-    "english": "conviction conviction conviction",
+    "english": "conviction",
     "chinese": "定罪",
     "frequency": 1130,
     "rank": 11208
@@ -35006,8 +35006,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "quotidiano",
     "dictionary": "adjective (astronomia) che accade o si presenta ogni giorno daily day-to-day everyday quotidian",
-    "english": "daily; Daily (2)",
-    "chinese": "每日费用; 每日(2)",
+    "english": "daily",
+    "chinese": "每日费用; 每日",
     "frequency": 1129,
     "rank": 11215
   },
@@ -35118,8 +35118,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "alcolizzato",
     "dictionary": "adjective (psicologia) (medicina) (psichiatria) (farmacologia) affetto da alcolismo alcoholic",
-    "english": "alcohol; alcohol (2)",
-    "chinese": "酒类; 酒精(2)",
+    "english": "alcohol",
+    "chinese": "酒类; 酒精",
     "frequency": 1112,
     "rank": 11312
   },
@@ -35214,7 +35214,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "novellino",
     "dictionary": "adjective di persona con poca esperienza che non è ancora un apprendista inexperienced newly-fledged",
-    "english": "New; (2)",
+    "english": "New",
     "chinese": "新设; (二)",
     "frequency": 1109,
     "rank": 11342
@@ -35294,15 +35294,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "incosciente",
     "dictionary": "adjective privo di coscienza irresponsible reckless thoughtless",
-    "english": "Unconscious; Unconscious (2)",
-    "chinese": "无意识; 无意识(2)",
+    "english": "Unconscious",
+    "chinese": "无意识",
     "frequency": 1105,
     "rank": 11368
   },
   {
     "italian": "vigile",
     "dictionary": "adjective che è attento per evitare di sbagliare alert watchful",
-    "english": "vigilante; (2)",
+    "english": "vigilante",
     "chinese": "民团; (二)",
     "frequency": 1104,
     "rank": 11371
@@ -35462,8 +35462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "concorrente",
     "dictionary": "adjective che aspira con altri a un impiego o un premio (senso figurato) (matematica) concomitant co",
-    "english": "competitor competitor competitor competitor competitor competitor competitor competitor competitor competitor competitor; (2)",
-    "chinese": "竞争对手 竞争对手 竞争对手 竞争对手; (二)",
+    "english": "competitor",
+    "chinese": "竞争对手; (二)",
     "frequency": 1096,
     "rank": 11432
   },
@@ -35590,7 +35590,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Mercurio",
     "dictionary": "pronoun (mitologia) divinità mitologica romana, messaggero degli dei e protettore dei",
-    "english": "Mercury; mercury",
+    "english": "Mercury",
     "chinese": "汞",
     "frequency": 1089,
     "rank": 11485
@@ -35614,7 +35614,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fornitore",
     "dictionary": "adjective che fornisce supplier",
-    "english": "Supplier; (2)",
+    "english": "Supplier",
     "chinese": "供应商; (二)",
     "frequency": 1088,
     "rank": 11491
@@ -35622,7 +35622,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "inciso",
     "dictionary": "adjective aggettivo engraved",
-    "english": "engraved; (2)",
+    "english": "engraved",
     "chinese": "刻着; (二)",
     "frequency": 1088,
     "rank": 11496
@@ -35670,7 +35670,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sesta",
     "dictionary": "noun ora canonica stabilita dalla Chiesa, corrisponde alle 12.00 midday noon sext sixte (",
-    "english": "Sixty; (2)",
+    "english": "Sixty",
     "chinese": "六十个; (二)",
     "frequency": 1085,
     "rank": 11518
@@ -35734,7 +35734,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sovrano",
     "dictionary": "adjective che detiene un potere che non dipende da altri superiore a ogni altro per prestigio sovere",
-    "english": "sovereign; (2)",
+    "english": "sovereign",
     "chinese": "主权; (二)",
     "frequency": 1081,
     "rank": 11549
@@ -35774,16 +35774,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "concreto",
     "dictionary": "adjective che è reale concrete practical pragmatic real solid tangible",
-    "english": "concrete; concrete (2)",
-    "chinese": "混凝土; 混凝土(2)",
+    "english": "concrete",
+    "chinese": "混凝土",
     "frequency": 1079,
     "rank": 11567
   },
   {
     "italian": "protettore",
     "dictionary": "adjective che protegge protecting protective",
-    "english": "protector; protector (2)",
-    "chinese": "保护者; 保护者(2)",
+    "english": "protector",
+    "chinese": "保护者",
     "frequency": 1079,
     "rank": 11568
   },
@@ -35814,8 +35814,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "olandese",
     "dictionary": "adjective relativo ai Paesi Bassi Dutch Dutchman",
-    "english": "Dutch; Dutch (2)",
-    "chinese": "荷兰语Name; 荷兰(2)",
+    "english": "Dutch",
+    "chinese": "荷兰语Name; 荷兰",
     "frequency": 1077,
     "rank": 11580
   },
@@ -35982,7 +35982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "intellettuale",
     "dictionary": "adjective (per estensione) dell'intelletto, intellettivo intellectual cerebral highbrow",
-    "english": "intellectual property; (2)",
+    "english": "intellectual property",
     "chinese": "知识产权; (二)",
     "frequency": 1066,
     "rank": 11660
@@ -36006,8 +36006,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "terminale",
     "dictionary": "adjective che si trova al termine di qualcosa terminal",
-    "english": "terminal terminal terminal; terminal (2)",
-    "chinese": "终端终端; 终端(2)",
+    "english": "terminal",
+    "chinese": "终端",
     "frequency": 1064,
     "rank": 11675
   },
@@ -36022,8 +36022,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "preziosi",
     "dictionary": "noun costly precious valuable",
-    "english": "precious precious",
-    "chinese": "珍贵珍贵",
+    "english": "precious",
+    "chinese": "珍贵",
     "frequency": 1064,
     "rank": 11680
   },
@@ -36062,7 +36062,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fiscale",
     "dictionary": "adjective fiscal punctilious tax",
-    "english": "Tax tax",
+    "english": "Tax",
     "chinese": "税收",
     "frequency": 1062,
     "rank": 11693
@@ -36110,16 +36110,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "fondamenta",
     "dictionary": "noun foundations",
-    "english": "foundation foundation foundation foundation",
-    "chinese": "基金会 基金会",
+    "english": "foundation",
+    "chinese": "基金会",
     "frequency": 1060,
     "rank": 11711
   },
   {
     "italian": "giovanile",
     "dictionary": "adjective juvenile teen young",
-    "english": "youth youth youth",
-    "chinese": "青年青年",
+    "english": "youth",
+    "chinese": "青年",
     "frequency": 1060,
     "rank": 11712
   },
@@ -36127,7 +36127,7 @@ const VOCABULARY_DATA = [
     "italian": "timone",
     "dictionary": "noun rudder",
     "english": "tyrant",
-    "chinese": "暴君 暴君",
+    "chinese": "暴君",
     "frequency": 1058,
     "rank": 11724
   },
@@ -36198,8 +36198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "equivoco",
     "dictionary": "adjective sospetto di poca sincerità e di poca onorabilità; malfamato (per estensione) individuo che",
-    "english": "misunderstanding; Equivous (2)",
-    "chinese": "误解; 等量 (2)",
+    "english": "misunderstanding; Equivous",
+    "chinese": "误解; 等量",
     "frequency": 1054,
     "rank": 11749
   },
@@ -36278,7 +36278,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "trasmettitore",
     "dictionary": "noun (elettronica) (tecnologia) (ingegneria) dispositivo elettronico in grado di",
-    "english": "transmitter transmitter",
+    "english": "transmitter",
     "chinese": "发射机",
     "frequency": 1048,
     "rank": 11799
@@ -36350,8 +36350,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "stampato",
     "dictionary": "adjective in particolare, riferito a un testo impresso a stampa; spesso, in questo significato, è so",
-    "english": "Printed printed printed; Printed (2)",
-    "chinese": "打印; 印刷(2)",
+    "english": "Printed",
+    "chinese": "打印; 印刷",
     "frequency": 1044,
     "rank": 11826
   },
@@ -36382,7 +36382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "posseduto",
     "dictionary": "adjective che dipende da un potere soprannaturale possessed",
-    "english": "possessed; (2)",
+    "english": "possessed",
     "chinese": "拥有; (二)",
     "frequency": 1043,
     "rank": 11839
@@ -36478,8 +36478,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "separato",
     "dictionary": "adjective (senso figurato) altrove, in un luogo diverso separate",
-    "english": "separate; separate (2)",
-    "chinese": "单独; 单独的(2)",
+    "english": "separate",
+    "chinese": "单独; 单独的",
     "frequency": 1039,
     "rank": 11877
   },
@@ -36510,7 +36510,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "filtro",
     "dictionary": "noun (fisica) (elettronica) (tecnologia) (ingegneria) dispositivo elettronico in grado d",
-    "english": "filter filter",
+    "english": "filter",
     "chinese": "过滤器",
     "frequency": 1037,
     "rank": 11897
@@ -36518,7 +36518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cipolla",
     "dictionary": "noun (popolare) orologio da tasca onion",
-    "english": "onion onion",
+    "english": "onion",
     "chinese": "洋葱",
     "frequency": 1037,
     "rank": 11898
@@ -36558,8 +36558,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "manifesto",
     "dictionary": "adjective visibile a tutti known obvious well-known",
-    "english": "poster; poster (2); poster (3)",
-    "chinese": "海报; 海报(2); 海报(3)",
+    "english": "poster",
+    "chinese": "海报",
     "frequency": 1035,
     "rank": 11907
   },
@@ -36622,8 +36622,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "immaginario",
     "dictionary": "adjective (per estensione) che riguarda la fantasia più pura, talvolta concernente la cosiddetta leg",
-    "english": "imaginary; imaginary (2)",
-    "chinese": "假设; 设想(2)",
+    "english": "imaginary",
+    "chinese": "假设; 设想",
     "frequency": 1029,
     "rank": 11950
   },
@@ -36734,7 +36734,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "quadrante",
     "dictionary": "noun (geometria) (tipografia) (astronomia) quadrant",
-    "english": "dial dial",
+    "english": "dial",
     "chinese": "拨号",
     "frequency": 1023,
     "rank": 11995
@@ -36814,7 +36814,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "quadrato",
     "dictionary": "adjective (per estensione) di viso che ha tratti, mento e mascelle pronunciati square usato per le u",
-    "english": "square square square",
+    "english": "square",
     "chinese": "平方圆",
     "frequency": 1016,
     "rank": 12028
@@ -36926,8 +36926,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "disperso",
     "dictionary": "adjective relativo a chi è scomparso scattered sprinkled",
-    "english": "dispersed; Dispersed (2)",
-    "chinese": "分散; 散开(2)",
+    "english": "dispersed",
+    "chinese": "分散; 散开",
     "frequency": 1010,
     "rank": 12079
   },
@@ -36958,8 +36958,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "scapolo",
     "dictionary": "adjective che non è sposato bachelor single unmarried",
-    "english": "bachelor; bachelor (2)",
-    "chinese": "单身; 单身(2)",
+    "english": "bachelor",
+    "chinese": "单身",
     "frequency": 1008,
     "rank": 12094
   },
@@ -37022,8 +37022,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "proiezione",
     "dictionary": "noun (cinematografia) formazione di immagini su uno schermo show showing (psicologi",
-    "english": "projection projection projection projection projection projection projection projection",
-    "chinese": "预测预测预测预测",
+    "english": "projection",
+    "chinese": "预测",
     "frequency": 1007,
     "rank": 12108
   },
@@ -37046,7 +37046,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "umido",
     "dictionary": "adjective (fisica) (chimica) leggermente bagnato wet",
-    "english": "wet wet",
+    "english": "wet",
     "chinese": "湿润",
     "frequency": 1006,
     "rank": 12114
@@ -37134,8 +37134,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "universitario",
     "dictionary": "adjective (scuola) che riguarda l'università university",
-    "english": "university; University (2)",
-    "chinese": "大学; 大学(2)",
+    "english": "university",
+    "chinese": "大学",
     "frequency": 1002,
     "rank": 12146
   },
@@ -37190,7 +37190,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sepolti",
     "dictionary": "adjective plurale di sepolto concealed hidden",
-    "english": "buried; (2)",
+    "english": "buried",
     "chinese": "埋没; (二)",
     "frequency": 999,
     "rank": 12167
@@ -37214,7 +37214,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "danneggiare",
     "dictionary": "verb fare danno a qualcosa o qualcuno damage",
-    "english": "damage damage",
+    "english": "damage",
     "chinese": "损害",
     "frequency": 997,
     "rank": 12184
@@ -37270,8 +37270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "orale",
     "dictionary": "noun (scuola) prova da sostenere a voce verbal",
-    "english": "oral oral oral oral",
-    "chinese": "口头口头",
+    "english": "oral",
+    "chinese": "口头",
     "frequency": 994,
     "rank": 12208
   },
@@ -37318,8 +37318,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "disoccupato",
     "dictionary": "adjective (diritto) (economia) che non lavora per cause indipendenti dalla propria volontà empty job",
-    "english": "unemployed; unemployed (2)",
-    "chinese": "失业; 失业(2)",
+    "english": "unemployed",
+    "chinese": "失业",
     "frequency": 991,
     "rank": 12233
   },
@@ -37446,8 +37446,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bullo",
     "dictionary": "adjective (gergale) ragazzo prepotente bully hooligan vandal",
-    "english": "bully; Bolt (2)",
-    "chinese": "欺负; 博尔特(2)",
+    "english": "bully; Bolt",
+    "chinese": "欺负; 博尔特",
     "frequency": 985,
     "rank": 12297
   },
@@ -37558,8 +37558,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fluido",
     "dictionary": "adjective di liquido che cola e si espande facilmente Fluidum aura fließend flowing fluid flüssig (s",
-    "english": "fluid; fluid (2)",
-    "chinese": "液体; 液体(2)",
+    "english": "fluid",
+    "chinese": "液体",
     "frequency": 979,
     "rank": 12348
   },
@@ -37574,8 +37574,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "scalare",
     "dictionary": "adjective che procede, e in particolare che sale, in modo graduale ma costante, con una progressione",
-    "english": "climbing; climbing (2); climbing (3)",
-    "chinese": "爬来爬去; 攀爬(2); 攀爬(3)",
+    "english": "climbing",
+    "chinese": "爬来爬去; 攀爬",
     "frequency": 978,
     "rank": 12354
   },
@@ -37630,8 +37630,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "polacco",
     "dictionary": "adjective (geografia) relativo alla Polonia Polish",
-    "english": "Polish; Polish (2); Polish (3)",
-    "chinese": "波兰语Name; 波兰语(2); 波兰语(3)",
+    "english": "Polish",
+    "chinese": "波兰语Name; 波兰语",
     "frequency": 976,
     "rank": 12375
   },
@@ -37686,8 +37686,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ricoverato",
     "dictionary": "adjective che è ospitato in un luogo di cura o di assistenza hospitalized in-patient patient",
-    "english": "hospitalization; hospital (2)",
-    "chinese": "住院治疗; 医院(2)",
+    "english": "hospitalization; hospital",
+    "chinese": "住院治疗; 医院",
     "frequency": 975,
     "rank": 12395
   },
@@ -37750,8 +37750,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "remoto",
     "dictionary": "adjective molto lontano remote distant far-away far-flung",
-    "english": "remote remote",
-    "chinese": "远程远程",
+    "english": "remote",
+    "chinese": "远程",
     "frequency": 971,
     "rank": 12429
   },
@@ -37926,8 +37926,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "consumato",
     "dictionary": "adjective (di oggetto) che è stato usato (di individuo) che è magro consumed experienced seasoned",
-    "english": "consumed; consummate (2)",
-    "chinese": "消费; 结 论 (2)",
+    "english": "consumed; consummate",
+    "chinese": "消费; 结 论",
     "frequency": 961,
     "rank": 12510
   },
@@ -38014,7 +38014,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "raffinato",
     "dictionary": "adjective di sostanza che ha subito un processo di raffinazione che ha gusto e pregio polished refin",
-    "english": "refined; (2)",
+    "english": "refined",
     "chinese": "改进; (二)",
     "frequency": 958,
     "rank": 12534
@@ -38022,7 +38022,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "correggere",
     "dictionary": "verb eliminare difetti ed errori da un documento, lavoro od opera in modo da porta",
-    "english": "correct correct",
+    "english": "correct",
     "chinese": "正确无误",
     "frequency": 958,
     "rank": 12536
@@ -38078,7 +38078,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "automaticamente",
     "dictionary": "adverb automatically",
-    "english": "automatically automatically",
+    "english": "automatically",
     "chinese": "自动",
     "frequency": 956,
     "rank": 12567
@@ -38246,7 +38246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cortese",
     "dictionary": "adjective che ha le caratteristiche della cortesia courteous polite well-mannered courtly gracious k",
-    "english": "courteous; (2)",
+    "english": "courteous",
     "chinese": "礼貌; (二)",
     "frequency": 949,
     "rank": 12644
@@ -38278,8 +38278,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "radicale",
     "dictionary": "adjective (di) attività sistematica che si prefigge di cambiare le caratteristiche di un'organizzazi",
-    "english": "radical; Radical (2)",
-    "chinese": "绝对; 激进(2)",
+    "english": "radical",
+    "chinese": "绝对; 激进",
     "frequency": 947,
     "rank": 12658
   },
@@ -38326,8 +38326,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "governante",
     "dictionary": "noun chi governa governer",
-    "english": "Governor; Governor (2)",
-    "chinese": "总督; 总督(2)",
+    "english": "Governor",
+    "chinese": "总督",
     "frequency": 946,
     "rank": 12677
   },
@@ -38342,8 +38342,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "virtuale",
     "dictionary": "adjective (elettronica) (informatica) (tecnologia) (ingegneria) che riguarda l'uso di",
-    "english": "virtual virtual",
-    "chinese": "虚拟虚拟",
+    "english": "virtual",
+    "chinese": "虚拟",
     "frequency": 946,
     "rank": 12680
   },
@@ -38358,7 +38358,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mulino",
     "dictionary": "noun (agricoltura) (architettura) edificio dove vengono macinati cereali mill",
-    "english": "mill mill",
+    "english": "mill",
     "chinese": "磨坊",
     "frequency": 945,
     "rank": 12683
@@ -38366,7 +38366,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "turista",
     "dictionary": "noun (sociologia) (economia) colui o colei che viaggia per diletto holiday-maker touris",
-    "english": "tourist tourist tourist",
+    "english": "tourist",
     "chinese": "旅游游客",
     "frequency": 945,
     "rank": 12684
@@ -38430,7 +38430,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tirocinante",
     "dictionary": "adjective che compie un periodo di pratica per apprendere un lavoro apprentice beginner intern train",
-    "english": "Internship; (2)",
+    "english": "Internship",
     "chinese": "实习; (二)",
     "frequency": 944,
     "rank": 12706
@@ -38542,7 +38542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "intermediario",
     "dictionary": "adjective che mette d'accordo interessi opposti go-between intermediary middleman",
-    "english": "intermediary; (2)",
+    "english": "intermediary",
     "chinese": "中间; (二)",
     "frequency": 938,
     "rank": 12754
@@ -38638,7 +38638,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "moccioso",
     "dictionary": "adjective che è sporco di muco snot-nosed snotty snotty-nosed",
-    "english": "Moccioso; (2)",
+    "english": "Moccioso",
     "chinese": "摩科索语Name; (二)",
     "frequency": 934,
     "rank": 12796
@@ -38662,8 +38662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "manoscritto",
     "dictionary": "adjective scritto a mano (per lo più contrapposto a stampato o dattiloscritto handwritten",
-    "english": "manuscript; manuscript (2)",
-    "chinese": "手稿; 手稿(2)",
+    "english": "manuscript",
+    "chinese": "手稿",
     "frequency": 934,
     "rank": 12800
   },
@@ -38894,8 +38894,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fragola",
     "dictionary": "adjective che ha il colore della fragola strawberry strawberry-colour",
-    "english": "Strawberry; Strawberry (2)",
-    "chinese": "草莓; 草莓(2)",
+    "english": "Strawberry",
+    "chinese": "草莓",
     "frequency": 922,
     "rank": 12912
   },
@@ -38982,7 +38982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "devoto",
     "dictionary": "adjective che antepone la fede religiosa alla materialità committed dedicated devoted faithful",
-    "english": "devote; (2)",
+    "english": "devote",
     "chinese": "专用; (二)",
     "frequency": 919,
     "rank": 12947
@@ -39038,8 +39038,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "maligno",
     "dictionary": "adjective che è cattivo (per estensione) di individuo che \"ammicca\" in modo non \"positivo\", sapendo ",
-    "english": "malignant; malaise (2)",
-    "chinese": "恶性; 疾病 (2)",
+    "english": "malignant; malaise",
+    "chinese": "恶性; 疾病",
     "frequency": 916,
     "rank": 12970
   },
@@ -39150,7 +39150,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "gel",
     "dictionary": "noun (fisica) (chimica) (farmacologia) fase semisolida di un sistema colloidale, dove il",
-    "english": "gel gel",
+    "english": "gel",
     "chinese": "凝胶",
     "frequency": 909,
     "rank": 13025
@@ -39518,8 +39518,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "saldo",
     "dictionary": "adjective che è fermo firm stable stanch staunch steadfast steady",
-    "english": "balance; balance (2)",
-    "chinese": "余额; 余额(2)",
+    "english": "balance",
+    "chinese": "余额",
     "frequency": 891,
     "rank": 13217
   },
@@ -39598,8 +39598,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "antenna",
     "dictionary": "noun (elettronica) dispositivo elettronico per mandare e ricevere segnali elettrici in",
-    "english": "antenna antenna antenna antenna",
-    "chinese": "天线天线",
+    "english": "antenna",
+    "chinese": "天线",
     "frequency": 887,
     "rank": 13270
   },
@@ -39622,7 +39622,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dilemma",
     "dictionary": "noun (filosofia) argomentazione con cui da due premesse contrarie si arriva a un solo r",
-    "english": "dilemma dilemma",
+    "english": "dilemma",
     "chinese": "困境",
     "frequency": 885,
     "rank": 13283
@@ -39630,7 +39630,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ambito",
     "dictionary": "adjective che è grandemente desiderato circle compass coveted longed for sought-after",
-    "english": "scope; (2)",
+    "english": "scope",
     "chinese": "范围; (二)",
     "frequency": 885,
     "rank": 13284
@@ -39679,7 +39679,7 @@ const VOCABULARY_DATA = [
     "italian": "ebbrezza",
     "dictionary": "noun (spregiativo) (per estensione) offuscamento del cervello causato dall'ingestione",
     "english": "drunkenness",
-    "chinese": "醉酒 醉酒 醉酒 醉酒 醉酒",
+    "chinese": "醉酒",
     "frequency": 882,
     "rank": 13308
   },
@@ -39830,16 +39830,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "concordato",
     "dictionary": "adjective che è stato sancito prima tramite un'intesa tra due parti agreement arranged compromise pl",
-    "english": "agreed; agreed (2)",
-    "chinese": "商定; 商定(2)",
+    "english": "agreed",
+    "chinese": "商定",
     "frequency": 876,
     "rank": 13400
   },
   {
     "italian": "alterato",
     "dictionary": "adjective (grammatica) relativo a una parola ottenuta tramite un processo di alterazione abnormal ad",
-    "english": "altered; altered (2)",
-    "chinese": "已更改; 更改(2)",
+    "english": "altered",
+    "chinese": "已更改; 更改",
     "frequency": 876,
     "rank": 13403
   },
@@ -40078,7 +40078,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "reciproco",
     "dictionary": "adjective che si palesa in maniera simile tra due individui o cose reciprocal mutual (linguistica) p",
-    "english": "mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual; Other",
+    "english": "mutual; Other",
     "chinese": "双方互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通; 其他人员",
     "frequency": 865,
     "rank": 13526
@@ -40110,7 +40110,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "livido",
     "dictionary": "adjective di colore freddo verdastro, caratteristico dell'ecchimosi cutanea, della cute cianotica e ",
-    "english": "Livi; (2)",
+    "english": "Livi",
     "chinese": "利维; (二)",
     "frequency": 864,
     "rank": 13535
@@ -40134,8 +40134,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ordinario",
     "dictionary": "noun ciò che è abituale ordinary plain",
-    "english": "ordinary; Ordinary (2)",
-    "chinese": "普通类; 普通(2)",
+    "english": "ordinary",
+    "chinese": "普通类; 普通",
     "frequency": 864,
     "rank": 13542
   },
@@ -40166,8 +40166,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "acuto",
     "dictionary": "adjective che è affilato sharp (matematica) (geometria) angolo minore di novanta gradi acute severe ",
-    "english": "acute; acute (2)",
-    "chinese": "严重; 急性(2)",
+    "english": "acute",
+    "chinese": "严重; 急性",
     "frequency": 863,
     "rank": 13551
   },
@@ -40214,7 +40214,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vano",
     "dictionary": "adjective che non può essere attuato compartment empty groundless opening room space non necessario;",
-    "english": "vain; (2)",
+    "english": "vain",
     "chinese": "虚无; (二)",
     "frequency": 859,
     "rank": 13576
@@ -40590,7 +40590,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "acquisito",
     "dictionary": "adjective riconosciuto come proprio o posseduto da un certo momento in poi (biologia)",
-    "english": "acquired acquired",
+    "english": "acquired",
     "chinese": "购置",
     "frequency": 845,
     "rank": 13745
@@ -40774,8 +40774,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bruto",
     "dictionary": "adjective che non è sorretto dalla ragione brutal brute coarse raw unrefined (riferito alla terra) g",
-    "english": "brute; Brown (2)",
-    "chinese": "野蛮; 褐色(2)",
+    "english": "brute; Brown",
+    "chinese": "野蛮; 褐色",
     "frequency": 839,
     "rank": 13825
   },
@@ -40854,7 +40854,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "limitare",
     "dictionary": "verb porre dei limiti o dei confini; circoscrivere qualcosa; evitare l'espansione inco",
-    "english": "limit limit",
+    "english": "limit",
     "chinese": "限制",
     "frequency": 836,
     "rank": 13853
@@ -40886,7 +40886,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "purezza",
     "dictionary": "noun (filosofia) (chimica) (mineralogia) assenza di mescolamento con altro pureness pu",
-    "english": "purity purity",
+    "english": "purity",
     "chinese": "纯度",
     "frequency": 834,
     "rank": 13869
@@ -41030,24 +41030,24 @@ const VOCABULARY_DATA = [
   {
     "italian": "verticale",
     "dictionary": "adjective (matematica) perpendicolare all'orizzonte vertical perpendicular (economia) di coalizioni ",
-    "english": "vertical; vertical (2)",
-    "chinese": "垂直; 纵向(2)",
+    "english": "vertical",
+    "chinese": "垂直; 纵向",
     "frequency": 826,
     "rank": 13957
   },
   {
     "italian": "clandestino",
     "dictionary": "adjective (diritto) che si fa in segreto clandestine secret",
-    "english": "illegal; illegal (2)",
-    "chinese": "非法活动; 非法(2)",
+    "english": "illegal",
+    "chinese": "非法活动; 非法",
     "frequency": 826,
     "rank": 13958
   },
   {
     "italian": "danese",
     "dictionary": "adjective relativo alla Danimarca Danish",
-    "english": "Danish; Danish (2); Denmark (3)",
-    "chinese": "丹麦语Name; 丹麦(2); 丹麦(3)",
+    "english": "Danish; Denmark",
+    "chinese": "丹麦语Name; 丹麦",
     "frequency": 826,
     "rank": 13959
   },
@@ -41118,7 +41118,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "maniglia",
     "dictionary": "noun (anatomia) eccessivo accumulo di adipe a livello dei lati dell'addome love handles",
-    "english": "Handle handle",
+    "english": "Handle",
     "chinese": "处理手柄",
     "frequency": 823,
     "rank": 14000
@@ -41142,8 +41142,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cuoio",
     "dictionary": "noun (tessile) (abbigliamento) pelle di animali resa in fogli spessi imputrescibili attra",
-    "english": "leather leather",
-    "chinese": "皮革皮革",
+    "english": "leather",
+    "chinese": "皮革",
     "frequency": 822,
     "rank": 14008
   },
@@ -41158,8 +41158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ingrato",
     "dictionary": "adjective individuo che non è grato, non ringrazia di tutto quello che è stato fatto per lo stesso t",
-    "english": "Ungrateful; Ungraved (2)",
-    "chinese": "无礼; 未受重视(2)",
+    "english": "Ungrateful; Ungraved",
+    "chinese": "无礼; 未受重视",
     "frequency": 821,
     "rank": 14022
   },
@@ -41174,7 +41174,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sospendere",
     "dictionary": "verb porre in alto oggetti in modo che, fissati da una parte, non tocchino terra dal",
-    "english": "suspend suspend",
+    "english": "suspend",
     "chinese": "暂停",
     "frequency": 820,
     "rank": 14032
@@ -41358,7 +41358,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ripetuto",
     "dictionary": "adjective rifatto nuovamente, talvolta più e più volte anche assommate... con ciò spes",
-    "english": "repeated repeated",
+    "english": "repeated",
     "chinese": "重复次数",
     "frequency": 812,
     "rank": 14125
@@ -41406,8 +41406,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dispiacere",
     "dictionary": "noun espressione interiore di delusione disappointment grief di chi trattiene un'emozione di contriz",
-    "english": "Sorry; disability (2)",
-    "chinese": "对不起; 残疾(2)",
+    "english": "Sorry; disability",
+    "chinese": "对不起; 残疾",
     "frequency": 811,
     "rank": 14141
   },
@@ -41462,16 +41462,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "sopravvento",
     "dictionary": "adverb dalla parte del vento take control windward",
-    "english": "Survival; survivor (2)",
-    "chinese": "生存; 幸存者(2)",
+    "english": "Survival; survivor",
+    "chinese": "生存; 幸存者",
     "frequency": 810,
     "rank": 14161
   },
   {
     "italian": "redenzione",
     "dictionary": "noun (religione) (cristianesimo) liberazione del genere umano dalle conseguenze del",
-    "english": "redemption redemption",
-    "chinese": "赎 赎",
+    "english": "redemption",
+    "chinese": "赎",
     "frequency": 810,
     "rank": 14163
   },
@@ -41494,7 +41494,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "infame",
     "dictionary": "adjective che è molto sgradevole infamous informer",
-    "english": "infame; (2)",
+    "english": "infame",
     "chinese": "虚构; (二)",
     "frequency": 810,
     "rank": 14166
@@ -41502,7 +41502,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ano",
     "dictionary": "suffix ane",
-    "english": "ano; (2)",
+    "english": "ano",
     "chinese": "无; (二)",
     "frequency": 809,
     "rank": 14171
@@ -41518,7 +41518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "crosta",
     "dictionary": "noun strato di materiale indurito e compatto situato sulla superficie più esterna di un",
-    "english": "crust crust",
+    "english": "crust",
     "chinese": "地壳",
     "frequency": 809,
     "rank": 14174
@@ -41614,7 +41614,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "debutto",
     "dictionary": "noun debut",
-    "english": "debut debut",
+    "english": "debut",
     "chinese": "首发",
     "frequency": 807,
     "rank": 14206
@@ -41622,8 +41622,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "rivoluzionario",
     "dictionary": "adjective (storia) (filosofia) (sociologia) (politica) che riguarda un cambiamento radicale rispetto",
-    "english": "revolutionary; Revolutionary (2)",
-    "chinese": "革命主义; 革命 (2)",
+    "english": "revolutionary",
+    "chinese": "革命主义; 革命",
     "frequency": 806,
     "rank": 14212
   },
@@ -41662,8 +41662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "titolare",
     "dictionary": "adjective (diritto) che possiede una qualifica atta a svolgere una specifica funzione appointed hold",
-    "english": "holder; holder (2); holder (3)",
-    "chinese": "持有者; 持有者(2); 持有者(3)",
+    "english": "holder",
+    "chinese": "持有者",
     "frequency": 805,
     "rank": 14226
   },
@@ -41710,15 +41710,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "leggendario",
     "dictionary": "adjective (letteratura) (storia) che ha carattere di leggenda, che appartiene alla leggenda (per est",
-    "english": "Legendary; Legendary (2)",
-    "chinese": "传奇; 传奇(2)",
+    "english": "Legendary",
+    "chinese": "传奇",
     "frequency": 803,
     "rank": 14248
   },
   {
     "italian": "velluto",
     "dictionary": "noun (tessile) drappo di seta, di cotone o di lana coperto di pelo corto, denso, unito",
-    "english": "velvet velvet",
+    "english": "velvet",
     "chinese": "天鹅绒",
     "frequency": 803,
     "rank": 14249
@@ -41766,8 +41766,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dinastia",
     "dictionary": "noun (storia) (politica) (diritto) serie di re o di principi di una stessa famiglia ch",
-    "english": "d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d",
-    "chinese": "唵(引) d日啰(二合) d日啰(二合) d日啰(二合) d日啰(二合) d日啰(二合) d(二合) d日啰(二合) d日啰(二合) d(二合) d日啰(二合) d(二合)贺.",
+    "english": "d",
+    "chinese": "唵(引) d日啰(二合) d(二合) d日啰(二合) d(二合) d日啰(二合) d(二合)贺.",
     "frequency": 799,
     "rank": 14293
   },
@@ -41822,8 +41822,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "infedele",
     "dictionary": "adjective (religione) false di chi che viene meno ad un patto o ad una promessa, termine usato sopra",
-    "english": "unfaithful; Infidel (2)",
-    "chinese": "不忠实; 异教徒(2)",
+    "english": "unfaithful; Infidel",
+    "chinese": "不忠实; 异教徒",
     "frequency": 798,
     "rank": 14308
   },
@@ -41846,8 +41846,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "impermeabile",
     "dictionary": "adjective (fisica) (chimica) che non si lascia attraversare da liquidi impenetrable impermeable impe",
-    "english": "waterproof; waterproof (2)",
-    "chinese": "防水; 防水(2)",
+    "english": "waterproof",
+    "chinese": "防水",
     "frequency": 796,
     "rank": 14319
   },
@@ -42070,7 +42070,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pelato",
     "dictionary": "adjective che è senza peli (per estensione) che è senza capelli sbucciato bald bald-headed baldheade",
-    "english": "Peached; (2)",
+    "english": "Peached",
     "chinese": "被弹出; (二)",
     "frequency": 788,
     "rank": 14425
@@ -42118,8 +42118,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "principiante",
     "dictionary": "adjective che svolge qualcosa per la prima volta o comunque da poco, ed ha conseguentemente poca esp",
-    "english": "beginner; Beginners (2)",
-    "chinese": "初学者; 初学者(2)",
+    "english": "beginner; Beginners",
+    "chinese": "初学者",
     "frequency": 786,
     "rank": 14443
   },
@@ -42486,8 +42486,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ricorrere",
     "dictionary": "verb apply occur repeat rerun resort run again correre di nuovo appeal be fall recur",
-    "english": "resort resort resort resort",
-    "chinese": "度假胜地 度假胜地",
+    "english": "resort",
+    "chinese": "度假胜地",
     "frequency": 773,
     "rank": 14620
   },
@@ -42638,8 +42638,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cucito",
     "dictionary": "adjective unito con delle cuciture needlework sewing sewn stitched",
-    "english": "sewing; sewing (2)",
-    "chinese": "缝纫; 缝纫(2)",
+    "english": "sewing",
+    "chinese": "缝纫",
     "frequency": 767,
     "rank": 14690
   },
@@ -42702,7 +42702,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "motocicletta",
     "dictionary": "noun motorcycle motorbike",
-    "english": "motorcycle motorcycle",
+    "english": "motorcycle",
     "chinese": "摩托车",
     "frequency": 766,
     "rank": 14708
@@ -42719,7 +42719,7 @@ const VOCABULARY_DATA = [
     "italian": "lucertola",
     "dictionary": "noun (araldica) figura araldica convenzionale che rappresenta il rettile posto in p",
     "english": "lizard",
-    "chinese": "蜥蜴 蜥蜴",
+    "chinese": "蜥蜴",
     "frequency": 765,
     "rank": 14715
   },
@@ -42790,7 +42790,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tranquillità",
     "dictionary": "noun calm calmness peace stillness tranquillity",
-    "english": "tranquility tranquility",
+    "english": "tranquility",
     "chinese": "镇静",
     "frequency": 763,
     "rank": 14746
@@ -42886,8 +42886,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "transazione",
     "dictionary": "noun (diritto) accordo di una parte con un'altra col fine di concludere una lite",
-    "english": "transaction transaction transaction transaction",
-    "chinese": "交易交易交易",
+    "english": "transaction",
+    "chinese": "交易",
     "frequency": 760,
     "rank": 14791
   },
@@ -42910,7 +42910,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "raid",
     "dictionary": "noun raid",
-    "english": "raid raid",
+    "english": "raid",
     "chinese": "突袭",
     "frequency": 759,
     "rank": 14801
@@ -43142,7 +43142,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "perbene",
     "dictionary": "adjective che è retto decent nice nicely proper properly respectable",
-    "english": "perbene; (2)",
+    "english": "perbene",
     "chinese": "纯度; (二)",
     "frequency": 753,
     "rank": 14894
@@ -43310,8 +43310,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "regionale",
     "dictionary": "adjective (geografia) (politica) (diritto) relativo ad una regione local regional",
-    "english": "Regional; Regional (2)",
-    "chinese": "区域; 区域(2)",
+    "english": "Regional",
+    "chinese": "区域",
     "frequency": 746,
     "rank": 14971
   },
@@ -43422,7 +43422,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "svitato",
     "dictionary": "adjective (meccanica) unscrewed (senso figurato) che usa poco il cervello bizarre eccentric nutty od",
-    "english": "Screwed; (2)",
+    "english": "Screwed",
     "chinese": "失败了; (二)",
     "frequency": 744,
     "rank": 15005
@@ -43494,7 +43494,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "valuta",
     "dictionary": "noun currency",
-    "english": "currency currency",
+    "english": "currency",
     "chinese": "货币",
     "frequency": 742,
     "rank": 15033
@@ -43510,7 +43510,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "losco",
     "dictionary": "adjective chi per difetto della vista è costretto a stringere gli occhi aggrottando le sopracciglia ",
-    "english": "I'm sorry.; (2)",
+    "english": "I'm sorry.",
     "chinese": "对不起; (二)",
     "frequency": 742,
     "rank": 15037
@@ -43718,8 +43718,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "automatica",
     "dictionary": "noun automation science (elettronica) (informatica) (tecnologia) (ingegneria) comple",
-    "english": "automatic automatic",
-    "chinese": "自动自动",
+    "english": "automatic",
+    "chinese": "自动",
     "frequency": 734,
     "rank": 15149
   },
@@ -43750,8 +43750,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "stampante",
     "dictionary": "adjective atto ad imprimere caratteri su supporto print",
-    "english": "printer; printer (2)",
-    "chinese": "打印机; 打印机(2)",
+    "english": "printer",
+    "chinese": "打印机",
     "frequency": 733,
     "rank": 15162
   },
@@ -43838,8 +43838,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "immersione",
     "dictionary": "noun l'atto di immergersi nell'acqua dip dipping dive diving immersion submersion (n",
-    "english": "diving diving diving",
-    "chinese": "潜水潜水",
+    "english": "diving",
+    "chinese": "潜水",
     "frequency": 731,
     "rank": 15208
   },
@@ -43870,8 +43870,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "norvegese",
     "dictionary": "adjective (geografia) della Norvegia Norwegian",
-    "english": "Norwegian; Norwegian (2)",
-    "chinese": "挪威语; 挪威语(2)",
+    "english": "Norwegian",
+    "chinese": "挪威语",
     "frequency": 730,
     "rank": 15218
   },
@@ -44382,7 +44382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "domino",
     "dictionary": "noun (latinismo), (letterario) termine aulico per \"signore, padrone\" lord master (abbigliamento) mas",
-    "english": "domino; (2)",
+    "english": "domino",
     "chinese": "多米诺; (二)",
     "frequency": 712,
     "rank": 15473
@@ -44438,8 +44438,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "adattarsi",
     "dictionary": "verb (senso figurato) adeguarsi adapt",
-    "english": "fit fit fit fit",
-    "chinese": "适应 适应 适应",
+    "english": "fit",
+    "chinese": "适应",
     "frequency": 710,
     "rank": 15504
   },
@@ -44454,8 +44454,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "favorito",
     "dictionary": "adjective (sport) di concorrente considerato il possibile vincente di una competizione favourite",
-    "english": "favorite; favorite (2)",
-    "chinese": "最喜欢; 最喜欢的(2)",
+    "english": "favorite",
+    "chinese": "最喜欢; 最喜欢的",
     "frequency": 709,
     "rank": 15509
   },
@@ -44494,8 +44494,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "svizzero",
     "dictionary": "adjective (geografia) della Svizzera (senso figurato) ben tenuto Swiss",
-    "english": "Swiss; Swiss (2)",
-    "chinese": "瑞士; 瑞士(2)",
+    "english": "Swiss",
+    "chinese": "瑞士",
     "frequency": 708,
     "rank": 15522
   },
@@ -44598,8 +44598,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pubblicitario",
     "dictionary": "adjective che riguarda la pubblicità, che ha il fine di pubblicizzare advertising publicity",
-    "english": "advertising; advertising (2)",
-    "chinese": "广告; 广告(2)",
+    "english": "advertising",
+    "chinese": "广告",
     "frequency": 705,
     "rank": 15564
   },
@@ -44734,16 +44734,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "conduttore",
     "dictionary": "adjective che conduce driver (fisica) (elettrotecnica) che fa passare elettricità o calore driver dr",
-    "english": "conductor; conductor (2)",
-    "chinese": "导师; 指挥器(2)",
+    "english": "conductor",
+    "chinese": "导师; 指挥器",
     "frequency": 702,
     "rank": 15615
   },
   {
     "italian": "teenager",
     "dictionary": "noun adolescente o giovane di età compresa tra i 13 e i 19 anni teenager",
-    "english": "Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Te Te Te Te Te Te Teen Teen Teen Teen Teen Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te",
-    "chinese": "腾讯网 腾讯网 腾讯网 腾讯网 腾讯网 腾讯网 腾讯网 腾讯网 腾讯网 腾讯网 腾讯网 腾讯网 腾讯网",
+    "english": "Teen Te",
+    "chinese": "腾讯网",
     "frequency": 702,
     "rank": 15617
   },
@@ -44806,8 +44806,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "parlante",
     "dictionary": "adjective che può di parlare speaking talking (araldica) attributo araldico che si applica alle armi",
-    "english": "Speaker; Speaker (2)",
-    "chinese": "发言者; 扬声器(2)",
+    "english": "Speaker",
+    "chinese": "发言者; 扬声器",
     "frequency": 700,
     "rank": 15642
   },
@@ -45054,8 +45054,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "mafioso",
     "dictionary": "adjective della mafia boss gangster mafia mobster (diritto) reato politico-mafioso: con intimidazion",
-    "english": "Mafioso; mafioso (2)",
-    "chinese": "马菲奥索; 黑手党(2)",
+    "english": "Mafioso",
+    "chinese": "马菲奥索; 黑手党",
     "frequency": 694,
     "rank": 15743
   },
@@ -45150,7 +45150,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "avventato",
     "dictionary": "adjective privo di prudenza (gergale) testa calda hasty thoughtless",
-    "english": "Adventurous; (2)",
+    "english": "Adventurous",
     "chinese": "虔诚; (二)",
     "frequency": 691,
     "rank": 15784
@@ -45206,8 +45206,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "oliva",
     "dictionary": "adjective (colori) di colore oliva olive",
-    "english": "olive oil; olive oil (2)",
-    "chinese": "橄榄油; 橄榄油(2)",
+    "english": "olive oil",
+    "chinese": "橄榄油",
     "frequency": 689,
     "rank": 15814
   },
@@ -45246,8 +45246,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "incompetente",
     "dictionary": "adjective (spregiativo) che conosce poco di una determinata materia bungler flake incapable incompet",
-    "english": "incompetent; Incompetent (2)",
-    "chinese": "无行为能力; 无能(2)",
+    "english": "incompetent",
+    "chinese": "无行为能力; 无能",
     "frequency": 688,
     "rank": 15827
   },
@@ -45310,7 +45310,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "varietà",
     "dictionary": "noun l'essere vario diversity multiplicity variety una sottoclasse di una qualche categoria (matemat",
-    "english": "variety; (2)",
+    "english": "variety",
     "chinese": "变量; (二)",
     "frequency": 687,
     "rank": 15854
@@ -45399,7 +45399,7 @@ const VOCABULARY_DATA = [
     "italian": "trambusto",
     "dictionary": "noun (per estensione) manifestazione furiosa confusion hustle",
     "english": "hustle and bustle",
-    "chinese": "抓紧时间 抓紧时间",
+    "chinese": "抓紧时间",
     "frequency": 685,
     "rank": 15887
   },
@@ -45438,7 +45438,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "immunitario",
     "dictionary": "adjective (medicina) (anatomia) (biologia) relativo al sistema immunitario immune",
-    "english": "immune immune",
+    "english": "immune",
     "chinese": "免疫",
     "frequency": 683,
     "rank": 15917
@@ -45614,7 +45614,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "solista",
     "dictionary": "adjective (musica) che, durante un concerto, canta o suona da solo (senso figurato) soloist (danza) ",
-    "english": "soloist; (2)",
+    "english": "soloist",
     "chinese": "独奏者; (二)",
     "frequency": 676,
     "rank": 16027
@@ -45798,7 +45798,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "minerale",
     "dictionary": "noun (geologia) (chimica) (mineralogia) sostanza naturale, inorganica, omogenea, solid",
-    "english": "mineral mineral",
+    "english": "mineral",
     "chinese": "矿物",
     "frequency": 670,
     "rank": 16126
@@ -46078,7 +46078,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "urto",
     "dictionary": "adjective spinto assault strike",
-    "english": "shock; (2)",
+    "english": "shock",
     "chinese": "冲击; (二)",
     "frequency": 663,
     "rank": 16259
@@ -46230,7 +46230,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ripieno",
     "dictionary": "adjective (araldica) attributo araldico che si applica a: filling stuffing",
-    "english": "filling; (2)",
+    "english": "filling",
     "chinese": "填补; (二)",
     "frequency": 658,
     "rank": 16352
@@ -46246,8 +46246,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "soprannaturale",
     "dictionary": "adjective di possibile evento che va oltre le leggi della natura e della fisica celestial divine hea",
-    "english": "supernatural; supernatural (2)",
-    "chinese": "超自然; 超自然(2)",
+    "english": "supernatural",
+    "chinese": "超自然",
     "frequency": 657,
     "rank": 16356
   },
@@ -46374,7 +46374,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "assolo",
     "dictionary": "noun solo",
-    "english": "solo solo",
+    "english": "solo",
     "chinese": "独奏",
     "frequency": 654,
     "rank": 16425
@@ -46422,7 +46422,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "telaio",
     "dictionary": "noun (tecnologia) (ingegneria) struttura portante di un mezzo di trasporto framework she",
-    "english": "frame frame",
+    "english": "frame",
     "chinese": "帧",
     "frequency": 652,
     "rank": 16452
@@ -46446,7 +46446,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "corrispondente",
     "dictionary": "adjective che corrisponde corresponding",
-    "english": "corresponding; (2)",
+    "english": "corresponding",
     "chinese": "相应; (二)",
     "frequency": 650,
     "rank": 16482
@@ -46470,8 +46470,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "porcellana",
     "dictionary": "noun (chimica) materiale ceramico prezioso, generalmente di colore bianco porcelai",
-    "english": "china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china",
-    "chinese": "瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题 瓷器主题",
+    "english": "china",
+    "chinese": "瓷器主题",
     "frequency": 650,
     "rank": 16490
   },
@@ -46566,7 +46566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "integrale",
     "dictionary": "adjective che non è privo di nulla (di alimento) che contiene in sé tutte le sue caratteristiche nut",
-    "english": "integral; (1)",
+    "english": "integral",
     "chinese": "构成部分; (1) 国家",
     "frequency": 646,
     "rank": 16552
@@ -46590,8 +46590,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "utente",
     "dictionary": "adjective che fa uso di un servizio user consumer",
-    "english": "user; user (2)",
-    "chinese": "用户; 用户(2)",
+    "english": "user",
+    "chinese": "用户",
     "frequency": 646,
     "rank": 16557
   },
@@ -46718,7 +46718,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cornice",
     "dictionary": "noun (architettura) cornice",
-    "english": "frame frame",
+    "english": "frame",
     "chinese": "帧",
     "frequency": 642,
     "rank": 16619
@@ -46870,7 +46870,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "stallo",
     "dictionary": "noun (giochi), (scacchi) negli scacchi, condizione nella quale un giocatore sebbene non sotto scacco",
-    "english": "Stale; (2)",
+    "english": "Stale",
     "chinese": "斯图尔; (二)",
     "frequency": 638,
     "rank": 16696
@@ -46942,7 +46942,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "stordito",
     "dictionary": "adjective di persona a cui gira un po' la testa, che momentaneamente fa fatica a capire a causa di u",
-    "english": "stunned; (2)",
+    "english": "stunned",
     "chinese": "震惊; (二)",
     "frequency": 636,
     "rank": 16715
@@ -46982,8 +46982,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "discendente",
     "dictionary": "adjective che discende, che cala deriving descending ebbing heir",
-    "english": "descendant; descendant (2)",
-    "chinese": "后裔; 后裔(2)",
+    "english": "descendant",
+    "chinese": "后裔",
     "frequency": 635,
     "rank": 16739
   },
@@ -47006,8 +47006,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "salato",
     "dictionary": "adjective che racchiude sale salted salty expensive briney costly pricey",
-    "english": "salty; salt (2)",
-    "chinese": "咸质; 盐(2)",
+    "english": "salty; salt",
+    "chinese": "咸质; 盐",
     "frequency": 633,
     "rank": 16756
   },
@@ -47262,8 +47262,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "meridionale",
     "dictionary": "adjective (storia) (geografia) (politica) (economia) che è posto al sud rispetto ai quattro punti ca",
-    "english": "southern; Southern Italy (2)",
-    "chinese": "南部; 意大利南部(2)",
+    "english": "southern; Southern Italy",
+    "chinese": "南部; 意大利南部",
     "frequency": 626,
     "rank": 16890
   },
@@ -47382,8 +47382,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "collettivo",
     "dictionary": "adjective (grammatica) di sostantivo che al singolare indica una molteplicità collective (diritto) (",
-    "english": "collective collective; collective (2)",
-    "chinese": "集体; 集体(2)",
+    "english": "collective",
+    "chinese": "集体",
     "frequency": 621,
     "rank": 16971
   },
@@ -47462,8 +47462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "lubrificante",
     "dictionary": "adjective che lubrifica lubricant lubricating",
-    "english": "lube; lubricant (2)",
-    "chinese": "润滑油; 润滑剂(2)",
+    "english": "lube; lubricant",
+    "chinese": "润滑油; 润滑剂",
     "frequency": 618,
     "rank": 17020
   },
@@ -47518,7 +47518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "parallelo",
     "dictionary": "adjective (di) retta priva di punti in comune con un'altra imultaneous parallel (per estensione) di ",
-    "english": "parallel; (2)",
+    "english": "parallel",
     "chinese": "平行; (二)",
     "frequency": 617,
     "rank": 17040
@@ -47606,8 +47606,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "assunzione",
     "dictionary": "noun (diritto) (economia) atto e risultato dell'assumere employment engagement",
-    "english": "recruitment; Intake (2)",
-    "chinese": "征聘; 摄入量(2)",
+    "english": "recruitment; Intake",
+    "chinese": "征聘; 摄入量",
     "frequency": 615,
     "rank": 17069
   },
@@ -47694,7 +47694,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "molecolare",
     "dictionary": "adjective (fisica) (chimica) relativo alla molecola, composto di molecole molecular",
-    "english": "m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m",
+    "english": "m",
     "chinese": "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
     "frequency": 613,
     "rank": 17111
@@ -47742,7 +47742,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "separatamente",
     "dictionary": "adverb non insieme non allo stesso tempo separately",
-    "english": "separately separately separately",
+    "english": "separately",
     "chinese": "单独分开",
     "frequency": 611,
     "rank": 17133
@@ -47774,7 +47774,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "brevetto",
     "dictionary": "noun patent",
-    "english": "patent patent",
+    "english": "patent",
     "chinese": "专利",
     "frequency": 611,
     "rank": 17148
@@ -47790,7 +47790,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "disonesto",
     "dictionary": "adjective che manca di onestà dishonorable dishonourable immoral improper unseemly (per estensione) ",
-    "english": "dishonest; (2)",
+    "english": "dishonest",
     "chinese": "不诚实; (二)",
     "frequency": 609,
     "rank": 17181
@@ -47830,7 +47830,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "zoppo",
     "dictionary": "adjective che non si regge dritto defective faulty imperfect lame rickety shaky",
-    "english": "Nitrogen; (2)",
+    "english": "Nitrogen",
     "chinese": "氮; (二)",
     "frequency": 608,
     "rank": 17203
@@ -47926,8 +47926,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "invernale",
     "dictionary": "adjective wintry",
-    "english": "winter winter winter winter winter winter",
-    "chinese": "冬季 冬季 冬季 冬季",
+    "english": "winter",
+    "chinese": "冬季",
     "frequency": 605,
     "rank": 17256
   },
@@ -47982,7 +47982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vitamina",
     "dictionary": "noun (chimica) (chimica organica) (biologia) (biochimica) composto organico contenuto",
-    "english": "vitamin vitamin",
+    "english": "vitamin",
     "chinese": "维生素",
     "frequency": 603,
     "rank": 17275
@@ -48022,8 +48022,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "liberale",
     "dictionary": "adjective disposto a donare largamente e spontaneamente; generoso che dimostra generosità o nobiltà ",
-    "english": "liberal; liberal (2)",
-    "chinese": "自由主义; 自由主义(2)",
+    "english": "liberal",
+    "chinese": "自由主义",
     "frequency": 602,
     "rank": 17302
   },
@@ -48086,7 +48086,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Moro",
     "dictionary": "noun (storia) abitante della Mauritania Moor",
-    "english": "Moro; (2)",
+    "english": "Moro",
     "chinese": "莫罗; (二)",
     "frequency": 600,
     "rank": 17336
@@ -48350,7 +48350,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "relativo",
     "dictionary": "adjective attendant comparative respective (per estensione) che è in relazione con qua",
-    "english": "relative relative",
+    "english": "relative",
     "chinese": "相对",
     "frequency": 595,
     "rank": 17464
@@ -48406,8 +48406,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "singolare",
     "dictionary": "adjective particolare, unico singular unique",
-    "english": "singular; Single (2)",
-    "chinese": "单数; 单项(2)",
+    "english": "singular; Single",
+    "chinese": "单数; 单项",
     "frequency": 592,
     "rank": 17501
   },
@@ -48454,8 +48454,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ovale",
     "dictionary": "adjective avente figura simile alla sezione longitudinale di un uovo, spesso di un'ellisse (botanica",
-    "english": "oval; oval (2)",
-    "chinese": "椭圆; 椭圆 (2)",
+    "english": "oval",
+    "chinese": "椭圆",
     "frequency": 592,
     "rank": 17513
   },
@@ -48470,7 +48470,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tablet",
     "dictionary": "noun tablet tablet computer",
-    "english": "tablet tablet",
+    "english": "tablet",
     "chinese": "平板电脑",
     "frequency": 591,
     "rank": 17524
@@ -48486,8 +48486,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "manipolazione",
     "dictionary": "noun handling insieme di operazioni, di natura prevalentemente manuale, che occ",
-    "english": "manipulation manipulation manipulation",
-    "chinese": "操纵操纵",
+    "english": "manipulation",
+    "chinese": "操纵",
     "frequency": 591,
     "rank": 17531
   },
@@ -48534,8 +48534,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cubano",
     "dictionary": "adjective (geografia) di Cuba Cuban",
-    "english": "Cuban; Cuban (2)",
-    "chinese": "古巴人; 古巴(2)",
+    "english": "Cuban",
+    "chinese": "古巴人; 古巴",
     "frequency": 590,
     "rank": 17557
   },
@@ -48558,23 +48558,23 @@ const VOCABULARY_DATA = [
   {
     "italian": "selvatico",
     "dictionary": "adjective (senso figurato) (spregiativo) di individuo, poco espansivo, un po' \"distante\", \"restio\", ",
-    "english": "wild; (2); wild (3)",
-    "chinese": "疯狂; (二); 野性(3)",
+    "english": "wild",
+    "chinese": "疯狂; (二); 野性",
     "frequency": 589,
     "rank": 17570
   },
   {
     "italian": "massiccio",
     "dictionary": "adjective che è costituito da un'unica massa solida e piena glaring gross",
-    "english": "Massive mass; Massive (2)",
-    "chinese": "质量; 质量(2)",
+    "english": "Massive mass; Massive",
+    "chinese": "质量",
     "frequency": 589,
     "rank": 17572
   },
   {
     "italian": "imbranato",
     "dictionary": "adjective (familiare) che è maldestro awkard awkward cload clumsy dolt muff",
-    "english": "Broken; (2)",
+    "english": "Broken",
     "chinese": "断开; (二)",
     "frequency": 589,
     "rank": 17573
@@ -48686,7 +48686,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "alternativo",
     "dictionary": "noun (sociologia) chi pratica uno stile di vita non comune nonconformist",
-    "english": "alternative alternative",
+    "english": "alternative",
     "chinese": "备选案文",
     "frequency": 586,
     "rank": 17632
@@ -48758,8 +48758,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "primitivo",
     "dictionary": "adjective che riguarda un periodo di tempo precedente a quello attuale archaic crude primaeval prime",
-    "english": "primitive; primitive (2)",
-    "chinese": "原始内容; 原始的(2)",
+    "english": "primitive",
+    "chinese": "原始内容; 原始的",
     "frequency": 584,
     "rank": 17672
   },
@@ -48782,8 +48782,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "convenzionale",
     "dictionary": "adjective che si uniforma alle convenzioni commonplace conventional unoriginal (",
-    "english": "conventional conventional",
-    "chinese": "常规常规",
+    "english": "conventional",
+    "chinese": "常规",
     "frequency": 583,
     "rank": 17682
   },
@@ -48886,8 +48886,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "commercialista",
     "dictionary": "adjective (professione) (diritto) (economia) (commercio) (di) professionista laureato in discipline ",
-    "english": "Commercial; commercial (2)",
-    "chinese": "商业; 商业(2)",
+    "english": "Commercial",
+    "chinese": "商业",
     "frequency": 580,
     "rank": 17745
   },
@@ -48910,8 +48910,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tropicale",
     "dictionary": "adjective (geografia) relativo ai tropici tropical",
-    "english": "tropical tropical tropical",
-    "chinese": "热带热带",
+    "english": "tropical",
+    "chinese": "热带",
     "frequency": 580,
     "rank": 17756
   },
@@ -48974,8 +48974,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sovietico",
     "dictionary": "adjective dei soviet soviet (storia) (geografia) (politica) relativo all'ex-Unione So",
-    "english": "Soviet Soviet Soviet",
-    "chinese": "苏联 苏联",
+    "english": "Soviet",
+    "chinese": "苏联",
     "frequency": 579,
     "rank": 17779
   },
@@ -48990,8 +48990,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "decorato",
     "dictionary": "adjective adorno, ornato adorned decorated dressed garnished",
-    "english": "decorated decorated decorated decorated decorated decorated decorated decorated decorated",
-    "chinese": "装饰 装饰 装饰 装饰",
+    "english": "decorated",
+    "chinese": "装饰",
     "frequency": 579,
     "rank": 17782
   },
@@ -49078,7 +49078,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Cupido",
     "dictionary": "pronoun (zoologia), (entomologia) Cupid",
-    "english": "Cupid; cupid",
+    "english": "Cupid",
     "chinese": "丘比特语Name",
     "frequency": 575,
     "rank": 17848
@@ -49094,7 +49094,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rozzo",
     "dictionary": "adjective di un individuo che è poco e male educato, o che ha modi o atteggiamenti poco raffinati o ",
-    "english": "Rough; (2)",
+    "english": "Rough",
     "chinese": "粗鲁; (二)",
     "frequency": 574,
     "rank": 17861
@@ -49222,8 +49222,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "impulsivo",
     "dictionary": "adjective che agisce d'istinto, senza riflettere (fisica) di grandezza presente per un intervallo di",
-    "english": "impulsive; impulsive (2)",
-    "chinese": "冲动; 冲动 (2)",
+    "english": "impulsive",
+    "chinese": "冲动",
     "frequency": 571,
     "rank": 17925
   },
@@ -49286,7 +49286,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tampone",
     "dictionary": "adjective di legge emanata a titolo temporaneamente per far fronte ad un fatto imprevisto stopgap",
-    "english": "buffer; (2)",
+    "english": "buffer",
     "chinese": "缓冲; (二)",
     "frequency": 569,
     "rank": 17977
@@ -49350,16 +49350,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "matematico",
     "dictionary": "adjective riguardante la matematica mathematical certain exact precise",
-    "english": "mathematician; mathematician (2)",
-    "chinese": "数学家; 数学家(2)",
+    "english": "mathematician",
+    "chinese": "数学家",
     "frequency": 567,
     "rank": 18014
   },
   {
     "italian": "cordiale",
     "dictionary": "adjective che è espresso con sincerità ed affetto, come provenendo direttamente dal cuore; oppure, d",
-    "english": "friendly; friendly (2)",
-    "chinese": "亲切; 友好组织(2)",
+    "english": "friendly",
+    "chinese": "亲切; 友好组织",
     "frequency": 567,
     "rank": 18015
   },
@@ -49422,8 +49422,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "diplomato",
     "dictionary": "adjective che ha un diploma degreed",
-    "english": "graduate; graduate (2)",
-    "chinese": "毕业; 毕业(2)",
+    "english": "graduate",
+    "chinese": "毕业",
     "frequency": 566,
     "rank": 18052
   },
@@ -49478,8 +49478,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "compositore",
     "dictionary": "adjective (tipografia) macchina utilizzata per la composizione tipografica Setzer",
-    "english": "composer; composer (2)",
-    "chinese": "编曲; 作曲家(2)",
+    "english": "composer",
+    "chinese": "编曲; 作曲家",
     "frequency": 564,
     "rank": 18082
   },
@@ -49542,8 +49542,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "assetato",
     "dictionary": "adjective che ha sete (senso figurato) desideroso (in particolare) sessualmente incontenibile dry pa",
-    "english": "thirsty; trimmed (2)",
-    "chinese": "渴吗?; 修剪(2)",
+    "english": "thirsty; trimmed",
+    "chinese": "渴吗?; 修剪",
     "frequency": 563,
     "rank": 18112
   },
@@ -49598,7 +49598,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "porgere",
     "dictionary": "verb tendere un oggetto verso qualcuno declaim give lend offer recite",
-    "english": "levy; (2)",
+    "english": "levy",
     "chinese": "征税; (二)",
     "frequency": 563,
     "rank": 18126
@@ -49638,7 +49638,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "primogenito",
     "dictionary": "adjective che è il primo nato fra più figli firstborn",
-    "english": "firstborn; (1)",
+    "english": "firstborn",
     "chinese": "长子; (1) 国家",
     "frequency": 562,
     "rank": 18145
@@ -49702,7 +49702,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cargo",
     "dictionary": "noun (aeronautica) (marina) aereo o nave di grandi dimensioni destinato esclusivamente al",
-    "english": "cargo cargo",
+    "english": "cargo",
     "chinese": "货运",
     "frequency": 560,
     "rank": 18173
@@ -49798,8 +49798,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "croccante",
     "dictionary": "adjective (gastronomia) (di cibo) ben cotto che, sotto i denti, produce un suono secco crisp crunchy",
-    "english": "crispy; Crunch (2)",
-    "chinese": "脆; 弯曲(2)",
+    "english": "crispy; Crunch",
+    "chinese": "脆; 弯曲",
     "frequency": 559,
     "rank": 18215
   },
@@ -49830,7 +49830,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rotolo",
     "dictionary": "noun (storia) reel roll",
-    "english": "roll roll",
+    "english": "roll",
     "chinese": "卷轴",
     "frequency": 558,
     "rank": 18219
@@ -49998,8 +49998,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "disabile",
     "dictionary": "adjective che è privo di alcune attitudini fisiche o mentali disabled handicapped",
-    "english": "disabled; disabled (2)",
-    "chinese": "已禁用; 残疾(2)",
+    "english": "disabled",
+    "chinese": "已禁用; 残疾",
     "frequency": 555,
     "rank": 18295
   },
@@ -50022,7 +50022,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "superstiti",
     "dictionary": "noun plurale di superstite surviving survivor survivors",
-    "english": "survivors survivors",
+    "english": "survivors",
     "chinese": "幸存者",
     "frequency": 554,
     "rank": 18310
@@ -50062,8 +50062,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "digiuno",
     "dictionary": "adjective che non mangia da tempo fast fasting (senso figurato) senza informazioni fasting",
-    "english": "fasting; fasting (2)",
-    "chinese": "斋戒; 斋戒(2)",
+    "english": "fasting",
+    "chinese": "斋戒",
     "frequency": 553,
     "rank": 18328
   },
@@ -50086,8 +50086,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pesto",
     "dictionary": "adjective completamente schiacciato (raro) frantumato, quasi sino ad essere rotto pesto",
-    "english": "pesto; pesto (2)",
-    "chinese": "pest; 鼠标(2)",
+    "english": "pesto",
+    "chinese": "pest; 鼠标",
     "frequency": 553,
     "rank": 18343
   },
@@ -50102,7 +50102,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "edile",
     "dictionary": "adjective (edilizia) (tecnologia) (architettura) (ingegneria) che riguarda la costruzione delle abit",
-    "english": "Construction; (2)",
+    "english": "Construction",
     "chinese": "建筑业; (二)",
     "frequency": 553,
     "rank": 18348
@@ -50118,7 +50118,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "socialista",
     "dictionary": "adjective riferito alle teorie politiche e filosofiche del socialismo socialist",
-    "english": "Socialist socialist socialist",
+    "english": "Socialist",
     "chinese": "社会主义社会主义社会主义.",
     "frequency": 552,
     "rank": 18357
@@ -50406,16 +50406,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "organico",
     "dictionary": "adjective (senso figurato) organizzato, armonico, sistemico, che considera tutte le sfumature ovvero",
-    "english": "organic; organic (2)",
-    "chinese": "有机; 有机体(2)",
+    "english": "organic",
+    "chinese": "有机; 有机体",
     "frequency": 545,
     "rank": 18520
   },
   {
     "italian": "portoghese",
     "dictionary": "adjective (geografia) relativo al Portogallo (linguistica) relativo alla lingua portoghese Portugues",
-    "english": "Portuguese; Portuguese (2)",
-    "chinese": "葡萄牙语; 葡萄牙语(2)",
+    "english": "Portuguese",
+    "chinese": "葡萄牙语",
     "frequency": 545,
     "rank": 18522
   },
@@ -50526,8 +50526,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "belga",
     "dictionary": "adjective (geografia) relativo al Belgio Belgian",
-    "english": "Belgium; Belgium (2)",
-    "chinese": "比利时; 比利时(2)",
+    "english": "Belgium",
+    "chinese": "比利时",
     "frequency": 543,
     "rank": 18572
   },
@@ -50558,7 +50558,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cerniera",
     "dictionary": "noun zip zipper (meccanica) (tecnologia) (ingegneria) congegno metallico col fine di",
-    "english": "Hinge hinge",
+    "english": "Hinge",
     "chinese": "兴格锁",
     "frequency": 542,
     "rank": 18586
@@ -50614,8 +50614,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "barbaro",
     "dictionary": "adjective (storia) (di) abitante del mondo antico al di fuori della Grecia barbarous cruel uncouth (",
-    "english": "beard; beard (2)",
-    "chinese": "胡须; 胡须(2)",
+    "english": "beard",
+    "chinese": "胡须",
     "frequency": 540,
     "rank": 18621
   },
@@ -50734,7 +50734,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mozzo",
     "dictionary": "adjective che è stato mozzato mutilated",
-    "english": "hub; (2)",
+    "english": "hub",
     "chinese": "枢纽; (二)",
     "frequency": 537,
     "rank": 18684
@@ -50790,8 +50790,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "progettare",
     "dictionary": "verb organizzare o ideare qualcosa e studiare il modo di eseguirla a breve termine",
-    "english": "design design design",
-    "chinese": "设计设计",
+    "english": "design",
+    "chinese": "设计",
     "frequency": 536,
     "rank": 18712
   },
@@ -51110,8 +51110,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "scontroso",
     "dictionary": "adjective che ha un carattere poco socievole, che si irrita e si offende facilmente (per estensione)",
-    "english": "clumsy; clumsy (2)",
-    "chinese": "笨手笨脚的; 笨手笨脚的(2)",
+    "english": "clumsy",
+    "chinese": "笨手笨脚的",
     "frequency": 528,
     "rank": 18903
   },
@@ -51166,23 +51166,23 @@ const VOCABULARY_DATA = [
   {
     "italian": "incerto",
     "dictionary": "adjective che non è risoluto doubtful dubious uncertain uncertian undecided unforeseeable",
-    "english": "uncertain; Uncertainted (2)",
-    "chinese": "不确定; 不确定(2)",
+    "english": "uncertain; Uncertainted",
+    "chinese": "不确定",
     "frequency": 527,
     "rank": 18928
   },
   {
     "italian": "solidarietà",
     "dictionary": "noun (filosofia) (sociologia) (diritto) (economia) condizione di chi è solidale con",
-    "english": "solidarity solidarity",
-    "chinese": "团结团结",
+    "english": "solidarity",
+    "chinese": "团结",
     "frequency": 527,
     "rank": 18937
   },
   {
     "italian": "rigore",
     "dictionary": "noun (letterario) consistenza notevole osservanza approfondita e precisa di una regola f",
-    "english": "rigor rigor",
+    "english": "rigor",
     "chinese": "刚度",
     "frequency": 526,
     "rank": 18939
@@ -51262,7 +51262,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "colmo",
     "dictionary": "adjective che è pieno full",
-    "english": "♪; (2)",
+    "english": "♪",
     "chinese": "(待修复); (二)",
     "frequency": 525,
     "rank": 18969
@@ -51430,7 +51430,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "swing",
     "dictionary": "noun (sport) nel golf il movimento che un giocatore deve compiere col bastone nell'intento",
-    "english": "swing swing",
+    "english": "swing",
     "chinese": "摇摆",
     "frequency": 521,
     "rank": 19073
@@ -51510,8 +51510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "clinico",
     "dictionary": "adjective (medicina) che riguarda il riconoscimento o la cura delle malattie clinical",
-    "english": "clinical; clinical (2)",
-    "chinese": "临床; 临床(2)",
+    "english": "clinical",
+    "chinese": "临床",
     "frequency": 519,
     "rank": 19123
   },
@@ -51550,7 +51550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "affogato",
     "dictionary": "adjective che è annegato drowned (scacchi) scaccomatto dato da un cavallo al re che si trova circond",
-    "english": "drowned; (2)",
+    "english": "drowned",
     "chinese": "淹死; (二)",
     "frequency": 518,
     "rank": 19142
@@ -51622,8 +51622,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "flagrante",
     "dictionary": "adjective (diritto) scoperto sul delitto evident flagrant glaring open",
-    "english": "flagrant; flagella (2)",
-    "chinese": "公然; 拉格莱拉(2)",
+    "english": "flagrant; flagella",
+    "chinese": "公然; 拉格莱拉",
     "frequency": 516,
     "rank": 19181
   },
@@ -51694,8 +51694,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "consumare",
     "dictionary": "verb utilizzare completamente qualcosa fino ad esaurirla, oppure fino a distruggerla o deteriorarla ",
-    "english": "consume; Consummation (2)",
-    "chinese": "消耗; 结 论 (2)",
+    "english": "consume; Consummation",
+    "chinese": "消耗; 结 论",
     "frequency": 514,
     "rank": 19230
   },
@@ -51782,8 +51782,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "alcolico",
     "dictionary": "adjective (chimica) (chimica organica) relativo all'alcool alcoholic",
-    "english": "alcohol; alcohol (2)",
-    "chinese": "酒类; 酒精(2)",
+    "english": "alcohol",
+    "chinese": "酒类; 酒精",
     "frequency": 512,
     "rank": 19289
   },
@@ -51862,7 +51862,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ricorrente",
     "dictionary": "adjective che ha effettuato ricorso recurrent recursive repeated",
-    "english": "applicant; (2)",
+    "english": "applicant",
     "chinese": "申请人; (二)",
     "frequency": 511,
     "rank": 19312
@@ -51878,7 +51878,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "randagio",
     "dictionary": "adjective che è stato abbandonato o non ha una casa wandering",
-    "english": "Randagio; (2)",
+    "english": "Randagio",
     "chinese": "兰达焦; (二)",
     "frequency": 511,
     "rank": 19318
@@ -52006,7 +52006,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "conchiglia",
     "dictionary": "noun (zoologia), (malacologia) scheletro dorsale di alcuni molluschi shell (araldica)",
-    "english": "shell shell shell",
+    "english": "shell",
     "chinese": "贝壳壳",
     "frequency": 509,
     "rank": 19374
@@ -52014,8 +52014,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "accademico",
     "dictionary": "adjective che riguarda o frequenta un'accademia academic Academic rhetorical theoretic perfettamente",
-    "english": "Academic; academic (2)",
-    "chinese": "学术; 学术(2)",
+    "english": "Academic",
+    "chinese": "学术",
     "frequency": 508,
     "rank": 19380
   },
@@ -52030,7 +52030,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ventesimo",
     "dictionary": "noun (matematica) (economia) (statistica) una delle venti parti in cui è diviso un in",
-    "english": "20th century; (2)",
+    "english": "20th century",
     "chinese": "20世纪; (二)",
     "frequency": 508,
     "rank": 19390
@@ -52062,7 +52062,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "palato",
     "dictionary": "adjective (araldica) un campo coperto da un numero pari di pali di smalti alternati. Il termine si u",
-    "english": "palate; (2)",
+    "english": "palate",
     "chinese": "调味品; (二)",
     "frequency": 507,
     "rank": 19404
@@ -52086,16 +52086,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "onorario",
     "dictionary": "adjective eseguito per rendere onore a qualcuno: fee honorarium che ha un incarico solo onorifico se",
-    "english": "Honorary; Honorary (2)",
-    "chinese": "荣誉; 荣誉(2)",
+    "english": "Honorary",
+    "chinese": "荣誉",
     "frequency": 506,
     "rank": 19422
   },
   {
     "italian": "scettico",
     "dictionary": "adjective (filosofia) di persona che osserva tutto scrupolosamente, ma non perviene a conclusione ce",
-    "english": "Skeptical; Skeptical (2)",
-    "chinese": "怀疑主义; 怀疑论(2)",
+    "english": "Skeptical",
+    "chinese": "怀疑主义; 怀疑论",
     "frequency": 506,
     "rank": 19427
   },
@@ -52158,7 +52158,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dinanzi",
     "dictionary": "adjective (obsoleto) che sta davanti inteso sia nel tempo che nello spazio before front facing forwa",
-    "english": "before; (2)",
+    "english": "before",
     "chinese": "在此之前; (二)",
     "frequency": 505,
     "rank": 19452
@@ -52190,8 +52190,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "mendicante",
     "dictionary": "adjective che richiede l'elemosina beggar begging",
-    "english": "beggar; beggar (2)",
-    "chinese": "乞丐; 乞丐(2)",
+    "english": "beggar",
+    "chinese": "乞丐",
     "frequency": 504,
     "rank": 19471
   },
@@ -52246,7 +52246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "espressamente",
     "dictionary": "adverb expressly",
-    "english": "expressly expressly expressly",
+    "english": "expressly",
     "chinese": "明确无误",
     "frequency": 503,
     "rank": 19501
@@ -52278,7 +52278,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "riccio",
     "dictionary": "adjective di capello o filo, arrotolato su se stesso: curl curly ringlet scroll",
-    "english": "Ridge; (2)",
+    "english": "Ridge",
     "chinese": "山脊; (二)",
     "frequency": 503,
     "rank": 19508
@@ -52430,8 +52430,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "miniatura",
     "dictionary": "noun (arte) prodotto di piccoli e minuscoli quadri (illustrazione) immagine molto pic",
-    "english": "Miniature miniature",
-    "chinese": "微型微型",
+    "english": "Miniature",
+    "chinese": "微型",
     "frequency": 499,
     "rank": 19577
   },
@@ -52478,8 +52478,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "carrozzeria",
     "dictionary": "noun (automobilismo) rivestimento esterno di un autoveicolo bodywork body coachwo",
-    "english": "body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body",
-    "chinese": "机构机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构 机构",
+    "english": "body",
+    "chinese": "机构",
     "frequency": 499,
     "rank": 19602
   },
@@ -52494,7 +52494,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "laguna",
     "dictionary": "noun (geografia) distesa d'acqua marina, dal fondale generalmente poco profondo, separa",
-    "english": "lagoon lagoon",
+    "english": "lagoon",
     "chinese": "环礁湖",
     "frequency": 498,
     "rank": 19606
@@ -52662,8 +52662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "preventivo",
     "dictionary": "adjective (medicina) inerente ad una cura per evitare l'insorgere di una o più malattie latenti prev",
-    "english": "quote quote quote; (2)",
-    "chinese": "引用引用; (二)",
+    "english": "quote",
+    "chinese": "引用; (二)",
     "frequency": 494,
     "rank": 19716
   },
@@ -52734,7 +52734,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Elio",
     "dictionary": "pronoun Helios",
-    "english": "Helium; helium",
+    "english": "Helium",
     "chinese": "氦",
     "frequency": 491,
     "rank": 19776
@@ -52742,8 +52742,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "studioso",
     "dictionary": "adjective che si applica nello studio con dedizione academic scholar scientist zealous",
-    "english": "scholar; study (2)",
-    "chinese": "学者; 研究(2)",
+    "english": "scholar; study",
+    "chinese": "学者; 研究",
     "frequency": 491,
     "rank": 19782
   },
@@ -52814,8 +52814,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pneumatico",
     "dictionary": "adjective (fisica) (meccanica) che si gonfia con aria inflatable pneumatic",
-    "english": "pneumatic; pneumatic (2)",
-    "chinese": "气动; 气压(2)",
+    "english": "pneumatic",
+    "chinese": "气动; 气压",
     "frequency": 490,
     "rank": 19829
   },
@@ -52926,8 +52926,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "egocentrico",
     "dictionary": "adjective (per estensione) relativo a chi vuole fare tutto da sé egocentric self-centred",
-    "english": "self-centered; self-centered (2)",
-    "chinese": "自定义; 自我为中心(2)",
+    "english": "self-centered",
+    "chinese": "自定义; 自我为中心",
     "frequency": 486,
     "rank": 19926
   },
@@ -53047,7 +53047,7 @@ const VOCABULARY_DATA = [
     "italian": "inchiodato",
     "dictionary": "adjective (araldica) attributo araldico che si applica quando i ferri di cavallo o il",
     "english": "nailed",
-    "chinese": "钉钉",
+    "chinese": "钉",
     "frequency": 483,
     "rank": 20002
   },
@@ -53062,15 +53062,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "unicamente",
     "dictionary": "adverb only",
-    "english": "solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely sole solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely sole sole sole sole solely solely sole solely sole sole solely sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole solely sole sole sole sole sole sole sole solely solely sole sole sole solely solely sole sole sole sole sole solely solely solely solely solely solely solely solely solely sole sole sole solely solely sole",
-    "chinese": "独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独独",
+    "english": "solely sole solely sole solely sole solely sole solely sole",
+    "chinese": "独",
     "frequency": 483,
     "rank": 20008
   },
   {
     "italian": "turismo",
     "dictionary": "noun tourism",
-    "english": "tourism tourism",
+    "english": "tourism",
     "chinese": "旅游业",
     "frequency": 483,
     "rank": 20011
@@ -53078,8 +53078,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "medicinale",
     "dictionary": "adjective che è fornito di caratteristiche curative curative healing medicinal",
-    "english": "medicinal product; medicinal products (2)",
-    "chinese": "医药产品; 医药产品(2)",
+    "english": "medicinal product; medicinal products",
+    "chinese": "医药产品",
     "frequency": 483,
     "rank": 20017
   },
@@ -53142,8 +53142,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "diligenza",
     "dictionary": "noun carrozza trainata da una coppia o due di cavalli,nel passato usata per trasportare persone o me",
-    "english": "diligence; Diligence (2)",
-    "chinese": "勤勉; 勤奋(2)",
+    "english": "diligence",
+    "chinese": "勤勉; 勤奋",
     "frequency": 481,
     "rank": 20064
   },
@@ -53278,8 +53278,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ungherese",
     "dictionary": "adjective (geografia) relativo all'Ungheria Hungarian",
-    "english": "Hungarian; Hungarian (2); Hungarian (3)",
-    "chinese": "匈牙利语Name; 匈牙利(2); 匈牙利(3)",
+    "english": "Hungarian",
+    "chinese": "匈牙利语Name; 匈牙利",
     "frequency": 478,
     "rank": 20142
   },
@@ -53334,8 +53334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sconsiderato",
     "dictionary": "adjective privo di considerazione fool",
-    "english": "Unwanted; Unwanted (2)",
-    "chinese": "不受欢迎; 不受欢迎(2)",
+    "english": "Unwanted",
+    "chinese": "不受欢迎",
     "frequency": 477,
     "rank": 20167
   },
@@ -53414,8 +53414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "mediatore",
     "dictionary": "adjective attinente alla mediazione mediating",
-    "english": "mediator; Mediator (2)",
-    "chinese": "调解人; 调解员(2)",
+    "english": "mediator",
+    "chinese": "调解人; 调解员",
     "frequency": 475,
     "rank": 20231
   },
@@ -53838,8 +53838,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "raso",
     "dictionary": "adjective di pelo tagliato alla base, rasato shaven short-haired",
-    "english": "Satin; Satin (2)",
-    "chinese": "萨丁; 萨丁(2)",
+    "english": "Satin",
+    "chinese": "萨丁",
     "frequency": 466,
     "rank": 20477
   },
@@ -53878,7 +53878,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "distinto",
     "dictionary": "adjective differente da qualcos'altro dignitoso, che merita rispetto different distinct separate evi",
-    "english": "separate; (2)",
+    "english": "separate",
     "chinese": "单独; (二)",
     "frequency": 465,
     "rank": 20502
@@ -53894,8 +53894,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "feeling",
     "dictionary": "noun feeling",
-    "english": "feeling feeling feeling",
-    "chinese": "感觉感觉",
+    "english": "feeling",
+    "chinese": "感觉",
     "frequency": 464,
     "rank": 20520
   },
@@ -53910,7 +53910,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "piastra",
     "dictionary": "noun sheet (metallurgia) pezzo di metallo plate slab (tecnologia) (ingegneria) elemento strutturale ",
-    "english": "plate plate",
+    "english": "plate",
     "chinese": "盘片",
     "frequency": 464,
     "rank": 20530
@@ -53934,8 +53934,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "editoriale",
     "dictionary": "adjective relativo all'editoria editorial publishing",
-    "english": "editorial; editorial (2)",
-    "chinese": "编辑; 编辑(2)",
+    "english": "editorial",
+    "chinese": "编辑",
     "frequency": 464,
     "rank": 20537
   },
@@ -53950,8 +53950,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "interagire",
     "dictionary": "verb interact",
-    "english": "interact interact interact interact interact",
-    "chinese": "互动 互动 互动",
+    "english": "interact",
+    "chinese": "互动",
     "frequency": 464,
     "rank": 20548
   },
@@ -53966,7 +53966,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "passivo",
     "dictionary": "adjective privo di iniziativa, che segue la volontà di altre persone idle che subisce l'azione di al",
-    "english": "passive; (1)",
+    "english": "passive",
     "chinese": "被动; (1) 国家",
     "frequency": 463,
     "rank": 20561
@@ -54039,7 +54039,7 @@ const VOCABULARY_DATA = [
     "italian": "coagulo",
     "dictionary": "noun (biologia) (medicina) massa solida costituita dalla fibrina, contenente piastrine,",
     "english": "clot",
-    "chinese": "块块块",
+    "chinese": "块",
     "frequency": 462,
     "rank": 20604
   },
@@ -54246,8 +54246,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "nocciolo",
     "dictionary": "noun (botanica) pianta da frutto cespugliosa che fornisce le nocciole. Nome botanico: Corylus avella",
-    "english": "hazelnut; hazelnut (2)",
-    "chinese": "胡萝卜; zel果(2)",
+    "english": "hazelnut",
+    "chinese": "胡萝卜; zel果",
     "frequency": 457,
     "rank": 20713
   },
@@ -54302,8 +54302,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "Mediterraneo",
     "dictionary": "noun Mediterranean Sea",
-    "english": "Mediterranean Mediterranean Mediterranean",
-    "chinese": "地中海地中海",
+    "english": "Mediterranean",
+    "chinese": "地中海",
     "frequency": 456,
     "rank": 20750
   },
@@ -54414,8 +54414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "titanio",
     "dictionary": "noun (chimica) (metallurgia) elemento chimico solido, di colore argento metallico, facente parte del",
-    "english": "titanium titanium titanium titanium",
-    "chinese": "钛 钛",
+    "english": "titanium",
+    "chinese": "钛",
     "frequency": 454,
     "rank": 20823
   },
@@ -54662,8 +54662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "coalizione",
     "dictionary": "noun (diritto) (economia) accordo che limita la concorrenza tra aziende nello stess",
-    "english": "coalition coalition coalition coalition coalition coalition",
-    "chinese": "联盟联盟 联盟联盟联盟",
+    "english": "coalition",
+    "chinese": "联盟",
     "frequency": 447,
     "rank": 20988
   },
@@ -54806,7 +54806,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rilevamento",
     "dictionary": "noun atto o effetto del rilevare takeover survey sounding statistics",
-    "english": "detection detection",
+    "english": "detection",
     "chinese": "检测",
     "frequency": 445,
     "rank": 21062
@@ -54894,8 +54894,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vietnamita",
     "dictionary": "adjective (geografia) del Vietnam Vietnamese",
-    "english": "Vietnamese; Vietnamese (2); Vietnamese (3)",
-    "chinese": "越南语Name; 越南语(2); 越南语(3)",
+    "english": "Vietnamese",
+    "chinese": "越南语Name; 越南语",
     "frequency": 444,
     "rank": 21102
   },
@@ -54967,7 +54967,7 @@ const VOCABULARY_DATA = [
     "italian": "tino",
     "dictionary": "noun tank vat",
     "english": "tyrant",
-    "chinese": "暴君 暴君",
+    "chinese": "暴君",
     "frequency": 442,
     "rank": 21157
   },
@@ -55030,8 +55030,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "parlamentare",
     "dictionary": "adjective relativo al parlamento (politica) (storia) (economia) (diritto) monarchia parlamentare: in",
-    "english": "Member; Parliament (2); Parliament (3)",
-    "chinese": "成员; 议会(2); 议会(3)",
+    "english": "Member; Parliament",
+    "chinese": "成员; 议会",
     "frequency": 441,
     "rank": 21185
   },
@@ -55158,7 +55158,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "liceale",
     "dictionary": "adjective (scuola) relativo al liceo pupil secondary school",
-    "english": "High school; (2)",
+    "english": "High school",
     "chinese": "中学; (二)",
     "frequency": 439,
     "rank": 21252
@@ -55166,7 +55166,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "beige",
     "dictionary": "adjective (colori) (fisica) di colore tra l'avorio e il nocciola beige",
-    "english": "beige; (2)",
+    "english": "beige",
     "chinese": "红; (二)",
     "frequency": 439,
     "rank": 21261
@@ -55254,16 +55254,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "artico",
     "dictionary": "adjective che è inerente al polo boreale Arctic",
-    "english": "Arctic; Arctic (2)",
-    "chinese": "北极地区; 北极(2)",
+    "english": "Arctic",
+    "chinese": "北极地区; 北极",
     "frequency": 437,
     "rank": 21312
   },
   {
     "italian": "detersivo",
     "dictionary": "adjective che deterge detergent",
-    "english": "detergent; detergent (2)",
-    "chinese": "洗涤剂; 洗涤剂(2)",
+    "english": "detergent",
+    "chinese": "洗涤剂",
     "frequency": 437,
     "rank": 21315
   },
@@ -55310,7 +55310,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tirchio",
     "dictionary": "adjective che è taccagno nello sborsare close-fisted mean miser miserly stingy tight",
-    "english": "Tirchio; (2)",
+    "english": "Tirchio",
     "chinese": "蒂尔奇奥; (二)",
     "frequency": 437,
     "rank": 21333
@@ -55334,8 +55334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "nasale",
     "dictionary": "adjective (anatomia) (medicina) del naso nasal",
-    "english": "nasal; nasal (2)",
-    "chinese": "鼻音; 鼻线(2)",
+    "english": "nasal",
+    "chinese": "鼻音; 鼻线",
     "frequency": 437,
     "rank": 21343
   },
@@ -55374,8 +55374,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "amoroso",
     "dictionary": "adjective che è attinente all'amore affectionate amoroso fond loving",
-    "english": "Love; amorous (2)",
-    "chinese": "爱; 摊余(2)",
+    "english": "Love; amorous",
+    "chinese": "爱; 摊余",
     "frequency": 436,
     "rank": 21354
   },
@@ -55438,8 +55438,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "scontento",
     "dictionary": "adjective che non è contento [discontent discontented displeased dissatisfied",
-    "english": "discontent; Discontent (2); discontent (3)",
-    "chinese": "不满; 不满(2); 不满(3)",
+    "english": "discontent",
+    "chinese": "不满",
     "frequency": 435,
     "rank": 21395
   },
@@ -55455,7 +55455,7 @@ const VOCABULARY_DATA = [
     "italian": "ubriachezza",
     "dictionary": "noun (psicologia) (medicina) (psichiatria) (farmacologia) situazione di chi è ubria",
     "english": "drunkenness",
-    "chinese": "醉酒 醉酒 醉酒 醉酒 醉酒",
+    "chinese": "醉酒",
     "frequency": 435,
     "rank": 21408
   },
@@ -55478,8 +55478,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "thailandese",
     "dictionary": "adjective (geografia) relativo alla Thailandia Thai",
-    "english": "Thai; Thai (2)",
-    "chinese": "泰国语Name; 泰国(2)",
+    "english": "Thai",
+    "chinese": "泰国语Name; 泰国",
     "frequency": 434,
     "rank": 21416
   },
@@ -55550,8 +55550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vizioso",
     "dictionary": "adjective che preferisce i vizi che ha dei difetti depraved immoral nefarious",
-    "english": "vicious; vicious (2)",
-    "chinese": "恶性; 恶性(2)",
+    "english": "vicious",
+    "chinese": "恶性",
     "frequency": 433,
     "rank": 21470
   },
@@ -55598,7 +55598,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "benestante",
     "dictionary": "adjective che vive agiatamente affluent rich wealthy well-off well-to-do",
-    "english": "well; (2)",
+    "english": "well",
     "chinese": "这个嘛; (二)",
     "frequency": 432,
     "rank": 21486
@@ -55742,7 +55742,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cafone",
     "dictionary": "adjective di pessimo gusto ignoramous imbecile oaf",
-    "english": "Shit.; (2)",
+    "english": "Shit.",
     "chinese": "该死; (二)",
     "frequency": 429,
     "rank": 21593
@@ -55790,7 +55790,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tranquillante",
     "dictionary": "adjective che rende tranquilla una persona downer",
-    "english": "quiet; (2)",
+    "english": "quiet",
     "chinese": "安静; (二)",
     "frequency": 427,
     "rank": 21634
@@ -55895,7 +55895,7 @@ const VOCABULARY_DATA = [
     "italian": "educativo",
     "dictionary": "adjective (scuola) che riguarda l'educazione educational",
     "english": "educational education",
-    "chinese": "教育教育",
+    "chinese": "教育",
     "frequency": 425,
     "rank": 21697
   },
@@ -55910,8 +55910,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fondamento",
     "dictionary": "noun (senso figurato) presupposto elementare necessario bedrock foundation (storia) (filosofia) (mat",
-    "english": "foundation; Foundation (2)",
-    "chinese": "基础; 基金会(2)",
+    "english": "foundation",
+    "chinese": "基础; 基金会",
     "frequency": 425,
     "rank": 21704
   },
@@ -55990,7 +55990,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cover",
     "dictionary": "noun (forestierismo), (musica) nuova versione di un brano musicale, eseguita da un interp",
-    "english": "cover cover",
+    "english": "cover",
     "chinese": "封面覆盖",
     "frequency": 424,
     "rank": 21755
@@ -56006,7 +56006,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sudicio",
     "dictionary": "adjective molto sporco dirt dirty filth filthy foul grimy atto o persona disonesta dirt dirty filth ",
-    "english": "sudicio; (2)",
+    "english": "sudicio",
     "chinese": "苏迪西奥; (二)",
     "frequency": 423,
     "rank": 21757
@@ -56015,7 +56015,7 @@ const VOCABULARY_DATA = [
     "italian": "Guglielmo",
     "dictionary": "pronoun William Bill Will",
     "english": "William",
-    "chinese": "威廉 威廉 威廉 威廉",
+    "chinese": "威廉",
     "frequency": 423,
     "rank": 21763
   },
@@ -56094,8 +56094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tagliente",
     "dictionary": "adjective che taglia in modo efficace biting sharp",
-    "english": "cutting edge; cutter (2)",
-    "chinese": "尖端; 切割器(2)",
+    "english": "cutting edge; cutter",
+    "chinese": "尖端; 切割器",
     "frequency": 422,
     "rank": 21793
   },
@@ -56151,7 +56151,7 @@ const VOCABULARY_DATA = [
     "italian": "rinnovo",
     "dictionary": "noun avvicendamento di persone o permuta di qualcosa extension renewal renovation roll-",
     "english": "renewal",
-    "chinese": "续 续",
+    "chinese": "续",
     "frequency": 422,
     "rank": 21816
   },
@@ -56198,8 +56198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "israeliano",
     "dictionary": "adjective (geografia) che riguarda Israele Hebrew",
-    "english": "Israeli Israeli; Israel (2)",
-    "chinese": "以色列; 以色列(2)",
+    "english": "Israeli; Israel",
+    "chinese": "以色列",
     "frequency": 421,
     "rank": 21840
   },
@@ -56318,8 +56318,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "variabile",
     "dictionary": "adjective che varia, che pùò cambiare; anche non stabile variable varying changeable unsettled unste",
-    "english": "variable variable variable variable; variable (2)",
-    "chinese": "变量变量; 变量(2)",
+    "english": "variable",
+    "chinese": "变量",
     "frequency": 420,
     "rank": 21890
   },
@@ -56334,8 +56334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "galleggiante",
     "dictionary": "adjective che non affonda floating buoy",
-    "english": "floating; Floating (2)",
-    "chinese": "浮动; 浮动(2)",
+    "english": "floating",
+    "chinese": "浮动",
     "frequency": 419,
     "rank": 21905
   },
@@ -56470,8 +56470,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "stereotipo",
     "dictionary": "adjective relativo alla tecnica della stereotipia cliché commonplace epitome platitude stereotype st",
-    "english": "stereotype; stereotype (2)",
-    "chinese": "定型观念; 定型观念(2)",
+    "english": "stereotype",
+    "chinese": "定型观念",
     "frequency": 417,
     "rank": 21992
   },
@@ -56646,7 +56646,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "riprodurre",
     "dictionary": "verb fare una o più copie da un prototipo depict portray represent reproduce",
-    "english": "play play play",
+    "english": "play",
     "chinese": "播放游戏",
     "frequency": 414,
     "rank": 22091
@@ -56662,8 +56662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vegano",
     "dictionary": "adjective (di) persona il cui regime alimentare è composto unicamente da prodotti vegetali vegan",
-    "english": "vegan; vegan (2)",
-    "chinese": "素食主义者; 素食主义者(2)",
+    "english": "vegan",
+    "chinese": "素食主义者",
     "frequency": 413,
     "rank": 22111
   },
@@ -56782,8 +56782,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "progettazione",
     "dictionary": "noun design planning",
-    "english": "design design design design",
-    "chinese": "设计设计",
+    "english": "design",
+    "chinese": "设计",
     "frequency": 411,
     "rank": 22187
   },
@@ -56878,8 +56878,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "brasiliano",
     "dictionary": "noun abitante od originario del Brasile Brazilian",
-    "english": "Brazilian; Brazilian (2)",
-    "chinese": "巴西语; 巴西(2)",
+    "english": "Brazilian",
+    "chinese": "巴西语; 巴西",
     "frequency": 409,
     "rank": 22227
   },
@@ -57270,7 +57270,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "boa",
     "dictionary": "noun (zoologia), (erpetologia) serpente del genere Boa che uccide le sue vittime stritolandole boa",
-    "english": "Boa; (2)",
+    "english": "Boa",
     "chinese": "阿宝; (二)",
     "frequency": 403,
     "rank": 22423
@@ -57334,8 +57334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "illuso",
     "dictionary": "adjective che si alimenta di illusioni deceived deluded dreamer fool attonito dreamer fool",
-    "english": "ill-use; Illumination (2)",
-    "chinese": "不当使用; 照明(2)",
+    "english": "ill-use; Illumination",
+    "chinese": "不当使用; 照明",
     "frequency": 403,
     "rank": 22459
   },
@@ -57462,7 +57462,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "emittente",
     "dictionary": "adjective che emette broadcasting issuer transmitting (economia) (commercio) (finanza) che emette ti",
-    "english": "issuer; (2)",
+    "english": "issuer",
     "chinese": "发行者; (二)",
     "frequency": 401,
     "rank": 22513
@@ -57622,8 +57622,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vendicatore",
     "dictionary": "adjective che vendica avenging revengeful vengeful",
-    "english": "vengeance; vengeance (2)",
-    "chinese": "报复; 报复(2)",
+    "english": "vengeance",
+    "chinese": "报复",
     "frequency": 399,
     "rank": 22582
   },
@@ -57670,8 +57670,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "docente",
     "dictionary": "adjective che insegna academic teaching",
-    "english": "teacher; teacher (2)",
-    "chinese": "老师; 教师(2)",
+    "english": "teacher",
+    "chinese": "老师; 教师",
     "frequency": 399,
     "rank": 22611
   },
@@ -57710,7 +57710,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "zulu",
     "dictionary": "adjective facente parte della relativa tribù di lingua Bantu situata nel Natal e in Sudafrica Zulu",
-    "english": "Zulu; (2)",
+    "english": "Zulu",
     "chinese": "祖鲁; (二)",
     "frequency": 398,
     "rank": 22628
@@ -57958,8 +57958,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sintetico",
     "dictionary": "adjective (tecnologia) non naturale, artificiale, creato dall'uomo (per estensione) c",
-    "english": "synthetic synthetic synthetic",
-    "chinese": "合成合成合成",
+    "english": "synthetic",
+    "chinese": "合成",
     "frequency": 393,
     "rank": 22781
   },
@@ -58166,8 +58166,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "indicatore",
     "dictionary": "adjective che indica indicating indicative",
-    "english": "indicator; indicator (2)",
-    "chinese": "指标; 指标(2)",
+    "english": "indicator",
+    "chinese": "指标",
     "frequency": 391,
     "rank": 22871
   },
@@ -58190,7 +58190,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "stimolo",
     "dictionary": "noun incentive stimulus",
-    "english": "sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti stimulation",
+    "english": "sti stimulation",
     "chinese": "ti(二合)ti(二合)贺(引) stimulation(引)贺.",
     "frequency": 391,
     "rank": 22880
@@ -58470,8 +58470,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "decoro",
     "dictionary": "adjective (obsoleto) (letterario) bello, leggiadro dignified elegant fair",
-    "english": "decoration; decoration (2)",
-    "chinese": "装饰; 装饰(2)",
+    "english": "decoration",
+    "chinese": "装饰",
     "frequency": 386,
     "rank": 23062
   },
@@ -58606,8 +58606,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ripetitore",
     "dictionary": "adjective che ripete booster relay repeater repeating",
-    "english": "repeater; repeater (2); repeater (3)",
-    "chinese": "中继器; 中继器(2); 中继器(3)",
+    "english": "repeater",
+    "chinese": "中继器",
     "frequency": 383,
     "rank": 23146
   },
@@ -58766,8 +58766,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "immigrato",
     "dictionary": "adjective (sociologia) che si è spostato, per risiedervi, in uno stato che non è il proprio immigran",
-    "english": "Immigration; Immigrant (2)",
-    "chinese": "移民; 移民(2)",
+    "english": "Immigration; Immigrant",
+    "chinese": "移民",
     "frequency": 381,
     "rank": 23257
   },
@@ -58790,7 +58790,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "perito",
     "dictionary": "adjective che ha competenze in una certa materia expert skilful skilled",
-    "english": "Personnel; (2)",
+    "english": "Personnel",
     "chinese": "人员; (二)",
     "frequency": 380,
     "rank": 23278
@@ -58863,7 +58863,7 @@ const VOCABULARY_DATA = [
     "italian": "inchiodare",
     "dictionary": "verb fissare con chiodi nail",
     "english": "nailing",
-    "chinese": "钉钉",
+    "chinese": "钉",
     "frequency": 379,
     "rank": 23318
   },
@@ -59006,7 +59006,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "allegato",
     "dictionary": "adjective unito, accluso enclosed",
-    "english": "attached; annex; attachment; Annex (2)",
+    "english": "attached; annex; attachment",
     "chinese": "附件；附带的; 附录2",
     "frequency": 377,
     "rank": 23424
@@ -59134,7 +59134,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "prefisso",
     "dictionary": "adjective fissato a priori prefix prearranged posto innanzi prefix",
-    "english": "prefixed; (2)",
+    "english": "prefixed",
     "chinese": "前缀; (二)",
     "frequency": 374,
     "rank": 23529
@@ -59182,7 +59182,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "appaltatore",
     "dictionary": "adjective che si aggiudica un appalto contracting",
-    "english": "contractor; (2)",
+    "english": "contractor",
     "chinese": "承包商; (二)",
     "frequency": 373,
     "rank": 23551
@@ -59206,8 +59206,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "strepitoso",
     "dictionary": "adjective che produce rumore clamorous deafening esounding great loud noisy",
-    "english": "astonishing; Stuff (2)",
-    "chinese": "令人惊讶; 东西(2)",
+    "english": "astonishing; Stuff",
+    "chinese": "令人惊讶; 东西",
     "frequency": 373,
     "rank": 23562
   },
@@ -59238,8 +59238,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "extraterrestre",
     "dictionary": "adjective esterno alla Terra extra-terrestrial",
-    "english": "extraterrestrial; extraterrestrial (2)",
-    "chinese": "外星人; 外星人(2)",
+    "english": "extraterrestrial",
+    "chinese": "外星人",
     "frequency": 373,
     "rank": 23576
   },
@@ -59358,7 +59358,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ghiaia",
     "dictionary": "noun gravel",
-    "english": "gravel gravel",
+    "english": "gravel",
     "chinese": "砾石",
     "frequency": 371,
     "rank": 23660
@@ -59438,7 +59438,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "transito",
     "dictionary": "noun passage transit",
-    "english": "transit transit",
+    "english": "transit",
     "chinese": "过境",
     "frequency": 370,
     "rank": 23694
@@ -59470,8 +59470,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "strategico",
     "dictionary": "adjective strategic che è attinente alla strategia cardinal fundamental key",
-    "english": "strategic strategic strategic strategy",
-    "chinese": "战略战略战略",
+    "english": "strategic strategy",
+    "chinese": "战略",
     "frequency": 369,
     "rank": 23714
   },
@@ -59574,8 +59574,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "occulto",
     "dictionary": "adjective che è nascosto concealed hidden occult secret",
-    "english": "occult; occult (2)",
-    "chinese": "神秘主义; 神秘性(2)",
+    "english": "occult",
+    "chinese": "神秘主义; 神秘性",
     "frequency": 367,
     "rank": 23792
   },
@@ -59590,8 +59590,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tifoso",
     "dictionary": "adjective (medicina) del tifo typhoid typhous",
-    "english": "typhus; Tifous (2)",
-    "chinese": "伤寒; 轮胎(2)",
+    "english": "typhus; Tifous",
+    "chinese": "伤寒; 轮胎",
     "frequency": 367,
     "rank": 23801
   },
@@ -59678,8 +59678,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "malefico",
     "dictionary": "adjective riferito al male, del male harmful noxious",
-    "english": "Male; Malay (2)",
-    "chinese": "男性; 马来语(2)",
+    "english": "Male; Malay",
+    "chinese": "男性; 马来语",
     "frequency": 365,
     "rank": 23858
   },
@@ -59791,7 +59791,7 @@ const VOCABULARY_DATA = [
     "italian": "giglio",
     "dictionary": "noun (botanica) pianta erbacea; la sua classificazione scientifica è Lilium ( tassonomi",
     "english": "lily",
-    "chinese": "丽丽",
+    "chinese": "丽",
     "frequency": 364,
     "rank": 23909
   },
@@ -60038,7 +60038,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "prozio",
     "dictionary": "noun zio del padre o della madre great-uncle",
-    "english": "Pro; (2)",
+    "english": "Pro",
     "chinese": "赞成:; (二)",
     "frequency": 361,
     "rank": 24020
@@ -60087,7 +60087,7 @@ const VOCABULARY_DATA = [
     "italian": "strutturale",
     "dictionary": "adjective (tecnologia) (ingegneria) attinente alla struttura constructional structu",
     "english": "structural structure",
-    "chinese": "结构结构",
+    "chinese": "结构",
     "frequency": 361,
     "rank": 24035
   },
@@ -60270,8 +60270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "indegno",
     "dictionary": "adjective di qualcuno non meritevole, di qualcosa disdicevole ignoble shameful unworthy",
-    "english": "Unworthy; Independent (2)",
-    "chinese": "无效; 独立(2)",
+    "english": "Unworthy; Independent",
+    "chinese": "无效; 独立",
     "frequency": 358,
     "rank": 24146
   },
@@ -60446,8 +60446,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dinamico",
     "dictionary": "adjective che imprime movimento dynamic dynamics fast-moving",
-    "english": "dynamic dynamic",
-    "chinese": "动态动态",
+    "english": "dynamic",
+    "chinese": "动态",
     "frequency": 355,
     "rank": 24276
   },
@@ -60670,8 +60670,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "settentrionale",
     "dictionary": "noun chi vive al nord (dell'Italia, se non precisato altrimenti) northerner",
-    "english": "northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern",
-    "chinese": "北北方 北北方 北北方 北北方 北北方 北北方 北北方 北北方 北北方 北北方 北北方 北北方 北北方 北北方 北北方 北北方",
+    "english": "northern",
+    "chinese": "北北方",
     "frequency": 353,
     "rank": 24402
   },
@@ -60702,8 +60702,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "abusare",
     "dictionary": "verb fare deliberatamente uso eccessivo o illecito abuse misuse",
-    "english": "abuse; misuse (2)",
-    "chinese": "虐待; 滥用权利(2)",
+    "english": "abuse; misuse",
+    "chinese": "虐待; 滥用权利",
     "frequency": 352,
     "rank": 24428
   },
@@ -60862,7 +60862,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fobia",
     "dictionary": "suffix phobia",
-    "english": "phobia; (2)",
+    "english": "phobia",
     "chinese": "恐惧症; (二)",
     "frequency": 350,
     "rank": 24528
@@ -60870,8 +60870,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "superbo",
     "dictionary": "adjective chi è convinto di avere una propria abilità superiore, rispetto ad altri, in tutto chi cer",
-    "english": "superb; superb (2)",
-    "chinese": "超级; 超级b(2)",
+    "english": "superb",
+    "chinese": "超级; 超级b",
     "frequency": 350,
     "rank": 24530
   },
@@ -61206,8 +61206,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "trasmittente",
     "dictionary": "adjective che trasmette transmitting",
-    "english": "Transmitter; Transmitter (2)",
-    "chinese": "传送器; 传送器(2)",
+    "english": "Transmitter",
+    "chinese": "传送器",
     "frequency": 346,
     "rank": 24747
   },
@@ -61230,7 +61230,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ateo",
     "dictionary": "adjective che non crede in Dio atheistic atheistical",
-    "english": "ateo; (2)",
+    "english": "ateo",
     "chinese": "临时; (二)",
     "frequency": 345,
     "rank": 24755
@@ -61422,8 +61422,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cancellazione",
     "dictionary": "noun (linguistica) l'operazione di cancellare parte di un testo annulment can",
-    "english": "cancellation cancellation cancellation cancellation",
-    "chinese": "取消 取消 取消",
+    "english": "cancellation",
+    "chinese": "取消",
     "frequency": 343,
     "rank": 24884
   },
@@ -61542,7 +61542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "circostante",
     "dictionary": "adjective che è limitrofo adjacent surrounding",
-    "english": "surrounding surrounding",
+    "english": "surrounding",
     "chinese": "环绕周围",
     "frequency": 341,
     "rank": 24955
@@ -61774,8 +61774,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ginnasta",
     "dictionary": "noun (professione) (sport) chi pratica ginnastica (per estensione) gymnast",
-    "english": "gymnastics; gymnastics (2)",
-    "chinese": "体操; 体操(2)",
+    "english": "gymnastics",
+    "chinese": "体操",
     "frequency": 338,
     "rank": 25089
   },
@@ -61894,7 +61894,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "meticoloso",
     "dictionary": "adjective (di individuo) che opera con scrupolosa accuratezza fastidious painstaking particular rigo",
-    "english": "meticulous; (1)",
+    "english": "meticulous",
     "chinese": "仔细; (1) 国家",
     "frequency": 337,
     "rank": 25175
@@ -62022,7 +62022,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "micidiale",
     "dictionary": "adjective che causa morte deadly fatal lethal",
-    "english": "deadly; (2)",
+    "english": "deadly",
     "chinese": "致命的; (二)",
     "frequency": 335,
     "rank": 25253
@@ -62094,7 +62094,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "stolto",
     "dictionary": "adjective fatto con poca intelligenza foolish idiotic stupid",
-    "english": "Stole; (2)",
+    "english": "Stole",
     "chinese": "盗用; (二)",
     "frequency": 334,
     "rank": 25314
@@ -62126,7 +62126,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dirigibile",
     "dictionary": "adjective (raro) si dice di una cosa che può essere guidata, diretta; steerable dirigible",
-    "english": "dirigible; (2)",
+    "english": "dirigible",
     "chinese": "潜水器; (二)",
     "frequency": 333,
     "rank": 25331
@@ -62150,8 +62150,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tenore",
     "dictionary": "adjective (musica) qualità di suono di alcuni strumenti musicali mood spirit substance tenor",
-    "english": "content; Contents (2)",
-    "chinese": "内容; 目录(2)",
+    "english": "content; Contents",
+    "chinese": "内容; 目录",
     "frequency": 333,
     "rank": 25345
   },
@@ -62166,7 +62166,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "indiziato",
     "dictionary": "adjective (diritto) suspected",
-    "english": "suspected; (2)",
+    "english": "suspected",
     "chinese": "可疑; (二)",
     "frequency": 333,
     "rank": 25354
@@ -62174,7 +62174,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Genesi",
     "dictionary": "noun (religione) (bibliografia) primo libro dalla Bibbia, facente parte del Penta",
-    "english": "Genesis; genesis",
+    "english": "Genesis",
     "chinese": "创世纪; 来源",
     "frequency": 333,
     "rank": 25355
@@ -62854,7 +62854,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bensì",
     "dictionary": "adverb (obsoleto) (letteraratura) avverbio con valore affermativo o rafforzartivo; con ce",
-    "english": "but; (2)",
+    "english": "but",
     "chinese": "不过; (二)",
     "frequency": 324,
     "rank": 25768
@@ -62910,8 +62910,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "nettare",
     "dictionary": "noun (storia) nella mitologia classica, bevanda degli dei ambrosia nectar",
-    "english": "nectar; nectar (2)",
-    "chinese": "花蜜; 花蜜 (2)",
+    "english": "nectar",
+    "chinese": "花蜜",
     "frequency": 323,
     "rank": 25834
   },
@@ -63014,8 +63014,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "superfluo",
     "dictionary": "adjective che eccede il bisogno, che non è necessario excess extra surplus",
-    "english": "superfluous; Fluid (2)",
-    "chinese": "多余; 流体 (2)",
+    "english": "superfluous; Fluid",
+    "chinese": "多余; 流体",
     "frequency": 322,
     "rank": 25895
   },
@@ -63142,8 +63142,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "finanziatore",
     "dictionary": "adjective che fornisce denaro a un'attività produttiva backer financing sponsor",
-    "english": "financing; Funding (2)",
-    "chinese": "筹资; 供资(2)",
+    "english": "financing; Funding",
+    "chinese": "筹资; 供资",
     "frequency": 321,
     "rank": 25970
   },
@@ -63262,8 +63262,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "villano",
     "dictionary": "adjective di modo maleducato boorish caddish churlish discourteous ill-mannered impolite",
-    "english": "villano; Villa (2)",
-    "chinese": "别墅诺; 维拉(2)",
+    "english": "villano; Villa",
+    "chinese": "别墅诺; 维拉",
     "frequency": 319,
     "rank": 26052
   },
@@ -63470,8 +63470,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "invertito",
     "dictionary": "adjective che è messo in modo inverso invert inverted",
-    "english": "inverted; inverted (2)",
-    "chinese": "倒转; 倒转(2)",
+    "english": "inverted",
+    "chinese": "倒转",
     "frequency": 317,
     "rank": 26200
   },
@@ -63486,7 +63486,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "spoglio",
     "dictionary": "adjective che è senza copertura bare bleak",
-    "english": "Squeeze; (2)",
+    "english": "Squeeze",
     "chinese": "挤压; (二)",
     "frequency": 316,
     "rank": 26232
@@ -63526,8 +63526,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "divenire",
     "dictionary": "noun (filosofia) insieme di cambiamenti che avvengono sia nello spazio che nel tempo becoming flux",
-    "english": "to become; to become (2)",
-    "chinese": "改为:; 改为(2)",
+    "english": "to become",
+    "chinese": "改为:; 改为",
     "frequency": 316,
     "rank": 26251
   },
@@ -63550,7 +63550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fiacca",
     "dictionary": "adjective femminile di fiacco laziness slackness sluggishness",
-    "english": "fiasco; (2)",
+    "english": "fiasco",
     "chinese": "失败; (二)",
     "frequency": 315,
     "rank": 26271
@@ -63686,8 +63686,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "albanese",
     "dictionary": "adjective (geografia) che riguarda l'Albania Albanian",
-    "english": "Albanian; Albanian (2)",
-    "chinese": "阿尔巴尼亚语Name; 阿尔巴尼亚语(2)",
+    "english": "Albanian",
+    "chinese": "阿尔巴尼亚语Name; 阿尔巴尼亚语",
     "frequency": 314,
     "rank": 26327
   },
@@ -64222,7 +64222,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "peschereccio",
     "dictionary": "adjective riguardante o adatto alla pesca fishing",
-    "english": "fishing vessel; (2)",
+    "english": "fishing vessel",
     "chinese": "渔船; (二)",
     "frequency": 308,
     "rank": 26647
@@ -64422,8 +64422,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ascendente",
     "dictionary": "adjective (meteorologia) che aumenta di quota (astronomia) moto ascendente: che va dall'emisfero cel",
-    "english": "ascendant; ascendant (2)",
-    "chinese": "长辈; 长辈(2)",
+    "english": "ascendant",
+    "chinese": "长辈",
     "frequency": 306,
     "rank": 26748
   },
@@ -64518,8 +64518,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "resina",
     "dictionary": "noun (chimica) materiale viscoso artificiale usato per produrre plastica re",
-    "english": "resin resin",
-    "chinese": "树脂树脂",
+    "english": "resin",
+    "chinese": "树脂",
     "frequency": 305,
     "rank": 26787
   },
@@ -64542,8 +64542,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "termico",
     "dictionary": "adjective heat thermal",
-    "english": "thermal thermal",
-    "chinese": "热热",
+    "english": "thermal",
+    "chinese": "热",
     "frequency": 305,
     "rank": 26799
   },
@@ -64566,8 +64566,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pensionato",
     "dictionary": "adjective che è in pensione home hostel",
-    "english": "pension; pension (2)",
-    "chinese": "养恤金; 养恤金(2)",
+    "english": "pension",
+    "chinese": "养恤金",
     "frequency": 305,
     "rank": 26822
   },
@@ -64590,7 +64590,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sgombro",
     "dictionary": "adjective che è senza ostacoli clear empty move removal vacant (senso figurato) sprovvisto di negati",
-    "english": "I don't know.; (2)",
+    "english": "I don't know.",
     "chinese": "师曰.; (二)",
     "frequency": 305,
     "rank": 26838
@@ -64902,7 +64902,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "adagio",
     "dictionary": "adverb in modo lento carefully cautiosly slowly unhurriedly warily",
-    "english": "Adagio; (2)",
+    "english": "Adagio",
     "chinese": "阿达焦; (二)",
     "frequency": 300,
     "rank": 27083
@@ -65030,8 +65030,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "rotondo",
     "dictionary": "adjective che ha forma curva a guisa di circonferenza o di sfera chubby florid full plu",
-    "english": "round round round round",
-    "chinese": "圆形圆形",
+    "english": "round",
+    "chinese": "圆形",
     "frequency": 299,
     "rank": 27181
   },
@@ -65054,7 +65054,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rinnegato",
     "dictionary": "adjective (religione), (politica) di individuo che fuoriesce da una comunità religiosa o politico ri",
-    "english": "renegade; (2)",
+    "english": "renegade",
     "chinese": "叛逆者; (二)",
     "frequency": 298,
     "rank": 27209
@@ -65134,8 +65134,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "nomade",
     "dictionary": "adjective di gruppo etnico che non ha una residenza fissa nomad",
-    "english": "No!; nomadic (2)",
-    "chinese": "没有!; 游牧(2)",
+    "english": "No!; nomadic",
+    "chinese": "没有!; 游牧",
     "frequency": 297,
     "rank": 27290
   },
@@ -65222,8 +65222,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "armeno",
     "dictionary": "noun (geografia) nativo o abitante dell'Armenia Armenian",
-    "english": "Armenian; Armenian (2)",
-    "chinese": "亚美尼亚语Name; 亚美尼亚人(2)",
+    "english": "Armenian",
+    "chinese": "亚美尼亚语Name; 亚美尼亚人",
     "frequency": 296,
     "rank": 27318
   },
@@ -65254,8 +65254,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "botanico",
     "dictionary": "adjective che è inerente alla botanica botanical",
-    "english": "botany; botanical (2)",
-    "chinese": "植物学; 植物学(2)",
+    "english": "botany; botanical",
+    "chinese": "植物学",
     "frequency": 296,
     "rank": 27339
   },
@@ -65382,8 +65382,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "progressista",
     "dictionary": "adjective molto attento al progresso e all'innovazione che riguarda il progressismo progressive",
-    "english": "Progressive; progressive (2)",
-    "chinese": "渐进式; 渐进式(2)",
+    "english": "Progressive",
+    "chinese": "渐进式",
     "frequency": 295,
     "rank": 27399
   },
@@ -65398,8 +65398,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vicario",
     "dictionary": "adjective assumente un ruolo sostitutivo deputy representative vicar vicarial vicarious",
-    "english": "vicarious; vicar (2)",
-    "chinese": "替代; 牧师(2)",
+    "english": "vicarious; vicar",
+    "chinese": "替代; 牧师",
     "frequency": 295,
     "rank": 27409
   },
@@ -65582,7 +65582,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mediante",
     "dictionary": "noun (musica) by through via",
-    "english": "through; (2)",
+    "english": "through",
     "chinese": "通过; (二)",
     "frequency": 293,
     "rank": 27530
@@ -65606,8 +65606,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "colombiano",
     "dictionary": "adjective singolare plurale maschile colombiano colombiani femminile colombiana colombiane Colombian",
-    "english": "Colombian; Colombian (2)",
-    "chinese": "哥伦比亚; 哥伦比亚(2)",
+    "english": "Colombian",
+    "chinese": "哥伦比亚",
     "frequency": 293,
     "rank": 27541
   },
@@ -65662,8 +65662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "anarchico",
     "dictionary": "adjective (filosofia) (politica) che segue i principi dell'anarchia anarchic anarchical",
-    "english": "anarchist; Anarchist (2)",
-    "chinese": "无政府主义者; 无政府主义者(2)",
+    "english": "anarchist",
+    "chinese": "无政府主义者",
     "frequency": 292,
     "rank": 27572
   },
@@ -65702,8 +65702,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "gazebo",
     "dictionary": "noun gazebo",
-    "english": "gazebo gazebo gazebo",
-    "chinese": "凝视 凝视 凝视",
+    "english": "gazebo",
+    "chinese": "凝视",
     "frequency": 292,
     "rank": 27595
   },
@@ -66078,7 +66078,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rimbambito",
     "dictionary": "adjective (spregiativo) che ha perso l'efficienza mentale, specialmente per vecchiaia buffoon dotard",
-    "english": "Community; (2)",
+    "english": "Community",
     "chinese": "社区; (二)",
     "frequency": 288,
     "rank": 27809
@@ -66134,7 +66134,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pignolo",
     "dictionary": "adjective preciso in modo esasperato fastidious fussy nit-picking pedantic pernickety persnickety",
-    "english": "Pignolo; (2)",
+    "english": "Pignolo",
     "chinese": "皮格诺; (二)",
     "frequency": 287,
     "rank": 27851
@@ -66158,7 +66158,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pacifista",
     "dictionary": "adjective che ama la pace e odia la guerra pacifist pacifistic",
-    "english": "pacifist; (2)",
+    "english": "pacifist",
     "chinese": "和平主义者; (二)",
     "frequency": 287,
     "rank": 27858
@@ -66366,8 +66366,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fossile",
     "dictionary": "adjective (paleontologia) di albero o animale o essere umano sotterrati migliaia di anni fa e tornat",
-    "english": "fossil; fossil (2)",
-    "chinese": "化石; 化石(2)",
+    "english": "fossil",
+    "chinese": "化石",
     "frequency": 285,
     "rank": 28013
   },
@@ -66390,16 +66390,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "dotto",
     "dictionary": "adjective che conosce molti argomenti erudite learned scholarly",
-    "english": "♪; Home (2)",
-    "chinese": "(待修复); 内容(2)",
+    "english": "♪; Home",
+    "chinese": "(待修复); 内容",
     "frequency": 284,
     "rank": 28029
   },
   {
     "italian": "litio",
     "dictionary": "noun (chimica) elemento chimico solido, di colore grigio argento, facente parte del grupp",
-    "english": "lithium lithium lithium",
-    "chinese": "锂锂",
+    "english": "lithium",
+    "chinese": "锂",
     "frequency": 284,
     "rank": 28032
   },
@@ -66486,8 +66486,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "camerata",
     "dictionary": "noun (militare) grande camera di forma rettangolare utilizzata come dormitorio, particolarmente negl",
-    "english": "Room; camera (2)",
-    "chinese": "会议室; 相机(2)",
+    "english": "Room; camera",
+    "chinese": "会议室; 相机",
     "frequency": 283,
     "rank": 28086
   },
@@ -66598,8 +66598,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "accessorio",
     "dictionary": "adjective che è in aggiunta a ciò che è principale subsidiary",
-    "english": "accessories; accessories (2)",
-    "chinese": "配件; 配件(2)",
+    "english": "accessories",
+    "chinese": "配件",
     "frequency": 281,
     "rank": 28190
   },
@@ -66718,7 +66718,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "passante",
     "dictionary": "adjective che va oltre passer-by (araldica) attributo araldico che si applica agli animali (meno il ",
-    "english": "pass; (2)",
+    "english": "pass",
     "chinese": "通过; (二)",
     "frequency": 280,
     "rank": 28267
@@ -66862,7 +66862,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "forestiero",
     "dictionary": "adjective (geografia) che riguarda uno stato al di fuori del proprio foreign tourist",
-    "english": "stranger; (2)",
+    "english": "stranger",
     "chinese": "陌生人,你这个混蛋; (二)",
     "frequency": 278,
     "rank": 28358
@@ -66942,7 +66942,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "boccale",
     "dictionary": "adjective (anatomia) riguardante la bocca oral",
-    "english": "mouthpieces; (2)",
+    "english": "mouthpieces",
     "chinese": "口罩; (二)",
     "frequency": 278,
     "rank": 28415
@@ -66950,8 +66950,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "gallese",
     "dictionary": "adjective (geografia) del Galles welsh",
-    "english": "Welsh; Welsh (2); Welsh (3)",
-    "chinese": "威尔士语Name; 威尔士语(2); 威尔士语(3)",
+    "english": "Welsh",
+    "chinese": "威尔士语Name; 威尔士语",
     "frequency": 278,
     "rank": 28420
   },
@@ -66990,7 +66990,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "infrastruttura",
     "dictionary": "noun infrastructure",
-    "english": "infrastructure infrastructure",
+    "english": "infrastructure",
     "chinese": "基础设施",
     "frequency": 277,
     "rank": 28463
@@ -67134,8 +67134,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "albino",
     "dictionary": "adjective affetto da albinismo albino albinal albinic albinistic albinoid",
-    "english": "albino; albino (2)",
-    "chinese": "白化脑; 白化脑(2)",
+    "english": "albino",
+    "chinese": "白化脑",
     "frequency": 275,
     "rank": 28549
   },
@@ -67174,16 +67174,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "nocciola",
     "dictionary": "noun (botanica) (gastronomia) il frutto e il seme del nocciolo hazelnut hazel",
-    "english": "hazelnut; hazelnut (2)",
-    "chinese": "胡萝卜; zel果(2)",
+    "english": "hazelnut",
+    "chinese": "胡萝卜; zel果",
     "frequency": 275,
     "rank": 28573
   },
   {
     "italian": "cedro",
     "dictionary": "noun (botanica) frutto della Citrus medica (pianta comunemente detta \"pianta del cedro\" o \"cedro2\");",
-    "english": "cedar; Cedar (2)",
-    "chinese": "雪松酱; 锡达(2)",
+    "english": "cedar",
+    "chinese": "雪松酱; 锡达",
     "frequency": 275,
     "rank": 28576
   },
@@ -67247,7 +67247,7 @@ const VOCABULARY_DATA = [
     "italian": "innovativo",
     "dictionary": "adjective (sociologia) (economia) (tecnologia) (ingegneria) che porta innovazione gr",
     "english": "innovative innovation",
-    "chinese": "创新创新",
+    "chinese": "创新",
     "frequency": 274,
     "rank": 28614
   },
@@ -67510,8 +67510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "spergiuro",
     "dictionary": "adjective chi fa spergiuro liar",
-    "english": "hopeful; Expenditure (2)",
-    "chinese": "希望; 支出(2)",
+    "english": "hopeful; Expenditure",
+    "chinese": "希望; 支出",
     "frequency": 272,
     "rank": 28789
   },
@@ -67542,7 +67542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "perforazione",
     "dictionary": "noun perforation piercing",
-    "english": "drill drill drill drill",
+    "english": "drill",
     "chinese": "钻孔",
     "frequency": 271,
     "rank": 28817
@@ -67686,8 +67686,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "emarginato",
     "dictionary": "adjective di appunto o documentazione annotata ai margini di un testo (familiare) apparentemente sen",
-    "english": "marginalized; Exempted (2)",
-    "chinese": "边缘化; 豁免(2)",
+    "english": "marginalized; Exempted",
+    "chinese": "边缘化; 豁免",
     "frequency": 270,
     "rank": 28915
   },
@@ -67774,7 +67774,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "calcestruzzo",
     "dictionary": "noun (architettura) (edilizia) (chimica) (ingegneria) impasto di pietrisco o gh",
-    "english": "concrete concrete",
+    "english": "concrete",
     "chinese": "混凝土",
     "frequency": 269,
     "rank": 28988
@@ -67863,7 +67863,7 @@ const VOCABULARY_DATA = [
     "italian": "cucù",
     "dictionary": "noun cuckoo",
     "english": "Cuckoo",
-    "chinese": "库库",
+    "chinese": "库",
     "frequency": 268,
     "rank": 29052
   },
@@ -67886,7 +67886,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mimo",
     "dictionary": "noun (arte) (teatro) rappresentazione di azioni, caratteri e personaggi con la gestualità e non le p",
-    "english": "Mimo; (2)",
+    "english": "Mimo",
     "chinese": "咪莫; (二)",
     "frequency": 268,
     "rank": 29073
@@ -67934,8 +67934,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "gonzo",
     "dictionary": "adjective (di individuo) che è sempliciotto fool foolish idiot silly simpleton",
-    "english": "Gonzo; Gonzo (2)",
-    "chinese": "冈诺; 冈诺(2)",
+    "english": "Gonzo",
+    "chinese": "冈诺",
     "frequency": 267,
     "rank": 29121
   },
@@ -68174,7 +68174,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "privilegiato",
     "dictionary": "adjective che beneficia di privilegi, che è in posizione migliore di altri, che gode di vantaggi adv",
-    "english": "privileged; (2)",
+    "english": "privileged",
     "chinese": "特权; (二)",
     "frequency": 264,
     "rank": 29340
@@ -68510,8 +68510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ambientalista",
     "dictionary": "adjective che si occupa di problemi ambientali che afferma la necessità della difesa ecologica dell'",
-    "english": "environmentalist; Environment (2)",
-    "chinese": "环保主义者; 环境(2)",
+    "english": "environmentalist; Environment",
+    "chinese": "环保主义者; 环境",
     "frequency": 260,
     "rank": 29590
   },
@@ -68622,8 +68622,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "detergente",
     "dictionary": "adjective che lava cleaning",
-    "english": "detergent; cleaner (2)",
-    "chinese": "洗涤剂; 较清洁(2)",
+    "english": "detergent; cleaner",
+    "chinese": "洗涤剂; 较清洁",
     "frequency": 259,
     "rank": 29659
   },
@@ -68782,7 +68782,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "libido",
     "dictionary": "noun libido",
-    "english": "libido libido",
+    "english": "libido",
     "chinese": "利比多语",
     "frequency": 257,
     "rank": 29773
@@ -68822,7 +68822,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "visualizzare",
     "dictionary": "verb (informatica) far vedere qualcosa sullo schermo di un computer display visua",
-    "english": "View view",
+    "english": "View",
     "chinese": "视图",
     "frequency": 257,
     "rank": 29786
@@ -68870,7 +68870,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "discount",
     "dictionary": "noun discounter",
-    "english": "discount discount",
+    "english": "discount",
     "chinese": "折扣优惠",
     "frequency": 257,
     "rank": 29809
@@ -68910,8 +68910,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "teorico",
     "dictionary": "adjective (storia) (filosofia) (matematica) (fisica) inerente alla teoria theoretical",
-    "english": "theoretical theory; theoretical (2)",
-    "chinese": "理论理论; 理论(2)",
+    "english": "theoretical theory; theoretical",
+    "chinese": "理论",
     "frequency": 256,
     "rank": 29833
   },
@@ -68934,7 +68934,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "lampone",
     "dictionary": "adjective detto di cosa che ha il colore del frutto della pianta di lampone raspberry",
-    "english": "raspberry; (2)",
+    "english": "raspberry",
     "chinese": "树莓; (二)",
     "frequency": 256,
     "rank": 29840
@@ -69086,7 +69086,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "determinante",
     "dictionary": "adjective relativo a una cosa che risulta di importanza fondamentale per raggiungere un certo scopo ",
-    "english": "decisive factor; (2)",
+    "english": "decisive factor",
     "chinese": "决定性因素; (二)",
     "frequency": 255,
     "rank": 29938
@@ -69270,7 +69270,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bombardiere",
     "dictionary": "noun (aeronautica) (militare) aereo militare progettato per distruggere bersagli di",
-    "english": "bomber bomber",
+    "english": "bomber",
     "chinese": "轰炸机",
     "frequency": 253,
     "rank": 30070
@@ -69350,8 +69350,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "imperfetto",
     "dictionary": "adjective non completamente buono defective faulty imperfect",
-    "english": "imperfect; imperfect (2)",
-    "chinese": "不完善; 不完整(2)",
+    "english": "imperfect",
+    "chinese": "不完善; 不完整",
     "frequency": 252,
     "rank": 30110
   },
@@ -69678,8 +69678,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "consumatore",
     "dictionary": "adjective che consuma consuming",
-    "english": "consumer; consumer (2)",
-    "chinese": "消费者; 消费者(2)",
+    "english": "consumer",
+    "chinese": "消费者",
     "frequency": 249,
     "rank": 30310
   },
@@ -69734,8 +69734,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "nylon",
     "dictionary": "noun (forestierismo) (chimica) poliammide sintetico a legami carboniosi semplici, usato",
-    "english": "nylon nylon nylon",
-    "chinese": "尼龙尼龙尼龙",
+    "english": "nylon",
+    "chinese": "尼龙",
     "frequency": 249,
     "rank": 30337
   },
@@ -69814,7 +69814,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "spilungone",
     "dictionary": "adjective (familiare) di persona molto alta e magra beanpole",
-    "english": "Spilung; (2)",
+    "english": "Spilung",
     "chinese": "斯皮龙; (二)",
     "frequency": 248,
     "rank": 30406
@@ -70006,8 +70006,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "eretico",
     "dictionary": "adjective (cristianesimo) (dispregiativo) non conforme all'ortodossia religiosa heretical häretisch ",
-    "english": "heretic; erectile (2)",
-    "chinese": "异端; 竖立体(2)",
+    "english": "heretic; erectile",
+    "chinese": "异端; 竖立体",
     "frequency": 246,
     "rank": 30533
   },
@@ -70062,8 +70062,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "indiscreto",
     "dictionary": "adjective senza tatto inappropriate indiscreet intrusive pushing tactless",
-    "english": "Indiscretion; Indiscretion (2)",
-    "chinese": "随意性; 随意性(2)",
+    "english": "Indiscretion",
+    "chinese": "随意性",
     "frequency": 246,
     "rank": 30559
   },
@@ -70094,8 +70094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "zuccone",
     "dictionary": "adjective (di persona) che ha la testa dura mule",
-    "english": "Pumpkin; Pumpkin (2)",
-    "chinese": "南瓜鱼; 南瓜(2)",
+    "english": "Pumpkin",
+    "chinese": "南瓜鱼; 南瓜",
     "frequency": 246,
     "rank": 30569
   },
@@ -70414,7 +70414,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tenue",
     "dictionary": "adjective di poco spessore enuous faint feeble tenuous weak",
-    "english": "soft; (2)",
+    "english": "soft",
     "chinese": "软; (二)",
     "frequency": 243,
     "rank": 30787
@@ -70726,8 +70726,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "triangolare",
     "dictionary": "adjective (geometria) a forma di triangolo three-way triangular trilateral",
-    "english": "triangular; triangular (2)",
-    "chinese": "三角形; 三角(2)",
+    "english": "triangular",
+    "chinese": "三角形; 三角",
     "frequency": 240,
     "rank": 30960
   },
@@ -71350,7 +71350,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "basco",
     "dictionary": "noun (linguistica) lingua preindoeuropea di tipo agglutinante, parlata nella regione spagnola dei Pa",
-    "english": "Basque; (2)",
+    "english": "Basque",
     "chinese": "巴斯克语Name; (二)",
     "frequency": 235,
     "rank": 31310
@@ -71374,8 +71374,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "palestinese",
     "dictionary": "adjective (geografia) della Palestina ”Stato palestinese”: com riferimento al conflitto israeliano-p",
-    "english": "Palestinian; Palestinians (2)",
-    "chinese": "巴勒斯坦人; 巴勒斯坦人(2)",
+    "english": "Palestinian; Palestinians",
+    "chinese": "巴勒斯坦人",
     "frequency": 235,
     "rank": 31325
   },
@@ -71422,8 +71422,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "chiaroveggente",
     "dictionary": "adjective secondo il significato di chiaroveggenza clairvoyant",
-    "english": "clairvoy; clairvoy (2)",
-    "chinese": "圆形; 圆柱形(2)",
+    "english": "clairvoy",
+    "chinese": "圆形; 圆柱形",
     "frequency": 235,
     "rank": 31363
   },
@@ -71454,8 +71454,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ucraino",
     "dictionary": "adjective (geografia) relativo all'Ucraina Ukrainian",
-    "english": "Ukrainian; Ukrainian (2)",
-    "chinese": "乌克兰语Name; 乌克兰语(2)",
+    "english": "Ukrainian",
+    "chinese": "乌克兰语Name; 乌克兰语",
     "frequency": 234,
     "rank": 31383
   },
@@ -71494,7 +71494,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sfrontato",
     "dictionary": "adjective che si comporta in modo insolente e privo di misura e ritegno in casi estremi, che provoca",
-    "english": "facing; (2)",
+    "english": "facing",
     "chinese": "面对; (二)",
     "frequency": 234,
     "rank": 31405
@@ -71542,7 +71542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "patire",
     "dictionary": "noun dolore del corpo o dell'animo suffer undergo",
-    "english": "suffer; endure; (2)",
+    "english": "suffer; endure",
     "chinese": "忍受；遭受; (二)",
     "frequency": 234,
     "rank": 31433
@@ -71615,7 +71615,7 @@ const VOCABULARY_DATA = [
     "italian": "ripristino",
     "dictionary": "noun azione che permette di ricondurre qualcosa ad uno stato antecedente ad un deter",
     "english": "restore recovery",
-    "chinese": "恢复恢复",
+    "chinese": "恢复",
     "frequency": 233,
     "rank": 31473
   },
@@ -71694,7 +71694,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sostenibile",
     "dictionary": "adjective (senso figurato) tollerabile, sopportabile bearable supportable",
-    "english": "sustainable sustainable",
+    "english": "sustainable",
     "chinese": "可持续",
     "frequency": 233,
     "rank": 31511
@@ -71734,8 +71734,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fiorentino",
     "dictionary": "adjective (geografia) di Firenze Florentine",
-    "english": "Florentine; flower (2)",
-    "chinese": "佛罗伦萨; 鲜花(2)",
+    "english": "Florentine; flower",
+    "chinese": "佛罗伦萨; 鲜花",
     "frequency": 233,
     "rank": 31532
   },
@@ -71806,8 +71806,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tascabile",
     "dictionary": "adjective che può stare in tasca paperback pocket book",
-    "english": "pocket; pocket (2)",
-    "chinese": "口袋; 口袋(2)",
+    "english": "pocket",
+    "chinese": "口袋",
     "frequency": 232,
     "rank": 31587
   },
@@ -71934,8 +71934,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "oppresso",
     "dictionary": "adjective che patisce oppressione burdened heartbroken sad",
-    "english": "oppressed; oppressed (2)",
-    "chinese": "被压迫者; 被压迫者(2)",
+    "english": "oppressed",
+    "chinese": "被压迫者",
     "frequency": 230,
     "rank": 31700
   },
@@ -72102,8 +72102,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "argentino",
     "dictionary": "adjective che emette un suono chiaro come quello dell'argento quando è colpito silvery voice",
-    "english": "silvery; silver (2); silver (3)",
-    "chinese": "银色; 银(2); 银色(3)",
+    "english": "silvery; silver",
+    "chinese": "银色; 银",
     "frequency": 230,
     "rank": 31768
   },
@@ -72166,7 +72166,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "giudeo",
     "dictionary": "adjective della Giudea Jewish",
-    "english": "Jew; (2)",
+    "english": "Jew",
     "chinese": "犹太人; (二)",
     "frequency": 229,
     "rank": 31797
@@ -72182,8 +72182,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "obeso",
     "dictionary": "adjective (medicina) che presenta un eccesso patologico di grassi nell'organismo, dovuto a squilibri",
-    "english": "obese; obese (2)",
-    "chinese": "肥胖; 肥胖(2)",
+    "english": "obese",
+    "chinese": "肥胖",
     "frequency": 229,
     "rank": 31811
   },
@@ -72398,7 +72398,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "coltivazione",
     "dictionary": "noun (agricoltura) produzione in serie di prodotti agricoli cultivation",
-    "english": "cultivation cultivation",
+    "english": "cultivation",
     "chinese": "种植",
     "frequency": 227,
     "rank": 31955
@@ -72478,7 +72478,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "suddito",
     "dictionary": "adjective soggetto a un'autorità sovrana liege liegeman",
-    "english": "Subject; (2)",
+    "english": "Subject",
     "chinese": "议题; (二)",
     "frequency": 227,
     "rank": 32025
@@ -72542,7 +72542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "trapassato",
     "dictionary": "adjective (grammatica) relativo al trapassato past perfect pluperfect",
-    "english": "through; (2)",
+    "english": "through",
     "chinese": "通过; (二)",
     "frequency": 226,
     "rank": 32068
@@ -72615,7 +72615,7 @@ const VOCABULARY_DATA = [
     "italian": "equilibrato",
     "dictionary": "adjective che è bilanciato balanced poised",
     "english": "balanced balance",
-    "chinese": "平衡平衡",
+    "chinese": "平衡",
     "frequency": 226,
     "rank": 32110
   },
@@ -72830,8 +72830,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "siriano",
     "dictionary": "adjective (geografia)relativo alla Siria Syria Syriac Syrian",
-    "english": "Syrian; Syrian (2)",
-    "chinese": "叙利亚; 叙利亚(2)",
+    "english": "Syrian",
+    "chinese": "叙利亚",
     "frequency": 224,
     "rank": 32245
   },
@@ -72863,7 +72863,7 @@ const VOCABULARY_DATA = [
     "italian": "Giacobbe",
     "dictionary": "pronoun Jacob",
     "english": "Jacob",
-    "chinese": "雅各 雅各 雅各 雅各",
+    "chinese": "雅各",
     "frequency": 224,
     "rank": 32264
   },
@@ -72950,8 +72950,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "impunito",
     "dictionary": "adjective (regionaòle) unpunished",
-    "english": "unpunished; Unpunished (2)",
-    "chinese": "不受惩罚; 未处罚(2)",
+    "english": "unpunished",
+    "chinese": "不受惩罚; 未处罚",
     "frequency": 223,
     "rank": 32307
   },
@@ -72974,8 +72974,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cristallino",
     "dictionary": "adjective (fisica) (chimica) che ha la forma di cristallo crystal crystal-clear",
-    "english": "crystalline; crystalline (2)",
-    "chinese": "结晶线; 结晶 (2)",
+    "english": "crystalline",
+    "chinese": "结晶线; 结晶",
     "frequency": 223,
     "rank": 32316
   },
@@ -73055,7 +73055,7 @@ const VOCABULARY_DATA = [
     "italian": "tisana",
     "dictionary": "noun herbal tea (botanica) (medicina) (farmacologia) soluzione acquosa diluita di piante",
     "english": "tyrant",
-    "chinese": "暴君 暴君",
+    "chinese": "暴君",
     "frequency": 222,
     "rank": 32397
   },
@@ -73382,7 +73382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "blasfemo",
     "dictionary": "adjective che insulta una divinità blasphemous profane",
-    "english": "♪; (2)",
+    "english": "♪",
     "chinese": "(待修复); (二)",
     "frequency": 219,
     "rank": 32650
@@ -73486,7 +73486,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "quotidianamente",
     "dictionary": "adverb tutti i giorni daily everyday",
-    "english": "daily daily",
+    "english": "daily",
     "chinese": "每日费用",
     "frequency": 218,
     "rank": 32740
@@ -73518,7 +73518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Minotauro",
     "dictionary": "noun (mitologia) mostro umano con testa di toro che era imprigionato nel labirinto Mi",
-    "english": "Minotaur; minotaur",
+    "english": "Minotaur",
     "chinese": "米诺陶洛斯; 米诺陶洛斯语Name",
     "frequency": 218,
     "rank": 32758
@@ -73598,7 +73598,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cachi",
     "dictionary": "adjective (di colore) giallo sabbia khaki",
-    "english": "chaps; (2)",
+    "english": "chaps",
     "chinese": "章节; (二)",
     "frequency": 217,
     "rank": 32821
@@ -74166,8 +74166,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ardito",
     "dictionary": "adjective che è pieno di coraggio bold brave courageous daring enterprising foolhardy (araldica) att",
-    "english": "bold; (2); arduous (3)",
-    "chinese": "粗体显示; (二); 艰苦(3)",
+    "english": "bold; arduous",
+    "chinese": "粗体显示; (二); 艰苦",
     "frequency": 213,
     "rank": 33248
   },
@@ -74238,8 +74238,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "compressore",
     "dictionary": "adjective che riduce di volume compressing",
-    "english": "compressor; compressor (2)",
-    "chinese": "压缩机; 压缩机(2)",
+    "english": "compressor",
+    "chinese": "压缩机",
     "frequency": 212,
     "rank": 33323
   },
@@ -74318,7 +74318,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Lilla",
     "dictionary": "pronoun (toponimo) (geografia) città francese posta nel estremo nord del paese. Capoluogo",
-    "english": "Lille; lilac; (2)",
+    "english": "Lille; lilac",
     "chinese": "里尔; 丁字节; (二)",
     "frequency": 211,
     "rank": 33369
@@ -74334,8 +74334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "islandese",
     "dictionary": "adjective (geografia) relativo all'Islanda icelandic Icelandic",
-    "english": "Icelandic; Icelandic (2); Icelandic (3)",
-    "chinese": "冰岛语Name; 冰岛(2); 冰岛(3)",
+    "english": "Icelandic",
+    "chinese": "冰岛语Name; 冰岛",
     "frequency": 211,
     "rank": 33380
   },
@@ -74486,7 +74486,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "spavaldo",
     "dictionary": "adjective di persona troppo sicura di sé audacious boaster bold braggart daring show-off",
-    "english": "Spavaldo; (2)",
+    "english": "Spavaldo",
     "chinese": "斯帕瓦尔多; (二)",
     "frequency": 209,
     "rank": 33499
@@ -74878,7 +74878,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sottostante",
     "dictionary": "adjective oggetto, persona o altro posto situato sotto al posto a cui si fa riferimento below lower",
-    "english": "below; (2)",
+    "english": "below",
     "chinese": "下级; (二)",
     "frequency": 207,
     "rank": 33748
@@ -74966,8 +74966,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "malcontento",
     "dictionary": "adjective che non è contento malcontent discontented unhappy",
-    "english": "discontent; Discontent (2)",
-    "chinese": "不满; 不满(2)",
+    "english": "discontent",
+    "chinese": "不满",
     "frequency": 207,
     "rank": 33788
   },
@@ -75062,8 +75062,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "unisono",
     "dictionary": "adjective (musica) di uno o più suoni di uguale altezza e che si sentono in contemporanea accord agr",
-    "english": "Unison; Unison (2)",
-    "chinese": "统一; 统一(2)",
+    "english": "Unison",
+    "chinese": "统一",
     "frequency": 206,
     "rank": 33859
   },
@@ -75198,7 +75198,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "diciottenne",
     "dictionary": "adjective che ha diciotto anni eighteen-year-old",
-    "english": "18; 18 (2)",
+    "english": "18",
     "chinese": "第 18 条; 第18(2)条",
     "frequency": 205,
     "rank": 33984
@@ -75366,8 +75366,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "finlandese",
     "dictionary": "adjective (geografia) relativo alla Finlandia Finnish Finn",
-    "english": "Finnish; Finnish (2)",
-    "chinese": "芬兰语; 芬兰语 (2)",
+    "english": "Finnish",
+    "chinese": "芬兰语",
     "frequency": 204,
     "rank": 34098
   },
@@ -75454,7 +75454,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "caratteristico",
     "dictionary": "adjective che è tipico di qualcosa o qualcuno characteristic distinctive distinguishing peculiar pic",
-    "english": "characteristic; (2)",
+    "english": "characteristic",
     "chinese": "特性; (二)",
     "frequency": 203,
     "rank": 34153
@@ -76054,15 +76054,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "aristocratico",
     "dictionary": "adjective (storia) (politica) (diritto) persone che hanno atteggiamenti o cose che sono proprie alla",
-    "english": "aristocrat; aristocrat (2)",
-    "chinese": "贵族; 贵族(2)",
+    "english": "aristocrat",
+    "chinese": "贵族",
     "frequency": 199,
     "rank": 34568
   },
   {
     "italian": "inetto",
     "dictionary": "adjective incapace di svolgere in modo sia pure approssimativo i propri compiti unfit unsuited good-",
-    "english": "Infected; (2)",
+    "english": "Infected",
     "chinese": "感染; (二)",
     "frequency": 199,
     "rank": 34572
@@ -76150,8 +76150,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "calcare",
     "dictionary": "noun (geologia) (mineralogia) soluzione solida di diversi minerali, in particolare composti del calc",
-    "english": "limestone limestone; limestone (2)",
-    "chinese": "石灰岩 石灰岩; 石灰岩(2)",
+    "english": "limestone",
+    "chinese": "石灰岩",
     "frequency": 198,
     "rank": 34622
   },
@@ -76182,8 +76182,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "labiale",
     "dictionary": "adjective (biologia) (anatomia) (fisiologia) inerente alle labbra (linguistica) di consonante che si",
-    "english": "Labiali; labia (2)",
-    "chinese": "拉比亚利; 阴唇(2)",
+    "english": "Labiali; labia",
+    "chinese": "拉比亚利; 阴唇",
     "frequency": 198,
     "rank": 34656
   },
@@ -76246,7 +76246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "reietto",
     "dictionary": "adjective (spregiativo) che viene messo da parte, emarginato, disprezzato; escluso categoricamente a",
-    "english": "Rejection; (2)",
+    "english": "Rejection",
     "chinese": "拒绝; (二)",
     "frequency": 198,
     "rank": 34683
@@ -76390,7 +76390,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "empio",
     "dictionary": "adjective che rivela empietà, che è contrario alle credenze religiose cruel godless impious pitiless",
-    "english": "Empty; (2)",
+    "english": "Empty",
     "chinese": "空; (二)",
     "frequency": 197,
     "rank": 34805
@@ -76526,8 +76526,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "lager",
     "dictionary": "noun (forestierismo), (storia), (politica) campo di concentramento (o di sterminio); il termine si r",
-    "english": "lager; Lager (2)",
-    "chinese": "饮料; 拉格尔(2)",
+    "english": "lager",
+    "chinese": "饮料; 拉格尔",
     "frequency": 196,
     "rank": 34918
   },
@@ -76670,7 +76670,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "secolare",
     "dictionary": "adjective che persiste o che è in vita da secoli centennial centuries-old",
-    "english": "centuries; (2)",
+    "english": "centuries",
     "chinese": "世纪; (二)",
     "frequency": 195,
     "rank": 35006
@@ -76686,8 +76686,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pistacchio",
     "dictionary": "adjective (colori)di colore verde sbiadito pistachio",
-    "english": "track; Tracker (2)",
-    "chinese": "音轨; 跟踪器(2)",
+    "english": "track; Tracker",
+    "chinese": "音轨; 跟踪器",
     "frequency": 195,
     "rank": 35014
   },
@@ -76734,8 +76734,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "Veneto",
     "dictionary": "pronoun Veneto",
-    "english": "Veneto; (2); venice (3)",
-    "chinese": "维尼托; (二); 风景(3)",
+    "english": "Veneto; venice",
+    "chinese": "维尼托; (二); 风景",
     "frequency": 194,
     "rank": 35072
   },
@@ -77038,8 +77038,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "oculista",
     "dictionary": "adjective di medico competente nelle patologia dell'occhio e della vista oculist ophthalmologist",
-    "english": "ophthalmologist; ophthalmologist (2)",
-    "chinese": "眼科医生; 眼科医生(2)",
+    "english": "ophthalmologist",
+    "chinese": "眼科医生",
     "frequency": 192,
     "rank": 35310
   },
@@ -77126,8 +77126,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "birmano",
     "dictionary": "adjective relativo alla Birmania ora denominata Myanmar Burman Burmese",
-    "english": "Burmese; Burmese (2); Burmese (3)",
-    "chinese": "缅甸; 缅甸(2); 缅甸(3)",
+    "english": "Burmese",
+    "chinese": "缅甸",
     "frequency": 192,
     "rank": 35374
   },
@@ -77190,8 +77190,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "precario",
     "dictionary": "adjective non sicuro, instabile fleeting hazardous insecure precarious shaky transient lavoratore as",
-    "english": "precarious; precarious (2)",
-    "chinese": "不稳定; 不稳定(2)",
+    "english": "precarious",
+    "chinese": "不稳定",
     "frequency": 191,
     "rank": 35442
   },
@@ -77350,8 +77350,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "celibe",
     "dictionary": "adjective di uomo non sposato (raro) (letterario) di persona di sesso femminile che non è maritata; ",
-    "english": "Celibe; (2); Celibe (3)",
-    "chinese": "塞利贝语Name; (二); 塞利贝(3)",
+    "english": "Celibe",
+    "chinese": "塞利贝语Name; (二); 塞利贝",
     "frequency": 190,
     "rank": 35582
   },
@@ -77534,8 +77534,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "solvente",
     "dictionary": "adjective che paga un debito payer",
-    "english": "solvent; solvent (2)",
-    "chinese": "溶剂; 溶剂(2)",
+    "english": "solvent",
+    "chinese": "溶剂",
     "frequency": 188,
     "rank": 35734
   },
@@ -77662,8 +77662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "derivato",
     "dictionary": "adjective che deriva da altro, fatto con parte di altro by-product",
-    "english": "derivative; derivative (2)",
-    "chinese": "衍生; 衍生工具(2)",
+    "english": "derivative",
+    "chinese": "衍生; 衍生工具",
     "frequency": 187,
     "rank": 35852
   },
@@ -77750,7 +77750,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "moderato",
     "dictionary": "adjective (politica) che non è estremista moderato (senso figurato) che ha intrapreso la \"via di mez",
-    "english": "Moderate; (2)",
+    "english": "Moderate",
     "chinese": "中调; (二)",
     "frequency": 186,
     "rank": 35960
@@ -77878,8 +77878,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "mongolo",
     "dictionary": "adjective (geografia) relativo alla Mongolia Mongol Mongolian Mongolic mongol mongoloid",
-    "english": "Mongol; Mongolian (2); Mongolian (3)",
-    "chinese": "蒙古语; 蒙古语(2); 蒙古语(3)",
+    "english": "Mongol; Mongolian",
+    "chinese": "蒙古语",
     "frequency": 185,
     "rank": 36036
   },
@@ -77958,8 +77958,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "multiplo",
     "dictionary": "adjective di numero che contiene esattamente più volte un altro numero multiple",
-    "english": "Multiple; Multiple (2)",
-    "chinese": "多个; 多个(2)",
+    "english": "Multiple",
+    "chinese": "多个",
     "frequency": 185,
     "rank": 36079
   },
@@ -78182,8 +78182,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "attestato",
     "dictionary": "adjective (diritto) dichiarazione di conoscenza e di giudizio da parte della pubblica amministrazion",
-    "english": "certified; certificate (2)",
-    "chinese": "认证; 证书(2)",
+    "english": "certified; certificate",
+    "chinese": "认证; 证书",
     "frequency": 183,
     "rank": 36281
   },
@@ -78198,8 +78198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dolcificante",
     "dictionary": "adjective fatto qualcosa di dolce sweetening",
-    "english": "sweetening; sweetener (2)",
-    "chinese": "甜点; 甜味剂(2)",
+    "english": "sweetening; sweetener",
+    "chinese": "甜点; 甜味剂",
     "frequency": 183,
     "rank": 36309
   },
@@ -78214,7 +78214,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "reo",
     "dictionary": "adjective (diritto) che ha commesso una colpa guilty",
-    "english": "♪; (2)",
+    "english": "♪",
     "chinese": "(待修复); (二)",
     "frequency": 183,
     "rank": 36317
@@ -78278,8 +78278,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "crociato",
     "dictionary": "adjective di oggetto che mostra una croce cruciform (araldica) attributo araldico che si applica a: ",
-    "english": "Crusader; Crusader (2)",
-    "chinese": "十字军; 十字军(2)",
+    "english": "Crusader",
+    "chinese": "十字军",
     "frequency": 183,
     "rank": 36358
   },
@@ -78374,8 +78374,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "rustico",
     "dictionary": "adjective casereccio e genuino ma laborioso coarse country rough rude rural rustic",
-    "english": "rustic; rustic (2)",
-    "chinese": "生锈; 生锈(2)",
+    "english": "rustic",
+    "chinese": "生锈",
     "frequency": 182,
     "rank": 36458
   },
@@ -78574,7 +78574,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fitto",
     "dictionary": "adjective che è denso fast (araldica)attributo araldico che si applica al palo, la croce o la pezza ",
-    "english": "fit; (2)",
+    "english": "fit",
     "chinese": "适应; (二)",
     "frequency": 181,
     "rank": 36585
@@ -78663,7 +78663,7 @@ const VOCABULARY_DATA = [
     "italian": "rinnovamento",
     "dictionary": "noun redevelopment reorganization updating (filosofia) (politica) (diritto) (economia) atto e risult",
     "english": "renewal",
-    "chinese": "续 续",
+    "chinese": "续",
     "frequency": 180,
     "rank": 36701
   },
@@ -78742,8 +78742,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "speculare",
     "dictionary": "adjective di uno specchio che riflette simmetricamente un'immagine reflecting specular symmetric sym",
-    "english": "speculate; speculation (2)",
-    "chinese": "推测; 投机(2)",
+    "english": "speculate; speculation",
+    "chinese": "推测; 投机",
     "frequency": 180,
     "rank": 36761
   },
@@ -78774,8 +78774,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "promotore",
     "dictionary": "adjective chi caldeggia un'iniziativa promoter promoting",
-    "english": "promoter; promoter (2)",
-    "chinese": "推动者; 推动者(2)",
+    "english": "promoter",
+    "chinese": "推动者",
     "frequency": 180,
     "rank": 36776
   },
@@ -78806,7 +78806,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Atlante",
     "dictionary": "pronoun (mitologia) titano che sorregge che reggesse sulle spalle il globo Atlas",
-    "english": "Atlas; atlas",
+    "english": "Atlas",
     "chinese": "地图集",
     "frequency": 179,
     "rank": 36813
@@ -78847,7 +78847,7 @@ const VOCABULARY_DATA = [
     "italian": "ragionevolmente",
     "dictionary": "adverb in modo ragionevole, con buon senso rationally reasonably",
     "english": "reasonably reasonable",
-    "chinese": "合理合理",
+    "chinese": "合理",
     "frequency": 179,
     "rank": 36834
   },
@@ -78999,7 +78999,7 @@ const VOCABULARY_DATA = [
     "italian": "crocifissione",
     "dictionary": "noun crucifixion",
     "english": "Crucifixion",
-    "chinese": "钉钉",
+    "chinese": "钉",
     "frequency": 178,
     "rank": 36973
   },
@@ -79102,8 +79102,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "attaccante",
     "dictionary": "adjective che attacca, che appiccica, che incolla attacking",
-    "english": "attacker; Clamping (2)",
-    "chinese": "攻击者; 燃烧(2)",
+    "english": "attacker; Clamping",
+    "chinese": "攻击者; 燃烧",
     "frequency": 178,
     "rank": 37029
   },
@@ -79246,8 +79246,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "partecipante",
     "dictionary": "adjective (diritto) (economia) (commercio) (finanza) che concorre con altri allo sviluppo di un'atti",
-    "english": "participant; participant (2)",
-    "chinese": "参加者; 与会者(2)",
+    "english": "participant",
+    "chinese": "参加者; 与会者",
     "frequency": 177,
     "rank": 37140
   },
@@ -79382,7 +79382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "contingente",
     "dictionary": "adjective (filosofia) che non è strettamente essenziale contingent incidental (senso figurato) (per ",
-    "english": "quota; (2)",
+    "english": "quota",
     "chinese": "配额; (二)",
     "frequency": 176,
     "rank": 37228
@@ -79430,8 +79430,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "carnivoro",
     "dictionary": "adjective (biologia) (zoologia) (di) essere vivente che si ciba in pratica solo di carne carnivorous",
-    "english": "carnivorous; carnivorous (2)",
-    "chinese": "食肉动物; 食肉动物(2)",
+    "english": "carnivorous",
+    "chinese": "食肉动物",
     "frequency": 176,
     "rank": 37265
   },
@@ -79670,7 +79670,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sostanziale",
     "dictionary": "adjective (filosofia)inerente alla sostanza che riguarda ciò che si trova all'interno di un oggetto ",
-    "english": "Substantial; (2)",
+    "english": "Substantial",
     "chinese": "实质性; (二)",
     "frequency": 174,
     "rank": 37453
@@ -79831,7 +79831,7 @@ const VOCABULARY_DATA = [
     "italian": "blockbuster",
     "dictionary": "noun (forestierismo) evento sensazionale sensation (letteratura) (cinematografia) fi",
     "english": "blockbuster",
-    "chinese": "块块",
+    "chinese": "块",
     "frequency": 173,
     "rank": 37579
   },
@@ -79878,8 +79878,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "asociale",
     "dictionary": "adjective di persona alla quale non piace stare assieme agli altri introvert",
-    "english": "asocial; asocial (2)",
-    "chinese": "社会; 非社会(2)",
+    "english": "asocial",
+    "chinese": "社会; 非社会",
     "frequency": 173,
     "rank": 37632
   },
@@ -79910,7 +79910,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sollecito",
     "dictionary": "adjective senza esitazione alert attentive careful diligent eager reminder",
-    "english": "raised; (2)",
+    "english": "raised",
     "chinese": "提高; (二)",
     "frequency": 172,
     "rank": 37675
@@ -79934,8 +79934,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "esponenziale",
     "dictionary": "adjective (matematica) che riguarda l'esponente di una potenza exponential",
-    "english": "exponential; exponential (2)",
-    "chinese": "指数; 指数(2)",
+    "english": "exponential",
+    "chinese": "指数",
     "frequency": 172,
     "rank": 37684
   },
@@ -79950,7 +79950,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "credulone",
     "dictionary": "adjective (spregiativo) irrisione contro chi si vuole canzonare credulous dupe gullible patsy stooge",
-    "english": "credulone; (2)",
+    "english": "credulone",
     "chinese": "肾上腺素; (二)",
     "frequency": 172,
     "rank": 37686
@@ -80222,8 +80222,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "antiquario",
     "dictionary": "adjective relativo all'antichità antiquarian antiquary",
-    "english": "antiquarian; Antiques (2)",
-    "chinese": "古质; 古董(2)",
+    "english": "antiquarian; Antiques",
+    "chinese": "古质; 古董",
     "frequency": 170,
     "rank": 37940
   },
@@ -80254,8 +80254,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "incisivo",
     "dictionary": "adjective (senso figurato) (di persona) che presenta risolutezza in una o più situazioni o nelle rel",
-    "english": "incisive; Incidents (2)",
-    "chinese": "果断; 事件(2)",
+    "english": "incisive; Incidents",
+    "chinese": "果断; 事件",
     "frequency": 170,
     "rank": 37958
   },
@@ -80278,8 +80278,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "saltatore",
     "dictionary": "adjective che salta jumping",
-    "english": "jumper; jumper (2)",
-    "chinese": "跳转; 跳转器(2)",
+    "english": "jumper",
+    "chinese": "跳转; 跳转器",
     "frequency": 170,
     "rank": 37975
   },
@@ -80366,8 +80366,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "contemporaneo",
     "dictionary": "adjective che vive/ha vissuto nella stessa epoca rispetto a qualcun altro che avviene nello stesso m",
-    "english": "contemporary; Modern (2)",
-    "chinese": "当代; 现代(2)",
+    "english": "contemporary; Modern",
+    "chinese": "当代; 现代",
     "frequency": 170,
     "rank": 38048
   },
@@ -80710,8 +80710,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "marocchino",
     "dictionary": "adjective (geografia) del Marocco Moroccan",
-    "english": "Moroccan; Moroccan (2)",
-    "chinese": "摩洛哥语; 摩洛哥(2)",
+    "english": "Moroccan",
+    "chinese": "摩洛哥语; 摩洛哥",
     "frequency": 167,
     "rank": 38326
   },
@@ -80830,7 +80830,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Redentore",
     "dictionary": "noun (per antonomasia) Gesù Cristo Redeemer",
-    "english": "Redeemer; (2)",
+    "english": "Redeemer",
     "chinese": "补丁; (二)",
     "frequency": 166,
     "rank": 38463
@@ -80902,8 +80902,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "periferica",
     "dictionary": "noun (elettronica) (informatica) (tecnologia) (ingegneria) componente di un computer",
-    "english": "peripheral peripheral peripheral",
-    "chinese": "外围外围",
+    "english": "peripheral",
+    "chinese": "外围",
     "frequency": 166,
     "rank": 38515
   },
@@ -81006,8 +81006,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "quadruplo",
     "dictionary": "adjective (matematica) (economia) (statistica) quattro volte più grande (tipografia) formato di cart",
-    "english": "quadruple; quadruple (2)",
-    "chinese": "四进制; 四重奏(2)",
+    "english": "quadruple",
+    "chinese": "四进制; 四重奏",
     "frequency": 166,
     "rank": 38558
   },
@@ -81230,7 +81230,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pennuto",
     "dictionary": "adjective coperto di penne feathered fledged",
-    "english": "pennunciation; (2)",
+    "english": "pennunciation",
     "chinese": "读音; (二)",
     "frequency": 164,
     "rank": 38781
@@ -81286,8 +81286,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "zotico",
     "dictionary": "adjective di persona o maniere sgarbate. boorish loutish",
-    "english": "Nitrogen; Nitrogen (2)",
-    "chinese": "氮; 氮(2)",
+    "english": "Nitrogen",
+    "chinese": "氮",
     "frequency": 164,
     "rank": 38802
   },
@@ -81310,8 +81310,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "imprenditoriale",
     "dictionary": "adjective entrepreneurial",
-    "english": "entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial",
-    "chinese": "创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业创业",
+    "english": "entrepreneurial",
+    "chinese": "创业",
     "frequency": 164,
     "rank": 38817
   },
@@ -81342,16 +81342,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "affettato",
     "dictionary": "adjective tagliato a fette affected sliced che manca di spontaneità, naturalezza o sincerità affecte",
-    "english": "sliced; sliced (2)",
-    "chinese": "切开; 切片(2)",
+    "english": "sliced",
+    "chinese": "切开; 切片",
     "frequency": 164,
     "rank": 38845
   },
   {
     "italian": "militante",
     "dictionary": "adjective (militare) che appartiene ad un esercito activist militant",
-    "english": "militant; militant (2)",
-    "chinese": "激进分子; 激进分子(2)",
+    "english": "militant",
+    "chinese": "激进分子",
     "frequency": 164,
     "rank": 38846
   },
@@ -81774,8 +81774,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "platonico",
     "dictionary": "adjective (storia) (filosofia) che riguarda Platone e la sua filosofia di amore il cui fine ultimo è",
-    "english": "platonic; platonic (2)",
-    "chinese": "柏拉图; 柏拉图(2)",
+    "english": "platonic",
+    "chinese": "柏拉图",
     "frequency": 161,
     "rank": 39208
   },
@@ -81838,8 +81838,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "diagonale",
     "dictionary": "adjective obliquo twilled",
-    "english": "diagonal; diagonal (2)",
-    "chinese": "对角; 对角 (2)",
+    "english": "diagonal",
+    "chinese": "对角",
     "frequency": 161,
     "rank": 39267
   },
@@ -81886,8 +81886,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ricevente",
     "dictionary": "adjective che riceve receiver",
-    "english": "recipient; recipient (2)",
-    "chinese": "收件人; 接收者(2)",
+    "english": "recipient",
+    "chinese": "收件人; 接收者",
     "frequency": 160,
     "rank": 39293
   },
@@ -81958,8 +81958,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sovversivo",
     "dictionary": "adjective (diritto) (politica) (familiare) che è dedito a sconvolgere con violenza l'assetto di uno ",
-    "english": "subversive; subversive (2)",
-    "chinese": "颠覆; 颠覆活动(2)",
+    "english": "subversive",
+    "chinese": "颠覆; 颠覆活动",
     "frequency": 160,
     "rank": 39332
   },
@@ -82182,8 +82182,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "poliziesco",
     "dictionary": "adjective (letteratura) (cinematografia) di opera di finzione incentrata su azioni di polizia police",
-    "english": "Police; Courtesy (2)",
-    "chinese": "警务; 礼节(2)",
+    "english": "Police; Courtesy",
+    "chinese": "警务; 礼节",
     "frequency": 159,
     "rank": 39545
   },
@@ -82294,7 +82294,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "inerte",
     "dictionary": "adjective che non reagisce (chimica) che non dà luogo a reazioni chimiche alle condizioni considerat",
-    "english": "Inerts; (2)",
+    "english": "Inerts",
     "chinese": "惰性; (二)",
     "frequency": 158,
     "rank": 39609
@@ -83126,8 +83126,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "conciliare",
     "dictionary": "adjective che è inerente al concilio council",
-    "english": "Conciliation; Conciliation (2)",
-    "chinese": "调解; 调解(2)",
+    "english": "Conciliation",
+    "chinese": "调解",
     "frequency": 153,
     "rank": 40352
   },
@@ -83278,8 +83278,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tartaro",
     "dictionary": "adjective che appartiene ad una popolazione turca compresa tra l'Europa orientale e la Mongolia Tart",
-    "english": "tartar; tartar (2)",
-    "chinese": "塔塔尔; 沥青(2)",
+    "english": "tartar",
+    "chinese": "塔塔尔; 沥青",
     "frequency": 152,
     "rank": 40469
   },
@@ -83390,7 +83390,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "novizio",
     "dictionary": "adjective (religione), (cristianesimo), (cattolicesimo) che si accinge a diventare prete o suora (pe",
-    "english": "novice; (2)",
+    "english": "novice",
     "chinese": "虚拟; (二)",
     "frequency": 152,
     "rank": 40576
@@ -83406,8 +83406,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "debuttante",
     "dictionary": "adjective che si presenta per la prima volta ad uno spettacolo canoro, teatrale, cinematografico, te",
-    "english": "debutante; debutante (2)",
-    "chinese": "初试; 初试(2)",
+    "english": "debutante",
+    "chinese": "初试",
     "frequency": 152,
     "rank": 40583
   },
@@ -83470,8 +83470,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fioritura",
     "dictionary": "noun display embellishment flourishing (botanica) blomm bloom blooming blossom crop f",
-    "english": "flower flower blossom",
-    "chinese": "花开花开",
+    "english": "flower blossom",
+    "chinese": "花开",
     "frequency": 151,
     "rank": 40613
   },
@@ -83814,7 +83814,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scotto",
     "dictionary": "adjective cotto male o troppo cotto overcooked overdone price reckoning scot",
-    "english": "rock; (2)",
+    "english": "rock",
     "chinese": "摇滚; (二)",
     "frequency": 149,
     "rank": 40992
@@ -83822,7 +83822,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "burbero",
     "dictionary": "adjective di individuo che ha un carattere intrattabile gruff brusque grouchy grumpy surly unfriendl",
-    "english": "Burbery; (2)",
+    "english": "Burbery",
     "chinese": "布尔贝利; (二)",
     "frequency": 149,
     "rank": 40995
@@ -83918,8 +83918,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "appellativo",
     "dictionary": "adjective (grammatica) soprannome appellative epithet nickname sobriquet (diritto) appeal appellate ",
-    "english": "appellation; appellation (2)",
-    "chinese": "缩写; 简称(2)",
+    "english": "appellation",
+    "chinese": "缩写; 简称",
     "frequency": 148,
     "rank": 41118
   },
@@ -83982,7 +83982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "divo",
     "dictionary": "adjective divino divine godlike",
-    "english": "Divorce; (2)",
+    "english": "Divorce",
     "chinese": "离婚; (二)",
     "frequency": 148,
     "rank": 41200
@@ -84326,7 +84326,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "marittimo",
     "dictionary": "adjective relativo al mare coastal maritime sea",
-    "english": "sea; (2)",
+    "english": "sea",
     "chinese": "海运; (二)",
     "frequency": 146,
     "rank": 41409
@@ -84542,7 +84542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mutua",
     "dictionary": "noun (statistica) (medicina) istituto di assistenza sanitaria integrativa per determinate categorie ",
-    "english": "mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual",
+    "english": "mutual",
     "chinese": "双方互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通互通",
     "frequency": 145,
     "rank": 41637
@@ -84566,8 +84566,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "recidivo",
     "dictionary": "adjective (diritto) recidivist recidivous (medicina) di una malattia che si ripresenta recurring rel",
-    "english": "relapse; relapse (2)",
-    "chinese": "复发; 复发(2)",
+    "english": "relapse",
+    "chinese": "复发",
     "frequency": 145,
     "rank": 41645
   },
@@ -84807,7 +84807,7 @@ const VOCABULARY_DATA = [
     "italian": "cibernetico",
     "dictionary": "adjective cybernetic",
     "english": "cybernetic",
-    "chinese": "网络网络",
+    "chinese": "网络",
     "frequency": 144,
     "rank": 41815
   },
@@ -85126,7 +85126,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "saccente",
     "dictionary": "adjective che esibisce un sapere maggiore di quello effettivamente posseduto arrogant conceited",
-    "english": "saviour; (2)",
+    "english": "saviour",
     "chinese": "救赎; (二)",
     "frequency": 142,
     "rank": 42098
@@ -85270,8 +85270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ciclismo",
     "dictionary": "noun (sport) sport della bicicletta cycling",
-    "english": "cycling cycling",
-    "chinese": "循环循环",
+    "english": "cycling",
+    "chinese": "循环",
     "frequency": 141,
     "rank": 42251
   },
@@ -85502,8 +85502,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "soccorritore",
     "dictionary": "adjective che viene in aiuto helper",
-    "english": "rescuer; rescuer (2)",
-    "chinese": "救援人员; 救援人员(2)",
+    "english": "rescuer",
+    "chinese": "救援人员",
     "frequency": 140,
     "rank": 42419
   },
@@ -85814,7 +85814,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "controvento",
     "dictionary": "adverb (senso figurato) in contrasto con le opinioni e i comportamenti correnti, predominanti upwind",
-    "english": "convent; (2)",
+    "english": "convent",
     "chinese": "修道院; (二)",
     "frequency": 138,
     "rank": 42757
@@ -85862,7 +85862,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "esportazione",
     "dictionary": "noun export",
-    "english": "export export",
+    "english": "export",
     "chinese": "导出",
     "frequency": 138,
     "rank": 42784
@@ -86230,8 +86230,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "turchese",
     "dictionary": "adjective (colore) di azzurro pallido turquoise",
-    "english": "turquoise; turquoise (2)",
-    "chinese": "绿宝石; 绿宝石(2)",
+    "english": "turquoise",
+    "chinese": "绿宝石",
     "frequency": 136,
     "rank": 43138
   },
@@ -86350,8 +86350,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "molare",
     "dictionary": "adjective (anatomia) relativo ai denti masticatori (fisica) (chimica) relativo al concetto di mole m",
-    "english": "molarating; mooring (2)",
-    "chinese": "摩擦; 锚泊(2)",
+    "english": "molarating; mooring",
+    "chinese": "摩擦; 锚泊",
     "frequency": 136,
     "rank": 43256
   },
@@ -86406,8 +86406,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "orrido",
     "dictionary": "adjective orripilante, che genera disgusto misto a un senso di terrore e istintiva repulsione awful ",
-    "english": "Orrido; horrid (2)",
-    "chinese": "奥里多; 骇人听闻(2)",
+    "english": "Orrido; horrid",
+    "chinese": "奥里多; 骇人听闻",
     "frequency": 136,
     "rank": 43284
   },
@@ -86878,8 +86878,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ariano",
     "dictionary": "adjective (etnologia), (linguistica) indoiranico Arian",
-    "english": "Arian; Arian (2)",
-    "chinese": "亚利安语Name; 亚利安语(2)",
+    "english": "Arian",
+    "chinese": "亚利安语Name; 亚利安语",
     "frequency": 133,
     "rank": 43806
   },
@@ -87094,7 +87094,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scellerato",
     "dictionary": "adjective colpevole di un delitto (per estensione) al di là di ogni morale, senza logica etica evil ",
-    "english": "Scelled; (2)",
+    "english": "Scelled",
     "chinese": "已删除; (二)",
     "frequency": 132,
     "rank": 43995
@@ -87134,7 +87134,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "prevenuto",
     "dictionary": "adjective che ha dei preconcetti su qualcuno o qualcosa biased prejudiced",
-    "english": "before; (2)",
+    "english": "before",
     "chinese": "在此之前; (二)",
     "frequency": 132,
     "rank": 44036
@@ -87502,7 +87502,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "paffuto",
     "dictionary": "adjective che presenta eccesso di adipe chubby plump",
-    "english": "chubby chubby",
+    "english": "chubby",
     "chinese": "满满的",
     "frequency": 130,
     "rank": 44325
@@ -87590,7 +87590,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rovere",
     "dictionary": "noun (botanica) quercia con tronco molto grosso durmast",
-    "english": "oak oak",
+    "english": "oak",
     "chinese": "橡树",
     "frequency": 130,
     "rank": 44392
@@ -87646,7 +87646,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "meticcio",
     "dictionary": "adjective nato da genitori di etnie o specie diverse mestizo",
-    "english": "Mesh; (2)",
+    "english": "Mesh",
     "chinese": "网点; (二)",
     "frequency": 130,
     "rank": 44429
@@ -88182,7 +88182,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ancestrale",
     "dictionary": "adjective (biologia) di carattere o organo riscontrabile dall'osservazione dei fos",
-    "english": "ancestral ancestral",
+    "english": "ancestral",
     "chinese": "祖传",
     "frequency": 127,
     "rank": 44879
@@ -88726,8 +88726,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sommario",
     "dictionary": "adjective circoscritto agli elementi principali hasty hurried",
-    "english": "Summary; Summary (2)",
-    "chinese": "目 录; 摘要(2)",
+    "english": "Summary",
+    "chinese": "目 录; 摘要",
     "frequency": 125,
     "rank": 45346
   },
@@ -88878,8 +88878,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bavarese",
     "dictionary": "adjective (geografia) che riguarda la Baviera Bavarian",
-    "english": "Bavarian; Bavarian (2)",
-    "chinese": "巴伐利亚语Name; 巴伐利亚语(2)",
+    "english": "Bavarian",
+    "chinese": "巴伐利亚语Name; 巴伐利亚语",
     "frequency": 124,
     "rank": 45479
   },
@@ -88910,8 +88910,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "indigeno",
     "dictionary": "adjective (storia) (geografia) nativo od originario del posto in cui vive indigenous native",
-    "english": "Indigenous; Indigenous (2)",
-    "chinese": "土著; 土著(2)",
+    "english": "Indigenous",
+    "chinese": "土著",
     "frequency": 124,
     "rank": 45497
   },
@@ -89094,8 +89094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "collettore",
     "dictionary": "adjective che svolge l'azione di raccogliere collecting manifold",
-    "english": "collector; collar (2)",
-    "chinese": "收藏家; 项(2)",
+    "english": "collector; collar",
+    "chinese": "收藏家; 项",
     "frequency": 124,
     "rank": 45661
   },
@@ -89118,7 +89118,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "lombardo",
     "dictionary": "adjective (geografia) della Lombardia Lombard Lombardic",
-    "english": "lumbar; (2)",
+    "english": "lumbar",
     "chinese": "线条; (二)",
     "frequency": 124,
     "rank": 45673
@@ -89126,7 +89126,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "spartano",
     "dictionary": "adjective misero ma essenziale, senza alcun fronzolo, accomodamento o delicatezza superflua. Detto d",
-    "english": "spartan; (2)",
+    "english": "spartan",
     "chinese": "斯巴达语Name; (二)",
     "frequency": 123,
     "rank": 45678
@@ -89166,8 +89166,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ottomano",
     "dictionary": "adjective (storia) che è relativo alla dinastia turca creata da Othman I nel Trecento, scomparsa nel",
-    "english": "Ottoman; Brass (2)",
-    "chinese": "奥斯曼语Name; 刹车(2)",
+    "english": "Ottoman; Brass",
+    "chinese": "奥斯曼语Name; 刹车",
     "frequency": 123,
     "rank": 45734
   },
@@ -89302,8 +89302,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "torbido",
     "dictionary": "adjective non trasparente (senso figurato) poco evidente dishonest fishy shady",
-    "english": "peat; turbulent (2)",
-    "chinese": "泥浆; 动荡(2)",
+    "english": "peat; turbulent",
+    "chinese": "泥浆; 动荡",
     "frequency": 123,
     "rank": 45885
   },
@@ -89478,8 +89478,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bicipite",
     "dictionary": "adjective dotato di due teste two-headed (araldica) attributo araldico che si applica agli animali, ",
-    "english": "biceps; biceps (2)",
-    "chinese": "双; 双胞胎(2)",
+    "english": "biceps",
+    "chinese": "双; 双胞胎",
     "frequency": 122,
     "rank": 46053
   },
@@ -90150,7 +90150,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "strabico",
     "dictionary": "adjective (medicina) che è malato di strabismo strabismal",
-    "english": "weirdo; (2)",
+    "english": "weirdo",
     "chinese": "怪兽; (二)",
     "frequency": 119,
     "rank": 46558
@@ -90510,8 +90510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "servile",
     "dictionary": "adjective relativo al servo degno di un servo (spregiativo) di chi tende, per timore, assenza di dig",
-    "english": "servants; service (2)",
-    "chinese": "服务员; 服务(2)",
+    "english": "servants; service",
+    "chinese": "服务员; 服务",
     "frequency": 118,
     "rank": 46912
   },
@@ -90806,7 +90806,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "slavo",
     "dictionary": "adjective (linguistica) (geografia) che riguarda l'omonimo gruppo etnolinguistico situato nella magg",
-    "english": "Slave; (1)",
+    "english": "Slave",
     "chinese": "奴隶; (1) 国家",
     "frequency": 117,
     "rank": 47168
@@ -90846,7 +90846,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "omonimo",
     "dictionary": "adjective (linguistica) di parola che si pronuncia o si scrive in modo identico ad un'altra ma che h",
-    "english": "The same name; (2)",
+    "english": "The same name",
     "chinese": "同一个名字; (二)",
     "frequency": 117,
     "rank": 47196
@@ -90990,7 +90990,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ebete",
     "dictionary": "adjective di persona ingenua, che agisce senza senso, stolta daft doltish dull dull-witted idiotic i",
-    "english": "♪; (2)",
+    "english": "♪",
     "chinese": "(待修复); (二)",
     "frequency": 116,
     "rank": 47292
@@ -90998,7 +90998,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Uruguay",
     "dictionary": "pronoun (geografia) stato dell'America meridionale, la cui capitale è Montevideo; confi",
-    "english": "Uruguay Uruguay",
+    "english": "Uruguay",
     "chinese": "乌拉圭",
     "frequency": 116,
     "rank": 47300
@@ -91462,8 +91462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "anfibio",
     "dictionary": "adjective di animale o vegetale, capace di sopravvivere sia sulla terra che in acqua in grado di muo",
-    "english": "anfibio; Anfibio (2)",
-    "chinese": "安非比奥; 安菲比奥(2)",
+    "english": "anfibio",
+    "chinese": "安非比奥; 安菲比奥",
     "frequency": 114,
     "rank": 47711
   },
@@ -91502,8 +91502,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ingannatore",
     "dictionary": "adjective che induce in inganno cheat con-man swindler",
-    "english": "deceiver; deceiver (2)",
-    "chinese": "欺骗者; 欺骗者(2)",
+    "english": "deceiver",
+    "chinese": "欺骗者",
     "frequency": 114,
     "rank": 47728
   },
@@ -91518,7 +91518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sapiente",
     "dictionary": "adjective (filosofia) di individuo pieno di saggezza competent knowing learned skillful wise",
-    "english": "expert; (2)",
+    "english": "expert",
     "chinese": "专家; (二)",
     "frequency": 114,
     "rank": 47740
@@ -91566,7 +91566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fuorché",
     "dictionary": "conjunction si usa davanti a verbi di modo infinito con valore eccettuativo (raro) a meno che apart ",
-    "english": "That's why; (2)",
+    "english": "That's why",
     "chinese": "这就是为什么; (二)",
     "frequency": 114,
     "rank": 47768
@@ -91598,8 +91598,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "arcano",
     "dictionary": "adjective (senso figurato) (per estensione) lontanissimo arcane mysterious secret (raro) antichissim",
-    "english": "arcane; bow (2)",
-    "chinese": "丙烷; 弓(2)",
+    "english": "arcane; bow",
+    "chinese": "丙烷; 弓",
     "frequency": 114,
     "rank": 47794
   },
@@ -91694,7 +91694,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ardire",
     "dictionary": "noun uso del verbo sostantivato: temerarietà, coraggio audacity gall nerve",
-    "english": "daring; (2)",
+    "english": "daring",
     "chinese": "大胆; (二)",
     "frequency": 113,
     "rank": 47902
@@ -91710,7 +91710,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "graziato",
     "dictionary": "adjective (religione) (senso figurato) pardoned saved",
-    "english": "grace; (2)",
+    "english": "grace",
     "chinese": "优雅; (二)",
     "frequency": 113,
     "rank": 47913
@@ -91718,7 +91718,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "appuntato",
     "dictionary": "adjective (raro) che termina con un punta pointed pointy (araldica) attributo araldico che si applic",
-    "english": "pinned; (2)",
+    "english": "pinned",
     "chinese": "锁定; (二)",
     "frequency": 113,
     "rank": 47920
@@ -91774,7 +91774,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "appetibile",
     "dictionary": "adjective (scherzoso) piacente acractive",
-    "english": "appetizer; (2)",
+    "english": "appetizer",
     "chinese": "开胃菜; (二)",
     "frequency": 113,
     "rank": 47984
@@ -92006,8 +92006,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "polimero",
     "dictionary": "noun (chimica industriale) macromolecola composta da un numero elevato di unità ripeti",
-    "english": "polymer polymer",
-    "chinese": "聚合物聚合物",
+    "english": "polymer",
+    "chinese": "聚合物",
     "frequency": 112,
     "rank": 48210
   },
@@ -92158,8 +92158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "politecnico",
     "dictionary": "adjective che riguarda studi tecnologici polytechnic",
-    "english": "polytechnic; Polytechnic (2)",
-    "chinese": "理工学院; 理工大学(2)",
+    "english": "polytechnic",
+    "chinese": "理工学院; 理工大学",
     "frequency": 111,
     "rank": 48393
   },
@@ -92190,8 +92190,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "haitiano",
     "dictionary": "adjective originario di o relativo ad Haiti Haitian",
-    "english": "Haitian; hatitian (2)",
-    "chinese": "海地语; 墨西哥(2)",
+    "english": "Haitian; hatitian",
+    "chinese": "海地语; 墨西哥",
     "frequency": 111,
     "rank": 48420
   },
@@ -92318,8 +92318,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "disadattato",
     "dictionary": "adjective (psicologia) che è affetto da disadattamento maladjusted",
-    "english": "unsuited; Unsuitable (2)",
-    "chinese": "不适应; 不合时宜(2)",
+    "english": "unsuited; Unsuitable",
+    "chinese": "不适应; 不合时宜",
     "frequency": 111,
     "rank": 48549
   },
@@ -92510,8 +92510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dissidente",
     "dictionary": "adjective che non si adegua al pensiero e al modo di agire di una maggioranza Dissenter Nonconformis",
-    "english": "dissident; Dissident (2)",
-    "chinese": "反对者; 偏差 (2)",
+    "english": "dissident",
+    "chinese": "反对者; 偏差",
     "frequency": 110,
     "rank": 48796
   },
@@ -92670,8 +92670,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cablaggio",
     "dictionary": "noun wiring",
-    "english": "wiring wiring",
-    "chinese": "线线",
+    "english": "wiring",
+    "chinese": "线",
     "frequency": 109,
     "rank": 48942
   },
@@ -92950,8 +92950,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "baritono",
     "dictionary": "adjective (musica) indica la qualità di suono di alcuni strumenti musicali baritone horn",
-    "english": "baritone; baritone (2)",
-    "chinese": "中继酮; 中继酮(2)",
+    "english": "baritone",
+    "chinese": "中继酮",
     "frequency": 108,
     "rank": 49179
   },
@@ -93342,8 +93342,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ecclesiastico",
     "dictionary": "adjective (religione), (cristianesimo) che è inerente alla chiesa churchman clergyman clerical eccle",
-    "english": "ecclesiastical; church (2)",
-    "chinese": "教会; 教会(2)",
+    "english": "ecclesiastical; church",
+    "chinese": "教会",
     "frequency": 107,
     "rank": 49539
   },
@@ -94342,8 +94342,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ablativo",
     "dictionary": "adjective (antico) privare di qualcosa ablative",
-    "english": "ablative; Ablative (2)",
-    "chinese": "活动; 活性(2)",
+    "english": "ablative",
+    "chinese": "活动; 活性",
     "frequency": 0,
     "rank": 999999
   },
@@ -94390,8 +94390,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "aborrire",
     "dictionary": "verb avere in orrore, disprezzare profondamente abhor loathe",
-    "english": "abortion; aborri (2)",
-    "chinese": "堕胎; 阿博里(2)",
+    "english": "abortion; aborri",
+    "chinese": "堕胎; 阿博里",
     "frequency": 0,
     "rank": 999999
   },
@@ -94438,8 +94438,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "abruzzese",
     "dictionary": "adjective (geografia) dell'Abruzzo Abruzzese",
-    "english": "abruzzese; Bruzzese (2); abruzzese (3)",
-    "chinese": "阿鲁兹; 布鲁兹语(2); 腹胀(3)",
+    "english": "abruzzese; Bruzzese",
+    "chinese": "阿鲁兹; 布鲁兹语; 腹胀",
     "frequency": 0,
     "rank": 999999
   },
@@ -95790,16 +95790,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "acquaio",
     "dictionary": "adjective riferito a persona che porta dell'acqua kitchen sink sink",
-    "english": "water tank; water (2)",
-    "chinese": "储水罐; 水 (2)",
+    "english": "water tank; water",
+    "chinese": "储水罐; 水",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "acquamarina",
     "dictionary": "noun (colore) colore dell' acquamarina aquamarine",
-    "english": "Aquamarine; aquamarine (2)",
-    "chinese": "水叮当; 水叮当(2)",
+    "english": "Aquamarine",
+    "chinese": "水叮当",
     "frequency": 0,
     "rank": 999999
   },
@@ -95910,7 +95910,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "acrilico",
     "dictionary": "adjective (chimica) (chimica organica) proprio dell'acido acrilico, acido organico formato dall'unio",
-    "english": "acrylic acrylic acrylic acrylic",
+    "english": "acrylic",
     "chinese": "丙烯酸c",
     "frequency": 0,
     "rank": 999999
@@ -95982,7 +95982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Actina",
     "dictionary": "noun (biologia) genere di insetti ditteri, notacanti e stratiomidi; hanno lo scudo del mesotorace a ",
-    "english": "Actina; actina",
+    "english": "Actina",
     "chinese": "奥蒂娜; 行动",
     "frequency": 0,
     "rank": 999999
@@ -96190,7 +96190,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "additivo",
     "dictionary": "adjective (matematica) riferito all'operazione matematica dell'addizione additional additive",
-    "english": "additive; (2)",
+    "english": "additive",
     "chinese": "添加剂; (二)",
     "frequency": 0,
     "rank": 999999
@@ -96710,8 +96710,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "adultero",
     "dictionary": "adjective relativo all'adulterio adulterous",
-    "english": "adult; adult (2)",
-    "chinese": "成年人; 成人(2)",
+    "english": "adult",
+    "chinese": "成年人; 成人",
     "frequency": 0,
     "rank": 999999
   },
@@ -96814,8 +96814,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "aerobio",
     "dictionary": "adjective (biologia) (di) organismo che ha bisogno di ossigeno molecolare per vivere aerobic",
-    "english": "aerobio; aerobics (2)",
-    "chinese": "空气生物; 气功(2)",
+    "english": "aerobio; aerobics",
+    "chinese": "空气生物; 气功",
     "frequency": 0,
     "rank": 999999
   },
@@ -98014,8 +98014,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "aggregato",
     "dictionary": "adjective agglomerato composto da più parti unite insieme adjunct aggregate aggregated auxiliary con",
-    "english": "aggregate; aggregation (2)",
-    "chinese": "合计; 汇总(2)",
+    "english": "aggregate; aggregation",
+    "chinese": "合计; 汇总",
     "frequency": 0,
     "rank": 999999
   },
@@ -98302,8 +98302,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "agrario",
     "dictionary": "adjective (agricoltura) che riguarda i metodi e le conoscenze che permettono di coltivare la terra a",
-    "english": "Agrarian; Agricultural (2)",
-    "chinese": "农业; 农业(2)",
+    "english": "Agrarian; Agricultural",
+    "chinese": "农业",
     "frequency": 0,
     "rank": 999999
   },
@@ -98518,7 +98518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "alare",
     "dictionary": "noun oggetto di natura solitamente metallica o di pietra usato in coppia con un altro per ardere la ",
-    "english": "wing; (2)",
+    "english": "wing",
     "chinese": "翅膀; (二)",
     "frequency": 0,
     "rank": 999999
@@ -98638,8 +98638,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "albuminoide",
     "dictionary": "adjective (biologia) (biochimica) di sostanza con caratteristiche simili a quelle dell'albumina albu",
-    "english": "albuminoid; albumino (2)",
-    "chinese": "相册偶联; 专辑(2)",
+    "english": "albuminoid; albumino",
+    "chinese": "相册偶联; 专辑",
     "frequency": 0,
     "rank": 999999
   },
@@ -98807,7 +98807,7 @@ const VOCABULARY_DATA = [
     "italian": "alcool etilico",
     "dictionary": "noun ethylalcohol",
     "english": "ethyl alcohol",
-    "chinese": "乙醇 乙醇",
+    "chinese": "乙醇",
     "frequency": 0,
     "rank": 999999
   },
@@ -99174,8 +99174,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "all'aperto",
     "dictionary": "esterno all'aria aperta (per estensione) zone verdi e/o giardini alfresco open-air outdoor",
-    "english": "outdoors; outdoor (2)",
-    "chinese": "室外活动; 室外(2)",
+    "english": "outdoors; outdoor",
+    "chinese": "室外活动; 室外",
     "frequency": 0,
     "rank": 999999
   },
@@ -99726,8 +99726,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "alpino",
     "dictionary": "adjective (geografia) delle Alpi alpine (militare) che è attinente agli alpini Italian alpine soldie",
-    "english": "Alps; Alpine (2)",
-    "chinese": "阿尔卑斯山; 阿尔卑斯山(2)",
+    "english": "Alps; Alpine",
+    "chinese": "阿尔卑斯山",
     "frequency": 0,
     "rank": 999999
   },
@@ -100550,7 +100550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ammogliato",
     "dictionary": "adjective che ha moglie married",
-    "english": "soaked; (2)",
+    "english": "soaked",
     "chinese": "湿透了; (二)",
     "frequency": 0,
     "rank": 999999
@@ -100558,8 +100558,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ammollare",
     "dictionary": "verb rendere molle qualcosa immergendola o bagnandola con acqua o altri liquidi soften (per estensio",
-    "english": "soaking; Ammolla (2)",
-    "chinese": "湿透了; 安莫拉(2)",
+    "english": "soaking; Ammolla",
+    "chinese": "湿透了; 安莫拉",
     "frequency": 0,
     "rank": 999999
   },
@@ -100606,8 +100606,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ammorbidente",
     "dictionary": "adjective che ammorbidisce softening",
-    "english": "softener; amorphic (2)",
-    "chinese": "软化器; 形态 (2)",
+    "english": "softener; amorphic",
+    "chinese": "软化器; 形态",
     "frequency": 0,
     "rank": 999999
   },
@@ -101414,7 +101414,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "andante",
     "dictionary": "adjective che va cheap current poor second-rate",
-    "english": "andante; (2)",
+    "english": "andante",
     "chinese": "安东; (二)",
     "frequency": 0,
     "rank": 999999
@@ -101462,8 +101462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "androgino",
     "dictionary": "adjective (biologia) (medicina) che è munito di organi di tutti e due i sessi androgynous hermaphrod",
-    "english": "Androgyn; androgynous (2)",
-    "chinese": "安德罗金; 阳性(2)",
+    "english": "Androgyn; androgynous",
+    "chinese": "安德罗金; 阳性",
     "frequency": 0,
     "rank": 999999
   },
@@ -101662,8 +101662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "angioino",
     "dictionary": "adjective relativo alla casata degli Angiò relativo alla provincia di Angiò Angevin",
-    "english": "Angio; Angiona (2)",
-    "chinese": "安吉欧; 血管炎(2)",
+    "english": "Angio; Angiona",
+    "chinese": "安吉欧; 血管炎",
     "frequency": 0,
     "rank": 999999
   },
@@ -101726,8 +101726,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "anglicano",
     "dictionary": "adjective (religione), (cristianesimo) relativo alla chiesa protestante d'Inghilterra Anglican",
-    "english": "Anglican; Anglican (2)",
-    "chinese": "英国圣公会; 英国圣公会(2)",
+    "english": "Anglican",
+    "chinese": "英国圣公会",
     "frequency": 0,
     "rank": 999999
   },
@@ -101782,8 +101782,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "anglosassone",
     "dictionary": "adjective che si riferisce agli Anglosassoni (per estensione) che si riferisce ai popoli di lingua i",
-    "english": "Anglo-Saxon; Anglo-Saxon (2)",
-    "chinese": "盎格鲁-撒克逊; 盎格鲁-撒克逊语(2)",
+    "english": "Anglo-Saxon",
+    "chinese": "盎格鲁-撒克逊; 盎格鲁-撒克逊语",
     "frequency": 0,
     "rank": 999999
   },
@@ -102111,7 +102111,7 @@ const VOCABULARY_DATA = [
     "italian": "annodato",
     "dictionary": "adjective (araldica) attributo araldico che si applica a una pezza che presenta una protuberanza cir",
     "english": "knotted",
-    "chinese": "结结",
+    "chinese": "结",
     "frequency": 0,
     "rank": 999999
   },
@@ -102158,7 +102158,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Annunciazione",
     "dictionary": "noun Annunciation",
-    "english": "Announcement; announcement",
+    "english": "Announcement",
     "chinese": "通知",
     "frequency": 0,
     "rank": 999999
@@ -102238,7 +102238,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Anseriformi",
     "dictionary": "noun (zoologia), (ornitologia) ordine della classe degli uccelli, la sua classifica",
-    "english": "Anseriforms; anseriforms",
+    "english": "Anseriforms",
     "chinese": "定义; 异常",
     "frequency": 0,
     "rank": 999999
@@ -102270,8 +102270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "antagonista",
     "dictionary": "adjective relativo a molecola che blocca l'attività recettoriale antagonist opposing rival",
-    "english": "antagonist; Antagonist (2)",
-    "chinese": "反对者; 对抗者(2)",
+    "english": "antagonist",
+    "chinese": "反对者; 对抗者",
     "frequency": 0,
     "rank": 999999
   },
@@ -102718,8 +102718,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "antisettico",
     "dictionary": "adjective che impedisce o rallenta lo sviluppo di microbi antiseptic",
-    "english": "antiseptic; antiseptic (2)",
-    "chinese": "抗化剂; 抗化物(2)",
+    "english": "antiseptic",
+    "chinese": "抗化剂; 抗化物",
     "frequency": 0,
     "rank": 999999
   },
@@ -102798,8 +102798,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "antitumorale",
     "dictionary": "adjective che inibisce la crescita e la diffusione di un tumore anti-tumour",
-    "english": "antitumora; Antitumor (2)",
-    "chinese": "反肿瘤; 抗肿瘤剂(2)",
+    "english": "antitumora; Antitumor",
+    "chinese": "反肿瘤; 抗肿瘤剂",
     "frequency": 0,
     "rank": 999999
   },
@@ -102822,7 +102822,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "antivirale",
     "dictionary": "adjective (medicina) (farmacologia) di medicinale che serve per opporsi alle infezioni da virus anti",
-    "english": "antiviral; (2)",
+    "english": "antiviral",
     "chinese": "抗病毒药; (二)",
     "frequency": 0,
     "rank": 999999
@@ -103142,8 +103142,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "apocrifo",
     "dictionary": "adjective (religione) (cristianesimo) (di) ciascuno dei Vangeli che la Chiesa cattolica esclude dal ",
-    "english": "apocrifo; apocrylate (2)",
-    "chinese": "缩写; 丙烯酸盐(2)",
+    "english": "apocrifo; apocrylate",
+    "chinese": "缩写; 丙烯酸盐",
     "frequency": 0,
     "rank": 999999
   },
@@ -103166,8 +103166,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "apogeo",
     "dictionary": "adjective (astronomia) che si trova alla massima distanza tra due corpi celesti apogee climax culmin",
-    "english": "apogee; apogee (2)",
-    "chinese": "远地点; 远地点(2)",
+    "english": "apogee",
+    "chinese": "远地点",
     "frequency": 0,
     "rank": 999999
   },
@@ -103566,7 +103566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "appestato",
     "dictionary": "adjective che è malato di peste infected tainted",
-    "english": "Appeal; (2)",
+    "english": "Appeal",
     "chinese": "上诉; (二)",
     "frequency": 0,
     "rank": 999999
@@ -103662,8 +103662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "applicativo",
     "dictionary": "adjective che riguarda un'applicazione applicable (elettronica) (informatica) (tecnologia) (ingegner",
-    "english": "application; application (2)",
-    "chinese": "应用程序; 申请(2)",
+    "english": "application",
+    "chinese": "应用程序; 申请",
     "frequency": 0,
     "rank": 999999
   },
@@ -104214,8 +104214,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "archetipo",
     "dictionary": "adjective che funge da esemplare archetypal archetype archetypic forerunner prototype",
-    "english": "archetype; archetype (2)",
-    "chinese": "旧类型; 原型(2)",
+    "english": "archetype",
+    "chinese": "旧类型; 原型",
     "frequency": 0,
     "rank": 999999
   },
@@ -104678,8 +104678,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "aritmetico",
     "dictionary": "adjective (matematica) relativo all'aritmetica arithmetic arithmetical precise regular che riguarda ",
-    "english": "arithmetic; Arithmetic (2)",
-    "chinese": "算术; 算术 (2)",
+    "english": "arithmetic",
+    "chinese": "算术",
     "frequency": 0,
     "rank": 999999
   },
@@ -104806,8 +104806,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "armatore",
     "dictionary": "adjective aggettivo shipping",
-    "english": "shipowner; shipowner (2)",
-    "chinese": "船东; 船东(2)",
+    "english": "shipowner",
+    "chinese": "船东",
     "frequency": 0,
     "rank": 999999
   },
@@ -105342,7 +105342,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "articolato",
     "dictionary": "adjective che possiede articolazioni flowing multifarious smooth (senso figurato) organizzato in un ",
-    "english": "articulated; articulated (2)",
+    "english": "articulated",
     "chinese": "说明; 第(2)条",
     "frequency": 0,
     "rank": 999999
@@ -105398,8 +105398,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "artritico",
     "dictionary": "adjective dell'artrite causato da artrite arthritic",
-    "english": "Arthritis; Arthritis (2)",
-    "chinese": "关节炎; 关节炎(2)",
+    "english": "Arthritis",
+    "chinese": "关节炎",
     "frequency": 0,
     "rank": 999999
   },
@@ -106182,7 +106182,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "assommare",
     "dictionary": "verb mettere insieme più cose, qualità etc. combine giungere ad un certo totale numerico amount",
-    "english": "assommare; (2)",
+    "english": "assommare",
     "chinese": "阿苏玛尔; (二)",
     "frequency": 0,
     "rank": 999999
@@ -106326,7 +106326,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "astato",
     "dictionary": "adjective (botanica) di organo laminare, con apice più o meno acuto e due lobi acuti e divergenti al",
-    "english": "State; (2)",
+    "english": "State",
     "chinese": "状态; (二)",
     "frequency": 0,
     "rank": 999999
@@ -106390,7 +106390,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "astioso",
     "dictionary": "adjective che è carico di astio hurtful malicious spiteful vindictive",
-    "english": "astioso; (2)",
+    "english": "astioso",
     "chinese": "阿斯蒂奥索; (二)",
     "frequency": 0,
     "rank": 999999
@@ -106494,8 +106494,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "astrofisico",
     "dictionary": "adjective che riguarda l'astrofisica astrophysical astrophysicist",
-    "english": "astrophysicist; astrophysics (2)",
-    "chinese": "天体物理学家; 天体物理学(2)",
+    "english": "astrophysicist; astrophysics",
+    "chinese": "天体物理学家; 天体物理学",
     "frequency": 0,
     "rank": 999999
   },
@@ -106662,7 +106662,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ateniese",
     "dictionary": "adjective (storia) (geografia) di Atene, relativo ad Atene Athenian",
-    "english": "Athenian; (2)",
+    "english": "Athenian",
     "chinese": "雅典语Name; (二)",
     "frequency": 0,
     "rank": 999999
@@ -107158,8 +107158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "audiovisivo",
     "dictionary": "adjective capace di produrre e riprodurre sia suoni che immagini audiovisual",
-    "english": "audiovisual; audiovisual (2)",
-    "chinese": "视听; 视听(2)",
+    "english": "audiovisual",
+    "chinese": "视听",
     "frequency": 0,
     "rank": 999999
   },
@@ -107174,8 +107174,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "auditorio",
     "dictionary": "adjective che è inerente all'udito auditorium auditory",
-    "english": "auditorium; auditorium (2)",
-    "chinese": "礼堂; 礼堂(2)",
+    "english": "auditorium",
+    "chinese": "礼堂",
     "frequency": 0,
     "rank": 999999
   },
@@ -107254,8 +107254,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ausiliare",
     "dictionary": "adjective (grammatica) che è di supporto, ad esempio nella coniugazione auxiliary",
-    "english": "auxiliary; Auxiliary (2)",
-    "chinese": "辅助; 辅助人员(2)",
+    "english": "auxiliary",
+    "chinese": "辅助; 辅助人员",
     "frequency": 0,
     "rank": 999999
   },
@@ -107374,8 +107374,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "autoadesivo",
     "dictionary": "adjective (chimica) di oggetto trattato con sostanze apposite, che gli permettono di aderire ad una ",
-    "english": "self-adhesive; self-adhesive (2)",
-    "chinese": "自我粘贴; 自粘性(2)",
+    "english": "self-adhesive",
+    "chinese": "自我粘贴; 自粘性",
     "frequency": 0,
     "rank": 999999
   },
@@ -108222,8 +108222,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "avverso",
     "dictionary": "adjective che ha una posizione contraria ed opposta enemy hostile inclement opposing rival unfavoura",
-    "english": "Adverse; Adverse (2)",
-    "chinese": "负面; 负面(2)",
+    "english": "Adverse",
+    "chinese": "负面",
     "frequency": 0,
     "rank": 999999
   },
@@ -108318,8 +108318,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "avvinazzato",
     "dictionary": "adjective di persona dedita all'uso eccessivo, e dunque all'abuso, continuo e prolungato di alcol, e",
-    "english": "screwed; screwdriver (2)",
-    "chinese": "妈的; 螺丝刀(2)",
+    "english": "screwed; screwdriver",
+    "chinese": "妈的; 螺丝刀",
     "frequency": 0,
     "rank": 999999
   },
@@ -108382,7 +108382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "avvolgibile",
     "dictionary": "adjective che si può avvolgere roll-up roller rolling",
-    "english": "winding; (2)",
+    "english": "winding",
     "chinese": "风向; (二)",
     "frequency": 0,
     "rank": 999999
@@ -108494,8 +108494,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "azteco",
     "dictionary": "adjective che si richiama a un popolo autoctono dell'America centrale, attualmente residente nel Mes",
-    "english": "azteco; (2); azteco (3)",
-    "chinese": "亚兹特科; (二); 亚兹特科(3)",
+    "english": "azteco",
+    "chinese": "亚兹特科; (二)",
     "frequency": 0,
     "rank": 999999
   },
@@ -108550,8 +108550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "babilonese",
     "dictionary": "adjective (storia) di abitante dell'antica Babilonia (matematica) che riguarda il sistema di numeraz",
-    "english": "Babylonian; Babylonian (2)",
-    "chinese": "巴比伦人; 巴比伦人(2)",
+    "english": "Babylonian",
+    "chinese": "巴比伦人",
     "frequency": 0,
     "rank": 999999
   },
@@ -108966,8 +108966,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "balsamico",
     "dictionary": "adjective attenuare l'intensità di una sensazione spiacevole (per estensione) ricca di aromi balsami",
-    "english": "balsamic; balsamic (2)",
-    "chinese": "沙发; 防腐剂(2)",
+    "english": "balsamic",
+    "chinese": "沙发; 防腐剂",
     "frequency": 0,
     "rank": 999999
   },
@@ -109454,16 +109454,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "barnabita",
     "dictionary": "adjective (religione), (cristianesimo) che riguarda l'ordine dei chierici regolari di San Paolo Barn",
-    "english": "barnabita; Barnabis (2)",
-    "chinese": "巴纳比塔; 巴纳比人(2)",
+    "english": "barnabita; Barnabis",
+    "chinese": "巴纳比塔; 巴纳比人",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "barocco",
     "dictionary": "adjective (arte) di stile artistico-letterario secentesco elaborate extravagant ornate",
-    "english": "Baroque; Baroque (2)",
-    "chinese": "巴洛克语Name; 巴洛克(2)",
+    "english": "Baroque",
+    "chinese": "巴洛克语Name; 巴洛克",
     "frequency": 0,
     "rank": 999999
   },
@@ -110262,8 +110262,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bengalese",
     "dictionary": "adjective che è nato o abita nel Bengala e nel Bangladesh Bangladeshi Bengali",
-    "english": "Bengal; Bengal (2); Bengal (3)",
-    "chinese": "孟加拉语; 孟加拉语(2); 孟加拉语(3)",
+    "english": "Bengal",
+    "chinese": "孟加拉语",
     "frequency": 0,
     "rank": 999999
   },
@@ -110310,7 +110310,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "beota",
     "dictionary": "adjective relativo alla Beozia Boeotian (spregiativo) da stupido Boeotian foolish idiot",
-    "english": "beota; (2)",
+    "english": "beota",
     "chinese": "比利时; (二)",
     "frequency": 0,
     "rank": 999999
@@ -110678,16 +110678,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "bielorusso",
     "dictionary": "adjective (geografia) attinente alla Bielorussia che vive o è nato in Bielorussia Belarusian Byeloru",
-    "english": "Belarusian; Belarusian (2); Belarusian (3)",
-    "chinese": "白俄罗斯语Name; 白俄罗斯(2); 白俄罗斯(3)",
+    "english": "Belarusian",
+    "chinese": "白俄罗斯语Name; 白俄罗斯",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "biennale",
     "dictionary": "adjective che si conserva per due anni two-year",
-    "english": "biennial; biennial (2)",
-    "chinese": "两年期; 两年期(2)",
+    "english": "biennial",
+    "chinese": "两年期",
     "frequency": 0,
     "rank": 999999
   },
@@ -110846,7 +110846,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "binomio",
     "dictionary": "adjective che è formato da due nomi couple pair",
-    "english": "binomy; (2)",
+    "english": "binomy",
     "chinese": "二进制; (二)",
     "frequency": 0,
     "rank": 999999
@@ -111342,8 +111342,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bipede",
     "dictionary": "adjective che possiede due piedi biped bipedal twofooted",
-    "english": "bipede; bipede (2)",
-    "chinese": "双脚; 双面体(2)",
+    "english": "bipede",
+    "chinese": "双脚; 双面体",
     "frequency": 0,
     "rank": 999999
   },
@@ -111694,8 +111694,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "bizantino",
     "dictionary": "adjective (senso figurato) cavilloso, pedantesco academic hair-splitting",
-    "english": "Byzantine; Byzantine (2)",
-    "chinese": "拜占庭语Name; 拜占庭语 (2)",
+    "english": "Byzantine",
+    "chinese": "拜占庭语Name; 拜占庭语",
     "frequency": 0,
     "rank": 999999
   },
@@ -112414,7 +112414,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "borbonico",
     "dictionary": "adjective (storia) che riguarda i Borboni, casata originaria della Francia, di cui alcuni membri fur",
-    "english": "Bourbon; (2)",
+    "english": "Bourbon",
     "chinese": "波旁语Name; (二)",
     "frequency": 0,
     "rank": 999999
@@ -112454,7 +112454,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bordolese",
     "dictionary": "noun residente od originario di Bordeaux Bordeaux",
-    "english": "Bordeaux; (2)",
+    "english": "Bordeaux",
     "chinese": "波尔多; (二)",
     "frequency": 0,
     "rank": 999999
@@ -112502,8 +112502,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "borgognone",
     "dictionary": "adjective relativo alla Borgogna Burgundian",
-    "english": "Burgundy; Burgundy (2)",
-    "chinese": "勃艮第; 勃艮第语(2)",
+    "english": "Burgundy",
+    "chinese": "勃艮第; 勃艮第语",
     "frequency": 0,
     "rank": 999999
   },
@@ -112694,7 +112694,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "bovino",
     "dictionary": "adjective (zoologia), (mammalogia) relativo a o derivato da buoi, mucche etc. bovine",
-    "english": "Bovine; (2)",
+    "english": "Bovine",
     "chinese": "鲍文; (二)",
     "frequency": 0,
     "rank": 999999
@@ -113614,7 +113614,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "burino",
     "dictionary": "adjective che è cafone boorish loutish",
-    "english": "♪; (2)",
+    "english": "♪",
     "chinese": "(待修复); (二)",
     "frequency": 0,
     "rank": 999999
@@ -113774,8 +113774,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cabardino",
     "dictionary": "adjective (geografia) detto di cosa o persona appartenente alla popolazione caucasica dei Cabardini ",
-    "english": "cabardino; barbeque (2)",
-    "chinese": "卡巴尔迪诺; 烧烤(2)",
+    "english": "cabardino; barbeque",
+    "chinese": "卡巴尔迪诺; 烧烤",
     "frequency": 0,
     "rank": 999999
   },
@@ -114118,7 +114118,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "calabrese",
     "dictionary": "adjective della Calabria Calabrian",
-    "english": "Calabrian; (2)",
+    "english": "Calabrian",
     "chinese": "卡拉布里亚语Name; (二)",
     "frequency": 0,
     "rank": 999999
@@ -114199,7 +114199,7 @@ const VOCABULARY_DATA = [
     "italian": "calcareo",
     "dictionary": "adjective (geologia) (chimica) (mineralogia) relativo o costruito in calcare o carbona",
     "english": "limestone",
-    "chinese": "石灰岩 石灰岩",
+    "chinese": "石灰岩",
     "frequency": 0,
     "rank": 999999
   },
@@ -114390,8 +114390,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "callifugo",
     "dictionary": "adjective di prodotto utilizzato per rimuovere i calli dei piedi corn",
-    "english": "callifugo; callifuge (2)",
-    "chinese": "卡利福戈语Name; 调频器(2)",
+    "english": "callifugo; callifuge",
+    "chinese": "卡利福戈语Name; 调频器",
     "frequency": 0,
     "rank": 999999
   },
@@ -114510,8 +114510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "calzare",
     "dictionary": "noun (abbigliamento) una sorta di spessa calza in neoprene utilizzata per proteggere il piede dal fr",
-    "english": "footwear; shoes (2)",
-    "chinese": "鞋类; 鞋子(2)",
+    "english": "footwear; shoes",
+    "chinese": "鞋类; 鞋子",
     "frequency": 0,
     "rank": 999999
   },
@@ -114550,8 +114550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cambogiano",
     "dictionary": "adjective (geografia) della Cambogia Cambodian",
-    "english": "Cambodia; Cambodia (2); Cambodia (3)",
-    "chinese": "柬埔寨; 柬埔寨(2); 柬埔寨(3)",
+    "english": "Cambodia",
+    "chinese": "柬埔寨",
     "frequency": 0,
     "rank": 999999
   },
@@ -114638,8 +114638,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "camoscio",
     "dictionary": "adjective camuso chamois",
-    "english": "chamois; Camouflaged (2)",
-    "chinese": "莎莫依丝; 熔炉(2)",
+    "english": "chamois; Camouflaged",
+    "chinese": "莎莫依丝; 熔炉",
     "frequency": 0,
     "rank": 999999
   },
@@ -115014,8 +115014,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "canonico",
     "dictionary": "adjective (filosofia) (arte) che rientra in un canone canonical",
-    "english": "canon; canon (2)",
-    "chinese": "弹; 罐头(2)",
+    "english": "canon",
+    "chinese": "弹; 罐头",
     "frequency": 0,
     "rank": 999999
   },
@@ -115422,8 +115422,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "capitolare",
     "dictionary": "adjective relativo ad un capitolo di religiosi capitular chapter",
-    "english": "capitulate; Chapter (2)",
-    "chinese": "缩放; 第2章 第2章 第2节",
+    "english": "capitulate; Chapter",
+    "chinese": "缩放; 第2章 第2节",
     "frequency": 0,
     "rank": 999999
   },
@@ -115774,8 +115774,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "carbonaro",
     "dictionary": "adjective (storia) (politica) relativo alla società segreta della carboneria Carbonaro",
-    "english": "coal; coal (2)",
-    "chinese": "煤炭; 煤炭(2)",
+    "english": "coal",
+    "chinese": "煤炭",
     "frequency": 0,
     "rank": 999999
   },
@@ -116062,8 +116062,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cardiopatico",
     "dictionary": "adjective (medicina) che soffre di cuore cardiopath cardiopathic",
-    "english": "cardiopathic; cardiopathic (2)",
-    "chinese": "心脏病; 心血管疾病(2)",
+    "english": "cardiopathic",
+    "chinese": "心脏病; 心血管疾病",
     "frequency": 0,
     "rank": 999999
   },
@@ -116094,8 +116094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cardiotonico",
     "dictionary": "adjective (farmacologia) che aumenta la forza di contrazione del cuore cardiotonic",
-    "english": "cardiotonic; Cardiac (2)",
-    "chinese": "心电图; 心脏病(2)",
+    "english": "cardiotonic; Cardiac",
+    "chinese": "心电图; 心脏病",
     "frequency": 0,
     "rank": 999999
   },
@@ -116735,7 +116735,7 @@ const VOCABULARY_DATA = [
     "italian": "caseggiato",
     "dictionary": "noun apartment building group of houses",
     "english": "cottage cheese",
-    "chinese": "奶酪奶酪",
+    "chinese": "奶酪",
     "frequency": 0,
     "rank": 999999
   },
@@ -117214,7 +117214,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cattedratico",
     "dictionary": "adjective (scuola) che riguarda una cattedra pedantic professorial",
-    "english": "cathedral; (2)",
+    "english": "cathedral",
     "chinese": "大教堂; (二)",
     "frequency": 0,
     "rank": 999999
@@ -117415,7 +117415,7 @@ const VOCABULARY_DATA = [
     "italian": "cazzeggio",
     "dictionary": "noun (gergale), (volgare) dedizione ad attività e discorsi inutili fooling around",
     "english": "cocks",
-    "chinese": "鸡鸡",
+    "chinese": "鸡",
     "frequency": 0,
     "rank": 999999
   },
@@ -118102,7 +118102,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "certosino",
     "dictionary": "adjective (religione) (cristianesimo)inerente all'ordine religioso fondato da san Brunone painstakin",
-    "english": "Of course; (2)",
+    "english": "Of course",
     "chinese": "当然; (二)",
     "frequency": 0,
     "rank": 999999
@@ -118206,7 +118206,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Cesena",
     "dictionary": "pronoun Cesena",
-    "english": "Cesena; cesena",
+    "english": "Cesena",
     "chinese": "塞塞纳",
     "frequency": 0,
     "rank": 999999
@@ -118318,8 +118318,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cha cha cha",
     "dictionary": "noun (danza) ballo da sala in quattro-quattro volte cha-cha",
-    "english": "cha cha cha cha",
-    "chinese": "cha  cha",
+    "english": "cha",
+    "chinese": "cha",
     "frequency": 0,
     "rank": 999999
   },
@@ -118871,7 +118871,7 @@ const VOCABULARY_DATA = [
     "italian": "chiomato",
     "dictionary": "adjective (araldica) crinito leafy long-haired",
     "english": "nailed",
-    "chinese": "钉钉",
+    "chinese": "钉",
     "frequency": 0,
     "rank": 999999
   },
@@ -119206,8 +119206,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ciclico",
     "dictionary": "adjective (chimica) (chimica organica) di composto formato da atomi sono disposti ad anello cyclic",
-    "english": "cyclical; cyclic (2)",
-    "chinese": "周期性; 自行车(2)",
+    "english": "cyclical; cyclic",
+    "chinese": "周期性; 自行车",
     "frequency": 0,
     "rank": 999999
   },
@@ -119326,8 +119326,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cilena",
     "dictionary": "adjective femminile di cileno (geografia) che riguarda il Cile Chilean",
-    "english": "Chile; Chile (2)",
-    "chinese": "地址; 智利(2)",
+    "english": "Chile",
+    "chinese": "地址; 智利",
     "frequency": 0,
     "rank": 999999
   },
@@ -119438,8 +119438,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cinerario",
     "dictionary": "adjective che serve a raccogliere cenere cinerary",
-    "english": "cinerary; Cineral (2)",
-    "chinese": "阴茎; 线粒体(2)",
+    "english": "cinerary; Cineral",
+    "chinese": "阴茎; 线粒体",
     "frequency": 0,
     "rank": 999999
   },
@@ -119534,8 +119534,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cinocefalo",
     "dictionary": "adjective (letterario) che ha testa simile a quella di un cane cynocephalous dog-headed",
-    "english": "Cynocephalus; cynocephalus (2)",
-    "chinese": "锡诺塞帕卢斯; 氯乙二醇(2)",
+    "english": "Cynocephalus",
+    "chinese": "锡诺塞帕卢斯; 氯乙二醇",
     "frequency": 0,
     "rank": 999999
   },
@@ -119630,7 +119630,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cinto",
     "dictionary": "adjective (araldica) attributo araldico che si applica alla figura posta al centro di un gruppo di a",
-    "english": "Citizen; (2)",
+    "english": "Citizen",
     "chinese": "公民; (二)",
     "frequency": 0,
     "rank": 999999
@@ -120582,7 +120582,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "climatizzazione",
     "dictionary": "noun air-conditioning",
-    "english": "air conditioning air conditioning",
+    "english": "air conditioning",
     "chinese": "空调",
     "frequency": 0,
     "rank": 999999
@@ -120806,8 +120806,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "coagulante",
     "dictionary": "adjective che favorisce la coagulazione del sangue coagulant",
-    "english": "Coagulating; coagulatory (2)",
-    "chinese": "凝结; 焦距 (2)",
+    "english": "Coagulating; coagulatory",
+    "chinese": "凝结; 焦距",
     "frequency": 0,
     "rank": 999999
   },
@@ -120854,8 +120854,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "coatto",
     "dictionary": "adjective che viene imposto per obbligo da un'autorità giudiziaria, di solito in forma di misura pen",
-    "english": "forced; coat (2)",
-    "chinese": "强制; 涂层(2)",
+    "english": "forced; coat",
+    "chinese": "强制; 涂层",
     "frequency": 0,
     "rank": 999999
   },
@@ -121158,7 +121158,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "coibente",
     "dictionary": "adjective (fisica) (tecnologia) (ingegneria) (di) sostanza che conduce male il suono, il calore e l'",
-    "english": "insulating; (2)",
+    "english": "insulating",
     "chinese": "绝缘; (二)",
     "frequency": 0,
     "rank": 999999
@@ -121534,8 +121534,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "colonialista",
     "dictionary": "adjective (storia) (politica) (economia) colonialist colonialistic",
-    "english": "colonialist; Colonial (2)",
-    "chinese": "殖民主义者; 殖民地(2)",
+    "english": "colonialist; Colonial",
+    "chinese": "殖民主义者; 殖民地",
     "frequency": 0,
     "rank": 999999
   },
@@ -121574,16 +121574,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "colonizzatore",
     "dictionary": "adjective che fonda colonie in un territorio colonizing",
-    "english": "colonizer; colonizer (2)",
-    "chinese": "殖民者; 殖民者(2)",
+    "english": "colonizer",
+    "chinese": "殖民者",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "colonizzatori",
     "dictionary": "adjective che fondano colonie in un territorio colonizing",
-    "english": "colonizers; Farmers (2)",
-    "chinese": "殖民者; 农民(2)",
+    "english": "colonizers; Farmers",
+    "chinese": "殖民者; 农民",
     "frequency": 0,
     "rank": 999999
   },
@@ -123158,8 +123158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "confinante",
     "dictionary": "adjective (geografia) di persona di un altro territorio (o abitazione) ma con una parte del confine ",
-    "english": "bordering; border (2)",
-    "chinese": "边框; 边界(2)",
+    "english": "bordering; border",
+    "chinese": "边框; 边界",
     "frequency": 0,
     "rank": 999999
   },
@@ -123510,8 +123510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "coniugato",
     "dictionary": "adjective che ha contratto matrimonio con un'altra persona married",
-    "english": "conjugated; conjugated (2)",
-    "chinese": "组合; 组合(2)",
+    "english": "conjugated",
+    "chinese": "组合",
     "frequency": 0,
     "rank": 999999
   },
@@ -123542,7 +123542,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "connazionale",
     "dictionary": "adjective che è della stessa nazione compatriot",
-    "english": "compatriot; (2)",
+    "english": "compatriot",
     "chinese": "共和国公民; (二)",
     "frequency": 0,
     "rank": 999999
@@ -123662,7 +123662,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "conoscitore",
     "dictionary": "adjective che se ne intende connoisseur expert",
-    "english": "knower; (2)",
+    "english": "knower",
     "chinese": "识者; (二)",
     "frequency": 0,
     "rank": 999999
@@ -123702,8 +123702,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "consanguineo",
     "dictionary": "adjective di persona che è legata ad altre da vincolo di sangue, avendo quindi con esse un rapporto ",
-    "english": "consanguina; consanguina (2)",
-    "chinese": "婚纱; 婚纱(2)",
+    "english": "consanguina",
+    "chinese": "婚纱",
     "frequency": 0,
     "rank": 999999
   },
@@ -123830,16 +123830,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "consolidato",
     "dictionary": "adjective (senso figurato) consolidated firm reinforced strengthened",
-    "english": "consolidated; Consolidated (2)",
-    "chinese": "合并数; 合并(2)",
+    "english": "consolidated",
+    "chinese": "合并数; 合并",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "consonante",
     "dictionary": "adjective che si pronuncia \"con altro suono\" in regola consonant",
-    "english": "consonant; consonant (2)",
-    "chinese": "对齐; 一致(2)",
+    "english": "consonant",
+    "chinese": "对齐; 一致",
     "frequency": 0,
     "rank": 999999
   },
@@ -124014,8 +124014,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "contenzioso",
     "dictionary": "adjective (diritto) inerente ad una controversia confrontational contentious controversy disagreemen",
-    "english": "litigation; litigation (2)",
-    "chinese": "诉讼; 诉讼(2)",
+    "english": "litigation",
+    "chinese": "诉讼",
     "frequency": 0,
     "rank": 999999
   },
@@ -124894,8 +124894,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "convivente",
     "dictionary": "adjective che convive, che vive insieme ad altri cohabitating",
-    "english": "convivise; convise (2)",
-    "chinese": "调和; 视线(2)",
+    "english": "convivise; convise",
+    "chinese": "调和; 视线",
     "frequency": 0,
     "rank": 999999
   },
@@ -125190,8 +125190,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cordless",
     "dictionary": "adjective (forestierismo), (elettronica), (tecnologia), (ingegneria) di telefono senza fili per uso ",
-    "english": "cordless; cordless (2)",
-    "chinese": "无绳; 无绳(2)",
+    "english": "cordless",
+    "chinese": "无绳",
     "frequency": 0,
     "rank": 999999
   },
@@ -125518,7 +125518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "corrispettivo",
     "dictionary": "adjective (diritto) che viene offerto in cambio di quello che si ottiene equivalent",
-    "english": "consideration; (2)",
+    "english": "consideration",
     "chinese": "审议; (二)",
     "frequency": 0,
     "rank": 999999
@@ -125550,8 +125550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "corrosione",
     "dictionary": "noun corrosion",
-    "english": "corrosion corrosion corrosion",
-    "chinese": "腐蚀腐蚀",
+    "english": "corrosion",
+    "chinese": "腐蚀",
     "frequency": 0,
     "rank": 999999
   },
@@ -125790,7 +125790,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cosentino",
     "dictionary": "adjective (geografia) di Cosenza Cosenzian",
-    "english": "That's right.; (2)",
+    "english": "That's right.",
     "chinese": "没错; (二)",
     "frequency": 0,
     "rank": 999999
@@ -126086,7 +126086,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "costrutto",
     "dictionary": "noun (grammatica) struttura sintattica construct construction meaning sense",
-    "english": "construction; (2)",
+    "english": "construction",
     "chinese": "建筑业; (二)",
     "frequency": 0,
     "rank": 999999
@@ -126414,8 +126414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "creolo",
     "dictionary": "adjective in America Latina, che è nato da genitori non indigeni Creole detto di persona meticcia, n",
-    "english": "creole; crevice (2); crevice (3)",
-    "chinese": "克里奥尔; 缝隙(2); 缝隙(3)",
+    "english": "creole; crevice",
+    "chinese": "克里奥尔; 缝隙",
     "frequency": 0,
     "rank": 999999
   },
@@ -126462,8 +126462,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "crepuscolare",
     "dictionary": "adjective (astronomia) relativo al crepuscolo crepuscular twilight",
-    "english": "Twilight; twilight (2)",
-    "chinese": "wi; light(2)",
+    "english": "Twilight",
+    "chinese": "wi; light",
     "frequency": 0,
     "rank": 999999
   },
@@ -126558,7 +126558,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "cretaceo",
     "dictionary": "adjective che è formato di creta chalky clayey cretaceous",
-    "english": "cracked; (2)",
+    "english": "cracked",
     "chinese": "崩溃; (二)",
     "frequency": 0,
     "rank": 999999
@@ -126718,8 +126718,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "cristadelfiano",
     "dictionary": "adjective (religione) relativo al cristadelfianesimo Christadelphian",
-    "english": "cristadelfia; cristadelfia (2)",
-    "chinese": "Cristadelfia (英语).; cristadelfia( 缩写) (2)",
+    "english": "cristadelfia",
+    "chinese": "Cristadelfia (英语).; cristadelfia( 缩写)",
     "frequency": 0,
     "rank": 999999
   },
@@ -127863,7 +127863,7 @@ const VOCABULARY_DATA = [
     "italian": "cuscus",
     "dictionary": "noun couscous",
     "english": "Cuscus",
-    "chinese": "库斯库斯",
+    "chinese": "库斯",
     "frequency": 0,
     "rank": 999999
   },
@@ -127950,7 +127950,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dadaista",
     "dictionary": "adjective (letteratura) (arte) che aderisce al dadaismo Dadaist Dadaistic",
-    "english": "Dadalist; (2)",
+    "english": "Dadalist",
     "chinese": "达达利主义者; (二)",
     "frequency": 0,
     "rank": 999999
@@ -128022,8 +128022,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dalmata",
     "dictionary": "adjective relativo alla Dalmazia Dalmatian",
-    "english": "Dalmatian; Dalmatian (2); Dalmatian (3)",
-    "chinese": "达尔马提亚语Name; 达尔马提亚语(2); 达尔马提亚语(3)",
+    "english": "Dalmatian",
+    "chinese": "达尔马提亚语Name; 达尔马提亚语",
     "frequency": 0,
     "rank": 999999
   },
@@ -128262,7 +128262,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "deambulatorio",
     "dictionary": "adjective (fisiologia) deambulatory",
-    "english": "deambulatory; (2)",
+    "english": "deambulatory",
     "chinese": "断层; (二)",
     "frequency": 0,
     "rank": 999999
@@ -128727,7 +128727,7 @@ const VOCABULARY_DATA = [
     "italian": "decorativo",
     "dictionary": "adjective (arte) (tecnologia) (architettura) che riguarda la decorazione decorative",
     "english": "decorative decoration",
-    "chinese": "装饰装饰",
+    "chinese": "装饰",
     "frequency": 0,
     "rank": 999999
   },
@@ -128742,7 +128742,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "decorso",
     "dictionary": "adjective (raro), (obsoleto) trascorso, passato gone by past",
-    "english": "Article; (2)",
+    "english": "Article",
     "chinese": "条款; (二)",
     "frequency": 0,
     "rank": 999999
@@ -129382,8 +129382,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "deltoide",
     "dictionary": "adjective (botanica) a forma di un rombo ma con i lati inferiori corti, tale da apparire triangolare",
-    "english": "deltoid; deltoid (2)",
-    "chinese": "三角形; 三角体(2)",
+    "english": "deltoid",
+    "chinese": "三角形; 三角体",
     "frequency": 0,
     "rank": 999999
   },
@@ -131726,7 +131726,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dilettevole",
     "dictionary": "adjective che procura diletto charming delightful pleasant",
-    "english": "literal; (2)",
+    "english": "literal",
     "chinese": "字义; (二)",
     "frequency": 0,
     "rank": 999999
@@ -132062,8 +132062,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "diradare",
     "dictionary": "verb rendere qualcosa meno fitto o spesso fare una cosa con una frequenza minore della solita render",
-    "english": "dirading; dirading (2)",
-    "chinese": "斜线; 斜线(2)",
+    "english": "dirading",
+    "chinese": "斜线",
     "frequency": 0,
     "rank": 999999
   },
@@ -132918,8 +132918,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "discriminante",
     "dictionary": "adjective che discerne discriminant discriminating",
-    "english": "discriminatory; discriminatory (2)",
-    "chinese": "歧视; 歧视(2)",
+    "english": "discriminatory",
+    "chinese": "歧视",
     "frequency": 0,
     "rank": 999999
   },
@@ -132934,7 +132934,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "discriminato",
     "dictionary": "adjective che è oggetto di disparità di trattamento discriminated",
-    "english": "discrimination; (2)",
+    "english": "discrimination",
     "chinese": "歧视; (二)",
     "frequency": 0,
     "rank": 999999
@@ -133030,8 +133030,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "diseredato",
     "dictionary": "adjective che è escluso dall'eredità disinherited disowned",
-    "english": "disinherited; disinherited (2)",
-    "chinese": "继承; 丧失继承权(2)",
+    "english": "disinherited",
+    "chinese": "继承; 丧失继承权",
     "frequency": 0,
     "rank": 999999
   },
@@ -133542,8 +133542,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dissestato",
     "dictionary": "adjective che non ha solidità (senso figurato) dismal ruined",
-    "english": "Disaster; Disaster (2)",
-    "chinese": "灾害; 灾害(2)",
+    "english": "Disaster",
+    "chinese": "灾害",
     "frequency": 0,
     "rank": 999999
   },
@@ -133559,7 +133559,7 @@ const VOCABULARY_DATA = [
     "italian": "dissetante",
     "dictionary": "adjective refreshing thirst-quenching",
     "english": "quenching",
-    "chinese": "泻泻",
+    "chinese": "泻",
     "frequency": 0,
     "rank": 999999
   },
@@ -133582,8 +133582,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dissimulatore",
     "dictionary": "adjective che dissimula dissembling",
-    "english": "dissimulator; Dissimulator (2)",
-    "chinese": "解码器; 分解器(2)",
+    "english": "dissimulator",
+    "chinese": "解码器; 分解器",
     "frequency": 0,
     "rank": 999999
   },
@@ -133726,7 +133726,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "distico",
     "dictionary": "adjective (metrica) formato da due versi couplet distich",
-    "english": "disability; (2)",
+    "english": "disability",
     "chinese": "残疾; (二)",
     "frequency": 0,
     "rank": 999999
@@ -133966,8 +133966,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "divergente",
     "dictionary": "adjective che si divide differing divergent (senso figurato) differing",
-    "english": "divergent; Diverging (2)",
-    "chinese": "差异; 差异(2)",
+    "english": "divergent; Diverging",
+    "chinese": "差异",
     "frequency": 0,
     "rank": 999999
   },
@@ -134046,8 +134046,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "divinatore",
     "dictionary": "adjective (raro) (letterario) che predice il futuro divining",
-    "english": "diviner; divinity (2)",
-    "chinese": "守护者; 占卜量(2)",
+    "english": "diviner; divinity",
+    "chinese": "守护者; 占卜量",
     "frequency": 0,
     "rank": 999999
   },
@@ -134198,7 +134198,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dock",
     "dictionary": "noun dock",
-    "english": "dock dock",
+    "english": "dock",
     "chinese": "码头",
     "frequency": 0,
     "rank": 999999
@@ -134238,8 +134238,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "dogmatico",
     "dictionary": "adjective che rispetta un dogma dogmatic",
-    "english": "dogmatic; Customs (2)",
-    "chinese": "教条; 海关(2)",
+    "english": "dogmatic; Customs",
+    "chinese": "教条; 海关",
     "frequency": 0,
     "rank": 999999
   },
@@ -134550,7 +134550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "dorico",
     "dictionary": "adjective (arte) (architettura)relativo ad uno dei tre ordini architettonici principali dell'età cla",
-    "english": "Doric; (2)",
+    "english": "Doric",
     "chinese": "多里克语Name; (二)",
     "frequency": 0,
     "rank": 999999
@@ -134878,7 +134878,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "décolleté",
     "dictionary": "adjective (forestierismo), (abbigliamento), (moda) di abito o scarpa caratterizzati da una profonda ",
-    "english": "décolleté; (2)",
+    "english": "décolleté",
     "chinese": "贝科莱特; (二)",
     "frequency": 0,
     "rank": 999999
@@ -134974,7 +134974,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "eccelso",
     "dictionary": "adjective superiore ad altri per meriti, qualità exalted excellent exceptional high lofty outstandin",
-    "english": "excels; (2)",
+    "english": "excels",
     "chinese": "高级; (二)",
     "frequency": 0,
     "rank": 999999
@@ -135518,7 +135518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "edulcorante",
     "dictionary": "adjective (gastronomia) di sostanza in grado di conferire sapore dolce al cibo sweetener sweetening",
-    "english": "Edible; (2)",
+    "english": "Edible",
     "chinese": "易食性; (二)",
     "frequency": 0,
     "rank": 999999
@@ -135646,8 +135646,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "effimero",
     "dictionary": "adjective che dura solamente un giorno ephemeral short-lived passing transient transitory (senso fig",
-    "english": "ephemeral; ephemeral (2)",
-    "chinese": "麻风; 麻黄(2)",
+    "english": "ephemeral",
+    "chinese": "麻风; 麻黄",
     "frequency": 0,
     "rank": 999999
   },
@@ -135982,7 +135982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "elettro",
     "dictionary": "noun electrum",
-    "english": "electro electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electro",
+    "english": "electro electrode electro",
     "chinese": "电子电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极电极",
     "frequency": 0,
     "rank": 999999
@@ -136342,8 +136342,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "elettromotore",
     "dictionary": "adjective (fisica) in grado di far muovere cariche elettriche electromotive",
-    "english": "Electromotor; electromotor (2)",
-    "chinese": "电动车; 电动车(2)",
+    "english": "Electromotor",
+    "chinese": "电动车",
     "frequency": 0,
     "rank": 999999
   },
@@ -137118,8 +137118,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "emofiliaco",
     "dictionary": "adjective (biologia), (medicina) che riguarda l'emofilia (biologia), (medicina) di persona, che soff",
-    "english": "hemophiliacs; emophilia (2)",
-    "chinese": "血友病; 恋童癖(2)",
+    "english": "hemophiliacs; emophilia",
+    "chinese": "血友病; 恋童癖",
     "frequency": 0,
     "rank": 999999
   },
@@ -137134,8 +137134,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "emolliente",
     "dictionary": "adjective atto a rammollire, rilassare, dolcificare,i tessuti dissipandone gli indurimenti patologic",
-    "english": "Emollient; Emollient (2)",
-    "chinese": "情绪; 情绪(2)",
+    "english": "Emollient",
+    "chinese": "情绪",
     "frequency": 0,
     "rank": 999999
   },
@@ -137230,8 +137230,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "empireo",
     "dictionary": "adjective (religione) nella teologia del medioevo decimo e ultimo cielo, dove vivono sia Dio sia i b",
-    "english": "empire; Empire (2)",
-    "chinese": "帝国; 帝国(2)",
+    "english": "empire",
+    "chinese": "帝国",
     "frequency": 0,
     "rank": 999999
   },
@@ -137382,8 +137382,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "endecasillabo",
     "dictionary": "adjective (metrica) di verso in cui l'accento principale cade sulla decima sillaba. Se l'ultima paro",
-    "english": "endecasillabo; endecasillabo (2)",
-    "chinese": "内卡西拉波语; 内卡西拉博(2)",
+    "english": "endecasillabo",
+    "chinese": "内卡西拉波语; 内卡西拉博",
     "frequency": 0,
     "rank": 999999
   },
@@ -138094,8 +138094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "epicureo",
     "dictionary": "adjective (filosofia) di Epicuro epicure epicurean",
-    "english": "epicurethane; epicurea (2)",
-    "chinese": "乙烷; 外观(2)",
+    "english": "epicurethane; epicurea",
+    "chinese": "乙烷; 外观",
     "frequency": 0,
     "rank": 999999
   },
@@ -138350,8 +138350,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "eponimo",
     "dictionary": "adjective che dà il nome a un periodo storico, a una città, a un popolo eponym eponymous",
-    "english": "eponymous; eponymous (2)",
-    "chinese": "单词; 单词(2)",
+    "english": "eponymous",
+    "chinese": "单词",
     "frequency": 0,
     "rank": 999999
   },
@@ -138550,8 +138550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "equino",
     "dictionary": "adjective relativo ai cavalli di cavallo equine horse horse-like",
-    "english": "Equine; equinox (2)",
-    "chinese": "精华; 等离子体 (2)",
+    "english": "Equine; equinox",
+    "chinese": "精华; 等离子体",
     "frequency": 0,
     "rank": 999999
   },
@@ -138654,8 +138654,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "erbicida",
     "dictionary": "adjective (chimica) (agricoltura)che distrugge le erbacce herbicidal",
-    "english": "herbicide; herbicide (2)",
-    "chinese": "除草剂; 杀草剂(2)",
+    "english": "herbicide",
+    "chinese": "除草剂; 杀草剂",
     "frequency": 0,
     "rank": 999999
   },
@@ -138870,8 +138870,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ermafrodito",
     "dictionary": "adjective (sessualità) di individuo o vegetale che presenta i caratteri di entrambi i sessi hermaphr",
-    "english": "hermaphrodite; hermaphrodite (2)",
-    "chinese": "草药; 草药(2)",
+    "english": "hermaphrodite",
+    "chinese": "草药",
     "frequency": 0,
     "rank": 999999
   },
@@ -139054,7 +139054,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "erudito",
     "dictionary": "adjective (filosofia) che possiede una notevole quantità di cognizioni erudite scholar",
-    "english": "erudi; (2)",
+    "english": "erudi",
     "chinese": "埃鲁迪; (二)",
     "frequency": 0,
     "rank": 999999
@@ -139550,8 +139550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "esitante",
     "dictionary": "adjective che esita doubtful hesitant irresolute tentative uncertain",
-    "english": "hesitant; hesitant (2)",
-    "chinese": "犹豫; 犹豫(2)",
+    "english": "hesitant",
+    "chinese": "犹豫",
     "frequency": 0,
     "rank": 999999
   },
@@ -139638,7 +139638,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "esordiente",
     "dictionary": "adjective che fa una prima apparizione beginner debuting",
-    "english": "Esordio; (2)",
+    "english": "Esordio",
     "chinese": "埃索迪奥; (二)",
     "frequency": 0,
     "rank": 999999
@@ -140006,8 +140006,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "estensore",
     "dictionary": "adjective che estende extension",
-    "english": "extender; Extensive (2)",
-    "chinese": "扩展器; 广泛(2)",
+    "english": "extender; Extensive",
+    "chinese": "扩展器; 广泛",
     "frequency": 0,
     "rank": 999999
   },
@@ -140406,8 +140406,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "eterozigote",
     "dictionary": "adjective (biologia) di individuo portatore di una coppia di alleli diversi per un solo carattere er",
-    "english": "heterozygous; heterozygous (2)",
-    "chinese": "异音调; 异氮化物(2)",
+    "english": "heterozygous",
+    "chinese": "异音调; 异氮化物",
     "frequency": 0,
     "rank": 999999
   },
@@ -140550,8 +140550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "etiopico",
     "dictionary": "adjective (geografia) dell'Etiopia Ethiopian",
-    "english": "Ethiopian; (2); ethiopic (3)",
-    "chinese": "埃塞俄比亚; (二); 乙型六氯环己烷(3)",
+    "english": "Ethiopian; ethiopic",
+    "chinese": "埃塞俄比亚; (二); 乙型六氯环己烷",
     "frequency": 0,
     "rank": 999999
   },
@@ -140686,8 +140686,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "etrusco",
     "dictionary": "adjective (storia) che riguarda gli Etruschi, antica popolazione di lingua pre-indoeuropea del centr",
-    "english": "Etruscan; etruder (2); etruder (3)",
-    "chinese": "伊特鲁里亚语Name; 摄像头(2); 风化器(3)",
+    "english": "Etruscan; etruder",
+    "chinese": "伊特鲁里亚语Name; 摄像头; 风化器",
     "frequency": 0,
     "rank": 999999
   },
@@ -140718,7 +140718,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ette",
     "dictionary": "noun nothing",
-    "english": "et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et",
+    "english": "et",
     "chinese": "et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et( et) et.",
     "frequency": 0,
     "rank": 999999
@@ -141158,8 +141158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "extracomunitario",
     "dictionary": "adjective (diritto) che non appartiene all'Unione Europea non-EU non-European",
-    "english": "extra-Community; Community (2)",
-    "chinese": "社区外; 社区(2)",
+    "english": "extra-Community; Community",
+    "chinese": "社区外; 社区",
     "frequency": 0,
     "rank": 999999
   },
@@ -141254,8 +141254,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "facinoroso",
     "dictionary": "adjective che è incline alla violenza e alla ribellione, turbolento violent",
-    "english": "phenol; hanger (2)",
-    "chinese": "酚; 吊车(2)",
+    "english": "phenol; hanger",
+    "chinese": "酚; 吊车",
     "frequency": 0,
     "rank": 999999
   },
@@ -141358,8 +141358,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "falcata",
     "dictionary": "adjective femminile di falcato (araldica) femminile di falcato curvet (botanica) femminile di falcat",
-    "english": "falcon; Waterfall (2)",
-    "chinese": "猎鹰; 瀑布(2)",
+    "english": "falcon; Waterfall",
+    "chinese": "猎鹰; 瀑布",
     "frequency": 0,
     "rank": 999999
   },
@@ -142039,7 +142039,7 @@ const VOCABULARY_DATA = [
     "italian": "fasciato-bandato",
     "dictionary": "adjective (araldica) ripartizione che si ottiene componendo un bandato con un fasciato: il risultato",
     "english": "banded-banded",
-    "chinese": "带宽带宽",
+    "chinese": "带宽",
     "frequency": 0,
     "rank": 999999
   },
@@ -142318,7 +142318,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fazioso",
     "dictionary": "adjective (spregiativo) che appoggia e difende apertamente una causa, anche in modo acritico, senza ",
-    "english": "delicious; (2)",
+    "english": "delicious",
     "chinese": "不错; (二)",
     "frequency": 0,
     "rank": 999999
@@ -142414,8 +142414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "federalista",
     "dictionary": "adjective (storia) (politica) (diritto) relativo al federalismo federalist",
-    "english": "Federalist; Federalist (2)",
-    "chinese": "联邦主义者; 联邦主义者(2)",
+    "english": "Federalist",
+    "chinese": "联邦主义者",
     "frequency": 0,
     "rank": 999999
   },
@@ -142438,7 +142438,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "fedifrago",
     "dictionary": "adjective (letterario) di persona che non sta ai patti o non mantiene la promessa fatta faithless",
-    "english": "fedifrago; (2)",
+    "english": "fedifrago",
     "chinese": "联邦; (二)",
     "frequency": 0,
     "rank": 999999
@@ -142542,8 +142542,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fenicio",
     "dictionary": "adjective (storia) che riguarda i Fenici, antica popolazione del mar Mediterraneo orientale, situata",
-    "english": "Phoenician; Phoenician (2)",
-    "chinese": "腓尼基人; 腓尼基语 (2)",
+    "english": "Phoenician",
+    "chinese": "腓尼基人; 腓尼基语",
     "frequency": 0,
     "rank": 999999
   },
@@ -142854,7 +142854,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ferro da stiro",
     "dictionary": "noun iron",
-    "english": "Iron Iron",
+    "english": "Iron",
     "chinese": "铁",
     "frequency": 0,
     "rank": 999999
@@ -143438,8 +143438,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "filisteo",
     "dictionary": "adjective (spregiativo) conformista, dalle idee molto ristrette Philistine philistine",
-    "english": "Philistine; Philistine (2)",
-    "chinese": "菲利士丁语; 菲利士丁(2)",
+    "english": "Philistine",
+    "chinese": "菲利士丁语; 菲利士丁",
     "frequency": 0,
     "rank": 999999
   },
@@ -144102,8 +144102,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fisiocratico",
     "dictionary": "adjective (storia) (economia) che riguarda la fisiocrazia physiocratic",
-    "english": "physiocratic; physiocratic (2)",
-    "chinese": "生理学; 生理学(2)",
+    "english": "physiocratic",
+    "chinese": "生理学",
     "frequency": 0,
     "rank": 999999
   },
@@ -144990,7 +144990,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "foriero",
     "dictionary": "adjective che precede, prevede, preannuncia qualcosa harbinger",
-    "english": "drilling; (2)",
+    "english": "drilling",
     "chinese": "钻探; (二)",
     "frequency": 0,
     "rank": 999999
@@ -145030,8 +145030,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "formatore",
     "dictionary": "adjective che forma educator",
-    "english": "trainer; trainer (2)",
-    "chinese": "教练员; 教练员(2)",
+    "english": "trainer",
+    "chinese": "教练员",
     "frequency": 0,
     "rank": 999999
   },
@@ -145743,7 +145743,7 @@ const VOCABULARY_DATA = [
     "italian": "fragrante",
     "dictionary": "adjective di odore forte e piacevole fragrant scented",
     "english": "fragrant",
-    "chinese": "香味 香味 香味 香味 香味 香味",
+    "chinese": "香味",
     "frequency": 0,
     "rank": 999999
   },
@@ -145766,8 +145766,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "francescano",
     "dictionary": "adjective (religione), (cristianesimo) (cattolicesimo) relativo a San Francesco d'Assisi e all'ordin",
-    "english": "Franciscan; French (2)",
-    "chinese": "方济各会; 法语(2)",
+    "english": "Franciscan; French",
+    "chinese": "方济各会; 法语",
     "frequency": 0,
     "rank": 999999
   },
@@ -146126,8 +146126,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "frigio",
     "dictionary": "adjective relativo o appartenente alla regione della Frigia, in Anatolia Phrygian",
-    "english": "fringe; fringe (2)",
-    "chinese": "边缘; 边 (2)",
+    "english": "fringe",
+    "chinese": "边缘; 边",
     "frequency": 0,
     "rank": 999999
   },
@@ -146502,8 +146502,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "fumogeno",
     "dictionary": "adjective che crea fumo smoke bomb",
-    "english": "smoke; smoker (2)",
-    "chinese": "烟; 吸烟者(2)",
+    "english": "smoke; smoker",
+    "chinese": "烟; 吸烟者",
     "frequency": 0,
     "rank": 999999
   },
@@ -146542,8 +146542,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "funicolare",
     "dictionary": "adjective che assomiglia ad una fune che si sposta tramite funi funicular",
-    "english": "funicular; funnel (2)",
-    "chinese": "单体; 漏斗(2)",
+    "english": "funicular; funnel",
+    "chinese": "单体; 漏斗",
     "frequency": 0,
     "rank": 999999
   },
@@ -146718,7 +146718,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "gagliardo",
     "dictionary": "adjective hardy lusty strong vigorous che ha forza e vigore bold brave courageous forc",
-    "english": "You know, you know,",
+    "english": "You know,",
     "chinese": "你知道吗,你知道,",
     "frequency": 0,
     "rank": 999999
@@ -147038,7 +147038,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "garibaldino",
     "dictionary": "adjective (storia) (politica) (militare) che riguarda il generale italiano Giuseppe Garibaldi (senso",
-    "english": "garnished; (2)",
+    "english": "garnished",
     "chinese": "已关闭; (二)",
     "frequency": 0,
     "rank": 999999
@@ -147366,8 +147366,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "geminato",
     "dictionary": "adjective (linguistica) di consonante ripetuta due volte di seguito all'interno di una parola (anche",
-    "english": "chalk; geese (2)",
-    "chinese": "粉笔; 鹅(2)",
+    "english": "chalk; geese",
+    "chinese": "粉笔; 鹅",
     "frequency": 0,
     "rank": 999999
   },
@@ -148230,7 +148230,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "geroglifico",
     "dictionary": "adjective proprio dei segni pittorici che compongono il sistema di scrittura utilizzato dagli antich",
-    "english": "hieroglyph; (2)",
+    "english": "hieroglyph",
     "chinese": "象形文字; (二)",
     "frequency": 0,
     "rank": 999999
@@ -148855,7 +148855,7 @@ const VOCABULARY_DATA = [
     "italian": "gigliato",
     "dictionary": "adjective (araldica) attributo araldico che si applica a: florencé flory semé de lis",
     "english": "lily",
-    "chinese": "丽丽",
+    "chinese": "丽",
     "frequency": 0,
     "rank": 999999
   },
@@ -149191,7 +149191,7 @@ const VOCABULARY_DATA = [
     "italian": "giulivo",
     "dictionary": "adjective blithe cheerful joyful sventato fino all'imbecillità dumb merry",
     "english": "lily",
-    "chinese": "丽丽",
+    "chinese": "丽",
     "frequency": 0,
     "rank": 999999
   },
@@ -149230,8 +149230,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "giurassico",
     "dictionary": "adjective (geologia) di periodo intermedio dell'era mesozoica tra il triassico ed il cretacico Juras",
-    "english": "Juror; oath (2)",
-    "chinese": "陪审员; 宣誓(2)",
+    "english": "Juror; oath",
+    "chinese": "陪审员; 宣誓",
     "frequency": 0,
     "rank": 999999
   },
@@ -149766,8 +149766,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "gnostico",
     "dictionary": "adjective (religione) (filosofia) che è relativo alla conoscenza gnostic",
-    "english": "gnostic; gnostic (2)",
-    "chinese": "不可知论; 不可知论(2)",
+    "english": "gnostic",
+    "chinese": "不可知论",
     "frequency": 0,
     "rank": 999999
   },
@@ -150158,8 +150158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "grammatico",
     "dictionary": "adjective di o della grammatica grammaticale grammarian",
-    "english": "grammar; grammar (2)",
-    "chinese": "语法; 语法(2)",
+    "english": "grammar",
+    "chinese": "语法",
     "frequency": 0,
     "rank": 999999
   },
@@ -150358,7 +150358,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "grassetto",
     "dictionary": "adjective (tipografia) bold",
-    "english": "fat; (2)",
+    "english": "fat",
     "chinese": "脂肪; (二)",
     "frequency": 0,
     "rank": 999999
@@ -150630,7 +150630,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "grigio argento",
     "dictionary": "noun silver grey",
-    "english": "grey silver silver",
+    "english": "grey silver",
     "chinese": "灰色银色",
     "frequency": 0,
     "rank": 999999
@@ -150694,7 +150694,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "grigio finestra",
     "dictionary": "noun window grey",
-    "english": "grey window window",
+    "english": "grey window",
     "chinese": "灰色窗口",
     "frequency": 0,
     "rank": 999999
@@ -151262,7 +151262,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "guatemalteco",
     "dictionary": "adjective originario del o relativo al Guatemala Guatemalan",
-    "english": "Guatemalan; (2)",
+    "english": "Guatemalan",
     "chinese": "危地马拉; (二)",
     "frequency": 0,
     "rank": 999999
@@ -151286,7 +151286,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "guelfo",
     "dictionary": "adjective (storia) che è propenso al potere temporale del papa Guelph",
-    "english": "Guelph; Guelph (2)",
+    "english": "Guelph",
     "chinese": "盖尔夫; 盖尔夫(2).",
     "frequency": 0,
     "rank": 999999
@@ -151478,7 +151478,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "heavy metal",
     "dictionary": "noun (forestierismo) genere musicale derivato dall'hard rock, di cui rafforza ulter",
-    "english": "heavy metal metal",
+    "english": "heavy metal",
     "chinese": "重金属金属",
     "frequency": 0,
     "rank": 999999
@@ -151526,7 +151526,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "hitleriano",
     "dictionary": "adjective relativo al dittatore tedesco Adolf Hitler Hitlerian",
-    "english": "Hitlerian; (2)",
+    "english": "Hitlerian",
     "chinese": "希特勒人; (二)",
     "frequency": 0,
     "rank": 999999
@@ -151559,7 +151559,7 @@ const VOCABULARY_DATA = [
     "italian": "i-esimo",
     "dictionary": "adjective ith",
     "english": "I-I-I",
-    "chinese": "我... 我... 我... 我... 我... 我...",
+    "chinese": "我...",
     "frequency": 0,
     "rank": 999999
   },
@@ -153830,8 +153830,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "importatore",
     "dictionary": "adjective (economia) (commercio) che importa importing",
-    "english": "importer; importer (2)",
-    "chinese": "进口商; 进口商(2)",
+    "english": "importer",
+    "chinese": "进口商",
     "frequency": 0,
     "rank": 999999
   },
@@ -154942,8 +154942,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "incontentabile",
     "dictionary": "adjective che è sempre scontento (raro) che è difficilissimo soddisfare insatiable unsatisfiable",
-    "english": "Unpleased; Unpleased (2)",
-    "chinese": "不喜欢; 不悦(2)",
+    "english": "Unpleased",
+    "chinese": "不喜欢; 不悦",
     "frequency": 0,
     "rank": 999999
   },
@@ -155094,8 +155094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "incredulo",
     "dictionary": "adjective che non riesce a credere (a qcs.), meravigliato incredulous sceptical unbelieving (religio",
-    "english": "incredulous; Unbelief (2)",
-    "chinese": "难以置信; 不信(2)",
+    "english": "incredulous; Unbelief",
+    "chinese": "难以置信; 不信",
     "frequency": 0,
     "rank": 999999
   },
@@ -155326,8 +155326,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "indemoniato",
     "dictionary": "adjective che è in preda al demonio (senso figurato) che è mosso dall'ira demoniac frantic frenzied ",
-    "english": "undemonstrated; Unbalanced (2)",
-    "chinese": "未显示; 未平衡(2)",
+    "english": "undemonstrated; Unbalanced",
+    "chinese": "未显示; 未平衡",
     "frequency": 0,
     "rank": 999999
   },
@@ -155822,8 +155822,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "inedito",
     "dictionary": "adjective che non è mai stato pubblicato unpublished fresh innovative original unreleased che non è ",
-    "english": "new; Unpublished (2)",
-    "chinese": "新设; 未发表(2)",
+    "english": "new; Unpublished",
+    "chinese": "新设; 未发表",
     "frequency": 0,
     "rank": 999999
   },
@@ -156222,7 +156222,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "infingardo",
     "dictionary": "adjective che s’infinge, che simula, quindi falso, mentitore, o anche, riferito a cose, ingannevole,",
-    "english": "Inflamed; (2)",
+    "english": "Inflamed",
     "chinese": "炎热; (二)",
     "frequency": 0,
     "rank": 999999
@@ -156342,8 +156342,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "infrarosso",
     "dictionary": "adjective (fisica) relativo a una radiazione elettromagnetica di lunghezza d'onda compresa tra 1m e ",
-    "english": "infrared; Infrared (2)",
-    "chinese": "红外线; 红外线(2)",
+    "english": "infrared",
+    "chinese": "红外线",
     "frequency": 0,
     "rank": 999999
   },
@@ -156926,8 +156926,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "inguscio",
     "dictionary": "adjective (antropologia), (etnologia) che si riferisce alla popolazione caucasica degli ingusci Ingu",
-    "english": "inguised; Injury (2)",
-    "chinese": "说明; 伤 (2)",
+    "english": "inguised; Injury",
+    "chinese": "说明; 伤",
     "frequency": 0,
     "rank": 999999
   },
@@ -156942,8 +156942,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "inibito",
     "dictionary": "adjective fortemente rallentato, bloccato blocked inhibited (psicologia) che prova inibizione inhibi",
-    "english": "inhibited; Inhibition (2)",
-    "chinese": "被禁绝; 隐藏(2)",
+    "english": "inhibited; Inhibition",
+    "chinese": "被禁绝; 隐藏",
     "frequency": 0,
     "rank": 999999
   },
@@ -157278,8 +157278,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "inquinante",
     "dictionary": "adjective (ecologia) (chimica) di sostanza che altera l'ecosistema di un ambiente contaminating poll",
-    "english": "pollutants; pollutants (2)",
-    "chinese": "污染物; 污染物(2)",
+    "english": "pollutants",
+    "chinese": "污染物",
     "frequency": 0,
     "rank": 999999
   },
@@ -157574,8 +157574,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "insolvente",
     "dictionary": "adjective (diritto) (economia) (commercio) (finanza) che non è in grado di soddisfare un'obbligazion",
-    "english": "insolvent; Unusual (2)",
-    "chinese": "破产; 不寻常(2)",
+    "english": "insolvent; Unusual",
+    "chinese": "破产; 不寻常",
     "frequency": 0,
     "rank": 999999
   },
@@ -157590,8 +157590,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "insolvibile",
     "dictionary": "adjective (diritto) (economia) (commercio) (finanza) che non è in grado di soddisfare un'obbligazion",
-    "english": "insolvable; Unusable (2)",
-    "chinese": "无法解决; 无法使用(2)",
+    "english": "insolvable; Unusable",
+    "chinese": "无法解决; 无法使用",
     "frequency": 0,
     "rank": 999999
   },
@@ -157630,8 +157630,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "insorto",
     "dictionary": "adjective aggettivo insurgent rebellious",
-    "english": "Incorrect; Insect (2)",
-    "chinese": "错误; 昆虫(2)",
+    "english": "Incorrect; Insect",
+    "chinese": "错误; 昆虫",
     "frequency": 0,
     "rank": 999999
   },
@@ -158022,8 +158022,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "intercalare",
     "dictionary": "adjective che si interpone o viene interposto, sia in senso concreto che figurato che si ripete più ",
-    "english": "intercaling; intercala (2)",
-    "chinese": "间距; 中间层(2)",
+    "english": "intercaling; intercala",
+    "chinese": "间距; 中间层",
     "frequency": 0,
     "rank": 999999
   },
@@ -158622,8 +158622,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "intriso",
     "dictionary": "adjective (per estensione) impiastrato imbued (senso figurato) pervaso imbued soaked",
-    "english": "intrigued; intrinsic (2)",
-    "chinese": "感兴趣; 内在 (2)",
+    "english": "intrigued; intrinsic",
+    "chinese": "感兴趣; 内在",
     "frequency": 0,
     "rank": 999999
   },
@@ -158910,8 +158910,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "invertebrato",
     "dictionary": "adjective privo di scheletro invertebrate",
-    "english": "invertebrate; Invertebrate (2)",
-    "chinese": "无脊椎动物; 无脊椎动物(2)",
+    "english": "invertebrate",
+    "chinese": "无脊椎动物",
     "frequency": 0,
     "rank": 999999
   },
@@ -159246,7 +159246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "iperteso",
     "dictionary": "adjective (medicina) che ha un'alta pressione arteriosa hypertensive",
-    "english": "hypertensive; (2)",
+    "english": "hypertensive",
     "chinese": "高血压; (二)",
     "frequency": 0,
     "rank": 999999
@@ -159334,8 +159334,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ipocondriaco",
     "dictionary": "adjective (psicologia) (medicina) (psichiatria) (psicanalisi) che è affetto da ipocondria hypochondr",
-    "english": "hypochondria; Hypochondria (2)",
-    "chinese": "低血清症; 伪伪(2)",
+    "english": "hypochondria",
+    "chinese": "低血清症; 伪",
     "frequency": 0,
     "rank": 999999
   },
@@ -159438,8 +159438,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ipoteso",
     "dictionary": "adjective che ha una pressione arteriosa bassa hypotensive",
-    "english": "hypotensive; hypotensive (2)",
-    "chinese": "低温; 低血压(2)",
+    "english": "hypotensive",
+    "chinese": "低温; 低血压",
     "frequency": 0,
     "rank": 999999
   },
@@ -159654,8 +159654,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "irredentista",
     "dictionary": "adjective (politica) (storia) che sostiene dell'irredentismo irredentist",
-    "english": "irredentist; Irish (2)",
-    "chinese": "复数主义者; 爱尔兰语(2)",
+    "english": "irredentist; Irish",
+    "chinese": "复数主义者; 爱尔兰语",
     "frequency": 0,
     "rank": 999999
   },
@@ -159990,8 +159990,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "isolano",
     "dictionary": "adjective di un'isola insular island islandere",
-    "english": "island; island (2)",
-    "chinese": "岛屿; 岛屿(2)",
+    "english": "island",
+    "chinese": "岛屿",
     "frequency": 0,
     "rank": 999999
   },
@@ -160582,8 +160582,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ivoriano",
     "dictionary": "adjective della Costa d'Avorio Ivorian",
-    "english": "Ivory; Ivory (2)",
-    "chinese": "象牙; 象牙 (2)",
+    "english": "Ivory",
+    "chinese": "象牙",
     "frequency": 0,
     "rank": 999999
   },
@@ -160694,16 +160694,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "kazako",
     "dictionary": "noun residente o nato della Repubblica del Kazakistan Kazak Kazakh",
-    "english": "kazako; Kazakh (2)",
-    "chinese": "卡扎克语Name; 哈萨克语(2)",
+    "english": "kazako; Kazakh",
+    "chinese": "卡扎克语Name; 哈萨克语",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "keniota",
     "dictionary": "adjective che è attinente al Kenia Kenyan",
-    "english": "kenio; Kenio (2)",
-    "chinese": "科尼奥语Name; 肯尼奥(2)",
+    "english": "kenio",
+    "chinese": "科尼奥语Name; 肯尼奥",
     "frequency": 0,
     "rank": 999999
   },
@@ -161094,8 +161094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "laminare",
     "dictionary": "adjective di lamina (per estensione) (fisica) laminar",
-    "english": "laminare; laminating (2)",
-    "chinese": "拉米纳雷; 叠加(2)",
+    "english": "laminare; laminating",
+    "chinese": "拉米纳雷; 叠加",
     "frequency": 0,
     "rank": 999999
   },
@@ -161198,8 +161198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "laotiano",
     "dictionary": "adjective (geografia) del Laos Laos Laotian",
-    "english": "Laotiano; Laotiano (2)",
-    "chinese": "老挝; 老挝(2)",
+    "english": "Laotiano",
+    "chinese": "老挝",
     "frequency": 0,
     "rank": 999999
   },
@@ -161374,7 +161374,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "laterizio",
     "dictionary": "adjective (edilizia) (architettura) (tecnologia) (ingegneria) di prodotto in materiale ceramico a pa",
-    "english": "bricks; (2)",
+    "english": "bricks",
     "chinese": "砖头; (二)",
     "frequency": 0,
     "rank": 999999
@@ -161926,7 +161926,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "legionario",
     "dictionary": "adjective (raro) relativo alla legione legionary",
-    "english": "Legionnaire; (2)",
+    "english": "Legionnaire",
     "chinese": "军团; (二)",
     "frequency": 0,
     "rank": 999999
@@ -162206,7 +162206,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "letterato",
     "dictionary": "adjective che è interessato alla letteratura cultured educated learned well-read",
-    "english": "literal; (2)",
+    "english": "literal",
     "chinese": "字义; (二)",
     "frequency": 0,
     "rank": 999999
@@ -162270,7 +162270,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "levante",
     "dictionary": "adjective (geografia) relativo alla direzione est o al vento che spira in quella direzione rising",
-    "english": "lever; (2)",
+    "english": "lever",
     "chinese": "杠杆; (二)",
     "frequency": 0,
     "rank": 999999
@@ -162406,8 +162406,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "liberatore",
     "dictionary": "adjective che libera liberating liberator",
-    "english": "Freezer; Freezer (2)",
-    "chinese": "冷冻器; 冷冻器(2)",
+    "english": "Freezer",
+    "chinese": "冷冻器",
     "frequency": 0,
     "rank": 999999
   },
@@ -162598,8 +162598,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ligure",
     "dictionary": "adjective relativo alla Liguria Ligurian",
-    "english": "Ligurian; Ligure (2)",
-    "chinese": "利古里亚语Name; 利古尔(2)",
+    "english": "Ligurian; Ligure",
+    "chinese": "利古里亚语Name; 利古尔",
     "frequency": 0,
     "rank": 999999
   },
@@ -162630,7 +162630,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "lillipuziano",
     "dictionary": "adjective (letteratura) che è attinente al villaggio immaginario di Lilliput (per estensione) di pic",
-    "english": "lillipuziano; (2)",
+    "english": "lillipuziano",
     "chinese": "利利普齐亚诺; (二)",
     "frequency": 0,
     "rank": 999999
@@ -163086,8 +163086,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "lirico",
     "dictionary": "adjective (poesia) poesia finalizzata ad essere declamata al suono della lira lyric lyrical opera",
-    "english": "Lyrics; Lyrics (2)",
-    "chinese": "词组; 词组(2)",
+    "english": "Lyrics",
+    "chinese": "词组",
     "frequency": 0,
     "rank": 999999
   },
@@ -163214,8 +163214,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "litorale",
     "dictionary": "adjective che si trova lungo un lido coastal",
-    "english": "coastline; Coastal (2)",
-    "chinese": "海岸线; 沿海(2)",
+    "english": "coastline; Coastal",
+    "chinese": "海岸线; 沿海",
     "frequency": 0,
     "rank": 999999
   },
@@ -163246,8 +163246,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "lituano",
     "dictionary": "adjective (geografia) relativo alla Lituania Lithuanian",
-    "english": "Lithuanian; Lithuanian (2); Lithuanian (3)",
-    "chinese": "立陶宛语Name; 立陶宛(2); 立陶宛(3)",
+    "english": "Lithuanian",
+    "chinese": "立陶宛语Name; 立陶宛",
     "frequency": 0,
     "rank": 999999
   },
@@ -163526,8 +163526,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "logorroico",
     "dictionary": "adjective (medicina) malato di logorrea, alterazione del linguaggio caratterizzata da un parlato vel",
-    "english": "logorror; logorror (2)",
-    "chinese": "标志; 标志(2)",
+    "english": "logorror",
+    "chinese": "标志",
     "frequency": 0,
     "rank": 999999
   },
@@ -163614,8 +163614,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "longobardo",
     "dictionary": "adjective (storia) che riguarda il popolo dei Longobardi, antica popolazione germanica originaria de",
-    "english": "Longobard; Longobard (2); Longobard (3)",
-    "chinese": "朗戈巴尔; 朗戈巴尔(2); 朗戈巴尔(3)",
+    "english": "Longobard",
+    "chinese": "朗戈巴尔",
     "frequency": 0,
     "rank": 999999
   },
@@ -163703,7 +163703,7 @@ const VOCABULARY_DATA = [
     "italian": "lubrico",
     "dictionary": "adjective così liscio da essere scivoloso, sdrucciolevole, viscido lubric",
     "english": "drunkenness",
-    "chinese": "醉酒 醉酒 醉酒 醉酒 醉酒",
+    "chinese": "醉酒",
     "frequency": 0,
     "rank": 999999
   },
@@ -163894,8 +163894,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "lunetta",
     "dictionary": "noun (architettura) lunette (sport)nel basket, la parte del campo da gioco contrassegna",
-    "english": "Bezel bezel",
-    "chinese": "贝泽尔贝泽尔",
+    "english": "Bezel",
+    "chinese": "贝泽尔",
     "frequency": 0,
     "rank": 999999
   },
@@ -163998,8 +163998,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "lussemburghese",
     "dictionary": "adjective (geografia) del Lussemburgo Luxembourg Luxembourger Luxembourgian",
-    "english": "Luxembourg; Luxembourg (2)",
-    "chinese": "卢森堡; 卢森堡(2)",
+    "english": "Luxembourg",
+    "chinese": "卢森堡",
     "frequency": 0,
     "rank": 999999
   },
@@ -164038,8 +164038,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "lustro",
     "dictionary": "adjective di oggetto pulito e strofinato al punto da essere lucido shiny",
-    "english": "luster; (2); Pillar (3)",
-    "chinese": "色调; (二); 支柱(3)",
+    "english": "luster; Pillar",
+    "chinese": "色调; (二); 支柱",
     "frequency": 0,
     "rank": 999999
   },
@@ -164062,7 +164062,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "luterano",
     "dictionary": "adjective (religione) relativo a Martin Lutero o al luteranesimo Lutheran",
-    "english": "luterano; (2)",
+    "english": "luterano",
     "chinese": "卢泰拉诺; (二)",
     "frequency": 0,
     "rank": 999999
@@ -164127,7 +164127,7 @@ const VOCABULARY_DATA = [
     "italian": "maccherone",
     "dictionary": "noun macaroni",
     "english": "Butcher",
-    "chinese": "屠夫 屠夫 屠夫",
+    "chinese": "屠夫",
     "frequency": 0,
     "rank": 999999
   },
@@ -164278,8 +164278,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "macedone",
     "dictionary": "adjective (geografia) che riguarda la Macedonia che riguarda la Macedonia del Nord Macedonian",
-    "english": "Macedonian; Macedonian (2); Macedonian (3)",
-    "chinese": "马其顿; 马其顿(2); 马其顿(3)",
+    "english": "Macedonian",
+    "chinese": "马其顿",
     "frequency": 0,
     "rank": 999999
   },
@@ -164630,8 +164630,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "madrileno",
     "dictionary": "adjective (geografia) di Madrid Madrileño",
-    "english": "Madrid; maternal (2)",
-    "chinese": "马德里; 母亲(2)",
+    "english": "Madrid; maternal",
+    "chinese": "马德里; 母亲",
     "frequency": 0,
     "rank": 999999
   },
@@ -164726,7 +164726,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "magiaro",
     "dictionary": "adjective (storia) che faceva parte di una popolazione ugrofinnica che tra l'801 e il 900 occupò le ",
-    "english": "magician; (2)",
+    "english": "magician",
     "chinese": "魔术师; (二)",
     "frequency": 0,
     "rank": 999999
@@ -165022,8 +165022,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "magrebino",
     "dictionary": "adjective aggettivo Maghreb(i) Maghrebine Maghrib Maghribi",
-    "english": "Magrebino; Magrebino (2)",
-    "chinese": "马格雷比诺; 马格雷比诺(2)",
+    "english": "Magrebino",
+    "chinese": "马格雷比诺",
     "frequency": 0,
     "rank": 999999
   },
@@ -165182,7 +165182,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "malarico",
     "dictionary": "adjective di malaria malarian",
-    "english": "malaric; (2)",
+    "english": "malaric",
     "chinese": "恶性肿瘤; (二)",
     "frequency": 0,
     "rank": 999999
@@ -165262,8 +165262,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "maldiviano",
     "dictionary": "adjective che riguarda le Maldive Maldivian",
-    "english": "Maldivian; Midivian (2)",
-    "chinese": "马尔代夫; 中间派(2)",
+    "english": "Maldivian; Midivian",
+    "chinese": "马尔代夫; 中间派",
     "frequency": 0,
     "rank": 999999
   },
@@ -165342,7 +165342,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "malevolo",
     "dictionary": "adjective che vuol male o dimostra malevolenza od ostilità bitchy hostile inimical malevolent malici",
-    "english": "Damn.; (2)",
+    "english": "Damn.",
     "chinese": "该死; (二)",
     "frequency": 0,
     "rank": 999999
@@ -165382,8 +165382,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "malgascio",
     "dictionary": "adjective (geografia) del Madagascar Madagascan",
-    "english": "Malagasy; malgam (2); malgaria (3)",
-    "chinese": "马达加斯加; 马拉加姆(2); 疟疾(3)",
+    "english": "Malagasy; malgam; malgaria",
+    "chinese": "马达加斯加; 马拉加姆; 疟疾",
     "frequency": 0,
     "rank": 999999
   },
@@ -165558,7 +165558,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mancese",
     "dictionary": "adjective (geografia) relativo alla Manciuria relativo alla lingua mancese Manchu Manchurian",
-    "english": "Hands; (2)",
+    "english": "Hands",
     "chinese": "手举起来; (二)",
     "frequency": 0,
     "rank": 999999
@@ -165934,7 +165934,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mantovano",
     "dictionary": "adjective (geografia) di Mantova Mantuan",
-    "english": "Mantua; (2)",
+    "english": "Mantua",
     "chinese": "曼图亚; (二)",
     "frequency": 0,
     "rank": 999999
@@ -165982,7 +165982,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "maoista",
     "dictionary": "adjective (storia) (filosofia) (politica) (economia) che riguarda l'esperienza politica di Mao Tse T",
-    "english": "Mao; (2)",
+    "english": "Mao",
     "chinese": "毛泽东; (二)",
     "frequency": 0,
     "rank": 999999
@@ -167070,8 +167070,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "meccanicista",
     "dictionary": "adjective (filosofia) relativo al meccanicismo mechanist",
-    "english": "mechanics; machine (2)",
-    "chinese": "机械; 机器(2)",
+    "english": "mechanics; machine",
+    "chinese": "机械; 机器",
     "frequency": 0,
     "rank": 999999
   },
@@ -167382,8 +167382,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "megalomane",
     "dictionary": "adjective che è affetto da megalomania megalomaniac",
-    "english": "megalomaniac; megalomania (2)",
-    "chinese": "巨型狂犬病; 大罗马尼亚(2)",
+    "english": "megalomaniac; megalomania",
+    "chinese": "巨型狂犬病; 大罗马尼亚",
     "frequency": 0,
     "rank": 999999
   },
@@ -167702,8 +167702,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "menscevico",
     "dictionary": "adjective (storia) di rivoluzionario russo moderato Menshevik Menshevist",
-    "english": "Menshevik; Menshevik (2)",
-    "chinese": "门什维克; 门什维克(2)",
+    "english": "Menshevik",
+    "chinese": "门什维克",
     "frequency": 0,
     "rank": 999999
   },
@@ -167902,8 +167902,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "meridiano",
     "dictionary": "adjective di mezzogiorno midday",
-    "english": "sundial; meridian (2)",
-    "chinese": "太阳; 中间线(2)",
+    "english": "sundial; meridian",
+    "chinese": "太阳; 中间线",
     "frequency": 0,
     "rank": 999999
   },
@@ -168534,8 +168534,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "metropolita",
     "dictionary": "adjective (religione), (ecclesiastico) (cristianesimo) Che presiede ad una metropoli ecclesiastica m",
-    "english": "Metropolitan; Metropolitan (2)",
-    "chinese": "首都; 大都会(2)",
+    "english": "Metropolitan",
+    "chinese": "首都; 大都会",
     "frequency": 0,
     "rank": 999999
   },
@@ -169398,8 +169398,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "minimale",
     "dictionary": "adjective più piccolo minimum",
-    "english": "minimal; Miniature (2)",
-    "chinese": "最小值; 微型(2)",
+    "english": "minimal; Miniature",
+    "chinese": "最小值; 微型",
     "frequency": 0,
     "rank": 999999
   },
@@ -170158,8 +170158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "moldavo",
     "dictionary": "adjective (geografia) della Moldavia Moldavian",
-    "english": "Moldovan; Moldovan (2); Moldova (3)",
-    "chinese": "摩尔多瓦语; 摩尔多瓦(2); 摩尔多瓦(3)",
+    "english": "Moldovan; Moldova",
+    "chinese": "摩尔多瓦语; 摩尔多瓦",
     "frequency": 0,
     "rank": 999999
   },
@@ -170270,8 +170270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "monacense",
     "dictionary": "adjective (geografia) relativo a Monaco di Baviera Munich",
-    "english": "monacense; monacies (2)",
-    "chinese": "货币; 货币(2)",
+    "english": "monacense; monacies",
+    "chinese": "货币",
     "frequency": 0,
     "rank": 999999
   },
@@ -170310,8 +170310,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "monarchico",
     "dictionary": "adjective (storia) (politica) (diritto) che riguarda una monarchia monarchic monarchical",
-    "english": "monarchist; monarchy (2)",
-    "chinese": "君主制国家; 君主制(2)",
+    "english": "monarchist; monarchy",
+    "chinese": "君主制国家; 君主制",
     "frequency": 0,
     "rank": 999999
   },
@@ -170327,7 +170327,7 @@ const VOCABULARY_DATA = [
     "italian": "monasticamente",
     "dictionary": "adverb monastically",
     "english": "monastically",
-    "chinese": "修道院 修道院",
+    "chinese": "修道院",
     "frequency": 0,
     "rank": 999999
   },
@@ -170510,8 +170510,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "monocolo",
     "dictionary": "adjective che vede da un solo occhio monocular one-eyed",
-    "english": "monograph; monograph (2)",
-    "chinese": "专著; 专论(2)",
+    "english": "monograph",
+    "chinese": "专著; 专论",
     "frequency": 0,
     "rank": 999999
   },
@@ -170750,8 +170750,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "monoteista",
     "dictionary": "adjective (religione) che adora un solo dio. monotheist monotheistic monotheistical",
-    "english": "monotheistic; monotheistic (2)",
-    "chinese": "一神论; 一神论(2)",
+    "english": "monotheistic",
+    "chinese": "一神论",
     "frequency": 0,
     "rank": 999999
   },
@@ -170822,7 +170822,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "monumentale",
     "dictionary": "adjective che è inerente ai monumenti (per estensione) grand imposing monumental",
-    "english": "monumental monumental",
+    "english": "monumental",
     "chinese": "伟大的纪念碑",
     "frequency": 0,
     "rank": 999999
@@ -171006,7 +171006,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "moroso",
     "dictionary": "adjective (diritto) (economia) (commercio) (finanza) che si trova in stato di mora defaulting delinq",
-    "english": "bit; (2)",
+    "english": "bit",
     "chinese": "选项; (二)",
     "frequency": 0,
     "rank": 999999
@@ -171078,8 +171078,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "moscovita",
     "dictionary": "adjective di Mosca Muscovite",
-    "english": "Moscot; Mosquito (2)",
-    "chinese": "游戏; 蚊子(2)",
+    "english": "Moscot; Mosquito",
+    "chinese": "游戏; 蚊子",
     "frequency": 0,
     "rank": 999999
   },
@@ -171175,7 +171175,7 @@ const VOCABULARY_DATA = [
     "italian": "motolivellatrice",
     "dictionary": "noun grader",
     "english": "motolivellatrice",
-    "chinese": "运动运动",
+    "chinese": "运动",
     "frequency": 0,
     "rank": 999999
   },
@@ -171486,7 +171486,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "mulatto",
     "dictionary": "adjective detto di persona di carnagione scura, nata dall'unione di un genitore di origine bianca eu",
-    "english": "mulatto; Article (2)",
+    "english": "mulatto; Article",
     "chinese": "穆拉托语Name; 第 二 条",
     "frequency": 0,
     "rank": 999999
@@ -171550,8 +171550,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "multimediale",
     "dictionary": "adjective multimedia",
-    "english": "multimedia multimedia",
-    "chinese": "多媒体多媒体",
+    "english": "multimedia",
+    "chinese": "多媒体",
     "frequency": 0,
     "rank": 999999
   },
@@ -171854,8 +171854,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "naif",
     "dictionary": "adjective (spregiativo) appellativo offensivo contro una o più persone ritenute illusoriamente ingen",
-    "english": "naive; (2); naive (3)",
-    "chinese": "天真无邪; (二); 天真(3)",
+    "english": "naive",
+    "chinese": "天真无邪; (二); 天真",
     "frequency": 0,
     "rank": 999999
   },
@@ -172110,7 +172110,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "natante",
     "dictionary": "adjective che nuota, che galleggia (araldica) nuotante floating swimming",
-    "english": "born; (2)",
+    "english": "born",
     "chinese": "诞生; (二)",
     "frequency": 0,
     "rank": 999999
@@ -172158,8 +172158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "naturalista",
     "dictionary": "adjective vicino alla natura naturalistic",
-    "english": "naturalist; naturalist (2)",
-    "chinese": "自然主义者; 自然主义者(2)",
+    "english": "naturalist",
+    "chinese": "自然主义者",
     "frequency": 0,
     "rank": 999999
   },
@@ -172246,7 +172246,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "navigante",
     "dictionary": "adjective che naviga flight navigator sailing sailor seafarer seafaring",
-    "english": "navigation; (2)",
+    "english": "navigation",
     "chinese": "导航; (二)",
     "frequency": 0,
     "rank": 999999
@@ -172270,7 +172270,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "nazareno",
     "dictionary": "adjective (geografia) di Nazaret Nazarene",
-    "english": "nazareno; (2)",
+    "english": "nazareno",
     "chinese": "纳扎雷诺; (二)",
     "frequency": 0,
     "rank": 999999
@@ -172558,7 +172558,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "neoassunto",
     "dictionary": "adjective che è stato assunto recentemente da una ditta newly-recruited",
-    "english": "neoassum; (2)",
+    "english": "neoassum",
     "chinese": "新苏姆; (二)",
     "frequency": 0,
     "rank": 999999
@@ -173222,8 +173222,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "nichilista",
     "dictionary": "adjective che è fautore del nichilismo nihilist",
-    "english": "Nichilista; Nichilista (2)",
-    "chinese": "尼基利斯塔语Name; 尼基利斯塔(2)",
+    "english": "Nichilista",
+    "chinese": "尼基利斯塔语Name; 尼基利斯塔",
     "frequency": 0,
     "rank": 999999
   },
@@ -173766,7 +173766,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "normanno",
     "dictionary": "adjective (geografia) che è inerente alla Normandia Norman Normandy (storia) Norman",
-    "english": "norm; (2); (3)",
+    "english": "norm",
     "chinese": "规范; (二); (三) 国家",
     "frequency": 0,
     "rank": 999999
@@ -174070,8 +174070,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "nullafacente",
     "dictionary": "adjective che vive oziosamente o non lavora idle idler lazy",
-    "english": "Nothing; Non-faced (2)",
-    "chinese": "没什么; 非面额(2)",
+    "english": "Nothing; Non-faced",
+    "chinese": "没什么; 非面额",
     "frequency": 0,
     "rank": 999999
   },
@@ -174102,8 +174102,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "numerale",
     "dictionary": "adjective di o dei numeri numeral",
-    "english": "numeral; number (2)",
-    "chinese": "数字; 编号(2)",
+    "english": "numeral; number",
+    "chinese": "数字; 编号",
     "frequency": 0,
     "rank": 999999
   },
@@ -174566,7 +174566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "oblato",
     "dictionary": "adjective che mette a disposizione il suo tempo per la chiesa Oblate oblate",
-    "english": "obsolete; (2)",
+    "english": "obsolete",
     "chinese": "过时; (二)",
     "frequency": 0,
     "rank": 999999
@@ -174854,7 +174854,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ocra",
     "dictionary": "adjective di colore giallo bruno ochre ocher",
-    "english": "o; (2)",
+    "english": "o",
     "chinese": "(单位:千美元); (二)",
     "frequency": 0,
     "rank": 999999
@@ -174942,8 +174942,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "odontotecnico",
     "dictionary": "adjective che concerne la tecnologia delle protesi dentarie prosthodontist",
-    "english": "dental technician; dental technician (2)",
-    "chinese": "牙科技术员; 牙科技术员(2)",
+    "english": "dental technician",
+    "chinese": "牙科技术员",
     "frequency": 0,
     "rank": 999999
   },
@@ -175206,8 +175206,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "olimpionico",
     "dictionary": "adjective (storia) nell’antica Grecia, che primeggiava nei giochi olimpici (sport) che è risultato p",
-    "english": "Olympics; Olympic (2)",
-    "chinese": "奥运会; 奥林匹克(2)",
+    "english": "Olympics; Olympic",
+    "chinese": "奥运会; 奥林匹克",
     "frequency": 0,
     "rank": 999999
   },
@@ -175270,8 +175270,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "olivastro",
     "dictionary": "adjective (colore) colore tendente al bruno-verdastro caratteristico dell'oliva. olive",
-    "english": "olive oil; olive oil (2)",
-    "chinese": "橄榄油; 橄榄油(2)",
+    "english": "olive oil",
+    "chinese": "橄榄油",
     "frequency": 0,
     "rank": 999999
   },
@@ -176054,15 +176054,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "opzionale",
     "dictionary": "adjective optional",
-    "english": "optional optional",
-    "chinese": "可选可选",
+    "english": "optional",
+    "chinese": "可选",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "orafo",
     "dictionary": "adjective (arte) (tecnologia) relativo all'arte che utilizza metalli preziosi goldsmith",
-    "english": "now; (2)",
+    "english": "now",
     "chinese": "现在; (二)",
     "frequency": 0,
     "rank": 999999
@@ -176142,8 +176142,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "orchestrale",
     "dictionary": "adjective (musica) che riguarda un'orchestra member orchestral player",
-    "english": "orchestral; orchestra (2)",
-    "chinese": "乐团; 管弦乐 (2)",
+    "english": "orchestral; orchestra",
+    "chinese": "乐团; 管弦乐",
     "frequency": 0,
     "rank": 999999
   },
@@ -176870,7 +176870,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ossetico",
     "dictionary": "adjective (geografia) Variante di osseta, ovvero popolazione caucasica Ossetian",
-    "english": "bone; (2)",
+    "english": "bone",
     "chinese": "骨头; (二)",
     "frequency": 0,
     "rank": 999999
@@ -177182,8 +177182,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ostrogoto",
     "dictionary": "adjective (storia)relativo agli Ostrogoti Ostrogoth Ostrogothic barbarian barbarous",
-    "english": "ostrogory; (2); ostrogous (3)",
-    "chinese": "骨质; (二); 恶性(3)",
+    "english": "ostrogory; ostrogous",
+    "chinese": "骨质; (二); 恶性",
     "frequency": 0,
     "rank": 999999
   },
@@ -177382,7 +177382,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ottantesimo",
     "dictionary": "noun (matematica) una delle ottanta parti in cui è diviso un intero eightieth",
-    "english": "Eighth; (2)",
+    "english": "Eighth",
     "chinese": "第八届; (二)",
     "frequency": 0,
     "rank": 999999
@@ -177614,8 +177614,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ovino",
     "dictionary": "adjective (zoologia) (mammalogia) relativo ai mammiferi appartenenti al genere dei caprini sheep",
-    "english": "ovine; wine (2)",
-    "chinese": "萝卜; 葡萄酒(2)",
+    "english": "ovine; wine",
+    "chinese": "萝卜; 葡萄酒",
     "frequency": 0,
     "rank": 999999
   },
@@ -177630,8 +177630,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ovulare",
     "dictionary": "adjective che ha l'aspetto di ovulo ovular",
-    "english": "ovulation; ovulation (2)",
-    "chinese": "排卵; 排卵(2)",
+    "english": "ovulation",
+    "chinese": "排卵",
     "frequency": 0,
     "rank": 999999
   },
@@ -177710,7 +177710,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Padova",
     "dictionary": "pronoun (toponimo) (geografia) capoluogo di provincia, nella regione Veneto in Italia Padua",
-    "english": "Padua; (2)",
+    "english": "Padua",
     "chinese": "帕杜阿语Name; (二)",
     "frequency": 0,
     "rank": 999999
@@ -177718,7 +177718,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "padovano",
     "dictionary": "adjective che è attinente a Padova e ai suoi residenti Paduan",
-    "english": "Padovano; (2)",
+    "english": "Padovano",
     "chinese": "帕多万诺; (二)",
     "frequency": 0,
     "rank": 999999
@@ -177774,8 +177774,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pagatore",
     "dictionary": "adjective che paga pay paying",
-    "english": "paid; payable (2)",
-    "chinese": "已支付; 应付款项(2)",
+    "english": "paid; payable",
+    "chinese": "已支付; 应付款项",
     "frequency": 0,
     "rank": 999999
   },
@@ -177886,8 +177886,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "Paleolitico",
     "dictionary": "noun (storia) (paleontologia) primo e più vecchio periodo della preistoria ( da due",
-    "english": "Paleolithic; paleolithic; Paleolithic (2)",
-    "chinese": "旧石器; 苍白石; 旧石器(2)",
+    "english": "Paleolithic",
+    "chinese": "旧石器; 苍白石",
     "frequency": 0,
     "rank": 999999
   },
@@ -178094,8 +178094,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "palmipede",
     "dictionary": "adjective (zoologia), (ornitologia) di uccelli con le dita delle zampe raggruppate da uno strato sot",
-    "english": "palmipede; palm trees (2)",
-    "chinese": "棕榈树; 棕榈树(2)",
+    "english": "palmipede; palm trees",
+    "chinese": "棕榈树",
     "frequency": 0,
     "rank": 999999
   },
@@ -178318,8 +178318,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "panegirico",
     "dictionary": "adjective (raro), (antico) eccessivamente encomiastico eulogy panegyric",
-    "english": "bakery; Pantry (2)",
-    "chinese": "面包店; 冷藏室(2)",
+    "english": "bakery; Pantry",
+    "chinese": "面包店; 冷藏室",
     "frequency": 0,
     "rank": 999999
   },
@@ -178454,8 +178454,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pantofolaio",
     "dictionary": "adjective che predilige, più permanentemente che per brevi episodi, la quiete della vita domestica a",
-    "english": "slippers; slippers (2)",
-    "chinese": "拖鞋; 拖鞋(2)",
+    "english": "slippers",
+    "chinese": "拖鞋",
     "frequency": 0,
     "rank": 999999
   },
@@ -178479,7 +178479,7 @@ const VOCABULARY_DATA = [
     "italian": "papaia",
     "dictionary": "noun papaya",
     "english": "Daddy",
-    "chinese": "爹地 爹地 爹地",
+    "chinese": "爹地",
     "frequency": 0,
     "rank": 999999
   },
@@ -178487,7 +178487,7 @@ const VOCABULARY_DATA = [
     "italian": "papalina",
     "dictionary": "noun (zoologia) pesce osseo, la sua classificazione scientifica è Sprattus sprattus ( tassonomia) шп",
     "english": "Daddy",
-    "chinese": "爹地 爹地 爹地",
+    "chinese": "爹地",
     "frequency": 0,
     "rank": 999999
   },
@@ -178926,7 +178926,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "paria",
     "dictionary": "noun (religione), (antropologia) nome con cui nell'uso europeo sono indicati gli individui appartene",
-    "english": "equal; (2)",
+    "english": "equal",
     "chinese": "等号; (二)",
     "frequency": 0,
     "rank": 999999
@@ -179126,7 +179126,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "partenopeo",
     "dictionary": "adjective (geografia) che riguarda Napoli Neapolitan",
-    "english": "partnope; (2)",
+    "english": "partnope",
     "chinese": "部件; (二)",
     "frequency": 0,
     "rank": 999999
@@ -179198,7 +179198,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "partigiano",
     "dictionary": "adjective (spregiativo) che, pur di dimostrare in apparenza un comportamento corretto anche quando n",
-    "english": "Partisan; (2)",
+    "english": "Partisan",
     "chinese": "政党; (二)",
     "frequency": 0,
     "rank": 999999
@@ -179518,8 +179518,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pastorale",
     "dictionary": "adjective (agricoltura) (zootecnica) riguardante i pastori e la pastorizia; riferito a opere lettera",
-    "english": "pastoral ministry; pastoral care (2)",
-    "chinese": "牧业部; 畜牧护理(2)",
+    "english": "pastoral ministry; pastoral care",
+    "chinese": "牧业部; 畜牧护理",
     "frequency": 0,
     "rank": 999999
   },
@@ -179662,8 +179662,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "patrimoniale",
     "dictionary": "adjective (diritto) (economia) (statistica) che riguarda il patrimonio patrimonial",
-    "english": "assets; assets (2)",
-    "chinese": "资产; 资产(2)",
+    "english": "assets",
+    "chinese": "资产",
     "frequency": 0,
     "rank": 999999
   },
@@ -179766,7 +179766,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pavano",
     "dictionary": "adjective (letterario) relativo al dialetto pavano: Pavane",
-    "english": "pavano; (2)",
+    "english": "pavano",
     "chinese": "帕瓦诺; (二)",
     "frequency": 0,
     "rank": 999999
@@ -180158,8 +180158,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "penitente",
     "dictionary": "adjective che si pente penitent",
-    "english": "penitentiary; penitentiary (2)",
-    "chinese": "监狱; 监狱(2)",
+    "english": "penitentiary",
+    "chinese": "监狱",
     "frequency": 0,
     "rank": 999999
   },
@@ -180718,8 +180718,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "periodico",
     "dictionary": "adjective che avviene ad intervalli regolari periodical (noun, adjective) (chimica) relativo allo io",
-    "english": "periodical; periodic (2)",
-    "chinese": "期刊; 定期(2)",
+    "english": "periodical; periodic",
+    "chinese": "期刊; 定期",
     "frequency": 0,
     "rank": 999999
   },
@@ -180830,8 +180830,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "permiano",
     "dictionary": "adjective (geologia)dell'ultimo periodo dell'era paleozoica, contraddistinta dall'indietreggiare dei",
-    "english": "Persian; Persian (2)",
-    "chinese": "波斯语Name; 波斯语(2)",
+    "english": "Persian",
+    "chinese": "波斯语Name; 波斯语",
     "frequency": 0,
     "rank": 999999
   },
@@ -181902,7 +181902,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "piombino",
     "dictionary": "adjective (raro)che assomiglia al colore del (piombo plummet sinker",
-    "english": "piombino; (2)",
+    "english": "piombino",
     "chinese": "钢琴; (二)",
     "frequency": 0,
     "rank": 999999
@@ -182086,8 +182086,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "pisano",
     "dictionary": "adjective di Pisa, in Toscana inhabitant",
-    "english": "Pisano; Pisano (2); Pisano (3)",
-    "chinese": "钢琴; 钢琴(2); 钢琴(3)",
+    "english": "Pisano",
+    "chinese": "钢琴",
     "frequency": 0,
     "rank": 999999
   },
@@ -182646,7 +182646,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Pliocene",
     "dictionary": "noun (geologia) l'epoca più recente dell'era terziaria, risalente a 5,3 milioni di a",
-    "english": "Pliocene; pliocene",
+    "english": "Pliocene",
     "chinese": "聚苯乙烯",
     "frequency": 0,
     "rank": 999999
@@ -183126,8 +183126,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "poliglotta",
     "dictionary": "adjective (linguistica) chi conosce e parla più lingue riferito ad una comunità indica la propension",
-    "english": "polyglot; Polyglot (2)",
-    "chinese": "多块; 聚糖(2)",
+    "english": "polyglot",
+    "chinese": "多块; 聚糖",
     "frequency": 0,
     "rank": 999999
   },
@@ -183286,8 +183286,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "politeista",
     "dictionary": "adjective che adora più di un dio polytheist",
-    "english": "polytheist; Polytechnic (2)",
-    "chinese": "多神论者; 理工大学(2)",
+    "english": "polytheist; Polytechnic",
+    "chinese": "多神论者; 理工大学",
     "frequency": 0,
     "rank": 999999
   },
@@ -183518,7 +183518,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pomice",
     "dictionary": "adjective (mineralogia) pumice pumice-stone",
-    "english": "pomice; (2)",
+    "english": "pomice",
     "chinese": "针头; (二)",
     "frequency": 0,
     "rank": 999999
@@ -183854,8 +183854,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "positivista",
     "dictionary": "adjective (storia) (filosofia) (sociologia) che concerne il positivismo positivist positivistic",
-    "english": "Positive; Positive (2)",
-    "chinese": "阳性; 阳性(2)",
+    "english": "Positive",
+    "chinese": "阳性",
     "frequency": 0,
     "rank": 999999
   },
@@ -183918,7 +183918,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "possibilista",
     "dictionary": "adjective che manifesta possibilismo possibilist possibilistic",
-    "english": "possible; (2)",
+    "english": "possible",
     "chinese": "可能; (二)",
     "frequency": 0,
     "rank": 999999
@@ -184398,8 +184398,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "precursore",
     "dictionary": "adjective che precorre i tempi, relativo a cose diverranno popolari in un momento successivo precurs",
-    "english": "precursor; forerunner (2)",
-    "chinese": "前体; 预览器(2)",
+    "english": "precursor; forerunner",
+    "chinese": "前体; 预览器",
     "frequency": 0,
     "rank": 999999
   },
@@ -184862,7 +184862,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "presbite",
     "dictionary": "adjective (medicina) che è affetto da presbiopia far-sighted presbyopic",
-    "english": "presbyte; (2)",
+    "english": "presbyte",
     "chinese": "预键; (二)",
     "frequency": 0,
     "rank": 999999
@@ -185030,7 +185030,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "prevaricatore",
     "dictionary": "adjective che prevarica authoritarian bossy despotic",
-    "english": "prevaricator; (2)",
+    "english": "prevaricator",
     "chinese": "预设符; (二)",
     "frequency": 0,
     "rank": 999999
@@ -185566,7 +185566,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "profanatore",
     "dictionary": "adjective che profana debaser defiler defiling desecrater desecrating profanatory",
-    "english": "profane; (2)",
+    "english": "profane",
     "chinese": "诽谤; (二)",
     "frequency": 0,
     "rank": 999999
@@ -185830,8 +185830,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "proletario",
     "dictionary": "adjective dei proletari, che concerne i proletari composto da proletari proletarian",
-    "english": "proletarian; proletarian (2)",
-    "chinese": "无产阶级; 无产阶级(2)",
+    "english": "proletarian",
+    "chinese": "无产阶级",
     "frequency": 0,
     "rank": 999999
   },
@@ -186006,7 +186006,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "pronto soccorso",
     "dictionary": "noun emergency department emergency room emergency ward",
-    "english": "emergency emergency",
+    "english": "emergency",
     "chinese": "紧急情况",
     "frequency": 0,
     "rank": 999999
@@ -186094,7 +186094,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "propellente",
     "dictionary": "adjective che fornisce un'intensa spinta in avanti propellant propelling",
-    "english": "propellant; (2)",
+    "english": "propellant",
     "chinese": "推进剂; (二)",
     "frequency": 0,
     "rank": 999999
@@ -186334,7 +186334,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "proscritto",
     "dictionary": "adjective (storia) che è stato condannato ad espatriare exile outlaw",
-    "english": "pro-; (2)",
+    "english": "pro-",
     "chinese": "支持 -; (二)",
     "frequency": 0,
     "rank": 999999
@@ -186734,8 +186734,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "provenzale",
     "dictionary": "noun abitante della Provenza Provençal",
-    "english": "Provençal; Provenant (2)",
-    "chinese": "证明; 鉴定人(2)",
+    "english": "Provençal; Provenant",
+    "chinese": "证明; 鉴定人",
     "frequency": 0,
     "rank": 999999
   },
@@ -186830,8 +186830,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "prussiano",
     "dictionary": "adjective (letterario) tedesco Prussian",
-    "english": "Prussian; Prussian (2)",
-    "chinese": "俄罗斯语Name; 白俄罗斯(2)",
+    "english": "Prussian",
+    "chinese": "俄罗斯语Name; 白俄罗斯",
     "frequency": 0,
     "rank": 999999
   },
@@ -187271,7 +187271,7 @@ const VOCABULARY_DATA = [
     "italian": "puddinga",
     "dictionary": "noun (geologia) roccia, conglomerata di ciottoli grossi di forma tondeggiante a cement",
     "english": "pudding",
-    "chinese": "-布丁 -布丁 -布丁 -布丁",
+    "chinese": "-布丁",
     "frequency": 0,
     "rank": 999999
   },
@@ -187582,7 +187582,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "puntinista",
     "dictionary": "adjective (arte) inerente al puntinismo pointillist",
-    "english": "dots; (2)",
+    "english": "dots",
     "chinese": "点; (二)",
     "frequency": 0,
     "rank": 999999
@@ -187718,8 +187718,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "purificatore",
     "dictionary": "adjective che purifica purifier",
-    "english": "purifier; Purifier (2)",
-    "chinese": "净化器; 净化器(2)",
+    "english": "purifier",
+    "chinese": "净化器",
     "frequency": 0,
     "rank": 999999
   },
@@ -187806,7 +187806,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "putrido",
     "dictionary": "adjective che è in condizione di putrefazione (senso figurato) che è immorale unhealthy",
-    "english": "putrido; putrido (2)",
+    "english": "putrido",
     "chinese": "Putrido (英语).; putrido(2) 数据来源:",
     "frequency": 0,
     "rank": 999999
@@ -187838,8 +187838,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "quadrangolare",
     "dictionary": "adjective relativo a un quadrangolo; che ha forma di quadrangolo (sport) di incontro disputato tra s",
-    "english": "quadrangular; square (2)",
-    "chinese": "四边形; 平方 (2)",
+    "english": "quadrangular; square",
+    "chinese": "四边形; 平方",
     "frequency": 0,
     "rank": 999999
   },
@@ -187878,7 +187878,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "quadrilatero",
     "dictionary": "adjective che ha quattro lati four-sided quadrilateral",
-    "english": "quadrilateral; (2)",
+    "english": "quadrilateral",
     "chinese": "四边形; (二)",
     "frequency": 0,
     "rank": 999999
@@ -188014,7 +188014,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "quantunque",
     "dictionary": "conjunction indica una condizione non sufficiente although",
-    "english": "♪; (2)",
+    "english": "♪",
     "chinese": "(待修复); (二)",
     "frequency": 0,
     "rank": 999999
@@ -188118,7 +188118,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "quaternario",
     "dictionary": "adjective (metrica) costituito da uno o più quaternari quaternary",
-    "english": "quaternary; (2)",
+    "english": "quaternary",
     "chinese": "四、导 言; (二)",
     "frequency": 0,
     "rank": 999999
@@ -189054,8 +189054,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "rampicante",
     "dictionary": "adjective che si arrampica o è in grado di arrampicarsi climbing",
-    "english": "climbing; climbing (2)",
-    "chinese": "爬来爬去; 攀爬(2)",
+    "english": "climbing",
+    "chinese": "爬来爬去; 攀爬",
     "frequency": 0,
     "rank": 999999
   },
@@ -189558,8 +189558,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "reazionario",
     "dictionary": "adjective (storia) (politica) (diritto) di chi si oppone al progresso reactionary",
-    "english": "reactionary; reactionary (2)",
-    "chinese": "反动分子; 反动派(2)",
+    "english": "reactionary",
+    "chinese": "反动分子; 反动派",
     "frequency": 0,
     "rank": 999999
   },
@@ -189862,8 +189862,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "refrigeratore",
     "dictionary": "adjective che refrigera cooling refrigerant",
-    "english": "chiller; chillers (2)",
-    "chinese": "冷却器; 冷却器(2)",
+    "english": "chiller; chillers",
+    "chinese": "冷却器",
     "frequency": 0,
     "rank": 999999
   },
@@ -189894,8 +189894,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "regicida",
     "dictionary": "adjective che ha commesso un regicidio, anche con riferimento allo strumento del delitto che riguard",
-    "english": "regicida; Recycling (2)",
-    "chinese": "缩写; 再循环(2)",
+    "english": "regicida; Recycling",
+    "chinese": "缩写; 再循环",
     "frequency": 0,
     "rank": 999999
   },
@@ -189934,7 +189934,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "regnante",
     "dictionary": "adjective che regna reigning ruling",
-    "english": "reigning; (2)",
+    "english": "reigning",
     "chinese": "统治; (二)",
     "frequency": 0,
     "rank": 999999
@@ -189958,7 +189958,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "regolabile",
     "dictionary": "adjective adjustable",
-    "english": "adjustable adjustable",
+    "english": "adjustable",
     "chinese": "可调整",
     "frequency": 0,
     "rank": 999999
@@ -190630,8 +190630,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "rettangolo",
     "dictionary": "adjective (geometria) relativo a figura geometrica avente angoli retti rectangle",
-    "english": "rectangle; Rectangle (2)",
-    "chinese": "矩形; 矩形 (2)",
+    "english": "rectangle",
+    "chinese": "矩形",
     "frequency": 0,
     "rank": 999999
   },
@@ -190806,8 +190806,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ribaltabile",
     "dictionary": "adjective che può essere ribaltato folding",
-    "english": "tipping; tipping (2)",
-    "chinese": "倾斜; 倾斜(2)",
+    "english": "tipping",
+    "chinese": "倾斜",
     "frequency": 0,
     "rank": 999999
   },
@@ -191374,8 +191374,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "riformista",
     "dictionary": "adjective (politica) (diritto) che è fautore del riformismo reform reformist",
-    "english": "reformist; reformist (2)",
-    "chinese": "改革者; 改革派(2)",
+    "english": "reformist",
+    "chinese": "改革者; 改革派",
     "frequency": 0,
     "rank": 999999
   },
@@ -191823,7 +191823,7 @@ const VOCABULARY_DATA = [
     "italian": "rinnovazione",
     "dictionary": "noun renewal renovation repetition",
     "english": "renewal",
-    "chinese": "续 续",
+    "chinese": "续",
     "frequency": 0,
     "rank": 999999
   },
@@ -191886,8 +191886,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "rinunciatario",
     "dictionary": "adjective che rinuncia a far valere un diritto renunciative renunciatory (di individuo)che si arrend",
-    "english": "waiver; Retirement (2)",
-    "chinese": "放弃; 退休(2)",
+    "english": "waiver; Retirement",
+    "chinese": "放弃; 退休",
     "frequency": 0,
     "rank": 999999
   },
@@ -192398,7 +192398,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "rivoltoso",
     "dictionary": "adjective che fa parte di una rivolta rebel rebellious riotous",
-    "english": "revolt; (2)",
+    "english": "revolt",
     "chinese": "叛乱; (二)",
     "frequency": 0,
     "rank": 999999
@@ -192430,7 +192430,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "roano",
     "dictionary": "adjective di pelame di animale bianco picchiettato di marrone, nero o rossiccio roan",
-    "english": "roan; (2)",
+    "english": "roan",
     "chinese": "罗安; (二)",
     "frequency": 0,
     "rank": 999999
@@ -192606,15 +192606,15 @@ const VOCABULARY_DATA = [
   {
     "italian": "romagnolo",
     "dictionary": "adjective (geografia) relativo alla Romagna from Romagna of Romagna",
-    "english": "Romagna; Italian (2)",
-    "chinese": "罗马; 意大利语(2)",
+    "english": "Romagna; Italian",
+    "chinese": "罗马; 意大利语",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "romancio",
     "dictionary": "adjective (linguistica) di lingua neolatina, appartenente al sottogruppo delle lingue retoromanze, p",
-    "english": "romancio; (2)",
+    "english": "romancio",
     "chinese": "罗马语; (二)",
     "frequency": 0,
     "rank": 999999
@@ -192718,16 +192718,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "romboide",
     "dictionary": "adjective (geometria) che è a forma di rombo rhomboid",
-    "english": "romboid; Romboid (2)",
-    "chinese": "龙波; 罗姆博伊德(2)",
+    "english": "romboid",
+    "chinese": "龙波; 罗姆博伊德",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "romeno",
     "dictionary": "adjective della Romania Romanian Roumanian Rumanian",
-    "english": "Romanian; Romanian (2); Romanian (3)",
-    "chinese": "罗马尼亚语; 罗马尼亚(2); 罗马尼亚(3)",
+    "english": "Romanian",
+    "chinese": "罗马尼亚语; 罗马尼亚",
     "frequency": 0,
     "rank": 999999
   },
@@ -193334,7 +193334,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ruminante",
     "dictionary": "adjective (zoologia) (mammalogia) che è in grado di ruminare, cioè di far tornare dal rumine alla bo",
-    "english": "ruminant; (2)",
+    "english": "ruminant",
     "chinese": "反光剂; (二)",
     "frequency": 0,
     "rank": 999999
@@ -193622,8 +193622,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sadduceo",
     "dictionary": "adjective (storia) di seguace di una setta religiosa ebraica che propugnava la mortalità dell'anima ",
-    "english": "Sadduce; Sadduce (2)",
-    "chinese": "悲伤; 萨杜塞(2)",
+    "english": "Sadduce",
+    "chinese": "悲伤; 萨杜塞",
     "frequency": 0,
     "rank": 999999
   },
@@ -193790,8 +193790,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "salentino",
     "dictionary": "adjective (geografia) che riguarda il Salento Salento",
-    "english": "salty; (2); salty (3)",
-    "chinese": "咸质; (二); 盐质(3)",
+    "english": "salty",
+    "chinese": "咸质; (二); 盐质",
     "frequency": 0,
     "rank": 999999
   },
@@ -193878,8 +193878,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "salivare",
     "dictionary": "adjective (biologia) (biochimica) (fisiologia) (medicina) della saliva salivary",
-    "english": "saliva; savour (2)",
-    "chinese": "唾液; 鲜肉(2)",
+    "english": "saliva; savour",
+    "chinese": "唾液; 鲜肉",
     "frequency": 0,
     "rank": 999999
   },
@@ -193950,7 +193950,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "salterio",
     "dictionary": "noun (religione), nella Bibbia, il libro dei salmi Psalter",
-    "english": "Jumping; (2)",
+    "english": "Jumping",
     "chinese": "跳跃; (二)",
     "frequency": 0,
     "rank": 999999
@@ -194198,8 +194198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sardo",
     "dictionary": "adjective (geografia) della Sardegna Sardinian",
-    "english": "Sardinian; (2); Sardinian (3)",
-    "chinese": "撒丁岛人; (二); 撒丁岛(3)",
+    "english": "Sardinian",
+    "chinese": "撒丁岛人; (二); 撒丁岛",
     "frequency": 0,
     "rank": 999999
   },
@@ -194342,7 +194342,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "savoiardo",
     "dictionary": "adjective riferito a qualcosa o qualcuno originario della Savoia oppure alla Casa Savoia Savoy Savoy",
-    "english": "savoury; (2)",
+    "english": "savoury",
     "chinese": "鲜肉; (二)",
     "frequency": 0,
     "rank": 999999
@@ -194462,7 +194462,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sbieca",
     "dictionary": "noun femminile di sbieco askew aslant awry oblique slanting sloping",
-    "english": "Sketch; (2)",
+    "english": "Sketch",
     "chinese": "缩写; (二)",
     "frequency": 0,
     "rank": 999999
@@ -194478,7 +194478,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sbieco",
     "dictionary": "noun pezzo si stoffa tagliato non in linea retta askew aslant awry oblique slanting sloping",
-    "english": "Sketch; (2)",
+    "english": "Sketch",
     "chinese": "缩写; (二)",
     "frequency": 0,
     "rank": 999999
@@ -194998,8 +194998,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "scapolare",
     "dictionary": "adjective (biologia) (anatomia) (fisiologia) che riguarda la scapola escape scapular",
-    "english": "bachelor; bachelor (2); bachelor (3)",
-    "chinese": "单身; 单身(2); 单身(3)",
+    "english": "bachelor",
+    "chinese": "单身",
     "frequency": 0,
     "rank": 999999
   },
@@ -195846,7 +195846,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "scioperante",
     "dictionary": "adjective che si astiene dal lavoro striking",
-    "english": "striker; (1)",
+    "english": "striker",
     "chinese": "罢工者; (1) 国家",
     "frequency": 0,
     "rank": 999999
@@ -196470,7 +196470,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "score",
     "dictionary": "noun score",
-    "english": "score score score",
+    "english": "score",
     "chinese": "得分分数",
     "frequency": 0,
     "rank": 999999
@@ -196574,8 +196574,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "screenshot",
     "dictionary": "noun (neologismo) porzione di immagine copiata dallo schermo di un computer e salvata",
-    "english": "screenshot screenshot screenshot",
-    "chinese": "截图截图截图",
+    "english": "screenshot",
+    "chinese": "截图",
     "frequency": 0,
     "rank": 999999
   },
@@ -196654,8 +196654,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "scrivente",
     "dictionary": "adjective che scrive writing",
-    "english": "writer; writing (2)",
-    "chinese": "编剧; 书写(2)",
+    "english": "writer; writing",
+    "chinese": "编剧; 书写",
     "frequency": 0,
     "rank": 999999
   },
@@ -197078,8 +197078,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "secessionista",
     "dictionary": "adjective che è fautore di una secessione breakaway secessionist",
-    "english": "secessionist; secession (2)",
-    "chinese": "分离主义; 分离(2)",
+    "english": "secessionist; secession",
+    "chinese": "分离主义; 分离",
     "frequency": 0,
     "rank": 999999
   },
@@ -197198,8 +197198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sedizioso",
     "dictionary": "adjective che provoca tumulti insurrectionary rabble-rousing rebellious riotous seditious",
-    "english": "sedentary; seats (2)",
-    "chinese": "静态; 席位(2)",
+    "english": "sedentary; seats",
+    "chinese": "静态; 席位",
     "frequency": 0,
     "rank": 999999
   },
@@ -197558,8 +197558,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "semilavorato",
     "dictionary": "adjective di materia prima che ha subito una lavorazione per formare la fase intermedia per produrre",
-    "english": "semi-finished; semi-finished (2)",
-    "chinese": "半成品; 半成品(2)",
+    "english": "semi-finished",
+    "chinese": "半成品",
     "frequency": 0,
     "rank": 999999
   },
@@ -197814,8 +197814,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sempreverde",
     "dictionary": "adjective (botanica) di pianta che non resta mai senza foglie evergreen",
-    "english": "Evergreen; Evergreen (2)",
-    "chinese": "常绿; 常绿(2)",
+    "english": "Evergreen",
+    "chinese": "常绿",
     "frequency": 0,
     "rank": 999999
   },
@@ -198118,7 +198118,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sessantanove",
     "dictionary": "noun (neologismo) particolare pratica sessuale orale che consiste nella contemporanea azione del cun",
-    "english": "Sixty-nine; (2)",
+    "english": "Sixty-nine",
     "chinese": "六十九岁; (二)",
     "frequency": 0,
     "rank": 999999
@@ -198414,8 +198414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sfaccendato",
     "dictionary": "adjective di individuo che non fa non niente indolent lazy",
-    "english": "faceted; faceted (2)",
-    "chinese": "面额; 面额(2)",
+    "english": "faceted",
+    "chinese": "面额",
     "frequency": 0,
     "rank": 999999
   },
@@ -198510,7 +198510,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sfegatato",
     "dictionary": "adjective (familiare) che è esaltato di qualcosa o di qualcuno daredevil",
-    "english": "vented; (2)",
+    "english": "vented",
     "chinese": "通风; (二)",
     "frequency": 0,
     "rank": 999999
@@ -198646,8 +198646,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sfollato",
     "dictionary": "adjective che ha abbandonato la propria casa per la guerra o per altri motivi derivanti da pericolo ",
-    "english": "displaced; displaced (2)",
-    "chinese": "流离失所者; 流离失所者(2)",
+    "english": "displaced",
+    "chinese": "流离失所者",
     "frequency": 0,
     "rank": 999999
   },
@@ -198750,8 +198750,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sfumato",
     "dictionary": "adjective di colore che sbiadisce a poco a poco faded indefinite light lost muted pale",
-    "english": "nuanced; muffler (2)",
-    "chinese": "细微; 搅拌机(2)",
+    "english": "nuanced; muffler",
+    "chinese": "细微; 搅拌机",
     "frequency": 0,
     "rank": 999999
   },
@@ -198814,7 +198814,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sgombero",
     "dictionary": "adjective libero, vuotato, liberato dall'ingombro move removal",
-    "english": "cleared; (2)",
+    "english": "cleared",
     "chinese": "清除; (二)",
     "frequency": 0,
     "rank": 999999
@@ -198854,7 +198854,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sgonfio",
     "dictionary": "adjective che è floscio (per estensione) (senso figurato) a terra flat",
-    "english": "Swelling; (2)",
+    "english": "Swelling",
     "chinese": "居住; (二)",
     "frequency": 0,
     "rank": 999999
@@ -199030,8 +199030,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "siberiano",
     "dictionary": "adjective (geografia) della Siberia Siberian freezing icy (per estensione)di temperatura molto bassa",
-    "english": "Siberian; Siberian (2)",
-    "chinese": "西伯利亚语Name; 西伯利亚(2)",
+    "english": "Siberian",
+    "chinese": "西伯利亚语Name; 西伯利亚",
     "frequency": 0,
     "rank": 999999
   },
@@ -199046,7 +199046,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "Sibilla",
     "dictionary": "pronoun (antroponimo) nome proprio di persona femminile Sibyl",
-    "english": "Sibilla; sibilla",
+    "english": "Sibilla",
     "chinese": "西比利亚; 锡比拉语Name",
     "frequency": 0,
     "rank": 999999
@@ -199286,7 +199286,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "silotese",
     "dictionary": "adjective (geografia) relativo a Sylhet (linguistica) relativo alla lingua silotese Sylheti",
-    "english": "silotese; (2)",
+    "english": "silotese",
     "chinese": "仓储; (二)",
     "frequency": 0,
     "rank": 999999
@@ -199358,7 +199358,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "simoniaco",
     "dictionary": "adjective che vendeva oggetti sacri simoniac simoniacal simonist",
-    "english": "simonia; (2)",
+    "english": "simonia",
     "chinese": "锡莫尼亚语Name; (二)",
     "frequency": 0,
     "rank": 999999
@@ -199558,7 +199558,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "singalese",
     "dictionary": "adjective (gegrafia) dello Sri Lanka Singhalese Sinhalese",
-    "english": "singalese; (2)",
+    "english": "singalese",
     "chinese": "歌词; (二)",
     "frequency": 0,
     "rank": 999999
@@ -199582,8 +199582,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sinistrato",
     "dictionary": "adjective (araldica) attributo araldico che si applica a: on the sinister",
-    "english": "left; left (2)",
-    "chinese": "左边; 左边(2)",
+    "english": "left",
+    "chinese": "左边",
     "frequency": 0,
     "rank": 999999
   },
@@ -200110,7 +200110,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sloveno",
     "dictionary": "adjective (geografia) concernente la Slovenia Slovene Slovenian",
-    "english": "Slovenian; (2); (3)",
+    "english": "Slovenian",
     "chinese": "斯洛文尼亚语Name; (二); (三) 国家",
     "frequency": 0,
     "rank": 999999
@@ -200550,7 +200550,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sociniano",
     "dictionary": "adjective (religione) relativo al socinianesimo Socinian",
-    "english": "Sociniano; (2)",
+    "english": "Sociniano",
     "chinese": "社会; (二)",
     "frequency": 0,
     "rank": 999999
@@ -201414,8 +201414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sommesso",
     "dictionary": "adjective detto in modo sussurrato, appena percettibile hushed low meek murmured passive quiet",
-    "english": "submerged; Submerged (2); submerged (3)",
-    "chinese": "被淹没; 潜水(2); 潜水(3)",
+    "english": "submerged",
+    "chinese": "被淹没; 潜水",
     "frequency": 0,
     "rank": 999999
   },
@@ -203262,8 +203262,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sporgente",
     "dictionary": "adjective che sporge projecting prominent protruding",
-    "english": "protruding; protruding (2)",
-    "chinese": "铺垫; 缩写(2)",
+    "english": "protruding",
+    "chinese": "铺垫; 缩写",
     "frequency": 0,
     "rank": 999999
   },
@@ -203310,8 +203310,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sposalizio",
     "dictionary": "adjective (antico) relativo al matrimonio bridal",
-    "english": "Marriage; Marriage (2)",
-    "chinese": "结婚; 婚姻(2)",
+    "english": "Marriage",
+    "chinese": "结婚; 婚姻",
     "frequency": 0,
     "rank": 999999
   },
@@ -203342,7 +203342,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "spread",
     "dictionary": "noun spread",
-    "english": "spread spread",
+    "english": "spread",
     "chinese": "传播",
     "frequency": 0,
     "rank": 999999
@@ -203454,7 +203454,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sprovveduto",
     "dictionary": "adjective che non ha dimestichezza o conoscenza di come funzionano le cose in un determinato contest",
-    "english": "Unproved; (2)",
+    "english": "Unproved",
     "chinese": "未证实; (二)",
     "frequency": 0,
     "rank": 999999
@@ -204038,8 +204038,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "statistico",
     "dictionary": "adjective (matematica) che concerne la statistica statistical",
-    "english": "Statistical Office; Statistics (2)",
-    "chinese": "统计局; 统计(2)",
+    "english": "Statistical Office; Statistics",
+    "chinese": "统计局; 统计",
     "frequency": 0,
     "rank": 999999
   },
@@ -204414,8 +204414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "steroide",
     "dictionary": "noun (biologia) (biochimica) qualsiasi ormone derivato dal colesterolo, strutturalmente simile all'i",
-    "english": "steroid steroid",
-    "chinese": "类固醇类固醇",
+    "english": "steroid",
+    "chinese": "类固醇",
     "frequency": 0,
     "rank": 999999
   },
@@ -204446,7 +204446,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "sterrato",
     "dictionary": "adjective conseguito mediante sterro dirt unpaved",
-    "english": "Dirt road; (2)",
+    "english": "Dirt road",
     "chinese": "干道; (二)",
     "frequency": 0,
     "rank": 999999
@@ -204862,7 +204862,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "storno",
     "dictionary": "adjective (zootecnia) di mantello di cavallo di colore grigio scuro con puntini bianchi cancellation",
-    "english": "Stomach; (2); (3)",
+    "english": "Stomach",
     "chinese": "胃脏; (二); (三) 国家",
     "frequency": 0,
     "rank": 999999
@@ -205638,7 +205638,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "succedaneo",
     "dictionary": "adjective di prodotto che può surrogare un altro substitute succedaneous succedaneum surrogate",
-    "english": "succeda; (2)",
+    "english": "succeda",
     "chinese": "苏西达; (二)",
     "frequency": 0,
     "rank": 999999
@@ -205838,8 +205838,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "sumero",
     "dictionary": "adjective (storia) di o relativo al popolo sumero Sumerian Sumeric",
-    "english": "sumer; (2); sumer (3)",
-    "chinese": "总结器; (二); 总和(3)",
+    "english": "sumer",
+    "chinese": "总结器; (二); 总和",
     "frequency": 0,
     "rank": 999999
   },
@@ -206198,8 +206198,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "surplus",
     "dictionary": "noun (economia) soprappiù produttivo surplus",
-    "english": "surplus surplus surplus",
-    "chinese": "盈余盈余",
+    "english": "surplus",
+    "chinese": "盈余",
     "frequency": 0,
     "rank": 999999
   },
@@ -206574,8 +206574,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "swahili",
     "dictionary": "adjective (etnologia) di un popolo bantu residente nell'Africa centro-orientale Swahili",
-    "english": "Swahili; Swahili (2)",
-    "chinese": "斯瓦希里语Name; 斯瓦希里语(2)",
+    "english": "Swahili",
+    "chinese": "斯瓦希里语Name; 斯瓦希里语",
     "frequency": 0,
     "rank": 999999
   },
@@ -206638,7 +206638,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tabulare",
     "dictionary": "adjective di forma piatta (matematica) (informatica) (statistica) che riguarda una tabella tabular",
-    "english": "tabular; Table (2)",
+    "english": "tabular; Table",
     "chinese": "表格; 表2. 国家",
     "frequency": 0,
     "rank": 999999
@@ -206950,8 +206950,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tanzaniano",
     "dictionary": "adjective (geografia) della Tanzania Tanzanian",
-    "english": "Tanzanian; Tanzanian (2)",
-    "chinese": "坦桑尼亚; 坦桑尼亚(2)",
+    "english": "Tanzanian",
+    "chinese": "坦桑尼亚",
     "frequency": 0,
     "rank": 999999
   },
@@ -208726,7 +208726,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "ternario",
     "dictionary": "adjective (musica) di ritmo articolato in battute di tre unità di tempo (metrica) costituito da una ",
-    "english": "ternary; (2)",
+    "english": "ternary",
     "chinese": "毒性; (二)",
     "frequency": 0,
     "rank": 999999
@@ -208894,7 +208894,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "terziario",
     "dictionary": "noun (religione), (cristianesimo) laico che, senza dover fronte ai voti , osserva le norme precettiv",
-    "english": "Tertiary; (2)",
+    "english": "Tertiary",
     "chinese": "三年级; (二)",
     "frequency": 0,
     "rank": 999999
@@ -209134,7 +209134,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tetragono",
     "dictionary": "adjective (geometria) che è composto da quattro angoli firm steadfast tetragonal unshakable unyieldi",
-    "english": "Tetra; (2)",
+    "english": "Tetra",
     "chinese": "四进制; (二)",
     "frequency": 0,
     "rank": 999999
@@ -209431,7 +209431,7 @@ const VOCABULARY_DATA = [
     "italian": "tintarella",
     "dictionary": "noun suntan tan",
     "english": "tyrant",
-    "chinese": "暴君 暴君",
+    "chinese": "暴君",
     "frequency": 0,
     "rank": 999999
   },
@@ -209527,7 +209527,7 @@ const VOCABULARY_DATA = [
     "italian": "tirabaci",
     "dictionary": "noun kiss curl lovelock",
     "english": "tyrant",
-    "chinese": "暴君 暴君",
+    "chinese": "暴君",
     "frequency": 0,
     "rank": 999999
   },
@@ -209591,7 +209591,7 @@ const VOCABULARY_DATA = [
     "italian": "tiritera",
     "dictionary": "noun rigmarole",
     "english": "tyrant",
-    "chinese": "暴君 暴君",
+    "chinese": "暴君",
     "frequency": 0,
     "rank": 999999
   },
@@ -209655,7 +209655,7 @@ const VOCABULARY_DATA = [
     "italian": "tirso",
     "dictionary": "noun thyrsus",
     "english": "tyrant",
-    "chinese": "暴君 暴君",
+    "chinese": "暴君",
     "frequency": 0,
     "rank": 999999
   },
@@ -209862,8 +209862,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "tonificante",
     "dictionary": "adjective che arreca beneficio invigorating tonic",
-    "english": "toning; toning (2)",
-    "chinese": "调试; 吨位(2)",
+    "english": "toning",
+    "chinese": "调试; 吨位",
     "frequency": 0,
     "rank": 999999
   },
@@ -209902,7 +209902,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "topazio",
     "dictionary": "adjective (colore) del colore del topazio topaz",
-    "english": "♪; (2)",
+    "english": "♪",
     "chinese": "(待修复); (二)",
     "frequency": 0,
     "rank": 999999
@@ -210310,7 +210310,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "tracagnotto",
     "dictionary": "adjective di individuo di piccola altezza e di fisico grosso dumpy squat stocky thickset",
-    "english": "Tracagnotto; (2)",
+    "english": "Tracagnotto",
     "chinese": "特拉卡尼奥托; (二)",
     "frequency": 0,
     "rank": 999999
@@ -210558,8 +210558,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "transatlantico",
     "dictionary": "adjective dall'altra parte dell'oceano Atlantico che attraversa l'oceano Atlantico transatlantic",
-    "english": "transatlantic; transatlantic (2)",
-    "chinese": "跨大西洋; 跨大西洋(2)",
+    "english": "transatlantic",
+    "chinese": "跨大西洋",
     "frequency": 0,
     "rank": 999999
   },
@@ -210726,8 +210726,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "transitorio",
     "dictionary": "adjective circoscritto nel tempo (diritto) di delibere che disciplinano il transito da vecchie a nuo",
-    "english": "Transitional; Transitional (2)",
-    "chinese": "过渡; 过渡(2)",
+    "english": "Transitional",
+    "chinese": "过渡",
     "frequency": 0,
     "rank": 999999
   },
@@ -210790,8 +210790,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "trapezoide",
     "dictionary": "adjective (matematica) (geometria) di forma simile a quella del trapezio trapezoid trapezoidal",
-    "english": "trapezoid; trapezoid (2)",
-    "chinese": "夹层素; 夹子素(2)",
+    "english": "trapezoid",
+    "chinese": "夹层素; 夹子素",
     "frequency": 0,
     "rank": 999999
   },
@@ -211014,7 +211014,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "traslato",
     "dictionary": "adjective cambiato, mutato tramite linguaggio figurato shifted",
-    "english": "translating; (2)",
+    "english": "translating",
     "chinese": "翻译; (二)",
     "frequency": 0,
     "rank": 999999
@@ -211662,7 +211662,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "trinciato",
     "dictionary": "adjective (araldica) attributo araldico che si applica a uno scudo, o una figura, diviso in due part",
-    "english": "chopped; (2)",
+    "english": "chopped",
     "chinese": "砍伤; (二)",
     "frequency": 0,
     "rank": 999999
@@ -211830,7 +211830,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "trito",
     "dictionary": "adjective (senso figurato) di uso corrente chopped crushed ground minced pounded threadbare",
-    "english": "Tried; (2)",
+    "english": "Tried",
     "chinese": "尝试; (二)",
     "frequency": 0,
     "rank": 999999
@@ -211854,8 +211854,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "trituratore",
     "dictionary": "noun che tritura grinder grinding",
-    "english": "shredder; shredder (2)",
-    "chinese": "碎纸机; 碎纸机(2)",
+    "english": "shredder",
+    "chinese": "碎纸机",
     "frequency": 0,
     "rank": 999999
   },
@@ -212494,8 +212494,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "turkmeno",
     "dictionary": "adjective (linguistica) lingua turkmena turkmen language",
-    "english": "Turkmen; turkish (2)",
-    "chinese": "土库曼斯坦; 土耳其(2)",
+    "english": "Turkmen; turkish",
+    "chinese": "土库曼斯坦; 土耳其",
     "frequency": 0,
     "rank": 999999
   },
@@ -212734,8 +212734,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "ultraleggero",
     "dictionary": "adjective di massa eccezionalmente ridotta ultralight",
-    "english": "ultralight; ultralight (2)",
-    "chinese": "超光线; 超光线(2)",
+    "english": "ultralight",
+    "chinese": "超光线",
     "frequency": 0,
     "rank": 999999
   },
@@ -212806,8 +212806,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "umanista",
     "dictionary": "adjective (raro) umanistico humanist",
-    "english": "humanist; humane (2)",
-    "chinese": "人文主义; 人道(2)",
+    "english": "humanist; humane",
+    "chinese": "人文主义; 人道",
     "frequency": 0,
     "rank": 999999
   },
@@ -212854,8 +212854,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "umbro",
     "dictionary": "noun (geografia) chi abita in Umbria (storia) che riguarda gli Umbri, antica popolazione dell'Italia",
-    "english": "♪; black (2)",
-    "chinese": "(待修复); 黑色(2)",
+    "english": "♪; black",
+    "chinese": "(待修复); 黑色",
     "frequency": 0,
     "rank": 999999
   },
@@ -212919,7 +212919,7 @@ const VOCABULARY_DATA = [
     "italian": "unghiato",
     "dictionary": "adjective (araldica) attributo araldico che si applica agli animali (tranne il leone e l'aquila) con",
     "english": "nailed",
-    "chinese": "钉钉",
+    "chinese": "钉",
     "frequency": 0,
     "rank": 999999
   },
@@ -213318,8 +213318,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "usbeco",
     "dictionary": "adjective (geografia) dell'Uzbekistan Uzbek",
-    "english": "usbe; usbex (2); usbex (3)",
-    "chinese": "常规; 乌贝克斯(2); 乌贝克斯(3)",
+    "english": "usbe; usbex",
+    "chinese": "常规; 乌贝克斯",
     "frequency": 0,
     "rank": 999999
   },
@@ -213598,7 +213598,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "valdese",
     "dictionary": "adjective (religione), (cristianesimo) relativo a Pietro Valdo o al valdismo Waldensian",
-    "english": "Valdese; (2)",
+    "english": "Valdese",
     "chinese": "瓦尔德塞; (二)",
     "frequency": 0,
     "rank": 999999
@@ -213638,7 +213638,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "valetudinario",
     "dictionary": "adjective (letterario) che, pur non essendo malato, è di salute cagionevole o perennemente in appren",
-    "english": "valetudinary; (1)",
+    "english": "valetudinary",
     "chinese": "普通类; (1) 国家",
     "frequency": 0,
     "rank": 999999
@@ -213694,8 +213694,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vallone",
     "dictionary": "adjective della regione sud-orientale del Belgio Walloon",
-    "english": "vallone; (2); valley (3)",
-    "chinese": "维罗尼; (二); 谷类(3)",
+    "english": "vallone; valley",
+    "chinese": "维罗尼; (二); 谷类",
     "frequency": 0,
     "rank": 999999
   },
@@ -213814,8 +213814,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vanaglorioso",
     "dictionary": "adjective che è pervaso da vanagloria boastful bombastic pompous vainglorious",
-    "english": "vanaglorious; vanaglorious (2)",
-    "chinese": "虚荣; 光荣(2)",
+    "english": "vanaglorious",
+    "chinese": "虚荣; 光荣",
     "frequency": 0,
     "rank": 999999
   },
@@ -214046,7 +214046,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vassallo",
     "dictionary": "adjective (storia)in epoca medievale, che riceveva l'amministrazione di specifici territori in conce",
-    "english": "vassal; (2)",
+    "english": "vassal",
     "chinese": "货币; (二)",
     "frequency": 0,
     "rank": 999999
@@ -214118,7 +214118,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "veicolare",
     "dictionary": "adjective (trasporti) relativo ai veicoli vehicle vehicular",
-    "english": "vehicular; (2)",
+    "english": "vehicular",
     "chinese": "车辆; (二)",
     "frequency": 0,
     "rank": 999999
@@ -214134,8 +214134,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "velare",
     "dictionary": "adjective (linguistica), (fonetica) di vocale o consonante caratterizzata da una posizione della lin",
-    "english": "sailing; sailing (2)",
-    "chinese": "航行; 航行(2)",
+    "english": "sailing",
+    "chinese": "航行",
     "frequency": 0,
     "rank": 999999
   },
@@ -214334,16 +214334,16 @@ const VOCABULARY_DATA = [
   {
     "italian": "veneziano",
     "dictionary": "adjective (tessile) rilievi eseguiti con il ricamo nei merletti di Venezia Venetian",
-    "english": "Venetian; Venetian (2)",
-    "chinese": "威尼斯语Name; 威尼斯人(2)",
+    "english": "Venetian",
+    "chinese": "威尼斯语Name; 威尼斯人",
     "frequency": 0,
     "rank": 999999
   },
   {
     "italian": "venezuelano",
     "dictionary": "adjective che riguarda il Venezuela Venezuelan",
-    "english": "Venezuelan; Venezuela (2)",
-    "chinese": "委内瑞拉; 委内瑞拉(2)",
+    "english": "Venezuelan; Venezuela",
+    "chinese": "委内瑞拉",
     "frequency": 0,
     "rank": 999999
   },
@@ -214414,8 +214414,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vepso",
     "dictionary": "adjective relativo ai vepsi Vepsian",
-    "english": "vepso; vepso (2)",
-    "chinese": "阴道; 维普索(2)",
+    "english": "vepso",
+    "chinese": "阴道; 维普索",
     "frequency": 0,
     "rank": 999999
   },
@@ -214526,7 +214526,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "verde erba",
     "dictionary": "noun grass green",
-    "english": "green grass grass",
+    "english": "green grass",
     "chinese": "绿草",
     "frequency": 0,
     "rank": 999999
@@ -214655,7 +214655,7 @@ const VOCABULARY_DATA = [
     "italian": "verde turchese",
     "dictionary": "noun turquoise green",
     "english": "turquoise green",
-    "chinese": "绿绿",
+    "chinese": "绿",
     "frequency": 0,
     "rank": 999999
   },
@@ -214734,7 +214734,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vermiglio",
     "dictionary": "adjective (letterario) detto di un colore rosso acceso; scarlatto, cremisi vermilion vermillion",
-    "english": "vermilion; (2)",
+    "english": "vermilion",
     "chinese": "ver; (二)",
     "frequency": 0,
     "rank": 999999
@@ -215382,8 +215382,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "viennese",
     "dictionary": "adjective relativo alla citta di Vienna Vienna Viennese viennese",
-    "english": "Viennese; Viennese (2)",
-    "chinese": "维也纳; 维也纳(2)",
+    "english": "Viennese",
+    "chinese": "维也纳",
     "frequency": 0,
     "rank": 999999
   },
@@ -215478,8 +215478,8 @@ const VOCABULARY_DATA = [
   {
     "italian": "vincolare",
     "dictionary": "adjective (meccanica) restraining",
-    "english": "binding; binding (2)",
-    "chinese": "约束; 约束性(2)",
+    "english": "binding",
+    "chinese": "约束; 约束性",
     "frequency": 0,
     "rank": 999999
   },
@@ -215806,7 +215806,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "vitalizio",
     "dictionary": "adjective che dura per tutta la vita for life lifetime",
-    "english": "vitality; (2)",
+    "english": "vitality",
     "chinese": "活力; (二)",
     "frequency": 0,
     "rank": 999999
@@ -216910,7 +216910,7 @@ const VOCABULARY_DATA = [
   {
     "italian": "zulù",
     "dictionary": "adjective facente parte della relativa tribù di lingua Bantu situata nel Natal e in Sudafrica boor l",
-    "english": "♪; (2)",
+    "english": "♪",
     "chinese": "(待修复); (二)",
     "frequency": 0,
     "rank": 999999

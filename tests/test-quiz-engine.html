@@ -201,6 +201,29 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     assertEqual(DimText.cleanGloss('the; 【二】'), 'the', '【二】 这种编号占位同样删掉');
   });
 
+  // ===== cleanGloss 的重复 token 兜底 =====
+  // 见 scripts/clean_italian_glosses.py —— 机翻管线在数据里留了 "road road" /
+  // "赢赢赢赢" 这类重复，会直接漏进选项文字。数据已清洗，这里是运行时兜底
+  // （自定义词本等来源还会带进同样的垃圾）。对半重复（"High school high
+  // school"）只在数据层处理，这里故意不动 —— "school"/"high" 相邻并不重复。
+  group('cleanGloss 重复 token 兜底', function () {
+    assertEqual(DimText.cleanGloss('road road'), 'road', '相邻重复 token 折叠');
+    assertEqual(DimText.cleanGloss('赢赢赢赢'), '赢', '纯 CJK 词自身重复折叠到最小单元');
+    assertEqual(DimText.cleanGloss('奶油奶油 奶油 奶油'), '奶油', 'CJK 折叠与相邻折叠互相催化');
+    assertEqual(DimText.cleanGloss('Nothing.; Nothing'), 'Nothing.; Nothing',
+      '不算重复的两个不同义项原样保留（句点 participates）');
+    assertEqual(DimText.cleanGloss('High school high school'), 'High school high school',
+      '对半重复是数据层的活，运行时不动');
+    assertEqual(DimText.cleanGloss('Bonbon'), 'Bonbon', '拉丁重复词形是真实单词，不折叠');
+    // AA 型叠词是真实中文词，运行时一律保留（此前 "妈妈" 被折成 "妈"）
+    ['妈妈', '谢谢', '常常', '猩猩', '母亲; 妈妈'].forEach(function (w) {
+      assertEqual(DimText.cleanGloss(w), w, 'AA 型叠词 "' + w + '" 原样保留');
+    });
+    assertEqual(DimText.cleanGloss('妈妈 妈妈'), '妈妈', 'AA 叠词的相邻重复仍折叠到一份');
+    assertEqual(DimText.cleanGloss('n.[数、物]常数,恒量'), 'n.[数、物]常数,恒量',
+      '没有重复时逐字节返回原文');
+  });
+
   // ===== utils: 义项重叠 / 同义判定 =====
   group('DimText 义项比较', function () {
     assert(DimText.glossesOverlap('search; look for', 'search'), '"search" 与 "search; look for" 同义');
@@ -386,7 +409,10 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     var first = null;
     buttons.forEach(function (b) { if (b.dataset.answer === raw) first = b; });
     assert(first !== null, 'data-answer 保留原始释义（判分链路不变）');
-    assertEqual(first ? first.textContent : '', 'the (feminine)', '按钮文字是清洗过的释义，用户看不到 (2)/(3)');
+    assertEqual(first ? first.querySelector('.option-text').textContent : '', 'the (feminine)',
+      '按钮文字(.option-text)是清洗过的释义，用户看不到 (2)/(3)');
+    assertEqual(first ? first.querySelector('.option-key').textContent : '', '1',
+      '第一个选项带键盘角标 1（与 PracticeFlow 的 1-4 快捷键呼应）');
 
     // 自定义词书 / 导入数据里的敌意字符串必须转义
     var hostile = '<img src=x onerror="alert(1)">';

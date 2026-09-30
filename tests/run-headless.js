@@ -28,6 +28,7 @@ const NODE_HARNESSES = ['test-french-data.js', 'test-german-course-data.js', 'te
 // 已经这样漏过三次。校验器覆盖的正是这块，接进来当阻断项。
 const VALIDATORS = [
   'scripts/validate_italian_extras.js',
+  'scripts/validate_italian_vocabulary.js',
   'scripts/validate_french_extras.js',
   'scripts/validate_french_vocabulary.js',
   'scripts/validate_french_conjugations.js',

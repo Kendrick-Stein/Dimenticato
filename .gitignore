@@ -78,3 +78,6 @@ worktrees/
 
 # 版权词典原件（保留在本地，不进公开仓库）
 deutsch-data/grammar/docs/学习资源/assets/*.zip
+
+# Playwright CLI 调试产物（日志 / 快照）
+.playwright-cli/

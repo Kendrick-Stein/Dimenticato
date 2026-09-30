@@ -66,7 +66,11 @@
         prompt: prompt.slice(0, 18),
         // 34 字符：变位模式的「人称 · 时态标签」需要这个宽度（26 会把时态
         // 切到只剩一半）；气泡宽度本身会按文字自适应，上限只防极端长释义。
-        sub: String(e.sub || '').trim().slice(0, 34)
+        sub: String(e.sub || '').trim().slice(0, 34),
+        // SM-2 store 按各语言的词头字段索引（SpacedRepetition.WORD_FIELD）。
+        // 德语的 answer 是带冠词的 display（"der Mann"），词头是 "Mann"；
+        // 按 answer 写 SRS 会生成选择题/复习永远读不到的孤儿条目。
+        srsKey: String(e.srsKey || answer).trim()
       });
     }
     return out;
@@ -80,6 +84,7 @@
           || (global.AppState && global.AppState.vocabulary) || [];
         list = d.map((w) => ({
           answer: w.italian,
+          srsKey: w.italian,
           prompt: w.chinese || w.english || '',
           sub: w.english || ''
         }));
@@ -90,6 +95,7 @@
           || (global.GermanApp && global.GermanApp.systemWords) || [];
         list = d.map((w) => ({
           answer: w.display || w.german,
+          srsKey: w.german,
           prompt: w.chinese || w.meaning || '',
           sub: w.english || w.meaning || ''
         }));
@@ -100,6 +106,7 @@
           || (global.EnglishApp && global.EnglishApp.systemWords) || [];
         list = d.map((w) => ({
           answer: w.english,
+          srsKey: w.english,
           prompt: w.chinese || w.meaning || '',
           sub: w.meaning || ''
         }));
@@ -110,6 +117,7 @@
           || lateGlobal('FRENCH_VOCABULARY_DATA') || [];
         list = d.map((w) => ({
           answer: w.display || w.french,
+          srsKey: w.french,
           prompt: w.chinese || w.meaning || '',
           sub: w.english || w.meaning || ''
         }));
@@ -211,6 +219,32 @@
         global.speechSynthesis.speak(u);
       }
     } catch (err) { /* 朗读失败不影响游戏 */ }
+  }
+
+  // ==================== 学习遥测 ====================
+
+  // 击落 / 沉底都是真实的学习事件：接进 StatsManager（每日统计）和
+  // SpacedRepetition（SM-2），打字游戏不再游离在学习闭环外 —— 此前打得
+  // 再多也不计每日统计、不影响复习调度。
+  // 变位模式只记统计：变位形式（'sto' / 'stehe auf'）不是词头，写进按
+  // 词头索引的 SRS store 会污染调度。
+  function recordOutcome(answer, correct) {
+    if (!session || !answer) return;
+    const key = (session.srsKeys && session.srsKeys.get(answer)) || answer;
+    try {
+      if (window.StatsManager) {
+        window.StatsManager.recordActivity(session.lang, {
+          correct: correct ? 1 : 0,
+          total: 1,
+          durationMs: 0,   // 单词耗时无意义；整局时长随 gameover 不重复计
+          words: [key]
+        });
+      }
+      if (session.mode === 'vocab' && window.SpacedRepetition) {
+        // 击落 = 记得（q4）；沉底 = 想不起来（q2，SM-2 重置间隔尽快安排复习）
+        window.SpacedRepetition.review(session.lang, key, correct ? 4 : 2);
+      }
+    } catch (err) { /* 遥测失败绝不影响游戏 */ }
   }
 
   // ==================== DOM 渲染 ====================
@@ -399,6 +433,7 @@
     session.difficulty = diff;
     session.speak = !speakToggle || speakToggle.checked;
     session.maxLives = 3;
+    session.srsKeys = new Map(entries.map((e) => [e.answer, e.srsKey || e.answer]));
 
     const canvas = $id('typingGameCanvas');
     const input = $id('typingGameInput');
@@ -472,6 +507,7 @@
           session.renderer.burst(payload.item.x, payload.item.y - 20, '#ffd54f', '+' + payload.points);
         }
         speak(payload.item.answer);
+        recordOutcome(payload.item.answer, true);
         break;
       case 'miss':
         hud();
@@ -480,6 +516,7 @@
           void input.offsetWidth;
           input.classList.add('typing-shake');
         }
+        recordOutcome(payload.item && payload.item.answer, false);
         break;
       case 'wrong':
         if (input) {
