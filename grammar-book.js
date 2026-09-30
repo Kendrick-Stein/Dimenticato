@@ -107,7 +107,7 @@ const GrammarBook = (() => {
   function init(customData, options) {
     // 语言解析前置：调用方可能传 options.lang（router）或 options.language
     // （german-app），都不传时回落到 resolveLang 的推断。语法数据现在是
-    // 按模块懒加载的（lib/lang-loader.js MODULES.grammar），缺席时先补拉。
+    // 按模块懒加载的（lib/languages.js profile.files.grammar），缺席时先补拉。
     const explicit = options && (options.lang || options.language);
     const targetLang = (explicit && LANG_PROFILES[explicit])
       ? explicit

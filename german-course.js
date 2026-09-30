@@ -123,7 +123,7 @@
       this.watchScreen();
     },
 
-    // 课程数据随德语词库一起懒加载（lib/lang-loader.js DATA.german）：
+    // 课程数据随德语词库一起懒加载（lib/languages.js 德语 files.vocab）：
     // 启动在别的语言时这里还没到，所以就绪检查放在每次渲染前，而不是 init。
     // 没就绪就把原因说清楚，不渲染一堆「0 个核心词」的空壳。
     ensureReady() {

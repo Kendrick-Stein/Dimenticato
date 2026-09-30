@@ -143,6 +143,8 @@ python3 scripts/reverso_presente_pipeline.py
 python3 scripts/build_german_grammar.py
 ```
 
+需要本地放一份旧 Docusaurus 语料 `deutsch-data/grammar/docs/`（无许可证，已从仓库删除）；没有它就只能沿用已提交的 `data/german-grammar-data.js`。
+
 ### English 词汇数据构建
 
 ```bash

@@ -25,12 +25,6 @@
   var THEME_KEY = 'dimenticato_theme';
   var BROWSE_PAGE = 200;
   var SESSION_SIZES = ['20', '50', '100', 'all'];
-  var SPECIAL_KEYS = {
-    italian: ['à', 'è', 'é', 'ì', 'ò', 'ù'],
-    german: ['ä', 'ö', 'ü', 'ß', 'Ä', 'Ö', 'Ü'],
-    french: ['é', 'è', 'ê', 'ë', 'à', 'â', 'ç', 'î', 'ï', 'ô', 'û', 'ù', 'œ'],
-    english: []
-  };
 
   function shuffleArray(list) {
     var a = list.slice();
@@ -48,15 +42,13 @@
   function readJson(key, fallback) {
     try { return global.DimStorage.safeParse(localStorage.getItem(key), fallback); } catch (e) { return fallback; }
   }
-  // 功能模块把全局数据写成顶层 const（不在 window 上），只能按裸名字取
+  // 语法数据文件把数据写成顶层 const（不在 window 上），只能按裸名字取：
+  // 名字来自 profile.grammarGlobal，用间接 eval 在全局词法环境里查（名字是本地常量，不含用户输入）
   function grammarData(l) {
-    switch (l) {
-      case 'italian': return typeof GRAMMAR_DATA !== 'undefined' ? GRAMMAR_DATA : null;
-      case 'german': return typeof GERMAN_GRAMMAR_DATA !== 'undefined' ? GERMAN_GRAMMAR_DATA : null;
-      case 'english': return typeof ENGLISH_GRAMMAR_DATA !== 'undefined' ? ENGLISH_GRAMMAR_DATA : null;
-      case 'french': return typeof FRENCH_GRAMMAR_DATA !== 'undefined' ? FRENCH_GRAMMAR_DATA : null;
-    }
-    return null;
+    var p = profile(l);
+    var name = p && p.grammarGlobal;
+    if (!name || !/^[A-Z_]+$/.test(name)) return null;
+    try { return (0, eval)('typeof ' + name + " !== 'undefined' ? " + name + ' : null'); } catch (e) { return null; }
   }
   function grammarBook() {
     return global.GrammarBook || (typeof GrammarBook !== 'undefined' ? GrammarBook : null);
@@ -652,7 +644,7 @@
       '<div class="section"><div class="section-head"><h2>练习方式</h2></div>' +
         '<div class="card-grid mode-grid">' +
           modeCard('quiz', 'quiz', '选择题', '看' + p.cn + '选释义，或反过来。1–4 选择，Enter 下一题。') +
-          modeCard('spell', 'keyboard', '拼写', '看释义写出单词，' + (l === 'german' ? '名词大小写有提示。' : l === 'french' ? '重音写错会单独指出。' : '支持特殊字母按键。')) +
+          modeCard('spell', 'keyboard', '拼写', '看释义写出单词，' + ({ german: '名词大小写有提示。', french: '重音写错会单独指出。' }[profile(l).spell] || '支持特殊字母按键。')) +
           modeCard('browse', 'menu_book', '浏览', '搜索、按等级筛选、标记已掌握、加入单词本。') +
           modeCard('typing', 'sports_esports', '打字游戏', '单词顺流而下，看释义打字击落。') +
           (hasModule('cognates', l) ? modeCard('cognates', 'join_inner', '同源词', '和英语同源的词，按构词规律成组学习。') : '') +
@@ -910,11 +902,23 @@
     reader.readAsText(file);
   }
 
+  // 语言切换按钮按 lib/languages.js 生成；index.html 里的静态按钮只是首帧占位
+  function renderLangSwitch() {
+    var box = document.querySelector('.lang-switch');
+    if (!box) return;
+    box.innerHTML = global.Languages.list.map(function (p) {
+      return '<button type="button" data-lang="' + escAttr(p.key) + '" aria-pressed="false" title="' + escAttr(p.cn) + '">' +
+        esc(p.code.toUpperCase()) + '</button>';
+    }).join('');
+  }
+
   function resetProgress() {
     var labels = global.DimStorage.LANGUAGE_LABELS;
-    var choice = prompt('要重置哪一部分的学习进度？\n\n1 - ' + labels.italian + '\n2 - ' + labels.german + '\n3 - ' + labels.english +
-      '\n4 - ' + labels.french + '\n5 - 全部语言\n\n单词本内容、主题和偏好设置不会被删除。请输入 1-5：');
-    var scope = { 1: 'italian', 2: 'german', 3: 'english', 4: 'french', 5: 'all' }[String(choice || '').trim()];
+    var scopes = global.DimStorage.LANGS.concat('all');
+    var menu = scopes.map(function (s, i) { return (i + 1) + ' - ' + (s === 'all' ? '全部语言' : labels[s]); }).join('\n');
+    var choice = prompt('要重置哪一部分的学习进度？\n\n' + menu +
+      '\n\n单词本内容、主题和偏好设置不会被删除。请输入 1-' + scopes.length + '：');
+    var scope = scopes[parseInt(String(choice || '').trim(), 10) - 1];
     if (!scope) return;
     var label = scope === 'all' ? '全部语言' : labels[scope];
     if (!confirm('确定要重置【' + label + '】的学习进度吗？此操作不可撤销。\n\n建议先导出一份备份。')) return;
@@ -1359,6 +1363,7 @@
       try { theme = localStorage.getItem(THEME_KEY); } catch (e) { /* ignore */ }
       applyTheme(theme || 'light');
       document.body.setAttribute('data-language', global.LangLoader.detectLanguage());
+      renderLangSwitch();
       syncLangSwitch();
       global.DimStorage.migrateLegacyWordbookProgress();
       $('spellKeys').innerHTML = '';
@@ -1367,7 +1372,7 @@
       Shell().onEnter(function (id) {
         renderScreen(id);
         if (id === 'spellScreen') {
-          var chars = SPECIAL_KEYS[lang()] || [];
+          var chars = (profile() && profile().accents) || [];
           $('spellKeys').innerHTML = chars.map(function (c) {
             return '<button type="button" class="key" data-char="' + escAttr(c) + '">' + esc(c) + '</button>';
           }).join('');
@@ -1385,7 +1390,7 @@
       });
       R('communityBrowseScreen', function () { MODULE_OPENERS.community(); });
       R('germanCourseScreen', function (l) {
-        if (l === 'german') MODULE_OPENERS.course(); else global.showScreen('homeScreen', { replaceRoute: true });
+        if (hasModule('course', l)) MODULE_OPENERS.course(); else global.showScreen('homeScreen', { replaceRoute: true });
       });
     }
   };

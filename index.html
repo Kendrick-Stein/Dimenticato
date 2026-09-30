@@ -79,6 +79,7 @@
           <a href="#/" data-nav="settings" data-nav-screen="settingsScreen">设置</a>
         </nav>
         <div class="topbar-tools">
+          <!-- 按钮由 app.js renderLangSwitch() 按 lib/languages.js 重新生成，这里是首帧占位 -->
           <div class="lang-switch" role="group" aria-label="学习语言">
             <button type="button" data-lang="italian" aria-pressed="true" title="意大利语">IT</button>
             <button type="button" data-lang="german" aria-pressed="false" title="德语">DE</button>
@@ -377,9 +378,9 @@
 
           <div class="practice-card">
             <div class="eyebrow" style="text-align:center">时态 · <span id="conjTenseTitle">-</span></div>
-            <div class="word-row">
-              <span class="word" id="conjInfinitive">-</span>
-              <span class="en hidden" id="conjEnglishLine">· <span id="conjEnglish">-</span></span>
+            <div class="prompt-word-row is-verb">
+              <span class="prompt-word" id="conjInfinitive">-</span>
+              <span class="prompt-meta hidden" id="conjEnglishLine">· <span id="conjEnglish">-</span></span>
             </div>
             <p class="chinese-hint"><strong id="conjPromptLabel">人称：</strong><span id="conjPronoun">-</span></p>
 
@@ -1073,6 +1074,7 @@ acqua</pre>
     首屏只加载「共享代码 + 当前语言的数据」，其余语言在切过去时才补。
     清单、注入顺序和补初始化的理由都写在 lib/lang-loader.js 顶部。
   -->
+  <script defer src="lib/languages.js"></script>
   <script defer src="lib/lang-loader.js"></script>
   <script defer src="lib/boot.js"></script>
 </body>

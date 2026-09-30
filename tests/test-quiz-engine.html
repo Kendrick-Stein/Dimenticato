@@ -22,6 +22,7 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
 <div id="results"></div>
 
 <script src="../lib/utils.js"></script>
+<script src="../lib/languages.js"></script>
 <script src="../lib/word-similarity.js"></script>
 <script src="../lib/quiz-engine.js"></script>
 <script src="../lib/practice-flow.js"></script>
@@ -629,8 +630,7 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
 
   // ===== 回归：分语言开关必须真的影响出题，而不只是亮一下 =====
   // 见 review: per-language-difficulty-toggles-are-inert
-  // 四个 App 传给 QuizEngine 的都是这行（german-app.js:288 / app.js:1401 /
-  // german-app.js:1637 / french-app.js:1180）：
+  // 旧版四个按语言分开的 App（已合并进统一的 app.js）传给 QuizEngine 的都是这行：
   //     get difficulty() { return QuizEngine.getDifficulty(); }
   // 这个 getter 永远返回 'easy'|'hard'。如果它优先于分语言设置，
   // 用户在德语设置页点"简单"就永远不生效 —— 控件亮着却在骗人。

@@ -696,6 +696,8 @@ label { font-size: 0.9rem; }
 .practice-card + .practice-card { margin-top: 1rem; }
 .prompt-card .kicker { margin-bottom: 0.9rem; }
 .prompt-word-row { display: flex; gap: 0.7rem; align-items: center; justify-content: center; }
+.prompt-word-row.is-verb { flex-wrap: wrap; gap: 0.2rem 0.7rem; align-items: baseline; margin: 0.4rem 0 0.8rem; }
+.prompt-word-row.is-verb .prompt-meta { margin-top: 0; font-size: 1rem; }
 .prompt-word {
   font-family: var(--serif);
   font-size: clamp(2.2rem, 6vw, 3.4rem);

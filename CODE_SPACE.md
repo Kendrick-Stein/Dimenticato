@@ -93,9 +93,9 @@
 2. `<body>` 末尾两段内联脚本：
    - `__ReadyGate`：把 `document.readyState` 伪装成 `'loading'`，直到语言包注入完毕
    - `CdnFallback`：Chart.js / marked / Supabase 任一 CDN 失败时的降级
-3. 三个 CDN `<script defer>`，然后仅有的两个本地静态脚本 `lib/lang-loader.js` → `lib/boot.js`
+3. 三个 CDN `<script defer>`，然后仅有的三个本地静态脚本 `lib/languages.js` → `lib/lang-loader.js` → `lib/boot.js`（lang-loader 的文件清单读自语言档案，所以 languages.js 必须先到）
 4. `boot.js` 把 `LangLoader` 事件接到 `#loading` 遮罩，然后调 `LangLoader.boot()`：
-   - `detectLanguage()`：URL hash `#/<code>` 优先，其次 `localStorage.dimenticato_language`，默认 `italian`
+   - `detectLanguage()`：URL hash `#/<code>` 优先（code 须在 `Languages` 里），其次 `localStorage.dimenticato_language`，默认 `Languages.DEFAULT_KEY`（`italian`）
    - 一次性注入 `DATA[lang]`（词库）+ `CODE`（共享代码），`script.async = false` → 并行下载、按序执行
    - 全部执行完后 `__ReadyGate.release()` + 派发合成 `DOMContentLoaded`，各模块按注入顺序初始化（`App.init` 等）
    - 然后 `LangLoader.runInit(lang)` → `App.onLanguageData(lang)`：跑 `LegacyMigration.run(lang)`、清进度缓存；首次调用时 `DimRouter.start()` 解析 hash 并进入对应屏幕
@@ -103,7 +103,7 @@
 5. `CODE` 注入顺序（承重，定义在 `lib/lang-loader.js`）：
 
 ```text
-lib/utils → lib/languages → lib/vocab → lib/storage → lib/srs → lib/word-similarity
+lib/utils → lib/vocab → lib/storage → lib/srs → lib/word-similarity
 → lib/quiz-engine → lib/practice-flow → lib/typing-game → lib/shell → lib/wordbooks
 → supabase-config → community-wordbooks → cognate-app → typing-game-app → german-course
 → conjugation-app → stats-charts → grammar-book → verb-collocations
@@ -114,6 +114,7 @@ lib/utils → lib/languages → lib/vocab → lib/storage → lib/srs → lib/wo
 
 ### 2.2 两级懒加载
 
+- 两级清单都由 `lib/languages.js` 各档案的 `files` 生成（`files.vocab` → `DATA`，其余键 → `MODULES`）
 - **一级（词库，`LangLoader.DATA`）**：意 `data/vocab/it.js`；德 `data/vocab/de.js` + `data/german-course-data.js`；英 `data/vocab/en.js`；法 `data/vocab/fr.js`。切语言时 `LangLoader.ensure(lang)` 补拉，就绪后同样走 `App.onLanguageData`
 - **二级（模块，`LangLoader.MODULES`）**：`conjugations` / `grammar` / `collocations` / `cognates` × 语言（英语无 cognates）。`LangLoader.ensureModule(lang, module)` 幂等；发 `module:start` / `module:done`，`boot.js` 显示 / 撤遮罩，并调 `App.refreshCounts()`
 - **守卫位置**：各模块 opener 内部检测数据缺席 → `ensureModule` → 重试一次；仍缺席走各自「数据未加载」降级 UI。见 `ConjugationPractice.openFor`、`GrammarBook.init`、`VerbCollocations` 的 `init`、`VerbCollocationPractice.open`、`CognateApp.open`、`TypingGameApp`（变位模式）、`App.openGrammarBook`、`GermanCourse`
@@ -122,7 +123,7 @@ lib/utils → lib/languages → lib/vocab → lib/storage → lib/srs → lib/wo
 
 ### 2.3 架构分层
 
-1. **引导层**：`index.html` 内联脚本 + `lib/lang-loader.js` + `lib/boot.js`
+1. **引导层**：`index.html` 内联脚本 + `lib/languages.js` + `lib/lang-loader.js` + `lib/boot.js`
 2. **外壳层**：`lib/shell.js`（屏幕树、面包屑、顶部导航高亮、hash 路由）
 3. **核心库层**：`lib/languages.js`、`lib/vocab.js`、`lib/storage.js`、`lib/srs.js`、`lib/quiz-engine.js`、`lib/practice-flow.js`、`lib/wordbooks.js`、`lib/utils.js`、`lib/word-similarity.js`
 4. **统一运行时**：`app.js`（统一屏幕渲染、练习会话、语言切换、模块入口）
@@ -162,13 +163,13 @@ lib/utils → lib/languages → lib/vocab → lib/storage → lib/srs → lib/wo
 | `conjugationScreen` | 无（transient） | conjugationSetup | `conjugation-app.js` |
 | `verbCollocationsScreen` | `grammar/collocations` | grammar | `verb-collocations.js` |
 | `verbCollocationPracticeScreen` | 无（transient） | verbCollocations | `verb-collocations-practice.js` |
-| `germanCourseScreen` | `course`（`only: 'german'`） | home | `german-course.js`（运行时追加到 `#main`） |
+| `germanCourseScreen` | `course`（`module: 'course'`） | home | `german-course.js`（运行时追加到 `#main`） |
 | `progressScreen` | `progress` | home | `app.js renderProgress` |
 | `settingsScreen` | `settings` | home | `app.js renderSettings` |
 
 - `section` 字段决定顶部导航哪一项高亮；`crumb` 决定面包屑文案
 - **transient** 屏（会话屏）没有自己的地址：URL 保留父级地址，刷新 / 深链接落回父级
-- `only: 'german'`：非德语语境进入会回首页
+- `module: 'course'`：当前语言档案 `modules.course` 为假时进入会回首页（目前只有德语有）
 - 统一屏幕（home / vocab / browse / grammar / progress / settings）的 HTML 只是一个 `[data-view]` 空容器（`#homeView`、`#vocabView`、`#grammarView`、`#progressView`、`#settingsPrefs` 等），每次进入时由 `app.js` 重新渲染；quiz / spell / browse 以及各功能模块屏的内部 DOM 是静态标记
 
 ### 3.3 modal
@@ -309,7 +310,7 @@ paper/ink 编辑风设计系统，一套配色覆盖全部语言（不再有按�
 
 内部结构（按文件顺序）：
 
-- 常量：`LEVELS`、`LEVEL_NAMES`、`BROWSE_PAGE = 200`、`SESSION_SIZES`、`SPECIAL_KEYS`（拼写屏特殊字母键，英语为空）
+- 常量：`LEVELS`、`LEVEL_NAMES`、`BROWSE_PAGE = 200`、`SESSION_SIZES`（拼写屏特殊字母键取自档案的 `accents`）
 - `grammarData(l)`：按语言取 `GRAMMAR_DATA` / `GERMAN_GRAMMAR_DATA` / `ENGLISH_GRAMMAR_DATA` / `FRENCH_GRAMMAR_DATA`（裸名字，`typeof` 守卫）
 - `Speaker`：Web Speech 朗读（rate 0.9，按档案 `voice` 正则选音色）
 - `Progress`：已掌握 Set 缓存（按 key）、统计计数器（按语言）、`touch` / `flush` / `forget`
@@ -344,7 +345,7 @@ paper/ink 编辑风设计系统，一套配色覆盖全部语言（不再有按�
 
 ### 6.3 `lib/languages.js` — 语言档案
 
-「唯一知道有哪些语言」的地方。每条档案：`code`（it/de/en/fr，URL 与 `DIM_VOCAB` 用）、`key`（italian…，存储与模块名，沿用旧版以保证旧进度 / 备份有效）、`name`、`cn`、`en`、`tts`、`voice`、`spell`、`motto`、`modules`。
+「唯一知道有哪些语言」的地方。每条档案：`code`（it/de/en/fr，URL 与 `DIM_VOCAB` 用）、`key`（italian…，存储与模块名，沿用旧版以保证旧进度 / 备份有效）、`name`、`cn`、`en`、`tts`、`voice`、`spell`、`accents`（拼写屏特殊字母键）、`motto`、`modules`、`grammarGlobal`（语法数据文件定义的顶层 const 名）、`files`（lang-loader 注入的数据文件，`vocab` 随语言加载，其余按模块懒加载）。
 
 当前 `modules`：
 
@@ -355,9 +356,9 @@ paper/ink 编辑风设计系统，一套配色覆盖全部语言（不再有按�
 | en | | ✓ | ✓ | ✓ | |
 | fr | ✓ | ✓ | ✓ | ✓ | |
 
-API：`Languages.list` / `codes` / `keys` / `DEFAULT` / `get(codeOrKey)` / `code()` / `key()` / `has()`。`get` 同时接受 `'de'` 与 `'german'`。
+API：`Languages.list` / `codes` / `keys` / `DEFAULT` / `DEFAULT_KEY` / `get(codeOrKey)` / `code()` / `key()` / `has()` / `label()` / `byKeyMap(fn)`。`get` 同时接受 `'de'` 与 `'german'`。
 
-注意：`lib/shell.js`、`lib/lang-loader.js`、`lib/storage.js`、`lib/srs.js`、`lib/quiz-engine.js` 里仍各有一份硬编码的四语言列表 / code↔key 映射；新增语言时要一并改（见 §11）。
+shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表、code↔key 映射、中文名、数据文件清单都从这里派生，不再各自写死。
 
 ### 6.4 `lib/vocab.js` — 词库 API
 
@@ -589,7 +590,10 @@ API：`Languages.list` / `codes` / `keys` / `DEFAULT` / `get(codeOrKey)` / `code
 
 ### 9.5 新增一门语言
 
-`lib/languages.js` 加档案 → 产出 `data/vocab/<code>.js` → `lib/lang-loader.js`（`DATA`、`MODULES`、`detectLanguage` 正则）→ `lib/shell.js`（`LANGS` / `LANG_CODE` / `LANG_CN`、`parse` 正则）→ `lib/storage.js`（`LANGS`、`LANGUAGE_LABELS`、`PROGRESS_KEYS`）→ `lib/srs.js` / `lib/quiz-engine.js` 的 `LANGS` → `lib/boot.js NAMES` → `app.js SPECIAL_KEYS`、`grammarData` → `index.html` `.lang-switch` 按钮 → 各功能模块的语言 config。
+1. 产出 `data/vocab/<code>.js`（`docs/vocab-schema.md`「Adding a language」）
+2. `lib/languages.js` 加一条档案：`code` / `key` / `cn` / `tts` / `spell` / `accents` / `modules` / `grammarGlobal` / `files`。路由、加载清单、存储 key（`progressKeysFor`）、重置菜单、加载文案全部自动派生
+3. `.lang-switch` 按钮由 `app.js renderLangSwitch()` 生成（`index.html` 里的静态按钮只是首帧占位，可顺手补上）
+4. 开了哪些 `modules`，就给对应功能模块（conjugation-app / grammar-book / verb-collocations / cognate-app）补该语言的 config
 
 ### 9.6 个人单词本 / 社区词书
 
@@ -692,9 +696,9 @@ API：`Languages.list` / `codes` / `keys` / `DEFAULT` / `get(codeOrKey)` / `code
 
 静态模块屏（quiz / spell / browse / typing / cognate / community / conjugation / collocations / grammarBook）里的 id 都被 JS 直接 `getElementById`。统一屏幕的内容则是 `app.js` 每次重新渲染，改它们的结构只改 `app.js`。
 
-### 11.5 四语言列表硬编码在多处
+### 11.5 语言清单只在 `lib/languages.js`
 
-见 §9.5。`Languages` 是语言档案的权威来源，但 shell / lang-loader / storage / srs / quiz-engine / boot 仍各自写死了四语言。
+见 §9.5。所有核心库都从 `Languages` 派生语言列表；它以静态 `<script defer>` 在 lang-loader 之前执行，必须保持零依赖。测试 harness（`tests/test-*.html`、`test-storage.js`）要先加载它。意大利语的存储 key 无后缀是历史格式，由 `Languages.DEFAULT_KEY` 标记，不要改。
 
 ### 11.6 返回逻辑按屏幕树，不按历史
 
