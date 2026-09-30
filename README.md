@@ -242,8 +242,8 @@ Dimenticato/
 │   ├── french-grammar-data.js
 │   └── french-conjugations.js
 ├── scripts/
-├── deutsch-data/
-├──  english-data/
+├── deutsch-data/vocab/  ← 德语词表构建输入（pgh.csv）
+├──  english-data/        ← 英语词表构建输入（EnWords.csv、ECDICT 切片）
 ├── TXT_FORMAT_GUIDE.md
 ├── CODE_SPACE.md
 └── README.md

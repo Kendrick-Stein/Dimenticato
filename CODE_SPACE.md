@@ -9,6 +9,8 @@
 > 2. **只进入和当前需求相关的模块文件**。
 > 3. **每次修改完成后，必须同步更新本文件**，尤其是“模块职责”“文件映射”“数据结构”“变更记录”“维护说明”几部分。
 
+> **2026-09-30 清理**：以下文件已从仓库删除，本文中涉及它们的段落仅作历史记录——两本意大利语书的 Markdown 全文（语法、动词搭配）、`data/grammar_content/**`、`data/grammar_tree.json`、` english-data/` 下的薄冰 docx / logical-grammar-master / SQL 导出、`deutsch-data/grammar/`（无许可证）、`data/conjugations-*.json` 及 failures、`data/vocabulary_*issues/fixed/corrections*.json`、`data/reverso_high_frequency_verbs.json` 与三个 vocabulary_*scanner/merge 脚本。运行时数据（`data/*.js`、`vocabulary.js`）不受影响。
+
 ---
 
 ## 1. 项目定位

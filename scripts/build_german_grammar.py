@@ -6,6 +6,9 @@ Build data/german-grammar-data.js (GERMAN_GRAMMAR_DATA).
 Two content sources are merged:
 
 1. The legacy Docusaurus corpus under deutsch-data/grammar/docs/ (27 topics).
+   It carries no licence, so it was removed from the repo on 2026-09-30; the
+   shipped data/german-grammar-data.js keeps the converted text, and a rebuild
+   needs a local copy of that corpus at the same path.
    Those files reference 71 images with Windows-style relative paths
    (``![](.\\img\\X.png)``) that do not resolve from the site root, so every
    image 404s in the app.  Instead of re-pointing the references at PNG

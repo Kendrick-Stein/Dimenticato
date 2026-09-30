@@ -26,18 +26,7 @@ const GrammarBook = (() => {
       label: '德语',
       title: '德语语法',
       description: '请从左侧目录选择章节开始阅读',
-      backLabel: '德语语法',
-      // 德语正文由 deutsch-data/grammar/docs 导入时保留了原始相对图片路径
-      // （`.\img\X.png` 或 `./img/X.png`），页面根目录下并没有 img/，所以必须
-      // 在渲染时把它们重写到仓库里真实存在的目录。
-      imageRoots: (slug, partTitle) => {
-        const part = String(slug || '').split('/')[0];
-        return [
-          'deutsch-data/grammar/docs/' + part + '/img/',
-          partTitle ? 'deutsch-data/grammar/docs/' + partTitle + '/img/' : '',
-          'deutsch-data/grammar/static/img/'
-        ];
-      }
+      backLabel: '德语语法'
     },
     english: {
       label: '英语',
