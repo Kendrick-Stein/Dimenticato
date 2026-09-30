@@ -16,9 +16,6 @@ E|enlever|de|Enlève tes pieds de la table, s'il te plaît.|请把你的脚从�
 E|enlever|de|Il faut enlever cette tache de ta chemise avant qu'elle sèche.|得趁这块污渍没干，把它从你的衬衫上弄掉。
 N|enlever|à|enlever qqch à qqn = 从某人手里拿走（à 引出失去东西的人）；enlever qqch de qqch = 从某处移开（de 引出地点）
 N|enlever|de|enlever qqch de qqch = 从某处拿掉；enlever qqch à qqn = 从某人那里夺走
-C|s'ennuyer|de|s'ennuyer de qqn/qqch|想念某人（某物）
-E|s'ennuyer|de|Depuis qu'il vit à Montréal, il s'ennuie de sa famille.|自从住在蒙特利尔，他一直很想念家人。
-E|s'ennuyer|de|Tu ne t'ennuies pas de ton ancien quartier ?|你不想念你以前住的街区吗？
 C|s'entraîner|à|s'entraîner à qqch / à faire qqch|练习（做某事）
 E|s'entraîner|à|Elle s'entraîne à parler en public devant son miroir.|她对着镜子练习当众讲话。
 E|s'entraîner|à|Les enfants se sont entraînés au saut en longueur tout l'après-midi.|孩子们整个下午都在练跳远。

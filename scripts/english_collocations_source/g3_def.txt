@@ -549,10 +549,6 @@ from | 淘汰
 ~out | 险胜；逐渐排挤
 - The home team edged out their rivals. || 主队险胜对手。
 - Online shops are edging out small local stores. || 网店正在逐渐挤垮本地小商店。
-== engross
-in | 使全神贯注
-- The boy was engrossed in his book. || 男孩全神贯注地看书。
-- She was so engrossed in her work that she forgot lunch. || 她全神贯注地工作，连午饭都忘了。
 == enquire
 about | 询问
 - I am writing to enquire about the job. || 我写信来询问这份工作的情况。
@@ -871,9 +867,6 @@ into | 勃然（大怒）
 == flee
 from | 逃离
 - Thousands fled from the war zone. || 数千人逃离了战区。
-== found
-on | 以……为基础
-- The theory is founded on careful observation. || 这个理论建立在细致观察的基础上。
 == familiarize
 with | 使熟悉
 - Take time to familiarize yourself with the rules. || 花点时间熟悉一下规则。

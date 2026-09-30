@@ -233,7 +233,6 @@ CURATED = [
     ("se réjouir", "de", "se réjouir de qqch", "为某事高兴"),
     ("s'étonner", "de", "s'étonner de qqch", "对某事感到惊讶"),
     ("sortir", "de", "sortir de qqch", "从某处出来"),
-    ("s'approvisionner", "de", "s'approvisionner de qqch", "储备某物"),
     ("provenir", "de", "provenir de qqch", "来源于某物"),
     ("dater", "de", "dater de qqch", "始于（某个年代）"),
     ("relever", "de", "relever de qqch", "属于…的范畴"),
@@ -1263,6 +1262,11 @@ def build_collocations(cache, lex, out_path):
                 break
         examples[pairkey] = kept
 
+    # Borderline (rare / regional / non-standard) pairs dropped on review;
+    # applies to curated and corpus-mined pairs alike.
+    PRUNED_PAIRS = {("bayer", "à"), ("s'ennuyer", "de"),
+                    ("s'approvisionner", "de"), ("débattre", "sur")}
+
     # ---- decide which (verb, prep) pairs ship -------------------------------
     verbs = {}
     prep_index = defaultdict(list)
@@ -1289,7 +1293,7 @@ def build_collocations(cache, lex, out_path):
             raise SystemExit("%s: authored example for %s + %s has no C (frame) line"
                              % (items[0][2], verb, prep))
 
-    all_pairs = set(curated_by_pair) | set(pair_count)
+    all_pairs = (set(curated_by_pair) | set(pair_count)) - PRUNED_PAIRS
     # The contrast drill prompts with the Chinese half and asks for the
     # preposition, so one verb must never carry the same Chinese gloss under two
     # different prepositions — that question would have two correct answers.

@@ -11,12 +11,12 @@
 // Additive fields (ignored by the renderer): meta.language, meta.particles,
 //   meta.keyKinds, meta.sources, verbs[x].zipf, verbs[x].senses.
 // Sources: sentences and translations authored for this project; wordfreq for ranking.
-// Total verbs: 882 / Total examples: 3220
+// Total verbs: 875 / Total examples: 3210
 
 const ENGLISH_VERB_COLLOCATIONS_DATA = {
   "meta": {
-    "totalVerbs": 882,
-    "totalExamples": 3220,
+    "totalVerbs": 875,
+    "totalExamples": 3210,
     "prepositionOrder": [
       "about",
       "at",
@@ -306,31 +306,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "absorb": {
-      "display": "absorb",
-      "prepositions": {
-        "in": [
-          "She was so absorbed in her book that she missed her stop. 她看书太入迷，坐过了站。",
-          "The boys were absorbed in the video game. 男孩们全神贯注地玩着电子游戏。"
-        ]
-      },
-      "prepositionOrder": [
-        "in"
-      ],
-      "zipf": 3.81,
-      "senses": {
-        "in": [
-          {
-            "zh": "使专心于；使全神贯注",
-            "kind": "preposition",
-            "examples": [
-              0,
-              1
-            ]
-          }
-        ]
-      }
-    },
     "abstain": {
       "display": "abstain",
       "prepositions": {
@@ -413,31 +388,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
               0,
               1,
               2
-            ]
-          }
-        ]
-      }
-    },
-    "accustom": {
-      "display": "accustom",
-      "prepositions": {
-        "to": [
-          "It took me a while to accustom myself to the noise. 我花了一段时间才习惯那噪音。",
-          "She is not accustomed to such cold weather. 她不习惯这么冷的天气。"
-        ]
-      },
-      "prepositionOrder": [
-        "to"
-      ],
-      "zipf": 2.06,
-      "senses": {
-        "to": [
-          {
-            "zh": "使习惯于",
-            "kind": "preposition",
-            "examples": [
-              0,
-              1
             ]
           }
         ]
@@ -10644,31 +10594,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "engross": {
-      "display": "engross",
-      "prepositions": {
-        "in": [
-          "The boy was engrossed in his book. 男孩全神贯注地看书。",
-          "She was so engrossed in her work that she forgot lunch. 她全神贯注地工作，连午饭都忘了。"
-        ]
-      },
-      "prepositionOrder": [
-        "in"
-      ],
-      "zipf": 1.8,
-      "senses": {
-        "in": [
-          {
-            "zh": "使全神贯注",
-            "kind": "preposition",
-            "examples": [
-              0,
-              1
-            ]
-          }
-        ]
-      }
-    },
     "enlist": {
       "display": "enlist",
       "prepositions": {
@@ -13097,29 +13022,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
             "examples": [
               0,
               1
-            ]
-          }
-        ]
-      }
-    },
-    "found": {
-      "display": "found",
-      "prepositions": {
-        "on": [
-          "The theory is founded on careful observation. 这个理论建立在细致观察的基础上。"
-        ]
-      },
-      "prepositionOrder": [
-        "on"
-      ],
-      "zipf": 5.68,
-      "senses": {
-        "on": [
-          {
-            "zh": "以……为基础",
-            "kind": "preposition",
-            "examples": [
-              0
             ]
           }
         ]
@@ -33924,29 +33826,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "understand": {
-      "display": "understand",
-      "prepositions": {
-        "by": [
-          "What do you understand by the word freedom? 你怎么理解自由这个词？"
-        ]
-      },
-      "prepositionOrder": [
-        "by"
-      ],
-      "zipf": 5.37,
-      "senses": {
-        "by": [
-          {
-            "zh": "把……理解为",
-            "kind": "preposition",
-            "examples": [
-              0
-            ]
-          }
-        ]
-      }
-    },
     "upgrade": {
       "display": "upgrade",
       "prepositions": {
@@ -34186,29 +34065,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
             "examples": [
               0,
               1
-            ]
-          }
-        ]
-      }
-    },
-    "visit": {
-      "display": "visit",
-      "prepositions": {
-        "with": [
-          "We visited with our cousins over the weekend. 周末我们去看望了表亲们，和他们聊了聊。"
-        ]
-      },
-      "prepositionOrder": [
-        "with"
-      ],
-      "zipf": 5.04,
-      "senses": {
-        "with": [
-          {
-            "zh": "拜访；与……聊天（美式）",
-            "kind": "preposition",
-            "examples": [
-              0
             ]
           }
         ]
@@ -34601,29 +34457,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
             "examples": [
               0,
               1
-            ]
-          }
-        ]
-      }
-    },
-    "want": {
-      "display": "want",
-      "prepositions": {
-        "for": [
-          "The children never wanted for anything. 孩子们从来不缺什么。"
-        ]
-      },
-      "prepositionOrder": [
-        "for"
-      ],
-      "zipf": 6.04,
-      "senses": {
-        "for": [
-          {
-            "zh": "缺少（多用于否定）",
-            "kind": "preposition",
-            "examples": [
-              0
             ]
           }
         ]
@@ -36431,7 +36264,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
       "vote",
       "vouch",
       "wait",
-      "want",
       "watch",
       "wish",
       "work",
@@ -36514,7 +36346,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
     ],
     "in": [
       "abound",
-      "absorb",
       "arrive",
       "assist",
       "believe",
@@ -36548,7 +36379,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
       "drop",
       "end",
       "engage",
-      "engross",
       "enlist",
       "enroll",
       "excel",
@@ -36798,7 +36628,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
       "fix",
       "focus",
       "force",
-      "found",
       "frown",
       "gamble",
       "get",
@@ -36887,7 +36716,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
       "open"
     ],
     "to": [
-      "accustom",
       "adapt",
       "add",
       "adhere",
@@ -37126,7 +36954,6 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
       "treat",
       "trust",
       "vary",
-      "visit",
       "work",
       "wrestle"
     ],
@@ -37205,8 +37032,7 @@ const ENGLISH_VERB_COLLOCATIONS_DATA = {
       "stand",
       "stop",
       "swear",
-      "swing",
-      "understand"
+      "swing"
     ],
     "like": [
       "feel",

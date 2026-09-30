@@ -8,12 +8,12 @@
 //   verbs[x].nounCollocations (verb + noun collocations).
 // Sources: hand-authored government table + Tatoeba (CC BY 2.0 FR) + Lexique 3.83 (CC BY-SA 4.0).
 // Rebuild: python3 scripts/build_french_extras.py
-// Total verbs: 1415 / Total examples: 6057
+// Total verbs: 1411 / Total examples: 6045
 
 const FRENCH_COLLOCATIONS_DATA = {
   "meta": {
-    "totalVerbs": 1415,
-    "totalExamples": 6057,
+    "totalVerbs": 1411,
+    "totalExamples": 6045,
     "prepositionOrder": [
       "à",
       "de",
@@ -5525,37 +5525,6 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "3923",
             "zh": "503216",
             "eng": ""
-          }
-        ]
-      }
-    },
-    "bayer": {
-      "display": "bayer",
-      "prepositions": {
-        "à": [
-          "bayer aux corneilles 发呆；呆看着出神",
-          "Pendant le cours, il bayait aux corneilles par la fenêtre. 上课时他望着窗外发呆。",
-          "Arrête de bayer aux corneilles. 别再傻看着。"
-        ]
-      },
-      "prepositionOrder": [
-        "à"
-      ],
-      "sources": {
-        "à": [
-          {
-            "kind": "curated",
-            "authored": true
-          },
-          {
-            "kind": "authored",
-            "authored": true
-          },
-          {
-            "kind": "indirect",
-            "fr": "1072214",
-            "zh": "5102246",
-            "eng": "693620"
           }
         ]
       }
@@ -11374,7 +11343,7 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Le blessé criait de douleur. 伤者痛得大叫。"
         ],
         "sur": [
-          "crier sur qqn 冲某人吼",
+          "crier sur qqn 冲某人吼（口语）",
           "Arrête de crier sur les enfants ! 别再冲孩子们吼了！",
           "Mon chef a crié sur moi devant tout le monde. 老板当着所有人的面冲我大吼。"
         ]
@@ -13996,42 +13965,6 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "11789487",
             "zh": "13321254",
             "eng": "7791637"
-          }
-        ]
-      }
-    },
-    "débattre": {
-      "display": "débattre",
-      "prepositions": {
-        "sur": [
-          "débattre sur qqch 就……展开辩论",
-          "Les députés ont débattu toute la nuit sur la réforme. 议员们就改革辩论了一整夜。",
-          "On pourrait débattre longtemps sur cette question. 这个问题可以争论很久。",
-          "Nous avons débattu sur le problème. 我们讨论了那个问题。"
-        ]
-      },
-      "prepositionOrder": [
-        "sur"
-      ],
-      "sources": {
-        "sur": [
-          {
-            "kind": "curated",
-            "authored": true
-          },
-          {
-            "kind": "authored",
-            "authored": true
-          },
-          {
-            "kind": "authored",
-            "authored": true
-          },
-          {
-            "kind": "indirect",
-            "fr": "917457",
-            "zh": "410689",
-            "eng": "23171"
           }
         ]
       }
@@ -39190,30 +39123,6 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "s'approvisionner": {
-      "display": "s'approvisionner",
-      "prepositions": {
-        "de": [
-          "s'approvisionner de qqch 储备某物",
-          "Avant l'hiver, nous nous approvisionnons de bois de chauffage. 入冬前我们会备好柴火。"
-        ]
-      },
-      "prepositionOrder": [
-        "de"
-      ],
-      "sources": {
-        "de": [
-          {
-            "kind": "curated",
-            "authored": true
-          },
-          {
-            "kind": "authored",
-            "authored": true
-          }
-        ]
-      }
-    },
     "s'apprêter": {
       "display": "s'apprêter",
       "prepositions": {
@@ -40017,35 +39926,6 @@ const FRENCH_COLLOCATIONS_DATA = {
           "s'enivrer de qqch 陶醉于某事",
           "Il s'enivrait du parfum des roses. 他陶醉于玫瑰的芬芳。",
           "Les jeunes vainqueurs s'enivraient de leur succès. 年轻的胜利者们陶醉于自己的成功。"
-        ]
-      },
-      "prepositionOrder": [
-        "de"
-      ],
-      "sources": {
-        "de": [
-          {
-            "kind": "curated",
-            "authored": true
-          },
-          {
-            "kind": "authored",
-            "authored": true
-          },
-          {
-            "kind": "authored",
-            "authored": true
-          }
-        ]
-      }
-    },
-    "s'ennuyer": {
-      "display": "s'ennuyer",
-      "prepositions": {
-        "de": [
-          "s'ennuyer de qqn/qqch 想念某人（某物）",
-          "Depuis qu'il vit à Montréal, il s'ennuie de sa famille. 自从住在蒙特利尔，他一直很想念家人。",
-          "Tu ne t'ennuies pas de ton ancien quartier ? 你不想念你以前住的街区吗？"
         ]
       },
       "prepositionOrder": [
@@ -57882,7 +57762,6 @@ const FRENCH_COLLOCATIONS_DATA = {
       "avoir",
       "avouer",
       "balader",
-      "bayer",
       "boire",
       "cacher",
       "chercher",
@@ -58528,7 +58407,6 @@ const FRENCH_COLLOCATIONS_DATA = {
       "s'apercevoir",
       "s'appeler",
       "s'approcher",
-      "s'approvisionner",
       "s'armer",
       "s'arrêter",
       "s'assurer",
@@ -58539,7 +58417,6 @@ const FRENCH_COLLOCATIONS_DATA = {
       "s'empresser",
       "s'empêcher",
       "s'enivrer",
-      "s'ennuyer",
       "s'enorgueillir",
       "s'enticher",
       "s'entourer",
@@ -59043,7 +58920,6 @@ const FRENCH_COLLOCATIONS_DATA = {
       "diverger",
       "donner",
       "dormir",
-      "débattre",
       "déboucher",
       "déferler",
       "délibérer",

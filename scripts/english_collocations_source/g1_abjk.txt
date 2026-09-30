@@ -193,18 +193,10 @@ to | 把……归因于
 by | 遵守
 - Players must abide by the rules of the game. || 选手必须遵守比赛规则。
 - We will abide by the committee's decision. || 我们会遵从委员会的决定。
-== absorb
-in | 使专心于；使全神贯注
-- She was so absorbed in her book that she missed her stop. || 她看书太入迷，坐过了站。
-- The boys were absorbed in the video game. || 男孩们全神贯注地玩着电子游戏。
 == abstain
 from | 戒除；（投票时）弃权
 - Patients should abstain from alcohol before surgery. || 病人手术前应戒酒。
 - Three members abstained from voting. || 有三名成员投了弃权票。
-== accustom
-to | 使习惯于
-- It took me a while to accustom myself to the noise. || 我花了一段时间才习惯那噪音。
-- She is not accustomed to such cold weather. || 她不习惯这么冷的天气。
 == acquaint
 with | 使熟悉；使了解
 - Please acquaint yourself with the safety procedures. || 请熟悉一下安全程序。

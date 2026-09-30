@@ -200,7 +200,7 @@ E|craquer|pour|Toutes les filles craquent pour lui.|所有女孩都为他着迷�
 C|cribler|de|cribler qqch de qqch|使布满（弹孔、债务等）
 E|cribler|de|La voiture était criblée de balles.|车身上布满了弹孔。
 E|cribler|de|Il est criblé de dettes depuis la faillite.|破产以来他债台高筑。
-C|crier|sur|crier sur qqn|冲某人吼
+C|crier|sur|crier sur qqn|冲某人吼（口语）
 E|crier|sur|Arrête de crier sur les enfants !|别再冲孩子们吼了！
 E|crier|sur|Mon chef a crié sur moi devant tout le monde.|老板当着所有人的面冲我大吼。
 C|crier|de|crier de qqch|因……而叫喊
@@ -616,9 +616,6 @@ E|distinguer|entre|Il faut savoir distinguer entre le vrai et le faux.|要学会
 E|distinguer|entre|Le chien ne distingue pas bien entre le rouge et le vert.|狗分不太清红色和绿色。
 E|donner|sur|Ma chambre donne sur la mer.|我的房间面朝大海。
 E|donner|sur|La porte de derrière donne sur un petit jardin.|后门通向一个小花园。
-C|débattre|sur|débattre sur qqch|就……展开辩论
-E|débattre|sur|Les députés ont débattu toute la nuit sur la réforme.|议员们就改革辩论了一整夜。
-E|débattre|sur|On pourrait débattre longtemps sur cette question.|这个问题可以争论很久。
 C|déborder|de|déborder de qqch|充满；洋溢着
 E|déborder|de|Les enfants débordent d'énergie.|孩子们精力旺盛。
 E|déborder|de|Elle débordait de joie en apprenant la nouvelle.|得知消息后她满心欢喜。
