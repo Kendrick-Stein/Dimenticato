@@ -666,8 +666,12 @@
         target.french = target.french || parsed.french;
         // 展示形式只在后来的来源补上了性数变体时才替换，
         // 否则保留先出现的正字法（sœur 不应被教材表的 soeur 覆盖）。
-        if (!target.display || (parsed.variant && !target.variant)) target.display = parsed.display;
-        target.variant = target.variant || parsed.variant;
+        const variant = foldText(entry.feminine || entry.variant || parsed.variant);
+        if (!target.display || (variant && !target.variant)) target.display = entry.display || parsed.display;
+        target.variant = target.variant || variant;
+        target.feminine = target.feminine || entry.feminine || '';
+        // 仅把来源已明确给出的词形加入释义拼写答案，不从 display/printed 猜造。
+        if (variant && !target.accepted.includes(variant)) target.accepted.push(variant);
         target.construction = target.construction || parsed.construction;
         parsed.accepted.forEach(form => {
           if (form && !target.accepted.includes(form)) target.accepted.push(form);
@@ -681,6 +685,11 @@
         target.partOfSpeech = target.partOfSpeech || entry.partOfSpeech || '';
         target.textbookPage = target.textbookPage || entry.textbookPage || '';
         target.source = target.source || entry.source || '';
+        ['printed', 'printedPartOfSpeech', 'english', 'gender', 'frequency', 'freqRank', 'freqSource'].forEach(field => {
+          if ((target[field] === undefined || target[field] === '') && entry[field] !== undefined) {
+            target[field] = entry[field];
+          }
+        });
         topics.forEach(topic => {
           if (!target.topics.includes(topic)) target.topics.push(topic);
         });
@@ -696,6 +705,19 @@
         delete item.topics;
         return item;
       });
+    },
+
+    lookupSystemWord(value) {
+      if (!this.systemWords.length) {
+        if (typeof FRENCH_VOCABULARY_DATA === 'undefined') return null;
+        this.systemWords = this.buildSystemVocabulary();
+      }
+      if (this._lookupSource !== this.systemWords) {
+        this._lookupSource = this.systemWords;
+        this._lookupIndex = new Map();
+        this.systemWords.forEach(word => this._lookupIndex.set(headwordKey(word.french), word));
+      }
+      return this._lookupIndex.get(headwordKey(value)) || null;
     },
 
     // 同一条中文释义可能对应多个法语词（因为 → parce que / car），
@@ -1529,6 +1551,7 @@
       return [word.french].filter(Boolean);
     },
 
+    // 这里只供“看释义写法语”模式使用；听写/指定性数/变位不得复用变体与同义词放宽。
     // 法语重音是正字法的一部分：重音写错记为“差一点”，不判对也不计入掌握。
     gradeSpelling(answer, word) {
       const given = spellKey(answer);

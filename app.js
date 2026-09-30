@@ -158,6 +158,7 @@ const DimStorage = {
       'dimenticato_conjugation_lessons_de',
       'dimenticato_daily_stats_german',
       'dimenticato_srs_german',
+      'dimenticato_german_sr',
       'dimenticato_mastery_streak_german'
     ],
     english: [
@@ -166,6 +167,7 @@ const DimStorage = {
       'dimenticato_conjugation_lessons_en',
       'dimenticato_daily_stats_english',
       'dimenticato_srs_english',
+      'dimenticato_english_sr',
       'dimenticato_mastery_streak_english'
     ],
     french: [
@@ -174,6 +176,8 @@ const DimStorage = {
       'dimenticato_conjugation_lessons_fr',
       'dimenticato_daily_stats_french',
       'dimenticato_srs_french',
+      'dimenticato_french_srs',
+      'dimenticato_french_daily',
       'dimenticato_mastery_streak_french'
     ]
   },
@@ -476,13 +480,16 @@ const DimStorage = {
     if (/_stats$/.test(key) && key.indexOf('daily') === -1) {
       return this.mergeCounters(existing, incoming);
     }
-    if (key.indexOf('dimenticato_daily_stats') === 0) {
+    if (key.indexOf('dimenticato_daily_stats') === 0 || key === 'dimenticato_french_daily') {
       return this.mergeDailyStats(existing, incoming);
     }
     if (key === 'dimenticato_custom_wordbooks') {
       return this.mergeWordbooks(existing, incoming);
     }
-    if (key.indexOf('dimenticato_srs_') === 0) {
+    // 各语言模块仍写自己的调度表；保留原键与词条 ID，不做有损迁移。
+    if (key.indexOf('dimenticato_srs_') === 0
+      || /^dimenticato_(german|english)_sr$/.test(key)
+      || key === 'dimenticato_french_srs') {
       return this.mergeSrsStore(existing, incoming);
     }
     // 其它 key（主题、语言、级别、变位课程…）保留现有值
@@ -2069,12 +2076,15 @@ const WordbookManager = {
         if (lines.length === 1) {
           word.french = lines[0];
           word.display = lines[0];
-          const found = (typeof FRENCH_VOCABULARY_DATA !== 'undefined' ? FRENCH_VOCABULARY_DATA : []).find(
-            item => (item.french || '').toLowerCase().trim() === word.french.toLowerCase().trim()
-          );
+          // 使用和法语练习相同的完整合并索引，包含教材表与词频核心库。
+          const frenchApp = window.FrenchApp;
+          const found = frenchApp && typeof frenchApp.lookupSystemWord === 'function'
+            ? frenchApp.lookupSystemWord(word.french)
+            : null;
           if (found) {
-            word.meaning = found.meaning || found.chinese || '';
-            word.chinese = found.chinese || '';
+            // 复制来源字段，避免导入词本后再丢阴性形、词性、词频或出处。
+            word = { ...found, accepted: (found.accepted || []).slice(),
+              senses: (found.senses || []).slice() };
             autoMatchedCount++;
           } else {
             word.meaning = '';
@@ -2357,13 +2367,14 @@ const WordbookManager = {
 
       if (language === 'french') {
         return {
+          ...word,
           french: word.french || word.display || '',
           display: word.display || word.french || '',
           meaning: word.meaning || word.chinese || '',
           chinese: word.chinese || '',
           notes: word.notes || '',
           rank: 999999,
-          source: 'custom'
+          source: word.source || 'custom'
         };
       }
 

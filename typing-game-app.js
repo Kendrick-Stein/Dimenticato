@@ -116,7 +116,8 @@
         const d = (global.FrenchApp && global.FrenchApp.systemWords)
           || lateGlobal('FRENCH_VOCABULARY_DATA') || [];
         list = d.map((w) => ({
-          answer: w.display || w.french,
+          // display 可含“acteur (actrice)”等展示括注，不是可输入的词形。
+          answer: w.french || w.display,
           srsKey: w.french,
           prompt: w.chinese || w.meaning || '',
           sub: w.english || w.meaning || ''

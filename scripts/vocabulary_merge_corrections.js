@@ -10,14 +10,14 @@ const rootDir = path.join(__dirname, '..');
 
 // 加载原始词汇
 const vocabPath = path.join(rootDir, 'data', 'vocabulary.json');
-const vocabulary = JSON.parse(fs.readFileSync(vocabPath, 'utf8));
+const vocabulary = JSON.parse(fs.readFileSync(vocabPath, 'utf8'));
 
 // 加载修正数据
 const encodingCorrections = JSON.parse(
-  fs.readFileSync(path.join(rootDir, 'data', 'vocabulary_corrections_encoding.json'), 'utf8)
+  fs.readFileSync(path.join(rootDir, 'data', 'vocabulary_corrections_encoding.json'), 'utf8')
 );
 const duplicateCorrections = JSON.parse(
-  fs.readFileSync(path.join(rootDir, 'data', 'vocabulary_corrections_duplicates.json'), 'utf8)
+  fs.readFileSync(path.join(rootDir, 'data', 'vocabulary_corrections_duplicates.json'), 'utf8')
 );
 
 console.log(`原始词条数: ${vocabulary.length}`);
@@ -114,7 +114,7 @@ const VOCABULARY_DATA = ${JSON.stringify(finalVocabulary, null, 2)};
 `;
 
 const jsPath = path.join(rootDir, 'vocabulary_fixed.js');
-fs.writeFileSync(jsPath, jsContent, 'utf8);
+fs.writeFileSync(jsPath, jsContent, 'utf8');
 console.log(`✅ 已生成 vocabulary_fixed.js`);
 
 // 7. 输出修正统计

@@ -231,6 +231,20 @@ group('conjugation mode', () => {
   TypingGameApp.close();
 });
 
+// 展示括注和输入答案分开：源数据保留阴性形后不应要求键入整个括号串。
+group('French display is not a typing answer', () => {
+  win.FrenchApp = { systemWords: [
+    { french: 'acteur', display: 'acteur (actrice)', feminine: 'actrice', chinese: '演员' }
+  ] };
+  TypingGameApp.open('french');
+  win.document.getElementById('typingStartBtn').click();
+  const game = TypingGameApp.getSession().game;
+  const answers = game._pool.map(p => p.answer).concat(game.items.map(i => i.answer));
+  assert(answers.length > 0, '法语打字词池应非空');
+  assert(answers.every(answer => answer === 'acteur'), '答案应是词形，而不是 display 括注');
+  TypingGameApp.close();
+});
+
 // ===== 本地纪录 =====
 group('best score', () => {
   TypingGameApp.open('italian');

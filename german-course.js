@@ -137,8 +137,16 @@
       if (GERMAN_COURSE_DATA.levels.some((level) => level.id === savedLevel)) {
         this.activeLevelId = savedLevel;
       }
-      this.bindEvents();
-      this.watchScreen();
+      const entry = document.getElementById('goGermanCourseBtn');
+      if (entry) {
+        entry.disabled = false;
+        entry.removeAttribute('title');
+      }
+      if (!this._bound) {
+        this.bindEvents();
+        this.watchScreen();
+        this._bound = true;
+      }
       this.render();
     },
 

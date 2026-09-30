@@ -1,0 +1,697 @@
+{
+  "schemaVersion": 1,
+  "activeDataset": "vocabulary.js + data/italian-vocabulary-corrections.js",
+  "reviewed": [
+    {
+      "italian": "nel",
+      "rank": 84,
+      "status": "verified_correction",
+      "before": {
+        "english": "in",
+        "chinese": "输入"
+      },
+      "after": {
+        "english": "in the",
+        "chinese": "在……里（in + il）"
+      },
+      "checkedOn": "2026-09-30",
+      "source": "https://www.larousse.com/en/dictionaries/italian-english/nel/25679",
+      "reason": "Contracted preposition in + il; not the computer action input."
+    },
+    {
+      "italian": "cento",
+      "rank": 1919,
+      "status": "verified_correction",
+      "before": {
+        "english": "%",
+        "chinese": "百分比(%)"
+      },
+      "after": {
+        "english": "hundred",
+        "chinese": "一百"
+      },
+      "checkedOn": "2026-09-30",
+      "source": "https://www.treccani.it/vocabolario/cento/",
+      "reason": "Cardinal number 100. Percent belongs to the phrase per cento, not the isolated headword."
+    },
+    {
+      "italian": "signorina",
+      "rank": 533,
+      "status": "verified_correction",
+      "before": {
+        "chinese": " ̅"
+      },
+      "after": {
+        "chinese": "小姐；未婚女子"
+      },
+      "checkedOn": "2026-09-30",
+      "source": "https://dizionari.corriere.it/dizionario_italiano/S/signorina.shtml",
+      "reason": "Courtesy title and noun for an unmarried woman; replaces corrupted Chinese text."
+    }
+  ],
+  "pendingRules": {
+    "privateUseChinese": "/[\\uE000-\\uF8FF]/",
+    "repeatedEnglishToken": "/\\b(\\w+)(?:\\s+\\1){3,}/i"
+  },
+  "pendingReview": [
+    {
+      "italian": "credo",
+      "rank": 136,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I believe",
+      "chinese": "и獺"
+    },
+    {
+      "italian": "veramente",
+      "rank": 471,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "Really",
+      "chinese": "痷"
+    },
+    {
+      "italian": "buonanotte",
+      "rank": 1128,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "Good night",
+      "chinese": "边"
+    },
+    {
+      "italian": "Anna",
+      "rank": 1651,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "Anna",
+      "chinese": "甊"
+    },
+    {
+      "italian": "buonasera",
+      "rank": 1807,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "Good evening.",
+      "chinese": "边"
+    },
+    {
+      "italian": "sodo",
+      "rank": 3970,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I know",
+      "chinese": "и笵; (二)"
+    },
+    {
+      "italian": "patetico",
+      "rank": 4427,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "pathetic",
+      "chinese": "鸡"
+    },
+    {
+      "italian": "sponda",
+      "rank": 16029,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I'm going",
+      "chinese": "и璶ǐ"
+    },
+    {
+      "italian": "innesco",
+      "rank": 17606,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I know",
+      "chinese": "и笵"
+    },
+    {
+      "italian": "tiglio",
+      "rank": 38388,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I want you",
+      "chinese": "и璶"
+    },
+    {
+      "italian": "cucciolata",
+      "rank": 47087,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "puppy",
+      "chinese": ""
+    },
+    {
+      "italian": "facondo",
+      "rank": 999999,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I know",
+      "chinese": "и笵"
+    },
+    {
+      "italian": "genuinamente",
+      "rank": 999999,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "genuinely",
+      "chinese": "痷"
+    },
+    {
+      "italian": "glicol",
+      "rank": 999999,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I know",
+      "chinese": "и笵"
+    },
+    {
+      "italian": "miopia",
+      "rank": 999999,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "My",
+      "chinese": "и"
+    },
+    {
+      "italian": "poiesi",
+      "rank": 999999,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "Then",
+      "chinese": "礛"
+    },
+    {
+      "italian": "rigoglio",
+      "rank": 999999,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I want to go",
+      "chinese": "и稱"
+    },
+    {
+      "italian": "rincaro",
+      "rank": 999999,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I'm going to go",
+      "chinese": "и璶ǐ"
+    },
+    {
+      "italian": "scimmiottare",
+      "rank": 999999,
+      "status": "pending_review",
+      "reasons": [
+        "private_use_chinese"
+      ],
+      "english": "I'm going to go",
+      "chinese": "и璶ǐ"
+    }
+  ],
+  "pendingSummary": {
+    "privateUseChinese": 19,
+    "repeatedEnglishToken": 0
+  },
+  "note": "The initial audit of 2a44af0 found 20 Chinese private-use entries and 55 English entries with a token repeated at least four times. This change fixes only signorina from the private-use queue. Upstream main independently removed the 55 repetition patterns before this branch was finalized; those translations have not been semantically verified here. The remaining 19 private-use entries are review signals, not automatic translation judgments, and are not changed by this branch.",
+  "reconciledAgainst": "017711ac4b6808928f42cb73b028c6e0a04573d4",
+  "upstreamResolved": [
+    {
+      "italian": "sacro",
+      "rank": 4665,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "sacred sacred sacred sacred",
+      "currentEnglish": "sacred",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "bandiera",
+      "rank": 4676,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "flag flag flag flag flag",
+      "currentEnglish": "flag",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "lavare",
+      "rank": 5300,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "wash wash wash wash",
+      "currentEnglish": "wash",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "scandalo",
+      "rank": 5334,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "scandal scandal scandal scandal",
+      "currentEnglish": "scandal",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "torneo",
+      "rank": 5777,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "tournament tournament tournament tournament",
+      "currentEnglish": "tournament",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "arco",
+      "rank": 5909,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "arch arch arch arch arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc arc",
+      "currentEnglish": "arch arc",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "tattica",
+      "rank": 6924,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "ta ta ta ta ta ta ta ta",
+      "currentEnglish": "ta",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "permanente",
+      "rank": 7146,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "permanent permanent permanent permanent",
+      "currentEnglish": "permanent",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "elettrico",
+      "rank": 7204,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "electric electric electric electric; Electricity (2)",
+      "currentEnglish": "electric; Electricity",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "prosciutto",
+      "rank": 7257,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "ha ha ha ha ha ha ha ha ha ha ha",
+      "currentEnglish": "ha",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "caviglia",
+      "rank": 7445,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "ankle ankle ankle ankle ankle",
+      "currentEnglish": "ankle",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "ognuna",
+      "rank": 7623,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each each",
+      "currentEnglish": "each",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "frontiera",
+      "rank": 7629,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "frontier border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border crossing border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border border",
+      "currentEnglish": "frontier border crossing border",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "cantiere",
+      "rank": 7811,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "yard yard yard yard yard yard yard",
+      "currentEnglish": "yard",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "orientale",
+      "rank": 8188,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern eastern; (2)",
+      "currentEnglish": "eastern",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "pompino",
+      "rank": 8576,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob blowjob",
+      "currentEnglish": "blowjob",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "sportivo",
+      "rank": 8884,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports sports; Sports (2)",
+      "currentEnglish": "sports",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "camino",
+      "rank": 9152,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "fireplace fireplace fireplace fireplace",
+      "currentEnglish": "fireplace",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "velo",
+      "rank": 9346,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "veil veil veil veil veil veil veil veil veil veil veil veil veil veil",
+      "currentEnglish": "veil",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "distinguere",
+      "rank": 9438,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguish between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguish between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguish between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguish between distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing distinguishing",
+      "currentEnglish": "distinguishing between distinguishing between distinguishing between distinguishing between distinguishing between distinguishing between distinguishing between distinguishing between distinguishing distinguish between distinguishing distinguish between distinguishing distinguish between distinguishing distinguish between distinguishing",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "telecomando",
+      "rank": 9459,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote",
+      "currentEnglish": "remote",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "urina",
+      "rank": 10068,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine urine",
+      "currentEnglish": "urine",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "concorrente",
+      "rank": 11432,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "competitor competitor competitor competitor competitor competitor competitor competitor competitor competitor competitor; (2)",
+      "currentEnglish": "competitor",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "fondamenta",
+      "rank": 11711,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "foundation foundation foundation foundation",
+      "currentEnglish": "foundation",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "proiezione",
+      "rank": 12108,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "projection projection projection projection projection projection projection projection",
+      "currentEnglish": "projection",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "orale",
+      "rank": 12208,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "oral oral oral oral",
+      "currentEnglish": "oral",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "antenna",
+      "rank": 13270,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "antenna antenna antenna antenna",
+      "currentEnglish": "antenna",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "reciproco",
+      "rank": 13526,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual; Other",
+      "currentEnglish": "mutual; Other",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "dinastia",
+      "rank": 14293,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d",
+      "currentEnglish": "d",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "ricorrere",
+      "rank": 14620,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "resort resort resort resort",
+      "currentEnglish": "resort",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "transazione",
+      "rank": 14791,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "transaction transaction transaction transaction",
+      "currentEnglish": "transaction",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "adattarsi",
+      "rank": 15504,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "fit fit fit fit",
+      "currentEnglish": "fit",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "teenager",
+      "rank": 15617,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Teen Te Te Te Te Te Te Teen Teen Teen Teen Teen Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te Te",
+      "currentEnglish": "Teen Te",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "porcellana",
+      "rank": 16490,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china china",
+      "currentEnglish": "china",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "molecolare",
+      "rank": 17111,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m",
+      "currentEnglish": "m",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "invernale",
+      "rank": 17256,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "winter winter winter winter winter winter",
+      "currentEnglish": "winter",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "decorato",
+      "rank": 17782,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "decorated decorated decorated decorated decorated decorated decorated decorated decorated",
+      "currentEnglish": "decorated",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "carrozzeria",
+      "rank": 19602,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body",
+      "currentEnglish": "body",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "unicamente",
+      "rank": 20008,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely sole solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely solely sole sole sole sole solely solely sole solely sole sole solely sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole sole solely sole sole sole sole sole sole sole solely solely sole sole sole solely solely sole sole sole sole sole solely solely solely solely solely solely solely solely solely sole sole sole solely solely sole",
+      "currentEnglish": "solely sole solely sole solely sole solely sole solely sole",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "interagire",
+      "rank": 20548,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "interact interact interact interact interact",
+      "currentEnglish": "interact",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "titanio",
+      "rank": 20823,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "titanium titanium titanium titanium",
+      "currentEnglish": "titanium",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "coalizione",
+      "rank": 20988,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "coalition coalition coalition coalition coalition coalition",
+      "currentEnglish": "coalition",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "variabile",
+      "rank": 21890,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "variable variable variable variable; variable (2)",
+      "currentEnglish": "variable",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "progettazione",
+      "rank": 22187,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "design design design design",
+      "currentEnglish": "design",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "stimolo",
+      "rank": 22880,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti sti stimulation",
+      "currentEnglish": "sti stimulation",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "settentrionale",
+      "rank": 24402,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern northern",
+      "currentEnglish": "northern",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "cancellazione",
+      "rank": 24884,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "cancellation cancellation cancellation cancellation",
+      "currentEnglish": "cancellation",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "rotondo",
+      "rank": 27181,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "round round round round",
+      "currentEnglish": "round",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "perforazione",
+      "rank": 28817,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "drill drill drill drill",
+      "currentEnglish": "drill",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "imprenditoriale",
+      "rank": 38817,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial entrepreneurial",
+      "currentEnglish": "entrepreneurial",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "mutua",
+      "rank": 41637,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual mutual",
+      "currentEnglish": "mutual",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "acrilico",
+      "rank": 999999,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "acrylic acrylic acrylic acrylic",
+      "currentEnglish": "acrylic",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "cha cha cha",
+      "rank": 999999,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "cha cha cha cha",
+      "currentEnglish": "cha",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "elettro",
+      "rank": 999999,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "electro electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electrode electro",
+      "currentEnglish": "electro electrode electro",
+      "semanticReview": "not_performed"
+    },
+    {
+      "italian": "ette",
+      "rank": 999999,
+      "status": "repetition_removed_upstream",
+      "previousEnglish": "et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et",
+      "currentEnglish": "et",
+      "semanticReview": "not_performed"
+    }
+  ],
+  "application": "Runtime corrections are applied by LangLoader before app initialization; the generated base vocabulary.js is unchanged."
+}
