@@ -1,184 +1,230 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-Build English grammar data file from english-data/logical-grammar-master/ directory.
-Generates data/english-grammar-data.js with ENGLISH_GRAMMAR_DATA constant.
-Structure mirrors data/grammar-data.js (GRAMMAR_DATA).
+Build data/english-grammar-data.js  (ENGLISH_GRAMMAR_DATA).
+
+Shape mirrors data/french-grammar-data.js:
+
+    const ENGLISH_GRAMMAR_CONTENT = { '<slug>': '<markdown>', ... };
+    const ENGLISH_GRAMMAR_DATA = { meta, tree: { parts: [...] }, content: ENGLISH_GRAMMAR_CONTENT };
+
+Every topic carries an additive `level` field (A1/A2/B1/B2/C1); the GrammarBook
+reader ignores unknown fields.
+
+SOURCE FORMAT
+-------------
+The book is authored as one Markdown file per chapter in
+scripts/english_grammar_src/, named  p<P>-ch<NN>-<name>.md  (sorted by name =
+reading order).  Each file starts with a front-matter comment and then holds
+one or more topics, each introduced by a `=== t<NN>-<kebab> | <LEVEL>` line:
+
+    <!--
+    part: 第一部分 词法（Morphology）
+    chapter: 第一章 名词（Nouns）
+    -->
+
+    === t01-noun-types | A1
+    # 1．名词的分类：可数与不可数
+    ...markdown...
+
+The topic slug is  p<P>/ch<NN>/t<NN>-<kebab>  and the topic title is the H1.
+
+CONTENT PROVENANCE / LICENCE
+----------------------------
+All Chinese explanations and all English example sentences under
+scripts/english_grammar_src/ were newly written for Dimenticato.  Nothing is
+copied from a copyrighted grammar (in particular nothing from the 薄冰英语语法
+.docx sitting in " english-data/", which is used by nothing).
+
+The previous build of this file imported " english-data/logical-grammar-master/"
+(英语逻辑语法要略 and four .txt notes).  That upstream repo ships no licence at
+all — its README only lists reference books — so its text cannot be
+redistributed and it is no longer included.
+
+Regenerate with:  python3 scripts/build_english_grammar.py
+Validate with:    node scripts/validate_english_grammar.js
+Options:          --out PATH   write somewhere else (used for partial checks)
+                  --only p1-ch01,p1-ch02   build only files with these name prefixes
 """
 
-import os
+import glob
 import json
+import os
 import re
+import sys
+import unicodedata
 
-# Note: directory has a leading space in name
-GRAMMAR_DIR = os.path.join(os.path.dirname(__file__), '..', ' english-data', 'logical-grammar-master')
-OUT_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'english-grammar-data.js')
+HERE = os.path.dirname(os.path.abspath(__file__))
+SRC_DIR = os.path.join(HERE, 'english_grammar_src')
+OUT_FILE = os.path.join(HERE, '..', 'data', 'english-grammar-data.js')
 
-def read_file(path):
-    with open(path, 'r', encoding='utf-8', errors='replace') as f:
-        return f.read()
+LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1']
+FILE_RE = re.compile(r'^p(\d)-ch(\d{2})-[a-z0-9-]+\.md$')
+FRONT_RE = re.compile(r'\A\s*<!--(.*?)-->', re.S)
+TOPIC_RE = re.compile(r'^=== (t\d{2}-[a-z0-9-]+) \| (A1|A2|B1|B2|C1)\s*$', re.M)
 
-def slugify(text):
-    """Create a slug from text."""
-    slug = re.sub(r'[^\w\u4e00-\u9fff\u3400-\u4dbf\-]', '-', text)
-    slug = re.sub(r'-+', '-', slug).strip('-')
-    return slug.lower()
 
-def split_md_by_headings(content, heading_level=2):
-    """
-    Split markdown content by h2 headings (##).
-    Returns list of (title, body) tuples.
-    """
-    pattern = re.compile(r'^#{%d}\s+(.+)$' % heading_level, re.MULTILINE)
-    positions = [(m.start(), m.group(1).strip()) for m in pattern.finditer(content)]
+def die(msg):
+    raise SystemExit('build_english_grammar: ' + msg)
 
-    if not positions:
-        return []
 
-    sections = []
-    for i, (start, title) in enumerate(positions):
-        end = positions[i+1][0] if i+1 < len(positions) else len(content)
-        body = content[start:end].strip()
-        sections.append((title, body))
-
-    return sections
-
-def parse_main_md(filepath):
-    """
-    Parse 英语逻辑语法要略.md into parts/chapters/topics structure.
-    The file has h1 (#) title, h2 (##) chapters, h3 (###) topics.
-    We'll treat h2 sections as chapters and h3 subsections as topics.
-    """
-    content = read_file(filepath)
-
-    # Extract h2 sections (chapters)
-    h2_pattern = re.compile(r'^##\s+(.+)$', re.MULTILINE)
-    h2_positions = [(m.start(), m.group(1).strip()) for m in h2_pattern.finditer(content)]
-
-    if not h2_positions:
-        # Treat entire file as one topic
-        return [{
-            'title': '英语逻辑语法要略',
-            'slug': 'logic-grammar',
-            'chapters': [{
-                'title': '英语逻辑语法要略',
-                'slug': 'logic-grammar/main',
-                'topics': [{
-                    'title': '全文',
-                    'slug': 'logic-grammar/main/full'
-                }]
-            }]
-        }], {'logic-grammar/main/full': content}
-
-    chapters = []
-    all_content = {}
-    part_slug = 'logic-grammar'
-
-    for i, (start, ch_title) in enumerate(h2_positions):
-        end = h2_positions[i+1][0] if i+1 < len(h2_positions) else len(content)
-        ch_body = content[start:end].strip()
-        ch_slug_base = f'{part_slug}/{slugify(ch_title)}'
-
-        # Look for h3 subsections within this chapter
-        h3_pattern = re.compile(r'^###\s+(.+)$', re.MULTILINE)
-        h3_positions = [(m.start(), m.group(1).strip()) for m in h3_pattern.finditer(ch_body)]
-
-        topics = []
-        if h3_positions:
-            for j, (t_start, t_title) in enumerate(h3_positions):
-                t_end = h3_positions[j+1][0] if j+1 < len(h3_positions) else len(ch_body)
-                t_body = ch_body[t_start:t_end].strip()
-                t_slug = f'{ch_slug_base}/{slugify(t_title)}'
-                all_content[t_slug] = t_body
-                topics.append({'title': t_title, 'slug': t_slug})
-        else:
-            # No h3, treat whole chapter as one topic
-            t_slug = f'{ch_slug_base}/main'
-            all_content[t_slug] = ch_body
-            topics.append({'title': ch_title, 'slug': t_slug})
-
-        chapters.append({
-            'title': ch_title,
-            'slug': ch_slug_base,
-            'topics': topics
+def parse_file(path):
+    name = os.path.basename(path)
+    m = FILE_RE.match(name)
+    if not m:
+        die('bad source file name %s (want p<P>-ch<NN>-<name>.md)' % name)
+    pnum, cnum = m.group(1), m.group(2)
+    with open(path, encoding='utf-8') as f:
+        text = unicodedata.normalize('NFC', f.read().replace('\r\n', '\n'))
+    fm = FRONT_RE.match(text)
+    if not fm:
+        die('%s: missing <!-- part/chapter --> front matter' % name)
+    meta = {}
+    for line in fm.group(1).strip().splitlines():
+        if ':' in line:
+            k, v = line.split(':', 1)
+            meta[k.strip()] = v.strip()
+    if not meta.get('part') or not meta.get('chapter'):
+        die('%s: front matter needs part: and chapter:' % name)
+    body = text[fm.end():]
+    heads = list(TOPIC_RE.finditer(body))
+    if not heads:
+        die('%s: no "=== tNN-slug | LEVEL" topic markers' % name)
+    if body[:heads[0].start()].strip():
+        die('%s: text between front matter and first topic marker' % name)
+    topics = []
+    for i, h in enumerate(heads):
+        end = heads[i + 1].start() if i + 1 < len(heads) else len(body)
+        md = body[h.end():end].strip() + '\n'
+        first = md.split('\n', 1)[0]
+        if not first.startswith('# '):
+            die('%s %s: topic must start with an H1' % (name, h.group(1)))
+        topics.append({
+            'part': meta['part'],
+            'chapter': meta['chapter'],
+            'pnum': int(pnum),
+            'cnum': int(cnum),
+            'slug': 'p%s/ch%s/%s' % (pnum, cnum, h.group(1)),
+            'title': first[2:].strip(),
+            'level': h.group(2),
+            'md': md,
         })
-
-    return [{
-        'title': '英语逻辑语法',
-        'slug': part_slug,
-        'chapters': chapters
-    }], all_content
+    return topics
 
 
-def parse_txt_file(filepath, part_title, part_slug):
-    """
-    Parse a plain text grammar file as a single topic.
-    """
-    content = read_file(filepath)
-    # Convert to simple markdown if it's plain text
-    # Add a title heading if not present
-    if not content.startswith('#'):
-        content = f'# {part_title}\n\n' + content
-
-    topic_slug = f'{part_slug}/main'
-    return {
-        'title': part_title,
-        'slug': part_slug,
-        'chapters': [{
-            'title': part_title,
-            'slug': part_slug,
-            'topics': [{'title': part_title, 'slug': topic_slug}]
-        }]
-    }, {topic_slug: content}
+def load_topics(only=None):
+    files = sorted(glob.glob(os.path.join(SRC_DIR, '*.md')))
+    if only:
+        files = [f for f in files if any(os.path.basename(f).startswith(o) for o in only)]
+    if not files:
+        die('no source files in %s' % SRC_DIR)
+    topics = []
+    for path in files:
+        topics.extend(parse_file(path))
+    return topics
 
 
-def main():
-    print("Building English grammar data...")
+def build_tree(topics):
+    parts = []
+    part_index = {}
+    chap_index = {}
+    for t in topics:
+        pslug = 'p%d' % t['pnum']
+        if pslug not in part_index:
+            part_index[pslug] = {'title': t['part'], 'slug': pslug, 'chapters': []}
+            parts.append(part_index[pslug])
+        part = part_index[pslug]
+        if part['title'] != t['part']:
+            die('part %s has two titles: %r vs %r' % (pslug, part['title'], t['part']))
+        cslug = 'p%d/ch%02d' % (t['pnum'], t['cnum'])
+        if cslug not in chap_index:
+            chap_index[cslug] = {'title': t['chapter'], 'slug': cslug, 'topics': []}
+            part['chapters'].append(chap_index[cslug])
+        elif chap_index[cslug]['title'] != t['chapter']:
+            die('chapter %s has two titles' % cslug)
+        chap_index[cslug]['topics'].append({
+            'title': t['title'],
+            'slug': t['slug'],
+            'level': t['level'],
+        })
+    return {'parts': parts}
 
-    if not os.path.exists(GRAMMAR_DIR):
-        print(f"ERROR: Directory not found: {GRAMMAR_DIR}")
-        return
 
-    tree_parts = []
-    all_content = {}
+def js_string(s):
+    return json.dumps(s, ensure_ascii=False)
 
-    # File processing order
-    file_configs = [
-        ('英语逻辑语法要略.md', 'md', None, None),
-        ('副词类别.txt', 'txt', '副词类别', 'adverb-categories'),
-        ('介词分类.txt', 'txt', '介词分类', 'preposition-categories'),
-        ('评注性状语.txt', 'txt', '评注性状语', 'comment-adverbials'),
-        ('英语逻辑关联词.txt', 'txt', '英语逻辑关联词', 'logical-connectors'),
-    ]
 
-    for fname, ftype, title, slug in file_configs:
-        fpath = os.path.join(GRAMMAR_DIR, fname)
-        if not os.path.exists(fpath):
-            print(f"  Skipping (not found): {fname}")
-            continue
+def main(argv):
+    out_file = OUT_FILE
+    if '--out' in argv:
+        out_file = argv[argv.index('--out') + 1]
 
-        print(f"  Processing: {fname}")
+    only = None
+    if '--only' in argv:
+        only = argv[argv.index('--only') + 1].split(',')
+    topics = load_topics(only)
+    slugs = [t['slug'] for t in topics]
+    dupes = sorted({s for s in slugs if slugs.count(s) > 1})
+    if dupes:
+        die('duplicate slugs: %s' % dupes)
+    for t in topics:
+        if '![' in t['md'] or '<img' in t['md']:
+            die('image reference in %s' % t['slug'])
 
-        if ftype == 'md':
-            parts, content = parse_main_md(fpath)
-            tree_parts.extend(parts)
-            all_content.update(content)
-        elif ftype == 'txt':
-            part, content = parse_txt_file(fpath, title, slug)
-            tree_parts.append(part)
-            all_content.update(content)
+    tree = build_tree(topics)
+    n_parts = len(tree['parts'])
+    n_chaps = sum(len(p['chapters']) for p in tree['parts'])
+    n_topics = len(topics)
+    total_chars = sum(len(t['md']) for t in topics)
+    used_levels = [lv for lv in LEVELS if any(t['level'] == lv for t in topics)]
+    span = '%s-%s' % (used_levels[0], used_levels[-1]) if used_levels else ''
 
-    grammar_data = {
-        'tree': {'parts': tree_parts},
-        'content': all_content
-    }
+    lines = []
+    lines.append('// data/english-grammar-data.js — 英语语法书（%s）' % span)
+    lines.append('// GENERATED FILE — do not edit by hand.')
+    lines.append('// Source:     scripts/english_grammar_src/*.md')
+    lines.append('// Regenerate: python3 scripts/build_english_grammar.py')
+    lines.append('// Validate:   node scripts/validate_english_grammar.js')
+    lines.append('//')
+    lines.append('// %d parts / %d chapters / %d topics / %d characters of content.'
+                 % (n_parts, n_chaps, n_topics, total_chars))
+    lines.append('// All explanations and example sentences are original text written for')
+    lines.append('// Dimenticato for Chinese-speaking learners of English.')
+    lines.append('')
+    lines.append('const ENGLISH_GRAMMAR_CONTENT = {')
+    for i, t in enumerate(topics):
+        comma = ',' if i < len(topics) - 1 else ''
+        lines.append('  %s: %s%s' % (js_string(t['slug']), js_string(t['md']), comma))
+    lines.append('};')
+    lines.append('')
+    lines.append('const ENGLISH_GRAMMAR_TREE = ' + json.dumps(tree, ensure_ascii=False, indent=2) + ';')
+    lines.append('')
+    lines.append('const ENGLISH_GRAMMAR_DATA = {')
+    lines.append('  meta: {')
+    lines.append('    title: %s,' % js_string('英语语法'))
+    lines.append('    description: %s,' % js_string(
+        '从左侧目录选择 %s 专题开始阅读，共 %d 个主题。' % (span, n_topics)))
+    lines.append('    levels: %s,' % json.dumps(LEVELS))
+    lines.append('    topicCount: %d' % n_topics)
+    lines.append('  },')
+    lines.append('  tree: ENGLISH_GRAMMAR_TREE,')
+    lines.append('  content: ENGLISH_GRAMMAR_CONTENT')
+    lines.append('};')
+    lines.append('')
+    lines.append("if (typeof module !== 'undefined' && module.exports) {")
+    lines.append('  module.exports = ENGLISH_GRAMMAR_DATA;')
+    lines.append('}')
+    lines.append('')
 
-    json_str = json.dumps(grammar_data, ensure_ascii=False, indent=2)
-    js_output = f'const ENGLISH_GRAMMAR_DATA = {json_str};\n'
+    with open(out_file, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(lines))
 
-    with open(OUT_FILE, 'w', encoding='utf-8') as f:
-        f.write(js_output)
+    lens = sorted(len(t['md']) for t in topics)
+    print('wrote %s' % os.path.normpath(out_file))
+    print('%d parts / %d chapters / %d topics / %d chars (mean %d, median %d, min %d)'
+          % (n_parts, n_chaps, n_topics, total_chars,
+             total_chars // max(n_topics, 1), lens[n_topics // 2], lens[0]))
 
-    print(f"Done! {len(tree_parts)} parts, {len(all_content)} topics written to {OUT_FILE}")
 
 if __name__ == '__main__':
-    main()
+    main(sys.argv[1:])
