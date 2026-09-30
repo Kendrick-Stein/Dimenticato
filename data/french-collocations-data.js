@@ -8,12 +8,12 @@
 //   verbs[x].nounCollocations (verb + noun collocations).
 // Sources: hand-authored government table + Tatoeba (CC BY 2.0 FR) + Lexique 3.83 (CC BY-SA 4.0).
 // Rebuild: python3 scripts/build_french_extras.py
-// Total verbs: 777 / Total examples: 2878
+// Total verbs: 1415 / Total examples: 6057
 
 const FRENCH_COLLOCATIONS_DATA = {
   "meta": {
-    "totalVerbs": 777,
-    "totalExamples": 2878,
+    "totalVerbs": 1415,
+    "totalExamples": 6057,
     "prepositionOrder": [
       "à",
       "de",
@@ -33,6 +33,11 @@ const FRENCH_COLLOCATIONS_DATA = {
       {
         "id": "curated",
         "label": "本项目自编动词支配表（依据标准法语语法）",
+        "license": "project-authored"
+      },
+      {
+        "id": "authored",
+        "label": "本项目自编例句（scripts/sources/french-collocations）",
         "license": "project-authored"
       },
       {
@@ -58,6 +63,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "abaisser",
       "prepositions": {
         "à": [
+          "s'abaisser à qqch / à faire qqch 降低身份去做；屈尊",
+          "Je refuse de m'abaisser à lui demander pardon. 我不肯低声下气地去求他原谅。",
+          "Elle ne s'abaisserait jamais à mentir pour de l'argent. 她绝不会为了钱而降低身份去说谎。",
           "Je ne m'abaisserai pas à son niveau. 我不会堕落到他那个地步。"
         ]
       },
@@ -66,6 +74,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "3850",
@@ -113,6 +133,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "2285959",
             "zh": "350670",
             "eng": "43780"
+          }
+        ]
+      }
+    },
+    "abdiquer": {
+      "display": "abdiquer",
+      "prepositions": {
+        "en": [
+          "abdiquer en faveur de qqn 让位给某人",
+          "Le vieux roi a abdiqué en faveur de son fils. 老国王把王位让给了儿子。",
+          "La reine abdiquera en faveur de sa fille l'année prochaine. 女王明年将让位给她的女儿。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -173,6 +222,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "aboutir": {
+      "display": "aboutir",
+      "prepositions": {
+        "à": [
+          "aboutir à qqch 最终达成；导致",
+          "Les négociations ont enfin abouti à un accord. 谈判终于达成了协议。",
+          "Ce chemin aboutit à une petite plage. 这条小路通向一片小海滩。",
+          "Tes efforts finiront par aboutir à quelque chose. 你的努力终究会有结果的。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "aboyer": {
       "display": "aboyer",
       "prepositions": {
@@ -194,10 +277,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "abreuver": {
+      "display": "abreuver",
+      "prepositions": {
+        "de": [
+          "abreuver qqn de qqch 让某人饱受（辱骂、信息等）",
+          "Les supporters ont abreuvé l'arbitre d'insultes. 球迷们对裁判破口大骂。",
+          "On nous abreuve d'informations inutiles toute la journée. 我们整天被灌输无用的信息。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "abriter": {
       "display": "abriter",
       "prepositions": {
         "de": [
+          "abriter qqn de qqch / s'abriter de qqch 为……遮挡；躲避",
+          "Ce vieux mur abrite le jardin du vent du nord. 这堵老墙为花园挡住了北风。",
+          "Abritons-nous de l'orage sous ce porche. 我们到这个门廊下躲一下暴雨吧。",
           "J'ai dû m'abriter de la pluie sous un arbre. 我不得不在树下躲雨。"
         ]
       },
@@ -206,6 +321,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "135404",
@@ -281,6 +408,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1692888",
             "zh": "2000407",
             "eng": "37127"
+          }
+        ]
+      }
+    },
+    "absoudre": {
+      "display": "absoudre",
+      "prepositions": {
+        "de": [
+          "absoudre qqn de qqch 赦免某人的（罪过）",
+          "Le prêtre l'a absous de ses péchés. 神父赦免了他的罪。",
+          "Le tribunal ne peut pas l'absoudre de toute responsabilité. 法庭不能免除他的一切责任。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -392,6 +548,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "accabler",
       "prepositions": {
         "de": [
+          "accabler qqn de qqch 使某人承受大量（工作、指责等）",
+          "Son chef l'accable de travail depuis des semaines. 几个星期来，他的上司一直给他压很多活儿。",
+          "Ne l'accable pas de reproches, il est déjà assez triste. 别再责备他了，他已经够难过了。",
           "Le professeur a commencé à m'accabler de questions. 那个老师开始问我一堆问题。"
         ]
       },
@@ -400,6 +559,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "1091935",
@@ -501,6 +672,90 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "11133930",
             "zh": "851505",
             "eng": "26006"
+          }
+        ]
+      }
+    },
+    "accorder": {
+      "display": "accorder",
+      "prepositions": {
+        "de": [
+          "Tu devrais accorder plus d'attention à ce qu'il dit. 你应该多注意他说的话。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "indirect",
+            "fr": "391782",
+            "zh": "775626",
+            "eng": "15816"
+          }
+        ]
+      }
+    },
+    "accoucher": {
+      "display": "accoucher",
+      "prepositions": {
+        "de": [
+          "accoucher de qqn 生下（孩子）",
+          "Elle a accouché d'une petite fille en pleine nuit. 她在深夜生下了一个女儿。",
+          "Ma sœur accouchera de jumeaux en mars. 我姐姐三月份要生双胞胎。",
+          "Après des mois de travail, le comité a accouché d'un rapport très court. 委员会忙了几个月，最后只拿出一份很短的报告。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "accourir": {
+      "display": "accourir",
+      "prepositions": {
+        "vers": [
+          "accourir vers qqn 朝某人跑过来",
+          "Les enfants sont accourus vers leur grand-mère. 孩子们朝奶奶跑了过去。",
+          "Dès qu'il a entendu le cri, il est accouru vers la rivière. 一听到叫声，他就向河边奔去。"
+        ]
+      },
+      "prepositionOrder": [
+        "vers"
+      ],
+      "sources": {
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -621,6 +876,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "accueillir",
       "prepositions": {
         "avec": [
+          "accueillir qqn/qqch avec qqch 以……（态度）接待、对待",
+          "Le public a accueilli la nouvelle avec enthousiasme. 观众对这个消息反响热烈。",
+          "Ils nous ont accueillis avec beaucoup de gentillesse. 他们非常热情地接待了我们。",
           "Elle m'a accueilli avec un sourire. 她用一个微笑迎接了我。"
         ]
       },
@@ -630,10 +888,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "791333",
             "zh": "791348",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "acculer": {
+      "display": "acculer",
+      "prepositions": {
+        "à": [
+          "acculer qqn à qqch 把某人逼到（绝境）",
+          "La crise a acculé l'entreprise à la faillite. 危机把公司逼到了破产的地步。",
+          "Ses dettes l'ont acculé à vendre sa maison. 债务逼得他不得不卖掉房子。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -727,6 +1026,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "acheminer": {
+      "display": "acheminer",
+      "prepositions": {
+        "vers": [
+          "acheminer qqch vers un lieu 把……运送到某地",
+          "L'aide humanitaire sera acheminée vers les villages isolés. 人道主义援助将被运往偏远的村庄。",
+          "On achemine le courrier vers le centre de tri chaque nuit. 每天夜里，邮件都会被运往分拣中心。"
+        ]
+      },
+      "prepositionOrder": [
+        "vers"
+      ],
+      "sources": {
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "acheter": {
       "display": "acheter",
       "prepositions": {
@@ -797,6 +1125,71 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "achopper": {
+      "display": "achopper",
+      "prepositions": {
+        "sur": [
+          "achopper sur qqch 在……上受阻；卡在某个问题上",
+          "Les discussions ont achoppé sur la question des salaires. 讨论卡在了工资问题上。",
+          "Le projet achoppe toujours sur le financement. 这个项目一直卡在资金问题上。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "acquiescer": {
+      "display": "acquiescer",
+      "prepositions": {
+        "à": [
+          "acquiescer à qqch 同意；应允",
+          "Le directeur a acquiescé à notre demande. 主任答应了我们的请求。",
+          "Elle acquiesçait à tout ce que disait son père. 父亲说什么她都点头同意。",
+          "J'acquiesce à votre proposition. 我同意你的建议。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1330458",
+            "zh": "834397",
+            "eng": "257119"
+          }
+        ]
+      }
+    },
     "adapter": {
       "display": "adapter",
       "prepositions": {
@@ -836,6 +1229,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "adhérer",
       "prepositions": {
         "à": [
+          "adhérer à qqch 加入（组织）；赞同（观点）；粘附于",
+          "J'ai adhéré à une association de protection des animaux. 我加入了一个动物保护协会。",
+          "Je n'adhère pas du tout à cette théorie. 我完全不赞同这个理论。",
           "L'Albanie veut adhérer à l'Union européenne. 阿尔巴尼亚想加入欧盟。"
         ]
       },
@@ -845,10 +1241,176 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1889803",
             "zh": "1892667",
             "eng": "1802676"
+          }
+        ]
+      }
+    },
+    "adjoindre": {
+      "display": "adjoindre",
+      "prepositions": {
+        "à": [
+          "adjoindre qqn/qqch à qqn/qqch 给……增添；派……协助",
+          "La direction a adjoint deux ingénieurs au chef de projet. 管理层给项目负责人增派了两名工程师。",
+          "Nous avons adjoint une annexe au rapport. 我们给报告加了一份附件。",
+          "Vous devez adjoindre votre photo au formulaire de candidature. 你必须把你的照片贴在申请书上。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "551842",
+            "zh": "8829221",
+            "eng": "483621"
+          }
+        ]
+      }
+    },
+    "adjuger": {
+      "display": "adjuger",
+      "prepositions": {
+        "à": [
+          "adjuger qqch à qqn 判给某人；授予（拍卖中）",
+          "Le tableau a été adjugé à un collectionneur chinois. 这幅画被一位中国收藏家拍得。",
+          "Le jury a adjugé le premier prix à une jeune pianiste. 评委会把一等奖授予了一位年轻的钢琴家。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "admettre": {
+      "display": "admettre",
+      "prepositions": {
+        "à": [
+          "admettre qqn à qqch 准许某人参加；录取",
+          "Seuls les membres sont admis à la réunion. 只有会员才能参加这次会议。",
+          "Elle a été admise à l'examen oral. 她获准参加口试了。"
+        ],
+        "dans": [
+          "admettre qqn dans qqch 接纳某人进入（学校、团体等）",
+          "Il a été admis dans une grande école d'ingénieurs. 他被一所著名的工程师学校录取了。",
+          "Les chiens ne sont pas admis dans ce restaurant. 这家餐厅禁止带狗入内。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "dans"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "dans": "admettre dans = 接纳进入某个地方或团体；admettre à = 准许参加某项活动或考试",
+        "à": "admettre qqn à un examen / à faire = 准许参加、获准做；admettre qqn dans une école / un club = 接纳进入某机构"
+      }
+    },
+    "administrer": {
+      "display": "administrer",
+      "prepositions": {
+        "à": [
+          "administrer qqch à qqn 给某人服用（药物）；施以",
+          "L'infirmière a administré un calmant au patient. 护士给病人用了镇静剂。",
+          "Il ne faut jamais administrer ce médicament à un enfant. 绝不能给儿童服用这种药。",
+          "Le médecin a administré des médicaments au patient. 医生向病人用药。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "7705151",
+            "zh": "1402768",
+            "eng": "27997"
           }
         ]
       }
@@ -885,6 +1447,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "adresser",
       "prepositions": {
         "à": [
+          "adresser qqch à qqn 把……寄给、致予某人",
+          "Adressez votre candidature au service du personnel. 请把求职申请寄给人事部。",
+          "Il a adressé une lettre de remerciements à ses professeurs. 他给老师们写了一封感谢信。",
           "Le Président s'est adressé à la nation à la télévision. 总统在电视上对国民讲话。"
         ]
       },
@@ -893,6 +1458,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "791294",
@@ -933,15 +1510,35 @@ const FRENCH_COLLOCATIONS_DATA = {
     "affecter": {
       "display": "affecter",
       "prepositions": {
+        "à": [
+          "affecter qqn/qqch à qqch 把某人分配到；把……拨作",
+          "Le jeune professeur a été affecté à un lycée de banlieue. 这位年轻老师被分配到郊区的一所高中。",
+          "Ces fonds seront affectés à la recherche médicale. 这笔资金将用于医学研究。"
+        ],
         "par": [
           "Elle n'est pas du tout affectée par la mort de son mari. 她对她丈夫的死漠不关心。",
           "Ce village n'est pas affecté par la pollution de l'air. 这座村没有空气污染。"
         ]
       },
       "prepositionOrder": [
+        "à",
         "par"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "par": [
           {
             "kind": "direct",
@@ -954,6 +1551,84 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "495869",
             "zh": "345695",
             "eng": "58003"
+          }
+        ]
+      }
+    },
+    "affluer": {
+      "display": "affluer",
+      "prepositions": {
+        "à": [
+          "affluer à un lieu 大量涌到；（血液）涌上",
+          "Les candidatures affluent au bureau depuis lundi. 从周一起，申请材料就源源不断地送到办公室。",
+          "Le sang lui affluait au visage. 他的血一下子涌上了脸。"
+        ],
+        "vers": [
+          "affluer vers un lieu 涌向某地",
+          "Les touristes affluent vers la côte en août. 八月份游客纷纷涌向海边。",
+          "Après le concert, la foule a afflué vers la sortie. 音乐会结束后，人群涌向出口。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "vers"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "affubler": {
+      "display": "affubler",
+      "prepositions": {
+        "de": [
+          "affubler qqn de qqch 给某人套上（可笑的衣服、绰号）",
+          "Ses camarades l'ont affublé d'un surnom ridicule. 同学们给他起了一个可笑的外号。",
+          "Elle était affublée d'un chapeau énorme. 她戴着一顶大得出奇的帽子。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -982,20 +1657,50 @@ const FRENCH_COLLOCATIONS_DATA = {
     "agir": {
       "display": "agir",
       "prepositions": {
+        "en": [
+          "agir en qqn 以……的身份、方式行事",
+          "Arrête de faire l'enfant et agis en adulte. 别再孩子气了，像个大人一样做事。",
+          "Elle a agi en véritable amie. 她做得真像个好朋友。",
+          "Il agit en son nom propre. 他为自己的利益行事。"
+        ],
         "sur": [
           "Il est impératif que vous agissiez sur-le-champ. 您必须马上行动。",
           "L'acide agit sur les choses qui contiennent du métal. 酸会和金属物质起化学反应。",
           "Ils agirent sur la base de l'information. 他们根据情报采取行动。"
         ],
         "avec": [
+          "agir avec qqch 以……（方式、态度）行事",
+          "Dans cette situation, il faut agir avec prudence. 在这种情况下，行事必须谨慎。",
+          "Le maire a agi avec courage pendant la crise. 危机期间，市长表现得很有勇气。",
           "Elle a agi avec préméditation. 她按着预谋的决定行动了。"
         ]
       },
       "prepositionOrder": [
+        "en",
         "sur",
         "avec"
       ],
       "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1349977",
+            "zh": "8882024",
+            "eng": "298873"
+          }
+        ],
         "sur": [
           {
             "kind": "direct",
@@ -1018,10 +1723,51 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "842646",
             "zh": "842647",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "agrémenter": {
+      "display": "agrémenter",
+      "prepositions": {
+        "de": [
+          "agrémenter qqch de qqch 用……点缀、装点",
+          "Il a agrémenté son discours de quelques anecdotes. 他在讲话中穿插了几则趣闻。",
+          "Agrémentez la salade de quelques noix. 在沙拉里加些核桃点缀一下。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -1087,6 +1833,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "aiguiller": {
+      "display": "aiguiller",
+      "prepositions": {
+        "vers": [
+          "aiguiller qqn vers qqch 引导某人走向……",
+          "Le conseiller l'a aiguillée vers une formation d'infirmière. 顾问引导她去参加护士培训。",
+          "À l'accueil, on vous aiguillera vers le bon service. 接待处会把您引到相应的部门。"
+        ]
+      },
+      "prepositionOrder": [
+        "vers"
+      ],
+      "sources": {
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "aimer": {
       "display": "aimer",
       "prepositions": {
@@ -1144,6 +1919,126 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "135111",
             "zh": "842463",
             "eng": "321281"
+          }
+        ]
+      }
+    },
+    "ajouter": {
+      "display": "ajouter",
+      "prepositions": {
+        "à": [
+          "ajouter qqch à qqch 把……加到……里",
+          "Ajoute un peu de sel à la sauce. 往酱汁里加点盐。",
+          "J'ai ajouté ton nom à la liste des invités. 我把你的名字加到宾客名单上了。",
+          "Cette pluie ajoute encore à notre fatigue. 这场雨让我们更加疲惫了。",
+          "Combien dois-tu ajouter à dix-sept pour obtenir soixante ? 你要在17上加多少才能得到60？",
+          "S'il te plaît ajoute mon nom à la liste. 请在名单上加上我的名字。",
+          "Pourrais-tu ajouter mon nom à la liste d'attente ? 你能把我的名字加到等候批准的申请人名单上吗？",
+          "Y a-t-il quoi que ce soit que tu veuilles ajouter à ce que je viens de dire ? 我刚才说的内容，你想补充么？"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "465743",
+            "zh": "465826",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "1084768",
+            "zh": "893048",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "336411",
+            "zh": "336656",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "2037205",
+            "zh": "5267737",
+            "eng": "2034506"
+          }
+        ]
+      }
+    },
+    "alerter": {
+      "display": "alerter",
+      "prepositions": {
+        "sur": [
+          "alerter qqn sur qqch 提醒某人注意（危险）",
+          "Les scientifiques alertent l'opinion sur le réchauffement climatique. 科学家们提醒公众关注气候变暖问题。",
+          "Il faut alerter les parents sur les dangers d'internet. 必须提醒家长们注意网络的危险。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "alimenter": {
+      "display": "alimenter",
+      "prepositions": {
+        "en": [
+          "alimenter qqch en qqch 向……供应（水、电等）",
+          "Ce barrage alimente toute la région en électricité. 这座水坝为整个地区供电。",
+          "Le village est alimenté en eau par une source. 村子的用水来自一眼泉水。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -1360,20 +2255,98 @@ const FRENCH_COLLOCATIONS_DATA = {
     "allouer": {
       "display": "allouer",
       "prepositions": {
+        "à": [
+          "allouer qqch à qqn/qqch 把（款项、时间）拨给……",
+          "L'État a alloué deux millions d'euros à la rénovation du musée. 国家拨款两百万欧元用于博物馆翻修。",
+          "La mairie alloue une subvention à chaque association sportive. 市政府给每个体育协会拨了一笔补贴。"
+        ],
         "de": [
           "Allouer plus d'argent à l'éducation stimulera la croissance économique. 更多投资在教育的钱将会刺激经济成长。"
         ]
       },
       "prepositionOrder": [
+        "à",
         "de"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "de": [
           {
             "kind": "indirect",
             "fr": "341907",
             "zh": "772166",
             "eng": "19132"
+          }
+        ]
+      }
+    },
+    "alterner": {
+      "display": "alterner",
+      "prepositions": {
+        "avec": [
+          "alterner avec qqch 与……交替",
+          "Chez nous, la pluie alterne avec le soleil au printemps. 我们这里春天时雨时晴。",
+          "Dans ce cours, la théorie alterne avec la pratique. 这门课理论与实践交替进行。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "amarrer": {
+      "display": "amarrer",
+      "prepositions": {
+        "à": [
+          "amarrer qqch à qqch 把（船等）系在……上",
+          "Le pêcheur a amarré sa barque au ponton. 渔夫把小船系在了浮码头上。",
+          "Le bateau restera amarré au quai tout l'hiver. 这艘船整个冬天都会停泊在码头边。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -1448,6 +2421,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "amputer": {
+      "display": "amputer",
+      "prepositions": {
+        "de": [
+          "amputer qqn/qqch de qqch 截去某人的（肢体）；削减",
+          "Après l'accident, on a dû l'amputer d'une jambe. 事故之后，医生不得不给他截掉一条腿。",
+          "Le budget de la culture a été amputé d'un tiers. 文化预算被削减了三分之一。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "amuser": {
       "display": "amuser",
       "prepositions": {
@@ -1504,6 +2506,103 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "aménager": {
+      "display": "aménager",
+      "prepositions": {
+        "en": [
+          "aménager qqch en qqch 把……改建成……",
+          "Ils ont aménagé le grenier en chambre d'amis. 他们把阁楼改成了客房。",
+          "L'ancienne usine sera aménagée en centre culturel. 旧工厂将被改建成文化中心。",
+          "Nous aimerions aménager ce garage en atelier. 我们想把这个车库改成工作室。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "annexer": {
+      "display": "annexer",
+      "prepositions": {
+        "à": [
+          "annexer qqch à qqch 把……附于；吞并",
+          "Veuillez annexer une copie du contrat à votre demande. 请在申请中附上一份合同副本。",
+          "Ce territoire a été annexé à l'empire au dix-neuvième siècle. 这片领土在十九世纪被并入了帝国。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "annoncer": {
+      "display": "annoncer",
+      "prepositions": {
+        "à": [
+          "annoncer qqch à qqn 向某人宣布、告知某事",
+          "Il a annoncé la nouvelle à ses parents hier soir. 他昨晚把这个消息告诉了父母。",
+          "Qui va annoncer aux employés que l'usine ferme ? 谁去告诉员工工厂要关门了？",
+          "Elle annoncera son mariage à toute la famille à Noël. 她会在圣诞节向全家宣布她要结婚了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "annuler": {
       "display": "annuler",
       "prepositions": {
@@ -1547,6 +2646,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1491333",
             "zh": "750159",
             "eng": "275441"
+          }
+        ]
+      }
+    },
+    "anticiper": {
+      "display": "anticiper",
+      "prepositions": {
+        "sur": [
+          "anticiper sur qqch 预先考虑；抢先谈论（后面的事）",
+          "N'anticipons pas sur la suite de l'histoire. 我们先别提前讲故事的后续。",
+          "Il anticipe toujours sur les problèmes à venir. 他总是提前考虑将来可能出现的问题。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -1673,6 +2801,76 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "apporter": {
+      "display": "apporter",
+      "prepositions": {
+        "à": [
+          "apporter qqch à qqn 给某人带来某物",
+          "J'ai apporté des fleurs à ma grand-mère. 我给奶奶带了些花。",
+          "Ce voyage a apporté beaucoup de joie à toute la famille. 这次旅行给全家人带来了很多快乐。",
+          "Apporte ce dossier au directeur, s'il te plaît. 请把这份文件拿给主任。",
+          "Il a apporté son chien à l'école. 他把他的狗带到学校去了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "494167",
+            "zh": "676494",
+            "eng": ""
+          }
+        ]
+      }
+    },
+    "apposer": {
+      "display": "apposer",
+      "prepositions": {
+        "sur": [
+          "apposer qqch sur qqch 在……上加盖、贴上",
+          "Le notaire a apposé son cachet sur le document. 公证人在文件上盖了章。",
+          "Il est interdit d'apposer des affiches sur ce mur. 禁止在这面墙上张贴广告。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "apprendre": {
       "display": "apprendre",
       "prepositions": {
@@ -1780,6 +2978,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "approvisionner",
       "prepositions": {
         "en": [
+          "approvisionner qqn/qqch en qqch 向……供应某物",
+          "Des camions approvisionnent la ville en nourriture. 卡车为城市运送食物。",
+          "Ce fournisseur nous approvisionne en papier depuis dix ans. 这家供应商为我们供应纸张已经十年了。",
           "Le magasin peut nous approvisionner en tout ce dont nous avons besoin. 这家商店可以提供所有我们需要的东西。"
         ]
       },
@@ -1788,6 +2989,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "943640",
@@ -1846,10 +3059,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "appréhender": {
+      "display": "appréhender",
+      "prepositions": {
+        "de": [
+          "appréhender de faire qqch 害怕做某事；担心",
+          "J'appréhende de le revoir après tant d'années. 这么多年了，我有点害怕再见到他。",
+          "Elle appréhendait de prendre l'avion pour la première fois. 第一次坐飞机，她心里很忐忑。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "apprêter": {
       "display": "apprêter",
       "prepositions": {
         "à": [
+          "s'apprêter à faire qqch 正要做某事",
+          "Nous nous apprêtions à sortir quand il a commencé à pleuvoir. 我们正要出门，天就下起雨来了。",
+          "Le pays s'apprête à célébrer son centenaire. 这个国家即将庆祝建国一百周年。",
           "Je m'apprêtais à partir quand le téléphone sonna. 电话响的时候我正准备要走。"
         ]
       },
@@ -1858,6 +3103,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "129523",
@@ -1880,6 +3137,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Appuie sur une touche. 按任何键。"
         ],
         "contre": [
+          "appuyer qqch contre qqch 把……靠在……上",
+          "Il a appuyé l'échelle contre le mur. 他把梯子靠在墙上。",
+          "N'appuie pas ton vélo contre ma voiture. 别把你的自行车靠在我的车上。",
           "Ne vous appuyez pas contre le mur. 别倚著墙。"
         ]
       },
@@ -1932,12 +3192,140 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "contre": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "134996",
             "zh": "5574664",
             "eng": "44088"
           }
         ]
+      }
+    },
+    "appâter": {
+      "display": "appâter",
+      "prepositions": {
+        "avec": [
+          "appâter qqn/qqch avec qqch 用……引诱",
+          "On appâte les poissons avec des morceaux de pain. 人们用面包屑引鱼上钩。",
+          "Ils essaient d'appâter les clients avec des prix très bas. 他们试图用超低价吸引顾客。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "arguer": {
+      "display": "arguer",
+      "prepositions": {
+        "de": [
+          "arguer de qqch 以……为借口、理由",
+          "Il a argué de sa maladie pour ne pas venir. 他以生病为由没来。",
+          "Le ministre argue de la crise pour réduire les dépenses. 部长以危机为借口削减开支。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "arracher": {
+      "display": "arracher",
+      "prepositions": {
+        "à": [
+          "arracher qqch à qqn 从某人手中夺走；使某人摆脱",
+          "Le voleur a arraché son sac à une vieille dame. 小偷抢走了一位老太太的包。",
+          "La sonnerie l'a arraché à ses rêves. 铃声把他从梦中惊醒。",
+          "Personne n'a réussi à arracher un aveu au suspect. 谁也没能让嫌疑人招供。"
+        ],
+        "de": [
+          "arracher qqch de qqch 从……上拔出、撕下",
+          "Il a arraché une page de son cahier. 他从本子上撕下了一页。",
+          "Le vent a arraché plusieurs tuiles du toit. 风把屋顶上的好几块瓦掀掉了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "arracher de = 从某物/某处拔、撕；arracher à = 从某人那里夺走",
+        "à": "arracher qqch à qqn = 从“人”手里夺走（或使人摆脱某状态）；arracher qqch de qqch = 从“物、地方”上拔下、撕下"
       }
     },
     "arranger": {
@@ -1964,6 +3352,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "334311",
             "zh": "334326",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "arrimer": {
+      "display": "arrimer",
+      "prepositions": {
+        "à": [
+          "arrimer qqch à qqch 把……系牢在……上",
+          "Il faut bien arrimer les bagages au toit de la voiture. 必须把行李牢牢捆在车顶上。",
+          "Les caisses étaient arrimées au pont du navire. 箱子被牢牢固定在船的甲板上。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -2029,6 +3446,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "arroser": {
+      "display": "arroser",
+      "prepositions": {
+        "de": [
+          "arroser qqch de qqch 往……上浇、洒",
+          "Arrosez le poulet de son jus toutes les vingt minutes. 每隔二十分钟往鸡肉上浇一次汤汁。",
+          "Il a arrosé son dessert de rhum. 他在甜点上浇了些朗姆酒。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "arrêter": {
       "display": "arrêter",
       "prepositions": {
@@ -2090,6 +3536,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "asperger": {
+      "display": "asperger",
+      "prepositions": {
+        "de": [
+          "asperger qqn/qqch de qqch 往……上喷、溅",
+          "Les enfants s'aspergeaient d'eau dans le jardin. 孩子们在花园里互相泼水。",
+          "Une voiture m'a aspergé de boue en passant. 一辆车开过时溅了我一身泥。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "aspirer": {
       "display": "aspirer",
       "prepositions": {
@@ -2112,6 +3587,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "544818",
             "zh": "349514",
             "eng": "263268"
+          }
+        ]
+      }
+    },
+    "assaillir": {
+      "display": "assaillir",
+      "prepositions": {
+        "de": [
+          "assaillir qqn de qqch 用（问题等）围攻某人",
+          "Les journalistes l'ont assailli de questions. 记者们向他连珠炮似地提问。",
+          "Elle est assaillie de doutes depuis sa décision. 自从做了决定，她就疑虑重重。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "assener": {
+      "display": "assener",
+      "prepositions": {
+        "à": [
+          "assener qqch à qqn 给某人（一击）；对某人说出（狠话）",
+          "Il a assené un coup de poing à son adversaire. 他狠狠给了对手一拳。",
+          "Elle a assené quelques vérités désagréables à son patron. 她对老板说了几句不中听的大实话。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -2212,6 +3745,64 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "assigner": {
+      "display": "assigner",
+      "prepositions": {
+        "à": [
+          "assigner qqch à qqn / qqn à qqch 分配给某人；指定",
+          "On a assigné une tâche précise à chaque bénévole. 每个志愿者都被分派了具体的任务。",
+          "L'ancien ministre a été assigné à résidence. 前部长被软禁在家。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "assimiler": {
+      "display": "assimiler",
+      "prepositions": {
+        "à": [
+          "assimiler qqn/qqch à qqn/qqch 把……等同于……",
+          "On ne peut pas assimiler cette erreur à une faute grave. 不能把这个失误等同于严重过错。",
+          "Certains assimilent encore les jeux vidéo à une perte de temps. 有些人仍然把电子游戏看作浪费时间。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "assister": {
       "display": "assister",
       "prepositions": {
@@ -2269,6 +3860,204 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "9513",
             "zh": "874470",
             "eng": "22524"
+          }
+        ]
+      }
+    },
+    "associer": {
+      "display": "associer",
+      "prepositions": {
+        "à": [
+          "associer qqn/qqch à qqch 把……与……联系起来；让某人参与",
+          "J'associe toujours cette chanson à mon enfance. 我总是把这首歌和我的童年联系在一起。",
+          "Nous voulons associer les habitants à ce projet. 我们希望让居民参与到这个项目中来。",
+          "On associe souvent la couleur rouge à la chance en Chine. 在中国，人们常把红色和好运联系在一起。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "assortir": {
+      "display": "assortir",
+      "prepositions": {
+        "à": [
+          "assortir qqch à qqch 使……与……相配",
+          "Elle assortit toujours son sac à ses chaussures. 她总是让包和鞋子搭配。",
+          "Les rideaux sont assortis au canapé. 窗帘和沙发很相配。"
+        ],
+        "de": [
+          "assortir qqch de qqch 给……附加（条件等）",
+          "Le prêt est assorti de conditions très strictes. 这笔贷款附带了非常严格的条件。",
+          "Le juge a assorti la peine d'un sursis. 法官对该刑罚宣告了缓期执行。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "assortir de = 附带、附加；assortir à = 与……相配",
+        "à": "assortir à = 使相配、搭配；assortir de = 附加上（条件、说明等）"
+      }
+    },
+    "assujettir": {
+      "display": "assujettir",
+      "prepositions": {
+        "à": [
+          "assujettir qqn/qqch à qqch 使……受制于；使……必须缴纳",
+          "Ces revenus sont assujettis à l'impôt. 这些收入需要缴税。",
+          "Le peuple était assujetti à un pouvoir étranger. 这个民族曾受外族统治。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "assurer": {
+      "display": "assurer",
+      "prepositions": {
+        "de": [
+          "assurer qqn de qqch 向某人保证某事",
+          "Je vous assure de mon entier soutien. 我向您保证全力支持。",
+          "Il m'a assuré de sa bonne foi. 他向我保证他是真诚的。"
+        ],
+        "contre": [
+          "assurer qqch contre qqch 为……投保（以防）",
+          "Nous avons assuré la maison contre l'incendie. 我们给房子上了火灾险。",
+          "Votre voiture est-elle assurée contre le vol ? 您的车保了盗窃险吗？"
+        ]
+      },
+      "prepositionOrder": [
+        "de",
+        "contre"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "contre": "assurer contre = 投保防范（火灾、盗窃）；assurer de = 保证、担保（某种态度）",
+        "de": "assurer qqn de qqch = 向某人保证；assurer qqch contre qqch = 给某物投保以防某种风险"
+      }
+    },
+    "astreindre": {
+      "display": "astreindre",
+      "prepositions": {
+        "à": [
+          "astreindre qqn à qqch 强迫某人做；使某人受约束",
+          "Le médecin l'a astreint à un régime sévère. 医生让他严格节食。",
+          "Les employés sont astreints au secret professionnel. 员工必须遵守职业保密义务。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -2420,6 +4209,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "attenter": {
+      "display": "attenter",
+      "prepositions": {
+        "à": [
+          "attenter à qqch 侵犯；危害",
+          "Il a tenté d'attenter à la vie du président. 他企图谋害总统。",
+          "Cette loi attente à la liberté d'expression. 这项法律侵犯了言论自由。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "atterrir": {
       "display": "atterrir",
       "prepositions": {
@@ -2437,6 +4255,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "10526192",
             "zh": "10530870",
             "eng": "10472682"
+          }
+        ]
+      }
+    },
+    "attester": {
+      "display": "attester",
+      "prepositions": {
+        "de": [
+          "attester de qqch 证明；证实",
+          "Ces ruines attestent de la richesse de l'ancienne ville. 这些废墟证明了古城昔日的繁荣。",
+          "Plusieurs témoins peuvent attester de sa présence ce soir-là. 好几个证人可以证明他那天晚上在场。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -2614,6 +4461,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "augurer": {
+      "display": "augurer",
+      "prepositions": {
+        "de": [
+          "augurer bien/mal de qqch 对……作出（好/坏）预测",
+          "Ce premier entretien laisse bien augurer de la suite. 这第一次面谈预示着后续会很顺利。",
+          "Je n'augure rien de bon de cette réunion. 我对这次会议不抱什么好的期待。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "autoriser": {
       "display": "autoriser",
       "prepositions": {
@@ -2714,6 +4590,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "avancer",
       "prepositions": {
         "vers": [
+          "avancer vers qqn/qqch 朝……前进",
+          "Les manifestants avançaient lentement vers la place. 示威者缓缓向广场行进。",
+          "Le bateau avance vers le port malgré la tempête. 尽管有风暴，船仍朝港口驶去。",
           "Un homme étrange s'est avancé vers moi et m'a demandé de l'argent. 有个怪人上前来问我要钱。"
         ]
       },
@@ -2722,6 +4601,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "135001",
@@ -3000,7 +4891,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "avoir besoin",
       "prepositions": {
         "de": [
-          "avoir besoin de qqch 需要某物"
+          "avoir besoin de qqch 需要某物",
+          "J'ai besoin de ton aide pour déménager. 我搬家需要你帮忙。",
+          "Les plantes ont besoin de lumière pour pousser. 植物生长需要光照。"
         ]
       },
       "prepositionOrder": [
@@ -3011,6 +4904,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -3019,7 +4920,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "avoir confiance",
       "prepositions": {
         "en": [
-          "avoir confiance en qqn 信任某人"
+          "avoir confiance en qqn 信任某人",
+          "J'ai entièrement confiance en toi. 我完全信任你。",
+          "Il n'a plus confiance en personne. 他再也不相信任何人了。"
         ]
       },
       "prepositionOrder": [
@@ -3030,6 +4933,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -3038,7 +4949,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "avoir envie",
       "prepositions": {
         "de": [
-          "avoir envie de qqch 想要某物"
+          "avoir envie de qqch 想要某物",
+          "J'ai envie d'une glace à la fraise. 我想吃草莓冰淇淋。",
+          "Tu as envie de sortir ce soir ? 你今晚想出去吗？"
         ]
       },
       "prepositionOrder": [
@@ -3049,6 +4962,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -3057,7 +4978,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "avoir peur",
       "prepositions": {
         "de": [
-          "avoir peur de qqch 害怕某事"
+          "avoir peur de qqch 害怕某事",
+          "Ma fille a peur du noir. 我女儿怕黑。",
+          "Il avait peur de rater son train. 他怕赶不上火车。"
         ]
       },
       "prepositionOrder": [
@@ -3067,6 +4990,106 @@ const FRENCH_COLLOCATIONS_DATA = {
         "de": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "avouer": {
+      "display": "avouer",
+      "prepositions": {
+        "à": [
+          "avouer qqch à qqn 向某人承认、坦白",
+          "Il a fini par avouer la vérité à sa femme. 他最后还是向妻子坦白了真相。",
+          "Elle n'a jamais osé avouer son amour à Paul. 她一直没敢向保罗表白。",
+          "Il n'ose pas avouer à ses parents qu'il a raté son bac. 他不敢向父母承认自己高考没考过。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "badigeonner": {
+      "display": "badigeonner",
+      "prepositions": {
+        "de": [
+          "badigeonner qqch de qqch 在……上涂抹",
+          "Badigeonnez la pâte de jaune d'œuf avant la cuisson. 烘烤前在面团上刷一层蛋黄。",
+          "L'infirmière a badigeonné la plaie d'antiseptique. 护士在伤口上涂了消毒药水。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "badiner": {
+      "display": "badiner",
+      "prepositions": {
+        "avec": [
+          "badiner avec qqch 拿……开玩笑（多用于否定）",
+          "On ne badine pas avec la sécurité des enfants. 孩子的安全可不是闹着玩的。",
+          "Ce professeur ne badine pas avec la discipline. 这位老师在纪律问题上一点也不含糊。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -3100,6 +5123,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "baisser": {
+      "display": "baisser",
+      "prepositions": {
+        "de": [
+          "baisser de qqch 下降了（多少）",
+          "Le prix de l'essence a baissé de dix centimes. 汽油价格降了十欧分。",
+          "La température baissera de cinq degrés cette nuit. 今晚气温将下降五度。",
+          "Le nombre de chômeurs a baissé de 3 % en un an. 失业人数一年内下降了3%。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "balader": {
       "display": "balader",
       "prepositions": {
@@ -3107,6 +5164,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Je suis en train de me balader à vélo. 我在骑自行车溜达。"
         ],
         "dans": [
+          "se balader dans qqch 在……里闲逛",
+          "Le dimanche, on se balade dans le vieux quartier. 星期天我们会在老城区逛逛。",
+          "Ils se sont baladés dans les rues de Lyon jusqu'à minuit. 他们在里昂街头一直逛到半夜。",
           "J'aime me balader dans la nature. 我喜欢在大自然中散步。"
         ]
       },
@@ -3124,6 +5184,18 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "8315986",
@@ -3150,6 +5222,132 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "12498",
             "zh": "334208",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "bannir": {
+      "display": "bannir",
+      "prepositions": {
+        "de": [
+          "bannir qqn/qqch de qqch 把……逐出；从……中剔除",
+          "Le poète fut banni de son pays natal. 这位诗人被逐出了祖国。",
+          "J'ai banni le sucre de mon alimentation. 我的饮食里已经完全不吃糖了。",
+          "Il faut bannir ce mot de ton vocabulaire. 你得把这个词从你的词汇里删掉。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "barbouiller": {
+      "display": "barbouiller",
+      "prepositions": {
+        "de": [
+          "barbouiller qqch de qqch 用……把……涂得乱七八糟",
+          "Le petit a barbouillé le mur de peinture. 小家伙用颜料把墙涂得乱七八糟。",
+          "Il avait le visage barbouillé de chocolat. 他满脸都是巧克力。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "barder": {
+      "display": "barder",
+      "prepositions": {
+        "de": [
+          "être bardé de qqch 满身都是；（喻）拥有大量（文凭等）",
+          "Il est bardé de diplômes mais n'a aucune expérience. 他文凭一大堆，却毫无经验。",
+          "Le rôti était bardé de lard. 烤肉外面裹了一层肥肉片。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "basculer": {
+      "display": "basculer",
+      "prepositions": {
+        "dans": [
+          "basculer dans qqch 陷入；转入（某种状态）",
+          "Le pays a basculé dans la guerre civile. 这个国家陷入了内战。",
+          "Après l'accident, sa vie a basculé dans le cauchemar. 事故之后，他的生活陷入了噩梦。",
+          "Il a basculé dans la délinquance à quinze ans. 他十五岁时就走上了犯罪道路。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -3182,6 +5380,64 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "bassiner": {
+      "display": "bassiner",
+      "prepositions": {
+        "avec": [
+          "bassiner qqn avec qqch 用……烦扰某人（口语）",
+          "Il nous bassine avec ses histoires de pêche. 他老拿他钓鱼的事烦我们。",
+          "Arrête de me bassiner avec tes problèmes de voiture ! 别再拿你那车的问题来烦我了！"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "batailler": {
+      "display": "batailler",
+      "prepositions": {
+        "pour": [
+          "batailler pour qqch / pour faire qqch 为……费力争取",
+          "Elle a bataillé pour obtenir un rendez-vous chez le spécialiste. 她费了好大劲才约上专科医生。",
+          "Les habitants bataillent pour garder leur école ouverte. 居民们极力争取让学校继续开办。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "battre": {
       "display": "battre",
       "prepositions": {
@@ -3190,6 +5446,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Ils se sont battus pour la liberté. 他们为了自由而战。"
         ],
         "avec": [
+          "se battre avec qqn 和某人打架、争斗",
+          "Mon petit frère se bat souvent avec le voisin. 我弟弟经常和邻居家的孩子打架。",
+          "Il s'est battu avec un inconnu à la sortie du bar. 他在酒吧门口和一个陌生人打了起来。",
           "T'es-tu battu avec Ken ? 你和肯吵架了吗?"
         ]
       },
@@ -3214,6 +5473,18 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "348556",
             "zh": "875261",
@@ -3226,6 +5497,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "bavarder",
       "prepositions": {
         "avec": [
+          "bavarder avec qqn 和某人闲聊",
+          "Elle bavarde avec sa voisine tous les matins. 她每天早上都和邻居聊天。",
+          "Au lieu de bavarder avec ton voisin, écoute le professeur ! 别跟同桌聊天了，好好听老师讲课！",
           "J'ai passé tout l'après-midi à bavarder avec des amis. 我用了一整个下午和我的朋友聊天。"
         ]
       },
@@ -3234,6 +5508,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "3923",
@@ -3247,6 +5533,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "bayer",
       "prepositions": {
         "à": [
+          "bayer aux corneilles 发呆；呆看着出神",
+          "Pendant le cours, il bayait aux corneilles par la fenêtre. 上课时他望着窗外发呆。",
           "Arrête de bayer aux corneilles. 别再傻看着。"
         ]
       },
@@ -3256,10 +5544,76 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1072214",
             "zh": "5102246",
             "eng": "693620"
+          }
+        ]
+      }
+    },
+    "bifurquer": {
+      "display": "bifurquer",
+      "prepositions": {
+        "vers": [
+          "bifurquer vers qqch 转向；改行",
+          "Au carrefour, bifurquez vers la gauche. 到了路口向左转。",
+          "Après ses études de droit, il a bifurqué vers le journalisme. 读完法律后，他改行做了记者。"
+        ]
+      },
+      "prepositionOrder": [
+        "vers"
+      ],
+      "sources": {
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "blaguer": {
+      "display": "blaguer",
+      "prepositions": {
+        "sur": [
+          "blaguer sur qqch 拿……开玩笑",
+          "Il blague sur tout, même sur sa maladie. 他什么都拿来开玩笑，连自己的病也不例外。",
+          "On ne blague pas sur ce genre de sujet. 这种话题可不能拿来开玩笑。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -3344,6 +5698,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "blinder": {
+      "display": "blinder",
+      "prepositions": {
+        "contre": [
+          "être blindé contre qqch 对……有了免疫力（口语）；加固以防",
+          "Après tant de critiques, elle est blindée contre les insultes. 经历了那么多批评，她对辱骂已经无动于衷了。",
+          "Ils ont blindé la porte contre les cambrioleurs. 他们加固了门以防盗贼。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "bloquer": {
       "display": "bloquer",
       "prepositions": {
@@ -3403,6 +5786,12 @@ const FRENCH_COLLOCATIONS_DATA = {
     "boire": {
       "display": "boire",
       "prepositions": {
+        "à": [
+          "boire à qqch 为……干杯",
+          "Buvons à la santé des jeunes mariés ! 让我们为新婚夫妇的健康干杯！",
+          "Nous avons bu à notre réussite. 我们为我们的成功干了杯。",
+          "Elle a bu directement à la bouteille. 她一口干完了整杯。"
+        ],
         "de": [
           "Buvez du thé. 喝茶。",
           "Je buvais du lait. 我刚才在喝牛奶。",
@@ -3413,9 +5802,30 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "de"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1777994",
+            "zh": "4475892",
+            "eng": "1768845"
+          }
+        ],
         "de": [
           {
             "kind": "direct",
@@ -3452,6 +5862,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1724519",
             "zh": "1724523",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "boiter": {
+      "display": "boiter",
+      "prepositions": {
+        "de": [
+          "boiter de la jambe 瘸（某条腿）",
+          "Depuis sa chute, il boite de la jambe droite. 自从摔了一跤，他右腿就有点瘸。",
+          "Le cheval boitait d'une patte arrière. 那匹马的一条后腿瘸了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "bombarder": {
+      "display": "bombarder",
+      "prepositions": {
+        "de": [
+          "bombarder qqn de qqch 用……对某人狂轰滥炸",
+          "Les enfants ont bombardé le guide de questions. 孩子们向导游提出了一连串问题。",
+          "On nous bombarde de publicités à la télé. 电视上的广告铺天盖地地向我们砸来。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -3498,10 +5966,66 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "bondir": {
+      "display": "bondir",
+      "prepositions": {
+        "de": [
+          "bondir de qqch 因（喜悦、愤怒）而跳起来",
+          "Quand elle a reçu la lettre, elle a bondi de joie. 收到信时，她高兴得跳了起来。",
+          "Il a bondi de sa chaise en entendant la nouvelle. 听到消息，他从椅子上一跃而起。"
+        ],
+        "sur": [
+          "bondir sur qqn/qqch 扑向；抓住（机会）",
+          "Le chat a bondi sur la souris. 猫扑向了老鼠。",
+          "Il a bondi sur l'occasion sans hésiter. 他毫不犹豫地抓住了机会。"
+        ]
+      },
+      "prepositionOrder": [
+        "de",
+        "sur"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "bondir de joie / de colère = 因某种情绪而跳起（也可表示从某处跳起）；bondir sur = 扑向某物、抓住机会",
+        "sur": "bondir sur = 扑到……上（目标）；bondir de = 由于……跳起、从……跳起（来源）"
+      }
+    },
     "border": {
       "display": "border",
       "prepositions": {
         "de": [
+          "border qqch de qqch 用……镶边；沿……排列",
+          "La route est bordée de platanes. 道路两旁种着梧桐树。",
+          "Elle a bordé la nappe d'une dentelle blanche. 她给桌布镶上了白色花边。",
           "L'étang était bordé d'arbres. 池溏的四周长满了树木。"
         ]
       },
@@ -3511,10 +6035,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "826827",
             "zh": "616236",
             "eng": "277306"
+          }
+        ]
+      }
+    },
+    "bosser": {
+      "display": "bosser",
+      "prepositions": {
+        "sur": [
+          "bosser sur qqch 忙于、做（某项工作，口语）",
+          "Je bosse sur un nouveau projet en ce moment. 我现在在忙一个新项目。",
+          "Elle a bossé sur ce dossier tout le week-end. 她整个周末都在弄这份材料。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -3554,10 +6119,71 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "bouillonner": {
+      "display": "bouillonner",
+      "prepositions": {
+        "de": [
+          "bouillonner de qqch 充满（活力、怒气等）",
+          "Cette jeune équipe bouillonne d'idées. 这支年轻的团队满脑子都是点子。",
+          "Il bouillonnait de colère mais ne disait rien. 他心里怒火翻腾，却一言不发。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "bourdonner": {
+      "display": "bourdonner",
+      "prepositions": {
+        "de": [
+          "bourdonner de qqch 充斥着……的嗡嗡声",
+          "Le marché bourdonne d'activité dès six heures. 市场从六点起就一片热闹。",
+          "Le jardin bourdonnait d'abeilles. 花园里蜜蜂嗡嗡作响。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "bourrer": {
       "display": "bourrer",
       "prepositions": {
         "de": [
+          "bourrer qqch de qqch 往……里塞满",
+          "Il a bourré son sac de vêtements. 他把包里塞满了衣服。",
+          "Ne te bourre pas de bonbons avant le dîner. 晚饭前别吃那么多糖。",
           "L'été, la place Saint-Marc, à Venise, est toujours bourrée de touristes. 威尼斯的圣马可广场在夏季总是挤满了游客。"
         ]
       },
@@ -3567,6 +6193,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "10629626",
             "zh": "332776",
@@ -3575,10 +6213,131 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "brancher": {
+      "display": "brancher",
+      "prepositions": {
+        "sur": [
+          "brancher qqch sur qqch 把……接到（电源、频道）上",
+          "Branche ton téléphone sur le secteur, il n'a plus de batterie. 把你的手机插上电源，没电了。",
+          "La radio était branchée sur une station de jazz. 收音机调到了一个爵士乐电台。",
+          "Le cordon d'alimentation est-il branché sur une prise de courant ? 插头插到插座里了吗？"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "10547842",
+            "zh": "10267396",
+            "eng": "5996372"
+          }
+        ]
+      }
+    },
+    "braquer": {
+      "display": "braquer",
+      "prepositions": {
+        "sur": [
+          "braquer qqch sur qqn/qqch 把（枪、目光）对准……",
+          "Le policier a braqué son arme sur le suspect. 警察把枪口对准了嫌疑人。",
+          "Tous les regards étaient braqués sur elle. 所有的目光都集中在她身上。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "briller": {
+      "display": "briller",
+      "prepositions": {
+        "de": [
+          "briller de qqch 因……而闪闪发亮",
+          "Ses yeux brillaient de joie. 她的眼里闪烁着喜悦。",
+          "Le soir, la tour Eiffel brille de mille feux. 夜晚，埃菲尔铁塔流光溢彩。"
+        ],
+        "par": [
+          "briller par qqch 以……而出众（常带讽刺）",
+          "Il brille par son intelligence. 他以聪明过人著称。",
+          "Le directeur a encore brillé par son absence. 主任又一次“缺席得很显眼”。"
+        ]
+      },
+      "prepositionOrder": [
+        "de",
+        "par"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "briller de joie / de mille feux = 闪耀着；briller par = 以……出众",
+        "par": "briller par = 以……而出众（briller par son absence 是反讽：因缺席而引人注目）；briller de = 闪耀着（光芒、情感）"
+      }
+    },
     "briser": {
       "display": "briser",
       "prepositions": {
         "en": [
+          "briser qqch en qqch 把……打碎成……",
+          "Le verre s'est brisé en mille morceaux sur le carrelage. 杯子掉在瓷砖上摔得粉碎。",
+          "Il a brisé la tablette de chocolat en quatre morceaux. 他把巧克力板掰成了四块。",
           "Le vase était brisé en morceaux. 花瓶被摔成了碎片。"
         ]
       },
@@ -3588,6 +6347,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "en": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "3141626",
             "zh": "485861",
@@ -3596,9 +6367,45 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "broder": {
+      "display": "broder",
+      "prepositions": {
+        "sur": [
+          "broder qqch sur qqch 在……上绣",
+          "Ma grand-mère a brodé mes initiales sur la serviette. 奶奶在毛巾上绣了我名字的首字母。",
+          "Elle brodait des fleurs sur un coussin. 她在靠垫上绣花。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "brûler": {
       "display": "brûler",
       "prepositions": {
+        "de": [
+          "brûler de qqch / de faire qqch 渴望；（情感）强烈",
+          "Je brûle d'impatience de te revoir. 我迫不及待地想再见到你。",
+          "Il brûlait de lui dire la vérité. 他很想把真相告诉她。",
+          "Il brûle de rage. 他怒火中烧。",
+          "Mon front brûlait de fièvre. 我的额头烧得很烫。"
+        ],
         "dans": [
           "Ne sens-tu pas quelque chose qui brûle dans la cuisine ? 你没觉得厨房里有什么东西烧糊了吗？"
         ],
@@ -3608,10 +6415,37 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "de",
         "dans",
         "avec"
       ],
       "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "331253",
+            "zh": "340164",
+            "eng": "289545"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1117813",
+            "zh": "2474902",
+            "eng": "21247"
+          }
+        ],
         "dans": [
           {
             "kind": "direct",
@@ -3632,6 +6466,88 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "129833",
             "zh": "2183247",
             "eng": "282143"
+          }
+        ]
+      }
+    },
+    "buter": {
+      "display": "buter",
+      "prepositions": {
+        "sur": [
+          "buter sur qqch 在……上卡住、受阻",
+          "Il bute toujours sur les mots difficiles. 他一碰到难词就结巴。",
+          "Les enquêteurs butent sur un mystère. 调查人员遇到了一个难解之谜。"
+        ],
+        "contre": [
+          "buter contre qqch 撞在……上；绊到",
+          "J'ai buté contre une pierre et je suis tombé. 我绊到一块石头摔倒了。",
+          "Dans le noir, elle a buté contre la table basse. 黑暗中，她撞到了茶几。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur",
+        "contre"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "contre": "buter contre = 身体撞到、绊到（具体物体）；buter sur = 被（难题、单词）卡住",
+        "sur": "buter sur = 在难点上卡住；buter contre = 撞上、绊到实物"
+      }
+    },
+    "bâiller": {
+      "display": "bâiller",
+      "prepositions": {
+        "de": [
+          "bâiller de qqch 因……而打哈欠",
+          "Pendant la conférence, tout le monde bâillait d'ennui. 讲座期间，大家都无聊得直打哈欠。",
+          "Le bébé bâille de fatigue, il est temps de le coucher. 宝宝困得直打哈欠，该哄他睡觉了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -3664,18 +6580,106 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "bénéficier": {
+      "display": "bénéficier",
+      "prepositions": {
+        "de": [
+          "bénéficier de qqch 享有；受益于",
+          "Les étudiants bénéficient d'une réduction au cinéma. 学生看电影可以享受优惠。",
+          "Il a bénéficié de l'aide de ses voisins. 他得到了邻居们的帮助。",
+          "Demain, toute la région bénéficiera d'un temps ensoleillé. 明天整个地区都将阳光明媚。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "bûcher": {
+      "display": "bûcher",
+      "prepositions": {
+        "sur": [
+          "bûcher sur qqch 埋头苦学（口语）",
+          "Il a bûché sur ses maths toute la semaine. 他整个星期都在埋头啃数学。",
+          "Les étudiants bûchent sur leurs examens. 学生们在埋头准备考试。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "cacher": {
       "display": "cacher",
       "prepositions": {
+        "à": [
+          "cacher qqch à qqn 对某人隐瞒某事",
+          "Il cache la vérité à ses parents depuis des mois. 几个月来他一直对父母隐瞒真相。",
+          "Ne cache rien à ton médecin, c'est important. 什么都别瞒着你的医生，这很重要。",
+          "Elle a caché sa grossesse à ses collègues. 她对同事们隐瞒了怀孕的事。"
+        ],
         "dans": [
           "Je me suis caché dans les herbes hautes. 我躲在高草丛里了。",
           "Le renard s'est caché dans l'arbre creux. 狐狸躲在了空心树里面。"
         ]
       },
       "prepositionOrder": [
+        "à",
         "dans"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "dans": [
           {
             "kind": "indirect",
@@ -3692,10 +6696,110 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "cadrer": {
+      "display": "cadrer",
+      "prepositions": {
+        "avec": [
+          "cadrer avec qqch 与……相符；与……吻合",
+          "Son témoignage ne cadre pas avec les faits. 他的证词与事实不符。",
+          "Ce projet cadre parfaitement avec nos objectifs. 这个项目与我们的目标完全吻合。",
+          "Ses dépenses ne cadraient plus avec son salaire. 他的开销和他的工资已经对不上了。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "calquer": {
+      "display": "calquer",
+      "prepositions": {
+        "sur": [
+          "calquer qqch sur qqch 照搬；仿照……制作",
+          "Ils ont calqué leur système sur le modèle allemand. 他们照搬了德国模式来建立自己的体制。",
+          "Ne calque pas ta vie sur celle de tes parents. 别照着你父母的样子过一辈子。",
+          "Ce mot anglais est calqué sur une expression française. 这个英语单词是仿照一个法语表达造出来的。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "camoufler": {
+      "display": "camoufler",
+      "prepositions": {
+        "en": [
+          "camoufler qqch en qqch 把……伪装成……",
+          "Les voleurs avaient camouflé le camion en ambulance. 小偷们把卡车伪装成了救护车。",
+          "Il a camouflé le meurtre en accident. 他把谋杀伪装成了意外。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "casser": {
       "display": "casser",
       "prepositions": {
         "en": [
+          "casser qqch en qqch 把……打碎成／掰成……",
+          "Le vase s'est cassé en mille morceaux. 花瓶摔得粉碎。",
+          "Il a cassé la tablette de chocolat en deux. 他把巧克力掰成两半。",
           "Le moteur de la voiture cassa en route. 汽车的发动机在路上坏了。"
         ]
       },
@@ -3704,6 +6808,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "463517",
@@ -3719,10 +6835,16 @@ const FRENCH_COLLOCATIONS_DATA = {
         "par": [
           "Ce qui était tout d'abord une catastrophe naturelle est vite devenu une débâcle causée par l'homme. 起初的天灾迅速演变为了人祸。",
           "Certaines maladies sont causées par un gène défectueux. 一些疾病的产生原因是基因缺陷。"
+        ],
+        "avec": [
+          "causer avec qqn 和某人聊天",
+          "J'ai causé un moment avec la boulangère. 我和面包店老板娘聊了一会儿。",
+          "Les voisins aiment causer avec nous sur le balcon. 邻居们喜欢在阳台上和我们闲聊。"
         ]
       },
       "prepositionOrder": [
-        "par"
+        "par",
+        "avec"
       ],
       "sources": {
         "par": [
@@ -3737,6 +6859,49 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1190543",
             "zh": "3630130",
             "eng": "681062"
+          }
+        ],
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "centrer": {
+      "display": "centrer",
+      "prepositions": {
+        "sur": [
+          "centrer qqch sur qqch 使……以……为中心",
+          "Le débat a été centré sur la question du logement. 辩论集中在住房问题上。",
+          "Nous allons centrer notre travail sur les jeunes. 我们将把工作重点放在年轻人身上。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -4057,6 +7222,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "chasser": {
+      "display": "chasser",
+      "prepositions": {
+        "de": [
+          "chasser qqn de qqch 把某人赶出某处",
+          "Le propriétaire les a chassés de l'appartement. 房东把他们赶出了公寓。",
+          "Chasse ces idées noires de ta tête ! 把这些悲观的念头从脑子里赶走！",
+          "Le vent chassait les nuages du ciel. 风把天上的云吹散了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "chercher": {
       "display": "chercher",
       "prepositions": {
@@ -4070,6 +7269,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "J'ai faim, je vais chercher à manger. 我饿了，所以我要吃东西。"
         ],
         "dans": [
+          "chercher qqch dans qqch 在……里找某物",
+          "J'ai cherché mes clés dans tous mes tiroirs. 我在所有抽屉里都找过钥匙了。",
+          "Cherche ce mot dans le dictionnaire. 在词典里查一下这个词。",
           "Cherche dans chaque pièce. 搜查每个房间。"
         ]
       },
@@ -4122,10 +7324,80 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "7071810",
             "zh": "13174513",
             "eng": "2249861"
+          }
+        ]
+      }
+    },
+    "chiper": {
+      "display": "chiper",
+      "prepositions": {
+        "à": [
+          "chiper qqch à qqn 从某人那里顺手拿走（偷）",
+          "Mon petit frère a chipé des bonbons à notre sœur. 我弟弟偷拿了我们妹妹的糖果。",
+          "Elle chipe toujours des frites à son copain. 她总是偷吃男朋友的薯条。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "chipoter": {
+      "display": "chipoter",
+      "prepositions": {
+        "sur": [
+          "chipoter sur qqch 在……上斤斤计较",
+          "Il chipote sur chaque centime. 他一分钱都要计较。",
+          "Ne chipotons pas sur les détails, l'essentiel est fait. 别在细节上纠缠了，主要的都做完了。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -4252,6 +7524,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "chuchoter",
       "prepositions": {
         "à": [
+          "chuchoter qqch à qqn 对某人耳语",
+          "Elle a chuchoté quelque chose à son voisin. 她对旁边的人低声说了些什么。",
+          "Il m'a chuchoté la réponse à l'oreille. 他在我耳边悄悄说出了答案。",
           "Permettez-moi de vous chuchoter à l'oreille. 我凑到你耳边说。"
         ]
       },
@@ -4261,6 +7536,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "12921804",
             "zh": "13922428",
@@ -4269,10 +7556,54 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "chuter": {
+      "display": "chuter",
+      "prepositions": {
+        "de": [
+          "chuter de qqch 下降（若干）；从……摔下",
+          "Les ventes ont chuté de vingt pour cent cette année. 今年销量下降了百分之二十。",
+          "La température va chuter de dix degrés cette nuit. 今晚气温将骤降十度。",
+          "Il a chuté du haut de l'échelle. 他从梯子顶上摔了下来。",
+          "Il perdit l'équilibre et chuta de son vélo. 他失去了平衡，从自行车上摔了下来。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "653906",
+            "zh": "1659794",
+            "eng": ""
+          }
+        ]
+      }
+    },
     "circuler": {
       "display": "circuler",
       "prepositions": {
         "sur": [
+          "circuler sur qqch 在……上流传；在……上行驶",
+          "Une fausse rumeur circule sur les réseaux sociaux. 一条谣言在社交网络上流传。",
+          "Il est interdit de circuler sur la voie de gauche. 禁止在左侧车道行驶。",
           "Aux États-Unis, les voitures circulent sur le côté droit de la route. 在美国，汽车靠右行驶。"
         ]
       },
@@ -4282,6 +7613,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "6396064",
             "zh": "707694",
@@ -4290,10 +7633,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "citer": {
+      "display": "citer",
+      "prepositions": {
+        "en": [
+          "citer qqn/qqch en exemple 把某人／某物作为榜样举出",
+          "Le directeur a cité son travail en exemple. 校长把他的作业当作范例。",
+          "On cite souvent ce pays en exemple pour son système de santé. 人们常以这个国家的医疗体系为例。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "classer": {
       "display": "classer",
       "prepositions": {
         "par": [
+          "classer qqch par qqch 按……分类",
+          "Classe ces documents par date. 把这些文件按日期归类。",
+          "Les vins sont classés par région. 这些葡萄酒按产区分类。",
           "Les livres étaient classés par ordre alphabétique. 书是按字母排序的。"
         ]
       },
@@ -4303,6 +7678,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "par": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "11189992",
             "zh": "10706229",
@@ -4311,10 +7698,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "cligner": {
+      "display": "cligner",
+      "prepositions": {
+        "de": [
+          "cligner de l'œil 眨眼；使眼色",
+          "Il m'a cligné de l'œil pour que je me taise. 他朝我使了个眼色，让我别说话。",
+          "Le soleil était si fort qu'on clignait des yeux. 阳光太强烈，我们直眨眼睛。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "cliquer": {
       "display": "cliquer",
       "prepositions": {
         "sur": [
+          "cliquer sur qqch 点击……",
+          "Cliquez sur le lien pour vous inscrire. 点击链接即可注册。",
+          "J'ai cliqué sur le mauvais bouton. 我点错按钮了。",
           "Cliquez sur l'image pour aller à la page suivante ! 点击图片进入下一页!"
         ]
       },
@@ -4323,6 +7742,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "785954",
@@ -4367,6 +7798,105 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "coexister": {
+      "display": "coexister",
+      "prepositions": {
+        "avec": [
+          "coexister avec qqch/qqn 与……共存",
+          "Les traditions coexistent ici avec la modernité. 在这里，传统与现代并存。",
+          "Ces animaux coexistent pacifiquement avec les humains. 这些动物与人类和平共处。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "cogner": {
+      "display": "cogner",
+      "prepositions": {
+        "à": [
+          "cogner à qqch 敲打（门、窗）",
+          "Quelqu'un cogne à la porte depuis cinq minutes. 有人已经敲了五分钟的门了。",
+          "La pluie cognait aux vitres toute la nuit. 雨点整夜敲打着窗玻璃。",
+          "Cognez à la porte, s'il vous plait. 请敲门。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "12752",
+            "zh": "472974",
+            "eng": ""
+          }
+        ]
+      }
+    },
+    "cohabiter": {
+      "display": "cohabiter",
+      "prepositions": {
+        "avec": [
+          "cohabiter avec qqn 与某人同住；与……共处",
+          "Il cohabite avec trois étudiants dans un petit appartement. 他和三个学生合住在一套小公寓里。",
+          "Notre chat cohabite très bien avec le chien. 我们的猫和狗相处得很好。",
+          "Elle a appris à cohabiter avec sa maladie. 她学会了与疾病共存。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "coincer": {
       "display": "coincer",
       "prepositions": {
@@ -4377,10 +7907,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           "J'ai une arête coincée dans ma gorge. 我被鱼骨刺到了喉咙。",
           "Avez-vous jamais été coincé dans un ascenseur ? 你有没有被困在电梯里过？",
           "Le réparateur devait arriver à midi, mais il s'est retrouvé coincé dans des bouchons pendant plusieurs heures. 这个工人本来应该在中午十二点到达, 但他被交通堵塞困住了几个小时。"
+        ],
+        "entre": [
+          "Tu as quelque chose de coincé entre les dents. 牙齿卡了点东西。"
         ]
       },
       "prepositionOrder": [
-        "dans"
+        "dans",
+        "entre"
       ],
       "sources": {
         "dans": [
@@ -4420,7 +7954,73 @@ const FRENCH_COLLOCATIONS_DATA = {
             "zh": "778901",
             "eng": "704605"
           }
+        ],
+        "entre": [
+          {
+            "kind": "indirect",
+            "fr": "12645828",
+            "zh": "8589339",
+            "eng": "8219705"
+          }
         ]
+      }
+    },
+    "collaborer": {
+      "display": "collaborer",
+      "prepositions": {
+        "à": [
+          "collaborer à qqch 参与（某项工作）",
+          "Il a collaboré à la rédaction du dictionnaire. 他参与了这部词典的编写。",
+          "Tous les élèves ont collaboré au journal de l'école. 全体学生都参与了校报的工作。"
+        ],
+        "avec": [
+          "collaborer avec qqn 与某人合作",
+          "Nous collaborons avec une entreprise japonaise. 我们正在和一家日本公司合作。",
+          "Elle a collaboré avec plusieurs chercheurs étrangers. 她曾和好几位外国研究人员合作过。",
+          "Pendant la guerre, certains ont collaboré avec l'ennemi. 战争期间，有些人与敌人勾结。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "avec"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "avec": "collaborer avec qqn = 与某人合作；collaborer à qqch = 参与某项工作",
+        "à": "collaborer à qqch = 参与某项工作；collaborer avec qqn = 与某人合作"
       }
     },
     "coller": {
@@ -4428,7 +8028,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "prepositions": {
         "à": [
           "Il écouta l'oreille collée à la porte. 他把耳朵贴在门上听。",
-          "Les yeux de Tom étaient collés à l'écran. Tom的眼睛被荧幕吸引住了。"
+          "Les yeux de Tom étaient collés à l'écran. Tom的眼睛被荧幕吸引住了。",
+          "Il passe son temps à coller des étiquettes aux gens. 他老是给别人扣帽子。"
         ]
       },
       "prepositionOrder": [
@@ -4447,6 +8048,41 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "4837307",
             "zh": "4844724",
             "eng": "4837198"
+          },
+          {
+            "kind": "indirect",
+            "fr": "14042097",
+            "zh": "14028769",
+            "eng": "14028771"
+          }
+        ]
+      }
+    },
+    "colorier": {
+      "display": "colorier",
+      "prepositions": {
+        "en": [
+          "colorier qqch en qqch 把……涂成（某种颜色）",
+          "L'enfant a colorié le soleil en violet. 孩子把太阳涂成了紫色。",
+          "Coloriez les pays européens en vert. 把欧洲国家涂成绿色。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -4455,6 +8091,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "combattre",
       "prepositions": {
         "pour": [
+          "combattre pour qqch 为……而战",
+          "Ils combattaient pour la liberté de leur peuple. 他们为人民的自由而战。",
+          "Mon grand-père a combattu pour la France en 1940. 我祖父在一九四〇年为法国作战。",
           "Ils ont combattu pour leur pays. 他们为祖国而战斗。"
         ]
       },
@@ -4464,10 +8103,140 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "pour": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "11969052",
             "zh": "1366198",
             "eng": "306548"
+          }
+        ]
+      }
+    },
+    "combiner": {
+      "display": "combiner",
+      "prepositions": {
+        "avec": [
+          "combiner qqch avec qqch 把……与……结合",
+          "Elle combine ses études avec un travail à mi-temps. 她一边上学一边做兼职。",
+          "Ce plat combine le sucré avec le salé. 这道菜把甜味和咸味结合在一起。",
+          "Il faut combiner le sport avec une bonne alimentation. 运动要和良好的饮食相结合。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "combler": {
+      "display": "combler",
+      "prepositions": {
+        "de": [
+          "combler qqn de qqch 使某人充满；给某人大量……",
+          "Ses grands-parents le comblent de cadeaux. 他的祖父母送给他很多礼物。",
+          "Cette nouvelle m'a comblé de joie. 这个消息让我满心欢喜。",
+          "Le public l'a comblée d'applaudissements. 观众给了她雷鸣般的掌声。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "commander": {
+      "display": "commander",
+      "prepositions": {
+        "à": [
+          "commander à qqn de faire qqch 命令某人做某事",
+          "Le capitaine a commandé à ses hommes de reculer. 队长命令他的士兵后退。",
+          "Personne ne peut commander à son cœur. 谁也无法支配自己的心。",
+          "Nous avons trop commandé à manger. 我们点太多食物了。",
+          "J'ai commandé un livre à Londres. 我从伦敦订购了一本书。",
+          "Je commandai des pâtes aux grenouilles. 我点了青蛙加面条。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "1074496",
+            "zh": "1073083",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "728108",
+            "zh": "848692",
+            "eng": "29313"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1016762",
+            "zh": "1016729",
+            "eng": "1016755"
           }
         ]
       }
@@ -4589,6 +8358,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": "commencer à faire = 开始做；commencer par = 从…开始"
       }
     },
+    "commercer": {
+      "display": "commercer",
+      "prepositions": {
+        "avec": [
+          "commercer avec qqn 与某人做生意",
+          "La France commerce beaucoup avec l'Allemagne. 法国与德国的贸易往来很多。",
+          "Autrefois, cette ville commerçait avec tout l'Orient. 从前，这座城市和整个东方都有贸易往来。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "commettre": {
       "display": "commettre",
       "prepositions": {
@@ -4626,6 +8424,10 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Les pilotes communiquent par radio avec l'aéroport. 飞行员用无线电与机场沟通。"
         ],
         "avec": [
+          "communiquer avec qqn 与某人交流",
+          "Nous communiquons avec nos clients par mail. 我们通过邮件与客户沟通。",
+          "Grâce à internet, on peut communiquer avec le monde entier. 有了互联网，人们可以和全世界交流。",
+          "J'ai du mal à communiquer avec mon fils adolescent. 我很难和我十几岁的儿子沟通。",
           "Le langage est le moyen par lequel les gens communiquent avec les autres. 语言是人们与他人交流的手段。"
         ]
       },
@@ -4656,6 +8458,22 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "529729",
             "zh": "1314425",
@@ -4676,7 +8494,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Si on la compare à Tokyo, Londres est une petite ville. 如果和东京比，那伦敦就是个小城市。"
         ],
         "avec": [
-          "comparer qqch avec qqch 把某物与某物比较"
+          "comparer qqch avec qqch 把某物与某物比较",
+          "Compare ta réponse avec celle de ton voisin. 把你的答案和同桌的对一对。",
+          "Compare les prix de cette année avec ceux de l'an dernier. 把今年的价格和去年的比一比。"
         ]
       },
       "prepositionOrder": [
@@ -4726,6 +8546,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -4733,20 +8561,103 @@ const FRENCH_COLLOCATIONS_DATA = {
     "compatir": {
       "display": "compatir",
       "prepositions": {
+        "à": [
+          "compatir à qqch 同情（某人的痛苦）",
+          "Je compatis à votre douleur. 我对您的痛苦深表同情。",
+          "Tout le village a compati au malheur de cette famille. 全村人都同情这家人的不幸。"
+        ],
         "avec": [
           "Je compatis avec toi. 我同情你。"
         ]
       },
       "prepositionOrder": [
+        "à",
         "avec"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "avec": [
           {
             "kind": "indirect",
             "fr": "477125",
             "zh": "762968",
             "eng": "17448"
+          }
+        ]
+      }
+    },
+    "compenser": {
+      "display": "compenser",
+      "prepositions": {
+        "par": [
+          "compenser qqch par qqch 用……弥补……",
+          "Il compense son manque de talent par beaucoup de travail. 他用勤奋弥补天分的不足。",
+          "Les pertes seront compensées par une hausse des prix. 损失将通过涨价来弥补。",
+          "Elle a compensé sa timidité par un grand sens de l'humour. 她用极强的幽默感弥补了自己的腼腆。"
+        ]
+      },
+      "prepositionOrder": [
+        "par"
+      ],
+      "sources": {
+        "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "comploter": {
+      "display": "comploter",
+      "prepositions": {
+        "contre": [
+          "comploter contre qqn 密谋陷害某人",
+          "Ses collègues complotaient contre lui depuis des mois. 他的同事们几个月来一直在暗中算计他。",
+          "On l'accuse d'avoir comploté contre le gouvernement. 他被指控密谋颠覆政府。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -4845,6 +8756,61 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "727208",
             "zh": "10192346",
             "eng": "239509"
+          }
+        ]
+      }
+    },
+    "comprendre": {
+      "display": "comprendre",
+      "prepositions": {
+        "à": [
+          "ne rien comprendre à qqch 对……一窍不通",
+          "Je ne comprends rien à la politique. 我对政治一窍不通。",
+          "Il n'a rien compris à l'exercice de maths. 这道数学题他完全没看懂。",
+          "Tu comprends quelque chose à ce film, toi ? 你看得懂这部电影吗？",
+          "Je comprends à peu près. 我大概懂了。",
+          "Je ne comprends pas tout à fait ce que vous dites. 我不怎么明白您说什么。",
+          "Aucun d'entre eux ne comprenait ce à quoi elle faisait allusion. 他们没有人了解她暗示什么。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "9670",
+            "zh": "333776",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "997893",
+            "zh": "2383327",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "1469669",
+            "zh": "778714",
+            "eng": ""
           }
         ]
       }
@@ -4992,6 +8958,187 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "concilier": {
+      "display": "concilier",
+      "prepositions": {
+        "avec": [
+          "concilier qqch avec qqch 使……与……兼顾",
+          "Il est difficile de concilier le travail avec la vie de famille. 工作和家庭生活很难兼顾。",
+          "Elle essaie de concilier ses rêves avec la réalité. 她努力让梦想与现实相协调。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "conclure": {
+      "display": "conclure",
+      "prepositions": {
+        "de": [
+          "conclure qqch de qqch 从……得出结论",
+          "Que concluez-vous de cette expérience ? 您从这个实验中得出什么结论？",
+          "J'ai conclu de son silence qu'il ne viendrait pas. 从他的沉默中我断定他不会来了。",
+          "On ne peut rien conclure d'un seul exemple. 仅凭一个例子什么也说明不了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "concorder": {
+      "display": "concorder",
+      "prepositions": {
+        "avec": [
+          "concorder avec qqch 与……一致",
+          "Les résultats concordent avec nos prévisions. 结果与我们的预测相符。",
+          "Sa version ne concorde pas avec celle de sa femme. 他的说法和他妻子的说法对不上。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "concourir": {
+      "display": "concourir",
+      "prepositions": {
+        "à": [
+          "concourir à qqch 有助于；促成",
+          "Plusieurs facteurs ont concouru à son succès. 多种因素促成了他的成功。",
+          "Le sport concourt à une bonne santé. 运动有助于身体健康。"
+        ],
+        "pour": [
+          "concourir pour qqch 角逐；参加……的竞争",
+          "Dix films concourent pour la Palme d'or. 十部电影角逐金棕榈奖。",
+          "Elle concourra pour le poste de directrice. 她将竞争主任一职。",
+          "Dix équipes ont concouru pour le prix. 十支队伍竞逐奖项。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "pour"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "119821",
+            "zh": "797098",
+            "eng": "73468"
+          }
+        ]
+      },
+      "notes": {
+        "pour": "concourir pour qqch = 角逐某奖项／职位；concourir à qqch = 有助于、促成",
+        "à": "concourir à qqch = 有助于、促成；concourir pour qqch = 角逐某奖项／职位"
+      }
+    },
+    "concéder": {
+      "display": "concéder",
+      "prepositions": {
+        "à": [
+          "concéder qqch à qqn 向某人让步；承认某人……",
+          "Il a dû concéder à son rival que celui-ci avait raison. 他不得不向对手承认对方是对的。",
+          "L'équipe a concédé un penalty à ses adversaires. 这支球队送给对手一个点球。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "condamner": {
       "display": "condamner",
       "prepositions": {
@@ -5048,6 +9195,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "condescendre": {
+      "display": "condescendre",
+      "prepositions": {
+        "à": [
+          "condescendre à faire qqch 屈尊做某事",
+          "Il a enfin condescendu à répondre à ma lettre. 他终于屈尊回了我的信。",
+          "La star n'a pas condescendu à saluer ses fans. 那个明星连跟粉丝打个招呼都不屑。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "conduire": {
       "display": "conduire",
       "prepositions": {
@@ -5100,6 +9276,69 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "337847",
             "zh": "875042",
             "eng": "320514"
+          }
+        ]
+      }
+    },
+    "confier": {
+      "display": "confier",
+      "prepositions": {
+        "à": [
+          "confier qqch à qqn 把……托付给某人；向某人吐露",
+          "Nous avons confié nos clés à la voisine. 我们把钥匙交给了邻居。",
+          "Elle a confié un secret important à son frère. 她把一个重要的秘密告诉了她哥哥。",
+          "On a confié la direction du projet à une jeune ingénieure. 项目的领导工作交给了一位年轻的女工程师。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "confiner": {
+      "display": "confiner",
+      "prepositions": {
+        "à": [
+          "confiner à qqch 近乎；接近于",
+          "Son courage confine à la folie. 他的勇气近乎疯狂。",
+          "Cette générosité confinait à la naïveté. 这种慷慨近乎天真。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -5216,6 +9455,98 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "conférer": {
+      "display": "conférer",
+      "prepositions": {
+        "à": [
+          "conférer qqch à qqn/qqch 授予；赋予",
+          "L'université a conféré le titre de docteur honoris causa à l'écrivain. 大学授予这位作家名誉博士称号。",
+          "Cette lumière confère à la pièce une atmosphère chaleureuse. 这种灯光使房间显得温馨。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "conjuguer": {
+      "display": "conjuguer",
+      "prepositions": {
+        "à": [
+          "conjuguer un verbe à un temps 把动词变位成某个时态",
+          "Conjuguez ces verbes au passé composé. 请把这些动词变成复合过去时。",
+          "Je n'arrive pas à conjuguer ce verbe au subjonctif. 我不会把这个动词变成虚拟式。",
+          "Sais-tu conjuguer le verbe aller au futur ? 你会把动词「去」变成将来时吗？"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "conjurer": {
+      "display": "conjurer",
+      "prepositions": {
+        "de": [
+          "conjurer qqn de faire qqch 恳求某人做某事",
+          "Je vous conjure de m'écouter. 我恳求您听我说。",
+          "Sa mère l'a conjuré de ne pas partir. 他母亲苦苦哀求他不要走。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "connaître": {
       "display": "connaître",
       "prepositions": {
@@ -5268,6 +9599,40 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "12451517",
             "zh": "426999",
             "eng": "20813"
+          }
+        ]
+      }
+    },
+    "connecter": {
+      "display": "connecter",
+      "prepositions": {
+        "à": [
+          "connecter qqch à qqch 把……连接到……",
+          "Connecte ton ordinateur au réseau de l'hôtel. 把你的电脑连上酒店的网络。",
+          "L'imprimante n'est pas connectée à l'ordinateur. 打印机没有连到电脑上。",
+          "Connectez l'enceinte à votre téléphone avant de lancer la musique. 放音乐之前，先把音箱连到您的手机上。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -5360,7 +9725,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "consentir",
       "prepositions": {
         "à": [
-          "consentir à qqch 同意某事"
+          "consentir à qqch 同意某事",
+          "Ses parents ont finalement consenti à son mariage. 她父母最终同意了她的婚事。",
+          "Il a consenti à nous prêter sa voiture. 他答应把车借给我们。"
         ]
       },
       "prepositionOrder": [
@@ -5370,6 +9737,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -5387,7 +9762,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Le véritable art de vivre consiste à voir le merveilleux dans le quotidien. 生活真正的艺术是在平凡中看到不平凡。"
         ],
         "en": [
-          "consister en qqch 由…构成"
+          "consister en qqch 由…构成",
+          "Le repas consistait en une soupe et un peu de pain. 这顿饭就是一碗汤和一点面包。",
+          "L'examen consiste en trois épreuves écrites. 考试包括三门笔试。"
         ]
       },
       "prepositionOrder": [
@@ -5435,6 +9812,43 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "consoler": {
+      "display": "consoler",
+      "prepositions": {
+        "de": [
+          "consoler qqn de qqch 安慰某人（因某事而来的痛苦）",
+          "Rien ne pouvait la consoler de la perte de son chien. 什么都无法抚平她失去爱犬的伤痛。",
+          "Il a essayé de me consoler de mon échec. 他试着帮我走出失败的阴影。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -5477,6 +9891,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1259591",
             "zh": "567980",
             "eng": "64381"
+          }
+        ]
+      }
+    },
+    "conspirer": {
+      "display": "conspirer",
+      "prepositions": {
+        "contre": [
+          "conspirer contre qqn 密谋反对某人",
+          "Ils conspiraient contre le roi. 他们密谋推翻国王。",
+          "J'ai l'impression que tout conspire contre moi aujourd'hui. 我觉得今天一切都在跟我作对。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -5532,6 +9975,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "construire",
       "prepositions": {
         "en": [
+          "construire qqch en qqch 用（某种材料）建造",
+          "Autrefois, on construisait les maisons en bois. 从前人们用木头盖房子。",
+          "Ce pont a été construit en pierre. 这座桥是用石头建的。",
           "Rome ne fut pas construite en un jour. 罗马不是一天建成的。"
         ],
         "pour": [
@@ -5545,6 +9991,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "8941302",
@@ -5564,6 +10022,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "815232",
             "zh": "815254",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "contacter": {
+      "display": "contacter",
+      "prepositions": {
+        "par": [
+          "contacter qqn par qqch 通过……联系某人",
+          "Vous pouvez nous contacter par téléphone ou par mail. 您可以通过电话或邮件联系我们。",
+          "Je l'ai contacté par l'intermédiaire d'un ami. 我通过一个朋友联系上了他。"
+        ]
+      },
+      "prepositionOrder": [
+        "par"
+      ],
+      "sources": {
+        "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -5628,6 +10115,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "contenter",
       "prepositions": {
         "de": [
+          "se contenter de qqch 满足于；仅仅做……",
+          "Je me contenterai d'un sandwich à midi. 中午我吃个三明治就行了。",
+          "Il s'est contenté de sourire sans répondre. 他只是笑了笑，没有回答。",
           "Ne vous contentez pas de pleurer, faites quelque chose ! 别只顾着哭，做些什么啊！"
         ]
       },
@@ -5636,6 +10126,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "2153829",
@@ -5730,6 +10232,69 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1339617",
             "zh": "13108753",
             "eng": "887120"
+          }
+        ]
+      }
+    },
+    "contraster": {
+      "display": "contraster",
+      "prepositions": {
+        "avec": [
+          "contraster avec qqch 与……形成对比",
+          "Le rouge du toit contraste avec le blanc des murs. 红色的屋顶和白色的墙壁形成鲜明对比。",
+          "Son calme contrastait avec l'agitation générale. 他的镇定与众人的慌乱形成了反差。",
+          "Ces chiffres contrastent avec ceux de l'an dernier. 这些数字和去年的数字截然不同。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "contrevenir": {
+      "display": "contrevenir",
+      "prepositions": {
+        "à": [
+          "contrevenir à qqch 违反（规定、法律）",
+          "Cette décision contrevient à la loi. 这项决定违反了法律。",
+          "Les joueurs qui contreviennent au règlement seront exclus. 违反规则的选手将被取消资格。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -5889,11 +10454,43 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "converser": {
+      "display": "converser",
+      "prepositions": {
+        "avec": [
+          "converser avec qqn 与某人交谈",
+          "J'ai conversé longuement avec le vieux pêcheur. 我和那位老渔夫聊了很久。",
+          "Elle aime converser avec les touristes en anglais. 她喜欢用英语和游客交谈。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "convertir": {
       "display": "convertir",
       "prepositions": {
         "à": [
-          "Je suis né de confession hébraïque, mais en vieillissant, je me suis converti au narcissisme. 我天生具有希伯来人的说服才能，但当我年纪大了的时候，我把它转换成了自恋。"
+          "se convertir à qqch 皈依；改用",
+          "Elle s'est convertie au bouddhisme à trente ans. 她三十岁时皈依了佛教。",
+          "Mon père s'est enfin converti au numérique. 我爸爸终于开始用数码产品了。",
+          "Je suis né de confession hébraïque, mais en vieillissant, je me suis converti au narcissisme. 我天生是犹太人，但当我年纪大了的时候，我把它转换成了自恋。"
         ]
       },
       "prepositionOrder": [
@@ -5902,10 +10499,148 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "433712",
             "zh": "873447",
             "eng": "433711"
+          }
+        ]
+      }
+    },
+    "convier": {
+      "display": "convier",
+      "prepositions": {
+        "à": [
+          "convier qqn à qqch 邀请某人参加……",
+          "Nous sommes conviés à un dîner chez le maire. 我们受邀到市长家赴晚宴。",
+          "Elle a convié tous ses collègues à son mariage. 她邀请了所有同事参加她的婚礼。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "convoquer": {
+      "display": "convoquer",
+      "prepositions": {
+        "à": [
+          "convoquer qqn à qqch 召集某人参加……；传唤",
+          "Le directeur m'a convoqué à une réunion urgente. 经理召我去参加一个紧急会议。",
+          "Tous les candidats seront convoqués à un entretien. 所有候选人都将被通知参加面试。",
+          "Il a été convoqué au commissariat. 他被传唤到警察局。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "coopérer": {
+      "display": "coopérer",
+      "prepositions": {
+        "avec": [
+          "coopérer avec qqn 与某人合作",
+          "Le suspect refuse de coopérer avec la police. 嫌疑人拒绝与警方配合。",
+          "Notre école coopère avec plusieurs universités étrangères. 我们学校与多所外国大学有合作。",
+          "Il faudra que tu coopères avec les autres services. 你得和其他部门配合。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "copier": {
+      "display": "copier",
+      "prepositions": {
+        "sur": [
+          "copier sur qqn 抄某人的（考试作弊）",
+          "Il a copié sur son voisin pendant l'examen. 考试时他抄了邻座的答案。",
+          "Ne copie pas sur moi, fais ton propre travail ! 别抄我的，自己做作业！"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -5920,10 +10655,16 @@ const FRENCH_COLLOCATIONS_DATA = {
           "La vie est belle parce qu'elle ne correspond pas toujours à nos attentes ! 人生美好啊，因为它不总是符合我们的预期。",
           "Un kilo de ketchup correspond à deux kilos de tomates. 一公斤的番茄酱等于两公斤的西红柿。",
           "Je ne connais personne qui corresponde à cette description. 我不认识符合条件的人。"
+        ],
+        "avec": [
+          "correspondre avec qqn 与某人通信",
+          "Je corresponds avec une amie canadienne depuis dix ans. 我和一位加拿大朋友通信十年了。",
+          "Les élèves correspondent avec une classe italienne. 学生们与一个意大利班级互通书信。"
         ]
       },
       "prepositionOrder": [
-        "à"
+        "à",
+        "avec"
       ],
       "sources": {
         "à": [
@@ -5963,7 +10704,85 @@ const FRENCH_COLLOCATIONS_DATA = {
             "zh": "8635816",
             "eng": "7821775"
           }
+        ],
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
         ]
+      },
+      "notes": {
+        "avec": "correspondre avec qqn = 与某人通信；correspondre à qqch = 与……相符",
+        "à": "correspondre à qqch = 与……相符；correspondre avec qqn = 与某人通信"
+      }
+    },
+    "cotiser": {
+      "display": "cotiser",
+      "prepositions": {
+        "à": [
+          "cotiser à qqch 缴纳（会费、保险费等）",
+          "Les salariés cotisent à la caisse de retraite. 雇员缴纳养老保险金。",
+          "Il a cotisé à une mutuelle pendant vingt ans. 他交了二十年的互助保险费。"
+        ],
+        "pour": [
+          "cotiser pour qqch 凑钱买……",
+          "Nous avons cotisé pour offrir un cadeau au professeur. 我们凑钱给老师买了份礼物。",
+          "Toute l'équipe a cotisé pour son pot de départ. 全组的人凑钱为他办了欢送会。",
+          "On s'est tous cotisés pour offrir un cadeau d'anniversaire à notre prof. 我们所有人凑份子给老师买生日礼物。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "pour"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "13001027",
+            "zh": "815297",
+            "eng": "623182"
+          }
+        ]
+      },
+      "notes": {
+        "pour": "cotiser pour qqch = 凑钱做某事；cotiser à qqch = 缴纳（保险、会费）",
+        "à": "cotiser à qqch = 缴纳（保险、会费）；cotiser pour qqch = 凑钱做某事"
       }
     },
     "coucher": {
@@ -5997,6 +10816,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "480038",
             "zh": "486513",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "coudre": {
+      "display": "coudre",
+      "prepositions": {
+        "sur": [
+          "coudre qqch sur qqch 把……缝到……上",
+          "Peux-tu coudre ce bouton sur ma chemise ? 你能把这颗扣子缝到我衬衫上吗？",
+          "Elle a cousu un écusson sur son sac. 她在包上缝了一个徽章。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -6170,6 +11018,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "couronner",
       "prepositions": {
         "de": [
+          "être couronné de succès 取得成功",
+          "Nos efforts ont enfin été couronnés de succès. 我们的努力终于获得了成功。",
+          "L'opération n'a pas été couronnée de succès. 这次行动没有成功。",
           "Sa tentative d'évasion fut couronnée de succès. 他尝试逃走而成功了。"
         ]
       },
@@ -6178,6 +11029,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "486603",
@@ -6402,6 +11265,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "craquer": {
+      "display": "craquer",
+      "prepositions": {
+        "pour": [
+          "craquer pour qqn/qqch 迷上；忍不住买下",
+          "J'ai craqué pour cette robe rouge. 我没忍住，买下了这条红裙子。",
+          "Toutes les filles craquent pour lui. 所有女孩都为他着迷。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "crever": {
       "display": "crever",
       "prepositions": {
@@ -6437,10 +11329,130 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "cribler": {
+      "display": "cribler",
+      "prepositions": {
+        "de": [
+          "cribler qqch de qqch 使布满（弹孔、债务等）",
+          "La voiture était criblée de balles. 车身上布满了弹孔。",
+          "Il est criblé de dettes depuis la faillite. 破产以来他债台高筑。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "crier": {
+      "display": "crier",
+      "prepositions": {
+        "à": [
+          "crier à qqch 呼喊（求救等）；斥为……",
+          "Elle a crié à l'aide mais personne n'est venu. 她大声呼救，可是没人来。",
+          "Les journaux ont crié au scandale. 各大报纸纷纷斥之为丑闻。",
+          "Ken cria à l'aide. Ken大声呼救。",
+          "Crier à ton ordinateur n'aidera en rien. 对你的电脑吼一点帮助也没有。"
+        ],
+        "de": [
+          "crier de qqch 因……而叫喊",
+          "Les supporters criaient de joie. 球迷们欢呼雀跃。",
+          "Le blessé criait de douleur. 伤者痛得大叫。"
+        ],
+        "sur": [
+          "crier sur qqn 冲某人吼",
+          "Arrête de crier sur les enfants ! 别再冲孩子们吼了！",
+          "Mon chef a crié sur moi devant tout le monde. 老板当着所有人的面冲我大吼。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de",
+        "sur"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "334013",
+            "zh": "334040",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "876629",
+            "zh": "4071833",
+            "eng": "682023"
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "crier de qqch = 因（喜悦、疼痛）而叫；crier sur qqn = 冲某人吼",
+        "sur": "crier sur qqn = 冲某人吼；crier de joie = 因……而叫；crier à l'aide = 呼救",
+        "à": "crier à qqch = 呼喊（à l'aide）、斥为（au scandale）；crier sur qqn = 冲某人吼"
+      }
+    },
     "critiquer": {
       "display": "critiquer",
       "prepositions": {
         "pour": [
+          "critiquer qqn pour qqch 因……批评某人",
+          "On l'a beaucoup critiqué pour ses propos. 他因为言论而饱受批评。",
+          "Le gouvernement est critiqué pour sa lenteur. 政府因行动迟缓而受到批评。",
           "Le gardien de but anglais a été critiqué pour le nombre de buts qu'il a concédés. 英格兰的守门员因为自己失球过多而被批评。"
         ]
       },
@@ -6449,6 +11461,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "9117802",
@@ -6596,6 +11620,105 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "croquer": {
+      "display": "croquer",
+      "prepositions": {
+        "dans": [
+          "croquer dans qqch 咬一口",
+          "Il a croqué dans une pomme bien rouge. 他咬了一口红彤彤的苹果。",
+          "Les enfants croquaient dans leurs tartines en riant. 孩子们笑着啃着涂了果酱的面包片。",
+          "Elle a croqué dans la pomme. 她咬了一口苹果。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "11153336",
+            "zh": "844600",
+            "eng": "29614"
+          }
+        ]
+      }
+    },
+    "créditer": {
+      "display": "créditer",
+      "prepositions": {
+        "de": [
+          "créditer qqn/qqch de qqch 把（款项）记入；认为某人有……",
+          "Votre compte sera crédité de cent euros. 您的账户将入账一百欧元。",
+          "Les sondages le créditent de trente pour cent des voix. 民调显示他能获得百分之三十的选票。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "cuire": {
+      "display": "cuire",
+      "prepositions": {
+        "à": [
+          "cuire qqch à feu doux / au four 用（文火、烤箱）烹煮",
+          "Faites cuire la sauce à feu doux pendant vingt minutes. 用文火把酱汁煮二十分钟。",
+          "Le poulet cuit au four depuis une heure. 鸡已经在烤箱里烤了一个小时。",
+          "Je préfère cuire les légumes à la vapeur. 我更喜欢把蔬菜蒸着吃。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "cuisiner": {
       "display": "cuisiner",
       "prepositions": {
@@ -6634,6 +11757,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "134119",
             "zh": "905874",
             "eng": "312294"
+          }
+        ]
+      }
+    },
+    "culminer": {
+      "display": "culminer",
+      "prepositions": {
+        "à": [
+          "culminer à qqch 最高点达到……",
+          "Le mont Blanc culmine à plus de quatre mille huit cents mètres. 勃朗峰最高点海拔四千八百多米。",
+          "Le chômage a culminé à douze pour cent en mars. 失业率在三月份达到了百分之十二的最高点。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -6766,7 +11918,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "dater",
       "prepositions": {
         "de": [
-          "dater de qqch 始于（某个年代）"
+          "dater de qqch 始于（某个年代）",
+          "Cette église date du douzième siècle. 这座教堂建于十二世纪。",
+          "Notre dernière rencontre date de l'été dernier. 我们上次见面还是去年夏天。"
         ]
       },
       "prepositionOrder": [
@@ -6776,6 +11930,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         "de": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -6892,6 +12054,106 @@ const FRENCH_COLLOCATIONS_DATA = {
             "eng": ""
           }
         ]
+      }
+    },
+    "descendre": {
+      "display": "descendre",
+      "prepositions": {
+        "de": [
+          "descendre de qqch 从……下来；是……的后代",
+          "Descends de cet arbre tout de suite ! 马上从树上下来！",
+          "Elle est descendue du train à Dijon. 她在第戎下了火车。",
+          "Selon la légende, cette famille descend d'un roi. 据传说，这个家族是一位国王的后裔。",
+          "Elle descendit du toit. 她从屋顶上下来了。",
+          "Ils descendirent du bus. 他们下了公交车。",
+          "Je suis descendu du taxi. 我从出租车上下来。",
+          "Je suis descendu du train. 我下了火车。",
+          "Je descends du train à la prochaine station. 我下一站下火车。",
+          "Descendez du véhicule et mettez les mains dans le dos. 下车，把手放在背后。"
+        ],
+        "dans": [
+          "descendre dans la rue 上街（抗议）",
+          "Des milliers de personnes sont descendues dans la rue. 成千上万的人走上街头抗议。",
+          "Les étudiants descendront dans la rue jeudi. 学生们星期四将上街游行。"
+        ]
+      },
+      "prepositionOrder": [
+        "de",
+        "dans"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "338040",
+            "zh": "336108",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "431365",
+            "zh": "819711",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "624503",
+            "zh": "9179884",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "7091",
+            "zh": "414029",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "475058",
+            "zh": "476238",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "817909",
+            "zh": "818824",
+            "eng": ""
+          }
+        ],
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "dans": "descendre dans la rue = 上街抗议；descendre de qqch = 从……下来",
+        "de": "descendre de qqch = 从……下来、是……的后代；descendre dans la rue = 上街抗议"
       }
     },
     "dessiner": {
@@ -7020,10 +12282,134 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "diagnostiquer": {
+      "display": "diagnostiquer",
+      "prepositions": {
+        "chez": [
+          "diagnostiquer qqch chez qqn 在某人身上诊断出……",
+          "On a diagnostiqué un diabète chez mon père. 我父亲被诊断出糖尿病。",
+          "Cette maladie est rarement diagnostiquée chez les enfants. 这种病很少在儿童身上被诊断出来。"
+        ]
+      },
+      "prepositionOrder": [
+        "chez"
+      ],
+      "sources": {
+        "chez": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dialoguer": {
+      "display": "dialoguer",
+      "prepositions": {
+        "avec": [
+          "dialoguer avec qqn 与某人对话",
+          "Le président veut dialoguer avec les jeunes. 总统希望与年轻人对话。",
+          "Il est impossible de dialoguer avec lui, il n'écoute personne. 没法跟他沟通，他谁的话都不听。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dicter": {
+      "display": "dicter",
+      "prepositions": {
+        "à": [
+          "dicter qqch à qqn 向某人口授；强加给某人",
+          "Le patron dicte une lettre à sa secrétaire. 老板向秘书口述一封信。",
+          "Tu n'as pas à dicter ta loi à tout le monde ! 你没资格对所有人发号施令！",
+          "Le professeur a dicté un texte aux élèves. 老师给学生们听写了一篇短文。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "diffuser": {
+      "display": "diffuser",
+      "prepositions": {
+        "sur": [
+          "diffuser qqch sur qqch 在……上播放／传播",
+          "Le match sera diffusé sur la deuxième chaîne. 比赛将在二台播出。",
+          "Il a diffusé la vidéo sur internet sans permission. 他未经许可把视频发到了网上。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "différencier": {
       "display": "différencier",
       "prepositions": {
         "de": [
+          "différencier qqch de qqch 把……与……区分开",
+          "Je n'arrive pas à différencier ce jumeau de son frère. 我分不清这对双胞胎。",
+          "Qu'est-ce qui différencie ce téléphone des autres ? 这款手机和其他手机有什么区别？",
           "Est-ce qu'un enfant de son âge peut différencier le bien du mal ? 一个像她那么大的小孩能够分辨是非吗？"
         ]
       },
@@ -7032,6 +12418,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "133675",
@@ -7083,10 +12481,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "diluer": {
+      "display": "diluer",
+      "prepositions": {
+        "dans": [
+          "diluer qqch dans qqch 把……溶解／稀释在……中",
+          "Diluez le sirop dans un verre d'eau froide. 把糖浆兑进一杯凉水里。",
+          "Le médicament doit être dilué dans du lait. 这种药要用牛奶冲服。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "diminuer": {
       "display": "diminuer",
       "prepositions": {
         "de": [
+          "diminuer de qqch 减少（若干）",
+          "Le nombre d'accidents a diminué de moitié. 事故数量减少了一半。",
+          "Les prix diminueront de cinq pour cent en janvier. 一月份价格将下降百分之五。",
           "Ses revenus ont diminué de moitié depuis qu'il est à la retraite. 退休后他的收入少了一半。"
         ]
       },
@@ -7095,6 +12525,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "1807105",
@@ -7116,6 +12558,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Je suis diplômé de l'université de Kyoto. 我毕业于京都大学。"
         ],
         "en": [
+          "être diplômé en qqch 获得……专业的文凭",
+          "Ma sœur est diplômée en droit. 我姐姐拿到了法学学位。",
+          "Il sera bientôt diplômé en informatique. 他很快就要拿到计算机专业的文凭了。",
           "Il est diplômé en littérature moderne. 他拿到了现代文学的文凭。"
         ]
       },
@@ -7163,6 +12608,18 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "140044",
@@ -7252,6 +12709,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "9628",
             "zh": "797061",
             "eng": "24452"
+          }
+        ]
+      }
+    },
+    "discourir": {
+      "display": "discourir",
+      "prepositions": {
+        "sur": [
+          "discourir sur qqch 就……高谈阔论",
+          "Il peut discourir des heures sur la philosophie. 他能就哲学侃侃而谈好几个小时。",
+          "Au lieu de discourir sur le problème, agissons ! 与其空谈这个问题，不如行动起来！"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "disculper": {
+      "display": "disculper",
+      "prepositions": {
+        "de": [
+          "disculper qqn de qqch 为某人开脱（罪责）",
+          "Ce témoignage l'a disculpé de toute accusation. 这份证词洗清了他所有的罪名。",
+          "Elle a essayé de disculper son fils de ce vol. 她试图为儿子开脱这次盗窃的罪责。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -7369,6 +12884,74 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "disparaître": {
+      "display": "disparaître",
+      "prepositions": {
+        "de": [
+          "disparaître de qqch 从……消失",
+          "Mon portefeuille a disparu de mon sac. 我的钱包从包里不见了。",
+          "Ce chanteur a disparu de la scène depuis dix ans. 这位歌手已经离开舞台十年了。",
+          "Disparais de ma vue ! 从我眼前消失！"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dispenser": {
+      "display": "dispenser",
+      "prepositions": {
+        "de": [
+          "dispenser qqn de qqch 免除某人的……",
+          "Le médecin l'a dispensé de sport pendant un mois. 医生让他免上一个月体育课。",
+          "Je vous dispense de vos commentaires. 您的评论就免了吧。",
+          "Les enfants de moins de six ans sont dispensés de payer. 六岁以下儿童免票。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "disposer": {
       "display": "disposer",
       "prepositions": {
@@ -7446,10 +13029,71 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "disserter": {
+      "display": "disserter",
+      "prepositions": {
+        "sur": [
+          "disserter sur qqch 就……论述",
+          "Les élèves doivent disserter sur la liberté. 学生们要写一篇关于自由的论文。",
+          "Il aime disserter sur le sens de la vie. 他喜欢大谈人生的意义。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dissimuler": {
+      "display": "dissimuler",
+      "prepositions": {
+        "à": [
+          "dissimuler qqch à qqn 对某人隐瞒……",
+          "Il a dissimulé la vérité à sa femme. 他对妻子隐瞒了真相。",
+          "Elle ne peut rien dissimuler à sa mère. 她什么都瞒不过她妈妈。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "dissuader": {
       "display": "dissuader",
       "prepositions": {
         "de": [
+          "dissuader qqn de faire qqch 劝阻某人做某事",
+          "J'ai réussi à le dissuader de démissionner. 我成功劝他打消了辞职的念头。",
+          "Les prix élevés dissuadent les touristes de venir. 高昂的价格让游客望而却步。",
           "Elle le dissuada de le faire. 她劝告他不要那样做。"
         ]
       },
@@ -7458,6 +13102,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1357933",
@@ -7479,7 +13135,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Je n'arrive pas à le distinguer de son frère. 我分不清他和他的弟弟。"
         ],
         "entre": [
-          "distinguer entre deux choses 区分两者"
+          "distinguer entre deux choses 区分两者",
+          "Il faut savoir distinguer entre le vrai et le faux. 要学会分辨真假。",
+          "Le chien ne distingue pas bien entre le rouge et le vert. 狗分不太清红色和绿色。"
         ]
       },
       "prepositionOrder": [
@@ -7529,6 +13187,43 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "distraire": {
+      "display": "distraire",
+      "prepositions": {
+        "de": [
+          "distraire qqn de qqch 使某人从……分心",
+          "Le bruit me distrait de mon travail. 噪音让我无法专心工作。",
+          "Ne le distrais pas de ses révisions. 别打扰他复习。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -7566,6 +13261,122 @@ const FRENCH_COLLOCATIONS_DATA = {
             "eng": "19581"
           }
         ]
+      }
+    },
+    "diverger": {
+      "display": "diverger",
+      "prepositions": {
+        "de": [
+          "diverger de qqch 与……不同；偏离",
+          "Sa version diverge beaucoup de la mienne. 他的说法和我的相差很大。",
+          "Les résultats divergent de nos prévisions. 结果与我们的预期有出入。"
+        ],
+        "sur": [
+          "diverger sur qqch 在……上有分歧",
+          "Les experts divergent sur ce point. 专家们在这一点上意见不一。",
+          "Nos avis divergent sur l'éducation des enfants. 在孩子教育问题上我们看法不同。"
+        ]
+      },
+      "prepositionOrder": [
+        "de",
+        "sur"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "diverger de qqch = 与……不同；diverger sur qqch = 在某问题上有分歧",
+        "sur": "diverger sur qqch = 在某问题上有分歧；diverger de qqch = 与……不同"
+      }
+    },
+    "diviser": {
+      "display": "diviser",
+      "prepositions": {
+        "en": [
+          "diviser qqch en qqch 把……分成……",
+          "Le professeur a divisé la classe en quatre groupes. 老师把全班分成四个小组。",
+          "La France est divisée en régions. 法国被划分为若干大区。",
+          "Divise la pâte en deux boules. 把面团分成两个球。"
+        ],
+        "par": [
+          "diviser qqch par qqch 用……除……",
+          "Douze divisé par trois égale quatre. 十二除以三等于四。",
+          "Divisez le total par le nombre de personnes. 用总数除以人数。",
+          "Le prix a été divisé par deux. 价格降了一半。"
+        ]
+      },
+      "prepositionOrder": [
+        "en",
+        "par"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "en": "diviser en = 分成（若干份）；diviser par = 除以（数学）",
+        "par": "diviser par = 除以（数学）；diviser en = 分成（若干份）"
       }
     },
     "divorcer": {
@@ -7650,7 +13461,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "J'ai donné au garçon le peu d'argent que j'avais. 我把我仅有的钱给了那个男孩。"
         ],
         "sur": [
-          "donner sur qqch 窗户／房间朝向某处"
+          "donner sur qqch 窗户／房间朝向某处",
+          "Ma chambre donne sur la mer. 我的房间面朝大海。",
+          "La porte de derrière donne sur un petit jardin. 后门通向一个小花园。"
         ]
       },
       "prepositionOrder": [
@@ -7700,6 +13513,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       },
@@ -7740,7 +13561,8 @@ const FRENCH_COLLOCATIONS_DATA = {
         "avec": [
           "Il a dormi avec la fenêtre ouverte. 他开着窗睡着了。",
           "Elle dort avec deux coussins. 她用两个枕头睡觉。",
-          "Je ne peux pas dormir avec tout ce boucan. 我听着噪音不能睡觉。"
+          "Je ne peux pas dormir avec tout ce boucan. 我听着噪音不能睡觉。",
+          "Pendant l'hiver je dors avec deux couvertures. 冬天我会盖着两层毯子睡觉。"
         ]
       },
       "prepositionOrder": [
@@ -7843,6 +13665,12 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "5373441",
             "zh": "5684086",
             "eng": "5373198"
+          },
+          {
+            "kind": "indirect",
+            "fr": "6142",
+            "zh": "14023319",
+            "eng": "6143"
           }
         ]
       }
@@ -7855,7 +13683,8 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Mars est dotée de deux lunes. 火星有两个卫星。",
           "Il est doté d'une grande intelligence. 他聪明得很。",
           "La maison est dotée de tous les équipements. 这套房子设施便利齐全。",
-          "Il est doté d'un sens aigu des responsabilités. 他有强烈的责任感。"
+          "Il est doté d'un sens aigu des responsabilités. 他有强烈的责任感。",
+          "Une tente dotée d'un sol et d'une fermeture-éclair est imperméable aux insectes. 有垫布与拉链的帐篷可以做到防虫密闭。"
         ]
       },
       "prepositionOrder": [
@@ -7892,6 +13721,12 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "7820660",
             "zh": "883456",
             "eng": "300585"
+          },
+          {
+            "kind": "indirect",
+            "fr": "2083449",
+            "zh": "14037648",
+            "eng": "2082717"
           }
         ]
       }
@@ -8020,6 +13855,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "dresser": {
+      "display": "dresser",
+      "prepositions": {
+        "contre": [
+          "dresser qqn contre qqn 挑唆某人反对某人",
+          "Elle a dressé les enfants contre leur père. 她挑唆孩子们反对他们的父亲。",
+          "Ce projet a dressé tout le village contre le maire. 这个计划让全村人都起来反对村长。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "déambuler": {
       "display": "déambuler",
       "prepositions": {
@@ -8039,6 +13903,59 @@ const FRENCH_COLLOCATIONS_DATA = {
             "eng": "23949"
           }
         ]
+      }
+    },
+    "débarquer": {
+      "display": "débarquer",
+      "prepositions": {
+        "de": [
+          "débarquer de qqch 从（船、飞机）上下来",
+          "Les passagers débarquent du ferry un par un. 乘客们一个接一个地下了渡轮。",
+          "Il venait de débarquer de l'avion quand je l'ai appelé. 我打电话给他时，他刚下飞机。"
+        ],
+        "chez": [
+          "débarquer chez qqn 突然到某人家里",
+          "Mes cousins ont débarqué chez nous sans prévenir. 我表兄弟们没打招呼就跑到我们家来了。",
+          "Tu ne peux pas débarquer chez moi à minuit ! 你不能半夜跑到我家来！"
+        ]
+      },
+      "prepositionOrder": [
+        "de",
+        "chez"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "chez": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "chez": "débarquer chez qqn = 突然登门；débarquer de qqch = 下船／下飞机",
+        "de": "débarquer de qqch = 下船／下飞机；débarquer chez qqn = 突然登门"
       }
     },
     "débarrasser": {
@@ -8087,6 +14004,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "débattre",
       "prepositions": {
         "sur": [
+          "débattre sur qqch 就……展开辩论",
+          "Les députés ont débattu toute la nuit sur la réforme. 议员们就改革辩论了一整夜。",
+          "On pourrait débattre longtemps sur cette question. 这个问题可以争论很久。",
           "Nous avons débattu sur le problème. 我们讨论了那个问题。"
         ]
       },
@@ -8096,6 +14016,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "917457",
             "zh": "410689",
@@ -8104,10 +14036,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "débiter": {
+      "display": "débiter",
+      "prepositions": {
+        "en": [
+          "débiter qqch en qqch 把……切成（块、片）",
+          "Le boucher a débité la viande en petits morceaux. 屠夫把肉切成了小块。",
+          "On débite le tronc en planches à la scierie. 在锯木厂，树干被锯成木板。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "déborder": {
       "display": "déborder",
       "prepositions": {
         "de": [
+          "déborder de qqch 充满；洋溢着",
+          "Les enfants débordent d'énergie. 孩子们精力旺盛。",
+          "Elle débordait de joie en apprenant la nouvelle. 得知消息后她满心欢喜。",
           "Ses yeux débordaient de larmes. 他热泪盈眶。"
         ]
       },
@@ -8117,10 +14081,85 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "896205",
             "zh": "3031847",
             "eng": "287674"
+          }
+        ]
+      }
+    },
+    "déboucher": {
+      "display": "déboucher",
+      "prepositions": {
+        "sur": [
+          "déboucher sur qqch 通往；导致",
+          "Cette rue débouche sur une grande place. 这条街通向一个大广场。",
+          "Les discussions ont débouché sur un compromis. 讨论最终达成了妥协。",
+          "Ce diplôme débouche sur de nombreux métiers. 这个文凭可以通向许多职业。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "débourser": {
+      "display": "débourser",
+      "prepositions": {
+        "pour": [
+          "débourser qqch pour qqch 为……掏钱",
+          "J'ai déboursé deux cents euros pour ce manteau. 我为这件大衣掏了两百欧元。",
+          "Combien faut-il débourser pour un billet ? 一张票要花多少钱？"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -8132,7 +14171,8 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Je me suis débrouillé pour réparer moi-même mon véhicule. 我自己搞定，修好了我的车。",
           "On s'est débrouillé pour être là-bas à temps. 我们总算准时到那里了。",
           "Ils se sont débrouillés pour franchir le fleuve. 他们渡河前进。",
-          "Je me suis débrouillé pour le lui faire comprendre. 我设法让他明白了。"
+          "Je me suis débrouillé pour le lui faire comprendre. 我设法让他明白了。",
+          "On s'est débrouillé pour le récupérer sans qu'elle le sache. 我们设法在她不知情的情况下把它拿回来了。"
         ],
         "avec": [
           "Je te laisserai te débrouiller avec ça. 我把这个留给你。"
@@ -8167,6 +14207,12 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "935188",
             "zh": "794076",
             "eng": "284617"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1251143",
+            "zh": "14037703",
+            "eng": "262816"
           }
         ],
         "avec": [
@@ -8183,6 +14229,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "débuter",
       "prepositions": {
         "par": [
+          "débuter par qqch 以……开始",
+          "Le concert a débuté par une chanson populaire. 音乐会以一首流行歌曲开场。",
+          "Chaque journée débute par une réunion d'équipe. 每天都以团队会议开始。",
           "La cérémonie débuta par son discours. 仪式以他的讲话开始。"
         ]
       },
@@ -8192,10 +14241,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "par": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "645332",
             "zh": "1394872",
             "eng": "20057"
+          }
+        ]
+      }
+    },
+    "décerner": {
+      "display": "décerner",
+      "prepositions": {
+        "à": [
+          "décerner qqch à qqn 颁发给某人",
+          "Le jury a décerné le premier prix à une jeune pianiste. 评委会把一等奖颁给了一位年轻的女钢琴家。",
+          "Une médaille sera décernée à chaque participant. 每位参赛者都将获得一枚奖牌。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -8235,10 +14325,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "décharger": {
+      "display": "décharger",
+      "prepositions": {
+        "de": [
+          "décharger qqn de qqch 免除某人的（责任、任务）",
+          "On l'a déchargé de ses fonctions. 他被解除了职务。",
+          "Mon collègue m'a déchargé d'une partie du travail. 同事替我分担了一部分工作。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "déchirer": {
       "display": "déchirer",
       "prepositions": {
         "en": [
+          "déchirer qqch en qqch 把……撕成……",
+          "Il a déchiré la photo en petits morceaux. 他把照片撕成了碎片。",
+          "Déchire la feuille en deux et donne-m'en une moitié. 把这张纸撕成两半，给我一半。",
           "Elle déchira en mille morceaux la lettre. 她把信撕得粉碎。"
         ]
       },
@@ -8247,6 +14369,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "336210",
@@ -8320,6 +14454,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         "de": "décider de faire = 决定做；se décider à faire = 下定决心做"
       }
     },
+    "déclarer": {
+      "display": "déclarer",
+      "prepositions": {
+        "à": [
+          "déclarer qqch à qqn 向某人申报；宣布",
+          "Vous devez déclarer vos revenus aux impôts. 您必须向税务局申报收入。",
+          "En 1914, l'Allemagne a déclaré la guerre à la France. 一九一四年，德国向法国宣战。",
+          "Il a enfin déclaré son amour à sa voisine. 他终于向邻居女孩表白了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "déclencher": {
       "display": "déclencher",
       "prepositions": {
@@ -8376,12 +14544,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "décomposer": {
+      "display": "décomposer",
+      "prepositions": {
+        "en": [
+          "décomposer qqch en qqch 把……分解为……",
+          "Décomposez ce nombre en facteurs premiers. 把这个数分解成质因数。",
+          "Le prisme décompose la lumière en plusieurs couleurs. 棱镜把光分解成多种颜色。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "déconseiller": {
       "display": "déconseiller",
       "prepositions": {
         "de": [
           "Je te déconseille d'y aller. 你最好不要去那儿。",
-          "Je te déconseille de sortir. 你最好不要出门。"
+          "Je te déconseille de sortir. 你最好不要出门。",
+          "Tom lui déconseilla d'acheter la voiture d'occasion. 汤姆劝他别买二手车。"
         ]
       },
       "prepositionOrder": [
@@ -8400,6 +14598,12 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1484735",
             "zh": "838569",
             "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "14050393",
+            "zh": "2024176",
+            "eng": "37042"
           }
         ]
       }
@@ -8408,6 +14612,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "décorer",
       "prepositions": {
         "avec": [
+          "décorer qqch avec qqch 用……装饰……",
+          "Nous avons décoré le sapin avec des guirlandes. 我们用彩带装饰了圣诞树。",
+          "Elle décore ses gâteaux avec des fruits frais. 她用新鲜水果装饰蛋糕。",
           "Le hall était décoré avec des peintures japonaises. 大厅用日本画做装饰。"
         ]
       },
@@ -8417,10 +14624,182 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "335950",
             "zh": "336009",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "découler": {
+      "display": "découler",
+      "prepositions": {
+        "de": [
+          "découler de qqch 由……产生；源于",
+          "Tous nos problèmes découlent de cette erreur. 我们所有的问题都源于这个错误。",
+          "Ce droit découle directement de la Constitution. 这项权利直接源于宪法。",
+          "Les retards découlaient d'une mauvaise organisation. 延误是组织不善造成的。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "découper": {
+      "display": "découper",
+      "prepositions": {
+        "en": [
+          "découper qqch en qqch 把……切成／剪成……",
+          "Découpe le gâteau en huit parts. 把蛋糕切成八块。",
+          "Elle a découpé le papier en petits carrés. 她把纸剪成了小方块。",
+          "Le livre est découpé en trois parties. 这本书分为三部分。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "décourager": {
+      "display": "décourager",
+      "prepositions": {
+        "de": [
+          "décourager qqn de faire qqch 使某人打消做某事的念头",
+          "Ses parents l'ont découragé de devenir acteur. 他父母劝他打消了当演员的念头。",
+          "Le mauvais temps nous a découragés de sortir. 坏天气让我们没了出门的兴致。",
+          "Ne laisse personne te décourager de poursuivre tes rêves. 别让任何人阻止你追求梦想。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dédaigner": {
+      "display": "dédaigner",
+      "prepositions": {
+        "de": [
+          "dédaigner de faire qqch 不屑于做某事",
+          "Il dédaigne de répondre aux critiques. 他不屑回应批评。",
+          "Elle a dédaigné de nous saluer. 她连招呼都懒得跟我们打。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dédicacer": {
+      "display": "dédicacer",
+      "prepositions": {
+        "à": [
+          "dédicacer qqch à qqn 给某人签名题赠",
+          "L'auteur a dédicacé son dernier roman à ma mère. 作者给我母亲签名题赠了他的新小说。",
+          "Il a dédicacé la photo à sa fan la plus jeune. 他在照片上签了名，送给最小的那位粉丝。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -8453,10 +14832,83 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "dédommager": {
+      "display": "dédommager",
+      "prepositions": {
+        "de": [
+          "dédommager qqn de qqch 赔偿某人的（损失）",
+          "L'assurance va vous dédommager de tous les dégâts. 保险公司会赔偿您的全部损失。",
+          "La compagnie aérienne nous a dédommagés du retard. 航空公司就延误对我们进行了补偿。",
+          "Tu dois le dédommager de l'argent qu'il a perdu. 你需要赔偿他损失的钱。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "7857653",
+            "zh": "10342272",
+            "eng": "15828"
+          }
+        ]
+      }
+    },
+    "déduire": {
+      "display": "déduire",
+      "prepositions": {
+        "de": [
+          "déduire qqch de qqch 从……推断出；从……中扣除",
+          "Que faut-il déduire de son silence ? 从他的沉默中该得出什么结论呢？",
+          "Le détective a déduit de ces indices que le voleur était gaucher. 侦探从这些线索推断出小偷是左撇子。",
+          "Vous pouvez déduire ces frais de vos impôts. 这些费用可以从您的税款中扣除。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "défendre": {
       "display": "défendre",
       "prepositions": {
         "contre": [
+          "défendre qqn contre qqn/qqch 保护某人免受……",
+          "Ces remparts défendaient la ville contre les envahisseurs. 这些城墙曾保卫城市抵御入侵者。",
+          "Le chien a défendu son maître contre l'agresseur. 狗保护主人免遭袭击者的伤害。",
           "C'était la seule façon dont nous pouvions nous défendre contre tous ces tirs terribles. 那是我们在枪林弹雨中自保的唯一方法。"
         ]
       },
@@ -8465,6 +14917,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "794305",
@@ -8498,6 +14962,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "793561",
             "zh": "793595",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "défier": {
+      "display": "défier",
+      "prepositions": {
+        "de": [
+          "défier qqn de faire qqch 激某人做某事；赌某人做不到",
+          "Je te défie de manger ce piment entier. 我赌你不敢把这整个辣椒吃下去。",
+          "Ses amis l'ont défié de sauter dans le lac. 朋友们激他跳进湖里。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -8551,6 +15044,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "dégoûter": {
+      "display": "dégoûter",
+      "prepositions": {
+        "de": [
+          "dégoûter qqn de qqch 使某人厌恶……",
+          "Ce reportage m'a dégoûté de la viande. 这个报道让我对肉倒了胃口。",
+          "L'échec l'a dégoûtée de la politique. 这次失败使她对政治心灰意冷。",
+          "Trop de devoirs dégoûtent les enfants de l'école. 作业太多会让孩子厌学。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "déguiser": {
       "display": "déguiser",
       "prepositions": {
@@ -8579,10 +15106,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "dégénérer": {
+      "display": "dégénérer",
+      "prepositions": {
+        "en": [
+          "dégénérer en qqch 恶化为……",
+          "La dispute a dégénéré en bagarre. 争吵演变成了斗殴。",
+          "Son rhume a dégénéré en bronchite. 他的感冒恶化成了支气管炎。",
+          "La manifestation risque de dégénérer en émeute. 这场游行有可能演变成暴乱。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "déjeuner": {
       "display": "déjeuner",
       "prepositions": {
         "avec": [
+          "déjeuner avec qqn 和某人吃午饭",
+          "Je déjeune avec un client demain. 明天我和一位客户共进午餐。",
+          "Tu veux déjeuner avec moi à la cantine ? 你想和我一起在食堂吃午饭吗？",
           "J'ai déjeuné avec lui aujourd'hui. 我今天跟他吃午饭。"
         ]
       },
@@ -8592,6 +15156,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "5741540",
             "zh": "5694478",
@@ -8600,10 +15176,158 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "délibérer": {
+      "display": "délibérer",
+      "prepositions": {
+        "sur": [
+          "délibérer sur qqch 就……进行审议",
+          "Le conseil municipal délibère sur le nouveau budget. 市议会正在审议新预算。",
+          "Le jury a délibéré pendant trois heures sur la sentence. 陪审团就判决讨论了三个小时。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "délier": {
+      "display": "délier",
+      "prepositions": {
+        "de": [
+          "délier qqn de qqch 解除某人的（誓言、义务）",
+          "Je vous délie de votre promesse. 您不必再履行对我的承诺了。",
+          "Le contrat ne le délie pas de ses obligations. 这份合同并不能免除他的义务。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "délivrer": {
+      "display": "délivrer",
+      "prepositions": {
+        "de": [
+          "délivrer qqn de qqch 把某人从……中解救出来",
+          "Le chevalier a délivré la princesse de sa prison. 骑士把公主从牢笼中救了出来。",
+          "Ce médicament m'a délivré de mes migraines. 这种药让我摆脱了偏头痛。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "déloger": {
+      "display": "déloger",
+      "prepositions": {
+        "de": [
+          "déloger qqn de qqch 把某人从……赶出",
+          "La police a délogé les squatteurs de l'immeuble. 警方把非法占住者赶出了大楼。",
+          "Impossible de déloger le chat du canapé ! 根本没法把猫从沙发上赶下来！"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "déléguer": {
+      "display": "déléguer",
+      "prepositions": {
+        "à": [
+          "déléguer qqch à qqn 把……委托给某人",
+          "Un bon chef sait déléguer des tâches à son équipe. 好领导懂得把任务分派给团队。",
+          "Elle a délégué la gestion du budget à son adjoint. 她把预算管理交给了副手。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "démener": {
       "display": "démener",
       "prepositions": {
         "pour": [
+          "se démener pour faire qqch 为做某事而四处奔忙",
+          "Elle s'est démenée pour trouver un logement. 她为了找住处四处奔波。",
+          "Il se démène pour que ses enfants réussissent. 他为了孩子们的成功费尽心力。",
           "J'ai dû me démener pour sortir du métro. 我挣扎着挤出地铁。"
         ]
       },
@@ -8612,6 +15336,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "129297",
@@ -8656,6 +15392,64 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "démontrer": {
+      "display": "démontrer",
+      "prepositions": {
+        "à": [
+          "démontrer qqch à qqn 向某人证明",
+          "Il a démontré à tout le monde qu'il avait raison. 他向所有人证明了自己是对的。",
+          "Elle veut démontrer à ses parents qu'elle est capable de vivre seule. 她想向父母证明自己能够独立生活。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "démordre": {
+      "display": "démordre",
+      "prepositions": {
+        "de": [
+          "ne pas démordre de qqch 坚持（观点）不放",
+          "Il ne démord pas de son idée. 他死抱着自己的想法不放。",
+          "Elle n'a jamais démordu de sa version des faits. 她一直坚持自己对事情的说法。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "déménager": {
       "display": "déménager",
       "prepositions": {
@@ -8684,10 +15478,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "dénoncer": {
+      "display": "dénoncer",
+      "prepositions": {
+        "à": [
+          "dénoncer qqn à qqn 向……告发某人",
+          "Un voisin l'a dénoncé à la police. 一个邻居向警方告发了他。",
+          "Il n'a pas voulu dénoncer son camarade au professeur. 他不愿向老师揭发同学。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "dénuer": {
       "display": "dénuer",
       "prepositions": {
         "de": [
+          "être dénué de qqch 毫无……",
+          "Ce film est dénué d'intérêt. 这部电影毫无意思。",
+          "C'est un homme dénué de tout scrupule. 这是个毫无顾忌的人。",
           "Parfois, les choses qui arrivent sont dénuées de sens. 有时候，发生的事情并不是合情合理的。"
         ]
       },
@@ -8697,10 +15523,58 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1835404",
             "zh": "1589550",
             "eng": "1589553"
+          }
+        ]
+      }
+    },
+    "dépasser": {
+      "display": "dépasser",
+      "prepositions": {
+        "de": [
+          "dépasser qqn de qqch 比某人高出／多出（若干）",
+          "Mon fils me dépasse d'une tête. 我儿子比我高一个头。",
+          "Les dépenses ont dépassé le budget de dix pour cent. 开支超出预算百分之十。",
+          "Cette fille, c'est un vrai boudin avec ses bourrelets qui dépassent de partout et ses dents de travers. 这个女孩龅牙，又全身都是赘肉，真是个猪血肠。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "717439",
+            "zh": "717448",
+            "eng": ""
           }
         ]
       }
@@ -8770,6 +15644,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "dépenser",
       "prepositions": {
         "pour": [
+          "dépenser qqch pour qqch 为……花钱",
+          "Combien as-tu dépensé pour ce voyage ? 这次旅行你花了多少钱？",
+          "Ils dépensent beaucoup pour leurs vacances. 他们在度假上花很多钱。",
           "De grosses sommes d'argent ont été dépensées pour le pont. 建这条桥花了不少钱。"
         ]
       },
@@ -8778,6 +15655,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "484777",
@@ -8791,7 +15680,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "déplaire",
       "prepositions": {
         "à": [
-          "déplaire à qqn 使某人不快"
+          "déplaire à qqn 使某人不快",
+          "Ta remarque a beaucoup déplu à ton oncle. 你的话让你舅舅很不高兴。",
+          "Ce genre de musique ne déplaît pas aux jeunes. 年轻人并不讨厌这类音乐。"
         ]
       },
       "prepositionOrder": [
@@ -8802,6 +15693,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -8810,6 +15709,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "déposer",
       "prepositions": {
         "à": [
+          "déposer qqn à qqch 开车把某人送到……",
+          "Tu peux me déposer à l'aéroport demain ? 明天你能开车送我去机场吗？",
+          "Elle dépose les enfants à l'école à huit heures. 她八点钟送孩子们去学校。",
           "Je te déposerai à la gare. 我载你到车站。"
         ]
       },
@@ -8819,10 +15721,80 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "10300000",
             "zh": "891648",
             "eng": "26100"
+          }
+        ]
+      }
+    },
+    "déposséder": {
+      "display": "déposséder",
+      "prepositions": {
+        "de": [
+          "déposséder qqn de qqch 剥夺某人的……",
+          "On les a dépossédés de leurs terres. 他们的土地被剥夺了。",
+          "Le roi fut dépossédé de son trône. 国王被夺去了王位。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dépouiller": {
+      "display": "dépouiller",
+      "prepositions": {
+        "de": [
+          "dépouiller qqn de qqch 抢走某人的……",
+          "Des voleurs l'ont dépouillé de tout son argent. 小偷把他的钱全抢走了。",
+          "L'automne dépouille les arbres de leurs feuilles. 秋天使树木落尽了叶子。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -8925,11 +15897,76 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "désobéir": {
-      "display": "désobéir",
+    "déraper": {
+      "display": "déraper",
+      "prepositions": {
+        "sur": [
+          "déraper sur qqch 在……上打滑",
+          "La voiture a dérapé sur le verglas. 汽车在薄冰上打滑了。",
+          "Attention à ne pas déraper sur les feuilles mouillées ! 小心别在湿树叶上滑倒！"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dériver": {
+      "display": "dériver",
+      "prepositions": {
+        "de": [
+          "dériver de qqch 源于；派生自",
+          "Le mot « chef » dérive du latin. 「首领」这个词源自拉丁语。",
+          "Beaucoup de médicaments dérivent de plantes. 许多药物是从植物中提取的。",
+          "Ces difficultés dérivent d'un manque de communication. 这些困难源于缺乏沟通。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "déroger": {
+      "display": "déroger",
       "prepositions": {
         "à": [
-          "désobéir à qqn 不服从某人"
+          "déroger à qqch 违背；破例不遵守",
+          "Il ne déroge jamais à ses principes. 他从不违背自己的原则。",
+          "Pour une fois, nous allons déroger à la règle. 这一次我们就破个例吧。"
         ]
       },
       "prepositionOrder": [
@@ -8939,6 +15976,188 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "désespérer": {
+      "display": "désespérer",
+      "prepositions": {
+        "de": [
+          "désespérer de qqch 对……感到绝望",
+          "Je commence à désespérer de le revoir un jour. 我开始对再见到他不抱希望了。",
+          "Ne désespère pas de trouver du travail, ça viendra. 别对找工作失去希望，机会总会来的。",
+          "Les médecins désespéraient de la sauver. 医生们对救活她已经不抱希望。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "désigner": {
+      "display": "désigner",
+      "prepositions": {
+        "pour": [
+          "désigner qqn pour faire qqch 指派某人做某事",
+          "On l'a désigné pour représenter la classe. 他被选为班级代表。",
+          "Qui a été désigné pour ce poste ? 谁被任命担任这个职位？"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "désobéir": {
+      "display": "désobéir",
+      "prepositions": {
+        "à": [
+          "désobéir à qqn 不服从某人",
+          "L'enfant a encore désobéi à sa mère. 这孩子又不听妈妈的话了。",
+          "Les soldats qui désobéissent aux ordres sont punis. 违抗命令的士兵会受到惩罚。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "désoler": {
+      "display": "désoler",
+      "prepositions": {
+        "de": [
+          "être désolé de faire qqch 很抱歉做某事",
+          "Je suis désolé de vous déranger si tard. 很抱歉这么晚打扰您。",
+          "Nous sommes désolés d'apprendre la nouvelle. 得知这个消息我们很难过。",
+          "Elle était désolée de ne pas pouvoir venir. 她很遗憾不能来。",
+          "Nous étions vraiment désolés de ne pouvoir les aider. 我们很遗憾无法帮助他们。",
+          "Nous sommes désolés de ne pas pouvoir vous aider. 我们很遗憾没能帮助你们。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "4092954",
+            "zh": "4071836",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "758569",
+            "zh": "4084073",
+            "eng": "262696"
+          }
+        ]
+      }
+    },
+    "détacher": {
+      "display": "détacher",
+      "prepositions": {
+        "de": [
+          "détacher qqch de qqch 把……从……上取下／解开",
+          "Détachez le coupon de la feuille. 把回执从纸上撕下来。",
+          "Il ne pouvait pas détacher ses yeux de l'écran. 他的眼睛离不开屏幕。",
+          "Elle a détaché le chien de l'arbre. 她把狗从树上解开了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -8989,6 +16208,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "499370",
             "zh": "346884",
             "eng": "63418"
+          }
+        ]
+      }
+    },
+    "déteindre": {
+      "display": "déteindre",
+      "prepositions": {
+        "sur": [
+          "déteindre sur qqn/qqch 掉色染到……上；对……产生影响",
+          "Le pull rouge a déteint sur mes chemises blanches. 红毛衣把我的白衬衫染红了。",
+          "Sa bonne humeur déteint sur toute l'équipe. 他的好心情感染了整个团队。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -9070,6 +16318,69 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "détonner": {
+      "display": "détonner",
+      "prepositions": {
+        "avec": [
+          "détonner avec qqch 与……不协调",
+          "Ce canapé moderne détonne avec le reste du salon. 这张现代沙发与客厅其他陈设格格不入。",
+          "Sa tenue détonnait avec l'ambiance de la soirée. 他的穿着与晚会的气氛很不协调。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "détourner": {
+      "display": "détourner",
+      "prepositions": {
+        "de": [
+          "détourner qqn/qqch de qqch 使……偏离；使……转移",
+          "Rien ne pourra le détourner de son objectif. 什么也不能让他偏离自己的目标。",
+          "Elle a détourné les yeux de la scène. 她把目光从那一幕移开了。",
+          "Ce jeu détourne les enfants de leurs devoirs. 这个游戏让孩子们无心做作业。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "détruire": {
       "display": "détruire",
       "prepositions": {
@@ -9108,6 +16419,113 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "4008777",
             "zh": "3845390",
             "eng": "4008773"
+          }
+        ]
+      }
+    },
+    "déverser": {
+      "display": "déverser",
+      "prepositions": {
+        "dans": [
+          "déverser qqch dans qqch 把……倒入……",
+          "L'usine déversait ses déchets dans la rivière. 工厂过去一直把废料倒进河里。",
+          "Le camion a déversé son sable dans le fossé. 卡车把沙子卸进了沟里。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dévier": {
+      "display": "dévier",
+      "prepositions": {
+        "de": [
+          "dévier de qqch 偏离……",
+          "L'avion a dévié de sa trajectoire. 飞机偏离了航线。",
+          "Ne déviez pas du sujet, s'il vous plaît. 请不要偏离主题。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "dîner": {
+      "display": "dîner",
+      "prepositions": {
+        "avec": [
+          "dîner avec qqn 和某人吃晚饭",
+          "Ce soir, je dîne avec des amis d'enfance. 今晚我和几个儿时的朋友吃晚饭。",
+          "Tu veux dîner avec nous samedi ? 星期六你想和我们一起吃晚饭吗？"
+        ],
+        "chez": [
+          "dîner chez qqn 在某人家吃晚饭",
+          "Nous avons dîné chez mes beaux-parents dimanche. 星期天我们在岳父母家吃了晚饭。",
+          "On dînera chez toi ou chez moi ? 我们在你家还是在我家吃晚饭？"
+        ]
+      },
+      "prepositionOrder": [
+        "avec",
+        "chez"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "chez": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -9154,22 +16572,70 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "emballer": {
+      "display": "emballer",
+      "prepositions": {
+        "dans": [
+          "emballer qqch dans qqch 用某物包装某物",
+          "Emballe les verres dans du papier journal. 用报纸把玻璃杯包好。",
+          "Le cadeau était emballé dans un joli papier doré. 礼物用漂亮的金色包装纸包着。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "embarquer": {
       "display": "embarquer",
       "prepositions": {
         "pour": [
+          "s'embarquer pour un lieu 乘船（机）前往某地",
+          "Nous embarquerons pour la Corse demain à l'aube. 我们明天拂晓登船前往科西嘉。",
           "Le vieux couple s'est embarqué pour un tour du monde. 老夫妇出发去环游世界了。"
         ],
         "sur": [
+          "embarquer sur un navire 登上（船只）",
+          "Les touristes ont embarqué sur un petit bateau pour visiter les îles. 游客们登上一艘小船去游览群岛。",
           "Tous les passagers embarquèrent sur le navire. 乘客全都登上了船。"
+        ],
+        "dans": [
+          "s'embarquer dans qqch 着手（冒险的事）；卷入",
+          "Je ne sais pas dans quoi je me suis embarqué ! 真不知道我卷进了什么事里！",
+          "Ils se sont embarqués dans un projet trop ambitieux. 他们着手了一个过于宏大的项目。",
+          "Avant de pouvoir embarquer dans l'avion, vous devrez vous soumettre aux contrôles de sécurité de l'aéroport. 你要通过了机场的安全检查才能登机。"
         ]
       },
       "prepositionOrder": [
         "pour",
-        "sur"
+        "sur",
+        "dans"
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "426140",
@@ -9179,10 +16645,38 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1287060",
             "zh": "1769181",
             "eng": "268409"
+          }
+        ],
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1017202",
+            "zh": "1016605",
+            "eng": "1016242"
           }
         ]
       }
@@ -9191,6 +16685,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "embaucher",
       "prepositions": {
         "pour": [
+          "embaucher qqn pour faire qqch 雇某人做某事",
+          "Le restaurant embauche des étudiants pour l'été. 这家餐馆夏天招学生打工。",
           "Des détectives privés ont été embauchés pour examiner l'étrange affaire. 私家侦探们受雇调查这桩奇怪的案件。"
         ]
       },
@@ -9199,6 +16695,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "6218056",
@@ -9257,6 +16761,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "embêter": {
+      "display": "embêter",
+      "prepositions": {
+        "avec": [
+          "embêter qqn avec qqch 拿某事烦某人",
+          "Arrête de m'embêter avec tes questions ! 别再拿你的问题烦我了！",
+          "Je ne veux pas t'embêter avec mes problèmes. 我不想用我的烦心事打扰你。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "emmener": {
       "display": "emmener",
       "prepositions": {
@@ -9269,6 +16802,8 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Ce bus vous emmènera au musée. 这辆公车会载你去博物馆。"
         ],
         "avec": [
+          "emmener qqn avec soi 带某人一起去",
+          "Emmène ton petit frère avec toi au parc. 带上你弟弟一起去公园。",
           "Je l'emmènerai avec moi à l'hôpital. 我会带他跟我一起去医院。"
         ]
       },
@@ -9317,6 +16852,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "920722",
             "zh": "917804",
@@ -9329,9 +16872,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "emménager",
       "prepositions": {
         "dans": [
+          "emménager dans un lieu 搬进某处",
+          "Nous emménagerons dans notre nouvelle maison en juin. 我们六月份搬进新房子。",
+          "Une famille japonaise vient d'emménager dans l'appartement d'en face. 一个日本家庭刚搬进对面的公寓。",
           "Récemment, j'ai emménagé dans un nouvel appartement. 最近我搬到另一栋公寓。"
         ],
         "avec": [
+          "emménager avec qqn 和某人搬到一起住",
+          "Elle a emménagé avec son copain après deux ans de relation. 交往两年后，她和男朋友搬到了一起住。",
           "Il emménage avec sa petite amie. 他正在和他的女朋友搬新家。"
         ]
       },
@@ -9342,6 +16890,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "181069",
             "zh": "801398",
@@ -9349,6 +16909,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "6112",
@@ -9358,10 +16926,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "empiler": {
+      "display": "empiler",
+      "prepositions": {
+        "sur": [
+          "empiler qqch sur qqch 把某物堆在某物上",
+          "Il a empilé les assiettes sur l'évier. 他把盘子摞在洗碗池上。",
+          "Les dossiers s'empilent sur mon bureau. 文件在我桌上堆积如山。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "empiéter": {
       "display": "empiéter",
       "prepositions": {
         "sur": [
+          "empiéter sur qqch 侵占；侵犯",
+          "La réunion a empiété sur ma pause déjeuner. 会议占用了我的午休时间。",
+          "La clôture du voisin empiète sur notre terrain. 邻居的篱笆占了我们的地。",
           "N'empiète pas sur sa vie privée. 不要侵犯她的隐私。"
         ]
       },
@@ -9370,6 +16970,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1186948",
@@ -9421,6 +17033,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "employer": {
+      "display": "employer",
+      "prepositions": {
+        "à": [
+          "employer qqch à faire qqch 把某物用于做某事",
+          "Il emploie tout son temps libre à peindre. 他把所有空闲时间都用来画画。",
+          "Cet argent sera employé à rénover l'école. 这笔钱将用于翻修学校。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "emporter": {
       "display": "emporter",
       "prepositions": {
@@ -9430,6 +17071,8 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Certaines personnes étaient accrochées à des branches d'arbres durant plusieurs heures, afin d'éviter d'être emportées par les eaux. 为了不被洪水冲走，有的人紧紧地抱着树干长达数个钟头。"
         ],
         "avec": [
+          "emporter qqch avec soi 随身带走某物",
+          "N'oublie pas d'emporter ton passeport avec toi. 别忘了随身带上护照。",
           "Le bon coté de ce dictionnaire électronique est qu'on peut facilement l'emporter avec soi. 这电子辞典的好处就是便于携带。"
         ]
       },
@@ -9460,9 +17103,65 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "449408",
             "zh": "794251",
+            "eng": ""
+          }
+        ]
+      }
+    },
+    "emprunter": {
+      "display": "emprunter",
+      "prepositions": {
+        "à": [
+          "emprunter qqch à qqn 向某人借某物",
+          "J'ai emprunté cinquante euros à mon frère. 我向哥哥借了五十欧元。",
+          "Tu peux emprunter un parapluie à la réception. 你可以在前台借一把伞。",
+          "Le français a emprunté beaucoup de mots à l'anglais. 法语从英语中借用了很多词。",
+          "J'ai ramené les livres que j'avais empruntés à la bibliothèque et j'en ai emprunté des nouveaux. 我还了从图书馆借的书，又借了些新的。",
+          "J'ai emprunté une voiture à un ami. 我借了一辆车给我朋友。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "635544",
+            "zh": "333104",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "127976",
+            "zh": "397115",
             "eng": ""
           }
         ]
@@ -9529,10 +17228,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "enchanter": {
+      "display": "enchanter",
+      "prepositions": {
+        "de": [
+          "être enchanté de qqch / de faire qqch 对某事非常高兴",
+          "Enchantée de faire votre connaissance ! 很高兴认识您！",
+          "Les enfants sont enchantés de leur séjour à la mer. 孩子们对海边的旅行非常满意。",
+          "Je serais enchanté de vous faire visiter la ville. 我很乐意带您参观这座城市。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "encombrer": {
       "display": "encombrer",
       "prepositions": {
         "de": [
+          "être encombré de qqch 被某物堆满、塞满",
+          "Son bureau est encombré de papiers. 他的办公桌上堆满了文件。",
+          "Ne t'encombre pas de bagages inutiles. 别带些没用的行李拖累自己。",
           "La route était encombrée de voitures. 路上挤满了汽车。"
         ]
       },
@@ -9541,6 +17277,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "236560",
@@ -9644,6 +17392,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "enduire": {
+      "display": "enduire",
+      "prepositions": {
+        "de": [
+          "enduire qqch de qqch 给某物涂上某物",
+          "Enduisez le moule de beurre avant d'y verser la pâte. 倒入面糊之前，先在模具上抹一层黄油。",
+          "Il s'est enduit le visage de crème solaire. 他往脸上抹了防晒霜。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "endurer": {
       "display": "endurer",
       "prepositions": {
@@ -9714,10 +17491,75 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "enfoncer": {
+      "display": "enfoncer",
+      "prepositions": {
+        "dans": [
+          "enfoncer qqch dans qqch 把某物插进（钉进）某物",
+          "Il a enfoncé un clou dans le mur. 他在墙上钉了一颗钉子。",
+          "L'infirmière a enfoncé doucement l'aiguille dans le bras du patient. 护士轻轻地把针扎进了病人的胳膊。",
+          "Elle enfonça les mains dans ses poches. 她把双手插进了口袋。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "enfouir": {
+      "display": "enfouir",
+      "prepositions": {
+        "dans": [
+          "enfouir qqch dans qqch 把某物埋进（藏进）某处",
+          "Le chien a enfoui son os dans le jardin. 狗把骨头埋在了花园里。",
+          "Elle enfouit son visage dans l'oreiller et pleura. 她把脸埋进枕头里哭了。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "enfuir": {
       "display": "enfuir",
       "prepositions": {
         "avec": [
+          "s'enfuir avec qqn/qqch 带着某人（某物）逃走",
+          "La jeune fille s'est enfuie avec un musicien. 那个姑娘跟一个音乐家私奔了。",
           "Il s'est enfui avec l'argent. 他携款潜逃。"
         ]
       },
@@ -9726,6 +17568,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1175575",
@@ -9739,6 +17589,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "engager",
       "prepositions": {
         "dans": [
+          "s'engager dans qqch 投身于某事；驶入",
+          "Il s'est engagé dans l'armée à dix-huit ans. 他十八岁参了军。",
+          "La voiture s'est engagée dans une petite rue. 汽车拐进了一条小街。",
           "Elles se sont engagées dans la recherche sur le cancer. 他们从事癌症研究工作。"
         ]
       },
@@ -9748,6 +17601,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1788520",
             "zh": "349560",
@@ -9756,10 +17621,94 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "engueuler": {
+      "display": "engueuler",
+      "prepositions": {
+        "pour": [
+          "engueuler qqn pour qqch 因某事骂某人（俗）",
+          "Mon père m'a engueulé pour une fenêtre cassée. 我爸因为一扇打碎的窗户把我骂了一顿。",
+          "Le chef l'a engueulée pour son retard. 老板因为她迟到把她臭骂了一顿。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "enlever": {
+      "display": "enlever",
+      "prepositions": {
+        "à": [
+          "enlever qqch à qqn 从某人那里拿走某物；夺走",
+          "La maîtresse a enlevé son téléphone à l'élève pendant le cours. 老师在课上没收了那个学生的手机。",
+          "Cette mauvaise nouvelle a enlevé à tout le monde l'envie de sortir. 这个坏消息让大家都没了出门的兴致。"
+        ],
+        "de": [
+          "enlever qqch de qqch 从某处拿掉某物",
+          "Enlève tes pieds de la table, s'il te plaît. 请把你的脚从桌子上拿下来。",
+          "Il faut enlever cette tache de ta chemise avant qu'elle sèche. 得趁这块污渍没干，把它从你的衬衫上弄掉。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "enlever qqch de qqch = 从某处拿掉；enlever qqch à qqn = 从某人那里夺走",
+        "à": "enlever qqch à qqn = 从某人手里拿走（à 引出失去东西的人）；enlever qqch de qqch = 从某处移开（de 引出地点）"
+      }
+    },
     "ennuyer": {
       "display": "ennuyer",
       "prepositions": {
         "avec": [
+          "ennuyer qqn avec qqch 用某事使某人厌烦",
+          "Ne m'ennuie pas avec tes histoires de bureau. 别拿你办公室里的事来烦我。",
           "Il nous a ennuyés avec ses longues histoires. 他长长的故事让我们觉得厌烦了。"
         ]
       },
@@ -9769,10 +17718,39 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "5594151",
             "zh": "889378",
             "eng": "287163"
+          }
+        ]
+      }
+    },
+    "enquérir": {
+      "display": "enquérir",
+      "prepositions": {
+        "de": [
+          "Je me suis enquis de son nom. 我向他问了他的名字。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "indirect",
+            "fr": "2292091",
+            "zh": "14023315",
+            "eng": "2291892"
           }
         ]
       }
@@ -9801,6 +17779,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "11377435",
             "zh": "8902607",
             "eng": "49638"
+          }
+        ]
+      }
+    },
+    "enregistrer": {
+      "display": "enregistrer",
+      "prepositions": {
+        "sur": [
+          "enregistrer qqch sur qqch 把某物保存（录制）在某物上",
+          "N'oublie pas d'enregistrer le document sur une clé USB. 别忘了把文件存到优盘上。",
+          "J'ai enregistré sa voix sur mon téléphone. 我用手机录下了他的声音。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "enrichir": {
+      "display": "enrichir",
+      "prepositions": {
+        "de": [
+          "enrichir qqch de qqch 用某物丰富某物",
+          "Cette nouvelle édition est enrichie de nombreuses photos. 新版增加了大量照片。",
+          "Il a enrichi sa collection d'un tableau rare. 他的收藏又添了一幅珍贵的画。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -9857,6 +17893,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "463502",
             "zh": "410719",
             "eng": "33243"
+          }
+        ]
+      }
+    },
+    "entasser": {
+      "display": "entasser",
+      "prepositions": {
+        "dans": [
+          "entasser qqn/qqch dans qqch 把……堆（挤）在某处",
+          "On a entassé tous les cartons dans le garage. 所有的纸箱都堆在车库里了。",
+          "Les passagers étaient entassés dans un bus trop petit. 乘客们挤在一辆过小的公共汽车里。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -9956,6 +18021,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "entourer",
       "prepositions": {
         "de": [
+          "entourer qqn/qqch de qqch 用某物围绕某人（某物）",
+          "Le village est entouré de collines. 村子四周群山环绕。",
+          "Ses parents l'ont toujours entouré d'affection. 他父母一直给他满满的关爱。",
           "Il était entouré d'une foule de journalistes. 他被一大群记者包围着。"
         ],
         "par": [
@@ -9970,6 +18038,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "11184769",
@@ -9995,6 +18075,88 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "129738",
             "zh": "8938624",
             "eng": "281542"
+          }
+        ]
+      }
+    },
+    "entraîner": {
+      "display": "entraîner",
+      "prepositions": {
+        "à": [
+          "entraîner qqn à qqch / à faire qqch 训练某人做某事",
+          "Ce coach entraîne les jeunes à garder leur calme sous la pression. 这位教练训练年轻人在压力下保持冷静。",
+          "On entraîne les chiens policiers à détecter la drogue. 警犬受过专门训练，能嗅出毒品。"
+        ],
+        "dans": [
+          "entraîner qqn dans qqch 把某人卷入某事",
+          "Ne m'entraîne pas dans tes histoires ! 别把我卷进你的事情里！",
+          "Ses mauvais amis l'ont entraîné dans une affaire de vol. 他那帮坏朋友把他拖进了一起盗窃案。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "dans"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "dans": "entraîner qqn dans qqch = 把某人拖入（麻烦、事件）；entraîner qqn à faire qqch = 训练某人做某事",
+        "à": "entraîner qqn à = 训练；entraîner qqn dans = 卷入、拖进"
+      }
+    },
+    "entreprendre": {
+      "display": "entreprendre",
+      "prepositions": {
+        "de": [
+          "entreprendre de faire qqch 着手做某事",
+          "Mon père a entrepris de repeindre toute la maison. 我父亲着手把整栋房子重新粉刷一遍。",
+          "Elle entreprit d'apprendre le chinois à soixante ans. 她六十岁时开始学中文。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -10168,6 +18330,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "envier": {
+      "display": "envier",
+      "prepositions": {
+        "à": [
+          "envier qqch à qqn 羡慕某人的某物",
+          "J'envie à ma sœur sa patience avec les enfants. 我羡慕姐姐对孩子的那份耐心。",
+          "Les autres pays envient à la Suisse sa stabilité. 其他国家都羡慕瑞士的稳定。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "envisager": {
       "display": "envisager",
       "prepositions": {
@@ -10227,20 +18418,112 @@ const FRENCH_COLLOCATIONS_DATA = {
     "envoyer": {
       "display": "envoyer",
       "prepositions": {
+        "à": [
+          "envoyer qqch à qqn 把某物寄（发）给某人",
+          "J'ai envoyé une carte postale à mes grands-parents. 我给爷爷奶奶寄了一张明信片。",
+          "Elle envoie des photos du bébé à toute la famille. 她把宝宝的照片发给全家人。",
+          "Le médecin a envoyé un courriel à tous ses patients. 医生给他所有的病人发了一封电子邮件。",
+          "Il a été envoyé à l'étranger en tant que correspondant. 他作为特派员被派往了国外。",
+          "Elle envoya un SMS à son petit ami. 她给她男朋友发了一条短信。",
+          "Pouvez-vous envoyer cette lettre au Japon ? 你能将这封信送到日本吗？",
+          "Je t'enverrai à Jésus. 我会送你去见上帝。"
+        ],
         "par": [
+          "envoyer qqch par la poste 通过（某方式）寄送某物",
+          "Je vous enverrai les documents par la poste. 我会把文件邮寄给您。",
           "Je l'enverrai par courriel cet après-midi. 我今天下午用电邮发。"
         ]
       },
       "prepositionOrder": [
+        "à",
         "par"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "133056",
+            "zh": "512512",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "6574350",
+            "zh": "8858016",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "11376",
+            "zh": "2511565",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "11215762",
+            "zh": "11216083",
+            "eng": "11156559"
+          }
+        ],
         "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1242100",
             "zh": "1242085",
             "eng": "1242088"
+          }
+        ]
+      }
+    },
+    "errer": {
+      "display": "errer",
+      "prepositions": {
+        "dans": [
+          "errer dans un lieu 在某处游荡",
+          "Le chien errait dans les rues à la recherche de nourriture. 那只狗在街上游荡找吃的。",
+          "Nous avons erré des heures dans la vieille ville sans carte. 我们没带地图，在老城里转悠了好几个小时。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -10369,6 +18652,80 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "exceller": {
+      "display": "exceller",
+      "prepositions": {
+        "à": [
+          "exceller à faire qqch 擅长做某事",
+          "Elle excelle à mettre les gens à l'aise. 她特别善于让人感到自在。",
+          "Les chats excellent à trouver la place la plus chaude. 猫最擅长找到最暖和的地方。"
+        ],
+        "en": [
+          "exceller en qqch 在某学科上出类拔萃",
+          "Mon fils excelle en mathématiques mais pas en dessin. 我儿子数学很好，但画画不行。",
+          "Elle a toujours excellé en langues étrangères. 她一向外语出众。"
+        ],
+        "dans": [
+          "exceller dans qqch 在某领域表现卓越",
+          "Ce chef excelle dans la cuisine du poisson. 这位厨师擅长烹制鱼类菜肴。",
+          "Il excelle dans l'art de raconter des histoires. 他特别会讲故事。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "en",
+        "dans"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "dans": "exceller dans + 带冠词的领域或活动；exceller en + 不带冠词的学科；exceller à + 不定式",
+        "en": "exceller en + 学科名（不带冠词）；exceller dans + 带冠词的领域；exceller à + 动词不定式",
+        "à": "exceller à faire qqch = 擅长做某事；名词补语则用 en（学科）或 dans（领域）"
+      }
+    },
     "exclure": {
       "display": "exclure",
       "prepositions": {
@@ -10460,6 +18817,93 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "exempter": {
+      "display": "exempter",
+      "prepositions": {
+        "de": [
+          "exempter qqn de qqch 免除某人的某事",
+          "Son handicap l'exempte du service militaire. 他因残疾被免服兵役。",
+          "Les petits revenus sont exemptés de cet impôt. 低收入者免缴这项税。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "exercer": {
+      "display": "exercer",
+      "prepositions": {
+        "sur": [
+          "exercer qqch sur qqn/qqch 对某人（某物）施加（影响、压力）",
+          "Ce professeur exerce une grande influence sur ses élèves. 这位老师对学生有很大影响。",
+          "Les syndicats exercent une forte pression sur le gouvernement. 工会对政府施加了很大压力。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "exhorter": {
+      "display": "exhorter",
+      "prepositions": {
+        "à": [
+          "exhorter qqn à faire qqch 劝勉某人做某事",
+          "Le maire a exhorté les habitants à rester chez eux. 市长呼吁居民待在家里。",
+          "Son entraîneur l'exhortait à ne jamais abandonner. 教练一再勉励他永不放弃。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "exiger": {
       "display": "exiger",
       "prepositions": {
@@ -10502,30 +18946,17 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "exister": {
-      "display": "exister",
-      "prepositions": {
-        "sur": [
-          "Je me demande si la vie existe sur d'autres planètes. 不知道别的星球上有没有生物呢？"
-        ]
-      },
-      "prepositionOrder": [
-        "sur"
-      ],
-      "sources": {
-        "sur": [
-          {
-            "kind": "direct",
-            "fr": "614801",
-            "zh": "426959",
-            "eng": ""
-          }
-        ]
-      }
-    },
     "expliquer": {
       "display": "expliquer",
       "prepositions": {
+        "à": [
+          "expliquer qqch à qqn 向某人解释某事",
+          "Peux-tu expliquer cet exercice à ta sœur ? 你能给你妹妹讲讲这道练习吗？",
+          "Le médecin a expliqué aux parents les risques de l'opération. 医生向家长说明了手术的风险。",
+          "C'est ce qui est expliqué à la fin. 这是在最后解释了的。",
+          "C'est un peu expliqué à la fin. 这在最后得到了莫名的解释。",
+          "Il a expliqué son plan à mon fils et à moi. 他把他的打算解释了给我和我的儿子两个人听。"
+        ],
         "en": [
           "Il l'a expliqué en détail. 他为我做了详细说明。",
           "Il expliqua en détail ce qu'il avait vu. 他详细地解释了他看到的事。",
@@ -10536,10 +18967,43 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "en",
         "avec"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "3178",
+            "zh": "501337",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "11255738",
+            "zh": "13113768",
+            "eng": "1362"
+          },
+          {
+            "kind": "indirect",
+            "fr": "131920",
+            "zh": "755729",
+            "eng": "295723"
+          }
+        ],
         "en": [
           {
             "kind": "direct",
@@ -10566,6 +19030,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "130843",
             "zh": "13795580",
             "eng": "270673"
+          }
+        ]
+      }
+    },
+    "exploser": {
+      "display": "exploser",
+      "prepositions": {
+        "de": [
+          "exploser de qqch 迸发（情绪）",
+          "Les supporters ont explosé de joie au coup de sifflet final. 终场哨响时，球迷们欣喜若狂。",
+          "Il a explosé de colère en voyant la facture. 看到账单，他顿时火冒三丈。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -10623,9 +19116,13 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "exprimer",
       "prepositions": {
         "en": [
+          "s'exprimer en + langue 用某种语言表达",
+          "Elle s'exprime en français sans aucun accent. 她说法语一点口音都没有。",
           "Peux-tu t'exprimer en anglais ? 你能用英语表达自己吗？"
         ],
         "par": [
+          "exprimer qqch par qqch 通过某种方式表达某事",
+          "Les enfants expriment souvent leurs émotions par le dessin. 孩子们常常通过绘画来表达情感。",
           "Elle s'est exprimée par l'intermédiaire d'un interprète. 她透过传译员发言。"
         ]
       },
@@ -10636,6 +19133,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "en": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "338672",
             "zh": "811818",
@@ -10643,6 +19148,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "4760116",
@@ -10680,6 +19193,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "expédier": {
+      "display": "expédier",
+      "prepositions": {
+        "à": [
+          "expédier qqch à qqn 把某物寄给某人",
+          "Nous expédierons votre commande à l'adresse indiquée. 我们会把您的订单寄往所填写的地址。",
+          "J'ai expédié le colis à mes cousins mardi dernier. 上周二我把包裹寄给了表兄弟们。",
+          "Je voudrais expédier ce paquet au Japon. 我想把这个包裹寄到日本。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "817103",
+            "zh": "5401615",
+            "eng": "60035"
+          }
+        ]
+      }
+    },
     "extirper": {
       "display": "extirper",
       "prepositions": {
@@ -10704,6 +19253,69 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1330327",
             "zh": "801983",
             "eng": "24927"
+          }
+        ]
+      }
+    },
+    "extorquer": {
+      "display": "extorquer",
+      "prepositions": {
+        "à": [
+          "extorquer qqch à qqn 向某人勒索某物",
+          "Le gang extorquait de l'argent aux commerçants du quartier. 这帮人向街区的商贩勒索钱财。",
+          "Les enquêteurs ont extorqué des aveux au suspect. 调查人员逼嫌疑人招了供。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "extraire": {
+      "display": "extraire",
+      "prepositions": {
+        "de": [
+          "extraire qqch de qqch 从某物中提取、取出",
+          "On extrait l'huile des olives mûres. 橄榄油是从成熟的橄榄中榨取的。",
+          "Ce passage est extrait d'un roman de Victor Hugo. 这段文字摘自维克多·雨果的一部小说。",
+          "Les mineurs extrayaient le charbon de la montagne. 矿工们从山里开采煤炭。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -10746,6 +19358,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "6823157",
             "zh": "5777488",
             "eng": "5701346"
+          }
+        ]
+      }
+    },
+    "faillir": {
+      "display": "faillir",
+      "prepositions": {
+        "à": [
+          "faillir à qqch 未履行（义务、诺言）",
+          "Il n'a jamais failli à sa parole. 他从未食言。",
+          "Un médecin ne doit pas faillir à son devoir. 医生不能失职。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -10878,7 +19519,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "faire attention",
       "prepositions": {
         "à": [
-          "faire attention à qqch 注意某事"
+          "faire attention à qqch 注意某事",
+          "Fais attention à la marche en descendant. 往下走的时候注意台阶。",
+          "Faites attention à ce que vous dites. 说话注意点。"
         ]
       },
       "prepositionOrder": [
@@ -10889,6 +19532,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -10897,7 +19548,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "faire semblant",
       "prepositions": {
         "de": [
-          "faire semblant de faire qqch 假装做某事"
+          "faire semblant de faire qqch 假装做某事",
+          "Il fait semblant de lire, mais il dort. 他装作在看书，其实在睡觉。",
+          "Arrête de faire semblant de ne pas m'entendre ! 别装没听见我说话！"
         ]
       },
       "prepositionOrder": [
@@ -10907,6 +19560,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         "de": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -10969,6 +19630,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "498429",
             "zh": "498431",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "farcir": {
+      "display": "farcir",
+      "prepositions": {
+        "de": [
+          "farcir qqch de qqch 用某物填塞某物",
+          "Ma grand-mère farcit les tomates de viande hachée. 我奶奶在西红柿里塞上肉馅。",
+          "Ce film est farci de clichés. 这部电影充斥着陈词滥调。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -11067,6 +19757,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1092076",
             "zh": "13890318",
             "eng": "5001496"
+          }
+        ]
+      }
+    },
+    "feindre": {
+      "display": "feindre",
+      "prepositions": {
+        "de": [
+          "feindre de faire qqch 假装做某事",
+          "Il feignit de dormir quand sa mère entra. 母亲进来时，他装作睡着了。",
+          "Elle feint de ne pas comprendre pour éviter la question. 她装作听不懂，好回避这个问题。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -11200,6 +19919,47 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "2092743",
             "zh": "13119391",
             "eng": "2091090"
+          }
+        ]
+      }
+    },
+    "figurer": {
+      "display": "figurer",
+      "prepositions": {
+        "dans": [
+          "figurer dans qqch 出现在（名单、书等）中",
+          "Ce mot ne figure dans aucun dictionnaire. 这个词哪本词典都没收录。",
+          "Ce tableau figure dans la collection du musée depuis 1920. 这幅画自一九二〇年起就是博物馆的藏品。",
+          "Cette clause figure dans le contrat que tu as signé. 这一条款写在你签的合同里。",
+          "Son nom ne figurait pas dans la liste. 名单上没有她的名字。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1834765",
+            "zh": "500926",
+            "eng": "29695"
           }
         ]
       }
@@ -11354,6 +20114,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "flirter": {
+      "display": "flirter",
+      "prepositions": {
+        "avec": [
+          "flirter avec qqn/qqch 与某人调情；接近（某种状态）",
+          "Il flirte avec toutes les serveuses du café. 他跟咖啡馆里所有的女服务员调情。",
+          "Le pays flirte avec la récession depuis des mois. 几个月来该国一直徘徊在经济衰退的边缘。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "flotter": {
       "display": "flotter",
       "prepositions": {
@@ -11412,6 +20201,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "flâner",
       "prepositions": {
         "dans": [
+          "flâner dans un lieu 在某处闲逛",
+          "Le dimanche, nous aimons flâner dans les marchés. 星期天我们喜欢逛集市。",
           "J'ai flâné dans les rues pour passer le temps. 我在街上散步，消磨时间。"
         ]
       },
@@ -11421,6 +20212,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "180323",
             "zh": "475215",
@@ -11429,18 +20228,94 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "foncer": {
+      "display": "foncer",
+      "prepositions": {
+        "sur": [
+          "foncer sur qqn/qqch 向某人（某物）猛冲",
+          "Le taureau a foncé sur le torero. 公牛朝斗牛士猛冲过去。",
+          "Dès qu'il a vu le buffet, il a foncé sur les desserts. 他一看到自助餐，就直奔甜点而去。"
+        ],
+        "vers": [
+          "foncer vers un lieu 飞快地奔向某处",
+          "L'ambulance fonçait vers l'hôpital, sirène hurlante. 救护车拉着警笛朝医院飞驰。",
+          "Les enfants ont foncé vers la plage dès leur arrivée. 孩子们一到就朝海滩冲了过去。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur",
+        "vers"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "fonctionner": {
       "display": "fonctionner",
       "prepositions": {
+        "à": [
+          "fonctionner à qqch 靠（某种能源）运转",
+          "Cette voiture fonctionne à l'électricité. 这辆车靠电驱动。",
+          "Notre vieux poêle fonctionne encore au bois. 我们的旧炉子还是烧柴的。",
+          "Pour une raison quelconque, le microphone ne fonctionnait pas tout à l'heure. 刚才我的麦克风没起作用，不知道为什么。"
+        ],
         "en": [
           "Les feux tricolores fonctionnent en continu. 红绿灯一直在运作。",
           "Ces machines ne fonctionnent pas en ce moment. 这些机器目前不运转。"
         ]
       },
       "prepositionOrder": [
+        "à",
         "en"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1365253",
+            "zh": "18",
+            "eng": "328546"
+          }
+        ],
         "en": [
           {
             "kind": "direct",
@@ -11468,6 +20343,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "L'université Harvard a été fondée en 1636. 哈佛大学是在一六三六年创立的。"
         ],
         "sur": [
+          "fonder qqch sur qqch 把某事建立在某事的基础上",
+          "Ce film est fondé sur une histoire vraie. 这部电影根据真实故事改编。",
+          "Notre amitié est fondée sur la confiance. 我们的友谊建立在信任之上。",
           "Toutes les études cliniques ne sont pas fondées sur des hypothèses. 不是所有的临床研究都是假设驱动的。"
         ]
       },
@@ -11510,6 +20388,18 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "8558990",
             "zh": "8563446",
@@ -11526,6 +20416,8 @@ const FRENCH_COLLOCATIONS_DATA = {
           "La petite fille a fondu en larmes. 这个年轻的女孩泪流满面。"
         ],
         "sur": [
+          "fondre sur qqn/qqch 扑向（猛禽等）",
+          "L'aigle a fondu sur sa proie. 老鹰向猎物猛扑下去。",
           "Un plat en plastique fondra sur la cuisinière. 塑料盘子在烤箱里会化的。"
         ]
       },
@@ -11549,6 +20441,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "13239",
@@ -11610,6 +20510,237 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "330976",
             "zh": "336445",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "former": {
+      "display": "former",
+      "prepositions": {
+        "à": [
+          "former qqn à qqch 培训某人做某事",
+          "L'entreprise forme ses employés aux nouvelles technologies. 公司对员工进行新技术培训。",
+          "Cette école forme les jeunes aux métiers du bois. 这所学校培养年轻人从事木工行业。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "fouiller": {
+      "display": "fouiller",
+      "prepositions": {
+        "dans": [
+          "fouiller dans qqch 在某处翻找",
+          "Ne fouille pas dans mon sac ! 别翻我的包！",
+          "Il a fouillé dans ses poches pour trouver ses clés. 他在口袋里摸来摸去找钥匙。",
+          "J'ai fouillé dans les archives de la mairie. 我在市政厅的档案里翻查过。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "fouiner": {
+      "display": "fouiner",
+      "prepositions": {
+        "dans": [
+          "fouiner dans qqch 在某处东翻西找、打探",
+          "Elle aime fouiner dans les brocantes le dimanche. 她喜欢星期天去旧货市场淘宝。",
+          "Qui a fouiné dans mes tiroirs ? 谁翻了我的抽屉？"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "fourmiller": {
+      "display": "fourmiller",
+      "prepositions": {
+        "de": [
+          "fourmiller de qqch 充满（大量某物）",
+          "Ce texte fourmille de fautes d'orthographe. 这篇文章满是拼写错误。",
+          "Le marché fourmillait de touristes ce matin. 今天早上集市上游客熙熙攘攘。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "fournir": {
+      "display": "fournir",
+      "prepositions": {
+        "à": [
+          "fournir qqch à qqn 向某人提供某物",
+          "L'école fournit les livres à tous les élèves. 学校为所有学生提供课本。",
+          "Il faudra fournir une photo d'identité à l'administration. 需要向行政部门提交一张证件照。",
+          "Ils fournirent à la bibliothèque de nombreux livres. 他们给图书馆提供了很多书。",
+          "Cette école fournit des manuels aux étudiants. 这所学校为学生提供教科书。",
+          "Ils nous ont fourni à manger. 他们为我们提供了食物。"
+        ],
+        "en": [
+          "fournir qqn en qqch 向某人供应某物",
+          "Cette ferme fournit tout le village en lait frais. 这家农场为全村供应新鲜牛奶。",
+          "Une entreprise chinoise fournit l'usine en pièces détachées. 一家中国企业为这家工厂供应零部件。",
+          "Les abeilles nous fournissent en miel. 蜜蜂为我们提供蜂蜜。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "en"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "333740",
+            "zh": "333746",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "334937",
+            "zh": "334982",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "11786918",
+            "zh": "1455160",
+            "eng": "306654"
+          }
+        ],
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "135297",
+            "zh": "427623",
+            "eng": ""
+          }
+        ]
+      },
+      "notes": {
+        "en": "fournir qqn en qqch = 为某人供应某物；fournir qqch à qqn = 把某物提供给某人",
+        "à": "fournir qqch à qqn：直接宾语是物品，à 引出接受者；fournir qqn en qqch：直接宾语是接受者，en 引出物品（多指长期供货）"
+      }
+    },
+    "fourrer": {
+      "display": "fourrer",
+      "prepositions": {
+        "dans": [
+          "fourrer qqch dans qqch 把某物塞进某处（口）",
+          "Il a fourré ses vêtements sales dans son sac. 他把脏衣服胡乱塞进了包里。",
+          "Arrête de fourrer ton nez dans mes affaires ! 别再管我的闲事了！"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -11738,10 +20869,41 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "fraterniser": {
+      "display": "fraterniser",
+      "prepositions": {
+        "avec": [
+          "fraterniser avec qqn 与某人亲如兄弟、打成一片",
+          "Les soldats ont fraternisé avec les habitants du village. 士兵们和村民打成了一片。",
+          "Il refuse de fraterniser avec l'ennemi. 他拒绝与敌人称兄道弟。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "frissonner": {
       "display": "frissonner",
       "prepositions": {
         "de": [
+          "frissonner de qqch 因某事发抖",
+          "Elle frissonnait de peur en écoutant l'histoire. 听着这个故事，她吓得直发抖。",
           "Je frissonne de froid. 我的身体被冻得瑟瑟发抖。"
         ]
       },
@@ -11751,10 +20913,100 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "11237948",
             "zh": "8800808",
             "eng": "10657438"
+          }
+        ]
+      }
+    },
+    "frotter": {
+      "display": "frotter",
+      "prepositions": {
+        "avec": [
+          "frotter qqch avec qqch 用某物擦某物",
+          "Frotte la casserole avec une éponge et un peu de sel. 用海绵加一点盐擦洗锅子。",
+          "Elle frottait les vitres avec un vieux journal. 她用旧报纸擦窗玻璃。"
+        ],
+        "contre": [
+          "frotter qqch contre qqch 把某物在某物上摩擦",
+          "Le chat frotte sa tête contre mes jambes. 猫用头蹭我的腿。",
+          "Il a frotté deux pierres l'une contre l'autre pour faire du feu. 他把两块石头互相摩擦来生火。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec",
+        "contre"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "avec": "frotter avec = 用……擦；frotter contre = 在……上蹭",
+        "contre": "frotter qqch contre qqch = 让某物与另一物相蹭；frotter qqch avec qqch = 用工具擦洗"
+      }
+    },
+    "frémir": {
+      "display": "frémir",
+      "prepositions": {
+        "de": [
+          "frémir de qqch 因某事颤抖",
+          "Je frémis d'horreur rien qu'en y pensant. 光是想想我就不寒而栗。",
+          "Elle frémissait d'impatience avant le départ. 出发前她急不可耐，浑身发颤。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -11815,10 +21067,48 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "fusionner": {
+      "display": "fusionner",
+      "prepositions": {
+        "avec": [
+          "fusionner avec qqch 与某机构合并",
+          "Notre banque va fusionner avec un groupe allemand. 我们银行将与一家德国集团合并。",
+          "La commune a fusionné avec sa voisine en 2019. 这个市镇于二〇一九年与邻镇合并。",
+          "La Banque Mitsubishi a fusionné avec la Banque de Tokyo. 三菱银行和东京银行合并了。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "8648191",
+            "zh": "596738",
+            "eng": "245007"
+          }
+        ]
+      }
+    },
     "fâcher": {
       "display": "fâcher",
       "prepositions": {
         "avec": [
+          "se fâcher avec qqn 与某人闹翻",
+          "Il s'est fâché avec son frère pour une histoire d'héritage. 他因为遗产的事和哥哥闹翻了。",
           "Pourquoi es-tu fâché avec lui ? 你为什么跟他生气？"
         ],
         "contre": [
@@ -11834,6 +21124,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "839495",
@@ -11873,7 +21171,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "féliciter",
       "prepositions": {
         "de": [
-          "féliciter qqn de qqch 为某事祝贺某人"
+          "féliciter qqn de qqch 为某事祝贺某人",
+          "Je vous félicite de votre promotion. 祝贺您升职。"
         ],
         "pour": [
           "Il me félicita pour mon succès. 他为我的成功恭贺我。",
@@ -11888,6 +21187,10 @@ const FRENCH_COLLOCATIONS_DATA = {
         "de": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ],
@@ -11919,10 +21222,12 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Si je gagne à la loterie, je pourrai avoir la belle vie. 如果我中了彩劵，就一辈子衣食无忧了。"
         ],
         "en": [
-          "gagner en qualité 在质量上有所提升"
+          "gagner en qualité 在质量上有所提升",
+          "Avec l'âge, ce vin gagne en saveur. 这种葡萄酒越陈越香。"
         ],
         "contre": [
-          "gagner contre qqn 战胜某人"
+          "gagner contre qqn 战胜某人",
+          "Notre équipe a gagné contre les favoris. 我们队战胜了夺冠热门。"
         ]
       },
       "prepositionOrder": [
@@ -11971,11 +21276,19 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ],
         "contre": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -11995,13 +21308,71 @@ const FRENCH_COLLOCATIONS_DATA = {
         }
       ]
     },
+    "garantir": {
+      "display": "garantir",
+      "prepositions": {
+        "à": [
+          "garantir qqch à qqn 向某人保证某事",
+          "Le vendeur a garanti à ma mère que la machine durerait dix ans. 售货员向我母亲保证这台机器能用十年。",
+          "L'État doit garantir à chaque enfant l'accès à l'école. 国家必须保证每个孩子都能上学。"
+        ],
+        "contre": [
+          "garantir qqch contre qqch 保证某物不受某事损害",
+          "Ce contrat vous garantit contre le vol et l'incendie. 这份合同为您提供防盗和火灾保障。",
+          "Cette assurance garantit la maison contre les inondations. 这份保险为房屋提供水灾保障。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "contre"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "contre": "garantir qqch contre qqch = 保障某物不受（风险）损害；garantir qqch à qqn = 向某人担保某事",
+        "à": "garantir à qqn = 向某人保证；garantir contre = 防范某种风险"
+      }
+    },
     "garder": {
       "display": "garder",
       "prepositions": {
         "en": [
+          "garder qqn/qqch en + état 使某人（某物）保持某种状态",
+          "Les médecins l'ont gardé en vie grâce à une machine. 医生靠一台机器维持着他的生命。",
           "Gardez en mémoire ce qu'il a dit ! 你要好好记住他的话。"
         ],
         "pour": [
+          "garder qqch pour qqn / pour soi 为某人留着某物；不对外说",
+          "Garde une part de gâteau pour ta sœur, elle rentre tard. 给你妹妹留一块蛋糕，她回来得晚。",
+          "Il garde toujours ses soucis pour lui. 他总把烦恼藏在心里。",
           "Veuillez le garder pour vous. 请保密。"
         ]
       },
@@ -12012,6 +21383,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "en": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "7634758",
             "zh": "1194728",
@@ -12019,6 +21398,18 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1835343",
@@ -12040,6 +21431,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "garer",
       "prepositions": {
         "dans": [
+          "garer sa voiture dans un lieu 把车停在某处",
+          "J'ai garé la voiture dans le parking souterrain. 我把车停在了地下停车场。",
           "Tu ne peux pas te garer dans cette rue. 这条街不准停车。"
         ]
       },
@@ -12049,10 +21442,47 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "4244454",
             "zh": "2882913",
             "eng": "2882914"
+          }
+        ]
+      }
+    },
+    "garnir": {
+      "display": "garnir",
+      "prepositions": {
+        "de": [
+          "garnir qqch de qqch 用某物装饰（填满）某物",
+          "Garnissez la tarte de fraises fraîches. 在馅饼上铺满新鲜草莓。",
+          "Les étagères étaient garnies de vieux livres. 书架上摆满了旧书。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -12074,34 +21504,6 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "2226662",
             "zh": "10371729",
             "eng": "2218508"
-          }
-        ]
-      }
-    },
-    "geler": {
-      "display": "geler",
-      "prepositions": {
-        "à": [
-          "L'eau gèle à 32 degrés Fahrenheit. 水在华氏32度结成冰。",
-          "L'eau gèle à zéro degré Celsius. 水在摄氏0度时结成冰。"
-        ]
-      },
-      "prepositionOrder": [
-        "à"
-      ],
-      "sources": {
-        "à": [
-          {
-            "kind": "direct",
-            "fr": "457155",
-            "zh": "798360",
-            "eng": ""
-          },
-          {
-            "kind": "indirect",
-            "fr": "895015",
-            "zh": "875046",
-            "eng": "270776"
           }
         ]
       }
@@ -12138,7 +21540,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "goûter",
       "prepositions": {
         "à": [
-          "goûter à qqch 尝一尝某物"
+          "goûter à qqch 尝一尝某物",
+          "Tu n'as même pas goûté à ta soupe ! 你连汤都没尝一口！"
         ]
       },
       "prepositionOrder": [
@@ -12148,6 +21551,10 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -12221,10 +21628,148 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "gratter": {
+      "display": "gratter",
+      "prepositions": {
+        "à": [
+          "gratter à la porte 挠门（用爪子等）",
+          "Le chien gratte à la porte pour sortir. 狗在挠门想出去。",
+          "J'ai entendu quelque chose gratter à la fenêtre cette nuit. 昨晚我听到有东西在挠窗户。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "graver": {
+      "display": "graver",
+      "prepositions": {
+        "sur": [
+          "graver qqch sur qqch 把某物刻在某物上",
+          "Ils ont fait graver leurs initiales sur leurs alliances. 他们在结婚戒指上刻了各自名字的首字母。",
+          "Quelqu'un a gravé un cœur sur le tronc de l'arbre. 有人在树干上刻了一颗心。"
+        ],
+        "dans": [
+          "être gravé dans la mémoire 铭刻在（记忆）中",
+          "Ce jour-là restera gravé dans ma mémoire. 那一天将永远铭刻在我的记忆中。",
+          "Son visage est gravé dans mon cœur. 他的面容深深印在我心里。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur",
+        "dans"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "grelotter": {
+      "display": "grelotter",
+      "prepositions": {
+        "de": [
+          "grelotter de froid 冻得发抖",
+          "Les enfants grelottaient de froid à l'arrêt de bus. 孩子们在公交车站冻得直哆嗦。",
+          "Il grelotte de fièvre depuis ce matin. 他从早上开始发烧打寒战。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "griffonner": {
+      "display": "griffonner",
+      "prepositions": {
+        "sur": [
+          "griffonner qqch sur qqch 在某物上潦草地写",
+          "Il a griffonné son numéro sur un ticket de métro. 他在一张地铁票上潦草地写下了自己的号码。",
+          "L'élève griffonnait des dessins sur son cahier. 那个学生在本子上乱涂乱画。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "grignoter": {
       "display": "grignoter",
       "prepositions": {
         "entre": [
+          "grignoter entre les repas 两餐之间吃零食",
+          "Mon médecin m'a interdit de grignoter entre les repas. 医生不许我在两餐之间吃零食。",
           "Si tu veux maigrir, tu devrais arrêter de grignoter entre les repas. 如果你想变瘦，就应该少点在正餐以外吃零食。"
         ]
       },
@@ -12233,6 +21778,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "entre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "181615",
@@ -12371,10 +21924,49 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "grossir": {
+      "display": "grossir",
+      "prepositions": {
+        "de": [
+          "grossir de tant de kilos 胖了（若干公斤）；增加",
+          "J'ai grossi de trois kilos pendant les fêtes. 过节期间我胖了三公斤。",
+          "Tu as grossi de combien depuis l'été ? 从夏天到现在你胖了多少？",
+          "J'ai grossi de deux kilos cet été. 这个夏天我胖了两公斤。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1002600",
+            "zh": "8832014",
+            "eng": "253557"
+          }
+        ]
+      }
+    },
     "grouiller": {
       "display": "grouiller",
       "prepositions": {
         "de": [
+          "grouiller de qqn/qqch 挤满（人、虫等）",
+          "La plage grouillait de monde ce week-end. 这个周末海滩上人山人海。",
+          "Cette vieille cave grouille de rats. 这个旧地窖里到处是老鼠。",
           "New York grouille de très hauts immeubles. 纽约充满着高楼大厦。"
         ]
       },
@@ -12383,6 +21975,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "9970081",
@@ -12437,6 +22041,42 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "11923375",
             "zh": "1321383",
             "eng": "324221"
+          }
+        ]
+      }
+    },
+    "gémir": {
+      "display": "gémir",
+      "prepositions": {
+        "de": [
+          "gémir de douleur 因（疼痛等）呻吟",
+          "Le blessé gémissait de douleur dans l'ambulance. 伤员在救护车里痛苦地呻吟。",
+          "Le vieux chien gémit de peur pendant l'orage. 雷雨时那只老狗吓得直哼哼。",
+          "Le soldat gémissait de douleur. 这名士兵痛苦地呻吟。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "746455",
+            "zh": "842308",
+            "eng": "320118"
           }
         ]
       }
@@ -12794,6 +22434,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "honorer",
       "prepositions": {
         "de": [
+          "honorer qqn de qqch 以某事给某人荣誉",
+          "Le président nous a honorés de sa présence. 总统亲临，令我们倍感荣幸。",
           "Je suis honoré de vous rencontrer. 我很荣幸能见到你。"
         ]
       },
@@ -12802,6 +22444,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "6874592",
@@ -12828,6 +22478,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "6759481",
             "zh": "1873139",
             "eng": "47491"
+          }
+        ]
+      }
+    },
+    "hurler": {
+      "display": "hurler",
+      "prepositions": {
+        "de": [
+          "hurler de qqch 因（痛苦、恐惧等）大叫",
+          "Le petit garçon hurlait de peur dans le noir. 小男孩在黑暗中吓得大叫。",
+          "Nous avons hurlé de rire devant ce film. 看这部电影时我们笑得前仰后合。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -12899,7 +22578,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "N'hésitez pas à poser des questions, je vous prie. 欢迎随时提问。"
         ],
         "entre": [
-          "hésiter entre deux choses 在两者之间犹豫"
+          "hésiter entre deux choses 在两者之间犹豫",
+          "J'hésite entre la robe rouge et la robe noire. 我在红裙子和黑裙子之间拿不定主意。",
+          "Il hésitait entre partir et rester. 他在走和留之间犹豫不决。"
         ]
       },
       "prepositionOrder": [
@@ -12953,6 +22634,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -12988,6 +22677,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1272906",
             "zh": "344818",
             "eng": "311057"
+          }
+        ]
+      }
+    },
+    "imbiber": {
+      "display": "imbiber",
+      "prepositions": {
+        "de": [
+          "imbiber qqch de qqch 使某物浸透某物",
+          "Imbibez les biscuits de café avant de les poser dans le plat. 先让饼干吸满咖啡，再放进盘里。",
+          "Le coton était imbibé d'alcool. 棉花浸透了酒精。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -13087,6 +22805,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "implorer",
       "prepositions": {
         "de": [
+          "implorer qqn de faire qqch 恳求某人做某事",
+          "Elle l'implora de ne pas partir. 她哀求他不要走。",
           "Il l'a implorée de le favoriser. 他请求她给予优待。"
         ]
       },
@@ -13096,10 +22816,117 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "331821",
             "zh": "332618",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "importer": {
+      "display": "importer",
+      "prepositions": {
+        "de": [
+          "importer qqch d'un pays 从某地进口某物",
+          "La France importe beaucoup de gaz de Norvège. 法国从挪威进口大量天然气。",
+          "Ces meubles sont importés d'Italie. 这些家具是从意大利进口的。",
+          "Nous avons importé de la viande d'Argentine. 我们从阿根廷进口了肉类。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "1330982",
+            "zh": "5911755",
+            "eng": ""
+          }
+        ]
+      }
+    },
+    "importuner": {
+      "display": "importuner",
+      "prepositions": {
+        "avec": [
+          "importuner qqn avec qqch 用某事打扰某人",
+          "Je suis désolé de vous importuner avec cette demande. 很抱歉拿这个请求来打扰您。",
+          "Il importune tout le monde avec ses histoires de pêche. 他逢人就讲他的钓鱼经，烦死人了。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "imposer": {
+      "display": "imposer",
+      "prepositions": {
+        "à": [
+          "imposer qqch à qqn 把某事强加给某人",
+          "Le directeur a imposé de nouveaux horaires à tout le personnel. 经理给全体员工强行规定了新的作息时间。",
+          "Je ne veux pas imposer mes idées à mes enfants. 我不想把自己的想法强加给孩子们。",
+          "Ce régime impose aux malades de manger sans sel. 这种饮食要求病人吃无盐食物。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -13146,10 +22973,41 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "imprimer": {
+      "display": "imprimer",
+      "prepositions": {
+        "sur": [
+          "imprimer qqch sur qqch 把某物印在某物上",
+          "Le logo est imprimé sur chaque tee-shirt. 每件短袖衫上都印着标志。",
+          "Peux-tu imprimer ce document sur du papier recyclé ? 你能用再生纸打印这份文件吗？"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "imprégner": {
       "display": "imprégner",
       "prepositions": {
         "de": [
+          "être imprégné de qqch 浸透；充满某物",
+          "Ses vêtements étaient imprégnés d'une odeur de tabac. 他的衣服上满是烟味。",
           "L'air était imprégné de l'odeur de la mer. 空气中充斥着海的气息。"
         ]
       },
@@ -13159,10 +23017,47 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "11185909",
             "zh": "12384714",
             "eng": "10131082"
+          }
+        ]
+      }
+    },
+    "imputer": {
+      "display": "imputer",
+      "prepositions": {
+        "à": [
+          "imputer qqch à qqn/qqch 把某事归咎于某人（某物）",
+          "On a imputé l'accident à une erreur humaine. 事故被归咎于人为失误。",
+          "Il impute tous ses échecs à la malchance. 他把所有的失败都归咎于运气不好。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -13207,6 +23102,158 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "inclure": {
+      "display": "inclure",
+      "prepositions": {
+        "dans": [
+          "inclure qqch dans qqch 把某物包括在某物中",
+          "Le petit-déjeuner est inclus dans le prix de la chambre. 房价包含早餐。",
+          "N'oublie pas de m'inclure dans la liste des invités. 别忘了把我列进客人名单。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "incomber": {
+      "display": "incomber",
+      "prepositions": {
+        "à": [
+          "incomber à qqn 落在某人身上（责任）",
+          "Cette décision incombe au directeur. 这个决定应由主任来做。",
+          "La charge de la preuve incombe à l'accusation. 举证责任在控方。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "incorporer": {
+      "display": "incorporer",
+      "prepositions": {
+        "à": [
+          "incorporer qqch à qqch 把某物加入（混入）某物",
+          "Incorporez délicatement les blancs d'œufs à la pâte. 把蛋白轻轻拌入面糊中。",
+          "Ses remarques ont été incorporées au rapport final. 他的意见被纳入了最终报告。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "inculper": {
+      "display": "inculper",
+      "prepositions": {
+        "de": [
+          "inculper qqn de qqch 指控某人犯有某罪",
+          "Le suspect a été inculpé de meurtre. 嫌疑人被控谋杀罪。",
+          "On l'a inculpé de fraude fiscale. 他被控逃税。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "inculquer": {
+      "display": "inculquer",
+      "prepositions": {
+        "à": [
+          "inculquer qqch à qqn 向某人灌输某事",
+          "Il faut inculquer aux enfants le goût de la lecture. 要培养孩子们对阅读的兴趣。",
+          "Ce professeur a inculqué à ses élèves l'amour des sciences. 这位老师向学生们灌输了对科学的热爱。",
+          "Les parents tentent d'inculquer à leurs enfants l'importance de l'honnêteté et du travail. 父母试图将诚实和工作的重要性灌输给孩子。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "817903",
+            "zh": "818828",
+            "eng": ""
+          }
+        ]
+      }
+    },
     "indiquer": {
       "display": "indiquer",
       "prepositions": {
@@ -13235,6 +23282,64 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "infliger": {
+      "display": "infliger",
+      "prepositions": {
+        "à": [
+          "infliger qqch à qqn 对某人施加（惩罚等）",
+          "Le juge a infligé une lourde amende à l'entreprise. 法官对这家公司处以巨额罚款。",
+          "L'équipe locale a infligé aux visiteurs une défaite humiliante. 主队让客队遭受了一场屈辱的失败。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "influer": {
+      "display": "influer",
+      "prepositions": {
+        "sur": [
+          "influer sur qqch 影响某事",
+          "Le climat influe sur notre humeur. 气候会影响我们的情绪。",
+          "Ses conseils ont beaucoup influé sur ma décision. 他的建议对我的决定影响很大。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "informer": {
       "display": "informer",
       "prepositions": {
@@ -13243,6 +23348,8 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Elle lut la lettre et fut ainsi informée de son décès. 她读了信，由此得知他的死讯。"
         ],
         "sur": [
+          "informer qqn sur qqch 向某人介绍某事的情况",
+          "Ce site informe les voyageurs sur les conditions météo. 这个网站向旅客提供天气信息。",
           "Je suis bien informé sur ce sujet. 我对这件事知情。"
         ]
       },
@@ -13267,6 +23374,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "11481752",
             "zh": "817366",
@@ -13275,10 +23390,70 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "initier": {
+      "display": "initier",
+      "prepositions": {
+        "à": [
+          "initier qqn à qqch 引导某人入门某事",
+          "C'est mon grand-père qui m'a initié aux échecs. 是我祖父带我入门国际象棋的。",
+          "Cet atelier initie les enfants à la programmation. 这个工作坊引导孩子们入门编程。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "injecter": {
+      "display": "injecter",
+      "prepositions": {
+        "dans": [
+          "injecter qqch dans qqch 把某物注入某物",
+          "L'infirmière a injecté le vaccin dans le bras de l'enfant. 护士把疫苗注射到孩子的手臂里。",
+          "L'État a injecté des milliards dans l'économie. 国家向经济注入了数十亿资金。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "inonder": {
       "display": "inonder",
       "prepositions": {
         "de": [
+          "inonder qqn/qqch de qqch 使某处充斥某物",
+          "Les fans ont inondé la chanteuse de lettres. 歌迷们给这位女歌手寄来了雪片般的信。",
           "Je voyageais à travers les villages et les champs peuplés de cigales et inondés de rayons de soleil. 游荡在知了和阳光充斥的村舍田野"
         ]
       },
@@ -13287,6 +23462,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "13376567",
@@ -13356,6 +23539,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "inscrire",
       "prepositions": {
         "dans": [
+          "inscrire qqn dans qqch 给某人在某处报名、注册",
+          "Ils ont inscrit leur fils dans une école privée. 他们给儿子报了一所私立学校。",
           "Je me suis inscrit dans cette école il y a deux ans. 两年前我在这个学校注册了。"
         ]
       },
@@ -13364,6 +23549,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "472741",
@@ -13443,6 +23636,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "inspirer",
       "prepositions": {
         "de": [
+          "s'inspirer de qqch 从某事中获得灵感",
+          "Le peintre s'est inspiré des paysages de Provence. 这位画家从普罗旺斯的风景中汲取灵感。",
+          "Ce roman s'inspire de la vie de l'auteur. 这部小说取材于作者的亲身经历。",
           "Cette histoire est inspirée de faits réels. 这个故事是基于真实事件写的。"
         ]
       },
@@ -13451,6 +23647,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "13389094",
@@ -13464,6 +23672,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "installer",
       "prepositions": {
         "sur": [
+          "installer qqch sur qqch 把某物安装在某物上",
+          "J'ai installé une nouvelle application sur mon téléphone. 我在手机上装了一个新应用。",
           "De nombreux radars ont été installés sur le bord de la route. 路边装了许多雷达。"
         ]
       },
@@ -13473,10 +23683,76 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "900323",
             "zh": "900301",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "insérer": {
+      "display": "insérer",
+      "prepositions": {
+        "dans": [
+          "insérer qqch dans qqch 把某物插入某物",
+          "Insérez votre carte dans le lecteur et tapez votre code. 请将卡插入读卡器并输入密码。",
+          "J'ai inséré un graphique dans mon rapport. 我在报告里插入了一张图表。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "intercéder": {
+      "display": "intercéder",
+      "prepositions": {
+        "pour": [
+          "intercéder pour qqn 为某人求情",
+          "Sa mère a intercédé pour lui auprès du directeur. 他母亲为他向校长求情。",
+          "Personne n'a voulu intercéder pour le prisonnier. 没有人愿意为这名囚犯说情。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -13542,10 +23818,70 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "interférer": {
+      "display": "interférer",
+      "prepositions": {
+        "avec": [
+          "interférer avec qqch 干扰某事",
+          "Ce médicament peut interférer avec la pilule. 这种药可能会影响避孕药的效果。",
+          "Les téléphones peuvent interférer avec les appareils de l'avion. 手机可能会干扰飞机上的设备。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "interroger": {
+      "display": "interroger",
+      "prepositions": {
+        "sur": [
+          "interroger qqn sur qqch 就某事询问某人",
+          "La police l'a interrogé sur son emploi du temps de la veille. 警察询问了他前一天的行踪。",
+          "Le professeur nous interrogera sur le chapitre trois. 老师会考问我们第三章的内容。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "intervenir": {
       "display": "intervenir",
       "prepositions": {
         "dans": [
+          "intervenir dans qqch 介入；干预某事",
+          "La police a dû intervenir dans la bagarre. 警察不得不介入这场斗殴。",
           "Vous n'avez aucun droit d'intervenir dans les affaires des autres. 你没有干涉他人事务的权力。"
         ]
       },
@@ -13554,6 +23890,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "459219",
@@ -13567,6 +23911,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "introduire",
       "prepositions": {
         "dans": [
+          "introduire qqch dans qqch 把某物放入（引入）某处",
+          "Introduisez la pièce dans la fente. 把硬币投进投币口。",
           "Un cambrioleur s'est introduit dans sa maison. 一个窃贼闯进了他的房子。"
         ]
       },
@@ -13575,6 +23921,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "8089110",
@@ -13680,6 +24034,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "investir": {
+      "display": "investir",
+      "prepositions": {
+        "dans": [
+          "investir dans qqch 投资于某事",
+          "Il a investi toutes ses économies dans l'immobilier. 他把全部积蓄都投到了房地产上。",
+          "La ville va investir dans les transports publics. 这座城市将投资公共交通。",
+          "Investir dans l'éducation, c'est préparer l'avenir. 投资教育就是为未来做准备。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "inviter": {
       "display": "inviter",
       "prepositions": {
@@ -13741,6 +24129,69 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "isoler": {
+      "display": "isoler",
+      "prepositions": {
+        "de": [
+          "isoler qqn/qqch de qqch 把某人（某物）与外界隔开",
+          "La neige a isolé le village du reste du pays. 大雪使这个村子与外界隔绝了。",
+          "Il faut isoler les personnes contagieuses des autres patients. 必须把有传染性的人与其他病人隔离。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "jaillir": {
+      "display": "jaillir",
+      "prepositions": {
+        "de": [
+          "jaillir de qqch 从某处喷出、涌出",
+          "L'eau jaillissait du tuyau cassé. 水从破裂的管子里喷涌而出。",
+          "Des flammes ont jailli de la fenêtre du deuxième étage. 火焰从三楼的窗户里窜了出来。",
+          "Un cri jaillit de la foule. 人群中爆发出一声叫喊。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "jeter": {
       "display": "jeter",
       "prepositions": {
@@ -13749,6 +24200,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Il déchira sa lettre en petits morceaux et les jeta par la fenêtre. 他把信撕成碎片，扔出了窗外。"
         ],
         "dans": [
+          "jeter qqch dans qqch 把某物扔进某处",
+          "Ne jette pas de papiers dans la rivière ! 别往河里扔纸！",
+          "Il a jeté la lettre dans le feu sans la lire. 他没看就把信扔进了火里。",
           "Le démon se saisit de ma sœur et la jeta dans un puits sans fond, avec un ricanement. 恶魔一把抓住了我的妹妹，一边狰狞地狂笑着，一边把她丢进了一个无底洞里。"
         ]
       },
@@ -13772,6 +24226,18 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "799758",
@@ -13834,6 +24300,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "469905",
             "zh": "472950",
             "eng": "16440"
+          }
+        ]
+      }
+    },
+    "joncher": {
+      "display": "joncher",
+      "prepositions": {
+        "de": [
+          "être jonché de qqch 撒满某物（地面）",
+          "Après la fête, le sol était jonché de confettis. 派对结束后，地上撒满了彩纸屑。",
+          "Le chemin est jonché de feuilles mortes en automne. 秋天，小路上铺满了落叶。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "jongler": {
+      "display": "jongler",
+      "prepositions": {
+        "avec": [
+          "jongler avec qqch 用某物抛接杂耍；同时应付",
+          "Le clown jongle avec cinq balles. 小丑用五个球耍杂技。",
+          "Elle jongle avec son travail, ses enfants et ses études. 她要同时兼顾工作、孩子和学业。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -14037,6 +24561,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "jucher": {
+      "display": "jucher",
+      "prepositions": {
+        "sur": [
+          "être juché sur qqch 高高地坐在（站在）某物上",
+          "L'enfant était juché sur les épaules de son père. 孩子骑在爸爸的肩膀上。",
+          "Des pigeons étaient juchés sur le toit de l'église. 几只鸽子栖在教堂屋顶上。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "juger": {
       "display": "juger",
       "prepositions": {
@@ -14100,9 +24653,49 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "justifier": {
+      "display": "justifier",
+      "prepositions": {
+        "de": [
+          "justifier de qqch 证明（身份、资历等）",
+          "Les candidats doivent justifier de trois ans d'expérience. 应聘者须证明自己有三年工作经验。",
+          "À la frontière, il faut justifier de son identité. 在边境必须出示身份证明。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "laisser": {
       "display": "laisser",
       "prepositions": {
+        "à": [
+          "laisser qqch à qqn 把某物留给（让给）某人",
+          "Laisse ta place à cette dame âgée. 把座位让给这位老太太。",
+          "Elle a laissé ses clés à la voisine. 她把钥匙留给了邻居。",
+          "Elle ne laisse rien au hasard. 她做事很周到。",
+          "Il laissa à sa fille une grande fortune. 他留给他女儿一大笔财产。",
+          "Laissons nos clés aux voisins. 把我们的钥匙留给邻居吧。",
+          "Il laissa sa fortune à son fils. 他把他的财产留给了他儿子。",
+          "Elle laissa sa place à une personne âgée. 她把她的座位让给了一个老人。",
+          "Il fit preuve de bonnes manières en laissant sa place à une personne âgée. 他把座位让给了一个老人，这显示出他很有礼貌。"
+        ],
         "en": [
           "Ils m'ont laissé m'en aller. 他们让我走。",
           "Je vous laisserai vous en débrouiller. 我把这个留给你。",
@@ -14114,10 +24707,61 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "en",
         "sur"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "13173401",
+            "zh": "13551359",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "333795",
+            "zh": "333797",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "799110",
+            "zh": "799211",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "847013",
+            "zh": "847877",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "847019",
+            "zh": "847867",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "847323",
+            "zh": "847733",
+            "eng": ""
+          }
+        ],
         "en": [
           {
             "kind": "indirect",
@@ -14154,10 +24798,72 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "lancer": {
+      "display": "lancer",
+      "prepositions": {
+        "à": [
+          "lancer qqch à qqn 把某物扔给某人",
+          "Il a lancé les clés à son frère par la fenêtre. 他从窗口把钥匙扔给了弟弟。",
+          "L'enfant lance du pain aux canards. 孩子给鸭子扔面包。",
+          "Il lança une pierre au chien. 他朝着狗扔了块石头。"
+        ],
+        "sur": [
+          "lancer qqch sur qqn/qqch 把某物砸向某人（某物）",
+          "Des manifestants ont lancé des pierres sur la police. 示威者向警察扔石头。",
+          "Un inconnu a lancé des œufs sur la voiture du ministre. 一个陌生人朝部长的车扔鸡蛋。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "sur"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "131012",
+            "zh": "1450406",
+            "eng": "290758"
+          }
+        ],
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "sur": "lancer sur = 朝……砸去；lancer à = 抛给（对方接）",
+        "à": "lancer qqch à qqn = 扔给某人（让对方接住）；lancer qqch sur qqn = 砸向某人（带敌意）"
+      }
+    },
     "languir": {
       "display": "languir",
       "prepositions": {
         "de": [
+          "se languir de qqn 思念某人",
+          "Elle se languit de son pays natal. 她思念着故乡。",
           "Je commence à me languir de ma petite amie. 我开始想念我的女朋友。"
         ]
       },
@@ -14166,6 +24872,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "1079961",
@@ -14179,6 +24893,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "larguer",
       "prepositions": {
         "sur": [
+          "larguer qqch sur qqch 从空中投下某物",
+          "Des avions ont largué des vivres sur la région isolée. 飞机向这个与外界隔绝的地区空投了食物。",
           "La première bombe atomique a été larguée sur le Japon. 第一颗原子弹投放到日本。"
         ]
       },
@@ -14187,6 +24903,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "890864",
@@ -14245,6 +24969,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "libérer": {
+      "display": "libérer",
+      "prepositions": {
+        "de": [
+          "libérer qqn de qqch 使某人摆脱某事",
+          "Ce nouveau logiciel nous libère des tâches répétitives. 这个新软件把我们从重复性工作中解放了出来。",
+          "Les pompiers ont libéré le conducteur de sa voiture écrasée. 消防员把司机从压扁的车里救了出来。",
+          "Après l'examen, je me suis senti libéré d'un grand poids. 考完试后，我感到如释重负。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "lier": {
       "display": "lier",
       "prepositions": {
@@ -14280,10 +25038,48 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "ligoter": {
+      "display": "ligoter",
+      "prepositions": {
+        "à": [
+          "ligoter qqn à qqch 把某人绑在某物上",
+          "Les bandits l'ont ligoté à une chaise. 强盗把他绑在了椅子上。",
+          "On avait ligoté le prisonnier à un poteau. 囚犯被绑在一根柱子上。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "lire": {
       "display": "lire",
       "prepositions": {
+        "à": [
+          "lire qqch à qqn 给某人读某物",
+          "Chaque soir, je lis une histoire à ma fille. 每天晚上我都给女儿读一个故事。",
+          "Le secrétaire a lu la lettre aux membres du comité. 秘书向委员会成员宣读了那封信。",
+          "J'aurai fini de lire ce roman au moment où tu viendras demain. 你明天来的时候，我就看完这本小说了。",
+          "J'ai lu à son sujet dans le journal. 我在报纸上读到有关他的消息。"
+        ],
         "sur": [
+          "lire qqch sur qqch 在某物上读出某事",
+          "On pouvait lire la déception sur son visage. 他脸上写满了失望。",
           "Je lis sur les lèvres. 我读唇语。"
         ],
         "dans": [
@@ -14292,11 +25088,46 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "sur",
         "dans"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "462051",
+            "zh": "819821",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "1360561",
+            "zh": "883311",
+            "eng": "258826"
+          }
+        ],
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "5254223",
@@ -14324,6 +25155,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "livrer",
       "prepositions": {
         "à": [
+          "livrer qqn/qqch à qqn 把某人（某物）交给某人",
+          "Le suspect a été livré à la police. 嫌疑人被交给了警方。",
           "Nous avons appelé le restaurant pour qu'il vienne nous livrer à domicile. 我们打了电话叫饭店送外卖到我家。"
         ]
       },
@@ -14333,6 +25166,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "619562",
             "zh": "619555",
@@ -14341,9 +25182,159 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "loger": {
+      "display": "loger",
+      "prepositions": {
+        "dans": [
+          "loger dans un lieu 住在某处",
+          "Les joueurs logeront dans un hôtel près du stade. 球员们将住在体育场附近的一家酒店。",
+          "Nous avons logé dans une petite auberge de montagne. 我们住在一家山间小旅馆里。"
+        ],
+        "chez": [
+          "loger chez qqn 寄住在某人家",
+          "Pendant mes études, je logeais chez une vieille dame. 上学期间，我寄住在一位老太太家里。",
+          "Tu peux loger chez nous le temps de trouver un appartement. 在找到公寓之前，你可以住在我们家。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans",
+        "chez"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "chez": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "loucher": {
+      "display": "loucher",
+      "prepositions": {
+        "sur": [
+          "loucher sur qqch 眼馋某物（口）",
+          "Le petit louchait sur le gâteau au chocolat. 小家伙眼巴巴地盯着巧克力蛋糕。",
+          "Plusieurs entreprises louchent sur ce terrain. 好几家公司都盯上了这块地。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "louer": {
+      "display": "louer",
+      "prepositions": {
+        "à": [
+          "louer qqch à qqn 把某物租给某人",
+          "Ils louent leur appartement à des étudiants. 他们把公寓租给学生。",
+          "Mon oncle loue une chambre à un jeune couple. 我叔叔把一个房间租给了一对年轻夫妇。",
+          "Voulez-vous louer un vélo à Paris ? 您想在巴黎租辆自行车吗？",
+          "Il a décidé de louer sa propriété à cette compagnie. 他决定把他的土地租给那家公司。"
+        ],
+        "pour": [
+          "louer qqn pour qqch 因某事称赞某人",
+          "Tout le monde a loué l'infirmière pour son dévouement. 大家都称赞这位护士的敬业精神。",
+          "Le critique loue le réalisateur pour son audace. 评论家称赞导演的大胆。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "pour"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "8584463",
+            "zh": "10457815",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "332089",
+            "zh": "510877",
+            "eng": ""
+          }
+        ],
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "pour": "louer qqn pour qqch = 赞扬某人；louer qqch à qqn = 出租",
+        "à": "louer qqch à qqn = 把东西租给某人（出租）；louer qqn pour qqch = 因某事称赞某人（louer 另一义）"
+      }
+    },
     "lutter": {
       "display": "lutter",
       "prepositions": {
+        "pour": [
+          "lutter pour qqch 为某事而斗争",
+          "Ces ouvriers luttent pour de meilleures conditions de travail. 这些工人为改善工作条件而斗争。",
+          "Le blessé a lutté pour survivre pendant des heures. 伤者挣扎了好几个小时，拼命活下来。"
+        ],
         "contre": [
           "lutter contre qqch 与某事作斗争",
           "On ne peut pas lutter contre son destin. 人算不如天算。",
@@ -14351,9 +25342,24 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "pour",
         "contre"
       ],
       "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "contre": [
           {
             "kind": "curated",
@@ -14372,12 +25378,18 @@ const FRENCH_COLLOCATIONS_DATA = {
             "eng": "300140"
           }
         ]
+      },
+      "notes": {
+        "contre": "lutter contre = 与……作斗争、对抗；lutter pour = 为……而奋斗",
+        "pour": "lutter pour = 为争取某事而斗争；lutter contre = 与某事（疾病、贫困）作斗争"
       }
     },
     "léguer": {
       "display": "léguer",
       "prepositions": {
         "à": [
+          "léguer qqch à qqn 把某物遗赠给某人",
+          "Ma tante a légué sa maison à une association. 我姑妈把房子遗赠给了一个协会。",
           "Il a légué sa fortune à son fils. 他把财产留给了他的儿子。"
         ]
       },
@@ -14387,12 +25399,131 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "12485081",
             "zh": "847889",
             "eng": "12476575"
           }
         ]
+      }
+    },
+    "lésiner": {
+      "display": "lésiner",
+      "prepositions": {
+        "sur": [
+          "lésiner sur qqch 在某方面吝啬",
+          "Ne lésine pas sur la qualité des ingrédients. 在食材质量上可别省钱。",
+          "Pour son mariage, il n'a pas lésiné sur les dépenses. 他的婚礼可谓不惜工本。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "maigrir": {
+      "display": "maigrir",
+      "prepositions": {
+        "de": [
+          "maigrir de tant de kilos 瘦了（若干公斤）",
+          "Elle a maigri de cinq kilos en deux mois. 她两个月瘦了五公斤。",
+          "Mon grand-père a maigri de dix kilos pendant son séjour à l'hôpital. 我爷爷住院期间瘦了十公斤。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "manifester": {
+      "display": "manifester",
+      "prepositions": {
+        "pour": [
+          "manifester pour qqch 为争取某事而示威",
+          "Les infirmières manifestent pour de meilleurs salaires. 护士们上街示威要求提高工资。",
+          "Nous avons manifesté pour la défense du climat. 我们为保护气候举行了游行。"
+        ],
+        "contre": [
+          "manifester contre qqch 示威反对某事",
+          "Des milliers d'étudiants ont manifesté contre la réforme. 数千名学生举行示威反对这项改革。",
+          "Les agriculteurs manifestent contre la baisse des prix. 农民们示威抗议价格下跌。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour",
+        "contre"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "contre": "manifester contre = 示威反对；manifester pour = 示威争取、声援",
+        "pour": "manifester pour = 为争取某事游行；manifester contre = 为反对某事游行"
       }
     },
     "manquer": {
@@ -14774,6 +25905,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "mentionner": {
+      "display": "mentionner",
+      "prepositions": {
+        "à": [
+          "mentionner qqch à qqn 向某人提及某事",
+          "Tu n'as rien mentionné à tes parents ? 你什么都没跟父母提吗？",
+          "Il a mentionné ce problème au médecin lors de sa visite. 他就诊时向医生提到了这个问题。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "mentir": {
       "display": "mentir",
       "prepositions": {
@@ -14978,9 +26138,102 @@ const FRENCH_COLLOCATIONS_DATA = {
         }
       ]
     },
+    "militer": {
+      "display": "militer",
+      "prepositions": {
+        "pour": [
+          "militer pour qqch 为某事奔走、斗争",
+          "Elle milite depuis vingt ans pour les droits des femmes. 她二十年来一直为妇女权益奔走。",
+          "Cette association milite pour la protection des abeilles. 这个协会致力于保护蜜蜂。"
+        ],
+        "contre": [
+          "militer contre qqch 为反对某事而斗争",
+          "Il milite contre la peine de mort. 他致力于反对死刑。",
+          "Nous militons contre le gaspillage alimentaire. 我们积极反对浪费粮食。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour",
+        "contre"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "contre": "militer contre = 反对；militer pour = 支持、争取",
+        "pour": "militer pour = 为争取某事而斗争；militer contre = 为反对某事而斗争"
+      }
+    },
+    "miser": {
+      "display": "miser",
+      "prepositions": {
+        "sur": [
+          "miser sur qqn/qqch 押注于；指望",
+          "J'ai misé dix euros sur le cheval numéro sept. 我在七号马身上押了十欧元。",
+          "Le club mise sur ses jeunes joueurs cette saison. 这个赛季俱乐部把希望寄托在年轻球员身上。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "monter": {
       "display": "monter",
       "prepositions": {
+        "à": [
+          "monter à cheval / à vélo 骑（马、自行车）",
+          "Ma fille apprend à monter à cheval. 我女儿在学骑马。",
+          "Mon grand-père monte encore à vélo à quatre-vingts ans. 我爷爷八十岁了还骑自行车。",
+          "Savez-vous monter à cheval ? 您会骑马吗？",
+          "La route monte à pic à partir d'ici. 道路从这里开始陡然上升。",
+          "Je suis monté au sommet du Mont Fuji. 我登上了富士山顶。",
+          "Monte à l'étage et descends-moi ma malle. 上楼把我的旅行箱拿下来。",
+          "Le garçon est monté à cheval pour la première fois. 男孩第一次骑了马。",
+          "À chaque fois qu'il monte à Tokyo, il passe la nuit chez nous. 他每次来东京的时候都会在我们这儿过夜。"
+        ],
         "sur": [
           "Elle est montée sur un chameau. 她骑着骆驼。",
           "Si tu veux atteindre le placard du haut tu dois monter sur un tabouret. 站在这个凳子上的话，你可以摸到衣柜顶。"
@@ -14996,10 +26249,61 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "sur",
         "dans"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "8940",
+            "zh": "472381",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "604709",
+            "zh": "1325249",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "127863",
+            "zh": "411703",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "801327",
+            "zh": "798239",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "879831",
+            "zh": "335888",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "924137",
+            "zh": "10324289",
+            "eng": ""
+          }
+        ],
         "sur": [
           {
             "kind": "direct",
@@ -15054,6 +26358,68 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "334272",
             "zh": "334266",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "montrer": {
+      "display": "montrer",
+      "prepositions": {
+        "à": [
+          "montrer qqch à qqn 给某人看某物",
+          "Montre tes photos de vacances à ta grand-mère. 把你的假期照片给奶奶看看。",
+          "Le guide a montré aux touristes le chemin du musée. 导游给游客们指了去博物馆的路。",
+          "Elle a montré à son fils comment faire un nœud de cravate. 她教儿子怎么打领带。",
+          "L'as-tu montré à tes parents ? 你给你父母看了吗？",
+          "Elle s'est montrée à la hauteur de nos espérances. 她没有辜负我们的期望。",
+          "Tout le monde est une lune et a un côté obscur qu'il ne montre à personne. 每一个人像月亮一样，有一个不会给任何人看的黑面。",
+          "Je n'ai montré ces photos à personne. 我没有泄露这些照片。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "5933721",
+            "zh": "871087",
+            "eng": "41920"
+          },
+          {
+            "kind": "indirect",
+            "fr": "483199",
+            "zh": "332813",
+            "eng": "314475"
+          },
+          {
+            "kind": "indirect",
+            "fr": "425021",
+            "zh": "1351251",
+            "eng": "371000"
+          },
+          {
+            "kind": "indirect",
+            "fr": "9706679",
+            "zh": "9419119",
+            "eng": "6337712"
           }
         ]
       }
@@ -15138,15 +26504,82 @@ const FRENCH_COLLOCATIONS_DATA = {
     "mourir": {
       "display": "mourir",
       "prepositions": {
+        "de": [
+          "mourir de qqch 死于某事；（夸张）……得要命",
+          "Des milliers de personnes meurent de faim chaque jour. 每天都有成千上万的人死于饥饿。",
+          "Je meurs de soif, tu as de l'eau ? 我渴死了，你有水吗？",
+          "Son grand-père est mort d'une crise cardiaque. 他祖父死于心脏病发作。",
+          "Je meurs de soif. 我渴得要命。",
+          "Je meurs de faim ! 我饿死了！",
+          "Elle mourut d'un cancer. 她死于癌症。",
+          "C'est à mourir de rire ! 这个笑死了！",
+          "Il ne va pas mourir de faim. 他不会饿死。",
+          "Je meurs d'envie de voir Paris. 我真的好想去巴黎看看。"
+        ],
         "dans": [
           "Mon grand-père mourut dans la même pièce que celle où il était né. 我祖父死在他出生的同一间屋子里。",
           "Elle est morte dans ses bras. 她死在他的怀里。"
         ]
       },
       "prepositionOrder": [
+        "de",
         "dans"
       ],
       "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "13041",
+            "zh": "400450",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "3574",
+            "zh": "388516",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "474742",
+            "zh": "476627",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "1815599",
+            "zh": "1815627",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "10737626",
+            "zh": "10737628",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "390490",
+            "zh": "402967",
+            "eng": ""
+          }
+        ],
         "dans": [
           {
             "kind": "direct",
@@ -15159,6 +26592,122 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "3279450",
             "zh": "3784087",
             "eng": "2815084"
+          }
+        ]
+      }
+    },
+    "multiplier": {
+      "display": "multiplier",
+      "prepositions": {
+        "par": [
+          "multiplier qqch par un nombre 用某数乘；使增加若干倍",
+          "Multiplie ce nombre par trois et tu obtiens le résultat. 把这个数乘以三就得到结果。",
+          "Les loyers ont été multipliés par deux en dix ans. 十年间房租翻了一番。"
+        ]
+      },
+      "prepositionOrder": [
+        "par"
+      ],
+      "sources": {
+        "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "munir": {
+      "display": "munir",
+      "prepositions": {
+        "de": [
+          "munir qqn/qqch de qqch 给某人（某物）配备某物",
+          "Munissez-vous d'une pièce d'identité avant de venir. 来之前请带好身份证件。",
+          "Toutes les chambres sont munies d'un coffre-fort. 所有房间都配有保险箱。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "murmurer": {
+      "display": "murmurer",
+      "prepositions": {
+        "à": [
+          "murmurer qqch à qqn 对某人低声说某事",
+          "Il a murmuré quelque chose à l'oreille de sa voisine. 他在邻座女士耳边低声说了什么。",
+          "Elle murmura à son bébé une vieille chanson. 她轻声给宝宝哼了一首老歌。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "muter": {
+      "display": "muter",
+      "prepositions": {
+        "à": [
+          "muter qqn à un lieu 把某人调往某地",
+          "Mon père a été muté à Lyon l'année dernière. 我父亲去年被调到了里昂。",
+          "Elle a demandé à être mutée à Marseille pour se rapprocher de sa famille. 她申请调到马赛，以便离家人近些。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -15184,10 +26733,41 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "médire": {
+      "display": "médire",
+      "prepositions": {
+        "de": [
+          "médire de qqn 说某人坏话",
+          "Elle passe son temps à médire de ses voisins. 她整天说邻居的坏话。",
+          "Il ne faut pas médire des absents. 不要在背后说别人坏话。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "méditer": {
       "display": "méditer",
       "prepositions": {
         "sur": [
+          "méditer sur qqch 对某事深思",
+          "Le philosophe médite sur le sens de la vie. 哲学家思考人生的意义。",
           "Il a médité sur sa vie future. 他正在思考他未来的生活。"
         ]
       },
@@ -15196,6 +26776,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "6214196",
@@ -15209,6 +26797,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "méfier",
       "prepositions": {
         "de": [
+          "se méfier de qqch 对某事保持警惕",
+          "Méfie-toi des promesses trop belles. 对太美好的承诺要当心。",
           "Je me méfie de lui. 我觉得他有点可疑。"
         ]
       },
@@ -15218,10 +26808,81 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "8742857",
             "zh": "1567827",
             "eng": "283480"
+          }
+        ]
+      }
+    },
+    "mélanger": {
+      "display": "mélanger",
+      "prepositions": {
+        "avec": [
+          "mélanger qqch avec qqch 把某物和某物混合",
+          "Mélangez la farine avec les œufs, puis ajoutez le lait. 把面粉和鸡蛋拌匀，然后加入牛奶。",
+          "Il ne faut jamais mélanger l'alcool avec des médicaments. 绝对不要把酒和药混在一起吃。",
+          "Tu mélanges toujours mon nom avec celui de ma sœur. 你总是把我和我姐姐的名字搞混。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "mépriser": {
+      "display": "mépriser",
+      "prepositions": {
+        "pour": [
+          "mépriser qqn pour qqch 因某事看不起某人",
+          "On le méprisait pour sa lâcheté. 人们因他的懦弱而鄙视他。",
+          "Ne méprise personne pour son accent. 别因为口音看不起任何人。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -15380,6 +27041,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "naviguer",
       "prepositions": {
         "sur": [
+          "naviguer sur qqch 在（海上、网上）航行或浏览",
+          "Les pêcheurs naviguent sur cette mer depuis des siècles. 几个世纪以来，渔民们一直在这片海上航行。",
           "Elle passe carrément trop de temps à naviguer sur le Net. 她花实在太多的时间在网上冲浪。"
         ],
         "dans": [
@@ -15393,6 +27056,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "948097",
             "zh": "948096",
@@ -15405,6 +27076,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "331855",
             "zh": "336097",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "navrer": {
+      "display": "navrer",
+      "prepositions": {
+        "de": [
+          "être navré de qqch / de faire qqch 对某事深感抱歉",
+          "Je suis navré de vous avoir fait attendre. 很抱歉让您久等了。",
+          "Nous sommes navrés de cette erreur de facturation. 对于这一开票错误，我们深表歉意。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -15512,6 +27212,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "nommer": {
+      "display": "nommer",
+      "prepositions": {
+        "à": [
+          "nommer qqn à un poste 任命某人担任某职",
+          "Elle vient d'être nommée à la direction de l'hôpital. 她刚被任命为医院院长。",
+          "Le gouvernement l'a nommé à un poste important. 政府任命他担任一个要职。",
+          "Le conseil d'administration a décidé à l'unanimité de la nommer au poste de PDG. 董事会一致决定任命她为执行总裁。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "11299704",
+            "zh": "805191",
+            "eng": "1477102"
+          }
+        ]
+      }
+    },
     "noter": {
       "display": "noter",
       "prepositions": {
@@ -15519,6 +27255,8 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Il l'a noté pour ne pas l'oublier. 为了记住那件事，他把它写下来。"
         ],
         "dans": [
+          "noter qqch dans qqch 把某事记在某处",
+          "Note bien la date dans ton agenda. 把日期记在你的日程本上。",
           "Il le nota dans son carnet. 他把这记在他的笔记本上。"
         ]
       },
@@ -15537,6 +27275,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "333739",
             "zh": "333745",
@@ -15545,10 +27291,41 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "nouer": {
+      "display": "nouer",
+      "prepositions": {
+        "avec": [
+          "nouer des liens avec qqn 与某人建立关系",
+          "Pendant son séjour, il a noué des amitiés avec des pêcheurs du village. 逗留期间，他和村里的渔民交上了朋友。",
+          "L'entreprise cherche à nouer des contacts avec des partenaires asiatiques. 公司正在设法与亚洲伙伴建立联系。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "noyer": {
       "display": "noyer",
       "prepositions": {
         "dans": [
+          "noyer qqch dans qqch 把某物淹没在某物中",
+          "Il noie son chagrin dans l'alcool. 他借酒浇愁。",
           "On l'a noyée dans la baignoire. 有人把她淹死在浴缸里。"
         ]
       },
@@ -15557,6 +27334,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "2979050",
@@ -15604,7 +27389,7 @@ const FRENCH_COLLOCATIONS_DATA = {
       "prepositions": {
         "de": [
           "Aller à cette école nécessite beaucoup d'argent. 上这所学校需要很多钱。",
-          "La vérité nécessite peu de mots. 真理不需要很多的话。",
+          "La vérité nécessite peu de mots. 真理不需要繁复的言语。",
           "Jouer du piano nécessite de la dextérité manuelle. 弹钢琴需要手指灵活。"
         ]
       },
@@ -15630,6 +27415,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "12509598",
             "zh": "12487859",
             "eng": "5781623"
+          }
+        ]
+      }
+    },
+    "négliger": {
+      "display": "négliger",
+      "prepositions": {
+        "de": [
+          "négliger de faire qqch 疏忽而没做某事",
+          "Il a négligé de vérifier les freins avant de partir. 他出发前疏忽了检查刹车。",
+          "Ne négligez pas de boire assez d'eau en été. 夏天别忘了多喝水。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "négocier": {
+      "display": "négocier",
+      "prepositions": {
+        "avec": [
+          "négocier avec qqn 与某人谈判",
+          "Le gouvernement refuse de négocier avec les ravisseurs. 政府拒绝与绑匪谈判。",
+          "J'ai négocié avec le vendeur et il m'a fait une réduction. 我跟卖家讲了价，他给我打了折。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -15738,6 +27581,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1474148",
             "zh": "1474146",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "obtempérer": {
+      "display": "obtempérer",
+      "prepositions": {
+        "à": [
+          "obtempérer à qqch 服从（命令）",
+          "Le conducteur a refusé d'obtempérer aux ordres des gendarmes. 司机拒不服从宪兵的命令。",
+          "Les élèves ont obtempéré à la consigne sans discuter. 学生们毫无异议地照指示做了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -15929,6 +27801,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "octroyer": {
+      "display": "octroyer",
+      "prepositions": {
+        "à": [
+          "octroyer qqch à qqn 给予某人某物",
+          "La banque a octroyé un prêt à la jeune entreprise. 银行向这家新企业发放了一笔贷款。",
+          "On a octroyé une prime à tous les employés. 全体员工都得到了一笔奖金。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "offrir": {
       "display": "offrir",
       "prepositions": {
@@ -16034,6 +27935,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "omettre",
       "prepositions": {
         "de": [
+          "omettre de faire qqch 漏做某事",
+          "Il a omis de mentionner un détail important. 他漏说了一个重要细节。",
           "Je suis désolée, j'ai omis de faire mes devoirs. 对不起，我忘了作业这回事了。"
         ]
       },
@@ -16042,6 +27945,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "10308616",
@@ -16140,6 +28051,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "opérer": {
+      "display": "opérer",
+      "prepositions": {
+        "de": [
+          "opérer qqn de qqch 给某人做（某病的）手术",
+          "Mon grand-père s'est fait opérer de la cataracte. 我爷爷做了白内障手术。",
+          "Elle a été opérée du genou la semaine dernière. 她上周做了膝盖手术。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "ordonner": {
       "display": "ordonner",
       "prepositions": {
@@ -16185,6 +28125,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "578570",
             "zh": "578567",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "orner": {
+      "display": "orner",
+      "prepositions": {
+        "de": [
+          "orner qqch de qqch 用某物装饰某物",
+          "Les rues étaient ornées de lanternes rouges. 街道上挂满了红灯笼。",
+          "Elle a orné la table de bougies et de fleurs. 她用蜡烛和鲜花装点了餐桌。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "osciller": {
+      "display": "osciller",
+      "prepositions": {
+        "entre": [
+          "osciller entre qqch et qqch 在两者之间摇摆（波动）",
+          "Les températures oscillent entre dix et quinze degrés. 气温在十到十五度之间波动。",
+          "Il oscille entre l'espoir et le découragement. 他在希望与沮丧之间摇摆。"
+        ]
+      },
+      "prepositionOrder": [
+        "entre"
+      ],
+      "sources": {
+        "entre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -16278,6 +28276,64 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "pactiser": {
+      "display": "pactiser",
+      "prepositions": {
+        "avec": [
+          "pactiser avec qqn/qqch 与……妥协；与……勾结",
+          "Il a refusé de pactiser avec l'ennemi. 他拒绝与敌人勾结。",
+          "On ne pactise pas avec la corruption. 对腐败决不能妥协。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "papoter": {
+      "display": "papoter",
+      "prepositions": {
+        "avec": [
+          "papoter avec qqn 和某人闲聊",
+          "Elle papote avec sa voisine tous les matins. 她每天早上都跟邻居闲聊。",
+          "On a papoté avec les autres parents devant l'école. 我们在学校门口和其他家长聊了会儿天。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "paralyser": {
       "display": "paralyser",
       "prepositions": {
@@ -16325,9 +28381,162 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "parer": {
+      "display": "parer",
+      "prepositions": {
+        "à": [
+          "parer à qqch 防备；应付（意外、危险）",
+          "Il faut parer au plus pressé. 先应付最紧急的事。",
+          "Nous avons pris des provisions pour parer à toute éventualité. 我们备了些物资以防万一。",
+          "Le gouvernement doit parer à la crise énergétique. 政府必须应对能源危机。"
+        ],
+        "de": [
+          "parer qqn/qqch de qqch 用……装饰",
+          "À Noël, la ville était parée de mille lumières. 圣诞节时，城里张灯结彩。",
+          "Elle avait paré la table de fleurs blanches. 她用白花装点了餐桌。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "parer qqch de qqch = 装饰、点缀；parer à qqch = 防备、应付",
+        "à": "parer à qqch = 防备、应付（危险、意外）；parer qqch de qqch = 用……装饰"
+      }
+    },
+    "parier": {
+      "display": "parier",
+      "prepositions": {
+        "sur": [
+          "parier sur qqn/qqch 押注于；赌（某人会赢等）",
+          "J'ai parié sur le cheval numéro sept. 我押了七号马。",
+          "Tout le monde pariait sur sa victoire. 大家都赌他会赢。",
+          "L'entreprise parie sur les énergies renouvelables. 这家公司把宝押在了可再生能源上。"
+        ],
+        "avec": [
+          "parier avec qqn 和某人打赌",
+          "J'ai parié avec mon frère qu'il pleuvrait. 我和哥哥打赌说会下雨。",
+          "Tu veux parier avec moi ? 你想跟我打个赌吗？"
+        ]
+      },
+      "prepositionOrder": [
+        "sur",
+        "avec"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "parlementer": {
+      "display": "parlementer",
+      "prepositions": {
+        "avec": [
+          "parlementer avec qqn 与某人谈判；交涉",
+          "Il a dû parlementer longtemps avec le gardien pour entrer. 他跟门卫交涉了很久才进去。",
+          "La police parlemente avec les preneurs d'otages. 警方正在与劫持人质者谈判。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "parler": {
       "display": "parler",
       "prepositions": {
+        "à": [
+          "parler à qqn 跟某人说话",
+          "Je dois parler à ton père ce soir. 我今晚得跟你爸爸谈谈。",
+          "Elle ne parle plus à sa voisine depuis la dispute. 自从吵架后，她就不再跟邻居说话了。",
+          "Parlez-en à votre médecin. 请向您的医生咨询。",
+          "Je parle à moi-même. 我对自己说话。",
+          "Je veux parler à ton oncle. 我想和你的舅舅谈一谈。",
+          "Puis-je parler à Mlle Brown ? 我能和布朗小姐说话吗？",
+          "Je lui ai parlé au téléphone. 我跟他通了电话。",
+          "Il parle à tort et à travers. 他胡说八道。",
+          "Puis-je parler au professeur ? 我能和老师说话吗？"
+        ],
         "de": [
           "parler de qqch 谈论某事",
           "Je parle d'eux. 我说的是他们。",
@@ -16347,10 +28556,65 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "de",
         "avec"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "492754",
+            "zh": "796132",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "10300",
+            "zh": "3044029",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "3436",
+            "zh": "501427",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "127518",
+            "zh": "346824",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "840616",
+            "zh": "841575",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "128934",
+            "zh": "346055",
+            "eng": ""
+          }
+        ],
         "de": [
           {
             "kind": "curated",
@@ -16433,13 +28697,17 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "notes": {
-        "de": "parler de qqch = 谈论某事；parler à qqn = 对某人说"
+        "de": "parler de qqch = 谈论某事；parler à qqn = 对某人说话",
+        "à": "parler à qqn = 对某人说话；parler de qqch = 谈论某事；parler avec qqn = 与某人交谈"
       }
     },
     "parsemer": {
       "display": "parsemer",
       "prepositions": {
         "de": [
+          "parsemer qqch de qqch 在……上撒满；点缀",
+          "Le chemin était parsemé de feuilles mortes. 小路上落满了枯叶。",
+          "Son texte est parsemé de fautes d'orthographe. 他的文章里到处是拼写错误。",
           "Le jardin est parsemé de fleurs magnifiques. 花园里散落着美丽的花朵。"
         ]
       },
@@ -16448,6 +28716,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "11619837",
@@ -16465,7 +28745,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Je veux le partager avec toi. 我想跟你分享。"
         ],
         "entre": [
-          "partager qqch entre plusieurs personnes 在几个人之间分配某物"
+          "partager qqch entre plusieurs personnes 在几个人之间分配某物",
+          "Le gâteau a été partagé entre les six enfants. 蛋糕分给了六个孩子。",
+          "Elle partage son temps entre Paris et Lyon. 她的时间一半在巴黎、一半在里昂度过。"
         ]
       },
       "prepositionOrder": [
@@ -16490,6 +28772,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         "entre": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -16818,6 +29108,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         }
       ]
     },
+    "patauger": {
+      "display": "patauger",
+      "prepositions": {
+        "dans": [
+          "patauger dans qqch 在（泥水）里蹚；（喻）陷入困境",
+          "Les enfants pataugeaient dans les flaques d'eau. 孩子们在水坑里蹚来蹚去。",
+          "Je patauge complètement dans ce problème de physique. 这道物理题让我完全摸不着头脑。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "patiner": {
       "display": "patiner",
       "prepositions": {
@@ -16842,6 +29161,16 @@ const FRENCH_COLLOCATIONS_DATA = {
     "payer": {
       "display": "payer",
       "prepositions": {
+        "en": [
+          "payer en qqch 用（某种方式、货币）付款",
+          "Vous payez en espèces ou par carte ? 您付现金还是刷卡？",
+          "À l'époque, on payait encore en francs. 那时候人们还用法郎付款。",
+          "J'aimerais payer en liquide. 我想用现金支付。",
+          "Je souhaiterais payer en liquide. 我想付现金。",
+          "Normalement je paye en carte de crédit plutôt qu'en liquide. 通常我用信用卡支付多过用现金。",
+          "Je paie en espèces. 我用现金付款。",
+          "Je paierai en espèces. 我用现金付钱。"
+        ],
         "pour": [
           "Où dois-je payer pour le gaz ? 我该在哪儿付煤气费？",
           "Combien as-tu payé pour cet ordinateur ? 这台电脑你用多少钱买的？",
@@ -16852,9 +29181,54 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "en",
         "pour"
       ],
       "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "181242",
+            "zh": "860986",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "730342",
+            "zh": "730413",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "647162",
+            "zh": "1314219",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "1193231",
+            "zh": "7771901",
+            "eng": "707178"
+          },
+          {
+            "kind": "indirect",
+            "fr": "13183834",
+            "zh": "13183818",
+            "eng": "13183799"
+          }
+        ],
         "pour": [
           {
             "kind": "direct",
@@ -16940,6 +29314,115 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1170537",
             "zh": "864421",
             "eng": "44091"
+          }
+        ]
+      }
+    },
+    "peiner": {
+      "display": "peiner",
+      "prepositions": {
+        "à": [
+          "peiner à faire qqch 难以做到某事；费力地做",
+          "Le vieil homme peinait à monter l'escalier. 老人上楼梯很吃力。",
+          "Je peine à comprendre ses explications. 我很难理解他的解释。",
+          "L'équipe peine à trouver un nouvel entraîneur. 球队迟迟找不到新教练。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "pencher": {
+      "display": "pencher",
+      "prepositions": {
+        "pour": [
+          "pencher pour qqch 倾向于（某个选择）",
+          "J'hésite encore, mais je penche pour la robe bleue. 我还在犹豫，不过更倾向于那条蓝裙子。",
+          "Les enquêteurs penchent pour la thèse de l'accident. 调查人员倾向于认为这是一场意外。",
+          "Pour les vacances, nous penchions plutôt pour la montagne. 说到度假，我们当时更倾向于去山里。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "pendre": {
+      "display": "pendre",
+      "prepositions": {
+        "à": [
+          "pendre à qqch 悬挂在……上",
+          "Une vieille lampe pendait au plafond. 一盏旧灯悬挂在天花板上。",
+          "Des pommes mûres pendent aux branches. 树枝上挂着熟透的苹果。",
+          "Ça te pend au nez si tu continues comme ça. 你再这样下去，迟早要倒霉。",
+          "J'ai pendu mon chapeau à la patère. 我把我的帽子挂在挂钩上。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "8862184",
+            "zh": "888470",
+            "eng": "321122"
           }
         ]
       }
@@ -17199,6 +29682,66 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "persister": {
+      "display": "persister",
+      "prepositions": {
+        "à": [
+          "persister à faire qqch 执意做某事",
+          "Elle persiste à croire qu'il reviendra. 她始终相信他会回来。",
+          "Les voisins persistent à garer leur voiture devant chez nous. 邻居们总是执意把车停在我家门口。",
+          "Elle persiste à dire que son analyse est correcte. 她坚持认为自己的分析是正确的。"
+        ],
+        "dans": [
+          "persister dans qqch 坚持（错误、态度等）",
+          "Il persiste dans son refus de parler. 他坚持不肯开口。",
+          "Pourquoi persistes-tu dans cette erreur ? 你为什么还执迷于这个错误？"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "dans"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "134431",
+            "zh": "1516458",
+            "eng": ""
+          }
+        ],
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "dans": "persister dans + 名词 = 坚持（态度、错误）；persister à + 不定式 = 执意做某事",
+        "à": "persister à + 不定式 = 执意做某事；persister dans + 名词 = 坚持某种态度、错误"
+      }
+    },
     "persuader": {
       "display": "persuader",
       "prepositions": {
@@ -17234,10 +29777,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "persévérer": {
+      "display": "persévérer",
+      "prepositions": {
+        "dans": [
+          "persévérer dans qqch 在……上坚持不懈",
+          "Tu dois persévérer dans tes efforts. 你要坚持努力下去。",
+          "Elle a persévéré dans ses études malgré les difficultés. 尽管困难重重，她仍坚持学业。",
+          "Si vous persévérez dans cette voie, vous réussirez. 如果你们沿着这条路坚持下去，就会成功。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "peser": {
       "display": "peser",
       "prepositions": {
         "sur": [
+          "peser sur qqn/qqch 压在……上；对……施加影响",
+          "Toute la responsabilité pèse sur ses épaules. 全部责任都压在他肩上。",
+          "Cette décision a pesé sur la suite des négociations. 这个决定影响了后续的谈判。",
           "Je me suis pesé sur la balance de la salle de bain. 我用浴室的体重计量了体重。"
         ]
       },
@@ -17247,6 +29827,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1130358",
             "zh": "8730060",
@@ -17255,10 +29847,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "pester": {
+      "display": "pester",
+      "prepositions": {
+        "contre": [
+          "pester contre qqn/qqch 咒骂；抱怨",
+          "Il pestait contre les embouteillages. 他一路骂着堵车。",
+          "Ma mère peste contre la pluie depuis ce matin. 我妈从早上起就一直抱怨下雨。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "peupler": {
       "display": "peupler",
       "prepositions": {
         "de": [
+          "peupler qqch de qqch 使……布满；居住于",
+          "Ses romans sont peuplés de personnages étranges. 他的小说里满是古怪的人物。",
+          "Autrefois, cette forêt était peuplée de loups. 从前这片森林里有很多狼。",
           "Je voyageais à travers les villages et les champs peuplés de cigales et inondés de rayons de soleil. 游荡在知了和阳光充斥的村舍田野"
         ]
       },
@@ -17267,6 +29891,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "13376567",
@@ -17280,7 +29916,7 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "piquer",
       "prepositions": {
         "par": [
-          "J'ai été piqué par une abeille. 我被蜜蜂蛰了一下。",
+          "J'ai été piqué par une abeille. 我被蜜蜂蜇了一下。",
           "J'ai été piqué par des moustiques. 我被蚊子咬的。",
           "J'ai été piqué par un moustique. 我被蚊子叮了。",
           "Je viens de me faire piquer par une abeille. 我刚给蜜蜂蛰了。",
@@ -17358,6 +29994,55 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "plaider": {
+      "display": "plaider",
+      "prepositions": {
+        "en": [
+          "plaider en faveur de qqn/qqch 为……说情；对……有利",
+          "Son passé irréprochable plaide en sa faveur. 他清白的过去对他很有利。",
+          "Le ministre a plaidé en faveur d'une baisse des impôts. 部长主张减税。"
+        ],
+        "pour": [
+          "plaider pour qqn/qqch 为……辩护；主张",
+          "L'avocat a plaidé pour son client avec passion. 律师慷慨激昂地为当事人辩护。",
+          "Plusieurs associations plaident pour une meilleure protection des animaux. 多个协会呼吁更好地保护动物。"
+        ]
+      },
+      "prepositionOrder": [
+        "en",
+        "pour"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "plaire": {
       "display": "plaire",
       "prepositions": {
@@ -17415,6 +30100,113 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "429280",
             "zh": "333380",
             "eng": "430198"
+          }
+        ]
+      }
+    },
+    "plaisanter": {
+      "display": "plaisanter",
+      "prepositions": {
+        "sur": [
+          "plaisanter sur qqch 就……开玩笑",
+          "Il aime plaisanter sur son propre accent. 他喜欢拿自己的口音开玩笑。",
+          "Ne plaisante pas sur ce sujet, c'est grave. 别拿这件事开玩笑，这很严重。"
+        ],
+        "avec": [
+          "plaisanter avec qqch 拿……当儿戏（多用于否定）",
+          "On ne plaisante pas avec la sécurité. 安全问题可不能儿戏。",
+          "Mon père ne plaisante jamais avec la ponctualité. 我父亲在守时这件事上从不马虎。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur",
+        "avec"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "plancher": {
+      "display": "plancher",
+      "prepositions": {
+        "sur": [
+          "plancher sur qqch 埋头研究；忙于做（口语）",
+          "Les ingénieurs planchent sur un nouveau moteur. 工程师们正在埋头研发一款新发动机。",
+          "J'ai planché sur ce dossier tout le week-end. 整个周末我都在啃这份材料。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "planer": {
+      "display": "planer",
+      "prepositions": {
+        "sur": [
+          "planer sur qqn/qqch 笼罩在……上（疑云、威胁）",
+          "Un doute plane encore sur son innocence. 他是否清白仍疑云未散。",
+          "La menace d'une grève planait sur le pays. 罢工的阴影笼罩着全国。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -17651,11 +30443,13 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "porter": {
-      "display": "porter",
+    "polémiquer": {
+      "display": "polémiquer",
       "prepositions": {
         "sur": [
-          "porter sur qqch 涉及某事"
+          "polémiquer sur qqch 就……展开论战",
+          "Je ne veux pas polémiquer sur ce point. 在这一点上我不想争论。",
+          "Les journaux polémiquent sur la réforme des retraites. 各大报纸就退休改革争论不休。"
         ]
       },
       "prepositionOrder": [
@@ -17665,6 +30459,43 @@ const FRENCH_COLLOCATIONS_DATA = {
         "sur": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "porter": {
+      "display": "porter",
+      "prepositions": {
+        "sur": [
+          "porter sur qqch 涉及某事",
+          "La discussion a porté sur le budget. 讨论的焦点是预算。",
+          "Sur quoi portera l'examen ? 考试会考哪些内容？"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -17680,10 +30511,13 @@ const FRENCH_COLLOCATIONS_DATA = {
           "On posa à chaque élève une question. 每个学生都被问了一个问题。"
         ],
         "pour": [
-          "poser pour un photographe 为摄影师摆姿势"
+          "poser pour un photographe 为摄影师摆姿势",
+          "Les mariés ont posé pour la photo devant l'église. 新人在教堂前摆好姿势拍照。"
         ],
         "sur": [
-          "poser qqch sur la table 把某物放在桌上"
+          "poser qqch sur la table 把某物放在桌上",
+          "Pose tes clés sur la table de l'entrée. 把钥匙放在门口的桌子上。",
+          "Elle a posé la main sur mon épaule. 她把手搭在我肩上。"
         ]
       },
       "prepositionOrder": [
@@ -17720,11 +30554,23 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ],
         "sur": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -17832,6 +30678,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "poursuivre",
       "prepositions": {
         "en": [
+          "poursuivre qqn en justice 起诉某人",
+          "L'entreprise a été poursuivie en justice pour pollution. 这家企业因污染被起诉。",
+          "Ses voisins menacent de le poursuivre en justice. 他的邻居们威胁要告他。",
           "Je te poursuivrai en justice. 我要控告你。"
         ]
       },
@@ -17841,6 +30690,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "en": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "536389",
             "zh": "793531",
@@ -17849,9 +30710,70 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "pourvoir": {
+      "display": "pourvoir",
+      "prepositions": {
+        "à": [
+          "pourvoir à qqch 满足（需要）；负担",
+          "Il travaille dur pour pourvoir aux besoins de sa famille. 他努力工作以养家糊口。",
+          "L'État doit pourvoir à l'éducation de tous les enfants. 国家应当负担所有儿童的教育。"
+        ],
+        "de": [
+          "pourvoir qqn/qqch de qqch 为……配备",
+          "La nature l'a pourvu d'une excellente mémoire. 他天生记忆力极好。",
+          "Toutes les salles sont pourvues d'un projecteur. 所有教室都配有投影仪。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "pourvoir qqn de qqch = 为……配备；pourvoir à qqch = 满足（需要）",
+        "à": "pourvoir à qqch = 满足、负担（需要）；pourvoir qqn de qqch = 为某人配备某物"
+      }
+    },
     "pousser": {
       "display": "pousser",
       "prepositions": {
+        "à": [
+          "pousser qqn à faire qqch 促使某人做某事",
+          "Ses amis l'ont poussé à changer de métier. 朋友们劝他改行。",
+          "Qu'est-ce qui t'a poussé à apprendre le chinois ? 是什么促使你学中文的？",
+          "La faim pousse les animaux à s'approcher des villages. 饥饿迫使动物靠近村庄。",
+          "La faim l'a poussé à voler. 饥饿促使他偷窃。",
+          "Quelqu'un m'a poussé à l'intérieur. 有人推我到里面。"
+        ],
         "sur": [
           "Rien ne semble pousser sur ce sol. 这个土壤似乎长不出任何东西来。",
           "Les pommes poussent sur des arbres. 苹果长在树上。",
@@ -17868,10 +30790,41 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "sur",
         "dans"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "15418",
+            "zh": "510693",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "390589",
+            "zh": "767058",
+            "eng": "276162"
+          }
+        ],
         "sur": [
           {
             "kind": "indirect",
@@ -18157,10 +31110,49 @@ const FRENCH_COLLOCATIONS_DATA = {
         }
       ]
     },
+    "prescrire": {
+      "display": "prescrire",
+      "prepositions": {
+        "à": [
+          "prescrire qqch à qqn 给某人开（药）；嘱咐",
+          "Le médecin a prescrit du repos à ma grand-mère. 医生嘱咐我奶奶要多休息。",
+          "Quel traitement a-t-on prescrit à votre fils ? 给您儿子开了什么治疗方案？",
+          "Le médecin a prescrit un médicament à son patient. 医生给他的病人开了一些药。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "11924745",
+            "zh": "8650501",
+            "eng": "27931"
+          }
+        ]
+      }
+    },
     "presser": {
       "display": "presser",
       "prepositions": {
         "de": [
+          "être pressé de faire qqch 急于做某事",
+          "Je suis pressé de te revoir. 我迫不及待想再见到你。",
+          "Les enfants étaient pressés d'ouvrir leurs cadeaux. 孩子们急着拆礼物。",
           "À la fin d'une journée de travail, tout le monde est pressé de rentrer chez soi. 工作了一天之后，大家都急着回家。"
         ]
       },
@@ -18169,6 +31161,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "13998",
@@ -18190,6 +31194,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Je te prie d'écouter attentivement. 我请你专心听。"
         ],
         "pour": [
+          "prier pour qqn/qqch 为……祈祷",
+          "Elle prie tous les soirs pour son fils malade. 她每晚都为生病的儿子祈祷。",
+          "Prions pour que tout se passe bien. 我们祈祷一切顺利吧。",
           "Ils se sont agenouillés et ont prié pour que la guerre finisse bientôt. 他们跪了下来祈祷，希望战争快点结束。"
         ]
       },
@@ -18238,6 +31245,18 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "pour": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "392501",
             "zh": "1329546",
@@ -18246,10 +31265,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "primer": {
+      "display": "primer",
+      "prepositions": {
+        "sur": [
+          "primer sur qqch 优先于；比……更重要",
+          "La sécurité des passagers prime sur tout le reste. 乘客的安全高于一切。",
+          "Chez lui, l'intérêt personnel prime souvent sur l'amitié. 在他看来，个人利益往往比友谊更重要。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "priver": {
       "display": "priver",
       "prepositions": {
         "de": [
+          "priver qqn de qqch 剥夺某人的……；使某人失去",
+          "Il a été privé de dessert pour avoir menti. 他因为撒谎被罚不许吃甜点。",
+          "La tempête a privé toute la région d'électricité. 暴风雨导致整个地区停电。",
           "Cette loi nous privera de nos droits fondamentaux. 这项法律会剥夺我们的基本权利。"
         ]
       },
@@ -18258,6 +31309,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "945999",
@@ -18291,6 +31354,69 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1688206",
             "zh": "4265916",
             "eng": "275126"
+          }
+        ]
+      }
+    },
+    "procéder": {
+      "display": "procéder",
+      "prepositions": {
+        "à": [
+          "procéder à qqch 进行；着手（正式用语）",
+          "La police a procédé à plusieurs arrestations. 警方进行了多次逮捕。",
+          "Nous allons maintenant procéder au vote. 我们现在开始投票。",
+          "Les ouvriers procéderont aux travaux la semaine prochaine. 工人们将于下周开始施工。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "prodiguer": {
+      "display": "prodiguer",
+      "prepositions": {
+        "à": [
+          "prodiguer qqch à qqn 慷慨地给予某人（建议、照料）",
+          "L'infirmière prodigue des soins aux blessés. 护士悉心照料伤员。",
+          "Mon grand-père aimait prodiguer des conseils à tout le monde. 我爷爷喜欢给每个人出主意。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -18433,6 +31559,74 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "progresser": {
+      "display": "progresser",
+      "prepositions": {
+        "en": [
+          "progresser en qqch 在（某科目、能力）上进步",
+          "Tu as beaucoup progressé en français cette année. 你今年法语进步很大。",
+          "Pour progresser en natation, il faut s'entraîner régulièrement. 要想提高游泳水平，就得经常训练。",
+          "Ma fille progresse lentement en mathématiques. 我女儿数学进步得很慢。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "projeter": {
+      "display": "projeter",
+      "prepositions": {
+        "de": [
+          "projeter de faire qqch 计划做某事",
+          "Nous projetons de partir au Canada l'été prochain. 我们计划明年夏天去加拿大。",
+          "Ils projetaient d'ouvrir un restaurant ensemble. 他们曾打算一起开一家餐馆。",
+          "Que projettes-tu de faire après tes études ? 你毕业后打算做什么？"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "promener": {
       "display": "promener",
       "prepositions": {
@@ -18540,7 +31734,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "proposer",
       "prepositions": {
         "de": [
-          "proposer de faire qqch 提议做某事"
+          "proposer de faire qqch 提议做某事",
+          "Je te propose de dîner ensemble ce soir. 我提议今晚一起吃晚饭。",
+          "Il nous a proposé de nous raccompagner. 他提出送我们回去。"
         ]
       },
       "prepositionOrder": [
@@ -18551,6 +31747,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -18559,7 +31763,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "protester",
       "prepositions": {
         "contre": [
-          "protester contre qqch 抗议某事"
+          "protester contre qqch 抗议某事",
+          "Des milliers de personnes ont protesté contre la fermeture de l'hôpital. 成千上万的人抗议关闭医院。",
+          "Les élèves protestent contre la nouvelle règle. 学生们抗议新规定。"
         ]
       },
       "prepositionOrder": [
@@ -18570,6 +31776,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -18577,20 +31791,112 @@ const FRENCH_COLLOCATIONS_DATA = {
     "protéger": {
       "display": "protéger",
       "prepositions": {
+        "de": [
+          "protéger qqn/qqch de qqch 使……不受（伤害、侵扰）",
+          "Mets un chapeau pour te protéger du soleil. 戴顶帽子遮遮太阳。",
+          "Les parents veulent protéger leurs enfants de tout danger. 父母想保护孩子免受一切危险。",
+          "Ce mur protège la maison du vent. 这堵墙替房子挡风。",
+          "Il a des films jamais sortis dans les cinémas pour les protéger du piratage. 为了防止盗版，他有些电影从未在影院上映。",
+          "Ces fleurs devraient être protégées de la pluie. 应该为这些花遮挡风雨。"
+        ],
         "contre": [
+          "protéger qqn/qqch contre qqch 保护……以防",
+          "Ce vaccin protège contre la grippe. 这种疫苗能预防流感。",
+          "Un bon manteau vous protégera contre le froid. 一件好大衣能让您抵御寒冷。",
           "Les capotes protègent contre les MST. 避孕套可以预防性传播疾病。"
         ]
       },
       "prepositionOrder": [
+        "de",
         "contre"
       ],
       "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "723621",
+            "zh": "1324903",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "2756154",
+            "zh": "886591",
+            "eng": "42009"
+          }
+        ],
         "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1902947",
             "zh": "9054559",
             "eng": "1879696"
+          }
+        ]
+      },
+      "notes": {
+        "contre": "protéger contre 与 protéger de 意思相近；contre 更强调抵御、防范（疾病、攻击）",
+        "de": "protéger de 与 protéger contre 意思相近；de 更常用于遮挡（阳光、风雨、危险）"
+      }
+    },
+    "prouver": {
+      "display": "prouver",
+      "prepositions": {
+        "à": [
+          "prouver qqch à qqn 向某人证明某事",
+          "Je vais prouver à tout le monde que j'ai raison. 我要向所有人证明我是对的。",
+          "Il a voulu prouver à son père qu'il pouvait réussir. 他想向父亲证明自己能成功。",
+          "Elle doit prouver aux clients que son produit est fiable. 她得向客户证明自己的产品可靠。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -18652,6 +31958,127 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "392601",
             "zh": "647680",
             "eng": "46521"
+          }
+        ]
+      }
+    },
+    "prédire": {
+      "display": "prédire",
+      "prepositions": {
+        "à": [
+          "prédire qqch à qqn 向某人预言；预测某人会",
+          "Personne n'avait prédit un tel succès à ce film. 谁也没料到这部电影会这么成功。",
+          "Les experts prédisent une année difficile aux agriculteurs. 专家预测农民们将迎来艰难的一年。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "prédisposer": {
+      "display": "prédisposer",
+      "prepositions": {
+        "à": [
+          "prédisposer qqn à qqch 使某人易患；使倾向于",
+          "Le tabac prédispose aux maladies du cœur. 吸烟容易引发心脏病。",
+          "Rien ne le prédisposait à devenir acteur. 他原本看不出有任何当演员的苗头。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "préférer": {
+      "display": "préférer",
+      "prepositions": {
+        "à": [
+          "préférer qqch à qqch 比起……更喜欢",
+          "Je préfère le thé au café. 比起咖啡，我更喜欢茶。",
+          "Elle a toujours préféré la campagne à la ville. 比起城市，她一向更喜欢乡村。",
+          "Préféreriez-vous le train à l'avion ? 比起飞机，您是否更愿意坐火车？"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "prélever": {
+      "display": "prélever",
+      "prepositions": {
+        "sur": [
+          "prélever qqch sur qqch 从……中提取；扣除",
+          "La banque prélève des frais sur chaque virement. 银行对每笔转账都收取手续费。",
+          "Le loyer est prélevé sur mon compte le premier du mois. 房租每月一号从我账户里扣除。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -18829,6 +32256,127 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "préserver": {
+      "display": "préserver",
+      "prepositions": {
+        "de": [
+          "préserver qqn/qqch de qqch 保护……免受",
+          "Cette crème préserve la peau du soleil. 这种霜能保护皮肤不受日晒。",
+          "Ses parents voulaient la préserver de la violence du monde. 她父母想让她远离世间的暴力。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "présumer": {
+      "display": "présumer",
+      "prepositions": {
+        "de": [
+          "présumer de qqch 高估（自己的能力等）",
+          "J'ai trop présumé de mes forces. 我太高估自己的体力了。",
+          "Il avait trop présumé de son influence et a perdu l'élection. 他过高估计了自己的影响力，结果落选了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "prétendre": {
+      "display": "prétendre",
+      "prepositions": {
+        "à": [
+          "prétendre à qqch 有资格要求；觊觎",
+          "Vous pouvez prétendre à une indemnité. 您有权要求一笔赔偿。",
+          "Il prétend au titre de champion depuis des années. 多年来他一直觊觎冠军头衔。",
+          "Seuls les résidents peuvent prétendre à cette aide. 只有本地居民才有资格申请这项补助。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "prévaloir": {
+      "display": "prévaloir",
+      "prepositions": {
+        "sur": [
+          "prévaloir sur qqch 胜过；占上风",
+          "Le bon sens a fini par prévaloir sur la peur. 理智最终战胜了恐惧。",
+          "La loi nationale prévaut-elle sur les règles locales ? 国家法律是否优先于地方规定？"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "prévenir": {
       "display": "prévenir",
       "prepositions": {
@@ -18957,6 +32505,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "prêter",
       "prepositions": {
         "à": [
+          "prêter qqch à qqn 把某物借给某人",
+          "Tu peux prêter ton vélo à ta sœur ? 你能把自行车借给你妹妹吗？",
+          "J'ai prêté mon parapluie à un collègue. 我把伞借给了一个同事。",
           "Tu n'aurais pas dû prêter cet argent à une telle personne. 你不应该借钱给这样的人。"
         ]
       },
@@ -18965,6 +32516,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "830389",
@@ -18995,10 +32558,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "puiser": {
+      "display": "puiser",
+      "prepositions": {
+        "dans": [
+          "puiser qqch dans qqch 从……中汲取",
+          "J'ai dû puiser dans mes économies pour payer la réparation. 我不得不动用积蓄来付修理费。",
+          "Cet écrivain puise son inspiration dans ses souvenirs d'enfance. 这位作家从童年回忆中汲取灵感。",
+          "Autrefois, on puisait l'eau dans le puits du village. 从前人们从村里的井中打水。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "punir": {
       "display": "punir",
       "prepositions": {
         "pour": [
+          "punir qqn pour qqch 因……惩罚某人",
+          "Il a été puni pour avoir triché à l'examen. 他因考试作弊受了处罚。",
+          "On ne punit pas un enfant pour une simple maladresse. 不能因为一点笨手笨脚就惩罚孩子。",
           "C'est un acte criminel et tu seras sûrement puni pour cela ! 那是犯罪行为，你肯定会受到惩罚的!"
         ]
       },
@@ -19008,10 +32608,114 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "pour": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "829280",
             "zh": "829305",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "pâlir": {
+      "display": "pâlir",
+      "prepositions": {
+        "de": [
+          "pâlir de qqch 因……而脸色发白",
+          "Elle a pâli de peur en entendant ce bruit. 听到那个声音，她吓得脸色发白。",
+          "Il pâlissait de colère sans dire un mot. 他气得脸色发白，一言不发。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "pâtir": {
+      "display": "pâtir",
+      "prepositions": {
+        "de": [
+          "pâtir de qqch 因……受损；吃……的苦头",
+          "Les agriculteurs pâtissent de la sécheresse. 农民们深受干旱之苦。",
+          "Sa santé a pâti de ce rythme de travail. 这种工作节奏损害了他的健康。",
+          "Ce sont les enfants qui pâtiront de vos disputes. 吃你们吵架苦头的将是孩子们。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "pécher": {
+      "display": "pécher",
+      "prepositions": {
+        "par": [
+          "pécher par qqch 犯……的毛病；失之于",
+          "Il pèche souvent par excès de confiance. 他常常因为过于自信而犯错。",
+          "Ce projet pèche par manque de clarté. 这个方案的毛病在于不够清晰。"
+        ]
+      },
+      "prepositionOrder": [
+        "par"
+      ],
+      "sources": {
+        "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -19061,6 +32765,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1077727",
             "zh": "13945454",
             "eng": "1077721"
+          }
+        ]
+      }
+    },
+    "périr": {
+      "display": "périr",
+      "prepositions": {
+        "dans": [
+          "périr dans qqch 死于（灾难、事故）",
+          "Des centaines de personnes ont péri dans le naufrage. 数百人在沉船事故中遇难。",
+          "Son grand-père a péri dans un incendie. 他祖父死于一场火灾。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -19133,6 +32866,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "qualifier": {
+      "display": "qualifier",
+      "prepositions": {
+        "de": [
+          "qualifier qqn/qqch de qqch 把……称为；说……是",
+          "La presse a qualifié ce match d'historique. 媒体称这场比赛具有历史意义。",
+          "Il m'a qualifié de menteur devant tout le monde. 他当着所有人的面说我是骗子。",
+          "On ne peut pas qualifier cette décision de raisonnable. 这个决定可称不上合理。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "questionner": {
       "display": "questionner",
       "prepositions": {
@@ -19154,10 +32921,76 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "quitter": {
+      "display": "quitter",
+      "prepositions": {
+        "pour": [
+          "quitter qqn/qqch pour qqn/qqch 为了……而离开",
+          "Elle a quitté son mari pour un collègue. 她为了一个同事离开了丈夫。",
+          "Ils ont quitté Paris pour s'installer en Bretagne. 他们离开巴黎，搬到了布列塔尼。",
+          "J'ai quitté mon poste pour reprendre des études. 我辞去职务，重新回去读书。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "quémander": {
+      "display": "quémander",
+      "prepositions": {
+        "à": [
+          "quémander qqch à qqn 向某人乞求（钱、帮助）",
+          "Il quémandait quelques pièces aux passants. 他向路人讨几个硬币。",
+          "Je n'aime pas quémander des faveurs à mes amis. 我不喜欢求朋友帮忙。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "raccompagner": {
       "display": "raccompagner",
       "prepositions": {
         "chez": [
+          "raccompagner qqn chez qqn 送某人回家",
+          "Il est tard, je te raccompagne chez toi. 太晚了，我送你回家。",
+          "Mon oncle nous a raccompagnés chez nous en voiture. 我叔叔开车送我们回了家。",
           "Voulez-vous que je vous raccompagne chez vous ? 你愿意让我送你回家吗？"
         ]
       },
@@ -19167,10 +33000,80 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "chez": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "429082",
             "zh": "796813",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "raccrocher": {
+      "display": "raccrocher",
+      "prepositions": {
+        "à": [
+          "raccrocher au nez de qqn 挂断某人的电话",
+          "Elle m'a raccroché au nez sans dire au revoir. 她连再见都没说就挂了我的电话。",
+          "Ne me raccroche pas au nez, s'il te plaît ! 拜托别挂我电话！"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "racheter": {
+      "display": "racheter",
+      "prepositions": {
+        "à": [
+          "racheter qqch à qqn 从某人手里买下",
+          "J'ai racheté sa moto à mon voisin. 我从邻居那儿买下了他的摩托车。",
+          "Le groupe a racheté l'usine à ses anciens propriétaires. 集团从原业主手中收购了这家工厂。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -19227,6 +33130,40 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "381791",
             "zh": "393756",
             "eng": "381793"
+          }
+        ]
+      }
+    },
+    "rajouter": {
+      "display": "rajouter",
+      "prepositions": {
+        "à": [
+          "rajouter qqch à qqch 往……里再加",
+          "Rajoute un peu de sel à la sauce. 往酱汁里再加点盐。",
+          "J'ai rajouté deux noms à la liste des invités. 我在宾客名单上又添了两个名字。",
+          "Ne rajoute pas de stress à une situation déjà difficile. 局面已经够难了，别再添压力。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -19310,6 +33247,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "ranger",
       "prepositions": {
         "dans": [
+          "ranger qqch dans qqch 把……收进",
+          "Range tes jouets dans le coffre. 把玩具收进箱子里。",
+          "J'ai rangé les assiettes dans le placard. 我把盘子放进了橱柜。",
           "Elle plia les serviettes et les rangea dans une armoire. 她把毛巾折叠好再放入柜子里。"
         ]
       },
@@ -19318,6 +33258,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1176769",
@@ -19330,6 +33282,12 @@ const FRENCH_COLLOCATIONS_DATA = {
     "rappeler": {
       "display": "rappeler",
       "prepositions": {
+        "à": [
+          "rappeler qqch à qqn 提醒某人某事；使某人想起",
+          "Rappelle à ton frère qu'il doit venir demain. 提醒你弟弟明天要来。",
+          "Ce paysage rappelait à mon père son village natal. 这片风景让我父亲想起了他的家乡。",
+          "Je vais rappeler à 4 heures. 我四点再打过来。"
+        ],
         "de": [
           "Je dois me rappeler d'acheter ce livre demain. 明天我一定要记得去买那一本书。",
           "Tu te rappelles de moi ? 你记得我么?",
@@ -19337,9 +33295,30 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "de"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "7492",
+            "zh": "335220",
+            "eng": ""
+          }
+        ],
         "de": [
           {
             "kind": "direct",
@@ -19358,6 +33337,98 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "565643",
             "zh": "342109",
             "eng": "246027"
+          }
+        ]
+      }
+    },
+    "rapporter": {
+      "display": "rapporter",
+      "prepositions": {
+        "à": [
+          "rapporter qqch à qqn 把……带回给某人；向某人报告；给某人带来收益",
+          "J'ai rapporté un petit cadeau à chacun de mes collègues. 我给每位同事都带回了一份小礼物。",
+          "Ce placement rapporte à ses clients cinq pour cent par an. 这项投资每年为客户带来百分之五的收益。",
+          "Un élève a tout rapporté au directeur. 一个学生把一切都报告给了校长。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "rassurer": {
+      "display": "rassurer",
+      "prepositions": {
+        "sur": [
+          "rassurer qqn sur qqch 让某人对……放心",
+          "Le médecin nous a rassurés sur son état de santé. 医生让我们对他的健康状况放了心。",
+          "Le directeur a voulu rassurer les employés sur l'avenir de l'usine. 厂长想让员工们对工厂的前景放心。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "rattacher": {
+      "display": "rattacher",
+      "prepositions": {
+        "à": [
+          "rattacher qqch à qqch 把……归并于；与……联系起来",
+          "Ce village a été rattaché à la commune voisine. 这个村子被并入了邻近的市镇。",
+          "Plus rien ne me rattache à cette ville. 已经没有什么能把我和这座城市联系在一起了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -19418,6 +33489,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "ravitailler": {
+      "display": "ravitailler",
+      "prepositions": {
+        "en": [
+          "ravitailler qqn/qqch en qqch 给……补给（物资）",
+          "Des camions ravitaillent la ville en eau potable. 卡车为城市运送饮用水。",
+          "L'armée était ravitaillée en munitions par avion. 军队靠飞机补给弹药。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "rayer": {
       "display": "rayer",
       "prepositions": {
@@ -19442,6 +33542,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "9481361",
             "zh": "2513951",
             "eng": "2513950"
+          }
+        ]
+      }
+    },
+    "rayonner": {
+      "display": "rayonner",
+      "prepositions": {
+        "de": [
+          "rayonner de qqch 洋溢着（幸福、喜悦）",
+          "Le jour de son mariage, elle rayonnait de bonheur. 婚礼那天，她满脸幸福。",
+          "Son visage rayonnait de fierté. 他脸上洋溢着自豪。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "rebondir": {
+      "display": "rebondir",
+      "prepositions": {
+        "sur": [
+          "rebondir sur qqch 借……接话；从……弹起（谈话中）",
+          "Je voudrais rebondir sur ce que vous venez de dire. 我想接着您刚才的话说几句。",
+          "Le ballon a rebondi sur le poteau. 球打在门柱上弹了出来。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -19502,6 +33660,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "rechigner": {
+      "display": "rechigner",
+      "prepositions": {
+        "à": [
+          "rechigner à faire qqch 磨磨蹭蹭不肯做某事",
+          "Il rechigne toujours à ranger sa chambre. 他总是不肯收拾房间。",
+          "Mes collègues ont rechigné à travailler le dimanche. 同事们不太愿意周日上班。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "recommander": {
       "display": "recommander",
       "prepositions": {
@@ -19541,6 +33728,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "recommencer",
       "prepositions": {
         "à": [
+          "recommencer à faire qqch 又开始做某事",
+          "Il recommence à pleuvoir. 又开始下雨了。",
+          "Elle a recommencé à fumer après trois ans. 戒了三年后，她又开始抽烟了。",
           "J'espère que vous n'allez pas recommencer à me mentir. 希望你不要再继续骗我了。"
         ]
       },
@@ -19549,6 +33739,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "533524",
@@ -19582,6 +33784,95 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "5372029",
             "zh": "884204",
             "eng": "260419"
+          }
+        ]
+      }
+    },
+    "reconnaître": {
+      "display": "reconnaître",
+      "prepositions": {
+        "à": [
+          "reconnaître qqn/qqch à qqch 凭……认出某人／某物",
+          "Je l'ai reconnu à sa voix. 我听声音认出了他。",
+          "On reconnaît un bon melon à son parfum. 好的甜瓜闻香味就能认出来。",
+          "Tu la reconnaîtras facilement à son chapeau rouge. 凭她的红帽子，你很容易就能认出她。",
+          "Je ne l'ai pas reconnu au début. 起初我没认出他来。",
+          "Je l'ai reconnue au premier coup d'œil. 我第一眼就认出了她。",
+          "Je les ai reconnus au premier coup d'œil. 我第一眼就认出了他们。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "331629",
+            "zh": "848424",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "457717",
+            "zh": "782977",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "457718",
+            "zh": "782980",
+            "eng": ""
+          }
+        ]
+      }
+    },
+    "recourir": {
+      "display": "recourir",
+      "prepositions": {
+        "à": [
+          "recourir à qqn/qqch 求助于；诉诸",
+          "Nous avons dû recourir à un avocat. 我们不得不求助于律师。",
+          "Il ne faut recourir à la force qu'en dernier ressort. 只有在万不得已时才能诉诸武力。",
+          "De plus en plus d'élèves recourent à l'intelligence artificielle. 越来越多的学生借助人工智能。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -19646,6 +33937,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "redonner",
       "prepositions": {
         "à": [
+          "redonner qqch à qqn 重新给予；使某人恢复",
+          "Ce succès a redonné confiance à toute l'équipe. 这次成功让整个团队重拾信心。",
+          "Un peu de peinture redonnera vie à cette vieille chaise. 刷点漆就能让这把旧椅子焕然一新。",
           "Cela révèle l'ambition des dirigeants locaux de redonner à la région son niveau d'excellence. 这表明了地方领导恢复地区卓越水平的雄心。"
         ]
       },
@@ -19655,10 +33949,85 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "799168",
             "zh": "799195",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "redoubler": {
+      "display": "redoubler",
+      "prepositions": {
+        "de": [
+          "redoubler de qqch 加倍（努力、小心等）",
+          "Il faut redoubler de prudence sur les routes verglacées. 在结冰的路上要加倍小心。",
+          "Avant l'examen, elle a redoublé d'efforts. 考试前她加倍努力。",
+          "La pluie redoublait de violence. 雨越下越猛。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "redouter": {
+      "display": "redouter",
+      "prepositions": {
+        "de": [
+          "redouter de faire qqch 害怕做某事",
+          "Je redoute de lui annoncer la nouvelle. 我怕把这个消息告诉他。",
+          "Beaucoup de gens redoutent de prendre l'avion. 很多人害怕坐飞机。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -19836,6 +34205,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "regorger",
       "prepositions": {
         "de": [
+          "regorger de qqch 充满；盛产",
+          "Le marché regorge de fruits en été. 夏天市场上水果琳琅满目。",
+          "Cette ville regorge de musées. 这座城市博物馆众多。",
           "La nature regorge de mystère. 大自然已充满了谜团。"
         ]
       },
@@ -19844,6 +34216,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "3330800",
@@ -19914,10 +34298,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "rejaillir": {
+      "display": "rejaillir",
+      "prepositions": {
+        "sur": [
+          "rejaillir sur qqn 波及某人；影响到（荣誉、丑闻）",
+          "Le scandale a rejailli sur toute sa famille. 丑闻波及了他全家。",
+          "Son succès rejaillit sur toute l'équipe. 他的成功也给整个团队增了光。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "rejeter": {
       "display": "rejeter",
       "prepositions": {
         "sur": [
+          "rejeter qqch sur qqn 把（过错）推给某人",
+          "Il rejette toujours la faute sur les autres. 他总是把错推给别人。",
+          "Ne rejette pas la responsabilité sur ton frère. 别把责任推到你弟弟身上。",
           "Il a rejeté sur moi la faute de l'accident. 他为这个意外指责我。"
         ]
       },
@@ -19926,6 +34342,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1683393",
@@ -19957,6 +34385,98 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "487962",
             "zh": "1746082",
             "eng": "269497"
+          }
+        ]
+      }
+    },
+    "relier": {
+      "display": "relier",
+      "prepositions": {
+        "à": [
+          "relier qqch à qqch 把……连接到……",
+          "Un pont relie l'île au continent. 一座桥把岛屿和大陆连接起来。",
+          "Reliez l'imprimante à l'ordinateur avec ce câble. 用这根线把打印机连到电脑上。",
+          "La police a relié ce vol à une bande organisée. 警方把这起盗窃案与一个犯罪团伙联系了起来。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "reléguer": {
+      "display": "reléguer",
+      "prepositions": {
+        "à": [
+          "reléguer qqn/qqch à qqch 把……贬到（次要位置）",
+          "Ce projet a été relégué au second plan. 这个项目被放到了次要位置。",
+          "L'ancien directeur a été relégué à un poste sans importance. 前任主任被贬到了一个无足轻重的职位。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "rembourser": {
+      "display": "rembourser",
+      "prepositions": {
+        "à": [
+          "rembourser qqch à qqn 把（钱）还给某人；给某人退款",
+          "Je rembourserai cet argent à mes parents dès que possible. 我会尽快把这笔钱还给父母。",
+          "La compagnie a remboursé les billets aux passagers. 航空公司给乘客退了票款。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -20146,6 +34666,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "remonter",
       "prepositions": {
         "à": [
+          "remonter à qqch 追溯到",
+          "Cette église remonte au douzième siècle. 这座教堂可以追溯到十二世纪。",
+          "Notre amitié remonte à l'école primaire. 我们的友谊要追溯到小学时代。",
           "Le qipao est un vêtement féminin classique dont l'origine remonte à la Chine du 17e siècle. 旗袍是一种17世纪起源于中国的传统式样的女性服装。"
         ]
       },
@@ -20154,6 +34677,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "769307",
@@ -20167,7 +34702,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "remplacer",
       "prepositions": {
         "par": [
-          "remplacer qqch par qqch 用某物替换某物"
+          "remplacer qqch par qqch 用某物替换某物",
+          "On a remplacé la vieille porte par une porte blindée. 旧门换成了防盗门。",
+          "Vous pouvez remplacer le beurre par de l'huile d'olive. 可以用橄榄油代替黄油。"
         ]
       },
       "prepositionOrder": [
@@ -20177,6 +34714,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         "par": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -20242,7 +34787,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "remédier",
       "prepositions": {
         "à": [
-          "remédier à qqch 补救某事"
+          "remédier à qqch 补救某事",
+          "Il faut remédier à ce problème au plus vite. 必须尽快解决这个问题。",
+          "Comment remédier au manque de personnel ? 怎样解决人手不足的问题？"
         ]
       },
       "prepositionOrder": [
@@ -20252,6 +34799,43 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "renchérir": {
+      "display": "renchérir",
+      "prepositions": {
+        "sur": [
+          "renchérir sur qqch 在……基础上进一步加码",
+          "Son frère a aussitôt renchéri sur ses critiques. 他弟弟马上在他的批评上又加了几句。",
+          "Chaque candidat renchérit sur les promesses de l'autre. 每位候选人都在对方的承诺上层层加码。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -20508,6 +35092,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "renouer": {
+      "display": "renouer",
+      "prepositions": {
+        "avec": [
+          "renouer avec qqn/qqch 与……重修旧好；恢复",
+          "Après dix ans de silence, il a renoué avec son père. 沉默了十年后，他与父亲重归于好。",
+          "L'équipe a renoué avec la victoire samedi. 球队周六重新尝到了胜利的滋味。",
+          "Ce village renoue avec ses anciennes traditions. 这个村子正在恢复它古老的传统。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "rentrer": {
       "display": "rentrer",
       "prepositions": {
@@ -20518,6 +35136,17 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Pourquoi es-tu rentré à la maison si tard ? 你为什么这么晚回家？",
           "Mon père est rentré à la maison à neuf heures. 我爸九点回家。",
           "Mes parents veulent que je rentre à la maison. 我的家长想让我回家。"
+        ],
+        "de": [
+          "rentrer de qqch 从……回来（回家）",
+          "Elle rentre du travail vers sept heures. 她七点左右下班回家。",
+          "Quand je suis rentré de l'école, la maison était vide. 我放学回家时，家里空无一人。",
+          "Je viens de rentrer de l'école. 我刚从学校回来。",
+          "Il vient de rentrer de l'étranger. 他刚从外国回来。",
+          "Je viens de rentrer de Grande-Bretagne. 我刚从英国回来。",
+          "Je ne sais pas quand est-ce qu'il est rentré de France. 我不知道他是什么时候从法国回来的。",
+          "Il est rentré de Chine. 他从中国回来了。",
+          "Hier, en rentrant de l'école, j'ai été pris sous une averse soudaine. 昨天我在放学回家的路上突然遇上了一阵大雨。"
         ],
         "chez": [
           "rentrer chez soi 回自己家",
@@ -20531,6 +35160,7 @@ const FRENCH_COLLOCATIONS_DATA = {
       },
       "prepositionOrder": [
         "à",
+        "de",
         "chez"
       ],
       "sources": {
@@ -20570,6 +35200,56 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "2015658",
             "zh": "3080260",
             "eng": ""
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "794433",
+            "zh": "795767",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "15408",
+            "zh": "339442",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "7387",
+            "zh": "846094",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "549525",
+            "zh": "408818",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "971832",
+            "zh": "343360",
+            "eng": "387585"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1473144",
+            "zh": "348580",
+            "eng": "244337"
           }
         ],
         "chez": [
@@ -20640,6 +35320,212 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1134051",
             "zh": "13071569",
             "eng": "4665803"
+          }
+        ]
+      }
+    },
+    "renvoyer": {
+      "display": "renvoyer",
+      "prepositions": {
+        "à": [
+          "renvoyer qqn/qqch à qqch 推迟到；让某人参阅",
+          "Le procès a été renvoyé au mois prochain. 审判被推迟到了下个月。",
+          "Je vous renvoie à la page douze du manuel. 请参阅手册第十二页。",
+          "Tom était renvoyé à Boston. 汤姆被送回了波士顿"
+        ],
+        "de": [
+          "renvoyer qqn de qqch 把某人开除出（学校、公司）",
+          "Il a été renvoyé du lycée pour mauvaise conduite. 他因品行不端被高中开除了。",
+          "Si tu continues comme ça, on va te renvoyer de l'entreprise. 你再这样下去，会被公司辞退的。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "5504080",
+            "zh": "5393363",
+            "eng": "5392594"
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "renvoyer qqn de qqch = 开除、辞退；renvoyer qqch à = 推迟到、让人参阅",
+        "à": "renvoyer qqch à = 推迟到；renvoyer qqn à = 让某人参阅；renvoyer qqn de = 开除"
+      }
+    },
+    "renâcler": {
+      "display": "renâcler",
+      "prepositions": {
+        "à": [
+          "renâcler à faire qqch 不情愿做某事",
+          "Les enfants renâclent à faire leurs devoirs. 孩子们不情愿写作业。",
+          "L'entreprise renâcle à augmenter les salaires. 公司不愿涨工资。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "reparler": {
+      "display": "reparler",
+      "prepositions": {
+        "de": [
+          "reparler de qqch 再谈；重提",
+          "Nous reparlerons de ce problème demain. 我们明天再谈这个问题。",
+          "Il n'a jamais voulu reparler de son accident. 他再也不愿提起他的那次事故。",
+          "Reparlons de tes projets quand tu auras fini tes examens. 等你考完试，我们再聊聊你的计划。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "repartir": {
+      "display": "repartir",
+      "prepositions": {
+        "à": [
+          "repartir à zéro 从零开始",
+          "Après la faillite, il a dû repartir à zéro. 破产后，他不得不从头再来。",
+          "Mon fichier a été effacé, je repars à zéro. 我的文件被删了，只好重新开始。"
+        ],
+        "de": [
+          "repartir de qqch 从……再出发；离开",
+          "Nous sommes repartis de l'hôtel à l'aube. 我们天一亮就离开酒店再次出发了。",
+          "Il faut repartir de ce qui fonctionne déjà. 要从已经行得通的地方重新出发。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "repenser": {
+      "display": "repenser",
+      "prepositions": {
+        "à": [
+          "repenser à qqn/qqch 回想起；重新考虑",
+          "Je repense souvent à nos vacances en Italie. 我常常回想起我们在意大利的假期。",
+          "En repensant à cette soirée, elle a souri. 想起那个晚上，她笑了。",
+          "Repense à ma proposition avant de répondre. 回复之前再考虑一下我的提议。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -20747,10 +35633,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "repousser": {
+      "display": "repousser",
+      "prepositions": {
+        "à": [
+          "repousser qqch à qqch 把……推迟到",
+          "La réunion est repoussée à jeudi. 会议推迟到周四。",
+          "Ils ont repoussé leur mariage à l'année prochaine. 他们把婚礼推迟到了明年。",
+          "Ne repousse pas toujours tout au dernier moment. 别总把什么事都拖到最后一刻。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "reprocher": {
       "display": "reprocher",
       "prepositions": {
         "à": [
+          "reprocher qqch à qqn 责备某人某事",
+          "Elle reproche à son mari de ne jamais l'écouter. 她埋怨丈夫从不听她说话。",
+          "Qu'est-ce que tu reproches à ce projet ? 你对这个方案有什么不满？",
           "Je ne peux pas reprocher à Tom de ne pas attendre. 我不能怪汤姆不等著。"
         ]
       },
@@ -20759,6 +35682,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "5658125",
@@ -20929,6 +35864,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "ressentir",
       "prepositions": {
         "pour": [
+          "ressentir qqch pour qqn 对某人怀有（感情）",
+          "Elle ressent une profonde admiration pour son professeur. 她对老师怀有深深的敬佩。",
+          "Je n'ai jamais rien ressenti pour lui. 我对他从来没有动过心。",
           "Tu ne ressens vraiment rien pour moi ? 你对我完全没有感觉吗？"
         ]
       },
@@ -20938,10 +35876,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "pour": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "10507579",
             "zh": "5555220",
             "eng": "5485234"
+          }
+        ]
+      }
+    },
+    "ressortir": {
+      "display": "ressortir",
+      "prepositions": {
+        "de": [
+          "ressortir de qqch 从……再出来；由……得出",
+          "Il est ressorti du magasin les mains vides. 他两手空空地从商店里出来了。",
+          "Il ressort de cette étude que les jeunes lisent moins. 从这项研究可以看出，年轻人读书变少了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -20995,6 +35974,64 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "restituer": {
+      "display": "restituer",
+      "prepositions": {
+        "à": [
+          "restituer qqch à qqn 把……归还给某人",
+          "Le musée a restitué les œuvres volées à leur pays d'origine. 博物馆把被盗的艺术品归还给了原属国。",
+          "Vous devez restituer les clés au propriétaire en partant. 离开时您必须把钥匙交还给房东。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "retentir": {
+      "display": "retentir",
+      "prepositions": {
+        "de": [
+          "retentir de qqch 回荡着（声音）",
+          "La salle retentit d'applaudissements. 大厅里掌声雷动。",
+          "La maison retentissait des rires des enfants. 屋子里回荡着孩子们的笑声。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "retirer": {
       "display": "retirer",
       "prepositions": {
@@ -21019,6 +36056,60 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "997312",
             "zh": "4846808",
             "eng": "4846787"
+          }
+        ]
+      }
+    },
+    "retomber": {
+      "display": "retomber",
+      "prepositions": {
+        "sur": [
+          "retomber sur qqn/qqch 落到某人头上；又碰到（责任等）",
+          "Comme toujours, tout le travail retombe sur moi. 和往常一样，所有的活儿都落到了我头上。",
+          "Le chat est retombé sur ses pattes. 猫稳稳地四脚着地。",
+          "En rangeant, je suis retombé sur de vieilles photos. 整理东西时，我又翻到了一些老照片。"
+        ],
+        "dans": [
+          "retomber dans qqch 重新陷入（坏习惯、状态）",
+          "Il a peur de retomber dans ses anciennes habitudes. 他怕重拾旧习。",
+          "Après cette nouvelle, elle est retombée dans la tristesse. 得知这个消息后，她又陷入了悲伤。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur",
+        "dans"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -21079,6 +36170,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "retrancher": {
+      "display": "retrancher",
+      "prepositions": {
+        "de": [
+          "retrancher qqch de qqch 从……中减去；删去",
+          "Retranchez dix de ce nombre. 从这个数中减去十。",
+          "On a retranché plusieurs scènes du film. 影片中删去了好几个场景。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "retrouver": {
       "display": "retrouver",
       "prepositions": {
@@ -21103,6 +36223,17 @@ const FRENCH_COLLOCATIONS_DATA = {
     "revenir": {
       "display": "revenir",
       "prepositions": {
+        "de": [
+          "revenir de qqch 从……回来",
+          "Nous revenons de vacances demain. 我们明天度假回来。",
+          "Il revient d'un long voyage en Asie. 他刚从亚洲长途旅行回来。",
+          "Il est revenu de Chine. 他从中国回来了。",
+          "Il est récemment revenu de France. 他最近从法国回来了。",
+          "Quand est-ce que tu reviens de Milan ? 你什么时候从米兰回来？",
+          "Je ne sais pas quand il est revenu de France. 我不知道他是什么时候从法国回来的。",
+          "Hier, alors que je revenais de l'école, j'ai soudain été pris sous une averse. 昨天我从学校回家途中突然下起了大雨。",
+          "On dit que les Américains considèrent le revenu d'un homme comme critère majeur de ses capacités. 据说美国人把一个人的收入视为评判他能力的重要尺度。"
+        ],
         "sur": [
           "revenir sur qqch 收回（诺言）；重提某事",
           "Je voudrais revenir sur ma déclaration précédente. 我要重新考虑我前面的声明。"
@@ -21117,10 +36248,61 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "de",
         "sur",
         "dans"
       ],
       "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "373609",
+            "zh": "343360",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "823261",
+            "zh": "616134",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "591742",
+            "zh": "632226",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "390288",
+            "zh": "408818",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "338984",
+            "zh": "338977",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "136458",
+            "zh": "437437",
+            "eng": ""
+          }
+        ],
         "sur": [
           {
             "kind": "curated",
@@ -21177,6 +36359,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "rimer",
       "prepositions": {
         "avec": [
+          "rimer avec qqch 与……押韵；（喻）意味着",
+          "Pour lui, vacances rime avec plage. 对他来说，度假就等于海滩。",
+          "Le mot « amour » rime avec « toujours ». 法语中「爱」与「永远」这两个词押韵。",
           "Industrialisation rime souvent avec pollution. 工业化常会导致环境污染。"
         ]
       },
@@ -21186,10 +36371,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "4572041",
             "zh": "10272133",
             "eng": "245164"
+          }
+        ]
+      }
+    },
+    "riposter": {
+      "display": "riposter",
+      "prepositions": {
+        "à": [
+          "riposter à qqch 回击；反驳（立即）",
+          "Elle a riposté à ses moqueries par un sourire. 她用微笑回应了他的嘲弄。",
+          "Le gardien a riposté à l'attaque sans hésiter. 门卫毫不犹豫地进行了反击。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -21288,6 +36514,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "rivaliser": {
+      "display": "rivaliser",
+      "prepositions": {
+        "avec": [
+          "rivaliser avec qqn/qqch 与……较量；可与……媲美",
+          "Ce petit restaurant peut rivaliser avec les plus grands. 这家小餐馆可以与最好的餐厅媲美。",
+          "Personne ne peut rivaliser avec elle au tennis. 打网球没人比得过她。",
+          "Les deux frères rivalisaient avec leurs cousins en tout. 两兄弟事事都要和表兄弟们比个高下。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "rompre": {
       "display": "rompre",
       "prepositions": {
@@ -21325,6 +36585,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "rouer",
       "prepositions": {
         "de": [
+          "rouer qqn de coups 把某人痛打一顿",
+          "Les voleurs l'ont roué de coups avant de s'enfuir. 小偷们把他暴打一顿后逃走了。",
           "Il a été roué de coups. 他被打得鼻青脸肿的。"
         ]
       },
@@ -21334,6 +36596,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "12697904",
             "zh": "11808806",
@@ -21342,10 +36612,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "rougir": {
+      "display": "rougir",
+      "prepositions": {
+        "de": [
+          "rougir de qqch 因……而脸红；以……为耻",
+          "Elle a rougi de plaisir quand on l'a félicitée. 受到称赞时，她高兴得脸都红了。",
+          "Tu n'as pas à rougir de tes origines. 你不必为自己的出身感到羞愧。",
+          "Le petit garçon rougissait de timidité. 小男孩害羞得脸红了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "rouler": {
       "display": "rouler",
       "prepositions": {
         "en": [
+          "rouler en qqch 开（车）；骑（车）",
+          "Il roule en voiture électrique depuis deux ans. 他开电动车已经两年了。",
+          "Ma sœur roule en scooter pour aller au travail. 我姐姐骑小摩托上班。",
           "Je préfère aller à pied que de rouler en vélo. 我更愿意走路，而不是骑自行车。"
         ],
         "sur": [
@@ -21358,6 +36665,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "1181386",
@@ -21375,10 +36694,100 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "rouspéter": {
+      "display": "rouspéter",
+      "prepositions": {
+        "contre": [
+          "rouspéter contre qqn/qqch 发牢骚；抱怨（口语）",
+          "Il rouspète toujours contre les prix. 他总是抱怨东西贵。",
+          "Arrête de rouspéter contre tout le monde ! 别老冲着所有人发牢骚了！"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "ruisseler": {
+      "display": "ruisseler",
+      "prepositions": {
+        "de": [
+          "ruisseler de qqch 淌着（汗水、雨水等）",
+          "Après la course, il ruisselait de sueur. 跑完步后，他汗流浃背。",
+          "Les vitres ruisselaient de pluie. 窗玻璃上雨水直流。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "râler": {
+      "display": "râler",
+      "prepositions": {
+        "contre": [
+          "râler contre qqn/qqch 发火；嘟囔抱怨（口语）",
+          "Les passagers râlaient contre le retard du train. 乘客们对火车晚点怨声载道。",
+          "Mon père râle contre le gouvernement devant la télé. 我爸对着电视骂政府。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "réagir": {
       "display": "réagir",
       "prepositions": {
         "à": [
+          "réagir à qqch 对……作出反应",
+          "Comment a-t-il réagi à la nouvelle ? 他听到消息后有什么反应？",
+          "Certaines personnes réagissent mal à ce médicament. 有些人对这种药反应不良。",
           "Notre corps réagit à nos sensations. 我们的身体会对我们的感情做出反应。"
         ]
       },
@@ -21388,10 +36797,58 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "913978",
             "zh": "1394895",
             "eng": "23476"
+          }
+        ]
+      }
+    },
+    "réclamer": {
+      "display": "réclamer",
+      "prepositions": {
+        "à": [
+          "réclamer qqch à qqn 向某人索要",
+          "Le propriétaire réclame trois mois de loyer à son locataire. 房东向房客索要三个月的房租。",
+          "Les enfants réclamaient des bonbons à leur grand-mère. 孩子们缠着奶奶要糖吃。",
+          "On te réclame au téléphone. 有你的电话。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "341750",
+            "zh": "871167",
+            "eng": "17453"
           }
         ]
       }
@@ -21401,10 +36858,16 @@ const FRENCH_COLLOCATIONS_DATA = {
       "prepositions": {
         "par": [
           "Une fois, il a été récompensé par une médaille d'or. 他曾经被授予金牌。"
+        ],
+        "pour": [
+          "récompenser qqn pour qqch 因……奖励某人",
+          "Elle a été récompensée pour son courage. 她因勇敢而受到嘉奖。",
+          "Le patron nous a récompensés pour notre travail. 老板为我们的辛勤工作给了奖励。"
         ]
       },
       "prepositionOrder": [
-        "par"
+        "par",
+        "pour"
       ],
       "sources": {
         "par": [
@@ -21413,6 +36876,49 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1074042",
             "zh": "334280",
             "eng": ""
+          }
+        ],
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "rédiger": {
+      "display": "rédiger",
+      "prepositions": {
+        "en": [
+          "rédiger qqch en qqch 用（某种语言）撰写",
+          "Le contrat est rédigé en anglais et en français. 合同用英法两种语言写成。",
+          "Rédigez votre lettre de motivation en français. 请用法语写求职信。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -21510,6 +37016,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "régler",
       "prepositions": {
         "par": [
+          "régler par qqch 用（某种方式）付款",
+          "Je peux régler par carte ? 我可以刷卡付款吗？",
+          "Les clients préfèrent régler par virement. 客户更喜欢通过转账付款。",
           "Vous devez régler par avance. 您必须预先付钱。"
         ]
       },
@@ -21519,10 +37028,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "par": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "701977",
             "zh": "787172",
             "eng": "273598"
+          }
+        ]
+      }
+    },
+    "régner": {
+      "display": "régner",
+      "prepositions": {
+        "sur": [
+          "régner sur qqn/qqch 统治；支配",
+          "Ce roi a régné sur le pays pendant quarante ans. 这位国王统治了这个国家四十年。",
+          "Elle règne sur la cuisine comme sur un royaume. 她把厨房当作自己的王国来掌管。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -21579,6 +37129,93 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1132084",
             "zh": "889365",
             "eng": "32704"
+          }
+        ]
+      }
+    },
+    "répartir": {
+      "display": "répartir",
+      "prepositions": {
+        "en": [
+          "répartir qqn/qqch en qqch 把……分成（若干组）",
+          "Le professeur a réparti la classe en petits groupes. 老师把全班分成了几个小组。",
+          "Les exercices sont répartis en quatre niveaux. 练习分成四个难度等级。"
+        ],
+        "entre": [
+          "répartir qqch entre qqn 在……之间分配",
+          "Le travail a été réparti entre trois équipes. 工作被分给了三个小组。",
+          "Répartissez les bonbons entre les enfants. 把糖果分给孩子们。"
+        ]
+      },
+      "prepositionOrder": [
+        "en",
+        "entre"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "entre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "en": "répartir qqch en + 份数 = 分成若干部分；répartir qqch entre + 人 = 在……之间分配",
+        "entre": "répartir qqch entre + 人 = 在……之间分配；répartir qqch en + 份数 = 分成若干部分"
+      }
+    },
+    "répliquer": {
+      "display": "répliquer",
+      "prepositions": {
+        "à": [
+          "répliquer à qqn/qqch 反驳；回击",
+          "Il n'a pas su quoi répliquer à cette accusation. 面对这项指控，他不知道如何反驳。",
+          "Ne réplique pas à ta mère sur ce ton ! 别用这种语气跟你妈顶嘴！",
+          "L'armée a répliqué à l'attaque dans la nuit. 军队当夜就对袭击进行了反击。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -21648,6 +37285,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "réprimander",
       "prepositions": {
         "pour": [
+          "réprimander qqn pour qqch 因……训斥某人",
+          "Le chef l'a réprimandé pour son retard. 主管因为他迟到训斥了他。",
           "Il m'a réprimandé pour mon oubli. 他责备了我的疏忽。"
         ]
       },
@@ -21657,10 +37296,47 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "pour": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "12452309",
             "zh": "842131",
             "eng": "7885825"
+          }
+        ]
+      }
+    },
+    "répugner": {
+      "display": "répugner",
+      "prepositions": {
+        "à": [
+          "répugner à faire qqch 厌恶做某事；不愿做",
+          "Je répugne à mentir, même pour rendre service. 即使是为了帮忙，我也不愿撒谎。",
+          "Elle répugnait à demander de l'aide. 她很不愿意求人帮忙。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -21696,15 +37372,35 @@ const FRENCH_COLLOCATIONS_DATA = {
     "réserver": {
       "display": "réserver",
       "prepositions": {
+        "à": [
+          "réserver qqch à qqn 留给某人；专供",
+          "Ces places sont réservées aux personnes âgées. 这些座位专供老人使用。",
+          "L'avenir réserve parfois de belles surprises aux plus patients. 未来有时会给最有耐心的人带来惊喜。"
+        ],
         "pour": [
           "J'ai réservé pour ce soir. 我有今晚的预订。",
           "J'essaie de me réserver pour le dessert. 我尽量留着胃吃甜点。"
         ]
       },
       "prepositionOrder": [
+        "à",
         "pour"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "pour": [
           {
             "kind": "indirect",
@@ -21725,6 +37421,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "résider",
       "prepositions": {
         "dans": [
+          "résider dans qqch 在于",
+          "La difficulté réside dans le choix des mots. 难点在于措辞。",
+          "Tout le charme de ce village réside dans sa simplicité. 这个村子的魅力全在于它的质朴。",
           "La beauté réside dans les yeux de celui qui regarde. 美驻留在看的那个人的眼里。"
         ]
       },
@@ -21733,6 +37432,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "3964",
@@ -21792,6 +37503,40 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "337016",
             "zh": "336874",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "résulter": {
+      "display": "résulter",
+      "prepositions": {
+        "de": [
+          "résulter de qqch 由……产生；源于",
+          "Cet accident résulte d'une erreur humaine. 这起事故是人为失误造成的。",
+          "Les dégâts résultant de la tempête sont considérables. 暴风雨造成的损失相当大。",
+          "Il résulte de l'enquête que personne n'était responsable. 调查结果表明没有人应负责任。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -21968,9 +37713,86 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "réviser": {
+      "display": "réviser",
+      "prepositions": {
+        "pour": [
+          "réviser pour qqch 为（考试）复习",
+          "Je dois réviser pour l'examen de demain. 我得为明天的考试复习。",
+          "Elle a révisé pour le bac tout le mois de juin. 整个六月她都在复习备战高考。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "révéler": {
+      "display": "révéler",
+      "prepositions": {
+        "à": [
+          "révéler qqch à qqn 向某人透露",
+          "Il a révélé à la presse le nom du coupable. 他向媒体透露了罪犯的名字。",
+          "Ne révèle ce code à personne. 别把这个密码透露给任何人。",
+          "Il a révélé son secret à ses amis. 他把她的秘密告诉了他的朋友。",
+          "Tom ne peut pas révéler à Marie ses véritables sentiments. 汤姆不能把他的真实感受告诉玛丽。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "334872",
+            "zh": "334876",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "1045446",
+            "zh": "1397143",
+            "eng": "1029476"
+          }
+        ]
+      }
+    },
     "rêver": {
       "display": "rêver",
       "prepositions": {
+        "à": [
+          "rêver à qqch 想着；遐想",
+          "Elle rêvait à son prochain voyage en regardant la pluie. 她望着雨，想着下一次旅行。",
+          "À quoi rêves-tu ? 你在想什么呢？"
+        ],
         "de": [
           "rêver de qqch 梦见；梦想某事",
           "J'ai rêvé de toi. 我梦到你了。",
@@ -21982,9 +37804,24 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "de"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "de": [
           {
             "kind": "curated",
@@ -22027,12 +37864,89 @@ const FRENCH_COLLOCATIONS_DATA = {
             "eng": "4404628"
           }
         ]
+      },
+      "notes": {
+        "de": "rêver de = 梦见、渴望；rêver à = 想着、遐想",
+        "à": "rêver à = 想着、遐想；rêver de = 梦见、渴望"
+      }
+    },
+    "s'abandonner": {
+      "display": "s'abandonner",
+      "prepositions": {
+        "à": [
+          "s'abandonner à qqch 沉溺于；任由（情绪）支配",
+          "Il s'est abandonné au désespoir après sa faillite. 破产之后，他陷入了绝望。",
+          "En vacances, elle s'abandonne enfin au plaisir de ne rien faire. 度假时，她终于可以尽情享受无所事事的乐趣。",
+          "L'étudiant s'abandonna au désespoir. 这个学生自暴自弃了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1181658",
+            "zh": "353592",
+            "eng": "48905"
+          }
+        ]
+      }
+    },
+    "s'abattre": {
+      "display": "s'abattre",
+      "prepositions": {
+        "sur": [
+          "s'abattre sur qqn/qqch 突然降临到……上（灾祸、暴雨等）",
+          "Un violent orage s'est abattu sur la ville hier soir. 昨晚一场猛烈的暴风雨袭击了这座城市。",
+          "Le malheur s'abat souvent sur les plus fragiles. 不幸往往落在最脆弱的人身上。",
+          "Les critiques se sont abattues sur le ministre dès le lendemain. 第二天，批评就铺天盖地地落到了部长头上。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
       }
     },
     "s'abstenir": {
       "display": "s'abstenir",
       "prepositions": {
         "de": [
+          "s'abstenir de qqch / de faire qqch 避免、克制做某事",
+          "Abstenez-vous de tout commentaire, s'il vous plaît. 请不要发表任何评论。",
+          "Le médecin m'a conseillé de m'abstenir d'alcool. 医生建议我戒酒。",
           "Prière de s'abstenir de fumer dans l'ascenseur. 电梯内不准吸烟。"
         ]
       },
@@ -22042,6 +37956,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "10830196",
             "zh": "523893",
@@ -22050,10 +37976,110 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'abîmer": {
+      "display": "s'abîmer",
+      "prepositions": {
+        "dans": [
+          "s'abîmer dans qqch 沉浸于；陷入（思绪等）",
+          "Elle s'abîmait dans ses pensées pendant des heures. 她常常一连几个小时陷入沉思。",
+          "Après son départ, il s'est abîmé dans le travail. 她走后，他一头扎进了工作里。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'acclimater": {
+      "display": "s'acclimater",
+      "prepositions": {
+        "à": [
+          "s'acclimater à qqch 适应（气候、新环境）",
+          "Il m'a fallu un mois pour m'acclimater à la chaleur. 我花了一个月才适应这里的炎热。",
+          "Les enfants se sont vite acclimatés à leur nouvelle école. 孩子们很快就适应了新学校。",
+          "Cette plante ne s'acclimate pas au froid. 这种植物适应不了寒冷。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'accommoder": {
+      "display": "s'accommoder",
+      "prepositions": {
+        "de": [
+          "s'accommoder de qqch 将就；勉强接受",
+          "Nous nous accommoderons d'une petite chambre. 我们住个小房间也就将就了。",
+          "Elle s'accommode mal du bruit de la ville. 她很难忍受城市的噪音。",
+          "Il faut savoir s'accommoder de ce qu'on a. 要懂得满足于自己所拥有的。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'accorder": {
       "display": "s'accorder",
       "prepositions": {
         "avec": [
+          "s'accorder avec qqn/qqch 与……一致；与……相配",
+          "L'adjectif s'accorde avec le nom en genre et en nombre. 形容词在性和数上要与名词配合。",
+          "Ses actes ne s'accordent pas avec ses paroles. 他言行不一。",
           "Ce chapeau rouge s'accorde bien avec sa robe. 这顶红帽子很衬她的裙子。"
         ]
       },
@@ -22063,10 +38089,217 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "334083",
             "zh": "334073",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "s'accouder": {
+      "display": "s'accouder",
+      "prepositions": {
+        "à": [
+          "s'accouder à qqch 把胳膊肘支在……上",
+          "Il s'est accoudé au comptoir pour commander un café. 他把胳膊肘靠在吧台上点了一杯咖啡。",
+          "Accoudée à la fenêtre, elle regardait passer les gens. 她倚着窗台，看着行人来来往往。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'acharner": {
+      "display": "s'acharner",
+      "prepositions": {
+        "à": [
+          "s'acharner à faire qqch 执意要做某事；拼命做某事",
+          "Elle s'acharne à réparer ce vieux vélo. 她非要把这辆旧自行车修好不可。",
+          "Pourquoi t'acharnes-tu à vouloir tout contrôler ? 你为什么非要什么都掌控不可？"
+        ],
+        "sur": [
+          "s'acharner sur qqn/qqch 对……紧咬不放；拼命折腾",
+          "Pourquoi la presse s'acharne-t-elle sur cette actrice ? 为什么媒体对这位女演员穷追猛打？",
+          "Il s'acharne sur ce problème de maths depuis ce matin. 他从早上起就一直死磕这道数学题。"
+        ],
+        "contre": [
+          "s'acharner contre qqn/qqch 与……顽强对抗；执意反对",
+          "Le sort semble s'acharner contre cette famille. 命运似乎总跟这一家人过不去。",
+          "Les pompiers se sont acharnés contre les flammes toute la nuit. 消防员整夜与大火顽强搏斗。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "sur",
+        "contre"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "contre": "s'acharner contre = 顽强对抗、与……作对，语气强调敌对；s'acharner sur 更强调“盯住一个对象”",
+        "sur": "s'acharner sur qqn/qqch = 盯住不放（对人：迫害；对事：死磕）；s'acharner à faire = 拼命去做",
+        "à": "s'acharner à faire = 执意、拼命去做；s'acharner sur / contre qqn = 对某人穷追猛打、跟某人过不去"
+      }
+    },
+    "s'acoquiner": {
+      "display": "s'acoquiner",
+      "prepositions": {
+        "avec": [
+          "s'acoquiner avec qqn 与某人勾搭；与坏人为伍",
+          "Il s'est acoquiné avec une bande de voyous. 他跟一帮流氓混在了一起。",
+          "Sa mère a peur qu'elle s'acoquine avec des gens peu recommandables. 她母亲怕她跟不三不四的人混在一起。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'acquitter": {
+      "display": "s'acquitter",
+      "prepositions": {
+        "de": [
+          "s'acquitter de qqch 履行（义务）；还清（债务）",
+          "Il s'est acquitté de sa mission avec sérieux. 他认真地完成了自己的任务。",
+          "Vous devez vous acquitter de cette dette avant juin. 您必须在六月前还清这笔债。",
+          "Chaque citoyen doit s'acquitter de ses impôts. 每个公民都必须缴纳税款。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'activer": {
+      "display": "s'activer",
+      "prepositions": {
+        "à": [
+          "s'activer à faire qqch 忙着、赶紧做某事",
+          "Les cuisiniers s'activent à préparer le banquet. 厨师们正忙着准备宴席。",
+          "Allez, activez-vous à ranger vos affaires ! 快，赶紧收拾你们的东西！"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -22117,6 +38350,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'adonner",
       "prepositions": {
         "à": [
+          "s'adonner à qqch 沉迷于；专心从事",
+          "Depuis sa retraite, il s'adonne à la peinture. 退休以后，他潜心作画。",
+          "Elle s'adonnait au jeu en cachette. 她偷偷沉迷于赌博。",
           "Finalement elle s'adonna à la tentation et mangea le gâteau en entier. 她终于受不了诱惑，吃掉了整件蛋糕。"
         ]
       },
@@ -22126,6 +38362,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "338999",
             "zh": "338995",
@@ -22134,11 +38382,62 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'adosser": {
+      "display": "s'adosser",
+      "prepositions": {
+        "à": [
+          "s'adosser à qqch 背靠着……",
+          "Il s'est adossé à un arbre pour se reposer. 他背靠着一棵树休息。",
+          "Adossée à la porte, elle écoutait la conversation. 她背靠着门偷听谈话。"
+        ],
+        "contre": [
+          "s'adosser contre qqch 背倚在……上",
+          "Ne t'adosse pas contre la vitre, elle est fragile. 别背靠在玻璃上，它很容易碎。",
+          "Les deux hommes s'adossaient contre le mur en fumant. 两个男人背倚着墙抽烟。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "contre"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'adresser": {
       "display": "s'adresser",
       "prepositions": {
         "à": [
-          "s'adresser à qqn 向某人打听；找某人办事"
+          "s'adresser à qqn 向某人打听；找某人办事",
+          "Pour tout renseignement, adressez-vous à l'accueil. 如需咨询，请到接待处询问。",
+          "Ce livre s'adresse aux jeunes lecteurs. 这本书是面向青少年读者的。"
         ]
       },
       "prepositionOrder": [
@@ -22148,6 +38447,164 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'affairer": {
+      "display": "s'affairer",
+      "prepositions": {
+        "à": [
+          "s'affairer à faire qqch 忙着做某事",
+          "Toute la famille s'affairait à préparer le repas de Noël. 全家人都在忙着准备圣诞大餐。",
+          "Les serveurs s'affairent à dresser les tables avant midi. 服务员们在中午前忙着摆桌子。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'affaler": {
+      "display": "s'affaler",
+      "prepositions": {
+        "sur": [
+          "s'affaler sur qqch 瘫坐在……上",
+          "En rentrant, il s'est affalé sur le canapé. 一回到家，他就瘫倒在沙发上。",
+          "Ne t'affale pas sur la table quand tu manges. 吃饭时别趴在桌子上。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'affilier": {
+      "display": "s'affilier",
+      "prepositions": {
+        "à": [
+          "s'affilier à qqch 加入（组织、协会）",
+          "Elle s'est affiliée à un syndicat l'an dernier. 她去年加入了工会。",
+          "Notre club va s'affilier à la fédération nationale. 我们俱乐部将加入全国联合会。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'affliger": {
+      "display": "s'affliger",
+      "prepositions": {
+        "de": [
+          "s'affliger de qqch 为某事感到悲伤",
+          "Il s'afflige de voir son village se vider. 看到村子里的人越来越少，他很伤心。",
+          "Ne t'afflige pas de si peu. 别为这点小事难过。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'affranchir": {
+      "display": "s'affranchir",
+      "prepositions": {
+        "de": [
+          "s'affranchir de qqch 摆脱（束缚）",
+          "Elle voulait s'affranchir de l'autorité de ses parents. 她想摆脱父母的管束。",
+          "Il est difficile de s'affranchir de ses vieilles habitudes. 摆脱旧习惯很难。",
+          "Le pays s'est affranchi de la domination coloniale en 1960. 这个国家在1960年摆脱了殖民统治。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -22242,10 +38699,154 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'aider": {
+      "display": "s'aider",
+      "prepositions": {
+        "de": [
+          "s'aider de qqch 借助某物",
+          "Tu peux t'aider d'un dictionnaire pour cet exercice. 做这个练习时你可以借助词典。",
+          "Le vieil homme marchait en s'aidant d'une canne. 老人拄着拐杖走路。",
+          "Aidez-vous de vos notes pour répondre. 请参考你们的笔记来回答。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'alarmer": {
+      "display": "s'alarmer",
+      "prepositions": {
+        "de": [
+          "s'alarmer de qqch 对某事感到担忧",
+          "Les médecins s'alarment de la hausse des cas de diabète. 医生们对糖尿病病例的增加感到担忧。",
+          "Ne vous alarmez pas de ce petit retard. 别为这点小小的延误担心。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'aligner": {
+      "display": "s'aligner",
+      "prepositions": {
+        "sur": [
+          "s'aligner sur qqn/qqch 向……看齐；与……保持一致",
+          "Les petits magasins doivent s'aligner sur les prix des supermarchés. 小商店不得不向超市的价格看齐。",
+          "Le parti s'est aligné sur la position du gouvernement. 该党与政府立场保持了一致。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'allier": {
+      "display": "s'allier",
+      "prepositions": {
+        "à": [
+          "s'allier à qqn 与某人结盟",
+          "La France s'est alliée à l'Angleterre pendant la guerre. 战争期间法国与英国结成了同盟。",
+          "Le petit parti s'alliera à la gauche aux élections. 这个小党将在选举中与左派联合。"
+        ],
+        "avec": [
+          "s'allier avec qqn 和某人联手",
+          "Pour gagner, il a dû s'allier avec son ancien rival. 为了获胜，他不得不和昔日的对手联手。",
+          "Les deux entreprises se sont alliées avec un groupe japonais. 两家公司与一家日本集团合作了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "avec"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'allonger": {
       "display": "s'allonger",
       "prepositions": {
         "sur": [
+          "s'allonger sur qqch 躺在……上",
+          "Allonge-toi sur le lit si tu es fatigué. 累了就在床上躺一会儿。",
+          "Le patient s'est allongé sur la table d'examen. 病人躺到了检查台上。",
           "Elle s'allongea sur l'herbe. 她在草地上躺了下来。"
         ]
       },
@@ -22255,10 +38856,116 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "134516",
             "zh": "346844",
             "eng": "315539"
+          }
+        ]
+      }
+    },
+    "s'amouracher": {
+      "display": "s'amouracher",
+      "prepositions": {
+        "de": [
+          "s'amouracher de qqn 迷恋上某人（一时的）",
+          "À seize ans, elle s'est amourachée de son professeur de guitare. 十六岁时，她迷上了自己的吉他老师。",
+          "Il s'amourache d'une nouvelle fille chaque été. 他每个夏天都会迷上一个新女孩。",
+          "Pierre s'amouracha de la jeune fille. 彼得爱上了那个女孩。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "814721",
+            "zh": "351239",
+            "eng": "1263607"
+          }
+        ]
+      }
+    },
+    "s'améliorer": {
+      "display": "s'améliorer",
+      "prepositions": {
+        "en": [
+          "s'améliorer en qqch 在（某科目、技能）上进步",
+          "Mon fils s'est beaucoup amélioré en anglais cette année. 我儿子今年英语进步很大。",
+          "Tu t'amélioreras en dessin si tu pratiques tous les jours. 如果每天练习，你的画画水平会提高的。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'ancrer": {
+      "display": "s'ancrer",
+      "prepositions": {
+        "dans": [
+          "s'ancrer dans qqch 扎根于；深深印在……中",
+          "Cette idée s'est ancrée dans l'esprit des gens. 这个观念已深入人心。",
+          "Ces traditions s'ancrent dans une histoire très ancienne. 这些传统植根于悠久的历史。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -22289,6 +38996,69 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'apitoyer": {
+      "display": "s'apitoyer",
+      "prepositions": {
+        "sur": [
+          "s'apitoyer sur qqn/qqch 怜悯；同情",
+          "Arrête de t'apitoyer sur ton sort et agis ! 别再自怨自艾了，行动起来！",
+          "Tout le monde s'apitoyait sur ce pauvre chien abandonné. 大家都很同情这只被遗弃的可怜小狗。",
+          "Elle ne veut pas qu'on s'apitoie sur elle. 她不想让别人可怜她。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'apparenter": {
+      "display": "s'apparenter",
+      "prepositions": {
+        "à": [
+          "s'apparenter à qqch 类似于；近乎",
+          "Ce qu'il a fait s'apparente à du vol. 他的所作所为近乎偷窃。",
+          "Le catalan s'apparente à l'espagnol et au français. 加泰罗尼亚语与西班牙语和法语相近。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'appeler": {
       "display": "s'appeler",
       "prepositions": {
@@ -22310,10 +39080,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'appesantir": {
+      "display": "s'appesantir",
+      "prepositions": {
+        "sur": [
+          "s'appesantir sur qqch 在（某话题）上纠缠、多谈",
+          "Je ne vais pas m'appesantir sur les détails. 我就不细说这些细节了。",
+          "Le rapport s'appesantit trop sur les erreurs du passé. 这份报告在过去的错误上着墨太多。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'appliquer": {
       "display": "s'appliquer",
       "prepositions": {
         "à": [
+          "s'appliquer à qqn/qqch / à faire qqch 适用于；专心致力于",
+          "Cette loi s'applique à tous les citoyens. 这部法律适用于全体公民。",
+          "L'élève s'applique à écrire proprement. 这个学生专心地把字写整齐。",
           "Cette règle s'applique à toi aussi. 这个规则对你也适用。"
         ],
         "dans": [
@@ -22326,6 +39128,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "335447",
@@ -22380,7 +39194,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'approvisionner",
       "prepositions": {
         "de": [
-          "s'approvisionner de qqch 储备某物"
+          "s'approvisionner de qqch 储备某物",
+          "Avant l'hiver, nous nous approvisionnons de bois de chauffage. 入冬前我们会备好柴火。"
         ]
       },
       "prepositionOrder": [
@@ -22390,6 +39205,10 @@ const FRENCH_COLLOCATIONS_DATA = {
         "de": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -22425,6 +39244,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'appuyer",
       "prepositions": {
         "sur": [
+          "s'appuyer sur qqn/qqch 依靠；以……为依据",
+          "Tu peux toujours t'appuyer sur tes amis. 你随时都可以依靠你的朋友。",
+          "Son raisonnement s'appuie sur des faits précis. 他的推理以确凿的事实为依据。",
           "La malade leva la tête et s'appuya sur la pyramide de coussins richement brodés. 女病者抬头把身体靠在以金字塔的样子排成的绚丽绣花垫。"
         ],
         "contre": [
@@ -22438,6 +39260,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "451002",
@@ -22459,10 +39293,76 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'arc-bouter": {
+      "display": "s'arc-bouter",
+      "prepositions": {
+        "contre": [
+          "s'arc-bouter contre qqch 用力抵住……",
+          "Il s'est arc-bouté contre la porte pour la bloquer. 他用身子死死抵住门，不让它打开。",
+          "Le syndicat s'arc-boute contre toute réforme. 工会顽固地反对一切改革。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'armer": {
+      "display": "s'armer",
+      "prepositions": {
+        "de": [
+          "s'armer de qqch 以……武装自己；（喻）拿出（耐心、勇气）",
+          "Il faut s'armer de patience avec les enfants. 对孩子要有足够的耐心。",
+          "Elle s'est armée de courage et a frappé à la porte. 她鼓起勇气敲了门。",
+          "Les manifestants s'étaient armés de bâtons. 示威者们手里拿着棍棒。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'arranger": {
       "display": "s'arranger",
       "prepositions": {
         "pour": [
+          "s'arranger pour faire qqch 设法做到某事",
+          "Arrange-toi pour arriver avant huit heures. 你想办法八点前到。",
+          "Elle s'est arrangée pour avoir sa journée libre. 她设法空出了一整天。",
           "Je suis sûr que les choses vont s'arranger pour le mieux. 我肯定事情会往好的方向发展。"
         ]
       },
@@ -22471,6 +39371,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "12174",
@@ -22574,6 +39486,132 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'assurer": {
+      "display": "s'assurer",
+      "prepositions": {
+        "de": [
+          "s'assurer de qqch 确认；确保",
+          "Assure-toi d'avoir bien fermé la porte. 确认一下你是不是把门关好了。",
+          "Le guide s'est assuré de la présence de tout le monde. 导游确认大家都到齐了。",
+          "Il faut que tu t'assures de l'heure du départ. 你得确认一下出发时间。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'attaquer": {
+      "display": "s'attaquer",
+      "prepositions": {
+        "à": [
+          "s'attaquer à qqn/qqch 攻击；着手解决（问题）",
+          "Il faut s'attaquer aux causes de la pauvreté. 必须从根源上解决贫困问题。",
+          "Le requin ne s'attaque presque jamais à l'homme. 鲨鱼几乎从不攻击人类。",
+          "Cette année, je m'attaque enfin à l'apprentissage du piano. 今年我终于开始学钢琴了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'attarder": {
+      "display": "s'attarder",
+      "prepositions": {
+        "sur": [
+          "s'attarder sur qqch 在……上多作停留",
+          "Le professeur s'est attardé sur ce point difficile. 老师在这个难点上多讲了一会儿。",
+          "Ne nous attardons pas sur ce sujet. 我们别在这个话题上多耽搁了。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'atteler": {
+      "display": "s'atteler",
+      "prepositions": {
+        "à": [
+          "s'atteler à qqch 着手、投入（工作）",
+          "Demain, je m'attelle à la rédaction de mon mémoire. 明天我就开始动笔写论文。",
+          "Le gouvernement s'est attelé à la réforme des retraites. 政府着手进行养老金改革。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'attendre": {
       "display": "s'attendre",
       "prepositions": {
@@ -22607,6 +39645,151 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'attendrir": {
+      "display": "s'attendrir",
+      "prepositions": {
+        "sur": [
+          "s'attendrir sur qqn/qqch 对……心软、动情",
+          "Elle s'attendrit sur les photos de ses petits-enfants. 她看着孙辈们的照片心都软了。",
+          "Ne t'attendris pas sur son sort, il l'a bien cherché. 别心疼他，他这是自找的。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'attrister": {
+      "display": "s'attrister",
+      "prepositions": {
+        "de": [
+          "s'attrister de qqch 为某事感到难过",
+          "Il s'attriste de voir ses amis partir un à un. 看着朋友们一个个离开，他很难过。",
+          "Ne t'attriste pas de cet échec. 别为这次失败难过。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'avachir": {
+      "display": "s'avachir",
+      "prepositions": {
+        "sur": [
+          "s'avachir sur qqch 懒洋洋地瘫在……上",
+          "Tous les soirs, il s'avachit sur le canapé devant la télé. 每天晚上他都懒洋洋地瘫在沙发上看电视。",
+          "Tiens-toi droit, ne t'avachis pas sur ta chaise. 坐直了，别在椅子上瘫着。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'aventurer": {
+      "display": "s'aventurer",
+      "prepositions": {
+        "dans": [
+          "s'aventurer dans qqch 冒险进入",
+          "Ne vous aventurez pas dans la forêt la nuit. 夜里不要贸然进入森林。",
+          "Il s'est aventuré dans des affaires douteuses. 他冒险涉足了一些可疑的生意。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'aviser": {
+      "display": "s'aviser",
+      "prepositions": {
+        "de": [
+          "s'aviser de qqch / de faire qqch 发觉；竟敢做某事",
+          "Ne t'avise pas de toucher à mon ordinateur ! 你敢碰我的电脑试试！",
+          "Il s'est avisé trop tard de son erreur. 他发现自己的错误时已经太晚了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'efforcer": {
       "display": "s'efforcer",
       "prepositions": {
@@ -22629,6 +39812,69 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "11707071",
             "zh": "5963255",
             "eng": "296804"
+          }
+        ]
+      }
+    },
+    "s'emparer": {
+      "display": "s'emparer",
+      "prepositions": {
+        "de": [
+          "s'emparer de qqch 夺取；抓住",
+          "Le voleur s'est emparé du sac et a disparu dans la foule. 小偷抢走了包，消失在人群中。",
+          "Les rebelles se sont emparés de la capitale en une nuit. 叛军一夜之间占领了首都。",
+          "Une grande tristesse s'empara d'elle quand elle relut la lettre. 她重读那封信时，一阵巨大的悲伤涌上心头。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'empresser": {
+      "display": "s'empresser",
+      "prepositions": {
+        "de": [
+          "s'empresser de faire qqch 赶紧做某事",
+          "Dès son arrivée, il s'est empressé d'appeler sa mère. 他一到就赶紧给母亲打了电话。",
+          "Elle s'empressa de cacher la lettre sous un livre. 她急忙把信藏到一本书下面。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -22679,6 +39925,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'enfuir",
       "prepositions": {
         "en": [
+          "s'enfuir en courant 逃走（以某种方式）",
+          "Les voleurs se sont enfuis en voiture. 小偷们开车逃跑了。",
           "Percevant le danger, il s'enfuit en courant. 他感觉到危险就逃跑了。"
         ]
       },
@@ -22687,6 +39935,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "579736",
@@ -22700,7 +39956,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'engager",
       "prepositions": {
         "à": [
-          "s'engager à faire qqch 承诺做某事"
+          "s'engager à faire qqch 承诺做某事",
+          "Il s'est engagé à rembourser la somme avant Noël. 他承诺在圣诞节前还清这笔钱。",
+          "Le gouvernement s'engage à réduire les impôts. 政府承诺减税。"
         ]
       },
       "prepositionOrder": [
@@ -22711,6 +39969,101 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'engouffrer": {
+      "display": "s'engouffrer",
+      "prepositions": {
+        "dans": [
+          "s'engouffrer dans qqch 冲进；涌入",
+          "Le vent s'engouffrait dans la cheminée. 风灌进了烟囱。",
+          "Les voyageurs se sont engouffrés dans le métro. 乘客们一窝蜂地涌进了地铁。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'enivrer": {
+      "display": "s'enivrer",
+      "prepositions": {
+        "de": [
+          "s'enivrer de qqch 陶醉于某事",
+          "Il s'enivrait du parfum des roses. 他陶醉于玫瑰的芬芳。",
+          "Les jeunes vainqueurs s'enivraient de leur succès. 年轻的胜利者们陶醉于自己的成功。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'ennuyer": {
+      "display": "s'ennuyer",
+      "prepositions": {
+        "de": [
+          "s'ennuyer de qqn/qqch 想念某人（某物）",
+          "Depuis qu'il vit à Montréal, il s'ennuie de sa famille. 自从住在蒙特利尔，他一直很想念家人。",
+          "Tu ne t'ennuies pas de ton ancien quartier ? 你不想念你以前住的街区吗？"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -22719,6 +40072,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'enorgueillir",
       "prepositions": {
         "de": [
+          "s'enorgueillir de qqch 以某事为荣",
+          "La ville s'enorgueillit de sa cathédrale gothique. 这座城市以其哥特式大教堂为傲。",
           "Un bon artisan s'enorgueillit de son ouvrage. 好的工匠为自己的作品感到骄傲。"
         ]
       },
@@ -22727,6 +40082,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "12266009",
@@ -22783,10 +40146,128 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'enticher": {
+      "display": "s'enticher",
+      "prepositions": {
+        "de": [
+          "s'enticher de qqn/qqch 迷上某人（某物）",
+          "Ma fille s'est entichée d'un chanteur coréen. 我女儿迷上了一个韩国歌手。",
+          "Il s'entiche d'un nouveau passe-temps tous les mois. 他每个月都会迷上一个新爱好。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'entourer": {
+      "display": "s'entourer",
+      "prepositions": {
+        "de": [
+          "s'entourer de qqn/qqch 让自己身边围绕着某人（某物）",
+          "Un bon chef sait s'entourer de gens compétents. 好领导懂得让能干的人围在自己身边。",
+          "Elle aime s'entourer de livres et de plantes. 她喜欢身边摆满书和植物。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'entraîner": {
+      "display": "s'entraîner",
+      "prepositions": {
+        "à": [
+          "s'entraîner à qqch / à faire qqch 练习（做某事）",
+          "Elle s'entraîne à parler en public devant son miroir. 她对着镜子练习当众讲话。",
+          "Les enfants se sont entraînés au saut en longueur tout l'après-midi. 孩子们整个下午都在练跳远。",
+          "Entraîne-toi à taper sans regarder le clavier. 练习不看键盘打字吧。"
+        ],
+        "pour": [
+          "s'entraîner pour qqch 为某事（比赛等）进行训练",
+          "Il s'entraîne tous les matins pour le marathon de Paris. 他每天早上为巴黎马拉松进行训练。",
+          "L'équipe s'entraînera deux fois par jour pour la finale. 为了决赛，球队将每天训练两次。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "pour"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "pour": "s'entraîner pour = 为（比赛等）备战；s'entraîner à = 练习某种技能",
+        "à": "s'entraîner à + 技能／动词 = 练习某项本领；s'entraîner pour + 目标（比赛、考试）= 为某个目标而训练"
+      }
+    },
     "s'entretenir": {
       "display": "s'entretenir",
       "prepositions": {
         "avec": [
+          "s'entretenir avec qqn 与某人交谈、会谈",
+          "Le ministre s'est entretenu avec son homologue italien. 部长与意大利同行进行了会谈。",
           "Elle est occupée à l'instant et ne peut s'entretenir avec toi. 她现在忙，不能跟你说话。"
         ]
       },
@@ -22796,6 +40277,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1939231",
             "zh": "1397358",
@@ -22804,10 +40293,41 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'entêter": {
+      "display": "s'entêter",
+      "prepositions": {
+        "à": [
+          "s'entêter à faire qqch 执意做某事",
+          "Il s'entête à réparer la voiture lui-même. 他执意要自己修车。",
+          "Ne t'entête pas à vouloir tout contrôler. 别总想着什么都要掌控。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'envelopper": {
       "display": "s'envelopper",
       "prepositions": {
         "dans": [
+          "s'envelopper dans qqch 用某物把自己裹起来",
+          "Il s'est enveloppé dans son manteau pour affronter le vent. 他裹紧大衣迎着风走去。",
           "Elle s'enveloppa dans une couverture. 她用一条毯子把自己裹起来。"
         ]
       },
@@ -22816,6 +40336,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "12122519",
@@ -22829,6 +40357,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'envoler",
       "prepositions": {
         "pour": [
+          "s'envoler pour un lieu 飞往某地",
+          "Demain, nous nous envolons pour Tokyo. 明天我们飞往东京。",
           "Trente-deux boursiers malgaches s'envolent pour la Chine. 三十二名领奖学金的马达加斯加学生飞往中国。"
         ]
       },
@@ -22837,6 +40367,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "6204",
@@ -22894,6 +40432,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "9037610",
             "zh": "336428",
             "eng": "312035"
+          }
+        ]
+      }
+    },
+    "s'extasier": {
+      "display": "s'extasier",
+      "prepositions": {
+        "sur": [
+          "s'extasier sur qqch 对某物赞叹不已",
+          "Les touristes s'extasient sur la beauté du paysage. 游客们对风景之美赞叹不已。",
+          "Tout le monde s'est extasié sur le gâteau de mariage. 大家都对婚礼蛋糕赞不绝口。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -22959,10 +40526,41 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'identifier": {
+      "display": "s'identifier",
+      "prepositions": {
+        "à": [
+          "s'identifier à qqn 认同某人；与某人产生共鸣",
+          "Beaucoup d'adolescents s'identifient au héros de ce roman. 许多青少年在这部小说的主人公身上看到了自己。",
+          "Je ne me suis jamais identifiée à ce personnage. 我从来没有认同过这个角色。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'immiscer": {
       "display": "s'immiscer",
       "prepositions": {
         "dans": [
+          "s'immiscer dans qqch 插手某事",
+          "Je refuse que ma belle-mère s'immisce dans notre couple. 我不许婆婆插手我们夫妻的事。",
           "Les journalistes n'hésitent pas à s'immiscer dans l'intimité des gens. 记者没有犹豫地去干涉了人们的私生活。"
         ]
       },
@@ -22972,6 +40570,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "576065",
             "zh": "614789",
@@ -22980,13 +40586,127 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'indigner": {
+      "display": "s'indigner",
+      "prepositions": {
+        "de": [
+          "s'indigner de qqch 对某事感到愤慨",
+          "Les parents s'indignent de la fermeture de l'école. 家长们对学校关闭感到愤慨。",
+          "Je m'indigne de voir tant de gaspillage. 看到这么多浪费我很气愤。"
+        ],
+        "contre": [
+          "s'indigner contre qqn/qqch 对某人（某事）表示抗议",
+          "Toute la presse s'est indignée contre cette décision injuste. 所有媒体都对这项不公正的决定表示愤慨。",
+          "Les voisins s'indignent contre le bruit de l'usine. 邻居们对工厂的噪音感到愤怒。"
+        ]
+      },
+      "prepositionOrder": [
+        "de",
+        "contre"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "contre": "s'indigner contre = 对……提出抗议；s'indigner de = 为……感到愤慨",
+        "de": "s'indigner de = 因某事（原因）感到气愤；s'indigner contre = 针对某人／某事表示抗议，对抗意味更强"
+      }
+    },
+    "s'infiltrer": {
+      "display": "s'infiltrer",
+      "prepositions": {
+        "dans": [
+          "s'infiltrer dans qqch 渗入；潜入某处",
+          "L'eau de pluie s'est infiltrée dans le mur. 雨水渗进了墙里。",
+          "Un journaliste s'était infiltré dans la secte. 一名记者潜入了那个邪教组织。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'ingénier": {
+      "display": "s'ingénier",
+      "prepositions": {
+        "à": [
+          "s'ingénier à faire qqch 想方设法做某事",
+          "Mon petit frère s'ingénie à m'agacer. 我弟弟千方百计地惹我生气。",
+          "Les organisateurs se sont ingéniés à satisfaire tout le monde. 组织者想尽办法让每个人都满意。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'inquiéter": {
       "display": "s'inquiéter",
       "prepositions": {
         "de": [
-          "s'inquiéter de qqch 为某事担心"
+          "s'inquiéter de qqch 为某事担心",
+          "Elle s'inquiète de l'absence de nouvelles. 一直没有消息，她很担心。"
         ],
         "pour": [
+          "s'inquiéter pour qqn 为某人担心",
+          "Ne t'inquiète pas pour moi, je rentrerai en taxi. 别为我担心，我打车回去。",
           "Pourquoi s'inquiéter pour Tom ? 为什么要担心Tom？"
         ]
       },
@@ -22999,9 +40719,21 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ],
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "8165616",
@@ -23014,15 +40746,45 @@ const FRENCH_COLLOCATIONS_DATA = {
     "s'inscrire": {
       "display": "s'inscrire",
       "prepositions": {
+        "à": [
+          "s'inscrire à qqch 报名参加某事",
+          "Je me suis inscrite à un cours de yoga. 我报了一个瑜伽班。",
+          "Il faut s'inscrire à l'examen avant le quinze mars. 三月十五日之前必须报名参加考试。"
+        ],
         "dans": [
+          "s'inscrire dans qqch 属于（某框架）的一部分",
+          "Ce projet s'inscrit dans un plan de rénovation urbaine. 这个项目是城市改造计划的一部分。",
           "Cette découverte s'inscrira dans l'histoire. 这个发现将会在历史上留下光辉的一页。"
         ]
       },
       "prepositionOrder": [
+        "à",
         "dans"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "459797",
@@ -23036,6 +40798,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'installer",
       "prepositions": {
         "en": [
+          "s'installer en + pays ou région 在某地定居",
+          "Après sa retraite, il s'est installé en Bretagne. 退休后他在布列塔尼定居了。",
           "Elle a décidé de s'installer en Belgique. 她决定搬到比利时。"
         ]
       },
@@ -23045,6 +40809,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "en": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "11491944",
             "zh": "11491771",
@@ -23053,10 +40825,99 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'insurger": {
+      "display": "s'insurger",
+      "prepositions": {
+        "contre": [
+          "s'insurger contre qqch 起来反抗某事",
+          "Les syndicats s'insurgent contre le recul de l'âge de la retraite. 工会强烈反对推迟退休年龄。",
+          "Le peuple s'est insurgé contre le tyran. 人民起来反抗暴君。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'interposer": {
+      "display": "s'interposer",
+      "prepositions": {
+        "entre": [
+          "s'interposer entre qqn et qqn 介入某人之间（调停）",
+          "Le professeur s'est interposé entre les deux garçons. 老师插到两个男孩中间把他们拉开。",
+          "Un policier s'est interposé entre les manifestants et les passants. 一名警察站到了示威者和路人之间。"
+        ]
+      },
+      "prepositionOrder": [
+        "entre"
+      ],
+      "sources": {
+        "entre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'interroger": {
+      "display": "s'interroger",
+      "prepositions": {
+        "sur": [
+          "s'interroger sur qqch 对某事感到疑惑；思考",
+          "Beaucoup de gens s'interrogent sur l'avenir de leur métier. 许多人对自己职业的前途感到疑惑。",
+          "Je m'interroge sur ses vraies intentions. 我在琢磨他的真实意图。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'introduire": {
       "display": "s'introduire",
       "prepositions": {
         "dans": [
+          "s'introduire dans un lieu 潜入某处",
+          "Des pirates se sont introduits dans le système informatique. 黑客侵入了计算机系统。",
           "Il s'introduisit dans une maison. 他闯入一间房子。"
         ]
       },
@@ -23066,10 +40927,47 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1316307",
             "zh": "771355",
             "eng": "283445"
+          }
+        ]
+      }
+    },
+    "s'intégrer": {
+      "display": "s'intégrer",
+      "prepositions": {
+        "dans": [
+          "s'intégrer dans qqch 融入某群体（环境）",
+          "Il s'est vite intégré dans sa nouvelle équipe. 他很快融入了新团队。",
+          "Ce bâtiment moderne s'intègre bien dans le paysage. 这座现代建筑与周围景观融为一体。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -23131,6 +41029,40 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "344392",
             "zh": "344409",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "s'obstiner": {
+      "display": "s'obstiner",
+      "prepositions": {
+        "à": [
+          "s'obstiner à faire qqch 固执地做某事",
+          "Il s'obstine à refuser toute aide. 他固执地拒绝任何帮助。",
+          "Pourquoi t'obstines-tu à porter ces chaussures trop petites ? 你为什么非要穿这双太小的鞋？",
+          "Elle s'est obstinée à finir la course malgré sa blessure. 她尽管受了伤，仍坚持跑完了比赛。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -23217,6 +41149,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'offusquer": {
+      "display": "s'offusquer",
+      "prepositions": {
+        "de": [
+          "s'offusquer de qqch 因某事感到被冒犯",
+          "Elle s'est offusquée de ma remarque sur sa coiffure. 我评论她的发型，她觉得被冒犯了。",
+          "Ne t'offusque pas de sa franchise, il est comme ça. 别在意他说话直，他就是这样的人。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'opposer": {
       "display": "s'opposer",
       "prepositions": {
@@ -23257,23 +41218,87 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "s'orienter": {
+      "display": "s'orienter",
+      "prepositions": {
+        "vers": [
+          "s'orienter vers qqch 转向；选择（某方向）",
+          "Après le lycée, elle s'est orientée vers la médecine. 高中毕业后，她选择了学医。",
+          "L'entreprise s'oriente vers les énergies renouvelables. 公司正在转向可再生能源。"
+        ]
+      },
+      "prepositionOrder": [
+        "vers"
+      ],
+      "sources": {
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "s'unir": {
       "display": "s'unir",
       "prepositions": {
         "pour": [
+          "s'unir pour faire qqch 联合起来做某事",
+          "Les habitants se sont unis pour sauver la vieille école. 居民们联合起来挽救那所老学校。",
+          "Il faut nous unir pour faire face à la crise. 我们必须团结起来应对危机。",
           "Le président a appelé la population à s'unir pour combattre la pauvreté et la maladie. 总统呼吁全国民众在对抗贫穷或疾病的时候，一定要团结一致。"
+        ],
+        "contre": [
+          "s'unir contre qqn/qqch 联合起来对抗……",
+          "Les petits pays se sont unis contre l'envahisseur. 小国们联合起来抵抗侵略者。",
+          "Les voisins se sont unis contre le projet d'autoroute. 邻居们联合起来反对修建高速公路的计划。"
         ]
       },
       "prepositionOrder": [
-        "pour"
+        "pour",
+        "contre"
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "1268307",
             "zh": "805706",
             "eng": ""
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -23282,6 +41307,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'écarter",
       "prepositions": {
         "de": [
+          "s'écarter de qqch 偏离；离开某处",
+          "Ne vous écartez pas du sentier balisé. 不要偏离标记好的小路。",
           "Il ne s'écarta pas de ses principes. 他不会违背他的原则。"
         ]
       },
@@ -23290,6 +41317,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "847014",
@@ -23359,6 +41394,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'éloigner",
       "prepositions": {
         "de": [
+          "s'éloigner de qqn/qqch 远离某人（某物）",
+          "Éloignez-vous du bord du quai. 请远离站台边缘。",
+          "Depuis son mariage, il s'est éloigné de ses anciens amis. 结婚后，他和老朋友们疏远了。",
           "Au son du sifflet, le bateau commença à s'éloigner du port. 汽笛声响起，船开始慢慢地驶离港口。"
         ]
       },
@@ -23368,10 +41406,114 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "9321",
             "zh": "332689",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "s'émerveiller": {
+      "display": "s'émerveiller",
+      "prepositions": {
+        "de": [
+          "s'émerveiller de qqch 对某事惊叹",
+          "Les enfants s'émerveillent de tout à cet âge. 这个年纪的孩子对什么都感到新奇。",
+          "Je m'émerveille encore de la patience de ma mère. 我至今仍对母亲的耐心感到惊叹。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'énerver": {
+      "display": "s'énerver",
+      "prepositions": {
+        "contre": [
+          "s'énerver contre qqn/qqch 对某人（某事）发火",
+          "Ne t'énerve pas contre moi, ce n'est pas ma faute ! 别冲我发火，这不是我的错！",
+          "Il s'énerve toujours contre son ordinateur quand il plante. 电脑一死机，他总是冲它发脾气。",
+          "Les voyageurs se sont énervés contre le retard du train. 乘客们因为火车晚点而恼火。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'épanouir": {
+      "display": "s'épanouir",
+      "prepositions": {
+        "dans": [
+          "s'épanouir dans qqch 在某环境中充分发展",
+          "Ma fille s'épanouit vraiment dans sa nouvelle école. 我女儿在新学校里真是如鱼得水。",
+          "Il ne s'épanouissait pas dans ce métier trop routinier. 这份过于刻板的工作让他无法施展。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -23415,7 +41557,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "s'étonner",
       "prepositions": {
         "de": [
-          "s'étonner de qqch 对某事感到惊讶"
+          "s'étonner de qqch 对某事感到惊讶",
+          "Je m'étonne de ne pas l'avoir vu à la réunion. 我很奇怪在会上没看到他。"
         ]
       },
       "prepositionOrder": [
@@ -23426,6 +41569,68 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'évanouir": {
+      "display": "s'évanouir",
+      "prepositions": {
+        "de": [
+          "s'évanouir de qqch 因某事昏倒",
+          "Elle a failli s'évanouir de fatigue après le concert. 演唱会结束后，她累得差点晕倒。",
+          "Un spectateur s'est évanoui de chaleur pendant la cérémonie. 典礼上一名观众热晕了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "s'évertuer": {
+      "display": "s'évertuer",
+      "prepositions": {
+        "à": [
+          "s'évertuer à faire qqch 竭力做某事",
+          "Je m'évertue à lui expliquer, mais il ne comprend rien. 我费尽口舌给他解释，可他什么都不懂。",
+          "Les secouristes se sont évertués à ranimer la victime. 急救人员竭尽全力抢救伤者。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -23434,6 +41639,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "sacrifier",
       "prepositions": {
         "pour": [
+          "(se) sacrifier (qqch) pour qqn/qqch 为……牺牲（自己或某物）",
+          "Beaucoup de parents se sacrifient pour leurs enfants. 许多父母为孩子牺牲了自己。",
+          "Elle a sacrifié sa carrière pour s'occuper de sa mère. 她为了照顾母亲放弃了事业。",
           "Il s'est sacrifié pour sa patrie. 他把他的一生献给了他的国家。"
         ]
       },
@@ -23442,6 +41650,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "12180279",
@@ -23564,6 +41784,11 @@ const FRENCH_COLLOCATIONS_DATA = {
     "satisfaire": {
       "display": "satisfaire",
       "prepositions": {
+        "à": [
+          "satisfaire à qqch 满足（条件、要求）",
+          "Votre dossier ne satisfait pas à toutes les conditions. 您的材料不符合所有条件。",
+          "Ce produit satisfait aux normes européennes. 该产品符合欧洲标准。"
+        ],
         "de": [
           "Je suis assez satisfait de toi. 我对你相当满意。",
           "Elle dit être satisfaite de sa vie. 她说很满意她的生活。",
@@ -23574,9 +41799,24 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "de"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "de": [
           {
             "kind": "direct",
@@ -23617,6 +41857,64 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "saturer": {
+      "display": "saturer",
+      "prepositions": {
+        "de": [
+          "saturer qqn/qqch de qqch 使……充斥、饱和",
+          "La publicité sature nos écrans de messages inutiles. 广告让我们的屏幕上充斥着无用的信息。",
+          "L'air était saturé d'humidité après l'orage. 暴雨过后，空气中的湿度达到了饱和。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "saupoudrer": {
+      "display": "saupoudrer",
+      "prepositions": {
+        "de": [
+          "saupoudrer qqch de qqch 在……上撒（糖、粉等）",
+          "Saupoudrez le gâteau de sucre glace avant de servir. 上桌前在蛋糕上撒一层糖粉。",
+          "Ma mère saupoudrait toujours la soupe de persil. 我妈妈总在汤里撒点欧芹。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "sauter": {
       "display": "sauter",
       "prepositions": {
@@ -23625,6 +41923,12 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Ken a sauté par-dessus le mur. 肯跳过了墙。",
           "Son cheval sauta par-dessus la clôture. 他的马跳过了栅栏。"
         ],
+        "sur": [
+          "sauter sur qqn/qqch 扑向；抓住（机会）",
+          "Il a sauté sur l'occasion sans hésiter. 他毫不犹豫地抓住了这个机会。",
+          "Le chien a sauté sur le facteur dès qu'il a ouvert le portail. 邮递员一打开大门，狗就扑了上去。",
+          "Le chat a sauté sur la souris. 猫猛地扑向老鼠。"
+        ],
         "dans": [
           "Le garçon a sauté dans l'eau. 这个男孩跳入了水中。",
           "Tout le monde a sauté dans la piscine. 每个人都跳进了游泳池。"
@@ -23632,6 +41936,7 @@ const FRENCH_COLLOCATIONS_DATA = {
       },
       "prepositionOrder": [
         "par",
+        "sur",
         "dans"
       ],
       "sources": {
@@ -23655,6 +41960,24 @@ const FRENCH_COLLOCATIONS_DATA = {
             "eng": "287303"
           }
         ],
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "dans": [
           {
             "kind": "indirect",
@@ -23667,6 +41990,69 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "2589962",
             "zh": "6151295",
             "eng": "4500374"
+          }
+        ]
+      }
+    },
+    "sauvegarder": {
+      "display": "sauvegarder",
+      "prepositions": {
+        "sur": [
+          "sauvegarder qqch sur qqch 把（文件）保存到……上",
+          "N'oublie pas de sauvegarder ton travail sur une clé USB. 别忘了把作业存到U盘里。",
+          "Toutes mes photos sont sauvegardées sur le cloud. 我所有的照片都备份在云端。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "sauver": {
+      "display": "sauver",
+      "prepositions": {
+        "de": [
+          "sauver qqn/qqch de qqch 把某人／某物从……中救出",
+          "Les pompiers ont sauvé trois enfants de l'incendie. 消防员从火灾中救出了三个孩子。",
+          "Ce prêt a sauvé l'entreprise de la faillite. 这笔贷款让公司免于破产。",
+          "Tu m'as sauvé d'une situation très gênante. 你帮我摆脱了一个非常尴尬的处境。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -23727,6 +42113,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "scinder": {
+      "display": "scinder",
+      "prepositions": {
+        "en": [
+          "scinder qqch en qqch 把某物分成（几部分）",
+          "Le professeur a scindé la classe en deux groupes. 老师把全班分成了两组。",
+          "Le parti s'est scindé en trois courants rivaux. 该党分裂成三个对立的派别。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "scintiller": {
       "display": "scintiller",
       "prepositions": {
@@ -23744,6 +42159,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "9106",
             "zh": "5767608",
             "eng": "18312"
+          }
+        ]
+      }
+    },
+    "sculpter": {
+      "display": "sculpter",
+      "prepositions": {
+        "dans": [
+          "sculpter qqch dans qqch 用（某种材料）雕刻",
+          "Cette statue a été sculptée dans un seul bloc de marbre. 这座雕像是用一整块大理石雕成的。",
+          "Mon grand-père sculptait des animaux dans le bois. 我爷爷常用木头雕小动物。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se bagarrer": {
+      "display": "se bagarrer",
+      "prepositions": {
+        "avec": [
+          "se bagarrer avec qqn 和某人打架",
+          "Mon fils s'est encore bagarré avec un camarade à la récré. 我儿子课间又和同学打架了。",
+          "Arrêtez de vous bagarrer avec vos cousins ! 别再和你们的表兄弟打架了！"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -23772,6 +42245,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "392011",
             "zh": "352038",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "se barricader": {
+      "display": "se barricader",
+      "prepositions": {
+        "dans": [
+          "se barricader dans qqch 把自己关在……里；躲进",
+          "Le suspect s'est barricadé dans son appartement. 嫌疑人躲在公寓里，把门窗都堵死了。",
+          "Après la dispute, elle s'est barricadée dans sa chambre. 吵完架，她把自己锁在了房间里。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -23833,11 +42335,91 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se bercer": {
+      "display": "se bercer",
+      "prepositions": {
+        "de": [
+          "se bercer de qqch 沉浸于（幻想）；自我陶醉",
+          "Ne te berce pas d'illusions, il ne reviendra pas. 别抱幻想了，他不会回来的。",
+          "Elle se berçait de rêves de gloire. 她沉浸在功成名就的梦想里。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se blottir": {
+      "display": "se blottir",
+      "prepositions": {
+        "dans": [
+          "se blottir dans qqch 蜷缩在……里",
+          "Elle s'est blottie dans son lit sous trois couvertures. 她盖着三床被子蜷在床上。",
+          "Les oiseaux se blottissent dans leur nid. 鸟儿们蜷缩在巢里。"
+        ],
+        "contre": [
+          "se blottir contre qqn/qqch 紧紧依偎着",
+          "L'enfant s'est blotti contre sa mère. 孩子紧紧依偎在妈妈怀里。",
+          "Le chat se blottit contre le radiateur en hiver. 冬天，猫蜷缩在暖气片旁边。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans",
+        "contre"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se borner": {
       "display": "se borner",
       "prepositions": {
         "à": [
-          "se borner à faire qqch 仅限于做某事"
+          "se borner à faire qqch 仅限于做某事",
+          "Il s'est borné à répondre par oui ou par non. 他只回答了是或不是。",
+          "Borne-toi à l'essentiel dans ton exposé. 你的报告只讲要点就行。"
         ]
       },
       "prepositionOrder": [
@@ -23847,6 +42429,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -23880,18 +42470,74 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se brouiller": {
+      "display": "se brouiller",
+      "prepositions": {
+        "avec": [
+          "se brouiller avec qqn 与某人闹翻",
+          "Il s'est brouillé avec son frère pour une histoire d'héritage. 他因为遗产的事和哥哥闹翻了。",
+          "Je ne veux pas me brouiller avec mes voisins. 我不想和邻居们闹僵。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se cacher": {
       "display": "se cacher",
       "prepositions": {
+        "de": [
+          "se cacher de qqn 躲着某人；瞒着某人",
+          "Il fume en se cachant de ses parents. 他瞒着父母偷偷抽烟。",
+          "Elle ne se cache pas de ses opinions. 她从不掩饰自己的观点。",
+          "Pour se cacher de la police, Dima passa la nuit dans une benne à ordure. 为了避开警方的追捕，狄马只好在垃圾箱里过了一晚。"
+        ],
         "dans": [
           "L'enfant se cachait dans la boîte. 孩子躲在箱子里。",
           "L'homme se cachait dans une forêt dense. 男人躲在一个茂密的森林里。"
         ]
       },
       "prepositionOrder": [
+        "de",
         "dans"
       ],
       "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "480043",
+            "zh": "486515",
+            "eng": ""
+          }
+        ],
         "dans": [
           {
             "kind": "direct",
@@ -23908,10 +42554,115 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se cantonner": {
+      "display": "se cantonner",
+      "prepositions": {
+        "à": [
+          "se cantonner à qqch 局限于；只限于",
+          "Le professeur s'est cantonné à la théorie. 老师只讲了理论。",
+          "Ne te cantonne pas à un seul auteur, lis plus largement. 别只局限于一位作家，读得广一点。",
+          "Son rôle se cantonnait à répondre au téléphone. 她的工作仅限于接电话。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se caractériser": {
+      "display": "se caractériser",
+      "prepositions": {
+        "par": [
+          "se caractériser par qqch 以……为特征",
+          "Cette région se caractérise par des hivers très froids. 这个地区的特点是冬天非常寒冷。",
+          "Son style se caractérise par des phrases courtes. 他的文风以短句为特色。",
+          "La maladie se caractérise par une forte fièvre. 这种病的典型症状是高烧。"
+        ]
+      },
+      "prepositionOrder": [
+        "par"
+      ],
+      "sources": {
+        "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se chamailler": {
+      "display": "se chamailler",
+      "prepositions": {
+        "avec": [
+          "se chamailler avec qqn 和某人拌嘴",
+          "Elle se chamaille sans cesse avec sa sœur. 她老是和她妹妹拌嘴。",
+          "Arrête de te chamailler avec ton frère pour rien ! 别再为了一点小事跟你弟弟斗嘴了！",
+          "Enfant, je me chamaillais avec mes cousins à chaque repas. 小时候，我每顿饭都要和表兄弟们吵吵闹闹。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se changer": {
       "display": "se changer",
       "prepositions": {
         "en": [
+          "se changer en qqch 变成……",
+          "La citrouille s'est changée en carrosse. 南瓜变成了马车。",
+          "Sa colère s'est vite changée en tristesse. 他的愤怒很快变成了悲伤。",
           "L'eau se changea en glace. 水结成冰了。"
         ]
       },
@@ -23921,10 +42672,182 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "en": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "3657928",
             "zh": "2241817",
             "eng": "270834"
+          }
+        ]
+      }
+    },
+    "se charger": {
+      "display": "se charger",
+      "prepositions": {
+        "de": [
+          "se charger de qqch 负责；承担",
+          "Je me charge des boissons pour la fête. 派对的饮料我来负责。",
+          "Qui va se charger de réserver l'hôtel ? 谁来负责订酒店？",
+          "Ne t'inquiète pas, elle se chargera de tout demain. 别担心，明天她会把一切都处理好。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se chiffrer": {
+      "display": "se chiffrer",
+      "prepositions": {
+        "à": [
+          "se chiffrer à qqch 总计达；数额达",
+          "Les dégâts se chiffrent à plusieurs millions d'euros. 损失达数百万欧元。",
+          "La facture se chiffrait à trois mille euros. 账单总额为三千欧元。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se cogner": {
+      "display": "se cogner",
+      "prepositions": {
+        "contre": [
+          "se cogner contre qqch 撞到……上",
+          "Je me suis cogné contre la table dans le noir. 我在黑暗中撞到了桌子上。",
+          "Attention, tu vas te cogner contre la porte ! 小心，你要撞到门上了！",
+          "L'oiseau s'est cogné contre la fenêtre. 那只鸟撞上了窗户。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se complaire": {
+      "display": "se complaire",
+      "prepositions": {
+        "dans": [
+          "se complaire dans qqch 沉溺于；以……自得",
+          "Il se complaît dans son malheur. 他沉湎于自己的不幸之中。",
+          "Elle se complaisait dans le rôle de victime. 她乐于扮演受害者的角色。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se comporter": {
+      "display": "se comporter",
+      "prepositions": {
+        "avec": [
+          "se comporter avec qqn 对待某人（的态度）",
+          "Il se comporte avec ses employés comme un tyran. 他对待员工像个暴君。",
+          "Elle s'est toujours comportée gentiment avec les personnes âgées. 她对老人一向很和善。",
+          "Comment se comporte-t-il avec les autres enfants ? 他跟其他孩子相处得怎么样？"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -24020,6 +42943,127 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se concerter": {
+      "display": "se concerter",
+      "prepositions": {
+        "avec": [
+          "se concerter avec qqn 与某人协商",
+          "Je dois me concerter avec mon associé avant de signer. 签字之前我得和合伙人商量一下。",
+          "Le ministre s'est concerté avec les syndicats. 部长与工会进行了磋商。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se conduire": {
+      "display": "se conduire",
+      "prepositions": {
+        "avec": [
+          "se conduire bien/mal avec qqn 对某人表现好／不好",
+          "Il s'est très mal conduit avec ses invités. 他对客人非常失礼。",
+          "Conduis-toi correctement avec ta grand-mère. 对你奶奶要规矩一点。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se confier": {
+      "display": "se confier",
+      "prepositions": {
+        "à": [
+          "se confier à qqn 向某人倾诉心事",
+          "Elle se confie souvent à sa meilleure amie. 她常常向最好的朋友倾诉心事。",
+          "Tu peux te confier à moi, je ne dirai rien. 你可以对我说心里话，我不会说出去的。",
+          "Il ne se confiait à personne. 他从不向任何人吐露心声。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se confondre": {
+      "display": "se confondre",
+      "prepositions": {
+        "en": [
+          "se confondre en excuses 连声道歉",
+          "Le serveur s'est confondu en excuses. 服务员连连道歉。",
+          "Elle se confondait en remerciements. 她千恩万谢。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se consacrer": {
       "display": "se consacrer",
       "prepositions": {
@@ -24107,10 +43151,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se couper": {
+      "display": "se couper",
+      "prepositions": {
+        "de": [
+          "se couper de qqn/qqch 与……断绝联系",
+          "Depuis son divorce, il s'est coupé de ses amis. 离婚以后，他和朋友们断了来往。",
+          "Il ne faut pas se couper du monde. 不要与世隔绝。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se couvrir": {
       "display": "se couvrir",
       "prepositions": {
         "de": [
+          "se couvrir de qqch 被……覆盖",
+          "Le ciel se couvre de nuages noirs. 天空布满了乌云。",
+          "En hiver, la montagne se couvre de neige. 冬天，山上覆盖着白雪。",
           "L'orgueil ne réussit jamais mieux que quand il se couvre de modestie. 满招损, 谦受益。"
         ]
       },
@@ -24120,10 +43196,56 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "790499",
             "zh": "790430",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "se cramponner": {
+      "display": "se cramponner",
+      "prepositions": {
+        "à": [
+          "se cramponner à qqch 紧紧抓住",
+          "L'enfant se cramponnait à la main de sa mère. 孩子紧紧抓着妈妈的手。",
+          "Cramponne-toi à la rampe, l'escalier est glissant. 抓紧扶手，楼梯很滑。",
+          "Il se cramponne à ses vieilles habitudes. 他死抱着自己的老习惯不放。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -24264,10 +43386,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se dissocier": {
+      "display": "se dissocier",
+      "prepositions": {
+        "de": [
+          "se dissocier de qqn/qqch 与……划清界限",
+          "Le parti s'est dissocié de ces déclarations. 该党与这些言论划清了界限。",
+          "Je tiens à me dissocier de cette décision. 我要声明我与这个决定无关。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se dissoudre": {
       "display": "se dissoudre",
       "prepositions": {
         "dans": [
+          "se dissoudre dans qqch 溶于……",
+          "Le sel se dissout vite dans l'eau chaude. 盐在热水里溶解得很快。",
+          "Ce comprimé se dissout dans un verre d'eau. 这片药可以溶在一杯水里。",
           "Le sucre se dissout dans l'eau. 糖溶于水。"
         ]
       },
@@ -24276,6 +43430,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "2226464",
@@ -24289,6 +43455,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se distinguer",
       "prepositions": {
         "par": [
+          "se distinguer par qqch 以……而出众",
+          "Cette élève se distingue par sa curiosité. 这个学生以好奇心强而出众。",
+          "Le restaurant se distingue par la qualité de son service. 这家餐厅以优质服务著称。",
           "La maison se distingue par sa forme inhabituelle. 那房子因为其少有的形状被突显出来。"
         ]
       },
@@ -24298,10 +43467,117 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "par": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "786317",
             "zh": "787385",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "se documenter": {
+      "display": "se documenter",
+      "prepositions": {
+        "sur": [
+          "se documenter sur qqch 查阅关于……的资料",
+          "Avant le voyage, je me suis documenté sur le Japon. 旅行前我查阅了有关日本的资料。",
+          "L'écrivain s'est longuement documenté sur la Révolution. 这位作家花了很长时间研究大革命的资料。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se douter": {
+      "display": "se douter",
+      "prepositions": {
+        "de": [
+          "se douter de qqch 料到；猜到",
+          "Je me doutais de quelque chose. 我早就觉得有点不对劲。",
+          "Elle ne se doute de rien. 她一点都没察觉。",
+          "Tu te doutes sûrement de la raison de ma visite. 你肯定猜得到我为什么来。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "se douter de qqch = 料到、猜到；douter de qqch = 怀疑（不相信）"
+      }
+    },
+    "se draper": {
+      "display": "se draper",
+      "prepositions": {
+        "dans": [
+          "se draper dans qqch 以……自居；裹上",
+          "Il se drape dans sa dignité pour ne pas s'excuser. 他摆出一副清高的样子，就是不肯道歉。",
+          "Elle s'est drapée dans une grande serviette. 她裹上了一条大浴巾。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -24331,6 +43607,10 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se débarrasser",
       "prepositions": {
         "de": [
+          "se débarrasser de qqch/qqn 摆脱；处理掉",
+          "Je voudrais me débarrasser de ces vieux meubles. 我想把这些旧家具处理掉。",
+          "On n'arrive pas à se débarrasser des souris. 我们没法赶走家里的老鼠。",
+          "Débarrasse-toi de ce manteau et assieds-toi. 把大衣脱了，坐下吧。",
           "Il est difficile de se débarrasser d'une mauvaise habitude. 一旦养成了坏习惯，就很难改回来了。"
         ]
       },
@@ -24340,10 +43620,55 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "766372",
             "zh": "385601",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "se débattre": {
+      "display": "se débattre",
+      "prepositions": {
+        "contre": [
+          "se débattre contre qqch 与……挣扎搏斗",
+          "Il se débat contre des difficultés financières. 他在经济困境中苦苦挣扎。",
+          "La petite librairie se débat contre la concurrence d'internet. 这家小书店在网络的冲击下艰难求生。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -24372,6 +43697,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "4766188",
             "zh": "794084",
             "eng": "311887"
+          }
+        ]
+      }
+    },
+    "se déchaîner": {
+      "display": "se déchaîner",
+      "prepositions": {
+        "contre": [
+          "se déchaîner contre qqn/qqch 猛烈抨击",
+          "La presse s'est déchaînée contre le ministre. 媒体对部长展开了猛烈抨击。",
+          "Sur les réseaux sociaux, les internautes se déchaînent contre la marque. 社交网络上，网民们对该品牌口诛笔伐。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -24409,10 +43763,199 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se défaire": {
+      "display": "se défaire",
+      "prepositions": {
+        "de": [
+          "se défaire de qqch 摆脱；丢弃",
+          "J'ai du mal à me défaire de mes vieux livres. 我舍不得扔掉旧书。",
+          "Il faut te défaire de cette mauvaise habitude. 你得改掉这个坏习惯。",
+          "Elle s'est défaite de ses meubles avant de déménager. 搬家前她把家具都处理掉了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se défier": {
+      "display": "se défier",
+      "prepositions": {
+        "de": [
+          "se défier de qqn/qqch 提防；不信任",
+          "Défie-toi des gens trop aimables. 要提防过分热情的人。",
+          "Il se défie de tout ce qui est nouveau. 他对一切新事物都心存戒备。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se délecter": {
+      "display": "se délecter",
+      "prepositions": {
+        "de": [
+          "se délecter de qqch 以……为乐；尽情享受",
+          "Il se délecte des malheurs des autres. 他幸灾乐祸。",
+          "Nous nous sommes délectés de ce fromage. 我们津津有味地享用了这块奶酪。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se démarquer": {
+      "display": "se démarquer",
+      "prepositions": {
+        "de": [
+          "se démarquer de qqn/qqch 与……区别开来；与……划清界限",
+          "Cette marque cherche à se démarquer de ses concurrents. 这个品牌力图与竞争对手区别开来。",
+          "Le candidat s'est démarqué de son parti sur cette question. 在这个问题上，这位候选人与本党划清了界限。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se démettre": {
+      "display": "se démettre",
+      "prepositions": {
+        "de": [
+          "se démettre de qqch 辞去（职务）",
+          "Le ministre s'est démis de ses fonctions hier. 部长昨天辞去了职务。",
+          "Elle a refusé de se démettre de son mandat. 她拒绝辞去职务。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se départir": {
+      "display": "se départir",
+      "prepositions": {
+        "de": [
+          "se départir de qqch 放弃；失去（某种态度）",
+          "Il ne s'est jamais départi de son calme. 他始终保持镇静。",
+          "Elle ne se départit pas de son sourire. 她一直面带微笑。",
+          "Une fois prise, il est difficile de se départir d'une mauvaise habitude. 一旦养成了坏习惯，就很难改回来了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "634254",
+            "zh": "385601",
+            "eng": "28637"
+          }
+        ]
+      }
+    },
     "se déplacer": {
       "display": "se déplacer",
       "prepositions": {
         "en": [
+          "se déplacer en qqch 乘坐（交通工具）出行",
+          "En ville, je me déplace toujours en métro. 在城里我总是坐地铁出行。",
+          "Elle se déplace en fauteuil roulant depuis l'accident. 车祸后她一直靠轮椅行动。",
           "La tour se déplace en ligne droite, d'autant de cases qu'elle le désire, ou le peut. 车沿直线移动，移动的格数随它所愿，或随其所能。"
         ]
       },
@@ -24421,6 +43964,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "5438523",
@@ -24456,6 +44011,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se dépêtrer": {
+      "display": "se dépêtrer",
+      "prepositions": {
+        "de": [
+          "se dépêtrer de qqch 从（困境）中脱身",
+          "Il n'arrive pas à se dépêtrer de ses dettes. 他没法摆脱债务。",
+          "Elle a mis des mois à se dépêtrer de cette affaire. 她花了几个月才从这件事里脱身。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se dérouler": {
       "display": "se dérouler",
       "prepositions": {
@@ -24477,10 +44061,358 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se désabonner": {
+      "display": "se désabonner",
+      "prepositions": {
+        "de": [
+          "se désabonner de qqch 退订；取消订阅",
+          "Je me suis désabonné de cette newsletter. 我退订了这份电子简报。",
+          "Comment se désabonner de ce service ? 怎么取消这项服务？"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se déshabituer": {
+      "display": "se déshabituer",
+      "prepositions": {
+        "de": [
+          "se déshabituer de qqch 戒掉（习惯）",
+          "J'essaie de me déshabituer du sucre. 我正在努力戒糖。",
+          "Il s'est déshabitué de fumer après sa maladie. 病后他戒了烟。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se désinscrire": {
+      "display": "se désinscrire",
+      "prepositions": {
+        "de": [
+          "se désinscrire de qqch 注销；退出（报名、名单）",
+          "Il s'est désinscrit du cours de yoga. 他退掉了瑜伽课。",
+          "Tu peux te désinscrire de la liste à tout moment. 你可以随时从名单中退出。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se désintéresser": {
+      "display": "se désintéresser",
+      "prepositions": {
+        "de": [
+          "se désintéresser de qqch 不再关心……",
+          "Beaucoup de jeunes se désintéressent de la politique. 许多年轻人对政治不再关心。",
+          "Il s'est peu à peu désintéressé de ses études. 他渐渐对学业失去了兴趣。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se désolidariser": {
+      "display": "se désolidariser",
+      "prepositions": {
+        "de": [
+          "se désolidariser de qqn/qqch 不再支持；与……撇清关系",
+          "Plusieurs députés se sont désolidarisés du gouvernement. 几位议员不再支持政府。",
+          "L'entreprise se désolidarise des propos de son directeur. 公司与其总经理的言论撇清了关系。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se dévouer": {
+      "display": "se dévouer",
+      "prepositions": {
+        "à": [
+          "se dévouer à qqn/qqch 献身于……",
+          "Elle s'est dévouée à sa famille toute sa vie. 她一生都在为家庭奉献。",
+          "Ce médecin se dévoue entièrement à ses patients. 这位医生全心全意为病人服务。"
+        ],
+        "pour": [
+          "se dévouer pour faire qqch 自告奋勇做某事",
+          "Qui se dévoue pour faire la vaisselle ? 谁自告奋勇去洗碗？",
+          "Je me suis dévoué pour aller chercher les pizzas. 我主动去取了比萨。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "pour"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "pour": "se dévouer pour faire qqch = 自告奋勇做（麻烦事）；se dévouer à qqch = 献身于",
+        "à": "se dévouer à qqn/qqch = 献身于；se dévouer pour faire qqch = 自告奋勇做"
+      }
+    },
+    "se faire": {
+      "display": "se faire",
+      "prepositions": {
+        "à": [
+          "se faire à qqch 习惯某事",
+          "Je n'arrive pas à me faire au froid de l'hiver. 我实在适应不了冬天的寒冷。",
+          "Tu verras, tu te feras vite à ta nouvelle vie. 你会看到，你很快就会习惯新生活的。",
+          "Il a fini par se faire à son nouveau patron. 他最终习惯了新老板。",
+          "Elle arrivait à se faire à dîner, tant bien que mal. 她勉强能自己煮晚餐吃。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "11047289",
+            "zh": "366822",
+            "eng": "311889"
+          }
+        ]
+      }
+    },
+    "se familiariser": {
+      "display": "se familiariser",
+      "prepositions": {
+        "avec": [
+          "se familiariser avec qqch 熟悉某事",
+          "Prenez le temps de vous familiariser avec le logiciel. 请花点时间熟悉这个软件。",
+          "Je me suis vite familiarisé avec les habitudes locales. 我很快就熟悉了当地的习俗。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se faufiler": {
+      "display": "se faufiler",
+      "prepositions": {
+        "dans": [
+          "se faufiler dans un lieu 溜进某处",
+          "Le chat s'est faufilé dans la cuisine sans bruit. 猫悄无声息地溜进了厨房。",
+          "Nous nous sommes faufilés dans la salle après le début du film. 电影开始后我们才悄悄溜进放映厅。"
+        ],
+        "entre": [
+          "se faufiler entre qqch 在……之间穿行",
+          "Le scooter se faufile entre les voitures. 小摩托在汽车之间穿梭。",
+          "Il s'est faufilé entre les invités jusqu'au buffet. 他在宾客之间钻来钻去，一直挤到自助餐台。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans",
+        "entre"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "entre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se fiancer": {
+      "display": "se fiancer",
+      "prepositions": {
+        "avec": [
+          "se fiancer avec qqn 与某人订婚",
+          "Ma cousine s'est fiancée avec un pompier. 我表姐和一名消防员订婚了。",
+          "Il va se fiancer avec sa petite amie cet été. 今年夏天他要和女朋友订婚。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se ficher": {
       "display": "se ficher",
       "prepositions": {
         "de": [
+          "se ficher de qqch 根本不在乎某事（口）",
+          "Je me fiche de ce que pensent les voisins. 我才不管邻居们怎么想。",
           "Elle se fiche de comment elle s'habille. 她不在乎她的穿着。"
         ]
       },
@@ -24489,6 +44421,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1357958",
@@ -24524,6 +44464,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se flatter": {
+      "display": "se flatter",
+      "prepositions": {
+        "de": [
+          "se flatter de qqch / de faire qqch 以某事自夸",
+          "Il se flatte de parler cinq langues. 他自夸会说五种语言。",
+          "Elle se flatte d'avoir toujours raison. 她自诩总是对的。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se fâcher": {
       "display": "se fâcher",
       "prepositions": {
@@ -24550,11 +44519,128 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se féliciter": {
+      "display": "se féliciter",
+      "prepositions": {
+        "de": [
+          "se féliciter de qqch 对某事感到庆幸、满意",
+          "Je me félicite d'avoir pris le train de sept heures. 幸亏我坐了七点的火车。",
+          "Le ministre s'est félicité des bons résultats de l'économie. 部长对经济的良好表现表示满意。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se garder": {
+      "display": "se garder",
+      "prepositions": {
+        "de": [
+          "se garder de faire qqch 注意不做某事；避免",
+          "Gardez-vous de juger trop vite. 千万别过早下结论。",
+          "Il s'est bien gardé de dire la vérité à sa femme. 他小心翼翼地没把真相告诉妻子。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se gaver": {
+      "display": "se gaver",
+      "prepositions": {
+        "de": [
+          "se gaver de qqch 大吃特吃某物；过量享用",
+          "Les enfants se sont gavés de bonbons à la fête. 孩子们在聚会上猛吃糖果。",
+          "Arrête de te gaver de séries, va dormir. 别再狂刷剧了，去睡觉吧。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se gêner": {
+      "display": "se gêner",
+      "prepositions": {
+        "pour": [
+          "ne pas se gêner pour faire qqch 毫不客气地做某事",
+          "Il ne s'est pas gêné pour me dire ce qu'il pensait. 他毫不客气地把想法告诉了我。",
+          "Ne te gêne pas pour moi, fais comme chez toi. 别因为我拘束，就当在自己家一样。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se heurter": {
       "display": "se heurter",
       "prepositions": {
         "à": [
-          "se heurter à qqch 遇到（阻碍）"
+          "se heurter à qqch 遇到（阻碍）",
+          "Le projet se heurte à l'opposition des habitants. 该项目遭到居民的反对。"
         ]
       },
       "prepositionOrder": [
@@ -24565,6 +44651,10 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -24573,6 +44663,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se jeter",
       "prepositions": {
         "dans": [
+          "se jeter dans qqch 扑进；（河流）注入",
+          "L'enfant s'est jeté dans les bras de sa mère. 孩子扑进了妈妈的怀里。",
           "Ce fleuve se jette dans le Pacifique. 这条河汇入太平洋。"
         ]
       },
@@ -24581,6 +44673,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "3047207",
@@ -24594,7 +44694,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se joindre",
       "prepositions": {
         "à": [
-          "se joindre à qqn 加入某人"
+          "se joindre à qqn 加入某人",
+          "Voulez-vous vous joindre à nous pour le dîner ? 您愿意和我们一起吃晚饭吗？"
         ]
       },
       "prepositionOrder": [
@@ -24605,6 +44706,39 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se lamenter": {
+      "display": "se lamenter",
+      "prepositions": {
+        "sur": [
+          "se lamenter sur qqch 为某事哀叹",
+          "Il passe ses journées à se lamenter sur son sort. 他整天哀叹自己的命运。",
+          "Au lieu de te lamenter sur le passé, pense à demain. 与其为过去哀叹，不如想想明天。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -24613,7 +44747,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se lancer",
       "prepositions": {
         "dans": [
-          "se lancer dans qqch 投身于某事"
+          "se lancer dans qqch 投身于某事",
+          "Après ses études, elle s'est lancée dans la politique. 毕业后她投身政界。"
         ]
       },
       "prepositionOrder": [
@@ -24624,6 +44759,10 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -24632,6 +44771,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se lever",
       "prepositions": {
         "pour": [
+          "se lever pour faire qqch 起身（起床）去做某事",
+          "Je me lève à six heures pour aller courir. 我六点起床去跑步。",
           "Linda se leva pour chanter. 琳达站起来唱歌。"
         ]
       },
@@ -24640,6 +44781,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "13778",
@@ -24653,7 +44802,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se limiter",
       "prepositions": {
         "à": [
-          "se limiter à qqch 局限于某事"
+          "se limiter à qqch 局限于某事",
+          "Cette fois, je me limiterai à deux verres. 这次我最多喝两杯。"
         ]
       },
       "prepositionOrder": [
@@ -24663,6 +44813,10 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -24704,6 +44858,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1813047",
             "zh": "1936612",
             "eng": "1813019"
+          }
+        ]
+      }
+    },
+    "se mesurer": {
+      "display": "se mesurer",
+      "prepositions": {
+        "à": [
+          "se mesurer à qqn 与某人较量",
+          "Notre équipe va se mesurer aux champions d'Europe. 我们队将与欧洲冠军一较高下。",
+          "Il rêve de se mesurer aux meilleurs joueurs du monde. 他梦想与世界顶尖选手较量。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -24814,10 +44997,65 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se mobiliser": {
+      "display": "se mobiliser",
+      "prepositions": {
+        "pour": [
+          "se mobiliser pour qqn/qqch 为某人（某事）动员起来",
+          "Les élèves se sont mobilisés pour aider les sinistrés. 学生们行动起来帮助受灾群众。",
+          "Des bénévoles se mobilisent pour sauver la forêt. 志愿者们动员起来拯救森林。"
+        ],
+        "contre": [
+          "se mobiliser contre qqch 动员起来反对某事",
+          "Les habitants se mobilisent contre la construction de l'autoroute. 居民们动员起来反对修建高速公路。",
+          "Tout le quartier s'est mobilisé contre la fermeture de la poste. 整个街区都行动起来反对关闭邮局。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour",
+        "contre"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "contre": "se mobiliser contre = 为反对某事而行动；se mobiliser pour = 为支持、帮助某事而行动",
+        "pour": "se mobiliser pour = 为（帮助、争取）某事动员；se mobiliser contre = 为反对某事动员"
+      }
+    },
     "se monter": {
       "display": "se monter",
       "prepositions": {
         "à": [
+          "se monter à + somme 达到（总额）",
+          "Les dégâts se montent à plusieurs millions d'euros. 损失高达数百万欧元。",
           "La facture se montait à 100 dollars. 帐单金额高达100美元。"
         ]
       },
@@ -24826,6 +45064,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "795883",
@@ -24922,10 +45168,70 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se méprendre": {
+      "display": "se méprendre",
+      "prepositions": {
+        "sur": [
+          "se méprendre sur qqn/qqch 误会某人（某事）",
+          "Ne vous méprenez pas sur mes intentions. 请不要误会我的用意。",
+          "Je me suis mépris sur son compte, il est très gentil. 我看错他了，他人非常好。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se métamorphoser": {
+      "display": "se métamorphoser",
+      "prepositions": {
+        "en": [
+          "se métamorphoser en qqch 变成某物",
+          "La chenille se métamorphose en papillon. 毛毛虫蜕变成蝴蝶。",
+          "En quelques années, le village s'est métamorphosé en station touristique. 几年之内，这个村子变成了旅游胜地。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se mêler": {
       "display": "se mêler",
       "prepositions": {
         "de": [
+          "se mêler de qqch 插手某事",
+          "Mêle-toi de tes affaires ! 管好你自己的事！",
           "Tom se mêle toujours de ce qui ne le regarde pas. 汤姆总是多管闲事。"
         ]
       },
@@ -24934,6 +45240,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "5067269",
@@ -25003,6 +45317,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se noyer",
       "prepositions": {
         "dans": [
+          "se noyer dans qqch 淹没在某事中；（喻）被小事难倒",
+          "Il se noie dans un verre d'eau dès qu'il y a un petit problème. 一有点小问题，他就手足无措。",
           "L'enfant sait comment nager, ainsi elle ne se noiera pas dans l'eau. 这个孩子知道如何游泳，所以她不会在水里溺死。"
         ]
       },
@@ -25011,6 +45327,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "2720089",
@@ -25045,7 +45369,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se passer",
       "prepositions": {
         "de": [
-          "se passer de qqch 没有某物也行"
+          "se passer de qqch 没有某物也行",
+          "Je ne peux pas me passer de café le matin. 早上我离不开咖啡。",
+          "On se passera de ses conseils. 我们不需要他的建议。"
         ],
         "dans": [
           "Les journaux, les magazines et les émissions d'information nous disent ce qui se passe dans le monde. 报纸、杂志和新闻广播讲述着世界上正在发生的事。",
@@ -25060,6 +45386,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         "de": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ],
@@ -25079,11 +45413,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se passionner": {
+      "display": "se passionner",
+      "prepositions": {
+        "pour": [
+          "se passionner pour qqch 热衷于；对……着迷",
+          "Mon fils se passionne pour les dinosaures. 我儿子对恐龙着了迷。",
+          "Elle s'est passionnée pour la photographie à quinze ans. 她十五岁时迷上了摄影。",
+          "Je ne me suis jamais passionné pour le football. 我从来没有热衷过足球。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se pencher": {
       "display": "se pencher",
       "prepositions": {
         "sur": [
-          "se pencher sur qqch 俯身；研究某问题"
+          "se pencher sur qqch 俯身；研究某问题",
+          "Le gouvernement va se pencher sur ce dossier. 政府将研究这一问题。",
+          "Elle s'est penchée sur le berceau du bébé. 她俯身看着摇篮里的婴儿。"
         ]
       },
       "prepositionOrder": [
@@ -25094,6 +45464,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -25102,6 +45480,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se perdre",
       "prepositions": {
         "dans": [
+          "se perdre dans qqch 在……中迷路；沉湎于",
+          "Nous nous sommes perdus dans les ruelles de la vieille ville. 我们在老城的小巷里迷了路。",
+          "Il se perd souvent dans ses rêveries. 他常常沉浸在遐想中。",
           "Le garçon se perdit dans la forêt. 小男孩在森林中迷路了。"
         ]
       },
@@ -25110,6 +45491,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1533606",
@@ -25215,6 +45608,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se plaire": {
+      "display": "se plaire",
+      "prepositions": {
+        "à": [
+          "se plaire à faire qqch 乐于做某事；以做某事为乐",
+          "Les petits se plaisent à imiter leurs parents. 小孩子喜欢模仿父母。",
+          "Il se plaît à raconter des histoires aux enfants. 他乐于给孩子们讲故事。",
+          "Elle se plaît à contredire tout le monde. 她就爱跟所有人唱反调。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se plier": {
       "display": "se plier",
       "prepositions": {
@@ -25243,10 +45670,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se plonger": {
+      "display": "se plonger",
+      "prepositions": {
+        "dans": [
+          "se plonger dans qqch 埋头于；沉浸于",
+          "Elle s'est plongée dans un roman policier. 她一头扎进了一本侦探小说。",
+          "Plonge-toi dans tes révisions et oublie le reste. 专心复习，别的都别管。",
+          "Le soir, je me plonge dans mes vieux albums photo. 晚上我沉浸在旧相册里。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se poser": {
       "display": "se poser",
       "prepositions": {
         "sur": [
+          "se poser sur qqch 落在……上",
+          "Un papillon s'est posé sur ma main. 一只蝴蝶落在我手上。",
+          "Tous les regards se sont posés sur elle. 所有目光都落在了她身上。",
           "Demain, il va se poser sur la lune. 明天他会在月球降落。"
         ]
       },
@@ -25255,6 +45719,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1037388",
@@ -25295,6 +45771,216 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1107070",
             "zh": "7773127",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "se priver": {
+      "display": "se priver",
+      "prepositions": {
+        "de": [
+          "se priver de qqch 节制；舍弃（享受）",
+          "Elle se prive de dessert pour maigrir. 为了减肥，她不吃甜点。",
+          "Mes parents se sont privés de tout pour nous élever. 我父母为了养大我们省吃俭用。",
+          "Ne te prive pas de vacances, tu en as besoin. 别舍不得休假，你需要休息。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se prononcer": {
+      "display": "se prononcer",
+      "prepositions": {
+        "pour": [
+          "se prononcer pour qqch 表态支持",
+          "La majorité des habitants s'est prononcée pour le projet. 大多数居民表态支持这个项目。",
+          "Je me prononce pour une solution plus simple. 我主张采用更简单的方案。"
+        ],
+        "sur": [
+          "se prononcer sur qqch 就……表态",
+          "Le ministre refuse de se prononcer sur cette question. 部长拒绝就这个问题表态。",
+          "Le tribunal se prononcera sur l'affaire le mois prochain. 法院将于下月对此案作出裁决。"
+        ],
+        "contre": [
+          "se prononcer contre qqch 表态反对",
+          "Les syndicats se sont prononcés contre la réforme. 工会表态反对这项改革。",
+          "Deux juges se sont prononcés contre cette décision. 两名法官对这项判决投了反对票。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour",
+        "sur",
+        "contre"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se proposer": {
+      "display": "se proposer",
+      "prepositions": {
+        "de": [
+          "se proposer de faire qqch 主动提出做某事；旨在",
+          "Mon voisin s'est proposé de m'aider à déménager. 我的邻居主动提出帮我搬家。",
+          "Cet ouvrage se propose d'expliquer la crise simplement. 这本书旨在浅显地解释这场危机。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se précipiter": {
+      "display": "se précipiter",
+      "prepositions": {
+        "sur": [
+          "se précipiter sur qqn/qqch 扑向；抢着去拿",
+          "Les enfants se sont précipités sur le gâteau. 孩子们一窝蜂地扑向蛋糕。",
+          "Le chien s'est précipité sur le facteur. 狗朝邮递员扑了过去。"
+        ],
+        "vers": [
+          "se précipiter vers qqch 冲向",
+          "Tout le monde s'est précipité vers la sortie. 所有人都冲向出口。",
+          "Elle se précipita vers la fenêtre en entendant le bruit. 听到响声，她冲到窗前。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur",
+        "vers"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se prémunir": {
+      "display": "se prémunir",
+      "prepositions": {
+        "contre": [
+          "se prémunir contre qqch 预防；防范",
+          "Il faut se prémunir contre le vol en voyage. 旅行时要防范偷窃。",
+          "Beaucoup d'épargnants cherchent à se prémunir contre l'inflation. 许多储户想方设法抵御通货膨胀。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -25345,9 +46031,13 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se préparer",
       "prepositions": {
         "à": [
-          "se préparer à faire qqch 准备做某事"
+          "se préparer à faire qqch 准备做某事",
+          "Préparez-vous à partir dans cinq minutes. 准备好，五分钟后出发。",
+          "Les habitants se préparent à l'arrivée de l'ouragan. 居民们正在为飓风来临做准备。"
         ],
         "pour": [
+          "se préparer pour qqch 为……做准备（打扮、训练）",
+          "Elle se prépare pour la soirée depuis deux heures. 她已经为晚会打扮了两个小时了。",
           "La plupart des étudiants se préparent pour les examens finaux. 大多数学生都在为期末考试复习。"
         ]
       },
@@ -25360,9 +46050,25 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ],
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "12484",
@@ -25407,10 +46113,105 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se prévaloir": {
+      "display": "se prévaloir",
+      "prepositions": {
+        "de": [
+          "se prévaloir de qqch 以……自恃；援引（权利）",
+          "Il se prévaut de ses diplômes pour mépriser les autres. 他仗着自己的文凭看不起别人。",
+          "Vous pouvez vous prévaloir de ce droit à tout moment. 您可以随时行使这项权利。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se prêter": {
+      "display": "se prêter",
+      "prepositions": {
+        "à": [
+          "se prêter à qqch 适合于；愿意配合",
+          "Ce temps ne se prête pas à une promenade. 这种天气不适合散步。",
+          "Il s'est prêté au jeu avec bonne humeur. 他很乐意地配合了这个游戏。",
+          "Cette salle se prête bien aux concerts. 这个大厅很适合开音乐会。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se qualifier": {
+      "display": "se qualifier",
+      "prepositions": {
+        "pour": [
+          "se qualifier pour qqch 获得……的资格；晋级",
+          "L'équipe s'est qualifiée pour la finale. 这支球队打进了决赛。",
+          "Elle espère se qualifier pour les Jeux olympiques. 她希望获得奥运会参赛资格。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se quereller": {
       "display": "se quereller",
       "prepositions": {
         "avec": [
+          "se quereller avec qqn 与某人争吵",
+          "Il se querelle sans cesse avec ses voisins. 他和邻居吵个不停。",
+          "Elle s'est querellée avec sa sœur pour une broutille. 她为一点小事跟妹妹吵了一架。",
           "Il est inutile de se quereller avec lui à ce sujet. 和他争论这件事得不出结果。"
         ]
       },
@@ -25420,6 +46221,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1271951",
             "zh": "1314189",
@@ -25428,10 +46241,128 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se rabattre": {
+      "display": "se rabattre",
+      "prepositions": {
+        "sur": [
+          "se rabattre sur qqch 退而求其次，转而选择",
+          "Il n'y avait plus de poisson, alors je me suis rabattu sur le poulet. 鱼卖完了，我只好改买鸡肉。",
+          "Faute de train, nous nous rabattrons sur le bus. 没有火车的话，我们就只好改坐大巴。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se raccrocher": {
+      "display": "se raccrocher",
+      "prepositions": {
+        "à": [
+          "se raccrocher à qqn/qqch 抓住；（喻）寄托于",
+          "Il s'est raccroché à une branche pour ne pas tomber. 他抓住一根树枝才没掉下去。",
+          "Elle se raccroche à l'espoir de le revoir. 她把希望寄托在与他重逢上。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se rallier": {
+      "display": "se rallier",
+      "prepositions": {
+        "à": [
+          "se rallier à qqn/qqch 归附；赞同（意见）",
+          "Finalement, tout le monde s'est rallié à son avis. 最后大家都赞同了他的意见。",
+          "Plusieurs députés se sont ralliés au nouveau parti. 几位议员加入了新政党。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se ramener": {
+      "display": "se ramener",
+      "prepositions": {
+        "à": [
+          "se ramener à qqch 归结为",
+          "Toute cette discussion se ramène à une question de confiance. 这整场讨论归结起来是信任问题。",
+          "Leur désaccord se ramène à peu de chose. 他们的分歧其实没多大。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se ranger": {
       "display": "se ranger",
       "prepositions": {
         "de": [
+          "se ranger du côté de qqn 站在某人一边",
+          "Finalement, ma mère s'est rangée du côté de mon père. 最后我妈站到了我爸那边。",
           "Il se range toujours de son côté. 他总是跟她站在同一边。"
         ]
       },
@@ -25441,10 +46372,204 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "130760",
             "zh": "844439",
             "eng": "289198"
+          }
+        ]
+      }
+    },
+    "se rapporter": {
+      "display": "se rapporter",
+      "prepositions": {
+        "à": [
+          "se rapporter à qqch 与……有关",
+          "Ces documents se rapportent à l'affaire en cours. 这些文件与正在审理的案件有关。",
+          "Répondez aux questions qui se rapportent au texte. 回答与课文相关的问题。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se rapprocher": {
+      "display": "se rapprocher",
+      "prepositions": {
+        "de": [
+          "se rapprocher de qqn/qqch 靠近；与……关系变亲近",
+          "Rapproche-toi du feu, sinon tu vas avoir froid. 靠近火堆一点，不然你会冷的。",
+          "Depuis la mort de leur père, elle s'est rapprochée de son frère. 父亲去世后，她和哥哥变得亲近了。",
+          "Nous nous rapprochons de notre objectif. 我们正一步步接近目标。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se rebeller": {
+      "display": "se rebeller",
+      "prepositions": {
+        "contre": [
+          "se rebeller contre qqn/qqch 反叛；叛逆",
+          "Les adolescents se rebellent souvent contre leurs parents. 青少年常常跟父母对着干。",
+          "Une partie de l'armée s'est rebellée contre le gouvernement. 一部分军队起兵反叛政府。",
+          "Le peuple se rebella contre le roi. 人们反对国王"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "822552",
+            "zh": "1550563",
+            "eng": ""
+          }
+        ]
+      }
+    },
+    "se reconvertir": {
+      "display": "se reconvertir",
+      "prepositions": {
+        "dans": [
+          "se reconvertir dans qqch 转行从事",
+          "À quarante ans, elle s'est reconvertie dans la boulangerie. 四十岁时，她转行做了面包师。",
+          "Beaucoup d'anciens mineurs se sont reconvertis dans le tourisme. 许多前矿工转行从事旅游业。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se recueillir": {
+      "display": "se recueillir",
+      "prepositions": {
+        "sur": [
+          "se recueillir sur la tombe de qqn 在某人墓前默哀",
+          "Chaque année, elle va se recueillir sur la tombe de son père. 每年她都去父亲墓前悼念。",
+          "Les enfants se sont recueillis sur la tombe de leur grand-mère. 孩子们在奶奶的墓前默哀。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se refléter": {
+      "display": "se refléter",
+      "prepositions": {
+        "dans": [
+          "se refléter dans qqch 倒映在……中；体现在",
+          "Les montagnes se reflètent dans le lac. 群山倒映在湖中。",
+          "Sa fatigue se reflétait dans son regard. 他的疲惫都写在眼神里。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -25502,6 +46627,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se relever",
       "prepositions": {
         "de": [
+          "se relever de qqch 从……中恢复过来",
+          "Le pays a mis des années à se relever de la guerre. 这个国家花了多年才从战争中恢复过来。",
+          "Il ne s'est jamais vraiment relevé de ce divorce. 他再也没有真正从那次离婚中走出来。",
           "La plus grande réussite dans la vie c'est de se relever d'un échec. 人生最大的成就是从失败中站起来。"
         ]
       },
@@ -25511,6 +46639,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "1091792",
             "zh": "838331",
@@ -25519,17 +46659,85 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se remarier": {
+      "display": "se remarier",
+      "prepositions": {
+        "avec": [
+          "se remarier avec qqn 与某人再婚",
+          "Sa mère s'est remariée avec un architecte. 她母亲和一位建筑师再婚了。",
+          "Il ne veut pas se remarier avec quelqu'un de plus jeune. 他不想和比自己年轻的人再婚。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se remettre": {
       "display": "se remettre",
       "prepositions": {
+        "de": [
+          "se remettre de qqch 从（疾病、打击）中恢复",
+          "Il se remet lentement de son opération. 他正在慢慢从手术中康复。",
+          "Je ne me suis pas encore remis de mes émotions. 我到现在还惊魂未定。",
+          "Il lui a fallu un an pour se remettre de la mort de son chien. 她花了一年时间才从爱犬去世的悲痛中走出来。",
+          "Il a dû se remettre de son rhume. 他的感冒一定是好了。",
+          "Elle se remit de sa longue maladie. 她大病初愈。"
+        ],
         "en": [
           "Elle se remettra en moins de deux. 她很快会康复的。"
         ]
       },
       "prepositionOrder": [
+        "de",
         "en"
       ],
       "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1359158",
+            "zh": "351052",
+            "eng": "303428"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1055081",
+            "zh": "2411904",
+            "eng": "315863"
+          }
+        ],
         "en": [
           {
             "kind": "indirect",
@@ -25544,6 +46752,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se remplir",
       "prepositions": {
         "de": [
+          "se remplir de qqch 充满",
+          "En quelques minutes, la salle s'est remplie de monde. 几分钟内大厅就挤满了人。",
+          "Le ciel se remplit de nuages noirs. 天空布满了乌云。",
           "Ses yeux se remplirent de larmes. 她热泪盈眶。"
         ]
       },
@@ -25552,6 +46763,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "336479",
@@ -25642,7 +46865,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se rendre compte",
       "prepositions": {
         "de": [
-          "se rendre compte de qqch 意识到某事"
+          "se rendre compte de qqch 意识到某事",
+          "Je ne me suis pas rendu compte de l'heure. 我没注意到时间。",
+          "Tu te rends compte de ce que tu as fait ? 你知道自己干了什么吗？"
         ]
       },
       "prepositionOrder": [
@@ -25653,6 +46878,48 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se renseigner": {
+      "display": "se renseigner",
+      "prepositions": {
+        "sur": [
+          "se renseigner sur qqn/qqch 打听；了解（情况）",
+          "Renseigne-toi sur les horaires avant de partir. 出发前先打听一下时刻表。",
+          "Je me suis renseigné sur cette école avant d'y inscrire mon fils. 给儿子报名之前，我先了解了一下这所学校。",
+          "Les recruteurs se renseignent souvent sur les candidats en ligne. 招聘人员常常在网上了解应聘者的情况。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -25661,6 +46928,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se repentir",
       "prepositions": {
         "de": [
+          "se repentir de qqch 后悔；忏悔",
+          "Il se repent amèrement de ses paroles. 他对自己说过的话追悔莫及。",
           "Il se repentait d'avoir trahi son pays au profit de l'ennemi. 他后悔对敌人出卖了他的国家。"
         ]
       },
@@ -25670,6 +46939,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "464694",
             "zh": "778768",
@@ -25678,10 +46955,70 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se replier": {
+      "display": "se replier",
+      "prepositions": {
+        "sur": [
+          "se replier sur qqch 退缩到；封闭于",
+          "Après l'échec, il s'est replié sur lui-même. 失败之后，他变得封闭起来。",
+          "Les soldats se sont repliés sur la colline. 士兵们撤退到山上。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se reporter": {
+      "display": "se reporter",
+      "prepositions": {
+        "à": [
+          "se reporter à qqch 参看；回到（某个时代）",
+          "Reportez-vous au chapitre trois pour les exercices. 练习请参看第三章。",
+          "Il faut se reporter à l'époque pour comprendre ce livre. 要理解这本书，得回到当时的时代背景。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se reposer": {
       "display": "se reposer",
       "prepositions": {
         "sur": [
+          "se reposer sur qqn 依靠某人",
+          "Tu peux te reposer sur moi pour l'organisation. 组织工作你可以交给我。",
           "On ne doit pas se reposer sur le rapport. 那篇报导不可靠。"
         ]
       },
@@ -25691,6 +47028,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "497219",
             "zh": "346113",
@@ -25699,10 +47044,46 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se retenir": {
+      "display": "se retenir",
+      "prepositions": {
+        "de": [
+          "se retenir de faire qqch 忍住不做某事",
+          "J'ai dû me retenir de rire. 我不得不忍住笑。",
+          "Elle se retenait de pleurer devant les enfants. 在孩子们面前，她强忍着不哭。",
+          "Retiens-toi de répondre quand tu es en colère. 生气的时候，忍着别回嘴。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se retirer": {
       "display": "se retirer",
       "prepositions": {
         "dans": [
+          "se retirer dans qqch 退居到；回到（房间等）",
+          "Après sa retraite, il s'est retiré dans un petit village. 退休后，他隐居到一个小村子里。",
           "Il se retira dans sa chambre après dîner. 他在吃过晚餐后回到了自己的房间。"
         ]
       },
@@ -25712,10 +47093,213 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "133481",
             "zh": "8815170",
             "eng": "304487"
+          }
+        ]
+      }
+    },
+    "se ruer": {
+      "display": "se ruer",
+      "prepositions": {
+        "sur": [
+          "se ruer sur qqn/qqch 蜂拥而上；扑向",
+          "Les clients se sont rués sur les soldes. 顾客们蜂拥抢购打折商品。",
+          "Dès l'ouverture, les fans se ruent sur les billets. 一开售，粉丝们就抢着买票。"
+        ],
+        "vers": [
+          "se ruer vers qqch 涌向",
+          "La foule s'est ruée vers les portes du stade. 人群涌向体育场的大门。",
+          "Au XIXe siècle, des milliers d'hommes se ruèrent vers l'or de Californie. 十九世纪，成千上万的人涌向加利福尼亚淘金。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur",
+        "vers"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se réclamer": {
+      "display": "se réclamer",
+      "prepositions": {
+        "de": [
+          "se réclamer de qqn/qqch 自称属于……；以……为依托",
+          "Ce parti se réclame de la gauche. 这个党自称是左派。",
+          "Plusieurs artistes se réclament de son héritage. 好几位艺术家自称继承了他的衣钵。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se réconcilier": {
+      "display": "se réconcilier",
+      "prepositions": {
+        "avec": [
+          "se réconcilier avec qqn/qqch 与某人和好；与……和解",
+          "Il s'est enfin réconcilié avec son frère. 他终于和哥哥和好了。",
+          "Réconcilie-toi avec elle avant qu'il ne soit trop tard. 趁现在还来得及，跟她和好吧。",
+          "Avec le temps, elle s'est réconciliée avec son passé. 随着时间流逝，她与自己的过去和解了。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se réfugier": {
+      "display": "se réfugier",
+      "prepositions": {
+        "dans": [
+          "se réfugier dans qqch 躲进；（喻）逃避到……中",
+          "Nous nous sommes réfugiés dans une grange pendant l'orage. 暴风雨时我们躲进了一个谷仓。",
+          "Après son divorce, il s'est réfugié dans le travail. 离婚后，他躲进了工作里。",
+          "Les habitants se réfugiaient dans le métro pendant les bombardements. 轰炸期间居民们躲到地铁里避难。"
+        ],
+        "chez": [
+          "se réfugier chez qqn 到某人家避难",
+          "Elle s'est réfugiée chez sa sœur après la dispute. 吵架后，她跑到姐姐家去了。",
+          "Les opposants se réfugient souvent chez des amis à l'étranger. 反对派人士常常到国外友人家避难。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans",
+        "chez"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "chez": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se référer": {
+      "display": "se référer",
+      "prepositions": {
+        "à": [
+          "se référer à qqch 参照；援引",
+          "Pour plus de détails, référez-vous au mode d'emploi. 更多细节请参阅使用说明。",
+          "Le juge s'est référé à un article de loi précis. 法官援引了一条具体的法律条文。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -25742,6 +47326,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "560576",
             "zh": "604466",
             "eng": "47308"
+          }
+        ]
+      }
+    },
+    "se répandre": {
+      "display": "se répandre",
+      "prepositions": {
+        "dans": [
+          "se répandre dans qqch 在……中传开；扩散",
+          "La nouvelle s'est vite répandue dans tout le village. 消息很快传遍了全村。",
+          "Une odeur de café se répandait dans la maison. 屋里弥漫着咖啡香。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se répercuter": {
+      "display": "se répercuter",
+      "prepositions": {
+        "sur": [
+          "se répercuter sur qqch 影响到；波及",
+          "La hausse du pétrole se répercute sur les prix. 油价上涨影响到了物价。",
+          "Le manque de sommeil se répercute sur ses résultats scolaires. 睡眠不足影响了他的学习成绩。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -25776,7 +47418,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se résoudre",
       "prepositions": {
         "à": [
-          "se résoudre à faire qqch 下决心做某事"
+          "se résoudre à faire qqch 下决心做某事",
+          "Elle ne peut pas se résoudre à vendre la maison. 她下不了决心卖掉房子。",
+          "Il s'est finalement résolu à partir. 他终于决定离开。"
         ]
       },
       "prepositionOrder": [
@@ -25787,6 +47431,43 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se résumer": {
+      "display": "se résumer",
+      "prepositions": {
+        "à": [
+          "se résumer à qqch 归结为；仅仅是",
+          "Sa vie se résume à son travail. 他的生活只剩下工作。",
+          "Le problème ne se résume pas à une question d'argent. 问题不仅仅是钱的事。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -25795,6 +47476,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se réunir",
       "prepositions": {
         "pour": [
+          "se réunir pour qqch 为……聚集",
+          "Toute la famille se réunit pour Noël. 全家人为过圣诞节团聚在一起。",
+          "Les voisins se sont réunis pour discuter du projet. 邻居们聚在一起讨论这个项目。",
           "Une multitude de personnes se réunirent pour voir le défilé. 一大群人聚在一起看巡游。"
         ]
       },
@@ -25804,10 +47488,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "pour": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "7416455",
             "zh": "10538612",
             "eng": "2258082"
+          }
+        ]
+      }
+    },
+    "se révolter": {
+      "display": "se révolter",
+      "prepositions": {
+        "contre": [
+          "se révolter contre qqn/qqch 反抗；起来造反",
+          "Les paysans se sont révoltés contre le seigneur. 农民们起来反抗领主。",
+          "À seize ans, il se révoltait contre toute forme d'autorité. 十六岁时，他反抗任何形式的权威。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -25847,6 +47572,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se scandaliser": {
+      "display": "se scandaliser",
+      "prepositions": {
+        "de": [
+          "se scandaliser de qqch 对某事感到愤慨",
+          "Les habitants se scandalisent de la hausse des loyers. 居民们对房租上涨感到愤慨。",
+          "Elle s'est scandalisée de son manque de respect. 他的无礼让她十分气愤。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se sentir": {
       "display": "se sentir",
       "prepositions": {
@@ -25871,6 +47625,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "331989",
             "zh": "2680393",
             "eng": "314689"
+          }
+        ]
+      }
+    },
+    "se serrer": {
+      "display": "se serrer",
+      "prepositions": {
+        "contre": [
+          "se serrer contre qqn 紧紧依偎着某人",
+          "L'enfant s'est serré contre sa mère pendant l'orage. 暴风雨时，孩子紧紧依偎在妈妈身边。",
+          "Serrez-vous les uns contre les autres pour la photo. 拍照时大家挤紧一点。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -25995,6 +47778,69 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se solder": {
+      "display": "se solder",
+      "prepositions": {
+        "par": [
+          "se solder par qqch 以……告终",
+          "La réunion s'est soldée par un échec. 会议以失败告终。",
+          "Le match s'est soldé par une défaite de notre équipe. 比赛以我们队的落败收场。",
+          "Cette tentative se soldera sans doute par une perte d'argent. 这次尝试多半会以亏钱收场。"
+        ]
+      },
+      "prepositionOrder": [
+        "par"
+      ],
+      "sources": {
+        "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se solidariser": {
+      "display": "se solidariser",
+      "prepositions": {
+        "avec": [
+          "se solidariser avec qqn 声援某人；与某人团结一致",
+          "Les étudiants se sont solidarisés avec les grévistes. 学生们声援罢工者。",
+          "Tout le village s'est solidarisé avec la famille sinistrée. 全村人都与受灾的那家人站在一起。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se soucier": {
       "display": "se soucier",
       "prepositions": {
@@ -26056,6 +47902,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se soulever": {
+      "display": "se soulever",
+      "prepositions": {
+        "contre": [
+          "se soulever contre qqn/qqch 起来反抗某人／某事",
+          "Le peuple s'est soulevé contre le tyran. 人民起来反抗暴君。",
+          "Les paysans se soulevèrent contre les nouveaux impôts. 农民们起来反抗新税。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se soumettre": {
       "display": "se soumettre",
       "prepositions": {
@@ -26080,6 +47955,40 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "483112",
             "zh": "332683",
             "eng": "71958"
+          }
+        ]
+      }
+    },
+    "se soustraire": {
+      "display": "se soustraire",
+      "prepositions": {
+        "à": [
+          "se soustraire à qqch 逃避（义务、责任、检查）",
+          "Personne ne peut se soustraire à la loi. 谁都不能逃避法律。",
+          "Il a tenté de se soustraire à ses obligations familiales. 他试图逃避对家庭的义务。",
+          "Elle s'est soustraite aux regards en passant par la porte de derrière. 她从后门离开，躲开了众人的目光。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -26124,6 +48033,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se substituer": {
+      "display": "se substituer",
+      "prepositions": {
+        "à": [
+          "se substituer à qqn/qqch 取代某人／某物；替代",
+          "Les parents ne peuvent pas se substituer aux professeurs. 父母不能取代老师。",
+          "Le courrier électronique s'est peu à peu substitué aux lettres. 电子邮件逐渐取代了书信。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se suicider": {
       "display": "se suicider",
       "prepositions": {
@@ -26149,6 +48087,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se séparer",
       "prepositions": {
         "de": [
+          "se séparer de qqn/qqch 与某人分开；舍弃某物",
+          "Il ne se sépare jamais de son vieux carnet. 那个旧本子他从不离身。",
+          "L'entreprise a dû se séparer de vingt employés. 公司不得不辞退了二十名员工。",
           "Elle va se séparer de son petit ami. 她要和男友分手了。"
         ]
       },
@@ -26158,6 +48099,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "486536",
             "zh": "340088",
@@ -26166,10 +48119,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se tapir": {
+      "display": "se tapir",
+      "prepositions": {
+        "dans": [
+          "se tapir dans qqch 蜷缩、潜伏在……里",
+          "Le chat s'est tapi dans l'herbe pour guetter l'oiseau. 猫伏在草丛里盯着那只鸟。",
+          "Les enfants se tapissaient dans le noir pour nous faire peur. 孩子们躲在黑暗里想吓我们一跳。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se targuer": {
       "display": "se targuer",
       "prepositions": {
         "de": [
+          "se targuer de qqch / de faire qqch 以……自夸",
+          "Ce restaurant se targue d'utiliser uniquement des produits locaux. 这家餐厅标榜只用本地食材。",
+          "Elle se targuait de n'avoir jamais été malade. 她总夸口说自己从没生过病。",
           "Il se targue de savoir parler six langues. 他显摆自己能说6种语言。"
         ]
       },
@@ -26178,6 +48163,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "10363722",
@@ -26333,6 +48330,134 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se terrer": {
+      "display": "se terrer",
+      "prepositions": {
+        "dans": [
+          "se terrer dans qqch 躲藏在……里",
+          "Le renard s'est terré dans son trou. 狐狸躲进了洞里。",
+          "Depuis le scandale, il se terre dans sa maison de campagne. 丑闻爆发后，他一直躲在乡间别墅里。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se tirer": {
+      "display": "se tirer",
+      "prepositions": {
+        "de": [
+          "se tirer de qqch 摆脱（困境）",
+          "Il s'est tiré d'affaire grâce à son avocat. 多亏了律师，他才脱了身。",
+          "Comment vas-tu te tirer de ce mauvais pas ? 你打算怎么摆脱这个困境？",
+          "On s'tire d'ici, les flics arrivent. 我们离开这儿，警察来了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "3542",
+            "zh": "501700",
+            "eng": ""
+          }
+        ]
+      }
+    },
+    "se tordre": {
+      "display": "se tordre",
+      "prepositions": {
+        "de": [
+          "se tordre de rire/douleur 笑得／疼得直不起腰",
+          "Toute la salle se tordait de rire. 全场观众笑得前仰后合。",
+          "Le blessé se tordait de douleur sur le sol. 伤者疼得在地上打滚。",
+          "Après ce repas, il s'est tordu de douleur toute la nuit. 吃完那顿饭，他整夜疼得直不起腰。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "se tourmenter": {
+      "display": "se tourmenter",
+      "prepositions": {
+        "pour": [
+          "se tourmenter pour qqn/qqch 为……忧心忡忡",
+          "Il se tourmente pour l'avenir de ses enfants. 他为孩子们的前途忧心忡忡。",
+          "Tu te tourmentes pour rien, tout ira bien. 你是白担心，一切都会好的。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se tourner": {
       "display": "se tourner",
       "prepositions": {
@@ -26362,6 +48487,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1359166",
             "zh": "842306",
             "eng": "304376"
+          }
+        ]
+      }
+    },
+    "se tracasser": {
+      "display": "se tracasser",
+      "prepositions": {
+        "pour": [
+          "se tracasser pour qqn/qqch 为……操心、发愁",
+          "Ne te tracasse pas pour si peu. 别为这点小事发愁。",
+          "Ma mère se tracasse toujours pour ma santé. 我妈妈总为我的身体操心。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -26424,19 +48578,53 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "se tromper",
       "prepositions": {
         "de": [
-          "se tromper de qqch 弄错（车、路、日子）"
+          "se tromper de qqch 弄错（车、路、日子）",
+          "Excusez-moi, je me suis trompé de numéro. 对不起，我打错电话了。",
+          "Nous nous sommes trompés de route et nous sommes arrivés en retard. 我们走错了路，结果迟到了。"
+        ],
+        "sur": [
+          "se tromper sur qqn/qqch 看错某人；对某事判断失误",
+          "Je me suis complètement trompé sur lui, il est très gentil. 我完全看错他了，他人很好。",
+          "Les experts se sont trompés sur l'évolution des prix. 专家们对价格走势判断错了。"
         ]
       },
       "prepositionOrder": [
-        "de"
+        "de",
+        "sur"
       ],
       "sources": {
         "de": [
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
+      },
+      "notes": {
+        "de": "se tromper de + 名词（不带冠词）= 弄错（选错了对象：车、门、日期）；se tromper sur qqn/qqch = 对某人／某事的判断错误",
+        "sur": "se tromper sur qqn = 看错人、误判；se tromper de qqch = 拿错、走错、选错"
       }
     },
     "se trouver": {
@@ -26535,6 +48723,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se tuer": {
+      "display": "se tuer",
+      "prepositions": {
+        "à": [
+          "se tuer à faire qqch 拼命做某事；反复做某事却白费力气",
+          "Je me tue à te dire de ranger ta chambre ! 我都跟你说了多少遍了，收拾你的房间！",
+          "Elle se tue à la tâche pour nourrir sa famille. 她为了养家拼命工作。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se vanter": {
       "display": "se vanter",
       "prepositions": {
@@ -26563,10 +48780,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "se vautrer": {
+      "display": "se vautrer",
+      "prepositions": {
+        "dans": [
+          "se vautrer dans qqch 懒洋洋地躺在……里；沉溺于",
+          "Il s'est vautré dans le canapé devant la télé. 他瘫在沙发里看电视。",
+          "Les cochons se vautrent dans la boue. 猪在泥里打滚。",
+          "Arrête de te vautrer dans le luxe et aide-nous un peu. 别再贪图享受了，来帮我们一把。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "se vendre": {
       "display": "se vendre",
       "prepositions": {
         "à": [
+          "se vendre à (prix / unité) 以……价格（或单位）出售",
+          "Ces tableaux se vendent à des prix incroyables. 这些画卖出了令人难以置信的价格。",
+          "Son premier roman s'est vendu à un million d'exemplaires. 他的第一部小说卖了一百万册。",
           "Les œufs se vendent à la douzaine. 蛋是按打卖的。"
         ]
       },
@@ -26576,12 +48830,82 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "1339346",
             "zh": "8897383",
             "eng": "325219"
           }
         ]
+      }
+    },
+    "se venger": {
+      "display": "se venger",
+      "prepositions": {
+        "de": [
+          "se venger de qqn/qqch 报复某人；为某事报仇",
+          "Il a juré de se venger de ses anciens associés. 他发誓要报复他以前的合伙人。",
+          "Elle s'est vengée de cette humiliation des années plus tard. 多年以后，她为那次羞辱报了仇。",
+          "Ne cherche pas à te venger de lui, ça n'en vaut pas la peine. 别想着报复他，不值得。"
+        ],
+        "sur": [
+          "se venger sur qqn 拿某人出气；迁怒于某人",
+          "Quand il a une mauvaise journée au travail, il se venge sur son chien. 他工作上一不顺心，就拿狗出气。",
+          "Ne te venge pas sur ta petite sœur, elle n'y est pour rien. 别拿你妹妹撒气，这不关她的事。"
+        ]
+      },
+      "prepositionOrder": [
+        "de",
+        "sur"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "se venger de qqn/qqch = 向（冒犯者）报复、为（某事）报仇；se venger sur qqn = 把怒气发泄到（无辜的）某人身上",
+        "sur": "se venger sur qqn = 迁怒于某人；se venger de qqn = 直接报复冒犯自己的人"
       }
     },
     "sembler": {
@@ -26612,58 +48936,36 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "sentir": {
-      "display": "sentir",
+    "sensibiliser": {
+      "display": "sensibiliser",
       "prepositions": {
-        "en": [
-          "Je me sens en forme. 我觉得精神很好。",
-          "Je me sens en forme ce matin. 我今天早晨感觉良好。",
-          "Je me sens en effet assez bien. 我感觉非常棒。",
-          "Je me sens en sécurité avec lui. 我和他在一起时很有安全感。",
-          "Je ne me sentais jamais bien en présence de mon père. 我在我爸的公司一直感觉不自在。",
-          "Il n'y a aucune raison pour que tu te sentes en infériorité à l'égard de quiconque. 你没理由觉得自己比别人差的。"
+        "à": [
+          "sensibiliser qqn à qqch 提高某人对某事的意识",
+          "Cette campagne vise à sensibiliser les jeunes aux dangers de l'alcool. 这场宣传活动旨在让年轻人认识到酒精的危害。",
+          "L'école sensibilise les élèves au tri des déchets. 学校培养学生垃圾分类的意识。",
+          "Il faut sensibiliser le public à la protection des océans. 必须提高公众保护海洋的意识。"
         ]
       },
       "prepositionOrder": [
-        "en"
+        "à"
       ],
       "sources": {
-        "en": [
+        "à": [
           {
-            "kind": "indirect",
-            "fr": "4682074",
-            "zh": "826231",
-            "eng": "33524"
+            "kind": "curated",
+            "authored": true
           },
           {
-            "kind": "indirect",
-            "fr": "10686274",
-            "zh": "5670803",
-            "eng": "242203"
+            "kind": "authored",
+            "authored": true
           },
           {
-            "kind": "indirect",
-            "fr": "2069644",
-            "zh": "2370690",
-            "eng": "1887209"
+            "kind": "authored",
+            "authored": true
           },
           {
-            "kind": "indirect",
-            "fr": "1815343",
-            "zh": "358174",
-            "eng": "284444"
-          },
-          {
-            "kind": "indirect",
-            "fr": "1972740",
-            "zh": "1516456",
-            "eng": "261531"
-          },
-          {
-            "kind": "indirect",
-            "fr": "4426388",
-            "zh": "2474946",
-            "eng": "69892"
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -26813,6 +49115,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": "servir à = 用来做…；servir de = 充当…"
       }
     },
+    "sevrer": {
+      "display": "sevrer",
+      "prepositions": {
+        "de": [
+          "sevrer qqn de qqch 使某人戒掉某物；给（婴儿）断奶",
+          "Il est difficile de sevrer les adolescents de leur téléphone. 让青少年戒掉手机很难。",
+          "Le médecin essaie de le sevrer de ces médicaments. 医生正设法让他戒掉这些药。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "siffler": {
       "display": "siffler",
       "prepositions": {
@@ -26834,10 +49165,81 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "signaler": {
+      "display": "signaler",
+      "prepositions": {
+        "à": [
+          "signaler qqch à qqn 向某人报告、指出某事",
+          "Il faut signaler ce vol à la police. 必须向警方报告这起盗窃案。",
+          "J'ai signalé l'erreur au professeur après le cours. 下课后我向老师指出了那个错误。",
+          "Signalez tout problème technique au service client. 任何技术问题都请告知客服部门。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "signer": {
+      "display": "signer",
+      "prepositions": {
+        "avec": [
+          "signer (un contrat) avec qqn 与某人签约",
+          "Le joueur vient de signer avec un club italien. 这名球员刚和一家意大利俱乐部签了约。",
+          "Notre société a signé un accord avec un partenaire chinois. 我们公司和一家中国合作伙伴签订了协议。",
+          "La chanteuse signera bientôt avec une grande maison de disques. 这位女歌手很快将与一家大唱片公司签约。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "signifier": {
       "display": "signifier",
       "prepositions": {
         "pour": [
+          "signifier qqch pour qqn 对某人意味着……",
+          "Ce prix signifie énormément pour toute l'équipe. 这个奖对整个团队意义非凡。",
+          "Qu'est-ce que cette décision signifie pour nous ? 这个决定对我们来说意味着什么？",
           "Ton amitié signifie beaucoup pour moi. 你的友谊对我来说意义重大。"
         ]
       },
@@ -26846,6 +49248,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "372982",
@@ -26895,6 +49309,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "siéger": {
+      "display": "siéger",
+      "prepositions": {
+        "à": [
+          "siéger à qqch 在（议会、委员会等）任职；设于某地",
+          "Elle siège au conseil municipal depuis dix ans. 她在市议会任职已有十年。",
+          "Le tribunal siège à Lyon. 该法院设在里昂。",
+          "Il a siégé à l'Assemblée nationale pendant deux mandats. 他曾在国民议会担任了两届议员。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "skier": {
       "display": "skier",
       "prepositions": {
@@ -26920,6 +49368,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "sombrer",
       "prepositions": {
         "dans": [
+          "sombrer dans qqch 陷入（绝望、沉睡等）",
+          "Après la mort de sa femme, il a sombré dans la dépression. 妻子去世后，他陷入了抑郁。",
+          "Épuisée, elle a sombré dans un profond sommeil. 她筋疲力尽，沉沉睡去。",
           "Il sombra dans un violent accès de colère contre moi. 他向我大发脾气。"
         ]
       },
@@ -26929,10 +49380,80 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "839079",
             "zh": "371736",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "sommer": {
+      "display": "sommer",
+      "prepositions": {
+        "de": [
+          "sommer qqn de faire qqch 勒令某人做某事",
+          "Le juge l'a sommé de s'expliquer. 法官勒令他作出解释。",
+          "La mairie a sommé le propriétaire de réparer le toit. 市政府责令房东修缮屋顶。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "sonder": {
+      "display": "sonder",
+      "prepositions": {
+        "sur": [
+          "sonder qqn sur qqch 试探某人对某事的想法",
+          "J'ai sondé mon frère sur ses projets pour l'été. 我探了探哥哥暑假的打算。",
+          "L'institut a sondé mille Français sur leurs habitudes de lecture. 该机构就阅读习惯调查了一千名法国人。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -27184,19 +49705,64 @@ const FRENCH_COLLOCATIONS_DATA = {
     "souffler": {
       "display": "souffler",
       "prepositions": {
+        "à": [
+          "souffler qqch à qqn 悄悄告诉某人（答案等）",
+          "Il a soufflé la réponse à son voisin pendant l'interrogation. 小测验时他偷偷把答案告诉了同桌。",
+          "Qui a soufflé cette idée à ton frère ? 是谁给你哥哥出的这个主意？",
+          "Dans le dernier typhon, le vent soufflé à plus de 200 kilomètres à l'heure ! 上次刮台风时，风速超过了 200 公里每小时！"
+        ],
         "sur": [
+          "souffler sur qqch 对着……吹气",
+          "Souffle sur ta soupe, elle est brûlante. 吹一吹你的汤，太烫了。",
+          "L'enfant a soufflé sur les bougies de son gâteau. 孩子吹灭了蛋糕上的蜡烛。",
           "Il fit souffler sur les dés par sa petite amie, pour lui porter chance, avant qu'il les lance. 他掷骰子之前让他的女友在上面吹气来给他带来好运。"
         ],
         "dans": [
+          "souffler dans qqch 往……里吹气",
+          "Le policier m'a demandé de souffler dans l'éthylotest. 警察让我对着酒精测试仪吹气。",
+          "Il soufflait dans sa trompette tous les soirs. 他每天晚上都吹小号。",
           "Par la fenêtre ouverte un vent glacial soufflait dans la chambre. 一股寒风从敞开着的窗口吹入屋内。"
         ]
       },
       "prepositionOrder": [
+        "à",
         "sur",
         "dans"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "350250",
+            "zh": "346092",
+            "eng": "59896"
+          }
+        ],
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "811367",
@@ -27205,6 +49771,18 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "2910694",
@@ -27275,10 +49853,83 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "souhaiter": {
+      "display": "souhaiter",
+      "prepositions": {
+        "à": [
+          "souhaiter qqch à qqn 祝愿某人……",
+          "Nous souhaitons un bon anniversaire à notre grand-mère. 我们祝奶奶生日快乐。",
+          "Je souhaite bonne chance à tous les candidats. 我祝所有考生好运。",
+          "Elle a souhaité une bonne année à tous ses collègues. 她祝所有同事新年快乐。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "souiller": {
+      "display": "souiller",
+      "prepositions": {
+        "de": [
+          "souiller qqch de qqch 用……弄脏、玷污",
+          "Ses chaussures étaient souillées de boue. 他的鞋子沾满了泥。",
+          "Les mains du meurtrier étaient souillées de sang. 凶手的双手沾满了鲜血。",
+          "Mes habits étaient souillés d'huile. 我的衣服被油弄脏了。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "7632",
+            "zh": "788857",
+            "eng": "251797"
+          }
+        ]
+      }
+    },
     "soulager": {
       "display": "soulager",
       "prepositions": {
         "de": [
+          "soulager qqn de qqch 减轻某人的（负担、痛苦）",
+          "Ce médicament va te soulager de tes douleurs. 这种药能缓解你的疼痛。",
+          "Laisse-moi te soulager de ce gros sac. 我来帮你拿这个大包吧。",
           "Je suis soulagé d'entendre cela. 我听到这个很开心。"
         ]
       },
@@ -27287,6 +49938,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1112066",
@@ -27338,6 +50001,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "soupirer": {
+      "display": "soupirer",
+      "prepositions": {
+        "de": [
+          "soupirer de qqch 因……而叹气",
+          "Elle a soupiré de soulagement en voyant les résultats. 看到结果，她松了一口气。",
+          "Les élèves soupiraient d'ennui pendant la longue conférence. 漫长的讲座中，学生们无聊得直叹气。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "soupçonner": {
       "display": "soupçonner",
       "prepositions": {
@@ -27377,6 +50069,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "sourire",
       "prepositions": {
         "à": [
+          "sourire à qqn 向某人微笑；（运气）眷顾某人",
+          "La serveuse souriait à tous les clients. 女服务员对每位顾客都面带微笑。",
+          "Cette année, la chance a enfin souri à notre équipe. 今年，好运终于眷顾了我们队。",
           "Elle sourit à son bébé. 她对着她的孩子微笑。"
         ],
         "avec": [
@@ -27390,6 +50085,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "à": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "528838",
             "zh": "842488",
@@ -27402,6 +50109,69 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "805528",
             "zh": "805224",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "souscrire": {
+      "display": "souscrire",
+      "prepositions": {
+        "à": [
+          "souscrire à qqch 认购；赞同（意见）",
+          "Il a souscrit à l'augmentation de capital de l'entreprise. 他认购了公司增资发行的股份。",
+          "Je souscris entièrement à votre analyse. 我完全赞同您的分析。",
+          "Beaucoup de petits épargnants ont souscrit à l'emprunt. 许多小储户认购了这笔债券。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "soustraire": {
+      "display": "soustraire",
+      "prepositions": {
+        "de": [
+          "soustraire qqch de qqch 从……中减去某数",
+          "Soustrais sept de vingt, et tu obtiens treize. 二十减七，就得到十三。",
+          "Il faut soustraire les impôts du salaire brut. 要从税前工资里扣除税款。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -27435,6 +50205,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "129745",
             "zh": "1458934",
             "eng": "281575"
+          }
+        ]
+      }
+    },
+    "soutirer": {
+      "display": "soutirer",
+      "prepositions": {
+        "à": [
+          "soutirer qqch à qqn 从某人那里骗取、套出某物",
+          "L'escroc a soutiré mille euros à une vieille dame. 骗子从一位老太太那里骗走了一千欧元。",
+          "Les journalistes n'ont rien pu soutirer au ministre. 记者们没能从部长口中套出任何话。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -27504,6 +50303,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Elle est spécialisée en littérature française. 她的专业是法国的文学"
         ],
         "dans": [
+          "se spécialiser dans qqch 专门从事……",
+          "Notre agence s'est spécialisée dans les voyages en Asie. 我们旅行社专做亚洲游。",
+          "Ce garage est spécialisé dans les voitures anciennes. 这家修车厂专修老爷车。",
           "Cet éditeur est spécialisé dans la littérature pour enfants. 这家出版社专门出版儿童文学。"
         ]
       },
@@ -27534,10 +50336,114 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "11381159",
             "zh": "3149460",
             "eng": "7885822"
+          }
+        ]
+      }
+    },
+    "spéculer": {
+      "display": "spéculer",
+      "prepositions": {
+        "sur": [
+          "spéculer sur qqch 投机于；对……作揣测",
+          "Il a perdu beaucoup d'argent en spéculant sur les matières premières. 他炒大宗商品亏了很多钱。",
+          "Les journaux spéculent sur les raisons de sa démission. 报纸纷纷猜测他辞职的原因。",
+          "Ne spéculons pas sur l'avenir, attendons les faits. 我们别揣测未来了，等事实说话吧。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "statuer": {
+      "display": "statuer",
+      "prepositions": {
+        "sur": [
+          "statuer sur qqch 对某事作出裁决",
+          "Le tribunal statuera sur cette affaire la semaine prochaine. 法院下周将对此案作出裁决。",
+          "Le comité n'a pas encore statué sur ta demande. 委员会还没有对你的申请作出决定。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "subdiviser": {
+      "display": "subdiviser",
+      "prepositions": {
+        "en": [
+          "subdiviser qqch en qqch 把……再细分为",
+          "Chaque chapitre est subdivisé en plusieurs sections. 每一章又细分为若干节。",
+          "La ville est subdivisée en vingt arrondissements. 这座城市下分二十个区。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -27548,6 +50454,7 @@ const FRENCH_COLLOCATIONS_DATA = {
         "de": [
           "L'entreprise a subi d'énormes dégâts. 公司遭受了巨大的破坏。",
           "L'entreprise a subi de grosses pertes. 公司遭受了巨大的损失。",
+          "Je subis du cyberharcèlement. 我被网暴了。",
           "La maison n'a pas subi beaucoup de dégâts car le feu a été rapidement étouffé. 火很快便被扑熄了，房子只受到轻微损坏。"
         ]
       },
@@ -27567,6 +50474,12 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "754016",
             "zh": "754025",
             "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "14042095",
+            "zh": "14028785",
+            "eng": "14028786"
           },
           {
             "kind": "indirect",
@@ -27601,6 +50514,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "132727",
             "zh": "342689",
             "eng": "300225"
+          }
+        ]
+      }
+    },
+    "subordonner": {
+      "display": "subordonner",
+      "prepositions": {
+        "à": [
+          "subordonner qqch à qqch 使某事以……为前提",
+          "La banque subordonne le prêt à plusieurs garanties. 银行发放贷款要以几项担保为前提。",
+          "Mes parents ont subordonné le voyage à mes résultats scolaires. 我父母说能不能去旅行要看我的成绩。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "substituer": {
+      "display": "substituer",
+      "prepositions": {
+        "à": [
+          "substituer qqch à qqch 用某物代替某物",
+          "On peut substituer le miel au sucre dans cette recette. 在这个食谱里可以用蜂蜜代替糖。",
+          "L'usine a substitué des machines aux ouvriers. 工厂用机器取代了工人。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -27647,11 +50618,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "succéder": {
-      "display": "succéder",
+    "succomber": {
+      "display": "succomber",
       "prepositions": {
         "à": [
-          "succéder à qqn 接替某人"
+          "succomber à qqch 经受不住（诱惑等）；死于（伤病）",
+          "J'ai encore succombé à la tentation du chocolat. 我又没忍住巧克力的诱惑。",
+          "Le blessé a succombé à ses blessures pendant la nuit. 伤者夜里因伤势过重死亡。",
+          "Elle a fini par succomber au charme de la ville. 她最终被这座城市的魅力征服了。"
         ]
       },
       "prepositionOrder": [
@@ -27661,6 +50635,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "succéder": {
+      "display": "succéder",
+      "prepositions": {
+        "à": [
+          "succéder à qqn 接替某人",
+          "Le prince succédera à son père sur le trône. 王子将继承他父亲的王位。",
+          "À la pluie a succédé un beau soleil. 雨过之后，出了大太阳。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -27765,18 +50780,67 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "suggérer": {
-      "display": "suggérer",
+    "suffoquer": {
+      "display": "suffoquer",
       "prepositions": {
         "de": [
-          "Elle suggéra de faire une fête. 她建议搞一个派对。",
-          "Mon père a suggéré d'aller au cinéma cet après-midi. 爸爸建议今天下午去看电影。"
+          "suffoquer de qqch 喘不过气（因……）",
+          "On suffoquait de chaleur dans ce train bondé. 在这列挤满人的火车里，热得让人喘不过气。",
+          "Il suffoquait de colère en lisant la lettre. 他读着那封信，气得透不过气来。"
         ]
       },
       "prepositionOrder": [
         "de"
       ],
       "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "suggérer": {
+      "display": "suggérer",
+      "prepositions": {
+        "à": [
+          "suggérer qqch à qqn 向某人建议某事",
+          "Le médecin a suggéré une semaine de repos à ma mère. 医生建议我妈妈休息一周。",
+          "J'ai suggéré à Paul de prendre le train. 我建议保罗坐火车去。"
+        ],
+        "de": [
+          "Elle suggéra de faire une fête. 她建议搞一个派对。",
+          "Mon père a suggéré d'aller au cinéma cet après-midi. 爸爸建议今天下午去看电影。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
         "de": [
           {
             "kind": "direct",
@@ -27814,17 +50878,49 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "suinter": {
+      "display": "suinter",
+      "prepositions": {
+        "de": [
+          "suinter de qqch 渗出（水、湿气等）",
+          "Les murs de la cave suintent d'humidité. 地窖的墙壁渗着潮气。",
+          "Après chaque pluie, les rochers suintaient d'eau. 每次下雨后，岩石上都会渗出水来。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "suivre": {
       "display": "suivre",
       "prepositions": {
         "de": [
-          "suivre qqn des yeux 用目光追随某人"
+          "suivre qqn des yeux 用目光追随某人",
+          "Le chat suivait la mouche des yeux. 猫的眼睛一直盯着那只苍蝇。"
         ],
         "sur": [
-          "suivre qqch sur une carte 在地图上跟踪某物"
+          "suivre qqch sur une carte 在地图上跟踪某物",
+          "J'ai suivi la course sur mon téléphone. 我在手机上看了比赛直播。"
         ],
         "avec": [
-          "suivre qqch avec attention 密切关注某事"
+          "suivre qqch avec attention 密切关注某事",
+          "Tout le monde suivait le débat avec intérêt. 大家都饶有兴趣地关注着这场辩论。"
         ]
       },
       "prepositionOrder": [
@@ -27837,17 +50933,29 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ],
         "sur": [
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ],
         "avec": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -27865,6 +50973,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "supplier",
       "prepositions": {
         "de": [
+          "supplier qqn de faire qqch 恳求某人做某事",
+          "Je te supplie de ne rien dire à mes parents. 求求你别告诉我父母。",
+          "Les enfants ont supplié leur mère de garder le chiot. 孩子们求妈妈把小狗留下。",
           "Il me supplia de rester. 他恳求我留下来。"
         ]
       },
@@ -27874,10 +50985,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "566247",
             "zh": "663260",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "suppléer": {
+      "display": "suppléer",
+      "prepositions": {
+        "à": [
+          "suppléer à qqch 弥补（不足）",
+          "Son enthousiasme supplée à son manque d'expérience. 他的热情弥补了经验的不足。",
+          "Nous avons dû suppléer au manque de personnel en travaillant le week-end. 我们只好周末加班来弥补人手不足。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -27924,10 +51076,78 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "surcharger": {
+      "display": "surcharger",
+      "prepositions": {
+        "de": [
+          "surcharger qqn/qqch de qqch 使……负担过重",
+          "Le patron nous surcharge de travail avant les fêtes. 节前老板给我们压了太多工作。",
+          "Ne surcharge pas tes diapositives de texte. 别在幻灯片上塞太多文字。",
+          "Aujourd'hui je quitte le travail un peu plus tard, afin d'éviter d'être surchargé de travail demain matin. 我今天晚点下班，省得明天早上手忙脚乱。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "383136",
+            "zh": "383127",
+            "eng": ""
+          }
+        ]
+      }
+    },
+    "surenchérir": {
+      "display": "surenchérir",
+      "prepositions": {
+        "sur": [
+          "surenchérir sur qqn/qqch 抬价超过；（言论上）变本加厉",
+          "Un collectionneur a surenchéri sur toutes les offres. 一位收藏家出价高过了所有人。",
+          "Chaque candidat surenchérit sur les promesses de l'autre. 每位候选人都在对手的承诺上层层加码。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "surfer": {
       "display": "surfer",
       "prepositions": {
         "sur": [
+          "surfer sur qqch 在……上冲浪；借……之势",
+          "Il surfe sur Internet au lieu de réviser. 他不复习，却在网上闲逛。",
+          "Cette marque surfe sur la mode du bio. 这个品牌借势有机食品的潮流。",
           "Elle passe carrément trop de temps à surfer sur le web. 她花实在太多的时间在网上冲浪。"
         ]
       },
@@ -27936,6 +51156,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "948151",
@@ -27949,6 +51181,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "surgir",
       "prepositions": {
         "de": [
+          "surgir de qqch 从……中突然冒出",
+          "Un cerf a surgi de la forêt devant notre voiture. 一头鹿突然从树林里窜到我们车前。",
+          "Des souvenirs surgissaient de son passé. 往事一幕幕从他的记忆中涌现出来。",
           "Un chat a surgi de sous le bureau. 一只猫从桌底下出来。"
         ]
       },
@@ -27958,6 +51193,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "822394",
             "zh": "4641835",
@@ -27966,10 +51213,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "surpasser": {
+      "display": "surpasser",
+      "prepositions": {
+        "en": [
+          "surpasser qqn en qqch 在……方面胜过某人",
+          "Elle surpasse tous ses camarades en mathématiques. 她的数学超过了所有同学。",
+          "Ce modèle surpasse l'ancien en rapidité. 这款型号在速度上胜过旧款。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "surprendre": {
       "display": "surprendre",
       "prepositions": {
         "en": [
+          "surprendre qqn en train de faire qqch 撞见某人正在做某事",
+          "Sa mère l'a surpris en train de fumer. 他妈妈撞见他在抽烟。",
+          "Je les ai surpris en pleine dispute. 我撞见他们正在吵架。",
           "Je l'ai surpris en train de voler de l'argent. 我抓到他偷钱。"
         ],
         "par": [
@@ -27986,6 +51265,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "129979",
@@ -28023,6 +51314,64 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "127730",
             "zh": "431600",
             "eng": "260734"
+          }
+        ]
+      }
+    },
+    "sursauter": {
+      "display": "sursauter",
+      "prepositions": {
+        "à": [
+          "sursauter à qqch 吓一跳（听到／看到……）",
+          "Le chat sursaute au moindre bruit. 有一点动静猫就会吓一跳。",
+          "J'ai sursauté à la sonnerie du téléphone. 电话铃一响，我吓了一跳。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "surseoir": {
+      "display": "surseoir",
+      "prepositions": {
+        "à": [
+          "surseoir à qqch 暂缓、推迟执行某事（法律）",
+          "Le juge a décidé de surseoir à l'exécution de la peine. 法官决定暂缓执行刑罚。",
+          "La mairie a sursis aux travaux en attendant l'expertise. 在鉴定结果出来前，市政府暂缓了工程。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -28184,10 +51533,42 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "susurrer": {
+      "display": "susurrer",
+      "prepositions": {
+        "à": [
+          "susurrer qqch à qqn 对某人低声细语",
+          "Il a susurré un secret à sa voisine de table. 他对邻座的女士悄悄说了一个秘密。",
+          "Elle susurrait des mots doux à son bébé. 她对着宝宝轻声说着温柔的话。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "sympathiser": {
       "display": "sympathiser",
       "prepositions": {
         "avec": [
+          "sympathiser avec qqn 与某人合得来、交上朋友",
+          "J'ai tout de suite sympathisé avec ma voisine. 我和邻居一见如故。",
+          "En Espagne, il a sympathisé avec des étudiants de son âge. 在西班牙，他和同龄的学生交上了朋友。",
           "Nous avons sympathisé avec eux. 我们与他们交朋友了。"
         ]
       },
@@ -28197,10 +51578,80 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "4912477",
             "zh": "842431",
             "eng": "249246"
+          }
+        ]
+      }
+    },
+    "synchroniser": {
+      "display": "synchroniser",
+      "prepositions": {
+        "avec": [
+          "synchroniser qqch avec qqch 使……与……同步",
+          "J'ai synchronisé mon téléphone avec mon ordinateur. 我把手机和电脑同步了。",
+          "Il faut synchroniser le son avec l'image. 必须让声音和画面同步。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "sécher": {
+      "display": "sécher",
+      "prepositions": {
+        "sur": [
+          "sécher sur qqch 被……难住；答不上来（口语）",
+          "J'ai séché sur la dernière question de l'examen. 考试的最后一道题把我难住了。",
+          "Même le professeur a séché sur cette énigme. 连老师都被这个谜题难住了。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -28213,14 +51664,10 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Avez-vous déjà séjourné dans un pays étranger ? 你有没有去过外国？",
           "Je veux séjourner dans un hôtel près de l'aéroport. 我想住在机场附近的旅馆里。",
           "Je prévois de séjourner dans un hôtel cinq étoiles. 我打算去五星级酒店住。"
-        ],
-        "chez": [
-          "Je séjourne chez un ami. 我和一位朋友住在一起。"
         ]
       },
       "prepositionOrder": [
-        "dans",
-        "chez"
+        "dans"
       ],
       "sources": {
         "dans": [
@@ -28248,13 +51695,34 @@ const FRENCH_COLLOCATIONS_DATA = {
             "zh": "13894734",
             "eng": "1398459"
           }
-        ],
-        "chez": [
+        ]
+      }
+    },
+    "sélectionner": {
+      "display": "sélectionner",
+      "prepositions": {
+        "pour": [
+          "sélectionner qqn pour qqch 选拔某人参加某事",
+          "Elle a été sélectionnée pour les Jeux olympiques. 她入选了奥运会代表队。",
+          "On m'a sélectionné pour représenter l'école au concours. 我被选中代表学校参加比赛。"
+        ]
+      },
+      "prepositionOrder": [
+        "pour"
+      ],
+      "sources": {
+        "pour": [
           {
-            "kind": "indirect",
-            "fr": "127978",
-            "zh": "917836",
-            "eng": "262047"
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -28294,10 +51762,76 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "sévir": {
+      "display": "sévir",
+      "prepositions": {
+        "contre": [
+          "sévir contre qqn/qqch 严厉惩处；严打",
+          "La police va sévir contre les conducteurs imprudents. 警方将严厉打击鲁莽驾驶的司机。",
+          "Le directeur a promis de sévir contre la triche. 校长承诺将严惩作弊行为。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "tabler": {
+      "display": "tabler",
+      "prepositions": {
+        "sur": [
+          "tabler sur qqch 指望；以……为估算依据",
+          "Le gouvernement table sur une croissance de deux pour cent. 政府预计经济增长百分之二。",
+          "Ne table pas trop sur son aide. 别太指望他的帮助。",
+          "Nous tablions sur trois cents participants. 我们原本估计会有三百人参加。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "tacher": {
       "display": "tacher",
       "prepositions": {
         "de": [
+          "tacher qqch de qqch 用……弄脏",
+          "Tu as taché la nappe de vin rouge. 你把红酒洒在桌布上了。",
+          "Ses doigts étaient tachés d'encre. 他的手指上沾满了墨水。",
           "Sa chemise était tachée de sauce. 他的衬衫被酱汁弄脏了。"
         ]
       },
@@ -28307,10 +51841,80 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "786320",
             "zh": "787380",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "tailler": {
+      "display": "tailler",
+      "prepositions": {
+        "dans": [
+          "tailler dans qqch 削减（预算、开支）；从……中切下",
+          "Le gouvernement a dû tailler dans les dépenses publiques. 政府不得不削减公共开支。",
+          "Il a taillé une flûte dans un morceau de bambou. 他用一截竹子削了一支笛子。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "tambouriner": {
+      "display": "tambouriner",
+      "prepositions": {
+        "à": [
+          "tambouriner à/sur qqch 使劲、连续地敲打",
+          "La police tambourinait à la porte en pleine nuit. 半夜里警察在拼命砸门。",
+          "Il a tambouriné à la vitre pour attirer notre attention. 他猛敲窗玻璃想引起我们的注意。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -28369,6 +51973,98 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "tapisser": {
+      "display": "tapisser",
+      "prepositions": {
+        "de": [
+          "tapisser qqch de qqch 用……铺满、贴满",
+          "Elle a tapissé les murs de sa chambre de photos. 她在卧室墙上贴满了照片。",
+          "Tapissez le moule de papier cuisson. 在模具里铺上一层烘焙纸。",
+          "En automne, le sol est tapissé de feuilles mortes. 秋天，地上铺满了落叶。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "tapoter": {
+      "display": "tapoter",
+      "prepositions": {
+        "sur": [
+          "tapoter sur qqch 轻轻敲击……",
+          "Il tapotait nerveusement sur la table. 他紧张地用手指轻敲桌子。",
+          "Elle tapote sur son clavier toute la journée. 她整天在键盘上敲来敲去。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "taquiner": {
+      "display": "taquiner",
+      "prepositions": {
+        "sur": [
+          "taquiner qqn sur qqch 拿某事逗弄某人",
+          "Ses amis le taquinent sur son accent du Sud. 朋友们拿他的南方口音开玩笑。",
+          "Arrête de me taquiner sur ma nouvelle coiffure. 别再拿我的新发型取笑我了。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "tarder": {
       "display": "tarder",
       "prepositions": {
@@ -28402,6 +52098,216 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "tartiner": {
+      "display": "tartiner",
+      "prepositions": {
+        "sur": [
+          "tartiner qqch sur qqch 把（黄油、果酱等）抹在……上",
+          "Il tartine du beurre sur sa tranche de pain. 他在面包片上抹黄油。",
+          "Tartine un peu de confiture sur ta crêpe. 在你的可丽饼上抹点果酱吧。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "tatouer": {
+      "display": "tatouer",
+      "prepositions": {
+        "sur": [
+          "(se faire) tatouer qqch sur qqch 在（身体某处）文上……",
+          "Il s'est fait tatouer un dragon sur le bras. 他在胳膊上文了一条龙。",
+          "Elle a le nom de sa fille tatoué sur le poignet. 她手腕上文着女儿的名字。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "taxer": {
+      "display": "taxer",
+      "prepositions": {
+        "de": [
+          "taxer qqn de qqch 指责某人……；说某人是……",
+          "On l'a taxé de naïveté après cette décision. 这个决定之后，大家说他太天真。",
+          "Elle refuse d'être taxée de paresse. 她不愿被人说成懒惰。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "tchatter": {
+      "display": "tchatter",
+      "prepositions": {
+        "avec": [
+          "tchatter avec qqn 和某人网上聊天",
+          "Elle passe ses soirées à tchatter avec ses amis. 她每天晚上都在网上跟朋友聊天。",
+          "J'ai tchatté avec un client pendant une heure. 我跟一位客户在线聊了一个小时。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "teindre": {
+      "display": "teindre",
+      "prepositions": {
+        "en": [
+          "teindre qqch en (couleur) 把某物染成……色",
+          "Elle s'est teint les cheveux en roux. 她把头发染成了红棕色。",
+          "On a teint ce vieux pull en bleu marine. 我们把这件旧毛衣染成了藏青色。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "teinter": {
+      "display": "teinter",
+      "prepositions": {
+        "de": [
+          "teinter qqch de qqch 使……带有（某种色彩、意味）",
+          "Sa réponse était teintée d'ironie. 他的回答带着几分讽刺。",
+          "Le ciel se teintait de rose au coucher du soleil. 日落时，天空染上了一抹粉红。",
+          "Le tissu était teinté d'un rouge éclatant. 布被染成鲜红。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "838222",
+            "zh": "9972833",
+            "eng": ""
+          }
+        ]
+      }
+    },
+    "tempêter": {
+      "display": "tempêter",
+      "prepositions": {
+        "contre": [
+          "tempêter contre qqn/qqch 对……大发雷霆",
+          "Le client tempêtait contre le retard de sa commande. 顾客因订单延误大发雷霆。",
+          "Mon père tempête contre les prix de l'essence. 我爸爸对油价怨气冲天。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "tendre": {
       "display": "tendre",
       "prepositions": {
@@ -28410,7 +52316,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Les fruits tendent à rapidement se décomposer. 水果一般不久就会腐烂。"
         ],
         "vers": [
-          "tendre vers qqch 趋向于某事"
+          "tendre vers qqch 趋向于某事",
+          "Le nombre d'élèves par classe tend vers trente. 每班学生人数趋近三十人。",
+          "Nous devons tendre vers l'égalité entre tous les élèves. 我们应当力求所有学生都享有平等。"
         ]
       },
       "prepositionOrder": [
@@ -28436,6 +52344,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -28458,6 +52374,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Il tient pour principe de faire une promenade chaque matin. 他给自己定下每天早上散步的规矩。"
         ],
         "dans": [
+          "tenir dans qqch 装得下；容纳于……",
+          "Toutes mes affaires tiennent dans une seule valise. 我所有的东西一个箱子就装得下。",
+          "Son discours tient dans une page. 他的讲稿一页纸就写得下。",
           "25 personnes tiennent dans ce minibus. 这辆迷你巴士能容纳25个人。"
         ]
       },
@@ -28519,6 +52438,18 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "direct",
             "fr": "475062",
@@ -28666,9 +52597,80 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "tester": {
+      "display": "tester",
+      "prepositions": {
+        "sur": [
+          "tester qqch sur qqn/qqch 在……身上试验某物",
+          "Ce vaccin n'a jamais été testé sur des humains. 这种疫苗从未在人身上做过试验。",
+          "Teste d'abord la crème sur une petite zone de peau. 先在一小块皮肤上试一下这个面霜。",
+          "Nos produits ne sont pas testés sur les animaux. 我们的产品不做动物试验。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "tiquer": {
+      "display": "tiquer",
+      "prepositions": {
+        "sur": [
+          "tiquer sur qqch 对……表示不满、皱眉（口语）",
+          "Le directeur a tiqué sur le montant de la facture. 看到账单金额，主任皱了皱眉。",
+          "Personne n'a tiqué sur ce détail pendant la réunion. 会上没有人对这个细节提出异议。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "tirer": {
       "display": "tirer",
       "prepositions": {
+        "de": [
+          "tirer qqch/qqn de qqch 从……中得出；把某人从……中拉出",
+          "Il faut tirer une leçon de cet échec. 必须从这次失败中吸取教训。",
+          "Ce film est tiré d'un roman célèbre. 这部电影改编自一部名著。",
+          "Le bruit m'a tiré de mon sommeil. 噪音把我从睡梦中吵醒了。",
+          "Il tira de toutes ses forces, mais le rocher ne bougea pas. 他用尽全力地拉，但那块大石还是纹丝不动。",
+          "De la lecture de bons livres on peut tirer du plaisir, de l'amitié, de l'expérience et de l'instruction. 读书，可以获得乐趣、友谊、经验和指导。"
+        ],
         "sur": [
           "tirer sur qqn 向某人开枪",
           "Le chasseur a tiré sur le cerf. 猎人射了鹿。",
@@ -28676,9 +52678,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "de",
         "sur"
       ],
       "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "1180137",
+            "zh": "397007",
+            "eng": "304766"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1269262",
+            "zh": "1269251",
+            "eng": "1269252"
+          }
+        ],
         "sur": [
           {
             "kind": "curated",
@@ -28860,6 +52893,49 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1263856",
             "zh": "2077798",
             "eng": "18642"
+          }
+        ]
+      }
+    },
+    "toquer": {
+      "display": "toquer",
+      "prepositions": {
+        "à": [
+          "toquer à qqch 敲（门、窗）（轻轻）",
+          "Quelqu'un toque à la porte. 有人在敲门。",
+          "Toque à la fenêtre si la porte est fermée. 要是门关着，你就敲敲窗户。",
+          "Quelqu'un a toqué à la porte. 有人轻轻扣了门。",
+          "J'ai toqué à la porte, mais personne n'a répondu. 我敲门，但是没有人回应。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "500882",
+            "zh": "500923",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "746261",
+            "zh": "1541583",
+            "eng": "39028"
           }
         ]
       }
@@ -29127,6 +53203,69 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "trancher": {
+      "display": "trancher",
+      "prepositions": {
+        "avec": [
+          "trancher avec qqch 与……形成鲜明对比",
+          "Sa robe rouge tranchait avec le décor tout blanc. 她的红裙子和全白的布景形成了鲜明对比。",
+          "Ce discours tranche avec ses déclarations habituelles. 这番讲话和他平时的言论截然不同。",
+          "Son calme tranchait avec la panique générale. 他的镇定与众人的慌乱形成强烈反差。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "transcrire": {
+      "display": "transcrire",
+      "prepositions": {
+        "en": [
+          "transcrire qqch en qqch 把……转写成（另一种文字、形式）",
+          "Les noms chinois sont transcrits en alphabet latin. 中文名字被转写成拉丁字母。",
+          "Elle a transcrit l'entretien en texte pour le journal. 她把采访录音整理成了文字交给报社。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "transformer": {
       "display": "transformer",
       "prepositions": {
@@ -29158,6 +53297,103 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "119771",
             "zh": "13014678",
             "eng": "28613"
+          }
+        ]
+      }
+    },
+    "transférer": {
+      "display": "transférer",
+      "prepositions": {
+        "à": [
+          "transférer qqch à qqn 把某物转交、转发给某人",
+          "J'ai transféré le courriel du directeur à toute l'équipe. 我把主任的邮件转发给了全组。",
+          "Le club a transféré son meilleur joueur à une équipe anglaise. 俱乐部把最好的球员转会到了一支英格兰球队。",
+          "Il a transféré la propriété de la maison à ses enfants. 他把房子的产权转给了子女。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "transiger": {
+      "display": "transiger",
+      "prepositions": {
+        "sur": [
+          "transiger sur qqch 在某事上让步、妥协",
+          "Je ne transigerai jamais sur la sécurité des enfants. 在孩子的安全问题上我绝不让步。",
+          "Le syndicat refuse de transiger sur les salaires. 工会拒绝在工资问题上妥协。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "transiter": {
+      "display": "transiter",
+      "prepositions": {
+        "par": [
+          "transiter par qqch 途经、中转于某地",
+          "Notre vol transite par Dubaï. 我们的航班在迪拜中转。",
+          "Toutes les marchandises transitent par ce port. 所有货物都经由这个港口转运。",
+          "Les données transitent par des serveurs étrangers. 这些数据要经过国外的服务器。"
+        ]
+      },
+      "prepositionOrder": [
+        "par"
+      ],
+      "sources": {
+        "par": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -29198,6 +53434,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "460768",
             "zh": "835724",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "transparaître": {
+      "display": "transparaître",
+      "prepositions": {
+        "dans": [
+          "transparaître dans qqch 在……中流露出来",
+          "Sa fatigue transparaissait dans sa voix. 他的声音里透着疲惫。",
+          "Son amour du pays transparaît dans tous ses romans. 他所有的小说都流露出对祖国的热爱。"
+        ]
+      },
+      "prepositionOrder": [
+        "dans"
+      ],
+      "sources": {
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -29259,7 +53524,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Ça a toujours été un plaisir de travailler avec toi. 跟你共事总是很愉快。"
         ],
         "chez": [
-          "travailler chez qqn 在某公司／某人处工作"
+          "travailler chez qqn 在某公司／某人处工作",
+          "Ma sœur travaille chez un grand constructeur automobile. 我姐姐在一家大汽车公司上班。",
+          "Il a travaillé trois ans chez un architecte. 他在一位建筑师那里干了三年。"
         ]
       },
       "prepositionOrder": [
@@ -29391,6 +53658,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -29423,7 +53698,7 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Je tremble de froid. 我的身体被冻得瑟瑟发抖。",
           "Sa voix tremblait de colère. 她的声音因愤怒而颤抖。",
           "Son corps trembla d'excitation. 他兴奋得颤抖了起来。",
-          "La scène effroyable le fit trembler de peur. 令人震惊的光景让了他吓得发抖。"
+          "La scène effroyable le fit trembler de peur. 令人震惊的场面让他吓得发抖。"
         ]
       },
       "prepositionOrder": [
@@ -29462,6 +53737,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "tremper",
       "prepositions": {
         "dans": [
+          "tremper qqch dans qqch / tremper dans qqch 把某物浸入……；参与（不法之事）",
+          "Il trempe son croissant dans son café. 他把牛角面包泡进咖啡里。",
+          "Le maire aurait trempé dans une affaire de corruption. 据说市长卷入了一起贪腐案。",
           "La pointe de la lance était trempée dans un poison mortel. 矛尖浸在一种致命的毒药里。"
         ]
       },
@@ -29471,10 +53749,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "799647",
             "zh": "765679",
             "eng": "764188"
+          }
+        ]
+      }
+    },
+    "tressaillir": {
+      "display": "tressaillir",
+      "prepositions": {
+        "de": [
+          "tressaillir de qqch 因……而颤抖、一震",
+          "Elle a tressailli de joie en recevant la nouvelle. 接到消息时，她高兴得浑身一颤。",
+          "Le chien tressaillait de peur à chaque coup de tonnerre. 每打一声雷，狗都吓得发抖。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -29507,6 +53826,89 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "trinquer": {
+      "display": "trinquer",
+      "prepositions": {
+        "à": [
+          "trinquer à qqch 为……干杯",
+          "Trinquons à la santé des mariés ! 让我们为新人的健康干杯！",
+          "Nous avons trinqué à la réussite du projet. 我们为项目的成功干了杯。"
+        ],
+        "avec": [
+          "trinquer avec qqn 与某人碰杯",
+          "Le maire a trinqué avec chaque invité. 市长和每位来宾都碰了杯。",
+          "Viens trinquer avec nous, c'est mon anniversaire ! 来和我们碰个杯吧，今天是我生日！"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "avec"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "triompher": {
+      "display": "triompher",
+      "prepositions": {
+        "de": [
+          "triompher de qqn/qqch 战胜；克服",
+          "L'équipe locale a triomphé de son rival en finale. 主队在决赛中战胜了对手。",
+          "Elle a fini par triompher de sa timidité. 她最终克服了自己的羞怯。",
+          "La vérité triomphera toujours du mensonge. 真理终将战胜谎言。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "tromper": {
       "display": "tromper",
       "prepositions": {
@@ -29524,6 +53926,40 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1776228",
             "zh": "13240167",
             "eng": "1771909"
+          }
+        ]
+      }
+    },
+    "troquer": {
+      "display": "troquer",
+      "prepositions": {
+        "contre": [
+          "troquer qqch contre qqch 用……换……",
+          "Les enfants troquent leurs cartes contre des bonbons. 孩子们用卡片换糖果。",
+          "Il a troqué son costume contre un jean. 他脱下西装换上了牛仔裤。",
+          "J'ai troqué ma vieille guitare contre un vélo. 我拿旧吉他换了一辆自行车。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -29588,6 +54024,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "truffer",
       "prepositions": {
         "de": [
+          "truffer qqch de qqch 在……中塞满（错误、引语等）",
+          "Ton devoir est truffé de fautes d'orthographe. 你的作业满是拼写错误。",
+          "Il truffe ses discours de citations latines. 他的演讲里塞满了拉丁语引文。",
           "Ce livre est truffé d'erreurs. 这本书充满了错误。"
         ]
       },
@@ -29596,6 +54035,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1679274",
@@ -29609,6 +54060,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "trébucher",
       "prepositions": {
         "sur": [
+          "trébucher sur qqch 被……绊倒；在……上卡壳",
+          "Elle a trébuché sur une racine dans le parc. 她在公园里被一根树根绊了一下。",
+          "L'élève trébuchait sur chaque mot difficile. 这名学生每遇到难词就结巴。",
           "J'ai trébuché sur le tapis en entrant dans la maison. 进家门后，我被垫子绊倒了。"
         ]
       },
@@ -29618,10 +54072,51 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "336931",
             "zh": "336692",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "trépigner": {
+      "display": "trépigner",
+      "prepositions": {
+        "de": [
+          "trépigner de qqch 直跺脚（因急躁、愤怒）",
+          "Les enfants trépignaient d'impatience devant les cadeaux. 孩子们在礼物前急得直跺脚。",
+          "Il trépignait de rage en attendant le bus. 等公交时他气得直跺脚。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -29729,6 +54224,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "tâcher",
       "prepositions": {
         "de": [
+          "tâcher de faire qqch 尽力做某事",
+          "Tâche d'arriver à l'heure demain. 明天尽量准时到。",
+          "Je tâcherai de ne pas faire de bruit. 我会尽量不出声。",
           "Vous pourriez au moins tâcher d'être un peu plus poli, même si ça ne vous ressemble pas. 无论你平时怎么大大咧咧的，起码试着稍微礼貌一点吧。"
         ]
       },
@@ -29738,10 +54236,56 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "558575",
             "zh": "13907647",
             "eng": "328585"
+          }
+        ]
+      }
+    },
+    "télécharger": {
+      "display": "télécharger",
+      "prepositions": {
+        "sur": [
+          "télécharger qqch sur qqch 把某物下载到……上",
+          "J'ai téléchargé l'application sur mon téléphone. 我把这个应用下载到了手机上。",
+          "Tu peux télécharger le formulaire sur le site de la mairie. 你可以在市政府网站上下载这张表格。",
+          "Elle télécharge des livres sur sa liseuse. 她往电子阅读器里下载书。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -29807,10 +54351,92 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "témoigner": {
+      "display": "témoigner",
+      "prepositions": {
+        "de": [
+          "témoigner de qqch 证明；表明",
+          "Ces ruines témoignent d'une civilisation très ancienne. 这些遗迹见证了一个非常古老的文明。",
+          "Son geste témoigne de sa grande générosité. 他的举动表明他非常慷慨。",
+          "Les cicatrices sur ses mains témoignaient de sa vie difficile. 他手上的伤疤说明了他生活的艰辛。"
+        ],
+        "en": [
+          "témoigner en faveur de qqn 为某人作有利的证明",
+          "Plusieurs collègues ont témoigné en sa faveur au procès. 审判时有好几位同事为他作了有利的证词。",
+          "Qui pourrait témoigner en faveur de mon client ? 谁能为我的当事人作证开脱？"
+        ],
+        "contre": [
+          "témoigner contre qqn 出庭作证指控某人",
+          "Le voisin a accepté de témoigner contre l'accusé. 邻居同意出庭指证被告。",
+          "Elle a peur de témoigner contre son ancien patron. 她害怕出庭指证她以前的老板。"
+        ]
+      },
+      "prepositionOrder": [
+        "de",
+        "en",
+        "contre"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "contre": "témoigner contre qqn = 作不利于某人的证词；témoigner en faveur de qqn 正相反；témoigner de qqch = 证明某事",
+        "de": "témoigner de qqch = 表明、证明（事物作主语居多）；témoigner contre qqn = 作证指控；témoigner en faveur de qqn = 作证为其辩护",
+        "en": "témoigner en faveur de qqn = 作有利于某人的证词；témoigner contre qqn = 指证某人；témoigner de qqch = 证明某事"
+      }
+    },
     "user": {
       "display": "user",
       "prepositions": {
         "de": [
+          "user de qqch 运用、使用（权力、手段等）",
+          "Le directeur a usé de son autorité pour régler le conflit. 经理动用自己的权威平息了冲突。",
+          "Il faut user de patience avec les jeunes enfants. 对待小孩子要有耐心。",
           "On pensait auparavant que seuls les humains pouvaient user du langage. 以前人们以为只有人类才懂得用语言沟通。"
         ]
       },
@@ -29819,6 +54445,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "891127",
@@ -29881,6 +54519,10 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "vacciner",
       "prepositions": {
         "contre": [
+          "vacciner qqn contre qqch 给某人接种预防……的疫苗",
+          "Tous les enfants doivent être vaccinés contre la rougeole. 所有孩子都必须接种麻疹疫苗。",
+          "Faites-vous vacciner contre la fièvre jaune avant le voyage. 出行前请去接种黄热病疫苗。",
+          "Cet échec l'a vacciné contre les promesses faciles. 这次失败让他对轻易许下的承诺有了免疫力。",
           "J'ai été vacciné contre la grippe. 我接种了流感疫苗。"
         ]
       },
@@ -29890,10 +54532,127 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "contre": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "772986",
             "zh": "785831",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "valoir": {
+      "display": "valoir",
+      "prepositions": {
+        "à": [
+          "valoir qqch à qqn 给某人带来（后果、奖赏）",
+          "Ce roman a valu à son auteur un prix prestigieux. 这部小说为作者赢得了一个著名奖项。",
+          "Ses retards répétés ont valu à Paul un avertissement du chef. 保罗屡次迟到，招来了上司的一次警告。",
+          "Cela vaut à peine d'être discuté. 这几乎不值得讨论。"
+        ],
+        "pour": [
+          "valoir pour qqn/qqch 适用于某人／某事",
+          "Cette règle vaut pour tout le monde, sans exception. 这条规定适用于所有人，没有例外。",
+          "Ce que je dis là vaut aussi pour toi. 我刚才说的话对你也同样适用。",
+          "Le billet vaut pour deux personnes. 这张票可供两人使用。",
+          "Ce ticket vaut pour trois jours. 这张票三日有效。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "pour"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "575659",
+            "zh": "834617",
+            "eng": "19993"
+          }
+        ],
+        "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "530686",
+            "zh": "8496249",
+            "eng": "45819"
+          }
+        ]
+      },
+      "notes": {
+        "pour": "valoir pour qqn/qqch = 对……有效、适用；valoir qqch à qqn = 给某人招来／赢得某物",
+        "à": "valoir qqch à qqn = 使某人得到（奖赏或惩罚）；valoir pour qqn = 对某人同样适用"
+      }
+    },
+    "vaquer": {
+      "display": "vaquer",
+      "prepositions": {
+        "à": [
+          "vaquer à ses occupations 忙于（日常事务）",
+          "Après le déjeuner, chacun est retourné vaquer à ses occupations. 午饭后，大家各自回去忙自己的事了。",
+          "Ma grand-mère vaquait à ses tâches ménagères en chantant. 奶奶一边唱歌一边做家务。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -29942,7 +54701,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Je vous en prie, veillez à ne pas casser ce vase. 请小心别打碎了这个花瓶。"
         ],
         "sur": [
-          "veiller sur qqn 照看某人"
+          "veiller sur qqn 照看某人",
+          "La grand-mère veille sur les petits pendant l'été. 夏天由奶奶照看孩子们。",
+          "Que Dieu veille sur toi pendant ce long voyage. 愿上帝在你漫长的旅途中保佑你。"
         ]
       },
       "prepositionOrder": [
@@ -29972,6 +54733,83 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "vendre": {
+      "display": "vendre",
+      "prepositions": {
+        "à": [
+          "vendre qqch à qqn 把某物卖给某人",
+          "J'ai vendu mon vieux vélo à un voisin. 我把旧自行车卖给了一个邻居。",
+          "Ce magasin ne vend pas d'alcool aux mineurs. 这家店不向未成年人出售酒类。",
+          "Ils vendront leur maison à un jeune couple. 他们要把房子卖给一对年轻夫妇。",
+          "Ici, le poisson est vendu à la livre. 鱼在这里是以磅为单位来出售。",
+          "Les objets non réclamés furent vendus aux enchères. 无人领取的物品被拍卖了。",
+          "Les œufs sont vendus à la douzaine. 蛋是按打卖的。",
+          "Les pommes sont vendues à la douzaine. 苹果是成打卖的。",
+          "Cet homme a vendu son âme au diable. 这人把灵魂卖给魔鬼。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "139006",
+            "zh": "798203",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "755873",
+            "zh": "757925",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "1339345",
+            "zh": "8897383",
+            "eng": "325219"
+          },
+          {
+            "kind": "indirect",
+            "fr": "13775",
+            "zh": "2220966",
+            "eng": "29621"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1675355",
+            "zh": "5967631",
+            "eng": "45341"
           }
         ]
       }
@@ -30084,6 +54922,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "verdir": {
+      "display": "verdir",
+      "prepositions": {
+        "de": [
+          "verdir de qqch 脸色发青（因恐惧、嫉妒）",
+          "Il a verdi de peur en voyant le serpent. 看到那条蛇，他吓得脸都青了。",
+          "Sa sœur va verdir de jalousie quand elle verra ta voiture. 等她姐姐看到你的车，一定会嫉妒得要命。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "verrouiller": {
       "display": "verrouiller",
       "prepositions": {
@@ -30105,10 +54972,100 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "verser": {
+      "display": "verser",
+      "prepositions": {
+        "à": [
+          "verser qqch à qqn 付给某人（款项）",
+          "L'entreprise verse une prime à tous ses employés en décembre. 公司十二月给全体员工发奖金。",
+          "Il verse une pension à son ex-femme chaque mois. 他每月付给前妻一笔赡养费。"
+        ],
+        "dans": [
+          "verser qqch dans qqch / verser dans qqch 把……倒进……；陷入（某种风格）",
+          "Verse le lait dans la casserole et fais-le chauffer. 把牛奶倒进锅里加热。",
+          "Il a versé un peu de sucre dans son café. 他往咖啡里加了点糖。",
+          "Le film verse parfois dans le mélodrame. 这部电影有时流于煽情。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "dans"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "dans": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "dans": "verser dans = 倒进；（喻）流于、陷入某种风格；verser à qqn = 付给某人（钱）",
+        "à": "verser qqch à qqn = 付款给某人；verser qqch dans qqch = 倒入；verser dans qqch = 陷入某种倾向"
+      }
+    },
+    "vibrer": {
+      "display": "vibrer",
+      "prepositions": {
+        "de": [
+          "vibrer de qqch 因（激情等）而颤动、激动",
+          "Sa voix vibrait d'émotion quand il a parlé de son père. 说起父亲时，他的声音因激动而颤抖。",
+          "Le stade vibrait de l'enthousiasme des supporters. 整个体育场随着球迷的热情沸腾起来。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "vider": {
       "display": "vider",
       "prepositions": {
         "de": [
+          "vider qqch de qqch 把……中的（东西）清空",
+          "On a vidé le grenier de tous ses vieux meubles. 我们把阁楼里的旧家具都清空了。",
+          "Les vacances ont vidé la ville de ses habitants. 假期一到，城里的居民几乎走空了。",
           "Il porta le verre à ses lèvres et le vida d'un trait. 他把杯子举到嘴边，一饮而尽。"
         ]
       },
@@ -30118,6 +55075,18 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "de": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "755850",
             "zh": "755851",
@@ -30126,11 +55095,45 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
-    "viser": {
-      "display": "viser",
+    "vieillir": {
+      "display": "vieillir",
+      "prepositions": {
+        "de": [
+          "vieillir de (durée) 老了（若干年）（看上去）",
+          "Il a vieilli de dix ans en quelques mois. 几个月里他仿佛老了十岁。",
+          "Cette coiffure te vieillit de dix ans. 这个发型让你显老十岁。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "virer": {
+      "display": "virer",
       "prepositions": {
         "à": [
-          "viser à faire qqch 旨在做某事"
+          "virer à qqch 转向（左右）；（颜色、局势）转变为",
+          "Au prochain carrefour, virez à gauche. 到下一个路口向左转。",
+          "Le ciel a viré au rouge au coucher du soleil. 日落时天空变成了红色。",
+          "La discussion a vite viré à la dispute. 讨论很快演变成了争吵。",
+          "Virez à droite. 向右转。",
+          "Les feuilles des arbres ont viré au rouge. 树叶变红了。"
         ]
       },
       "prepositionOrder": [
@@ -30140,6 +55143,59 @@ const FRENCH_COLLOCATIONS_DATA = {
         "à": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "indirect",
+            "fr": "7044251",
+            "zh": "5092330",
+            "eng": "464290"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1013043",
+            "zh": "2144009",
+            "eng": "323601"
+          }
+        ]
+      }
+    },
+    "viser": {
+      "display": "viser",
+      "prepositions": {
+        "à": [
+          "viser à faire qqch 旨在做某事",
+          "Ce programme vise à réduire le chômage des jeunes. 这项计划旨在减少青年失业。",
+          "Nos efforts visaient à améliorer la vie des habitants. 我们的努力是为了改善居民的生活。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -30162,6 +55218,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "1121127",
             "zh": "421136",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "vivoter": {
+      "display": "vivoter",
+      "prepositions": {
+        "de": [
+          "vivoter de qqch 靠……勉强度日",
+          "Pendant ses études, il vivotait de petits boulots. 上学期间，他靠打零工勉强过活。",
+          "L'artiste vivote de la vente de quelques tableaux. 这位画家靠卖几幅画勉强糊口。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -30194,6 +55279,9 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Beaucoup de hérons vivent dans le marais. 许多苍鹭在沼泽地中生活。"
         ],
         "avec": [
+          "vivre avec qqn/qqch 与某人同住；带着（病痛等）生活",
+          "Elle vit avec son copain depuis deux ans. 她和男朋友同居两年了。",
+          "Il a appris à vivre avec sa maladie. 他学会了与病共存。",
           "Je pense que le fait que j'ai vécu avec toi a influencé la façon dont tu vis. 我觉得我和你一起住影响了你生活的方式。"
         ]
       },
@@ -30318,10 +55406,51 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "avec": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "3200",
             "zh": "501355",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "vociférer": {
+      "display": "vociférer",
+      "prepositions": {
+        "contre": [
+          "vociférer contre qqn/qqch 冲……大吼大叫",
+          "Un homme vociférait contre l'arbitre depuis les tribunes. 一个男人在看台上冲着裁判大吼大叫。",
+          "Elle vociférait contre les automobilistes qui klaxonnaient. 她冲着按喇叭的司机们破口大骂。"
+        ]
+      },
+      "prepositionOrder": [
+        "contre"
+      ],
+      "sources": {
+        "contre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -30429,9 +55558,49 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "voisiner": {
+      "display": "voisiner",
+      "prepositions": {
+        "avec": [
+          "voisiner avec qqch 与……相邻；与……并存",
+          "Dans ce quartier, les boutiques de luxe voisinent avec les petits commerces. 在这个街区，奢侈品店与小商铺比邻而立。",
+          "Chez lui, l'humour voisine souvent avec la tristesse. 在他身上，幽默常常与忧伤并存。"
+        ]
+      },
+      "prepositionOrder": [
+        "avec"
+      ],
+      "sources": {
+        "avec": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "voler": {
       "display": "voler",
       "prepositions": {
+        "à": [
+          "voler qqch à qqn 偷某人的东西",
+          "Quelqu'un a volé son portefeuille à mon père dans le métro. 有人在地铁里偷了我爸爸的钱包。",
+          "Un pickpocket a volé son téléphone à une touriste. 一个扒手偷了一名女游客的手机。",
+          "Un avion vole au-dessus de la ville. 一架飞机在这个城市上空飞行。",
+          "Quand les vaches volent au ciel, elles semblent moins naturelles. 当牛在天上飞的时候，它们似乎就没那么自然了。",
+          "Nous volons au-dessus des nuages. 我们正在云层上飞行。",
+          "L'avion vola au-dessus des nuages. 飞机在云层上飞著。",
+          "L'avion a volé au-dessus du mont Fuji. 飞机飞过了富士山的上空。",
+          "Des abeilles volent au milieu des fleurs. 蜜蜂在花丛中飞行。"
+        ],
         "dans": [
           "Un aigle vole dans le ciel. 一只鹰在天上飞。"
         ],
@@ -30441,10 +55610,61 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "dans",
         "vers"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "129377",
+            "zh": "797017",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "591193",
+            "zh": "812219",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "332419",
+            "zh": "1553726",
+            "eng": "248445"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1069170",
+            "zh": "616641",
+            "eng": "318055"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1039998",
+            "zh": "432341",
+            "eng": "44348"
+          },
+          {
+            "kind": "indirect",
+            "fr": "910346",
+            "zh": "1394863",
+            "eng": "23725"
+          }
+        ],
         "dans": [
           {
             "kind": "direct",
@@ -30564,6 +55784,17 @@ const FRENCH_COLLOCATIONS_DATA = {
     "vouloir": {
       "display": "vouloir",
       "prepositions": {
+        "à": [
+          "en vouloir à qqn 怨恨某人；生某人的气",
+          "Tu en veux encore à ton frère pour hier soir ? 你还在为昨晚的事生你哥哥的气吗？",
+          "Je n'en veux pas à ma sœur, elle ne l'a pas fait exprès. 我不怪我妹妹，她不是故意的。",
+          "Il en a voulu à ses parents pendant des années. 他怨恨了父母好多年。",
+          "Je ne veux rien à boire. 我什么都不想喝。",
+          "Tom ne veut rien à boire. 汤姆什么都不想喝。",
+          "Veuillez à nouveau essayer. 请再试一次。",
+          "Je voudrais à nouveau escalader le Mont Fuji. 我希望再爬一次上富士山。",
+          "Il veut un livre à lire. 他想找本书来读。"
+        ],
         "en": [
           "Elle ne veut pas en parler. 她不想提了。",
           "Je ne veux pas en discuter. 我不想谈论这件事。",
@@ -30574,9 +55805,58 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "en"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "407113",
+            "zh": "332566",
+            "eng": ""
+          },
+          {
+            "kind": "indirect",
+            "fr": "1181430",
+            "zh": "8789773",
+            "eng": "1025926"
+          },
+          {
+            "kind": "indirect",
+            "fr": "1445212",
+            "zh": "9990131",
+            "eng": "1444842"
+          },
+          {
+            "kind": "indirect",
+            "fr": "8936992",
+            "zh": "893027",
+            "eng": "31715"
+          },
+          {
+            "kind": "indirect",
+            "fr": "418658",
+            "zh": "846270",
+            "eng": "302100"
+          }
+        ],
         "en": [
           {
             "kind": "direct",
@@ -30814,6 +56094,98 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "zapper": {
+      "display": "zapper",
+      "prepositions": {
+        "sur": [
+          "zapper sur qqch 换到……频道（换台）",
+          "Il a zappé sur une chaîne de sport pendant la pub. 广告时间他把台换到了一个体育频道。",
+          "Zappe sur la deux, il y a un bon film ce soir. 换到二台，今晚有部好电影。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "zigzaguer": {
+      "display": "zigzaguer",
+      "prepositions": {
+        "entre": [
+          "zigzaguer entre qqch 在……之间穿来穿去",
+          "Le coursier zigzaguait entre les voitures. 快递员骑车在车流中穿来穿去。",
+          "Le skieur a zigzagué entre les piquets à toute vitesse. 滑雪运动员飞速绕过一根根旗门。"
+        ]
+      },
+      "prepositionOrder": [
+        "entre"
+      ],
+      "sources": {
+        "entre": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "zoomer": {
+      "display": "zoomer",
+      "prepositions": {
+        "sur": [
+          "zoomer sur qqch 把镜头拉近到……上；聚焦于",
+          "Le caméraman a zoomé sur le visage du gagnant. 摄像师把镜头推到了获胜者的脸上。",
+          "Zoome sur la photo pour lire le panneau. 把照片放大，看看牌子上写的什么。",
+          "Ce reportage zoome sur la vie des agriculteurs. 这篇报道聚焦于农民的生活。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "éblouir": {
       "display": "éblouir",
       "prepositions": {
@@ -30839,7 +56211,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "échanger",
       "prepositions": {
         "contre": [
-          "échanger qqch contre qqch 用某物交换某物"
+          "échanger qqch contre qqch 用某物交换某物",
+          "J'ai échangé mon vélo contre une guitare. 我用自行车换了一把吉他。"
         ]
       },
       "prepositionOrder": [
@@ -30849,6 +56222,10 @@ const FRENCH_COLLOCATIONS_DATA = {
         "contre": [
           {
             "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
             "authored": true
           }
         ]
@@ -30908,6 +56285,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "échoir": {
+      "display": "échoir",
+      "prepositions": {
+        "à": [
+          "échoir à qqn 落到某人头上",
+          "La maison est échue à la fille aînée. 房子归了大女儿。",
+          "C'est à moi qu'échoit la tâche de lui annoncer la nouvelle. 把消息告诉他的任务落在了我身上。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "échouer": {
       "display": "échouer",
       "prepositions": {
@@ -30920,9 +56326,13 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Bien des étudiants ont échoué à l'examen. 很多学生考试没过。"
         ],
         "sur": [
+          "s'échouer sur qqch 搁浅在某处（船、鲸）",
+          "Le cargo s'est échoué sur un banc de sable. 货轮在沙洲上搁浅了。",
           "Une baleine blessée s'est échouée sur la plage. 一条受伤的鲸鱼在海滩边搁浅了。"
         ],
         "dans": [
+          "échouer dans qqch 在某事上失败",
+          "Il a échoué dans toutes ses tentatives de réconciliation. 他所有和解的尝试都失败了。",
           "Il a échoué dans sa tentative de traverser la rivière à la nage. 他想游泳渡河的企图失败了。"
         ]
       },
@@ -30972,6 +56382,14 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "sur": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "815641",
             "zh": "816502",
@@ -30980,10 +56398,47 @@ const FRENCH_COLLOCATIONS_DATA = {
         ],
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "direct",
             "fr": "130511",
             "zh": "435363",
             "eng": ""
+          }
+        ]
+      }
+    },
+    "éclabousser": {
+      "display": "éclabousser",
+      "prepositions": {
+        "de": [
+          "éclabousser qqn de qqch 把某物溅到某人身上",
+          "Une voiture m'a éclaboussé de boue en passant. 一辆车经过时溅了我一身泥。",
+          "Le bébé a éclaboussé toute la salle de bains d'eau savonneuse. 宝宝把肥皂水溅得满浴室都是。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -31066,6 +56521,8 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Il économise de l'argent afin qu'il puisse aller à l'université. 他在攒钱上大学。"
         ],
         "pour": [
+          "économiser pour qqch 为某事存钱",
+          "Nous économisons pour les études de nos enfants. 我们在为孩子上学攒钱。",
           "J'économise pour acheter une nouvelle voiture. 我在省钱买新车。"
         ]
       },
@@ -31101,6 +56558,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "pour": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "330956",
@@ -31230,6 +56695,17 @@ const FRENCH_COLLOCATIONS_DATA = {
     "écrire": {
       "display": "écrire",
       "prepositions": {
+        "à": [
+          "écrire à qqn 给某人写信",
+          "J'écris souvent à ma correspondante italienne. 我经常给我的意大利笔友写信。",
+          "Écris à ta grand-mère pour la remercier. 给奶奶写封信谢谢她。",
+          "Il l'a écrit à la hâte. 他写得很匆忙。",
+          "Hier, j'ai écrit à Hélène. 昨天我写信给艾伦。",
+          "Il écrit peu à ses parents. 他很少写信给他的父母。",
+          "Crois-tu que je devrais écrire à Tom ? 你觉得我应该写给汤姆吗？",
+          "Invariablement, elle écrit à sa mère chaque semaine. 她总是每周给她母亲写信。",
+          "Il ne manque jamais d'écrire à sa mère chaque semaine. 他从不间断，每周给他的母亲写信。"
+        ],
         "en": [
           "Ce livre est écrit en anglais. 这本书是用英文写的。",
           "Je ne peux pas écrire en chinois. 我不会写中文。",
@@ -31239,6 +56715,8 @@ const FRENCH_COLLOCATIONS_DATA = {
           "Elle écrit en chinois. 她写中文。"
         ],
         "sur": [
+          "écrire sur qqch 写关于某事的文章",
+          "Ce journaliste écrit surtout sur l'Afrique. 这位记者主要写有关非洲的报道。",
           "Qu'a-t-elle écrit sur le tableau noir ? 她在黑板上写了什么？"
         ],
         "dans": [
@@ -31247,11 +56725,62 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       },
       "prepositionOrder": [
+        "à",
         "en",
         "sur",
         "dans"
       ],
       "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "direct",
+            "fr": "2934210",
+            "zh": "9963253",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "1170996",
+            "zh": "842430",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "481946",
+            "zh": "481457",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "4218008",
+            "zh": "9710147",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "15752",
+            "zh": "346728",
+            "eng": ""
+          },
+          {
+            "kind": "direct",
+            "fr": "133375",
+            "zh": "336422",
+            "eng": ""
+          }
+        ],
         "en": [
           {
             "kind": "direct",
@@ -31291,6 +56820,14 @@ const FRENCH_COLLOCATIONS_DATA = {
           }
         ],
         "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "8774455",
@@ -31339,6 +56876,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "égarer",
       "prepositions": {
         "dans": [
+          "s'égarer dans un lieu 在某处迷路",
+          "Les randonneurs se sont égarés dans la forêt. 徒步者在森林里迷了路。",
           "Nous nous sommes égarés dans le brouillard. 我们在雾中迷了路。"
         ]
       },
@@ -31348,10 +56887,76 @@ const FRENCH_COLLOCATIONS_DATA = {
       "sources": {
         "dans": [
           {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
             "kind": "indirect",
             "fr": "4912463",
             "zh": "799258",
             "eng": "249403"
+          }
+        ]
+      }
+    },
+    "éliminer": {
+      "display": "éliminer",
+      "prepositions": {
+        "de": [
+          "éliminer qqn/qqch de qqch 把某人（某物）从中淘汰或清除",
+          "Notre équipe a été éliminée de la compétition au premier tour. 我们队在第一轮就被淘汰出局了。",
+          "Le médecin m'a conseillé d'éliminer le sucre de mon alimentation. 医生建议我在饮食中戒掉糖。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "élire": {
+      "display": "élire",
+      "prepositions": {
+        "à": [
+          "élire qqn à un poste 选举某人担任某职",
+          "Elle a été élue à la tête du syndicat. 她当选为工会领导人。",
+          "Les habitants l'ont élu au conseil municipal. 居民们把他选进了市议会。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -31440,6 +57045,64 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "émerger": {
+      "display": "émerger",
+      "prepositions": {
+        "de": [
+          "émerger de qqch 从某处浮现、冒出",
+          "Un sous-marin a émergé de l'eau près du port. 一艘潜艇在港口附近浮出水面。",
+          "Il a mis du temps à émerger de son sommeil. 他过了好一会儿才从睡梦中清醒过来。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
+    "émigrer": {
+      "display": "émigrer",
+      "prepositions": {
+        "en": [
+          "émigrer en + pays 移居到某国",
+          "Ses grands-parents ont émigré en Argentine après la guerre. 他的祖父母战后移居到了阿根廷。",
+          "Beaucoup d'Irlandais émigrèrent en Amérique au dix-neuvième siècle. 十九世纪很多爱尔兰人移民到了美洲。"
+        ]
+      },
+      "prepositionOrder": [
+        "en"
+      ],
+      "sources": {
+        "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "émouvoir": {
       "display": "émouvoir",
       "prepositions": {
@@ -31457,6 +57120,35 @@ const FRENCH_COLLOCATIONS_DATA = {
             "fr": "3139282",
             "zh": "1529525",
             "eng": "261293"
+          }
+        ]
+      }
+    },
+    "épargner": {
+      "display": "épargner",
+      "prepositions": {
+        "à": [
+          "épargner qqch à qqn 使某人免受某事",
+          "Je voulais épargner cette douleur à ma mère. 我想让母亲免受这份痛苦。",
+          "Cette machine épargne aux ouvriers les tâches les plus pénibles. 这台机器让工人们免去了最繁重的活儿。"
+        ]
+      },
+      "prepositionOrder": [
+        "à"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
       }
@@ -31505,6 +57197,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "éprendre",
       "prepositions": {
         "de": [
+          "s'éprendre de qqn 爱上某人",
+          "Il s'est épris d'une violoniste rencontrée à Vienne. 他爱上了在维也纳结识的一位小提琴手。",
           "Je ne suis pas épris d'elle. 我不爱她。"
         ]
       },
@@ -31513,6 +57207,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "486542",
@@ -31669,6 +57371,40 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "étaler": {
+      "display": "étaler",
+      "prepositions": {
+        "sur": [
+          "étaler qqch sur qqch 把某物涂抹（铺开、分摊）在某物上",
+          "Étale la confiture sur ta tartine avec un couteau. 用刀把果酱抹在面包片上。",
+          "Il a étalé la carte sur la table pour chercher la route. 他把地图摊在桌上找路。",
+          "Nous allons étaler les paiements sur six mois. 我们会把付款分摊到六个月。"
+        ]
+      },
+      "prepositionOrder": [
+        "sur"
+      ],
+      "sources": {
+        "sur": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "étendre": {
       "display": "étendre",
       "prepositions": {
@@ -31753,6 +57489,35 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "étouffer": {
+      "display": "étouffer",
+      "prepositions": {
+        "de": [
+          "étouffer de qqch 憋得喘不过气（因某事）",
+          "On étouffe de chaleur dans ce bureau. 这间办公室热得让人透不过气。",
+          "Elle étouffait de rire en lisant le message. 她读着那条消息，笑得喘不过气来。"
+        ]
+      },
+      "prepositionOrder": [
+        "de"
+      ],
+      "sources": {
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "étudier": {
       "display": "étudier",
       "prepositions": {
@@ -31814,10 +57579,41 @@ const FRENCH_COLLOCATIONS_DATA = {
         ]
       }
     },
+    "évacuer": {
+      "display": "évacuer",
+      "prepositions": {
+        "vers": [
+          "évacuer qqn vers un lieu 把某人疏散（转送）到某处",
+          "Les habitants ont été évacués vers une école voisine. 居民们被疏散到附近的一所学校。",
+          "On évacuera les blessés vers l'hôpital le plus proche. 伤员将被转送到最近的医院。"
+        ]
+      },
+      "prepositionOrder": [
+        "vers"
+      ],
+      "sources": {
+        "vers": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      }
+    },
     "évader": {
       "display": "évader",
       "prepositions": {
         "de": [
+          "s'évader de qqch 从某处逃出",
+          "Trois détenus se sont évadés de la prison la nuit dernière. 昨晚有三名囚犯越狱了。",
           "Un dangereux criminel s'est évadé de prison. 有一个危险的罪犯从监狱里逃了出来。"
         ]
       },
@@ -31826,6 +57622,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "11322364",
@@ -31893,6 +57697,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "évoluer",
       "prepositions": {
         "en": [
+          "évoluer en qqch 演变成某事",
+          "La dispute a vite évolué en bagarre générale. 争吵很快演变成了一场群殴。",
           "La tempête évolua en un typhon. 暴风雨发展成了一个台风。"
         ]
       },
@@ -31901,6 +57707,14 @@ const FRENCH_COLLOCATIONS_DATA = {
       ],
       "sources": {
         "en": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
           {
             "kind": "indirect",
             "fr": "1367550",
@@ -31935,7 +57749,9 @@ const FRENCH_COLLOCATIONS_DATA = {
       "display": "être d'accord",
       "prepositions": {
         "avec": [
-          "être d'accord avec qqn 同意某人的看法"
+          "être d'accord avec qqn 同意某人的看法",
+          "Je ne suis pas du tout d'accord avec toi. 我完全不同意你的看法。",
+          "Tout le monde était d'accord avec la proposition. 大家都同意这个提议。"
         ]
       },
       "prepositionOrder": [
@@ -31946,8 +57762,69 @@ const FRENCH_COLLOCATIONS_DATA = {
           {
             "kind": "curated",
             "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
           }
         ]
+      }
+    },
+    "ôter": {
+      "display": "ôter",
+      "prepositions": {
+        "à": [
+          "ôter qqch à qqn 夺去某人的某物",
+          "Cette maladie a ôté à mon père le goût de vivre. 这场病让我父亲失去了生活的兴致。",
+          "On a ôté aux prisonniers leurs lacets et leurs ceintures. 囚犯们的鞋带和腰带都被收走了。"
+        ],
+        "de": [
+          "ôter qqch de qqch 从某处移走某物",
+          "Ôte ce vase de la fenêtre, il va tomber. 把花瓶从窗台上拿开，它要掉下去了。",
+          "Ôte tes affaires de mon lit, j'ai besoin de dormir. 把你的东西从我床上拿走，我要睡觉了。"
+        ]
+      },
+      "prepositionOrder": [
+        "à",
+        "de"
+      ],
+      "sources": {
+        "à": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ],
+        "de": [
+          {
+            "kind": "curated",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          },
+          {
+            "kind": "authored",
+            "authored": true
+          }
+        ]
+      },
+      "notes": {
+        "de": "ôter qqch de + 地点 = 从某处移走；ôter qqch à qqn = 从某人那里拿走",
+        "à": "ôter qqch à qqn = 夺走某人的东西；ôter qqch de qqch = 从某处拿开"
       }
     }
   },
@@ -31955,228 +57832,471 @@ const FRENCH_COLLOCATIONS_DATA = {
     "à": [
       "abaisser",
       "abonner",
+      "aboutir",
       "accompagner",
       "accoutumer",
       "accrocher",
+      "acculer",
       "accéder",
+      "acquiescer",
       "adapter",
       "adhérer",
+      "adjoindre",
+      "adjuger",
+      "admettre",
+      "administrer",
       "adresser",
+      "affecter",
+      "affluer",
       "aider",
       "aimer",
+      "ajouter",
       "aller",
+      "allouer",
+      "amarrer",
       "amener",
       "amuser",
+      "annexer",
+      "annoncer",
       "annuler",
       "appartenir",
+      "apporter",
       "apprendre",
       "apprêter",
+      "arracher",
+      "arrimer",
       "arriver",
       "aspirer",
+      "assener",
+      "assigner",
+      "assimiler",
       "assister",
+      "associer",
+      "assortir",
+      "assujettir",
+      "astreindre",
       "attacher",
+      "attenter",
       "attribuer",
       "autoriser",
       "avoir",
+      "avouer",
       "balader",
       "bayer",
+      "boire",
+      "cacher",
       "chercher",
+      "chiper",
       "chuchoter",
       "clouer",
+      "cogner",
+      "collaborer",
       "coller",
+      "commander",
       "commencer",
       "comparer",
+      "compatir",
+      "comprendre",
+      "concourir",
+      "concéder",
       "condamner",
+      "condescendre",
       "conduire",
+      "confier",
+      "confiner",
       "conformer",
       "confronter",
+      "conférer",
+      "conjuguer",
+      "connecter",
       "consacrer",
       "consentir",
       "consister",
       "continuer",
       "contraindre",
+      "contrevenir",
       "contribuer",
       "convenir",
       "convertir",
+      "convier",
+      "convoquer",
       "correspondre",
+      "cotiser",
+      "crier",
       "croire",
+      "cuire",
+      "culminer",
       "céder",
       "demander",
       "destiner",
+      "dicter",
       "dire",
+      "dissimuler",
       "distribuer",
       "donner",
+      "décerner",
+      "déclarer",
       "décoller",
+      "dédicacer",
       "dédier",
+      "déléguer",
+      "démontrer",
       "déménager",
+      "dénoncer",
       "déplaire",
       "déposer",
+      "déroger",
       "désobéir",
       "déterminer",
       "emmener",
+      "employer",
+      "emprunter",
       "encourager",
+      "enlever",
       "enseigner",
+      "entraîner",
+      "envier",
+      "envoyer",
+      "exceller",
+      "exhorter",
+      "expliquer",
       "exposer",
+      "expédier",
+      "extorquer",
+      "faillir",
       "faire attention",
       "fermer",
       "fier",
       "fleurir",
+      "fonctionner",
       "forcer",
+      "former",
+      "fournir",
       "frapper",
       "gagner",
-      "geler",
+      "garantir",
       "goûter",
+      "gratter",
       "grimper",
       "habiter",
       "habituer",
       "hésiter",
+      "imposer",
+      "imputer",
       "inciter",
+      "incomber",
+      "incorporer",
+      "inculquer",
+      "infliger",
+      "initier",
       "inviter",
       "joindre",
       "jouer",
+      "laisser",
+      "lancer",
       "lier",
+      "ligoter",
+      "lire",
       "livrer",
+      "louer",
       "léguer",
       "manquer",
       "mener",
+      "mentionner",
       "mentir",
+      "monter",
+      "montrer",
+      "murmurer",
+      "muter",
+      "nommer",
       "nuire",
       "obliger",
+      "obtempérer",
       "obéir",
+      "octroyer",
       "offrir",
       "opposer",
       "pardonner",
+      "parer",
+      "parler",
       "participer",
       "parvenir",
+      "peiner",
+      "pendre",
       "penser",
+      "persister",
       "plaire",
       "pleuvoir",
       "poser",
+      "pourvoir",
+      "pousser",
+      "prescrire",
+      "procéder",
+      "prodiguer",
+      "prouver",
+      "prédire",
+      "prédisposer",
+      "préférer",
       "préparer",
       "présenter",
+      "prétendre",
       "prêter",
       "questionner",
+      "quémander",
+      "raccrocher",
+      "racheter",
       "raconter",
+      "rajouter",
       "ramener",
+      "rappeler",
+      "rapporter",
+      "rattacher",
+      "rechigner",
       "recommencer",
+      "reconnaître",
+      "recourir",
       "redonner",
+      "relier",
+      "reléguer",
+      "rembourser",
       "remettre",
       "remonter",
       "remédier",
       "rendre",
       "renoncer",
       "rentrer",
+      "renvoyer",
+      "renâcler",
+      "repartir",
+      "repenser",
       "reporter",
+      "repousser",
       "reprocher",
       "ressembler",
+      "restituer",
       "retourner",
+      "riposter",
       "réagir",
+      "réclamer",
       "réfléchir",
+      "répliquer",
       "répondre",
+      "répugner",
+      "réserver",
       "résister",
       "réussir",
       "réveiller",
+      "révéler",
+      "rêver",
+      "s'abandonner",
+      "s'acclimater",
+      "s'accouder",
+      "s'acharner",
+      "s'activer",
       "s'adapter",
       "s'adonner",
+      "s'adosser",
       "s'adresser",
+      "s'affairer",
+      "s'affilier",
       "s'agripper",
+      "s'allier",
+      "s'apparenter",
       "s'appliquer",
       "s'apprêter",
+      "s'attaquer",
+      "s'atteler",
       "s'attendre",
       "s'engager",
+      "s'entraîner",
+      "s'entêter",
       "s'exercer",
       "s'habituer",
+      "s'identifier",
+      "s'ingénier",
+      "s'inscrire",
       "s'intéresser",
+      "s'obstiner",
       "s'offrir",
       "s'opposer",
+      "s'évertuer",
+      "satisfaire",
       "se borner",
+      "se cantonner",
+      "se chiffrer",
+      "se confier",
       "se consacrer",
       "se coucher",
+      "se cramponner",
       "se décider",
+      "se dévouer",
+      "se faire",
       "se fier",
       "se heurter",
       "se joindre",
       "se limiter",
+      "se mesurer",
       "se mettre",
       "se monter",
       "se parler",
+      "se plaire",
       "se plier",
       "se préparer",
       "se présenter",
+      "se prêter",
+      "se raccrocher",
+      "se rallier",
+      "se ramener",
+      "se rapporter",
       "se refuser",
       "se rendre",
+      "se reporter",
+      "se référer",
       "se résigner",
       "se résoudre",
+      "se résumer",
       "se sentir",
       "se situer",
       "se soumettre",
+      "se soustraire",
+      "se substituer",
       "se tenir",
+      "se tuer",
       "se vendre",
+      "sensibiliser",
       "servir",
+      "signaler",
+      "siéger",
       "songer",
       "sonner",
+      "souffler",
+      "souhaiter",
       "soumettre",
       "sourire",
+      "souscrire",
+      "soutirer",
+      "subordonner",
+      "substituer",
       "subvenir",
+      "succomber",
       "succéder",
       "suffire",
+      "suggérer",
+      "suppléer",
+      "sursauter",
+      "surseoir",
       "survenir",
       "survivre",
       "suspendre",
+      "susurrer",
+      "tambouriner",
       "tarder",
       "tendre",
       "tenir",
+      "toquer",
       "toucher",
       "tourner",
+      "transférer",
       "transmettre",
       "tricher",
+      "trinquer",
       "téléphoner",
+      "valoir",
+      "vaquer",
       "veiller",
+      "vendre",
+      "verser",
+      "virer",
       "viser",
+      "voler",
       "vouer",
+      "vouloir",
       "voyager",
       "échapper",
+      "échoir",
       "échouer",
+      "écrire",
       "éduquer",
+      "élire",
+      "épargner",
       "équivaloir",
-      "ériger"
+      "ériger",
+      "ôter"
     ],
     "de": [
+      "abreuver",
       "abriter",
       "absenter",
+      "absoudre",
       "abstenir",
       "abuser",
       "accabler",
       "accepter",
+      "accorder",
+      "accoucher",
       "accuser",
       "advenir",
+      "affubler",
+      "agrémenter",
       "allouer",
       "amasser",
+      "amputer",
       "approcher",
       "apprécier",
+      "appréhender",
+      "arguer",
+      "arracher",
+      "arroser",
       "arrêter",
+      "asperger",
+      "assaillir",
+      "assortir",
+      "assurer",
       "atteindre",
+      "attester",
       "augmenter",
+      "augurer",
       "avaler",
       "avertir",
       "avoir",
       "avoir besoin",
       "avoir envie",
       "avoir peur",
+      "badigeonner",
+      "baisser",
+      "bannir",
+      "barbouiller",
+      "barder",
       "boire",
+      "boiter",
+      "bombarder",
       "bonder",
+      "bondir",
       "border",
       "bouillir",
+      "bouillonner",
+      "bourdonner",
       "bourrer",
+      "briller",
+      "brûler",
+      "bâiller",
+      "bénéficier",
       "cesser",
       "changer",
       "charger",
+      "chasser",
       "choisir",
       "chouchouter",
+      "chuter",
+      "cligner",
+      "combler",
       "commettre",
       "comporter",
       "composer",
+      "conclure",
+      "conjurer",
       "conseiller",
+      "consoler",
       "consommer",
       "constituer",
       "contenir",
@@ -32187,88 +58307,154 @@ const FRENCH_COLLOCATIONS_DATA = {
       "coûter",
       "craindre",
       "crever",
+      "cribler",
+      "crier",
+      "créditer",
       "dater",
       "demander",
+      "descendre",
       "différencier",
       "différer",
       "diminuer",
       "diplômer",
+      "disculper",
       "discuter",
+      "disparaître",
+      "dispenser",
       "disposer",
       "dissuader",
       "distinguer",
+      "distraire",
+      "diverger",
       "divorcer",
       "divulguer",
       "doter",
       "douter",
+      "débarquer",
       "débarrasser",
       "déborder",
+      "décharger",
       "décider",
       "déconseiller",
+      "découler",
+      "décourager",
+      "dédaigner",
+      "dédommager",
+      "déduire",
+      "défier",
       "dégager",
       "dégouliner",
+      "dégoûter",
+      "délier",
+      "délivrer",
+      "déloger",
       "démissionner",
+      "démordre",
       "dénuer",
+      "dépasser",
       "dépendre",
+      "déposséder",
+      "dépouiller",
       "dépourvoir",
       "déranger",
+      "dériver",
+      "désespérer",
+      "désoler",
+      "détacher",
       "détailler",
       "détester",
+      "détourner",
+      "dévier",
       "effacer",
       "emplir",
       "empêcher",
+      "enchanter",
       "encombrer",
+      "enduire",
       "endurer",
       "enfiler",
+      "enlever",
+      "enquérir",
+      "enrichir",
       "entourer",
+      "entreprendre",
       "envisager",
       "essayer",
       "exagérer",
       "exclure",
+      "exempter",
       "exiger",
+      "exploser",
       "exporter",
       "expulser",
       "extirper",
+      "extraire",
       "faire semblant",
+      "farcir",
+      "feindre",
       "ficher",
       "finir",
+      "fourmiller",
       "foutre",
       "frissonner",
+      "frémir",
       "féliciter",
+      "garnir",
       "gaspiller",
+      "grelotter",
+      "grossir",
       "grouiller",
       "guérir",
+      "gémir",
       "générer",
       "honorer",
+      "hurler",
       "hériter",
       "ignorer",
+      "imbiber",
       "implorer",
+      "importer",
       "imprégner",
+      "inculper",
       "informer",
       "inonder",
       "inspirer",
       "interdire",
+      "isoler",
+      "jaillir",
+      "joncher",
       "jouer",
       "jouir",
       "jurer",
+      "justifier",
       "languir",
       "lasser",
+      "libérer",
+      "maigrir",
       "manquer",
       "menacer",
       "moquer",
+      "mourir",
+      "munir",
       "mâcher",
+      "médire",
       "méfier",
       "mériter",
       "mêler",
+      "navrer",
       "nécessiter",
+      "négliger",
       "obliger",
       "obtenir",
       "occasionner",
       "offrir",
       "omettre",
       "opiner",
+      "opérer",
       "ordonner",
+      "orner",
       "oublier",
+      "parer",
       "parler",
       "parsemer",
       "penser",
@@ -32276,62 +58462,130 @@ const FRENCH_COLLOCATIONS_DATA = {
       "persuader",
       "peupler",
       "posséder",
+      "pourvoir",
       "presser",
       "prier",
       "priver",
       "procurer",
       "produire",
       "profiter",
+      "projeter",
       "promettre",
       "proposer",
+      "protéger",
       "provenir",
+      "préserver",
+      "présumer",
       "prévenir",
       "prévoir",
+      "pâlir",
+      "pâtir",
+      "qualifier",
       "raffoler",
       "rappeler",
       "ravir",
       "rayer",
+      "rayonner",
       "recevoir",
       "recommander",
       "recouvrir",
+      "redoubler",
+      "redouter",
       "refuser",
       "regorger",
       "regretter",
       "relever",
       "remercier",
       "remplir",
+      "rentrer",
+      "renvoyer",
+      "reparler",
+      "repartir",
       "requérir",
       "respecter",
+      "ressortir",
+      "retentir",
       "retirer",
+      "retrancher",
+      "revenir",
       "rire",
       "risquer",
       "rouer",
+      "rougir",
+      "ruisseler",
       "réjouir",
+      "résulter",
       "rêver",
       "s'abstenir",
+      "s'accommoder",
+      "s'acquitter",
+      "s'affliger",
+      "s'affranchir",
       "s'agir",
+      "s'aider",
+      "s'alarmer",
+      "s'amouracher",
       "s'apercevoir",
       "s'appeler",
       "s'approcher",
       "s'approvisionner",
+      "s'armer",
       "s'arrêter",
+      "s'assurer",
+      "s'attrister",
+      "s'aviser",
       "s'efforcer",
+      "s'emparer",
+      "s'empresser",
       "s'empêcher",
+      "s'enivrer",
+      "s'ennuyer",
       "s'enorgueillir",
+      "s'enticher",
+      "s'entourer",
       "s'excuser",
+      "s'indigner",
       "s'inquiéter",
       "s'occuper",
+      "s'offusquer",
       "s'écarter",
       "s'échapper",
       "s'éloigner",
+      "s'émerveiller",
       "s'étonner",
+      "s'évanouir",
       "saigner",
       "satisfaire",
+      "saturer",
+      "saupoudrer",
+      "sauver",
+      "se bercer",
+      "se cacher",
+      "se charger",
       "se composer",
+      "se couper",
       "se couvrir",
+      "se dissocier",
+      "se douter",
       "se débarrasser",
+      "se défaire",
+      "se défier",
+      "se délecter",
+      "se démarquer",
+      "se démettre",
+      "se départir",
       "se dépêcher",
+      "se dépêtrer",
+      "se désabonner",
+      "se déshabituer",
+      "se désinscrire",
+      "se désintéresser",
+      "se désolidariser",
       "se ficher",
+      "se flatter",
+      "se féliciter",
+      "se garder",
+      "se gaver",
       "se moquer",
       "se méfier",
       "se mêler",
@@ -32339,75 +58593,118 @@ const FRENCH_COLLOCATIONS_DATA = {
       "se passer",
       "se permettre",
       "se plaindre",
+      "se priver",
+      "se proposer",
       "se préoccuper",
+      "se prévaloir",
       "se ranger",
+      "se rapprocher",
       "se relever",
+      "se remettre",
       "se remplir",
       "se rendre compte",
       "se repentir",
+      "se retenir",
+      "se réclamer",
       "se réjouir",
       "se saisir",
+      "se scandaliser",
       "se servir",
       "se soucier",
       "se souvenir",
       "se séparer",
       "se targuer",
+      "se tirer",
+      "se tordre",
       "se tromper",
       "se vanter",
+      "se venger",
       "servir",
+      "sevrer",
+      "sommer",
       "sortir",
       "soucier",
       "souffrir",
+      "souiller",
       "soulager",
+      "soupirer",
       "soupçonner",
+      "soustraire",
       "souvenir",
       "subir",
       "suffire",
+      "suffoquer",
       "suggérer",
+      "suinter",
       "suivre",
       "supplier",
       "supporter",
+      "surcharger",
       "surgir",
       "suspecter",
       "séparer",
       "tacher",
+      "tapisser",
+      "taxer",
+      "teinter",
       "tenir",
       "tenter",
+      "tirer",
       "traiter",
       "trembler",
+      "tressaillir",
+      "triompher",
       "truffer",
+      "trépigner",
       "tâcher",
+      "témoigner",
       "user",
       "varier",
       "venir",
+      "verdir",
       "verrouiller",
+      "vibrer",
       "vider",
+      "vieillir",
+      "vivoter",
       "vivre",
       "vêtir",
+      "éclabousser",
       "économiser",
       "écouter",
+      "éliminer",
       "éloigner",
       "émaner",
+      "émerger",
       "épouser",
       "éprendre",
       "équiper",
+      "étouffer",
       "évader",
       "éviter",
-      "évoquer"
+      "évoquer",
+      "ôter"
     ],
     "en": [
+      "abdiquer",
       "abonder",
       "achever",
+      "agir",
+      "alimenter",
       "aller",
+      "aménager",
       "annuler",
       "approvisionner",
       "avoir confiance",
       "blesser",
       "briser",
       "bâtir",
+      "camoufler",
       "casser",
       "changer",
       "chanter",
+      "citer",
+      "colorier",
       "concerner",
       "consister",
       "construire",
@@ -32415,10 +58712,16 @@ const FRENCH_COLLOCATIONS_DATA = {
       "croire",
       "devoir",
       "diplômer",
+      "diviser",
+      "débiter",
       "déchirer",
+      "décomposer",
+      "découper",
       "déguiser",
+      "dégénérer",
       "endormir",
       "entrer",
+      "exceller",
       "expliquer",
       "exprimer",
       "fabriquer",
@@ -32426,6 +58729,7 @@ const FRENCH_COLLOCATIONS_DATA = {
       "fonctionner",
       "fonder",
       "fondre",
+      "fournir",
       "gagner",
       "garder",
       "grandir",
@@ -32437,52 +58741,67 @@ const FRENCH_COLLOCATIONS_DATA = {
       "mettre",
       "naître",
       "partir",
+      "payer",
       "placer",
+      "plaider",
       "pleurer",
       "pleuvoir",
       "poursuivre",
       "pouvoir",
+      "progresser",
       "publier",
+      "ravitailler",
       "remettre",
       "rencontrer",
       "reposer",
       "rouler",
+      "rédiger",
       "réduire",
+      "répartir",
       "réveiller",
+      "s'améliorer",
       "s'enfuir",
       "s'habiller",
       "s'installer",
       "saluer",
+      "scinder",
       "se briser",
       "se changer",
+      "se confondre",
       "se dire",
       "se déplacer",
       "se dérouler",
       "se mettre",
+      "se métamorphoser",
       "se remettre",
       "se situer",
       "se suicider",
       "se terminer",
       "se transformer",
       "sembler",
-      "sentir",
       "siffler",
       "situer",
       "soutenir",
       "spécialiser",
+      "subdiviser",
       "suicider",
+      "surpasser",
       "surprendre",
+      "teindre",
       "terminer",
       "tomber",
       "traduire",
+      "transcrire",
       "transformer",
       "traîner",
+      "témoigner",
       "visiter",
       "vivre",
       "vouloir",
       "voyager",
       "éclater",
       "écrire",
+      "émigrer",
       "évoluer"
     ],
     "par": [
@@ -32499,12 +58818,16 @@ const FRENCH_COLLOCATIONS_DATA = {
       "balayer",
       "blesser",
       "bloquer",
+      "briller",
       "causer",
       "classer",
       "commencer",
       "communiquer",
+      "compenser",
       "concerner",
+      "contacter",
       "cracher",
+      "diviser",
       "dominer",
       "doubler",
       "débuter",
@@ -32531,6 +58854,7 @@ const FRENCH_COLLOCATIONS_DATA = {
       "jeter",
       "juger",
       "mordre",
+      "multiplier",
       "obséder",
       "paralyser",
       "passer",
@@ -32540,6 +58864,7 @@ const FRENCH_COLLOCATIONS_DATA = {
       "polluer",
       "prendre",
       "préoccuper",
+      "pécher",
       "regarder",
       "remplacer",
       "rencontrer",
@@ -32552,13 +58877,16 @@ const FRENCH_COLLOCATIONS_DATA = {
       "réveiller",
       "saisir",
       "sauter",
+      "se caractériser",
       "se distinguer",
+      "se solder",
       "se terminer",
       "soutenir",
       "submerger",
       "surprendre",
       "terminer",
       "toucher",
+      "transiter",
       "transmettre",
       "transporter",
       "tromper",
@@ -32575,23 +58903,30 @@ const FRENCH_COLLOCATIONS_DATA = {
       "admirer",
       "appeler",
       "arranger",
+      "batailler",
       "battre",
       "blâmer",
       "choisir",
       "combattre",
+      "concourir",
       "connaître",
       "constituer",
       "construire",
       "convenir",
+      "cotiser",
+      "craquer",
       "critiquer",
       "cuisiner",
       "douer",
+      "débourser",
       "débrouiller",
       "démener",
       "dépenser",
       "dépêcher",
+      "désigner",
       "embarquer",
       "embaucher",
+      "engueuler",
       "estimer",
       "excuser",
       "faire",
@@ -32601,7 +58936,13 @@ const FRENCH_COLLOCATIONS_DATA = {
       "garder",
       "inquiéter",
       "insister",
+      "intercéder",
       "lever",
+      "louer",
+      "lutter",
+      "manifester",
+      "militer",
+      "mépriser",
       "noter",
       "occuper",
       "opter",
@@ -32610,6 +58951,8 @@ const FRENCH_COLLOCATIONS_DATA = {
       "partir",
       "passer",
       "payer",
+      "pencher",
+      "plaider",
       "poser",
       "postuler",
       "prendre",
@@ -32618,120 +58961,232 @@ const FRENCH_COLLOCATIONS_DATA = {
       "préparer",
       "prévoir",
       "punir",
+      "quitter",
       "remercier",
       "rencontrer",
       "ressentir",
+      "récompenser",
       "réprimander",
       "réputer",
       "réserver",
+      "réviser",
       "s'arranger",
       "s'arrêter",
+      "s'entraîner",
       "s'envoler",
       "s'inquiéter",
       "s'unir",
       "sacrifier",
       "se battre",
       "se débrouiller",
+      "se dévouer",
+      "se gêner",
       "se lever",
+      "se mobiliser",
+      "se passionner",
       "se prendre",
+      "se prononcer",
       "se préparer",
+      "se qualifier",
       "se réunir",
+      "se tourmenter",
+      "se tracasser",
       "signifier",
       "suffire",
+      "sélectionner",
       "tenir",
       "travailler",
       "tuer",
       "utiliser",
+      "valoir",
       "voter",
       "économiser",
       "épouser"
     ],
     "sur": [
       "aboyer",
+      "achopper",
       "agir",
+      "alerter",
       "allonger",
+      "anticiper",
       "apparaître",
+      "apposer",
       "appuyer",
       "asseoir",
       "atterrir",
       "baser",
+      "blaguer",
+      "bondir",
+      "bosser",
+      "brancher",
+      "braquer",
+      "broder",
+      "buter",
+      "bûcher",
+      "calquer",
+      "centrer",
+      "chipoter",
       "circuler",
       "cliquer",
       "compter",
       "concentrer",
+      "copier",
+      "coudre",
       "couler",
+      "crier",
       "danser",
       "dessiner",
+      "diffuser",
+      "discourir",
+      "disserter",
+      "diverger",
       "donner",
       "dormir",
       "débattre",
+      "déboucher",
       "déferler",
+      "délibérer",
+      "déraper",
+      "déteindre",
       "embarquer",
       "embrasser",
+      "empiler",
       "empiéter",
       "endormir",
       "enquêter",
-      "exister",
+      "enregistrer",
+      "exercer",
       "flotter",
+      "foncer",
       "fonder",
       "fondre",
       "glisser",
+      "graver",
+      "griffonner",
       "grimper",
+      "imprimer",
       "indiquer",
+      "influer",
       "informer",
       "insister",
       "installer",
+      "interroger",
+      "jucher",
       "laisser",
+      "lancer",
       "larguer",
       "lire",
+      "loucher",
+      "lésiner",
       "marcher",
       "mettre",
+      "miser",
       "monter",
       "méditer",
       "naviguer",
+      "parier",
       "patiner",
       "peser",
       "placer",
+      "plaisanter",
+      "plancher",
+      "planer",
       "pleurer",
+      "polémiquer",
       "porter",
       "poser",
       "pousser",
+      "primer",
+      "prélever",
+      "prévaloir",
+      "rassurer",
+      "rebondir",
+      "rejaillir",
       "rejeter",
+      "renchérir",
       "reposer",
+      "retomber",
       "revenir",
       "rouler",
+      "régner",
+      "s'abattre",
+      "s'acharner",
+      "s'affaler",
+      "s'aligner",
       "s'allonger",
+      "s'apitoyer",
+      "s'appesantir",
       "s'appuyer",
       "s'asseoir",
+      "s'attarder",
+      "s'attendrir",
+      "s'avachir",
+      "s'extasier",
+      "s'interroger",
       "s'étendre",
+      "sauter",
+      "sauvegarder",
       "savoir",
       "se concentrer",
       "se coucher",
+      "se documenter",
       "se dresser",
+      "se lamenter",
+      "se méprendre",
       "se pencher",
       "se poser",
+      "se prononcer",
+      "se précipiter",
+      "se rabattre",
+      "se recueillir",
+      "se renseigner",
+      "se replier",
       "se reposer",
+      "se ruer",
+      "se répercuter",
       "se tenir",
+      "se tromper",
       "se trouver",
+      "se venger",
       "situer",
+      "sonder",
       "souffler",
+      "spéculer",
+      "statuer",
       "suivre",
+      "surenchérir",
       "surfer",
+      "sécher",
+      "tabler",
       "taper",
+      "tapoter",
+      "taquiner",
+      "tartiner",
+      "tatouer",
+      "tester",
+      "tiquer",
       "tirer",
       "tomber",
+      "transiger",
       "trébucher",
+      "télécharger",
       "veiller",
+      "zapper",
+      "zoomer",
       "échouer",
       "écrire",
+      "étaler",
       "étendre"
     ],
     "dans": [
+      "admettre",
       "allonger",
       "apparaître",
       "asseoir",
       "baigner",
       "balader",
+      "basculer",
       "blesser",
       "brûler",
       "cacher",
@@ -32741,30 +59196,52 @@ const FRENCH_COLLOCATIONS_DATA = {
       "couler",
       "courir",
       "croiser",
+      "croquer",
+      "descendre",
+      "diluer",
       "dormir",
       "déambuler",
       "déclencher",
       "détecter",
+      "déverser",
+      "emballer",
+      "embarquer",
       "emménager",
       "enfermer",
+      "enfoncer",
+      "enfouir",
       "engager",
+      "entasser",
       "enterrer",
+      "entraîner",
       "entrer",
+      "errer",
+      "exceller",
+      "figurer",
       "fleurir",
       "flotter",
       "flâner",
+      "fouiller",
+      "fouiner",
+      "fourrer",
       "fumer",
       "garer",
       "grandir",
+      "graver",
       "grimper",
       "habiter",
       "immiscer",
       "impliquer",
+      "inclure",
+      "injecter",
       "inscrire",
+      "insérer",
       "intervenir",
       "introduire",
+      "investir",
       "jeter",
       "lire",
+      "loger",
       "marcher",
       "mettre",
       "monter",
@@ -32774,58 +59251,88 @@ const FRENCH_COLLOCATIONS_DATA = {
       "naître",
       "noter",
       "noyer",
+      "patauger",
       "paître",
       "perdre",
+      "persister",
+      "persévérer",
       "plonger",
       "poignarder",
       "pousser",
       "promener",
+      "puiser",
       "pénétrer",
+      "périr",
       "pêcher",
       "ranger",
       "regarder",
       "rencontrer",
+      "retomber",
       "retrouver",
       "revenir",
       "résider",
       "réussir",
+      "s'abîmer",
+      "s'ancrer",
       "s'appliquer",
+      "s'aventurer",
+      "s'engouffrer",
       "s'envelopper",
       "s'immiscer",
+      "s'infiltrer",
       "s'inscrire",
       "s'introduire",
+      "s'intégrer",
       "s'élever",
+      "s'épanouir",
       "sauter",
       "scintiller",
+      "sculpter",
       "se baigner",
+      "se barricader",
+      "se blottir",
       "se cacher",
+      "se complaire",
       "se cultiver",
       "se dissoudre",
+      "se draper",
+      "se faufiler",
       "se jeter",
       "se lancer",
       "se noyer",
       "se passer",
       "se perdre",
+      "se plonger",
+      "se reconvertir",
+      "se refléter",
       "se regarder",
       "se rencontrer",
       "se retirer",
+      "se réfugier",
+      "se répandre",
       "se situer",
+      "se tapir",
       "se tenir",
+      "se terrer",
       "se trouver",
+      "se vautrer",
       "serrer",
       "sombrer",
       "souffler",
       "spécialiser",
       "suspendre",
       "séjourner",
+      "tailler",
       "taper",
       "tenir",
       "tomber",
       "traduire",
+      "transparaître",
       "travailler",
       "tremper",
       "trouver",
       "tuer",
+      "verser",
       "vivre",
       "voir",
       "voler",
@@ -32839,25 +59346,46 @@ const FRENCH_COLLOCATIONS_DATA = {
     "avec": [
       "accueillir",
       "agir",
+      "alterner",
+      "appâter",
       "attendre",
       "attraper",
+      "badiner",
+      "bassiner",
       "battre",
       "bavarder",
       "brûler",
+      "cadrer",
+      "causer",
       "chanter",
+      "coexister",
+      "cohabiter",
+      "collaborer",
+      "combiner",
+      "commercer",
       "communiquer",
       "comparer",
       "compatir",
+      "concilier",
+      "concorder",
       "confondre",
+      "contraster",
+      "converser",
+      "coopérer",
+      "correspondre",
       "coucher",
       "coïncider",
       "danser",
+      "dialoguer",
       "discuter",
       "disputer",
       "dormir",
       "débrouiller",
       "décorer",
       "déjeuner",
+      "détonner",
+      "dîner",
+      "embêter",
       "emmener",
       "emménager",
       "emporter",
@@ -32866,37 +59394,73 @@ const FRENCH_COLLOCATIONS_DATA = {
       "entendre",
       "entretenir",
       "expliquer",
+      "flirter",
+      "fraterniser",
+      "frotter",
+      "fusionner",
       "fâcher",
+      "importuner",
+      "interférer",
+      "jongler",
       "jouer",
       "marier",
+      "mélanger",
       "nager",
+      "nouer",
+      "négocier",
+      "pactiser",
+      "papoter",
+      "parier",
+      "parlementer",
       "parler",
       "partager",
+      "plaisanter",
       "polir",
       "pêcher",
       "regarder",
+      "renouer",
       "rester",
       "rimer",
+      "rivaliser",
       "rompre",
       "s'accorder",
+      "s'acoquiner",
+      "s'allier",
       "s'entendre",
       "s'entretenir",
       "saluer",
+      "se bagarrer",
+      "se brouiller",
+      "se chamailler",
+      "se comporter",
+      "se concerter",
+      "se conduire",
       "se disputer",
+      "se familiariser",
+      "se fiancer",
       "se marier",
       "se quereller",
+      "se remarier",
+      "se réconcilier",
+      "se solidariser",
+      "signer",
       "skier",
       "sortir",
       "sourire",
       "suivre",
       "sympathiser",
+      "synchroniser",
+      "tchatter",
       "terminer",
       "traiter",
+      "trancher",
       "travailler",
+      "trinquer",
       "tuer",
       "venir",
       "vivre",
       "voir",
+      "voisiner",
       "voyager",
       "écouter",
       "étudier",
@@ -32904,46 +59468,102 @@ const FRENCH_COLLOCATIONS_DATA = {
     ],
     "contre": [
       "appuyer",
+      "assurer",
+      "blinder",
+      "buter",
+      "comploter",
+      "conspirer",
+      "dresser",
       "défendre",
+      "frotter",
       "fâcher",
       "gagner",
+      "garantir",
       "lutter",
+      "manifester",
+      "militer",
+      "pester",
       "protester",
       "protéger",
+      "rouspéter",
+      "râler",
+      "s'acharner",
+      "s'adosser",
       "s'appuyer",
+      "s'arc-bouter",
+      "s'indigner",
+      "s'insurger",
+      "s'unir",
+      "s'énerver",
       "se battre",
+      "se blottir",
+      "se cogner",
+      "se débattre",
+      "se déchaîner",
       "se fâcher",
+      "se mobiliser",
+      "se prononcer",
+      "se prémunir",
+      "se rebeller",
+      "se révolter",
+      "se serrer",
+      "se soulever",
+      "sévir",
+      "tempêter",
+      "troquer",
+      "témoigner",
       "vacciner",
+      "vociférer",
       "voter",
       "échanger"
     ],
     "vers": [
+      "accourir",
+      "acheminer",
+      "affluer",
+      "aiguiller",
       "avancer",
+      "bifurquer",
       "courir",
       "diriger",
+      "foncer",
       "hâter",
+      "s'orienter",
       "se diriger",
+      "se précipiter",
+      "se ruer",
       "se tourner",
       "tendre",
-      "voler"
+      "voler",
+      "évacuer"
     ],
     "chez": [
       "aller",
+      "diagnostiquer",
+      "débarquer",
+      "dîner",
       "habiter",
+      "loger",
       "passer",
       "raccompagner",
       "ramener",
       "reconduire",
       "rentrer",
-      "séjourner",
+      "se réfugier",
       "travailler"
     ],
     "entre": [
       "choisir",
+      "coincer",
       "distinguer",
       "grignoter",
       "hésiter",
-      "partager"
+      "osciller",
+      "partager",
+      "répartir",
+      "s'interposer",
+      "se faufiler",
+      "zigzaguer"
     ]
   }
 };

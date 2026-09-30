@@ -1,0 +1,782 @@
+# German Rektion source: headwords h i j k l m n o p q r t u (incl. ö/ü)
+# --- Top-ups for existing thin entries ---
+E|Interesse haben|an|D|Hast du Interesse an einem Sprachkurs im Sommer?|你对夏季的语言课程感兴趣吗？
+E|Interesse haben|an|D|Die Firma hat großes Interesse an neuen Mitarbeitern.|这家公司对招聘新员工很感兴趣。
+E|Interesse haben|an|D|Früher hatte ich kein Interesse an Politik.|我以前对政治不感兴趣。
+E|Interesse zeigen|für|A|Mein Sohn zeigt seit Kurzem Interesse für Musik.|我儿子最近开始对音乐表现出兴趣。
+E|Interesse zeigen|für|A|Nur wenige Kunden haben Interesse für das neue Modell gezeigt.|只有少数顾客对新款表现出兴趣。
+E|Interesse zeigen|für|A|Wenn du Interesse für den Job zeigst, bekommst du ihn vielleicht.|如果你对这份工作表现出兴趣，也许就能得到它。
+E|Lust haben|auf|A|Hast du Lust auf einen Spaziergang?|你想去散散步吗？
+E|Lust haben|auf|A|Heute habe ich überhaupt keine Lust auf Arbeit.|今天我一点都不想工作。
+E|Lust haben|auf|A|Die Kinder hatten Lust auf Eis.|孩子们想吃冰淇淋。
+E|Respekt haben|vor|D|Ich habe großen Respekt vor meinen Großeltern.|我非常尊敬我的祖父母。
+E|Respekt haben|vor|D|Viele Schüler haben Respekt vor der Mathelehrerin.|很多学生都敬畏那位数学老师。
+E|Respekt haben|vor|D|Man sollte Respekt vor der Natur haben.|人应该敬畏大自然。
+E|Rücksicht nehmen|auf|A|Bitte nehmt Rücksicht auf die Nachbarn und seid leise.|请体谅邻居，保持安静。
+E|Rücksicht nehmen|auf|A|Er nimmt nie Rücksicht auf die Gefühle anderer.|他从不顾及别人的感受。
+E|Rücksicht nehmen|auf|A|Im Straßenverkehr muss man Rücksicht auf Radfahrer nehmen.|在道路交通中必须照顾骑自行车的人。
+E|helfen|gegen|A|Dieser Tee hilft gegen Halsschmerzen.|这种茶能缓解嗓子疼。
+E|helfen|gegen|A|Was hilft eigentlich gegen Schlaflosigkeit?|到底什么对失眠有用呢？
+E|helfen|gegen|A|Leider hat die Salbe nicht gegen den Juckreiz geholfen.|可惜这药膏对止痒没起作用。
+E|herrschen|über|A|Der König herrschte vierzig Jahre über das Land.|国王统治这个国家四十年。
+E|herrschen|über|A|Die Römer herrschten lange über große Teile Europas.|罗马人长期统治着欧洲的大部分地区。
+E|herrschen|über|A|Niemand soll über andere Menschen herrschen.|任何人都不应该统治他人。
+E|hinauslaufen|auf|A|Die Diskussion lief auf einen Kompromiss hinaus.|讨论最终以妥协告终。
+E|hinauslaufen|auf|A|Worauf läuft dein Vorschlag eigentlich hinaus?|你的提议究竟想达到什么目的？
+E|hinauslaufen|auf|A|Am Ende wird es darauf hinauslaufen, dass wir mehr zahlen.|到头来结果就是我们得多付钱。
+E|hindern|an|D|Der Regen hinderte uns an der Weiterfahrt.|大雨阻碍了我们继续前行。
+E|hindern|an|D|Niemand kann dich daran hindern, deine Meinung zu sagen.|没有人能阻止你说出自己的看法。
+E|hindern|an|D|Eine Verletzung hat ihn am Training gehindert.|一处伤让他没法训练。
+E|hinweisen|auf|A|Der Arzt wies mich auf die Nebenwirkungen hin.|医生提醒我注意副作用。
+E|hinweisen|auf|A|Ich möchte darauf hinweisen, dass morgen kein Unterricht ist.|我想提醒一下，明天不上课。
+E|hinweisen|auf|A|Die Schilder weisen auf die Gefahr hin.|这些标牌提示了危险。
+E|hoffen|auf|A|Wir hoffen auf gutes Wetter am Wochenende.|我们希望周末天气好。
+E|hoffen|auf|A|Die Spieler hofften auf einen Sieg.|球员们盼望着胜利。
+E|hoffen|auf|A|Sie hat lange auf eine Antwort gehofft.|她期盼回复盼了很久。
+E|immun sein|gegen|A|Nach der Impfung ist man gegen diese Krankheit immun.|接种疫苗后，人就对这种疾病免疫了。
+E|immun sein|gegen|A|Er scheint gegen jede Kritik immun zu sein.|他似乎对任何批评都无动于衷。
+E|immun sein|gegen|A|Leider bin ich nicht immun gegen Schokolade.|可惜我抵挡不住巧克力的诱惑。
+E|informieren|über|A|Die Lehrerin informiert die Eltern über den Ausflug.|老师向家长通报郊游的情况。
+E|informieren|über|A|Wir werden Sie rechtzeitig über alle Änderungen informieren.|我们会及时通知您所有变动。
+E|informieren|über|A|Hat dich jemand darüber informiert?|有人通知过你这件事吗？
+E|interessiert sein|an|D|Wir sind sehr an Ihrem Angebot interessiert.|我们对您的报价非常感兴趣。
+E|interessiert sein|an|D|Ist er wirklich an einer festen Beziehung interessiert?|他真的想要一段稳定的关系吗？
+E|interessiert sein|an|D|Die Studentin war schon immer an Geschichte interessiert.|这个女学生一直对历史感兴趣。
+E|investieren|in|A|Meine Eltern haben ihr Geld in eine Wohnung investiert.|我父母把钱投资到了一套公寓上。
+E|investieren|in|A|Die Stadt investiert viel in neue Radwege.|这座城市在新自行车道上投入了大量资金。
+E|investieren|in|A|Man sollte Zeit in die eigene Bildung investieren.|人应该在自我教育上投入时间。
+E|kapitulieren|vor|D|Irgendwann habe ich vor dem Chaos in der Küche kapituliert.|最后我在厨房的一片混乱面前投降了。
+E|kapitulieren|vor|D|Die Armee kapitulierte vor dem Feind.|军队向敌人投降了。
+E|kapitulieren|vor|D|Wir dürfen nicht vor diesen Problemen kapitulieren.|我们不能在这些问题面前退缩。
+E|klagen|gegen|A|Die Mieter klagen gegen ihren Vermieter.|租户们起诉了他们的房东。
+E|klagen|gegen|A|Das Unternehmen will gegen die Entscheidung klagen.|这家公司打算对该决定提起诉讼。
+E|klagen|gegen|A|Er hat erfolgreich gegen die Stadt geklagt.|他起诉市政府并胜诉了。
+E|klagen|über|A|Meine Oma klagt oft über Rückenschmerzen.|我奶奶常常抱怨背疼。
+E|klagen|über|A|Die Anwohner klagten über den Lärm.|居民们抱怨噪音。
+E|klagen|über|A|Du klagst immer über das Wetter.|你总是抱怨天气。
+E|klingen|nach|D|Das klingt nach einer guten Idee.|这听起来是个好主意。
+E|klingen|nach|D|Sein Plan klang nach viel Arbeit.|他的计划听起来工作量很大。
+E|klingen|nach|D|Deine Stimme klingt nach Erkältung.|你的声音听起来像是感冒了。
+E|kämpfen|um|A|Die Mannschaft kämpft um den Aufstieg.|这支球队在为升级而拼搏。
+E|lachen|über|A|Alle haben über seinen Witz gelacht.|大家都被他的笑话逗笑了。
+E|leiden|an|D|Mein Onkel leidet an Diabetes.|我叔叔患有糖尿病。
+E|leiden|an|D|Viele Menschen leiden an Schlafstörungen.|很多人患有睡眠障碍。
+E|leiden|an|D|Sie litt jahrelang an einer seltenen Krankheit.|她多年来患有一种罕见疾病。
+E|leiden|unter|D|Die Kinder leiden unter der Trennung der Eltern.|孩子们因父母离异而痛苦。
+E|leiden|unter|D|Viele Städte leiden unter der Hitze.|许多城市饱受高温之苦。
+E|leiden|unter|D|Ich habe lange unter Stress gelitten.|我很长时间饱受压力折磨。
+E|liefern|an|A|Wir liefern die Ware direkt an Ihre Adresse.|我们会将货物直接送到您的地址。
+E|liefern|an|A|Die Bäckerei liefert Brot an mehrere Hotels.|这家面包店给几家酒店供应面包。
+E|liefern|an|A|Das Paket wurde an die falsche Person geliefert.|包裹被送错了人。
+E|mangeln|an|D|Es mangelt an qualifizierten Pflegekräften.|合格的护理人员短缺。
+E|mangeln|an|D|Ihm mangelt es an Selbstvertrauen.|他缺乏自信。
+E|mangeln|an|D|An guten Ideen hat es uns nie gemangelt.|我们从来不缺好点子。
+E|mitwirken|bei|D|Viele Freiwillige haben beim Stadtfest mitgewirkt.|许多志愿者参与了城市节的工作。
+E|mitwirken|bei|D|Möchtest du bei unserem Theaterstück mitwirken?|你想参加我们的话剧演出吗？
+E|mitwirken|bei|D|Sie wirkte bei der Planung des Projekts mit.|她参与了项目的规划。
+E|neugierig sein|auf|A|Ich bin schon neugierig auf deinen neuen Freund.|我已经很好奇你的新男朋友是什么样了。
+E|neugierig sein|auf|A|Die Kinder waren neugierig auf die Geschenke.|孩子们对礼物充满好奇。
+E|neugierig sein|auf|A|Bist du nicht neugierig auf das Ergebnis?|你难道不好奇结果吗？
+E|plädieren|für|A|Die Ärzte plädieren für mehr Bewegung im Alltag.|医生们主张日常生活中多运动。
+E|plädieren|für|A|Der Anwalt plädierte für einen Freispruch.|律师请求判无罪。
+E|plädieren|für|A|Ich plädiere dafür, das Treffen zu verschieben.|我主张推迟会面。
+E|pochen|auf|A|Die Gewerkschaft pocht auf höhere Löhne.|工会坚持要求提高工资。
+E|pochen|auf|A|Sie pochte auf ihr Recht.|她坚持自己的权利。
+E|pochen|auf|A|Wir pochen darauf, dass der Vertrag eingehalten wird.|我们坚决要求遵守合同。
+E|profitieren|von|D|Alle profitieren von der neuen Regelung.|大家都从新规定中受益。
+E|profitieren|von|D|Von deiner Erfahrung kann ich viel profitieren.|我能从你的经验中获益良多。
+E|protestieren|gegen|A|Tausende Menschen protestierten gegen den Krieg.|成千上万的人抗议战争。
+E|protestieren|gegen|A|Die Studenten protestieren gegen die hohen Mieten.|学生们抗议高房租。
+E|protestieren|gegen|A|Warum hast du nicht dagegen protestiert?|你为什么没有对此提出抗议？
+E|reagieren|auf|A|Wie hat dein Chef auf die Nachricht reagiert?|你老板对这个消息作何反应？
+E|reagieren|auf|A|Ich reagiere allergisch auf Nüsse.|我对坚果过敏。
+E|reagieren|auf|A|Sie hat nicht auf meine E-Mail reagiert.|她没有回复我的邮件。
+E|rechnen|mit|D|Mit so vielen Gästen hatten wir nicht gerechnet.|我们没料到会来这么多客人。
+E|rechnen|mit|D|Du kannst immer mit mir rechnen.|你随时都可以指望我。
+E|reich sein|an|D|Frisches Obst ist reich an Vitaminen.|新鲜水果富含维生素。
+E|reich sein|an|D|Die Region ist reich an Bodenschätzen.|这个地区矿产资源丰富。
+E|reich sein|an|D|Sein Leben war reich an Abenteuern.|他的一生充满冒险。
+E|resultieren|aus|D|Die Probleme resultieren aus schlechter Planung.|这些问题源于规划不善。
+E|resultieren|aus|D|Aus dem Streit resultierte eine lange Funkstille.|这场争吵导致了长时间的冷战。
+E|resultieren|aus|D|Die hohen Kosten resultieren vor allem aus den Energiepreisen.|高成本主要是由能源价格造成的。
+E|retten|vor|D|Ein Nachbar rettete das Kind vor dem Ertrinken.|一位邻居救了那个快要溺水的孩子。
+E|riechen|nach|D|In der Küche riecht es nach frischem Brot.|厨房里有新鲜面包的香味。
+E|riechen|nach|D|Deine Jacke riecht nach Rauch.|你的外套有股烟味。
+E|rufen|nach|D|Das Kind rief nach seiner Mutter.|孩子在喊妈妈。
+E|rufen|nach|D|Die Gäste rufen nach dem Kellner.|客人们在叫服务员。
+E|sich halten|an|A|Bitte halten Sie sich an die Regeln.|请遵守规则。
+E|sich halten|an|A|Er hat sich nicht an unsere Abmachung gehalten.|他没有遵守我们的约定。
+E|sich halten|an|A|Ich halte mich an das Rezept meiner Mutter.|我按照我妈妈的食谱做。
+E|sich handeln|um|A|Worum handelt es sich bei diesem Brief?|这封信是关于什么的？
+E|sich handeln|um|A|Es handelt sich um ein Missverständnis.|这是一个误会。
+E|sich hinwegsetzen|über|A|Er setzte sich über alle Warnungen hinweg.|他无视所有警告。
+E|sich hinwegsetzen|über|A|Die Regierung hat sich über den Willen der Bürger hinweggesetzt.|政府无视了民意。
+E|sich hinwegsetzen|über|A|Man kann sich nicht einfach über die Gesetze hinwegsetzen.|人不能简单地无视法律。
+E|sich hüten|vor|D|Hüte dich vor falschen Freunden!|提防虚情假意的朋友！
+E|sich hüten|vor|D|Wir sollten uns vor voreiligen Schlüssen hüten.|我们应该避免草率下结论。
+E|sich hüten|vor|D|Im Wald muss man sich vor Zecken hüten.|在森林里要小心蜱虫。
+E|sich identifizieren|mit|D|Ich kann mich gut mit der Hauptfigur identifizieren.|我很能认同主人公。
+E|sich identifizieren|mit|D|Viele Mitarbeiter identifizieren sich mit ihrer Firma.|很多员工对自己的公司有认同感。
+E|sich identifizieren|mit|D|Mit diesen Werten konnte er sich nie identifizieren.|他从来无法认同这些价值观。
+E|sich informieren|über|A|Vor der Reise habe ich mich über das Land informiert.|旅行前我了解了这个国家的情况。
+E|sich informieren|über|A|Informieren Sie sich bitte online über die Öffnungszeiten.|请在网上查询开放时间。
+E|sich informieren|über|A|Sie informiert sich täglich über das Weltgeschehen.|她每天都了解时事动态。
+E|sich irren|in|D|Da hast du dich im Datum geirrt.|你把日期搞错了。
+E|sich irren|in|D|Ich habe mich in der Hausnummer geirrt.|我把门牌号弄错了。
+E|sich irren|in|D|Er hat sich in ihr gründlich geirrt.|他完全看错了她。
+E|sich klammern|an|A|Das Kind klammerte sich an seine Mutter.|孩子紧紧抱着妈妈。
+E|sich klammern|an|A|Sie klammert sich an die letzte Hoffnung.|她紧抓着最后一线希望。
+E|sich klammern|an|A|Er hat sich an den Rettungsring geklammert.|他紧紧抓住了救生圈。
+E|sich klar werden|über|A|Ich muss mir erst über meine Gefühle klar werden.|我得先弄清楚自己的感受。
+E|sich klar werden|über|A|Bist du dir über die Folgen klar geworden?|你意识到后果了吗？
+E|sich klar werden|über|A|Erst später wurde er sich über seinen Fehler klar.|直到后来他才意识到自己的错误。
+E|sich konzentrieren|auf|A|Bei dem Lärm kann ich mich nicht auf meine Arbeit konzentrieren.|这么吵我没法集中精力工作。
+E|sich konzentrieren|auf|A|Konzentrier dich auf das Wesentliche!|专注于要点！
+E|sich machen|an|A|Nach dem Frühstück machte er sich an die Arbeit.|早饭后他开始干活了。
+E|sich machen|an|A|Wir sollten uns endlich an die Steuererklärung machen.|我们终于该着手做报税单了。
+E|sich machen|an|A|Sie hat sich sofort an die Aufgabe gemacht.|她立刻着手这项任务。
+E|sich messen|an|D|Du solltest dich nicht an deinem Bruder messen.|你不应该拿自己和哥哥比。
+E|sich messen|an|D|Wir messen uns an den besten Firmen der Branche.|我们以行业里最好的公司为标准衡量自己。
+E|sich messen|an|D|Sie misst sich immer an ihren eigenen Erwartungen.|她总是用自己的期望来衡量自己。
+E|sich orientieren|an|D|Die Preise orientieren sich am Markt.|价格以市场为导向。
+E|sich orientieren|an|D|Kinder orientieren sich am Verhalten ihrer Eltern.|孩子会以父母的行为为榜样。
+E|sich orientieren|an|D|Ich orientiere mich an den Tipps meiner Lehrerin.|我以老师的建议为指导。
+E|sich richten|an|A|Das Angebot richtet sich an Studierende.|这项优惠面向大学生。
+E|sich richten|an|A|Mit Fragen können Sie sich an die Rezeption richten.|有问题您可以咨询前台。
+E|sich richten|an|A|Der Brief richtete sich an alle Mitglieder.|这封信是写给全体成员的。
+E|sich richten|gegen|A|Meine Kritik richtet sich nicht gegen dich.|我的批评不是针对你的。
+E|sich richten|gegen|A|Die Proteste richteten sich gegen die Regierung.|抗议活动针对的是政府。
+E|sich richten|gegen|A|Das neue Gesetz richtet sich gegen Steuerbetrug.|新法律针对的是逃税。
+E|sich richten|nach|D|Wir richten uns ganz nach dir.|我们完全随你。
+E|sich richten|nach|D|Der Preis richtet sich nach der Größe der Wohnung.|价格取决于公寓面积。
+E|sich richten|nach|D|Ich habe mich nach dem Wetterbericht gerichtet.|我是根据天气预报来安排的。
+E|sich rächen|an|D|Er wollte sich an seinem Rivalen rächen.|他想向对手报复。
+E|sich rächen|an|D|Die Heldin rächt sich am Mörder ihres Vaters.|女主人公向杀父仇人复仇。
+E|sich rächen|an|D|Warum rächst du dich an mir?|你为什么要报复我？
+E|sich täuschen|in|D|In ihm habe ich mich leider getäuscht.|可惜我看错了他。
+E|sich täuschen|in|D|Du täuschst dich in der Uhrzeit.|你把时间弄错了。
+E|sich täuschen|in|D|Bei der Wahl haben wir uns in dem Kandidaten getäuscht.|选举时我们看错了那位候选人。
+E|sich täuschen|über|A|Er täuscht sich über den Ernst der Lage.|他对形势的严重性判断有误。
+E|sich täuschen|über|A|Täusch dich nicht über seine wahren Absichten!|别看错了他的真实意图！
+E|sich täuschen|über|A|Sie hatte sich über die Kosten getäuscht.|她对费用估计错了。
+E|sich umsehen|nach|D|Ich sehe mich nach einer neuen Wohnung um.|我在四处找新公寓。
+E|sich umsehen|nach|D|Er sah sich nach einem Taxi um.|他四处张望找出租车。
+E|sich umsehen|nach|D|Wir sollten uns nach einem anderen Job umsehen.|我们应该另找工作。
+E|sich unterhalten|mit|D|Ich habe mich lange mit meiner Nachbarin unterhalten.|我和邻居聊了很久。
+E|sich unterhalten|mit|D|Mit ihm kann man sich gut unterhalten.|和他很聊得来。
+E|sich unterhalten|mit|D|Die Kinder unterhielten sich leise mit ihren Freunden.|孩子们在和朋友小声聊天。
+E|sich unterhalten|über|A|Wir haben uns über den Film unterhalten.|我们聊了那部电影。
+E|sich unterhalten|über|A|Worüber habt ihr euch unterhalten?|你们聊了什么？
+E|sich unterhalten|über|A|Die Kollegen unterhalten sich gern über Fußball.|同事们喜欢聊足球。
+E|sich unterscheiden|von|D|Das neue Handy unterscheidet sich kaum vom alten.|新手机和旧的几乎没有区别。
+E|sich unterscheiden|von|D|Unser Sohn unterscheidet sich sehr von seiner Schwester.|我们的儿子和他姐姐很不一样。
+E|sich unterscheiden|von|D|Wodurch unterscheidet sich dieser Wein von dem anderen?|这款葡萄酒和另一款有什么不同？
+E|sich unterscheiden|in|D|Die beiden Angebote unterscheiden sich im Preis.|这两个报价在价格上有差别。
+E|sich unterscheiden|in|D|Wir unterscheiden uns in vielen Punkten.|我们在很多方面都不同。
+E|sich unterscheiden|in|D|Die Dialekte unterscheiden sich vor allem in der Aussprache.|这些方言主要在发音上有区别。
+E|sich üben|in|D|Du musst dich in Geduld üben.|你得学会耐心。
+E|sich üben|in|D|Die Politiker übten sich in Zurückhaltung.|政界人士表现得十分克制。
+E|sich üben|in|D|Nach dem Unfall übte er sich in Gelassenheit.|事故之后他努力让自己保持平静。
+E|taugen|zu|D|Er taugt nicht zum Lehrer.|他不适合当老师。
+E|taugen|zu|D|Das alte Messer taugt nur noch zum Brotschneiden.|这把旧刀只能用来切面包了。
+E|taugen|zu|D|Wozu taugt dieses Gerät eigentlich?|这台设备到底有什么用？
+E|tauschen|gegen|A|Ich tausche meinen Kuchen gegen dein Eis.|我用我的蛋糕换你的冰淇淋。
+E|tauschen|gegen|A|Er hat sein Fahrrad gegen ein Skateboard getauscht.|他用自行车换了一块滑板。
+E|teilen|durch|A|Zwanzig geteilt durch vier ist fünf.|二十除以四等于五。
+E|teilen|durch|A|Teile die Summe durch die Anzahl der Personen.|用总数除以人数。
+E|teilhaben|an|D|Alle Bürger sollen am Wohlstand teilhaben.|所有公民都应分享繁荣。
+E|teilhaben|an|D|Lass mich an deiner Freude teilhaben!|让我分享你的快乐吧！
+E|teilhaben|an|D|Menschen mit Behinderung sollen am gesellschaftlichen Leben teilhaben.|残障人士应能参与社会生活。
+E|teilnehmen|an|D|Ich nehme morgen an einem Workshop teil.|我明天参加一个研讨会。
+E|teilnehmen|an|D|Wie viele Leute haben an der Umfrage teilgenommen?|有多少人参加了调查？
+E|teilnehmen|an|D|Sie konnte wegen Krankheit nicht am Unterricht teilnehmen.|她因病无法上课。
+E|trauern|um|A|Die ganze Familie trauert um den Großvater.|全家都在哀悼祖父。
+E|trauern|um|A|Das Land trauerte um die Opfer des Unglücks.|全国都在哀悼这场灾难的遇难者。
+E|trauern|um|A|Sie trauert noch immer um ihren Hund.|她仍在为她的狗伤心。
+E|trinken|auf|A|Lasst uns auf das Brautpaar trinken!|让我们为新人干杯！
+E|trinken|auf|A|Wir trinken auf deine Gesundheit.|我们为你的健康干杯。
+E|trinken|auf|A|Die Kollegen tranken auf den Erfolg des Projekts.|同事们为项目的成功干杯。
+E|typisch sein|für|A|Das ist typisch für ihn!|这就是他的作风！
+E|typisch sein|für|A|Dieses Gericht ist typisch für Bayern.|这道菜是巴伐利亚的典型菜。
+E|typisch sein|für|A|Regen im April ist typisch für diese Gegend.|四月下雨是这个地区的典型现象。
+E|umgehen|mit|D|Sie kann gut mit Kindern umgehen.|她很会和孩子相处。
+E|umgehen|mit|D|Wie gehst du mit Stress um?|你怎么应对压力？
+E|umgehen|mit|D|Mit diesem Werkzeug muss man vorsichtig umgehen.|使用这个工具必须小心。
+E|umrechnen|in|A|Kannst du den Preis in Euro umrechnen?|你能把价格换算成欧元吗？
+E|umrechnen|in|A|Die Temperatur wird in Grad Celsius umgerechnet.|温度被换算成摄氏度。
+E|umrechnen|in|A|Er rechnete die Meilen in Kilometer um.|他把英里换算成公里。
+E|unterrichten|in|D|Frau Weber unterrichtet uns in Mathematik.|韦伯老师教我们数学。
+E|unterrichten|in|D|Er unterrichtet Erwachsene in Deutsch.|他给成年人教德语。
+E|unterrichten|in|D|Sie hat jahrelang Kinder in Musik unterrichtet.|她多年来教孩子们音乐。
+E|unterstützen|bei|D|Meine Schwester unterstützt mich beim Umzug.|我姐姐帮我搬家。
+E|unterstützen|bei|D|Wir unterstützen Sie gern bei der Suche nach einer Wohnung.|我们很乐意协助您找房子。
+E|unterstützen|bei|D|Die Eltern haben ihn bei seinem Studium unterstützt.|父母支持他完成学业。
+E|urteilen|über|A|Man sollte nicht vorschnell über andere urteilen.|不应轻率地评判别人。
+E|urteilen|über|A|Wie urteilen die Experten über das neue Gesetz?|专家们如何评价新法律？
+E|urteilen|über|A|Das Gericht wird morgen über den Fall urteilen.|法院明天将对此案作出判决。
+E|übereinstimmen|mit|D|Ich stimme mit dir völlig überein.|我完全同意你的看法。
+E|übereinstimmen|mit|D|Die Aussage stimmt nicht mit den Fakten überein.|这个说法与事实不符。
+E|übereinstimmen|mit|D|Seine Unterschrift stimmte mit der auf dem Ausweis überein.|他的签名和身份证上的一致。
+E|übereinstimmen|in|D|Wir stimmen in diesem Punkt überein.|在这一点上我们意见一致。
+E|übereinstimmen|in|D|Die beiden Studien stimmen im Ergebnis überein.|这两项研究结果一致。
+E|übereinstimmen|in|D|In der Frage der Finanzierung stimmten die Parteien nicht überein.|在融资问题上各党派意见不一。
+E|übergeben|an|A|Der Hausmeister übergab die Schlüssel an den neuen Mieter.|管理员把钥匙交给了新租户。
+E|übergeben|an|A|Die Firma wurde an den Sohn übergeben.|公司交给了儿子。
+E|übergeben|an|A|Bitte übergeben Sie das Dokument an die Sekretärin.|请把文件交给秘书。
+E|überreden|zu|D|Meine Freunde haben mich zu einem Kinobesuch überredet.|朋友们说服我去看电影。
+E|übersetzen|in|A|Kannst du diesen Text ins Deutsche übersetzen?|你能把这篇文章翻译成德语吗？
+E|übersetzen|in|A|Der Roman wurde in dreißig Sprachen übersetzt.|这部小说被翻译成三十种语言。
+E|übersetzen|in|A|Sie übersetzt Gedichte in ihre Muttersprache.|她把诗歌译成母语。
+E|übersetzen|aus|D|Das Buch ist aus dem Englischen übersetzt.|这本书是从英语翻译过来的。
+E|übersetzen|aus|D|Er übersetzt vor allem aus dem Japanischen.|他主要从日语翻译。
+E|übersetzen|aus|D|Diesen Artikel habe ich aus dem Französischen übersetzt.|这篇文章是我从法语翻译的。
+E|überzeugen|von|D|Sie hat mich von ihrer Idee überzeugt.|她让我相信了她的想法。
+E|überzeugen|von|D|Wie kann ich meine Eltern davon überzeugen?|我怎样才能说服我父母？
+E|überzeugen|von|D|Der Verkäufer konnte uns nicht von dem Produkt überzeugen.|推销员没能让我们认可这个产品。
+E|überzeugt sein|von|D|Ich bin von seiner Unschuld überzeugt.|我确信他是无辜的。
+E|überzeugt sein|von|D|Die Trainerin ist von ihrem Team überzeugt.|教练对她的队伍充满信心。
+E|überzeugt sein|von|D|Warst du wirklich davon überzeugt?|你当时真的确信这一点吗？
+# --- New headwords: h ---
+R|haften|für|A|to be liable for|对……负责任，担保|für den Schaden haften|对损失负责|B2
+E|haften|für|A|Eltern haften für ihre Kinder.|父母要为孩子承担责任。
+E|haften|für|A|Wir haften nicht für Garderobe.|衣物丢失本店概不负责。
+E|haften|für|A|Wer haftet eigentlich für den Unfall?|这起事故到底由谁负责？
+R|hängen|an|D|to be attached to|依恋，舍不得|an der alten Heimat hängen|眷恋故乡|B1
+E|hängen|an|D|Ich hänge sehr an diesem alten Pullover.|我非常舍不得这件旧毛衣。
+E|hängen|an|D|Die Großmutter hing an ihrem Garten.|祖母对她的花园有很深的感情。
+E|hängen|an|D|Er hängt noch immer an seiner Ex-Freundin.|他仍然对前女友念念不忘。
+R|sich hineinversetzen|in|A|to put oneself in someone's position|设身处地为……着想|sich in die Lage anderer hineinversetzen|设身处地为他人着想|B2
+E|sich hineinversetzen|in|A|Versuch doch mal, dich in meine Situation hineinzuversetzen.|你试着站在我的角度想一想。
+E|sich hineinversetzen|in|A|Gute Schauspieler können sich in jede Rolle hineinversetzen.|好演员能融入任何角色。
+E|sich hineinversetzen|in|A|Ich kann mich gut in ihn hineinversetzen.|我很能体会他的感受。
+R|hinzufügen|zu|D|to add to|添加到……|Salz zur Suppe hinzufügen|往汤里加盐|B1
+E|hinzufügen|zu|D|Fügen Sie zum Schluss etwas Zucker zum Teig hinzu.|最后往面团里加点糖。
+E|hinzufügen|zu|D|Ich habe dich zur Gruppe hinzugefügt.|我把你加进群里了。
+E|hinzufügen|zu|D|Dazu möchte ich noch etwas hinzufügen.|对此我还想补充一点。
+R|sich heraushalten|aus|D|to stay out of|不介入，置身事外|sich aus dem Streit heraushalten|不掺和争吵|B2
+E|sich heraushalten|aus|D|Halt dich bitte aus meinen Angelegenheiten heraus!|请别插手我的事！
+E|sich heraushalten|aus|D|Die Nachbarn haben sich aus dem Konflikt herausgehalten.|邻居们在这场冲突中置身事外。
+E|sich heraushalten|aus|D|Ich möchte mich aus der Politik heraushalten.|我不想卷入政治。
+R|hinarbeiten|auf|A|to work towards|朝着……努力|auf ein Ziel hinarbeiten|朝着目标努力|B2
+E|hinarbeiten|auf|A|Wir arbeiten auf die Eröffnung im Mai hin.|我们正为五月的开业而努力。
+E|hinarbeiten|auf|A|Sie hat jahrelang auf diesen Moment hingearbeitet.|她为这一刻努力了多年。
+E|hinarbeiten|auf|A|Die Mannschaft arbeitet auf die Meisterschaft hin.|球队正朝着夺冠的目标努力。
+R|hereinfallen|auf|A|to fall for (a trick)|上……的当|auf einen Trick hereinfallen|上了圈套|B2
+E|hereinfallen|auf|A|Viele Rentner fallen auf solche Anrufe herein.|很多退休老人都会上这种电话的当。
+E|hereinfallen|auf|A|Ich bin auf seine Lügen hereingefallen.|我被他的谎言骗了。
+E|hereinfallen|auf|A|Fall bloß nicht auf diese Werbung herein!|可千万别被这广告骗了！
+R|hervorgehen|aus|D|to emerge from, to be evident from|从……中得出，产生于|aus dem Bericht hervorgehen|从报告中可以看出|C1
+E|hervorgehen|aus|D|Aus dem Brief geht hervor, dass er krank war.|从信中可以看出，他当时生病了。
+E|hervorgehen|aus|D|Die Partei ging als Siegerin aus der Wahl hervor.|该党在选举中胜出。
+E|hervorgehen|aus|D|Aus der Ehe gingen drei Kinder hervor.|这段婚姻育有三个孩子。
+R|Hunger haben|auf|A|to feel like eating|想吃……|Hunger auf Pizza haben|想吃披萨|A2
+E|Hunger haben|auf|A|Ich habe total Hunger auf Pommes.|我特别想吃薯条。
+E|Hunger haben|auf|A|Hast du Hunger auf etwas Süßes?|你想吃点甜的吗？
+E|Hunger haben|auf|A|Nach dem Sport hatten wir Hunger auf ein großes Frühstück.|运动后我们想吃一顿丰盛的早餐。
+R|höflich sein|zu|D|to be polite to|对……有礼貌|zu den Gästen höflich sein|对客人有礼貌|A2
+E|höflich sein|zu|D|Sei bitte höflich zu deiner Tante!|对你姑姑要有礼貌！
+E|höflich sein|zu|D|Der Kellner war sehr höflich zu uns.|服务员对我们很有礼貌。
+E|höflich sein|zu|D|Man sollte auch zu Fremden höflich sein.|对陌生人也应该有礼貌。
+R|Heimweh haben|nach|D|to be homesick for|思念（故乡等）|Heimweh nach der Familie haben|想家|B1
+E|Heimweh haben|nach|D|Im ersten Semester hatte ich oft Heimweh nach meinen Eltern.|第一学期我经常想念父母。
+E|Heimweh haben|nach|D|Sie hat Heimweh nach Italien.|她思念意大利。
+E|Heimweh haben|nach|D|Hast du manchmal Heimweh nach deiner Heimatstadt?|你有时会想念家乡吗？
+R|informiert sein|über|A|to be informed about|了解……情况|über die Lage informiert sein|了解形势|B1
+E|informiert sein|über|A|Sind Sie über die neuen Regeln informiert?|您了解新规定吗？
+E|informiert sein|über|A|Die Presse war schon über den Rücktritt informiert.|媒体已经得知辞职的消息了。
+E|informiert sein|über|A|Ich bin darüber leider nicht informiert.|很遗憾，这件事我不清楚。
+R|interessant sein|für|A|to be interesting for|对……来说有意思，对……有吸引力|für Touristen interessant sein|对游客有吸引力|A2
+E|interessant sein|für|A|Das Museum ist auch für Kinder interessant.|这个博物馆对孩子来说也很有意思。
+E|interessant sein|für|A|Diese Stelle ist für mich nicht interessant.|这个职位对我没什么吸引力。
+E|interessant sein|für|A|Der Artikel könnte für dich interessant sein.|这篇文章你可能会感兴趣。
+R|sich integrieren|in|A|to integrate into|融入……|sich in die Gesellschaft integrieren|融入社会|B2
+E|sich integrieren|in|A|Die neue Kollegin hat sich schnell ins Team integriert.|新同事很快就融入了团队。
+E|sich integrieren|in|A|Es ist nicht leicht, sich in eine fremde Kultur zu integrieren.|融入陌生的文化并不容易。
+E|sich integrieren|in|A|Kinder integrieren sich oft leichter in die Schule als Erwachsene in den Beruf.|孩子融入学校往往比成年人融入职场更容易。
+R|impfen|gegen|A|to vaccinate against|接种……疫苗|gegen Grippe impfen|接种流感疫苗|B1
+E|impfen|gegen|A|Hast du dich schon gegen Grippe impfen lassen?|你已经打流感疫苗了吗？
+E|impfen|gegen|A|Der Tierarzt hat unseren Hund gegen Tollwut geimpft.|兽医给我们的狗打了狂犬疫苗。
+E|impfen|gegen|A|Vor der Reise müssen wir uns gegen Gelbfieber impfen lassen.|旅行前我们必须接种黄热病疫苗。
+R|hungern|nach|D|to hunger for|渴望|nach Anerkennung hungern|渴望认可|C1
+E|hungern|nach|D|Viele Jugendliche hungern nach Aufmerksamkeit.|很多年轻人渴望得到关注。
+E|hungern|nach|D|Das Publikum hungerte nach neuen Ideen.|观众渴求新的创意。
+E|hungern|nach|D|Nach dem langen Winter hungern wir alle nach Sonne.|漫长的冬天过后，我们都渴望阳光。
+R|sich hingezogen fühlen|zu|D|to feel drawn to|被……吸引|sich zu einem Menschen hingezogen fühlen|被某人吸引|C1
+E|sich hingezogen fühlen|zu|D|Ich fühlte mich sofort zu ihr hingezogen.|我立刻就被她吸引了。
+E|sich hingezogen fühlen|zu|D|Schon als Kind fühlte er sich zur Musik hingezogen.|他从小就被音乐吸引。
+E|sich hingezogen fühlen|zu|D|Viele Menschen fühlen sich zum Meer hingezogen.|很多人对大海心向往之。
+R|sich herumschlagen|mit|D|to struggle with|为……伤脑筋，与……周旋|sich mit Problemen herumschlagen|为各种问题伤脑筋|B2
+E|sich herumschlagen|mit|D|Ich schlage mich seit Wochen mit dem Finanzamt herum.|我和税务局周旋了好几周。
+E|sich herumschlagen|mit|D|Sie musste sich mit einer Erkältung herumschlagen.|她不得不和感冒作斗争。
+E|sich herumschlagen|mit|D|Mit solchen Kleinigkeiten will ich mich nicht herumschlagen.|我不想为这种小事费神。
+R|hilfreich sein|für|A|to be helpful for|对……有帮助|für Anfänger hilfreich sein|对初学者有帮助|B1
+E|hilfreich sein|für|A|Deine Tipps waren sehr hilfreich für mich.|你的建议对我很有帮助。
+E|hilfreich sein|für|A|Ein Wörterbuch ist für jeden Sprachlerner hilfreich.|词典对每个学语言的人都有帮助。
+E|hilfreich sein|für|A|Diese App könnte für deine Prüfung hilfreich sein.|这个应用可能对你的考试有帮助。
+R|Hoffnung haben|auf|A|to have hope of|对……抱有希望|Hoffnung auf Besserung haben|对好转抱有希望|B1
+E|Hoffnung haben|auf|A|Die Ärzte haben noch Hoffnung auf eine Heilung.|医生们对治愈仍抱有希望。
+E|Hoffnung haben|auf|A|Wir hatten kaum noch Hoffnung auf einen Sieg.|我们对获胜几乎不抱希望了。
+E|Hoffnung haben|auf|A|Hast du noch Hoffnung auf eine Versöhnung?|你对和好还抱有希望吗？
+R|ideal sein|für|A|to be ideal for|对……来说很理想|ideal für Familien sein|非常适合家庭|B1
+E|ideal sein|für|A|Das Hotel ist ideal für Familien mit Kindern.|这家酒店非常适合带孩子的家庭。
+E|ideal sein|für|A|Das Wetter war ideal für eine Radtour.|这天气非常适合骑车出游。
+E|ideal sein|für|A|Dieser Laptop ist ideal für Studenten.|这台笔记本电脑很适合学生。
+# --- New headwords: j ---
+R|jammern|über|A|to moan about|抱怨，发牢骚|über das Wetter jammern|抱怨天气|B1
+E|jammern|über|A|Hör endlich auf, über deine Arbeit zu jammern!|别再抱怨你的工作了！
+E|jammern|über|A|Er jammert ständig über die hohen Preise.|他总是抱怨物价高。
+E|jammern|über|A|Die Kinder jammerten über den langen Weg.|孩子们抱怨路太远。
+R|jubeln|über|A|to cheer about|为……欢呼|über den Sieg jubeln|为胜利欢呼|B1
+E|jubeln|über|A|Die Fans jubelten über das späte Tor.|球迷们为那个绝杀进球欢呼。
+E|jubeln|über|A|Die Kinder jubeln über den ersten Schnee.|孩子们为初雪欢呼雀跃。
+E|jubeln|über|A|Wir haben laut über die gute Nachricht gejubelt.|我们为这个好消息大声欢呼。
+R|jonglieren|mit|D|to juggle (with)|（熟练地）摆弄，周旋于|mit Zahlen jonglieren|玩数字游戏|C1
+E|jonglieren|mit|D|Der Clown jonglierte mit fünf Bällen.|小丑同时抛接五个球。
+E|jonglieren|mit|D|Viele Eltern jonglieren täglich mit Job und Familie.|很多父母每天都要兼顾工作和家庭。
+E|jonglieren|mit|D|Der Politiker jongliert gern mit Statistiken.|这位政客喜欢玩弄统计数据。
+# --- New headwords: k ---
+R|kandidieren|für|A|to run for (office)|竞选|für das Amt des Bürgermeisters kandidieren|竞选市长|B2
+E|kandidieren|für|A|Sie kandidiert zum ersten Mal für den Stadtrat.|她首次竞选市议员。
+E|kandidieren|für|A|Er will nicht noch einmal für den Vorsitz kandidieren.|他不想再竞选主席了。
+E|kandidieren|für|A|Wer kandidiert dieses Jahr für die Präsidentschaft?|今年谁竞选总统？
+R|klopfen|an|A|to knock on|敲（门、窗等）|an die Tür klopfen|敲门|A2
+E|klopfen|an|A|Jemand klopft an die Tür.|有人在敲门。
+E|klopfen|an|A|Bitte klopfen Sie an die Tür, bevor Sie hereinkommen.|进来之前请先敲门。
+E|klopfen|an|A|Der Regen klopfte die ganze Nacht ans Fenster.|雨整夜敲打着窗户。
+R|korrespondieren|mit|D|to correspond with|与……通信|mit einer Brieffreundin korrespondieren|与笔友通信|C1
+E|korrespondieren|mit|D|Ich korrespondiere seit Jahren mit einem Freund in Kanada.|我多年来一直和加拿大的一位朋友通信。
+E|korrespondieren|mit|D|Die Firma korrespondiert hauptsächlich per E-Mail mit ihren Kunden.|公司主要通过电子邮件与客户联络。
+E|korrespondieren|mit|D|Der Dichter korrespondierte mit vielen Künstlern seiner Zeit.|这位诗人与同时代的许多艺术家有书信往来。
+R|kooperieren|mit|D|to cooperate with|与……合作|mit der Polizei kooperieren|与警方合作|B2
+E|kooperieren|mit|D|Unsere Universität kooperiert mit mehreren Firmen.|我们大学与多家公司合作。
+E|kooperieren|mit|D|Der Zeuge hat mit den Ermittlern kooperiert.|证人配合了调查人员。
+E|kooperieren|mit|D|Wir würden gern mit Ihnen kooperieren.|我们很愿意与您合作。
+R|Kritik üben|an|D|to criticise|批评……|Kritik an der Regierung üben|批评政府|B2
+E|Kritik üben|an|D|Die Opposition übt scharfe Kritik an dem Plan.|反对党严厉批评了该计划。
+E|Kritik üben|an|D|Er hat oft Kritik an seinem Chef geübt.|他经常批评他的老板。
+E|Kritik üben|an|D|Wer Kritik an anderen übt, sollte selbst ein Vorbild sein.|批评别人的人自己应该做个榜样。
+R|klarkommen|mit|D|to cope with, to get along with|应付得了，与……相处融洽|mit der neuen Software klarkommen|会用新软件|B1
+E|klarkommen|mit|D|Kommst du mit dem neuen Handy klar?|新手机你会用吗？
+E|klarkommen|mit|D|Mit meinem Mitbewohner komme ich gut klar.|我和室友相处得很好。
+E|klarkommen|mit|D|Sie ist mit der Situation nicht klargekommen.|她应付不了这种局面。
+R|kombinieren|mit|D|to combine with|与……搭配|Rot mit Weiß kombinieren|红白搭配|B1
+E|kombinieren|mit|D|Diese Hose kannst du gut mit einem weißen Hemd kombinieren.|这条裤子和白衬衫很搭。
+E|kombinieren|mit|D|Wir kombinieren den Urlaub mit einem Sprachkurs.|我们把度假和语言课程结合起来。
+E|kombinieren|mit|D|Der Koch kombiniert Fisch gern mit Früchten.|这位厨师喜欢把鱼和水果搭配在一起。
+R|kommunizieren|mit|D|to communicate with|与……沟通|mit den Kollegen kommunizieren|与同事沟通|B1
+E|kommunizieren|mit|D|Wir kommunizieren meistens per Chat mit dem Team.|我们大多通过聊天软件与团队沟通。
+E|kommunizieren|mit|D|Es fällt ihm schwer, mit seinem Vater zu kommunizieren.|他很难和父亲沟通。
+E|kommunizieren|mit|D|Der Pilot kommuniziert per Funk mit dem Tower.|飞行员通过无线电与塔台联络。
+R|konkurrieren|mit|D|to compete with|与……竞争|mit anderen Firmen konkurrieren|与其他公司竞争|B2
+E|konkurrieren|mit|D|Kleine Läden können kaum mit dem Onlinehandel konkurrieren.|小商店几乎无法与网购竞争。
+E|konkurrieren|mit|D|Als Kind hat sie immer mit ihrer älteren Schwester konkurriert.|她小时候总是和姐姐较劲。
+E|konkurrieren|mit|D|Mit diesen Preisen können wir nicht konkurrieren.|我们没法和这样的价格竞争。
+R|konkurrieren|um|A|to compete for|争夺……|um Kunden konkurrieren|争夺顾客|B2
+E|konkurrieren|um|A|Hunderte Bewerber konkurrieren um wenige Studienplätze.|数百名申请者争夺少数几个学位。
+E|konkurrieren|um|A|Die Städte konkurrieren um Touristen.|各城市都在争夺游客。
+E|konkurrieren|um|A|Die beiden Kandidaten konkurrierten um das Amt.|两位候选人竞争这一职位。
+R|Kontakt haben|zu|D|to be in contact with|与……有联系|Kontakt zu alten Freunden haben|与老朋友有联系|B1
+E|Kontakt haben|zu|D|Hast du noch Kontakt zu deinen Schulfreunden?|你和中学同学还有联系吗？
+E|Kontakt haben|zu|D|Seit dem Streit habe ich keinen Kontakt mehr zu ihm.|自从吵架后我就和他没联系了。
+E|Kontakt haben|zu|D|Die Firma hat gute Kontakte zu Partnern in Asien.|这家公司与亚洲的合作伙伴联系紧密。
+R|Kontakt aufnehmen|mit|D|to get in touch with|与……取得联系|mit dem Kundendienst Kontakt aufnehmen|联系客服|B1
+E|Kontakt aufnehmen|mit|D|Bitte nehmen Sie so bald wie möglich Kontakt mit uns auf.|请尽快与我们联系。
+E|Kontakt aufnehmen|mit|D|Ich habe schon Kontakt mit dem Vermieter aufgenommen.|我已经联系房东了。
+E|Kontakt aufnehmen|mit|D|Die Polizei nahm Kontakt mit der Familie auf.|警方与家属取得了联系。
+R|kritisch sein|gegenüber|D|to be critical of|对……持批评态度|gegenüber neuen Ideen kritisch sein|对新想法持批评态度|B2
+E|kritisch sein|gegenüber|D|Viele Bürger sind gegenüber dem Projekt kritisch.|许多市民对这个项目持批评态度。
+E|kritisch sein|gegenüber|D|Du solltest auch dir selbst gegenüber kritisch sein.|你对自己也应该有批判精神。
+E|kritisch sein|gegenüber|D|Journalisten müssen gegenüber der Macht kritisch bleiben.|记者必须对权力保持批判态度。
+R|klingeln|bei|D|to ring someone's doorbell|按……家的门铃|bei den Nachbarn klingeln|按邻居家的门铃|A2
+E|klingeln|bei|D|Ich klingle mal bei Müllers, vielleicht sind sie da.|我去按一下米勒家的门铃，也许他们在家。
+E|klingeln|bei|D|Heute Morgen hat der Postbote bei uns geklingelt.|今天早上邮递员来按我们家的门铃。
+E|klingeln|bei|D|Klingle bitte nicht so spät bei mir!|别这么晚来按我家的门铃！
+R|klug werden|aus|D|to make sense of|看懂，弄明白（某人或某事）|aus einem Menschen nicht klug werden|看不透某人|B2
+E|klug werden|aus|D|Aus diesem Mann werde ich einfach nicht klug.|我就是看不透这个男人。
+E|klug werden|aus|D|Wirst du aus der Anleitung klug?|你看得懂这份说明书吗？
+E|klug werden|aus|D|Aus ihrer Antwort bin ich nicht klug geworden.|我没弄懂她的回答是什么意思。
+R|knabbern|an|D|to nibble at, to struggle with|啃，（为难题）伤脑筋|an einem Keks knabbern|啃饼干|B2
+E|knabbern|an|D|Das Kaninchen knabbert an einer Karotte.|兔子在啃一根胡萝卜。
+E|knabbern|an|D|An dieser Aufgabe habe ich lange geknabbert.|这道题让我伤了很久的脑筋。
+E|knabbern|an|D|Er knabberte nervös an seinen Fingernägeln.|他紧张地啃着指甲。
+R|kichern|über|A|to giggle about|为……咯咯地笑|über einen Witz kichern|听了笑话咯咯笑|B1
+E|kichern|über|A|Die Mädchen kicherten über den neuen Lehrer.|女孩们对着新老师咯咯地笑。
+E|kichern|über|A|Worüber kichert ihr da hinten?|你们在后面偷笑什么？
+E|kichern|über|A|Sie kicherte über ihren eigenen Fehler.|她对自己的失误咯咯地笑了。
+# --- New headwords: l ---
+R|sich lehnen|an|A|to lean against|靠在……上|sich an die Wand lehnen|靠在墙上|B1
+E|sich lehnen|an|A|Er lehnte sich müde an die Wand.|他疲惫地靠在墙上。
+E|sich lehnen|an|A|Das Kind lehnt sich an seine Mutter.|孩子依偎在妈妈身上。
+E|sich lehnen|an|A|Bitte lehnen Sie sich nicht an die Tür!|请勿倚靠车门！
+R|sich lohnen|für|A|to be worthwhile for|对……来说值得|sich für die Firma lohnen|对公司来说划算|B1
+E|sich lohnen|für|A|Das Abo lohnt sich nur für Vielfahrer.|这种月票只对经常乘车的人划算。
+E|sich lohnen|für|A|Hat sich die Reise für dich gelohnt?|这趟旅行对你来说值得吗？
+E|sich lohnen|für|A|Für so wenig Geld lohnt sich die Mühe nicht.|为这么点钱不值得费这个劲。
+R|loben|für|A|to praise for|因……表扬|jemanden für seine Arbeit loben|表扬某人的工作|A2
+E|loben|für|A|Die Lehrerin lobte den Schüler für seinen Aufsatz.|老师表扬了这个学生的作文。
+E|loben|für|A|Mein Chef hat mich für meine Geduld gelobt.|老板表扬了我的耐心。
+E|loben|für|A|Man sollte Kinder auch für kleine Erfolge loben.|孩子取得小小的成绩也应该表扬。
+R|sich langweilen|bei|D|to be bored at/during|在……时感到无聊|sich beim Vortrag langweilen|听报告时感到无聊|B1
+E|sich langweilen|bei|D|Ich habe mich bei dem Film total gelangweilt.|看这部电影时我无聊透了。
+E|sich langweilen|bei|D|Die Kinder langweilen sich beim Einkaufen.|孩子们逛街购物时觉得很无聊。
+E|sich langweilen|bei|D|Langweilst du dich nicht bei dieser Arbeit?|干这份工作你不觉得无聊吗？
+R|sich lösen|von|D|to break away from|摆脱，脱离|sich von alten Gewohnheiten lösen|摆脱旧习惯|B2
+E|sich lösen|von|D|Mit achtzehn löste sie sich von ihren Eltern.|十八岁时她脱离了父母独立生活。
+E|sich lösen|von|D|Es fällt mir schwer, mich von der Vergangenheit zu lösen.|我很难摆脱过去。
+E|sich lösen|von|D|Ein großer Stein hat sich vom Felsen gelöst.|一块大石头从岩壁上脱落了。
+R|lenken|auf|A|to direct (attention) to|把（注意力等）引向|die Aufmerksamkeit auf ein Problem lenken|把注意力引向一个问题|B2
+E|lenken|auf|A|Der Redner lenkte das Gespräch auf ein anderes Thema.|演讲者把话题引向了另一个主题。
+E|lenken|auf|A|Die Kampagne soll die Aufmerksamkeit auf den Klimaschutz lenken.|这场宣传活动旨在引起人们对气候保护的关注。
+E|lenken|auf|A|Sie versuchte, den Verdacht auf ihren Kollegen zu lenken.|她试图把嫌疑引到同事身上。
+R|lauern|auf|A|to lie in wait for|埋伏着等待，伺机|auf eine Gelegenheit lauern|伺机而动|B2
+E|lauern|auf|A|Die Katze lauert auf die Maus.|猫在伺机捕捉老鼠。
+E|lauern|auf|A|Die Journalisten lauerten vor dem Hotel auf den Star.|记者们在酒店门口守候那位明星。
+E|lauern|auf|A|Er lauert nur auf einen Fehler von mir.|他就等着我犯错。
+R|lächeln|über|A|to smile about|对……微微一笑|über eine Bemerkung lächeln|对一句话付之一笑|B1
+E|lächeln|über|A|Sie lächelte über seine Ungeduld.|她对他的急躁报以一笑。
+E|lächeln|über|A|Heute lächle ich über meine alten Sorgen.|如今我对当年的烦恼一笑置之。
+E|lächeln|über|A|Worüber lächelst du denn so?|你在笑什么呢？
+R|liebäugeln|mit|D|to toy with (an idea)|打……的主意，对……动心|mit einem neuen Auto liebäugeln|对一辆新车动了心|C1
+E|liebäugeln|mit|D|Ich liebäugle schon lange mit einem Umzug ans Meer.|我早就想搬到海边去住。
+E|liebäugeln|mit|D|Der Verein liebäugelt mit einem neuen Trainer.|俱乐部正打算请一位新教练。
+E|liebäugeln|mit|D|Sie hat kurz mit dem Gedanken geliebäugelt, zu kündigen.|她曾一度动过辞职的念头。
+# --- New headwords: m ---
+R|mischen|mit|D|to mix with|把……与……混合|Mehl mit Wasser mischen|把面粉和水混合|B1
+E|mischen|mit|D|Mischen Sie die Butter mit dem Zucker.|把黄油和糖混合在一起。
+E|mischen|mit|D|Er mischt seinen Saft immer mit Wasser.|他总是把果汁兑上水。
+E|mischen|mit|D|In ihrem Lied mischt sie Jazz mit Volksmusik.|她在歌里把爵士乐和民间音乐融合在一起。
+R|mitmachen|bei|D|to take part in|参加，参与|bei einem Wettbewerb mitmachen|参加比赛|A2
+E|mitmachen|bei|D|Machst du bei dem Fußballturnier mit?|你参加足球锦标赛吗？
+E|mitmachen|bei|D|Ich habe letztes Jahr bei einem Kochwettbewerb mitgemacht.|我去年参加了一个烹饪比赛。
+E|mitmachen|bei|D|Bei so einem Unsinn mache ich nicht mit.|这种荒唐事我可不掺和。
+R|meckern|über|A|to grumble about|对……发牢骚|über das Essen meckern|对饭菜挑三拣四|B1
+E|meckern|über|A|Mein Vater meckert immer über die Politik.|我爸总是对政治发牢骚。
+E|meckern|über|A|Hör auf, über alles zu meckern!|别什么都抱怨！
+E|meckern|über|A|Die Gäste haben über den langsamen Service gemeckert.|客人们抱怨服务太慢。
+R|multiplizieren|mit|D|to multiply by|乘以|eine Zahl mit drei multiplizieren|把一个数乘以三|B1
+E|multiplizieren|mit|D|Multipliziere die Länge mit der Breite.|用长乘以宽。
+E|multiplizieren|mit|D|Wenn man sieben mit acht multipliziert, erhält man sechsundfünfzig.|七乘以八得五十六。
+E|multiplizieren|mit|D|Das Ergebnis wird am Ende mit zwei multipliziert.|最后把结果乘以二。
+R|motivieren|zu|D|to motivate to|激励……做某事|jemanden zum Lernen motivieren|激励某人学习|B1
+E|motivieren|zu|D|Meine Trainerin motiviert mich zu mehr Sport.|我的教练激励我多运动。
+E|motivieren|zu|D|Wie kann man Kinder zum Lesen motivieren?|怎样才能激发孩子读书的兴趣？
+E|motivieren|zu|D|Der Erfolg hat ihn zu weiteren Projekten motiviert.|成功激励他开展更多项目。
+R|Mitleid haben|mit|D|to feel sorry for|同情……|Mitleid mit den Opfern haben|同情受害者|B1
+E|Mitleid haben|mit|D|Ich habe Mitleid mit dem armen Hund.|我很同情这只可怜的狗。
+E|Mitleid haben|mit|D|Er hatte kein Mitleid mit seinen Gegnern.|他对对手毫不留情。
+E|Mitleid haben|mit|D|Du musst kein Mitleid mit mir haben.|你不必同情我。
+R|mitarbeiten|an|D|to work on, to collaborate on|参与（某项工作）|an einem Projekt mitarbeiten|参与一个项目|B1
+E|mitarbeiten|an|D|Ich arbeite an einem neuen Wörterbuch mit.|我参与编写一部新词典。
+E|mitarbeiten|an|D|Zwanzig Forscher haben an der Studie mitgearbeitet.|二十位研究人员参与了这项研究。
+E|mitarbeiten|an|D|Möchtest du an unserer Schülerzeitung mitarbeiten?|你想参与我们校报的工作吗？
+R|mitreden|bei|D|to have a say in|对……有发言权，参与讨论|bei einer Entscheidung mitreden|参与决策|B2
+E|mitreden|bei|D|Bei diesem Thema kann ich nicht mitreden.|这个话题我插不上嘴。
+E|mitreden|bei|D|Die Mitarbeiter wollen bei der Planung mitreden.|员工们希望在规划中有发言权。
+E|mitreden|bei|D|Die Kinder dürfen bei der Wahl des Urlaubsziels mitreden.|孩子们可以参与决定度假目的地。
+R|Mühe haben|mit|D|to have difficulty with|在……方面有困难|Mühe mit der Grammatik haben|语法学得吃力|B1
+E|Mühe haben|mit|D|Viele Schüler haben Mühe mit Mathematik.|很多学生学数学很吃力。
+E|Mühe haben|mit|D|Anfangs hatte ich Mühe mit dem Dialekt.|起初我听方言很吃力。
+E|Mühe haben|mit|D|Mein Opa hat Mühe mit dem Smartphone.|我爷爷用智能手机很费劲。
+R|Macht haben|über|A|to have power over|对……有支配力|Macht über andere haben|有支配他人的权力|B2
+E|Macht haben|über|A|Niemand hat Macht über meine Gedanken.|没人能控制我的思想。
+E|Macht haben|über|A|Die Angst hatte keine Macht mehr über sie.|恐惧再也控制不了她了。
+E|Macht haben|über|A|Früher hatte die Kirche große Macht über die Menschen.|过去教会对人们有很大的支配力。
+R|Mut haben|zu|D|to have the courage for|有做……的勇气|den Mut zur Wahrheit haben|有说真话的勇气|B2
+E|Mut haben|zu|D|Er hatte nicht den Mut zu einer Entschuldigung.|他没有道歉的勇气。
+E|Mut haben|zu|D|Wir sollten mehr Mut zur Veränderung haben.|我们应该更有勇气去改变。
+E|Mut haben|zu|D|Hast du den Mut zu einem Neuanfang?|你有重新开始的勇气吗？
+R|münden|in|A|to flow into, to result in|流入，最终导致|in die Nordsee münden|注入北海|B2
+E|münden|in|A|Der Rhein mündet in die Nordsee.|莱茵河注入北海。
+E|münden|in|A|Die Diskussion mündete in einen heftigen Streit.|讨论最后演变成激烈的争吵。
+E|münden|in|A|Diese kleine Straße mündet in die Hauptstraße.|这条小路通往主干道。
+# --- New headwords: n ---
+R|nachfragen|bei|D|to inquire with|向……询问|beim Kundendienst nachfragen|向客服询问|B1
+E|nachfragen|bei|D|Ich frage mal bei der Rezeption nach.|我去问问前台。
+E|nachfragen|bei|D|Hast du schon beim Arzt nachgefragt?|你问过医生了吗？
+E|nachfragen|bei|D|Sie fragte bei der Bank nach, ob das Geld angekommen war.|她向银行询问钱是否已经到账。
+R|nörgeln|an|D|to carp at, to nitpick|对……挑刺|an allem nörgeln|对什么都挑刺|B2
+E|nörgeln|an|D|Er nörgelt ständig an meinem Essen.|他总是对我做的饭挑毛病。
+E|nörgeln|an|D|Hör auf, an deiner Schwester zu nörgeln!|别再挑你妹妹的刺了！
+E|nörgeln|an|D|Die Kritiker nörgelten an der Länge des Films.|影评人对电影的片长颇有微词。
+R|neidisch sein|auf|A|to be envious of|嫉妒……|auf den Erfolg anderer neidisch sein|嫉妒别人的成功|B1
+E|neidisch sein|auf|A|Ich bin ein bisschen neidisch auf deinen Urlaub.|我有点羡慕你的假期。
+E|neidisch sein|auf|A|Sie war neidisch auf ihre Schwester.|她嫉妒她的姐姐。
+E|neidisch sein|auf|A|Warum bist du neidisch auf ihn?|你为什么嫉妒他？
+R|nervös sein|vor|D|to be nervous before|在……之前紧张|vor der Prüfung nervös sein|考前紧张|A2
+E|nervös sein|vor|D|Vor dem Vorstellungsgespräch war ich sehr nervös.|面试前我非常紧张。
+E|nervös sein|vor|D|Bist du nervös vor deinem ersten Konzert?|你第一次开音乐会紧张吗？
+E|nervös sein|vor|D|Die Schauspieler sind vor der Premiere immer nervös.|演员们在首演前总是很紧张。
+R|nützlich sein|für|A|to be useful for|对……有用|für die Arbeit nützlich sein|对工作有用|A2
+E|nützlich sein|für|A|Diese Informationen sind sehr nützlich für uns.|这些信息对我们很有用。
+E|nützlich sein|für|A|Ein Taschenmesser ist für Wanderer nützlich.|小刀对徒步者很有用。
+E|nützlich sein|für|A|Englischkenntnisse sind für fast jeden Beruf nützlich.|英语知识几乎对每种职业都有用。
+R|notwendig sein|für|A|to be necessary for|对……是必要的|für den Erfolg notwendig sein|是成功的必要条件|B1
+E|notwendig sein|für|A|Ein Visum ist für diese Reise notwendig.|这次旅行需要签证。
+E|notwendig sein|für|A|Genug Schlaf ist für die Gesundheit notwendig.|充足的睡眠对健康是必需的。
+E|notwendig sein|für|A|Ist ein Führerschein für die Stelle notwendig?|这个职位需要驾照吗？
+R|nippen|an|D|to sip at|抿一口|am Wein nippen|抿一口葡萄酒|B2
+E|nippen|an|D|Sie nippte vorsichtig an dem heißen Tee.|她小心地抿了一口热茶。
+E|nippen|an|D|Er hat nur kurz an seinem Glas genippt.|他只是端起杯子抿了一小口。
+E|nippen|an|D|Die Großmutter nippt am Sonntag gern an einem Likör.|奶奶星期天喜欢抿一点利口酒。
+# --- New headwords: o ---
+R|sich öffnen|für|A|to open up to|对……敞开心扉，向……开放|sich für neue Erfahrungen öffnen|对新体验敞开心扉|B2
+E|sich öffnen|für|A|Das Land hat sich für ausländische Investoren geöffnet.|这个国家向外国投资者开放了。
+E|sich öffnen|für|A|Langsam öffnet er sich für eine neue Beziehung.|他渐渐愿意开始一段新感情。
+E|sich öffnen|für|A|Die Schule will sich stärker für die Eltern öffnen.|学校希望对家长更加开放。
+R|offen sein|für|A|to be open to|对……持开放态度|für Vorschläge offen sein|乐于接受建议|B1
+E|offen sein|für|A|Wir sind offen für alle Ideen.|我们对各种想法都持开放态度。
+E|offen sein|für|A|Bist du offen für eine Fernbeziehung?|你能接受异地恋吗？
+E|offen sein|für|A|Meine Oma ist erstaunlich offen für Neues.|我奶奶对新事物出奇地开放。
+R|opfern|für|A|to sacrifice for|为……牺牲|seine Freizeit für die Familie opfern|为家庭牺牲空闲时间|B2
+E|opfern|für|A|Sie hat ihre Karriere für die Kinder geopfert.|她为了孩子牺牲了事业。
+E|opfern|für|A|Ich opfere doch nicht mein Wochenende für diese Arbeit.|我才不会为这份工作牺牲周末呢。
+E|opfern|für|A|Viele Soldaten opferten ihr Leben für ihr Land.|许多士兵为国捐躯。
+R|ordnen|nach|D|to sort by|按……排列|Bücher nach dem Alphabet ordnen|按字母顺序排书|B1
+E|ordnen|nach|D|Ordnet die Wörter bitte nach ihrer Länge!|请按长度给这些单词排序！
+E|ordnen|nach|D|Die Fotos sind nach Datum geordnet.|照片是按日期排列的。
+E|ordnen|nach|D|Sie ordnet ihre Kleider nach Farben.|她按颜色整理衣服。
+R|operieren|an|D|to operate on|给……（某部位）做手术|am Knie operiert werden|膝盖做手术|B1
+E|operieren|an|D|Mein Vater wird nächste Woche am Herzen operiert.|我父亲下周要做心脏手术。
+E|operieren|an|D|Die Chirurgin hat ihn an der Hand operiert.|外科医生给他的手做了手术。
+E|operieren|an|D|Der Fußballer musste am Knie operiert werden.|这名足球运动员膝盖不得不动手术。
+# --- New headwords: p ---
+R|philosophieren|über|A|to philosophise about|对……高谈阔论，探讨|über den Sinn des Lebens philosophieren|探讨人生的意义|B2
+E|philosophieren|über|A|Nachts philosophieren wir gern über Gott und die Welt.|晚上我们喜欢天南海北地聊。
+E|philosophieren|über|A|Er philosophierte stundenlang über die Liebe.|他就爱情高谈阔论了好几个小时。
+E|philosophieren|über|A|Statt über das Problem zu philosophieren, sollten wir handeln.|与其空谈这个问题，我们不如采取行动。
+R|prüfen|auf|A|to check for|检查……是否有|auf Fehler prüfen|检查有无错误|B1
+E|prüfen|auf|A|Bitte prüfen Sie den Text noch einmal auf Tippfehler.|请再检查一遍文章有没有打字错误。
+E|prüfen|auf|A|Das Wasser wird regelmäßig auf Bakterien geprüft.|水会定期检测是否含有细菌。
+E|prüfen|auf|A|Der Mechaniker prüfte die Bremsen auf ihre Sicherheit.|技工检查了刹车是否安全。
+R|prahlen|mit|D|to boast about|炫耀……|mit seinem Geld prahlen|炫富|B2
+E|prahlen|mit|D|Er prahlt ständig mit seinem neuen Auto.|他总是炫耀他的新车。
+E|prahlen|mit|D|Sie prahlte mit ihren guten Noten.|她炫耀自己的好成绩。
+E|prahlen|mit|D|Womit prahlt er denn diesmal?|他这次又在炫耀什么？
+R|sich prügeln|mit|D|to fight with|和……打架|sich mit dem Nachbarsjungen prügeln|和邻居家的男孩打架|B1
+E|sich prügeln|mit|D|Früher hat sich mein Bruder oft mit mir geprügelt.|以前我哥哥经常和我打架。
+E|sich prügeln|mit|D|Er hat sich in der Pause mit einem Mitschüler geprügelt.|他课间和一个同学打了一架。
+E|sich prügeln|mit|D|Nach dem Spiel prügelten sich Fans mit der Polizei.|比赛结束后，球迷与警察发生了斗殴。
+R|pfeifen|auf|A|to not give a damn about|不在乎……|auf die Meinung anderer pfeifen|不在乎别人的看法|B2
+E|pfeifen|auf|A|Ich pfeife auf dein Geld.|我才不稀罕你的钱。
+E|pfeifen|auf|A|Er pfeift auf alle Regeln.|他根本不把规则放在眼里。
+E|pfeifen|auf|A|Auf solche Freunde pfeife ich.|这样的朋友我才不在乎。
+R|plaudern|über|A|to chat about|闲聊……|über alte Zeiten plaudern|聊往事|B1
+E|plaudern|über|A|Beim Kaffee plauderten wir über unsere Kinder.|喝咖啡时我们聊起了孩子。
+E|plaudern|über|A|Die beiden Freundinnen plaudern stundenlang über alles Mögliche.|两个闺蜜天南海北地聊了好几个小时。
+E|plaudern|über|A|In dem Interview plaudert die Sängerin über ihre Kindheit.|在采访中这位女歌手聊起了她的童年。
+R|promovieren|über|A|to do a doctorate on|以……为题获得博士学位|über ein historisches Thema promovieren|以历史课题做博士论文|C1
+E|promovieren|über|A|Sie promoviert über die Geschichte der Stadt.|她的博士论文研究这座城市的历史。
+E|promovieren|über|A|Er hat über deutsche Dialekte promoviert.|他以德语方言为题获得了博士学位。
+E|promovieren|über|A|Worüber möchtest du promovieren?|你想以什么为题读博士？
+R|passieren|mit|D|to happen to|（某人或某物）发生了什么事|mit dem Auto passieren|车出了事|A2
+E|passieren|mit|D|Was ist mit deinem Handy passiert?|你的手机怎么了？
+E|passieren|mit|D|Niemand weiß, was mit dem Geld passiert ist.|没人知道那笔钱去哪儿了。
+E|passieren|mit|D|Was passiert mit den alten Möbeln?|这些旧家具怎么处理？
+R|Pech haben|mit|D|to be unlucky with|在……方面倒霉|Pech mit dem Wetter haben|运气不好碰上坏天气|B1
+E|Pech haben|mit|D|Im Urlaub hatten wir Pech mit dem Wetter.|度假时我们碰上了坏天气。
+E|Pech haben|mit|D|Sie hat immer Pech mit ihren Männern.|她总是遇人不淑。
+E|Pech haben|mit|D|Mit dem Gebrauchtwagen habe ich echt Pech gehabt.|我买的这辆二手车真是倒霉透了。
+R|Probleme haben|mit|D|to have problems with|在……方面有问题|Probleme mit dem Computer haben|电脑出了问题|A2
+E|Probleme haben|mit|D|Ich habe Probleme mit meinem Drucker.|我的打印机出问题了。
+E|Probleme haben|mit|D|Hast du Probleme mit deinen Kollegen?|你和同事之间有矛盾吗？
+E|Probleme haben|mit|D|Viele Lernende haben Probleme mit den Artikeln.|很多学习者在冠词上有困难。
+R|Platz haben|für|A|to have room for|有容纳……的空间|Platz für ein Sofa haben|放得下一张沙发|A2
+E|Platz haben|für|A|In unserer Wohnung haben wir keinen Platz für ein Klavier.|我们的公寓里放不下钢琴。
+E|Platz haben|für|A|Hast du im Auto noch Platz für meinen Koffer?|你车里还放得下我的箱子吗？
+E|Platz haben|für|A|In seinem Leben hatte er keinen Platz für Hobbys.|他的生活中容不下任何爱好。
+R|pendeln|zwischen|D|to commute between|往返于……之间|zwischen zwei Städten pendeln|往返于两座城市之间|B1
+E|pendeln|zwischen|D|Er pendelt täglich zwischen Köln und Bonn.|他每天往返于科隆和波恩之间。
+E|pendeln|zwischen|D|Seit Jahren pendelt sie zwischen Wohnort und Arbeitsplatz.|多年来她一直在住处和工作地之间通勤。
+E|pendeln|zwischen|D|Die Stimmung pendelte zwischen Hoffnung und Angst.|情绪在希望与恐惧之间摇摆。
+# --- New headwords: q ---
+R|sich quälen|mit|D|to struggle with|为……受折磨，费力应付|sich mit den Hausaufgaben quälen|费劲地做作业|B2
+E|sich quälen|mit|D|Er quält sich seit Tagen mit einer Grippe.|他被流感折磨了好几天。
+E|sich quälen|mit|D|Ich habe mich lange mit dieser Entscheidung gequält.|这个决定让我纠结了很久。
+E|sich quälen|mit|D|Die Studenten quälen sich mit der Statistik.|学生们学统计学学得很痛苦。
+R|quatschen|über|A|to chat about|闲扯……|über die Arbeit quatschen|聊工作|B1
+E|quatschen|über|A|Wir haben die ganze Nacht über Gott und die Welt gequatscht.|我们天南海北地聊了一整夜。
+E|quatschen|über|A|Die Kollegen quatschen schon wieder über den Chef.|同事们又在议论老板了。
+E|quatschen|über|A|Lass uns später über den Urlaub quatschen.|我们以后再聊度假的事吧。
+R|sich qualifizieren|für|A|to qualify for|获得……资格|sich für das Finale qualifizieren|晋级决赛|B2
+E|sich qualifizieren|für|A|Die Mannschaft hat sich für die Weltmeisterschaft qualifiziert.|这支球队获得了世界杯参赛资格。
+E|sich qualifizieren|für|A|Mit diesem Kurs qualifizierst du dich für eine bessere Stelle.|上了这门课你就能胜任更好的职位。
+E|sich qualifizieren|für|A|Sie konnte sich knapp für den Endlauf qualifizieren.|她以微弱优势晋级决赛。
+# --- New headwords: r ---
+R|reichen|für|A|to be enough for|够……用|für alle reichen|够大家用|A2
+E|reichen|für|A|Der Kuchen reicht für zehn Personen.|这个蛋糕够十个人吃。
+E|reichen|für|A|Mein Gehalt reicht kaum für die Miete.|我的工资几乎不够付房租。
+E|reichen|für|A|Das Geld hat nicht für einen Urlaub gereicht.|钱不够去度假。
+R|sich revanchieren|für|A|to return the favour for|回报……（善意或恶意）|sich für die Einladung revanchieren|回请|B2
+E|sich revanchieren|für|A|Ich möchte mich für deine Hilfe revanchieren.|我想报答你的帮助。
+E|sich revanchieren|für|A|Wie kann ich mich dafür revanchieren?|我该怎么回报你呢？
+E|sich revanchieren|für|A|Nächstes Mal revanchieren wir uns für das Abendessen.|下次我们回请你们吃晚饭。
+R|sich revanchieren|bei|D|to repay someone|回报某人|sich bei den Nachbarn revanchieren|回报邻居|B2
+E|sich revanchieren|bei|D|Mit einer Flasche Wein revanchierte er sich bei seinem Kollegen.|他送了同事一瓶葡萄酒作为回报。
+E|sich revanchieren|bei|D|Ich werde mich bei dir revanchieren, versprochen.|我一定会报答你，我保证。
+E|sich revanchieren|bei|D|Die Mannschaft will sich beim Gegner für die Niederlage revanchieren.|球队想向对手报一箭之仇。
+R|richten|auf|A|to point at, to direct at|把……对准|den Blick auf jemanden richten|把目光投向某人|B2
+E|richten|auf|A|Alle Kameras waren auf den Präsidenten gerichtet.|所有摄像机都对准了总统。
+E|richten|auf|A|Sie richtete ihren Blick auf das Meer.|她把目光投向大海。
+E|richten|auf|A|Wir müssen unsere Energie auf das Wesentliche richten.|我们必须把精力集中在关键问题上。
+R|ringen|um|A|to struggle for|为……而拼争|um Fassung ringen|努力保持镇定|C1
+E|ringen|um|A|Der Patient ringt um sein Leben.|病人正在与死神搏斗。
+E|ringen|um|A|Die Politiker rangen lange um einen Kompromiss.|政界人士为达成妥协争论了很久。
+E|ringen|um|A|Nach der Nachricht rang sie um Worte.|听到这个消息，她一时不知说什么好。
+R|rütteln|an|D|to shake, to question|摇动，动摇|an der Tür rütteln|摇门|B2
+E|rütteln|an|D|Der Wind rüttelte die ganze Nacht an den Fenstern.|风整夜摇晃着窗户。
+E|rütteln|an|D|Jemand hat an der Klinke gerüttelt.|有人摇了摇门把手。
+E|rütteln|an|D|An diesem Grundsatz lassen wir nicht rütteln.|这一原则我们不容动摇。
+R|reduzieren|auf|A|to reduce to|把……减少到|die Kosten auf ein Minimum reduzieren|把成本降到最低|B1
+E|reduzieren|auf|A|Der Preis wurde auf zwanzig Euro reduziert.|价格降到了二十欧元。
+E|reduzieren|auf|A|Ich habe meinen Kaffeekonsum auf eine Tasse pro Tag reduziert.|我把喝咖啡的量减到了每天一杯。
+E|reduzieren|auf|A|Man sollte einen Menschen nicht auf sein Aussehen reduzieren.|不应该仅凭外表来看待一个人。
+R|Recht haben|mit|D|to be right about|在……上说得对|mit einer Vermutung Recht haben|猜对了|B1
+E|Recht haben|mit|D|Mit deiner Vermutung hattest du völlig Recht.|你的猜测完全正确。
+E|Recht haben|mit|D|Vielleicht hat sie mit ihrer Kritik Recht.|也许她的批评是对的。
+E|Recht haben|mit|D|Damit hast du leider Recht.|很遗憾，这一点你说得对。
+R|reservieren|für|A|to reserve for|为……预订，预留|einen Tisch für vier Personen reservieren|订一张四人桌|A2
+E|reservieren|für|A|Ich möchte einen Tisch für heute Abend reservieren.|我想订一张今晚的桌子。
+E|reservieren|für|A|Die ersten Reihen sind für Ehrengäste reserviert.|前几排是为贵宾预留的。
+E|reservieren|für|A|Hast du schon Plätze für das Konzert reserviert?|你已经订好音乐会的座位了吗？
+R|rebellieren|gegen|A|to rebel against|反抗……|gegen die Eltern rebellieren|反抗父母|B2
+E|rebellieren|gegen|A|Viele Teenager rebellieren gegen ihre Eltern.|很多青少年反抗父母。
+E|rebellieren|gegen|A|Das Volk rebellierte gegen den Diktator.|人民起来反抗独裁者。
+E|rebellieren|gegen|A|Mein Magen rebelliert gegen das fette Essen.|我的胃受不了油腻的食物。
+R|reif sein|für|A|to be ready for|对……已准备好，该……了|reif für den Urlaub sein|该休假了|B1
+E|reif sein|für|A|Nach diesem Monat bin ich reif für die Insel.|忙了这一个月，我真该去度个假了。
+E|reif sein|für|A|Ist die Gesellschaft reif für diese Veränderung?|社会是否已经准备好迎接这一变革？
+E|reif sein|für|A|Die Äpfel sind noch nicht reif für die Ernte.|苹果还没熟到可以采摘。
+R|sich rechtfertigen|für|A|to justify oneself for|为……辩解|sich für sein Verhalten rechtfertigen|为自己的行为辩解|B2
+E|sich rechtfertigen|für|A|Ich muss mich nicht für meine Entscheidung rechtfertigen.|我不必为我的决定辩解。
+E|sich rechtfertigen|für|A|Der Minister musste sich für die Fehler rechtfertigen.|部长不得不为这些错误作出解释。
+E|sich rechtfertigen|für|A|Warum rechtfertigst du dich ständig für alles?|你为什么总是为每件事辩解？
+# --- New headwords: t ---
+R|tendieren|zu|D|to tend towards|倾向于……|zu einer Lösung tendieren|倾向于某种解决方案|B2
+E|tendieren|zu|D|Ich tendiere eher zu dem blauen Kleid.|我更倾向于那条蓝色连衣裙。
+E|tendieren|zu|D|Die Mehrheit tendiert zu einer Verschiebung des Termins.|多数人倾向于推迟日期。
+E|tendieren|zu|D|Er tendiert zu Übertreibungen.|他往往喜欢夸大其词。
+R|trennen|von|D|to separate from|把……与……分开|den Müll vom Papier trennen|把垃圾与废纸分开|B1
+E|trennen|von|D|Der Fluss trennt das Dorf von der Stadt.|这条河把村庄和城市隔开。
+E|trennen|von|D|Man muss das Eigelb vom Eiweiß trennen.|要把蛋黄和蛋白分开。
+E|trennen|von|D|Im Job sollte man Privates vom Beruflichen trennen.|工作中应该公私分明。
+R|tippen|auf|A|to bet on, to guess|猜测，押注于|auf den Sieger tippen|押冠军|B2
+E|tippen|auf|A|Ich tippe auf ein Unentschieden.|我猜是平局。
+E|tippen|auf|A|Wer hat richtig auf den Gewinner getippt?|谁猜中了获胜者？
+E|tippen|auf|A|Sie tippt darauf, dass es morgen regnet.|她猜明天会下雨。
+R|treffen|auf|A|to come across, to encounter|遇到，碰到|auf Widerstand treffen|遇到阻力|B2
+E|treffen|auf|A|Im Urlaub sind wir zufällig auf alte Bekannte getroffen.|度假时我们偶然碰到了老熟人。
+E|treffen|auf|A|Der Plan traf auf heftigen Widerstand.|这个计划遭到了强烈反对。
+E|treffen|auf|A|Im Halbfinale trifft unser Team auf den Titelverteidiger.|半决赛中我们队将对阵卫冕冠军。
+R|trainieren|für|A|to train for|为……训练|für einen Marathon trainieren|为马拉松训练|B1
+E|trainieren|für|A|Mein Bruder trainiert für seinen ersten Marathon.|我哥哥在为他的第一次马拉松训练。
+E|trainieren|für|A|Die Schwimmerin hat vier Jahre für die Olympischen Spiele trainiert.|这位游泳运动员为奥运会训练了四年。
+E|trainieren|für|A|Wofür trainierst du so hart?|你这么刻苦训练是为了什么？
+R|traurig sein|über|A|to be sad about|为……难过|über den Abschied traurig sein|为离别难过|A2
+E|traurig sein|über|A|Ich bin traurig über deine Entscheidung.|你的决定让我很难过。
+E|traurig sein|über|A|Die Kinder waren traurig über den Tod ihrer Katze.|孩子们为猫的死感到难过。
+E|traurig sein|über|A|Sei nicht traurig darüber!|别为这事难过！
+R|tolerant sein|gegenüber|D|to be tolerant of|对……宽容|gegenüber anderen Meinungen tolerant sein|对不同意见持宽容态度|B2
+E|tolerant sein|gegenüber|D|Wir sollten gegenüber anderen Kulturen tolerant sein.|我们应该对其他文化持宽容态度。
+E|tolerant sein|gegenüber|D|Meine Eltern waren mir gegenüber immer sehr tolerant.|我父母一直对我很宽容。
+E|tolerant sein|gegenüber|D|Gegenüber Unpünktlichkeit ist der Chef nicht tolerant.|老板对不守时的行为可不宽容。
+R|sich trösten|mit|D|to console oneself with|用……安慰自己|sich mit Schokolade trösten|用巧克力安慰自己|B2
+E|sich trösten|mit|D|Nach der Niederlage tröstete er sich mit einem Bier.|输了之后他喝了杯啤酒安慰自己。
+E|sich trösten|mit|D|Sie tröstet sich mit dem Gedanken, dass es bald vorbei ist.|她想着这一切很快就会过去，以此安慰自己。
+E|sich trösten|mit|D|Tröste dich damit, dass du nicht allein bist.|想想你并不孤单，聊以自慰吧。
+R|Talent haben|für|A|to have a talent for|有……的天赋|Talent für Sprachen haben|有语言天赋|B1
+E|Talent haben|für|A|Deine Tochter hat echtes Talent für Musik.|你女儿真有音乐天赋。
+E|Talent haben|für|A|Ich habe leider kein Talent fürs Kochen.|可惜我没有做饭的天赋。
+E|Talent haben|für|A|Er hatte schon immer ein Talent für Zahlen.|他一向对数字很有天分。
+R|Termin haben|bei|D|to have an appointment with|在……处有预约|einen Termin beim Arzt haben|约了看医生|A1
+E|Termin haben|bei|D|Morgen habe ich einen Termin beim Zahnarzt.|明天我约了看牙医。
+E|Termin haben|bei|D|Hast du schon einen Termin bei der Ausländerbehörde?|你已经预约外管局了吗？
+E|Termin haben|bei|D|Sie hatte um zehn einen Termin bei ihrem Anwalt.|她十点约了律师。
+R|tasten|nach|D|to grope for|摸索着找……|nach dem Lichtschalter tasten|摸索着找电灯开关|B2
+E|tasten|nach|D|Im Dunkeln tastete ich nach dem Lichtschalter.|我在黑暗中摸索着找电灯开关。
+E|tasten|nach|D|Er tastete nach seiner Brille auf dem Nachttisch.|他在床头柜上摸索着找眼镜。
+E|tasten|nach|D|Die alte Frau tastet nach ihrem Stock.|老太太摸索着找她的拐杖。
+R|Trost finden|in|D|to find comfort in|在……中找到慰藉|Trost in der Musik finden|在音乐中找到慰藉|B2
+E|Trost finden|in|D|Nach dem Tod ihres Mannes fand sie Trost in der Musik.|丈夫去世后，她在音乐中找到了慰藉。
+E|Trost finden|in|D|Viele Menschen finden Trost im Glauben.|很多人在信仰中找到慰藉。
+E|Trost finden|in|D|Er fand Trost in der Arbeit.|他在工作中找到了慰藉。
+# --- New headwords: u / ü ---
+R|sich umschauen|nach|D|to look around for|四处寻找……|sich nach einem Geschenk umschauen|四处找礼物|B1
+E|sich umschauen|nach|D|Ich schaue mich gerade nach einem gebrauchten Fahrrad um.|我正在四处找一辆二手自行车。
+E|sich umschauen|nach|D|Sie hat sich schon nach einer neuen Stelle umgeschaut.|她已经在物色新工作了。
+E|sich umschauen|nach|D|Wir sollten uns rechtzeitig nach einem Babysitter umschauen.|我们应该及早找个保姆。
+R|umsteigen|in|A|to change into (transport)|换乘……|in die U-Bahn umsteigen|换乘地铁|A2
+E|umsteigen|in|A|In Frankfurt müssen Sie in den ICE umsteigen.|您得在法兰克福换乘城际特快。
+E|umsteigen|in|A|Am Bahnhof sind wir in den Bus umgestiegen.|我们在火车站换乘了公交车。
+E|umsteigen|in|A|Wo muss ich in die Linie drei umsteigen?|我要在哪里换乘三号线？
+R|umziehen|in|A|to move into|搬进……|in eine größere Wohnung umziehen|搬进更大的公寓|A2
+E|umziehen|in|A|Nächsten Monat ziehen wir in eine neue Wohnung um.|下个月我们搬进新公寓。
+E|umziehen|in|A|Meine Großeltern sind in ein Altersheim umgezogen.|我的祖父母搬进了养老院。
+E|umziehen|in|A|Die Firma zieht in ein modernes Bürogebäude um.|公司要搬进一栋现代化的办公楼。
+R|umziehen|nach|D|to move to (a city or country)|搬到（某城市或国家）|nach Berlin umziehen|搬到柏林|A2
+E|umziehen|nach|D|Wir sind vor zwei Jahren nach Hamburg umgezogen.|我们两年前搬到了汉堡。
+E|umziehen|nach|D|Warum willst du nach Spanien umziehen?|你为什么想搬到西班牙？
+E|umziehen|nach|D|Nach dem Studium zog sie nach München um.|毕业后她搬到了慕尼黑。
+R|sich umstellen|auf|A|to adjust to, to switch to|适应……，改用……|sich auf die Winterzeit umstellen|适应冬令时|B2
+E|sich umstellen|auf|A|Nach dem Umzug musste ich mich auf das kalte Klima umstellen.|搬家后我得适应寒冷的气候。
+E|sich umstellen|auf|A|Die Firma stellt sich komplett auf erneuerbare Energie um.|公司全面改用可再生能源。
+E|sich umstellen|auf|A|Es dauert, bis man sich auf den Schichtdienst umgestellt hat.|适应倒班工作需要时间。
+R|umwandeln|in|A|to convert into|把……转变为……|eine Fabrik in Wohnungen umwandeln|把工厂改建成住宅|B2
+E|umwandeln|in|A|Die alte Kirche wurde in eine Bibliothek umgewandelt.|那座老教堂被改建成了图书馆。
+E|umwandeln|in|A|Solarzellen wandeln Licht in Strom um.|太阳能电池把光转化为电。
+E|umwandeln|in|A|Er wandelte seine Wut in Energie um.|他把愤怒化为动力。
+R|unterteilen|in|A|to subdivide into|把……分成……|den Text in Abschnitte unterteilen|把文章分成段落|B2
+E|unterteilen|in|A|Das Buch ist in zwölf Kapitel unterteilt.|这本书分为十二章。
+E|unterteilen|in|A|Die Lehrerin unterteilte die Klasse in kleine Gruppen.|老师把全班分成了几个小组。
+E|unterteilen|in|A|Man kann das Jahr in vier Jahreszeiten unterteilen.|一年可以分为四个季节。
+R|überprüfen|auf|A|to check for|检查……是否有|auf Viren überprüfen|检查是否有病毒|B2
+E|überprüfen|auf|A|Überprüfe den Computer regelmäßig auf Viren!|定期检查电脑有没有病毒！
+E|überprüfen|auf|A|Die Polizei überprüfte den Ausweis auf seine Echtheit.|警察检查了证件的真伪。
+E|überprüfen|auf|A|Alle Spielsachen werden auf Schadstoffe überprüft.|所有玩具都要检测是否含有有害物质。
+R|übergehen|zu|D|to move on to|转入，转到|zum nächsten Punkt übergehen|进入下一项|B2
+E|übergehen|zu|D|Lassen Sie uns zum nächsten Thema übergehen.|我们进入下一个话题吧。
+E|übergehen|zu|D|Nach der Begrüßung ging er direkt zur Sache über.|打过招呼后，他就直奔主题。
+E|übergehen|zu|D|Viele Bauern sind zur ökologischen Landwirtschaft übergegangen.|很多农民转向了生态农业。
+R|sich überwinden|zu|D|to bring oneself to|勉强自己去做……|sich zu einer Entschuldigung überwinden|硬着头皮道歉|C1
+E|sich überwinden|zu|D|Endlich habe ich mich zum Joggen überwunden.|我终于逼自己去跑步了。
+E|sich überwinden|zu|D|Er konnte sich nicht zu einem Anruf bei ihr überwinden.|他始终没能鼓起勇气给她打电话。
+E|sich überwinden|zu|D|Ich muss mich jeden Morgen zum kalten Duschen überwinden.|我每天早上都得硬着头皮洗冷水澡。
+R|unzufrieden sein|mit|D|to be dissatisfied with|对……不满意|mit dem Ergebnis unzufrieden sein|对结果不满意|A2
+E|unzufrieden sein|mit|D|Viele Kunden sind mit dem Service unzufrieden.|很多顾客对服务不满意。
+E|unzufrieden sein|mit|D|Ich war mit meiner Leistung unzufrieden.|我对自己的表现不满意。
+E|unzufrieden sein|mit|D|Womit bist du denn unzufrieden?|你到底对什么不满意？
+R|unabhängig sein|von|D|to be independent of|不依赖……|von den Eltern unabhängig sein|不依赖父母|B1
+E|unabhängig sein|von|D|Mit achtzehn wollte ich endlich von meinen Eltern unabhängig sein.|十八岁时我终于想摆脱父母独立生活。
+E|unabhängig sein|von|D|Das Land will unabhängig von Gasimporten sein.|该国希望摆脱对天然气进口的依赖。
+E|unabhängig sein|von|D|Die Zeitung ist unabhängig von der Regierung.|这家报纸独立于政府。
+R|überrascht sein|von|D|to be surprised by|对……感到惊讶|von dem Ergebnis überrascht sein|对结果感到意外|B1
+E|überrascht sein|von|D|Ich war überrascht von seiner Reaktion.|他的反应让我很意外。
+E|überrascht sein|von|D|Die Touristen waren von der Schönheit der Stadt überrascht.|游客们对这座城市的美景感到惊讶。
+E|überrascht sein|von|D|Wir sind vom schnellen Erfolg selbst überrascht.|这么快就成功，连我们自己都感到惊讶。
+R|überrascht sein|über|A|to be surprised at|对……感到惊奇|über die Nachricht überrascht sein|对这个消息感到意外|B1
+E|überrascht sein|über|A|Alle waren überrascht über ihre Kündigung.|大家对她辞职都感到意外。
+E|überrascht sein|über|A|Er war überrascht über die vielen Glückwünsche.|他对这么多祝福感到惊喜。
+E|überrascht sein|über|A|Ich bin nicht überrascht darüber.|我对此并不意外。
+R|übertreiben|mit|D|to overdo|在……方面做过头|es mit dem Sport übertreiben|运动过度|B1
+E|übertreiben|mit|D|Übertreib es nicht mit dem Training!|训练别过度！
+E|übertreiben|mit|D|Mit dem Salz hast du es ein bisschen übertrieben.|你盐放得有点多了。
+E|übertreiben|mit|D|Sie übertreibt es manchmal mit ihrer Ordnungsliebe.|她有时候爱整洁爱得过了头。
+R|sich überzeugen|von|D|to satisfy oneself of|亲自确认……|sich von der Qualität überzeugen|亲自确认质量|B2
+E|sich überzeugen|von|D|Überzeugen Sie sich selbst von unserer Qualität!|请亲自体验我们的品质！
+E|sich überzeugen|von|D|Ich habe mich persönlich davon überzeugt, dass alles in Ordnung ist.|我亲自确认过一切都没问题。
+E|sich überzeugen|von|D|Die Inspektoren überzeugten sich vom Zustand der Brücke.|检查员亲自查看了桥梁的状况。
+R|sich umdrehen|nach|D|to turn round to look at|回头看……|sich nach einer Frau umdrehen|回头看一个女人|B1
+E|sich umdrehen|nach|D|Alle drehten sich nach dem lauten Geräusch um.|大家都循着那声巨响回过头去。
+E|sich umdrehen|nach|D|Er drehte sich nach der schönen Frau um.|他回头看那位漂亮女士。
+E|sich umdrehen|nach|D|Sie hat sich nicht einmal nach mir umgedreht.|她连头都没回看我一眼。
+R|überfordert sein|mit|D|to be overwhelmed by|应付不了……|mit der Situation überfordert sein|应付不了这种局面|B2
+E|überfordert sein|mit|D|Viele junge Eltern sind mit dem Baby überfordert.|很多年轻父母对照顾婴儿感到力不从心。
+E|überfordert sein|mit|D|Ich war mit der vielen Arbeit völlig überfordert.|这么多工作让我完全招架不住。
+E|überfordert sein|mit|D|Bist du mit dem Kurs überfordert?|这门课对你来说太难了吗？
+R|unterscheiden|zwischen|D|to distinguish between|区分……|zwischen Recht und Unrecht unterscheiden|分辨是非|B1
+E|unterscheiden|zwischen|D|Kleine Kinder können noch nicht zwischen Traum und Realität unterscheiden.|小孩子还分不清梦境和现实。
+E|unterscheiden|zwischen|D|Man muss zwischen Meinung und Tatsache unterscheiden.|必须区分观点和事实。
+E|unterscheiden|zwischen|D|Kannst du zwischen den beiden Zwillingen unterscheiden?|你能分清这对双胞胎吗？
+R|übrig haben|für|A|to have a soft spot for|对……有好感，喜欢|viel für Katzen übrig haben|很喜欢猫|B2
+E|übrig haben|für|A|Für Horrorfilme habe ich nicht viel übrig.|我不太喜欢恐怖片。
+E|übrig haben|für|A|Mein Opa hatte immer etwas für alte Autos übrig.|我爷爷一直对老爷车情有独钟。
+E|übrig haben|für|A|Sie hat nichts für Politiker übrig.|她对政客毫无好感。

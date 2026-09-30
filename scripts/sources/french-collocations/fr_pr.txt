@@ -1,0 +1,641 @@
+# French verb collocations — letters p/q/r (verb initial ignoring se / s')
+# ---- NEW verbs: p ----
+C|parier|sur|parier sur qqn/qqch|押注于；赌（某人会赢等）
+E|parier|sur|J'ai parié sur le cheval numéro sept.|我押了七号马。
+E|parier|sur|Tout le monde pariait sur sa victoire.|大家都赌他会赢。
+E|parier|sur|L'entreprise parie sur les énergies renouvelables.|这家公司把宝押在了可再生能源上。
+C|parier|avec|parier avec qqn|和某人打赌
+E|parier|avec|J'ai parié avec mon frère qu'il pleuvrait.|我和哥哥打赌说会下雨。
+E|parier|avec|Tu veux parier avec moi ?|你想跟我打个赌吗？
+C|pâtir|de|pâtir de qqch|因……受损；吃……的苦头
+E|pâtir|de|Les agriculteurs pâtissent de la sécheresse.|农民们深受干旱之苦。
+E|pâtir|de|Sa santé a pâti de ce rythme de travail.|这种工作节奏损害了他的健康。
+E|pâtir|de|Ce sont les enfants qui pâtiront de vos disputes.|吃你们吵架苦头的将是孩子们。
+C|parer|à|parer à qqch|防备；应付（意外、危险）
+E|parer|à|Il faut parer au plus pressé.|先应付最紧急的事。
+E|parer|à|Nous avons pris des provisions pour parer à toute éventualité.|我们备了些物资以防万一。
+E|parer|à|Le gouvernement doit parer à la crise énergétique.|政府必须应对能源危机。
+C|parer|de|parer qqn/qqch de qqch|用……装饰
+E|parer|de|À Noël, la ville était parée de mille lumières.|圣诞节时，城里张灯结彩。
+E|parer|de|Elle avait paré la table de fleurs blanches.|她用白花装点了餐桌。
+N|parer|à|parer à qqch = 防备、应付（危险、意外）；parer qqch de qqch = 用……装饰
+N|parer|de|parer qqch de qqch = 装饰、点缀；parer à qqch = 防备、应付
+C|pactiser|avec|pactiser avec qqn/qqch|与……妥协；与……勾结
+E|pactiser|avec|Il a refusé de pactiser avec l'ennemi.|他拒绝与敌人勾结。
+E|pactiser|avec|On ne pactise pas avec la corruption.|对腐败决不能妥协。
+C|peiner|à|peiner à faire qqch|难以做到某事；费力地做
+E|peiner|à|Le vieil homme peinait à monter l'escalier.|老人上楼梯很吃力。
+E|peiner|à|Je peine à comprendre ses explications.|我很难理解他的解释。
+E|peiner|à|L'équipe peine à trouver un nouvel entraîneur.|球队迟迟找不到新教练。
+C|pencher|pour|pencher pour qqch|倾向于（某个选择）
+E|pencher|pour|J'hésite encore, mais je penche pour la robe bleue.|我还在犹豫，不过更倾向于那条蓝裙子。
+E|pencher|pour|Les enquêteurs penchent pour la thèse de l'accident.|调查人员倾向于认为这是一场意外。
+E|pencher|pour|Pour les vacances, nous penchions plutôt pour la montagne.|说到度假，我们当时更倾向于去山里。
+C|persister|dans|persister dans qqch|坚持（错误、态度等）
+E|persister|dans|Il persiste dans son refus de parler.|他坚持不肯开口。
+E|persister|dans|Pourquoi persistes-tu dans cette erreur ?|你为什么还执迷于这个错误？
+C|persister|à|persister à faire qqch|执意做某事
+E|persister|à|Elle persiste à croire qu'il reviendra.|她始终相信他会回来。
+E|persister|à|Les voisins persistent à garer leur voiture devant chez nous.|邻居们总是执意把车停在我家门口。
+N|persister|à|persister à + 不定式 = 执意做某事；persister dans + 名词 = 坚持某种态度、错误
+N|persister|dans|persister dans + 名词 = 坚持（态度、错误）；persister à + 不定式 = 执意做某事
+C|persévérer|dans|persévérer dans qqch|在……上坚持不懈
+E|persévérer|dans|Tu dois persévérer dans tes efforts.|你要坚持努力下去。
+E|persévérer|dans|Elle a persévéré dans ses études malgré les difficultés.|尽管困难重重，她仍坚持学业。
+E|persévérer|dans|Si vous persévérez dans cette voie, vous réussirez.|如果你们沿着这条路坚持下去，就会成功。
+C|pester|contre|pester contre qqn/qqch|咒骂；抱怨
+E|pester|contre|Il pestait contre les embouteillages.|他一路骂着堵车。
+E|pester|contre|Ma mère peste contre la pluie depuis ce matin.|我妈从早上起就一直抱怨下雨。
+C|plaisanter|avec|plaisanter avec qqch|拿……当儿戏（多用于否定）
+E|plaisanter|avec|On ne plaisante pas avec la sécurité.|安全问题可不能儿戏。
+E|plaisanter|avec|Mon père ne plaisante jamais avec la ponctualité.|我父亲在守时这件事上从不马虎。
+C|plaisanter|sur|plaisanter sur qqch|就……开玩笑
+E|plaisanter|sur|Il aime plaisanter sur son propre accent.|他喜欢拿自己的口音开玩笑。
+E|plaisanter|sur|Ne plaisante pas sur ce sujet, c'est grave.|别拿这件事开玩笑，这很严重。
+C|plancher|sur|plancher sur qqch|埋头研究；忙于做（口语）
+E|plancher|sur|Les ingénieurs planchent sur un nouveau moteur.|工程师们正在埋头研发一款新发动机。
+E|plancher|sur|J'ai planché sur ce dossier tout le week-end.|整个周末我都在啃这份材料。
+C|pécher|par|pécher par qqch|犯……的毛病；失之于
+E|pécher|par|Il pèche souvent par excès de confiance.|他常常因为过于自信而犯错。
+E|pécher|par|Ce projet pèche par manque de clarté.|这个方案的毛病在于不够清晰。
+C|polémiquer|sur|polémiquer sur qqch|就……展开论战
+E|polémiquer|sur|Je ne veux pas polémiquer sur ce point.|在这一点上我不想争论。
+E|polémiquer|sur|Les journaux polémiquent sur la réforme des retraites.|各大报纸就退休改革争论不休。
+C|primer|sur|primer sur qqch|优先于；比……更重要
+E|primer|sur|La sécurité des passagers prime sur tout le reste.|乘客的安全高于一切。
+E|primer|sur|Chez lui, l'intérêt personnel prime souvent sur l'amitié.|在他看来，个人利益往往比友谊更重要。
+C|prévaloir|sur|prévaloir sur qqch|胜过；占上风
+E|prévaloir|sur|Le bon sens a fini par prévaloir sur la peur.|理智最终战胜了恐惧。
+E|prévaloir|sur|La loi nationale prévaut-elle sur les règles locales ?|国家法律是否优先于地方规定？
+C|présumer|de|présumer de qqch|高估（自己的能力等）
+E|présumer|de|J'ai trop présumé de mes forces.|我太高估自己的体力了。
+E|présumer|de|Il avait trop présumé de son influence et a perdu l'élection.|他过高估计了自己的影响力，结果落选了。
+C|prétendre|à|prétendre à qqch|有资格要求；觊觎
+E|prétendre|à|Vous pouvez prétendre à une indemnité.|您有权要求一笔赔偿。
+E|prétendre|à|Il prétend au titre de champion depuis des années.|多年来他一直觊觎冠军头衔。
+E|prétendre|à|Seuls les résidents peuvent prétendre à cette aide.|只有本地居民才有资格申请这项补助。
+C|prédisposer|à|prédisposer qqn à qqch|使某人易患；使倾向于
+E|prédisposer|à|Le tabac prédispose aux maladies du cœur.|吸烟容易引发心脏病。
+E|prédisposer|à|Rien ne le prédisposait à devenir acteur.|他原本看不出有任何当演员的苗头。
+C|prélever|sur|prélever qqch sur qqch|从……中提取；扣除
+E|prélever|sur|La banque prélève des frais sur chaque virement.|银行对每笔转账都收取手续费。
+E|prélever|sur|Le loyer est prélevé sur mon compte le premier du mois.|房租每月一号从我账户里扣除。
+C|préserver|de|préserver qqn/qqch de qqch|保护……免受
+E|préserver|de|Cette crème préserve la peau du soleil.|这种霜能保护皮肤不受日晒。
+E|préserver|de|Ses parents voulaient la préserver de la violence du monde.|她父母想让她远离世间的暴力。
+C|prouver|à|prouver qqch à qqn|向某人证明某事
+E|prouver|à|Je vais prouver à tout le monde que j'ai raison.|我要向所有人证明我是对的。
+E|prouver|à|Il a voulu prouver à son père qu'il pouvait réussir.|他想向父亲证明自己能成功。
+E|prouver|à|Elle doit prouver aux clients que son produit est fiable.|她得向客户证明自己的产品可靠。
+C|préférer|à|préférer qqch à qqch|比起……更喜欢
+E|préférer|à|Je préfère le thé au café.|比起咖啡，我更喜欢茶。
+E|préférer|à|Elle a toujours préféré la campagne à la ville.|比起城市，她一向更喜欢乡村。
+E|préférer|à|Préféreriez-vous le train à l'avion ?|比起飞机，您是否更愿意坐火车？
+C|prescrire|à|prescrire qqch à qqn|给某人开（药）；嘱咐
+E|prescrire|à|Le médecin a prescrit du repos à ma grand-mère.|医生嘱咐我奶奶要多休息。
+E|prescrire|à|Quel traitement a-t-on prescrit à votre fils ?|给您儿子开了什么治疗方案？
+C|prodiguer|à|prodiguer qqch à qqn|慷慨地给予某人（建议、照料）
+E|prodiguer|à|L'infirmière prodigue des soins aux blessés.|护士悉心照料伤员。
+E|prodiguer|à|Mon grand-père aimait prodiguer des conseils à tout le monde.|我爷爷喜欢给每个人出主意。
+C|projeter|de|projeter de faire qqch|计划做某事
+E|projeter|de|Nous projetons de partir au Canada l'été prochain.|我们计划明年夏天去加拿大。
+E|projeter|de|Ils projetaient d'ouvrir un restaurant ensemble.|他们曾打算一起开一家餐馆。
+E|projeter|de|Que projettes-tu de faire après tes études ?|你毕业后打算做什么？
+C|puiser|dans|puiser qqch dans qqch|从……中汲取
+E|puiser|dans|J'ai dû puiser dans mes économies pour payer la réparation.|我不得不动用积蓄来付修理费。
+E|puiser|dans|Cet écrivain puise son inspiration dans ses souvenirs d'enfance.|这位作家从童年回忆中汲取灵感。
+E|puiser|dans|Autrefois, on puisait l'eau dans le puits du village.|从前人们从村里的井中打水。
+C|procéder|à|procéder à qqch|进行；着手（正式用语）
+E|procéder|à|La police a procédé à plusieurs arrestations.|警方进行了多次逮捕。
+E|procéder|à|Nous allons maintenant procéder au vote.|我们现在开始投票。
+E|procéder|à|Les ouvriers procéderont aux travaux la semaine prochaine.|工人们将于下周开始施工。
+C|progresser|en|progresser en qqch|在（某科目、能力）上进步
+E|progresser|en|Tu as beaucoup progressé en français cette année.|你今年法语进步很大。
+E|progresser|en|Pour progresser en natation, il faut s'entraîner régulièrement.|要想提高游泳水平，就得经常训练。
+E|progresser|en|Ma fille progresse lentement en mathématiques.|我女儿数学进步得很慢。
+C|pourvoir|à|pourvoir à qqch|满足（需要）；负担
+E|pourvoir|à|Il travaille dur pour pourvoir aux besoins de sa famille.|他努力工作以养家糊口。
+E|pourvoir|à|L'État doit pourvoir à l'éducation de tous les enfants.|国家应当负担所有儿童的教育。
+C|pourvoir|de|pourvoir qqn/qqch de qqch|为……配备
+E|pourvoir|de|La nature l'a pourvu d'une excellente mémoire.|他天生记忆力极好。
+E|pourvoir|de|Toutes les salles sont pourvues d'un projecteur.|所有教室都配有投影仪。
+N|pourvoir|à|pourvoir à qqch = 满足、负担（需要）；pourvoir qqn de qqch = 为某人配备某物
+N|pourvoir|de|pourvoir qqn de qqch = 为……配备；pourvoir à qqch = 满足（需要）
+C|plaider|pour|plaider pour qqn/qqch|为……辩护；主张
+E|plaider|pour|L'avocat a plaidé pour son client avec passion.|律师慷慨激昂地为当事人辩护。
+E|plaider|pour|Plusieurs associations plaident pour une meilleure protection des animaux.|多个协会呼吁更好地保护动物。
+C|plaider|en|plaider en faveur de qqn/qqch|为……说情；对……有利
+E|plaider|en|Son passé irréprochable plaide en sa faveur.|他清白的过去对他很有利。
+E|plaider|en|Le ministre a plaidé en faveur d'une baisse des impôts.|部长主张减税。
+C|pendre|à|pendre à qqch|悬挂在……上
+E|pendre|à|Une vieille lampe pendait au plafond.|一盏旧灯悬挂在天花板上。
+E|pendre|à|Des pommes mûres pendent aux branches.|树枝上挂着熟透的苹果。
+E|pendre|à|Ça te pend au nez si tu continues comme ça.|你再这样下去，迟早要倒霉。
+C|parlementer|avec|parlementer avec qqn|与某人谈判；交涉
+E|parlementer|avec|Il a dû parlementer longtemps avec le gardien pour entrer.|他跟门卫交涉了很久才进去。
+E|parlementer|avec|La police parlemente avec les preneurs d'otages.|警方正在与劫持人质者谈判。
+C|patauger|dans|patauger dans qqch|在（泥水）里蹚；（喻）陷入困境
+E|patauger|dans|Les enfants pataugeaient dans les flaques d'eau.|孩子们在水坑里蹚来蹚去。
+E|patauger|dans|Je patauge complètement dans ce problème de physique.|这道物理题让我完全摸不着头脑。
+C|périr|dans|périr dans qqch|死于（灾难、事故）
+E|périr|dans|Des centaines de personnes ont péri dans le naufrage.|数百人在沉船事故中遇难。
+E|périr|dans|Son grand-père a péri dans un incendie.|他祖父死于一场火灾。
+C|planer|sur|planer sur qqn/qqch|笼罩在……上（疑云、威胁）
+E|planer|sur|Un doute plane encore sur son innocence.|他是否清白仍疑云未散。
+E|planer|sur|La menace d'une grève planait sur le pays.|罢工的阴影笼罩着全国。
+C|pâlir|de|pâlir de qqch|因……而脸色发白
+E|pâlir|de|Elle a pâli de peur en entendant ce bruit.|听到那个声音，她吓得脸色发白。
+E|pâlir|de|Il pâlissait de colère sans dire un mot.|他气得脸色发白，一言不发。
+C|papoter|avec|papoter avec qqn|和某人闲聊
+E|papoter|avec|Elle papote avec sa voisine tous les matins.|她每天早上都跟邻居闲聊。
+E|papoter|avec|On a papoté avec les autres parents devant l'école.|我们在学校门口和其他家长聊了会儿天。
+# ---- NEW verbs: q ----
+C|qualifier|de|qualifier qqn/qqch de qqch|把……称为；说……是
+E|qualifier|de|La presse a qualifié ce match d'historique.|媒体称这场比赛具有历史意义。
+E|qualifier|de|Il m'a qualifié de menteur devant tout le monde.|他当着所有人的面说我是骗子。
+E|qualifier|de|On ne peut pas qualifier cette décision de raisonnable.|这个决定可称不上合理。
+C|quémander|à|quémander qqch à qqn|向某人乞求（钱、帮助）
+E|quémander|à|Il quémandait quelques pièces aux passants.|他向路人讨几个硬币。
+E|quémander|à|Je n'aime pas quémander des faveurs à mes amis.|我不喜欢求朋友帮忙。
+C|quitter|pour|quitter qqn/qqch pour qqn/qqch|为了……而离开
+E|quitter|pour|Elle a quitté son mari pour un collègue.|她为了一个同事离开了丈夫。
+E|quitter|pour|Ils ont quitté Paris pour s'installer en Bretagne.|他们离开巴黎，搬到了布列塔尼。
+E|quitter|pour|J'ai quitté mon poste pour reprendre des études.|我辞去职务，重新回去读书。
+# ---- NEW verbs: r ----
+C|raccrocher|à|raccrocher au nez de qqn|挂断某人的电话
+E|raccrocher|à|Elle m'a raccroché au nez sans dire au revoir.|她连再见都没说就挂了我的电话。
+E|raccrocher|à|Ne me raccroche pas au nez, s'il te plaît !|拜托别挂我电话！
+C|rajouter|à|rajouter qqch à qqch|往……里再加
+E|rajouter|à|Rajoute un peu de sel à la sauce.|往酱汁里再加点盐。
+E|rajouter|à|J'ai rajouté deux noms à la liste des invités.|我在宾客名单上又添了两个名字。
+E|rajouter|à|Ne rajoute pas de stress à une situation déjà difficile.|局面已经够难了，别再添压力。
+C|rapporter|à|rapporter qqch à qqn|把……带回给某人；向某人报告；给某人带来收益
+E|rapporter|à|J'ai rapporté un petit cadeau à chacun de mes collègues.|我给每位同事都带回了一份小礼物。
+E|rapporter|à|Ce placement rapporte à ses clients cinq pour cent par an.|这项投资每年为客户带来百分之五的收益。
+E|rapporter|à|Un élève a tout rapporté au directeur.|一个学生把一切都报告给了校长。
+C|rassurer|sur|rassurer qqn sur qqch|让某人对……放心
+E|rassurer|sur|Le médecin nous a rassurés sur son état de santé.|医生让我们对他的健康状况放了心。
+E|rassurer|sur|Le directeur a voulu rassurer les employés sur l'avenir de l'usine.|厂长想让员工们对工厂的前景放心。
+C|ravitailler|en|ravitailler qqn/qqch en qqch|给……补给（物资）
+E|ravitailler|en|Des camions ravitaillent la ville en eau potable.|卡车为城市运送饮用水。
+E|ravitailler|en|L'armée était ravitaillée en munitions par avion.|军队靠飞机补给弹药。
+C|recourir|à|recourir à qqn/qqch|求助于；诉诸
+E|recourir|à|Nous avons dû recourir à un avocat.|我们不得不求助于律师。
+E|recourir|à|Il ne faut recourir à la force qu'en dernier ressort.|只有在万不得已时才能诉诸武力。
+E|recourir|à|De plus en plus d'élèves recourent à l'intelligence artificielle.|越来越多的学生借助人工智能。
+C|reconnaître|à|reconnaître qqn/qqch à qqch|凭……认出某人／某物
+E|reconnaître|à|Je l'ai reconnu à sa voix.|我听声音认出了他。
+E|reconnaître|à|On reconnaît un bon melon à son parfum.|好的甜瓜闻香味就能认出来。
+E|reconnaître|à|Tu la reconnaîtras facilement à son chapeau rouge.|凭她的红帽子，你很容易就能认出她。
+C|redoubler|de|redoubler de qqch|加倍（努力、小心等）
+E|redoubler|de|Il faut redoubler de prudence sur les routes verglacées.|在结冰的路上要加倍小心。
+E|redoubler|de|Avant l'examen, elle a redoublé d'efforts.|考试前她加倍努力。
+E|redoubler|de|La pluie redoublait de violence.|雨越下越猛。
+C|redouter|de|redouter de faire qqch|害怕做某事
+E|redouter|de|Je redoute de lui annoncer la nouvelle.|我怕把这个消息告诉他。
+E|redouter|de|Beaucoup de gens redoutent de prendre l'avion.|很多人害怕坐飞机。
+C|régner|sur|régner sur qqn/qqch|统治；支配
+E|régner|sur|Ce roi a régné sur le pays pendant quarante ans.|这位国王统治了这个国家四十年。
+E|régner|sur|Elle règne sur la cuisine comme sur un royaume.|她把厨房当作自己的王国来掌管。
+C|rejaillir|sur|rejaillir sur qqn|波及某人；影响到（荣誉、丑闻）
+E|rejaillir|sur|Le scandale a rejailli sur toute sa famille.|丑闻波及了他全家。
+E|rejaillir|sur|Son succès rejaillit sur toute l'équipe.|他的成功也给整个团队增了光。
+C|relier|à|relier qqch à qqch|把……连接到……
+E|relier|à|Un pont relie l'île au continent.|一座桥把岛屿和大陆连接起来。
+E|relier|à|Reliez l'imprimante à l'ordinateur avec ce câble.|用这根线把打印机连到电脑上。
+E|relier|à|La police a relié ce vol à une bande organisée.|警方把这起盗窃案与一个犯罪团伙联系了起来。
+C|reléguer|à|reléguer qqn/qqch à qqch|把……贬到（次要位置）
+E|reléguer|à|Ce projet a été relégué au second plan.|这个项目被放到了次要位置。
+E|reléguer|à|L'ancien directeur a été relégué à un poste sans importance.|前任主任被贬到了一个无足轻重的职位。
+C|rembourser|à|rembourser qqch à qqn|把（钱）还给某人；给某人退款
+E|rembourser|à|Je rembourserai cet argent à mes parents dès que possible.|我会尽快把这笔钱还给父母。
+E|rembourser|à|La compagnie a remboursé les billets aux passagers.|航空公司给乘客退了票款。
+C|renchérir|sur|renchérir sur qqch|在……基础上进一步加码
+E|renchérir|sur|Son frère a aussitôt renchéri sur ses critiques.|他弟弟马上在他的批评上又加了几句。
+E|renchérir|sur|Chaque candidat renchérit sur les promesses de l'autre.|每位候选人都在对方的承诺上层层加码。
+C|renâcler|à|renâcler à faire qqch|不情愿做某事
+E|renâcler|à|Les enfants renâclent à faire leurs devoirs.|孩子们不情愿写作业。
+E|renâcler|à|L'entreprise renâcle à augmenter les salaires.|公司不愿涨工资。
+C|rechigner|à|rechigner à faire qqch|磨磨蹭蹭不肯做某事
+E|rechigner|à|Il rechigne toujours à ranger sa chambre.|他总是不肯收拾房间。
+E|rechigner|à|Mes collègues ont rechigné à travailler le dimanche.|同事们不太愿意周日上班。
+C|renouer|avec|renouer avec qqn/qqch|与……重修旧好；恢复
+E|renouer|avec|Après dix ans de silence, il a renoué avec son père.|沉默了十年后，他与父亲重归于好。
+E|renouer|avec|L'équipe a renoué avec la victoire samedi.|球队周六重新尝到了胜利的滋味。
+E|renouer|avec|Ce village renoue avec ses anciennes traditions.|这个村子正在恢复它古老的传统。
+C|renvoyer|de|renvoyer qqn de qqch|把某人开除出（学校、公司）
+E|renvoyer|de|Il a été renvoyé du lycée pour mauvaise conduite.|他因品行不端被高中开除了。
+E|renvoyer|de|Si tu continues comme ça, on va te renvoyer de l'entreprise.|你再这样下去，会被公司辞退的。
+C|renvoyer|à|renvoyer qqn/qqch à qqch|推迟到；让某人参阅
+E|renvoyer|à|Le procès a été renvoyé au mois prochain.|审判被推迟到了下个月。
+E|renvoyer|à|Je vous renvoie à la page douze du manuel.|请参阅手册第十二页。
+N|renvoyer|de|renvoyer qqn de qqch = 开除、辞退；renvoyer qqch à = 推迟到、让人参阅
+N|renvoyer|à|renvoyer qqch à = 推迟到；renvoyer qqn à = 让某人参阅；renvoyer qqn de = 开除
+C|répartir|entre|répartir qqch entre qqn|在……之间分配
+E|répartir|entre|Le travail a été réparti entre trois équipes.|工作被分给了三个小组。
+E|répartir|entre|Répartissez les bonbons entre les enfants.|把糖果分给孩子们。
+C|répartir|en|répartir qqn/qqch en qqch|把……分成（若干组）
+E|répartir|en|Le professeur a réparti la classe en petits groupes.|老师把全班分成了几个小组。
+E|répartir|en|Les exercices sont répartis en quatre niveaux.|练习分成四个难度等级。
+N|répartir|entre|répartir qqch entre + 人 = 在……之间分配；répartir qqch en + 份数 = 分成若干部分
+N|répartir|en|répartir qqch en + 份数 = 分成若干部分；répartir qqch entre + 人 = 在……之间分配
+C|repenser|à|repenser à qqn/qqch|回想起；重新考虑
+E|repenser|à|Je repense souvent à nos vacances en Italie.|我常常回想起我们在意大利的假期。
+E|repenser|à|En repensant à cette soirée, elle a souri.|想起那个晚上，她笑了。
+E|repenser|à|Repense à ma proposition avant de répondre.|回复之前再考虑一下我的提议。
+C|répliquer|à|répliquer à qqn/qqch|反驳；回击
+E|répliquer|à|Il n'a pas su quoi répliquer à cette accusation.|面对这项指控，他不知道如何反驳。
+E|répliquer|à|Ne réplique pas à ta mère sur ce ton !|别用这种语气跟你妈顶嘴！
+E|répliquer|à|L'armée a répliqué à l'attaque dans la nuit.|军队当夜就对袭击进行了反击。
+C|repousser|à|repousser qqch à qqch|把……推迟到
+E|repousser|à|La réunion est repoussée à jeudi.|会议推迟到周四。
+E|repousser|à|Ils ont repoussé leur mariage à l'année prochaine.|他们把婚礼推迟到了明年。
+E|repousser|à|Ne repousse pas toujours tout au dernier moment.|别总把什么事都拖到最后一刻。
+C|répugner|à|répugner à faire qqch|厌恶做某事；不愿做
+E|répugner|à|Je répugne à mentir, même pour rendre service.|即使是为了帮忙，我也不愿撒谎。
+E|répugner|à|Elle répugnait à demander de l'aide.|她很不愿意求人帮忙。
+C|résulter|de|résulter de qqch|由……产生；源于
+E|résulter|de|Cet accident résulte d'une erreur humaine.|这起事故是人为失误造成的。
+E|résulter|de|Les dégâts résultant de la tempête sont considérables.|暴风雨造成的损失相当大。
+E|résulter|de|Il résulte de l'enquête que personne n'était responsable.|调查结果表明没有人应负责任。
+C|retomber|sur|retomber sur qqn/qqch|落到某人头上；又碰到（责任等）
+E|retomber|sur|Comme toujours, tout le travail retombe sur moi.|和往常一样，所有的活儿都落到了我头上。
+E|retomber|sur|Le chat est retombé sur ses pattes.|猫稳稳地四脚着地。
+E|retomber|sur|En rangeant, je suis retombé sur de vieilles photos.|整理东西时，我又翻到了一些老照片。
+C|retomber|dans|retomber dans qqch|重新陷入（坏习惯、状态）
+E|retomber|dans|Il a peur de retomber dans ses anciennes habitudes.|他怕重拾旧习。
+E|retomber|dans|Après cette nouvelle, elle est retombée dans la tristesse.|得知这个消息后，她又陷入了悲伤。
+C|retrancher|de|retrancher qqch de qqch|从……中减去；删去
+E|retrancher|de|Retranchez dix de ce nombre.|从这个数中减去十。
+E|retrancher|de|On a retranché plusieurs scènes du film.|影片中删去了好几个场景。
+C|riposter|à|riposter à qqch|回击；反驳（立即）
+E|riposter|à|Elle a riposté à ses moqueries par un sourire.|她用微笑回应了他的嘲弄。
+E|riposter|à|Le gardien a riposté à l'attaque sans hésiter.|门卫毫不犹豫地进行了反击。
+C|rivaliser|avec|rivaliser avec qqn/qqch|与……较量；可与……媲美
+E|rivaliser|avec|Ce petit restaurant peut rivaliser avec les plus grands.|这家小餐馆可以与最好的餐厅媲美。
+E|rivaliser|avec|Personne ne peut rivaliser avec elle au tennis.|打网球没人比得过她。
+E|rivaliser|avec|Les deux frères rivalisaient avec leurs cousins en tout.|两兄弟事事都要和表兄弟们比个高下。
+C|rougir|de|rougir de qqch|因……而脸红；以……为耻
+E|rougir|de|Elle a rougi de plaisir quand on l'a félicitée.|受到称赞时，她高兴得脸都红了。
+E|rougir|de|Tu n'as pas à rougir de tes origines.|你不必为自己的出身感到羞愧。
+E|rougir|de|Le petit garçon rougissait de timidité.|小男孩害羞得脸红了。
+C|ruisseler|de|ruisseler de qqch|淌着（汗水、雨水等）
+E|ruisseler|de|Après la course, il ruisselait de sueur.|跑完步后，他汗流浃背。
+E|ruisseler|de|Les vitres ruisselaient de pluie.|窗玻璃上雨水直流。
+C|rédiger|en|rédiger qqch en qqch|用（某种语言）撰写
+E|rédiger|en|Le contrat est rédigé en anglais et en français.|合同用英法两种语言写成。
+E|rédiger|en|Rédigez votre lettre de motivation en français.|请用法语写求职信。
+C|reparler|de|reparler de qqch|再谈；重提
+E|reparler|de|Nous reparlerons de ce problème demain.|我们明天再谈这个问题。
+E|reparler|de|Il n'a jamais voulu reparler de son accident.|他再也不愿提起他的那次事故。
+E|reparler|de|Reparlons de tes projets quand tu auras fini tes examens.|等你考完试，我们再聊聊你的计划。
+C|réclamer|à|réclamer qqch à qqn|向某人索要
+E|réclamer|à|Le propriétaire réclame trois mois de loyer à son locataire.|房东向房客索要三个月的房租。
+E|réclamer|à|Les enfants réclamaient des bonbons à leur grand-mère.|孩子们缠着奶奶要糖吃。
+C|révéler|à|révéler qqch à qqn|向某人透露
+E|révéler|à|Il a révélé à la presse le nom du coupable.|他向媒体透露了罪犯的名字。
+E|révéler|à|Ne révèle ce code à personne.|别把这个密码透露给任何人。
+C|rattacher|à|rattacher qqch à qqch|把……归并于；与……联系起来
+E|rattacher|à|Ce village a été rattaché à la commune voisine.|这个村子被并入了邻近的市镇。
+E|rattacher|à|Plus rien ne me rattache à cette ville.|已经没有什么能把我和这座城市联系在一起了。
+C|rebondir|sur|rebondir sur qqch|借……接话；从……弹起（谈话中）
+E|rebondir|sur|Je voudrais rebondir sur ce que vous venez de dire.|我想接着您刚才的话说几句。
+E|rebondir|sur|Le ballon a rebondi sur le poteau.|球打在门柱上弹了出来。
+C|repartir|à|repartir à zéro|从零开始
+E|repartir|à|Après la faillite, il a dû repartir à zéro.|破产后，他不得不从头再来。
+E|repartir|à|Mon fichier a été effacé, je repars à zéro.|我的文件被删了，只好重新开始。
+C|repartir|de|repartir de qqch|从……再出发；离开
+E|repartir|de|Nous sommes repartis de l'hôtel à l'aube.|我们天一亮就离开酒店再次出发了。
+E|repartir|de|Il faut repartir de ce qui fonctionne déjà.|要从已经行得通的地方重新出发。
+C|ressortir|de|ressortir de qqch|从……再出来；由……得出
+E|ressortir|de|Il est ressorti du magasin les mains vides.|他两手空空地从商店里出来了。
+E|ressortir|de|Il ressort de cette étude que les jeunes lisent moins.|从这项研究可以看出，年轻人读书变少了。
+C|rayonner|de|rayonner de qqch|洋溢着（幸福、喜悦）
+E|rayonner|de|Le jour de son mariage, elle rayonnait de bonheur.|婚礼那天，她满脸幸福。
+E|rayonner|de|Son visage rayonnait de fierté.|他脸上洋溢着自豪。
+C|réviser|pour|réviser pour qqch|为（考试）复习
+E|réviser|pour|Je dois réviser pour l'examen de demain.|我得为明天的考试复习。
+E|réviser|pour|Elle a révisé pour le bac tout le mois de juin.|整个六月她都在复习备战高考。
+C|retentir|de|retentir de qqch|回荡着（声音）
+E|retentir|de|La salle retentit d'applaudissements.|大厅里掌声雷动。
+E|retentir|de|La maison retentissait des rires des enfants.|屋子里回荡着孩子们的笑声。
+C|rouspéter|contre|rouspéter contre qqn/qqch|发牢骚；抱怨（口语）
+E|rouspéter|contre|Il rouspète toujours contre les prix.|他总是抱怨东西贵。
+E|rouspéter|contre|Arrête de rouspéter contre tout le monde !|别老冲着所有人发牢骚了！
+C|râler|contre|râler contre qqn/qqch|发火；嘟囔抱怨（口语）
+E|râler|contre|Les passagers râlaient contre le retard du train.|乘客们对火车晚点怨声载道。
+E|râler|contre|Mon père râle contre le gouvernement devant la télé.|我爸对着电视骂政府。
+C|restituer|à|restituer qqch à qqn|把……归还给某人
+E|restituer|à|Le musée a restitué les œuvres volées à leur pays d'origine.|博物馆把被盗的艺术品归还给了原属国。
+E|restituer|à|Vous devez restituer les clés au propriétaire en partant.|离开时您必须把钥匙交还给房东。
+C|racheter|à|racheter qqch à qqn|从某人手里买下
+E|racheter|à|J'ai racheté sa moto à mon voisin.|我从邻居那儿买下了他的摩托车。
+E|racheter|à|Le groupe a racheté l'usine à ses anciens propriétaires.|集团从原业主手中收购了这家工厂。
+C|prédire|à|prédire qqch à qqn|向某人预言；预测某人会
+E|prédire|à|Personne n'avait prédit un tel succès à ce film.|谁也没料到这部电影会这么成功。
+E|prédire|à|Les experts prédisent une année difficile aux agriculteurs.|专家预测农民们将迎来艰难的一年。
+# ---- NEW reflexive verbs ----
+C|se rapporter|à|se rapporter à qqch|与……有关
+E|se rapporter|à|Ces documents se rapportent à l'affaire en cours.|这些文件与正在审理的案件有关。
+E|se rapporter|à|Répondez aux questions qui se rapportent au texte.|回答与课文相关的问题。
+C|se prononcer|sur|se prononcer sur qqch|就……表态
+E|se prononcer|sur|Le ministre refuse de se prononcer sur cette question.|部长拒绝就这个问题表态。
+E|se prononcer|sur|Le tribunal se prononcera sur l'affaire le mois prochain.|法院将于下月对此案作出裁决。
+C|se prononcer|pour|se prononcer pour qqch|表态支持
+E|se prononcer|pour|La majorité des habitants s'est prononcée pour le projet.|大多数居民表态支持这个项目。
+E|se prononcer|pour|Je me prononce pour une solution plus simple.|我主张采用更简单的方案。
+C|se prononcer|contre|se prononcer contre qqch|表态反对
+E|se prononcer|contre|Les syndicats se sont prononcés contre la réforme.|工会表态反对这项改革。
+E|se prononcer|contre|Deux juges se sont prononcés contre cette décision.|两名法官对这项判决投了反对票。
+C|se rapprocher|de|se rapprocher de qqn/qqch|靠近；与……关系变亲近
+E|se rapprocher|de|Rapproche-toi du feu, sinon tu vas avoir froid.|靠近火堆一点，不然你会冷的。
+E|se rapprocher|de|Depuis la mort de leur père, elle s'est rapprochée de son frère.|父亲去世后，她和哥哥变得亲近了。
+E|se rapprocher|de|Nous nous rapprochons de notre objectif.|我们正一步步接近目标。
+C|se précipiter|sur|se précipiter sur qqn/qqch|扑向；抢着去拿
+E|se précipiter|sur|Les enfants se sont précipités sur le gâteau.|孩子们一窝蜂地扑向蛋糕。
+E|se précipiter|sur|Le chien s'est précipité sur le facteur.|狗朝邮递员扑了过去。
+C|se précipiter|vers|se précipiter vers qqch|冲向
+E|se précipiter|vers|Tout le monde s'est précipité vers la sortie.|所有人都冲向出口。
+E|se précipiter|vers|Elle se précipita vers la fenêtre en entendant le bruit.|听到响声，她冲到窗前。
+C|se renseigner|sur|se renseigner sur qqn/qqch|打听；了解（情况）
+E|se renseigner|sur|Renseigne-toi sur les horaires avant de partir.|出发前先打听一下时刻表。
+E|se renseigner|sur|Je me suis renseigné sur cette école avant d'y inscrire mon fils.|给儿子报名之前，我先了解了一下这所学校。
+E|se renseigner|sur|Les recruteurs se renseignent souvent sur les candidats en ligne.|招聘人员常常在网上了解应聘者的情况。
+C|se réfugier|dans|se réfugier dans qqch|躲进；（喻）逃避到……中
+E|se réfugier|dans|Nous nous sommes réfugiés dans une grange pendant l'orage.|暴风雨时我们躲进了一个谷仓。
+E|se réfugier|dans|Après son divorce, il s'est réfugié dans le travail.|离婚后，他躲进了工作里。
+E|se réfugier|dans|Les habitants se réfugiaient dans le métro pendant les bombardements.|轰炸期间居民们躲到地铁里避难。
+C|se réfugier|chez|se réfugier chez qqn|到某人家避难
+E|se réfugier|chez|Elle s'est réfugiée chez sa sœur après la dispute.|吵架后，她跑到姐姐家去了。
+E|se réfugier|chez|Les opposants se réfugient souvent chez des amis à l'étranger.|反对派人士常常到国外友人家避难。
+C|se ruer|sur|se ruer sur qqn/qqch|蜂拥而上；扑向
+E|se ruer|sur|Les clients se sont rués sur les soldes.|顾客们蜂拥抢购打折商品。
+E|se ruer|sur|Dès l'ouverture, les fans se ruent sur les billets.|一开售，粉丝们就抢着买票。
+C|se ruer|vers|se ruer vers qqch|涌向
+E|se ruer|vers|La foule s'est ruée vers les portes du stade.|人群涌向体育场的大门。
+E|se ruer|vers|Au XIXe siècle, des milliers d'hommes se ruèrent vers l'or de Californie.|十九世纪，成千上万的人涌向加利福尼亚淘金。
+C|se passionner|pour|se passionner pour qqch|热衷于；对……着迷
+E|se passionner|pour|Mon fils se passionne pour les dinosaures.|我儿子对恐龙着了迷。
+E|se passionner|pour|Elle s'est passionnée pour la photographie à quinze ans.|她十五岁时迷上了摄影。
+E|se passionner|pour|Je ne me suis jamais passionné pour le football.|我从来没有热衷过足球。
+C|se réconcilier|avec|se réconcilier avec qqn/qqch|与某人和好；与……和解
+E|se réconcilier|avec|Il s'est enfin réconcilié avec son frère.|他终于和哥哥和好了。
+E|se réconcilier|avec|Réconcilie-toi avec elle avant qu'il ne soit trop tard.|趁现在还来得及，跟她和好吧。
+E|se réconcilier|avec|Avec le temps, elle s'est réconciliée avec son passé.|随着时间流逝，她与自己的过去和解了。
+C|se rallier|à|se rallier à qqn/qqch|归附；赞同（意见）
+E|se rallier|à|Finalement, tout le monde s'est rallié à son avis.|最后大家都赞同了他的意见。
+E|se rallier|à|Plusieurs députés se sont ralliés au nouveau parti.|几位议员加入了新政党。
+C|se retenir|de|se retenir de faire qqch|忍住不做某事
+E|se retenir|de|J'ai dû me retenir de rire.|我不得不忍住笑。
+E|se retenir|de|Elle se retenait de pleurer devant les enfants.|在孩子们面前，她强忍着不哭。
+E|se retenir|de|Retiens-toi de répondre quand tu es en colère.|生气的时候，忍着别回嘴。
+C|se plaire|à|se plaire à faire qqch|乐于做某事；以做某事为乐
+E|se plaire|à|Les petits se plaisent à imiter leurs parents.|小孩子喜欢模仿父母。
+E|se plaire|à|Il se plaît à raconter des histoires aux enfants.|他乐于给孩子们讲故事。
+E|se plaire|à|Elle se plaît à contredire tout le monde.|她就爱跟所有人唱反调。
+C|se prêter|à|se prêter à qqch|适合于；愿意配合
+E|se prêter|à|Ce temps ne se prête pas à une promenade.|这种天气不适合散步。
+E|se prêter|à|Il s'est prêté au jeu avec bonne humeur.|他很乐意地配合了这个游戏。
+E|se prêter|à|Cette salle se prête bien aux concerts.|这个大厅很适合开音乐会。
+C|se priver|de|se priver de qqch|节制；舍弃（享受）
+E|se priver|de|Elle se prive de dessert pour maigrir.|为了减肥，她不吃甜点。
+E|se priver|de|Mes parents se sont privés de tout pour nous élever.|我父母为了养大我们省吃俭用。
+E|se priver|de|Ne te prive pas de vacances, tu en as besoin.|别舍不得休假，你需要休息。
+C|se remarier|avec|se remarier avec qqn|与某人再婚
+E|se remarier|avec|Sa mère s'est remariée avec un architecte.|她母亲和一位建筑师再婚了。
+E|se remarier|avec|Il ne veut pas se remarier avec quelqu'un de plus jeune.|他不想和比自己年轻的人再婚。
+C|se révolter|contre|se révolter contre qqn/qqch|反抗；起来造反
+E|se révolter|contre|Les paysans se sont révoltés contre le seigneur.|农民们起来反抗领主。
+E|se révolter|contre|À seize ans, il se révoltait contre toute forme d'autorité.|十六岁时，他反抗任何形式的权威。
+C|se rebeller|contre|se rebeller contre qqn/qqch|反叛；叛逆
+E|se rebeller|contre|Les adolescents se rebellent souvent contre leurs parents.|青少年常常跟父母对着干。
+E|se rebeller|contre|Une partie de l'armée s'est rebellée contre le gouvernement.|一部分军队起兵反叛政府。
+C|se rabattre|sur|se rabattre sur qqch|退而求其次，转而选择
+E|se rabattre|sur|Il n'y avait plus de poisson, alors je me suis rabattu sur le poulet.|鱼卖完了，我只好改买鸡肉。
+E|se rabattre|sur|Faute de train, nous nous rabattrons sur le bus.|没有火车的话，我们就只好改坐大巴。
+C|se raccrocher|à|se raccrocher à qqn/qqch|抓住；（喻）寄托于
+E|se raccrocher|à|Il s'est raccroché à une branche pour ne pas tomber.|他抓住一根树枝才没掉下去。
+E|se raccrocher|à|Elle se raccroche à l'espoir de le revoir.|她把希望寄托在与他重逢上。
+C|se prévaloir|de|se prévaloir de qqch|以……自恃；援引（权利）
+E|se prévaloir|de|Il se prévaut de ses diplômes pour mépriser les autres.|他仗着自己的文凭看不起别人。
+E|se prévaloir|de|Vous pouvez vous prévaloir de ce droit à tout moment.|您可以随时行使这项权利。
+C|se réclamer|de|se réclamer de qqn/qqch|自称属于……；以……为依托
+E|se réclamer|de|Ce parti se réclame de la gauche.|这个党自称是左派。
+E|se réclamer|de|Plusieurs artistes se réclament de son héritage.|好几位艺术家自称继承了他的衣钵。
+C|se résumer|à|se résumer à qqch|归结为；仅仅是
+E|se résumer|à|Sa vie se résume à son travail.|他的生活只剩下工作。
+E|se résumer|à|Le problème ne se résume pas à une question d'argent.|问题不仅仅是钱的事。
+C|se ramener|à|se ramener à qqch|归结为
+E|se ramener|à|Toute cette discussion se ramène à une question de confiance.|这整场讨论归结起来是信任问题。
+E|se ramener|à|Leur désaccord se ramène à peu de chose.|他们的分歧其实没多大。
+C|se référer|à|se référer à qqch|参照；援引
+E|se référer|à|Pour plus de détails, référez-vous au mode d'emploi.|更多细节请参阅使用说明。
+E|se référer|à|Le juge s'est référé à un article de loi précis.|法官援引了一条具体的法律条文。
+C|se reporter|à|se reporter à qqch|参看；回到（某个时代）
+E|se reporter|à|Reportez-vous au chapitre trois pour les exercices.|练习请参看第三章。
+E|se reporter|à|Il faut se reporter à l'époque pour comprendre ce livre.|要理解这本书，得回到当时的时代背景。
+C|se répercuter|sur|se répercuter sur qqch|影响到；波及
+E|se répercuter|sur|La hausse du pétrole se répercute sur les prix.|油价上涨影响到了物价。
+E|se répercuter|sur|Le manque de sommeil se répercute sur ses résultats scolaires.|睡眠不足影响了他的学习成绩。
+C|se reconvertir|dans|se reconvertir dans qqch|转行从事
+E|se reconvertir|dans|À quarante ans, elle s'est reconvertie dans la boulangerie.|四十岁时，她转行做了面包师。
+E|se reconvertir|dans|Beaucoup d'anciens mineurs se sont reconvertis dans le tourisme.|许多前矿工转行从事旅游业。
+C|se replier|sur|se replier sur qqch|退缩到；封闭于
+E|se replier|sur|Après l'échec, il s'est replié sur lui-même.|失败之后，他变得封闭起来。
+E|se replier|sur|Les soldats se sont repliés sur la colline.|士兵们撤退到山上。
+C|se plonger|dans|se plonger dans qqch|埋头于；沉浸于
+E|se plonger|dans|Elle s'est plongée dans un roman policier.|她一头扎进了一本侦探小说。
+E|se plonger|dans|Plonge-toi dans tes révisions et oublie le reste.|专心复习，别的都别管。
+E|se plonger|dans|Le soir, je me plonge dans mes vieux albums photo.|晚上我沉浸在旧相册里。
+C|se proposer|de|se proposer de faire qqch|主动提出做某事；旨在
+E|se proposer|de|Mon voisin s'est proposé de m'aider à déménager.|我的邻居主动提出帮我搬家。
+E|se proposer|de|Cet ouvrage se propose d'expliquer la crise simplement.|这本书旨在浅显地解释这场危机。
+C|se prémunir|contre|se prémunir contre qqch|预防；防范
+E|se prémunir|contre|Il faut se prémunir contre le vol en voyage.|旅行时要防范偷窃。
+E|se prémunir|contre|Beaucoup d'épargnants cherchent à se prémunir contre l'inflation.|许多储户想方设法抵御通货膨胀。
+C|se qualifier|pour|se qualifier pour qqch|获得……的资格；晋级
+E|se qualifier|pour|L'équipe s'est qualifiée pour la finale.|这支球队打进了决赛。
+E|se qualifier|pour|Elle espère se qualifier pour les Jeux olympiques.|她希望获得奥运会参赛资格。
+C|se répandre|dans|se répandre dans qqch|在……中传开；扩散
+E|se répandre|dans|La nouvelle s'est vite répandue dans tout le village.|消息很快传遍了全村。
+E|se répandre|dans|Une odeur de café se répandait dans la maison.|屋里弥漫着咖啡香。
+C|se refléter|dans|se refléter dans qqch|倒映在……中；体现在
+E|se refléter|dans|Les montagnes se reflètent dans le lac.|群山倒映在湖中。
+E|se refléter|dans|Sa fatigue se reflétait dans son regard.|他的疲惫都写在眼神里。
+C|se recueillir|sur|se recueillir sur la tombe de qqn|在某人墓前默哀
+E|se recueillir|sur|Chaque année, elle va se recueillir sur la tombe de son père.|每年她都去父亲墓前悼念。
+E|se recueillir|sur|Les enfants se sont recueillis sur la tombe de leur grand-mère.|孩子们在奶奶的墓前默哀。
+# ---- NEW pairs on existing verbs ----
+C|parler|à|parler à qqn|跟某人说话
+E|parler|à|Je dois parler à ton père ce soir.|我今晚得跟你爸爸谈谈。
+E|parler|à|Elle ne parle plus à sa voisine depuis la dispute.|自从吵架后，她就不再跟邻居说话了。
+E|parler|à|Parlez-en à votre médecin.|请向您的医生咨询。
+N|parler|à|parler à qqn = 对某人说话；parler de qqch = 谈论某事；parler avec qqn = 与某人交谈
+N|parler|de|parler de qqch = 谈论某事；parler à qqn = 对某人说话
+C|pousser|à|pousser qqn à faire qqch|促使某人做某事
+E|pousser|à|Ses amis l'ont poussé à changer de métier.|朋友们劝他改行。
+E|pousser|à|Qu'est-ce qui t'a poussé à apprendre le chinois ?|是什么促使你学中文的？
+E|pousser|à|La faim pousse les animaux à s'approcher des villages.|饥饿迫使动物靠近村庄。
+C|payer|en|payer en qqch|用（某种方式、货币）付款
+E|payer|en|Vous payez en espèces ou par carte ?|您付现金还是刷卡？
+E|payer|en|À l'époque, on payait encore en francs.|那时候人们还用法郎付款。
+C|rêver|à|rêver à qqch|想着；遐想
+E|rêver|à|Elle rêvait à son prochain voyage en regardant la pluie.|她望着雨，想着下一次旅行。
+E|rêver|à|À quoi rêves-tu ?|你在想什么呢？
+N|rêver|à|rêver à = 想着、遐想；rêver de = 梦见、渴望
+N|rêver|de|rêver de = 梦见、渴望；rêver à = 想着、遐想
+C|revenir|de|revenir de qqch|从……回来
+E|revenir|de|Nous revenons de vacances demain.|我们明天度假回来。
+E|revenir|de|Il revient d'un long voyage en Asie.|他刚从亚洲长途旅行回来。
+C|rentrer|de|rentrer de qqch|从……回来（回家）
+E|rentrer|de|Elle rentre du travail vers sept heures.|她七点左右下班回家。
+E|rentrer|de|Quand je suis rentré de l'école, la maison était vide.|我放学回家时，家里空无一人。
+C|rappeler|à|rappeler qqch à qqn|提醒某人某事；使某人想起
+E|rappeler|à|Rappelle à ton frère qu'il doit venir demain.|提醒你弟弟明天要来。
+E|rappeler|à|Ce paysage rappelait à mon père son village natal.|这片风景让我父亲想起了他的家乡。
+C|réserver|à|réserver qqch à qqn|留给某人；专供
+E|réserver|à|Ces places sont réservées aux personnes âgées.|这些座位专供老人使用。
+E|réserver|à|L'avenir réserve parfois de belles surprises aux plus patients.|未来有时会给最有耐心的人带来惊喜。
+C|récompenser|pour|récompenser qqn pour qqch|因……奖励某人
+E|récompenser|pour|Elle a été récompensée pour son courage.|她因勇敢而受到嘉奖。
+E|récompenser|pour|Le patron nous a récompensés pour notre travail.|老板为我们的辛勤工作给了奖励。
+C|protéger|de|protéger qqn/qqch de qqch|使……不受（伤害、侵扰）
+E|protéger|de|Mets un chapeau pour te protéger du soleil.|戴顶帽子遮遮太阳。
+E|protéger|de|Les parents veulent protéger leurs enfants de tout danger.|父母想保护孩子免受一切危险。
+E|protéger|de|Ce mur protège la maison du vent.|这堵墙替房子挡风。
+# ---- TOP-UPS of thin existing pairs ----
+C|parsemer|de|parsemer qqch de qqch|在……上撒满；点缀
+E|parsemer|de|Le chemin était parsemé de feuilles mortes.|小路上落满了枯叶。
+E|parsemer|de|Son texte est parsemé de fautes d'orthographe.|他的文章里到处是拼写错误。
+E|partager|entre|Le gâteau a été partagé entre les six enfants.|蛋糕分给了六个孩子。
+E|partager|entre|Elle partage son temps entre Paris et Lyon.|她的时间一半在巴黎、一半在里昂度过。
+C|peser|sur|peser sur qqn/qqch|压在……上；对……施加影响
+E|peser|sur|Toute la responsabilité pèse sur ses épaules.|全部责任都压在他肩上。
+E|peser|sur|Cette décision a pesé sur la suite des négociations.|这个决定影响了后续的谈判。
+C|peupler|de|peupler qqch de qqch|使……布满；居住于
+E|peupler|de|Ses romans sont peuplés de personnages étranges.|他的小说里满是古怪的人物。
+E|peupler|de|Autrefois, cette forêt était peuplée de loups.|从前这片森林里有很多狼。
+E|porter|sur|La discussion a porté sur le budget.|讨论的焦点是预算。
+E|porter|sur|Sur quoi portera l'examen ?|考试会考哪些内容？
+E|poser|pour|Les mariés ont posé pour la photo devant l'église.|新人在教堂前摆好姿势拍照。
+E|poser|sur|Pose tes clés sur la table de l'entrée.|把钥匙放在门口的桌子上。
+E|poser|sur|Elle a posé la main sur mon épaule.|她把手搭在我肩上。
+C|poursuivre|en|poursuivre qqn en justice|起诉某人
+E|poursuivre|en|L'entreprise a été poursuivie en justice pour pollution.|这家企业因污染被起诉。
+E|poursuivre|en|Ses voisins menacent de le poursuivre en justice.|他的邻居们威胁要告他。
+C|presser|de|être pressé de faire qqch|急于做某事
+E|presser|de|Je suis pressé de te revoir.|我迫不及待想再见到你。
+E|presser|de|Les enfants étaient pressés d'ouvrir leurs cadeaux.|孩子们急着拆礼物。
+C|prier|pour|prier pour qqn/qqch|为……祈祷
+E|prier|pour|Elle prie tous les soirs pour son fils malade.|她每晚都为生病的儿子祈祷。
+E|prier|pour|Prions pour que tout se passe bien.|我们祈祷一切顺利吧。
+C|priver|de|priver qqn de qqch|剥夺某人的……；使某人失去
+E|priver|de|Il a été privé de dessert pour avoir menti.|他因为撒谎被罚不许吃甜点。
+E|priver|de|La tempête a privé toute la région d'électricité.|暴风雨导致整个地区停电。
+E|proposer|de|Je te propose de dîner ensemble ce soir.|我提议今晚一起吃晚饭。
+E|proposer|de|Il nous a proposé de nous raccompagner.|他提出送我们回去。
+E|protester|contre|Des milliers de personnes ont protesté contre la fermeture de l'hôpital.|成千上万的人抗议关闭医院。
+E|protester|contre|Les élèves protestent contre la nouvelle règle.|学生们抗议新规定。
+C|protéger|contre|protéger qqn/qqch contre qqch|保护……以防
+E|protéger|contre|Ce vaccin protège contre la grippe.|这种疫苗能预防流感。
+E|protéger|contre|Un bon manteau vous protégera contre le froid.|一件好大衣能让您抵御寒冷。
+N|protéger|contre|protéger contre 与 protéger de 意思相近；contre 更强调抵御、防范（疾病、攻击）
+N|protéger|de|protéger de 与 protéger contre 意思相近；de 更常用于遮挡（阳光、风雨、危险）
+C|prêter|à|prêter qqch à qqn|把某物借给某人
+E|prêter|à|Tu peux prêter ton vélo à ta sœur ?|你能把自行车借给你妹妹吗？
+E|prêter|à|J'ai prêté mon parapluie à un collègue.|我把伞借给了一个同事。
+C|punir|pour|punir qqn pour qqch|因……惩罚某人
+E|punir|pour|Il a été puni pour avoir triché à l'examen.|他因考试作弊受了处罚。
+E|punir|pour|On ne punit pas un enfant pour une simple maladresse.|不能因为一点笨手笨脚就惩罚孩子。
+C|raccompagner|chez|raccompagner qqn chez qqn|送某人回家
+E|raccompagner|chez|Il est tard, je te raccompagne chez toi.|太晚了，我送你回家。
+E|raccompagner|chez|Mon oncle nous a raccompagnés chez nous en voiture.|我叔叔开车送我们回了家。
+C|ranger|dans|ranger qqch dans qqch|把……收进
+E|ranger|dans|Range tes jouets dans le coffre.|把玩具收进箱子里。
+E|ranger|dans|J'ai rangé les assiettes dans le placard.|我把盘子放进了橱柜。
+C|recommencer|à|recommencer à faire qqch|又开始做某事
+E|recommencer|à|Il recommence à pleuvoir.|又开始下雨了。
+E|recommencer|à|Elle a recommencé à fumer après trois ans.|戒了三年后，她又开始抽烟了。
+C|redonner|à|redonner qqch à qqn|重新给予；使某人恢复
+E|redonner|à|Ce succès a redonné confiance à toute l'équipe.|这次成功让整个团队重拾信心。
+E|redonner|à|Un peu de peinture redonnera vie à cette vieille chaise.|刷点漆就能让这把旧椅子焕然一新。
+C|regorger|de|regorger de qqch|充满；盛产
+E|regorger|de|Le marché regorge de fruits en été.|夏天市场上水果琳琅满目。
+E|regorger|de|Cette ville regorge de musées.|这座城市博物馆众多。
+C|rejeter|sur|rejeter qqch sur qqn|把（过错）推给某人
+E|rejeter|sur|Il rejette toujours la faute sur les autres.|他总是把错推给别人。
+E|rejeter|sur|Ne rejette pas la responsabilité sur ton frère.|别把责任推到你弟弟身上。
+C|remonter|à|remonter à qqch|追溯到
+E|remonter|à|Cette église remonte au douzième siècle.|这座教堂可以追溯到十二世纪。
+E|remonter|à|Notre amitié remonte à l'école primaire.|我们的友谊要追溯到小学时代。
+E|remplacer|par|On a remplacé la vieille porte par une porte blindée.|旧门换成了防盗门。
+E|remplacer|par|Vous pouvez remplacer le beurre par de l'huile d'olive.|可以用橄榄油代替黄油。
+E|remédier|à|Il faut remédier à ce problème au plus vite.|必须尽快解决这个问题。
+E|remédier|à|Comment remédier au manque de personnel ?|怎样解决人手不足的问题？
+C|ressentir|pour|ressentir qqch pour qqn|对某人怀有（感情）
+E|ressentir|pour|Elle ressent une profonde admiration pour son professeur.|她对老师怀有深深的敬佩。
+E|ressentir|pour|Je n'ai jamais rien ressenti pour lui.|我对他从来没有动过心。
+C|rimer|avec|rimer avec qqch|与……押韵；（喻）意味着
+E|rimer|avec|Pour lui, vacances rime avec plage.|对他来说，度假就等于海滩。
+E|rimer|avec|Le mot « amour » rime avec « toujours ».|法语中「爱」与「永远」这两个词押韵。
+C|rouer|de|rouer qqn de coups|把某人痛打一顿
+E|rouer|de|Les voleurs l'ont roué de coups avant de s'enfuir.|小偷们把他暴打一顿后逃走了。
+C|rouler|en|rouler en qqch|开（车）；骑（车）
+E|rouler|en|Il roule en voiture électrique depuis deux ans.|他开电动车已经两年了。
+E|rouler|en|Ma sœur roule en scooter pour aller au travail.|我姐姐骑小摩托上班。
+C|réagir|à|réagir à qqch|对……作出反应
+E|réagir|à|Comment a-t-il réagi à la nouvelle ?|他听到消息后有什么反应？
+E|réagir|à|Certaines personnes réagissent mal à ce médicament.|有些人对这种药反应不良。
+C|régler|par|régler par qqch|用（某种方式）付款
+E|régler|par|Je peux régler par carte ?|我可以刷卡付款吗？
+E|régler|par|Les clients préfèrent régler par virement.|客户更喜欢通过转账付款。
+C|réprimander|pour|réprimander qqn pour qqch|因……训斥某人
+E|réprimander|pour|Le chef l'a réprimandé pour son retard.|主管因为他迟到训斥了他。
+C|résider|dans|résider dans qqch|在于
+E|résider|dans|La difficulté réside dans le choix des mots.|难点在于措辞。
+E|résider|dans|Tout le charme de ce village réside dans sa simplicité.|这个村子的魅力全在于它的质朴。
+C|reprocher|à|reprocher qqch à qqn|责备某人某事
+E|reprocher|à|Elle reproche à son mari de ne jamais l'écouter.|她埋怨丈夫从不听她说话。
+E|reprocher|à|Qu'est-ce que tu reproches à ce projet ?|你对这个方案有什么不满？
+E|se passer|de|Je ne peux pas me passer de café le matin.|早上我离不开咖啡。
+E|se passer|de|On se passera de ses conseils.|我们不需要他的建议。
+E|se pencher|sur|Le gouvernement va se pencher sur ce dossier.|政府将研究这一问题。
+E|se pencher|sur|Elle s'est penchée sur le berceau du bébé.|她俯身看着摇篮里的婴儿。
+C|se perdre|dans|se perdre dans qqch|在……中迷路；沉湎于
+E|se perdre|dans|Nous nous sommes perdus dans les ruelles de la vieille ville.|我们在老城的小巷里迷了路。
+E|se perdre|dans|Il se perd souvent dans ses rêveries.|他常常沉浸在遐想中。
+C|se poser|sur|se poser sur qqch|落在……上
+E|se poser|sur|Un papillon s'est posé sur ma main.|一只蝴蝶落在我手上。
+E|se poser|sur|Tous les regards se sont posés sur elle.|所有目光都落在了她身上。
+E|se préparer|à|Préparez-vous à partir dans cinq minutes.|准备好，五分钟后出发。
+E|se préparer|à|Les habitants se préparent à l'arrivée de l'ouragan.|居民们正在为飓风来临做准备。
+C|se préparer|pour|se préparer pour qqch|为……做准备（打扮、训练）
+E|se préparer|pour|Elle se prépare pour la soirée depuis deux heures.|她已经为晚会打扮了两个小时了。
+C|se remettre|de|se remettre de qqch|从（疾病、打击）中恢复
+E|se remettre|de|Il se remet lentement de son opération.|他正在慢慢从手术中康复。
+E|se remettre|de|Je ne me suis pas encore remis de mes émotions.|我到现在还惊魂未定。
+E|se remettre|de|Il lui a fallu un an pour se remettre de la mort de son chien.|她花了一年时间才从爱犬去世的悲痛中走出来。
+C|se quereller|avec|se quereller avec qqn|与某人争吵
+E|se quereller|avec|Il se querelle sans cesse avec ses voisins.|他和邻居吵个不停。
+E|se quereller|avec|Elle s'est querellée avec sa sœur pour une broutille.|她为一点小事跟妹妹吵了一架。
+C|se ranger|de|se ranger du côté de qqn|站在某人一边
+E|se ranger|de|Finalement, ma mère s'est rangée du côté de mon père.|最后我妈站到了我爸那边。
+C|se relever|de|se relever de qqch|从……中恢复过来
+E|se relever|de|Le pays a mis des années à se relever de la guerre.|这个国家花了多年才从战争中恢复过来。
+E|se relever|de|Il ne s'est jamais vraiment relevé de ce divorce.|他再也没有真正从那次离婚中走出来。
+C|se remplir|de|se remplir de qqch|充满
+E|se remplir|de|En quelques minutes, la salle s'est remplie de monde.|几分钟内大厅就挤满了人。
+E|se remplir|de|Le ciel se remplit de nuages noirs.|天空布满了乌云。
+E|se rendre compte|de|Je ne me suis pas rendu compte de l'heure.|我没注意到时间。
+E|se rendre compte|de|Tu te rends compte de ce que tu as fait ?|你知道自己干了什么吗？
+C|se repentir|de|se repentir de qqch|后悔；忏悔
+E|se repentir|de|Il se repent amèrement de ses paroles.|他对自己说过的话追悔莫及。
+C|se reposer|sur|se reposer sur qqn|依靠某人
+E|se reposer|sur|Tu peux te reposer sur moi pour l'organisation.|组织工作你可以交给我。
+C|se retirer|dans|se retirer dans qqch|退居到；回到（房间等）
+E|se retirer|dans|Après sa retraite, il s'est retiré dans un petit village.|退休后，他隐居到一个小村子里。
+E|se résoudre|à|Elle ne peut pas se résoudre à vendre la maison.|她下不了决心卖掉房子。
+E|se résoudre|à|Il s'est finalement résolu à partir.|他终于决定离开。
+C|se réunir|pour|se réunir pour qqch|为……聚集
+E|se réunir|pour|Toute la famille se réunit pour Noël.|全家人为过圣诞节团聚在一起。
+E|se réunir|pour|Les voisins se sont réunis pour discuter du projet.|邻居们聚在一起讨论这个项目。

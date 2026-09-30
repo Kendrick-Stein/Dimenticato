@@ -677,7 +677,8 @@ def sentence_ok(de):
         return False
     if de[-1] not in '.!?':
         return False
-    if '.' in de[:-1] or '…' in de or ' - ' in de or '–' in de:
+    # one sentence only: the app splits "German. 中文" at the first . ! ?
+    if re.search(r'[.!?]', de[:-1]) or '…' in de or ' - ' in de or '–' in de:
         return False
     if re.search(r'[一-鿿]', de):
         return False
@@ -709,6 +710,16 @@ DAT_MARKERS = {
     'keinem', 'diesem', 'jedem', 'welchem', 'jemandem', 'mir', 'dir', 'ihm',
     'ihnen', 'wem', 'jenem', 'solchem', 'denen',
 }
+# any other token that can open a noun phrase after a preposition
+NP_START = {
+    'der', 'die', 'das', 'des', 'eine', 'einer', 'eines', 'meine', 'meiner', 'deine',
+    'deiner', 'seine', 'seiner', 'ihre', 'ihrer', 'unsere', 'unserer', 'eure', 'eurer',
+    'keine', 'keiner', 'diese', 'dieser', 'dieses', 'jede', 'jeder', 'jedes', 'alle',
+    'allen', 'allem', 'uns', 'euch', 'ihr', 'sie', 'es', 'sich', 'wem', 'wen', 'was',
+    'etwas', 'nichts', 'vielen', 'anderen', 'andere', 'beiden',
+    'ein', 'mein', 'dein', 'sein', 'unser', 'euer', 'kein', 'solch', 'jemand', 'niemand',
+    'zwei', 'drei', 'vier', 'fünf', 'zehn', 'hundert',
+}
 # preposition + article contractions
 CONTRACTIONS = {
     'an': {'A': {'ans'}, 'D': {'am'}},
@@ -729,14 +740,14 @@ CONTRACTIONS = {
     'gegen': {'A': set(), 'D': set()},
 }
 DA_FORMS = {
-    'an': ['daran', 'woran', 'dran'],
-    'auf': ['darauf', 'worauf', 'drauf'],
+    'an': ['daran', 'woran'],
+    'auf': ['darauf', 'worauf'],
     'aus': ['daraus', 'woraus'],
     'bei': ['dabei', 'wobei'],
     'durch': ['dadurch', 'wodurch'],
     'für': ['dafür', 'wofür'],
     'gegen': ['dagegen', 'wogegen'],
-    'in': ['darin', 'worin', 'drin'],
+    'in': ['darin', 'worin'],
     'mit': ['damit', 'womit'],
     'nach': ['danach', 'wonach'],
     'über': ['darüber', 'worüber'],
@@ -918,8 +929,17 @@ def build_mined_examples(pairs, patterns, per_pattern=6):
             if hit:
                 out[key].append((de, zh))
             elif prep.lower() in lowset and ONE_CASE_PREPS.get(prep) == case:
-                # single-case preposition: co-occurrence is already unambiguous
-                if len(weak[key]) < per_pattern:
+                # single-case preposition: co-occurrence is already unambiguous,
+                # provided the preposition heads a noun phrase.  A lowercase
+                # word after it is "zu + Infinitiv" / "zu + Adjektiv" ("Nichts
+                # Suesses essen zu duerfen") or an adverb ("nach oben"), not
+                # the verb's prepositional object.
+                idx = lowered.index(prep.lower())
+                nxt_raw = tokens[idx + 1] if idx + 1 < len(tokens) else ''
+                nxt = nxt_raw.lower()
+                heads_np = bool(nxt_raw) and (nxt_raw[0].isupper() or nxt in ACC_MARKERS
+                                              or nxt in DAT_MARKERS or nxt in NP_START)
+                if heads_np and len(weak[key]) < per_pattern:
                     weak[key].append((de, zh))
 
     for key, extra in weak.items():
@@ -1184,8 +1204,58 @@ def example_string(german, chinese):
     return '%s %s' % (german, chinese.strip())
 
 
+# --------------------------------------------------------------------------
+# Third authoring pass: scripts/sources/german-rektion/*.txt
+#   R|verb|prep|case|english|chinese|pattern|pattern zh|level   new Rektion row
+#   E|verb|prep|case|German sentence.|中文译文。             authored example
+# Every E line must attach to a (verb, prep, case) that some Rektion row
+# declares; examples are shown after the pattern phrase and before the
+# Tatoeba sentences.  Authored for this application (no dictionary scraped).
+# --------------------------------------------------------------------------
+
+SOURCE_DIR = os.path.join(ROOT, 'scripts', 'sources', 'german-rektion')
+EXAMPLE_SPLIT = re.compile(r'^(.+?[.!?！？。])\s*(.+)$')
+
+
+def load_authored_sources():
+    rows, examples = [], []
+    if not os.path.isdir(SOURCE_DIR):
+        return rows, examples
+    for name in sorted(os.listdir(SOURCE_DIR)):
+        if not name.endswith('.txt'):
+            continue
+        with open(os.path.join(SOURCE_DIR, name), encoding='utf-8') as fh:
+            for lineno, line in enumerate(fh, 1):
+                line = line.strip()
+                if not line or line.startswith('#'):
+                    continue
+                parts = [x.strip() for x in line.split('|')]
+                where = '%s:%d' % (name, lineno)
+                if parts[0] == 'R' and len(parts) == 9:
+                    if parts[3] not in CASE_LABEL:
+                        raise SystemExit('%s: unknown case %r' % (where, parts[3]))
+                    rows.append(parts[1:])
+                elif parts[0] == 'E' and len(parts) == 6:
+                    verb, prep, case, de, zh = parts[1:]
+                    if case not in CASE_LABEL:
+                        raise SystemExit('%s: unknown case %r' % (where, case))
+                    if de[-1:] not in '.!?' or re.search(r'[.!?]', de[:-1]):
+                        raise SystemExit('%s: German sentence must end in exactly one .!? : %r'
+                                         % (where, de))
+                    if re.search(r'[一-鿿]', de) or not re.search(r'[一-鿿]', zh):
+                        raise SystemExit('%s: German/Chinese halves mixed up: %r' % (where, line))
+                    m = EXAMPLE_SPLIT.match('%s %s' % (de, zh))
+                    if not m or m.group(1).strip() != de:
+                        raise SystemExit('%s: example does not split cleanly: %r' % (where, line))
+                    examples.append((verb, prep, case, de, zh, where))
+                else:
+                    raise SystemExit('%s: bad row: %s' % (where, line))
+    return rows, examples
+
+
 def build_collocations(pairs):
-    rows = parse_table(REKTION + REKTION_EXTRA, 8)
+    extra_rows, authored_examples = load_authored_sources()
+    rows = parse_table(REKTION + REKTION_EXTRA, 8) + extra_rows
     seen_rows = set()
     clean = []
     for r in rows:
@@ -1198,6 +1268,14 @@ def build_collocations(pairs):
     patterns = sorted({(r[0], r[1], r[2]) for r in clean})
     sys.stderr.write('mining Tatoeba for %d Rektion patterns ...\n' % len(patterns))
     mined = build_mined_examples(pairs, patterns, per_pattern=4)
+
+    declared = {(r[0], r[1], r[2]) for r in clean}
+    authored = defaultdict(list)
+    for verb, prep, case, de, zh, where in authored_examples:
+        if (verb, prep, case) not in declared:
+            raise SystemExit('%s: example for undeclared Rektion %s %s +%s'
+                             % (where, verb, prep, case))
+        authored[(verb, prep, case)].append((de, zh))
 
     verbs = {}
     total_examples = 0
@@ -1232,6 +1310,14 @@ def build_collocations(pairs):
         if first not in entry['prepositions'][key]:
             entry['prepositions'][key].append(first)
             structured['examples'].append({'de': pattern, 'zh': pattern_zh, 'source': AUTHORED})
+            total_examples += 1
+        # authored sentences go to the first sense row of this (verb, key)
+        for de, tzh in authored.pop((verb, prep, case), []):
+            text = example_string(de, tzh)
+            if text in entry['prepositions'][key]:
+                continue
+            entry['prepositions'][key].append(text)
+            structured['examples'].append({'de': de, 'zh': tzh, 'source': AUTHORED})
             total_examples += 1
         for de, tzh in mined.get((verb, prep, case), []):
             text = example_string(de, tzh)
@@ -2862,8 +2948,10 @@ COLLOC_HEADER = '''// German verb collocations (Rektion) for Dimenticato.  GENER
 // GERMAN_COLLOCATIONS_DATA.nounVerb is a second, structurally identical dataset
 // for Funktionsverbgefüge / Nomen-Verb-Verbindungen, keyed noun -> light verb.
 //
-// Sources: collocation inventory and Chinese/English glosses authored for this
-// application; example sentences mined from Tatoeba (CC BY 2.0 FR).
+// Sources: collocation inventory, Chinese/English glosses and the example
+// sentences tagged "Dimenticato (authored)" were written for this application
+// (tables in this script + scripts/sources/german-rektion/*.txt); the rest of
+// the example sentences are mined from Tatoeba (CC BY 2.0 FR).
 '''
 
 COGNATE_HEADER = '''// German <-> English cognates for Dimenticato.  GENERATED — edit
