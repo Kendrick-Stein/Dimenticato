@@ -1,10 +1,11 @@
 /**
  * GrammarBook — 语法书阅读器（意大利语 / 德语 / 英语 / 法语共用一块屏）
- * Uses embedded *_GRAMMAR_DATA globals (from data/*-grammar-data.js) instead of
- * fetch() to avoid GitHub Pages issues with Chinese-character filenames.
+ * 数据经 LangLoader.data(lang, 'grammar') 取（data/*grammar-data.js 懒加载注入），
+ * 不用 fetch()，避免 GitHub Pages 上中文文件名的问题。
  *
  * 阅读器是共享屏，所以它必须自己知道当前是哪种语言：标题、面包屑、返回按钮
- * 与正文中的图片根目录全部由 LANG_PROFILES 决定，调用方不必再手动改 DOM。
+ * 由 getProfile() 从 lib/languages.js 派生（数据里的 meta.title / description 优先），
+ * 调用方不必再手动改 DOM。
  */
 const GrammarBook = (() => {
   let sidebarListenerAdded = false;
@@ -14,33 +15,6 @@ const GrammarBook = (() => {
 
   // 小目录树（法语 23 篇 / 英语 5 篇）默认全部展开，避免只剩一列折叠标题看起来像坏页。
   const AUTO_EXPAND_TOPIC_LIMIT = 48;
-
-  const LANG_PROFILES = {
-    italian: {
-      label: '意大利语',
-      title: '意大利语语法',
-      description: '请从左侧目录选择章节开始阅读',
-      backLabel: 'Grammar'
-    },
-    german: {
-      label: '德语',
-      title: '德语语法',
-      description: '请从左侧目录选择章节开始阅读',
-      backLabel: '德语语法'
-    },
-    english: {
-      label: '英语',
-      title: '英语语法',
-      description: '请从左侧目录选择 A1-C1 专题开始阅读',
-      backLabel: 'English Grammar'
-    },
-    french: {
-      label: '法语',
-      title: '法语语法',
-      description: '请从左侧目录选择 A1-B1 专题开始阅读',
-      backLabel: 'French Grammar'
-    }
-  };
 
   function getLayout() {
     return document.querySelector('#grammarBookScreen .grammar-book-layout');
@@ -54,22 +28,24 @@ const GrammarBook = (() => {
   /** 从「调用方传进来的数据对象」反推语言，调用方无需改代码。 */
   function resolveLang(data, options) {
     const explicit = options && options.lang;
-    if (explicit && LANG_PROFILES[explicit]) return explicit;
+    if (explicit && window.Languages.has(explicit)) return window.Languages.key(explicit);
 
     if (data) {
-      const match = Object.keys(LANG_PROFILES).find(lang => dataGlobalFor(lang) === data);
+      const match = window.Languages.keys.find(lang => dataGlobalFor(lang) === data);
       if (match) return match;
-      if (data.meta && LANG_PROFILES[data.meta.lang]) return data.meta.lang;
+      if (data.meta && window.Languages.has(data.meta.lang)) return window.Languages.key(data.meta.lang);
     }
 
     const bodyLang = document.body ? document.body.getAttribute('data-language') : null;
-    if (bodyLang && LANG_PROFILES[bodyLang]) return bodyLang;
+    if (bodyLang && window.Languages.has(bodyLang)) return window.Languages.key(bodyLang);
 
     return 'italian';
   }
 
   function getProfile(lang) {
-    return LANG_PROFILES[lang || activeLang] || LANG_PROFILES.italian;
+    const L = window.Languages;
+    const p = L.get(lang || activeLang) || L.get(L.DEFAULT);
+    return { label: p.cn, title: p.cn + '语法', description: '请从左侧目录选择章节开始阅读' };
   }
 
   function getTitle() {
@@ -100,8 +76,8 @@ const GrammarBook = (() => {
     // （german-app），都不传时回落到 resolveLang 的推断。语法数据现在是
     // 按模块懒加载的（lib/languages.js profile.files.grammar），缺席时先补拉。
     const explicit = options && (options.lang || options.language);
-    const targetLang = (explicit && LANG_PROFILES[explicit])
-      ? explicit
+    const targetLang = (explicit && window.Languages.has(explicit))
+      ? window.Languages.key(explicit)
       : resolveLang(customData, options);
 
     const data = customData || dataGlobalFor(targetLang) || null;
@@ -320,10 +296,7 @@ const GrammarBook = (() => {
       return;
     }
 
-    const roots = imageRootsFor(slug, partTitle);
-    body.innerHTML = '<div class="grammar-markdown">' +
-      renderMarkdown(rewriteMarkdownImages(text, roots)) + '</div>';
-    enhanceImages(body, roots);
+    body.innerHTML = '<div class="grammar-markdown">' + renderMarkdown(text) + '</div>';
     body.scrollTop = 0;
 
     // On mobile, close sidebar after selecting topic
@@ -349,84 +322,6 @@ const GrammarBook = (() => {
     }
     return '<p class="grammar-error">Markdown 渲染库未能加载（CDN 不可用），以下为纯文本内容。</p>' +
       '<pre style="white-space:pre-wrap;word-break:break-word;">' + escapeHtml(text) + '</pre>';
-  }
-
-  // ==================== 正文图片路径修复 ====================
-
-  const MD_IMAGE_RE = /(!\[[^\]]*\]\()\s*([^)\s]+)((?:\s+"[^"]*")?\s*\))/g;
-
-  function imageRootsFor(slug, partTitle) {
-    const profile = getProfile();
-    if (typeof profile.imageRoots !== 'function') return [];
-    const roots = profile.imageRoots(slug, partTitle) || [];
-    return roots.filter((root, index) => root && roots.indexOf(root) === index);
-  }
-
-  function isExternalUrl(url) {
-    return /^(?:[a-z][a-z0-9+.-]*:|\/\/|\/|#)/i.test(url);
-  }
-
-  /** `.\img\X.png` / `./img/X.png` → 仓库里真实存在的目录。 */
-  function imageFileName(url) {
-    const normalized = String(url || '').replace(/\\/g, '/').split(/[?#]/)[0];
-    const base = normalized.slice(normalized.lastIndexOf('/') + 1);
-    try {
-      return decodeURIComponent(base);
-    } catch (error) {
-      return base;
-    }
-  }
-
-  function imageCandidates(url, roots) {
-    const file = imageFileName(url);
-    if (!file || !roots.length) return [];
-    return roots.map(root => root + encodeURI(file));
-  }
-
-  function rewriteMarkdownImages(text, roots) {
-    if (!roots.length) return text;
-    return String(text).replace(MD_IMAGE_RE, (full, head, url, tail) => {
-      if (isExternalUrl(url)) return full;
-      const candidates = imageCandidates(url, roots);
-      return candidates.length ? head + candidates[0] + tail : full;
-    });
-  }
-
-  /**
-   * 渲染后处理：约束尺寸、按候选目录逐个重试，全部失败时给出带文件名的占位块，
-   * 而不是浏览器默认的碎图标。
-   */
-  function enhanceImages(body, roots) {
-    body.querySelectorAll('.grammar-markdown img').forEach(img => {
-      img.style.maxWidth = '100%';
-      img.style.height = 'auto';
-      img.style.display = 'block';
-      img.style.margin = '1em 0';
-      img.setAttribute('loading', 'lazy');
-
-      const file = imageFileName(img.getAttribute('src'));
-      if (!img.getAttribute('alt')) img.setAttribute('alt', file);
-
-      const candidates = roots.length ? imageCandidates(img.getAttribute('src'), roots) : [];
-      let attempt = 0;
-      img.addEventListener('error', () => {
-        attempt += 1;
-        if (attempt < candidates.length) {
-          img.src = candidates[attempt];
-          return;
-        }
-        replaceWithPlaceholder(img, file);
-      });
-    });
-  }
-
-  function replaceWithPlaceholder(img, file) {
-    if (!img.parentNode) return;
-    const placeholder = document.createElement('span');
-    placeholder.className = 'grammar-error grammar-figure-missing';
-    placeholder.style.display = 'block';
-    placeholder.innerHTML = '<span class="msr" aria-hidden="true">broken_image</span> 图示缺失：' + escapeHtml(file || '未知文件');
-    img.parentNode.replaceChild(placeholder, img);
   }
 
   function toggleSidebar() {

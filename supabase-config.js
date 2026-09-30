@@ -92,15 +92,11 @@ const DIFFICULTY_LEVELS = {
   'Advanced': { label: '高级', icon: 'icon-tree' }
 };
 
-// 社区词本语言映射
-// key = 应用内部语言标识；db = 数据库 language 列的取值；label = 界面中文名
+// 社区词本语言映射，从 lib/languages.js 派生
+// key = 应用内部语言标识；db = 数据库 language 列的取值（英文名）；label = 界面中文名
+// 新增语言时 supabase-setup.sql 的 CHECK (language IN (...)) 也要补上，否则上传会被库拒绝
 // 历史数据中 language 可能为空或写作小写，统一按“意大利语”处理（见 normalizeLanguage）
-const COMMUNITY_LANGUAGES = [
-  { key: 'italian', db: 'Italian', label: '意大利语' },
-  { key: 'german', db: 'German', label: '德语' },
-  { key: 'english', db: 'English', label: '英语' },
-  { key: 'french', db: 'French', label: '法语' }
-];
+const COMMUNITY_LANGUAGES = window.Languages.list.map((p) => ({ key: p.key, db: p.en, label: p.cn }));
 
 // 上传字段长度上限（与 supabase-setup.sql 中的 CHECK 约束保持一致）
 const COMMUNITY_FIELD_LIMITS = {

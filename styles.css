@@ -1978,7 +1978,6 @@ h1.page {
 .grammar-welcome p { font-size: 0.92rem; }
 
 .grammar-loading { padding: 1rem 0; color: var(--muted); font-size: 0.88rem; }
-.grammar-figure-missing { margin: 1rem 0; padding: 0.8rem 1rem; font-size: 0.85rem; }
 
 /* Rendered markdown */
 .grammar-markdown {

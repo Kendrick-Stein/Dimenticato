@@ -4,7 +4,7 @@
  *
  * index.html 只从 Google Fonts 取用到的 Material Symbols（&icon_names=...），
  * 代码里新增了图标却没加进子集时，页面上会直接显示成英文字（ligature 没有字形）。
- * 这里扫出所有 .msr 图标名，断言都在子集里、且子集按字母序（API 的要求）。
+ * 这里扫出所有 .msr 图标名，断言都在子集里、子集里没有没人用的图标、且子集按字母序（API 的要求）。
  *
  * 动态图标（card(action, icon)、renderStatus(icon)、{ icon: '...' }、textContent 切换）
  * 按调用形态匹配；新增一种传图标的写法时，把它的形态加进 DYNAMIC。
@@ -62,6 +62,11 @@ else { failed++; console.log('FAIL icon_names 未按字母序排列'); }
 for (const [name, file] of used) {
   if (allowed.has(name)) passed++;
   else { failed++; console.log(`FAIL ${file}: 图标 "${name}" 不在 index.html 的 icon_names 子集里`); }
+}
+// 反向：子集里没人用的图标白占字体体积（删功能时顺手从 icon_names 里删掉）
+for (const name of subset) {
+  if (used.has(name)) passed++;
+  else { failed++; console.log(`FAIL index.html icon_names 里的 "${name}" 没有任何地方用到`); }
 }
 
 const summary = `${passed} passed, ${failed} failed (${used.size} icons used, ${subset.length} in subset)`;

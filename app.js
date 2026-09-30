@@ -26,15 +26,7 @@
   var BROWSE_PAGE = 200;
   var SESSION_SIZES = ['20', '50', '100', 'all'];
 
-  function shuffleArray(list) {
-    var a = list.slice();
-    for (var i = a.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = a[i]; a[i] = a[j]; a[j] = t;
-    }
-    return a;
-  }
-  global.shuffleArray = shuffleArray;
+  var shuffleArray = global.shuffleArray; // lib/utils.js
 
   function lang() { return global.getActiveLanguage(); }
   // 外语单词标上 lang：读屏按对应语言发音，浏览器按对应语言断字

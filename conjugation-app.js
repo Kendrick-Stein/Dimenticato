@@ -596,15 +596,6 @@
     renderLookupResults([], '');
   }
 
-  function shuffle(arr) {
-    const a = [...arr];
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }
-
   function getLessonStateKey() {
     return `${state.selectedTense}__${state.lessonSize}`;
   }
@@ -1014,7 +1005,7 @@ ${moodRows}
       }
     });
 
-    state.queue = shuffle(queue);
+    state.queue = window.shuffleArray(queue);
     state.index = 0;
     state.correct = 0;
     state.total = 0;
@@ -1087,8 +1078,8 @@ ${moodRows}
       .flatMap(item => item.answers)
       .filter(v => normalizeText(v) !== normalizeText(correct));
 
-    const distractors = shuffle([...new Set(pool)]).slice(0, 3);
-    const options = shuffle([correct, ...distractors]);
+    const distractors = window.shuffleArray([...new Set(pool)]).slice(0, 3);
+    const options = window.shuffleArray([correct, ...distractors]);
 
     optionsWrap.innerHTML = options
       .map(opt => `<button class="option" data-answer="${escapeAttribute(opt)}">${escapeHtml(opt)}</button>`)

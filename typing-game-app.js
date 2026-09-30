@@ -17,8 +17,12 @@
   'use strict';
 
   const STORAGE_PREFIX = 'dimenticato_typing_';
-  const SPEECH_LANG = { italian: 'it-IT', german: 'de-DE', english: 'en-US', french: 'fr-FR' };
-  const LANG_CN = { italian: '意大利语', german: '德语', english: '英语', french: '法语' };
+  // 变位模式只取词频最高的这么多个动词（数据按 rank 排序；每个动词有几十个形式，够用）
+  const VERB_CAP = 300;
+
+  // 语言名 / 朗读语言都从 lib/languages.js 取
+  function langCn(lang) { return global.Languages.label(lang) || lang; }
+  function speechLang(lang) { const p = global.Languages.get(lang); return p ? p.tts : 'it-IT'; }
 
   // 变位数据按模块懒加载，注册在 DIM_DATA.conjugations.<code>，一律调用时取
   function conjData(lang) {
@@ -86,7 +90,7 @@
     if (!data || !data.length) return [];
     const persons = PERSON_CN[lang] || {};
     const out = [];
-    const verbCap = lang === 'english' ? data.length : Math.min(300, data.length);
+    const verbCap = Math.min(VERB_CAP, data.length);
     for (let vi = 0; vi < verbCap; vi++) {
       const v = data[vi];
       if (!v || !v.tenses) continue;
@@ -154,7 +158,7 @@
     try {
       if (session && session.speak && typeof global.speechSynthesis !== 'undefined') {
         const u = new SpeechSynthesisUtterance(text);
-        u.lang = SPEECH_LANG[session.lang] || 'it-IT';
+        u.lang = speechLang(session.lang);
         u.rate = 0.95;
         global.speechSynthesis.speak(u);
       }
@@ -200,7 +204,7 @@
   function renderSetup() {
     if (!session) return;
     const { lang } = session;
-    const cn = LANG_CN[lang] || lang;
+    const cn = langCn(lang);
     const bestVocab = getBest(lang, 'vocab');
     const bestConj = getBest(lang, 'conjugation');
     const el = $id('typingGameSetup');
@@ -307,7 +311,7 @@
           '<div><span>最长连击</span><b>' + stats.bestStreak + '</b></div>' +
           '<div><span>用时</span><b>' + stats.duration + 's</b></div>' +
         '</div>' +
-        '<p class="typing-overlay-meta">' + LANG_CN[lang] + ' · ' + modeLabel + ' · ' + diff +
+        '<p class="typing-overlay-meta">' + langCn(lang) + ' · ' + modeLabel + ' · ' + diff +
         (isRecord ? ' · <b class="typing-new-record">🏆 新纪录！</b>' : '') + '</p>' +
         '<p class="typing-overlay-best">历史最佳：' + fmt(Math.max(prevBest, stats.score)) + '</p>' +
         '<div class="typing-overlay-actions">' +
@@ -487,7 +491,7 @@
       session = { lang: lang, mode: 'vocab', difficulty: 'easy', game: null, renderer: null, speak: true, maxLives: 3 };
       renderSetup();
       const eyebrow = $id('typingGameEyebrow');
-      if (eyebrow) eyebrow.textContent = (LANG_CN[lang] || lang) + ' / Typing Game';
+      if (eyebrow) eyebrow.textContent = langCn(lang) + ' / Typing Game';
       if (!opts.skipNavigate && typeof global.showScreen === 'function') {
         global.showScreen('typingGameScreen', {});
       }

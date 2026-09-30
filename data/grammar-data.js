@@ -1,4 +1,9 @@
 const GRAMMAR_DATA = {
+  "meta": {
+    "title": "意大利语语法",
+    "description": "从左侧目录选择章节开始阅读，共 99 个主题。",
+    "topicCount": 99
+  },
   "tree": {
     "parts": [
       {
