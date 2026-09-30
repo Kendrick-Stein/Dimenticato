@@ -8,6 +8,7 @@ forms, and non-finite / imperative forms using single array slots.
 
 from __future__ import annotations
 
+import csv
 import json
 import re
 from pathlib import Path
@@ -16,9 +17,11 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 VOCAB_PATH = ROOT / "data" / "english-vocabulary.js"
 OUT_PATH = ROOT / "data" / "english-conjugations.js"
-TARGET_COUNT = 500
+TARGET_COUNT = 1800
 
 PEOPLE = ["i", "you", "he_she_it", "we", "you_pl", "they"]
+
+from lemminflect import getAllInflections  # build-time only: pip install lemminflect
 
 try:
     from wordfreq import zipf_frequency
@@ -134,6 +137,14 @@ IRREGULARS: dict[str, tuple[str, str]] = {
     "write": ("wrote", "written"),
 }
 
+# lemminflect 的首选形式不合适时在这里改（past, past participle）
+OVERRIDES: dict[str, tuple[str, str]] = {
+    "quit": ("quit", "quit"),
+}
+
+# ECDICT 动词义项缺失或误导时手工给的中文释义
+GLOSS_OVERRIDES: dict[str, str] = {}
+
 MODAL_OR_DEFECTIVE = {
     "can",
     "could",
@@ -178,11 +189,52 @@ def load_js_array(path: Path, const_name: str) -> list[dict[str, Any]]:
     raise ValueError(f"Could not parse array for {const_name} in {path}")
 
 
-def clean_gloss(text: str) -> str:
-    text = re.sub(r"\b(?:v|vt|vi|vbl|aux|n|adj|adv|prep|conj|pron|art|int)\.?", "", text, flags=re.I)
-    text = re.sub(r"\([^)]*\)", "", text)
-    text = re.sub(r"\s+", " ", text).strip(" ;,")
-    return text.split(";")[0].split("；")[0][:80]
+ECDICT_PATH = ROOT / " english-data" / "english word" / "ecdict-slice.csv"
+VERB_POS = {"v", "vt", "vi"}
+POS_MARK = re.compile(r"\b(vt|vi|v|n|adj|a|adv|prep|conj|pron|art|int|num|aux|abbr)\.\s*")
+# 不适合出现在学习材料里的词（语料频率很高，但不该进变位练习）
+EXCLUDED = {"shit", "fuck", "piss", "screw", "bitch", "damn", "suck", "fart", "pee", "poop"}
+
+
+def load_ecdict() -> dict[str, str]:
+    if not ECDICT_PATH.exists():
+        return {}
+    with ECDICT_PATH.open(encoding="utf-8") as fh:
+        reader = csv.reader(fh)
+        next(reader, None)
+        return {row[0].lower(): row[1].replace("\\n", "\n") for row in reader if len(row) >= 2}
+
+
+def pos_segments(text: str) -> list[tuple[str, str]]:
+    """把 "n.书,书籍 v.登记,预订" / ECDICT 分行格式切成 [(词性, 释义)]。"""
+    text = re.sub(r"\[[^\]]*\][^\n]*", "", text)  # 去掉 [计] [医] 等专业释义
+    marks = list(POS_MARK.finditer(text))
+    out = []
+    for i, m in enumerate(marks):
+        body = text[m.end() : marks[i + 1].start() if i + 1 < len(marks) else len(text)]
+        out.append((m.group(1).lower(), body.strip()))
+    return out
+
+
+def verb_gloss(text: str) -> str:
+    """只取动词义项；没有动词义项返回空串（调用方据此判定不是动词）。"""
+    parts: list[str] = []
+    for pos, body in pos_segments(text):
+        if pos not in VERB_POS:
+            continue
+        body = body.split("\n")[0]
+        body = re.sub(r"[（(][^)）]*(过去|分词|第三人称|现在分词)[^)）]*[)）]", "", body)
+        body = re.sub(r"\S*的(过去式|过去分词|现在分词|第三人称单数)\S*", "", body)
+        for item in re.split(r"[,，;；]", body):
+            item = re.sub(r"\([^)]*\)|<[^>]*>", "", item).strip()
+            if item and item not in parts:
+                parts.append(item)
+    out = []
+    for item in parts:
+        if len("，".join(out + [item])) > 24:
+            break
+        out.append(item)
+    return "，".join(out)
 
 
 def english_frequency(word: str, rank: int) -> float:
@@ -191,60 +243,43 @@ def english_frequency(word: str, rank: int) -> float:
     return round(max(0.0, 7.0 - rank / 5000), 4)
 
 
-def is_candidate(entry: dict[str, Any]) -> bool:
-    word = str(entry.get("english", "")).lower()
-    notes = str(entry.get("notes", "")).lower()
-    meaning = str(entry.get("meaning", "")).lower()
-    if word in MODAL_OR_DEFECTIVE:
-        return False
-    if not re.fullmatch(r"[a-z]+(?:-[a-z]+)?", word):
-        return False
-    if "vbl" in notes:
-        return False
-    if "过去式" in meaning or "过去分词" in meaning or "第三人称" in meaning:
-        return False
-    return bool(re.search(r"\b(v|vt|vi)\.?\b", notes))
+def pick(forms: tuple[str, ...] | None) -> str | None:
+    if not forms:
+        return None
+    clean = [f for f in forms if re.fullmatch(r"[a-z]+", f)]
+    return clean[0] if clean else None
 
 
-def third_person_singular(base: str) -> str:
-    if base == "be":
-        return "is"
-    if base == "have":
-        return "has"
-    if base == "do":
-        return "does"
-    if re.search(r"(s|sh|ch|x|z|o)$", base):
-        return base + "es"
-    if re.search(r"[^aeiou]y$", base):
-        return base[:-1] + "ies"
-    return base + "s"
+def inflections(base: str) -> dict[str, str] | None:
+    """base 的 VBD / VBN / VBG / VBZ。手工 IRREGULARS 优先，其余交给 lemminflect。
+    lemminflect 不认识的词（不是动词）返回 None。"""
+    table = getAllInflections(base, upos="VERB")
+    if not table or pick(table.get("VB")) != base:
+        return None
+    past = pick(table.get("VBD"))
+    ing = pick(table.get("VBG"))
+    third = pick(table.get("VBZ"))
+    participle = pick(table.get("VBN")) or past
+    if base in IRREGULARS:
+        past, participle = IRREGULARS[base]
+    elif base in OVERRIDES:
+        past, participle = OVERRIDES[base]
+    if not (past and participle and ing and third):
+        return None
+    return {"past": past, "participle": participle, "ing": ing, "third": third}
 
 
-def present_participle(base: str) -> str:
-    if base == "be":
-        return "being"
-    if base.endswith("ie"):
-        return base[:-2] + "ying"
-    if base.endswith("e") and not base.endswith(("ee", "ye", "oe")):
-        return base[:-1] + "ing"
-    if re.search(r"[^aeiou][aeiou][^aeiouwxy]$", base) and len(base) > 3:
-        return base + base[-1] + "ing"
-    return base + "ing"
-
-
-def regular_past(base: str) -> str:
-    if base.endswith("e"):
-        return base + "d"
-    if re.search(r"[^aeiou]y$", base):
-        return base[:-1] + "ied"
-    if re.search(r"[^aeiou][aeiou][^aeiouwxy]$", base) and len(base) > 3:
-        return base + base[-1] + "ed"
-    return base + "ed"
-
-
-def principal_parts(base: str) -> tuple[str, str, str]:
-    past, participle = IRREGULARS.get(base, (regular_past(base), regular_past(base)))
-    return past, participle, present_participle(base)
+def verb_score(base: str, forms: dict[str, str]) -> float:
+    """动词用法频率：只看 -ed / -ing / 过去分词这些「必然是动词」的形式
+    （原形和 -s 与名词同形，会把 man / law 这类名词顶上来）。"""
+    if not zipf_frequency:
+        return 0.0
+    # 取均值而不是求和：united / bit / felt 这类与形容词、名词同形的过去式
+    # 单独很高频，求和会把 unite / bite 顶到前 40。
+    distinct = {forms["past"], forms["participle"], forms["ing"]} - {base}
+    if not distinct:
+        return 0.0
+    return sum(zipf_frequency(f, "en") for f in distinct) / len(distinct)
 
 
 def person_forms(values: list[str]) -> dict[str, str]:
@@ -259,14 +294,14 @@ def single(group: str, label: str, forms: list[str]) -> dict[str, Any]:
     return {"type": "single", "group_label": group, "tense_label": label, "forms": forms}
 
 
-def build_tenses(base: str) -> dict[str, Any]:
-    past, past_participle, ing = principal_parts(base)
+def build_tenses(base: str, forms: dict[str, str]) -> dict[str, Any]:
+    past, past_participle, ing = forms["past"], forms["participle"], forms["ing"]
 
     if base == "be":
         present = ["am", "are", "is", "are", "are", "are"]
         past_simple = ["was", "were", "was", "were", "were", "were"]
     else:
-        present = [base, base, third_person_singular(base), base, base, base]
+        present = [base, base, forms["third"], base, base, base]
         past_simple = [past] * 6
 
     present_be = ["am", "are", "is", "are", "are", "are"]
@@ -324,51 +359,64 @@ def build_tenses(base: str) -> dict[str, Any]:
     }
 
 
-def select_verbs(vocab: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    by_word: dict[str, dict[str, Any]] = {}
-    for entry in vocab:
-        word = str(entry.get("english", "")).lower()
-        if word not in by_word and (word in {"be", "have", "do"} or is_candidate(entry)):
-            by_word[word] = entry
-
-    def sort_key(item: tuple[str, dict[str, Any]]) -> tuple[float, int, str]:
-        word, entry = item
-        return (-english_frequency(word, int(entry.get("rank") or 999999)), int(entry.get("rank") or 999999), word)
-
-    return [entry for _, entry in sorted(by_word.items(), key=sort_key)[:TARGET_COUNT]]
+MIN_VERB_SCORE = 2.0
 
 
-def build() -> list[dict[str, Any]]:
+def build() -> tuple[list[dict[str, Any]], list[str]]:
     vocab = load_js_array(VOCAB_PATH, "ENGLISH_VOCABULARY_DATA")
-    selected = select_verbs(vocab)
+    ecdict = load_ecdict()
+    candidates: dict[str, tuple[float, dict[str, str], str]] = {}
+    rejected: list[str] = []
+    for entry in vocab:
+        base = str(entry.get("english", "")).lower()
+        if base in candidates or base in MODAL_OR_DEFECTIVE or base in EXCLUDED:
+            continue
+        if not re.fullmatch(r"[a-z]+", base):
+            continue
+        forms = inflections(base)
+        if not forms:
+            continue
+        gloss = verb_gloss(ecdict.get(base, "")) or verb_gloss(str(entry.get("meaning") or ""))
+        if base in GLOSS_OVERRIDES:
+            gloss = GLOSS_OVERRIDES[base]
+        if not gloss:
+            rejected.append(base)
+            continue
+        score = verb_score(base, forms)
+        if score < MIN_VERB_SCORE and base not in {"be", "have", "do"}:
+            continue
+        candidates[base] = (score, forms, gloss)
+
+    ordered = sorted(candidates.items(), key=lambda kv: (kv[0] not in {"be", "have", "do"}, -kv[1][0], kv[0]))
     entries: list[dict[str, Any]] = []
-    for rank, entry in enumerate(selected, start=1):
-        base = str(entry["english"]).lower()
+    for rank, (base, (score, forms, gloss)) in enumerate(ordered[:TARGET_COUNT], start=1):
         entries.append(
             {
                 "rank": rank,
                 "infinitive": base,
-                "frequency": english_frequency(base, int(entry.get("rank") or 999999)),
+                "frequency": round(score, 4),
                 "english": f"to {base}",
-                "chinese": clean_gloss(str(entry.get("chinese") or entry.get("meaning") or "")),
-                "tenses": build_tenses(base),
+                "chinese": gloss,
+                "tenses": build_tenses(base, forms),
             }
         )
-    return entries
+    return entries, rejected
 
 
 def main() -> None:
-    data = build()
+    data, rejected = build()
     header = (
         "// Auto-generated by scripts/build_english_conjugations.py\n"
-        f"// Source: data/english-vocabulary.js + wordfreq Zipf frequency; total entries: {len(data)}; "
+        f"// Source: data/english-vocabulary.js headwords; forms: hand table + lemminflect (MIT); glosses: ECDICT verb senses; ranked by wordfreq Zipf of unambiguous verb forms; total entries: {len(data)}; "
         "schema mirrors data/conjugations-all-tenses.js\n"
     )
     OUT_PATH.write_text(
         header
         + "const ENGLISH_CONJUGATION_DATA = "
-        + json.dumps(data, ensure_ascii=False, indent=2)
-        + ";\n",
+        + "[\n"
+        # 一行一个动词：比 indent=2 小约 3 倍（这个文件按需懒加载，但仍要下载）
+        + ",\n".join(json.dumps(e, ensure_ascii=False, separators=(",", ":")) for e in data)
+        + "\n];\n",
         encoding="utf-8",
     )
     print(f"Wrote {len(data)} entries to {OUT_PATH}")

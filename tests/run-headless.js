@@ -31,6 +31,7 @@ const VALIDATORS = [
   'scripts/validate_french_extras.js',
   'scripts/validate_french_vocabulary.js',
   'scripts/validate_french_conjugations.js',
+  'scripts/validate_english_conjugations.js',
   'scripts/validate_french_grammar.js',
   'scripts/validate_german_extras.js',
   'scripts/validate_german_vocabulary.js',
