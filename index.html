@@ -2243,24 +2243,5 @@ love
   <script defer src="lib/lang-loader.js"></script>
   <script defer src="lib/boot.js"></script>
 
-  <script>
-    // 词库自检。挂在 LangLoader 的 done 上而不是 DOMContentLoaded：真事件触发时
-    // 语言包还没注入，那时查 VOCABULARY_DATA 只会报一条假的加载失败。
-    // 只在意大利语包就位时校验意大利语词库；其它语言各自有自己的错误卡。
-    window.LangLoader.on(function (type, detail) {
-      if (type !== 'done') return;
-      if (detail.lang === 'italian') {
-        if (typeof VOCABULARY_DATA !== 'undefined') {
-          console.log('vocabulary.js 加载成功，包含 ' + VOCABULARY_DATA.length + ' 个单词');
-        } else {
-          console.error('vocabulary.js 加载失败或 VOCABULARY_DATA 未定义');
-        }
-      }
-      if (!detail.boot) return;
-      // CDN 兜底兜底：onerror 不触发但脚本仍未生效时（例如被拦截器静默替换）也能降级
-      window.CdnFallback.chart();
-      window.CdnFallback.marked();
-    });
-  </script>
 </body>
 </html>
