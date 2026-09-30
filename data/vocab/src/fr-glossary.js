@@ -1,4 +1,7 @@
-// French textbook glossary - the authoritative A1-B2 layer of the module.
+// French textbook glossary - the authoritative A1-B2 layer of data/vocab/fr.js.
+// A build input merged by `python3 scripts/build_french_vocabulary.py assemble`;
+// the site never loads this file.
+//
 // Extracted from the four 你好！法语 "Lexique trilingue" sections; the site
 // redistributes vocabulary records only, never scanned pages.
 //
@@ -2009,10 +2012,6 @@ const FRENCH_GLOSSARY_VOCABULARY_DATA = [
   {"french":"voilier","display":"voilier","printed":"voilier","feminine":"","meaning":"帆船","chinese":"帆船","english":"sailboat (a boat propelled by sails); sailfish","notes":"B2 · 教材总词汇表 · n.m.pl","rank":8594,"source":"《你好！法语4》总词汇表 · PDF p.164","level":"B2","partOfSpeech":"n.m.pl","gender":"m","textbookPage":"164","frequency":3.4,"freqRank":8594,"freqSource":"Lexique 3.83（CC-BY-SA）"},
   {"french":"zen","display":"zen","printed":"zen","feminine":"","meaning":"禅的；平静放松的","chinese":"禅的；平静放松的","english":"zen; extremely relaxed and collected","notes":"B2 · 教材总词汇表 · adj","rank":11151,"source":"《你好！法语4》总词汇表 · PDF p.164","level":"B2","partOfSpeech":"adj","gender":"","textbookPage":"164","frequency":2.155,"freqRank":11151,"freqSource":"Lexique 3.83（CC-BY-SA）"},
 ];
-
-if (typeof window !== 'undefined') {
-  window.FRENCH_GLOSSARY_VOCABULARY_DATA = FRENCH_GLOSSARY_VOCABULARY_DATA;
-}
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = FRENCH_GLOSSARY_VOCABULARY_DATA;

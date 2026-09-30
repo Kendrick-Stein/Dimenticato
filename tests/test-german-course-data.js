@@ -1,8 +1,11 @@
 'use strict';
 
 const assert = require('node:assert/strict');
-const vocabulary = require('../data/german-vocabulary.js');
+const { loadVocab } = require('../scripts/vocab_node.js');
 const course = require('../data/german-course-data.js');
+
+// data/vocab/de.js（schema v1）：word 是词元，display 带冠词，屈折形在 forms 里
+const vocabulary = loadVocab('de').entries;
 
 const normalize = value => String(value || '')
   .normalize('NFKC')
@@ -15,9 +18,10 @@ const normalize = value => String(value || '')
 // gegessen 这类形式，词库改成按词元收录之后必须靠这张表才解析得到。
 const inflectedForms = word => {
   const forms = [];
-  if (word.plural) forms.push(word.plural);
-  if (word.principalParts) {
-    for (const part of String(word.principalParts).split(',')) {
+  const { plural, principalParts } = word.forms || {};
+  if (plural) forms.push(plural);
+  if (principalParts) {
+    for (const part of String(principalParts).split(',')) {
       for (const token of part.trim().split(/\s+/)) {
         if (token && !/^(hat|ist|haben|sein|hast|bin)$/.test(token)) forms.push(token);
       }
@@ -28,7 +32,7 @@ const inflectedForms = word => {
 
 const wordIndex = new Map();
 for (const word of vocabulary) {
-  for (const value of [word.german, word.display]) {
+  for (const value of [word.word, word.display]) {
     const key = normalize(value);
     if (key && !wordIndex.has(key)) wordIndex.set(key, word);
   }
@@ -58,7 +62,7 @@ for (const unit of units) {
   // german-course.js resolveHeadwords() 会去重，所以这里断言的是去重之后
   // 还够不够排一课，而不是 headword 数与词条数一一对应。
   assert.ok(
-    new Set(words.map(word => word.german)).size >= 10,
+    new Set(words.map(word => word.word)).size >= 10,
     `${unit.id} resolves to fewer than ten distinct practice words`
   );
 }

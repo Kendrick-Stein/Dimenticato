@@ -1,31 +1,27 @@
 /**
  * Cognate Extractor Script
- * 从 vocabulary.js 提取与英语相似的 cognate 单词
+ * 从 data/vocab/it.js（schema v1）提取与英语相似的 cognate 单词
  *
- * 运行: node scripts/cognate_extractor.js
- * 输出: data/cognates.js
+ * 运行: node scripts/cognate_extractor.js [输出路径]
+ * 输出: data/cognates.js（默认）
+ *
+ * 注意：data/cognates.js 生成后经过多轮人工校订（见其文件头），重跑会覆盖这些校订；
+ * 需要对照时请把输出写到别处。rank 是 v1 的稠密频率名次（1…N）。
  */
 
 const fs = require('fs');
 const path = require('path');
+const { loadVocab } = require('./vocab_node');
 
 const rootDir = path.join(__dirname, '..');
-const vocabPath = path.join(rootDir, 'vocabulary.js');
+// 旧 vocabulary.js 的 rank 是稀疏的语料名次，筛选上限是 10000；v1 rank 是稠密的
+// 1…N，旧名次 10000 正好对应 v1 第 3977 名，取整为 4000。
+const RANK_LIMIT = 4000;
 
-// 读取 vocabulary.js 并提取 VOCABULARY_DATA
-const vocabContent = fs.readFileSync(vocabPath, 'utf8');
-const match = vocabContent.match(/const VOCABULARY_DATA = (\[[\s\S]*?\n\]);/);
-if (!match) {
-  console.error('无法解析 vocabulary.js');
-  process.exit(1);
-}
-let vocabulary;
-try {
-  vocabulary = JSON.parse(match[1]);
-} catch (e) {
-  console.error('解析 vocabulary.js JSON 失败:', e.message);
-  process.exit(1);
-}
+// v1 字段 → 本脚本沿用的旧字段名
+const vocabulary = loadVocab('it').entries.map((e) => ({
+  italian: e.word, english: e.en || '', chinese: e.zh || '', rank: e.rank,
+}));
 
 console.log(`总词条数: ${vocabulary.length}`);
 
@@ -156,8 +152,8 @@ vocabulary.forEach(entry => {
   // 计算相似度
   const { score, pattern } = calculateSimilarity(italian, firstEnglish);
 
-  // 筛选条件：相似度 >= 50 且 rank <= 10000
-  if (score >= 50 && rank <= 10000) {
+  // 筛选条件：相似度 >= 50 且 rank <= RANK_LIMIT
+  if (score >= 50 && rank <= RANK_LIMIT) {
     const difficulty = getDifficulty(score);
 
     cognates.push({
@@ -203,6 +199,6 @@ const jsContent = `// Cognate Vocabulary Data
 const COGNATE_DATA = ${JSON.stringify(cognates, null, 2)};
 `;
 
-const outputPath = path.join(rootDir, 'data', 'cognates.js');
+const outputPath = process.argv[2] ? path.resolve(process.argv[2]) : path.join(rootDir, 'data', 'cognates.js');
 fs.writeFileSync(outputPath, jsContent, 'utf8');
 console.log(`\n✅ 已保存到: ${outputPath}`);

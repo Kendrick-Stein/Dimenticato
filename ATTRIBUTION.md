@@ -40,37 +40,37 @@ ECDICT 的代码仓库声明 MIT，但**其 sqlite 数据分发包内不含 LICE
 | 文件 | 来源 |
 |---|---|
 | `data/french-conjugations.js` | 简单时态词形、分词、助动词、嘘音 h 标记 = kaikki/Wiktextract（CC BY-SA 4.0 + GFDL）；词频与排名、过去分词配合形 = Lexique 3.83（CC BY-SA 4.0）；复合时态、代动词层、正则变位引擎、词形分类器 = `scripts/build_french_conjugations.py` 原创；中文释义 = 人工修订，新词经 ECDICT 中转 |
-| `data/french-vocabulary-core.js` | 排名与词频 = Lexique 3.83；英语释义 = Wiktionary/kaikki；中文释义 = ECDICT 中转 |
-| `data/french-vocabulary-glossary.js` | 词表本身摘自《你好！法语》1-4 册 Lexique trilingue（教材词表，仅供学习）；词频与排名 = Lexique 3.83；英语释义 = Wiktionary/kaikki |
-| `data/french-vocabulary.js` | 同上（core 与 glossary 的合并视图） |
+| `data/vocab/fr.js` | 三层合并（逐条 `src` 指向 `meta.sources`）：词频核心层 = 排名与词频 Lexique 3.83、英语释义 Wiktionary/kaikki、中文释义 ECDICT 中转；教材层见下两行 |
+| `data/vocab/src/fr-glossary.js` | 词表本身摘自《你好！法语》1-4 册 Lexique trilingue（教材词表，仅供学习）；词频与排名 = Lexique 3.83；英语释义 = Wiktionary/kaikki |
+| `data/vocab/src/fr-curriculum.js` | 课程整理词表（按教材 A1-B1 主题范围原创整理）；词频 = Lexique 3.83 |
 | `data/french-grammar-data.js` | 讲解与例句 = 为本项目原创撰写；变位表 = `scripts/build_french_grammar.py` 内置引擎生成，事实对照 French Wiktionary（CC BY-SA 3.0）与 `data/french-conjugations.js` |
-| `data/french-cognates.js` | Lexique 3.83 + Wiktionary/Wiktextract + `data/english-vocabulary.js`；假朋友表为原创撰写 |
+| `data/french-cognates.js` | Lexique 3.83 + Wiktionary/Wiktextract + `data/vocab/en.js`；假朋友表为原创撰写 |
 | `data/french-collocations-data.js` | 原创搭配表与原创例句（`scripts/sources/french-collocations/`）+ Tatoeba（CC BY 2.0 FR）例句 + Lexique 3.83 |
 
 ### 德语
 
 | 文件 | 来源 |
 |---|---|
-| `data/german-vocabulary.js` | 中文释义 = HanDeDict（CC BY-SA 3.0）/ pgh.csv（CC BY-SA 4.0）/ ECDICT 中转；英语释义、词性、性别、复数 = Wiktextract（CC BY-SA 4.0）；词频 = OpenSubtitles-2018 + Tatoeba 大小写模型 |
-| `data/german-conjugations.js` | 词形 = en.wiktionary via wiktextract/kaikki（CC BY-SA 4.0），对照 german-pos-dict / Morphy（CC BY-SA 4.0）校验；释义 = `data/german-vocabulary.js`；词频 = wordfreq |
+| `data/vocab/de.js` | 中文释义 = HanDeDict（CC BY-SA 3.0）/ pgh.csv（CC BY-SA 4.0）/ ECDICT 中转；英语释义、词性、性别、复数 = Wiktextract（CC BY-SA 4.0）；词频 = OpenSubtitles-2018 + Tatoeba 大小写模型 |
+| `data/german-conjugations.js` | 词形 = en.wiktionary via wiktextract/kaikki（CC BY-SA 4.0），对照 german-pos-dict / Morphy（CC BY-SA 4.0）校验；释义 = `data/vocab/de.js`；词频 = wordfreq |
 | `data/german-course-data.js` | 课程结构参照《走遍德国 / Passwort Deutsch》A1-B1 与《Mittelpunkt》B2-C1 的主题编排（仅结构，不含教材原文）；例句 = Tatoeba（CC BY 2.0 FR） |
 | `data/german-grammar-data.js` | 讲解与例句为本项目原创撰写 |
-| `data/german-cognates.js` | 由 `data/german-vocabulary.js` 与 `data/english-vocabulary.js` 派生 |
+| `data/german-cognates.js` | 由 `data/vocab/de.js` 与 `data/vocab/en.js` 派生 |
 | `data/german-collocations-data.js` | 原创搭配表与原创例句（`scripts/sources/german-rektion/`）+ Tatoeba（CC BY 2.0 FR）例句 |
 
 ### 英语
 
 | 文件 | 来源 |
 |---|---|
-| `data/english-vocabulary.js` | 词频排序 = wordfreq；释义 = EnWords.csv / ECDICT |
-| `data/english-conjugations.js` | 由 `scripts/build_english_conjugations.py` 的规则引擎从 `data/english-vocabulary.js` + wordfreq 生成 |
+| `data/vocab/en.js` | 词频排序 = wordfreq；释义 = EnWords.csv / ECDICT |
+| `data/english-conjugations.js` | 由 `scripts/build_english_conjugations.py` 的规则引擎从 `data/vocab/en.js` + wordfreq 生成 |
 | `data/english-grammar-data.js` | 原创撰写 |
 
 ### 意大利语
 
 | 文件 | 来源 |
 |---|---|
-| `vocabulary.js` | 意大利语语料词频表 + 英汉释义；逐条 `source` 字段未保留，早期数据 |
+| `data/vocab/it.js` | 意大利语语料词频表 + 英汉释义（早期数据，逐条来源未保留）；词性/名词性别 = Wiktionary/kaikki（CC BY-SA 4.0）+ Morph-it!（CC BY-SA 2.0 / LGPL），由 `scripts/build_italian_vocabulary_tags.py` 标注 |
 | `data/conjugations-all-tenses.js` | 由 `scripts/build_it50k_conjugations.py` 生成（该脚本已不在仓库内），基于 `data/it50k-verb-lemmas.json` 频率表 |
 | `data/cognates.js` | 由意大利语词表与英语词表派生 |
 | `data/grammar-data.js`、`data/verb-collocations-data.js` | 原创撰写 |

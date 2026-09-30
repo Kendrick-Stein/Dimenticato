@@ -2,17 +2,19 @@
 """
 Build a learner-useful English vocabulary data file.
 
-Output: data/english-vocabulary.js   (const ENGLISH_VOCABULARY_DATA)
-Item shape (field contract consumed by german-app.js / lib/quiz-engine.js):
+Output: data/vocab/en.js   (schema v1, see docs/vocab-schema.md)
+
+Internally each word is built in the pipeline's own shape
     { english, meaning, chinese, notes, rank, source }
   - english : the headword (lowercase)
   - meaning : clean, usable Chinese gloss WITH part-of-speech markers
-              (this is the quiz answer field: fieldMap target = 'meaning')
   - chinese : Chinese-only portion (POS markers stripped) when it can be
               separated cleanly; otherwise == meaning
-  - notes   : short part-of-speech hint (e.g. "n. v.") shown as a hint button
+  - notes   : short part-of-speech hint (e.g. "n. v.")
   - rank    : 1-based REAL English frequency rank (1 = most common)
   - source  : provenance string ("wordfreq+EnWords" or "wordfreq+ECDICT")
+and the final list is mapped onto v1 by vocab_legacy.from_en(): the POS
+markers in `meaning` become `pos` / `posAll`, the rest becomes `zh`.
 
 Pipeline
 --------
@@ -59,18 +61,19 @@ Run:  python3 scripts/build_english_vocab.py
 
 import os
 import csv
-import json
 import re
+import sys
 
 from wordfreq import top_n_list
 
 HERE = os.path.dirname(__file__)
+sys.path.insert(0, os.path.abspath(HERE))
+import vocab_legacy  # noqa: E402
 # Note: the source directory name has a real leading space — preserve it.
 ENWORDS_FILE = os.path.join(HERE, '..', ' english-data', 'english word', 'EnWords.csv')
 # Trimmed ECDICT slice (committed). Built/refreshed from ECDICT_FULL when set.
 ECDICT_SLICE = os.path.join(HERE, '..', ' english-data', 'english word', 'ecdict-slice.csv')
 ECDICT_FULL = os.environ.get('ECDICT_FULL')  # optional full upstream ecdict.csv
-OUT_FILE = os.path.join(HERE, '..', 'data', 'english-vocabulary.js')
 
 # How many wordfreq candidates to scan. We keep every candidate that has a
 # usable gloss, so the final list is naturally smaller than this.
@@ -384,19 +387,9 @@ def main() -> None:
           f"skipped {skipped_no_gloss} without usable gloss, "
           f"{skipped_proper} proper nouns.")
 
-    payload = json.dumps(words, ensure_ascii=False, indent=2)
-    out = (
-        "// English vocabulary data — frequency-ranked (wordfreq) + EnWords.csv / ECDICT glosses\n"
-        f"// Total entries: {len(words)}\n"
-        "// Structure: {english, meaning, chinese, notes, rank, source}\n\n"
-        f"const ENGLISH_VOCABULARY_DATA = {payload};\n\n"
-        "if (typeof module !== 'undefined' && module.exports) {\n"
-        "  module.exports = ENGLISH_VOCABULARY_DATA;\n"
-        "}\n"
-    )
-    with open(OUT_FILE, 'w', encoding='utf-8') as f:
-        f.write(out)
-    print(f"Done! Written to {OUT_FILE}")
+    out = vocab_legacy.emit('en', vocab_legacy.from_en(words),
+                            builder='scripts/build_english_vocab.py')
+    print(f"Done! Written to {out}")
 
 
 if __name__ == '__main__':

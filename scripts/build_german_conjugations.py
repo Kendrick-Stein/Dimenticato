@@ -31,8 +31,9 @@ Sources (all open; recorded per entry in the ``source`` field):
     independent cross-check of Präteritum and Partizip II.
   * wordfreq (MIT, Exquisite Corpus: OpenSubtitles/Wikipedia/news/…) for the
     corpus frequency that produces ``rank``.
-  * data/german-vocabulary.js for the Chinese glosses, with an English→Chinese
-    pivot through data/english-vocabulary.js (ECDICT-derived) as a fallback.
+  * data/vocab/de.js for the Chinese glosses, with an English→Chinese pivot
+    through data/vocab/en.js (ECDICT-derived) as a fallback.  Both are schema
+    v1 files read via scripts/vocab_schema.py (see load_vocab_views()).
 
 Downloads are cached under /tmp and are never committed.
 """
@@ -51,8 +52,8 @@ from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_PATH = ROOT / "data" / "german-conjugations.js"
-DE_VOCAB_PATH = ROOT / "data" / "german-vocabulary.js"
-EN_VOCAB_PATH = ROOT / "data" / "english-vocabulary.js"
+sys.path.insert(0, str(ROOT / "scripts"))
+import vocab_schema  # noqa: E402  (data/vocab/*.js reader)
 
 CACHE = Path("/tmp/dimenticato-de-conj")
 KAIKKI_URL = (
@@ -157,34 +158,57 @@ def download(url: str, dest: Path) -> Path:
     return dest
 
 
-def load_js_array(path: Path, const_name: str) -> list[dict[str, Any]]:
-    text = path.read_text(encoding="utf-8")
-    match = re.search(rf"const\s+{re.escape(const_name)}\s*=\s*\[", text)
-    if not match:
-        raise ValueError(f"Could not find {const_name} in {path}")
-    start = match.end() - 1
-    depth = 0
-    in_string = False
-    escape = False
-    for pos in range(start, len(text)):
-        ch = text[pos]
-        if in_string:
-            if escape:
-                escape = False
-            elif ch == "\\":
-                escape = True
-            elif ch == '"':
-                in_string = False
-            continue
-        if ch == '"':
-            in_string = True
-        elif ch == "[":
-            depth += 1
-        elif ch == "]":
-            depth -= 1
-            if depth == 0:
-                return json.loads(text[start : pos + 1])
-    raise ValueError(f"Could not parse array for {const_name} in {path}")
+# v1 part-of-speech names -> the ECDICT markers clean_chinese_pivot() splits on
+EN_POS_MARK = {"verb": "v", "noun": "n", "adjective": "adj", "adverb": "adv",
+               "preposition": "prep", "conjunction": "conj", "pronoun": "pron",
+               "article": "art", "interjection": "int", "numeral": "num",
+               "abbreviation": "abbr"}
+
+
+def en_pos_marked(entry: dict[str, Any]) -> str:
+    """Re-attach ECDICT POS markers to a v1 English `zh` ("n.书v.登记").
+
+    data/vocab/en.js moved the markers into `pos` / `posAll` and joins the
+    per-POS senses with "；"; the markers are restored when the sense count
+    matches the POS list so the pivot can pick the verbal sense.  (The pre-v1
+    `chinese` field kept a marker only where it was glued to a CJK character,
+    so the pivot used to skip a leading verbal sense: "get" pivoted to 到达
+    rather than 获得, "man" to 男人.)
+    """
+    zh = str(entry.get("zh") or "")
+    pos_all = entry.get("posAll") or ([entry["pos"]] if entry.get("pos") else [])
+    senses = zh.split("；") if len(pos_all) > 1 else [zh]
+    if not pos_all or len(senses) != len(pos_all):
+        return zh
+    return "".join(f"{EN_POS_MARK[p]}.{g}" if p in EN_POS_MARK else g
+                   for p, g in zip(pos_all, senses))
+
+
+def de_notes(entry: dict[str, Any]) -> str:
+    """The grammar hint this builder reads: "V · geht, ging, ist gegangen".
+
+    Only two things are taken from it — whether the headword is a verb
+    (VERB_NOTE_RE) and the perfect auxiliary (aux_from_notes) — both carried
+    by v1 `pos` / `posAll` and `forms.principalParts`.
+    """
+    pos_all = entry.get("posAll") or [entry.get("pos") or ""]
+    if "verb" not in pos_all:
+        return ""
+    parts = (entry.get("forms") or {}).get("principalParts") or ""
+    return " · ".join(bit for bit in ("V", parts) if bit)
+
+
+def load_vocab_views() -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]]]:
+    """(de_vocab, en_vocab) keyed by lower-cased headword, from data/vocab/*.js."""
+    de_vocab = {
+        str(e["word"]).lower(): {"german": e["word"], "chinese": e.get("zh") or "",
+                                 "notes": de_notes(e)}
+        for e in vocab_schema.read_vocab("de")["entries"]
+    }
+    en_vocab: dict[str, dict[str, Any]] = {}
+    for e in vocab_schema.read_vocab("en")["entries"]:
+        en_vocab.setdefault(str(e["word"]).lower(), {"chinese": en_pos_marked(e)})
+    return de_vocab, en_vocab
 
 
 def ss_normalize(text: str) -> str:
@@ -461,7 +485,7 @@ except Exception as exc:  # pragma: no cover
     ) from exc
 
 
-# Case-folded tokens that data/german-vocabulary.js lists as a *non-verb*
+# Case-folded tokens that data/vocab/de.js lists as a *non-verb*
 # headword ("Ende" -> "ende", "recht", "Macht" -> "macht").  Populated in main();
 # see lemma_frequency for why they are excluded from the frequency estimate.
 NON_VERB_TOKENS: set[str] = set()
@@ -555,14 +579,14 @@ def lemma_frequency(record: dict[str, Any], separable: bool) -> float:
 # --------------------------------------------------------------------------- #
 CJK_RE = re.compile(r"[一-鿿]")
 
-# Part-of-speech markers used by data/german-vocabulary.js ("Vt", "Adv", …).
+# Part-of-speech markers left in the pgh.csv glosses of data/vocab/de.js ("Vt", "Adv", …).
 DE_POS_RE = re.compile(
     r"(?<![A-Za-zÄÖÜäöüß])(?:Vt|Vi|Vr|Adv|Präp|Konj|Pron|Art|V)\s*\.?(?![A-Za-zÄÖÜäöüß])"
 )
 
 
 def clean_chinese(text: str) -> str:
-    """Strip the textbook apparatus out of data/german-vocabulary.js glosses.
+    """Strip the textbook apparatus out of data/vocab/de.js glosses.
 
     "搭乘, 行驶 2. Vt 驾驶 3. Vt 运输, 载送" -> "搭乘, 行驶"
     "知道, 了解, 记得2. + von 懂得"          -> "知道, 了解, 记得"
@@ -589,7 +613,7 @@ def clean_chinese(text: str) -> str:
     return text.strip(" ;,、")
 
 
-# ECDICT-style part-of-speech markers used by data/english-vocabulary.js.
+# ECDICT-style part-of-speech markers (restored on data/vocab/en.js by en_pos_marked).
 ECDICT_POS_RE = re.compile(
     r"(?<![A-Za-z])(n|vt|vi|v|adj|adv|prep|pron|conj|num|art|int|aux|abbr)\s*\.",
     re.IGNORECASE,
@@ -659,7 +683,7 @@ def build_glosses(
     if entry:
         chinese = clean_chinese(str(entry.get("chinese") or entry.get("meaning") or ""))
         if chinese:
-            gloss_source = "german-vocabulary.js"
+            gloss_source = "vocab/de.js"
     if not chinese:
         for gloss in record["glosses"][:5]:
             gloss = re.sub(r"\([^)]*\)", " ", gloss)
@@ -671,7 +695,7 @@ def build_glosses(
                 candidate = clean_chinese_pivot(str(en_vocab[key].get("chinese") or ""))
                 if candidate:
                     chinese = candidate
-                    gloss_source = f"EN pivot via english-vocabulary.js ({key})"
+                    gloss_source = f"EN pivot via vocab/en.js ({key})"
                     break
             if chinese:
                 break
@@ -708,7 +732,7 @@ def split_separable(lemma: str, record: dict[str, Any]) -> tuple[str, str, str] 
 
 
 # Perfect with *sein*: verbs of directed motion and change of state.  Used only
-# when neither data/german-vocabulary.js nor Wiktionary resolves the auxiliary
+# when neither data/vocab/de.js nor Wiktionary resolves the auxiliary
 # unambiguously; the base verb is consulted for separable-prefix verbs.
 SEIN_BASE_VERBS = {
     "begegnen", "bleiben", "einschlafen", "eilen", "entstehen", "erscheinen",
@@ -1191,13 +1215,7 @@ def main() -> None:
     kaikki = parse_kaikki(KAIKKI_PATH)
     gvd = load_gvd()
 
-    de_vocab = {
-        str(e.get("german", "")).lower(): e
-        for e in load_js_array(DE_VOCAB_PATH, "GERMAN_VOCABULARY_DATA")
-    }
-    en_vocab: dict[str, dict[str, Any]] = {}
-    for e in load_js_array(EN_VOCAB_PATH, "ENGLISH_VOCABULARY_DATA"):
-        en_vocab.setdefault(str(e.get("english", "")).lower(), e)
+    de_vocab, en_vocab = load_vocab_views()
 
     non_verb, nouns = build_non_verb_tokens(de_vocab)
     NON_VERB_TOKENS.update(non_verb)
@@ -1301,8 +1319,8 @@ def main() -> None:
         f"// {len(selected)} verbs ({separables} separable-prefix), ranked by wordfreq "
         "corpus frequency over the inflected paradigm.\n"
         "// Forms: en.wiktionary via wiktextract/kaikki.org (CC BY-SA 4.0), cross-checked against\n"
-        "// german-pos-dict / Morphy (CC BY-SA 4.0). Glosses: data/german-vocabulary.js with an\n"
-        "// EN->ZH pivot through data/english-vocabulary.js. Frequency: wordfreq (MIT).\n"
+        "// german-pos-dict / Morphy (CC BY-SA 4.0). Glosses: data/vocab/de.js with an\n"
+        "// EN->ZH pivot through data/vocab/en.js. Frequency: wordfreq (MIT).\n"
         "// Separable verbs keep the Satzklammer: main-clause forms are split ('stehe auf'),\n"
         "// indikativ_praesens_nebensatz holds the joined subordinate-clause forms ('aufstehe').\n"
     )

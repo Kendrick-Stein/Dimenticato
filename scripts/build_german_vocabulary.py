@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-Rebuild data/german-vocabulary.js  (const GERMAN_VOCABULARY_DATA).
+Rebuild data/vocab/de.js  (DIM_VOCAB.de, schema v1 — see docs/vocab-schema.md).
 
-This supersedes scripts/process_german_vocab.py, which only merged the in-repo
-pgh.csv Chinese glossary with an inverted HanDeDict slice and could therefore
-supply neither gender, nor part of speech, nor an English gloss, nor a CEFR
-level — and which let inflected forms ("den", "diese", "sich" as a noun-shaped
-headword) sit in the headword position at ranks 8/16/37/58.
+The pipeline assembles an internal list of rows (shape below) and hands it to
+vocab_legacy.emit("de", vocab_legacy.from_de(rows)), which maps it onto v1:
+german -> word, chinese -> zh, english -> en, partOfSpeech -> pos, gender(s)
+-> gender, plural / principalParts / pluraleTantum -> forms, the Goethe level
+-> level + levelSource "official", and `rank` -> the v1 order.  The pgh.csv
+parser (formerly scripts/process_german_vocab.py) lives in section 5a.
 
 Addresses audit findings:
   de-handedict-half-unusable       inflected-form headwords + genderless nouns
@@ -18,17 +19,21 @@ Addresses audit findings:
   de-vocab-no-tiering              `level` (A1..C1) + real corpus `frequency`
 
 --------------------------------------------------------------------------
-OUTPUT SCHEMA  (existing keys preserved verbatim; new keys are additive)
+INTERNAL ROW SHAPE  (input to vocab_legacy.from_de; not written to disk)
 --------------------------------------------------------------------------
-  german        str   bare lemma — the unique key used by german-app.js for the
-                      mastered set and by lib/quiz-engine.js as the source field.
+  german        str   bare lemma (v1 `word`), the mastered-set key.
                       GUARANTEED UNIQUE (homograph senses are merged).
   display       str   what the learner sees / TTS speaks: "der Tag" for nouns
                       with a known gender, "ab/bauen" for separable verbs.
   meaning       str   Chinese gloss (the quiz answer; == chinese, as before)
   chinese       str   Chinese gloss
   notes         str   short grammar hint (POS + gender + plural / principal parts)
-  source        str   provenance + which source each derived field came from
+  source        str   provenance tokens, one per derived field:
+                        zh:pgh.csv | zh:HanDeDict | zh:ECDICT-pivot | zh:curated
+                        en:Wiktextract | en:Wiktextract-obs | en:curated
+                        g:wikt | g:goethe  (where the gender came from)
+                        f:OpenSubtitles-2018+Tatoeba | f:OpenSubtitles-2018-surface
+                        lvl:goethe-A1|A2|B1 | lvl:freq-band
   rank          int   1-based dense rank over `frequency` (1 = most frequent)
   -- new --
   id            str   stable unique id, "de-00001"
@@ -86,7 +91,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 WORK = Path(os.environ.get("DE_VOCAB_WORK", "/tmp/de-vocab-build"))
 WORK.mkdir(parents=True, exist_ok=True)
-OUTPUT = ROOT / "data" / "german-vocabulary.js"
+PGH_SOURCE = ROOT / "deutsch-data" / "vocab" / "pgh.csv"
+BUILDER = "scripts/build_german_vocabulary.py"
 
 KAIKKI_URL = "https://kaikki.org/dictionary/German/kaikki.org-dictionary-German.jsonl"
 FREQ_URL = ("https://cdn.jsdelivr.net/gh/hermitdave/FrequencyWords@master"
@@ -1066,6 +1072,251 @@ SEPARABLE_PREFIXES = (
 )
 
 
+# ---------------------------------------------------------------------------
+# 5a. pgh.csv parsing (in-repo German->Chinese glossary)
+#
+# pgh.csv lines are "headword \"POS gloss\"", but ~51 lines lack the quote
+# delimiter and several glosses carry split-mangled brackets, "N)" sense
+# markers or dead "见 X" cross-references; the helpers below repair those.
+# ---------------------------------------------------------------------------
+
+# POS / register tokens that may prefix a body (or, for quote-less lines, may be
+# glued to the gloss right after the headword). Multi-char, capitalised tokens
+# only — single letters like n/m/f are NOT used for body-start detection because
+# they occur inside German words (e.g. the final n of "übernachten").
+POS_TOKENS = [
+    "Vt/Vi", "Vt", "Vi", "Vr", "Vimp",
+    "Adj", "Adv", "Präp", "Konj", "Pron", "Art", "Num", "Interj", "Pl",
+]
+# Single-letter gender/POS markers, only recognised as a standalone token.
+SHORT_POS = ["n", "m", "f"]
+# Tokens (with their optional trailing ",.") that we will fold off the head into
+# the body when they got glued onto the head's last token.
+ALL_POS = POS_TOKENS + SHORT_POS
+# Detect where the gloss begins on a quote-less line: a POS token that starts at
+# a token boundary (preceded by whitespace/start), or the first Chinese char.
+_POS_ALT = "|".join(re.escape(t) for t in POS_TOKENS)
+BODY_START_RE = re.compile(
+    r"(?:(?<=\s)|^)(?:" + _POS_ALT + r")|[一-鿿]"
+)
+
+
+def normalize_headword(text: str) -> str:
+    text = text.replace("/", "")
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def normalize_meaning(text: str) -> str:
+    text = text.replace("，", ", ")
+    text = re.sub(r"\s+", " ", text).strip(" \t\"'")
+    return text
+
+
+# Bracket pairs used when repairing split-mangled glosses. Includes ASCII and
+# full-width parens/brackets.
+_OPENERS = "([（【［"
+_CLOSERS = ")]）】］"
+_CLOSE_TO_OPEN = {")": "(", "]": "[", "）": "（", "】": "【", "］": "［"}
+
+
+def balance_brackets(text: str) -> str:
+    """Drop unmatched brackets left by a bad notes/meaning split.
+
+    Two passes: drop unmatched CLOSERS (left to right), then drop the opener
+    characters that are still unmatched at the end. We drop only the stray
+    bracket char itself, never the surrounding gloss text — so a source typo
+    like a missing "(" before "作完成时助动词" keeps the real Chinese sense.
+    """
+    out: list[str] = []
+    stack: list[tuple[str, int]] = []  # (opener char, index in `out`)
+    for ch in text:
+        if ch in _OPENERS:
+            stack.append((ch, len(out)))
+            out.append(ch)
+        elif ch in _CLOSERS:
+            if stack and stack[-1][0] == _CLOSE_TO_OPEN[ch]:
+                stack.pop()
+                out.append(ch)
+            # else: unmatched closer — drop it
+        else:
+            out.append(ch)
+    drop = {pos for _, pos in stack}  # unmatched openers
+    return "".join(c for i, c in enumerate(out) if i not in drop)
+
+
+# A cross-reference gloss that only says "see <other-headword>". When that
+# target headword is not itself in the dataset (true for "der"), the bare
+# reference is a dead end for the learner; we substitute a real gloss.
+_CROSSREF_RE = re.compile(r"^[(（]?\s*见\s*([A-Za-zÄÖÜäöüß]+)\s*[)）]?\s*$")
+_ARTICLE_GLOSS = {
+    "die": "定冠词 (阴性/复数); 见 der",
+    "das": "定冠词 (中性); 见 der",
+    "der": "定冠词 (阳性); 指示/关系代词",
+}
+
+
+def cleanup_meaning(german: str, meaning: str) -> str:
+    """Repair residual source-CSV blemishes in a Chinese gloss.
+
+    - balance stray brackets left by the notes/meaning split
+    - rescue dead "see <headword>" cross-references (e.g. die/das -> der)
+    - strip dangling leading/trailing sense markers and stray punctuation
+    """
+    # Normalize "N)" sense markers (a Chinese-dict convention, e.g.
+    # "1)圆盘 2)薄片") to "N." BEFORE balancing, so the marker is not mangled
+    # into an orphan digit when its unmatched ")" is dropped.
+    s = re.sub(r"(?<![\d(（])(\d)[)）](?=\s*[一-鿿])", r"\1.", meaning)
+    s = balance_brackets(s)
+    # Drop a trailing dangling sense number left after an unmatched opener was
+    # removed (e.g. "...; 3." or trailing " 2.").
+    s = re.sub(r"[;；]\s*\d+\.\s*$", "", s)
+    s = re.sub(r"\s+\d+\.\s*$", "", s)
+    # A leading orphan sense number left after a dropped "(" (e.g. "2粪，屎").
+    s = re.sub(r"^\s*\d+\s*(?=[一-鿿])", "", s)
+    s = re.sub(r"\s+", " ", s).strip(" ,，;；、/")
+    # Rescue a pure "见 X" cross-reference to a missing headword.
+    m = _CROSSREF_RE.match(s)
+    if m and m.group(1).lower() not in _PRESENT_HEADWORDS:
+        return _ARTICLE_GLOSS.get(german.lower(), f"见 {m.group(1)}")
+    # Substitute the canonical article gloss for the definite articles, whose
+    # source line is only a mangled cross-reference.
+    if german.lower() in _ARTICLE_GLOSS and (not s or "见 der" in s or s.startswith("见")):
+        return _ARTICLE_GLOSS[german.lower()]
+    return s
+
+
+# Populated in parse_pgh() once all headwords are known, so cross-reference
+# rescue can tell whether a "见 X" target actually exists in the dataset.
+_PRESENT_HEADWORDS: set[str] = set()
+
+
+def split_body(body: str) -> tuple[str, str]:
+    """Split a body into (notes, chinese_meaning).
+
+    `notes` is the leading POS / grammatical info (Latin-script) and `chinese`
+    is the Chinese gloss starting at the first CJK character. If an opening
+    bracket immediately precedes that first CJK char (a Chinese explanatory
+    parenthetical like "(目标)向"), the opener is moved into the meaning so the
+    parenthesis is not split across the notes/meaning boundary.
+    """
+    body = body.strip().strip('"').strip()
+    match = re.search(r"[一-鿿]", body)
+    if not match:
+        return "", normalize_meaning(body)
+
+    idx = match.start()
+    notes = body[:idx]
+    meaning = body[idx:]
+    # Pull trailing opener(s) on the notes side into the meaning so the
+    # parenthetical that wraps the first Chinese char stays intact.
+    om = re.search(r"([(\[（【［]+)\s*$", notes)
+    if om:
+        meaning = om.group(1) + meaning
+        notes = notes[: om.start()]
+    notes = notes.strip(" ,;，；")
+    return notes, normalize_meaning(meaning)
+
+
+def split_line(line: str) -> tuple[str, str]:
+    """Return (head, body) for a source line.
+
+    Quoted lines: head is everything before the first quote, body is inside the
+    quotes. Quote-less lines (e.g. "Argentinien 阿根廷", "analog Adj模拟的")
+    are split at the first whitespace that precedes the gloss start (a POS token
+    or a Chinese character), so the headword never absorbs the gloss.
+    """
+    if line.startswith('"'):
+        # The headword itself is a quoted phrase, e.g. "mehr oder weniger" 或多或少
+        # or "zu viel" "Adv 太多". Head = first quoted span; body = the rest.
+        m = re.match(r'"([^"]*)"\s*(.*)$', line)
+        if m:
+            head = m.group(1).strip()
+            rest = m.group(2).strip()
+            # The remainder may itself be quoted ("Adv 太多") — unwrap it.
+            if rest.startswith('"') and rest.endswith('"'):
+                rest = rest[1:-1].strip()
+            return head, rest
+    if '"' in line:
+        head, quoted = line.split('"', 1)
+        body = quoted.rsplit('"', 1)[0]
+        return head.strip(), body
+
+    # No quote: the gloss begins at a POS token or the first Chinese char.
+    m = BODY_START_RE.search(line)
+    if not m:
+        return line.strip(), ""
+    cut = m.start()
+    head = line[:cut].strip()
+    body = line[cut:].strip()
+
+    # If the gloss started mid-token at the first Chinese char, the POS marker
+    # (Adj/Vi/Vt/n...) may be glued to the head's last token, e.g.
+    # "übernachten Vi过夜" -> head "übernachten Vi". Strip a trailing POS token
+    # off the head and fold it into the body so split_body() can capture it as
+    # `notes`. A genuine word like reflexive "sich" (in "bemühen sich") is not a
+    # POS token and stays in the head.
+    head_tokens = head.split()
+    if head_tokens and head_tokens[-1].rstrip(",.") in ALL_POS:
+        pos = head_tokens.pop()
+        head = " ".join(head_tokens)
+        body = (pos + " " + body).strip()
+    # Move any trailing opening-bracket that belongs to the gloss back into the
+    # body, e.g. head "vor/strecken (" + body "向前)伸出".
+    m2 = re.search(r"\s*([(（\[]+)$", head)
+    if m2:
+        head = head[: m2.start()]
+        body = (m2.group(1) + body).strip()
+    return head.strip(), body
+
+
+def parse_pgh() -> list[dict]:
+    """Parse pgh.csv into {german, display, meaning, chinese, notes, source} rows."""
+    # Phase 1: parse raw head/notes/gloss for every line.
+    raw_entries = []
+    with PGH_SOURCE.open("r", encoding="utf-8-sig") as f:
+        for source_order, raw_line in enumerate(f, start=1):
+            line = raw_line.strip()
+            if not line:
+                continue
+
+            head, body = split_line(line)
+            original = head.strip()
+            if not original:
+                continue
+            german = normalize_headword(original)
+            notes, chinese = split_body(body)
+            raw_entries.append((source_order, original, german, notes, chinese))
+
+    # Record all headwords so cross-reference rescue can tell whether a
+    # "见 X" target actually exists in the dataset.
+    _PRESENT_HEADWORDS.clear()
+    _PRESENT_HEADWORDS.update(g.lower() for _, _, g, _, _ in raw_entries)
+
+    # Phase 2: clean glosses (balance brackets, rescue dead cross-refs).
+    entries = []
+    for source_order, original, german, notes, chinese in raw_entries:
+        chinese = cleanup_meaning(german, chinese)
+        if not chinese:
+            # Last resort: never emit an empty answer. Fall back to the notes
+            # text (rare) or the headword itself so the entry stays usable.
+            chinese = notes or german
+        entry = {
+            "german": german,
+            "display": original,
+            "meaning": chinese,
+            "chinese": chinese,
+            "notes": notes,
+            # rank assigned later (by frequency); keep original order as
+            # the stable tie-breaker / fallback for unranked words.
+            "_order": source_order,
+            "source": "deutsch-data/vocab/pgh.csv",
+        }
+        entries.append(entry)
+
+    return entries
+
+
 def has_mojibake(s: str) -> bool:
     if "�" in s:
         return True
@@ -1198,8 +1449,7 @@ def main() -> None:
     pivot = EcdictPivot(paths["ecdict"])
 
     print("[5/6] parsing the in-repo pgh.csv Chinese glossary ...")
-    import process_german_vocab as pgh_mod
-    pgh_entries = pgh_mod.parse_entries()
+    pgh_entries = parse_pgh()
     pgh: dict[str, dict] = {}
     for e in pgh_entries:
         cur = pgh.get(e["german"])
@@ -1546,56 +1796,14 @@ def main() -> None:
     print("       levels:", dict(sorted(lv.items())))
     print("       pos:", dict(sorted(ps.items(), key=lambda kv: -kv[1])))
 
-    header = (
-        "// German vocabulary — rebuilt by scripts/build_german_vocabulary.py\n"
-        f"// Total entries: {len(ordered)}. Every entry has a distinct English and\n"
-        "// Chinese gloss, a part of speech, a CEFR level and a real corpus frequency;\n"
-        "// every countable noun has a gender; `german` is unique, so the mastered-set\n"
-        "// key that german-app.js derives from it is collision-free.\n"
-        "//\n"
-        "// Fields: {id, german, display, meaning, chinese, english, notes,\n"
-        "//  partOfSpeech, level, frequency, rank, source, partsOfSpeech?, gender?,\n"
-        "//  genders?, plural?, pluraleTantum?, properNoun?, principalParts?}\n"
-        "//   rank      1..N over `frequency`, 1 = most frequent (not the array index)\n"
-        "//   frequency OpenSubtitles-2018 German token count, aggregated onto the\n"
-        "//             lemma, de-lower-cased with a Tatoeba capitalisation model\n"
-        "//   level     A1..C1; Goethe-Institut word list where it exists,\n"
-        "//             otherwise a corpus-frequency band (see `source`)\n"
-        "//   gender    m|f|n, absent on a plurale tantum (`die Eltern`) and on a\n"
-        "//             proper noun (`Deutschland`), which take no singular article\n"
-        "//\n"
-        "// `source` records, per field, where the data came from and under which\n"
-        "// licence:\n"
-        "//   zh:pgh.csv(CC-BY-SA-4.0)      deutsch-data/vocab/pgh.csv, in-repo\n"
-        "//   zh:HanDeDict(CC-BY-SA-3.0)    github.com/gugray/HanDeDict, inverted\n"
-        "//   zh:ECDICT-pivot(MIT)          github.com/skywind3000/ECDICT via the\n"
-        "//                                 English gloss\n"
-        "//   zh:curated / en:curated       hand-checked in this repo (function words)\n"
-        "//   en:Wiktextract(CC-BY-SA-4.0)  kaikki.org German dump of the English\n"
-        "//                                 Wiktionary; also the source of POS,\n"
-        "//                                 gender, plural and principal parts\n"
-        "//   en:Wiktextract-obs            ... where the only surviving sense was\n"
-        "//                                 tagged obsolete/archaic\n"
-        "//   g:wikt | g:goethe             where the noun's gender came from\n"
-        "//   f:OpenSubtitles-2018+Tatoeba(CC-BY-SA-4.0/CC-BY-2.0)\n"
-        "//                                 hermitdave/FrequencyWords 2018 de counts,\n"
-        "//                                 recased with tatoeba.org German sentences\n"
-        "//   f:OpenSubtitles-2018-surface  ... the word's own surface count, used\n"
-        "//                                 where lemma attribution left it nothing\n"
-        "//   lvl:goethe-A1|A2|B1           Goethe-Institut Wortliste (level tag only)\n"
-        "//   lvl:freq-band                 inferred from `rank`\n\n"
-    )
-    body = ",\n".join(json.dumps(r, ensure_ascii=False, separators=(",", ":"))
-                      for r in ordered)
-    OUTPUT.write_text(
-        header
-        + "const GERMAN_VOCABULARY_DATA = [\n" + body + "\n];\n\n"
-        + "if (typeof module !== 'undefined' && module.exports) {\n"
-        + "  module.exports = GERMAN_VOCABULARY_DATA;\n"
-        + "}\n",
-        encoding="utf-8")
-    print(f"Generated {OUTPUT} with {len(ordered)} entries "
-          f"({OUTPUT.stat().st_size / 1e6:.1f} MB)")
+    # Schema v1 (docs/vocab-schema.md). `source` keeps the per-field
+    # provenance tokens documented in the module docstring; vocab_legacy maps
+    # them onto levelSource / forms.government and interns them in
+    # meta.sources.
+    import vocab_legacy
+    out = vocab_legacy.emit("de", vocab_legacy.from_de(ordered), builder=BUILDER)
+    print(f"Generated {out} with {len(ordered)} entries "
+          f"({out.stat().st_size / 1e6:.1f} MB)")
 
 
 if __name__ == "__main__":

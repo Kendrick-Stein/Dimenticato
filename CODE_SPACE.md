@@ -11,6 +11,8 @@
 
 > **2026-09-30 清理**：以下文件已从仓库删除，本文中涉及它们的段落仅作历史记录——两本意大利语书的 Markdown 全文（语法、动词搭配）、`data/grammar_content/**`、`data/grammar_tree.json`、` english-data/` 下的薄冰 docx / logical-grammar-master / SQL 导出、`deutsch-data/grammar/`（无许可证）、`data/conjugations-*.json` 及 failures、`data/vocabulary_*issues/fixed/corrections*.json`、`data/reverso_high_frequency_verbs.json` 与三个 vocabulary_*scanner/merge 脚本。运行时数据（`data/*.js`、`vocabulary.js`）不受影响。
 
+> **2026-09-30 词表统一（schema v1）**：四种语言的系统词表都改为 `data/vocab/<lang>.js`（`DIM_VOCAB.<lang> = {meta, entries}`，字段见 `docs/vocab-schema.md`）。旧文件 `vocabulary.js`、`data/german-vocabulary.js`、`data/english-vocabulary.js`、`data/french-vocabulary-core.js` 已删除；法语课程/教材层移到 `data/vocab/src/fr-curriculum.js`、`fr-glossary.js`，作为 `build_french_vocabulary.py assemble` 的输入。`scripts/process_german_vocab.py` 并入 `build_german_vocabulary.py`，`clean_italian_dictionary.py` 删除（`dictionary` 先验改由 it.js 的 `pos` 承担）。`validate_{italian,german,french}_vocabulary.js` 并入 `scripts/validate_vocab.js` 的 per-language hook。Node 端脚本统一通过 `scripts/vocab_node.js` 读取。下文仍提到旧文件名 / `*_VOCABULARY_DATA` 全局变量的段落（尤其是前端运行时部分）为历史记录，以代码为准。
+
 ---
 
 ## 1. 项目定位
@@ -70,15 +72,13 @@
 ├── stats-charts.js        ← 图表统计
 ├── german-app.js          ← German/English 站控制器
 ├── supabase-config.js     ← Supabase 配置
-├── vocabulary.js          ← Italian 系统词汇数据
 ├── data/
+│   ├── vocab/             ← 四语言系统词表 schema v1（it/de/en/fr.js；src/ 为法语教材层构建输入）
 │   ├── conjugations-all-tenses.js
 │   ├── conjugations-presente.js
 │   ├── grammar-data.js
 │   ├── verb-collocations-data.js
-│   ├── german-vocabulary.js
 │   ├── german-grammar-data.js
-│   ├── english-vocabulary.js
 │   └── english-grammar-data.js
 └── scripts/
     ├── parse_grammar.py
@@ -762,11 +762,12 @@
 
 ### 7.1 前端直接消费的数据
 
-#### `vocabulary.js`
+#### `data/vocab/<lang>.js`（it / de / en / fr）
 
-- 导出：`VOCABULARY_DATA`
-- 系统词汇主数据
-- 前端启动时直接加载
+- 导出：`globalThis.DIM_VOCAB.<lang> = { meta, entries }`，schema v1，字段见 `docs/vocab-schema.md`
+- 四种语言的系统词汇主数据（替代旧的 `vocabulary.js` / `data/german-vocabulary.js` / `data/english-vocabulary.js` / `data/french-vocabulary*.js`）
+- 构建：it = `build_italian_vocabulary_tags.py` + `clean_italian_glosses.py`；de = `build_german_vocabulary.py`；en = `build_english_vocab.py`；fr = `build_french_vocabulary.py`（`assemble` 合并 `data/vocab/src/` 两层 + 词频核心层）
+- 校验：`node scripts/validate_vocab.js`；Python 读写 `scripts/vocab_schema.py`，Node 读取 `scripts/vocab_node.js`
 
 #### `data/conjugations-all-tenses.js`
 
@@ -795,10 +796,10 @@
   - `verbs`
   - `prepositions`
 
-#### `data/german-vocabulary.js`
+#### `data/german-vocabulary.js`（历史，已由 `data/vocab/de.js` 取代）
 
 - 导出：`GERMAN_VOCABULARY_DATA`
-- 来源：`deutsch-data/vocab/pgh.csv`（经 `scripts/process_german_vocab.py` 处理）
+- 来源：`deutsch-data/vocab/pgh.csv`（原经 `scripts/process_german_vocab.py` 处理，该解析器现已并入 `build_german_vocabulary.py`）
 - 字段：`{ german, display, meaning, chinese, notes, rank, source }`
 - **2026-06-26 重建（两轮）**：① 改为按 `wordfreq('de')` 词频排序，修复 51 个引号缺失源行导致的错误 headword，保留 `notes` 与可分动词 `display`（9,361 条）；② 合并 [HanDeDict](https://github.com/gugray/HanDeDict)（**CC-BY-SA 3.0**，中→德反转去重后按词频并入）扩充至 **15,507** 条，并修复 287 处源 CSV 释义瑕疵（`die` → `定冠词 (阴性/复数); 见 der`，0 括号失衡）。合并切片 `deutsch-data/vocab/handedict-de-slice.csv`（452KB；`HANDEDICT_FULL=...` 可全量重建）。top10 由 `ab, ab/bauen…` 变为 `die, und, in, das…`
 - ⚠️ 许可：含 HanDeDict（CC-BY-SA 3.0）数据，公开分发需署名 + share-alike（README「数据来源与致谢」与 Help 弹窗已署名）
@@ -813,7 +814,7 @@
 - 由 `scripts/build_german_grammar.py` 生成
 - 供 `german-app.js > GermanApp._openGrammarBook()` 使用
 
-#### `data/english-vocabulary.js`
+#### `data/english-vocabulary.js`（历史，已由 `data/vocab/en.js` 取代）
 
 - 导出：`ENGLISH_VOCABULARY_DATA`
 - 来源：`english-data/english word/EnWords.csv`（注意目录名前有空格）+ `wordfreq` 词频

@@ -16,13 +16,14 @@
  *   3. a grammatical case marked on every governed preposition
  *   4. cognates: gloss, part of speech, gender on nouns, real corpus rank
  *   5. course: grammar slugs resolve against the German grammar tree,
- *      headwords resolve against german-vocabulary.js, examples are real
+ *      headwords resolve against data/vocab/de.js, examples are real
  */
 'use strict';
 
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const { loadVocab } = require('./vocab_node');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -62,7 +63,17 @@ const course = load('german-course-data.js', 'GERMAN_COURSE_DATA');
 const italianCollocations = load('verb-collocations-data.js', 'VERB_COLLOCATIONS_DATA');
 const italianCognates = load('cognates.js', 'COGNATE_DATA');
 const grammar = load('german-grammar-data.js', 'GERMAN_GRAMMAR_DATA');
-const vocabulary = load('german-vocabulary.js', 'GERMAN_VOCABULARY_DATA');
+// data/vocab/de.js (schema v1), mapped onto the field names used below
+const vocabulary = loadVocab('de').entries.map(function (e) {
+  const forms = e.forms || {};
+  return {
+    german: e.word,
+    display: e.display || e.word,
+    plural: forms.plural || '',
+    principalParts: forms.principalParts || '',
+    chinese: e.zh,
+  };
+});
 
 // ---------------------------------------------------------------------------
 // shared text hygiene
@@ -446,7 +457,7 @@ check(Array.isArray(collocations.meta.licenses) && collocations.meta.licenses.le
         check(!badText(headword), CAT, where + ': bad headword ' + JSON.stringify(headword));
         const word = vocabIndex.get(normalize(headword));
         if (!check(!!word, CAT, where + ': headword "' + headword +
-          '" does not resolve against german-vocabulary.js')) return;
+          '" does not resolve against data/vocab/de.js')) return;
         localSeen.add(word.german);
         check(!badText(word.meaning || word.chinese), CAT,
           where + ': headword "' + headword + '" has no usable gloss');

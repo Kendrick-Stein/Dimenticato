@@ -45,7 +45,7 @@ TRANSLATION_STATUS.md
 data/vocabulary.json.backup
 data/vocabulary_progress.json
 
-# Raw data files (已经打包到 vocabulary.js)
+# Raw data files（旧的意大利语词表中间产物；词表现在是 data/vocab/it.js）
 data/vocabulary.json
 data/stats.json
 ita-eng/
@@ -69,7 +69,7 @@ worktrees/
 # - index.html
 # - styles.css
 # - app.js
-# - vocabulary.js
+# - data/vocab/*.js
 # - README.md
 # - TXT_FORMAT_GUIDE.md
 # - custom_wordbook_template.json

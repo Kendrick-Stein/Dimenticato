@@ -23,20 +23,19 @@ const ROOT = path.resolve(TESTS_DIR, '..');
 const HTML_HARNESSES = ['test-quiz-engine.html', 'test-spaced-repetition.html'];
 const NODE_HARNESSES = ['test-french-data.js', 'test-german-course-data.js', 'test-storage.js', 'test-typing-game.js', 'test-typing-game-app.js'];
 
-// 数据集校验器。上面的 harness 一个都不 require *cognates.js / *-vocabulary.js，
+// 数据集校验器。上面的 harness 一个都不 require *cognates.js / data/vocab/*.js，
 // 生成数据和它的输入分头改动时（语法树重命名、词库重建）不会有任何测试变红——
 // 已经这样漏过三次。校验器覆盖的正是这块，接进来当阻断项。
+// 四种语言的词表（data/vocab/<lang>.js）统一由 validate_vocab.js 校验，
+// 各语言的专属规则是它里面的 per-language hook。
 const VALIDATORS = [
   'scripts/validate_vocab.js',
   'scripts/validate_italian_extras.js',
-  'scripts/validate_italian_vocabulary.js',
   'scripts/validate_french_extras.js',
-  'scripts/validate_french_vocabulary.js',
   'scripts/validate_french_conjugations.js',
   'scripts/validate_english_conjugations.js',
   'scripts/validate_french_grammar.js',
   'scripts/validate_german_extras.js',
-  'scripts/validate_german_vocabulary.js',
   'scripts/validate_german_grammar.js',
   'scripts/validate_english_grammar.js',
   'scripts/validate_english_collocations.js',

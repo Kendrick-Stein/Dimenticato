@@ -229,16 +229,15 @@ Dimenticato/
 ├── community-wordbooks.js
 ├── cognate-app.js
 ├── typing-game-app.js   ← 打字游戏（数据接入 + 游戏屏渲染）
-├── vocabulary.js
 ├── lib/
 │   ├── boot.js
 │   ├── lang-loader.js
 │   ├── typing-game.js   ← 打字游戏引擎（逻辑/渲染分离）
 │   └── …
 ├── data/
+│   ├── vocab/           ← 四语言统一词表 schema v1（it/de/en/fr.js，见 docs/vocab-schema.md）
+│   │   └── src/         ← 法语教材层构建输入（fr-curriculum.js、fr-glossary.js）
 │   ├── german-course-data.js
-│   ├── french-vocabulary.js
-│   ├── french-vocabulary-glossary.js
 │   ├── french-grammar-data.js
 │   └── french-conjugations.js
 ├── scripts/
@@ -290,7 +289,14 @@ python3 scripts/build_english_grammar.py
 ### French 教材总词汇表数据构建
 
 ```bash
-python3 scripts/build_french_vocabulary_glossary.py REVIEWED_OCR.json data/french-vocabulary-glossary.js
+python3 scripts/build_french_vocabulary_glossary.py REVIEWED_OCR.json data/vocab/src/fr-glossary.js
+python3 scripts/build_french_vocabulary.py assemble   # 合并三层 -> data/vocab/fr.js
+```
+
+### 词表校验
+
+```bash
+node scripts/validate_vocab.js   # 四语言 schema v1 + 各语言专属规则
 ```
 
 ---

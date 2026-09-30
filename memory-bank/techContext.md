@@ -23,9 +23,7 @@
 - `english-data/`: English source data
 
 ## Important Data Files
-- `vocabulary.js`: Italian vocabulary
-- `data/german-vocabulary.js`: German vocabulary dataset
-- `data/english-vocabulary.js`: English vocabulary dataset
+- `data/vocab/{it,de,en,fr}.js`: unified vocabulary datasets (schema v1, see `docs/vocab-schema.md`)
 - `data/grammar-data.js`: Italian grammar dataset
 - `data/german-grammar-data.js`: German grammar dataset
 - `data/english-grammar-data.js`: English grammar dataset
@@ -33,7 +31,7 @@
 - `data/conjugations-*.js`: Italian conjugation datasets
 
 ## Build / Maintenance Scripts
-- `scripts/process_german_vocab.py`
+- `scripts/build_{german,english,french,italian}_vocabulary*.py` / `scripts/build_english_vocab.py` (emit `data/vocab/<lang>.js`; validated by `scripts/validate_vocab.js`)
 - `scripts/build_german_grammar.py`
 - `scripts/build_english_vocab.py`
 - `scripts/build_english_grammar.py`

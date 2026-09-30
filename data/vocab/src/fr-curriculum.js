@@ -1,4 +1,7 @@
-// French vocabulary curriculum for the Dimenticato French module.
+// French vocabulary curriculum: a build input for data/vocab/fr.js, merged by
+// `python3 scripts/build_french_vocabulary.py assemble`. The site never loads
+// this file.
+//
 // The topic progression follows the A1-B1 scope visible in the user's
 // "你好！法语 / Le nouveau Taxi!" course books. Definitions and notes are
 // independently written for this application; scanned textbook pages are not
@@ -407,10 +410,6 @@ tandis que|tandis que||而；同时|whereas, while, whilst|B1 · 复杂连接|co
     freqSource: frequency ? 'Lexique 3.83（CC-BY-SA）' : ''
   };
 });
-
-if (typeof window !== 'undefined') {
-  window.FRENCH_VOCABULARY_DATA = FRENCH_VOCABULARY_DATA;
-}
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = FRENCH_VOCABULARY_DATA;

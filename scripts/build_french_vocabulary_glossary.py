@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Build the static French textbook glossary dataset.
+"""Build the French textbook glossary layer, data/vocab/src/fr-glossary.js.
 
-The glossary is the *authoritative* A1-B2 layer of the French module: it is the
-only source of CEFR levels, part of speech and textbook page numbers, and it
-wins over the frequency-derived core corpus on conflict.
+The glossary is the *authoritative* A1-B2 layer of the French vocabulary: it is
+the only source of CEFR levels, part of speech and textbook page numbers, and
+it wins over the frequency-derived core corpus on conflict.  It is a build
+input, not a shipped file: after writing it this script runs
+``build_french_vocabulary.assemble`` so the merged data/vocab/fr.js (schema v1)
+is regenerated too.  The site never loads fr-glossary.js itself.
 
 Two input modes:
 
@@ -11,8 +14,8 @@ Two input modes:
       the original path - reviewed OCR of the "Lexique trilingue" pages in the
       four user-owned 你好！法语 student books.
 
-  ``--regenerate data/french-vocabulary-glossary.js``
-      re-reads the *generated* dataset that is already committed.  The reviewed
+  ``--regenerate data/vocab/src/fr-glossary.js``
+      re-reads the *generated* layer that is already committed.  The reviewed
       OCR JSON was never committed, so this mode is what makes the file
       reproducible from the repository alone.  It is idempotent.
 
@@ -28,11 +31,12 @@ Either way the builder now also:
 
 Usage:
     python3 scripts/build_french_vocabulary_glossary.py \
-        --regenerate data/french-vocabulary-glossary.js \
+        --regenerate data/vocab/src/fr-glossary.js \
         --freq /tmp/frv/fr_freq.json --fren /tmp/frv/fr_en2.json \
         --enzh /tmp/frv/en_zh2.json \
-        --curriculum data/french-vocabulary.js \
-        --out data/french-vocabulary-glossary.js
+        --curriculum data/vocab/src/fr-curriculum.js
+    # --out defaults to data/vocab/src/fr-glossary.js; --core (default
+    # /tmp/frv/fr-core.json) feeds the assemble step, see build_french_vocabulary.py
 """
 
 from __future__ import annotations
@@ -47,10 +51,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_french_vocabulary import (  # noqa: E402
+    CORE_PATH,
+    GLOSSARY_PATH,
     GlossRegistry,
     LEXIQUE_SOURCE,
     Resources,
     WIKT_SOURCE,
+    assemble,
     clean_chinese,
     exact_key,
     gloss_is_bad,
@@ -321,7 +328,10 @@ def rows_from_generated(path: Path) -> list[dict]:
 # --------------------------------------------------------------------------
 
 HEADER = [
-    '// French textbook glossary - the authoritative A1-B2 layer of the module.',
+    '// French textbook glossary - the authoritative A1-B2 layer of data/vocab/fr.js.',
+    '// A build input merged by `python3 scripts/build_french_vocabulary.py assemble`;',
+    '// the site never loads this file.',
+    '//',
     '// Extracted from the four 你好！法语 "Lexique trilingue" sections; the site',
     '// redistributes vocabulary records only, never scanned pages.',
     '//',
@@ -489,6 +499,7 @@ def build(args) -> None:
         'ambiguousGloss': sum(1 for e in entries if e.get('ambiguousGloss')),
         **stats,
     }, ensure_ascii=False))
+    print(assemble(args.core))
 
 
 def main() -> None:
@@ -501,7 +512,9 @@ def main() -> None:
     parser.add_argument('--fren', type=Path, required=True)
     parser.add_argument('--enzh', type=Path, required=True)
     parser.add_argument('--curriculum', type=Path)
-    parser.add_argument('--out', type=Path, required=True)
+    parser.add_argument('--out', type=Path, default=GLOSSARY_PATH)
+    parser.add_argument('--core', type=Path, default=CORE_PATH,
+                        help='core layer JSON for the assemble step (default %(default)s)')
     build(parser.parse_args())
 
 

@@ -31,8 +31,11 @@ SOURCES (all open / redistributable — see report)
       http://www.lexique.org/databases/Lexique383/Lexique383.zip
   * Wiktextract / kaikki.org French dump (EN glosses, gender) ..... CC BY-SA 3.0 + GFDL
       https://kaikki.org/dictionary/French/kaikki.org-dictionary-French.jsonl
-  * data/english-vocabulary.js (in repo, ECDICT-derived EN->ZH glosses)
-  * vocabulary.js (in repo, Italian headwords — used for the FR<->IT cognate layer)
+  * data/vocab/en.js (in repo, ECDICT-derived EN->ZH glosses)
+  * data/vocab/it.js (in repo, Italian headwords — used for the FR<->IT cognate layer)
+  * data/vocab/fr.js (in repo, the FR->ZH gloss layers; see GlossContext)
+    All three are schema v1 files (docs/vocab-schema.md), read via
+    scripts/vocab_schema.py.
   * Hand-authored French verb-government table + faux-amis table (this file).
 
 Optional python dependency: `zhconv` (MIT) for Traditional -> Simplified Chinese.
@@ -60,6 +63,8 @@ import unicodedata
 from collections import Counter, defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "scripts"))
+import vocab_schema  # noqa: E402  (data/vocab/*.js reader)
 DEFAULT_CACHE = "/tmp/dimenticato-fr-extras"
 
 TATOEBA_LICENSE = "Tatoeba CC BY 2.0 FR"
@@ -1631,6 +1636,57 @@ def load_js_array(path, const_name):
     return json.loads(payload)
 
 
+# v1 part of speech -> the ECDICT marker split_ecdict() recognises.
+EN_POS_MARK = {"verb": "v", "noun": "n", "adjective": "adj", "adverb": "adv",
+               "preposition": "prep", "conjunction": "conj", "pronoun": "pron",
+               "article": "art", "interjection": "int", "numeral": "num",
+               "abbreviation": "abbr"}
+
+
+def load_english_vocab():
+    """data/vocab/en.js -> {headword: {"english", "meaning"}}, first entry wins.
+
+    `meaning` is the ECDICT-style "n.书v.登记" string chinese_for() and
+    ecdict_sense_units() split on POS markers: v1 moved the markers into
+    `pos` / `posAll` and joins the per-POS senses of `zh` with "；", so they are
+    re-attached here whenever the sense count matches the POS list.
+    """
+    out = {}
+    for e in vocab_schema.read_vocab("en")["entries"]:
+        key = (e.get("word") or "").lower()
+        if not key or key in out:
+            continue
+        zh = e.get("zh") or ""
+        pos_all = e.get("posAll") or ([e["pos"]] if e.get("pos") else [])
+        senses = zh.split("；") if len(pos_all) > 1 else [zh]
+        if pos_all and len(senses) == len(pos_all):
+            zh = "".join("%s.%s" % (EN_POS_MARK[p], g) if p in EN_POS_MARK else g
+                         for p, g in zip(pos_all, senses))
+        out[key] = {"english": e["word"], "meaning": zh}
+    return out
+
+
+# data/vocab/fr.js merges three layers; `src` (-> meta.sources) and
+# `levelSource` tell them apart.  The first layer to supply a word owns its
+# `zh`, `en` and `src`, in this order: curriculum, textbook glossary, core.
+FR_CURRICULUM_SOURCE_PREFIX = "课程整理"
+
+
+def fr_layer(data, entry):
+    """'curriculum' | 'glossary' | 'core' for one data/vocab/fr.js entry.
+
+    Textbook entries carry levelSource 'textbook' unless the frequency band
+    was easier (then 'freq-band'), so the source string decides for those:
+    only the Lexique core layer has a non-textbook source.
+    """
+    src = vocab_schema.source_of(data, entry)
+    if src.startswith(FR_CURRICULUM_SOURCE_PREFIX):
+        return "curriculum"
+    if entry.get("levelSource") == "textbook" or "总词汇表" in src:
+        return "glossary"
+    return "core"
+
+
 def load_kaikki(path):
     entries = defaultdict(list)
     with open(path, encoding="utf-8") as fh:
@@ -1767,9 +1823,11 @@ def english_candidates(kaikki_entries, cgram):
 # 本仓库其实早就有权威的法→中层（教材词表），当初没接上。现在的优先级链：
 #
 #   1. 手写 faux-amis / 手写覆盖表（authored）
-#   2. data/french-vocabulary.js          课程整理词表
-#   3. data/french-vocabulary-glossary.js 教材总词汇表
-#   4. data/french-vocabulary-core.js     词频核心词表，且必须通过 core 闸门
+#   2. 课程整理词表  data/vocab/fr.js 里 src 为「课程整理…」的条目
+#   3. 教材总词汇表  data/vocab/fr.js 里 levelSource=textbook / src 为总词汇表的条目
+#   4. 词频核心词表  data/vocab/fr.js 其余条目（Lexique core），且必须通过 core 闸门
+#   （三层的原始输入在 data/vocab/src/，由 build_french_vocabulary.py assemble
+#    合并进 fr.js；分层靠 fr_layer()。）
 #   5. ECDICT 英语跳板，且必须通过语义闸门
 #   6. 都拿不到 → 删条目（宁可少给，不要给错）
 #
@@ -1785,28 +1843,6 @@ def english_candidates(kaikki_entries, cgram):
 # 被独立推出来的义项集合佐证，凭空冒出来的（cassette→矿体）不采用。
 # core 仍然会犯「英语同形词」的错（joint→seal→海豹、lime→file→档案），逐条
 # 抽查出来的那些走手写覆盖表 AUTHORED_GLOSSES。
-
-PIPE_TABLE_RE_TMPL = r"%s\s*=\s*`\n([\s\S]*?)`"
-
-
-def load_pipe_table(path, const_name, columns):
-    """data/french-vocabulary.js 是竖线分隔的模板字符串，不是 JSON 数组。"""
-    with open(path, encoding="utf-8") as fh:
-        text = fh.read()
-    m = re.search(PIPE_TABLE_RE_TMPL % re.escape(const_name), text)
-    if not m:
-        raise SystemExit("cannot parse %s from %s" % (const_name, path))
-    rows = []
-    for line in m.group(1).split("\n"):
-        line = line.strip()
-        if not line or line.startswith("//"):
-            continue
-        parts = line.split("|")
-        if len(parts) < len(columns):
-            continue
-        rows.append(dict(zip(columns, parts)))
-    return rows
-
 
 ZH_SENSE_SPLIT_RE = re.compile(r"[;；,，、/]")
 ZH_PAREN_RE = re.compile(r"[（(][^）)]*[）)]")
@@ -1900,44 +1936,33 @@ def english_gloss_words(full_gloss):
 class GlossContext(object):
     """释义层要用到的全部词典，全部来自仓库内文件（不联网）。"""
 
-    def __init__(self, root):
+    AUTH_SRC = {
+        "curriculum": "french-vocabulary.js（课程整理词表）",
+        "glossary": "french-vocabulary-glossary.js（教材总词汇表）",
+    }
+
+    def __init__(self, root=None):
         self.auth_zh = {}
         self.auth_src = {}
         self.wiktionary_en = {}
-        gloss_path = os.path.join(root, "data", "french-vocabulary-glossary.js")
-        for w in load_js_array(gloss_path, "FRENCH_GLOSSARY_VOCABULARY_DATA"):
-            k = (w.get("french") or "").lower()
-            if not k:
-                continue
-            if k not in self.auth_zh:
-                self.auth_zh[k] = w.get("meaning") or w.get("chinese") or ""
-                self.auth_src[k] = "french-vocabulary-glossary.js（教材总词汇表）"
-            self.wiktionary_en.setdefault(k, w.get("english") or "")
-        curr_path = os.path.join(root, "data", "french-vocabulary.js")
-        cols = ["french", "display", "feminine", "meaning", "english", "notes",
-                "partOfSpeech", "gender", "level", "frequency", "freqRank"]
-        for w in load_pipe_table(curr_path, "FRENCH_VOCABULARY_DATA", cols):
-            k = (w.get("french") or "").lower()
-            if not k:
-                continue
-            self.auth_zh[k] = w.get("meaning") or ""       # 课程词表优先级更高
-            self.auth_src[k] = "french-vocabulary.js（课程整理词表）"
-            if w.get("english"):
-                self.wiktionary_en[k] = w["english"]
         self.core_zh = {}
-        core_path = os.path.join(root, "data", "french-vocabulary-core.js")
-        for w in load_js_array(core_path, "FRENCH_CORE_VOCABULARY_DATA"):
-            k = (w.get("french") or "").lower()
+        data = vocab_schema.read_vocab("fr")
+        # 课程词表优先级更高：先收教材总词汇表，再让课程词表覆盖。
+        rank = {"glossary": 0, "curriculum": 1}
+        entries = [(fr_layer(data, e), e) for e in data["entries"]]
+        for layer, w in sorted(entries, key=lambda t: rank.get(t[0], -1)):
+            k = (w.get("word") or "").lower()
             if not k:
                 continue
-            self.wiktionary_en.setdefault(k, w.get("english") or "")
-            self.core_zh.setdefault(k, w.get("chinese") or w.get("meaning") or "")
-        self.en_vocab = {}
-        for w in load_js_array(os.path.join(root, "data", "english-vocabulary.js"),
-                               "ENGLISH_VOCABULARY_DATA"):
-            key = (w.get("english") or "").lower()
-            if key and key not in self.en_vocab:
-                self.en_vocab[key] = w
+            if layer == "core":
+                self.wiktionary_en.setdefault(k, w.get("en") or "")
+                self.core_zh.setdefault(k, w.get("zh") or "")
+                continue
+            self.auth_zh[k] = w.get("zh") or ""
+            self.auth_src[k] = self.AUTH_SRC[layer]
+            if w.get("en"):
+                self.wiktionary_en[k] = w["en"]
+        self.en_vocab = load_english_vocab()
 
     def pivot_zh(self, english, cgram):
         """英语词经 ECDICT 得到的中文首义（对**英语词**是可信的）。"""
@@ -2295,23 +2320,20 @@ def refresh_cognate_glosses(out_path):
 def build_cognates(cache, lex, out_path, max_rank=12000, min_score=50):
     log("loading glossaries ...")
     kaikki = load_kaikki(os.path.join(cache, "fr_kaikki_slim.jsonl"))
-    en_vocab = {}
-    for w in load_js_array(os.path.join(ROOT, "data", "english-vocabulary.js"), "ENGLISH_VOCABULARY_DATA"):
-        key = (w.get("english") or "").lower()
-        if key and key not in en_vocab:
-            en_vocab[key] = w
+    en_vocab = load_english_vocab()
     it_by_en = {}
-    for w in load_js_array(os.path.join(ROOT, "vocabulary.js"), "VOCABULARY_DATA"):
-        key = (w.get("english") or "").split(",")[0].strip().lower()
+    for w in vocab_schema.read_vocab("it")["entries"]:
+        key = (w.get("en") or "").split(",")[0].strip().lower()
         if key and key not in it_by_en:
-            it_by_en[key] = w
+            it_by_en[key] = {"italian": w["word"]}
     fr_zh = {}
-    gloss_path = os.path.join(ROOT, "data", "french-vocabulary-glossary.js")
-    if os.path.exists(gloss_path):
-        for w in load_js_array(gloss_path, "FRENCH_GLOSSARY_VOCABULARY_DATA"):
-            fw = (w.get("french") or "").lower()
-            if fw and fw not in fr_zh and w.get("chinese"):
-                fr_zh[fw] = w["chinese"]
+    fr_data = vocab_schema.read_vocab("fr")
+    for w in fr_data["entries"]:
+        if fr_layer(fr_data, w) == "core":
+            continue
+        fw = (w.get("word") or "").lower()
+        if fw and fw not in fr_zh and w.get("zh"):
+            fr_zh[fw] = w["zh"]
     log("  kaikki=%d english=%d italian-by-en=%d fr-zh-glossary=%d"
         % (len(kaikki), len(en_vocab), len(it_by_en), len(fr_zh)))
 

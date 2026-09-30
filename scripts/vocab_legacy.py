@@ -9,12 +9,18 @@ rewriting every pipeline, each builder hands its final list to the matching
 scripts/vocab_schema.py.  All language-specific knowledge about the *old*
 fields lives in this file and nowhere else.
 
-Run directly, it performs the one-off migration of the pre-v1 files:
+Run directly, it performs the one-off migration of the pre-v1 files.  Those
+files are gone from the tree (the builders emit data/vocab/<lang>.js
+directly); to rerun, check them out from before the switch (fd0ba62):
 
     python3 scripts/vocab_legacy.py migrate --it vocabulary.js \
         --de data/german-vocabulary.js --en data/english-vocabulary.js \
         --fr data/french-vocabulary.js data/french-vocabulary-glossary.js \
              data/french-vocabulary-core.js
+
+(The French curriculum and glossary now live in data/vocab/src/ as
+fr-curriculum.js and fr-glossary.js; the core layer is an uncommitted
+intermediate of build_french_vocabulary.py.)
 """
 from __future__ import annotations
 

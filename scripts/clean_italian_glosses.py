@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """清洗意大利语词库里的机翻重复释义。
 
-机翻管线（enhance_translations*.py）在 english / chinese 两个字段里留下了
+机翻管线（enhance_translations*.py）在 en / zh 两个字段里留下了
 三类垃圾，它们会直接漏进练习选项（如 strada 的英文释义是 "road road"）：
 
   1. token 级重复      "road road" / "China China China" / "丈夫 丈夫"
@@ -21,9 +21,9 @@
     专有名词，自动小写会改错。
 
 处理对象：
-  - vocabulary.js          （运行时数据，27,117 条）
-  - data/vocabulary.json   （上述文件的生成源，28,787 条；
-                              重跑 update_vocabulary_js.py 不会把垃圾带回来）
+  - data/vocab/it.js   （DIM_VOCAB.it，schema v1，见 docs/vocab-schema.md；
+                         经 scripts/vocab_schema.py 的 read_vocab / write_vocab
+                         读写，只改 en / zh，其余字段与词条顺序不动）
 
 用法：
   python3 scripts/clean_italian_glosses.py           # 实际写入
@@ -31,12 +31,14 @@
 
 幂等：对已清洗的文件再跑一遍是 no-op。
 """
-import json
 import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import vocab_schema as vs  # noqa: E402
+
+BUILDER = 'scripts/clean_italian_glosses.py'
 
 NUMBERING_TAIL = re.compile(r'\s*[\(（\[]\d{1,3}[\)）\]]\s*$')
 CJK_RANGE = ('\u4e00', '\u9fff')
@@ -151,61 +153,33 @@ def clean_gloss(raw):
 def clean_entries(entries):
     fixed_english = fixed_chinese = 0
     for entry in entries:
-        for field, counter in (('english', 'en'), ('chinese', 'zh')):
+        for field in ('en', 'zh'):
             new_value, changed = clean_gloss(entry.get(field))
             if changed:
                 entry[field] = new_value
-                if counter == 'en':
+                if field == 'en':
                     fixed_english += 1
                 else:
                     fixed_chinese += 1
     return fixed_english, fixed_chinese
 
 
-def load_vocabulary_js(path):
-    """解析 const VOCABULARY_DATA = [ ... ]; 的 JSON 部分。"""
-    text = path.read_text(encoding='utf-8')
-    start = text.index('[')
-    end = text.rindex(']') + 1
-    return json.loads(text[start:end]), text[:start], text[end:]
-
-
-def save_vocabulary_js(path, entries, head, tail):
-    # one entry per line, same layout as scripts/build_italian_vocabulary_tags.py
-    body = '[\n' + ',\n'.join(json.dumps(e, ensure_ascii=False, separators=(',', ':'))
-                               for e in entries) + '\n]'
-    path.write_text(f'{head}{body}{tail}', encoding='utf-8')
-
-
 def main():
     dry_run = '--dry-run' in sys.argv
-    targets = [
-        (ROOT / 'vocabulary.js', 'js'),
-        (ROOT / 'data' / 'vocabulary.json', 'json'),
-    ]
-    for path, kind in targets:
-        if not path.exists():
-            print(f'SKIP {path.name}: 文件不存在')
-            continue
-        if kind == 'js':
-            entries, head, tail = load_vocabulary_js(path)
-        else:
-            entries = json.loads(path.read_text(encoding='utf-8'))
-            head = tail = None
-
-        fixed_en, fixed_zh = clean_entries(entries)
-        label = f'{path.name}: {len(entries)} 条，english 修 {fixed_en} 条，chinese 修 {fixed_zh} 条'
-        if dry_run:
-            print(f'DRY-RUN {label}')
-            continue
-        if kind == 'js':
-            save_vocabulary_js(path, entries, head, tail)
-        else:
-            path.write_text(
-                json.dumps(entries, ensure_ascii=False, indent=2) + '\n',
-                encoding='utf-8',
-            )
-        print(f'OK {label}')
+    data = vs.read_vocab('it')
+    entries = data['entries']
+    fixed_en, fixed_zh = clean_entries(entries)
+    label = f'it.js: {len(entries)} 条，en 修 {fixed_en} 条，zh 修 {fixed_zh} 条'
+    if dry_run:
+        print(f'DRY-RUN {label}')
+        return
+    if not (fixed_en or fixed_zh):
+        print(f'OK {label}（无改动，未写入）')
+        return
+    meta = data['meta']
+    vs.write_vocab('it', entries, sources=meta['sources'], licences=meta['licences'],
+                   builder=BUILDER, notes=meta.get('notes', ''))
+    print(f'OK {label}')
 
 
 if __name__ == '__main__':

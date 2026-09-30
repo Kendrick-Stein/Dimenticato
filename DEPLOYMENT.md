@@ -90,10 +90,11 @@ GitHub Pages 对静态资源返回的是 `Cache-Control: max-age=600`（10 分�
 | 文件 | 体积 |
 | --- | --- |
 | `data/conjugations-all-tenses.js` | 7.2 MB |
-| `vocabulary.js` | 5.4 MB |
-| `data/english-vocabulary.js` | 5.2 MB |
+| `data/vocab/de.js` | 6.3 MB |
+| `data/vocab/fr.js` | 4.6 MB |
+| `data/vocab/it.js` | 4.1 MB |
+| `data/vocab/en.js` | 3.8 MB |
 | `data/english-conjugations.js` | 3.7 MB |
-| `data/german-vocabulary.js` | 3.3 MB |
 
 所有 `<script src>` 都带 `defer`：HTML 解析不再被脚本阻塞，加载动画能立刻画出来，
 `defer` 之间严格保持文档顺序，依赖链和以前完全一致。
@@ -157,7 +158,7 @@ HTML 里的数字只是占位，改数据不需要改文案。
 校验命令：
 
 ```bash
-node -e "console.log(require('./data/german-vocabulary.js').length)"
+node scripts/validate_vocab.js   # 打印四语言 data/vocab/<lang>.js 的条数与覆盖率
 ```
 
 ---

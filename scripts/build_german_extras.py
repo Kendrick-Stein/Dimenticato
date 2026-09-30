@@ -21,8 +21,9 @@ Emits three files, all mirroring the shapes of their Italian counterparts:
 
 Sources (all permissive, recorded per entry in the emitted data):
   * Tatoeba deu-cmn sentence pairs   - CC BY 2.0 FR  (https://tatoeba.org)
-  * data/german-vocabulary.js        - in-repo (deutsch-data, PGH word list)
-  * data/english-vocabulary.js       - in-repo (wordfreq + EnWords/ECDICT)
+  * data/vocab/de.js                 - in-repo (deutsch-data, PGH word list)
+  * data/vocab/en.js                 - in-repo (wordfreq + EnWords/ECDICT)
+    (both schema v1, read through vocab_rows(); see docs/vocab-schema.md)
   * Rektion / Funktionsverbgefuege tables, false-friend notes, course copy:
     originally authored for this application (no dictionary was scraped).
 
@@ -1455,6 +1456,60 @@ def load_js_dataset(filename, global_name):
         ['node', '--max-old-space-size=8192', '-e', script],
         check=True, stdout=subprocess.PIPE)
     return json.loads(out.stdout.decode('utf-8'))
+
+
+# v1 part of speech -> the short grammar tag build_german_vocabulary.py used to
+# write into the pre-v1 `notes` field ("m · Pl. Tage", "V · geht, ging, ...").
+DE_POS_ABBR = {
+    'noun': 'S', 'verb': 'V', 'adjective': 'Adj', 'adverb': 'Adv',
+    'pronoun': 'Pron', 'preposition': 'Präp', 'conjunction': 'Konj',
+    'numeral': 'Num', 'interjection': 'Interj', 'determiner': 'Det',
+    'article': 'Art', 'particle': 'Part', 'phrase': 'Wendung',
+}
+
+
+def de_notes(entry):
+    """Rebuild the grammar tag pos_and_gender() / FUNCTION_POS parse."""
+    pos = entry.get('pos') or ''
+    forms = entry.get('forms') or {}
+    bits = []
+    if pos == 'noun':
+        if forms.get('pluraleTantum'):
+            bits.append('nur Pl.')
+        else:
+            bits.append(entry.get('gender') or 'S')
+            if forms.get('plural'):
+                bits.append('Pl. %s' % forms['plural'])
+    elif pos == 'properNoun':
+        bits.append('Eigenname')
+    elif pos == 'verb':
+        bits.append('V')
+        if forms.get('principalParts'):
+            bits.append(forms['principalParts'])
+    else:
+        bits.append(DE_POS_ABBR.get(pos, pos))
+    return ' · '.join(bits)
+
+
+def vocab_rows(lang):
+    """data/vocab/<lang>.js entries in the field names this builder uses.
+
+    German: {german, display, chinese, meaning, notes, rank}; English:
+    {english, chinese, meaning, rank}.  `meaning` mirrors `chinese` (= v1 zh).
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import vocab_schema
+    rows = []
+    for e in vocab_schema.read_vocab(lang)['entries']:
+        zh = e.get('zh') or ''
+        row = {'chinese': zh, 'meaning': zh, 'rank': e.get('rank')}
+        if lang == 'de':
+            row.update(german=e['word'], display=e.get('display') or e['word'],
+                       notes=de_notes(e))
+        else:
+            row['english'] = e['word']
+        rows.append(row)
+    return rows
 
 
 def norm_compare(s):
@@ -3015,10 +3070,10 @@ def main():
             'bytes': size,
         }
 
-    german_vocab = load_js_dataset('german-vocabulary.js', 'GERMAN_VOCABULARY_DATA')
+    german_vocab = vocab_rows('de')
 
     if not args.skip_cognates:
-        english_vocab = load_js_dataset('english-vocabulary.js', 'ENGLISH_VOCABULARY_DATA')
+        english_vocab = vocab_rows('en')
         sys.stderr.write('mining cognates over %d German x %d English headwords ...\n'
                          % (len(german_vocab), len(english_vocab)))
         cognates, rejected = build_cognates(german_vocab, english_vocab)

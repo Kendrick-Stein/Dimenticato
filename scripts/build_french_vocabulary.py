@@ -1,8 +1,25 @@
 #!/usr/bin/env python3
-"""Build the French vocabulary datasets shipped by Dimenticato.
+"""Build the French vocabulary shipped by Dimenticato: data/vocab/fr.js (schema v1).
+
+fr.js is assembled from three layers, merged by ``vocab_legacy.from_fr`` in
+priority order (first layer to supply a field owns it):
+
+  1. data/vocab/src/fr-curriculum.js  hand-written A1-B1 topic list   (levelSource textbook)
+  2. data/vocab/src/fr-glossary.js    OCR'd 你好！法语 textbook glossary (levelSource textbook)
+  3. the Lexique core layer            frequency-derived               (levelSource freq-band)
+
+Layers 1 and 2 are hand-curated / OCR'd, cannot be regenerated from public
+data, and are committed as *build inputs*; the site never loads them.  Layer 3
+is fully regenerable from the downloads below, so it is **not** committed: the
+``core`` step writes it to an intermediate JSON file (default
+/tmp/frv/fr-core.json).  ``assemble`` merges the three layers into fr.js.  When
+the core file is absent, ``assemble`` rebuilds layer 3 from the core entries
+already in data/vocab/fr.js (``levelSource == 'freq-band'`` with the core
+provenance) and keeps their existing frequency order, so fr.js can be rebuilt
+from the repository alone after editing the curriculum or the glossary.
 
 Every source used here is open-licensed and is recorded in each entry's
-``source`` field:
+``source`` field (``src`` in fr.js):
 
   * **Lexique 3.83** (`lexique.org`, CC-BY-SA 4.0) - 142,694 French word forms
     with lemma frequencies from film subtitles (``freqlemfilms2``) and books
@@ -24,13 +41,18 @@ Pipeline (each step is a sub-command; run them in this order):
     python3 scripts/build_french_vocabulary.py prepare-fren  /tmp/frv/kaikki-fr.jsonl       /tmp/frv/fr_en.json
     python3 scripts/build_french_vocabulary.py prepare-enzh  /tmp/frv/stardict-ecdict-2.4.2 /tmp/frv/en_zh.json
 
-    # 2. the three shipped datasets, in dependency order
-    python3 scripts/build_french_vocabulary.py curriculum ...   -> data/french-vocabulary.js
-    python3 scripts/build_french_vocabulary_glossary.py ...     -> data/french-vocabulary-glossary.js
-    python3 scripts/build_french_vocabulary.py core ...         -> data/french-vocabulary-core.js
+    # 2. the three layers, in dependency order (each step re-assembles fr.js)
+    python3 scripts/build_french_vocabulary.py curriculum ...   -> data/vocab/src/fr-curriculum.js
+    python3 scripts/build_french_vocabulary_glossary.py ...     -> data/vocab/src/fr-glossary.js
+    python3 scripts/build_french_vocabulary.py core ...         -> /tmp/frv/fr-core.json (not committed)
 
-    # 3. verification
-    node scripts/validate_french_vocabulary.js
+    # 3. merge the layers (offline; falls back to fr.js's own core entries
+    #    when /tmp/frv/fr-core.json is absent)
+    python3 scripts/build_french_vocabulary.py assemble [--core /tmp/frv/fr-core.json]
+                                                                -> data/vocab/fr.js
+
+    # 4. verification
+    node scripts/validate_vocab.js fr
 
 Downloads (kept out of the repo on purpose):
     curl -o /tmp/frv/Lexique383.tsv  http://www.lexique.org/databases/Lexique383/Lexique383.tsv
@@ -49,6 +71,18 @@ import struct
 import sys
 import unicodedata
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import vocab_legacy  # noqa: E402
+import vocab_schema  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+SRC_DIR = ROOT / 'data' / 'vocab' / 'src'
+CURRICULUM_PATH = SRC_DIR / 'fr-curriculum.js'
+GLOSSARY_PATH = SRC_DIR / 'fr-glossary.js'
+CORE_PATH = Path('/tmp/frv/fr-core.json')
+BUILDER = 'scripts/build_french_vocabulary.py'
 
 # --------------------------------------------------------------------------
 # provenance strings
@@ -645,7 +679,7 @@ def gloss_key(gloss: str) -> str:
     Two glosses that differ only in separators/ellipsis ("烟；雾" vs "烟雾",
     "开除...教籍" vs "开除教籍") are indistinguishable to a learner, so they
     have to collide here and get disambiguated.  Must stay in sync with
-    ``glossKey()`` in scripts/validate_french_vocabulary.js.
+    ``glossKey()`` in scripts/validate_vocab.js (the French hook).
     """
     return GLOSS_KEY_STRIP.sub('', nfc(gloss))
 
@@ -694,16 +728,13 @@ class GlossRegistry:
 # --------------------------------------------------------------------------
 
 def write_js_array(path: Path, global_name: str, header: list[str], entries: list[dict]) -> None:
+    """Write a build-input layer (not loaded by the site, so no window export)."""
     lines = list(header)
     lines.append(f'const {global_name} = [')
     for entry in entries:
         lines.append('  ' + json.dumps(entry, ensure_ascii=False, separators=(',', ':')) + ',')
     lines.extend([
         '];',
-        '',
-        "if (typeof window !== 'undefined') {",
-        f'  window.{global_name} = {global_name};',
-        '}',
         '',
         "if (typeof module !== 'undefined' && module.exports) {",
         f'  module.exports = {global_name};',
@@ -714,11 +745,14 @@ def write_js_array(path: Path, global_name: str, header: list[str], entries: lis
 
 
 # --------------------------------------------------------------------------
-# dataset 1: the hand-written A1-B1 curriculum (data/french-vocabulary.js)
+# layer 1: the hand-written A1-B1 curriculum (data/vocab/src/fr-curriculum.js)
 # --------------------------------------------------------------------------
 
 CURRICULUM_HEADER = [
-    '// French vocabulary curriculum for the Dimenticato French module.',
+    '// French vocabulary curriculum: a build input for data/vocab/fr.js, merged by',
+    '// `python3 scripts/build_french_vocabulary.py assemble`. The site never loads',
+    '// this file.',
+    '//',
     '// The topic progression follows the A1-B1 scope visible in the user\'s',
     '// "你好！法语 / Le nouveau Taxi!" course books. Definitions and notes are',
     '// independently written for this application; scanned textbook pages are not',
@@ -919,9 +953,6 @@ def build_curriculum(args) -> None:
         f"    freqSource: frequency ? '{LEXIQUE_SOURCE}' : ''\n"
         "  };\n"
         "});\n\n"
-        "if (typeof window !== 'undefined') {\n"
-        "  window.FRENCH_VOCABULARY_DATA = FRENCH_VOCABULARY_DATA;\n"
-        "}\n\n"
         "if (typeof module !== 'undefined' && module.exports) {\n"
         "  module.exports = FRENCH_VOCABULARY_DATA;\n"
         "}\n"
@@ -943,26 +974,17 @@ def build_curriculum(args) -> None:
     if registry_path:
         registry_path.write_text(json.dumps(registry.snapshot(), ensure_ascii=False),
                                  encoding='utf-8')
+    print(assemble(args.core))
 
 
 # --------------------------------------------------------------------------
-# dataset 3: the frequency-derived core corpus
+# layer 3: the frequency-derived core corpus (intermediate JSON, not committed)
+#
+# Ranks + frequencies come from Lexique 3.83 (freqlemfilms2 / freqlemlivres, per
+# million), English glosses from Wiktionary/kaikki, Chinese glosses are pivoted
+# English -> Chinese through ECDICT.  CEFR levels on this layer are inferred
+# from frequency; the textbook layers win on conflict.
 # --------------------------------------------------------------------------
-
-CORE_HEADER = [
-    '// Frequency-ranked French core vocabulary for Dimenticato.',
-    '//',
-    f'// * ranks + frequencies: {LEXIQUE_SOURCE} (freqlemfilms2 / freqlemlivres, per million)',
-    f'// * English glosses:     {WIKT_SOURCE}',
-    f'// * Chinese glosses:     pivoted English -> Chinese through {ECDICT_SOURCE}',
-    '//',
-    '// CEFR levels on this layer are INFERRED from the corpus rank (see `level` +',
-    '// `levelSource`); the textbook glossary remains the authoritative A1-B2 layer',
-    '// and wins on conflict.  Every entry keeps both its English and Chinese gloss',
-    '// so the pivot stays auditable.',
-    '//',
-    '// Rebuild with: python3 scripts/build_french_vocabulary.py core ...',
-]
 
 SKIP_HEADWORD_RE = re.compile(r'^[a-z]$|^\d')
 BANNED_POS = {'art', 'det'}
@@ -1088,7 +1110,8 @@ def build_core(args) -> None:
         kept.append(entry)
     entries = kept
 
-    write_js_array(args.out, 'FRENCH_CORE_VOCABULARY_DATA', CORE_HEADER, entries)
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(json.dumps(entries, ensure_ascii=False), encoding='utf-8')
     by_level: dict[str, int] = {}
     for entry in entries:
         by_level[entry['level']] = by_level.get(entry['level'], 0) + 1
@@ -1099,6 +1122,127 @@ def build_core(args) -> None:
         'droppedAmbiguousGloss': dropped_ambiguous,
         'maxRank': args.max_rank,
     }, ensure_ascii=False))
+    print(assemble(args.out))
+
+
+# --------------------------------------------------------------------------
+# assemble: curriculum + glossary + core -> data/vocab/fr.js
+# --------------------------------------------------------------------------
+
+# v1 part of speech -> the layers' raw label (inverse of vocab_legacy.FR_POS).
+V1_TO_RAW_POS = {
+    'noun': 'n', 'verb': 'v', 'adjective': 'adj', 'adverb': 'adv',
+    'preposition': 'prép', 'determiner': 'det', 'article': 'art',
+    'pronoun': 'pron', 'interjection': 'interj', 'conjunction': 'conj',
+    'numeral': 'num', 'properNoun': 'n.pr', 'phrase': 'loc',
+}
+
+
+def layer_key(french: str) -> str:
+    """The merge key vocab_legacy.from_fr uses for a layer row."""
+    return vocab_legacy.headword_key(vocab_legacy.parse_headword(french)['french'])
+
+
+def raw_pos(entry: dict) -> str:
+    """'noun' + gender f -> 'n.f'; the inverse of vocab_legacy.fr_pos()."""
+    forms = entry.get('forms') or {}
+    labels = []
+    for pos in entry.get('posAll') or [entry.get('pos', '')]:
+        if pos == 'noun' and entry.get('gender') in ('m', 'f'):
+            label = 'n.' + entry['gender'] + ('.pl' if forms.get('pluraleTantum') else '')
+        elif pos == 'verb' and forms.get('pronominal'):
+            label = 'v.pr'
+        else:
+            label = V1_TO_RAW_POS.get(pos, '')
+        if label:
+            labels.append(label)
+    return ' / '.join(labels)
+
+
+def core_rows_from_vocab(layer_keys: set[str]):
+    """Rebuild the core layer from the core entries already in data/vocab/fr.js.
+
+    Returns (rows, order): the legacy-shaped rows ``from_fr`` expects and the
+    words in their current fr.js rank order.  Lexique frequencies are not part
+    of schema v1, so the rows carry no usable ``frequency``; ``pin_core_order``
+    restores their position instead.
+    """
+    data = vocab_schema.read_vocab('fr')
+    rows = []
+    for e in data['entries']:
+        if e['levelSource'] != 'freq-band' or vocab_schema.source_of(data, e) != CORE_SOURCE:
+            continue
+        if layer_key(e['word']) in layer_keys:
+            continue  # now covered by the curriculum / glossary
+        pos = raw_pos(e)
+        rows.append({
+            'french': e['word'],
+            'display': e.get('display') or e['word'],
+            'feminine': (e.get('forms') or {}).get('feminine', ''),
+            'meaning': e['zh'],
+            'chinese': e['zh'],
+            'english': e.get('en', ''),
+            'notes': ' · '.join(['词频语料库', pos] + list(e.get('tags') or [])),
+            'source': CORE_SOURCE,
+            'partOfSpeech': pos,
+            'gender': e.get('gender', ''),
+            'frequency': 1,  # placeholder, replaced by pin_core_order()
+        })
+    return rows, [e['word'] for e in data['entries']]
+
+
+def pin_core_order(entries: list[dict], core_words: set[str], previous_order: list[str]) -> None:
+    """Give fallback core entries a sort value that keeps their fr.js position.
+
+    ``emit`` orders French entries by descending Lexique frequency (wordfreq
+    where Lexique has none).  The curriculum / glossary entries still carry
+    theirs; each run of core entries gets the midpoint between its two
+    neighbours in the previous fr.js order.
+    """
+    by_word = {e['word']: e for e in entries}
+    value = {}
+    for e in entries:
+        if e['word'] not in core_words:
+            e.setdefault('freq', vocab_schema.wordfreq_per_million(e['word'], 'fr'))
+            value[e['word']] = e['_lexique'] or e['freq'] or 0
+    pending: list[dict] = []
+    previous = None
+    for word in previous_order:
+        entry = by_word.get(word)
+        if entry is None:
+            continue
+        if word in core_words:
+            pending.append(entry)
+            continue
+        current = value[word]
+        if not current:
+            continue  # unranked: sorted to the tail, not an anchor
+        for p in pending:
+            p['_lexique'] = (previous + current) / 2 if previous is not None else current * 2
+        pending = []
+        previous = current
+    for p in pending:
+        p['_lexique'] = previous / 2 if previous else 1.0
+
+
+def assemble(core_path: Path | None = CORE_PATH) -> Path:
+    curriculum = vocab_legacy.read_legacy_array(CURRICULUM_PATH)
+    glossary = vocab_legacy.read_legacy_array(GLOSSARY_PATH)
+    if core_path and Path(core_path).exists():
+        core = json.loads(Path(core_path).read_text(encoding='utf-8'))
+        core_words, previous_order = None, None
+        print(f'assemble: core layer from {core_path} ({len(core)} rows)', file=sys.stderr)
+    else:
+        layer_keys = {layer_key(r.get('french')) for r in curriculum + glossary}
+        core, previous_order = core_rows_from_vocab(layer_keys)
+        core_words = {r['french'] for r in core}
+        print(f'assemble: {core_path} not found; reusing the {len(core)} core entries '
+              'of data/vocab/fr.js', file=sys.stderr)
+    entries = vocab_legacy.from_fr([(curriculum, 'textbook'), (glossary, 'textbook'),
+                                    (core, 'freq-band')])
+    if core_words is not None:
+        pin_core_order(entries, core_words, previous_order)
+    return vocab_legacy.emit('fr', entries, builder=BUILDER)
 
 
 # --------------------------------------------------------------------------
@@ -1122,22 +1266,30 @@ def main() -> None:
     p.add_argument('stardict_base', type=Path)
     p.add_argument('out_json', type=Path)
 
-    p = sub.add_parser('curriculum')
+    p = sub.add_parser('curriculum', help=f'rebuild {CURRICULUM_PATH.relative_to(ROOT)}, then assemble')
     p.add_argument('--freq', type=Path, required=True)
     p.add_argument('--fren', type=Path, required=True)
     p.add_argument('--enzh', type=Path, required=True)
-    p.add_argument('--src', type=Path, required=True)
-    p.add_argument('--out', type=Path, required=True)
+    p.add_argument('--src', type=Path, default=CURRICULUM_PATH)
+    p.add_argument('--out', type=Path, default=CURRICULUM_PATH)
     p.add_argument('--registry', type=Path)
+    p.add_argument('--core', type=Path, default=CORE_PATH,
+                   help='core layer JSON for the assemble step (default %(default)s)')
 
-    p = sub.add_parser('core')
+    p = sub.add_parser('core', help='write the core layer JSON, then assemble')
     p.add_argument('--freq', type=Path, required=True)
     p.add_argument('--fren', type=Path, required=True)
     p.add_argument('--enzh', type=Path, required=True)
-    p.add_argument('--curriculum', type=Path, required=True)
-    p.add_argument('--glossary', type=Path, required=True)
-    p.add_argument('--out', type=Path, required=True)
+    p.add_argument('--curriculum', type=Path, default=CURRICULUM_PATH)
+    p.add_argument('--glossary', type=Path, default=GLOSSARY_PATH)
+    p.add_argument('--out', type=Path, default=CORE_PATH,
+                   help='intermediate core layer JSON (default %(default)s)')
     p.add_argument('--max-rank', type=int, default=25000)
+
+    p = sub.add_parser('assemble', help='merge curriculum + glossary + core into data/vocab/fr.js')
+    p.add_argument('--core', type=Path, default=CORE_PATH,
+                   help='core layer JSON (default %(default)s); when absent, the core '
+                        'entries already in data/vocab/fr.js are reused')
 
     args = parser.parse_args()
     if args.command == 'prepare-freq':
@@ -1150,6 +1302,8 @@ def main() -> None:
         build_curriculum(args)
     elif args.command == 'core':
         build_core(args)
+    elif args.command == 'assemble':
+        print(assemble(args.core))
 
 
 if __name__ == '__main__':

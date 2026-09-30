@@ -55,9 +55,35 @@ These rules are the same for every language and are implemented in `vocab_schema
 2. An external list (`official`, `textbook`, `course`) sets the level unless the
    frequency band is *easier*. A top-600 word is A1 whichever list introduced it.
 
+## Builders and readers
+
+Each builder keeps its own internal row shape and writes v1 through
+`vocab_legacy.emit(lang, vocab_legacy.from_<lang>(rows), builder='scripts/<name>.py')`:
+
+| File | Builder |
+|---|---|
+| `data/vocab/it.js` | `build_italian_vocabulary_tags.py` (POS / gender), `clean_italian_glosses.py` (gloss cleanup, in place) |
+| `data/vocab/de.js` | `build_german_vocabulary.py` (includes the pgh.csv parser) |
+| `data/vocab/en.js` | `build_english_vocab.py` |
+| `data/vocab/fr.js` | `build_french_vocabulary.py` — `assemble` merges `data/vocab/src/fr-curriculum.js`, `data/vocab/src/fr-glossary.js` and the Lexique core layer |
+
+`data/vocab/src/` holds build inputs only; the site never loads them. In
+`fr.js`, `src` tells the layers apart: `课程整理…` = curriculum, a `总词汇表`
+page = textbook glossary, the Lexique source = frequency core.
+
+Readers: Python uses `vocab_schema.read_vocab(lang)`; Node uses
+`scripts/vocab_node.js` (`loadVocab(lang)`, `sourceOf(data, entry)`).
+
+## Validation
+
+`scripts/validate_vocab.js` checks the schema for every language, then runs the
+language's hook from `LANGS` (Italian MT-repetition scan and tagger gold rows;
+German article-in-display, inflected-headword and budget checks; French
+headword shape and unique `glossKey(zh)`).
+
 ## Adding a language
 
 1. Add the code to `LANGS` in `scripts/vocab_schema.py`.
 2. Produce entries with the fields above, then call `finalize()` and `write_vocab()`.
-3. Add a row to `LANGS` in `scripts/validate_vocab.js` with the POS coverage floor and a few gold entries.
+3. Add a row to `LANGS` in `scripts/validate_vocab.js` with the POS coverage floor and a few gold entries (and a `check` hook for language-specific rules).
 4. Add a profile in `lib/languages.js`.

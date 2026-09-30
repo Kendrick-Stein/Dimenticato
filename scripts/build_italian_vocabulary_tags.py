@@ -1,32 +1,30 @@
 #!/usr/bin/env python3
-"""Add partOfSpeech / gender / level to the Italian vocabulary (vocabulary.js).
+"""Tag part of speech / gender in the Italian vocabulary (data/vocab/it.js).
 
-vocabulary.js is the committed runtime artifact (its old generator and
-data/vocabulary.json are gitignored and stale), so this script enriches it in
-place: every existing field and the entry order stay untouched, and re-running
-it is idempotent (the tag fields are recomputed from scratch each time).
+data/vocab/it.js (DIM_VOCAB.it, schema v1 — docs/vocab-schema.md) is enriched in
+place through scripts/vocab_schema.py read_vocab / write_vocab: only `pos` and
+`gender` are recomputed; every other field (word, zh, en, level, rank, freq,
+src) and the entry order stay untouched, and re-running is idempotent.
 
-Fields added
-  partOfSpeech  noun | verb | adjective | adverb | pronoun | determiner |
-                article | preposition | conjunction | numeral | interjection |
-                properNoun | prefix | suffix | phrase
-  gender        'm' | 'f' | 'm/f'   nouns only, when a source attests it
-                ('m/f' = both genders exist for the sense taught, e.g. "cantante")
-  level         A1..C2, INFERRED from the corpus rank, same bands as German:
-                position among ranked entries <=600 A1, <=1500 A2, <=3000 B1,
-                <=6000 B2, rest C1; entries with no corpus frequency are C2.
-  levelSource   'freq-band' | 'unranked'
+Fields written
+  pos      noun | verb | adjective | adverb | pronoun | determiner |
+           article | preposition | conjunction | numeral | interjection |
+           properNoun | prefix | suffix | phrase
+  gender   'm' | 'f' | 'm/f'   nouns only, when a source attests it
+           ('m/f' = both genders exist for the sense taught, e.g. "cantante")
+  `level` is not set here: vocab_schema.finalize() assigns the shared
+  frequency bands (levelSource 'freq-band') when the file is emitted.
 
 How the part of speech is chosen
   A headword like "era" is a noun (era) *and* a verb form (was); the card
-  teaches one of those via its `english` gloss, so the tag has to match the
+  teaches one of those via its `en` gloss, so the tag has to match the
   gloss.  Each Wiktionary entry for the word is scored by how well its glosses
   cover our English senses (earlier senses weigh more); "to …" glosses favour
   verbs, English inflected verb forms ("was", "said") favour Italian verb
-  forms.  The POS word leading the old `dictionary` field is only a weak prior:
-  it is wrong for many function words ("io", "fare", "essere" are all labelled
-  noun there).  Without a Wiktionary entry, Morph-it! analyses decide, and the
-  `dictionary` prior only as a last resort.
+  forms.  The entry's existing `pos` is only a weak prior (it replaced the POS
+  word that led the pre-v1 `dictionary` field, which was wrong for many
+  function words).  Without a Wiktionary entry, Morph-it! analyses decide, and
+  the existing `pos` only as a last resort.
 
 Sources (downloads kept out of the repo, build-time only)
   Wiktionary via kaikki.org (CC BY-SA):
@@ -51,10 +49,10 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-VOCAB = ROOT / 'vocabulary.js'
-PREFIX = 'const VOCABULARY_DATA = '
-TAG_FIELDS = ('partOfSpeech', 'gender', 'level', 'levelSource', 'tagSource')
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import vocab_schema as vs  # noqa: E402
+
+BUILDER = 'scripts/build_italian_vocabulary_tags.py'
 
 KAIKKI_POS = {
     'noun': 'noun', 'verb': 'verb', 'adj': 'adjective', 'adv': 'adverb',
@@ -65,17 +63,6 @@ KAIKKI_POS = {
     'prep_phrase': 'phrase', 'adv_phrase': 'phrase', 'proverb': 'phrase',
     'particle': 'adverb',
 }
-
-# the leading word of the legacy `dictionary` field
-DICT_POS = {
-    'noun': 'noun', 'verb': 'verb', 'adjective': 'adjective', 'adverb': 'adverb',
-    'pronoun': 'pronoun', 'numeral': 'numeral', 'conjunction': 'conjunction',
-    'interjection': 'interjection', 'prefix': 'prefix', 'suffix': 'suffix',
-    'preposition': 'preposition', 'article': 'article',
-    'possessiveAdjective': 'determiner', 'possessivePronoun': 'pronoun',
-    'demonstrativePronoun': 'pronoun',
-}
-
 
 def morphit_pos(tag: str) -> str | None:
     head = tag.split(':')[0]
@@ -278,11 +265,10 @@ MORPH_ORDER = ['article', 'preposition', 'conjunction', 'pronoun', 'determiner',
 
 
 def choose(entry: dict, kaikki, morph) -> tuple[str | None, str, str]:
-    """-> (partOfSpeech, gender, source used — reported in the build stats)"""
-    w = entry['italian']
-    senses = split_senses(entry.get('english', ''))
-    dict_word = (entry.get('dictionary') or '').split(' ')[0]
-    prior = DICT_POS.get(dict_word)
+    """-> (pos, gender, source used — reported in the build stats)"""
+    w = entry['word']
+    senses = split_senses(entry.get('en', ''))
+    prior = entry.get('pos') or None
     analyses = morph.get(w) or morph.get(w.lower()) or []
 
     # a capitalised headword ("Felice" = happy) competes with its lowercase entries
@@ -318,27 +304,8 @@ def choose(entry: dict, kaikki, morph) -> tuple[str | None, str, str]:
         return pos, (morphit_gender(analyses) if pos == 'noun' else ''), 'morph-it'
 
     if prior:
-        return prior, '', 'dictionary'
-    return ('phrase' if ' ' in w.strip() else None), '', 'dictionary'
-
-
-def compact_array(entries: list[dict]) -> str:
-    """One entry per line: ~40% smaller than indent=2, still diff-friendly, and
-    the `\\n];` terminator the regex-based readers look for is kept."""
-    return '[\n' + ',\n'.join(json.dumps(e, ensure_ascii=False, separators=(',', ':'))
-                              for e in entries) + '\n]'
-
-
-def band(position: int) -> str:
-    if position <= 600:
-        return 'A1'
-    if position <= 1500:
-        return 'A2'
-    if position <= 3000:
-        return 'B1'
-    if position <= 6000:
-        return 'B2'
-    return 'C1'
+        return prior, '', 'prior'
+    return ('phrase' if ' ' in w.strip() else None), '', 'prior'
 
 
 def main() -> int:
@@ -347,31 +314,25 @@ def main() -> int:
     ap.add_argument('--morphit', type=Path, required=True)
     args = ap.parse_args()
 
-    text = VOCAB.read_text(encoding='utf-8')
-    at = text.index(PREFIX)
-    head, body = text[:at], text[at + len(PREFIX):]
-    data = json.loads(body.rstrip().rstrip(';'))
+    data = vs.read_vocab('it')
+    entries = data['entries']
 
     wanted = set()
-    for e in data:
-        wanted.add(e['italian'])
-        wanted.add(e['italian'].lower())
+    for e in entries:
+        wanted.add(e['word'])
+        wanted.add(e['word'].lower())
     print('loading Wiktionary …', file=sys.stderr)
     kaikki = load_kaikki(args.kaikki, wanted)
     print('loading Morph-it! …', file=sys.stderr)
     morph = load_morphit(args.morphit)
 
-    ranked = sorted((e for e in data if e.get('frequency')),
-                    key=lambda e: (e['rank'], e['italian']))
-    position = {id(e): i for i, e in enumerate(ranked, start=1)}
-
     out = []
     stats = Counter()
-    for e in data:
-        base = {k: v for k, v in e.items() if k not in TAG_FIELDS}
-        pos, gender, src = choose(base, kaikki, morph)
+    for e in entries:
+        pos, gender, src = choose(e, kaikki, morph)
+        base = {k: v for k, v in e.items() if k not in ('pos', 'gender')}
         if pos:
-            base['partOfSpeech'] = pos
+            base['pos'] = pos
             stats['pos:' + pos] += 1
             stats['src:' + src] += 1
         else:
@@ -382,24 +343,12 @@ def main() -> int:
                 stats['gender:' + gender] += 1
             else:
                 stats['gender:none'] += 1
-        if id(e) in position:
-            base['level'] = band(position[id(e)])
-            base['levelSource'] = 'freq-band'
-        else:
-            base['level'] = 'C2'
-            base['levelSource'] = 'unranked'
-        stats['level:' + base['level']] += 1
-        out.append(base)
+        out.append(vs.clean_entry(base))
 
-    head = ('// Italian Vocabulary Data - Enhanced with translations\n'
-            '// Total entries: %d\n'
-            '// Structure: {italian, dictionary, english, chinese, frequency, rank,\n'
-            '//   partOfSpeech, gender?, level, levelSource}\n'
-            '// level is inferred from corpus rank; partOfSpeech/gender come from\n'
-            '// Wiktionary (kaikki, CC BY-SA) and Morph-it! (CC BY-SA 2.0 / LGPL).\n'
-            '// Rebuild the tags with scripts/build_italian_vocabulary_tags.py\n\n'
-            % len(out))
-    VOCAB.write_text(head + PREFIX + compact_array(out) + ';\n', encoding='utf-8')
+    meta = data['meta']
+    path = vs.write_vocab('it', out, sources=meta['sources'], licences=meta['licences'],
+                          builder=BUILDER, notes=meta.get('notes', ''))
+    print(path, file=sys.stderr)
     for k in sorted(stats):
         print('  %-24s %d' % (k, stats[k]), file=sys.stderr)
     return 0

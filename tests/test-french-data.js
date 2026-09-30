@@ -8,60 +8,82 @@ global.window = global;
 require('../lib/utils.js');
 const { headwordKey, foldAccents } = global.DimText;
 
-const coreVocabulary = require('../data/french-vocabulary.js');
-const glossaryVocabulary = require('../data/french-vocabulary-glossary.js');
+const { loadVocab, sourceOf } = require('../scripts/vocab_node.js');
 const grammar = require('../data/french-grammar-data.js');
 const conjugations = require('../data/french-conjugations.js');
+
+// data/vocab/fr.js 合并了三层：课程整理词表、教材总词汇表、Lexique 词频核心。
+// 前两层的原始输入在 data/vocab/src/（build_french_vocabulary.py assemble 的输入），
+// 在 fr.js 里靠 src（-> meta.sources）区分。
+const fr = loadVocab('fr');
+const curriculumSource = require('../data/vocab/src/fr-curriculum.js');
+const glossarySource = require('../data/vocab/src/fr-glossary.js');
+const layerOf = entry => {
+  const source = sourceOf(fr, entry);
+  if (source.startsWith('课程整理')) return 'curriculum';
+  if (source.includes('总词汇表')) return 'glossary';
+  return 'core';
+};
 
 // 法语里重音区分词义（ou/où、la/là、diner/dîner），去重必须**保留重音**。
 // 抹重音的 key 会把 A1 词直接删掉 —— 见 audit: fr-accent-blind-dedupe-drops-a1-words。
 const normalizeHeadword = value => headwordKey(value);
-const accentBlindKey = value => foldAccents(value).toLowerCase().replace(/['\u2019]/g, "'").trim();
+const accentBlindKey = value => foldAccents(value).toLowerCase().replace(/['’]/g, "'").trim();
 
+// 教材两层（课程 + 总词汇表）在 fr.js 里的样子，即原来 french-app.js 合并出来的词表。
+// Array.from：fr.js 在 vm 里加载，数组来自另一个 realm，deepEqual 会因原型不同而失败。
+const vocabulary = Array.from(fr.entries.filter(entry => layerOf(entry) !== 'core'));
 const mergeBy = keyFn => {
   const seen = new Set();
-  return [...coreVocabulary, ...glossaryVocabulary].filter(item => {
-    const key = keyFn(item.french);
+  return vocabulary.filter(item => {
+    const key = keyFn(item.word);
     if (!key || seen.has(key)) return false;
     seen.add(key);
     return true;
   });
 };
 
-const vocabulary = mergeBy(normalizeHeadword);
-
-assert.equal(coreVocabulary.length, 372, 'French core vocabulary size changed unexpectedly');
-// 2008 -> 1996：教材词汇表重建时把 acteur(trice) 这类带阴性括注的条目
+// 源文件层：课程整理 372 条；
+// 教材总词汇表 2008 -> 1996：重建时把 acteur(trice) 这类带阴性括注的条目
 // 规范成了词元 + feminine/display/printed 三个字段（123 条带阴性形），
 // 原来分列的阴阳性条目因此并成一条。少的 12 条是并条，不是丢词。
-assert.equal(glossaryVocabulary.length, 1996, 'French textbook glossary size changed unexpectedly');
-assert.ok(glossaryVocabulary.every(item => item.printed), 'French glossary lost the printed textbook form');
+assert.equal(curriculumSource.length, 372, 'French curriculum size changed unexpectedly');
+assert.equal(glossarySource.length, 1996, 'French textbook glossary size changed unexpectedly');
+assert.ok(glossarySource.every(item => item.printed), 'French glossary lost the printed textbook form');
 assert.ok(
-  glossaryVocabulary.some(item => item.french === 'acteur' && item.feminine === 'actrice' && item.printed === 'acteur(trice)'),
+  glossarySource.some(item => item.french === 'acteur' && item.feminine === 'actrice' && item.printed === 'acteur(trice)'),
   'French glossary lost the normalized gendered headword'
 );
 assert.deepEqual(
   Object.fromEntries(['A1', 'A2', 'B1', 'B2'].map(level => [
     level,
-    glossaryVocabulary.filter(item => item.level === level).length
+    glossarySource.filter(item => item.level === level).length
   ])),
   { A1: 540, A2: 410, B1: 544, B2: 502 },
   'French textbook glossary level counts changed unexpectedly'
 );
-assert.equal(vocabulary.length, 2156, 'Merged French vocabulary size changed unexpectedly');
-assert.equal(new Set(vocabulary.map(item => normalizeHeadword(item.french))).size, vocabulary.length, 'French vocabulary contains duplicate headwords');
-assert.ok(vocabulary.every(item => item.french && item.meaning && item.rank && item.source), 'French vocabulary has incomplete entries');
-assert.ok(glossaryVocabulary.every(item => item.textbookPage && item.level && item.partOfSpeech), 'French glossary entries lost textbook provenance');
-assert.ok(glossaryVocabulary.some(item => item.french === 'montgolfière' && item.level === 'B2'), 'Reviewed B2 accent correction is missing');
+assert.ok(glossarySource.every(item => item.textbookPage && item.level && item.partOfSpeech), 'French glossary entries lost textbook provenance');
+
+// fr.js 层：课程词表整层保留（与总词汇表重叠时课程优先），合并后仍是 2156 个教材词
+assert.equal(fr.meta.count, fr.entries.length, 'fr.js meta.count out of sync');
+assert.equal(vocabulary.filter(e => layerOf(e) === 'curriculum').length, 372, 'fr.js lost curriculum entries');
+assert.equal(vocabulary.length, 2156, 'Merged French textbook vocabulary size changed unexpectedly');
+assert.equal(new Set(fr.entries.map(item => normalizeHeadword(item.word))).size, fr.entries.length, 'fr.js contains duplicate headwords');
+assert.ok(vocabulary.every(item => item.word && item.zh && item.rank && item.level), 'French vocabulary has incomplete entries');
+assert.ok(fr.entries.some(item => item.word === 'montgolfière' && item.level === 'B2' && layerOf(item) === 'glossary'), 'Reviewed B2 accent correction is missing');
+assert.ok(
+  fr.entries.some(item => item.word === 'acteur' && item.forms && item.forms.feminine === 'actrice'),
+  'fr.js lost the feminine form of acteur'
+);
 
 // ===== 重音回归：ou/où、la/là 必须同时存在 =====
 // 见 audit: fr-accent-blind-dedupe-drops-a1-words
 //
 // diner/dîner 从这组里拿掉了：它俩是同一个词的两种拼法（1990 年改革后
-// 两种都合法），词汇表重建后统一收 dîner，教材印的 diner 保留在 printed
-// 字段里。ou/où、la/là 则是真正的不同词，仍然必须各占一条 —— 下面单独
+// 两种都合法），词汇表重建后统一收 dîner，教材印的 diner 保留在源文件的
+// printed 字段里。ou/où、la/là 则是真正的不同词，仍然必须各占一条 —— 下面单独
 // 断言 dîner 的教材拼法没丢。
-const headwords = new Set(vocabulary.map(item => item.french));
+const headwords = new Set(fr.entries.map(item => item.word));
 for (const pair of [['ou', 'où'], ['la', 'là']]) {
   assert.ok(
     headwords.has(pair[0]) && headwords.has(pair[1]),
@@ -69,13 +91,13 @@ for (const pair of [['ou', 'où'], ['la', 'là']]) {
   );
 }
 assert.ok(
-  glossaryVocabulary.some(item => item.french === 'dîner' && item.printed === 'diner'),
+  glossarySource.some(item => item.french === 'dîner' && item.printed === 'diner') && headwords.has('dîner') && !headwords.has('diner'),
   'Textbook spelling "diner" must survive as the printed form of dîner'
 );
 
 // 大小写仍然合并（Internet / internet 是同一个词）
 assert.equal(
-  vocabulary.filter(item => normalizeHeadword(item.french) === 'internet').length,
+  fr.entries.filter(item => normalizeHeadword(item.word) === 'internet').length,
   1,
   'Case-only duplicates should still collapse'
 );
@@ -83,8 +105,8 @@ assert.equal(
 // 量化旧的抹重音 key 会丢多少词，避免有人"顺手"改回去
 const accentBlind = mergeBy(accentBlindKey);
 const droppedByAccentBlindness = vocabulary
-  .filter(item => !new Set(accentBlind.map(w => w.french)).has(item.french))
-  .map(item => item.french);
+  .filter(item => !new Set(accentBlind.map(w => w.word)).has(item.word))
+  .map(item => item.word);
 assert.deepEqual(
   droppedByAccentBlindness.sort(),
   // 原来是 ['diner', 'là', 'ou']；词汇表重建把 diner 并进 dîner 之后，
@@ -147,4 +169,4 @@ const aller = conjugations.find(verb => verb.infinitive === 'aller');
 const allerPasseCompose = aller.tenses.indicatif_passe_compose.forms;
 assert.match(allerPasseCompose.je, /^suis allé/);
 
-console.log(`French data OK: ${vocabulary.length} merged words (${glossaryVocabulary.length} textbook glossary entries), ${topics.length} grammar topics, ${conjugations.length} verbs.`);
+console.log(`French data OK: ${fr.entries.length} fr.js words (${vocabulary.length} textbook, ${glossarySource.length} glossary source rows), ${topics.length} grammar topics, ${conjugations.length} verbs.`);

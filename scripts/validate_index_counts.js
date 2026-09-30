@@ -7,7 +7,7 @@
  * 时没人会想起改 index.html，于是它们一路陈旧下去：german-vocab 曾停在 15,507
  * （真实 24,314），french-vocab 停在 2,183（真实 24,536，差一个数量级）。
  *
- * 顺带锁住法语 CEFR 等级 chip：核心词库里 C1/C2 占 70%，chip 只列到 B2 时
+ * 顺带锁住法语 CEFR 等级 chip：data/vocab/fr.js 里 C1/C2 占 70%，chip 只列到 B2 时
  * 这些词没有任何等级筛选够得着。
  *
  *   node scripts/validate_index_counts.js
@@ -17,6 +17,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const { loadVocab } = require('./vocab_node');
 
 const ROOT = path.resolve(__dirname, '..');
 const read = (rel) => fs.readFileSync(path.join(ROOT, rel), 'utf8');
@@ -31,36 +32,22 @@ function constArrayLength(rel, name) {
   return ctx.__X.length;
 }
 
+// 词库条数取 data/vocab/<lang>.js 的 meta.count（validate_vocab.js 保证它等于 entries.length）。
+// 法语的三层来源已在构建时合并成一份 fr.js，其 meta.count 就是系统词库条数。
+const vocabCount = (lang) => loadVocab(lang).meta.count;
+
 // ---------- 真实条数 ----------
 
 const actual = {
-  'italian-vocab': constArrayLength('vocabulary.js', 'VOCABULARY_DATA'),
+  'italian-vocab': vocabCount('it'),
   'italian-cognates': constArrayLength('data/cognates.js', 'COGNATE_DATA'),
-  'german-vocab': constArrayLength('data/german-vocabulary.js', 'GERMAN_VOCABULARY_DATA'),
+  'german-vocab': vocabCount('de'),
   'german-cognates': constArrayLength('data/german-cognates.js', 'GERMAN_COGNATE_DATA'),
-  'english-vocab': constArrayLength('data/english-vocabulary.js', 'ENGLISH_VOCABULARY_DATA'),
+  'english-vocab': vocabCount('en'),
   'french-cognates': constArrayLength('data/french-cognates.js', 'FRENCH_COGNATE_DATA'),
+  'french-vocab': vocabCount('fr'),
 };
-
-// 法语系统词库是三份来源按 headwordKey 去重后的结果，等同 FrenchApp.buildSystemVocabulary()
-// （parseHeadword 的括注剥离不改变 key 集合，已与浏览器实测对齐）
-const frenchSources = (() => {
-  global.window = global;
-  require(path.join(ROOT, 'lib/utils.js'));
-  const { headwordKey } = global.DimText;
-  const parts = [
-    require(path.join(ROOT, 'data/french-vocabulary.js')),
-    require(path.join(ROOT, 'data/french-vocabulary-glossary.js')),
-    require(path.join(ROOT, 'data/french-vocabulary-core.js')),
-  ];
-  const seen = new Set();
-  parts.flat().forEach((entry) => {
-    const key = entry && headwordKey(entry.french);
-    if (key) seen.add(key);
-  });
-  return { merged: seen.size, all: parts.flat() };
-})();
-actual['french-vocab'] = frenchSources.merged;
+const frenchEntries = loadVocab('fr').entries;
 
 // ---------- index.html 占位数字 ----------
 
@@ -96,10 +83,7 @@ const routerJs = read('lib/router.js');
 // ---------- 法语 CEFR 等级 chip 覆盖 ----------
 
 const levelsInData = new Set();
-frenchSources.all.forEach((entry) => {
-  const hit = /\b(A1|A2|B1|B2|C1|C2)\b/.exec((entry && entry.notes) || '');
-  if (hit) levelsInData.add(hit[1]);
-});
+frenchEntries.forEach((entry) => levelsInData.add(entry.level));
 
 const frenchAppJs = read('french-app.js');
 const levelsConst = /const LEVELS = \[([^\]]*)\]/.exec(frenchAppJs);
@@ -109,7 +93,7 @@ if (!levelsConst) {
   const declared = new Set(levelsConst[1].match(/[A-C][12]/g) || []);
   [...levelsInData].sort().forEach((level) => {
     if (!declared.has(level)) {
-      const n = frenchSources.all.filter((e) => new RegExp(`\\b${level}\\b`).test((e && e.notes) || '')).length;
+      const n = frenchEntries.filter((e) => e.level === level).length;
       fail(`法语数据里有 ${n} 条 ${level} 词，但 french-app.js 的 LEVELS 没列 ${level}，这些词没有任何等级筛选够得着`);
     }
     const chips = (frenchAppJs.match(new RegExp(`data-level="${level}"`, 'g')) || []).length;
