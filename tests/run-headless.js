@@ -27,6 +27,7 @@ const NODE_HARNESSES = ['test-french-data.js', 'test-german-course-data.js', 'te
 // 生成数据和它的输入分头改动时（语法树重命名、词库重建）不会有任何测试变红——
 // 已经这样漏过三次。校验器覆盖的正是这块，接进来当阻断项。
 const VALIDATORS = [
+  'scripts/validate_vocab.js',
   'scripts/validate_italian_extras.js',
   'scripts/validate_italian_vocabulary.js',
   'scripts/validate_french_extras.js',
