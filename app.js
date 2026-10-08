@@ -110,7 +110,7 @@
 
   // ==================== 练习来源 ====================
   //
-  // Prefs（dimenticato_prefs，按语言）：source 'system' | 'wb:<id>' | 'course'，
+  // Prefs（dimenticato_<code>_prefs，DimStorage.key(lang, 'prefs')）：source 'system' | 'wb:<id>' | 'course'，
   // level 'A1'..'C2' | 'all'，filter 'all' | 'new' | 'due'，session '20'|'50'|'100'|'all'
 
   var courseSelection = null; // { lang, label, entries } —— 课程路线（course.js）选中的单元词表
