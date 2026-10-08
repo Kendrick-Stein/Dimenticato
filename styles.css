@@ -23,9 +23,12 @@
   --muted: #5a665d; /* 在 paper/paper-deep/card 上都 ≥4.5:1（原 #6d7a70 在 paper-deep 上只有 3.4） */
   --line: #d9d0ba;
   --line-ink: #24382e;
+  /* Form-control borders need ≥3:1 against the surface (WCAG 1.4.11);
+     --line is 1.3–1.5:1. #8a816a: paper 3.5, paper-soft 3.2, card 3.7. */
+  --control-line: #8a816a;
   --red: #8e2f2b;
   --red-soft: #f3e3df;
-  --gold: #8a6410;
+  --gold: #7a580c; /* 5.4:1 on gold-soft, 4.9:1 on paper-deep (was #8a6410: 4.0–4.5) */
   --gold-soft: #f3ead2;
   --verde: #2f6b46;
   --verde-soft: #e2eee4;
@@ -56,9 +59,10 @@
   --card: #1c2b24;
   --ink: #ece6d6;
   --ink-soft: #b9b4a3;
-  --muted: #979786;
+  --muted: #a3a391; /* 5.2:1 on paper-deep, 5.8 on card (was #979786: 4.45 on paper-deep) */
   --line: #33463c;
   --line-ink: #cfc6ae;
+  --control-line: #6b8073; /* paper 4.0, paper-soft 3.6, card 3.5 */
   --red: #e0867c;
   --red-soft: #3a2623;
   --gold: #d8b25e;
@@ -127,12 +131,11 @@ h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
 .hidden, [hidden] { display: none !important; }
 .num { font-family: var(--mono); font-weight: 500; letter-spacing: -0.02em; }
 .muted { color: var(--muted); }
-.visually-hidden {
-  position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden;
-  clip: rect(0 0 0 0); white-space: nowrap;
-}
 
 /* Material Symbols ligatures (icons inside feature modules) */
+/* Until the icon font is usable (index.html removes .msr-pending), hide the
+   ligature words and reserve the icon's 1em box so nothing reflows. */
+.msr-pending .msr { visibility: hidden; width: 1em; overflow: hidden; }
 .msr {
   font-family: "Material Symbols Rounded";
   font-weight: normal;
@@ -322,8 +325,6 @@ main#main { min-height: 60vh; }
   color: var(--ink-soft);
   font-size: 0.86rem;
 }
-.footer-brand { font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--ink); }
-.footer-brand em { color: var(--red); }
 .footer a { color: inherit; }
 
 /* ---------- 4. Primitives ---------- */
@@ -386,7 +387,6 @@ main#main { min-height: 60vh; }
 
 .btn,
 .primary-btn,
-.secondary-btn,
 .pill-btn,
 .back-btn,
 .back-link {
@@ -416,11 +416,10 @@ main#main { min-height: 60vh; }
 .btn-ghost { background: transparent; color: var(--ink); }
 .pill-btn, .btn-small { min-height: 2.35rem; padding: 0.35rem 0.9rem; font-size: 0.88rem; }
 .back-btn, .back-link { min-height: 2.35rem; padding: 0.35rem 0.8rem; border-color: var(--line); font-size: 0.88rem; font-weight: 500; }
-.danger-btn { border-color: var(--red); color: var(--red); }
 .pill-btn.active, .pill-btn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
 
 @media (hover: hover) {
-  .btn:hover, .secondary-btn:hover, .pill-btn:hover, .back-btn:hover, .back-link:hover { background: var(--paper-deep); }
+  .btn:hover, .pill-btn:hover, .back-btn:hover, .back-link:hover { background: var(--paper-deep); }
   .btn-ghost:hover { transform: translateY(-1px); }
   .primary-btn:hover:not(:disabled), .btn-primary:hover:not(:disabled) {
     background: var(--line-ink);
@@ -612,7 +611,7 @@ textarea {
   width: 100%;
   min-height: var(--control);
   padding: 0.5rem 0.8rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--control-line);
   border-radius: var(--radius);
   background: var(--card);
   color: var(--ink);
@@ -1149,7 +1148,14 @@ p.small { margin-top: 0.6rem; }
 .loading-inner .brand-mark { width: 3rem; height: 3rem; font-size: 1.4rem; animation: loading-pulse 1.4s ease-in-out infinite; }
 .loading-title { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; }
 .loading-progress-bar { width: 100%; height: 3px; overflow: hidden; background: var(--paper-deep); }
-.loading-progress-fill { width: 30%; height: 100%; background: var(--ink); animation: loading-slide 1.2s ease-in-out infinite; }
+/* Determinate by default (boot.js sets the width from real file counts);
+   indeterminate only until the first file lands. */
+.loading-progress-fill { width: 0; height: 100%; background: var(--ink); transition: width 0.2s ease; }
+.loading-progress-fill.is-indeterminate { width: 30%; animation: loading-slide 1.2s ease-in-out infinite; }
+.loading-error { display: grid; gap: 0.6rem; justify-items: center; }
+.loading-error-title { color: var(--red); font-size: 0.9rem; }
+.loading-error-files { margin: 0; padding: 0; list-style: none; color: var(--ink-soft); font-family: var(--mono); font-size: 0.78rem; word-break: break-all; }
+.loading-error-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
 .loading-detail { color: var(--muted); font-family: var(--mono); font-size: 0.8rem; }
 @keyframes loading-pulse { 50% { opacity: 0.45; } }
 @keyframes loading-slide { from { transform: translateX(-100%); } to { transform: translateX(340%); } }
@@ -1199,7 +1205,7 @@ p.small { margin-top: 0.6rem; }
 }
 
 /* Mobile nav: the text nav folds into a dropdown under the topbar. */
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   .nav-toggle { display: inline-flex; }
   .topbar-tools { margin-left: auto; }
   .topbar .brand-name { display: inline; }
@@ -1242,7 +1248,7 @@ p.small { margin-top: 0.6rem; }
   .method-steps { grid-template-columns: 1fr; gap: 1.4rem; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .wrap { padding-top: 1.4rem; }
   .topbar .brand-name { display: none; }
   .lang-switch button { min-width: 2.3rem; padding: 0 0.4rem; }
@@ -1533,19 +1539,6 @@ h1.page {
 
 /* ---------- 8.2 Typing game ---------- */
 
-/* Entry card on the vocabulary-modes screen */
-.card.typing-feature-card {
-  flex-direction: row;
-  gap: 1.1rem;
-  align-items: center;
-  margin-top: 0.9rem;
-  border-style: dashed;
-}
-.card.typing-feature-card:hover { border-style: solid; }
-.typing-feature-text { display: flex; flex: 1; flex-direction: column; gap: 0.3rem; }
-.typing-feature-arrow { color: var(--red); transition: transform var(--ease); }
-.typing-feature-card:hover .typing-feature-arrow { transform: translateX(3px); }
-
 /* Setup */
 .typing-mode-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 1.3rem; }
 .typing-mode-chips .chip { min-height: 2.6rem; padding: 0.4rem 1.1rem; font-size: 0.92rem; }
@@ -1643,6 +1636,8 @@ h1.page {
   background: var(--card);
   transition: box-shadow var(--ease), border-color var(--ease);
 }
+#typingGameKeys { justify-content: center; margin-top: 0.6rem; }
+.typing-feedback { margin-top: 0.5rem; color: var(--gold); font-size: 0.86rem; text-align: center; }
 .typing-input-row:focus-within { outline: 2px solid var(--red); outline-offset: 1px; }
 .typing-input-row .msr { color: var(--muted); }
 #typingGameInput {
@@ -1733,7 +1728,6 @@ h1.page {
   background: var(--card);
   transition: border-color var(--ease);
 }
-.conj-setup-panel.conj-context-active { border-color: var(--line-ink); border-top-color: var(--red); }
 .conj-setup-panel + .sub-label { margin-top: 2rem; }
 
 .conj-module-toolbar {
@@ -2092,9 +2086,18 @@ h1.page {
   overflow: hidden;
   border-right: 1px solid var(--line);
   background: var(--paper-soft);
-  transition: width 0.22s ease, min-width 0.22s ease;
+  visibility: visible;
+  transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0s;
 }
-.grammar-book-layout.sidebar-collapsed .grammar-nav-sidebar { width: 0; min-width: 0; border-right-width: 0; }
+/* Collapsed: also visibility:hidden (after the width animation) so the links
+   inside are out of the tab order and the accessibility tree. */
+.grammar-book-layout.sidebar-collapsed .grammar-nav-sidebar {
+  width: 0;
+  min-width: 0;
+  border-right-width: 0;
+  visibility: hidden;
+  transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0.22s;
+}
 
 .grammar-nav-header {
   display: flex;
@@ -2157,8 +2160,9 @@ h1.page {
 .grammar-chapter-btn.open .grammar-chapter-arrow { transform: rotate(90deg); }
 .grammar-chapter-label { flex: 1; }
 
-.grammar-topic-list { max-height: 2000px; overflow: hidden; transition: max-height 0.25s ease; }
-.grammar-topic-list.collapsed { max-height: 0; }
+/* No max-height animation: long chapters used to be clipped at 2000px.
+   display:none also keeps collapsed links out of the tab order. */
+.grammar-topic-list.collapsed { display: none; }
 .grammar-topic-link {
   display: block;
   width: 100%;
@@ -2665,9 +2669,20 @@ h1.page {
 #courseLevelSummary .about-note { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.02em; }
 
 #courseScreen .section-head-row .card-desc { display: block; }
-#courseUnitCards .card[role="button"] { cursor: pointer; }
+#courseUnitCards .course-unit-card { cursor: pointer; }
+#courseUnitCards .course-unit-open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+#courseUnitCards .course-unit-open:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
 @media (hover: hover) {
-  #courseUnitCards .card[role="button"]:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
+  #courseUnitCards .course-unit-card:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
 }
 #courseUnitCards .card .chips { margin-top: 0.2rem; }
 #courseUnitCards .card .chip { min-height: 1.8rem; padding: 0.1rem 0.55rem; font-size: 0.78rem; }
@@ -2968,31 +2983,15 @@ h1.page {
   background: var(--paper-soft);
 }
 
-.feature-box,
-.usage-box {
+.feature-box {
   margin-bottom: 1rem;
   padding: 1rem 1.2rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--card);
 }
-.feature-box > :last-child,
-.usage-box > :last-child { margin-bottom: 0; }
+.feature-box > :last-child { margin-bottom: 0; }
 .feature-box.highlight { border-color: var(--line-ink); box-shadow: inset 0 3px 0 var(--red); }
-.usage-box { border-left: 3px solid var(--verde); }
-
-.code-block {
-  margin: 0.8rem 0;
-  padding: 0.9rem 1rem;
-  overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper-soft);
-  font-family: var(--mono);
-  font-size: 0.84rem;
-  line-height: 1.6;
-  white-space: pre;
-}
 
 .help-tip {
   margin: 0.9rem 0;
@@ -3061,12 +3060,16 @@ h1.page {
     min-width: 0;
     border-right-width: 0;
     box-shadow: var(--shadow-2);
+    visibility: hidden;
+    transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0.22s;
   }
   .grammar-book-layout.sidebar-open .grammar-nav-sidebar {
     width: 82vw;
     min-width: 16rem;
     max-width: 20rem;
     border-right-width: 1px;
+    visibility: visible;
+    transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0s;
   }
   .grammar-content-body { padding: 1.2rem 1rem 3rem; }
   .vc-search-panel { padding: 0.8rem 0.85rem 0.6rem; }
@@ -3094,7 +3097,6 @@ h1.page {
   /* Help */
   .help-modal-body { padding: 1rem; }
   .help-section h2 { font-size: 1.35rem; }
-  .code-block { font-size: 0.78rem; }
 }
 
 @media (max-width: 640px) {
@@ -3112,7 +3114,7 @@ h1.page {
   #conjugationModeButtons { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .editor-toolbar,
   .editor-toolbar > div:first-child { flex-direction: column; align-items: stretch; }
   .editor-toolbar-btn { width: 100%; }
@@ -3124,6 +3126,5 @@ h1.page {
   .typing-overlay-card,
   .typing-input-row.typing-shake,
   #typingGameInput.typing-shake { animation: none; }
-  .grammar-nav-sidebar,
-  .grammar-topic-list { transition: none; }
+  .grammar-nav-sidebar { transition: none; }
 }

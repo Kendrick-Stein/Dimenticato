@@ -213,10 +213,12 @@
     return out;
   }
 
-  function matchesAnswer(answers, personKey, value) {
-    const user = norm(value);
-    if (!user) return false;
-    return expandAcceptedAnswers(answers, personKey).some(ans => norm(ans) === user);
+  // 判分走共用的 Vocab.gradeTyped（lib/vocab.js）：'correct' | 'accent' | 'wrong'。
+  // 重音写错（parlo ≠ parlò）不算对，单独提示「字母对了，重音不对」；
+  // 德语 ä/ae、ö/oe、ü/ue、ß/ss 视为同一写法。
+  function gradeAnswer(answers, personKey, value) {
+    if (!norm(value)) return 'wrong';
+    return window.Vocab.gradeTyped(ctx.code, value, expandAcceptedAnswers(answers, personKey));
   }
 
   // 反馈里展示的“正确答案”：带主语的时态补上主语。
@@ -475,7 +477,7 @@
 
   function buildTenseButton(meta) {
     return `
-      <button class="chip conj-tense-btn ${meta.key === state.selectedTense ? 'active' : ''}" data-tense="${escapeAttribute(meta.key)}" title="${escapeAttribute(`${tenseTitle(meta)}${meta.zh ? ` · ${meta.zh}` : ''}`)}">
+      <button type="button" class="chip conj-tense-btn ${meta.key === state.selectedTense ? 'active' : ''}" aria-pressed="${meta.key === state.selectedTense ? 'true' : 'false'}" data-tense="${escapeAttribute(meta.key)}" title="${escapeAttribute(`${tenseTitle(meta)}${meta.zh ? ` · ${meta.zh}` : ''}`)}">
         <span class="ct-name">${escapeHtml(meta.label)}</span>
         <span class="ct-group">${escapeHtml(meta.groupLabel || '时态')}</span>
       </button>
@@ -486,6 +488,7 @@
     const buttons = document.querySelectorAll('#conjTenseButtons .conj-tense-btn');
     buttons.forEach(btn => {
       btn.classList.toggle('active', btn.dataset.tense === state.selectedTense);
+      btn.setAttribute('aria-pressed', btn.dataset.tense === state.selectedTense ? 'true' : 'false');
     });
   }
 
@@ -788,6 +791,9 @@ ${moodRows}
           data-index="${index}"
           placeholder="请输入"
           autocomplete="off"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"${ctx.code ? ` lang="${escapeAttribute(ctx.code)}"` : ''}
         >
         <span class="conj-full-answer hidden"></span>
       </label>
@@ -883,6 +889,9 @@ ${moodRows}
     const fullSection = document.getElementById('conjFullSection');
     const input = document.getElementById('conjInput');
 
+    const keys = document.getElementById('conjKeys');
+    if (keys) keys.classList.toggle('hidden', state.mode === 'mcq');
+
     if (state.mode === 'mcq') {
       typingSection?.classList.add('hidden');
       fullSection?.classList.add('hidden');
@@ -914,7 +923,8 @@ ${moodRows}
     const checkBtn = document.getElementById('conjCheckBtn');
     if (!input || input.disabled) return;
 
-    const isCorrect = matchesAnswer(state.current.answers, state.current.person, input.value);
+    const grade = gradeAnswer(state.current.answers, state.current.person, input.value);
+    const isCorrect = grade === 'correct';
 
     state.total += 1;
     if (isCorrect) state.correct += 1;
@@ -927,7 +937,7 @@ ${moodRows}
     const answerText = answerDisplayText(state.current.answers, state.current.person, state.current.tenseKey);
     showFeedback(
       isCorrect,
-      isCorrect ? '正确！' : `错误，正确答案：${answerText}`,
+      isCorrect ? '正确！' : grade === 'accent' ? `字母对了，重音不对：${answerText}` : `错误，正确答案：${answerText}`,
       state.mode === 'full' && isCorrect ? 700 : 0
     );
   }
@@ -951,7 +961,8 @@ ${moodRows}
       const answerEl = row?.querySelector('.conj-full-answer');
       if (!input || !row || !answerEl) return;
 
-      const correct = matchesAnswer(item.answers, item.person, input.value);
+      const grade = gradeAnswer(item.answers, item.person, input.value);
+      const correct = grade === 'correct';
 
       localTotal += 1;
       if (correct) localCorrect += 1;
@@ -960,9 +971,10 @@ ${moodRows}
       input.disabled = true;
       row.classList.remove('correct', 'incorrect');
       row.classList.add(correct ? 'correct' : 'incorrect');
+      const answerText = answerDisplayText(item.answers, item.person, state.current.tenseKey);
       answerEl.textContent = correct
         ? '正确'
-        : `正确答案：${answerDisplayText(item.answers, item.person, state.current.tenseKey)}`;
+        : grade === 'accent' ? `字母对了，重音不对：${answerText}` : `正确答案：${answerText}`;
       answerEl.classList.remove('hidden');
     });
 
@@ -1040,6 +1052,10 @@ ${moodRows}
   }
 
   function bindEvents() {
+    document.getElementById('conjugationScreen')?.addEventListener('focusin', (e) => {
+      const t = e.target;
+      if (t && (t.id === 'conjInput' || (t.classList && t.classList.contains('conj-full-input')))) lastConjInput = t;
+    });
     const lessonSizeSelect = document.getElementById('conjLessonSizeSelect');
 
     lessonSizeSelect?.addEventListener('change', () => {
@@ -1109,8 +1125,33 @@ ${moodRows}
     }
     const typingInput = document.getElementById('conjInput');
     if (typingInput) typingInput.placeholder = ctx.placeholders.typing || '请输入正确变位';
+    // 动词、人称、变位和输入框是目标语言：给读屏/输入法/断字正确的 lang。
+    // 只标这些目标语言区块——屏幕外壳是中文界面，整屏标 lang 会让读屏用错发音。
+    ['conjInfinitive', 'conjPronoun', 'conjInput', 'conjFullGrid', 'conjOptions', 'conjLookupInput'].forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (code) el.setAttribute('lang', code);
+      else el.removeAttribute('lang');
+    });
+    mountConjKeys();
     renderTenseButtons();
     updateLessonUI();
+  }
+
+  // 特殊字母键盘（profile.accents）：插到最近一次获得焦点的作答框里
+  let lastConjInput = null;
+  function currentConjInput() {
+    if (state.mode === 'full' && isGroupedFullQuestion(state.current)) {
+      if (lastConjInput && lastConjInput.classList && lastConjInput.classList.contains('conj-full-input')
+        && lastConjInput.isConnected !== false && !lastConjInput.disabled) return lastConjInput;
+      return document.querySelector('#conjFullGrid .conj-full-input:not([disabled])');
+    }
+    return document.getElementById('conjInput');
+  }
+  function mountConjKeys() {
+    const host = document.getElementById('conjKeys');
+    if (!host || !window.Languages || typeof window.Languages.mountAccentKeys !== 'function') return;
+    window.Languages.mountAccentKeys(host, currentConjInput, ctx.code);
   }
 
   function init() {
@@ -1128,12 +1169,16 @@ ${moodRows}
 
     // 变位数据按模块懒加载（每门语言几 MB，只有进本模块才用得上）。
     // 缺席时补拉后重试一次；拉不到再走「数据未加载」提示。
-    // 注意 LangLoader 的模块表按旧 key（'italian'）索引，传 code 会直接 resolve(false)。
-    const langKey = window.Languages.key(code);
+    // LangLoader 的 ensureModule / isModuleLoaded 接受 code 或 key（内部 keyOf 归一）。
     if (!dataFor(code) && !retried && window.LangLoader
       && typeof window.LangLoader.ensureModule === 'function'
-      && !window.LangLoader.isModuleLoaded(langKey, 'conjugations')) {
-      window.LangLoader.ensureModule(langKey, 'conjugations').then(() => openFor(code, true));
+      && !window.LangLoader.isModuleLoaded(code, 'conjugations')) {
+      window.LangLoader.ensureModule(code, 'conjugations').then(() => {
+        // 下载期间用户可能已经换了语言：别把旧语言的变位页弹出来
+        const active = typeof window.getActiveLanguage === 'function' ? window.getActiveLanguage() : null;
+        if (active && window.Languages.code(active) !== code) return;
+        openFor(code, true);
+      });
       return;
     }
 

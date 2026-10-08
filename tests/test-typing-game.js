@@ -47,8 +47,11 @@ function ensureItem(game, answer) {
 // ===== 加载引擎（顶层 const 不进 window，从词法作用域取） =====
 const win = createWindow();
 const context = vm.createContext(win);
-const engineFile = path.join(ROOT, 'lib/typing-game.js');
-vm.runInContext(fs.readFileSync(engineFile, 'utf8'), context, { filename: engineFile });
+// 判分走 lib/vocab.js 的 Vocab.gradeTyped（与拼写 / 变位共用），按应用里的注入顺序先加载
+['lib/languages.js', 'lib/vocab.js', 'lib/typing-game.js'].forEach((file) => {
+  const abs = path.join(ROOT, file);
+  vm.runInContext(fs.readFileSync(abs, 'utf8'), context, { filename: abs });
+});
 const TypingGame = vm.runInContext('typeof TypingGame !== "undefined" ? TypingGame : null', context);
 assert(TypingGame, 'TypingGame 应已暴露');
 
@@ -90,18 +93,42 @@ group('clear flow', () => {
   assertEqual(cleared[0][1].points, 10, 'clear 事件带分数');
 });
 
-// ===== 重音宽松匹配 =====
-group('accent-insensitive', () => {
+// ===== 重音：只差重音不击落，回车时发 wrong{accent} =====
+group('accent', () => {
+  const events = [];
   const game = TypingGame.create({
+    lang: 'fr',
     pool: [{ prompt: '是', answer: 'être' }],
-    baseInterval: 999999
+    baseInterval: 999999,
+    onEvent: (t, p) => events.push([t, p])
   });
   game.start();
   game.setInput('et');
   assert(!game.exactMatch(), '部分输入不命中');
-  assertEqual(game.cleared, 0, '未击落');
+  assert(game.activeTarget() && game.activeTarget().answer === 'être', '没打重音也能高亮目标');
   game.setInput('etre');
-  assertEqual(game.cleared, 1, 'etre 应自动击落 être（重音可省略）');
+  assertEqual(game.cleared, 0, 'etre 不应击落 être（重音不对）');
+  assertEqual(game.submit(), false, '回车提交 etre 不算命中');
+  const wrong = events.filter((e) => e[0] === 'wrong').pop();
+  assert(wrong && wrong[1].accent === true, 'wrong 事件应标记 accent');
+  assert(wrong && wrong[1].matched && wrong[1].matched.answer === 'être', 'accent 事件带上目标');
+  game.setInput('Être');
+  assertEqual(game.cleared, 1, 'Être（大小写不论）应击落 être');
+});
+
+// ===== 德语：ä/ae、ß/ss 等价；konnen 只差变音符 =====
+group('german equivalents', () => {
+  const game = TypingGame.create({
+    lang: 'de',
+    pool: [{ prompt: '能', answer: 'können' }, { prompt: '街', answer: 'die Straße' }],
+    baseInterval: 999999
+  });
+  game.start();
+  while (game.items.length < 2) game.spawn();
+  game.setInput('koennen');
+  assertEqual(game.cleared, 1, 'koennen 应击落 können');
+  game.setInput('die strasse');
+  assertEqual(game.cleared, 2, 'die strasse 应击落 die Straße');
 });
 
 // ===== 回车提交未命中：断连击不扣命 =====

@@ -194,16 +194,18 @@
     if (!el) return;
 
     el.innerHTML =
-      '<div class="typing-mode-chips" role="tablist">' +
-        '<button type="button" class="chip active" data-typing-mode="vocab">📚 背单词</button>' +
-        '<button type="button" class="chip" data-typing-mode="conjugation">🔄 动词变位</button>' +
+      '<div class="typing-mode-chips" role="tablist" aria-label="玩法">' +
+        '<button type="button" class="chip active" role="tab" aria-selected="true" tabindex="0" data-typing-mode="vocab">' +
+          '<span class="msr" aria-hidden="true">style</span>背单词</button>' +
+        '<button type="button" class="chip" role="tab" aria-selected="false" tabindex="-1" data-typing-mode="conjugation">' +
+          '<span class="msr" aria-hidden="true">sync_alt</span>动词变位</button>' +
       '</div>' +
       '<div class="typing-options">' +
-        '<div class="typing-opt-label">难度</div>' +
-        '<div class="chips">' +
-          '<button type="button" class="chip active" data-typing-diff="easy">🌊 简单</button>' +
-          '<button type="button" class="chip" data-typing-diff="normal">⛵ 普通</button>' +
-          '<button type="button" class="chip" data-typing-diff="hard">🌪️ 困难</button>' +
+        '<div class="typing-opt-label" id="typingDiffLabel">难度</div>' +
+        '<div class="chips" role="group" aria-labelledby="typingDiffLabel">' +
+          '<button type="button" class="chip active" aria-pressed="true" data-typing-diff="easy">简单</button>' +
+          '<button type="button" class="chip" aria-pressed="false" data-typing-diff="normal">普通</button>' +
+          '<button type="button" class="chip" aria-pressed="false" data-typing-diff="hard">困难</button>' +
         '</div>' +
         '<label class="typing-check">' +
           '<input type="checkbox" id="typingSpeakToggle" checked> 击落时朗读单词发音' +
@@ -218,7 +220,7 @@
       '</button>' +
       '<p class="typing-tip">单词会从上方顺流而下，看释义、打单词把它击落！' +
       '输入时无需按回车，打完整就自动击落；输到一半按回车可提前提交。' +
-      '重音符号可以省略（é 可输入 e）。沉底的单词会扣一条命，共 3 条命。</p>';
+      '重音要打对（可用输入框下方的特殊字母键）；德语 ä/ö/ü/ß 也可写成 ae/oe/ue/ss。沉底的单词会扣一条命，共 3 条命。</p>';
 
     // 每门语言一句玩法提示
     const tip = $id('typingGameDesc');
@@ -226,17 +228,33 @@
       tip.textContent = cn + '单词顺流而下，看释义、打字击落！共 3 条命，支持背单词与动词变位两种玩法。';
     }
 
-    // 模式/难度切换
-    el.querySelectorAll('[data-typing-mode]').forEach((b) => {
-      b.addEventListener('click', () => {
-        el.querySelectorAll('[data-typing-mode]').forEach((x) => x.classList.remove('active'));
-        b.classList.add('active');
+    // 模式（tablist：aria-selected + 方向键切换）/ 难度（aria-pressed）
+    const modes = Array.prototype.slice.call(el.querySelectorAll('[data-typing-mode]'));
+    const selectMode = (b) => {
+      modes.forEach((x) => {
+        const on = x === b;
+        x.classList.toggle('active', on);
+        x.setAttribute('aria-selected', on ? 'true' : 'false');
+        x.setAttribute('tabindex', on ? '0' : '-1');
+      });
+    };
+    modes.forEach((b, i) => {
+      b.addEventListener('click', () => selectMode(b));
+      b.addEventListener('keydown', (e) => {
+        const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!step) return;
+        e.preventDefault();
+        const next = modes[(i + step + modes.length) % modes.length];
+        selectMode(next);
+        if (typeof next.focus === 'function') next.focus();
       });
     });
     el.querySelectorAll('[data-typing-diff]').forEach((b) => {
       b.addEventListener('click', () => {
-        el.querySelectorAll('[data-typing-diff]').forEach((x) => x.classList.remove('active'));
-        b.classList.add('active');
+        el.querySelectorAll('[data-typing-diff]').forEach((x) => {
+          x.classList.toggle('active', x === b);
+          x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+        });
       });
     });
 
@@ -286,7 +304,7 @@
 
     overlay.innerHTML =
       '<div class="typing-overlay-card">' +
-        '<h2>🌊 本轮结束</h2>' +
+        '<h2><span class="msr" aria-hidden="true">sports_esports</span>本轮结束</h2>' +
         '<div class="typing-final-score">' + fmt(stats.score) + '</div>' +
         '<div class="typing-overlay-stats">' +
           '<div><span>击落单词</span><b>' + stats.cleared + '</b></div>' +
@@ -295,7 +313,7 @@
           '<div><span>用时</span><b>' + stats.duration + 's</b></div>' +
         '</div>' +
         '<p class="typing-overlay-meta">' + langCn(lang) + ' · ' + modeLabel + ' · ' + diff +
-        (isRecord ? ' · <b class="typing-new-record">🏆 新纪录！</b>' : '') + '</p>' +
+        (isRecord ? ' · <b class="typing-new-record"><span class="msr" aria-hidden="true">task_alt</span>新纪录！</b>' : '') + '</p>' +
         '<p class="typing-overlay-best">历史最佳：' + fmt(Math.max(prevBest, stats.score)) + '</p>' +
         '<div class="typing-overlay-actions">' +
           '<button class="primary-btn" id="typingRestartBtn"><span class="msr" aria-hidden="true">replay</span> 再来一局</button>' +
@@ -368,6 +386,7 @@
     const setup = $id('typingGameSetup');
 
     const game = global.TypingGame.create({
+      lang: session.lang, // 判分走 Vocab.gradeTyped(lang)：德语 ae/oe/ue/ss 等价，重音要打对
       canvas: canvas || null,
       pool: entries,
       baseSpeed: cfg.baseSpeed,
@@ -402,9 +421,14 @@
       session._logicTimer = setInterval(() => game.tick(50), 50);
     }
 
+    setFeedback('');
+    if (global.Languages && typeof global.Languages.mountAccentKeys === 'function') {
+      global.Languages.mountAccentKeys($id('typingGameKeys'), input, session.lang);
+    }
     hud();
     game.start();
     if (input) {
+      input.setAttribute('lang', global.Languages.code(session.lang) || '');
       input.value = '';
       try { input.focus(); } catch (err) { /* ignore */ }
     }
@@ -424,11 +448,22 @@
     if (session) session.speak = false;
   }
 
+  // 输入框下方的一行反馈（role=status）：目前只用于「字母对了，重音不对」
+  function setFeedback(text) {
+    const el = $id('typingGameFeedback');
+    if (!el) return;
+    el.textContent = text || '';
+    el.classList.toggle('hidden', !text);
+  }
+
   function handleEvent(type, payload) {
     if (!session) return;
     const input = $id('typingGameInput');
     switch (type) {
       case 'clear':
+        // 引擎击落后清空了自己的 input，输入框要跟上，否则下一个字母会接在旧词后面
+        if (input) input.value = '';
+        setFeedback('');
         hud();
         if (session.renderer && payload.item) {
           session.renderer.burst(payload.item.x, payload.item.y - 20, '#ffd54f', '+' + payload.points);
@@ -437,6 +472,7 @@
         recordOutcome(payload.item.answer, true);
         break;
       case 'miss':
+        if (input) input.value = '';
         hud();
         if (input) {
           input.classList.remove('typing-shake');
@@ -446,6 +482,8 @@
         recordOutcome(payload.item && payload.item.answer, false);
         break;
       case 'wrong':
+        setFeedback(payload && payload.accent && payload.matched
+          ? '字母对了，重音不对：' + payload.matched.answer : '');
         if (input) {
           input.classList.remove('typing-shake');
           void input.offsetWidth;

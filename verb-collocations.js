@@ -53,11 +53,11 @@ const VerbCollocations = (() => {
 
   /** 数据未加载时补拉；已经尝试过（或没有该模块）返回 null，调用方走缺数状态。 */
   function ensureDataset(lang) {
+    // LangLoader 接受 code 或 key，不必再换算
     const loader = window.LangLoader;
-    const key = Languages.key(lang);
-    if (!loader || !key || typeof loader.ensureModule !== 'function') return null;
-    if (!Languages.hasModule(lang, MODULE) || loader.isModuleLoaded(key, MODULE)) return null;
-    return loader.ensureModule(key, MODULE);
+    if (!loader || !lang || typeof loader.ensureModule !== 'function') return null;
+    if (!Languages.hasModule(lang, MODULE) || loader.isModuleLoaded(lang, MODULE)) return null;
+    return loader.ensureModule(lang, MODULE);
   }
 
   function title(lang) {
@@ -189,9 +189,17 @@ const VerbCollocations = (() => {
     });
 
     dom.sidebarToggle?.addEventListener('click', toggleSidebar);
+    if (narrowMql) {
+      if (typeof narrowMql.addEventListener === 'function') narrowMql.addEventListener('change', syncSidebarToggle);
+      else if (typeof narrowMql.addListener === 'function') narrowMql.addListener(syncSidebarToggle);
+    }
+    syncSidebarToggle();
 
+    // 每敲一个字都重排几百个动词卡片太重：输入停 150ms 再搜
+    let searchTimer = null;
     dom.searchInput?.addEventListener('input', () => {
-      updateSearch(dom.searchInput.value.trim());
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => updateSearch(dom.searchInput.value.trim()), 150);
     });
 
     dom.searchInput?.addEventListener('keydown', (event) => {
@@ -213,16 +221,46 @@ const VerbCollocations = (() => {
     if (dom.backBtn) {
       dom.backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回语法';
     }
+    // 动词搜索框是目标语言；目录/结果里只给目标语言的那一段标 lang（同行混着中文计数）
+    const code = Languages.code(state.lang);
+    [dom.searchInput].forEach((el) => {
+      if (!el) return;
+      if (code) el.setAttribute('lang', code);
+      else el.removeAttribute('lang');
+    });
     if (dom.searchInput) {
+      dom.searchInput.setAttribute('autocapitalize', 'off');
+      dom.searchInput.setAttribute('spellcheck', 'false');
       dom.searchInput.disabled = false;
       dom.searchInput.setAttribute('placeholder', `搜索${profile(state.lang).cn}动词...`);
     }
   }
 
+  // 与 styles.css 的手机断点（max-width: 760px，抽屉式目录）保持一致
+  const NARROW_QUERY = '(max-width: 760px)';
+  const narrowMql = typeof window.matchMedia === 'function' ? window.matchMedia(NARROW_QUERY) : null;
+  function isNarrow() {
+    return narrowMql ? narrowMql.matches : window.innerWidth <= 760;
+  }
+
+  function getLayout() {
+    return document.querySelector('#verbCollocationsScreen .grammar-book-layout');
+  }
+
+  // 目录是否展开：手机上看 sidebar-open，桌面上看有没有 sidebar-collapsed
+  function syncSidebarToggle() {
+    const layout = getLayout();
+    if (!layout || !dom.sidebarToggle) return;
+    const expanded = isNarrow()
+      ? layout.classList.contains('sidebar-open')
+      : !layout.classList.contains('sidebar-collapsed');
+    dom.sidebarToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  }
+
   function closeMobileSidebar() {
-    if (window.innerWidth < 768) {
-      document.querySelector('#verbCollocationsScreen .grammar-book-layout')
-        ?.classList.remove('sidebar-open');
+    if (isNarrow()) {
+      getLayout()?.classList.remove('sidebar-open');
+      syncSidebarToggle();
     }
   }
 
@@ -242,7 +280,7 @@ const VerbCollocations = (() => {
       btn.dataset.prep = key;
       if (rec && rec.zh) btn.title = rec.zh;
       btn.innerHTML =
-        '<span class="vc-prep-name">' + escapeHtml(keyLabel(data, key)) + '</span>' +
+        '<span class="vc-prep-name" lang="' + escapeAttribute(Languages.code(state.lang) || '') + '">' + escapeHtml(keyLabel(data, key)) + '</span>' +
         '<span class="vc-prep-count">' + words.length + ' 个动词</span>';
       btn.addEventListener('click', () => selectKey(key));
 
@@ -365,18 +403,28 @@ const VerbCollocations = (() => {
     renderSearchChooser(query, matches);
   }
 
+  // 搜索索引：每个数据集只建一次（折叠键 + 已排好序），之后每次查询只做 includes 过滤
+  let searchIndex = { map: null, items: [] };
+  function verbSearchIndex() {
+    const map = getVerbMap();
+    if (searchIndex.map !== map) {
+      const items = Object.entries(map || {})
+        .map(([word, verb]) => ({
+          word,
+          display: displayOf(verb, word),
+          keyCount: keysOf(verb).length,
+        }));
+      items.forEach((item) => { item.key = looseKey(item.display); });
+      items.sort((a, b) => a.display.localeCompare(b.display));
+      searchIndex = { map, items };
+    }
+    return searchIndex.items;
+  }
+
   function findVerbMatches(query) {
     const normalized = looseKey(query);
     if (!normalized) return [];
-
-    return Object.entries(getVerbMap())
-      .map(([word, verb]) => ({
-        word,
-        display: displayOf(verb, word),
-        keyCount: keysOf(verb).length,
-      }))
-      .filter(item => looseKey(item.display).includes(normalized))
-      .sort((a, b) => a.display.localeCompare(b.display));
+    return verbSearchIndex().filter(item => item.key.includes(normalized));
   }
 
   function renderSearchMatches(matches) {
@@ -390,7 +438,7 @@ const VerbCollocations = (() => {
     const topMatches = matches.slice(0, 12);
     dom.searchMatches.innerHTML = topMatches.map(match => (
       '<button class="vc-search-match-btn' + (state.selectedVerb === match.word ? ' active' : '') + '" data-slug="' + escapeAttribute(match.word) + '">' +
-        '<span class="vc-search-match-name">' + escapeHtml(match.display) + '</span>' +
+        '<span class="vc-search-match-name" lang="' + escapeAttribute(Languages.code(state.lang) || '') + '">' + escapeHtml(match.display) + '</span>' +
         '<span class="vc-search-match-meta">' + match.keyCount + ' 组</span>' +
       '</button>'
     )).join('');
@@ -615,13 +663,14 @@ const VerbCollocations = (() => {
   }
 
   function toggleSidebar() {
-    const layout = document.querySelector('#verbCollocationsScreen .grammar-book-layout');
+    const layout = getLayout();
     if (!layout) return;
-    if (window.innerWidth < 768) {
+    if (isNarrow()) {
       layout.classList.toggle('sidebar-open');
     } else {
       layout.classList.toggle('sidebar-collapsed');
     }
+    syncSidebarToggle();
   }
 
   return {

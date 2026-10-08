@@ -7,6 +7,10 @@
  *   unit.grammar —— [{label, slug}]，slug 是语法书 grammar/1 slug（旧 slug 经
  *                   GrammarBook.resolveSlug 走 meta.aliases 也能解析）
  * 入口卡片由 App 渲染，路由 #/<code>/course 调 Course.open(code)。
+ *
+ * 目前只有德语（de）带课程数据（data/de-course.js）；意/法/英没有 files.course。
+ * 这几门语言不会出现课程入口：首页/语法页卡片按 Languages.hasModule('course') 过滤，
+ * 路由 #/<code>/course 在 app.js 里同样判断后回首页，open() 自己也兜一次底。
  * 屏幕 DOM 是 index.html 里静态的 <section id="courseScreen">。
  */
 (function () {
@@ -66,7 +70,11 @@
     open(lang) {
       this.init();
       const code = codeOf(lang || (window.App && window.App.lang && window.App.lang()));
-      const key = window.Languages.key(code); // LangLoader 的模块账按语言 key 记
+      // 没有课程数据的语言（目前除德语外都没有）：不进一个注定「未能载入」的空页
+      if (!code || !window.Languages.hasModule(code, 'course')) {
+        if (typeof window.showScreen === 'function') window.showScreen('homeScreen', { replaceRoute: true });
+        return;
+      }
       if (code !== this.code) {
         this.code = code;
         this.activeLevelId = null;
@@ -74,12 +82,12 @@
       }
       const loader = window.LangLoader;
       const missing = (module) => !this.data(module) && loader
-        && typeof loader.ensureModule === 'function' && !loader.isModuleLoaded(key, module);
+        && typeof loader.ensureModule === 'function' && !loader.isModuleLoaded(code, module);
       // 课程数据没到时先不渲染（否则会闪一下「未能载入」）
       if (!missing('course') && this.ensureReady()) this.render();
       if (typeof window.showScreen === 'function') window.showScreen('courseScreen');
       // 语法书没到之前语法标签是纯文本，到了再重渲染成可点 chip
-      const pending = ['course', 'grammar'].filter(missing).map((module) => loader.ensureModule(key, module));
+      const pending = ['course', 'grammar'].filter(missing).map((module) => loader.ensureModule(code, module));
       if (pending.length) {
         Promise.all(pending).then(() => {
           if (this.code === code && this.ensureReady()) this.render();
@@ -139,16 +147,8 @@
         const card = event.target.closest('[data-course-unit]');
         if (card) this.openUnit(card.dataset.courseUnit);
       });
-      // 单元卡片是 div[role=button]（里面嵌了真正的 <button> 语法标签，
-      // button 不能嵌套 button），键盘可达性要自己补上。
-      unitCards?.addEventListener('keydown', (event) => {
-        if (event.key !== 'Enter' && event.key !== ' ') return;
-        if (event.target.closest('[data-grammar-slug]')) return;
-        const card = event.target.closest('[data-course-unit]');
-        if (!card) return;
-        event.preventDefault();
-        this.openUnit(card.dataset.courseUnit);
-      });
+      // 卡片里还有语法标签按钮（button 不能嵌套 button），所以键盘/读屏的入口是
+      // 卡片标题这个真正的 <button>；鼠标点卡片任意空白处也照样打开（上面的 click）。
       $('courseLevelSummary')?.addEventListener('click', (event) => {
         if (event.target.closest('#coursePracticeLevelBtn')) this.openLevelPractice();
       });
@@ -316,9 +316,9 @@
         const words = this.getUnitWords(unit);
         const masteredCount = this.countMastered(words, mastered);
         return `
-          <div class="card" role="button" tabindex="0" data-course-unit="${escAttr(unit.id)}">
+          <div class="card course-unit-card" data-course-unit="${escAttr(unit.id)}">
             <span class="card-chip"><span class="msr" aria-hidden="true">school</span></span>
-            <span class="card-title">${esc(this.unitLabel(unit))} · ${esc(unit.title)}</span>
+            <button type="button" class="card-title course-unit-open">${esc(this.unitLabel(unit))} · <span lang="${escAttr(this.code || '')}">${esc(unit.title)}</span></button>
             <span class="card-desc">${esc(unit.summary || '')}</span>
             ${this.renderGrammarTags(unit)}
             <span class="card-desc">${words.length} 个核心词 · 已掌握 ${masteredCount}</span>

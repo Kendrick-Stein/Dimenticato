@@ -11,6 +11,7 @@
  */
 const GrammarBook = (() => {
   let sidebarListenerAdded = false;
+  let topicListSeq = 0;
   let currentSlug = null;
   let activeData = null; // currently loaded grammar data
   let activeLang = window.Languages.DEFAULT; // 语言代码（'it' / 'de' / …）
@@ -22,6 +23,24 @@ const GrammarBook = (() => {
 
   function getLayout() {
     return document.querySelector('#grammarBookScreen .grammar-book-layout');
+  }
+
+  // 与 styles.css 的手机断点（max-width: 760px，抽屉式目录）保持一致
+  const NARROW_QUERY = '(max-width: 760px)';
+  const narrowMql = typeof window.matchMedia === 'function' ? window.matchMedia(NARROW_QUERY) : null;
+  function isNarrow() {
+    return narrowMql ? narrowMql.matches : window.innerWidth <= 760;
+  }
+
+  // 目录是否展开：手机上看 sidebar-open，桌面上看有没有 sidebar-collapsed
+  function syncSidebarToggle() {
+    const layout = getLayout();
+    const btn = document.getElementById('grammarSidebarToggle');
+    if (!layout || !btn) return;
+    const expanded = isNarrow()
+      ? layout.classList.contains('sidebar-open')
+      : !layout.classList.contains('sidebar-collapsed');
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
   }
 
   // 语法数据按模块懒加载，注册在 DIM_DATA.grammar.<code>，调用时取
@@ -187,8 +206,14 @@ const GrammarBook = (() => {
     if (!sidebarListenerAdded) {
       document.getElementById('grammarSidebarToggle')
         ?.addEventListener('click', toggleSidebar);
+      if (narrowMql) {
+        const onChange = () => syncSidebarToggle();
+        if (typeof narrowMql.addEventListener === 'function') narrowMql.addEventListener('change', onChange);
+        else if (typeof narrowMql.addListener === 'function') narrowMql.addListener(onChange);
+      }
       sidebarListenerAdded = true;
     }
+    syncSidebarToggle();
   }
 
   /** 侧边栏标题 / 返回按钮：共享屏必须自报语言，否则用户不知道自己在读哪一本。 */
@@ -285,17 +310,22 @@ const GrammarBook = (() => {
 
         const chapterBtn = document.createElement('button');
         chapterBtn.className = 'grammar-chapter-btn' + (expandByDefault ? ' open' : '');
+        chapterBtn.type = 'button';
+        chapterBtn.setAttribute('aria-expanded', expandByDefault ? 'true' : 'false');
         chapterBtn.innerHTML =
           '<span class="grammar-chapter-arrow msr" aria-hidden="true">chevron_right</span>' +
           '<span class="grammar-chapter-label">' + escapeHtml(ch.title) + '</span>';
 
         const topicList = document.createElement('div');
         topicList.className = 'grammar-topic-list' + (expandByDefault ? '' : ' collapsed');
+        topicList.id = 'grammarTopics-' + (++topicListSeq);
+        chapterBtn.setAttribute('aria-controls', topicList.id);
 
         chapterBtn.addEventListener('click', () => {
           const isOpen = !topicList.classList.contains('collapsed');
           topicList.classList.toggle('collapsed', isOpen);
           chapterBtn.classList.toggle('open', !isOpen);
+          chapterBtn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
         });
 
         appendTopics(topicList, ch.topics, part.title, ch.title);
@@ -364,6 +394,7 @@ const GrammarBook = (() => {
       if (list && list.classList.contains('collapsed')) {
         list.classList.remove('collapsed');
         list.previousElementSibling?.classList.add('open');
+        list.previousElementSibling?.setAttribute('aria-expanded', 'true');
       }
       activeLink.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }
@@ -393,8 +424,9 @@ const GrammarBook = (() => {
     body.scrollTop = 0;
 
     // On mobile, close sidebar after selecting topic
-    if (window.innerWidth < 768) {
+    if (isNarrow()) {
       getLayout()?.classList.remove('sidebar-open');
+      syncSidebarToggle();
     }
   }
 
@@ -420,11 +452,12 @@ const GrammarBook = (() => {
   function toggleSidebar() {
     const layout = getLayout();
     if (!layout) return;
-    if (window.innerWidth < 768) {
+    if (isNarrow()) {
       layout.classList.toggle('sidebar-open');
     } else {
       layout.classList.toggle('sidebar-collapsed');
     }
+    syncSidebarToggle();
   }
 
   return {
