@@ -121,14 +121,17 @@ const pendingWords = [];
 for (const fix of FIXES) {
   let ok;
   if (fix.add) ok = lower.has(fix.add.word.toLowerCase());
-  else {
+  else if (fix.drop) {
+    const into = byWord.get(fix.into);
+    ok = !byWord.has(fix.drop) && !!into && [].concat(into.legacyWord || []).includes(fix.drop);
+  } else {
     const entry = byWord.get(fix.word);
     const cur = entry ? (entry[fix.field] === undefined ? (fix.field === 'zhAlt' ? [] : '') : entry[fix.field]) : undefined;
     ok = entry !== undefined && JSON.stringify(cur) === JSON.stringify(fix.to);
   }
   if (!ok) {
     pending++;
-    if (pendingWords.length < 10) pendingWords.push(fix.add ? `+${fix.add.word}` : `${fix.word}.${fix.field}`);
+    if (pendingWords.length < 10) pendingWords.push(fix.add ? `+${fix.add.word}` : fix.drop ? `-${fix.drop}` : `${fix.word}.${fix.field}`);
   }
 }
 check(pending === 0, `fix list: ${pending} of ${FIXES.length} records in scripts/vocab_fixes/fr.json ` +

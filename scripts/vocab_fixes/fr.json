@@ -9926,11 +9926,9 @@
   "why": "homograph draw: 拉/拔剑 wrong"
  },
  {
-  "word": "pars",
-  "field": "zh",
-  "from": "标准；票面价值；平均数量",
-  "to": "（高尔夫）标准杆",
-  "why": "English par senses wrong; note: also tu/je pars of partir"
+  "drop": "pars",
+  "into": "partir",
+  "why": "pars is je/tu pars of partir (its corpus frequency); the golf noun is par, so the headword was a mis-tagged verb form"
  },
  {
   "word": "débuter",

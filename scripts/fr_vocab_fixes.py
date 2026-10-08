@@ -19,6 +19,10 @@ canonical_conjugations.py:
       Adds an entry (for example a cognate the corpus layers lack) unless a
       layer already supplies that headword.  Added entries carry
       ``ADDED_SOURCE`` and get their rank from wordfreq like textbook rows.
+  {"drop": w, "into": lemma, "why": …}
+      Removes a headword that is really an inflected form (``pars`` = je/tu
+      pars of partir); ``w`` joins the lemma's ``legacyWord`` so progress
+      saved under it resolves to the lemma.
 
 Usage (the fixes are normally applied by the builder's assemble step):
     python3 scripts/build_french_vocabulary.py assemble     # rebuild fr.js with the fixes
@@ -71,6 +75,20 @@ def apply_fixes(entries: list[dict], fixes: list[dict] | None = None,
     keys = {key(e['word']) for e in entries}
     applied, stale = 0, []
     for fix in fixes:
+        if 'drop' in fix:
+            word, into = fix['drop'], by_word.get(fix['into'])
+            if into is None:
+                stale.append(f'drop {word}: lemma {fix["into"]!r} not found')
+                continue
+            legacy = into.get('legacyWord') or []
+            legacy = [legacy] if isinstance(legacy, str) else list(legacy)
+            if word not in legacy:
+                into['legacyWord'] = legacy + [word] if legacy else word
+                applied += 1
+            if word in by_word:
+                entries.remove(by_word.pop(word))
+                applied += 1
+            continue
         if 'add' in fix:
             row = fix['add']
             if row['word'] in by_word or key(row['word']) in keys:
