@@ -109,12 +109,12 @@
 
       <!-- ============ 首页 ============ -->
       <section id="homeScreen" class="screen active" aria-label="首页">
-        <div class="wrap" id="homeView" data-view></div>
+        <div class="view-bands" id="homeView" data-view></div>
       </section>
 
       <!-- ============ 词汇 ============ -->
       <section id="vocabScreen" class="screen" aria-label="词汇练习">
-        <div class="wrap" id="vocabView" data-view></div>
+        <div class="view-bands" id="vocabView" data-view></div>
       </section>
 
       <!-- 选择题 -->
@@ -287,7 +287,7 @@
 
       <!-- ============ 语法 ============ -->
       <section id="grammarScreen" class="screen" aria-label="语法">
-        <div class="wrap" id="grammarView" data-view></div>
+        <div class="view-bands" id="grammarView" data-view></div>
       </section>
 
       <section id="conjugationSetupScreen" class="screen">
@@ -390,7 +390,7 @@
           </div>
 
           <div class="practice-card">
-            <div class="eyebrow" style="text-align:center">时态 · <span id="conjTenseTitle">-</span></div>
+            <div class="eyebrow">时态 · <span id="conjTenseTitle">-</span></div>
             <div class="prompt-word-row is-verb">
               <span class="prompt-word" id="conjInfinitive">-</span>
               <span class="prompt-meta hidden" id="conjEnglishLine">· <span id="conjEnglish">-</span></span>
@@ -515,7 +515,7 @@
           </div>
 
           <div class="practice-card hidden" id="vcPracticeQuizCard">
-            <div class="eyebrow" style="text-align:center" id="vcPracticeQuestionTypeLabel">题型</div>
+            <div class="eyebrow" id="vcPracticeQuestionTypeLabel">题型</div>
             <div class="word vc-practice-prompt" id="vcPracticePrompt">-</div>
             <p class="chinese-hint vc-practice-subprompt" id="vcPracticeSubprompt"></p>
             <p class="chinese-hint vc-practice-hint hidden" id="vcPracticeHint"></p>
@@ -591,7 +591,7 @@
           </div>
           <div class="card-grid cols-2" id="courseUnitCards"></div>
 
-          <div class="panel" id="courseNotePanel" style="margin-top:16px" hidden>
+          <div class="panel" id="courseNotePanel" hidden>
             <div class="panel-title">课程范围说明</div>
             <div class="about-note" id="courseNote"></div>
           </div>
@@ -600,7 +600,7 @@
 
       <!-- ============ 进度 ============ -->
       <section id="progressScreen" class="screen" aria-label="学习进度">
-        <div class="wrap" id="progressView" data-view></div>
+        <div class="view-bands" id="progressView" data-view></div>
       </section>
 
       <!-- ============ 设置 ============ -->
@@ -793,7 +793,7 @@
             <button type="button" class="form-btn" data-action="community-file-pick">
               <span class="msr" aria-hidden="true">ios_share</span>选择文件
             </button>
-            <span id="uploadFileName" style="margin-left: 1rem; color: var(--text-secondary);">未选择文件</span>
+            <span id="uploadFileName">未选择文件</span>
           </div>
           
           <div class="form-actions">
