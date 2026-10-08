@@ -308,6 +308,9 @@ def canonicalize(lang, payload, meta=None):
         entries = [normalise(lang, from_legacy(lang, r, ctx), ctx) for r in payload]
         meta = dict(meta or {})
     enrich_from_vocab(lang, entries)
+    if lang == 'it':
+        import italian_fixes  # reviewed fix list: scripts/it_fixes/cognates.json
+        entries = italian_fixes.apply_cognates(entries)
     entries = [ordered(e, FIELD_ORDER) for e in entries]
 
     words = [e['word'] for e in entries]

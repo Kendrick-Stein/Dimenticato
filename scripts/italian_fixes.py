@@ -287,6 +287,54 @@ def apply_grammar(data, fixes=None):
 
 
 # ---------------------------------------------------------------------------
+# cognates
+# ---------------------------------------------------------------------------
+
+def apply_cognates(entries, fixes=None):
+    """Apply it_fixes/cognates.json to cognates/1 entries; returns the new list.
+
+    Records: {word, drop:true} | {word, from:{}, to:{}} | {word, add:{entry}}.
+    Afterwards rank / pos / gender follow data/vocab/it.js (the vocab is re-ranked
+    when it is rebuilt, so stored ranks drift) and entries are ordered by rank.
+    """
+    fixes = fixes if fixes is not None else _load('cognates.json')
+    import vocab_schema as vs
+    by_word = {e['word']: e for e in entries}
+    for rec in fixes or []:
+        word = rec['word']
+        if rec.get('drop'):
+            by_word.pop(word, None)
+        elif rec.get('add'):
+            if word not in by_word:
+                by_word[word] = dict(rec['add'])
+        else:
+            e = by_word.get(word)
+            if e is None:
+                continue  # dropped by a later fix or by the extractor
+            for k, new in rec['to'].items():
+                cur = e.get(k, '')
+                if cur == new:
+                    continue
+                if cur != rec['from'].get(k, ''):
+                    _stale('cognates', '%s.%s = %r' % (word, k, cur))
+                    continue
+                e[k] = new
+    vocab = {v['word']: v for v in vs.read_vocab('it')['entries']}
+    for e in by_word.values():
+        v = vocab.get(e['word'])
+        if not v:
+            continue
+        e['rank'] = v['rank']
+        if v.get('pos'):
+            e['pos'] = v['pos']
+            if v['pos'] == 'noun' and v.get('gender'):
+                e['gender'] = v['gender']
+            elif v['pos'] != 'noun':
+                e.pop('gender', None)
+    return sorted(by_word.values(), key=lambda e: (e['rank'], e['word']))
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 

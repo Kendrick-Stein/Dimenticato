@@ -3276,5 +3276,15 @@
 {"word": "zaffare", "from": {"zh": "扎菲语Name", "en": "zaffe"}, "to": {"zh": "塞住；堵住", "en": "plug; stopper"}, "why": "artefact"},
 {"word": "zolfanelli", "from": {"zh": "佐尔法里语Name", "en": "zolfari"}, "to": {"zh": "（zolfanello 的复数）火柴", "en": "plural of zolfanello: matches"}, "why": "artefact"},
 {"word": "eucalipto", "from": {"zh": "uca"}, "to": {"zh": "桉树"}, "why": "artefact (fragment)"},
-{"word": "pappamolla", "from": {"zh": "鹦鹉", "en": "parrot"}, "to": {"zh": "软弱的人；窝囊废", "en": "wimp; softie"}, "why": "wrong word (pappagallo)"}
+{"word": "pappamolla", "from": {"zh": "鹦鹉", "en": "parrot"}, "to": {"zh": "软弱的人；窝囊废", "en": "wimp; softie"}, "why": "wrong word (pappagallo)"},
+{"word": "fattoria", "from": {"en": "Farm"}, "to": {"en": "farm"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"},
+{"word": "morbido", "from": {"en": "Soft", "zh": "软"}, "to": {"en": "soft", "zh": "柔软的；软的"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"},
+{"word": "eventualmente", "from": {"en": "may", "zh": "可能"}, "to": {"en": "possibly; if need be", "zh": "可能的话；必要时"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"},
+{"word": "pretendere", "from": {"en": "to demand", "zh": "对需求"}, "to": {"en": "to demand; to claim; to expect", "zh": "要求；声称；指望"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"},
+{"word": "lussuria", "from": {"en": "lusuria", "zh": "露苏丽亚"}, "to": {"en": "lust", "zh": "淫欲；色欲"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"},
+{"word": "novella", "from": {"en": "New", "zh": "新设"}, "to": {"en": "short story; novella", "zh": "短篇小说"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"},
+{"word": "crudo", "from": {"en": "raw", "zh": "原样"}, "to": {"en": "raw; harsh", "zh": "生的；未煮的；生硬的"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"},
+{"word": "estate", "from": {"en": "Summer"}, "to": {"en": "summer"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"},
+{"word": "conveniente", "from": {"en": "Cheapest", "zh": "最便宜的"}, "to": {"en": "cheap; good value; advantageous", "zh": "划算的；便宜的；有利的"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"},
+{"word": "triviale", "from": {"en": "trivial", "zh": "无足轻重"}, "to": {"en": "vulgar; coarse", "zh": "粗俗的；下流的"}, "why": "gloss wrong (machine-translated); found while adding false-friend cognates"}
 ]
