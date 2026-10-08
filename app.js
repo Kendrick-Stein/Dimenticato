@@ -1445,8 +1445,12 @@
 
     /** LangLoader：某门语言的词库到位（首屏或中途切换）。幂等。 */
     onLanguageData: function (l) {
+      // 迁移会改写存储：先把内存里还没写盘的进度落盘，迁移完再丢掉缓存。
+      // 顺序反过来的话，迁移后才冲刷的旧集合 / 旧 SRS 缓存会盖掉迁移结果。
+      flushAll();
       try { global.LegacyMigration.run(l); } catch (err) { console.error('[app] 旧进度迁移失败', err); }
       Progress.forget(l);
+      if (global.SpacedRepetition) global.SpacedRepetition.forget(l);
       if (!routerStarted) {
         routerStarted = true;
         global.DimRouter.start();
@@ -1497,12 +1501,6 @@
         if (hasModule('course', l)) MODULE_OPENERS.course(l); else global.showScreen('homeScreen', { replaceRoute: true });
       });
     }
-  };
-
-  // ReviewSession：stats-charts 等旧调用方用它取「当前语言的词表」
-  global.ReviewSession = {
-    wordsFor: function (l) { return global.Vocab.entries(l || lang()); },
-    onAnswered: function () { /* 复习计数在 SpacedRepetition 里，界面在切屏时刷新 */ }
   };
 
   global.App = App;

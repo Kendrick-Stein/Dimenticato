@@ -15,15 +15,16 @@ const CommunityWordbooks = {
     difficulty: 'all',
     language: window.Languages.DEFAULT_KEY, // 语言 key，'all' 表示不限语言
     tags: [],
-    searchTerm: '',
-    sortBy: 'download_count' // 'download_count', 'created_at', 'name'
+    searchTerm: ''
   },
 
-  allWordbooks: [], // 缓存所有词本数据（未按语言过滤）
+  // 当前语言筛选下没有结果时，去掉语言条件还有没有词本（决定是否给「查看全部语言」按钮）
+  otherLanguagesHaveBooks: false,
 
   activeLanguage: window.Languages.DEFAULT_KEY, // 打开社区页面时所处的语言入口
-  returnScreen: 'vocabScreen', // 返回目标
+  returnScreen: 'vocabScreen', // 返回目标：统一的词汇页（四门语言共用一套屏幕）
   bound: false, // 事件是否已绑定（init 幂等）
+  downloading: new Set(), // 正在导入的词本 id：防止连点导入出两份
   serverLanguageFilter: true, // 服务端 language 过滤是否可用（老库可能没有该列）
 
   // ==================== 基础工具 ====================
@@ -65,11 +66,6 @@ const CommunityWordbooks = {
       return this.normalizeLanguage(window.getActiveLanguage());
     }
     return this.normalizeLanguage(document.body.getAttribute('data-language'));
-  },
-
-  /** 返回目标：统一的词汇页（四门语言共用一套屏幕）。 */
-  resolveReturnScreen() {
-    return 'vocabScreen';
   },
 
   // ==================== 生命周期 ====================
@@ -288,12 +284,14 @@ const CommunityWordbooks = {
       let wordCount = 0;
       let parsedWords = null;
 
+      // 扩展名大小写不敏感，和 selectFile 的校验一致（Foo.JSON 也要能传）
+      const fileExt = this.fileExtension(file.name);
       try {
-        if (file.name.endsWith('.json')) {
+        if (fileExt === '.json') {
           const jsonData = JSON.parse(fileContent);
           parsedWords = jsonData.words || jsonData;
           wordCount = Array.isArray(parsedWords) ? parsedWords.length : 0;
-        } else if (file.name.endsWith('.txt')) {
+        } else if (fileExt === '.txt') {
           const parseResult = window.Wordbooks.parseTxt(fileContent, language);
           parsedWords = parseResult.words;
           wordCount = parsedWords.length;
@@ -322,9 +320,9 @@ const CommunityWordbooks = {
       }
 
       const bucketName = (window.STORAGE_CONFIG && window.STORAGE_CONFIG.bucketName) || 'wordbook-files';
-      const timestamp = Date.now();
-      const randomStr = Math.random().toString(36).substring(7);
-      const fileName = `${timestamp}_${randomStr}_${file.name}`;
+      // Storage 的对象 key 只用 ASCII：原文件名可能是中文 / 带空格，Supabase 会拒收。
+      // 扩展名保留（下载时按它决定 JSON / TXT 解析），用户看到的名字在表里的 name 列。
+      const fileName = this.storageObjectKey(fileExt);
 
       // 上传 / 插入同样套超时：网络挂住时按钮不能永远停在「上传中」
       const { data: uploadData, error: uploadError } = await this.withTimeout(client.storage
@@ -401,6 +399,24 @@ const CommunityWordbooks = {
     }
   },
 
+  /** 'Foo.JSON' → '.json'；没有扩展名时为 ''。 */
+  fileExtension(name) {
+    const str = String(name || '');
+    const dot = str.lastIndexOf('.');
+    return dot < 0 ? '' : str.slice(dot).toLowerCase();
+  },
+
+  /** 上传到 Storage 用的对象 key：`<时间戳>-<随机串><.json|.txt>`，与原文件名无关。 */
+  storageObjectKey(ext) {
+    const random = Math.random().toString(36).slice(2, 10) || '0';
+    return `${Date.now()}-${random}${ext === '.txt' ? '.txt' : '.json'}`;
+  },
+
+  /** ilike 模式里的 % _ \ 是通配 / 转义符，用户输入要按字面匹配。 */
+  escapeIlike(term) {
+    return String(term).replace(/[\\%_]/g, ch => '\\' + ch);
+  },
+
   /**
    * 读取文件内容
    */
@@ -436,13 +452,10 @@ const CommunityWordbooks = {
   },
 
   /**
-   * 显示浏览社区词本页面
-   * @param {{language?: string, returnScreen?: string}} [options]
+   * 显示浏览社区词本页面（当前语言入口）
    */
-  async showBrowseScreen(options) {
-    const opts = options || {};
-    this.activeLanguage = opts.language ? this.normalizeLanguage(opts.language) : this.resolveActiveLanguage();
-    this.returnScreen = opts.returnScreen || this.resolveReturnScreen(this.activeLanguage);
+  async showBrowseScreen() {
+    this.activeLanguage = this.resolveActiveLanguage();
 
     if (typeof window.showScreen === 'function') {
       window.showScreen('communityBrowseScreen');
@@ -456,8 +469,7 @@ const CommunityWordbooks = {
       difficulty: 'all',
       language: this.activeLanguage,
       tags: [],
-      searchTerm: '',
-      sortBy: 'download_count'
+      searchTerm: ''
     };
 
     // 清空搜索框
@@ -531,8 +543,14 @@ const CommunityWordbooks = {
         return;
       }
 
-      this.allWordbooks = data || [];
-      this.renderWordbookList(this.filterByLanguage(this.allWordbooks));
+      const list = this.filterByLanguage(data || []);
+      // 按语言筛空了：服务端已经按语言过滤，看不到别的语言有没有词本，单独数一下
+      this.otherLanguagesHaveBooks = false;
+      if (!list.length && this.isLanguageFiltered()) {
+        this.otherLanguagesHaveBooks = await this.countWithoutLanguage(client, data || []);
+        if (stale()) return;
+      }
+      this.renderWordbookList(list);
 
     } catch (error) {
       if (stale()) return;
@@ -541,53 +559,47 @@ const CommunityWordbooks = {
     }
   },
 
+  /** 列表查询的筛选条件（不含排序 / 分页），列表和「去掉语言条件再数一次」共用。 */
+  buildQuery(client, withLanguage, selectArgs) {
+    let query = client
+      .from('community_wordbooks')
+      .select(...(selectArgs || ['*']));
+
+    // 应用难度筛选
+    if (this.currentFilters.difficulty !== 'all') {
+      query = query.eq('difficulty', this.currentFilters.difficulty);
+    }
+
+    // 应用语言筛选（兼容历史行：language 为空视为意大利语，见 communityLanguage）
+    if (withLanguage && this.currentFilters.language && this.currentFilters.language !== 'all') {
+      const info = window.communityLanguage(this.currentFilters.language);
+      const clauses = info.matches.map(v => `language.eq.${v}`);
+      if (info.includesNull) clauses.push('language.is.null');
+      query = query.or(clauses.join(','));
+    }
+
+    // 应用标签筛选
+    if (this.currentFilters.tags.length > 0) {
+      query = query.contains('tags', this.currentFilters.tags);
+    }
+
+    // 应用搜索（% _ 按字面匹配）
+    if (this.currentFilters.searchTerm) {
+      query = query.ilike('name', `%${this.escapeIlike(this.currentFilters.searchTerm)}%`);
+    }
+
+    return query;
+  },
+
   /**
    * 构建并执行列表查询。
    * language 过滤优先走服务端；老部署可能没有 language 列，出错时降级为纯客户端过滤。
    */
   async runListQuery(client, skipLanguageFilter) {
-    const buildQuery = (withLanguage) => {
-      let query = client
-        .from('community_wordbooks')
-        .select('*');
-
-      // 应用难度筛选
-      if (this.currentFilters.difficulty !== 'all') {
-        query = query.eq('difficulty', this.currentFilters.difficulty);
-      }
-
-      // 应用语言筛选（兼容历史行：language 为空视为意大利语，见 communityLanguage）
-      if (withLanguage && this.currentFilters.language && this.currentFilters.language !== 'all') {
-        const info = window.communityLanguage(this.currentFilters.language);
-        const clauses = info.matches.map(v => `language.eq.${v}`);
-        if (info.includesNull) clauses.push('language.is.null');
-        query = query.or(clauses.join(','));
-      }
-
-      // 应用标签筛选
-      if (this.currentFilters.tags.length > 0) {
-        query = query.contains('tags', this.currentFilters.tags);
-      }
-
-      // 应用搜索
-      if (this.currentFilters.searchTerm) {
-        query = query.ilike('name', `%${this.currentFilters.searchTerm}%`);
-      }
-
-      // 排序
-      if (this.currentFilters.sortBy === 'download_count') {
-        query = query.order('download_count', { ascending: false });
-      } else if (this.currentFilters.sortBy === 'created_at') {
-        query = query.order('created_at', { ascending: false });
-      } else if (this.currentFilters.sortBy === 'name') {
-        query = query.order('name', { ascending: true });
-      }
-
-      return query.limit(500);
-    };
-
     const useLanguage = this.serverLanguageFilter && !skipLanguageFilter;
-    const result = await this.withTimeout(buildQuery(useLanguage));
+    const result = await this.withTimeout(this.buildQuery(client, useLanguage)
+      .order('download_count', { ascending: false })
+      .limit(500));
 
     if (result && result.error && useLanguage && /language/i.test(result.error.message || '')) {
       // 服务端没有 language 列：关闭服务端过滤，改由客户端过滤
@@ -596,6 +608,27 @@ const CommunityWordbooks = {
     }
 
     return result;
+  },
+
+  isLanguageFiltered() {
+    return !!this.currentFilters.language && this.currentFilters.language !== 'all';
+  },
+
+  /**
+   * 去掉语言条件（其余筛选不变）后还有没有词本。
+   * 服务端没按语言过滤时（老库）rows 就是全集，直接看；否则发一个只数行数的请求。
+   * 数不出来（网络 / 老库）时按「有」处理：按钮最多带用户看到一个空的全部列表。
+   */
+  async countWithoutLanguage(client, rows) {
+    if (!this.serverLanguageFilter) return rows.length > 0;
+    try {
+      const { count, error } = await this.withTimeout(
+        this.buildQuery(client, false, ['id', { count: 'exact', head: true }]));
+      if (error) return true;
+      return typeof count === 'number' ? count > 0 : true;
+    } catch (error) {
+      return true;
+    }
   },
 
   /** 客户端语言过滤（服务端过滤失败时的兜底，也顺带修正大小写不一致的历史数据） */
@@ -637,8 +670,7 @@ const CommunityWordbooks = {
     if (!container) return;
 
     if (!wordbooks || wordbooks.length === 0) {
-      const filtered = this.currentFilters.language && this.currentFilters.language !== 'all';
-      if (filtered && this.allWordbooks.length > 0) {
+      if (this.isLanguageFiltered() && this.otherLanguagesHaveBooks) {
         this.renderStatus(
           'groups',
           `还没有${this.languageLabel(this.currentFilters.language)}词本`,
@@ -701,21 +733,10 @@ const CommunityWordbooks = {
 
   /**
    * 更新难度筛选
-   * @param {string} difficulty
-   * @param {Event} [evt] 可选：内联 onclick 传入的事件对象（不再依赖隐式全局 event）
    */
-  updateDifficultyFilter(difficulty, evt) {
+  updateDifficultyFilter(difficulty) {
     this.currentFilters.difficulty = difficulty;
     this.applyFilters();
-
-    // 更新按钮样式（老的按钮组布局）
-    const buttons = document.querySelectorAll('.filter-difficulty-btn');
-    if (buttons.length) {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      const target = (evt && evt.target && evt.target.closest && evt.target.closest('.filter-difficulty-btn'))
-        || document.querySelector(`.filter-difficulty-btn[data-difficulty="${CSS.escape(String(difficulty))}"]`);
-      if (target) target.classList.add('active');
-    }
   },
 
   /**
@@ -729,19 +750,20 @@ const CommunityWordbooks = {
   },
 
   /**
-   * 更新排序方式
-   */
-  updateSortBy(sortBy) {
-    this.currentFilters.sortBy = sortBy;
-    this.applyFilters();
-  },
-
-  /**
-   * 搜索词本
+   * 搜索词本。输入框每键都会调到这里：防抖 250ms 再查，避免每个字母打一次服务器
+   * （旧请求晚到由 fetchAndDisplayWordbooks 的请求令牌丢弃）。
    */
   searchWordbooks(searchTerm) {
-    this.currentFilters.searchTerm = searchTerm.trim();
-    this.applyFilters();
+    const term = String(searchTerm || '').trim();
+    if (!this.debouncedSearch) {
+      this.debouncedSearch = window.debounce(() => {
+        if (this.currentFilters.searchTerm === this.pendingSearchTerm) return;
+        this.currentFilters.searchTerm = this.pendingSearchTerm;
+        this.applyFilters();
+      }, 250);
+    }
+    this.pendingSearchTerm = term;
+    this.debouncedSearch();
   },
 
   // ==================== 下载和预览 ====================
@@ -790,13 +812,14 @@ const CommunityWordbooks = {
 
     const fileContent = await response.text();
 
+    const ext = this.fileExtension(String(wordbook.file_url).split(/[?#]/)[0]);
     try {
-      if (wordbook.file_url.endsWith('.json')) {
+      if (ext === '.json') {
         const jsonData = JSON.parse(fileContent);
         const words = jsonData.words || jsonData;
         return Array.isArray(words) ? words : [];
       }
-      if (wordbook.file_url.endsWith('.txt')) {
+      if (ext === '.txt') {
         return window.Wordbooks.parseTxt(fileContent, language).words;
       }
     } catch (error) {
@@ -812,6 +835,10 @@ const CommunityWordbooks = {
    * 下载并导入词本
    */
   async downloadWordbook(wordbookId) {
+    // 连点「导入学习」：第一次还没完成时忽略后面的，否则会导入出好几份
+    const key = String(wordbookId);
+    if (this.downloading.has(key)) return;
+    this.downloading.add(key);
     try {
       const client = await this.getClient();
       if (!client) {
@@ -875,6 +902,8 @@ const CommunityWordbooks = {
     } catch (error) {
       console.error('下载词本失败:', error);
       alert('下载失败: ' + error.message);
+    } finally {
+      this.downloading.delete(key);
     }
   },
 
@@ -990,8 +1019,7 @@ const CommunityWordbooks = {
    * 返回来源页面
    */
   backToWelcome() {
-    const returnScreen = this.returnScreen || this.resolveReturnScreen();
-    if (typeof window.showScreen === 'function') window.showScreen(returnScreen);
+    if (typeof window.showScreen === 'function') window.showScreen(this.returnScreen || 'vocabScreen');
   }
 };
 

@@ -237,12 +237,10 @@ const ChartsManager = {
     
     const ctx = canvas.getContext('2d');
     
-    // 统计不同状态的单词数量。词表跟着当前语言走：优先 ReviewSession.wordsFor()，
-    // 否则直接取统一词库；条目都是 v1 entry，SRS 以 entry.word 为键。
+    // 统计不同状态的单词数量。词表跟着当前语言走，直接取统一词库；
+    // 条目都是 v1 entry，SRS 以 entry.word 为键。
     const lang = this.lang || (window.DimStorage ? window.DimStorage.code() : Languages.DEFAULT);
-    const words = (window.ReviewSession && typeof window.ReviewSession.wordsFor === 'function')
-      ? window.ReviewSession.wordsFor(lang)
-      : (window.Vocab ? window.Vocab.entries(lang) : []);
+    const words = window.Vocab ? window.Vocab.entries(lang) : [];
 
     let newWords = 0;
     let learningWords = 0;

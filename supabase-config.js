@@ -6,7 +6,12 @@
  * 因此提交进仓库本身不构成密钥泄露。但这也意味着社区词本的全部安全性都依赖
  * Supabase 侧的 Row Level Security 策略（见 supabase-setup.sql）——策略必须
  * 禁止匿名 UPDATE/DELETE，并限制 INSERT 的字段长度与 file_url 来源。
+ *
+ * 整个文件包在 IIFE 里：只有文件末尾挂到 window 上的名字是对外接口，
+ * 其余（客户端初始化细节）是内部实现。
  */
+(function () {
+'use strict';
 
 // Supabase 项目配置
 const SUPABASE_CONFIG = {
@@ -71,20 +76,6 @@ const STORAGE_CONFIG = {
   allowedTypes: ['application/json', 'text/plain', '.json', '.txt']
 };
 
-// 预设标签列表
-const PRESET_TAGS = [
-  '旅游',
-  '商务',
-  '日常',
-  '美食',
-  '文化',
-  '学术',
-  '医疗',
-  '运动',
-  '艺术',
-  '科技'
-];
-
 // 难度级别映射
 const DIFFICULTY_LEVELS = {
   'Beginner': { label: '初级', icon: 'icon-seed' },
@@ -119,15 +110,12 @@ const COMMUNITY_FIELD_LIMITS = {
   description: 500
 };
 
-// 暴露到 window：其它脚本必须在“调用时”通过 window 解析这些配置，
-// 顶层 const 只存在于全局词法作用域，先加载的脚本读不到。
+// 对外接口：其它脚本一律在“调用时”通过 window 解析
 window.SUPABASE_CONFIG = SUPABASE_CONFIG;
 window.STORAGE_CONFIG = STORAGE_CONFIG;
-window.PRESET_TAGS = PRESET_TAGS;
 window.DIFFICULTY_LEVELS = DIFFICULTY_LEVELS;
 window.COMMUNITY_LANGUAGES = COMMUNITY_LANGUAGES;
 window.communityLanguage = communityLanguage;
 window.COMMUNITY_FIELD_LIMITS = COMMUNITY_FIELD_LIMITS;
-window.isSupabaseAvailable = isSupabaseAvailable;
-window.initSupabase = initSupabase;
 window.getSupabaseClient = getSupabaseClient;
+})();

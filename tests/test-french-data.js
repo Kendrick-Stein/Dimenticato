@@ -31,7 +31,7 @@ const layerOf = entry => {
 const normalizeHeadword = value => headwordKey(value);
 const accentBlindKey = value => foldAccents(value).toLowerCase().replace(/['’]/g, "'").trim();
 
-// 教材两层（课程 + 总词汇表）在 fr.js 里的样子，即原来 french-app.js 合并出来的词表。
+// 教材两层（课程 + 总词汇表）在 fr.js 里的样子，即统一词库 Vocab 为法语合并出来的词表。
 // Array.from：fr.js 在 vm 里加载，数组来自另一个 realm，deepEqual 会因原型不同而失败。
 const vocabulary = Array.from(fr.entries.filter(entry => layerOf(entry) !== 'core'));
 const mergeBy = keyFn => {
