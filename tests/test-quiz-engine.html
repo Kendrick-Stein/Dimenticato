@@ -23,6 +23,7 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
 
 <script src="../lib/utils.js"></script>
 <script src="../lib/languages.js"></script>
+<script src="../lib/storage.js"></script>
 <script src="../lib/word-similarity.js"></script>
 <script src="../lib/quiz-engine.js"></script>
 <script src="../lib/practice-flow.js"></script>
@@ -87,7 +88,7 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
   // ===== utils: shuffleArray =====
   group('shuffleArray', function () {
     var input = [1, 2, 3, 4, 5];
-    var shuffled = engine.shuffleArray(input);
+    var shuffled = shuffleArray(input);
     assert(Array.isArray(shuffled), 'shuffleArray returns an array');
     assertEqual(shuffled.length, 5, 'shuffleArray preserves length');
     assertEqual(shuffled.sort().join(','), '1,2,3,4,5', 'shuffleArray preserves all elements');
@@ -661,10 +662,10 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     var germanEngine = appStyleEngine('german', 'german');
     assertEqual(germanEngine.getDifficulty(), 'hard', '没设置过时德语引擎用全局默认 hard');
 
-    localStorage.setItem('dimenticato_quiz_difficulty_german', 'easy');
+    localStorage.setItem(QuizEngine.difficultyKeyFor('german'), 'easy');
     assertEqual(QuizEngine.getDifficulty('german'), 'easy', '分语言设置已写入');
     assertEqual(germanEngine.getDifficulty(), 'easy',
-      '存了 dimenticato_quiz_difficulty_german=easy 后，GermanApp 风格的引擎返回 easy');
+      '存了德语难度=easy 后，GermanApp 风格的引擎返回 easy');
     assertEqual(appStyleEngine('italian', 'italian').getDifficulty(), 'hard',
       '德语的分语言设置不影响意大利语引擎');
 
@@ -683,10 +684,10 @@ lib/quiz-engine.js（选项生成、判分、掌握度、难度偏好）。</p>
     assertEqual(hardBranchHits, 0, 'easy 时不再走 hard 的形近干扰项分支');
 
     // 法语 / 英语同理
-    localStorage.setItem('dimenticato_quiz_difficulty_french', 'easy');
+    localStorage.setItem(QuizEngine.difficultyKeyFor('french'), 'easy');
     assertEqual(appStyleEngine('french', 'french').getDifficulty(), 'easy',
       '法语分语言设置作用到 FrenchApp 风格的引擎');
-    localStorage.setItem('dimenticato_quiz_difficulty_english', 'hard');
+    localStorage.setItem(QuizEngine.difficultyKeyFor('english'), 'hard');
     localStorage.setItem('dimenticato_quiz_difficulty', 'easy');   // 全局改成简单
     assertEqual(appStyleEngine('english', 'english').getDifficulty(), 'hard',
       '英语分语言设置压过全局设置');

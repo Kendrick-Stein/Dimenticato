@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
   <!-- 图标字体只取用到的图标（icon_names 必须按字母序）：整套 ~900KB，子集 ~20KB。
        新增图标要加进这里，否则会显示成英文字；tests/check-icons.js 会拦住漏加的。 -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&amp;icon_names=add,arrow_back,arrow_forward,auto_awesome,auto_stories,backup,bookmark_add,calendar_month,cancel,check_circle,chevron_right,cloud_off,dark_mode,delete,download,edit,edit_note,error,explore,extension,groups,help,history,hourglass_empty,insights,ios_share,join_inner,keyboard,light_mode,link,menu,menu_book,monitoring,person,play_arrow,playlist_add,quiz,radio_button_unchecked,refresh,replay,restart_alt,route,school,search,settings,signal_cellular_alt,sports_esports,style,sync_alt,task_alt,translate,travel_explore,upload,upload_file,visibility,volume_up,warning&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&amp;icon_names=add,arrow_back,arrow_forward,auto_awesome,auto_stories,backup,bookmark_add,cancel,check_circle,chevron_right,cloud_off,dark_mode,delete,download,edit,edit_note,error,explore,extension,groups,help,history,hourglass_empty,insights,ios_share,join_inner,keyboard,light_mode,link,menu,menu_book,person,play_arrow,playlist_add,quiz,radio_button_unchecked,refresh,replay,restart_alt,route,school,search,settings,signal_cellular_alt,sports_esports,style,sync_alt,task_alt,translate,travel_explore,upload,upload_file,visibility,volume_up,warning&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-language="italian">
@@ -254,7 +254,7 @@
 
       <section id="communityBrowseScreen" class="screen community-browse-screen">
         <div class="container">
-          <button class="back-link" onclick="CommunityWordbooks.backToWelcome()"><span class="msr" aria-hidden="true">arrow_back</span>返回</button>
+          <button class="back-link" data-action="community-back"><span class="msr" aria-hidden="true">arrow_back</span>返回</button>
           <div class="eyebrow">Community</div>
           <h1 class="page">社区词本</h1>
           <p class="desc">浏览社区分享的词本，预览内容并导入到我的词本。</p>
@@ -268,10 +268,10 @@
                 id="communitySearchInput"
                 aria-label="搜索社区词本"
                 placeholder="搜索词本名称..."
-                oninput="CommunityWordbooks.searchWordbooks(this.value)"
+                data-community-filter="search"
               >
             </div>
-            <select class="filter-select" aria-label="按难度筛选" onchange="CommunityWordbooks.updateDifficultyFilter(this.value)">
+            <select class="filter-select" aria-label="按难度筛选" data-community-filter="difficulty">
               <option value="all">全部难度</option>
               <option value="Beginner">初级</option>
               <option value="Intermediate">中级</option>
@@ -712,118 +712,15 @@
   </div>
 
 
-  <!-- 增强统计模态框 -->
-  <div id="enhancedStatsModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="statsModalTitle">
-    <div class="modal-content enhanced-stats-modal">
-      <div class="modal-header">
-        <h3 id="statsModalTitle"><span class="msr" aria-hidden="true">monitoring</span>学习统计</h3>
-        <button class="close-btn" aria-label="关闭" onclick="hideEnhancedStatsModal()">×</button>
-      </div>
-      <div class="modal-body enhanced-stats-body">
-        <!-- 标签页导航 -->
-        <div class="stats-tabs">
-          <button class="stats-tab-btn active" data-tab="overview" onclick="switchStatsTab('overview')">
-            概览
-          </button>
-          <button class="stats-tab-btn" data-tab="charts" onclick="switchStatsTab('charts')">
-            图表
-          </button>
-          <button class="stats-tab-btn" data-tab="history" onclick="switchStatsTab('history')">
-            历史记录
-          </button>
-        </div>
-
-        <!-- 概览标签页 -->
-        <div id="overviewTab" class="stats-tab-content active">
-          <div class="stats-section">
-            <h4><span class="msr" aria-hidden="true">monitoring</span>今日统计</h4>
-            <div class="stats-grid">
-              <div class="stat-card">
-                <div class="stat-card-label">学习单词</div>
-                <div class="stat-card-value" id="enhancedStatTodayWords">0</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-card-label">学习时长</div>
-                <div class="stat-card-value" id="enhancedStatTodayDuration">0分钟</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-card-label">正确率</div>
-                <div class="stat-card-value" id="enhancedStatTodayAccuracy">0%</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="stats-section">
-            <h4><span class="msr" aria-hidden="true">check_circle</span>总计统计</h4>
-            <div class="stats-grid">
-              <div class="stat-card">
-                <div class="stat-card-label">累计学习单词</div>
-                <div class="stat-card-value" id="enhancedStatTotalWords">0</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-card-label">累计学习时长</div>
-                <div class="stat-card-value" id="enhancedStatTotalDuration">0分钟</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-card-label">平均正确率</div>
-                <div class="stat-card-value" id="enhancedStatTotalAccuracy">0%</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-card-label">练习次数</div>
-                <div class="stat-card-value" id="enhancedStatTotalAttempts">0</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 图表标签页 -->
-        <div id="chartsTab" class="stats-tab-content">
-          <div class="chart-container">
-            <canvas id="weeklyTrendChart"></canvas>
-          </div>
-          <div class="charts-row">
-            <div class="chart-container">
-              <canvas id="dailyWordsChart"></canvas>
-            </div>
-            <div class="chart-container">
-              <canvas id="masteryDistributionChart"></canvas>
-            </div>
-          </div>
-        </div>
-
-        <!-- 历史记录标签页 -->
-        <div id="historyTab" class="stats-tab-content">
-          <h4><span class="msr" aria-hidden="true">calendar_month</span>最近 7 天学习记录</h4>
-          <div class="stats-table-container">
-            <table class="stats-table">
-              <thead>
-                <tr>
-                  <th>日期</th>
-                  <th>学习单词</th>
-                  <th>学习时长</th>
-                  <th>练习次数</th>
-                  <th>正确率</th>
-                </tr>
-              </thead>
-              <tbody id="dailyStatsTableBody">
-                <!-- 动态生成 -->
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- 社区词本上传模态框 -->
   <div id="communityUploadModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="uploadModalTitle">
     <div class="modal-content" style="max-width: 600px;">
       <div class="modal-header">
         <h3 id="uploadModalTitle"><span class="msr" aria-hidden="true">ios_share</span>上传词本到社区</h3>
-        <button class="close-btn" aria-label="关闭" onclick="CommunityWordbooks.hideUploadDialog()">×</button>
+        <button class="close-btn" aria-label="关闭" data-action="community-upload-close">×</button>
       </div>
       <div class="modal-body">
-        <form id="communityUploadForm" onsubmit="event.preventDefault(); CommunityWordbooks.uploadWordbook();">
+        <form id="communityUploadForm">
           <div class="form-group">
             <label for="uploadWordbookName">词本名称 *</label>
             <input type="text" id="uploadWordbookName" class="form-input" required placeholder="例如：意大利旅游常用语">
@@ -866,15 +763,15 @@
           
           <div class="form-group">
             <label for="uploadFileInput">选择文件 * (JSON/TXT, 最大5MB)</label>
-            <input type="file" id="uploadFileInput" accept=".json,.txt" style="display: none;" onchange="CommunityWordbooks.selectFile()">
-            <button type="button" class="form-btn" onclick="document.getElementById('uploadFileInput').click()">
+            <input type="file" id="uploadFileInput" accept=".json,.txt" style="display: none;">
+            <button type="button" class="form-btn" data-action="community-file-pick">
               <span class="msr" aria-hidden="true">ios_share</span>选择文件
             </button>
             <span id="uploadFileName" style="margin-left: 1rem; color: var(--text-secondary);">未选择文件</span>
           </div>
           
           <div class="form-actions">
-            <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hideUploadDialog()">取消</button>
+            <button type="button" class="form-btn cancel" data-action="community-upload-close">取消</button>
             <button type="submit" class="form-btn primary" id="uploadWordbookBtn"><span class="msr" aria-hidden="true">ios_share</span>上传到社区</button>
           </div>
         </form>
@@ -887,13 +784,13 @@
     <div class="modal-content" style="max-width: 700px;">
       <div class="modal-header">
         <h3 id="previewModalTitle"><span class="msr" aria-hidden="true">visibility</span>预览: <span id="previewWordbookTitle"></span></h3>
-        <button class="close-btn" aria-label="关闭" onclick="CommunityWordbooks.hidePreviewModal()">×</button>
+        <button class="close-btn" aria-label="关闭" data-action="community-preview-close">×</button>
       </div>
       <div class="modal-body">
         <div id="previewWordbookMeta"></div>
         <div id="previewWordList" class="preview-word-list"></div>
         <div class="form-actions">
-          <button type="button" class="form-btn cancel" onclick="CommunityWordbooks.hidePreviewModal()">关闭</button>
+          <button type="button" class="form-btn cancel" data-action="community-preview-close">关闭</button>
           <button type="button" class="form-btn primary" id="previewDownloadBtn"><span class="msr" aria-hidden="true">download</span>导入学习</button>
         </div>
       </div>
