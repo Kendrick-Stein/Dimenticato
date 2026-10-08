@@ -8,7 +8,7 @@
  *
  * Reads only the shipped data files plus the reviewed fix lists in
  * scripts/it_fixes/ (replayed by scripts/italian_fixes.py):
- *   vocab        - no OCR / machine-translation artefacts in zh ("(1) 国家",
+ *   vocab        - no OCR / machine-translation / subtitle-line artefacts in zh ("(1) 国家",
  *                  "页:1", "{\fn", "待修复", Latin words, "…Name", repeated
  *                  senses); capitalised headwords are proper nouns or
  *                  abbreviations (allowlist below); every fix in
@@ -95,6 +95,18 @@ V.entries.forEach(e => {
   if (/^[A-ZÀ-Ý]/.test(e.word) && !CAP_POS.has(e.pos)) {
     check(CAP_OK.has(e.word), `vocab ${e.word}: capitalised headword with pos ${e.pos} (lowercase it or add to CAP_OK)`);
   }
+});
+
+// Subtitle-corpus alignment junk: a whole subtitle line ("I'm sorry." /
+// 对不起, "Let's go." / 我们走吧, "- Yeah.") or an article number (第32条)
+// stored as the gloss of an unrelated word.  Interjections/phrases may
+// legitimately gloss as a sentence.
+const SUB_ZH = /^(?:对不起|没有[!。]?|那个|这个|我们走吧。?|你说什么\?|这是什么\?|来吧。?|-\s*对|对)$|第\s*\d+\s*条|\(中文|璶|^\d+个$/;
+const SUB_EN = /^(?:-\s|I'm |I am |I'll |You |Let's |What\?|Come on|That's |The$|No\.?$|Yes\.?$)/;
+V.entries.forEach(e => {
+  if (e.pos === 'interjection' || e.pos === 'phrase') return;
+  check(!SUB_ZH.test(e.zh || ''), `vocab ${e.word}: subtitle-line / article-number gloss zh "${e.zh}"`);
+  check(!SUB_EN.test(e.en || ''), `vocab ${e.word}: subtitle-line gloss en "${e.en}"`);
 });
 
 // every reviewed fix is in effect (records whose word was later renamed or
