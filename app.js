@@ -88,6 +88,15 @@
     },
     systemKey: function (l) { return global.DimStorage.masteredKey(l || lang()); },
     systemMastered: function (l) { return this.mastered(this.systemKey(l)); },
+    /** 已掌握且仍在词库里的词数。词库删掉的词（英语专名、意语垃圾词条）的进度留在存储里，
+     *  词条回来时还能接上，但不计入统计。 */
+    systemMasteredCount: function (l) {
+      var mastered = this.systemMastered(l);
+      if (!mastered.size) return 0;
+      var n = 0;
+      global.Vocab.entries(l).forEach(function (e) { if (mastered.has(e.word)) n++; });
+      return n;
+    },
 
     statsFor: function (l) {
       var key = global.DimStorage.statsKey(l);
@@ -464,7 +473,8 @@
     var streak = global.StatsManager ? global.StatsManager.getStreak(l) : 0;
     var counts = global.Vocab.levelCounts(l);
     var wotd = wordOfTheDay(l);
-    var masteredPct = entries.length ? (mastered.size / entries.length * 100).toFixed(1) + '%' : '';
+    var masteredN = Progress.systemMasteredCount(l);
+    var masteredPct = entries.length ? (masteredN / entries.length * 100).toFixed(1) + '%' : '';
 
     var levelMastered = {};
     LEVELS.forEach(function (lv) { levelMastered[lv] = 0; });
@@ -485,7 +495,7 @@
             '</div>' +
             '<dl class="hero-stats">' +
               heroStat('词条', entries.length) +
-              heroStat('已掌握' + (masteredPct ? ' · ' + masteredPct : ''), mastered.size) +
+              heroStat('已掌握' + (masteredPct ? ' · ' + masteredPct : ''), masteredN) +
               heroStat('待复习', due) +
               heroStat('连续学习 · 天', streak) +
             '</dl>' +
@@ -576,7 +586,7 @@
     };
     if (where === 'home') {
       var total = global.Vocab.entries(l).length;
-      var mastered = Progress.systemMastered(l).size;
+      var mastered = Progress.systemMasteredCount(l);
       card('go-vocab', 'style', '词汇练习', tl('lexicon', l), '选择题、拼写、浏览、打字游戏，外加个人单词本。',
         '<span class="num">' + fmt(total) + '</span> 词条');
       if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', tl('grammar', l), '按章节查阅的' + profile(l).cn + '语法全书。', '目录 · 正文 · 例句');
@@ -838,7 +848,12 @@
     var due = countDue(l, entries);
     var counts = global.Vocab.levelCounts(l);
     var byLevel = {};
-    entries.forEach(function (e) { if (mastered.has(e.word)) byLevel[e.level] = (byLevel[e.level] || 0) + 1; });
+    var masteredN = 0;
+    entries.forEach(function (e) {
+      if (!mastered.has(e.word)) return;
+      masteredN++;
+      byLevel[e.level] = (byLevel[e.level] || 0) + 1;
+    });
     var maxDay = Math.max.apply(null, [1].concat(week.map(function (d) { return d.totalCount; })));
     var pct = function (a, b) { return b ? Math.round(a / b * 100) + '%' : '—'; };
 
@@ -847,7 +862,7 @@
         due ? '<div class="btn-row"><button class="btn btn-primary" data-action="review"><span class="msr" aria-hidden="true">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button></div>' : '') +
       '<section class="section" aria-label="概览"><div class="section-inner">' +
       '<dl class="stat-strip">' +
-        stat('已掌握', fmt(mastered.size), entries.length ? (mastered.size / entries.length * 100).toFixed(1) + '% 词库' : '') +
+        stat('已掌握', fmt(masteredN), entries.length ? (masteredN / entries.length * 100).toFixed(1) + '% 词库' : '') +
         stat('今日答题', fmt(today.totalCount), '正确率 ' + pct(today.correctCount, today.totalCount)) +
         stat('累计答题', fmt(total.totalAttempts), '正确率 ' + total.averageAccuracy + '%') +
         stat('连续学习', (SM ? SM.getStreak(l) : 0) + ' 天') +
