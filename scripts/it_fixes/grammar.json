@@ -164,6 +164,11 @@
   },
   "appends": [
     {
+      "slug": "p1/ch03/t02",
+      "file": "grammar/p1_ch03_t02.append.md",
+      "why": "原书本节不足400字，补充颜色/客观属性形容词、前后位置意义不同的形容词"
+    },
+    {
       "slug": "p1/ch03/t03",
       "file": "grammar/p1_ch03_t03.append.md"
     },
@@ -799,6 +804,12 @@
       "slug": "p1/ch01/t01",
       "from": "\nmartedi星",
       "to": "\nmartedì星"
+    },
+    {
+      "slug": "p1/ch03/t02",
+      "from": "molto difficile-**篇",
+      "to": "molto difficile** 一篇",
+      "why": "OCR: \"一篇\" 被识别成 \"-篇\""
     }
   ]
 }
