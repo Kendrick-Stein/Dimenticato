@@ -146,8 +146,8 @@ function checkItalian(entries, meta, err) {
 // ---- German (folded in from validate_german_vocabulary.js) -------------------
 const DE_ARTICLE = { m: 'der', f: 'die', n: 'das' };
 const DE_HEADWORD = /^[A-Za-zÀ-ÖØ-öø-ÿ][A-Za-zÀ-ÖØ-öø-ÿ\-' ]*$/;
-/** Inflected function words that must never be a headword (german-app.js keys
- *  the mastered set on `word`, so "den" next to "der" would be a second card). */
+/** Inflected function words that must never be a headword (progress is keyed
+ *  on `word`, so "den" next to "der" would be a second card). */
 const DE_INFLECTED = new Set(`
 den dem des die das der ein eine einen einem eines einer
 kein keine keinen keinem keines keiner

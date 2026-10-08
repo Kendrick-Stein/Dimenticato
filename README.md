@@ -174,8 +174,11 @@ python3 scripts/build_french_vocabulary.py assemble   # 合并三层 -> data/voc
 ```bash
 node scripts/validate_vocab.js     # 四语言词表 schema v1 + 各语言专属规则
 node scripts/validate_modules.js   # 全部模块数据对照 docs/data-schema.md
+node scripts/validate_it_quality.js # 内容质量回归（另有 validate_fr_quality / validate_de_en_quality）
 npm test                           # 无头测试 + 全部校验器（CI 同此）
 ```
+
+审校过的修正不直接改产物，而是记在 `scripts/conjugation_fixes/`、`scripts/it_fixes/`、`scripts/vocab_fixes/` 等清单里，由各构建器最后一步重放，重建不会丢（详见 CODE_SPACE.md §8.1a）。
 
 ---
 

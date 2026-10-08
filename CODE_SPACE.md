@@ -118,7 +118,8 @@ lib/utils → lib/vocab → lib/storage → lib/srs → lib/word-similarity
 - **二级（模块，`LangLoader.MODULES`）**：`conjugations` / `grammar` / `collocations` / `cognates` / `course` × 语言（英语无 cognates，只有德语有 course）。`LangLoader.ensureModule(lang, module)` 幂等（`lang` 接受 code 或 key；`grammar` 模块会顺带 `CdnFallback.load('marked')`）；发 `module:start` / `module:done`，`boot.js` 显示 / 撤遮罩，并调 `App.refreshCounts()`
 - **守卫位置**：各模块 opener 内部检测数据缺席 → `ensureModule` → 重试一次；仍缺席走各自「数据未加载」降级 UI。见 `ConjugationPractice.openFor`、`GrammarBook.init`、`VerbCollocations` 的 `init`、`VerbCollocationPractice.open`、`CognateApp.open`、`TypingGameApp`（变位模式）、`App.openGrammarBook`、`Course.open`
 - 功能模块的数据文件把载荷注册为 `DIM_DATA.<module>.<code>`，消费方一律调用时经 `LangLoader.data(lang, module)` 取数（未加载为 `null`）；数据文件是 classic script——**不能改成 `type="module"`**
-- `LangLoader.prefetch(lang)` 可在空闲时预取；`LangLoader.isModuleLoaded(lang, module)` 查询状态
+- `LangLoader.isModuleLoaded(lang, module)` 查询状态；`LangLoader.retryModule(lang, module)` 重拉失败的模块。`done` / `module:done` 事件带 `{ ok, failed[] }`，`boot.js` 据此显示真实进度条，失败时列出文件名并给「重试」/「先继续使用」
+- `lib/boot.js` 在安全上下文、页面 load 之后注册 `sw.js`（离线缓存：同源请求一律网络优先、离线才回落缓存；改策略时把 `VERSION` 加一）
 
 ### 2.3 架构分层
 
@@ -180,13 +181,13 @@ lib/utils → lib/vocab → lib/storage → lib/srs → lib/word-similarity
 
 ### 3.4 导航原语（均挂在 `window`）
 
-- `showScreen(id, opts)`：`resolve(id)` → 切 `.screen.active` → 渲染面包屑 / 导航 → 跑 `Shell.onEnter` 钩子（`app.js` 在这里渲染统一屏）→ `DimRouter.sync` 推 / 替换 history → 派发 `dimenticato:screenchange`。`opts`：`skipRoute`、`replaceRoute`、`keepScroll`
+- `showScreen(id, opts)`：切 `.screen.active` → 渲染面包屑 / 导航 → 跑 `Shell.onEnter` 钩子（`app.js` 在这里渲染统一屏）→ `DimRouter.sync` 推 / 替换 history → 派发 `dimenticato:screenchange`。`opts`：`skipRoute`、`replaceRoute`、`keepScroll`
 - `goBack({fallbackTarget})`：**按屏幕树回父级**（不是历史栈）；无父级时用 `fallbackTarget`，再兜底首页
 - `setPracticeContext(ctx)` / `getActiveLanguage()`
 - `Shell.registerOpener(screenId, fn(lang))`：深链接或切语言后重新进入模块屏时，用模块自己的 open 装数据再切屏；opener 收到 `(lang, param)`（`App.init` 注册了 grammarBook（param 为专题 slug）/ conjugationSetup / verbCollocations / typingGame / cognatePractice / communityBrowse / course）
-- `ScreenTree.register(id, info)`：给运行时新增的屏补一条（父级固定为首页），统一树里已有的 id 忽略；目前没有模块调用它。旧的按语言分屏 id 已不再折叠——`resolve()` 只认 `SCREENS` 里的 id
+- `ScreenTree.register(id, info)`：给运行时新增的屏补一条（父级固定为首页），统一树里已有的 id 忽略；目前没有模块调用它。只认 `SCREENS` 里的 id
 - `DimRouter.href(lang, screenId)`：生成 `#/<code>/<slug>`，`lang` 接受 code 或 key
-- `DimRouter.apply(route)`：路由语言与当前不同时先 `App.setLanguage(lang)`（懒加载词库）再进入
+- `DimRouter.apply(route)`：路由语言与当前不同时先 `App.setLanguage(lang)`（懒加载词库）再进入。每次导航换一个令牌，等语言包期间又导航了（或语言已变）就放弃这次进入；未知 slug / 语言落到该语言首页并 `replaceState` 改写地址
 
 ### 3.5 事件委托约定（`app.js bind()`）
 
@@ -277,7 +278,7 @@ paper/ink 编辑风设计系统，一套配色覆盖全部语言（不再有按�
 
 | 文件 | 暴露的全局 | 职责 |
 |---|---|---|
-| `app.js` | `App`、`ReviewSession` | 统一运行时，见 §6.1 |
+| `app.js` | `App` | 统一运行时，见 §6.1 |
 | `lib/lang-loader.js` | `LangLoader` | 数据与代码注入、懒加载，见 §2 |
 | `lib/boot.js` | — | 加载遮罩、词库自检、`LangLoader.boot()` |
 | `lib/shell.js` | `Shell`、`ScreenTree`、`DimRouter`、`showScreen`、`goBack`、`setPracticeContext`、`getActiveLanguage` | 屏幕树 / 导航 / 路由 |
@@ -289,10 +290,10 @@ paper/ink 编辑风设计系统，一套配色覆盖全部语言（不再有按�
 | `lib/practice-flow.js` | `PracticeFlow` | 判分流程、遥测、提示、键盘 |
 | `lib/word-similarity.js` | `WordSimilarity` | 相似干扰项 |
 | `lib/typing-game.js` | `TypingGame` | 打字游戏引擎 |
-| `lib/wordbooks.js` | `Wordbooks`、`WordbookEditor`、`WordbookManager`（兼容别名） | 单词本 |
+| `lib/wordbooks.js` | `Wordbooks`、`WordbookEditor` | 单词本 |
 | `lib/utils.js` | `DimenticatoUtils`、`Speaker`、`DimText`、`escapeHtml`、`escapeAttribute`、`renderIcon`、`debounce`、`shuffleArray`、`localDay`、`parseLocalDay`、`downloadFile`、`deferredPersist` | 工具 |
 | `lib/editorial.js` | `Editorial`（`scan`） | 编辑风动效 |
-| `supabase-config.js` | `initSupabase`、`getSupabaseClient`、`isSupabaseAvailable`、`communityLanguage` | Supabase 配置 |
+| `supabase-config.js` | `getSupabaseClient`、`communityLanguage` | Supabase 配置 |
 | `community-wordbooks.js` | `CommunityWordbooks` | 社区词书 |
 | `cognate-app.js` | `CognateApp`、`CognateState` | 同源词 |
 | `typing-game-app.js` | `TypingGameApp` | 打字游戏 App 层 |
@@ -334,14 +335,11 @@ paper/ink 编辑风设计系统，一套配色覆盖全部语言（不再有按�
 - `refreshCounts()`：模块数据到位后刷新首页数字
 - `init()`：幂等；主题、语言按钮（`renderLangSwitch`）、`Speaker.init`、`bind`、`Shell.onEnter`、注册 opener（旧进度迁移在 `onLanguageData` 里跑）
 
-另外：`window.ReviewSession = { wordsFor(l), onAnswered() }`（兼容层，`stats-charts.js` 等用它取当前语言词表；`onAnswered` 为空操作）。
-
 ### 6.2 `lib/shell.js` — 屏幕树 / 导航 / 路由
 
 见 §3.2、§3.4。要点：
 
 - `SCREENS` 是唯一屏幕注册表；新增屏要在这里加一行（slug / section / parent / crumb / transient / module / param）
-- `resolve()` 不再折叠旧 id，只认 `SCREENS` 里的名字
 - `renderChrome` 渲染面包屑（首项为语言中文名）并把 `[data-nav-screen]` 的 `href` 改成当前语言的路由
 - `DimRouter`：`parse` / `href` / `sync` / `apply` / `onHistoryChange` / `start`；`start()` 只跑一次（由 `App.onLanguageData` 首次调用触发），监听 `popstate` / `hashchange`
 - `file://` 下 `pushState` 可能失败，已 try/catch
@@ -386,13 +384,13 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 - `Prefs`：`dimenticato_<code>_prefs`，`{ level, session, filter, source }`（默认 `A2` / `20` / `all` / `system`）；属于偏好，重置保留
 - `LegacyMigration` 两层：
   - `targetFor` / `migrateKeys` / `migrateStorage`：只改 key 名、不需要词库。把 v1/v2 的各种布局（意大利语无前缀的 `dimenticato_mastered` 等、`dimenticato_<german>_*`、`daily_stats_<lang>`、`srs_<lang>`、`mastery_streak_<lang>`、`quiz_*_<lang>`、`progress_wb_*`、旧 SM-2 `german_sr` / `english_sr` / `french_srs`、`french_daily`、合一的 `dimenticato_prefs`）并进 v3；多来源按 `mergeValueForKey` 合并，新 key 写成功后才删旧 key。文件加载时跑一次，版本已是 3 则跳过
-  - `run(lang)`：需要词库，幂等，每次加载语言都跑。先 `migrateStorage({ force: true })`，再把已掌握（系统 + 各词本）、SM-2、连续答对的旧标识改写成 `entry.word`（词本自己的词形优先保留），法语旧每日记录同理。解析不出的旧键原样保留
+  - `run(lang)`：需要词库，幂等，每次加载语言都跑（`App.onLanguageData` 先冲刷内存进度，跑完再 `Progress.forget` + `SpacedRepetition.forget` 丢缓存）。每门语言第一次（或存储里又出现旧布局 key 时）先 `migrateStorage({ force: true })`，再把已掌握（系统 + 各词本）、SM-2、连续答对的旧标识改写成 `entry.word`（词本自己的词形优先保留），法语旧每日记录同理。解析不出的旧键原样保留
   - `moduleKeyLanguage(key)`：识别功能模块 key 属于哪门语言（供 `keysForScope`）
 
 ### 6.6 `lib/srs.js` — SM-2 与每日统计
 
 - `SpacedRepetition`：按语言存 `dimenticato_<code>_srs`，键为 `entry.word`。`MAX_INTERVAL = 365` 天、`MAX_EASINESS = 2.8`（修复了旧版连续答对 ~20 次后 interval 溢出、`Date` 抛 RangeError 的 bug）。API：`peek`、`review(lang, word, quality)`、`getDueWords(lang, words)`、`countDueWords`、`getWordStatus(word, lang)`、`convertCorrectToQuality(isCorrect, timeSpent)`
-- `StatsManager`：`dimenticato_<code>_daily_stats`。API：`recordActivity(lang, payload)`、`getTodayStats`、`getRecentStats(days, lang)`、`getTotalStats`、`getStreak(lang)`、`updateDuration`
+- `StatsManager`：`dimenticato_<code>_daily_stats`。API：`recordActivity(lang, payload)`、`getTodayStats`、`getRecentStats(days, lang)`、`getTotalStats`、`getStreak(lang)`
 - 两者在 `app.js` 之前加载，调用方一律在调用时经 `window.*` 解析
 
 ### 6.7 `lib/quiz-engine.js` — 通用测验引擎
@@ -404,7 +402,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 ### 6.8 `lib/practice-flow.js` — 判分流程
 
 - `PracticeFlow.mcAnswer(env)`：选择题判分 + 反馈 + 遥测 + 保存 + 自动下一题；语言差异由 env 注入（`recordMastery`、`save`、`next`、`nextDelay`…）
-- `PracticeFlow.recordTelemetry(lang, { correct, word, startedAt })`：`StatsManager.recordActivity` + `SpacedRepetition.review` + `ReviewSession.onAnswered`，返回下一题开始时刻；拼写也走这里
+- `PracticeFlow.recordTelemetry(lang, { correct, word, startedAt })`：`StatsManager.recordActivity` + `SpacedRepetition.review`，返回下一题开始时刻；拼写也走这里
 - 提示：`initialHint`、`hintReset`、`hintAdvance`
 - 键盘：document 级 1–4 选项 / Enter 下一题 / R 重听，只作用于含 `id$="McOptions"` 容器的活动屏（即 `#quizMcOptions`）；输入框内按键不拦截
 
@@ -414,7 +412,6 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 - 存储：内容在全局 `dimenticato_custom_wordbooks`；每本的已掌握列表在 `DimStorage.wordbookKey(lang, id)` = `dimenticato_<code>_wb_<id>`
 - `Wordbooks`：`all` / `reload` / `list(lang)` / `get(id)` / `add` / `create` / `remove`（连带删进度 key）/ `touch` / `progressKey(wb)` / `entries(wb)`（→ v1 词条）/ `parseTxt(text, lang)` / `importFile(file, lang)` / `exportJson` / `exportTxt`
 - `WordbookEditor`：编辑器 modal、单词编辑、批量删除 / 批量导入、导出对话框、浏览页「加入单词本」（`addEntryToWordbook` + `#wordbookSelectDialog`）
-- `WordbookManager`：只剩 `parseTxtWordbook` 兼容别名
 - TXT 格式：空行分块，块内 `word / meaning / 中文? / notes?`；单行块从系统词库查释义（详见 `docs/TXT_FORMAT_GUIDE.md`、`custom_wordbook_template.*`）
 
 ### 6.10 其余 `lib/`
@@ -444,20 +441,20 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 - `typing-game-app.js`：`TypingGameApp.open(lang)`；背单词模式（词源 `Vocab.entries(lang)`）与动词变位模式（读 `LangLoader.data(lang, 'conjugations')`，取前 `VERB_CAP = 300` 个动词，无语言分支）；最高分 `dimenticato_typing_best_<langkey>_<mode>`（这里是语言 key，如 `italian`）
 - `course.js`：`Course.open(lang)`；course/1 数据（`LangLoader.data(code, 'course')`，open 时 `ensureModule` 补拉），渲染进静态 `#courseScreen`，无语言分支（目前只有德语配了 `files.course`：54 单元 A1–C1）；`unit.words` 直接按 `word` 查词库，`unit.grammar[].slug` 经 `GrammarBook.resolveSlug` 跳语法书；练习调用 `App.practiceEntries`；等级存 `dimenticato_course_level_<code>`（德语旧 key `dimenticato_german_course_level` 自动迁移）
 - `community-wordbooks.js`：`CommunityWordbooks.showBrowseScreen()` / `showUploadDialog()`；上传到 Supabase Storage + `community_wordbooks` 表（含 `language` 字段，老库无此列时降级为客户端过滤）；浏览支持按语言 / 难度筛选、搜索、排序；下载后 `Wordbooks.add`；解析复用 `Wordbooks.parseTxt` / `normalizeBook`
-- `stats-charts.js`：没有弹窗，图表直接嵌在进度页：`StatsCharts.sectionsHtml(lang)` 产出「趋势图表」「学习记录」两节，`StatsCharts.mount(lang)` 在写入后 `CdnFallback.load('chart')` 再绘图（`ChartsManager`）；7 天趋势、每日单词量、掌握度分布，颜色读设计 token；数据来自 `StatsManager`、`ReviewSession.wordsFor(lang)` + `SpacedRepetition.getWordStatus`
+- `stats-charts.js`：没有弹窗，图表直接嵌在进度页：`StatsCharts.sectionsHtml(lang)` 产出「趋势图表」「学习记录」两节，`StatsCharts.mount(lang)` 在写入后 `CdnFallback.load('chart')` 再绘图（`ChartsManager`）；7 天趋势、每日单词量、掌握度分布，颜色读设计 token；数据来自 `StatsManager`、`Vocab.entries(lang)` + `SpacedRepetition.getWordStatus`
 - `supabase-config.js`：URL / anon key、`STORAGE_CONFIG`、标签与难度映射；SQL 见 `supabase-setup.sql`、`supabase-storage-fix.sql`、`docs/SUPABASE_TROUBLESHOOTING.md`
 
 ### 6.15 `tests/` — 无头测试
 
-入口 `node tests/run-headless.js [filter]`（`npm test` 同义；CI `.github/workflows/ci.yml` 在 push / PR 到 main 时跑）。共 22 个 harness：
+入口 `node tests/run-headless.js [filter]`（`npm test` 同义；CI `.github/workflows/ci.yml` 在 push / PR 到 main 时跑）。共 29 个 harness：
 
 - HTML（在 Node `vm` + `tests/dom-shim.js` 里按 `<script src>` 顺序执行）：`test-quiz-engine.html`、`test-spaced-repetition.html`
-- Node：`check-icons.js`、`check-data-modules.js`、`test-french-data.js`、`test-german-course-data.js`、`test-storage.js`、`test-typing-game.js`、`test-typing-game-app.js`、`test-conjugation-app.js`
-- 数据校验器（阻断项）：`scripts/validate_vocab.js`、`validate_modules.js`（全部模块数据对 `docs/data-schema.md`）、`validate_french_extras.js`、`validate_french_conjugations.js`、`validate_english_conjugations.js`、`validate_german_conjugations.js`、`validate_french_grammar.js`、`validate_german_extras.js`、`validate_german_grammar.js`、`validate_english_grammar.js`、`validate_english_collocations.js`（`run-headless.js` 的 `VALIDATORS` 里 `validate_modules.js` 列了两次，所以它跑两遍）
+- Node：`check-icons.js`、`check-data-modules.js`、`test-french-data.js`、`test-german-course-data.js`、`test-storage.js`、`test-typing-game.js`、`test-typing-game-app.js`、`test-conjugation-app.js`、`check-contrast.js`（配色对比度）、`test-shell-router.js`、`test-wordbooks.js`、`test-community-wordbooks.js`、`test-paths.js`（index.html / languages / lang-loader 引用的本地文件都存在）
+- 数据校验器（阻断项）：`scripts/validate_vocab.js`、`validate_modules.js`（全部模块数据对 `docs/data-schema.md`）、`validate_french_extras.js`、`validate_french_conjugations.js`、`validate_english_conjugations.js`、`validate_german_conjugations.js`、`validate_french_grammar.js`、`validate_german_extras.js`、`validate_german_grammar.js`、`validate_english_grammar.js`、`validate_english_collocations.js`；内容质量回归：`validate_fr_quality.js`、`validate_de_en_quality.js`、`validate_it_quality.js`
 
 任何 FAIL / 抛错 / 缺汇总行都让退出码非 0。
 
-测试**不覆盖** `app.js` / `lib/shell.js` 的 DOM 行为；UI 改动需要在浏览器里实测（静态服务器 + headless Chrome 截图亦可）。
+测试**不覆盖** `app.js` 的 DOM 行为（`lib/shell.js` 路由由 `test-shell-router.js` 覆盖）；UI 改动需要在浏览器里实测（静态服务器 + headless Chrome 截图亦可）。
 
 ---
 
@@ -496,12 +493,11 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 ### 7.2 原始 / 中间数据
 
-- **冻结产物（无上游源，就地修改）**：意大利语语法书（`data/it-grammar.js`，原书 Markdown 已于 2026-09-30 删除，用 `canonicalize_grammar.py it` 规范化）、意大利语搭配（`data/it-collocations.js`，用 `canonical_collocations.py it`）、意大利语变位（`data/it-conjugations.js`，用 `canonical_conjugations.py it`）、德语语法书（`data/de-grammar.js`，旧 Docusaurus 语料 `deutsch-data/grammar/docs/` 无许可证、已删除；`build_german_grammar.py` 已退役，只作出处记录，用 `canonicalize_grammar.py de` 规范化）
+- **冻结产物（无上游源，就地修改）**：意大利语语法书（`data/it-grammar.js`，原书 Markdown 已于 2026-09-30 删除，用 `canonicalize_grammar.py it` 规范化）、意大利语搭配（`data/it-collocations.js`，用 `canonical_collocations.py it`）、意大利语变位（`data/it-conjugations.js`，用 `canonical_conjugations.py it`）、德语语法书（`data/de-grammar.js`，旧 Docusaurus 语料 `deutsch-data/grammar/docs/` 无许可证、已删除，用 `canonicalize_grammar.py de` 规范化）
 - **德语词库**：`deutsch-data/vocab/`（pgh.csv + `handedict-de-slice.csv`）
 - **英语**：` english-data/english word/`（⚠️ 目录名前有空格；EnWords.csv + `ecdict-slice.csv`）；`data/vocab/src/en-lexicon.tsv`；`scripts/english_grammar_src/*.md`（原创语法源）、`scripts/english_collocations_source/*.txt`
 - **法语 / 德语搭配源**：`scripts/sources/french-collocations/`、`scripts/sources/german-rektion/`
 - **法语词库教材层**：`data/vocab/src/fr-curriculum.js`、`fr-glossary.js`
-- `data/it50k-verb-lemmas.json` 为辅助输入
 - 单词本模板：`custom_wordbook_template.json`、`custom_wordbook_template.txt`、`docs/TXT_FORMAT_GUIDE.md`
 
 ---
@@ -523,6 +519,20 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 | `vocab_schema.py` / `vocab_legacy.py` / `vocab_node.js` | — | 共享读写 / 适配 / Node 加载 |
 | `validate_vocab.js` | — | 四语言统一校验，语言专属规则为 per-language hook |
 
+### 8.1a 校订层（重建不丢）
+
+数据审校的结果不直接改产物，而是写成「修正清单 + 幂等应用」，构建器 / 规范化脚本最后一步自动重放，所以重建不会把审过的错误带回来。记录都带旧值（`from`）；当前值既不是 `from` 也不是 `to` 时报 stale，需对照新上游手查。
+
+| 清单 | 应用脚本 | 挂在 |
+|---|---|---|
+| `scripts/conjugation_fixes/<code>.json` | `canonical_conjugations.apply_fixes`（单元格、`x.*`、动词 `zh` / `en`） | 四种语言的 `canonicalize()` |
+| `scripts/it_fixes/{vocab,grammar,cognates,collocations}.json`、`it_fixes/grammar/*.md` | `italian_fixes.py`（`--check`） | `clean_italian_glosses.py`、`canonicalize_grammar.py`、`canonical_cognates.py`、`canonical_collocations.py` |
+| `scripts/vocab_fixes/fr.json`、`collocation_fixes/fr.json` | `fr_vocab_fixes.py`（`check`）、`fr_collocation_fixes.py` | `build_french_vocabulary.py assemble`、`build_french_extras.py` |
+| `scripts/de_vocab_fixes/*.json`、`de_cognate_fixes.json`、`de_course_fixes.json` | `de_vocab_fixes.py`、`de_cognate_fixes.py`、`de_course_fixes.py` | `build_german_vocabulary.py`、`build_german_extras.py` |
+| `scripts/en_vocab_fixes/*.json` | `en_vocab_fixes.py`（`--regen` 用 lemminflect 重算清单） | `build_english_vocab.py` |
+
+英语屈折词并入词元后，旧词形全部记在词元的 `legacyWord`（可为数组），旧进度经 `Vocab.resolveLegacyKey` 迁到词元。
+
 ### 8.2 变位
 
 各语言构建脚本写出旧的按动词 `forms` 形状后，末尾调用 `canonical_conjugations.canonicalize(<code>)` 转成 conjugations/1；`canonical_conjugations.py [codes]` 也可单独对已发布文件幂等地重跑。语言校验器经 `scripts/conjugations_node.js`（`loadConjugations` / `toLegacy`）读数据。
@@ -543,7 +553,6 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 | `canonicalize_grammar.py [codes]` | 已发布的数据文件 | 就地规范化；是 it / de 的「构建器」（意大利语 level 按标题启发式赋值，标 `meta.levelSource = "heuristic"`，已有 level 保留） | `validate_german_grammar.js`（de） |
 | `build_english_grammar.py` | `scripts/english_grammar_src/p<P>-ch<NN>-<name>.md` | `data/en-grammar.js` | `validate_english_grammar.js` |
 | `build_french_grammar.py` | 脚本内原创内容 | `data/fr-grammar.js` | `validate_french_grammar.js` |
-| `build_german_grammar.py` | （已退役：需要已删除的语料 + `--force`） | — | — |
 
 英语语法源格式：文件头 `<!-- part: ... / chapter: ... -->`，每个专题以 `=== tNN-slug | LEVEL` 开头、紧跟 `# N．标题`；文件名顺序即阅读顺序。`validate_english_grammar.js` 支持 `--only p1-ch01 --out /tmp/x.js` + `--file /tmp/x.js --partial` 只校验部分章节。**源文本必须原创**，不得摘抄受版权保护的语法书。
 
@@ -556,7 +565,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 | `build_german_extras.py` | `data/de-collocations.js`、`data/de-cognates.js`、`data/de-course.js` | `validate_german_extras.js` |
 | `build_french_extras.py` | `data/fr-collocations.js`、`data/fr-cognates.js` | `validate_french_extras.js` |
 | `build_english_collocations.py` | `data/en-collocations.js` | `validate_english_collocations.js` |
-| `cognate_extractor.js` | 从 `data/vocab/it.js` 提取意大利语同源词 → `data/it-cognates.js` | `validate_modules.js` |
+| `cognate_extractor.js <输出路径>` | 从 `data/vocab/it.js` 提取意大利语同源词（只作对照；写回 `data/it-cognates.js` 需 `--force`，会覆盖人工校订） | `validate_modules.js` |
 | `canonical_collocations.py it` | 就地规范化 `data/it-collocations.js`（冻结产物） | `validate_modules.js` |
 
 注意：`build_german_vocabulary.py` 只读 `data/de-course.js`，课程单元词保证留在德语词库里；`validate_modules.js` 检查每个 `unit.words` 都是词库 `word`、每个语法 slug 都在语法树里。
@@ -768,6 +777,15 @@ Supabase key 失效、bucket 或表结构不匹配时，社区上传 / 浏览 / 
 ---
 
 ## 15. 变更记录
+
+### 2026-10-08 — 变位审校 + 全项目修复（fix/conjugations）
+
+- **变位**：四语言审校，修正清单 `scripts/conjugation_fixes/<code>.json`（it 661 格、de 约 800、fr 约 780、en 50），`canonical_conjugations.py` 每次重放
+- **数据**：意大利语前 4000 词释义逐条复核（抽样错误率 27.5% → 0），语法书拆出被粘连的专题、动词变位附录移到 p3、补齐编号；法语英语跳板同形词释义 2454 条；德语多性名词 725 → 103（余下为真双性）、pgh 义项编号残留、课程级别；英语屈折词头并入词元、去专名、ECDICT 长释义裁剪（24000 → 14766 词）。各自的修正清单见 §8.1a，质量校验器 `validate_{it,fr,de_en}_quality.js`
+- **代码**：路由导航令牌 / 未知 slug 改写；迁移前冲刷进度、迁移后丢 SRS 缓存；社区词书非 ASCII 文件名、大小写扩展名、搜索防抖与转义；删除 `ReviewSession`、`WordbookManager`、`ScreenTree.screenOf` 等死接口
+- **体验**：`Vocab.gradeTyped` 统一判分（只差重音 = 「字母对了，重音不对」，德语变音 ae/oe/ue/ss 等价）；Google Fonts 不阻塞首屏；真实加载进度与失败重试；移动端输入属性与重音键盘；无障碍（aria-live、折叠面板 inert、aria-pressed / aria-expanded）；对比度；按语言的标签（`Languages.text`）；`sw.js` 离线缓存
+- **清理**：删除 `data/it50k-verb-lemmas.json`、`scripts/build_german_grammar.py`、英语数据目录里的预览图；`vocab_legacy.py` 去掉 `migrate` 子命令
+- 测试：29 个 harness
 
 ### 2026-10 — 统一模块数据 + 存储 v3 + 编辑风改版（refactor/unify）
 
