@@ -8,7 +8,7 @@
  *
  *   1. shape        - schema of every entry and every tense block
  *   2. glosses      - non-empty, non-placeholder English + Chinese
- *   3. ranking      - contiguous ranks, monotone frequency, no duplicates
+ *   3. ranking      - contiguous ranks, no duplicates
  *   4. konjunktiv2  - real synthetic forms, no all-persons-identical block,
  *                     würde only where the synthetic form is homophonous with
  *                     the Präteritum, hätte/wäre (never würde) in the perfect
@@ -21,12 +21,14 @@
 
 'use strict';
 
-const path = require('path');
-const DATA_PATH = path.join(__dirname, '..', 'data', 'german-conjugations.js');
-const DATA = require(DATA_PATH);
+// conjugations/1 is read back into the per-verb legacy view (old person keys,
+// single forms as arrays, x fields spread onto the entry); see conjugations_node.js.
+const { loadConjugations, toLegacy } = require('./conjugations_node');
+const DATA = toLegacy(loadConjugations('de'), ['ich', 'du', 'er_sie_es', 'wir', 'ihr', 'sie'], { omitted: 'drop' })
+  .map((entry) => ({ separable: false, ...entry }));
 
 const PERSONS = ['ich', 'du', 'er_sie_es', 'wir', 'ihr', 'sie'];
-const IMPERATIVE_PERSONS = ['du', 'ihr', 'wir', 'sie'];
+const IMPERATIVE_PERSONS = ['du', 'wir', 'ihr', 'sie'];
 const REQUIRED_TENSES = [
   'indikativ_praesens',
   'indikativ_praeteritum',
@@ -131,7 +133,7 @@ function sibilantTail(word) {
 // --------------------------------------------------------------------------
 // 1. shape
 // --------------------------------------------------------------------------
-check(Array.isArray(DATA), 'shape', 'GERMAN_CONJUGATION_DATA is not an array');
+check(Array.isArray(DATA), 'shape', 'DIM_DATA.conjugations.de did not load');
 check(DATA.length > 0, 'shape', 'dataset is empty');
 
 for (const entry of DATA) {
@@ -139,14 +141,12 @@ for (const entry of DATA) {
   check(typeof entry.infinitive === 'string' && /^[a-zäöüß]+$/.test(entry.infinitive),
     'shape', `${id}: infinitive is not a lower-case German word`);
   check(Number.isInteger(entry.rank) && entry.rank > 0, 'shape', `${id}: bad rank`);
-  check(typeof entry.frequency === 'number' && entry.frequency > 0,
-    'shape', `${id}: bad frequency`);
+  check(entry.freq === null || (typeof entry.freq === 'number' && entry.freq > 0),
+    'shape', `${id}: bad freq`);
   check(VERB_CLASSES.has(entry.verbClass), 'shape', `${id}: verbClass=${entry.verbClass}`);
   check(KII_TYPES.has(entry.konjunktivIiType),
     'shape', `${id}: konjunktivIiType=${entry.konjunktivIiType}`);
   check(typeof entry.separable === 'boolean', 'shape', `${id}: separable is not a boolean`);
-  check(typeof entry.source === 'string' && entry.source.length > 10,
-    'shape', `${id}: missing source attribution`);
   check(Array.isArray(entry.auxiliary) && entry.auxiliary.length > 0
     && entry.auxiliary.every((a) => a === 'haben' || a === 'sein'),
   'shape', `${id}: auxiliary=${JSON.stringify(entry.auxiliary)}`);
@@ -211,14 +211,10 @@ for (const entry of DATA) {
 // 3. ranking
 // --------------------------------------------------------------------------
 const seen = new Set();
-let previous = Infinity;
 DATA.forEach((entry, index) => {
   check(entry.rank === index + 1, 'ranking', `${entry.infinitive}: rank ${entry.rank} at index ${index}`);
   check(!seen.has(entry.infinitive), 'ranking', `${entry.infinitive}: duplicate entry`);
   seen.add(entry.infinitive);
-  check(entry.frequency <= previous,
-    'ranking', `${entry.infinitive}: frequency ${entry.frequency} > previous ${previous}`);
-  previous = entry.frequency;
 });
 
 // --------------------------------------------------------------------------

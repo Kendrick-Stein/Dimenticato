@@ -5,7 +5,8 @@
  * Run:  node scripts/validate_english_conjugations.js [path]
  *
  * Checks:
- *   1. the file loads as a browser <script> would and exposes the global;
+ *   1. the file loads as a browser <script> would and registers
+ *      DIM_DATA.conjugations.en (conjugations/1, read through conjugations_node.js);
  *   2. every entry has all 21 tenses, six persons where applicable, a Chinese
  *      verb gloss, and no inflected form / non-verb / duplicate as headword;
  *   3. a hand-verified gold set of spelling-rule and irregular cases — the
@@ -14,13 +15,6 @@
  */
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
-const vm = require('vm');
-
-const DATA_PATH = process.argv[2] ||
-  path.join(__dirname, '..', 'data', 'english-conjugations.js');
-const GLOBAL_NAME = 'ENGLISH_CONJUGATION_DATA';
 const PERSONS = ['i', 'you', 'he_she_it', 'we', 'you_pl', 'they'];
 const TENSES = [
   'indicative_present_simple', 'indicative_present_continuous',
@@ -126,19 +120,8 @@ const FORBIDDEN_HEADWORDS = [
 const failures = [];
 const fail = (msg) => failures.push(msg);
 
-function load() {
-  const ctx = {};
-  vm.createContext(ctx);
-  vm.runInContext(fs.readFileSync(DATA_PATH, 'utf8') +
-    `\n;this.__data = typeof ${GLOBAL_NAME} !== 'undefined' ? ${GLOBAL_NAME} : undefined;`, ctx);
-  return ctx.__data;
-}
-
-const data = load();
-if (!Array.isArray(data)) {
-  console.error(`FAIL: ${GLOBAL_NAME} is not an array`);
-  process.exit(1);
-}
+const { loadConjugations, toLegacy } = require('./conjugations_node');
+const data = toLegacy(loadConjugations('en', process.argv[2]), PERSONS);
 if (data.length < MIN_VERBS) fail(`only ${data.length} verbs (< ${MIN_VERBS})`);
 
 const byBase = new Map();
