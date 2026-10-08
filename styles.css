@@ -131,10 +131,6 @@ h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
 .hidden, [hidden] { display: none !important; }
 .num { font-family: var(--mono); font-weight: 500; letter-spacing: -0.02em; }
 .muted { color: var(--muted); }
-.visually-hidden {
-  position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden;
-  clip: rect(0 0 0 0); white-space: nowrap;
-}
 
 /* Material Symbols ligatures (icons inside feature modules) */
 /* Until the icon font is usable (index.html removes .msr-pending), hide the
@@ -329,8 +325,6 @@ main#main { min-height: 60vh; }
   color: var(--ink-soft);
   font-size: 0.86rem;
 }
-.footer-brand { font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--ink); }
-.footer-brand em { color: var(--red); }
 .footer a { color: inherit; }
 
 /* ---------- 4. Primitives ---------- */
@@ -393,7 +387,6 @@ main#main { min-height: 60vh; }
 
 .btn,
 .primary-btn,
-.secondary-btn,
 .pill-btn,
 .back-btn,
 .back-link {
@@ -423,11 +416,10 @@ main#main { min-height: 60vh; }
 .btn-ghost { background: transparent; color: var(--ink); }
 .pill-btn, .btn-small { min-height: 2.35rem; padding: 0.35rem 0.9rem; font-size: 0.88rem; }
 .back-btn, .back-link { min-height: 2.35rem; padding: 0.35rem 0.8rem; border-color: var(--line); font-size: 0.88rem; font-weight: 500; }
-.danger-btn { border-color: var(--red); color: var(--red); }
 .pill-btn.active, .pill-btn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
 
 @media (hover: hover) {
-  .btn:hover, .secondary-btn:hover, .pill-btn:hover, .back-btn:hover, .back-link:hover { background: var(--paper-deep); }
+  .btn:hover, .pill-btn:hover, .back-btn:hover, .back-link:hover { background: var(--paper-deep); }
   .btn-ghost:hover { transform: translateY(-1px); }
   .primary-btn:hover:not(:disabled), .btn-primary:hover:not(:disabled) {
     background: var(--line-ink);
@@ -1547,19 +1539,6 @@ h1.page {
 
 /* ---------- 8.2 Typing game ---------- */
 
-/* Entry card on the vocabulary-modes screen */
-.card.typing-feature-card {
-  flex-direction: row;
-  gap: 1.1rem;
-  align-items: center;
-  margin-top: 0.9rem;
-  border-style: dashed;
-}
-.card.typing-feature-card:hover { border-style: solid; }
-.typing-feature-text { display: flex; flex: 1; flex-direction: column; gap: 0.3rem; }
-.typing-feature-arrow { color: var(--red); transition: transform var(--ease); }
-.typing-feature-card:hover .typing-feature-arrow { transform: translateX(3px); }
-
 /* Setup */
 .typing-mode-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 1.3rem; }
 .typing-mode-chips .chip { min-height: 2.6rem; padding: 0.4rem 1.1rem; font-size: 0.92rem; }
@@ -1749,7 +1728,6 @@ h1.page {
   background: var(--card);
   transition: border-color var(--ease);
 }
-.conj-setup-panel.conj-context-active { border-color: var(--line-ink); border-top-color: var(--red); }
 .conj-setup-panel + .sub-label { margin-top: 2rem; }
 
 .conj-module-toolbar {
@@ -3005,31 +2983,15 @@ h1.page {
   background: var(--paper-soft);
 }
 
-.feature-box,
-.usage-box {
+.feature-box {
   margin-bottom: 1rem;
   padding: 1rem 1.2rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--card);
 }
-.feature-box > :last-child,
-.usage-box > :last-child { margin-bottom: 0; }
+.feature-box > :last-child { margin-bottom: 0; }
 .feature-box.highlight { border-color: var(--line-ink); box-shadow: inset 0 3px 0 var(--red); }
-.usage-box { border-left: 3px solid var(--verde); }
-
-.code-block {
-  margin: 0.8rem 0;
-  padding: 0.9rem 1rem;
-  overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper-soft);
-  font-family: var(--mono);
-  font-size: 0.84rem;
-  line-height: 1.6;
-  white-space: pre;
-}
 
 .help-tip {
   margin: 0.9rem 0;
@@ -3135,7 +3097,6 @@ h1.page {
   /* Help */
   .help-modal-body { padding: 1rem; }
   .help-section h2 { font-size: 1.35rem; }
-  .code-block { font-size: 0.78rem; }
 }
 
 @media (max-width: 640px) {
