@@ -1399,25 +1399,23 @@ def merge_round_robin(lists: list[list[str]], limit: int) -> list[str]:
     return out
 
 
-COURSE_LINE_RE = re.compile(r"^\d+\|[^|]*\|[^|]*\|[^|]*\|(.+)$")
-
-
 def load_course_headwords() -> set[str]:
-    """The 418 headwords data/german-course-data.js teaches.
+    """The words data/de-course.js (course/1) teaches.
 
-    tests/test-german-course-data.js asserts that every one of them resolves to
-    a system-vocabulary entry, so the course list is a teaching source on the
-    same footing as pgh.csv and the Goethe Wortlisten: an entry it names is
-    never dropped for being a proper noun, a nominalisation or a participle.
-    Read-only — this build never writes german-course-data.js.
+    Every unit.words item must be a system-vocabulary `word`
+    (scripts/validate_modules.js checks it), so the course list is a teaching
+    source on the same footing as pgh.csv and the Goethe Wortlisten: an entry
+    it names is never dropped for being a proper noun, a nominalisation or a
+    participle.  Read-only — this build never writes de-course.js.
     """
-    text = (ROOT / "data" / "german-course-data.js").read_text(encoding="utf-8")
-    out: set[str] = set()
-    for line in text.splitlines():
-        m = COURSE_LINE_RE.match(line.strip())
-        if m:
-            out.update(w.strip() for w in m.group(1).split(",") if w.strip())
-    return out
+    script = (
+        "const d=require(process.argv[1]);"
+        "process.stdout.write(JSON.stringify(d.levels.flatMap(l=>l.units.flatMap(u=>u.words||[]))))"
+    )
+    out = subprocess.run(
+        ["node", "-e", script, str(ROOT / "data" / "de-course.js")],
+        check=True, stdout=subprocess.PIPE)
+    return {w for w in json.loads(out.stdout.decode("utf-8")) if w}
 
 
 def main() -> None:
@@ -1467,7 +1465,7 @@ def main() -> None:
     print(f"       {len(pgh)} pgh.csv headwords")
 
     course = load_course_headwords()
-    print(f"       {len(course)} course headwords (data/german-course-data.js)")
+    print(f"       {len(course)} course headwords (data/de-course.js)")
     # pgh.csv, the Goethe lists and the course syllabus are the three teaching
     # sources; a word any of them names is protected from the heuristic drops.
     taught = set(pgh) | set(goethe) | course | set(CURATED_NOUNS)

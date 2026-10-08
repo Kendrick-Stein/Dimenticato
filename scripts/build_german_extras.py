@@ -15,9 +15,12 @@ Emits three files, all mirroring the shapes of their Italian counterparts:
         Same shape as COGNATE_DATA with `german` replacing `italian`, plus the
         additive `falseFriend` / `pos` / `englishGloss` fields.
 
-  data/german-course-data.js        -> GERMAN_COURSE_DATA
-        The existing 54-unit A1-C1 course, enriched with grammar-book slugs,
-        per-unit example sentences and 40+ practice headwords per unit.
+  data/de-course.js                 -> GERMAN_COURSE_DATA (DIM_DATA.course.de)
+        The 54-unit A1-C1 course in course/1 shape (docs/data-schema.md):
+        unit.words are vocab `word`s (topped up to 40+ per unit),
+        unit.grammar is [{label, slug}] with grammar/1 slugs, and
+        unit.x.examples carries Tatoeba sentence pairs.  The file is both
+        input and output: hand edits to titles/summaries/grammar survive.
 
 Sources (all permissive, recorded per entry in the emitted data):
   * Tatoeba deu-cmn sentence pairs   - CC BY 2.0 FR  (https://tatoeba.org)
@@ -2529,155 +2532,6 @@ def build_false_friends(de_by_word, en_by_word, gender_idx=None):
 # 4. Course enrichment
 # --------------------------------------------------------------------------
 
-# Every one of the 144 course grammar labels mapped onto a slug that exists in
-# GERMAN_GRAMMAR_DATA.content, so the tags stop being dead text.
-GRAMMAR_SLUGS = {
-    'Adverbien/Adjektive': '副词/副词',
-    'Akkusativ': '冠词/冠词',
-    'Dativ': '冠词/冠词',
-    'Dativ 人称代词': '代词/代词',
-    'Dativ 介词': '介词/介词支配格',
-    'Dativ 宾语': '句法/句法',
-    'Dativ/Akkusativ 代词顺序': '句法/句法',
-    'Futur I/II': '动词/变位',
-    'Genitiv': '冠词/冠词',
-    'Genitiv 介词': '介词/介词支配格',
-    'Genitiv 属性': '名词/名词',
-    'Imperativ': '动词/叙述方式',
-    'Konjunktiv I': '动词/叙述方式',
-    'Konjunktiv II': '动词/叙述方式',
-    'Modalsätze': '连词/连词',
-    'Partizip I/II 作定语': '动词/分词',
-    'Partizip I/II 作形容词': '动词/分词',
-    'Partizipialkonstruktionen': '动词/分词',
-    'Perfekt': '动词/变位',
-    'Perfekt mit haben/sein': '动词/变位',
-    'Plusquamperfekt': '动词/变位',
-    'Präsens': '动词/变位',
-    'Präteritum': '动词/变位',
-    'Präteritum von haben/sein': '动词/变位',
-    'Zustandspassiv': '动词/行动方式',
-    'als/wenn': '连词/连词',
-    'bevor/seit/während': '连词/连词',
-    'brauchen': '动词/动词',
-    'brauchen + zu': '动词/不定式',
-    'damit': '连词/连词',
-    'dass/weil 从句': '连词/连词',
-    'dürfen': '动词/动词',
-    'einander': '代词/代词',
-    'es 的功能': '代词/代词',
-    'finale Nebensätze': '连词/连词',
-    'für/ohne': '介词/介词支配格',
-    'haben': '动词/动词',
-    'je ... desto': '连词/连词',
-    'kein': '冠词/冠词',
-    'können': '动词/动词',
-    'man': '代词/代词',
-    'mit + Dativ': '介词/介词支配格',
-    'müssen': '动词/动词',
-    'n-Deklination': '名词/阳性弱变化',
-    'nachdem': '连词/连词',
-    'obwohl': '连词/连词',
-    'ohne zu/ohne dass': '动词/不定式',
-    'sein': '动词/动词',
-    'sollte': '动词/动词',
-    'trotz': '介词/介词支配格',
-    'um ... zu': '动词/不定式',
-    'welch-': '代词/代词',
-    'welch- 与 was für ein': '代词/代词',
-    'wenn 从句': '连词/连词',
-    'wenn 条件句': '连词/连词',
-    'werden + Infinitiv': '动词/变位',
-    'werden 的功能': '动词/动词',
-    'wissen': '动词/动词',
-    'wollen': '动词/动词',
-    'während/wegen': '介词/介词支配格',
-    'zu + Infinitiv': '动词/不定式',
-    '不可分前缀动词': '动词/动词前缀',
-    '不可分动词': '动词/动词前缀',
-    '不定代词': '代词/代词',
-    '不定代词作代词': '代词/代词',
-    '不定冠词后的形容词词尾': '形容词/形容词变格',
-    '主观用法情态动词': '动词/动词',
-    '二项连接词': '连词/连词',
-    '人称代词': '代词/代词',
-    '介词 auf 与 in': '介词/介词辨析',
-    '介词宾语': '动词/用法模式',
-    '代副词': '副词/副词',
-    '代词功能': '代词/代词',
-    '以 W-Wort 或 ob 引导的从句': '连词/连词',
-    '关系从句': '句法/句法',
-    '关系从句 mit was/wo(r)-': '句法/句法',
-    '关系代词 was 与 Genitiv': '代词/代词',
-    '动词名词化': '名词/名词',
-    '单复数': '名词/名词',
-    '双向介词': '介词/介词支配格',
-    '反身代词': '代词/代词',
-    '句中时间/原因/情态/地点成分': '句法/句法',
-    '句框': '句法/句法',
-    '可分/不可分动词': '动词/动词前缀',
-    '可分动词': '动词/动词前缀',
-    '可分动词 Präteritum': '动词/动词前缀',
-    '同义转述': '其他/其他',
-    '同位语': '句法/句法',
-    '名词/动词/形容词介词搭配': '动词/用法模式',
-    '名词动词搭配': '动词/用法模式',
-    '名词化': '名词/名词',
-    '名词化形容词': '名词/名词',
-    '因果主从句': '连词/连词',
-    '国际名词复数': '名词/名词',
-    '图表论证': '其他/其他',
-    '复杂时态与 Konjunktiv II': '动词/叙述方式',
-    '定冠词与不定冠词': '冠词/冠词',
-    '对立/选择/情态从句': '连词/连词',
-    '属格文学表达': '名词/名词',
-    '并列连词': '连词/连词',
-    '形容词词尾': '形容词/形容词变格',
-    '情态动词 Perfekt': '动词/动词',
-    '情态动词 Präteritum': '动词/动词',
-    '情态动词 mögen': '动词/动词',
-    '情态动词 sollen': '动词/动词',
-    '情态动词被动态': '动词/行动方式',
-    '情态动词被动态从句': '动词/行动方式',
-    '情态动词转述': '动词/叙述方式',
-    '情态表达': '动词/动词',
-    '成对连词': '连词/连词',
-    '扩展分词': '动词/分词',
-    '指代副词': '副词/副词',
-    '指示冠词与代词': '代词/代词',
-    '文本照应': '句法/句法',
-    '文本结构': '句法/句法',
-    '方位副词': '副词/副词',
-    '无主句被动态': '动词/行动方式',
-    '无冠词形容词词尾': '形容词/形容词变格',
-    '时间表达': '其他/其他',
-    '条件句 mit sollen': '连词/连词',
-    '概括性关系从句': '句法/句法',
-    '正式定义': '其他/其他',
-    '比较级与最高级': '形容词/形容词',
-    '比较级形容词词尾': '形容词/形容词变格',
-    '派生形容词': '形容词/形容词',
-    '演讲与读者来信结构': '其他/其他',
-    '物主冠词': '冠词/冠词',
-    '科技语体': '其他/其他',
-    '绝对比较级': '形容词/形容词',
-    '虚拟语气': '动词/叙述方式',
-    '衔接手段': '句法/句法',
-    '被动态': '动词/行动方式',
-    '被动态替代形式': '动词/行动方式',
-    '要求句': '动词/叙述方式',
-    '语体分析': '其他/其他',
-    '语序': '句法/句法',
-    '语气小品词': '句法/句法',
-    '转述立场': '动词/叙述方式',
-    '过去时 Konjunktiv II': '动词/叙述方式',
-    '连接副词': '副词/副词',
-    '连接词意义': '连词/连词',
-    '连续/让步连接词': '连词/连词',
-    '间接引语': '动词/叙述方式',
-    '陈述句与疑问句': '句法/句法',
-}
-
 # unit id | German morphemes (space separated) | Chinese gloss keywords
 UNIT_TOPICS = r"""
 A1-01|Hallo Gruß grüß Tag Name Vorname Herr Frau Land Stadt Zahl Nummer Sprache heißen kommen wohnen sprechen buchstabieren Alter Adresse Telefon Deutsch Österreich Schweiz Familie Person willkommen|问候 名字 国家 号码 数字
@@ -2747,7 +2601,8 @@ def normalize_headword(value):
 
 
 def build_course(course, german_vocab, pairs, grammar_slugs_available):
-    # replicate german-course.js / tests/test-german-course-data.js index build
+    # normalised index, used to make sure a topped-up word is the one the
+    # learner would find under that spelling
     index = {}
     for word in german_vocab:
         for value in (word.get('german'), word.get('display')):
@@ -2764,9 +2619,13 @@ def build_course(course, german_vocab, pairs, grammar_slugs_available):
         topics[unit_id] = (morphemes.split(), zh_keys.split())
 
     vocab_words = set((w.get('german') or '').lower() for w in german_vocab)
+    by_word = {}
+    for w in german_vocab:
+        by_word.setdefault(w.get('german'), w)
     used_globally = defaultdict(int)
-    stats = {'units': 0, 'headwords': 0, 'examples': 0, 'unitsUnderTarget': [],
-             'unitsWithoutExamples': [], 'unresolvedSlugs': set()}
+    stats = {'units': 0, 'words': 0, 'examples': 0, 'grammarLabels': 0,
+             'unitsUnderTarget': [], 'unitsWithoutExamples': [],
+             'droppedWords': [], 'unresolvedSlugs': set()}
     enriched = {}
     used_sentences = set()
 
@@ -2777,13 +2636,16 @@ def build_course(course, german_vocab, pairs, grammar_slugs_available):
             morphemes, zh_keys = topics.get(unit['id'], ([], []))
             headwords, seen_ids = [], set()
 
-            # keep every original syllabus headword (they all resolve today)
-            for headword in unit['headwords']:
-                hit = index.get(normalize_headword(headword))
-                if hit is None or id(hit) in seen_ids:
+            # keep every word already in the unit (course/1: exact vocab words)
+            for word in unit.get('words') or []:
+                hit = by_word.get(word)
+                if hit is None:
+                    stats['droppedWords'].append('%s:%s' % (unit['id'], word))
+                    continue
+                if id(hit) in seen_ids:
                     continue
                 seen_ids.add(id(hit))
-                headwords.append(headword)
+                headwords.append(word)
 
             def take(word):
                 german = word.get('german') or ''
@@ -2883,109 +2745,87 @@ def build_course(course, german_vocab, pairs, grammar_slugs_available):
                 per_headword[lead] += 1
                 chosen_tokens.append(toks)
                 used_sentences.add(de)
-                examples.append({'de': de, 'zh': zh, 'source': TATOEBA})
+                examples.append({'text': de, 'zh': zh, 'source': TATOEBA})
             if not examples:
                 stats['unitsWithoutExamples'].append(unit['id'])
 
             links = []
-            for label in unit['grammar']:
-                slug = GRAMMAR_SLUGS.get(label)
+            for item in unit.get('grammar') or []:
+                link = {'label': item['label']}
+                slug = item.get('slug')
                 if slug and slug not in grammar_slugs_available:
                     stats['unresolvedSlugs'].add(slug)
                     slug = None
-                links.append({'label': label, 'slug': slug})
+                if slug:
+                    link['slug'] = slug
+                links.append(link)
+            stats['grammarLabels'] += len(links)
 
             enriched[unit['id']] = {
-                'headwords': headwords,
+                'words': headwords,
                 'examples': examples,
-                'grammarLinks': links,
+                'grammar': links,
             }
             stats['units'] += 1
-            stats['headwords'] += len(headwords)
+            stats['words'] += len(headwords)
             stats['examples'] += len(examples)
 
     stats['unresolvedSlugs'] = sorted(stats['unresolvedSlugs'])
     return enriched, stats
-COURSE_HEADER = '''// Guided German curriculum for Dimenticato.  GENERATED — edit
-// scripts/build_german_extras.py and re-run it instead of editing this file.
-//
-// The lesson sequence follows the table-of-contents scope visible in the
-// user's local "走遍德国 / Passwort Deutsch" A1-B1 and "Mittelpunkt" B2-C1
-// course books. The compact summaries, grammar labels and practice headword
-// selections are independently organized for this application. No scanned
-// textbook pages or exercise text are redistributed.
-//
-// Enrichment added by the content-parity pass:
-//   * GERMAN_COURSE_GRAMMAR_SLUGS maps every course grammar label onto a slug
-//     that exists in GERMAN_GRAMMAR_DATA.content, so unit.grammarLinks[].slug
-//     can be rendered as a real link into the Grammar Book.
-//   * unit.examples carries Tatoeba (CC BY 2.0 FR) German/Chinese sentence
-//     pairs that actually use the unit's vocabulary.
-//   * unit.headwords was raised from 10-12 to up to %d entries per unit, all
-//     resolvable against data/german-vocabulary.js, so a practice session has
-//     a real distractor pool.
-''' % HEADWORD_TARGET
+COURSE_HEADER = [
+    '// Guided German curriculum for Dimenticato (course/1, docs/data-schema.md).',
+    '// GENERATED by scripts/build_german_extras.py, which reads this file back in:',
+    '// edit titles/summaries/grammar here or in the builder, then re-run it.',
+    '//',
+    '// The lesson sequence follows the table-of-contents scope visible in the',
+    '// user\'s local "走遍德国 / Passwort Deutsch" A1-B1 and "Mittelpunkt" B2-C1',
+    '// course books. The compact summaries, grammar labels and practice word',
+    '// selections are independently organized for this application. No scanned',
+    '// textbook pages or exercise text are redistributed.',
+    '//',
+    '//   * unit.words: up to %d data/vocab/de.js words per unit (exact `word`s),' % HEADWORD_TARGET,
+    '//     so a practice session has a real distractor pool.',
+    '//   * unit.grammar[].slug: a grammar/1 slug in data/german-grammar-data.js.',
+    '//   * unit.x.examples: Tatoeba (CC BY 2.0 FR) German/Chinese sentence pairs',
+    '//     that actually use the unit\'s vocabulary.',
+]
 
-COURSE_PARSER = '''
-function parseGermanCourseUnits(level, raw) {
-  return raw.trim().split('\\n').filter(Boolean).map((line) => {
-    const [number, title, summary, grammar, headwords] = line.split('|');
-    const id = `${level}-${String(number).padStart(2, '0')}`;
-    const grammarList = grammar.split(';').map((item) => item.trim()).filter(Boolean);
-    const extras = GERMAN_COURSE_UNIT_EXTRAS[id] || {};
-    return {
-      id,
-      number: Number(number),
-      title,
-      summary,
-      grammar: grammarList,
-      grammarLinks: grammarList.map((label) => ({
-        label,
-        slug: GERMAN_COURSE_GRAMMAR_SLUGS[label] || null
-      })),
-      headwords: headwords.split(',').map((item) => item.trim()).filter(Boolean),
-      examples: extras.examples || []
-    };
-  });
+COURSE_META = {
+    'name': 'german',
+    'title': 'A1–C1 德语课程路线',
+    'zh': '德语课程路线',
+    'description': '54 个教材主题，语法重点与核心词汇一一对应。',
+    'unitLabel': 'Lektion',
+    'note': ('课程顺序参考本地《走遍德国》A1-B1、《Mittelpunkt》B2-C1 与中高级词汇练习资料的目录范围。'
+             '主题说明、语法标签和核心词选择均为本应用重新整理；网页不包含教材扫描页。'),
+    'builder': 'scripts/build_german_extras.py',
 }
-'''
 
 
 def emit_course(course, enriched, path):
-    parts = [COURSE_HEADER]
-    parts.append('\nconst GERMAN_COURSE_GRAMMAR_SLUGS = %s;\n' % js_dump(GRAMMAR_SLUGS))
-    extras = {uid: {'examples': data['examples']} for uid, data in enriched.items()}
-    parts.append('\nconst GERMAN_COURSE_UNIT_EXTRAS = %s;\n' % js_dump(extras))
-    parts.append(COURSE_PARSER)
-    parts.append('\nconst GERMAN_COURSE_DATA = {\n')
-    parts.append('  sources: %s,\n' % js_dump(course['sources']).replace('\n', '\n  '))
-    parts.append('  grammarSlugs: GERMAN_COURSE_GRAMMAR_SLUGS,\n')
-    parts.append('  levels: [\n')
+    import course_schema
+    meta = dict(course.get('meta') or {})
+    meta.update(COURSE_META)
+    if TATOEBA not in (meta.get('sources') or []):
+        meta['sources'] = list(meta.get('sources') or []) + [TATOEBA]
+    meta.setdefault('licences', ['课程文案与选词：为 Dimenticato 撰写（目录范围参考教材，未转载教材内容）',
+                                 '例句：Tatoeba CC BY 2.0 FR'])
+    levels = []
     for level in course['levels']:
-        lines = []
+        units = []
         for unit in level['units']:
-            lines.append('|'.join([
-                str(unit['number']),
-                unit['title'],
-                unit['summary'],
-                ';'.join(unit['grammar']),
-                ','.join(enriched[unit['id']]['headwords']),
-            ]))
-        parts.append('    {\n')
-        parts.append('      id: %s,\n' % json.dumps(level['id'], ensure_ascii=False))
-        parts.append('      title: %s,\n' % json.dumps(level['title'], ensure_ascii=False))
-        parts.append('      chineseTitle: %s,\n' % json.dumps(level['chineseTitle'], ensure_ascii=False))
-        parts.append('      description: %s,\n' % json.dumps(level['description'], ensure_ascii=False))
-        parts.append("      units: parseGermanCourseUnits('%s', `\n%s\n      `)\n" % (level['id'], '\n'.join(lines)))
-        parts.append('    },\n')
-    parts.append('  ]\n};\n')
-    parts.append("\nif (typeof module !== 'undefined' && module.exports) {\n"
-                 "  module.exports = GERMAN_COURSE_DATA;\n}\n")
-    parts.append(register_footer('course', 'de', 'GERMAN_COURSE_DATA'))
-    text = ''.join(parts)
-    with io.open(path, 'w', encoding='utf-8', newline='\n') as fh:
-        fh.write(text)
-    return len(text.encode('utf-8'))
+            extra = enriched[unit['id']]
+            out = {k: unit[k] for k in ('id', 'number', 'title', 'summary')}
+            out['words'] = extra['words']
+            out['grammar'] = extra['grammar']
+            if extra['examples']:
+                out['x'] = {'examples': extra['examples']}
+            units.append(out)
+        lv = {k: level.get(k) for k in ('id', 'title', 'zh', 'description')}
+        lv['units'] = units
+        levels.append(lv)
+    return course_schema.write('de', {'meta': meta, 'levels': levels},
+                               COURSE_HEADER, path=path)
 
 
 COLLOC_HEADER = '''// German verb collocations (Rektion) for Dimenticato.  GENERATED — edit
@@ -3113,11 +2953,10 @@ def main():
     if not args.skip_course:
         grammar = load_js_dataset('german-grammar-data.js', 'GERMAN_GRAMMAR_DATA')
         available = set(grammar['content'].keys())
-        course = load_js_dataset('german-course-data.js', 'GERMAN_COURSE_DATA')
+        course = load_js_dataset('de-course.js', 'GERMAN_COURSE_DATA')
         enriched, stats = build_course(course, german_vocab, pairs, available)
-        size = emit_course(course, enriched, os.path.join(DATA, 'german-course-data.js'))
+        size = emit_course(course, enriched, os.path.join(DATA, 'de-course.js'))
         stats['bytes'] = size
-        stats['grammarLabels'] = len(GRAMMAR_SLUGS)
         report['course'] = stats
 
     json.dump(report, sys.stdout, ensure_ascii=False, indent=2)

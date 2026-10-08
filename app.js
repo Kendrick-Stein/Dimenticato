@@ -129,7 +129,7 @@
   // Prefs（dimenticato_prefs，按语言）：source 'system' | 'wb:<id>' | 'course'，
   // level 'A1'..'C2' | 'all'，filter 'all' | 'new' | 'due'，session '20'|'50'|'100'|'all'
 
-  var courseSelection = null; // { lang, label, entries } —— 德语课程路线选中的单元词表
+  var courseSelection = null; // { lang, label, entries } —— 课程路线（course.js）选中的单元词表
 
   function prefs(l) { return global.Prefs.get(l || lang()); }
   function setPrefs(patch, l) { return global.Prefs.set(l || lang(), patch); }
@@ -538,7 +538,7 @@
       if (hasModule('conjugations', l)) card('conjugation', 'sync_alt', '动词变位', '查任意动词的完整变位，或按时态分课练习。');
       if (hasModule('collocations', l)) card('collocations', 'link', '动词搭配', '动词与介词、宾语的固定搭配和例句。');
       if (hasModule('cognates', l)) card('cognates', 'join_inner', '同源词', '和英语长得像的词，借已有词汇量抄近路。');
-      if (hasModule('course', l)) card('course', 'route', '课程路线 A1–C1', '54 个教材主题，语法重点与核心词汇一一对应。');
+      if (hasModule('course', l)) card('course', 'route', '课程路线', '按教材单元推进：每课的语法重点与核心词汇一一对应。');
       card('go-progress', 'insights', '学习进度', '每周走势、各等级掌握度与复习计划。');
     } else if (where === 'grammar') {
       if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', '按章节查阅，左侧目录，右侧正文。');
@@ -547,7 +547,7 @@
         card('collocations', 'travel_explore', '动词搭配 · 浏览', '按动词查搭配与例句。');
         card('collocation-practice', 'extension', '动词搭配 · 练习', '看例句选出正确的介词或搭配。');
       }
-      if (hasModule('course', l)) card('course', 'route', '课程路线 A1–C1', '按教材主题查看语法重点并练习核心词汇。');
+      if (hasModule('course', l)) card('course', 'route', '课程路线', '按教材单元查看语法重点并练习核心词汇。');
     }
     return cards.join('');
   }
@@ -1016,16 +1016,8 @@
       if (!gb) { toast('语法书模块未能加载'); return; }
       gb.init(grammarData(l), { lang: l });
       global.showScreen('grammarBookScreen');
-      if (!slug) return;
-      var data = grammarData(l);
-      var parts = data && data.tree && data.tree.parts || [];
-      parts.forEach(function (part) {
-        (part.chapters || []).forEach(function (chapter) {
-          (chapter.topics || []).forEach(function (topic) {
-            if (topic.slug === slug) gb.loadTopic(slug, topic.title, part.title, chapter.title);
-          });
-        });
-      });
+      // 新旧 slug 都行：GrammarBook 经 meta.aliases 解析（深链接、课程里的引用）
+      if (slug) gb.openTopic(slug);
     };
     if (grammarData(l)) go();
     else global.LangLoader.ensureModule(l, 'grammar').then(function () {
@@ -1043,7 +1035,7 @@
     'collocation-practice': function (l) { if (global.VerbCollocationPractice) global.VerbCollocationPractice.open(l); },
     cognates: function (l) { if (global.CognateApp) global.CognateApp.open(l); },
     typing: function (l) { if (global.TypingGameApp) global.TypingGameApp.open(l); },
-    course: function () { if (global.GermanCourse) global.GermanCourse.open(); },
+    course: function (l) { if (global.Course) global.Course.open(l); },
     community: function () { if (global.CommunityWordbooks) global.CommunityWordbooks.showBrowseScreen(); }
   };
 
@@ -1390,7 +1382,7 @@
     masteredWords: function (l) { return Progress.systemMastered(l || lang()); },
     startSession: startSession,
 
-    /** 德语课程路线：把一个单元的核心词作为练习来源，进入词汇页。 */
+    /** 课程路线：把一个单元的核心词作为练习来源，进入词汇页。 */
     practiceEntries: function (label, entries) {
       var l = lang();
       courseSelection = { lang: l, label: label, entries: (entries || []).filter(Boolean) };
@@ -1441,7 +1433,7 @@
 
       // 深链接直达功能模块屏时，由各模块自己的 open 负责装数据再切屏
       var R = Shell().registerOpener;
-      R('grammarBookScreen', function (l) { openGrammarBook(l); });
+      R('grammarBookScreen', function (l, slug) { openGrammarBook(l, slug); });
       R('conjugationSetupScreen', function (l) { MODULE_OPENERS.conjugation(l); });
       R('verbCollocationsScreen', function (l) { MODULE_OPENERS.collocations(l); });
       R('typingGameScreen', function (l) { MODULE_OPENERS.typing(l); });
@@ -1449,8 +1441,8 @@
         if (hasModule('cognates', l)) MODULE_OPENERS.cognates(l); else global.showScreen('vocabScreen', { replaceRoute: true });
       });
       R('communityBrowseScreen', function () { MODULE_OPENERS.community(); });
-      R('germanCourseScreen', function (l) {
-        if (hasModule('course', l)) MODULE_OPENERS.course(); else global.showScreen('homeScreen', { replaceRoute: true });
+      R('courseScreen', function (l) {
+        if (hasModule('course', l)) MODULE_OPENERS.course(l); else global.showScreen('homeScreen', { replaceRoute: true });
       });
     }
   };

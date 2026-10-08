@@ -3,13 +3,14 @@
 """
 Build data/english-grammar-data.js  (ENGLISH_GRAMMAR_DATA).
 
-Shape mirrors data/french-grammar-data.js:
+Output shape: grammar/1 (docs/data-schema.md), written by scripts/grammar_schema.py:
 
-    const ENGLISH_GRAMMAR_CONTENT = { '<slug>': '<markdown>', ... };
-    const ENGLISH_GRAMMAR_DATA = { meta, tree: { parts: [...] }, content: ENGLISH_GRAMMAR_CONTENT };
+    const ENGLISH_GRAMMAR_DATA = { meta: {schema, lang, ..., levels, topicCount, aliases},
+                              tree: { parts: [...] }, content: { '<slug>': '<markdown>' } };
 
-Every topic carries an additive `level` field (A1/A2/B1/B2/C1); the GrammarBook
-reader ignores unknown fields.
+Every topic has a CEFR `level`.  Shipped slugs are positional
+(p<N>/ch<NN>/t<NN>); the descriptive authoring slugs used here are kept in
+meta.aliases (old -> new) so links and saved positions keep resolving.
 
 SOURCE FORMAT
 -------------
@@ -27,7 +28,8 @@ one or more topics, each introduced by a `=== t<NN>-<kebab> | <LEVEL>` line:
     # 1．名词的分类：可数与不可数
     ...markdown...
 
-The topic slug is  p<P>/ch<NN>/t<NN>-<kebab>  and the topic title is the H1.
+The authoring slug is  p<P>/ch<NN>/t<NN>-<kebab>  (shipped as p<P>/ch<NN>/t<NN>,
+with the authoring slug in meta.aliases) and the topic title is the H1.
 
 CONTENT PROVENANCE / LICENCE
 ----------------------------
@@ -53,7 +55,7 @@ import os
 import re
 import sys
 import unicodedata
-from data_module import register_footer
+import grammar_schema
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.join(HERE, 'english_grammar_src')
@@ -180,45 +182,31 @@ def main(argv):
     used_levels = [lv for lv in LEVELS if any(t['level'] == lv for t in topics)]
     span = '%s-%s' % (used_levels[0], used_levels[-1]) if used_levels else ''
 
-    lines = []
-    lines.append('// data/english-grammar-data.js — 英语语法书（%s）' % span)
-    lines.append('// GENERATED FILE — do not edit by hand.')
-    lines.append('// Source:     scripts/english_grammar_src/*.md')
-    lines.append('// Regenerate: python3 scripts/build_english_grammar.py')
-    lines.append('// Validate:   node scripts/validate_english_grammar.js')
-    lines.append('//')
-    lines.append('// %d parts / %d chapters / %d topics / %d characters of content.'
-                 % (n_parts, n_chaps, n_topics, total_chars))
-    lines.append('// All explanations and example sentences are original text written for')
-    lines.append('// Dimenticato for Chinese-speaking learners of English.')
-    lines.append('')
-    lines.append('const ENGLISH_GRAMMAR_CONTENT = {')
-    for i, t in enumerate(topics):
-        comma = ',' if i < len(topics) - 1 else ''
-        lines.append('  %s: %s%s' % (js_string(t['slug']), js_string(t['md']), comma))
-    lines.append('};')
-    lines.append('')
-    lines.append('const ENGLISH_GRAMMAR_TREE = ' + json.dumps(tree, ensure_ascii=False, indent=2) + ';')
-    lines.append('')
-    lines.append('const ENGLISH_GRAMMAR_DATA = {')
-    lines.append('  meta: {')
-    lines.append('    title: %s,' % js_string('英语语法'))
-    lines.append('    description: %s,' % js_string(
-        '从左侧目录选择 %s 专题开始阅读，共 %d 个主题。' % (span, n_topics)))
-    lines.append('    levels: %s,' % json.dumps(LEVELS))
-    lines.append('    topicCount: %d' % n_topics)
-    lines.append('  },')
-    lines.append('  tree: ENGLISH_GRAMMAR_TREE,')
-    lines.append('  content: ENGLISH_GRAMMAR_CONTENT')
-    lines.append('};')
-    lines.append('')
-    lines.append("if (typeof module !== 'undefined' && module.exports) {")
-    lines.append('  module.exports = ENGLISH_GRAMMAR_DATA;')
-    lines.append('}')
-    lines.append(register_footer('grammar', 'en', 'ENGLISH_GRAMMAR_DATA'))
-
-    with open(out_file, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(lines))
+    header = [
+        '// data/english-grammar-data.js — 英语语法书（%s，grammar/1，docs/data-schema.md）' % span,
+        '// GENERATED FILE — do not edit by hand.',
+        '// Source:     scripts/english_grammar_src/*.md',
+        '// Regenerate: python3 scripts/build_english_grammar.py',
+        '// Validate:   node scripts/validate_english_grammar.js',
+        '//',
+        '// %d parts / %d chapters / %d topics / %d characters of content.'
+        % (n_parts, n_chaps, n_topics, total_chars),
+        '// Slugs are positional (p<N>/ch<NN>/t<NN>); the source file kebab slugs',
+        '// (p1/ch01/t01-countable-uncountable) live on in meta.aliases.',
+        '// All explanations and example sentences are original text written for',
+        '// Dimenticato for Chinese-speaking learners of English.',
+    ]
+    data = {
+        'meta': {
+            'name': '英语语法',
+            'title': '英语语法',
+            'description': '从左侧目录选择 %s 专题开始阅读，共 %d 个主题。' % (span, n_topics),
+        },
+        'tree': tree,
+        'content': {t['slug']: t['md'] for t in topics},
+    }
+    data = grammar_schema.canonicalize(data, 'en')
+    grammar_schema.write('en', data, header=header, path=out_file)
 
     lens = sorted(len(t['md']) for t in topics)
     print('wrote %s' % os.path.normpath(out_file))

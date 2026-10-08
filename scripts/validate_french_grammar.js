@@ -145,8 +145,8 @@ for (const t of topics) {
   const titleKey = `${t.chapter}::${t.title}`;
   if (seenTitles.has(titleKey)) fail(`duplicate topic title in one chapter: ${titleKey}`);
   seenTitles.add(titleKey);
-  if (!/^p[12]\/ch\d{2}\/t\d{2}-[a-z0-9-]+$/.test(t.slug)) {
-    fail(`slug does not match p<N>/ch<NN>/t<NN>-kebab: ${t.slug}`);
+  if (!/^p\d+\/ch\d{2}\/t\d{2}$/.test(t.slug)) {
+    fail(`slug does not match grammar/1 p<N>/ch<NN>/t<NN>: ${t.slug}`);
   }
   if (!LEVELS.includes(t.level)) {
     fail(`topic ${t.slug} has an invalid CEFR level: ${JSON.stringify(t.level)}`);

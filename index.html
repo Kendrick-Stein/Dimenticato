@@ -572,6 +572,32 @@
         </div>
       </section>
 
+      <!-- ============ 课程路线（course.js，任何有 files.course 的语言） ============ -->
+      <section id="courseScreen" class="screen" aria-label="课程路线">
+        <div class="container">
+          <button class="back-link" id="courseBackBtn"><span class="msr" aria-hidden="true">arrow_back</span>返回首页</button>
+          <div class="eyebrow" id="courseEyebrow">课程路线</div>
+          <h1 class="page" id="courseTitle">课程路线</h1>
+          <p class="desc" id="courseDesc">按教材单元选择课程，查看对应语法重点，并用现有词库练习核心词汇。</p>
+
+          <div class="chips" id="courseLevelChips" aria-label="选择课程级别"></div>
+          <div class="settings-card" id="courseLevelSummary"></div>
+
+          <div class="section-head-row">
+            <div>
+              <div class="sub-label" id="courseUnitsTitle">课程单元</div>
+              <span class="card-desc" id="courseUnitsHint"></span>
+            </div>
+          </div>
+          <div class="card-grid cols-2" id="courseUnitCards"></div>
+
+          <div class="panel" id="courseNotePanel" style="margin-top:16px" hidden>
+            <div class="panel-title">课程范围说明</div>
+            <div class="about-note" id="courseNote"></div>
+          </div>
+        </div>
+      </section>
+
       <!-- ============ 进度 ============ -->
       <section id="progressScreen" class="screen" aria-label="学习进度">
         <div class="wrap" id="progressView" data-view></div>
