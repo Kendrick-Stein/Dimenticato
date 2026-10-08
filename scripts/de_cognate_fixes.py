@@ -53,8 +53,10 @@ def apply(doc, fixes=None, vocab=None):
                 and not any(r['field'] == 'zh' for r in sets.get(e['word'], [])):
             e['zh'] = v['zh']
             stats['zhSynced'] += 1
-        if v and e.get('pos') == 'noun':
-            for k in ('gender', 'display'):      # re-derived genders (de_vocab_fixes)
+        # re-derived genders (de_vocab_fixes); cognates/1 wants one gender, so
+        # a genuinely double-gendered vocab noun keeps the cognate's own
+        if v and e.get('pos') == 'noun' and '/' not in (v.get('gender') or ''):
+            for k in ('gender', 'display'):
                 if e.get(k) and v.get(k) and e[k] != v[k]:
                     e[k] = v[k]
                     stats['nounSynced'] += 1
