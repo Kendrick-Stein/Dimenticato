@@ -1808,6 +1808,9 @@ def main() -> None:
     out = vocab_legacy.emit("de", vocab_legacy.from_de(ordered), builder=BUILDER)
     print(f"Generated {out} with {len(ordered)} entries "
           f"({out.stat().st_size / 1e6:.1f} MB)")
+    # Audited corrections (genders, zh/en cleanup): scripts/de_vocab_fixes/
+    import de_vocab_fixes
+    de_vocab_fixes.apply_file()
 
 
 def fill_missing_english() -> None:
@@ -1840,6 +1843,8 @@ def fill_missing_english() -> None:
 
     out = vs.rewrite_vocab("de", update)
     print(f"{out}: en filled {dict(filled)}")
+    import de_vocab_fixes
+    de_vocab_fixes.apply_file()
 
 
 if __name__ == "__main__":
