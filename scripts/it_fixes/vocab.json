@@ -3462,5 +3462,17 @@
 {"word": "sezionare", "from": {"zh": "解析"}, "to": {"zh": "分割，划分；解剖"}, "why": "verb gloss wrong (machine-translated); reviewed with the collocation verb glosses"},
 {"word": "sfogare", "from": {"zh": "垃圾"}, "to": {"zh": "发泄；排出，流出"}, "why": "verb gloss wrong (machine-translated); reviewed with the collocation verb glosses"},
 {"word": "sfollare", "from": {"zh": "流离失所"}, "to": {"zh": "疏散，散去；撤离"}, "why": "verb gloss wrong (machine-translated); reviewed with the collocation verb glosses"},
-{"word": "sforare", "from": {"zh": "要触摸"}, "to": {"zh": "超出（限额、时间）"}, "why": "verb gloss wrong (machine-translated); reviewed with the collocation verb glosses"}
+{"word": "sforare", "from": {"zh": "要触摸"}, "to": {"zh": "超出（限额、时间）"}, "why": "verb gloss wrong (machine-translated); reviewed with the collocation verb glosses"},
+{"word": "binario", "from": {"zh": "二进制轨道; 第(2)轨", "en": "binary track; Track"}, "to": {"zh": "轨道；站台；二进制的", "en": "track; platform; binary"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "integrale", "from": {"zh": "构成部分; (1) 国家", "en": "integral"}, "to": {"zh": "完整的；全部的；全麦的", "en": "integral; whole; wholemeal"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "primogenito", "from": {"zh": "长子; (1) 国家", "en": "firstborn"}, "to": {"zh": "头生的；长子的", "en": "firstborn"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "passivo", "from": {"zh": "被动; (1) 国家", "en": "passive"}, "to": {"zh": "被动的；消极的", "en": "passive"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "meticoloso", "from": {"zh": "仔细; (1) 国家", "en": "meticulous"}, "to": {"zh": "一丝不苟的；细心的", "en": "meticulous"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "diciottenne", "from": {"zh": "第 18 条; 第18(2)条", "en": "18"}, "to": {"zh": "十八岁的；十八岁的人", "en": "eighteen-year-old"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "slavo", "from": {"zh": "奴隶; (1) 国家", "en": "Slave"}, "to": {"zh": "斯拉夫的；斯拉夫人", "en": "Slavic; Slav"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "articolato", "from": {"zh": "说明; 第(2)条", "en": "articulated"}, "to": {"zh": "有关节的；条理分明的", "en": "articulated; well-structured"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "guelfo", "from": {"zh": "盖尔夫; 盖尔夫(2).", "en": "Guelph"}, "to": {"zh": "（中世纪意大利）教皇派的；归尔甫派的", "en": "Guelph"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "scioperante", "from": {"zh": "罢工者; (1) 国家", "en": "striker"}, "to": {"zh": "罢工者；罢工的", "en": "striker"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "valetudinario", "from": {"zh": "普通类; (1) 国家", "en": "valetudinary"}, "to": {"zh": "体弱多病的；病弱者", "en": "valetudinarian; sickly"}, "why": "artefact (1) 国家 / 第(2)条 (found by validate_it_quality.js)"},
+{"word": "Territorio della Capitale Australiana", "from": {"pos": "pronoun"}, "to": {"pos": "properNoun"}, "why": "place name tagged pronoun"}
 ]
