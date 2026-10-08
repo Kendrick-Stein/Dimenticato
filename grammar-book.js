@@ -1,19 +1,23 @@
 /**
- * GrammarBook — 语法书阅读器（意大利语 / 德语 / 英语 / 法语共用一块屏）
- * 数据经 LangLoader.data(lang, 'grammar') 取（data/*grammar-data.js 懒加载注入），
- * 不用 fetch()，避免 GitHub Pages 上中文文件名的问题。
+ * GrammarBook — 语法书阅读器（四门语言共用一块屏，没有按语言分支）
+ * 数据经 LangLoader.data(code, 'grammar') 取（data/*grammar-data.js 懒加载注入），
+ * 不用 fetch()，避免 GitHub Pages 上中文文件名的问题。数据格式见
+ * docs/data-schema.md 的 grammar/1：专题 slug 统一为 p<N>/ch<NN>/t<NN>，
+ * 旧 slug 记在 meta.aliases（旧 → 新），这里的 resolveSlug() 负责把旧深链接、
+ * 旧阅读位置、课程里的旧引用都解析到新专题。
  *
- * 阅读器是共享屏，所以它必须自己知道当前是哪种语言：标题、面包屑、返回按钮
- * 由 getProfile() 从 lib/languages.js 派生（数据里的 meta.title / description 优先），
- * 调用方不必再手动改 DOM。
+ * 阅读位置按语言代码存在 dimenticato_grammar_topic_<code>；地址栏同步为
+ * #/<code>/grammar/book/<slug>（lib/shell.js 的 param 路由），刷新后回到同一篇。
  */
 const GrammarBook = (() => {
   let sidebarListenerAdded = false;
   let currentSlug = null;
   let activeData = null; // currently loaded grammar data
-  let activeLang = 'italian';
+  let activeLang = window.Languages.DEFAULT; // 语言代码（'it' / 'de' / …）
 
-  // 小目录树（法语 23 篇 / 英语 5 篇）默认全部展开，避免只剩一列折叠标题看起来像坏页。
+  const POSITION_PREFIX = 'dimenticato_grammar_topic_';
+
+  // 小目录树默认全部展开，避免只剩一列折叠标题看起来像坏页。
   const AUTO_EXPAND_TOPIC_LIMIT = 48;
 
   function getLayout() {
@@ -25,21 +29,22 @@ const GrammarBook = (() => {
     return window.LangLoader ? window.LangLoader.data(lang, 'grammar') : null;
   }
 
-  /** 从「调用方传进来的数据对象」反推语言，调用方无需改代码。 */
+  /** 从「调用方传进来的数据对象」反推语言代码，调用方无需改代码。 */
   function resolveLang(data, options) {
-    const explicit = options && options.lang;
-    if (explicit && window.Languages.has(explicit)) return window.Languages.key(explicit);
+    const L = window.Languages;
+    const explicit = options && (options.lang || options.language);
+    if (explicit && L.has(explicit)) return L.code(explicit);
 
     if (data) {
-      const match = window.Languages.keys.find(lang => dataGlobalFor(lang) === data);
+      if (data.meta && L.has(data.meta.lang)) return L.code(data.meta.lang);
+      const match = L.codes.find(code => dataGlobalFor(code) === data);
       if (match) return match;
-      if (data.meta && window.Languages.has(data.meta.lang)) return window.Languages.key(data.meta.lang);
     }
 
     const bodyLang = document.body ? document.body.getAttribute('data-language') : null;
-    if (bodyLang && window.Languages.has(bodyLang)) return window.Languages.key(bodyLang);
+    if (bodyLang && L.has(bodyLang)) return L.code(bodyLang);
 
-    return 'italian';
+    return L.DEFAULT;
   }
 
   function getProfile(lang) {
@@ -63,6 +68,76 @@ const GrammarBook = (() => {
       (part.chapters || []).reduce((n, ch) => n + (ch.topics || []).length, 0), 0);
   }
 
+  // ==================== slug 解析 / 阅读位置 ====================
+
+  /**
+   * 任意形式的 slug → 当前数据里的专题 slug（找不到返回 null）。
+   * 接受新 slug、meta.aliases 里的旧 slug，以及 URL 编码过的形式。
+   */
+  function resolveSlug(slug, data) {
+    data = data || activeData;
+    if (!data || slug == null) return null;
+    const content = data.content || {};
+    const aliases = (data.meta && data.meta.aliases) || {};
+    const candidates = [String(slug)];
+    try {
+      const decoded = decodeURIComponent(String(slug));
+      if (decoded !== candidates[0]) candidates.push(decoded);
+    } catch (e) { /* 不是合法的 URI 编码，原样用 */ }
+    for (const s of candidates) {
+      if (Object.prototype.hasOwnProperty.call(content, s)) return s;
+      if (Object.prototype.hasOwnProperty.call(aliases, s) &&
+          Object.prototype.hasOwnProperty.call(content, aliases[s])) return aliases[s];
+    }
+    return null;
+  }
+
+  /** 专题在目录树里的位置：{ topic, part, chapter }。 */
+  function findTopic(slug, data) {
+    data = data || activeData;
+    const parts = (data && data.tree && data.tree.parts) || [];
+    for (const part of parts) {
+      for (const chapter of part.chapters || []) {
+        for (const topic of chapter.topics || []) {
+          if (topic.slug === slug) return { topic, part, chapter };
+        }
+      }
+    }
+    return null;
+  }
+
+  function positionKey(lang) { return POSITION_PREFIX + window.Languages.code(lang || activeLang); }
+
+  function savedSlug() {
+    try { return resolveSlug(localStorage.getItem(positionKey())); } catch (e) { return null; }
+  }
+
+  function savePosition(slug) {
+    try { localStorage.setItem(positionKey(), slug); } catch (e) { /* 隐私模式等：只是不记位置 */ }
+  }
+
+  /** 正在看语法书时把专题写进地址栏（replaceState，不新增历史条目）。 */
+  function syncRoute(slug) {
+    const router = window.DimRouter;
+    // DimRouter.href 收的是语言 key（german），activeLang 是代码（de）
+    const shell = window.Shell;
+    if (!router || !router.booted || !shell || shell.current() !== 'grammarBookScreen') return;
+    const url = router.href(window.Languages.key(activeLang), 'grammarBookScreen') + '/' + slug;
+    if (window.location.hash === url) return;
+    try { window.history.replaceState(null, '', url); } catch (e) { /* file:// */ }
+  }
+
+  /**
+   * 按任意 slug（新 / 旧 / 编码过的）打开专题；找不到时停在欢迎页并返回 false。
+   */
+  function openTopic(slug) {
+    const resolved = resolveSlug(slug);
+    const where = resolved && findTopic(resolved);
+    if (!where) return false;
+    loadTopic(resolved, where.topic.title, where.part.title, where.chapter.title);
+    return true;
+  }
+
   /**
    * Initialize or reinitialize with optional custom data.
    * Always rebuilds the nav tree AND the reading pane so switching between
@@ -72,20 +147,17 @@ const GrammarBook = (() => {
    * @param {Object} [options] - { lang } 可显式指定语言，缺省时自动识别。
    */
   function init(customData, options) {
-    // 语言解析前置：调用方可能传 options.lang（router）或 options.language
-    // （german-app），都不传时回落到 resolveLang 的推断。语法数据现在是
-    // 按模块懒加载的（lib/languages.js profile.files.grammar），缺席时先补拉。
-    const explicit = options && (options.lang || options.language);
-    const targetLang = (explicit && window.Languages.has(explicit))
-      ? window.Languages.key(explicit)
-      : resolveLang(customData, options);
+    // 语言解析前置：调用方可能传 options.lang / options.language（代码或旧 key），
+    // 都不传时回落到 resolveLang 的推断。语法数据按模块懒加载
+    // （lib/languages.js profile.files.grammar），缺席时先补拉。
+    const targetLang = resolveLang(customData, options);
 
     const data = customData || dataGlobalFor(targetLang) || null;
 
     if ((!data || !data.tree) && window.LangLoader
       && typeof window.LangLoader.ensureModule === 'function'
-      && !window.LangLoader.isModuleLoaded(targetLang, 'grammar')) {
-      window.LangLoader.ensureModule(targetLang, 'grammar')
+      && !window.LangLoader.isModuleLoaded(window.Languages.key(targetLang), 'grammar')) {
+      window.LangLoader.ensureModule(window.Languages.key(targetLang), 'grammar')  // 加载器按语言 key 记账
         .then(() => init(customData, options));
       return; // 拉到后重试；仍缺席则走下方的错误 UI
     }
@@ -121,8 +193,6 @@ const GrammarBook = (() => {
 
   /** 侧边栏标题 / 返回按钮：共享屏必须自报语言，否则用户不知道自己在读哪一本。 */
   function applyChrome() {
-    const profile = getProfile();
-
     const navTitle = document.querySelector('#grammarBookScreen .grammar-nav-title');
     if (navTitle) {
       navTitle.innerHTML = '<span class="msr" aria-hidden="true">auto_stories</span>' + escapeHtml(getTitle());
@@ -130,7 +200,7 @@ const GrammarBook = (() => {
 
     const backBtn = document.getElementById('grammarBookBackBtn');
     if (backBtn) {
-      backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回 ' + escapeHtml(profile.backLabel);
+      backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回语法';
     }
   }
 
@@ -147,13 +217,24 @@ const GrammarBook = (() => {
       ? '<p>' + partCount + ' 个分组 · ' + topicCount + ' 篇专题</p>'
       : '';
 
+    // 上次读到哪一篇（按语言代码记），给一个「继续阅读」入口
+    const resume = activeData ? savedSlug() : null;
+    const resumeAt = resume && findTopic(resume);
+    const resumeBtn = resumeAt
+      ? '<p><button type="button" class="btn grammar-resume-btn" data-grammar-resume="' + escapeHtml(resume) + '">' +
+        '<span class="msr" aria-hidden="true">history</span>继续阅读：' + escapeHtml(resumeAt.topic.title) + '</button></p>'
+      : '';
+
     body.innerHTML = `
       <div class="grammar-welcome">
         <span class="msr grammar-welcome-icon" aria-hidden="true">auto_stories</span>
         <h2>${escapeHtml(getTitle())}</h2>
         <p>${escapeHtml(getDescription())}</p>
         ${scale}
+        ${resumeBtn}
       </div>`;
+    const btn = body.querySelector('[data-grammar-resume]');
+    if (btn) btn.addEventListener('click', () => openTopic(btn.getAttribute('data-grammar-resume')));
     body.scrollTop = 0;
   }
 
@@ -249,6 +330,16 @@ const GrammarBook = (() => {
   }
 
   function loadTopic(slug, title, partTitle, chapterTitle) {
+    // 旧 slug（meta.aliases）也认；标题缺省时从目录树补
+    slug = resolveSlug(slug) || slug;
+    if (title === undefined) {
+      const where = findTopic(slug);
+      if (where) {
+        title = where.topic.title;
+        partTitle = where.part.title;
+        chapterTitle = where.chapter.title;
+      }
+    }
     currentSlug = slug;
 
     // Update breadcrumb — 共享屏，必须带上语言；同名的「分组 › 单章」只留一层
@@ -285,6 +376,8 @@ const GrammarBook = (() => {
       body.innerHTML = '<div class="grammar-error">内容未找到：' + escapeHtml(slug) + '</div>';
       return;
     }
+    savePosition(slug);
+    syncRoute(slug);
 
     // marked 按需加载（index.html CdnFallback.load）。通常语法数据加载时已一并拉好，
     // 这里兜底：还没到就先占位，到了再按同一个 slug 重渲染（期间切走了就不管）。
@@ -337,6 +430,8 @@ const GrammarBook = (() => {
   return {
     init,
     loadTopic,
+    openTopic,
+    resolveSlug: (slug, data) => resolveSlug(slug, data),
     toggleSidebar,
     getLanguage: () => activeLang,
     getCurrentSlug: () => currentSlug

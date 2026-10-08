@@ -3,6 +3,21 @@
 """
 Build data/german-grammar-data.js (GERMAN_GRAMMAR_DATA).
 
+!!! RETIRED AS THE SOURCE OF TRUTH (2026-10) !!!
+The Docusaurus corpus this script reads (deutsch-data/grammar/docs) was
+deleted on 2026-09-30, so a rebuild is impossible without a private copy and
+would silently throw away every edit made to the data file since.  The
+shipped data/german-grammar-data.js is now the source of truth: edit it in
+place and normalise it with
+
+    python3 scripts/canonicalize_grammar.py de
+
+This script is kept for provenance (the authored topic text below is the
+origin of most of the book) and refuses to run unless DOCS_DIR exists and
+--force is passed.  Its output goes through scripts/grammar_schema.py, so it
+emits grammar/1 (positional p<N>/ch<NN>/t<NN> slugs, the Chinese authoring
+slugs below kept in meta.aliases).
+
 Two content sources are merged:
 
 1. The legacy Docusaurus corpus under deutsch-data/grammar/docs/ (27 topics).
@@ -22,15 +37,9 @@ Two content sources are merged:
    clauses, relative clauses, Passiv, Konjunktiv I/II, participles, modal
    particles, negation, ...
 
-Output shape (unchanged, additive ``level`` field on tree topics):
+Output shape: grammar/1 (docs/data-schema.md).
 
-    const GERMAN_GRAMMAR_DATA = {
-      tree: { parts: [ { title, slug, chapters: [ { title, slug,
-                        topics: [ { title, slug, level } ] } ] } ] },
-      content: { '<slug>': '<markdown>' }
-    };
-
-Run:  python3 scripts/build_german_grammar.py
+Run:  python3 scripts/build_german_grammar.py --force   (needs DOCS_DIR)
 Check: node scripts/validate_german_grammar.js
 """
 
@@ -38,7 +47,7 @@ import json
 import os
 import re
 import sys
-from data_module import register_footer
+import grammar_schema
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -7012,12 +7021,7 @@ def build():
     if leftovers:
         raise SystemExit('Image references survived: %s' % leftovers[:5])
 
-    js = 'const %s = %s;\n\nif (typeof module !== \'undefined\' && module.exports) {\n  module.exports = %s;\n}\n' % (
-        GLOBAL_NAME, json.dumps(data, ensure_ascii=False, indent=2), GLOBAL_NAME)
-    js += register_footer('grammar', 'de', GLOBAL_NAME)
-
-    with open(OUT_FILE, 'w', encoding='utf-8') as fh:
-        fh.write(js)
+    grammar_schema.write('de', grammar_schema.canonicalize(data, 'de'), path=OUT_FILE)
 
     total_chars = sum(len(v) for v in content.values())
     print('parts     : %d' % len(parts))
@@ -7030,4 +7034,9 @@ def build():
 
 
 if __name__ == '__main__':
+    if '--force' not in sys.argv[1:] or not os.path.isdir(DOCS_DIR):
+        raise SystemExit(
+            'build_german_grammar.py is retired: data/german-grammar-data.js is the source of truth.\n'
+            'Edit it in place and run  python3 scripts/canonicalize_grammar.py de\n'
+            '(a rebuild needs %s and --force, and discards edits made to the data file)' % DOCS_DIR)
     build()

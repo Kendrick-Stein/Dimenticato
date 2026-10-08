@@ -53,7 +53,7 @@ ECDICT 的代码仓库声明 MIT，但**其 sqlite 数据分发包内不含 LICE
 |---|---|
 | `data/vocab/de.js` | 中文释义 = HanDeDict（CC BY-SA 3.0）/ pgh.csv（CC BY-SA 4.0）/ ECDICT 中转；英语释义、词性、性别、复数 = Wiktextract（CC BY-SA 4.0）；词频 = OpenSubtitles-2018 + Tatoeba 大小写模型 |
 | `data/german-conjugations.js` | 词形 = en.wiktionary via wiktextract/kaikki（CC BY-SA 4.0），对照 german-pos-dict / Morphy（CC BY-SA 4.0）校验；释义 = `data/vocab/de.js`；词频 = wordfreq |
-| `data/german-course-data.js` | 课程结构参照《走遍德国 / Passwort Deutsch》A1-B1 与《Mittelpunkt》B2-C1 的主题编排（仅结构，不含教材原文）；例句 = Tatoeba（CC BY 2.0 FR） |
+| `data/de-course.js` | 课程结构参照《走遍德国 / Passwort Deutsch》A1-B1 与《Mittelpunkt》B2-C1 的主题编排（仅结构，不含教材原文）；例句 = Tatoeba（CC BY 2.0 FR） |
 | `data/german-grammar-data.js` | 讲解与例句为本项目原创撰写 |
 | `data/german-cognates.js` | 由 `data/vocab/de.js` 与 `data/vocab/en.js` 派生 |
 | `data/german-collocations-data.js` | 原创搭配表与原创例句（`scripts/sources/german-rektion/`）+ Tatoeba（CC BY 2.0 FR）例句 |

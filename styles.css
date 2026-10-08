@@ -1048,7 +1048,7 @@ p.small { margin-top: 0.6rem; }
    8.4  conjugation / collocation practice
    8.5  grammar book + verb-collocation reader
    8.6  cognates
-   8.7  German course
+   8.7  Course route
    8.8  community wordbooks (browse + upload + preview)
    8.9  wordbook editor + word dialogs
    8.10 enhanced stats modal
@@ -2389,12 +2389,12 @@ h1.page {
   }
 }
 
-/* ---------- 8.7 German course ---------- */
+/* ---------- 8.7 Course route (course.js) ---------- */
 
-#germanCourseLevelChips { margin-bottom: 1rem; }
-#germanCourseLevelChips .chip { min-width: 3.2rem; font-family: var(--mono); letter-spacing: 0.06em; }
+#courseLevelChips { margin-bottom: 1rem; }
+#courseLevelChips .chip { min-width: 3.2rem; font-family: var(--mono); letter-spacing: 0.06em; }
 
-#germanCourseLevelSummary {
+#courseLevelSummary {
   margin-bottom: 2rem;
   padding: 1.3rem 1.3rem 1.4rem;
   border: 1px solid var(--line);
@@ -2402,19 +2402,19 @@ h1.page {
   border-radius: var(--radius);
   background: var(--card);
 }
-#germanCourseLevelSummary:empty { display: none; }
-#germanCourseLevelSummary .primary-btn { margin-top: 1rem; }
-#germanCourseScreen .about-body { color: var(--ink-soft); font-size: 0.93rem; line-height: 1.65; }
-#germanCourseScreen .about-note { color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
-#germanCourseLevelSummary .about-note { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.02em; }
+#courseLevelSummary:empty { display: none; }
+#courseLevelSummary .primary-btn { margin-top: 1rem; }
+#courseScreen .about-body { color: var(--ink-soft); font-size: 0.93rem; line-height: 1.65; }
+#courseScreen .about-note { color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
+#courseLevelSummary .about-note { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.02em; }
 
-#germanCourseScreen .section-head-row .card-desc { display: block; }
-#germanCourseUnitCards .card[role="button"] { cursor: pointer; }
+#courseScreen .section-head-row .card-desc { display: block; }
+#courseUnitCards .card[role="button"] { cursor: pointer; }
 @media (hover: hover) {
-  #germanCourseUnitCards .card[role="button"]:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
+  #courseUnitCards .card[role="button"]:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
 }
-#germanCourseUnitCards .card .chips { margin-top: 0.2rem; }
-#germanCourseUnitCards .card .chip { min-height: 1.8rem; padding: 0.1rem 0.55rem; font-size: 0.78rem; }
+#courseUnitCards .card .chips { margin-top: 0.2rem; }
+#courseUnitCards .card .chip { min-height: 1.8rem; padding: 0.1rem 0.55rem; font-size: 0.78rem; }
 
 /* ---------- 8.8 Community wordbooks ---------- */
 

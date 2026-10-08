@@ -3,7 +3,7 @@
  * Quality gate for the German extras datasets:
  *
  *   data/de-collocations.js            DIM_DATA.collocations.de  (collocations/1)
- *   data/german-course-data.js         GERMAN_COURSE_DATA
+ *   data/de-course.js                  GERMAN_COURSE_DATA (course/1)
  *
  * Every rule the build script claims to enforce is re-checked here from the
  * emitted files only.  Run:  node scripts/validate_german_extras.js
@@ -16,7 +16,7 @@
  *   3. a grammatical case marked on every governed preposition
  *   4. (cognates moved to scripts/validate_modules.js, schema cognates/1)
  *   5. course: grammar slugs resolve against the German grammar tree,
- *      headwords resolve against data/vocab/de.js, examples are real
+ *      words are data/vocab/de.js words, examples are real
  */
 'use strict';
 
@@ -68,7 +68,7 @@ function loadModule(file, module, code) {
 }
 
 const collocations = loadModule('de-collocations.js', 'collocations', 'de');
-const course = load('german-course-data.js', 'GERMAN_COURSE_DATA');
+const course = load('de-course.js', 'GERMAN_COURSE_DATA');
 const grammar = load('german-grammar-data.js', 'GERMAN_GRAMMAR_DATA');
 // data/vocab/de.js (schema v1), mapped onto the field names used below
 const vocabulary = loadVocab('de').entries.map(function (e) {
@@ -272,52 +272,28 @@ check(Array.isArray(collocations.meta.licences) && collocations.meta.licences.le
 // ---------------------------------------------------------------------------
 
 (function validateCourse() {
+  // course/1 (docs/data-schema.md): unit.words are exact vocab `word`s,
+  // unit.grammar is [{label, slug}], examples live under unit.x.examples.
+  // Schema-level checks (words in vocab, slugs in the tree) are repeated for
+  // every language by scripts/validate_modules.js; this gate adds the German
+  // quality bar (pool size, glosses, real Tatoeba examples).
   const CAT = 'course';
   const slugs = new Set(Object.keys(grammar.content || {}));
   check(slugs.size > 0, CAT, 'no grammar slugs found in GERMAN_GRAMMAR_DATA.content');
+  check(course.meta && course.meta.schema === 'course/1', CAT, 'meta.schema is not course/1');
 
-  const normalize = function (value) {
-    return String(value || '').normalize('NFKC').toLocaleLowerCase('de-DE').replace(/\//g, '').trim();
-  };
-  // The index has to mirror GermanCourse.buildWordIndex() in german-course.js,
-  // otherwise this gate fails headwords the app resolves perfectly well.  The
-  // renderer indexes the lemma (german / display) *and* the inflected forms the
-  // dictionary already carries (plural, principal parts), so "Frauen" finds
-  // "Frau" and "gegessen" finds "essen".  Two passes, lemmas first: an inflected
-  // form must never displace a word whose own lemma is spelled the same way.
-  const inflectedForms = function (word) {
-    const forms = [];
-    if (word.plural) forms.push(word.plural);
-    if (word.principalParts) {
-      String(word.principalParts).split(',').forEach(function (part) {
-        part.trim().split(/\s+/).forEach(function (token) {
-          // "isst, aß, hat gegessen" — the auxiliary is not a word form
-          if (token && !/^(hat|ist|haben|sein|hast|bin)$/.test(token)) forms.push(token);
-        });
-      });
-    }
-    return forms;
-  };
-  const vocabIndex = new Map();
+  const byWord = new Map();
   vocabulary.forEach(function (word) {
-    [word.german, word.display].forEach(function (value) {
-      const key = normalize(value);
-      if (key && !vocabIndex.has(key)) vocabIndex.set(key, word);
-    });
-  });
-  vocabulary.forEach(function (word) {
-    inflectedForms(word).forEach(function (value) {
-      const key = normalize(value);
-      if (key && !vocabIndex.has(key)) vocabIndex.set(key, word);
-    });
+    if (!byWord.has(word.german)) byWord.set(word.german, word);
   });
 
   let units = 0;
-  let headwords = 0;
+  let words = 0;
   let examples = 0;
   let taggedUnits = 0;
 
   (course.levels || []).forEach(function (level) {
+    check(!badText(level.zh), CAT, 'level ' + level.id + ': bad zh title');
     (level.units || []).forEach(function (unit) {
       units += 1;
       const where = 'unit ' + unit.id;
@@ -327,15 +303,10 @@ check(Array.isArray(collocations.meta.licences) && collocations.meta.licences.le
       // -- grammar tags must be links, and the links must resolve ---------
       check(Array.isArray(unit.grammar) && unit.grammar.length > 0, CAT,
         where + ': no grammar labels');
-      check(Array.isArray(unit.grammarLinks) &&
-        unit.grammarLinks.length === (unit.grammar || []).length, CAT,
-        where + ': grammarLinks does not mirror grammar');
       let resolved = 0;
-      (unit.grammarLinks || []).forEach(function (link) {
-        check(!badText(link.label), CAT, where + ': grammar link without a label');
-        check(unit.grammar.indexOf(link.label) !== -1, CAT,
-          where + ': grammarLinks label "' + link.label + '" is not in grammar');
-        if (link.slug === null) return;
+      (unit.grammar || []).forEach(function (link) {
+        check(!badText(link.label), CAT, where + ': grammar item without a label');
+        if (!link.slug) return;
         if (check(slugs.has(link.slug), CAT,
           where + ': grammar slug "' + link.slug + '" does not resolve against the grammar tree')) {
           resolved += 1;
@@ -344,46 +315,37 @@ check(Array.isArray(collocations.meta.licences) && collocations.meta.licences.le
       check(resolved > 0, CAT, where + ': not one grammar tag resolves to a topic');
       if (resolved === (unit.grammar || []).length) taggedUnits += 1;
 
-      // -- enough words for a practice session, all of them resolvable ----
-      check(Array.isArray(unit.headwords) && unit.headwords.length >= 20, CAT,
-        where + ': only ' + (unit.headwords || []).length + ' headwords (need >= 20)');
-      const localSeen = new Set();
-      (unit.headwords || []).forEach(function (headword) {
-        check(!badText(headword), CAT, where + ': bad headword ' + JSON.stringify(headword));
-        const word = vocabIndex.get(normalize(headword));
-        if (!check(!!word, CAT, where + ': headword "' + headword +
-          '" does not resolve against data/vocab/de.js')) return;
-        localSeen.add(word.german);
+      // -- enough words for a practice session, all of them vocab words ---
+      const list = Array.isArray(unit.words) ? unit.words : [];
+      check(new Set(list).size === list.length, CAT, where + ': duplicate words');
+      check(list.length >= 20, CAT, where + ': only ' + list.length + ' words (need >= 20)');
+      list.forEach(function (w) {
+        const word = byWord.get(w);
+        if (!check(!!word, CAT, where + ': word "' + w + '" is not in data/vocab/de.js')) return;
         check(!badText(word.meaning || word.chinese), CAT,
-          where + ': headword "' + headword + '" has no usable gloss');
+          where + ': word "' + w + '" has no usable gloss');
       });
-      // Two headwords may legitimately land on the same entry now that the
-      // index knows inflections ("Frau" + "Frauen"); the renderer drops the
-      // duplicate silently.  What actually matters is the size of the practice
-      // pool the learner ends up with, so assert that instead.
-      check(localSeen.size >= 20, CAT, where + ': only ' + localSeen.size +
-        ' distinct words after deduplication (need >= 20)');
-      headwords += (unit.headwords || []).length;
+      words += list.length;
 
       // -- real example sentences with real translations ------------------
-      check(Array.isArray(unit.examples) && unit.examples.length >= 1, CAT,
-        where + ': no example sentences');
-      (unit.examples || []).forEach(function (example) {
-        const problem = badText(example && example.de);
+      const ex = (unit.x && unit.x.examples) || [];
+      check(ex.length >= 1, CAT, where + ': no example sentences');
+      ex.forEach(function (example) {
+        const problem = badText(example && example.text);
         if (!check(!problem, CAT, where + ': example ' + problem)) return;
-        check(GERMAN_TEXT.test(example.de), CAT, where + ': German example contains CJK');
+        check(GERMAN_TEXT.test(example.text), CAT, where + ': German example contains CJK');
         check(!badText(example.zh) && CJK.test(example.zh || ''), CAT,
-          where + ': example translation is empty or has no CJK: ' + JSON.stringify(example.de));
+          where + ': example translation is empty or has no CJK: ' + JSON.stringify(example.text));
         check(!badText(example.source), CAT, where + ': example without a source');
       });
-      examples += (unit.examples || []).length;
+      examples += ex.length;
     });
   });
 
   check(units === 54, CAT, 'expected 54 units, found ' + units);
   check(taggedUnits === units, CAT,
     (units - taggedUnits) + ' units still have a grammar tag that resolves nowhere');
-  check(headwords >= 1500, CAT, 'only ' + headwords + ' headword slots across the course');
+  check(words >= 1500, CAT, 'only ' + words + ' word slots across the course');
   check(examples >= 100, CAT, 'only ' + examples + ' example sentences across the course');
 })();
 

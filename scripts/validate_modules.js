@@ -23,6 +23,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const { loadVocab } = require('./vocab_node');
 
 const ROOT = path.resolve(__dirname, '..');
 
@@ -548,11 +549,149 @@ function fromReport(module, fn) {
   };
 }
 
+const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+
+// ---------------------------------------------------------------------------
+// shared meta (every module)
+// ---------------------------------------------------------------------------
+
+function validateMeta(module, code, data) {
+  const errors = [];
+  const meta = data && data.meta;
+  if (!meta || typeof meta !== 'object') return ['meta missing'];
+  if (meta.schema !== module + '/1') errors.push(`meta.schema is ${JSON.stringify(meta.schema)}, expected "${module}/1"`);
+  if (meta.lang !== code) errors.push(`meta.lang is ${JSON.stringify(meta.lang)}, expected "${code}"`);
+  for (const key of ['name', 'builder']) {
+    if (typeof meta[key] !== 'string' || !meta[key]) errors.push(`meta.${key} missing`);
+  }
+  for (const key of ['sources', 'licences']) {
+    if (!Array.isArray(meta[key]) || !meta[key].length) errors.push(`meta.${key} must be a non-empty array`);
+  }
+  if (!Number.isInteger(meta.count) || meta.count < 0) errors.push('meta.count must be a non-negative integer');
+  return errors;
+}
+
+// ---------------------------------------------------------------------------
+// grammar/1
+// ---------------------------------------------------------------------------
+
+const PART_RE = /^p\d+$/;
+const CHAPTER_RE = /^p\d+\/ch\d{2}$/;
+const TOPIC_RE = /^p\d+\/ch\d{2}\/t\d{2}$/;
+
+function validateGrammar(code, data) {
+  const errors = [];
+  const meta = data.meta || {};
+  const content = data.content || {};
+  const parts = data.tree && Array.isArray(data.tree.parts) ? data.tree.parts : null;
+  if (!parts || !parts.length) return ['tree.parts missing or empty'];
+
+  const topics = new Set();
+  const used = new Set();
+  parts.forEach((part, pi) => {
+    if (!PART_RE.test(part.slug || '')) errors.push(`part slug ${JSON.stringify(part.slug)} is not p<N>`);
+    if (part.slug !== 'p' + (pi + 1)) errors.push(`part ${part.slug} is out of positional order`);
+    if (!part.title) errors.push(`part ${part.slug} has no title`);
+    (part.chapters || []).forEach((chapter) => {
+      if (!CHAPTER_RE.test(chapter.slug || '') || chapter.slug.indexOf(part.slug + '/') !== 0) {
+        errors.push(`chapter slug ${JSON.stringify(chapter.slug)} is not ${part.slug}/ch<NN>`);
+      }
+      if (!chapter.title) errors.push(`chapter ${chapter.slug} has no title`);
+      (chapter.topics || []).forEach((topic) => {
+        const slug = topic.slug || '';
+        if (!TOPIC_RE.test(slug) || slug.indexOf(chapter.slug + '/') !== 0) {
+          errors.push(`topic slug ${JSON.stringify(slug)} is not ${chapter.slug}/t<NN>`);
+        }
+        if (topics.has(slug)) errors.push(`duplicate topic slug ${slug}`);
+        topics.add(slug);
+        if (!topic.title) errors.push(`topic ${slug} has no title`);
+        if (LEVEL_ORDER.indexOf(topic.level) === -1) errors.push(`topic ${slug} has level ${JSON.stringify(topic.level)}`);
+        else used.add(topic.level);
+        if (typeof content[slug] !== 'string' || !content[slug].trim()) errors.push(`topic ${slug} has no content`);
+      });
+    });
+  });
+
+  Object.keys(content).forEach((slug) => {
+    if (!topics.has(slug)) errors.push(`content.${slug} is not in the tree`);
+  });
+  if (meta.topicCount !== topics.size) errors.push(`meta.topicCount ${meta.topicCount} != ${topics.size} topics`);
+  if (meta.count !== topics.size) errors.push(`meta.count ${meta.count} != ${topics.size} topics`);
+  const levels = Array.isArray(meta.levels) ? meta.levels : [];
+  const expected = LEVEL_ORDER.filter((l) => used.has(l));
+  if (levels.join() !== expected.join()) errors.push(`meta.levels ${JSON.stringify(levels)} != levels used ${JSON.stringify(expected)}`);
+
+  const aliases = meta.aliases || {};
+  if (typeof aliases !== 'object' || Array.isArray(aliases)) errors.push('meta.aliases must be an object');
+  Object.keys(aliases).forEach((old) => {
+    if (topics.has(old)) errors.push(`alias ${old} shadows a live topic slug`);
+    if (!topics.has(aliases[old])) errors.push(`alias ${old} -> ${aliases[old]} does not resolve`);
+  });
+  return errors;
+}
+
+// ---------------------------------------------------------------------------
+// course/1
+// ---------------------------------------------------------------------------
+
+function validateCourse(code, data, ctx) {
+  const errors = [];
+  const meta = data.meta || {};
+  for (const key of ['title', 'zh']) {
+    if (typeof meta[key] !== 'string' || !meta[key]) errors.push(`meta.${key} missing`);
+  }
+  if (!Array.isArray(data.levels) || !data.levels.length) return errors.concat('levels missing or empty');
+
+  const vocab = new Set(loadVocab(code).entries.map((e) => e.word));
+  let grammar = null;
+  if (ctx.profile.files.grammar) grammar = ctx.load(code, 'grammar') || null;
+  const topics = new Set(grammar ? Object.keys(grammar.content || {}) : []);
+
+  const unitIds = new Set();
+  const levelIds = new Set();
+  let units = 0;
+  data.levels.forEach((level) => {
+    if (!level.id || levelIds.has(level.id)) errors.push(`level id ${JSON.stringify(level.id)} missing or duplicated`);
+    levelIds.add(level.id);
+    if (!level.title) errors.push(`level ${level.id} has no title`);
+    if (!Array.isArray(level.units) || !level.units.length) {
+      errors.push(`level ${level.id} has no units`);
+      return;
+    }
+    level.units.forEach((unit) => {
+      units += 1;
+      const where = `unit ${unit.id}`;
+      if (!unit.id || unitIds.has(unit.id)) errors.push(`unit id ${JSON.stringify(unit.id)} missing or duplicated`);
+      unitIds.add(unit.id);
+      if (!Number.isInteger(unit.number)) errors.push(`${where}: number must be an integer`);
+      if (!unit.title) errors.push(`${where}: no title`);
+      if (!Array.isArray(unit.words) || !unit.words.length) errors.push(`${where}: no words`);
+      const missing = (unit.words || []).filter((w) => !vocab.has(w));
+      if (missing.length) errors.push(`${where}: ${missing.length} words not in data/vocab/${code}.js: ${missing.slice(0, 5).join(', ')}`);
+      if (new Set(unit.words || []).size !== (unit.words || []).length) errors.push(`${where}: duplicate words`);
+      if (!Array.isArray(unit.grammar)) errors.push(`${where}: grammar must be an array`);
+      (unit.grammar || []).forEach((item) => {
+        if (!item || !item.label) errors.push(`${where}: grammar item without a label`);
+        if (!item || !item.slug) return;
+        if (!grammar) errors.push(`${where}: grammar slug ${item.slug} but the language has no grammar module`);
+        else if (!topics.has(item.slug)) errors.push(`${where}: grammar slug ${item.slug} is not in the grammar tree`);
+      });
+    });
+  });
+  if (meta.count !== units) errors.push(`meta.count ${meta.count} != ${units} units`);
+  return errors;
+}
+
+/** grammar/course: shared meta contract + module rules, reported as problem lists. */
+const withMeta = (module, fn) => (lang, data, ctx) => validateMeta(module, lang, data).concat(fn(lang, data, ctx));
+
 // ===========================================================================
 // registry
 // ===========================================================================
 
 const CHECKS = {
+  grammar: fromProblems('grammar', withMeta('grammar', validateGrammar)),
+  course: fromProblems('course', withMeta('course', validateCourse)),
   conjugations: fromReport('conjugations', validateConjugations),
   collocations: fromProblems('collocations', validateCollocations),
   cognates: validateCognates,
