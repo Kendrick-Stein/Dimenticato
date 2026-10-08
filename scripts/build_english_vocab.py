@@ -472,6 +472,53 @@ def capitalised_form(word: str, info: dict, zh: str) -> str:
     return ''
 
 
+# A word that is (also) one of these is a common word and keeps its lowercase
+# spelling ("or" is not "OR" = operating room, "me" is not "ME", "ate" not "Ate").
+COMMON_POS = {'verb', 'pronoun', 'determiner', 'article', 'preposition',
+              'conjunction', 'interjection', 'numeral'}
+
+
+def acronym_expansion(word: str, zh: str) -> bool:
+    """The gloss spells the acronym out: 'dna' / 'deoxyribonucleic acid',
+    'icu' / 'intensive care unit' (letters matched in order, starting at a word)."""
+    for run in re.findall(r"[A-Za-z][A-Za-z'-]*(?:[ ,-]+[A-Za-z][A-Za-z'-]*)+", zh):
+        text = run.lower()
+        if not text.startswith(word[0]):
+            continue
+        pos = 0
+        for ch in word:
+            pos = text.find(ch, pos)
+            if pos < 0:
+                break
+            pos += 1
+        else:
+            return True
+    return False
+
+
+def recase_allowed(word: str, cap: str, info: dict, zh: str, before: list) -> bool:
+    """Guards against recasing a common lowercase word ("or" -> "OR")."""
+    case = info.get('case', {})
+    lower = case.get(word, 0)
+    if lower > sum(n for f, n in case.items() if f != word):
+        return False                    # UD writes it lowercase mid-sentence
+    if COMMON_POS & set(before):
+        return False                    # gloss gives a function / verb sense
+    ud_caps = case.get(cap, 0)
+    ud_dominant = ud_caps >= 3 and ud_caps * 2 > sum(case.values())
+    if cap.isupper():
+        if len(cap) <= 2:
+            # "US", "ME", "ER" (gloss: erbium), "SA": the corpus must prefer the
+            # capitals *and* WordNet must know the capitals as a named place /
+            # body ("UK", "DC", "NY").
+            named_caps = any(f == cap and inst for f, _p, _n, inst in info.get('wn', []))
+            return ud_caps >= 5 and ud_dominant and named_caps
+        return ud_dominant or acronym_expansion(word, zh) or bool(ACRONYM_GLOSS_RE.search(zh))
+    if len(cap) <= 3 and not NAME_GLOSS_RE.search(zh):
+        return ud_dominant              # "Ac" (gloss: 公元前), "Jr": need corpus proof
+    return True
+
+
 def refine_en(entries: list, lex: dict) -> dict:
     """Fix primary POS, fill missing POS, restore capitalisation (in place)."""
     from collections import Counter
@@ -534,22 +581,38 @@ def refine_en(entries: list, lex: dict) -> dict:
                 guess, how = 'abbreviation', 'shape'    # "sgt", "blm", "pvt": pressure, ...
             if not guess:
                 guess, how = spacy_pos(word), 'spacy'
+                if guess == 'properNoun':
+                    # spaCy calls most unknown lowercase tokens PROPN ("fuckin");
+                    # only the gloss can say it is a brand / name.
+                    brand = re.search(r'公司|品牌|集团|网站|乐队|球队|游戏|软件', zh)
+                    guess = 'properNoun' if brand else 'noun'
             if guess:
                 pos_all = [guess]
                 stats['pos-filled:' + how] += 1
         # 3. capitalisation of proper nouns and demonyms ("York", "Estonian").
         cap = capitalised_form(word, info, zh)
-        if (not cap and pos_all[:1] == ['properNoun'] and len(word) > 4
+        if (not cap and pos_all[:1] == ['properNoun'] and len(word) > 4 and info
                 and word not in [f for f, *_ in info.get('wn', [])]):
             cap = word[:1].upper() + word[1:]               # "ferrari", "mitsubishi"
         wn = info.get('wn', [])
-        named = (bool(wn) and all(inst for *_, inst in wn)) or (
-            not wn and (raw_ud.get('PROPN', 0) > total or bool(NAME_GLOSS_RE.search(zh))))
+        named = (bool(wn) and all(inst for *_, inst in wn)) or bool(NAME_GLOSS_RE.search(zh)) or (
+            not wn and raw_ud.get('PROPN', 0) > total)
         if cap and not named and pos_all[:1] not in (['abbreviation'], ['properNoun']) and (
                 cap.isupper() or len(cap) <= 3):
             cap = ''            # "tv", "ph", "rb" (gloss is not the element): keep
+        if cap and not recase_allowed(word, cap, info, zh, before):
+            cap = ''
+            stats['recase-vetoed'] += 1
         if cap:
-            if named and (not pos_all or pos_all[0] in ('noun', 'abbreviation')):
+            # A capitalised name ("Luke", "Jerry") is a proper noun, whatever
+            # sense the dictionary gloss listed first.
+            # "Jerry" (gloss: jerry-built) is a name; demonyms ("American",
+            # "Jewish") have an adjective lemma in WordNet and stay adjectives.
+            given_name = (not cap.isupper() and pos_all[:1] in (['adjective'], ['verb'], ['adverb'])
+                          and not any(f == cap and p in ('a', 's') for f, p, *_ in wn))
+            if (named or given_name) and not cap.isupper():
+                pos_all = ['properNoun'] + [p for p in pos_all if p not in ('properNoun', 'noun')]
+            elif named and (not pos_all or pos_all[0] in ('noun', 'abbreviation')):
                 pos_all = ['properNoun'] + [p for p in pos_all[1:] if p != 'noun']
             e['legacyWord'] = word
             e['word'] = cap

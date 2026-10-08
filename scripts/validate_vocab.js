@@ -256,7 +256,10 @@ const LANGS = {
     minPos: FLOORS.minPos,
     gold: [['house', 'noun'], ['go', 'verb'], ['beautiful', 'adjective'], ['is', 'verb'],
       ['the', 'article'], ['every', 'determiner'], ['good', 'adjective'], ['York', 'properNoun'],
-      ['Estonian', 'adjective'], ['china', 'noun']]
+      ['Estonian', 'adjective'], ['china', 'noun'],
+      // common words a recasing pass must leave lowercase (not OR / ME / US / Ate)
+      ['or', 'conjunction'], ['me', 'pronoun'], ['us', 'pronoun'], ['ate', 'verb'],
+      ['Luke', 'properNoun'], ['Jerry', 'properNoun']]
   },
   fr: { ...FLOORS, gold: [['maison', 'noun', 'f'], ['aller', 'verb'], ['beau', 'adjective']], check: checkFrench }
 };
