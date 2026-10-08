@@ -21,6 +21,14 @@
 
   var LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
   var LEVEL_NAMES = { A1: '入门', A2: '基础', B1: '进阶', B2: '中高级', C1: '高级', C2: '精通' };
+  var LEVEL_DESC = {
+    A1: '最常用的日常词：问候、数字、家人、吃喝。',
+    A2: '描述日常生活与简单经历所需的词。',
+    B1: '能谈工作、旅行和个人看法的核心词汇。',
+    B2: '读报、讨论抽象话题时的常用词。',
+    C1: '学术与专业场合的书面词汇。',
+    C2: '文学、习语与细微语义差别。'
+  };
   var LANGUAGE_KEY = 'dimenticato_language';
   var THEME_KEY = 'dimenticato_theme';
   var BROWSE_PAGE = 200;
@@ -422,14 +430,20 @@
 
   // ==================== 首页 ====================
 
-  function wordOfTheDay(l) {
+  function wordOfTheDay(l, offset) {
     var pool = global.Vocab.upToLevel(l, 'B1');
     if (!pool.length) pool = global.Vocab.entries(l);
     if (!pool.length) return null;
     var day = global.localDay() + l;
     var h = 0;
     for (var i = 0; i < day.length; i++) h = (h * 31 + day.charCodeAt(i)) >>> 0;
-    return pool[h % pool.length];
+    return pool[(h + (offset || 0)) % pool.length];
+  }
+
+  /** hero 统计：mono 大数字 + data-count（lib/editorial.js 进场时从 0 数上来）。 */
+  function heroStat(label, n) {
+    return '<div><dt class="stat-label">' + esc(label) + '</dt>' +
+      '<dd class="stat-num num" data-count="' + n + '">' + fmt(n) + '</dd></div>';
   }
 
   function renderHome() {
@@ -441,6 +455,7 @@
     var streak = global.StatsManager ? global.StatsManager.getStreak(l) : 0;
     var counts = global.Vocab.levelCounts(l);
     var wotd = wordOfTheDay(l);
+    var masteredPct = entries.length ? (mastered.size / entries.length * 100).toFixed(1) + '%' : '';
 
     var levelMastered = {};
     LEVELS.forEach(function (lv) { levelMastered[lv] = 0; });
@@ -448,82 +463,128 @@
 
     var html = '' +
       '<header class="hero">' +
-        '<div class="hero-copy">' +
-          '<span class="kicker">' + esc(p.en) + ' · ' + esc(p.cn) + '</span>' +
-          '<h1 class="hero-title">' + esc(p.motto) + '</h1>' +
-          '<p class="hero-lede">' + esc(p.cn) + '词库 <span class="num">' + fmt(entries.length) + '</span> 条，按 CEFR A1–C2 分级。' +
-            '选择题、拼写、浏览与打字游戏共用同一份进度，语法书与动词变位按需加载。学习记录只保存在这台设备的浏览器里。</p>' +
-          '<div class="actions">' +
-            '<button class="primary-btn" data-action="start" data-mode="quiz"><span class="msr" aria-hidden="true">play_arrow</span>开始一组练习</button>' +
-            (due ? '<button class="btn" data-action="review"><span class="msr" aria-hidden="true">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
-            '<button class="btn" data-go="vocabScreen">练习设置</button>' +
+        '<div class="hero-inner">' +
+          '<div class="hero-copy">' +
+            '<p class="kicker">' + esc(p.name) + ' · A1–C2</p>' +
+            '<h1 class="hero-title"' + langAttr(l) + '>' + esc(p.motto) + '</h1>' +
+            '<p class="hero-sub">' + esc(p.cn) + '词库 <span class="num">' + fmt(entries.length) + '</span> 条，按 CEFR A1–C2 分级。' +
+              '选择题、拼写、浏览与打字游戏共用同一份进度；学习记录只保存在这台设备的浏览器里。</p>' +
+            '<div class="hero-actions">' +
+              '<button class="btn btn-primary" data-action="start" data-mode="quiz"><span class="msr" aria-hidden="true">play_arrow</span>开始一组练习</button>' +
+              (due ? '<button class="btn btn-ghost" data-action="review"><span class="msr" aria-hidden="true">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
+              '<button class="btn btn-ghost" data-go="vocabScreen">练习设置</button>' +
+            '</div>' +
+            '<dl class="hero-stats">' +
+              heroStat('词条', entries.length) +
+              heroStat('已掌握' + (masteredPct ? ' · ' + masteredPct : ''), mastered.size) +
+              heroStat('待复习', due) +
+              heroStat('连续学习 · 天', streak) +
+            '</dl>' +
           '</div>' +
+          (wotd ? renderHeroStack(wotd, l, p) : '') +
         '</div>' +
-        (wotd ? renderWotd(wotd, l) : '') +
       '</header>' +
-      '<dl class="stat-strip">' +
-        stat('词汇量', fmt(entries.length)) +
-        stat('已掌握', fmt(mastered.size), entries.length ? (mastered.size / entries.length * 100).toFixed(1) + '%' : '') +
-        stat('待复习', fmt(due)) +
-        stat('连续学习', streak + ' 天') +
-      '</dl>' +
-      '<section class="section">' +
-        '<div class="section-head"><span class="kicker">CEFR</span><h2>按等级学习</h2>' +
-          '<p>每一级都是一份完整词表。点开即以该等级为练习范围。</p></div>' +
-        '<div class="level-grid">' + LEVELS.map(function (lv) {
+      '<section class="section" aria-labelledby="homeLevelsTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">CEFR · ' + esc(p.name) + '</p><h2 id="homeLevelsTitle">按等级学习</h2>' +
+          '<p class="section-sub">每一级都是一份完整词表。点开即以该等级为练习范围。</p></div>' +
+        '<div class="level-grid reveal-group">' + LEVELS.map(function (lv) {
           var total = counts[lv] || 0;
           var done = levelMastered[lv] || 0;
           var pct = total ? done / total * 100 : 0;
-          return '<button class="card level-card" data-action="level" data-level="' + lv + '"' + (total ? '' : ' disabled') + '>' +
+          return '<button class="card level-card reveal" data-action="level" data-level="' + lv + '"' + (total ? '' : ' disabled') + '>' +
             '<span class="level-code">' + lv + '</span>' +
-            '<span class="card-title">' + LEVEL_NAMES[lv] + '</span>' +
-            '<span class="card-foot"><span class="num">' + fmt(done) + ' / ' + fmt(total) + '</span><span class="num">' + pct.toFixed(0) + '%</span></span>' +
+            '<span class="card-label">' + LEVEL_NAMES[lv] + '</span>' +
+            '<span class="card-desc">' + LEVEL_DESC[lv] + '</span>' +
+            '<span class="card-meta"><span><span class="num">' + fmt(done) + '</span> / <span class="num">' + fmt(total) + '</span> 已掌握</span>' +
+              '<span class="num">' + pct.toFixed(0) + '%</span></span>' +
             '<span class="progress-track"><span class="progress-fill" style="width:' + pct.toFixed(1) + '%"></span></span>' +
+            '<span class="card-cta">' + (total ? '开始练习' : '暂无词条') + '</span>' +
           '</button>';
         }).join('') + '</div>' +
-      '</section>' +
-      '<section class="section">' +
-        '<div class="section-head"><span class="kicker">Moduli</span><h2>学习模块</h2></div>' +
-        '<div class="card-grid">' + moduleCards(l, 'home') + '</div>' +
-      '</section>';
+      '</div></section>' +
+      '<section class="section section-alt" aria-labelledby="homeModulesTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">Moduli</p><h2 id="homeModulesTitle">学习模块</h2>' +
+          '<p class="section-sub">词汇之外的模块按需下载，第一次打开时才加载数据。</p></div>' +
+        '<div class="card-grid module-grid reveal-group">' + moduleCards(l, 'home') + '</div>' +
+      '</div></section>' +
+      '<section class="section" aria-labelledby="homeMethodTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">Metodo</p><h2 id="homeMethodTitle">怎么用</h2></div>' +
+        '<ol class="method-steps reveal-group">' +
+          '<li class="reveal"><span class="method-num num">01</span><h3>圈定范围</h3><p>按 CEFR 等级、系统词库或自己的单词本选出要练的词。</p></li>' +
+          '<li class="reveal"><span class="method-num num">02</span><h3>做一组练习</h3><p>选择题、拼写、浏览、打字游戏任选，答题结果写进同一份进度。</p></li>' +
+          '<li class="reveal"><span class="method-num num">03</span><h3>按时复习</h3><p>间隔重复算法给每个词排期；到期的词会出现在首页的「复习到期」里。</p></li>' +
+        '</ol>' +
+      '</div></section>';
     $('homeView').innerHTML = html;
   }
 
+  /** hero 右侧：纯 CSS 的单词卡堆。后两张是装饰（aria-hidden），最前面一张是今日一词。 */
+  function renderHeroStack(wotd, l, p) {
+    var back = wordOfTheDay(l, 7);
+    var mid = wordOfTheDay(l, 13);
+    var sheet = function (cls, e, tagCls) {
+      return '<div class="sheet ' + cls + '" aria-hidden="true">' +
+        '<span class="sheet-tag' + (tagCls ? ' ' + tagCls : '') + '">' + esc(e && e.level ? e.level : p.code) + '</span>' +
+        (e ? '<span class="sheet-word"' + langAttr(l) + '>' + esc(global.Vocab.headword(e)) + '</span>' +
+             '<span class="sheet-gloss">' + esc(e.zh || '') + '</span>' : '') +
+        '<span class="' + (cls === 'sheet-back' ? 'sheet-lines' : 'sheet-grid') + '"></span>' +
+      '</div>';
+    };
+    return '<div class="hero-visual">' +
+      '<div class="card-stack" id="heroStack">' +
+        sheet('sheet-back', back !== wotd ? back : null) +
+        sheet('sheet-mid', mid !== wotd ? mid : null, 'sheet-tag-red') +
+        renderWotd(wotd, l) +
+        '<span class="stamp" aria-hidden="true">' + esc(p.name) + '<br>CEFR<br>A1 · C2</span>' +
+      '</div>' +
+    '</div>';
+  }
+
   function renderWotd(e, l) {
-    return '<aside class="wotd">' +
-      '<span class="kicker">今日一词 · <span class="num">' + esc(e.level || '') + '</span></span>' +
+    return '<aside class="sheet sheet-front wotd" aria-label="今日一词">' +
+      '<span class="sheet-tag sheet-tag-red">今日一词 · <span class="num">' + esc(e.level || '') + '</span></span>' +
+      '<span class="cover-rule" aria-hidden="true"></span>' +
       '<div class="wotd-word"><span' + langAttr(l) + '>' + esc(global.Vocab.headword(e)) + '</span>' +
         '<button class="icon-btn speaker" data-speak="' + escAttr(global.Vocab.headword(e)) + '" aria-label="朗读"><span class="msr" aria-hidden="true">volume_up</span></button></div>' +
       '<p class="wotd-gram num">' + esc(global.Vocab.grammarLine(e)) + '</p>' +
       '<p class="wotd-gloss">' + esc(e.zh) + '</p>' +
-      (e.en ? '<p class="wotd-en muted">' + esc(e.en) + '</p>' : '') +
+      (e.en ? '<p class="wotd-en">' + esc(e.en) + '</p>' : '') +
     '</aside>';
   }
 
-  /** 模块入口卡片：首页、词汇页、语法页共用一份定义，按语言档案显示/隐藏。 */
+  /** 模块入口卡片：首页、语法页共用一份定义，按语言档案显示/隐藏。
+   *  版式同等级卡：顶部粗线 · 衬线标题 · 金色 mono 标签 · 说明 · mono 计数行 · 小号幽灵按钮。 */
   function moduleCards(l, where) {
     var cards = [];
-    var card = function (action, icon, title, desc, extra) {
-      cards.push('<button class="card" data-action="' + action + '"' + (extra || '') + '>' +
-        '<span class="card-icon"><span class="msr" aria-hidden="true">' + icon + '</span></span>' +
-        '<span class="card-title">' + title + '</span><span class="card-desc">' + desc + '</span></button>');
+    var card = function (action, icon, title, label, desc, meta) {
+      cards.push('<button class="card module-card reveal" data-action="' + action + '">' +
+        '<span class="card-title">' + title + '</span>' +
+        '<span class="card-label"><span class="msr" aria-hidden="true">' + icon + '</span>' + label + '</span>' +
+        '<span class="card-desc">' + desc + '</span>' +
+        (meta ? '<span class="card-meta">' + meta + '</span>' : '') +
+        '<span class="card-cta">进入<span class="msr" aria-hidden="true">arrow_forward</span></span>' +
+      '</button>');
     };
     if (where === 'home') {
-      card('go-vocab', 'style', '词汇练习', '选择题、拼写、浏览、打字游戏，外加个人单词本。');
-      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', '按章节查阅的' + profile(l).cn + '语法全书。');
-      if (hasModule('conjugations', l)) card('conjugation', 'sync_alt', '动词变位', '查任意动词的完整变位，或按时态分课练习。');
-      if (hasModule('collocations', l)) card('collocations', 'link', '动词搭配', '动词与介词、宾语的固定搭配和例句。');
-      if (hasModule('cognates', l)) card('cognates', 'join_inner', '同源词', '和英语长得像的词，借已有词汇量抄近路。');
-      if (hasModule('course', l)) card('course', 'route', '课程路线', '按教材单元推进：每课的语法重点与核心词汇一一对应。');
-      card('go-progress', 'insights', '学习进度', '每周走势、各等级掌握度与复习计划。');
+      var total = global.Vocab.entries(l).length;
+      var mastered = Progress.systemMastered(l).size;
+      card('go-vocab', 'style', '词汇练习', 'Lessico', '选择题、拼写、浏览、打字游戏，外加个人单词本。',
+        '<span class="num">' + fmt(total) + '</span> 词条');
+      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', 'Grammatica', '按章节查阅的' + profile(l).cn + '语法全书。', '目录 · 正文 · 例句');
+      if (hasModule('conjugations', l)) card('conjugation', 'sync_alt', '动词变位', 'Coniugazione', '查任意动词的完整变位，或按时态分课练习。', '查询 · 选择题 · 填空');
+      if (hasModule('collocations', l)) card('collocations', 'link', '动词搭配', 'Collocazioni', '动词与介词、宾语的固定搭配和例句。', '浏览 · 练习');
+      if (hasModule('cognates', l)) card('cognates', 'join_inner', '同源词', 'Affini', '和英语长得像的词，借已有词汇量抄近路。', '按词形规律分组');
+      if (hasModule('course', l)) card('course', 'route', '课程路线', 'Percorso', '按教材单元推进：每课的语法重点与核心词汇一一对应。', '按单元 · 按等级');
+      card('go-progress', 'insights', '学习进度', 'Progressi', '每周走势、各等级掌握度与复习计划。',
+        '已掌握 <span class="num">' + (total ? (mastered / total * 100).toFixed(1) : '0') + '%</span>');
     } else if (where === 'grammar') {
-      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', '按章节查阅，左侧目录，右侧正文。');
-      if (hasModule('conjugations', l)) card('conjugation', 'sync_alt', '动词变位', '变位查询；按课次选时态练习选择题与填空。');
+      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', 'Grammatica', '按章节查阅，左侧目录，右侧正文。', '目录 · 正文 · 例句');
+      if (hasModule('conjugations', l)) card('conjugation', 'sync_alt', '动词变位', 'Coniugazione', '变位查询；按课次选时态练习选择题与填空。', '查询 · 选择题 · 填空');
       if (hasModule('collocations', l)) {
-        card('collocations', 'travel_explore', '动词搭配 · 浏览', '按动词查搭配与例句。');
-        card('collocation-practice', 'extension', '动词搭配 · 练习', '看例句选出正确的介词或搭配。');
+        card('collocations', 'travel_explore', '动词搭配 · 浏览', 'Collocazioni', '按动词查搭配与例句。', '按介词 · 按动词');
+        card('collocation-practice', 'extension', '动词搭配 · 练习', 'Esercizi', '看例句选出正确的介词或搭配。', '选择题 · 填空');
       }
-      if (hasModule('course', l)) card('course', 'route', '课程路线', '按教材单元查看语法重点并练习核心词汇。');
+      if (hasModule('course', l)) card('course', 'route', '课程路线', 'Percorso', '按教材单元查看语法重点并练习核心词汇。', '按单元 · 按等级');
     }
     return cards.join('');
   }
@@ -1121,7 +1182,13 @@
       var open = Array.prototype.filter.call(document.querySelectorAll('.modal'), function (m) {
         return !m.classList.contains('hidden');
       });
-      if (open.length) open[open.length - 1].classList.add('hidden');
+      if (open.length) { open[open.length - 1].classList.add('hidden'); return; }
+      // 手机菜单展开时 Esc 收起，焦点回到菜单按钮
+      if (document.body.classList.contains('nav-open')) {
+        closeNav();
+        var t = $('navToggle');
+        if (t) t.focus();
+      }
     });
 
     trapModalFocus();
