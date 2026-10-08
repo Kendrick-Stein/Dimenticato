@@ -7,6 +7,10 @@
  *   unit.grammar —— [{label, slug}]，slug 是语法书 grammar/1 slug（旧 slug 经
  *                   GrammarBook.resolveSlug 走 meta.aliases 也能解析）
  * 入口卡片由 App 渲染，路由 #/<code>/course 调 Course.open(code)。
+ *
+ * 目前只有德语（de）带课程数据（data/de-course.js）；意/法/英没有 files.course。
+ * 这几门语言不会出现课程入口：首页/语法页卡片按 Languages.hasModule('course') 过滤，
+ * 路由 #/<code>/course 在 app.js 里同样判断后回首页，open() 自己也兜一次底。
  * 屏幕 DOM 是 index.html 里静态的 <section id="courseScreen">。
  */
 (function () {
@@ -66,6 +70,11 @@
     open(lang) {
       this.init();
       const code = codeOf(lang || (window.App && window.App.lang && window.App.lang()));
+      // 没有课程数据的语言（目前除德语外都没有）：不进一个注定「未能载入」的空页
+      if (!code || !window.Languages.hasModule(code, 'course')) {
+        if (typeof window.showScreen === 'function') window.showScreen('homeScreen', { replaceRoute: true });
+        return;
+      }
       if (code !== this.code) {
         this.code = code;
         this.activeLevelId = null;
@@ -309,7 +318,7 @@
         return `
           <div class="card course-unit-card" data-course-unit="${escAttr(unit.id)}">
             <span class="card-chip"><span class="msr" aria-hidden="true">school</span></span>
-            <button type="button" class="card-title course-unit-open">${esc(this.unitLabel(unit))} · ${esc(unit.title)}</button>
+            <button type="button" class="card-title course-unit-open">${esc(this.unitLabel(unit))} · <span lang="${escAttr(this.code || '')}">${esc(unit.title)}</span></button>
             <span class="card-desc">${esc(unit.summary || '')}</span>
             ${this.renderGrammarTags(unit)}
             <span class="card-desc">${words.length} 个核心词 · 已掌握 ${masteredCount}</span>

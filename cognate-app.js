@@ -360,14 +360,20 @@
    * 只放行这两种写法本身：两边都是全等比对，不做前缀 / 包含式的宽松匹配，
    * 「答案里多打了别的东西」照旧算错。没有 display 的条目这里是恒等变换。
    */
-  function isAnswerCorrect(word, userAnswer) {
-    var typed = normalizeAnswer(userAnswer);
-    if (!typed) return false;
+  /**
+   * 'correct' | 'accent' | 'wrong'：走全站共用的 Vocab.gradeTyped（重音必须对；
+   * 只差重音返回 'accent'，不算对；德语 ae/oe/ue/ss 与 ä/ö/ü/ß 等价）。
+   * 候选写法同上：裸词形 + 带冠词的印刷写法。
+   */
+  function gradeAnswer(word, userAnswer) {
     var parts = displayPartsOf(word);
-    var head = normalizeAnswer(parts.head);
-    if (head && typed === head) return true;
-    var printed = normalizeAnswer(parts.prefix + parts.head);
-    return !!printed && typed === printed;
+    var forms = [parts.head, parts.prefix + parts.head].filter(Boolean);
+    if (window.Vocab && typeof window.Vocab.gradeTyped === 'function') {
+      return window.Vocab.gradeTyped(CognateState.lang, userAnswer, forms);
+    }
+    var typed = normalizeAnswer(userAnswer);
+    if (!typed) return 'wrong';
+    return forms.some(function (f) { return normalizeAnswer(f) === typed; }) ? 'correct' : 'wrong';
   }
 
   /** 拼写题答完一题记一次活动；StatsManager 认哪种语言标识就给哪种。 */
@@ -436,18 +442,18 @@
           '</div>' +
           '<div class="quiz-content">' +
             '<div class="quiz-prompt">' +
-              '<div class="prompt-english">English: <strong>' + escapeHtml(word.en) + '</strong></div>' +
+              '<div class="prompt-english">English: <strong lang="en">' + escapeHtml(word.en) + '</strong></div>' +
               '<div class="prompt-chinese">' + escapeHtml(word.zh) + '</div>' +
             '</div>' +
             '<input type="text" class="spelling-input" id="cognateInput" placeholder="' +
-              escapeAttribute('拼写' + profile().cn + '单词…') + '" autocomplete="off" lang="' +
+              escapeAttribute('拼写' + profile().cn + '单词…') + '" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" lang="' +
               escapeAttribute(CognateState.lang) + '">' +
           '</div>' +
           '<div class="quiz-actions browse-controls">' +
             '<button class="pill-btn" id="cognateCheckBtn">Check</button>' +
             '<button class="pill-btn" id="cognateSkipBtn">Skip</button>' +
           '</div>' +
-          '<div class="quiz-feedback hidden" id="cognateFeedback"></div>' +
+          '<div class="quiz-feedback hidden" id="cognateFeedback" role="status" aria-live="polite"></div>' +
         '</div>';
 
       document.getElementById('cognateInput').focus();
@@ -462,8 +468,8 @@
       var diff = diffOf(word);
       return '<span class="feedback-text">' + lead + '</span>' +
         '<div class="answer-comparison">' +
-          '<div><strong>' + escapeHtml(profile().name) + ':</strong> ' + diff.sourceHtml + '</div>' +
-          '<div><strong>English:</strong> ' + diff.englishHtml + '</div>' +
+          '<div><strong>' + escapeHtml(profile().name) + ':</strong> <span lang="' + escapeAttribute(CognateState.lang || '') + '">' + diff.sourceHtml + '</span></div>' +
+          '<div><strong>English:</strong> <span lang="en">' + diff.englishHtml + '</span></div>' +
         '</div>' +
         falseFriendStrip(word) +
         '<button class="primary-btn next-btn" id="cognateNextBtn">下一题 →</button>';
@@ -490,7 +496,8 @@
 
       CognateState.totalCount++;
 
-      var isCorrect = isAnswerCorrect(word, userAnswer);
+      var grade = gradeAnswer(word, userAnswer);
+      var isCorrect = grade === 'correct';
       if (isCorrect) CognateState.correctCount++;
       recordAnswer(isCorrect);
 
@@ -502,7 +509,7 @@
         if (accuracyEl) accuracyEl.innerHTML = '正确率 <b>' + this.getAccuracy() + '%</b>';
         setTimeout(function() { EnglishPromptMode.nextQuestion(); }, 1200);
       } else {
-        feedback.innerHTML = this.answerBlock(word, '✗ 错误，正确答案：');
+        feedback.innerHTML = this.answerBlock(word, grade === 'accent' ? '字母对了，重音不对。正确写法：' : '✗ 错误，正确答案：');
         feedback.classList.remove('correct');
         feedback.classList.add('incorrect');
         feedback.classList.remove('hidden');
@@ -610,8 +617,8 @@
         '</div>' +
         '<div class="session-bar"><div class="session-fill" style="width:' + pct + '%"></div></div>' +
         '<div class="contrast-card practice-card">' +
-          '<div class="contrast-row word">' + diff.sourceHtml + '</div>' +
-          '<div class="contrast-row chinese-hint"><span class="lang-label">English</span> · ' + diff.englishHtml + '</div>' +
+          '<div class="contrast-row word" lang="' + escapeAttribute(CognateState.lang || '') + '">' + diff.sourceHtml + '</div>' +
+          '<div class="contrast-row chinese-hint"><span class="lang-label">English</span> · <span lang="en">' + diff.englishHtml + '</span></div>' +
           '<div class="contrast-chinese chinese-hint">' + escapeHtml(word.zh) + '</div>' +
           '<div class="contrast-meta chips wrap">' +
             (word.pattern ? '<span class="chip pattern-tag">' + escapeHtml(patternLabel(word.pattern)) + '</span>' : '') +
@@ -751,7 +758,7 @@
         var diff = diffOf(w);
         var pct = similarityPercent(w);
         return '<div class="example-row word-line">' +
-            '<span class="wl-word">' + diff.sourceHtml + '</span>' +
+            '<span class="wl-word" lang="' + escapeAttribute(CognateState.lang || '') + '">' + diff.sourceHtml + '</span>' +
             '<span class="wl-gloss">' + diff.englishHtml + '</span>' +
             '<span class="wl-cn">' + escapeHtml(w.zh) + '</span>' +
             '<span class="wl-status">' + escapeHtml(w.falseFriend ? '假朋友' : '') + '</span>' +
@@ -840,7 +847,7 @@
         var diff = diffOf(w);
         var pct = similarityPercent(w);
         return '<div class="browse-item word-line" data-difficulty="' + escapeAttribute(w.difficulty) + '">' +
-            '<span class="browse-source wl-word">' + diff.sourceHtml + '</span>' +
+            '<span class="browse-source wl-word" lang="' + escapeAttribute(CognateState.lang || '') + '">' + diff.sourceHtml + '</span>' +
             '<span class="browse-english wl-gloss">' + diff.englishHtml + '</span>' +
             '<span class="browse-chinese wl-cn">' + escapeHtml(w.zh) + '</span>' +
             '<span class="wl-status">' + (w.falseFriend ? '<span class="chip">假朋友</span>' : '') + '</span>' +
