@@ -1,15 +1,17 @@
 /**
  * VerbCollocationPractice — 动词搭配练习模块（语言无关）
  *
- * 数据源、语言标签与例句拆分全部复用 verb-collocations.js 暴露的解析层
- * （window.VerbCollocations），所以只要某种语言的搭配数据落盘，本模块无需
- * 改动即可直接出题；没有数据时显示明确的空状态而不是弹一个 alert。
+ * 语言解析、数据读取、键标签与宽松比较全部复用 verb-collocations.js 暴露的
+ * 解析层（window.VerbCollocations，加载顺序见 lib/lang-loader.js CODE），
+ * 数据是 schema collocations/1（docs/data-schema.md）：例句恒为 { text, zh }，
+ * 选项来自 data.keys。只要某种语言的搭配数据落盘，本模块无需改动即可出题；
+ * 没有数据时显示明确的空状态而不是弹一个 alert。
  */
 const VerbCollocationPractice = (() => {
   let initialized = false;    // DOM 已缓存、事件已绑定
   let openedByEntry = false;  // 是否已经有入口显式打开过（入口一定会带上语言）
   const state = {
-    lang: 'italian',
+    lang: null,               // 语言 code
     queue: [],
     index: 0,
     correct: 0,
@@ -19,91 +21,35 @@ const VerbCollocationPractice = (() => {
   };
 
   const dom = {};
+  let autoNextTimer = null;
 
-  // ==================== 语言 / 数据解析层（调用时解析） ====================
+  // ==================== 语言 / 数据（委托给查阅器的解析层） ====================
 
-  const FALLBACK_PROFILE = { label: '意大利语', title: '意大利语动词搭配', fallbackPreps: ['a', 'di', 'da', 'con', 'per', 'in'] };
-
-  function collocations() {
-    return window.VerbCollocations || null;
-  }
-
-  function profileFor(lang) {
-    const api = collocations();
-    if (api && typeof api.profileFor === 'function') return api.profileFor(lang);
-    return FALLBACK_PROFILE;
-  }
-
-  function datasetFor(lang) {
-    const api = collocations();
-    if (api && typeof api.resolveDataset === 'function') return api.resolveDataset(lang);
-    return window.LangLoader ? window.LangLoader.data(lang, 'collocations') : null;
-  }
+  const VC = () => window.VerbCollocations;
 
   function activeDataset() {
-    return datasetFor(state.lang);
+    return VC().dataset(state.lang);
   }
 
   function hasDataset(lang) {
-    const data = datasetFor(lang);
-    return !!(data && data.verbs && Object.keys(data.verbs).length);
+    return VC().hasDataset(lang);
   }
 
-  function knownLangs() {
-    const api = collocations();
-    return (api && api.LANGUAGES) || ['italian', 'german', 'english', 'french'];
+  function labelOf(key) {
+    return VC().keyLabel(activeDataset(), key);
   }
 
-  function detectLang() {
-    const bodyLang = document.body ? document.body.getAttribute('data-language') : null;
-    return knownLangs().indexOf(bodyLang) >= 0 ? bodyLang : 'italian';
+  function keysOf(verb) {
+    return VC().keysOf(verb);
   }
 
-  /**
-   * 语言必须在【每次打开时】重新解析。本屏是四种语言共用的一块屏幕，外壳语言
-   * 在启动之后随时可能被切换；只要在启动时锁定一次（旧代码的
-   * `initialized ? state.lang : detectLang()`），意大利语入口就会永远停在
-   * 上一次使用的语言上，且切回意大利语也救不回来。
-   */
-  function resolveLang(lang) {
-    return knownLangs().indexOf(lang) >= 0 ? lang : detectLang();
+  function examplesOf(verb, key) {
+    return VC().examples(verb, key);
   }
 
-  /** prep 条目可以是 ['例句'] 也可以是 { case, examples }。 */
-  function normalizePrepEntry(entry) {
-    const api = collocations();
-    if (api && typeof api.normalizePrepEntry === 'function') return api.normalizePrepEntry(entry);
-    if (Array.isArray(entry)) return { case: null, examples: entry };
-    if (entry && Array.isArray(entry.examples)) return { case: entry.case || null, examples: entry.examples };
-    return { case: null, examples: [] };
-  }
-
-  function getExamples(data, prep) {
-    return normalizePrepEntry(data && data.prepositions ? data.prepositions[prep] : null).examples;
-  }
-
-  function prepsOf(data) {
-    return (data && (data.prepositionOrder || Object.keys(data.prepositions || {}))) || [];
-  }
-
-  function prepLabel(prep, data) {
-    const api = collocations();
-    const prepCase = normalizePrepEntry(data && data.prepositions ? data.prepositions[prep] : null).case;
-    if (api && typeof api.prepLabel === 'function') return api.prepLabel(prep, prepCase);
-    return prepCase ? `${prep} (${prepCase})` : String(prep);
-  }
-
-  /** 「外语句 + 中文释义」拼在一起的例句，切成 { target, gloss }。 */
-  function splitExample(raw) {
-    const api = collocations();
-    if (api && typeof api.splitExample === 'function') return api.splitExample(raw);
-
-    const text = String(raw == null ? '' : raw).trim();
-    const sentenceMatch = text.match(/^(.+?[.!?！？。])\s*([\u3000-\u303f\u4e00-\u9fff].*)$/);
-    if (sentenceMatch) return { target: sentenceMatch[1].trim(), gloss: sentenceMatch[2].trim() };
-    const splitIndex = text.search(/[\u4e00-\u9fff]/);
-    if (splitIndex > 0) return { target: text.slice(0, splitIndex).trim(), gloss: text.slice(splitIndex).trim() };
-    return { target: text, gloss: '' };
+  /** 可做翻译题的例句：有中文、且外语句至少两个词。 */
+  function isTranslatable(example) {
+    return !!(example && example.text && example.zh && example.text.includes(' '));
   }
 
   // ==================== 生命周期 ====================
@@ -116,8 +62,12 @@ const VerbCollocationPractice = (() => {
     bindEvents();
   }
 
+  /**
+   * 语言必须在【每次打开时】重新解析：本屏是四种语言共用的一块屏幕，外壳语言
+   * 在启动之后随时可能被切换。
+   */
   function init(lang) {
-    state.lang = resolveLang(lang);
+    state.lang = VC().resolveLang(lang);
     prepare();
     applyChrome();
     renderSummary();
@@ -186,9 +136,9 @@ const VerbCollocationPractice = (() => {
 
   /** 共享屏：标题与返回按钮必须自报语言。 */
   function applyChrome() {
-    const profile = profileFor(state.lang);
-    if (dom.title) dom.title.textContent = `${profile.label}动词搭配练习`;
-    if (dom.eyebrow) dom.eyebrow.textContent = `${profile.label} / Verb Collocations Practice`;
+    const label = VC().profile(state.lang).cn;
+    if (dom.title) dom.title.textContent = `${label}动词搭配练习`;
+    if (dom.eyebrow) dom.eyebrow.textContent = `${label} / Verb Collocations Practice`;
     if (dom.backBtn) {
       dom.backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回语法';
     }
@@ -198,28 +148,17 @@ const VerbCollocationPractice = (() => {
     return Object.entries(activeDataset()?.verbs || {});
   }
 
-  function normalizeText(text) {
-    return String(text || '')
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .trim();
-  }
-
   function getSinglePrepEntries() {
-    return getVerbEntries().filter(([, data]) => prepsOf(data).length === 1);
+    return getVerbEntries().filter(([, verb]) => keysOf(verb).length === 1);
   }
 
   function getMultiPrepEntries() {
-    return getVerbEntries().filter(([, data]) => prepsOf(data).length > 1);
+    return getVerbEntries().filter(([, verb]) => keysOf(verb).length > 1);
   }
 
   function getTranslationEntries() {
-    return getVerbEntries().filter(([, data]) => prepsOf(data).some(prep =>
-      getExamples(data, prep).some(example => {
-        const parsed = splitExample(example);
-        return parsed.target && parsed.gloss && parsed.target.includes(' ');
-      })));
+    return getVerbEntries().filter(([, verb]) => keysOf(verb).some(key =>
+      examplesOf(verb, key).some(isTranslatable)));
   }
 
   function renderSummary() {
@@ -257,7 +196,7 @@ const VerbCollocationPractice = (() => {
       </div>
       <div class="selection-summary-item">
         <span class="selection-summary-label">数据概况</span>
-        <span>${escapeHtml(profileFor(state.lang).label)} · 本次练习 ${count} 题</span>
+        <span>${escapeHtml(VC().profile(state.lang).cn)} · 本次练习 ${count} 题</span>
       </div>
     `;
   }
@@ -274,7 +213,6 @@ const VerbCollocationPractice = (() => {
 
   /** 该语言还没有搭配数据时的明确空状态（不再是点了开始才弹 alert）。 */
   function renderMissingDataset(retry) {
-    const profile = profileFor(state.lang);
     setStartEnabled(false);
     dom.quizCard?.classList.add('hidden');
     dom.setupCard?.classList.remove('hidden');
@@ -286,16 +224,16 @@ const VerbCollocationPractice = (() => {
         '<div class="vc-empty-state">' +
           '<span class="msr vc-empty-state-icon" aria-hidden="true">hourglass_empty</span>' +
           '<h2>该语言暂无动词搭配数据</h2>' +
-          '<p>' + escapeHtml(profile.title) + '词库还在建设中，练习题目暂时无法生成。' +
+          '<p>' + escapeHtml(VC().title(state.lang)) + '数据未能加载，练习题目暂时无法生成。' +
             '数据落盘后本页会自动出题，无需更新应用。</p>' +
         '</div>';
     }
 
     // 搭配数据是按模块懒加载的：第一次缺席先补拉再重渲染（重试标志防止死循环）
-    if (retry !== false && window.LangLoader && typeof window.LangLoader.ensureModule === 'function'
-      && !window.LangLoader.isModuleLoaded(state.lang, 'collocations')) {
-      const lang = state.lang;
-      window.LangLoader.ensureModule(lang, 'collocations').then(() => {
+    const lang = state.lang;
+    const pending = retry !== false ? VC().ensureDataset(lang) : null;
+    if (pending) {
+      pending.then(() => {
         if (state.lang !== lang) return;
         renderSummary();
       });
@@ -303,6 +241,8 @@ const VerbCollocationPractice = (() => {
   }
 
   function resetPracticeUI() {
+    clearTimeout(autoNextTimer);
+    autoNextTimer = null;
     state.queue = [];
     state.index = 0;
     state.correct = 0;
@@ -345,91 +285,88 @@ const VerbCollocationPractice = (() => {
       const entries = t === 'prep' ? getSinglePrepEntries()
         : t === 'contrast' ? getMultiPrepEntries()
         : getTranslationEntries();
-      entries.forEach(([slug, data]) => {
-        if (t === 'prep') questions.push(...buildPrepQuestions(slug, data));
-        if (t === 'contrast') questions.push(...buildContrastQuestions(slug, data));
-        if (t === 'translation') questions.push(...buildTranslationQuestions(slug, data));
+      entries.forEach(([word, verb]) => {
+        if (t === 'prep') questions.push(...buildPrepQuestions(word, verb));
+        if (t === 'contrast') questions.push(...buildContrastQuestions(word, verb));
+        if (t === 'translation') questions.push(...buildTranslationQuestions(word, verb));
       });
     });
 
     return shuffleArray(questions).slice(0, desiredCount);
   }
 
-  function buildPrepQuestions(slug, data) {
-    const prep = prepsOf(data)[0];
-    if (!prep) return [];
-    const display = data.display || slug;
+  function buildPrepQuestions(word, verb) {
+    const key = keysOf(verb)[0];
+    if (!key) return [];
+    const display = VC().displayOf(verb, word);
     return [{
       kind: 'prep',
-      slug,
+      word,
       verb: display,
-      prep,
+      key,
       prompt: `${display} ___`,
       hint: `请选择和动词 ${display} 搭配的介词。`,
-      options: buildPrepOptions(prep),
-      answer: prep,
-      answerLabel: prepLabel(prep, data),
+      options: buildKeyOptions(key),
+      answer: key,
+      answerLabel: labelOf(key),
     }];
   }
 
-  function buildContrastQuestions(slug, data) {
-    const preps = prepsOf(data);
-    if (preps.length < 2) return [];
-    const display = data.display || slug;
-    return preps.map(prep => {
-      const parsed = splitExample(getExamples(data, prep)[0] || '');
+  function buildContrastQuestions(word, verb) {
+    const keys = keysOf(verb);
+    if (keys.length < 2) return [];
+    const display = VC().displayOf(verb, word);
+    return keys.map(key => {
+      const first = examplesOf(verb, key)[0];
       return {
         kind: 'contrast',
-        slug,
+        word,
         verb: display,
-        prep,
+        key,
         prompt: `${display} ___`,
-        subprompt: parsed.gloss || '根据释义选择正确介词。',
-        options: shuffleArray([...preps]),
-        answer: prep,
-        answerLabel: prepLabel(prep, data),
+        subprompt: (first && first.zh) || '根据释义选择正确介词。',
+        options: shuffleArray([...keys]),
+        answer: key,
+        answerLabel: labelOf(key),
       };
     });
   }
 
   function tokenizeSentence(sentence) {
     return sentence.split(/\s+/).filter(Boolean).map(token => {
-      const match = token.match(/^([A-Za-zÀ-ÿ']+)([^A-Za-zÀ-ÿ']*)$/);
+      const match = token.match(/^([\p{L}\p{M}'’-]+)([^\p{L}\p{M}'’]*)$/u);
       const word = match ? match[1] : token;
       const punctuation = match ? match[2] : '';
       return { word, punctuation, revealed: false };
     });
   }
 
-  function buildTranslationQuestions(slug, data) {
+  function buildTranslationQuestions(word, verb) {
     const questions = [];
-    const display = data.display || slug;
-    prepsOf(data).forEach(prep => {
-      getExamples(data, prep).slice(0, 2).forEach(example => {
-        const parsed = splitExample(example);
-        if (!parsed.target || !parsed.gloss || !parsed.target.includes(' ')) return;
+    const display = VC().displayOf(verb, word);
+    keysOf(verb).forEach(key => {
+      examplesOf(verb, key).slice(0, 2).filter(isTranslatable).forEach(example => {
         questions.push({
           kind: 'translation',
-          slug,
+          word,
           verb: display,
-          prep,
-          prompt: `${display} + ${prep}`,
-          subprompt: parsed.gloss,
-          answer: parsed.target,
-          answerLabel: parsed.target,
-          tokens: tokenizeSentence(parsed.target),
+          key,
+          prompt: `${display} + ${labelOf(key)}`,
+          subprompt: example.zh,
+          answer: example.text,
+          answerLabel: example.text,
+          tokens: tokenizeSentence(example.text),
         });
       });
     });
     return questions;
   }
 
-  function buildPrepOptions(correctPrep) {
-    const all = activeDataset()?.meta?.prepositionOrder
-      || profileFor(state.lang).fallbackPreps
-      || FALLBACK_PROFILE.fallbackPreps;
-    const pool = shuffleArray(all.filter(item => item !== correctPrep)).slice(0, 3);
-    return shuffleArray([correctPrep, ...pool]);
+  /** 正确键 + 3 个干扰项，全部取自 data.keys。 */
+  function buildKeyOptions(correctKey) {
+    const all = VC().keyOrder(activeDataset());
+    const pool = shuffleArray(all.filter(item => item !== correctKey)).slice(0, 3);
+    return shuffleArray([correctKey, ...pool]);
   }
 
   function loadQuestion() {
@@ -487,7 +424,7 @@ const VerbCollocationPractice = (() => {
 
   function renderOptions(options, answer) {
     dom.options.innerHTML = options.map(option => (
-      `<button class="option" data-answer="${escapeAttribute(option)}">${escapeHtml(option)}</button>`
+      `<button class="option" data-answer="${escapeAttribute(option)}">${escapeHtml(labelOf(option))}</button>`
     )).join('');
     dom.options.querySelectorAll('.option').forEach(btn => {
       btn.addEventListener('click', () => checkChoiceAnswer(btn, answer));
@@ -520,7 +457,7 @@ const VerbCollocationPractice = (() => {
     inputs.forEach(input => {
       const index = Number(input.dataset.index);
       const expected = question.tokens[index].word;
-      const isCorrect = normalizeText(input.value) === normalizeText(expected);
+      const isCorrect = VC().looseKey(input.value) === VC().looseKey(expected);
       input.disabled = true;
       input.parentElement.classList.toggle('correct', isCorrect);
       input.parentElement.classList.toggle('incorrect', !isCorrect);
@@ -552,11 +489,14 @@ const VerbCollocationPractice = (() => {
     dom.feedback.classList.add(isCorrect ? 'correct' : 'incorrect');
     updateProgress();
     if (isCorrect) {
-      setTimeout(nextQuestion, 900);
+      // 答对自动翻页；用户抢先点了“下一题”时取消，否则会连跳两题（末题时再弹一次 0/0 汇总）
+      autoNextTimer = setTimeout(nextQuestion, 900);
     }
   }
 
   function nextQuestion() {
+    clearTimeout(autoNextTimer);
+    autoNextTimer = null;
     state.index += 1;
     loadQuestion();
   }
@@ -568,12 +508,20 @@ const VerbCollocationPractice = (() => {
     resetPracticeUI();
   }
 
-  /** 每日统计由 StatsManager 汇总；它可能尚未加载，必须在调用时守卫。 */
+  /**
+   * 每日统计由 StatsManager 汇总；它可能尚未加载，必须在调用时守卫。
+   * 新签名 recordActivity(lang, {…}) 只认 StatsManager.LANGS 里的语言标识，
+   * 所以按它的清单给 code 或旧 key。
+   */
   function recordActivity() {
     if (!state.total) return;
     try {
-      if (typeof window.StatsManager !== 'undefined' && window.StatsManager.recordActivity) {
-        window.StatsManager.recordActivity(state.lang, {
+      const stats = window.StatsManager;
+      if (stats && typeof stats.recordActivity === 'function') {
+        const lang = Array.isArray(stats.LANGS) && stats.LANGS.indexOf(state.lang) !== -1
+          ? state.lang
+          : Languages.key(state.lang);
+        stats.recordActivity(lang, {
           correct: state.correct,
           total: state.total,
           durationMs: state.startedAt ? Date.now() - state.startedAt : 0,

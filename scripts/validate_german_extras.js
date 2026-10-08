@@ -2,7 +2,7 @@
 /*
  * Quality gate for the German extras datasets:
  *
- *   data/german-collocations-data.js   window.GERMAN_COLLOCATIONS_DATA
+ *   data/de-collocations.js            DIM_DATA.collocations.de  (collocations/1)
  *   data/german-course-data.js         GERMAN_COURSE_DATA
  *
  * Every rule the build script claims to enforce is re-checked here from the
@@ -10,7 +10,8 @@
  * Exits non-zero on the first failing category (all failures are printed).
  *
  * Checks, in order:
- *   1. shape parity with the Italian datasets the renderers were written for
+ *   1. collocations: collocations/1 shape (generic contract also checked by
+ *      scripts/validate_modules.js); cognates: shape parity with Italian
  *   2. no empty / placeholder / mojibake German or Chinese text anywhere
  *   3. a grammatical case marked on every governed preposition
  *   4. (cognates moved to scripts/validate_modules.js, schema cognates/1)
@@ -56,9 +57,18 @@ function load(file, globalName) {
     { filename: file, timeout: 120000 });
 }
 
-const collocations = load('german-collocations-data.js', 'GERMAN_COLLOCATIONS_DATA');
+// DIM_DATA-registered module files (schema collocations/1)
+function loadModule(file, module, code) {
+  const src = fs.readFileSync(path.join(DATA, file), 'utf8');
+  const sandbox = { console: console };
+  sandbox.window = sandbox;
+  sandbox.globalThis = sandbox;
+  vm.runInNewContext(src, sandbox, { filename: file, timeout: 120000 });
+  return sandbox.DIM_DATA && sandbox.DIM_DATA[module] && sandbox.DIM_DATA[module][code];
+}
+
+const collocations = loadModule('de-collocations.js', 'collocations', 'de');
 const course = load('german-course-data.js', 'GERMAN_COURSE_DATA');
-const italianCollocations = load('verb-collocations-data.js', 'VERB_COLLOCATIONS_DATA');
 const grammar = load('german-grammar-data.js', 'GERMAN_GRAMMAR_DATA');
 // data/vocab/de.js (schema v1), mapped onto the field names used below
 const vocabulary = loadVocab('de').entries.map(function (e) {
@@ -123,114 +133,103 @@ function validateCollocationBlock(label, data, requireCase) {
   const CAT = 'collocations';
   if (!check(data && typeof data === 'object', CAT, label + ': not an object')) return;
 
-  // -- shape parity with the Italian dataset the renderer targets ------------
-  ['meta', 'verbs', 'prepositions'].forEach(function (key) {
+  // -- collocations/1 shape ----------------------------------------------------
+  ['meta', 'keys', 'verbs', 'index'].forEach(function (key) {
     check(Object.prototype.hasOwnProperty.call(data, key), CAT,
-      label + ': missing top-level key "' + key + '" (Italian has it)');
+      label + ': missing top-level key "' + key + '"');
   });
-  check(Array.isArray(data.meta.prepositionOrder), CAT,
-    label + ': meta.prepositionOrder must be an array');
-  check(typeof data.meta.totalVerbs === 'number' && typeof data.meta.totalExamples === 'number',
-    CAT, label + ': meta.totalVerbs / meta.totalExamples must be numbers');
+  if (!check(Array.isArray(data.keys) && data.keys.length > 0, CAT, label + ': keys[] must be a non-empty array')) return;
+  check(typeof data.meta.count === 'number' && typeof data.meta.examples === 'number',
+    CAT, label + ': meta.count / meta.examples must be numbers');
 
-  const italianVerb = italianCollocations.verbs[Object.keys(italianCollocations.verbs)[0]];
-  const italianVerbKeys = Object.keys(italianVerb).sort();
+  const keyRec = {};
+  data.keys.forEach(function (rec) {
+    check(rec && typeof rec.key === 'string' && rec.key && !keyRec[rec.key], CAT,
+      label + ': bad or duplicate key record ' + JSON.stringify(rec));
+    check(!badText(rec.label), CAT, label + ': key "' + rec.key + '" has a bad label');
+    keyRec[rec.key] = rec;
+    // -- 3. every governed preposition carries its case ----------------------
+    if (requireCase) {
+      check(/^[a-zäöüß]+(?:\/[a-zäöüß]+)?\+[ADG]$/.test(rec.key), CAT,
+        label + ': preposition key "' + rec.key + '" has no case marker');
+      check(rec.case === rec.key.slice(-1), CAT,
+        label + ': case of "' + rec.key + '" disagrees with keys[].case ' + JSON.stringify(rec.case));
+      check(rec.kind === 'preposition', CAT, label + ': key "' + rec.key + '" kind must be preposition');
+    }
+  });
 
   const verbNames = Object.keys(data.verbs);
-  check(verbNames.length === data.meta.totalVerbs, CAT,
-    label + ': meta.totalVerbs ' + data.meta.totalVerbs + ' != ' + verbNames.length);
+  check(verbNames.length === data.meta.count, CAT,
+    label + ': meta.count ' + data.meta.count + ' != ' + verbNames.length);
   check(verbNames.length > 0, CAT, label + ': no verbs');
 
   let exampleCount = 0;
-  const prepUse = {};
+  const keyUse = {};
 
   verbNames.forEach(function (name) {
     const verb = data.verbs[name];
-    italianVerbKeys.forEach(function (key) {
-      check(Object.prototype.hasOwnProperty.call(verb, key), CAT,
-        label + '/' + name + ': missing field "' + key + '" required by the renderer');
-    });
-    check(!badText(verb.display), CAT, label + '/' + name + ': bad display');
-    check(Array.isArray(verb.prepositionOrder) && verb.prepositionOrder.length > 0, CAT,
-      label + '/' + name + ': empty prepositionOrder');
+    check(verb.word === name, CAT, label + '/' + name + ': word ' + JSON.stringify(verb.word) + ' != headword');
+    check(!badText(verb.word), CAT, label + '/' + name + ': bad word');
+    if (!check(Array.isArray(verb.order) && verb.order.length > 0, CAT,
+      label + '/' + name + ': empty order')) return;
 
-    verb.prepositionOrder.forEach(function (prep) {
-      const examples = verb.prepositions[prep];
+    verb.order.forEach(function (key) {
+      check(!!keyRec[key], CAT, label + '/' + name + ': key "' + key + '" missing from keys[]');
+      const examples = verb.keys && verb.keys[key];
       if (!check(Array.isArray(examples) && examples.length > 0, CAT,
-        label + '/' + name + ': prepositions["' + prep + '"] is empty')) return;
-      prepUse[prep] = true;
+        label + '/' + name + ': keys["' + key + '"] is empty')) return;
+      (keyUse[key] = keyUse[key] || []).push(name);
 
-      // -- 3. every governed preposition carries its case ------------------
-      if (requireCase) {
-        check(/ \+[ADG]$/.test(prep), CAT,
-          label + '/' + name + ': preposition key "' + prep + '" has no case marker');
-        check(data.meta.prepositionCase && data.meta.prepositionCase[prep], CAT,
-          label + ': meta.prepositionCase has no entry for "' + prep + '"');
-        check(data.meta.prepositionBase && data.meta.prepositionBase[prep], CAT,
-          label + ': meta.prepositionBase has no entry for "' + prep + '"');
-        if (data.meta.prepositionCase && data.meta.prepositionCase[prep]) {
-          check(prep.slice(-1) === data.meta.prepositionCase[prep], CAT,
-            label + ': case of "' + prep + '" disagrees with meta.prepositionCase');
-        }
-      }
-
-      examples.forEach(function (text) {
+      examples.forEach(function (ex) {
         exampleCount += 1;
-        const problem = badText(text);
-        if (!check(!problem, CAT, label + '/' + name + '/' + prep + ': ' + problem +
-          ' example ' + JSON.stringify(text))) return;
-        // the practice screen splits "German sentence. 中文" exactly like this
-        const parts = String(text).match(/^(.+?[.!?！？。])\s*(.+)$/);
-        if (!check(parts, CAT, label + '/' + name + '/' + prep +
-          ': example is not splittable into German + Chinese: ' + JSON.stringify(text))) return;
-        const german = parts[1].trim();
-        const chinese = parts[2].trim();
-        check(german.length > 0 && GERMAN_TEXT.test(german), CAT,
-          label + '/' + name + ': German half is empty or contains CJK: ' + JSON.stringify(text));
+        const german = ex && typeof ex.text === 'string' ? ex.text.trim() : '';
+        const chinese = ex && typeof ex.zh === 'string' ? ex.zh.trim() : '';
+        const problem = badText(german);
+        if (!check(!problem, CAT, label + '/' + name + '/' + key + ': ' + problem +
+          ' example ' + JSON.stringify(ex))) return;
+        check(GERMAN_TEXT.test(german), CAT,
+          label + '/' + name + ': German text contains CJK: ' + JSON.stringify(german));
         check(chinese.length > 0 && CJK.test(chinese), CAT,
-          label + '/' + name + ': translation is empty or has no CJK: ' + JSON.stringify(text));
+          label + '/' + name + ': translation is empty or has no CJK: ' + JSON.stringify(ex));
         check(!badText(chinese), CAT,
           label + '/' + name + ': bad translation ' + JSON.stringify(chinese));
-        const base = data.meta.prepositionBase ? data.meta.prepositionBase[prep] : null;
-        if (base && label === 'GERMAN_COLLOCATIONS_DATA') {
-          const stem = base.split('/')[0];
+        check(Number.isInteger(ex.src) && ex.src >= 0 && ex.src < (data.meta.sources || []).length,
+          CAT, label + '/' + name + ': example src does not index meta.sources ' + JSON.stringify(ex));
+        if (requireCase) {
+          const stem = key.replace(/\+[ADG]$/, '').split('/')[0];
           const forms = [stem].concat(CONTRACTIONS[stem] || []);
           const rx = new RegExp('(^|[^A-Za-zÄÖÜäöüß])(' + forms.join('|') +
             ')($|[^A-Za-zÄÖÜäöüß])', 'i');
           const pronominal = new RegExp('(da|wo)r?' + stem, 'i');
           check(rx.test(german) || pronominal.test(german), CAT,
-            label + '/' + name + ': example for "' + prep + '" does not contain the preposition: ' +
+            label + '/' + name + ': example for "' + key + '" does not contain the preposition: ' +
             JSON.stringify(german));
         }
       });
     });
 
-    Object.keys(verb.prepositions).forEach(function (prep) {
-      check(verb.prepositionOrder.indexOf(prep) !== -1, CAT,
-        label + '/' + name + ': "' + prep + '" missing from prepositionOrder');
+    Object.keys(verb.keys || {}).forEach(function (key) {
+      check(verb.order.indexOf(key) !== -1, CAT,
+        label + '/' + name + ': "' + key + '" missing from order');
     });
   });
 
-  check(exampleCount === data.meta.totalExamples, CAT,
-    label + ': meta.totalExamples ' + data.meta.totalExamples + ' != ' + exampleCount);
+  check(exampleCount === data.meta.examples, CAT,
+    label + ': meta.examples ' + data.meta.examples + ' != ' + exampleCount);
 
-  data.meta.prepositionOrder.forEach(function (prep) {
-    check(Array.isArray(data.prepositions[prep]) && data.prepositions[prep].length > 0, CAT,
-      label + ': prepositions index missing "' + prep + '"');
-    (data.prepositions[prep] || []).forEach(function (name) {
-      check(!!data.verbs[name], CAT,
-        label + ': prepositions["' + prep + '"] points at unknown verb "' + name + '"');
-    });
+  // index is exactly the inverse of verbs[].order
+  Object.keys(keyUse).forEach(function (key) {
+    check(JSON.stringify(data.index[key] || []) === JSON.stringify(keyUse[key]), CAT,
+      label + ': index["' + key + '"] is not the inverse of verbs[].order');
   });
-  Object.keys(prepUse).forEach(function (prep) {
-    check(data.meta.prepositionOrder.indexOf(prep) !== -1, CAT,
-      label + ': "' + prep + '" used by a verb but absent from meta.prepositionOrder');
+  Object.keys(data.index).forEach(function (key) {
+    check(!!keyUse[key], CAT, label + ': index["' + key + '"] names a key no verb uses');
   });
 
   return { verbs: verbNames.length, examples: exampleCount };
 }
 
-const collocStats = validateCollocationBlock('GERMAN_COLLOCATIONS_DATA', collocations, true);
+const collocStats = validateCollocationBlock('collocations.de', collocations, true);
 // coverage floor: the authored layer (scripts/sources/german-rektion) brought the
 // dataset to Italian-style breadth; a build that silently drops the source dir
 // would fall back to ~350 verbs, so lock the floor in
@@ -240,26 +239,33 @@ if (collocStats) {
   check(collocStats.examples >= 2500, 'collocations',
     'only ' + collocStats.examples + ' Rektion examples (floor 2500)');
 }
-// authored example sentences must be tagged as such in the structured entries
+// structured senses (x.senses) index into the key's example list
 Object.keys(collocations.verbs).forEach(function (name) {
-  (collocations.verbs[name].entries || []).forEach(function (e) {
-    (e.examples || []).forEach(function (x) {
-      check(x && (x.source === 'Dimenticato (authored)' || x.source === 'Tatoeba CC BY 2.0 FR'),
-        'collocations', name + ': example without a known source ' + JSON.stringify(x));
+  const verb = collocations.verbs[name];
+  const senses = (verb.x && verb.x.senses) || {};
+  Object.keys(senses).forEach(function (key) {
+    const n = ((verb.keys || {})[key] || []).length;
+    (senses[key] || []).forEach(function (sense) {
+      check(sense && CJK.test(sense.zh || ''), 'collocations', name + '/' + key + ': sense without a Chinese gloss');
+      (sense && sense.examples || []).forEach(function (i) {
+        check(Number.isInteger(i) && i >= 0 && i < n, 'collocations',
+          name + '/' + key + ': sense example index ' + i + ' out of range');
+      });
     });
   });
 });
-// the Funktionsverbgefuege block keys "prepositions" by light verb, not by
+// the Funktionsverbgefuege block (x.nounVerb) keys by light verb, not by
 // preposition, so the case rule does not apply to it
-const nounVerbStats = collocations.nounVerb
-  ? validateCollocationBlock('GERMAN_COLLOCATIONS_DATA.nounVerb', collocations.nounVerb, false)
+const nounVerb = collocations.x && collocations.x.nounVerb;
+const nounVerbStats = nounVerb
+  ? validateCollocationBlock('collocations.de.x.nounVerb',
+    Object.assign({}, nounVerb, { meta: Object.assign({ sources: collocations.meta.sources }, nounVerb.meta) }), false)
   : null;
-check(!!collocations.nounVerb, 'collocations',
-  'nounVerb (Funktionsverbgefüge) block is missing');
-check(collocations.meta.language === 'de', 'collocations',
-  'meta.language should be "de"');
-check(Array.isArray(collocations.meta.licenses) && collocations.meta.licenses.length > 0,
-  'collocations', 'meta.licenses must list the corpus licences');
+check(!!nounVerb, 'collocations', 'x.nounVerb (Funktionsverbgefüge) block is missing');
+check(collocations.meta.schema === 'collocations/1', 'collocations', 'meta.schema should be "collocations/1"');
+check(collocations.meta.lang === 'de', 'collocations', 'meta.lang should be "de"');
+check(Array.isArray(collocations.meta.licences) && collocations.meta.licences.length > 0,
+  'collocations', 'meta.licences must list the corpus licences');
 
 // ---------------------------------------------------------------------------
 // 5.  course
