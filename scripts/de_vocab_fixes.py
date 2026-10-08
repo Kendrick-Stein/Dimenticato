@@ -295,6 +295,11 @@ SENSES_MAX = 4
 EXPLAIN = re.compile(r'(?:usually|especially|often|chiefly|mostly|e\.g\.|i\.e\.|which|that|who|where|in |of |as |any |more |and |or |but )')
 
 
+# a definition sentence rather than a gloss ("Used to indicate that something
+# exists. Usually translated …")
+USAGE_NOTE = re.compile(r'^(?:Used|Usually|Often|Indicates|Expresses|Denotes)\b|\.\s+[A-Z]|\.$')
+
+
 def _strip_parens(s):
     prev = None
     while prev != s:
@@ -317,16 +322,20 @@ def condense_en(en):
             # stop at the first explanatory clause
             acc = ''
             for part in y.split(', '):
-                if acc and (len(part.split()) > 4 or EXPLAIN.match(part)
+                if acc and (len(part.split()) > 4 or EXPLAIN.match(part.lower())
                             or len(acc) + len(part) + 2 > SENSE_MAX):
                     break
                 acc = f'{acc}, {part}' if acc else part
             y = acc
-        if len(y) > SENSE_MAX or len(y) < 2 or re.search(r'\b(?:the|a|an|of|in|to|and|or)$', y):
+        if len(y) > SENSE_MAX or len(y) < 2 or re.search(r'\b(?:the|a|an|of|in|to|and|or)$', y) \
+                or USAGE_NOTE.search(y):
             continue                    # a usage note or a clipped clause, not a gloss
-        if y.lower() not in seen:
-            seen.add(y.lower())
-            short.append(y)
+        if y.lower() in seen:
+            continue
+        if short and len('; '.join(short + [y])) > EN_MAX:
+            break                       # whole gloss stays within EN_MAX
+        seen.add(y.lower())
+        short.append(y)
         if len(short) == SENSES_MAX:
             break
     return '; '.join(short) if short else out
