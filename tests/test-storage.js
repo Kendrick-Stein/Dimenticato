@@ -462,6 +462,40 @@ group('LegacyMigration.run 按 entry.legacyWord 迁移改了拼写的词头（yo
   assertEqual(again.changed, 0, '幂等');
 });
 
+group('moduleKeyLanguage 只认已知模块名', function () {
+  assertEqual(LegacyMigration.moduleKeyLanguage('dimenticato_grammar_topic_fr'), 'fr', '语法书阅读位置');
+  assertEqual(LegacyMigration.moduleKeyLanguage('dimenticato_course_level_de'), 'de', '课程等级');
+  assertEqual(LegacyMigration.moduleKeyLanguage('dimenticato_cognate_progress_german'), 'de', '旧语言 key 后缀');
+  assertEqual(LegacyMigration.moduleKeyLanguage('dimenticato_some_other_thing_de'), null, '未知模块名不再按后缀归到德语');
+  assertEqual(LegacyMigration.moduleKeyLanguage('dimenticato_banner_seen_it'), null, '未知 _it 后缀不归到意大利语');
+  assertEqual(LegacyMigration.moduleKeyLanguage('dimenticato_german_some_future_module'), 'de', '旧语言 key 前缀仍归该语言');
+});
+
+group('LegacyMigration.run 每门语言只在首次加载时给存储拍快照', function () {
+  ls.clear();
+  ls.setItem('dimenticato_storage_version', '3');
+  ls.setItem('dimenticato_de_mastered', JSON.stringify(['Haus']));
+  LegacyMigration._keysMigrated = {};
+  const original = DimStorage.snapshot;
+  let snapshots = 0;
+  DimStorage.snapshot = function () { snapshots++; return original.apply(this, arguments); };
+  try {
+    LegacyMigration.run('de');
+    assertEqual(snapshots, 1, '首次加载德语：跑一次改名');
+    LegacyMigration.run('german');
+    LegacyMigration.run('de');
+    assertEqual(snapshots, 1, '再次加载德语：没有旧 key 就不再拍快照');
+    // 别的标签页 / 导入写进来一个旧布局 key：照样迁移
+    ls.setItem('dimenticato_german_mastered', JSON.stringify(['de-00002']));
+    LegacyMigration.run('de');
+    assertEqual(snapshots, 2, '冒出旧布局 key 时重跑');
+    assertEqual(ls.getItem('dimenticato_german_mastered'), null, '旧 key 被并入并删除');
+    assert(read('dimenticato_de_mastered').indexOf('Buch') !== -1, '并入后改写成词形');
+  } finally {
+    DimStorage.snapshot = original;
+  }
+});
+
 // ===== 汇总 =====
 ls.clear();
 const summary = passed + ' passed, ' + failed + ' failed';
