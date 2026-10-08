@@ -2,15 +2,16 @@
  * Cognate Extractor Script
  * 从 data/vocab/it.js（schema v1）提取与英语相似的 cognate 单词
  *
- * 运行: node scripts/cognate_extractor.js [输出路径]
- * 输出: data/cognates.js（默认）
+ * 运行: node scripts/cognate_extractor.js <输出路径>   （写回 data/it-cognates.js 需要 --force）
+ * 输出: data/it-cognates.js（默认），schema cognates/1，经 scripts/canonical_cognates.py 写出
  *
- * 注意：data/cognates.js 生成后经过多轮人工校订（见其文件头），重跑会覆盖这些校订；
+ * 注意：data/it-cognates.js 生成后经过多轮人工校订（见其文件头），重跑会覆盖这些校订；
  * 需要对照时请把输出写到别处。rank 是 v1 的稠密频率名次（1…N）。
  */
 
 const fs = require('fs');
 const path = require('path');
+const { spawnSync } = require('child_process');
 const { loadVocab } = require('./vocab_node');
 
 const rootDir = path.join(__dirname, '..');
@@ -188,17 +189,30 @@ Object.entries(stats.byPattern)
     console.log(`  ${pattern}: ${count}`);
   });
 
-// === 生成 cognates.js ===
+// === 生成 it-cognates.js（schema cognates/1，经 scripts/canonical_cognates.py 落盘） ===
 
-const jsContent = `// Cognate Vocabulary Data
-// Italian-English similar words for efficient vocabulary transfer
-// Total entries: ${cognates.length}
-// Generated on ${new Date().toISOString().split('T')[0]}
-// Structure: {italian, english, chinese, patternType, similarityScore, difficulty, rank}
+const header = `// Italian <-> English cognates for Dimenticato — schema cognates/1 (docs/data-schema.md).
+// Extracted from data/vocab/it.js by scripts/cognate_extractor.js on ${new Date().toISOString().split('T')[0]}.
+// Entry: {word, pos, gender, rank, en, zh, pattern, similarity (0…1), difficulty (1/2/3)}`;
 
-const COGNATE_DATA = ${JSON.stringify(cognates, null, 2)};
-`;
-
-const outputPath = process.argv[2] ? path.resolve(process.argv[2]) : path.join(rootDir, 'data', 'cognates.js');
-fs.writeFileSync(outputPath, jsContent, 'utf8');
-console.log(`\n✅ 已保存到: ${outputPath}`);
+const defaultOutput = path.join(rootDir, 'data', 'it-cognates.js');
+const outputPath = process.argv[2] ? path.resolve(process.argv[2]) : defaultOutput;
+// data/it-cognates.js 是人工校订后的产物（scripts/it_fixes/cognates.json 等），重跑会覆盖校订
+if (outputPath === defaultOutput && !process.argv.includes('--force')) {
+  console.error('refusing to overwrite data/it-cognates.js (hand-revised). Pass an output path, or --force.');
+  process.exit(1);
+}
+const job = JSON.stringify({
+  rows: cognates,
+  builder: 'scripts/cognate_extractor.js',
+  sources: ['data/vocab/it.js via scripts/cognate_extractor.js'],
+  header,
+});
+const res = spawnSync('python3', [path.join(__dirname, 'canonical_cognates.py'), '--emit', 'it', '--out', outputPath],
+  { input: job, encoding: 'utf8', maxBuffer: 1 << 28 });
+if (res.status !== 0) {
+  process.stderr.write(res.stderr || String(res.error));
+  process.exit(1);
+}
+process.stdout.write(res.stdout);
+console.log(`\n已保存到: ${outputPath}`);

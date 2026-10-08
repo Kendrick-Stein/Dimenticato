@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
   <title>页面不存在 · Dimenticato</title>
-  <meta name="theme-color" content="#4a7a5e">
+  <meta name="theme-color" content="#f6f2e8">
+  <!-- 内联 favicon：本页可能在任意目录深度被返回，相对路径的 favicon.svg 会找不到 -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231e332a'/%3E%3Cpath d='M8.5 9.5A2 2 0 0 1 10.5 7.5h11a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-13Z' fill='none' stroke='%23f6f2e8' stroke-width='1.8'/%3E%3Cpath d='M12 12h8M12 15.5h8' fill='none' stroke='%23f6f2e8' stroke-width='1.8' stroke-linecap='round'/%3E%3Cpath d='M12 19h4.5' fill='none' stroke='%23e0867c' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
   <!--
     GitHub Pages 对未知路径返回这个文件。
     Dimenticato 是 hash 路由的单页应用（#/<语言>/<板块>），正常深链接不会走到这里；
@@ -15,6 +17,7 @@
     独立错误页需要在任何目录深度下都能自己渲染。
   -->
   <style>
+    /* 配色与 styles.css 的 :root / [data-theme="dark"] 一致（纸色 + 墨绿） */
     :root { color-scheme: light dark; }
     body {
       margin: 0;
@@ -22,28 +25,33 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #faf8f3;
-      color: #2f2c26;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+      background: #f6f2e8;
+      color: #1e332a;
+      font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
                    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       line-height: 1.7;
     }
     .box { max-width: 30rem; padding: 2.5rem 1.5rem; text-align: center; }
-    h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 .5rem; }
-    p { color: #6f6a5f; margin: 0 0 1.5rem; }
+    h1 {
+      font-family: "Fraunces", "Noto Serif SC", Georgia, "Songti SC", serif;
+      font-size: 1.6rem; font-weight: 600; margin: 0 0 .5rem;
+    }
+    p { color: #5a665d; margin: 0 0 1.5rem; }
     a {
       display: inline-block;
       padding: .65rem 1.4rem;
-      border-radius: .6rem;
-      background: #4a7a5e;
-      color: #fff;
+      border-radius: 3px;
+      background: #1e332a;
+      color: #f6f2e8;
       text-decoration: none;
       font-weight: 500;
     }
+    a:focus-visible { outline: 2px solid #8e2f2b; outline-offset: 3px; }
     @media (prefers-color-scheme: dark) {
-      body { background: #1c1e1c; color: #e6e3da; }
-      p { color: #9c988c; }
-      a { background: #83b191; color: #14231a; }
+      body { background: #14201a; color: #ece6d6; }
+      p { color: #979786; }
+      a { background: #ece6d6; color: #14201a; }
+      a:focus-visible { outline-color: #e0867c; }
     }
   </style>
 </head>

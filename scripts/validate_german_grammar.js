@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * Validator for data/german-grammar-data.js (GERMAN_GRAMMAR_DATA).
+ * Validator for data/de-grammar.js (GERMAN_GRAMMAR_DATA).
  *
  * Hard assertions (exit 1 on any failure):
  *   1. schema      - { tree: { parts: [ { title, slug, chapters: [ { title,
@@ -32,7 +32,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
-const DATA_FILE = path.join(ROOT, 'data', 'german-grammar-data.js');
+const DATA_FILE = path.join(ROOT, 'data', 'de-grammar.js');
 const IMG_DIR = path.join(ROOT, 'data', 'grammar_content', 'de-img');
 const GLOBAL_NAME = 'GERMAN_GRAMMAR_DATA';
 

@@ -195,6 +195,30 @@ KNOWN ISSUE 行是已确认、由其它工作流修复的缺陷，修好后应�
       assertEqual(dueWords([fresh]).length, 0, '从没复习过的新词不算待复习');
     });
 
+    group('forget：存储被改写后不再用旧缓存', function () {
+      var w = { word: 'sr-forget' };
+      SR.review('italian', w, 5);
+      var key = DimStorage.srsKey('italian');
+      // 模拟 LegacyMigration.run 在缓存底下改写了存储
+      var rewritten = JSON.parse(localStorage.getItem(key));
+      rewritten['sr-migrated'] = SR.newSRData();
+      localStorage.setItem(key, JSON.stringify(rewritten));
+      SR.forget('it');
+      SR.review('italian', { word: 'sr-after' }, 4);
+      var stored = JSON.parse(localStorage.getItem(key));
+      assert(!!stored['sr-migrated'], 'forget 后下一次作答不会盖掉迁移写入的条目');
+      assert(!!stored['sr-forget'] && !!stored['sr-after'], '原有和新增的条目都在');
+      // 别的标签页改写：storage 事件
+      rewritten = JSON.parse(localStorage.getItem(key));
+      rewritten['sr-other-tab'] = SR.newSRData();
+      localStorage.setItem(key, JSON.stringify(rewritten));
+      window.dispatchEvent({ type: 'storage', key: key });
+      SR.review('italian', { word: 'sr-after-2' }, 4);
+      stored = JSON.parse(localStorage.getItem(key));
+      assert(!!stored['sr-other-tab'], 'storage 事件让缓存失效，别的标签页写的条目保留');
+      assert(typeof StatsManager.updateDuration === 'undefined', '无调用方的 updateDuration 已删除');
+    });
+
     group('convertCorrectToQuality（对齐发布实现）', function () {
       assertEqual(SR.convertCorrectToQuality(true, 1000), 5, '3 秒内答对 = 质量 5');
       assertEqual(SR.convertCorrectToQuality(true, 5000), 4, '较慢答对 = 质量 4');

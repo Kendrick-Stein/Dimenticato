@@ -34,14 +34,15 @@ git push origin main
 | --- | --- |
 | `.nojekyll` | **必须存在。** 关掉 GitHub Pages 默认的 Jekyll 处理 |
 | `404.html` | 未知路径的兜底页，会把地址翻译成 hash 路由后跳回应用 |
-| `index.html` | 应用本体，所有屏幕都在这一个文件里 |
+| `index.html` | 应用本体：所有屏幕的骨架、引导脚本与 `CdnFallback` 都在这一个文件里；其余代码和数据由 `lib/lang-loader.js` 动态注入 |
 
 ### 为什么必须有 `.nojekyll`
 
 GitHub Pages 默认用 Jekyll 处理整个站点，Jekyll 会**直接丢弃**以下划线开头的目录和文件
 （`_data/`、`_config` 之类），并且会尝试解析 Markdown 与 Liquid 模板（`{{ }}`、`{% %}`）。
-本项目的 `data/` 目录里既有 `.js` 也有 `.md`（语法书原文），一旦被 Jekyll 处理，
-Markdown 会被渲染成 HTML，语法书就会加载到一堆 `<p>` 标签而不是原文。
+本项目的数据目前都是 `data/**/*.js`（语法书的 Markdown 以字符串形式内嵌在
+`data/<code>-grammar.js` 里），站点本身不依赖任何 `.md` 文件；`.nojekyll` 让 Pages 原样
+发布所有文件，不再经过 Jekyll 的过滤与渲染，以后无论加什么文件名都不会被悄悄吃掉或改写。
 
 `.nojekyll` 是一个**空文件**，放在仓库根目录即可，它的存在本身就是开关。
 注意：`.nojekyll` 以点开头，`git add .` 有时会漏掉它，第一次请显式确认：
@@ -84,41 +85,47 @@ GitHub Pages 对静态资源返回的是 `Cache-Control: max-age=600`（10 分�
 
 ## 5. 首屏与体积
 
-站点会同步下载约 **35 MB** 的 JavaScript（未压缩体积；实际传输经 gzip 后约 31 MB），
-其中绝大部分是词库和变位表：
+数据按语言、按模块两级懒加载（`lib/lang-loader.js`）：
 
-| 文件 | 体积 |
-| --- | --- |
-| `data/conjugations-all-tenses.js` | 7.2 MB |
-| `data/vocab/de.js` | 6.3 MB |
-| `data/vocab/fr.js` | 4.6 MB |
-| `data/vocab/it.js` | 4.1 MB |
-| `data/vocab/en.js` | 3.8 MB |
-| `data/english-conjugations.js` | 3.7 MB |
+- **首屏**只下载「共享代码 + 当前语言的词库」：共享代码 22 个文件约 0.5 MB，
+  词库一门 3.9–6.3 MB（未压缩体积）。其他语言的词库只有切过去时才下载；
+- **模块数据**（变位、语法、搭配、同源词、课程）在第一次打开对应模块时才下载，
+  其中最大的是变位表。
 
-所有 `<script src>` 都带 `defer`：HTML 解析不再被脚本阻塞，加载动画能立刻画出来，
-`defer` 之间严格保持文档顺序，依赖链和以前完全一致。
+| 文件 | 体积 | 何时下载 |
+| --- | --- | --- |
+| `data/vocab/de.js` | 6.3 MB | 进入德语 |
+| `data/vocab/fr.js` | 4.6 MB | 进入法语 |
+| `data/vocab/it.js` | 4.1 MB | 进入意大利语 |
+| `data/vocab/en.js` | 3.9 MB | 进入英语 |
+| `data/en-conjugations.js` | 4.5 MB | 打开英语动词变位 / 打字游戏变位模式 |
+| `data/it-conjugations.js` | 4.3 MB | 同上（意大利语） |
+| `data/fr-conjugations.js` | 4.3 MB | 同上（法语） |
+| `data/de-conjugations.js` | 3.5 MB | 同上（德语） |
 
-**尚未做**按语言拆包 / 懒加载 —— 目前打开意大利语也会下载德语、英语、法语的全部词库。
-这需要改各语言模块自身的加载方式，属于下一轮工作。
+注入的脚本按顺序执行（`script.async = false`），依赖链与写在 `lib/lang-loader.js`
+`CODE` 里的顺序一致。`index.html` 里只有 `lib/languages.js`、`lib/lang-loader.js`、
+`lib/boot.js` 三个静态 `<script defer>`，HTML 解析不会被数据阻塞，加载动画能立刻画出来。
 
-对首次访问的用户来说，在慢网络下首屏之后仍会有可感知的等待。加载动画（`#loading`）
-会一直显示进度文案，直到词库就绪。
+在慢网络下，首次进入一门语言或第一次打开变位模块仍会有可感知的等待；加载动画
+（`#loading`）会显示进度文案，直到数据就绪。
 
 ---
 
 ## 6. 第三方 CDN
 
-三个库来自 jsDelivr，全部锁定版本并带 SRI：
+三个库来自 jsDelivr，全部锁定版本并带 SRI。页面里**没有**它们的 `<script>` 标签：
+`index.html` 里的 `window.CdnFallback.load(name)` 在功能第一次用到时才注入，首屏不下载任何 CDN 脚本。
 
 | 库 | 用途 | 挂掉时的表现 |
 | --- | --- | --- |
-| `chart.js@4.4.0` | 统计面板的图表 | 图表位置显示“图表库未能加载”，数据与其它功能不受影响 |
-| `marked@9.1.6` | 语法书 Markdown 渲染 | 语法书退化成纯文本（`<pre>`），仍可阅读 |
-| `@supabase/supabase-js@2.39.0` | 社区词本 | 社区词本进入不可用状态，本地词本不受影响 |
+| `chart.js@4.4.0` | 进度页的图表（进入进度页时加载） | 图表位置显示“图表库未能加载”，数据与其它功能不受影响 |
+| `marked@9.1.6` | 语法书 Markdown 渲染（打开语法书时加载） | 语法书退化成纯文本（`<pre>`），仍可阅读 |
+| `@supabase/supabase-js@2.39.0` | 社区词本（第一次连接社区词书时加载） | 社区词本进入不可用状态，本地词本不受影响 |
 
-降级逻辑在 `index.html` 的 `window.CdnFallback` 里，通过 `<script onerror>` 触发，
-并在 `DOMContentLoaded` 时再兜一次底（应对被拦截器静默替换、onerror 不触发的情况）。
+降级逻辑也在 `window.CdnFallback` 里：注入的脚本 `onerror`，或者 `onload` 了但全局变量
+没出现（被拦截器静默替换），都会装上降级实现并在控制台打 `[cdn] … 加载失败`。
+`load()` 返回的 Promise 成功失败都 resolve；supabase 失败后允许下次重试。
 
 离线自测降级效果：在 DevTools 的 Network 面板里屏蔽 `cdn.jsdelivr.net`，然后刷新。
 
@@ -128,7 +135,8 @@ GitHub Pages 对静态资源返回的是 `Cache-Control: max-age=600`（10 分�
 
 - 全部存在浏览器 **localStorage**，不上传服务器、无需注册；
 - 换设备、换浏览器、清除浏览器数据都会导致进度丢失；
-- 备份走「设置与数据 → 导出数据」，恢复走「导入数据」（支持覆盖 / 合并两种模式）。
+- 备份走「设置 → 导出数据」，恢复走「导入数据」（支持覆盖 / 合并两种模式）；
+- 旧版本的存储布局会在第一次打开新版时自动迁移（`lib/storage.js` 的 `LegacyMigration`），旧备份也可直接导入。
 
 ---
 
@@ -138,27 +146,33 @@ GitHub Pages 对静态资源返回的是 `Cache-Control: max-age=600`（10 分�
 
 > 说明：项目**没有** `manifest.json`，也没有 Service Worker，因此它**不是** PWA。
 > 用 Safari 的「添加到主屏幕」只会得到一个书签图标，不会有独立的 App 窗口，
-> 也**不支持离线访问**——每次打开都需要联网重新下载全部词库。
+> 也**不支持离线访问**——每次打开都需要联网（浏览器 HTTP 缓存有效期内可复用已下载的文件）。
 > 如果要做成真正可离线的 App，需要另外补 `manifest.json` + Service Worker 缓存策略。
 
 ---
 
 ## 9. 数据规模（以仓库内数据为准）
 
-| 语言 | 系统词库 |
-| --- | --- |
-| 意大利语 | 27,117 条（其中同源词 1,587 条） |
-| 英语 | 24,000 条 |
-| 德语 | 15,507 条 |
-| 法语 | 2,183 条（A1-B2 课程词表 + 词汇表去重后） |
+| 语言 | 系统词库 | A1 | A2 | B1 | B2 | C1 | C2 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 意大利语 | 27,117 条 | 600 | 900 | 1,500 | 3,000 | 6,000 | 15,117 |
+| 德语 | 24,314 条 | 980 | 1,027 | 2,206 | 2,420 | 5,718 | 11,963 |
+| 英语 | 24,000 条 | 600 | 900 | 1,500 | 3,000 | 6,000 | 12,000 |
+| 法语 | 24,536 条 | 976 | 1,027 | 1,579 | 2,901 | 5,723 | 12,330 |
 
-页面上的数字由 `lib/router.js` 的 `syncDatasetCounts()` 在运行时从数据本身渲染，
-HTML 里的数字只是占位，改数据不需要改文案。
+模块数据：动词变位 意 1,812 / 德 1,810 / 英 1,800 / 法 1,934 个动词；语法书 意 99 / 德 105 /
+英 132 / 法 109 个专题；动词搭配 意 1,612 / 德 890 / 英 875 / 法 1,411 个动词；
+同源词 意 1,586 / 德 2,349 / 法 4,269 条；德语课程 54 单元。
+
+页面上的数字都由 `app.js` 在渲染时从已加载的数据本身算出（`Vocab.levelCounts` 等），
+HTML 里没有写死的数字，改数据不需要改文案。
 
 校验命令：
 
 ```bash
-node scripts/validate_vocab.js   # 打印四语言 data/vocab/<lang>.js 的条数与覆盖率
+node scripts/validate_vocab.js     # 打印四语言 data/vocab/<code>.js 的条数与覆盖率
+node scripts/validate_modules.js   # 全部模块数据对照 docs/data-schema.md
+npm test                           # 推送到 main / 提 PR 时 CI 也会跑
 ```
 
 ---
@@ -168,10 +182,10 @@ node scripts/validate_vocab.js   # 打印四语言 data/vocab/<lang>.js 的条�
 | 现象 | 排查方向 |
 | --- | --- |
 | 站点 404 | Pages 的 Source 分支/目录是否为 `main` + `/ (root)` |
-| 语法书变成一堆 HTML 标签 | `.nojekyll` 是否真的提交上去了 |
+| 语法书变成一整块纯文本 | marked 没加载成功（CDN 被拦截），控制台会有 `[cdn] marked 加载失败` |
 | 改了代码线上没变 | 等满 10 分钟 + 硬刷新；用 `curl` 确认服务端内容 |
 | 图表空白 | CDN 是否被拦截，控制台会有 `[cdn] chart.js 加载失败` |
-| 法语板块整块消失 | `index.html` 里的 `#languageSkeletonPlaceholderScreen` 是否被删掉了 —— `french-app.js` 靠它定位插入点 |
-| 打开很慢 | 见第 5 节，属于已知问题 |
+| 某个模块打不开 / 显示数据未加载 | Network 面板里对应的 `data/<code>-<module>.js` 是否 404 或被缓存成旧版；该语言档案（`lib/languages.js` 的 `files`）是否列了这个模块 |
+| 打开很慢 | 见第 5 节：首次进入一门语言要下载 4–6 MB 词库 |
 
 祝学习愉快。Buono studio.

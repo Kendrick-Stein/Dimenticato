@@ -1,84 +1,75 @@
 /**
- * GrammarBook — 语法书阅读器（意大利语 / 德语 / 英语 / 法语共用一块屏）
- * Uses embedded *_GRAMMAR_DATA globals (from data/*-grammar-data.js) instead of
- * fetch() to avoid GitHub Pages issues with Chinese-character filenames.
+ * GrammarBook — 语法书阅读器（四门语言共用一块屏，没有按语言分支）
+ * 数据经 LangLoader.data(code, 'grammar') 取（data/<code>-grammar.js 懒加载注入），
+ * 不用 fetch()，避免 GitHub Pages 上中文文件名的问题。数据格式见
+ * docs/data-schema.md 的 grammar/1：专题 slug 统一为 p<N>/ch<NN>/t<NN>，
+ * 旧 slug 记在 meta.aliases（旧 → 新），这里的 resolveSlug() 负责把旧深链接、
+ * 旧阅读位置、课程里的旧引用都解析到新专题。
  *
- * 阅读器是共享屏，所以它必须自己知道当前是哪种语言：标题、面包屑、返回按钮
- * 与正文中的图片根目录全部由 LANG_PROFILES 决定，调用方不必再手动改 DOM。
+ * 阅读位置按语言代码存在 dimenticato_grammar_topic_<code>；地址栏同步为
+ * #/<code>/grammar/book/<slug>（lib/shell.js 的 param 路由），刷新后回到同一篇。
  */
 const GrammarBook = (() => {
   let sidebarListenerAdded = false;
+  let topicListSeq = 0;
   let currentSlug = null;
   let activeData = null; // currently loaded grammar data
-  let activeLang = 'italian';
+  let activeLang = window.Languages.DEFAULT; // 语言代码（'it' / 'de' / …）
 
-  // 小目录树（法语 23 篇 / 英语 5 篇）默认全部展开，避免只剩一列折叠标题看起来像坏页。
+  const POSITION_PREFIX = 'dimenticato_grammar_topic_';
+
+  // 小目录树默认全部展开，避免只剩一列折叠标题看起来像坏页。
   const AUTO_EXPAND_TOPIC_LIMIT = 48;
-
-  const LANG_PROFILES = {
-    italian: {
-      label: '意大利语',
-      title: '意大利语语法',
-      description: '请从左侧目录选择章节开始阅读',
-      backLabel: 'Grammar'
-    },
-    german: {
-      label: '德语',
-      title: '德语语法',
-      description: '请从左侧目录选择章节开始阅读',
-      backLabel: '德语语法'
-    },
-    english: {
-      label: '英语',
-      title: '英语语法',
-      description: '请从左侧目录选择 A1-C1 专题开始阅读',
-      backLabel: 'English Grammar'
-    },
-    french: {
-      label: '法语',
-      title: '法语语法',
-      description: '请从左侧目录选择 A1-B1 专题开始阅读',
-      backLabel: 'French Grammar'
-    }
-  };
 
   function getLayout() {
     return document.querySelector('#grammarBookScreen .grammar-book-layout');
   }
 
-  /**
-   * 各语言的语法数据都是 `const` 全局（不会挂到 window 上），所以只能在
-   * 「调用时」用裸名字 + typeof 解析，绝不能在 parse 阶段读 window.X。
-   */
-  function dataGlobalFor(lang) {
-    switch (lang) {
-      case 'german': return typeof GERMAN_GRAMMAR_DATA !== 'undefined' ? GERMAN_GRAMMAR_DATA : undefined;
-      case 'english': return typeof ENGLISH_GRAMMAR_DATA !== 'undefined' ? ENGLISH_GRAMMAR_DATA : undefined;
-      case 'french': return typeof FRENCH_GRAMMAR_DATA !== 'undefined' ? FRENCH_GRAMMAR_DATA : undefined;
-      case 'italian': return typeof GRAMMAR_DATA !== 'undefined' ? GRAMMAR_DATA : undefined;
-      default: return undefined;
-    }
+  // 与 styles.css 的手机断点（max-width: 760px，抽屉式目录）保持一致
+  const NARROW_QUERY = '(max-width: 760px)';
+  const narrowMql = typeof window.matchMedia === 'function' ? window.matchMedia(NARROW_QUERY) : null;
+  function isNarrow() {
+    return narrowMql ? narrowMql.matches : window.innerWidth <= 760;
   }
 
-  /** 从「调用方传进来的数据对象」反推语言，调用方无需改代码。 */
+  // 目录是否展开：手机上看 sidebar-open，桌面上看有没有 sidebar-collapsed
+  function syncSidebarToggle() {
+    const layout = getLayout();
+    const btn = document.getElementById('grammarSidebarToggle');
+    if (!layout || !btn) return;
+    const expanded = isNarrow()
+      ? layout.classList.contains('sidebar-open')
+      : !layout.classList.contains('sidebar-collapsed');
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  }
+
+  // 语法数据按模块懒加载，注册在 DIM_DATA.grammar.<code>，调用时取
+  function dataGlobalFor(lang) {
+    return window.LangLoader ? window.LangLoader.data(lang, 'grammar') : null;
+  }
+
+  /** 从「调用方传进来的数据对象」反推语言代码，调用方无需改代码。 */
   function resolveLang(data, options) {
-    const explicit = options && options.lang;
-    if (explicit && LANG_PROFILES[explicit]) return explicit;
+    const L = window.Languages;
+    const explicit = options && (options.lang || options.language);
+    if (explicit && L.has(explicit)) return L.code(explicit);
 
     if (data) {
-      const match = Object.keys(LANG_PROFILES).find(lang => dataGlobalFor(lang) === data);
+      if (data.meta && L.has(data.meta.lang)) return L.code(data.meta.lang);
+      const match = L.codes.find(code => dataGlobalFor(code) === data);
       if (match) return match;
-      if (data.meta && LANG_PROFILES[data.meta.lang]) return data.meta.lang;
     }
 
     const bodyLang = document.body ? document.body.getAttribute('data-language') : null;
-    if (bodyLang && LANG_PROFILES[bodyLang]) return bodyLang;
+    if (bodyLang && L.has(bodyLang)) return L.code(bodyLang);
 
-    return 'italian';
+    return L.DEFAULT;
   }
 
   function getProfile(lang) {
-    return LANG_PROFILES[lang || activeLang] || LANG_PROFILES.italian;
+    const L = window.Languages;
+    const p = L.get(lang || activeLang) || L.get(L.DEFAULT);
+    return { label: p.cn, title: p.cn + '语法', description: '请从左侧目录选择章节开始阅读' };
   }
 
   function getTitle() {
@@ -96,29 +87,96 @@ const GrammarBook = (() => {
       (part.chapters || []).reduce((n, ch) => n + (ch.topics || []).length, 0), 0);
   }
 
+  // ==================== slug 解析 / 阅读位置 ====================
+
+  /**
+   * 任意形式的 slug → 当前数据里的专题 slug（找不到返回 null）。
+   * 接受新 slug、meta.aliases 里的旧 slug，以及 URL 编码过的形式。
+   */
+  function resolveSlug(slug, data) {
+    data = data || activeData;
+    if (!data || slug == null) return null;
+    const content = data.content || {};
+    const aliases = (data.meta && data.meta.aliases) || {};
+    const candidates = [String(slug)];
+    try {
+      const decoded = decodeURIComponent(String(slug));
+      if (decoded !== candidates[0]) candidates.push(decoded);
+    } catch (e) { /* 不是合法的 URI 编码，原样用 */ }
+    for (const s of candidates) {
+      if (Object.prototype.hasOwnProperty.call(content, s)) return s;
+      if (Object.prototype.hasOwnProperty.call(aliases, s) &&
+          Object.prototype.hasOwnProperty.call(content, aliases[s])) return aliases[s];
+    }
+    return null;
+  }
+
+  /** 专题在目录树里的位置：{ topic, part, chapter }。 */
+  function findTopic(slug, data) {
+    data = data || activeData;
+    const parts = (data && data.tree && data.tree.parts) || [];
+    for (const part of parts) {
+      for (const chapter of part.chapters || []) {
+        for (const topic of chapter.topics || []) {
+          if (topic.slug === slug) return { topic, part, chapter };
+        }
+      }
+    }
+    return null;
+  }
+
+  function positionKey(lang) { return POSITION_PREFIX + window.Languages.code(lang || activeLang); }
+
+  function savedSlug() {
+    try { return resolveSlug(localStorage.getItem(positionKey())); } catch (e) { return null; }
+  }
+
+  function savePosition(slug) {
+    try { localStorage.setItem(positionKey(), slug); } catch (e) { /* 隐私模式等：只是不记位置 */ }
+  }
+
+  /** 正在看语法书时把专题写进地址栏（replaceState，不新增历史条目）。 */
+  function syncRoute(slug) {
+    const router = window.DimRouter;
+    // DimRouter.href 收的是语言 key（german），activeLang 是代码（de）
+    const shell = window.Shell;
+    if (!router || !router.booted || !shell || shell.current() !== 'grammarBookScreen') return;
+    const url = router.href(window.Languages.key(activeLang), 'grammarBookScreen') + '/' + slug;
+    if (window.location.hash === url) return;
+    try { window.history.replaceState(null, '', url); } catch (e) { /* file:// */ }
+  }
+
+  /**
+   * 按任意 slug（新 / 旧 / 编码过的）打开专题；找不到时停在欢迎页并返回 false。
+   */
+  function openTopic(slug) {
+    const resolved = resolveSlug(slug);
+    const where = resolved && findTopic(resolved);
+    if (!where) return false;
+    loadTopic(resolved, where.topic.title, where.part.title, where.chapter.title);
+    return true;
+  }
+
   /**
    * Initialize or reinitialize with optional custom data.
    * Always rebuilds the nav tree AND the reading pane so switching between
    * Italian/German/English/French grammar data works correctly every time.
    * @param {Object|null} customData - Grammar data object with .tree and .content.
-   *   If null/undefined, falls back to global GRAMMAR_DATA.
+   *   If null/undefined, falls back to LangLoader.data(lang, 'grammar').
    * @param {Object} [options] - { lang } 可显式指定语言，缺省时自动识别。
    */
   function init(customData, options) {
-    // 语言解析前置：调用方可能传 options.lang（router）或 options.language
-    // （german-app），都不传时回落到 resolveLang 的推断。语法数据现在是
-    // 按模块懒加载的（lib/languages.js profile.files.grammar），缺席时先补拉。
-    const explicit = options && (options.lang || options.language);
-    const targetLang = (explicit && LANG_PROFILES[explicit])
-      ? explicit
-      : resolveLang(customData, options);
+    // 语言解析前置：调用方可能传 options.lang / options.language（代码或旧 key），
+    // 都不传时回落到 resolveLang 的推断。语法数据按模块懒加载
+    // （lib/languages.js profile.files.grammar），缺席时先补拉。
+    const targetLang = resolveLang(customData, options);
 
     const data = customData || dataGlobalFor(targetLang) || null;
 
     if ((!data || !data.tree) && window.LangLoader
       && typeof window.LangLoader.ensureModule === 'function'
-      && !window.LangLoader.isModuleLoaded(targetLang, 'grammar')) {
-      window.LangLoader.ensureModule(targetLang, 'grammar')
+      && !window.LangLoader.isModuleLoaded(window.Languages.key(targetLang), 'grammar')) {
+      window.LangLoader.ensureModule(window.Languages.key(targetLang), 'grammar')  // 加载器按语言 key 记账
         .then(() => init(customData, options));
       return; // 拉到后重试；仍缺席则走下方的错误 UI
     }
@@ -148,14 +206,18 @@ const GrammarBook = (() => {
     if (!sidebarListenerAdded) {
       document.getElementById('grammarSidebarToggle')
         ?.addEventListener('click', toggleSidebar);
+      if (narrowMql) {
+        const onChange = () => syncSidebarToggle();
+        if (typeof narrowMql.addEventListener === 'function') narrowMql.addEventListener('change', onChange);
+        else if (typeof narrowMql.addListener === 'function') narrowMql.addListener(onChange);
+      }
       sidebarListenerAdded = true;
     }
+    syncSidebarToggle();
   }
 
   /** 侧边栏标题 / 返回按钮：共享屏必须自报语言，否则用户不知道自己在读哪一本。 */
   function applyChrome() {
-    const profile = getProfile();
-
     const navTitle = document.querySelector('#grammarBookScreen .grammar-nav-title');
     if (navTitle) {
       navTitle.innerHTML = '<span class="msr" aria-hidden="true">auto_stories</span>' + escapeHtml(getTitle());
@@ -163,7 +225,7 @@ const GrammarBook = (() => {
 
     const backBtn = document.getElementById('grammarBookBackBtn');
     if (backBtn) {
-      backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回 ' + escapeHtml(profile.backLabel);
+      backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回语法';
     }
   }
 
@@ -180,13 +242,24 @@ const GrammarBook = (() => {
       ? '<p>' + partCount + ' 个分组 · ' + topicCount + ' 篇专题</p>'
       : '';
 
+    // 上次读到哪一篇（按语言代码记），给一个「继续阅读」入口
+    const resume = activeData ? savedSlug() : null;
+    const resumeAt = resume && findTopic(resume);
+    const resumeBtn = resumeAt
+      ? '<p><button type="button" class="btn grammar-resume-btn" data-grammar-resume="' + escapeHtml(resume) + '">' +
+        '<span class="msr" aria-hidden="true">history</span>继续阅读：' + escapeHtml(resumeAt.topic.title) + '</button></p>'
+      : '';
+
     body.innerHTML = `
       <div class="grammar-welcome">
         <span class="msr grammar-welcome-icon" aria-hidden="true">auto_stories</span>
         <h2>${escapeHtml(getTitle())}</h2>
         <p>${escapeHtml(getDescription())}</p>
         ${scale}
+        ${resumeBtn}
       </div>`;
+    const btn = body.querySelector('[data-grammar-resume]');
+    if (btn) btn.addEventListener('click', () => openTopic(btn.getAttribute('data-grammar-resume')));
     body.scrollTop = 0;
   }
 
@@ -237,17 +310,22 @@ const GrammarBook = (() => {
 
         const chapterBtn = document.createElement('button');
         chapterBtn.className = 'grammar-chapter-btn' + (expandByDefault ? ' open' : '');
+        chapterBtn.type = 'button';
+        chapterBtn.setAttribute('aria-expanded', expandByDefault ? 'true' : 'false');
         chapterBtn.innerHTML =
           '<span class="grammar-chapter-arrow msr" aria-hidden="true">chevron_right</span>' +
           '<span class="grammar-chapter-label">' + escapeHtml(ch.title) + '</span>';
 
         const topicList = document.createElement('div');
         topicList.className = 'grammar-topic-list' + (expandByDefault ? '' : ' collapsed');
+        topicList.id = 'grammarTopics-' + (++topicListSeq);
+        chapterBtn.setAttribute('aria-controls', topicList.id);
 
         chapterBtn.addEventListener('click', () => {
           const isOpen = !topicList.classList.contains('collapsed');
           topicList.classList.toggle('collapsed', isOpen);
           chapterBtn.classList.toggle('open', !isOpen);
+          chapterBtn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
         });
 
         appendTopics(topicList, ch.topics, part.title, ch.title);
@@ -282,6 +360,16 @@ const GrammarBook = (() => {
   }
 
   function loadTopic(slug, title, partTitle, chapterTitle) {
+    // 旧 slug（meta.aliases）也认；标题缺省时从目录树补
+    slug = resolveSlug(slug) || slug;
+    if (title === undefined) {
+      const where = findTopic(slug);
+      if (where) {
+        title = where.topic.title;
+        partTitle = where.part.title;
+        chapterTitle = where.chapter.title;
+      }
+    }
     currentSlug = slug;
 
     // Update breadcrumb — 共享屏，必须带上语言；同名的「分组 › 单章」只留一层
@@ -306,6 +394,7 @@ const GrammarBook = (() => {
       if (list && list.classList.contains('collapsed')) {
         list.classList.remove('collapsed');
         list.previousElementSibling?.classList.add('open');
+        list.previousElementSibling?.setAttribute('aria-expanded', 'true');
       }
       activeLink.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }
@@ -318,6 +407,8 @@ const GrammarBook = (() => {
       body.innerHTML = '<div class="grammar-error">内容未找到：' + escapeHtml(slug) + '</div>';
       return;
     }
+    savePosition(slug);
+    syncRoute(slug);
 
     // marked 按需加载（index.html CdnFallback.load）。通常语法数据加载时已一并拉好，
     // 这里兜底：还没到就先占位，到了再按同一个 slug 重渲染（期间切走了就不管）。
@@ -329,15 +420,13 @@ const GrammarBook = (() => {
       return;
     }
 
-    const roots = imageRootsFor(slug, partTitle);
-    body.innerHTML = '<div class="grammar-markdown">' +
-      renderMarkdown(rewriteMarkdownImages(text, roots)) + '</div>';
-    enhanceImages(body, roots);
+    body.innerHTML = '<div class="grammar-markdown">' + renderMarkdown(text) + '</div>';
     body.scrollTop = 0;
 
     // On mobile, close sidebar after selecting topic
-    if (window.innerWidth < 768) {
+    if (isNarrow()) {
       getLayout()?.classList.remove('sidebar-open');
+      syncSidebarToggle();
     }
   }
 
@@ -360,97 +449,22 @@ const GrammarBook = (() => {
       '<pre style="white-space:pre-wrap;word-break:break-word;">' + escapeHtml(text) + '</pre>';
   }
 
-  // ==================== 正文图片路径修复 ====================
-
-  const MD_IMAGE_RE = /(!\[[^\]]*\]\()\s*([^)\s]+)((?:\s+"[^"]*")?\s*\))/g;
-
-  function imageRootsFor(slug, partTitle) {
-    const profile = getProfile();
-    if (typeof profile.imageRoots !== 'function') return [];
-    const roots = profile.imageRoots(slug, partTitle) || [];
-    return roots.filter((root, index) => root && roots.indexOf(root) === index);
-  }
-
-  function isExternalUrl(url) {
-    return /^(?:[a-z][a-z0-9+.-]*:|\/\/|\/|#)/i.test(url);
-  }
-
-  /** `.\img\X.png` / `./img/X.png` → 仓库里真实存在的目录。 */
-  function imageFileName(url) {
-    const normalized = String(url || '').replace(/\\/g, '/').split(/[?#]/)[0];
-    const base = normalized.slice(normalized.lastIndexOf('/') + 1);
-    try {
-      return decodeURIComponent(base);
-    } catch (error) {
-      return base;
-    }
-  }
-
-  function imageCandidates(url, roots) {
-    const file = imageFileName(url);
-    if (!file || !roots.length) return [];
-    return roots.map(root => root + encodeURI(file));
-  }
-
-  function rewriteMarkdownImages(text, roots) {
-    if (!roots.length) return text;
-    return String(text).replace(MD_IMAGE_RE, (full, head, url, tail) => {
-      if (isExternalUrl(url)) return full;
-      const candidates = imageCandidates(url, roots);
-      return candidates.length ? head + candidates[0] + tail : full;
-    });
-  }
-
-  /**
-   * 渲染后处理：约束尺寸、按候选目录逐个重试，全部失败时给出带文件名的占位块，
-   * 而不是浏览器默认的碎图标。
-   */
-  function enhanceImages(body, roots) {
-    body.querySelectorAll('.grammar-markdown img').forEach(img => {
-      img.style.maxWidth = '100%';
-      img.style.height = 'auto';
-      img.style.display = 'block';
-      img.style.margin = '1em 0';
-      img.setAttribute('loading', 'lazy');
-
-      const file = imageFileName(img.getAttribute('src'));
-      if (!img.getAttribute('alt')) img.setAttribute('alt', file);
-
-      const candidates = roots.length ? imageCandidates(img.getAttribute('src'), roots) : [];
-      let attempt = 0;
-      img.addEventListener('error', () => {
-        attempt += 1;
-        if (attempt < candidates.length) {
-          img.src = candidates[attempt];
-          return;
-        }
-        replaceWithPlaceholder(img, file);
-      });
-    });
-  }
-
-  function replaceWithPlaceholder(img, file) {
-    if (!img.parentNode) return;
-    const placeholder = document.createElement('span');
-    placeholder.className = 'grammar-error grammar-figure-missing';
-    placeholder.style.display = 'block';
-    placeholder.innerHTML = '<span class="msr" aria-hidden="true">broken_image</span> 图示缺失：' + escapeHtml(file || '未知文件');
-    img.parentNode.replaceChild(placeholder, img);
-  }
-
   function toggleSidebar() {
     const layout = getLayout();
     if (!layout) return;
-    if (window.innerWidth < 768) {
+    if (isNarrow()) {
       layout.classList.toggle('sidebar-open');
     } else {
       layout.classList.toggle('sidebar-collapsed');
     }
+    syncSidebarToggle();
   }
 
   return {
     init,
     loadTopic,
+    openTopic,
+    resolveSlug: (slug, data) => resolveSlug(slug, data),
     toggleSidebar,
     getLanguage: () => activeLang,
     getCurrentSlug: () => currentSlug

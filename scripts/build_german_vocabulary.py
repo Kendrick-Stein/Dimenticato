@@ -70,6 +70,12 @@ SOURCES  (all fetched at build time into $DE_VOCAB_WORK, default /tmp/de-vocab-b
       tag); no example sentences or definitions are copied.
 
 Run:  python3 scripts/build_german_vocabulary.py
+      python3 scripts/build_german_vocabulary.py fill
+          in-place post-pass on data/vocab/de.js (no dump download): fills
+          `en` for entries that have none (the course headwords recovered in
+          a1a7baf, which this pipeline does not regenerate) from kaikki.org
+          per-word pages, falling back to the masculine base of an -in noun;
+          re-emitting also canonicalises gender order (vocab_schema).
       DE_VOCAB_WORK=/tmp/de-vocab-build  (cache dir, downloads ~1.4 GB once)
       DE_VOCAB_STAGES=lexicon,freq,goethe,handedict,assemble  (default: all)
 """
@@ -1399,25 +1405,23 @@ def merge_round_robin(lists: list[list[str]], limit: int) -> list[str]:
     return out
 
 
-COURSE_LINE_RE = re.compile(r"^\d+\|[^|]*\|[^|]*\|[^|]*\|(.+)$")
-
-
 def load_course_headwords() -> set[str]:
-    """The 418 headwords data/german-course-data.js teaches.
+    """The words data/de-course.js (course/1) teaches.
 
-    tests/test-german-course-data.js asserts that every one of them resolves to
-    a system-vocabulary entry, so the course list is a teaching source on the
-    same footing as pgh.csv and the Goethe Wortlisten: an entry it names is
-    never dropped for being a proper noun, a nominalisation or a participle.
-    Read-only — this build never writes german-course-data.js.
+    Every unit.words item must be a system-vocabulary `word`
+    (scripts/validate_modules.js checks it), so the course list is a teaching
+    source on the same footing as pgh.csv and the Goethe Wortlisten: an entry
+    it names is never dropped for being a proper noun, a nominalisation or a
+    participle.  Read-only — this build never writes de-course.js.
     """
-    text = (ROOT / "data" / "german-course-data.js").read_text(encoding="utf-8")
-    out: set[str] = set()
-    for line in text.splitlines():
-        m = COURSE_LINE_RE.match(line.strip())
-        if m:
-            out.update(w.strip() for w in m.group(1).split(",") if w.strip())
-    return out
+    script = (
+        "const d=require(process.argv[1]);"
+        "process.stdout.write(JSON.stringify(d.levels.flatMap(l=>l.units.flatMap(u=>u.words||[]))))"
+    )
+    out = subprocess.run(
+        ["node", "-e", script, str(ROOT / "data" / "de-course.js")],
+        check=True, stdout=subprocess.PIPE)
+    return {w for w in json.loads(out.stdout.decode("utf-8")) if w}
 
 
 def main() -> None:
@@ -1467,7 +1471,7 @@ def main() -> None:
     print(f"       {len(pgh)} pgh.csv headwords")
 
     course = load_course_headwords()
-    print(f"       {len(course)} course headwords (data/german-course-data.js)")
+    print(f"       {len(course)} course headwords (data/de-course.js)")
     # pgh.csv, the Goethe lists and the course syllabus are the three teaching
     # sources; a word any of them names is protected from the heuristic drops.
     taught = set(pgh) | set(goethe) | course | set(CURATED_NOUNS)
@@ -1804,7 +1808,47 @@ def main() -> None:
     out = vocab_legacy.emit("de", vocab_legacy.from_de(ordered), builder=BUILDER)
     print(f"Generated {out} with {len(ordered)} entries "
           f"({out.stat().st_size / 1e6:.1f} MB)")
+    # Audited corrections (genders, zh/en cleanup): scripts/de_vocab_fixes/
+    import de_vocab_fixes
+    de_vocab_fixes.apply_file()
+
+
+def fill_missing_english() -> None:
+    """Post-pass: give every entry without `en` a Wiktionary gloss."""
+    import vocab_schema as vs
+
+    filled = Counter()
+
+    def update(entries: list, meta: dict) -> None:
+        by_word = {e["word"]: e for e in entries}
+        for e in entries:
+            if e.get("en"):
+                continue
+            english = vs.kaikki_english("German", e["word"])
+            token = SRC_EN
+            if not english and e.get("pos") == "noun" and e["word"].endswith("in"):
+                base = (by_word.get(e["word"][:-2])            # Lehrerin -> Lehrer
+                        or by_word.get(e["word"][:-2] + "e"))  # Kollegin -> Kollege
+                if base and base.get("en"):
+                    english = "(female) " + base["en"].split(";")[0].strip()
+                    token = "en:feminine-of(" + base["word"] + ")"
+            if not english or english.lower() == e["word"].lower():
+                filled["none"] += 1
+                continue
+            e["en"] = english
+            source = vs.source_of({"meta": meta}, e)
+            e["src"] = vs.source_index(meta, source.replace("; f:", f"; {token}; f:", 1)
+                                       if "; f:" in source else f"{source}; {token}")
+            filled[token.split("(")[0]] += 1
+
+    out = vs.rewrite_vocab("de", update)
+    print(f"{out}: en filled {dict(filled)}")
+    import de_vocab_fixes
+    de_vocab_fixes.apply_file()
 
 
 if __name__ == "__main__":
-    main()
+    if sys.argv[1:] == ["fill"]:
+        fill_missing_english()
+    else:
+        main()

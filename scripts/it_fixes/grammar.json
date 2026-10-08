@@ -1,0 +1,815 @@
+{
+  "_doc": "Italian grammar fixes, applied by scripts/italian_fixes.py (hooked into scripts/canonicalize_grammar.py run('it')). Slugs are positional (grammar_schema.canonicalize), so new topics are only ever APPENDED at the end of a chapter / as a new part: existing slugs never move. Titles and the leading '### N．' header are then renumbered by position.",
+  "split": [
+    {
+      "slug": "p1/ch03/t05",
+      "from": "p1/ch03/t02",
+      "start": "**3. bello,quello,buono,grande,santo",
+      "level": "A2",
+      "title": "bello、quello、buono、grande、santo等形容词的特殊断音与省音规则（troncamento ed elisione degli aggettivi bello, quello, buono, grande, santo）",
+      "why": "原书第3节被转换稿并进了第2节，拆出成独立专题"
+    },
+    {
+      "slug": "p1/ch06/t05",
+      "from": "p1/ch06/t03",
+      "start": "**4．非重读间接宾语代词",
+      "level": "A2",
+      "title": "非重读间接宾语代词（pronomi complemento indiretto in forma atona）",
+      "why": "原书第4节被并进第3节"
+    },
+    {
+      "slug": "p1/ch11/t07",
+      "from": "p1/ch11/t02",
+      "start": "**3．直陈式未完成过去时",
+      "level": "A2",
+      "title": "直陈式未完成过去时（imperfetto indicativo）",
+      "why": "原书第3节（imperfetto）被并进近过去时一节，目录里看不到"
+    },
+    {
+      "slug": "p1/ch11/t08",
+      "from": "p1/ch11/t06",
+      "start": "**8．关于过去将来时",
+      "level": "B1",
+      "title": "关于过去将来时、正在进行时以及历史现在时的说明（osservazioni sul futuro nel passato, sul \"stare + gerundio\" e sul presente storico）",
+      "why": "原书第8节被并进第7节"
+    },
+    {
+      "slug": "p1/ch12/t03",
+      "from": "p1/ch12/t01",
+      "start": "**2．条件式（condizionale）**",
+      "level": "A2",
+      "title": "条件式（condizionale）",
+      "why": "原书第2节（condizionale）被并进命令式一节，目录里看不到"
+    },
+    {
+      "slug": "p2/ch01/t08",
+      "from": "p2/ch01/t03",
+      "start": "**4．同谓语（apposizione）**",
+      "level": "A2",
+      "title": "同谓语（apposizione）",
+      "why": "原书第4节被并进第3节"
+    },
+    {
+      "slug": "p2/ch03/t21",
+      "from": "p2/ch03/t15",
+      "start": "**16．过错补语",
+      "level": "B2",
+      "title": "过错补语（complemento di colpa）",
+      "why": "原书第16节被并进第15节"
+    },
+    {
+      "slug": "p2/ch03/t22",
+      "from": "p2/ch03/t15",
+      "start": "**17．处罚补语",
+      "level": "B2",
+      "title": "处罚补语（complemento di pena）",
+      "why": "原书第17节被并进第15节"
+    },
+    {
+      "slug": "p2/ch03/t23",
+      "from": "p2/ch03/t15",
+      "start": "**18．价格补语",
+      "level": "B1",
+      "title": "价格补语（complemento di prezzo）",
+      "why": "原书第18节被并进第15节"
+    },
+    {
+      "slug": "p2/ch03/t24",
+      "from": "p2/ch03/t15",
+      "start": "**19．分离补语",
+      "level": "B2",
+      "title": "分离补语（complemento di separazione）",
+      "why": "原书第19节被并进第15节"
+    },
+    {
+      "slug": "p2/ch03/t25",
+      "from": "p2/ch03/t15",
+      "start": "**20．年龄补语",
+      "level": "B1",
+      "title": "年龄补语（complemento di età）",
+      "why": "原书第20节被并进第15节"
+    },
+    {
+      "slug": "p2/ch03/t26",
+      "from": "p2/ch03/t17",
+      "start": "**23．有利或不利补语",
+      "level": "B2",
+      "title": "有利或不利补语（complemento di vantaggio o svantaggio）",
+      "why": "原书第23节被并进第22节"
+    },
+    {
+      "slug": "p2/ch03/t27",
+      "from": "p2/ch03/t18",
+      "start": "**25．施动补语",
+      "level": "B1",
+      "title": "施动补语（complemento di agente）",
+      "why": "原书第25节被并进第24节"
+    },
+    {
+      "slug": "p2/ch04/t04",
+      "from": "p2/ch04/t01",
+      "start": "**2．明确从句与不明确从句",
+      "level": "B1",
+      "title": "明确从句与不明确从句（proposizioni esplicite ed implicite）",
+      "why": "原书第2节被并进第1节"
+    },
+    {
+      "slug": "p2/ch04/t05",
+      "from": "p2/ch04/t03",
+      "start": "**5．说明从句",
+      "level": "B2",
+      "title": "说明从句（proposizione dichiarativa）",
+      "why": "原书第5节被并进第4节"
+    },
+    {
+      "slug": "p2/ch05/t04",
+      "from": "p2/ch05/t03",
+      "start": "**4．让步从句",
+      "level": "B1",
+      "title": "让步从句（proposizione concessiva）",
+      "why": "原书第4节被并进第3节"
+    },
+    {
+      "slug": "p2/ch06/t05",
+      "from": "p2/ch06/t04",
+      "start": "**5．时间从句",
+      "level": "B1",
+      "title": "时间从句（proposizione temporale）",
+      "why": "原书第5节被并进第4节"
+    }
+  ],
+  "authored": [
+    {
+      "slug": "p2/ch03/t28",
+      "file": "grammar/p2_ch03_t28.md",
+      "level": "B1",
+      "title": "比较补语（complemento di paragone）",
+      "why": "原书无此专题，补写（文内已注明非原书文字）"
+    }
+  ],
+  "appendix": {
+    "from": "p2/ch07/t07",
+    "start": "#### 附\n\n### 录",
+    "maxChars": 30000,
+    "level": "A2",
+    "part": "附录 意大利语动词变位表（tabella di coniugazioni dei verbi italiani）",
+    "chapter": "意大利语动词变位表（tabella di coniugazioni dei verbi italiani）",
+    "sections": {
+      "## Prima coniugazione": "第一变位法（prima coniugazione）",
+      "## Seconda coniugazione": "第二变位法（seconda coniugazione）",
+      "## Terza coniugazione": "第三变位法（terza coniugazione）",
+      "## Altri verbi irregolari": "其他不规则动词（altri verbi irregolari）"
+    },
+    "why": "原书附录（17 万字的变位表）被并进了限定从句一节；拆成独立的附录部分，按变位法和词条分块"
+  },
+  "appends": [
+    {
+      "slug": "p1/ch03/t02",
+      "file": "grammar/p1_ch03_t02.append.md",
+      "why": "原书本节不足400字，补充颜色/客观属性形容词、前后位置意义不同的形容词"
+    },
+    {
+      "slug": "p1/ch03/t03",
+      "file": "grammar/p1_ch03_t03.append.md"
+    },
+    {
+      "slug": "p1/ch03/t04",
+      "file": "grammar/p1_ch03_t04.append.md"
+    },
+    {
+      "slug": "p1/ch06/t05",
+      "file": "grammar/p1_ch06_t05.append.md"
+    },
+    {
+      "slug": "p2/ch01/t08",
+      "file": "grammar/p2_ch01_t08.append.md"
+    },
+    {
+      "slug": "p2/ch03/t02",
+      "file": "grammar/p2_ch03_t02.append.md"
+    },
+    {
+      "slug": "p2/ch03/t04",
+      "file": "grammar/p2_ch03_t04.append.md"
+    },
+    {
+      "slug": "p2/ch03/t07",
+      "file": "grammar/p2_ch03_t07.append.md"
+    },
+    {
+      "slug": "p2/ch03/t11",
+      "file": "grammar/p2_ch03_t11.append.md"
+    },
+    {
+      "slug": "p2/ch03/t13",
+      "file": "grammar/p2_ch03_t13.append.md"
+    },
+    {
+      "slug": "p2/ch03/t14",
+      "file": "grammar/p2_ch03_t14.append.md"
+    },
+    {
+      "slug": "p2/ch03/t16",
+      "file": "grammar/p2_ch03_t16.append.md"
+    },
+    {
+      "slug": "p2/ch03/t18",
+      "file": "grammar/p2_ch03_t18.append.md"
+    },
+    {
+      "slug": "p2/ch03/t19",
+      "file": "grammar/p2_ch03_t19.append.md"
+    },
+    {
+      "slug": "p2/ch03/t20",
+      "file": "grammar/p2_ch03_t20.append.md"
+    },
+    {
+      "slug": "p2/ch03/t22",
+      "file": "grammar/p2_ch03_t22.append.md"
+    },
+    {
+      "slug": "p2/ch03/t23",
+      "file": "grammar/p2_ch03_t23.append.md"
+    },
+    {
+      "slug": "p2/ch03/t27",
+      "file": "grammar/p2_ch03_t27.append.md"
+    }
+  ],
+  "titles": [
+    {
+      "slug": "p2/ch03/t12",
+      "from": "complemennto",
+      "to": "complemento"
+    },
+    {
+      "slug": "p2/ch03/t13",
+      "from": "dli limitazione",
+      "to": "di limitazione"
+    },
+    {
+      "slug": "p1/ch11/t05",
+      "from": "futurosemplice",
+      "to": "futuro semplice"
+    },
+    {
+      "slug": "p1/ch04/t03",
+      "from": "frazioneefrazionedecimale",
+      "to": "frazione e frazione decimale"
+    },
+    {
+      "slug": "p1/ch03/t04",
+      "from": "grande,povero,buono等",
+      "to": "grande、povero、buono等"
+    }
+  ],
+  "text": [
+    {
+      "slug": "p1/ch11/t03",
+      "from": " dli ",
+      "to": " di "
+    },
+    {
+      "slug": "p2/ch03/t08",
+      "from": " dli ",
+      "to": " di "
+    },
+    {
+      "slug": "p2/ch03/t25",
+      "from": " dli ",
+      "to": " di "
+    },
+    {
+      "slug": "p1/ch01/t01",
+      "from": "，Mlilano米",
+      "to": "，Milano米"
+    },
+    {
+      "slug": "p1/ch02/t01",
+      "from": "*lettoilBoccaccio?",
+      "to": "*letto il Boccaccio?"
+    },
+    {
+      "slug": "p1/ch02/t03",
+      "from": "，delleamiche一",
+      "to": "，delle amiche一"
+    },
+    {
+      "slug": "p1/ch02/t04",
+      "from": "，durantelalezione课",
+      "to": "，durante la lezione课"
+    },
+    {
+      "slug": "p1/ch02/t04",
+      "from": "，dopolascuola放",
+      "to": "，dopo la scuola放"
+    },
+    {
+      "slug": "p1/ch04/t01",
+      "from": "5cinqque<",
+      "to": "5cinque<"
+    },
+    {
+      "slug": "p1/ch04/t04",
+      "from": " contadlini ",
+      "to": " contadini "
+    },
+    {
+      "slug": "p1/ch05/t03",
+      "from": " sonoandati ",
+      "to": " sono andati "
+    },
+    {
+      "slug": "p1/ch05/t05",
+      "from": "对ètornata和",
+      "to": "对è tornata和"
+    },
+    {
+      "slug": "p1/ch06/t01",
+      "from": " qulesta ",
+      "to": " questa "
+    },
+    {
+      "slug": "p1/ch06/t02",
+      "from": " solosé ",
+      "to": " solo sé "
+    },
+    {
+      "slug": "p1/ch06/t03",
+      "from": " vogliamno ",
+      "to": " vogliamo "
+    },
+    {
+      "slug": "p1/ch07/t01",
+      "from": "（aciò）",
+      "to": "（a ciò）"
+    },
+    {
+      "slug": "p1/ch07/t01",
+      "from": " mnolti ",
+      "to": " molti "
+    },
+    {
+      "slug": "p1/ch07/t01",
+      "from": " almemo ",
+      "to": " almeno "
+    },
+    {
+      "slug": "p1/ch07/t01",
+      "from": " gliocchiali ",
+      "to": " gli occhiali "
+    },
+    {
+      "slug": "p1/ch07/t02",
+      "from": " rimnasto ",
+      "to": " rimasto "
+    },
+    {
+      "slug": "p1/ch07/t02",
+      "from": "*medesimefrasi?",
+      "to": "*medesime frasi?"
+    },
+    {
+      "slug": "p1/ch07/t02",
+      "from": "\nCosavuolefarecostui?",
+      "to": "\nCosa vuole fare costui?"
+    },
+    {
+      "slug": "p1/ch07/t04",
+      "from": " amanno ",
+      "to": " amano "
+    },
+    {
+      "slug": "p1/ch07/t05",
+      "from": " franceseo ",
+      "to": " francese o "
+    },
+    {
+      "slug": "p1/ch07/t05",
+      "from": " imnparare ",
+      "to": " imparare "
+    },
+    {
+      "slug": "p1/ch07/t05",
+      "from": " nonsia ",
+      "to": " non sia "
+    },
+    {
+      "slug": "p1/ch08/t02",
+      "from": " offrirequalcosa ",
+      "to": " offrire qualcosa "
+    },
+    {
+      "slug": "p1/ch08/t02",
+      "from": " vitao ",
+      "to": " vita o "
+    },
+    {
+      "slug": "p1/ch08/t02",
+      "from": " potremofinire ",
+      "to": " potremo finire "
+    },
+    {
+      "slug": "p1/ch08/t02",
+      "from": " capitotutto.",
+      "to": " capito tutto."
+    },
+    {
+      "slug": "p1/ch08/t02",
+      "from": " miolibro ",
+      "to": " mio libro "
+    },
+    {
+      "slug": "p1/ch09/t01",
+      "from": " conservateopere ",
+      "to": " conservate opere "
+    },
+    {
+      "slug": "p1/ch09/t01",
+      "from": " NVord-",
+      "to": " Nord-"
+    },
+    {
+      "slug": "p1/ch09/t02",
+      "from": " mninimo)",
+      "to": " minimo)"
+    },
+    {
+      "slug": "p1/ch09/t02",
+      "from": " cosl.",
+      "to": " così."
+    },
+    {
+      "slug": "p1/ch09/t02",
+      "from": "*altofra*",
+      "to": "*alto fra*"
+    },
+    {
+      "slug": "p1/ch10/t01",
+      "from": " venuiti ",
+      "to": " venuti "
+    },
+    {
+      "slug": "p1/ch11/t02",
+      "from": " questeriviste?",
+      "to": " queste riviste?"
+    },
+    {
+      "slug": "p1/ch11/t03",
+      "from": " appparisti,",
+      "to": " apparisti,"
+    },
+    {
+      "slug": "p1/ch11/t03",
+      "from": ",giunggesti,",
+      "to": ",giungesti,"
+    },
+    {
+      "slug": "p1/ch11/t06",
+      "from": " significatodella ",
+      "to": " significato della "
+    },
+    {
+      "slug": "p1/ch12/t01",
+      "from": ">legggano<",
+      "to": ">leggano<"
+    },
+    {
+      "slug": "p1/ch12/t01",
+      "from": ",diamno,",
+      "to": ",diamo,"
+    },
+    {
+      "slug": "p1/ch12/t01",
+      "from": "*Portiamnogli*",
+      "to": "*Portiamogli*"
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": " cocessimmo,",
+      "to": " cocessimo,"
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": "*abobia*",
+      "to": "*abbia*"
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": " facciatutto ",
+      "to": " faccia tutto "
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": "（anchese ",
+      "to": "（anche se "
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": " unproblema ",
+      "to": " un problema "
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": " qquesto ",
+      "to": " questo "
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": " dicasa ",
+      "to": " di casa "
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": "*giàpartita.",
+      "to": "*già partita."
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": "*mnai ",
+      "to": "*mai "
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": " connoi.",
+      "to": " con noi."
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": " esserLeutile?",
+      "to": " esserLe utile?"
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": " Mlario.",
+      "to": " Mario."
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": " rumnore.",
+      "to": " rumore."
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": " serivere.",
+      "to": " scrivere."
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": "*peraverne*",
+      "to": "*per averne*"
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": "*percapire*",
+      "to": "*per capire*"
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": "用oltrea和",
+      "to": "用oltre a和"
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": " vvita ",
+      "to": " vita "
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": " laspiegazione.",
+      "to": " la spiegazione."
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": " piùsuggestive ",
+      "to": " più suggestive "
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": " cittàdel ",
+      "to": " città del "
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": " poarla ",
+      "to": " parla "
+    },
+    {
+      "slug": "p1/ch13/t02",
+      "from": " mnolte ",
+      "to": " molte "
+    },
+    {
+      "slug": "p1/ch14/t01",
+      "from": "(NJon ",
+      "to": "(Non "
+    },
+    {
+      "slug": "p1/ch14/t02",
+      "from": " latua ",
+      "to": " la tua "
+    },
+    {
+      "slug": "p2/ch01/t01",
+      "from": "\nLoronon ",
+      "to": "\nLoro non "
+    },
+    {
+      "slug": "p2/ch01/t01",
+      "from": " hannofame?",
+      "to": " hanno fame?"
+    },
+    {
+      "slug": "p2/ch01/t01",
+      "from": "\nPartiretedomani?",
+      "to": "\nPartirete domani?"
+    },
+    {
+      "slug": "p2/ch01/t02",
+      "from": "（predicatonominale）",
+      "to": "（predicato nominale）"
+    },
+    {
+      "slug": "p2/ch01/t03",
+      "from": " èun ",
+      "to": " è un "
+    },
+    {
+      "slug": "p2/ch01/t05",
+      "from": "答achi？",
+      "to": "答a chi？"
+    },
+    {
+      "slug": "p2/ch01/t06",
+      "from": " esseregiudicato,",
+      "to": " essere giudicato,"
+    },
+    {
+      "slug": "p2/ch02/t06",
+      "from": " trenao ",
+      "to": " treno "
+    },
+    {
+      "slug": "p2/ch03/t04",
+      "from": " filadi ",
+      "to": " fila di "
+    },
+    {
+      "slug": "p2/ch03/t05",
+      "from": " mnonte,",
+      "to": " monte,"
+    },
+    {
+      "slug": "p2/ch04/t02",
+      "from": "*felicitàdel*",
+      "to": "*felicità del*"
+    },
+    {
+      "slug": "p2/ch04/t03",
+      "from": " lorocomportamenti ",
+      "to": " loro comportamenti "
+    },
+    {
+      "slug": "p2/ch04/t03",
+      "from": "*Provvo*",
+      "to": "*Provo*"
+    },
+    {
+      "slug": "p2/ch05/t01",
+      "from": "\nOgggi ",
+      "to": "\nOggi "
+    },
+    {
+      "slug": "p2/ch05/t01",
+      "from": "*partecipanati*",
+      "to": "*partecipanti*"
+    },
+    {
+      "slug": "p2/ch05/t03",
+      "from": " chepure ",
+      "to": " che pure "
+    },
+    {
+      "slug": "p2/ch06/t01",
+      "from": " stessogiorno.",
+      "to": " stesso giorno."
+    },
+    {
+      "slug": "p2/ch06/t01",
+      "from": " conun ",
+      "to": " con un "
+    },
+    {
+      "slug": "p2/ch06/t01",
+      "from": " casasua,",
+      "to": " casa sua,"
+    },
+    {
+      "slug": "p2/ch06/t02",
+      "from": " stuadiamo ",
+      "to": " studiamo "
+    },
+    {
+      "slug": "p2/ch06/t03",
+      "from": " ggentile ",
+      "to": " gentile "
+    },
+    {
+      "slug": "p2/ch06/t04",
+      "from": "用comea和",
+      "to": "用come a和"
+    },
+    {
+      "slug": "p2/ch06/t04",
+      "from": "和quasia等",
+      "to": "和quasi a等"
+    },
+    {
+      "slug": "p2/ch07/t01",
+      "from": "*distuurbarlo,",
+      "to": "*disturbarlo,"
+    },
+    {
+      "slug": "p2/ch07/t02",
+      "from": " volevatevenire.",
+      "to": " volevate venire."
+    },
+    {
+      "slug": "p1/ch03/t05",
+      "from": "，quegliamici那",
+      "to": "，quegli amici那"
+    },
+    {
+      "slug": "p1/ch03/t05",
+      "from": "，quelleamiche那",
+      "to": "，quelle amiche那"
+    },
+    {
+      "slug": "p1/ch11/t08",
+      "from": " illumnina ",
+      "to": " illumina "
+    },
+    {
+      "slug": "p1/ch12/t03",
+      "from": "*venuato*",
+      "to": "*venuto*"
+    },
+    {
+      "slug": "p1/ch12/t03",
+      "from": "*mmangiato*",
+      "to": "*mangiato*"
+    },
+    {
+      "slug": "p2/ch03/t21",
+      "from": " finalmmente ",
+      "to": " finalmente "
+    },
+    {
+      "slug": "p2/ch03/t25",
+      "from": " fannuallone ",
+      "to": " fannullone "
+    },
+    {
+      "slug": "p2/ch04/t04",
+      "from": " piùintelligenti.",
+      "to": " più intelligenti."
+    },
+    {
+      "slug": "p2/ch06/t05",
+      "from": " unavolta等",
+      "to": " una volta等"
+    },
+    {
+      "slug": "p1/ch07/t04",
+      "from": " moIti ",
+      "to": " molti "
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "from": " moIti*",
+      "to": " molti*"
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "from": "语anchea和",
+      "to": "语anche a和"
+    },
+    {
+      "slug": "p2/ch05/t04",
+      "from": "用anchea等",
+      "to": "用anche a等"
+    },
+    {
+      "slug": "p1/ch01/t01",
+      "from": "\nmartedi星",
+      "to": "\nmartedì星"
+    },
+    {
+      "slug": "p1/ch03/t02",
+      "from": "molto difficile-**篇",
+      "to": "molto difficile** 一篇",
+      "why": "OCR: \"一篇\" 被识别成 \"-篇\""
+    }
+  ]
+}

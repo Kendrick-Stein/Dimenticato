@@ -2,8 +2,14 @@
    Warm paper, ink green, dark red, gold.  One palette for every language;
    dark mode swaps the surfaces for an ink-coloured desk.
 
+   Editorial layout after the CILS Exam Factory site: full-bleed section
+   bands alternating paper / paper-soft, kicker + serif heading + sub line,
+   cards with a 3px ink top rule, mono numbers, reveal-on-scroll
+   (lib/editorial.js adds html.js, .reveal.in, [data-count], .topbar.scrolled).
+
    Sections: 1 tokens · 2 base · 3 shell · 4 primitives · 5 home · 6 practice
-             · 7 browse / progress / settings · 8 modules · 9 modals · 10 responsive */
+             · 7 hubs / browse / progress / settings · 9 loading / toast
+             · 10 responsive · 8 modules (end of file, own responsive block) */
 
 /* ---------- 1. Tokens ---------- */
 
@@ -17,15 +23,20 @@
   --muted: #5a665d; /* 在 paper/paper-deep/card 上都 ≥4.5:1（原 #6d7a70 在 paper-deep 上只有 3.4） */
   --line: #d9d0ba;
   --line-ink: #24382e;
+  /* Form-control borders need ≥3:1 against the surface (WCAG 1.4.11);
+     --line is 1.3–1.5:1. #8a816a: paper 3.5, paper-soft 3.2, card 3.7. */
+  --control-line: #8a816a;
   --red: #8e2f2b;
   --red-soft: #f3e3df;
-  --gold: #8a6410;
+  --gold: #7a580c; /* 5.4:1 on gold-soft, 4.9:1 on paper-deep (was #8a6410: 4.0–4.5) */
   --gold-soft: #f3ead2;
   --verde: #2f6b46;
   --verde-soft: #e2eee4;
   --on-ink: #f6f2e8;
   --topbar-bg: rgba(246, 242, 232, 0.92);
   --scrim: rgba(30, 51, 42, 0.32);
+  --hero-wash: rgba(233, 223, 201, 0.45);
+  --stamp-bg: rgba(251, 248, 241, 0.85);
 
   --serif: "Fraunces", "Noto Serif SC", Georgia, "Times New Roman", serif;
   --sans: "IBM Plex Sans", "Noto Sans SC", -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -37,6 +48,7 @@
   --wrap: 74rem;
   --narrow: 46rem;
   --control: 2.75rem;
+  --gutter: 2.5rem;
   --ease: 0.16s ease;
 }
 
@@ -47,9 +59,10 @@
   --card: #1c2b24;
   --ink: #ece6d6;
   --ink-soft: #b9b4a3;
-  --muted: #979786;
+  --muted: #a3a391; /* 5.2:1 on paper-deep, 5.8 on card (was #979786: 4.45 on paper-deep) */
   --line: #33463c;
   --line-ink: #cfc6ae;
+  --control-line: #6b8073; /* paper 4.0, paper-soft 3.6, card 3.5 */
   --red: #e0867c;
   --red-soft: #3a2623;
   --gold: #d8b25e;
@@ -59,6 +72,8 @@
   --on-ink: #14201a;
   --topbar-bg: rgba(20, 32, 26, 0.9);
   --scrim: rgba(0, 0, 0, 0.55);
+  --hero-wash: rgba(34, 52, 43, 0.6);
+  --stamp-bg: rgba(28, 43, 36, 0.88);
   --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.25), 0 10px 26px rgba(0, 0, 0, 0.28);
   --shadow-2: 0 2px 4px rgba(0, 0, 0, 0.3), 0 16px 36px rgba(0, 0, 0, 0.35);
   color-scheme: dark;
@@ -116,12 +131,11 @@ h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
 .hidden, [hidden] { display: none !important; }
 .num { font-family: var(--mono); font-weight: 500; letter-spacing: -0.02em; }
 .muted { color: var(--muted); }
-.visually-hidden {
-  position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden;
-  clip: rect(0 0 0 0); white-space: nowrap;
-}
 
 /* Material Symbols ligatures (icons inside feature modules) */
+/* Until the icon font is usable (index.html removes .msr-pending), hide the
+   ligature words and reserve the icon's 1em box so nothing reflows. */
+.msr-pending .msr { visibility: hidden; width: 1em; overflow: hidden; }
 .msr {
   font-family: "Material Symbols Rounded";
   font-weight: normal;
@@ -156,6 +170,7 @@ h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
   background: var(--topbar-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  transition: box-shadow 0.25s ease;
 }
 
 .topbar-inner {
@@ -164,8 +179,11 @@ h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
   align-items: center;
   width: min(100% - 2.5rem, var(--wrap));
   margin: 0 auto;
-  padding: 0.7rem 0;
+  padding: 0.95rem 0;
+  transition: padding 0.25s ease;
 }
+.topbar.scrolled .topbar-inner { padding: 0.5rem 0; }
+.topbar.scrolled { box-shadow: var(--shadow-1); }
 
 .brand {
   display: inline-flex;
@@ -232,16 +250,16 @@ h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
   min-height: 2.5rem;
   padding: 0.3rem 0.75rem;
   border: 0;
-  border-radius: var(--radius);
+  border-radius: 0;
   background: none;
-  color: var(--ink);
-  font-size: 0.93rem;
+  color: var(--ink-soft);
+  font-size: 0.94rem;
   font-weight: 500;
   text-decoration: none;
-  transition: background var(--ease);
+  transition: color var(--ease), box-shadow var(--ease);
 }
-.topnav a:hover, .topnav button:hover { background: var(--paper-soft); }
-.topnav a[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--red); border-radius: 0; }
+.topnav a:hover, .topnav button:hover { color: var(--ink); box-shadow: inset 0 -1px 0 var(--line-ink); }
+.topnav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--red); }
 
 .icon-btn {
   display: inline-flex;
@@ -307,8 +325,6 @@ main#main { min-height: 60vh; }
   color: var(--ink-soft);
   font-size: 0.86rem;
 }
-.footer-brand { font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--ink); }
-.footer-brand em { color: var(--red); }
 .footer a { color: inherit; }
 
 /* ---------- 4. Primitives ---------- */
@@ -325,9 +341,9 @@ main#main { min-height: 60vh; }
   text-transform: uppercase;
 }
 
-.section-head { max-width: var(--narrow); margin-bottom: 1.6rem; }
-.section-head h2, .page-title { font-size: clamp(1.6rem, 3vw, 2.3rem); }
-.section-head p, .desc, .subtitle { margin-top: 0.55rem; color: var(--ink-soft); }
+.section-head { max-width: var(--narrow); margin-bottom: 2rem; }
+.section-head h2, .page-title { font-size: clamp(1.7rem, 3vw, 2.4rem); }
+.section-head p, .section-sub, .desc, .subtitle { margin-top: 0.7rem; color: var(--ink-soft); }
 .section-head-row {
   display: flex;
   flex-wrap: wrap;
@@ -336,13 +352,41 @@ main#main { min-height: 60vh; }
   justify-content: space-between;
   margin-bottom: 1.4rem;
 }
-.section { margin-top: 3rem; }
-.section:first-child { margin-top: 0; }
-.section-rule { border-top: 1px solid var(--line); padding-top: 2.2rem; }
+.section-head-row .section-head { margin-bottom: 0; }
+
+/* Section bands.  A view that owns the full width (home, hubs, progress)
+   stacks .section bands; .section-inner re-applies the page width so
+   .section-alt can paint paper-soft edge to edge. */
+.section { padding: 3.6rem 0 3.4rem; }
+.section-inner { width: min(100% - var(--gutter), var(--wrap)); margin: 0 auto; }
+.section-alt {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-soft);
+}
+.section-alt + .section { border-top: 0; }
+.view-bands { padding-bottom: 2rem; }
+.view-bands > .section:last-child:not(.section-alt) { padding-bottom: 4rem; }
+
+/* Hub page header band (vocab / grammar / progress). */
+.page-hero {
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--hero-wash), transparent 75%);
+}
+.page-hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem 3rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2.6rem 0 2.4rem;
+}
+.page-hero .section-head { margin-bottom: 0; }
+.page-hero-stats { margin: 0; padding-top: 0; border-top: 0; }
+.page-hero + .section { padding-top: 2.8rem; }
 
 .btn,
 .primary-btn,
-.secondary-btn,
 .pill-btn,
 .back-btn,
 .back-link {
@@ -369,13 +413,14 @@ main#main { min-height: 60vh; }
   color: var(--on-ink);
 }
 
+.btn-ghost { background: transparent; color: var(--ink); }
 .pill-btn, .btn-small { min-height: 2.35rem; padding: 0.35rem 0.9rem; font-size: 0.88rem; }
 .back-btn, .back-link { min-height: 2.35rem; padding: 0.35rem 0.8rem; border-color: var(--line); font-size: 0.88rem; font-weight: 500; }
-.danger-btn { border-color: var(--red); color: var(--red); }
 .pill-btn.active, .pill-btn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
 
 @media (hover: hover) {
-  .btn:hover, .secondary-btn:hover, .pill-btn:hover, .back-btn:hover, .back-link:hover { background: var(--paper-deep); }
+  .btn:hover, .pill-btn:hover, .back-btn:hover, .back-link:hover { background: var(--paper-deep); }
+  .btn-ghost:hover { transform: translateY(-1px); }
   .primary-btn:hover:not(:disabled), .btn-primary:hover:not(:disabled) {
     background: var(--line-ink);
     border-color: var(--line-ink);
@@ -431,20 +476,21 @@ button.chip:hover { border-color: var(--line-ink); }
 /* Cards: .card is a clickable entry, .panel a static container. */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr));
   gap: 0.9rem;
 }
-.card-grid.cols-2 { grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); }
-.card-grid.cols-3 { grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
+.card-grid.cols-2 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); }
+.card-grid.cols-3 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); }
 
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.35rem;
   width: 100%;
-  padding: 1.15rem 1.1rem 1.1rem;
+  padding: 1.3rem 1.15rem 1.15rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
   color: var(--ink);
@@ -456,10 +502,58 @@ button.card, a.card { cursor: pointer; }
 @media (hover: hover) {
   button.card:hover:not(:disabled), a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-1); border-color: var(--line-ink); }
 }
-.card.selected, .card[aria-pressed="true"] { border-color: var(--line-ink); box-shadow: inset 0 3px 0 var(--red); }
+/* Card anatomy (after the reference level cards): 3px ink top rule ·
+   big serif title or code · gold mono .card-label · .card-desc ·
+   mono .card-meta count line · .card-cta small ghost button. */
+.card.selected, .card[aria-pressed="true"] { border-color: var(--line-ink); border-top-color: var(--red); }
 .card:disabled, .card.disabled { opacity: 0.55; transform: none; box-shadow: none; }
-.card-title { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; line-height: 1.25; }
-.card-desc { color: var(--ink-soft); font-size: 0.88rem; line-height: 1.5; }
+.card-title { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; line-height: 1.25; }
+.card-desc { color: var(--ink-soft); font-size: 0.89rem; line-height: 1.5; }
+.card > .card-desc { flex-grow: 1; }
+.card-label {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  margin-bottom: 0.35rem;
+  color: var(--gold);
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.card-label .msr { font-size: 1.1rem; vertical-align: 0; }
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.8rem;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0.6rem 0 0.9rem;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+}
+.card-meta .num { color: var(--ink); font-size: 0.95rem; }
+.card-cta {
+  display: inline-flex;
+  gap: 0.3rem;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 2.35rem;
+  margin-top: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--line-ink);
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background var(--ease);
+}
+.card-cta .msr { font-size: 1.05rem; vertical-align: 0; transition: transform var(--ease); }
+@media (hover: hover) {
+  button.card:hover:not(:disabled) .card-cta { background: var(--paper-deep); }
+  button.card:hover:not(:disabled) .card-cta .msr { transform: translateX(2px); }
+}
+.module-card .card-title { font-size: 1.45rem; line-height: 1.15; }
 .card-chip {
   align-self: flex-start;
   padding: 0.05rem 0.45rem;
@@ -481,22 +575,11 @@ button.card, a.card { cursor: pointer; }
   border-radius: var(--radius);
   color: var(--ink);
 }
-.card-foot {
-  display: flex;
-  gap: 0.6rem;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-  padding-top: 0.6rem;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 0.78rem;
-}
-.card-rule { border-top: 3px solid var(--line-ink); }
 
 .panel {
   padding: 1.3rem 1.3rem 1.4rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
 }
@@ -528,7 +611,7 @@ textarea {
   width: 100%;
   min-height: var(--control);
   padding: 0.5rem 0.8rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--control-line);
   border-radius: var(--radius);
   background: var(--card);
   color: var(--ink);
@@ -567,6 +650,22 @@ label { font-size: 0.9rem; }
 .pref-label { font-weight: 500; }
 .pref-label small { display: block; color: var(--muted); font-size: 0.8rem; font-weight: 400; }
 
+/* Stat strip (session summary, progress page): mono numbers between rules. */
+.stat-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  margin: 0;
+  border-top: 1px solid var(--line-ink);
+  border-bottom: 1px solid var(--line);
+}
+.stat { position: relative; padding: 1rem 1.2rem 1.1rem; border-left: 1px solid var(--line); }
+.stat:first-child { padding-left: 0; border-left: 0; }
+.stat dt { color: var(--muted); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.stat dd { margin: 0.3rem 0 0; font-size: 1.9rem; line-height: 1.1; }
+.stat-note { display: block; margin-top: 0.15rem; color: var(--verde); font-family: var(--mono); font-size: 0.78rem; }
+.stat-strip.compact { margin: 1.4rem 0; text-align: left; }
+.stat-strip.compact .stat dd { font-size: 1.45rem; }
+
 .progress-track, .session-bar {
   height: 4px;
   overflow: hidden;
@@ -587,83 +686,175 @@ label { font-size: 0.9rem; }
 
 /* ---------- 5. Home ---------- */
 
+/* Hero: copy left, a pure-CSS stack of word cards right. */
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 1fr);
-  gap: 2rem;
-  align-items: stretch;
-  padding-bottom: 2.2rem;
   border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--hero-wash), transparent 60%);
+  overflow: hidden;
 }
-.hero-copy { display: flex; flex-direction: column; justify-content: center; }
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 3rem;
+  align-items: center;
+  width: min(100% - var(--gutter), var(--wrap));
+  margin: 0 auto;
+  padding: 4.2rem 0 4rem;
+}
 .hero-title {
-  max-width: 18ch;
-  font-family: var(--serif);
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
-  font-weight: 600;
+  max-width: 13em;
+  font-size: clamp(2.3rem, 4.6vw, 3.9rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
-.hero-lede { max-width: 36rem; margin-top: 1rem; color: var(--ink-soft); font-size: 1.05rem; line-height: 1.6; }
+.hero-sub { max-width: 34rem; margin-top: 1.1rem; color: var(--ink-soft); font-size: 1.06rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.8rem; }
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.6rem;
+  margin: 2.4rem 0 0;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+.hero-stats > div { display: flex; flex-direction: column-reverse; gap: 0.1rem; }
+.hero-stats dd { margin: 0; }
+.stat-num { font-family: var(--mono); font-size: 1.9rem; font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; }
+.stat-label { color: var(--ink-soft); font-size: 0.86rem; }
 
-.wotd {
+.hero-visual { display: flex; justify-content: center; }
+.card-stack {
   position: relative;
+  width: min(100%, 25rem);
+  aspect-ratio: 4 / 4.2;
+}
+/* --mx/--my follow the pointer, --sy the scroll (lib/editorial.js); --depth scales them per sheet. */
+.sheet {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-  padding: 1.4rem 1.4rem 1.3rem;
-  border: 1px solid var(--line-ink);
-  border-top-width: 4px;
-  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  border-radius: 2px;
   background: var(--card);
   box-shadow: var(--shadow-1);
+  transform:
+    translate3d(calc(var(--mx, 0px) * var(--depth, 1)), calc(var(--my, 0px) * var(--depth, 1) + var(--sy, 0px) * var(--depth, 1)), 0)
+    rotate(var(--rot, 0deg));
+  transition: transform 0.25s ease-out;
 }
+.sheet-back { --rot: -7deg; --depth: 0.4; top: 4%; left: 0; width: 60%; height: 62%; padding: 1rem; }
+.sheet-mid { --rot: 5deg; --depth: 0.7; top: 0; right: 0; width: 58%; height: 56%; padding: 1rem; }
+.sheet-front {
+  --rot: -1.5deg;
+  --depth: 1;
+  left: 10%;
+  bottom: 0;
+  gap: 0.35rem;
+  width: 76%;
+  min-height: 70%;
+  padding: 1.5rem 1.4rem 1.3rem;
+  border-color: var(--line-ink);
+  border-top-width: 3px;
+  box-shadow: var(--shadow-2);
+}
+.sheet-tag {
+  align-self: flex-start;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid var(--line-ink);
+  border-radius: var(--radius);
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.sheet-tag-red { border-color: var(--red); color: var(--red); }
+.sheet-word {
+  margin-top: 0.7rem;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sheet-gloss { color: var(--muted); font-size: 0.78rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sheet-lines, .sheet-grid { display: block; flex: 1; margin-top: 0.8rem; }
+.sheet-lines { background: repeating-linear-gradient(180deg, var(--paper-deep) 0 2px, transparent 2px 14px); }
+.sheet-grid {
+  background:
+    repeating-linear-gradient(180deg, var(--paper-deep) 0 1.5px, transparent 1.5px 18px),
+    repeating-linear-gradient(90deg, var(--paper-deep) 0 1.5px, transparent 1.5px 34%);
+}
+.cover-rule { display: block; width: 100%; height: 0; margin: 0.7rem 0 0.4rem; border-top: 3px double var(--line-ink); }
 .wotd-word {
   display: flex;
   gap: 0.6rem;
   align-items: center;
   justify-content: space-between;
   font-family: var(--serif);
-  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-size: clamp(1.7rem, 3.2vw, 2.3rem);
   font-weight: 600;
   line-height: 1.1;
   overflow-wrap: anywhere;
 }
-.wotd-gram { color: var(--muted); font-size: 0.8rem; }
-.wotd-gloss { margin-top: 0.4rem; font-size: 1.1rem; font-weight: 500; }
-.wotd-en { font-size: 0.92rem; font-style: italic; }
-
-.stat-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-  margin: 2rem 0 0;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--card);
+.wotd-gram { color: var(--muted); font-size: 0.78rem; }
+.wotd-gloss { margin-top: 0.5rem; font-size: 1.08rem; font-weight: 500; }
+.wotd-en { color: var(--ink-soft); font-family: var(--serif); font-size: 0.95rem; font-style: italic; }
+.stamp {
+  --depth: 1.25;
+  position: absolute;
+  right: 2%;
+  bottom: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px var(--card), inset 0 0 0 4px var(--red);
+  background: var(--stamp-bg);
+  color: var(--red);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.7;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
+  transform:
+    translate3d(calc(var(--mx, 0px) * var(--depth)), calc(var(--my, 0px) * var(--depth) + var(--sy, 0px) * var(--depth)), 0)
+    rotate(-12deg);
 }
-.stat { position: relative; padding: 1rem 1.2rem; border-left: 1px solid var(--line); }
-.stat:first-child { border-left: 0; }
-.stat dt { color: var(--muted); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
-.stat dd { margin: 0.3rem 0 0; font-size: 1.7rem; line-height: 1.1; }
-.stat-note { display: block; margin-top: 0.15rem; color: var(--verde); font-family: var(--mono); font-size: 0.78rem; }
-.stat-strip.compact { margin: 1.2rem 0; }
-.stat-strip.compact .stat dd { font-size: 1.35rem; }
 
+/* CEFR level cards — same anatomy as every .card, with a big serif code. */
 .level-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
-  gap: 0.8rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.9rem;
 }
-.level-card { gap: 0.3rem; }
-.level-code {
-  font-family: var(--serif);
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--red);
+.level-code { font-family: var(--serif); font-size: 2.3rem; font-weight: 700; line-height: 1; }
+.level-card .progress-track { margin: -0.4rem 0 0.9rem; }
+
+.module-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); gap: 0.9rem; }
+
+/* "Metodo": three numbered steps under a rule. */
+.method-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.level-card .progress-track { margin-top: 0.5rem; }
-.level-card .card-foot { padding-top: 0.3rem; }
+.method-steps li { padding-top: 1rem; border-top: 1px solid var(--line-ink); }
+.method-num { display: block; margin-bottom: 0.5rem; color: var(--gold); font-size: 0.85rem; letter-spacing: 0.1em; }
+.method-steps h3 { font-size: 1.25rem; }
+.method-steps p { margin-top: 0.5rem; color: var(--ink-soft); font-size: 0.93rem; }
+
+.view-bands > .empty { width: min(100% - var(--gutter), var(--wrap)); margin: 2.4rem auto; }
 
 /* ---------- 6. Practice (quiz / spell + legacy module markup) ---------- */
 
@@ -871,7 +1062,7 @@ input.spell-input {
 .wordbook-name:hover { text-decoration: underline; text-underline-offset: 3px; }
 .wordbook-actions { display: inline-flex; gap: 0.25rem; }
 .wordbook-actions .icon-btn { width: 2.1rem; height: 2.1rem; font-size: 0.9rem; }
-.mode-grid { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
+.mode-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); }
 
 .browse-controls { display: grid; gap: 0.6rem; margin-bottom: 1rem; }
 .search-field { position: relative; }
@@ -904,7 +1095,7 @@ input.spell-input {
 
 .progress-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
   gap: 1rem;
   margin-top: 1.4rem;
 }
@@ -927,11 +1118,16 @@ dl.kv dd { margin: 0; text-align: right; }
 
 .settings-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
 }
+/* 四张卡片固定两列：auto-fit 在宽屏排成 3+1，第二行只剩一张孤卡 */
+@media (min-width: 48rem) { .settings-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .settings-grid .panel + .panel { margin-top: 0; }
+/* 说明文字 / 快捷键表和下面的按钮行之间留出间距 */
+.settings-grid .panel > p.small,
+.settings-grid .panel > dl.kv { margin-bottom: 1rem; }
 .btn.danger { border-color: var(--red); color: var(--red); }
 @media (hover: hover) { .btn.danger:hover { background: var(--red-soft); } }
 .small { font-size: 0.84rem; }
@@ -952,7 +1148,14 @@ p.small { margin-top: 0.6rem; }
 .loading-inner .brand-mark { width: 3rem; height: 3rem; font-size: 1.4rem; animation: loading-pulse 1.4s ease-in-out infinite; }
 .loading-title { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; }
 .loading-progress-bar { width: 100%; height: 3px; overflow: hidden; background: var(--paper-deep); }
-.loading-progress-fill { width: 30%; height: 100%; background: var(--ink); animation: loading-slide 1.2s ease-in-out infinite; }
+/* Determinate by default (boot.js sets the width from real file counts);
+   indeterminate only until the first file lands. */
+.loading-progress-fill { width: 0; height: 100%; background: var(--ink); transition: width 0.2s ease; }
+.loading-progress-fill.is-indeterminate { width: 30%; animation: loading-slide 1.2s ease-in-out infinite; }
+.loading-error { display: grid; gap: 0.6rem; justify-items: center; }
+.loading-error-title { color: var(--red); font-size: 0.9rem; }
+.loading-error-files { margin: 0; padding: 0; list-style: none; color: var(--ink-soft); font-family: var(--mono); font-size: 0.78rem; word-break: break-all; }
+.loading-error-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
 .loading-detail { color: var(--muted); font-family: var(--mono); font-size: 0.8rem; }
 @keyframes loading-pulse { 50% { opacity: 0.45; } }
 @keyframes loading-slide { from { transform: translateX(-100%); } to { transform: translateX(340%); } }
@@ -990,9 +1193,22 @@ p.small { margin-top: 0.6rem; }
 
 /* ---------- 10. Responsive ---------- */
 
+@media (max-width: 1100px) {
+  .level-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
 @media (max-width: 960px) {
+  .topbar .brand-name { display: none; }
+  .topnav a { padding: 0.3rem 0.6rem; }
+  .hero-inner { gap: 2rem; }
+  .vocab-layout { grid-template-columns: 1fr; }
+}
+
+/* Mobile nav: the text nav folds into a dropdown under the topbar. */
+@media (max-width: 760px) {
   .nav-toggle { display: inline-flex; }
   .topbar-tools { margin-left: auto; }
+  .topbar .brand-name { display: inline; }
   .topnav {
     position: absolute;
     top: 100%;
@@ -1008,17 +1224,38 @@ p.small { margin-top: 0.6rem; }
     box-shadow: var(--shadow-1);
   }
   body.nav-open .topnav { display: flex; }
-  .topnav a { min-height: 2.9rem; }
+  .topnav a { min-height: 3rem; padding: 0.3rem 0.75rem; border-bottom: 1px solid var(--paper-soft); }
+  .topnav a:hover { box-shadow: none; background: var(--paper-soft); }
   .topnav a[aria-current="page"] { box-shadow: inset 3px 0 0 var(--red); }
-  .hero, .vocab-layout { grid-template-columns: 1fr; }
+
+  .section { padding: 2.8rem 0 2.6rem; }
+  .hero-inner { grid-template-columns: 1fr; padding: 2.6rem 0 3rem; }
+  .hero-visual { margin-top: 0.6rem; }
+  .card-stack { width: min(100%, 22rem); }
+  .hero-stats { gap: 0.8rem 1.8rem; }
+  .stat-num { font-size: 1.6rem; }
+  /* level cards: horizontal scroll-snap row */
+  .level-grid {
+    display: flex;
+    gap: 0.8rem;
+    margin: 0 calc(var(--gutter) / -2);
+    padding: 0.25rem calc(var(--gutter) / 2) 0.9rem;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+  .level-card { flex: 0 0 15rem; scroll-snap-align: start; }
+  .method-steps { grid-template-columns: 1fr; gap: 1.4rem; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .wrap { padding-top: 1.4rem; }
   .topbar .brand-name { display: none; }
   .lang-switch button { min-width: 2.3rem; padding: 0 0.4rem; }
+  .stamp { width: 5.4rem; height: 5.4rem; font-size: 0.52rem; }
+  .sheet-front { left: 4%; width: 84%; padding: 1.2rem 1.1rem 1.1rem; }
   .stat-strip { grid-template-columns: repeat(2, 1fr); }
-  .stat:nth-child(odd) { border-left: 0; }
+  .stat:nth-child(odd) { padding-left: 0; border-left: 0; }
   .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
   .word-row { grid-template-columns: 1fr auto; }
   .word-gloss { grid-column: 1 / -1; grid-row: 2; }
@@ -1027,14 +1264,28 @@ p.small { margin-top: 0.6rem; }
   .practice-actions .btn, .practice-actions .primary-btn { flex: 1 1 auto; }
 }
 
+/* Reveal on scroll (lib/editorial.js).  Only hidden when JS is running and
+   motion is allowed, so the page never depends on the observer firing. */
+html.js .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.55s ease, transform 0.55s ease; }
+html.js .reveal.in { opacity: 1; transform: none; }
+html.js .reveal-group > .reveal:nth-child(2) { transition-delay: 0.06s; }
+html.js .reveal-group > .reveal:nth-child(3) { transition-delay: 0.12s; }
+html.js .reveal-group > .reveal:nth-child(4) { transition-delay: 0.18s; }
+html.js .reveal-group > .reveal:nth-child(5) { transition-delay: 0.24s; }
+html.js .reveal-group > .reveal:nth-child(n+6) { transition-delay: 0.3s; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  html.js .reveal { opacity: 1; transform: none; transition: none; }
+  .sheet { transform: rotate(var(--rot, 0deg)); }
+  .stamp { transform: rotate(-12deg); }
 }
+
 /* Dimenticato — paper design system, section 8: Modules.
-   Feature-module screens and modals kept verbatim from the old app
-   (typing game, conjugation, verb collocations, grammar book, cognates,
-   German course, community wordbooks, wordbook editor, stats, help).
-   Depends on the tokens / primitives in styles.new.css (sections 1–4).
+   Feature-module screens and modals (typing game, conjugation, verb
+   collocations, grammar book, cognates, course, community wordbooks,
+   wordbook editor, stats, help) on top of the tokens / primitives in
+   sections 1–4 above.
 
    8.0  module page wrapper + shared answer primitives (options / feedback)
    8.1  modal shell
@@ -1043,7 +1294,7 @@ p.small { margin-top: 0.6rem; }
    8.4  conjugation / collocation practice
    8.5  grammar book + verb-collocation reader
    8.6  cognates
-   8.7  German course
+   8.7  Course route
    8.8  community wordbooks (browse + upload + preview)
    8.9  wordbook editor + word dialogs
    8.10 enhanced stats modal
@@ -1059,19 +1310,28 @@ p.small { margin-top: 0.6rem; }
 }
 .container.narrow { width: min(100% - 2.5rem, var(--narrow)); }
 
-/* `.page` is also the page-wrapper class in styles.new.css — reset the
-   wrapper geometry when it is used as the module title. */
+/* Module page title — same scale as .page-title in the hubs. */
 h1.page {
-  width: auto;
   margin: 0.2rem 0 0.4rem;
-  padding: 0;
-  font-family: var(--serif);
-  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
-  font-weight: 600;
-  line-height: 1.12;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
 }
-.container > .back-link { margin-bottom: 1.2rem; }
+.container > .back-link { margin-bottom: 1.4rem; }
 .container > .desc { max-width: var(--narrow); margin-bottom: 1.6rem; }
+/* Module page header (back link · eyebrow · serif h1 · desc) closes with a
+   hairline rule, like the hub page bands. */
+.container > h1.page + .desc {
+  max-width: none;
+  margin-bottom: 2rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Static screens (browse / settings) use the same header rule. */
+.wrap > .section-head:first-child {
+  max-width: none;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--line);
+}
 
 /* `.wrap` is the page wrapper too; modules use it as a flex-wrap modifier
    on chip rows (`chips wrap`). Neutralise the wrapper geometry there. */
@@ -1182,6 +1442,7 @@ h1.page {
   max-height: 88vh;
   overflow: auto;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
   color: var(--ink);
@@ -1277,19 +1538,6 @@ h1.page {
 [data-theme="dark"] .form-btn.primary:hover:not(:disabled) { color: var(--on-ink); }
 
 /* ---------- 8.2 Typing game ---------- */
-
-/* Entry card on the vocabulary-modes screen */
-.card.typing-feature-card {
-  flex-direction: row;
-  gap: 1.1rem;
-  align-items: center;
-  margin-top: 0.9rem;
-  border-style: dashed;
-}
-.card.typing-feature-card:hover { border-style: solid; }
-.typing-feature-text { display: flex; flex: 1; flex-direction: column; gap: 0.3rem; }
-.typing-feature-arrow { color: var(--red); transition: transform var(--ease); }
-.typing-feature-card:hover .typing-feature-arrow { transform: translateX(3px); }
 
 /* Setup */
 .typing-mode-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 1.3rem; }
@@ -1388,6 +1636,8 @@ h1.page {
   background: var(--card);
   transition: box-shadow var(--ease), border-color var(--ease);
 }
+#typingGameKeys { justify-content: center; margin-top: 0.6rem; }
+.typing-feedback { margin-top: 0.5rem; color: var(--gold); font-size: 0.86rem; text-align: center; }
 .typing-input-row:focus-within { outline: 2px solid var(--red); outline-offset: 1px; }
 .typing-input-row .msr { color: var(--muted); }
 #typingGameInput {
@@ -1432,6 +1682,7 @@ h1.page {
   max-width: 24rem;
   padding: 1.6rem 1.8rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
   box-shadow: var(--shadow-2);
@@ -1472,11 +1723,11 @@ h1.page {
   margin-top: 1.4rem;
   padding: 1.3rem 1.3rem 1.4rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
   transition: border-color var(--ease);
 }
-.conj-setup-panel.conj-context-active { border-color: var(--line-ink); box-shadow: inset 0 3px 0 var(--red); }
 .conj-setup-panel + .sub-label { margin-top: 2rem; }
 
 .conj-module-toolbar {
@@ -1664,7 +1915,7 @@ h1.page {
   font-size: 0.72rem;
   letter-spacing: 0.04em;
 }
-.conj-lookup-tense-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.9rem; }
+.conj-lookup-tense-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 0.9rem; }
 .conj-lookup-tense-title {
   margin-bottom: 0.4rem;
   color: var(--muted);
@@ -1705,7 +1956,7 @@ h1.page {
 /* Full-paradigm fill-in */
 .conj-full-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
   gap: 0.6rem;
   width: 100%;
   margin-bottom: 1rem;
@@ -1737,7 +1988,7 @@ h1.page {
 .conj-full-item.incorrect .conj-full-answer { color: var(--red); }
 
 /* Collocation practice: setup card */
-.vcp-title { margin-top: 0.2rem; font-size: 1.5rem; }
+.vcp-title { margin-top: 0.2rem; font-size: clamp(1.5rem, 3vw, 1.9rem); }
 .vc-practice-config-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; margin-top: 1.2rem; }
 .vc-practice-config-block { display: flex; flex-direction: column; gap: 0.35rem; }
 .vc-practice-label {
@@ -1820,6 +2071,7 @@ h1.page {
   margin: 1.2rem auto 2rem;
   overflow: hidden;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
 }
@@ -1834,9 +2086,18 @@ h1.page {
   overflow: hidden;
   border-right: 1px solid var(--line);
   background: var(--paper-soft);
-  transition: width 0.22s ease, min-width 0.22s ease;
+  visibility: visible;
+  transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0s;
 }
-.grammar-book-layout.sidebar-collapsed .grammar-nav-sidebar { width: 0; min-width: 0; border-right-width: 0; }
+/* Collapsed: also visibility:hidden (after the width animation) so the links
+   inside are out of the tab order and the accessibility tree. */
+.grammar-book-layout.sidebar-collapsed .grammar-nav-sidebar {
+  width: 0;
+  min-width: 0;
+  border-right-width: 0;
+  visibility: hidden;
+  transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0.22s;
+}
 
 .grammar-nav-header {
   display: flex;
@@ -1899,8 +2160,9 @@ h1.page {
 .grammar-chapter-btn.open .grammar-chapter-arrow { transform: rotate(90deg); }
 .grammar-chapter-label { flex: 1; }
 
-.grammar-topic-list { max-height: 2000px; overflow: hidden; transition: max-height 0.25s ease; }
-.grammar-topic-list.collapsed { max-height: 0; }
+/* No max-height animation: long chapters used to be clipped at 2000px.
+   display:none also keeps collapsed links out of the tab order. */
+.grammar-topic-list.collapsed { display: none; }
 .grammar-topic-link {
   display: block;
   width: 100%;
@@ -1974,11 +2236,10 @@ h1.page {
   text-align: center;
 }
 .msr.grammar-welcome-icon { color: var(--line); font-size: 3rem; }
-.grammar-welcome h2 { color: var(--ink); font-size: 1.6rem; }
+.grammar-welcome h2 { color: var(--ink); font-size: clamp(1.6rem, 3vw, 2.1rem); }
 .grammar-welcome p { font-size: 0.92rem; }
 
 .grammar-loading { padding: 1rem 0; color: var(--muted); font-size: 0.88rem; }
-.grammar-figure-missing { margin: 1rem 0; padding: 0.8rem 1rem; font-size: 0.85rem; }
 
 /* Rendered markdown */
 .grammar-markdown {
@@ -2149,16 +2410,18 @@ h1.page {
 }
 .vc-panel-intro h2 { margin-bottom: 0.4rem; font-size: clamp(1.5rem, 2.6vw, 1.9rem); }
 .vc-panel-intro p { color: var(--ink-soft); font-size: 0.95rem; }
+.vc-panel-intro p.vc-verb-gloss { color: var(--ink); font-size: 1.05rem; margin-bottom: 0.3rem; }
 
 .vc-card-grid,
 .vc-search-choice-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
   gap: 0.9rem;
 }
 .vc-card {
   padding: 1.1rem 1.15rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
 }
@@ -2209,7 +2472,7 @@ h1.page {
 .vc-search-choice-name { font-family: var(--serif); font-size: 1.08rem; font-weight: 600; }
 .vc-search-choice-meta { color: var(--muted); font-family: var(--mono); font-size: 0.74rem; }
 
-/* `.vc-empty-state` base look comes from styles.new.css (.empty family) */
+/* `.vc-empty-state` base look comes from the .empty family in section 4 */
 .vc-empty-state {
   display: flex;
   flex-direction: column;
@@ -2273,6 +2536,7 @@ h1.page {
 .quiz-card {
   padding: 1.4rem 1.5rem 1.6rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
 }
@@ -2385,12 +2649,13 @@ h1.page {
   }
 }
 
-/* ---------- 8.7 German course ---------- */
+/* ---------- 8.7 Course route (course.js) ---------- */
 
-#germanCourseLevelChips { margin-bottom: 1rem; }
-#germanCourseLevelChips .chip { min-width: 3.2rem; font-family: var(--mono); letter-spacing: 0.06em; }
+#courseLevelChips { margin-bottom: 1rem; }
+#courseNotePanel { margin-top: 1rem; }
+#courseLevelChips .chip { min-width: 3.2rem; font-family: var(--mono); letter-spacing: 0.06em; }
 
-#germanCourseLevelSummary {
+#courseLevelSummary {
   margin-bottom: 2rem;
   padding: 1.3rem 1.3rem 1.4rem;
   border: 1px solid var(--line);
@@ -2398,19 +2663,30 @@ h1.page {
   border-radius: var(--radius);
   background: var(--card);
 }
-#germanCourseLevelSummary:empty { display: none; }
-#germanCourseLevelSummary .primary-btn { margin-top: 1rem; }
-#germanCourseScreen .about-body { color: var(--ink-soft); font-size: 0.93rem; line-height: 1.65; }
-#germanCourseScreen .about-note { color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
-#germanCourseLevelSummary .about-note { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.02em; }
+#courseLevelSummary:empty { display: none; }
+#courseLevelSummary .primary-btn { margin-top: 1rem; }
+#courseScreen .about-body { color: var(--ink-soft); font-size: 0.93rem; line-height: 1.65; }
+#courseScreen .about-note { color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
+#courseLevelSummary .about-note { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.02em; }
 
-#germanCourseScreen .section-head-row .card-desc { display: block; }
-#germanCourseUnitCards .card[role="button"] { cursor: pointer; }
-@media (hover: hover) {
-  #germanCourseUnitCards .card[role="button"]:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
+#courseScreen .section-head-row .card-desc { display: block; }
+#courseUnitCards .course-unit-card { cursor: pointer; }
+#courseUnitCards .course-unit-open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
 }
-#germanCourseUnitCards .card .chips { margin-top: 0.2rem; }
-#germanCourseUnitCards .card .chip { min-height: 1.8rem; padding: 0.1rem 0.55rem; font-size: 0.78rem; }
+#courseUnitCards .course-unit-open:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+@media (hover: hover) {
+  #courseUnitCards .course-unit-card:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
+}
+#courseUnitCards .card .chips { margin-top: 0.2rem; }
+#courseUnitCards .card .chip { min-height: 1.8rem; padding: 0.1rem 0.55rem; font-size: 0.78rem; }
 
 /* ---------- 8.8 Community wordbooks ---------- */
 
@@ -2433,7 +2709,7 @@ h1.page {
 
 .community-wordbook-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18.5rem), 1fr));
   gap: 0.9rem;
 }
 .community-wordbook-list > .loading-message,
@@ -2445,16 +2721,19 @@ h1.page {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  padding: 1.15rem 1.1rem 1.1rem;
+  padding: 1.3rem 1.15rem 1.15rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
-  transition: border-color var(--ease), box-shadow 0.18s ease;
+  transition: border-color var(--ease), box-shadow 0.18s ease, transform 0.18s ease;
 }
-.community-wordbook-card:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); }
+@media (hover: hover) {
+  .community-wordbook-card:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
+}
 
 .wordbook-card-header { display: flex; gap: 0.7rem; align-items: flex-start; justify-content: space-between; }
-.wordbook-card-title { font-size: 1.12rem; line-height: 1.25; }
+.wordbook-card-title { font-size: 1.3rem; line-height: 1.2; }
 .wordbook-difficulty-badge {
   flex: none;
   padding: 0.05rem 0.45rem;
@@ -2528,7 +2807,7 @@ h1.page {
 .tag-option input { width: 0.95rem; height: 0.95rem; accent-color: var(--ink); }
 .tag-option:has(input:checked) { border-color: var(--ink); background: var(--ink); color: var(--on-ink); }
 .tag-option:has(input:checked) input { accent-color: var(--on-ink); }
-#uploadFileName { color: var(--muted) !important; font-family: var(--mono); font-size: 0.8rem; }
+#uploadFileName { margin-left: 1rem; color: var(--muted); font-family: var(--mono); font-size: 0.8rem; }
 
 /* Preview modal */
 #previewWordbookMeta:empty { display: none; }
@@ -2637,61 +2916,12 @@ h1.page {
 .wordbook-select-name { flex: 1; min-width: 0; font-weight: 600; }
 .wordbook-select-count { flex: none; color: var(--muted); font-size: 0.8rem; }
 
-/* ---------- 8.10 Enhanced stats modal ---------- */
+/* ---------- 8.10 Progress charts + history (进度页，stats-charts.js) ---------- */
 
-.enhanced-stats-modal { max-width: 60rem; }
-.enhanced-stats-body { padding: 0; }
-
-.stats-tabs { display: flex; padding: 0 1.3rem; border-bottom: 1px solid var(--line); }
-.stats-tab-btn {
-  min-height: 2.8rem;
-  padding: 0.5rem 1rem;
-  border: 0;
-  background: none;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 0.76rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  transition: color var(--ease), box-shadow var(--ease);
-}
-.stats-tab-btn:hover { color: var(--ink); }
-.stats-tab-btn.active { box-shadow: inset 0 -2px 0 var(--red); color: var(--ink); }
-
-.stats-tab-content { display: none; padding: 1.3rem; }
-.stats-tab-content.active { display: block; }
-
-.stats-section + .stats-section { margin-top: 1.6rem; }
-.enhanced-stats-body h4 {
-  display: flex;
-  gap: 0.4rem;
-  align-items: center;
-  margin-bottom: 0.8rem;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 0.74rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.enhanced-stats-body h4 .msr { color: var(--red); font-size: 1.05rem; }
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  border-top: 3px solid var(--line-ink);
-  border-bottom: 1px solid var(--line);
-}
-.stat-card { padding: 0.9rem 1rem 1rem; }
-.stats-grid .stat-card + .stat-card { border-left: 1px solid var(--line); }
-.stat-card-label {
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.stat-card-value { margin-top: 0.3rem; font-family: var(--mono); font-size: 1.8rem; font-weight: 500; letter-spacing: -0.03em; line-height: 1.1; }
+.progress-section + .progress-section { margin-top: 1rem; }
+.progress-section .chart-container:last-child,
+.progress-section .charts-row .chart-container { margin-bottom: 0; }
+.progress-section .stats-table-container + p { margin-top: 0.75rem; }
 
 .chart-container {
   position: relative;
@@ -2754,31 +2984,15 @@ h1.page {
   background: var(--paper-soft);
 }
 
-.feature-box,
-.usage-box {
+.feature-box {
   margin-bottom: 1rem;
   padding: 1rem 1.2rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--card);
 }
-.feature-box > :last-child,
-.usage-box > :last-child { margin-bottom: 0; }
+.feature-box > :last-child { margin-bottom: 0; }
 .feature-box.highlight { border-color: var(--line-ink); box-shadow: inset 0 3px 0 var(--red); }
-.usage-box { border-left: 3px solid var(--verde); }
-
-.code-block {
-  margin: 0.8rem 0;
-  padding: 0.9rem 1rem;
-  overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper-soft);
-  font-family: var(--mono);
-  font-size: 0.84rem;
-  line-height: 1.6;
-  white-space: pre;
-}
 
 .help-tip {
   margin: 0.9rem 0;
@@ -2847,12 +3061,16 @@ h1.page {
     min-width: 0;
     border-right-width: 0;
     box-shadow: var(--shadow-2);
+    visibility: hidden;
+    transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0.22s;
   }
   .grammar-book-layout.sidebar-open .grammar-nav-sidebar {
     width: 82vw;
     min-width: 16rem;
     max-width: 20rem;
     border-right-width: 1px;
+    visibility: visible;
+    transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0s;
   }
   .grammar-content-body { padding: 1.2rem 1rem 3rem; }
   .vc-search-panel { padding: 0.8rem 0.85rem 0.6rem; }
@@ -2876,16 +3094,10 @@ h1.page {
   .editor-word-main { flex-direction: column; gap: 0.1rem; }
   .charts-row { grid-template-columns: 1fr; }
   .chart-container { height: 250px; }
-  .stats-grid { grid-template-columns: 1fr 1fr; }
-  .stats-grid .stat-card:nth-child(odd) { border-left: 0; }
-  .stats-grid .stat-card:nth-child(n + 3) { border-top: 1px solid var(--line); }
-  .stats-tabs { padding: 0 0.6rem; overflow-x: auto; }
-  .stats-tab-content { padding: 1rem; }
 
   /* Help */
   .help-modal-body { padding: 1rem; }
   .help-section h2 { font-size: 1.35rem; }
-  .code-block { font-size: 0.78rem; }
 }
 
 @media (max-width: 640px) {
@@ -2903,13 +3115,10 @@ h1.page {
   #conjugationModeButtons { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .editor-toolbar,
   .editor-toolbar > div:first-child { flex-direction: column; align-items: stretch; }
   .editor-toolbar-btn { width: 100%; }
-  .stats-grid { grid-template-columns: 1fr; }
-  .stats-grid .stat-card + .stat-card { border-top: 1px solid var(--line); border-left: 0; }
-  .stat-card-value { font-size: 1.5rem; }
   .typing-final-score { font-size: 2.4rem; }
 }
 
@@ -2918,6 +3127,5 @@ h1.page {
   .typing-overlay-card,
   .typing-input-row.typing-shake,
   #typingGameInput.typing-shake { animation: none; }
-  .grammar-nav-sidebar,
-  .grammar-topic-list { transition: none; }
+  .grammar-nav-sidebar { transition: none; }
 }

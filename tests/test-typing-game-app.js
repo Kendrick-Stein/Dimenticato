@@ -7,7 +7,7 @@
  * 引擎测试（test-typing-game.js）只覆盖纯逻辑；这里用 dom-shim 把
  * typing-game-app.js 整个加载起来，验证：入口卡片委托 → open() 渲染设置屏
  * → 点开始 → 会话建立 → 模拟打字自动击落 → 变位模式建池 → 本地纪录写入。
- * 数据文件用最小桩（DIM_VOCAB schema v1 + lib/vocab.js / CONJUGATION_ALL_TENSES_DATA），
+ * 数据文件用最小桩（DIM_VOCAB schema v1 + lib/vocab.js / DIM_DATA.conjugations），
  * 不加载真实词库，跑得快。
  */
 'use strict';
@@ -81,16 +81,28 @@ win.DIM_VOCAB = {
     ]
   }
 };
-win.CONJUGATION_ALL_TENSES_DATA = [{
-  rank: 1, infinitive: 'essere', english: 'to be',
-  tenses: {
-    indicativo_presente: {
-      type: 'person', group_label: 'Indicativo', tense_label: 'Presente',
-      forms: { io: 'sono', tu: 'sei', lui_lei: 'è', noi: 'siamo', voi: 'siete', loro: 'sono' }
-    },
-    participio: { type: 'single', group_label: 'Participio', tense_label: 'Passato', forms: ['stato', 'stata'] }
-  }
-}];
+// 模块数据桩：只要 LangLoader.data（真 loader 会往 document 里插 <script>）
+win.LangLoader = {
+  data: (lang, module) => ((win.DIM_DATA || {})[module] || {})[win.Languages.code(lang)] || null
+};
+win.DIM_DATA = { conjugations: {} };
+// conjugations/1 桩（docs/data-schema.md）：人称 / 时态标签在数据头，动词只存 6 元组或字符串
+const personStub = (labels, zh) => labels.map((label, i) => ({ key: 'p' + (i + 1), label, zh: zh[i] }));
+win.DIM_DATA.conjugations.it = {
+  meta: { schema: 'conjugations/1', lang: 'it', count: 1 },
+  persons: personStub(['io', 'tu', 'lui / lei', 'noi', 'voi', 'loro'], ['我', '你', '他/她', '我们', '你们', '他们']),
+  tenses: [
+    { key: 'indicativo_presente', group: 'indicativo', groupLabel: 'Indicativo', label: 'Presente', zh: '直陈式现在时', type: 'person' },
+    { key: 'participio_passato', group: 'participio', groupLabel: 'Participio', label: 'Passato', zh: '过去分词', type: 'single' }
+  ],
+  verbs: [{
+    word: 'essere', rank: 1, freq: 2090, zh: '是', en: 'to be',
+    tenses: {
+      indicativo_presente: ['sono', 'sei', 'è', 'siamo', 'siete', 'sono'],
+      participio_passato: 'stato/stata'
+    }
+  }]
+};
 
 // ===== 加载模块 + 触发 DOMContentLoaded =====
 ['lib/languages.js', 'lib/vocab.js', 'lib/typing-game.js', 'typing-game-app.js'].forEach((file) => {
@@ -233,7 +245,7 @@ group('conjugation mode', () => {
     .concat(session.game.items.map((i) => i.answer));
   const answers = new Set(all);
   assert(answers.has('sono'), '变位池应含 sono');
-  assert(answers.has('stato'), '变位池应含 stato（分词）');
+  assert(answers.has('stato') && answers.has('stata'), '变位池应含 stato / stata（单形时态按 / 拆开）');
   assert(answers.size >= 6, '变位池应覆盖全部形式，实得 ' + answers.size);
   TypingGameApp.close();
 });
@@ -277,15 +289,12 @@ group('restart hides overlay', () => {
 
 // ===== 英语变位模式的人称标签（回归：键不匹配时显示原始键名 he_she_it） =====
 group('english conjugation person labels', () => {
-  win.ENGLISH_CONJUGATION_DATA = [{
-    rank: 1, infinitive: 'be', english: 'to be',
-    tenses: {
-      indicative_present_simple: {
-        type: 'person', group_label: 'Indicative', tense_label: 'Present simple',
-        forms: { i: 'am', you: 'are', he_she_it: 'is', we: 'are', you_pl: 'are', they: 'are' }
-      }
-    }
-  }];
+  win.DIM_DATA.conjugations.en = {
+    meta: { schema: 'conjugations/1', lang: 'en', count: 1 },
+    persons: personStub(['I', 'you', 'he / she / it', 'we', 'you (pl.)', 'they'], ['我', '你', '他/她/它', '我们', '你们', '他们']),
+    tenses: [{ key: 'indicative_present_simple', group: 'indicative', groupLabel: 'Indicative', label: 'Present simple', zh: '一般现在时', type: 'person' }],
+    verbs: [{ word: 'be', rank: 1, freq: 6170, zh: '是', en: 'to be', tenses: { indicative_present_simple: ['am', 'are', 'is', 'are', 'are', 'are'] } }]
+  };
   TypingGameApp.open('english');
   const setup = win.document.getElementById('typingGameSetup');
   setup.querySelector('[data-typing-mode="conjugation"]').click();
@@ -295,10 +304,10 @@ group('english conjugation person labels', () => {
   const subs = game._pool.map((p) => p.sub)
     .concat(game.items.map((i) => i.sub)).join(' | ');
   assert(subs.indexOf('他/她/它') !== -1, '英语人称应显示中文标签，实得：' + subs);
-  assert(subs.indexOf('he_she_it') === -1, '不应残留原始键名 he_she_it');
+  assert(subs.indexOf('p3') === -1, '不应残留人称键 p3');
   assert(subs.indexOf('我') !== -1, '第一人称应显示「我」');
   TypingGameApp.close();
-  delete win.ENGLISH_CONJUGATION_DATA;
+  delete win.DIM_DATA.conjugations.en;
 });
 
 console.log(`Typing App OK: ${passed} passed, ${failed} failed`);

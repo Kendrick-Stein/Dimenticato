@@ -1,0 +1,5753 @@
+[
+{
+"verb": "riempire",
+"tense": "indicativo_presente",
+"person": 0,
+"from": "riempo/riempisco",
+"to": "riempio",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_presente",
+"person": 1,
+"from": "riemp/riempisci",
+"to": "riempi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_presente",
+"person": 2,
+"from": "riempe/riempisce",
+"to": "riempie",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_presente",
+"person": 3,
+"from": "riempamo",
+"to": "riempiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "riempte",
+"to": "riempite",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_presente",
+"person": 5,
+"from": "riempono/riempiscono",
+"to": "riempiono",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_imperfetto",
+"person": 0,
+"from": "riempvo/riempievo",
+"to": "riempivo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_imperfetto",
+"person": 1,
+"from": "riempvi/riempievi",
+"to": "riempivi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_imperfetto",
+"person": 2,
+"from": "riempva/riempieva",
+"to": "riempiva",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_imperfetto",
+"person": 3,
+"from": "riempvamo/riempievamo",
+"to": "riempivamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_imperfetto",
+"person": 4,
+"from": "riempvate/riempievate",
+"to": "riempivate",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_imperfetto",
+"person": 5,
+"from": "riempvano/riempievano",
+"to": "riempivano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "riempi/riempiei",
+"to": "riempii",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_passato_remoto",
+"person": 1,
+"from": "riempsti/riempiesti",
+"to": "riempisti",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "riemp/riempié",
+"to": "riempì",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_passato_remoto",
+"person": 3,
+"from": "riempmmo/riempiemmo",
+"to": "riempimmo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_passato_remoto",
+"person": 4,
+"from": "riempste/riempieste",
+"to": "riempiste",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "riemprono/riempierono",
+"to": "riempirono",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_futuro_semplice",
+"person": 0,
+"from": "riemprò",
+"to": "riempirò",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_futuro_semplice",
+"person": 1,
+"from": "riemprai",
+"to": "riempirai",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_futuro_semplice",
+"person": 2,
+"from": "riemprà",
+"to": "riempirà",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_futuro_semplice",
+"person": 3,
+"from": "riempremo",
+"to": "riempiremo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_futuro_semplice",
+"person": 4,
+"from": "riemprete",
+"to": "riempirete",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "indicativo_futuro_semplice",
+"person": 5,
+"from": "riempranno",
+"to": "riempiranno",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "condizionale_presente",
+"person": 0,
+"from": "riemprei",
+"to": "riempirei",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "condizionale_presente",
+"person": 1,
+"from": "riempresti",
+"to": "riempiresti",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "condizionale_presente",
+"person": 2,
+"from": "riemprebbe",
+"to": "riempirebbe",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "condizionale_presente",
+"person": 3,
+"from": "riempremmo",
+"to": "riempiremmo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "condizionale_presente",
+"person": 4,
+"from": "riempreste",
+"to": "riempireste",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "condizionale_presente",
+"person": 5,
+"from": "riemprebbero",
+"to": "riempirebbero",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_presente",
+"person": 0,
+"from": "riempa/riempisca",
+"to": "riempia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_presente",
+"person": 1,
+"from": "riempa/riempisca",
+"to": "riempia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_presente",
+"person": 2,
+"from": "riempa/riempisca",
+"to": "riempia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_presente",
+"person": 3,
+"from": "riempamo",
+"to": "riempiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_presente",
+"person": 4,
+"from": "riempate",
+"to": "riempiate",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_presente",
+"person": 5,
+"from": "riempano/riempiscano",
+"to": "riempiano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_imperfetto",
+"person": 0,
+"from": "riempssi/riempiessi",
+"to": "riempissi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_imperfetto",
+"person": 1,
+"from": "riempssi/riempiessi",
+"to": "riempissi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_imperfetto",
+"person": 2,
+"from": "riempsse/riempiesse",
+"to": "riempisse",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_imperfetto",
+"person": 3,
+"from": "riempssimo/riempiessimo",
+"to": "riempissimo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_imperfetto",
+"person": 4,
+"from": "riempste/riempieste",
+"to": "riempiste",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "congiuntivo_imperfetto",
+"person": 5,
+"from": "riempssero/riempiessero",
+"to": "riempissero",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "imperativo_affermativo",
+"person": 1,
+"from": "riemp/riempisci",
+"to": "riempi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "imperativo_affermativo",
+"person": 2,
+"from": "riempa/riempisca",
+"to": "riempia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "imperativo_affermativo",
+"person": 3,
+"from": "riempamo",
+"to": "riempiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "imperativo_affermativo",
+"person": 4,
+"from": "riempte/riempiete",
+"to": "riempite",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "imperativo_affermativo",
+"person": 5,
+"from": "riempano/riempiscano",
+"to": "riempiano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "imperativo_non",
+"person": 2,
+"from": "non riempa/non riempisca",
+"to": "non riempia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "imperativo_non",
+"person": 3,
+"from": "non riempamo",
+"to": "non riempiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "imperativo_non",
+"person": 4,
+"from": "non riempte/non riempiete",
+"to": "non riempite",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "imperativo_non",
+"person": 5,
+"from": "non riempano/non riempiscano",
+"to": "non riempiano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "infinito",
+"person": null,
+"from": "riempre/riempiere",
+"to": "riempire",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "gerundio",
+"person": null,
+"from": "riempendo",
+"to": "riempiendo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "riempire",
+"tense": "participio_presente",
+"person": null,
+"from": "riempente",
+"to": "riempiente",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem riempi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_presente",
+"person": 0,
+"from": "empo/empisco",
+"to": "empio",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_presente",
+"person": 1,
+"from": "emp/empisci",
+"to": "empi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_presente",
+"person": 2,
+"from": "empe/empisce",
+"to": "empie",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_presente",
+"person": 3,
+"from": "empamo",
+"to": "empiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "empte",
+"to": "empite",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_presente",
+"person": 5,
+"from": "empono/empiscono",
+"to": "empiono",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_imperfetto",
+"person": 0,
+"from": "empvo/empievo",
+"to": "empivo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_imperfetto",
+"person": 1,
+"from": "empvi/empievi",
+"to": "empivi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_imperfetto",
+"person": 2,
+"from": "empva/empieva",
+"to": "empiva",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_imperfetto",
+"person": 3,
+"from": "empvamo/empievamo",
+"to": "empivamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_imperfetto",
+"person": 4,
+"from": "empvate/empievate",
+"to": "empivate",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_imperfetto",
+"person": 5,
+"from": "empvano/empievano",
+"to": "empivano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "empi/empiei",
+"to": "empii",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_passato_remoto",
+"person": 1,
+"from": "empsti/empiesti",
+"to": "empisti",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "emp/empié",
+"to": "empì",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_passato_remoto",
+"person": 3,
+"from": "empmmo/empiemmo",
+"to": "empimmo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_passato_remoto",
+"person": 4,
+"from": "empste/empieste",
+"to": "empiste",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "emprono/empierono",
+"to": "empirono",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_futuro_semplice",
+"person": 0,
+"from": "emprò",
+"to": "empirò",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_futuro_semplice",
+"person": 1,
+"from": "emprai",
+"to": "empirai",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_futuro_semplice",
+"person": 2,
+"from": "emprà",
+"to": "empirà",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_futuro_semplice",
+"person": 3,
+"from": "empremo",
+"to": "empiremo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_futuro_semplice",
+"person": 4,
+"from": "emprete",
+"to": "empirete",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "indicativo_futuro_semplice",
+"person": 5,
+"from": "empranno",
+"to": "empiranno",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "condizionale_presente",
+"person": 0,
+"from": "emprei",
+"to": "empirei",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "condizionale_presente",
+"person": 1,
+"from": "empresti",
+"to": "empiresti",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "condizionale_presente",
+"person": 2,
+"from": "emprebbe",
+"to": "empirebbe",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "condizionale_presente",
+"person": 3,
+"from": "empremmo",
+"to": "empiremmo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "condizionale_presente",
+"person": 4,
+"from": "empreste",
+"to": "empireste",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "condizionale_presente",
+"person": 5,
+"from": "emprebbero",
+"to": "empirebbero",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_presente",
+"person": 0,
+"from": "empa/empisca",
+"to": "empia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_presente",
+"person": 1,
+"from": "empa/empisca",
+"to": "empia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_presente",
+"person": 2,
+"from": "empa/empisca",
+"to": "empia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_presente",
+"person": 3,
+"from": "empamo",
+"to": "empiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_presente",
+"person": 4,
+"from": "empate",
+"to": "empiate",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_presente",
+"person": 5,
+"from": "empano/empiscano",
+"to": "empiano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_imperfetto",
+"person": 0,
+"from": "empssi/empiessi",
+"to": "empissi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_imperfetto",
+"person": 1,
+"from": "empssi/empiessi",
+"to": "empissi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_imperfetto",
+"person": 2,
+"from": "empsse/empiesse",
+"to": "empisse",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_imperfetto",
+"person": 3,
+"from": "empssimo/empiessimo",
+"to": "empissimo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_imperfetto",
+"person": 4,
+"from": "empste/empieste",
+"to": "empiste",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "congiuntivo_imperfetto",
+"person": 5,
+"from": "empssero/empiessero",
+"to": "empissero",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "imperativo_affermativo",
+"person": 1,
+"from": "emp/empisci",
+"to": "empi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "imperativo_affermativo",
+"person": 2,
+"from": "empa/empisca",
+"to": "empia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "imperativo_affermativo",
+"person": 3,
+"from": "empamo",
+"to": "empiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "imperativo_affermativo",
+"person": 4,
+"from": "empte/empiete",
+"to": "empite",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "imperativo_affermativo",
+"person": 5,
+"from": "empano/empiscano",
+"to": "empiano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "imperativo_non",
+"person": 2,
+"from": "non empa/non empisca",
+"to": "non empia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "imperativo_non",
+"person": 3,
+"from": "non empamo",
+"to": "non empiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "imperativo_non",
+"person": 4,
+"from": "non empte/non empiete",
+"to": "non empite",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "imperativo_non",
+"person": 5,
+"from": "non empano/non empiscano",
+"to": "non empiano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "infinito",
+"person": null,
+"from": "empre/empiere",
+"to": "empire",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "gerundio",
+"person": null,
+"from": "empendo",
+"to": "empiendo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "empire",
+"tense": "participio_presente",
+"person": null,
+"from": "empente",
+"to": "empiente",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem empi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_presente",
+"person": 0,
+"from": "compieo/compisco",
+"to": "compio",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_presente",
+"person": 1,
+"from": "compie/compisci",
+"to": "compi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_presente",
+"person": 2,
+"from": "compiee/compisce",
+"to": "compie",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_presente",
+"person": 3,
+"from": "compieamo",
+"to": "compiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "compiete",
+"to": "compite",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_presente",
+"person": 5,
+"from": "compieono/compiscono",
+"to": "compiono",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_imperfetto",
+"person": 0,
+"from": "compievo/compievo",
+"to": "compivo/compievo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_imperfetto",
+"person": 1,
+"from": "compievi/compievi",
+"to": "compivi/compievi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_imperfetto",
+"person": 2,
+"from": "compieva/compieva",
+"to": "compiva/compieva",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_imperfetto",
+"person": 3,
+"from": "compievamo/compievamo",
+"to": "compivamo/compievamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_imperfetto",
+"person": 4,
+"from": "compievate/compievate",
+"to": "compivate/compievate",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_imperfetto",
+"person": 5,
+"from": "compievano/compievano",
+"to": "compivano/compievano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "compiei/compiei",
+"to": "compii/compiei",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_passato_remoto",
+"person": 1,
+"from": "compiesti/compiesti",
+"to": "compisti/compiesti",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "compie/compié",
+"to": "compì/compié",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_passato_remoto",
+"person": 3,
+"from": "compiemmo/compiemmo",
+"to": "compimmo/compiemmo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_passato_remoto",
+"person": 4,
+"from": "compieste/compieste",
+"to": "compiste/compieste",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "compierono/compierono",
+"to": "compirono/compierono",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_futuro_semplice",
+"person": 0,
+"from": "compierò",
+"to": "compirò/compierò",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_futuro_semplice",
+"person": 1,
+"from": "compierai",
+"to": "compirai/compierai",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_futuro_semplice",
+"person": 2,
+"from": "compierà",
+"to": "compirà/compierà",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_futuro_semplice",
+"person": 3,
+"from": "compieremo",
+"to": "compiremo/compieremo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_futuro_semplice",
+"person": 4,
+"from": "compierete",
+"to": "compirete/compierete",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "indicativo_futuro_semplice",
+"person": 5,
+"from": "compieranno",
+"to": "compiranno/compieranno",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "condizionale_presente",
+"person": 0,
+"from": "compierei",
+"to": "compirei/compierei",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "condizionale_presente",
+"person": 1,
+"from": "compieresti",
+"to": "compiresti/compieresti",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "condizionale_presente",
+"person": 2,
+"from": "compierebbe",
+"to": "compirebbe/compierebbe",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "condizionale_presente",
+"person": 3,
+"from": "compieremmo",
+"to": "compiremmo/compieremmo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "condizionale_presente",
+"person": 4,
+"from": "compiereste",
+"to": "compireste/compiereste",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "condizionale_presente",
+"person": 5,
+"from": "compierebbero",
+"to": "compirebbero/compierebbero",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_presente",
+"person": 0,
+"from": "compiea/compisca",
+"to": "compia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_presente",
+"person": 1,
+"from": "compiea/compisca",
+"to": "compia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_presente",
+"person": 2,
+"from": "compiea/compisca",
+"to": "compia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_presente",
+"person": 3,
+"from": "compieamo",
+"to": "compiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_presente",
+"person": 4,
+"from": "compieate",
+"to": "compiate",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_presente",
+"person": 5,
+"from": "compieano/compiscano",
+"to": "compiano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_imperfetto",
+"person": 0,
+"from": "compiessi/compiessi",
+"to": "compissi/compiessi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_imperfetto",
+"person": 1,
+"from": "compiessi/compiessi",
+"to": "compissi/compiessi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_imperfetto",
+"person": 2,
+"from": "compiesse/compiesse",
+"to": "compisse/compiesse",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_imperfetto",
+"person": 3,
+"from": "compiessimo/compiessimo",
+"to": "compissimo/compiessimo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_imperfetto",
+"person": 4,
+"from": "compieste/compieste",
+"to": "compiste/compieste",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "congiuntivo_imperfetto",
+"person": 5,
+"from": "compiessero/compiessero",
+"to": "compissero/compiessero",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "imperativo_affermativo",
+"person": 1,
+"from": "compie/compisci",
+"to": "compi",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "imperativo_affermativo",
+"person": 2,
+"from": "compiea/compisca",
+"to": "compia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "imperativo_affermativo",
+"person": 3,
+"from": "compieamo",
+"to": "compiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "imperativo_affermativo",
+"person": 4,
+"from": "compiete/compiete",
+"to": "compite",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "imperativo_affermativo",
+"person": 5,
+"from": "compieano/compiscano",
+"to": "compiano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "imperativo_non",
+"person": 2,
+"from": "non compiea/non compisca",
+"to": "non compia",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "imperativo_non",
+"person": 3,
+"from": "non compieamo",
+"to": "non compiamo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "imperativo_non",
+"person": 4,
+"from": "non compiete/non compiete",
+"to": "non compite",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "imperativo_non",
+"person": 5,
+"from": "non compieano/non compiscano",
+"to": "non compiano",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "gerundio",
+"person": null,
+"from": "compieendo",
+"to": "compiendo",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "compiere",
+"tense": "participio_presente",
+"person": null,
+"from": "compieente",
+"to": "compiente",
+"why": "garbled paradigm (stem truncated / -ie- doubled); regenerated from regular -ire model with stem compi-"
+},
+{
+"verb": "apparire",
+"tense": "indicativo_presente",
+"person": 0,
+"from": "apparo/apparisco",
+"to": "appaio/apparisco",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_presente",
+"person": 5,
+"from": "apparono/appariscono",
+"to": "appaiono/appariscono",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_passato_prossimo",
+"person": 0,
+"from": "sono apparito/sono apparita",
+"to": "sono apparso/sono apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_passato_prossimo",
+"person": 1,
+"from": "sei apparito/sei apparita",
+"to": "sei apparso/sei apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_passato_prossimo",
+"person": 2,
+"from": "è apparito/è apparita",
+"to": "è apparso/è apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_passato_prossimo",
+"person": 3,
+"from": "siamo appariti/siamo apparite",
+"to": "siamo apparsi/siamo apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_passato_prossimo",
+"person": 4,
+"from": "siete appariti/siete apparite",
+"to": "siete apparsi/siete apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_passato_prossimo",
+"person": 5,
+"from": "sono appariti/sono apparite",
+"to": "sono apparsi/sono apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 0,
+"from": "ero apparito/ero apparita",
+"to": "ero apparso/ero apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 1,
+"from": "eri apparito/eri apparita",
+"to": "eri apparso/eri apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 2,
+"from": "era apparito/era apparita",
+"to": "era apparso/era apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 3,
+"from": "eravamo appariti/eravamo apparite",
+"to": "eravamo apparsi/eravamo apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 4,
+"from": "eravate appariti/eravate apparite",
+"to": "eravate apparsi/eravate apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 5,
+"from": "erano appariti/erano apparite",
+"to": "erano apparsi/erano apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 0,
+"from": "fui apparito/fui apparita",
+"to": "fui apparso/fui apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 1,
+"from": "fosti apparito/fosti apparita",
+"to": "fosti apparso/fosti apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 2,
+"from": "fu apparito/fu apparita",
+"to": "fu apparso/fu apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 3,
+"from": "fummo appariti/fummo apparite",
+"to": "fummo apparsi/fummo apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 4,
+"from": "foste appariti/foste apparite",
+"to": "foste apparsi/foste apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 5,
+"from": "furono appariti/furono apparite",
+"to": "furono apparsi/furono apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 0,
+"from": "sarò apparito/sarò apparita",
+"to": "sarò apparso/sarò apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 1,
+"from": "sarai apparito/sarai apparita",
+"to": "sarai apparso/sarai apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 2,
+"from": "sarà apparito/sarà apparita",
+"to": "sarà apparso/sarà apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 3,
+"from": "saremo appariti/saremo apparite",
+"to": "saremo apparsi/saremo apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 4,
+"from": "sarete appariti/sarete apparite",
+"to": "sarete apparsi/sarete apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 5,
+"from": "saranno appariti/saranno apparite",
+"to": "saranno apparsi/saranno apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "condizionale_passato",
+"person": 0,
+"from": "sarei apparito/sarei apparita",
+"to": "sarei apparso/sarei apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "condizionale_passato",
+"person": 1,
+"from": "saresti apparito/saresti apparita",
+"to": "saresti apparso/saresti apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "condizionale_passato",
+"person": 2,
+"from": "sarebbe apparito/sarebbe apparita",
+"to": "sarebbe apparso/sarebbe apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "condizionale_passato",
+"person": 3,
+"from": "saremmo appariti/saremmo apparite",
+"to": "saremmo apparsi/saremmo apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "condizionale_passato",
+"person": 4,
+"from": "sareste appariti/sareste apparite",
+"to": "sareste apparsi/sareste apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "condizionale_passato",
+"person": 5,
+"from": "sarebbero appariti/sarebbero apparite",
+"to": "sarebbero apparsi/sarebbero apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_presente",
+"person": 0,
+"from": "appara/apparisca",
+"to": "appaia/apparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_presente",
+"person": 1,
+"from": "appara/apparisca",
+"to": "appaia/apparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_presente",
+"person": 2,
+"from": "appara/apparisca",
+"to": "appaia/apparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_presente",
+"person": 5,
+"from": "apparano/appariscano",
+"to": "appaiano/appariscano",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_passato",
+"person": 0,
+"from": "sia apparito/sia apparita",
+"to": "sia apparso/sia apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_passato",
+"person": 1,
+"from": "sia apparito/sia apparita",
+"to": "sia apparso/sia apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_passato",
+"person": 2,
+"from": "sia apparito/sia apparita",
+"to": "sia apparso/sia apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_passato",
+"person": 3,
+"from": "siamo appariti/siamo apparite",
+"to": "siamo apparsi/siamo apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_passato",
+"person": 4,
+"from": "siate appariti/siate apparite",
+"to": "siate apparsi/siate apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_passato",
+"person": 5,
+"from": "siano appariti/siano apparite",
+"to": "siano apparsi/siano apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_trapassato",
+"person": 0,
+"from": "fossi apparito/fossi apparita",
+"to": "fossi apparso/fossi apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_trapassato",
+"person": 1,
+"from": "fossi apparito/fossi apparita",
+"to": "fossi apparso/fossi apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_trapassato",
+"person": 2,
+"from": "fosse apparito/fosse apparita",
+"to": "fosse apparso/fosse apparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_trapassato",
+"person": 3,
+"from": "fossimo appariti/fossimo apparite",
+"to": "fossimo apparsi/fossimo apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_trapassato",
+"person": 4,
+"from": "foste appariti/foste apparite",
+"to": "foste apparsi/foste apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "congiuntivo_trapassato",
+"person": 5,
+"from": "fossero appariti/fossero apparite",
+"to": "fossero apparsi/fossero apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "imperativo_affermativo",
+"person": 2,
+"from": "appara/apparisca",
+"to": "appaia/apparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "imperativo_affermativo",
+"person": 5,
+"from": "apparano/appariscano",
+"to": "appaiano/appariscano",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "imperativo_non",
+"person": 2,
+"from": "non appara/non apparisca",
+"to": "non appaia/non apparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "imperativo_non",
+"person": 5,
+"from": "non apparano/non appariscano",
+"to": "non appaiano/non appariscano",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "apparire",
+"tense": "participio_passato",
+"person": null,
+"from": "apparito/apparso/apparita/apparsa/appariti/apparsi/apparite/apparse",
+"to": "apparso/apparsa/apparsi/apparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_presente",
+"person": 0,
+"from": "comparo/comparisco",
+"to": "compaio/comparisco",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_presente",
+"person": 5,
+"from": "comparono/compariscono",
+"to": "compaiono/compariscono",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_passato_prossimo",
+"person": 0,
+"from": "sono comparito/sono comparita",
+"to": "sono comparso/sono comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_passato_prossimo",
+"person": 1,
+"from": "sei comparito/sei comparita",
+"to": "sei comparso/sei comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_passato_prossimo",
+"person": 2,
+"from": "è comparito/è comparita",
+"to": "è comparso/è comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_passato_prossimo",
+"person": 3,
+"from": "siamo compariti/siamo comparite",
+"to": "siamo comparsi/siamo comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_passato_prossimo",
+"person": 4,
+"from": "siete compariti/siete comparite",
+"to": "siete comparsi/siete comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_passato_prossimo",
+"person": 5,
+"from": "sono compariti/sono comparite",
+"to": "sono comparsi/sono comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 0,
+"from": "ero comparito/ero comparita",
+"to": "ero comparso/ero comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 1,
+"from": "eri comparito/eri comparita",
+"to": "eri comparso/eri comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 2,
+"from": "era comparito/era comparita",
+"to": "era comparso/era comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 3,
+"from": "eravamo compariti/eravamo comparite",
+"to": "eravamo comparsi/eravamo comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 4,
+"from": "eravate compariti/eravate comparite",
+"to": "eravate comparsi/eravate comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 5,
+"from": "erano compariti/erano comparite",
+"to": "erano comparsi/erano comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 0,
+"from": "fui comparito/fui comparita",
+"to": "fui comparso/fui comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 1,
+"from": "fosti comparito/fosti comparita",
+"to": "fosti comparso/fosti comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 2,
+"from": "fu comparito/fu comparita",
+"to": "fu comparso/fu comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 3,
+"from": "fummo compariti/fummo comparite",
+"to": "fummo comparsi/fummo comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 4,
+"from": "foste compariti/foste comparite",
+"to": "foste comparsi/foste comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 5,
+"from": "furono compariti/furono comparite",
+"to": "furono comparsi/furono comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 0,
+"from": "sarò comparito/sarò comparita",
+"to": "sarò comparso/sarò comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 1,
+"from": "sarai comparito/sarai comparita",
+"to": "sarai comparso/sarai comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 2,
+"from": "sarà comparito/sarà comparita",
+"to": "sarà comparso/sarà comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 3,
+"from": "saremo compariti/saremo comparite",
+"to": "saremo comparsi/saremo comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 4,
+"from": "sarete compariti/sarete comparite",
+"to": "sarete comparsi/sarete comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 5,
+"from": "saranno compariti/saranno comparite",
+"to": "saranno comparsi/saranno comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "condizionale_passato",
+"person": 0,
+"from": "sarei comparito/sarei comparita",
+"to": "sarei comparso/sarei comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "condizionale_passato",
+"person": 1,
+"from": "saresti comparito/saresti comparita",
+"to": "saresti comparso/saresti comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "condizionale_passato",
+"person": 2,
+"from": "sarebbe comparito/sarebbe comparita",
+"to": "sarebbe comparso/sarebbe comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "condizionale_passato",
+"person": 3,
+"from": "saremmo compariti/saremmo comparite",
+"to": "saremmo comparsi/saremmo comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "condizionale_passato",
+"person": 4,
+"from": "sareste compariti/sareste comparite",
+"to": "sareste comparsi/sareste comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "condizionale_passato",
+"person": 5,
+"from": "sarebbero compariti/sarebbero comparite",
+"to": "sarebbero comparsi/sarebbero comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_presente",
+"person": 0,
+"from": "compara/comparisca",
+"to": "compaia/comparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_presente",
+"person": 1,
+"from": "compara/comparisca",
+"to": "compaia/comparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_presente",
+"person": 2,
+"from": "compara/comparisca",
+"to": "compaia/comparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_presente",
+"person": 5,
+"from": "comparano/compariscano",
+"to": "compaiano/compariscano",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_passato",
+"person": 0,
+"from": "sia comparito/sia comparita",
+"to": "sia comparso/sia comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_passato",
+"person": 1,
+"from": "sia comparito/sia comparita",
+"to": "sia comparso/sia comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_passato",
+"person": 2,
+"from": "sia comparito/sia comparita",
+"to": "sia comparso/sia comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_passato",
+"person": 3,
+"from": "siamo compariti/siamo comparite",
+"to": "siamo comparsi/siamo comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_passato",
+"person": 4,
+"from": "siate compariti/siate comparite",
+"to": "siate comparsi/siate comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_passato",
+"person": 5,
+"from": "siano compariti/siano comparite",
+"to": "siano comparsi/siano comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_trapassato",
+"person": 0,
+"from": "fossi comparito/fossi comparita",
+"to": "fossi comparso/fossi comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_trapassato",
+"person": 1,
+"from": "fossi comparito/fossi comparita",
+"to": "fossi comparso/fossi comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_trapassato",
+"person": 2,
+"from": "fosse comparito/fosse comparita",
+"to": "fosse comparso/fosse comparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_trapassato",
+"person": 3,
+"from": "fossimo compariti/fossimo comparite",
+"to": "fossimo comparsi/fossimo comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_trapassato",
+"person": 4,
+"from": "foste compariti/foste comparite",
+"to": "foste comparsi/foste comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "congiuntivo_trapassato",
+"person": 5,
+"from": "fossero compariti/fossero comparite",
+"to": "fossero comparsi/fossero comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "imperativo_affermativo",
+"person": 2,
+"from": "compara/comparisca",
+"to": "compaia/comparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "imperativo_affermativo",
+"person": 5,
+"from": "comparano/compariscano",
+"to": "compaiano/compariscano",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "imperativo_non",
+"person": 2,
+"from": "non compara/non comparisca",
+"to": "non compaia/non comparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "imperativo_non",
+"person": 5,
+"from": "non comparano/non compariscano",
+"to": "non compaiano/non compariscano",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "participio_passato",
+"person": null,
+"from": "comparito/comparso/comparita/comparsa/compariti/comparsi/comparite/comparse",
+"to": "comparso/comparsa/comparsi/comparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_presente",
+"person": 0,
+"from": "scomparo/scomparisco",
+"to": "scompaio/scomparisco",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_presente",
+"person": 5,
+"from": "scomparono/scompariscono",
+"to": "scompaiono/scompariscono",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_passato_prossimo",
+"person": 0,
+"from": "sono scomparito/sono scomparita",
+"to": "sono scomparso/sono scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_passato_prossimo",
+"person": 1,
+"from": "sei scomparito/sei scomparita",
+"to": "sei scomparso/sei scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_passato_prossimo",
+"person": 2,
+"from": "è scomparito/è scomparita",
+"to": "è scomparso/è scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_passato_prossimo",
+"person": 3,
+"from": "siamo scompariti/siamo scomparite",
+"to": "siamo scomparsi/siamo scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_passato_prossimo",
+"person": 4,
+"from": "siete scompariti/siete scomparite",
+"to": "siete scomparsi/siete scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_passato_prossimo",
+"person": 5,
+"from": "sono scompariti/sono scomparite",
+"to": "sono scomparsi/sono scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 0,
+"from": "ero scomparito/ero scomparita",
+"to": "ero scomparso/ero scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 1,
+"from": "eri scomparito/eri scomparita",
+"to": "eri scomparso/eri scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 2,
+"from": "era scomparito/era scomparita",
+"to": "era scomparso/era scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 3,
+"from": "eravamo scompariti/eravamo scomparite",
+"to": "eravamo scomparsi/eravamo scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 4,
+"from": "eravate scompariti/eravate scomparite",
+"to": "eravate scomparsi/eravate scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_prossimo",
+"person": 5,
+"from": "erano scompariti/erano scomparite",
+"to": "erano scomparsi/erano scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 0,
+"from": "fui scomparito/fui scomparita",
+"to": "fui scomparso/fui scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 1,
+"from": "fosti scomparito/fosti scomparita",
+"to": "fosti scomparso/fosti scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 2,
+"from": "fu scomparito/fu scomparita",
+"to": "fu scomparso/fu scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 3,
+"from": "fummo scompariti/fummo scomparite",
+"to": "fummo scomparsi/fummo scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 4,
+"from": "foste scompariti/foste scomparite",
+"to": "foste scomparsi/foste scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_trapassato_remoto",
+"person": 5,
+"from": "furono scompariti/furono scomparite",
+"to": "furono scomparsi/furono scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 0,
+"from": "sarò scomparito/sarò scomparita",
+"to": "sarò scomparso/sarò scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 1,
+"from": "sarai scomparito/sarai scomparita",
+"to": "sarai scomparso/sarai scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 2,
+"from": "sarà scomparito/sarà scomparita",
+"to": "sarà scomparso/sarà scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 3,
+"from": "saremo scompariti/saremo scomparite",
+"to": "saremo scomparsi/saremo scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 4,
+"from": "sarete scompariti/sarete scomparite",
+"to": "sarete scomparsi/sarete scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "indicativo_futuro_anteriore",
+"person": 5,
+"from": "saranno scompariti/saranno scomparite",
+"to": "saranno scomparsi/saranno scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "condizionale_passato",
+"person": 0,
+"from": "sarei scomparito/sarei scomparita",
+"to": "sarei scomparso/sarei scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "condizionale_passato",
+"person": 1,
+"from": "saresti scomparito/saresti scomparita",
+"to": "saresti scomparso/saresti scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "condizionale_passato",
+"person": 2,
+"from": "sarebbe scomparito/sarebbe scomparita",
+"to": "sarebbe scomparso/sarebbe scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "condizionale_passato",
+"person": 3,
+"from": "saremmo scompariti/saremmo scomparite",
+"to": "saremmo scomparsi/saremmo scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "condizionale_passato",
+"person": 4,
+"from": "sareste scompariti/sareste scomparite",
+"to": "sareste scomparsi/sareste scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "condizionale_passato",
+"person": 5,
+"from": "sarebbero scompariti/sarebbero scomparite",
+"to": "sarebbero scomparsi/sarebbero scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_presente",
+"person": 0,
+"from": "scompara/scomparisca",
+"to": "scompaia/scomparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_presente",
+"person": 1,
+"from": "scompara/scomparisca",
+"to": "scompaia/scomparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_presente",
+"person": 2,
+"from": "scompara/scomparisca",
+"to": "scompaia/scomparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_presente",
+"person": 5,
+"from": "scomparano/scompariscano",
+"to": "scompaiano/scompariscano",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_passato",
+"person": 0,
+"from": "sia scomparito/sia scomparita",
+"to": "sia scomparso/sia scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_passato",
+"person": 1,
+"from": "sia scomparito/sia scomparita",
+"to": "sia scomparso/sia scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_passato",
+"person": 2,
+"from": "sia scomparito/sia scomparita",
+"to": "sia scomparso/sia scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_passato",
+"person": 3,
+"from": "siamo scompariti/siamo scomparite",
+"to": "siamo scomparsi/siamo scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_passato",
+"person": 4,
+"from": "siate scompariti/siate scomparite",
+"to": "siate scomparsi/siate scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_passato",
+"person": 5,
+"from": "siano scompariti/siano scomparite",
+"to": "siano scomparsi/siano scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_trapassato",
+"person": 0,
+"from": "fossi scomparito/fossi scomparita",
+"to": "fossi scomparso/fossi scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_trapassato",
+"person": 1,
+"from": "fossi scomparito/fossi scomparita",
+"to": "fossi scomparso/fossi scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_trapassato",
+"person": 2,
+"from": "fosse scomparito/fosse scomparita",
+"to": "fosse scomparso/fosse scomparsa",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_trapassato",
+"person": 3,
+"from": "fossimo scompariti/fossimo scomparite",
+"to": "fossimo scomparsi/fossimo scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_trapassato",
+"person": 4,
+"from": "foste scompariti/foste scomparite",
+"to": "foste scomparsi/foste scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "congiuntivo_trapassato",
+"person": 5,
+"from": "fossero scompariti/fossero scomparite",
+"to": "fossero scomparsi/fossero scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "imperativo_affermativo",
+"person": 2,
+"from": "scompara/scomparisca",
+"to": "scompaia/scomparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "imperativo_affermativo",
+"person": 5,
+"from": "scomparano/scompariscano",
+"to": "scompaiano/scompariscano",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "imperativo_non",
+"person": 2,
+"from": "non scompara/non scomparisca",
+"to": "non scompaia/non scomparisca",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "imperativo_non",
+"person": 5,
+"from": "non scomparano/non scompariscano",
+"to": "non scompaiano/non scompariscano",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "participio_passato",
+"person": null,
+"from": "scomparito/scomparso/scomparita/scomparsa/scompariti/scomparsi/scomparite/scomparse",
+"to": "scomparso/scomparsa/scomparsi/scomparse",
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_presente",
+"person": 0,
+"from": "riapparpaio/riapparparisco",
+"to": "riappaio/riapparisco",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_presente",
+"person": 1,
+"from": "riapparpari/riapparparisci",
+"to": "riappari/riapparisci",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_presente",
+"person": 2,
+"from": "riapparpare/riapparparisce",
+"to": "riappare/riapparisce",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_presente",
+"person": 3,
+"from": "riapparpariamo",
+"to": "riappariamo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "riapparparite",
+"to": "riapparite",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_presente",
+"person": 5,
+"from": "riapparpaiono/riapparpariscono",
+"to": "riappaiono/riappariscono",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_imperfetto",
+"person": 0,
+"from": "riapparparivo",
+"to": "riapparivo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_imperfetto",
+"person": 1,
+"from": "riapparparivi",
+"to": "riapparivi",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_imperfetto",
+"person": 2,
+"from": "riapparpariva",
+"to": "riappariva",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_imperfetto",
+"person": 3,
+"from": "riapparparivamo",
+"to": "riapparivamo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_imperfetto",
+"person": 4,
+"from": "riapparparivate",
+"to": "riapparivate",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_imperfetto",
+"person": 5,
+"from": "riapparparivano",
+"to": "riapparivano",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "riapparparii/riapparparvi/riapparparsi",
+"to": "riapparii/riapparvi/riapparsi",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_passato_remoto",
+"person": 1,
+"from": "riapparparisti",
+"to": "riapparisti",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "riapparparì/riapparparve/riapparparse",
+"to": "riapparì/riapparve/riapparse",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_passato_remoto",
+"person": 3,
+"from": "riapparparimmo",
+"to": "riapparimmo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_passato_remoto",
+"person": 4,
+"from": "riapparpariste",
+"to": "riappariste",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "riapparparirono/riapparparvero/riapparparsero",
+"to": "riapparirono/riapparvero/riapparsero",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_futuro_semplice",
+"person": 0,
+"from": "riapparparirò",
+"to": "riapparirò",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_futuro_semplice",
+"person": 1,
+"from": "riapparparirai",
+"to": "riapparirai",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_futuro_semplice",
+"person": 2,
+"from": "riapparparirà",
+"to": "riapparirà",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_futuro_semplice",
+"person": 3,
+"from": "riapparpariremo",
+"to": "riappariremo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_futuro_semplice",
+"person": 4,
+"from": "riapparparirete",
+"to": "riapparirete",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "indicativo_futuro_semplice",
+"person": 5,
+"from": "riapparpariranno",
+"to": "riappariranno",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "condizionale_presente",
+"person": 0,
+"from": "riapparparirei",
+"to": "riapparirei",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "condizionale_presente",
+"person": 1,
+"from": "riapparpariresti",
+"to": "riappariresti",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "condizionale_presente",
+"person": 2,
+"from": "riapparparirebbe",
+"to": "riapparirebbe",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "condizionale_presente",
+"person": 3,
+"from": "riapparpariremmo",
+"to": "riappariremmo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "condizionale_presente",
+"person": 4,
+"from": "riapparparireste",
+"to": "riapparireste",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "condizionale_presente",
+"person": 5,
+"from": "riapparparirebbero",
+"to": "riapparirebbero",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_presente",
+"person": 0,
+"from": "riapparpaia/riapparparisca",
+"to": "riappaia/riapparisca",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_presente",
+"person": 1,
+"from": "riapparpaia/riapparparisca",
+"to": "riappaia/riapparisca",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_presente",
+"person": 2,
+"from": "riapparpaia/riapparparisca",
+"to": "riappaia/riapparisca",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_presente",
+"person": 3,
+"from": "riapparpariamo",
+"to": "riappariamo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_presente",
+"person": 4,
+"from": "riapparpariate",
+"to": "riappariate",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_presente",
+"person": 5,
+"from": "riapparpaiano/riapparpariscano",
+"to": "riappaiano/riappariscano",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_imperfetto",
+"person": 0,
+"from": "riapparparissi",
+"to": "riapparissi",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_imperfetto",
+"person": 1,
+"from": "riapparparissi",
+"to": "riapparissi",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_imperfetto",
+"person": 2,
+"from": "riapparparisse",
+"to": "riapparisse",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_imperfetto",
+"person": 3,
+"from": "riapparparissimo",
+"to": "riapparissimo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_imperfetto",
+"person": 4,
+"from": "riapparpariste",
+"to": "riappariste",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "congiuntivo_imperfetto",
+"person": 5,
+"from": "riapparparissero",
+"to": "riapparissero",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "imperativo_affermativo",
+"person": 1,
+"from": "riapparpari/riapparparisci",
+"to": "riappari/riapparisci",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "imperativo_affermativo",
+"person": 2,
+"from": "riapparpaia/riapparparisca",
+"to": "riappaia/riapparisca",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "imperativo_affermativo",
+"person": 3,
+"from": "riapparpariamo",
+"to": "riappariamo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "imperativo_affermativo",
+"person": 4,
+"from": "riapparparite",
+"to": "riapparite",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "imperativo_affermativo",
+"person": 5,
+"from": "riapparpaiano/riapparpariscano",
+"to": "riappaiano/riappariscano",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "imperativo_non",
+"person": 2,
+"from": "non riapparpaia/non riapparparisca",
+"to": "non riappaia/non riapparisca",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "imperativo_non",
+"person": 3,
+"from": "non riapparpariamo",
+"to": "non riappariamo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "imperativo_non",
+"person": 4,
+"from": "non riapparparite",
+"to": "non riapparite",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "imperativo_non",
+"person": 5,
+"from": "non riapparpaiano/non riapparpariscano",
+"to": "non riappaiano/non riappariscano",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "infinito",
+"person": null,
+"from": "riapparparire",
+"to": "riapparire",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "gerundio",
+"person": null,
+"from": "riapparparendo",
+"to": "riapparendo",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "participio_presente",
+"person": null,
+"from": "riapparparente",
+"to": "riapparente",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "riapparire",
+"tense": "participio_passato",
+"person": null,
+"from": "riapparso/riapparito/riapparsa/riapparita/riapparsi/riappariti/riapparse/riapparite",
+"to": "riapparso/riapparsa/riapparsi/riapparse",
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "pentire",
+"tense": "indicativo_presente",
+"person": 0,
+"from": "pentisco",
+"to": "pento",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "indicativo_presente",
+"person": 1,
+"from": "pentisci",
+"to": "penti",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "indicativo_presente",
+"person": 2,
+"from": "pentisce",
+"to": "pente",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "indicativo_presente",
+"person": 5,
+"from": "pentiscono",
+"to": "pentono",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "congiuntivo_presente",
+"person": 0,
+"from": "pentisca",
+"to": "penta",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "congiuntivo_presente",
+"person": 1,
+"from": "pentisca",
+"to": "penta",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "congiuntivo_presente",
+"person": 2,
+"from": "pentisca",
+"to": "penta",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "congiuntivo_presente",
+"person": 5,
+"from": "pentiscano",
+"to": "pentano",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "imperativo_affermativo",
+"person": 1,
+"from": "pentisci",
+"to": "penti",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "imperativo_affermativo",
+"person": 2,
+"from": "pentisca",
+"to": "penta",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "imperativo_affermativo",
+"person": 5,
+"from": "pentiscano",
+"to": "pentano",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "imperativo_non",
+"person": 2,
+"from": "non pentisca",
+"to": "non penta",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "pentire",
+"tense": "imperativo_non",
+"person": 5,
+"from": "non pentiscano",
+"to": "non pentano",
+"why": "(pentirsi) is not an -isc verb: conjugates like sentire (pento, penta)"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_passato_prossimo",
+"person": 0,
+"from": "ho compraveso",
+"to": "ho compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_passato_prossimo",
+"person": 1,
+"from": "hai compraveso",
+"to": "hai compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_passato_prossimo",
+"person": 2,
+"from": "ha compraveso",
+"to": "ha compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_passato_prossimo",
+"person": 3,
+"from": "abbiamo compraveso",
+"to": "abbiamo compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_passato_prossimo",
+"person": 4,
+"from": "avete compraveso",
+"to": "avete compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_passato_prossimo",
+"person": 5,
+"from": "hanno compraveso",
+"to": "hanno compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_prossimo",
+"person": 0,
+"from": "avevo compraveso",
+"to": "avevo compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_prossimo",
+"person": 1,
+"from": "avevi compraveso",
+"to": "avevi compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_prossimo",
+"person": 2,
+"from": "aveva compraveso",
+"to": "aveva compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_prossimo",
+"person": 3,
+"from": "avevamo compraveso",
+"to": "avevamo compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_prossimo",
+"person": 4,
+"from": "avevate compraveso",
+"to": "avevate compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_prossimo",
+"person": 5,
+"from": "avevano compraveso",
+"to": "avevano compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "compravesi",
+"to": "compravendetti/compravendei",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "compravese",
+"to": "compravendette/compravendé",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "compravesero",
+"to": "compravendettero/compravenderono",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_remoto",
+"person": 0,
+"from": "ebbi compraveso",
+"to": "ebbi compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_remoto",
+"person": 1,
+"from": "avesti compraveso",
+"to": "avesti compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_remoto",
+"person": 2,
+"from": "ebbe compraveso",
+"to": "ebbe compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_remoto",
+"person": 3,
+"from": "avemmo compraveso",
+"to": "avemmo compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_remoto",
+"person": 4,
+"from": "aveste compraveso",
+"to": "aveste compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_trapassato_remoto",
+"person": 5,
+"from": "ebbero compraveso",
+"to": "ebbero compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_futuro_anteriore",
+"person": 0,
+"from": "avrò compraveso",
+"to": "avrò compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_futuro_anteriore",
+"person": 1,
+"from": "avrai compraveso",
+"to": "avrai compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_futuro_anteriore",
+"person": 2,
+"from": "avrà compraveso",
+"to": "avrà compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_futuro_anteriore",
+"person": 3,
+"from": "avremo compraveso",
+"to": "avremo compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_futuro_anteriore",
+"person": 4,
+"from": "avrete compraveso",
+"to": "avrete compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "indicativo_futuro_anteriore",
+"person": 5,
+"from": "avranno compraveso",
+"to": "avranno compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "condizionale_passato",
+"person": 0,
+"from": "avrei compraveso",
+"to": "avrei compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "condizionale_passato",
+"person": 1,
+"from": "avresti compraveso",
+"to": "avresti compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "condizionale_passato",
+"person": 2,
+"from": "avrebbe compraveso",
+"to": "avrebbe compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "condizionale_passato",
+"person": 3,
+"from": "avremmo compraveso",
+"to": "avremmo compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "condizionale_passato",
+"person": 4,
+"from": "avreste compraveso",
+"to": "avreste compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "condizionale_passato",
+"person": 5,
+"from": "avrebbero compraveso",
+"to": "avrebbero compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_passato",
+"person": 0,
+"from": "abbia compraveso",
+"to": "abbia compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_passato",
+"person": 1,
+"from": "abbia compraveso",
+"to": "abbia compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_passato",
+"person": 2,
+"from": "abbia compraveso",
+"to": "abbia compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_passato",
+"person": 3,
+"from": "abbiamo compraveso",
+"to": "abbiamo compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_passato",
+"person": 4,
+"from": "abbiate compraveso",
+"to": "abbiate compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_passato",
+"person": 5,
+"from": "abbiano compraveso",
+"to": "abbiano compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_trapassato",
+"person": 0,
+"from": "avessi compraveso",
+"to": "avessi compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_trapassato",
+"person": 1,
+"from": "avessi compraveso",
+"to": "avessi compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_trapassato",
+"person": 2,
+"from": "avesse compraveso",
+"to": "avesse compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_trapassato",
+"person": 3,
+"from": "avessimo compraveso",
+"to": "avessimo compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_trapassato",
+"person": 4,
+"from": "aveste compraveso",
+"to": "aveste compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "congiuntivo_trapassato",
+"person": 5,
+"from": "avessero compraveso",
+"to": "avessero compravenduto",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "compravendere",
+"tense": "participio_passato",
+"person": null,
+"from": "compraveso/compravesa/compravesi/compravese",
+"to": "compravenduto/compravenduta/compravenduti/compravendute",
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "imbattere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "imbattetti/ribattei",
+"to": "imbattetti/imbattei",
+"why": "stray \"ribattei/ribatté/ribatterono\" (other verb) in passato remoto; conjugates like battere"
+},
+{
+"verb": "imbattere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "imbattette/ribatté",
+"to": "imbattette/imbatté",
+"why": "stray \"ribattei/ribatté/ribatterono\" (other verb) in passato remoto; conjugates like battere"
+},
+{
+"verb": "imbattere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "imbattettero/ribatterono",
+"to": "imbattettero/imbatterono",
+"why": "stray \"ribattei/ribatté/ribatterono\" (other verb) in passato remoto; conjugates like battere"
+},
+{
+"verb": "vergognare",
+"tense": "indicativo_presente",
+"person": 3,
+"from": "vergogniamo/tralignamo",
+"to": "vergogniamo",
+"why": "ML-predicted garbage alternatives \"tralignamo/traligniate/tralignate\""
+},
+{
+"verb": "vergognare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "vergognate/traligniate",
+"to": "vergognate",
+"why": "ML-predicted garbage alternatives \"tralignamo/traligniate/tralignate\""
+},
+{
+"verb": "vergognare",
+"tense": "congiuntivo_presente",
+"person": 3,
+"from": "vergogniamo/tralignamo",
+"to": "vergogniamo",
+"why": "ML-predicted garbage alternatives \"tralignamo/traligniate/tralignate\""
+},
+{
+"verb": "vergognare",
+"tense": "congiuntivo_presente",
+"person": 4,
+"from": "vergogniate/tralignate",
+"to": "vergogniate",
+"why": "ML-predicted garbage alternatives \"tralignamo/traligniate/tralignate\""
+},
+{
+"verb": "marcire",
+"tense": "indicativo_presente",
+"person": 3,
+"from": "imputridiamo",
+"to": "marciamo",
+"why": "\"imputridiamo/imputridiate\" (a different verb) instead of marciamo/marciate"
+},
+{
+"verb": "marcire",
+"tense": "congiuntivo_presente",
+"person": 3,
+"from": "imputridiamo",
+"to": "marciamo",
+"why": "\"imputridiamo/imputridiate\" (a different verb) instead of marciamo/marciate"
+},
+{
+"verb": "marcire",
+"tense": "congiuntivo_presente",
+"person": 4,
+"from": "imputridiate",
+"to": "marciate",
+"why": "\"imputridiamo/imputridiate\" (a different verb) instead of marciamo/marciate"
+},
+{
+"verb": "marcire",
+"tense": "gerundio",
+"person": null,
+"from": "imputridendo",
+"to": "marcendo",
+"why": "\"imputridiamo/imputridiate\" (a different verb) instead of marciamo/marciate"
+},
+{
+"verb": "marcire",
+"tense": "participio_presente",
+"person": null,
+"from": "imputridente",
+"to": "marcente",
+"why": "\"imputridiamo/imputridiate\" (a different verb) instead of marciamo/marciate"
+},
+{
+"verb": "svenire",
+"tense": "indicativo_futuro_semplice",
+"person": 0,
+"from": "svenirò/sverrò",
+"to": "sverrò",
+"why": "spurious futuro \"svenir-\" alternatives (svenire has sverrò only; condizionale already sverrei); p4 also had wrong person \"svenirà/sverrà\" instead of sverremo"
+},
+{
+"verb": "svenire",
+"tense": "indicativo_futuro_semplice",
+"person": 1,
+"from": "svenirai/sverrai",
+"to": "sverrai",
+"why": "spurious futuro \"svenir-\" alternatives (svenire has sverrò only; condizionale already sverrei); p4 also had wrong person \"svenirà/sverrà\" instead of sverremo"
+},
+{
+"verb": "svenire",
+"tense": "indicativo_futuro_semplice",
+"person": 2,
+"from": "svenirà/sverrà",
+"to": "sverrà",
+"why": "spurious futuro \"svenir-\" alternatives (svenire has sverrò only; condizionale already sverrei); p4 also had wrong person \"svenirà/sverrà\" instead of sverremo"
+},
+{
+"verb": "svenire",
+"tense": "indicativo_futuro_semplice",
+"person": 3,
+"from": "svenirà/sverrà",
+"to": "sverremo",
+"why": "spurious futuro \"svenir-\" alternatives (svenire has sverrò only; condizionale already sverrei); p4 also had wrong person \"svenirà/sverrà\" instead of sverremo"
+},
+{
+"verb": "svenire",
+"tense": "indicativo_futuro_semplice",
+"person": 4,
+"from": "svenirete/sverrete",
+"to": "sverrete",
+"why": "spurious futuro \"svenir-\" alternatives (svenire has sverrò only; condizionale already sverrei); p4 also had wrong person \"svenirà/sverrà\" instead of sverremo"
+},
+{
+"verb": "svenire",
+"tense": "indicativo_futuro_semplice",
+"person": 5,
+"from": "sveniranno/sverranno",
+"to": "sverranno",
+"why": "spurious futuro \"svenir-\" alternatives (svenire has sverrò only; condizionale already sverrei); p4 also had wrong person \"svenirà/sverrà\" instead of sverremo"
+},
+{
+"verb": "ridare",
+"tense": "congiuntivo_imperfetto",
+"person": 0,
+"from": "ridassi",
+"to": "ridessi",
+"why": "imperativo 2sg alternative \"dai\" is a form of dare; should be ridai"
+},
+{
+"verb": "ridare",
+"tense": "congiuntivo_imperfetto",
+"person": 1,
+"from": "ridassi",
+"to": "ridessi",
+"why": "imperativo 2sg alternative \"dai\" is a form of dare; should be ridai"
+},
+{
+"verb": "ridare",
+"tense": "congiuntivo_imperfetto",
+"person": 2,
+"from": "ridasse",
+"to": "ridesse",
+"why": "imperativo 2sg alternative \"dai\" is a form of dare; should be ridai"
+},
+{
+"verb": "ridare",
+"tense": "congiuntivo_imperfetto",
+"person": 3,
+"from": "ridassimo",
+"to": "ridessimo",
+"why": "imperativo 2sg alternative \"dai\" is a form of dare; should be ridai"
+},
+{
+"verb": "ridare",
+"tense": "congiuntivo_imperfetto",
+"person": 4,
+"from": "ridaste",
+"to": "rideste",
+"why": "imperativo 2sg alternative \"dai\" is a form of dare; should be ridai"
+},
+{
+"verb": "ridare",
+"tense": "congiuntivo_imperfetto",
+"person": 5,
+"from": "ridassero",
+"to": "ridessero",
+"why": "imperativo 2sg alternative \"dai\" is a form of dare; should be ridai"
+},
+{
+"verb": "ridare",
+"tense": "imperativo_affermativo",
+"person": 1,
+"from": "rida'/dai",
+"to": "rida'/ridai",
+"why": "imperativo 2sg alternative \"dai\" is a form of dare; should be ridai"
+},
+{
+"verb": "associare",
+"tense": "indicativo_futuro_semplice",
+"person": 0,
+"from": "associerò",
+"to": "assocerò",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "indicativo_futuro_semplice",
+"person": 1,
+"from": "associerai",
+"to": "assocerai",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "indicativo_futuro_semplice",
+"person": 2,
+"from": "associerà",
+"to": "assocerà",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "indicativo_futuro_semplice",
+"person": 3,
+"from": "associeremo",
+"to": "assoceremo",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "indicativo_futuro_semplice",
+"person": 4,
+"from": "associerete",
+"to": "assocerete",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "indicativo_futuro_semplice",
+"person": 5,
+"from": "associeranno",
+"to": "assoceranno",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "condizionale_presente",
+"person": 0,
+"from": "associerei",
+"to": "assocerei",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "condizionale_presente",
+"person": 1,
+"from": "associeresti",
+"to": "assoceresti",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "condizionale_presente",
+"person": 2,
+"from": "associerebbe",
+"to": "assocerebbe",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "condizionale_presente",
+"person": 3,
+"from": "associeremmo",
+"to": "assoceremmo",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "condizionale_presente",
+"person": 4,
+"from": "associereste",
+"to": "assocereste",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "associare",
+"tense": "condizionale_presente",
+"person": 5,
+"from": "associerebbero",
+"to": "assocerebbero",
+"why": "-ciare verbs drop i before e: assocerò (cf. dissocerò in the same data)"
+},
+{
+"verb": "scommettere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "scommessi/scommisi",
+"to": "scommisi",
+"why": "passato remoto \"scommessi/scommesse/scommessero\" are not forms; scommisi/scommise/scommisero (like mettere)"
+},
+{
+"verb": "scommettere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "scommesse/scommise",
+"to": "scommise",
+"why": "passato remoto \"scommessi/scommesse/scommessero\" are not forms; scommisi/scommise/scommisero (like mettere)"
+},
+{
+"verb": "scommettere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "scommessero/scommisero",
+"to": "scommisero",
+"why": "passato remoto \"scommessi/scommesse/scommessero\" are not forms; scommisi/scommise/scommisero (like mettere)"
+},
+{
+"verb": "maledire",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "maledisse/maledi",
+"to": "maledisse/maledì",
+"why": "passato remoto 3sg lacks final accent (maledì)"
+},
+{
+"verb": "benedire",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "benedisse/benedi",
+"to": "benedisse/benedì",
+"why": "passato remoto 3sg lacks final accent (benedì)"
+},
+{
+"verb": "adempiere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "adempi/adempié",
+"to": "adempì/adempié",
+"why": "passato remoto 3sg lacks final accent (adempì)"
+},
+{
+"verb": "insegnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "insegnate/insegniate",
+"to": "insegnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "segnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "segnate/segniate",
+"to": "segnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "impegnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "impegnate/impegniate",
+"to": "impegnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "guadagnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "guadagnate/guadagniate",
+"to": "guadagnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "accompagnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "accompagnate/accompagniate",
+"to": "accompagnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "sognare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "sognate/sogniate",
+"to": "sognate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "consegnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "consegnate/consegniate",
+"to": "consegnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "disegnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "disegnate/disegniate",
+"to": "disegnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "bagnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "bagnate/bagniate",
+"to": "bagnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "regnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "regnate/regniate",
+"to": "regnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "rassegnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "rassegnate/rassegniate",
+"to": "rassegnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "designare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "designate/designiate",
+"to": "designate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "impugnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "impugnate/impugniate",
+"to": "impugnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "riassegnare",
+"tense": "indicativo_presente",
+"person": 4,
+"from": "riassegnate/riassegniate",
+"to": "riassegnate",
+"why": "indicativo presente voi contains congiuntivo form \"-gniate\""
+},
+{
+"verb": "succedere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "succedsi/succedei/succedetti",
+"to": "successi/succedei/succedetti",
+"why": "garbled strong passato remoto \"succedsi/succedse/succedsero\"; correct successi/successe/successero (cf. participle successo)"
+},
+{
+"verb": "succedere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "succedse/succedé/succedette",
+"to": "successe/succedé/succedette",
+"why": "garbled strong passato remoto \"succedsi/succedse/succedsero\"; correct successi/successe/successero (cf. participle successo)"
+},
+{
+"verb": "succedere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "succedsero/succederono/succedettero",
+"to": "successero/succederono/succedettero",
+"why": "garbled strong passato remoto \"succedsi/succedse/succedsero\"; correct successi/successe/successero (cf. participle successo)"
+},
+{
+"verb": "concedere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "concedsi/concedei/concedetti",
+"to": "concessi/concedei/concedetti",
+"why": "garbled strong passato remoto \"concedsi/concedse/concedsero\"; correct concessi/concesse/concessero (cf. participle concesso)"
+},
+{
+"verb": "concedere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "concedse/concedé/concedette",
+"to": "concesse/concedé/concedette",
+"why": "garbled strong passato remoto \"concedsi/concedse/concedsero\"; correct concessi/concesse/concessero (cf. participle concesso)"
+},
+{
+"verb": "concedere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "concedsero/concederono/concedettero",
+"to": "concessero/concederono/concedettero",
+"why": "garbled strong passato remoto \"concedsi/concedse/concedsero\"; correct concessi/concesse/concessero (cf. participle concesso)"
+},
+{
+"verb": "precedere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "precedsi/precedei/precedetti",
+"to": "precedei/precedetti",
+"why": "garbled pseudo-strong passato remoto \"precedsi/precedse/precedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "precedere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "precedse/precedé/precedette",
+"to": "precedé/precedette",
+"why": "garbled pseudo-strong passato remoto \"precedsi/precedse/precedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "precedere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "precedsero/precederono/precedettero",
+"to": "precederono/precedettero",
+"why": "garbled pseudo-strong passato remoto \"precedsi/precedse/precedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "procedere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "procedsi/procedei/procedetti",
+"to": "procedei/procedetti",
+"why": "garbled pseudo-strong passato remoto \"procedsi/procedse/procedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "procedere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "procedse/procedé/procedette",
+"to": "procedé/procedette",
+"why": "garbled pseudo-strong passato remoto \"procedsi/procedse/procedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "procedere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "procedsero/procederono/procedettero",
+"to": "procederono/procedettero",
+"why": "garbled pseudo-strong passato remoto \"procedsi/procedse/procedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "cedere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "cedsi/cedei/cedetti",
+"to": "cedei/cedetti",
+"why": "garbled pseudo-strong passato remoto \"cedsi/cedse/cedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "cedere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "cedse/cedé/cedette",
+"to": "cedé/cedette",
+"why": "garbled pseudo-strong passato remoto \"cedsi/cedse/cedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "cedere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "cedsero/cederono/cedettero",
+"to": "cederono/cedettero",
+"why": "garbled pseudo-strong passato remoto \"cedsi/cedse/cedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "accedere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "accedsi/accedei/accedetti",
+"to": "accedei/accedetti",
+"why": "garbled pseudo-strong passato remoto \"accedsi/accedse/accedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "accedere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "accedse/accedé/accedette",
+"to": "accedé/accedette",
+"why": "garbled pseudo-strong passato remoto \"accedsi/accedse/accedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "accedere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "accedsero/accederono/accedettero",
+"to": "accederono/accedettero",
+"why": "garbled pseudo-strong passato remoto \"accedsi/accedse/accedsero\" (not words); only the weak -ei/-etti forms exist"
+},
+{
+"verb": "perdere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "perdi/perdei/perdetti",
+"to": "persi/perdei/perdetti",
+"why": "passato remoto \"perdi/perde/perdero\" are presente forms / non-words; strong forms are persi/perse/persero"
+},
+{
+"verb": "perdere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "perde/perdé/perdette",
+"to": "perse/perdé/perdette",
+"why": "passato remoto \"perdi/perde/perdero\" are presente forms / non-words; strong forms are persi/perse/persero"
+},
+{
+"verb": "perdere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "perdero/perderono/perdettero",
+"to": "persero/perderono/perdettero",
+"why": "passato remoto \"perdi/perde/perdero\" are presente forms / non-words; strong forms are persi/perse/persero"
+},
+{
+"verb": "disperdere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "disperdi/disperdei/disperdetti",
+"to": "dispersi/disperdei/disperdetti",
+"why": "passato remoto \"disperdi/disperde/disperdero\" are presente forms / non-words; strong forms are dispersi/disperse/dispersero"
+},
+{
+"verb": "disperdere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "disperde/disperdé/disperdette",
+"to": "disperse/disperdé/disperdette",
+"why": "passato remoto \"disperdi/disperde/disperdero\" are presente forms / non-words; strong forms are dispersi/disperse/dispersero"
+},
+{
+"verb": "disperdere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "disperdero/disperderono/disperdettero",
+"to": "dispersero/disperderono/disperdettero",
+"why": "passato remoto \"disperdi/disperde/disperdero\" are presente forms / non-words; strong forms are dispersi/disperse/dispersero"
+},
+{
+"verb": "riflettere",
+"tense": "indicativo_passato_remoto",
+"person": 0,
+"from": "rifletti/riflettei",
+"to": "riflessi/riflettei",
+"why": "passato remoto \"rifletti/riflette/riflettero\" are presente forms / non-words (strong form riflessi/riflesse/riflessero); futuro 3pl \"rifletterriflo\" is garbage for rifletteranno"
+},
+{
+"verb": "riflettere",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "riflette/rifletté",
+"to": "riflesse/rifletté",
+"why": "passato remoto \"rifletti/riflette/riflettero\" are presente forms / non-words (strong form riflessi/riflesse/riflessero); futuro 3pl \"rifletterriflo\" is garbage for rifletteranno"
+},
+{
+"verb": "riflettere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "riflettero/rifletterono",
+"to": "riflessero/rifletterono",
+"why": "passato remoto \"rifletti/riflette/riflettero\" are presente forms / non-words (strong form riflessi/riflesse/riflessero); futuro 3pl \"rifletterriflo\" is garbage for rifletteranno"
+},
+{
+"verb": "riflettere",
+"tense": "indicativo_futuro_semplice",
+"person": 5,
+"from": "rifletterriflo",
+"to": "rifletteranno",
+"why": "passato remoto \"rifletti/riflette/riflettero\" are presente forms / non-words (strong form riflessi/riflesse/riflessero); futuro 3pl \"rifletterriflo\" is garbage for rifletteranno"
+},
+{
+"verb": "connettere",
+"tense": "indicativo_futuro_semplice",
+"person": 5,
+"from": "connetterconno",
+"to": "connetteranno",
+"why": "futuro 3pl \"connetterconno\" is garbage for connetteranno"
+},
+{
+"verb": "espandere",
+"tense": "indicativo_passato_remoto",
+"person": 5,
+"from": "espansero/espanderono/espanderetto",
+"to": "espansero/espanderono/espandettero",
+"why": "passato remoto 3pl \"espanderetto\" is garbage for espandettero"
+},
+{
+"verb": "sparire",
+"tense": "indicativo_presente",
+"person": 3,
+"from": "spariamo/scompariamo",
+"to": "spariamo",
+"why": "forms of a different verb (scompariamo, scompariate, scomparendo, scomparente) mixed in; passato remoto 3sg typo \"sprave\" for sparve"
+},
+{
+"verb": "sparire",
+"tense": "indicativo_passato_remoto",
+"person": 2,
+"from": "sparì/sprave",
+"to": "sparì/sparve",
+"why": "forms of a different verb (scompariamo, scompariate, scomparendo, scomparente) mixed in; passato remoto 3sg typo \"sprave\" for sparve"
+},
+{
+"verb": "sparire",
+"tense": "congiuntivo_presente",
+"person": 3,
+"from": "spariamo/scompariamo",
+"to": "spariamo",
+"why": "forms of a different verb (scompariamo, scompariate, scomparendo, scomparente) mixed in; passato remoto 3sg typo \"sprave\" for sparve"
+},
+{
+"verb": "sparire",
+"tense": "congiuntivo_presente",
+"person": 4,
+"from": "spariate/scompariate",
+"to": "spariate",
+"why": "forms of a different verb (scompariamo, scompariate, scomparendo, scomparente) mixed in; passato remoto 3sg typo \"sprave\" for sparve"
+},
+{
+"verb": "sparire",
+"tense": "gerundio",
+"person": null,
+"from": "sparendo/scomparendo",
+"to": "sparendo",
+"why": "forms of a different verb (scompariamo, scompariate, scomparendo, scomparente) mixed in; passato remoto 3sg typo \"sprave\" for sparve"
+},
+{
+"verb": "sparire",
+"tense": "participio_presente",
+"person": null,
+"from": "sparente/scomparente",
+"to": "sparente",
+"why": "forms of a different verb (scompariamo, scompariate, scomparendo, scomparente) mixed in; passato remoto 3sg typo \"sprave\" for sparve"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_passato_prossimo",
+"person": 0,
+"from": "ho sbucato",
+"to": "sono sbucato/sono sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_passato_prossimo",
+"person": 1,
+"from": "hai sbucato",
+"to": "sei sbucato/sei sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_passato_prossimo",
+"person": 2,
+"from": "ha sbucato",
+"to": "è sbucato/è sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_passato_prossimo",
+"person": 3,
+"from": "abbiamo sbucato",
+"to": "siamo sbucati/siamo sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_passato_prossimo",
+"person": 4,
+"from": "avete sbucato",
+"to": "siete sbucati/siete sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_passato_prossimo",
+"person": 5,
+"from": "hanno sbucato",
+"to": "sono sbucati/sono sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 0,
+"from": "avevo sbucato",
+"to": "ero sbucato/ero sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 1,
+"from": "avevi sbucato",
+"to": "eri sbucato/eri sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 2,
+"from": "aveva sbucato",
+"to": "era sbucato/era sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 3,
+"from": "avevamo sbucato",
+"to": "eravamo sbucati/eravamo sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 4,
+"from": "avevate sbucato",
+"to": "eravate sbucati/eravate sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 5,
+"from": "avevano sbucato",
+"to": "erano sbucati/erano sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_remoto",
+"person": 0,
+"from": "ebbi sbucato",
+"to": "fui sbucato/fui sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_remoto",
+"person": 1,
+"from": "avesti sbucato",
+"to": "fosti sbucato/fosti sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_remoto",
+"person": 2,
+"from": "ebbe sbucato",
+"to": "fu sbucato/fu sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_remoto",
+"person": 3,
+"from": "avemmo sbucato",
+"to": "fummo sbucati/fummo sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_remoto",
+"person": 4,
+"from": "aveste sbucato",
+"to": "foste sbucati/foste sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_trapassato_remoto",
+"person": 5,
+"from": "ebbero sbucato",
+"to": "furono sbucati/furono sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_futuro_anteriore",
+"person": 0,
+"from": "avrò sbucato",
+"to": "sarò sbucato/sarò sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_futuro_anteriore",
+"person": 1,
+"from": "avrai sbucato",
+"to": "sarai sbucato/sarai sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_futuro_anteriore",
+"person": 2,
+"from": "avrà sbucato",
+"to": "sarà sbucato/sarà sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_futuro_anteriore",
+"person": 3,
+"from": "avremo sbucato",
+"to": "saremo sbucati/saremo sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_futuro_anteriore",
+"person": 4,
+"from": "avrete sbucato",
+"to": "sarete sbucati/sarete sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "indicativo_futuro_anteriore",
+"person": 5,
+"from": "avranno sbucato",
+"to": "saranno sbucati/saranno sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "condizionale_passato",
+"person": 0,
+"from": "avrei sbucato",
+"to": "sarei sbucato/sarei sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "condizionale_passato",
+"person": 1,
+"from": "avresti sbucato",
+"to": "saresti sbucato/saresti sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "condizionale_passato",
+"person": 2,
+"from": "avrebbe sbucato",
+"to": "sarebbe sbucato/sarebbe sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "condizionale_passato",
+"person": 3,
+"from": "avremmo sbucato",
+"to": "saremmo sbucati/saremmo sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "condizionale_passato",
+"person": 4,
+"from": "avreste sbucato",
+"to": "sareste sbucati/sareste sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "condizionale_passato",
+"person": 5,
+"from": "avrebbero sbucato",
+"to": "sarebbero sbucati/sarebbero sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_passato",
+"person": 0,
+"from": "abbia sbucato",
+"to": "sia sbucato/sia sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_passato",
+"person": 1,
+"from": "abbia sbucato",
+"to": "sia sbucato/sia sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_passato",
+"person": 2,
+"from": "abbia sbucato",
+"to": "sia sbucato/sia sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_passato",
+"person": 3,
+"from": "abbiamo sbucato",
+"to": "siamo sbucati/siamo sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_passato",
+"person": 4,
+"from": "abbiate sbucato",
+"to": "siate sbucati/siate sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_passato",
+"person": 5,
+"from": "abbiano sbucato",
+"to": "siano sbucati/siano sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_trapassato",
+"person": 0,
+"from": "avessi sbucato",
+"to": "fossi sbucato/fossi sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_trapassato",
+"person": 1,
+"from": "avessi sbucato",
+"to": "fossi sbucato/fossi sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_trapassato",
+"person": 2,
+"from": "avesse sbucato",
+"to": "fosse sbucato/fosse sbucata",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_trapassato",
+"person": 3,
+"from": "avessimo sbucato",
+"to": "fossimo sbucati/fossimo sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_trapassato",
+"person": 4,
+"from": "aveste sbucato",
+"to": "foste sbucati/foste sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sbucare",
+"tense": "congiuntivo_trapassato",
+"person": 5,
+"from": "avessero sbucato",
+"to": "fossero sbucati/fossero sbucate",
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_passato_prossimo",
+"person": 0,
+"from": "ho sottostato",
+"to": "sono sottostato/sono sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_passato_prossimo",
+"person": 1,
+"from": "hai sottostato",
+"to": "sei sottostato/sei sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_passato_prossimo",
+"person": 2,
+"from": "ha sottostato",
+"to": "è sottostato/è sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_passato_prossimo",
+"person": 3,
+"from": "abbiamo sottostato",
+"to": "siamo sottostati/siamo sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_passato_prossimo",
+"person": 4,
+"from": "avete sottostato",
+"to": "siete sottostati/siete sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_passato_prossimo",
+"person": 5,
+"from": "hanno sottostato",
+"to": "sono sottostati/sono sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 0,
+"from": "avevo sottostato",
+"to": "ero sottostato/ero sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 1,
+"from": "avevi sottostato",
+"to": "eri sottostato/eri sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 2,
+"from": "aveva sottostato",
+"to": "era sottostato/era sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 3,
+"from": "avevamo sottostato",
+"to": "eravamo sottostati/eravamo sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 4,
+"from": "avevate sottostato",
+"to": "eravate sottostati/eravate sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 5,
+"from": "avevano sottostato",
+"to": "erano sottostati/erano sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_remoto",
+"person": 0,
+"from": "ebbi sottostato",
+"to": "fui sottostato/fui sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_remoto",
+"person": 1,
+"from": "avesti sottostato",
+"to": "fosti sottostato/fosti sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_remoto",
+"person": 2,
+"from": "ebbe sottostato",
+"to": "fu sottostato/fu sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_remoto",
+"person": 3,
+"from": "avemmo sottostato",
+"to": "fummo sottostati/fummo sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_remoto",
+"person": 4,
+"from": "aveste sottostato",
+"to": "foste sottostati/foste sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_trapassato_remoto",
+"person": 5,
+"from": "ebbero sottostato",
+"to": "furono sottostati/furono sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_futuro_anteriore",
+"person": 0,
+"from": "avrò sottostato",
+"to": "sarò sottostato/sarò sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_futuro_anteriore",
+"person": 1,
+"from": "avrai sottostato",
+"to": "sarai sottostato/sarai sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_futuro_anteriore",
+"person": 2,
+"from": "avrà sottostato",
+"to": "sarà sottostato/sarà sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_futuro_anteriore",
+"person": 3,
+"from": "avremo sottostato",
+"to": "saremo sottostati/saremo sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_futuro_anteriore",
+"person": 4,
+"from": "avrete sottostato",
+"to": "sarete sottostati/sarete sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "indicativo_futuro_anteriore",
+"person": 5,
+"from": "avranno sottostato",
+"to": "saranno sottostati/saranno sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "condizionale_passato",
+"person": 0,
+"from": "avrei sottostato",
+"to": "sarei sottostato/sarei sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "condizionale_passato",
+"person": 1,
+"from": "avresti sottostato",
+"to": "saresti sottostato/saresti sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "condizionale_passato",
+"person": 2,
+"from": "avrebbe sottostato",
+"to": "sarebbe sottostato/sarebbe sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "condizionale_passato",
+"person": 3,
+"from": "avremmo sottostato",
+"to": "saremmo sottostati/saremmo sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "condizionale_passato",
+"person": 4,
+"from": "avreste sottostato",
+"to": "sareste sottostati/sareste sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "condizionale_passato",
+"person": 5,
+"from": "avrebbero sottostato",
+"to": "sarebbero sottostati/sarebbero sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_passato",
+"person": 0,
+"from": "abbia sottostato",
+"to": "sia sottostato/sia sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_passato",
+"person": 1,
+"from": "abbia sottostato",
+"to": "sia sottostato/sia sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_passato",
+"person": 2,
+"from": "abbia sottostato",
+"to": "sia sottostato/sia sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_passato",
+"person": 3,
+"from": "abbiamo sottostato",
+"to": "siamo sottostati/siamo sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_passato",
+"person": 4,
+"from": "abbiate sottostato",
+"to": "siate sottostati/siate sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_passato",
+"person": 5,
+"from": "abbiano sottostato",
+"to": "siano sottostati/siano sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_trapassato",
+"person": 0,
+"from": "avessi sottostato",
+"to": "fossi sottostato/fossi sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_trapassato",
+"person": 1,
+"from": "avessi sottostato",
+"to": "fossi sottostato/fossi sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_trapassato",
+"person": 2,
+"from": "avesse sottostato",
+"to": "fosse sottostato/fosse sottostata",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_trapassato",
+"person": 3,
+"from": "avessimo sottostato",
+"to": "fossimo sottostati/fossimo sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_trapassato",
+"person": 4,
+"from": "aveste sottostato",
+"to": "foste sottostati/foste sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "sottostare",
+"tense": "congiuntivo_trapassato",
+"person": 5,
+"from": "avessero sottostato",
+"to": "fossero sottostati/fossero sottostate",
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_passato_prossimo",
+"person": 0,
+"from": "ho scivolato",
+"to": "ho scivolato/sono scivolato/sono scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_passato_prossimo",
+"person": 1,
+"from": "hai scivolato",
+"to": "hai scivolato/sei scivolato/sei scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_passato_prossimo",
+"person": 2,
+"from": "ha scivolato",
+"to": "ha scivolato/è scivolato/è scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_passato_prossimo",
+"person": 3,
+"from": "abbiamo scivolato",
+"to": "abbiamo scivolato/siamo scivolati/siamo scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_passato_prossimo",
+"person": 4,
+"from": "avete scivolato",
+"to": "avete scivolato/siete scivolati/siete scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_passato_prossimo",
+"person": 5,
+"from": "hanno scivolato",
+"to": "hanno scivolato/sono scivolati/sono scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 0,
+"from": "avevo scivolato",
+"to": "avevo scivolato/ero scivolato/ero scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 1,
+"from": "avevi scivolato",
+"to": "avevi scivolato/eri scivolato/eri scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 2,
+"from": "aveva scivolato",
+"to": "aveva scivolato/era scivolato/era scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 3,
+"from": "avevamo scivolato",
+"to": "avevamo scivolato/eravamo scivolati/eravamo scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 4,
+"from": "avevate scivolato",
+"to": "avevate scivolato/eravate scivolati/eravate scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_prossimo",
+"person": 5,
+"from": "avevano scivolato",
+"to": "avevano scivolato/erano scivolati/erano scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_remoto",
+"person": 0,
+"from": "ebbi scivolato",
+"to": "ebbi scivolato/fui scivolato/fui scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_remoto",
+"person": 1,
+"from": "avesti scivolato",
+"to": "avesti scivolato/fosti scivolato/fosti scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_remoto",
+"person": 2,
+"from": "ebbe scivolato",
+"to": "ebbe scivolato/fu scivolato/fu scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_remoto",
+"person": 3,
+"from": "avemmo scivolato",
+"to": "avemmo scivolato/fummo scivolati/fummo scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_remoto",
+"person": 4,
+"from": "aveste scivolato",
+"to": "aveste scivolato/foste scivolati/foste scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_trapassato_remoto",
+"person": 5,
+"from": "ebbero scivolato",
+"to": "ebbero scivolato/furono scivolati/furono scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_futuro_anteriore",
+"person": 0,
+"from": "avrò scivolato",
+"to": "avrò scivolato/sarò scivolato/sarò scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_futuro_anteriore",
+"person": 1,
+"from": "avrai scivolato",
+"to": "avrai scivolato/sarai scivolato/sarai scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_futuro_anteriore",
+"person": 2,
+"from": "avrà scivolato",
+"to": "avrà scivolato/sarà scivolato/sarà scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_futuro_anteriore",
+"person": 3,
+"from": "avremo scivolato",
+"to": "avremo scivolato/saremo scivolati/saremo scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_futuro_anteriore",
+"person": 4,
+"from": "avrete scivolato",
+"to": "avrete scivolato/sarete scivolati/sarete scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "indicativo_futuro_anteriore",
+"person": 5,
+"from": "avranno scivolato",
+"to": "avranno scivolato/saranno scivolati/saranno scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "condizionale_passato",
+"person": 0,
+"from": "avrei scivolato",
+"to": "avrei scivolato/sarei scivolato/sarei scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "condizionale_passato",
+"person": 1,
+"from": "avresti scivolato",
+"to": "avresti scivolato/saresti scivolato/saresti scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "condizionale_passato",
+"person": 2,
+"from": "avrebbe scivolato",
+"to": "avrebbe scivolato/sarebbe scivolato/sarebbe scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "condizionale_passato",
+"person": 3,
+"from": "avremmo scivolato",
+"to": "avremmo scivolato/saremmo scivolati/saremmo scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "condizionale_passato",
+"person": 4,
+"from": "avreste scivolato",
+"to": "avreste scivolato/sareste scivolati/sareste scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "condizionale_passato",
+"person": 5,
+"from": "avrebbero scivolato",
+"to": "avrebbero scivolato/sarebbero scivolati/sarebbero scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_passato",
+"person": 0,
+"from": "abbia scivolato",
+"to": "abbia scivolato/sia scivolato/sia scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_passato",
+"person": 1,
+"from": "abbia scivolato",
+"to": "abbia scivolato/sia scivolato/sia scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_passato",
+"person": 2,
+"from": "abbia scivolato",
+"to": "abbia scivolato/sia scivolato/sia scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_passato",
+"person": 3,
+"from": "abbiamo scivolato",
+"to": "abbiamo scivolato/siamo scivolati/siamo scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_passato",
+"person": 4,
+"from": "abbiate scivolato",
+"to": "abbiate scivolato/siate scivolati/siate scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_passato",
+"person": 5,
+"from": "abbiano scivolato",
+"to": "abbiano scivolato/siano scivolati/siano scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_trapassato",
+"person": 0,
+"from": "avessi scivolato",
+"to": "avessi scivolato/fossi scivolato/fossi scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_trapassato",
+"person": 1,
+"from": "avessi scivolato",
+"to": "avessi scivolato/fossi scivolato/fossi scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_trapassato",
+"person": 2,
+"from": "avesse scivolato",
+"to": "avesse scivolato/fosse scivolato/fosse scivolata",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_trapassato",
+"person": 3,
+"from": "avessimo scivolato",
+"to": "avessimo scivolato/fossimo scivolati/fossimo scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_trapassato",
+"person": 4,
+"from": "aveste scivolato",
+"to": "aveste scivolato/foste scivolati/foste scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "scivolare",
+"tense": "congiuntivo_trapassato",
+"person": 5,
+"from": "avessero scivolato",
+"to": "avessero scivolato/fossero scivolati/fossero scivolate",
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "sbucare",
+"tense": "x.auxiliary",
+"person": null,
+"from": [
+"avere"
+],
+"to": [
+"essere"
+],
+"why": "sbucare is intransitive with auxiliary essere (è sbucato)"
+},
+{
+"verb": "sottostare",
+"tense": "x.auxiliary",
+"person": null,
+"from": [
+"avere"
+],
+"to": [
+"essere"
+],
+"why": "sottostare takes essere (è sottostato)"
+},
+{
+"verb": "scivolare",
+"tense": "x.auxiliary",
+"person": null,
+"from": [
+"avere"
+],
+"to": [
+"avere",
+"essere"
+],
+"why": "scivolare normally takes essere (è scivolato); avere only in limited senses"
+},
+{
+"verb": "apparire",
+"tense": "x.participle",
+"person": null,
+"from": {
+"ms": "apparito/apparso",
+"fs": "apparita/apparsa",
+"mp": "appariti/apparsi",
+"fp": "apparite/apparse"
+},
+"to": {
+"ms": "apparso",
+"fs": "apparsa",
+"mp": "apparsi",
+"fp": "apparse"
+},
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "comparire",
+"tense": "x.participle",
+"person": null,
+"from": {
+"ms": "comparito/comparso",
+"fs": "comparita/comparsa",
+"mp": "compariti/comparsi",
+"fp": "comparite/comparse"
+},
+"to": {
+"ms": "comparso",
+"fs": "comparsa",
+"mp": "comparsi",
+"fp": "comparse"
+},
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "scomparire",
+"tense": "x.participle",
+"person": null,
+"from": {
+"ms": "scomparito/scomparso",
+"fs": "scomparita/scomparsa",
+"mp": "scompariti/scomparsi",
+"fp": "scomparite/scomparse"
+},
+"to": {
+"ms": "scomparso",
+"fs": "scomparsa",
+"mp": "scomparsi",
+"fp": "scomparse"
+},
+"why": "presente/congiuntivo \"-aro/-ara\" should be \"-aio/-aia\"; compound tenses used archaic/nonstandard participle \"-ito\" instead of \"-so\""
+},
+{
+"verb": "compravendere",
+"tense": "x.participle",
+"person": null,
+"from": {
+"ms": "compraveso",
+"fs": "compravesa",
+"mp": "compravesi",
+"fp": "compravese"
+},
+"to": {
+"ms": "compravenduto",
+"fs": "compravenduta",
+"mp": "compravenduti",
+"fp": "compravendute"
+},
+"why": "ML-predicted garbage passato remoto \"compravesi\" and participle \"compraveso\"; conjugates like vendere"
+},
+{
+"verb": "riapparire",
+"tense": "x.participle",
+"person": null,
+"from": {
+"ms": "riapparso/riapparito",
+"fs": "riapparsa/riapparita",
+"mp": "riapparsi/riappariti",
+"fp": "riapparse/riapparite"
+},
+"to": {
+"ms": "riapparso",
+"fs": "riapparsa",
+"mp": "riapparsi",
+"fp": "riapparse"
+},
+"why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "alludere",
+"tense": "zh",
+"person": null,
+"from": "说",
+"to": "暗指；影射",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "brindare",
+"tense": "zh",
+"person": null,
+"from": "祝酒词",
+"to": "干杯；举杯祝贺",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "brulicare",
+"tense": "zh",
+"person": null,
+"from": "要燃烧",
+"to": "（虫、人）密密麻麻；充满",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "cascare",
+"tense": "zh",
+"person": null,
+"from": "护理",
+"to": "跌倒；落入",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "cassare",
+"tense": "zh",
+"person": null,
+"from": "出纳员",
+"to": "删去；撤销",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "coincidere",
+"tense": "zh",
+"person": null,
+"from": "对齐",
+"to": "一致；巧合；重合",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "combaciare",
+"tense": "zh",
+"person": null,
+"from": "组合",
+"to": "吻合；契合",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "compiacere",
+"tense": "zh",
+"person": null,
+"from": "请",
+"to": "迎合；讨好",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "complottare",
+"tense": "zh",
+"person": null,
+"from": "绘图",
+"to": "密谋；策划阴谋",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "concedere",
+"tense": "zh",
+"person": null,
+"from": "赠款",
+"to": "给予；允许；准许",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "condire",
+"tense": "zh",
+"person": null,
+"from": "发货",
+"to": "调味；拌",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "condiscendere",
+"tense": "zh",
+"person": null,
+"from": "隐蔽",
+"to": "迁就；俯就；同意",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "contestare",
+"tense": "zh",
+"person": null,
+"from": "比赛",
+"to": "质疑；反对；（正式）指控",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "evocare",
+"tense": "zh",
+"person": null,
+"from": "传票",
+"to": "召唤（亡灵）；唤起",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "filare",
+"tense": "zh",
+"person": null,
+"from": "旋转",
+"to": "纺纱；（与某人）谈恋爱；飞驰",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "fondere",
+"tense": "zh",
+"person": null,
+"from": "引信",
+"to": "熔化；融合；合并",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "friggere",
+"tense": "zh",
+"person": null,
+"from": "煎饼",
+"to": "油炸；煎；（因急躁）坐立不安",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "illudere",
+"tense": "zh",
+"person": null,
+"from": "低调",
+"to": "使产生幻想；欺骗",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "imbottire",
+"tense": "zh",
+"person": null,
+"from": "添加",
+"to": "填塞；夹（馅）；灌输",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "imbrattare",
+"tense": "zh",
+"person": null,
+"from": "弹簧",
+"to": "弄脏；涂抹",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "imputare",
+"tense": "zh",
+"person": null,
+"from": "收费",
+"to": "归咎于；控告",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "incassare",
+"tense": "zh",
+"person": null,
+"from": "现金",
+"to": "收（款）；嵌入；忍受（打击）",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "incatenare",
+"tense": "zh",
+"person": null,
+"from": "链条",
+"to": "用链子拴住；束缚",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "poggiare",
+"tense": "zh",
+"person": null,
+"from": "休养",
+"to": "靠；放置；建立在",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "porgere",
+"tense": "zh",
+"person": null,
+"from": "征税",
+"to": "递给；伸出",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "precipitare",
+"tense": "zh",
+"person": null,
+"from": "倾斜",
+"to": "坠落；扔下；（局势）急剧恶化",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "precisare",
+"tense": "zh",
+"person": null,
+"from": "指定",
+"to": "明确；详细说明",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "prenotare",
+"tense": "zh",
+"person": null,
+"from": "书",
+"to": "预订；预约",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "presenziare",
+"tense": "zh",
+"person": null,
+"from": "显示",
+"to": "出席；在场",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "prosciogliere",
+"tense": "zh",
+"person": null,
+"from": "亲子主义",
+"to": "解除；宣告无罪",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "quadrare",
+"tense": "zh",
+"person": null,
+"from": "平方圆",
+"to": "相符；吻合；令人满意",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "rammentare",
+"tense": "zh",
+"person": null,
+"from": "承认",
+"to": "提醒；记得",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "raschiare",
+"tense": "zh",
+"person": null,
+"from": "丢弃",
+"to": "刮；刮掉",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "recapitare",
+"tense": "zh",
+"person": null,
+"from": "联系人",
+"to": "投递；送交",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "ribattere",
+"tense": "zh",
+"person": null,
+"from": "战斗",
+"to": "反驳；回击",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sintonizzare",
+"tense": "zh",
+"person": null,
+"from": "曲调",
+"to": "调谐（频道）；使协调",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sospettare",
+"tense": "zh",
+"person": null,
+"from": "犯罪嫌疑人",
+"to": "怀疑",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sradicare",
+"tense": "zh",
+"person": null,
+"from": "删除",
+"to": "连根拔起；根除；使离乡",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "stendere",
+"tense": "zh",
+"person": null,
+"from": "躺下来",
+"to": "铺开；伸展；晾晒",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sottostare",
+"tense": "zh",
+"person": null,
+"from": "补贴",
+"to": "服从；遵守；位于…之下",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sviare",
+"tense": "zh",
+"person": null,
+"from": "斯维亚尔",
+"to": "使偏离；转移；使误入歧途",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "traboccare",
+"tense": "zh",
+"person": null,
+"from": "偷车",
+"to": "溢出；充满",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "trarre",
+"tense": "zh",
+"person": null,
+"from": "绘图",
+"to": "引出；取得；改编",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "tralasciare",
+"tense": "zh",
+"person": null,
+"from": "更别说了",
+"to": "忽略；中断；遗漏",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "ungere",
+"tense": "zh",
+"person": null,
+"from": "(单位:千美元)",
+"to": "涂油；抹油",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "usufruire",
+"tense": "zh",
+"person": null,
+"from": "设施",
+"to": "享受；享用",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "condizionare",
+"tense": "zh",
+"person": null,
+"from": "条件",
+"to": "使受制约；以…为条件；调节（空气）",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "pesare",
+"tense": "zh",
+"person": null,
+"from": "重量",
+"to": "称重；有…重；压在…上",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "colorare",
+"tense": "zh",
+"person": null,
+"from": "颜色",
+"to": "给…上色；染色",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "trafficare",
+"tense": "zh",
+"person": null,
+"from": "运输",
+"to": "做买卖；贩卖；忙碌",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+}
+]

@@ -15,72 +15,58 @@
   'use strict';
 
   var $ = function (id) { return document.getElementById(id); };
-  var esc = function (s) { return global.escapeHtml(s == null ? '' : String(s)); };
-  var escAttr = function (s) { return global.escapeAttribute(s == null ? '' : String(s)); };
+  var esc = global.escapeHtml;           // lib/utils.js
+  var escAttr = global.escapeAttribute;  // lib/utils.js
   var fmt = function (n) { return Number(n || 0).toLocaleString('en-US'); };
 
   var LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
   var LEVEL_NAMES = { A1: '入门', A2: '基础', B1: '进阶', B2: '中高级', C1: '高级', C2: '精通' };
+  var LEVEL_DESC = {
+    A1: '最常用的日常词：问候、数字、家人、吃喝。',
+    A2: '描述日常生活与简单经历所需的词。',
+    B1: '能谈工作、旅行和个人看法的核心词汇。',
+    B2: '读报、讨论抽象话题时的常用词。',
+    C1: '学术与专业场合的书面词汇。',
+    C2: '文学、习语与细微语义差别。'
+  };
   var LANGUAGE_KEY = 'dimenticato_language';
   var THEME_KEY = 'dimenticato_theme';
   var BROWSE_PAGE = 200;
   var SESSION_SIZES = ['20', '50', '100', 'all'];
 
-  function shuffleArray(list) {
-    var a = list.slice();
-    for (var i = a.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = a[i]; a[i] = a[j]; a[j] = t;
-    }
-    return a;
-  }
-  global.shuffleArray = shuffleArray;
+  var shuffleArray = global.shuffleArray; // lib/utils.js
 
   function lang() { return global.getActiveLanguage(); }
   // 外语单词标上 lang：读屏按对应语言发音，浏览器按对应语言断字
   function langAttr(l) { return ' lang="' + global.Languages.code(l || lang()) + '"'; }
   function profile(l) { return global.Languages.get(l || lang()); }
-  function hasModule(name, l) { var p = profile(l); return !!(p && p.modules && p.modules[name]); }
+  /** 目标语言的 kicker 小字（Languages 档案里的 labels），带 lang 属性方便读屏/断字。 */
+  function tl(name, l) {
+    var p = profile(l);
+    return '<span lang="' + escAttr(p ? p.code : '') + '">' + esc(global.Languages.text(l || lang(), name)) + '</span>';
+  }
+  /** index.html 里静态的 kicker（data-lang-label="browse" 等）跟着当前语言换。 */
+  function applyStaticLabels() {
+    var p = profile();
+    if (!p) return;
+    var nodes = document.querySelectorAll('[data-lang-label]');
+    for (var i = 0; i < nodes.length; i++) {
+      var text = global.Languages.text(p.code, nodes[i].getAttribute('data-lang-label'));
+      if (!text) continue;
+      nodes[i].textContent = text;
+      nodes[i].setAttribute('lang', p.code);
+    }
+  }
+  function hasModule(name, l) { return global.Languages.hasModule(l || lang(), name); }
   function readJson(key, fallback) {
     try { return global.DimStorage.safeParse(localStorage.getItem(key), fallback); } catch (e) { return fallback; }
   }
-  // 语法数据文件把数据写成顶层 const（不在 window 上），只能按裸名字取：
-  // 名字来自 profile.grammarGlobal，用间接 eval 在全局词法环境里查（名字是本地常量，不含用户输入）
-  function grammarData(l) {
-    var p = profile(l);
-    var name = p && p.grammarGlobal;
-    if (!name || !/^[A-Z_]+$/.test(name)) return null;
-    try { return (0, eval)('typeof ' + name + " !== 'undefined' ? " + name + ' : null'); } catch (e) { return null; }
-  }
+  function grammarData(l) { return global.LangLoader ? global.LangLoader.data(l || lang(), 'grammar') : null; }
   function grammarBook() {
     return global.GrammarBook || (typeof GrammarBook !== 'undefined' ? GrammarBook : null);
   }
 
-  // ==================== 朗读 ====================
-
-  var Speaker = {
-    voices: [],
-    init: function () {
-      var synth = global.speechSynthesis;
-      if (!synth) return;
-      var self = this;
-      var load = function () { self.voices = synth.getVoices() || []; };
-      load();
-      if (synth.addEventListener) synth.addEventListener('voiceschanged', load);
-    },
-    speak: function (text, l) {
-      var synth = global.speechSynthesis;
-      if (!synth || !text || typeof SpeechSynthesisUtterance === 'undefined') return;
-      var p = profile(l);
-      synth.cancel();
-      var u = new SpeechSynthesisUtterance(text);
-      u.lang = p.tts;
-      u.rate = 0.9; // 稍慢，便于跟读
-      var voice = this.voices.find(function (v) { return p.voice.test(v.lang); });
-      if (voice) u.voice = voice;
-      synth.speak(u);
-    }
-  };
+  // 朗读：全局 Speaker（lib/utils.js）
 
   // ==================== 进度（已掌握集合 + 计数器） ====================
   //
@@ -102,6 +88,15 @@
     },
     systemKey: function (l) { return global.DimStorage.masteredKey(l || lang()); },
     systemMastered: function (l) { return this.mastered(this.systemKey(l)); },
+    /** 已掌握且仍在词库里的词数。词库删掉的词（英语专名、意语垃圾词条）的进度留在存储里，
+     *  词条回来时还能接上，但不计入统计。 */
+    systemMasteredCount: function (l) {
+      var mastered = this.systemMastered(l);
+      if (!mastered.size) return 0;
+      var n = 0;
+      global.Vocab.entries(l).forEach(function (e) { if (mastered.has(e.word)) n++; });
+      return n;
+    },
 
     statsFor: function (l) {
       var key = global.DimStorage.statsKey(l);
@@ -129,7 +124,7 @@
     forget: function (l) {
       this.flush();
       var sysKey = this.systemKey(l);
-      var wbPrefix = 'dimenticato_progress_wb_' + l + '_';
+      var wbPrefix = global.DimStorage.key(l, 'wb_');
       var self = this;
       Object.keys(this.sets).forEach(function (key) {
         if (key === sysKey || key.indexOf(wbPrefix) === 0) delete self.sets[key];
@@ -141,10 +136,10 @@
 
   // ==================== 练习来源 ====================
   //
-  // Prefs（dimenticato_prefs，按语言）：source 'system' | 'wb:<id>' | 'course'，
+  // Prefs（dimenticato_<code>_prefs，DimStorage.key(lang, 'prefs')）：source 'system' | 'wb:<id>' | 'course'，
   // level 'A1'..'C2' | 'all'，filter 'all' | 'new' | 'due'，session '20'|'50'|'100'|'all'
 
-  var courseSelection = null; // { lang, label, entries } —— 德语课程路线选中的单元词表
+  var courseSelection = null; // { lang, label, entries } —— 课程路线（course.js）选中的单元词表
 
   function prefs(l) { return global.Prefs.get(l || lang()); }
   function setPrefs(patch, l) { return global.Prefs.set(l || lang(), patch); }
@@ -412,14 +407,6 @@
     ];
   }
 
-  function insertAtCursor(input, text) {
-    var start = input.selectionStart == null ? input.value.length : input.selectionStart;
-    var end = input.selectionEnd == null ? input.value.length : input.selectionEnd;
-    input.value = input.value.slice(0, start) + text + input.value.slice(end);
-    input.selectionStart = input.selectionEnd = start + text.length;
-    input.focus();
-  }
-
   // ---------- 通用 ----------
 
   function nextQuestion() {
@@ -441,7 +428,7 @@
     var done = $(prefix + 'Done');
     done.innerHTML =
       '<span class="kicker">本组完成</span>' +
-      '<h2>' + (acc >= 90 ? 'Ottimo — 干得漂亮' : acc >= 60 ? '稳步前进' : '再来一组会更好') + '</h2>' +
+      '<h2>' + (acc >= 90 ? tl('great') + ' — 干得漂亮' : acc >= 60 ? '稳步前进' : '再来一组会更好') + '</h2>' +
       '<dl class="stat-strip compact">' +
         stat('答对', s.quizCorrect + ' / ' + s.quizTotal) +
         stat('正确率', acc + '%') +
@@ -461,14 +448,20 @@
 
   // ==================== 首页 ====================
 
-  function wordOfTheDay(l) {
+  function wordOfTheDay(l, offset) {
     var pool = global.Vocab.upToLevel(l, 'B1');
     if (!pool.length) pool = global.Vocab.entries(l);
     if (!pool.length) return null;
     var day = global.localDay() + l;
     var h = 0;
     for (var i = 0; i < day.length; i++) h = (h * 31 + day.charCodeAt(i)) >>> 0;
-    return pool[h % pool.length];
+    return pool[(h + (offset || 0)) % pool.length];
+  }
+
+  /** hero 统计：mono 大数字 + data-count（lib/editorial.js 进场时从 0 数上来）。 */
+  function heroStat(label, n) {
+    return '<div><dt class="stat-label">' + esc(label) + '</dt>' +
+      '<dd class="stat-num num" data-count="' + n + '">' + fmt(n) + '</dd></div>';
   }
 
   function renderHome() {
@@ -480,6 +473,8 @@
     var streak = global.StatsManager ? global.StatsManager.getStreak(l) : 0;
     var counts = global.Vocab.levelCounts(l);
     var wotd = wordOfTheDay(l);
+    var masteredN = Progress.systemMasteredCount(l);
+    var masteredPct = entries.length ? (masteredN / entries.length * 100).toFixed(1) + '%' : '';
 
     var levelMastered = {};
     LEVELS.forEach(function (lv) { levelMastered[lv] = 0; });
@@ -487,82 +482,128 @@
 
     var html = '' +
       '<header class="hero">' +
-        '<div class="hero-copy">' +
-          '<span class="kicker">' + esc(p.en) + ' · ' + esc(p.cn) + '</span>' +
-          '<h1 class="hero-title">' + esc(p.motto) + '</h1>' +
-          '<p class="hero-lede">' + esc(p.cn) + '词库 <span class="num">' + fmt(entries.length) + '</span> 条，按 CEFR A1–C2 分级。' +
-            '选择题、拼写、浏览与打字游戏共用同一份进度，语法书与动词变位按需加载。学习记录只保存在这台设备的浏览器里。</p>' +
-          '<div class="actions">' +
-            '<button class="primary-btn" data-action="start" data-mode="quiz"><span class="msr" aria-hidden="true">play_arrow</span>开始一组练习</button>' +
-            (due ? '<button class="btn" data-action="review"><span class="msr" aria-hidden="true">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
-            '<button class="btn" data-go="vocabScreen">练习设置</button>' +
+        '<div class="hero-inner">' +
+          '<div class="hero-copy">' +
+            '<p class="kicker">' + esc(p.name) + ' · A1–C2</p>' +
+            '<h1 class="hero-title"' + langAttr(l) + '>' + esc(p.motto) + '</h1>' +
+            '<p class="hero-sub">' + esc(p.cn) + '词库 <span class="num">' + fmt(entries.length) + '</span> 条，按 CEFR A1–C2 分级。' +
+              '选择题、拼写、浏览与打字游戏共用同一份进度；学习记录只保存在这台设备的浏览器里。</p>' +
+            '<div class="hero-actions">' +
+              '<button class="btn btn-primary" data-action="start" data-mode="quiz"><span class="msr" aria-hidden="true">play_arrow</span>开始一组练习</button>' +
+              (due ? '<button class="btn btn-ghost" data-action="review"><span class="msr" aria-hidden="true">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
+              '<button class="btn btn-ghost" data-go="vocabScreen">练习设置</button>' +
+            '</div>' +
+            '<dl class="hero-stats">' +
+              heroStat('词条', entries.length) +
+              heroStat('已掌握' + (masteredPct ? ' · ' + masteredPct : ''), masteredN) +
+              heroStat('待复习', due) +
+              heroStat('连续学习 · 天', streak) +
+            '</dl>' +
           '</div>' +
+          (wotd ? renderHeroStack(wotd, l, p) : '') +
         '</div>' +
-        (wotd ? renderWotd(wotd, l) : '') +
       '</header>' +
-      '<dl class="stat-strip">' +
-        stat('词汇量', fmt(entries.length)) +
-        stat('已掌握', fmt(mastered.size), entries.length ? (mastered.size / entries.length * 100).toFixed(1) + '%' : '') +
-        stat('待复习', fmt(due)) +
-        stat('连续学习', streak + ' 天') +
-      '</dl>' +
-      '<section class="section">' +
-        '<div class="section-head"><span class="kicker">CEFR</span><h2>按等级学习</h2>' +
-          '<p>每一级都是一份完整词表。点开即以该等级为练习范围。</p></div>' +
-        '<div class="level-grid">' + LEVELS.map(function (lv) {
+      '<section class="section" aria-labelledby="homeLevelsTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">CEFR · ' + esc(p.name) + '</p><h2 id="homeLevelsTitle">按等级学习</h2>' +
+          '<p class="section-sub">每一级都是一份完整词表。点开即以该等级为练习范围。</p></div>' +
+        '<div class="level-grid reveal-group">' + LEVELS.map(function (lv) {
           var total = counts[lv] || 0;
           var done = levelMastered[lv] || 0;
           var pct = total ? done / total * 100 : 0;
-          return '<button class="card level-card" data-action="level" data-level="' + lv + '"' + (total ? '' : ' disabled') + '>' +
+          return '<button class="card level-card reveal" data-action="level" data-level="' + lv + '"' + (total ? '' : ' disabled') + '>' +
             '<span class="level-code">' + lv + '</span>' +
-            '<span class="card-title">' + LEVEL_NAMES[lv] + '</span>' +
-            '<span class="card-foot"><span class="num">' + fmt(done) + ' / ' + fmt(total) + '</span><span class="num">' + pct.toFixed(0) + '%</span></span>' +
+            '<span class="card-label">' + LEVEL_NAMES[lv] + '</span>' +
+            '<span class="card-desc">' + LEVEL_DESC[lv] + '</span>' +
+            '<span class="card-meta"><span><span class="num">' + fmt(done) + '</span> / <span class="num">' + fmt(total) + '</span> 已掌握</span>' +
+              '<span class="num">' + pct.toFixed(0) + '%</span></span>' +
             '<span class="progress-track"><span class="progress-fill" style="width:' + pct.toFixed(1) + '%"></span></span>' +
+            '<span class="card-cta">' + (total ? '开始练习' : '暂无词条') + '</span>' +
           '</button>';
         }).join('') + '</div>' +
-      '</section>' +
-      '<section class="section">' +
-        '<div class="section-head"><span class="kicker">Moduli</span><h2>学习模块</h2></div>' +
-        '<div class="card-grid">' + moduleCards(l, 'home') + '</div>' +
-      '</section>';
+      '</div></section>' +
+      '<section class="section section-alt" aria-labelledby="homeModulesTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">' + tl('modules', l) + '</p><h2 id="homeModulesTitle">学习模块</h2>' +
+          '<p class="section-sub">词汇之外的模块按需下载，第一次打开时才加载数据。</p></div>' +
+        '<div class="card-grid module-grid reveal-group">' + moduleCards(l, 'home') + '</div>' +
+      '</div></section>' +
+      '<section class="section" aria-labelledby="homeMethodTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">' + tl('method', l) + '</p><h2 id="homeMethodTitle">怎么用</h2></div>' +
+        '<ol class="method-steps reveal-group">' +
+          '<li class="reveal"><span class="method-num num">01</span><h3>圈定范围</h3><p>按 CEFR 等级、系统词库或自己的单词本选出要练的词。</p></li>' +
+          '<li class="reveal"><span class="method-num num">02</span><h3>做一组练习</h3><p>选择题、拼写、浏览、打字游戏任选，答题结果写进同一份进度。</p></li>' +
+          '<li class="reveal"><span class="method-num num">03</span><h3>按时复习</h3><p>间隔重复算法给每个词排期；到期的词会出现在首页的「复习到期」里。</p></li>' +
+        '</ol>' +
+      '</div></section>';
     $('homeView').innerHTML = html;
   }
 
+  /** hero 右侧：纯 CSS 的单词卡堆。后两张是装饰（aria-hidden），最前面一张是今日一词。 */
+  function renderHeroStack(wotd, l, p) {
+    var back = wordOfTheDay(l, 7);
+    var mid = wordOfTheDay(l, 13);
+    var sheet = function (cls, e, tagCls) {
+      return '<div class="sheet ' + cls + '" aria-hidden="true">' +
+        '<span class="sheet-tag' + (tagCls ? ' ' + tagCls : '') + '">' + esc(e && e.level ? e.level : p.code) + '</span>' +
+        (e ? '<span class="sheet-word"' + langAttr(l) + '>' + esc(global.Vocab.headword(e)) + '</span>' +
+             '<span class="sheet-gloss">' + esc(e.zh || '') + '</span>' : '') +
+        '<span class="' + (cls === 'sheet-back' ? 'sheet-lines' : 'sheet-grid') + '"></span>' +
+      '</div>';
+    };
+    return '<div class="hero-visual">' +
+      '<div class="card-stack" id="heroStack">' +
+        sheet('sheet-back', back !== wotd ? back : null) +
+        sheet('sheet-mid', mid !== wotd ? mid : null, 'sheet-tag-red') +
+        renderWotd(wotd, l) +
+        '<span class="stamp" aria-hidden="true">' + esc(p.name) + '<br>CEFR<br>A1 · C2</span>' +
+      '</div>' +
+    '</div>';
+  }
+
   function renderWotd(e, l) {
-    return '<aside class="wotd">' +
-      '<span class="kicker">今日一词 · <span class="num">' + esc(e.level || '') + '</span></span>' +
+    return '<aside class="sheet sheet-front wotd" aria-label="今日一词">' +
+      '<span class="sheet-tag sheet-tag-red">今日一词 · <span class="num">' + esc(e.level || '') + '</span></span>' +
+      '<span class="cover-rule" aria-hidden="true"></span>' +
       '<div class="wotd-word"><span' + langAttr(l) + '>' + esc(global.Vocab.headword(e)) + '</span>' +
         '<button class="icon-btn speaker" data-speak="' + escAttr(global.Vocab.headword(e)) + '" aria-label="朗读"><span class="msr" aria-hidden="true">volume_up</span></button></div>' +
       '<p class="wotd-gram num">' + esc(global.Vocab.grammarLine(e)) + '</p>' +
       '<p class="wotd-gloss">' + esc(e.zh) + '</p>' +
-      (e.en ? '<p class="wotd-en muted">' + esc(e.en) + '</p>' : '') +
+      (e.en ? '<p class="wotd-en">' + esc(e.en) + '</p>' : '') +
     '</aside>';
   }
 
-  /** 模块入口卡片：首页、词汇页、语法页共用一份定义，按语言档案显示/隐藏。 */
+  /** 模块入口卡片：首页、语法页共用一份定义，按语言档案显示/隐藏。
+   *  版式同等级卡：顶部粗线 · 衬线标题 · 金色 mono 标签 · 说明 · mono 计数行 · 小号幽灵按钮。 */
   function moduleCards(l, where) {
     var cards = [];
-    var card = function (action, icon, title, desc, extra) {
-      cards.push('<button class="card" data-action="' + action + '"' + (extra || '') + '>' +
-        '<span class="card-icon"><span class="msr" aria-hidden="true">' + icon + '</span></span>' +
-        '<span class="card-title">' + title + '</span><span class="card-desc">' + desc + '</span></button>');
+    var card = function (action, icon, title, label, desc, meta) {
+      cards.push('<button class="card module-card reveal" data-action="' + action + '">' +
+        '<span class="card-title">' + title + '</span>' +
+        '<span class="card-label"><span class="msr" aria-hidden="true">' + icon + '</span>' + label + '</span>' +
+        '<span class="card-desc">' + desc + '</span>' +
+        (meta ? '<span class="card-meta">' + meta + '</span>' : '') +
+        '<span class="card-cta">进入<span class="msr" aria-hidden="true">arrow_forward</span></span>' +
+      '</button>');
     };
     if (where === 'home') {
-      card('go-vocab', 'style', '词汇练习', '选择题、拼写、浏览、打字游戏，外加个人单词本。');
-      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', '按章节查阅的' + profile(l).cn + '语法全书。');
-      if (hasModule('conjugation', l)) card('conjugation', 'sync_alt', '动词变位', '查任意动词的完整变位，或按时态分课练习。');
-      if (hasModule('collocations', l)) card('collocations', 'link', '动词搭配', '动词与介词、宾语的固定搭配和例句。');
-      if (hasModule('cognates', l)) card('cognates', 'join_inner', '同源词', '和英语长得像的词，借已有词汇量抄近路。');
-      if (hasModule('course', l)) card('course', 'route', '课程路线 A1–C1', '54 个教材主题，语法重点与核心词汇一一对应。');
-      card('go-progress', 'insights', '学习进度', '每周走势、各等级掌握度与复习计划。');
+      var total = global.Vocab.entries(l).length;
+      var mastered = Progress.systemMasteredCount(l);
+      card('go-vocab', 'style', '词汇练习', tl('lexicon', l), '选择题、拼写、浏览、打字游戏，外加个人单词本。',
+        '<span class="num">' + fmt(total) + '</span> 词条');
+      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', tl('grammar', l), '按章节查阅的' + profile(l).cn + '语法全书。', '目录 · 正文 · 例句');
+      if (hasModule('conjugations', l)) card('conjugation', 'sync_alt', '动词变位', tl('conjugation', l), '查任意动词的完整变位，或按时态分课练习。', '查询 · 选择题 · 填空');
+      if (hasModule('collocations', l)) card('collocations', 'link', '动词搭配', tl('collocations', l), '动词与介词、宾语的固定搭配和例句。', '浏览 · 练习');
+      if (hasModule('cognates', l)) card('cognates', 'join_inner', '同源词', tl('cognates', l), '和英语长得像的词，借已有词汇量抄近路。', '按词形规律分组');
+      if (hasModule('course', l)) card('course', 'route', '课程路线', tl('course', l), '按教材单元推进：每课的语法重点与核心词汇一一对应。', '按单元 · 按等级');
+      card('go-progress', 'insights', '学习进度', tl('progress', l), '每周走势、各等级掌握度与复习计划。',
+        '已掌握 <span class="num">' + (total ? (mastered / total * 100).toFixed(1) : '0') + '%</span>');
     } else if (where === 'grammar') {
-      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', '按章节查阅，左侧目录，右侧正文。');
-      if (hasModule('conjugation', l)) card('conjugation', 'sync_alt', '动词变位', '变位查询；按课次选时态练习选择题与填空。');
+      if (hasModule('grammar', l)) card('grammar-book', 'auto_stories', '语法书', tl('grammar', l), '按章节查阅，左侧目录，右侧正文。', '目录 · 正文 · 例句');
+      if (hasModule('conjugations', l)) card('conjugation', 'sync_alt', '动词变位', tl('conjugation', l), '变位查询；按课次选时态练习选择题与填空。', '查询 · 选择题 · 填空');
       if (hasModule('collocations', l)) {
-        card('collocations', 'travel_explore', '动词搭配 · 浏览', '按动词查搭配与例句。');
-        card('collocation-practice', 'extension', '动词搭配 · 练习', '看例句选出正确的介词或搭配。');
+        card('collocations', 'travel_explore', '动词搭配 · 浏览', tl('collocations', l), '按动词查搭配与例句。', '按介词 · 按动词');
+        card('collocation-practice', 'extension', '动词搭配 · 练习', tl('exercises', l), '看例句选出正确的介词或搭配。', '选择题 · 填空');
       }
-      if (hasModule('course', l)) card('course', 'route', '课程路线 A1–C1', '按教材主题查看语法重点并练习核心词汇。');
+      if (hasModule('course', l)) card('course', 'route', '课程路线', tl('course', l), '按教材单元查看语法重点并练习核心词汇。', '按单元 · 按等级');
     }
     return cards.join('');
   }
@@ -572,6 +613,16 @@
   function chip(label, attrs, active, count) {
     return '<button type="button" class="chip' + (active ? ' active' : '') + '" aria-pressed="' + (active ? 'true' : 'false') + '" ' + attrs + '>' +
       esc(label) + (count != null ? ' <span class="chip-count num">' + fmt(count) + '</span>' : '') + '</button>';
+  }
+
+  /** 中心页（词汇 / 语法 / 进度）的页头带：kicker · 衬线 h1 · 副标题，右侧可放按钮。 */
+  function pageHero(kicker, title, sub, aside) {
+    return '<header class="page-hero"><div class="section-inner page-hero-inner">' +
+      '<div class="section-head"><p class="kicker">' + kicker + '</p>' +
+        '<h1 class="page-title">' + title + '</h1>' +
+        (sub ? '<p class="section-sub">' + sub + '</p>' : '') + '</div>' +
+      (aside || '') +
+    '</div></header>';
   }
 
   function renderVocab() {
@@ -585,7 +636,9 @@
     var due = countDue(l, src.entries);
     var masteredIn = 0;
     src.entries.forEach(function (e) { if (mastered.has(e.word)) masteredIn++; });
-    var sessionN = pr.session === 'all' ? src.entries.length : Math.min(parseInt(pr.session, 10) || 20, src.entries.length);
+    // 与 buildSession 的筛选一致：到期复习 = 到期词；未掌握 = 未掌握的词（含到期的）
+    var pool = pr.filter === 'due' ? due : pr.filter === 'new' ? src.entries.length - masteredIn : src.entries.length;
+    var sessionN = pr.session === 'all' ? pool : Math.min(parseInt(pr.session, 10) || 20, pool);
 
     var sourceChips = chip('系统词库', 'data-source="system"', src.kind === 'system') +
       (books.length ? books.map(function (b) {
@@ -602,14 +655,16 @@
       '</div></div>';
 
     var html = '' +
-      '<div class="section-head-row">' +
-        '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Vocabolario</span>' +
-          '<h1 class="page-title">词汇练习</h1>' +
-          '<p>先选范围，再选练习方式。到期复习的词总是排在最前面。</p></div>' +
-      '</div>' +
+      pageHero('<span lang="' + escAttr(p.code) + '">' + esc(p.name) + ' · ' + esc(global.Languages.text(p.code, 'vocabulary')) + '</span>', '词汇练习', '先选范围，再选练习方式。到期复习的词总是排在最前面。',
+        '<dl class="hero-stats page-hero-stats">' +
+          heroStat('本范围', src.entries.length) +
+          heroStat('已掌握', masteredIn) +
+          heroStat('待复习', due) +
+        '</dl>') +
+      '<section class="section" aria-labelledby="vocabScopeTitle"><div class="section-inner">' +
+      '<div class="section-head"><p class="kicker">' + tl('scope', l) + '</p><h2 id="vocabScopeTitle">练习范围</h2></div>' +
       '<div class="vocab-layout">' +
         '<div class="panel setup-panel">' +
-          '<div class="panel-title">练习范围</div>' +
           '<div class="pref-row"><span class="pref-label">词源</span><div class="chips">' + sourceChips + '</div></div>' +
           levelRow +
           '<div class="pref-row"><span class="pref-label">筛选</span><div class="chips">' +
@@ -644,21 +699,29 @@
           '</div>' +
         '</div>' +
       '</div>' +
-      '<div class="section"><div class="section-head"><h2>练习方式</h2></div>' +
-        '<div class="card-grid mode-grid">' +
+      '</div></section>' +
+      '<section class="section section-alt" aria-labelledby="vocabModesTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">' + tl('exercises', l) + '</p><h2 id="vocabModesTitle">练习方式</h2>' +
+          '<p class="section-sub">都从上面圈定的范围里出题，结果写进同一份进度。</p></div>' +
+        '<div class="card-grid mode-grid reveal-group">' +
           modeCard('quiz', 'quiz', '选择题', '看' + p.cn + '选释义，或反过来。1–4 选择，Enter 下一题。') +
           modeCard('spell', 'keyboard', '拼写', '看释义写出单词，' + ({ german: '名词大小写有提示。', french: '重音写错会单独指出。' }[profile(l).spell] || '支持特殊字母按键。')) +
           modeCard('browse', 'menu_book', '浏览', '搜索、按等级筛选、标记已掌握、加入单词本。') +
           modeCard('typing', 'sports_esports', '打字游戏', '单词顺流而下，看释义打字击落。') +
           (hasModule('cognates', l) ? modeCard('cognates', 'join_inner', '同源词', '和英语同源的词，按构词规律成组学习。') : '') +
-        '</div></div>';
+        '</div></div></section>';
     $('vocabView').innerHTML = html;
   }
 
+  // 练习方式卡片上的目标语言小字（labels 键名）
+  var MODE_LABELS = { quiz: 'choice', spell: 'dictation', browse: 'lexicon', typing: 'game', cognates: 'cognates' };
+
   function modeCard(mode, icon, title, desc) {
-    return '<button class="card" data-action="start" data-mode="' + mode + '">' +
-      '<span class="card-icon"><span class="msr" aria-hidden="true">' + icon + '</span></span>' +
-      '<span class="card-title">' + title + '</span><span class="card-desc">' + desc + '</span></button>';
+    return '<button class="card module-card reveal" data-action="start" data-mode="' + mode + '">' +
+      '<span class="card-title">' + title + '</span>' +
+      '<span class="card-label"><span class="msr" aria-hidden="true">' + icon + '</span>' + (MODE_LABELS[mode] ? tl(MODE_LABELS[mode]) : '') + '</span>' +
+      '<span class="card-desc">' + desc + '</span>' +
+      '<span class="card-cta">开始<span class="msr" aria-hidden="true">arrow_forward</span></span></button>';
   }
 
   // ==================== 浏览 ====================
@@ -690,12 +753,29 @@
     renderBrowseList();
   }
 
+  // 浏览搜索的折叠键缓存：每个词条只折叠一次（词库约 2.4 万条，原先每次查询全部重算）。
+  // WeakMap 按词条对象索引，不改词库数据；词库重载后旧对象自然被回收。
+  var browseKeys = typeof WeakMap === 'function' ? new WeakMap() : null;
+  function browseKeyOf(e) {
+    var k = browseKeys && browseKeys.get(e);
+    if (k) return k;
+    k = {
+      word: global.Vocab.looseKey(e.word),
+      display: e.display ? global.Vocab.looseKey(e.display) : '',
+      zh: String(e.zh || ''),
+      en: e.en ? String(e.en).toLowerCase() : ''
+    };
+    if (browseKeys) browseKeys.set(e, k);
+    return k;
+  }
+
   function renderBrowseList() {
     var l = lang();
     var src = currentSource(l);
     var mastered = Progress.mastered(src.key);
     var q = browse.q.trim();
     var qKey = q ? global.Vocab.looseKey(q) : '';
+    var qLower = q.toLowerCase();
     // 系统词库浏览全部等级（等级由上面的筛选控制），不受练习范围里选的等级限制
     var base = src.kind === 'system' ? global.Vocab.entries(l) : src.entries;
     var list = base.filter(function (e) {
@@ -703,15 +783,16 @@
       if (browse.status === 'new' && mastered.has(e.word)) return false;
       if (browse.status === 'known' && !mastered.has(e.word)) return false;
       if (!q) return true;
-      return global.Vocab.looseKey(e.word).indexOf(qKey) >= 0 ||
-        (e.display && global.Vocab.looseKey(e.display).indexOf(qKey) >= 0) ||
-        String(e.zh || '').indexOf(q) >= 0 ||
-        (e.en && e.en.toLowerCase().indexOf(q.toLowerCase()) >= 0);
+      var k = browseKeyOf(e);
+      return k.word.indexOf(qKey) >= 0 ||
+        (k.display && k.display.indexOf(qKey) >= 0) ||
+        k.zh.indexOf(q) >= 0 ||
+        (k.en && k.en.indexOf(qLower) >= 0);
     });
     // 搜索时把词头精确/前缀命中排在前面
     if (q) {
       var rank = function (e) {
-        var k = global.Vocab.looseKey(e.word);
+        var k = browseKeyOf(e).word;
         return k === qKey ? 0 : k.indexOf(qKey) === 0 ? 1 : 2;
       };
       list = list.map(function (e, i) { return { e: e, r: rank(e), i: i }; })
@@ -745,9 +826,11 @@
     var l = lang();
     var p = profile(l);
     $('grammarView').innerHTML =
-      '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Grammatica</span>' +
-        '<h1 class="page-title">语法</h1><p>语法书用来查，变位与搭配用来练。数据在打开时才下载。</p></div>' +
-      '<div class="card-grid cols-2">' + moduleCards(l, 'grammar') + '</div>';
+      pageHero('<span lang="' + escAttr(p.code) + '">' + esc(p.name) + ' · ' + esc(global.Languages.text(p.code, 'grammar')) + '</span>', '语法', '语法书用来查，变位与搭配用来练。数据在打开时才下载。') +
+      '<section class="section" aria-labelledby="grammarModulesTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">' + tl('modules', l) + '</p><h2 id="grammarModulesTitle">' + esc(p.cn) + '语法模块</h2></div>' +
+        '<div class="card-grid module-grid cols-2 reveal-group">' + moduleCards(l, 'grammar') + '</div>' +
+      '</div></section>';
   }
 
   // ==================== 进度页 ====================
@@ -765,21 +848,21 @@
     var due = countDue(l, entries);
     var counts = global.Vocab.levelCounts(l);
     var byLevel = {};
-    entries.forEach(function (e) { if (mastered.has(e.word)) byLevel[e.level] = (byLevel[e.level] || 0) + 1; });
+    var masteredN = 0;
+    entries.forEach(function (e) {
+      if (!mastered.has(e.word)) return;
+      masteredN++;
+      byLevel[e.level] = (byLevel[e.level] || 0) + 1;
+    });
     var maxDay = Math.max.apply(null, [1].concat(week.map(function (d) { return d.totalCount; })));
     var pct = function (a, b) { return b ? Math.round(a / b * 100) + '%' : '—'; };
 
     $('progressView').innerHTML =
-      '<div class="section-head-row">' +
-        '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Progressi</span>' +
-          '<h1 class="page-title">学习进度</h1><p>只统计' + esc(p.cn) + '。换语言请用顶栏的语言切换。</p></div>' +
-        '<div class="btn-row">' +
-          '<button class="btn" data-action="stats-modal"><span class="msr" aria-hidden="true">monitoring</span>详细图表</button>' +
-          (due ? '<button class="primary-btn" data-action="review">复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
-        '</div>' +
-      '</div>' +
+      pageHero('<span lang="' + escAttr(p.code) + '">' + esc(p.name) + ' · ' + esc(global.Languages.text(p.code, 'progress')) + '</span>', '学习进度', '只统计' + esc(p.cn) + '。换语言请用顶栏的语言切换。',
+        due ? '<div class="btn-row"><button class="btn btn-primary" data-action="review"><span class="msr" aria-hidden="true">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button></div>' : '') +
+      '<section class="section" aria-label="概览"><div class="section-inner">' +
       '<dl class="stat-strip">' +
-        stat('已掌握', fmt(mastered.size), entries.length ? (mastered.size / entries.length * 100).toFixed(1) + '% 词库' : '') +
+        stat('已掌握', fmt(masteredN), entries.length ? (masteredN / entries.length * 100).toFixed(1) + '% 词库' : '') +
         stat('今日答题', fmt(today.totalCount), '正确率 ' + pct(today.correctCount, today.totalCount)) +
         stat('累计答题', fmt(total.totalAttempts), '正确率 ' + total.averageAccuracy + '%') +
         stat('连续学习', (SM ? SM.getStreak(l) : 0) + ' 天') +
@@ -811,7 +894,12 @@
             '<dt>待复习</dt><dd class="num">' + fmt(due) + '</dd>' +
           '</dl>' +
           '<p class="muted small">连续答对两次记为已掌握；答错会退回未掌握，并按 SM-2 安排复习。</p></div>' +
-      '</div>';
+      '</div>' +
+      '</div></section>' +
+      (global.StatsCharts ? '<section class="section section-alt progress-charts-band"><div class="section-inner">' +
+        global.StatsCharts.sectionsHtml(l) + '</div></section>' : '');
+    // 图表：Chart.js 在这里才懒加载（stats-charts.js）
+    if (global.StatsCharts) global.StatsCharts.mount(l);
   }
 
   // ==================== 设置页 ====================
@@ -928,7 +1016,7 @@
       var pad = function (n) { return String(n).padStart(2, '0'); };
       var name = 'Dimenticato_学习数据_' + now.getFullYear() + pad(now.getMonth() + 1) + pad(now.getDate()) +
         '_' + pad(now.getHours()) + pad(now.getMinutes()) + '.json';
-      download(name, JSON.stringify(data, null, 2), 'application/json');
+      global.downloadFile(name, JSON.stringify(data, null, 2), 'application/json');
       var d = global.DimStorage.describePayload(data);
       alert('学习数据已导出：' + name + '\n\n' +
         (d.languages.length ? d.languages.join('，') : '暂无已掌握单词') + '\n单词本 ' + d.wordbooks + ' 个 · 共 ' + d.keys + ' 项数据');
@@ -996,18 +1084,6 @@
     setTimeout(function () { location.reload(); }, 400);
   }
 
-  function download(name, text, type) {
-    var blob = new Blob([text], { type: type || 'text/plain' });
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement('a');
-    a.href = url;
-    a.download = name;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
-  }
-
   // ==================== 提示条 ====================
 
   var toastTimer = null;
@@ -1031,16 +1107,8 @@
       if (!gb) { toast('语法书模块未能加载'); return; }
       gb.init(grammarData(l), { lang: l });
       global.showScreen('grammarBookScreen');
-      if (!slug) return;
-      var data = grammarData(l);
-      var parts = data && data.tree && data.tree.parts || [];
-      parts.forEach(function (part) {
-        (part.chapters || []).forEach(function (chapter) {
-          (chapter.topics || []).forEach(function (topic) {
-            if (topic.slug === slug) gb.loadTopic(slug, topic.title, part.title, chapter.title);
-          });
-        });
-      });
+      // 新旧 slug 都行：GrammarBook 经 meta.aliases 解析（深链接、课程里的引用）
+      if (slug) gb.openTopic(slug);
     };
     if (grammarData(l)) go();
     else global.LangLoader.ensureModule(l, 'grammar').then(function () {
@@ -1058,7 +1126,7 @@
     'collocation-practice': function (l) { if (global.VerbCollocationPractice) global.VerbCollocationPractice.open(l); },
     cognates: function (l) { if (global.CognateApp) global.CognateApp.open(l); },
     typing: function (l) { if (global.TypingGameApp) global.TypingGameApp.open(l); },
-    course: function () { if (global.GermanCourse) global.GermanCourse.open(); },
+    course: function (l) { if (global.Course) global.Course.open(l); },
     community: function () { if (global.CommunityWordbooks) global.CommunityWordbooks.showBrowseScreen(); }
   };
 
@@ -1097,6 +1165,7 @@
       document.body.setAttribute('data-language', key);
       try { localStorage.setItem(LANGUAGE_KEY, key); } catch (e) { /* ignore */ }
       syncLangSwitch();
+      applyStaticLabels(); // 帮助弹窗等不经 renderScreen 的静态文案
     }
     return global.LangLoader.ensure(key).then(function () {
       // 加载期间用户又切到了别的语言：那次 setLanguage 会自己负责渲染
@@ -1123,6 +1192,7 @@
   };
 
   function renderScreen(id) {
+    applyStaticLabels();
     var fn = RENDERERS[id];
     if (!fn) return;
     if (!global.Vocab.ready(lang())) {
@@ -1178,7 +1248,13 @@
       var open = Array.prototype.filter.call(document.querySelectorAll('.modal'), function (m) {
         return !m.classList.contains('hidden');
       });
-      if (open.length) open[open.length - 1].classList.add('hidden');
+      if (open.length) { open[open.length - 1].classList.add('hidden'); return; }
+      // 手机菜单展开时 Esc 收起，焦点回到菜单按钮
+      if (document.body.classList.contains('nav-open')) {
+        closeNav();
+        var t = $('navToggle');
+        if (t) t.focus();
+      }
     });
 
     trapModalFocus();
@@ -1220,10 +1296,6 @@
       session.hintStage = global.PracticeFlow.hintAdvance(session.hintStage, {
         stages: spellHintStages(session), hintEl: $('spellHint'), btn: $('spellHintBtn')
       });
-    });
-    $('spellKeys').addEventListener('click', function (event) {
-      var key = event.target.closest('[data-char]');
-      if (key && !$('spellInput').disabled) insertAtCursor($('spellInput'), key.getAttribute('data-char'));
     });
 
     // 浏览
@@ -1315,15 +1387,16 @@
         return;
       case 'go-vocab': global.showScreen('vocabScreen'); return;
       case 'go-progress': global.showScreen('progressScreen'); return;
-      case 'stats-modal':
-        if (typeof global.showEnhancedStatsModal === 'function') global.showEnhancedStatsModal();
-        return;
       case 'help':
         $('helpModal').classList.remove('hidden');
         return;
       case 'community-upload':
         if (global.CommunityWordbooks) global.CommunityWordbooks.showUploadDialog();
         return;
+      case 'community-upload-close': global.CommunityWordbooks.hideUploadDialog(); return;
+      case 'community-preview-close': global.CommunityWordbooks.hidePreviewModal(); return;
+      case 'community-back': global.CommunityWordbooks.backToWelcome(); return;
+      case 'community-file-pick': $('uploadFileInput').click(); return;
       default:
         openModule(action);
     }
@@ -1405,7 +1478,7 @@
     masteredWords: function (l) { return Progress.systemMastered(l || lang()); },
     startSession: startSession,
 
-    /** 德语课程路线：把一个单元的核心词作为练习来源，进入词汇页。 */
+    /** 课程路线：把一个单元的核心词作为练习来源，进入词汇页。 */
     practiceEntries: function (label, entries) {
       var l = lang();
       courseSelection = { lang: l, label: label, entries: (entries || []).filter(Boolean) };
@@ -1415,8 +1488,12 @@
 
     /** LangLoader：某门语言的词库到位（首屏或中途切换）。幂等。 */
     onLanguageData: function (l) {
+      // 迁移会改写存储：先把内存里还没写盘的进度落盘，迁移完再丢掉缓存。
+      // 顺序反过来的话，迁移后才冲刷的旧集合 / 旧 SRS 缓存会盖掉迁移结果。
+      flushAll();
       try { global.LegacyMigration.run(l); } catch (err) { console.error('[app] 旧进度迁移失败', err); }
       Progress.forget(l);
+      if (global.SpacedRepetition) global.SpacedRepetition.forget(l);
       if (!routerStarted) {
         routerStarted = true;
         global.DimRouter.start();
@@ -1440,23 +1517,21 @@
       document.body.setAttribute('data-language', global.LangLoader.detectLanguage());
       renderLangSwitch();
       syncLangSwitch();
-      global.DimStorage.migrateLegacyWordbookProgress();
       $('spellKeys').innerHTML = '';
       Speaker.init();
       bind();
       Shell().onEnter(function (id) {
         renderScreen(id);
         if (id === 'spellScreen') {
-          var chars = (profile() && profile().accents) || [];
-          $('spellKeys').innerHTML = chars.map(function (c) {
-            return '<button type="button" class="key" data-char="' + escAttr(c) + '">' + esc(c) + '</button>';
-          }).join('');
+          // 特殊字母键盘：按键不抢焦点（手机上失焦会收起软键盘），见 Languages.mountAccentKeys
+          global.Languages.mountAccentKeys($('spellKeys'), $('spellInput'), lang());
+          $('spellInput').setAttribute('lang', global.Languages.code(lang()));
         }
       });
 
       // 深链接直达功能模块屏时，由各模块自己的 open 负责装数据再切屏
       var R = Shell().registerOpener;
-      R('grammarBookScreen', function (l) { openGrammarBook(l); });
+      R('grammarBookScreen', function (l, slug) { openGrammarBook(l, slug); });
       R('conjugationSetupScreen', function (l) { MODULE_OPENERS.conjugation(l); });
       R('verbCollocationsScreen', function (l) { MODULE_OPENERS.collocations(l); });
       R('typingGameScreen', function (l) { MODULE_OPENERS.typing(l); });
@@ -1464,16 +1539,10 @@
         if (hasModule('cognates', l)) MODULE_OPENERS.cognates(l); else global.showScreen('vocabScreen', { replaceRoute: true });
       });
       R('communityBrowseScreen', function () { MODULE_OPENERS.community(); });
-      R('germanCourseScreen', function (l) {
-        if (hasModule('course', l)) MODULE_OPENERS.course(); else global.showScreen('homeScreen', { replaceRoute: true });
+      R('courseScreen', function (l) {
+        if (hasModule('course', l)) MODULE_OPENERS.course(l); else global.showScreen('homeScreen', { replaceRoute: true });
       });
     }
-  };
-
-  // ReviewSession：stats-charts 等旧调用方用它取「当前语言的词表」
-  global.ReviewSession = {
-    wordsFor: function (l) { return global.Vocab.entries(l || lang()); },
-    onAnswered: function () { /* 复习计数在 SpacedRepetition 里，界面在切屏时刷新 */ }
   };
 
   global.App = App;

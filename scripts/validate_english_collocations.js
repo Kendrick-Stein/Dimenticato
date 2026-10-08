@@ -1,20 +1,18 @@
 #!/usr/bin/env node
 /**
- * Validator for data/english-collocations-data.js (ENGLISH_VERB_COLLOCATIONS_DATA).
+ * Validator for data/en-collocations.js (DIM_DATA.collocations.en, collocations/1).
  *
  *   node scripts/validate_english_collocations.js
  *
- * Reads only the shipped data file (independent of the build script) and checks:
- *   - it loads in a bare vm and declares the global the renderer resolves,
- *   - shape parity with the Italian reference (same top-level keys, same meta
- *     fields, per-verb display / prepositions / prepositionOrder),
- *   - meta.totalVerbs / totalExamples match the data, meta.prepositionOrder
- *     covers every key, the prepositions index is exactly the inverse of verbs,
- *   - every example splits through the renderer's own splitExample() into a
- *     plain English sentence and a Chinese translation,
- *   - every English half contains the verb (any inflection) and the key words
- *     (in order), no example is duplicated,
- *   - size floors: >= 700 verbs, >= 2500 examples, 1-4 examples per sense.
+ * The language-independent schema checks live in scripts/validate_modules.js
+ * (validateCollocations).  This file reads only the shipped data file
+ * (independent of the build script) and checks the English content:
+ *   - every key is a preposition or particle (keys[].kind), particles are marked,
+ *   - every example is a plain English sentence + a Chinese translation,
+ *   - every English sentence contains the verb (any inflection) and the key
+ *     words (in order); no English sentence is duplicated,
+ *   - verbs[w].x.senses partitions each key's examples, 1-4 examples per sense,
+ *   - size floors: >= 700 verbs, >= 2500 examples.
  */
 'use strict';
 
@@ -23,8 +21,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
-const EN_FILE = path.join(ROOT, 'data', 'english-collocations-data.js');
-const IT_FILE = path.join(ROOT, 'data', 'verb-collocations-data.js');
+const EN_FILE = path.join(ROOT, 'data', 'en-collocations.js');
 
 const MIN_VERBS = 700;
 const MIN_EXAMPLES = 2500;
@@ -37,21 +34,13 @@ function check(cond, msg) {
   return !!cond;
 }
 
-function loadGlobal(file, name) {
-  const ctx = vm.createContext({ window: {}, console });
-  const src = fs.readFileSync(file, 'utf8');
-  return vm.runInContext(`${src}\n;(typeof ${name} !== 'undefined' ? ${name} : undefined);`, ctx, { filename: file });
-}
-
-/** Exact copy of splitExample() in verb-collocations.js (the renderer). */
-function splitExample(raw) {
-  const text = String(raw == null ? '' : raw).trim();
-  if (!text) return { target: '', gloss: '' };
-  const sentenceMatch = text.match(/^(.+?[.!?！？。])\s*([　-〿一-鿿].*)$/);
-  if (sentenceMatch) return { target: sentenceMatch[1].trim(), gloss: sentenceMatch[2].trim() };
-  const splitIndex = text.search(/[一-鿿]/);
-  if (splitIndex > 0) return { target: text.slice(0, splitIndex).trim(), gloss: text.slice(splitIndex).trim() };
-  return { target: text, gloss: '' };
+function loadModule(file, module, code) {
+  const ctx = { console };
+  ctx.window = ctx;
+  ctx.globalThis = ctx;
+  vm.createContext(ctx);
+  vm.runInContext(fs.readFileSync(file, 'utf8'), ctx, { filename: file });
+  return ctx.DIM_DATA && ctx.DIM_DATA[module] && ctx.DIM_DATA[module][code];
 }
 
 // ---------- inflection (independent re-implementation) ----------
@@ -121,53 +110,45 @@ function containsKey(sentence, key) {
 }
 
 // ---------- load ----------
-const EN = loadGlobal(EN_FILE, 'ENGLISH_VERB_COLLOCATIONS_DATA');
-const IT = loadGlobal(IT_FILE, 'VERB_COLLOCATIONS_DATA');
+const EN = loadModule(EN_FILE, 'collocations', 'en');
 
-if (!check(EN && typeof EN === 'object', 'ENGLISH_VERB_COLLOCATIONS_DATA is not declared by data/english-collocations-data.js')) {
+if (!check(EN && typeof EN === 'object' && EN.verbs, 'data/en-collocations.js does not register DIM_DATA.collocations.en')) {
   errors.forEach(e => console.log('FAIL ' + e));
   console.log('RESULT: FAIL');
   process.exit(1);
 }
 
-// ---------- shape parity ----------
-check(JSON.stringify(Object.keys(EN).sort()) === JSON.stringify(Object.keys(IT).sort()),
-  `top-level keys ${JSON.stringify(Object.keys(EN))} differ from Italian ${JSON.stringify(Object.keys(IT))}`);
-Object.keys(IT.meta).forEach(k => {
-  check(k in EN.meta, `meta.${k} missing (present in Italian reference)`);
-  check(typeof EN.meta[k] === typeof IT.meta[k], `meta.${k} type differs from Italian`);
+// ---------- keys ----------
+check(EN.meta && EN.meta.schema === 'collocations/1' && EN.meta.lang === 'en', 'meta.schema / meta.lang');
+const KEYS = new Map((EN.keys || []).map(k => [k.key, k]));
+check(KEYS.size > 0 && KEYS.size === (EN.keys || []).length, 'keys[] must be non-empty with unique keys');
+(EN.keys || []).forEach(k => {
+  check(k.kind === 'preposition' || k.kind === 'particle', `key "${k.key}": kind must be preposition | particle`);
+  check(k.label === k.key, `key "${k.key}": English labels are the key itself`);
 });
-check(EN.meta.language === 'english', 'meta.language must be "english"');
-check(Array.isArray(EN.meta.prepositionOrder) && EN.meta.prepositionOrder.length > 0, 'meta.prepositionOrder must be a non-empty array');
-check(new Set(EN.meta.prepositionOrder).size === EN.meta.prepositionOrder.length, 'meta.prepositionOrder has duplicates');
-check(Array.isArray(EN.meta.particles), 'meta.particles must list the adverb-particle keys');
-(EN.meta.particles || []).forEach(p => check(EN.meta.prepositionOrder.includes(p), `meta.particles "${p}" not in prepositionOrder`));
+const particleKeys = (EN.keys || []).filter(k => k.kind === 'particle' || (k.x && k.x.particle));
+check(particleKeys.length > 0, 'no particle keys (phrasal verbs) marked');
 
-const ORDER = new Set(EN.meta.prepositionOrder);
 const CJK = /[一-鿿]/;
 const seenExamples = new Map();
-const derivedIndex = {};
 let exampleCount = 0;
 
-Object.entries(EN.verbs).forEach(([slug, verb]) => {
-  const where = `verb "${slug}"`;
-  check(/^[a-z]+$/.test(slug), `${where}: slug must be a lowercase base verb`);
-  check(verb.display === slug, `${where}: display "${verb.display}" !== slug`);
-  check(verb.prepositions && typeof verb.prepositions === 'object' && !Array.isArray(verb.prepositions), `${where}: prepositions must be an object`);
-  const keys = Object.keys(verb.prepositions || {});
-  check(keys.length > 0, `${where}: no prepositions`);
-  check(JSON.stringify(verb.prepositionOrder) === JSON.stringify(keys), `${where}: prepositionOrder does not match prepositions keys`);
+Object.entries(EN.verbs).forEach(([word, verb]) => {
+  const where = `verb "${word}"`;
+  check(/^[a-z]+$/.test(word), `${where}: headword must be a lowercase base verb`);
+  check(verb.word === word, `${where}: word "${verb.word}" !== headword`);
+  const keys = verb.order || [];
+  check(keys.length > 0, `${where}: no keys`);
 
   keys.forEach(key => {
     const w = `${where} + "${key}"`;
-    check(ORDER.has(key), `${w}: key missing from meta.prepositionOrder`);
-    (derivedIndex[key] = derivedIndex[key] || []).push(slug);
-    const list = verb.prepositions[key];
+    check(KEYS.has(key), `${w}: key missing from keys[]`);
+    const list = verb.keys && verb.keys[key];
     if (!check(Array.isArray(list) && list.length > 0, `${w}: examples must be a non-empty array`)) return;
 
-    // senses (additive) must partition the example list, 1-4 examples each
-    const senses = verb.senses && verb.senses[key];
-    if (check(Array.isArray(senses) && senses.length > 0, `${w}: senses missing`)) {
+    // x.senses must partition the example list, 1-4 examples each
+    const senses = verb.x && verb.x.senses && verb.x.senses[key];
+    if (check(Array.isArray(senses) && senses.length > 0, `${w}: x.senses missing`)) {
       const covered = [];
       senses.forEach((s, i) => {
         check(s && CJK.test(s.zh || ''), `${w}: sense #${i} has no Chinese gloss`);
@@ -176,19 +157,20 @@ Object.entries(EN.verbs).forEach(([slug, verb]) => {
           `${w}: sense #${i} must have 1-4 examples`);
         (s && s.examples || []).forEach(n => covered.push(n));
       });
-      check(JSON.stringify(covered) === JSON.stringify(list.map((_, i) => i)), `${w}: senses do not cover the examples exactly once`);
+      check(JSON.stringify(covered.slice().sort((a, b) => a - b)) === JSON.stringify(list.map((_, i) => i)),
+        `${w}: senses do not cover the examples exactly once`);
     }
 
-    list.forEach((raw, i) => {
+    list.forEach((ex, i) => {
       exampleCount += 1;
       const e = `${w} #${i}`;
-      if (!check(typeof raw === 'string' && raw.trim(), `${e}: empty example`)) return;
-      const { target, gloss } = splitExample(raw);
-      check(`${target} ${gloss}` === raw, `${e}: does not round-trip through splitExample(): ${JSON.stringify(raw)}`);
+      const target = ex && ex.text;
+      const gloss = ex && ex.zh;
+      if (!check(typeof target === 'string' && target.trim(), `${e}: empty example`)) return;
       check(/^[A-Za-z][A-Za-z0-9 ,.'?!;:]*[.!?]$/.test(target), `${e}: English half is not a plain sentence: ${JSON.stringify(target)}`);
       check(!CJK.test(target), `${e}: English half leaked Chinese`);
-      check(CJK.test(gloss) && /^[　-〿一-鿿]/.test(gloss), `${e}: missing / malformed Chinese half: ${JSON.stringify(gloss)}`);
-      check(containsVerb(target, slug), `${e}: no form of "${slug}" in ${JSON.stringify(target)}`);
+      check(typeof gloss === 'string' && CJK.test(gloss), `${e}: missing / malformed Chinese half: ${JSON.stringify(gloss)}`);
+      check(containsVerb(target, word), `${e}: no form of "${word}" in ${JSON.stringify(target)}`);
       check(containsKey(target, key), `${e}: "${key}" not in ${JSON.stringify(target)}`);
       const norm = target.toLowerCase();
       check(!seenExamples.has(norm), `${e}: duplicate English sentence (also ${seenExamples.get(norm)})`);
@@ -197,18 +179,11 @@ Object.entries(EN.verbs).forEach(([slug, verb]) => {
   });
 });
 
-// ---------- counts + inverse index ----------
+// ---------- counts ----------
 const verbCount = Object.keys(EN.verbs).length;
-check(EN.meta.totalVerbs === verbCount, `meta.totalVerbs ${EN.meta.totalVerbs} !== actual ${verbCount}`);
-check(EN.meta.totalExamples === exampleCount, `meta.totalExamples ${EN.meta.totalExamples} !== actual ${exampleCount}`);
+check(EN.meta.count === verbCount, `meta.count ${EN.meta.count} !== actual ${verbCount}`);
 check(verbCount >= MIN_VERBS, `only ${verbCount} verbs (floor ${MIN_VERBS})`);
 check(exampleCount >= MIN_EXAMPLES, `only ${exampleCount} examples (floor ${MIN_EXAMPLES})`);
-
-check(JSON.stringify(Object.keys(EN.prepositions)) === JSON.stringify(EN.meta.prepositionOrder),
-  'prepositions index keys must equal meta.prepositionOrder (same order)');
-Object.entries(derivedIndex).forEach(([key, slugs]) => {
-  check(JSON.stringify(EN.prepositions[key]) === JSON.stringify(slugs), `prepositions.${key} is not the inverse of verbs`);
-});
 
 // ---------- result ----------
 if (errors.length) {
@@ -217,4 +192,4 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(`English collocations OK: ${verbCount} verbs, ${exampleCount} examples, ` +
-  `${EN.meta.prepositionOrder.length} keys (${(EN.meta.particles || []).length} particles) — ${checks} passed, 0 failed`);
+  `${KEYS.size} keys (${particleKeys.length} particles) — ${checks} passed, 0 failed`);

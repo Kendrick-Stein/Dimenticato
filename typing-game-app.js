@@ -17,23 +17,16 @@
   'use strict';
 
   const STORAGE_PREFIX = 'dimenticato_typing_';
-  const SPEECH_LANG = { italian: 'it-IT', german: 'de-DE', english: 'en-US', french: 'fr-FR' };
-  const LANG_CN = { italian: '意大利语', german: '德语', english: '英语', french: '法语' };
+  // 变位模式只取词频最高的这么多个动词（数据按 rank 排序；每个动词有几十个形式，够用）
+  const VERB_CAP = 300;
 
-  // 变位数据都是顶层 const，parse 期碰不到，一律调用时解析
-  function lateGlobal(name) {
-    if (global[name] !== undefined) return global[name];
-    try {
-      switch (name) {
-        case 'CONJUGATION_ALL_TENSES_DATA': return CONJUGATION_ALL_TENSES_DATA;
-        case 'GERMAN_CONJUGATION_DATA': return GERMAN_CONJUGATION_DATA;
-        case 'FRENCH_CONJUGATION_DATA': return FRENCH_CONJUGATION_DATA;
-        case 'ENGLISH_CONJUGATION_DATA': return ENGLISH_CONJUGATION_DATA;
-        default: return null;
-      }
-    } catch (err) {
-      return null;
-    }
+  // 语言名 / 朗读语言都从 lib/languages.js 取
+  function langCn(lang) { return global.Languages.label(lang) || lang; }
+  function speechLang(lang) { const p = global.Languages.get(lang); return p ? p.tts : 'it-IT'; }
+
+  // 变位数据按模块懒加载，注册在 DIM_DATA.conjugations.<code>，一律调用时取
+  function conjData(lang) {
+    return global.LangLoader ? global.LangLoader.data(lang, 'conjugations') : null;
   }
 
   function $id(id) { return document.getElementById(id); }
@@ -83,55 +76,39 @@
     })));
   }
 
-  const PERSON_CN = {
-    italian: { io: '我', tu: '你', lui_lei: '他/她', noi: '我们', voi: '你们', loro: '他们' },
-    german: { ich: '我', du: '你', er_sie_es: '他/她/它', wir: '我们', ihr: '你们', sie: '他们/您' },
-    french: { je: '我', tu: '你', il_elle_on: '他/她/on', nous: '我们', vous: '您/你们', ils_elles: '他们/她们' },
-    // 英语变位数据的人称键是 i/you/he_she_it/we/you_pl/they（与意语键不同），
-    // 此前按意语键查表全部落空，题面会显示原始键名（"he_she_it"）。
-    english: { i: '我', you: '你', he_she_it: '他/她/它', we: '我们', you_pl: '你们', they: '他们' }
-  };
+  // 变位数据为 conjugations/1（docs/data-schema.md）：人称、时态标签都从数据头取，
+  // 不再按语言写死人称表。人称放题面副标题的最前面——时态标签较长，放前面的话
+  // 人称会被 clean() 的长度截断整个切掉，题面就无法区分人称。
+  function tenseLabel(t) {
+    return t.groupLabel && t.groupLabel !== t.label ? t.groupLabel + ' ' + t.label : (t.label || t.key);
+  }
 
   function conjEntries(lang) {
-    const data = {
-      italian: lateGlobal('CONJUGATION_ALL_TENSES_DATA'),
-      german: lateGlobal('GERMAN_CONJUGATION_DATA'),
-      french: lateGlobal('FRENCH_CONJUGATION_DATA'),
-      english: lateGlobal('ENGLISH_CONJUGATION_DATA')
-    }[lang];
-    if (!data || !data.length) return [];
-    const persons = PERSON_CN[lang] || {};
+    const data = conjData(lang);
+    if (!data || !Array.isArray(data.verbs) || !data.verbs.length) return [];
+    const persons = data.persons || [];
     const out = [];
-    const verbCap = lang === 'english' ? data.length : Math.min(300, data.length);
+    const verbCap = Math.min(VERB_CAP, data.verbs.length);
     for (let vi = 0; vi < verbCap; vi++) {
-      const v = data[vi];
+      const v = data.verbs[vi];
       if (!v || !v.tenses) continue;
-      for (const tk of Object.keys(v.tenses)) {
-        const t = v.tenses[tk];
-        if (!t || !t.forms) continue;
-        const label = (t.group_label || '') + (t.tense_label ? ' ' + t.tense_label : '');
+      const prompt = String(v.word).slice(0, 18);
+      for (const t of data.tenses || []) {
+        const value = v.tenses[t.key];
+        if (value == null) continue;
+        const label = tenseLabel(t);
         if (t.type === 'person') {
-          for (const pk of Object.keys(t.forms)) {
-            const f = String(t.forms[pk] || '').trim();
-            if (!f || f.length > 40) continue;
-            // 人称放最前：变位标签（"Indicative Present simple"）较长，
-            // 放前面的话人称会被 clean() 的长度截断整个切掉，题面就无法区分人称。
-            out.push({
-              answer: f,
-              prompt: String(v.infinitive).slice(0, 18),
-              sub: (persons[pk] || pk) + ' · ' + label
-            });
-          }
-        } else if (t.type === 'single') {
-          const forms = Array.isArray(t.forms) ? t.forms : [];
+          if (!Array.isArray(value)) continue;
+          value.forEach((form, i) => {
+            const f = String(form || '').trim();
+            if (!f || f.length > 40 || !persons[i]) return;
+            out.push({ answer: f, prompt, sub: (persons[i].zh || persons[i].label) + ' · ' + label });
+          });
+        } else {
+          const forms = String(value).split('/').map((f) => f.trim()).filter(Boolean);
           forms.forEach((f, idx) => {
-            const s = String(f || '').trim();
-            if (!s || s.length > 40) return;
-            out.push({
-              answer: s,
-              prompt: String(v.infinitive).slice(0, 18),
-              sub: label + (forms.length > 1 ? ' · ' + (idx + 1) : '')
-            });
+            if (f.length > 40) return;
+            out.push({ answer: f, prompt, sub: label + (forms.length > 1 ? ' · ' + (idx + 1) : '') });
           });
         }
       }
@@ -170,7 +147,7 @@
     try {
       if (session && session.speak && typeof global.speechSynthesis !== 'undefined') {
         const u = new SpeechSynthesisUtterance(text);
-        u.lang = SPEECH_LANG[session.lang] || 'it-IT';
+        u.lang = speechLang(session.lang);
         u.rate = 0.95;
         global.speechSynthesis.speak(u);
       }
@@ -205,34 +182,30 @@
 
   // ==================== DOM 渲染 ====================
 
-  function esc(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-  }
-
   function fmt(n) { return Number(n || 0).toLocaleString('en-US'); }
 
   function renderSetup() {
     if (!session) return;
     const { lang } = session;
-    const cn = LANG_CN[lang] || lang;
+    const cn = langCn(lang);
     const bestVocab = getBest(lang, 'vocab');
     const bestConj = getBest(lang, 'conjugation');
     const el = $id('typingGameSetup');
     if (!el) return;
 
     el.innerHTML =
-      '<div class="typing-mode-chips" role="tablist">' +
-        '<button type="button" class="chip active" data-typing-mode="vocab">📚 背单词</button>' +
-        '<button type="button" class="chip" data-typing-mode="conjugation">🔄 动词变位</button>' +
+      '<div class="typing-mode-chips" role="tablist" aria-label="玩法">' +
+        '<button type="button" class="chip active" role="tab" aria-selected="true" tabindex="0" data-typing-mode="vocab">' +
+          '<span class="msr" aria-hidden="true">style</span>背单词</button>' +
+        '<button type="button" class="chip" role="tab" aria-selected="false" tabindex="-1" data-typing-mode="conjugation">' +
+          '<span class="msr" aria-hidden="true">sync_alt</span>动词变位</button>' +
       '</div>' +
       '<div class="typing-options">' +
-        '<div class="typing-opt-label">难度</div>' +
-        '<div class="chips">' +
-          '<button type="button" class="chip active" data-typing-diff="easy">🌊 简单</button>' +
-          '<button type="button" class="chip" data-typing-diff="normal">⛵ 普通</button>' +
-          '<button type="button" class="chip" data-typing-diff="hard">🌪️ 困难</button>' +
+        '<div class="typing-opt-label" id="typingDiffLabel">难度</div>' +
+        '<div class="chips" role="group" aria-labelledby="typingDiffLabel">' +
+          '<button type="button" class="chip active" aria-pressed="true" data-typing-diff="easy">简单</button>' +
+          '<button type="button" class="chip" aria-pressed="false" data-typing-diff="normal">普通</button>' +
+          '<button type="button" class="chip" aria-pressed="false" data-typing-diff="hard">困难</button>' +
         '</div>' +
         '<label class="typing-check">' +
           '<input type="checkbox" id="typingSpeakToggle" checked> 击落时朗读单词发音' +
@@ -247,7 +220,7 @@
       '</button>' +
       '<p class="typing-tip">单词会从上方顺流而下，看释义、打单词把它击落！' +
       '输入时无需按回车，打完整就自动击落；输到一半按回车可提前提交。' +
-      '重音符号可以省略（é 可输入 e）。沉底的单词会扣一条命，共 3 条命。</p>';
+      '重音要打对（可用输入框下方的特殊字母键）；德语 ä/ö/ü/ß 也可写成 ae/oe/ue/ss。沉底的单词会扣一条命，共 3 条命。</p>';
 
     // 每门语言一句玩法提示
     const tip = $id('typingGameDesc');
@@ -255,17 +228,33 @@
       tip.textContent = cn + '单词顺流而下，看释义、打字击落！共 3 条命，支持背单词与动词变位两种玩法。';
     }
 
-    // 模式/难度切换
-    el.querySelectorAll('[data-typing-mode]').forEach((b) => {
-      b.addEventListener('click', () => {
-        el.querySelectorAll('[data-typing-mode]').forEach((x) => x.classList.remove('active'));
-        b.classList.add('active');
+    // 模式（tablist：aria-selected + 方向键切换）/ 难度（aria-pressed）
+    const modes = Array.prototype.slice.call(el.querySelectorAll('[data-typing-mode]'));
+    const selectMode = (b) => {
+      modes.forEach((x) => {
+        const on = x === b;
+        x.classList.toggle('active', on);
+        x.setAttribute('aria-selected', on ? 'true' : 'false');
+        x.setAttribute('tabindex', on ? '0' : '-1');
+      });
+    };
+    modes.forEach((b, i) => {
+      b.addEventListener('click', () => selectMode(b));
+      b.addEventListener('keydown', (e) => {
+        const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!step) return;
+        e.preventDefault();
+        const next = modes[(i + step + modes.length) % modes.length];
+        selectMode(next);
+        if (typeof next.focus === 'function') next.focus();
       });
     });
     el.querySelectorAll('[data-typing-diff]').forEach((b) => {
       b.addEventListener('click', () => {
-        el.querySelectorAll('[data-typing-diff]').forEach((x) => x.classList.remove('active'));
-        b.classList.add('active');
+        el.querySelectorAll('[data-typing-diff]').forEach((x) => {
+          x.classList.toggle('active', x === b);
+          x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+        });
       });
     });
 
@@ -315,7 +304,7 @@
 
     overlay.innerHTML =
       '<div class="typing-overlay-card">' +
-        '<h2>🌊 本轮结束</h2>' +
+        '<h2><span class="msr" aria-hidden="true">sports_esports</span>本轮结束</h2>' +
         '<div class="typing-final-score">' + fmt(stats.score) + '</div>' +
         '<div class="typing-overlay-stats">' +
           '<div><span>击落单词</span><b>' + stats.cleared + '</b></div>' +
@@ -323,8 +312,8 @@
           '<div><span>最长连击</span><b>' + stats.bestStreak + '</b></div>' +
           '<div><span>用时</span><b>' + stats.duration + 's</b></div>' +
         '</div>' +
-        '<p class="typing-overlay-meta">' + LANG_CN[lang] + ' · ' + modeLabel + ' · ' + diff +
-        (isRecord ? ' · <b class="typing-new-record">🏆 新纪录！</b>' : '') + '</p>' +
+        '<p class="typing-overlay-meta">' + langCn(lang) + ' · ' + modeLabel + ' · ' + diff +
+        (isRecord ? ' · <b class="typing-new-record"><span class="msr" aria-hidden="true">task_alt</span>新纪录！</b>' : '') + '</p>' +
         '<p class="typing-overlay-best">历史最佳：' + fmt(Math.max(prevBest, stats.score)) + '</p>' +
         '<div class="typing-overlay-actions">' +
           '<button class="primary-btn" id="typingRestartBtn"><span class="msr" aria-hidden="true">replay</span> 再来一局</button>' +
@@ -397,6 +386,7 @@
     const setup = $id('typingGameSetup');
 
     const game = global.TypingGame.create({
+      lang: session.lang, // 判分走 Vocab.gradeTyped(lang)：德语 ae/oe/ue/ss 等价，重音要打对
       canvas: canvas || null,
       pool: entries,
       baseSpeed: cfg.baseSpeed,
@@ -431,9 +421,14 @@
       session._logicTimer = setInterval(() => game.tick(50), 50);
     }
 
+    setFeedback('');
+    if (global.Languages && typeof global.Languages.mountAccentKeys === 'function') {
+      global.Languages.mountAccentKeys($id('typingGameKeys'), input, session.lang);
+    }
     hud();
     game.start();
     if (input) {
+      input.setAttribute('lang', global.Languages.code(session.lang) || '');
       input.value = '';
       try { input.focus(); } catch (err) { /* ignore */ }
     }
@@ -453,11 +448,22 @@
     if (session) session.speak = false;
   }
 
+  // 输入框下方的一行反馈（role=status）：目前只用于「字母对了，重音不对」
+  function setFeedback(text) {
+    const el = $id('typingGameFeedback');
+    if (!el) return;
+    el.textContent = text || '';
+    el.classList.toggle('hidden', !text);
+  }
+
   function handleEvent(type, payload) {
     if (!session) return;
     const input = $id('typingGameInput');
     switch (type) {
       case 'clear':
+        // 引擎击落后清空了自己的 input，输入框要跟上，否则下一个字母会接在旧词后面
+        if (input) input.value = '';
+        setFeedback('');
         hud();
         if (session.renderer && payload.item) {
           session.renderer.burst(payload.item.x, payload.item.y - 20, '#ffd54f', '+' + payload.points);
@@ -466,6 +472,7 @@
         recordOutcome(payload.item.answer, true);
         break;
       case 'miss':
+        if (input) input.value = '';
         hud();
         if (input) {
           input.classList.remove('typing-shake');
@@ -475,6 +482,8 @@
         recordOutcome(payload.item && payload.item.answer, false);
         break;
       case 'wrong':
+        setFeedback(payload && payload.accent && payload.matched
+          ? '字母对了，重音不对：' + payload.matched.answer : '');
         if (input) {
           input.classList.remove('typing-shake');
           void input.offsetWidth;
@@ -503,7 +512,7 @@
       session = { lang: lang, mode: 'vocab', difficulty: 'easy', game: null, renderer: null, speak: true, maxLives: 3 };
       renderSetup();
       const eyebrow = $id('typingGameEyebrow');
-      if (eyebrow) eyebrow.textContent = (LANG_CN[lang] || lang) + ' / Typing Game';
+      if (eyebrow) eyebrow.textContent = langCn(lang) + ' / Typing Game';
       if (!opts.skipNavigate && typeof global.showScreen === 'function') {
         global.showScreen('typingGameScreen', {});
       }

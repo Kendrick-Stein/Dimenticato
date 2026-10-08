@@ -6,7 +6,12 @@
  * 因此提交进仓库本身不构成密钥泄露。但这也意味着社区词本的全部安全性都依赖
  * Supabase 侧的 Row Level Security 策略（见 supabase-setup.sql）——策略必须
  * 禁止匿名 UPDATE/DELETE，并限制 INSERT 的字段长度与 file_url 来源。
+ *
+ * 整个文件包在 IIFE 里：只有文件末尾挂到 window 上的名字是对外接口，
+ * 其余（客户端初始化细节）是内部实现。
  */
+(function () {
+'use strict';
 
 // Supabase 项目配置
 const SUPABASE_CONFIG = {
@@ -71,20 +76,6 @@ const STORAGE_CONFIG = {
   allowedTypes: ['application/json', 'text/plain', '.json', '.txt']
 };
 
-// 预设标签列表
-const PRESET_TAGS = [
-  '旅游',
-  '商务',
-  '日常',
-  '美食',
-  '文化',
-  '学术',
-  '医疗',
-  '运动',
-  '艺术',
-  '科技'
-];
-
 // 难度级别映射
 const DIFFICULTY_LEVELS = {
   'Beginner': { label: '初级', icon: 'icon-seed' },
@@ -92,15 +83,25 @@ const DIFFICULTY_LEVELS = {
   'Advanced': { label: '高级', icon: 'icon-tree' }
 };
 
-// 社区词本语言映射
-// key = 应用内部语言标识；db = 数据库 language 列的取值；label = 界面中文名
-// 历史数据中 language 可能为空或写作小写，统一按“意大利语”处理（见 normalizeLanguage）
-const COMMUNITY_LANGUAGES = [
-  { key: 'italian', db: 'Italian', label: '意大利语' },
-  { key: 'german', db: 'German', label: '德语' },
-  { key: 'english', db: 'English', label: '英语' },
-  { key: 'french', db: 'French', label: '法语' }
-];
+// 社区词本语言映射，从 lib/languages.js 派生
+// 社区词本语言映射的唯一入口：任意写法 → 语言描述
+//   communityLanguage('it' | 'italian' | 'Italian' | null) → { key, code, db, label, matches }
+// key = 应用内部语言标识；code = 'it' 等语言代码；db = 上传时写入 language 列的值；
+// label = 界面中文名；matches = 列表查询时视为该语言的所有库内写法。
+// 写入值保持英文名（'Italian'），因为 supabase-setup.sql 有
+// CHECK (language IN ('Italian','German','English','French'))；改写 code 前要先迁移库约束。
+// 历史行 language 为空 / 无法识别时一律视为默认语言（意大利语）。
+function communityLanguage(value) {
+  const L = window.Languages;
+  const raw = (value == null ? '' : String(value)).trim().toLowerCase();
+  const p = (raw && L.list.find((x) => x.code === raw || x.key === raw || x.en.toLowerCase() === raw))
+    || L.get(L.DEFAULT);
+  const matches = [p.en, p.key, p.code];
+  return { key: p.key, code: p.code, db: p.en, label: p.cn, matches, includesNull: p.code === L.DEFAULT };
+}
+
+// 上传对话框 / 筛选下拉框的选项（由 communityLanguage 派生）
+const COMMUNITY_LANGUAGES = window.Languages.list.map((p) => communityLanguage(p.code));
 
 // 上传字段长度上限（与 supabase-setup.sql 中的 CHECK 约束保持一致）
 const COMMUNITY_FIELD_LIMITS = {
@@ -109,14 +110,12 @@ const COMMUNITY_FIELD_LIMITS = {
   description: 500
 };
 
-// 暴露到 window：其它脚本必须在“调用时”通过 window 解析这些配置，
-// 顶层 const 只存在于全局词法作用域，先加载的脚本读不到。
+// 对外接口：其它脚本一律在“调用时”通过 window 解析
 window.SUPABASE_CONFIG = SUPABASE_CONFIG;
 window.STORAGE_CONFIG = STORAGE_CONFIG;
-window.PRESET_TAGS = PRESET_TAGS;
 window.DIFFICULTY_LEVELS = DIFFICULTY_LEVELS;
 window.COMMUNITY_LANGUAGES = COMMUNITY_LANGUAGES;
+window.communityLanguage = communityLanguage;
 window.COMMUNITY_FIELD_LIMITS = COMMUNITY_FIELD_LIMITS;
-window.isSupabaseAvailable = isSupabaseAvailable;
-window.initSupabase = initSupabase;
 window.getSupabaseClient = getSupabaseClient;
+})();

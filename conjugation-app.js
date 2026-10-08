@@ -1,314 +1,78 @@
 /**
- * 动词变位练习模块（多时态）
+ * 动词变位练习模块（多时态，意/德/英/法共用）
+ *
+ * 不再按语言写配置：一切语言差异都来自数据本身（conjugations/1，见
+ * docs/data-schema.md），由 LangLoader.data(code, 'conjugations') 取得：
+ *   - persons[]            人称顺序、标签、中文、主语代词（判分接受「主语 + 变位」）
+ *   - tenses[]             展示顺序、语气 group、标签、矩阵列 time、
+ *                          omit（该时态不存在的人称）、labels（人称标签覆盖，如 Lei/Loro）、
+ *                          subject（变位表连主语一起写，法语惯例）
+ *   - meta.groups          矩阵的行（语气）及其中文名
+ *   - meta.placeholders    查词 / 填空输入框的示例文案
+ *   - meta.elision         人称代词在元音前的缩合（法语 je + ai → j'ai）与嘘音 h 例外
+ * 语言名来自 Languages.get(code)。
  */
 
 (function () {
-  // ==================== 语言配置（language config） ====================
-  // 该模块原本硬编码意大利语；现在通过 `config` 描述当前语言，使同一套
-  // 屏幕/逻辑可服务意/德/英/法四语。意大利语为默认配置，行为与重构前完全一致。
-  //
-  // config 形态：
-  //   { lang, getData(), personOrder, personLabel,
-  //     moods: [{ key, label, match(meta) }], timeOf(meta),
-  //     storageKey, backTarget }
-  //   - moods 是矩阵的行（语气/式），按顺序渲染为最多三行；
-  //   - match(meta) 把某时态分到某个 mood；timeOf(meta) 返回
-  //     'present' | 'past' | 'future' | 'other' 作为矩阵的列。
-  //
-  // 可选字段（缺省即保持原行为）：
-  //   - subjectPronouns: { personKey: [主语代词, …] }
-  //       判分时额外接受“主语 + 变位”的写法（io parlo / je suis / j'ai su）。
-  //   - elision: { contract: { pronoun: 缩合形 }, vowel: RegExp, aspirate: [词, …] }
-  //       描述人称代词在元音开头前的缩合（法语 je + ai → j'ai）。
-  //   - subjectInForms: true 时，变位表把主语一起写出来（法语惯例）。
-  //   - personLabelOverrides: { tenseKey: { personKey: 标签 } }（如命令式的 Lei/Loro）。
-  //   - hiddenPersons: { tenseKey: [personKey, …] }（该时态不存在的人称，不显示空行）。
-  //   - formLabels: { tenseKey: [标签, …] }，替换数组型时态的“形式 N”。
-  //   - typingPlaceholder / lookupPlaceholder: 两个输入框的示例文案。
+  const STORAGE_PREFIX = 'dimenticato_conjugation_lessons';
+  const TIME_ORDER = ['present', 'past', 'future'];
+  const TIME_LABELS = { present: '现在', past: '过去', future: '将来' };
 
-  function lc(s) {
-    return (s || '').toString().toLowerCase();
+  // 宽松比较 key：抹重音、统一撇号/œ、小写、压空白（lib/utils.js DimText）
+  function norm(value) {
+    return window.DimText.normalizeText(value, { fold: true });
   }
 
-  // ---- 意大利语（默认，行为与重构前一致） ----
-  const ITALIAN_CONFIG = {
-    lang: 'italian',
-    getData() {
-      if (typeof CONJUGATION_ALL_TENSES_DATA !== 'undefined' && Array.isArray(CONJUGATION_ALL_TENSES_DATA)) {
-        return CONJUGATION_ALL_TENSES_DATA;
-      }
-      return buildFallbackFromPresente();
-    },
-    personOrder: ['io', 'tu', 'lui_lei', 'noi', 'voi', 'loro'],
-    personLabel: {
-      io: 'io',
-      tu: 'tu',
-      lui_lei: 'lui / lei',
-      noi: 'noi',
-      voi: 'voi',
-      loro: 'loro'
-    },
-    subjectPronouns: {
-      io: ['io'],
-      tu: ['tu'],
-      lui_lei: ['lui', 'lei'],
-      noi: ['noi'],
-      voi: ['voi'],
-      loro: ['loro']
-    },
-    // 命令式的第三人称是敬语 Lei / Loro，第一人称单数不存在。
-    personLabelOverrides: {
-      imperativo_affermativo: { lui_lei: 'Lei', loro: 'Loro' },
-      imperativo_non: { lui_lei: 'Lei', loro: 'Loro' }
-    },
-    hiddenPersons: {
-      imperativo_affermativo: ['io'],
-      imperativo_non: ['io']
-    },
-    formLabels: {
-      infinito_gerundio: ['Infinito', 'Participio passato', 'Gerundio'],
-      participio: ['Participio presente', 'Passato m.s.', 'Passato f.s.', 'Passato m.p.', 'Passato f.p.']
-    },
-    moods: [
-      { key: 'indicativo', label: '直陈式', match: (meta) => lc(meta.group).includes('indicativo') },
-      { key: 'condizionale', label: '条件式', match: (meta) => lc(meta.group).includes('condizionale') },
-      { key: 'congiuntivo', label: '虚拟式', match: (meta) => lc(meta.group).includes('congiuntivo') },
-      { key: 'imperativo', label: '命令式', match: (meta) => lc(meta.group).includes('imperativo') }
-    ],
-    timeOf(meta) {
-      const t = lc(meta.tense);
-      // 命令式的时态标签是 Affermativo / Negativo，不含时间关键词；
-      // 固定放在自己那一行的“现在”列，而不是掉进“其他时态”。
-      if (lc(meta.group).includes('imperativo')) return 'present';
-      if (t.includes('presente')) return 'present';
-      if (t.includes('futuro')) return 'future';
-      if (
-        t.includes('passato') ||
-        t.includes('imperfetto') ||
-        t.includes('trapassato') ||
-        t.includes('anteriore')
-      ) {
-        return 'past';
-      }
-      return 'other';
-    },
-    storageKey: 'dimenticato_conjugation_lessons',
-    backTarget: 'grammarScreen',
-    localeSort: 'it',
-    lookupPlaceholder: '例如：essere / sono / fossi / stato',
-    typingPlaceholder: '例如：parlo / ho parlato'
-  };
+  // ==================== 进度存储 ====================
 
-  // ---- 德语 ----
-  const GERMAN_CONFIG = {
-    lang: 'german',
-    getData() {
-      return (typeof GERMAN_CONJUGATION_DATA !== 'undefined' && Array.isArray(GERMAN_CONJUGATION_DATA))
-        ? GERMAN_CONJUGATION_DATA
-        : [];
-    },
-    personOrder: ['ich', 'du', 'er_sie_es', 'wir', 'ihr', 'sie'],
-    personLabel: {
-      ich: 'ich',
-      du: 'du',
-      er_sie_es: 'er / sie / es',
-      wir: 'wir',
-      ihr: 'ihr',
-      sie: 'sie'
-    },
-    subjectPronouns: {
-      ich: ['ich'],
-      du: ['du'],
-      er_sie_es: ['er', 'sie', 'es'],
-      wir: ['wir'],
-      ihr: ['ihr'],
-      sie: ['sie', 'Sie']
-    },
-    moods: [
-      { key: 'indikativ', label: '直陈式', match: (meta) => lc(meta.group).includes('indikativ') },
-      { key: 'konjunktiv', label: '虚拟式', match: (meta) => lc(meta.group).includes('konjunktiv') },
-      { key: 'imperativ', label: '命令式', match: (meta) => lc(meta.group).includes('imperativ') }
-    ],
-    timeOf(meta) {
-      const t = lc(meta.tense);
-      if (t.includes('präsens') || t.includes('prasens') || t.includes('present')) return 'present';
-      if (t.includes('futur')) return 'future';
-      if (
-        t.includes('präteritum') || t.includes('prateritum') ||
-        t.includes('perfekt') ||           // Perfekt + Plusquamperfekt + Konjunktiv * Perfekt
-        t.includes('past')
-      ) {
-        return 'past';
-      }
-      // Bare Konjunktiv I / Konjunktiv II (würde-Form) and the Imperativ carry no
-      // present/past/future keyword; anchor them in the "present" column of their
-      // own mood row so the matrix shows them in place rather than in 其他时态.
-      if (t.includes('konjunktiv') || t.includes('imperativ')) return 'present';
-      return 'other';
-    },
-    storageKey: 'dimenticato_conjugation_lessons_de',
-    backTarget: 'grammarScreen',
-    localeSort: 'de',
-    lookupPlaceholder: '例如：sein / bin / war / gewesen',
-    typingPlaceholder: '例如：bin / war / gewesen'
-  };
-
-  // ---- 英语 ----
-  const ENGLISH_CONFIG = {
-    lang: 'english',
-    getData() {
-      return (typeof ENGLISH_CONJUGATION_DATA !== 'undefined' && Array.isArray(ENGLISH_CONJUGATION_DATA))
-        ? ENGLISH_CONJUGATION_DATA
-        : [];
-    },
-    personOrder: ['i', 'you', 'he_she_it', 'we', 'you_pl', 'they'],
-    personLabel: {
-      i: 'I',
-      you: 'you',
-      he_she_it: 'he / she / it',
-      we: 'we',
-      you_pl: 'you (pl.)',
-      they: 'they'
-    },
-    subjectPronouns: {
-      i: ['I'],
-      you: ['you'],
-      he_she_it: ['he', 'she', 'it'],
-      we: ['we'],
-      you_pl: ['you'],
-      they: ['they']
-    },
-    moods: [
-      { key: 'indicative', label: '陈述式', match: (meta) => lc(meta.group).includes('indicative') },
-      { key: 'conditional', label: '条件式', match: (meta) => lc(meta.group).includes('conditional') },
-      { key: 'imperative', label: '命令式', match: (meta) => lc(meta.group).includes('imperative') }
-    ],
-    timeOf(meta) {
-      const t = lc(meta.tense);
-      const g = lc(meta.group);
-      // Conditional aspect labels (Present/Continuous/Perfect/Perfect continuous)
-      // and the Imperative lack a tense prefix; map them onto their own mood row:
-      // perfect aspects → 过去 column, the rest → 现在 column.
-      if (g.includes('conditional')) return t.includes('perfect') ? 'past' : 'present';
-      if (g.includes('imperative')) return 'present';
-      if (t.includes('present')) return 'present';
-      if (t.includes('future')) return 'future';
-      if (t.includes('past')) return 'past';
-      return 'other';
-    },
-    storageKey: 'dimenticato_conjugation_lessons_en',
-    backTarget: 'grammarScreen',
-    localeSort: 'en',
-    lookupPlaceholder: '例如：be / am / was / been',
-    typingPlaceholder: '例如：am / was / have been'
-  };
-
-  // ---- 法语 ----
-  const FRENCH_CONFIG = {
-    lang: 'french',
-    getData() {
-      return (typeof FRENCH_CONJUGATION_DATA !== 'undefined' && Array.isArray(FRENCH_CONJUGATION_DATA))
-        ? FRENCH_CONJUGATION_DATA
-        : [];
-    },
-    personOrder: ['je', 'tu', 'il_elle_on', 'nous', 'vous', 'ils_elles'],
-    personLabel: {
-      je: 'je',
-      tu: 'tu',
-      il_elle_on: 'il / elle / on',
-      nous: 'nous',
-      vous: 'vous',
-      ils_elles: 'ils / elles'
-    },
-    subjectPronouns: {
-      je: ['je'],
-      tu: ['tu'],
-      il_elle_on: ['il', 'elle', 'on'],
-      nous: ['nous'],
-      vous: ['vous'],
-      ils_elles: ['ils', 'elles']
-    },
-    // 省音（élision）：je 在元音或哑音 h 前缩写为 j'（j'ai été / j'habite），
-    // 但在嘘音 h（h aspiré）前保持完整（je hais）。数据集只存动词形式本身，
-    // 变位表与判分都由这条规则推导，法语数据重建后无需改动引擎。
-    elision: {
-      contract: { je: "j'" },
-      vowel: /^[aeiouyhàâäéèêëîïôöùûüœæ]/i,
-      aspirate: [
-        'hair', 'haïr', 'hais', 'hait', 'haissons', 'haïssons', 'haissez', 'haïssez', 'haissent', 'haïssent',
-        'hache', 'halte', 'hanche', 'hante', 'harcele', 'hasarde', 'hate', 'hâte', 'hausse',
-        'heurte', 'hisse', 'hoche', 'honte', 'hue', 'hurle'
-      ]
-    },
-    // 法语变位表按 Bescherelle 惯例连主语一起写出（j'ai été / tu as été）；
-    // 命令式本身不带主语（sache !），所以那一组排除在外。
-    subjectInForms: (meta) => !/imp[ée]ratif/i.test(meta.group || ''),
-    // 法语命令式只有 tu / nous / vous 三个形式。
-    hiddenPersons: {
-      imperatif_present: ['je', 'il_elle_on', 'ils_elles']
-    },
-    moods: [
-      { key: 'indicatif', label: '直陈式', match: (meta) => lc(meta.group).includes('indicatif') },
-      { key: 'conditionnel', label: '条件式', match: (meta) => lc(meta.group).includes('conditionnel') },
-      { key: 'subjonctif', label: '虚拟式', match: (meta) => lc(meta.group).includes('subjonctif') },
-      { key: 'imperatif', label: '命令式', match: (meta) => lc(meta.group).includes('impératif') || lc(meta.group).includes('imperatif') }
-    ],
-    timeOf(meta) {
-      const t = lc(meta.tense);
-      const g = lc(meta.group);
-      if (g.includes('conditionnel') || g.includes('subjonctif') || g.includes('imperatif') || g.includes('impératif')) {
-        return 'present';
-      }
-      if (t.includes('futur')) return 'future';
-      if (t.includes('passé') || t.includes('passe') || t.includes('imparfait') || t.includes('plus-que-parfait')) {
-        return 'past';
-      }
-      if (t.includes('présent') || t.includes('present')) return 'present';
-      return 'other';
-    },
-    storageKey: 'dimenticato_conjugation_lessons_fr',
-    backTarget: 'grammarScreen',
-    localeSort: 'fr',
-    lookupPlaceholder: '例如：être / suis / étais / été',
-    typingPlaceholder: "例如：suis / étais / ai été（j'ai été 也算对）"
-  };
-
-  const LANG_CONFIGS = {
-    italian: ITALIAN_CONFIG,
-    german: GERMAN_CONFIG,
-    english: ENGLISH_CONFIG,
-    french: FRENCH_CONFIG
-  };
-
-  // 当前激活的语言配置。默认意大利语 → 保证自动初始化行为不变。
-  let config = ITALIAN_CONFIG;
-
-  // 便捷读取（替换原先硬编码的 PERSON_ORDER / PERSON_LABEL / STORAGE_KEY）。
-  function PERSON_ORDER() { return config.personOrder; }
-  // tenseKey 可选：命令式等时态需要覆盖人称标签（lui/lei → Lei）。
-  function personLabelOf(person, tenseKey) {
-    const overrides = (config.personLabelOverrides || {})[tenseKey];
-    if (overrides && overrides[person]) return overrides[person];
-    return (config.personLabel && config.personLabel[person]) || person;
+  // 每门语言一份：dimenticato_conjugation_lessons_<code>
+  function storageKeyFor(code) {
+    return `${STORAGE_PREFIX}_${code}`;
   }
-  // 该时态实际存在的人称（命令式没有第一人称单数）。
-  function personsForTense(tenseKey) {
-    const hidden = (config.hiddenPersons || {})[tenseKey];
-    if (!hidden || !hidden.length) return PERSON_ORDER();
-    return PERSON_ORDER().filter(person => !hidden.includes(person));
+
+  // 旧 key 一次性迁移：默认语言（意大利语）曾用无后缀的 key；德 / 英 / 法本来就是 _<code>。
+  function legacyStorageKeys(code) {
+    const profile = window.Languages.get(code);
+    return profile && profile.key === window.Languages.DEFAULT_KEY ? [STORAGE_PREFIX] : [];
   }
-  // 数组型时态（不定式/分词等）的槽位名称，缺省回落到“形式 N”。
-  function formLabelOf(tenseKey, index) {
-    const labels = (config.formLabels || {})[tenseKey];
-    return (labels && labels[index]) || `形式 ${index + 1}`;
+
+  function migrateLessonStorage(code) {
+    try {
+      const target = storageKeyFor(code);
+      legacyStorageKeys(code).forEach(key => {
+        const raw = localStorage.getItem(key);
+        if (raw == null) return;
+        if (localStorage.getItem(target) == null) localStorage.setItem(target, raw);
+        localStorage.removeItem(key);
+      });
+    } catch (e) {
+      // 存储不可用（隐私模式等）时迁移失败不影响练习
+    }
   }
-  function storageKey() { return config.storageKey; }
+
+  // ==================== 当前语言的数据视图 ====================
+
+  // ctx 由 prepareData() 从 conjugations/1 数据建立；没有数据时为空壳。
+  let ctx = emptyContext(null);
+
+  function emptyContext(code) {
+    return {
+      code,
+      data: null,
+      persons: [],
+      tenses: [],
+      tenseByKey: {},
+      groups: [],
+      placeholders: {},
+      elision: null,
+      vowel: null,
+      aspirateForms: new Set()
+    };
+  }
 
   const state = {
     verbs: [],
-    aspirateForms: null,
     lookupIndex: null,
-    tenseMeta: {},
     selectedTense: null,
     lessonSize: 10,
     lessonIndex: 0,
@@ -318,50 +82,73 @@
     correct: 0,
     total: 0,
     current: null,
+    questionStartedAt: 0,
     started: false
   };
+
+  function tenseMeta(tenseKey) {
+    return ctx.tenseByKey[tenseKey] || null;
+  }
+
+  function personIndex(personKey) {
+    return ctx.persons.findIndex(p => p.key === personKey);
+  }
+
+  // tenseKey 可选：命令式等时态会覆盖人称标签（lui / lei → Lei）。
+  function personLabelOf(personKey, tenseKey) {
+    const meta = tenseMeta(tenseKey);
+    if (meta && meta.labels && meta.labels[personKey]) return meta.labels[personKey];
+    const person = ctx.persons[personIndex(personKey)];
+    return person ? person.label : personKey;
+  }
+
+  // 该时态实际存在的人称（命令式没有第一人称单数等）。
+  function personsForTense(tenseKey) {
+    const meta = tenseMeta(tenseKey);
+    const omit = (meta && meta.omit) || [];
+    return ctx.persons.map(p => p.key).filter(key => !omit.includes(key));
+  }
+
+  function tenseTitle(meta) {
+    if (!meta) return '';
+    return meta.groupLabel && meta.groupLabel !== meta.label ? `${meta.groupLabel} · ${meta.label}` : meta.label;
+  }
 
   function isGroupedFullQuestion(question) {
     return !!question && question.promptType === 'group';
   }
 
-  function normalizeText(str) {
-    return (str || '')
-      .toString()
-      .trim()
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      // 输入法/移动键盘常把撇号打成弯引号；统一成直撇号，否则 j’ai 判错。
-      .replace(/[\u2018\u2019\u02bc\u00b4`]/g, "'")
-      .replace(/\s+/g, ' ');
-  }
-
   function splitAlternatives(form) {
-    return (form || '')
+    return String(form == null ? '' : form)
       .split('/')
       .map(v => v.trim())
-      .filter(v => v && normalizeText(v) !== 'none');
+      .filter(v => v && norm(v) !== 'none');
+  }
+
+  // 某动词某人称的形式（person 型时态存 6 元组，按 persons 顺序）
+  function personForm(value, personKey) {
+    if (!Array.isArray(value)) return '';
+    return value[personIndex(personKey)] || '';
   }
 
   // ---- 省音（elision）与主语前缀 ----
-  // config.elision 描述“人称代词在元音开头前缩合”这条规则；数据集只存动词
-  // 形式本身（法语 "ai été"），显示与判分都由这里推导（"j'ai été"）。
+  // 数据集只存动词形式本身（法语 "ai été"），显示与判分都由 meta.elision 推导（"j'ai été"）。
 
-  // 嘘音 h 的判定以【数据集自己的 aspirateH 标志】为准，而不是词形白名单：
-  // 白名单漏一个词就会渲染出 j'hèle 这种错形，而数据集每新增一个动词都自带标志。
-  // 只收以 h 开头的形式：复合时态的 "ai haï" 由助动词开头，那里省音是对的（j'ai haï）。
-  function collectAspirateForms(verbs) {
+  // 嘘音 h 以数据集列出的 aspirateVerbs 为准，而不是词形白名单：白名单漏一个词
+  // 就会渲染出 j'hèle 这种错形。只收以 h 开头的形式：复合时态的 "ai haï" 由助动词
+  // 开头，那里省音是对的（j'ai haï）。
+  function collectAspirateForms(verbs, aspirateVerbs) {
+    const wanted = new Set(aspirateVerbs || []);
     const set = new Set();
-    (verbs || []).forEach(verb => {
-      if (!verb || !verb.aspirateH) return;
-      Object.values(verb.tenses || {}).forEach(tense => {
-        const forms = tense && tense.forms;
-        const values = Array.isArray(forms) ? forms : Object.values(forms || {});
-        values.forEach(value => {
-          String(value || '').split(/\s*[,/]\s*/).forEach(one => {
-            const norm = normalizeText(one.trim());
-            if (norm && norm.charAt(0) === 'h') set.add(norm);
+    if (!wanted.size) return set;
+    verbs.forEach(verb => {
+      if (!wanted.has(verb.word)) return;
+      Object.values(verb.tenses || {}).forEach(value => {
+        const values = Array.isArray(value) ? value : [value];
+        values.forEach(one => {
+          String(one || '').split(/\s*[,/]\s*/).forEach(form => {
+            const key = norm(form);
+            if (key && key.charAt(0) === 'h') set.add(key);
           });
         });
       });
@@ -369,167 +156,138 @@
     return set;
   }
 
-  // pronoun 写在 form 前面时的缩合形；不缩合则返回 ''。
-  function contractionFor(pronoun, form) {
-    const rule = config.elision;
-    if (!rule || !rule.contract) return '';
-    const contracted = rule.contract[lc(pronoun)];
+  // 该人称的代词写在 form 前面时的缩合形；不缩合则返回 ''。
+  function contractionFor(personKey, form) {
+    const rule = ctx.elision;
+    if (!rule || !rule.contract || !ctx.vowel) return '';
+    const contracted = rule.contract[personKey];
     if (!contracted) return '';
-    const head = (form || '').trim();
-    if (!head || !rule.vowel || !rule.vowel.test(head)) return '';
+    const head = String(form || '').trim();
+    if (!head || !ctx.vowel.test(head)) return '';
     // 嘘音 h（h aspiré）不省音：je hais，而不是 j'hais。
-    const norm = normalizeText(head);
-    if (state.aspirateForms && state.aspirateForms.has(norm)) return '';
-    if ((rule.aspirate || []).some(word => norm.startsWith(normalizeText(word)))) return '';
+    const key = norm(head);
+    if (ctx.aspirateForms.has(key)) return '';
+    if ((rule.aspirate || []).some(word => key.startsWith(norm(word)))) return '';
     return contracted;
   }
 
+  function pronounsOf(personKey) {
+    const person = ctx.persons[personIndex(personKey)];
+    return (person && person.pronouns) || [];
+  }
+
   // 该人称 + 变位形式的自然写法（j'ai été / tu as été / io parlo）。
-  function withSubject(person, form) {
-    const pronouns = (config.subjectPronouns || {})[person] || [];
+  function withSubject(personKey, form) {
+    const pronouns = pronounsOf(personKey);
     if (!pronouns.length || !form) return form || '';
-    const pronoun = pronouns[0];
-    const contracted = contractionFor(pronoun, form);
-    return contracted ? `${contracted}${form}` : `${pronoun} ${form}`;
+    const contracted = contractionFor(personKey, form);
+    return contracted ? `${contracted}${form}` : `${pronouns[0]} ${form}`;
   }
 
-  // config.subjectInForms 可以是 true，也可以是 meta => boolean（命令式不带主语）。
-  function showsSubject(tenseKey) {
-    const rule = config.subjectInForms;
-    if (!rule) return false;
-    if (typeof rule !== 'function') return true;
-    return !!rule(state.tenseMeta[tenseKey] || { key: tenseKey, group: '', tense: '' });
+  // 变位表里展示的形式：tense.subject 为真时连主语一起写（法语惯例）。
+  function displayForm(personKey, form, tenseKey) {
+    const meta = tenseMeta(tenseKey);
+    return personKey && meta && meta.subject ? withSubject(personKey, form) : form;
   }
 
-  // 变位表里展示的形式：法语连主语一起写，其余语言保持原样。
-  function displayForm(person, form, tenseKey) {
-    return showsSubject(tenseKey) ? withSubject(person, form) : form;
-  }
-
-  // 判分时除了裸形式，也接受带主语的写法（je suis / j'ai su / j' ai su）。
-  function expandAcceptedAnswers(answers, person) {
+  // 判分时除了裸形式，也接受带主语的写法（je suis / j'ai su / j' ai su / io parlo）。
+  function expandAcceptedAnswers(answers, personKey) {
     const out = [];
     const seen = new Set();
     const push = (value) => {
-      const key = normalizeText(value);
+      const key = norm(value);
       if (!key || seen.has(key)) return;
       seen.add(key);
       out.push(value);
     };
     (answers || []).forEach(ans => {
       push(ans);
-      ((config.subjectPronouns || {})[person] || []).forEach(pronoun => {
-        push(`${pronoun} ${ans}`);
-        const contracted = contractionFor(pronoun, ans);
-        if (contracted) {
-          push(`${contracted}${ans}`);
-          push(`${contracted} ${ans}`);
-        }
-      });
+      if (!personKey) return;
+      pronounsOf(personKey).forEach(pronoun => push(`${pronoun} ${ans}`));
+      const contracted = contractionFor(personKey, ans);
+      if (contracted) {
+        push(`${contracted}${ans}`);
+        push(`${contracted} ${ans}`);
+      }
     });
     return out;
   }
 
-  function matchesAnswer(answers, person, value) {
-    const user = normalizeText(value);
-    if (!user) return false;
-    return expandAcceptedAnswers(answers, person).some(ans => normalizeText(ans) === user);
+  // 判分走共用的 Vocab.gradeTyped（lib/vocab.js）：'correct' | 'accent' | 'wrong'。
+  // 重音写错（parlo ≠ parlò）不算对，单独提示「字母对了，重音不对」；
+  // 德语 ä/ae、ö/oe、ü/ue、ß/ss 视为同一写法。
+  function gradeAnswer(answers, personKey, value) {
+    if (!norm(value)) return 'wrong';
+    return window.Vocab.gradeTyped(ctx.code, value, expandAcceptedAnswers(answers, personKey));
   }
 
-  // 反馈里展示的“正确答案”：法语补上主语，其余语言保持原样。
-  function answerDisplayText(answers, person, tenseKey) {
-    return (answers || []).map(ans => displayForm(person, ans, tenseKey)).join(' / ');
+  // 反馈里展示的“正确答案”：带主语的时态补上主语。
+  function answerDisplayText(answers, personKey, tenseKey) {
+    return (answers || []).map(ans => displayForm(personKey, ans, tenseKey)).join(' / ');
   }
 
-  function getTenseForms(tenseData) {
-    if (!tenseData) return [];
-    if (tenseData.type === 'person' && tenseData.forms && typeof tenseData.forms === 'object') {
-      return PERSON_ORDER().flatMap(person => splitAlternatives(tenseData.forms[person]));
-    }
-    if (Array.isArray(tenseData.forms)) {
-      return tenseData.forms.flatMap(form => splitAlternatives(form));
-    }
-    return [];
+  // 某个时态值里的全部形式（含 / 分隔的异体）
+  function tenseForms(value) {
+    const values = Array.isArray(value) ? value : [value];
+    return values.flatMap(one => splitAlternatives(one));
   }
 
-  function createVerbLookupSummary(verb) {
-    return {
-      infinitive: verb.infinitive,
-      english: verb.english || '',
-      rank: verb.rank || null
-    };
-  }
+  // ==================== 查词 ====================
 
   function buildLookupIndex() {
-    const byInfinitive = new Map();
+    const byWord = new Map();
     const byForm = new Map();
 
     state.verbs.forEach(verb => {
-      const summary = createVerbLookupSummary(verb);
-      const infinitiveKey = normalizeText(verb.infinitive);
-      if (infinitiveKey) byInfinitive.set(infinitiveKey, summary);
+      const wordKey = norm(verb.word);
+      if (wordKey) byWord.set(wordKey, verb);
 
-      Object.values(verb.tenses || {}).forEach(tenseData => {
-        getTenseForms(tenseData).forEach(form => {
-          const key = normalizeText(form);
+      Object.values(verb.tenses || {}).forEach(value => {
+        tenseForms(value).forEach(form => {
+          const key = norm(form);
           if (!key) return;
           if (!byForm.has(key)) byForm.set(key, []);
           const list = byForm.get(key);
-          if (!list.some(item => item.infinitive === verb.infinitive)) {
-            list.push(summary);
-          }
+          if (!list.includes(verb)) list.push(verb);
         });
       });
     });
 
-    state.lookupIndex = { byInfinitive, byForm };
-  }
-
-  function getVerbByInfinitive(infinitive) {
-    const key = normalizeText(infinitive);
-    return state.verbs.find(verb => normalizeText(verb.infinitive) === key) || null;
+    state.lookupIndex = { byWord, byForm };
   }
 
   function searchVerbLookup(query) {
-    const key = normalizeText(query);
+    const key = norm(query);
     if (!key || !state.lookupIndex) return [];
 
-    const exactInfinitive = state.lookupIndex.byInfinitive.get(key);
-    if (exactInfinitive) {
-      return [getVerbByInfinitive(exactInfinitive.infinitive)].filter(Boolean);
-    }
+    const exactWord = state.lookupIndex.byWord.get(key);
+    if (exactWord) return [exactWord];
 
     const exactForms = state.lookupIndex.byForm.get(key) || [];
-    if (exactForms.length) {
-      return exactForms
-        .map(item => getVerbByInfinitive(item.infinitive))
-        .filter(Boolean);
-    }
+    if (exactForms.length) return exactForms.slice();
 
-    const partialMatches = state.verbs.filter(verb => {
-      if (normalizeText(verb.infinitive).includes(key)) return true;
-      return Object.values(verb.tenses || {}).some(tenseData =>
-        getTenseForms(tenseData).some(form => normalizeText(form).includes(key))
+    return state.verbs.filter(verb => {
+      if (norm(verb.word).includes(key)) return true;
+      return Object.values(verb.tenses || {}).some(value =>
+        tenseForms(value).some(form => norm(form).includes(key))
       );
     });
-
-    return partialMatches;
   }
 
-  function renderLookupTenseRows(tenseData, tenseKey) {
-    if (!tenseData) return '';
+  function renderLookupTenseRows(value, meta) {
+    if (value == null || !meta) return '';
 
-    if (tenseData.type === 'person' && tenseData.forms && typeof tenseData.forms === 'object') {
+    if (meta.type === 'person') {
       return `
         <div class="conj-card conj-card-mini">
-          ${personsForTense(tenseKey).map(person => {
-            const value = splitAlternatives(tenseData.forms[person])
-              .map(form => displayForm(person, form, tenseKey))
+          ${personsForTense(meta.key).map(person => {
+            const forms = splitAlternatives(personForm(value, person))
+              .map(form => displayForm(person, form, meta.key))
               .join(' / ') || '-';
             return `
               <div class="conj-line">
-                <span class="conj-person">${escapeHtml(personLabelOf(person, tenseKey))}</span>
-                <span class="conj-form">${escapeHtml(value)}</span>
+                <span class="conj-person">${escapeHtml(personLabelOf(person, meta.key))}</span>
+                <span class="conj-form">${escapeHtml(forms)}</span>
               </div>
             `;
           }).join('')}
@@ -537,18 +295,12 @@
       `;
     }
 
-    const forms = Array.isArray(tenseData.forms) ? tenseData.forms : [];
     return `
       <div class="conj-card conj-card-mini">
-        ${forms.map((form, index) => {
-          const value = splitAlternatives(form).join(' / ') || '-';
-          return `
-            <div class="conj-line">
-              <span class="conj-person">${escapeHtml(formLabelOf(tenseKey, index))}</span>
-              <span class="conj-form">${escapeHtml(value)}</span>
-            </div>
-          `;
-        }).join('')}
+        <div class="conj-line">
+          <span class="conj-person">${escapeHtml(meta.label)}</span>
+          <span class="conj-form">${escapeHtml(splitAlternatives(value).join(' / ') || '-')}</span>
+        </div>
       </div>
     `;
   }
@@ -558,7 +310,7 @@
     const emptyEl = document.getElementById('conjLookupEmptyState');
     if (!resultsEl || !emptyEl) return;
 
-    if (!query || !normalizeText(query)) {
+    if (!query || !norm(query)) {
       resultsEl.innerHTML = '';
       resultsEl.classList.add('hidden');
       emptyEl.className = 'hidden';
@@ -578,22 +330,25 @@
     emptyEl.textContent = '';
     resultsEl.classList.remove('hidden');
     resultsEl.innerHTML = verbs.map(verb => {
-      const tenseCards = Object.entries(verb.tenses || {}).map(([key, tenseData]) => `
-        <article class="conj-lookup-tense-card" data-tense="${escapeHtml(key)}">
-          <div class="conj-lookup-tense-title">${escapeHtml(`${tenseData.group_label || ''} · ${tenseData.tense_label || key}`)}</div>
-          ${renderLookupTenseRows(tenseData, key)}
-        </article>
-      `).join('');
+      const tenseCards = ctx.tenses
+        .filter(meta => verb.tenses && verb.tenses[meta.key] != null)
+        .map(meta => `
+          <article class="conj-lookup-tense-card" data-tense="${escapeAttribute(meta.key)}">
+            <div class="conj-lookup-tense-title" title="${escapeAttribute(meta.zh || '')}">${escapeHtml(tenseTitle(meta))}</div>
+            ${renderLookupTenseRows(verb.tenses[meta.key], meta)}
+          </article>
+        `).join('');
 
       return `
         <section class="conj-lookup-result-card">
           <div class="conj-lookup-result-header">
             <div>
               <p class="eyebrow">Verb Lookup</p>
-              <h4>${escapeHtml(verb.infinitive)}</h4>
+              <h4>${escapeHtml(verb.word)}</h4>
             </div>
             <div class="conj-lookup-meta">
-              ${verb.english ? `<span>${escapeHtml(verb.english)}</span>` : ''}
+              ${verb.zh ? `<span>${escapeHtml(verb.zh)}</span>` : ''}
+              ${verb.en ? `<span>${escapeHtml(verb.en)}</span>` : ''}
               ${verb.rank ? `<span>Rank #${escapeHtml(String(verb.rank))}</span>` : ''}
             </div>
           </div>
@@ -607,8 +362,7 @@
     const input = document.getElementById('conjLookupInput');
     if (!input) return;
     const query = input.value.trim();
-    const matches = searchVerbLookup(query);
-    renderLookupResults(matches, query);
+    renderLookupResults(searchVerbLookup(query), query);
   }
 
   function clearLookupSearch() {
@@ -617,14 +371,7 @@
     renderLookupResults([], '');
   }
 
-  function shuffle(arr) {
-    const a = [...arr];
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }
+  // ==================== 分课（按词频切块，每课 lessonSize 个动词） ====================
 
   function getLessonStateKey() {
     return `${state.selectedTense}__${state.lessonSize}`;
@@ -632,15 +379,24 @@
 
   function loadLessonStorage() {
     try {
-      const raw = localStorage.getItem(storageKey());
-      return raw ? JSON.parse(raw) : { completed: {}, lastViewed: {} };
+      const raw = ctx.code ? localStorage.getItem(storageKeyFor(ctx.code)) : null;
+      const data = raw ? JSON.parse(raw) : null;
+      return {
+        completed: (data && data.completed) || {},
+        lastViewed: (data && data.lastViewed) || {}
+      };
     } catch {
       return { completed: {}, lastViewed: {} };
     }
   }
 
   function saveLessonStorage(data) {
-    localStorage.setItem(storageKey(), JSON.stringify(data));
+    if (!ctx.code) return;
+    try {
+      localStorage.setItem(storageKeyFor(ctx.code), JSON.stringify(data));
+    } catch (e) {
+      // 配额满等情况下不影响练习
+    }
   }
 
   function persistLessonView() {
@@ -659,89 +415,71 @@
   }
 
   function isCurrentLessonCompleted() {
-    const data = loadLessonStorage();
-    const completed = data.completed[getLessonStateKey()] || [];
+    const completed = loadLessonStorage().completed[getLessonStateKey()] || [];
     return completed.includes(state.lessonIndex);
   }
 
+  function restoreLessonIndex() {
+    const saved = loadLessonStorage().lastViewed[getLessonStateKey()];
+    state.lessonIndex = Number.isInteger(saved) ? saved : 0;
+  }
+
   function getLessonSubset() {
-    const subset = state.verbs.filter(v => (v.tenses || {})[state.selectedTense]);
+    const subset = state.verbs.filter(v => v.tenses && v.tenses[state.selectedTense] != null);
     const start = state.lessonIndex * state.lessonSize;
-    const end = start + state.lessonSize;
     return {
       totalLessons: Math.max(1, Math.ceil(subset.length / state.lessonSize)),
-      words: subset.slice(start, end),
+      words: subset.slice(start, start + state.lessonSize),
       totalWords: subset.length
     };
   }
 
-  function buildFallbackFromPresente() {
-    if (typeof CONJUGATION_PRESENTE_DATA === 'undefined') return [];
-    return CONJUGATION_PRESENTE_DATA.map(v => ({
-      rank: v.rank,
-      infinitive: v.infinitive,
-      english: v.english || '',
-      tenses: {
-        indicativo_presente: {
-          type: 'person',
-          group_label: 'Indicativo',
-          tense_label: 'Presente',
-          forms: v.presente || {}
-        }
+  // ==================== 数据 ====================
+
+  // 变位数据由 data/*.js 注册到 DIM_DATA.conjugations.<code>，统一经 LangLoader.data 取
+  function dataFor(code) {
+    const data = window.LangLoader && window.LangLoader.data(code, 'conjugations');
+    return data && Array.isArray(data.verbs) ? data : null;
+  }
+
+  function prepareData(code) {
+    const data = dataFor(code);
+    ctx = emptyContext(code);
+    if (data) {
+      const meta = data.meta || {};
+      ctx.data = data;
+      ctx.persons = data.persons || [];
+      ctx.tenses = data.tenses || [];
+      ctx.tenses.forEach(t => { ctx.tenseByKey[t.key] = t; });
+      ctx.groups = meta.groups || [];
+      ctx.placeholders = meta.placeholders || {};
+      ctx.elision = meta.elision || null;
+      try {
+        ctx.vowel = ctx.elision && ctx.elision.vowel ? new RegExp(ctx.elision.vowel, 'i') : null;
+      } catch (e) {
+        ctx.vowel = null;
       }
-    }));
-  }
+    }
 
-  function prepareData() {
-    const data = config.getData();
-    const raw = Array.isArray(data) ? data : [];
-
-    state.verbs = [...raw].sort((a, b) => (a.rank || 999999) - (b.rank || 999999));
-    state.aspirateForms = collectAspirateForms(state.verbs);
-
-    const meta = {};
-    state.verbs.forEach(verb => {
-      const tenses = verb.tenses || {};
-      Object.entries(tenses).forEach(([key, value]) => {
-        if (!meta[key]) {
-          meta[key] = {
-            key,
-            label: `${value.group_label || ''} · ${value.tense_label || key}`,
-            group: value.group_label || '',
-            tense: value.tense_label || key
-          };
-        }
-      });
-    });
-
-    state.tenseMeta = meta;
+    state.verbs = data ? [...data.verbs].sort((a, b) => (a.rank || 999999) - (b.rank || 999999)) : [];
+    ctx.aspirateForms = collectAspirateForms(state.verbs, ctx.elision && ctx.elision.aspirateVerbs);
     buildLookupIndex();
-    // First available tense (or null when data is absent — handled gracefully by
-    // setSelectedTense / updateLessonUI rather than pointing at a bogus key).
-    state.selectedTense = Object.keys(meta)[0] || null;
+    // 第一个时态（没有数据时为 null，由 renderTenseButtons / updateLessonUI 兜底）
+    state.selectedTense = ctx.tenses.length ? ctx.tenses[0].key : null;
   }
 
-  function getSortedTenseMeta() {
-    const locale = config.localeSort || 'en';
-    return Object.values(state.tenseMeta).sort((a, b) => a.label.localeCompare(b.label, locale));
-  }
+  // ==================== 时态矩阵（行 = 语气 group，列 = tense.time） ====================
 
-  // Mood bucket = config-defined matrix row key (or 'other' for non-finite extras).
-  function getMoodBucket(meta) {
-    const mood = (config.moods || []).find(m => m.match(meta));
-    return mood ? mood.key : 'other';
-  }
-
-  // Time bucket = matrix column ('present' | 'past' | 'future' | 'other').
-  function getTimeBucket(meta) {
-    return config.timeOf(meta) || 'other';
+  // 有 time 的时态进矩阵；没有 time 的（不定式、分词等）进「其他时态」。
+  function matrixRows() {
+    return ctx.groups.filter(group => ctx.tenses.some(t => t.group === group.key && t.time));
   }
 
   function buildTenseButton(meta) {
     return `
-      <button class="chip conj-tense-btn ${meta.key === state.selectedTense ? 'active' : ''}" data-tense="${meta.key}" title="${meta.label}">
-        <span class="ct-name">${meta.tense}</span>
-        <span class="ct-group">${meta.group || '时态'}</span>
+      <button type="button" class="chip conj-tense-btn ${meta.key === state.selectedTense ? 'active' : ''}" aria-pressed="${meta.key === state.selectedTense ? 'true' : 'false'}" data-tense="${escapeAttribute(meta.key)}" title="${escapeAttribute(`${tenseTitle(meta)}${meta.zh ? ` · ${meta.zh}` : ''}`)}">
+        <span class="ct-name">${escapeHtml(meta.label)}</span>
+        <span class="ct-group">${escapeHtml(meta.groupLabel || '时态')}</span>
       </button>
     `;
   }
@@ -750,6 +488,7 @@
     const buttons = document.querySelectorAll('#conjTenseButtons .conj-tense-btn');
     buttons.forEach(btn => {
       btn.classList.toggle('active', btn.dataset.tense === state.selectedTense);
+      btn.setAttribute('aria-pressed', btn.dataset.tense === state.selectedTense ? 'true' : 'false');
     });
   }
 
@@ -761,11 +500,9 @@
   }
 
   function setSelectedTense(tenseKey) {
-    if (!tenseKey || !state.tenseMeta[tenseKey]) return;
+    if (!tenseKey || !tenseMeta(tenseKey)) return;
     state.selectedTense = tenseKey;
-    const storage = loadLessonStorage();
-    const savedLesson = storage.lastViewed[`${state.selectedTense}__${state.lessonSize}`];
-    state.lessonIndex = Number.isInteger(savedLesson) ? savedLesson : 0;
+    restoreLessonIndex();
     markSelectedTenseButton();
     activateConjugationContext();
     updateLessonUI();
@@ -795,34 +532,26 @@
     updateLessonUI();
   }
 
-  const TIME_LABELS = {
-    present: '现在',
-    past: '过去',
-    future: '将来'
-  };
-  const TIME_ORDER = ['present', 'past', 'future'];
-
   function isMobileLayout() {
     return window.innerWidth <= 640;
   }
 
-  function buildMatrixBuckets(tenseList) {
-    // One row per config mood, each with present/past/future columns.
+  function buildMatrixBuckets() {
     const buckets = {};
-    config.moods.forEach(mood => {
-      buckets[mood.key] = { present: [], past: [], future: [] };
+    matrixRows().forEach(group => {
+      buckets[group.key] = { present: [], past: [], future: [] };
     });
     const extras = [];
-    tenseList.forEach(meta => {
-      const mood = getMoodBucket(meta);
-      const time = getTimeBucket(meta);
-      if (buckets[mood] && buckets[mood][time]) {
-        buckets[mood][time].push(meta);
-      } else {
-        extras.push(meta);
-      }
+    ctx.tenses.forEach(meta => {
+      const row = buckets[meta.group];
+      if (row && row[meta.time]) row[meta.time].push(meta);
+      else extras.push(meta);
     });
     return { buckets, extras };
+  }
+
+  function rowLabel(group) {
+    return escapeHtml(group.zh || group.label);
   }
 
   function renderMatrixDesktop(wrap, buckets, extras) {
@@ -831,10 +560,10 @@
       return arr.map(buildTenseButton).join('');
     };
 
-    const moodRows = config.moods.map(mood => {
-      const b = buckets[mood.key];
+    const moodRows = matrixRows().map(group => {
+      const b = buckets[group.key];
       return `
-        <div class="conj-matrix-row-label">${mood.label}</div>
+        <div class="conj-matrix-row-label">${rowLabel(group)}</div>
         <div class="conj-matrix-cell">${buildCell(b.present)}</div>
         <div class="conj-matrix-cell">${buildCell(b.past)}</div>
         <div class="conj-matrix-cell">${buildCell(b.future)}</div>`;
@@ -843,9 +572,7 @@
     wrap.innerHTML = `
       <div class="conj-tense-matrix">
         <div class="conj-matrix-head">语气\\时间</div>
-        <div class="conj-matrix-head">现在</div>
-        <div class="conj-matrix-head">过去</div>
-        <div class="conj-matrix-head">将来</div>
+        ${TIME_ORDER.map(time => `<div class="conj-matrix-head">${TIME_LABELS[time]}</div>`).join('')}
 ${moodRows}
       </div>
       ${extras.length ? `
@@ -860,12 +587,10 @@ ${moodRows}
   }
 
   function renderMatrixMobile(wrap, buckets, extras) {
-    const times = TIME_ORDER;
-
-    const moodSections = config.moods.map(mood => {
-      const moodBuckets = buckets[mood.key];
-      const timeSections = times.map(time => {
-        const arr = moodBuckets[time];
+    const moodSections = matrixRows().map(group => {
+      const groupBuckets = buckets[group.key];
+      const timeSections = TIME_ORDER.map(time => {
+        const arr = groupBuckets[time];
         if (!arr.length) return '';
         return `
           <div class="conj-mobile-time-group">
@@ -881,7 +606,7 @@ ${moodRows}
 
       return `
         <div class="conj-mobile-mood-section">
-          <div class="conj-mobile-mood-label">${mood.label}</div>
+          <div class="conj-mobile-mood-label">${rowLabel(group)}</div>
           <div class="conj-mobile-mood-body">${timeSections}</div>
         </div>
       `;
@@ -907,12 +632,8 @@ ${moodRows}
     const wrap = document.getElementById('conjTenseButtons');
     if (!wrap) return;
 
-    const tenseList = getSortedTenseMeta();
-
-    // Graceful degradation: no data loaded for this language (e.g. the German /
-    // English/French conjugation data scripts are absent) → show a friendly notice
-    // instead of an empty matrix. Never crash.
-    if (!tenseList.length) {
+    // 数据缺席时给出提示而不是空矩阵，绝不抛错。
+    if (!ctx.tenses.length) {
       wrap.innerHTML = `
         <div class="conj-matrix-empty" style="padding:2rem;text-align:center;">
           数据未加载，请稍后再试。
@@ -921,13 +642,9 @@ ${moodRows}
       return;
     }
 
-    const { buckets, extras } = buildMatrixBuckets(tenseList);
-
-    if (isMobileLayout()) {
-      renderMatrixMobile(wrap, buckets, extras);
-    } else {
-      renderMatrixDesktop(wrap, buckets, extras);
-    }
+    const { buckets, extras } = buildMatrixBuckets();
+    if (isMobileLayout()) renderMatrixMobile(wrap, buckets, extras);
+    else renderMatrixDesktop(wrap, buckets, extras);
 
     wrap.querySelectorAll('.conj-tense-btn').forEach(btn => {
       btn.addEventListener('click', () => setSelectedTense(btn.dataset.tense));
@@ -944,114 +661,90 @@ ${moodRows}
     }, 180);
   });
 
+  // ==================== 出题 ====================
+
   function buildQueue() {
     const subset = getLessonSubset().words;
+    const meta = tenseMeta(state.selectedTense);
     const queue = [];
+    if (!meta) {
+      state.queue = queue;
+      return;
+    }
 
     subset.forEach(verb => {
-      const tenseData = (verb.tenses || {})[state.selectedTense];
-      if (!tenseData) return;
+      const value = verb.tenses[meta.key];
+      if (value == null) return;
+      const base = {
+        word: verb.word,
+        english: verb.en || '',
+        zh: verb.zh || '',
+        rank: verb.rank,
+        tenseKey: meta.key,
+        tenseLabel: meta.label,
+        groupLabel: meta.groupLabel
+      };
 
-      if (state.mode === 'full' && tenseData.type === 'person') {
-        const items = personsForTense(state.selectedTense).map(p => {
-          const form = tenseData.forms ? tenseData.forms[p] : null;
-          const answers = splitAlternatives(form);
+      if (meta.type === 'person') {
+        const items = personsForTense(meta.key).map(person => {
+          const answers = splitAlternatives(personForm(value, person));
           if (!answers.length) return null;
-          return {
-            key: p,
-            person: p,
-            promptLabel: personLabelOf(p, state.selectedTense),
-            answers
-          };
+          return { key: person, person, promptLabel: personLabelOf(person, meta.key), answers };
         }).filter(Boolean);
 
-        if (items.length) {
-          queue.push({
-            infinitive: verb.infinitive,
-            english: verb.english || '',
-            rank: verb.rank,
-            tenseKey: state.selectedTense,
-            tenseLabel: tenseData.tense_label,
-            groupLabel: tenseData.group_label,
-            promptType: 'group',
-            promptLabel: '完整变位',
-            promptValue: '全部人称',
-            items
-          });
+        if (state.mode === 'full') {
+          if (items.length) {
+            queue.push({ ...base, promptType: 'group', promptLabel: '完整变位', promptValue: '全部人称', items });
+          }
+          return;
         }
-      } else if (state.mode === 'full' && tenseData.type !== 'person') {
-        const forms = Array.isArray(tenseData.forms) ? tenseData.forms : [];
-        const items = forms.map((f, idx) => {
-          const answers = splitAlternatives(f);
-          if (!answers.length) return null;
-          return {
-            key: `form_${idx + 1}`,
-            promptLabel: formLabelOf(state.selectedTense, idx),
-            answers
-          };
-        }).filter(Boolean);
-
-        if (items.length) {
+        items.forEach(item => {
           queue.push({
-            infinitive: verb.infinitive,
-            english: verb.english || '',
-            rank: verb.rank,
-            tenseKey: state.selectedTense,
-            tenseLabel: tenseData.tense_label,
-            groupLabel: tenseData.group_label,
-            promptType: 'group',
-            promptLabel: '完整形式',
-            promptValue: `共 ${items.length} 项`,
-            items
-          });
-        }
-      } else if (tenseData.type === 'person') {
-        personsForTense(state.selectedTense).forEach(p => {
-          const form = tenseData.forms ? tenseData.forms[p] : null;
-          if (!form) return;
-          const answers = splitAlternatives(form);
-          if (!answers.length) return;
-          queue.push({
-            infinitive: verb.infinitive,
-            english: verb.english || '',
-            rank: verb.rank,
-            tenseKey: state.selectedTense,
-            tenseLabel: tenseData.tense_label,
-            groupLabel: tenseData.group_label,
+            ...base,
             promptType: 'person',
-            person: p,
+            person: item.person,
             promptLabel: '人称',
-            promptValue: personLabelOf(p, state.selectedTense),
-            answers
+            promptValue: item.promptLabel,
+            answers: item.answers
           });
         });
-      } else {
-        const forms = Array.isArray(tenseData.forms) ? tenseData.forms : [];
-        forms.forEach((f, idx) => {
-          const answers = splitAlternatives(f);
-          if (!answers.length) return;
-          queue.push({
-            infinitive: verb.infinitive,
-            english: verb.english || '',
-            rank: verb.rank,
-            tenseKey: state.selectedTense,
-            tenseLabel: tenseData.tense_label,
-            groupLabel: tenseData.group_label,
-            promptType: 'single',
-            promptLabel: '形式',
-            promptValue: formLabelOf(state.selectedTense, idx),
-            answers
-          });
-        });
+        return;
       }
+
+      // 单形时态（不定式、分词等）：一个形式，/ 分隔的异体都算对
+      const answers = splitAlternatives(value);
+      if (!answers.length) return;
+      if (state.mode === 'full') {
+        queue.push({
+          ...base,
+          promptType: 'group',
+          promptLabel: '完整形式',
+          promptValue: '共 1 项',
+          items: [{ key: meta.key, promptLabel: meta.label, answers }]
+        });
+        return;
+      }
+      queue.push({ ...base, promptType: 'single', promptLabel: '形式', promptValue: meta.label, answers });
     });
 
-    state.queue = shuffle(queue);
+    state.queue = window.shuffleArray(queue);
     state.index = 0;
     state.correct = 0;
     state.total = 0;
     state.current = null;
     state.started = true;
+  }
+
+  // 答题遥测：只记学习活动（变位不进 SRS）。失败绝不影响练习。
+  function recordAnswer(correct, total) {
+    try {
+      if (!window.StatsManager || !ctx.code) return;
+      const durationMs = state.questionStartedAt ? Date.now() - state.questionStartedAt : 0;
+      // StatsManager 的语言参数是 Languages 的 key（italian / german …）
+      window.StatsManager.recordActivity(window.Languages.key(ctx.code), { correct, total, durationMs });
+    } catch (e) {
+      console.error('变位练习记录失败:', e);
+    }
   }
 
   function updateProgress() {
@@ -1070,15 +763,15 @@ ${moodRows}
     const q = state.current;
     if (!q) return;
 
-    const tenseTitle = document.getElementById('conjTenseTitle');
+    const tenseTitleEl = document.getElementById('conjTenseTitle');
     const infinitive = document.getElementById('conjInfinitive');
     const englishLine = document.getElementById('conjEnglishLine');
     const english = document.getElementById('conjEnglish');
     const promptLabel = document.getElementById('conjPromptLabel');
     const pronoun = document.getElementById('conjPronoun');
 
-    if (tenseTitle) tenseTitle.textContent = `${q.groupLabel} · ${q.tenseLabel}`;
-    if (infinitive) infinitive.textContent = q.infinitive;
+    if (tenseTitleEl) tenseTitleEl.textContent = tenseTitle(tenseMeta(q.tenseKey)) || `${q.groupLabel} · ${q.tenseLabel}`;
+    if (infinitive) infinitive.textContent = q.word;
     if (englishLine) englishLine.classList.toggle('hidden', !q.english);
     if (english) english.textContent = q.english || '-';
     if (promptLabel) promptLabel.textContent = `${q.promptLabel}：`;
@@ -1098,6 +791,9 @@ ${moodRows}
           data-index="${index}"
           placeholder="请输入"
           autocomplete="off"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"${ctx.code ? ` lang="${escapeAttribute(ctx.code)}"` : ''}
         >
         <span class="conj-full-answer hidden"></span>
       </label>
@@ -1116,11 +812,11 @@ ${moodRows}
     const correct = state.current.answers[0];
     const pool = state.queue
       .filter(item => item !== state.current)
-      .flatMap(item => item.answers)
-      .filter(v => normalizeText(v) !== normalizeText(correct));
+      .flatMap(item => item.answers || [])
+      .filter(v => norm(v) !== norm(correct));
 
-    const distractors = shuffle([...new Set(pool)]).slice(0, 3);
-    const options = shuffle([correct, ...distractors]);
+    const distractors = window.shuffleArray([...new Set(pool)]).slice(0, 3);
+    const options = window.shuffleArray([correct, ...distractors]);
 
     optionsWrap.innerHTML = options
       .map(opt => `<button class="option" data-answer="${escapeAttribute(opt)}">${escapeHtml(opt)}</button>`)
@@ -1182,6 +878,7 @@ ${moodRows}
     }
 
     state.current = state.queue[state.index];
+    state.questionStartedAt = Date.now();
     document.getElementById('conjAdvanceLessonBtn')?.classList.add('hidden');
     updateProgress();
     updateQuestionUI();
@@ -1191,6 +888,9 @@ ${moodRows}
     const mcqSection = document.getElementById('conjMcqSection');
     const fullSection = document.getElementById('conjFullSection');
     const input = document.getElementById('conjInput');
+
+    const keys = document.getElementById('conjKeys');
+    if (keys) keys.classList.toggle('hidden', state.mode === 'mcq');
 
     if (state.mode === 'mcq') {
       typingSection?.classList.add('hidden');
@@ -1218,30 +918,28 @@ ${moodRows}
   }
 
   function checkTypedAnswer() {
-    if (!state.current) return;
+    if (!state.current || isGroupedFullQuestion(state.current)) return;
     const input = document.getElementById('conjInput');
     const checkBtn = document.getElementById('conjCheckBtn');
-    if (!input) return;
+    if (!input || input.disabled) return;
 
-    const isCorrect = matchesAnswer(state.current.answers, state.current.person, input.value);
+    const grade = gradeAnswer(state.current.answers, state.current.person, input.value);
+    const isCorrect = grade === 'correct';
 
     state.total += 1;
     if (isCorrect) state.correct += 1;
     updateProgress();
+    recordAnswer(isCorrect ? 1 : 0, 1);
 
     input.disabled = true;
     if (checkBtn) checkBtn.disabled = true;
 
     const answerText = answerDisplayText(state.current.answers, state.current.person, state.current.tenseKey);
-    if (state.mode === 'full') {
-      showFeedback(
-        isCorrect,
-        isCorrect ? '正确！' : `错误，正确答案：${answerText}`,
-        isCorrect ? 700 : 0
-      );
-    } else {
-      showFeedback(isCorrect, isCorrect ? '正确！' : `错误，正确答案：${answerText}`);
-    }
+    showFeedback(
+      isCorrect,
+      isCorrect ? '正确！' : grade === 'accent' ? `字母对了，重音不对：${answerText}` : `错误，正确答案：${answerText}`,
+      state.mode === 'full' && isCorrect ? 700 : 0
+    );
   }
 
   function checkFullGroupAnswer() {
@@ -1249,19 +947,22 @@ ${moodRows}
 
     const wrap = document.getElementById('conjFullGrid');
     const checkBtn = document.getElementById('conjFullCheckBtn');
-    if (!wrap) return;
+    if (!wrap || (checkBtn && checkBtn.disabled)) return;
 
     let allCorrect = true;
     let localTotal = 0;
     let localCorrect = 0;
 
+    // 行与 items 一一对应（renderFullGroup 按同一顺序渲染）
+    const rows = wrap.querySelectorAll('.conj-full-item');
     state.current.items.forEach((item, index) => {
-      const row = wrap.querySelector(`.conj-full-item[data-key="${item.key}"]`);
-      const input = wrap.querySelector(`.conj-full-input[data-index="${index}"]`);
+      const row = rows[index];
+      const input = row?.querySelector('.conj-full-input');
       const answerEl = row?.querySelector('.conj-full-answer');
       if (!input || !row || !answerEl) return;
 
-      const correct = matchesAnswer(item.answers, item.person, input.value);
+      const grade = gradeAnswer(item.answers, item.person, input.value);
+      const correct = grade === 'correct';
 
       localTotal += 1;
       if (correct) localCorrect += 1;
@@ -1270,9 +971,10 @@ ${moodRows}
       input.disabled = true;
       row.classList.remove('correct', 'incorrect');
       row.classList.add(correct ? 'correct' : 'incorrect');
+      const answerText = answerDisplayText(item.answers, item.person, state.current.tenseKey);
       answerEl.textContent = correct
         ? '正确'
-        : `正确答案：${answerDisplayText(item.answers, item.person, state.current.tenseKey)}`;
+        : grade === 'accent' ? `字母对了，重音不对：${answerText}` : `正确答案：${answerText}`;
       answerEl.classList.remove('hidden');
     });
 
@@ -1281,32 +983,32 @@ ${moodRows}
     state.total += localTotal;
     state.correct += localCorrect;
     updateProgress();
+    if (localTotal) recordAnswer(localCorrect, localTotal);
 
     showFeedback(
       allCorrect,
-      allCorrect
-        ? '本组全部正确！'
-        : `本组答对 ${localCorrect}/${localTotal}`,
+      allCorrect ? '本组全部正确！' : `本组答对 ${localCorrect}/${localTotal}`,
       allCorrect ? 900 : 0
     );
   }
 
   function checkMcqAnswer(button) {
-    if (!state.current || !button) return;
+    if (!state.current || !button || button.disabled) return;
     const chosen = button.dataset.answer || '';
-    const isCorrect = state.current.answers.some(ans => normalizeText(ans) === normalizeText(chosen));
+    const isCorrect = state.current.answers.some(ans => norm(ans) === norm(chosen));
 
     state.total += 1;
     if (isCorrect) state.correct += 1;
     updateProgress();
+    recordAnswer(isCorrect ? 1 : 0, 1);
 
     const buttons = document.querySelectorAll('#conjOptions .option');
-    const correctNorm = normalizeText(state.current.answers[0]);
+    const correctNorm = norm(state.current.answers[0]);
 
     buttons.forEach(btn => {
       btn.disabled = true;
-      const norm = normalizeText(btn.dataset.answer || '');
-      if (norm === correctNorm) btn.classList.add('correct');
+      const value = norm(btn.dataset.answer || '');
+      if (value === correctNorm) btn.classList.add('correct');
       else if (btn === button && !isCorrect) btn.classList.add('wrong');
       else btn.classList.add('faded');
     });
@@ -1350,13 +1052,15 @@ ${moodRows}
   }
 
   function bindEvents() {
+    document.getElementById('conjugationScreen')?.addEventListener('focusin', (e) => {
+      const t = e.target;
+      if (t && (t.id === 'conjInput' || (t.classList && t.classList.contains('conj-full-input')))) lastConjInput = t;
+    });
     const lessonSizeSelect = document.getElementById('conjLessonSizeSelect');
 
     lessonSizeSelect?.addEventListener('change', () => {
       state.lessonSize = parseInt(lessonSizeSelect.value, 10) || 10;
-      const storage = loadLessonStorage();
-      const savedLesson = storage.lastViewed[`${state.selectedTense}__${state.lessonSize}`];
-      state.lessonIndex = Number.isInteger(savedLesson) ? savedLesson : 0;
+      restoreLessonIndex();
       updateLessonUI();
     });
 
@@ -1393,63 +1097,92 @@ ${moodRows}
       if (typeof window.setPracticeContext === 'function') window.setPracticeContext('conjugation');
     });
 
-    // 设置页的「返回语法」：父屏是统一的 grammarScreen（config.backTarget）。
+    // 设置页的「返回语法」：父屏是统一的 grammarScreen。
     document.getElementById('conjugationSetupBackBtn')?.addEventListener('click', () => {
-      if (typeof goBack === 'function') goBack({ fallbackTarget: config.backTarget || 'grammarScreen' });
+      if (typeof goBack === 'function') goBack({ fallbackTarget: 'grammarScreen' });
     });
   }
 
-  let lookupConfig = null; // 查词结果属于哪门语言的 config
+  let lookupCode = null; // 查词结果属于哪门语言
 
-  // Reload data + UI for the current `config` (shared by init / openFor).
-  function reloadForActiveConfig() {
-    prepareData();
-    const storage = loadLessonStorage();
-    const savedLesson = storage.lastViewed[`${state.selectedTense}__${state.lessonSize}`];
-    state.lessonIndex = Number.isInteger(savedLesson) ? savedLesson : 0;
+  // 为当前语言重建数据与界面（init / openFor 共用）
+  function reloadFor(code) {
+    if (code) migrateLessonStorage(code);
+    prepareData(code);
+    restoreLessonIndex();
     state.started = false;
+
+    const profile = code ? window.Languages.get(code) : null;
+    const eyebrow = document.querySelector('#conjugationSetupScreen .eyebrow');
+    if (eyebrow) eyebrow.textContent = profile ? `${profile.cn} / Verb Conjugation` : 'Grammar / Verb Conjugation';
+
     const lookupInput = document.getElementById('conjLookupInput');
-    if (lookupInput) lookupInput.placeholder = config.lookupPlaceholder || '输入动词原形或变位形式';
-    // 换了语言就清掉上一门语言的查词输入和结果，否则德语页会挂着意大利语的变位表
-    if (lookupConfig !== config) {
-      if (lookupConfig) clearLookupSearch();
-      lookupConfig = config;
+    if (lookupInput) lookupInput.placeholder = ctx.placeholders.lookup || '输入动词原形或变位形式';
+    // 换了语言就清掉上一门语言的查词输入和结果
+    if (lookupCode !== code) {
+      if (lookupCode) clearLookupSearch();
+      lookupCode = code;
     }
-    // #conjInput 的 placeholder 在 index.html 里写死成意大利语示例（例如：parlo），
-    // 切到德/英/法时会误导用户；跟着当前语言一起换。
     const typingInput = document.getElementById('conjInput');
-    if (typingInput) typingInput.placeholder = config.typingPlaceholder || '请输入正确变位';
+    if (typingInput) typingInput.placeholder = ctx.placeholders.typing || '请输入正确变位';
+    // 动词、人称、变位和输入框是目标语言：给读屏/输入法/断字正确的 lang。
+    // 只标这些目标语言区块——屏幕外壳是中文界面，整屏标 lang 会让读屏用错发音。
+    ['conjInfinitive', 'conjPronoun', 'conjInput', 'conjFullGrid', 'conjOptions', 'conjLookupInput'].forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (code) el.setAttribute('lang', code);
+      else el.removeAttribute('lang');
+    });
+    mountConjKeys();
     renderTenseButtons();
     updateLessonUI();
   }
 
+  // 特殊字母键盘（profile.accents）：插到最近一次获得焦点的作答框里
+  let lastConjInput = null;
+  function currentConjInput() {
+    if (state.mode === 'full' && isGroupedFullQuestion(state.current)) {
+      if (lastConjInput && lastConjInput.classList && lastConjInput.classList.contains('conj-full-input')
+        && lastConjInput.isConnected !== false && !lastConjInput.disabled) return lastConjInput;
+      return document.querySelector('#conjFullGrid .conj-full-input:not([disabled])');
+    }
+    return document.getElementById('conjInput');
+  }
+  function mountConjKeys() {
+    const host = document.getElementById('conjKeys');
+    if (!host || !window.Languages || typeof window.Languages.mountAccentKeys !== 'function') return;
+    window.Languages.mountAccentKeys(host, currentConjInput, ctx.code);
+  }
+
   function init() {
-    reloadForActiveConfig();
+    // 首屏不预选语言：数据按模块懒加载，进入模块时由 openFor(code) 装载
+    const initial = window.Languages && window.Languages.DEFAULT;
+    reloadFor(dataFor(initial) ? initial : null);
     bindEvents();
   }
 
-  // Open the (SHARED) conjugation setup screen for a given language. The App's
-  // grammar-hub 动词变位 card calls this for every language. Swaps `config`, reloads data with
-  // a per-language storageKey (so lesson progress never collides across
-  // languages), then shows the shared setup screen. The screen is pushed onto
-  // the global history stack via showScreen(), so goBack() pops back to the
-  // right grammar hub. config.backTarget is the no-history fallback target.
-  function openFor(lang) {
-    const next = LANG_CONFIGS[lang];
-    if (!next) return;
+  // 打开（四语共用的）变位设置页。lang 可以是 code（'de'）或旧 key（'german'）。
+  // 进度按语言分开存（storageKeyFor），返回由 showScreen 的历史栈处理。
+  function openFor(lang, retried) {
+    const code = window.Languages && window.Languages.code(lang);
+    if (!code) return;
 
-    // 变位数据按模块懒加载（意 8.9MB / 德 10.4MB / 法 9.3MB，只有进本模块
-    // 才用得上）。缺席时补拉后重试；拉不到再走 prepareData 里的「数据未加载」。
-    const dataNow = (typeof next.getData === 'function') ? next.getData() : null;
-    if ((!dataNow || !dataNow.length) && window.LangLoader
+    // 变位数据按模块懒加载（每门语言几 MB，只有进本模块才用得上）。
+    // 缺席时补拉后重试一次；拉不到再走「数据未加载」提示。
+    // LangLoader 的 ensureModule / isModuleLoaded 接受 code 或 key（内部 keyOf 归一）。
+    if (!dataFor(code) && !retried && window.LangLoader
       && typeof window.LangLoader.ensureModule === 'function'
-      && !window.LangLoader.isModuleLoaded(lang, 'conjugations')) {
-      window.LangLoader.ensureModule(lang, 'conjugations').then(() => openFor(lang));
+      && !window.LangLoader.isModuleLoaded(code, 'conjugations')) {
+      window.LangLoader.ensureModule(code, 'conjugations').then(() => {
+        // 下载期间用户可能已经换了语言：别把旧语言的变位页弹出来
+        const active = typeof window.getActiveLanguage === 'function' ? window.getActiveLanguage() : null;
+        if (active && window.Languages.code(active) !== code) return;
+        openFor(code, true);
+      });
       return;
     }
 
-    config = next;
-    reloadForActiveConfig();
+    reloadFor(code);
 
     if (typeof window.setPracticeContext === 'function') {
       window.setPracticeContext('conjugation');
@@ -1463,7 +1196,8 @@ ${moodRows}
     init,
     start,
     searchVerbLookup,
-    openFor
+    openFor,
+    storageKeyFor
   };
 
   document.addEventListener('DOMContentLoaded', init);

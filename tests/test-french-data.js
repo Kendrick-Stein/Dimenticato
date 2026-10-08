@@ -9,8 +9,9 @@ require('../lib/utils.js');
 const { headwordKey, foldAccents } = global.DimText;
 
 const { loadVocab, sourceOf } = require('../scripts/vocab_node.js');
-const grammar = require('../data/french-grammar-data.js');
-const conjugations = require('../data/french-conjugations.js');
+const grammar = require('../data/fr-grammar.js');
+const conjugationData = require('../data/fr-conjugations.js');
+const conjugations = conjugationData.verbs;
 
 // data/vocab/fr.js 合并了三层：课程整理词表、教材总词汇表、Lexique 词频核心。
 // 前两层的原始输入在 data/vocab/src/（build_french_vocabulary.py assemble 的输入），
@@ -30,7 +31,7 @@ const layerOf = entry => {
 const normalizeHeadword = value => headwordKey(value);
 const accentBlindKey = value => foldAccents(value).toLowerCase().replace(/['’]/g, "'").trim();
 
-// 教材两层（课程 + 总词汇表）在 fr.js 里的样子，即原来 french-app.js 合并出来的词表。
+// 教材两层（课程 + 总词汇表）在 fr.js 里的样子，即统一词库 Vocab 为法语合并出来的词表。
 // Array.from：fr.js 在 vm 里加载，数组来自另一个 realm，deepEqual 会因原型不同而失败。
 const vocabulary = Array.from(fr.entries.filter(entry => layerOf(entry) !== 'core'));
 const mergeBy = keyFn => {
@@ -135,16 +136,21 @@ assert.ok(
 // 35 -> 1888 -> 1934：变位表最初按语料词频重建（1888 个动词），
 // 之后换掉 GPL 的 Verbiste 数据源、改从 Wiktionary/kaikki + Lexique 生成，
 // 词形一个没少，还多出 46 个新动词（词频前 1800 名 + 每个变位型补一个代表）。
+assert.equal(conjugationData.meta.schema, 'conjugations/1');
+assert.equal(conjugationData.meta.count, conjugations.length);
 assert.equal(conjugations.length, 1934, 'French verb count changed unexpectedly');
-assert.equal(new Set(conjugations.map(verb => verb.infinitive)).size, conjugations.length, 'French conjugation list contains duplicate verbs');
+assert.equal(new Set(conjugations.map(verb => verb.word)).size, conjugations.length, 'French conjugation list contains duplicate verbs');
 
 // 原来 35 个动词都恰好 7 组时态；重建后主流动词是 20 组（1856/1934），
 // 缺陷动词（如 falloir）天然少几组，所以只断言下限和每组的完整性。
 for (const verb of conjugations) {
   const tenseEntries = Object.entries(verb.tenses);
-  assert.ok(tenseEntries.length >= 3, `${verb.infinitive} should expose at least three tense/mood groups`);
+  assert.ok(tenseEntries.length >= 3, `${verb.word} should expose at least three tense/mood groups`);
   for (const [tenseId, tense] of tenseEntries) {
-    assert.ok(tenseId && tense.tense_label && tense.forms, `${verb.infinitive} has an incomplete tense`);
+    const meta = conjugationData.tenses.find(t => t.key === tenseId);
+    assert.ok(meta && meta.label, `${verb.word}: unknown tense ${tenseId}`);
+    assert.ok(meta.type === 'single' ? typeof tense === 'string' && tense : Array.isArray(tense) && tense.length === 6,
+      `${verb.word} has an incomplete tense ${tenseId}`);
   }
 }
 assert.ok(
@@ -152,13 +158,13 @@ assert.ok(
   'The vast majority of French verbs should carry the full twenty tense/mood groups'
 );
 
-const etre = conjugations.find(verb => verb.infinitive === 'être');
-const etrePresent = etre.tenses.indicatif_present.forms;
-assert.equal(etrePresent.je, 'suis');
-assert.equal(etrePresent.nous, 'sommes');
+const etre = conjugations.find(verb => verb.word === 'être');
+const etrePresent = etre.tenses.indicatif_present; // [p1..p6]
+assert.equal(etrePresent[0], 'suis');
+assert.equal(etrePresent[3], 'sommes');
 
-const aller = conjugations.find(verb => verb.infinitive === 'aller');
-const allerPasseCompose = aller.tenses.indicatif_passe_compose.forms;
-assert.match(allerPasseCompose.je, /^suis allé/);
+const aller = conjugations.find(verb => verb.word === 'aller');
+const allerPasseCompose = aller.tenses.indicatif_passe_compose;
+assert.match(allerPasseCompose[0], /^suis allé/);
 
 console.log(`French data OK: ${fr.entries.length} fr.js words (${vocabulary.length} textbook, ${glossarySource.length} glossary source rows), ${topics.length} grammar topics, ${conjugations.length} verbs.`);

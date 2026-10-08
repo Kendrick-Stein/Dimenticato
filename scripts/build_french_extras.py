@@ -3,16 +3,17 @@
 """
 Build the two French "extras" datasets that Italian already has:
 
-  data/french-collocations-data.js   ->  window.FRENCH_COLLOCATIONS_DATA
-  data/french-cognates.js            ->  window.FRENCH_COGNATE_DATA
+  data/fr-collocations.js            ->  DIM_DATA.collocations.fr  (collocations/1,
+                                         written via scripts/canonical_collocations.py)
+  data/fr-cognates.js            ->  window.FRENCH_COGNATE_DATA
 
 Both mirror the Italian reference shapes exactly:
 
-  VERB_COLLOCATIONS_DATA = {
-    meta:         { totalVerbs, totalExamples, prepositionOrder: [...] },
-    verbs:        { <slug>: { display, prepositions: { <prep>: [str, ...] }, prepositionOrder: [...] } },
-    prepositions: { <prep>: [<slug>, ...] }
-  }
+  collocations: built in the legacy shape below, then converted to collocations/1
+  (docs/data-schema.md) by canonical_collocations.write_collocations():
+    { meta: { totalVerbs, totalExamples, prepositionOrder: [...] },
+      verbs: { <slug>: { display, prepositions: { <prep>: [str, ...] }, prepositionOrder: [...] } },
+      prepositions: { <prep>: [<slug>, ...] } }
   COGNATE_DATA = [{ italian, english, chinese, patternType, similarityScore, difficulty, rank }]
 
 ...with `french` replacing `italian`.  Extra (purely additive) fields are documented
@@ -65,6 +66,7 @@ from collections import Counter, defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import vocab_schema  # noqa: E402  (data/vocab/*.js reader)
+from data_module import register_footer
 DEFAULT_CACHE = "/tmp/dimenticato-fr-extras"
 
 TATOEBA_LICENSE = "Tatoeba CC BY 2.0 FR"
@@ -700,6 +702,11 @@ AUTHORED_GLOSSES = {
     "gin": "杜松子酒", "omission": "遗漏；疏忽", "clonage": "克隆",
     "auditionner": "试镜；面试（演员）", "relativement": "相对地；比较而言",
     "tendresse": "温柔；柔情",
+    # 2026-10 复查：语义闸门放行了英语同形词的错义（cape=海角、jarre=震动、bluff=断崖 …）
+    "cool": "酷；冷静的；随和的", "major": "（毕业班）第一名；军医长", "cape": "斗篷；披风",
+    "bluff": "虚张声势；吹牛", "traîne": "拖裙；裙裾", "jarre": "大缸；坛子",
+    "tanner": "鞣（皮）；（俗）纠缠", "apparemment": "看来；似乎", "distraire": "使分心；消遣",
+    "set": "（网球）盘；一套", "adjudant": "军士长；准尉",
     # 语义闸门查出来、但英法配对成立的
     "passer": "经过；通过；度过", "forme": "形状；形式", "entier": "整个的；全部的",
     "société": "社会；公司", "cour": "庭院；宫廷；法院", "déposer": "放下；存放",
@@ -861,6 +868,7 @@ DROP_COGNATES = {
     "colon": "配 en colonel（上校）错位，colon 是「殖民者／结肠」",
     "raie": "配 en ray（光线）错位，raie 是「条纹／鳐鱼」",
     "rider": "法语 rider 是「使起皱」，配 en ride（骑）纯属同形",
+    "plain": "法语 plain（平坦的）已属古旧用法，配 en plane 语义错位；学习者用不上",
     "volée": "ECDICT 释义是残句「(箭」；第二轮的括号配对修复能还原成「齐射」，但整行上一轮已删，两条重建路径要一致，保持删除",
 }
 
@@ -1206,6 +1214,16 @@ MIN_SHARE = 0.08         # p(prep|verb)
 MAX_EXAMPLES = 6         # corpus examples kept per (verb, preposition)
 
 
+COLLOC_HEADER = (
+    "// French verb collocations (verb + governed preposition + complement).\n"
+    "// examples[].src indexes meta.sources (curated / authored / Tatoeba direct /\n"
+    "// Tatoeba via English / Lexique); verbs[w].x.tatoeba keeps the Tatoeba pair per\n"
+    "// example, x.notes the à/de contrast notes, x.nounCollocations verb + noun pairs.\n"
+    "// Sources: hand-authored government table + Tatoeba (CC BY 2.0 FR) + Lexique 3.83 (CC BY-SA 4.0).\n"
+    "// Rebuild: python3 scripts/build_french_extras.py --only collocations\n"
+)
+
+
 def build_collocations(cache, lex, out_path):
     log("loading Tatoeba ...")
     fra, pairs = load_tatoeba(cache)
@@ -1427,26 +1445,15 @@ def build_collocations(cache, lex, out_path):
         "verbs": {k: verbs[k] for k in sorted(verbs)},
         "prepositions": {p: prep_index[p] for p in PREPOSITION_ORDER if prep_index.get(p)},
     }
-    header = (
-        "// French verb collocations (verb + governed preposition + complement).\n"
-        "// Mirrors the Italian data/verb-collocations-data.js shape exactly:\n"
-        "//   { meta: { totalVerbs, totalExamples, prepositionOrder },\n"
-        "//     verbs: { <slug>: { display, prepositions: { <prep>: [\"<fr> <zh>\"] }, prepositionOrder } },\n"
-        "//     prepositions: { <prep>: [<slug>] } }\n"
-        "// Additive fields (ignored by the current renderer): meta.language, meta.sources,\n"
-        "//   verbs[x].sources (per-example provenance), verbs[x].notes (à/de contrast notes),\n"
-        "//   verbs[x].nounCollocations (verb + noun collocations).\n"
-        "// Sources: hand-authored government table + Tatoeba (CC BY 2.0 FR) + Lexique 3.83 (CC BY-SA 4.0).\n"
-        "// Rebuild: python3 scripts/build_french_extras.py\n"
-        "// Total verbs: %d / Total examples: %d\n" % (data["meta"]["totalVerbs"], data["meta"]["totalExamples"])
-    )
-    body = "const FRENCH_COLLOCATIONS_DATA = %s;\n\n" % json.dumps(data, ensure_ascii=False, indent=2)
-    tail = ("if (typeof window !== 'undefined') { window.FRENCH_COLLOCATIONS_DATA = FRENCH_COLLOCATIONS_DATA; }\n"
-            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COLLOCATIONS_DATA; }\n")
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write(header + "\n" + body + tail)
+    from canonical_collocations import write_collocations
+    _, _, canon = write_collocations("fr", data, COLLOC_HEADER, out_path)
+    # hand-checked corrections (scripts/collocation_fixes/fr.json): drops corpus
+    # hits that are not verb government (« trop fatigué pour », gérondif …)
+    import fr_collocation_fixes
+    fr_collocation_fixes.apply_file(fr_collocation_fixes.Path(out_path))
+    canon = fr_collocation_fixes.canonical_collocations.read_collocations("fr", fr_collocation_fixes.Path(out_path))
     log("collocations: %d verbs, %d examples (curated pairs %d, corpus pairs %d, rejected pairs %d, noun collocations %d)"
-        % (data["meta"]["totalVerbs"], data["meta"]["totalExamples"], kept_curated, kept_corpus,
+        % (canon["meta"]["count"], canon["meta"]["examples"], kept_curated, kept_corpus,
            rejected_pairs, noun_hits))
     log("  example filter: fr_rejected=%(fr_rejected)d zh_rejected=%(zh_rejected)d "
         "roundtrip_rejected=%(roundtrip_rejected)d dup=%(dup)d" % stats)
@@ -2240,17 +2247,17 @@ def write_cognates(rows, out_path, stats):
     faux = sum(1 for r in data if r.get("falseFriend"))
     header = (
         "// French cognate data — French <-> English (with an Italian bridge) look-alikes.\n"
-        "// Mirrors data/cognates.js exactly, with `french` replacing `italian`:\n"
-        "//   {french, english, chinese, patternType, similarityScore, difficulty, rank}\n"
-        "// Additive fields: partOfSpeech, gender, falseFriend, lookalike, warning,\n"
-        "//   italian / italianSimilarity / italianPatternType, similarityBasis,\n"
-        "//   patternNote (reason when patternType is null), source, chineseSource,\n"
-        "//   semanticGate (pass|fail|unknown — 见下).\n"
-        "// similarityBasis='english' -> similarityScore compares french vs english;\n"
-        "// similarityBasis='lookalike' (faux amis) -> it compares french vs the trap word.\n"
+        "// Schema cognates/1 (docs/data-schema.md), written through scripts/canonical_cognates.py.\n"
+        "// Entry: {word, pos, gender, rank, en, zh, pattern, similarity (0…1),\n"
+        "//   difficulty (1/2/3), falseFriend {lookalike, note}, src (index into meta.sources),\n"
+        "//   x: {italian, italianSimilarity, italianPatternType, semanticGate (pass|fail|unknown\n"
+        "//   — 见下), patternNote (reason when there is no pattern), zhSrc (index into\n"
+        "//   meta.x.zhSources)}}.\n"
+        "// similarity compares french vs en; for faux amis (falseFriend set) it compares\n"
+        "// french vs the trap word falseFriend.lookalike.\n"
         "//\n"
         "// 中文释义的优先级链（2026 修：不再无条件走英语跳板）：\n"
-        "//   1. 手写 faux-amis 表 / 手写覆盖表 ....... chineseSource 以 authored 开头\n"
+        "//   1. 手写 faux-amis 表 / 手写覆盖表 ....... zhSources 里以 authored 开头\n"
         "//   2. data/french-vocabulary.js（课程整理词表）\n"
         "//   3. data/french-vocabulary-glossary.js（教材总词汇表）\n"
         "//   4. ECDICT 英语跳板，且必须通过语义闸门（法语词的真实义与英语 look-alike\n"
@@ -2263,12 +2270,10 @@ def write_cognates(rows, out_path, stats):
         "//          python3 scripts/build_french_extras.py --only cognate-glosses  (只重跑释义层)\n"
         "// Total entries: %d (faux amis: %d)\n" % (len(data), faux)
     )
-    body = "const FRENCH_COGNATE_DATA = %s;\n\n" % json.dumps(data, ensure_ascii=False, indent=2)
-    tail = ("if (typeof window !== 'undefined') { window.FRENCH_COGNATE_DATA = FRENCH_COGNATE_DATA; }\n"
-            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COGNATE_DATA; }\n")
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write(header + "\n" + body + tail)
-    log("cognates: %d entries (%d faux amis)" % (len(data), faux))
+    import canonical_cognates
+    _, size = canonical_cognates.emit(
+        "fr", data, builder="scripts/build_french_extras.py", header=header, path=out_path)
+    log("cognates: %d entries (%d faux amis), %d bytes" % (len(data), faux, size))
     log("  gloss layer: %s" % dict(sorted(stats.items())))
     npat = sum(1 for r in data if r["patternType"])
     log("  classified patternType: %d / %d  (italian bridge: %d)"
@@ -2293,7 +2298,7 @@ class _RowLexique(object):
 
 
 def refresh_cognate_glosses(out_path):
-    """只重跑释义层：读现成的 data/french-cognates.js，重算中文/来源/后缀组。
+    """只重跑释义层：读现成的 data/fr-cognates.js，重算中文/来源/后缀组。
 
     不需要 620MB 的下载缓存。释义层只依赖 (french, english, partOfSpeech) 和
     仓库内词典，所以重复跑字节一致，跟整表重建走的也是同一段代码。
@@ -2303,7 +2308,8 @@ def refresh_cognate_glosses(out_path):
     （那一步在 build_cognates 里）。所以发布前的最后一次落盘要走整表重建，
     --only cognate-glosses 只用来快速迭代释义层。
     """
-    existing = load_js_array(out_path, "FRENCH_COGNATE_DATA")
+    import canonical_cognates
+    existing = canonical_cognates.to_legacy("fr", canonical_cognates.read("fr", out_path))
     rows = {}
     for r in existing:
         rows[r["french"]] = dict(r)
@@ -2460,7 +2466,7 @@ def main():
 
     # 只重跑释义层：不碰 Lexique / kaikki 缓存，材料全在仓库里。
     if args.only == "cognate-glosses":
-        refresh_cognate_glosses(os.path.join(ROOT, "data", "french-cognates.js"))
+        refresh_cognate_glosses(os.path.join(ROOT, "data", "fr-cognates.js"))
         return
 
     cache = ensure_sources(args.cache, args.offline,
@@ -2472,9 +2478,9 @@ def main():
     log("  %d verb forms, %d ranked lemmas" % (len(lex.verb_form), len(lex.rank)))
 
     if args.only in (None, "collocations"):
-        build_collocations(cache, lex, os.path.join(ROOT, "data", "french-collocations-data.js"))
+        build_collocations(cache, lex, os.path.join(ROOT, "data", "fr-collocations.js"))
     if args.only in (None, "cognates"):
-        build_cognates(cache, lex, os.path.join(ROOT, "data", "french-cognates.js"))
+        build_cognates(cache, lex, os.path.join(ROOT, "data", "fr-cognates.js"))
 
 
 if __name__ == "__main__":

@@ -32,14 +32,6 @@ yarn-error.log*
 translation_log.txt
 translation_parallel_log.txt
 
-# Development files (不需要部署)
-enhance_translations_parallel.py
-enhance_translations.py
-test_translate.py
-process_data.js
-update_vocabulary_js.py
-TRANSLATION_STATUS.md
-
 # Backup files
 *.backup
 data/vocabulary.json.backup
@@ -64,17 +56,6 @@ dimenticato/
 # Git worktrees (isolated workspaces)
 .worktrees/
 worktrees/
-
-# Keep only necessary files for deployment:
-# - index.html
-# - styles.css
-# - app.js
-# - data/vocab/*.js
-# - README.md
-# - TXT_FORMAT_GUIDE.md
-# - custom_wordbook_template.json
-# - custom_wordbook_template.txt
-# - goal.txt
 
 # 版权词典原件（保留在本地，不进公开仓库）
 deutsch-data/grammar/docs/学习资源/assets/*.zip

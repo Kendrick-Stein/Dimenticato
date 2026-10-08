@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Build data/french-conjugations.js — a full French conjugation dataset.
+"""Build data/fr-conjugations.js — a full French conjugation dataset.
 
 Every inflected form in the output is either copied from an openly licensed
 corpus or computed by the rule engine in this file.  No paradigm table is
@@ -58,6 +58,7 @@ import sqlite3
 import sys
 import unicodedata
 from collections import Counter, OrderedDict
+from data_module import register_footer
 
 DOWNLOADS = """
   https://kaikki.org/dictionary/French/pos-verb/kaikki.org-dictionary-French-by-pos-verb.jsonl
@@ -66,7 +67,7 @@ DOWNLOADS = """
 """
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_PATH = os.path.join(REPO, 'data', 'french-conjugations.js')
+OUT_PATH = os.path.join(REPO, 'data', 'fr-conjugations.js')
 
 PERSONS = ['je', 'tu', 'il_elle_on', 'nous', 'vous', 'ils_elles']
 
@@ -777,15 +778,14 @@ def load_previous_chinese(path):
     """
     if not os.path.exists(path):
         return {}
-    with open(path, encoding='utf-8') as f:
-        src = f.read()
-    marker = 'const FRENCH_CONJUGATION_DATA = '
-    idx = src.find(marker)
-    if idx < 0:
-        return {}
-    data, _end = json.JSONDecoder().raw_decode(src, idx + len(marker))
-    return OrderedDict((e['infinitive'], e['chinese']) for e in data
-                       if e.get('infinitive') and e.get('chinese'))
+    import canonical_conjugations
+    out = OrderedDict()
+    for e in canonical_conjugations.verbs_of(path):
+        # conjugations/1 (word / zh) or the legacy shape (infinitive / chinese)
+        word, zh = e.get('word') or e.get('infinitive'), e.get('zh') or e.get('chinese')
+        if word and zh:
+            out[word] = zh
+    return out
 
 
 # --------------------------------------------------------------------------
@@ -1537,7 +1537,10 @@ def main():
           '  if (typeof window !== \'undefined\') {\n'
           '    window.FRENCH_CONJUGATION_DATA = FRENCH_CONJUGATION_DATA;\n  }\n\n'
           '  if (typeof module !== \'undefined\' && module.exports) {\n'
-          '    module.exports = FRENCH_CONJUGATION_DATA;\n  }\n})();\n')
+          '    module.exports = FRENCH_CONJUGATION_DATA;\n  }\n' +
+          ''.join('  ' + l if l.strip() else l
+                  for l in register_footer('conjugations', 'fr', 'FRENCH_CONJUGATION_DATA').splitlines(True)) +
+          '})();\n')
     with open(args.out, 'w', encoding='utf-8') as f:
         f.write(js)
 
@@ -1551,6 +1554,10 @@ def main():
           % (len(set(e['model'] for e in picked)), len(classes)))
     print('aspirate-h verbs: %s' % sorted(e['infinitive'] for e in picked if e.get('aspirateH')))
     print('rejected candidates: %d -> %s' % (len(rejects), rejects[:40]))
+    # 落盘的是旧（逐动词 forms 对象）形状；统一转成 conjugations/1（docs/data-schema.md）
+    if os.path.abspath(args.out) == os.path.abspath(OUT_PATH):
+        import canonical_conjugations
+        canonical_conjugations.canonicalize('fr')
 
     # side-car report used by the validator for cross-checking
     with open(os.path.join(work, 'build-report.json'), 'w', encoding='utf-8') as f:

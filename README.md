@@ -2,7 +2,7 @@
 
 一个纯静态的多语言词汇学习网页应用（GitHub Pages，无构建步骤），学习记录只保存在本地浏览器。
 
-意大利语 🇮🇹 · 德语 🇩🇪 · 英语 🇬🇧 · 法语 🇫🇷 —— **四门语言共用同一个入口、同一套页面和练习方式**，词库也是同一种格式（schema v1，见 [docs/vocab-schema.md](docs/vocab-schema.md)）。新增一门语言只需要一份 `data/vocab/<code>.js` 加一条语言档案（`lib/languages.js`）。
+意大利语 🇮🇹 · 德语 🇩🇪 · 英语 🇬🇧 · 法语 🇫🇷 —— **四门语言共用同一个入口、同一套页面和练习方式**，词库和模块数据也各是同一种格式（schema v1，见 [docs/vocab-schema.md](docs/vocab-schema.md) 与 [docs/data-schema.md](docs/data-schema.md)）。新增一门语言只需要一份 `data/vocab/<code>.js` 加一条语言档案（`lib/languages.js`）；要带哪个模块，就再按 schema 提供对应的 `data/<code>-<module>.js`。
 
 | 语言 | 系统词库 | 分级 |
 |---|---|---|
@@ -18,7 +18,7 @@
 顶栏五个入口：**首页 / 词汇 / 语法 / 进度 / 设置**，右侧切换语言（IT / DE / EN / FR）和深浅色。每个页面都有可分享的地址，例如 `#/de/vocab/browse`。
 
 ### 首页
-今日一词、词汇量 / 已掌握 / 待复习 / 连续学习天数，按 CEFR 等级进入练习，以及当前语言可用的模块入口。
+今日一词（单词卡）、词汇量 / 已掌握 / 待复习 / 连续学习天数，按 CEFR 等级进入练习，当前语言可用的模块入口，以及三步使用说明。
 
 ### 词汇
 - **练习范围**：系统词库的某个等级、或自己的单词本；可筛选「未掌握 / 到期复习」，每组 20 / 50 / 100 / 全部
@@ -27,10 +27,10 @@
 - **单词本**：新建、导入 TXT / JSON、编辑、导出；社区词书可浏览、预览、下载和上传
 
 ### 语法
-语法书（按章节查阅）、动词变位（查询 + 按课练习）、动词搭配（浏览 + 练习）；德语另有 A1–C1 课程路线。模块数据在打开时才下载。
+语法书（按章节查阅，每个专题都有可分享地址，如 `#/de/grammar/book/p1/ch01/t01`）、动词变位（查询 + 按课练习）、动词搭配（浏览 + 练习）、课程路线（目前只有德语：A1–C1 共 54 单元）。模块数据在打开时才下载。
 
 ### 进度 / 设置
-按语言统计的近 7 天走势、各等级掌握度、练习方式正确率和详细图表；设置页有练习偏好、外观、全部数据的导出 / 导入（合并或覆盖）/ 按语言重置。
+按语言统计的概览、各等级掌握度、到期复习入口，以及直接嵌在页面里的趋势图表与最近 7 天学习记录；设置页有练习偏好、外观、全部数据的导出 / 导入（合并或覆盖）/ 按语言重置。
 
 ---
 
@@ -61,7 +61,7 @@ thank you
 grazie mille = 非常感谢
 ```
 
-详细说明请查看 [TXT_FORMAT_GUIDE.md](TXT_FORMAT_GUIDE.md)
+详细说明请查看 [docs/TXT_FORMAT_GUIDE.md](docs/TXT_FORMAT_GUIDE.md)
 
 ---
 
@@ -104,13 +104,15 @@ Dimenticato/
 │   ├── storage.js · srs.js        ← 本地存储 / 导入导出 / SM-2
 │   ├── wordbooks.js               ← 单词本（TXT / JSON 解析与进度）
 │   ├── quiz-engine.js · practice-flow.js · word-similarity.js
-│   └── typing-game.js · utils.js
+│   ├── typing-game.js · utils.js
+│   └── editorial.js               ← 滚动显现、数字递增等页面动效
 ├── conjugation-app.js · grammar-book.js · verb-collocations*.js
-├── cognate-app.js · typing-game-app.js · german-course.js
+├── cognate-app.js · typing-game-app.js · course.js
 ├── community-wordbooks.js · stats-charts.js
 ├── data/
 │   ├── vocab/<it|de|en|fr>.js  ← 四语言统一词表 schema v1
-│   └── …                       ← 语法、变位、搭配、同源词、课程数据
+│   └── <code>-<module>.js      ← 变位 / 语法 / 搭配 / 同源词 / 课程（模块 schema v1）
+├── docs/                       ← vocab-schema.md · data-schema.md
 ├── scripts/                    ← 数据构建与校验
 ├── tests/                      ← node tests/run-headless.js
 ├── CODE_SPACE.md               ← 开发者代码地图
@@ -123,27 +125,30 @@ Dimenticato/
 
 - HTML5 + CSS3 + 原生 JavaScript
 - LocalStorage
-- Chart.js
-- marked.js
-- Supabase（仅社区词本功能需要）
+- Chart.js（进度页图表）、marked.js（语法书）、Supabase（仅社区词本功能需要）：都在用到时才从 CDN 加载（带 SRI 校验）
 
 ---
 
 ## 🔧 数据与脚本
 
-### Italian 动词变位数据
+所有 `data/**/*.js` 都是构建产物，改完跑对应校验器，再跑 `npm test`。完整的脚本与数据对照见 [CODE_SPACE.md](CODE_SPACE.md) §7–§8。
+
+### 意大利语 / 德语语法、意大利语变位与搭配
+
+这几份数据已没有上游源文件，是就地维护的冻结产物，改完用规范化脚本整理：
 
 ```bash
-python3 scripts/reverso_presente_pipeline.py
+python3 scripts/canonicalize_grammar.py it de      # 语法书 → grammar/1
+python3 scripts/canonical_conjugations.py it       # 变位 → conjugations/1
+python3 scripts/canonical_collocations.py it       # 搭配 → collocations/1
 ```
 
-### German 语法数据构建
+### German 变位 / 搭配 / 同源词 / 课程数据构建
 
 ```bash
-python3 scripts/build_german_grammar.py
+python3 scripts/build_german_conjugations.py
+python3 scripts/build_german_extras.py    # data/de-collocations.js · de-cognates.js · de-course.js
 ```
-
-需要本地放一份旧 Docusaurus 语料 `deutsch-data/grammar/docs/`（无许可证，已从仓库删除）；没有它就只能沿用已提交的 `data/german-grammar-data.js`。
 
 ### English 词汇数据构建
 
@@ -164,18 +169,23 @@ python3 scripts/build_french_vocabulary_glossary.py REVIEWED_OCR.json data/vocab
 python3 scripts/build_french_vocabulary.py assemble   # 合并三层 -> data/vocab/fr.js
 ```
 
-### 词表校验
+### 校验与测试
 
 ```bash
-node scripts/validate_vocab.js   # 四语言 schema v1 + 各语言专属规则
+node scripts/validate_vocab.js     # 四语言词表 schema v1 + 各语言专属规则
+node scripts/validate_modules.js   # 全部模块数据对照 docs/data-schema.md
+node scripts/validate_it_quality.js # 内容质量回归（另有 validate_fr_quality / validate_de_en_quality）
+npm test                           # 无头测试 + 全部校验器（CI 同此）
 ```
+
+审校过的修正不直接改产物，而是记在 `scripts/conjugation_fixes/`、`scripts/it_fixes/`、`scripts/vocab_fixes/` 等清单里，由各构建器最后一步重放，重建不会丢（详见 CODE_SPACE.md §8.1a）。
 
 ---
 
 ## 📝 说明
 
 - 社区词书按语言标注，四门语言共用同一个 Supabase 词库池
-- French 词汇覆盖用户本地《你好！法语》1-4 书末三语总词汇表（A1-B2）；语法讲解和变位按 A1-B1 课程独立整理；项目不包含或分发教材扫描页
+- French 词汇覆盖用户本地《你好！法语》1-4 书末三语总词汇表（A1-B2）；语法讲解按 A1-B1 课程原创整理，动词变位来自 Wiktionary 与 Lexique（见下表）；项目不包含或分发教材扫描页
 
 ---
 
@@ -189,9 +199,11 @@ node scripts/validate_vocab.js   # 四语言 schema v1 + 各语言专属规则
 | German 词汇中文释义（部分） | [HanDeDict](https://github.com/gugray/HanDeDict) | **CC BY-SA 3.0** |
 | German 变位交叉校验 | [german-pos-dict / Morphy](https://github.com/languagetool-org/german-pos-dict) | **CC BY-SA 4.0** |
 | English / German 词频排序 | [wordfreq](https://github.com/rspeer/wordfreq) | MIT（代码） |
+| English 动词变位词形 | 手写不规则表 + [lemminflect](https://github.com/bjascob/LemmInflect) | MIT |
 | 英→中中转释义 | [ECDICT](https://github.com/skywind3000/ECDICT) | 代码仓库标 MIT，数据分发包无 LICENSE，待核实 |
-| English 动词变位 | `scripts/build_english_conjugations.py` 规则生成 | 自建 |
-| French 语法讲解 / German 语法讲解 / 搭配表 | 为本项目原创撰写 | 自建 |
+| English / French 语法讲解，德 / 英 / 法搭配表 | 为本项目原创撰写 | 自建 |
+| German 语法讲解 | 原创专题 + 旧 Docusaurus 语料转换稿 | 旧语料未声明许可证 |
+| Italian 语法书、动词搭配、动词变位 | 早期项目数据（语法书为书稿转换稿、搭配为扫描 OCR 手册） | 出处 / 许可未核实 |
 | French 教材词表 | 《你好！法语》1-4 总词汇表（A1-B2） | 仅供学习，不分发教材原文 |
 | 图表 / Markdown | [Chart.js](https://www.chartjs.org/) · [marked.js](https://marked.js.org/) | MIT |
 

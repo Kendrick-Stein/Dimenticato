@@ -1,0 +1,757 @@
+#!/usr/bin/env node
+/**
+ * Validates the optional per-language module files (docs/data-schema.md) — one
+ * validator for every module and every language, driven by lib/languages.js:
+ * a language has a module iff its profile lists files for it, and every module
+ * file registers DIM_DATA.<module>.<code>.
+ *
+ *   node scripts/validate_modules.js                 # every module, every language
+ *   node scripts/validate_modules.js cognates        # one module
+ *   node scripts/validate_modules.js cognates de fr  # one module, some languages
+ *
+ * CHECKS maps a module name to check(lang, data, ctx):
+ *   lang   language code ('it' / 'de' / 'en' / 'fr')
+ *   data   the registered payload, DIM_DATA.<module>.<lang>
+ *   ctx    { check(cond, msg) -> bool, note(msg), root, profile, load(lang, module) }
+ * A check reports through ctx.check; it must not throw on bad data.
+ *
+ * The last stdout line is "<n> passed, <m> failed" (tests/run-headless.js reads it);
+ * the exit code is 1 when anything failed.
+ */
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+const vm = require('vm');
+const { loadVocab } = require('./vocab_node');
+
+const ROOT = path.resolve(__dirname, '..');
+
+// ---------------------------------------------------------------------------
+// loading — the data files are classic browser scripts
+// ---------------------------------------------------------------------------
+
+function sandbox() {
+  const ctx = { console };
+  ctx.window = ctx;
+  ctx.globalThis = ctx;
+  vm.createContext(ctx);
+  return ctx;
+}
+
+function run(ctx, rel) {
+  const file = path.join(ROOT, rel);
+  vm.runInContext(fs.readFileSync(file, 'utf8'), ctx, { filename: file, timeout: 120000 });
+}
+
+const LANGUAGES = (function () {
+  const ctx = sandbox();
+  run(ctx, 'lib/languages.js');
+  return ctx.Languages;
+})();
+
+const cache = new Map();
+/** DIM_DATA.<module>.<lang> as the page would see it (undefined when not shipped). */
+function load(lang, module) {
+  const key = lang + '/' + module;
+  if (!cache.has(key)) {
+    const profile = LANGUAGES.get(lang);
+    const files = profile && profile.files && profile.files[module];
+    let value;
+    if (files) {
+      const ctx = sandbox();
+      files.forEach((f) => run(ctx, f));
+      value = ctx.DIM_DATA && ctx.DIM_DATA[module] && ctx.DIM_DATA[module][profile.code];
+    }
+    cache.set(key, value);
+  }
+  return cache.get(key);
+}
+
+// ===========================================================================
+// cognates/1
+// ===========================================================================
+
+const COGNATE_FIELDS = new Set(['word', 'display', 'pos', 'gender', 'level', 'rank', 'en', 'zh',
+  'pattern', 'similarity', 'difficulty', 'falseFriend', 'src', 'x']);
+const FALSE_FRIEND_FIELDS = new Set(['lookalike', 'zh', 'word', 'note']);
+// docs/vocab-schema.md POS enum
+const POS = new Set(['noun', 'properNoun', 'verb', 'adjective', 'adverb', 'pronoun',
+  'determiner', 'article', 'preposition', 'conjunction', 'numeral', 'interjection',
+  'particle', 'prefix', 'suffix', 'phrase', 'abbreviation']);
+const GENDER_RE = /^[mfn](\/[mfn]){0,2}$/;
+const LEVELS = new Set(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
+const CJK = /[一-鿿㐀-䶿]/;
+const PLACEHOLDER = /^(\?+|-+|_+|n\/?a|todo|tbd|xxx+|null|none|undefined|\(n\))$/i;
+const MOJIBAKE = /�|Ã[\u0080-¿]|â€|Â[ -¿]/;
+const FALSE_FRIEND = 'false-friend';
+const IDENTICAL = 'identical';
+
+// The browse filter prints the difficulty bands; ordinary entries must sit in the
+// band of their own similarity or "Easy (≥80%)" lists a 66% word.
+const EASY_MIN = 0.8;
+const MEDIUM_MIN = 0.5;
+function curve(similarity) {
+  if (typeof similarity !== 'number') return 3;
+  if (similarity >= EASY_MIN) return 1;
+  if (similarity >= MEDIUM_MIN) return 2;
+  return 3;
+}
+
+function badText(value) {
+  if (typeof value !== 'string') return 'not a string';
+  const t = value.trim();
+  if (!t) return 'empty';
+  if (t !== value) return 'padded with whitespace';
+  if (PLACEHOLDER.test(t)) return 'placeholder';
+  if (MOJIBAKE.test(t)) return 'mojibake';
+  return null;
+}
+
+const COGNATE_HOOKS = require('./validate_cognates_hooks.js');
+
+/** Generic cognates/1 rules; language-specific ones live in validate_cognates_hooks.js. */
+function validateCognates(lang, data, ctx) {
+  const { check, note } = ctx;
+  const where0 = `cognates/${lang}`;
+  if (!check(data && typeof data === 'object' && !Array.isArray(data),
+    `${where0}: payload must be a {meta, entries} object`)) return;
+  const meta = data.meta || {};
+  const entries = data.entries;
+  if (!check(Array.isArray(entries) && entries.length > 0, `${where0}: entries must be a non-empty array`)) return;
+
+  // -- meta ------------------------------------------------------------------
+  check(meta.schema === 'cognates/1', `${where0}: meta.schema ${JSON.stringify(meta.schema)} !== "cognates/1"`);
+  check(meta.lang === lang, `${where0}: meta.lang ${JSON.stringify(meta.lang)} !== "${lang}"`);
+  check(meta.count === entries.length, `${where0}: meta.count ${meta.count} !== ${entries.length} entries`);
+  check(!badText(meta.name), `${where0}: meta.name is ${badText(meta.name)}`);
+  check(!badText(meta.builder), `${where0}: meta.builder is ${badText(meta.builder)}`);
+  check(Array.isArray(meta.sources), `${where0}: meta.sources must be an array`);
+  check(Array.isArray(meta.licences) && meta.licences.length > 0 && meta.licences.every((l) => !badText(l)),
+    `${where0}: meta.licences must list the licences`);
+  const patterns = meta.patterns || {};
+  check(meta.patterns && typeof meta.patterns === 'object', `${where0}: meta.patterns missing`);
+  for (const [key, p] of Object.entries(patterns)) {
+    check(p && !badText(p.label), `${where0}: pattern "${key}" has no label`);
+    check(p && !badText(p.zh) && CJK.test(p.zh), `${where0}: pattern "${key}" has no Chinese explanation`);
+  }
+  for (const [old, key] of Object.entries(meta.aliases || {})) {
+    check(key in patterns, `${where0}: alias "${old}" points at unknown pattern "${key}"`);
+  }
+  const sources = Array.isArray(meta.sources) ? meta.sources : [];
+
+  // -- entries ---------------------------------------------------------------
+  const seen = new Map();
+  const used = new Map();
+  let identityRank = 0;
+  let maxRank = 0;
+  let noSimilarity = 0;
+  let falseFriends = 0;
+  const bands = { 1: 0, 2: 0, 3: 0 };
+
+  entries.forEach((e, i) => {
+    const where = `${where0}#${i} "${e && e.word}"`;
+    if (!check(e && typeof e === 'object' && !Array.isArray(e), `${where}: not an object`)) return;
+    const extra = Object.keys(e).filter((k) => !COGNATE_FIELDS.has(k));
+    check(!extra.length, `${where}: unknown field(s) ${extra.join(', ')} (language-specific data goes under x)`);
+    for (const [k, v] of Object.entries(e)) {
+      check(v !== null && v !== '' && !(typeof v === 'object' && !Object.keys(v).length),
+        `${where}: "${k}" is empty — optional fields are omitted, not blank`);
+    }
+
+    // word / display
+    const bw = badText(e.word);
+    check(!bw, `${where}: word is ${bw}`);
+    check(!CJK.test(e.word || ''), `${where}: word contains Chinese`);
+    check(!seen.has(e.word), `${where}: duplicate word (also at #${seen.get(e.word)})`);
+    seen.set(e.word, i);
+    if ('display' in e) {
+      check(e.display !== e.word && String(e.display).endsWith(e.word),
+        `${where}: display ${JSON.stringify(e.display)} must be a prefixed form of word`);
+    }
+
+    // pos / gender / level
+    if ('pos' in e) check(POS.has(e.pos), `${where}: pos ${JSON.stringify(e.pos)} not in the vocab POS enum`);
+    if ('gender' in e) {
+      check(GENDER_RE.test(e.gender), `${where}: gender ${JSON.stringify(e.gender)}`);
+      check(e.pos === 'noun' || e.pos === 'properNoun', `${where}: gender on a ${e.pos || 'pos-less'} entry`);
+    }
+    if ('level' in e) check(LEVELS.has(e.level), `${where}: level ${JSON.stringify(e.level)}`);
+
+    // rank
+    check(Number.isInteger(e.rank) && e.rank > 0, `${where}: rank ${e.rank} is not a positive integer`);
+    if (e.rank === i + 1) identityRank += 1;
+    maxRank = Math.max(maxRank, e.rank || 0);
+
+    // glosses
+    const be = badText(e.en);
+    check(!be, `${where}: en is ${be}`);
+    check(!CJK.test(e.en || ''), `${where}: en contains Chinese`);
+    const bz = badText(e.zh);
+    check(!bz, `${where}: zh is ${bz}`);
+    check(CJK.test(e.zh || ''), `${where}: zh has no CJK`);
+    check((e.zh || '').trim() !== (e.word || '').trim(), `${where}: zh is the headword`);
+
+    // pattern
+    if ('pattern' in e) {
+      check(e.pattern in patterns, `${where}: pattern "${e.pattern}" missing from meta.patterns`);
+      used.set(e.pattern, (used.get(e.pattern) || 0) + 1);
+    }
+
+    // similarity / difficulty
+    if ('similarity' in e) {
+      check(typeof e.similarity === 'number' && e.similarity >= 0 && e.similarity <= 1 &&
+        Math.round(e.similarity * 100) / 100 === e.similarity,
+        `${where}: similarity ${JSON.stringify(e.similarity)} must be 0…1 with two decimals`);
+    } else {
+      noSimilarity += 1;
+    }
+    check([1, 2, 3].includes(e.difficulty), `${where}: difficulty ${JSON.stringify(e.difficulty)} must be 1/2/3`);
+    if (bands[e.difficulty] !== undefined) bands[e.difficulty] += 1;
+
+    // false friends
+    const ff = e.falseFriend;
+    if (ff !== undefined) {
+      falseFriends += 1;
+      if (check(ff && typeof ff === 'object' && !Array.isArray(ff), `${where}: falseFriend must be an object`)) {
+        const extraFf = Object.keys(ff).filter((k) => !FALSE_FRIEND_FIELDS.has(k));
+        check(!extraFf.length, `${where}: unknown falseFriend field(s) ${extraFf.join(', ')}`);
+        const bl = badText(ff.lookalike);
+        check(!bl, `${where}: falseFriend.lookalike is ${bl}`);
+        check(!CJK.test(ff.lookalike || ''), `${where}: falseFriend.lookalike must be the English word`);
+        // case-sensitive on purpose: mars = "March" vs the trap "march" (行军)
+        check((ff.lookalike || '') !== (e.en || ''),
+          `${where}: en equals the trap word — the entry would teach the error`);
+        if ('zh' in ff) check(!badText(ff.zh) && CJK.test(ff.zh), `${where}: falseFriend.zh has no CJK`);
+        if ('word' in ff) check(!badText(ff.word) && !CJK.test(ff.word), `${where}: falseFriend.word is not a word`);
+        if ('note' in ff) check(!badText(ff.note), `${where}: falseFriend.note is ${badText(ff.note)}`);
+      }
+      check(e.pattern === FALSE_FRIEND, `${where}: false friend without pattern "${FALSE_FRIEND}"`);
+    } else {
+      check(e.pattern !== FALSE_FRIEND, `${where}: pattern "${FALSE_FRIEND}" without a falseFriend object`);
+      check(e.difficulty === curve(e.similarity),
+        `${where}: difficulty ${e.difficulty} !== ${curve(e.similarity)} for similarity ${JSON.stringify(e.similarity)}`);
+    }
+
+    // provenance
+    if ('src' in e) {
+      check(Number.isInteger(e.src) && e.src >= 0 && e.src < sources.length,
+        `${where}: src ${e.src} is not an index into meta.sources`);
+    }
+    if ('x' in e) check(e.x && typeof e.x === 'object' && !Array.isArray(e.x), `${where}: x must be an object`);
+  });
+
+  for (const key of Object.keys(patterns)) {
+    check(used.has(key), `${where0}: meta.patterns lists "${key}" but no entry uses it`);
+  }
+  check(identityRank < entries.length * 0.05,
+    `${where0}: ${identityRank}/${entries.length} ranks equal their array index — ranks look synthesised`);
+  check(maxRank > entries.length,
+    `${where0}: max rank ${maxRank} <= entry count ${entries.length} — ranks are not corpus ranks`);
+  check(noSimilarity < entries.length * 0.05,
+    `${where0}: ${noSimilarity}/${entries.length} entries have no similarity`);
+
+  const hook = COGNATE_HOOKS[lang];
+  if (hook) hook(data, Object.assign({ badText, CJK, curve }, ctx));
+
+  note(`${where0}: ${entries.length} entries, ${used.size} patterns, ${falseFriends} false friends, ` +
+    `difficulty 1/2/3 = ${bands[1]}/${bands[2]}/${bands[3]}` + (hook ? '' : ' (no language hook)'));
+}
+
+/** Cross-cutting: the UI prints the bands curve() enforces. */
+function validateCognateApp(ctx) {
+  const src = fs.readFileSync(path.join(ROOT, 'cognate-app.js'), 'utf8');
+  const e = Math.round(EASY_MIN * 100);
+  const m = Math.round(MEDIUM_MIN * 100);
+  ctx.check(src.includes(`Easy（≥${e}%）`), `cognate-app.js: browse filter no longer says "Easy（≥${e}%）"`);
+  ctx.check(src.includes(`Medium（${m}-${e - 1}%）`), `cognate-app.js: browse filter no longer says "Medium（${m}-${e - 1}%）"`);
+  ctx.check(src.includes(`Hard（&lt;${m}%）`), `cognate-app.js: browse filter no longer says "Hard（<${m}%）"`);
+}
+
+// ===========================================================================
+// collocations/1
+// ===========================================================================
+
+const isStr = (v) => typeof v === 'string' && v.trim().length > 0;
+const isObj = (v) => !!v && typeof v === 'object' && !Array.isArray(v);
+
+/** Shared meta contract: schema, lang, name, count, builder, sources, licences. */
+function checkMeta(module, lang, meta, problems) {
+  if (!isObj(meta)) { problems.push('meta missing'); return false; }
+  if (meta.schema !== module + '/1') problems.push(`meta.schema ${JSON.stringify(meta.schema)} !== "${module}/1"`);
+  if (meta.lang !== lang) problems.push(`meta.lang ${JSON.stringify(meta.lang)} !== "${lang}"`);
+  if (!isStr(meta.name)) problems.push('meta.name missing');
+  if (!Number.isInteger(meta.count)) problems.push('meta.count must be an integer');
+  if (!isStr(meta.builder)) problems.push('meta.builder missing');
+  else if (!fs.existsSync(path.join(ROOT, meta.builder))) problems.push(`meta.builder ${meta.builder} does not exist`);
+  if (!Array.isArray(meta.sources) || !meta.sources.length || !meta.sources.every(isStr)) {
+    problems.push('meta.sources must be a non-empty list of strings');
+  }
+  if (!Array.isArray(meta.licences) || !meta.licences.length || !meta.licences.every(isStr)) {
+    problems.push('meta.licences must be a non-empty list of strings');
+  }
+  return true;
+}
+
+// ---------------------------------------------------------------------------
+// collocations/1
+// ---------------------------------------------------------------------------
+
+const KEY_KINDS = new Set(['preposition', 'particle', 'case', 'object']);
+
+/**
+ * The verbs/keys/index body of a collocations/1 block.  Also used for nested
+ * blocks with the same shape (German x.nounVerb), which inherit meta.sources.
+ */
+function checkCollocationBody(label, data, sourceCount, problems, needCase) {
+  const p = (msg) => problems.push(label + msg);
+  if (!Array.isArray(data.keys) || !data.keys.length) { p('keys[] must be a non-empty array'); return; }
+  if (!isObj(data.verbs)) { p('verbs must be an object'); return; }
+  if (!isObj(data.index)) { p('index must be an object'); return; }
+
+  const keyRec = new Map();
+  data.keys.forEach((rec, i) => {
+    if (!isObj(rec) || !isStr(rec.key)) { p(`keys[${i}] has no key`); return; }
+    if (keyRec.has(rec.key)) p(`keys[${i}] duplicate key "${rec.key}"`);
+    keyRec.set(rec.key, rec);
+    if (!isStr(rec.label)) p(`key "${rec.key}" has no label`);
+    if (!KEY_KINDS.has(rec.kind)) p(`key "${rec.key}" kind ${JSON.stringify(rec.kind)} not in ${[...KEY_KINDS].join('|')}`);
+    if (rec.zh !== undefined && !CJK.test(rec.zh)) p(`key "${rec.key}" zh has no Chinese`);
+    if (needCase && !isStr(rec.case)) p(`key "${rec.key}" has no case`);
+  });
+
+  const used = new Map();     // key -> [word …] in verb order
+  let examples = 0;
+  for (const [word, verb] of Object.entries(data.verbs)) {
+    const w = `verb "${word}"`;
+    if (!isObj(verb)) { p(`${w} is not an object`); continue; }
+    if (verb.word !== word) p(`${w}: word ${JSON.stringify(verb.word)} !== headword`);
+    if (verb.level !== undefined && !LEVELS.has(verb.level)) p(`${w}: bad level ${JSON.stringify(verb.level)}`);
+    if (verb.x !== undefined && !isObj(verb.x)) p(`${w}: x must be an object`);
+    const order = verb.order;
+    const keys = verb.keys;
+    if (!Array.isArray(order) || !order.length) { p(`${w}: order must be a non-empty array`); continue; }
+    if (!isObj(keys)) { p(`${w}: keys must be an object`); continue; }
+    if (new Set(order).size !== order.length) p(`${w}: order has duplicates`);
+    if (JSON.stringify([...order].sort()) !== JSON.stringify(Object.keys(keys).sort())) {
+      p(`${w}: order ${JSON.stringify(order)} !== keys of "keys"`);
+    }
+    for (const key of order) {
+      if (!keyRec.has(key)) p(`${w}: key "${key}" missing from keys[]`);
+      const list = keys[key];
+      if (!Array.isArray(list) || !list.length) { p(`${w}: keys["${key}"] must be a non-empty array`); continue; }
+      (used.get(key) || used.set(key, []).get(key)).push(word);
+      list.forEach((ex, i) => {
+        examples += 1;
+        const e = `${w} [${key}]#${i}`;
+        if (!isObj(ex)) { p(`${e}: example must be {text, zh}`); return; }
+        if (!isStr(ex.text)) p(`${e}: empty text`);
+        else if (CJK.test(ex.text)) p(`${e}: text contains Chinese ${JSON.stringify(ex.text)}`);
+        if (!isStr(ex.zh) || !CJK.test(ex.zh)) p(`${e}: zh has no Chinese ${JSON.stringify(ex.zh)}`);
+        if (ex.src !== undefined && !(Number.isInteger(ex.src) && ex.src >= 0 && ex.src < sourceCount)) {
+          p(`${e}: src ${JSON.stringify(ex.src)} does not index meta.sources`);
+        }
+        const extra = Object.keys(ex).filter((k) => !['text', 'zh', 'src'].includes(k));
+        if (extra.length) p(`${e}: unexpected fields ${extra.join(', ')} (put them under x)`);
+      });
+    }
+  }
+
+  // index is exactly the inverse of verbs[].order, in verb order
+  for (const [key, words] of used) {
+    if (JSON.stringify(data.index[key]) !== JSON.stringify(words)) p(`index["${key}"] is not the inverse of verbs`);
+  }
+  for (const key of Object.keys(data.index)) if (!used.has(key)) p(`index["${key}"] names a key no verb uses`);
+  for (const key of keyRec.keys()) if (!used.has(key)) p(`key "${key}" in keys[] is used by no verb`);
+
+  const count = Object.keys(data.verbs).length;
+  if (data.meta && data.meta.count !== count) p(`meta.count ${data.meta.count} !== ${count} verbs`);
+  if (data.meta && data.meta.examples !== undefined && data.meta.examples !== examples) {
+    p(`meta.examples ${data.meta.examples} !== ${examples}`);
+  }
+  return { count, examples };
+}
+
+function validateCollocations(lang, data) {
+  const problems = [];
+  if (!isObj(data)) return ['payload is not an object'];
+  checkMeta('collocations', lang, data.meta, problems);
+  const extra = Object.keys(data).filter((k) => !['meta', 'keys', 'verbs', 'index', 'x'].includes(k));
+  if (extra.length) problems.push(`unexpected top-level fields ${extra.join(', ')} (put them under x)`);
+  const sourceCount = Array.isArray(data.meta && data.meta.sources) ? data.meta.sources.length : 0;
+  // a key-level case field is how German marks Rektion; once one key has it, all must
+  const needCase = Array.isArray(data.keys) && data.keys.some((k) => k && k.case !== undefined);
+  checkCollocationBody('', data, sourceCount, problems, needCase);
+  // nested blocks of the same shape (e.g. German Funktionsverbgefüge)
+  if (isObj(data.x)) {
+    for (const [name, block] of Object.entries(data.x)) {
+      if (isObj(block) && block.verbs && block.keys) {
+        checkCollocationBody(`x.${name}: `, block, sourceCount, problems, false);
+      }
+    }
+  }
+  return problems;
+}
+
+
+/** Adapts a check(lang, data) -> [problem strings] validator to the ctx.check registry. */
+function fromProblems(module, fn) {
+  return function (lang, data, ctx) {
+    const problems = fn(lang, data, ctx) || [];
+    ctx.check(problems.length === 0, `${module}/${lang}: ${problems.length} problem(s)`);
+    problems.forEach((p) => ctx.check(false, `${module}/${lang}: ${p}`));
+    if (!problems.length) ctx.note(`${module}/${lang}: ok`);
+  };
+}
+
+// ===========================================================================
+// conjugations/1
+// ===========================================================================
+
+const PERSON_KEYS = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6'];
+const TIMES = new Set(['present', 'past', 'future']);
+
+function makeReport() {
+  const report = { assertions: 0, errors: [] };
+  report.check = (cond, msg) => {
+    report.assertions++;
+    if (!cond) report.errors.push(msg);
+    return !!cond;
+  };
+  return report;
+}
+
+const isText = (v) => typeof v === 'string' && v.trim().length > 0 && v === v.trim();
+
+// ------------------------------------------------------------ conjugations/1
+
+function validateConjugations(lang, data) {
+  const r = makeReport();
+  const { check } = r;
+  if (!check(data && typeof data === 'object' && !Array.isArray(data), `${lang}: conjugations is not an object`)) return r;
+
+  const meta = data.meta || {};
+  check(meta.schema === 'conjugations/1', `${lang}: meta.schema = ${JSON.stringify(meta.schema)}`);
+  check(meta.lang === lang, `${lang}: meta.lang = ${JSON.stringify(meta.lang)}`);
+  check(isText(meta.name), `${lang}: meta.name missing`);
+  check(isText(meta.builder), `${lang}: meta.builder missing`);
+  check(Array.isArray(meta.sources) && meta.sources.length > 0 && meta.sources.every(isText), `${lang}: meta.sources`);
+  check(Array.isArray(meta.licences) && meta.licences.length > 0 && meta.licences.every(isText), `${lang}: meta.licences`);
+
+  // persons
+  const persons = data.persons;
+  if (check(Array.isArray(persons) && persons.length === 6, `${lang}: persons must have 6 items`)) {
+    persons.forEach((p, i) => {
+      check(p.key === PERSON_KEYS[i], `${lang}: persons[${i}].key = ${JSON.stringify(p.key)}`);
+      check(isText(p.label), `${lang}: persons[${i}].label`);
+      check(isText(p.zh), `${lang}: persons[${i}].zh`);
+      if (p.pronouns !== undefined) {
+        check(Array.isArray(p.pronouns) && p.pronouns.length > 0 && p.pronouns.every(isText), `${lang}: persons[${i}].pronouns`);
+      }
+    });
+  }
+
+  // groups (optional matrix rows)
+  const groupKeys = new Set();
+  if (meta.groups !== undefined) {
+    check(Array.isArray(meta.groups) && meta.groups.length > 0, `${lang}: meta.groups must be a non-empty array`);
+    (meta.groups || []).forEach((g, i) => {
+      check(isText(g.key) && !groupKeys.has(g.key), `${lang}: meta.groups[${i}].key`);
+      check(isText(g.label) && isText(g.zh), `${lang}: meta.groups[${i}] label/zh`);
+      groupKeys.add(g.key);
+    });
+  }
+  if (meta.placeholders !== undefined) {
+    check(meta.placeholders && Object.values(meta.placeholders).every(isText), `${lang}: meta.placeholders`);
+  }
+  if (meta.elision !== undefined) {
+    const e = meta.elision || {};
+    check(e.contract && Object.keys(e.contract).every((k) => PERSON_KEYS.includes(k) && isText(e.contract[k])),
+      `${lang}: meta.elision.contract keys must be person keys`);
+    let ok = true;
+    try { new RegExp(e.vowel); } catch (err) { ok = false; }
+    check(ok && isText(e.vowel), `${lang}: meta.elision.vowel is not a regex`);
+    check(Array.isArray(e.aspirate || []) && Array.isArray(e.aspirateVerbs || []), `${lang}: meta.elision lists`);
+  }
+
+  // tenses
+  const tenses = Array.isArray(data.tenses) ? data.tenses : [];
+  check(tenses.length > 0, `${lang}: tenses empty`);
+  const tenseByKey = new Map();
+  tenses.forEach((t, i) => {
+    const where = `${lang}: tenses[${i}] ${t && t.key}`;
+    check(isText(t.key) && !tenseByKey.has(t.key), `${where}: key missing or duplicate`);
+    tenseByKey.set(t.key, t);
+    ['group', 'groupLabel', 'label', 'zh'].forEach((f) => check(isText(t[f]), `${where}: ${f}`));
+    check(t.type === 'person' || t.type === 'single', `${where}: type ${JSON.stringify(t.type)}`);
+    if (groupKeys.size) check(groupKeys.has(t.group), `${where}: group ${t.group} not in meta.groups`);
+    if (t.level !== undefined) check(LEVELS.has(t.level), `${where}: level ${t.level}`);
+    if (t.time !== undefined) check(TIMES.has(t.time), `${where}: time ${t.time}`);
+    if (t.omit !== undefined) {
+      check(t.type === 'person' && Array.isArray(t.omit) && t.omit.length > 0 && t.omit.length < 6
+        && t.omit.every((k) => PERSON_KEYS.includes(k)), `${where}: omit`);
+    }
+    if (t.labels !== undefined) {
+      check(t.type === 'person' && Object.keys(t.labels).every((k) => PERSON_KEYS.includes(k) && isText(t.labels[k])),
+        `${where}: labels`);
+    }
+    if (t.subject !== undefined) check(t.subject === true && t.type === 'person', `${where}: subject`);
+  });
+
+  // verbs
+  const verbs = Array.isArray(data.verbs) ? data.verbs : [];
+  check(verbs.length > 0, `${lang}: verbs empty`);
+  check(meta.count === verbs.length, `${lang}: meta.count ${meta.count} != ${verbs.length}`);
+  const seen = new Set();
+  verbs.forEach((v, i) => {
+    const where = `${lang}: ${v && v.word ? v.word : '#' + i}`;
+    check(isText(v.word), `${where}: word`);
+    check(!seen.has(v.word), `${where}: duplicate word`);
+    seen.add(v.word);
+    check(v.rank === i + 1, `${where}: rank ${v.rank} at index ${i}`);
+    check(v.freq === null || (typeof v.freq === 'number' && v.freq > 0), `${where}: freq ${v.freq}`);
+    check(isText(v.zh) && CJK.test(v.zh), `${where}: zh ${JSON.stringify(v.zh)}`);
+    if (v.en !== undefined) check(isText(v.en), `${where}: en`);
+    if (v.x !== undefined) check(v.x && typeof v.x === 'object' && !Array.isArray(v.x) && Object.keys(v.x).length > 0, `${where}: x`);
+    check('infinitive' in v === false && 'chinese' in v === false, `${where}: legacy field`);
+    const vt = v.tenses || {};
+    check(Object.keys(vt).length > 0, `${where}: no tenses`);
+    for (const [key, value] of Object.entries(vt)) {
+      const t = tenseByKey.get(key);
+      if (!check(t, `${where}: unknown tense ${key}`)) continue;
+      if (t.type === 'single') {
+        check(isText(value), `${where}.${key}: single form must be a non-empty string`);
+        continue;
+      }
+      if (!check(Array.isArray(value) && value.length === 6, `${where}.${key}: person form must be a 6-array`)) continue;
+      const omit = new Set(t.omit || []);
+      let filled = 0;
+      value.forEach((form, pi) => {
+        if (form === null) return;
+        filled++;
+        check(isText(form), `${where}.${key}[${pi}]: ${JSON.stringify(form)}`);
+        check(!omit.has(PERSON_KEYS[pi]), `${where}.${key}: omitted person ${PERSON_KEYS[pi]} has a form`);
+      });
+      check(filled > 0, `${where}.${key}: every person is null`);
+    }
+  });
+  return r;
+}
+
+
+/** Adapts a check(lang, data) -> {assertions, errors} validator to the ctx.check registry. */
+function fromReport(module, fn) {
+  return function (lang, data, ctx) {
+    const r = fn(lang, data);
+    ctx.check(r.errors.length === 0, `${module}/${lang}: ${r.errors.length} problem(s)`);
+    r.errors.forEach((e) => ctx.check(false, `${module}/${lang}: ${e}`));
+    ctx.note(`${module}/${lang}: ${r.assertions} assertions, ${r.errors.length} failed`);
+  };
+}
+
+const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+
+// ---------------------------------------------------------------------------
+// shared meta (every module)
+// ---------------------------------------------------------------------------
+
+function validateMeta(module, code, data) {
+  const errors = [];
+  const meta = data && data.meta;
+  if (!meta || typeof meta !== 'object') return ['meta missing'];
+  if (meta.schema !== module + '/1') errors.push(`meta.schema is ${JSON.stringify(meta.schema)}, expected "${module}/1"`);
+  if (meta.lang !== code) errors.push(`meta.lang is ${JSON.stringify(meta.lang)}, expected "${code}"`);
+  for (const key of ['name', 'builder']) {
+    if (typeof meta[key] !== 'string' || !meta[key]) errors.push(`meta.${key} missing`);
+  }
+  for (const key of ['sources', 'licences']) {
+    if (!Array.isArray(meta[key]) || !meta[key].length) errors.push(`meta.${key} must be a non-empty array`);
+  }
+  if (!Number.isInteger(meta.count) || meta.count < 0) errors.push('meta.count must be a non-negative integer');
+  return errors;
+}
+
+// ---------------------------------------------------------------------------
+// grammar/1
+// ---------------------------------------------------------------------------
+
+const PART_RE = /^p\d+$/;
+const CHAPTER_RE = /^p\d+\/ch\d{2}$/;
+const TOPIC_RE = /^p\d+\/ch\d{2}\/t\d{2}$/;
+
+function validateGrammar(code, data) {
+  const errors = [];
+  const meta = data.meta || {};
+  const content = data.content || {};
+  const parts = data.tree && Array.isArray(data.tree.parts) ? data.tree.parts : null;
+  if (!parts || !parts.length) return ['tree.parts missing or empty'];
+
+  const topics = new Set();
+  const used = new Set();
+  parts.forEach((part, pi) => {
+    if (!PART_RE.test(part.slug || '')) errors.push(`part slug ${JSON.stringify(part.slug)} is not p<N>`);
+    if (part.slug !== 'p' + (pi + 1)) errors.push(`part ${part.slug} is out of positional order`);
+    if (!part.title) errors.push(`part ${part.slug} has no title`);
+    (part.chapters || []).forEach((chapter) => {
+      if (!CHAPTER_RE.test(chapter.slug || '') || chapter.slug.indexOf(part.slug + '/') !== 0) {
+        errors.push(`chapter slug ${JSON.stringify(chapter.slug)} is not ${part.slug}/ch<NN>`);
+      }
+      if (!chapter.title) errors.push(`chapter ${chapter.slug} has no title`);
+      (chapter.topics || []).forEach((topic) => {
+        const slug = topic.slug || '';
+        if (!TOPIC_RE.test(slug) || slug.indexOf(chapter.slug + '/') !== 0) {
+          errors.push(`topic slug ${JSON.stringify(slug)} is not ${chapter.slug}/t<NN>`);
+        }
+        if (topics.has(slug)) errors.push(`duplicate topic slug ${slug}`);
+        topics.add(slug);
+        if (!topic.title) errors.push(`topic ${slug} has no title`);
+        if (LEVEL_ORDER.indexOf(topic.level) === -1) errors.push(`topic ${slug} has level ${JSON.stringify(topic.level)}`);
+        else used.add(topic.level);
+        if (typeof content[slug] !== 'string' || !content[slug].trim()) errors.push(`topic ${slug} has no content`);
+      });
+    });
+  });
+
+  Object.keys(content).forEach((slug) => {
+    if (!topics.has(slug)) errors.push(`content.${slug} is not in the tree`);
+  });
+  if (meta.topicCount !== topics.size) errors.push(`meta.topicCount ${meta.topicCount} != ${topics.size} topics`);
+  if (meta.count !== topics.size) errors.push(`meta.count ${meta.count} != ${topics.size} topics`);
+  const levels = Array.isArray(meta.levels) ? meta.levels : [];
+  const expected = LEVEL_ORDER.filter((l) => used.has(l));
+  if (levels.join() !== expected.join()) errors.push(`meta.levels ${JSON.stringify(levels)} != levels used ${JSON.stringify(expected)}`);
+
+  const aliases = meta.aliases || {};
+  if (typeof aliases !== 'object' || Array.isArray(aliases)) errors.push('meta.aliases must be an object');
+  Object.keys(aliases).forEach((old) => {
+    if (topics.has(old)) errors.push(`alias ${old} shadows a live topic slug`);
+    if (!topics.has(aliases[old])) errors.push(`alias ${old} -> ${aliases[old]} does not resolve`);
+  });
+  return errors;
+}
+
+// ---------------------------------------------------------------------------
+// course/1
+// ---------------------------------------------------------------------------
+
+function validateCourse(code, data, ctx) {
+  const errors = [];
+  const meta = data.meta || {};
+  for (const key of ['title', 'zh']) {
+    if (typeof meta[key] !== 'string' || !meta[key]) errors.push(`meta.${key} missing`);
+  }
+  if (!Array.isArray(data.levels) || !data.levels.length) return errors.concat('levels missing or empty');
+
+  const vocab = new Set(loadVocab(code).entries.map((e) => e.word));
+  let grammar = null;
+  if (ctx.profile.files.grammar) grammar = ctx.load(code, 'grammar') || null;
+  const topics = new Set(grammar ? Object.keys(grammar.content || {}) : []);
+
+  const unitIds = new Set();
+  const levelIds = new Set();
+  let units = 0;
+  data.levels.forEach((level) => {
+    if (!level.id || levelIds.has(level.id)) errors.push(`level id ${JSON.stringify(level.id)} missing or duplicated`);
+    levelIds.add(level.id);
+    if (!level.title) errors.push(`level ${level.id} has no title`);
+    if (!Array.isArray(level.units) || !level.units.length) {
+      errors.push(`level ${level.id} has no units`);
+      return;
+    }
+    level.units.forEach((unit) => {
+      units += 1;
+      const where = `unit ${unit.id}`;
+      if (!unit.id || unitIds.has(unit.id)) errors.push(`unit id ${JSON.stringify(unit.id)} missing or duplicated`);
+      unitIds.add(unit.id);
+      if (!Number.isInteger(unit.number)) errors.push(`${where}: number must be an integer`);
+      if (!unit.title) errors.push(`${where}: no title`);
+      if (!Array.isArray(unit.words) || !unit.words.length) errors.push(`${where}: no words`);
+      const missing = (unit.words || []).filter((w) => !vocab.has(w));
+      if (missing.length) errors.push(`${where}: ${missing.length} words not in data/vocab/${code}.js: ${missing.slice(0, 5).join(', ')}`);
+      if (new Set(unit.words || []).size !== (unit.words || []).length) errors.push(`${where}: duplicate words`);
+      if (!Array.isArray(unit.grammar)) errors.push(`${where}: grammar must be an array`);
+      (unit.grammar || []).forEach((item) => {
+        if (!item || !item.label) errors.push(`${where}: grammar item without a label`);
+        if (!item || !item.slug) return;
+        if (!grammar) errors.push(`${where}: grammar slug ${item.slug} but the language has no grammar module`);
+        else if (!topics.has(item.slug)) errors.push(`${where}: grammar slug ${item.slug} is not in the grammar tree`);
+      });
+    });
+  });
+  if (meta.count !== units) errors.push(`meta.count ${meta.count} != ${units} units`);
+  return errors;
+}
+
+/** grammar/course: shared meta contract + module rules, reported as problem lists. */
+const withMeta = (module, fn) => (lang, data, ctx) => validateMeta(module, lang, data).concat(fn(lang, data, ctx));
+
+// ===========================================================================
+// registry
+// ===========================================================================
+
+const CHECKS = {
+  grammar: fromProblems('grammar', withMeta('grammar', validateGrammar)),
+  course: fromProblems('course', withMeta('course', validateCourse)),
+  conjugations: fromReport('conjugations', validateConjugations),
+  collocations: fromProblems('collocations', validateCollocations),
+  cognates: validateCognates,
+};
+// module -> check(ctx) run once per invocation (not per language)
+const GLOBAL_CHECKS = {
+  cognates: validateCognateApp,
+};
+
+function main(argv) {
+  const modules = argv.filter((a) => a in CHECKS);
+  const langs = argv.filter((a) => LANGUAGES.get(a)).map((a) => LANGUAGES.code(a));
+  const unknown = argv.filter((a) => !(a in CHECKS) && !LANGUAGES.get(a));
+  if (unknown.length) {
+    console.error('unknown module/language: ' + unknown.join(', ') +
+      ' (modules: ' + Object.keys(CHECKS).join(', ') + ')');
+    return 2;
+  }
+
+  let passed = 0;
+  const errors = [];
+  const notes = [];
+  const base = {
+    root: ROOT,
+    load,
+    check(cond, msg) {
+      if (cond) passed += 1;
+      else errors.push(msg);
+      return !!cond;
+    },
+    note(msg) { notes.push(msg); },
+  };
+
+  for (const module of modules.length ? modules : Object.keys(CHECKS)) {
+    if (GLOBAL_CHECKS[module]) GLOBAL_CHECKS[module](base);
+    for (const profile of LANGUAGES.list) {
+      if (langs.length && langs.indexOf(profile.code) === -1) continue;
+      if (!LANGUAGES.hasModule(profile.code, module)) continue;
+      let data;
+      try {
+        data = load(profile.code, module);
+      } catch (err) {
+        base.check(false, `${module}/${profile.code}: data file does not load: ${err.message}`);
+        continue;
+      }
+      if (!base.check(data !== undefined, `${module}/${profile.code}: nothing registered at DIM_DATA.${module}.${profile.code}`)) continue;
+      CHECKS[module](profile.code, data, Object.assign({ profile }, base));
+    }
+  }
+
+  for (const n of notes) console.log('  ' + n);
+  if (errors.length) {
+    console.error(`\nFAIL: ${errors.length} problem(s)`);
+    for (const e of errors.slice(0, 40)) console.error('  - ' + e);
+    if (errors.length > 40) console.error(`  ... and ${errors.length - 40} more`);
+  }
+  console.log(`validate_modules: ${passed} passed, ${errors.length} failed`);
+  return errors.length ? 1 : 0;
+}
+
+if (require.main === module) process.exit(main(process.argv.slice(2)));
+
+module.exports = { CHECKS, load, curve, badText };

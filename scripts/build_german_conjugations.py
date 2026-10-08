@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the German verb conjugation dataset (data/german-conjugations.js).
+"""Build the German verb conjugation dataset (data/de-conjugations.js).
 
 Rewritten 2026-08 to fix three confirmed audit defects and to scale the dataset
 towards Italian parity:
@@ -51,9 +51,10 @@ from pathlib import Path
 from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_PATH = ROOT / "data" / "german-conjugations.js"
+OUT_PATH = ROOT / "data" / "de-conjugations.js"
 sys.path.insert(0, str(ROOT / "scripts"))
 import vocab_schema  # noqa: E402  (data/vocab/*.js reader)
+from data_module import register_footer
 
 CACHE = Path("/tmp/dimenticato-de-conj")
 KAIKKI_URL = (
@@ -1329,10 +1330,14 @@ def main() -> None:
         + "const GERMAN_CONJUGATION_DATA = "
         + json.dumps(selected, ensure_ascii=False, indent=2)
         + ";\n\n"
-        + "if (typeof module !== 'undefined' && module.exports) { module.exports = GERMAN_CONJUGATION_DATA; }\n",
+        + "if (typeof module !== 'undefined' && module.exports) { module.exports = GERMAN_CONJUGATION_DATA; }\n"
+        + register_footer("conjugations", "de", "GERMAN_CONJUGATION_DATA"),
         encoding="utf-8",
     )
     print(f"Wrote {len(selected)} entries to {OUT_PATH}")
+    # 落盘的是旧（逐动词 forms 对象）形状；统一转成 conjugations/1（docs/data-schema.md）
+    import canonical_conjugations
+    canonical_conjugations.canonicalize("de")
 
 
 if __name__ == "__main__":

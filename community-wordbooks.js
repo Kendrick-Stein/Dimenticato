@@ -4,45 +4,30 @@
  *
  * 安全约定：
  * - 社区数据全部来自匿名可写的 Supabase 表，任何字段进入 innerHTML 前必须经过
- *   esc()/escAttr()（转发到 lib/utils.js 的 escapeHtml / escapeAttribute）。
- * - 卡片按钮不再使用内联 onclick，改为 data-* + 容器事件委托（见 init）。
+ *   escapeHtml()/escapeAttribute()（lib/utils.js）。
+ * - 不使用内联事件：卡片按钮走 data-* + 容器事件委托，静态控件在 init 里绑定。
+ * - 语言映射只走 supabase-config.js 的 communityLanguage()。
  * - 词本文件只允许从 Supabase Storage 或本站同源地址下载（见 isTrustedFileUrl）。
  */
 
 const CommunityWordbooks = {
   currentFilters: {
     difficulty: 'all',
-    language: 'italian', // 语言 key，'all' 表示不限语言
+    language: window.Languages.DEFAULT_KEY, // 语言 key，'all' 表示不限语言
     tags: [],
-    searchTerm: '',
-    sortBy: 'download_count' // 'download_count', 'created_at', 'name'
+    searchTerm: ''
   },
 
-  allWordbooks: [], // 缓存所有词本数据（未按语言过滤）
+  // 当前语言筛选下没有结果时，去掉语言条件还有没有词本（决定是否给「查看全部语言」按钮）
+  otherLanguagesHaveBooks: false,
 
-  activeLanguage: 'italian', // 打开社区页面时所处的语言入口
-  returnScreen: 'vocabScreen', // 返回目标
+  activeLanguage: window.Languages.DEFAULT_KEY, // 打开社区页面时所处的语言入口
+  returnScreen: 'vocabScreen', // 返回目标：统一的词汇页（四门语言共用一套屏幕）
   bound: false, // 事件是否已绑定（init 幂等）
+  downloading: new Set(), // 正在导入的词本 id：防止连点导入出两份
   serverLanguageFilter: true, // 服务端 language 过滤是否可用（老库可能没有该列）
 
   // ==================== 基础工具 ====================
-
-  /** HTML 转义（运行时通过 window 解析，避免依赖脚本加载顺序） */
-  esc(value) {
-    if (typeof window.escapeHtml === 'function') return window.escapeHtml(value);
-    return (value == null ? '' : String(value))
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  },
-
-  /** HTML 属性转义 */
-  escAttr(value) {
-    if (typeof window.escapeAttribute === 'function') return window.escapeAttribute(value);
-    return this.esc(value).replace(/`/g, '&#96;');
-  },
 
   /** 数字字段兜底（远端数据可能是 null 或字符串） */
   toCount(value) {
@@ -60,29 +45,19 @@ const CommunityWordbooks = {
 
   // ==================== 语言上下文 ====================
 
-  /** 语言配置表（来自 supabase-config.js，运行时解析） */
+  /** 语言选项（supabase-config.js） */
   languageOptions() {
-    return window.COMMUNITY_LANGUAGES || [{ key: 'italian', db: 'Italian', label: '意大利语' }];
+    return window.COMMUNITY_LANGUAGES;
   },
 
-  /** 把任意写法（'Italian' / 'italian' / 空）归一化为语言 key；空值按意大利语处理（兼容历史数据） */
+  /** 任意写法（'Italian' / 'italian' / 'it' / 空）→ 语言 key；空值按意大利语处理（兼容历史数据） */
   normalizeLanguage(value) {
-    const raw = (value == null ? '' : String(value)).trim().toLowerCase();
-    if (!raw) return 'italian';
-    const hit = this.languageOptions().find(opt => opt.key === raw || opt.db.toLowerCase() === raw);
-    return hit ? hit.key : 'italian';
-  },
-
-  /** 语言 key → 数据库取值 */
-  languageDbValue(key) {
-    const hit = this.languageOptions().find(opt => opt.key === key);
-    return hit ? hit.db : 'Italian';
+    return window.communityLanguage(value).key;
   },
 
   /** 语言 key → 中文名 */
   languageLabel(key) {
-    const hit = this.languageOptions().find(opt => opt.key === key);
-    return hit ? hit.label : key;
+    return window.communityLanguage(key).label;
   },
 
   /** 当前所处的语言入口 */
@@ -91,11 +66,6 @@ const CommunityWordbooks = {
       return this.normalizeLanguage(window.getActiveLanguage());
     }
     return this.normalizeLanguage(document.body.getAttribute('data-language'));
-  },
-
-  /** 返回目标：统一的词汇页（四门语言共用一套屏幕）。 */
-  resolveReturnScreen() {
-    return 'vocabScreen';
   },
 
   // ==================== 生命周期 ====================
@@ -208,7 +178,7 @@ const CommunityWordbooks = {
     group.innerHTML = `
       <label for="uploadLanguage">词本语言 *</label>
       <select id="uploadLanguage" class="form-input" required>
-        ${this.languageOptions().map(opt => `<option value="${this.escAttr(opt.key)}">${this.esc(opt.label)}</option>`).join('')}
+        ${this.languageOptions().map(opt => `<option value="${window.escapeAttribute(opt.key)}">${window.escapeHtml(opt.label)}</option>`).join('')}
       </select>
     `;
     form.insertBefore(group, difficultyLabel.parentElement);
@@ -314,12 +284,14 @@ const CommunityWordbooks = {
       let wordCount = 0;
       let parsedWords = null;
 
+      // 扩展名大小写不敏感，和 selectFile 的校验一致（Foo.JSON 也要能传）
+      const fileExt = this.fileExtension(file.name);
       try {
-        if (file.name.endsWith('.json')) {
+        if (fileExt === '.json') {
           const jsonData = JSON.parse(fileContent);
           parsedWords = jsonData.words || jsonData;
           wordCount = Array.isArray(parsedWords) ? parsedWords.length : 0;
-        } else if (file.name.endsWith('.txt')) {
+        } else if (fileExt === '.txt') {
           const parseResult = window.Wordbooks.parseTxt(fileContent, language);
           parsedWords = parseResult.words;
           wordCount = parsedWords.length;
@@ -348,9 +320,9 @@ const CommunityWordbooks = {
       }
 
       const bucketName = (window.STORAGE_CONFIG && window.STORAGE_CONFIG.bucketName) || 'wordbook-files';
-      const timestamp = Date.now();
-      const randomStr = Math.random().toString(36).substring(7);
-      const fileName = `${timestamp}_${randomStr}_${file.name}`;
+      // Storage 的对象 key 只用 ASCII：原文件名可能是中文 / 带空格，Supabase 会拒收。
+      // 扩展名保留（下载时按它决定 JSON / TXT 解析），用户看到的名字在表里的 name 列。
+      const fileName = this.storageObjectKey(fileExt);
 
       // 上传 / 插入同样套超时：网络挂住时按钮不能永远停在「上传中」
       const { data: uploadData, error: uploadError } = await this.withTimeout(client.storage
@@ -382,7 +354,7 @@ const CommunityWordbooks = {
           name: name,
           description: description,
           author_name: authorName,
-          language: this.languageDbValue(language),
+          language: window.communityLanguage(language).db,
           difficulty: difficulty,
           tags: selectedTags,
           word_count: wordCount,
@@ -427,6 +399,24 @@ const CommunityWordbooks = {
     }
   },
 
+  /** 'Foo.JSON' → '.json'；没有扩展名时为 ''。 */
+  fileExtension(name) {
+    const str = String(name || '');
+    const dot = str.lastIndexOf('.');
+    return dot < 0 ? '' : str.slice(dot).toLowerCase();
+  },
+
+  /** 上传到 Storage 用的对象 key：`<时间戳>-<随机串><.json|.txt>`，与原文件名无关。 */
+  storageObjectKey(ext) {
+    const random = Math.random().toString(36).slice(2, 10) || '0';
+    return `${Date.now()}-${random}${ext === '.txt' ? '.txt' : '.json'}`;
+  },
+
+  /** ilike 模式里的 % _ \ 是通配 / 转义符，用户输入要按字面匹配。 */
+  escapeIlike(term) {
+    return String(term).replace(/[\\%_]/g, ch => '\\' + ch);
+  },
+
   /**
    * 读取文件内容
    */
@@ -462,13 +452,10 @@ const CommunityWordbooks = {
   },
 
   /**
-   * 显示浏览社区词本页面
-   * @param {{language?: string, returnScreen?: string}} [options]
+   * 显示浏览社区词本页面（当前语言入口）
    */
-  async showBrowseScreen(options) {
-    const opts = options || {};
-    this.activeLanguage = opts.language ? this.normalizeLanguage(opts.language) : this.resolveActiveLanguage();
-    this.returnScreen = opts.returnScreen || this.resolveReturnScreen(this.activeLanguage);
+  async showBrowseScreen() {
+    this.activeLanguage = this.resolveActiveLanguage();
 
     if (typeof window.showScreen === 'function') {
       window.showScreen('communityBrowseScreen');
@@ -482,8 +469,7 @@ const CommunityWordbooks = {
       difficulty: 'all',
       language: this.activeLanguage,
       tags: [],
-      searchTerm: '',
-      sortBy: 'download_count'
+      searchTerm: ''
     };
 
     // 清空搜索框
@@ -515,7 +501,7 @@ const CommunityWordbooks = {
       select.className = 'filter-select';
       select.setAttribute('aria-label', '按语言筛选');
       select.innerHTML = this.languageOptions()
-        .map(opt => `<option value="${this.escAttr(opt.key)}">${this.esc(opt.label)}</option>`)
+        .map(opt => `<option value="${window.escapeAttribute(opt.key)}">${window.escapeHtml(opt.label)}</option>`)
         .join('') + '<option value="all">全部语言</option>';
       select.addEventListener('change', () => this.updateLanguageFilter(select.value));
       controls.appendChild(select);
@@ -557,8 +543,14 @@ const CommunityWordbooks = {
         return;
       }
 
-      this.allWordbooks = data || [];
-      this.renderWordbookList(this.filterByLanguage(this.allWordbooks));
+      const list = this.filterByLanguage(data || []);
+      // 按语言筛空了：服务端已经按语言过滤，看不到别的语言有没有词本，单独数一下
+      this.otherLanguagesHaveBooks = false;
+      if (!list.length && this.isLanguageFiltered()) {
+        this.otherLanguagesHaveBooks = await this.countWithoutLanguage(client, data || []);
+        if (stale()) return;
+      }
+      this.renderWordbookList(list);
 
     } catch (error) {
       if (stale()) return;
@@ -567,54 +559,47 @@ const CommunityWordbooks = {
     }
   },
 
+  /** 列表查询的筛选条件（不含排序 / 分页），列表和「去掉语言条件再数一次」共用。 */
+  buildQuery(client, withLanguage, selectArgs) {
+    let query = client
+      .from('community_wordbooks')
+      .select(...(selectArgs || ['*']));
+
+    // 应用难度筛选
+    if (this.currentFilters.difficulty !== 'all') {
+      query = query.eq('difficulty', this.currentFilters.difficulty);
+    }
+
+    // 应用语言筛选（兼容历史行：language 为空视为意大利语，见 communityLanguage）
+    if (withLanguage && this.currentFilters.language && this.currentFilters.language !== 'all') {
+      const info = window.communityLanguage(this.currentFilters.language);
+      const clauses = info.matches.map(v => `language.eq.${v}`);
+      if (info.includesNull) clauses.push('language.is.null');
+      query = query.or(clauses.join(','));
+    }
+
+    // 应用标签筛选
+    if (this.currentFilters.tags.length > 0) {
+      query = query.contains('tags', this.currentFilters.tags);
+    }
+
+    // 应用搜索（% _ 按字面匹配）
+    if (this.currentFilters.searchTerm) {
+      query = query.ilike('name', `%${this.escapeIlike(this.currentFilters.searchTerm)}%`);
+    }
+
+    return query;
+  },
+
   /**
    * 构建并执行列表查询。
    * language 过滤优先走服务端；老部署可能没有 language 列，出错时降级为纯客户端过滤。
    */
   async runListQuery(client, skipLanguageFilter) {
-    const buildQuery = (withLanguage) => {
-      let query = client
-        .from('community_wordbooks')
-        .select('*');
-
-      // 应用难度筛选
-      if (this.currentFilters.difficulty !== 'all') {
-        query = query.eq('difficulty', this.currentFilters.difficulty);
-      }
-
-      // 应用语言筛选（兼容历史行：language 为空视为意大利语）
-      if (withLanguage && this.currentFilters.language && this.currentFilters.language !== 'all') {
-        const key = this.currentFilters.language;
-        const dbValue = this.languageDbValue(key);
-        const clauses = [`language.eq.${dbValue}`, `language.eq.${key}`];
-        if (key === 'italian') clauses.push('language.is.null');
-        query = query.or(clauses.join(','));
-      }
-
-      // 应用标签筛选
-      if (this.currentFilters.tags.length > 0) {
-        query = query.contains('tags', this.currentFilters.tags);
-      }
-
-      // 应用搜索
-      if (this.currentFilters.searchTerm) {
-        query = query.ilike('name', `%${this.currentFilters.searchTerm}%`);
-      }
-
-      // 排序
-      if (this.currentFilters.sortBy === 'download_count') {
-        query = query.order('download_count', { ascending: false });
-      } else if (this.currentFilters.sortBy === 'created_at') {
-        query = query.order('created_at', { ascending: false });
-      } else if (this.currentFilters.sortBy === 'name') {
-        query = query.order('name', { ascending: true });
-      }
-
-      return query.limit(500);
-    };
-
     const useLanguage = this.serverLanguageFilter && !skipLanguageFilter;
-    const result = await this.withTimeout(buildQuery(useLanguage));
+    const result = await this.withTimeout(this.buildQuery(client, useLanguage)
+      .order('download_count', { ascending: false })
+      .limit(500));
 
     if (result && result.error && useLanguage && /language/i.test(result.error.message || '')) {
       // 服务端没有 language 列：关闭服务端过滤，改由客户端过滤
@@ -623,6 +608,27 @@ const CommunityWordbooks = {
     }
 
     return result;
+  },
+
+  isLanguageFiltered() {
+    return !!this.currentFilters.language && this.currentFilters.language !== 'all';
+  },
+
+  /**
+   * 去掉语言条件（其余筛选不变）后还有没有词本。
+   * 服务端没按语言过滤时（老库）rows 就是全集，直接看；否则发一个只数行数的请求。
+   * 数不出来（网络 / 老库）时按「有」处理：按钮最多带用户看到一个空的全部列表。
+   */
+  async countWithoutLanguage(client, rows) {
+    if (!this.serverLanguageFilter) return rows.length > 0;
+    try {
+      const { count, error } = await this.withTimeout(
+        this.buildQuery(client, false, ['id', { count: 'exact', head: true }]));
+      if (error) return true;
+      return typeof count === 'number' ? count > 0 : true;
+    } catch (error) {
+      return true;
+    }
   },
 
   /** 客户端语言过滤（服务端过滤失败时的兜底，也顺带修正大小写不一致的历史数据） */
@@ -645,9 +651,9 @@ const CommunityWordbooks = {
 
     container.innerHTML = `
       <div class="empty-message">
-        <div class="empty-icon"><span class="msr" aria-hidden="true">${this.esc(icon)}</span></div>
-        <p>${this.esc(title)}</p>
-        <p style="font-size: 0.9rem; margin-top: 0.5rem;">${this.esc(detail)}</p>
+        <div class="empty-icon"><span class="msr" aria-hidden="true">${window.escapeHtml(icon)}</span></div>
+        <p>${window.escapeHtml(title)}</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;">${window.escapeHtml(detail)}</p>
         <div style="margin-top: 1rem; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
           ${retryHtml}
           ${extraActionHtml || ''}
@@ -664,8 +670,7 @@ const CommunityWordbooks = {
     if (!container) return;
 
     if (!wordbooks || wordbooks.length === 0) {
-      const filtered = this.currentFilters.language && this.currentFilters.language !== 'all';
-      if (filtered && this.allWordbooks.length > 0) {
+      if (this.isLanguageFiltered() && this.otherLanguagesHaveBooks) {
         this.renderStatus(
           'groups',
           `还没有${this.languageLabel(this.currentFilters.language)}词本`,
@@ -685,32 +690,32 @@ const CommunityWordbooks = {
       const difficultyInfo = difficultyLevels[wb.difficulty] || { label: wb.difficulty || '未分级' };
       const language = this.normalizeLanguage(wb.language);
       const tagsHtml = Array.isArray(wb.tags) && wb.tags.length > 0
-        ? wb.tags.map(tag => `<span class="wordbook-tag">${this.esc(tag)}</span>`).join('')
+        ? wb.tags.map(tag => `<span class="wordbook-tag">${window.escapeHtml(tag)}</span>`).join('')
         : '';
 
       return `
         <div class="community-wordbook-card">
           <div class="wordbook-card-header">
-            <h3 class="wordbook-card-title">${this.esc(wb.name)}</h3>
-            <span class="wordbook-difficulty-badge">${this.esc(difficultyInfo.label)}</span>
+            <h3 class="wordbook-card-title">${window.escapeHtml(wb.name)}</h3>
+            <span class="wordbook-difficulty-badge">${window.escapeHtml(difficultyInfo.label)}</span>
           </div>
 
           <div class="wordbook-card-meta">
-            <span><span class="msr" aria-hidden="true">translate</span> ${this.esc(this.languageLabel(language))}</span>
-            <span><span class="msr" aria-hidden="true">person</span> ${this.esc(wb.author_name)}</span>
+            <span><span class="msr" aria-hidden="true">translate</span> ${window.escapeHtml(this.languageLabel(language))}</span>
+            <span><span class="msr" aria-hidden="true">person</span> ${window.escapeHtml(wb.author_name)}</span>
             <span><span class="msr" aria-hidden="true">menu_book</span> ${this.toCount(wb.word_count)} 词</span>
             <span><span class="msr" aria-hidden="true">download</span> ${this.toCount(wb.download_count)} 次下载</span>
           </div>
 
           ${tagsHtml ? `<div class="wordbook-card-tags">${tagsHtml}</div>` : ''}
 
-          ${wb.description ? `<p class="wordbook-card-description">${this.esc(wb.description)}</p>` : ''}
+          ${wb.description ? `<p class="wordbook-card-description">${window.escapeHtml(wb.description)}</p>` : ''}
 
           <div class="wordbook-card-actions">
-            <button type="button" class="wordbook-action-btn preview" data-community-action="preview" data-community-id="${this.escAttr(wb.id)}">
+            <button type="button" class="wordbook-action-btn preview" data-community-action="preview" data-community-id="${window.escapeAttribute(wb.id)}">
               <span class="msr" aria-hidden="true">visibility</span> 预览
             </button>
-            <button type="button" class="wordbook-action-btn download" data-community-action="download" data-community-id="${this.escAttr(wb.id)}">
+            <button type="button" class="wordbook-action-btn download" data-community-action="download" data-community-id="${window.escapeAttribute(wb.id)}">
               <span class="msr" aria-hidden="true">download</span> 导入学习
             </button>
           </div>
@@ -728,21 +733,10 @@ const CommunityWordbooks = {
 
   /**
    * 更新难度筛选
-   * @param {string} difficulty
-   * @param {Event} [evt] 可选：内联 onclick 传入的事件对象（不再依赖隐式全局 event）
    */
-  updateDifficultyFilter(difficulty, evt) {
+  updateDifficultyFilter(difficulty) {
     this.currentFilters.difficulty = difficulty;
     this.applyFilters();
-
-    // 更新按钮样式（老的按钮组布局）
-    const buttons = document.querySelectorAll('.filter-difficulty-btn');
-    if (buttons.length) {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      const target = (evt && evt.target && evt.target.closest && evt.target.closest('.filter-difficulty-btn'))
-        || document.querySelector(`.filter-difficulty-btn[data-difficulty="${CSS.escape(String(difficulty))}"]`);
-      if (target) target.classList.add('active');
-    }
   },
 
   /**
@@ -756,19 +750,20 @@ const CommunityWordbooks = {
   },
 
   /**
-   * 更新排序方式
-   */
-  updateSortBy(sortBy) {
-    this.currentFilters.sortBy = sortBy;
-    this.applyFilters();
-  },
-
-  /**
-   * 搜索词本
+   * 搜索词本。输入框每键都会调到这里：防抖 250ms 再查，避免每个字母打一次服务器
+   * （旧请求晚到由 fetchAndDisplayWordbooks 的请求令牌丢弃）。
    */
   searchWordbooks(searchTerm) {
-    this.currentFilters.searchTerm = searchTerm.trim();
-    this.applyFilters();
+    const term = String(searchTerm || '').trim();
+    if (!this.debouncedSearch) {
+      this.debouncedSearch = window.debounce(() => {
+        if (this.currentFilters.searchTerm === this.pendingSearchTerm) return;
+        this.currentFilters.searchTerm = this.pendingSearchTerm;
+        this.applyFilters();
+      }, 250);
+    }
+    this.pendingSearchTerm = term;
+    this.debouncedSearch();
   },
 
   // ==================== 下载和预览 ====================
@@ -817,13 +812,14 @@ const CommunityWordbooks = {
 
     const fileContent = await response.text();
 
+    const ext = this.fileExtension(String(wordbook.file_url).split(/[?#]/)[0]);
     try {
-      if (wordbook.file_url.endsWith('.json')) {
+      if (ext === '.json') {
         const jsonData = JSON.parse(fileContent);
         const words = jsonData.words || jsonData;
         return Array.isArray(words) ? words : [];
       }
-      if (wordbook.file_url.endsWith('.txt')) {
+      if (ext === '.txt') {
         return window.Wordbooks.parseTxt(fileContent, language).words;
       }
     } catch (error) {
@@ -839,6 +835,10 @@ const CommunityWordbooks = {
    * 下载并导入词本
    */
   async downloadWordbook(wordbookId) {
+    // 连点「导入学习」：第一次还没完成时忽略后面的，否则会导入出好几份
+    const key = String(wordbookId);
+    if (this.downloading.has(key)) return;
+    this.downloading.add(key);
     try {
       const client = await this.getClient();
       if (!client) {
@@ -902,6 +902,8 @@ const CommunityWordbooks = {
     } catch (error) {
       console.error('下载词本失败:', error);
       alert('下载失败: ' + error.message);
+    } finally {
+      this.downloading.delete(key);
     }
   },
 
@@ -973,26 +975,26 @@ const CommunityWordbooks = {
 
     const metaHtml = `
       <div class="preview-meta">
-        <span><span class="msr" aria-hidden="true">translate</span> ${this.esc(this.languageLabel(languageKey))}</span>
-        <span><span class="msr" aria-hidden="true">person</span> 作者: ${this.esc(wordbook.author_name)}</span>
-        <span><span class="msr" aria-hidden="true">signal_cellular_alt</span> ${this.esc(difficultyInfo.label)}</span>
+        <span><span class="msr" aria-hidden="true">translate</span> ${window.escapeHtml(this.languageLabel(languageKey))}</span>
+        <span><span class="msr" aria-hidden="true">person</span> 作者: ${window.escapeHtml(wordbook.author_name)}</span>
+        <span><span class="msr" aria-hidden="true">signal_cellular_alt</span> ${window.escapeHtml(difficultyInfo.label)}</span>
         <span><span class="msr" aria-hidden="true">menu_book</span> ${this.toCount(wordbook.word_count)} 词</span>
         <span><span class="msr" aria-hidden="true">download</span> ${this.toCount(wordbook.download_count)} 次下载</span>
       </div>
       ${Array.isArray(wordbook.tags) && wordbook.tags.length > 0 ? `
         <div class="preview-tags">
-          ${wordbook.tags.map(tag => `<span class="wordbook-tag">${this.esc(tag)}</span>`).join('')}
+          ${wordbook.tags.map(tag => `<span class="wordbook-tag">${window.escapeHtml(tag)}</span>`).join('')}
         </div>
       ` : ''}
-      ${wordbook.description ? `<p class="preview-description">${this.esc(wordbook.description)}</p>` : ''}
+      ${wordbook.description ? `<p class="preview-description">${window.escapeHtml(wordbook.description)}</p>` : ''}
     `;
     document.getElementById('previewWordbookMeta').innerHTML = metaHtml;
 
     const wordsHtml = words.map(word => `
       <div class="preview-word-item">
-        <div class="preview-word-italian">${this.esc(word.word)}</div>
-        <div class="preview-word-english">${this.esc(word.zh)}</div>
-        ${word.en ? `<div class="preview-word-chinese">${this.esc(word.en)}</div>` : ''}
+        <div class="preview-word-italian">${window.escapeHtml(word.word)}</div>
+        <div class="preview-word-english">${window.escapeHtml(word.zh)}</div>
+        ${word.en ? `<div class="preview-word-chinese">${window.escapeHtml(word.en)}</div>` : ''}
       </div>
     `).join('');
 
@@ -1017,8 +1019,7 @@ const CommunityWordbooks = {
    * 返回来源页面
    */
   backToWelcome() {
-    const returnScreen = this.returnScreen || this.resolveReturnScreen();
-    if (typeof window.showScreen === 'function') window.showScreen(returnScreen);
+    if (typeof window.showScreen === 'function') window.showScreen(this.returnScreen || 'vocabScreen');
   }
 };
 
@@ -1030,3 +1031,22 @@ if (document.readyState === 'loading') {
 } else {
   CommunityWordbooks.init();
 }
+
+// 静态控件（index.html 里的上传表单 / 搜索框 / 难度筛选）：文档级委托，不用内联事件。
+// 按钮类控件（返回 / 关闭 / 选择文件）走 app.js 的 data-action。
+document.addEventListener('submit', (event) => {
+  if (event.target && event.target.id === 'communityUploadForm') {
+    event.preventDefault();
+    CommunityWordbooks.uploadWordbook();
+  }
+});
+document.addEventListener('change', (event) => {
+  const t = event.target;
+  if (!t) return;
+  if (t.id === 'uploadFileInput') CommunityWordbooks.selectFile();
+  else if (t.dataset && t.dataset.communityFilter === 'difficulty') CommunityWordbooks.updateDifficultyFilter(t.value);
+});
+document.addEventListener('input', (event) => {
+  const t = event.target;
+  if (t && t.dataset && t.dataset.communityFilter === 'search') CommunityWordbooks.searchWordbooks(t.value);
+});

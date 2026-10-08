@@ -1,70 +1,52 @@
 'use strict';
 
+// data/de-course.js（course/1，docs/data-schema.md）：unit.words 是词库里的
+// `word`，course.js 直接按 word 查 Vocab.entries，不再做屈折形模糊匹配。
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
 const { loadVocab } = require('../scripts/vocab_node.js');
-const course = require('../data/german-course-data.js');
+const course = require('../data/de-course.js');
 
-// data/vocab/de.js（schema v1）：word 是词元，display 带冠词，屈折形在 forms 里
-const vocabulary = loadVocab('de').entries;
+const vocabulary = new Set(loadVocab('de').entries.map(entry => entry.word));
 
-const normalize = value => String(value || '')
-  .normalize('NFKC')
-  .toLocaleLowerCase('de-DE')
-  .replace(/\//g, '')
-  .trim();
-
-// 与 german-course.js buildWordIndex() 同构：先索引原形，再索引词库自带的
-// 屈折形（复数 / 主要变化形），后者只填空位。课程 headword 里有 Frauen、
-// gegessen 这类形式，词库改成按词元收录之后必须靠这张表才解析得到。
-const inflectedForms = word => {
-  const forms = [];
-  const { plural, principalParts } = word.forms || {};
-  if (plural) forms.push(plural);
-  if (principalParts) {
-    for (const part of String(principalParts).split(',')) {
-      for (const token of part.trim().split(/\s+/)) {
-        if (token && !/^(hat|ist|haben|sein|hast|bin)$/.test(token)) forms.push(token);
-      }
-    }
-  }
-  return forms;
-};
-
-const wordIndex = new Map();
-for (const word of vocabulary) {
-  for (const value of [word.word, word.display]) {
-    const key = normalize(value);
-    if (key && !wordIndex.has(key)) wordIndex.set(key, word);
-  }
+function loadModule(file, module, code) {
+  const ctx = {};
+  ctx.globalThis = ctx;
+  vm.createContext(ctx);
+  vm.runInContext(fs.readFileSync(path.join(__dirname, '..', file), 'utf8'), ctx);
+  return ctx.DIM_DATA[module][code];
 }
-for (const word of vocabulary) {
-  for (const value of inflectedForms(word)) {
-    const key = normalize(value);
-    if (key && !wordIndex.has(key)) wordIndex.set(key, word);
-  }
-}
+const grammar = loadModule('data/de-grammar.js', 'grammar', 'de');
 
+assert.equal(course.meta.schema, 'course/1');
+assert.equal(course.meta.lang, 'de');
+assert.ok(course.meta.title && course.meta.zh, 'course meta needs title and zh');
 assert.deepEqual(course.levels.map(level => level.id), ['A1', 'A2', 'B1', 'B2', 'C1']);
 assert.deepEqual(course.levels.map(level => level.units.length), [10, 10, 10, 12, 12]);
 
 const units = course.levels.flatMap(level => level.units);
 assert.equal(units.length, 54, 'German course unit count changed unexpectedly');
+assert.equal(course.meta.count, units.length, 'meta.count must equal the unit count');
 assert.equal(new Set(units.map(unit => unit.id)).size, units.length, 'Course unit IDs must be unique');
 
+let words = 0;
 for (const unit of units) {
   assert.ok(unit.title && unit.summary, `${unit.id} is missing visible course copy`);
   assert.ok(unit.grammar.length >= 1, `${unit.id} is missing grammar guidance`);
-  assert.ok(unit.headwords.length >= 10, `${unit.id} needs at least ten practice headwords`);
-
-  const words = unit.headwords.map(headword => wordIndex.get(normalize(headword)));
-  assert.ok(words.every(Boolean), `${unit.id} contains a headword absent from the system vocabulary`);
-  // 单元里同时列出 Frau 和 Frauen 是合理的教学安排，但它们解析到同一个词条。
-  // german-course.js resolveHeadwords() 会去重，所以这里断言的是去重之后
-  // 还够不够排一课，而不是 headword 数与词条数一一对应。
-  assert.ok(
-    new Set(words.map(word => word.word)).size >= 10,
-    `${unit.id} resolves to fewer than ten distinct practice words`
-  );
+  assert.ok(new Set(unit.words).size === unit.words.length, `${unit.id} lists a word twice`);
+  assert.ok(unit.words.length >= 10, `${unit.id} needs at least ten practice words`);
+  const missing = unit.words.filter(word => !vocabulary.has(word));
+  assert.deepEqual(missing, [], `${unit.id} contains words absent from data/vocab/de.js`);
+  for (const item of unit.grammar) {
+    assert.ok(item.label, `${unit.id} has a grammar item without a label`);
+    if (item.slug) {
+      assert.ok(Object.prototype.hasOwnProperty.call(grammar.content, item.slug),
+        `${unit.id} grammar slug ${item.slug} is not in the grammar book`);
+    }
+  }
+  words += unit.words.length;
 }
 
-console.log(`German course data OK: ${course.levels.length} levels, ${units.length} units, ${units.reduce((sum, unit) => sum + unit.headwords.length, 0)} mapped headwords.`);
+console.log(`German course data OK: ${course.levels.length} levels, ${units.length} units, ${words} vocab words.`);

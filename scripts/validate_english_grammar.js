@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // scripts/validate_english_grammar.js
 //
-// Structural + editorial validator for data/english-grammar-data.js
+// Structural + editorial validator for data/en-grammar.js
 // (the ENGLISH_GRAMMAR_DATA grammar book consumed by grammar-book.js),
 // modelled on scripts/validate_french_grammar.js.
 //
@@ -36,7 +36,7 @@ const vm = require('vm');
 const ROOT = path.resolve(__dirname, '..');
 const argFile = process.argv.indexOf('--file');
 const DATA_FILE = argFile !== -1 ? path.resolve(process.argv[argFile + 1])
-  : path.join(ROOT, 'data', 'english-grammar-data.js');
+  : path.join(ROOT, 'data', 'en-grammar.js');
 const GLOBAL_NAME = 'ENGLISH_GRAMMAR_DATA';
 const PARTIAL = process.argv.includes('--partial');
 
@@ -154,8 +154,8 @@ for (const t of topics) {
   const titleKey = `${t.chapter}::${t.title}`;
   if (seenTitles.has(titleKey)) fail(`duplicate topic title in one chapter: ${titleKey}`);
   seenTitles.add(titleKey);
-  if (!/^p[12]\/ch\d{2}\/t\d{2}-[a-z0-9-]+$/.test(t.slug)) {
-    fail(`slug does not match p<N>/ch<NN>/t<NN>-kebab: ${t.slug}`);
+  if (!/^p\d+\/ch\d{2}\/t\d{2}$/.test(t.slug)) {
+    fail(`slug does not match grammar/1 p<N>/ch<NN>/t<NN>: ${t.slug}`);
   }
   if (!LEVELS.includes(t.level)) {
     fail(`topic ${t.slug} has an invalid CEFR level: ${JSON.stringify(t.level)}`);
@@ -369,7 +369,7 @@ function report(rowList, topicCount) {
   for (const e of errors) console.error(`FAIL  ${e}`);
 
   if (errors.length) {
-    console.error(`\n${errors.length} error(s). english-grammar-data.js is NOT valid.`);
+    console.error(`\n${errors.length} error(s). en-grammar.js is NOT valid.`);
     process.exit(1);
   }
   console.log(`\nOK — ${topicCount} topics, ${warnings.length} warning(s), 0 errors.`);
