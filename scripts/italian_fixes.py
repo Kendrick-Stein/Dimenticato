@@ -94,12 +94,21 @@ def apply_vocab(entries, meta, fixes=None):
             _stale('vocab', '%s: no such entry' % word)
             continue
         changed = False
+        in_effect = True
         for k, new in (rec.get('to') or {}).items():
             cur = e.get(k) or ''
+            old = (rec.get('from') or {}).get(k, '')
+            if k == 'en':
+                # clean_italian_glosses lower-cases sense-initial words; compare
+                # (and write) the record's values in that normalised form
+                from clean_italian_glosses import normalise_en_case
+                new = normalise_en_case(new, e.get('pos'))
+                old = normalise_en_case(old, e.get('pos'))
             if cur == new:
                 continue
-            if cur != (rec.get('from') or {}).get(k, ''):
+            if cur != old:
                 _stale('vocab', '%s.%s = %r (expected %r)' % (target, k, cur, rec['from'].get(k)))
+                in_effect = False
                 continue
             if new == '':
                 e.pop(k, None)
@@ -111,7 +120,7 @@ def apply_vocab(entries, meta, fixes=None):
                 src = vs.source_index(meta, VOCAB_SOURCE)
             e['src'] = src
             edits += changed
-        elif rec.get('to') and all((e.get(k) or '') == v for k, v in rec['to'].items()):
+        elif rec.get('to') and in_effect:
             # already applied: keep the provenance mark stable
             if src is None:
                 src = vs.source_index(meta, VOCAB_SOURCE)

@@ -112,13 +112,17 @@ V.entries.forEach(e => {
 // every reviewed fix is in effect (records whose word was later renamed or
 // dropped are skipped; italian_fixes.py reports those as STALE)
 let fixesChecked = 0;
+const enKey = s => String(s || '').split(';').map(x => x.trim().replace(/\.$/, '')).join('; ').toLowerCase();
 VOCAB_FIXES.forEach(f => {
   if (!f.to || typeof f.to !== 'object' || !f.word) return;
   const e = words.get(f.word);
   if (!e) return;
   fixesChecked++;
   Object.entries(f.to).forEach(([k, v]) => {
-    check(e[k] === v || (v === '' && e[k] === undefined), `vocab ${f.word}.${k} = ${JSON.stringify(e[k])}, fix list says ${JSON.stringify(v)} (${f.why || ''})`);
+    // en goes through clean_italian_glosses.normalise_en_case (sense-initial
+    // lower case, no closing full stop), so compare it case-insensitively
+    const same = k === 'en' ? enKey(e[k]) === enKey(v) : e[k] === v;
+    check(same || (v === '' && e[k] === undefined), `vocab ${f.word}.${k} = ${JSON.stringify(e[k])}, fix list says ${JSON.stringify(v)} (${f.why || ''})`);
   });
 });
 check(fixesChecked > 3000, `only ${fixesChecked} vocab fixes found in effect`);

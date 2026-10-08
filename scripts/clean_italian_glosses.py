@@ -17,8 +17,12 @@
     对半重复（"奶油奶油"→"奶油"）也折叠，但 LEGIT_AA 白名单里的真实
     叠词（妈妈、谢谢、常常）保留。英文单词不做字面折叠，
     避免碰 "Bonbon" 这类真实词形。
-  - 大小写不自动归一：重复样本里 "China" / "Mediterranean" 本身就是
-    专有名词，自动小写会改错。
+  - 英文释义句首大写归一（normalise_en_case）：机翻把每个义项首字母都大写了
+    （"Hand"、"Perhaps"、"Of course."）。只在有把握时改小写：首词小写形式是
+    英语词库（data/vocab/en.js）的词头（含并入的屈折形式与复数）、且大写形式不是（English / Monday 这类
+    本来就大写的词库里是大写词头），或首词带常见普通词后缀（-ing / -ment …）；
+    KEEP_CAP 里的月份、星期、民族宗教词（China、Turkey、Polish 这类大小写
+    两义的词）不动；专名 / 缩写词条整条跳过。义项末尾的句号一并去掉。
 
 处理对象：
   - data/vocab/it.js   （DIM_VOCAB.it，schema v1，见 docs/vocab-schema.md；
@@ -160,6 +164,65 @@ def clean_gloss(raw):
     return rebuilt, rebuilt != text
 
 
+# 首词保持大写：月份 / 星期 / 称谓 / 民族宗教词，以及小写形式是另一个词的专名
+# （China 瓷器、Turkey 火鸡、Polish 擦亮、March 行进、May 可以）。
+KEEP_CAP = frozenset('''
+January February March April May June July August September October November December
+Monday Tuesday Wednesday Thursday Friday Saturday Sunday
+I Mr Mrs Ms Dr St Lord God Christ Christian Catholic Protestant Bible Easter Christmas Mass
+Jew Jewish Nazi Latin Greek Roman Pole Polish China Turkey Internet Renaissance
+'''.split())
+COMMON_SUFFIX = re.compile(r'(?:ing|ed|ment|ments|ness|ity|ities|tion|tions|sion|sions|ure|ly|able|ible|'
+                           r'ous|ive|ful|less|er|ers|or|ors|ism|ist|ists|ance|ence|ship|hood)$')
+FIRST_WORD = re.compile(r"^([A-Z][a-z][a-z'-]*)")
+_EN_HEADWORDS = None
+
+
+def en_headwords():
+    global _EN_HEADWORDS
+    if _EN_HEADWORDS is None:
+        words = set()
+        for e in vs.read_vocab('en')['entries']:
+            words.add(e['word'])
+            legacy = e.get('legacyWord') or []
+            words.update([legacy] if isinstance(legacy, str) else legacy)  # merged inflections
+        _EN_HEADWORDS = words
+    return _EN_HEADWORDS
+
+
+def is_common_word(word, headwords):
+    low = word.lower()
+    if low in headwords or COMMON_SUFFIX.search(word):
+        return True
+    # plurals of headwords: allergies, tomatoes, bridges
+    return (low.endswith('ies') and low[:-3] + 'y' in headwords) or \
+        (low.endswith('es') and low[:-2] in headwords) or \
+        (low.endswith('s') and low[:-1] in headwords)
+
+
+def normalise_en_sense(sense):
+    sense = sense.strip()
+    if re.search(r'[a-z]{2}\.$', sense) and not sense.endswith('etc.') and sense.count('.') == 1:
+        sense = sense[:-1]
+    m = FIRST_WORD.match(sense)
+    if not m:
+        return sense
+    word = m.group(1)
+    headwords = en_headwords()
+    if word in KEEP_CAP or word in headwords:
+        return sense
+    if is_common_word(word, headwords):
+        return sense[0].lower() + sense[1:]
+    return sense
+
+
+def normalise_en_case(text, pos=None):
+    """'Hand; Palm' -> 'hand; palm'; proper nouns and abbreviations untouched."""
+    if not text or pos in ('properNoun', 'abbreviation'):
+        return text
+    return '; '.join(normalise_en_sense(s) for s in text.split(';') if s.strip())
+
+
 def clean_entries(entries):
     fixed_english = fixed_chinese = 0
     for entry in entries:
@@ -175,6 +238,10 @@ def clean_entries(entries):
                     fixed_english += 1
                 else:
                     fixed_chinese += 1
+        cased = normalise_en_case(entry.get('en'), entry.get('pos'))
+        if cased != entry.get('en'):
+            entry['en'] = cased
+            fixed_english += 1
     return fixed_english, fixed_chinese
 
 
