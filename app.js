@@ -15,8 +15,8 @@
   'use strict';
 
   var $ = function (id) { return document.getElementById(id); };
-  var esc = function (s) { return global.escapeHtml(s == null ? '' : String(s)); };
-  var escAttr = function (s) { return global.escapeAttribute(s == null ? '' : String(s)); };
+  var esc = global.escapeHtml;           // lib/utils.js
+  var escAttr = global.escapeAttribute;  // lib/utils.js
   var fmt = function (n) { return Number(n || 0).toLocaleString('en-US'); };
 
   var LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
@@ -41,31 +41,7 @@
     return global.GrammarBook || (typeof GrammarBook !== 'undefined' ? GrammarBook : null);
   }
 
-  // ==================== 朗读 ====================
-
-  var Speaker = {
-    voices: [],
-    init: function () {
-      var synth = global.speechSynthesis;
-      if (!synth) return;
-      var self = this;
-      var load = function () { self.voices = synth.getVoices() || []; };
-      load();
-      if (synth.addEventListener) synth.addEventListener('voiceschanged', load);
-    },
-    speak: function (text, l) {
-      var synth = global.speechSynthesis;
-      if (!synth || !text || typeof SpeechSynthesisUtterance === 'undefined') return;
-      var p = profile(l);
-      synth.cancel();
-      var u = new SpeechSynthesisUtterance(text);
-      u.lang = p.tts;
-      u.rate = 0.9; // 稍慢，便于跟读
-      var voice = this.voices.find(function (v) { return p.voice.test(v.lang); });
-      if (voice) u.voice = voice;
-      synth.speak(u);
-    }
-  };
+  // 朗读：全局 Speaker（lib/utils.js）
 
   // ==================== 进度（已掌握集合 + 计数器） ====================
   //
@@ -114,7 +90,7 @@
     forget: function (l) {
       this.flush();
       var sysKey = this.systemKey(l);
-      var wbPrefix = 'dimenticato_progress_wb_' + l + '_';
+      var wbPrefix = global.DimStorage.key(l, 'wb_');
       var self = this;
       Object.keys(this.sets).forEach(function (key) {
         if (key === sysKey || key.indexOf(wbPrefix) === 0) delete self.sets[key];
@@ -759,7 +735,6 @@
         '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Progressi</span>' +
           '<h1 class="page-title">学习进度</h1><p>只统计' + esc(p.cn) + '。换语言请用顶栏的语言切换。</p></div>' +
         '<div class="btn-row">' +
-          '<button class="btn" data-action="stats-modal"><span class="msr" aria-hidden="true">monitoring</span>详细图表</button>' +
           (due ? '<button class="primary-btn" data-action="review">复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
         '</div>' +
       '</div>' +
@@ -796,7 +771,10 @@
             '<dt>待复习</dt><dd class="num">' + fmt(due) + '</dd>' +
           '</dl>' +
           '<p class="muted small">连续答对两次记为已掌握；答错会退回未掌握，并按 SM-2 安排复习。</p></div>' +
-      '</div>';
+      '</div>' +
+      (global.StatsCharts ? global.StatsCharts.sectionsHtml(l) : '');
+    // 图表：Chart.js 在这里才懒加载（stats-charts.js）
+    if (global.StatsCharts) global.StatsCharts.mount(l);
   }
 
   // ==================== 设置页 ====================
@@ -913,7 +891,7 @@
       var pad = function (n) { return String(n).padStart(2, '0'); };
       var name = 'Dimenticato_学习数据_' + now.getFullYear() + pad(now.getMonth() + 1) + pad(now.getDate()) +
         '_' + pad(now.getHours()) + pad(now.getMinutes()) + '.json';
-      download(name, JSON.stringify(data, null, 2), 'application/json');
+      global.downloadFile(name, JSON.stringify(data, null, 2), 'application/json');
       var d = global.DimStorage.describePayload(data);
       alert('学习数据已导出：' + name + '\n\n' +
         (d.languages.length ? d.languages.join('，') : '暂无已掌握单词') + '\n单词本 ' + d.wordbooks + ' 个 · 共 ' + d.keys + ' 项数据');
@@ -979,18 +957,6 @@
     var result = global.DimStorage.reset({ scope: scope });
     alert('【' + label + '】进度已重置（清除 ' + result.removed.length + ' 项）。\n\n页面将刷新以应用变更。');
     setTimeout(function () { location.reload(); }, 400);
-  }
-
-  function download(name, text, type) {
-    var blob = new Blob([text], { type: type || 'text/plain' });
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement('a');
-    a.href = url;
-    a.download = name;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
   }
 
   // ==================== 提示条 ====================
@@ -1300,15 +1266,16 @@
         return;
       case 'go-vocab': global.showScreen('vocabScreen'); return;
       case 'go-progress': global.showScreen('progressScreen'); return;
-      case 'stats-modal':
-        if (typeof global.showEnhancedStatsModal === 'function') global.showEnhancedStatsModal();
-        return;
       case 'help':
         $('helpModal').classList.remove('hidden');
         return;
       case 'community-upload':
         if (global.CommunityWordbooks) global.CommunityWordbooks.showUploadDialog();
         return;
+      case 'community-upload-close': global.CommunityWordbooks.hideUploadDialog(); return;
+      case 'community-preview-close': global.CommunityWordbooks.hidePreviewModal(); return;
+      case 'community-back': global.CommunityWordbooks.backToWelcome(); return;
+      case 'community-file-pick': $('uploadFileInput').click(); return;
       default:
         openModule(action);
     }
@@ -1425,7 +1392,6 @@
       document.body.setAttribute('data-language', global.LangLoader.detectLanguage());
       renderLangSwitch();
       syncLangSwitch();
-      global.DimStorage.migrateLegacyWordbookProgress();
       $('spellKeys').innerHTML = '';
       Speaker.init();
       bind();

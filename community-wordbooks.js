@@ -4,15 +4,16 @@
  *
  * 安全约定：
  * - 社区数据全部来自匿名可写的 Supabase 表，任何字段进入 innerHTML 前必须经过
- *   esc()/escAttr()（转发到 lib/utils.js 的 escapeHtml / escapeAttribute）。
- * - 卡片按钮不再使用内联 onclick，改为 data-* + 容器事件委托（见 init）。
+ *   escapeHtml()/escapeAttribute()（lib/utils.js）。
+ * - 不使用内联事件：卡片按钮走 data-* + 容器事件委托，静态控件在 init 里绑定。
+ * - 语言映射只走 supabase-config.js 的 communityLanguage()。
  * - 词本文件只允许从 Supabase Storage 或本站同源地址下载（见 isTrustedFileUrl）。
  */
 
 const CommunityWordbooks = {
   currentFilters: {
     difficulty: 'all',
-    language: 'italian', // 语言 key，'all' 表示不限语言
+    language: window.Languages.DEFAULT_KEY, // 语言 key，'all' 表示不限语言
     tags: [],
     searchTerm: '',
     sortBy: 'download_count' // 'download_count', 'created_at', 'name'
@@ -20,29 +21,12 @@ const CommunityWordbooks = {
 
   allWordbooks: [], // 缓存所有词本数据（未按语言过滤）
 
-  activeLanguage: 'italian', // 打开社区页面时所处的语言入口
+  activeLanguage: window.Languages.DEFAULT_KEY, // 打开社区页面时所处的语言入口
   returnScreen: 'vocabScreen', // 返回目标
   bound: false, // 事件是否已绑定（init 幂等）
   serverLanguageFilter: true, // 服务端 language 过滤是否可用（老库可能没有该列）
 
   // ==================== 基础工具 ====================
-
-  /** HTML 转义（运行时通过 window 解析，避免依赖脚本加载顺序） */
-  esc(value) {
-    if (typeof window.escapeHtml === 'function') return window.escapeHtml(value);
-    return (value == null ? '' : String(value))
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  },
-
-  /** HTML 属性转义 */
-  escAttr(value) {
-    if (typeof window.escapeAttribute === 'function') return window.escapeAttribute(value);
-    return this.esc(value).replace(/`/g, '&#96;');
-  },
 
   /** 数字字段兜底（远端数据可能是 null 或字符串） */
   toCount(value) {
@@ -60,29 +44,19 @@ const CommunityWordbooks = {
 
   // ==================== 语言上下文 ====================
 
-  /** 语言配置表（来自 supabase-config.js，运行时解析） */
+  /** 语言选项（supabase-config.js） */
   languageOptions() {
-    return window.COMMUNITY_LANGUAGES || [{ key: 'italian', db: 'Italian', label: '意大利语' }];
+    return window.COMMUNITY_LANGUAGES;
   },
 
-  /** 把任意写法（'Italian' / 'italian' / 空）归一化为语言 key；空值按意大利语处理（兼容历史数据） */
+  /** 任意写法（'Italian' / 'italian' / 'it' / 空）→ 语言 key；空值按意大利语处理（兼容历史数据） */
   normalizeLanguage(value) {
-    const raw = (value == null ? '' : String(value)).trim().toLowerCase();
-    if (!raw) return 'italian';
-    const hit = this.languageOptions().find(opt => opt.key === raw || opt.db.toLowerCase() === raw);
-    return hit ? hit.key : 'italian';
-  },
-
-  /** 语言 key → 数据库取值 */
-  languageDbValue(key) {
-    const hit = this.languageOptions().find(opt => opt.key === key);
-    return hit ? hit.db : 'Italian';
+    return window.communityLanguage(value).key;
   },
 
   /** 语言 key → 中文名 */
   languageLabel(key) {
-    const hit = this.languageOptions().find(opt => opt.key === key);
-    return hit ? hit.label : key;
+    return window.communityLanguage(key).label;
   },
 
   /** 当前所处的语言入口 */
@@ -208,7 +182,7 @@ const CommunityWordbooks = {
     group.innerHTML = `
       <label for="uploadLanguage">词本语言 *</label>
       <select id="uploadLanguage" class="form-input" required>
-        ${this.languageOptions().map(opt => `<option value="${this.escAttr(opt.key)}">${this.esc(opt.label)}</option>`).join('')}
+        ${this.languageOptions().map(opt => `<option value="${window.escapeAttribute(opt.key)}">${window.escapeHtml(opt.label)}</option>`).join('')}
       </select>
     `;
     form.insertBefore(group, difficultyLabel.parentElement);
@@ -382,7 +356,7 @@ const CommunityWordbooks = {
           name: name,
           description: description,
           author_name: authorName,
-          language: this.languageDbValue(language),
+          language: window.communityLanguage(language).db,
           difficulty: difficulty,
           tags: selectedTags,
           word_count: wordCount,
@@ -515,7 +489,7 @@ const CommunityWordbooks = {
       select.className = 'filter-select';
       select.setAttribute('aria-label', '按语言筛选');
       select.innerHTML = this.languageOptions()
-        .map(opt => `<option value="${this.escAttr(opt.key)}">${this.esc(opt.label)}</option>`)
+        .map(opt => `<option value="${window.escapeAttribute(opt.key)}">${window.escapeHtml(opt.label)}</option>`)
         .join('') + '<option value="all">全部语言</option>';
       select.addEventListener('change', () => this.updateLanguageFilter(select.value));
       controls.appendChild(select);
@@ -582,12 +556,11 @@ const CommunityWordbooks = {
         query = query.eq('difficulty', this.currentFilters.difficulty);
       }
 
-      // 应用语言筛选（兼容历史行：language 为空视为意大利语）
+      // 应用语言筛选（兼容历史行：language 为空视为意大利语，见 communityLanguage）
       if (withLanguage && this.currentFilters.language && this.currentFilters.language !== 'all') {
-        const key = this.currentFilters.language;
-        const dbValue = this.languageDbValue(key);
-        const clauses = [`language.eq.${dbValue}`, `language.eq.${key}`];
-        if (key === 'italian') clauses.push('language.is.null');
+        const info = window.communityLanguage(this.currentFilters.language);
+        const clauses = info.matches.map(v => `language.eq.${v}`);
+        if (info.includesNull) clauses.push('language.is.null');
         query = query.or(clauses.join(','));
       }
 
@@ -645,9 +618,9 @@ const CommunityWordbooks = {
 
     container.innerHTML = `
       <div class="empty-message">
-        <div class="empty-icon"><span class="msr" aria-hidden="true">${this.esc(icon)}</span></div>
-        <p>${this.esc(title)}</p>
-        <p style="font-size: 0.9rem; margin-top: 0.5rem;">${this.esc(detail)}</p>
+        <div class="empty-icon"><span class="msr" aria-hidden="true">${window.escapeHtml(icon)}</span></div>
+        <p>${window.escapeHtml(title)}</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;">${window.escapeHtml(detail)}</p>
         <div style="margin-top: 1rem; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
           ${retryHtml}
           ${extraActionHtml || ''}
@@ -685,32 +658,32 @@ const CommunityWordbooks = {
       const difficultyInfo = difficultyLevels[wb.difficulty] || { label: wb.difficulty || '未分级' };
       const language = this.normalizeLanguage(wb.language);
       const tagsHtml = Array.isArray(wb.tags) && wb.tags.length > 0
-        ? wb.tags.map(tag => `<span class="wordbook-tag">${this.esc(tag)}</span>`).join('')
+        ? wb.tags.map(tag => `<span class="wordbook-tag">${window.escapeHtml(tag)}</span>`).join('')
         : '';
 
       return `
         <div class="community-wordbook-card">
           <div class="wordbook-card-header">
-            <h3 class="wordbook-card-title">${this.esc(wb.name)}</h3>
-            <span class="wordbook-difficulty-badge">${this.esc(difficultyInfo.label)}</span>
+            <h3 class="wordbook-card-title">${window.escapeHtml(wb.name)}</h3>
+            <span class="wordbook-difficulty-badge">${window.escapeHtml(difficultyInfo.label)}</span>
           </div>
 
           <div class="wordbook-card-meta">
-            <span><span class="msr" aria-hidden="true">translate</span> ${this.esc(this.languageLabel(language))}</span>
-            <span><span class="msr" aria-hidden="true">person</span> ${this.esc(wb.author_name)}</span>
+            <span><span class="msr" aria-hidden="true">translate</span> ${window.escapeHtml(this.languageLabel(language))}</span>
+            <span><span class="msr" aria-hidden="true">person</span> ${window.escapeHtml(wb.author_name)}</span>
             <span><span class="msr" aria-hidden="true">menu_book</span> ${this.toCount(wb.word_count)} 词</span>
             <span><span class="msr" aria-hidden="true">download</span> ${this.toCount(wb.download_count)} 次下载</span>
           </div>
 
           ${tagsHtml ? `<div class="wordbook-card-tags">${tagsHtml}</div>` : ''}
 
-          ${wb.description ? `<p class="wordbook-card-description">${this.esc(wb.description)}</p>` : ''}
+          ${wb.description ? `<p class="wordbook-card-description">${window.escapeHtml(wb.description)}</p>` : ''}
 
           <div class="wordbook-card-actions">
-            <button type="button" class="wordbook-action-btn preview" data-community-action="preview" data-community-id="${this.escAttr(wb.id)}">
+            <button type="button" class="wordbook-action-btn preview" data-community-action="preview" data-community-id="${window.escapeAttribute(wb.id)}">
               <span class="msr" aria-hidden="true">visibility</span> 预览
             </button>
-            <button type="button" class="wordbook-action-btn download" data-community-action="download" data-community-id="${this.escAttr(wb.id)}">
+            <button type="button" class="wordbook-action-btn download" data-community-action="download" data-community-id="${window.escapeAttribute(wb.id)}">
               <span class="msr" aria-hidden="true">download</span> 导入学习
             </button>
           </div>
@@ -973,26 +946,26 @@ const CommunityWordbooks = {
 
     const metaHtml = `
       <div class="preview-meta">
-        <span><span class="msr" aria-hidden="true">translate</span> ${this.esc(this.languageLabel(languageKey))}</span>
-        <span><span class="msr" aria-hidden="true">person</span> 作者: ${this.esc(wordbook.author_name)}</span>
-        <span><span class="msr" aria-hidden="true">signal_cellular_alt</span> ${this.esc(difficultyInfo.label)}</span>
+        <span><span class="msr" aria-hidden="true">translate</span> ${window.escapeHtml(this.languageLabel(languageKey))}</span>
+        <span><span class="msr" aria-hidden="true">person</span> 作者: ${window.escapeHtml(wordbook.author_name)}</span>
+        <span><span class="msr" aria-hidden="true">signal_cellular_alt</span> ${window.escapeHtml(difficultyInfo.label)}</span>
         <span><span class="msr" aria-hidden="true">menu_book</span> ${this.toCount(wordbook.word_count)} 词</span>
         <span><span class="msr" aria-hidden="true">download</span> ${this.toCount(wordbook.download_count)} 次下载</span>
       </div>
       ${Array.isArray(wordbook.tags) && wordbook.tags.length > 0 ? `
         <div class="preview-tags">
-          ${wordbook.tags.map(tag => `<span class="wordbook-tag">${this.esc(tag)}</span>`).join('')}
+          ${wordbook.tags.map(tag => `<span class="wordbook-tag">${window.escapeHtml(tag)}</span>`).join('')}
         </div>
       ` : ''}
-      ${wordbook.description ? `<p class="preview-description">${this.esc(wordbook.description)}</p>` : ''}
+      ${wordbook.description ? `<p class="preview-description">${window.escapeHtml(wordbook.description)}</p>` : ''}
     `;
     document.getElementById('previewWordbookMeta').innerHTML = metaHtml;
 
     const wordsHtml = words.map(word => `
       <div class="preview-word-item">
-        <div class="preview-word-italian">${this.esc(word.word)}</div>
-        <div class="preview-word-english">${this.esc(word.zh)}</div>
-        ${word.en ? `<div class="preview-word-chinese">${this.esc(word.en)}</div>` : ''}
+        <div class="preview-word-italian">${window.escapeHtml(word.word)}</div>
+        <div class="preview-word-english">${window.escapeHtml(word.zh)}</div>
+        ${word.en ? `<div class="preview-word-chinese">${window.escapeHtml(word.en)}</div>` : ''}
       </div>
     `).join('');
 
@@ -1030,3 +1003,22 @@ if (document.readyState === 'loading') {
 } else {
   CommunityWordbooks.init();
 }
+
+// 静态控件（index.html 里的上传表单 / 搜索框 / 难度筛选）：文档级委托，不用内联事件。
+// 按钮类控件（返回 / 关闭 / 选择文件）走 app.js 的 data-action。
+document.addEventListener('submit', (event) => {
+  if (event.target && event.target.id === 'communityUploadForm') {
+    event.preventDefault();
+    CommunityWordbooks.uploadWordbook();
+  }
+});
+document.addEventListener('change', (event) => {
+  const t = event.target;
+  if (!t) return;
+  if (t.id === 'uploadFileInput') CommunityWordbooks.selectFile();
+  else if (t.dataset && t.dataset.communityFilter === 'difficulty') CommunityWordbooks.updateDifficultyFilter(t.value);
+});
+document.addEventListener('input', (event) => {
+  const t = event.target;
+  if (t && t.dataset && t.dataset.communityFilter === 'search') CommunityWordbooks.searchWordbooks(t.value);
+});
