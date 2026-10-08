@@ -626,7 +626,9 @@
     var due = countDue(l, src.entries);
     var masteredIn = 0;
     src.entries.forEach(function (e) { if (mastered.has(e.word)) masteredIn++; });
-    var sessionN = pr.session === 'all' ? src.entries.length : Math.min(parseInt(pr.session, 10) || 20, src.entries.length);
+    // 与 buildSession 的筛选一致：到期复习 = 到期词；未掌握 = 未掌握的词（含到期的）
+    var pool = pr.filter === 'due' ? due : pr.filter === 'new' ? src.entries.length - masteredIn : src.entries.length;
+    var sessionN = pr.session === 'all' ? pool : Math.min(parseInt(pr.session, 10) || 20, pool);
 
     var sourceChips = chip('系统词库', 'data-source="system"', src.kind === 'system') +
       (books.length ? books.map(function (b) {
