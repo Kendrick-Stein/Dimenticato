@@ -26,10 +26,32 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+  <script>
+    // 图标是连字字体：字体到位前 .msr 里是英文单词（arrow_forward…），先藏起来占 1em。
+    // 样式表加载完、字体真正可用时揭开；字体拿不到也在 6 秒后揭开（宁可显示英文也不留空洞）。
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('msr-pending');
+      var reveal = function () { root.classList.remove('msr-pending'); };
+      window.__msrStylesheetLoaded = function () {
+        if (!document.fonts || !document.fonts.load) return reveal();
+        document.fonts.load('24px "Material Symbols Rounded"', 'search').then(reveal, reveal);
+      };
+      setTimeout(reveal, 6000);
+    })();
+  </script>
+  <!-- 字体样式表不阻塞首帧：preload + media=print 加载完再切到 all；无 JS 时走 noscript。
+       正文字体 display=swap（先用系统字体），图标字体 display=block（不闪英文字）。 -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600&display=swap" media="print" onload="this.media='all'">
   <!-- 图标字体只取用到的图标（icon_names 必须按字母序）：整套 ~900KB，子集 ~20KB。
        新增图标要加进这里，否则会显示成英文字；tests/check-icons.js 会拦住漏加的。 -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&amp;icon_names=add,arrow_back,arrow_forward,auto_awesome,auto_stories,backup,bookmark_add,cancel,check_circle,chevron_right,cloud_off,dark_mode,delete,download,edit,edit_note,error,explore,extension,groups,help,history,hourglass_empty,insights,ios_share,join_inner,keyboard,light_mode,link,menu,menu_book,person,play_arrow,playlist_add,quiz,radio_button_unchecked,refresh,replay,restart_alt,route,school,search,settings,signal_cellular_alt,sports_esports,style,sync_alt,task_alt,translate,travel_explore,upload,upload_file,visibility,volume_up,warning&amp;display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&amp;icon_names=add,arrow_back,arrow_forward,auto_awesome,auto_stories,backup,bookmark_add,cancel,check_circle,chevron_right,cloud_off,dark_mode,delete,download,edit,edit_note,error,explore,extension,groups,help,history,hourglass_empty,insights,ios_share,join_inner,keyboard,light_mode,link,menu,menu_book,person,play_arrow,playlist_add,quiz,radio_button_unchecked,refresh,replay,restart_alt,route,school,search,settings,signal_cellular_alt,sports_esports,style,sync_alt,task_alt,translate,travel_explore,upload,upload_file,visibility,volume_up,warning&amp;display=block">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&amp;icon_names=add,arrow_back,arrow_forward,auto_awesome,auto_stories,backup,bookmark_add,cancel,check_circle,chevron_right,cloud_off,dark_mode,delete,download,edit,edit_note,error,explore,extension,groups,help,history,hourglass_empty,insights,ios_share,join_inner,keyboard,light_mode,link,menu,menu_book,person,play_arrow,playlist_add,quiz,radio_button_unchecked,refresh,replay,restart_alt,route,school,search,settings,signal_cellular_alt,sports_esports,style,sync_alt,task_alt,translate,travel_explore,upload,upload_file,visibility,volume_up,warning&amp;display=block" media="print" onload="this.media='all';window.__msrStylesheetLoaded&amp;&amp;window.__msrStylesheetLoaded()">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&amp;icon_names=add,arrow_back,arrow_forward,auto_awesome,auto_stories,backup,bookmark_add,cancel,check_circle,chevron_right,cloud_off,dark_mode,delete,download,edit,edit_note,error,explore,extension,groups,help,history,hourglass_empty,insights,ios_share,join_inner,keyboard,light_mode,link,menu,menu_book,person,play_arrow,playlist_add,quiz,radio_button_unchecked,refresh,replay,restart_alt,route,school,search,settings,signal_cellular_alt,sports_esports,style,sync_alt,task_alt,translate,travel_explore,upload,upload_file,visibility,volume_up,warning&amp;display=block">
+  </noscript>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-language="italian">

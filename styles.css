@@ -133,6 +133,9 @@ h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
 }
 
 /* Material Symbols ligatures (icons inside feature modules) */
+/* Until the icon font is usable (index.html removes .msr-pending), hide the
+   ligature words and reserve the icon's 1em box so nothing reflows. */
+.msr-pending .msr { visibility: hidden; width: 1em; overflow: hidden; }
 .msr {
   font-family: "Material Symbols Rounded";
   font-weight: normal;
