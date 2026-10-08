@@ -408,6 +408,9 @@
                 aria-label="填写变位"
                 placeholder="例如：parlo"
                 autocomplete="off"
+                autocapitalize="off"
+                autocorrect="off"
+                spellcheck="false"
               >
               <button class="primary-btn" id="conjCheckBtn">检查答案</button>
             </div>
@@ -418,13 +421,15 @@
               <button class="primary-btn" id="conjFullCheckBtn">检查整组答案</button>
             </div>
 
+            <div class="accent-keys" id="conjKeys" aria-label="特殊字母"></div>
+
             <div class="hidden" id="conjMcqSection">
               <div class="field-label">请选择正确变位</div>
               <div class="options" id="conjOptions"></div>
             </div>
           </div>
 
-          <div class="practice-feedback hidden" id="conjFeedback">
+          <div class="practice-feedback hidden" id="conjFeedback" role="status" aria-live="polite">
             <p class="feedback-text"></p>
             <button class="primary-btn" id="conjNextBtn">下一个 <span class="msr" aria-hidden="true">arrow_forward</span></button>
           </div>
@@ -530,12 +535,13 @@
             <div class="hidden" id="vcPracticeInputSection">
               <div class="field-label">请输入答案</div>
               <div class="vc-translation-grid" id="vcTranslationGrid"></div>
+              <div class="accent-keys" id="vcPracticeKeys" aria-label="特殊字母"></div>
               <button class="primary-btn" id="vcPracticeCheckBtn">检查答案</button>
               <button class="hint-btn" id="vcPracticeHintBtn">提示一个单词</button>
             </div>
           </div>
 
-          <div class="practice-feedback hidden" id="vcPracticeFeedback">
+          <div class="practice-feedback hidden" id="vcPracticeFeedback" role="status" aria-live="polite">
             <p class="feedback-text"></p>
             <button class="primary-btn" id="vcPracticeNextBtn">下一题 <span class="msr" aria-hidden="true">arrow_forward</span></button>
           </div>

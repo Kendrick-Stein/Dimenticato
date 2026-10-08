@@ -397,14 +397,20 @@ const VerbCollocationPractice = (() => {
     }
   }
 
+  function langCode() {
+    return (window.Languages && window.Languages.code(state.lang)) || '';
+  }
+
   function renderTranslationInputs(question) {
+    const code = langCode();
+    const langAttr = code ? ` lang="${escapeAttribute(code)}"` : '';
     dom.translationGrid.innerHTML = question.tokens.map((token, index) => {
       const placeholder = '_'.repeat(token.word.length);
       const value = token.revealed ? token.word : '';
       const disabled = token.revealed ? 'disabled' : '';
       return `
         <label class="vc-translation-token ${token.revealed ? 'revealed' : ''}" data-index="${index}">
-          <input type="text" class="vc-translation-input" data-index="${index}" value="${escapeAttribute(value)}" ${disabled} autocomplete="off">
+          <input type="text" class="vc-translation-input" data-index="${index}" value="${escapeAttribute(value)}" ${disabled} autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"${langAttr}>
           <span class="vc-translation-placeholder">${placeholder}${escapeHtml(token.punctuation)}</span>
         </label>
       `;
@@ -412,6 +418,7 @@ const VerbCollocationPractice = (() => {
 
     const firstInput = dom.translationGrid.querySelector('.vc-translation-input:not([disabled])');
     firstInput?.focus();
+    mountKeys(code);
     dom.translationGrid.querySelectorAll('.vc-translation-input').forEach(input => {
       input.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
@@ -420,6 +427,25 @@ const VerbCollocationPractice = (() => {
         }
       });
     });
+  }
+
+  // 特殊字母键盘：插到最近获得焦点的空格里（键按下时不抢焦点）
+  let lastInput = null;
+  function currentInput() {
+    if (lastInput && lastInput.isConnected !== false && !lastInput.disabled
+      && dom.translationGrid && dom.translationGrid.contains(lastInput)) return lastInput;
+    return dom.translationGrid ? dom.translationGrid.querySelector('.vc-translation-input:not([disabled])') : null;
+  }
+  function mountKeys(code) {
+    const host = document.getElementById('vcPracticeKeys');
+    if (!host || !window.Languages || typeof window.Languages.mountAccentKeys !== 'function') return;
+    window.Languages.mountAccentKeys(host, currentInput, code);
+    if (!host._vcFocusBound && dom.translationGrid) {
+      host._vcFocusBound = true;
+      dom.translationGrid.addEventListener('focusin', (event) => {
+        if (event.target && event.target.classList && event.target.classList.contains('vc-translation-input')) lastInput = event.target;
+      });
+    }
   }
 
   function renderOptions(options, answer) {
