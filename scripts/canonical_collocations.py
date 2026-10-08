@@ -634,6 +634,9 @@ def canonicalize(code, data):
     data = json.loads(json.dumps(data), parse_float=lambda s: int(float(s)) if float(s).is_integer() else float(s))
     if not _is_canonical(data):
         data = _from_legacy(code, data)
+    if code == 'it':
+        import italian_fixes  # reviewed fix list: scripts/it_fixes/collocations.json
+        data = italian_fixes.apply_collocations(data)
     meta = data.get('meta') or {}
 
     rename = None

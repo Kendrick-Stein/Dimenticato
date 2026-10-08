@@ -335,6 +335,113 @@ def apply_cognates(entries, fixes=None):
 
 
 # ---------------------------------------------------------------------------
+# collocations
+# ---------------------------------------------------------------------------
+
+# the book's inline glosses: "Ti (=a te) ho comprato", "Dammi(a me)una mano", "ci(=noi)destina"
+_COLL_NOTE = re.compile(r'\s*\(\s*=?\s*(?:a\s+)?(?:me|te|lui|lei|noi|voi|loro|t)\s*\)\s*\)?\s*')
+_LETTER = 'A-Za-zÀ-ÖØ-öø-ÿ'
+
+
+def _coll_text(text, tokens):
+    def note(m):
+        before, after = m.string[:m.start()], m.string[m.end():]
+        if not before or before.endswith((' ', '(')):
+            return ''
+        if after[:1] in ('', '.', ',', '!', '?', ';', ':', "'"):
+            return ''
+        return ' '
+    text = _COLL_NOTE.sub(note, text)
+    text = re.sub(r'^(\w+),\s+', r'\1 ', text) if re.match(r'^(Le|Gli|Mi|Ti|Ci|Vi), ', text) else text
+    for bad, good in tokens:
+        pat = re.compile(r'(?<![%s])%s(?![%s])' % (_LETTER, re.escape(bad), _LETTER))
+        text = pat.sub(lambda m: good, text)
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def _find_example(verbs, verb, key, text):
+    v = verbs.get(verb)
+    for i, ex in enumerate(((v or {}).get('keys') or {}).get(key) or []):
+        if ex.get('text') == text:
+            return i
+    return None
+
+
+def _add_example(verbs, verb, key, ex, after=None):
+    if verb not in verbs:
+        items = list(verbs.items())
+        pos = next((n + 1 for n, (w, _) in enumerate(items) if w == after), len(items))
+        items.insert(pos, (verb, {'word': verb, 'order': [], 'keys': {}}))
+        verbs.clear()
+        verbs.update(items)
+    v = verbs[verb]
+    v.setdefault('order', [])
+    v.setdefault('keys', {})
+    if key not in v['order']:
+        v['order'].append(key)
+    dest = v['keys'].setdefault(key, [])
+    if all(e.get('text') != ex.get('text') for e in dest):
+        dest.append(ex)
+
+
+def apply_collocations(data, fixes=None):
+    """Apply it_fixes/collocations.json to a collocations/1 payload (before normalisation).
+
+    Order: headword renames (merging into the real verb), example text fixes, zh fixes
+    and glued-example splits, moves of misfiled examples, drops, verb-level zh.
+    """
+    fixes = fixes if fixes is not None else _load('collocations.json')
+    if not fixes:
+        return data
+    verbs = data['verbs']
+    for rec in fixes.get('renames') or []:
+        if rec['from'] not in verbs:
+            continue
+        names = list(verbs)
+        n = names.index(rec['from'])
+        prev = names[n - 1] if n else None
+        old = verbs.pop(rec['from'])
+        for k in old.get('order') or list(old.get('keys') or {}):
+            for ex in (old.get('keys') or {}).get(k) or []:
+                _add_example(verbs, rec['to'], (rec.get('keys') or {}).get(k, k), ex, after=prev)
+    tokens = fixes.get('tokens') or []
+    for v in verbs.values():
+        for exs in (v.get('keys') or {}).values():
+            for ex in exs:
+                ex['text'] = _coll_text(ex['text'], tokens)
+    for rec in fixes.get('zh') or []:
+        i = _find_example(verbs, rec['verb'], rec['key'], rec['text'])
+        if i is None:
+            _stale('collocations', 'zh %s/%s: %r not found' % (rec['verb'], rec['key'], rec['text']))
+            continue
+        ex = verbs[rec['verb']]['keys'][rec['key']][i]
+        if ex.get('zh') == rec['from']:
+            ex['zh'] = rec['to']
+        elif ex.get('zh') != rec['to']:
+            _stale('collocations', 'zh %s: %r' % (rec['verb'], ex.get('zh')))
+            continue
+        if rec.get('split'):
+            _add_example(verbs, rec['verb'], rec['key'], dict(rec['split']))
+    for rec in fixes.get('moves') or []:
+        i = _find_example(verbs, rec['verb'], rec['key'], rec['text'])
+        to = rec['to']
+        if i is None:
+            if _find_example(verbs, to['verb'], to['key'], rec['text']) is None:
+                _stale('collocations', 'move %s/%s: %r not found' % (rec['verb'], rec['key'], rec['text']))
+            continue
+        ex = verbs[rec['verb']]['keys'][rec['key']].pop(i)
+        _add_example(verbs, to['verb'], to['key'], ex, after=rec['verb'])
+    for rec in fixes.get('drops') or []:
+        i = _find_example(verbs, rec['verb'], rec['key'], rec['text'])
+        if i is not None:
+            verbs[rec['verb']]['keys'][rec['key']].pop(i)
+    for word, zh in (fixes.get('verbZh') or {}).items():
+        if word in verbs:
+            verbs[word]['zh'] = zh
+    return data
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
