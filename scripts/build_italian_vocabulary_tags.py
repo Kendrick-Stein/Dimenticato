@@ -38,6 +38,20 @@ Sources (downloads kept out of the repo, build-time only)
 
   python3 scripts/build_italian_vocabulary_tags.py \\
       --kaikki /tmp/itv/kaikki-it.jsonl --morphit /tmp/itv/morph.utf8
+
+Gap filling (also run at the end of a full build; standalone it needs no
+Wiktionary dump, Morph-it! is optional):
+
+  python3 scripts/build_italian_vocabulary_tags.py --fill-missing \\
+      [--morphit /tmp/itv/morph.utf8]
+
+  only entries *without* a `pos` / noun `gender` are touched:
+    pos     acronyms ("CEO", "bpm") -> abbreviation; else spaCy it_core_news_sm
+    gender  multi-word nouns take their head noun's gender ("stato di
+            famiglia" <- stato, "post-verità" <- verità), looked up in it.js
+            itself, then Morph-it!; single words use Morph-it!, then a suffix
+            model learned from it.js's own gendered nouns (only suffixes seen
+            >= 20 times with >= 95% one gender: -zione f, -ismo m, -ing m ...)
 """
 
 from __future__ import annotations
@@ -308,11 +322,107 @@ def choose(entry: dict, kaikki, morph) -> tuple[str | None, str, str]:
     return ('phrase' if ' ' in w.strip() else None), '', 'prior'
 
 
+ACRONYM_RE = re.compile(r'^(?:[A-ZÀ-Ý0-9]{2,}|[b-df-hj-np-tv-z]{2,5})$')
+SPACY_POS = {'NOUN': 'noun', 'PROPN': 'properNoun', 'VERB': 'verb', 'AUX': 'verb',
+             'ADJ': 'adjective', 'ADV': 'adverb', 'PRON': 'pronoun', 'DET': 'determiner',
+             'ADP': 'preposition', 'CCONJ': 'conjunction', 'SCONJ': 'conjunction',
+             'NUM': 'numeral', 'INTJ': 'interjection'}
+_nlp = []
+
+
+def fallback_pos(word: str) -> str:
+    if ACRONYM_RE.match(word):
+        return 'abbreviation'
+    if ' ' in word.strip():
+        return 'phrase'
+    if not _nlp:
+        import spacy  # build-time only: pip install spacy; python -m spacy download it_core_news_sm
+        _nlp.append(spacy.load('it_core_news_sm'))
+    tag = _nlp[0](word)[0].pos_
+    return SPACY_POS.get(tag, '')
+
+
+def suffix_model(entries: list, min_n: int = 20, purity: float = 0.95) -> dict:
+    counts: dict[str, Counter] = defaultdict(Counter)
+    for e in entries:
+        w = e['word'].lower()
+        if e.get('pos') == 'noun' and e.get('gender') in ('m', 'f') and w.isalpha():
+            for k in range(2, 6):
+                if len(w) > k:
+                    counts[w[-k:]][e['gender']] += 1
+    model = {}
+    for suf, c in counts.items():
+        g, n = c.most_common(1)[0]
+        if sum(c.values()) >= min_n and n / sum(c.values()) >= purity:
+            model[suf] = g
+    return model
+
+
+def guess_gender(word: str, genders: dict, morph, model: dict) -> tuple[str, str]:
+    """-> (gender, how) for a noun the dictionaries left without one."""
+    parts = [p for p in re.split(r"[ ']", word) if p]
+    if len(parts) > 1:
+        head = parts[0]                       # "stato di famiglia" -> stato
+    elif '-' in word:
+        head = word.split('-')[-1]            # "post-verità" -> verità
+    else:
+        head = word
+    if head != word:
+        g = genders.get(head) or genders.get(head.lower())
+        if g:
+            return g, 'head'
+    analyses = (morph.get(head) or morph.get(head.lower()) or []) if morph else []
+    g = morphit_gender(analyses)
+    if g:
+        return g, 'morph-it'
+    w = head.lower()
+    for k in range(5, 1, -1):
+        if len(w) > k and w[-k:] in model:
+            return model[w[-k:]], 'suffix'
+    return '', ''
+
+
+def fill_missing(entries: list, morph) -> Counter:
+    stats = Counter()
+    for e in entries:
+        if not e.get('pos'):
+            pos = fallback_pos(e['word'])
+            if pos:
+                e['pos'] = pos
+                stats['pos-fill:' + pos] += 1
+    genders = {e['word']: e['gender'] for e in entries
+               if e.get('pos') == 'noun' and e.get('gender')}
+    model = suffix_model(entries)
+    for e in entries:
+        if e.get('pos') == 'noun' and not e.get('gender'):
+            g, how = guess_gender(e['word'], genders, morph, model)
+            if g:
+                e['gender'] = g
+                stats['gender-fill:' + how] += 1
+    return stats
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument('--kaikki', type=Path, required=True)
-    ap.add_argument('--morphit', type=Path, required=True)
+    ap.add_argument('--kaikki', type=Path)
+    ap.add_argument('--morphit', type=Path)
+    ap.add_argument('--fill-missing', action='store_true',
+                    help='only fill entries without pos / noun gender (no Wiktionary dump)')
     args = ap.parse_args()
+
+    if args.fill_missing:
+        morph = load_morphit(args.morphit) if args.morphit else None
+        stats = Counter()
+
+        def update(entries: list, meta: dict) -> None:
+            stats.update(fill_missing(entries, morph))
+
+        print(vs.rewrite_vocab('it', update, builder=BUILDER), file=sys.stderr)
+        for k in sorted(stats):
+            print('  %-24s %d' % (k, stats[k]), file=sys.stderr)
+        return 0
+    if not (args.kaikki and args.morphit):
+        ap.error('--kaikki and --morphit are required for a full build')
 
     data = vs.read_vocab('it')
     entries = data['entries']
@@ -343,7 +453,10 @@ def main() -> int:
                 stats['gender:' + gender] += 1
             else:
                 stats['gender:none'] += 1
-        out.append(vs.clean_entry(base))
+        out.append(base)
+    for k, v in fill_missing(out, morph).items():
+        stats[k] += v
+    out = [vs.clean_entry(e) for e in out]
 
     meta = data['meta']
     path = vs.write_vocab('it', out, sources=meta['sources'], licences=meta['licences'],

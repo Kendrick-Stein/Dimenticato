@@ -70,6 +70,12 @@ SOURCES  (all fetched at build time into $DE_VOCAB_WORK, default /tmp/de-vocab-b
       tag); no example sentences or definitions are copied.
 
 Run:  python3 scripts/build_german_vocabulary.py
+      python3 scripts/build_german_vocabulary.py fill
+          in-place post-pass on data/vocab/de.js (no dump download): fills
+          `en` for entries that have none (the course headwords recovered in
+          a1a7baf, which this pipeline does not regenerate) from kaikki.org
+          per-word pages, falling back to the masculine base of an -in noun;
+          re-emitting also canonicalises gender order (vocab_schema).
       DE_VOCAB_WORK=/tmp/de-vocab-build  (cache dir, downloads ~1.4 GB once)
       DE_VOCAB_STAGES=lexicon,freq,goethe,handedict,assemble  (default: all)
 """
@@ -1806,5 +1812,40 @@ def main() -> None:
           f"({out.stat().st_size / 1e6:.1f} MB)")
 
 
+def fill_missing_english() -> None:
+    """Post-pass: give every entry without `en` a Wiktionary gloss."""
+    import vocab_schema as vs
+
+    filled = Counter()
+
+    def update(entries: list, meta: dict) -> None:
+        by_word = {e["word"]: e for e in entries}
+        for e in entries:
+            if e.get("en"):
+                continue
+            english = vs.kaikki_english("German", e["word"])
+            token = SRC_EN
+            if not english and e.get("pos") == "noun" and e["word"].endswith("in"):
+                base = (by_word.get(e["word"][:-2])            # Lehrerin -> Lehrer
+                        or by_word.get(e["word"][:-2] + "e"))  # Kollegin -> Kollege
+                if base and base.get("en"):
+                    english = "(female) " + base["en"].split(";")[0].strip()
+                    token = "en:feminine-of(" + base["word"] + ")"
+            if not english or english.lower() == e["word"].lower():
+                filled["none"] += 1
+                continue
+            e["en"] = english
+            source = vs.source_of({"meta": meta}, e)
+            e["src"] = vs.source_index(meta, source.replace("; f:", f"; {token}; f:", 1)
+                                       if "; f:" in source else f"{source}; {token}")
+            filled[token.split("(")[0]] += 1
+
+    out = vs.rewrite_vocab("de", update)
+    print(f"{out}: en filled {dict(filled)}")
+
+
 if __name__ == "__main__":
-    main()
+    if sys.argv[1:] == ["fill"]:
+        fill_missing_english()
+    else:
+        main()
