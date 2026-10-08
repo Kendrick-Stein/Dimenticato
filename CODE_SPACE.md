@@ -527,11 +527,13 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 |---|---|---|
 | `scripts/conjugation_fixes/<code>.json` | `canonical_conjugations.apply_fixes`（单元格、`x.*`、动词 `zh` / `en`） | 四种语言的 `canonicalize()` |
 | `scripts/it_fixes/{vocab,grammar,cognates,collocations}.json`、`it_fixes/grammar/*.md` | `italian_fixes.py`（`--check`） | `clean_italian_glosses.py`、`canonicalize_grammar.py`、`canonical_cognates.py`、`canonical_collocations.py` |
-| `scripts/vocab_fixes/fr.json`、`collocation_fixes/fr.json` | `fr_vocab_fixes.py`（`check`）、`fr_collocation_fixes.py` | `build_french_vocabulary.py assemble`、`build_french_extras.py` |
+| `scripts/vocab_fixes/fr.json`（字段修正 / `add` / `drop` 屈折形式并入词元）、`collocation_fixes/fr.json` | `fr_vocab_fixes.py`（`check`）、`fr_collocation_fixes.py` | `build_french_vocabulary.py assemble`、`build_french_extras.py` |
 | `scripts/de_vocab_fixes/*.json`、`de_cognate_fixes.json`、`de_course_fixes.json` | `de_vocab_fixes.py`、`de_cognate_fixes.py`、`de_course_fixes.py` | `build_german_vocabulary.py`、`build_german_extras.py` |
-| `scripts/en_vocab_fixes/*.json` | `en_vocab_fixes.py`（`--regen` 用 lemminflect 重算清单） | `build_english_vocab.py` |
+| `scripts/en_vocab_fixes/*.json`（含 `additions.json`：搭配模块要用、频率截断漏掉的动词） | `en_vocab_fixes.py`（`--regen` 用 lemminflect 重算清单） | `build_english_vocab.py` |
 
-英语屈折词并入词元后，旧词形全部记在词元的 `legacyWord`（可为数组），旧进度经 `Vocab.resolveLegacyKey` 迁到词元。
+英语屈折词并入词元后，旧词形全部记在词元的 `legacyWord`（可为数组），旧进度经 `Vocab.resolveLegacyKey` 迁到词元。删掉的词条（专名、垃圾词）进度留在存储里但不计入「已掌握」（`Progress.systemMasteredCount` 只数词库里还在的词）。
+
+意大利语 `en` 释义句首大写由 `clean_italian_glosses.normalise_en_case` 归一（英语词库里是小写词头才改；月份、民族词、China / Turkey 这类同形词保留），`italian_fixes` 比较 `en` 修正记录时用同一归一形式。
 
 ### 8.2 变位
 
@@ -786,6 +788,7 @@ Supabase key 失效、bucket 或表结构不匹配时，社区上传 / 浏览 / 
 - **体验**：`Vocab.gradeTyped` 统一判分（只差重音 = 「字母对了，重音不对」，德语变音 ae/oe/ue/ss 等价）；Google Fonts 不阻塞首屏；真实加载进度与失败重试；移动端输入属性与重音键盘；无障碍（aria-live、折叠面板 inert、aria-pressed / aria-expanded）；对比度；按语言的标签（`Languages.text`）；`sw.js` 离线缓存
 - **清理**：删除 `data/it50k-verb-lemmas.json`、`scripts/build_german_grammar.py`、英语数据目录里的预览图；`vocab_legacy.py` 去掉 `migrate` 子命令
 - 测试：29 个 harness
+- 收尾：意大利语英文释义句首大写归一（2769 条）、1623 个搭配动词全部有中文释义（搭配页标题下显示）、102 个动词错误释义；英语补 59 个搭配动词、去掉校验器里为 is/ate/York/Luke/Jerry 开的特例；法语 `pars` 并入 `partir`；「已掌握」只数词库里还在的词；旧分支 `content/de-grammar-partial` 归档为 tag `archive/de-grammar-partial`（内容已被现行 105 专题语法书取代）
 
 ### 2026-10 — 统一模块数据 + 存储 v3 + 编辑风改版（refactor/unify）
 
