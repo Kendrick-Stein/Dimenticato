@@ -167,6 +167,7 @@ h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
   background: var(--topbar-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  transition: box-shadow 0.25s ease;
 }
 
 .topbar-inner {
@@ -179,6 +180,7 @@ h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus { outline: none; }
   transition: padding 0.25s ease;
 }
 .topbar.scrolled .topbar-inner { padding: 0.5rem 0; }
+.topbar.scrolled { box-shadow: var(--shadow-1); }
 
 .brand {
   display: inline-flex;
@@ -475,11 +477,11 @@ button.chip:hover { border-color: var(--line-ink); }
 /* Cards: .card is a clickable entry, .panel a static container. */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr));
   gap: 0.9rem;
 }
-.card-grid.cols-2 { grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); }
-.card-grid.cols-3 { grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
+.card-grid.cols-2 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); }
+.card-grid.cols-3 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); }
 
 .card {
   position: relative;
@@ -837,7 +839,7 @@ label { font-size: 0.9rem; }
 .level-code { font-family: var(--serif); font-size: 2.3rem; font-weight: 700; line-height: 1; }
 .level-card .progress-track { margin: -0.4rem 0 0.9rem; }
 
-.module-grid { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 0.9rem; }
+.module-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); gap: 0.9rem; }
 
 /* "Metodo": three numbered steps under a rule. */
 .method-steps {
@@ -1061,7 +1063,7 @@ input.spell-input {
 .wordbook-name:hover { text-decoration: underline; text-underline-offset: 3px; }
 .wordbook-actions { display: inline-flex; gap: 0.25rem; }
 .wordbook-actions .icon-btn { width: 2.1rem; height: 2.1rem; font-size: 0.9rem; }
-.mode-grid { grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
+.mode-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); }
 
 .browse-controls { display: grid; gap: 0.6rem; margin-bottom: 1rem; }
 .search-field { position: relative; }
@@ -1094,7 +1096,7 @@ input.spell-input {
 
 .progress-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
   gap: 1rem;
   margin-top: 1.4rem;
 }
@@ -1919,7 +1921,7 @@ h1.page {
   font-size: 0.72rem;
   letter-spacing: 0.04em;
 }
-.conj-lookup-tense-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.9rem; }
+.conj-lookup-tense-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 0.9rem; }
 .conj-lookup-tense-title {
   margin-bottom: 0.4rem;
   color: var(--muted);
@@ -1960,7 +1962,7 @@ h1.page {
 /* Full-paradigm fill-in */
 .conj-full-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
   gap: 0.6rem;
   width: 100%;
   margin-bottom: 1rem;
@@ -2408,7 +2410,7 @@ h1.page {
 .vc-card-grid,
 .vc-search-choice-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
   gap: 0.9rem;
 }
 .vc-card {
@@ -2691,7 +2693,7 @@ h1.page {
 
 .community-wordbook-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18.5rem), 1fr));
   gap: 0.9rem;
 }
 .community-wordbook-list > .loading-message,
