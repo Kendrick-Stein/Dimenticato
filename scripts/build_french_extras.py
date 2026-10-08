@@ -702,6 +702,11 @@ AUTHORED_GLOSSES = {
     "gin": "杜松子酒", "omission": "遗漏；疏忽", "clonage": "克隆",
     "auditionner": "试镜；面试（演员）", "relativement": "相对地；比较而言",
     "tendresse": "温柔；柔情",
+    # 2026-10 复查：语义闸门放行了英语同形词的错义（cape=海角、jarre=震动、bluff=断崖 …）
+    "cool": "酷；冷静的；随和的", "major": "（毕业班）第一名；军医长", "cape": "斗篷；披风",
+    "bluff": "虚张声势；吹牛", "traîne": "拖裙；裙裾", "jarre": "大缸；坛子",
+    "tanner": "鞣（皮）；（俗）纠缠", "apparemment": "看来；似乎", "distraire": "使分心；消遣",
+    "set": "（网球）盘；一套", "adjudant": "军士长；准尉",
     # 语义闸门查出来、但英法配对成立的
     "passer": "经过；通过；度过", "forme": "形状；形式", "entier": "整个的；全部的",
     "société": "社会；公司", "cour": "庭院；宫廷；法院", "déposer": "放下；存放",
@@ -863,6 +868,7 @@ DROP_COGNATES = {
     "colon": "配 en colonel（上校）错位，colon 是「殖民者／结肠」",
     "raie": "配 en ray（光线）错位，raie 是「条纹／鳐鱼」",
     "rider": "法语 rider 是「使起皱」，配 en ride（骑）纯属同形",
+    "plain": "法语 plain（平坦的）已属古旧用法，配 en plane 语义错位；学习者用不上",
     "volée": "ECDICT 释义是残句「(箭」；第二轮的括号配对修复能还原成「齐射」，但整行上一轮已删，两条重建路径要一致，保持删除",
 }
 

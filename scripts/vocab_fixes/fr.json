@@ -17449,5 +17449,453 @@
   "from": "地下室；墙脚；地窖",
   "to": "地下室；地窖；底土",
   "why": "EN-pivot sense error"
+ },
+ {
+  "add": {
+   "word": "rivière",
+   "pos": "noun",
+   "zh": "河流；河",
+   "en": "river",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "caravane",
+   "pos": "noun",
+   "zh": "大篷车；旅行拖车；商队",
+   "en": "caravan",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "flûte",
+   "pos": "noun",
+   "zh": "长笛",
+   "en": "flute",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "euro",
+   "pos": "noun",
+   "zh": "欧元",
+   "en": "euro",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "carnaval",
+   "pos": "noun",
+   "zh": "狂欢节；嘉年华",
+   "en": "carnival",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "constitution",
+   "pos": "noun",
+   "zh": "宪法；构成；体质",
+   "en": "constitution",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "astronaute",
+   "pos": "noun",
+   "zh": "宇航员；航天员",
+   "en": "astronaut",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "finale",
+   "pos": "noun",
+   "zh": "决赛；终曲",
+   "en": "final (of a competition); finale",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "secte",
+   "pos": "noun",
+   "zh": "教派；宗派",
+   "en": "sect",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "liqueur",
+   "pos": "noun",
+   "zh": "利口酒；甜烧酒",
+   "en": "liqueur",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "barbelé",
+   "pos": "adjective",
+   "zh": "带倒刺的；有刺的",
+   "en": "barbed; barbed wire"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "équation",
+   "pos": "noun",
+   "zh": "方程；方程式",
+   "en": "equation",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "sire",
+   "pos": "noun",
+   "zh": "陛下",
+   "en": "Sire (address to a king)",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "palestinien",
+   "pos": "adjective",
+   "zh": "巴勒斯坦的；巴勒斯坦人的",
+   "en": "Palestinian"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "commune",
+   "pos": "noun",
+   "zh": "市镇；公社",
+   "en": "commune, municipality",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "prototype",
+   "pos": "noun",
+   "zh": "原型；样机",
+   "en": "prototype",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "bourbon",
+   "pos": "noun",
+   "zh": "波旁威士忌；波旁王朝",
+   "en": "bourbon (whiskey); Bourbon",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "réconciliation",
+   "pos": "noun",
+   "zh": "和解；和好",
+   "en": "reconciliation",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "prescription",
+   "pos": "noun",
+   "zh": "处方；规定；时效",
+   "en": "prescription",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "inceste",
+   "pos": "noun",
+   "zh": "乱伦",
+   "en": "incest",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "invalide",
+   "pos": "adjective",
+   "zh": "残疾的；无效的",
+   "en": "invalid, disabled; void"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "patio",
+   "pos": "noun",
+   "zh": "内院；露台",
+   "en": "patio",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "fascisme",
+   "pos": "noun",
+   "zh": "法西斯主义",
+   "en": "fascism",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "synchronisation",
+   "pos": "noun",
+   "zh": "同步",
+   "en": "synchronization",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "caricature",
+   "pos": "noun",
+   "zh": "漫画；讽刺画",
+   "en": "caricature",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "masturbation",
+   "pos": "noun",
+   "zh": "手淫（行为）",
+   "en": "masturbation",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "démolition",
+   "pos": "noun",
+   "zh": "拆除；拆毁",
+   "en": "demolition",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "confidentialité",
+   "pos": "noun",
+   "zh": "保密性；机密性",
+   "en": "confidentiality",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "testostérone",
+   "pos": "noun",
+   "zh": "睾酮；睾丸激素",
+   "en": "testosterone",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "rétro",
+   "pos": "adjective",
+   "zh": "复古的；怀旧的",
+   "en": "retro"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "parachuter",
+   "pos": "verb",
+   "zh": "空投；伞降",
+   "en": "to parachute; to airdrop"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "dopamine",
+   "pos": "noun",
+   "zh": "多巴胺",
+   "en": "dopamine",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "extrémiste",
+   "pos": "noun",
+   "zh": "极端主义者",
+   "en": "extremist",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "combiner",
+   "pos": "verb",
+   "zh": "组合；结合；策划",
+   "en": "to combine; to devise"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "lasagne",
+   "pos": "noun",
+   "zh": "千层面；烤宽面条",
+   "en": "lasagna",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "clergé",
+   "pos": "noun",
+   "zh": "神职人员",
+   "en": "clergy",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "anémie",
+   "pos": "noun",
+   "zh": "贫血",
+   "en": "anemia",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "originaire",
+   "pos": "adjective",
+   "zh": "原籍的；来自某地的",
+   "en": "originating (from), native (of)"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "communier",
+   "pos": "verb",
+   "zh": "领圣餐",
+   "en": "to receive communion"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "blanquette",
+   "pos": "noun",
+   "zh": "白汁炖小牛肉",
+   "en": "blanquette (veal stew)",
+   "gender": "f"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "musée",
+   "pos": "noun",
+   "zh": "博物馆",
+   "en": "museum",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "boxer",
+   "pos": "verb",
+   "zh": "拳击；打拳",
+   "en": "to box"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "clonage",
+   "pos": "noun",
+   "zh": "克隆（技术）",
+   "en": "cloning",
+   "gender": "m"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "passer un examen",
+   "pos": "phrase",
+   "zh": "参加考试",
+   "en": "to sit (take) an exam"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "diagnostiquer",
+   "pos": "verb",
+   "zh": "诊断；作出诊断",
+   "en": "to diagnose"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
+ },
+ {
+  "add": {
+   "word": "illégalement",
+   "pos": "adverb",
+   "zh": "非法地",
+   "en": "illegally"
+  },
+  "why": "cognate in data/fr-cognates.js missing from the vocab"
  }
 ]
