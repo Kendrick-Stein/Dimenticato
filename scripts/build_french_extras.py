@@ -3,16 +3,17 @@
 """
 Build the two French "extras" datasets that Italian already has:
 
-  data/french-collocations-data.js   ->  window.FRENCH_COLLOCATIONS_DATA
+  data/fr-collocations.js            ->  DIM_DATA.collocations.fr  (collocations/1,
+                                         written via scripts/canonical_collocations.py)
   data/french-cognates.js            ->  window.FRENCH_COGNATE_DATA
 
 Both mirror the Italian reference shapes exactly:
 
-  VERB_COLLOCATIONS_DATA = {
-    meta:         { totalVerbs, totalExamples, prepositionOrder: [...] },
-    verbs:        { <slug>: { display, prepositions: { <prep>: [str, ...] }, prepositionOrder: [...] } },
-    prepositions: { <prep>: [<slug>, ...] }
-  }
+  collocations: built in the legacy shape below, then converted to collocations/1
+  (docs/data-schema.md) by canonical_collocations.write_collocations():
+    { meta: { totalVerbs, totalExamples, prepositionOrder: [...] },
+      verbs: { <slug>: { display, prepositions: { <prep>: [str, ...] }, prepositionOrder: [...] } },
+      prepositions: { <prep>: [<slug>, ...] } }
   COGNATE_DATA = [{ italian, english, chinese, patternType, similarityScore, difficulty, rank }]
 
 ...with `french` replacing `italian`.  Extra (purely additive) fields are documented
@@ -1207,6 +1208,16 @@ MIN_SHARE = 0.08         # p(prep|verb)
 MAX_EXAMPLES = 6         # corpus examples kept per (verb, preposition)
 
 
+COLLOC_HEADER = (
+    "// French verb collocations (verb + governed preposition + complement).\n"
+    "// examples[].src indexes meta.sources (curated / authored / Tatoeba direct /\n"
+    "// Tatoeba via English / Lexique); verbs[w].x.tatoeba keeps the Tatoeba pair per\n"
+    "// example, x.notes the à/de contrast notes, x.nounCollocations verb + noun pairs.\n"
+    "// Sources: hand-authored government table + Tatoeba (CC BY 2.0 FR) + Lexique 3.83 (CC BY-SA 4.0).\n"
+    "// Rebuild: python3 scripts/build_french_extras.py --only collocations\n"
+)
+
+
 def build_collocations(cache, lex, out_path):
     log("loading Tatoeba ...")
     fra, pairs = load_tatoeba(cache)
@@ -1428,27 +1439,10 @@ def build_collocations(cache, lex, out_path):
         "verbs": {k: verbs[k] for k in sorted(verbs)},
         "prepositions": {p: prep_index[p] for p in PREPOSITION_ORDER if prep_index.get(p)},
     }
-    header = (
-        "// French verb collocations (verb + governed preposition + complement).\n"
-        "// Mirrors the Italian data/verb-collocations-data.js shape exactly:\n"
-        "//   { meta: { totalVerbs, totalExamples, prepositionOrder },\n"
-        "//     verbs: { <slug>: { display, prepositions: { <prep>: [\"<fr> <zh>\"] }, prepositionOrder } },\n"
-        "//     prepositions: { <prep>: [<slug>] } }\n"
-        "// Additive fields (ignored by the current renderer): meta.language, meta.sources,\n"
-        "//   verbs[x].sources (per-example provenance), verbs[x].notes (à/de contrast notes),\n"
-        "//   verbs[x].nounCollocations (verb + noun collocations).\n"
-        "// Sources: hand-authored government table + Tatoeba (CC BY 2.0 FR) + Lexique 3.83 (CC BY-SA 4.0).\n"
-        "// Rebuild: python3 scripts/build_french_extras.py\n"
-        "// Total verbs: %d / Total examples: %d\n" % (data["meta"]["totalVerbs"], data["meta"]["totalExamples"])
-    )
-    body = "const FRENCH_COLLOCATIONS_DATA = %s;\n\n" % json.dumps(data, ensure_ascii=False, indent=2)
-    tail = ("if (typeof window !== 'undefined') { window.FRENCH_COLLOCATIONS_DATA = FRENCH_COLLOCATIONS_DATA; }\n"
-            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COLLOCATIONS_DATA; }\n"
-            + register_footer('collocations', 'fr', 'FRENCH_COLLOCATIONS_DATA'))
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write(header + "\n" + body + tail)
+    from canonical_collocations import write_collocations
+    _, _, canon = write_collocations("fr", data, COLLOC_HEADER, out_path)
     log("collocations: %d verbs, %d examples (curated pairs %d, corpus pairs %d, rejected pairs %d, noun collocations %d)"
-        % (data["meta"]["totalVerbs"], data["meta"]["totalExamples"], kept_curated, kept_corpus,
+        % (canon["meta"]["count"], canon["meta"]["examples"], kept_curated, kept_corpus,
            rejected_pairs, noun_hits))
     log("  example filter: fr_rejected=%(fr_rejected)d zh_rejected=%(zh_rejected)d "
         "roundtrip_rejected=%(roundtrip_rejected)d dup=%(dup)d" % stats)
@@ -2475,7 +2469,7 @@ def main():
     log("  %d verb forms, %d ranked lemmas" % (len(lex.verb_form), len(lex.rank)))
 
     if args.only in (None, "collocations"):
-        build_collocations(cache, lex, os.path.join(ROOT, "data", "french-collocations-data.js"))
+        build_collocations(cache, lex, os.path.join(ROOT, "data", "fr-collocations.js"))
     if args.only in (None, "cognates"):
         build_cognates(cache, lex, os.path.join(ROOT, "data", "french-cognates.js"))
 

@@ -1,181 +1,132 @@
 /**
  * VerbCollocations — 动词搭配查阅器（语言无关）
  *
- * 数据源按语言解析：
- *   italian → VERB_COLLOCATIONS_DATA        (data/verb-collocations-data.js)
- *   german  → GERMAN_VERB_COLLOCATIONS_DATA
- *   english → ENGLISH_VERB_COLLOCATIONS_DATA (data/english-collocations-data.js)
- *   french  → FRENCH_VERB_COLLOCATIONS_DATA
+ * 数据：DIM_DATA.collocations.<code>，schema collocations/1（docs/data-schema.md），
+ * 按模块懒加载（lib/languages.js files.collocations → lib/lang-loader.js）：
+ *   { meta: { lang, name, count, sources, … },
+ *     keys:  [{ key, label, kind, case?, zh? }],            // 介词 / 小品词 / 带格介词，按展示顺序
+ *     verbs: { <word>: { word, display?, order: [key…], keys: { <key>: [{ text, zh }] } } },
+ *     index: { <key>: [<word>…] } }
  *
- * 数据形状（德语额外支持 case 标记）：
- *   { meta: { prepositionOrder: [...] },
- *     verbs: { slug: { display, prepositionOrder, prepositions: {
- *                prep: ['例句 中文释义', ...]                 // 简单形式
- *                prep: { case: 'A', examples: [...] }        // 带格标记形式
- *              } } },
- *     prepositions: { prep: [verbSlug, ...] } }              // 可选，缺省时自动倒排
+ * 语言差异全部在数据里：德语的格写在 keys[].case / label（"an + Akk."），英语的小品词
+ * 写在 keys[].kind；本文件不按语言分支。语言标签取自 Languages（lib/languages.js），
+ * 标题取 meta.name。某语言数据缺席时进入本屏显示明确的空状态。
  *
- * 四种语言都有数据（按模块懒加载，见 lib/lang-loader.js MODULES.collocations）。
- * 英语的 prep 键除介词外还包括短语动词小品词（up / out / off …）和多词序列
- * （up with），meta.keyKinds 标明是介词还是小品词；渲染器无需区分。
- * 某语言数据缺席时进入本屏显示明确的空状态，而不是让功能悄无声息地不存在。
+ * 下方暴露的解析层（dataset / keysOf / examples / keyLabel …）供
+ * verb-collocations-practice.js 复用。
  */
 const VerbCollocations = (() => {
-  const LANGUAGES = ['italian', 'german', 'english', 'french'];
+  const MODULE = 'collocations';
 
-  const LANG_PROFILES = {
-    italian: {
-      label: '意大利语',
-      title: '意大利语动词搭配',
-      fallbackPreps: ['a', 'di', 'da', 'con', 'per', 'in']
-    },
-    german: {
-      label: '德语',
-      title: '德语动词搭配',
-      fallbackPreps: ['an', 'auf', 'für', 'mit', 'nach', 'über', 'um', 'von', 'zu']
-    },
-    english: {
-      label: '英语',
-      title: '英语动词搭配',
-      fallbackPreps: ['about', 'at', 'for', 'from', 'in', 'of', 'on', 'to', 'with']
-    },
-    french: {
-      label: '法语',
-      title: '法语动词搭配',
-      fallbackPreps: ['à', 'de', 'en', 'par', 'pour', 'sur', 'dans', 'avec']
-    }
-  };
-
-  // 德语支配格标签（数据里出现 case 时才用得上）
-  const CASE_LABELS = { A: '第四格', D: '第三格', G: '第二格', N: '第一格' };
-
-  let boundLang = null;       // 已经绑定事件与导航的语言
+  let boundLang = null;       // 已经绑定事件与导航的语言（code）
   let openedByEntry = false;  // 是否已经有入口显式打开过（入口一定会带上语言）
   const state = {
-    lang: 'italian',
-    activePrep: null,
+    lang: null,               // 语言 code（'it' / 'de' / …）
+    activeKey: null,
     searchQuery: '',
-    selectedVerbSlug: null,
+    selectedVerb: null,
   };
 
   const dom = {};
 
-  // ==================== 数据解析（全部在调用时做） ====================
+  // ==================== 语言 / 数据解析层（调用时解析） ====================
 
-  // 搭配数据按模块懒加载，注册在 DIM_DATA.collocations.<code>，调用时取
-  function resolveDataset(lang) {
-    return window.LangLoader ? window.LangLoader.data(lang, 'collocations') : null;
+  /** 入口给的是 code 或旧 key（app.js 传 key）；缺省时按外壳 body[data-language]。 */
+  function resolveLang(lang) {
+    const code = Languages.code(lang)
+      || Languages.code(document.body ? document.body.getAttribute('data-language') : null);
+    return code || Languages.DEFAULT;
+  }
+
+  function profile(lang) {
+    return Languages.get(lang) || Languages.get(Languages.DEFAULT);
+  }
+
+  function dataset(lang) {
+    return window.LangLoader ? window.LangLoader.data(lang, MODULE) : null;
   }
 
   function hasDataset(lang) {
-    const data = resolveDataset(lang);
+    const data = dataset(lang);
     return !!(data && data.verbs && Object.keys(data.verbs).length);
   }
 
-  function profileFor(lang) {
-    return LANG_PROFILES[lang] || LANG_PROFILES.italian;
+  /** 数据未加载时补拉；已经尝试过（或没有该模块）返回 null，调用方走缺数状态。 */
+  function ensureDataset(lang) {
+    const loader = window.LangLoader;
+    const key = Languages.key(lang);
+    if (!loader || !key || typeof loader.ensureModule !== 'function') return null;
+    if (!Languages.hasModule(lang, MODULE) || loader.isModuleLoaded(key, MODULE)) return null;
+    return loader.ensureModule(key, MODULE);
+  }
+
+  function title(lang) {
+    const data = dataset(lang);
+    return (data && data.meta && data.meta.name) || profile(lang).cn + '动词搭配';
+  }
+
+  function keysOf(verb) {
+    return (verb && (verb.order || Object.keys(verb.keys || {}))) || [];
+  }
+
+  /** 例句恒为 { text, zh }。 */
+  function examples(verb, key) {
+    return (verb && verb.keys && verb.keys[key]) || [];
+  }
+
+  function displayOf(verb, word) {
+    return (verb && (verb.display || verb.word)) || word;
+  }
+
+  function keyRecord(data, key) {
+    const list = (data && data.keys) || [];
+    for (let i = 0; i < list.length; i++) if (list[i].key === key) return list[i];
+    return null;
+  }
+
+  /** 展示用标签：德语 "an + Akk."，其余语言即介词本身。 */
+  function keyLabel(data, key) {
+    const rec = keyRecord(data, key);
+    return (rec && rec.label) || String(key);
+  }
+
+  /** 按展示顺序的全部键（导航 / 练习干扰项）。 */
+  function keyOrder(data) {
+    if (!data) return [];
+    if (Array.isArray(data.keys) && data.keys.length) return data.keys.map(rec => rec.key);
+    return Object.keys(data.index || {});
+  }
+
+  function verbsForKey(data, key) {
+    return (data && data.index && data.index[key]) || [];
+  }
+
+  /** 搜索 / 判分统一的宽松比较（抹重音、小写、合并空白）。 */
+  function looseKey(text) {
+    return DimText.normalizeText(text, { fold: true });
   }
 
   function activeDataset() {
-    return resolveDataset(state.lang);
-  }
-
-  function detectLang() {
-    const bodyLang = document.body ? document.body.getAttribute('data-language') : null;
-    return LANG_PROFILES[bodyLang] ? bodyLang : 'italian';
-  }
-
-  /** prep 条目可以是 ['例句'] 也可以是 { case, examples }。统一成后者。 */
-  function normalizePrepEntry(entry) {
-    if (Array.isArray(entry)) return { case: null, examples: entry };
-    if (entry && Array.isArray(entry.examples)) {
-      return { case: entry.case || null, examples: entry.examples };
-    }
-    return { case: null, examples: [] };
-  }
-
-  function getExamples(verb, prep) {
-    return normalizePrepEntry(verb && verb.prepositions ? verb.prepositions[prep] : null).examples;
-  }
-
-  function getPrepCase(verb, prep) {
-    return normalizePrepEntry(verb && verb.prepositions ? verb.prepositions[prep] : null).case;
-  }
-
-  function prepLabel(prep, prepCase) {
-    if (!prepCase) return String(prep);
-    return String(prep) + ' + ' + (CASE_LABELS[prepCase] || prepCase);
-  }
-
-  /**
-   * 例句在数据里是「外语句 + 中文释义」拼在一起的单个字符串，很多条中间没有
-   * 任何分隔符（'Abbandonò la testa sul cuscino.他把头靠在枕头上。'）。
-   * 从第一个 CJK 码点切开，渲染时分两行显示。
-   */
-  function splitExample(raw) {
-    const text = String(raw == null ? '' : raw).trim();
-    if (!text) return { target: '', gloss: '' };
-
-    const sentenceMatch = text.match(/^(.+?[.!?！？。])\s*([\u3000-\u303f\u4e00-\u9fff].*)$/);
-    if (sentenceMatch) {
-      return { target: sentenceMatch[1].trim(), gloss: sentenceMatch[2].trim() };
-    }
-
-    const splitIndex = text.search(/[\u4e00-\u9fff]/);
-    if (splitIndex > 0) {
-      return { target: text.slice(0, splitIndex).trim(), gloss: text.slice(splitIndex).trim() };
-    }
-    return { target: text, gloss: '' };
-  }
-
-  function getPrepositionOrder() {
-    const data = activeDataset();
-    if (!data) return [];
-    return data.meta?.prepositionOrder || Object.keys(getPrepositionIndex());
+    return dataset(state.lang);
   }
 
   function getVerbMap() {
     return activeDataset()?.verbs || {};
   }
 
-  /** 数据里没有倒排表时按 verbs 现算一份，德语/法语数据可以不带 prepositions。 */
-  const derivedPrepIndex = new WeakMap();
-
-  function getPrepositionIndex() {
-    const data = activeDataset();
-    if (!data) return {};
-    if (data.prepositions) return data.prepositions;
-
-    if (!derivedPrepIndex.has(data)) {
-      const index = {};
-      Object.entries(data.verbs || {}).forEach(([slug, verb]) => {
-        const preps = verb.prepositionOrder || Object.keys(verb.prepositions || {});
-        preps.forEach(prep => {
-          (index[prep] = index[prep] || []).push(slug);
-        });
-      });
-      derivedPrepIndex.set(data, index);
-    }
-    return derivedPrepIndex.get(data);
-  }
-
-  function verbsForPrep(prep) {
-    return getPrepositionIndex()[prep] || [];
-  }
-
   // ==================== 生命周期 ====================
 
   function init(lang) {
-    const target = LANG_PROFILES[lang] ? lang : detectLang();
+    const target = resolveLang(lang);
     state.lang = target;
 
     cacheDom();
     if (boundLang === null) bindEvents();
 
     if (boundLang !== target) {
-      state.activePrep = null;
+      state.activeKey = null;
       state.searchQuery = '';
-      state.selectedVerbSlug = null;
+      state.selectedVerb = null;
       if (dom.searchInput) dom.searchInput.value = '';
       boundLang = target;
     }
@@ -184,16 +135,17 @@ const VerbCollocations = (() => {
 
     if (!hasDataset(target)) {
       // 搭配数据按模块懒加载：缺席时补拉后重试 init；拉不到才显示缺数状态
-      if (window.LangLoader && typeof window.LangLoader.ensureModule === 'function'
-        && !window.LangLoader.isModuleLoaded(target, 'collocations')) {
-        window.LangLoader.ensureModule(target, 'collocations').then(() => init(target));
+      const pending = ensureDataset(target);
+      if (pending) {
+        pending.then(() => { if (state.lang === target) init(target); });
         return;
       }
       renderMissingDataset();
       return;
     }
 
-    buildPrepositionNav();
+    applyChrome(); // 数据到位后标题改用 meta.name
+    buildKeyNav();
     renderDefaultView();
   }
 
@@ -239,8 +191,7 @@ const VerbCollocations = (() => {
     dom.sidebarToggle?.addEventListener('click', toggleSidebar);
 
     dom.searchInput?.addEventListener('input', () => {
-      const query = dom.searchInput.value.trim();
-      updateSearch(query);
+      updateSearch(dom.searchInput.value.trim());
     });
 
     dom.searchInput?.addEventListener('keydown', (event) => {
@@ -249,31 +200,23 @@ const VerbCollocations = (() => {
       const matches = findVerbMatches(dom.searchInput.value.trim());
       if (matches.length === 1) {
         event.preventDefault();
-        selectVerb(matches[0].slug, matches[0].display);
+        selectVerb(matches[0].word, matches[0].display);
       }
     });
   }
 
   /** 共享屏：标题与返回按钮必须自报语言。 */
   function applyChrome() {
-    const profile = profileFor(state.lang);
     if (dom.navTitle) {
-      dom.navTitle.innerHTML = '<span class="msr" aria-hidden="true">link</span>' + escapeHtml(profile.title);
+      dom.navTitle.innerHTML = '<span class="msr" aria-hidden="true">link</span>' + escapeHtml(title(state.lang));
     }
     if (dom.backBtn) {
       dom.backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回语法';
     }
     if (dom.searchInput) {
       dom.searchInput.disabled = false;
-      dom.searchInput.setAttribute('placeholder', `搜索${profile.label}动词...`);
+      dom.searchInput.setAttribute('placeholder', `搜索${profile(state.lang).cn}动词...`);
     }
-  }
-
-  function normalizeText(text) {
-    return String(text || '')
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '');
   }
 
   function closeMobileSidebar() {
@@ -283,39 +226,43 @@ const VerbCollocations = (() => {
     }
   }
 
-  function buildPrepositionNav() {
+  function buildKeyNav() {
     const container = dom.navTree;
     if (!container) return;
     container.innerHTML = '';
+    const data = activeDataset();
 
-    getPrepositionOrder().forEach(prep => {
-      const slugs = verbsForPrep(prep);
-      if (!slugs.length) return;
+    keyOrder(data).forEach(key => {
+      const words = verbsForKey(data, key);
+      if (!words.length) return;
 
+      const rec = keyRecord(data, key);
       const btn = document.createElement('button');
       btn.className = 'vc-prep-link';
-      btn.dataset.prep = prep;
+      btn.dataset.prep = key;
+      if (rec && rec.zh) btn.title = rec.zh;
       btn.innerHTML =
-        '<span class="vc-prep-name">' + escapeHtml(prep) + '</span>' +
-        '<span class="vc-prep-count">' + slugs.length + ' 个动词</span>';
-      btn.addEventListener('click', () => selectPreposition(prep));
+        '<span class="vc-prep-name">' + escapeHtml(keyLabel(data, key)) + '</span>' +
+        '<span class="vc-prep-count">' + words.length + ' 个动词</span>';
+      btn.addEventListener('click', () => selectKey(key));
 
       container.appendChild(btn);
     });
   }
 
   function renderDefaultView() {
-    const firstPrep = getPrepositionOrder().find(prep => verbsForPrep(prep).length > 0);
-    if (firstPrep) {
-      selectPreposition(firstPrep, { preserveInput: true });
+    const data = activeDataset();
+    const firstKey = keyOrder(data).find(key => verbsForKey(data, key).length > 0);
+    if (firstKey) {
+      selectKey(firstKey, { preserveInput: true });
     } else {
       renderMissingDataset();
     }
   }
 
   function renderCurrentView() {
-    if (state.selectedVerbSlug) {
-      renderVerbCards(state.selectedVerbSlug);
+    if (state.selectedVerb) {
+      renderVerbCards(state.selectedVerb);
       renderSearchMatches(findVerbMatches(state.searchQuery));
       return;
     }
@@ -325,25 +272,25 @@ const VerbCollocations = (() => {
       return;
     }
 
-    if (state.activePrep) {
-      renderPrepositionCards(state.activePrep);
-      updatePrepositionActiveState();
+    if (state.activeKey) {
+      renderKeyCards(state.activeKey);
+      updateKeyActiveState();
       return;
     }
 
     renderDefaultView();
   }
 
-  function updatePrepositionActiveState() {
+  function updateKeyActiveState() {
     document.querySelectorAll('#vcNavTree .vc-prep-link').forEach(el => {
-      el.classList.toggle('active', el.dataset.prep === state.activePrep && !state.searchQuery && !state.selectedVerbSlug);
+      el.classList.toggle('active', el.dataset.prep === state.activeKey && !state.searchQuery && !state.selectedVerb);
     });
   }
 
-  function selectPreposition(prep, options = {}) {
-    state.activePrep = prep;
+  function selectKey(key, options = {}) {
+    state.activeKey = key;
     state.searchQuery = '';
-    state.selectedVerbSlug = null;
+    state.selectedVerb = null;
 
     if (!options.preserveInput && dom.searchInput) {
       dom.searchInput.value = '';
@@ -352,28 +299,28 @@ const VerbCollocations = (() => {
     renderSearchMatches([]);
     setSearchHelp(defaultSearchHelp());
 
-    updatePrepositionActiveState();
-    renderPrepositionCards(prep);
+    updateKeyActiveState();
+    renderKeyCards(key);
     closeMobileSidebar();
   }
 
-  function selectVerb(slug, displayName) {
-    state.selectedVerbSlug = slug;
-    state.searchQuery = displayName || getVerbMap()[slug]?.display || '';
-    state.activePrep = null;
+  function selectVerb(word, displayName) {
+    state.selectedVerb = word;
+    state.searchQuery = displayName || displayOf(getVerbMap()[word], word);
+    state.activeKey = null;
 
     if (dom.searchInput && displayName) {
       dom.searchInput.value = displayName;
     }
 
     renderSearchMatches(findVerbMatches(state.searchQuery));
-    renderVerbCards(slug);
-    updatePrepositionActiveState();
+    renderVerbCards(word);
+    updateKeyActiveState();
     closeMobileSidebar();
   }
 
   function defaultSearchHelp() {
-    return `输入${profileFor(state.lang).label}动词后，右侧会按介词把该动词的搭配做成卡片显示。`;
+    return `输入${profile(state.lang).cn}动词后，右侧会按介词把该动词的搭配做成卡片显示。`;
   }
 
   function setSearchHelp(text) {
@@ -385,33 +332,33 @@ const VerbCollocations = (() => {
 
     const query = rawQuery.trim();
     state.searchQuery = query;
-    state.selectedVerbSlug = null;
+    state.selectedVerb = null;
 
     const matches = findVerbMatches(query);
     renderSearchMatches(matches);
 
     if (!query) {
       setSearchHelp(defaultSearchHelp());
-      if (state.activePrep) {
-        renderPrepositionCards(state.activePrep);
+      if (state.activeKey) {
+        renderKeyCards(state.activeKey);
       } else {
         renderDefaultView();
       }
-      updatePrepositionActiveState();
+      updateKeyActiveState();
       return;
     }
 
-    const exactMatch = matches.find(match => normalizeText(match.display) === normalizeText(query));
+    const exactMatch = matches.find(match => looseKey(match.display) === looseKey(query));
 
     if (exactMatch) {
-      state.selectedVerbSlug = exactMatch.slug;
-      renderVerbCards(exactMatch.slug);
+      state.selectedVerb = exactMatch.word;
+      renderVerbCards(exactMatch.word);
       return;
     }
 
     if (matches.length === 1) {
-      state.selectedVerbSlug = matches[0].slug;
-      renderVerbCards(matches[0].slug);
+      state.selectedVerb = matches[0].word;
+      renderVerbCards(matches[0].word);
       return;
     }
 
@@ -419,16 +366,16 @@ const VerbCollocations = (() => {
   }
 
   function findVerbMatches(query) {
-    const normalized = normalizeText(query);
+    const normalized = looseKey(query);
     if (!normalized) return [];
 
     return Object.entries(getVerbMap())
-      .map(([slug, data]) => ({
-        slug,
-        display: data.display || slug,
-        prepositionCount: (data.prepositionOrder || Object.keys(data.prepositions || {})).length,
+      .map(([word, verb]) => ({
+        word,
+        display: displayOf(verb, word),
+        keyCount: keysOf(verb).length,
       }))
-      .filter(item => normalizeText(item.display).includes(normalized))
+      .filter(item => looseKey(item.display).includes(normalized))
       .sort((a, b) => a.display.localeCompare(b.display));
   }
 
@@ -442,17 +389,16 @@ const VerbCollocations = (() => {
 
     const topMatches = matches.slice(0, 12);
     dom.searchMatches.innerHTML = topMatches.map(match => (
-      '<button class="vc-search-match-btn' + (state.selectedVerbSlug === match.slug ? ' active' : '') + '" data-slug="' + escapeAttribute(match.slug) + '">' +
+      '<button class="vc-search-match-btn' + (state.selectedVerb === match.word ? ' active' : '') + '" data-slug="' + escapeAttribute(match.word) + '">' +
         '<span class="vc-search-match-name">' + escapeHtml(match.display) + '</span>' +
-        '<span class="vc-search-match-meta">' + match.prepositionCount + ' 组</span>' +
+        '<span class="vc-search-match-meta">' + match.keyCount + ' 组</span>' +
       '</button>'
     )).join('');
 
     dom.searchMatches.querySelectorAll('.vc-search-match-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const slug = btn.dataset.slug;
-        const displayName = getVerbMap()[slug]?.display || btn.querySelector('.vc-search-match-name')?.textContent || '';
-        selectVerb(slug, displayName);
+        const word = btn.dataset.slug;
+        selectVerb(word, displayOf(getVerbMap()[word], word));
       });
     });
 
@@ -461,78 +407,77 @@ const VerbCollocations = (() => {
       : `已找到 ${matches.length} 个匹配动词，可直接点选。`);
   }
 
-  function renderPrepositionCards(prep) {
+  function renderKeyCards(key) {
     if (!dom.body) return;
 
-    const slugs = verbsForPrep(prep);
+    const data = activeDataset();
+    const words = verbsForKey(data, key);
     const verbs = getVerbMap();
-    const totalExamples = slugs.reduce((sum, slug) => sum + getExamples(verbs[slug], prep).length, 0);
+    const label = keyLabel(data, key);
+    const totalExamples = words.reduce((sum, word) => sum + examples(verbs[word], key).length, 0);
 
     if (dom.breadcrumb) {
-      dom.breadcrumb.textContent = `${profileFor(state.lang).label} · ${prep} · ${slugs.length} 个动词`;
+      dom.breadcrumb.textContent = `${profile(state.lang).cn} · ${label} · ${words.length} 个动词`;
     }
 
-    if (!slugs.length) {
+    if (!words.length) {
       dom.body.innerHTML = emptyStateHtml({ message: '这个介词下暂时没有可显示的动词。' });
       return;
     }
 
-    const cardsHtml = slugs.map(slug => {
-      const verb = verbs[slug];
+    const cardsHtml = words.map(word => {
+      const verb = verbs[word];
       if (!verb) return '';
-      const prepCase = getPrepCase(verb, prep);
       return buildCardHtml({
-        title: verb.display || slug,
-        badge: '+ ' + prepLabel(prep, prepCase),
-        subtitle: `${getExamples(verb, prep).length} 条例句 / 搭配`,
-        examples: getExamples(verb, prep),
+        title: displayOf(verb, word),
+        badge: '+ ' + label,
+        subtitle: `${examples(verb, key).length} 条例句 / 搭配`,
+        examples: examples(verb, key),
       });
     }).join('');
 
     dom.body.innerHTML =
       '<div class="vc-panel-intro">' +
         '<span class="vc-kicker">介词浏览</span>' +
-        '<h2>介词 ' + escapeHtml(prep) + '</h2>' +
-        '<p>共收录 ' + slugs.length + ' 个动词，' + totalExamples + ' 条搭配与例句。</p>' +
+        '<h2>介词 ' + escapeHtml(label) + '</h2>' +
+        '<p>共收录 ' + words.length + ' 个动词，' + totalExamples + ' 条搭配与例句。</p>' +
       '</div>' +
       '<div class="vc-card-grid">' + cardsHtml + '</div>';
 
     dom.body.scrollTop = 0;
   }
 
-  function renderVerbCards(slug) {
+  function renderVerbCards(word) {
     if (!dom.body) return;
 
-    const verb = getVerbMap()[slug];
+    const data = activeDataset();
+    const verb = getVerbMap()[word];
 
     if (!verb) {
       dom.body.innerHTML = emptyStateHtml({ message: '未找到该动词。' });
       return;
     }
 
-    const preps = verb.prepositionOrder || Object.keys(verb.prepositions || {});
-    const totalExamples = preps.reduce((sum, prep) => sum + getExamples(verb, prep).length, 0);
-    const display = verb.display || slug;
+    const keys = keysOf(verb);
+    const totalExamples = keys.reduce((sum, key) => sum + examples(verb, key).length, 0);
+    const display = displayOf(verb, word);
 
     if (dom.breadcrumb) {
-      dom.breadcrumb.textContent = `${profileFor(state.lang).label} · ${display} · ${preps.length} 组介词搭配`;
+      dom.breadcrumb.textContent = `${profile(state.lang).cn} · ${display} · ${keys.length} 组介词搭配`;
     }
 
-    const cardsHtml = preps.map(prep => {
-      const prepCase = getPrepCase(verb, prep);
-      return buildCardHtml({
-        title: '介词 ' + prepLabel(prep, prepCase),
-        badge: `${display} + ${prep}`,
-        subtitle: `${getExamples(verb, prep).length} 条搭配与例句`,
-        examples: getExamples(verb, prep),
-      });
-    }).join('');
+    const cardsHtml = keys.map(key => buildCardHtml({
+      title: '介词 ' + keyLabel(data, key),
+      badge: `${display} + ${keyLabel(data, key)}`,
+      subtitle: `${examples(verb, key).length} 条搭配与例句`,
+      examples: examples(verb, key),
+    })).join('');
 
     dom.body.innerHTML =
       '<div class="vc-panel-intro">' +
         '<span class="vc-kicker">动词搜索</span>' +
         '<h2>' + escapeHtml(display) + '</h2>' +
-        '<p>共找到 ' + preps.length + ' 组介词搭配，' + totalExamples + ' 条搭配与例句。</p>' +
+        '<p>共找到 ' + keys.length + ' 组介词搭配，' + totalExamples + ' 条搭配与例句。</p>' +
       '</div>' +
       '<div class="vc-card-grid vc-card-grid-search">' + cardsHtml + '</div>';
 
@@ -543,13 +488,13 @@ const VerbCollocations = (() => {
     if (!dom.body) return;
 
     if (dom.breadcrumb) {
-      dom.breadcrumb.textContent = `${profileFor(state.lang).label} · 搜索：${query}`;
+      dom.breadcrumb.textContent = `${profile(state.lang).cn} · 搜索：${query}`;
     }
 
     if (!matches.length) {
       dom.body.innerHTML = emptyStateHtml({
         title: '没有匹配的动词',
-        message: `没有找到包含 “${query}” 的${profileFor(state.lang).label}动词。`,
+        message: `没有找到包含 “${query}” 的${profile(state.lang).cn}动词。`,
       });
       return;
     }
@@ -562,67 +507,75 @@ const VerbCollocations = (() => {
       '</div>' +
       '<div class="vc-search-choice-grid">' +
         matches.slice(0, 60).map(match => (
-          '<button class="vc-search-choice-btn" data-slug="' + escapeAttribute(match.slug) + '">' +
+          '<button class="vc-search-choice-btn" data-slug="' + escapeAttribute(match.word) + '">' +
             '<span class="vc-search-choice-name">' + escapeHtml(match.display) + '</span>' +
-            '<span class="vc-search-choice-meta">' + match.prepositionCount + ' 组介词搭配</span>' +
+            '<span class="vc-search-choice-meta">' + match.keyCount + ' 组介词搭配</span>' +
           '</button>'
         )).join('') +
       '</div>';
 
     dom.body.querySelectorAll('.vc-search-choice-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const slug = btn.dataset.slug;
-        selectVerb(slug, getVerbMap()[slug]?.display || '');
+        const word = btn.dataset.slug;
+        selectVerb(word, displayOf(getVerbMap()[word], word));
       });
     });
 
     dom.body.scrollTop = 0;
   }
 
-  function buildCardHtml({ title, badge, subtitle, examples }) {
+  function buildCardHtml({ title: cardTitle, badge, subtitle, examples: list }) {
     return (
       '<article class="vc-card">' +
         '<div class="vc-card-header">' +
           '<div>' +
-            '<h3 class="vc-card-title">' + escapeHtml(title) + '</h3>' +
+            '<h3 class="vc-card-title">' + escapeHtml(cardTitle) + '</h3>' +
             '<p class="vc-card-subtitle">' + escapeHtml(subtitle) + '</p>' +
           '</div>' +
           '<span class="vc-card-badge">' + escapeHtml(badge) + '</span>' +
         '</div>' +
         '<ul class="vc-example-list">' +
-          (examples || []).map(buildExampleHtml).join('') +
+          (list || []).map(buildExampleHtml).join('') +
         '</ul>' +
       '</article>'
     );
   }
 
-  /** 外语句与中文释义必须分行，否则 1000+ 条例句会糊成一串。 */
+  /** 外语句与中文释义分行显示。 */
   function buildExampleHtml(example) {
-    const parts = splitExample(example);
-    if (!parts.gloss) {
-      return '<li class="vc-example-item">' + escapeHtml(parts.target) + '</li>';
+    const text = (example && example.text) || '';
+    const zh = (example && example.zh) || '';
+    if (!zh) {
+      return '<li class="vc-example-item">' + escapeHtml(text) + '</li>';
     }
     return '<li class="vc-example-item">' +
-      '<span class="vc-example-target" style="display:block;">' + escapeHtml(parts.target) + '</span>' +
+      '<span class="vc-example-target" style="display:block;">' + escapeHtml(text) + '</span>' +
       '<span class="vc-example-gloss" style="display:block;color:var(--muted);font-size:0.88em;">' +
-        escapeHtml(parts.gloss) +
+        escapeHtml(zh) +
       '</span>' +
     '</li>';
   }
 
-  function emptyStateHtml({ title, message, icon } = {}) {
+  function emptyStateHtml({ title: heading, message, icon } = {}) {
     return (
       '<div class="vc-empty-state">' +
         '<span class="msr vc-empty-state-icon" aria-hidden="true">' + escapeHtml(icon || 'search') + '</span>' +
-        '<h2>' + escapeHtml(title || '没有可显示的内容') + '</h2>' +
+        '<h2>' + escapeHtml(heading || '没有可显示的内容') + '</h2>' +
         '<p>' + escapeHtml(message || '') + '</p>' +
       '</div>'
     );
   }
 
+  /** 已接入搭配数据的其他语言（空状态里给出跳转）。 */
+  function otherLanguagesWithData(lang) {
+    return Languages.list
+      .filter(p => p.code !== lang && Languages.hasModule(p.code, MODULE) && hasDataset(p.code))
+      .map(p => p.code);
+  }
+
   /** 该语言还没有动词搭配数据时的明确空状态（而不是入口静默消失）。 */
   function renderMissingDataset() {
-    const profile = profileFor(state.lang);
+    const label = profile(state.lang).cn;
 
     if (dom.navTree) {
       dom.navTree.innerHTML = '<p class="grammar-nav-error">该语言暂无动词搭配数据</p>';
@@ -632,30 +585,30 @@ const VerbCollocations = (() => {
       dom.searchInput.value = '';
       dom.searchInput.disabled = true;
     }
-    setSearchHelp(`${profile.label}动词搭配数据尚未接入。`);
-    if (dom.breadcrumb) dom.breadcrumb.textContent = `${profile.label} · 暂无数据`;
+    setSearchHelp(`${label}动词搭配数据尚未接入。`);
+    if (dom.breadcrumb) dom.breadcrumb.textContent = `${label} · 暂无数据`;
 
     if (dom.body) {
       dom.body.innerHTML = emptyStateHtml({
         icon: 'hourglass_empty',
         title: '该语言暂无动词搭配数据',
-        message: `${profile.title}词库还在建设中。阅读器与练习模块已经支持${profile.label}，数据落盘后无需改动即可直接使用；` +
-          '目前可以先使用意大利语动词搭配，或前往语法书阅读相关章节。',
+        message: `${label}动词搭配数据未能加载。阅读器与练习模块已经支持${label}，数据落盘后无需改动即可直接使用；` +
+          '目前可以先浏览其他语言的动词搭配，或前往语法书阅读相关章节。',
       });
     }
 
-    const availableLangs = LANGUAGES.filter(lang => lang !== state.lang && hasDataset(lang));
-    if (!availableLangs.length || !dom.body) return;
+    const available = otherLanguagesWithData(state.lang);
+    if (!available.length || !dom.body) return;
 
     const actions = document.createElement('div');
     actions.className = 'vc-search-choice-grid';
-    availableLangs.forEach(lang => {
+    available.forEach(code => {
       const btn = document.createElement('button');
       btn.className = 'vc-search-choice-btn';
       btn.innerHTML =
-        '<span class="vc-search-choice-name">' + escapeHtml(profileFor(lang).title) + '</span>' +
+        '<span class="vc-search-choice-name">' + escapeHtml(title(code)) + '</span>' +
         '<span class="vc-search-choice-meta">改为浏览已接入的搭配数据</span>';
-      btn.addEventListener('click', () => open(lang));
+      btn.addEventListener('click', () => open(code));
       actions.appendChild(btn);
     });
     dom.body.querySelector('.vc-empty-state')?.appendChild(actions);
@@ -674,18 +627,23 @@ const VerbCollocations = (() => {
   return {
     init,
     open,
-    LANGUAGES,
-    resolveDataset,
+    // 解析层（练习模块复用）
+    resolveLang,
+    profile,
+    dataset,
     hasDataset,
-    profileFor,
-    normalizePrepEntry,
-    prepLabel,
-    splitExample,
+    ensureDataset,
+    title,
+    keysOf,
+    examples,
+    displayOf,
+    keyLabel,
+    keyOrder,
+    looseKey,
     getLanguage: () => state.lang,
   };
 })();
 
-// 供 verb-collocations-practice.js 复用的语言/数据解析层
 window.VerbCollocations = VerbCollocations;
 
 // 入口卡片由 App 统一渲染并直接调用 VerbCollocations.open(lang) /

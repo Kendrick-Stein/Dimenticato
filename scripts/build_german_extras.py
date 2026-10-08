@@ -4,11 +4,11 @@
 
 Emits three files, all mirroring the shapes of their Italian counterparts:
 
-  data/german-collocations-data.js  -> window.GERMAN_COLLOCATIONS_DATA
-        Same shape as VERB_COLLOCATIONS_DATA ({meta, verbs, prepositions}), with
-        the preposition key carrying the governed case ("auf +A", "an +D"),
-        because in German the case is part of the collocation.
-        A second, structurally identical sub-dataset `.nounVerb` holds
+  data/de-collocations.js           -> DIM_DATA.collocations.de
+        Schema collocations/1 (docs/data-schema.md), written through
+        scripts/canonical_collocations.py.  Keys carry the governed case
+        ("auf+A", keys[].case = "A"), because in German the case is part of the
+        collocation.  A second, structurally identical block `x.nounVerb` holds
         Funktionsverbgefuege / Nomen-Verb-Verbindungen keyed noun -> light verb.
 
   data/german-cognates.js           -> window.GERMAN_COGNATE_DATA
@@ -2988,29 +2988,20 @@ def emit_course(course, enriched, path):
     return len(text.encode('utf-8'))
 
 
-COLLOC_HEADER = '''// German verb collocations (Rektion) for Dimenticato.  GENERATED — edit
+COLLOC_HEADER = '''// German verb collocations (Rektion) for Dimenticato.  Edit
 // scripts/build_german_extras.py and re-run it instead of editing this file.
-//
-// Shape is identical to data/verb-collocations-data.js (VERB_COLLOCATIONS_DATA):
-//   { meta: { totalVerbs, totalExamples, prepositionOrder },
-//     verbs: { '<verb>': { display, prepositions: { '<prep>': ['DE 中文', ...] },
-//                          prepositionOrder: ['<prep>', ...] } },
-//     prepositions: { '<prep>': ['<verb>', ...] } }
-// with one German-specific twist: the preposition key carries the case it
-// governs ("auf +A" vs "auf +D"), because in German the case is part of the
-// collocation and changes the meaning.  meta.prepositionCase / .prepositionBase
-// decompose the key for any renderer that wants the two halves separately, and
-// each verb additionally carries a structured `entries` array (english gloss,
-// Chinese gloss, CEFR level, per-example source).
-//
-// GERMAN_COLLOCATIONS_DATA.nounVerb is a second, structurally identical dataset
-// for Funktionsverbgefüge / Nomen-Verb-Verbindungen, keyed noun -> light verb.
-//
-// Sources: collocation inventory, Chinese/English glosses and the example
-// sentences tagged "Dimenticato (authored)" were written for this application
-// (tables in this script + scripts/sources/german-rektion/*.txt); the rest of
-// the example sentences are mined from Tatoeba (CC BY 2.0 FR).
+// keys[] carry the governed case ("auf+A" vs "auf+D", keys[].case) because in
+// German the case is part of the collocation and changes the meaning.
+// verbs[w].x.senses holds the structured rows (English gloss, Chinese gloss,
+// CEFR level, example indices); examples[].src indexes meta.sources.
+// x.nounVerb is a second collocations/1 block for Funktionsverbgefüge /
+// Nomen-Verb-Verbindungen, keyed noun -> light verb.
+// Sources: collocation inventory, glosses and the examples with src 0 were
+// written for this application (tables in this script +
+// scripts/sources/german-rektion/*.txt); src 1 examples are mined from
+// Tatoeba (CC BY 2.0 FR).
 '''
+
 
 COGNATE_HEADER = '''// German <-> English cognates for Dimenticato.  GENERATED — edit
 // scripts/build_german_extras.py and re-run it instead of editing this file.
@@ -3059,17 +3050,17 @@ def main():
     report = {}
 
     if not args.skip_collocations:
+        from canonical_collocations import write_collocations
         data = build_collocations(pairs)
         data['nounVerb'] = build_noun_verb(pairs)
-        size = write_js(
-            os.path.join(DATA, 'german-collocations-data.js'),
-            COLLOC_HEADER, 'GERMAN_COLLOCATIONS_DATA', data, 'collocations')
+        _, size, canon = write_collocations('de', data, COLLOC_HEADER)
+        noun_verb = canon['x']['nounVerb']
         report['collocations'] = {
-            'verbs': data['meta']['totalVerbs'],
-            'examples': data['meta']['totalExamples'],
-            'prepositionKeys': len(data['meta']['prepositionOrder']),
-            'nounVerbNouns': data['nounVerb']['meta']['totalVerbs'],
-            'nounVerbExamples': data['nounVerb']['meta']['totalExamples'],
+            'verbs': canon['meta']['count'],
+            'examples': canon['meta']['examples'],
+            'prepositionKeys': len(canon['keys']),
+            'nounVerbNouns': noun_verb['meta']['count'],
+            'nounVerbExamples': noun_verb['meta']['examples'],
             'bytes': size,
         }
 

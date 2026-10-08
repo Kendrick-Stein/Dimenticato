@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build data/english-collocations-data.js (ENGLISH_VERB_COLLOCATIONS_DATA).
+"""Build data/en-collocations.js (DIM_DATA.collocations.en, schema collocations/1).
 
 Authored source lives in scripts/english_collocations_source/*.txt (one file per
 letter range).  All example sentences and Chinese translations there are
@@ -24,18 +24,14 @@ Source format
   起飞 / 脱下); all its examples are merged under that key.
 * ``- <English> || <中文>`` an example of the current sense (1-4 per sense).
 
-Output shape (identical to data/verb-collocations-data.js):
-    { meta: { totalVerbs, totalExamples, prepositionOrder, language, ... },
+build() produces the legacy intermediate shape
+    { meta: { totalVerbs, totalExamples, prepositionOrder, particles, keyKinds, sources },
       verbs: { slug: { display, prepositions: { key: ["<en> <zh>", ...] },
-                       prepositionOrder: [...], ...additive } },
+                       prepositionOrder, zipf, senses } },
       prepositions: { key: [slug, ...] } }
-
-Additive fields (ignored by the renderer):
-    meta.particles    keys used at least once as an adverb particle
-    meta.keyKinds     key -> "preposition" | "particle" | "both"
-    meta.sources / meta.generatedBy
-    verbs[x].zipf     wordfreq Zipf frequency of the verb
-    verbs[x].senses   key -> [{ zh, kind, examples: [indices into prepositions[key]] }]
+which write() hands to scripts/canonical_collocations.py; the shipped file is
+collocations/1 (docs/data-schema.md).  Extras: keys[i].kind / x.particle,
+verbs[w].x.zipf, verbs[w].x.senses (key -> [{zh, kind, examples: [indices]}]).
 
 Usage:
     python3 scripts/build_english_collocations.py          # build
@@ -47,11 +43,11 @@ import re
 import sys
 from collections import OrderedDict, defaultdict
 from pathlib import Path
-from data_module import register_footer
+from canonical_collocations import write_collocations
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = ROOT / 'scripts' / 'english_collocations_source'
-OUT = ROOT / 'data' / 'english-collocations-data.js'
+OUT = ROOT / 'data' / 'en-collocations.js'
 
 CJK = re.compile(r'[一-鿿]')
 CJK_START = re.compile(r'^[一-鿿　-〿]')
@@ -351,26 +347,16 @@ def build(verbs):
 
 
 def write(dataset):
-    meta = dataset['meta']
+    """Canonicalise (collocations/1) and write data/en-collocations.js."""
     header = (
         '// English verb collocations: verb + dependent preposition (depend on) and\n'
-        '// phrasal verbs (give up, put up with).  GENERATED - edit\n'
+        '// phrasal verbs (give up, put up with).  Edit\n'
         '// scripts/english_collocations_source/*.txt and re-run\n'
         '//   python3 scripts/build_english_collocations.py\n'
-        '// Mirrors the Italian data/verb-collocations-data.js shape exactly:\n'
-        '//   { meta: { totalVerbs, totalExamples, prepositionOrder },\n'
-        '//     verbs: { <slug>: { display, prepositions: { <key>: ["<en> <zh>"] }, prepositionOrder } },\n'
-        '//     prepositions: { <key>: [<slug>] } }\n'
-        '// Keys include adverb particles (up, out, off...) and multi-word sequences\n'
-        '// (up with); meta.keyKinds / meta.particles tell prepositions and particles apart.\n'
-        '// Additive fields (ignored by the renderer): meta.language, meta.particles,\n'
-        '//   meta.keyKinds, meta.sources, verbs[x].zipf, verbs[x].senses.\n'
-        '// Sources: sentences and translations authored for this project; wordfreq for ranking.\n'
-        f'// Total verbs: {meta["totalVerbs"]} / Total examples: {meta["totalExamples"]}\n\n'
+        '// keys[].kind tells prepositions and particles apart (x.particle = also used\n'
+        '// as a particle); verbs[w].x.zipf / x.senses are build extras.\n'
     )
-    body = json.dumps(dataset, ensure_ascii=False, indent=2)
-    OUT.write_text(header + 'const ENGLISH_VERB_COLLOCATIONS_DATA = ' + body + ';\n'
-                   + register_footer('collocations', 'en', 'ENGLISH_VERB_COLLOCATIONS_DATA'), encoding='utf-8')
+    return write_collocations('en', dataset, header)
 
 
 def main(argv):
@@ -389,9 +375,9 @@ def main(argv):
         print('OK (check only)')
         return 0
     dataset = build(verbs)
-    write(dataset)
-    print(f'wrote {OUT.relative_to(ROOT)}: {dataset["meta"]["totalVerbs"]} verbs, '
-          f'{dataset["meta"]["totalExamples"]} examples, {len(dataset["prepositions"])} keys')
+    path, size, canon = write(dataset)
+    print(f'wrote {path.relative_to(ROOT)}: {canon["meta"]["count"]} verbs, '
+          f'{canon["meta"]["examples"]} examples, {len(canon["keys"])} keys, {size} bytes')
     return 0
 
 
