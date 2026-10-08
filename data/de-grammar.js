@@ -1,4 +1,4 @@
-// data/german-grammar-data.js — 德语语法书（grammar/1，docs/data-schema.md）
+// data/de-grammar.js — 德语语法书（grammar/1，docs/data-schema.md）
 // SOURCE OF TRUTH — the Docusaurus corpus scripts/build_german_grammar.py read
 // (deutsch-data/grammar/docs) is gone, so this file is edited directly.
 // After editing, normalise it with:  python3 scripts/canonicalize_grammar.py de
