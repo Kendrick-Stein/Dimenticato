@@ -77,7 +77,6 @@
 {"verb":"erlöschen","tense":"konjunktiv_ii_perfekt","person":4,"from":"hättet erlöscht / hättet erloschen","to":"wäret erloschen"},
 {"verb":"erlöschen","tense":"konjunktiv_ii_perfekt","person":5,"from":"hätten erlöscht / hätten erloschen","to":"wären erloschen"},
 {"verb":"erlöschen","tense":"x.verbClass","person":null,"from":"weak","to":"strong"},
-{"verb":"erlöschen","tense":"x.konjunktivIiSynthetischSelten","person":null,"from":{"ich":"erlöschte / erlösche","du":"erlöschtest / erlöschest","er_sie_es":"erlöschte / erlösche","wir":"erlöschten / erlöschen","ihr":"erlöschtet / erlöschet","sie":"erlöschten / erlöschen"},"to":{"ich":"erlösche","du":"erlöschest","er_sie_es":"erlösche","wir":"erlöschen","ihr":"erlöschet","sie":"erlöschen"}},
 {"verb":"schwellen","tense":"x.auxiliary","person":null,"from":["haben"],"to":["sein"]},
 {"verb":"schwellen","tense":"indikativ_perfekt","person":0,"from":"habe geschwollen","to":"bin geschwollen"},
 {"verb":"schwellen","tense":"indikativ_perfekt","person":1,"from":"hast geschwollen","to":"bist geschwollen"},
@@ -817,5 +816,5 @@
 {"verb":"erfordern","tense":"imperativ","person":1,"from":"erfordre / erforder","to":"erfordere / erfordre / erforder","why":"-ern verbs: the full du-imperative (ändere) is standard; ändre/änder are the reduced forms"},
 {"verb":"erlöschen","tense":"konjunktiv_ii","person":null,"from":["würde erlöschen","würdest erlöschen","würde erlöschen","würden erlöschen","würdet erlöschen","würden erlöschen"],"to":["erlösche / würde erlöschen","erlöschest / würdest erlöschen","erlösche / würde erlöschen","erlöschen / würden erlöschen","erlöschet / würdet erlöschen","erlöschen / würden erlöschen"],"why":"strong verb (erlosch): synthetic KII erlösche is in use alongside würde"},
 {"verb":"erlöschen","tense":"x.konjunktivIiType","person":null,"from":"wuerde","to":"both","why":"see konjunktiv_ii"},
-{"verb":"erlöschen","tense":"x.konjunktivIiSynthetischSelten","person":null,"from":{"ich":"erlösche","du":"erlöschest","er_sie_es":"erlösche","wir":"erlöschen","ihr":"erlöschet","sie":"erlöschen"},"to":null,"why":"now part of konjunktiv_ii"},
+{"verb":"erlöschen","tense":"x.konjunktivIiSynthetischSelten","person":null,"from":{"ich":"erlöschte / erlösche","du":"erlöschtest / erlöschest","er_sie_es":"erlöschte / erlösche","wir":"erlöschten / erlöschen","ihr":"erlöschtet / erlöschet","sie":"erlöschten / erlöschen"},"to":null,"why":"now part of konjunktiv_ii"},
 {"verb":"winken","tense":"x.verbClass","person":null,"from":"strong","to":"weak","why":"standard Partizip II is gewinkt (Duden); gewunken is colloquial"}]
