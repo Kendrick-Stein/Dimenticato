@@ -195,8 +195,11 @@ const VerbCollocations = (() => {
     }
     syncSidebarToggle();
 
+    // 每敲一个字都重排几百个动词卡片太重：输入停 150ms 再搜
+    let searchTimer = null;
     dom.searchInput?.addEventListener('input', () => {
-      updateSearch(dom.searchInput.value.trim());
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => updateSearch(dom.searchInput.value.trim()), 150);
     });
 
     dom.searchInput?.addEventListener('keydown', (event) => {
@@ -218,7 +221,16 @@ const VerbCollocations = (() => {
     if (dom.backBtn) {
       dom.backBtn.innerHTML = '<span class="msr" aria-hidden="true">arrow_back</span>返回语法';
     }
+    // 动词搜索框是目标语言；目录/结果里只给目标语言的那一段标 lang（同行混着中文计数）
+    const code = Languages.code(state.lang);
+    [dom.searchInput].forEach((el) => {
+      if (!el) return;
+      if (code) el.setAttribute('lang', code);
+      else el.removeAttribute('lang');
+    });
     if (dom.searchInput) {
+      dom.searchInput.setAttribute('autocapitalize', 'off');
+      dom.searchInput.setAttribute('spellcheck', 'false');
       dom.searchInput.disabled = false;
       dom.searchInput.setAttribute('placeholder', `搜索${profile(state.lang).cn}动词...`);
     }
@@ -268,7 +280,7 @@ const VerbCollocations = (() => {
       btn.dataset.prep = key;
       if (rec && rec.zh) btn.title = rec.zh;
       btn.innerHTML =
-        '<span class="vc-prep-name">' + escapeHtml(keyLabel(data, key)) + '</span>' +
+        '<span class="vc-prep-name" lang="' + escapeAttribute(Languages.code(state.lang) || '') + '">' + escapeHtml(keyLabel(data, key)) + '</span>' +
         '<span class="vc-prep-count">' + words.length + ' 个动词</span>';
       btn.addEventListener('click', () => selectKey(key));
 
@@ -391,18 +403,28 @@ const VerbCollocations = (() => {
     renderSearchChooser(query, matches);
   }
 
+  // 搜索索引：每个数据集只建一次（折叠键 + 已排好序），之后每次查询只做 includes 过滤
+  let searchIndex = { map: null, items: [] };
+  function verbSearchIndex() {
+    const map = getVerbMap();
+    if (searchIndex.map !== map) {
+      const items = Object.entries(map || {})
+        .map(([word, verb]) => ({
+          word,
+          display: displayOf(verb, word),
+          keyCount: keysOf(verb).length,
+        }));
+      items.forEach((item) => { item.key = looseKey(item.display); });
+      items.sort((a, b) => a.display.localeCompare(b.display));
+      searchIndex = { map, items };
+    }
+    return searchIndex.items;
+  }
+
   function findVerbMatches(query) {
     const normalized = looseKey(query);
     if (!normalized) return [];
-
-    return Object.entries(getVerbMap())
-      .map(([word, verb]) => ({
-        word,
-        display: displayOf(verb, word),
-        keyCount: keysOf(verb).length,
-      }))
-      .filter(item => looseKey(item.display).includes(normalized))
-      .sort((a, b) => a.display.localeCompare(b.display));
+    return verbSearchIndex().filter(item => item.key.includes(normalized));
   }
 
   function renderSearchMatches(matches) {
@@ -416,7 +438,7 @@ const VerbCollocations = (() => {
     const topMatches = matches.slice(0, 12);
     dom.searchMatches.innerHTML = topMatches.map(match => (
       '<button class="vc-search-match-btn' + (state.selectedVerb === match.word ? ' active' : '') + '" data-slug="' + escapeAttribute(match.word) + '">' +
-        '<span class="vc-search-match-name">' + escapeHtml(match.display) + '</span>' +
+        '<span class="vc-search-match-name" lang="' + escapeAttribute(Languages.code(state.lang) || '') + '">' + escapeHtml(match.display) + '</span>' +
         '<span class="vc-search-match-meta">' + match.keyCount + ' 组</span>' +
       '</button>'
     )).join('');

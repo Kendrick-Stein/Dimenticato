@@ -741,12 +741,29 @@
     renderBrowseList();
   }
 
+  // 浏览搜索的折叠键缓存：每个词条只折叠一次（词库约 2.4 万条，原先每次查询全部重算）。
+  // WeakMap 按词条对象索引，不改词库数据；词库重载后旧对象自然被回收。
+  var browseKeys = typeof WeakMap === 'function' ? new WeakMap() : null;
+  function browseKeyOf(e) {
+    var k = browseKeys && browseKeys.get(e);
+    if (k) return k;
+    k = {
+      word: global.Vocab.looseKey(e.word),
+      display: e.display ? global.Vocab.looseKey(e.display) : '',
+      zh: String(e.zh || ''),
+      en: e.en ? String(e.en).toLowerCase() : ''
+    };
+    if (browseKeys) browseKeys.set(e, k);
+    return k;
+  }
+
   function renderBrowseList() {
     var l = lang();
     var src = currentSource(l);
     var mastered = Progress.mastered(src.key);
     var q = browse.q.trim();
     var qKey = q ? global.Vocab.looseKey(q) : '';
+    var qLower = q.toLowerCase();
     // 系统词库浏览全部等级（等级由上面的筛选控制），不受练习范围里选的等级限制
     var base = src.kind === 'system' ? global.Vocab.entries(l) : src.entries;
     var list = base.filter(function (e) {
@@ -754,15 +771,16 @@
       if (browse.status === 'new' && mastered.has(e.word)) return false;
       if (browse.status === 'known' && !mastered.has(e.word)) return false;
       if (!q) return true;
-      return global.Vocab.looseKey(e.word).indexOf(qKey) >= 0 ||
-        (e.display && global.Vocab.looseKey(e.display).indexOf(qKey) >= 0) ||
-        String(e.zh || '').indexOf(q) >= 0 ||
-        (e.en && e.en.toLowerCase().indexOf(q.toLowerCase()) >= 0);
+      var k = browseKeyOf(e);
+      return k.word.indexOf(qKey) >= 0 ||
+        (k.display && k.display.indexOf(qKey) >= 0) ||
+        k.zh.indexOf(q) >= 0 ||
+        (k.en && k.en.indexOf(qLower) >= 0);
     });
     // 搜索时把词头精确/前缀命中排在前面
     if (q) {
       var rank = function (e) {
-        var k = global.Vocab.looseKey(e.word);
+        var k = browseKeyOf(e).word;
         return k === qKey ? 0 : k.indexOf(qKey) === 0 ? 1 : 2;
       };
       list = list.map(function (e, i) { return { e: e, r: rank(e), i: i }; })
