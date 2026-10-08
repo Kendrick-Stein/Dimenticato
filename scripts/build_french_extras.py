@@ -2242,17 +2242,17 @@ def write_cognates(rows, out_path, stats):
     faux = sum(1 for r in data if r.get("falseFriend"))
     header = (
         "// French cognate data — French <-> English (with an Italian bridge) look-alikes.\n"
-        "// Mirrors data/cognates.js exactly, with `french` replacing `italian`:\n"
-        "//   {french, english, chinese, patternType, similarityScore, difficulty, rank}\n"
-        "// Additive fields: partOfSpeech, gender, falseFriend, lookalike, warning,\n"
-        "//   italian / italianSimilarity / italianPatternType, similarityBasis,\n"
-        "//   patternNote (reason when patternType is null), source, chineseSource,\n"
-        "//   semanticGate (pass|fail|unknown — 见下).\n"
-        "// similarityBasis='english' -> similarityScore compares french vs english;\n"
-        "// similarityBasis='lookalike' (faux amis) -> it compares french vs the trap word.\n"
+        "// Schema cognates/1 (docs/data-schema.md), written through scripts/canonical_cognates.py.\n"
+        "// Entry: {word, pos, gender, rank, en, zh, pattern, similarity (0…1),\n"
+        "//   difficulty (1/2/3), falseFriend {lookalike, note}, src (index into meta.sources),\n"
+        "//   x: {italian, italianSimilarity, italianPatternType, semanticGate (pass|fail|unknown\n"
+        "//   — 见下), patternNote (reason when there is no pattern), zhSrc (index into\n"
+        "//   meta.x.zhSources)}}.\n"
+        "// similarity compares french vs en; for faux amis (falseFriend set) it compares\n"
+        "// french vs the trap word falseFriend.lookalike.\n"
         "//\n"
         "// 中文释义的优先级链（2026 修：不再无条件走英语跳板）：\n"
-        "//   1. 手写 faux-amis 表 / 手写覆盖表 ....... chineseSource 以 authored 开头\n"
+        "//   1. 手写 faux-amis 表 / 手写覆盖表 ....... zhSources 里以 authored 开头\n"
         "//   2. data/french-vocabulary.js（课程整理词表）\n"
         "//   3. data/french-vocabulary-glossary.js（教材总词汇表）\n"
         "//   4. ECDICT 英语跳板，且必须通过语义闸门（法语词的真实义与英语 look-alike\n"
@@ -2265,13 +2265,10 @@ def write_cognates(rows, out_path, stats):
         "//          python3 scripts/build_french_extras.py --only cognate-glosses  (只重跑释义层)\n"
         "// Total entries: %d (faux amis: %d)\n" % (len(data), faux)
     )
-    body = "const FRENCH_COGNATE_DATA = %s;\n\n" % json.dumps(data, ensure_ascii=False, indent=2)
-    tail = ("if (typeof window !== 'undefined') { window.FRENCH_COGNATE_DATA = FRENCH_COGNATE_DATA; }\n"
-            "if (typeof module !== 'undefined' && module.exports) { module.exports = FRENCH_COGNATE_DATA; }\n"
-            + register_footer('cognates', 'fr', 'FRENCH_COGNATE_DATA'))
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write(header + "\n" + body + tail)
-    log("cognates: %d entries (%d faux amis)" % (len(data), faux))
+    import canonical_cognates
+    _, size = canonical_cognates.emit(
+        "fr", data, builder="scripts/build_french_extras.py", header=header, path=out_path)
+    log("cognates: %d entries (%d faux amis), %d bytes" % (len(data), faux, size))
     log("  gloss layer: %s" % dict(sorted(stats.items())))
     npat = sum(1 for r in data if r["patternType"])
     log("  classified patternType: %d / %d  (italian bridge: %d)"
@@ -2306,7 +2303,8 @@ def refresh_cognate_glosses(out_path):
     （那一步在 build_cognates 里）。所以发布前的最后一次落盘要走整表重建，
     --only cognate-glosses 只用来快速迭代释义层。
     """
-    existing = load_js_array(out_path, "FRENCH_COGNATE_DATA")
+    import canonical_cognates
+    existing = canonical_cognates.to_legacy("fr", canonical_cognates.read("fr", out_path))
     rows = {}
     for r in existing:
         rows[r["french"]] = dict(r)

@@ -30,7 +30,8 @@ const NODE_HARNESSES = ['check-icons.js', 'check-data-modules.js', 'test-french-
 // 各语言的专属规则是它里面的 per-language hook。
 const VALIDATORS = [
   'scripts/validate_vocab.js',
-  'scripts/validate_italian_extras.js',
+  // 模块数据（cognates/1 等）的统一校验：CHECKS 表，每个模块一个 validator + per-language hook
+  'scripts/validate_modules.js',
   'scripts/validate_french_extras.js',
   'scripts/validate_french_conjugations.js',
   'scripts/validate_english_conjugations.js',

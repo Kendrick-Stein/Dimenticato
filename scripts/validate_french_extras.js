@@ -13,11 +13,7 @@
  *   - no empty / placeholder / mojibake glosses, no self-glosses, no dupes,
  *   - every collocation example round-trips through the app's own extractItZh()
  *     parser into a non-empty French half and a non-empty Chinese half,
- *   - cognate similarity scores are in range and consistent with `difficulty`,
- *   - every patternType is a real classified value or explicitly null with a
- *     patternNote reason,
- *   - every noun carries a gender, every entry carries a part of speech,
- *   - ranks are real corpus ranks, not array indices.
+ *   - (cognates moved to scripts/validate_modules.js, schema cognates/1).
  *
  * Exits 0 when clean, 1 on the first non-empty error list.
  */
@@ -29,9 +25,7 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const FR_COLLOC = path.join(ROOT, 'data', 'french-collocations-data.js');
-const FR_COGNATE = path.join(ROOT, 'data', 'french-cognates.js');
 const IT_COLLOC = path.join(ROOT, 'data', 'verb-collocations-data.js');
-const IT_COGNATE = path.join(ROOT, 'data', 'cognates.js');
 
 const errors = [];
 const notes = [];
@@ -101,7 +95,7 @@ function bracketsBalanced(value) {
 // ===========================================================================
 // 1. files load, globals exist, module.exports tail present
 // ===========================================================================
-for (const [file, name] of [[FR_COLLOC, 'FRENCH_COLLOCATIONS_DATA'], [FR_COGNATE, 'FRENCH_COGNATE_DATA']]) {
+for (const [file, name] of [[FR_COLLOC, 'FRENCH_COLLOCATIONS_DATA']]) {
   check(fs.existsSync(file), `missing dataset ${file}`);
   const src = fs.readFileSync(file, 'utf8');
   check(new RegExp(`if \\(typeof module !== 'undefined' && module\\.exports\\) \\{ module\\.exports = ${name}; \\}`).test(src),
@@ -114,9 +108,7 @@ for (const [file, name] of [[FR_COLLOC, 'FRENCH_COLLOCATIONS_DATA'], [FR_COGNATE
 }
 
 const COLLOC = require(FR_COLLOC);
-const COGNATES = require(FR_COGNATE);
 const IT_COLLOC_DATA = loadGlobal(IT_COLLOC, 'VERB_COLLOCATIONS_DATA').viaGlobal;
-const IT_COGNATE_DATA = loadGlobal(IT_COGNATE, 'COGNATE_DATA').viaGlobal;
 
 // ===========================================================================
 // 2. collocations: shape parity with the Italian reference
@@ -280,139 +272,13 @@ for (const [slug, wanted] of [['penser', ['à', 'de']], ['jouer', ['à', 'de']],
   }
 }
 
-// ===========================================================================
-// 3. cognates: shape parity with the Italian reference
-// ===========================================================================
-check(Array.isArray(COGNATES), 'cognates: dataset must be an array');
-const itCognateKeys = Object.keys(IT_COGNATE_DATA[0]);
-check(itCognateKeys.includes('italian'), 'cognates: Italian reference lost its "italian" field?');
-const REQUIRED = itCognateKeys.map((k) => (k === 'italian' ? 'french' : k));
-
-const PATTERN_OK = /(^同形词 identical$)|(^假朋友 faux-ami$)|(\/)/;
-const seenFrench = new Map();
-const seenShape = new Map();
-let classified = 0;
-let identityRank = 0;
-let maxRank = 0;
-
-COGNATES.forEach((row, i) => {
-  const where = `cognates#${i} "${row && row.french}"`;
-  if (!check(row && typeof row === 'object', `${where}: not an object`)) return;
-  for (const k of REQUIRED) {
-    check(k in row, `${where}: missing required field "${k}"`);
-  }
-  const refRow = IT_COGNATE_DATA[0];
-  for (const k of REQUIRED) {
-    if (!(k in row)) continue;
-    const want = k === 'french' ? typeof refRow.italian : typeof refRow[k];
-    if (k === 'patternType') continue; // reference value may be null
-    check(typeof row[k] === want, `${where}: field "${k}" type ${typeof row[k]} !== Italian ${want}`);
-  }
-
-  for (const k of ['french', 'english', 'chinese']) {
-    const bad = badText(row[k]);
-    check(!bad, `${where}: ${k} is ${bad}`);
-  }
-  check(!CJK.test(row.french || ''), `${where}: french contains Chinese`);
-  check(!CJK.test(row.english || ''), `${where}: english contains Chinese`);
-  check(CJK.test(row.chinese || ''), `${where}: chinese has no CJK`);
-  check(!LATIN.test(row.chinese || ''), `${where}: chinese carries latin/POS artefacts -> ${JSON.stringify(row.chinese)}`);
-  check(!/[<>[\]《》]/.test(row.chinese || ''),
-    `${where}: chinese carries dictionary markup -> ${JSON.stringify(row.chinese)}`);
-  check(bracketsBalanced(row.chinese || ''),
-    `${where}: chinese is a bracket-truncated fragment -> ${JSON.stringify(row.chinese)}`);
-  check(bracketsBalanced(row.warning || ''),
-    `${where}: warning is a bracket-truncated fragment -> ${JSON.stringify(row.warning)}`);
-  check(strip(row.chinese || '') !== strip(row.french || ''), `${where}: chinese is the headword`);
-
-  // similarity + difficulty
-  check(Number.isInteger(row.similarityScore) && row.similarityScore >= 0 && row.similarityScore <= 100,
-    `${where}: similarityScore ${row.similarityScore} out of range`);
-  const curve = row.similarityScore >= 80 ? 'easy' : (row.similarityScore >= 50 ? 'medium' : 'hard');
-  check(row.difficulty === curve || row.falseFriend === true,
-    `${where}: difficulty "${row.difficulty}" !== "${curve}" for score ${row.similarityScore}`);
-  check(['easy', 'medium', 'hard'].includes(row.difficulty), `${where}: unknown difficulty "${row.difficulty}"`);
-
-  // patternType: real classified value, or null WITH a stated reason
-  if (row.patternType === null) {
-    check(typeof row.patternNote === 'string' && row.patternNote.trim().length > 0,
-      `${where}: patternType is null without a patternNote reason`);
-  } else {
-    classified += 1;
-    check(typeof row.patternType === 'string' && PATTERN_OK.test(row.patternType),
-      `${where}: patternType "${row.patternType}" is not a recognised correspondence label`);
-  }
-  if (strip(row.french || '') === strip(row.english || '')) {
-    check(row.patternType === '同形词 identical' || row.falseFriend === true,
-      `${where}: identical spelling but patternType "${row.patternType}"`);
-  }
-
-  // part of speech + gender
-  const bp = badText(row.partOfSpeech);
-  check(!bp, `${where}: partOfSpeech is ${bp}`);
-  if ((row.partOfSpeech || '').startsWith('n.')) {
-    check(row.gender === 'm' || row.gender === 'f', `${where}: noun without gender`);
-    check(row.partOfSpeech === `n.${row.gender}`,
-      `${where}: partOfSpeech "${row.partOfSpeech}" disagrees with gender "${row.gender}"`);
-  }
-
-  // rank must be a real corpus rank
-  check(Number.isInteger(row.rank) && row.rank > 0, `${where}: rank ${row.rank} is not a positive integer`);
-  if (row.rank === i + 1) identityRank += 1;
-  maxRank = Math.max(maxRank, row.rank);
-
-  check(['english', 'lookalike'].includes(row.similarityBasis),
-    `${where}: similarityBasis "${row.similarityBasis}" must be english|lookalike`);
-  check(typeof row.source === 'string' && row.source.length > 0, `${where}: missing source`);
-
-  if (row.falseFriend === true) {
-    check(row.patternType === '假朋友 faux-ami', `${where}: faux ami without the faux-ami patternType`);
-    check(!badText(row.lookalike), `${where}: faux ami without a lookalike word`);
-    check(!badText(row.warning) && CJK.test(row.warning || ''),
-      `${where}: faux ami without a Chinese warning`);
-  }
-  if ('italian' in row) {
-    check(!badText(row.italian), `${where}: empty italian bridge`);
-    check(Number.isInteger(row.italianSimilarity), `${where}: italianSimilarity must be an integer`);
-  }
-
-  // "passe" and "passé" are different words; "suicide"/"suicidé" glossed the
-  // same way are the same card twice.
-  const key = (row.french || '').toLowerCase();
-  check(!seenFrench.has(key), `${where}: duplicate headword (also at #${seenFrench.get(key)})`);
-  seenFrench.set(key, i);
-  const shape = `${strip(row.french || '')}|${row.english}|${row.chinese}`;
-  check(!seenShape.has(shape) || row.falseFriend === true,
-    `${where}: accent variant of "${seenShape.get(shape)}" with an identical gloss`);
-  if (!seenShape.has(shape)) seenShape.set(shape, row.french);
-});
-
-check(identityRank < COGNATES.length * 0.05,
-  `cognates: ${identityRank}/${COGNATES.length} ranks equal their array index — ranks look synthesised`);
-check(maxRank > COGNATES.length,
-  `cognates: max rank ${maxRank} <= entry count ${COGNATES.length} — ranks are not corpus ranks`);
-check(classified > COGNATES.length * 0.3,
-  `cognates: only ${classified}/${COGNATES.length} entries carry a real patternType`);
-
-// faux amis the brief names explicitly
-for (const w of ['actuellement', 'assister', 'librairie', 'sensible', 'journée']) {
-  const row = COGNATES.find((r) => r.french === w);
-  if (check(!!row, `cognates: required faux ami "${w}" is missing`)) {
-    check(row.falseFriend === true, `cognates: "${w}" is not flagged as a faux ami`);
-  }
-}
-
 // coverage floor: the authored layer (scripts/sources/french-collocations) brought
 // the dataset toward Italian breadth; a build that drops it would fall back to ~780
 check(verbCount >= 1300, `collocations: only ${verbCount} verbs (floor 1300) - authored sources not picked up?`);
 check(exampleCount >= 4500, `collocations: only ${exampleCount} examples (floor 4500)`);
 
-const fauxCount = COGNATES.filter((r) => r.falseFriend).length;
 notes.push(`collocations: ${verbCount} verbs, ${exampleCount} examples, ` +
   `${Object.keys(COLLOC.prepositions).length} prepositions`);
-notes.push(`cognates: ${COGNATES.length} entries, ${classified} with a classified patternType, ` +
-  `${fauxCount} faux amis, ${COGNATES.filter((r) => r.italian).length} with an Italian bridge`);
-notes.push(`rank scale: max ${maxRank} (corpus lemma rank), identity-rank rows ${identityRank}`);
 
 // ===========================================================================
 console.log(`ran ${checks} assertions`);

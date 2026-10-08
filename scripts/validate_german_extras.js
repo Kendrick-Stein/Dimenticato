@@ -3,7 +3,6 @@
  * Quality gate for the German extras datasets:
  *
  *   data/german-collocations-data.js   window.GERMAN_COLLOCATIONS_DATA
- *   data/german-cognates.js            window.GERMAN_COGNATE_DATA
  *   data/german-course-data.js         GERMAN_COURSE_DATA
  *
  * Every rule the build script claims to enforce is re-checked here from the
@@ -14,7 +13,7 @@
  *   1. shape parity with the Italian datasets the renderers were written for
  *   2. no empty / placeholder / mojibake German or Chinese text anywhere
  *   3. a grammatical case marked on every governed preposition
- *   4. cognates: gloss, part of speech, gender on nouns, real corpus rank
+ *   4. (cognates moved to scripts/validate_modules.js, schema cognates/1)
  *   5. course: grammar slugs resolve against the German grammar tree,
  *      headwords resolve against data/vocab/de.js, examples are real
  */
@@ -58,10 +57,8 @@ function load(file, globalName) {
 }
 
 const collocations = load('german-collocations-data.js', 'GERMAN_COLLOCATIONS_DATA');
-const cognates = load('german-cognates.js', 'GERMAN_COGNATE_DATA');
 const course = load('german-course-data.js', 'GERMAN_COURSE_DATA');
 const italianCollocations = load('verb-collocations-data.js', 'VERB_COLLOCATIONS_DATA');
-const italianCognates = load('cognates.js', 'COGNATE_DATA');
 const grammar = load('german-grammar-data.js', 'GERMAN_GRAMMAR_DATA');
 // data/vocab/de.js (schema v1), mapped onto the field names used below
 const vocabulary = loadVocab('de').entries.map(function (e) {
@@ -265,114 +262,6 @@ check(Array.isArray(collocations.meta.licenses) && collocations.meta.licenses.le
   'collocations', 'meta.licenses must list the corpus licences');
 
 // ---------------------------------------------------------------------------
-// 4.  cognates
-// ---------------------------------------------------------------------------
-
-(function validateCognates() {
-  const CAT = 'cognates';
-  if (!check(Array.isArray(cognates) && cognates.length > 0, CAT, 'not a non-empty array')) return;
-
-  // -- shape parity: every field of the Italian entries exists here ---------
-  const italianFields = Object.keys(italianCognates[0])
-    .filter(function (f) { return f !== 'italian'; });
-  const first = cognates[0];
-  check(Object.prototype.hasOwnProperty.call(first, 'german'), CAT,
-    'entries must key the headword as "german" (Italian uses "italian")');
-  italianFields.forEach(function (field) {
-    check(Object.prototype.hasOwnProperty.call(first, field), CAT,
-      'missing Italian-parity field "' + field + '"');
-  });
-
-  const ranks = [];
-  const seen = new Set();
-  let falseFriends = 0;
-  let typed = 0;
-
-  cognates.forEach(function (entry, i) {
-    const where = 'entry ' + i + ' (' + (entry.german || '?') + ')';
-    if (!check(!badText(entry.german), CAT, where + ': bad german headword')) return;
-    check(!seen.has(entry.german), CAT, where + ': duplicate headword');
-    seen.add(entry.german);
-
-    const englishProblem = badText(entry.english);
-    check(!englishProblem, CAT, where + ': english gloss ' + englishProblem);
-    const chineseProblem = badText(entry.chinese);
-    check(!chineseProblem, CAT, where + ': chinese gloss ' + chineseProblem);
-    check(CJK.test(entry.chinese || ''), CAT, where + ': chinese gloss has no CJK');
-    check((entry.english || '').toLowerCase() !== (entry.german || '').toLowerCase() ||
-      entry.patternType === 'identisch' || entry.falseFriend === true, CAT,
-      where + ': headword is its own gloss');
-    check((entry.chinese || '').trim() !== (entry.german || '').trim(), CAT,
-      where + ': chinese gloss repeats the headword');
-
-    check(typeof entry.similarityScore === 'number' && entry.similarityScore >= 0 &&
-      entry.similarityScore <= 100, CAT, where + ': similarityScore out of range');
-    check(['easy', 'medium', 'hard'].indexOf(entry.difficulty) !== -1, CAT,
-      where + ': unknown difficulty ' + entry.difficulty);
-
-    // -- a real corpus rank, never the array index ------------------------
-    check(typeof entry.rank === 'number' && entry.rank > 0 && entry.rank % 1 === 0, CAT,
-      where + ': rank is not a positive integer');
-    ranks.push(entry.rank);
-
-    // -- part of speech on every entry, gender on every noun --------------
-    check(!!entry.pos && !badText(entry.pos), CAT, where + ': missing part of speech');
-    if (entry.pos === 'Substantiv') {
-      check(['m', 'f', 'n'].indexOf(entry.gender) !== -1, CAT,
-        where + ': noun without gender');
-      check(/^(der|die|das) /.test(entry.display || ''), CAT,
-        where + ': noun display lacks its article');
-    }
-    check(!!entry.source && !badText(entry.source), CAT, where + ': missing source');
-
-    if (entry.patternType) typed += 1;
-    if (entry.falseFriend) {
-      falseFriends += 1;
-      check(entry.patternType === 'falscher Freund', CAT,
-        where + ': false friend without the "falscher Freund" patternType');
-      check(!badText(entry.falseFriendOf), CAT, where + ': falseFriendOf missing');
-      check(!badText(entry.falseFriendChinese), CAT, where + ': falseFriendChinese missing');
-      check(!badText(entry.germanFor), CAT, where + ': germanFor missing');
-      check((entry.falseFriendOf || '').toLowerCase() !== (entry.english || '').toLowerCase(),
-        CAT, where + ': english gloss equals the trap word - the entry would teach the error');
-    }
-  });
-
-  const indexLike = ranks.every(function (r, i) { return r === i + 1; });
-  check(!indexLike, CAT, 'ranks are just the array index');
-  check(new Set(ranks).size > cognates.length * 0.8, CAT, 'ranks are not distinct enough to be real');
-
-  check(falseFriends >= 50, CAT, 'expected at least 50 falsche Freunde, found ' + falseFriends);
-  check(Array.isArray(cognates.falseFriends) && cognates.falseFriends.length === falseFriends,
-    CAT, 'the .falseFriends convenience view is missing or stale');
-  const coverage = typed / cognates.length;
-  check(coverage >= 0.7, CAT, 'patternType coverage ' + (coverage * 100).toFixed(1) +
-    '% is below the 70% bar');
-
-  // -- 规律组不能太小 ------------------------------------------------------
-  // 界面上每个 patternType 都会单独出一张卡片，还会写一句「这一组词……存在
-  // 某某对应」。只兜住两三个词的组撑不起这句话，构建脚本里的
-  // MIN_PATTERN_GROUP 会把它们并进 Other。那边是个跑到不动点的循环，这里
-  // 独立复核落地结果，免得循环哪天不收敛、thin 组静悄悄发出去。
-  // 数值跟 scripts/build_german_extras.py 的 MIN_PATTERN_GROUP 对齐。
-  const MIN_PATTERN_GROUP = 5;
-  const EXEMPT = ['identisch', 'falscher Freund'];  // 不是规则标签，不受此限
-  const groupSize = new Map();
-  cognates.forEach(function (entry) {
-    const p = entry.patternType;
-    if (!p || EXEMPT.indexOf(p) !== -1) return;
-    groupSize.set(p, (groupSize.get(p) || 0) + 1);
-  });
-  const thin = [];
-  groupSize.forEach(function (n, p) {
-    if (n < MIN_PATTERN_GROUP) thin.push(p + '=' + n);
-  });
-  check(thin.length === 0, CAT, 'pattern groups below MIN_PATTERN_GROUP=' +
-    MIN_PATTERN_GROUP + ': ' + thin.sort().join(', '));
-  check(groupSize.size > 0, CAT, 'no rule-based pattern groups at all');
-})();
-
-// ---------------------------------------------------------------------------
 // 5.  course
 // ---------------------------------------------------------------------------
 
@@ -498,8 +387,6 @@ const summary = [
   'collocations: ' + collocStats.verbs + ' verbs / ' + collocStats.examples + ' examples',
   'Funktionsverbgefüge: ' + (nounVerbStats ? nounVerbStats.verbs + ' nouns / ' +
     nounVerbStats.examples + ' examples' : 'missing'),
-  'cognates: ' + cognates.length + ' entries / ' +
-    (cognates.falseFriends || []).length + ' falsche Freunde',
   'course: ' + (course.levels || []).reduce(function (n, l) { return n + l.units.length; }, 0) +
     ' units',
 ].join('\n  ');
