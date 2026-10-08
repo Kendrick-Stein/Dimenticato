@@ -254,12 +254,14 @@ const LANGS = {
   de: { ...FLOORS, minPos: 0.999, gold: [['Haus', 'noun', 'n'], ['gehen', 'verb'], ['schön', 'adjective']], check: checkGerman },
   en: {
     minPos: FLOORS.minPos,
-    gold: [['house', 'noun'], ['go', 'verb'], ['beautiful', 'adjective'], ['is', 'verb'],
-      ['the', 'article'], ['every', 'determiner'], ['good', 'adjective'], ['York', 'properNoun'],
+    gold: [['house', 'noun'], ['go', 'verb'], ['beautiful', 'adjective'], ['be', 'verb'],
+      ['the', 'article'], ['every', 'determiner'], ['good', 'adjective'], ['England', 'properNoun'],
       ['Estonian', 'adjective'], ['china', 'noun'],
-      // common words a recasing pass must leave lowercase (not OR / ME / US / Ate)
-      ['or', 'conjunction'], ['me', 'pronoun'], ['us', 'pronoun'], ['ate', 'verb'],
-      ['Luke', 'properNoun'], ['Jerry', 'properNoun']]
+      // common words a recasing pass must leave lowercase (not OR / ME / US / Eat)
+      ['or', 'conjunction'], ['me', 'pronoun'], ['us', 'pronoun'], ['eat', 'verb']],
+    // inflected forms and names that must not come back as headwords
+    // (scripts/en_vocab_fixes merges / drops them)
+    absent: ['is', 'ate', 'York', 'Luke', 'Jerry']
   },
   fr: { ...FLOORS, gold: [['maison', 'noun', 'f'], ['aller', 'verb'], ['beau', 'adjective']], check: checkFrench }
 };
@@ -386,6 +388,9 @@ function validate(lang) {
     if (!e) return err(`gold: ${word} missing`);
     if (e.pos !== pos) err(`gold: ${word} pos ${e.pos} !== ${pos}`);
     if (gender && e.gender !== gender) err(`gold: ${word} gender ${e.gender} !== ${gender}`);
+  });
+  (cfg.absent || []).forEach((word) => {
+    if (byWord.has(word)) err(`${word} must not be a headword`);
   });
   return { errors, stats };
 }

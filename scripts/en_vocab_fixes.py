@@ -26,6 +26,9 @@ The decisions live in scripts/en_vocab_fixes/ (committed):
                                  abbreviation is dropped by rule.
   zh-overrides.json   word -> hand-checked zh, applied after the automatic
                       cleanup (``clean_zh``).
+  additions.json      word -> {pos, zh}: words the frequency cut left out but a
+                      module needs (verbs taught by data/en-collocations.js);
+                      added when missing, then ranked by wordfreq like the rest.
 
 ``--regen`` needs lemminflect, babel and data/vocab/src/en-lexicon.tsv (UD
 counts + Open English WordNet lemmas).  It only adds decisions for headwords
@@ -53,6 +56,7 @@ FIX_DIR = HERE / 'en_vocab_fixes'
 MERGED = FIX_DIR / 'merged-forms.json'
 PROPER = FIX_DIR / 'proper-nouns.json'
 ZH_OVERRIDES = FIX_DIR / 'zh-overrides.json'
+ADDITIONS = FIX_DIR / 'additions.json'
 LEXICON = vs.ROOT / 'data' / 'vocab' / 'src' / 'en-lexicon.tsv'
 
 ZH_MAX = 40          # learner gloss budget (characters)
@@ -296,6 +300,14 @@ def apply(entries: list) -> tuple[list, dict]:
             stats['dropped-proper'] += 1
 
     survivors = [e for e in entries if e['word'] not in gone and by.get(e['word']) is e]
+    present = {e['word'] for e in survivors}
+    for word, add in _load(ADDITIONS, {}).items():
+        if word.startswith('_') or word in present:
+            continue
+        survivors.append({'word': word, 'pos': add['pos'], 'zh': add['zh'],
+                          'freq': vs.wordfreq_per_million(word, 'en'),
+                          'rank': len(survivors) + 1, 'levelSource': 'freq-band'})
+        stats['added'] += 1
 
     # 4. zh cleanup.
     for e in survivors:
