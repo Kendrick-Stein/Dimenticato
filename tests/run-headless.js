@@ -41,6 +41,8 @@ const VALIDATORS = [
   'scripts/validate_german_grammar.js',
   'scripts/validate_english_grammar.js',
   'scripts/validate_english_collocations.js',
+  // 德语/英语内容质量：多性名词白名单、zh 义项编号残留、英语屈折词头、课程级别错位
+  'scripts/validate_de_en_quality.js',
 ];
 
 function extractScripts(html) {
