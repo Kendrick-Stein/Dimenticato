@@ -8,6 +8,8 @@
  *   de  article in display for gendered nouns, no inflected headwords,
  *       budgeted holes (missing en, en echoing the headword)
  *   fr  headword shape, unique headword and unique glossKey(zh) across fr.js
+ * Shared floors (LANGS): pos coverage, en coverage (non-English), gender on
+ * nouns (gendered languages); see docs/vocab-schema.md "Coverage floors".
  *
 
  *   node scripts/validate_vocab.js          # all languages
@@ -23,7 +25,7 @@ const ROOT = path.resolve(__dirname, '..');
 const VOCAB_DIR = path.join(ROOT, 'data', 'vocab');
 
 const FIELDS = ['word', 'display', 'pos', 'posAll', 'gender', 'level', 'levelSource',
-  'rank', 'freq', 'zh', 'zhAlt', 'en', 'forms', 'tags', 'src', 'legacyId'];
+  'rank', 'freq', 'zh', 'zhAlt', 'en', 'forms', 'tags', 'src', 'legacyId', 'legacyWord'];
 const POS = new Set(['noun', 'properNoun', 'verb', 'adjective', 'adverb', 'pronoun',
   'determiner', 'article', 'preposition', 'conjunction', 'numeral', 'interjection',
   'particle', 'prefix', 'suffix', 'phrase', 'abbreviation']);
@@ -32,6 +34,9 @@ const LEVEL_SOURCES = new Set(['official', 'textbook', 'course', 'freq-band']);
 const FORM_KEYS = new Set(['plural', 'feminine', 'principalParts', 'construction',
   'government', 'pluraleTantum', 'pronominal', 'variants']);
 const GENDER_RE = /^[mfn](\/[mfn]){0,2}$/;
+/** One spelling per combination: letters in the order m, f, n ("m/f", "f/n",
+ *  "m/f/n"); vocab_schema.join_genders writes it, display keeps the primary. */
+const canonicalGender = (g) => ['m', 'f', 'n'].filter((x) => g.split('/').includes(x)).join('/');
 const BANDS = [[600, 'A1'], [1500, 'A2'], [3000, 'B1'], [6000, 'B2'], [12000, 'C1']];
 
 // ---- shared gloss-quality helpers (used by the per-language hooks below) ----
@@ -165,7 +170,7 @@ gehe gehst geht ging gingen gegangen machte machten gemacht
 const DE_INFLECTED_ALLOWED = new Set(['welcher']);
 /** Known, budgeted holes: no in-repo source can supply these, and growing one
  *  is a deliberate act (come here and say why). */
-const DE_BUDGET = { noEnglish: 125, enEchoShare: 0.05 };
+const DE_BUDGET = { noEnglish: 55, enEchoShare: 0.05 };
 
 function checkGerman(entries, meta, err) {
   let noEnglish = 0;
@@ -184,10 +189,12 @@ function checkGerman(entries, meta, err) {
       } else if (!e.gender) {
         err(`${where}: noun missing gender`);
       } else {
-        // "f/m" nouns (die/der Zeit-style variants): the display leads with the
-        // first gender's article.
-        const art = DE_ARTICLE[e.gender[0]];
-        if (!(e.display || '').startsWith(`${art} `)) err(`${where}: display ${JSON.stringify(e.display)} missing article ${art}`);
+        // Multi-gender nouns ("m/f", stored in canonical order): the display
+        // leads with the primary article, which may be any of them.
+        const arts = e.gender.split('/').map((g) => DE_ARTICLE[g]);
+        if (!arts.some((art) => (e.display || '').startsWith(`${art} `))) {
+          err(`${where}: display ${JSON.stringify(e.display)} missing article ${arts.join('/')}`);
+        }
       }
     } else if (e.pos === 'properNoun' && 'display' in e) {
       err(`${where}: proper noun display carries an article`);
@@ -236,13 +243,22 @@ function checkFrench(entries, meta, err) {
 }
 
 // Per-language floors, hand-checked gold rows and extra rule hooks.
+// Floors (same for every language, see docs/vocab-schema.md): minPos = share
+// of entries with pos; minEn = share with an English gloss (not for en);
+// minNounGender = share of pos:noun entries with gender (gendered languages).
 // maxNoCjk: known Italian hole — 150 machine-translated zh that stayed
 // latin/pinyin ("babbo", "tao"); budgeted so it can only shrink.
+const FLOORS = { minPos: 0.99, minEn: 0.99, minNounGender: 0.95 };
 const LANGS = {
-  it: { minPos: 0.995, maxNoCjk: 150, gold: IT_GOLD, check: checkItalian },
-  de: { minPos: 0.999, gold: [['Haus', 'noun', 'n'], ['gehen', 'verb'], ['schön', 'adjective']], check: checkGerman },
-  en: { minPos: 0.95, gold: [['house', 'noun'], ['go', 'verb'], ['beautiful', 'adjective']] },
-  fr: { minPos: 0.99, gold: [['maison', 'noun', 'f'], ['aller', 'verb'], ['beau', 'adjective']], check: checkFrench }
+  it: { ...FLOORS, minPos: 0.995, maxNoCjk: 150, gold: IT_GOLD, check: checkItalian },
+  de: { ...FLOORS, minPos: 0.999, gold: [['Haus', 'noun', 'n'], ['gehen', 'verb'], ['schön', 'adjective']], check: checkGerman },
+  en: {
+    minPos: FLOORS.minPos,
+    gold: [['house', 'noun'], ['go', 'verb'], ['beautiful', 'adjective'], ['is', 'verb'],
+      ['the', 'article'], ['every', 'determiner'], ['good', 'adjective'], ['York', 'properNoun'],
+      ['Estonian', 'adjective'], ['china', 'noun']]
+  },
+  fr: { ...FLOORS, gold: [['maison', 'noun', 'f'], ['aller', 'verb'], ['beau', 'adjective']], check: checkFrench }
 };
 
 function load(lang) {
@@ -274,7 +290,8 @@ function validate(lang) {
   if (!Array.isArray(meta.licences) || !meta.licences.length) err('meta.licences missing');
 
   const seen = new Set();
-  const stats = { entries: entries.length, pos: 0, gender: 0, nouns: 0, en: 0, freq: 0, levels: {}, noCjk: 0, noCjkSample: [] };
+  const stats = { entries: entries.length, pos: 0, gender: 0, nouns: 0, en: 0, freq: 0, forms: 0, levels: {}, levelSources: {}, noCjk: 0, noCjkSample: [] };
+  const allWords = new Set(entries.map((e) => e.word));
   let lastBandIdx = 0;
   entries.forEach((e, i) => {
     const where = `${lang}[${i}] ${JSON.stringify(e.word)}`;
@@ -301,12 +318,14 @@ function validate(lang) {
     if (e.pos === 'noun') stats.nouns += 1;
     if ('gender' in e) {
       if (!GENDER_RE.test(e.gender)) err(`${where}: bad gender ${e.gender}`);
+      else if (e.gender !== canonicalGender(e.gender)) err(`${where}: gender ${e.gender} not in m/f/n order (${canonicalGender(e.gender)})`);
       if (e.pos !== 'noun' && e.pos !== 'properNoun') err(`${where}: gender on ${e.pos}`);
       if (e.pos === 'noun') stats.gender += 1;
     }
     if (!LEVELS.includes(e.level)) err(`${where}: bad level ${e.level}`);
     if (!LEVEL_SOURCES.has(e.levelSource)) err(`${where}: bad levelSource ${e.levelSource}`);
     stats.levels[e.level] = (stats.levels[e.level] || 0) + 1;
+    stats.levelSources[e.levelSource] = (stats.levelSources[e.levelSource] || 0) + 1;
     if (e.rank !== i + 1) err(`${where}: rank ${e.rank} !== ${i + 1}`);
     if (e.freq !== null && !(typeof e.freq === 'number' && e.freq > 0)) err(`${where}: bad freq`);
     if (e.freq) stats.freq += 1;
@@ -320,6 +339,7 @@ function validate(lang) {
       err(`${where}: ${e.levelSource} level ${e.level} is harder than its frequency band`);
     }
     if ('forms' in e) {
+      stats.forms += 1;
       if (!e.forms || typeof e.forms !== 'object' || !Object.keys(e.forms).length) err(`${where}: empty forms`);
       else Object.entries(e.forms).forEach(([k, v]) => {
         if (!FORM_KEYS.has(k)) err(`${where}: unknown form ${k}`);
@@ -330,6 +350,14 @@ function validate(lang) {
     if ('tags' in e && !(Array.isArray(e.tags) && e.tags.length && e.tags.every((t) => typeof t === 'string' && t))) err(`${where}: bad tags`);
     if ('src' in e && !(Number.isInteger(e.src) && e.src >= 0 && e.src < meta.sources.length)) err(`${where}: bad src`);
     if ('legacyId' in e && !(typeof e.legacyId === 'string' && e.legacyId)) err(`${where}: bad legacyId`);
+    // legacyWord: the headword this entry had before a rename (progress keyed
+    // on the old word migrates through it) — must differ from word and must
+    // not be another entry's current word.
+    if ('legacyWord' in e) {
+      if (!(typeof e.legacyWord === 'string' && e.legacyWord.trim())) err(`${where}: bad legacyWord`);
+      else if (e.legacyWord === e.word) err(`${where}: legacyWord equals word`);
+      else if (allWords.has(e.legacyWord)) err(`${where}: legacyWord ${JSON.stringify(e.legacyWord)} is another entry's word`);
+    }
   });
 
   const cfg = LANGS[lang] || { minPos: 0.95, gold: [] };
@@ -339,6 +367,12 @@ function validate(lang) {
   }
   const posRate = stats.pos / entries.length;
   if (posRate < cfg.minPos) err(`POS coverage ${(posRate * 100).toFixed(2)}% < ${cfg.minPos * 100}%`);
+  const enRate = stats.en / entries.length;
+  if (cfg.minEn && enRate < cfg.minEn) err(`en coverage ${(enRate * 100).toFixed(2)}% < ${cfg.minEn * 100}%`);
+  const genderRate = stats.nouns ? stats.gender / stats.nouns : 1;
+  if (cfg.minNounGender && genderRate < cfg.minNounGender) {
+    err(`noun gender coverage ${(genderRate * 100).toFixed(2)}% < ${cfg.minNounGender * 100}%`);
+  }
   const byWord = new Map(entries.map((e) => [e.word, e]));
   cfg.gold.forEach(([word, pos, gender]) => {
     const e = byWord.get(word);
@@ -359,7 +393,9 @@ function main() {
     const pct = (n) => `${((n / stats.entries) * 100).toFixed(1)}%`;
     console.log(`${lang}: ${stats.entries} entries · pos ${pct(stats.pos)} · en ${pct(stats.en)} · freq ${pct(stats.freq)}`
       + ` · noun gender ${stats.nouns ? ((stats.gender / stats.nouns) * 100).toFixed(1) : '-'}%`
-      + ` · levels ${LEVELS.map((l) => `${l}:${stats.levels[l] || 0}`).join(' ')}`);
+      + ` · forms ${pct(stats.forms)}`
+      + ` · levels ${LEVELS.map((l) => `${l}:${stats.levels[l] || 0}`).join(' ')}`
+      + ` · levelSource ${Object.entries(stats.levelSources || {}).map(([k, v]) => `${k}:${v}`).join(' ')}`);
     if (errors.length) {
       failed += 1;
       errors.forEach((e) => console.log(`  ✗ ${e}`));

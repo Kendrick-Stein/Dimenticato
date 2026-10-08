@@ -50,6 +50,7 @@ FORM_KEYS = (
 FIELD_ORDER = (
     'word', 'display', 'pos', 'posAll', 'gender', 'level', 'levelSource',
     'rank', 'freq', 'zh', 'zhAlt', 'en', 'forms', 'tags', 'src', 'legacyId',
+    'legacyWord',
 )
 
 
@@ -77,11 +78,18 @@ def wordfreq_per_million(word: str, lang: str):
 
 
 def join_genders(genders) -> str:
-    seen = []
-    for g in genders:
-        if g in GENDERS and g not in seen:
-            seen.append(g)
-    return '/'.join(seen)
+    """Join gender letters in the canonical order m, f, n (``m/f``, ``f/n``).
+
+    The order carries no meaning (``display`` keeps the primary article), so
+    one spelling per combination keeps filters and the validator simple.
+    """
+    present = set(genders or ())
+    return '/'.join(g for g in GENDERS if g in present)
+
+
+def canonical_gender(value: str) -> str:
+    """'n/m/f' -> 'm/f/n'; unknown letters are dropped."""
+    return join_genders((value or '').split('/'))
 
 
 def clean_entry(entry: dict) -> dict:
@@ -105,6 +113,10 @@ def clean_entry(entry: dict) -> dict:
             continue
         if key == 'display' and value == entry.get('word'):
             continue
+        if key == 'gender':
+            value = canonical_gender(value)
+        if key == 'legacyWord' and value == entry.get('word'):
+            continue
         out[key] = value
     return out
 
@@ -123,6 +135,8 @@ def finalize(entries: list, lang: str, *, order_key=None) -> list:
     for e in entries:
         if 'freq' not in e:
             e['freq'] = wordfreq_per_million(e['word'], lang)
+        if e.get('gender'):
+            e['gender'] = canonical_gender(e['gender'])
     ranked = [e for e in entries if e.get('_ranked')]
     unranked = [e for e in entries if not e.get('_ranked')]
     if order_key:
@@ -204,6 +218,84 @@ def read_vocab(lang: str) -> dict:
     if payload.endswith(';'):
         payload = payload[:-1]
     return json.loads(payload)
+
+
+def rewrite_vocab(lang: str, update, *, builder: str = '') -> Path:
+    """Apply ``update(entries, meta)`` to a shipped file in place and re-emit it.
+
+    For post-passes that enrich fields without re-running a whole pipeline
+    (the entry order, and hence ``rank``, must stay as it is).  Every entry
+    goes back through ``clean_entry``, so gender order and empty-field rules
+    are re-applied.  ``update`` may append to ``meta['sources']``.
+    """
+    data = read_vocab(lang)
+    meta = data['meta']
+    entries = data['entries']
+    update(entries, meta)
+    out = [clean_entry(e) for e in entries]
+    for position, e in enumerate(out, 1):
+        if e['rank'] != position:
+            raise ValueError(f'{lang}: rewrite_vocab must not reorder entries')
+    return write_vocab(lang, out, sources=meta['sources'], licences=meta['licences'],
+                       builder=builder or meta['builder'], notes=meta.get('notes', ''))
+
+
+def source_index(meta: dict, source: str) -> int:
+    """Index of ``source`` in meta.sources, appending it when new."""
+    if source not in meta['sources']:
+        meta['sources'].append(source)
+    return meta['sources'].index(source)
+
+
+# ---- Wiktionary (kaikki.org per-word pages) --------------------------------
+# The German and French pipelines read the full kaikki dumps (~1 GB each,
+# slow to download).  For a handful of gap-filling lookups the per-word pages
+# hold the same Wiktextract records; they are cached on disk.
+KAIKKI_CACHE = Path('/tmp/kaikki-words')
+
+
+def kaikki_records(language: str, word: str) -> list:
+    """Wiktextract records for ``word`` from kaikki.org (``language`` is e.g.
+    'German').  Returns [] when the page does not exist."""
+    import urllib.parse
+    import urllib.request
+    cache = KAIKKI_CACHE / language / (urllib.parse.quote(word, safe='') + '.jsonl')
+    if not cache.exists():
+        first, prefix = word[:1], word[:2]
+        url = 'https://kaikki.org/dictionary/{}/meaning/{}/{}/{}.jsonl'.format(
+            language, *(urllib.parse.quote(x) for x in (first, prefix, word)))
+        try:
+            with urllib.request.urlopen(url, timeout=60) as resp:
+                body = resp.read().decode('utf-8')
+        except Exception:  # 404 = no entry; network trouble = no data either
+            body = ''
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        cache.write_text(body, encoding='utf-8')
+    out = []
+    for line in cache.read_text(encoding='utf-8').splitlines():
+        try:
+            rec = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if rec.get('word') == word:
+            out.append(rec)
+    return out
+
+
+def kaikki_english(language: str, word: str, *, limit: int = 3) -> str:
+    """'climate protection; ...' from the non-form-of senses of ``word``."""
+    glosses = []
+    for rec in kaikki_records(language, word):
+        for sense in rec.get('senses') or []:
+            tags = sense.get('tags') or []
+            if sense.get('form_of') or 'form-of' in tags or 'alt-of' in tags:
+                continue
+            for raw in (sense.get('glosses') or [])[:1]:
+                for gloss in re.split(r'[;]', re.sub(r'\s*\([^()]*\)', '', raw)):
+                    gloss = gloss.strip(' .;:')
+                    if gloss and len(gloss) <= 60 and gloss.lower() not in (g.lower() for g in glosses):
+                        glosses.append(gloss)
+    return '; '.join(glosses[:limit])
 
 
 def source_of(data: dict, entry: dict) -> str:

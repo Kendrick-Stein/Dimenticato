@@ -51,6 +51,10 @@ Pipeline (each step is a sub-command; run them in this order):
     python3 scripts/build_french_vocabulary.py assemble [--core /tmp/frv/fr-core.json]
                                                                 -> data/vocab/fr.js
 
+    # 3b. optional: fill the glossary's missing English glosses from kaikki.org
+    #     per-word pages (no dump download), then assemble again
+    python3 scripts/build_french_vocabulary.py fill-english
+
     # 4. verification
     node scripts/validate_vocab.js fr
 
@@ -1245,6 +1249,43 @@ def assemble(core_path: Path | None = CORE_PATH) -> Path:
     return vocab_legacy.emit('fr', entries, builder=BUILDER)
 
 
+def fill_glossary_english(path: Path = GLOSSARY_PATH) -> int:
+    """Give glossary rows without `english` a Wiktionary gloss, in place.
+
+    The glossary was enriched from the kaikki French dump, which misses some
+    textbook headwords (country names, compounds); kaikki's per-word pages
+    cover many of them.  One JSON object per line, so the edit is a line edit.
+    """
+    lines = path.read_text(encoding='utf-8').split('\n')
+    filled = 0
+    for i, line in enumerate(lines):
+        body = line.strip()
+        if not body.startswith('{'):
+            continue
+        comma = body.endswith(',')
+        row = json.loads(body.rstrip(','))
+        if row.get('english'):
+            continue
+        english = ''
+        for word in dict.fromkeys([row.get('french') or '', (row.get('french') or '').lower()]):
+            if word:
+                # a place / feast name: its first sense only ("Belgique" also
+                # glosses the historical Low Countries)
+                english = vocab_schema.kaikki_english('French', word,
+                                                      limit=1 if word[:1].isupper() else 3)
+            if english:
+                break
+        if not english:
+            continue
+        row['english'] = english
+        indent = line[:len(line) - len(line.lstrip())]
+        lines[i] = indent + json.dumps(row, ensure_ascii=False, separators=(',', ':')) + (',' if comma else '')
+        filled += 1
+    path.write_text('\n'.join(lines), encoding='utf-8')
+    print(f'fill-english: {filled} glossary rows given an English gloss', file=sys.stderr)
+    return filled
+
+
 # --------------------------------------------------------------------------
 # CLI
 # --------------------------------------------------------------------------
@@ -1291,8 +1332,13 @@ def main() -> None:
                    help='core layer JSON (default %(default)s); when absent, the core '
                         'entries already in data/vocab/fr.js are reused')
 
+    sub.add_parser('fill-english', help='fill missing glossary English from kaikki.org, then assemble')
+
     args = parser.parse_args()
-    if args.command == 'prepare-freq':
+    if args.command == 'fill-english':
+        fill_glossary_english()
+        print(assemble(CORE_PATH))
+    elif args.command == 'prepare-freq':
         prepare_freq(args.lexique_tsv, args.out_json)
     elif args.command == 'prepare-fren':
         prepare_fren(args.kaikki_jsonl, args.out_json)

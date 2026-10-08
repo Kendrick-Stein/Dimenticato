@@ -317,6 +317,253 @@ def load_ecdict_slice(needed: set) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Part of speech + capitalisation (lexicon slice)
+# ---------------------------------------------------------------------------
+# The gloss markers (n. / v. / prep. ...) give *a* part of speech per sense in
+# dictionary order, which mislabels function words ("is" = prep.) and puts
+# rare senses first ("good" = n.).  Two open sources fix that and supply the
+# capitalisation the lowercase wordfreq list lost:
+#   * Universal Dependencies English EWT + GUM treebanks (CC BY-SA 4.0):
+#     per-form UPOS counts and the spelling used mid-sentence.
+#   * Open English WordNet 2024 (CC BY 4.0): lemma spellings ("Estonian",
+#     "York", "USA"), POS and whether a sense is a named instance.
+# A trimmed slice for this build's candidate words is committed at
+# data/vocab/src/en-lexicon.tsv.  Refresh it from the full sources with
+#   OEWN_XML=/path/english-wordnet-2024.xml \
+#   UD_DIRS=/path/UD_English-EWT:/path/UD_English-GUM \
+#   python3 scripts/build_english_vocab.py
+# (github.com/globalwordnet/english-wordnet/releases,
+#  github.com/UniversalDependencies/UD_English-EWT, .../UD_English-GUM).
+# The last-resort tagger for words in neither source is spaCy en_core_web_sm.
+LEXICON_SLICE = os.path.join(HERE, '..', 'data', 'vocab', 'src', 'en-lexicon.tsv')
+OEWN_XML = os.environ.get('OEWN_XML')
+UD_DIRS = [d for d in os.environ.get('UD_DIRS', '').split(':') if d]
+
+UD_POS = {'NOUN': 'noun', 'PROPN': 'properNoun', 'VERB': 'verb', 'AUX': 'verb',
+          'ADJ': 'adjective', 'ADV': 'adverb', 'PRON': 'pronoun', 'DET': 'determiner',
+          'ADP': 'preposition', 'CCONJ': 'conjunction', 'SCONJ': 'conjunction',
+          'NUM': 'numeral', 'INTJ': 'interjection'}
+WN_POS = {'n': 'noun', 'v': 'verb', 'a': 'adjective', 's': 'adjective', 'r': 'adverb'}
+CLOSED = {'pronoun', 'determiner', 'article', 'preposition', 'conjunction', 'numeral'}
+# Chinese gloss that is only a name: "(男名)", "人名", "艾蒂安（比利时发明家）".
+NAME_GLOSS_RE = re.compile(
+    r'人名|地名|男名|女名|男子名|女子名|姓氏'
+    r'|[（(][^）)]{0,12}(?:家|总统|国王|皇帝|演员|歌手|运动员|首相)[）)]')
+ACRONYM_GLOSS_RE = re.compile(r'缩写|简写|简称|的缩|首字母')
+
+
+def _counter_str(c) -> str:
+    return ','.join(f'{k}={v}' for k, v in sorted(c.items(), key=lambda kv: (-kv[1], kv[0])))
+
+
+def _parse_counter(s: str) -> dict:
+    out = {}
+    for part in filter(None, s.split(',')):
+        k, _, v = part.rpartition('=')
+        out[k] = int(v)
+    return out
+
+
+def build_lexicon_slice(words: set) -> None:
+    """Write LEXICON_SLICE from the full OEWN XML and UD treebanks."""
+    import glob
+    import xml.etree.ElementTree as ET
+    from collections import Counter, defaultdict
+    upos, case = defaultdict(Counter), defaultdict(Counter)
+    for d in UD_DIRS:
+        for path in sorted(glob.glob(os.path.join(d, '*.conllu'))):
+            first = True
+            with open(path, encoding='utf-8') as f:
+                for line in f:
+                    if line.startswith('#'):
+                        continue
+                    if not line.strip():
+                        first = True
+                        continue
+                    cols = line.rstrip('\n').split('\t')
+                    if '-' in cols[0] or '.' in cols[0]:
+                        continue
+                    form, tag, key = cols[1], cols[3], cols[1].lower()
+                    if key in words:
+                        upos[key][tag] += 1
+                        if not first and form.isalpha():
+                            case[key][form] += 1
+                    if tag != 'PUNCT':
+                        first = False
+    instances, lemmas = set(), defaultdict(list)
+    for _, el in ET.iterparse(OEWN_XML, events=('end',)):
+        if el.tag == 'LexicalEntry':
+            lemma = el.find('Lemma')
+            form = lemma.get('writtenForm')
+            if form.lower() in words:
+                lemmas[form.lower()].append(
+                    (form, lemma.get('partOfSpeech'), [s.get('synset') for s in el.findall('Sense')]))
+            el.clear()
+        elif el.tag == 'Synset':
+            if any(r.get('relType') == 'instance_hypernym' for r in el.findall('SynsetRelation')):
+                instances.add(el.get('id'))
+            el.clear()
+    with open(LEXICON_SLICE, 'w', encoding='utf-8', newline='') as f:
+        f.write('# word\tUD UPOS counts\tUD mid-sentence spellings\t'
+                'OEWN lemmas (form|pos|senses|instance senses)\n')
+        for w in sorted(words):
+            wn = ';'.join(f'{form}|{p}|{len(s)}|{sum(x in instances for x in s)}'
+                          for form, p, s in lemmas.get(w, []))
+            if upos.get(w) or wn:
+                f.write(f'{w}\t{_counter_str(upos.get(w, {}))}\t'
+                        f'{_counter_str(case.get(w, {}))}\t{wn}\n')
+    print(f'Wrote lexicon slice {LEXICON_SLICE}')
+
+
+def load_lexicon() -> dict:
+    lex = {}
+    if not os.path.exists(LEXICON_SLICE):
+        print('WARNING: no lexicon slice; POS refinement and capitalisation skipped.')
+        return lex
+    with open(LEXICON_SLICE, encoding='utf-8') as f:
+        for line in f:
+            if line.startswith('#'):
+                continue
+            w, ud, case, wn = (line.rstrip('\n').split('\t') + ['', '', ''])[:4]
+            lemmas = []
+            for item in filter(None, wn.split(';')):
+                form, p, n, inst = item.split('|')
+                lemmas.append((form, p, int(n), int(inst)))
+            lex[w] = {'ud': _parse_counter(ud), 'case': _parse_counter(case), 'wn': lemmas}
+    return lex
+
+
+_spacy: list = []
+
+
+def spacy_pos(word: str) -> str:
+    if not _spacy:
+        try:
+            import spacy
+            _spacy.append(spacy.load('en_core_web_sm'))
+        except Exception:  # pragma: no cover - optional build-time dependency
+            _spacy.append(None)
+    if not _spacy[0]:
+        return ''
+    return UD_POS.get(_spacy[0](word)[0].pos_, '')
+
+
+def capitalised_form(word: str, info: dict, zh: str) -> str:
+    """'york' -> 'York', 'usa' -> 'USA'; '' when the word is a common word."""
+    forms = [f for f, *_ in info.get('wn', [])]
+    if word in forms or '复数' in zh or '的过去' in zh:
+        return ''          # "march", "china", "god"; "masters" (plural of master)
+    case = info.get('case', {})
+    if forms:
+        caps = [f for f in forms if f.lower() == word]
+        if not caps:
+            return ''
+        seen = sorted((f for f in caps if case.get(f)), key=lambda f: -case[f])
+        return seen[0] if seen else next((f for f in caps if f[1:].islower()), caps[0])
+    # Not in WordNet: only names ("Comets", "Marks" are plurals that UD saw
+    # as team / shop names).
+    ud = info.get('ud', {})
+    total = sum(case.values())
+    if (total >= 3 and case.get(word, 0) <= 0.1 * total
+            and ud.get('PROPN', 0) * 2 > sum(ud.values())):
+        return max((f for f in case if f != word), key=lambda f: case[f])
+    if NAME_GLOSS_RE.search(zh):
+        return word[:1].upper() + word[1:]
+    return ''
+
+
+def refine_en(entries: list, lex: dict) -> dict:
+    """Fix primary POS, fill missing POS, restore capitalisation (in place)."""
+    from collections import Counter
+    stats: Counter = Counter()
+    for e in entries:
+        word, zh = e['word'], e.get('zh', '')
+        info = lex.get(word, {})
+        raw_ud = info.get('ud', {})
+        pos_all = list(e.get('posAll') or ([e['pos']] if e.get('pos') else []))
+        before = list(pos_all)
+        ud: Counter = Counter()
+        for tag, n in raw_ud.items():
+            if tag in UD_POS and tag != 'PROPN':
+                ud[UD_POS[tag]] += n
+        total = sum(ud.values())
+        if 'article' in pos_all and ud.get('determiner'):
+            ud['article'] = ud.pop('determiner')
+        # 1. corpus majority decides the primary POS and adds a missing
+        #    closed-class one ("is" AUX -> verb, "every" DET -> determiner).
+        if total >= 10 and pos_all:
+            top, n = ud.most_common(1)[0]
+            if n / total >= 0.4 and not (top == 'verb' and pos_all[0] == 'adjective'):
+                # (participles "broken", "hidden" stay adjectives for learners)
+                if top in pos_all:
+                    pos_all.remove(top)
+                    pos_all.insert(0, top)
+                elif top in CLOSED or raw_ud.get('AUX', 0) >= n / 2:
+                    pos_all.insert(0, top)
+            for p, k in ud.most_common():
+                if p in CLOSED and k / total >= 0.1 and p not in pos_all:
+                    pos_all.append(p)
+            if total >= 50:      # a function-word label the corpus (almost) never uses
+                pos_all = [p for i, p in enumerate(pos_all) if i == 0 or p not in
+                           ('preposition', 'conjunction', 'article')
+                           or ud.get(p, 0) >= 0.01 * total]
+        # 2. no POS at all: gloss shape, corpus, WordNet, spaCy.
+        if not pos_all:
+            wn = info.get('wn', [])
+            guess, how = '', ''
+            if ACRONYM_GLOSS_RE.search(zh) or any(f.isupper() and len(f) > 1 for f, *_ in wn):
+                guess, how = 'abbreviation', 'gloss/wordnet'
+            elif NAME_GLOSS_RE.search(zh):
+                guess, how = 'properNoun', 'gloss'
+            elif wn and all(inst for *_, inst in wn):
+                guess, how = 'properNoun', 'wordnet'
+            elif sum(raw_ud.values()) >= 3:
+                tags = Counter()
+                for t, n in raw_ud.items():
+                    if t in UD_POS:
+                        tags[UD_POS[t]] += n
+                if tags:
+                    guess, how = tags.most_common(1)[0][0], 'ud'
+            if not guess and wn:
+                senses: Counter = Counter()
+                for _, p, n, _inst in wn:
+                    senses[WN_POS.get(p, 'noun')] += n
+                guess, how = senses.most_common(1)[0][0], 'wordnet'
+            if not guess and (len(word) <= 4 or not re.search('[aeiouy]', word)
+                              or re.match(r'[\[(=]?[A-Za-z]+[ ,-][A-Za-z]', zh)):
+                guess, how = 'abbreviation', 'shape'    # "sgt", "blm", "pvt": pressure, ...
+            if not guess:
+                guess, how = spacy_pos(word), 'spacy'
+            if guess:
+                pos_all = [guess]
+                stats['pos-filled:' + how] += 1
+        # 3. capitalisation of proper nouns and demonyms ("York", "Estonian").
+        cap = capitalised_form(word, info, zh)
+        if (not cap and pos_all[:1] == ['properNoun'] and len(word) > 4
+                and word not in [f for f, *_ in info.get('wn', [])]):
+            cap = word[:1].upper() + word[1:]               # "ferrari", "mitsubishi"
+        wn = info.get('wn', [])
+        named = (bool(wn) and all(inst for *_, inst in wn)) or (
+            not wn and (raw_ud.get('PROPN', 0) > total or bool(NAME_GLOSS_RE.search(zh))))
+        if cap and not named and pos_all[:1] not in (['abbreviation'], ['properNoun']) and (
+                cap.isupper() or len(cap) <= 3):
+            cap = ''            # "tv", "ph", "rb" (gloss is not the element): keep
+        if cap:
+            if named and (not pos_all or pos_all[0] in ('noun', 'abbreviation')):
+                pos_all = ['properNoun'] + [p for p in pos_all[1:] if p != 'noun']
+            e['legacyWord'] = word
+            e['word'] = cap
+            stats['recased'] += 1
+        if pos_all != before:
+            stats['pos-changed'] += 1
+            if before and pos_all[:1] != before[:1]:
+                stats['primary-changed'] += 1
+        e['pos'] = pos_all[0] if pos_all else ''
+        e['posAll'] = pos_all if len(pos_all) > 1 else []
+    return dict(stats)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -387,8 +634,11 @@ def main() -> None:
           f"skipped {skipped_no_gloss} without usable gloss, "
           f"{skipped_proper} proper nouns.")
 
-    out = vocab_legacy.emit('en', vocab_legacy.from_en(words),
-                            builder='scripts/build_english_vocab.py')
+    if OEWN_XML and UD_DIRS:
+        build_lexicon_slice(set(cands))
+    entries = vocab_legacy.from_en(words)
+    print(f"POS / capitalisation: {refine_en(entries, load_lexicon())}")
+    out = vocab_legacy.emit('en', entries, builder='scripts/build_english_vocab.py')
     print(f"Done! Written to {out}")
 
 
