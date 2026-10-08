@@ -43,9 +43,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 SCHEMA = 'cognates/1'
 
 LANGS = {
-    'it': {'file': 'data/cognates.js', 'head': 'italian', 'cn': '意大利语', 'name': 'Italiano'},
-    'de': {'file': 'data/german-cognates.js', 'head': 'german', 'cn': '德语', 'name': 'Deutsch'},
-    'fr': {'file': 'data/french-cognates.js', 'head': 'french', 'cn': '法语', 'name': 'Français'},
+    'it': {'file': 'data/it-cognates.js', 'head': 'italian', 'cn': '意大利语', 'name': 'Italiano'},
+    'de': {'file': 'data/de-cognates.js', 'head': 'german', 'cn': '德语', 'name': 'Deutsch'},
+    'fr': {'file': 'data/fr-cognates.js', 'head': 'french', 'cn': '法语', 'name': 'Français'},
 }
 
 # Builder POS spellings -> vocab POS enum (docs/vocab-schema.md).

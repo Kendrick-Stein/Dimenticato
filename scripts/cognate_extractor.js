@@ -3,9 +3,9 @@
  * 从 data/vocab/it.js（schema v1）提取与英语相似的 cognate 单词
  *
  * 运行: node scripts/cognate_extractor.js [输出路径]
- * 输出: data/cognates.js（默认），schema cognates/1，经 scripts/canonical_cognates.py 写出
+ * 输出: data/it-cognates.js（默认），schema cognates/1，经 scripts/canonical_cognates.py 写出
  *
- * 注意：data/cognates.js 生成后经过多轮人工校订（见其文件头），重跑会覆盖这些校订；
+ * 注意：data/it-cognates.js 生成后经过多轮人工校订（见其文件头），重跑会覆盖这些校订；
  * 需要对照时请把输出写到别处。rank 是 v1 的稠密频率名次（1…N）。
  */
 
@@ -189,13 +189,13 @@ Object.entries(stats.byPattern)
     console.log(`  ${pattern}: ${count}`);
   });
 
-// === 生成 cognates.js（schema cognates/1，经 scripts/canonical_cognates.py 落盘） ===
+// === 生成 it-cognates.js（schema cognates/1，经 scripts/canonical_cognates.py 落盘） ===
 
 const header = `// Italian <-> English cognates for Dimenticato — schema cognates/1 (docs/data-schema.md).
 // Extracted from data/vocab/it.js by scripts/cognate_extractor.js on ${new Date().toISOString().split('T')[0]}.
 // Entry: {word, pos, gender, rank, en, zh, pattern, similarity (0…1), difficulty (1/2/3)}`;
 
-const outputPath = process.argv[2] ? path.resolve(process.argv[2]) : path.join(rootDir, 'data', 'cognates.js');
+const outputPath = process.argv[2] ? path.resolve(process.argv[2]) : path.join(rootDir, 'data', 'it-cognates.js');
 const job = JSON.stringify({
   rows: cognates,
   builder: 'scripts/cognate_extractor.js',

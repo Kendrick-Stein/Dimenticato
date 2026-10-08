@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Validator for data/german-conjugations.js.
+ * Validator for data/de-conjugations.js.
  *
  *   node scripts/validate_german_conjugations.js
  *

@@ -9,8 +9,8 @@ require('../lib/utils.js');
 const { headwordKey, foldAccents } = global.DimText;
 
 const { loadVocab, sourceOf } = require('../scripts/vocab_node.js');
-const grammar = require('../data/french-grammar-data.js');
-const conjugationData = require('../data/french-conjugations.js');
+const grammar = require('../data/fr-grammar.js');
+const conjugationData = require('../data/fr-conjugations.js');
 const conjugations = conjugationData.verbs;
 
 // data/vocab/fr.js 合并了三层：课程整理词表、教材总词汇表、Lexique 词频核心。

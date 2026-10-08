@@ -72,9 +72,9 @@
 ├── data/
 │   ├── vocab/<it|de|en|fr>.js  ← 四语言系统词库，schema v1（src/ 为法语教材层构建输入）
 │   ├── conjugations-*.js / <lang>-conjugations.js
-│   ├── grammar-data.js / <lang>-grammar-data.js
+│   ├── it-grammar.js / <lang>-grammar-data.js
 │   ├── verb-collocations-data.js / <lang>-collocations-data.js
-│   ├── cognates.js / <lang>-cognates.js
+│   ├── it-cognates.js / <lang>-cognates.js
 │   └── german-course-data.js
 ├── docs/vocab-schema.md        ← 词库 schema v1 说明
 ├── scripts/                    ← 数据构建（Python）与校验（Node）脚本，见 §8
@@ -472,10 +472,10 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 | 语言 | 文件 | 全局 |
 |---|---|---|
-| it | `data/conjugations-all-tenses.js` | `CONJUGATION_ALL_TENSES_DATA` |
-| de | `data/german-conjugations.js` | `GERMAN_CONJUGATION_DATA` |
-| en | `data/english-conjugations.js` | `ENGLISH_CONJUGATION_DATA` |
-| fr | `data/french-conjugations.js` | `FRENCH_CONJUGATION_DATA` |
+| it | `data/it-conjugations.js` | `CONJUGATION_ALL_TENSES_DATA` |
+| de | `data/de-conjugations.js` | `GERMAN_CONJUGATION_DATA` |
+| en | `data/en-conjugations.js` | `ENGLISH_CONJUGATION_DATA` |
+| fr | `data/fr-conjugations.js` | `FRENCH_CONJUGATION_DATA` |
 
 形状统一：`[{ rank, infinitive, frequency, english, chinese, tenses: { <key>: { type, group_label, tense_label, forms } } }]`。
 
@@ -483,10 +483,10 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 | 语言 | 文件 | 全局 |
 |---|---|---|
-| it | `data/grammar-data.js` | `GRAMMAR_DATA` |
-| de | `data/german-grammar-data.js` | `GERMAN_GRAMMAR_DATA` |
-| en | `data/english-grammar-data.js` | `ENGLISH_GRAMMAR_DATA`（另有 `_CONTENT` / `_TREE`） |
-| fr | `data/french-grammar-data.js` | `FRENCH_GRAMMAR_DATA`（另有 `_CONTENT` / `_TREE`） |
+| it | `data/it-grammar.js` | `GRAMMAR_DATA` |
+| de | `data/de-grammar.js` | `GERMAN_GRAMMAR_DATA` |
+| en | `data/en-grammar.js` | `ENGLISH_GRAMMAR_DATA`（另有 `_CONTENT` / `_TREE`） |
+| fr | `data/fr-grammar.js` | `FRENCH_GRAMMAR_DATA`（另有 `_CONTENT` / `_TREE`） |
 
 形状：`{ meta?, tree: { parts: [{ title, slug, chapters: [{ title, slug, topics: [{ title, slug, level? }] }] }] }, content: { <slug>: markdown } }`。
 
@@ -496,7 +496,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 #### 同源词（模块 `cognates`）
 
-`data/cognates.js`（`COGNATE_DATA`）、`data/german-cognates.js`（`GERMAN_COGNATE_DATA`，另有 `falseFriend` / `pos` / `englishGloss`）、`data/french-cognates.js`（`FRENCH_COGNATE_DATA`）。英语无同源词数据。
+`data/it-cognates.js`（`COGNATE_DATA`）、`data/de-cognates.js`（`GERMAN_COGNATE_DATA`，另有 `falseFriend` / `pos` / `englishGloss`）、`data/fr-cognates.js`（`FRENCH_COGNATE_DATA`）。英语无同源词数据。
 
 #### 德语课程（模块 `course`，打开课程路线时懒加载）
 
@@ -504,7 +504,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 ### 7.2 原始 / 中间数据
 
-- **意大利语语法书、动词搭配、变位**：原始书籍 Markdown、`data/grammar_content/**`、`grammar_tree.json`、`conjugations-*.json` 已于 2026-09-30 因版权 / 清理原因删除，相应的解析 / 抓取脚本更早已删除。`data/grammar-data.js`、`data/verb-collocations-data.js`、`data/conjugations-*.js` 目前是**冻结产物**，只能就地修（变位用 `scripts/fix_italian_conjugations.py`）
+- **意大利语语法书、动词搭配、变位**：原始书籍 Markdown、`data/grammar_content/**`、`grammar_tree.json`、`conjugations-*.json` 已于 2026-09-30 因版权 / 清理原因删除，相应的解析 / 抓取脚本更早已删除。`data/it-grammar.js`、`data/verb-collocations-data.js`、`data/conjugations-*.js` 目前是**冻结产物**，只能就地修（变位用 `scripts/fix_italian_conjugations.py`）
 - **德语语法**：旧 Docusaurus 语料 `deutsch-data/grammar/docs/` 无许可证，已从仓库删除；`build_german_grammar.py` 重建需要本地副本（其余为脚本内原创专题）
 - **德语词库**：`deutsch-data/vocab/`（pgh.csv + `handedict-de-slice.csv`）
 - **英语**：` english-data/english word/`（⚠️ 目录名前有空格；EnWords.csv + `ecdict-slice.csv`）；`scripts/english_grammar_src/*.md`（原创语法源）、`scripts/english_collocations_source/*.txt`
@@ -536,18 +536,18 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 | 脚本 | 输出 | 校验 |
 |---|---|---|
-| `fix_italian_conjugations.py` | 就地修 `data/conjugations-all-tenses.js` | — |
-| `build_german_conjugations.py` | `data/german-conjugations.js` | `validate_german_conjugations.js`（未接入 harness） |
-| `build_english_conjugations.py` | `data/english-conjugations.js` | `validate_english_conjugations.js` |
-| `build_french_conjugations.py` | `data/french-conjugations.js` | `validate_french_conjugations.js` |
+| `fix_italian_conjugations.py` | 就地修 `data/it-conjugations.js` | — |
+| `build_german_conjugations.py` | `data/de-conjugations.js` | `validate_german_conjugations.js`（未接入 harness） |
+| `build_english_conjugations.py` | `data/en-conjugations.js` | `validate_english_conjugations.js` |
+| `build_french_conjugations.py` | `data/fr-conjugations.js` | `validate_french_conjugations.js` |
 
 ### 8.3 语法书
 
 | 脚本 | 输入 | 输出 | 校验 |
 |---|---|---|---|
-| `build_german_grammar.py` | 本地 `deutsch-data/grammar/docs/`（已不在仓库）+ 脚本内原创专题 | `data/german-grammar-data.js` | `validate_german_grammar.js` |
-| `build_english_grammar.py` | `scripts/english_grammar_src/p<P>-ch<NN>-<name>.md` | `data/english-grammar-data.js` | `validate_english_grammar.js` |
-| `build_french_grammar.py` | 脚本内原创内容 | `data/french-grammar-data.js` | `validate_french_grammar.js` |
+| `build_german_grammar.py` | 本地 `deutsch-data/grammar/docs/`（已不在仓库）+ 脚本内原创专题 | `data/de-grammar.js` | `validate_german_grammar.js` |
+| `build_english_grammar.py` | `scripts/english_grammar_src/p<P>-ch<NN>-<name>.md` | `data/en-grammar.js` | `validate_english_grammar.js` |
+| `build_french_grammar.py` | 脚本内原创内容 | `data/fr-grammar.js` | `validate_french_grammar.js` |
 
 英语语法源格式：文件头 `<!-- part: ... / chapter: ... -->`，每个专题以 `=== tNN-slug | LEVEL` 开头、紧跟 `# N．标题`；文件名顺序即阅读顺序。`validate_english_grammar.js` 支持 `--only p1-ch01 --out /tmp/x.js` + `--file /tmp/x.js --partial` 只校验部分章节。**源文本必须原创**，不得摘抄受版权保护的语法书。
 
@@ -557,10 +557,10 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 | 脚本 | 输出 | 校验 |
 |---|---|---|
-| `build_german_extras.py` | `data/german-collocations-data.js`、`data/german-cognates.js`、`data/german-course-data.js` | `validate_german_extras.js` |
-| `build_french_extras.py` | `data/french-collocations-data.js`、`data/french-cognates.js` | `validate_french_extras.js` |
+| `build_german_extras.py` | `data/german-collocations-data.js`、`data/de-cognates.js`、`data/german-course-data.js` | `validate_german_extras.js` |
+| `build_french_extras.py` | `data/french-collocations-data.js`、`data/fr-cognates.js` | `validate_french_extras.js` |
 | `build_english_collocations.py` | `data/english-collocations-data.js` | `validate_english_collocations.js` |
-| `cognate_extractor.js` | 从 `data/vocab/it.js` 提取意大利语同源词 | `validate_italian_extras.js`（校验 `data/cognates.js`） |
+| `cognate_extractor.js` | 从 `data/vocab/it.js` 提取意大利语同源词 | `validate_italian_extras.js`（校验 `data/it-cognates.js`） |
 
 ---
 

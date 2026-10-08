@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // scripts/validate_french_grammar.js
 //
-// Structural + editorial validator for data/french-grammar-data.js
+// Structural + editorial validator for data/fr-grammar.js
 // (the FRENCH_GRAMMAR_DATA grammar book consumed by grammar-book.js).
 //
 // Run:  node scripts/validate_french_grammar.js
@@ -30,7 +30,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
-const DATA_FILE = path.join(ROOT, 'data', 'french-grammar-data.js');
+const DATA_FILE = path.join(ROOT, 'data', 'fr-grammar.js');
 const GLOBAL_NAME = 'FRENCH_GRAMMAR_DATA';
 
 const MIN_CHARS = 900;          // hard floor for a topic body
@@ -344,7 +344,7 @@ function report(rowList, topicCount) {
   for (const e of errors) console.error(`FAIL  ${e}`);
 
   if (errors.length) {
-    console.error(`\n${errors.length} error(s). french-grammar-data.js is NOT valid.`);
+    console.error(`\n${errors.length} error(s). fr-grammar.js is NOT valid.`);
     process.exit(1);
   }
   console.log(`\nOK — ${topicCount} topics, ${warnings.length} warning(s), 0 errors.`);

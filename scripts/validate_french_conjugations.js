@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * Validator for data/french-conjugations.js.
+ * Validator for data/fr-conjugations.js.
  *
  * Run:  node scripts/validate_french_conjugations.js [path]
  * Exits non-zero as soon as any assertion fails, printing every failure.
@@ -20,7 +20,7 @@ const path = require('path');
 const { loadConjugations, toLegacy } = require('./conjugations_node');
 
 const DATA_PATH = process.argv[2] ||
-  path.join(__dirname, '..', 'data', 'french-conjugations.js');
+  path.join(__dirname, '..', 'data', 'fr-conjugations.js');
 
 const PERSONS = ['je', 'tu', 'il_elle_on', 'nous', 'vous', 'ils_elles'];
 const IMPERATIVE_PERSONS = ['tu', 'nous', 'vous'];

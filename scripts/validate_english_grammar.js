@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // scripts/validate_english_grammar.js
 //
-// Structural + editorial validator for data/english-grammar-data.js
+// Structural + editorial validator for data/en-grammar.js
 // (the ENGLISH_GRAMMAR_DATA grammar book consumed by grammar-book.js),
 // modelled on scripts/validate_french_grammar.js.
 //
@@ -36,7 +36,7 @@ const vm = require('vm');
 const ROOT = path.resolve(__dirname, '..');
 const argFile = process.argv.indexOf('--file');
 const DATA_FILE = argFile !== -1 ? path.resolve(process.argv[argFile + 1])
-  : path.join(ROOT, 'data', 'english-grammar-data.js');
+  : path.join(ROOT, 'data', 'en-grammar.js');
 const GLOBAL_NAME = 'ENGLISH_GRAMMAR_DATA';
 const PARTIAL = process.argv.includes('--partial');
 
@@ -369,7 +369,7 @@ function report(rowList, topicCount) {
   for (const e of errors) console.error(`FAIL  ${e}`);
 
   if (errors.length) {
-    console.error(`\n${errors.length} error(s). english-grammar-data.js is NOT valid.`);
+    console.error(`\n${errors.length} error(s). en-grammar.js is NOT valid.`);
     process.exit(1);
   }
   console.log(`\nOK — ${topicCount} topics, ${warnings.length} warning(s), 0 errors.`);

@@ -32,7 +32,7 @@ function requireFalseFriends(data, ctx, words) {
 }
 
 // ===========================================================================
-// it — data/cognates.js was scraped and then hand-revised three times (see its
+// it — data/it-cognates.js was scraped and then hand-revised three times (see its
 // header); these are the invariants those rounds established.
 // ===========================================================================
 

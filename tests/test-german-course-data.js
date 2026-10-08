@@ -18,7 +18,7 @@ function loadModule(file, module, code) {
   vm.runInContext(fs.readFileSync(path.join(__dirname, '..', file), 'utf8'), ctx);
   return ctx.DIM_DATA[module][code];
 }
-const grammar = loadModule('data/german-grammar-data.js', 'grammar', 'de');
+const grammar = loadModule('data/de-grammar.js', 'grammar', 'de');
 
 assert.equal(course.meta.schema, 'course/1');
 assert.equal(course.meta.lang, 'de');

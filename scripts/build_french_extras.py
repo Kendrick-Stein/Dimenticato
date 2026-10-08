@@ -5,7 +5,7 @@ Build the two French "extras" datasets that Italian already has:
 
   data/fr-collocations.js            ->  DIM_DATA.collocations.fr  (collocations/1,
                                          written via scripts/canonical_collocations.py)
-  data/french-cognates.js            ->  window.FRENCH_COGNATE_DATA
+  data/fr-cognates.js            ->  window.FRENCH_COGNATE_DATA
 
 Both mirror the Italian reference shapes exactly:
 
@@ -2287,7 +2287,7 @@ class _RowLexique(object):
 
 
 def refresh_cognate_glosses(out_path):
-    """只重跑释义层：读现成的 data/french-cognates.js，重算中文/来源/后缀组。
+    """只重跑释义层：读现成的 data/fr-cognates.js，重算中文/来源/后缀组。
 
     不需要 620MB 的下载缓存。释义层只依赖 (french, english, partOfSpeech) 和
     仓库内词典，所以重复跑字节一致，跟整表重建走的也是同一段代码。
@@ -2455,7 +2455,7 @@ def main():
 
     # 只重跑释义层：不碰 Lexique / kaikki 缓存，材料全在仓库里。
     if args.only == "cognate-glosses":
-        refresh_cognate_glosses(os.path.join(ROOT, "data", "french-cognates.js"))
+        refresh_cognate_glosses(os.path.join(ROOT, "data", "fr-cognates.js"))
         return
 
     cache = ensure_sources(args.cache, args.offline,
@@ -2469,7 +2469,7 @@ def main():
     if args.only in (None, "collocations"):
         build_collocations(cache, lex, os.path.join(ROOT, "data", "fr-collocations.js"))
     if args.only in (None, "cognates"):
-        build_cognates(cache, lex, os.path.join(ROOT, "data", "french-cognates.js"))
+        build_cognates(cache, lex, os.path.join(ROOT, "data", "fr-cognates.js"))
 
 
 if __name__ == "__main__":

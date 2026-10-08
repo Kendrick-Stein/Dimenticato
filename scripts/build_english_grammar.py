@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Build data/english-grammar-data.js  (ENGLISH_GRAMMAR_DATA).
+Build data/en-grammar.js  (ENGLISH_GRAMMAR_DATA).
 
 Output shape: grammar/1 (docs/data-schema.md), written by scripts/grammar_schema.py:
 
@@ -59,7 +59,7 @@ import grammar_schema
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.join(HERE, 'english_grammar_src')
-OUT_FILE = os.path.join(HERE, '..', 'data', 'english-grammar-data.js')
+OUT_FILE = os.path.join(HERE, '..', 'data', 'en-grammar.js')
 
 LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1']
 FILE_RE = re.compile(r'^p(\d)-ch(\d{2})-[a-z0-9-]+\.md$')
@@ -183,7 +183,7 @@ def main(argv):
     span = '%s-%s' % (used_levels[0], used_levels[-1]) if used_levels else ''
 
     header = [
-        '// data/english-grammar-data.js — 英语语法书（%s，grammar/1，docs/data-schema.md）' % span,
+        '// data/en-grammar.js — 英语语法书（%s，grammar/1，docs/data-schema.md）' % span,
         '// GENERATED FILE — do not edit by hand.',
         '// Source:     scripts/english_grammar_src/*.md',
         '// Regenerate: python3 scripts/build_english_grammar.py',

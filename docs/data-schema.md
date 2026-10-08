@@ -18,6 +18,9 @@ Every module file is a classic script ending with the existing footer
 
 - `<code>` is the two-letter language code (`it de en fr`) everywhere. This
   applies to `meta.lang` too. Never use `italian`, `english` or `null` for a language.
+- Each module file is `data/<code>-<module>.js` (for example `data/de-conjugations.js`,
+  `data/it-grammar.js`), listed under `files.<module>` in the language's profile in
+  `lib/languages.js`. A language has a module if and only if its profile lists one.
 - `meta` is required and holds at least:
   `{ "schema": "<module>/1", "lang": "<code>", "name": "…", "count": N, "builder": "scripts/…", "sources": […], "licences": […] }`.
 - Field names are the same as in vocabulary:
@@ -119,8 +122,7 @@ is idempotent.
 
 ## course/1
 
-Any language may ship a course. The data file is `data/<code>-course.js` (or the
-existing German file, renamed), and its profile lists it under `files.course`.
+Any language may ship a course. The data file is `data/<code>-course.js`, and its profile lists it under `files.course`.
 
 ```js
 { "meta": {…, "schema":"course/1", "title":"…", "zh":"…"},

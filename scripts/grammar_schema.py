@@ -35,13 +35,13 @@ SLUG_RE = re.compile(r'^p\d+/ch\d{2}/t\d{2}$')
 # Per-language file facts.  `builder` is what regenerates the file.
 LANGS = {
     'it': {
-        'file': 'data/grammar-data.js',
+        'file': 'data/it-grammar.js',
         'global': 'GRAMMAR_DATA',
         'builder': 'scripts/canonicalize_grammar.py',
         'sources': ['意大利语语法书 Markdown 转换稿（原始书稿与 grammar_tree.json 已于 2026-09-30 删除）'],
         'licences': ['未声明：原书稿已删除，本文件为冻结产物，只能就地修改'],
         'header': [
-            '// data/grammar-data.js — 意大利语语法书（grammar/1，docs/data-schema.md）',
+            '// data/it-grammar.js — 意大利语语法书（grammar/1，docs/data-schema.md）',
             '// FROZEN ARTEFACT — the source books were deleted on 2026-09-30, so this file',
             '// is its own source of truth.  Edit it in place, then normalise it with',
             '//   python3 scripts/canonicalize_grammar.py it',
@@ -50,7 +50,7 @@ LANGS = {
         ],
     },
     'de': {
-        'file': 'data/german-grammar-data.js',
+        'file': 'data/de-grammar.js',
         'global': 'GERMAN_GRAMMAR_DATA',
         'builder': 'scripts/canonicalize_grammar.py',
         'sources': [
@@ -59,7 +59,7 @@ LANGS = {
         ],
         'licences': ['原创专题：为 Dimenticato 撰写', '旧语料：未声明许可证'],
         'header': [
-            '// data/german-grammar-data.js — 德语语法书（grammar/1，docs/data-schema.md）',
+            '// data/de-grammar.js — 德语语法书（grammar/1，docs/data-schema.md）',
             '// SOURCE OF TRUTH — the Docusaurus corpus scripts/build_german_grammar.py read',
             '// (deutsch-data/grammar/docs) is gone, so this file is edited directly.',
             '// After editing, normalise it with:  python3 scripts/canonicalize_grammar.py de',
@@ -67,7 +67,7 @@ LANGS = {
         ],
     },
     'en': {
-        'file': 'data/english-grammar-data.js',
+        'file': 'data/en-grammar.js',
         'global': 'ENGLISH_GRAMMAR_DATA',
         'builder': 'scripts/build_english_grammar.py',
         'sources': ['scripts/english_grammar_src/*.md（原创）'],
@@ -75,12 +75,12 @@ LANGS = {
         'header': None,  # supplied by the builder
     },
     'fr': {
-        'file': 'data/french-grammar-data.js',
+        'file': 'data/fr-grammar.js',
         'global': 'FRENCH_GRAMMAR_DATA',
         'builder': 'scripts/build_french_grammar.py',
         'sources': [
             'scripts/build_french_grammar.py 内原创内容',
-            'data/french-conjugations.js（变位表交叉核对：Wiktionary via kaikki.org；Lexique 3.83）',
+            'data/fr-conjugations.js（变位表交叉核对：Wiktionary via kaikki.org；Lexique 3.83）',
         ],
         'licences': ['原创文本，为 Dimenticato 撰写', '变位核对数据：CC BY-SA 4.0 + GFDL；Lexique CC BY-SA 4.0'],
         'header': None,

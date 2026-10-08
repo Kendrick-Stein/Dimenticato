@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the German verb conjugation dataset (data/german-conjugations.js).
+"""Build the German verb conjugation dataset (data/de-conjugations.js).
 
 Rewritten 2026-08 to fix three confirmed audit defects and to scale the dataset
 towards Italian parity:
@@ -51,7 +51,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_PATH = ROOT / "data" / "german-conjugations.js"
+OUT_PATH = ROOT / "data" / "de-conjugations.js"
 sys.path.insert(0, str(ROOT / "scripts"))
 import vocab_schema  # noqa: E402  (data/vocab/*.js reader)
 from data_module import register_footer

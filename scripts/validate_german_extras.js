@@ -69,7 +69,7 @@ function loadModule(file, module, code) {
 
 const collocations = loadModule('de-collocations.js', 'collocations', 'de');
 const course = load('de-course.js', 'GERMAN_COURSE_DATA');
-const grammar = load('german-grammar-data.js', 'GERMAN_GRAMMAR_DATA');
+const grammar = load('de-grammar.js', 'GERMAN_GRAMMAR_DATA');
 // data/vocab/de.js (schema v1), mapped onto the field names used below
 const vocabulary = loadVocab('de').entries.map(function (e) {
   const forms = e.forms || {};

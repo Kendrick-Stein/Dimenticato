@@ -1,6 +1,6 @@
 /**
  * GrammarBook — 语法书阅读器（四门语言共用一块屏，没有按语言分支）
- * 数据经 LangLoader.data(code, 'grammar') 取（data/*grammar-data.js 懒加载注入），
+ * 数据经 LangLoader.data(code, 'grammar') 取（data/<code>-grammar.js 懒加载注入），
  * 不用 fetch()，避免 GitHub Pages 上中文文件名的问题。数据格式见
  * docs/data-schema.md 的 grammar/1：专题 slug 统一为 p<N>/ch<NN>/t<NN>，
  * 旧 slug 记在 meta.aliases（旧 → 新），这里的 resolveSlug() 负责把旧深链接、

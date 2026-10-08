@@ -11,7 +11,7 @@ Emits three files, all mirroring the shapes of their Italian counterparts:
         collocation.  A second, structurally identical block `x.nounVerb` holds
         Funktionsverbgefuege / Nomen-Verb-Verbindungen keyed noun -> light verb.
 
-  data/german-cognates.js           -> window.GERMAN_COGNATE_DATA
+  data/de-cognates.js           -> window.GERMAN_COGNATE_DATA
         Same shape as COGNATE_DATA with `german` replacing `italian`, plus the
         additive `falseFriend` / `pos` / `englishGloss` fields.
 
@@ -2786,7 +2786,7 @@ COURSE_HEADER = [
     '//',
     '//   * unit.words: up to %d data/vocab/de.js words per unit (exact `word`s),' % HEADWORD_TARGET,
     '//     so a practice session has a real distractor pool.',
-    '//   * unit.grammar[].slug: a grammar/1 slug in data/german-grammar-data.js.',
+    '//   * unit.grammar[].slug: a grammar/1 slug in data/de-grammar.js.',
     '//   * unit.x.examples: Tatoeba (CC BY 2.0 FR) German/Chinese sentence pairs',
     '//     that actually use the unit\'s vocabulary.',
 ]
@@ -2926,7 +2926,7 @@ def main():
         allc = sorted(by_word.values(), key=lambda c: (c.get('rank') or 10 ** 6, c['german']))
         _, size = canonical_cognates.emit(
             'de', allc, builder='scripts/build_german_extras.py', header=COGNATE_HEADER,
-            path=os.path.join(DATA, 'german-cognates.js'))
+            path=os.path.join(DATA, 'de-cognates.js'))
         patterns = defaultdict(int)
         for c in allc:
             patterns[c['patternType']] += 1
@@ -2941,7 +2941,7 @@ def main():
         }
 
     if not args.skip_course:
-        grammar = load_js_dataset('german-grammar-data.js', 'GERMAN_GRAMMAR_DATA')
+        grammar = load_js_dataset('de-grammar.js', 'GERMAN_GRAMMAR_DATA')
         available = set(grammar['content'].keys())
         course = load_js_dataset('de-course.js', 'GERMAN_COURSE_DATA')
         enriched, stats = build_course(course, german_vocab, pairs, available)

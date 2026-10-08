@@ -74,7 +74,7 @@ win.LangLoader = {
   ensureModule: () => Promise.resolve()
 };
 
-['lib/languages.js', 'lib/utils.js', 'data/conjugations-all-tenses.js', 'data/french-conjugations.js', 'conjugation-app.js']
+['lib/languages.js', 'lib/utils.js', 'data/it-conjugations.js', 'data/fr-conjugations.js', 'conjugation-app.js']
   .forEach((file) => {
     const abs = path.join(ROOT, file);
     vm.runInContext(fs.readFileSync(abs, 'utf8'), context, { filename: abs });

@@ -22,7 +22,7 @@ It accepts either input shape and is idempotent:
               from LANGS below.
 
 The Italian generator (build_it50k_conjugations.py) is not in the repo, so the
-canonical data/conjugations-all-tenses.js is the source of truth for Italian.
+canonical data/it-conjugations.js is the source of truth for Italian.
 The builders for the other three languages call `canonicalize(code)` after
 writing their output.
 """
@@ -66,7 +66,7 @@ def T(key, group, label, zh, type_='person', time=None, **extra):
 #                from    legacy key + slot the value is read from (splits)
 LANGS = {
     'it': {
-        'file': 'data/conjugations-all-tenses.js',
+        'file': 'data/it-conjugations.js',
         'const': 'CONJUGATIONS_IT',
         'name': 'Coniugazione dei verbi italiani',
         'builder': 'scripts/canonical_conjugations.py',
@@ -122,7 +122,7 @@ LANGS = {
         'x': [],
     },
     'de': {
-        'file': 'data/german-conjugations.js',
+        'file': 'data/de-conjugations.js',
         'const': 'CONJUGATIONS_DE',
         'name': 'Deutsche Verbkonjugation',
         'builder': 'scripts/build_german_conjugations.py',
@@ -171,7 +171,7 @@ LANGS = {
               'separableBase', 'konjunktivIiType', 'konjunktivIiSynthetischSelten', 'note'],
     },
     'en': {
-        'file': 'data/english-conjugations.js',
+        'file': 'data/en-conjugations.js',
         'const': 'CONJUGATIONS_EN',
         'name': 'English verb conjugation',
         'builder': 'scripts/build_english_conjugations.py',
@@ -221,7 +221,7 @@ LANGS = {
         'x': [],
     },
     'fr': {
-        'file': 'data/french-conjugations.js',
+        'file': 'data/fr-conjugations.js',
         'const': 'CONJUGATIONS_FR',
         'name': 'Conjugaison française',
         'builder': 'scripts/build_french_conjugations.py',

@@ -15,10 +15,10 @@ const path = require('path');
 const vm = require('vm');
 
 const FILES = {
-  it: 'data/conjugations-all-tenses.js',
-  de: 'data/german-conjugations.js',
-  en: 'data/english-conjugations.js',
-  fr: 'data/french-conjugations.js',
+  it: 'data/it-conjugations.js',
+  de: 'data/de-conjugations.js',
+  en: 'data/en-conjugations.js',
+  fr: 'data/fr-conjugations.js',
 };
 
 function loadConjugations(code, file) {

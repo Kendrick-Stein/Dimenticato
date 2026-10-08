@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * Validator for data/english-conjugations.js.
+ * Validator for data/en-conjugations.js.
  *
  * Run:  node scripts/validate_english_conjugations.js [path]
  *

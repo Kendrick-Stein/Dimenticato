@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Build data/french-conjugations.js — a full French conjugation dataset.
+"""Build data/fr-conjugations.js — a full French conjugation dataset.
 
 Every inflected form in the output is either copied from an openly licensed
 corpus or computed by the rule engine in this file.  No paradigm table is
@@ -67,7 +67,7 @@ DOWNLOADS = """
 """
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_PATH = os.path.join(REPO, 'data', 'french-conjugations.js')
+OUT_PATH = os.path.join(REPO, 'data', 'fr-conjugations.js')
 
 PERSONS = ['je', 'tu', 'il_elle_on', 'nous', 'vous', 'ils_elles']
 

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Build data/german-grammar-data.js (GERMAN_GRAMMAR_DATA).
+Build data/de-grammar.js (GERMAN_GRAMMAR_DATA).
 
 !!! RETIRED AS THE SOURCE OF TRUTH (2026-10) !!!
 The Docusaurus corpus this script reads (deutsch-data/grammar/docs) was
 deleted on 2026-09-30, so a rebuild is impossible without a private copy and
 would silently throw away every edit made to the data file since.  The
-shipped data/german-grammar-data.js is now the source of truth: edit it in
+shipped data/de-grammar.js is now the source of truth: edit it in
 place and normalise it with
 
     python3 scripts/canonicalize_grammar.py de
@@ -22,7 +22,7 @@ Two content sources are merged:
 
 1. The legacy Docusaurus corpus under deutsch-data/grammar/docs/ (27 topics).
    It carries no licence, so it was removed from the repo on 2026-09-30; the
-   shipped data/german-grammar-data.js keeps the converted text, and a rebuild
+   shipped data/de-grammar.js keeps the converted text, and a rebuild
    needs a local copy of that corpus at the same path.
    Those files reference 71 images with Windows-style relative paths
    (``![](.\\img\\X.png)``) that do not resolve from the site root, so every
@@ -52,7 +52,7 @@ import grammar_schema
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DOCS_DIR = os.path.join(ROOT, 'deutsch-data', 'grammar', 'docs')
-OUT_FILE = os.path.join(ROOT, 'data', 'german-grammar-data.js')
+OUT_FILE = os.path.join(ROOT, 'data', 'de-grammar.js')
 
 GLOBAL_NAME = 'GERMAN_GRAMMAR_DATA'
 
@@ -7036,7 +7036,7 @@ def build():
 if __name__ == '__main__':
     if '--force' not in sys.argv[1:] or not os.path.isdir(DOCS_DIR):
         raise SystemExit(
-            'build_german_grammar.py is retired: data/german-grammar-data.js is the source of truth.\n'
+            'build_german_grammar.py is retired: data/de-grammar.js is the source of truth.\n'
             'Edit it in place and run  python3 scripts/canonicalize_grammar.py de\n'
             '(a rebuild needs %s and --force, and discards edits made to the data file)' % DOCS_DIR)
     build()
