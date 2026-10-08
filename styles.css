@@ -353,8 +353,7 @@ main#main { min-height: 60vh; }
 
 /* Section bands.  A view that owns the full width (home, hubs, progress)
    stacks .section bands; .section-inner re-applies the page width so
-   .section-alt can paint paper-soft edge to edge.  A .section nested in a
-   .wrap simply gets the vertical rhythm. */
+   .section-alt can paint paper-soft edge to edge. */
 .section { padding: 3.6rem 0 3.4rem; }
 .section-inner { width: min(100% - var(--gutter), var(--wrap)); margin: 0 auto; }
 .section-alt {
@@ -363,9 +362,25 @@ main#main { min-height: 60vh; }
   background: var(--paper-soft);
 }
 .section-alt + .section { border-top: 0; }
-.wrap > .section { padding: 2.6rem 0 0; }
 .view-bands { padding-bottom: 2rem; }
 .view-bands > .section:last-child:not(.section-alt) { padding-bottom: 4rem; }
+
+/* Hub page header band (vocab / grammar / progress). */
+.page-hero {
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--hero-wash), transparent 75%);
+}
+.page-hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem 3rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2.6rem 0 2.4rem;
+}
+.page-hero .section-head { margin-bottom: 0; }
+.page-hero-stats { margin: 0; padding-top: 0; border-top: 0; }
+.page-hero + .section { padding-top: 2.8rem; }
 
 .btn,
 .primary-btn,
@@ -563,6 +578,7 @@ button.card, a.card { cursor: pointer; }
 .panel {
   padding: 1.3rem 1.3rem 1.4rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
 }
@@ -2859,7 +2875,7 @@ h1.page {
 
 /* ---------- 8.10 Progress charts + history (进度页，stats-charts.js) ---------- */
 
-.progress-grid + .progress-section { margin-top: 1rem; }
+.progress-section + .progress-section { margin-top: 1rem; }
 .progress-section .chart-container:last-child,
 .progress-section .charts-row .chart-container { margin-bottom: 0; }
 .progress-section .stats-table-container + p { margin-top: 0.75rem; }

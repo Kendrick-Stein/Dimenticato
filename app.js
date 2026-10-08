@@ -596,6 +596,16 @@
       esc(label) + (count != null ? ' <span class="chip-count num">' + fmt(count) + '</span>' : '') + '</button>';
   }
 
+  /** 中心页（词汇 / 语法 / 进度）的页头带：kicker · 衬线 h1 · 副标题，右侧可放按钮。 */
+  function pageHero(kicker, title, sub, aside) {
+    return '<header class="page-hero"><div class="section-inner page-hero-inner">' +
+      '<div class="section-head"><p class="kicker">' + kicker + '</p>' +
+        '<h1 class="page-title">' + title + '</h1>' +
+        (sub ? '<p class="section-sub">' + sub + '</p>' : '') + '</div>' +
+      (aside || '') +
+    '</div></header>';
+  }
+
   function renderVocab() {
     var l = lang();
     var p = profile(l);
@@ -624,14 +634,16 @@
       '</div></div>';
 
     var html = '' +
-      '<div class="section-head-row">' +
-        '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Vocabolario</span>' +
-          '<h1 class="page-title">词汇练习</h1>' +
-          '<p>先选范围，再选练习方式。到期复习的词总是排在最前面。</p></div>' +
-      '</div>' +
+      pageHero(esc(p.name) + ' · Vocabolario', '词汇练习', '先选范围，再选练习方式。到期复习的词总是排在最前面。',
+        '<dl class="hero-stats page-hero-stats">' +
+          heroStat('本范围', src.entries.length) +
+          heroStat('已掌握', masteredIn) +
+          heroStat('待复习', due) +
+        '</dl>') +
+      '<section class="section" aria-labelledby="vocabScopeTitle"><div class="section-inner">' +
+      '<div class="section-head"><p class="kicker">Ambito</p><h2 id="vocabScopeTitle">练习范围</h2></div>' +
       '<div class="vocab-layout">' +
         '<div class="panel setup-panel">' +
-          '<div class="panel-title">练习范围</div>' +
           '<div class="pref-row"><span class="pref-label">词源</span><div class="chips">' + sourceChips + '</div></div>' +
           levelRow +
           '<div class="pref-row"><span class="pref-label">筛选</span><div class="chips">' +
@@ -666,21 +678,28 @@
           '</div>' +
         '</div>' +
       '</div>' +
-      '<div class="section"><div class="section-head"><h2>练习方式</h2></div>' +
-        '<div class="card-grid mode-grid">' +
+      '</div></section>' +
+      '<section class="section section-alt" aria-labelledby="vocabModesTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">Esercizi</p><h2 id="vocabModesTitle">练习方式</h2>' +
+          '<p class="section-sub">都从上面圈定的范围里出题，结果写进同一份进度。</p></div>' +
+        '<div class="card-grid mode-grid reveal-group">' +
           modeCard('quiz', 'quiz', '选择题', '看' + p.cn + '选释义，或反过来。1–4 选择，Enter 下一题。') +
           modeCard('spell', 'keyboard', '拼写', '看释义写出单词，' + ({ german: '名词大小写有提示。', french: '重音写错会单独指出。' }[profile(l).spell] || '支持特殊字母按键。')) +
           modeCard('browse', 'menu_book', '浏览', '搜索、按等级筛选、标记已掌握、加入单词本。') +
           modeCard('typing', 'sports_esports', '打字游戏', '单词顺流而下，看释义打字击落。') +
           (hasModule('cognates', l) ? modeCard('cognates', 'join_inner', '同源词', '和英语同源的词，按构词规律成组学习。') : '') +
-        '</div></div>';
+        '</div></div></section>';
     $('vocabView').innerHTML = html;
   }
 
+  var MODE_LABELS = { quiz: 'Scelta', spell: 'Dettato', browse: 'Lessico', typing: 'Gioco', cognates: 'Affini' };
+
   function modeCard(mode, icon, title, desc) {
-    return '<button class="card" data-action="start" data-mode="' + mode + '">' +
-      '<span class="card-icon"><span class="msr" aria-hidden="true">' + icon + '</span></span>' +
-      '<span class="card-title">' + title + '</span><span class="card-desc">' + desc + '</span></button>';
+    return '<button class="card module-card reveal" data-action="start" data-mode="' + mode + '">' +
+      '<span class="card-title">' + title + '</span>' +
+      '<span class="card-label"><span class="msr" aria-hidden="true">' + icon + '</span>' + (MODE_LABELS[mode] || '') + '</span>' +
+      '<span class="card-desc">' + desc + '</span>' +
+      '<span class="card-cta">开始<span class="msr" aria-hidden="true">arrow_forward</span></span></button>';
   }
 
   // ==================== 浏览 ====================
@@ -767,9 +786,11 @@
     var l = lang();
     var p = profile(l);
     $('grammarView').innerHTML =
-      '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Grammatica</span>' +
-        '<h1 class="page-title">语法</h1><p>语法书用来查，变位与搭配用来练。数据在打开时才下载。</p></div>' +
-      '<div class="card-grid cols-2">' + moduleCards(l, 'grammar') + '</div>';
+      pageHero(esc(p.name) + ' · Grammatica', '语法', '语法书用来查，变位与搭配用来练。数据在打开时才下载。') +
+      '<section class="section" aria-labelledby="grammarModulesTitle"><div class="section-inner">' +
+        '<div class="section-head reveal"><p class="kicker">Moduli</p><h2 id="grammarModulesTitle">' + esc(p.cn) + '语法模块</h2></div>' +
+        '<div class="card-grid module-grid cols-2 reveal-group">' + moduleCards(l, 'grammar') + '</div>' +
+      '</div></section>';
   }
 
   // ==================== 进度页 ====================
@@ -792,13 +813,9 @@
     var pct = function (a, b) { return b ? Math.round(a / b * 100) + '%' : '—'; };
 
     $('progressView').innerHTML =
-      '<div class="section-head-row">' +
-        '<div class="section-head"><span class="kicker">' + esc(p.en) + ' · Progressi</span>' +
-          '<h1 class="page-title">学习进度</h1><p>只统计' + esc(p.cn) + '。换语言请用顶栏的语言切换。</p></div>' +
-        '<div class="btn-row">' +
-          (due ? '<button class="primary-btn" data-action="review">复习到期 <span class="num">' + fmt(due) + '</span></button>' : '') +
-        '</div>' +
-      '</div>' +
+      pageHero(esc(p.name) + ' · Progressi', '学习进度', '只统计' + esc(p.cn) + '。换语言请用顶栏的语言切换。',
+        due ? '<div class="btn-row"><button class="btn btn-primary" data-action="review"><span class="msr" aria-hidden="true">history</span>复习到期 <span class="num">' + fmt(due) + '</span></button></div>' : '') +
+      '<section class="section" aria-label="概览"><div class="section-inner">' +
       '<dl class="stat-strip">' +
         stat('已掌握', fmt(mastered.size), entries.length ? (mastered.size / entries.length * 100).toFixed(1) + '% 词库' : '') +
         stat('今日答题', fmt(today.totalCount), '正确率 ' + pct(today.correctCount, today.totalCount)) +
@@ -833,7 +850,9 @@
           '</dl>' +
           '<p class="muted small">连续答对两次记为已掌握；答错会退回未掌握，并按 SM-2 安排复习。</p></div>' +
       '</div>' +
-      (global.StatsCharts ? global.StatsCharts.sectionsHtml(l) : '');
+      '</div></section>' +
+      (global.StatsCharts ? '<section class="section section-alt progress-charts-band"><div class="section-inner">' +
+        global.StatsCharts.sectionsHtml(l) + '</div></section>' : '');
     // 图表：Chart.js 在这里才懒加载（stats-charts.js）
     if (global.StatsCharts) global.StatsCharts.mount(l);
   }
