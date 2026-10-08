@@ -45,6 +45,8 @@ const VALIDATORS = [
   'scripts/validate_english_collocations.js',
   // 德语/英语内容质量：多性名词白名单、zh 义项编号残留、英语屈折词头、课程级别错位
   'scripts/validate_de_en_quality.js',
+  // 意大利语内容质量：释义残留模式、大写常用词、搭配例句不含词头、语法编号与超长专题
+  'scripts/validate_it_quality.js',
 ];
 
 function extractScripts(html) {

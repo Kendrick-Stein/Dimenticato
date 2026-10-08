@@ -118,7 +118,7 @@ const IT_GOLD = [
   ['e', 'conjunction'], ['di', 'preposition'], ['la', 'article'], ['una', 'article'],
   ['io', 'pronoun'], ['mi', 'pronoun'], ['sei', 'numeral'], ['era', 'verb'],
   ['fare', 'verb'], ['credo', 'verb'], ['dire', 'verb'],
-  ['sempre', 'adverb'], ['vero', 'adjective'], ['Felice', 'adjective'],
+  ['sempre', 'adverb'], ['vero', 'adjective'], ['felice', 'adjective'],
   ['problema', 'noun', 'm'], ['mano', 'noun', 'f'],
   ['tempo', 'noun', 'm'], ['vita', 'noun', 'f'], ['cantante', 'noun', 'm/f']
 ];

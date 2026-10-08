@@ -89,6 +89,9 @@ LEVEL_HOOKS = {'it': (italian_level, 'heuristic')}
 
 def run(code):
     data = grammar_schema.read(code)
+    if code == 'it':
+        import italian_fixes  # reviewed fix list: scripts/it_fixes/grammar.json
+        data = italian_fixes.apply_grammar(data)
     level_for, level_source = LEVEL_HOOKS.get(code, (None, None))
     out = grammar_schema.canonicalize(data, code, level_for=level_for, level_source=level_source)
     header = grammar_schema.LANGS[code]['header']
