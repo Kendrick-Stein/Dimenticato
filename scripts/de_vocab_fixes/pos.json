@@ -1,0 +1,7 @@
+[{"word": "inner", "field": "pos", "from": "preposition", "to": "adjective", "why": "inner is an adjective (der innere Kreis); innerhalb is the preposition"},
+{"word": "inner", "field": "posAll", "from": ["preposition", "adjective"], "to": null, "why": "single POS"},
+{"word": "inner", "field": "en", "from": "within", "to": "inner, internal, interior", "why": "adjective gloss"},
+{"word": "Trümmer", "field": "gender", "from": "m/f/n", "to": null, "why": "plurale tantum (die Trümmer)"},
+{"word": "Trümmer", "field": "display", "from": "das Trümmer", "to": "die Trümmer", "why": "plurale tantum"},
+{"word": "Trümmer", "field": "forms.plural", "from": "Trümmer", "to": null, "why": "plurale tantum"},
+{"word": "Trümmer", "field": "forms.pluraleTantum", "from": null, "to": true, "why": "plurale tantum"}]

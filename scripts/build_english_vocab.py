@@ -704,6 +704,12 @@ def main() -> None:
     out = vocab_legacy.emit('en', entries, builder='scripts/build_english_vocab.py')
     print(f"Done! Written to {out}")
 
+    # Audited post-pass: merge inflected headwords into their lemma, drop
+    # proper nouns / abbreviations outside the allowlist, trim zh glosses,
+    # re-rank.  Driven by scripts/en_vocab_fixes/ (see en_vocab_fixes.py).
+    import en_vocab_fixes
+    en_vocab_fixes.main()
+
 
 if __name__ == '__main__':
     main()

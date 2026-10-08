@@ -357,9 +357,13 @@ function validate(lang) {
     // on the old word migrates through it) — must differ from word and must
     // not be another entry's current word.
     if ('legacyWord' in e) {
-      if (!(typeof e.legacyWord === 'string' && e.legacyWord.trim())) err(`${where}: bad legacyWord`);
-      else if (e.legacyWord === e.word) err(`${where}: legacyWord equals word`);
-      else if (allWords.has(e.legacyWord)) err(`${where}: legacyWord ${JSON.stringify(e.legacyWord)} is another entry's word`);
+      const olds = Array.isArray(e.legacyWord) ? e.legacyWord : [e.legacyWord];
+      if (Array.isArray(e.legacyWord) && e.legacyWord.length < 2) err(`${where}: legacyWord list with < 2 items (use a string)`);
+      olds.forEach(old => {
+        if (!(typeof old === 'string' && old.trim())) err(`${where}: bad legacyWord`);
+        else if (old === e.word) err(`${where}: legacyWord equals word`);
+        else if (allWords.has(old)) err(`${where}: legacyWord ${JSON.stringify(old)} is another entry's word`);
+      });
     }
   });
 

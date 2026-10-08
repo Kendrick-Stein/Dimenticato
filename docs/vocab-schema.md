@@ -38,7 +38,7 @@ script, so the site can load it without a build step, and Node can load it in a 
 | `tags` | string[] | | Topic tags, e.g. `饮食` or `旅行` for French. |
 | `src` | int | | Index into `meta.sources`, recording the provenance of this entry. |
 | `legacyId` | string | | Pre-v1 progress key (German `de-00001`). Used only by the one-time progress migration. |
-| `legacyWord` | string | | The previous `word` of a renamed headword (English `york` → `York`). Never equal to `word` or to another entry's `word`. Progress keyed by the old spelling migrates through it. |
+| `legacyWord` | string or string[] | | The previous `word` of a renamed headword (English `york` → `York`), or a list of them (English inflected forms merged into their lemma: `be` ← `is`, `was`, …). Never equal to `word` or to another entry's `word`. Progress keyed by an old spelling migrates through it. |
 
 `forms` keys: `plural`, `feminine`, `principalParts` (`ist, war, ist gewesen`),
 `construction` (`à`), `government` (`+ auf A`), `pluraleTantum` (true),

@@ -2927,6 +2927,10 @@ def main():
         _, size = canonical_cognates.emit(
             'de', allc, builder='scripts/build_german_extras.py', header=COGNATE_HEADER,
             path=os.path.join(DATA, 'de-cognates.js'))
+        # Audited drops (English leaks, brand names, look-alikes) + zh re-sync:
+        # scripts/de_cognate_fixes.json
+        import de_cognate_fixes
+        de_cognate_fixes.apply_file()
         patterns = defaultdict(int)
         for c in allc:
             patterns[c['patternType']] += 1
@@ -2946,6 +2950,10 @@ def main():
         course = load_js_dataset('de-course.js', 'GERMAN_COURSE_DATA')
         enriched, stats = build_course(course, german_vocab, pairs, available)
         size = emit_course(course, enriched, os.path.join(DATA, 'de-course.js'))
+        # audited grammar retargets, added topic links and level-fitting word
+        # swaps: scripts/de_course_fixes.json
+        import de_course_fixes
+        de_course_fixes.apply_file(verbose=False)
         stats['bytes'] = size
         report['course'] = stats
 
