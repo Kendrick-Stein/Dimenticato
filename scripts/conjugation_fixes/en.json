@@ -1,0 +1,352 @@
+[
+{
+"verb": "sting",
+"tense": "indicative_present_continuous",
+"person": 0,
+"from": "am sting",
+"to": "am stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_continuous",
+"person": 1,
+"from": "are sting",
+"to": "are stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_continuous",
+"person": 2,
+"from": "is sting",
+"to": "is stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_continuous",
+"person": 3,
+"from": "are sting",
+"to": "are stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_continuous",
+"person": 4,
+"from": "are sting",
+"to": "are stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_continuous",
+"person": 5,
+"from": "are sting",
+"to": "are stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_perfect_continuous",
+"person": 0,
+"from": "have been sting",
+"to": "have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_perfect_continuous",
+"person": 1,
+"from": "have been sting",
+"to": "have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_perfect_continuous",
+"person": 2,
+"from": "has been sting",
+"to": "has been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_perfect_continuous",
+"person": 3,
+"from": "have been sting",
+"to": "have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_perfect_continuous",
+"person": 4,
+"from": "have been sting",
+"to": "have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_present_perfect_continuous",
+"person": 5,
+"from": "have been sting",
+"to": "have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_continuous",
+"person": 0,
+"from": "was sting",
+"to": "was stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_continuous",
+"person": 1,
+"from": "were sting",
+"to": "were stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_continuous",
+"person": 2,
+"from": "was sting",
+"to": "was stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_continuous",
+"person": 3,
+"from": "were sting",
+"to": "were stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_continuous",
+"person": 4,
+"from": "were sting",
+"to": "were stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_continuous",
+"person": 5,
+"from": "were sting",
+"to": "were stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_perfect_continuous",
+"person": 0,
+"from": "had been sting",
+"to": "had been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_perfect_continuous",
+"person": 1,
+"from": "had been sting",
+"to": "had been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_perfect_continuous",
+"person": 2,
+"from": "had been sting",
+"to": "had been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_perfect_continuous",
+"person": 3,
+"from": "had been sting",
+"to": "had been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_perfect_continuous",
+"person": 4,
+"from": "had been sting",
+"to": "had been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_past_perfect_continuous",
+"person": 5,
+"from": "had been sting",
+"to": "had been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_continuous",
+"person": 0,
+"from": "will be sting",
+"to": "will be stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_continuous",
+"person": 1,
+"from": "will be sting",
+"to": "will be stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_continuous",
+"person": 2,
+"from": "will be sting",
+"to": "will be stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_continuous",
+"person": 3,
+"from": "will be sting",
+"to": "will be stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_continuous",
+"person": 4,
+"from": "will be sting",
+"to": "will be stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_continuous",
+"person": 5,
+"from": "will be sting",
+"to": "will be stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_perfect_continuous",
+"person": 0,
+"from": "will have been sting",
+"to": "will have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_perfect_continuous",
+"person": 1,
+"from": "will have been sting",
+"to": "will have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_perfect_continuous",
+"person": 2,
+"from": "will have been sting",
+"to": "will have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_perfect_continuous",
+"person": 3,
+"from": "will have been sting",
+"to": "will have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_perfect_continuous",
+"person": 4,
+"from": "will have been sting",
+"to": "will have been stinging"
+},
+{
+"verb": "sting",
+"tense": "indicative_future_will_perfect_continuous",
+"person": 5,
+"from": "will have been sting",
+"to": "will have been stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_continuous",
+"person": 0,
+"from": "would be sting",
+"to": "would be stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_continuous",
+"person": 1,
+"from": "would be sting",
+"to": "would be stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_continuous",
+"person": 2,
+"from": "would be sting",
+"to": "would be stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_continuous",
+"person": 3,
+"from": "would be sting",
+"to": "would be stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_continuous",
+"person": 4,
+"from": "would be sting",
+"to": "would be stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_continuous",
+"person": 5,
+"from": "would be sting",
+"to": "would be stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_perfect_continuous",
+"person": 0,
+"from": "would have been sting",
+"to": "would have been stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_perfect_continuous",
+"person": 1,
+"from": "would have been sting",
+"to": "would have been stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_perfect_continuous",
+"person": 2,
+"from": "would have been sting",
+"to": "would have been stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_perfect_continuous",
+"person": 3,
+"from": "would have been sting",
+"to": "would have been stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_perfect_continuous",
+"person": 4,
+"from": "would have been sting",
+"to": "would have been stinging"
+},
+{
+"verb": "sting",
+"tense": "conditional_perfect_continuous",
+"person": 5,
+"from": "would have been sting",
+"to": "would have been stinging"
+},
+{
+"verb": "sting",
+"tense": "nonfinite_present_participle",
+"person": null,
+"from": "sting",
+"to": "stinging"
+},
+{
+"verb": "fulfil",
+"tense": "indicative_present_simple",
+"person": 2,
+"from": "fulfills",
+"to": "fulfils"
+}
+]

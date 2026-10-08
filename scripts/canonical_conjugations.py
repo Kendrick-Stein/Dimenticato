@@ -539,6 +539,56 @@ def pivot_zh(verbs):
                 break
 
 
+
+# ---------------------------------------------------------------------------
+# Hand-checked corrections (scripts/conjugation_fixes/<code>.json)
+# ---------------------------------------------------------------------------
+
+FIXES_DIR = ROOT / 'scripts' / 'conjugation_fixes'
+
+
+def apply_fixes(code, verbs):
+    """Apply the audited corrections for `code`, idempotently.
+
+    Each entry is {verb, tense, person, from, to, why?}.  `tense` is a tense key
+    (person = 0..5 for person tenses, null for single ones) or 'x.<field>' for
+    verb metadata.  A cell already equal to `to` is left alone, so the file can be
+    re-applied after a rebuild; a cell matching neither `from` nor `to` is reported
+    (the upstream data changed — re-check that entry by hand)."""
+    path = FIXES_DIR / f'{code}.json'
+    if not path.exists():
+        return 0, []
+    by_word = {v['word']: v for v in verbs}
+    applied, stale = 0, []
+    for fix in json.loads(path.read_text(encoding='utf-8')):
+        verb = by_word.get(fix['verb'])
+        if verb is None:
+            stale.append(f"{fix['verb']}: verb not found")
+            continue
+        tense, person = fix['tense'], fix.get('person')
+        if tense.startswith('x.'):
+            box, key = verb.setdefault('x', {}), tense[2:]
+        elif person is None:
+            box, key = verb['tenses'], tense
+        else:
+            box, key = verb['tenses'].get(tense), person
+            if not isinstance(box, list):
+                stale.append(f"{fix['verb']} {tense}: no such person tense")
+                continue
+        current = box.get(key) if isinstance(box, dict) else box[key]
+        if current == fix['to']:
+            continue
+        if current != fix['from']:
+            stale.append(f"{fix['verb']} {tense}[{person}]: {current!r} ≠ from {fix['from']!r}")
+            continue
+        if fix['to'] is None and isinstance(box, dict):
+            box.pop(key, None)
+        else:
+            box[key] = fix['to']
+        applied += 1
+    return applied, stale
+
+
 def order_verb(verb, tense_order):
     out = {'word': verb['word'], 'rank': verb['rank'], 'freq': verb.get('freq')}
     for key in ('zh', 'en'):
@@ -589,6 +639,12 @@ def canonicalize(code, verbose=True):
             v.setdefault('x', {})['zhSource'] = 'manual'
     if code == 'it':
         pivot_zh(verbs)
+    fixed, stale = apply_fixes(code, verbs)
+    if verbose and (fixed or stale):
+        print(f'{code}: {fixed} fixes applied from scripts/conjugation_fixes/{code}.json'
+              + (f'; {len(stale)} stale:' if stale else ''))
+        for line in stale:
+            print('   ', line)
     missing_zh = [v['word'] for v in verbs if not v.get('zh')]
 
     verbs.sort(key=lambda v: (v.get('rank') or 10 ** 9))
