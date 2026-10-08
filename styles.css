@@ -1152,7 +1152,14 @@ p.small { margin-top: 0.6rem; }
 .loading-inner .brand-mark { width: 3rem; height: 3rem; font-size: 1.4rem; animation: loading-pulse 1.4s ease-in-out infinite; }
 .loading-title { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; }
 .loading-progress-bar { width: 100%; height: 3px; overflow: hidden; background: var(--paper-deep); }
-.loading-progress-fill { width: 30%; height: 100%; background: var(--ink); animation: loading-slide 1.2s ease-in-out infinite; }
+/* Determinate by default (boot.js sets the width from real file counts);
+   indeterminate only until the first file lands. */
+.loading-progress-fill { width: 0; height: 100%; background: var(--ink); transition: width 0.2s ease; }
+.loading-progress-fill.is-indeterminate { width: 30%; animation: loading-slide 1.2s ease-in-out infinite; }
+.loading-error { display: grid; gap: 0.6rem; justify-items: center; }
+.loading-error-title { color: var(--red); font-size: 0.9rem; }
+.loading-error-files { margin: 0; padding: 0; list-style: none; color: var(--ink-soft); font-family: var(--mono); font-size: 0.78rem; word-break: break-all; }
+.loading-error-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
 .loading-detail { color: var(--muted); font-family: var(--mono); font-size: 0.8rem; }
 @keyframes loading-pulse { 50% { opacity: 0.45; } }
 @keyframes loading-slide { from { transform: translateX(-100%); } to { transform: translateX(340%); } }

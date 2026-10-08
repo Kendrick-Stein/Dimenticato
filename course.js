@@ -66,7 +66,6 @@
     open(lang) {
       this.init();
       const code = codeOf(lang || (window.App && window.App.lang && window.App.lang()));
-      const key = window.Languages.key(code); // LangLoader 的模块账按语言 key 记
       if (code !== this.code) {
         this.code = code;
         this.activeLevelId = null;
@@ -74,12 +73,12 @@
       }
       const loader = window.LangLoader;
       const missing = (module) => !this.data(module) && loader
-        && typeof loader.ensureModule === 'function' && !loader.isModuleLoaded(key, module);
+        && typeof loader.ensureModule === 'function' && !loader.isModuleLoaded(code, module);
       // 课程数据没到时先不渲染（否则会闪一下「未能载入」）
       if (!missing('course') && this.ensureReady()) this.render();
       if (typeof window.showScreen === 'function') window.showScreen('courseScreen');
       // 语法书没到之前语法标签是纯文本，到了再重渲染成可点 chip
-      const pending = ['course', 'grammar'].filter(missing).map((module) => loader.ensureModule(key, module));
+      const pending = ['course', 'grammar'].filter(missing).map((module) => loader.ensureModule(code, module));
       if (pending.length) {
         Promise.all(pending).then(() => {
           if (this.code === code && this.ensureReady()) this.render();

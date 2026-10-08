@@ -60,16 +60,6 @@
     return data && Array.isArray(data.entries) ? data : null;
   }
 
-  /**
-   * LangLoader.MODULES 目前按语言 key（'italian'）登记文件；ensureModule 收到 code
-   * 会直接 resolve(false)。哪种登记方式能查到就用哪种，迁到 code 之后这里自动跟上。
-   */
-  function loaderLang(code) {
-    var table = window.LangLoader && window.LangLoader.MODULES && window.LangLoader.MODULES[MODULE];
-    if (table && table[code]) return code;
-    return (window.Languages && window.Languages.key(code)) || code;
-  }
-
   // === Cognate State ===
   const CognateState = {
     lang: null,          // 当前语言 code（'it' / 'de' / 'fr' …）
@@ -976,7 +966,7 @@
             escapeHtml(profile().name) + '</div><div class="card-desc">正在加载' +
             escapeHtml(profile().cn) + '词库…</div></div>';
         }
-        window.LangLoader.ensureModule(loaderLang(target), MODULE).then(function () {
+        window.LangLoader.ensureModule(target, MODULE).then(function () {
           if (CognateState.lang !== target) return; // 加载期间又切走了
           CognateApp.showModeSelection(target);
         });

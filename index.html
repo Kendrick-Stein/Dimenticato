@@ -92,8 +92,16 @@
     <div class="loading-inner">
       <span class="brand-mark">D</span>
       <p id="loadingMessage" class="loading-title">Dimenticato</p>
-      <div class="loading-progress-bar"><div id="loadingProgressFill" class="loading-progress-fill"></div></div>
+      <div class="loading-progress-bar" id="loadingProgress" role="progressbar" aria-label="加载进度" aria-valuemin="0" aria-valuemax="100"><div id="loadingProgressFill" class="loading-progress-fill is-indeterminate"></div></div>
       <p id="loadingDetail" class="loading-detail">正在准备…</p>
+      <div id="loadingError" class="loading-error" hidden>
+        <p class="loading-error-title">以下文件没能加载：</p>
+        <ul id="loadingErrorFiles" class="loading-error-files"></ul>
+        <div class="loading-error-actions">
+          <button type="button" class="primary-btn" id="loadingRetryBtn"><span class="msr" aria-hidden="true">refresh</span>重试</button>
+          <button type="button" class="pill-btn" id="loadingDismissBtn">先继续使用</button>
+        </div>
+      </div>
     </div>
   </div>
 

@@ -53,11 +53,11 @@ const VerbCollocations = (() => {
 
   /** 数据未加载时补拉；已经尝试过（或没有该模块）返回 null，调用方走缺数状态。 */
   function ensureDataset(lang) {
+    // LangLoader 接受 code 或 key，不必再换算
     const loader = window.LangLoader;
-    const key = Languages.key(lang);
-    if (!loader || !key || typeof loader.ensureModule !== 'function') return null;
-    if (!Languages.hasModule(lang, MODULE) || loader.isModuleLoaded(key, MODULE)) return null;
-    return loader.ensureModule(key, MODULE);
+    if (!loader || !lang || typeof loader.ensureModule !== 'function') return null;
+    if (!Languages.hasModule(lang, MODULE) || loader.isModuleLoaded(lang, MODULE)) return null;
+    return loader.ensureModule(lang, MODULE);
   }
 
   function title(lang) {
