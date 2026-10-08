@@ -2,9 +2,10 @@
  * Dimenticato 离线缓存（注册见 lib/boot.js）。
  *
  * 策略：
- *   - 页面 / HTML / JS / CSS：网络优先，失败（离线）才回落到缓存 —— 部署后第一时间拿到新代码。
- *   - data/*.js（词库与模块数据，体积大、变动少）：stale-while-revalidate ——
- *     有缓存先给缓存，同时后台拉新版写回，下次打开生效。
+ *   - 所有同源请求（页面 / JS / CSS / data/*.js）：网络优先，失败（离线）才回落到缓存。
+ *     数据和代码经常一起改（字段、slug），所以数据也不走 stale-while-revalidate：
+ *     那样部署后会出现「新代码 + 旧数据」的一次访问。GitHub Pages 带 ETag，
+ *     未变的数据文件只是一次 304，代价很小。
  *   - 跨域请求（Google Fonts、CDN、Supabase）一律不拦截，交给浏览器。
  *
  * 不做预缓存：install 阶段不下载任何东西，首次访问和没有 SW 时完全一样，
@@ -37,11 +38,6 @@ function scopePath() {
   return new URL(self.registration.scope).pathname; // 例如 /Dimenticato/
 }
 
-function isDataFile(url) {
-  const rel = url.pathname.slice(scopePath().length);
-  return rel.startsWith('data/') && rel.endsWith('.js');
-}
-
 function cacheable(response) {
   return response && response.ok && response.type === 'basic';
 }
@@ -71,21 +67,6 @@ async function networkFirst(request, isNavigation) {
   }
 }
 
-async function staleWhileRevalidate(event) {
-  const request = event.request;
-  const cache = await caches.open(CACHE);
-  const hit = await cache.match(request);
-  const refresh = fetch(request).then((response) => {
-    if (cacheable(response)) return put(request, response.clone()).then(() => response);
-    return response;
-  });
-  if (hit) {
-    event.waitUntil(refresh.catch(() => {}));
-    return hit;
-  }
-  return refresh;
-}
-
 self.addEventListener('fetch', (event) => {
   const request = event.request;
   if (request.method !== 'GET') return;
@@ -93,9 +74,5 @@ self.addEventListener('fetch', (event) => {
   if (url.origin !== self.location.origin) return;
   if (!url.pathname.startsWith(scopePath())) return;
 
-  if (isDataFile(url)) {
-    event.respondWith(staleWhileRevalidate(event));
-    return;
-  }
   event.respondWith(networkFirst(request, request.mode === 'navigate'));
 });
