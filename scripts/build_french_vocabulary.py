@@ -55,6 +55,9 @@ Pipeline (each step is a sub-command; run them in this order):
     #     per-word pages (no dump download), then assemble again
     python3 scripts/build_french_vocabulary.py fill-english
 
+    #    assemble applies scripts/vocab_fixes/fr.json (hand-checked gloss
+    #    corrections, see scripts/fr_vocab_fixes.py) right before writing
+
     # 4. verification
     node scripts/validate_vocab.js fr
 
@@ -78,6 +81,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import fr_vocab_fixes  # noqa: E402
 import vocab_legacy  # noqa: E402
 import vocab_schema  # noqa: E402
 
@@ -1244,6 +1248,14 @@ def assemble(core_path: Path | None = CORE_PATH) -> Path:
               'of data/vocab/fr.js', file=sys.stderr)
     entries = vocab_legacy.from_fr([(curriculum, 'textbook'), (glossary, 'textbook'),
                                     (core, 'freq-band')])
+    # hand-checked corrections (scripts/vocab_fixes/fr.json): applied last, so
+    # a rebuild from fresh corpora cannot bring an audited pivot error back
+    applied, stale = fr_vocab_fixes.apply_fixes(entries, key=vocab_legacy.headword_key)
+    print(f'assemble: {applied} vocab fixes applied', file=sys.stderr)
+    for message in stale:
+        print(f'assemble: stale vocab fix: {message}', file=sys.stderr)
+    for message in fr_vocab_fixes.gloss_collisions(entries):
+        print(f'assemble: zh collision after fixes: {message}', file=sys.stderr)
     if core_words is not None:
         pin_core_order(entries, core_words, previous_order)
     return vocab_legacy.emit('fr', entries, builder=BUILDER)

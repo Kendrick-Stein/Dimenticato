@@ -1,0 +1,13 @@
+{
+"rules": [
+{"key":"pour","match":"\\b(trop|assez|suffisamment)\\s+(\\w+\\s+)?\\w+\\s+pour\\b","why":"« trop/assez + adj. + pour + inf. » is the degree construction, not a verb + pour government (fatiguer/occuper)"},
+{"key":"pour","match":"\\bpour\\s+(le moment|l'instant|la première fois)\\b","why":"adverbial time phrase, not governed by the verb"},
+{"key":"en","match":"\\ben\\s+\\w+ant\\b","unless":"\\ben\\s+(?!\\w+ant\\b)","why":"gérondif (en + -ant), not a verb + en government"},
+{"key":"en","match":"\\ben\\s+(cas de|douceur|ce moment|même temps|face à face)\\b","why":"adverbial phrase, not governed by the verb"},
+{"key":"par","match":"\\bpar\\s+erreur\\b","why":"adverbial phrase, not governed by the verb"},
+{"key":"dans","match":"\\bdans\\s+(\\w+\\s+)?(minutes?|heures?|jours?|semaines?|mois|ans|années)\\b","why":"« dans + durée » (in three days) is a time adverbial, not governed by the verb"}
+],
+"zh": [
+{"verb":"débrouiller","key":"avec","text":"Je te laisserai te débrouiller avec ça.","from":"我把这个留给你。","to":"这件事就让你自己去应付吧。","why":"Tatoeba pair dropped the meaning of se débrouiller (to cope/manage)"}
+]
+}

@@ -33,6 +33,8 @@ const VALIDATORS = [
   // 模块数据（cognates/1 等）的统一校验：CHECKS 表，每个模块一个 validator + per-language hook
   'scripts/validate_modules.js',
   'scripts/validate_french_extras.js',
+  // 法语释义质量回归：英语跳板同形词、（英：…）残留、同源词缺失、vocab_fixes 未落盘
+  'scripts/validate_fr_quality.js',
   'scripts/validate_french_conjugations.js',
   'scripts/validate_english_conjugations.js',
   'scripts/validate_german_conjugations.js',
