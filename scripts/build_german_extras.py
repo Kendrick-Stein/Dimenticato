@@ -44,6 +44,7 @@ import unicodedata
 import urllib.request
 from collections import defaultdict
 from data_module import register_footer
+import canonical_cognates  # cognates/1 writer (shared with the FR builder + extractor)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
@@ -2303,7 +2304,7 @@ def build_cognates(german_vocab, english_vocab):
             'chinese': gloss,
             'patternType': label,
             'similarityScore': score,
-            'difficulty': 'easy' if score >= 70 else 'medium',
+            'difficulty': canonical_cognates.DIFFICULTY_NAME[canonical_cognates.curve(score)],
             'rank': de_entry.get('rank'),
             'pos': pos,
             'gender': gender,
@@ -3012,30 +3013,30 @@ COLLOC_HEADER = '''// German verb collocations (Rektion) for Dimenticato.  GENER
 // the example sentences are mined from Tatoeba (CC BY 2.0 FR).
 '''
 
-COGNATE_HEADER = '''// German <-> English cognates for Dimenticato.  GENERATED — edit
-// scripts/build_german_extras.py and re-run it instead of editing this file.
+COGNATE_HEADER = '''// German <-> English cognates for Dimenticato — schema cognates/1 (docs/data-schema.md).
+// GENERATED — edit scripts/build_german_extras.py and re-run it instead of
+// editing this file (it writes through scripts/canonical_cognates.py).
 //
-// Shape mirrors data/cognates.js (COGNATE_DATA) with `german` replacing
-// `italian`: { german, english, chinese, patternType, similarityScore,
-// difficulty, rank } plus the additive fields display, pos, gender,
-// englishChinese, englishRank, source and falseFriend.
+// Entry: { word, display (article + noun), pos, gender, level, rank, en, zh,
+// pattern, similarity (0…1), difficulty (1 easy / 2 medium / 3 hard, the band
+// of similarity), falseFriend, src (index into meta.sources),
+// x: { englishChinese, englishRank } }.
 //
 // Pairs were produced two ways, both gated on Chinese-gloss agreement between
-// data/german-vocabulary.js and data/english-vocabulary.js (ECDICT):
+// data/vocab/de.js and data/vocab/en.js (ECDICT):
 //   1. a curated list of core Germanic pairs, and
 //   2. a rule transducer implementing the High German consonant shift
 //      (t↔z/ss, p↔pf/f, d↔t, k↔ch, th↔d …) plus the regular Latinate suffix
 //      correspondences (-ität/-ity, -ismus/-ism, -isch/-ic, -ie/-y …).
-// `patternType` records the correspondence that fired, so Pattern Groups mode
-// has real groups rather than one big null bucket.
+// `pattern` records the correspondence that fired (labels in meta.patterns),
+// so Pattern Groups mode has real groups rather than one big null bucket.
 //
-// Entries with falseFriend === true are *falsche Freunde*.  For those entries
-// `english` is the CORRECT translation of the German word (so every prompt
-// mode stays truthful) and the deceptive English look-alike lives in
-// `falseFriendOf`, with `falseFriendChinese` (what the look-alike really means)
-// and `germanFor` (the German word that does mean the look-alike).
-// `similarityScore` for those entries measures german vs falseFriendOf,
-// because the resemblance is the whole point of the entry.
+// Entries with a falseFriend object are *falsche Freunde*.  For those entries
+// `en` is the CORRECT translation of the German word (so every prompt mode
+// stays truthful); falseFriend.lookalike is the deceptive English word,
+// falseFriend.zh what it really means and falseFriend.word the German word that
+// does mean it.  `similarity` measures german vs lookalike, because the
+// resemblance is the whole point of the entry.
 '''
 
 
@@ -3092,11 +3093,9 @@ def main():
         for f in friends:
             by_word[f['german']] = f
         allc = sorted(by_word.values(), key=lambda c: (c.get('rank') or 10 ** 6, c['german']))
-        tail = ("\nGERMAN_COGNATE_DATA.falseFriends = "
-                "GERMAN_COGNATE_DATA.filter(function (w) { return w.falseFriend; });\n")
-        size = write_js(
-            os.path.join(DATA, 'german-cognates.js'),
-            COGNATE_HEADER, 'GERMAN_COGNATE_DATA', allc, 'cognates', extra_tail=tail)
+        _, size = canonical_cognates.emit(
+            'de', allc, builder='scripts/build_german_extras.py', header=COGNATE_HEADER,
+            path=os.path.join(DATA, 'german-cognates.js'))
         patterns = defaultdict(int)
         for c in allc:
             patterns[c['patternType']] += 1
