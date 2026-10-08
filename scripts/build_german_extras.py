@@ -2927,6 +2927,10 @@ def main():
         _, size = canonical_cognates.emit(
             'de', allc, builder='scripts/build_german_extras.py', header=COGNATE_HEADER,
             path=os.path.join(DATA, 'de-cognates.js'))
+        # Audited drops (English leaks, brand names, look-alikes) + zh re-sync:
+        # scripts/de_cognate_fixes.json
+        import de_cognate_fixes
+        de_cognate_fixes.apply_file()
         patterns = defaultdict(int)
         for c in allc:
             patterns[c['patternType']] += 1
