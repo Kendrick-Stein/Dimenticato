@@ -85,8 +85,8 @@ Optional parts (read generically by `conjugation-app.js` / `typing-game-app.js`)
 is idempotent.
 
 Hand-checked corrections live in `scripts/conjugation_fixes/<code>.json`, as
-`{verb, tense, person, from, to, why}`. `tense` is a tense key, or `x.<field>`
-for metadata. `person` is 0–5, or null for single-form tenses and metadata.
+`{verb, tense, person, from, to, why}`. `tense` is a tense key, `x.<field>`
+for metadata, or `zh` / `en` for the verb's own gloss. `person` is 0–5, or null for single-form tenses and metadata.
 `to: null` deletes a metadata field. They are applied on every
 canonicalisation, so a rebuild cannot bring an audited error back.
 - A cell already equal to `to` is skipped.

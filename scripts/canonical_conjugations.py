@@ -551,8 +551,8 @@ def apply_fixes(code, verbs):
     """Apply the audited corrections for `code`, idempotently.
 
     Each entry is {verb, tense, person, from, to, why?}.  `tense` is a tense key
-    (person = 0..5 for person tenses, null for single ones) or 'x.<field>' for
-    verb metadata.  A cell already equal to `to` is left alone, so the file can be
+    (person = 0..5 for person tenses, null for single ones), 'x.<field>' for
+    verb metadata, or 'zh' / 'en' for the verb's own gloss.  A cell already equal to `to` is left alone, so the file can be
     re-applied after a rebuild; a cell matching neither `from` nor `to` is reported
     (the upstream data changed — re-check that entry by hand)."""
     path = FIXES_DIR / f'{code}.json'
@@ -568,6 +568,8 @@ def apply_fixes(code, verbs):
         tense, person = fix['tense'], fix.get('person')
         if tense.startswith('x.'):
             box, key = verb.setdefault('x', {}), tense[2:]
+        elif tense in ('zh', 'en'):
+            box, key = verb, tense
         elif person is None:
             box, key = verb['tenses'], tense
         else:
