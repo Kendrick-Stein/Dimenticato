@@ -235,8 +235,10 @@
             <div class="typing-input-row">
               <span class="msr" aria-hidden="true">keyboard</span>
               <input type="text" id="typingGameInput" aria-label="输入单词" autocomplete="off" autocorrect="off"
-                autocapitalize="off" spellcheck="false" placeholder="打出上方高亮的单词…（可省略重音）">
+                autocapitalize="off" spellcheck="false" placeholder="打出上方高亮的单词…">
             </div>
+            <div class="accent-keys" id="typingGameKeys" aria-label="特殊字母"></div>
+            <p class="typing-feedback hidden" id="typingGameFeedback" role="status" aria-live="polite"></p>
             <p class="typing-tip">打完整单词自动击落 · 回车提前提交 · 漏到河底的单词会扣一条命</p>
           </div>
         </div>

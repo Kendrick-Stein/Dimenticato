@@ -381,14 +381,6 @@
     ];
   }
 
-  function insertAtCursor(input, text) {
-    var start = input.selectionStart == null ? input.value.length : input.selectionStart;
-    var end = input.selectionEnd == null ? input.value.length : input.selectionEnd;
-    input.value = input.value.slice(0, start) + text + input.value.slice(end);
-    input.selectionStart = input.selectionEnd = start + text.length;
-    input.focus();
-  }
-
   // ---------- 通用 ----------
 
   function nextQuestion() {
@@ -1250,10 +1242,6 @@
         stages: spellHintStages(session), hintEl: $('spellHint'), btn: $('spellHintBtn')
       });
     });
-    $('spellKeys').addEventListener('click', function (event) {
-      var key = event.target.closest('[data-char]');
-      if (key && !$('spellInput').disabled) insertAtCursor($('spellInput'), key.getAttribute('data-char'));
-    });
 
     // 浏览
     var onSearch = global.debounce(function () {
@@ -1476,10 +1464,9 @@
       Shell().onEnter(function (id) {
         renderScreen(id);
         if (id === 'spellScreen') {
-          var chars = (profile() && profile().accents) || [];
-          $('spellKeys').innerHTML = chars.map(function (c) {
-            return '<button type="button" class="key" data-char="' + escAttr(c) + '">' + esc(c) + '</button>';
-          }).join('');
+          // 特殊字母键盘：按键不抢焦点（手机上失焦会收起软键盘），见 Languages.mountAccentKeys
+          global.Languages.mountAccentKeys($('spellKeys'), $('spellInput'), lang());
+          $('spellInput').setAttribute('lang', global.Languages.code(lang()));
         }
       });
 

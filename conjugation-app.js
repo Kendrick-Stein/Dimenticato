@@ -213,10 +213,12 @@
     return out;
   }
 
-  function matchesAnswer(answers, personKey, value) {
-    const user = norm(value);
-    if (!user) return false;
-    return expandAcceptedAnswers(answers, personKey).some(ans => norm(ans) === user);
+  // 判分走共用的 Vocab.gradeTyped（lib/vocab.js）：'correct' | 'accent' | 'wrong'。
+  // 重音写错（parlo ≠ parlò）不算对，单独提示「字母对了，重音不对」；
+  // 德语 ä/ae、ö/oe、ü/ue、ß/ss 视为同一写法。
+  function gradeAnswer(answers, personKey, value) {
+    if (!norm(value)) return 'wrong';
+    return window.Vocab.gradeTyped(ctx.code, value, expandAcceptedAnswers(answers, personKey));
   }
 
   // 反馈里展示的“正确答案”：带主语的时态补上主语。
@@ -914,7 +916,8 @@ ${moodRows}
     const checkBtn = document.getElementById('conjCheckBtn');
     if (!input || input.disabled) return;
 
-    const isCorrect = matchesAnswer(state.current.answers, state.current.person, input.value);
+    const grade = gradeAnswer(state.current.answers, state.current.person, input.value);
+    const isCorrect = grade === 'correct';
 
     state.total += 1;
     if (isCorrect) state.correct += 1;
@@ -927,7 +930,7 @@ ${moodRows}
     const answerText = answerDisplayText(state.current.answers, state.current.person, state.current.tenseKey);
     showFeedback(
       isCorrect,
-      isCorrect ? '正确！' : `错误，正确答案：${answerText}`,
+      isCorrect ? '正确！' : grade === 'accent' ? `字母对了，重音不对：${answerText}` : `错误，正确答案：${answerText}`,
       state.mode === 'full' && isCorrect ? 700 : 0
     );
   }
@@ -951,7 +954,8 @@ ${moodRows}
       const answerEl = row?.querySelector('.conj-full-answer');
       if (!input || !row || !answerEl) return;
 
-      const correct = matchesAnswer(item.answers, item.person, input.value);
+      const grade = gradeAnswer(item.answers, item.person, input.value);
+      const correct = grade === 'correct';
 
       localTotal += 1;
       if (correct) localCorrect += 1;
@@ -960,9 +964,10 @@ ${moodRows}
       input.disabled = true;
       row.classList.remove('correct', 'incorrect');
       row.classList.add(correct ? 'correct' : 'incorrect');
+      const answerText = answerDisplayText(item.answers, item.person, state.current.tenseKey);
       answerEl.textContent = correct
         ? '正确'
-        : `正确答案：${answerDisplayText(item.answers, item.person, state.current.tenseKey)}`;
+        : grade === 'accent' ? `字母对了，重音不对：${answerText}` : `正确答案：${answerText}`;
       answerEl.classList.remove('hidden');
     });
 

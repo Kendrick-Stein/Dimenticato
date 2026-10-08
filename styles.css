@@ -1643,6 +1643,8 @@ h1.page {
   background: var(--card);
   transition: box-shadow var(--ease), border-color var(--ease);
 }
+#typingGameKeys { justify-content: center; margin-top: 0.6rem; }
+.typing-feedback { margin-top: 0.5rem; color: var(--gold); font-size: 0.86rem; text-align: center; }
 .typing-input-row:focus-within { outline: 2px solid var(--red); outline-offset: 1px; }
 .typing-input-row .msr { color: var(--muted); }
 #typingGameInput {
