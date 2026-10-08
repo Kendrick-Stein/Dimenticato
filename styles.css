@@ -1209,7 +1209,7 @@ p.small { margin-top: 0.6rem; }
 }
 
 /* Mobile nav: the text nav folds into a dropdown under the topbar. */
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   .nav-toggle { display: inline-flex; }
   .topbar-tools { margin-left: auto; }
   .topbar .brand-name { display: inline; }
@@ -1252,7 +1252,7 @@ p.small { margin-top: 0.6rem; }
   .method-steps { grid-template-columns: 1fr; gap: 1.4rem; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .wrap { padding-top: 1.4rem; }
   .topbar .brand-name { display: none; }
   .lang-switch button { min-width: 2.3rem; padding: 0 0.4rem; }
@@ -2104,9 +2104,18 @@ h1.page {
   overflow: hidden;
   border-right: 1px solid var(--line);
   background: var(--paper-soft);
-  transition: width 0.22s ease, min-width 0.22s ease;
+  visibility: visible;
+  transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0s;
 }
-.grammar-book-layout.sidebar-collapsed .grammar-nav-sidebar { width: 0; min-width: 0; border-right-width: 0; }
+/* Collapsed: also visibility:hidden (after the width animation) so the links
+   inside are out of the tab order and the accessibility tree. */
+.grammar-book-layout.sidebar-collapsed .grammar-nav-sidebar {
+  width: 0;
+  min-width: 0;
+  border-right-width: 0;
+  visibility: hidden;
+  transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0.22s;
+}
 
 .grammar-nav-header {
   display: flex;
@@ -2169,8 +2178,9 @@ h1.page {
 .grammar-chapter-btn.open .grammar-chapter-arrow { transform: rotate(90deg); }
 .grammar-chapter-label { flex: 1; }
 
-.grammar-topic-list { max-height: 2000px; overflow: hidden; transition: max-height 0.25s ease; }
-.grammar-topic-list.collapsed { max-height: 0; }
+/* No max-height animation: long chapters used to be clipped at 2000px.
+   display:none also keeps collapsed links out of the tab order. */
+.grammar-topic-list.collapsed { display: none; }
 .grammar-topic-link {
   display: block;
   width: 100%;
@@ -2677,9 +2687,20 @@ h1.page {
 #courseLevelSummary .about-note { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.02em; }
 
 #courseScreen .section-head-row .card-desc { display: block; }
-#courseUnitCards .card[role="button"] { cursor: pointer; }
+#courseUnitCards .course-unit-card { cursor: pointer; }
+#courseUnitCards .course-unit-open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+#courseUnitCards .course-unit-open:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
 @media (hover: hover) {
-  #courseUnitCards .card[role="button"]:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
+  #courseUnitCards .course-unit-card:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
 }
 #courseUnitCards .card .chips { margin-top: 0.2rem; }
 #courseUnitCards .card .chip { min-height: 1.8rem; padding: 0.1rem 0.55rem; font-size: 0.78rem; }
@@ -3073,12 +3094,16 @@ h1.page {
     min-width: 0;
     border-right-width: 0;
     box-shadow: var(--shadow-2);
+    visibility: hidden;
+    transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0.22s;
   }
   .grammar-book-layout.sidebar-open .grammar-nav-sidebar {
     width: 82vw;
     min-width: 16rem;
     max-width: 20rem;
     border-right-width: 1px;
+    visibility: visible;
+    transition: width 0.22s ease, min-width 0.22s ease, visibility 0s linear 0s;
   }
   .grammar-content-body { padding: 1.2rem 1rem 3rem; }
   .vc-search-panel { padding: 0.8rem 0.85rem 0.6rem; }
@@ -3124,7 +3149,7 @@ h1.page {
   #conjugationModeButtons { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .editor-toolbar,
   .editor-toolbar > div:first-child { flex-direction: column; align-items: stretch; }
   .editor-toolbar-btn { width: 100%; }
@@ -3136,6 +3161,5 @@ h1.page {
   .typing-overlay-card,
   .typing-input-row.typing-shake,
   #typingGameInput.typing-shake { animation: none; }
-  .grammar-nav-sidebar,
-  .grammar-topic-list { transition: none; }
+  .grammar-nav-sidebar { transition: none; }
 }

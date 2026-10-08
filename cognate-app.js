@@ -831,7 +831,7 @@
             '<option value="3">Hard（&lt;50%）</option>' +
           '</select>' +
           (hasFalseFriends
-            ? '<button class="chip' + (CognateState.browseFalseFriendsOnly ? ' active' : '') + '" id="cognateFalseFriendFilter">只看假朋友</button>'
+            ? '<button type="button" class="chip' + (CognateState.browseFalseFriendsOnly ? ' active' : '') + '" id="cognateFalseFriendFilter" aria-pressed="' + (CognateState.browseFalseFriendsOnly ? 'true' : 'false') + '">只看假朋友</button>'
             : '') +
           '<span class="card-desc">' + fmt(matched.length) + ' 条匹配，已显示 ' + fmt(shown.length) + ' 条</span>' +
         '</div>';

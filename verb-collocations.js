@@ -189,6 +189,11 @@ const VerbCollocations = (() => {
     });
 
     dom.sidebarToggle?.addEventListener('click', toggleSidebar);
+    if (narrowMql) {
+      if (typeof narrowMql.addEventListener === 'function') narrowMql.addEventListener('change', syncSidebarToggle);
+      else if (typeof narrowMql.addListener === 'function') narrowMql.addListener(syncSidebarToggle);
+    }
+    syncSidebarToggle();
 
     dom.searchInput?.addEventListener('input', () => {
       updateSearch(dom.searchInput.value.trim());
@@ -219,10 +224,31 @@ const VerbCollocations = (() => {
     }
   }
 
+  // 与 styles.css 的手机断点（max-width: 760px，抽屉式目录）保持一致
+  const NARROW_QUERY = '(max-width: 760px)';
+  const narrowMql = typeof window.matchMedia === 'function' ? window.matchMedia(NARROW_QUERY) : null;
+  function isNarrow() {
+    return narrowMql ? narrowMql.matches : window.innerWidth <= 760;
+  }
+
+  function getLayout() {
+    return document.querySelector('#verbCollocationsScreen .grammar-book-layout');
+  }
+
+  // 目录是否展开：手机上看 sidebar-open，桌面上看有没有 sidebar-collapsed
+  function syncSidebarToggle() {
+    const layout = getLayout();
+    if (!layout || !dom.sidebarToggle) return;
+    const expanded = isNarrow()
+      ? layout.classList.contains('sidebar-open')
+      : !layout.classList.contains('sidebar-collapsed');
+    dom.sidebarToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  }
+
   function closeMobileSidebar() {
-    if (window.innerWidth < 768) {
-      document.querySelector('#verbCollocationsScreen .grammar-book-layout')
-        ?.classList.remove('sidebar-open');
+    if (isNarrow()) {
+      getLayout()?.classList.remove('sidebar-open');
+      syncSidebarToggle();
     }
   }
 
@@ -615,13 +641,14 @@ const VerbCollocations = (() => {
   }
 
   function toggleSidebar() {
-    const layout = document.querySelector('#verbCollocationsScreen .grammar-book-layout');
+    const layout = getLayout();
     if (!layout) return;
-    if (window.innerWidth < 768) {
+    if (isNarrow()) {
       layout.classList.toggle('sidebar-open');
     } else {
       layout.classList.toggle('sidebar-collapsed');
     }
+    syncSidebarToggle();
   }
 
   return {

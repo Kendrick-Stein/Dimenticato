@@ -138,16 +138,8 @@
         const card = event.target.closest('[data-course-unit]');
         if (card) this.openUnit(card.dataset.courseUnit);
       });
-      // 单元卡片是 div[role=button]（里面嵌了真正的 <button> 语法标签，
-      // button 不能嵌套 button），键盘可达性要自己补上。
-      unitCards?.addEventListener('keydown', (event) => {
-        if (event.key !== 'Enter' && event.key !== ' ') return;
-        if (event.target.closest('[data-grammar-slug]')) return;
-        const card = event.target.closest('[data-course-unit]');
-        if (!card) return;
-        event.preventDefault();
-        this.openUnit(card.dataset.courseUnit);
-      });
+      // 卡片里还有语法标签按钮（button 不能嵌套 button），所以键盘/读屏的入口是
+      // 卡片标题这个真正的 <button>；鼠标点卡片任意空白处也照样打开（上面的 click）。
       $('courseLevelSummary')?.addEventListener('click', (event) => {
         if (event.target.closest('#coursePracticeLevelBtn')) this.openLevelPractice();
       });
@@ -315,9 +307,9 @@
         const words = this.getUnitWords(unit);
         const masteredCount = this.countMastered(words, mastered);
         return `
-          <div class="card" role="button" tabindex="0" data-course-unit="${escAttr(unit.id)}">
+          <div class="card course-unit-card" data-course-unit="${escAttr(unit.id)}">
             <span class="card-chip"><span class="msr" aria-hidden="true">school</span></span>
-            <span class="card-title">${esc(this.unitLabel(unit))} · ${esc(unit.title)}</span>
+            <button type="button" class="card-title course-unit-open">${esc(this.unitLabel(unit))} · ${esc(unit.title)}</button>
             <span class="card-desc">${esc(unit.summary || '')}</span>
             ${this.renderGrammarTags(unit)}
             <span class="card-desc">${words.length} 个核心词 · 已掌握 ${masteredCount}</span>

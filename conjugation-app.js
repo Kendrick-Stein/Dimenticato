@@ -477,7 +477,7 @@
 
   function buildTenseButton(meta) {
     return `
-      <button class="chip conj-tense-btn ${meta.key === state.selectedTense ? 'active' : ''}" data-tense="${escapeAttribute(meta.key)}" title="${escapeAttribute(`${tenseTitle(meta)}${meta.zh ? ` · ${meta.zh}` : ''}`)}">
+      <button type="button" class="chip conj-tense-btn ${meta.key === state.selectedTense ? 'active' : ''}" aria-pressed="${meta.key === state.selectedTense ? 'true' : 'false'}" data-tense="${escapeAttribute(meta.key)}" title="${escapeAttribute(`${tenseTitle(meta)}${meta.zh ? ` · ${meta.zh}` : ''}`)}">
         <span class="ct-name">${escapeHtml(meta.label)}</span>
         <span class="ct-group">${escapeHtml(meta.groupLabel || '时态')}</span>
       </button>
@@ -488,6 +488,7 @@
     const buttons = document.querySelectorAll('#conjTenseButtons .conj-tense-btn');
     buttons.forEach(btn => {
       btn.classList.toggle('active', btn.dataset.tense === state.selectedTense);
+      btn.setAttribute('aria-pressed', btn.dataset.tense === state.selectedTense ? 'true' : 'false');
     });
   }
 
