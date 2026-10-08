@@ -2950,6 +2950,10 @@ def main():
         course = load_js_dataset('de-course.js', 'GERMAN_COURSE_DATA')
         enriched, stats = build_course(course, german_vocab, pairs, available)
         size = emit_course(course, enriched, os.path.join(DATA, 'de-course.js'))
+        # audited grammar retargets, added topic links and level-fitting word
+        # swaps: scripts/de_course_fixes.json
+        import de_course_fixes
+        de_course_fixes.apply_file(verbose=False)
         stats['bytes'] = size
         report['course'] = stats
 
