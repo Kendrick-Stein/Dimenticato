@@ -1441,6 +1441,11 @@ def build_collocations(cache, lex, out_path):
     }
     from canonical_collocations import write_collocations
     _, _, canon = write_collocations("fr", data, COLLOC_HEADER, out_path)
+    # hand-checked corrections (scripts/collocation_fixes/fr.json): drops corpus
+    # hits that are not verb government (« trop fatigué pour », gérondif …)
+    import fr_collocation_fixes
+    fr_collocation_fixes.apply_file(fr_collocation_fixes.Path(out_path))
+    canon = fr_collocation_fixes.canonical_collocations.read_collocations("fr", fr_collocation_fixes.Path(out_path))
     log("collocations: %d verbs, %d examples (curated pairs %d, corpus pairs %d, rejected pairs %d, noun collocations %d)"
         % (canon["meta"]["count"], canon["meta"]["examples"], kept_curated, kept_corpus,
            rejected_pairs, noun_hits))
