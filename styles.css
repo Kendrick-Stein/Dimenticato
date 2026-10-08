@@ -1307,8 +1307,23 @@ h1.page {
   margin: 0.2rem 0 0.4rem;
   font-size: clamp(1.7rem, 3vw, 2.4rem);
 }
-.container > .back-link { margin-bottom: 1.2rem; }
+.container > .back-link { margin-bottom: 1.4rem; }
 .container > .desc { max-width: var(--narrow); margin-bottom: 1.6rem; }
+/* Module page header (back link · eyebrow · serif h1 · desc) closes with a
+   hairline rule, like the hub page bands. */
+.container > h1.page + .desc {
+  max-width: none;
+  margin-bottom: 2rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Static screens (browse / settings) use the same header rule. */
+.wrap > .section-head:first-child {
+  max-width: none;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--line);
+}
 
 /* `.wrap` is the page wrapper too; modules use it as a flex-wrap modifier
    on chip rows (`chips wrap`). Neutralise the wrapper geometry there. */
@@ -1419,6 +1434,7 @@ h1.page {
   max-height: 88vh;
   overflow: auto;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
   color: var(--ink);
@@ -1669,6 +1685,7 @@ h1.page {
   max-width: 24rem;
   padding: 1.6rem 1.8rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
   box-shadow: var(--shadow-2);
@@ -1709,11 +1726,12 @@ h1.page {
   margin-top: 1.4rem;
   padding: 1.3rem 1.3rem 1.4rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
   transition: border-color var(--ease);
 }
-.conj-setup-panel.conj-context-active { border-color: var(--line-ink); box-shadow: inset 0 3px 0 var(--red); }
+.conj-setup-panel.conj-context-active { border-color: var(--line-ink); border-top-color: var(--red); }
 .conj-setup-panel + .sub-label { margin-top: 2rem; }
 
 .conj-module-toolbar {
@@ -1974,7 +1992,7 @@ h1.page {
 .conj-full-item.incorrect .conj-full-answer { color: var(--red); }
 
 /* Collocation practice: setup card */
-.vcp-title { margin-top: 0.2rem; font-size: 1.5rem; }
+.vcp-title { margin-top: 0.2rem; font-size: clamp(1.5rem, 3vw, 1.9rem); }
 .vc-practice-config-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; margin-top: 1.2rem; }
 .vc-practice-config-block { display: flex; flex-direction: column; gap: 0.35rem; }
 .vc-practice-label {
@@ -2057,6 +2075,7 @@ h1.page {
   margin: 1.2rem auto 2rem;
   overflow: hidden;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
 }
@@ -2211,7 +2230,7 @@ h1.page {
   text-align: center;
 }
 .msr.grammar-welcome-icon { color: var(--line); font-size: 3rem; }
-.grammar-welcome h2 { color: var(--ink); font-size: 1.6rem; }
+.grammar-welcome h2 { color: var(--ink); font-size: clamp(1.6rem, 3vw, 2.1rem); }
 .grammar-welcome p { font-size: 0.92rem; }
 
 .grammar-loading { padding: 1rem 0; color: var(--muted); font-size: 0.88rem; }
@@ -2395,6 +2414,7 @@ h1.page {
 .vc-card {
   padding: 1.1rem 1.15rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
 }
@@ -2509,6 +2529,7 @@ h1.page {
 .quiz-card {
   padding: 1.4rem 1.5rem 1.6rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
 }
@@ -2624,6 +2645,7 @@ h1.page {
 /* ---------- 8.7 Course route (course.js) ---------- */
 
 #courseLevelChips { margin-bottom: 1rem; }
+#courseNotePanel { margin-top: 1rem; }
 #courseLevelChips .chip { min-width: 3.2rem; font-family: var(--mono); letter-spacing: 0.06em; }
 
 #courseLevelSummary {
@@ -2681,16 +2703,19 @@ h1.page {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  padding: 1.15rem 1.1rem 1.1rem;
+  padding: 1.3rem 1.15rem 1.15rem;
   border: 1px solid var(--line);
+  border-top: 3px solid var(--line-ink);
   border-radius: var(--radius);
   background: var(--card);
-  transition: border-color var(--ease), box-shadow 0.18s ease;
+  transition: border-color var(--ease), box-shadow 0.18s ease, transform 0.18s ease;
 }
-.community-wordbook-card:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); }
+@media (hover: hover) {
+  .community-wordbook-card:hover { border-color: var(--line-ink); box-shadow: var(--shadow-1); transform: translateY(-3px); }
+}
 
 .wordbook-card-header { display: flex; gap: 0.7rem; align-items: flex-start; justify-content: space-between; }
-.wordbook-card-title { font-size: 1.12rem; line-height: 1.25; }
+.wordbook-card-title { font-size: 1.3rem; line-height: 1.2; }
 .wordbook-difficulty-badge {
   flex: none;
   padding: 0.05rem 0.45rem;
@@ -2764,7 +2789,7 @@ h1.page {
 .tag-option input { width: 0.95rem; height: 0.95rem; accent-color: var(--ink); }
 .tag-option:has(input:checked) { border-color: var(--ink); background: var(--ink); color: var(--on-ink); }
 .tag-option:has(input:checked) input { accent-color: var(--on-ink); }
-#uploadFileName { color: var(--muted) !important; font-family: var(--mono); font-size: 0.8rem; }
+#uploadFileName { margin-left: 1rem; color: var(--muted); font-family: var(--mono); font-size: 0.8rem; }
 
 /* Preview modal */
 #previewWordbookMeta:empty { display: none; }
