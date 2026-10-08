@@ -76,50 +76,39 @@
     })));
   }
 
-  const PERSON_CN = {
-    italian: { io: '我', tu: '你', lui_lei: '他/她', noi: '我们', voi: '你们', loro: '他们' },
-    german: { ich: '我', du: '你', er_sie_es: '他/她/它', wir: '我们', ihr: '你们', sie: '他们/您' },
-    french: { je: '我', tu: '你', il_elle_on: '他/她/on', nous: '我们', vous: '您/你们', ils_elles: '他们/她们' },
-    // 英语变位数据的人称键是 i/you/he_she_it/we/you_pl/they（与意语键不同），
-    // 此前按意语键查表全部落空，题面会显示原始键名（"he_she_it"）。
-    english: { i: '我', you: '你', he_she_it: '他/她/它', we: '我们', you_pl: '你们', they: '他们' }
-  };
+  // 变位数据为 conjugations/1（docs/data-schema.md）：人称、时态标签都从数据头取，
+  // 不再按语言写死人称表。人称放题面副标题的最前面——时态标签较长，放前面的话
+  // 人称会被 clean() 的长度截断整个切掉，题面就无法区分人称。
+  function tenseLabel(t) {
+    return t.groupLabel && t.groupLabel !== t.label ? t.groupLabel + ' ' + t.label : (t.label || t.key);
+  }
 
   function conjEntries(lang) {
     const data = conjData(lang);
-    if (!data || !data.length) return [];
-    const persons = PERSON_CN[lang] || {};
+    if (!data || !Array.isArray(data.verbs) || !data.verbs.length) return [];
+    const persons = data.persons || [];
     const out = [];
-    const verbCap = Math.min(VERB_CAP, data.length);
+    const verbCap = Math.min(VERB_CAP, data.verbs.length);
     for (let vi = 0; vi < verbCap; vi++) {
-      const v = data[vi];
+      const v = data.verbs[vi];
       if (!v || !v.tenses) continue;
-      for (const tk of Object.keys(v.tenses)) {
-        const t = v.tenses[tk];
-        if (!t || !t.forms) continue;
-        const label = (t.group_label || '') + (t.tense_label ? ' ' + t.tense_label : '');
+      const prompt = String(v.word).slice(0, 18);
+      for (const t of data.tenses || []) {
+        const value = v.tenses[t.key];
+        if (value == null) continue;
+        const label = tenseLabel(t);
         if (t.type === 'person') {
-          for (const pk of Object.keys(t.forms)) {
-            const f = String(t.forms[pk] || '').trim();
-            if (!f || f.length > 40) continue;
-            // 人称放最前：变位标签（"Indicative Present simple"）较长，
-            // 放前面的话人称会被 clean() 的长度截断整个切掉，题面就无法区分人称。
-            out.push({
-              answer: f,
-              prompt: String(v.infinitive).slice(0, 18),
-              sub: (persons[pk] || pk) + ' · ' + label
-            });
-          }
-        } else if (t.type === 'single') {
-          const forms = Array.isArray(t.forms) ? t.forms : [];
+          if (!Array.isArray(value)) continue;
+          value.forEach((form, i) => {
+            const f = String(form || '').trim();
+            if (!f || f.length > 40 || !persons[i]) return;
+            out.push({ answer: f, prompt, sub: (persons[i].zh || persons[i].label) + ' · ' + label });
+          });
+        } else {
+          const forms = String(value).split('/').map((f) => f.trim()).filter(Boolean);
           forms.forEach((f, idx) => {
-            const s = String(f || '').trim();
-            if (!s || s.length > 40) return;
-            out.push({
-              answer: s,
-              prompt: String(v.infinitive).slice(0, 18),
-              sub: label + (forms.length > 1 ? ' · ' + (idx + 1) : '')
-            });
+            if (f.length > 40) return;
+            out.push({ answer: f, prompt, sub: label + (forms.length > 1 ? ' · ' + (idx + 1) : '') });
           });
         }
       }
@@ -192,12 +181,6 @@
   }
 
   // ==================== DOM 渲染 ====================
-
-  function esc(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-  }
 
   function fmt(n) { return Number(n || 0).toLocaleString('en-US'); }
 
