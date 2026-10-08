@@ -57,6 +57,29 @@ Every module file is a classic script ending with the existing footer
 - A single-type tense is a string.
 - `tenses[]` order is the display order. `group` lets the UI group tenses into moods.
 - Every verb has `zh`, including Italian (fill it from `data/vocab/it.js`).
+- Alternatives inside one slot are joined with `/` (`"stato/stata/stati/state"`,
+  `"hanged/hung"`); the UI shows them as `a / b` and accepts any of them.
+- `verbs[]` is sorted by `rank` (dense, 1…N). There is no `lessons` array: the
+  practice UI cuts lessons as fixed-size frequency chunks of `verbs[]`.
+
+Optional parts (read generically by `conjugation-app.js` / `typing-game-app.js`):
+
+| Field | Meaning |
+|---|---|
+| `meta.groups: [{key,label,zh}]` | Mood rows of the tense matrix, in order. Every `tense.group` is one of these keys. |
+| `meta.placeholders: {lookup,typing}` | Example text for the lookup box and the typing input. |
+| `meta.elision: {contract:{p1:"j'"}, vowel:"<regex source>", aspirate:[…], aspirateVerbs:[…]}` | Subject-pronoun elision (fr): `contract` replaces the pronoun before a form matching `vowel`, except for words in `aspirate` / verbs in `aspirateVerbs` (h aspiré). |
+| `persons[].pronouns: […]` | Pronouns accepted as a typed prefix (`il/elle/on`). |
+| `tense.time: "present"\|"past"\|"future"` | Column of the tense matrix; tenses without `time` are listed under 其他时态. |
+| `tense.omit: ["p1", …]` | Persons that do not exist in this tense (imperative); their slots are `null`. |
+| `tense.labels: {p3:"Lei", …}` | Per-tense person label overrides. |
+| `tense.subject: true` | Tables print the subject pronoun with the form (`je parle`, `j'ai`; fr). Forms themselves never contain the subject. |
+| `tense.level` | CEFR level of the tense. |
+| `x.zhSource: "pivot:<code>"\|"manual"` | `zh` is not from `data/vocab/<lang>.js` (it: EN pivot or hand gloss); recomputed on every canonicalisation. |
+
+`scripts/canonical_conjugations.py <code>` rewrites a data file into this shape
+(the builders write the old per-verb `forms` objects and call it at the end); it
+is idempotent.
 
 ## cognates/1
 

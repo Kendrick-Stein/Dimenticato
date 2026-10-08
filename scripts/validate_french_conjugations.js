@@ -6,7 +6,9 @@
  * Exits non-zero as soon as any assertion fails, printing every failure.
  *
  * It checks three separate things:
- *   1. the file loads as a browser <script> would and exposes the global;
+ *   1. the file loads as a browser <script> would and registers
+ *      DIM_DATA.conjugations.fr (conjugations/1, read back into the per-verb
+ *      legacy view by conjugations_node.js);
  *   2. the schema is complete and free of placeholder / artefact strings;
  *   3. a hand-verified gold set of 62 verbs (every named irregular plus one
  *      representative of every stem-alternation class) conjugates correctly,
@@ -14,13 +16,11 @@
  */
 'use strict';
 
-const fs = require('fs');
 const path = require('path');
-const vm = require('vm');
+const { loadConjugations, toLegacy } = require('./conjugations_node');
 
 const DATA_PATH = process.argv[2] ||
   path.join(__dirname, '..', 'data', 'french-conjugations.js');
-const GLOBAL_NAME = 'FRENCH_CONJUGATION_DATA';
 
 const PERSONS = ['je', 'tu', 'il_elle_on', 'nous', 'vous', 'ils_elles'];
 const IMPERATIVE_PERSONS = ['tu', 'nous', 'vous'];
@@ -72,21 +72,10 @@ function check(cond, msg) { checks++; if (!cond) fail(msg); }
 
 /* ---------------------------------------------------------------- load --- */
 
-const source = fs.readFileSync(DATA_PATH, 'utf8');
-const sandbox = { console };
-sandbox.window = sandbox;
-sandbox.module = { exports: {} };
-vm.createContext(sandbox);
-vm.runInContext(source, sandbox, { filename: DATA_PATH });
-
-const data = sandbox[GLOBAL_NAME];
-check(Array.isArray(data), `window.${GLOBAL_NAME} is not an array`);
-if (!Array.isArray(data)) {
-  console.error(errors.join('\n'));
-  process.exit(1);
-}
-check(sandbox.module.exports === data,
-  'module.exports does not expose the same array as the global');
+// conjugations/1 omits empty fields; the legacy view restores the four
+// participle agreement slots as '' so the agreement checks below stay strict.
+const data = toLegacy(loadConjugations('fr', DATA_PATH), PERSONS, { omitted: 'empty' })
+  .map((verb) => ({ ...verb, participle: { ms: '', fs: '', mp: '', fp: '', ...(verb.participle || {}) } }));
 check(data.length >= MIN_VERBS,
   `only ${data.length} verbs, expected at least ${MIN_VERBS}`);
 
@@ -133,9 +122,8 @@ check(auxFormsBy.avoir.size > 30 && auxFormsBy['être'].size > 30,
 for (const verb of data) {
   const id = verb && verb.infinitive ? verb.infinitive : JSON.stringify(verb);
 
-  for (const field of ['rank', 'infinitive', 'frequency', 'corpusRank',
-    'english', 'chinese', 'partOfSpeech', 'model', 'auxiliary', 'participle',
-    'source', 'tenses']) {
+  for (const field of ['rank', 'infinitive', 'freq', 'corpusRank',
+    'english', 'chinese', 'model', 'auxiliary', 'participle', 'tenses']) {
     check(Object.prototype.hasOwnProperty.call(verb, field),
       `${id}: missing required field "${field}"`);
   }
@@ -158,22 +146,19 @@ for (const verb of data) {
   check(!zhBad, `${id}: chinese gloss ${zhBad}`);
   check(CJK.test(verb.chinese), `${id}: chinese gloss has no CJK characters`);
 
-  check(verb.partOfSpeech === 'verbe' || verb.partOfSpeech === 'verbe pronominal',
-    `${id}: unexpected partOfSpeech "${verb.partOfSpeech}"`);
-  check(!!verb.reflexive === (verb.partOfSpeech === 'verbe pronominal'),
-    `${id}: reflexive flag and partOfSpeech disagree`);
+  check(verb.reflexive === undefined || verb.reflexive === true,
+    `${id}: reflexive must be true or absent`);
   check(verb.auxiliary === 'avoir' || verb.auxiliary === 'être',
     `${id}: unexpected auxiliary "${verb.auxiliary}"`);
   check(!verb.reflexive || verb.auxiliary === 'être',
     `${id}: pronominal verb must take être`);
 
-  check(typeof verb.frequency === 'number' && verb.frequency > 0,
-    `${id}: frequency must be a positive number, got ${verb.frequency}`);
+  check(verb.freq === null || (typeof verb.freq === 'number' && verb.freq > 0),
+    `${id}: freq must be null or a positive number, got ${verb.freq}`);
   check(Number.isInteger(verb.corpusRank) && verb.corpusRank >= 1,
     `${id}: corpusRank must be a positive integer, got ${verb.corpusRank}`);
   if (verb.corpusRank !== verb.rank) rankDiffersFromCorpusRank++;
 
-  check(!badString(verb.source), `${id}: missing source attribution`);
   check(!badString(verb.model), `${id}: missing model paradigm`);
 
   check(verb.participle && typeof verb.participle === 'object',
@@ -322,16 +307,12 @@ check(rankDiffersFromCorpusRank > 100,
 for (let i = 0; i < data.length; i++) {
   check(data[i].rank === i + 1,
     `rank ${data[i].rank} at index ${i}: ranks must be contiguous from 1`);
-  if (i > 0) {
-    check(data[i - 1].frequency >= data[i].frequency,
-      `${data[i].infinitive}: dataset is not sorted by descending frequency`);
-  }
 }
 
 // The -ger / -cer bug: the old generator produced "mangeions", "commençions".
 const NEVER = [/geions/, /geiez/, /çions/, /çiez/, /çies\b/, /\bNone\b/, /\bnull\b/,
   /\bundefined\b/];
-const flat = JSON.stringify(data);
+const flat = JSON.stringify(data.map(({ freq, ...rest }) => rest)); // freq: null is legitimate
 for (const re of NEVER) {
   check(!re.test(flat), `dataset contains a forbidden pattern ${re}`);
 }
@@ -826,7 +807,7 @@ for (const verb of data) {
 }
 
 console.log(`file          : ${DATA_PATH}`);
-console.log(`global        : window.${GLOBAL_NAME}`);
+console.log('global        : DIM_DATA.conjugations.fr');
 console.log(`verbs         : ${data.length}`);
 console.log(`conjugated forms (counting "/" alternatives): ${totalForms}`);
 console.log(`tense groups  : ${CANONICAL_TENSES.length} canonical, ` +

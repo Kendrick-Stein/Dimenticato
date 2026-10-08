@@ -1335,6 +1335,9 @@ def main() -> None:
         encoding="utf-8",
     )
     print(f"Wrote {len(selected)} entries to {OUT_PATH}")
+    # 落盘的是旧（逐动词 forms 对象）形状；统一转成 conjugations/1（docs/data-schema.md）
+    import canonical_conjugations
+    canonical_conjugations.canonicalize("de")
 
 
 if __name__ == "__main__":
