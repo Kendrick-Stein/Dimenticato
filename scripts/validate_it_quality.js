@@ -172,7 +172,7 @@ function hasVerb(word, text) {
 let exCount = 0, stemLacks = 0, noVerbZh = 0;
 Object.values(COLL.verbs).forEach(v => {
   if (v.zh) check(CJK.test(v.zh) && !/[A-Za-z]{3,}/.test(v.zh), `collocations ${v.word}: verb zh "${v.zh}"`);
-  else noVerbZh++;
+  else { noVerbZh++; check(false, `collocations ${v.word}: no verb-level zh (add it to it_fixes/collocations.json verbZh)`); }
   Object.entries(v.keys).forEach(([k, list]) => list.forEach(ex => {
     exCount++;
     check(!/\(\s*=/.test(ex.text), `collocations ${v.word}/${k}: inline note in "${ex.text}"`);

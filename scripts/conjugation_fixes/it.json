@@ -5349,5 +5349,405 @@
 "fp": "riapparse"
 },
 "why": "whole paradigm garbled (\"riapparparire\", \"riapparpaio\"); regenerated as ri- + apparire"
+},
+{
+"verb": "alludere",
+"tense": "zh",
+"person": null,
+"from": "说",
+"to": "暗指；影射",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "brindare",
+"tense": "zh",
+"person": null,
+"from": "祝酒词",
+"to": "干杯；举杯祝贺",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "brulicare",
+"tense": "zh",
+"person": null,
+"from": "要燃烧",
+"to": "（虫、人）密密麻麻；充满",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "cascare",
+"tense": "zh",
+"person": null,
+"from": "护理",
+"to": "跌倒；落入",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "cassare",
+"tense": "zh",
+"person": null,
+"from": "出纳员",
+"to": "删去；撤销",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "coincidere",
+"tense": "zh",
+"person": null,
+"from": "对齐",
+"to": "一致；巧合；重合",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "combaciare",
+"tense": "zh",
+"person": null,
+"from": "组合",
+"to": "吻合；契合",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "compiacere",
+"tense": "zh",
+"person": null,
+"from": "请",
+"to": "迎合；讨好",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "complottare",
+"tense": "zh",
+"person": null,
+"from": "绘图",
+"to": "密谋；策划阴谋",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "concedere",
+"tense": "zh",
+"person": null,
+"from": "赠款",
+"to": "给予；允许；准许",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "condire",
+"tense": "zh",
+"person": null,
+"from": "发货",
+"to": "调味；拌",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "condiscendere",
+"tense": "zh",
+"person": null,
+"from": "隐蔽",
+"to": "迁就；俯就；同意",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "contestare",
+"tense": "zh",
+"person": null,
+"from": "比赛",
+"to": "质疑；反对；（正式）指控",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "evocare",
+"tense": "zh",
+"person": null,
+"from": "传票",
+"to": "召唤（亡灵）；唤起",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "filare",
+"tense": "zh",
+"person": null,
+"from": "旋转",
+"to": "纺纱；（与某人）谈恋爱；飞驰",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "fondere",
+"tense": "zh",
+"person": null,
+"from": "引信",
+"to": "熔化；融合；合并",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "friggere",
+"tense": "zh",
+"person": null,
+"from": "煎饼",
+"to": "油炸；煎；（因急躁）坐立不安",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "illudere",
+"tense": "zh",
+"person": null,
+"from": "低调",
+"to": "使产生幻想；欺骗",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "imbottire",
+"tense": "zh",
+"person": null,
+"from": "添加",
+"to": "填塞；夹（馅）；灌输",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "imbrattare",
+"tense": "zh",
+"person": null,
+"from": "弹簧",
+"to": "弄脏；涂抹",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "imputare",
+"tense": "zh",
+"person": null,
+"from": "收费",
+"to": "归咎于；控告",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "incassare",
+"tense": "zh",
+"person": null,
+"from": "现金",
+"to": "收（款）；嵌入；忍受（打击）",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "incatenare",
+"tense": "zh",
+"person": null,
+"from": "链条",
+"to": "用链子拴住；束缚",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "poggiare",
+"tense": "zh",
+"person": null,
+"from": "休养",
+"to": "靠；放置；建立在",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "porgere",
+"tense": "zh",
+"person": null,
+"from": "征税",
+"to": "递给；伸出",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "precipitare",
+"tense": "zh",
+"person": null,
+"from": "倾斜",
+"to": "坠落；扔下；（局势）急剧恶化",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "precisare",
+"tense": "zh",
+"person": null,
+"from": "指定",
+"to": "明确；详细说明",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "prenotare",
+"tense": "zh",
+"person": null,
+"from": "书",
+"to": "预订；预约",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "presenziare",
+"tense": "zh",
+"person": null,
+"from": "显示",
+"to": "出席；在场",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "prosciogliere",
+"tense": "zh",
+"person": null,
+"from": "亲子主义",
+"to": "解除；宣告无罪",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "quadrare",
+"tense": "zh",
+"person": null,
+"from": "平方圆",
+"to": "相符；吻合；令人满意",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "rammentare",
+"tense": "zh",
+"person": null,
+"from": "承认",
+"to": "提醒；记得",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "raschiare",
+"tense": "zh",
+"person": null,
+"from": "丢弃",
+"to": "刮；刮掉",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "recapitare",
+"tense": "zh",
+"person": null,
+"from": "联系人",
+"to": "投递；送交",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "ribattere",
+"tense": "zh",
+"person": null,
+"from": "战斗",
+"to": "反驳；回击",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sintonizzare",
+"tense": "zh",
+"person": null,
+"from": "曲调",
+"to": "调谐（频道）；使协调",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sospettare",
+"tense": "zh",
+"person": null,
+"from": "犯罪嫌疑人",
+"to": "怀疑",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sradicare",
+"tense": "zh",
+"person": null,
+"from": "删除",
+"to": "连根拔起；根除；使离乡",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "stendere",
+"tense": "zh",
+"person": null,
+"from": "躺下来",
+"to": "铺开；伸展；晾晒",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sottostare",
+"tense": "zh",
+"person": null,
+"from": "补贴",
+"to": "服从；遵守；位于…之下",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "sviare",
+"tense": "zh",
+"person": null,
+"from": "斯维亚尔",
+"to": "使偏离；转移；使误入歧途",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "traboccare",
+"tense": "zh",
+"person": null,
+"from": "偷车",
+"to": "溢出；充满",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "trarre",
+"tense": "zh",
+"person": null,
+"from": "绘图",
+"to": "引出；取得；改编",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "tralasciare",
+"tense": "zh",
+"person": null,
+"from": "更别说了",
+"to": "忽略；中断；遗漏",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "ungere",
+"tense": "zh",
+"person": null,
+"from": "(单位:千美元)",
+"to": "涂油；抹油",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "usufruire",
+"tense": "zh",
+"person": null,
+"from": "设施",
+"to": "享受；享用",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "condizionare",
+"tense": "zh",
+"person": null,
+"from": "条件",
+"to": "使受制约；以…为条件；调节（空气）",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "pesare",
+"tense": "zh",
+"person": null,
+"from": "重量",
+"to": "称重；有…重；压在…上",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "colorare",
+"tense": "zh",
+"person": null,
+"from": "颜色",
+"to": "给…上色；染色",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
+},
+{
+"verb": "trafficare",
+"tense": "zh",
+"person": null,
+"from": "运输",
+"to": "做买卖；贩卖；忙碌",
+"why": "same wrong gloss as data/vocab/it.js (scripts/it_fixes/vocab.json)"
 }
 ]
