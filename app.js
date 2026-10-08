@@ -1503,12 +1503,6 @@
     }
   };
 
-  // ReviewSession：stats-charts 等旧调用方用它取「当前语言的词表」
-  global.ReviewSession = {
-    wordsFor: function (l) { return global.Vocab.entries(l || lang()); },
-    onAnswered: function () { /* 复习计数在 SpacedRepetition 里，界面在切屏时刷新 */ }
-  };
-
   global.App = App;
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', App.init);
