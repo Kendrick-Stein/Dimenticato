@@ -61,7 +61,7 @@ thank you
 grazie mille = 非常感谢
 ```
 
-详细说明请查看 [TXT_FORMAT_GUIDE.md](TXT_FORMAT_GUIDE.md)
+详细说明请查看 [docs/TXT_FORMAT_GUIDE.md](docs/TXT_FORMAT_GUIDE.md)
 
 ---
 

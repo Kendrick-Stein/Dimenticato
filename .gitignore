@@ -71,10 +71,9 @@ worktrees/
 # - app.js
 # - data/vocab/*.js
 # - README.md
-# - TXT_FORMAT_GUIDE.md
+# - docs/TXT_FORMAT_GUIDE.md
 # - custom_wordbook_template.json
 # - custom_wordbook_template.txt
-# - goal.txt
 
 # 版权词典原件（保留在本地，不进公开仓库）
 deutsch-data/grammar/docs/学习资源/assets/*.zip

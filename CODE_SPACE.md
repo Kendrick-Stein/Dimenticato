@@ -415,7 +415,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 - `Wordbooks`：`all` / `reload` / `list(lang)` / `get(id)` / `add` / `create` / `remove`（连带删进度 key）/ `touch` / `progressKey(wb)` / `entries(wb)`（→ v1 词条）/ `parseTxt(text, lang)` / `importFile(file, lang)` / `exportJson` / `exportTxt`
 - `WordbookEditor`：编辑器 modal、单词编辑、批量删除 / 批量导入、导出对话框、浏览页「加入单词本」（`addEntryToWordbook` + `#wordbookSelectDialog`）
 - `WordbookManager`：只剩 `parseTxtWordbook` 兼容别名
-- TXT 格式：空行分块，块内 `word / meaning / 中文? / notes?`；单行块从系统词库查释义（详见 `TXT_FORMAT_GUIDE.md`、`custom_wordbook_template.*`）
+- TXT 格式：空行分块，块内 `word / meaning / 中文? / notes?`；单行块从系统词库查释义（详见 `docs/TXT_FORMAT_GUIDE.md`、`custom_wordbook_template.*`）
 
 ### 6.10 其余 `lib/`
 
@@ -445,7 +445,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 - `course.js`：`Course.open(lang)`；course/1 数据（`LangLoader.data(code, 'course')`，open 时 `ensureModule` 补拉），渲染进静态 `#courseScreen`，无语言分支（目前只有德语配了 `files.course`：54 单元 A1–C1）；`unit.words` 直接按 `word` 查词库，`unit.grammar[].slug` 经 `GrammarBook.resolveSlug` 跳语法书；练习调用 `App.practiceEntries`；等级存 `dimenticato_course_level_<code>`（德语旧 key `dimenticato_german_course_level` 自动迁移）
 - `community-wordbooks.js`：`CommunityWordbooks.showBrowseScreen()` / `showUploadDialog()`；上传到 Supabase Storage + `community_wordbooks` 表（含 `language` 字段，老库无此列时降级为客户端过滤）；浏览支持按语言 / 难度筛选、搜索、排序；下载后 `Wordbooks.add`；解析复用 `Wordbooks.parseTxt` / `normalizeBook`
 - `stats-charts.js`：没有弹窗，图表直接嵌在进度页：`StatsCharts.sectionsHtml(lang)` 产出「趋势图表」「学习记录」两节，`StatsCharts.mount(lang)` 在写入后 `CdnFallback.load('chart')` 再绘图（`ChartsManager`）；7 天趋势、每日单词量、掌握度分布，颜色读设计 token；数据来自 `StatsManager`、`ReviewSession.wordsFor(lang)` + `SpacedRepetition.getWordStatus`
-- `supabase-config.js`：URL / anon key、`STORAGE_CONFIG`、标签与难度映射；SQL 见 `supabase-setup.sql`、`supabase-storage-fix.sql`、`SUPABASE_TROUBLESHOOTING.md`
+- `supabase-config.js`：URL / anon key、`STORAGE_CONFIG`、标签与难度映射；SQL 见 `supabase-setup.sql`、`supabase-storage-fix.sql`、`docs/SUPABASE_TROUBLESHOOTING.md`
 
 ### 6.15 `tests/` — 无头测试
 
@@ -501,8 +501,8 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 - **英语**：` english-data/english word/`（⚠️ 目录名前有空格；EnWords.csv + `ecdict-slice.csv`）；`data/vocab/src/en-lexicon.tsv`；`scripts/english_grammar_src/*.md`（原创语法源）、`scripts/english_collocations_source/*.txt`
 - **法语 / 德语搭配源**：`scripts/sources/french-collocations/`、`scripts/sources/german-rektion/`
 - **法语词库教材层**：`data/vocab/src/fr-curriculum.js`、`fr-glossary.js`
-- `data/it50k-verb-lemmas.json`、`data/Kendrick-vocab.txt` 为辅助输入
-- 单词本模板：`custom_wordbook_template.json`、`custom_wordbook_template.txt`、`TXT_FORMAT_GUIDE.md`
+- `data/it50k-verb-lemmas.json` 为辅助输入
+- 单词本模板：`custom_wordbook_template.json`、`custom_wordbook_template.txt`、`docs/TXT_FORMAT_GUIDE.md`
 
 ---
 
@@ -599,7 +599,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 ### 9.6 个人单词本 / 社区词书
 
 - `lib/wordbooks.js`、`app.js`（词汇页 `[data-wb]` 处理）、`index.html`（三个 wordbook modal）
-- 社区：`community-wordbooks.js`、`supabase-config.js`、`supabase-*.sql`、`SUPABASE_TROUBLESHOOTING.md`
+- 社区：`community-wordbooks.js`、`supabase-config.js`、`supabase-*.sql`、`docs/SUPABASE_TROUBLESHOOTING.md`
 
 ### 9.7 动词变位
 
