@@ -183,14 +183,19 @@ def main():
     data = vs.read_vocab('it')
     entries = data['entries']
     fixed_en, fixed_zh = clean_entries(entries)
-    label = f'it.js: {len(entries)} 条，en 修 {fixed_en} 条，zh 修 {fixed_zh} 条'
+    # 人工审校过的释义 / 词性 / 大小写修正（scripts/it_fixes/vocab.json，幂等）
+    import italian_fixes
+    reviewed = italian_fixes.apply_vocab(entries, data['meta'])
+    label = (f'it.js: {len(entries)} 条，en 修 {fixed_en} 条，zh 修 {fixed_zh} 条，'
+             f'人工修正 {reviewed} 条')
     if dry_run:
         print(f'DRY-RUN {label}')
         return
-    if not (fixed_en or fixed_zh):
+    if not (fixed_en or fixed_zh or reviewed):
         print(f'OK {label}（无改动，未写入）')
         return
     meta = data['meta']
+    entries = [vs.clean_entry(e) for e in entries]
     vs.write_vocab('it', entries, sources=meta['sources'], licences=meta['licences'],
                    builder=BUILDER, notes=meta.get('notes', ''))
     print(f'OK {label}')
