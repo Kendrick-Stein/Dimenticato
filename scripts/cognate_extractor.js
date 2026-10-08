@@ -2,7 +2,7 @@
  * Cognate Extractor Script
  * 从 data/vocab/it.js（schema v1）提取与英语相似的 cognate 单词
  *
- * 运行: node scripts/cognate_extractor.js [输出路径]
+ * 运行: node scripts/cognate_extractor.js <输出路径>   （写回 data/it-cognates.js 需要 --force）
  * 输出: data/it-cognates.js（默认），schema cognates/1，经 scripts/canonical_cognates.py 写出
  *
  * 注意：data/it-cognates.js 生成后经过多轮人工校订（见其文件头），重跑会覆盖这些校订；
@@ -195,7 +195,13 @@ const header = `// Italian <-> English cognates for Dimenticato — schema cogna
 // Extracted from data/vocab/it.js by scripts/cognate_extractor.js on ${new Date().toISOString().split('T')[0]}.
 // Entry: {word, pos, gender, rank, en, zh, pattern, similarity (0…1), difficulty (1/2/3)}`;
 
-const outputPath = process.argv[2] ? path.resolve(process.argv[2]) : path.join(rootDir, 'data', 'it-cognates.js');
+const defaultOutput = path.join(rootDir, 'data', 'it-cognates.js');
+const outputPath = process.argv[2] ? path.resolve(process.argv[2]) : defaultOutput;
+// data/it-cognates.js 是人工校订后的产物（scripts/it_fixes/cognates.json 等），重跑会覆盖校订
+if (outputPath === defaultOutput && !process.argv.includes('--force')) {
+  console.error('refusing to overwrite data/it-cognates.js (hand-revised). Pass an output path, or --force.');
+  process.exit(1);
+}
 const job = JSON.stringify({
   rows: cognates,
   builder: 'scripts/cognate_extractor.js',

@@ -9,22 +9,12 @@ rewriting every pipeline, each builder hands its final list to the matching
 scripts/vocab_schema.py.  All language-specific knowledge about the *old*
 fields lives in this file and nowhere else.
 
-Run directly, it performs the one-off migration of the pre-v1 files.  Those
-files are gone from the tree (the builders emit data/vocab/<lang>.js
-directly); to rerun, check them out from before the switch (fd0ba62):
-
-    python3 scripts/vocab_legacy.py migrate --it vocabulary.js \
-        --de data/german-vocabulary.js --en data/english-vocabulary.js \
-        --fr data/french-vocabulary.js data/french-vocabulary-glossary.js \
-             data/french-vocabulary-core.js
-
-(The French curriculum and glossary now live in data/vocab/src/ as
-fr-curriculum.js and fr-glossary.js; the core layer is an uncommitted
-intermediate of build_french_vocabulary.py.)
+The one-off migration of the pre-v1 files (``migrate`` subcommand) ran at
+fd0ba62 and was removed: re-running it would overwrite data/vocab/<lang>.js and
+drop every fix applied since.  Check out fd0ba62 if it is ever needed again.
 """
 from __future__ import annotations
 
-import argparse
 import json
 import re
 import subprocess
@@ -508,26 +498,5 @@ def emit(lang: str, entries: list, builder: str) -> Path:
     return vs.write_vocab(lang, final, sources=sources, licences=LICENCES[lang], builder=builder)
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    sub = ap.add_subparsers(dest='cmd', required=True)
-    mig = sub.add_parser('migrate')
-    mig.add_argument('--it', type=Path)
-    mig.add_argument('--de', type=Path)
-    mig.add_argument('--en', type=Path)
-    mig.add_argument('--fr', type=Path, nargs=3, metavar=('CURRICULUM', 'GLOSSARY', 'CORE'))
-    args = ap.parse_args()
-    builder = 'scripts/vocab_legacy.py migrate'
-    if args.it:
-        print(emit('it', from_it(read_legacy_array(args.it)), builder))
-    if args.de:
-        print(emit('de', from_de(read_legacy_array(args.de)), builder))
-    if args.en:
-        print(emit('en', from_en(read_legacy_array(args.en)), builder))
-    if args.fr:
-        cur, glo, core = (read_legacy_array(p) for p in args.fr)
-        print(emit('fr', from_fr([(cur, 'textbook'), (glo, 'textbook'), (core, 'freq-band')]), builder))
-
-
 if __name__ == '__main__':
-    main()
+    raise SystemExit('vocab_legacy.py is a library (from_<lang> adapters); the migrate command was removed, see the module docstring.')
