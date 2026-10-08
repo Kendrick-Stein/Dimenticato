@@ -2,8 +2,14 @@
    Warm paper, ink green, dark red, gold.  One palette for every language;
    dark mode swaps the surfaces for an ink-coloured desk.
 
+   Editorial layout after the CILS Exam Factory site: full-bleed section
+   bands alternating paper / paper-soft, kicker + serif heading + sub line,
+   cards with a 3px ink top rule, mono numbers, reveal-on-scroll
+   (lib/editorial.js adds html.js, .reveal.in, [data-count], .topbar.scrolled).
+
    Sections: 1 tokens · 2 base · 3 shell · 4 primitives · 5 home · 6 practice
-             · 7 browse / progress / settings · 8 modules · 9 modals · 10 responsive */
+             · 7 hubs / browse / progress / settings · 9 loading / toast
+             · 10 responsive · 8 modules (end of file, own responsive block) */
 
 /* ---------- 1. Tokens ---------- */
 
@@ -26,6 +32,8 @@
   --on-ink: #f6f2e8;
   --topbar-bg: rgba(246, 242, 232, 0.92);
   --scrim: rgba(30, 51, 42, 0.32);
+  --hero-wash: rgba(233, 223, 201, 0.45);
+  --stamp-bg: rgba(251, 248, 241, 0.85);
 
   --serif: "Fraunces", "Noto Serif SC", Georgia, "Times New Roman", serif;
   --sans: "IBM Plex Sans", "Noto Sans SC", -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -37,6 +45,7 @@
   --wrap: 74rem;
   --narrow: 46rem;
   --control: 2.75rem;
+  --gutter: 2.5rem;
   --ease: 0.16s ease;
 }
 
@@ -59,6 +68,8 @@
   --on-ink: #14201a;
   --topbar-bg: rgba(20, 32, 26, 0.9);
   --scrim: rgba(0, 0, 0, 0.55);
+  --hero-wash: rgba(34, 52, 43, 0.6);
+  --stamp-bg: rgba(28, 43, 36, 0.88);
   --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.25), 0 10px 26px rgba(0, 0, 0, 0.28);
   --shadow-2: 0 2px 4px rgba(0, 0, 0, 0.3), 0 16px 36px rgba(0, 0, 0, 0.35);
   color-scheme: dark;
@@ -325,9 +336,9 @@ main#main { min-height: 60vh; }
   text-transform: uppercase;
 }
 
-.section-head { max-width: var(--narrow); margin-bottom: 1.6rem; }
-.section-head h2, .page-title { font-size: clamp(1.6rem, 3vw, 2.3rem); }
-.section-head p, .desc, .subtitle { margin-top: 0.55rem; color: var(--ink-soft); }
+.section-head { max-width: var(--narrow); margin-bottom: 2rem; }
+.section-head h2, .page-title { font-size: clamp(1.7rem, 3vw, 2.4rem); }
+.section-head p, .section-sub, .desc, .subtitle { margin-top: 0.7rem; color: var(--ink-soft); }
 .section-head-row {
   display: flex;
   flex-wrap: wrap;
@@ -336,9 +347,23 @@ main#main { min-height: 60vh; }
   justify-content: space-between;
   margin-bottom: 1.4rem;
 }
-.section { margin-top: 3rem; }
-.section:first-child { margin-top: 0; }
-.section-rule { border-top: 1px solid var(--line); padding-top: 2.2rem; }
+.section-head-row .section-head { margin-bottom: 0; }
+
+/* Section bands.  A view that owns the full width (home, hubs, progress)
+   stacks .section bands; .section-inner re-applies the page width so
+   .section-alt can paint paper-soft edge to edge.  A .section nested in a
+   .wrap simply gets the vertical rhythm. */
+.section { padding: 3.6rem 0 3.4rem; }
+.section-inner { width: min(100% - var(--gutter), var(--wrap)); margin: 0 auto; }
+.section-alt {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-soft);
+}
+.section-alt + .section { border-top: 0; }
+.wrap > .section { padding: 2.6rem 0 0; }
+.view-bands { padding-bottom: 2rem; }
+.view-bands > .section:last-child:not(.section-alt) { padding-bottom: 4rem; }
 
 .btn,
 .primary-btn,
@@ -369,6 +394,7 @@ main#main { min-height: 60vh; }
   color: var(--on-ink);
 }
 
+.btn-ghost { background: transparent; color: var(--ink); }
 .pill-btn, .btn-small { min-height: 2.35rem; padding: 0.35rem 0.9rem; font-size: 0.88rem; }
 .back-btn, .back-link { min-height: 2.35rem; padding: 0.35rem 0.8rem; border-color: var(--line); font-size: 0.88rem; font-weight: 500; }
 .danger-btn { border-color: var(--red); color: var(--red); }
@@ -376,6 +402,7 @@ main#main { min-height: 60vh; }
 
 @media (hover: hover) {
   .btn:hover, .secondary-btn:hover, .pill-btn:hover, .back-btn:hover, .back-link:hover { background: var(--paper-deep); }
+  .btn-ghost:hover { transform: translateY(-1px); }
   .primary-btn:hover:not(:disabled), .btn-primary:hover:not(:disabled) {
     background: var(--line-ink);
     border-color: var(--line-ink);
@@ -1032,14 +1059,26 @@ p.small { margin-top: 0.6rem; }
   .practice-actions .btn, .practice-actions .primary-btn { flex: 1 1 auto; }
 }
 
+/* Reveal on scroll (lib/editorial.js).  Only hidden when JS is running and
+   motion is allowed, so the page never depends on the observer firing. */
+html.js .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.55s ease, transform 0.55s ease; }
+html.js .reveal.in { opacity: 1; transform: none; }
+html.js .reveal-group > .reveal:nth-child(2) { transition-delay: 0.06s; }
+html.js .reveal-group > .reveal:nth-child(3) { transition-delay: 0.12s; }
+html.js .reveal-group > .reveal:nth-child(4) { transition-delay: 0.18s; }
+html.js .reveal-group > .reveal:nth-child(5) { transition-delay: 0.24s; }
+html.js .reveal-group > .reveal:nth-child(n+6) { transition-delay: 0.3s; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  html.js .reveal { opacity: 1; transform: none; transition: none; }
 }
+
 /* Dimenticato — paper design system, section 8: Modules.
-   Feature-module screens and modals kept verbatim from the old app
-   (typing game, conjugation, verb collocations, grammar book, cognates,
-   German course, community wordbooks, wordbook editor, stats, help).
-   Depends on the tokens / primitives in styles.new.css (sections 1–4).
+   Feature-module screens and modals (typing game, conjugation, verb
+   collocations, grammar book, cognates, course, community wordbooks,
+   wordbook editor, stats, help) on top of the tokens / primitives in
+   sections 1–4 above.
 
    8.0  module page wrapper + shared answer primitives (options / feedback)
    8.1  modal shell
@@ -1064,16 +1103,10 @@ p.small { margin-top: 0.6rem; }
 }
 .container.narrow { width: min(100% - 2.5rem, var(--narrow)); }
 
-/* `.page` is also the page-wrapper class in styles.new.css — reset the
-   wrapper geometry when it is used as the module title. */
+/* Module page title — same scale as .page-title in the hubs. */
 h1.page {
-  width: auto;
   margin: 0.2rem 0 0.4rem;
-  padding: 0;
-  font-family: var(--serif);
-  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
-  font-weight: 600;
-  line-height: 1.12;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
 }
 .container > .back-link { margin-bottom: 1.2rem; }
 .container > .desc { max-width: var(--narrow); margin-bottom: 1.6rem; }
@@ -2213,7 +2246,7 @@ h1.page {
 .vc-search-choice-name { font-family: var(--serif); font-size: 1.08rem; font-weight: 600; }
 .vc-search-choice-meta { color: var(--muted); font-family: var(--mono); font-size: 0.74rem; }
 
-/* `.vc-empty-state` base look comes from styles.new.css (.empty family) */
+/* `.vc-empty-state` base look comes from the .empty family in section 4 */
 .vc-empty-state {
   display: flex;
   flex-direction: column;
