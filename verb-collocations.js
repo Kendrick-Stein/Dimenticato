@@ -509,6 +509,7 @@ const VerbCollocations = (() => {
     const keys = keysOf(verb);
     const totalExamples = keys.reduce((sum, key) => sum + examples(verb, key).length, 0);
     const display = displayOf(verb, word);
+    const gloss = verbGloss(verb, word);
 
     if (dom.breadcrumb) {
       dom.breadcrumb.textContent = `${profile(state.lang).cn} · ${display} · ${keys.length} 组介词搭配`;
@@ -525,11 +526,19 @@ const VerbCollocations = (() => {
       '<div class="vc-panel-intro">' +
         '<span class="vc-kicker">动词搜索</span>' +
         '<h2>' + escapeHtml(display) + '</h2>' +
+        (gloss ? '<p class="vc-verb-gloss">' + escapeHtml(gloss) + '</p>' : '') +
         '<p>共找到 ' + keys.length + ' 组介词搭配，' + totalExamples + ' 条搭配与例句。</p>' +
       '</div>' +
       '<div class="vc-card-grid vc-card-grid-search">' + cardsHtml + '</div>';
 
     dom.body.scrollTop = 0;
+  }
+
+  /** 动词释义：搭配数据自带的 zh，没有就取词库里同一词头的释义。 */
+  function verbGloss(verb, word) {
+    if (verb && verb.zh) return verb.zh;
+    const entry = window.Vocab && window.Vocab.find ? window.Vocab.find(state.lang, word) : null;
+    return (entry && entry.zh) || '';
   }
 
   function renderSearchChooser(query, matches) {

@@ -2410,6 +2410,7 @@ h1.page {
 }
 .vc-panel-intro h2 { margin-bottom: 0.4rem; font-size: clamp(1.5rem, 2.6vw, 1.9rem); }
 .vc-panel-intro p { color: var(--ink-soft); font-size: 0.95rem; }
+.vc-panel-intro p.vc-verb-gloss { color: var(--ink); font-size: 1.05rem; margin-bottom: 0.3rem; }
 
 .vc-card-grid,
 .vc-search-choice-grid {
