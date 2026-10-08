@@ -33,7 +33,7 @@ the lists do not mention yet, so earlier (hand-checked) decisions are stable
 and a regen on an already fixed file changes nothing.
 
 Progress: entries are keyed by ``word``.  A lemma that absorbs forms gets
-``legacyWord`` = its most frequent merged form (when it has none), so progress
+``legacyWord`` = every merged form (a list when more than one), so progress
 saved under that form resolves to the lemma.  The full form -> lemma map is in
 merged-forms.json for a resolver that can take more than one legacy spelling.
 """
@@ -270,8 +270,12 @@ def apply(entries: list) -> tuple[list, dict]:
     for lemma, forms in absorbed.items():
         e = by[lemma]
         e['freq'] = _sig3((e['freq'] or 0) + sum(f for f, _ in forms)) or None
-        if not e.get('legacyWord'):
-            e['legacyWord'] = max(forms)[1]
+        # every absorbed form, so progress keyed by any of them still resolves
+        old = e.get('legacyWord') or []
+        old = [old] if isinstance(old, str) else list(old)
+        new = [f for _, f in sorted(forms, key=lambda t: (-t[0], t[1]))]
+        words = list(dict.fromkeys(old + new))
+        e['legacyWord'] = words[0] if len(words) == 1 else words
 
     # 3. proper nouns and abbreviations: allowlist only.
     keep, retag = proper.get('keep', {}), proper.get('retag', {})

@@ -115,8 +115,15 @@ def clean_entry(entry: dict) -> dict:
             continue
         if key == 'gender':
             value = canonical_gender(value)
-        if key == 'legacyWord' and value == entry.get('word'):
-            continue
+        if key == 'legacyWord':
+            if isinstance(value, list):
+                value = [v for v in dict.fromkeys(value) if v and v != entry.get('word')]
+                if not value:
+                    continue
+                if len(value) == 1:
+                    value = value[0]
+            elif value == entry.get('word'):
+                continue
         out[key] = value
     return out
 
