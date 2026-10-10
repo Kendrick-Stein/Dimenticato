@@ -324,26 +324,32 @@ P2 = '第二部分 句法（syntaxe）'
 
 CH1 = '第一章 语音与拼写（prononciation et orthographe）'
 
-T(P1, CH1, 'p1/ch01/t01-lettres-et-sons', '1．字母、音素与基本读音规则', 'A1', """
-# 1．字母、音素与基本读音规则
+T(P1, CH1, 'p1/ch01/t01-lettres-et-sons', '1．发音入门：字母、音素与基本读音规则', 'A1', """
+# 1．发音入门：字母、音素与基本读音规则
 
-法语用 26 个拉丁字母，但**拼写与读音不是一一对应**的：同一个音可以有好几种写法（o、au、eau 都读 /o/），同一个字母组合在不同位置也可能读法不同。因此学习法语单词时，必须把**拼写、读音、词性**三样一起记，不能只记汉语意思。
+法语用 26 个拉丁字母，但**拼写与读音不是一一对应**的：同一个音可以有好几种写法（/o/ 可写成 o、au、eau，但 o 也可读 /ɔ/），同一个字母组合在不同位置也可能读法不同。因此学习法语单词时，必须把**拼写、读音、词性**三样一起记，不能只记汉语意思。
+
+## 字母名、音标与入门顺序
+
+L 的字母名 /ɛl/ 用来拼写，在 livre 中只贡献 /l/；R 的名称 /ɛʁ/ 也不是每个 r 都读一个完整音节。IPA 的 / / 标声音，字母是拼写符号；两者不要混用。先学 u /y/ 与 ou /u/、é /e/ 与 è /ɛ/，再学鼻元音、常见组合、词尾，最后学下一课的省音和联诵。拼音近似只可作提示，不可当作准确发音。
+
+每天选三个词：预测读音→查带音标的词典或真人音频→跟读→放入短句。合成语音可以重复练习，但需检查语言与音色，遇到同形异音、变位或语境问题不能只凭机器判定。
 
 ## 核心规则
 
 - 字母 **c**：在 e、i、y 前读 /s/；在 a、o、u 或辅音前读 /k/。要在 a、o、u 前读 /s/ 就得写 **ç**（français、garçon、commençons）。
 - 字母 **g**：在 e、i、y 前读 /ʒ/；否则读 /g/。要在 a、o 前保留 /ʒ/ 就插入 e（nous mangeons）。
-- 字母 **s**：在两个元音之间读 /z/（maison、chose）；其他位置读 /s/（sac、poisson）。所以 poisson（鱼）和 poison（毒药）读音不同。
-- 字母 **h** 永远不发音，但分两种：哑音 h 允许省音和联诵（l'hôtel、les hôtels /lezotɛl/），嘘音 h 不允许（le héros、les héros /leero/）。词典里嘘音 h 常标为 *h 或 †h。
+- 字母 **s**：在两个元音字母之间通常读 /z/（maison、chose）；ss 通常读 /s/（poisson），词首 s 在 sac 中也读 /s/。复合边界有例外，如 vraisemblable；词尾 s 又常不发音。所以 poisson（鱼）和 poison（毒药）读音不同。
+- 字母 **h** 永远不发音，但分两种：哑音 h 允许省音和联诵（l'hôtel、les hôtels /lezotɛl/），嘘音 h 不允许（le héros、les héros /leeʁo/）。词典里嘘音 h 常标为 *h 或 †h。
 - **元音组合**：ou = /u/，au / eau = /o/，ai / ei = /ɛ/，eu / œu = /ø, œ/，oi = /wa/。
-- **鼻化元音**：an / en = /ɑ̃/，on = /ɔ̃/，in / ain / ein / un = /ɛ̃/。但若后面跟元音或双写鼻辅音，鼻化消失：bon /bɔ̃/ 对 bonne /bɔn/。
+- **鼻化元音**：an / en = /ɑ̃/，on = /ɔ̃/，in / ain / ein 常为 /ɛ̃/；un 传统区分为 /œ̃/，在巴黎等变体中与 /ɛ̃/ 合流。不要把这种地域差异判为错误。元音后接单 n/m 且后面不接元音时常鼻化，但词汇和变位例外仍需核对；bon /bɔ̃/ 对 bonne /bɔn/ 展示常见的去鼻化变化。鼻元音不是在末尾再读一个 /n/。
 
 | 写法 | 读音 | 例词 | 对照 |
 |---|---|---|---|
 | ou | /u/ | vous、bonjour | u = /y/：tu、rue |
 | eau / au | /o/ | beau、chaud | eu = /ø/：deux |
 | oi | /wa/ | moi、trois | ui = /ɥi/：huit |
-| ill | /ij/ | famille、fille | 例外 ville、mille 读 /il/ |
+| 词尾 -ille | 常含 /j/ | famille /famij/、fille /fij/ | ville、mille、tranquille 及相关派生词保留 /l/；不要推广到所有 ill |
 | gn | /ɲ/ | montagne、Espagne | — |
 | ch | /ʃ/ | chat、chinois | 少数希腊词读 /k/：technique |
 
@@ -365,7 +371,15 @@ T(P1, CH1, 'p1/ch01/t01-lettres-et-sons', '1．字母、音素与基本读音规
 
 ## 学习提示
 
-法语的拼写体现的是十七世纪的读音，因此保留了大量不发音字母。刚开始学时，**先听后拼**：每背一个词都跟读三遍，再写下来，可以避免形成错误的"看字母读音"习惯。
+法语拼写保留了不同历史阶段及语法信息，不能简单当作某一个世纪读音的记录。刚开始学时，**先听后拼**：每背一个词都跟读三遍，再写下来，可以避免形成错误的"看字母读音"习惯。
+## 参考与边界
+
+本章为原创中文概述，按常见教学读音说明并保留地域差异。核对日期：2026-10-10。
+
+- [UT Austin：法语语音学习](https://www.laits.utexas.edu/fi/html/pho/02.html)
+- [OQLF：联诵分类](https://vitrinelinguistique.oqlf.gouv.qc.ca/la-prononciation/liaisons)
+- [OQLF：mille、ville、tranquille 的读音](https://vitrinelinguistique.oqlf.gouv.qc.ca/25082/la-prononciation/prononciation-de-mots-particuliers/prononciation-de-mille-de-ville-et-de-tranquille)
+
 """)
 
 T(P1, CH1, 'p1/ch01/t02-consonnes-finales-elision', '2．词尾辅音、哑音 h 与省音（élision）', 'A1', """
@@ -377,7 +391,7 @@ T(P1, CH1, 'p1/ch01/t02-consonnes-finales-elision', '2．词尾辅音、哑音 h
 
 - petit /pəti/、grand /grɑ̃/、trois /trwa/、beaucoup /boku/。
 - 例外：**c、r、f、l** 常常发音（记忆口诀 "CaReFuL"）：avec、bonjour、neuf、animal。
-- 但不定式词尾 -er 的 r 不读（parler /paʁle/），职业名词 -ier 的 r 也不读（boulanger）。
+- 但parler 等第一组动词不定式的 -er 读 /e/（parler /paʁle/）；这不是所有 -er 结尾单词的规则，如 mer /mɛʁ/，许多 -ier 词尾的 r 也不读（premier /pʁəmje/）。
 
 ## 规则二：省音 élision
 
@@ -416,6 +430,14 @@ T(P1, CH1, 'p1/ch01/t02-consonnes-finales-elision', '2．词尾辅音、哑音 h
 ## 学习提示
 
 写作时漏掉省文撇属于硬性拼写错误，考试会扣分。养成习惯：写完一句话，回头检查 le / la / de / que / ne / je 后面是不是元音开头。
+## 参考与边界
+
+本章为原创中文概述，按常见教学读音说明并保留地域差异。核对日期：2026-10-10。
+
+- [UT Austin：法语语音学习](https://www.laits.utexas.edu/fi/html/pho/02.html)
+- [OQLF：联诵分类](https://vitrinelinguistique.oqlf.gouv.qc.ca/la-prononciation/liaisons)
+- [OQLF：mille、ville、tranquille 的读音](https://vitrinelinguistique.oqlf.gouv.qc.ca/25082/la-prononciation/prononciation-de-mots-particuliers/prononciation-de-mille-de-ville-et-de-tranquille)
+
 """)
 
 T(P1, CH1, 'p1/ch01/t03-liaison', '3．联诵（liaison）与连音（enchaînement）', 'A1', """
@@ -423,14 +445,22 @@ T(P1, CH1, 'p1/ch01/t03-liaison', '3．联诵（liaison）与连音（enchaînem
 
 **联诵**指的是：前一个词本来不发音的词尾辅音，因为后一个词以元音或哑音 h 开头而被读出来，并与后面的元音连成一个音节。它是法语听起来"连成一片"的主要原因，也是中国学生听力困难的主要来源。
 
+## 连音不是联诵
+
+连音 enchaînement 使用原本就发音的词尾辅音，例如 avec elle /a.vɛ.kɛl/ 的 /k/；联诵 liaison 则让原本单独读词时不出现的辅音显现，如 les amis 的 /z/。不能看到下一个词以元音开头就自动添加辅音。
+
+## 节奏组与重音
+
+法语通常以节奏组为单位，重音落在组内最后一个发音音节；不要像逐个背词那样每词都加同样强的重音。Bonjour, Madame. 可以按意义分组停顿；具体分组与语调也随语境、语速和强调变化。“句尾永远下降”不是通用规则。
+
 ## 联诵时的读音变化
 
 | 字母 | 联诵时读 | 例 |
 |---|---|---|
 | s、x、z | /z/ | les amis /lezami/、deux enfants /døzɑ̃fɑ̃/ |
-| d | /t/ | un grand homme /ɡʁɑ̃tɔm/ |
+| d | /t/ | grand homme /ɡʁɑ̃tɔm/ |
 | f（在 ans、heures 前） | /v/ | neuf ans /nœvɑ̃/ |
-| n | /n/ + 去鼻化倾向 | un ami /œ̃nami/ |
+| n | /n/，前面元音是否保留鼻化按词与用法判断 | un ami /œ̃nami/ 保留鼻化；bon ami 常去鼻化 |
 | t、p、r | 本音 | petit ami、trop aimable、premier étage |
 
 ## 必须联诵的情况
@@ -467,6 +497,14 @@ T(P1, CH1, 'p1/ch01/t03-liaison', '3．联诵（liaison）与连音（enchaînem
 ## 语域提示
 
 联诵分三类：**必须**（上面第一组）、**禁止**（第二组）、**可选**（书面语、演讲、朗诵中做得多，日常口语中做得少）。可选联诵做得越多，语体越正式。初学阶段先掌握"必须"和"禁止"两类即可。
+## 参考与边界
+
+本章为原创中文概述，按常见教学读音说明并保留地域差异。核对日期：2026-10-10。
+
+- [UT Austin：法语语音学习](https://www.laits.utexas.edu/fi/html/pho/02.html)
+- [OQLF：联诵分类](https://vitrinelinguistique.oqlf.gouv.qc.ca/la-prononciation/liaisons)
+- [OQLF：mille、ville、tranquille 的读音](https://vitrinelinguistique.oqlf.gouv.qc.ca/25082/la-prononciation/prononciation-de-mots-particuliers/prononciation-de-mille-de-ville-et-de-tranquille)
+
 """)
 
 T(P1, CH1, 'p1/ch01/t04-accents-ponctuation', '4．音符、标点与大小写规范', 'A1', """
@@ -516,6 +554,14 @@ T(P1, CH1, 'p1/ch01/t04-accents-ponctuation', '4．音符、标点与大小写�
 ## 学习提示
 
 手机和电脑上一定要装法语键盘（AZERTY 或"法语-加拿大"），否则会养成不写音符的习惯。在 DELF 等考试中，缺少音符按拼写错误处理。
+## 参考与边界
+
+本章为原创中文概述，按常见教学读音说明并保留地域差异。核对日期：2026-10-10。
+
+- [UT Austin：法语语音学习](https://www.laits.utexas.edu/fi/html/pho/02.html)
+- [OQLF：联诵分类](https://vitrinelinguistique.oqlf.gouv.qc.ca/la-prononciation/liaisons)
+- [OQLF：mille、ville、tranquille 的读音](https://vitrinelinguistique.oqlf.gouv.qc.ca/25082/la-prononciation/prononciation-de-mots-particuliers/prononciation-de-mille-de-ville-et-de-tranquille)
+
 """)
 
 CH2 = '第二章 名词（le nom）'
