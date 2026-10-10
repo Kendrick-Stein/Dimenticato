@@ -1,0 +1,352 @@
+{
+  "schema": 1,
+  "id": "2026-10-10-it-plastica-radar",
+  "storyId": "ingv-plastica-radar-2026-09-25",
+  "lang": "it",
+  "date": "2026-10-10",
+  "contentType": "native-adaptation",
+  "title": "Cercare la plastica con i satelliti",
+  "titleZh": "用卫星寻找塑料垃圾",
+  "summaryZh": "意大利研究团队用雷达卫星识别水面上的塑料聚集物。原报道发表于2026年9月25日；本篇为10月10日整理的意大利语同语言分级改写。",
+  "level": "B1",
+  "levelReason": "编辑估计 A2–B1，目录归入 B1：短句为主，含近过去时、未完成过去时和表示可能性的条件式 potrebbe；雷达与环境词汇需要注释。这不是经认证的 CEFR 测评。",
+  "source": {
+    "name": "Istituto Nazionale di Geofisica e Vulcanologia (INGV)",
+    "title": "INQUINAMENTO | Nuove immagini radar satellitari aiutano a individuare dallo spazio la plastica in mare",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/inquinamento-nuove-immagini-radar-satellitari-aiutano-a-individuare-dallo-spazio-la-plastica-in-mare",
+    "publishedAt": "2026-09-25",
+    "lang": "it",
+    "author": "INGV — Ufficio Stampa（机构署名；页面未列个人作者）"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/inquinamento-nuove-immagini-radar-satellitari-aiutano-a-individuare-dallo-spazio-la-plastica-in-mare"
+  },
+  "attribution": "原文 © INGV，2026年9月25日，依据 CC BY 4.0 使用，原文标题与链接见上方。Dimenticato 对意大利语原文作教学简化并提供中文译文；INGV 未审核或认可本材料。",
+  "adaptation": "依据 INGV 自有意大利语新闻稿作同语言分级改写，删减机构全称与技术细节，调整句序；中文逐句翻译本教学版本。未从另一语言稿件翻译来凑意大利语内容，未使用图片、视频、标志或所链接期刊论文的文字。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "I satelliti possono aiutare a trovare la plastica in mare.",
+      "zh": "卫星可以帮助寻找海里的塑料。",
+      "glosses": [
+        {
+          "surface": "satelliti",
+          "lemma": "satellite",
+          "zh": "卫星",
+          "note": "阳性名词复数；单数 il satellite"
+        },
+        {
+          "surface": "aiutare a",
+          "lemma": "aiutare a",
+          "zh": "帮助做……",
+          "note": "后接动词原形"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "I ricercatori dell’INGV, del CNR-ISMAR e della Sapienza hanno studiato come riconoscere la plastica che galleggia sull’acqua.",
+      "zh": "INGV、CNR-ISMAR和罗马第一大学的研究人员研究了如何识别漂浮在水面上的塑料。",
+      "glosses": [
+        {
+          "surface": "ricercatori",
+          "lemma": "ricercatore",
+          "zh": "研究人员",
+          "note": "阳性名词复数"
+        },
+        {
+          "surface": "riconoscere",
+          "lemma": "riconoscere",
+          "zh": "识别；辨认",
+          "note": "动词原形"
+        },
+        {
+          "surface": "galleggia",
+          "lemma": "galleggiare",
+          "zh": "漂浮",
+          "note": "现在时，第三人称单数"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Per farlo hanno organizzato due esperimenti in Italia.",
+      "zh": "为此，他们在意大利安排了两次实验。",
+      "glosses": [
+        {
+          "surface": "Per farlo",
+          "lemma": "per farlo",
+          "zh": "为了做到这一点；为此",
+          "note": "lo 指代前句识别塑料这件事"
+        },
+        {
+          "surface": "esperimenti",
+          "lemma": "esperimento",
+          "zh": "实验",
+          "note": "阳性名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Uno si è svolto nel Lago di Massaciuccoli, in Toscana, e l’altro nel Golfo di La Spezia.",
+      "zh": "一次在托斯卡纳的马萨丘科利湖进行，另一次在拉斯佩齐亚湾进行。",
+      "glosses": [
+        {
+          "surface": "si è svolto",
+          "lemma": "svolgersi",
+          "zh": "举行；进行",
+          "note": "近过去时；常用于描述活动"
+        },
+        {
+          "surface": "l’altro",
+          "lemma": "altro",
+          "zh": "另一个",
+          "note": "与 uno 搭配：一个……另一个……"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Per le prove hanno preparato una piccola isola fatta di plastica.",
+      "zh": "为进行测试，他们准备了一座用塑料做成的小岛。",
+      "glosses": [
+        {
+          "surface": "prove",
+          "lemma": "prova",
+          "zh": "测试；试验",
+          "note": "阴性名词复数"
+        },
+        {
+          "surface": "fatta di",
+          "lemma": "fatto di",
+          "zh": "由……制成",
+          "note": "fatta 随阴性名词 isola 变化"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "L’obiettivo era imitare forma e dimensioni dei gruppi di rifiuti che si trovano in mare.",
+      "zh": "目的是模仿海中垃圾聚集物的形状和大小。",
+      "glosses": [
+        {
+          "surface": "obiettivo",
+          "lemma": "obiettivo",
+          "zh": "目标；目的",
+          "note": "阳性名词"
+        },
+        {
+          "surface": "rifiuti",
+          "lemma": "rifiuto",
+          "zh": "垃圾；废弃物",
+          "note": "阳性名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "I satelliti hanno poi osservato l’isola con strumenti radar.",
+      "zh": "随后，卫星用雷达仪器观测了这座小岛。",
+      "glosses": [
+        {
+          "surface": "osservato",
+          "lemma": "osservare",
+          "zh": "观测",
+          "note": "过去分词，与 hanno 构成近过去时"
+        },
+        {
+          "surface": "strumenti",
+          "lemma": "strumento",
+          "zh": "仪器；工具",
+          "note": "阳性名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Nelle immagini, la plastica si distingueva dall’acqua intorno.",
+      "zh": "在图像中，塑料与周围的水可以区分开。",
+      "glosses": [
+        {
+          "surface": "si distingueva",
+          "lemma": "distinguersi",
+          "zh": "显出区别；可以区分",
+          "note": "未完成过去时"
+        },
+        {
+          "surface": "intorno",
+          "lemma": "intorno",
+          "zh": "周围",
+          "note": "此处指周围的水"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "La sua presenza cambiava la superficie dell’acqua e rendeva più forte il segnale misurato dagli strumenti.",
+      "zh": "塑料的存在改变了水面，并使仪器测得的信号更强。",
+      "glosses": [
+        {
+          "surface": "superficie",
+          "lemma": "superficie",
+          "zh": "表面",
+          "note": "阴性名词；这里指水面"
+        },
+        {
+          "surface": "segnale",
+          "lemma": "segnale",
+          "zh": "信号",
+          "note": "阳性名词"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Questa tecnologia funziona di giorno, di notte e anche quando ci sono nuvole.",
+      "zh": "这项技术白天、夜晚都能工作，有云时也可以。",
+      "glosses": [
+        {
+          "surface": "di giorno",
+          "lemma": "di giorno",
+          "zh": "在白天",
+          "note": "时间词组"
+        },
+        {
+          "surface": "nuvole",
+          "lemma": "nuvola",
+          "zh": "云",
+          "note": "阴性名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "In futuro potrebbe quindi aiutare a controllare i rifiuti in acqua con maggiore continuità.",
+      "zh": "因此，未来它或许能帮助人们更持续地监测水中的垃圾。",
+      "glosses": [
+        {
+          "surface": "In futuro",
+          "lemma": "in futuro",
+          "zh": "在未来",
+          "note": "时间词组"
+        },
+        {
+          "surface": "potrebbe",
+          "lemma": "potere",
+          "zh": "可能；或许能",
+          "note": "条件式现在时，保留研究展望的不确定性"
+        },
+        {
+          "surface": "continuità",
+          "lemma": "continuità",
+          "zh": "连续性；持续性",
+          "note": "阴性名词"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "I ricercatori hanno pubblicato i risultati su una rivista scientifica.",
+      "zh": "研究人员已在一本科学期刊上发表了研究结果。",
+      "glosses": [
+        {
+          "surface": "risultati",
+          "lemma": "risultato",
+          "zh": "结果",
+          "note": "阳性名词复数"
+        },
+        {
+          "surface": "rivista scientifica",
+          "lemma": "rivista scientifica",
+          "zh": "科学期刊",
+          "note": "名词词组"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "satelliti",
+        "lemma": "satellite",
+        "zh": "卫星",
+        "note": "il satellite；复数 i satelliti",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "ricercatori",
+        "lemma": "ricercatore",
+        "zh": "研究人员",
+        "note": "il ricercatore；复数 i ricercatori",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "rifiuti",
+        "lemma": "rifiuto",
+        "zh": "垃圾；废弃物",
+        "note": "环境话题常用复数形式",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "strumenti",
+        "lemma": "strumento",
+        "zh": "仪器；工具",
+        "note": "此处指雷达仪器",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "superficie",
+        "lemma": "superficie",
+        "zh": "表面",
+        "note": "la superficie dell’acqua：水面",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "nuvole",
+        "lemma": "nuvola",
+        "zh": "云",
+        "note": "la nuvola；复数 le nuvole",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "aiutare a",
+        "zh": "帮助做……",
+        "note": "后接动词原形：aiutare a trovare",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "Per farlo",
+        "zh": "为此；为了做到这一点",
+        "note": "避免重复前文刚提到的动作",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "si è svolto",
+        "zh": "举行了；进行了",
+        "note": "svolgersi 的近过去时，可描述会议、活动或实验",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "In futuro",
+        "zh": "在未来",
+        "note": "常与将来时或表达可能性的条件式搭配",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "用 di giorno、di notte 并列时间，再用 anche quando 补充另一种情形。"
+      },
+      {
+        "sentenceId": "s11",
+        "note": "potrebbe + 动词原形表达可能性；谈研究前景时避免把设想说成已实现。"
+      }
+    ]
+  }
+}

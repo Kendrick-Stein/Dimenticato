@@ -1,0 +1,391 @@
+{
+  "schema": 1,
+  "id": "2026-10-10-de-meeresschutz",
+  "storyId": "eskp-meeresschutz-2020-02",
+  "lang": "de",
+  "date": "2026-10-10",
+  "contentType": "native-adaptation",
+  "title": "Wie schützen wir Tiere im Meer?",
+  "titleZh": "我们怎样保护海里的动物？",
+  "summaryZh": "历史科普选读 · 原文2020-02。海洋保护区如何发挥作用？依据2020年2月的德国科研机构科普章节作德语同语言分级改写，于2026年10月10日整理；不沿用旧统计及政策进展，并非当日新闻。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2 辅助阅读：主句较短，但含 wenn 条件句、关系从句、ob 从句及较长的生态主题词，需要中文和词汇注释支持。A1学习者可借助逐句译文阅读；这不是经认证的 CEFR 测评。",
+  "source": {
+    "name": "Earth System Knowledge Platform (ESKP), Helmholtz-Zentrum Potsdam – Deutsches GeoForschungsZentrum GFZ",
+    "title": "Was macht ein Meeresschutzgebiet erfolgreich?",
+    "url": "https://themenspezial.eskp.de/biodiversitaet-im-meer-und-an-land/inhalt/vielfalt-im-meer-erhalten/meereschutzgebiete-erfolgreich-machen-937207/",
+    "publishedAt": "2020-02",
+    "lang": "de",
+    "author": "Katharina Teschke; Thomas Brey",
+    "datePrecision": "month"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://themenspezial.eskp.de/fileadmin/user_upload/PDFs/biodiversitaet/einzelkapitel/7-8-Was_macht_ein_Meeresschutzgebiet_erfolgreich.pdf#page=5"
+  },
+  "attribution": "根据 Katharina Teschke、Thomas Brey《Was macht ein Meeresschutzgebiet erfolgreich?》（2020，ESKP/GFZ，doi:10.2312/eskp.2020.1.7.8）改写及翻译。原文采用 CC BY 4.0。此版本进行了节选、德语难度简化、重新组织及简体中文翻译；原作者和出版机构未参与本改写，也不代表其认可。",
+  "adaptation": "本文是对德语原作的简化、节选与重新组织；逐句中文翻译对应此分级改写，并非原文全文翻译。未使用来源图片、地图或标识。",
+  "sentences": [
+    {
+      "id": "de-marine-01",
+      "text": "Im Meer leben viele verschiedene Tiere, zum Beispiel Fische, Krebse und Robben.",
+      "zh": "海里生活着许多不同的动物，例如鱼类、蟹类和海豹。",
+      "glosses": [
+        {
+          "surface": "zum Beispiel",
+          "lemma": "zum Beispiel",
+          "zh": "例如",
+          "note": "常用来引出具体例子，缩写是 z. B.。"
+        },
+        {
+          "surface": "Robben",
+          "lemma": "die Robbe",
+          "zh": "海豹",
+          "note": "阴性名词复数"
+        },
+        {
+          "surface": "Krebse",
+          "lemma": "der Krebs",
+          "zh": "蟹类；甲壳类动物",
+          "note": "这里不是“癌症”的含义"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-02",
+      "text": "Meeresschutzgebiete sollen diese Tiere und ihre Lebensräume schützen.",
+      "zh": "海洋保护区旨在保护这些动物和它们的栖息地。",
+      "glosses": [
+        {
+          "surface": "Meeresschutzgebiete",
+          "lemma": "das Meeresschutzgebiet",
+          "zh": "海洋保护区",
+          "note": "复数；Meer（海）+ Schutz（保护）+ Gebiet（区域）。这是本篇的主题词。"
+        },
+        {
+          "surface": "schützen",
+          "lemma": "schützen",
+          "zh": "保护",
+          "note": "动词；schützen + 第四格宾语。"
+        },
+        {
+          "surface": "Lebensräume",
+          "lemma": "der Lebensraum",
+          "zh": "栖息地",
+          "note": "复数：die Lebensräume"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-03",
+      "text": "Menschen sollen dort zum Beispiel nicht zu viele Fische fangen.",
+      "zh": "例如，人们不应在那里捕捞过多的鱼。",
+      "glosses": [
+        {
+          "surface": "zu viele Fische fangen",
+          "lemma": "zu viele Fische fangen",
+          "zh": "捕捞过多的鱼",
+          "note": "zu viele + 可数名词复数，表示“太多……”。"
+        },
+        {
+          "surface": "fangen",
+          "lemma": "fangen",
+          "zh": "捕捉；捕捞",
+          "note": "动词原形"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-04",
+      "text": "So können sich die Fischbestände mit der Zeit wieder erholen.",
+      "zh": "这样，鱼类种群就能随着时间逐渐恢复。",
+      "glosses": [
+        {
+          "surface": "Fischbestände",
+          "lemma": "der Fischbestand",
+          "zh": "鱼类种群；鱼类资源",
+          "note": "复数名词"
+        },
+        {
+          "surface": "erholen",
+          "lemma": "sich erholen",
+          "zh": "恢复",
+          "note": "这里描述种群恢复"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-05",
+      "text": "Für ein gutes Schutzgebiet braucht man zuerst ein klares Ziel.",
+      "zh": "要建立一个好的保护区，首先需要一个明确的目标。",
+      "glosses": [
+        {
+          "surface": "Ziel",
+          "lemma": "das Ziel",
+          "zh": "目标",
+          "note": "此处 ein klares Ziel 表示“一个明确的目标”。"
+        },
+        {
+          "surface": "ein klares Ziel",
+          "lemma": "ein klares Ziel",
+          "zh": "一个明确的目标",
+          "note": "可整体记忆；Ziel是中性名词，形容词这里用klares。"
+        },
+        {
+          "surface": "braucht",
+          "lemma": "brauchen",
+          "zh": "需要",
+          "note": "现在时第三人称单数"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-06",
+      "text": "Man muss wissen, welche Tiere und Lebensräume besonders viel Schutz brauchen.",
+      "zh": "人们必须知道，哪些动物和栖息地特别需要保护。",
+      "glosses": [
+        {
+          "surface": "besonders",
+          "lemma": "besonders",
+          "zh": "尤其；特别",
+          "note": "副词"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-07",
+      "text": "Robben brauchen zum Beispiel nicht nur einen sicheren Ort, sondern auch Nahrung.",
+      "zh": "例如，海豹不仅需要安全的生活场所，也需要食物。",
+      "glosses": [
+        {
+          "surface": "nicht nur",
+          "lemma": "nicht nur",
+          "zh": "不仅",
+          "note": "与 sondern auch（而且）呼应"
+        },
+        {
+          "surface": "sicheren",
+          "lemma": "sicher",
+          "zh": "安全的",
+          "note": "形容词词尾随格变化"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-08",
+      "text": "Wenn wir Robben schützen wollen, müssen wir auch an ihre Nahrung denken.",
+      "zh": "如果我们想保护海豹，也必须考虑它们的食物。",
+      "glosses": [
+        {
+          "surface": "Nahrung",
+          "lemma": "die Nahrung",
+          "zh": "食物",
+          "note": "这里指海豹赖以生存的食物，尤其是它们的猎物。"
+        },
+        {
+          "surface": "an ihre Nahrung denken",
+          "lemma": "an ihre Nahrung denken",
+          "zh": "考虑它们的食物",
+          "note": "an etwas denken：想到／考虑某事；an后接第四格。"
+        },
+        {
+          "surface": "wollen",
+          "lemma": "wollen",
+          "zh": "想要",
+          "note": "情态动词"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-09",
+      "text": "Danach brauchen wir Regeln, die zu den Zielen des Schutzgebiets passen.",
+      "zh": "接下来，我们需要与保护区目标相适应的规则。",
+      "glosses": [
+        {
+          "surface": "Regeln",
+          "lemma": "die Regel",
+          "zh": "规则",
+          "note": "名词复数；单数是 die Regel。"
+        },
+        {
+          "surface": "passen",
+          "lemma": "passen",
+          "zh": "适合；相符",
+          "note": "zu etwas passen：与……相适应"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-10",
+      "text": "In manchen Zonen darf man zum Beispiel keine Fische fangen.",
+      "zh": "例如，在有些区域，人们不得捕鱼。",
+      "glosses": [
+        {
+          "surface": "darf",
+          "lemma": "dürfen",
+          "zh": "被允许；可以",
+          "note": "keine 配合表示不被允许"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-11",
+      "text": "Aber Regeln allein reichen nicht: Die Menschen müssen sie auch einhalten.",
+      "zh": "但只有规则还不够：人们也必须遵守这些规则。",
+      "glosses": [
+        {
+          "surface": "reichen",
+          "lemma": "reichen",
+          "zh": "足够",
+          "note": "这里不是“递给”的含义"
+        },
+        {
+          "surface": "einhalten",
+          "lemma": "einhalten",
+          "zh": "遵守",
+          "note": "Regeln einhalten：遵守规则"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-12",
+      "text": "Dafür braucht man genug Geld und Menschen für die Kontrolle.",
+      "zh": "为此，需要足够的资金和人员来进行监督。",
+      "glosses": [
+        {
+          "surface": "Kontrolle",
+          "lemma": "die Kontrolle",
+          "zh": "监督；检查",
+          "note": "这里指检查保护规则是否得到执行。"
+        },
+        {
+          "surface": "genug",
+          "lemma": "genug",
+          "zh": "足够的",
+          "note": "此处修饰 Geld 和 Menschen"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-13",
+      "text": "Politik, Fischerei und Naturschutz müssen dabei zusammenarbeiten.",
+      "zh": "在这个过程中，政界、渔业和自然保护领域必须合作。",
+      "glosses": [
+        {
+          "surface": "Fischerei",
+          "lemma": "die Fischerei",
+          "zh": "渔业",
+          "note": "阴性名词"
+        },
+        {
+          "surface": "zusammenarbeiten",
+          "lemma": "zusammenarbeiten",
+          "zh": "合作",
+          "note": "情态动词后用原形"
+        }
+      ]
+    },
+    {
+      "id": "de-marine-14",
+      "text": "Außerdem muss man prüfen, ob der Schutz den Tieren wirklich hilft.",
+      "zh": "此外，还必须检验这些保护措施是否真的对动物有帮助。",
+      "glosses": [
+        {
+          "surface": "prüfen",
+          "lemma": "prüfen",
+          "zh": "检查；检验",
+          "note": "动词原形"
+        },
+        {
+          "surface": "wirklich",
+          "lemma": "wirklich",
+          "zh": "真的；确实",
+          "note": "副词"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Meeresschutzgebiete",
+        "lemma": "das Meeresschutzgebiet",
+        "zh": "海洋保护区",
+        "note": "复数；Meer（海）+ Schutz（保护）+ Gebiet（区域）。这是本篇的主题词。",
+        "sentenceId": "de-marine-02"
+      },
+      {
+        "text": "schützen",
+        "lemma": "schützen",
+        "zh": "保护",
+        "note": "动词；schützen + 第四格宾语。",
+        "sentenceId": "de-marine-02"
+      },
+      {
+        "text": "Ziel",
+        "lemma": "das Ziel",
+        "zh": "目标",
+        "note": "此处 ein klares Ziel 表示“一个明确的目标”。",
+        "sentenceId": "de-marine-05"
+      },
+      {
+        "text": "Nahrung",
+        "lemma": "die Nahrung",
+        "zh": "食物",
+        "note": "这里指海豹赖以生存的食物，尤其是它们的猎物。",
+        "sentenceId": "de-marine-08"
+      },
+      {
+        "text": "Regeln",
+        "lemma": "die Regel",
+        "zh": "规则",
+        "note": "名词复数；单数是 die Regel。",
+        "sentenceId": "de-marine-09"
+      },
+      {
+        "text": "Kontrolle",
+        "lemma": "die Kontrolle",
+        "zh": "监督；检查",
+        "note": "这里指检查保护规则是否得到执行。",
+        "sentenceId": "de-marine-12"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "zum Beispiel",
+        "zh": "例如",
+        "note": "常用来引出具体例子，缩写是 z. B.。",
+        "sentenceId": "de-marine-01"
+      },
+      {
+        "text": "zu viele Fische fangen",
+        "zh": "捕捞过多的鱼",
+        "note": "zu viele + 可数名词复数，表示“太多……”。",
+        "sentenceId": "de-marine-03"
+      },
+      {
+        "text": "ein klares Ziel",
+        "zh": "一个明确的目标",
+        "note": "可整体记忆；Ziel是中性名词，形容词这里用klares。",
+        "sentenceId": "de-marine-05"
+      },
+      {
+        "text": "an ihre Nahrung denken",
+        "zh": "考虑它们的食物",
+        "note": "an etwas denken：想到／考虑某事；an后接第四格。",
+        "sentenceId": "de-marine-08"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "de-marine-08",
+        "note": "条件句模板：Wenn …, müssen wir …（如果……，我们就必须……）。wenn从句中的wollen放在句末；前置从句之后，主句以müssen开头。"
+      },
+      {
+        "sentenceId": "de-marine-11",
+        "note": "表达“有……还不够，还必须……”：allein reichen nicht说明不足；müssen … einhalten表示义务，情态动词后的原形einhalten放在句末。"
+      }
+    ]
+  }
+}

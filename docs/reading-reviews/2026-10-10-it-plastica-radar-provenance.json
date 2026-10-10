@@ -1,0 +1,91 @@
+{
+  "articleId": "2026-10-10-it-plastica-radar",
+  "checkedAt": "2026-10-10",
+  "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/inquinamento-nuove-immagini-radar-satellitari-aiutano-a-individuare-dallo-spazio-la-plastica-in-mare",
+  "sourceAuthor": "INGV — Ufficio Stampa（机构署名；页面未列个人作者）",
+  "sourcePublishedAt": "2026-09-25",
+  "sourceLanguage": "it",
+  "nativeEvidence": {
+    "assessment": "High-confidence institutional Italian-origin press release; not proof of the personal author’s native language.",
+    "evidence": [
+      "The official INGV Ufficio Stampa / Comunicati Stampa page publishes this release in Italian and identifies an Italian institutional research team.",
+      "The article contains no translator credit, republication label, or attribution to an upstream foreign-language news article.",
+      "The linked English-language research paper is the scientific evidence, not a news text translated into Italian; no paper text is reused."
+    ],
+    "uncertainty": "The page does not explicitly state its original drafting language. Native-language provenance is an editorial inference from the institutional publication, not a publisher certificate."
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/inquinamento-nuove-immagini-radar-satellitari-aiutano-a-individuare-dallo-spazio-la-plastica-in-mare",
+    "evidenceLocation": "Article footer states INGV-published content on these pages is Creative Commons Attribution 4.0 International; web read lines 78.",
+    "ownershipEvidenceUrl": "https://www.ingv.it/note-legali",
+    "ownershipSummary": "Legal notice says site information is provided by INGV personnel, owned by INGV unless otherwise indicated; reproduction with comprehensive attribution. The same legal page repeats CC BY4.",
+    "rightsUsed": "Same-language Italian abridgement and simplification, Chinese translation, public educational republication, attribution and indication of modifications retained."
+  },
+  "sourceMap": [
+    {
+      "sentenceIds": [
+        "s1",
+        "s2"
+      ],
+      "location": "Article lead and first body paragraph",
+      "facts": "INGV/CNR-ISMAR/Sapienza investigation of floating plastic using satellite data."
+    },
+    {
+      "sentenceIds": [
+        "s3",
+        "s4"
+      ],
+      "location": "Second body paragraph",
+      "facts": "Two experiments in Lake Massaciuccoli and Gulf of La Spezia."
+    },
+    {
+      "sentenceIds": [
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "location": "Third body paragraph",
+      "facts": "Artificial plastic island designed to mimic debris accumulations; radar imagery can distinguish it; water roughness and measured signal change."
+    },
+    {
+      "sentenceIds": [
+        "s10",
+        "s11"
+      ],
+      "location": "Final body paragraph",
+      "facts": "SAR can work day/night/cloud cover; potential for more continuous future monitoring, not established universal operational service."
+    },
+    {
+      "sentenceIds": [
+        "s12"
+      ],
+      "location": "Second body paragraph, final sentence",
+      "facts": "Results published in Remote Sensing of Environment."
+    }
+  ],
+  "excluded": [
+    "All banner/photo/video/logo assets.",
+    "Linked journal paper text and downloadable videos.",
+    "Unsupported claims about detecting individual bottles, all ocean plastic, or an already operational worldwide service."
+  ],
+  "review": {
+    "type": "independent editorial check",
+    "reviewer": "Independent editorial review",
+    "status": "passed",
+    "corrections": [],
+    "checks": [
+      "Independently opened official article and rights evidence",
+      "Checked facts, original-language quality, Chinese translations, glossary and learning summary",
+      "Verified all phrase/word substrings and sentence references"
+    ],
+    "limitations": [
+      "Not human native-speaker review",
+      "Not certified CEFR assessment",
+      "Drafting-language origin inferred from institutional editorial evidence, not a publisher certificate"
+    ]
+  }
+}

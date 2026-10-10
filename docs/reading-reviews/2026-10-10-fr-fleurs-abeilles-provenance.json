@@ -1,0 +1,152 @@
+{
+  "articleId": "2026-10-10-fr-fleurs-abeilles",
+  "checkedAt": "2026-10-10",
+  "source": {
+    "language": "fr",
+    "sourceUrl": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+    "sourceTitle": "Les fleurs, supermarchés essentiels des abeilles",
+    "publisher": "INRAE",
+    "author": "Pierre-Yves Lerayer",
+    "publishedAt": "2018-05-13",
+    "dateLabel": "源文发布日期：2018-05-13；页面未单列最后更新日期",
+    "lastUpdatedAt": null,
+    "retrievedAt": "2026-10-10",
+    "licenseName": "Licence Ouverte / Open Licence 2.0 (Etalab)",
+    "licenseId": "etalab-2.0",
+    "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "licenseEvidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation",
+    "attribution": "来源：INRAE，Pierre-Yves Lerayer，《Les fleurs, supermarchés essentiels des abeilles》，2018-05-13（页面所示发布日期；无另列更新日期），2026-10-10查阅。依据Licence Ouverte 2.0 (Etalab)进行分级改写与简中翻译；改编不代表INRAE认可。",
+    "nativeLanguageAssessment": "强证据支持法语原生机构稿件：法国公共科研机构自有新闻路径，法语正文、法语具名撰稿人和明确发布日期；页面语言切换仅列法语，没有译者或英语原文/转载说明。原生性是基于可核查编辑证据作出的判断，网站没有另行书面声明最初撰稿语言。"
+  },
+  "verification": {
+    "verifiedAt": "2026-10-10",
+    "status": "publishable-with-attribution",
+    "sourceIdentity": [
+      {
+        "url": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+        "locator": "标题、发布日期、文末署名",
+        "finding": "页面明确给出上述源题、2018年5月13日及Pierre-Yves Lerayer（Rédacteur）。"
+      },
+      {
+        "url": "https://www.inrae.fr/mentions-legales",
+        "locator": "Éditeur du site / Publication du site",
+        "finding": "INRAE为法国公共科学技术机构，官网有独立编辑团队。"
+      }
+    ],
+    "nativeLanguageEvidence": [
+      {
+        "url": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+        "locator": "语言切换、正文、署名、来源说明",
+        "finding": "文章仅列fr (Français)，不像CGU和法律声明同时列fr/en；正文为完整法语机构科普稿，具名法语撰稿人，没有翻译或英语原文说明。"
+      },
+      {
+        "url": "https://www.inrae.fr/mentions-legales",
+        "locator": "Publication du site",
+        "finding": "网站说明独立编辑团队及负责英语版的编辑；结合本文只有法语入口，支持其法语编辑稿属性。"
+      },
+      {
+        "method": "公开检索",
+        "finding": "检索源题及作者，并检索INRAE域内flowers / supermarkets / bees与Lerayer的组合，未发现对应英语原稿；此负面检索仅作辅助证据。"
+      }
+    ],
+    "nativeLanguageUncertainty": "未找到出版社明确的“最初写作语言”字段或编辑确认；不能把仅有法语页面本身当成绝对证明。当前有独立法语编辑署名、机构原创语境、单法语入口且无转载/翻译标记，原生判定为高置信度。",
+    "licenseEvidence": [
+      {
+        "url": "https://www.inrae.fr/conditions-generales-dutilisation",
+        "locator": "PROPRIETE INTELLECTUELLE DES CONTENUS",
+        "finding": "官网将公共性质的文本和图像列入Etalab 2.0复用范围，同时声明另外标注的权利、商标logo和tous droits réservés内容属于例外。"
+      },
+      {
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "locator": "Réutilisation de l’Information / Responsabilité",
+        "finding": "许可明确允许复制、改编、修改、变换、再分发和发布，包括商业使用；要求标注来源及更新日期，不能暗示官方认可或误导读者。中文翻译与分级改写属于获准的改编/变换。"
+      },
+      {
+        "url": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+        "locator": "正文及署名区，排除图片、视频和延伸链接",
+        "finding": "所用正文为本站编辑署名文章；在可读页面的正文和署名区未发现转载来源、第三方文本署名、CC-ND/NC或tous droits réservés限制。封面虽有© INRAE照片署名，本次完全不使用该照片或其他素材。"
+      }
+    ],
+    "licenseScopeAndLimits": "许可依据为INRAE官网CGU对公共文本的明确授权，而非“网页可公开阅读”推断。授权适用于本次选用的机构正文；不外推到嵌入视频、第三方图片、外链材料、商标或logo。源页只有发布日期，故明确标注无另列更新日期，不伪造更新日期。",
+    "licenseLinkNote": "INRAE CGU原链接https://www.etalab.gouv.fr/licence-ouverte-open-licence/目前重定向data.gouv.fr首页；交付改用已核验可读的官方完整许可证页https://www.data.gouv.fr/pages/legal/licences/etalab-2.0。",
+    "factualMapping": [
+      {
+        "sentenceIds": [
+          "fr-bees-01",
+          "fr-bees-02",
+          "fr-bees-03"
+        ],
+        "sourceUrl": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+        "locator": "正文开头Les abeilles aussi…段",
+        "sourceFactZh": "蜜蜂从蜂巢附近花朵获取食物，花蜜提供能量。",
+        "adaptationNotes": "把蜂巢补充解释为家，是学习辅助比喻，不添加研究结论。"
+      },
+      {
+        "sentenceIds": [
+          "fr-bees-04",
+          "fr-bees-05",
+          "fr-bees-06"
+        ],
+        "sourceUrl": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+        "locator": "正文Et pour subvenir…段",
+        "sourceFactZh": "蜜蜂收集富含蛋白质的花粉；访花促进植物之间花粉转移，帮助植物繁殖。",
+        "adaptationNotes": "将colonie简化为groupe，省略幼虫、氨基酸和部分生殖机制细节。"
+      },
+      {
+        "sentenceIds": [
+          "fr-bees-07",
+          "fr-bees-08"
+        ],
+        "sourceUrl": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+        "locator": "正文Mais l’intensification…及L’absence de fleurs…段",
+        "sourceFactZh": "农业景观变化造成某些季节花朵减少，缺花导致蜜蜂食物不足。",
+        "adaptationNotes": "省略农业集约化、田块变大和花蜜储备等术语，不将缺花说成唯一危险。"
+      },
+      {
+        "sentenceIds": [
+          "fr-bees-09",
+          "fr-bees-10",
+          "fr-bees-11",
+          "fr-bees-12"
+        ],
+        "sourceUrl": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+        "locator": "正文INRAE, l’Association…及Alors que les abeilles…段",
+        "sourceFactZh": "INRAE、Acta、Itsap与农民合作研究；秋季增种花卉改善蜜蜂健康及越冬存活机会。",
+        "adaptationNotes": "保留研究中的过去时与“机会”表述；不宣称必然存活，不加入原文外比例。"
+      },
+      {
+        "sentenceIds": [
+          "fr-bees-13"
+        ],
+        "sourceUrl": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+        "locator": "Le saviez-vous ?",
+        "sourceFactZh": "树篱和林缘有助于邻近蜂群获得足够食物。",
+        "adaptationNotes": "省略与其他种植措施的“更有效”比较，仅保留支持食物供给的结论。"
+      }
+    ],
+    "editorialChecks": [
+      "13句法语分级改写，每句配简中，不使用英语中转内容。",
+      "法国来源与其他语言文章独立，主题无需共用底稿。",
+      "6个必备词、4个词组、2个好句，均精确关联教学正文。",
+      "词与词组text严格为对应法语句的子串；未捏造原文例句。",
+      "法语目标为A1–A2辅助阅读；蜂类主题词、相对从句及少量过去时由中文与注释支持。",
+      "未引用照片、视频、logo或链接文章。"
+    ]
+  },
+  "independentReview": {
+    "reviewer": "Independent editorial review",
+    "status": "passed",
+    "checks": [
+      "Opened source article separately and matched factual claims sentence by sentence",
+      "Checked original-language institutional authorship and licence basis",
+      "No external image, map, logo or third-party quotation reused",
+      "Learning-summary references and Chinese meanings checked"
+    ],
+    "limits": [
+      "No human native-speaker review",
+      "CEFR estimate, not certified",
+      "Original drafting-language provenance is a supported inference, not a publisher certificate"
+    ],
+    "type": "independent editorial check"
+  }
+}
