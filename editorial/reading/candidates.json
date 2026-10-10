@@ -1,0 +1,1087 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-10-10",
+  "candidates": [
+    {
+      "id": "it-2026-09-30-etna-time-machine",
+      "language": "it",
+      "sourceTitle": "ETNA | Una “macchina del tempo” ricostruisce 160 anni di evoluzione dei crateri sommitali",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+      "sourceName": "INGV Ufficio Stampa",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-09-30",
+      "collectedAt": "2026-10-10",
+      "category": "technology",
+      "topics": [
+        "无人机",
+        "历史档案",
+        "科学无障碍"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "口语角度：旧地图、卫星和无人机如何互补？科技怎样让视障者通过触摸理解火山？只改编机构新闻叙述；1865–2024为研究资料跨度，非原文日期。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+          "checkedAt": "2026-10-10",
+          "read": true,
+          "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+          "evidence": "Visible article Published/Pubblicato field; not collection date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional source and article provenance support native-language publication. This does not certify the author's personal native tongue or earliest drafting language.",
+          "evidence": "Italian INGV institutional press release about its own study; named INGV researchers Cristina Proietti and Emanuela De Beni; no translator or external-republication notice."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All images, videos, logos and linked third-party works",
+            "Quoted third-party material and personal case studies unless separately cleared"
+          ],
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "article-footer-explicit-license",
+          "evidenceUrls": [
+            "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+            "https://www.ingv.it/note-legali",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "evidence": "This article's footer explicitly licenses INGV-published page content under CC BY 4.0. Article review found institutional news prose, no conflicting text-rights or reprint notice. Legal notice identifies INGV ownership unless stated otherwise.",
+          "scope": "INGV-owned Italian institutional news prose only; no underlying journal article, maps, images, logos or externally owned quotations.",
+          "attributionRequirements": [
+            "Credit INGV Ufficio Stampa and any named author",
+            "Link original and CC BY 4.0; retain original date",
+            "State translation/adaptation/abridgment and changes; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 10,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "it-2026-09-17-geothermal-schools",
+      "language": "it",
+      "sourceTitle": "ISOLE EOLIE | Geotermia, dalle scuole un modello educativo replicabile",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+      "sourceName": "INGV Ufficio Stampa",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-09-17",
+      "collectedAt": "2026-10-10",
+      "category": "education",
+      "topics": [
+        "项目式学习",
+        "地热能源",
+        "社区科普"
+      ],
+      "level": "B1",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "口语角度：动手实验与课堂知识谁更重要？学校怎样帮助社区理解能源？新闻发表于9月17日，但学生成果活动在2026年5月，不把活动写成刚发生。排除具体未成年人个人资料。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+          "checkedAt": "2026-10-10",
+          "read": true,
+          "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+          "evidence": "Visible article Published/Pubblicato field; not collection date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional source and article provenance support native-language publication. This does not certify the author's personal native tongue or earliest drafting language.",
+          "evidence": "Italian INGV institutional report on its IRGIE school project, with named INGV coordinators Monia Procesi and Federica La Longa; no translation/republication notice."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All images, videos, logos and linked third-party works",
+            "Quoted third-party material and personal case studies unless separately cleared"
+          ],
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "article-footer-explicit-license",
+          "evidenceUrls": [
+            "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+            "https://www.ingv.it/note-legali",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "evidence": "This article's footer explicitly licenses INGV-published page content under CC BY 4.0. Article review found institutional news prose, no conflicting text-rights or reprint notice. Legal notice identifies INGV ownership unless stated otherwise.",
+          "scope": "INGV-owned Italian institutional news prose only; no underlying journal article, maps, images, logos or externally owned quotations.",
+          "attributionRequirements": [
+            "Credit INGV Ufficio Stampa and any named author",
+            "Link original and CC BY 4.0; retain original date",
+            "State translation/adaptation/abridgment and changes; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 23,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "it-2026-09-15-lipari-underwater-heritage",
+      "language": "it",
+      "sourceTitle": "RICERCA | Lipari, i siti archeologici sommersi raccontano 3.900 anni di cambiamenti costieri",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
+      "sourceName": "INGV Ufficio Stampa",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-09-15",
+      "collectedAt": "2026-10-10",
+      "category": "culture",
+      "topics": [
+        "水下考古",
+        "文化遗产",
+        "海岸变化"
+      ],
+      "level": "B2",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "口语角度：沉没遗址能告诉我们什么？怎样平衡文化遗产保护和环境变化？地面沉降与海平面上升要分清；不要把长期平均速率写成每年的精确预测。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
+          "checkedAt": "2026-10-10",
+          "read": true,
+          "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
+          "evidence": "Visible article Published/Pubblicato field; not collection date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional source and article provenance support native-language publication. This does not certify the author's personal native tongue or earliest drafting language.",
+          "evidence": "Italian INGV press release, its own study with lead INGV researcher Marco Anzidei; institutional Italian publication with no translator/third-party reprint marker."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All images, videos, logos and linked third-party works",
+            "Quoted third-party material and personal case studies unless separately cleared"
+          ],
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "article-footer-explicit-license",
+          "evidenceUrls": [
+            "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
+            "https://www.ingv.it/note-legali",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "evidence": "This article's footer explicitly licenses INGV-published page content under CC BY 4.0. Article review found institutional news prose, no conflicting text-rights or reprint notice. Legal notice identifies INGV ownership unless stated otherwise.",
+          "scope": "INGV-owned Italian institutional news prose only; no underlying journal article, maps, images, logos or externally owned quotations.",
+          "attributionRequirements": [
+            "Credit INGV Ufficio Stampa and any named author",
+            "Link original and CC BY 4.0; retain original date",
+            "State translation/adaptation/abridgment and changes; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 25,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "en-2026-10-09-robotics-adoption-hubs",
+      "language": "en",
+      "sourceTitle": "Brits to benefit from faster recovery from surgeries and better harvests through new backing for robotics",
+      "sourceUrl": "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+      "sourceName": "Department for Business, Innovation, Science and Trade / GOV.UK",
+      "registrySourceId": "govuk-bist-english-news",
+      "sourcePublishedAt": "2026-10-09",
+      "collectedAt": "2026-10-10",
+      "category": "technology",
+      "topics": [
+        "机器人",
+        "农业",
+        "工作效率"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "口语角度：哪些工作适合机器人？企业采用新技术真正缺的是设备还是培训？保留could/aims等不确定语气，政策承诺和预期效益不能改写成已实现的医疗或经济效果。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+          "checkedAt": "2026-10-10",
+          "read": true,
+          "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+          "evidence": "Visible article Published/Pubblicato field; not collection date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional source and article provenance support native-language publication. This does not certify the author's personal native tongue or earliest drafting language.",
+          "evidence": "Official English UK departmental press release, From names BIST/Cabinet Office; UK minister and domestic rollout context; no translated-language label or syndicated source."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All images, videos, logos and linked third-party works",
+            "Quoted third-party material and personal case studies unless separately cleared"
+          ],
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "article-footer-and-explicit-government-text-policy",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "evidence": "Article footer explicitly applies OGL v3.0 except stated exceptions. GOV.UK terms explain Crown/public-sector text licensing; OGL permits copying, publication and adaptation, excludes third-party rights. Article reviewed for bylines and third-party quotations.",
+          "scope": "Registered UK institution's public-sector English narrative only. Exclude Supporting quotes, outside researchers/company/student quotations, personal case-study details, images/logos, and linked report text.",
+          "attributionRequirements": [
+            "Contains public sector information licensed under the Open Government Licence v3.0.",
+            "Credit named department/agency, original title, URL and publication date",
+            "Link OGL v3.0, identify translation/adaptation and avoid implied endorsement"
+          ],
+          "licenseRetrievalNote": "Canonical OGL open returned tool Internal Error twice, but official National Archives same-page search result with query suffix yielded complete licence text, including adapt/publication/exclusions. Canonical licence URL retained.",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "publisher": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+          "names": [
+            "Department for Business, Innovation, Science and Trade",
+            "Cabinet Office"
+          ],
+          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-business-innovation-science-and-trade"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "en-2026-10-09-vocational-learning",
+      "language": "en",
+      "sourceTitle": "Teenagers back vocational reforms and defy outdated stigma",
+      "sourceUrl": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+      "sourceName": "Department for Education / GOV.UK",
+      "registrySourceId": "govuk-education-english-news",
+      "sourcePublishedAt": "2026-10-09",
+      "collectedAt": "2026-10-10",
+      "category": "education",
+      "topics": [
+        "职业教育",
+        "择业",
+        "社会偏见"
+      ],
+      "level": "B2",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "口语角度：职业教育为何被低估？家长期望如何影响学生选择？只采用教育部机构叙述，排除学生/企业引语和个人故事。政府调查有500名受访者，不能泛化为所有年轻人的意见；改革仍分阶段实施。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+          "checkedAt": "2026-10-10",
+          "read": true,
+          "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+          "evidence": "Visible article Published/Pubblicato field; not collection date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional source and article provenance support native-language publication. This does not certify the author's personal native tongue or earliest drafting language.",
+          "evidence": "Official English Department for Education news story, From explicitly names department; domestic UK qualification context; no translation or third-party republication marker."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All images, videos, logos and linked third-party works",
+            "Quoted third-party material and personal case studies unless separately cleared"
+          ],
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "article-footer-and-explicit-government-text-policy",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "evidence": "Article footer explicitly applies OGL v3.0 except stated exceptions. GOV.UK terms explain Crown/public-sector text licensing; OGL permits copying, publication and adaptation, excludes third-party rights. Article reviewed for bylines and third-party quotations.",
+          "scope": "Registered UK institution's public-sector English narrative only. Exclude Supporting quotes, outside researchers/company/student quotations, personal case-study details, images/logos, and linked report text.",
+          "attributionRequirements": [
+            "Contains public sector information licensed under the Open Government Licence v3.0.",
+            "Credit named department/agency, original title, URL and publication date",
+            "Link OGL v3.0, identify translation/adaptation and avoid implied endorsement"
+          ],
+          "licenseRetrievalNote": "Canonical OGL open returned tool Internal Error twice, but official National Archives same-page search result with query suffix yielded complete licence text, including adapt/publication/exclusions. Canonical licence URL retained.",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "publisher": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+          "names": [
+            "Department for Education"
+          ],
+          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "en-2026-10-06-healthcare-ai-oversight",
+      "language": "en",
+      "sourceTitle": "Government backs recommendations of NHS doctors-led AI Commission",
+      "sourceUrl": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+      "sourceName": "Medicines and Healthcare products Regulatory Agency / GOV.UK",
+      "registrySourceId": "govuk-mhra-english-news",
+      "sourcePublishedAt": "2026-10-06",
+      "collectedAt": "2026-10-10",
+      "category": "health",
+      "topics": [
+        "医疗AI",
+        "持续监督",
+        "公众信任"
+      ],
+      "level": "B2",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "口语角度：AI医疗工具上线后是否仍需持续监督？怎样兼顾创新与公众信任？这是监管新闻，不是医疗建议；接受44项建议不等于全部已实施。排除Supporting quotes及第三方引语。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+          "checkedAt": "2026-10-10",
+          "read": true,
+          "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+          "evidence": "Published 6 October 2026; change log also explicitly labels First published on 6 October. Same-day updates are not used to substitute date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional source and article provenance support native-language publication. This does not certify the author's personal native tongue or earliest drafting language.",
+          "evidence": "Official English MHRA UK press release; From explicitly names agency, with its own AI Airlock programme and government-response timeline; no translation or syndicated origin marker."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All images, videos, logos and linked third-party works",
+            "Quoted third-party material and personal case studies unless separately cleared"
+          ],
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "article-footer-and-explicit-government-text-policy",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "evidence": "Article footer explicitly applies OGL v3.0 except stated exceptions. GOV.UK terms explain Crown/public-sector text licensing; OGL permits copying, publication and adaptation, excludes third-party rights. Article reviewed for bylines and third-party quotations.",
+          "scope": "Registered UK institution's public-sector English narrative only. Exclude Supporting quotes, outside researchers/company/student quotations, personal case-study details, images/logos, and linked report text.",
+          "attributionRequirements": [
+            "Contains public sector information licensed under the Open Government Licence v3.0.",
+            "Credit named department/agency, original title, URL and publication date",
+            "Link OGL v3.0, identify translation/adaptation and avoid implied endorsement"
+          ],
+          "licenseRetrievalNote": "Canonical OGL open returned tool Internal Error twice, but official National Archives same-page search result with query suffix yielded complete licence text, including adapt/publication/exclusions. Canonical licence URL retained.",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "publisher": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+          "names": [
+            "Medicines and Healthcare products Regulatory Agency"
+          ],
+          "institutionUrl": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 4,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "fr-2026-10-08-gauging-rule",
+      "language": "fr",
+      "sourceTitle": "La « règle à jauger » : une innovation hydrométrique reconnue par l’Organisation météorologique mondiale (OMM)",
+      "sourceUrl": "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+      "sourceName": "INRAE, French public research institute",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-10-08",
+      "collectedAt": "2026-10-10",
+      "category": "technology",
+      "topics": [
+        "低成本科技",
+        "河流监测",
+        "开放科学"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "低成本、低技术工具能否比昂贵设备更有效地扩大科学参与？可讨论河流监测、测量误差、开放设计和学校公民科学。 Underlying instrument being open source is separate from article-text reuse permission. Do not confuse the two.",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+          "checkedAt": "2026-10-10",
+          "read": true,
+          "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+          "evidence": "Article header: « Publié le 08 octobre 2026 ». Reports award ceremony on 2026-10-07; the 2024 date belongs to the underlying research paper, not this news article."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+          "basis": "institutional-original-language-inference",
+          "author": "Jérôme LE COZ — Ingénieur chercheur",
+          "evidence": "Official French-language news page has a French byline, identifies the institute's own RiverLy team, and reports its award. No translated/reprinted-from-third-party notice was found. Institutional French original is strongly supported; author's personal native tongue is not asserted.",
+          "caveat": "Institutional publication provenance, not a certificate of the author’s native tongue or first drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Licence Ouverte 2.0 (Etalab)",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "basis": "explicit-site-public-text-license-plus-article-exceptions-review",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+            "https://www.inrae.fr/conditions-generales-dutilisation",
+            "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+          ],
+          "evidence": "Intellectual-property section explicitly applies Etalab 2.0 to public text visible on this site; page-level review found no restrictive text notice or third-party republication label. Official Etalab 2.0 permits adaptation, modification, publication and commercial reuse, subject to attribution, source/update date and no implied official endorsement.",
+          "scope": "INRAE original news body text only. No images, linked research paper, videos, linked software or external resource text included.",
+          "caveat": "Verified via site-wide licence that expressly covers article text, not an article-specific licence badge. Text-only derivative must credit INRAE and Jérôme Le Coz, link original, give source date, licence and identify translation/adaptation.",
+          "exclusions": [
+            "Hero image explicitly © Vaisala; exclude it and all other images.",
+            "Linked third-party works, logos and quoted third-party material unless independently cleared"
+          ],
+          "attributionRequirements": [
+            "Credit INRAE and named author/joint institution",
+            "Link source, original publication date and Etalab 2.0",
+            "Mark translation/adaptation and changes; no implied endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 2,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "fr-2026-10-08-brush-clearing-action",
+      "language": "fr",
+      "sourceTitle": "Le débroussaillement : les clés du passage à l'action",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceName": "INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-10-08",
+      "collectedAt": "2026-10-10",
+      "category": "environment",
+      "topics": [
+        "防火",
+        "行动障碍",
+        "邻里合作"
+      ],
+      "level": "B2",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "知道火灾风险为何仍不采取行动？以“知道、愿意、能够”三个层面讨论法规、费用、邻里合作与公共服务。 Page says 10 of 119 Bouches-du-Rhône communes are concerned; this figure looks potentially inconsistent with its broader discussion. Do not carry the number into an adaptation without separate verification. Avoid turning article's legal discussion into current legal advice.",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+          "checkedAt": "2026-10-10",
+          "read": true,
+          "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+          "evidence": "Article header: « Publié le 08 octobre 2026 ». Describes fieldwork conducted autumn 2025–summer 2026 and current 2026 workshops."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+          "basis": "institutional-original-language-inference",
+          "author": "No separate editorial byline displayed; institutional authorship. Project coordinated by Armelle Favery (INRAE), with named INRAE researchers.",
+          "evidence": "Official French-language institutional report on its own OLD'ACT work in Bouches-du-Rhône and Isère, with named INRAE project staff and contacts; no translation or third-party reprint notice.",
+          "caveat": "Institutional publication provenance, not a certificate of the author’s native tongue or first drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Licence Ouverte 2.0 (Etalab)",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "basis": "explicit-site-public-text-license-plus-article-exceptions-review",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+            "https://www.inrae.fr/conditions-generales-dutilisation",
+            "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+          ],
+          "evidence": "Site-wide Etalab 2.0 grant covers public text; this article's full body carries no third-party republication or reserved-rights restriction. Licence allows adaptation and public distribution with source/date attribution and no implied institutional endorsement.",
+          "scope": "INRAE original news body text only. No images or linked third-party materials included.",
+          "caveat": "Verified under the site's express public-text grant, not an article-specific licence badge. Credit INRAE, link original, retain source date, link licence and mark translation/adaptation.",
+          "exclusions": [
+            "Image credited © INRAE, but excluded from this text-only reserve.",
+            "Linked third-party works, logos and quoted third-party material unless independently cleared"
+          ],
+          "attributionRequirements": [
+            "Credit INRAE and named author/joint institution",
+            "Link source, original publication date and Etalab 2.0",
+            "Mark translation/adaptation and changes; no implied endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 2,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "fr-2026-10-06-sorghum-climate",
+      "language": "fr",
+      "sourceTitle": "La production du sorgho en Europe favorisée par le changement climatique",
+      "sourceUrl": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+      "sourceName": "INRAE and AgroParisTech",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-10-06",
+      "collectedAt": "2026-10-10",
+      "category": "environment",
+      "topics": [
+        "农业适应",
+        "节水",
+        "模型预测"
+      ],
+      "level": "B2",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "面对缺水和高温，欧洲应怎样改变种植结构？比较高粱与玉米，并区分模型预测、地区差异与实际政策选择。 Exclude footnote 1's AFP-derived crop-report wording and all images from reused text. Preserve caveats: simulations, scenarios and regional differences; do not frame local sorghum benefits as overall climate-change benefits.",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+          "checkedAt": "2026-10-10",
+          "read": true,
+          "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+          "evidence": "Article header: « Publié le 06 octobre 2026 »; identifies itself as an institutional press release."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+          "basis": "institutional-original-language-inference",
+          "author": "Institutional press release; Service Médias et opinion INRAE and Presse AgroParisTech listed.",
+          "evidence": "Official French press release about work conducted by these two French institutions; named research contacts David Makowski (INRAE), Nicolas Guilpart (AgroParisTech). French primary institutional communication, not a translated third-party news story.",
+          "caveat": "Institutional publication provenance, not a certificate of the author’s native tongue or first drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Licence Ouverte 2.0 (Etalab)",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "basis": "explicit-site-public-text-license-plus-article-exceptions-review",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+            "https://www.inrae.fr/conditions-generales-dutilisation",
+            "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+          ],
+          "evidence": "INRAE's public-text Etalab 2.0 grant applies; full article identifies institutional media offices and does not state narrower text rights or a third-party reprint. Permits derivative adaptation, translation as adaptation, and public/commercial dissemination with attribution and source-date requirements.",
+          "scope": "Original INRAE/AgroParisTech French press-release prose only. No image, underlying journal paper, or quoted/linked third-party source material included.",
+          "caveat": "Site-wide text licence, not an article-specific badge. Credit INRAE/AgroParisTech, link original, show date and Etalab 2.0, mark translation/adaptation. Do not infer rights to the scientific journal article from press-release rights.",
+          "exclusions": [
+            "Hero image © Nicolas Guilpart; excluded.",
+            "Linked third-party works, logos and quoted third-party material unless independently cleared"
+          ],
+          "attributionRequirements": [
+            "Credit INRAE and named author/joint institution",
+            "Link source, original publication date and Etalab 2.0",
+            "Mark translation/adaptation and changes; no implied endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 4,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "de-2026-10-02-gaming-community-safety",
+      "language": "de",
+      "sourceTitle": "Extremismus im Gaming",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+      "sourceName": "Bundeszentrale für politische Bildung — Werkstatt",
+      "registrySourceId": "bpb-werkstatt-de",
+      "sourcePublishedAt": "2026-10-02",
+      "collectedAt": "2026-10-10",
+      "category": "society",
+      "topics": [
+        "游戏社区",
+        "数字素养",
+        "平台责任"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "口语角度：谁该为安全的游戏社区负责？志愿管理员与平台责任如何分配？ 近期机构解释性文章，非突发新闻；保持讨论性、非煽动立场。 后续译编须CC BY-SA4同许可。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+          "checkedAt": "2026-10-10",
+          "notes": "Original bpb page loads the full introduction, both sections on Community Support Network and Good Gaming Support, source list, and license block without a login."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+          "evidence": "Article header displays 02.10.2026 / 2 Minuten zu lesen. This is the displayed publication date, not search crawl or retrieval time; no updated-date marker is shown."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+          "additionalEvidenceUrls": [
+            "https://www.bpb.de/die-bpb/ueber-uns/service/impressum/",
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/"
+          ],
+          "basis": "institutional-original-language-inference",
+          "author": "Bundeszentrale für politische Bildung, Werkstatt; labeled Werkstatt recherchiert, no individual byline displayed",
+          "evidence": "Published in German as Werkstatt's own editorial research feature by the German federal civic-education agency; the series page identifies these as Werkstatt contributions. No translation or foreign original credit appears. This verifies institutional original-language provenance rather than an unnamed writer's mother tongue.",
+          "caveat": "Institutional source-language provenance, not personal mother-tongue certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+          "basis": "explicit-article-text-license",
+          "evidenceUrls": [
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+            "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+            "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+          ],
+          "evidence": "The end-of-article Lizenz block explicitly licenses Dieser Text under CC BY-SA 4.0. This is the article text grant, not an image or data license.",
+          "scope": "Original bpb editorial prose only. Public translation/adaptation is permitted subject to attribution, identification of changes and ShareAlike.",
+          "exclusions": [
+            "All images, including the RDNE Stock project / Pexels photograph",
+            "The separately attributed block quotations from Nandita Wegehaupt and Mick Prinz",
+            "Linked third-party pages, images, logos, screenshots and other media"
+          ],
+          "shareAlikeRequired": true,
+          "attributionRequirements": [
+            "Credit Bundeszentrale für politische Bildung, Werkstatt; labeled Werkstatt recherchiert, no individual byline displayed",
+            "Link original, original date and CC BY-SA 4.0",
+            "Identify translation/adaptation and changes",
+            "Release derived text under CC BY-SA 4.0 or verified compatible license; never relabel as CC BY"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 8,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "de-2026-09-22-teacher-neutrality",
+      "language": "de",
+      "sourceTitle": "Was heißt neutral?",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+      "sourceName": "Bundeszentrale für politische Bildung — Werkstatt",
+      "registrySourceId": "bpb-werkstatt-de",
+      "sourcePublishedAt": "2026-09-22",
+      "collectedAt": "2026-10-10",
+      "category": "education",
+      "topics": [
+        "教育中立",
+        "独立思考",
+        "公民教育"
+      ],
+      "level": "B2",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "口语角度：老师应如何讨论政治分歧，又不替学生作判断？中立与公民责任的边界在哪里？ It discusses German legal requirements. A later adaptation must distinguish the source's account from legal advice and preserve its uncertainty about unresolved questions; legal accuracy should be rechecked before publication. 后续译编须CC BY-SA4同许可。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+          "checkedAt": "2026-10-10",
+          "notes": "Original bpb page loads the complete teacher-neutrality Q&A, Beutelsbach principles, bibliography and article license block without login."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+          "evidence": "Article header displays 22.09.2026 / 2 Minuten zu lesen. Not a crawl/update date. The source list separately dates earlier background sources to May/June 2026; those older sources are not being passed off as new articles."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+          "additionalEvidenceUrls": [
+            "https://www.bpb.de/die-bpb/ueber-uns/service/impressum/",
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/"
+          ],
+          "basis": "institutional-original-language-inference",
+          "author": "Bundeszentrale für politische Bildung, Werkstatt; labeled Werkstatt recherchiert, no individual byline displayed",
+          "evidence": "German federal institution's own Werkstatt contribution, written around the German school/public-education context; series provenance and German editorial provider verified. No translation credit. Institution-level language evidence only, not an individual native-speaker claim.",
+          "caveat": "Institutional source-language provenance, not personal mother-tongue certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+          "basis": "explicit-article-text-license",
+          "evidenceUrls": [
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+            "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+            "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+          ],
+          "evidence": "The article's own final Lizenz block explicitly assigns CC BY-SA 4.0 to the text.",
+          "scope": "Original bpb editorial prose only, with public translation/adaptation under attribution, change notice and ShareAlike.",
+          "exclusions": [
+            "Lara Jameson photograph and all other images/media",
+            "The separately attributed Felix Wirth Hanschmann block quotation",
+            "External/linked background articles, which require their own license reviews"
+          ],
+          "shareAlikeRequired": true,
+          "attributionRequirements": [
+            "Credit Bundeszentrale für politische Bildung, Werkstatt; labeled Werkstatt recherchiert, no individual byline displayed",
+            "Link original, original date and CC BY-SA 4.0",
+            "Identify translation/adaptation and changes",
+            "Release derived text under CC BY-SA 4.0 or verified compatible license; never relabel as CC BY"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 18,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "de-2026-09-21-tiktok-political-communication",
+      "language": "de",
+      "sourceTitle": "Politik For You – Politische Kommunikation auf TikTok analysieren",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
+      "sourceName": "Bundeszentrale für politische Bildung — Werkstatt",
+      "registrySourceId": "bpb-werkstatt-de",
+      "sourcePublishedAt": "2026-09-21",
+      "collectedAt": "2026-10-10",
+      "category": "technology",
+      "topics": [
+        "社交媒体",
+        "政治传播",
+        "媒介素养"
+      ],
+      "level": "C1",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "口语角度：政治人物的短视频是在对话，还是把宣传包装成亲切感？观众如何辨识？ Retain descriptive, nonpartisan framing when adapting party examples. Recheck time-sensitive participation percentages, platform mechanics and examples before publication. 后续译编须CC BY-SA4同许可。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-10",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
+          "checkedAt": "2026-10-10",
+          "notes": "Original bpb page loads the complete analysis, references, author biography and final license without login."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
+          "evidence": "Article header displays 21.09.2026 / 8 Minuten zu lesen. September 2026 screenshot dates also appear, but are not used as the article publication date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
+          "additionalEvidenceUrls": [
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
+            "https://www.bpb.de/die-bpb/ueber-uns/service/impressum/"
+          ],
+          "basis": "institutional-original-language-inference",
+          "author": "Leonie Meyer für bpb.de",
+          "evidence": "Article byline and rights block name Leonie Meyer for bpb.de. Its author biography identifies her as a Werkstatt editor in 2021–2026 with a politics/education focus and a political-science background at the University of Bonn. Original German institutional authorship is strongly supported; no translation credit. This is not a biographical claim about her mother tongue.",
+          "caveat": "Institutional source-language provenance, not personal mother-tongue certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+          "basis": "explicit-article-text-license",
+          "evidenceUrls": [
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
+            "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+            "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+          ],
+          "evidence": "The final Lizenz section explicitly applies CC BY-SA 4.0 to the text and identifies Leonie Meyer as author for bpb.de.",
+          "scope": "Leonie Meyer's original bpb article prose, under attribution, change notice and ShareAlike; credit Leonie Meyer für bpb.de and link the original.",
+          "exclusions": [
+            "All TikTok screenshots, videos, creator/party material and screenshots' captions",
+            "All illustrations/images, including any separately CC-marked illustration, to keep this a text-only clearance",
+            "The separately quoted Isabelle Otto sentence and any other identifiable third-party quotation",
+            "Referenced books, reports and external full text"
+          ],
+          "shareAlikeRequired": true,
+          "attributionRequirements": [
+            "Credit Leonie Meyer für bpb.de",
+            "Link original, original date and CC BY-SA 4.0",
+            "Identify translation/adaptation and changes",
+            "Release derived text under CC BY-SA 4.0 or verified compatible license; never relabel as CC BY"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAt": "2026-10-10"
+        },
+        "freshness": {
+          "asOf": "2026-10-10",
+          "ageDays": 19,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    }
+  ],
+  "policy": "Candidates are recoverable editorial inputs, not published reading lessons. status=verified means source checks complete only. No candidate in this batch has editorial review, a finished adaptation or publication readiness. Always recheck rights/date/source before conversion.",
+  "queueContract": {
+    "statusMeaning": {
+      "collected": "Discovery only; not all source checks complete",
+      "verified": "Full-text/date/source-language/rights checks complete; not edited or ready",
+      "rejected": "Do not convert; reason retained"
+    },
+    "workflowStages": [
+      "discovered",
+      "rights_verified",
+      "editorial_review",
+      "ready"
+    ],
+    "publicationContract": "Published lessons live in article files and the manifest; candidates do not auto-publish. A later successful conversion may set linkToArticleId."
+  },
+  "deduplication": {
+    "checkedAt": "2026-10-10",
+    "repository": "Kendrick-Stein/Dimenticato",
+    "baseCommit": "bbb1c2d",
+    "checkedArticleCount": 8,
+    "existingSourceUrls": [
+      "https://commission.europa.eu/news-and-media/news/celebrating-power-languages-2026-09-26_de",
+      "https://themenspezial.eskp.de/biodiversitaet-im-meer-und-an-land/inhalt/vielfalt-im-meer-erhalten/meereschutzgebiete-erfolgreich-machen-937207/",
+      "https://www.gov.uk/government/news/better-wifi-on-remote-trains-and-access-to-cutting-edge-tech-for-british-farmers-through-13-million-boost-to-drive-next-gen-satellite-communications",
+      "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/inquinamento-nuove-immagini-radar-satellitari-aiutano-a-individuare-dallo-spazio-la-plastica-in-mare",
+      "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles"
+    ],
+    "noDuplicateSourceUrls": true,
+    "noDuplicateSourceTitles": true
+  },
+  "freshnessPolicy": {
+    "asOf": "2026-10-10",
+    "preferredDays": 30,
+    "secondaryDays": 90,
+    "archiveSeparated": true,
+    "useOriginalPublicationDateOnly": true,
+    "neverUseCollectionDateAsSourceDate": true
+  }
+}

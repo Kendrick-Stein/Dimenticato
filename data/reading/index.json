@@ -2,15 +2,20 @@
   "schema": 1,
   "articles": [
     {
-      "id": "2026-10-10-de-meeresschutz",
-      "lang": "de",
+      "id": "2026-10-10-it-plastica-radar",
+      "lang": "it",
       "date": "2026-10-10",
-      "title": "Wie schützen wir Tiere im Meer?",
-      "titleZh": "我们怎样保护海里的动物？",
-      "summaryZh": "历史科普选读 · 原文2020-02。海洋保护区如何发挥作用？依据2020年2月的德国科研机构科普章节作德语同语言分级改写，于2026年10月10日整理；不沿用旧统计及政策进展，并非当日新闻。",
-      "level": "A2",
-      "sourceLang": "de",
-      "sourcePublishedAt": "2020-02",
+      "title": "Cercare la plastica con i satelliti",
+      "titleZh": "用卫星寻找塑料垃圾",
+      "summaryZh": "意大利研究团队用雷达卫星识别水面上的塑料聚集物。原报道发表于2026年9月25日；本篇为10月10日整理的意大利语同语言分级改写。",
+      "level": "B1",
+      "category": "technology",
+      "topics": [
+        "卫星遥感",
+        "塑料污染"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-09-25",
       "contentType": "native-adaptation"
     },
     {
@@ -21,8 +26,30 @@
       "titleZh": "服务火车与农场的卫星",
       "summaryZh": "英国航天局公布支持卫星通信项目的计划，包括改善列车网络与帮助农民监测作物。原报道发表于2026年8月18日；本篇是英语同语言分级改写，所述项目目标不代表已经全部实现。",
       "level": "B1",
+      "category": "technology",
+      "topics": [
+        "卫星通信",
+        "交通与农业"
+      ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-08-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-10-de-meeresschutz",
+      "lang": "de",
+      "date": "2026-10-10",
+      "title": "Wie schützen wir Tiere im Meer?",
+      "titleZh": "我们怎样保护海里的动物？",
+      "summaryZh": "历史科普选读 · 原文2020-02。海洋保护区如何发挥作用？依据2020年2月的德国科研机构科普章节作德语同语言分级改写，于2026年10月10日整理；不沿用旧统计及政策进展，并非当日新闻。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "海洋保护",
+        "生物多样性"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2020-02",
       "contentType": "native-adaptation"
     },
     {
@@ -33,65 +60,14 @@
       "titleZh": "蜜蜂需要的花朵",
       "summaryZh": "历史科普选读 · 原文2018-05-13。花朵为什么对蜜蜂重要？本篇依据2018年5月13日的法国机构科普文章作法语同语言分级改写，于2026年10月10日整理，属于科普选读，并非当日新闻。",
       "level": "A2",
+      "category": "environment",
+      "topics": [
+        "传粉昆虫",
+        "生物多样性"
+      ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2018-05-13",
       "contentType": "native-adaptation"
-    },
-    {
-      "id": "2026-10-10-it-plastica-radar",
-      "lang": "it",
-      "date": "2026-10-10",
-      "title": "Cercare la plastica con i satelliti",
-      "titleZh": "用卫星寻找塑料垃圾",
-      "summaryZh": "意大利研究团队用雷达卫星识别水面上的塑料聚集物。原报道发表于2026年9月25日；本篇为10月10日整理的意大利语同语言分级改写。",
-      "level": "B1",
-      "sourceLang": "it",
-      "sourcePublishedAt": "2026-09-25",
-      "contentType": "native-adaptation"
-    },
-    {
-      "id": "2026-10-10-de-languages",
-      "lang": "de",
-      "date": "2026-10-10",
-      "title": "Sprachen bringen uns zusammen",
-      "titleZh": "语言让我们走得更近",
-      "summaryZh": "从欧洲语言日了解欧洲的语言多样性及学习语言的意义。原报道发表于2026年9月26日，本篇于10月10日整理供学习，并非当日新闻。",
-      "level": "A2",
-      "sourceLang": "de",
-      "sourcePublishedAt": "2026-09-26"
-    },
-    {
-      "id": "2026-10-10-en-languages",
-      "lang": "en",
-      "date": "2026-10-10",
-      "title": "Languages can bring people together",
-      "titleZh": "语言让我们走得更近",
-      "summaryZh": "从欧洲语言日了解欧洲的语言多样性及学习语言的意义。原报道发表于2026年9月26日，本篇于10月10日整理供学习，并非当日新闻。",
-      "level": "B1",
-      "sourceLang": "de",
-      "sourcePublishedAt": "2026-09-26"
-    },
-    {
-      "id": "2026-10-10-fr-languages",
-      "lang": "fr",
-      "date": "2026-10-10",
-      "title": "Les langues nous rapprochent",
-      "titleZh": "语言让我们走得更近",
-      "summaryZh": "从欧洲语言日了解欧洲的语言多样性及学习语言的意义。原报道发表于2026年9月26日，本篇于10月10日整理供学习，并非当日新闻。",
-      "level": "A2",
-      "sourceLang": "de",
-      "sourcePublishedAt": "2026-09-26"
-    },
-    {
-      "id": "2026-10-10-it-languages",
-      "lang": "it",
-      "date": "2026-10-10",
-      "title": "Le lingue ci avvicinano",
-      "titleZh": "语言让我们走得更近",
-      "summaryZh": "从欧洲语言日了解欧洲的语言多样性及学习语言的意义。原报道发表于2026年9月26日，本篇于10月10日整理供学习，并非当日新闻。",
-      "level": "A2",
-      "sourceLang": "de",
-      "sourcePublishedAt": "2026-09-26"
     }
   ]
 }

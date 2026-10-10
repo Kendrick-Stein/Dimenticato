@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dimenticato.xyz/docs/reading-sources.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "sources"
+  ],
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "url",
+          "languages",
+          "allowedUrlPrefixes",
+          "rightsPolicyUrl",
+          "articleReviewRequired",
+          "conditions"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "languages": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "enum": [
+                "it",
+                "fr",
+                "de",
+                "en"
+              ]
+            }
+          },
+          "allowedUrlPrefixes": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://"
+            }
+          },
+          "rightsPolicyUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "articleReviewRequired": {
+            "const": true
+          },
+          "conditions": {
+            "type": "string",
+            "minLength": 1
+          },
+          "requiredPublisherNames": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dimenticato.xyz/docs/reading-candidates.schema.json",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "collectedAt",
+    "candidates"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "collectedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "language",
+          "sourceTitle",
+          "sourceUrl",
+          "sourceName",
+          "registrySourceId",
+          "sourcePublishedAt",
+          "collectedAt",
+          "category",
+          "topics",
+          "level",
+          "status",
+          "editorialNote",
+          "verification"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "language": {
+            "enum": [
+              "it",
+              "fr",
+              "de",
+              "en"
+            ]
+          },
+          "sourceTitle": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "sourceName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "registrySourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourcePublishedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "collectedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "category": {
+            "enum": [
+              "technology",
+              "society",
+              "culture",
+              "environment",
+              "education",
+              "work-economy",
+              "health"
+            ]
+          },
+          "topics": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 40
+            },
+            "maxItems": 5,
+            "uniqueItems": true
+          },
+          "level": {
+            "enum": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "enum": [
+              "collected",
+              "verified",
+              "rejected"
+            ]
+          },
+          "editorialNote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verification": {
+            "type": "object",
+            "required": [
+              "workflowStage",
+              "readyForPublication",
+              "editorialReviewComplete"
+            ],
+            "properties": {
+              "workflowStage": {
+                "enum": [
+                  "discovered",
+                  "rights_verified",
+                  "editorial_review",
+                  "ready"
+                ]
+              },
+              "readyForPublication": {
+                "const": false
+              },
+              "editorialReviewComplete": {
+                "type": "boolean"
+              },
+              "rejectionReason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "fullText": {
+                "type": "object",
+                "required": [
+                  "accessible",
+                  "read",
+                  "url"
+                ],
+                "properties": {
+                  "accessible": {
+                    "type": "boolean"
+                  },
+                  "read": {
+                    "type": "boolean"
+                  },
+                  "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https://"
+                  },
+                  "checkedAt": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "notes": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              },
+              "originalDate": {
+                "type": "object",
+                "required": [
+                  "verified",
+                  "evidence",
+                  "evidenceUrl"
+                ],
+                "properties": {
+                  "verified": {
+                    "type": "boolean"
+                  },
+                  "evidence": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidenceUrl": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https://"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "nativeLanguage": {
+                "type": "object",
+                "required": [
+                  "verified",
+                  "evidence",
+                  "evidenceUrl"
+                ],
+                "properties": {
+                  "verified": {
+                    "type": "boolean"
+                  },
+                  "evidence": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidenceUrl": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https://"
+                  },
+                  "additionalEvidenceUrls": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "author": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "basis": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "caveat": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              },
+              "rights": {
+                "type": "object",
+                "required": [
+                  "verified",
+                  "adaptationAllowed",
+                  "publicRedistributionAllowed",
+                  "license",
+                  "licenseUrl",
+                  "evidence",
+                  "evidenceUrls",
+                  "scope",
+                  "exclusions",
+                  "attributionRequirements"
+                ],
+                "properties": {
+                  "verified": {
+                    "type": "boolean"
+                  },
+                  "adaptationAllowed": {
+                    "type": "boolean"
+                  },
+                  "publicRedistributionAllowed": {
+                    "type": "boolean"
+                  },
+                  "license": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "licenseUrl": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https://"
+                  },
+                  "evidence": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidenceUrls": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "format": "uri",
+                      "pattern": "^https://"
+                    }
+                  },
+                  "scope": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "exclusions": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "attributionRequirements": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "basis": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "caveat": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "licenseRetrievalNote": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reviewBeforeConversionRequired": {
+                    "type": "boolean"
+                  },
+                  "shareAlikeRequired": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "publisher": {
+                "type": "object",
+                "required": [
+                  "verified",
+                  "names",
+                  "evidenceUrl"
+                ],
+                "properties": {
+                  "verified": {
+                    "type": "boolean"
+                  },
+                  "names": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "evidenceUrl": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https://"
+                  },
+                  "institutionUrl": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              },
+              "freshness": {
+                "type": "object",
+                "required": [
+                  "asOf",
+                  "ageDays",
+                  "bucket"
+                ],
+                "properties": {
+                  "asOf": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "ageDays": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "bucket": {
+                    "enum": [
+                      "within_30_days",
+                      "within_90_days",
+                      "archive"
+                    ]
+                  }
+                },
+                "additionalProperties": false
+              },
+              "checkedAt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "duplicateCheck": {
+                "type": "object",
+                "properties": {
+                  "checkedAgainstArticleCount": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "checkedAt": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sourceUrlAlreadyPublished": {
+                    "type": "boolean"
+                  },
+                  "titleAlreadyPublished": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          },
+          "linkToArticleId": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-z0-9-]+$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "description": "Editorial intake metadata only. No candidate is publishable; verified means source evidence checked, not a reviewed adaptation. Cross-field rules are enforced by validate_reading_candidates.js."
+}
