@@ -1,0 +1,58 @@
+{
+  "storyId": "ec-languages-2026-09-26",
+  "sourceUrl": "https://commission.europa.eu/news-and-media/news/celebrating-power-languages-2026-09-26_de",
+  "sourceTitle": "Die Macht der Sprachen feiern",
+  "sourceAuthor": "European Commission, Directorate-General for Communication",
+  "sourcePublishedAt": "2026-09-26",
+  "editionDate": "2026-10-10",
+  "checkedAt": "2026-10-10",
+  "fullTextRead": true,
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "basisUrl": "https://commission.europa.eu/legal-notice_en",
+    "basisLocation": "Copyright notice, paragraphs following © European Union, 1995–2026",
+    "basisSummary": "EU-owned website content is CC BY 4.0 unless otherwise indicated; credit and indication of changes required. Additional rights may apply to third-party content, individuals and excluded logos. This edition uses article text facts only, no image or logo."
+  },
+  "sourceMap": [
+    {
+      "location": "Article paragraph 1",
+      "facts": "Europe >200 languages; EU 24 official languages and >60 regional/minority languages; 26 September language day."
+    },
+    {
+      "location": "Article paragraphs 2–3",
+      "facts": "Language diversity as shared heritage; learning languages connects people/cultures and supports personal development, careers and citizenship."
+    },
+    {
+      "location": "Article paragraph 4",
+      "facts": "2026 theme: languages connect; links to inclusion, democracy and social cohesion."
+    },
+    {
+      "location": "Article paragraph 5, first sentence only",
+      "facts": "Day started in 2001; observed both inside and outside EU."
+    }
+  ],
+  "excludedDetails": [
+    "No past conference invitation was presented as currently open.",
+    "No unsupported outcome of the announced events was asserted.",
+    "Source paragraph 5 anniversary wording conflicts with calendar arithmetic; omitted rather than repaired by inference."
+  ],
+  "reviewStatus": "passed-after-correction",
+  "sourceEvidenceReferences": [
+    "https://commission.europa.eu/news-and-media/news/celebrating-power-languages-2026-09-26_de (article paragraphs 1–5)",
+    "https://commission.europa.eu/legal-notice_en (Copyright notice)"
+  ],
+  "review": {
+    "report": "2026-10-10-review.md",
+    "type": "independent-model-assisted-review",
+    "sentencesReviewed": 43,
+    "glossesReviewed": 43,
+    "correction": "French sentence 7 parle contextual meaning corrected to 谈到；谈论 and rechecked.",
+    "limitations": [
+      "Not native-speaker human review",
+      "Not certified CEFR assessment",
+      "Final website attribution visibility not yet inspected"
+    ],
+    "integrationNote": "FR/DE catalog level normalized to A2, consistent with reviewer assessment; original levelReason retained."
+  }
+}

@@ -21,7 +21,7 @@ const TESTS_DIR = __dirname;
 const ROOT = path.resolve(TESTS_DIR, '..');
 
 const HTML_HARNESSES = ['test-quiz-engine.html', 'test-spaced-repetition.html'];
-const NODE_HARNESSES = ['check-icons.js', 'check-contrast.js', 'check-data-modules.js', 'test-french-data.js', 'test-german-course-data.js', 'test-storage.js', 'test-typing-game.js', 'test-typing-game-app.js', 'test-conjugation-app.js', 'test-shell-router.js', 'test-wordbooks.js', 'test-community-wordbooks.js', 'test-paths.js'];
+const NODE_HARNESSES = ['test-reading-route.js', 'test-pronunciation-lessons.js', 'test-reading.js', 'check-icons.js', 'check-contrast.js', 'check-data-modules.js', 'test-french-data.js', 'test-german-course-data.js', 'test-storage.js', 'test-typing-game.js', 'test-typing-game-app.js', 'test-conjugation-app.js', 'test-shell-router.js', 'test-wordbooks.js', 'test-community-wordbooks.js', 'test-paths.js'];
 
 // 数据集校验器。上面的 harness 一个都不 require data/<code>-*.js / data/vocab/*.js，
 // 生成数据和它的输入分头改动时（语法树重命名、词库重建）不会有任何测试变红——
@@ -29,6 +29,7 @@ const NODE_HARNESSES = ['check-icons.js', 'check-contrast.js', 'check-data-modul
 // 四种语言的词表（data/vocab/<lang>.js）统一由 validate_vocab.js 校验，
 // 各语言的专属规则是它里面的 per-language hook。
 const VALIDATORS = [
+  'scripts/validate_reading.js',
   'scripts/validate_vocab.js',
   // 模块数据（cognates/1 等）的统一校验：CHECKS 表，每个模块一个 validator + per-language hook
   'scripts/validate_modules.js',

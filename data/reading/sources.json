@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "checkedAt": "2026-10-10",
+  "policy": "Allowlist is not blanket republication permission. Check article ownership, exclusions, attribution, source date and license on every edition. Text only; never bypass access restrictions.",
+  "sources": [
+    {
+      "id": "european-commission-news",
+      "name": "European Commission News",
+      "url": "https://commission.europa.eu/news-and-media/news_en",
+      "languages": ["it", "fr", "de", "en"],
+      "license": "CC BY 4.0, unless otherwise indicated",
+      "licenseEvidence": "https://commission.europa.eu/legal-notice_en",
+      "conditions": "EU-owned article text only; exclude third-party works, images and logos unless separately cleared. Retain attribution, original link, license link and modification notice. Individual language pages may be missing or inaccessible."
+    },
+    {
+      "id": "global-voices",
+      "name": "Global Voices",
+      "url": "https://globalvoices.org/",
+      "languages": ["it", "fr", "de", "en"],
+      "license": "CC BY 3.0 Unported, article-level exceptions must be checked",
+      "licenseEvidence": "https://globalvoices.org/about/global-voices-attribution-policy/",
+      "conditions": "Credit original author and any named translator; link original and license; disclose adaptation. Exclude externally syndicated or content-sharing-agreement articles without independently verified rights. Image/audio rights are separate. No assumption of daily output in every language."
+    }
+  ],
+  "archiveOnly": {
+    "name": "Wikinews language editions",
+    "reason": "IT/DE homepages report closure on 2026-05-04 and read-only archival status. Not a current daily news feed. Licenses differ by language and publication date; verify each fixed revision before reuse."
+  }
+}

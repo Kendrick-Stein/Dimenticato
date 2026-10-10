@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "articles": [
+    {
+      "id": "2026-10-10-de-languages",
+      "lang": "de",
+      "date": "2026-10-10",
+      "title": "Sprachen bringen uns zusammen",
+      "titleZh": "语言让我们走得更近",
+      "summaryZh": "从欧洲语言日了解欧洲的语言多样性及学习语言的意义。原报道发表于2026年9月26日，本篇于10月10日整理供学习，并非当日新闻。",
+      "level": "A2"
+    },
+    {
+      "id": "2026-10-10-en-languages",
+      "lang": "en",
+      "date": "2026-10-10",
+      "title": "Languages can bring people together",
+      "titleZh": "语言让我们走得更近",
+      "summaryZh": "从欧洲语言日了解欧洲的语言多样性及学习语言的意义。原报道发表于2026年9月26日，本篇于10月10日整理供学习，并非当日新闻。",
+      "level": "B1"
+    },
+    {
+      "id": "2026-10-10-fr-languages",
+      "lang": "fr",
+      "date": "2026-10-10",
+      "title": "Les langues nous rapprochent",
+      "titleZh": "语言让我们走得更近",
+      "summaryZh": "从欧洲语言日了解欧洲的语言多样性及学习语言的意义。原报道发表于2026年9月26日，本篇于10月10日整理供学习，并非当日新闻。",
+      "level": "A2"
+    },
+    {
+      "id": "2026-10-10-it-languages",
+      "lang": "it",
+      "date": "2026-10-10",
+      "title": "Le lingue ci avvicinano",
+      "titleZh": "语言让我们走得更近",
+      "summaryZh": "从欧洲语言日了解欧洲的语言多样性及学习语言的意义。原报道发表于2026年9月26日，本篇于10月10日整理供学习，并非当日新闻。",
+      "level": "A2"
+    }
+  ]
+}

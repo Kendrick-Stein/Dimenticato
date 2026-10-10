@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dimenticato.xyz/docs/reading-article.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "storyId",
+    "lang",
+    "date",
+    "title",
+    "titleZh",
+    "summaryZh",
+    "level",
+    "levelReason",
+    "source",
+    "license",
+    "attribution",
+    "adaptation",
+    "sentences"
+  ],
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "storyId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lang": {
+      "enum": [
+        "it",
+        "fr",
+        "de",
+        "en"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "titleZh": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summaryZh": {
+      "type": "string",
+      "minLength": 1
+    },
+    "level": {
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    },
+    "levelReason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "name",
+        "title",
+        "url",
+        "publishedAt",
+        "lang"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publishedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lang": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "license": {
+      "type": "object",
+      "required": [
+        "name",
+        "url"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "attribution": {
+      "type": "string",
+      "minLength": 1
+    },
+    "adaptation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sentences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "zh",
+          "glosses"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "zh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "glosses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "surface",
+                "lemma",
+                "zh"
+              ],
+              "properties": {
+                "surface": {
+                  "type": "string"
+                },
+                "lemma": {
+                  "type": "string"
+                },
+                "zh": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
