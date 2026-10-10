@@ -1,0 +1,191 @@
+{
+  "schema": 1,
+  "id": "2026-10-10-fr-languages",
+  "storyId": "ec-languages-2026-09-26",
+  "lang": "fr",
+  "date": "2026-10-10",
+  "title": "Les langues nous rapprochent",
+  "titleZh": "语言让我们走得更近",
+  "summaryZh": "从欧洲语言日了解欧洲的语言多样性及学习语言的意义。原报道发表于2026年9月26日，本篇于10月10日整理供学习，并非当日新闻。",
+  "level": "A2",
+  "levelReason": "编辑估计 A1–A2：以短句和现在时为主；部分文化主题词及关系从句需要注释支持。这不是经认证的 CEFR 测评。 本文更接近有中文和词注辅助的 A2，不表示 A1 学习者能独立读懂。",
+  "source": {
+    "name": "European Commission — Directorate-General for Communication",
+    "title": "Die Macht der Sprachen feiern",
+    "url": "https://commission.europa.eu/news-and-media/news/celebrating-power-languages-2026-09-26_de",
+    "publishedAt": "2026-09-26",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://commission.europa.eu/legal-notice_en"
+  },
+  "attribution": "基于欧盟委员会传播总司2026年9月26日报道；原文 © European Union, 2026，依据 CC BY 4.0 使用。欧盟委员会未审核或认可本教学材料。",
+  "adaptation": "以已核查的德语报道为依据，重新编写、简化和调整句子顺序，并配中文译文、分级说明与语境词汇注释；外文为教学改写，非新闻原文逐句翻译；中文逐句对应本教学改写。未使用图片、标志或第三方作品。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "En Europe, on parle plus de 200 langues.",
+      "zh": "欧洲使用的语言超过200种。",
+      "glosses": [
+        {
+          "surface": "parle",
+          "lemma": "parler",
+          "zh": "说；使用（语言）",
+          "note": "动词，现在时",
+          "start": 14,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "L’Union européenne a 24 langues officielles.",
+      "zh": "欧盟有24种官方语言。",
+      "glosses": [
+        {
+          "surface": "officielles",
+          "lemma": "officiel",
+          "zh": "官方的",
+          "note": "形容词，阴性复数",
+          "start": 32,
+          "end": 43
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Elle compte aussi plus de 60 langues régionales ou minoritaires.",
+      "zh": "欧盟还有60多种地区语言或少数群体语言。",
+      "glosses": [
+        {
+          "surface": "compte",
+          "lemma": "compter",
+          "zh": "有；包含",
+          "note": "动词，现在时",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Le 26 septembre est la Journée européenne des langues.",
+      "zh": "9月26日是欧洲语言日。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Cette journée existe depuis 2001.",
+      "zh": "这个纪念日始于2001年。",
+      "glosses": [
+        {
+          "surface": "depuis",
+          "lemma": "depuis",
+          "zh": "自……以来",
+          "note": "介词",
+          "start": 21,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "On la célèbre aussi en dehors de l’Union européenne.",
+      "zh": "人们在欧盟以外的地方也庆祝这一纪念日。",
+      "glosses": [
+        {
+          "surface": "célèbre",
+          "lemma": "célébrer",
+          "zh": "庆祝",
+          "note": "动词，现在时",
+          "start": 6,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Dans un article du 26 septembre 2026, la Commission européenne parle des langues et de leurs avantages.",
+      "zh": "在2026年9月26日的一篇文章中，欧盟委员会谈到了语言及其益处。",
+      "glosses": [
+        {
+          "surface": "parle",
+          "lemma": "parler",
+          "zh": "谈到；谈论",
+          "note": "动词，现在时",
+          "start": 63,
+          "end": 68
+        },
+        {
+          "surface": "avantages",
+          "lemma": "avantage",
+          "zh": "益处",
+          "note": "名词，阳性复数",
+          "start": 93,
+          "end": 102
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Pour elle, apprendre des langues aide à découvrir d’autres cultures.",
+      "zh": "在委员会看来，学习语言有助于了解其他文化。",
+      "glosses": [
+        {
+          "surface": "apprendre",
+          "lemma": "apprendre",
+          "zh": "学习",
+          "note": "动词",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "surface": "découvrir",
+          "lemma": "découvrir",
+          "zh": "了解；发现",
+          "note": "动词",
+          "start": 40,
+          "end": 49
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Cela aide aussi à créer des liens entre les personnes.",
+      "zh": "这也有助于在人们之间建立联系。",
+      "glosses": [
+        {
+          "surface": "liens",
+          "lemma": "lien",
+          "zh": "联系",
+          "note": "名词，阳性复数",
+          "start": 28,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Parler plusieurs langues peut offrir de nouvelles possibilités de travail.",
+      "zh": "掌握多种语言可能带来新的工作机会。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "En 2026, le thème de cette journée met en avant les langues qui nous unissent.",
+      "zh": "2026年，这一纪念日的主题强调语言将我们联系起来。",
+      "glosses": [
+        {
+          "surface": "unissent",
+          "lemma": "unir",
+          "zh": "将……联系起来",
+          "note": "动词，现在时第三人称复数",
+          "start": 69,
+          "end": 77
+        }
+      ]
+    }
+  ]
+}

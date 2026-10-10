@@ -3129,3 +3129,22 @@ h1.page {
   #typingGameInput.typing-shake { animation: none; }
   .grammar-nav-sidebar { transition: none; }
 }
+
+/* Curated reading: editorial layout, text-only source rendering. */
+.reading-view { max-width: 860px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+.reading-view h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.2; margin: 1rem 0; }
+.reading-deck { font-size: 1.2rem; line-height: 1.7; }
+.reading-list { margin-top: 2rem; }
+.reading-card { border-top: 1px solid currentColor; padding: 1.5rem 0; }
+.reading-card > a { display: block; font-size: 1.5rem; line-height: 1.4; font-family: var(--serif); }
+.reading-controls, .reading-sentence-controls { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0; }
+.reading-sentence { border-top: 1px solid color-mix(in srgb, currentColor 20%, transparent); padding: 1.2rem 0; }
+.reading-foreign { font-size: 1.2rem; line-height: 1.9; }
+.reading-translation { line-height: 1.8; opacity: .85; margin-top: .7rem; }
+.reading-word { font: inherit; color: inherit; background: transparent; border: 0; border-bottom: 1px dashed currentColor; padding: 0; cursor: pointer; }
+.reading-word:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.reading-lookup { position: fixed; bottom: 1rem; right: 1rem; width: min(28rem, calc(100vw - 2rem)); max-height: 45vh; overflow: auto; background: var(--paper); color: var(--ink); border: 2px solid currentColor; box-shadow: 0 5px 25px #0002; padding: 1rem; z-index: 20; }
+.reading-source { margin-top: 2rem; border-top: 2px solid currentColor; padding-top: 1rem; overflow-wrap: anywhere; }
+.reading-hint { font-size: .9rem; line-height: 1.6; }
+.reading-view select { font: inherit; color: inherit; background: transparent; padding: .5rem; border: 1px solid currentColor; }
+.reading-view [hidden] { display: none !important; }
