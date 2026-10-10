@@ -1,0 +1,365 @@
+{
+  "schema": 1,
+  "id": "2026-10-10-fr-fleurs-abeilles",
+  "storyId": "inrae-fleurs-abeilles-2018-05-13",
+  "lang": "fr",
+  "date": "2026-10-10",
+  "contentType": "native-adaptation",
+  "title": "Des fleurs pour les abeilles",
+  "titleZh": "蜜蜂需要的花朵",
+  "summaryZh": "历史科普选读 · 原文2018-05-13。花朵为什么对蜜蜂重要？本篇依据2018年5月13日的法国机构科普文章作法语同语言分级改写，于2026年10月10日整理，属于科普选读，并非当日新闻。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2 辅助阅读：短句为主，含关系从句、复合过去时和未完成过去时；蜜蜂、花粉等主题词需要中文注释。A1学习者可借助逐句译文阅读；这不是经认证的 CEFR 测评。",
+  "source": {
+    "name": "INRAE",
+    "title": "Les fleurs, supermarchés essentiels des abeilles",
+    "url": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+    "publishedAt": "2018-05-13",
+    "lang": "fr",
+    "author": "Pierre-Yves Lerayer"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence 2.0 (Etalab)",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+  },
+  "attribution": "来源：INRAE，Pierre-Yves Lerayer，《Les fleurs, supermarchés essentiels des abeilles》，2018-05-13（页面所示发布日期；无另列更新日期），2026-10-10查阅。依据Licence Ouverte 2.0 (Etalab)进行分级改写与简中翻译；改编不代表INRAE认可。",
+  "adaptation": "本文依据INRAE法语文章制作，为Dimenticato分级改写及逐句简中翻译；不是原文逐字转载，不代表INRAE认可或审定。法语教学正文及中文翻译均为本次改编。",
+  "sentences": [
+    {
+      "id": "fr-bees-01",
+      "text": "Les abeilles ont besoin des fleurs pour se nourrir.",
+      "zh": "蜜蜂需要花朵来获取食物。",
+      "glosses": [
+        {
+          "surface": "abeilles",
+          "lemma": "abeille",
+          "zh": "蜜蜂",
+          "note": "阴性名词；文中为复数 les abeilles。"
+        },
+        {
+          "surface": "fleurs",
+          "lemma": "fleur",
+          "zh": "花；花朵",
+          "note": "阴性名词；文中为复数。"
+        },
+        {
+          "surface": "pour se nourrir",
+          "lemma": "pour se nourrir",
+          "zh": "为了获取食物；为了进食",
+          "note": "pour + 动词原形表示目的；se nourrir 意为进食、获取营养。"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-02",
+      "text": "Elles cherchent leur nourriture près de leur ruche, leur maison.",
+      "zh": "它们在蜂巢附近寻找食物，蜂巢就是它们的家。",
+      "glosses": [
+        {
+          "surface": "nourriture",
+          "lemma": "nourriture",
+          "zh": "食物",
+          "note": "阴性名词，常用作不可数名词。"
+        },
+        {
+          "surface": "ruche",
+          "lemma": "ruche",
+          "zh": "蜂巢；蜂箱",
+          "note": "阴性名词；这里指蜜蜂生活的地方。"
+        },
+        {
+          "surface": "près de leur ruche",
+          "lemma": "près de leur ruche",
+          "zh": "在它们的蜂巢附近",
+          "note": "près de + 地点表示在……附近。"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-03",
+      "text": "Dans les fleurs, elles trouvent du nectar, qui leur donne de l'énergie.",
+      "zh": "它们在花朵中找到花蜜，花蜜为它们提供能量。",
+      "glosses": [
+        {
+          "surface": "nectar",
+          "lemma": "nectar",
+          "zh": "花蜜",
+          "note": "阳性名词"
+        },
+        {
+          "surface": "énergie",
+          "lemma": "énergie",
+          "zh": "能量",
+          "note": "阴性名词"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-04",
+      "text": "Elles récoltent aussi du pollen, riche en protéines, pour les besoins du groupe.",
+      "zh": "它们也采集富含蛋白质的花粉，满足蜂群的需要。",
+      "glosses": [
+        {
+          "surface": "pollen",
+          "lemma": "pollen",
+          "zh": "花粉",
+          "note": "阳性名词；du pollen 表示一些花粉。"
+        },
+        {
+          "surface": "récoltent",
+          "lemma": "récolter",
+          "zh": "采集；收获",
+          "note": "现在时第三人称复数"
+        },
+        {
+          "surface": "protéines",
+          "lemma": "protéine",
+          "zh": "蛋白质",
+          "note": "阴性名词复数"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-05",
+      "text": "Elles vont d'une fleur à l'autre et transportent du pollen entre les plantes.",
+      "zh": "它们从一朵花飞到另一朵花，把花粉带到不同的植物之间。",
+      "glosses": [
+        {
+          "surface": "d'une fleur à l'autre",
+          "lemma": "d’une … à l’autre",
+          "zh": "从一朵花到另一朵花",
+          "note": "d’un/d’une … à l’autre 表示在同类事物之间移动"
+        },
+        {
+          "surface": "transportent",
+          "lemma": "transporter",
+          "zh": "运输；携带",
+          "note": "现在时第三人称复数"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-06",
+      "text": "Ce travail aide les plantes à se reproduire.",
+      "zh": "这项工作帮助植物繁殖。",
+      "glosses": [
+        {
+          "surface": "se reproduire",
+          "lemma": "se reproduire",
+          "zh": "繁殖",
+          "note": "自反动词原形"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-07",
+      "text": "Mais à certaines périodes de l'année, les fleurs sont moins nombreuses dans les champs.",
+      "zh": "但是，在一年中的某些时期，田野里的花比较少。",
+      "glosses": [
+        {
+          "surface": "moins nombreuses",
+          "lemma": "moins nombreux",
+          "zh": "数量更少的",
+          "note": "nombreuses 配合阴性复数 fleurs"
+        },
+        {
+          "surface": "champs",
+          "lemma": "champ",
+          "zh": "田野；农田",
+          "note": "阳性名词复数"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-08",
+      "text": "Sans assez de fleurs, les abeilles manquent de nourriture.",
+      "zh": "没有足够的花，蜜蜂就会缺少食物。",
+      "glosses": [
+        {
+          "surface": "manquent de nourriture",
+          "lemma": "manquent de nourriture",
+          "zh": "缺少食物",
+          "note": "manquer de + 名词表示缺少……；主语为复数，故用 manquent。"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-09",
+      "text": "Des chercheurs ont étudié ce problème avec des agriculteurs.",
+      "zh": "研究人员与农民一起研究了这个问题。",
+      "glosses": [
+        {
+          "surface": "chercheurs",
+          "lemma": "chercheur",
+          "zh": "研究人员",
+          "note": "阳性名词复数"
+        },
+        {
+          "surface": "agriculteurs",
+          "lemma": "agriculteur",
+          "zh": "农民",
+          "note": "阳性名词复数"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-10",
+      "text": "En automne, les agriculteurs ont planté des fleurs dans les champs pour nourrir les abeilles.",
+      "zh": "秋天，农民在田野里种花，为蜜蜂提供食物。",
+      "glosses": [
+        {
+          "surface": "En automne",
+          "lemma": "en automne",
+          "zh": "在秋天",
+          "note": "季节表达"
+        },
+        {
+          "surface": "ont planté",
+          "lemma": "planter",
+          "zh": "种植了",
+          "note": "复合过去时"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-11",
+      "text": "Grâce à ces fleurs, les abeilles étaient en meilleure santé.",
+      "zh": "多亏这些花，蜜蜂的健康状况更好了。",
+      "glosses": [
+        {
+          "surface": "Grâce à ces fleurs",
+          "lemma": "Grâce à ces fleurs",
+          "zh": "多亏这些花",
+          "note": "grâce à + 名词表示由于某个有利因素，常译为多亏……。"
+        },
+        {
+          "surface": "en meilleure santé",
+          "lemma": "en meilleure santé",
+          "zh": "健康状况更好",
+          "note": "比较表达"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-12",
+      "text": "Elles avaient alors plus de chances de survivre à l'hiver.",
+      "zh": "因此，它们更有可能熬过冬天。",
+      "glosses": [
+        {
+          "surface": "hiver",
+          "lemma": "hiver",
+          "zh": "冬天",
+          "note": "阳性名词；l’hiver 中 le 在元音前省音。"
+        },
+        {
+          "surface": "survivre",
+          "lemma": "survivre",
+          "zh": "存活；熬过",
+          "note": "survivre à：从……中存活下来"
+        }
+      ]
+    },
+    {
+      "id": "fr-bees-13",
+      "text": "Les haies et les bords des forêts aident aussi les abeilles à trouver assez de nourriture.",
+      "zh": "树篱和森林边缘也能帮助蜜蜂找到足够的食物。",
+      "glosses": [
+        {
+          "surface": "haies",
+          "lemma": "haie",
+          "zh": "树篱",
+          "note": "阴性名词复数"
+        },
+        {
+          "surface": "bords",
+          "lemma": "bord",
+          "zh": "边缘",
+          "note": "阳性名词复数"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "abeilles",
+        "lemma": "abeille",
+        "zh": "蜜蜂",
+        "note": "阴性名词；文中为复数 les abeilles。",
+        "sentenceId": "fr-bees-01"
+      },
+      {
+        "text": "fleurs",
+        "lemma": "fleur",
+        "zh": "花；花朵",
+        "note": "阴性名词；文中为复数。",
+        "sentenceId": "fr-bees-01"
+      },
+      {
+        "text": "nourriture",
+        "lemma": "nourriture",
+        "zh": "食物",
+        "note": "阴性名词，常用作不可数名词。",
+        "sentenceId": "fr-bees-02"
+      },
+      {
+        "text": "ruche",
+        "lemma": "ruche",
+        "zh": "蜂巢；蜂箱",
+        "note": "阴性名词；这里指蜜蜂生活的地方。",
+        "sentenceId": "fr-bees-02"
+      },
+      {
+        "text": "pollen",
+        "lemma": "pollen",
+        "zh": "花粉",
+        "note": "阳性名词；du pollen 表示一些花粉。",
+        "sentenceId": "fr-bees-04"
+      },
+      {
+        "text": "hiver",
+        "lemma": "hiver",
+        "zh": "冬天",
+        "note": "阳性名词；l’hiver 中 le 在元音前省音。",
+        "sentenceId": "fr-bees-12"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "pour se nourrir",
+        "zh": "为了获取食物；为了进食",
+        "note": "pour + 动词原形表示目的；se nourrir 意为进食、获取营养。",
+        "sentenceId": "fr-bees-01"
+      },
+      {
+        "text": "près de leur ruche",
+        "zh": "在它们的蜂巢附近",
+        "note": "près de + 地点表示在……附近。",
+        "sentenceId": "fr-bees-02"
+      },
+      {
+        "text": "manquent de nourriture",
+        "zh": "缺少食物",
+        "note": "manquer de + 名词表示缺少……；主语为复数，故用 manquent。",
+        "sentenceId": "fr-bees-08"
+      },
+      {
+        "text": "Grâce à ces fleurs",
+        "zh": "多亏这些花",
+        "note": "grâce à + 名词表示由于某个有利因素，常译为多亏……。",
+        "sentenceId": "fr-bees-11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-bees-01",
+        "note": "avoir besoin de + 名词表示需要……；de + les 合并为 des。句末 pour + 动词原形说明目的。"
+      },
+      {
+        "sentenceId": "fr-bees-11",
+        "note": "grâce à 引出有利原因；en meilleure santé 表示健康状况更好。étaient 是 être 的未完成过去时复数形式，用来描述研究中的过去状态。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "articleId": "2026-10-10-en-satellites-everyday-life",
+  "checkedAt": "2026-10-10",
+  "sourceUrl": "https://www.gov.uk/government/news/better-wifi-on-remote-trains-and-access-to-cutting-edge-tech-for-british-farmers-through-13-million-boost-to-drive-next-gen-satellite-communications",
+  "sourceAuthor": "UK Space Agency; Department for Business, Innovation, Science and Trade; Baroness Lloyd of Effra CBE（页面 From 栏）",
+  "sourcePublishedAt": "2026-08-18",
+  "sourceLanguage": "en",
+  "nativeEvidence": {
+    "assessment": "High-confidence English-origin UK institutional press release.",
+    "evidence": [
+      "GOV.UK classifies the English page as a Press release from UK Space Agency and the named UK department/minister.",
+      "The English press release reports a UK funding announcement and UK railway/agriculture projects, with UK institutional press material.",
+      "No translator credit or foreign-language upstream news story appears. This reading does not share an upstream source with IT/FR/DE."
+    ],
+    "uncertainty": "The page does not provide a drafting-history certificate; English-original provenance is an editorial inference, not a claim about an individual writer’s first language."
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidenceUrl": "https://www.gov.uk/government/news/better-wifi-on-remote-trains-and-access-to-cutting-edge-tech-for-british-farmers-through-13-million-boost-to-drive-next-gen-satellite-communications",
+    "evidenceLocation": "Article footer: all content OGL v3 except otherwise stated, © Crown copyright; web lines 206–208.",
+    "supportingUrl": "https://www.gov.uk/help/terms-conditions",
+    "supportingLocation": "Using GOV.UK content section, lines 91–98: most content Crown copyright and OGL; special exceptions credited.",
+    "termsVerified": "The National Archives official search result showed worldwide royalty-free rights to copy, publish, distribute, adapt and commercially/noncommercially exploit, conditional on attribution and non-endorsement. Direct opening of licence page returned 403; do not claim a successful direct fetch.",
+    "rightsUsed": "English same-language simplification, Chinese translation, public educational republication. Exact standard OGL attribution sentence is retained."
+  },
+  "sourceMap": [
+    {
+      "sentenceIds": [
+        "s1"
+      ],
+      "location": "Body opening explanation on everyday satellite services",
+      "facts": "Satellites support connectivity and everyday services; remote areas addressed by projects."
+    },
+    {
+      "sentenceIds": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "location": "Publication metadata and body opening, lines 61–72",
+      "facts": "18 August 2026, 16 projects, £13m government investment; train internet and crop-monitoring examples."
+    },
+    {
+      "sentenceIds": [
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "location": "SODOR paragraph and Notes to Editors SODOR item",
+      "facts": "West Highland Line broadband trial; existing mobile-network gaps; intended reliable passenger connectivity."
+    },
+    {
+      "sentenceIds": [
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "location": "GAUFF body paragraph and project listing",
+      "facts": "Affordable satellite-enabled sensors under development; current farm/crop data, decision support and waste reduction; rural areas with poor/no coverage."
+    },
+    {
+      "sentenceIds": [
+        "s12"
+      ],
+      "location": "Body paragraph following STARS, line 86",
+      "facts": "Other projects target future lunar and deep-space communications."
+    }
+  ],
+  "excluded": [
+    "All images, logos and third-party image rights.",
+    "All quoted third-party corporate statements, including Farmer Charlie CEO quotations.",
+    "External statistical report and external links.",
+    "Claims that announced services are already universally available, and company valuations/job statistics."
+  ],
+  "review": {
+    "type": "independent editorial check",
+    "reviewer": "Independent editorial review",
+    "status": "passed-after-correction",
+    "corrections": [
+      "CEFR explanation no longer incorrectly claims a relative clause.",
+      "s12 uses aim to improve to preserve prospective status.",
+      "s11 Chinese made more natural."
+    ],
+    "checks": [
+      "Independently opened official article and rights evidence",
+      "Checked facts, original-language quality, Chinese translations, glossary and learning summary",
+      "Verified all phrase/word substrings and sentence references"
+    ],
+    "limitations": [
+      "Not human native-speaker review",
+      "Not certified CEFR assessment",
+      "Drafting-language origin inferred from institutional editorial evidence, not a publisher certificate"
+    ]
+  }
+}

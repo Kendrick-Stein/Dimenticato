@@ -1,29 +1,92 @@
 {
   "schema": 1,
   "checkedAt": "2026-10-10",
-  "policy": "Allowlist is not blanket republication permission. Check article ownership, exclusions, attribution, source date and license on every edition. Text only; never bypass access restrictions.",
+  "policy": "Candidate list only, not blanket republication permission. Independently select a different original-language institutional source/article for IT, FR, DE and EN. Confirm article ownership, adaptation/translation/publication rights, exclusions, attribution, source language provenance and date for every edition. Never fill language slots by translating a common article. If evidence or rights are insufficient, skip that language/day. Text only; no images/logos/third-party quotations without separate clearance; never bypass access restrictions.",
   "sources": [
     {
       "id": "european-commission-news",
       "name": "European Commission News",
       "url": "https://commission.europa.eu/news-and-media/news_en",
-      "languages": ["it", "fr", "de", "en"],
+      "languages": [
+        "it",
+        "fr",
+        "de",
+        "en"
+      ],
       "license": "CC BY 4.0, unless otherwise indicated",
       "licenseEvidence": "https://commission.europa.eu/legal-notice_en",
-      "conditions": "EU-owned article text only; exclude third-party works, images and logos unless separately cleared. Retain attribution, original link, license link and modification notice. Individual language pages may be missing or inaccessible."
+      "conditions": "EU-owned article text only; exclude third-party works, images and logos unless separately cleared. Retain attribution, original link, license link and modification notice. Individual language pages may be missing or inaccessible.",
+      "nativeLanguageCaution": "A translated locale or matching language code does not establish original-language authorship. This publisher cannot be treated as a blanket native-language source. Check each original author, translator/republishing markers and article provenance; legacy editions remain historical adaptations."
     },
     {
       "id": "global-voices",
       "name": "Global Voices",
       "url": "https://globalvoices.org/",
-      "languages": ["it", "fr", "de", "en"],
+      "languages": [
+        "it",
+        "fr",
+        "de",
+        "en"
+      ],
       "license": "CC BY 3.0 Unported, article-level exceptions must be checked",
       "licenseEvidence": "https://globalvoices.org/about/global-voices-attribution-policy/",
-      "conditions": "Credit original author and any named translator; link original and license; disclose adaptation. Exclude externally syndicated or content-sharing-agreement articles without independently verified rights. Image/audio rights are separate. No assumption of daily output in every language."
+      "conditions": "Credit original author and any named translator; link original and license; disclose adaptation. Exclude externally syndicated or content-sharing-agreement articles without independently verified rights. Image/audio rights are separate. No assumption of daily output in every language.",
+      "nativeLanguageCaution": "A translated locale or matching language code does not establish original-language authorship. This publisher cannot be treated as a blanket native-language source. Check each original author, translator/republishing markers and article provenance; legacy editions remain historical adaptations."
+    },
+    {
+      "id": "ingv-italian-press",
+      "name": "INGV Ufficio Stampa",
+      "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa",
+      "languages": [
+        "it"
+      ],
+      "license": "CC BY 4.0 for INGV-published content; verify each article",
+      "licenseEvidence": "https://www.ingv.it/note-legali",
+      "verifiedExample": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/inquinamento-nuove-immagini-radar-satellitari-aiutano-a-individuare-dallo-spazio-la-plastica-in-mare",
+      "conditions": "Use INGV-owned Italian text. Article footer must retain CC BY4 statement and no conflicting text credit. Exclude images, videos, logos and linked journal-paper text. Credit source, date, licence and modifications."
+    },
+    {
+      "id": "inrae-french-news",
+      "name": "INRAE Actualités",
+      "url": "https://www.inrae.fr/actualites",
+      "languages": [
+        "fr"
+      ],
+      "license": "Licence Ouverte 2.0 (Etalab), public institutional text unless otherwise stated",
+      "licenseEvidence": "https://www.inrae.fr/conditions-generales-dutilisation",
+      "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+      "verifiedExample": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
+      "conditions": "Verify article authorship and no third-party text/other-rights/ND/all-rights-reserved notice. Credit named author, INRAE, source URL and available source update/publication date; identify modifications and no endorsement. Do not reuse photos/videos/logos. Historical first edition is not a daily-news feed."
+    },
+    {
+      "id": "eskp-german-science",
+      "name": "ESKP / GFZ German science features",
+      "url": "https://themenspezial.eskp.de/",
+      "languages": [
+        "de"
+      ],
+      "license": "CC BY 4.0 only where article-level PDF or publisher notice clearly covers text",
+      "licenseEvidence": "https://www.eskp.de/impressum/",
+      "verifiedExample": "https://themenspezial.eskp.de/fileadmin/user_upload/PDFs/biodiversitaet/einzelkapitel/7-8-Was_macht_ein_Meeresschutzgebiet_erfolgreich.pdf",
+      "conditions": "Historical science-reading candidate, not a current daily-news feed. Verify named authors, German bibliographic origin, specific text licence and date precision. Exclude all maps/photos/logos and references. Do not propagate old policy or statistics as current. Credit authors, publisher, DOI, licence and modifications."
+    },
+    {
+      "id": "uk-space-agency-english-news",
+      "name": "UK Space Agency / GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/uk-space-agency",
+      "languages": [
+        "en"
+      ],
+      "license": "Open Government Licence v3.0, except where otherwise stated",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "verifiedExample": "https://www.gov.uk/government/news/better-wifi-on-remote-trains-and-access-to-cutting-edge-tech-for-british-farmers-through-13-million-boost-to-drive-next-gen-satellite-communications",
+      "conditions": "Use UK public-sector English press-release narrative, not third-party company quotations or images. Check page-level OGL footer and exceptions. Retain standard OGL attribution sentence, provider/source/date and modification notice; no endorsement. Distinguish plans from delivered outcomes."
     }
   ],
   "archiveOnly": {
     "name": "Wikinews language editions",
     "reason": "IT/DE homepages report closure on 2026-05-04 and read-only archival status. Not a current daily news feed. Licenses differ by language and publication date; verify each fixed revision before reuse."
-  }
+  },
+  "freshnessPolicy": "Prioritize each institution’s current original-language news. The first FR (2018-05-13) and DE (2020-02) selections are explicitly labeled historical science reading because their article-level rights and provenance are well evidenced. They are not same-day news or permission to repeatedly mine archives merely to satisfy a daily quota. Preserve original source dates and label historical selections prominently on cards."
 }

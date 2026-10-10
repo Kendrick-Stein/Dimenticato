@@ -1,0 +1,346 @@
+{
+  "schema": 1,
+  "id": "2026-10-10-en-satellites-everyday-life",
+  "storyId": "uksa-satellite-projects-2026-08-18",
+  "lang": "en",
+  "date": "2026-10-10",
+  "contentType": "native-adaptation",
+  "title": "Satellites for trains and farms",
+  "titleZh": "服务火车与农场的卫星",
+  "summaryZh": "英国航天局公布支持卫星通信项目的计划，包括改善列车网络与帮助农民监测作物。原报道发表于2026年8月18日；本篇是英语同语言分级改写，所述项目目标不代表已经全部实现。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：包含目的表达、较长的不定式结构、被动进行时及计划与可能性的区分，卫星通信词汇附中文注释。这不是经认证的 CEFR 测评。",
+  "source": {
+    "name": "UK Space Agency / GOV.UK",
+    "title": "Better WiFi on remote trains and access to cutting edge tech for British farmers through £13 million boost to drive next-gen satellite communications",
+    "url": "https://www.gov.uk/government/news/better-wifi-on-remote-trains-and-access-to-cutting-edge-tech-for-british-farmers-through-13-million-boost-to-drive-next-gen-satellite-communications",
+    "publishedAt": "2026-08-18",
+    "lang": "en",
+    "author": "UK Space Agency; Department for Business, Innovation, Science and Trade; Baroness Lloyd of Effra CBE（页面 From 栏）"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidenceUrl": "https://www.gov.uk/government/news/better-wifi-on-remote-trains-and-access-to-cutting-edge-tech-for-british-farmers-through-13-million-boost-to-drive-next-gen-satellite-communications"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. 原文 © Crown copyright，2026年8月18日，发布者见来源信息。Dimenticato 作英语教学改写及中文翻译；不代表英国政府或英国航天局审核、认可本材料。",
+  "adaptation": "依据 GOV.UK 上英国航天局的英语新闻稿作同语言分级改写，保留计划与预计成果的区别，并配逐句中文翻译。未复用第三方企业代表引语、图片、标志或外链材料；没有将意、法、德语文章翻译后冒充英语原生来源。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Satellites can support everyday services, even in places far from towns.",
+      "zh": "即使在远离城镇的地方，卫星也能为日常服务提供支持。",
+      "glosses": [
+        {
+          "surface": "Satellites",
+          "lemma": "satellite",
+          "zh": "卫星",
+          "note": "名词复数"
+        },
+        {
+          "surface": "far from",
+          "lemma": "far from",
+          "zh": "远离",
+          "note": "描述位置关系"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "On 18 August 2026, the UK Space Agency announced support for sixteen projects.",
+      "zh": "2026年8月18日，英国航天局宣布支持16个项目。",
+      "glosses": [
+        {
+          "surface": "announced",
+          "lemma": "announce",
+          "zh": "宣布",
+          "note": "一般过去时"
+        },
+        {
+          "surface": "support",
+          "lemma": "support",
+          "zh": "支持；资助",
+          "note": "此处为名词"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "The government is investing thirteen million pounds in new satellite communication technology.",
+      "zh": "英国政府正向新的卫星通信技术投入1300万英镑。",
+      "glosses": [
+        {
+          "surface": "investing",
+          "lemma": "invest",
+          "zh": "投资；投入资金",
+          "note": "invest in：投资于"
+        },
+        {
+          "surface": "communication",
+          "lemma": "communication",
+          "zh": "通信；交流",
+          "note": "此处修饰 technology"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Two projects focus on improving train internet and helping farmers monitor their crops.",
+      "zh": "其中两个项目着重改善列车网络，并帮助农民监测作物。",
+      "glosses": [
+        {
+          "surface": "focus on",
+          "lemma": "focus on",
+          "zh": "着重于；关注",
+          "note": "on 后接名词或动词-ing形式"
+        },
+        {
+          "surface": "crops",
+          "lemma": "crop",
+          "zh": "庄稼；作物",
+          "note": "名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "One project will test satellite broadband on Scotland’s West Highland Line.",
+      "zh": "一个项目将在苏格兰的西高地铁路线上测试卫星宽带。",
+      "glosses": [
+        {
+          "surface": "broadband",
+          "lemma": "broadband",
+          "zh": "宽带",
+          "note": "网络连接技术"
+        },
+        {
+          "surface": "will test",
+          "lemma": "test",
+          "zh": "将测试",
+          "note": "计划中的行动"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Some parts of this route are hard for ordinary mobile networks to reach.",
+      "zh": "这条线路的部分路段很难被普通移动通信网络覆盖。",
+      "glosses": [
+        {
+          "surface": "route",
+          "lemma": "route",
+          "zh": "路线；线路",
+          "note": "此处指铁路线路"
+        },
+        {
+          "surface": "reach",
+          "lemma": "reach",
+          "zh": "到达；覆盖",
+          "note": "此处指网络信号覆盖"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The trial aims to give passengers a more reliable connection during their journey.",
+      "zh": "这项试验旨在为乘客提供旅途中更可靠的网络连接。",
+      "glosses": [
+        {
+          "surface": "aims to",
+          "lemma": "aim to",
+          "zh": "旨在；目标是",
+          "note": "后接动词原形"
+        },
+        {
+          "surface": "reliable",
+          "lemma": "reliable",
+          "zh": "可靠的",
+          "note": "形容词"
+        },
+        {
+          "surface": "journey",
+          "lemma": "journey",
+          "zh": "旅程",
+          "note": "可数名词"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Another project is developing low-cost sensors for farmers.",
+      "zh": "另一个项目正在为农民开发低成本传感器。",
+      "glosses": [
+        {
+          "surface": "developing",
+          "lemma": "develop",
+          "zh": "开发；研制",
+          "note": "现在进行时"
+        },
+        {
+          "surface": "sensors",
+          "lemma": "sensor",
+          "zh": "传感器",
+          "note": "名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "These devices will use satellite links to send up-to-date information about land and crops.",
+      "zh": "这些设备将通过卫星连接，传送有关土地和作物的最新信息。",
+      "glosses": [
+        {
+          "surface": "devices",
+          "lemma": "device",
+          "zh": "设备；装置",
+          "note": "名词复数"
+        },
+        {
+          "surface": "up-to-date",
+          "lemma": "up-to-date",
+          "zh": "最新的",
+          "note": "带连字符的形容词"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Farmers could use the data to make better decisions and reduce waste.",
+      "zh": "农民可以利用这些数据作出更好的决策，并减少浪费。",
+      "glosses": [
+        {
+          "surface": "make better decisions",
+          "lemma": "make a decision",
+          "zh": "作出更好的决策",
+          "note": "make decisions 是常用搭配"
+        },
+        {
+          "surface": "reduce",
+          "lemma": "reduce",
+          "zh": "减少",
+          "note": "动词原形"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "The technology is being designed for rural areas with little or no internet coverage.",
+      "zh": "这项技术正面向网络覆盖不足或完全没有网络的乡村地区进行设计。",
+      "glosses": [
+        {
+          "surface": "rural",
+          "lemma": "rural",
+          "zh": "乡村的；农村的",
+          "note": "形容词"
+        },
+        {
+          "surface": "coverage",
+          "lemma": "coverage",
+          "zh": "覆盖范围",
+          "note": "此处指网络覆盖"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Other projects aim to improve communication systems for future missions to the Moon and deep space.",
+      "zh": "其他项目旨在改进通信系统，为未来的月球和深空任务提供支持。",
+      "glosses": [
+        {
+          "surface": "missions",
+          "lemma": "mission",
+          "zh": "任务",
+          "note": "此处指航天任务"
+        },
+        {
+          "surface": "deep space",
+          "lemma": "deep space",
+          "zh": "深空",
+          "note": "名词词组"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "announced",
+        "lemma": "announce",
+        "zh": "宣布",
+        "note": "announce 的过去式；新闻常用词",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "crops",
+        "lemma": "crop",
+        "zh": "庄稼；作物",
+        "note": "可数名词复数",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "broadband",
+        "lemma": "broadband",
+        "zh": "宽带",
+        "note": "网络与通信话题常用词",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "reliable",
+        "lemma": "reliable",
+        "zh": "可靠的",
+        "note": "a reliable connection：可靠的网络连接",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "sensors",
+        "lemma": "sensor",
+        "zh": "传感器",
+        "note": "sensor 的复数形式",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "rural",
+        "lemma": "rural",
+        "zh": "乡村的；农村的",
+        "note": "rural areas：乡村地区",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "far from",
+        "zh": "远离",
+        "note": "far from towns：远离城镇",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "focus on",
+        "zh": "着重于；关注",
+        "note": "on 后接动词时用-ing形式",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "aims to",
+        "zh": "旨在；目标是",
+        "note": "aim to + 动词原形；表达目标而非已经达成的结果",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "make better decisions",
+        "zh": "作出更好的决策",
+        "note": "make a decision / make decisions 是常见搭配",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "be hard for someone/something to do：对某人或某物来说做……很难。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "could 表示可能的用途；use something to do something 表示利用某物做某事。"
+      }
+    ]
+  }
+}

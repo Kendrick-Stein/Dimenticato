@@ -1,0 +1,166 @@
+{
+  "articleId": "2026-10-10-de-meeresschutz",
+  "checkedAt": "2026-10-10",
+  "source": {
+    "language": "de",
+    "sourceUrl": "https://themenspezial.eskp.de/biodiversitaet-im-meer-und-an-land/inhalt/vielfalt-im-meer-erhalten/meereschutzgebiete-erfolgreich-machen-937207/",
+    "sourceTitle": "Was macht ein Meeresschutzgebiet erfolgreich?",
+    "author": "Katharina Teschke; Thomas Brey",
+    "authors": [
+      "Dr. Katharina Teschke",
+      "Prof. Dr. Thomas Brey"
+    ],
+    "publisher": "Earth System Knowledge Platform (ESKP), Helmholtz-Zentrum Potsdam – Deutsches GeoForschungsZentrum GFZ",
+    "authorAffiliation": "Helmholtz-Institut für Funktionelle Marine Biodiversität (HIFMB); Alfred-Wegener-Institut, Helmholtz-Zentrum für Polar- und Meeresforschung (AWI)",
+    "date": "2020-02",
+    "datePrecision": "month",
+    "dateNote": "文章所在专题印记页载明 Stand: Februar 2020；网页引用建议载明2020。未发现可靠的精确发布日期，不补造日。",
+    "doi": "10.2312/eskp.2020.1.7.8",
+    "pdfUrl": "https://themenspezial.eskp.de/fileadmin/user_upload/PDFs/biodiversitaet/einzelkapitel/7-8-Was_macht_ein_Meeresschutzgebiet_erfolgreich.pdf",
+    "repositoryCopyUrl": "https://epic.awi.de/id/eprint/51392/1/7-8_Biodiverstiaet_Meeresschutzgebiet.pdf",
+    "license": "CC BY 4.0",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "licenseEvidenceUrl": "https://themenspezial.eskp.de/fileadmin/user_upload/PDFs/biodiversitaet/einzelkapitel/7-8-Was_macht_ein_Meeresschutzgebiet_erfolgreich.pdf#page=5",
+    "licenseEvidence": "该篇文章独立PDF末页的Nutzungsrechte/Impressum明确将文本、照片和图表置于CC BY 4.0下，另有标示者除外。文本未标示其他许可；ESKP主站Impressum的Nutzungsrechte另行确认同一政策。",
+    "siteLicenseUrl": "https://www.eskp.de/impressum/",
+    "attribution": "根据 Katharina Teschke、Thomas Brey《Was macht ein Meeresschutzgebiet erfolgreich?》（2020，ESKP/GFZ，doi:10.2312/eskp.2020.1.7.8）改写及翻译。原文采用 CC BY 4.0。此版本进行了节选、德语难度简化、重新组织及简体中文翻译；原作者和出版机构未参与本改写，也不代表其认可。",
+    "adaptationLicense": "CC BY 4.0",
+    "nativeLanguageEvidence": "出版方直接发布的德语原创署名科普章节，有独立DOI及2020年德语专著章节引用；两位作者是该领域AWI/HIFMB研究者。PDF和网页均无译者、译自英语或转载英语文章的声明。德国国家图书馆记录以Teschke与Brey为Verfasser，并将GFZ列为2020年出版方，信息由AWI机构库提供。",
+    "nativeLanguageConfidence": "high, bibliographic inference",
+    "nativeLanguageUncertainty": "公开页面没有逐字声称“最初以德语撰写”。德语原生判断来自原始署名、出版与文献记录，而非仅凭页面语言；不能仅凭公开资料证明作者写作过程。其英语参考文献只是引用的研究资料，不是所改写文章的英语原文。",
+    "catalogUrl": "https://katalog.dnb.de/DE/resource.html?id=1291539204&v=plist",
+    "verifiedAt": "2026-10-10",
+    "thirdPartyExclusions": [
+      "网页题图：Alfred-Wegener-Institut/Mario Hoppmann，不使用",
+      "图1地图：mit freundlicher Genehmigung von Cassandra Brooks，不使用",
+      "图2照片：Jessica Meir，不使用",
+      "机构标识、所有照片图表及被引用第三方文献的原文均不复制"
+    ],
+    "temporalScope": "仅改写关于目标、措施、实施和监督的一般性内容；不沿用2020年的保护面积、比例、政策目标或当时尚待通过的保护区状态。"
+  },
+  "verification": {
+    "license": [
+      {
+        "url": "https://themenspezial.eskp.de/fileadmin/user_upload/PDFs/biodiversitaet/einzelkapitel/7-8-Was_macht_ein_Meeresschutzgebiet_erfolgreich.pdf#page=5",
+        "location": "独立PDF第5页（Impressum），最后两行",
+        "finding": "该篇文章附带明确的CC BY 4.0文本许可，不只是图像许可。"
+      },
+      {
+        "url": "https://www.eskp.de/impressum/",
+        "location": "Nutzungsrechte",
+        "finding": "文本、照片和图形适用CC BY 4.0，另有标明的许可除外。"
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by/4.0/deed.de",
+        "location": "Sie dürfen / Unter folgenden Bedingungen",
+        "finding": "允许复制、传播、改作和商业使用；需署名、链接许可、说明修改且不得暗示原作者背书。中文翻译与分级改写属允许的改作。"
+      }
+    ],
+    "native": [
+      {
+        "url": "https://themenspezial.eskp.de/biodiversitaet-im-meer-und-an-land/inhalt/vielfalt-im-meer-erhalten/meereschutzgebiete-erfolgreich-machen-937207/",
+        "location": "作者栏；末尾Zitiervorschlag",
+        "finding": "直接署名Teschke、Brey的德语科普文章，独立DOI，GFZ出版德语专题章节，非标示译文。"
+      },
+      {
+        "url": "https://katalog.dnb.de/DE/resource.html?id=1291539204&v=plist",
+        "location": "Beteiligt / Erschienen / Datenlieferant",
+        "finding": "德国国家图书馆以两位研究者为作者、GFZ为2020年出版者，记录由AWI机构库提供。"
+      }
+    ],
+    "factMapping": [
+      {
+        "sentenceIds": [
+          "de-marine-01",
+          "de-marine-02"
+        ],
+        "sourceLocation": "原文开头关于物种、栖息地和生态系统保护的段落；PDF印刷页179",
+        "summary": "保留海洋动物和栖息地保护的核心背景；具体动物取自原文鱼类、蟹类、海豹例子。"
+      },
+      {
+        "sentenceIds": [
+          "de-marine-03",
+          "de-marine-04"
+        ],
+        "sourceLocation": "PDF印刷页179，关于防止Überfischung及Schutzräume zur Erholung",
+        "summary": "将过度捕捞及种群恢复简化为不应捕捞太多、鱼类种群可逐渐恢复；不承诺必然恢复。"
+      },
+      {
+        "sentenceIds": [
+          "de-marine-05",
+          "de-marine-06"
+        ],
+        "sourceLocation": "PDF印刷页179，三因素清单与Schutzziele段落",
+        "summary": "保护目标应清晰、合理，明确保护对象。"
+      },
+      {
+        "sentenceIds": [
+          "de-marine-07",
+          "de-marine-08"
+        ],
+        "sourceLocation": "PDF印刷页179，海豹及其Beuteorganismen例子",
+        "summary": "以海豹为例，保护动物时要考虑其作为食物的猎物；简化使用Nahrung。"
+      },
+      {
+        "sentenceIds": [
+          "de-marine-09",
+          "de-marine-10"
+        ],
+        "sourceLocation": "PDF印刷页179末，maßgeschneidert、Nicht-Entnahmegebiete",
+        "summary": "规则应适应保护目标；某些禁止取用资源的分区也禁止捕鱼，未扩张成所有海洋保护区全面禁渔。"
+      },
+      {
+        "sentenceIds": [
+          "de-marine-11",
+          "de-marine-12",
+          "de-marine-13"
+        ],
+        "sourceLocation": "PDF印刷页180，Politischer Wille und die Kooperation mit Interessensgruppen sind entscheidend",
+        "summary": "规则须落实，需政治意愿、利益相关方合作、经费和人手来实施监督。"
+      },
+      {
+        "sentenceIds": [
+          "de-marine-14"
+        ],
+        "sourceLocation": "PDF印刷页179，Eine Erfolgskontrolle ist essentiell",
+        "summary": "必须检查保护目标是否实现。"
+      }
+    ],
+    "excludedCandidates": [
+      {
+        "source": "DLR一般新闻",
+        "reason": "网站一般使用条款不能保证文本改作权；许多标示CC BY-NC-ND的内容尤其不允许改作。仅有图片许可不够。"
+      },
+      {
+        "source": "Helmholtz主站一般新闻",
+        "reason": "Impressum默认保留权利，复制授权不等于翻译改写许可；未使用。"
+      }
+    ],
+    "checks": {
+      "sentenceCount": 14,
+      "germanWordCountWhitespace": 145,
+      "learningWords": 6,
+      "learningPhrases": 4,
+      "learningSentences": 2,
+      "allSummaryTextIsExactSentenceSubstring": true,
+      "examplePolicy": "所有词汇、词组和好句均直接引用本分级改写中的原句；没有把编辑例句伪装为来源原句。"
+    }
+  },
+  "independentReview": {
+    "reviewer": "Independent editorial review",
+    "status": "passed",
+    "checks": [
+      "Opened source article separately and matched factual claims sentence by sentence",
+      "Checked original-language institutional authorship and licence basis",
+      "No external image, map, logo or third-party quotation reused",
+      "Learning-summary references and Chinese meanings checked"
+    ],
+    "limits": [
+      "No human native-speaker review",
+      "CEFR estimate, not certified",
+      "Original drafting-language provenance is a supported inference, not a publisher certificate"
+    ],
+    "type": "independent editorial check"
+  }
+}
