@@ -51,7 +51,7 @@ function setup() {
     replaceState: (_state, _title, hash) => { w.location.hash = hash; }
   };
   const context = vm.createContext(w);
-  ['lib/utils.js', 'lib/languages.js', 'lib/storage.js', 'lib/shell.js', 'reading-app.js'].forEach(file => {
+  ['lib/utils.js', 'lib/languages.js', 'lib/storage.js', 'lib/shell.js', 'lib/reading-catalog.js','reading-app.js'].forEach(file => {
     vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8'), context, { filename: file });
   });
   w.fetch = async () => ({ ok: true, json: async () => ({ schema: 1, articles: [] }) });

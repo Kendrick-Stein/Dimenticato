@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-10",
+  "checks": [
+    {
+      "source": "Umweltbundesamt",
+      "rightsUrl": "https://www.umweltbundesamt.de/datenschutz-haftung-urheberrecht",
+      "reason": "Default license for agency-created website texts is CC BY-NC-ND 4.0. The separate permissive data provision must not be extrapolated to articles."
+    },
+    {
+      "source": "DWD",
+      "rightsUrl": "https://kunden.dwd.de/agroprog/STYLES/copyright.jsp",
+      "reason": "Open geodata/weather-climate information terms are not a blanket license for all editorial text; other content requires express permission."
+    },
+    {
+      "source": "DLR",
+      "rightsUrl": "https://windheat.dlr.de/de/nutzungshinweise",
+      "reason": "Terms explicitly say content with only a DLR credit is not automatically CC licensed; CC BY-NC-ND media and press reuse clauses do not establish general public translation/adaptation rights."
+    },
+    {
+      "source": "Helmholtz main website",
+      "rightsUrl": "https://www.helmholtz.de/impressum/",
+      "reason": "Main website reserves rights and permits certain informational copying, printing and distribution; no sufficiently clear general adaptation grant established."
+    },
+    {
+      "source": "BIBB",
+      "rightsUrl": "https://www.bibb.de/ausbildungplus/de/34665.php",
+      "reason": "Default copyright reserved and marked CC contributions described as NC-ND. No recent individual news article cleared."
+    },
+    {
+      "title": "Waldbrandsommer 2026 in Europa",
+      "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/582266/waldbrandsommer-2026-in-europa/",
+      "originalDate": "2026-10-09",
+      "reason": "Recent and readable but its own text license is CC BY-NC-ND 4.0."
+    },
+    {
+      "title": "Wie können Lehrkräfte und Schulen mit Mehrsprachigkeit umgehen?",
+      "url": "https://www.bpb.de/themen/bildung/dossier-bildung/572963/wie-koennen-lehrkraefte-und-schulen-mit-mehrsprachigkeit-umgehen/",
+      "originalDate": "2026-09-20",
+      "reason": "Own text license CC BY-NC-ND 4.0; rejected despite recency and relevance."
+    }
+  ]
+}

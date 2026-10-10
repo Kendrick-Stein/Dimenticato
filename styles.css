@@ -3134,6 +3134,19 @@ h1.page {
 .reading-view { max-width: 820px; margin: 0 auto; padding: 3rem 1.5rem 5rem; overflow-wrap: anywhere; }
 .reading-view h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.2; margin: 1rem 0; }
 .reading-deck { font-size: 1.2rem; line-height: 1.7; }
+.reading-filters { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem; margin-top: 1.75rem; }
+.reading-filters label { display: flex; flex-direction: column; gap: .45rem; font-size: .88rem; }
+.reading-filters .btn { min-height: 44px; }
+.reading-topics { display: flex; flex-wrap: wrap; gap: .45rem; font-size: .78rem; line-height: 1.6; margin: .6rem 0; }
+.reading-category, .reading-topic { border: 1px solid var(--line); border-radius: var(--radius); padding: .15rem .5rem; }
+.reading-category { font-weight: 600; }
+.reading-topic { color: var(--muted); }
+.reading-speaking { margin: 2.5rem 0; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.reading-speaking h2 { font-family: var(--serif); font-size: 1.6rem; }
+.reading-speaking h3 { font-size: 1rem; }
+.reading-speaking-questions { padding-left: 1.5rem; line-height: 1.8; }
+.reading-speaking-questions li { padding-left: .3rem; margin: 1.2rem 0; }
+.reading-speaking-questions p { margin: .35rem 0; }
 .reading-list { margin-top: 2rem; }
 .reading-card { border-top: 1px solid var(--line); padding: 1.6rem 0; }
 .reading-card > a { display: block; font-size: 1.5rem; line-height: 1.4; font-family: var(--serif); }

@@ -1,7 +1,7 @@
 /** Curated reading. No remote translation service; untrusted content is text only. */
 (function (global) {
   'use strict';
-  var entering = false, active = null, request = 0, level = '', indexCache = null;
+  var entering = false, active = null, request = 0, level = '', category = '', indexCache = null;
   var LEVELS = ['A1','A2','B1','B2','C1','C2'];
   function el(tag, text, cls) { var n = document.createElement(tag); if (text !== undefined) n.textContent = text; if (cls) n.className = cls; return n; }
   function button(text, fn) { var n = el('button', text, 'btn btn-ghost'); n.type = 'button'; n.addEventListener('click', fn); return n; }
@@ -47,7 +47,38 @@
   function contentLabel(a) {
     if (a.contentType === 'native-adaptation') return '原语机构来源 · 同语言改写';
     var sourceLang = a.sourceLang || (a.source && a.source.lang);
-    return sourceLang && sourceLang !== a.lang ? '跨语教学改写' : '教学改写';
+    return sourceLang && sourceLang !== a.lang ? '早期跨语教学改写' : '教学改写';
+  }
+  function renderTopics(article) {
+    var tags = el('p', undefined, 'reading-topics');
+    tags.appendChild(el('span', global.ReadingCatalog.categoryLabel(article.category), 'reading-category'));
+    (article.topics || []).forEach(function (topic) { tags.appendChild(el('span', topic, 'reading-topic')); });
+    return tags;
+  }
+  function renderSpeaking(article) {
+    if (!article.speaking) return null;
+    var section = el('section', undefined, 'reading-speaking');
+    var heading = el('h2', '把阅读变成口语素材'); heading.id = 'readingSpeakingTitle';
+    section.setAttribute('aria-labelledby', heading.id); section.appendChild(heading);
+    section.appendChild(el('p', '试着用本篇信息回答，再说说自己的看法。', 'reading-hint'));
+    var questions = el('ol', undefined, 'reading-speaking-questions');
+    article.speaking.questions.forEach(function (question) {
+      var item = el('li'), text = el('p', question.text); text.lang = article.lang;
+      item.appendChild(text); item.appendChild(el('p', question.zh, 'reading-summary-note')); questions.appendChild(item);
+    });
+    section.appendChild(questions);
+    if (article.speaking.expressions && article.speaking.expressions.length) {
+      section.appendChild(el('h3', '可用表达'));
+      var expressions = el('dl', undefined, 'reading-summary-terms');
+      article.speaking.expressions.forEach(function (expression) {
+        var term = el('dt', expression.text); term.lang = article.lang; expressions.appendChild(term);
+        var meaning = el('dd', expression.zh);
+        if (expression.note) meaning.appendChild(el('p', expression.note, 'reading-summary-note'));
+        expressions.appendChild(meaning);
+      });
+      section.appendChild(expressions);
+    }
+    return section;
   }
   function renderLearningSummary(article) {
     var section = el('section', undefined, 'reading-summary');
@@ -87,7 +118,8 @@
   function renderArticle(host, a, l) {
     active = a; host.replaceChildren();
     var back = el('a', '← 返回阅读目录', 'back-link'); back.href = global.DimRouter.href(l, 'readingScreen'); host.appendChild(back);
-    host.appendChild(el('p', a.level + ' · 编辑估计，非认证等级 · 整理 ' + a.date, 'kicker'));
+    host.appendChild(el('p', a.level + ' · 编辑估计，非认证等级 · 原文 ' + a.source.publishedAt + ' · 整理 ' + a.date, 'kicker'));
+    host.appendChild(renderTopics(a));
     host.appendChild(el('p', contentLabel(a), 'reading-content-label'));
     var h = el('h1', a.title); h.lang = a.lang; host.appendChild(h); host.appendChild(el('p', a.titleZh, 'reading-deck'));
     host.appendChild(el('p', a.summaryZh));
@@ -120,6 +152,7 @@
     body.addEventListener('mouseup', selected); body.addEventListener('keyup', selected); body.addEventListener('touchend', function () { setTimeout(selected, 0); }); host.appendChild(body);
     var box = el('aside', undefined, 'reading-lookup'); box.id = 'readingLookup'; box.hidden = true; box.setAttribute('aria-live', 'polite'); host.appendChild(box);
     host.appendChild(renderLearningSummary(a));
+    var speaking = renderSpeaking(a); if (speaking) host.appendChild(speaking);
     var source = el('section', undefined, 'reading-source'); source.appendChild(el('h2','来源与改编说明')); source.appendChild(link(a.source.name + '：' + a.source.title, a.source.url));
     source.appendChild(el('p','原文发布日期：' + a.source.publishedAt + ' · 本站整理：' + a.date)); source.appendChild(el('p',a.attribution)); source.appendChild(link(a.license.name, a.license.url)); source.appendChild(el('p',a.adaptation)); source.appendChild(el('p','等级依据：' + a.levelReason)); host.appendChild(source); focusHeading(host);
   }
@@ -134,12 +167,23 @@
         if (!entry || !/^[a-z0-9-]+$/.test(id)) { status(host, '没有找到这篇文章，请返回阅读目录。'); var a = el('a','返回阅读目录'); a.href = global.DimRouter.href(l,'readingScreen'); host.appendChild(a); return; }
         return fetchJSON('data/reading/articles/' + id + '.json').then(function (a) { if (current()) { if (a.id !== id || a.lang !== code(l)) throw new Error('article mismatch'); renderArticle(host, a, l); } });
       }
-      active = null; host.replaceChildren(el('p','READING JOURNAL','kicker'), el('h1','外文精品阅读'), el('p','从各语言机构独立选材，同语言分级改写，配中文译文和学习总结。保留原文日期；历史跨语改写单独标注，没有合规内容时不补造。','reading-deck'));
-      var label = el('label','阅读等级（编辑估计） '), select = el('select'); [['','全部等级']].concat(LEVELS.map(function (v) { return [v,v]; })).forEach(function (p) { var o = el('option',p[1]); o.value = p[0]; select.appendChild(o); }); select.value = level; select.addEventListener('change', function () { level = select.value; open(l, null, true, true); }); label.appendChild(select); host.appendChild(label);
-      var entries = index.articles.filter(function (a) { return a.lang === code(l) && (!level || a.level === level); }).sort(function (a,b) { return b.date.localeCompare(a.date) || Number(b.contentType === 'native-adaptation') - Number(a.contentType === 'native-adaptation') || a.id.localeCompare(b.id); });
-      if (!entries.length) host.appendChild(el('p','这个等级暂没有已发布阅读。可以切换等级，稍后再来。','empty'));
+      active = null; host.replaceChildren(el('p','READING JOURNAL','kicker'), el('h1','外文精品阅读'), el('p','从各语言机构独立选材，同语言分级改写，配中文译文和学习总结。按主题积累素材，保留原文与整理日期；优先近期原语选读，没有合规内容时不补造。','reading-deck'));
+      var filters = el('div', undefined, 'reading-filters');
+      function filter(id, text, options, value, change) {
+        var label = el('label', text), select = el('select'); select.id = id;
+        options.forEach(function (option) { var o = el('option', option[1]); o.value = option[0]; select.appendChild(o); });
+        select.value = value; select.addEventListener('change', function () { change(select.value); open(l, null, true, id); });
+        label.appendChild(select); filters.appendChild(label); return select;
+      }
+      filter('readingCategoryFilter', '主题分类', [['', '全部主题']].concat(global.ReadingCatalog.categories), category, function (value) { category = value; });
+      filter('readingLevelFilter', '阅读等级（编辑估计）', [['','全部等级']].concat(LEVELS.map(function (v) { return [v,v]; })), level, function (value) { level = value; });
+      if (category || level) filters.appendChild(button('清除筛选', function () { category = ''; level = ''; open(l, null, true, 'readingCategoryFilter'); }));
+      host.appendChild(filters);
+      var entries = index.articles.filter(function (a) { return a.lang === code(l) && (!level || a.level === level) && (!category || a.category === category); }).sort(global.ReadingCatalog.compare);
+      var count = el('p', entries.length + ' 篇已发布阅读 · 原语选读优先，同类按原文日期由新到旧', 'reading-hint'); count.setAttribute('role', 'status'); host.appendChild(count);
+      if (!entries.length) host.appendChild(el('p','当前语言、主题和等级下暂无已发布阅读。试试其他主题或等级，或清除筛选。','empty'));
       var list = el('div',undefined,'reading-list'), p = progress(l);
-      entries.forEach(function (a) { var item = el('article',undefined,'reading-card'); item.appendChild(el('p',(a.sourcePublishedAt ? '原文 ' + a.sourcePublishedAt + ' · ' : '') + '整理 ' + a.date + ' · ' + a.level + (p[a.id] ? ' · 已读完' : ''),'kicker')); var title = el('a',a.title); title.lang = a.lang; title.href = global.DimRouter.href(l,'readingArticleScreen') + '/' + a.id; item.appendChild(title); item.appendChild(el('p',contentLabel(a),'reading-content-label')); item.appendChild(el('p',a.titleZh)); item.appendChild(el('p',a.summaryZh)); list.appendChild(item); }); host.appendChild(list); if (restoreFilter && select.focus) select.focus({preventScroll:true}); else focusHeading(host);
+      entries.forEach(function (a) { var item = el('article',undefined,'reading-card'); item.appendChild(el('p',(a.sourcePublishedAt ? '原文 ' + a.sourcePublishedAt + ' · ' : '') + '整理 ' + a.date + ' · ' + a.level + (p[a.id] ? ' · 已读完' : ''),'kicker')); item.appendChild(renderTopics(a)); var title = el('a',a.title); title.lang = a.lang; title.href = global.DimRouter.href(l,'readingArticleScreen') + '/' + a.id; item.appendChild(title); item.appendChild(el('p',contentLabel(a),'reading-content-label')); item.appendChild(el('p',a.titleZh)); item.appendChild(el('p',a.summaryZh)); list.appendChild(item); }); host.appendChild(list); var previousFilter = restoreFilter && document.getElementById(restoreFilter); if (previousFilter && previousFilter.focus) previousFilter.focus({preventScroll:true}); else focusHeading(host);
     }).catch(function () { if (current()) { status(host,'阅读内容暂时加载失败，请检查网络后重试。'); host.appendChild(button('重试',function () { indexCache = null; open(l,id); })); } });
   }
   document.addEventListener('keydown', function (event) { if (event.key === 'Escape') { var box = document.getElementById('readingLookup'); if (box) box.hidden = true; } });

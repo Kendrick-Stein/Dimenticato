@@ -342,5 +342,10 @@
         "note": "could 表示可能的用途；use something to do something 表示利用某物做某事。"
       }
     ]
-  }
+  },
+  "category": "technology",
+  "topics": [
+    "卫星通信",
+    "交通与农业"
+  ]
 }

@@ -3,7 +3,7 @@
 const assert=require('assert'),fs=require('fs'),vm=require('vm'),path=require('path');
 const {createWindow}=require('./dom-shim'); const w=createWindow(); w.URL=URL; w.Date=Date;
 const c=vm.createContext(w),root=path.resolve(__dirname,'..');
-['lib/languages.js','lib/storage.js','reading-app.js'].forEach(f=>vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),c));
+['lib/languages.js','lib/storage.js','lib/reading-catalog.js','reading-app.js'].forEach(f=>vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),c));
 w.Vocab={find:(_l,word)=>word==='book'?{word:'book',zh:'书'}:null};
 let passed=0; function test(fn){fn();passed++;}
 const a={lang:'en',sentences:[{id:'s1',text:'She reads a book.',zh:'她读一本书。',glosses:[{surface:'reads',lemma:'read',zh:'阅读'}]}]};
@@ -29,11 +29,12 @@ test(()=>assert(!fs.readFileSync(path.join(root,'reading-app.js'),'utf8').includ
   ['readingView','readingArticleView'].forEach(id=>{const n=w.document.getElementById(id);n.replaceChildren=function(...nodes){n.textContent='';nodes.forEach(x=>n.appendChild(x));};});
   let screen='',language='italian';w.showScreen=s=>{screen=s;};w.Shell={current:()=>screen};w.getActiveLanguage=()=>language;
   w.DimRouter={href:(l,s)=>'#/it/reading'+(s==='readingArticleScreen'?'/article':'')};const spoken=[]; w.App={speak:(text,lang)=>spoken.push({text,lang}),toast:()=>{}};
-  const full=Object.assign({},a,{id:'test-article',schema:1,lang:'it',title:'<img src=x onerror=alert(1)>',titleZh:'中文标题',date:'2026-10-10',level:'A2',summaryZh:'摘要',storyId:'test-story',source:{name:'Example',title:'Source',url:'https://example.org',publishedAt:'2026-09-26',lang:'it'},license:{name:'CC BY',url:'https://example.org/license'},adaptation:'改写',attribution:'署名',levelReason:'编辑估计'});
+  const full=Object.assign({},a,{id:'test-article',schema:1,lang:'it',title:'<img src=x onerror=alert(1)>',titleZh:'中文标题',date:'2026-10-10',level:'A2',summaryZh:'摘要',category:'technology',topics:['卫星通信','生活应用'],storyId:'test-story',source:{name:'Example',title:'Source',url:'https://example.org',publishedAt:'2026-09-26',lang:'it'},license:{name:'CC BY',url:'https://example.org/license'},adaptation:'改写',attribution:'署名',levelReason:'编辑估计'});
   full.sentences=full.sentences.concat([{id:'s2',text:'Books open new doors.',zh:'书籍打开新的大门。',glosses:[]}]);
   full.contentType='native-adaptation';
+  full.speaking={questions:[{text:'How do books help us?',zh:'书籍如何帮助我们？'}],expressions:[{text:'open new doors',zh:'带来新机会',sentenceId:'s2',note:'可用来谈阅读的影响。'}]};
   full.learningSummary={words:[{text:'reads',lemma:'read',zh:'阅读',sentenceId:'s1',note:'第三人称单数'}],phrases:[{text:'open new doors',zh:'带来新的机会',sentenceId:'s2'}],sentences:[{sentenceId:'s2',note:'用具体的动作表达抽象的机会。<img src=x onerror=alert(1)>'}]};
-  const legacy=JSON.parse(JSON.stringify(full)); legacy.id='a-legacy'; legacy.title='Legacy article'; delete legacy.learningSummary; delete legacy.contentType; legacy.source.lang='de';
+  const legacy=JSON.parse(JSON.stringify(full)); legacy.id='a-legacy'; legacy.title='Legacy article'; delete legacy.speaking; delete legacy.learningSummary; delete legacy.contentType; legacy.source.lang='de';
   full.sourcePublishedAt=full.source.publishedAt; legacy.sourcePublishedAt=legacy.source.publishedAt;
   const articles=[legacy,full].concat(['de','en','fr'].map(lang=>Object.assign({},full,{id:'test-'+lang,lang,source:Object.assign({},full.source,{lang})})));
   function normalFetch(url){return Promise.resolve({ok:true,json:async()=>url.endsWith('index.json')?{schema:1,articles}:articles.find(article=>url.endsWith(article.id+'.json'))});}
@@ -54,6 +55,17 @@ test(()=>assert(!fs.readFileSync(path.join(root,'reading-app.js'),'utf8').includ
   invalidSummary(x=>x.learningSummary.sentences.push(x.learningSummary.sentences[0]),'duplicate summary entry');
   invalidSummary(x=>x.source.lang='de','source language must match');
   invalidSummary(x=>x.contentType='unknown','supported contentType');
+  invalidSummary(x=>x.category='unknown','category');
+  invalidSummary(x=>x.topics=[],'topics');
+  invalidSummary(x=>x.topics=['one','one'],'topics');
+  invalidSummary(x=>x.date='2026-02-30','edition date');
+  invalidSummary(x=>x.source.publishedAt='2026-13-01','original publication date');
+  invalidSummary(x=>x.source.publishedAt='2026-10-11','cannot follow');
+  invalidSummary(x=>x.speaking=null,'speaking must');
+  invalidSummary(x=>x.speaking.questions=[],'requires 1–3');
+  invalidSummary(x=>x.speaking.questions=[null],'paired text');
+  invalidSummary(x=>x.speaking.expressions[0].sentenceId='missing','reference the expression');
+  invalidSummary(x=>x.speaking.expressions[0].text='invented','reference the expression');
   let showCount=0; w.showScreen=s=>{screen=s;showCount++;};screen='readingScreen';w.ReadingApp.enter('italian');test(()=>assert.equal(showCount,0,'render-only enter must not invalidate router navigation'));
   await w.ReadingApp.open('italian');const index=w.document.getElementById('readingView');test(()=>assert(index.textContent.includes('中文标题')));
   test(()=>assert(index.querySelectorAll('.reading-card')[0].textContent.includes(full.title),'native editions sort before same-day legacy editions'));
@@ -62,6 +74,9 @@ test(()=>assert(!fs.readFileSync(path.join(root,'reading-app.js'),'utf8').includ
   test(()=>assert(index.querySelectorAll('.reading-card')[0].textContent.includes('原语机构来源 · 同语言改写')));
   await w.ReadingApp.open('italian','test-article');const host=w.document.getElementById('readingArticleView');
   test(()=>assert(host.textContent.includes(full.title)));test(()=>assert.equal(host.querySelectorAll('img').length,0));
+  test(()=>assert.equal(host.querySelector('.reading-category').textContent,'科技'));
+  test(()=>assert(host.querySelector('.reading-speaking').textContent.includes('书籍如何帮助我们？')));
+  test(()=>assert.equal(host.querySelector('.reading-speaking-questions').querySelector('p').lang,'it'));
   const toggle=host.querySelectorAll('button').find(b=>b.textContent==='正文译文');
   test(()=>assert.equal(toggle.getAttribute('aria-pressed'),'true'));
   test(()=>assert.equal(toggle.getAttribute('aria-controls'),'readingBody'));
@@ -93,6 +108,7 @@ test(()=>assert(!fs.readFileSync(path.join(root,'reading-app.js'),'utf8').includ
   const done=host.querySelectorAll('button').find(b=>b.textContent==='标记读完');done.click();test(()=>assert(w.ReadingApp.progress('it')['test-article']));done.click();test(()=>assert(!w.ReadingApp.progress('it')['test-article']));
   await w.ReadingApp.open('italian','a-legacy');
   test(()=>assert(host.querySelector('.reading-summary').textContent.includes('尚未补充学习总结')));
+  test(()=>assert.equal(host.querySelector('.reading-speaking'),null,'legacy articles do not invent generic speaking material'));
   test(()=>assert.equal(host.querySelectorAll('.reading-summary-terms').length,0));
   test(()=>assert(host.querySelector('.reading-content-label').textContent.includes('跨语教学改写')));
   for(const lang of ['de','en','fr']) {

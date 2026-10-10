@@ -16,7 +16,12 @@
       "license": "CC BY 4.0, unless otherwise indicated",
       "licenseEvidence": "https://commission.europa.eu/legal-notice_en",
       "conditions": "EU-owned article text only; exclude third-party works, images and logos unless separately cleared. Retain attribution, original link, license link and modification notice. Individual language pages may be missing or inaccessible.",
-      "nativeLanguageCaution": "A translated locale or matching language code does not establish original-language authorship. This publisher cannot be treated as a blanket native-language source. Check each original author, translator/republishing markers and article provenance; legacy editions remain historical adaptations."
+      "nativeLanguageCaution": "A translated locale or matching language code does not establish original-language authorship. This publisher cannot be treated as a blanket native-language source. Check each original author, translator/republishing markers and article provenance; legacy editions remain historical adaptations.",
+      "allowedUrlPrefixes": [
+        "https://commission.europa.eu/news-and-media/news/"
+      ],
+      "rightsPolicyUrl": "https://commission.europa.eu/legal-notice_en",
+      "articleReviewRequired": true
     },
     {
       "id": "global-voices",
@@ -31,7 +36,15 @@
       "license": "CC BY 3.0 Unported, article-level exceptions must be checked",
       "licenseEvidence": "https://globalvoices.org/about/global-voices-attribution-policy/",
       "conditions": "Credit original author and any named translator; link original and license; disclose adaptation. Exclude externally syndicated or content-sharing-agreement articles without independently verified rights. Image/audio rights are separate. No assumption of daily output in every language.",
-      "nativeLanguageCaution": "A translated locale or matching language code does not establish original-language authorship. This publisher cannot be treated as a blanket native-language source. Check each original author, translator/republishing markers and article provenance; legacy editions remain historical adaptations."
+      "nativeLanguageCaution": "A translated locale or matching language code does not establish original-language authorship. This publisher cannot be treated as a blanket native-language source. Check each original author, translator/republishing markers and article provenance; legacy editions remain historical adaptations.",
+      "allowedUrlPrefixes": [
+        "https://globalvoices.org/",
+        "https://it.globalvoices.org/",
+        "https://fr.globalvoices.org/",
+        "https://de.globalvoices.org/"
+      ],
+      "rightsPolicyUrl": "https://globalvoices.org/about/global-voices-attribution-policy/",
+      "articleReviewRequired": true
     },
     {
       "id": "ingv-italian-press",
@@ -43,7 +56,14 @@
       "license": "CC BY 4.0 for INGV-published content; verify each article",
       "licenseEvidence": "https://www.ingv.it/note-legali",
       "verifiedExample": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/inquinamento-nuove-immagini-radar-satellitari-aiutano-a-individuare-dallo-spazio-la-plastica-in-mare",
-      "conditions": "Use INGV-owned Italian text. Article footer must retain CC BY4 statement and no conflicting text credit. Exclude images, videos, logos and linked journal-paper text. Credit source, date, licence and modifications."
+      "conditions": "Use INGV-owned Italian text. Article footer must retain CC BY4 statement and no conflicting text credit. Exclude images, videos, logos and linked journal-paper text. Credit source, date, licence and modifications.",
+      "allowedUrlPrefixes": [
+        "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/",
+        "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/",
+        "https://www.ingv.it/stampa-urp/ufficio-stampa/news/"
+      ],
+      "rightsPolicyUrl": "https://www.ingv.it/note-legali",
+      "articleReviewRequired": true
     },
     {
       "id": "inrae-french-news",
@@ -56,7 +76,12 @@
       "licenseEvidence": "https://www.inrae.fr/conditions-generales-dutilisation",
       "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
       "verifiedExample": "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
-      "conditions": "Verify article authorship and no third-party text/other-rights/ND/all-rights-reserved notice. Credit named author, INRAE, source URL and available source update/publication date; identify modifications and no endorsement. Do not reuse photos/videos/logos. Historical first edition is not a daily-news feed."
+      "conditions": "Verify article authorship and no third-party text/other-rights/ND/all-rights-reserved notice. Credit named author, INRAE, source URL and available source update/publication date; identify modifications and no endorsement. Do not reuse photos/videos/logos. Historical first edition is not a daily-news feed.",
+      "allowedUrlPrefixes": [
+        "https://www.inrae.fr/actualites/"
+      ],
+      "rightsPolicyUrl": "https://www.inrae.fr/conditions-generales-dutilisation",
+      "articleReviewRequired": true
     },
     {
       "id": "eskp-german-science",
@@ -68,7 +93,13 @@
       "license": "CC BY 4.0 only where article-level PDF or publisher notice clearly covers text",
       "licenseEvidence": "https://www.eskp.de/impressum/",
       "verifiedExample": "https://themenspezial.eskp.de/fileadmin/user_upload/PDFs/biodiversitaet/einzelkapitel/7-8-Was_macht_ein_Meeresschutzgebiet_erfolgreich.pdf",
-      "conditions": "Historical science-reading candidate, not a current daily-news feed. Verify named authors, German bibliographic origin, specific text licence and date precision. Exclude all maps/photos/logos and references. Do not propagate old policy or statistics as current. Credit authors, publisher, DOI, licence and modifications."
+      "conditions": "Historical science-reading candidate, not a current daily-news feed. Verify named authors, German bibliographic origin, specific text licence and date precision. Exclude all maps/photos/logos and references. Do not propagate old policy or statistics as current. Credit authors, publisher, DOI, licence and modifications.",
+      "allowedUrlPrefixes": [
+        "https://themenspezial.eskp.de/"
+      ],
+      "rightsPolicyUrl": "https://www.eskp.de/impressum/",
+      "articleReviewRequired": true,
+      "collectionMode": "archive-only"
     },
     {
       "id": "uk-space-agency-english-news",
@@ -81,12 +112,107 @@
       "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
       "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
       "verifiedExample": "https://www.gov.uk/government/news/better-wifi-on-remote-trains-and-access-to-cutting-edge-tech-for-british-farmers-through-13-million-boost-to-drive-next-gen-satellite-communications",
-      "conditions": "Use UK public-sector English press-release narrative, not third-party company quotations or images. Check page-level OGL footer and exceptions. Retain standard OGL attribution sentence, provider/source/date and modification notice; no endorsement. Distinguish plans from delivered outcomes."
+      "conditions": "Use UK public-sector English press-release narrative, not third-party company quotations or images. Check page-level OGL footer and exceptions. Retain standard OGL attribution sentence, provider/source/date and modification notice; no endorsement. Distinguish plans from delivered outcomes.",
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "articleReviewRequired": true,
+      "requiredPublisherNames": [
+        "UK Space Agency"
+      ]
+    },
+    {
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "languages": [
+        "en"
+      ],
+      "license": "Open Government Licence v3.0, except where otherwise stated",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "articleReviewRequired": true,
+      "conditions": "GOV.UK From metadata must name the registered institution. Recheck article text, original publication date, OGL footer and exceptions every time. Adapt only Crown/public-sector institutional narrative, excluding third-party quotations, photos, logos, linked reports and personal case-study details unless independently cleared. Preserve source, date, OGL attribution and changes; no endorsement.",
+      "nativeLanguageCaution": "Use institution-authored English news, not translated locales, externally syndicated stories or a common article reused across language slots. From/publisher and article context support original-language provenance, not a verified author drafting-language certificate.",
+      "id": "govuk-bist-english-news",
+      "name": "Department for Business, Innovation, Science and Trade / GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/department-for-business-innovation-science-and-trade",
+      "requiredPublisherNames": [
+        "Department for Business, Innovation, Science and Trade"
+      ]
+    },
+    {
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "languages": [
+        "en"
+      ],
+      "license": "Open Government Licence v3.0, except where otherwise stated",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "articleReviewRequired": true,
+      "conditions": "GOV.UK From metadata must name the registered institution. Recheck article text, original publication date, OGL footer and exceptions every time. Adapt only Crown/public-sector institutional narrative, excluding third-party quotations, photos, logos, linked reports and personal case-study details unless independently cleared. Preserve source, date, OGL attribution and changes; no endorsement.",
+      "nativeLanguageCaution": "Use institution-authored English news, not translated locales, externally syndicated stories or a common article reused across language slots. From/publisher and article context support original-language provenance, not a verified author drafting-language certificate.",
+      "id": "govuk-education-english-news",
+      "name": "Department for Education / GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/department-for-education",
+      "requiredPublisherNames": [
+        "Department for Education"
+      ]
+    },
+    {
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "languages": [
+        "en"
+      ],
+      "license": "Open Government Licence v3.0, except where otherwise stated",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "articleReviewRequired": true,
+      "conditions": "GOV.UK From metadata must name the registered institution. Recheck article text, original publication date, OGL footer and exceptions every time. Adapt only Crown/public-sector institutional narrative, excluding third-party quotations, photos, logos, linked reports and personal case-study details unless independently cleared. Preserve source, date, OGL attribution and changes; no endorsement.",
+      "nativeLanguageCaution": "Use institution-authored English news, not translated locales, externally syndicated stories or a common article reused across language slots. From/publisher and article context support original-language provenance, not a verified author drafting-language certificate.",
+      "id": "govuk-mhra-english-news",
+      "name": "Medicines and Healthcare products Regulatory Agency / GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency",
+      "requiredPublisherNames": [
+        "Medicines and Healthcare products Regulatory Agency"
+      ]
+    },
+    {
+      "id": "bpb-werkstatt-de",
+      "name": "Bundeszentrale für politische Bildung — Werkstatt",
+      "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/",
+      "allowedUrlPrefixes": [
+        "https://www.bpb.de/lernen/digitale-bildung/werkstatt/"
+      ],
+      "languages": [
+        "de"
+      ],
+      "rightsPolicyUrl": "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+      "articleReviewRequired": true,
+      "rightsPolicy": "Mixed licenses. Never inherit a license from the domain, section, image, or linked publication. Verify the end-of-article text license for every candidate. Accept only an explicit license allowing public adaptations. CC BY-SA 4.0 adaptations must retain attribution, source and license links, identify changes, and be released under CC BY-SA 4.0 (or an explicitly compatible license); do not relabel as CC BY. Exclude ND, separately credited third-party text and all images/media unless separately cleared.",
+      "nativeLanguageCaution": "Institutional German-language provenance, not proof of any individual's mother tongue. German prose and a .de host alone are insufficient: inspect each byline, publisher and any translation/republication credit. Werkstatt has German editorial output but may cite foreign sources; do not treat cited sources or embedded third-party material as native German originals. No translation credit was found on these three candidate pages.",
+      "nativeEvidenceUrls": [
+        "https://www.bpb.de/die-bpb/ueber-uns/service/impressum/",
+        "https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/"
+      ],
+      "nativeEvidence": "The legal notice identifies Bundeszentrale für politische Bildung, Bonn, as the provider and names its online editorial team. The Werkstatt collection describes its own selected German contributions on education in the digital transition, also published to its Instagram account.",
+      "license": "Mixed article-specific licenses; selected candidates explicitly CC BY-SA 4.0",
+      "licenseEvidence": "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+      "conditions": "Mixed licenses. Never inherit a license from the domain, section, image, or linked publication. Verify the end-of-article text license for every candidate. Accept only an explicit license allowing public adaptations. CC BY-SA 4.0 adaptations must retain attribution, source and license links, identify changes, and be released under CC BY-SA 4.0 (or an explicitly compatible license); do not relabel as CC BY. Exclude ND, separately credited third-party text and all images/media unless separately cleared.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
     }
   ],
   "archiveOnly": {
     "name": "Wikinews language editions",
     "reason": "IT/DE homepages report closure on 2026-05-04 and read-only archival status. Not a current daily news feed. Licenses differ by language and publication date; verify each fixed revision before reuse."
   },
-  "freshnessPolicy": "Prioritize each institution’s current original-language news. The first FR (2018-05-13) and DE (2020-02) selections are explicitly labeled historical science reading because their article-level rights and provenance are well evidenced. They are not same-day news or permission to repeatedly mine archives merely to satisfy a daily quota. Preserve original source dates and label historical selections prominently on cards."
+  "freshnessPolicy": "Prepare a reserve before adapting. Prefer independently verified original-language news published within 30 days, then within 90 days; use source publication dates, never collection or edition dates. Keep older evergreen work explicitly historical, do not use it to fill daily-news slots. Insufficient evidence means skip, not manufacture content. Recheck facts and rights before each adaptation."
 }
