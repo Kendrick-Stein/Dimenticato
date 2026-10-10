@@ -250,16 +250,28 @@ const GrammarBook = (() => {
         '<span class="msr" aria-hidden="true">history</span>继续阅读：' + escapeHtml(resumeAt.topic.title) + '</button></p>'
       : '';
 
+    // 教材标题提供入口：不按语言硬编码 slug，旧深链接和阅读位置不变。
+    const pronunciation = (tree && tree.parts || [])
+      .flatMap(part => part.chapters || [])
+      .flatMap(chapter => chapter.topics || [])
+      .find(topic => topic.title.includes('发音入门'));
+    const pronunciationBtn = pronunciation
+      ? '<p><button type="button" class="btn" data-grammar-pronunciation="' + escapeHtml(pronunciation.slug) + '">先学发音：字母、拼读与重音</button></p>'
+      : '';
+
     body.innerHTML = `
       <div class="grammar-welcome">
         <span class="msr grammar-welcome-icon" aria-hidden="true">auto_stories</span>
         <h2>${escapeHtml(getTitle())}</h2>
         <p>${escapeHtml(getDescription())}</p>
         ${scale}
+        ${pronunciationBtn}
         ${resumeBtn}
       </div>`;
     const btn = body.querySelector('[data-grammar-resume]');
     if (btn) btn.addEventListener('click', () => openTopic(btn.getAttribute('data-grammar-resume')));
+    const pronunciationLink = body.querySelector('[data-grammar-pronunciation]');
+    if (pronunciationLink) pronunciationLink.addEventListener('click', () => openTopic(pronunciationLink.getAttribute('data-grammar-pronunciation')));
     body.scrollTop = 0;
   }
 
