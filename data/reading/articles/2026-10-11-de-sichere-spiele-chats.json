@@ -1,0 +1,411 @@
+{
+  "schema": 1,
+  "id": "2026-10-11-de-sichere-spiele-chats",
+  "storyId": "bpb-gaming-community-safety-2026-10-02",
+  "lang": "de",
+  "date": "2026-10-11",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "游戏社区",
+    "志愿服务",
+    "尊重交流"
+  ],
+  "title": "Hilfe für sichere Spiele-Chats",
+  "titleZh": "让游戏聊天更安全的支持",
+  "summaryZh": "游戏平台未能落实规则时，志愿管理员常常承担维护交流环境的工作。德国联邦政治教育中心介绍了两个为他们及教育工作者提供支持的项目。原文发表于2026年10月2日；本篇为德语同语言教学改写。",
+  "level": "A2",
+  "levelReason": "编辑估计为有中文支持的 A2 阅读：以现在时和短主句为主，练习情态动词、可分动词及简单 zu 不定式。Moderator、Diskriminierung 等社会议题词和项目名称超出常见 A2 词汇，已逐句注释；不代表无需辅助即可阅读，也不是经认证的 CEFR 测评。",
+  "source": {
+    "name": "Bundeszentrale für politische Bildung — Werkstatt",
+    "title": "Extremismus im Gaming",
+    "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+    "publishedAt": "2026-10-02",
+    "lang": "de",
+    "author": "Bundeszentrale für politische Bildung, Werkstatt（页面标注 Werkstatt recherchiert，无个人署名）"
+  },
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+    "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/"
+  },
+  "attribution": "依据 Bundeszentrale für politische Bildung（bpb）Werkstatt 的《Extremismus im Gaming》（2026年10月2日）改写，原文及许可链接见来源信息。原文许可为 CC BY-SA 4.0；本篇德语改写、中文翻译及配套教学文字同样以 CC BY-SA 4.0 发布。Dimenticato 作删节、简化、重组及翻译；不表示 bpb 或所述项目认可本材料。",
+  "adaptation": "从 bpb 自有德语机构文章选取游戏社群管理与支持服务部分，作同语言分级改写并配中文译文。删去第三方直接引语、图片、图注及外链材料；保留少数极端主义行为者与广大游戏社群的区别，并将服务目标与保证的效果区分开。原语来源判断基于机构及栏目来源证据，不是个人母语或最初起草语言的认证。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Auf Plattformen für Computerspiele gibt es auch Chats und Foren.",
+      "zh": "电脑游戏平台上也有聊天室和论坛。",
+      "glosses": [
+        {
+          "surface": "Plattformen",
+          "lemma": "die Plattform",
+          "zh": "平台",
+          "note": "复数；此处指网络平台"
+        },
+        {
+          "surface": "Foren",
+          "lemma": "das Forum",
+          "zh": "论坛",
+          "note": "Forum 的复数"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Dort versuchen einige Menschen, Hass und extreme politische Ideen zu verbreiten.",
+      "zh": "在那里，一些人试图传播仇恨和极端政治思想。",
+      "glosses": [
+        {
+          "surface": "versuchen",
+          "lemma": "versuchen",
+          "zh": "试图",
+          "note": "versuchen, etwas zu tun：试图做某事"
+        },
+        {
+          "surface": "Hass",
+          "lemma": "der Hass",
+          "zh": "仇恨"
+        },
+        {
+          "surface": "verbreiten",
+          "lemma": "verbreiten",
+          "zh": "传播"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Sie sind nur eine kleine Gruppe in der Gaming-Szene.",
+      "zh": "他们在游戏圈里只是一小群人。",
+      "glosses": [
+        {
+          "surface": "Gruppe",
+          "lemma": "die Gruppe",
+          "zh": "群体；一群人"
+        },
+        {
+          "surface": "Gaming-Szene",
+          "lemma": "die Gaming-Szene",
+          "zh": "游戏圈；游戏社群"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Plattformen haben Regeln, setzen sie aber nicht immer durch.",
+      "zh": "平台有规则，但并不总是执行这些规则。",
+      "glosses": [
+        {
+          "surface": "Regeln",
+          "lemma": "die Regel",
+          "zh": "规则",
+          "note": "名词复数"
+        },
+        {
+          "surface": "setzen",
+          "lemma": "durchsetzen",
+          "zh": "执行；落实",
+          "note": "可分动词：setzen ... durch；这里的 sie 指 Regeln"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Dann helfen oft freiwillige Moderatorinnen und Moderatoren.",
+      "zh": "这时，经常会有志愿管理员来帮忙。",
+      "glosses": [
+        {
+          "surface": "freiwillige",
+          "lemma": "freiwillig",
+          "zh": "志愿的；自愿的"
+        },
+        {
+          "surface": "Moderatorinnen",
+          "lemma": "die Moderatorin",
+          "zh": "女管理员",
+          "note": "此处指管理网络讨论的人"
+        },
+        {
+          "surface": "Moderatoren",
+          "lemma": "der Moderator",
+          "zh": "男管理员",
+          "note": "此处指管理网络讨论的人"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Sie achten auf die Gespräche und schützen andere vor Hass.",
+      "zh": "他们关注讨论，并保护他人免受仇恨伤害。",
+      "glosses": [
+        {
+          "surface": "achten",
+          "lemma": "achten",
+          "zh": "留意",
+          "note": "achten auf + 第四格：留意、关注"
+        },
+        {
+          "surface": "schützen",
+          "lemma": "schützen",
+          "zh": "保护",
+          "note": "jemanden vor etwas schützen：保护某人免受……伤害"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Für diese Arbeit bekommen sie häufig kein Geld.",
+      "zh": "他们做这项工作往往没有报酬。",
+      "glosses": [
+        {
+          "surface": "häufig",
+          "lemma": "häufig",
+          "zh": "经常；往往"
+        },
+        {
+          "surface": "Geld",
+          "lemma": "das Geld",
+          "zh": "钱；此处指报酬"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Die Aufgabe kann viel Zeit und Kraft kosten.",
+      "zh": "这项任务可能耗费很多时间和精力。",
+      "glosses": [
+        {
+          "surface": "Aufgabe",
+          "lemma": "die Aufgabe",
+          "zh": "任务"
+        },
+        {
+          "surface": "Kraft",
+          "lemma": "die Kraft",
+          "zh": "精力",
+          "note": "此处不是体力，而是精神上的精力"
+        },
+        {
+          "surface": "kosten",
+          "lemma": "kosten",
+          "zh": "耗费"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Das Community Support Network bietet ihnen Workshops, Beratung und Lernmaterialien an.",
+      "zh": "Community Support Network 为他们提供工作坊、辅导和学习材料。",
+      "glosses": [
+        {
+          "surface": "bietet",
+          "lemma": "anbieten",
+          "zh": "提供",
+          "note": "可分动词：bietet ... an"
+        },
+        {
+          "surface": "Beratung",
+          "lemma": "die Beratung",
+          "zh": "咨询；辅导"
+        },
+        {
+          "surface": "Lernmaterialien",
+          "lemma": "das Lernmaterial",
+          "zh": "学习材料",
+          "note": "复数"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Dort können sie auch Erfahrungen mit anderen teilen.",
+      "zh": "在那里，他们还可以与他人分享经验。",
+      "glosses": [
+        {
+          "surface": "Erfahrungen",
+          "lemma": "die Erfahrung",
+          "zh": "经验",
+          "note": "名词复数"
+        },
+        {
+          "surface": "teilen",
+          "lemma": "teilen",
+          "zh": "分享",
+          "note": "etwas mit jemandem teilen：与某人分享某物"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Ein zweites Angebot heißt Good Gaming Support.",
+      "zh": "另一个支持项目叫作 Good Gaming Support。",
+      "glosses": [
+        {
+          "surface": "Angebot",
+          "lemma": "das Angebot",
+          "zh": "服务；支持项目",
+          "note": "这里不是商品报价"
+        },
+        {
+          "surface": "heißt",
+          "lemma": "heißen",
+          "zh": "叫作"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Dieses Projekt berät Gruppen sowie Lehrerinnen und Lehrer.",
+      "zh": "这个项目为社群和教师提供咨询。",
+      "glosses": [
+        {
+          "surface": "berät",
+          "lemma": "beraten",
+          "zh": "向……提供咨询",
+          "note": "beraten 的第三人称单数现在时"
+        },
+        {
+          "surface": "sowie",
+          "lemma": "sowie",
+          "zh": "以及"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Die Beratung soll ihnen helfen, gegen Hass aktiv zu werden.",
+      "zh": "这些咨询旨在帮助他们采取行动反对仇恨。",
+      "glosses": [
+        {
+          "surface": "soll",
+          "lemma": "sollen",
+          "zh": "旨在；应当",
+          "note": "此处表达项目目的，并非已实现的结果"
+        },
+        {
+          "surface": "gegen",
+          "lemma": "gegen",
+          "zh": "反对；对抗",
+          "note": "后接第四格"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Ein weiteres Ziel ist eine Kommunikation mit weniger Diskriminierung.",
+      "zh": "另一个目标是减少交流中的歧视。",
+      "glosses": [
+        {
+          "surface": "Ziel",
+          "lemma": "das Ziel",
+          "zh": "目标"
+        },
+        {
+          "surface": "Kommunikation",
+          "lemma": "die Kommunikation",
+          "zh": "交流"
+        },
+        {
+          "surface": "Diskriminierung",
+          "lemma": "die Diskriminierung",
+          "zh": "歧视"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "freiwillige",
+        "lemma": "freiwillig",
+        "zh": "志愿的；自愿的",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "schützen",
+        "lemma": "schützen",
+        "zh": "保护",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "Aufgabe",
+        "lemma": "die Aufgabe",
+        "zh": "任务",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "Beratung",
+        "lemma": "die Beratung",
+        "zh": "咨询；辅导",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "Erfahrungen",
+        "lemma": "die Erfahrung",
+        "zh": "经验",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "Ziel",
+        "lemma": "das Ziel",
+        "zh": "目标",
+        "sentenceId": "s14"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "kein Geld",
+        "zh": "没有钱；此处指没有报酬",
+        "sentenceId": "s7",
+        "note": "kein 否定没有冠词或带不定冠词的名词。"
+      },
+      {
+        "text": "Zeit und Kraft kosten",
+        "zh": "耗费时间和精力",
+        "sentenceId": "s8",
+        "note": "kosten 不仅表示金钱花费，也可表示消耗时间或精力。"
+      },
+      {
+        "text": "Erfahrungen mit anderen teilen",
+        "zh": "与他人分享经验",
+        "sentenceId": "s10",
+        "note": "teilen 的对象用第四格；mit 后用第三格。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "durchsetzen 是可分动词：现在时主句中 setzen 在第二位，durch 在句末；sie 指复数 Regeln。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "können 与句末原形 teilen 构成句框：可以做某事。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Regeln findest du in einem Spiele-Chat wichtig?",
+        "zh": "你觉得游戏聊天室里哪些规则很重要？"
+      },
+      {
+        "text": "Wie kann man freiwilligen Moderatorinnen und Moderatoren helfen?",
+        "zh": "怎样帮助志愿管理员？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich finde klare Regeln wichtig.",
+        "zh": "我认为明确的规则很重要。",
+        "note": "finde + 宾语 + 形容词：表达对某事的看法。"
+      },
+      {
+        "text": "Wir können Erfahrungen miteinander teilen.",
+        "zh": "我们可以互相分享经验。",
+        "note": "können + 动词原形：提出可行的做法。"
+      }
+    ]
+  }
+}

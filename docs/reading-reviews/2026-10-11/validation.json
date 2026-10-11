@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-11",
+  "baseCommit": "d94ef54bdf3dd3b4c6cf95c2ab74a0607a11141e",
+  "status": "checks-passed-awaiting-remote-publication",
+  "newArticleCount": 4,
+  "existingArticleCount": 4,
+  "existingArticleHashesUnchanged": true,
+  "candidateCount": 15,
+  "candidateLinkedToArticleCount": 4,
+  "unconvertedReserveCount": 11,
+  "newCandidates": {
+    "rightsVerified": 2,
+    "collectedNeedsRightsAndOriginReview": 1
+  },
+  "tests": {
+    "articleValidator": "8 articles pass",
+    "candidateValidator": "15 metadata-only candidates pass",
+    "readingDom": "106 pass",
+    "fullSuite": "TZ=UTC npm test: 36 harnesses, 474591 passed, 0 failed",
+    "baseline": "TZ=UTC: 36 harnesses, 474588 passed, 0 failed",
+    "environmentCaveat": "Default cloud shell is America/New_York. Unmodified main has three pre-existing SRS test failures around UTC midnight because expected dates use UTC and production dates use local time. UTC rerun passes; unrelated SRS code/tests not changed.",
+    "necessaryFixtureMaintenance": "Reading candidates test used fixed 2026-10-11 as future and omitted real published articles from one synthetic-link success case. Relative future and actual+synthetic catalog preserve all assertions; runtime validator unchanged.",
+    "diffCheck": "pass"
+  },
+  "deduplication": {
+    "storyIds": "8 unique",
+    "canonicalSourceUrls": "8 unique",
+    "articleBodiesSha256": "8 unique",
+    "blockedStoryIdAbsent": "ec-languages-2026-09-26"
+  },
+  "browserQA": "Deferred to public production after authorized merge; no protected preview accessed."
+}

@@ -2,6 +2,60 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-11-en-practical-learning-choices",
+      "lang": "en",
+      "date": "2026-10-11",
+      "title": "Practical learning and future jobs",
+      "titleZh": "实践学习与未来的工作",
+      "summaryZh": "英国教育部公布的一项500人调查显示，许多受访年轻人支持实践学习，也担心社会评价、家长期望和未来工作。英语同语言改写保留调查样本范围，并区分计划中的新资格与已实施的措施。原文发表于2026年10月9日。",
+      "level": "B1",
+      "category": "education",
+      "topics": [
+        "实践学习",
+        "职业选择",
+        "家长期望"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-09",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-11-fr-debroussaillement-action",
+      "lang": "fr",
+      "date": "2026-10-11",
+      "title": "Protéger sa maison : comment passer à l'action ?",
+      "titleZh": "保护家园：怎样迈出行动的一步？",
+      "summaryZh": "为什么知道防火很重要，人们却仍难以行动？INRAE的一项研究关注费用、组织工作与邻里关系等障碍，并探索更容易落实的办法。原文发表于2026年10月8日。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "居家防火",
+        "行动障碍",
+        "邻里合作"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-08",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-11-de-sichere-spiele-chats",
+      "lang": "de",
+      "date": "2026-10-11",
+      "title": "Hilfe für sichere Spiele-Chats",
+      "titleZh": "让游戏聊天更安全的支持",
+      "summaryZh": "游戏平台未能落实规则时，志愿管理员常常承担维护交流环境的工作。德国联邦政治教育中心介绍了两个为他们及教育工作者提供支持的项目。原文发表于2026年10月2日；本篇为德语同语言教学改写。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "游戏社区",
+        "志愿服务",
+        "尊重交流"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-02",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-10-it-plastica-radar",
       "lang": "it",
       "date": "2026-10-10",
@@ -16,6 +70,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-09-25",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-11-it-lipari-storia-sommersa",
+      "lang": "it",
+      "date": "2026-10-11",
+      "title": "La storia di Lipari sotto il mare",
+      "titleZh": "海面之下的利帕里历史",
+      "summaryZh": "利帕里岛的水下遗址记录着海岸的变化。研究人员借助青铜时代遗迹还原过去，也为寻找更多古代聚落提供线索。原文发表于2026年9月15日。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "水下考古",
+        "文化遗产",
+        "海岸变化"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-09-15",
       "contentType": "native-adaptation"
     },
     {

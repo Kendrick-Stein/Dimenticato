@@ -1,0 +1,392 @@
+{
+  "schema": 1,
+  "id": "2026-10-11-fr-debroussaillement-action",
+  "storyId": "inrae-debroussaillement-action-2026-10-08",
+  "lang": "fr",
+  "date": "2026-10-11",
+  "contentType": "native-adaptation",
+  "title": "Protéger sa maison : comment passer à l'action ?",
+  "titleZh": "保护家园：怎样迈出行动的一步？",
+  "summaryZh": "为什么知道防火很重要，人们却仍难以行动？INRAE的一项研究关注费用、组织工作与邻里关系等障碍，并探索更容易落实的办法。原文发表于2026年10月8日。",
+  "level": "A2",
+  "levelReason": "编辑估计为A2辅助阅读：短句和现在时为主，含一次复合过去时、ce que结构，以及doit être testée的被动表达。débroussaillement、témoignage、à l’échelle等主题词和表达超出基础A2词汇，需结合中文注释阅读；并非无辅助A2测评或经认证的CEFR等级。",
+  "source": {
+    "name": "INRAE",
+    "title": "Le débroussaillement : les clés du passage à l'action",
+    "url": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+    "publishedAt": "2026-10-08",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence 2.0 (Etalab)",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+  },
+  "attribution": "来源：INRAE，《Le débroussaillement : les clés du passage à l'action》，2026-10-08（页面所示发布日期；未另列更新日期），2026-10-11查阅。依据Licence Ouverte 2.0 (Etalab)对机构原文作法语分级改写及简体中文翻译；不代表INRAE认可或审定。",
+  "adaptation": "Dimenticato根据法语机构原文作同语言分级改写，并新增逐句中文译文、词汇注释、学习总结与口语练习。保留研究发现与拟议方案的区别，不转载图片、第三方引文或相关链接材料。本文是语言学习材料，不提供个人防火操作或法律建议。",
+  "sentences": [
+    {
+      "id": "fr-action-01",
+      "text": "Près des forêts, le débroussaillement aide à protéger les maisons contre le feu.",
+      "zh": "在森林附近，清理灌木和杂草有助于保护房屋，抵御火灾。",
+      "glosses": [
+        {
+          "surface": "débroussaillement",
+          "lemma": "débroussaillement",
+          "zh": "清理灌木和杂草",
+          "note": "阳性名词；本文指用于防火的植被清理。"
+        },
+        {
+          "surface": "protéger",
+          "lemma": "protéger",
+          "zh": "保护"
+        },
+        {
+          "surface": "feu",
+          "lemma": "feu",
+          "zh": "火；火灾"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-02",
+      "text": "Mais de nombreux propriétaires ne passent pas à l'action.",
+      "zh": "但是，许多房主并没有采取行动。",
+      "glosses": [
+        {
+          "surface": "propriétaires",
+          "lemma": "propriétaire",
+          "zh": "房主；业主",
+          "note": "名词复数；这里指房屋或土地的所有者。"
+        },
+        {
+          "surface": "passent",
+          "lemma": "passer",
+          "zh": "转入；开始",
+          "note": "passer à l’action 表示采取行动；此处为现在时第三人称复数。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-03",
+      "text": "Une équipe d'INRAE travaille avec des partenaires pour comprendre pourquoi.",
+      "zh": "INRAE的一个团队与合作伙伴一起研究其中的原因。",
+      "glosses": [
+        {
+          "surface": "équipe",
+          "lemma": "équipe",
+          "zh": "团队",
+          "note": "阴性名词。"
+        },
+        {
+          "surface": "partenaires",
+          "lemma": "partenaire",
+          "zh": "合作伙伴",
+          "note": "名词复数。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-04",
+      "text": "Elle a recueilli des témoignages et des observations auprès d'environ 170 personnes dans deux départements français.",
+      "zh": "团队在法国两个省内，从约170人那里收集了陈述与观察资料。",
+      "glosses": [
+        {
+          "surface": "recueilli",
+          "lemma": "recueillir",
+          "zh": "收集",
+          "note": "a recueilli 为复合过去时；主语 elle 指前句的 équipe。"
+        },
+        {
+          "surface": "témoignages",
+          "lemma": "témoignage",
+          "zh": "陈述；讲述",
+          "note": "这里指参与调研者讲述的情况。"
+        },
+        {
+          "surface": "départements",
+          "lemma": "département",
+          "zh": "省",
+          "note": "阳性名词复数；法国的一种行政区划。"
+        },
+        {
+          "surface": "observations",
+          "lemma": "observation",
+          "zh": "观察；观察资料",
+          "note": "阴性名词复数。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-05",
+      "text": "Les résultats montrent plusieurs difficultés.",
+      "zh": "结果显示，困难有好几种。",
+      "glosses": [
+        {
+          "surface": "résultats",
+          "lemma": "résultat",
+          "zh": "结果"
+        },
+        {
+          "surface": "difficultés",
+          "lemma": "difficulté",
+          "zh": "困难",
+          "note": "阴性名词复数。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-06",
+      "text": "Certains propriétaires comprennent mal ce qu'ils doivent faire.",
+      "zh": "有些房主不太清楚自己应该做什么。",
+      "glosses": [
+        {
+          "surface": "comprennent",
+          "lemma": "comprendre",
+          "zh": "理解；明白",
+          "note": "现在时第三人称复数。"
+        },
+        {
+          "surface": "doivent",
+          "lemma": "devoir",
+          "zh": "应该；必须",
+          "note": "devoir + 动词原形。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-07",
+      "text": "Le coût du travail peut être un obstacle.",
+      "zh": "这项工作的费用可能成为一个障碍。",
+      "glosses": [
+        {
+          "surface": "coût",
+          "lemma": "coût",
+          "zh": "费用；成本",
+          "note": "阳性名词；注意 û。"
+        },
+        {
+          "surface": "obstacle",
+          "lemma": "obstacle",
+          "zh": "障碍",
+          "note": "阳性名词。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-08",
+      "text": "Il faut aussi pouvoir faire ce travail et l'organiser.",
+      "zh": "还需要具备完成这项工作的能力，并把它组织好。",
+      "glosses": [
+        {
+          "surface": "pouvoir",
+          "lemma": "pouvoir",
+          "zh": "能够；有能力",
+          "note": "这里指具备进行工作的能力。"
+        },
+        {
+          "surface": "organiser",
+          "lemma": "organiser",
+          "zh": "组织；安排",
+          "note": "l’ 指代 ce travail。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-09",
+      "text": "Les relations avec les voisins peuvent poser problème.",
+      "zh": "与邻居的关系也可能带来困难。",
+      "glosses": [
+        {
+          "surface": "voisins",
+          "lemma": "voisin",
+          "zh": "邻居",
+          "note": "阳性名词复数。"
+        },
+        {
+          "surface": "poser",
+          "lemma": "poser",
+          "zh": "造成；带来",
+          "note": "poser problème 是固定搭配，意为带来困难。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-10",
+      "text": "L'équipe étudie plusieurs idées pour mieux informer et aider les habitants.",
+      "zh": "团队正在研究多种想法，以便更好地向居民提供信息和帮助。",
+      "glosses": [
+        {
+          "surface": "étudie",
+          "lemma": "étudier",
+          "zh": "研究；探讨",
+          "note": "现在时第三人称单数；想法尚在研究中。"
+        },
+        {
+          "surface": "habitants",
+          "lemma": "habitant",
+          "zh": "居民"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-11",
+      "text": "Elle propose notamment d'agir à l'échelle du quartier.",
+      "zh": "团队尤其提出，可以以街区为单位采取行动。",
+      "glosses": [
+        {
+          "surface": "notamment",
+          "lemma": "notamment",
+          "zh": "尤其；特别是"
+        },
+        {
+          "surface": "quartier",
+          "lemma": "quartier",
+          "zh": "街区；社区",
+          "note": "阳性名词。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-12",
+      "text": "Une solution doit ensuite être testée sur le terrain.",
+      "zh": "随后，还需要在实际环境中测试一项解决方案。",
+      "glosses": [
+        {
+          "surface": "testée",
+          "lemma": "tester",
+          "zh": "测试的",
+          "note": "être testée 为被动结构；与 solution 配合用阴性。"
+        },
+        {
+          "surface": "terrain",
+          "lemma": "terrain",
+          "zh": "实地；实际环境",
+          "note": "sur le terrain 指在真实的当地环境中。"
+        }
+      ]
+    },
+    {
+      "id": "fr-action-13",
+      "text": "Le projet veut donc faciliter le passage à l'action.",
+      "zh": "因此，这个项目希望让人们更容易采取行动。",
+      "glosses": [
+        {
+          "surface": "faciliter",
+          "lemma": "faciliter",
+          "zh": "使更容易；促进"
+        },
+        {
+          "surface": "donc",
+          "lemma": "donc",
+          "zh": "因此"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "débroussaillement",
+        "lemma": "débroussaillement",
+        "zh": "清理灌木和杂草（本文指防火措施）",
+        "sentenceId": "fr-action-01"
+      },
+      {
+        "text": "propriétaires",
+        "lemma": "propriétaire",
+        "zh": "房主；业主",
+        "sentenceId": "fr-action-02"
+      },
+      {
+        "text": "témoignages",
+        "lemma": "témoignage",
+        "zh": "陈述；讲述",
+        "sentenceId": "fr-action-04"
+      },
+      {
+        "text": "coût",
+        "lemma": "coût",
+        "zh": "费用；成本",
+        "sentenceId": "fr-action-07"
+      },
+      {
+        "text": "voisins",
+        "lemma": "voisin",
+        "zh": "邻居",
+        "sentenceId": "fr-action-09"
+      },
+      {
+        "text": "quartier",
+        "lemma": "quartier",
+        "zh": "街区；社区",
+        "sentenceId": "fr-action-11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "ne passent pas à l'action",
+        "zh": "没有采取行动",
+        "sentenceId": "fr-action-02",
+        "note": "passer à l’action 表示采取行动；ne … pas 包围变位动词。"
+      },
+      {
+        "text": "poser problème",
+        "zh": "带来困难",
+        "sentenceId": "fr-action-09",
+        "note": "固定搭配；problème 前不加冠词。"
+      },
+      {
+        "text": "à l'échelle du quartier",
+        "zh": "以街区为单位；在街区层面",
+        "sentenceId": "fr-action-11",
+        "note": "à l’échelle de 表示在某个范围或层面。"
+      },
+      {
+        "text": "sur le terrain",
+        "zh": "在实地；在实际环境中",
+        "sentenceId": "fr-action-12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-action-07",
+        "note": "pouvoir + 动词原形表示可能性。这里 peut être 是两个词，意为“可能是”；不要与副词 peut-être（也许）混淆。"
+      },
+      {
+        "sentenceId": "fr-action-12",
+        "note": "doit être testée 表示“需要被测试”。doit 是 devoir 的现在时；être + 过去分词构成被动表达，testée 随阴性主语 solution 配合。"
+      }
+    ]
+  },
+  "category": "environment",
+  "topics": [
+    "居家防火",
+    "行动障碍",
+    "邻里合作"
+  ],
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pour vous, quel obstacle est le plus important : le coût, l'organisation ou les relations avec les voisins ?",
+        "zh": "对你来说，费用、工作安排和邻里关系中，哪个障碍最重要？"
+      },
+      {
+        "text": "Comment les voisins peuvent-ils s'aider pour protéger leur quartier ?",
+        "zh": "邻居们可以怎样互相帮助，保护自己的街区？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "J'ai besoin d'aide pour organiser le travail.",
+        "zh": "我需要有人帮忙安排这项工作。",
+        "note": "avoir besoin d’aide pour + 动词原形，用来说明在哪件事上需要帮助。"
+      },
+      {
+        "text": "Nous pouvons agir ensemble.",
+        "zh": "我们可以一起行动。",
+        "note": "nous pouvons + 动词原形，用来提出共同采取行动的办法。"
+      }
+    ]
+  }
+}

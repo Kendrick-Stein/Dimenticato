@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-10",
+  "collectedAt": "2026-10-11",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -72,13 +72,13 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 10,
+          "asOf": "2026-10-11",
+          "ageDays": 11,
           "bucket": "within_30_days"
         }
       },
@@ -154,13 +154,13 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 23,
+          "asOf": "2026-10-11",
+          "ageDays": 24,
           "bucket": "within_30_days"
         }
       },
@@ -186,14 +186,14 @@
       "status": "verified",
       "editorialNote": "口语角度：沉没遗址能告诉我们什么？怎样平衡文化遗产保护和环境变化？地面沉降与海平面上升要分清；不要把长期平均速率写成每年的精确预测。",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-10",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-11",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
-          "checkedAt": "2026-10-10",
+          "checkedAt": "2026-10-11",
           "read": true,
           "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
         },
@@ -236,17 +236,17 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
-          "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "checkedAt": "2026-10-11",
+          "sourceUrlAlreadyPublished": true,
+          "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 25,
+          "asOf": "2026-10-11",
+          "ageDays": 26,
           "bucket": "within_30_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-11-it-lipari-storia-sommersa"
     },
     {
       "id": "en-2026-10-09-robotics-adoption-hubs",
@@ -319,9 +319,9 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "titleAlreadyPublished": false
         },
         "publisher": {
           "verified": true,
@@ -333,8 +333,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-business-innovation-science-and-trade"
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 1,
+          "asOf": "2026-10-11",
+          "ageDays": 2,
           "bucket": "within_30_days"
         }
       },
@@ -360,14 +360,14 @@
       "status": "verified",
       "editorialNote": "口语角度：职业教育为何被低估？家长期望如何影响学生选择？只采用教育部机构叙述，排除学生/企业引语和个人故事。政府调查有500名受访者，不能泛化为所有年轻人的意见；改革仍分阶段实施。",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-10",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-11",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "url": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
-          "checkedAt": "2026-10-10",
+          "checkedAt": "2026-10-11",
           "read": true,
           "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
         },
@@ -411,9 +411,9 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
-          "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "checkedAt": "2026-10-11",
+          "sourceUrlAlreadyPublished": true,
+          "titleAlreadyPublished": true
         },
         "publisher": {
           "verified": true,
@@ -424,12 +424,12 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 1,
+          "asOf": "2026-10-11",
+          "ageDays": 2,
           "bucket": "within_30_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-11-en-practical-learning-choices"
     },
     {
       "id": "en-2026-10-06-healthcare-ai-oversight",
@@ -502,9 +502,9 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "titleAlreadyPublished": false
         },
         "publisher": {
           "verified": true,
@@ -515,8 +515,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency"
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 4,
+          "asOf": "2026-10-11",
+          "ageDays": 5,
           "bucket": "within_30_days"
         }
       },
@@ -594,13 +594,13 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 2,
+          "asOf": "2026-10-11",
+          "ageDays": 3,
           "bucket": "within_30_days"
         }
       },
@@ -626,14 +626,14 @@
       "status": "verified",
       "editorialNote": "知道火灾风险为何仍不采取行动？以“知道、愿意、能够”三个层面讨论法规、费用、邻里合作与公共服务。 Page says 10 of 119 Bouches-du-Rhône communes are concerned; this figure looks potentially inconsistent with its broader discussion. Do not carry the number into an adaptation without separate verification. Avoid turning article's legal discussion into current legal advice.",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-10",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-11",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "url": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
-          "checkedAt": "2026-10-10",
+          "checkedAt": "2026-10-11",
           "read": true,
           "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
         },
@@ -678,17 +678,17 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
-          "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "checkedAt": "2026-10-11",
+          "sourceUrlAlreadyPublished": true,
+          "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 2,
+          "asOf": "2026-10-11",
+          "ageDays": 3,
           "bucket": "within_30_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-11-fr-debroussaillement-action"
     },
     {
       "id": "fr-2026-10-06-sorghum-climate",
@@ -762,13 +762,13 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 4,
+          "asOf": "2026-10-11",
+          "ageDays": 5,
           "bucket": "within_30_days"
         }
       },
@@ -794,15 +794,15 @@
       "status": "verified",
       "editorialNote": "口语角度：谁该为安全的游戏社区负责？志愿管理员与平台责任如何分配？ 近期机构解释性文章，非突发新闻；保持讨论性、非煽动立场。 后续译编须CC BY-SA4同许可。",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-10",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-11",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
-          "checkedAt": "2026-10-10",
+          "checkedAt": "2026-10-11",
           "notes": "Original bpb page loads the full introduction, both sections on Community Support Network and Good Gaming Support, source list, and license block without a login."
         },
         "originalDate": {
@@ -852,17 +852,17 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
-          "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "checkedAt": "2026-10-11",
+          "sourceUrlAlreadyPublished": true,
+          "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 8,
+          "asOf": "2026-10-11",
+          "ageDays": 9,
           "bucket": "within_30_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-11-de-sichere-spiele-chats"
     },
     {
       "id": "de-2026-09-22-teacher-neutrality",
@@ -942,13 +942,13 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 18,
+          "asOf": "2026-10-11",
+          "ageDays": 19,
           "bucket": "within_30_days"
         }
       },
@@ -1033,13 +1033,276 @@
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false,
-          "checkedAt": "2026-10-10"
+          "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-10",
-          "ageDays": 19,
+          "asOf": "2026-10-11",
+          "ageDays": 20,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "it-2026-10-09-emso-deep-ocean",
+      "language": "it",
+      "sourceTitle": "Gli osservatori oceanografici europei di profondità progettano il prossimo decennio: a Roma il kick-off meeting di EMSO EVOLVE",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+      "sourceName": "INGV Ufficio Stampa",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-10-09",
+      "collectedAt": "2026-10-11",
+      "category": "environment",
+      "topics": [
+        "海洋观测",
+        "科研合作",
+        "开放数据"
+      ],
+      "level": "B1",
+      "priority": 4,
+      "status": "collected",
+      "editorialNote": "潜在口语角度：为什么需要长期观察海洋？哪些科学数据应该向公众开放？最新机构新闻，但原语来源与稿件权属仍待进一步核查。涉及跨国研究联盟，不能只凭意大利语网页或页脚许可便认定全部稿件为INGV原创。仅采集元数据，不改写、不发布；若进入复审，排除外部机构负责人引语、图片和链接内容，并区分四年计划与已完成成果。",
+      "verification": {
+        "workflowStage": "discovered",
+        "checkedAt": "2026-10-11",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+          "checkedAt": "2026-10-11",
+          "notes": "Read full institutional news page through web tool: visible date, narrative, project details, external quotation, image caption and article footer. No adapted body retained."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+          "evidence": "Article header Pubblicato: 09 Ottobre 2026, matching registered-source feed."
+        },
+        "nativeLanguage": {
+          "verified": false,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+          "basis": "institutional-language-observed-original-provenance-pending",
+          "evidence": "Official INGV Italian press page. A multi-country consortium and its external coordinator are central; no explicit translator marker found, but earliest Italian institutional-origin/republishing provenance was not settled in this bounded discovery pass.",
+          "caveat": "Do not promote to native-adaptation until article origin is independently checked; language-code match is not proof."
+        },
+        "rights": {
+          "verified": false,
+          "adaptationAllowed": false,
+          "publicRedistributionAllowed": false,
+          "license": "Article footer states CC BY 4.0 for INGV-published content; exact consortium-text scope pending",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Article footer repeats INGV CC BY 4.0 notice. Whether every unquoted paragraph is INGV-owned rather than consortium-syndicated prose remains unresolved; external coordinator quotation is explicitly excluded. False values mean not yet cleared, not a final prohibition.",
+          "evidenceUrls": [
+            "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+            "https://www.ingv.it/note-legali"
+          ],
+          "scope": "Metadata-only discovery; no article prose cleared for adaptation in this pass.",
+          "exclusions": [
+            "All images, captions, logos and linked external works",
+            "Quoted statement from EMSO ERIC coordinator Ingrid Puillat",
+            "Any consortium-owned or externally syndicated text unless rights are independently cleared"
+          ],
+          "attributionRequirements": [
+            "If cleared, credit INGV and any supplied creator/consortium attribution, original title/date and source URL",
+            "Link applicable licence and disclose adaptation/translation without implying endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-11",
+          "ageDays": 2,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "de-2026-08-20-ai-everyday-terms",
+      "language": "de",
+      "sourceTitle": "Begriffe rund um KI",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
+      "sourceName": "Bundeszentrale für politische Bildung — Werkstatt",
+      "registrySourceId": "bpb-werkstatt-de",
+      "sourcePublishedAt": "2026-08-20",
+      "collectedAt": "2026-10-11",
+      "category": "technology",
+      "topics": [
+        "日常AI",
+        "媒介素养",
+        "信息核查"
+      ],
+      "level": "B1",
+      "priority": 4,
+      "status": "verified",
+      "editorialNote": "备选口语角度：日常使用聊天机器人时，清晰提问和核查答案为什么重要？这是一篇52天前的术语解释，属于90天内次优储备，不能当作今日新发现。文章中关于AI能力的概括须在改写时谨慎处理；不必覆盖所有术语。中文译编和改写须同样以CC BY-SA 4.0发布。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-11",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
+          "checkedAt": "2026-10-11",
+          "notes": "Complete German article, nine terminology sections, cited lexicon and final text-specific license read. Web extraction source-page extraction L25–69."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
+          "evidence": "Article header L27 displays 20.08.2026 / 2 Minuten zu lesen; original publication, not collection date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
+          "additionalEvidenceUrls": [
+            "https://www.bpb.de/die-bpb/ueber-uns/service/impressum/",
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/"
+          ],
+          "basis": "institutional-original-language-inference",
+          "author": "Bundeszentrale für politische Bildung, Werkstatt; labeled Stichwort; no individual byline",
+          "evidence": "German institutional Werkstatt glossary, included in its own selected-contributions series. It cites Universität Tübingen’s KI Lexikon as background but shows no translation or external republication credit. Text-specific bpb licence is explicit; institutional language provenance only.",
+          "caveat": "Institutional source-language provenance, not personal mother-tongue certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+          "basis": "explicit-article-text-license",
+          "evidenceUrls": [
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
+            "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+            "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+          ],
+          "evidence": "Article final Lizenz L66–69 explicitly says Dieser Text is CC BY-SA 4.0. The grant covers the article’s prose; illustration separately credited and omitted. Re-fetched bpb usage page and CC BY-SA deed/legal code; adaptation and public redistribution allowed with attribution, changes, ShareAlike and non-endorsement.",
+          "scope": "bpb original German editorial definitions only. The linked University of Tübingen lexicon is not copied or cleared.",
+          "exclusions": [
+            "Illustration credited to Rizki Ahmad Fauzi and all images/media/logos",
+            "Linked University of Tübingen lexicon and other external works"
+          ],
+          "shareAlikeRequired": true,
+          "attributionRequirements": [
+            "Credit Bundeszentrale für politische Bildung, Werkstatt, title and original date",
+            "Link original and CC BY-SA 4.0",
+            "Identify abridgment, simplification and translation; no endorsement",
+            "Release all derived article/translation text under CC BY-SA 4.0"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-11",
+          "ageDays": 52,
+          "bucket": "within_90_days"
+        }
+      },
+      "linkToArticleId": null
+    },
+    {
+      "id": "en-2026-09-18-school-enrichment-activities",
+      "language": "en",
+      "sourceTitle": "More enriching activities for hundreds of thousands of children",
+      "sourceUrl": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+      "sourceName": "Department for Education / GOV.UK",
+      "registrySourceId": "govuk-education-english-news",
+      "sourcePublishedAt": "2026-09-18",
+      "collectedAt": "2026-10-11",
+      "category": "culture",
+      "topics": [
+        "课外活动",
+        "音乐与体育",
+        "社区归属"
+      ],
+      "level": "B1",
+      "priority": 4,
+      "status": "verified",
+      "editorialNote": "备选口语角度：音乐、体育、辩论或志愿服务中，你最想参与哪一种？什么会妨碍人们参加？注意部门首页展示的5 October是更新日期，首次发表是18 September。只写计划扩大活动机会，不保证预期教育或健康成效；不使用外部调查全文、第三方引语或个人学生故事。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-11",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+          "checkedAt": "2026-10-11",
+          "read": true,
+          "notes": "Full article, all updates, institutional narrative, third-party quote blocks, eligible-area list and OGL footer read. Web extraction source-page extraction L55–183, footer L251–253."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+          "evidence": "Header L62–65: Published 18 September 2026; Last updated 5 October 2026. Change log L69–78 says Isle of Wight was added on 5 October and First published 18 September. Feed 5 October date is not original date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional source and article provenance support native-language publication. This does not certify the author's personal native tongue or earliest drafting language.",
+          "evidence": "Official English institutional release on domestic school enrichment, co-issued by Department for Education and Department for Digital, Culture, Media and Sport; From names both. No translation or syndication label; institutional original-language inference."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All photographs, logos and media",
+            "All direct quotations, including ministerial and third-party quotes",
+            "Linked State of the Nation report and other external works",
+            "Any identifiable personal/student case data"
+          ],
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "article-footer-and-explicit-government-text-policy",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "evidence": "Article footer L251–253 explicitly applies OGL v3.0 except otherwise stated. GOV.UK terms L91–98 confirms reuse rules. Complete narrative and separately attributed quotes read; all direct quotations excluded. Official National Archives indexed OGL licence text rechecked, including adaptation and exceptions.",
+          "scope": "Public-sector institutional narrative only; both named departmental providers credited. Future programme benefits must remain plans/aims.",
+          "attributionRequirements": [
+            "Contains public sector information licensed under the Open Government Licence v3.0.",
+            "Credit Department for Education and Department for Digital, Culture, Media and Sport, original title, URL and 18 September 2026 date",
+            "Link OGL v3.0; identify adaptation/translation and no endorsement"
+          ],
+          "licenseRetrievalNote": "Canonical and search-result URL direct opens returned HTTP 403. Official National Archives search-index result (source-page extraction) provided the full licence text, which was read alongside live article grant and GOV.UK terms. No access-control bypass attempted.",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 8,
+          "checkedAt": "2026-10-11",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "publisher": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+          "names": [
+            "Department for Education",
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
+        },
+        "freshness": {
+          "asOf": "2026-10-11",
+          "ageDays": 23,
           "bucket": "within_30_days"
         }
       },

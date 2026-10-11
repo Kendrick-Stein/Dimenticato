@@ -1,0 +1,185 @@
+{
+  "articleId": "2026-10-11-de-sichere-spiele-chats",
+  "status": "independently-reviewed",
+  "retrievedAt": "2026-10-11",
+  "registrySourceId": "bpb-werkstatt-de",
+  "candidateId": "de-2026-10-02-gaming-community-safety",
+  "source": {
+    "name": "Bundeszentrale für politische Bildung — Werkstatt",
+    "title": "Extremismus im Gaming",
+    "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+    "publishedAt": "2026-10-02",
+    "lang": "de",
+    "author": "Bundeszentrale für politische Bildung, Werkstatt（页面标注 Werkstatt recherchiert，无个人署名）"
+  },
+  "sourceRead": {
+    "completeArticleRead": true,
+    "bodyLines": "28–50",
+    "sourceLocationConvention": "Web extraction line numbers for this retrieval, recorded below beside exact licensed paragraphs. All linked third-party full texts excluded.",
+    "licensedProseFile": "de-original-licensed-prose.txt",
+    "licensedProseSha256": "9cc8f602e02034b3e0fee23fd8fc160819b6118a14235f32211e9efe5c1e2446",
+    "hashScope": "UTF-8 eligible original narrative paragraphs joined by two LF characters, with one final LF; not the entire HTML page. Link labels removed; original prose unchanged.",
+    "paragraphs": [
+      {
+        "location": "L28",
+        "text": "Wenn Gaming-Plattformen ihre Richtlinien nicht selbst durchsetzen, kommen häufig unbezahlte Moderatorinnen und Moderatoren zum Einsatz. Welche Rolle spielt ehrenamtliches Community-Management im Gaming?"
+      },
+      {
+        "location": "L31",
+        "text": "Auf Gaming-Plattformen wie Roblox, Steam, Discord oder Twitch versuchen auch extremistische Akteure Foren und Chats als Agitationsfläche zu nutzen – eine laute Minderheit in der Gaming-Szene. Wenn die Plattformen ihre eigenen Richtlinien nicht durchsetzen, kann aktives Community-Management genau dort ansetzen, um demokratische Werte im digitalen Alltag zu verteidigen und Schutzräume zu schaffen."
+      },
+      {
+        "location": "L32",
+        "text": "Das Community Support Network und der Good Gaming Support bieten dabei Unterstützung an."
+      },
+      {
+        "location": "L35",
+        "text": "Laut der Stiftung Digitale Spielkultur entstehen resiliente Online-Communitys nicht von selbst. Sie benötigten engagierte Moderierende, die demokratische Werte im digitalen Alltag etablieren. Community-Management sei ein junges, oft ehrenamtliches Feld. Dessen Verantwortung für sichere, demokratische Räume sowie der hohe zeitliche und emotionale Druck würden von den Moderierenden jedoch häufig unterschätzt."
+      },
+      {
+        "location": "L41",
+        "text": "Um digitale Räume resilienter zu machen, bietet das Community Support Network der Stiftung Digitale Spielekultur eine Workshop-Reihe, Coachings, Austauschkanäle sowie Bildungsmaterialien für Moderierende an."
+      },
+      {
+        "location": "L44",
+        "text": "Extremistinnen und Extremisten machten zwar nur einen kleinen Teil der Gamerinnen und Gamer aus, nutzten jedoch laut Mick Prinz von der Amadeu Antonio Stiftung unmoderierte Orte und das Ausbleiben von Gegenrede gezielt aus, um den Ton anzugeben. Wo Plattformbetreiber ihre eigenen Guidelines nicht konsequent durchsetzten, schützten teilweise freiwillige Moderatorinnen und Moderatoren auf Twitch oder Discord die Userinnen und User vor Menschenfeindlichkeit."
+      },
+      {
+        "location": "L50",
+        "text": "Pädagoginnen und Pädagogen sowie Communities benötigten konkrete Beratung, wie man sich gegen Hass wehre und für diskriminierungsarme Kommunikation sorge – hier setze das Beratungsprojekt Good Gaming Support der Amadeu Antonio Stiftung an."
+      }
+    ],
+    "omitted": "Image/caption L30; third-party direct quotations L37–40 and L46–49; source bibliography L51–53; site navigation. Omitted materials were read for exceptions but are not licensed review corpus or adapted content."
+  },
+  "dateEvidence": {
+    "location": "Original header L26",
+    "text": "02.10.2026 / 2 Minuten zu lesen",
+    "originalDate": "2026-10-02",
+    "ageDaysAsOfEdition": 9
+  },
+  "nativeLanguage": {
+    "basis": "institutional-original-language-inference",
+    "evidence": [
+      "Article is German-language Werkstatt recherchiert, with no translator or syndicated-source credit.",
+      "https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/ L27 identifies these as Werkstatt contributions on digital education.",
+      "https://www.bpb.de/die-bpb/ueber-uns/service/impressum/ L30–46 identifies bpb as provider in Bonn and its editorial team."
+    ],
+    "caveat": "Does not certify an individual author’s mother tongue or earliest drafting language."
+  },
+  "rights": {
+    "verified": true,
+    "adaptationAllowed": true,
+    "publicRedistributionAllowed": true,
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+    "evidence": [
+      {
+        "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+        "location": "L56–59",
+        "text": "Dieser Text ist unter der Creative Commons Lizenz \"CC BY-SA 4.0 - Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International\" veröffentlicht. Urheberrechtliche Angaben zu Bildern / Grafiken / Videos finden sich direkt bei den Abbildungen."
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+        "location": "L47–55",
+        "finding": "Share and adapt permitted; credit, changes, same licence, no endorsement and no additional restrictions required."
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.de",
+        "finding": "Licence legal code retrieved for inspection."
+      },
+      {
+        "url": "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+        "finding": "General usage page re-fetched; article-specific text grant controls."
+      }
+    ],
+    "scope": "bpb-authored editorial narrative only. All derived lesson text explicitly released CC BY-SA 4.0.",
+    "excluded": [
+      "All photos, graphics, videos, captions and logos",
+      "Nandita Wegehaupt and Mick Prinz direct block quotations",
+      "Linked third-party prose and bibliography"
+    ],
+    "attributionInArticle": true
+  },
+  "claims": [
+    {
+      "sentenceIds": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "locations": [
+        "L31",
+        "L44"
+      ],
+      "finding": "Chats/forums are used by extremist actors, described as a small minority; no claim that gaming communities in general are extremist."
+    },
+    {
+      "sentenceIds": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "locations": [
+        "L28",
+        "L31",
+        "L44"
+      ],
+      "finding": "Platforms may not enforce rules; voluntary and unpaid moderators intervene and protect users. achten auf die Gespräche is a plain-language explanation of moderating, not a new event."
+    },
+    {
+      "sentenceIds": [
+        "s8"
+      ],
+      "locations": [
+        "L35"
+      ],
+      "finding": "High time/emotional pressure adapted as possible cost of time/energy."
+    },
+    {
+      "sentenceIds": [
+        "s9",
+        "s10"
+      ],
+      "locations": [
+        "L41"
+      ],
+      "finding": "Workshops/coaching/materials/exchange channels. Sharing experiences is plain-language description of exchange channels."
+    },
+    {
+      "sentenceIds": [
+        "s11",
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "locations": [
+        "L32",
+        "L50"
+      ],
+      "finding": "Good Gaming Support advises educators and communities against hate and toward less discriminatory communication; soll/Ziel preserve purpose rather than guaranteed outcomes."
+    }
+  ],
+  "pedagogicalReview": {
+    "bodyWordCountWhitespace": 125,
+    "target": "A2 supported reading",
+    "levelCaveat": "编辑估计为有中文支持的 A2 阅读：以现在时和短主句为主，练习情态动词、可分动词及简单 zu 不定式。Moderator、Diskriminierung 等社会议题词和项目名称超出常见 A2 词汇，已逐句注释；不代表无需辅助即可阅读，也不是经认证的 CEFR 测评。",
+    "pairedChinese": true,
+    "allGlossSurfacesAndSummaryReferencesChecked": true,
+    "speakingQuestions": 2,
+    "speakingExpressions": 2
+  },
+  "duplicateReview": {
+    "sourceUrlAbsentFromCurrentArticleFiles": true,
+    "storyIdAbsentFromCurrentArticleFiles": true,
+    "base": "main d94ef54bdf3dd3b4c6cf95c2ab74a0607a11141e; four prior article files inspected"
+  },
+  "publicationBoundary": "Independent editorial review complete; publication is subject to repository checks and deployment verification.",
+  "finalEdition": {
+    "reviewStatus": "approved",
+    "reviewRecord": "independent-review.md",
+    "articleSha256": "8343d7507235503b78d4f13c9c7f7ab503314e2028fe41b3781de3e2a21307e8",
+    "wordCountWhitespace": 125,
+    "changesAfterDraftReview": "none"
+  }
+}

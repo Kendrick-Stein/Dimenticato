@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-11",
+  "italian": {
+    "checkedAt": "2026-10-11T00:11:11.418216+00:00",
+    "registrySourceId": "ingv-italian-press",
+    "feedUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa",
+    "feedRead": true,
+    "articleFetchCount": 1,
+    "candidateCount": 1,
+    "candidateFile": "new-candidates.json",
+    "checks": [
+      {
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa",
+        "outcome": "Current list has 9 October ocean-observation project, 8 October Campi Flegrei study and 7 October polar conference ahead of existing 30 September reserve; fetched newest article only."
+      },
+      {
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+        "originalDate": "2026-10-09",
+        "outcome": "Collected potential candidate only. Full page read; date confirmed, but native original and consortium prose ownership need more review. No text adapted or republished."
+      }
+    ],
+    "notCollected": "No additional article fetches or candidates: bounded latest-feed pass complete."
+  },
+  "french": {
+    "schema": 1,
+    "checkedAt": "2026-10-11T00:10:44.141009+00:00",
+    "registrySourceId": "inrae-french-news",
+    "scope": "One small discovery pass for a French institutional article newer than 2026-10-08, strictly within https://www.inrae.fr/actualites/. No adaptation, article-file change or repository edit.",
+    "feedCheck": {
+      "url": "https://www.inrae.fr/actualites",
+      "read": true,
+      "result": "The accessible listing exposes search/filter controls and a Top du mois collection, but no dated latest-article result list. It does not establish a newer candidate."
+    },
+    "targetedSearches": [
+      {
+        "query": "site:inrae.fr/actualites/ \"Publié le 09 octobre 2026\"",
+        "domainRestriction": [
+          "inrae.fr"
+        ]
+      },
+      {
+        "query": "site:inrae.fr/actualites/ \"Publié le 10 octobre 2026\"",
+        "domainRestriction": [
+          "inrae.fr"
+        ]
+      }
+    ],
+    "excludedSearchResult": {
+      "title": "À la recherche d’une juste transformation des aliments",
+      "url": "https://www.inrae.fr/dossiers/recherche-dune-juste-transformation-aliments",
+      "searchSnippetDate": "2026-10-09",
+      "exclusionReason": "The returned dossier URL is outside the approved /actualites/ article prefix. Not opened or admitted to the reserve; article-level rights/date not verified."
+    },
+    "newArticleFetches": 0,
+    "newCandidates": [],
+    "outcome": "No qualifying newer candidate established in this limited pass. This is a bounded negative discovery result, not a claim that INRAE has published no newer article. Existing verified 8 October selection remains suitable."
+  },
+  "germanEnglish": {
+    "checkedAt": "2026-10-11",
+    "maxNewCandidatesPerLanguage": 1,
+    "selected": [
+      "de-2026-08-20-ai-everyday-terms",
+      "en-2026-09-18-school-enrichment-activities"
+    ],
+    "notes": [
+      {
+        "language": "de",
+        "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/569392/automation-bias/",
+        "title": "Automation Bias",
+        "originalDate": "2025-07-30",
+        "decision": "Not added to current reserve: archive, 438 days old as of edition; adjacent navigation and recent crawl are not publication evidence. Explicit CC BY-SA 4.0 but freshness fails.",
+        "evidence": "Full page source-page extraction, date L26, licence L47–50."
+      },
+      {
+        "language": "en",
+        "url": "https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs",
+        "title": "Breathing space for families as government eases school costs",
+        "originalDate": "2026-09-01",
+        "decision": "Inspected before revised one-candidate cap; no new candidate record added. Within 90 days but school-cost support requires current implementation checks before adaptation, especially the promise of school-food standards by end September. Keep as discovery-only note.",
+        "evidence": "Full page source-page extraction, date L61, institutional narrative L64–83 and OGL footer L161–163."
+      }
+    ],
+    "publicationBoundary": "Metadata and evidence only; no public reading editions generated from these scout items. All candidate readyForPublication flags remain false."
+  }
+}

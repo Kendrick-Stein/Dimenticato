@@ -1,0 +1,245 @@
+{
+  "articleId": "2026-10-11-en-practical-learning-choices",
+  "status": "independently-reviewed",
+  "retrievedAt": "2026-10-11",
+  "registrySourceId": "govuk-education-english-news",
+  "candidateId": "en-2026-10-09-vocational-learning",
+  "source": {
+    "name": "Department for Education / GOV.UK",
+    "title": "Teenagers back vocational reforms and defy outdated stigma",
+    "url": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+    "publishedAt": "2026-10-09",
+    "lang": "en",
+    "author": "Department for Education（From 栏另列 The Rt Hon Lucy Powell MP）"
+  },
+  "sourceRead": {
+    "completeArticleRead": true,
+    "bodyLines": "65–125",
+    "sourceLocationConvention": "Web extraction line numbers for this retrieval, recorded below beside exact licensed paragraphs. All linked third-party full texts excluded.",
+    "licensedProseFile": "en-original-licensed-prose.txt",
+    "licensedProseSha256": "e9c8b540d1b164a4eca8492342dbaf2e2a93b983a1e5ca2d52faf73a333a0b34",
+    "hashScope": "UTF-8 eligible original institutional narrative, including standfirst, joined by two LF characters and one final LF; not complete HTML. Link markup removed and nonbreaking whitespace normalized.",
+    "paragraphs": [
+      {
+        "location": "L56",
+        "text": "Majority of young people support more hands-on learning from age 14."
+      },
+      {
+        "location": "L65",
+        "text": "Teenagers have thrown their support behind a shake-up to vocational learning as the government steps up efforts to tackle youth unemployment and challenge outdated attitudes towards technical education."
+      },
+      {
+        "location": "L66",
+        "text": "The majority of young people (84%) overwhelmingly support new options for 14-year-olds that combine practical technical learning (such as coding, construction or manufacturing) with core academic subjects (such as English and Maths) - an ambition announced by the Prime Minister in his first week in office and now being delivered on."
+      },
+      {
+        "location": "L67",
+        "text": "Two weeks ago, the government unveiled plans for Vocational GCSEs - a fundamental change to the education system to put hands-on education on an equal footing with academic from 14."
+      },
+      {
+        "location": "L68",
+        "text": "This shake-up builds on the reforms to introduce rigorous new V Levels which will be available from September 2027 to provide high-quality vocational training for 16 to 19-year-olds. They will sit alongside A Levels and T Levels, and will be equivalent to one A Level, allowing students to mix and match academic and vocational subjects if they are unsure where to specialise."
+      },
+      {
+        "location": "L69",
+        "text": "With nearly a million young people aged 16 to 24 currently out of education, employment or training, the government is determined to ensure the system works for every young person."
+      },
+      {
+        "location": "L71",
+        "text": "Vocational GCSEs will have nationally set standards, unlike the existing Technical Awards, and grading and assessment will be regulated by Ofqual to ensure full parity with traditional GCSEs."
+      },
+      {
+        "location": "L73",
+        "text": "Of those 500 polled, who are due to or have recently made choices about their options at aged 14 and 16:"
+      },
+      {
+        "location": "L74",
+        "text": "Nearly half (44%) say vocational and technical routes are looked down on by their peers."
+      },
+      {
+        "location": "L76",
+        "text": "Over a third (37%) feel pressure from their parents to choose academic options from aged 16."
+      },
+      {
+        "location": "L78",
+        "text": "When thinking about their future, their biggest concern was ending up in a job they do not enjoy (69%)."
+      },
+      {
+        "location": "L80",
+        "text": "Nearly half (46%) are concerned that advances in artificial intelligence could reduce employment opportunities."
+      },
+      {
+        "location": "L81",
+        "text": "More than half (52%) said they worry about having the right skills for the jobs of the future."
+      },
+      {
+        "location": "L89",
+        "text": "Vocational GCSEs will sit alongside traditional GCSEs and will eventually replace the current Technical Awards. They are set to be available in some subjects as early as September 2029, as part of broader new technical pathways starting in September 2028. English, Maths and Science will remain a common entitlement."
+      },
+      {
+        "location": "L90",
+        "text": "Subject options could include Business Management and Finance, Creative Media Production, Digital Tech, Child Development, and Building and Construction, supporting progression into further study through T Levels and V Levels in these subjects, or through A Levels."
+      },
+      {
+        "location": "L91",
+        "text": "A consultation to shape Vocational GCSEs will be published before the end of the year."
+      },
+      {
+        "location": "L93",
+        "text": "From September 2027, the first V Levels will be available in Education and Early Years, Finance and Accounting, and Digital which could lead into university or an apprenticeship."
+      },
+      {
+        "location": "L95",
+        "text": "For those who need support to pass English and Maths before progressing there will be two new qualifications also available from September 2027:"
+      },
+      {
+        "location": "L96",
+        "text": "Foundation Certificates will provide a one-year bridging route before progressing to V Levels, T Levels or A Levels, initially in Education and Early Years and Digital."
+      },
+      {
+        "location": "L98",
+        "text": "A separate two-year pathway through an Occupational Certificate will be available for those who want to go directly into work or an apprenticeship, with initial subjects in Catering and Hospitality and Education and Early Years."
+      }
+    ],
+    "omitted": "Image L63; minister quote L83–88; all third-party direct quotations and named personal cases L100–125, including an 18-year-old; page/navigation/footer text. Omitted materials were read only to check exclusions."
+  },
+  "dateEvidence": {
+    "location": "Original header L58–61",
+    "text": "From: Department for Education and The Rt Hon Lucy Powell MP; Published: 9 October 2026",
+    "originalDate": "2026-10-09",
+    "ageDaysAsOfEdition": 2
+  },
+  "publisherCheck": {
+    "registeredName": "Department for Education",
+    "actualFromIncludesRegisteredInstitution": true,
+    "location": "L58–59"
+  },
+  "nativeLanguage": {
+    "basis": "institutional-original-language-inference",
+    "evidence": [
+      "English institutional release issued by the registered Department for Education about domestic qualifications; From field verified.",
+      "No translator credit, foreign-original link or republication label on the complete page.",
+      "https://www.gov.uk/government/organisations/department-for-education lists the same 9 October news story and identifies the department’s education responsibilities."
+    ],
+    "caveat": "Does not certify an individual author’s native language or earliest drafting language."
+  },
+  "rights": {
+    "verified": true,
+    "adaptationAllowed": true,
+    "publicRedistributionAllowed": true,
+    "license": "Open Government Licence v3.0",
+    "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidence": [
+      {
+        "url": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+        "location": "L193–195",
+        "text": "All content is available under the Open Government Licence v3.0, except where otherwise stated; © Crown copyright."
+      },
+      {
+        "url": "https://www.gov.uk/help/terms-conditions",
+        "location": "L91–98",
+        "finding": "GOV.UK content under Crown copyright/OGL unless credited otherwise; reproduction allowed subject to conditions."
+      },
+      {
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "searchResultUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/?adhoc_referrer=536452817",
+        "finding": "Official National Archives search-index result retrieved complete OGL text: copy/publish/distribute/adapt permitted; standard attribution required; personal data, third-party rights and logos excluded; no endorsement. Direct open of canonical and returned search-result URL gave HTTP 403; no bypass attempted. Indexed official licence text, live article grant and GOV.UK terms were inspected."
+      }
+    ],
+    "scope": "Only institutional narrative and anonymous aggregate survey statistics. No individual under-18 or age-18 case information; no private individual facts; no quotations.",
+    "excluded": [
+      "All named personal/student cases and personal details",
+      "All direct quotations, including ministers and third parties",
+      "All photos, logos, graphics and external linked works"
+    ],
+    "standardOglAttributionInArticle": true,
+    "changesAndNonEndorsementDisclosed": true
+  },
+  "claims": [
+    {
+      "sentenceIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "locations": [
+        "L58–61",
+        "L66",
+        "L73"
+      ],
+      "finding": "500-person survey; 84% practical/academic combined support from age 14; coding/construction/manufacturing examples. s1 says suggests and s3 scopes percentage to sample."
+    },
+    {
+      "sentenceIds": [
+        "s5"
+      ],
+      "locations": [
+        "L73–74"
+      ],
+      "finding": "44% reported peers look down on vocational/technical routes."
+    },
+    {
+      "sentenceIds": [
+        "s6"
+      ],
+      "locations": [
+        "L73",
+        "L76"
+      ],
+      "finding": "37% parental pressure for academic options from 16."
+    },
+    {
+      "sentenceIds": [
+        "s7"
+      ],
+      "locations": [
+        "L78"
+      ],
+      "finding": "69% concern about a future unenjoyable job; no added earnings or success outcome."
+    },
+    {
+      "sentenceIds": [
+        "s8"
+      ],
+      "locations": [
+        "L73–81"
+      ],
+      "finding": "Editorial methodological caveat limits reported views to those polled, no unsupported claim of national representativeness."
+    },
+    {
+      "sentenceIds": [
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "locations": [
+        "L68",
+        "L89",
+        "L93"
+      ],
+      "finding": "V Levels due September 2027; some Vocational GCSE subjects planned as early as September 2029. Distinguishes qualifications and preserves future/planned status."
+    }
+  ],
+  "pedagogicalReview": {
+    "bodyWordCountWhitespace": 130,
+    "target": "B1",
+    "pairedChinese": true,
+    "allGlossSurfacesAndSummaryReferencesChecked": true,
+    "speakingQuestions": 2,
+    "speakingExpressions": 2
+  },
+  "duplicateReview": {
+    "sourceUrlAbsentFromCurrentArticleFiles": true,
+    "storyIdAbsentFromCurrentArticleFiles": true,
+    "base": "main d94ef54bdf3dd3b4c6cf95c2ab74a0607a11141e; four prior article files inspected"
+  },
+  "publicationBoundary": "Independent editorial review complete; publication is subject to repository checks and deployment verification.",
+  "finalEdition": {
+    "reviewStatus": "approved",
+    "reviewRecord": "independent-review.md",
+    "articleSha256": "6bd854bd0a09b4d0972178be71458427f9a7ae14b4f567b73f58df5adf031f15",
+    "wordCountWhitespace": 133,
+    "changesAfterDraftReview": "survey groups not implied disjoint"
+  }
+}
