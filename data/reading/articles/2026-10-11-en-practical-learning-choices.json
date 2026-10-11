@@ -1,0 +1,387 @@
+{
+  "schema": 1,
+  "id": "2026-10-11-en-practical-learning-choices",
+  "storyId": "dfe-vocational-learning-survey-2026-10-09",
+  "lang": "en",
+  "date": "2026-10-11",
+  "contentType": "native-adaptation",
+  "category": "education",
+  "topics": [
+    "实践学习",
+    "职业选择",
+    "家长期望"
+  ],
+  "title": "Practical learning and future jobs",
+  "titleZh": "实践学习与未来的工作",
+  "summaryZh": "英国教育部公布的一项500人调查显示，许多受访年轻人支持实践学习，也担心社会评价、家长期望和未来工作。英语同语言改写保留调查样本范围，并区分计划中的新资格与已实施的措施。原文发表于2026年10月9日。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：主题贴近学习与择业，包含调查百分比、过去时、that 从句、简短关系从句及计划表达。职业资格名称和 look down on 等短语提供语境注释；这是教学编辑估计，不是经认证的 CEFR 测评。",
+  "source": {
+    "name": "Department for Education / GOV.UK",
+    "title": "Teenagers back vocational reforms and defy outdated stigma",
+    "url": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+    "publishedAt": "2026-10-09",
+    "lang": "en",
+    "author": "Department for Education（From 栏另列 The Rt Hon Lucy Powell MP）"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidenceUrl": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. 原文 © Crown copyright，由 Department for Education 在 GOV.UK 于2026年10月9日发布；原文及许可链接见来源信息。Dimenticato 作英语教学删节、简化、重组和中文翻译，不表示英国政府认可本材料。",
+  "adaptation": "从英国教育部英语机构新闻叙述作同语言分级改写，附中文逐句译文。仅使用汇总调查结果及机构改革说明；所有人物直接引语、具名学生故事和其他个人案例、图片、标志及外链材料均未复用。调查结论限定于500名受访者；2027年和2029年的措施保留计划语气。原语判断基于机构和文章来源，而非个人母语认证。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A survey of 500 young people suggests strong interest in practical learning.",
+      "zh": "一项针对500名年轻人的调查显示，他们对实践学习有浓厚兴趣。",
+      "glosses": [
+        {
+          "surface": "survey",
+          "lemma": "survey",
+          "zh": "调查",
+          "note": "此处为可数名词"
+        },
+        {
+          "surface": "suggests",
+          "lemma": "suggest",
+          "zh": "表明；显示",
+          "note": "此处不是“建议”，而是证据显示某种倾向"
+        },
+        {
+          "surface": "practical",
+          "lemma": "practical",
+          "zh": "实践的；动手操作的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The Department for Education reported the results on 9 October 2026.",
+      "zh": "英国教育部于2026年10月9日报告了调查结果。",
+      "glosses": [
+        {
+          "surface": "reported",
+          "lemma": "report",
+          "zh": "报告；公布",
+          "note": "一般过去时"
+        },
+        {
+          "surface": "results",
+          "lemma": "result",
+          "zh": "结果",
+          "note": "此处指调查结果"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "In the survey, 84% supported combining technical subjects with English and maths from age fourteen.",
+      "zh": "调查中，84%的受访者支持从14岁开始把技术类科目与英语、数学结合起来学习。",
+      "glosses": [
+        {
+          "surface": "supported",
+          "lemma": "support",
+          "zh": "支持"
+        },
+        {
+          "surface": "combining",
+          "lemma": "combine",
+          "zh": "结合",
+          "note": "combine A with B：把A与B结合"
+        },
+        {
+          "surface": "technical",
+          "lemma": "technical",
+          "zh": "技术的；技能类的"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Examples of practical learning included coding, construction and manufacturing.",
+      "zh": "实践学习的例子包括编程、建筑施工和制造。",
+      "glosses": [
+        {
+          "surface": "coding",
+          "lemma": "coding",
+          "zh": "编程"
+        },
+        {
+          "surface": "construction",
+          "lemma": "construction",
+          "zh": "建筑施工"
+        },
+        {
+          "surface": "manufacturing",
+          "lemma": "manufacturing",
+          "zh": "制造；制造业"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "However, 44% felt that other young people looked down on technical education.",
+      "zh": "然而，44%的受访者觉得其他年轻人看不起技术教育。",
+      "glosses": [
+        {
+          "surface": "However",
+          "lemma": "however",
+          "zh": "然而"
+        },
+        {
+          "surface": "looked down on",
+          "lemma": "look down on",
+          "zh": "轻视；看不起",
+          "note": "过去时短语动词，不是向下看"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "In the same survey, 37% felt pressure from their parents to choose academic subjects from age sixteen.",
+      "zh": "同一调查中，37%的受访者感到父母施加压力，要他们从16岁起选择学术类科目。",
+      "glosses": [
+        {
+          "surface": "pressure",
+          "lemma": "pressure",
+          "zh": "压力",
+          "note": "此处指来自家长期望的压力"
+        },
+        {
+          "surface": "academic",
+          "lemma": "academic",
+          "zh": "学术类的；偏理论学习的"
+        },
+        {
+          "surface": "choose",
+          "lemma": "choose",
+          "zh": "选择"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The biggest concern, shared by 69%, was getting a job they would not enjoy.",
+      "zh": "69%的受访者最担心的是将来从事一份自己不喜欢的工作。",
+      "glosses": [
+        {
+          "surface": "concern",
+          "lemma": "concern",
+          "zh": "担忧",
+          "note": "此处为名词"
+        },
+        {
+          "surface": "shared",
+          "lemma": "share",
+          "zh": "共同拥有的",
+          "note": "这里表示受访者有同样的担忧"
+        },
+        {
+          "surface": "enjoy",
+          "lemma": "enjoy",
+          "zh": "喜欢；从……中获得乐趣"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "These findings describe the people surveyed, not every young person’s opinion.",
+      "zh": "这些结果反映的是受访者的看法，并非每一位年轻人的意见。",
+      "glosses": [
+        {
+          "surface": "findings",
+          "lemma": "finding",
+          "zh": "调查发现；结果"
+        },
+        {
+          "surface": "surveyed",
+          "lemma": "survey",
+          "zh": "接受调查的",
+          "note": "过去分词作后置修饰语"
+        },
+        {
+          "surface": "opinion",
+          "lemma": "opinion",
+          "zh": "意见；看法"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The government plans to introduce new vocational qualifications alongside academic ones.",
+      "zh": "政府计划推出新的职业类资格，使其与学术类资格并行。",
+      "glosses": [
+        {
+          "surface": "vocational",
+          "lemma": "vocational",
+          "zh": "职业教育的；职业技能的"
+        },
+        {
+          "surface": "qualifications",
+          "lemma": "qualification",
+          "zh": "学历；资格",
+          "note": "此处指完成课程并通过考核取得的资格"
+        },
+        {
+          "surface": "alongside",
+          "lemma": "alongside",
+          "zh": "与……并行；和……一起"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The first V Levels are due in September 2027.",
+      "zh": "首批V Levels职业资格课程预计于2027年9月推出。",
+      "glosses": [
+        {
+          "surface": "due",
+          "lemma": "due",
+          "zh": "预计到来的；预定的",
+          "note": "be due：预定、预计发生"
+        },
+        {
+          "surface": "V Levels",
+          "lemma": "V Level",
+          "zh": "V Level职业资格",
+          "note": "专名，原文介绍的英国新职业资格"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Some Vocational GCSE subjects are planned for as early as September 2029.",
+      "zh": "部分职业类GCSE科目计划最早于2029年9月推出。",
+      "glosses": [
+        {
+          "surface": "Vocational GCSE",
+          "lemma": "Vocational GCSE",
+          "zh": "职业类GCSE资格",
+          "note": "GCSE是英国中等教育普通证书；这里指拟推出的职业类版本"
+        },
+        {
+          "surface": "planned",
+          "lemma": "plan",
+          "zh": "计划的",
+          "note": "are planned 是被动语态"
+        },
+        {
+          "surface": "as early as",
+          "lemma": "as early as",
+          "zh": "最早可在",
+          "note": "强调可能的较早时间，未表示已实施"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "survey",
+        "lemma": "survey",
+        "zh": "调查",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "practical",
+        "lemma": "practical",
+        "zh": "实践的；动手操作的",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "pressure",
+        "lemma": "pressure",
+        "zh": "压力",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "concern",
+        "lemma": "concern",
+        "zh": "担忧",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "vocational",
+        "lemma": "vocational",
+        "zh": "职业教育的；职业技能的",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "qualifications",
+        "lemma": "qualification",
+        "zh": "学历；资格",
+        "sentenceId": "s9"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "looked down on",
+        "lemma": "look down on",
+        "zh": "轻视；看不起",
+        "sentenceId": "s5",
+        "note": "固定短语，介词 on 后接被轻视的人或事。"
+      },
+      {
+        "text": "felt pressure",
+        "lemma": "feel pressure",
+        "zh": "感到压力",
+        "sentenceId": "s6",
+        "note": "可以接 from someone，说明压力来源。"
+      },
+      {
+        "text": "plans to introduce",
+        "lemma": "plan to introduce",
+        "zh": "计划推出",
+        "sentenceId": "s9",
+        "note": "plan to + 动词原形，表达计划，不表示已完成。"
+      },
+      {
+        "text": "as early as",
+        "lemma": "as early as",
+        "zh": "最早可在",
+        "sentenceId": "s11",
+        "note": "用于强调预计时间的早限。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "combine A with B 表示把两者结合；support 后接动名词 combining。84% 的范围由 In the survey 限定。"
+      },
+      {
+        "sentenceId": "s7",
+        "note": "a job they would not enjoy 中省略了关系代词 that；would 从过去调查的视角谈未来。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "be due + 时间表示预计或预定发生，可用于谈课程、服务和计划的推出。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which practical subject would you like to learn, and why?",
+        "zh": "你想学习哪一门实践类科目？为什么？"
+      },
+      {
+        "text": "How can parents help young people choose subjects without adding pressure?",
+        "zh": "家长怎样才能在不增加压力的情况下帮助年轻人选择科目？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would like to learn a skill that I can use at work.",
+        "zh": "我想学一项能在工作中用到的技能。",
+        "note": "would like to 表达愿望；that 引导关系从句说明技能。"
+      },
+      {
+        "text": "I feel pressure to choose a subject that others prefer.",
+        "zh": "我感到压力，要选择别人更喜欢的科目。",
+        "note": "feel pressure to do something：感到做某事的压力。"
+      }
+    ]
+  }
+}

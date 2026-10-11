@@ -1,0 +1,147 @@
+{
+  "articleId": "2026-10-11-it-lipari-storia-sommersa",
+  "candidateId": "it-2026-09-15-lipari-underwater-heritage",
+  "registrySourceId": "ingv-italian-press",
+  "reviewedAt": "2026-10-11T00:08:16.488583+00:00",
+  "editionDate": "2026-10-11",
+  "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
+  "sourcePublishedAt": "2026-09-15",
+  "sourceDateEvidence": {
+    "location": "Article header → Dettagli",
+    "text": "Pubblicato: 15 Settembre 2026"
+  },
+  "retrieval": {
+    "method": "Direct HTTPS GET with Python urllib; full HTML returned HTTP 200; text extracted using Python HTMLParser; web tool failed on article but no denial/access control occurred.",
+    "rawHtmlSha256": "282d1abee1c9787049000d3a6d847c226df17da73339f3275d325df899f7ea9a",
+    "licensedOriginalTextFile": "licensed-original.txt",
+    "licensedOriginalTextSha256": "ddd251b9ee68f9429e8b74547842740ab88bfe028f101fa8579e016e5d4c489c",
+    "fullArticleRead": true
+  },
+  "rights": {
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrls": [
+      "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
+      "https://www.ingv.it/note-legali",
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "articleFooter": "I contenuti pubblicati su queste pagine dall’Istituto Nazionale di Geofisica e Vulcanologia sono distribuiti sotto licenza Creative Commons Attribution 4.0 International License.",
+    "policyEvidence": "NOTE LEGALI Copyright identifies information as supplied by INGV personnel and intellectual-property rights belonging to INGV, unless otherwise indicated. Same page footer has CC BY 4.0.",
+    "basis": "Explicit article footer plus ownership policy; CC BY 4.0 allows sharing and adaptation with attribution, licence link and change notice.",
+    "exceptionsReview": "Full article and footer were inspected. No contrary text licence, third-party republication label, or external prose credit found. All quotations, photos, captions, logos, external links, linked-paper text and personal memorial details are excluded from adaptation. Retained source prose includes institutional author history but no quoted speaker text; none of these names or personal details are reproduced in the adaptation.",
+    "scope": "Text-only same-language pedagogical adaptation with Chinese translations; INGV unquoted narrative only.",
+    "attribution": "© INGV, Ufficio Stampa; original title, original publication date, source URL, CC BY 4.0 licence URL, retrieval date and explicit modification/no-endorsement notice are retained.",
+    "policyFullTextFile": "rights-page.txt",
+    "policyFullTextSha256": "c4a13d8b0bfc9336482f88085c40e66ddb8e1f0cfcaf5d5babf748d8300ac3c7",
+    "policyRetrievalStatus": 200
+  },
+  "nativeLanguage": {
+    "basis": "institutional-original-language-inference",
+    "evidence": "Official INGV Italian press release concerning an institution-led study, in its Ufficio Stampa section. Italian article body, research team and in-house researcher context inspected; no translator or third-party republication credit found.",
+    "caveat": "Institutional provenance supports native Italian publication; it does not certify the author’s mother tongue or the earliest drafting language."
+  },
+  "freshness": {
+    "asOf": "2026-10-11",
+    "ageDays": 26,
+    "bucket": "within_30_days"
+  },
+  "wordCount": {
+    "method": "Whitespace-separated foreign body only",
+    "count": 127
+  },
+  "claimChecks": [
+    {
+      "sentenceId": "it-lipari-01",
+      "claim": "Lipari has ancient places now below the sea.",
+      "sourceLocations": [
+        "P1",
+        "P3"
+      ],
+      "basis": "P1 says terrestrial and underwater archaeological sites; P3 says progressive submersion of coastal archaeological/historical sites."
+    },
+    {
+      "sentenceId": "it-lipari-02",
+      "claim": "Study reconstructs coastal changes over 3,900 years.",
+      "sourceLocations": [
+        "title",
+        "P1",
+        "P4"
+      ],
+      "basis": "Article title gives 3,900 years; P4 says last four millennia and specifically last 3,900 years. We retain precision without annual-rate forecast."
+    },
+    {
+      "sentenceId": "it-lipari-03",
+      "claim": "Researchers from multiple institutions/universities including INGV cooperated.",
+      "sourceLocations": [
+        "P2"
+      ],
+      "basis": "Named international research team includes INGV, CNR, universities and archaeological collaborators."
+    },
+    {
+      "sentenceId": "it-lipari-04",
+      "claim": "Bronze Age archaeological traces at Pignataro di Fuori lie 20–42 m deep.",
+      "sourceLocations": [
+        "P4"
+      ],
+      "basis": "Exact range and site in unquoted narrative. Wording says located there, not newly discovered by this study."
+    },
+    {
+      "sentenceId": "it-lipari-05",
+      "claim": "Remains help reconstruct landscape history.",
+      "sourceLocations": [
+        "P4",
+        "P6"
+      ],
+      "basis": "Archaeological markers support reconstruction; site testifies to coastal landscape evolution."
+    },
+    {
+      "sentenceId": "it-lipari-06",
+      "claim": "Land subsided and sea level rose over time.",
+      "sourceLocations": [
+        "P1",
+        "P4"
+      ],
+      "basis": "P1 explicitly describes increased sea level over time; P4 estimates island lowering. No rate or future precision added."
+    },
+    {
+      "sentenceId": "it-lipari-07",
+      "claim": "These changes contributed to submergence of coastal ancient sites.",
+      "sourceLocations": [
+        "P1",
+        "P3",
+        "P4"
+      ],
+      "basis": "Narrative links geological/tectonic/volcanic processes and sea-level increase with submergence. Contribuito preserves a contributory, not exhaustive explanation."
+    },
+    {
+      "sentenceId": "it-lipari-08",
+      "claim": "Site opens opportunities to locate/study other ancient settlements.",
+      "sourceLocations": [
+        "P6"
+      ],
+      "basis": "Exact research prospect; pedagogical gloss explains insediamenti as places people lived."
+    },
+    {
+      "sentenceId": "it-lipari-09",
+      "claim": "Work may help find additional Bronze Age sites along Mediterranean coasts.",
+      "sourceLocations": [
+        "P6"
+      ],
+      "basis": "Article says new research prospects, including other Mediterranean coasts. Conditional potrebbe prevents treating prospects as discoveries."
+    }
+  ],
+  "editorialNotes": [
+    "B1 editorial estimate; A2 can use support. No claim of formal CEFR certification.",
+    "Dates distinguish September research release from October learning edition.",
+    "Speaking prompts are open-ended personal discussion, not new source claims.",
+    "No extra candidates collected: sufficient verified reserve and this edition prioritized a cultural angle."
+  ],
+  "independentReviewStatus": "approved-after-correction",
+  "finalEdition": {
+    "reviewStatus": "approved",
+    "reviewRecord": "independent-review.md",
+    "articleSha256": "0e61e0aab1b408ea43b2dd7e1b6c152904ddd9a950dfc878a34cf87c9e3e3fd6",
+    "wordCountWhitespace": 127,
+    "changesAfterDraftReview": "abbassarsi terminology clarified as pronominal"
+  }
+}

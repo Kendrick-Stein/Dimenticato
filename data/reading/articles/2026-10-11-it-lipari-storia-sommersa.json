@@ -1,0 +1,372 @@
+{
+  "schema": 1,
+  "id": "2026-10-11-it-lipari-storia-sommersa",
+  "storyId": "ingv-lipari-underwater-heritage-2026-09-15",
+  "lang": "it",
+  "date": "2026-10-11",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "水下考古",
+    "文化遗产",
+    "海岸变化"
+  ],
+  "title": "La storia di Lipari sotto il mare",
+  "titleZh": "海面之下的利帕里历史",
+  "summaryZh": "利帕里岛的水下遗址记录着海岸的变化。研究人员借助青铜时代遗迹还原过去，也为寻找更多古代聚落提供线索。原文发表于2026年9月15日。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：正文以短句和常见表达为主，含近过去时、未完成过去时、间接疑问句及表示可能性的条件式；考古与地理词提供中文注释。A2 学习者可借助逐句译文辅助阅读；这不是经认证的 CEFR 测评。",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "RICERCA | Lipari, i siti archeologici sommersi raccontano 3.900 anni di cambiamenti costieri",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
+    "publishedAt": "2026-09-15",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri"
+  },
+  "attribution": "来源：© INGV — Istituto Nazionale di Geofisica e Vulcanologia，Ufficio Stampa，《RICERCA | Lipari, i siti archeologici sommersi raccontano 3.900 anni di cambiamenti costieri》，2026-09-15，2026-10-11查阅。依原文页脚 CC BY 4.0 许可使用机构正文；未使用照片、图表、引语或链接论文。",
+  "adaptation": "Dimenticato 根据 INGV 意大利语机构原文作同语言分级改写，并添加简中逐句翻译、词语注释和练习；删减研究细节并简化句式，未逐字转载。改编不代表 INGV 认可或审定。",
+  "sentences": [
+    {
+      "id": "it-lipari-01",
+      "text": "Sull’isola di Lipari, alcuni luoghi del passato si trovano oggi sotto il mare.",
+      "zh": "在利帕里岛，一些昔日的地点如今位于海面之下。",
+      "glosses": [
+        {
+          "surface": "isola",
+          "lemma": "isola",
+          "zh": "岛屿",
+          "note": "阴性名词；sull’isola = su + l’isola。"
+        },
+        {
+          "surface": "luoghi",
+          "lemma": "luogo",
+          "zh": "地方；地点",
+          "note": "阳性名词复数；单数 il luogo。"
+        },
+        {
+          "surface": "si trovano",
+          "lemma": "trovarsi",
+          "zh": "位于",
+          "note": "这里表示位置，不是“找到自己”。"
+        }
+      ]
+    },
+    {
+      "id": "it-lipari-02",
+      "text": "Un nuovo studio aiuta a capire come è cambiata la costa negli ultimi 3.900 anni.",
+      "zh": "一项新研究帮助人们了解海岸在过去3900年中发生了怎样的变化。",
+      "glosses": [
+        {
+          "surface": "studio",
+          "lemma": "studio",
+          "zh": "研究",
+          "note": "阳性名词；此处不是“学习”或“书房”。"
+        },
+        {
+          "surface": "è cambiata",
+          "lemma": "cambiare",
+          "zh": "发生了变化",
+          "note": "近过去时；这里用 essere，过去分词与阴性主语 la costa 一致。"
+        },
+        {
+          "surface": "costa",
+          "lemma": "costa",
+          "zh": "海岸",
+          "note": "阴性名词。"
+        }
+      ]
+    },
+    {
+      "id": "it-lipari-03",
+      "text": "Hanno lavorato insieme ricercatori di diversi istituti e università, con la partecipazione dell’INGV.",
+      "zh": "来自不同研究机构和大学的研究人员共同开展了工作，意大利国家地球物理与火山学研究所（INGV）也参与其中。",
+      "glosses": [
+        {
+          "surface": "insieme",
+          "lemma": "insieme",
+          "zh": "一起",
+          "note": "副词，描述合作方式。"
+        },
+        {
+          "surface": "ricercatori",
+          "lemma": "ricercatore",
+          "zh": "研究人员",
+          "note": "阳性名词复数；单数 il ricercatore。"
+        },
+        {
+          "surface": "partecipazione",
+          "lemma": "partecipazione",
+          "zh": "参与",
+          "note": "阴性名词；con la partecipazione di 表示“有……参与”。"
+        }
+      ]
+    },
+    {
+      "id": "it-lipari-04",
+      "text": "A Pignataro di Fuori, si trovano tracce dell’Età del Bronzo tra venti e quarantadue metri di profondità.",
+      "zh": "在皮尼亚塔罗迪富奥里，水下20至42米深处有青铜时代的遗迹。",
+      "glosses": [
+        {
+          "surface": "tracce",
+          "lemma": "traccia",
+          "zh": "遗迹；痕迹",
+          "note": "阴性名词复数；这里指考古证据。"
+        },
+        {
+          "surface": "Età del Bronzo",
+          "lemma": "Età del Bronzo",
+          "zh": "青铜时代",
+          "note": "历史时期的名称。"
+        },
+        {
+          "surface": "profondità",
+          "lemma": "profondità",
+          "zh": "深度",
+          "note": "阴性名词，单复数形式相同。"
+        }
+      ]
+    },
+    {
+      "id": "it-lipari-05",
+      "text": "Questi resti aiutano a ricostruire la storia del paesaggio.",
+      "zh": "这些遗存帮助人们重建当地景观的历史。",
+      "glosses": [
+        {
+          "surface": "resti",
+          "lemma": "resto",
+          "zh": "遗存；遗迹",
+          "note": "这里指古代留下的物质痕迹。"
+        },
+        {
+          "surface": "ricostruire",
+          "lemma": "ricostruire",
+          "zh": "重建；还原",
+          "note": "这里指根据证据还原过去。"
+        },
+        {
+          "surface": "paesaggio",
+          "lemma": "paesaggio",
+          "zh": "景观",
+          "note": "阳性名词；此处指海岸与海底的地貌景观。"
+        }
+      ]
+    },
+    {
+      "id": "it-lipari-06",
+      "text": "Nel tempo, il terreno si è abbassato e il livello del mare è salito.",
+      "zh": "随着时间推移，地面下沉了，海平面也上升了。",
+      "glosses": [
+        {
+          "surface": "terreno",
+          "lemma": "terreno",
+          "zh": "地面；陆地",
+          "note": "阳性名词；这里不是“土壤成分”。"
+        },
+        {
+          "surface": "si è abbassato",
+          "lemma": "abbassarsi",
+          "zh": "降低了；下沉了",
+          "note": "代词式动词 abbassarsi 的近过去时；这里表示地面降低。"
+        },
+        {
+          "surface": "è salito",
+          "lemma": "salire",
+          "zh": "上升了",
+          "note": "近过去时；salire 此处用 essere，过去分词是 salito。"
+        }
+      ]
+    },
+    {
+      "id": "it-lipari-07",
+      "text": "Questi cambiamenti hanno contribuito a coprire d’acqua alcuni antichi luoghi sulla costa.",
+      "zh": "这些变化促使海岸上一些古老地点被水淹没。",
+      "glosses": [
+        {
+          "surface": "cambiamenti",
+          "lemma": "cambiamento",
+          "zh": "变化",
+          "note": "阳性名词复数。"
+        },
+        {
+          "surface": "hanno contribuito",
+          "lemma": "contribuire",
+          "zh": "促成了；起了作用",
+          "note": "contribuire a + 动词原形，表示是促成因素之一。"
+        },
+        {
+          "surface": "antichi",
+          "lemma": "antico",
+          "zh": "古老的",
+          "note": "阳性复数，修饰 luoghi。"
+        }
+      ]
+    },
+    {
+      "id": "it-lipari-08",
+      "text": "Il sito offre nuove possibilità per cercare e studiare altri insediamenti, cioè luoghi dove vivevano le persone.",
+      "zh": "这一遗址为寻找和研究其他聚落提供了新的可能，聚落就是人们曾经居住的地方。",
+      "glosses": [
+        {
+          "surface": "sito",
+          "lemma": "sito",
+          "zh": "遗址",
+          "note": "此处指考古遗址，不是网站。"
+        },
+        {
+          "surface": "insediamenti",
+          "lemma": "insediamento",
+          "zh": "聚落；定居点",
+          "note": "阳性名词复数。"
+        },
+        {
+          "surface": "cioè",
+          "lemma": "cioè",
+          "zh": "也就是；即",
+          "note": "用来解释前面的词语。"
+        },
+        {
+          "surface": "vivevano",
+          "lemma": "vivere",
+          "zh": "曾居住",
+          "note": "未完成过去时第三人称复数，描述过去的生活状态。"
+        }
+      ]
+    },
+    {
+      "id": "it-lipari-09",
+      "text": "La ricerca potrebbe aiutare a trovare altri siti dell’Età del Bronzo anche lungo le coste del Mediterraneo.",
+      "zh": "这项研究也可能帮助人们沿地中海海岸找到其他青铜时代遗址。",
+      "glosses": [
+        {
+          "surface": "potrebbe",
+          "lemma": "potere",
+          "zh": "可能；可以",
+          "note": "条件式第三人称单数；potrebbe + 动词原形表示可能性。"
+        },
+        {
+          "surface": "lungo",
+          "lemma": "lungo",
+          "zh": "沿着",
+          "note": "这里是介词，不是形容词“长的”。"
+        },
+        {
+          "surface": "coste",
+          "lemma": "costa",
+          "zh": "海岸",
+          "note": "阴性名词复数；单数 la costa。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "costa",
+        "zh": "海岸",
+        "sentenceId": "it-lipari-02",
+        "lemma": "costa",
+        "note": "la costa；复数 le coste。"
+      },
+      {
+        "text": "tracce",
+        "zh": "遗迹；痕迹",
+        "sentenceId": "it-lipari-04",
+        "lemma": "traccia",
+        "note": "单数 la traccia；这里指考古证据。"
+      },
+      {
+        "text": "profondità",
+        "zh": "深度",
+        "sentenceId": "it-lipari-04",
+        "lemma": "profondità",
+        "note": "阴性名词；di profondità 用于说明深度。"
+      },
+      {
+        "text": "paesaggio",
+        "zh": "景观",
+        "sentenceId": "it-lipari-05",
+        "lemma": "paesaggio",
+        "note": "il paesaggio；此处指自然地貌景观。"
+      },
+      {
+        "text": "insediamenti",
+        "zh": "聚落；定居点",
+        "sentenceId": "it-lipari-08",
+        "lemma": "insediamento",
+        "note": "单数 l’insediamento。"
+      },
+      {
+        "text": "lungo",
+        "zh": "沿着",
+        "sentenceId": "it-lipari-09",
+        "lemma": "lungo",
+        "note": "此处是介词，用于描述位置。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "aiuta a capire",
+        "zh": "帮助理解",
+        "sentenceId": "it-lipari-02",
+        "note": "aiutare a + 动词原形。"
+      },
+      {
+        "text": "negli ultimi 3.900 anni",
+        "zh": "在过去3900年中",
+        "sentenceId": "it-lipari-02",
+        "note": "negli ultimi + 数字 + anni 可说明截至现在的一段时间。"
+      },
+      {
+        "text": "Hanno lavorato insieme",
+        "zh": "共同开展了工作",
+        "sentenceId": "it-lipari-03",
+        "note": "lavorare insieme 可用于学习、工作和项目合作。"
+      },
+      {
+        "text": "potrebbe aiutare a",
+        "zh": "可能帮助……",
+        "sentenceId": "it-lipari-09",
+        "note": "条件式保留研究前景的不确定性。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-lipari-06",
+        "note": "两个近过去时并列，比较 abbassarsi（降低）和 salire（上升）；不要把地面下沉与海平面上升当成同一过程。"
+      },
+      {
+        "sentenceId": "it-lipari-08",
+        "note": "用 cioè 解释生词，再用 dove + 动词说明“人们曾居住的地方”；vivevano 表示过去的持续状态。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Ti piacerebbe visitare un museo sulla storia di Lipari? Perché?",
+        "zh": "你想参观一座介绍利帕里历史的博物馆吗？为什么？"
+      },
+      {
+        "text": "Nella tua città ci sono luoghi antichi? Che cosa sai della loro storia?",
+        "zh": "你所在的城市有古老的地方吗？你对它们的历史了解多少？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mi piacerebbe sapere come…",
+        "zh": "我想知道……是怎样的。",
+        "note": "后接一个完整的间接疑问句，如 come è cambiata la costa（海岸发生了怎样的变化）。"
+      },
+      {
+        "text": "Questo luogo ci aiuta a capire…",
+        "zh": "这个地方帮助我们理解……。",
+        "note": "后面可接名词，如 la storia della città（这座城市的历史）。"
+      }
+    ]
+  }
+}

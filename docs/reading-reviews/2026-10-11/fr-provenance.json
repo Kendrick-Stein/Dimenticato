@@ -1,0 +1,306 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-11-fr-debroussaillement-action",
+  "candidateId": "fr-2026-10-08-brush-clearing-action",
+  "registrySourceId": "inrae-french-news",
+  "reviewedAt": "2026-10-11T00:09:08.458185+00:00",
+  "source": {
+    "name": "INRAE",
+    "title": "Le débroussaillement : les clés du passage à l'action",
+    "url": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+    "publishedAt": "2026-10-08",
+    "lang": "fr"
+  },
+  "fullTextReview": {
+    "freshlyFetched": true,
+    "httpStatus": 200,
+    "rawPageSha256": "15a5ffcc3b7b6b210f522d36a730bfb6bbdab74f23b2a0b2efeb734bcd200d23",
+    "licensedProseSha256": "fa9856f12f584f7140acc03500f58cafbb0e0664a9d5f4b2fb18dca11a7d396b",
+    "licensedProseFile": "source-prose.txt",
+    "blockIndexFile": "source-blocks.json",
+    "fullOriginalRead": true,
+    "scope": "Complete title, standfirst and institutional narrative body, including its headings and lists. Excludes media, captions, navigation, contact cards and related-article text. Adult professional project names occur in the original; no personal minor case study or direct external quotation found. Only licensed prose is retained; the raw HTML was discarded.",
+    "dateEvidence": {
+      "displayedText": "Publié le 08 octobre 2026",
+      "location": "header.Hero p.Hero-date",
+      "separateUpdateDateFound": false
+    },
+    "freshnessAsOf": "2026-10-11",
+    "ageDays": 3
+  },
+  "nativeLanguage": {
+    "basis": "institutional-original-language-inference",
+    "verified": true,
+    "evidence": "INRAE’s French institutional page describes its own jointly led project in Bouches-du-Rhône and Isère, names INRAE scientific staff and project contacts, and has no translation or republication notice. No separate editorial author byline was displayed.",
+    "caveat": "Strong editorial inference of an institutional French original; neither personal native tongue nor first drafting language is certified.",
+    "sourceLocations": [
+      "B09",
+      "B32",
+      "Contact cards"
+    ]
+  },
+  "rights": {
+    "verified": true,
+    "adaptationAllowed": true,
+    "publicRedistributionAllowed": true,
+    "license": {
+      "name": "Licence Ouverte / Open Licence 2.0 (Etalab)",
+      "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+      "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+    },
+    "basis": "The INRAE public-text grant expressly covers visible public institutional content; the complete article was checked for narrower notices.",
+    "policyEvidence": {
+      "url": "https://www.inrae.fr/conditions-generales-dutilisation",
+      "location": "PROPRIETE INTELLECTUELLE DES CONTENUS, first paragraph and exceptions immediately below",
+      "textGrant": "Public textual content visible on the site is reusable under Etalab 2.0. Logos/marks need permission, other licenses may apply to identified content, and all-rights-reserved material cannot be reused.",
+      "checkedAt": "2026-10-11"
+    },
+    "licenseEvidence": {
+      "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+      "locations": [
+        "Réutilisation de l’« Information » sous cette licence, permitted uses and attribution conditions",
+        "No official recognition/endorsement clause",
+        "Responsabilité, prohibition on misleading source/content/date"
+      ],
+      "permits": [
+        "adaptation and transformation",
+        "publication and redistribution",
+        "commercial and noncommercial reuse"
+      ],
+      "requires": [
+        "source/attribution and available update date",
+        "no implied official endorsement",
+        "no misleading representation of source, content or date"
+      ],
+      "checkedAt": "2026-10-11"
+    },
+    "articleExceptionsReview": {
+      "restrictiveTextNoticeFound": false,
+      "thirdPartyReprintNoticeFound": false,
+      "separateAuthorBylineFound": false,
+      "imageCredit": "© INRAE; no image reused",
+      "externalDirectQuotationFound": false,
+      "personalMinorCaseStudyFound": false,
+      "excludedFromAdaptation": [
+        "all media and logos",
+        "contact details",
+        "linked third-party works",
+        "third-party attributed statistics (90% and 70%)",
+        "potentially inconsistent 10-of-119 commune figure",
+        "legal duties, legal dates and procedural fire-safety advice"
+      ],
+      "caveat": "Reuse basis is the site’s express public-text license, not an article-specific license badge."
+    },
+    "attribution": "来源：INRAE，《Le débroussaillement : les clés du passage à l'action》，2026-10-08（页面所示发布日期；未另列更新日期），2026-10-11查阅。依据Licence Ouverte 2.0 (Etalab)对机构原文作法语分级改写及简体中文翻译；不代表INRAE认可或审定。",
+    "freshHttpVerificationFile": "rights-excerpts.json"
+  },
+  "claims": [
+    {
+      "sentenceId": "fr-action-01",
+      "adaptedClaim": "Près des forêts, le débroussaillement aide à protéger les maisons contre le feu.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B01",
+          "headingContext": "Introduction",
+          "exactOriginal": "Les travaux de recherche ont montré que le débroussaillement est la mesure la plus efficace pour réduire l’intensité et limiter la propagation des feux de forêt et pour mettre en sécurité les biens et les personnes résidant en proximité d’espaces naturels. Pourtant établi comme une obligation réglementaire, il reste trop peu appliqué. Pourquoi ce constat ? Et comment y remédier ?"
+        },
+        {
+          "blockId": "B04",
+          "headingContext": "Comprendre les enjeux du débroussaillement",
+          "exactOriginal": "Les zones dites d’interface habitat-forêt, où les habitations côtoient les massifs boisés, sont particulièrement vulnérables. Dans le sud de la France, ces interfaces se multiplient, exposant davantage de personnes et de biens."
+        },
+        {
+          "blockId": "B05",
+          "headingContext": "Comprendre les enjeux du débroussaillement",
+          "exactOriginal": "Face à cette menace, le débroussaillement s’impose comme la mesure de prévention la plus efficace. Il permet de ralentir la propagation du feu, de protéger les habitations et de permettre l’intervention des secours en toute sécurité. Pourtant, malgré son efficacité prouvée, cette obligation légale reste largement ignorée. Selon le ministère de la Transition écologique, 90 % des maisons détruites lors des feux de forêts n’étaient pas, ou mal, débroussaillées."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-02",
+      "adaptedClaim": "Mais de nombreux propriétaires ne passent pas à l'action.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B01",
+          "headingContext": "Introduction",
+          "exactOriginal": "Les travaux de recherche ont montré que le débroussaillement est la mesure la plus efficace pour réduire l’intensité et limiter la propagation des feux de forêt et pour mettre en sécurité les biens et les personnes résidant en proximité d’espaces naturels. Pourtant établi comme une obligation réglementaire, il reste trop peu appliqué. Pourquoi ce constat ? Et comment y remédier ?"
+        },
+        {
+          "blockId": "B09",
+          "headingContext": "Un projet pour comprendre et agir",
+          "exactOriginal": "Le projet « Débroussaillement : les clefs du passage à l’action » est porté par INRAE et le Behavioural Insights Team (BIT) avec des partenaires territoriaux du Parc naturel des Alpilles, et de la région grenobloise, sur deux territoires dont la culture du risque de feu de forêt est différente : les Bouches-du-Rhône et l'Isère. Il vise à comprendre pourquoi les Obligations Légales de Débroussaillement (OLD) sont si peu appliquées, et à concevoir des solutions concrètes pour y remédier en investiguant les déterminants du passage à l’action, aux niveaux individuel, collectif et structurel à l’aune des sciences comportementales."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-03",
+      "adaptedClaim": "Une équipe d'INRAE travaille avec des partenaires pour comprendre pourquoi.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B09",
+          "headingContext": "Un projet pour comprendre et agir",
+          "exactOriginal": "Le projet « Débroussaillement : les clefs du passage à l’action » est porté par INRAE et le Behavioural Insights Team (BIT) avec des partenaires territoriaux du Parc naturel des Alpilles, et de la région grenobloise, sur deux territoires dont la culture du risque de feu de forêt est différente : les Bouches-du-Rhône et l'Isère. Il vise à comprendre pourquoi les Obligations Légales de Débroussaillement (OLD) sont si peu appliquées, et à concevoir des solutions concrètes pour y remédier en investiguant les déterminants du passage à l’action, aux niveaux individuel, collectif et structurel à l’aune des sciences comportementales."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-04",
+      "adaptedClaim": "Elle a recueilli des témoignages et des observations auprès d'environ 170 personnes dans deux départements français.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B13",
+          "headingContext": "Une méthodologie innovante fondée sur les sciences sociales",
+          "exactOriginal": "Conduit de l'automne 2025 à l'été 2026 dans les Bouches-du-Rhône (24 communes) et en Isère (8 communes), le diagnostic a permis de recueillir les témoignages et observations d’environ 170 personnes : propriétaires, élus, notaires, agents de l’ONF, services de l’État, entreprises de paysage et d’autres acteurs concernés par les OLD."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-05",
+      "adaptedClaim": "Les résultats montrent plusieurs difficultés.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B14",
+          "headingContext": "Une méthodologie innovante fondée sur les sciences sociales",
+          "exactOriginal": "Les résultats montrent que le passage à l’action ne repose pas sur un frein, mais sur un ensemble de mini-obstacles de type sociaux, comportementaux, économiques et physiques rencontrés par les personnes tout au long du parcours des OLD. L’équipe a proposé une approche des résultats selon le modèle structurant du parcours selon 3 axes d’analyse : savoir, vouloir et pouvoir agir."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-06",
+      "adaptedClaim": "Certains propriétaires comprennent mal ce qu'ils doivent faire.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B15",
+          "headingContext": "Une méthodologie innovante fondée sur les sciences sociales",
+          "exactOriginal": "Savoir : de nombreux propriétaires ignorent être concernés, ne se sentent pas concernés par le risque ou en attribuent la responsabilité à un autre acteur (commune, ONF, syndic) plutôt que de se l'approprier. Beaucoup peinent aussi à comprendre précisément ce qui est attendu.\nVouloir : les bénéfices du débroussaillement apparaissent souvent moins tangibles que ses coûts immédiats, qu’ils soient financiers, esthétiques ou pratiques.\nPouvoir : la capacité physique nécessaire, l’organisation des travaux, leur coût, le recours à des professionnels ou encore la gestion des déchets verts constituent des obstacles fréquemment relevés."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-07",
+      "adaptedClaim": "Le coût du travail peut être un obstacle.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B15",
+          "headingContext": "Une méthodologie innovante fondée sur les sciences sociales",
+          "exactOriginal": "Savoir : de nombreux propriétaires ignorent être concernés, ne se sentent pas concernés par le risque ou en attribuent la responsabilité à un autre acteur (commune, ONF, syndic) plutôt que de se l'approprier. Beaucoup peinent aussi à comprendre précisément ce qui est attendu.\nVouloir : les bénéfices du débroussaillement apparaissent souvent moins tangibles que ses coûts immédiats, qu’ils soient financiers, esthétiques ou pratiques.\nPouvoir : la capacité physique nécessaire, l’organisation des travaux, leur coût, le recours à des professionnels ou encore la gestion des déchets verts constituent des obstacles fréquemment relevés."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-08",
+      "adaptedClaim": "Il faut aussi pouvoir faire ce travail et l'organiser.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B15",
+          "headingContext": "Une méthodologie innovante fondée sur les sciences sociales",
+          "exactOriginal": "Savoir : de nombreux propriétaires ignorent être concernés, ne se sentent pas concernés par le risque ou en attribuent la responsabilité à un autre acteur (commune, ONF, syndic) plutôt que de se l'approprier. Beaucoup peinent aussi à comprendre précisément ce qui est attendu.\nVouloir : les bénéfices du débroussaillement apparaissent souvent moins tangibles que ses coûts immédiats, qu’ils soient financiers, esthétiques ou pratiques.\nPouvoir : la capacité physique nécessaire, l’organisation des travaux, leur coût, le recours à des professionnels ou encore la gestion des déchets verts constituent des obstacles fréquemment relevés."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-09",
+      "adaptedClaim": "Les relations avec les voisins peuvent poser problème.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B16",
+          "headingContext": "Une méthodologie innovante fondée sur les sciences sociales",
+          "exactOriginal": "L'obligation de débroussailler une partie de la parcelle du voisin est un point de blocage unanimement rejeté de la réglementation : elle est mal connue, perçue comme injuste, et se heurte à des situations concrètes (voisins injoignables, conflits, absence de mécanisme simple pour intervenir sans accord). Selon la police municipale dans l’Isère, cette question concernerait environ 70 % des situations rencontrées."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-10",
+      "adaptedClaim": "L'équipe étudie plusieurs idées pour mieux informer et aider les habitants.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B21",
+          "headingContext": "Des résultats attendus à plusieurs niveaux",
+          "exactOriginal": "L’ambition du projet est de produire des préconisations et des outils simples, efficaces et adaptés aux réalités locales pour :"
+        },
+        {
+          "blockId": "B22",
+          "headingContext": "Des résultats attendus à plusieurs niveaux",
+          "exactOriginal": "Les acteurs relais (municipalités, comités de prévention des risques, notaires, professionnels de l’immobilier…) : mieux informer, inciter et accompagner les propriétaires à débroussailler.\nLes propriétaires : augmenter leur motivation, notamment en travaillant sur la perception des risques, et faciliter le passage à l’action."
+        },
+        {
+          "blockId": "B24",
+          "headingContext": "Des résultats attendus à plusieurs niveaux",
+          "exactOriginal": "Sept pistes de solution sont aujourd'hui à l'étude et répondent aux différents freins identifiés par le diagnostic :"
+        },
+        {
+          "blockId": "B25",
+          "headingContext": "Des résultats attendus à plusieurs niveaux",
+          "exactOriginal": "Rendre la règle lisible et stable,\nFaire arriver l’information au moment où elle peut servir,\nRendre le risque et la protection tangibles,\nRendre le geste faisable et abordable,\nConstater le travail fait, reconnaitre et contrôler,\nFaire du quartier l’échelle de l’action,\nDonner à la commune et aux relais les moyens d’agir."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-11",
+      "adaptedClaim": "Elle propose notamment d'agir à l'échelle du quartier.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B25",
+          "headingContext": "Des résultats attendus à plusieurs niveaux",
+          "exactOriginal": "Rendre la règle lisible et stable,\nFaire arriver l’information au moment où elle peut servir,\nRendre le risque et la protection tangibles,\nRendre le geste faisable et abordable,\nConstater le travail fait, reconnaitre et contrôler,\nFaire du quartier l’échelle de l’action,\nDonner à la commune et aux relais les moyens d’agir."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-12",
+      "adaptedClaim": "La solution choisie doit encore être testée sur le terrain.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B26",
+          "headingContext": "Des résultats attendus à plusieurs niveaux",
+          "exactOriginal": "La solution retenue fera l’objet d’une expérimentation sur le terrain et d’une évaluation afin de mesurer leur impact sur les comportements."
+        }
+      ]
+    },
+    {
+      "sentenceId": "fr-action-13",
+      "adaptedClaim": "Le projet veut donc faciliter le passage à l'action.",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourceLocations": [
+        {
+          "blockId": "B22",
+          "headingContext": "Des résultats attendus à plusieurs niveaux",
+          "exactOriginal": "Les acteurs relais (municipalités, comités de prévention des risques, notaires, professionnels de l’immobilier…) : mieux informer, inciter et accompagner les propriétaires à débroussailler.\nLes propriétaires : augmenter leur motivation, notamment en travaillant sur la perception des risques, et faciliter le passage à l’action."
+        },
+        {
+          "blockId": "B29",
+          "headingContext": "Un enjeu collectif, une responsabilité partagée",
+          "exactOriginal": "C’est pourquoi le projet s’attache à comprendre les motivations et les blocages de chacun. Il ne s’agit pas seulement d’informer, mais de créer les conditions favorables à l’action. En mobilisant les sciences comportementales, le projet propose une approche pragmatique, respectueuse du libre arbitre des individus et un accompagnement durable vers des comportements vertueux."
+        }
+      ]
+    }
+  ],
+  "editorialChecks": {
+    "wordCountWhitespace": 123,
+    "category": "environment",
+    "level": "A2 supported reading, not independently certified",
+    "plannedVersusDelivered": "The solutions remain proposed/in development; the selected solution still needs field testing. No successful intervention result is claimed.",
+    "numberCheck": "About 170 participants, across exactly the two departments named by the source; not 170 homeowners and not a claim of representativeness.",
+    "translationCheck": "Chinese follows each sentence’s scope and modality. Elle points to équipe; approximately 170 people includes participants from multiple roles. Sentence 4 preserves both testimonies and observations.",
+    "potentialConcern": "The source gives an apparently inconsistent 10-of-119 commune figure. It remains in the licensed original transcript for fidelity but is absent from the adaptation, summary, annotations and speaking prompts."
+  },
+  "finalEdition": {
+    "reviewStatus": "approved",
+    "reviewRecord": "independent-review.md",
+    "articleSha256": "da6794f4bdbf26b2395ae8cea512b0624bb5db5136188be4dd63b20c90cddea2",
+    "wordCountWhitespace": 123,
+    "changesAfterDraftReview": "field trial kept future, solution not described as selected"
+  }
+}

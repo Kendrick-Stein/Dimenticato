@@ -1,0 +1,54 @@
+{
+  "reviewedAt": "2026-10-11",
+  "reviewType": "independent-editorial-pass",
+  "articles": [
+    {
+      "id": "2026-10-11-de-sichere-spiele-chats",
+      "lang": "de",
+      "level": "A2",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+      "sourcePublishedAt": "2026-10-02",
+      "sha256": "8343d7507235503b78d4f13c9c7f7ab503314e2028fe41b3781de3e2a21307e8",
+      "bodyWordCountWhitespace": 125,
+      "validationErrors": [],
+      "status": "approved"
+    },
+    {
+      "id": "2026-10-11-en-practical-learning-choices",
+      "lang": "en",
+      "level": "B1",
+      "sourceUrl": "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
+      "sourcePublishedAt": "2026-10-09",
+      "sha256": "6bd854bd0a09b4d0972178be71458427f9a7ae14b4f567b73f58df5adf031f15",
+      "bodyWordCountWhitespace": 133,
+      "validationErrors": [],
+      "status": "approved"
+    },
+    {
+      "id": "2026-10-11-fr-debroussaillement-action",
+      "lang": "fr",
+      "level": "A2",
+      "sourceUrl": "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
+      "sourcePublishedAt": "2026-10-08",
+      "sha256": "da6794f4bdbf26b2395ae8cea512b0624bb5db5136188be4dd63b20c90cddea2",
+      "bodyWordCountWhitespace": 123,
+      "validationErrors": [],
+      "status": "approved"
+    },
+    {
+      "id": "2026-10-11-it-lipari-storia-sommersa",
+      "lang": "it",
+      "level": "B1",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
+      "sourcePublishedAt": "2026-09-15",
+      "sha256": "0e61e0aab1b408ea43b2dd7e1b6c152904ddd9a950dfc878a34cf87c9e3e3fd6",
+      "bodyWordCountWhitespace": 127,
+      "validationErrors": [],
+      "status": "approved"
+    }
+  ],
+  "duplicateChecks": {
+    "catalogArticleCount": 8,
+    "duplicateIdsStoryIdsOrSourceUrls": []
+  }
+}
