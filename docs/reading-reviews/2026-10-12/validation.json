@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-12",
+  "baseCommit": "d18ec046957c95b9524a78acc6c29f14b13e6c36",
+  "status": "checks-passed-awaiting-remote-publication",
+  "newArticleCount": 4,
+  "existingArticleCount": 8,
+  "existingArticleHashesUnchanged": true,
+  "candidateCount": 15,
+  "candidateLinkedToArticleCount": 8,
+  "unconvertedReserveCount": 7,
+  "newCandidates": 0,
+  "sourceFreshness": "Original publications 2026-09-17, 2026-09-18, 2026-09-22, 2026-10-06. IT explicitly reports a May event retrospectively.",
+  "tests": {
+    "baseline": "TZ=UTC npm test: 36 harnesses, 474591 passed, 0 failed",
+    "fullSuite": "TZ=UTC npm test: 36 harnesses, 474591 passed, 0 failed",
+    "articleValidator": "12 articles pass",
+    "candidateValidator": "15 metadata-only candidates pass",
+    "readingDom": "106 pass",
+    "diffCheck": "pass",
+    "environment": "TZ=UTC set for date-based suite, no code/test changes"
+  },
+  "deduplication": {
+    "storyIds": "12 unique",
+    "canonicalSourceUrls": "12 unique",
+    "articleBodiesSha256": "12 unique",
+    "blockedStoryIdAbsent": "ec-languages-2026-09-26"
+  },
+  "browserQA": "Deferred to public production after authorized merge; protected preview not accessed."
+}

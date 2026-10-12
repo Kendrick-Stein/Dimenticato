@@ -1,0 +1,148 @@
+{
+  "articleId": "2026-10-12-de-meinungen-im-unterricht",
+  "status": "independently-reviewed",
+  "retrievedAt": "2026-10-12",
+  "registrySourceId": "bpb-werkstatt-de",
+  "candidateId": "de-2026-09-22-teacher-neutrality",
+  "source": {
+    "name": "Bundeszentrale für politische Bildung — Werkstatt",
+    "title": "Was heißt neutral?",
+    "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+    "publishedAt": "2026-09-22",
+    "lang": "de",
+    "author": "Bundeszentrale für politische Bildung, Werkstatt（标注 Werkstatt recherchiert，无个人署名）"
+  },
+  "sourceRead": {
+    "completeArticleRead": true,
+    "bodyLines": "L28–80",
+    "sourceLocationConvention": "Web extraction line numbers from 2026-10-12 retrieval, exact eligible source paragraphs retained for audit.",
+    "licensedProseSha256": "906e42cdf7d2aeaa5652c5457621434e678b0f7245d7da4b8c2ae080ac53d087",
+    "hashScope": "UTF-8 selected eligible narrative paragraphs joined by two LF characters with final LF; not full HTML. Link labels removed, prose unchanged.",
+    "omitted": "All direct quotations, photos/captions, linked external full texts, navigation; DE legal edge cases not adapted. EN external survey details and ministerial/partner quotations not adapted.",
+    "paragraphLocations": [
+      "L28",
+      "L43",
+      "L47",
+      "L61–62",
+      "L63–64",
+      "L66–67"
+    ]
+  },
+  "dateEvidence": {
+    "location": "Header L26",
+    "text": "22.09.2026 / 2 Minuten zu lesen",
+    "originalDate": "2026-09-22",
+    "ageDaysAsOfEdition": 20
+  },
+  "nativeLanguage": {
+    "basis": "institutional-original-language-inference",
+    "evidence": [
+      "German Werkstatt recherchiert institutional text, no individual byline, translation or syndication credit.",
+      "Collection https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/ L27 identifies its own Werkstatt contributions on digital education."
+    ],
+    "caveat": "Does not certify personal mother tongue or earliest drafting language."
+  },
+  "rights": {
+    "verified": true,
+    "adaptationAllowed": true,
+    "publicRedistributionAllowed": true,
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+    "excluded": [
+      "All photos, graphics, logos, videos and captions",
+      "All direct quotations and linked third-party full text"
+    ],
+    "attributionInArticle": true,
+    "scope": "bpb editorial article text only; the entire derived edition including translations and teaching notes explicitly released CC BY-SA 4.0.",
+    "shareAlikeRequired": true,
+    "evidence": [
+      {
+        "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+        "location": "L77–80",
+        "finding": "Text-specific licence expressly says Dieser Text and CC BY-SA 4.0; media credits treated separately."
+      },
+      {
+        "url": "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+        "location": "L42–49, L65–67",
+        "finding": "Mixed article licences; final text grant controls. BY-SA derivatives retain same/compatible licence."
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+        "location": "L47–55",
+        "finding": "Share/adapt permitted, attribution and change notice, same licence, no endorsement or extra restrictions."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "sentenceIds": [
+        "s1",
+        "s2"
+      ],
+      "locations": [
+        "L28",
+        "L37–67"
+      ],
+      "finding": "Framing faithfully introduces the source topic."
+    },
+    {
+      "sentenceIds": [
+        "s3",
+        "s4",
+        "s5",
+        "s10"
+      ],
+      "locations": [
+        "L43"
+      ],
+      "finding": "Own opinion allowed if identifiable and not imposed; opposing menschenfeindliche positions allowed. No legal edge cases presented."
+    },
+    {
+      "sentenceIds": [
+        "s6"
+      ],
+      "locations": [
+        "L47"
+      ],
+      "finding": "Class-chat context is official educational context, not private accounts."
+    },
+    {
+      "sentenceIds": [
+        "s7"
+      ],
+      "locations": [
+        "L63–64"
+      ],
+      "finding": "Controversial positions in politics/science must be represented as controversial in class; no suggestion that every unsupported claim is equally valid."
+    },
+    {
+      "sentenceIds": [
+        "s8",
+        "s9"
+      ],
+      "locations": [
+        "L66–67"
+      ],
+      "finding": "Independent political opinion and capacity to represent interests retained as educational aims."
+    }
+  ],
+  "pedagogicalReview": {
+    "bodyWordCountWhitespace": 93,
+    "target": "A2",
+    "levelCaveat": "编辑估计为有中文支持的 A2 阅读：短主句、情态动词与简单条件从句为主。Neutralität、Lehrkräfte、aufdrängen 等主题词超出基础词汇，提供中文释义及词形说明。此为辅助阅读分级，不是经认证的 CEFR 测评。",
+    "pairedChinese": true,
+    "allGlossSurfacesAndSummaryReferencesChecked": true,
+    "summaryWords": 6,
+    "summaryPhrases": 4,
+    "summarySentences": 2,
+    "speakingQuestions": 2,
+    "speakingExpressions": 2
+  },
+  "duplicateReview": {
+    "sourceUrlAbsentFromCurrentArticleFiles": true,
+    "storyIdAbsentFromCurrentArticleFiles": true,
+    "base": "main d18ec, eight existing articles inspected; DE gaming and EN vocational Oct11 excluded"
+  },
+  "publicationBoundary": "Exact article hash approved in independent-review.md and reviewed-articles.json; publication verification is separate.",
+  "draftArticleSha256": "788415f5e26f362ea22cc515190ff76b7964676fb9d1fc826261022f3419a387"
+}

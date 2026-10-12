@@ -1,0 +1,156 @@
+{
+  "articleId": "2026-10-12-en-more-chances-to-join-in",
+  "status": "independently-reviewed",
+  "retrievedAt": "2026-10-12",
+  "registrySourceId": "govuk-education-english-news",
+  "candidateId": "en-2026-09-18-school-enrichment-activities",
+  "source": {
+    "name": "Department for Education and Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "More enriching activities for hundreds of thousands of children",
+    "url": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+    "publishedAt": "2026-09-18",
+    "lang": "en"
+  },
+  "sourceRead": {
+    "completeArticleRead": true,
+    "bodyLines": "L55–183 and L251–253",
+    "sourceLocationConvention": "Web extraction line numbers from 2026-10-12 retrieval, exact eligible source paragraphs retained for audit.",
+    "licensedProseSha256": "7aad016639c2aab56031578610aa89726cc5c09b0f898fe78eb37572d8d4e9d4",
+    "hashScope": "UTF-8 selected eligible narrative paragraphs joined by two LF characters with final LF; not full HTML. Link labels removed, prose unchanged.",
+    "omitted": "All direct quotations, photos/captions, linked external full texts, navigation; DE legal edge cases not adapted. EN external survey details and ministerial/partner quotations not adapted.",
+    "paragraphLocations": [
+      "L82",
+      "L84",
+      "L85",
+      "L86",
+      "L97"
+    ]
+  },
+  "dateEvidence": {
+    "location": "Header L62–78",
+    "text": "Published 18 September 2026; Last updated 5 October 2026; update log confirms first publication and Isle of Wight addition.",
+    "originalDate": "2026-09-18",
+    "ageDaysAsOfEdition": 24
+  },
+  "nativeLanguage": {
+    "basis": "institutional-original-language-inference",
+    "evidence": [
+      "From metadata L60–61 names Department for Education and Department for Digital, Culture, Media and Sport, satisfying registered DfE publisher check.",
+      "English institutional domestic-school programme press release; no translation or external syndication credit."
+    ],
+    "caveat": "Institutional language provenance, not author native-tongue or earliest-draft certification."
+  },
+  "rights": {
+    "verified": true,
+    "adaptationAllowed": true,
+    "publicRedistributionAllowed": true,
+    "license": "Open Government Licence v3.0",
+    "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "excluded": [
+      "All photos, graphics, logos, videos and captions",
+      "All direct quotations and linked third-party full text"
+    ],
+    "attributionInArticle": true,
+    "scope": "Institutional public-sector narrative only. Excludes all ministerial and third-party quotations, identifiable personal cases, linked report and images.",
+    "evidence": [
+      {
+        "url": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+        "location": "L251–253",
+        "finding": "Article footer applies OGL v3.0 except where otherwise stated; no separate exception on selected institutional narrative."
+      },
+      {
+        "url": "https://www.gov.uk/help/terms-conditions",
+        "location": "L91–98",
+        "finding": "Crown/public-sector content reusable under OGL; other owners normally separately credited."
+      },
+      {
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "location": "Official National Archives indexed licence, retrieved 2026-10-12",
+        "finding": "Read licence including adaptation, public redistribution, attribution, exceptions for third-party rights/personal data/logos, and no endorsement."
+      }
+    ],
+    "licenseRetrievalNote": "Canonical National Archives direct open returned HTTP 403. Official National Archives search-index version provided full licence text; read without access-control bypass."
+  },
+  "claims": [
+    {
+      "sentenceIds": [
+        "s1",
+        "s2"
+      ],
+      "locations": [
+        "L82",
+        "L85"
+      ],
+      "finding": "Source-backed introductory paraphrase; can/aims preserves possible benefit and programme aim."
+    },
+    {
+      "sentenceIds": [
+        "s3",
+        "s4"
+      ],
+      "locations": [
+        "L57",
+        "L84"
+      ],
+      "finding": "More than 400 secondary schools and £22.5m accurately retained; Chinese monetary conversion is 2250万英镑."
+    },
+    {
+      "sentenceIds": [
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "locations": [
+        "L85"
+      ],
+      "finding": "Activity range and during/after-school timing exact in substance."
+    },
+    {
+      "sentenceIds": [
+        "s8"
+      ],
+      "locations": [
+        "L85"
+      ],
+      "finding": "Confidence, skills and belonging presented as possible benefits, not achieved results."
+    },
+    {
+      "sentenceIds": [
+        "s9"
+      ],
+      "locations": [
+        "L86"
+      ],
+      "finding": "Only final institutional sentence on missed access adapted; survey statistics/report text not reused."
+    },
+    {
+      "sentenceIds": [
+        "s10",
+        "s11"
+      ],
+      "locations": [
+        "L97"
+      ],
+      "finding": "Co-ordinators, school clusters, gaps and local partners retained as future work."
+    }
+  ],
+  "pedagogicalReview": {
+    "bodyWordCountWhitespace": 138,
+    "target": "B1",
+    "levelCaveat": "编辑估计为 B1：以清楚的说明文和常见活动词汇为主，包含目的不定式、宾语从句以及 will / can 表达计划和可能性。enrichment、disadvantaged、belong 等关键词均有注释；并非经认证的 CEFR 测评。",
+    "pairedChinese": true,
+    "allGlossSurfacesAndSummaryReferencesChecked": true,
+    "summaryWords": 6,
+    "summaryPhrases": 4,
+    "summarySentences": 2,
+    "speakingQuestions": 2,
+    "speakingExpressions": 2
+  },
+  "duplicateReview": {
+    "sourceUrlAbsentFromCurrentArticleFiles": true,
+    "storyIdAbsentFromCurrentArticleFiles": true,
+    "base": "main d18ec, eight existing articles inspected; DE gaming and EN vocational Oct11 excluded"
+  },
+  "publicationBoundary": "Exact article hash approved in independent-review.md and reviewed-articles.json; publication verification is separate.",
+  "draftArticleSha256": "79984ae23da39571634c553ea3b267116abb35238d82d321d00c76e83d4f3523"
+}

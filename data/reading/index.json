@@ -38,6 +38,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-12-fr-sorgho-et-eau",
+      "lang": "fr",
+      "date": "2026-10-12",
+      "title": "Le sorgho, une céréale pour un climat plus chaud",
+      "titleZh": "高粱：适应更暖气候的一种谷物",
+      "summaryZh": "法国研究人员用模型研究高粱在欧洲的种植潜力。这种耐热、耐缺水的谷物可能帮助农业适应气候变化，但各地区的预测并不相同。原文发表于2026年10月6日。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "农业选择",
+        "水资源",
+        "气候适应"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-06",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-11-de-sichere-spiele-chats",
       "lang": "de",
       "date": "2026-10-11",
@@ -70,6 +88,60 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-09-25",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-12-de-meinungen-im-unterricht",
+      "lang": "de",
+      "date": "2026-10-12",
+      "title": "Über Meinungen im Unterricht sprechen",
+      "titleZh": "在课堂上讨论不同意见",
+      "summaryZh": "在德国学校的教学语境中，教师可以表达自己的观点，但不能把观点强加给学生。德国联邦政治教育中心的一篇文章讨论了课堂上的意见表达、争议与独立思考。原文发表于2026年9月22日；本篇为德语同语言教学改写。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "课堂讨论",
+        "独立思考",
+        "意见表达"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-22",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-12-en-more-chances-to-join-in",
+      "lang": "en",
+      "date": "2026-10-12",
+      "title": "More chances to join in",
+      "titleZh": "更多参与活动的机会",
+      "summaryZh": "音乐、运动、辩论和志愿服务可以丰富校园生活。英国一项计划将支持400多所中学扩大活动机会，重点面向处境不利的社区。原文首次发表于2026年9月18日，10月5日更新；本篇为英语同语言教学改写。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "音乐与体育",
+        "课外活动",
+        "社区归属"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-12-it-energia-a-scuola",
+      "lang": "it",
+      "date": "2026-10-12",
+      "title": "Conoscere l’energia a scuola",
+      "titleZh": "在学校认识能源",
+      "summaryZh": "2026年9月17日的报道回顾伊奥利群岛2025—2026学年的地热教育项目：学生制作模型和介绍资料，并于5月在利帕里展示成果。项目留下的教学资料可供学校继续使用。",
+      "level": "B1",
+      "category": "education",
+      "topics": [
+        "校园学习",
+        "地热能源",
+        "社区交流"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-09-17",
       "contentType": "native-adaptation"
     },
     {

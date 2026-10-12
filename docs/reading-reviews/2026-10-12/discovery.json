@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-12",
+  "newCandidates": 0,
+  "note": "Small bounded passes found no additional fully cleared recent native everyday article. Existing verified reserve used; no quota-driven discovery.",
+  "romance": {
+    "checkedAt": "2026-10-12",
+    "scope": "Bounded discovery within registered INGV news/press/notes and INRAE actualites prefixes. No quota.",
+    "checks": [
+      {
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/campi-flegrei-e-online-il-nuovo-spazio-scientifico-informativo-dell-ingv-dedicato-alle-domande-dei-cittadini",
+        "title": "CAMPI FLEGREI | È online il nuovo spazio scientifico-informativo dell’INGV dedicato alle domande dei cittadini",
+        "sourcePublishedAt": "2026-09-03",
+        "result": "Not promoted in this pass",
+        "reason": "Useful public-dialogue angle, 39 days old. Full page inspected; body is unexpectedly wrapped in a globalquakemodel.org hyperlink and has apparently unrelated meeting caption. Provenance/link anomaly unresolved; do not infer blanket clearance from footer. Recent science-only alternatives remain in existing reserve."
+      },
+      {
+        "url": "https://www.inrae.fr/actualites/comment-viande-poulet-conquis-monde",
+        "title": "Comment la viande de poulet a conquis le monde ?",
+        "sourcePublishedAt": "2026-10-06",
+        "result": "Excluded from conversion; no new candidate",
+        "reason": "Strong everyday food/culture angle but page explicitly says republished from The Conversation (web lines 83–94). Generic Creative Commons mention is not an exact adaptation licence; cannot inherit INRAE Etalab scope. No third-party source expansion or licence assumption."
+      },
+      {
+        "url": "https://www.inrae.fr/actualites",
+        "result": "No additional cleared recent everyday original in bounded pass",
+        "reason": "Recent feed chiefly studies and research-policy announcements; no forced replacement for food/agriculture sorghum draft. Outside-prefix event pages and hub subdomains not used."
+      }
+    ]
+  },
+  "germanic": {
+    "checkedAt": "2026-10-12",
+    "proposals": [],
+    "discovery": [
+      {
+        "language": "de",
+        "registrySourceId": "bpb-werkstatt-de",
+        "checkedUrls": [
+          "https://www.bpb.de/lernen/digitale-bildung/werkstatt/",
+          "https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/",
+          "https://www.bpb.de/lernen/digitale-bildung/werkstatt/329123/nachhaltigkeitsbildung-im-alltag-leicht-gemacht/",
+          "https://www.bpb.de/lernen/digitale-bildung/werkstatt/571326/gedruckt-gepostet-gestreamt-wie-schuelerzeitungen-sich-online-neu-erfinden/"
+        ],
+        "finding": "No new near-30-day everyday/cultural candidate found in bounded pass. Current short-article collection repeats gaming/neutrality/AI already in queue. Two appealing everyday/social articles opened: sustainability everyday dated 24 March 2021 (L32), school newspapers dated 6 October 2025 (L29); too old for current-news slots. No old story relabelled as recent."
+      },
+      {
+        "language": "en",
+        "registrySourceId": "govuk-education-english-news",
+        "query": "site.gov.uk/government/news \"Department for Education\" \"October 2026\" \"music\"",
+        "finding": "Bounded official-site search surfaced the enrichment article already in queue; other results were policy publications, non-news pages or minister listing, not verified new registered-institution everyday-news candidates. No candidate added merely to fill quota."
+      }
+    ]
+  }
+}

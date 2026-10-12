@@ -1,0 +1,118 @@
+{
+  "reviewedAt": "2026-10-12",
+  "reviewType": "independent-editorial-pass",
+  "articles": [
+    {
+      "id": "2026-10-12-fr-sorgho-et-eau",
+      "lang": "fr",
+      "level": "A2",
+      "sourceUrl": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+      "sourcePublishedAt": "2026-10-06",
+      "sha256": "6e6a4dcda969db49f7de01992bf7e60ce05f73504fc4dc795015e6f304ecf47d",
+      "bodyWordCountWhitespace": 109,
+      "validationErrors": [],
+      "learningCounts": {
+        "words": 6,
+        "phrases": 4,
+        "sentences": 2
+      },
+      "status": "approved"
+    },
+    {
+      "id": "2026-10-12-it-energia-a-scuola",
+      "lang": "it",
+      "level": "B1",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+      "sourcePublishedAt": "2026-09-17",
+      "sha256": "191d229d190952556746763dbecc3b973cbb3e4ca4647324d7693304c6fa1c8b",
+      "bodyWordCountWhitespace": 107,
+      "validationErrors": [],
+      "learningCounts": {
+        "words": 6,
+        "phrases": 4,
+        "sentences": 2
+      },
+      "status": "approved"
+    },
+    {
+      "id": "2026-10-12-de-meinungen-im-unterricht",
+      "lang": "de",
+      "level": "A2",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+      "sourcePublishedAt": "2026-09-22",
+      "sha256": "788415f5e26f362ea22cc515190ff76b7964676fb9d1fc826261022f3419a387",
+      "bodyWordCountWhitespace": 93,
+      "validationErrors": [],
+      "learningCounts": {
+        "words": 6,
+        "phrases": 4,
+        "sentences": 2
+      },
+      "status": "approved"
+    },
+    {
+      "id": "2026-10-12-en-more-chances-to-join-in",
+      "lang": "en",
+      "level": "B1",
+      "sourceUrl": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+      "sourcePublishedAt": "2026-09-18",
+      "sha256": "79984ae23da39571634c553ea3b267116abb35238d82d321d00c76e83d4f3523",
+      "bodyWordCountWhitespace": 138,
+      "validationErrors": [],
+      "learningCounts": {
+        "words": 6,
+        "phrases": 4,
+        "sentences": 2
+      },
+      "status": "approved"
+    }
+  ],
+  "duplicateChecks": {
+    "existingArticleCount": 8,
+    "combinedArticleCount": 12,
+    "duplicateIdsStoryIdsSourceUrlsOrBodies": []
+  },
+  "existingArticlePreservation": [
+    {
+      "path": "data/reading/articles/2026-10-10-de-meeresschutz.json",
+      "sha256": "ec54a1aec11b3c2554bcb19fe956e0e488afa242dffbda6f6b14daac43a89cb6",
+      "unchanged": true
+    },
+    {
+      "path": "data/reading/articles/2026-10-10-en-satellites-everyday-life.json",
+      "sha256": "175e6429da8917d4fd04bb56e0c40e3e4807ade26dd3c52e5d19eade9107bd9e",
+      "unchanged": true
+    },
+    {
+      "path": "data/reading/articles/2026-10-10-fr-fleurs-abeilles.json",
+      "sha256": "0a2298718d390b70ad45a2f878091f19210881e18d7e76344c1d4c5b901e670a",
+      "unchanged": true
+    },
+    {
+      "path": "data/reading/articles/2026-10-10-it-plastica-radar.json",
+      "sha256": "22fc92cf8c700ad17bb26d468862e67aca16b210c194e8443ea61b312d70ecd4",
+      "unchanged": true
+    },
+    {
+      "path": "data/reading/articles/2026-10-11-de-sichere-spiele-chats.json",
+      "sha256": "8343d7507235503b78d4f13c9c7f7ab503314e2028fe41b3781de3e2a21307e8",
+      "unchanged": true
+    },
+    {
+      "path": "data/reading/articles/2026-10-11-en-practical-learning-choices.json",
+      "sha256": "6bd854bd0a09b4d0972178be71458427f9a7ae14b4f567b73f58df5adf031f15",
+      "unchanged": true
+    },
+    {
+      "path": "data/reading/articles/2026-10-11-fr-debroussaillement-action.json",
+      "sha256": "da6794f4bdbf26b2395ae8cea512b0624bb5db5136188be4dd63b20c90cddea2",
+      "unchanged": true
+    },
+    {
+      "path": "data/reading/articles/2026-10-11-it-lipari-storia-sommersa.json",
+      "sha256": "0e61e0aab1b408ea43b2dd7e1b6c152904ddd9a950dfc878a34cf87c9e3e3fd6",
+      "unchanged": true
+    }
+  ],
+  "scope": "Approval applies only to exact article hashes. No repo edits performed by reviewer; deployment/browser QA remain coordinator responsibility."
+}
