@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-12",
+  "method": "Independent web retrieval and reading of all four full source bodies, dates, publishers, source licensing blocks and linked licensing policies. Not an HTTP-only check.",
+  "articles": [
+    {
+      "candidateId": "it-2026-09-17-geothermal-schools",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+      "sourcePublishedAt": "2026-09-17",
+      "license": "CC BY 4.0",
+      "rightsEvidenceUrls": [
+        "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+        "https://www.ingv.it/note-legali",
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "nativeProvenance": "Independent institutional original-language inference from body, editorial byline/provider and domestic context; no translator/syndication credit visible; not author mother-tongue or drafting-language certification."
+    },
+    {
+      "candidateId": "fr-2026-10-06-sorghum-climate",
+      "sourceUrl": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+      "sourcePublishedAt": "2026-10-06",
+      "license": "Licence Ouverte 2.0 (Etalab)",
+      "rightsEvidenceUrls": [
+        "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+        "https://www.inrae.fr/conditions-generales-dutilisation",
+        "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+      ],
+      "nativeProvenance": "Independent institutional original-language inference from body, editorial byline/provider and domestic context; no translator/syndication credit visible; not author mother-tongue or drafting-language certification."
+    },
+    {
+      "candidateId": "de-2026-09-22-teacher-neutrality",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+      "sourcePublishedAt": "2026-09-22",
+      "license": "CC BY-SA 4.0",
+      "rightsEvidenceUrls": [
+        "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+        "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+        "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+      ],
+      "nativeProvenance": "Independent institutional original-language inference from body, editorial byline/provider and domestic context; no translator/syndication credit visible; not author mother-tongue or drafting-language certification."
+    },
+    {
+      "candidateId": "en-2026-09-18-school-enrichment-activities",
+      "sourceUrl": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+      "sourcePublishedAt": "2026-09-18",
+      "license": "Open Government Licence v3.0",
+      "rightsEvidenceUrls": [
+        "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+        "https://www.gov.uk/help/terms-conditions",
+        "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      ],
+      "nativeProvenance": "Independent institutional original-language inference from body, editorial byline/provider and domestic context; no translator/syndication credit visible; not author mother-tongue or drafting-language certification."
+    }
+  ],
+  "licenseRetrievalCaveat": "Canonical National Archives OGL direct retrieval returned an internal error. Official National Archives indexed OGL v3 text was fully available and read, alongside live GOV.UK article grant and terms. No access restriction bypass.",
+  "sourceCaveats": {
+    "it": "2026-09-17 publication describes a May 2026 Lipari event; teacher training four modules; institutional text only, no personal minor data or media.",
+    "fr": "Model-based conditional estimates, not observed future results. Preserve northern increase/southern slight decline, scenario dependence; exclude AFP-derived maize statistics, image and linked paper text.",
+    "de": "Source-attributed account of German education; do not turn into universal legal advice. Exclude separate Hanschmann quote/image. Text grant is CC BY-SA 4.0, including adapted German and Chinese derivative text.",
+    "en": "Original publication 2026-09-18, updated 2026-10-05. Investment and access are announced plans; effects are aims, not measured results. Exclude all quote blocks, report text, images and personal cases."
+  },
+  "draftStatus": "All four final revised articles read and approved for exact hashes in reviewed-articles.json."
+}

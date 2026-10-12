@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-11",
+  "collectedAt": "2026-10-12",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -104,14 +104,14 @@
       "status": "verified",
       "editorialNote": "口语角度：动手实验与课堂知识谁更重要？学校怎样帮助社区理解能源？新闻发表于9月17日，但学生成果活动在2026年5月，不把活动写成刚发生。排除具体未成年人个人资料。",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-10",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-12",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
-          "checkedAt": "2026-10-10",
+          "checkedAt": "2026-10-12",
           "read": true,
           "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
         },
@@ -143,7 +143,7 @@
             "https://www.ingv.it/note-legali",
             "https://creativecommons.org/licenses/by/4.0/"
           ],
-          "evidence": "This article's footer explicitly licenses INGV-published page content under CC BY 4.0. Article review found institutional news prose, no conflicting text-rights or reprint notice. Legal notice identifies INGV ownership unless stated otherwise.",
+          "evidence": "Article footer web lines 68 and legal notice lines 5–9,58: INGV owned text explicitly CC BY 4.0; no contrary article text marker. Creative Commons deed re-read via web, lines 48–56 sharing/adaptation/attribution; shell retrieval got 403 and was not bypassed.",
           "scope": "INGV-owned Italian institutional news prose only; no underlying journal article, maps, images, logos or externally owned quotations.",
           "attributionRequirements": [
             "Credit INGV Ufficio Stampa and any named author",
@@ -153,18 +153,18 @@
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAgainstArticleCount": 8,
-          "checkedAt": "2026-10-11",
-          "sourceUrlAlreadyPublished": false,
+          "checkedAt": "2026-10-12",
+          "checkedAgainstArticleCount": 12,
+          "sourceUrlAlreadyPublished": true,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-11",
-          "ageDays": 24,
+          "asOf": "2026-10-12",
+          "ageDays": 25,
           "bucket": "within_30_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-12-it-energia-a-scuola"
     },
     {
       "id": "it-2026-09-15-lipari-underwater-heritage",
@@ -710,14 +710,14 @@
       "status": "verified",
       "editorialNote": "面对缺水和高温，欧洲应怎样改变种植结构？比较高粱与玉米，并区分模型预测、地区差异与实际政策选择。 Exclude footnote 1's AFP-derived crop-report wording and all images from reused text. Preserve caveats: simulations, scenarios and regional differences; do not frame local sorghum benefits as overall climate-change benefits.",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-10",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-12",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "url": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
-          "checkedAt": "2026-10-10",
+          "checkedAt": "2026-10-12",
           "read": true,
           "notes": "Article body, visible publication metadata, attributions and licensing/footer material actually retrieved and reviewed; not just an HTTP availability test."
         },
@@ -746,7 +746,7 @@
             "https://www.inrae.fr/conditions-generales-dutilisation",
             "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
           ],
-          "evidence": "INRAE's public-text Etalab 2.0 grant applies; full article identifies institutional media offices and does not state narrower text rights or a third-party reprint. Permits derivative adaptation, translation as adaptation, and public/commercial dissemination with attribution and source-date requirements.",
+          "evidence": "INRAE CGU web lines 20–36: public text under Etalab 2.0 subject to marked exceptions. Entire communiqué inspected: photo separately credited, no restrictive narrative text marker. Etalab deed lines 13–28 permits adaptations/public distribution with source/date and no endorsement.",
           "scope": "Original INRAE/AgroParisTech French press-release prose only. No image, underlying journal paper, or quoted/linked third-party source material included.",
           "caveat": "Site-wide text licence, not an article-specific badge. Credit INRAE/AgroParisTech, link original, show date and Etalab 2.0, mark translation/adaptation. Do not infer rights to the scientific journal article from press-release rights.",
           "exclusions": [
@@ -761,18 +761,18 @@
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAgainstArticleCount": 8,
-          "checkedAt": "2026-10-11",
-          "sourceUrlAlreadyPublished": false,
+          "checkedAt": "2026-10-12",
+          "checkedAgainstArticleCount": 12,
+          "sourceUrlAlreadyPublished": true,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-11",
-          "ageDays": 5,
+          "asOf": "2026-10-12",
+          "ageDays": 6,
           "bucket": "within_30_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-12-fr-sorgho-et-eau"
     },
     {
       "id": "de-2026-10-02-gaming-community-safety",
@@ -884,15 +884,15 @@
       "status": "verified",
       "editorialNote": "口语角度：老师应如何讨论政治分歧，又不替学生作判断？中立与公民责任的边界在哪里？ It discusses German legal requirements. A later adaptation must distinguish the source's account from legal advice and preserve its uncertainty about unresolved questions; legal accuracy should be rechecked before publication. 后续译编须CC BY-SA4同许可。",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-10",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-12",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
-          "checkedAt": "2026-10-10",
+          "checkedAt": "2026-10-12",
           "notes": "Original bpb page loads the complete teacher-neutrality Q&A, Beutelsbach principles, bibliography and article license block without login."
         },
         "originalDate": {
@@ -941,18 +941,18 @@
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAgainstArticleCount": 8,
-          "checkedAt": "2026-10-11",
-          "sourceUrlAlreadyPublished": false,
+          "checkedAt": "2026-10-12",
+          "checkedAgainstArticleCount": 12,
+          "sourceUrlAlreadyPublished": true,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-11",
-          "ageDays": 19,
+          "asOf": "2026-10-12",
+          "ageDays": 20,
           "bucket": "within_30_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-12-de-meinungen-im-unterricht"
     },
     {
       "id": "de-2026-09-21-tiktok-political-communication",
@@ -1234,14 +1234,14 @@
       "status": "verified",
       "editorialNote": "备选口语角度：音乐、体育、辩论或志愿服务中，你最想参与哪一种？什么会妨碍人们参加？注意部门首页展示的5 October是更新日期，首次发表是18 September。只写计划扩大活动机会，不保证预期教育或健康成效；不使用外部调查全文、第三方引语或个人学生故事。",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-11",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-12",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "url": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
-          "checkedAt": "2026-10-11",
+          "checkedAt": "2026-10-12",
           "read": true,
           "notes": "Full article, all updates, institutional narrative, third-party quote blocks, eligible-area list and OGL footer read. Web extraction source-page extraction L55–183, footer L251–253."
         },
@@ -1286,9 +1286,9 @@
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAgainstArticleCount": 8,
-          "checkedAt": "2026-10-11",
-          "sourceUrlAlreadyPublished": false,
+          "checkedAt": "2026-10-12",
+          "checkedAgainstArticleCount": 12,
+          "sourceUrlAlreadyPublished": true,
           "titleAlreadyPublished": false
         },
         "publisher": {
@@ -1301,12 +1301,12 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-11",
-          "ageDays": 23,
+          "asOf": "2026-10-12",
+          "ageDays": 24,
           "bucket": "within_30_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-12-en-more-chances-to-join-in"
     }
   ],
   "policy": "Candidates are recoverable editorial inputs, not published reading lessons. status=verified means source checks complete only. No candidate in this batch has editorial review, a finished adaptation or publication readiness. Always recheck rights/date/source before conversion.",

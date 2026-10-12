@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "editionDate": "2026-10-12",
+  "reviewedAt": "2026-10-12",
+  "scope": "IT and FR staged learning adaptations; independent reviewer requested two edits (IT idiomatic title, FR per-area yield) and both incorporated.",
+  "retrievals": [
+    {
+      "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+      "status": 200,
+      "sha256": "0704de0df04254c849e4fe7c7c66be9ede070f5f1d538b1e0c03257d8b46f955",
+      "normalizedFullPageTextSha256": "97e07abc4c1d7e5bce8266d2bbff56f3221172b26750ca8cada915a69a5e3bcc"
+    },
+    {
+      "url": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+      "status": 200,
+      "sha256": "cbe092bbc6dfb7faff0f14da8302f01ce363bd0d45f8ca4aa2ddf2a681805885",
+      "normalizedFullPageTextSha256": "18ac5750b035361861c37cc5cbbe1a47055d3b775a31658a57b907e378e56107"
+    },
+    {
+      "url": "https://www.ingv.it/note-legali",
+      "status": 200,
+      "sha256": "ae9decac8041ea8ce5e25795524da9431afe2de78d9c876e7d0b41f26bed76be",
+      "normalizedFullPageTextSha256": "ce2066ba478fc538e4f21e904fff9ea215a90540d8dd379529ad8f46614788e2"
+    },
+    {
+      "url": "https://www.inrae.fr/conditions-generales-dutilisation",
+      "status": 200,
+      "sha256": "1f9f14a1d74bcb75023d8cb898ef056897caec73709bee374dd4525093875546",
+      "normalizedFullPageTextSha256": "21ab3a321cde1919a51386da7a05253b59632e0c4d480c0694e7e12054144163"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+      "status": 200,
+      "sha256": "0e53a9df4f7542f7034dac29097a4bdc4fd0634ec52d4ccc3317ddb61858624a",
+      "normalizedFullPageTextSha256": "cec80c6d48460e7c346c87df2635af869ecfe938d6649f29d1a52986f4fa24bb"
+    }
+  ],
+  "articles": [
+    {
+      "articleId": "2026-10-12-it-energia-a-scuola",
+      "candidateId": "it-2026-09-17-geothermal-schools",
+      "articleSha256": "191d229d190952556746763dbecc3b973cbb3e4ca4647324d7693304c6fa1c8b",
+      "source": {
+        "name": "INGV Ufficio Stampa",
+        "title": "ISOLE EOLIE | Geotermia, dalle scuole un modello educativo replicabile",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+        "publishedAt": "2026-09-17",
+        "lang": "it"
+      },
+      "freshnessDays": 25,
+      "sourceBodyRead": true,
+      "sourceHtmlSha256": "0704de0df04254c849e4fe7c7c66be9ede070f5f1d538b1e0c03257d8b46f955",
+      "sourceNormalizedPageTextSha256": "97e07abc4c1d7e5bce8266d2bbff56f3221172b26750ca8cada915a69a5e3bcc",
+      "nativeLanguageEvidence": "INGV Italian institutional account of its own IRGIE education programme; no translator or third-party republication credit.",
+      "nativeLanguageCaveat": "Institutional-language provenance inference, not certification of author mother tongue or first drafting language.",
+      "rights": {
+        "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidenceUrls": [
+          "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+          "https://www.ingv.it/note-legali"
+        ],
+        "evidence": "Article footer web lines 68 and legal notice lines 5–9,58: INGV owned text explicitly CC BY 4.0; no contrary article text marker. Creative Commons deed re-read via web, lines 48–56 sharing/adaptation/attribution; shell retrieval got 403 and was not bypassed.",
+        "exclusions": [
+          "All images, logos, brochure/guide/book contents, linked school pages, and third-party quotations"
+        ],
+        "attribution": "Provider(s), original title/date/URL, named licence link, retrieval date, simplification/Chinese translation disclosure and no endorsement included."
+      },
+      "factChecks": [
+        {
+          "sentenceSuffix": "01",
+          "basis": "Source body paragraph 1 and IRGIE educational context: schools in Eolian islands learn geothermal resources. Definition shortened to Earth heat."
+        },
+        {
+          "sentenceSuffix": "02",
+          "basis": "Paragraph 2: initiative in school year 2025-2026; INGV programme for primary and secondary teachers and pupils."
+        },
+        {
+          "sentenceSuffix": "03",
+          "basis": "Paragraph 3: four teacher-training modules followed by classroom interdisciplinary activities; module count omitted."
+        },
+        {
+          "sentenceSuffix": "04–05",
+          "basis": "Paragraphs 1 and 4: virtual guides, informational brochures including English, models and small operating plants; adaptation omits plants and stays general."
+        },
+        {
+          "sentenceSuffix": "06",
+          "basis": "Paragraph 4: final event in Lipari in May 2026, distinct from article publication on 17 September 2026."
+        },
+        {
+          "sentenceSuffix": "07",
+          "basis": "Paragraph 7: retained teaching materials and guide support continuation; book text not reused."
+        },
+        {
+          "sentenceSuffix": "08",
+          "basis": "Last narrative paragraph: educational approach replicable in other geothermal areas; may be used, not claim already adopted."
+        }
+      ],
+      "editorialChecks": {
+        "sentences": 8,
+        "learningWords": 6,
+        "learningPhrases": 4,
+        "learningSentences": 2,
+        "speakingQuestions": 2,
+        "speakingExpressions": 2,
+        "allGlossAndSummarySurfacesVerified": true,
+        "level": "B1",
+        "levelIsEstimate": true,
+        "noCrossLanguageSharedStory": true,
+        "sourceNotAlreadyPublished": true
+      },
+      "sourceBodySha256": "6f25c9d7397a3cd1f3ca214729652eb4ab07b41d99358b80952f8055c46dcce3",
+      "sourceBodyHashMethod": "UTF-8, HTMLParser text nodes joined and whitespace collapsed, selected article body only; source-body-0.txt. Full narrative excludes navigation/footer; FR includes institutional intro through final narrative, without references."
+    },
+    {
+      "articleId": "2026-10-12-fr-sorgho-et-eau",
+      "candidateId": "fr-2026-10-06-sorghum-climate",
+      "articleSha256": "6e6a4dcda969db49f7de01992bf7e60ce05f73504fc4dc795015e6f304ecf47d",
+      "source": {
+        "name": "INRAE and AgroParisTech",
+        "title": "La production du sorgho en Europe favorisée par le changement climatique",
+        "url": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+        "publishedAt": "2026-10-06",
+        "lang": "fr"
+      },
+      "freshnessDays": 6,
+      "sourceBodyRead": true,
+      "sourceHtmlSha256": "cbe092bbc6dfb7faff0f14da8302f01ce363bd0d45f8ca4aa2ddf2a681805885",
+      "sourceNormalizedPageTextSha256": "18ac5750b035361861c37cc5cbbe1a47055d3b775a31658a57b907e378e56107",
+      "nativeLanguageEvidence": "French joint INRAE/AgroParisTech institutional communiqué about their study; source has both media contacts and no translation or external republication marker.",
+      "nativeLanguageCaveat": "Institutional-language provenance inference, not certification of author mother tongue or first drafting language.",
+      "rights": {
+        "name": "Licence Ouverte / Open Licence version 2.0 (Etalab)",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "evidenceUrls": [
+          "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+          "https://www.inrae.fr/conditions-generales-dutilisation",
+          "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+        ],
+        "evidence": "INRAE CGU web lines 20–36: public text under Etalab 2.0 subject to marked exceptions. Entire communiqué inspected: photo separately credited, no restrictive narrative text marker. Etalab deed lines 13–28 permits adaptations/public distribution with source/date and no endorsement.",
+        "exclusions": [
+          "Nicolas Guilpart photo and all media/logos",
+          "AFP-derived maize harvest statistics in footnote 1",
+          "Linked journal article, PDF, external works and third-party quotations"
+        ],
+        "attribution": "Provider(s), original title/date/URL, named licence link, retrieval date, simplification/Chinese translation disclosure and no endorsement included."
+      },
+      "factChecks": [
+        {
+          "sentenceSuffix": "01–02",
+          "basis": "Intro and paragraphs 2–3: sorghum heat/water-stress resilience; marginal European acreage. Exact percentages omitted."
+        },
+        {
+          "sentenceSuffix": "03–04",
+          "basis": "Intro and method section: INRAE/AgroParisTech study; past yields and climate variables modelled against future scenarios."
+        },
+        {
+          "sentenceSuffix": "05",
+          "basis": "Section La production de sorgho…: projected yield rises north and falls slightly south. rendements explicitly translated per-area yield; conditional retained."
+        },
+        {
+          "sentenceSuffix": "06",
+          "basis": "Intro and results: alternative to maize for animal feed. No promise of replacement rate."
+        },
+        {
+          "sentenceSuffix": "07",
+          "basis": "Final narrative paragraph: water saved could be allocated to other crops; possibility retained."
+        },
+        {
+          "sentenceSuffix": "08",
+          "basis": "Editorial caution summarizing model projections and regional variation; not an assertion of universal climate benefit."
+        }
+      ],
+      "editorialChecks": {
+        "sentences": 8,
+        "learningWords": 6,
+        "learningPhrases": 4,
+        "learningSentences": 2,
+        "speakingQuestions": 2,
+        "speakingExpressions": 2,
+        "allGlossAndSummarySurfacesVerified": true,
+        "level": "A2",
+        "levelIsEstimate": true,
+        "noCrossLanguageSharedStory": true,
+        "sourceNotAlreadyPublished": true
+      },
+      "sourceBodySha256": "f20303864aa2767cdf48ceaf989b31481ee282dd556a4319f508c991e2cf43de",
+      "sourceBodyHashMethod": "UTF-8, HTMLParser text nodes joined and whitespace collapsed, selected article body only; source-body-1.txt. Full narrative excludes navigation/footer; FR includes institutional intro through final narrative, without references."
+    }
+  ]
+}

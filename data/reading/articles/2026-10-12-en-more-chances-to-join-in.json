@@ -1,0 +1,361 @@
+{
+  "schema": 1,
+  "id": "2026-10-12-en-more-chances-to-join-in",
+  "storyId": "en-2026-09-18-school-enrichment-activities",
+  "lang": "en",
+  "date": "2026-10-12",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "音乐与体育",
+    "课外活动",
+    "社区归属"
+  ],
+  "title": "More chances to join in",
+  "titleZh": "更多参与活动的机会",
+  "summaryZh": "音乐、运动、辩论和志愿服务可以丰富校园生活。英国一项计划将支持400多所中学扩大活动机会，重点面向处境不利的社区。原文首次发表于2026年9月18日，10月5日更新；本篇为英语同语言教学改写。",
+  "level": "B1",
+  "levelReason": "编辑估计为 B1：以清楚的说明文和常见活动词汇为主，包含目的不定式、宾语从句以及 will / can 表达计划和可能性。enrichment、disadvantaged、belong 等关键词均有注释；并非经认证的 CEFR 测评。",
+  "source": {
+    "name": "Department for Education and Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "More enriching activities for hundreds of thousands of children",
+    "url": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
+    "publishedAt": "2026-09-18",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidenceUrl": "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children"
+  },
+  "attribution": "Adapted from Department for Education and Department for Digital, Culture, Media and Sport, “More enriching activities for hundreds of thousands of children”, first published 18 September 2026, updated 5 October 2026. Contains public sector information licensed under the Open Government Licence v3.0. Source and licence links are provided above. Dimenticato shortened and simplified the English, translated it into Chinese, and added learning notes; no official endorsement is implied.",
+  "adaptation": "仅使用 GOV.UK 公共部门的英语机构叙述，作同语言教学改写并配中文翻译。排除所有直接引语、照片、标识、个人案例以及外链报告全文。投资和活动扩展保留为计划，信心与归属感保留为可能益处，不声称成效已实现。原语来源判断依据机构与国内项目语境，并非最初起草语言的认证。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Joining a music group or a sports team can make school life richer.",
+      "zh": "参加音乐团体或运动队可以让校园生活更丰富。",
+      "glosses": [
+        {
+          "surface": "Joining",
+          "lemma": "join",
+          "zh": "加入；参加",
+          "note": "动名词作主语的一部分"
+        },
+        {
+          "surface": "richer",
+          "lemma": "rich",
+          "zh": "更丰富的",
+          "note": "比较级，此处不指更富有"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "A government programme aims to give more young people these opportunities.",
+      "zh": "一项政府计划旨在为更多年轻人提供这些机会。",
+      "glosses": [
+        {
+          "surface": "programme",
+          "lemma": "programme",
+          "zh": "计划；项目",
+          "note": "英式拼写"
+        },
+        {
+          "surface": "aims",
+          "lemma": "aim",
+          "zh": "旨在",
+          "note": "aim to do something：旨在做某事"
+        },
+        {
+          "surface": "opportunities",
+          "lemma": "opportunity",
+          "zh": "机会",
+          "note": "名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "It will support more than 400 secondary schools in disadvantaged communities.",
+      "zh": "它将支持处境不利社区中的400多所中学。",
+      "glosses": [
+        {
+          "surface": "secondary",
+          "lemma": "secondary",
+          "zh": "中等教育的",
+          "note": "secondary schools：中学"
+        },
+        {
+          "surface": "disadvantaged",
+          "lemma": "disadvantaged",
+          "zh": "处境不利的",
+          "note": "此处指社会经济条件较差"
+        },
+        {
+          "surface": "communities",
+          "lemma": "community",
+          "zh": "社区",
+          "note": "复数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The Enrichment Expansion programme is backed by £22.5 million.",
+      "zh": "Enrichment Expansion（丰富学习体验拓展）计划获得了2250万英镑的资金支持。",
+      "glosses": [
+        {
+          "surface": "Enrichment",
+          "lemma": "enrichment",
+          "zh": "丰富学习体验",
+          "note": "此处指拓展课堂学习以外的活动与体验"
+        },
+        {
+          "surface": "backed",
+          "lemma": "back",
+          "zh": "支持；资助",
+          "note": "is backed by：被动语态，得到……支持"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Schools will get help to offer more activities during the school day or after school.",
+      "zh": "学校将获得支持，在上学时段或放学后提供更多活动。",
+      "glosses": [
+        {
+          "surface": "offer",
+          "lemma": "offer",
+          "zh": "提供"
+        },
+        {
+          "surface": "activities",
+          "lemma": "activity",
+          "zh": "活动",
+          "note": "名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "The options include music groups, engineering clubs, debating societies and football teams.",
+      "zh": "这些活动包括音乐团体、工程兴趣社团、辩论社和足球队。",
+      "glosses": [
+        {
+          "surface": "options",
+          "lemma": "option",
+          "zh": "可选项目"
+        },
+        {
+          "surface": "engineering",
+          "lemma": "engineering",
+          "zh": "工程学的"
+        },
+        {
+          "surface": "debating",
+          "lemma": "debate",
+          "zh": "辩论的",
+          "note": "debating societies：辩论社"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Volunteering projects and outdoor learning are part of the plan too.",
+      "zh": "志愿服务项目和户外学习也在计划之内。",
+      "glosses": [
+        {
+          "surface": "Volunteering",
+          "lemma": "volunteering",
+          "zh": "志愿服务"
+        },
+        {
+          "surface": "outdoor",
+          "lemma": "outdoor",
+          "zh": "户外的"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "These experiences can help pupils build confidence, learn skills and feel that they belong.",
+      "zh": "这些体验可以帮助学生建立信心、学习技能并获得归属感。",
+      "glosses": [
+        {
+          "surface": "confidence",
+          "lemma": "confidence",
+          "zh": "信心"
+        },
+        {
+          "surface": "skills",
+          "lemma": "skill",
+          "zh": "技能",
+          "note": "复数"
+        },
+        {
+          "surface": "belong",
+          "lemma": "belong",
+          "zh": "属于；有归属感"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "However, some young people miss out because of where they live or other barriers.",
+      "zh": "然而，一些年轻人因居住地点或其他障碍而错失参与机会。",
+      "glosses": [
+        {
+          "surface": "miss out",
+          "lemma": "miss out",
+          "zh": "错失机会"
+        },
+        {
+          "surface": "barriers",
+          "lemma": "barrier",
+          "zh": "障碍",
+          "note": "此处不是实体围栏"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Local co-ordinators will work with groups of schools to find gaps in their activities.",
+      "zh": "当地协调人员将与多所学校组成的小组合作，找出其活动供给中的不足。",
+      "glosses": [
+        {
+          "surface": "co-ordinators",
+          "lemma": "co-ordinator",
+          "zh": "协调人员",
+          "note": "英式拼写，复数"
+        },
+        {
+          "surface": "gaps",
+          "lemma": "gap",
+          "zh": "缺口；不足",
+          "note": "这里指缺少的活动机会"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "They will also connect schools with local partners to create more opportunities for pupils.",
+      "zh": "他们还将把学校与当地合作伙伴联系起来，为学生创造更多机会。",
+      "glosses": [
+        {
+          "surface": "connect",
+          "lemma": "connect",
+          "zh": "联系；连接",
+          "note": "connect A with B：把 A 与 B 联系起来"
+        },
+        {
+          "surface": "partners",
+          "lemma": "partner",
+          "zh": "合作伙伴"
+        },
+        {
+          "surface": "pupils",
+          "lemma": "pupil",
+          "zh": "学生",
+          "note": "英式英语中常指中小学学生"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "opportunities",
+        "zh": "机会",
+        "sentenceId": "s2",
+        "lemma": "opportunity"
+      },
+      {
+        "text": "disadvantaged",
+        "zh": "处境不利的",
+        "sentenceId": "s3",
+        "lemma": "disadvantaged"
+      },
+      {
+        "text": "activities",
+        "zh": "活动",
+        "sentenceId": "s5",
+        "lemma": "activity"
+      },
+      {
+        "text": "Volunteering",
+        "zh": "志愿服务",
+        "sentenceId": "s7",
+        "lemma": "volunteering"
+      },
+      {
+        "text": "confidence",
+        "zh": "信心",
+        "sentenceId": "s8",
+        "lemma": "confidence"
+      },
+      {
+        "text": "barriers",
+        "zh": "障碍",
+        "sentenceId": "s9",
+        "lemma": "barrier"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "after school",
+        "zh": "放学后",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "build confidence",
+        "zh": "建立信心",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "miss out",
+        "zh": "错失机会",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "work with",
+        "zh": "与……合作",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "will get 表示将来的计划；to offer more activities 说明获得支持的目的。during the school day 与 after school 对比两个时间段。"
+      },
+      {
+        "sentenceId": "s8",
+        "note": "help pupils 后面并列 build、learn、feel 三个动词原形；can 表示可能带来的帮助，并非保证每个人都能取得这些成效。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which activity in the programme would you most like to try, and why?",
+        "zh": "计划中的哪项活动是你最想尝试的？为什么？"
+      },
+      {
+        "text": "What could schools do to help pupils who miss out on these activities?",
+        "zh": "学校可以做些什么，帮助那些错失这些活动机会的学生？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would like to join a debating society.",
+        "zh": "我想加入一个辩论社。",
+        "note": "would like to + 动词原形：表达想参与的活动，可替换活动名称。"
+      },
+      {
+        "text": "Taking part could help me build confidence.",
+        "zh": "参与其中可能帮助我建立信心。",
+        "note": "Taking part 作主语；could 表达可能性。"
+      }
+    ]
+  }
+}

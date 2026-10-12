@@ -1,0 +1,335 @@
+{
+  "schema": 1,
+  "id": "2026-10-12-fr-sorgho-et-eau",
+  "storyId": "inrae-sorghum-climate-2026-10-06",
+  "lang": "fr",
+  "date": "2026-10-12",
+  "contentType": "native-adaptation",
+  "category": "environment",
+  "topics": [
+    "农业选择",
+    "水资源",
+    "气候适应"
+  ],
+  "title": "Le sorgho, une céréale pour un climat plus chaud",
+  "titleZh": "高粱：适应更暖气候的一种谷物",
+  "summaryZh": "法国研究人员用模型研究高粱在欧洲的种植潜力。这种耐热、耐缺水的谷物可能帮助农业适应气候变化，但各地区的预测并不相同。原文发表于2026年10月6日。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2 辅助阅读：以现在时短句为主，少量条件式 pourrait / pourraient 用于保留预测的不确定性；农业词和比较结构有中文注释。非认证 CEFR 测评。",
+  "source": {
+    "name": "INRAE and AgroParisTech",
+    "title": "La production du sorgho en Europe favorisée par le changement climatique",
+    "url": "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
+    "publishedAt": "2026-10-06",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence version 2.0 (Etalab)",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+  },
+  "attribution": "来源：INRAE 与 AgroParisTech 联合新闻稿，《La production du sorgho en Europe favorisée par le changement climatique》，2026-10-06；2026-10-12查阅。依 INRAE 使用条款中的 Licence Ouverte 2.0 使用公开机构正文。未使用 Nicolas Guilpart 的照片、AFP 材料、引语或链接论文。",
+  "adaptation": "Dimenticato 根据法语机构原文作同语言简化、节选和重组，添加简中逐句翻译、语境注释与原创练习；非逐字转载，不代表来源机构认可或审定。",
+  "sentences": [
+    {
+      "id": "fr-sorgho-et-eau-01",
+      "text": "Le sorgho est une céréale qui résiste bien à la chaleur et au manque d’eau.",
+      "zh": "高粱是一种耐热、耐缺水的谷物。",
+      "glosses": [
+        {
+          "surface": "sorgho",
+          "lemma": "sorgho",
+          "zh": "高粱",
+          "note": "阳性名词 le sorgho。"
+        },
+        {
+          "surface": "céréale",
+          "lemma": "céréale",
+          "zh": "谷物",
+          "note": "阴性名词 une céréale。"
+        },
+        {
+          "surface": "chaleur",
+          "lemma": "chaleur",
+          "zh": "高温；热",
+          "note": "阴性名词 la chaleur。"
+        }
+      ]
+    },
+    {
+      "id": "fr-sorgho-et-eau-02",
+      "text": "En Europe, cette plante occupe encore une petite place dans l’agriculture.",
+      "zh": "在欧洲，这种植物在农业中所占的比重仍然很小。",
+      "glosses": [
+        {
+          "surface": "plante",
+          "lemma": "plante",
+          "zh": "植物",
+          "note": "阴性名词。"
+        },
+        {
+          "surface": "encore",
+          "lemma": "encore",
+          "zh": "仍然",
+          "note": "这里说明目前仍是如此。"
+        },
+        {
+          "surface": "agriculture",
+          "lemma": "agriculture",
+          "zh": "农业",
+          "note": "阴性名词。"
+        }
+      ]
+    },
+    {
+      "id": "fr-sorgho-et-eau-03",
+      "text": "Des chercheurs d’INRAE et d’AgroParisTech étudient son avenir avec des modèles informatiques.",
+      "zh": "INRAE（法国国家农业、食品与环境研究院）和AgroParisTech（巴黎高科农业学院）的研究人员用计算机模型研究高粱的未来。",
+      "glosses": [
+        {
+          "surface": "chercheurs",
+          "lemma": "chercheur",
+          "zh": "研究人员",
+          "note": "阳性复数。"
+        },
+        {
+          "surface": "avenir",
+          "lemma": "avenir",
+          "zh": "未来",
+          "note": "阳性名词 l’avenir。"
+        },
+        {
+          "surface": "modèles",
+          "lemma": "modèle",
+          "zh": "模型",
+          "note": "这里指计算机模型。"
+        }
+      ]
+    },
+    {
+      "id": "fr-sorgho-et-eau-04",
+      "text": "Ils utilisent des données du passé et plusieurs scénarios pour le climat futur.",
+      "zh": "他们使用过去的数据和未来气候的多种情景。",
+      "glosses": [
+        {
+          "surface": "données",
+          "lemma": "donnée",
+          "zh": "数据",
+          "note": "阴性复数。"
+        },
+        {
+          "surface": "passé",
+          "lemma": "passé",
+          "zh": "过去",
+          "note": "这里作名词。"
+        },
+        {
+          "surface": "scénarios",
+          "lemma": "scénario",
+          "zh": "情景；假设情况",
+          "note": "指研究使用的气候情景，不是确定会发生的事。"
+        }
+      ]
+    },
+    {
+      "id": "fr-sorgho-et-eau-05",
+      "text": "Selon leurs calculs, les rendements pourraient augmenter dans le nord de l’Europe et diminuer un peu dans le sud.",
+      "zh": "根据他们的计算，欧洲北部高粱的单位面积产量可能增加，南部则可能略有下降。",
+      "glosses": [
+        {
+          "surface": "rendements",
+          "lemma": "rendement",
+          "zh": "单位面积产量；单产",
+          "note": "阳性复数；此处指单位种植面积的产量，不是总收获量。"
+        },
+        {
+          "surface": "pourraient",
+          "lemma": "pouvoir",
+          "zh": "可能",
+          "note": "条件式复数，用于模型预测。"
+        },
+        {
+          "surface": "diminuer",
+          "lemma": "diminuer",
+          "zh": "减少",
+          "note": "动词原形，与 augmenter（增加）相对。"
+        }
+      ]
+    },
+    {
+      "id": "fr-sorgho-et-eau-06",
+      "text": "Le sorgho peut servir à nourrir les animaux, à la place du maïs.",
+      "zh": "高粱可以代替玉米，用于喂养动物。",
+      "glosses": [
+        {
+          "surface": "nourrir",
+          "lemma": "nourrir",
+          "zh": "喂养",
+          "note": "动词原形。"
+        },
+        {
+          "surface": "animaux",
+          "lemma": "animal",
+          "zh": "动物",
+          "note": "不规则复数，单数 un animal。"
+        },
+        {
+          "surface": "maïs",
+          "lemma": "maïs",
+          "zh": "玉米",
+          "note": "阳性名词，注意 ï。"
+        }
+      ]
+    },
+    {
+      "id": "fr-sorgho-et-eau-07",
+      "text": "Cette culture pourrait permettre de garder plus d’eau pour d’autres plantes.",
+      "zh": "种植这种作物可能让人们把更多的水留给其他植物。",
+      "glosses": [
+        {
+          "surface": "culture",
+          "lemma": "culture",
+          "zh": "种植；作物",
+          "note": "此处是农业含义，不是文化。"
+        },
+        {
+          "surface": "garder",
+          "lemma": "garder",
+          "zh": "保留",
+          "note": "动词原形。"
+        },
+        {
+          "surface": "autres",
+          "lemma": "autre",
+          "zh": "其他的",
+          "note": "复数形式，修饰 plantes。"
+        }
+      ]
+    },
+    {
+      "id": "fr-sorgho-et-eau-08",
+      "text": "L’étude présente donc une possibilité pour adapter l’agriculture, pas une promesse de bonnes récoltes partout.",
+      "zh": "因此，这项研究提出了一种让农业适应变化的可能办法，并不是保证所有地方都会丰收。",
+      "glosses": [
+        {
+          "surface": "étude",
+          "lemma": "étude",
+          "zh": "研究",
+          "note": "阴性名词。"
+        },
+        {
+          "surface": "adapter",
+          "lemma": "adapter",
+          "zh": "使适应",
+          "note": "动词原形。"
+        },
+        {
+          "surface": "partout",
+          "lemma": "partout",
+          "zh": "到处；各地",
+          "note": "副词。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "céréale",
+        "zh": "谷物",
+        "sentenceId": "fr-sorgho-et-eau-01",
+        "note": "une céréale，阴性名词。"
+      },
+      {
+        "text": "chaleur",
+        "zh": "热；高温",
+        "sentenceId": "fr-sorgho-et-eau-01",
+        "note": "la chaleur。"
+      },
+      {
+        "text": "avenir",
+        "zh": "未来",
+        "sentenceId": "fr-sorgho-et-eau-03",
+        "note": "l’avenir，阳性。"
+      },
+      {
+        "text": "données",
+        "zh": "数据",
+        "sentenceId": "fr-sorgho-et-eau-04",
+        "note": "une donnée 的复数。"
+      },
+      {
+        "text": "nourrir",
+        "zh": "喂养",
+        "sentenceId": "fr-sorgho-et-eau-06",
+        "note": "nourrir les animaux：喂养动物。"
+      },
+      {
+        "text": "culture",
+        "zh": "作物；种植",
+        "sentenceId": "fr-sorgho-et-eau-07",
+        "note": "在农业语境中使用。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "au manque d’eau",
+        "zh": "缺水",
+        "sentenceId": "fr-sorgho-et-eau-01",
+        "note": "résister à + 名词；à + le = au。"
+      },
+      {
+        "text": "Selon leurs calculs",
+        "zh": "根据他们的计算",
+        "sentenceId": "fr-sorgho-et-eau-05",
+        "note": "selon 表示“根据”。"
+      },
+      {
+        "text": "à la place du maïs",
+        "zh": "代替玉米",
+        "sentenceId": "fr-sorgho-et-eau-06",
+        "note": "à la place de；de + le = du。"
+      },
+      {
+        "text": "pour d’autres plantes",
+        "zh": "供其他植物使用",
+        "sentenceId": "fr-sorgho-et-eau-07",
+        "note": "d’autres + 复数名词表示“其他的……”。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-sorgho-et-eau-05",
+        "note": "pourraient + 动词原形表达预测而非保证；dans le nord / dans le sud 对照两个地区。"
+      },
+      {
+        "sentenceId": "fr-sorgho-et-eau-06",
+        "note": "servir à + 动词原形说明用途；à la place de 表示替代。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pourquoi est-il important d’économiser l’eau dans l’agriculture ?",
+        "zh": "为什么在农业中节约用水很重要？"
+      },
+      {
+        "text": "Quelles céréales connais-tu ? Où sont-elles cultivées ?",
+        "zh": "你知道哪些谷物？它们在哪里种植？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Cette plante a besoin de…",
+        "zh": "这种植物需要……。",
+        "note": "可接 moins d’eau（更少的水），用于练习表达植物需求。"
+      },
+      {
+        "text": "Selon cette étude, il est possible de…",
+        "zh": "根据这项研究，有可能……。",
+        "note": "后接动词原形，注意研究结果不等于确定的未来。"
+      }
+    ]
+  }
+}

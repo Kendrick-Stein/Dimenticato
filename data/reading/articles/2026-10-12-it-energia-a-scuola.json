@@ -1,0 +1,335 @@
+{
+  "schema": 1,
+  "id": "2026-10-12-it-energia-a-scuola",
+  "storyId": "ingv-geothermal-schools-2026-09-17",
+  "lang": "it",
+  "date": "2026-10-12",
+  "contentType": "native-adaptation",
+  "category": "education",
+  "topics": [
+    "校园学习",
+    "地热能源",
+    "社区交流"
+  ],
+  "title": "Conoscere l’energia a scuola",
+  "titleZh": "在学校认识能源",
+  "summaryZh": "2026年9月17日的报道回顾伊奥利群岛2025—2026学年的地热教育项目：学生制作模型和介绍资料，并于5月在利帕里展示成果。项目留下的教学资料可供学校继续使用。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1，适合 A2 学习者借助中文辅助阅读：短句包含近过去时、被动态和目的表达，地热相关词另作注释；非认证 CEFR 测评。",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "ISOLE EOLIE | Geotermia, dalle scuole un modello educativo replicabile",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+    "publishedAt": "2026-09-17",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile"
+  },
+  "attribution": "来源：© INGV — Istituto Nazionale di Geofisica e Vulcanologia，Ufficio Stampa，《ISOLE EOLIE | Geotermia, dalle scuole un modello educativo replicabile》，2026-09-17；2026-10-12查阅。按原文页脚 CC BY 4.0 许可使用机构正文；未使用图片、书籍内容、链接材料或第三方引语。",
+  "adaptation": "Dimenticato 根据意大利语机构原文作同语言简化、节选和重组，添加简中逐句翻译、语境注释与原创练习；非逐字转载，不代表来源机构认可或审定。",
+  "sentences": [
+    {
+      "id": "it-energia-a-scuola-01",
+      "text": "Nelle scuole delle Isole Eolie, gli studenti hanno imparato a conoscere la geotermia, cioè il calore della Terra.",
+      "zh": "在伊奥利群岛的学校里，学生学习认识地热，也就是地球内部的热。",
+      "glosses": [
+        {
+          "surface": "scuole",
+          "lemma": "scuola",
+          "zh": "学校",
+          "note": "阴性复数，单数 la scuola。"
+        },
+        {
+          "surface": "calore",
+          "lemma": "calore",
+          "zh": "热；热量",
+          "note": "阳性名词 il calore。"
+        },
+        {
+          "surface": "cioè",
+          "lemma": "cioè",
+          "zh": "也就是",
+          "note": "引出对地热的简要解释。"
+        }
+      ]
+    },
+    {
+      "id": "it-energia-a-scuola-02",
+      "text": "Il percorso dell’INGV ha coinvolto insegnanti e studenti durante l’anno scolastico 2025-2026.",
+      "zh": "INGV（意大利国家地球物理与火山学研究所）的这一学习项目在2025—2026学年让教师和学生共同参与。",
+      "glosses": [
+        {
+          "surface": "percorso",
+          "lemma": "percorso",
+          "zh": "学习项目；学习过程",
+          "note": "这里不是道路。"
+        },
+        {
+          "surface": "ha coinvolto",
+          "lemma": "coinvolgere",
+          "zh": "让……参与了",
+          "note": "近过去时，过去分词 coinvolto。"
+        },
+        {
+          "surface": "insegnanti",
+          "lemma": "insegnante",
+          "zh": "教师",
+          "note": "复数形式，单数 l’insegnante。"
+        }
+      ]
+    },
+    {
+      "id": "it-energia-a-scuola-03",
+      "text": "Prima sono stati formati gli insegnanti; poi sono iniziate le attività nelle classi.",
+      "zh": "教师先接受了培训；随后班级里的活动开始了。",
+      "glosses": [
+        {
+          "surface": "Prima",
+          "lemma": "prima",
+          "zh": "首先",
+          "note": "与 poi 搭配，表示先后顺序。"
+        },
+        {
+          "surface": "formati",
+          "lemma": "formare",
+          "zh": "接受培训的",
+          "note": "sono stati formati 为过去时被动结构。"
+        },
+        {
+          "surface": "classi",
+          "lemma": "classe",
+          "zh": "班级",
+          "note": "阴性复数，单数 la classe。"
+        }
+      ]
+    },
+    {
+      "id": "it-energia-a-scuola-04",
+      "text": "I ragazzi hanno creato guide virtuali, opuscoli e piccoli modelli per spiegare questa energia.",
+      "zh": "学生们制作了虚拟导览、宣传册和小模型，用来介绍这种能源。",
+      "glosses": [
+        {
+          "surface": "guide",
+          "lemma": "guida",
+          "zh": "导览",
+          "note": "阴性复数；这里是介绍地方资源的导览。"
+        },
+        {
+          "surface": "opuscoli",
+          "lemma": "opuscolo",
+          "zh": "小册子",
+          "note": "阳性复数。"
+        },
+        {
+          "surface": "modelli",
+          "lemma": "modello",
+          "zh": "模型",
+          "note": "阳性复数；这里是实物模型。"
+        }
+      ]
+    },
+    {
+      "id": "it-energia-a-scuola-05",
+      "text": "Alcuni opuscoli erano anche in inglese, per informare cittadini e turisti.",
+      "zh": "部分小册子也有英语内容，用于向居民和游客介绍情况。",
+      "glosses": [
+        {
+          "surface": "erano",
+          "lemma": "essere",
+          "zh": "曾是；当时有",
+          "note": "未完成过去时，描述材料的情况。"
+        },
+        {
+          "surface": "cittadini",
+          "lemma": "cittadino",
+          "zh": "居民；市民",
+          "note": "阳性复数。"
+        },
+        {
+          "surface": "turisti",
+          "lemma": "turista",
+          "zh": "游客",
+          "note": "复数；单数 il turista 或 la turista。"
+        }
+      ]
+    },
+    {
+      "id": "it-energia-a-scuola-06",
+      "text": "Nel maggio 2026, gli studenti hanno presentato i loro lavori a Lipari.",
+      "zh": "2026年5月，学生们在利帕里展示了自己的作品。",
+      "glosses": [
+        {
+          "surface": "maggio",
+          "lemma": "maggio",
+          "zh": "五月",
+          "note": "月份名。"
+        },
+        {
+          "surface": "presentato",
+          "lemma": "presentare",
+          "zh": "展示了",
+          "note": "与 hanno 组成近过去时。"
+        },
+        {
+          "surface": "lavori",
+          "lemma": "lavoro",
+          "zh": "作品；成果",
+          "note": "这里不是职业或工作岗位。"
+        }
+      ]
+    },
+    {
+      "id": "it-energia-a-scuola-07",
+      "text": "Il progetto ha lasciato alle scuole materiali per continuare a studiare il territorio.",
+      "zh": "这个项目为学校留下了材料，供大家继续学习和了解本地环境。",
+      "glosses": [
+        {
+          "surface": "materiali",
+          "lemma": "materiale",
+          "zh": "材料",
+          "note": "阳性复数，指教学资料。"
+        },
+        {
+          "surface": "continuare",
+          "lemma": "continuare",
+          "zh": "继续",
+          "note": "continuare a + 动词原形。"
+        },
+        {
+          "surface": "territorio",
+          "lemma": "territorio",
+          "zh": "本地环境；地区",
+          "note": "这里指所在地区及其自然特点。"
+        }
+      ]
+    },
+    {
+      "id": "it-energia-a-scuola-08",
+      "text": "Questo modo di imparare può essere usato anche in altre zone con risorse geotermiche.",
+      "zh": "这种学习方式也可以用于其他拥有地热资源的地区。",
+      "glosses": [
+        {
+          "surface": "modo",
+          "lemma": "modo",
+          "zh": "方式",
+          "note": "il modo di + 动词原形。"
+        },
+        {
+          "surface": "usato",
+          "lemma": "usare",
+          "zh": "使用的",
+          "note": "può essere usato：可以被使用。"
+        },
+        {
+          "surface": "risorse",
+          "lemma": "risorsa",
+          "zh": "资源",
+          "note": "阴性复数。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "calore",
+        "zh": "热；热量",
+        "sentenceId": "it-energia-a-scuola-01",
+        "note": "il calore，阳性名词。"
+      },
+      {
+        "text": "insegnanti",
+        "zh": "教师",
+        "sentenceId": "it-energia-a-scuola-02",
+        "note": "单数 insegnante，复数 insegnanti。"
+      },
+      {
+        "text": "opuscoli",
+        "zh": "小册子",
+        "sentenceId": "it-energia-a-scuola-04",
+        "note": "单数 l’opuscolo。"
+      },
+      {
+        "text": "turisti",
+        "zh": "游客",
+        "sentenceId": "it-energia-a-scuola-05",
+        "note": "这里是复数。"
+      },
+      {
+        "text": "lavori",
+        "zh": "作品；成果",
+        "sentenceId": "it-energia-a-scuola-06",
+        "note": "依上下文理解，不机械译为“工作”。"
+      },
+      {
+        "text": "territorio",
+        "zh": "地区；本地环境",
+        "sentenceId": "it-energia-a-scuola-07",
+        "note": "指学校周边地区的自然特点。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "hanno imparato a conoscere",
+        "zh": "学习认识了",
+        "sentenceId": "it-energia-a-scuola-01",
+        "note": "imparare a + 动词原形。"
+      },
+      {
+        "text": "per spiegare",
+        "zh": "为了介绍",
+        "sentenceId": "it-energia-a-scuola-04",
+        "note": "per + 动词原形表示目的。"
+      },
+      {
+        "text": "hanno presentato i loro lavori",
+        "zh": "展示了他们的作品",
+        "sentenceId": "it-energia-a-scuola-06",
+        "note": "可用于描述课堂展示。"
+      },
+      {
+        "text": "continuare a studiare",
+        "zh": "继续学习",
+        "sentenceId": "it-energia-a-scuola-07",
+        "note": "continuare a + 动词原形。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-energia-a-scuola-03",
+        "note": "Prima… poi… 说明活动先后；sono stati formati 是被动结构，sono iniziate 是不及物动词的近过去时。"
+      },
+      {
+        "sentenceId": "it-energia-a-scuola-08",
+        "note": "può essere usato 表示“可以被使用”，说明可复制的教育方法，并不宣称其他地区已采用。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "A scuola, preferisci leggere o costruire un modello? Perché?",
+        "zh": "在学校，你更喜欢阅读还是制作模型？为什么？"
+      },
+      {
+        "text": "Come puoi spiegare un tema scientifico ai turisti?",
+        "zh": "你可以怎样向游客介绍一个科学话题？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Preferisco imparare con…",
+        "zh": "我更喜欢通过……学习。",
+        "note": "可接 esperimenti（实验）或 immagini（图片）。"
+      },
+      {
+        "text": "Per spiegare questo tema, possiamo…",
+        "zh": "为了介绍这个话题，我们可以……。",
+        "note": "后接动词原形，如 creare una guida（制作一份导览）。"
+      }
+    ]
+  }
+}

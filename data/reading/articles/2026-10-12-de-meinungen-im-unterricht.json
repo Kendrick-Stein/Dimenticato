@@ -1,0 +1,370 @@
+{
+  "schema": 1,
+  "id": "2026-10-12-de-meinungen-im-unterricht",
+  "storyId": "de-2026-09-22-teacher-neutrality",
+  "lang": "de",
+  "date": "2026-10-12",
+  "contentType": "native-adaptation",
+  "category": "education",
+  "topics": [
+    "课堂讨论",
+    "独立思考",
+    "意见表达"
+  ],
+  "title": "Über Meinungen im Unterricht sprechen",
+  "titleZh": "在课堂上讨论不同意见",
+  "summaryZh": "在德国学校的教学语境中，教师可以表达自己的观点，但不能把观点强加给学生。德国联邦政治教育中心的一篇文章讨论了课堂上的意见表达、争议与独立思考。原文发表于2026年9月22日；本篇为德语同语言教学改写。",
+  "level": "A2",
+  "levelReason": "编辑估计为有中文支持的 A2 阅读：短主句、情态动词与简单条件从句为主。Neutralität、Lehrkräfte、aufdrängen 等主题词超出基础词汇，提供中文释义及词形说明。此为辅助阅读分级，不是经认证的 CEFR 测评。",
+  "source": {
+    "name": "Bundeszentrale für politische Bildung — Werkstatt",
+    "title": "Was heißt neutral?",
+    "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
+    "publishedAt": "2026-09-22",
+    "lang": "de",
+    "author": "Bundeszentrale für politische Bildung, Werkstatt（标注 Werkstatt recherchiert，无个人署名）"
+  },
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+    "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/"
+  },
+  "attribution": "依据 Bundeszentrale für politische Bildung（bpb）Werkstatt 的《Was heißt neutral?》（2026年9月22日）改写，原文及许可链接见来源信息。原文许可为 CC BY-SA 4.0；本篇德语改写、中文翻译及配套教学文字同样以 CC BY-SA 4.0 发布。Dimenticato 作删节、简化、重组及翻译；不表示 bpb 认可本材料。",
+  "adaptation": "选取德语机构文章中有关课堂意见表达与独立思考的教育原则，作同语言简化并配中文译文。排除第三方直接引语、图片、图注、链接全文及具体法律争议；本篇不是完整法律说明。原语来源判断基于栏目及机构出处，不是对作者母语或最初起草语言的认证。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Was bedeutet Neutralität in der Schule?",
+      "zh": "学校里的中立意味着什么？",
+      "glosses": [
+        {
+          "surface": "bedeutet",
+          "lemma": "bedeuten",
+          "zh": "意味着"
+        },
+        {
+          "surface": "Neutralität",
+          "lemma": "die Neutralität",
+          "zh": "中立"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Ein Artikel der Bundeszentrale für politische Bildung erklärt wichtige Regeln für den Unterricht.",
+      "zh": "德国联邦政治教育中心的一篇文章解释了课堂教学中的重要规则。",
+      "glosses": [
+        {
+          "surface": "Artikel",
+          "lemma": "der Artikel",
+          "zh": "文章"
+        },
+        {
+          "surface": "Bundeszentrale für politische Bildung",
+          "lemma": "die Bundeszentrale für politische Bildung",
+          "zh": "德国联邦政治教育中心",
+          "note": "机构名称，简称 bpb"
+        },
+        {
+          "surface": "Regeln",
+          "lemma": "die Regel",
+          "zh": "规则",
+          "note": "复数"
+        },
+        {
+          "surface": "Unterricht",
+          "lemma": "der Unterricht",
+          "zh": "课堂教学"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Lehrerinnen und Lehrer dürfen ihre eigene Meinung sagen.",
+      "zh": "教师可以表达自己的意见。",
+      "glosses": [
+        {
+          "surface": "dürfen",
+          "lemma": "dürfen",
+          "zh": "可以；获准",
+          "note": "情态动词，句末接原形 sagen"
+        },
+        {
+          "surface": "eigene",
+          "lemma": "eigen",
+          "zh": "自己的"
+        },
+        {
+          "surface": "Meinung",
+          "lemma": "die Meinung",
+          "zh": "意见；观点"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Dabei muss klar sein: Das ist ihre persönliche Meinung.",
+      "zh": "同时必须明确：这是他们个人的意见。",
+      "glosses": [
+        {
+          "surface": "Dabei",
+          "lemma": "dabei",
+          "zh": "在这样做时；同时"
+        },
+        {
+          "surface": "klar",
+          "lemma": "klar",
+          "zh": "明确的"
+        },
+        {
+          "surface": "persönliche",
+          "lemma": "persönlich",
+          "zh": "个人的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Sie dürfen den Schülerinnen und Schülern ihre Meinung nicht aufdrängen.",
+      "zh": "他们不能把自己的意见强加给学生。",
+      "glosses": [
+        {
+          "surface": "Schülerinnen",
+          "lemma": "die Schülerin",
+          "zh": "女学生",
+          "note": "复数第三格；与 Schülern 并列泛指学生"
+        },
+        {
+          "surface": "Schülern",
+          "lemma": "der Schüler",
+          "zh": "学生；男学生",
+          "note": "复数第三格，多了词尾 -n"
+        },
+        {
+          "surface": "aufdrängen",
+          "lemma": "aufdrängen",
+          "zh": "强加",
+          "note": "jemandem etwas aufdrängen：把某事强加给某人"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Auch in einem Klassenchat gelten diese Regeln.",
+      "zh": "这些规则在班级群聊中也适用。",
+      "glosses": [
+        {
+          "surface": "Klassenchat",
+          "lemma": "der Klassenchat",
+          "zh": "班级群聊"
+        },
+        {
+          "surface": "gelten",
+          "lemma": "gelten",
+          "zh": "适用；有效"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Wenn ein Thema in Politik oder Wissenschaft umstritten ist, sollen auch im Unterricht verschiedene Positionen dazu vorkommen.",
+      "zh": "如果一个话题在政治或科学领域存在争议，课堂上也应呈现关于它的不同立场。",
+      "glosses": [
+        {
+          "surface": "Wissenschaft",
+          "lemma": "die Wissenschaft",
+          "zh": "科学；学术"
+        },
+        {
+          "surface": "verschiedene",
+          "lemma": "verschieden",
+          "zh": "不同的"
+        },
+        {
+          "surface": "Positionen",
+          "lemma": "die Position",
+          "zh": "立场",
+          "note": "复数"
+        },
+        {
+          "surface": "umstritten",
+          "lemma": "umstritten",
+          "zh": "有争议的"
+        },
+        {
+          "surface": "vorkommen",
+          "lemma": "vorkommen",
+          "zh": "出现；被呈现"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Die Lernenden sollen eine eigene politische Meinung entwickeln.",
+      "zh": "学习者应当形成自己的政治观点。",
+      "glosses": [
+        {
+          "surface": "Lernenden",
+          "lemma": "der/die Lernende",
+          "zh": "学习者",
+          "note": "名词化分词，复数形式 die Lernenden"
+        },
+        {
+          "surface": "sollen",
+          "lemma": "sollen",
+          "zh": "应当",
+          "note": "这里表达教育目标"
+        },
+        {
+          "surface": "entwickeln",
+          "lemma": "entwickeln",
+          "zh": "形成；发展"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Sie sollen ihre Interessen selbstständig vertreten können.",
+      "zh": "他们应当能够独立表达并维护自己的利益诉求。",
+      "glosses": [
+        {
+          "surface": "Interessen",
+          "lemma": "das Interesse",
+          "zh": "利益；诉求",
+          "note": "此处不是兴趣爱好"
+        },
+        {
+          "surface": "selbstständig",
+          "lemma": "selbstständig",
+          "zh": "独立地"
+        },
+        {
+          "surface": "vertreten",
+          "lemma": "vertreten",
+          "zh": "表达并维护",
+          "note": "Interessen vertreten：维护利益、表达诉求"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Lehrkräfte dürfen sich auch gegen menschenfeindliche Positionen aussprechen.",
+      "zh": "教师也可以表态反对仇视他人的立场。",
+      "glosses": [
+        {
+          "surface": "Lehrkräfte",
+          "lemma": "die Lehrkraft",
+          "zh": "教师",
+          "note": "复数，不限定性别的职业称谓"
+        },
+        {
+          "surface": "menschenfeindliche",
+          "lemma": "menschenfeindlich",
+          "zh": "仇视他人的"
+        },
+        {
+          "surface": "aussprechen",
+          "lemma": "sich aussprechen",
+          "zh": "表态",
+          "note": "sich gegen etwas aussprechen：表态反对某事"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Meinung",
+        "zh": "意见；观点",
+        "sentenceId": "s3",
+        "lemma": "die Meinung"
+      },
+      {
+        "text": "Unterricht",
+        "zh": "课堂教学",
+        "sentenceId": "s2",
+        "lemma": "der Unterricht"
+      },
+      {
+        "text": "gelten",
+        "zh": "适用；有效",
+        "sentenceId": "s6",
+        "lemma": "gelten"
+      },
+      {
+        "text": "verschiedene",
+        "zh": "不同的",
+        "sentenceId": "s7",
+        "lemma": "verschieden"
+      },
+      {
+        "text": "entwickeln",
+        "zh": "形成；发展",
+        "sentenceId": "s8",
+        "lemma": "entwickeln"
+      },
+      {
+        "text": "selbstständig",
+        "zh": "独立地",
+        "sentenceId": "s9",
+        "lemma": "selbstständig"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "ihre eigene Meinung sagen",
+        "zh": "表达他们自己的意见",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "in einem Klassenchat",
+        "zh": "在一个班级群聊中",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "eine eigene politische Meinung entwickeln",
+        "zh": "形成自己的政治观点",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "ihre Interessen selbstständig vertreten",
+        "zh": "独立表达并维护他们的利益诉求",
+        "sentenceId": "s9"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "dürfen ... nicht 表示“不允许”；aufdrängen 放在句末。den Schülerinnen und Schülern 是第三格，表示被强加意见的对象。"
+      },
+      {
+        "sentenceId": "s7",
+        "note": "Wenn 从句的动词 ist 在从句末尾；从句放前面时，后面的主句以情态动词 sollen 开头，原形 vorkommen 放在句末。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Wie kann eine Lehrkraft ihre Meinung sagen, ohne sie anderen aufzudrängen?",
+        "zh": "教师怎样表达自己的意见，又不把意见强加给别人？"
+      },
+      {
+        "text": "Warum sind verschiedene Positionen im Unterricht wichtig?",
+        "zh": "为什么在课堂上呈现不同立场很重要？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Meiner Meinung nach ist das wichtig.",
+        "zh": "在我看来，这很重要。",
+        "note": "Meiner Meinung nach + 动词：表明这是个人观点。"
+      },
+      {
+        "text": "Ich sehe das anders.",
+        "zh": "我对此有不同看法。",
+        "note": "在讨论课堂上的不同意见时，简洁表达分歧。"
+      }
+    ]
+  }
+}
