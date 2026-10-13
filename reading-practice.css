@@ -1,0 +1,11 @@
+
+/* Reading-to-practice: one calm card per question, shared across four languages. */
+.reading-practice { margin-top: 2rem; border-top: 1px solid var(--border, #ddd); padding-top: 1.5rem; }
+.reading-practice-card { margin: 1rem 0; padding: 1rem; border: 1px solid var(--border, #ddd); border-radius: 14px; overflow-wrap: anywhere; }
+.reading-practice-choices { display: flex; flex-wrap: wrap; gap: .5rem; }
+.reading-practice-card form { display: flex; flex-wrap: wrap; gap: .5rem; }
+.reading-practice-card input, .reading-word-game input { min-width: 0; max-width: 100%; padding: .7rem; font: inherit; }
+.reading-practice-feedback { border-left: 3px solid #568064; padding-left: .8rem; margin-top: 1rem; }
+.reading-practice-feedback p { margin: .45rem 0; }
+.reading-word-game { margin-top: 1rem; overflow: hidden; }
+.reading-word-game canvas { display: block; border-radius: 14px; }

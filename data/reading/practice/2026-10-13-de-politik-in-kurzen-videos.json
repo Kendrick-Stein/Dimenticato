@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-de-politik-in-kurzen-videos",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 37,
+      "answer": "erreichen",
+      "options": [
+        "erreichen",
+        "erreicht",
+        "erreichte",
+        "erzählen"
+      ],
+      "explanation": "möchten 后接动词原形 erreichen；不是第三人称单数 erreicht。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 7,
+      "answer": "Parteien",
+      "options": [
+        "Partei",
+        "Partner",
+        "Pläne",
+        "Parteien"
+      ],
+      "explanation": "einige 后用复数 Parteien；德语名词首字母大写，单数是 die Partei。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 23,
+      "answer": "Nähe",
+      "options": [
+        "Namen",
+        "Nüsse",
+        "Nähe",
+        "Nacht"
+      ],
+      "explanation": "von Nähe 中 Nähe 是阴性名词，意为亲近感，保留 ä 和大写 N。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 63,
+      "answer": "Meinung",
+      "options": [
+        "Mischung",
+        "Meinung",
+        "Meinungen",
+        "Meldung"
+      ],
+      "explanation": "eine Meinung 是阴性单数第四格，表示一种观点；不是复数 Meinungen。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s8",
+      "start": 59,
+      "answer": "vergleichen",
+      "options": [
+        "vergleichen",
+        "verglichen",
+        "vergleicht",
+        "vergessen"
+      ],
+      "explanation": "情态动词 können 后用原形 vergleichen，放在句末。"
+    }
+  ]
+}

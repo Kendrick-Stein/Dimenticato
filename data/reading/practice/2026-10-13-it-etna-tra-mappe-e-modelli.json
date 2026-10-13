@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-it-etna-tra-mappe-e-modelli",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-etna-modelli-01",
+      "start": 43,
+      "answer": "cima",
+      "options": [
+        "cima",
+        "cime",
+        "clima",
+        "cena"
+      ],
+      "explanation": "cima 在本句中意为“顶部；山顶”。la cima，阴性名词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-etna-modelli-03",
+      "start": 63,
+      "answer": "mappe",
+      "options": [
+        "mappa",
+        "mani",
+        "madri",
+        "mappe"
+      ],
+      "explanation": "mappe 在本句中意为“地图”。单数 la mappa。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-etna-modelli-04",
+      "start": 84,
+      "answer": "droni",
+      "options": [
+        "doni",
+        "denti",
+        "droni",
+        "drone"
+      ],
+      "explanation": "droni 在本句中意为“无人机”。单数 il drone。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-etna-modelli-05",
+      "start": 49,
+      "answer": "cratere",
+      "options": [
+        "cortile",
+        "cratere",
+        "crateri",
+        "carattere"
+      ],
+      "explanation": "cratere 在本句中意为“火山口”。il cratere，阳性名词。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-etna-modelli-08",
+      "start": 2,
+      "answer": "modelli",
+      "options": [
+        "modelli",
+        "modello",
+        "motori",
+        "momenti"
+      ],
+      "explanation": "modelli 在本句中意为“模型”。单数 il modello。"
+    }
+  ]
+}
