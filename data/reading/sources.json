@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checkedAt": "2026-10-10",
+  "checkedAt": "2026-10-13",
   "policy": "Candidate list only, not blanket republication permission. Independently select a different original-language institutional source/article for IT, FR, DE and EN. Confirm article ownership, adaptation/translation/publication rights, exclusions, attribution, source language provenance and date for every edition. Never fill language slots by translating a common article. If evidence or rights are insufficient, skip that language/day. Text only; no images/logos/third-party quotations without separate clearance; never bypass access restrictions.",
   "sources": [
     {
@@ -208,6 +208,82 @@
       "licenseEvidence": "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
       "conditions": "Mixed licenses. Never inherit a license from the domain, section, image, or linked publication. Verify the end-of-article text license for every candidate. Accept only an explicit license allowing public adaptations. CC BY-SA 4.0 adaptations must retain attribution, source and license links, identify changes, and be released under CC BY-SA 4.0 (or an explicitly compatible license); do not relabel as CC BY. Exclude ND, separately credited third-party text and all images/media unless separately cleared.",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+    },
+    {
+      "id": "istat-italian-society",
+      "name": "Istat — Italian society and everyday life",
+      "url": "https://www.istat.it/",
+      "languages": [
+        "it"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.istat.it/comunicato-stampa/"
+      ],
+      "rightsPolicyUrl": "https://www.istat.it/note-legali/",
+      "licenseEvidence": "https://www.istat.it/note-legali/",
+      "license": "CC BY 4.0 unless otherwise indicated",
+      "articleReviewRequired": true,
+      "conditions": "Legal notice explicitly permits modification and redistribution, with attribution, licence link and change notice. Recheck each text for exceptions. No logos, third-party material or images. Preserve reference years separately from publication dates.",
+      "nativeLanguageCaution": "Official Italian statistical releases and their named institutional publisher support Italian-original provenance; exclude English locales and external republications.",
+      "checkedAt": "2026-10-13",
+      "reviewScope": "Registry policy inspected; no article is cleared by registration."
+    },
+    {
+      "id": "culture-gouv-french-news",
+      "name": "Ministère de la Culture — Actualités",
+      "url": "https://www.culture.gouv.fr/actualites",
+      "languages": [
+        "fr"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.culture.gouv.fr/actualites/"
+      ],
+      "rightsPolicyUrl": "https://www.culture.gouv.fr/mentions-legales",
+      "licenseEvidence": "https://www.culture.gouv.fr/mentions-legales",
+      "license": "CC BY-SA 3.0 FR for ministry-produced text; partner content has separate terms",
+      "articleReviewRequired": true,
+      "conditions": "Legal notice 4.3.1(a) covers ministry-produced text, not all partner material (4.3.2). Retain attribution and modifications, satisfy ShareAlike with a compatible licence. Exclude images, logos, multimedia, third-party quotations and literary excerpts unless separately cleared. Do not mislabel prose as Etalab open data.",
+      "nativeLanguageCaution": "Legal notice names the ministry editorial team and automatic translation service; use French original editorial pages, never translated locales. Check article byline and partner credits.",
+      "checkedAt": "2026-10-13",
+      "reviewScope": "Registry policy inspected; no article is cleared by registration."
+    },
+    {
+      "id": "bpb-german-society",
+      "name": "bpb — Gesellschaft und Zusammenleben",
+      "url": "https://www.bpb.de/themen/gesellschaft/",
+      "languages": [
+        "de"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.bpb.de/themen/gesellschaft/"
+      ],
+      "rightsPolicyUrl": "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+      "licenseEvidence": "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+      "license": "Mixed; article-specific licence required",
+      "articleReviewRequired": true,
+      "conditions": "No domain-wide reuse grant. Only accept explicit article text licences permitting adaptation and public redistribution; reject ND or unclear rights. CC BY-SA derivatives must preserve ShareAlike. Exclude images/media and separately credited works. A new section of an existing institution, not a new publisher.",
+      "nativeLanguageCaution": "Official German editorial society section covers city/country, inclusion and young people. Verify every byline and translation/republication marker; German text alone does not prove origin.",
+      "checkedAt": "2026-10-13",
+      "reviewScope": "Registry policy inspected; no article is cleared by registration."
+    },
+    {
+      "id": "ons-english-society",
+      "name": "Office for National Statistics — People, population and community",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity",
+      "languages": [
+        "en"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.ons.gov.uk/peoplepopulationandcommunity/"
+      ],
+      "rightsPolicyUrl": "https://www.ons.gov.uk/help/terms-conditions",
+      "licenseEvidence": "https://www.ons.gov.uk/help/terms-conditions",
+      "license": "Open Government Licence v3.0 except stated exclusions",
+      "articleReviewRequired": true,
+      "conditions": "Terms Using ONS content cover most institutional text under OGL; copyright exemptions exclude third-party media. Recheck each article, credit ONS and OGL, disclose adaptation and preserve data periods, uncertainty and limitations. Exclude images/logos/third-party quotes; do not infer causality from survey statistics.",
+      "nativeLanguageCaution": "Official UK English statistical commentary; verify named ONS publisher and original English release, excluding Welsh translations and externally supplied prose.",
+      "checkedAt": "2026-10-13",
+      "reviewScope": "Registry policy inspected; no article is cleared by registration."
     }
   ],
   "archiveOnly": {
