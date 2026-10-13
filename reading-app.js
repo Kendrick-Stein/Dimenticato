@@ -116,6 +116,7 @@
     section.appendChild(quotes); return section;
   }
   function renderArticle(host, a, l) {
+    if (global.ReadingPracticeApp) global.ReadingPracticeApp.stop();
     active = a; host.replaceChildren();
     var back = el('a', '← 返回阅读目录', 'back-link'); back.href = global.DimRouter.href(l, 'readingScreen'); host.appendChild(back);
     host.appendChild(el('p', a.level + ' · 编辑估计，非认证等级 · 原文 ' + a.source.publishedAt + ' · 整理 ' + a.date, 'kicker'));
@@ -152,6 +153,8 @@
     body.addEventListener('mouseup', selected); body.addEventListener('keyup', selected); body.addEventListener('touchend', function () { setTimeout(selected, 0); }); host.appendChild(body);
     var box = el('aside', undefined, 'reading-lookup'); box.id = 'readingLookup'; box.hidden = true; box.setAttribute('aria-live', 'polite'); host.appendChild(box);
     host.appendChild(renderLearningSummary(a));
+    var practiceRequest = request, practice = el('section', undefined, 'reading-practice'); host.appendChild(practice);
+    if (global.ReadingPracticeApp) fetchJSON('data/reading/practice/' + a.id + '.json').then(function (data) { if (request === practiceRequest && active === a && host.contains(practice) && global.Shell.current() === 'readingArticleScreen') global.ReadingPracticeApp.mount(practice, a, data); }).catch(function () { /* Optional companion; old articles keep their original reading experience. */ });
     var speaking = renderSpeaking(a); if (speaking) host.appendChild(speaking);
     var source = el('section', undefined, 'reading-source'); source.appendChild(el('h2','来源与改编说明')); source.appendChild(link(a.source.name + '：' + a.source.title, a.source.url));
     source.appendChild(el('p','原文发布日期：' + a.source.publishedAt + ' · 本站整理：' + a.date)); source.appendChild(el('p',a.attribution)); source.appendChild(link(a.license.name, a.license.url)); source.appendChild(el('p',a.adaptation)); source.appendChild(el('p','等级依据：' + a.levelReason)); host.appendChild(source); focusHeading(host);

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-en-robots-at-work",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 54,
+      "answer": "Adoption",
+      "options": [
+        "Adoption",
+        "Adaptation",
+        "Addition",
+        "Adoptions"
+      ],
+      "explanation": "Adoption 在中心名称 Robotics Adoption Hubs 中表示技术应用，保留名称中的大写 A。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 16,
+      "answer": "advice",
+      "options": [
+        "advices",
+        "advise",
+        "device",
+        "advice"
+      ],
+      "explanation": "advice 是不可数名词，不加 -s；advise 是动词“建议”。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 62,
+      "answer": "harvests",
+      "options": [
+        "habitats",
+        "horizons",
+        "harvests",
+        "harvest"
+      ],
+      "explanation": "harvests 为复数名词，这里指采收工作；保持本文原句的复数。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 32,
+      "answer": "recycling",
+      "options": [
+        "recreation",
+        "recycling",
+        "recycle",
+        "recycled"
+      ],
+      "explanation": "recycling 在 waste and recycling sites 中表示回收利用；recycle 是动词原形。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s8",
+      "start": 60,
+      "answer": "landfill",
+      "options": [
+        "landfill",
+        "landslide",
+        "landscape",
+        "landmark"
+      ],
+      "explanation": "send waste to landfill 是把垃圾送去填埋；landfill 在这里不加冠词。"
+    }
+  ]
+}

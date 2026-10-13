@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-fr-une-regle-pour-les-rivieres",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-regle-rivieres-01",
+      "start": 4,
+      "answer": "équipe",
+      "options": [
+        "équipe",
+        "équipes",
+        "époque",
+        "école"
+      ],
+      "explanation": "équipe 在本句中意为“团队”。une équipe，阴性名词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-regle-rivieres-02",
+      "start": 19,
+      "answer": "outil",
+      "options": [
+        "outils",
+        "utile",
+        "usine",
+        "outil"
+      ],
+      "explanation": "outil 在本句中意为“工具”。un outil，阳性名词。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-regle-rivieres-07",
+      "start": 12,
+      "answer": "léger",
+      "options": [
+        "légers",
+        "légère",
+        "léger",
+        "légères"
+      ],
+      "explanation": "léger 意为“轻便的”。形容词为阳性单数，与 L’outil 一致；注意 é。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-regle-rivieres-03",
+      "start": 25,
+      "answer": "règle",
+      "options": [
+        "reine",
+        "règle",
+        "règles",
+        "région"
+      ],
+      "explanation": "règle 在本句中意为“尺”。本篇语境是测量工具。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-regle-rivieres-05",
+      "start": 92,
+      "answer": "courant",
+      "options": [
+        "courant",
+        "courants",
+        "courage",
+        "coussin"
+      ],
+      "explanation": "courant 在本句中意为“水流”。le courant，阳性名词。"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed companion exercises for an immutable reading article",
+  "type": "object",
+  "required": ["schema", "articleId", "lang", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": 1},
+    "articleId": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "lang": {"enum": ["it", "fr", "de", "en"]},
+    "questions": {"type": "array", "minItems": 5, "maxItems": 5, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "sentenceId", "start", "answer", "options", "explanation"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "sentenceId": {"type": "string", "minLength": 1},
+        "start": {"type": "integer", "minimum": 0},
+        "answer": {"type": "string", "minLength": 1},
+        "options": {"type": "array", "minItems": 4, "maxItems": 4, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "explanation": {"type": "string", "minLength": 1}
+      }
+    }}
+  }
+}
