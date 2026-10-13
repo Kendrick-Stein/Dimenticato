@@ -3155,7 +3155,7 @@ h1.page {
 .reading-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; margin-top: 1.25rem; }
 .reading-card { display: flex; flex-direction: column; min-width: 0; padding: 1.35rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
 .reading-card h3 { font-family: var(--serif); font-size: 1.45rem; line-height: 1.4; margin: .9rem 0 .5rem; }
-.reading-card h3 a { color: inherit; text-decoration: none; }
+.reading-card h3 a { display: block; color: inherit; text-decoration: none; }
 .reading-card h3 a:hover { text-decoration: underline; text-underline-offset: .2em; }
 .reading-card h3 a:focus-visible, .reading-search input:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
 .reading-card-level { font-size: .78rem; font-weight: 600; margin: 0; color: var(--muted); }
