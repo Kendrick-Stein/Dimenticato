@@ -1,0 +1,329 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-de-politik-in-kurzen-videos",
+  "storyId": "de-2026-09-21-tiktok-political-communication",
+  "lang": "de",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "社交媒体",
+    "短视频",
+    "媒介素养"
+  ],
+  "title": "Politik in kurzen Videos",
+  "titleZh": "短视频里的政治",
+  "summaryZh": "政治人物怎样通过短视频接近观众？这篇文章用简单德语介绍视频的来源、表达方式，以及比较不同新闻来源的重要性。原文发表于2026年9月21日，本篇为德语同语言教学改写。",
+  "level": "A2",
+  "levelReason": "编辑估计为 A2（辅助阅读）：以现在时、短主句和 können / möchten 等情态动词为主；Nähe、Nachrichtenquellen 等抽象词提供中文注释。政治传播主题的概念难度高于日常会话，需要借助注释；并非经认证的 CEFR 测评。",
+  "source": {
+    "name": "Bundeszentrale für politische Bildung — Werkstatt",
+    "title": "Politik For You – Politische Kommunikation auf TikTok analysieren",
+    "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
+    "publishedAt": "2026-09-21",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+    "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/"
+  },
+  "attribution": "Nach Leonie Meyer für bpb.de, „Politik For You – Politische Kommunikation auf TikTok analysieren“, veröffentlicht am 21. September 2026. Quelle und Lizenz sind oben verlinkt. Dimenticato hat den deutschen Text gekürzt und vereinfacht, ins Chinesische übersetzt und Lernhinweise ergänzt. Diese Bearbeitung einschließlich Übersetzung und Lernmaterial steht unter CC BY-SA 4.0. Eine Unterstützung durch die Autorin oder die bpb wird nicht behauptet.",
+  "adaptation": "只改编 Leonie Meyer 为 bpb.de 撰写的德语机构文章；保留媒体分析的中立视角，未重用政党个案、比例、第三方直接引语、参考资料全文、截图、插图、视频或标识。德语改写、中文翻译及新增学习材料均以 CC BY-SA 4.0 发布。原语来源依据作者署名、Werkstatt 编辑经历与文章语境判断，不是作者母语或最初起草语言的认证。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Viele Politikerinnen und Politiker nutzen TikTok.",
+      "zh": "许多女性和男性政治人物使用 TikTok。",
+      "glosses": [
+        {
+          "surface": "Politikerinnen",
+          "lemma": "die Politikerin",
+          "zh": "女性政治人物",
+          "note": "复数"
+        },
+        {
+          "surface": "Politiker",
+          "lemma": "der Politiker",
+          "zh": "男性政治人物",
+          "note": "此处为复数"
+        },
+        {
+          "surface": "nutzen",
+          "lemma": "nutzen",
+          "zh": "使用"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Sie möchten dort auch junge Menschen erreichen.",
+      "zh": "他们也想在那里接触到年轻人。",
+      "glosses": [
+        {
+          "surface": "möchten",
+          "lemma": "möchten",
+          "zh": "想要",
+          "note": "后接动词原形"
+        },
+        {
+          "surface": "erreichen",
+          "lemma": "erreichen",
+          "zh": "接触到；触达",
+          "note": "这里指把信息传达给某类人群"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Einige Parteien machen eigene Videos für TikTok.",
+      "zh": "一些政党为 TikTok 制作自己的视频。",
+      "glosses": [
+        {
+          "surface": "Parteien",
+          "lemma": "die Partei",
+          "zh": "政党",
+          "note": "复数"
+        },
+        {
+          "surface": "eigene",
+          "lemma": "eigen",
+          "zh": "自己的"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Andere Videos kommen aus Reden oder Podcasts.",
+      "zh": "其他视频则来自演讲或播客。",
+      "glosses": [
+        {
+          "surface": "Reden",
+          "lemma": "die Rede",
+          "zh": "演讲",
+          "note": "复数；这里不是动词 reden"
+        },
+        {
+          "surface": "Podcasts",
+          "lemma": "der Podcast",
+          "zh": "播客",
+          "note": "复数"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "In vielen Videos spricht eine Person direkt in die Kamera.",
+      "zh": "在许多视频中，一个人直接对着镜头说话。",
+      "glosses": [
+        {
+          "surface": "spricht",
+          "lemma": "sprechen",
+          "zh": "说话",
+          "note": "第三人称单数；e 变为 i"
+        },
+        {
+          "surface": "direkt",
+          "lemma": "direkt",
+          "zh": "直接地"
+        },
+        {
+          "surface": "Kamera",
+          "lemma": "die Kamera",
+          "zh": "摄像机；镜头"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "So soll ein Gefühl von Nähe entstehen.",
+      "zh": "这样做是为了营造一种亲近感。",
+      "glosses": [
+        {
+          "surface": "Gefühl",
+          "lemma": "das Gefühl",
+          "zh": "感觉"
+        },
+        {
+          "surface": "Nähe",
+          "lemma": "die Nähe",
+          "zh": "亲近感",
+          "note": "这里指人与人之间的心理距离较近"
+        },
+        {
+          "surface": "entstehen",
+          "lemma": "entstehen",
+          "zh": "产生",
+          "note": "soll ... entstehen 表示希望达到的效果"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Manche Videos erklären ein Thema, andere zeigen vor allem eine Meinung.",
+      "zh": "有些视频解释一个话题，另一些则主要表达一种观点。",
+      "glosses": [
+        {
+          "surface": "erklären",
+          "lemma": "erklären",
+          "zh": "解释"
+        },
+        {
+          "surface": "Thema",
+          "lemma": "das Thema",
+          "zh": "话题"
+        },
+        {
+          "surface": "Meinung",
+          "lemma": "die Meinung",
+          "zh": "观点"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Im Unterricht können Schülerinnen und Schüler diese Videos vergleichen.",
+      "zh": "在课堂上，学生们可以比较这些视频。",
+      "glosses": [
+        {
+          "surface": "Unterricht",
+          "lemma": "der Unterricht",
+          "zh": "课堂教学"
+        },
+        {
+          "surface": "vergleichen",
+          "lemma": "vergleichen",
+          "zh": "比较"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Dabei fragen sie nach den Personen und ihren Zielen.",
+      "zh": "在比较时，他们会问到视频中的人物以及这些人的目的。",
+      "glosses": [
+        {
+          "surface": "Dabei",
+          "lemma": "dabei",
+          "zh": "在做这件事时",
+          "note": "指比较和分析视频时"
+        },
+        {
+          "surface": "Zielen",
+          "lemma": "das Ziel",
+          "zh": "目的",
+          "note": "复数第三格；nach 后接第三格"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Für eine eigene Meinung sind verschiedene Nachrichtenquellen wichtig.",
+      "zh": "要形成自己的观点，不同的新闻来源很重要。",
+      "glosses": [
+        {
+          "surface": "verschiedene",
+          "lemma": "verschieden",
+          "zh": "不同的"
+        },
+        {
+          "surface": "Nachrichtenquellen",
+          "lemma": "die Nachrichtenquelle",
+          "zh": "新闻来源",
+          "note": "复数；Nachricht（新闻）+ Quelle（来源）"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "erreichen",
+        "zh": "接触到；触达",
+        "sentenceId": "s2",
+        "lemma": "erreichen"
+      },
+      {
+        "text": "Parteien",
+        "zh": "政党",
+        "sentenceId": "s3",
+        "lemma": "die Partei"
+      },
+      {
+        "text": "Nähe",
+        "zh": "亲近感",
+        "sentenceId": "s6",
+        "lemma": "die Nähe"
+      },
+      {
+        "text": "Meinung",
+        "zh": "观点",
+        "sentenceId": "s7",
+        "lemma": "die Meinung"
+      },
+      {
+        "text": "vergleichen",
+        "zh": "比较",
+        "sentenceId": "s8",
+        "lemma": "vergleichen"
+      },
+      {
+        "text": "Nachrichtenquellen",
+        "zh": "新闻来源",
+        "sentenceId": "s10",
+        "lemma": "die Nachrichtenquelle"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "direkt in die Kamera",
+        "zh": "直接对着镜头",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "vor allem",
+        "zh": "主要；尤其",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "fragen sie nach",
+        "zh": "他们询问……",
+        "sentenceId": "s9"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s2",
+        "note": "möchten 表达愿望；动词原形 erreichen 放在句末。junge Menschen 是 erreichen 的第四格宾语。"
+      },
+      {
+        "sentenceId": "s8",
+        "note": "Im Unterricht 放在句首时，情态动词 können 仍处于第二位；动词原形 vergleichen 放在句末。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Was ist dir bei einem politischen Video wichtig?",
+        "zh": "对你来说，一个政治类视频的哪些方面很重要？"
+      },
+      {
+        "text": "Wo suchst du andere Informationen zu einem Thema?",
+        "zh": "关于一个话题，你会去哪里寻找其他信息？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich vergleiche verschiedene Quellen.",
+        "zh": "我会比较不同的来源。",
+        "note": "vergleichen + 第四格：表达比较信息来源的习惯。"
+      },
+      {
+        "text": "Das Video zeigt vor allem eine Meinung.",
+        "zh": "这个视频主要表达一种观点。",
+        "note": "vor allem 表示“主要”，可用于区分观点表达与事实介绍。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-it-etna-tra-mappe-e-modelli",
+  "storyId": "ingv-etna-time-machine-2026-09-30",
+  "lang": "it",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "technology",
+  "topics": [
+    "历史地图",
+    "三维模型",
+    "科学无障碍"
+  ],
+  "title": "L’Etna tra mappe e modelli",
+  "titleZh": "地图与模型中的埃特纳火山",
+  "summaryZh": "2026年9月30日的报道介绍一项重建埃特纳火山顶部1865—2024年变化的研究。团队把旧地图与现代影像结合，还利用3D打印，让视障者通过触摸了解火山顶部的形状与变化。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1，适合 A2 学习者借助中文辅助阅读：以短句讲述研究过程，包含近过去时、未完成过去时和少量被动结构；专业词逐句注释。非认证 CEFR 测评。",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "ETNA | Una “macchina del tempo” ricostruisce 160 anni di evoluzione dei crateri sommitali",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+    "publishedAt": "2026-09-30",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali"
+  },
+  "attribution": "来源：© INGV — Istituto Nazionale di Geofisica e Vulcanologia，Ufficio Stampa，《ETNA | Una “macchina del tempo” ricostruisce 160 anni di evoluzione dei crateri sommitali》，2026-09-30；2026-10-13查阅。按原文页脚 CC BY 4.0 使用机构新闻文字。研究由 INGV、米兰比可卡大学和巴勒莫大学共同开展；无障碍模型的事实见 INGV 研究员 Emanuela De Beni 的介绍。未转载任何直接引语、图片、地图、模型文件或链接论文。",
+  "adaptation": "Dimenticato 根据意大利语机构原文作同语言简化、节选和重组，添加简中逐句翻译、语境注释与原创练习；研究时间截至2024年，不把文中火山口状态当作实时观测。非逐字转载，不代表来源机构认可或审定。",
+  "sentences": [
+    {
+      "id": "it-etna-modelli-01",
+      "text": "Uno studio ricostruisce come è cambiata la cima dell’Etna tra il 1865 e il 2024.",
+      "zh": "一项研究重建了埃特纳火山顶部在1865年至2024年间的变化。",
+      "glosses": [
+        {
+          "surface": "ricostruisce",
+          "lemma": "ricostruire",
+          "zh": "重建；还原",
+          "note": "这里指根据资料还原过去的变化。"
+        },
+        {
+          "surface": "cima",
+          "lemma": "cima",
+          "zh": "顶部；山顶",
+          "note": "阴性名词 la cima。"
+        }
+      ]
+    },
+    {
+      "id": "it-etna-modelli-02",
+      "text": "Alla ricerca hanno partecipato l’INGV e le università di Milano-Bicocca e Palermo.",
+      "zh": "INGV（意大利国家地球物理与火山学研究所）、米兰比可卡大学和巴勒莫大学参与了研究。",
+      "glosses": [
+        {
+          "surface": "ricerca",
+          "lemma": "ricerca",
+          "zh": "研究",
+          "note": "阴性名词 la ricerca。"
+        },
+        {
+          "surface": "partecipato",
+          "lemma": "partecipare",
+          "zh": "参与了",
+          "note": "与 hanno 组成近过去时；partecipare a 表示参与。"
+        }
+      ]
+    },
+    {
+      "id": "it-etna-modelli-03",
+      "text": "Per confrontare passato e presente, il gruppo ha usato vecchie mappe e immagini recenti.",
+      "zh": "为了比较过去与现在，团队使用了旧地图和近期影像。",
+      "glosses": [
+        {
+          "surface": "confrontare",
+          "lemma": "confrontare",
+          "zh": "比较",
+          "note": "per + 动词原形表示目的。"
+        },
+        {
+          "surface": "mappe",
+          "lemma": "mappa",
+          "zh": "地图",
+          "note": "阴性复数，单数 la mappa。"
+        },
+        {
+          "surface": "recenti",
+          "lemma": "recente",
+          "zh": "近期的",
+          "note": "修饰复数名词 immagini。"
+        }
+      ]
+    },
+    {
+      "id": "it-etna-modelli-04",
+      "text": "Ci sono fotografie scattate dagli aerei, immagini dei satelliti e dati raccolti con droni.",
+      "zh": "这些资料包括从飞机上拍摄的照片、卫星影像以及用无人机采集的数据。",
+      "glosses": [
+        {
+          "surface": "scattate",
+          "lemma": "scattare",
+          "zh": "拍摄的",
+          "note": "过去分词，阴性复数，与 fotografie 一致。"
+        },
+        {
+          "surface": "raccolti",
+          "lemma": "raccogliere",
+          "zh": "采集的",
+          "note": "过去分词，阳性复数，与 dati 一致。"
+        },
+        {
+          "surface": "droni",
+          "lemma": "drone",
+          "zh": "无人机",
+          "note": "阳性复数，单数 il drone。"
+        }
+      ]
+    },
+    {
+      "id": "it-etna-modelli-05",
+      "text": "Nel 1865, sulla cima c’era soprattutto un grande cratere centrale.",
+      "zh": "1865年，火山顶部主要是一个大型中央火山口。",
+      "glosses": [
+        {
+          "surface": "c’era",
+          "lemma": "esserci",
+          "zh": "当时有",
+          "note": "未完成过去时，描述过去的情况。"
+        },
+        {
+          "surface": "soprattutto",
+          "lemma": "soprattutto",
+          "zh": "主要；尤其",
+          "note": "这里保留原文“以一个中央火山口为主”的限定。"
+        },
+        {
+          "surface": "cratere",
+          "lemma": "cratere",
+          "zh": "火山口",
+          "note": "阳性名词 il cratere。"
+        }
+      ]
+    },
+    {
+      "id": "it-etna-modelli-06",
+      "text": "Nel 2024, alla fine del periodo studiato, i crateri attivi sulla cima erano quattro.",
+      "zh": "到了研究时期终点的2024年，火山顶部有四个活跃火山口。",
+      "glosses": [
+        {
+          "surface": "periodo",
+          "lemma": "periodo",
+          "zh": "时期",
+          "note": "il periodo studiato 指这项研究覆盖的时间。"
+        },
+        {
+          "surface": "attivi",
+          "lemma": "attivo",
+          "zh": "活跃的",
+          "note": "阳性复数，修饰 crateri。"
+        },
+        {
+          "surface": "erano",
+          "lemma": "essere",
+          "zh": "当时是；当时有",
+          "note": "未完成过去时；此句不描述2026年的实时状态。"
+        }
+      ]
+    },
+    {
+      "id": "it-etna-modelli-07",
+      "text": "Questi crateri non sono cambiati tutti nello stesso modo.",
+      "zh": "这些火山口并非都以相同的方式发生变化。",
+      "glosses": [
+        {
+          "surface": "cambiati",
+          "lemma": "cambiare",
+          "zh": "发生了变化",
+          "note": "sono cambiati 是近过去时，分词与阳性复数主语一致。"
+        },
+        {
+          "surface": "modo",
+          "lemma": "modo",
+          "zh": "方式",
+          "note": "nello stesso modo：以同样的方式。"
+        }
+      ]
+    },
+    {
+      "id": "it-etna-modelli-08",
+      "text": "I modelli digitali sono diventati anche oggetti stampati in 3D.",
+      "zh": "这些数字模型还被制成了3D打印的实物。",
+      "glosses": [
+        {
+          "surface": "modelli",
+          "lemma": "modello",
+          "zh": "模型",
+          "note": "阳性复数。"
+        },
+        {
+          "surface": "oggetti",
+          "lemma": "oggetto",
+          "zh": "物品；实物",
+          "note": "这里指可触摸的实体模型。"
+        },
+        {
+          "surface": "stampati",
+          "lemma": "stampare",
+          "zh": "打印的",
+          "note": "过去分词，修饰 oggetti。"
+        }
+      ]
+    },
+    {
+      "id": "it-etna-modelli-09",
+      "text": "Così le persone non vedenti possono esplorare con le mani la forma della cima e i suoi cambiamenti.",
+      "zh": "这样，视障者就能用双手探索火山顶部的形状及其变化。",
+      "glosses": [
+        {
+          "surface": "non vedenti",
+          "lemma": "non vedente",
+          "zh": "盲人；视障者",
+          "note": "修饰 persone，指无法用视觉观察的人。"
+        },
+        {
+          "surface": "mani",
+          "lemma": "mano",
+          "zh": "双手",
+          "note": "阴性复数，单数 la mano。"
+        },
+        {
+          "surface": "forma",
+          "lemma": "forma",
+          "zh": "形状",
+          "note": "这里指火山顶部的外形。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "cima",
+        "zh": "顶部；山顶",
+        "sentenceId": "it-etna-modelli-01",
+        "note": "la cima，阴性名词。"
+      },
+      {
+        "text": "mappe",
+        "zh": "地图",
+        "sentenceId": "it-etna-modelli-03",
+        "note": "单数 la mappa。"
+      },
+      {
+        "text": "droni",
+        "zh": "无人机",
+        "sentenceId": "it-etna-modelli-04",
+        "note": "单数 il drone。"
+      },
+      {
+        "text": "cratere",
+        "zh": "火山口",
+        "sentenceId": "it-etna-modelli-05",
+        "note": "il cratere，阳性名词。"
+      },
+      {
+        "text": "modelli",
+        "zh": "模型",
+        "sentenceId": "it-etna-modelli-08",
+        "note": "单数 il modello。"
+      },
+      {
+        "text": "mani",
+        "zh": "双手",
+        "sentenceId": "it-etna-modelli-09",
+        "note": "不规则复数：la mano → le mani。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Per confrontare",
+        "zh": "为了比较",
+        "sentenceId": "it-etna-modelli-03",
+        "note": "per + 动词原形，用来说明目的。"
+      },
+      {
+        "text": "nello stesso modo",
+        "zh": "以相同的方式",
+        "sentenceId": "it-etna-modelli-07",
+        "note": "nello = in + lo；可用于比较两种做法。"
+      },
+      {
+        "text": "con le mani",
+        "zh": "用双手",
+        "sentenceId": "it-etna-modelli-09",
+        "note": "con 在这里表示借助的工具或方式。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-etna-modelli-07",
+        "note": "non… tutti 表示“并非所有……都”，不是“所有……都不”。nello stesso modo 用于比较方式。"
+      },
+      {
+        "sentenceId": "it-etna-modelli-09",
+        "note": "possono + 动词原形表示“能够……”；così 把方法与它带来的可能性连接起来。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Per conoscere un luogo, preferisci una mappa, una fotografia o un modello? Perché?",
+        "zh": "想了解一个地方时，你更喜欢地图、照片还是模型？为什么？"
+      },
+      {
+        "text": "Come può un museo aiutare le persone non vedenti a conoscere un vulcano?",
+        "zh": "博物馆可以怎样帮助视障者了解一座火山？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Preferisco un modello perché…",
+        "zh": "我更喜欢模型，因为……。",
+        "note": "可补充 è facile da capire（容易理解）。"
+      },
+      {
+        "text": "Con le mani posso capire…",
+        "zh": "用双手，我能了解……。",
+        "note": "可接 la forma di un oggetto（一个物品的形状）。"
+      }
+    ]
+  }
+}

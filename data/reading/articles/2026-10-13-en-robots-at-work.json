@@ -1,0 +1,359 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-en-robots-at-work",
+  "storyId": "en-2026-10-09-robotics-adoption-hubs",
+  "lang": "en",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "technology",
+  "topics": [
+    "农业与食物",
+    "废物回收",
+    "工作技能"
+  ],
+  "title": "Robots at work",
+  "titleZh": "工作中的机器人",
+  "summaryZh": "从采摘水果到废物回收，英国新设的机器人应用中心将提供建议和演示，帮助机构选择与使用技术。原文发表于2026年10月9日；本篇为英语同语言教学改写，保留计划与可能效益的语气。",
+  "level": "B1",
+  "levelReason": "编辑估计为 B1：用具体的农业和回收场景解释新计划，包含 will、could、目的不定式及简单定语从句。harvest、landfill、adoption 等主题词有注释；并非经认证的 CEFR 测评。",
+  "source": {
+    "name": "Department for Business, Innovation, Science and Trade and Cabinet Office / GOV.UK",
+    "title": "Brits to benefit from faster recovery from surgeries and better harvests through new backing for robotics",
+    "url": "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+    "publishedAt": "2026-10-09",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidenceUrl": "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics"
+  },
+  "attribution": "Adapted from Department for Business, Innovation, Science and Trade and Cabinet Office, “Brits to benefit from faster recovery from surgeries and better harvests through new backing for robotics”, published 9 October 2026. Contains public sector information licensed under the Open Government Licence v3.0. Source and licence links are provided above. Dimenticato shortened and simplified the English, translated it into Chinese and added learning notes. No official endorsement is implied.",
+  "adaptation": "仅使用 GOV.UK 公共部门的英语机构叙述，作同语言教学改写并配中文翻译。排除所有直接引语、照片、标识、个人案例和外链报告全文。重点是采摘、回收与技术培训；支持计划和预期效益没有改成已完成的成果。£40 million 和 £2.5 million 分别保留各自用途，不据此推算新的总额。原语来源依据英国机构署名与国内项目语境判断，并非最初起草语言的认证。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A new UK programme aims to help more organisations use robots in everyday work.",
+      "zh": "英国一项新计划旨在帮助更多机构在日常工作中使用机器人。",
+      "glosses": [
+        {
+          "surface": "programme",
+          "lemma": "programme",
+          "zh": "计划；项目",
+          "note": "英式拼写"
+        },
+        {
+          "surface": "aims",
+          "lemma": "aim",
+          "zh": "旨在",
+          "note": "aim to do something：旨在做某事"
+        },
+        {
+          "surface": "organisations",
+          "lemma": "organisation",
+          "zh": "机构；组织",
+          "note": "英式拼写，复数"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "On 9 October, the government announced eight Robotics Adoption Hubs.",
+      "zh": "10月9日，政府宣布设立八个机器人应用中心。",
+      "glosses": [
+        {
+          "surface": "announced",
+          "lemma": "announce",
+          "zh": "宣布",
+          "note": "过去式"
+        },
+        {
+          "surface": "Adoption",
+          "lemma": "adoption",
+          "zh": "采用；应用",
+          "note": "这里指采用技术，不是收养"
+        },
+        {
+          "surface": "Hubs",
+          "lemma": "hub",
+          "zh": "中心",
+          "note": "复数，指提供支持与交流的中心"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "These centres are backed by £40 million and will support businesses and public services.",
+      "zh": "这些中心获得了4000万英镑的资金支持，将为企业和公共服务机构提供支持。",
+      "glosses": [
+        {
+          "surface": "backed",
+          "lemma": "back",
+          "zh": "支持；资助",
+          "note": "are backed by：被动语态"
+        },
+        {
+          "surface": "businesses",
+          "lemma": "business",
+          "zh": "企业",
+          "note": "复数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "They will offer advice and show people how different robots work.",
+      "zh": "它们将提供建议，并向人们演示不同的机器人如何工作。",
+      "glosses": [
+        {
+          "surface": "advice",
+          "lemma": "advice",
+          "zh": "建议",
+          "note": "不可数名词"
+        },
+        {
+          "surface": "work",
+          "lemma": "work",
+          "zh": "运作",
+          "note": "这里是动词，指机器如何运作"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "For example, fruit-picking machines could help farmers finish harvests more quickly.",
+      "zh": "例如，水果采摘机器可能帮助农民更快地完成采收。",
+      "glosses": [
+        {
+          "surface": "fruit-picking",
+          "lemma": "fruit-picking",
+          "zh": "采摘水果的"
+        },
+        {
+          "surface": "harvests",
+          "lemma": "harvest",
+          "zh": "采收；收获工作",
+          "note": "复数，这里指采收过程"
+        },
+        {
+          "surface": "could",
+          "lemma": "could",
+          "zh": "可以；有可能",
+          "note": "保留可能性，不保证成效"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "This could give farm workers more time for other jobs.",
+      "zh": "这可能让农业工人有更多时间做其他工作。",
+      "glosses": [
+        {
+          "surface": "workers",
+          "lemma": "worker",
+          "zh": "工人",
+          "note": "复数"
+        },
+        {
+          "surface": "jobs",
+          "lemma": "job",
+          "zh": "工作任务",
+          "note": "这里指其他农事工作，并非换工作"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Another hub will help waste and recycling sites test and use robots.",
+      "zh": "另一个中心将帮助废物处理与回收场所测试和使用机器人。",
+      "glosses": [
+        {
+          "surface": "waste",
+          "lemma": "waste",
+          "zh": "废物"
+        },
+        {
+          "surface": "recycling",
+          "lemma": "recycling",
+          "zh": "回收利用"
+        },
+        {
+          "surface": "sites",
+          "lemma": "site",
+          "zh": "场所",
+          "note": "这里不是网站"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "The aim is to recover more materials and send less waste to landfill.",
+      "zh": "目标是回收更多材料，并减少送去填埋的废物。",
+      "glosses": [
+        {
+          "surface": "recover",
+          "lemma": "recover",
+          "zh": "回收",
+          "note": "这里指从废物中回收有用材料"
+        },
+        {
+          "surface": "materials",
+          "lemma": "material",
+          "zh": "材料",
+          "note": "复数"
+        },
+        {
+          "surface": "landfill",
+          "lemma": "landfill",
+          "zh": "填埋；垃圾填埋场"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Before choosing a robot, organisations will be able to ask about the benefits, costs and practical requirements of using it.",
+      "zh": "在选择机器人之前，机构将能够咨询使用它的好处、费用与实际要求。",
+      "glosses": [
+        {
+          "surface": "benefits",
+          "lemma": "benefit",
+          "zh": "好处；益处",
+          "note": "复数"
+        },
+        {
+          "surface": "costs",
+          "lemma": "cost",
+          "zh": "费用",
+          "note": "复数"
+        },
+        {
+          "surface": "practical",
+          "lemma": "practical",
+          "zh": "实际的"
+        },
+        {
+          "surface": "requirements",
+          "lemma": "requirement",
+          "zh": "要求；必要条件",
+          "note": "复数，这里指使用机器人所需要满足的实际条件"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The programme is also providing £2.5 million for twelve projects that will develop robotics training.",
+      "zh": "该计划还在为十二个机器人技术培训开发项目提供250万英镑。",
+      "glosses": [
+        {
+          "surface": "providing",
+          "lemma": "provide",
+          "zh": "提供",
+          "note": "is providing：现在进行时"
+        },
+        {
+          "surface": "projects",
+          "lemma": "project",
+          "zh": "项目",
+          "note": "复数"
+        },
+        {
+          "surface": "training",
+          "lemma": "training",
+          "zh": "培训",
+          "note": "这里作不可数名词"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Adoption",
+        "zh": "采用；应用",
+        "sentenceId": "s2",
+        "lemma": "adoption"
+      },
+      {
+        "text": "advice",
+        "zh": "建议",
+        "sentenceId": "s4",
+        "lemma": "advice"
+      },
+      {
+        "text": "harvests",
+        "zh": "采收；收获工作",
+        "sentenceId": "s5",
+        "lemma": "harvest"
+      },
+      {
+        "text": "recycling",
+        "zh": "回收利用",
+        "sentenceId": "s7",
+        "lemma": "recycling"
+      },
+      {
+        "text": "landfill",
+        "zh": "填埋；垃圾填埋场",
+        "sentenceId": "s8",
+        "lemma": "landfill"
+      },
+      {
+        "text": "training",
+        "zh": "培训",
+        "sentenceId": "s10",
+        "lemma": "training"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "are backed by",
+        "zh": "得到……支持",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "For example",
+        "zh": "例如",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "will be able to",
+        "zh": "将能够",
+        "sentenceId": "s9"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "could help + 人 + 动词原形，表示可能带来的帮助。more quickly 是副词比较级，说明完成采收的速度。"
+      },
+      {
+        "sentenceId": "s9",
+        "note": "Before 后面接 choosing，表示“在选择之前”；will be able to 表示将来的能力或条件。ask about 用来询问某方面的情况。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which jobs on a farm could robots help with?",
+        "zh": "机器人可以帮助完成农场里的哪些工作？"
+      },
+      {
+        "text": "What would you ask before using a robot at work?",
+        "zh": "在工作中使用机器人之前，你会问些什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "A robot could help with this task.",
+        "zh": "机器人可以帮助完成这项任务。",
+        "note": "could help with + 名词：表达可能的用途。"
+      },
+      {
+        "text": "I would like to know more about the costs.",
+        "zh": "我想进一步了解费用。",
+        "note": "would like to know more about：礼貌地提出想了解的信息。"
+      }
+    ]
+  }
+}

@@ -2,6 +2,24 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-13-en-robots-at-work",
+      "lang": "en",
+      "date": "2026-10-13",
+      "title": "Robots at work",
+      "titleZh": "工作中的机器人",
+      "summaryZh": "从采摘水果到废物回收，英国新设的机器人应用中心将提供建议和演示，帮助机构选择与使用技术。原文发表于2026年10月9日；本篇为英语同语言教学改写，保留计划与可能效益的语气。",
+      "level": "B1",
+      "category": "technology",
+      "topics": [
+        "农业与食物",
+        "废物回收",
+        "工作技能"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-09",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-11-en-practical-learning-choices",
       "lang": "en",
       "date": "2026-10-11",
@@ -17,6 +35,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-10-09",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-fr-une-regle-pour-les-rivieres",
+      "lang": "fr",
+      "date": "2026-10-13",
+      "title": "Une règle pour observer les rivières",
+      "titleZh": "用一把尺观察河流",
+      "summaryZh": "INRAE团队于2026年10月7日获奖。它改进的测流尺轻便、成本低，也用于学校的参与式科学项目；使用者仍需要学习正确的测量方法。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "河流观察",
+        "低成本工具",
+        "参与式科学"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-08",
       "contentType": "native-adaptation"
     },
     {
@@ -74,6 +110,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-13-it-etna-tra-mappe-e-modelli",
+      "lang": "it",
+      "date": "2026-10-13",
+      "title": "L’Etna tra mappe e modelli",
+      "titleZh": "地图与模型中的埃特纳火山",
+      "summaryZh": "2026年9月30日的报道介绍一项重建埃特纳火山顶部1865—2024年变化的研究。团队把旧地图与现代影像结合，还利用3D打印，让视障者通过触摸了解火山顶部的形状与变化。",
+      "level": "B1",
+      "category": "technology",
+      "topics": [
+        "历史地图",
+        "三维模型",
+        "科学无障碍"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-09-30",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-10-it-plastica-radar",
       "lang": "it",
       "date": "2026-10-10",
@@ -106,6 +160,24 @@
       ],
       "sourceLang": "de",
       "sourcePublishedAt": "2026-09-22",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-de-politik-in-kurzen-videos",
+      "lang": "de",
+      "date": "2026-10-13",
+      "title": "Politik in kurzen Videos",
+      "titleZh": "短视频里的政治",
+      "summaryZh": "政治人物怎样通过短视频接近观众？这篇文章用简单德语介绍视频的来源、表达方式，以及比较不同新闻来源的重要性。原文发表于2026年9月21日，本篇为德语同语言教学改写。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "社交媒体",
+        "短视频",
+        "媒介素养"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-21",
       "contentType": "native-adaptation"
     },
     {

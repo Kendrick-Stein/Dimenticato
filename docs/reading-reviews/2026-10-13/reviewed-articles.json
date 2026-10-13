@@ -1,0 +1,154 @@
+{
+  "reviewedAt": "2026-10-13",
+  "reviewType": "independent-editorial-pass",
+  "articles": [
+    {
+      "id": "2026-10-13-it-etna-tra-mappe-e-modelli",
+      "lang": "it",
+      "level": "B1",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+      "sourcePublishedAt": "2026-09-30",
+      "sha256": "1e832a7642f800542123c291e9292650b16412592782099259b44d3d3f0cc426",
+      "bodyWordCountWhitespace": 116,
+      "validationErrors": [],
+      "learningCounts": {
+        "words": 6,
+        "phrases": 3,
+        "sentences": 2
+      },
+      "speakingCounts": {
+        "questions": 2,
+        "expressions": 2
+      },
+      "status": "approved"
+    },
+    {
+      "id": "2026-10-13-fr-une-regle-pour-les-rivieres",
+      "lang": "fr",
+      "level": "A2",
+      "sourceUrl": "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+      "sourcePublishedAt": "2026-10-08",
+      "sha256": "8cf64a03f0bfd86da289433ff47d56df4ea2b41a76601ea6ceeba9268eda56ed",
+      "bodyWordCountWhitespace": 128,
+      "validationErrors": [],
+      "learningCounts": {
+        "words": 6,
+        "phrases": 4,
+        "sentences": 2
+      },
+      "speakingCounts": {
+        "questions": 2,
+        "expressions": 2
+      },
+      "status": "approved"
+    },
+    {
+      "id": "2026-10-13-de-politik-in-kurzen-videos",
+      "lang": "de",
+      "level": "A2",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
+      "sourcePublishedAt": "2026-09-21",
+      "sha256": "cdaf91459654852bf3fd2a4a30be60b3fcb780968dca419a48198ad6ad44c498",
+      "bodyWordCountWhitespace": 81,
+      "validationErrors": [],
+      "learningCounts": {
+        "words": 6,
+        "phrases": 3,
+        "sentences": 2
+      },
+      "speakingCounts": {
+        "questions": 2,
+        "expressions": 2
+      },
+      "status": "approved"
+    },
+    {
+      "id": "2026-10-13-en-robots-at-work",
+      "lang": "en",
+      "level": "B1",
+      "sourceUrl": "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+      "sourcePublishedAt": "2026-10-09",
+      "sha256": "1f5d713b2c951bad43fe864b744c1e66173cce3a2f8da841104c288f1732f959",
+      "bodyWordCountWhitespace": 130,
+      "validationErrors": [],
+      "learningCounts": {
+        "words": 6,
+        "phrases": 3,
+        "sentences": 2
+      },
+      "speakingCounts": {
+        "questions": 2,
+        "expressions": 2
+      },
+      "status": "approved"
+    }
+  ],
+  "duplicateChecks": {
+    "existingArticleCount": 12,
+    "combinedArticleCount": 16,
+    "duplicateIdsStoryIdsSourceUrlsOrBodies": []
+  },
+  "existingArticlePreservation": [
+    {
+      "id": "2026-10-10-de-meeresschutz",
+      "sha256": "ec54a1aec11b3c2554bcb19fe956e0e488afa242dffbda6f6b14daac43a89cb6",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-10-en-satellites-everyday-life",
+      "sha256": "175e6429da8917d4fd04bb56e0c40e3e4807ade26dd3c52e5d19eade9107bd9e",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-10-fr-fleurs-abeilles",
+      "sha256": "0a2298718d390b70ad45a2f878091f19210881e18d7e76344c1d4c5b901e670a",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-10-it-plastica-radar",
+      "sha256": "22fc92cf8c700ad17bb26d468862e67aca16b210c194e8443ea61b312d70ecd4",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-11-de-sichere-spiele-chats",
+      "sha256": "8343d7507235503b78d4f13c9c7f7ab503314e2028fe41b3781de3e2a21307e8",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-11-en-practical-learning-choices",
+      "sha256": "6bd854bd0a09b4d0972178be71458427f9a7ae14b4f567b73f58df5adf031f15",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-11-fr-debroussaillement-action",
+      "sha256": "da6794f4bdbf26b2395ae8cea512b0624bb5db5136188be4dd63b20c90cddea2",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-11-it-lipari-storia-sommersa",
+      "sha256": "0e61e0aab1b408ea43b2dd7e1b6c152904ddd9a950dfc878a34cf87c9e3e3fd6",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-12-de-meinungen-im-unterricht",
+      "sha256": "788415f5e26f362ea22cc515190ff76b7964676fb9d1fc826261022f3419a387",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-12-en-more-chances-to-join-in",
+      "sha256": "79984ae23da39571634c553ea3b267116abb35238d82d321d00c76e83d4f3523",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-12-fr-sorgho-et-eau",
+      "sha256": "6e6a4dcda969db49f7de01992bf7e60ce05f73504fc4dc795015e6f304ecf47d",
+      "unchanged": true
+    },
+    {
+      "id": "2026-10-12-it-energia-a-scuola",
+      "sha256": "191d229d190952556746763dbecc3b973cbb3e4ca4647324d7693304c6fa1c8b",
+      "unchanged": true
+    }
+  ],
+  "scope": "Editorial approval applies only to the exact article hashes after complete source, rights, language and learning-material review. This report does not authorize or confirm deployment."
+}
