@@ -1,0 +1,462 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-de-welche-geschichten-wir-ueber-ki-erzaehlen",
+  "storyId": "bpb-ai-narratives-comics-2026-07-21",
+  "lang": "de",
+  "date": "2026-10-13",
+  "title": "Welche Geschichten erzählen wir über KI?",
+  "titleZh": "我们怎样讲述人工智能？",
+  "summaryZh": "在7月的访谈中，漫画随笔作者Julia Schneider讨论了进步与威胁两种AI叙事，以及艺术、青少年观点和社会关系如何拓宽讨论。",
+  "level": "B2",
+  "levelReason": "用较长的复合句比较相反叙事，区分作者判断、访谈经验和事实；涉及抽象社会文化词汇与让步结构。级别为编辑估计。",
+  "category": "culture",
+  "topics": [
+    "漫画随笔",
+    "技术叙事",
+    "多元视角"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Bundeszentrale für politische Bildung — Werkstatt",
+    "title": "„Eine Geschichte setzt das Erzählen voraus“",
+    "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579493/eine-geschichte-setzt-das-erzaehlen-voraus/",
+    "publishedAt": "2026-07-21",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+  },
+  "attribution": "Julia Schneider (Doc J Snyder) und Philine Janus für bpb.de, bpb.de, „„Eine Geschichte setzt das Erzählen voraus““, 2026-07-21. Quelle: https://www.bpb.de/lernen/digitale-bildung/werkstatt/579493/eine-geschichte-setzt-das-erzaehlen-voraus/ Lizenz: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/deed.de).",
+  "adaptation": "Dimenticato德语教学改写：删节、重组并简化原文，新增中文逐句翻译、语境词注、学习总结和口语练习；配套练习亦为改编。全部改编文字及新增教学材料以CC BY-SA 4.0发布。未使用图片、漫画、音视频或另有署名的第三方引语；不表示原作者或bpb认可本版本。原文日期与本学习版日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Wenn über künstliche Intelligenz gesprochen wird, stehen oft große Versprechen oder große Ängste im Mittelpunkt der öffentlichen Diskussion.",
+      "zh": "谈到人工智能时，公共讨论的中心常常是宏大的承诺或巨大的恐惧。",
+      "glosses": [
+        {
+          "surface": "Versprechen",
+          "lemma": "Versprechen",
+          "zh": "承诺"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Die Ökonomin und Comic-Essayistin Julia Schneider interessiert sich dagegen besonders für die Erfahrungen, Widersprüche und Beziehungen, die zwischen diesen beiden Polen liegen.",
+      "zh": "经济学家、漫画随笔作者Julia Schneider尤其关注处于这两个极端之间的经验、矛盾和关系。",
+      "glosses": [
+        {
+          "surface": "Widersprüche",
+          "lemma": "Widerspruch",
+          "zh": "矛盾"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "In einem Interview mit der Werkstatt-Redakteurin Philine Janus vom Juli 2026 erklärt sie, weshalb die Geschichten über eine Technologie unseren Blick auf sie beeinflussen.",
+      "zh": "在2026年7月接受Werkstatt编辑Philine Janus采访时，她解释了为什么关于一种技术的故事会影响我们看待它的方式。",
+      "glosses": [
+        {
+          "surface": "beeinflussen",
+          "lemma": "beeinflussen",
+          "zh": "影响"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Schneider unterscheidet zunächst eine Fortschrittsgeschichte und eine Bedrohungsgeschichte, die auf unterschiedliche Weise eine komplizierte Wirklichkeit vereinfachen.",
+      "zh": "Schneider首先区分了进步叙事与威胁叙事，两者以不同方式简化复杂的现实。",
+      "glosses": [
+        {
+          "surface": "Wirklichkeit",
+          "lemma": "Wirklichkeit",
+          "zh": "现实"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "In der ersten Geschichte erscheint KI als Lösung für zahlreiche Probleme: Sie verspricht bessere Medizin, bequemeres Leben und eine Bildung, die sich einzelnen Menschen anpasst.",
+      "zh": "在第一种叙事中，人工智能成为许多问题的解决办法：它承诺更好的医疗、更便利的生活，以及适应个人的教育。",
+      "glosses": [
+        {
+          "surface": "anpasst",
+          "lemma": "anpassen",
+          "zh": "适应"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Nach Schneiders Einschätzung wird diese Sicht häufig von Unternehmen und anderen Akteuren verbreitet, die ein wirtschaftliches Interesse an der Entwicklung haben.",
+      "zh": "据Schneider判断，这种观点常由对技术发展有经济利益的企业和其他参与者传播。",
+      "glosses": [
+        {
+          "surface": "verbreitet",
+          "lemma": "verbreiten",
+          "zh": "传播"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Die zweite Geschichte erzählt dagegen von Kontrollverlust, verschwundenen Arbeitsplätzen und Maschinen, die sich irgendwann gegen ihre menschlichen Schöpfer wenden könnten.",
+      "zh": "第二种叙事则讲述失控、消失的工作岗位，以及某一天可能反过来对付人类创造者的机器。",
+      "glosses": [
+        {
+          "surface": "Kontrollverlust",
+          "lemma": "Kontrollverlust",
+          "zh": "失去控制"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Solche Vorstellungen besitzen eine lange kulturelle Vorgeschichte und können starke Gefühle auslösen, wie Schneider im Gespräch betont.",
+      "zh": "正如Schneider在对话中强调的，这类想象有悠久的文化渊源，并能引发强烈情绪。",
+      "glosses": [
+        {
+          "surface": "auslösen",
+          "lemma": "auslösen",
+          "zh": "引发"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Ihr Einwand lautet nicht, dass Nutzen und Risiken unwichtig seien, sondern dass beide großen Erzählungen dem alltäglichen Umgang mit Technik nur begrenzt gerecht werden.",
+      "zh": "她的异议并不是益处和风险不重要，而是这两种宏大叙事只能有限地反映人们日常与技术相处的情况。",
+      "glosses": [
+        {
+          "surface": "Einwand",
+          "lemma": "Einwand",
+          "zh": "异议"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Für einen Comic-Essay befragte ihr Team im Frühjahr 2022 zweihundert junge Menschen im Alter zwischen elf und neunzehn Jahren.",
+      "zh": "为了创作一部漫画随笔，她的团队在2022年春季询问了两百名11至19岁的年轻人。",
+      "glosses": [
+        {
+          "surface": "befragte",
+          "lemma": "befragen",
+          "zh": "询问、访谈"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Die Gespräche gehören also zu einem früheren Projekt; ihre Ergebnisse sind keine neue, repräsentative Umfrage aus dem Jahr 2026.",
+      "zh": "因此，这些谈话属于一个较早的项目，其结果并不是2026年一项新的、具有代表性的调查。",
+      "glosses": [
+        {
+          "surface": "repräsentative",
+          "lemma": "repräsentativ",
+          "zh": "有代表性的"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Schneider berichtet, dass die Jugendlichen KI oft als Werkzeug betrachteten, das je nach Verwendung hilfreich oder schädlich sein kann.",
+      "zh": "Schneider说，年轻人常把人工智能视为工具，视用途不同，它可以有益，也可以有害。",
+      "glosses": [
+        {
+          "surface": "Verwendung",
+          "lemma": "Verwendung",
+          "zh": "使用方式"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Sie beschreibt ihre Perspektiven als differenziert und hebt hervor, dass Jugendliche in einer häufig von Erwachsenen geführten Debatte mehr Aufmerksamkeit verdienen.",
+      "zh": "她形容他们的视角有细致的区分，并强调在常由成年人主导的讨论中，年轻人值得获得更多关注。",
+      "glosses": [
+        {
+          "surface": "differenziert",
+          "lemma": "differenziert",
+          "zh": "有细致区分的"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Für die Autorin hängt die Bewertung technischer Entwicklungen außerdem davon ab, welche gesellschaftlichen Gruppen die Möglichkeit haben, ihre Erfahrungen sichtbar zu machen.",
+      "zh": "对这位作者而言，对技术发展的评价还取决于哪些社会群体有机会让自己的经验被看见。",
+      "glosses": [
+        {
+          "surface": "Bewertung",
+          "lemma": "Bewertung",
+          "zh": "评价"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Wer Daten besitzt, Plattformen kontrolliert oder Modelle trainiert, kann stärker mitbestimmen, welche Ziele als fortschrittlich gelten und welche Probleme weniger Beachtung finden.",
+      "zh": "拥有数据、控制平台或训练模型的人，更能参与决定哪些目标被认为是进步的，以及哪些问题受到较少关注。",
+      "glosses": [
+        {
+          "surface": "mitbestimmen",
+          "lemma": "mitbestimmen",
+          "zh": "共同决定、参与决定"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Schneider fordert deshalb, auch die Perspektiven von Datenarbeitenden, Menschen im Rohstoffabbau sowie Personen in Pflege, Bildung und anderen sorgenden Tätigkeiten einzubeziehen.",
+      "zh": "因此，Schneider要求将数据工作者、原材料开采者，以及护理、教育和其他照护工作从业者的视角纳入讨论。",
+      "glosses": [
+        {
+          "surface": "einzubeziehen",
+          "lemma": "einbeziehen",
+          "zh": "纳入"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Dabei geht es ihr ebenso um ökologische Grenzen, weil digitale Systeme materielle Voraussetzungen haben und beispielsweise Elektroschrott hinterlassen.",
+      "zh": "她同样关注生态限度，因为数字系统有物质基础，例如会留下电子垃圾。",
+      "glosses": [
+        {
+          "surface": "Voraussetzungen",
+          "lemma": "Voraussetzung",
+          "zh": "前提条件、基础"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "In ihrer wirtschaftlichen Betrachtung werden bestimmte Kosten auf Gesellschaft und Umwelt verlagert, statt vollständig im Preis einer Anwendung sichtbar zu sein.",
+      "zh": "在她的经济学分析中，某些成本被转移给社会与环境，而没有完整体现在应用的价格里。",
+      "glosses": [
+        {
+          "surface": "verlagert",
+          "lemma": "verlagern",
+          "zh": "转移"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Diese Aussagen sind Teil ihrer kritischen Analyse und keine im Interview neu gemessenen Umweltzahlen für einzelne Produkte.",
+      "zh": "这些说法是她批判性分析的一部分，并非访谈中新测得的具体产品环境数据。",
+      "glosses": [
+        {
+          "surface": "gemessenen",
+          "lemma": "messen",
+          "zh": "测量得到的"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Für die Bildung zieht Schneider daraus die Folgerung, dass der Umgang mit KI über das Formulieren möglichst geschickter Eingaben hinausgehen sollte.",
+      "zh": "对于教育，Schneider由此得出结论：与人工智能打交道不应局限于设计尽可能巧妙的输入。",
+      "glosses": [
+        {
+          "surface": "hinausgehen",
+          "lemma": "hinausgehen",
+          "zh": "超出"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Wichtiger sei auf Dauer, Quellen kritisch einzuordnen und zu fragen, wer eine Geschichte erzählt und welche anderen Sichtweisen fehlen.",
+      "zh": "她认为，长远来看，更重要的是批判性地理解来源，并追问谁在讲述故事、哪些其他观点缺席。",
+      "glosses": [
+        {
+          "surface": "einzuordnen",
+          "lemma": "einordnen",
+          "zh": "加以判断、理解其背景"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Ebenso wichtig findet sie die Fähigkeit, unterschiedliche Perspektiven gleichzeitig auszuhalten, ohne jede Spannung sofort durch eine einfache Antwort aufzulösen.",
+      "zh": "她同样重视同时容纳不同视角的能力，而不是立刻用简单答案消除每一种张力。",
+      "glosses": [
+        {
+          "surface": "auszuhalten",
+          "lemma": "aushalten",
+          "zh": "容纳、承受"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Ihre künstlerische Arbeit verbindet deshalb Analyse und Kreativität, anstatt diese beiden Zugänge als Gegensätze zu behandeln.",
+      "zh": "因此，她的艺术工作将分析与创造力结合起来，而不是把这两种方法视为对立面。",
+      "glosses": [
+        {
+          "surface": "Zugänge",
+          "lemma": "Zugang",
+          "zh": "理解事物的方法"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Eine gemeinsam mit der Ökonomin Miriam Beblo entwickelte Methode skizziert ein Thema mit sechs Sätzen und sechs Bildern.",
+      "zh": "她与经济学家Miriam Beblo共同开发的一种方法，用六句话和六幅图勾勒一个主题。",
+      "glosses": [
+        {
+          "surface": "skizziert",
+          "lemma": "skizzieren",
+          "zh": "勾勒"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Schneider sieht darin eine Möglichkeit, auch schwierige Fragen verständlicher zu machen und Menschen miteinander ins Gespräch zu bringen.",
+      "zh": "Schneider认为，这提供了一种让困难问题也更易理解、并促成人们交谈的可能。",
+      "glosses": [
+        {
+          "surface": "verständlicher",
+          "lemma": "verständlich",
+          "zh": "更加易懂的"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Der Comic ersetzt dabei nicht die Auseinandersetzung mit einem Thema, sondern eröffnet nach ihrer Erfahrung einen zusätzlichen Weg zu ihr.",
+      "zh": "根据她的经验，漫画并不取代对一个主题的深入探讨，而是为这种探讨开启另一条路径。",
+      "glosses": [
+        {
+          "surface": "Auseinandersetzung",
+          "lemma": "Auseinandersetzung",
+          "zh": "深入探讨"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Widersprüche",
+        "zh": "矛盾",
+        "sentenceId": "s2",
+        "lemma": "Widerspruch"
+      },
+      {
+        "text": "Wirklichkeit",
+        "zh": "现实",
+        "sentenceId": "s4",
+        "lemma": "Wirklichkeit"
+      },
+      {
+        "text": "auslösen",
+        "zh": "引发",
+        "sentenceId": "s8",
+        "lemma": "auslösen"
+      },
+      {
+        "text": "Einwand",
+        "zh": "异议",
+        "sentenceId": "s9",
+        "lemma": "Einwand"
+      },
+      {
+        "text": "Verwendung",
+        "zh": "使用方式",
+        "sentenceId": "s12",
+        "lemma": "Verwendung"
+      },
+      {
+        "text": "mitbestimmen",
+        "zh": "参与决定",
+        "sentenceId": "s15",
+        "lemma": "mitbestimmen"
+      },
+      {
+        "text": "Voraussetzungen",
+        "zh": "前提条件",
+        "sentenceId": "s17",
+        "lemma": "Voraussetzung"
+      },
+      {
+        "text": "Auseinandersetzung",
+        "zh": "深入探讨",
+        "sentenceId": "s26",
+        "lemma": "Auseinandersetzung"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "im Mittelpunkt",
+        "zh": "处于中心",
+        "sentenceId": "s1",
+        "lemma": "im Mittelpunkt"
+      },
+      {
+        "text": "Nach Schneiders Einschätzung",
+        "zh": "据Schneider判断",
+        "sentenceId": "s6",
+        "lemma": "nach jemandes Einschätzung"
+      },
+      {
+        "text": "gerecht werden",
+        "zh": "恰当反映、符合",
+        "sentenceId": "s9",
+        "lemma": "jemandem/etwas gerecht werden"
+      },
+      {
+        "text": "ins Gespräch zu bringen",
+        "zh": "促成交流",
+        "sentenceId": "s25",
+        "lemma": "ins Gespräch bringen"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s9",
+        "note": "nicht…, sondern…精确限定批评对象；gerecht werden支配第三格。"
+      },
+      {
+        "sentenceId": "s21",
+        "note": "sei是sein的第一虚拟式，用于转述观点并与叙述者自身判断保持区分。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Geschichte über KI begegnet dir häufiger: Fortschritt oder Bedrohung?",
+        "zh": "你更常遇到哪一种人工智能叙事：进步还是威胁？"
+      },
+      {
+        "text": "Welche Perspektive fehlt deiner Meinung nach in Technikdebatten?",
+        "zh": "你认为技术讨论中缺少哪一种视角？"
+      },
+      {
+        "text": "Wie würdest du ein kompliziertes Alltagsthema mit sechs Bildern erklären?",
+        "zh": "你会怎样用六幅图解释一个复杂的日常主题？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Diese Sichtweise berücksichtigt …, lässt aber … außer Acht.",
+        "zh": "这种观点考虑了……，却忽视了……。",
+        "note": "平衡地评估一种观点。"
+      },
+      {
+        "text": "Aus der Perspektive von … stellt sich die Frage anders.",
+        "zh": "从……的角度看，问题呈现出不同的样貌。",
+        "note": "引入另一群体的视角。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-fr-marchands-et-valeur-culturelle",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-blois-marchands-03",
+      "start": 52,
+      "answer": "terminée",
+      "options": [
+        "terminé",
+        "terminés",
+        "terminées",
+        "terminée"
+      ],
+      "explanation": "与阴性单数主语 la période 配合，用 terminée。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-blois-marchands-13",
+      "start": 101,
+      "answer": "conçue",
+      "options": [
+        "conçus",
+        "conçues",
+        "conçue",
+        "conçu"
+      ],
+      "explanation": "过去分词修饰阴性单数 une expérience，故为 conçue。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-blois-marchands-10",
+      "start": 61,
+      "answer": "appartenu",
+      "options": [
+        "appartenait",
+        "appartenu",
+        "appartenir",
+        "appartiennent"
+      ],
+      "explanation": "a 后用过去分词 appartenu，组成 a appartenu。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-blois-marchands-12",
+      "start": 25,
+      "answer": "numérisés",
+      "options": [
+        "numérisés",
+        "numérisé",
+        "numérisée",
+        "numérisées"
+      ],
+      "explanation": "修饰阳性复数 catalogues，过去分词用 numérisés。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-blois-marchands-15",
+      "start": 102,
+      "answer": "réduire",
+      "options": [
+        "réduit",
+        "réduisent",
+        "réduisait",
+        "réduire"
+      ],
+      "explanation": "sans 后接不定式；la 是宾语代词，不改变 réduire 的形式。"
+    }
+  ]
+}

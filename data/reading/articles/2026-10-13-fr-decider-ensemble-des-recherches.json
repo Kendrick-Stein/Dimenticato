@@ -1,0 +1,474 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-fr-decider-ensemble-des-recherches",
+  "storyId": "inrae-corae-consultation-2026-10-08",
+  "lang": "fr",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "title": "Décider ensemble des recherches agricoles",
+  "titleZh": "一起决定农业研究的方向",
+  "summaryZh": "INRAE与奥克西塔尼农业商会组织的CoRAE协商，让市民、农民、研究者和公共部门共同提出研究需求。五项优先事项已经形成，长期协调与实际效果仍需后续落实。",
+  "level": "B2",
+  "levelReason": "编辑估计 B2：较长的论证链、关系从句、抽象名词和政策讨论词汇；须理解协商方法、制度安排及“承诺不等于成效”的限定。非认证 CEFR 测评。",
+  "category": "society",
+  "topics": [
+    "公众参与",
+    "农业未来",
+    "研究优先事项"
+  ],
+  "source": {
+    "name": "INRAE et Chambre régionale d’agriculture d’Occitanie",
+    "title": "Agriculture occitane : une consultation inédite pour affronter la crise climatique et le défi du renouvellement des générations",
+    "url": "https://www.inrae.fr/actualites/agriculture-occitane-consultation-inedite-affronter-crise-climatique-defi-du-renouvellement-generations",
+    "publishedAt": "2026-10-08",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence 2.0 (Etalab)",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+  },
+  "attribution": "来源：INRAE et Chambre régionale d’agriculture d’Occitanie，《Agriculture occitane : une consultation inédite pour affronter la crise climatique et le défi du renouvellement des générations》，原文发布日期 2026-10-08，查阅日期 2026-10-13。原文链接见来源栏。仅使用机构自有正文；排除图片、书中文字、直接引语与外部链接材料。",
+  "adaptation": "Dimenticato 根据法语机构原文进行同语言节选、重组与分级改写，添加简中逐句翻译、语境注释和原创练习；不代表原机构认可。遵守 Licence Ouverte 2.0 的来源与日期标注及不得误导要求。",
+  "sentences": [
+    {
+      "id": "fr-corae-dialogue-01",
+      "text": "En Occitanie, décider des recherches utiles à l’agriculture ne relève plus seulement d’une discussion entre spécialistes : une consultation a associé citoyens, agriculteurs, scientifiques et responsables publics.",
+      "zh": "在奥克西塔尼，决定哪些研究对农业有用，不再只是专家之间的讨论：一次协商让市民、农民、科学家和公共部门负责人共同参与。",
+      "glosses": [
+        {
+          "surface": "relève",
+          "lemma": "relever",
+          "zh": "属于……范畴"
+        },
+        {
+          "surface": "consultation",
+          "lemma": "consultation",
+          "zh": "征询意见；协商"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-02",
+      "text": "Ses résultats ont été présentés le 7 octobre 2026 à Toulouse, puis exposés le lendemain dans un communiqué d’INRAE.",
+      "zh": "结果于2026年10月7日在图卢兹公布，次日由INRAE通过新闻稿介绍。",
+      "glosses": [
+        {
+          "surface": "lendemain",
+          "lemma": "lendemain",
+          "zh": "次日"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-03",
+      "text": "Baptisée CoRAE, la démarche était portée depuis un an par INRAE et la Chambre régionale d’agriculture d’Occitanie, avec plusieurs partenaires institutionnels.",
+      "zh": "这项名为CoRAE的行动由INRAE与奥克西塔尼大区农业商会联合推动了一年，并获得多个机构合作伙伴支持。",
+      "glosses": [
+        {
+          "surface": "démarche",
+          "lemma": "démarche",
+          "zh": "行动；工作过程"
+        },
+        {
+          "surface": "portée",
+          "lemma": "porter",
+          "zh": "推动的"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-04",
+      "text": "Elle répondait à deux difficultés liées entre elles : les effets du changement climatique sur les exploitations et le renouvellement insuffisant des générations agricoles.",
+      "zh": "它回应两个相互关联的难题：气候变化对农场的影响，以及农业代际接续不足。",
+      "glosses": [
+        {
+          "surface": "exploitations",
+          "lemma": "exploitation",
+          "zh": "农场；农业经营单位"
+        },
+        {
+          "surface": "renouvellement",
+          "lemma": "renouvellement",
+          "zh": "更新；接续"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-05",
+      "text": "Gel, sécheresses et incendies ont fragilisé la région ces dernières années, tandis que l’avenir de certaines activités rurales suscite des inquiétudes.",
+      "zh": "近年来，霜冻、干旱和火灾削弱了该地区的抗风险能力，而某些乡村活动的未来也引发担忧。",
+      "glosses": [
+        {
+          "surface": "tandis que",
+          "lemma": "tandis que",
+          "zh": "而；与此同时"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-06",
+      "text": "Plutôt que de fixer immédiatement des solutions, les organisateurs ont d’abord cherché à préciser les besoins auxquels la recherche pourrait répondre.",
+      "zh": "组织者没有立即确定解决方案，而是先努力明确研究可以回应哪些需求。",
+      "glosses": [
+        {
+          "surface": "besoins",
+          "lemma": "besoin",
+          "zh": "需求"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-07",
+      "text": "Pour cela, ils ont réuni deux types de groupes complémentaires : des citoyens tirés au sort et des représentants des parties concernées.",
+      "zh": "为此，他们召集了两类互为补充的群体：随机抽选的市民，以及相关利益方的代表。",
+      "glosses": [
+        {
+          "surface": "complémentaires",
+          "lemma": "complémentaire",
+          "zh": "互补的"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-08",
+      "text": "Cette organisation permettait de rapprocher les expériences des habitants, les contraintes professionnelles et les connaissances scientifiques dans un même travail de délibération.",
+      "zh": "这种安排使居民的经验、职业约束与科学知识能够在同一协商工作中相互对接。",
+      "glosses": [
+        {
+          "surface": "contraintes",
+          "lemma": "contrainte",
+          "zh": "约束；限制"
+        },
+        {
+          "surface": "délibération",
+          "lemma": "délibération",
+          "zh": "协商讨论"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-09",
+      "text": "Le processus a commencé par huit webinaires thématiques, destinés à construire un diagnostic commun de la situation agricole et alimentaire régionale.",
+      "zh": "这一过程首先安排了八场专题网络研讨会，旨在形成对大区农业与食品状况的共同诊断。",
+      "glosses": [
+        {
+          "surface": "diagnostic",
+          "lemma": "diagnostic",
+          "zh": "诊断；状况分析"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-10",
+      "text": "Deux rencontres, organisées en février et en avril 2026, ont ensuite permis d’explorer les besoins avant de formuler des propositions plus concrètes.",
+      "zh": "之后，在2026年2月和4月举行的两次会议先探讨需求，再进入更具体建议的形成阶段。",
+      "glosses": [
+        {
+          "surface": "formuler",
+          "lemma": "formuler",
+          "zh": "提出；表述"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-11",
+      "text": "Le 13 juin, une troisième rencontre a rassemblé 115 participants, dont des membres des deux types de groupes et des experts scientifiques.",
+      "zh": "6月13日，第三次会议汇集了115名参与者，其中包括两类群体的成员和科学专家。",
+      "glosses": [
+        {
+          "surface": "rassemblé",
+          "lemma": "rassembler",
+          "zh": "汇集了"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-12",
+      "text": "Les participants ont identifié 137 pistes de recherche, d’innovation et de développement, réparties entre huit grandes thématiques.",
+      "zh": "参与者确定了137条研究、创新与发展的方向，分属八大主题。",
+      "glosses": [
+        {
+          "surface": "réparties",
+          "lemma": "répartir",
+          "zh": "分布的"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-13",
+      "text": "À partir de ces contributions, les équipes de coordination ont dégagé cinq priorités, destinées à traiter les urgences sans perdre de vue les transformations à long terme.",
+      "zh": "协调团队从这些意见中提炼出五项优先事项，旨在应对紧迫问题，同时不忽视长期转型。",
+      "glosses": [
+        {
+          "surface": "dégagé",
+          "lemma": "dégager",
+          "zh": "提炼出了"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-14",
+      "text": "La première concerne l’eau : il s’agit de développer des outils qui favorisent une utilisation économe, efficace et équitable de cette ressource.",
+      "zh": "第一项涉及水：需要开发工具，促进对这一资源的节约、高效和公平利用。",
+      "glosses": [
+        {
+          "surface": "équitable",
+          "lemma": "équitable",
+          "zh": "公平的"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-15",
+      "text": "La deuxième interroge les pratiques agricoles, les espèces et les variétés qui pourraient convenir aux territoires occitans à l’horizon 2050.",
+      "zh": "第二项探讨面向2050年，哪些农业做法、物种和品种可能适合奥克西塔尼各地。",
+      "glosses": [
+        {
+          "surface": "convenir",
+          "lemma": "convenir",
+          "zh": "适合"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-16",
+      "text": "La troisième porte sur un élevage durable, capable de s’adapter à des pressions climatiques, sanitaires, économiques et démographiques qui se combinent.",
+      "zh": "第三项关注可持续畜牧业，使其能够适应相互叠加的气候、卫生、经济与人口压力。",
+      "glosses": [
+        {
+          "surface": "élevage",
+          "lemma": "élevage",
+          "zh": "畜牧业"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-17",
+      "text": "La quatrième élargit la réflexion aux territoires : comment anticiper plusieurs crises liées entre elles et mieux en absorber les effets ?",
+      "zh": "第四项把思考扩大到地区层面：如何预判多种相互关联的危机，并更好地承受其影响？",
+      "glosses": [
+        {
+          "surface": "anticiper",
+          "lemma": "anticiper",
+          "zh": "预判"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-18",
+      "text": "Enfin, réduire l’usage des pesticides suppose de travailler sur les solutions techniques de remplacement, les enjeux de santé et les conditions de diffusion des alternatives.",
+      "zh": "最后，减少农药使用需要研究替代技术方案、健康问题以及替代方案的推广条件。",
+      "glosses": [
+        {
+          "surface": "diffusion",
+          "lemma": "diffusion",
+          "zh": "推广；传播"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-19",
+      "text": "L’intérêt de la consultation ne réside pourtant pas uniquement dans cette liste de sujets, car de nombreux projets existent déjà dans la région.",
+      "zh": "然而，这次协商的意义并不只在于这份议题清单，因为当地已经有许多项目。",
+      "glosses": [
+        {
+          "surface": "réside",
+          "lemma": "résider",
+          "zh": "在于"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-20",
+      "text": "Le communiqué souligne surtout un manque de vision globale et de coordination, qui limite la traduction des connaissances en changements concrets sur le terrain.",
+      "zh": "新闻稿尤其指出缺乏整体视野与协调，这限制了知识转化为实际现场改变。",
+      "glosses": [
+        {
+          "surface": "souligne",
+          "lemma": "souligner",
+          "zh": "强调"
+        },
+        {
+          "surface": "limite",
+          "lemma": "limiter",
+          "zh": "限制"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-21",
+      "text": "CoRAE propose donc un dispositif durable, associant des responsables publics et des acteurs de la recherche pour organiser le suivi des cinq priorités.",
+      "zh": "因此，CoRAE提出一个长期机制，将公共部门负责人和研究参与方联合起来，组织对五项优先事项的跟进。",
+      "glosses": [
+        {
+          "surface": "suivi",
+          "lemma": "suivi",
+          "zh": "跟进"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-22",
+      "text": "Des groupes thématiques mobilisables rapidement et un inventaire partagé des projets, régulièrement actualisé, doivent également aider les institutions à mieux articuler leurs activités.",
+      "zh": "可快速动员的专题组以及定期更新、共同使用的项目清单，也将帮助各机构更好地衔接工作。",
+      "glosses": [
+        {
+          "surface": "actualisé",
+          "lemma": "actualiser",
+          "zh": "更新的"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-23",
+      "text": "Le 7 octobre, les institutions impliquées ont signé un protocole d’accord pour mettre en œuvre les priorités et maintenir cette coordination au-delà de la consultation.",
+      "zh": "10月7日，参与机构签署了一份协议，以落实这些优先事项，并在协商结束后继续保持协调。",
+      "glosses": [
+        {
+          "surface": "impliquées",
+          "lemma": "impliquer",
+          "zh": "参与的"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-24",
+      "text": "Cet engagement constitue une étape collective ; il ne démontre pas encore que les solutions envisagées ont amélioré les résultats des exploitations.",
+      "zh": "这一承诺是集体行动的一个阶段；它尚不能证明设想中的方案已经改善了农场的经营结果。",
+      "glosses": [
+        {
+          "surface": "envisagées",
+          "lemma": "envisager",
+          "zh": "设想中的"
+        }
+      ]
+    },
+    {
+      "id": "fr-corae-dialogue-25",
+      "text": "L’enjeu est désormais de prolonger le dialogue et de relier durablement la production de connaissances aux besoins exprimés par celles et ceux qui vivent sur ces territoires.",
+      "zh": "现在的关键，是延续对话，让知识生产与生活在这些地区的人们所表达的需求形成持久联系。",
+      "glosses": [
+        {
+          "surface": "prolonger",
+          "lemma": "prolonger",
+          "zh": "延续"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "complémentaires",
+        "zh": "互补的",
+        "sentenceId": "fr-corae-dialogue-07"
+      },
+      {
+        "text": "rassemblé",
+        "zh": "汇集了",
+        "sentenceId": "fr-corae-dialogue-11"
+      },
+      {
+        "text": "réparties",
+        "zh": "分布的",
+        "sentenceId": "fr-corae-dialogue-12"
+      },
+      {
+        "text": "impliquées",
+        "zh": "参与的",
+        "sentenceId": "fr-corae-dialogue-23"
+      },
+      {
+        "text": "envisagées",
+        "zh": "设想中的",
+        "sentenceId": "fr-corae-dialogue-24"
+      },
+      {
+        "text": "délibération",
+        "zh": "协商讨论",
+        "sentenceId": "fr-corae-dialogue-08"
+      },
+      {
+        "text": "équitable",
+        "zh": "公平的",
+        "sentenceId": "fr-corae-dialogue-14"
+      },
+      {
+        "text": "suivi",
+        "zh": "跟进",
+        "sentenceId": "fr-corae-dialogue-21"
+      },
+      {
+        "text": "contraintes",
+        "zh": "约束",
+        "sentenceId": "fr-corae-dialogue-08"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "tirés au sort",
+        "zh": "随机抽选的",
+        "sentenceId": "fr-corae-dialogue-07"
+      },
+      {
+        "text": "sans perdre de vue",
+        "zh": "同时不忽视",
+        "sentenceId": "fr-corae-dialogue-13"
+      },
+      {
+        "text": "à l’horizon 2050",
+        "zh": "面向2050年",
+        "sentenceId": "fr-corae-dialogue-15"
+      },
+      {
+        "text": "sur le terrain",
+        "zh": "在实际现场",
+        "sentenceId": "fr-corae-dialogue-20"
+      },
+      {
+        "text": "mettre en œuvre",
+        "zh": "落实；实施",
+        "sentenceId": "fr-corae-dialogue-23"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-corae-dialogue-13",
+        "note": "sans + 不定式引入需要同时避免的情况；用于说明短期行动与长期目标的平衡。"
+      },
+      {
+        "sentenceId": "fr-corae-dialogue-24",
+        "note": "ne…pas encore 表示“尚未”，区分制度承诺与已经得到证明的成效。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Comment associer les habitants au choix des recherches sans négliger l’expertise scientifique ?",
+        "zh": "如何让居民参与研究选择，同时不忽视科学专业知识？"
+      },
+      {
+        "text": "Parmi les cinq priorités, laquelle vous paraît la plus urgente, et pourquoi ?",
+        "zh": "五项优先事项中，你认为哪项最紧迫？为什么？"
+      },
+      {
+        "text": "Quelles informations faudrait-il suivre pour savoir si la coordination produit des effets concrets ?",
+        "zh": "应跟踪哪些信息，才能知道协调是否产生了实际效果？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Cette priorité me semble essentielle, à condition de…",
+        "zh": "我觉得这项优先事项很重要，前提是……",
+        "note": "原创口语表达，可按自己的观点补充。"
+      },
+      {
+        "text": "Il faudrait distinguer l’engagement annoncé des résultats observés.",
+        "zh": "应该区分已经宣布的承诺与观察到的结果。",
+        "note": "原创口语表达，可按自己的观点补充。"
+      }
+    ]
+  }
+}

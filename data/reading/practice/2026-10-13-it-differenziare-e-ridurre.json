@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-it-differenziare-e-ridurre",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-differenziare-e-ridurre-02",
+      "start": 113,
+      "answer": "abitudini",
+      "options": [
+        "abitudini",
+        "abitudine",
+        "abituale",
+        "abitualmente"
+      ],
+      "explanation": "sulle = su + le，后接阴性复数名词 abitudini，指家庭习惯。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-differenziare-e-ridurre-03",
+      "start": 56,
+      "answer": "tonnellate",
+      "options": [
+        "tonnellate",
+        "tonnellata",
+        "tonnellaggio",
+        "tonnellaggi"
+      ],
+      "explanation": "milioni di 后这里需要计量单位复数 tonnellate，表示数百万吨。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-differenziare-e-ridurre-05",
+      "start": 49,
+      "answer": "raggiunto",
+      "options": [
+        "raggiunto",
+        "raggiungere",
+        "raggiunge",
+        "raggiungendo"
+      ],
+      "explanation": "ha 后接过去分词 raggiunto，构成“达到了”的近过去时。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-differenziare-e-ridurre-07",
+      "start": 63,
+      "answer": "differenze",
+      "options": [
+        "differenze",
+        "differenza",
+        "differente",
+        "differire"
+      ],
+      "explanation": "esistono 是复数谓语，后面的主语为复数名词 differenze，并由 importanti 修饰。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-differenziare-e-ridurre-12",
+      "start": 20,
+      "answer": "scaduti",
+      "options": [
+        "scaduti",
+        "scaduto",
+        "scaduta",
+        "scadere"
+      ],
+      "explanation": "形容词用法的过去分词要与阳性复数 farmaci 一致，故用 scaduti。"
+    }
+  ]
+}

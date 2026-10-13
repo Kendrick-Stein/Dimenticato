@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-fr-decider-ensemble-des-recherches",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-corae-dialogue-07",
+      "start": 47,
+      "answer": "complémentaires",
+      "options": [
+        "complémentaire",
+        "complémentarité",
+        "compléter",
+        "complémentaires"
+      ],
+      "explanation": "修饰复数 groupes，用形容词复数 complémentaires；其余形式不符合这里的词性或数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-corae-dialogue-11",
+      "start": 38,
+      "answer": "rassemblé",
+      "options": [
+        "rassemblent",
+        "rassemblait",
+        "rassemblé",
+        "rassembler"
+      ],
+      "explanation": "a 后接过去分词 rassemblé，构成复合过去时。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-corae-dialogue-12",
+      "start": 90,
+      "answer": "réparties",
+      "options": [
+        "répartie",
+        "réparties",
+        "réparti",
+        "répartis"
+      ],
+      "explanation": "修饰阴性复数 pistes，故为 réparties。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-corae-dialogue-23",
+      "start": 31,
+      "answer": "impliquées",
+      "options": [
+        "impliquées",
+        "impliqué",
+        "impliqués",
+        "impliquée"
+      ],
+      "explanation": "修饰阴性复数 institutions，用 impliquées。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-corae-dialogue-24",
+      "start": 92,
+      "answer": "envisagées",
+      "options": [
+        "envisagé",
+        "envisagés",
+        "envisagée",
+        "envisagées"
+      ],
+      "explanation": "修饰阴性复数 solutions，故为 envisagées。"
+    }
+  ]
+}

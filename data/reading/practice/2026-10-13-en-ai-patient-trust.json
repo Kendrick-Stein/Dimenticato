@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-en-ai-patient-trust",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 32,
+      "answer": "throughout",
+      "options": [
+        "throughout",
+        "although",
+        "beside",
+        "unless"
+      ],
+      "explanation": "在整个……期间。介词，强调覆盖完整使用期间。 请还原本文的原词形。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 31,
+      "answer": "recommendations",
+      "options": [
+        "recommends",
+        "recommended",
+        "recommendations",
+        "recommending"
+      ],
+      "explanation": "建议。复数名词，与44搭配。 请还原本文的原词形。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 35,
+      "answer": "commitment",
+      "options": [
+        "committed",
+        "commitment",
+        "committing",
+        "committee"
+      ],
+      "explanation": "承诺。a commitment to +名词；此处不等于已经完成。 请还原本文的原词形。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 43,
+      "answer": "assessment",
+      "options": [
+        "assessed",
+        "assessing",
+        "assess",
+        "assessment"
+      ],
+      "explanation": "评估。可数名词单数，与a single搭配。 请还原本文的原词形。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s16",
+      "start": 85,
+      "answer": "redress",
+      "options": [
+        "redress",
+        "regress",
+        "address",
+        "undress"
+      ],
+      "explanation": "补救；纠正损害。seek redress是寻求补救，不一定指经济赔偿。 请还原本文的原词形。"
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-it-differenziare-e-ridurre",
+  "storyId": "it-2026-10-07-household-recycling",
+  "lang": "it",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "environment",
+  "topics": [
+    "垃圾分类",
+    "家庭习惯",
+    "城市服务"
+  ],
+  "title": "Separare meglio, produrre meno rifiuti",
+  "titleZh": "更好分类，也要减少垃圾",
+  "summaryZh": "Istat于2026年10月7日发布的报告显示，2024年垃圾分类收集占比上升，但城市垃圾总量也增加。2025年家庭自报的分类习惯有所改善，电池与过期药品却出现小幅倒退。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：围绕日常垃圾分类连接现象、比较与解释，使用过去时、关系从句、转折及少量统计术语；具体数字辅助理解。非认证 CEFR 测评。",
+  "source": {
+    "name": "Istat",
+    "title": "Raccolta differenziata: comportamenti civici e politiche sostenibilità urbana – Anni 2024-2025",
+    "url": "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/",
+    "publishedAt": "2026-10-07",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://www.istat.it/note-legali/"
+  },
+  "attribution": "来源：Istat — Italian society and everyday life，《Raccolta differenziata: comportamenti civici e politiche sostenibilità urbana – Anni 2024-2025》，2026-10-07；2026-10-13查阅。依据 CC BY 4.0 使用机构文字；原文与许可链接见上。未使用图片、标志、第三方引语或链接作品。",
+  "adaptation": "Dimenticato 根据意大利语机构原文进行同语言节选、重组和难度调整，添加简体中文逐句翻译、语境注释、学习总结及原创练习。保留数据或事件年份；不是逐字转载，也不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "it-differenziare-e-ridurre-01",
+      "text": "Separare carta, plastica e vetro è un gesto quotidiano per molte famiglie italiane, ma basta per risolvere il problema dei rifiuti?",
+      "zh": "对许多意大利家庭来说，把纸、塑料和玻璃分开是日常行为，但这样就足以解决垃圾问题吗？",
+      "glosses": [
+        {
+          "surface": "Separare",
+          "lemma": "separare",
+          "zh": "分开"
+        },
+        {
+          "surface": "quotidiano",
+          "lemma": "quotidiano",
+          "zh": "日常的"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-02",
+      "text": "Un rapporto dell’Istat, pubblicato il 7 ottobre 2026, presenta dati sulla produzione di rifiuti nel 2024 e sulle abitudini delle famiglie nel 2025.",
+      "zh": "Istat于2026年10月7日发布的一份报告介绍了2024年的垃圾产生数据和2025年的家庭习惯。",
+      "glosses": [
+        {
+          "surface": "rapporto",
+          "lemma": "rapporto",
+          "zh": "报告"
+        },
+        {
+          "surface": "abitudini",
+          "lemma": "abitudine",
+          "zh": "习惯"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-03",
+      "text": "Nel 2024, in Italia sono stati prodotti 29,9 milioni di tonnellate di rifiuti urbani, il 2,3% in più rispetto all’anno precedente.",
+      "zh": "2024年，意大利产生了2990万吨城市垃圾，比上一年增加2.3%。",
+      "glosses": [
+        {
+          "surface": "prodotti",
+          "lemma": "produrre",
+          "zh": "产生的"
+        },
+        {
+          "surface": "tonnellate",
+          "lemma": "tonnellata",
+          "zh": "吨"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-04",
+      "text": "La quantità media per abitante è stata di 507,7 chili, cioè 11,5 chili in più rispetto al 2023.",
+      "zh": "人均数量为507.7千克，即比2023年增加11.5千克。",
+      "glosses": [
+        {
+          "surface": "abitante",
+          "lemma": "abitante",
+          "zh": "居民"
+        },
+        {
+          "surface": "quantità",
+          "lemma": "quantità",
+          "zh": "数量"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-05",
+      "text": "Nello stesso tempo, la raccolta differenziata ha raggiunto il 67,7% dei rifiuti urbani: un punto percentuale in più in un anno.",
+      "zh": "与此同时，分类收集占城市垃圾的比例达到67.7%，一年提高了一个百分点。",
+      "glosses": [
+        {
+          "surface": "raggiunto",
+          "lemma": "raggiungere",
+          "zh": "达到了"
+        },
+        {
+          "surface": "punto percentuale",
+          "lemma": "punto percentuale",
+          "zh": "百分点"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-06",
+      "text": "Le due informazioni vanno lette insieme: cresce la parte raccolta separatamente, mentre aumenta anche il totale dei rifiuti prodotti.",
+      "zh": "这两条信息需要结合起来看：分类收集的部分占比提高了，而垃圾产生总量也在增加。",
+      "glosses": [
+        {
+          "surface": "separatamente",
+          "lemma": "separatamente",
+          "zh": "分别地"
+        },
+        {
+          "surface": "mentre",
+          "lemma": "mentre",
+          "zh": "而；与此同时"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-07",
+      "text": "I risultati non sono uguali in tutto il Paese, perché esistono differenze importanti tra le diverse aree geografiche.",
+      "zh": "全国各地的结果并不相同，因为不同地理区域之间存在重要差异。",
+      "glosses": [
+        {
+          "surface": "differenze",
+          "lemma": "differenza",
+          "zh": "差异"
+        },
+        {
+          "surface": "aree",
+          "lemma": "area",
+          "zh": "区域"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-08",
+      "text": "Nel Nord-est, per esempio, la raccolta differenziata rappresenta il 77,8% del totale, mentre nel Nord-ovest arriva al 71,3%.",
+      "zh": "例如，东北部的分类收集占总量77.8%，西北部则为71.3%。",
+      "glosses": [
+        {
+          "surface": "rappresenta",
+          "lemma": "rappresentare",
+          "zh": "占；代表"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-09",
+      "text": "Passando alle risposte delle famiglie, nel 2025 il 93% dichiara di separare sempre la carta, il 92,7% la plastica e il 92,2% il vetro.",
+      "zh": "再看家庭的回答，2025年，93%的家庭表示总会把纸分开，塑料为92.7%，玻璃为92.2%。",
+      "glosses": [
+        {
+          "surface": "risposte",
+          "lemma": "risposta",
+          "zh": "回答"
+        },
+        {
+          "surface": "dichiara",
+          "lemma": "dichiarare",
+          "zh": "表示；声称"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-10",
+      "text": "Queste percentuali descrivono comportamenti dichiarati dalle famiglie, mentre il dato del 67,7% riguarda la quota dei rifiuti raccolti separatamente.",
+      "zh": "这些百分比描述的是家庭自报行为，而67.7%的数据涉及分类收集的垃圾占比。",
+      "glosses": [
+        {
+          "surface": "dichiarati",
+          "lemma": "dichiarare",
+          "zh": "自报的"
+        },
+        {
+          "surface": "quota",
+          "lemma": "quota",
+          "zh": "比例"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-11",
+      "text": "Non tutti i materiali mostrano però un miglioramento: la quota di famiglie che separa sempre le batterie usate scende dal 52,8% del 2021 al 51,3% del 2025.",
+      "zh": "然而，并非所有材料都有改善：总是把废旧电池分开收集的家庭比例，从2021年的52.8%降至2025年的51.3%。",
+      "glosses": [
+        {
+          "surface": "miglioramento",
+          "lemma": "miglioramento",
+          "zh": "改善"
+        },
+        {
+          "surface": "batterie",
+          "lemma": "batteria",
+          "zh": "电池"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-12",
+      "text": "Anche per i farmaci scaduti si osserva un piccolo calo, dal 54,6% al 54% nello stesso periodo.",
+      "zh": "同期，过期药品分类收集的比例也略降，从54.6%降至54%。",
+      "glosses": [
+        {
+          "surface": "scaduti",
+          "lemma": "scadere",
+          "zh": "过期的"
+        },
+        {
+          "surface": "calo",
+          "lemma": "calo",
+          "zh": "下降"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-13",
+      "text": "La separazione dei rifiuti organici, invece, passa dall’86,7% delle famiglie nel 2021 all’89,8% nel 2025.",
+      "zh": "相比之下，对有机垃圾进行分类的家庭比例从2021年的86.7%升至2025年的89.8%。",
+      "glosses": [
+        {
+          "surface": "organici",
+          "lemma": "organico",
+          "zh": "有机的"
+        }
+      ]
+    },
+    {
+      "id": "it-differenziare-e-ridurre-14",
+      "text": "Infine, l’Istat spiega che servizi più efficienti possono registrare rifiuti che prima non venivano misurati, facendo aumentare il totale osservato in alcuni territori.",
+      "zh": "最后，Istat解释说，更高效的服务可能记录到以前未被计量的垃圾，从而使部分地区观测到的总量增加。",
+      "glosses": [
+        {
+          "surface": "efficienti",
+          "lemma": "efficiente",
+          "zh": "高效的"
+        },
+        {
+          "surface": "misurati",
+          "lemma": "misurare",
+          "zh": "被计量的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "abitudini",
+        "zh": "习惯",
+        "sentenceId": "it-differenziare-e-ridurre-02",
+        "note": "阴性复数，单数 l’abitudine。"
+      },
+      {
+        "text": "tonnellate",
+        "zh": "吨",
+        "sentenceId": "it-differenziare-e-ridurre-03",
+        "note": "阴性复数，单数 la tonnellata。"
+      },
+      {
+        "text": "abitante",
+        "zh": "居民",
+        "sentenceId": "it-differenziare-e-ridurre-04",
+        "note": "per abitante 在此指人均。"
+      },
+      {
+        "text": "raggiunto",
+        "zh": "达到",
+        "sentenceId": "it-differenziare-e-ridurre-05",
+        "note": "ha raggiunto：近过去时。"
+      },
+      {
+        "text": "separatamente",
+        "zh": "分别地",
+        "sentenceId": "it-differenziare-e-ridurre-06",
+        "note": "副词，修饰 raccolta。"
+      },
+      {
+        "text": "differenze",
+        "zh": "差异",
+        "sentenceId": "it-differenziare-e-ridurre-07",
+        "note": "阴性复数，单数 la differenza。"
+      },
+      {
+        "text": "batterie",
+        "zh": "电池",
+        "sentenceId": "it-differenziare-e-ridurre-11",
+        "note": "阴性复数，单数 la batteria。"
+      },
+      {
+        "text": "scaduti",
+        "zh": "过期的",
+        "sentenceId": "it-differenziare-e-ridurre-12",
+        "note": "阳性复数，修饰 farmaci。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "rispetto all’anno precedente",
+        "zh": "与上一年相比",
+        "sentenceId": "it-differenziare-e-ridurre-03",
+        "note": "rispetto a 表示比较的参照。"
+      },
+      {
+        "text": "Nello stesso tempo",
+        "zh": "与此同时",
+        "sentenceId": "it-differenziare-e-ridurre-05",
+        "note": "连接同时发生的两种趋势。"
+      },
+      {
+        "text": "per esempio",
+        "zh": "例如",
+        "sentenceId": "it-differenziare-e-ridurre-08",
+        "note": "引入具体例子。"
+      },
+      {
+        "text": "Non tutti",
+        "zh": "并非全部",
+        "sentenceId": "it-differenziare-e-ridurre-11",
+        "note": "部分否定，不能译作“全部都不”。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-differenziare-e-ridurre-06",
+        "note": "冒号解释“结合起来看”；mentre 连接同时出现、看似矛盾的趋势。"
+      },
+      {
+        "sentenceId": "it-differenziare-e-ridurre-10",
+        "note": "mentre 对比家庭自报的行为与按垃圾量计算的比例，学习表达统计口径差异。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali materiali è più facile separare a casa tua? Perché?",
+        "zh": "你家里哪些材料最容易分类？为什么？"
+      },
+      {
+        "text": "Come può un servizio pubblico rendere più semplice la raccolta differenziata?",
+        "zh": "公共服务怎样让垃圾分类更方便？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Rispetto a qualche anno fa…",
+        "zh": "与几年前相比……",
+        "note": "用来比较习惯的变化。"
+      },
+      {
+        "text": "Il servizio sarebbe più comodo se…",
+        "zh": "如果……，服务会更方便。",
+        "note": "se 后可接过去未完成时虚拟式，例如 fosse più vicino。"
+      }
+    ]
+  }
+}

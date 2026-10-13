@@ -1,0 +1,338 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-de-ki-woerter-im-alltag",
+  "storyId": "bpb-ai-terms-2026-08-20",
+  "lang": "de",
+  "date": "2026-10-13",
+  "title": "KI-Wörter im Alltag",
+  "titleZh": "日常生活中的人工智能词语",
+  "summaryZh": "这篇8月发布的术语介绍帮助读者区分聊天机器人、生成式人工智能与提示语，并认识错误信息和偏差。",
+  "level": "A2",
+  "levelReason": "短句为主，用日常电脑操作解释新词；少量weil和wenn从句有中文与词注支持。级别为编辑估计。",
+  "category": "technology",
+  "topics": [
+    "日常AI",
+    "数字词汇",
+    "信息判断"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Bundeszentrale für politische Bildung — Werkstatt",
+    "title": "Begriffe rund um KI",
+    "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
+    "publishedAt": "2026-08-20",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+  },
+  "attribution": "Bundeszentrale für politische Bildung, Werkstatt, bpb.de, „Begriffe rund um KI“, 2026-08-20. Quelle: https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/ Lizenz: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/deed.de).",
+  "adaptation": "Dimenticato德语教学改写：删节、重组并简化原文，新增中文逐句翻译、语境词注、学习总结和口语练习；配套练习亦为改编。全部改编文字及新增教学材料以CC BY-SA 4.0发布。未使用图片、漫画、音视频或另有署名的第三方引语；不表示原作者或bpb认可本版本。原文日期与本学习版日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Im August hat die Werkstatt der bpb wichtige Wörter zum Thema künstliche Intelligenz erklärt.",
+      "zh": "8月，bpb的Werkstatt栏目解释了人工智能主题中的重要词语。",
+      "glosses": [
+        {
+          "surface": "erklärt",
+          "lemma": "erklären",
+          "zh": "解释了"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Die kurze Form dafür ist KI.",
+      "zh": "它的简称是KI。",
+      "glosses": [
+        {
+          "surface": "kurze",
+          "lemma": "kurz",
+          "zh": "简短的"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Mit dieser Technik können Computer verschiedene Aufgaben bearbeiten, zum Beispiel Texte schreiben oder Fragen beantworten.",
+      "zh": "借助这项技术，电脑可以处理不同的任务，例如写文字或回答问题。",
+      "glosses": [
+        {
+          "surface": "Aufgaben",
+          "lemma": "Aufgabe",
+          "zh": "任务"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Ein Chatbot ist ein Programm für Gespräche mit Menschen.",
+      "zh": "聊天机器人是一个用于与人交谈的程序。",
+      "glosses": [
+        {
+          "surface": "Gespräche",
+          "lemma": "Gespräch",
+          "zh": "交谈"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Man kann ihm eine Nachricht schreiben oder mit ihm sprechen.",
+      "zh": "人们可以给它写消息，或与它说话。",
+      "glosses": [
+        {
+          "surface": "Nachricht",
+          "lemma": "Nachricht",
+          "zh": "消息"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Auf einer Website beantwortet er zum Beispiel Fragen von Kunden.",
+      "zh": "例如，它在网站上回答顾客的问题。",
+      "glosses": [
+        {
+          "surface": "Kunden",
+          "lemma": "Kunde",
+          "zh": "顾客"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Generative KI kann neue Inhalte machen: Texte, Bilder oder auch Musik.",
+      "zh": "生成式人工智能可以制作新内容：文字、图像，也可以是音乐。",
+      "glosses": [
+        {
+          "surface": "Inhalte",
+          "lemma": "Inhalt",
+          "zh": "内容"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Ein Sprachmodell arbeitet mit Sprache und kann auch Texte übersetzen.",
+      "zh": "语言模型处理语言，也可以翻译文字。",
+      "glosses": [
+        {
+          "surface": "übersetzen",
+          "lemma": "übersetzen",
+          "zh": "翻译"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Die Eingabe für eine KI heißt oft Prompt.",
+      "zh": "给人工智能输入的内容常被称为提示语。",
+      "glosses": [
+        {
+          "surface": "Eingabe",
+          "lemma": "Eingabe",
+          "zh": "输入的内容"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Dabei sagt man dem Programm, was es tun soll.",
+      "zh": "这时，人们告诉程序它应当做什么。",
+      "glosses": [
+        {
+          "surface": "soll",
+          "lemma": "sollen",
+          "zh": "应当"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Eine klare Frage hilft der KI bei der Antwort.",
+      "zh": "清楚的问题有助于人工智能作答。",
+      "glosses": [
+        {
+          "surface": "klare",
+          "lemma": "klar",
+          "zh": "清楚的"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Aber auch eine gut formulierte Antwort kann falsch sein.",
+      "zh": "但是，措辞很好的回答也可能是错的。",
+      "glosses": [
+        {
+          "surface": "falsch",
+          "lemma": "falsch",
+          "zh": "错误的"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Manche Systeme erfinden Informationen; dafür gibt es das Wort Halluzination.",
+      "zh": "一些系统会编造信息；对此有“幻觉”这个说法。",
+      "glosses": [
+        {
+          "surface": "erfinden",
+          "lemma": "erfinden",
+          "zh": "编造"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Auch die Daten sind wichtig, weil die Programme mit ihnen lernen.",
+      "zh": "数据也很重要，因为程序利用它们学习。",
+      "glosses": [
+        {
+          "surface": "Daten",
+          "lemma": "Daten",
+          "zh": "数据"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Wenn diese Daten einseitig sind, kann die KI Vorurteile übernehmen.",
+      "zh": "如果这些数据片面，人工智能就可能承袭偏见。",
+      "glosses": [
+        {
+          "surface": "Vorurteile",
+          "lemma": "Vorurteil",
+          "zh": "偏见"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Diesen Fehler nennt man KI-Bias.",
+      "zh": "这种偏差称为人工智能偏差。",
+      "glosses": [
+        {
+          "surface": "Fehler",
+          "lemma": "Fehler",
+          "zh": "错误、偏差"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Aufgaben",
+        "zh": "任务",
+        "sentenceId": "s3",
+        "lemma": "Aufgabe"
+      },
+      {
+        "text": "Gespräche",
+        "zh": "交谈",
+        "sentenceId": "s4",
+        "lemma": "Gespräch"
+      },
+      {
+        "text": "Nachricht",
+        "zh": "消息",
+        "sentenceId": "s5",
+        "lemma": "Nachricht"
+      },
+      {
+        "text": "Kunden",
+        "zh": "顾客",
+        "sentenceId": "s6",
+        "lemma": "Kunde"
+      },
+      {
+        "text": "übersetzen",
+        "zh": "翻译",
+        "sentenceId": "s8",
+        "lemma": "übersetzen"
+      },
+      {
+        "text": "Eingabe",
+        "zh": "输入的内容",
+        "sentenceId": "s9",
+        "lemma": "Eingabe"
+      },
+      {
+        "text": "erfinden",
+        "zh": "编造",
+        "sentenceId": "s13",
+        "lemma": "erfinden"
+      },
+      {
+        "text": "Vorurteile",
+        "zh": "偏见",
+        "sentenceId": "s15",
+        "lemma": "Vorurteil"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Fragen beantworten",
+        "zh": "回答问题",
+        "sentenceId": "s3",
+        "lemma": "Fragen beantworten"
+      },
+      {
+        "text": "mit ihm sprechen",
+        "zh": "与它说话",
+        "sentenceId": "s5",
+        "lemma": "mit jemandem sprechen"
+      },
+      {
+        "text": "bei der Antwort",
+        "zh": "在作答方面",
+        "sentenceId": "s11",
+        "lemma": "bei der Antwort"
+      },
+      {
+        "text": "Vorurteile übernehmen",
+        "zh": "承袭偏见",
+        "sentenceId": "s15",
+        "lemma": "Vorurteile übernehmen"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "auch…kann…表达“即使如此也可能”，不把流畅的表达等同于正确。"
+      },
+      {
+        "sentenceId": "s14",
+        "note": "weil引导原因从句，动词lernen放在从句末尾。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Aufgabe möchtest du mit einem Chatbot bearbeiten?",
+        "zh": "你想用聊天机器人处理什么任务？"
+      },
+      {
+        "text": "Warum kann eine klare Antwort trotzdem falsch sein?",
+        "zh": "为什么一个清楚的回答仍可能是错的？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich möchte wissen, ob …",
+        "zh": "我想知道是否……",
+        "note": "ob引导间接疑问句，动词放在从句末尾。"
+      },
+      {
+        "text": "Zum Beispiel kann man …",
+        "zh": "例如，人们可以……",
+        "note": "举例说明一种用途。"
+      }
+    ]
+  }
+}

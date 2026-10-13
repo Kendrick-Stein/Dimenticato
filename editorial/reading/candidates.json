@@ -442,18 +442,18 @@
       "collectedAt": "2026-10-10",
       "category": "health",
       "topics": [
-        "医疗AI",
-        "持续监督",
-        "公众信任"
+        "医疗技术",
+        "患者知情",
+        "持续监督"
       ],
-      "level": "B2",
+      "level": "B1",
       "priority": 3,
       "status": "verified",
-      "editorialNote": "口语角度：AI医疗工具上线后是否仍需持续监督？怎样兼顾创新与公众信任？这是监管新闻，不是医疗建议；接受44项建议不等于全部已实施。排除Supporting quotes及第三方引语。",
+      "editorialNote": "B1; 290 body words. Independent editorial review complete; separate immutable edition 2026-10-13-en-ai-patient-trust and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-10",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-13",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
@@ -508,10 +508,10 @@
         },
         "publisher": {
           "verified": true,
-          "evidenceUrl": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
           "names": [
             "Medicines and Healthcare products Regulatory Agency"
           ],
+          "evidenceUrl": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
           "institutionUrl": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency"
         },
         "freshness": {
@@ -520,7 +520,7 @@
           "bucket": "within_30_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-13-en-ai-patient-trust"
     },
     {
       "id": "fr-2026-10-08-gauging-rule",
@@ -1133,33 +1133,33 @@
       "sourceName": "Bundeszentrale für politische Bildung — Werkstatt",
       "registrySourceId": "bpb-werkstatt-de",
       "sourcePublishedAt": "2026-08-20",
-      "collectedAt": "2026-10-11",
+      "collectedAt": "2026-10-13",
       "category": "technology",
       "topics": [
         "日常AI",
-        "媒介素养",
-        "信息核查"
+        "数字词汇",
+        "信息判断"
       ],
-      "level": "B1",
+      "level": "A2",
       "priority": 4,
       "status": "verified",
-      "editorialNote": "备选口语角度：日常使用聊天机器人时，清晰提问和核查答案为什么重要？这是一篇52天前的术语解释，属于90天内次优储备，不能当作今日新发现。文章中关于AI能力的概括须在改写时谨慎处理；不必覆盖所有术语。中文译编和改写须同样以CC BY-SA 4.0发布。",
+      "editorialNote": "A2; 156 body words. Independent editorial review complete; separate immutable edition 2026-10-13-de-ki-woerter-im-alltag and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-11",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-13",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
-          "checkedAt": "2026-10-11",
-          "notes": "Complete German article, nine terminology sections, cited lexicon and final text-specific license read. Web extraction source-page extraction L25–69."
+          "checkedAt": "2026-10-13",
+          "notes": "Full article reread via public web; date L27, article text licence L66–69; fact locators in source-evidence.json."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
-          "evidence": "Article header L27 displays 20.08.2026 / 2 Minuten zu lesen; original publication, not collection date."
+          "evidence": "20.08.2026 / 2 Minuten zu lesen; displayed original publication date, not retrieval date."
         },
         "nativeLanguage": {
           "verified": true,
@@ -1169,8 +1169,8 @@
             "https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/"
           ],
           "basis": "institutional-original-language-inference",
-          "author": "Bundeszentrale für politische Bildung, Werkstatt; labeled Stichwort; no individual byline",
-          "evidence": "German institutional Werkstatt glossary, included in its own selected-contributions series. It cites Universität Tübingen’s KI Lexikon as background but shows no translation or external republication credit. Text-specific bpb licence is explicit; institutional language provenance only.",
+          "author": "Bundeszentrale für politische Bildung, Werkstatt",
+          "evidence": "Own German Werkstatt editorial contribution, included in its selected German contributions series; no individual byline or translation/republication notice. Institutional provenance, no claim about mother tongue.",
           "caveat": "Institutional source-language provenance, not personal mother-tongue certification."
         },
         "rights": {
@@ -1185,18 +1185,18 @@
             "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
             "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
           ],
-          "evidence": "Article final Lizenz L66–69 explicitly says Dieser Text is CC BY-SA 4.0. The grant covers the article’s prose; illustration separately credited and omitted. Re-fetched bpb usage page and CC BY-SA deed/legal code; adaptation and public redistribution allowed with attribution, changes, ShareAlike and non-endorsement.",
-          "scope": "bpb original German editorial definitions only. The linked University of Tübingen lexicon is not copied or cleared.",
+          "evidence": "Explicit article-end CC BY-SA 4.0 text grant. L66–69",
+          "scope": "Text only. Article-specific final licence inspected; adaptation and public redistribution permitted. Original source, authors, date, changes and licence retained. All adaptation, Chinese, learning material and companion released CC BY-SA 4.0.",
           "exclusions": [
-            "Illustration credited to Rizki Ahmad Fauzi and all images/media/logos",
-            "Linked University of Tübingen lexicon and other external works"
+            "Rizki Ahmad Fauzi illustration",
+            "Linked University of Tübingen lexicon and all other linked works"
           ],
           "shareAlikeRequired": true,
           "attributionRequirements": [
-            "Credit Bundeszentrale für politische Bildung, Werkstatt, title and original date",
+            "Credit Bundeszentrale für politische Bildung, Werkstatt and original title/date",
             "Link original and CC BY-SA 4.0",
-            "Identify abridgment, simplification and translation; no endorsement",
-            "Release all derived article/translation text under CC BY-SA 4.0"
+            "Identify abridgment, simplification, translation and new learning material; no endorsement",
+            "Release all derived text including Chinese and companion exercises under CC BY-SA 4.0"
           ],
           "reviewBeforeConversionRequired": true
         },
@@ -1212,7 +1212,7 @@
           "bucket": "within_90_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-13-de-ki-woerter-im-alltag"
     },
     {
       "id": "en-2026-09-18-school-enrichment-activities",
@@ -1319,25 +1319,25 @@
       "collectedAt": "2026-10-13",
       "category": "society",
       "topics": [
-        "国际合作",
-        "科学资源共享",
-        "地震观测"
+        "科学合作",
+        "借用设备",
+        "知识共享"
       ],
-      "level": "B1",
+      "level": "A2",
       "priority": 4,
       "status": "verified",
-      "editorialNote": "口语角度：科学机构为什么可以共享仪器？借用设备与赠送设备有什么区别？三台设备为临时提供，仍归INGV所有；2026年8月4日是交接日期，10月1日是原文发表日期。只采集来源元数据，尚未编写或审核学习稿；排除外交信件、所有直接引语及媒体。",
+      "editorialNote": "A2; 156 body words. Independent editorial review complete; separate immutable edition 2026-10-13-it-strumenti-in-prestito and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "checkedAt": "2026-10-13",
-        "editorialReviewComplete": false,
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ingv-dall-italia-al-venezuela-tre-stazioni-sismologiche-per-rafforzare-ricerca-e-monitoraggio",
           "checkedAt": "2026-10-13",
-          "notes": "Complete main article narrative, publication header, named speakers, credits and available footer read; linked documents and media not used."
+          "notes": "Full visible HTML article, heading/date metadata, institutional credits, footer and rights notice. Linked report/PDF not reused or needed for selected facts."
         },
         "originalDate": {
           "verified": true,
@@ -1348,8 +1348,8 @@
           "verified": true,
           "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ingv-dall-italia-al-venezuela-tre-stazioni-sismologiche-per-rafforzare-ricerca-e-monitoraggio",
           "basis": "institutional-original-language-inference",
-          "evidence": "Italian institutional press release about INGV-owned equipment and its ONT staff’s collaboration; no translator or externally syndicated text credit. The foreign minister’s letter is described separately and is excluded from reusable scope.",
-          "caveat": "Institutional source-language provenance; not proof of any individual’s first language or earliest drafting language."
+          "evidence": "INGV Italian press-office release reports transfer of its own equipment and its own ONT staff participation. Named INGV staff and institutional press provenance; no translator or external republication marker found.",
+          "caveat": "Institutional publication provenance, not a certificate of individual drafting language or mother tongue."
         },
         "rights": {
           "verified": true,
@@ -1359,20 +1359,17 @@
           "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
           "evidenceUrls": [
             "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ingv-dall-italia-al-venezuela-tre-stazioni-sismologiche-per-rafforzare-ricerca-e-monitoraggio",
-            "https://www.ingv.it/note-legali",
-            "https://creativecommons.org/licenses/by/4.0/"
+            "https://www.ingv.it/note-legali"
           ],
-          "basis": "article-specific-ownership-and-institutional-reuse-policy",
-          "evidence": "Article footer explicitly licenses INGV-published content under CC BY 4.0. INGV legal notice Copyright states staff supplied site information and INGV owns it unless otherwise marked. Complete article inspected: no conflicting text credit. CC deed grants adaptation and redistribution with attribution and change notice.",
-          "scope": "INGV institutional factual narrative about its three temporarily loaned mobile stations, handover and collaboration only.",
+          "evidence": "Exact article footer expressly licenses INGV-published content under CC BY 4.0. Legal notice identifies institutional ownership unless otherwise stated and staff-supplied content. Only INGV institutional factual narrative adapted; no Venezuelan official letter or direct quotation used. Final learning statement paraphrases scientific knowledge exchange also stated in institutional closing narrative.",
+          "basis": "institutional-license-and-article-exception-review",
+          "scope": "Institutional Italian text only; no third-party material or media.",
           "exclusions": [
-            "All images, logos and linked works",
-            "All direct quotations",
-            "Text, phrases and claims attributed to the Venezuelan minister’s letter or embassy, including the concluding paragraph"
+            "Images, logos, direct third-party quotations, linked external works"
           ],
           "attributionRequirements": [
-            "Credit INGV, original title, URL and 2026-10-01 publication date",
-            "Link CC BY 4.0 and identify adaptations/translations; no endorsement"
+            "Credit institution, original title/date and source URL",
+            "Link CC BY4.0 and disclose changes; no endorsement"
           ],
           "reviewBeforeConversionRequired": true
         },
@@ -1388,14 +1385,14 @@
           "titleAlreadyPublished": false
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-13-it-strumenti-in-prestito"
     },
     {
       "id": "fr-2026-10-08-corae-citizen-consultation",
       "language": "fr",
       "sourceTitle": "Agriculture occitane : une consultation inédite pour affronter la crise climatique et le défi du renouvellement des générations",
       "sourceUrl": "https://www.inrae.fr/actualites/agriculture-occitane-consultation-inedite-affronter-crise-climatique-defi-du-renouvellement-generations",
-      "sourceName": "INRAE Actualités",
+      "sourceName": "INRAE et Chambre régionale d’agriculture d’Occitanie",
       "registrySourceId": "inrae-french-news",
       "sourcePublishedAt": "2026-10-08",
       "collectedAt": "2026-10-13",
@@ -1405,39 +1402,39 @@
         "农业未来",
         "研究优先事项"
       ],
-      "level": "B1",
+      "level": "B2",
       "priority": 4,
       "status": "verified",
-      "editorialNote": "口语角度：居民与研究人员怎样一起决定研究什么？公众咨询可以怎样兼顾不同意见？原文10月8日发表于10月7日论坛之后；区分已完成的咨询与未来落实目标。只保留元数据，尚未编写或审核学习稿；不用未经独立核查的经济统计，不转载引语、照片、协议或附件。",
+      "editorialNote": "B2; 556 body words. Independent editorial review complete; separate immutable edition 2026-10-13-fr-decider-ensemble-des-recherches and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "checkedAt": "2026-10-13",
-        "editorialReviewComplete": false,
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.inrae.fr/actualites/agriculture-occitane-consultation-inedite-affronter-crise-climatique-defi-du-renouvellement-generations",
           "checkedAt": "2026-10-13",
-          "notes": "Complete main article narrative, publication header, named speakers, credits and available footer read; linked documents and media not used."
+          "notes": "Complete main institutional narrative and visible date/byline/credits/licensing retrieved and read; local extraction hash recorded in separate review artifact."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.inrae.fr/actualites/agriculture-occitane-consultation-inedite-affronter-crise-climatique-defi-du-renouvellement-generations",
-          "evidence": "Visible publication header: 2026-10-08; original publication date, not collection date."
+          "evidence": "Visible original publisher header: 2026-10-08; separate from event and edition dates."
         },
         "nativeLanguage": {
           "verified": true,
           "evidenceUrl": "https://www.inrae.fr/actualites/agriculture-occitane-consultation-inedite-affronter-crise-climatique-defi-du-renouvellement-generations",
           "basis": "institutional-original-language-inference",
-          "evidence": "French institutional regional press release published by INRAE about a consultation co-led with the Chambre Régionale d’Agriculture d’Occitanie. Page identifies INRAE media service and both institutions’ communications contacts. No translation, The Conversation or external republication notice.",
+          "evidence": "Original French institutional news page from the registered French publisher; no translator or third-party republication credit found. Institutional provenance inference, not author mother-tongue certification.",
           "caveat": "Institutional source-language provenance; not proof of any individual’s first language or earliest drafting language."
         },
         "rights": {
           "verified": true,
           "adaptationAllowed": true,
           "publicRedistributionAllowed": true,
-          "license": "Licence Ouverte 2.0 (Etalab)",
+          "license": "Licence Ouverte / Open Licence 2.0 (Etalab)",
           "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
           "evidenceUrls": [
             "https://www.inrae.fr/actualites/agriculture-occitane-consultation-inedite-affronter-crise-climatique-defi-du-renouvellement-generations",
@@ -1445,16 +1442,18 @@
             "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
           ],
           "basis": "article-specific-ownership-and-institutional-reuse-policy",
-          "evidence": "INRAE CGU section PROPRIETE INTELLECTUELLE DES CONTENUS grants Etalab 2.0 reuse of public institutional texts unless an exception applies. Full article inspected; photos carry separate byleguistin credit, and four speaker statements are separated. No conflicting text license, ND or reserved-rights text notice found. Etalab sections Réutilisation and Sous réserve de permit modification and public redistribution with source/date and no endorsement.",
-          "scope": "Unquoted public institutional narrative about the citizen/stakeholder consultation and identified research priorities.",
+          "evidence": "Full article body, credits, byline and available footer inspected. Ministry original narrative under mentions-legales 4.3.1(a), excluding partners under 4.3.2; or INRAE public institutional text under Etalab 2.0 with no conflicting text-rights notice.",
+          "scope": "Original institutional narrative text only; no separately credited partner text, quotations, images or external linked works.",
           "exclusions": [
-            "All photos, captions, logos and media",
-            "All direct speaker quotations, including those of Philippe Mauguin, Denis Carretier, Elodie Galko and Carole Delga",
-            "Linked press-release PDF, agreement text and external works"
+            "All images, captions, logos, multimedia and linked external texts",
+            "All direct interview/speaker quotations",
+            "Literary text and artwork from Sur le sable",
+            "Economic ranking and unverified legal-development details omitted from Blois",
+            "Economic-loss statistics and speaker claims omitted from CoRAE"
           ],
           "attributionRequirements": [
-            "Credit INRAE and Chambre Régionale d’Agriculture d’Occitanie, original title, URL and 2026-10-08 publication date",
-            "Link Licence Ouverte 2.0; identify simplification/translation and do not imply endorsement"
+            "Credit INRAE et Chambre régionale d’agriculture d’Occitanie, original title, URL and publication date",
+            "Link licence and mark French educational adaptation, Chinese translation and additions; no endorsement"
           ],
           "reviewBeforeConversionRequired": true
         },
@@ -1470,7 +1469,7 @@
           "titleAlreadyPublished": false
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-13-fr-decider-ensemble-des-recherches"
     },
     {
       "id": "de-2026-08-19-google-search-changes",
@@ -1484,29 +1483,29 @@
       "category": "society",
       "topics": [
         "搜索习惯",
-        "新闻来源",
-        "媒介多样性"
+        "媒体多样性",
+        "信息来源"
       ],
       "level": "B1",
       "priority": 5,
       "status": "verified",
-      "editorialNote": "90日内备用素材，不冒充今日新闻。口语角度：直接读AI回答还是打开原始来源？只使用bpb自有解释性叙述。改编前重新核查Google功能及文中法院判决状态；可省略司法段落及外部研究，避免把2026年8月时点的描述当成永久事实。须CC BY-SA4同许可。",
+      "editorialNote": "B1; 283 body words. Independent editorial review complete; separate immutable edition 2026-10-13-de-suchen-ohne-weiterzuklicken and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "checkedAt": "2026-10-13",
-        "editorialReviewComplete": false,
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580712/zukunft-der-google-suche/",
           "checkedAt": "2026-10-13",
-          "notes": "Read full original page: introduction, criticism, legal-state paragraph, classroom prompts, source list and final article-text CC BY-SA 4.0 licence. All are public text; no linked third-party source fetched."
+          "notes": "Full article reread via public web; date L26, article text licence L58–61; fact locators in source-evidence.json."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580712/zukunft-der-google-suche/",
-          "evidence": "Article header shows 19.08.2026 / 2 Minuten zu lesen; this is the source publication date, distinct from collection date."
+          "evidence": "19.08.2026 / 2 Minuten zu lesen; displayed original publication date, not retrieval date."
         },
         "nativeLanguage": {
           "verified": true,
@@ -1515,9 +1514,9 @@
             "https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/",
             "https://www.bpb.de/die-bpb/ueber-uns/service/impressum/"
           ],
-          "author": "Bundeszentrale für politische Bildung, Werkstatt; labeled Werkstatt recherchiert, no individual byline displayed",
+          "author": "Bundeszentrale für politische Bildung, Werkstatt",
           "basis": "institutional-original-language-inference",
-          "evidence": "The German federal civic-education publisher presents this German editorial explainer in its Werkstatt recherchiert series. The series page identifies its own selected contributions, also published on Instagram; the imprint names bpb and its editorial team. The article contains a reference list but no translation or syndication credit.",
+          "evidence": "Own German Werkstatt editorial contribution, included in its selected German contributions series; no individual byline or translation/republication notice. Institutional provenance, no claim about mother tongue.",
           "caveat": "Institutional German-language provenance, not certification of an individual author’s mother tongue or first drafting language."
         },
         "rights": {
@@ -1532,17 +1531,19 @@
             "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
             "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
           ],
-          "evidence": "The final Lizenz section explicitly applies CC BY-SA 4.0 to Dieser Text. Its separate image line is not the basis of this text permission. The CC deed permits public sharing and adaptation subject to attribution, change notice and ShareAlike.",
-          "scope": "Original bpb Werkstatt editorial prose only; preserve attribution and ShareAlike for adaptation/translation.",
+          "evidence": "Explicit article-end CC BY-SA 4.0 text grant. L58–61",
+          "scope": "Text only. Article-specific final licence inspected; adaptation and public redistribution permitted. Original source, authors, date, changes and licence retained. All adaptation, Chinese, learning material and companion released CC BY-SA 4.0.",
           "exclusions": [
-            "All images, screenshots, logos, video and other media",
-            "Any directly quoted third-party material, referenced articles and linked external full text"
+            "All illustrations/media",
+            "External Social Media Watchblog and The Verge articles",
+            "Source legal-liability section L39–43 deliberately omitted because the August judgment status was not freshly established"
           ],
           "shareAlikeRequired": true,
           "attributionRequirements": [
-            "Credit Bundeszentrale für politische Bildung / Werkstatt and original title, URL and date",
-            "Link CC BY-SA 4.0 and identify simplification, translation and additions",
-            "Release the derived text under CC BY-SA 4.0 or a verified compatible licence; no implied endorsement"
+            "Credit Bundeszentrale für politische Bildung, Werkstatt and original title/date",
+            "Link original and CC BY-SA 4.0",
+            "Identify abridgment, simplification, translation and new learning material; no endorsement",
+            "Release all derived text including Chinese and companion exercises under CC BY-SA 4.0"
           ],
           "reviewBeforeConversionRequired": true
         },
@@ -1558,7 +1559,7 @@
           "bucket": "within_90_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-13-de-suchen-ohne-weiterzuklicken"
     },
     {
       "id": "en-2026-09-01-school-family-costs",
@@ -1571,18 +1572,18 @@
       "collectedAt": "2026-10-13",
       "category": "society",
       "topics": [
-        "家庭日常",
-        "学校餐食",
-        "生活成本"
+        "学校日常",
+        "家庭预算",
+        "公共服务"
       ],
-      "level": "B1",
+      "level": "A2",
       "priority": 5,
       "status": "verified",
-      "editorialNote": "90日内备用素材，原文2026年9月1日。口语角度：学校餐食、早餐俱乐部与校服怎样影响家庭的一天？引用费用或资格前重新核查适用地区、条件与实施状态，不把最高预计节省额当作人人保证得到的金额。排除所有直接引语、个人信息、外链研究；九月底拟发布的新餐食标准须另行复核，不能复述为仍将发生。",
+      "editorialNote": "A2; 153 body words. Independent editorial review complete; separate immutable edition 2026-10-13-en-school-costs and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "checkedAt": "2026-10-13",
-        "editorialReviewComplete": false,
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
@@ -1637,10 +1638,10 @@
         },
         "publisher": {
           "verified": true,
-          "evidenceUrl": "https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs",
           "names": [
             "Department for Education"
           ],
+          "evidenceUrl": "https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs",
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
@@ -1649,7 +1650,7 @@
           "bucket": "within_90_days"
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-13-en-school-costs"
     },
     {
       "id": "it-2026-10-08-household-spending",
@@ -1662,16 +1663,17 @@
       "collectedAt": "2026-10-13",
       "category": "society",
       "topics": [
-        "日常讨论",
-        "分级阅读"
+        "家庭预算",
+        "消费习惯",
+        "统计素养"
       ],
       "level": "B2",
-      "status": "collected",
-      "editorialNote": "拟extended档500–700词；家庭预算、均值与中位数及地区差异。可讨论生活成本如何影响消费取舍。不可把2025数据称为2026现状；需全文逐项核数及例外复核。",
+      "status": "verified",
+      "editorialNote": "B2; 523 body words. Independent editorial review complete; separate immutable edition 2026-10-13-it-bilanci-oltre-la-media and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
       "verification": {
-        "workflowStage": "discovered",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
+        "editorialReviewComplete": true,
         "checkedAt": "2026-10-13",
         "originalDate": {
           "verified": true,
@@ -1679,11 +1681,54 @@
           "evidenceUrl": "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/"
         },
         "nativeLanguage": {
-          "verified": false,
-          "evidence": "Institutional original-language lead; article-level provenance review pending.",
-          "evidenceUrl": "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/"
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Istat publishes this own Italian statistical release with Italian reference-period/publication metadata and institutional press contacts. The source is the Italian release, not an English locale; no translator, outside author or external republication marker found.",
+          "caveat": "Institutional publication provenance, not a certificate of individual drafting language or mother tongue."
+        },
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/",
+          "checkedAt": "2026-10-13",
+          "notes": "Full visible HTML article, heading/date metadata, institutional credits, footer and rights notice. Linked report/PDF not reused or needed for selected facts."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/",
+            "https://www.istat.it/note-legali/"
+          ],
+          "evidence": "Istat legal notice explicitly permits sharing and modifying its content unless otherwise indicated, subject to attribution, licence link, change disclosure and no endorsement. Full article HTML text has no contrary text-rights notice or third-party authorship credit.",
+          "basis": "institutional-license-and-article-exception-review",
+          "scope": "Institutional Italian text only; no third-party material or media.",
+          "exclusions": [
+            "Images, logos, direct third-party quotations, linked external works"
+          ],
+          "attributionRequirements": [
+            "Credit institution, original title/date and source URL",
+            "Link CC BY4.0 and disclose changes; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-13",
+          "ageDays": 5,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-13",
+          "checkedAgainstArticleCount": 16,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
         }
-      }
+      },
+      "linkToArticleId": "2026-10-13-it-bilanci-oltre-la-media"
     },
     {
       "id": "it-2026-10-07-household-recycling",
@@ -1696,16 +1741,17 @@
       "collectedAt": "2026-10-13",
       "category": "environment",
       "topics": [
-        "日常讨论",
-        "分级阅读"
+        "垃圾分类",
+        "家庭习惯",
+        "城市服务"
       ],
       "level": "B1",
-      "status": "collected",
-      "editorialNote": "拟standard档280–400词；家庭分类回收习惯与公共服务。可讨论便利性如何影响环保行为。保留2024垃圾量与2025自报习惯的区别，不将相关性写成因果。",
+      "status": "verified",
+      "editorialNote": "B1; 284 body words. Independent editorial review complete; separate immutable edition 2026-10-13-it-differenziare-e-ridurre and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
       "verification": {
-        "workflowStage": "discovered",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
+        "editorialReviewComplete": true,
         "checkedAt": "2026-10-13",
         "originalDate": {
           "verified": true,
@@ -1713,45 +1759,394 @@
           "evidenceUrl": "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/"
         },
         "nativeLanguage": {
-          "verified": false,
-          "evidence": "Institutional original-language lead; article-level provenance review pending.",
-          "evidenceUrl": "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/"
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Istat publishes this own Italian statistical release with Italian reference-period/publication metadata and institutional press contacts. The source is the Italian release, not an English locale; no translator, outside author or external republication marker found.",
+          "caveat": "Institutional publication provenance, not a certificate of individual drafting language or mother tongue."
+        },
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/",
+          "checkedAt": "2026-10-13",
+          "notes": "Full visible HTML article, heading/date metadata, institutional credits, footer and rights notice. Linked report/PDF not reused or needed for selected facts."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/",
+            "https://www.istat.it/note-legali/"
+          ],
+          "evidence": "Istat legal notice explicitly permits sharing and modifying its content unless otherwise indicated, subject to attribution, licence link, change disclosure and no endorsement. Full article HTML text has no contrary text-rights notice or third-party authorship credit.",
+          "basis": "institutional-license-and-article-exception-review",
+          "scope": "Institutional Italian text only; no third-party material or media.",
+          "exclusions": [
+            "Images, logos, direct third-party quotations, linked external works"
+          ],
+          "attributionRequirements": [
+            "Credit institution, original title/date and source URL",
+            "Link CC BY4.0 and disclose changes; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-13",
+          "ageDays": 6,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-13",
+          "checkedAgainstArticleCount": 16,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
         }
-      }
+      },
+      "linkToArticleId": "2026-10-13-it-differenziare-e-ridurre"
     },
     {
       "id": "fr-2026-10-02-blois-history",
       "language": "fr",
       "sourceTitle": "Rendez-vous de l’histoire de Blois : les Marchands au cœur des débats",
       "sourceUrl": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats",
-      "sourceName": "Ministère de la Culture — Actualités",
+      "sourceName": "Ministère de la Culture",
       "registrySourceId": "culture-gouv-french-news",
       "sourcePublishedAt": "2026-10-02",
       "collectedAt": "2026-10-13",
       "category": "culture",
       "topics": [
-        "日常讨论",
-        "分级阅读"
+        "历史节",
+        "艺术品来源",
+        "文化价值"
       ],
       "level": "B1",
-      "status": "collected",
-      "editorialNote": "拟standard档280–400词，需核实正文长度是否支持；文化活动及商人与历史。讨论公众如何参与历史节。活动10月7–11日已结束，不能写为即将举行。合作方文字、引语和ShareAlike需逐项核清。",
+      "priority": 4,
+      "status": "verified",
+      "editorialNote": "B1; 289 body words. Independent editorial review complete; separate immutable edition 2026-10-13-fr-marchands-et-valeur-culturelle and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
       "verification": {
-        "workflowStage": "discovered",
-        "readyForPublication": false,
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
         "checkedAt": "2026-10-13",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats",
+          "checkedAt": "2026-10-13",
+          "notes": "Complete main institutional narrative and visible date/byline/credits/licensing retrieved and read; local extraction hash recorded in separate review artifact."
+        },
         "originalDate": {
           "verified": true,
-          "evidence": "Original publisher page publication date, distinct from event/data dates.",
-          "evidenceUrl": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats"
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats",
+          "evidence": "Visible original publisher header: 2026-10-02; separate from event and edition dates."
         },
         "nativeLanguage": {
-          "verified": false,
-          "evidence": "Institutional original-language lead; article-level provenance review pending.",
-          "evidenceUrl": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats"
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Original French institutional news page from the registered French publisher; no translator or third-party republication credit found. Institutional provenance inference, not author mother-tongue certification.",
+          "caveat": "Institutional source-language provenance; not proof of any individual’s first language or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+          ],
+          "basis": "article-specific-ownership-and-institutional-reuse-policy",
+          "evidence": "Full article body, credits, byline and available footer inspected. Ministry original narrative under mentions-legales 4.3.1(a), excluding partners under 4.3.2; or INRAE public institutional text under Etalab 2.0 with no conflicting text-rights notice.",
+          "scope": "Original institutional narrative text only; no separately credited partner text, quotations, images or external linked works.",
+          "exclusions": [
+            "All images, captions, logos, multimedia and linked external texts",
+            "All direct interview/speaker quotations",
+            "Literary text and artwork from Sur le sable",
+            "Economic ranking and unverified legal-development details omitted from Blois",
+            "Economic-loss statistics and speaker claims omitted from CoRAE"
+          ],
+          "attributionRequirements": [
+            "Credit Ministère de la Culture, original title, URL and publication date",
+            "Link licence and mark French educational adaptation, Chinese translation and additions; no endorsement",
+            "Release adaptation, translation and exercises under CC BY-SA 3.0 FR"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-13",
+          "ageDays": 11,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-13",
+          "checkedAgainstArticleCount": 16,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
         }
-      }
+      },
+      "linkToArticleId": "2026-10-13-fr-marchands-et-valeur-culturelle"
+    },
+    {
+      "id": "fr-2026-10-06-baby-book-prize",
+      "language": "fr",
+      "sourceTitle": "Prix du livre pour les bébés : « comme un petit poème » à partager",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/prix-du-livre-pour-les-bebes-comme-un-petit-poeme-a-partager",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-06",
+      "collectedAt": "2026-10-13",
+      "category": "culture",
+      "topics": [
+        "亲子阅读",
+        "绘本",
+        "图书馆"
+      ],
+      "level": "A2",
+      "priority": 4,
+      "status": "verified",
+      "editorialNote": "A2; 163 body words. Independent editorial review complete; separate immutable edition 2026-10-13-fr-un-livre-a-partager and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-13",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/prix-du-livre-pour-les-bebes-comme-un-petit-poeme-a-partager",
+          "checkedAt": "2026-10-13",
+          "notes": "Complete main institutional narrative and visible date/byline/credits/licensing retrieved and read; local extraction hash recorded in separate review artifact."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/prix-du-livre-pour-les-bebes-comme-un-petit-poeme-a-partager",
+          "evidence": "Visible original publisher header: 2026-10-06; separate from event and edition dates."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/prix-du-livre-pour-les-bebes-comme-un-petit-poeme-a-partager",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Original French institutional news page from the registered French publisher; no translator or third-party republication credit found. Institutional provenance inference, not author mother-tongue certification.",
+          "caveat": "Institutional source-language provenance; not proof of any individual’s first language or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/actualites/prix-du-livre-pour-les-bebes-comme-un-petit-poeme-a-partager",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+          ],
+          "basis": "article-specific-ownership-and-institutional-reuse-policy",
+          "evidence": "Full article body, credits, byline and available footer inspected. Ministry original narrative under mentions-legales 4.3.1(a), excluding partners under 4.3.2; or INRAE public institutional text under Etalab 2.0 with no conflicting text-rights notice.",
+          "scope": "Original institutional narrative text only; no separately credited partner text, quotations, images or external linked works.",
+          "exclusions": [
+            "All images, captions, logos, multimedia and linked external texts",
+            "All direct interview/speaker quotations",
+            "Literary text and artwork from Sur le sable",
+            "Economic ranking and unverified legal-development details omitted from Blois",
+            "Economic-loss statistics and speaker claims omitted from CoRAE"
+          ],
+          "attributionRequirements": [
+            "Credit Ministère de la Culture, original title, URL and publication date",
+            "Link licence and mark French educational adaptation, Chinese translation and additions; no endorsement",
+            "Release adaptation, translation and exercises under CC BY-SA 3.0 FR"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-13",
+          "ageDays": 7,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-13",
+          "checkedAgainstArticleCount": 16,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-13-fr-un-livre-a-partager"
+    },
+    {
+      "id": "de-2026-07-21-ai-narratives-comics",
+      "language": "de",
+      "sourceTitle": "„Eine Geschichte setzt das Erzählen voraus“",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579493/eine-geschichte-setzt-das-erzaehlen-voraus/",
+      "sourceName": "Bundeszentrale für politische Bildung — Werkstatt",
+      "registrySourceId": "bpb-werkstatt-de",
+      "sourcePublishedAt": "2026-07-21",
+      "collectedAt": "2026-10-13",
+      "category": "culture",
+      "topics": [
+        "漫画随笔",
+        "技术叙事",
+        "多元视角"
+      ],
+      "level": "B2",
+      "priority": 4,
+      "status": "verified",
+      "editorialNote": "B2; 517 body words. Independent editorial review complete; separate immutable edition 2026-10-13-de-welche-geschichten-wir-ueber-ki-erzaehlen and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-13",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579493/eine-geschichte-setzt-das-erzaehlen-voraus/",
+          "checkedAt": "2026-10-13",
+          "notes": "Full article reread via public web; date L29, article text licence L105–109; explicitly names Julia Schneider (Doc J Snyder), Philine Janus as authors; fact locators in source-evidence.json."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579493/eine-geschichte-setzt-das-erzaehlen-voraus/",
+          "evidence": "21.07.2026 / 9 Minuten zu lesen; displayed original publication date, not retrieval date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579493/eine-geschichte-setzt-das-erzaehlen-voraus/",
+          "additionalEvidenceUrls": [
+            "https://www.bpb.de/die-bpb/ueber-uns/service/impressum/",
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/573930/ausgewaehlte-beitraege-von-instagram/"
+          ],
+          "basis": "institutional-original-language-inference",
+          "author": "Julia Schneider (Doc J Snyder) und Philine Janus für bpb.de",
+          "evidence": "Own German Werkstatt interview: names editor Philine Janus and Julia Schneider as authors, with interviewer credit and author bios; no translation/republication notice or claim about mother tongue.",
+          "caveat": "Institutional source-language provenance, not personal mother-tongue certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.de",
+          "basis": "explicit-article-text-license",
+          "evidenceUrls": [
+            "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579493/eine-geschichte-setzt-das-erzaehlen-voraus/",
+            "https://www.bpb.de/die-bpb/faq/184955/nutzungsrechte/",
+            "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+          ],
+          "evidence": "Explicit article-end CC BY-SA 4.0 text grant. L105–109; explicitly names Julia Schneider (Doc J Snyder), Philine Janus as authors",
+          "scope": "Text only. Article-specific final licence inspected; adaptation and public redistribution permitted. Original source, authors, date, changes and licence retained. All adaptation, Chinese, learning material and companion released CC BY-SA 4.0.",
+          "exclusions": [
+            "All comic images explicitly marked CC BY-NC-ND 4.0",
+            "All screenshots, images, media and linked comic works",
+            "AI-2027 scenario passages and quoted third-party cultural dialogue",
+            "The adapted interviewee is a named coauthor of the licensed text, not an uncleared third-party block quote"
+          ],
+          "shareAlikeRequired": true,
+          "attributionRequirements": [
+            "Credit Julia Schneider (Doc J Snyder) und Philine Janus für bpb.de and original title/date",
+            "Link original and CC BY-SA 4.0",
+            "Identify abridgment, simplification, translation and new learning material; no endorsement",
+            "Release all derived text including Chinese and companion exercises under CC BY-SA 4.0"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-13",
+          "checkedAgainstArticleCount": 16,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-13",
+          "ageDays": 84,
+          "bucket": "within_90_days"
+        }
+      },
+      "linkToArticleId": "2026-10-13-de-welche-geschichten-wir-ueber-ki-erzaehlen"
+    },
+    {
+      "id": "en-2026-10-02-income-beyond-the-headline",
+      "language": "en",
+      "sourceTitle": "Average household income, UK: financial year ending 2025",
+      "sourceUrl": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025",
+      "sourceName": "Office for National Statistics",
+      "registrySourceId": "ons-english-society",
+      "sourcePublishedAt": "2026-10-02",
+      "collectedAt": "2026-10-13",
+      "category": "society",
+      "topics": [
+        "家庭收入",
+        "生活水平",
+        "统计解读"
+      ],
+      "level": "B2",
+      "status": "verified",
+      "editorialNote": "B2; 503 body words. Independent editorial review complete; separate immutable edition 2026-10-13-en-income-beyond-the-headline and 5-question companion. Actual source date retained; no same-story tier rewrites. Metadata remains non-publishable.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-13",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025",
+          "checkedAt": "2026-10-13",
+          "notes": "Complete public primary-source text read and independently checked. Text-only teaching adaptation; no media or linked report reproduced."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025",
+          "evidence": "Visible original publication metadata matches 2026-10-02. Kept separate from data/event and edition dates."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Registered institution publishes its own en editorial/statistical text with institutional or named author credit. No translation/republication marker found.",
+          "caveat": "Institutional provenance inference, not individual drafting-language or mother-tongue certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidenceUrls": [
+            "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025",
+            "https://www.ons.gov.uk/help/terms-conditions",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "evidence": "Article text and institutional rights policy independently inspected; identified public adaptation and redistribution grant, with attribution, change notice and any ShareAlike requirements. No contrary exception for text used.",
+          "scope": "Institution-owned editorial prose only. Named interview authors included only when expressly licensed.",
+          "exclusions": [
+            "All images, logos, multimedia",
+            "Separately credited third-party works, literary excerpts, external quotations and linked reports"
+          ],
+          "attributionRequirements": [
+            "Institution or named authors, original title, URL and date",
+            "Licence link, adaptation/translation disclosure, no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-13",
+          "ageDays": 11,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-13",
+          "checkedAgainstArticleCount": 16,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-13-en-income-beyond-the-headline"
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",
@@ -1772,25 +2167,37 @@
   "deduplication": {
     "checkedAt": "2026-10-13",
     "repository": "Kendrick-Stein/Dimenticato",
-    "baseCommit": "6764b291f276d78e5e6e1da5af6d5f438cbd2593",
-    "checkedArticleCount": 16,
+    "baseCommit": "0bd324c851f80e18a721c592e5c82bc3d7206098",
+    "checkedArticleCount": 28,
     "existingSourceUrls": [
       "https://themenspezial.eskp.de/biodiversitaet-im-meer-und-an-land/inhalt/vielfalt-im-meer-erhalten/meereschutzgebiete-erfolgreich-machen-937207/",
+      "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579493/eine-geschichte-setzt-das-erzaehlen-voraus/",
+      "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580712/zukunft-der-google-suche/",
+      "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
       "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
       "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581601/was-heisst-neutral/",
       "https://www.bpb.de/lernen/digitale-bildung/werkstatt/581805/extremismus-im-gaming/",
+      "https://www.culture.gouv.fr/actualites/prix-du-livre-pour-les-bebes-comme-un-petit-poeme-a-partager",
+      "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats",
       "https://www.gov.uk/government/news/better-wifi-on-remote-trains-and-access-to-cutting-edge-tech-for-british-farmers-through-13-million-boost-to-drive-next-gen-satellite-communications",
+      "https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs",
       "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+      "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
       "https://www.gov.uk/government/news/more-enriching-activities-for-hundreds-of-thousands-of-children",
       "https://www.gov.uk/government/news/teenagers-back-vocational-reforms-and-defy-outdated-stigma",
       "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+      "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ingv-dall-italia-al-venezuela-tre-stazioni-sismologiche-per-rafforzare-ricerca-e-monitoraggio",
       "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/inquinamento-nuove-immagini-radar-satellitari-aiutano-a-individuare-dallo-spazio-la-plastica-in-mare",
       "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ricerca-lipari-i-siti-archeologici-sommersi-raccontano-3-900-anni-di-cambiamenti-costieri",
       "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/isole-eolie-geotermia-dalle-scuole-un-modello-educativo-replicabile",
+      "https://www.inrae.fr/actualites/agriculture-occitane-consultation-inedite-affronter-crise-climatique-defi-du-renouvellement-generations",
       "https://www.inrae.fr/actualites/debroussaillement-cles-du-passage-laction",
       "https://www.inrae.fr/actualites/fleurs-supermarches-essentiels-abeilles",
       "https://www.inrae.fr/actualites/production-du-sorgho-europe-favorisee-changement-climatique",
-      "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm"
+      "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+      "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/",
+      "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/",
+      "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025"
     ],
     "noDuplicateSourceUrls": true,
     "noDuplicateSourceTitles": true

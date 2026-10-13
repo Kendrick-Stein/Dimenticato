@@ -1,0 +1,323 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-it-strumenti-in-prestito",
+  "storyId": "it-2026-10-01-venezuela-shared-stations",
+  "lang": "it",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "科学合作",
+    "借用设备",
+    "知识共享"
+  ],
+  "title": "Tre strumenti in viaggio per la ricerca",
+  "titleZh": "为科研远行的三台仪器",
+  "summaryZh": "INGV于2026年10月1日报道向委内瑞拉临时提供三台地震观测设备。设备仍归INGV所有，合作还包括知识与经验的交流。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2：短句叙述设备从罗马到委内瑞拉的路线，主要使用现在时与近过去时；机构名称及少量科学词提供中文辅助。非认证 CEFR 测评。",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "INGV | Dall’Italia al Venezuela: tre stazioni sismologiche per rafforzare ricerca e monitoraggio",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ingv-dall-italia-al-venezuela-tre-stazioni-sismologiche-per-rafforzare-ricerca-e-monitoraggio",
+    "publishedAt": "2026-10-01",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ingv-dall-italia-al-venezuela-tre-stazioni-sismologiche-per-rafforzare-ricerca-e-monitoraggio"
+  },
+  "attribution": "来源：INGV Ufficio Stampa，《INGV | Dall’Italia al Venezuela: tre stazioni sismologiche per rafforzare ricerca e monitoraggio》，2026-10-01；2026-10-13查阅。依据 CC BY 4.0 使用机构文字；原文与许可链接见上。未使用图片、标志、第三方引语或链接作品。",
+  "adaptation": "Dimenticato 根据意大利语机构原文进行同语言节选、重组和难度调整，添加简体中文逐句翻译、语境注释、学习总结及原创练习。保留数据或事件年份；不是逐字转载，也不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "it-strumenti-in-prestito-01",
+      "text": "Tre strumenti italiani aiutano la ricerca sui terremoti in Venezuela.",
+      "zh": "三台意大利仪器帮助委内瑞拉开展地震研究。",
+      "glosses": [
+        {
+          "surface": "strumenti",
+          "lemma": "strumento",
+          "zh": "仪器"
+        },
+        {
+          "surface": "terremoti",
+          "lemma": "terremoto",
+          "zh": "地震"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-02",
+      "text": "La notizia arriva da un comunicato dell’INGV, pubblicato il primo ottobre 2026.",
+      "zh": "这则消息来自INGV于2026年10月1日发布的一份新闻稿。",
+      "glosses": [
+        {
+          "surface": "comunicato",
+          "lemma": "comunicato",
+          "zh": "新闻稿"
+        },
+        {
+          "surface": "pubblicato",
+          "lemma": "pubblicare",
+          "zh": "发布的"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-03",
+      "text": "L’INGV è l’Istituto Nazionale di Geofisica e Vulcanologia e studia anche i terremoti.",
+      "zh": "INGV是意大利国家地球物理与火山学研究所，也研究地震。",
+      "glosses": [
+        {
+          "surface": "studia",
+          "lemma": "studiare",
+          "zh": "研究"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-04",
+      "text": "Le tre stazioni sono mobili: possono quindi essere spostate da un luogo a un altro.",
+      "zh": "这三台观测设备可以移动，因此能从一个地点转移到另一个地点。",
+      "glosses": [
+        {
+          "surface": "mobili",
+          "lemma": "mobile",
+          "zh": "可移动的"
+        },
+        {
+          "surface": "spostate",
+          "lemma": "spostare",
+          "zh": "被移动"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-05",
+      "text": "Il quattro agosto 2026, l’istituto ha consegnato le stazioni alla missione diplomatica venezuelana a Roma.",
+      "zh": "2026年8月4日，研究所把设备交给了委内瑞拉驻罗马外交代表机构。",
+      "glosses": [
+        {
+          "surface": "consegnato",
+          "lemma": "consegnare",
+          "zh": "交付了"
+        },
+        {
+          "surface": "missione diplomatica",
+          "lemma": "missione diplomatica",
+          "zh": "外交代表机构"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-06",
+      "text": "Poi gli strumenti sono arrivati alla FUNVISIS, un’organizzazione venezuelana che si occupa di ricerca sui terremoti.",
+      "zh": "随后，仪器抵达了FUNVISIS，这是委内瑞拉一家从事地震研究的机构。",
+      "glosses": [
+        {
+          "surface": "arrivati",
+          "lemma": "arrivare",
+          "zh": "到达了"
+        },
+        {
+          "surface": "si occupa di",
+          "lemma": "occuparsi di",
+          "zh": "从事；负责"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-07",
+      "text": "La FUNVISIS deve conservare le stazioni e usarle correttamente durante la collaborazione.",
+      "zh": "FUNVISIS须在合作期间保管设备并正确使用它们。",
+      "glosses": [
+        {
+          "surface": "conservare",
+          "lemma": "conservare",
+          "zh": "保管"
+        },
+        {
+          "surface": "correttamente",
+          "lemma": "correttamente",
+          "zh": "正确地"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-08",
+      "text": "Gli strumenti restano dell’INGV: il Venezuela li può usare solo per un periodo di tempo.",
+      "zh": "仪器仍归INGV所有：委内瑞拉只能使用一段时间。",
+      "glosses": [
+        {
+          "surface": "restano",
+          "lemma": "restare",
+          "zh": "仍然属于"
+        },
+        {
+          "surface": "periodo",
+          "lemma": "periodo",
+          "zh": "一段时间"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-09",
+      "text": "Le nuove stazioni possono lavorare insieme alle reti già presenti e raccogliere altri dati sul territorio.",
+      "zh": "新增设备可以与已有观测网络共同工作，并收集更多当地数据。",
+      "glosses": [
+        {
+          "surface": "reti",
+          "lemma": "rete",
+          "zh": "网络"
+        },
+        {
+          "surface": "raccogliere",
+          "lemma": "raccogliere",
+          "zh": "收集"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-10",
+      "text": "Alla collaborazione partecipa anche il personale dell’Osservatorio Nazionale Terremoti dell’INGV, con la sua esperienza.",
+      "zh": "INGV国家地震观测中心的工作人员也凭借自身经验参与了合作。",
+      "glosses": [
+        {
+          "surface": "personale",
+          "lemma": "personale",
+          "zh": "工作人员"
+        },
+        {
+          "surface": "esperienza",
+          "lemma": "esperienza",
+          "zh": "经验"
+        }
+      ]
+    },
+    {
+      "id": "it-strumenti-in-prestito-11",
+      "text": "Per i ricercatori dei due Paesi è anche un’occasione per condividere conoscenze e imparare gli uni dagli altri.",
+      "zh": "对两国研究人员而言，这也是分享知识、相互学习的机会。",
+      "glosses": [
+        {
+          "surface": "condividere",
+          "lemma": "condividere",
+          "zh": "分享"
+        },
+        {
+          "surface": "conoscenze",
+          "lemma": "conoscenza",
+          "zh": "知识"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "strumenti",
+        "zh": "仪器",
+        "sentenceId": "it-strumenti-in-prestito-01",
+        "note": "单数 lo strumento；这里指观测设备。"
+      },
+      {
+        "text": "terremoti",
+        "zh": "地震",
+        "sentenceId": "it-strumenti-in-prestito-01",
+        "note": "单数 il terremoto。"
+      },
+      {
+        "text": "mobili",
+        "zh": "可移动的",
+        "sentenceId": "it-strumenti-in-prestito-04",
+        "note": "mobile 的复数，修饰 stazioni。"
+      },
+      {
+        "text": "consegnato",
+        "zh": "交付了",
+        "sentenceId": "it-strumenti-in-prestito-05",
+        "note": "ha consegnato 为近过去时。"
+      },
+      {
+        "text": "conservare",
+        "zh": "保管",
+        "sentenceId": "it-strumenti-in-prestito-07",
+        "note": "deve 后接动词原形。"
+      },
+      {
+        "text": "reti",
+        "zh": "网络",
+        "sentenceId": "it-strumenti-in-prestito-09",
+        "note": "单数 la rete，这里是观测网络。"
+      },
+      {
+        "text": "condividere",
+        "zh": "分享",
+        "sentenceId": "it-strumenti-in-prestito-11",
+        "note": "per 后接动词原形，表示目的。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "da un luogo a un altro",
+        "zh": "从一个地方到另一个地方",
+        "sentenceId": "it-strumenti-in-prestito-04",
+        "note": "da… a… 表示移动的起点和终点。"
+      },
+      {
+        "text": "si occupa di",
+        "zh": "从事；负责",
+        "sentenceId": "it-strumenti-in-prestito-06",
+        "note": "occuparsi di + 名词。"
+      },
+      {
+        "text": "lavorare insieme",
+        "zh": "一起工作",
+        "sentenceId": "it-strumenti-in-prestito-09",
+        "note": "insieme 表示共同进行。"
+      },
+      {
+        "text": "gli uni dagli altri",
+        "zh": "相互；彼此",
+        "sentenceId": "it-strumenti-in-prestito-11",
+        "note": "imparare gli uni dagli altri 表示互相学习。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-strumenti-in-prestito-08",
+        "note": "冒号后解释设备仍归原机构所有的具体含义；li 指前面的阳性复数 strumenti。"
+      },
+      {
+        "sentenceId": "it-strumenti-in-prestito-11",
+        "note": "un’occasione per + 动词原形，表示“做某事的机会”。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Hai mai preso in prestito uno strumento? Per quale attività?",
+        "zh": "你借用过一件工具吗？用来做什么？"
+      },
+      {
+        "text": "Che cosa possono condividere due gruppi di ricercatori?",
+        "zh": "两个研究团队可以分享什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Possiamo lavorare insieme per…",
+        "zh": "我们可以一起努力来……",
+        "note": "per 后接动词原形。"
+      },
+      {
+        "text": "Vorrei imparare a…",
+        "zh": "我想学会……",
+        "note": "a 后接动词原形。"
+      }
+    ]
+  }
+}

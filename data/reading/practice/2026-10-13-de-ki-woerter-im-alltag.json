@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-de-ki-woerter-im-alltag",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 48,
+      "answer": "Aufgaben",
+      "options": [
+        "Aufgaben",
+        "Aufgabe",
+        "Aufgabens",
+        "Aufgabem"
+      ],
+      "explanation": "这里指不同的“任务”；verschiedene后用复数Aufgaben，其余不是所需的复数形式。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 33,
+      "answer": "Gespräche",
+      "options": [
+        "Gespräche",
+        "Gespräch",
+        "Gespräches",
+        "Gesprächs"
+      ],
+      "explanation": "für后这里接无冠词复数Gespräche，表示交谈；单数可数名词不能在此直接这样使用。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 18,
+      "answer": "Nachricht",
+      "options": [
+        "Nachricht",
+        "Nachrichten",
+        "Nachrichts",
+        "Nachrichte"
+      ],
+      "explanation": "eine要求阴性单数Nachricht，意思是“一条消息”；复数形式不能与eine搭配。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 57,
+      "answer": "Kunden",
+      "options": [
+        "Kunden",
+        "Kunde",
+        "Kundes",
+        "Kundens"
+      ],
+      "explanation": "von支配第三格；这里用无冠词复数Kunden表示顾客，其他选项不是此处所需形式。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s8",
+      "start": 58,
+      "answer": "übersetzen",
+      "options": [
+        "übersetzen",
+        "übersetzt",
+        "übersetzte",
+        "übersetzest"
+      ],
+      "explanation": "情态动词kann后搭配不定式übersetzen（翻译），不能使用限定动词形式。"
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-en-income-beyond-the-headline",
+  "storyId": "en-2026-10-02-income-beyond-the-headline",
+  "lang": "en",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "家庭收入",
+    "生活水平",
+    "统计解读"
+  ],
+  "title": "Household income: reading beyond the headline",
+  "titleZh": "家庭收入：读懂醒目数字背后的含义",
+  "summaryZh": "以2026年10月2日发布的英国收入统计为线索，读懂中位数、可支配收入、家庭差异和样本局限；数据对应2024年4月至2025年3月。",
+  "level": "B2",
+  "levelReason": "较长论述保留均值与中位数、等值化及样本局限的区别；使用让步、限定和比较结构，需要跨段综合证据。 编辑估计，非认证CEFR测评。",
+  "source": {
+    "name": "Office for National Statistics",
+    "title": "Average household income, UK: financial year ending 2025",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025",
+    "publishedAt": "2026-10-02",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidenceUrl": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025"
+  },
+  "attribution": "Adapted from Office for National Statistics, “Average household income, UK: financial year ending 2025”, published 2026-10-02. Contains public sector information licensed under the Open Government Licence v3.0. Dimenticato adapted the English, translated it into Chinese and added teaching notes and exercises. No official endorsement is implied.",
+  "adaptation": "英语机构原文的同语言分级改写及逐句中文翻译；排除图片、标识、所有外部直接引语和链接报告。事实日期与整理日期分开；口语问题及表达为教学补充。原语判断依据机构署名及英语编辑语境，不声称认证作者母语。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A headline about rising household income sounds simple, but understanding what it means requires several questions about the figures behind it.",
+      "zh": "家庭收入上升的标题听起来很简单，但要理解它的含义，需要对背后的数字提出几个问题。",
+      "glosses": [
+        {
+          "surface": "headline",
+          "lemma": "headline",
+          "zh": "标题",
+          "note": "报刊或报道醒目的标题"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "On 2 October 2026, the Office for National Statistics published estimates covering the financial year from April 2024 to March 2025.",
+      "zh": "2026年10月2日，英国国家统计局发布了涵盖2024年4月至2025年3月财政年度的估计数据。",
+      "glosses": [
+        {
+          "surface": "estimates",
+          "lemma": "estimate",
+          "zh": "估计值",
+          "note": "复数，不是每户收入的精确普查"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "The publication date is therefore much later than the period described, and the results are not a direct picture of household budgets in October 2026.",
+      "zh": "因此，发布日期远晚于数据所描述的时期，结果并不能直接反映2026年10月的家庭预算。",
+      "glosses": [
+        {
+          "surface": "budgets",
+          "lemma": "budget",
+          "zh": "预算",
+          "note": "复数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The estimated median household disposable income was £39,200, up 3.5% compared with the previous financial year.",
+      "zh": "家庭可支配收入中位数的估计值为39200英镑，比上一财政年度上升3.5%。",
+      "glosses": [
+        {
+          "surface": "previous",
+          "lemma": "previous",
+          "zh": "上一个的",
+          "note": "previous financial year：上一财政年度"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Disposable income means money available for spending or saving after direct taxes, including income tax and council tax, have been accounted for.",
+      "zh": "可支配收入是扣除所得税、市政税等直接税后，可用于消费或储蓄的钱。",
+      "glosses": [
+        {
+          "surface": "Disposable",
+          "lemma": "disposable",
+          "zh": "可支配的",
+          "note": "句首大写；disposable income是扣除直接税后的可用收入。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "It includes not only earnings from work but also sources such as private pensions, investments and cash benefits provided by the state.",
+      "zh": "它不仅包括工作收入，还包括私人养老金、投资及国家提供的现金福利等来源。",
+      "glosses": [
+        {
+          "surface": "pensions",
+          "lemma": "pension",
+          "zh": "养老金",
+          "note": "复数"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "However, the median is different from the mean, even though both are often described in everyday conversation as an average.",
+      "zh": "然而，中位数不同于算术平均数，尽管日常交流中两者常被笼统地称为平均水平。",
+      "glosses": [
+        {
+          "surface": "median",
+          "lemma": "median",
+          "zh": "中位数",
+          "note": "统计术语，此处与mean作明确对比。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "The mean adds incomes together and divides the total by the number of people, so a few very high incomes can influence it considerably.",
+      "zh": "算术平均数将收入加总后除以人数，因此少数极高收入可能显著影响它。",
+      "glosses": [
+        {
+          "surface": "considerably",
+          "lemma": "considerably",
+          "zh": "相当大程度地",
+          "note": "副词，修饰influence"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The median instead represents the middle person when people are arranged from the lowest to the highest household income.",
+      "zh": "中位数则对应按家庭收入从低到高排列时，位于中间的那个人。",
+      "glosses": [
+        {
+          "surface": "arranged",
+          "lemma": "arrange",
+          "zh": "排列",
+          "note": "被动语态"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "This makes the median useful for discussing a typical living standard, although no single figure describes the experience of every family.",
+      "zh": "这使中位数有助于讨论典型的生活水平，但没有一个单独的数字能描述每个家庭的经历。",
+      "glosses": [
+        {
+          "surface": "although",
+          "lemma": "although",
+          "zh": "虽然；尽管",
+          "note": "引出让步从句"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Another adjustment matters because households differ in size and in the ages of the people who live in them.",
+      "zh": "另一项调整也很重要，因为家庭人口规模以及成员年龄各不相同。",
+      "glosses": [
+        {
+          "surface": "adjustment",
+          "lemma": "adjustment",
+          "zh": "调整",
+          "note": "可数名词"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "The ONS uses equivalisation to allow for these differences when comparing incomes and the living standards they can support.",
+      "zh": "英国国家统计局采用等值化处理，在比较收入及其能够支持的生活水平时考虑这些差异。",
+      "glosses": [
+        {
+          "surface": "equivalisation",
+          "lemma": "equivalisation",
+          "zh": "等值化处理",
+          "note": "根据家庭人口数量、年龄等调整，以比较生活水平。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Two people generally need more money than one person, but they do not necessarily need twice as much to maintain the same standard of living.",
+      "zh": "两个人通常比一个人需要更多的钱，但要维持相同生活水平，并不一定需要两倍的钱。",
+      "glosses": [
+        {
+          "surface": "maintain",
+          "lemma": "maintain",
+          "zh": "维持",
+          "note": "maintain a standard：维持一个标准"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Unless stated otherwise, the comparisons also account for inflation, helping distinguish changes in purchasing power from changes in cash amounts alone.",
+      "zh": "除非另有说明，比较还考虑通货膨胀，有助于区分购买力变化与仅仅是现金数额的变化。",
+      "glosses": [
+        {
+          "surface": "inflation",
+          "lemma": "inflation",
+          "zh": "通货膨胀",
+          "note": "不可数名词，指总体价格水平上涨。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "The report found increases in median disposable income for both the poorest and richest fifths of the population.",
+      "zh": "报告发现，人口中最贫困和最富裕的五分之一群体，其可支配收入中位数均有上升。",
+      "glosses": [
+        {
+          "surface": "poorest",
+          "lemma": "poor",
+          "zh": "最贫困的",
+          "note": "最高级"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Yet the Gini coefficient, a measure of inequality, fell by only 0.2 percentage points to 32.7%, leaving inequality relatively stable.",
+      "zh": "但衡量不平等程度的基尼系数仅下降0.2个百分点至32.7%，收入不平等程度相对稳定。",
+      "glosses": [
+        {
+          "surface": "inequality",
+          "lemma": "inequality",
+          "zh": "不平等",
+          "note": "名词；a measure of后接名词，不是形容词。"
+        },
+        {
+          "surface": "coefficient",
+          "lemma": "coefficient",
+          "zh": "系数",
+          "note": "Gini coefficient：基尼系数"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Rising income and a substantial reduction in inequality are therefore different claims, and this release does not treat them as interchangeable.",
+      "zh": "因此，收入上升与不平等显著减少是不同的判断，这份发布并未将它们等同起来。",
+      "glosses": [
+        {
+          "surface": "interchangeable",
+          "lemma": "interchangeable",
+          "zh": "可互换的",
+          "note": "这里强调两种判断不能等同"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "The estimates also come with important limitations linked to the Household Finances Survey, which covered approximately 8,000 private households.",
+      "zh": "这些估计也伴随重要局限，涉及覆盖约8000户私人家庭的家庭财务调查。",
+      "glosses": [
+        {
+          "surface": "approximately",
+          "lemma": "approximately",
+          "zh": "大约",
+          "note": "副词，用于数字之前保留近似程度。"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Following the ending of one contributing survey, the achieved sample fell by 29% from around 11,300 households in the previous financial year.",
+      "zh": "在一项组成调查停止后，实际获得的样本量较上一财政年度约11300户减少了29%。",
+      "glosses": [
+        {
+          "surface": "sample",
+          "lemma": "sample",
+          "zh": "样本",
+          "note": "achieved sample：实际获得的样本"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Smaller samples make detailed comparisons more uncertain, while changes in who responds can affect the composition of the households represented.",
+      "zh": "样本减少会增加细分比较的不确定性，而回应者的变化也可能影响样本所代表的家庭构成。",
+      "glosses": [
+        {
+          "surface": "composition",
+          "lemma": "composition",
+          "zh": "构成",
+          "note": "the composition of指群体由哪些成员组成。"
+        },
+        {
+          "surface": "uncertain",
+          "lemma": "uncertain",
+          "zh": "不确定的",
+          "note": "比较级more uncertain"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "The ONS warns that estimates for retired households require particular care, and that weighting cannot completely remove all effects of this changing composition.",
+      "zh": "英国国家统计局提醒，退休家庭的估计数据尤其需要谨慎解释，加权也不能完全消除构成变化带来的所有影响。",
+      "glosses": [
+        {
+          "surface": "weighting",
+          "lemma": "weighting",
+          "zh": "加权",
+          "note": "统计调整程序，不保证消除全部样本偏差。"
+        },
+        {
+          "surface": "retired",
+          "lemma": "retired",
+          "zh": "退休的",
+          "note": "retired households按来源定义并非全体成员均退休"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Moreover, the survey does not include people in institutions such as care homes or hostels, or people who are homeless.",
+      "zh": "此外，这项调查不包括住在养老院、收容旅舍等集体机构中的人，也不包括无家可归者。",
+      "glosses": [
+        {
+          "surface": "homeless",
+          "lemma": "homeless",
+          "zh": "无家可归的",
+          "note": "形容词"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Many of the poorest people may consequently be missing from its coverage, even though the estimates remain useful for examining broad patterns.",
+      "zh": "因此，许多最贫困的人可能不在调查覆盖范围内，尽管这些估计仍有助于考察总体趋势。",
+      "glosses": [
+        {
+          "surface": "coverage",
+          "lemma": "coverage",
+          "zh": "覆盖范围",
+          "note": "调查覆盖哪些人"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Reading the headline alongside these definitions and cautions gives a fuller understanding of what has changed and what the numbers cannot tell us.",
+      "zh": "将标题与这些定义和注意事项一起阅读，才能更全面地理解发生了什么变化，以及数字无法告诉我们什么。",
+      "glosses": [
+        {
+          "surface": "cautions",
+          "lemma": "caution",
+          "zh": "注意事项；提醒",
+          "note": "复数"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Disposable",
+        "lemma": "disposable",
+        "zh": "可支配的",
+        "note": "句首大写；disposable income是扣除直接税后的可用收入。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "median",
+        "lemma": "median",
+        "zh": "中位数",
+        "note": "统计术语，此处与mean作明确对比。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "inflation",
+        "lemma": "inflation",
+        "zh": "通货膨胀",
+        "note": "不可数名词，指总体价格水平上涨。",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "inequality",
+        "lemma": "inequality",
+        "zh": "不平等",
+        "note": "名词；a measure of后接名词，不是形容词。",
+        "sentenceId": "s16"
+      },
+      {
+        "text": "composition",
+        "lemma": "composition",
+        "zh": "构成",
+        "note": "the composition of指群体由哪些成员组成。",
+        "sentenceId": "s20"
+      },
+      {
+        "text": "equivalisation",
+        "lemma": "equivalisation",
+        "zh": "等值化处理",
+        "note": "根据家庭人口数量、年龄等调整，以比较生活水平。",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "weighting",
+        "lemma": "weighting",
+        "zh": "加权",
+        "note": "统计调整程序，不保证消除全部样本偏差。",
+        "sentenceId": "s21"
+      },
+      {
+        "text": "approximately",
+        "lemma": "approximately",
+        "zh": "大约",
+        "note": "副词，用于数字之前保留近似程度。",
+        "sentenceId": "s18"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "available for spending or saving",
+        "zh": "可用于消费或储蓄",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "twice as much",
+        "zh": "两倍那么多",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "Unless stated otherwise",
+        "zh": "除非另有说明",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "require particular care",
+        "zh": "需要格外谨慎",
+        "sentenceId": "s21"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s17",
+        "note": "therefore连接证据与有限的推论；interchangeable意为可互换，这里提醒两种统计判断不能等同。"
+      },
+      {
+        "sentenceId": "s23",
+        "note": "even though引出让步：承认覆盖局限，同时不否定总体趋势分析的价值。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Why might a national income figure feel different from a family’s own experience?",
+        "zh": "全国收入数字为什么可能与一个家庭的亲身感受不同？"
+      },
+      {
+        "text": "Which matters most when you read statistics: the date, the definition or the sample?",
+        "zh": "阅读统计数据时，日期、定义和样本，哪一点对你最重要？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "The headline is useful, but it leaves out an important qualification.",
+        "zh": "标题有用，但省略了一项重要限定。",
+        "note": "教学补充，用于讨论本文，不是新闻原文引语。"
+      },
+      {
+        "text": "These figures describe a broad pattern rather than every individual case.",
+        "zh": "这些数字描述的是总体趋势，而不是每个个体的情况。",
+        "note": "教学补充，用于讨论本文，不是新闻原文引语。"
+      }
+    ]
+  }
+}
