@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-13",
+  "baseCommit": "6764b291f276d78e5e6e1da5af6d5f438cbd2593",
+  "status": "checks-passed-awaiting-remote-publication",
+  "newArticleCount": 4,
+  "sentenceCount": 39,
+  "existingArticleCount": 12,
+  "existingArticleHashesUnchanged": true,
+  "candidateCount": 19,
+  "candidateLinkedToArticleCount": 12,
+  "unconvertedReserveCount": 7,
+  "newCandidates": 4,
+  "tests": {
+    "baseline": "TZ=UTC npm test: 36 harnesses, 474591 passed, 0 failed",
+    "fullSuite": "TZ=UTC npm test: 36 harnesses, 474595 passed, 0 failed",
+    "articleValidator": "16 articles pass",
+    "candidateValidator": "19 metadata-only candidates pass",
+    "readingDOM": "106 passed, 0 failed",
+    "diffCheck": "pass",
+    "deterministicIndex": "second build identical SHA-256 84f8297852a50a9290e6f935c24c346a7489f891a71c86f5d30669d4cdf9ae4c",
+    "relatedFixtureReview": "Three necessary negative-fixture setups corrected; independent review and targeted candidate tests 67 passed, 0 failed; validator unchanged.",
+    "initialFailure": "Before the fixture correction, complete suite reported one failure because the first real candidate was now correctly reviewed and linked. Corrected fixture constructs invalid data explicitly."
+  },
+  "browserQA": "Pending public-production QA after authorized merge. Protected previews not accessed; no visual/audio/mobile verification claimed.",
+  "publicationVerified": false
+}

@@ -1,0 +1,157 @@
+{
+  "editionDate": "2026-10-13",
+  "scope": "Italian and French reading editions and modest source-reserve replenishment; text only.",
+  "editorialStatus": "Independent source, rights, fact, language and teaching-material review approved after revisions; see independent-review.md and reviewed-articles.json.",
+  "sourceReviews": [
+    {
+      "language": "it",
+      "articleId": "2026-10-13-it-etna-tra-mappe-e-modelli",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+      "sourcePublishedAt": "2026-09-30",
+      "retrievedAt": "2026-10-13",
+      "nativeLanguageEvidence": "INGV Italian institutional release describing its own multi-institutional research, with named INGV researchers; no translator or syndication label. Institutional-origin inference only.",
+      "rightsEvidence": [
+        {
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-una-macchina-del-tempo-ricostruisce-160-anni-di-evoluzione-dei-crateri-sommitali",
+          "section": "Footer: INGV-published content is CC BY 4.0; body identifies INGV study team and researchers."
+        },
+        {
+          "url": "https://www.ingv.it/note-legali",
+          "section": "Copyright paragraphs 1–3 and CC BY 4.0 footer: staff supply information; institutional ownership unless otherwise indicated."
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/4.0/",
+          "section": "You are free to / Under the following terms: adaptation and redistribution; attribution, licence link and change notice."
+        }
+      ],
+      "limitations": [
+        "Study interval ends in 2024. Four-crater statement is explicitly tied to 2024, never presented as real-time 2026 conditions.",
+        "The tactile-model fact is reported by INGV researcher Emanuela De Beni in the original. Adaptation paraphrases this factual account and identifies its source; no direct quote is copied.",
+        "No images, map files, digital or 3D model files, linked journal text or third-party quotations reused."
+      ],
+      "sentenceEvidence": [
+        {
+          "sentences": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "sourceSection": "Opening narrative: maps, aerial photographs, satellites and drones; institutions; 1865–2024 study interval."
+        },
+        {
+          "sentences": [
+            5,
+            6,
+            7
+          ],
+          "sourceSection": "Narrative paragraphs on initial large central crater, four summit craters at the study endpoint, and different morphological paths."
+        },
+        {
+          "sentences": [
+            8,
+            9
+          ],
+          "sourceSection": "Final statement attributed to INGV researcher Emanuela De Beni: digital models reproduced using 3D printing for tactile exploration by blind people."
+        }
+      ],
+      "dateEvidence": "Visible header: Pubblicato: 30 Settembre 2026."
+    },
+    {
+      "language": "fr",
+      "articleId": "2026-10-13-fr-une-regle-pour-les-rivieres",
+      "sourceUrl": "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+      "sourcePublishedAt": "2026-10-08",
+      "retrievedAt": "2026-10-13",
+      "nativeLanguageEvidence": "French INRAE report on its RiverLy team’s instrument; Jérôme Le Coz is identified at the end of the article and is credited alongside INRAE. No translation or external republication marker. Institutional-origin inference only.",
+      "rightsEvidence": [
+        {
+          "url": "https://www.inrae.fr/conditions-generales-dutilisation",
+          "section": "PROPRIETE INTELLECTUELLE DES CONTENUS: public institutional text under Etalab 2.0; inspect alternative licenses and reserved-rights exceptions."
+        },
+        {
+          "url": "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+          "section": "Full article checked for text exceptions; photo is separately credited © Vaisala and omitted; linked 2024 paper omitted."
+        },
+        {
+          "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "section": "Réutilisation / Sous réserve de: modification and redistribution permitted; source and update/publication date required; no implied endorsement."
+        }
+      ],
+      "limitations": [
+        "Instrument is an improved method with earlier historical forms, not a brand-new invention.",
+        "Plate faces the current; water-level difference is used to infer speed; multiple speed and depth measurements across the river cross-section support discharge calculation.",
+        "No accuracy percentage is included. Training and correct use remain necessary.",
+        "Educational reading is not an instruction to enter a river or perform an unsupervised measurement.",
+        "No photo, direct quote, linked paper, plans, application or data file reused."
+      ],
+      "sentenceEvidence": [
+        {
+          "sentences": [
+            1
+          ],
+          "sourceSection": "Lead and Un prix pour une méthode de mesure innovante: award presented 7 October 2026 in Amsterdam."
+        },
+        {
+          "sentences": [
+            2,
+            3,
+            4
+          ],
+          "sourceSection": "Une règle pour mesurer le débit des cours d’eau and Une innovation développée par INRAE: transparent PVC plate placed facing the flow; method improved by INRAE."
+        },
+        {
+          "sentences": [
+            5,
+            6
+          ],
+          "sourceSection": "Une règle pour mesurer le débit des cours d’eau: level difference/calibration gives speed; sampling speed and depth at positions across the river cross-section gives discharge."
+        },
+        {
+          "sentences": [
+            7
+          ],
+          "sourceSection": "Instrument described as light and inexpensive; Une innovation développée par INRAE states training is necessary."
+        },
+        {
+          "sentences": [
+            8,
+            9,
+            10
+          ],
+          "sourceSection": "Une méthode qui se diffuse: scientists and teachers, and Adopte un cours d’eau in southwest-France collèges and lycées."
+        }
+      ],
+      "dateEvidence": "Visible header: Publié le 08 octobre 2026."
+    }
+  ],
+  "newReserveCandidateIds": [
+    "it-2026-10-01-venezuela-shared-stations",
+    "fr-2026-10-08-corae-citizen-consultation"
+  ],
+  "discoveryNotes": [
+    {
+      "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa",
+      "result": "Reviewed current approved-source listing. Added the 1 October temporary-equipment-sharing story to reserve; Etna remains the selected conversion for its clear visual/tactile learning angle."
+    },
+    {
+      "url": "https://www.inrae.fr/actualites",
+      "result": "Reviewed current news listing and targeted approved-prefix searches. Added the 8 October CoRAE citizen-consultation source to the reserve; ruler selected for simpler A1/A2-assisted language and classroom relevance."
+    },
+    {
+      "url": "https://www.inrae.fr/dossiers/recherche-dune-juste-transformation-aliments",
+      "result": "Search result only: attractive food topic lies outside the fixed /actualites/ article prefix. Not opened, collected as candidate or adapted."
+    },
+    {
+      "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/notte-europea-dei-ricercatori-2026-gli-appuntamenti-dell-ingv-per-conoscere-il-nostro-pianeta",
+      "result": "Inspected portions of the 17 September event programme. Not added: already-past programme, long multi-event page, complete source check not finished. No adapted text used."
+    }
+  ],
+  "duplicateReview": {
+    "checkedPublishedArticleCount": 12,
+    "selectedSourceUrlsAlreadyPublished": false,
+    "newReserveSourceUrlsAlreadyPublished": false,
+    "withdrawnSharedSourceEditionsRestored": false
+  },
+  "changes": "Simplified and reorganized same-language institutional text; Chinese translations, contextual annotations and original discussion exercises. Original source dates retained separately from edition date. No remote or repository publication is implied by this report."
+}

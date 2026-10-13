@@ -35,7 +35,8 @@ invalid(q => { const copy = clone(q.candidates[0]); copy.id += '-duplicate'; cop
 invalid(q => q.candidates[0].sentences = [{text:'Draft',zh:'草稿'}], 'unexpected candidate field');
 invalid(q => q.candidates[0].verification.readyForPublication = true, 'never publishable');
 invalid(q => q.candidates[0].verification.workflowStage = 'published', 'no published stage');
-invalid(q => q.candidates[0].verification.workflowStage = 'ready', 'completed review');
+// Construct an incomplete-review negative case even after this real source is converted.
+invalid(q => { q.candidates[0].verification.workflowStage = 'ready'; q.candidates[0].verification.editorialReviewComplete = false; }, 'completed review');
 invalid(q => q.candidates[0].verification = null, 'evidence object');
 invalid(q => q.candidates[0].verification.fullText.read = false, 'inspected full text');
 invalid(q => q.candidates[0].verification.fullText.url = 'https://example.org', 'inspected full text');
@@ -54,8 +55,9 @@ invalid(q => q.candidates[0].sourceUrl = 'https://user:password@www.ingv.it/stam
 const byPublisher = queue.candidates.findIndex(c => c.verification.publisher);
 if (byPublisher >= 0) invalid(q => q.candidates[byPublisher].verification.publisher.names = ['Wrong agency'], 'publisher must match');
 const sameSource = {id:'published-source',lang:queue.candidates[0].language,source:{url:queue.candidates[0].sourceUrl}};
-invalid(() => {}, 'already-published source', registry, articles.concat(sameSource));
-invalid(q => { q.candidates[0].sourceUrl += '?utm_source=newsletter'; q.candidates[0].verification.fullText.url = q.candidates[0].sourceUrl; }, 'already-published source', registry, articles.concat(sameSource));
+// A completed source may already have a valid link; explicitly omit it in these negative fixtures.
+invalid(q => q.candidates[0].linkToArticleId = null, 'already-published source', registry, articles.concat(sameSource));
+invalid(q => { q.candidates[0].linkToArticleId = null; q.candidates[0].sourceUrl += '?utm_source=newsletter'; q.candidates[0].verification.fullText.url = q.candidates[0].sourceUrl; }, 'already-published source', registry, articles.concat(sameSource));
 invalid(q => q.candidates[0].linkToArticleId = 'unrelated', 'separately published', registry, articles.concat(sameSource));
 const promoted = clone(queue); promoted.candidates[0].linkToArticleId = sameSource.id;
 test(() => assert.deepEqual(validateQueue(promoted, registry, articles.concat(sameSource)), [], 'link records separate editorial publication, not an automatic promotion'));

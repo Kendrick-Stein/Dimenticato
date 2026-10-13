@@ -1,0 +1,373 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-fr-une-regle-pour-les-rivieres",
+  "storyId": "inrae-gauging-rule-2026-10-08",
+  "lang": "fr",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "education",
+  "topics": [
+    "河流观察",
+    "低成本工具",
+    "参与式科学"
+  ],
+  "title": "Une règle pour observer les rivières",
+  "titleZh": "用一把尺观察河流",
+  "summaryZh": "INRAE团队于2026年10月7日获奖。它改进的测流尺轻便、成本低，也用于学校的参与式科学项目；使用者仍需要学习正确的测量方法。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2，适合 A1 学习者借助中文辅助阅读：以现在时和短句为主，含两处复合过去时、一个过去分词修饰语及 pour + 动词原形；流量、流速、水深与横断面测量的表达均有中文解释。非认证 CEFR 测评。",
+  "source": {
+    "name": "INRAE, French public research institute",
+    "title": "La « règle à jauger » : une innovation hydrométrique reconnue par l’Organisation météorologique mondiale (OMM)",
+    "url": "https://www.inrae.fr/actualites/regle-jauger-innovation-hydrometrique-reconnue-lorganisation-meteorologique-mondiale-omm",
+    "publishedAt": "2026-10-08",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence 2.0 (Etalab)",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+  },
+  "attribution": "来源：Jérôme Le Coz、INRAE（RiverLy河流水力学团队），《La « règle à jauger » : une innovation hydrométrique reconnue par l’Organisation météorologique mondiale (OMM)》，2026-10-08；2026-10-13查阅。按 INRAE 使用条款及 Licence Ouverte 2.0 使用机构正文；未使用图片、直接引语、链接论文、工具文件或第三方材料。",
+  "adaptation": "Dimenticato 根据法语机构原文作同语言简化、节选和重组，添加简中逐句翻译、语境注释与原创练习；非逐字转载，不代表 INRAE 或其他机构认可。本文是语言学习材料，不是下水测量操作指南。",
+  "sentences": [
+    {
+      "id": "fr-regle-rivieres-01",
+      "text": "Une équipe d’INRAE a reçu un prix le 7 octobre 2026 à Amsterdam.",
+      "zh": "INRAE的一个团队于2026年10月7日在阿姆斯特丹获得了一个奖项。",
+      "glosses": [
+        {
+          "surface": "équipe",
+          "lemma": "équipe",
+          "zh": "团队",
+          "note": "阴性名词 une équipe。"
+        },
+        {
+          "surface": "reçu",
+          "lemma": "recevoir",
+          "zh": "获得了；收到了",
+          "note": "与 a 组成复合过去时（passé composé）。"
+        },
+        {
+          "surface": "prix",
+          "lemma": "prix",
+          "zh": "奖项",
+          "note": "这里不是“价格”。"
+        }
+      ]
+    },
+    {
+      "id": "fr-regle-rivieres-02",
+      "text": "Elle a amélioré un outil pour mesurer le débit des rivières.",
+      "zh": "这个团队改进了一种用于测量河流流量的工具。",
+      "glosses": [
+        {
+          "surface": "amélioré",
+          "lemma": "améliorer",
+          "zh": "改进了",
+          "note": "a amélioré 表示已经进行的改进，并非声称首次发明。"
+        },
+        {
+          "surface": "outil",
+          "lemma": "outil",
+          "zh": "工具",
+          "note": "阳性名词 un outil。"
+        },
+        {
+          "surface": "débit",
+          "lemma": "débit",
+          "zh": "流量",
+          "note": "这里指单位时间内流过某处的水量，不只是水流速度。"
+        }
+      ]
+    },
+    {
+      "id": "fr-regle-rivieres-03",
+      "text": "Cet outil s’appelle la « règle à jauger ».",
+      "zh": "这种工具叫作“测流尺”。",
+      "glosses": [
+        {
+          "surface": "s’appelle",
+          "lemma": "s’appeler",
+          "zh": "叫作",
+          "note": "自反动词，第三人称单数。"
+        },
+        {
+          "surface": "règle",
+          "lemma": "règle",
+          "zh": "尺",
+          "note": "这里是测量工具，不是“规则”。"
+        }
+      ]
+    },
+    {
+      "id": "fr-regle-rivieres-04",
+      "text": "L’outil est une plaque en plastique transparent placée face au courant.",
+      "zh": "这个工具是一块正对水流放置的透明塑料板。",
+      "glosses": [
+        {
+          "surface": "plaque",
+          "lemma": "plaque",
+          "zh": "板；薄板",
+          "note": "阴性名词 une plaque。"
+        },
+        {
+          "surface": "transparent",
+          "lemma": "transparent",
+          "zh": "透明的",
+          "note": "这里修饰阳性名词 plastique。"
+        },
+        {
+          "surface": "placée",
+          "lemma": "placer",
+          "zh": "放置的",
+          "note": "阴性单数过去分词，修饰 plaque；face au courant 表示正对水流。"
+        }
+      ]
+    },
+    {
+      "id": "fr-regle-rivieres-05",
+      "text": "La différence de niveau d’eau devant et derrière la plaque permet de calculer la vitesse du courant.",
+      "zh": "板前和板后的水位差可以用来计算水流速度。",
+      "glosses": [
+        {
+          "surface": "niveau",
+          "lemma": "niveau",
+          "zh": "高度；水位",
+          "note": "niveau d’eau 指水面高度。"
+        },
+        {
+          "surface": "derrière",
+          "lemma": "derrière",
+          "zh": "在……后面",
+          "note": "与 devant（在……前面）相对。"
+        },
+        {
+          "surface": "courant",
+          "lemma": "courant",
+          "zh": "水流",
+          "note": "这里不是“电流”或“常见的”。"
+        }
+      ]
+    },
+    {
+      "id": "fr-regle-rivieres-06",
+      "text": "Avec plusieurs mesures de vitesse et de profondeur d’un bord à l’autre, on peut calculer le débit de la rivière.",
+      "zh": "沿河流横断面从一岸到另一岸，在不同位置测量流速和水深，就可以计算河流的流量。",
+      "glosses": [
+        {
+          "surface": "mesures",
+          "lemma": "mesure",
+          "zh": "测量；测量值",
+          "note": "阴性复数。"
+        },
+        {
+          "surface": "profondeur",
+          "lemma": "profondeur",
+          "zh": "深度；水深",
+          "note": "阴性名词 la profondeur。"
+        },
+        {
+          "surface": "peut",
+          "lemma": "pouvoir",
+          "zh": "可以",
+          "note": "on peut + 动词原形。"
+        },
+        {
+          "surface": "d’un bord à l’autre",
+          "lemma": "d’un bord à l’autre",
+          "zh": "从一岸到另一岸",
+          "note": "这里指沿河流横断面在多个位置取样，不是在同一点反复测量。"
+        }
+      ]
+    },
+    {
+      "id": "fr-regle-rivieres-07",
+      "text": "L’outil est léger et peu cher, mais il faut apprendre à bien l’utiliser.",
+      "zh": "这个工具轻便、价格低，但使用者需要学习如何正确使用它。",
+      "glosses": [
+        {
+          "surface": "léger",
+          "lemma": "léger",
+          "zh": "轻的；轻便的",
+          "note": "阳性单数，修饰 outil。"
+        },
+        {
+          "surface": "cher",
+          "lemma": "cher",
+          "zh": "昂贵的",
+          "note": "peu cher：不贵。"
+        },
+        {
+          "surface": "apprendre",
+          "lemma": "apprendre",
+          "zh": "学习",
+          "note": "apprendre à + 动词原形。"
+        }
+      ]
+    },
+    {
+      "id": "fr-regle-rivieres-08",
+      "text": "Des scientifiques et des enseignants l’utilisent déjà.",
+      "zh": "科学家和教师已经在使用它。",
+      "glosses": [
+        {
+          "surface": "enseignants",
+          "lemma": "enseignant",
+          "zh": "教师",
+          "note": "阳性复数，可泛指教师群体。"
+        },
+        {
+          "surface": "déjà",
+          "lemma": "déjà",
+          "zh": "已经",
+          "note": "强调已有实际使用。"
+        }
+      ]
+    },
+    {
+      "id": "fr-regle-rivieres-09",
+      "text": "Il sert aussi à un projet éducatif dans des collèges et des lycées du Sud-Ouest de la France.",
+      "zh": "它还用于法国西南部一些初中和高中开展的一个教育项目。",
+      "glosses": [
+        {
+          "surface": "sert",
+          "lemma": "servir",
+          "zh": "用于；服务于",
+          "note": "servir à：用于……。"
+        },
+        {
+          "surface": "collèges",
+          "lemma": "collège",
+          "zh": "初中",
+          "note": "法国教育语境，不是大学。"
+        },
+        {
+          "surface": "lycées",
+          "lemma": "lycée",
+          "zh": "高中",
+          "note": "法国中等教育的高中阶段学校。"
+        }
+      ]
+    },
+    {
+      "id": "fr-regle-rivieres-10",
+      "text": "Ce projet s’appelle « Adopte un cours d’eau ».",
+      "zh": "这个项目叫作“认领一条河流”。",
+      "glosses": [
+        {
+          "surface": "cours d’eau",
+          "lemma": "cours d’eau",
+          "zh": "河流；水道",
+          "note": "泛指河流等流动水体。"
+        },
+        {
+          "surface": "Adopte",
+          "lemma": "adopter",
+          "zh": "认领吧",
+          "note": "项目名称中的命令式，表达参与、关心一条河流的意思。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "équipe",
+        "zh": "团队",
+        "sentenceId": "fr-regle-rivieres-01",
+        "note": "une équipe，阴性名词。"
+      },
+      {
+        "text": "outil",
+        "zh": "工具",
+        "sentenceId": "fr-regle-rivieres-02",
+        "note": "un outil，阳性名词。"
+      },
+      {
+        "text": "débit",
+        "zh": "流量",
+        "sentenceId": "fr-regle-rivieres-02",
+        "note": "与 vitesse（速度）不同。"
+      },
+      {
+        "text": "règle",
+        "zh": "尺",
+        "sentenceId": "fr-regle-rivieres-03",
+        "note": "本篇语境是测量工具。"
+      },
+      {
+        "text": "courant",
+        "zh": "水流",
+        "sentenceId": "fr-regle-rivieres-05",
+        "note": "le courant，阳性名词。"
+      },
+      {
+        "text": "léger",
+        "zh": "轻便的",
+        "sentenceId": "fr-regle-rivieres-07",
+        "note": "阴性形式 légère。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "pour mesurer",
+        "zh": "为了测量",
+        "sentenceId": "fr-regle-rivieres-02",
+        "note": "pour + 动词原形，表示目的。"
+      },
+      {
+        "text": "on peut calculer",
+        "zh": "人们可以计算",
+        "sentenceId": "fr-regle-rivieres-06",
+        "note": "on 可泛指人们；peut 后接动词原形。"
+      },
+      {
+        "text": "il faut apprendre à",
+        "zh": "需要学习……",
+        "sentenceId": "fr-regle-rivieres-07",
+        "note": "il faut + 动词原形表示必要；apprendre à 后再接动词原形。"
+      },
+      {
+        "text": "d’un bord à l’autre",
+        "zh": "从一岸到另一岸",
+        "sentenceId": "fr-regle-rivieres-06",
+        "note": "d’un… à l’autre 表示“从一个……到另一个”；这里说的是河流横断面上的不同位置。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-regle-rivieres-03",
+        "note": "Cet outil s’appelle… 是介绍物品名称的常用结构，cet 用在元音开头的阳性名词前。"
+      },
+      {
+        "sentenceId": "fr-regle-rivieres-07",
+        "note": "mais 连接优点与必要条件；il faut apprendre à bien l’utiliser 表示仍需学习正确用法，不能把“简单”理解成“无需训练”。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Tu préfères apprendre en classe ou près d’une rivière ? Pourquoi ?",
+        "zh": "你更喜欢在教室里学习，还是在河边学习？为什么？"
+      },
+      {
+        "text": "Pour toi, un bon outil doit être comment ?",
+        "zh": "对你来说，一个好工具应该是什么样的？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Je préfère apprendre…",
+        "zh": "我更喜欢……学习。",
+        "note": "可接 en classe（在教室里）或 dehors（在户外）。"
+      },
+      {
+        "text": "Pour moi, un bon outil est…",
+        "zh": "对我来说，一个好工具是……的。",
+        "note": "可接 léger（轻便）、simple（简单）或 peu cher（不贵）。"
+      }
+    ]
+  }
+}

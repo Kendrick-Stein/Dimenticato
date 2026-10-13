@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-13",
+  "scope": "Source research, sentence-level evidence and reserve discovery for the two learning editions.",
+  "independentReviewComplete": true,
+  "baselinePublishedArticleCount": 12,
+  "selectedArticles": [
+    {
+      "articleId": "2026-10-13-de-politik-in-kurzen-videos",
+      "candidateId": "de-2026-09-21-tiktok-political-communication",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580914/politik-for-you-politische-kommunikation-auf-tiktok-analysieren/",
+      "sourcePublishedAt": "2026-09-21",
+      "sourceAgeDays": 22,
+      "license": "CC BY-SA 4.0",
+      "licenseEvidence": "Final Lizenz section lines 116–120; Leonie Meyer für bpb.de attribution. CC BY-SA deed and bpb usage policy re-read.",
+      "nativeProvenance": "Byline at lines27–29; author biography line135 identifies Werkstatt editor and politics/education focus. No translation marker.",
+      "factMap": {
+        "s1": "Source paragraphs at lines34–36, many politicians’ accounts. No numbers or party examples retained.",
+        "s2": "Line35, access to a young target group.",
+        "s3": "Line67, original content produced directly for TikTok.",
+        "s4": "Line78, clips of speeches and podcast recordings.",
+        "s5": "Line68, one person speaking directly to camera.",
+        "s6": "Line62, impression of closeness is the purpose, not a measured outcome.",
+        "s7": "Line68, explanatory versus opinion-based forms.",
+        "s8": "Lines54–55 and90, pupils compare/analyse videos in class.",
+        "s9": "Line90, who communicates and the strategies for that purpose.",
+        "s10": "Line94, different sources are essential for differentiated opinion formation."
+      }
+    },
+    {
+      "articleId": "2026-10-13-en-robots-at-work",
+      "candidateId": "en-2026-10-09-robotics-adoption-hubs",
+      "sourceUrl": "https://www.gov.uk/government/news/brits-to-benefit-from-faster-recovery-from-surgeries-and-better-harvests-through-new-backing-for-robotics",
+      "sourcePublishedAt": "2026-10-09",
+      "sourceAgeDays": 4,
+      "license": "Open Government Licence v3.0",
+      "licenseEvidence": "Article footer line190; GOV.UK terms Using GOV.UK content lines91–98; official National Archives complete indexed licence text via ordinary web search. Direct canonical licence open returned403; no bypass.",
+      "nativeProvenance": "From fields lines58–61 name registered BIST, Cabinet Office and minister; own domestic programme, no translator/syndication notice.",
+      "factMap": {
+        "s1": "Lines65–66 and94–97, programme enables organisations to adopt robotics.",
+        "s2": "Published9October2026 line61; eight hubs listed at100–108.",
+        "s3": "£40million and businesses/public services, line69.",
+        "s4": "Advice and real-world demonstrations, line73.",
+        "s5": "Automated fruit picking and harvest time, line72; cautiously uses could.",
+        "s6": "Frees agricultural workers for other tasks, line72; cautiously uses could.",
+        "s7": "Waste/recycling hub and test/use, line106.",
+        "s8": "Recover more materials, less landfill, line106, retained as aim.",
+        "s9": "Impartial advice on benefits, costs and practical requirements, line96.",
+        "s10": "£2.5million for12practicalrobotics training projects, line110; no total inferred."
+      }
+    }
+  ],
+  "reserveAdditions": [
+    {
+      "candidateId": "de-2026-08-19-google-search-changes",
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580712/zukunft-der-google-suche/",
+      "sourcePublishedAt": "2026-08-19",
+      "freshness": {
+        "asOf": "2026-10-13",
+        "ageDays": 55,
+        "bucket": "within_90_days"
+      },
+      "status": "verified",
+      "readyForPublication": false
+    },
+    {
+      "candidateId": "en-2026-09-01-school-family-costs",
+      "sourceUrl": "https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs",
+      "sourcePublishedAt": "2026-09-01",
+      "freshness": {
+        "asOf": "2026-10-13",
+        "ageDays": 42,
+        "bucket": "within_90_days"
+      },
+      "status": "verified",
+      "readyForPublication": false
+    }
+  ],
+  "searchScope": "Registered bpb Werkstatt and DfE collection pages, limited domain-scoped discovery, existing native reserve; licence/publisher evidence pages as registered. Broader global coverage not claimed.",
+  "selectionRationale": "The selected unpublished stories are both within30days and unrelated across languages. New daily-life/social candidates have original dates42/55days old and remain reserve metadata only.",
+  "excludedDiscoveryChecks": [
+    {
+      "title": "Digital Wellbeing",
+      "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/574088/digital-wellbeing/",
+      "sourcePublishedAt": "2025-04-14",
+      "reason": "Visible publication date is well beyond90days; do not use as current daily material. No reserve addition or adaptation."
+    }
+  ]
+}
