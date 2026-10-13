@@ -121,7 +121,8 @@ test(()=>assert(!fs.readFileSync(path.join(root,'reading-app.js'),'utf8').includ
   test(()=>assert(host.querySelectorAll('.reading-sentence-audio').every(b=>b.hidden),'audio mode resets on navigation'));
   test(()=>assert(host.querySelectorAll('.reading-translation').every(p=>!p.hidden),'translations reset on navigation'));
   await w.ReadingApp.open('italian','../../bad');test(()=>assert(host.textContent.includes('没有找到')));
-  let finish;w.fetch=()=>new Promise(r=>{finish=r;});const delayed=w.ReadingApp.open('italian','test-article');await Promise.resolve();screen='homeScreen';finish({ok:true,json:async()=>full});await delayed;test(()=>assert(!host.textContent.includes('中文标题')));
+  const delayedArticle=Object.assign({},full,{id:'delayed-article'});articles.push(delayedArticle);
+  let finish;w.fetch=()=>new Promise(r=>{finish=r;});const delayed=w.ReadingApp.open('italian','delayed-article');await Promise.resolve();screen='homeScreen';finish({ok:true,json:async()=>delayedArticle});await delayed;test(()=>assert(!host.textContent.includes('中文标题')));
   console.log('Reading DOM OK: '+passed+' passed, 0 failed');
 })().catch(e=>{console.error(e);process.exitCode=1;});
 
