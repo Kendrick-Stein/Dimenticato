@@ -2,6 +2,7 @@
 (function (global) {
   'use strict';
   var entering = false, active = null, request = 0, level = '', category = '', indexCache = null, query = '', visible = 12, returnTo = null;
+  var articleCache = new Map(), wordCounts = Object.create(null);
   var LEVELS = ['A1','A2','B1','B2','C1','C2'];
   function el(tag, text, cls) { var n = document.createElement(tag); if (text !== undefined) n.textContent = text; if (cls) n.className = cls; return n; }
   function button(text, fn) { var n = el('button', text, 'btn btn-ghost'); n.type = 'button'; n.addEventListener('click', fn); return n; }
@@ -20,6 +21,26 @@
   function save(l, id, done) { var p = progress(l); if (done) p[id] = { completedAt: new Date().toISOString() }; else delete p[id]; return global.DimStorage.safeSetItem(global.DimStorage.key(l, 'reading_progress'), JSON.stringify(p)); }
   function fetchJSON(path) { return fetch(path).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }); }
   function loadIndex() { return indexCache ? Promise.resolve(indexCache) : fetchJSON('data/reading/index.json').then(function (x) { if (x.schema !== 1 || !Array.isArray(x.articles)) throw new Error('index'); indexCache = x; return x; }); }
+  function loadArticle(entry) {
+    if (!/^[a-z0-9-]+$/.test(entry.id)) return Promise.reject(new Error('invalid article ID'));
+    var key = entry.lang + '/' + entry.id;
+    if (!articleCache.has(key)) {
+      var pending = fetchJSON('data/reading/articles/' + entry.id + '.json').then(function (article) {
+        if (article.id !== entry.id || article.lang !== entry.lang) throw new Error('article mismatch');
+        wordCounts[entry.id] = global.ReadingCatalog.bodyWordCount(article); return article;
+      }).catch(function (error) { articleCache.delete(key); throw error; });
+      articleCache.set(key, pending);
+    }
+    return articleCache.get(key);
+  }
+  function prepareToday(index, language) {
+    var date = global.ReadingCatalog.localDate(new Date());
+    // Bounded to today's current-language candidates, never fetch the archive.
+    var candidates = global.ReadingCatalog.select(index.articles, language, '', '', '').filter(function (a) {
+      return a.date === date && a.contentType === 'native-adaptation' && ['A2','B1','B2','C1'].indexOf(a.level) >= 0;
+    }).slice(0, 12);
+    return Promise.all(candidates.map(function (a) { return loadArticle(a).catch(function () { return null; }); }));
+  }
   function link(text, url) { var n = el('a', text); var safe = safeURL(url); if (safe) { n.href = safe; n.target = '_blank'; n.rel = 'noopener noreferrer'; } return n; }
   function focusHeading(host) { var a = document.activeElement; if (!a || a === document.body || (a.closest && a.closest('.screen') && !host.contains(a))) { var h = host.querySelector('h1'); if (h && h.focus) { h.setAttribute('tabindex', '-1'); h.focus({preventScroll:true}); } } }
   function status(host, text) { host.replaceChildren(el('p', text, 'empty')); }
@@ -163,13 +184,14 @@
     var mine = ++request, screen = id ? 'readingArticleScreen' : 'readingScreen';
     if (!alreadyShown) { entering = true; global.showScreen(screen); entering = false; } var host = document.getElementById(id ? 'readingArticleView' : 'readingView'); status(host, '正在加载阅读内容…');
     function current() { return mine === request && global.Shell.current() === screen && code(global.getActiveLanguage()) === code(l); }
-    return loadIndex().then(function (index) {
+    return loadIndex().then(async function (index) {
       if (!current()) return;
       if (id) {
         var entry = index.articles.find(function (a) { return a.id === id && a.lang === code(l); });
         if (!entry || !/^[a-z0-9-]+$/.test(id)) { status(host, '没有找到这篇文章，请返回阅读目录。'); var a = el('a','返回阅读目录'); a.href = global.DimRouter.href(l,'readingScreen'); host.appendChild(a); return; }
-        return fetchJSON('data/reading/articles/' + id + '.json').then(function (a) { if (current()) { if (a.id !== id || a.lang !== code(l)) throw new Error('article mismatch'); renderArticle(host, a, l); } });
+        return loadArticle(entry).then(function (a) { if (current()) { if (a.id !== id || a.lang !== code(l)) throw new Error('article mismatch'); renderArticle(host, a, l); } });
       }
+      if (!current()) return;
       active = null;
       host.replaceChildren(el('p','READING JOURNAL','kicker'), el('h1','外文精品阅读'), el('p','从一篇感兴趣的文章开始。按主题与等级探索，把阅读变成自己的表达。','reading-deck'));
       var filters = el('div', undefined, 'reading-filters');
@@ -179,12 +201,12 @@
       function filter(id, text, options, value, change) {
         var label = el('label', text), select = el('select'); select.id = id;
         options.forEach(function (option) { var o = el('option', option[1]); o.value = option[0]; select.appendChild(o); });
-        select.value = value; select.addEventListener('change', function () { change(select.value); visible = 12; draw(); select.focus({preventScroll:true}); });
+        select.value = value; select.addEventListener('change', function () { change(select.value); visible = 12; update(); select.focus({preventScroll:true}); });
         label.appendChild(select); filters.appendChild(label); return select;
       }
       var categorySelect = filter('readingCategoryFilter', '主题', [['', '全部主题']].concat(global.ReadingCatalog.categories), category, function (value) { category = value; });
       var levelSelect = filter('readingLevelFilter', '等级 · 编辑估计', [['','全部等级']].concat(LEVELS.map(function (v) { return [v,v]; })), level, function (value) { level = value; });
-      var clear = button('清除筛选', function () { query = ''; category = ''; level = ''; visible = 12; search.value = ''; categorySelect.value = ''; levelSelect.value = ''; draw(); search.focus(); });
+      var clear = button('清除筛选', function () { query = ''; category = ''; level = ''; visible = 12; search.value = ''; categorySelect.value = ''; levelSelect.value = ''; update(); search.focus(); });
       filters.appendChild(clear); host.appendChild(filters);
       var results = el('div'); host.appendChild(results);
       function card(a, tier) {
@@ -201,14 +223,17 @@
       }
       function draw() {
         if (!current()) return;
+        var focused = document.activeElement;
+        var focusedMore = focused && results.contains(focused) && focused.classList.contains('reading-load-more');
+        var focusedHref = focused && results.contains(focused) && focused.tagName === 'A' ? focused.href : null;
         results.replaceChildren();
         clear.hidden = !(category || level || query);
         var entries = global.ReadingCatalog.select(index.articles, code(l), category, level, query);
-        var featured = !(category || level || query) ? global.ReadingCatalog.today(entries, global.ReadingCatalog.localDate(new Date())) : [];
+        var featured = !(category || level || query) ? global.ReadingCatalog.today(entries, global.ReadingCatalog.localDate(new Date()), wordCounts) : [];
         if (featured.length) {
           var section = el('section', undefined, 'reading-today');
           section.appendChild(el('h2', '今日选读'));
-          section.appendChild(el('p', '按编辑等级选一篇；只展示今天实际整理的内容。', 'reading-hint'));
+          section.appendChild(el('p', '按编辑等级选一篇；按真实正文篇幅匹配今日三档，未匹配的文章仍在下方文章库。', 'reading-hint'));
           var picks = el('div', undefined, 'reading-list');
           featured.forEach(function (pick) { picks.appendChild(card(pick.article, pick.label)); });
           section.appendChild(picks); results.appendChild(section);
@@ -228,9 +253,18 @@
             if (links[previous]) links[previous].focus();
           }); more.className += ' reading-load-more'; results.appendChild(more);
         }
+        if (focusedMore) { var nextMore = results.querySelector('.reading-load-more') || results.querySelector('a'); if (nextMore) nextMore.focus({preventScroll:true}); }
+        if (focusedHref) {
+          var restored = Array.from(results.querySelectorAll('a')).find(function (a) { return a.href === focusedHref; });
+          if (restored) restored.focus({preventScroll:true});
+        }
       }
-      search.addEventListener('input', function (event) { if (event.isComposing) return; query = search.value; visible = 12; draw(); });
-      search.addEventListener('compositionend', function () { query = search.value; visible = 12; draw(); });
+      function update() {
+        draw();
+        if (!(category || level || query)) prepareToday(index, code(l)).then(draw);
+      }
+      search.addEventListener('input', function (event) { if (event.isComposing) return; query = search.value; visible = 12; update(); });
+      search.addEventListener('compositionend', function () { query = search.value; visible = 12; update(); });
       draw(); var previousFilter = restoreFilter && document.getElementById(restoreFilter);
       if (previousFilter && previousFilter.focus) previousFilter.focus({preventScroll:true});
       else if (returnTo && returnTo.lang === code(l)) {
@@ -238,6 +272,7 @@
         returnTo = null;
         if (target) target.focus(); else focusHeading(host);
       } else focusHeading(host);
+      if (!(category || level || query)) return prepareToday(index, code(l)).then(draw);
 
     }).catch(function () { if (current()) { status(host,'阅读内容暂时加载失败，请检查网络后重试。'); host.appendChild(button('重试',function () { indexCache = null; open(l,id); })); } });
   }
