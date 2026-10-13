@@ -1650,6 +1650,108 @@
         }
       },
       "linkToArticleId": null
+    },
+    {
+      "id": "it-2026-10-08-household-spending",
+      "language": "it",
+      "sourceTitle": "Spese per consumi delle famiglie – Anno 2025",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/",
+      "sourceName": "Istat — Italian society and everyday life",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-08",
+      "collectedAt": "2026-10-13",
+      "category": "society",
+      "topics": [
+        "日常讨论",
+        "分级阅读"
+      ],
+      "level": "B2",
+      "status": "collected",
+      "editorialNote": "拟extended档500–700词；家庭预算、均值与中位数及地区差异。可讨论生活成本如何影响消费取舍。不可把2025数据称为2026现状；需全文逐项核数及例外复核。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-13",
+        "originalDate": {
+          "verified": true,
+          "evidence": "Original publisher page publication date, distinct from event/data dates.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/"
+        },
+        "nativeLanguage": {
+          "verified": false,
+          "evidence": "Institutional original-language lead; article-level provenance review pending.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/"
+        }
+      }
+    },
+    {
+      "id": "it-2026-10-07-household-recycling",
+      "language": "it",
+      "sourceTitle": "Raccolta differenziata: comportamenti civici e politiche sostenibilità urbana – Anni 2024-2025",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/",
+      "sourceName": "Istat — Italian society and everyday life",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-07",
+      "collectedAt": "2026-10-13",
+      "category": "environment",
+      "topics": [
+        "日常讨论",
+        "分级阅读"
+      ],
+      "level": "B1",
+      "status": "collected",
+      "editorialNote": "拟standard档280–400词；家庭分类回收习惯与公共服务。可讨论便利性如何影响环保行为。保留2024垃圾量与2025自报习惯的区别，不将相关性写成因果。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-13",
+        "originalDate": {
+          "verified": true,
+          "evidence": "Original publisher page publication date, distinct from event/data dates.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/"
+        },
+        "nativeLanguage": {
+          "verified": false,
+          "evidence": "Institutional original-language lead; article-level provenance review pending.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/"
+        }
+      }
+    },
+    {
+      "id": "fr-2026-10-02-blois-history",
+      "language": "fr",
+      "sourceTitle": "Rendez-vous de l’histoire de Blois : les Marchands au cœur des débats",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats",
+      "sourceName": "Ministère de la Culture — Actualités",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-02",
+      "collectedAt": "2026-10-13",
+      "category": "culture",
+      "topics": [
+        "日常讨论",
+        "分级阅读"
+      ],
+      "level": "B1",
+      "status": "collected",
+      "editorialNote": "拟standard档280–400词，需核实正文长度是否支持；文化活动及商人与历史。讨论公众如何参与历史节。活动10月7–11日已结束，不能写为即将举行。合作方文字、引语和ShareAlike需逐项核清。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-13",
+        "originalDate": {
+          "verified": true,
+          "evidence": "Original publisher page publication date, distinct from event/data dates.",
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats"
+        },
+        "nativeLanguage": {
+          "verified": false,
+          "evidence": "Institutional original-language lead; article-level provenance review pending.",
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats"
+        }
+      }
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",
