@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-fr-un-livre-a-partager",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-livre-bebes-02",
+      "start": 29,
+      "answer": "créé",
+      "options": [
+        "créer",
+        "créent",
+        "créais",
+        "créé"
+      ],
+      "explanation": "a 后用过去分词 créé 构成复合过去时，意为“创立了”；其他选项不能放在这个助动词后。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-livre-bebes-03",
+      "start": 21,
+      "answer": "choisi",
+      "options": [
+        "choisissent",
+        "choisissait",
+        "choisi",
+        "choisir"
+      ],
+      "explanation": "a choisi 是 choisir 的复合过去时，表示已经作出的选择。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-livre-bebes-04",
+      "start": 19,
+      "answer": "écrit",
+      "options": [
+        "écrivait",
+        "écrit",
+        "écrire",
+        "écrivent"
+      ],
+      "explanation": "a 后需要过去分词 écrit；écrire 是不定式，其余是限定动词形式。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-livre-bebes-09",
+      "start": 51,
+      "answer": "écouter",
+      "options": [
+        "écouter",
+        "écouté",
+        "écoutent",
+        "écoutait"
+      ],
+      "explanation": "peut 后的并列动作使用不定式，故为 écouter。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-livre-bebes-12",
+      "start": 68,
+      "answer": "inscrire",
+      "options": [
+        "inscrit",
+        "inscrivent",
+        "inscrivait",
+        "inscrire"
+      ],
+      "explanation": "inviter quelqu’un à 后接不定式 inscrire。"
+    }
+  ]
+}

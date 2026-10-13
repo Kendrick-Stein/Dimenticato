@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-it-bilanci-oltre-la-media",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-bilanci-oltre-la-media-02",
+      "start": 138,
+      "answer": "stimata",
+      "options": [
+        "stimata",
+        "stimato",
+        "stimati",
+        "stimare"
+      ],
+      "explanation": "被动结构 è stimata 中，过去分词与阴性单数主语 spesa 一致。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-bilanci-oltre-la-media-04",
+      "start": 28,
+      "answer": "correnti",
+      "options": [
+        "correnti",
+        "corrente",
+        "correntemente",
+        "correre"
+      ],
+      "explanation": "修饰阳性复数 valori，使用复数形容词 correnti；这里是统计术语“现价的”。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-bilanci-oltre-la-media-05",
+      "start": 21,
+      "answer": "inflazione",
+      "options": [
+        "inflazione",
+        "inflazioni",
+        "inflazionistico",
+        "inflazionare"
+      ],
+      "explanation": "l’ 后的主语须为阴性单数名词 inflazione，并与 misurata 和 è stata 一致。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-bilanci-oltre-la-media-09",
+      "start": 69,
+      "answer": "analcoliche",
+      "options": [
+        "analcoliche",
+        "analcolici",
+        "analcolico",
+        "analcolica"
+      ],
+      "explanation": "bevande 为阴性复数，形容词须用 analcoliche。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-bilanci-oltre-la-media-20",
+      "start": 112,
+      "answer": "condivise",
+      "options": [
+        "condivise",
+        "condivisi",
+        "condivisa",
+        "condividere"
+      ],
+      "explanation": "possono essere condivise 为被动表达，分词与阴性复数 spese 一致。"
+    }
+  ]
+}

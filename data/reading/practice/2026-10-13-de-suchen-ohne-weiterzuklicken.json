@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-de-suchen-ohne-weiterzuklicken",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 32,
+      "answer": "Suchmaschine",
+      "options": [
+        "Suchmaschine",
+        "Suchmaschinen",
+        "Suchmaschines",
+        "Suchmaschinem"
+      ],
+      "explanation": "bei支配第三格，einer在此标明阴性单数，因此用Suchmaschine。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 81,
+      "answer": "Einführung",
+      "options": [
+        "Einführung",
+        "Einführungen",
+        "Einführungs",
+        "Einführungem"
+      ],
+      "explanation": "这里die Einführung指这类回答的引入；der在此是阴性单数第三格，所需名词为Einführung。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 59,
+      "answer": "Werbung",
+      "options": [
+        "Werbung",
+        "werben",
+        "geworben",
+        "wirbt"
+      ],
+      "explanation": "mit Werbung表示通过广告；此处需要名词Werbung，其他选项是动词形式，不能充当本句所需的名词。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s10",
+      "start": 57,
+      "answer": "Finanzierung",
+      "options": [
+        "Finanzierung",
+        "Finanzierungen",
+        "Finanzierungs",
+        "Finanzierungem"
+      ],
+      "explanation": "diese与后面的kann说明主语为阴性单数，Finanzierung指资金筹措方式。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s18",
+      "start": 55,
+      "answer": "enthalten",
+      "options": [
+        "enthalten",
+        "enthält",
+        "enthaltet",
+        "enthielt"
+      ],
+      "explanation": "情态动词können后用不定式enthalten，意为“包含”；其他选项是限定动词形式。"
+    }
+  ]
+}

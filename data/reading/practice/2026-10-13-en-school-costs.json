@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-en-school-costs",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 37,
+      "answer": "uniforms",
+      "options": [
+        "uniforms",
+        "uniformed",
+        "uniformly",
+        "universal"
+      ],
+      "explanation": "校服。复数名词；此处指学生穿的统一服装。 请还原本文的原词形。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 28,
+      "answer": "receiving",
+      "options": [
+        "receipt",
+        "received",
+        "receiving",
+        "receives"
+      ],
+      "explanation": "领取。现在分词修饰families，表示领取某项福利的家庭。 请还原本文的原词形。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 20,
+      "answer": "announced",
+      "options": [
+        "announcement",
+        "announced",
+        "announcing",
+        "announcer"
+      ],
+      "explanation": "宣布。与日期明确的过去事件搭配，使用过去式。 请还原本文的原词形。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 42,
+      "answer": "cheaper",
+      "options": [
+        "cheaply",
+        "cheapen",
+        "cheapness",
+        "cheaper"
+      ],
+      "explanation": "更便宜的。比较级，修饰uniforms；不是副词。 请还原本文的原词形。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 19,
+      "answer": "saving",
+      "options": [
+        "saving",
+        "saved",
+        "saves",
+        "safely"
+      ],
+      "explanation": "节省额。可数名词单数，与a possible搭配。 请还原本文的原词形。"
+    }
+  ]
+}

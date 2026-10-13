@@ -1,0 +1,304 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-en-school-costs",
+  "storyId": "en-2026-09-01-school-costs",
+  "lang": "en",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "学校日常",
+    "家庭预算",
+    "公共服务"
+  ],
+  "title": "A less expensive start to the school day",
+  "titleZh": "上学的一天，怎样少花一点钱",
+  "summaryZh": "从免费早餐到校服，理解一份2026年9月1日的英格兰家庭支持公告；保留“可能”“最多”等条件，不把上限当人人领取的金额。",
+  "level": "A2",
+  "levelReason": "围绕早餐、午餐、校服等具体生活场景；以现在时、过去时及could表达条件性帮助，少量政策词带注释。 编辑估计，非认证CEFR测评。",
+  "source": {
+    "name": "Department for Education / GOV.UK",
+    "title": "Breathing space for families as government eases school costs",
+    "url": "https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs",
+    "publishedAt": "2026-09-01",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidenceUrl": "https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs"
+  },
+  "attribution": "Adapted from Department for Education / GOV.UK, “Breathing space for families as government eases school costs”, published 2026-09-01. Contains public sector information licensed under the Open Government Licence v3.0. Dimenticato adapted the English, translated it into Chinese and added teaching notes and exercises. No official endorsement is implied.",
+  "adaptation": "英语机构原文的同语言分级改写及逐句中文翻译；排除图片、标识、所有外部直接引语和链接报告。事实日期与整理日期分开；口语问题及表达为教学补充。原语判断依据机构署名及英语编辑语境，不声称认证作者母语。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Going back to school can be expensive for families in England.",
+      "zh": "在英格兰，返校可能给家庭带来不少开销。",
+      "glosses": [
+        {
+          "surface": "expensive",
+          "lemma": "expensive",
+          "zh": "昂贵的",
+          "note": "形容词，be expensive for对……来说费用高"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Parents have to think about lunches, uniforms and care before or after lessons.",
+      "zh": "家长得考虑午餐、校服，以及上课前后照看孩子的问题。",
+      "glosses": [
+        {
+          "surface": "uniforms",
+          "lemma": "uniform",
+          "zh": "校服",
+          "note": "复数名词；此处指学生穿的统一服装。"
+        },
+        {
+          "surface": "lunches",
+          "lemma": "lunch",
+          "zh": "午餐",
+          "note": "复数"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "On 1 September 2026, the Department for Education described several changes to help with these costs.",
+      "zh": "2026年9月1日，英国教育部介绍了几项帮助减轻这些费用的变化。",
+      "glosses": [
+        {
+          "surface": "costs",
+          "lemma": "cost",
+          "zh": "费用",
+          "note": "复数名词"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "More children from families receiving Universal Credit can now get free school meals.",
+      "zh": "更多领取“统一福利金”家庭的孩子现在可以获得免费校餐。",
+      "glosses": [
+        {
+          "surface": "receiving",
+          "lemma": "receive",
+          "zh": "领取",
+          "note": "现在分词修饰families，表示领取某项福利的家庭。"
+        },
+        {
+          "surface": "meals",
+          "lemma": "meal",
+          "zh": "餐食",
+          "note": "free school meals：免费校餐"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The department also announced 1,400 new free breakfast clubs for the new term.",
+      "zh": "教育部还宣布，在新学期新增1400个免费早餐俱乐部。",
+      "glosses": [
+        {
+          "surface": "announced",
+          "lemma": "announce",
+          "zh": "宣布",
+          "note": "与日期明确的过去事件搭配，使用过去式。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "These clubs give children a meal before lessons and can help parents with the morning routine.",
+      "zh": "这些俱乐部在上课前给孩子提供一餐，也能帮助家长安排早晨的事务。",
+      "glosses": [
+        {
+          "surface": "routine",
+          "lemma": "routine",
+          "zh": "日常安排",
+          "note": "此处指早晨反复进行的活动"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Another part of the support is about making school uniforms cheaper.",
+      "zh": "另一部分支持与降低校服费用有关。",
+      "glosses": [
+        {
+          "surface": "support",
+          "lemma": "support",
+          "zh": "支持",
+          "note": "此处指帮助家庭的措施"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Together, free meals, breakfast clubs and cheaper uniforms could save some families up to £1,200 a year.",
+      "zh": "免费校餐、早餐俱乐部及更便宜的校服结合起来，可能让一些家庭每年最多节省1200英镑。",
+      "glosses": [
+        {
+          "surface": "cheaper",
+          "lemma": "cheap",
+          "zh": "更便宜的",
+          "note": "比较级，修饰uniforms；不是副词。"
+        },
+        {
+          "surface": "Together",
+          "lemma": "together",
+          "zh": "结合起来",
+          "note": "指前述几项措施综合起作用"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "This is a possible saving, not money that every family will receive.",
+      "zh": "这是一种可能的节省额，并不是每个家庭都会收到的一笔钱。",
+      "glosses": [
+        {
+          "surface": "saving",
+          "lemma": "saving",
+          "zh": "节省额",
+          "note": "可数名词单数，与a possible搭配。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The same announcement described around 450 new or larger school-based nurseries, with 9,000 childcare places.",
+      "zh": "同一公告还介绍了约450所新设或扩建的校内托幼机构，共提供9000个托幼名额。",
+      "glosses": [
+        {
+          "surface": "nurseries",
+          "lemma": "nursery",
+          "zh": "托幼机构",
+          "note": "复数形式，nursery变y为ies。"
+        },
+        {
+          "surface": "places",
+          "lemma": "place",
+          "zh": "名额",
+          "note": "这里不是物理地点"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "The aim is to make mornings easier and reduce the cost of looking after young children.",
+      "zh": "目的是让早晨的安排更轻松，并降低照顾幼儿的费用。",
+      "glosses": [
+        {
+          "surface": "reduce",
+          "lemma": "reduce",
+          "zh": "减少",
+          "note": "reduce the cost：降低费用"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "uniforms",
+        "lemma": "uniform",
+        "zh": "校服",
+        "note": "复数名词；此处指学生穿的统一服装。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "receiving",
+        "lemma": "receive",
+        "zh": "领取",
+        "note": "现在分词修饰families，表示领取某项福利的家庭。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "announced",
+        "lemma": "announce",
+        "zh": "宣布",
+        "note": "与日期明确的过去事件搭配，使用过去式。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "cheaper",
+        "lemma": "cheap",
+        "zh": "更便宜的",
+        "note": "比较级，修饰uniforms；不是副词。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "saving",
+        "lemma": "saving",
+        "zh": "节省额",
+        "note": "可数名词单数，与a possible搭配。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "nurseries",
+        "lemma": "nursery",
+        "zh": "托幼机构",
+        "note": "复数形式，nursery变y为ies。",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "help with these costs",
+        "zh": "帮助减轻这些费用",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "morning routine",
+        "zh": "早晨的日常安排",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "up to",
+        "zh": "最多；高达",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "looking after",
+        "zh": "照看",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "could表示可能性；up to给出上限，两者都不能省略成“每个家庭必定节省”。"
+      },
+      {
+        "sentenceId": "s11",
+        "note": "The aim is to +动词原形，说明一项安排的目的。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which school costs are hardest for families to manage?",
+        "zh": "哪些上学费用最让家庭难以承担？"
+      },
+      {
+        "text": "How could a breakfast club change a family’s morning?",
+        "zh": "早餐俱乐部可能怎样改变一个家庭的早晨？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "This could help with the cost of childcare.",
+        "zh": "这可能帮助减轻托幼费用。",
+        "note": "教学补充，用于讨论本文，不是新闻原文引语。"
+      },
+      {
+        "text": "The biggest cost for a family may be…",
+        "zh": "一个家庭最大的开销可能是……",
+        "note": "教学补充，用于讨论本文，不是新闻原文引语。"
+      }
+    ]
+  }
+}

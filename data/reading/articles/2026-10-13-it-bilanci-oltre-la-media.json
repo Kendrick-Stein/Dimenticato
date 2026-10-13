@@ -1,0 +1,511 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-it-bilanci-oltre-la-media",
+  "storyId": "it-2026-10-08-household-spending",
+  "lang": "it",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "家庭预算",
+    "消费习惯",
+    "统计素养"
+  ],
+  "title": "Il bilancio delle famiglie oltre la media",
+  "titleZh": "从平均值之外看家庭开支",
+  "summaryZh": "Istat在2026年10月8日发布的2025年家庭消费报告中指出，月均支出基本稳定，但食品、地区差异及独居家庭呈现不同变化。阅读区分平均数与中位数、金额与占比，以及消费支出与房贷支出。",
+  "level": "B2",
+  "levelReason": "编辑估计 B2：连续分析多种统计口径与群体差异，保留让步、条件、关系从句和名词化表达；要求区分名义金额、比例、中位数。专业概念有语境说明。非认证 CEFR 测评。",
+  "source": {
+    "name": "Istat",
+    "title": "Spese per consumi delle famiglie – Anno 2025",
+    "url": "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/",
+    "publishedAt": "2026-10-08",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://www.istat.it/note-legali/"
+  },
+  "attribution": "来源：Istat — Italian society and everyday life，《Spese per consumi delle famiglie – Anno 2025》，2026-10-08；2026-10-13查阅。依据 CC BY 4.0 使用机构文字；原文与许可链接见上。未使用图片、标志、第三方引语或链接作品。",
+  "adaptation": "Dimenticato 根据意大利语机构原文进行同语言节选、重组和难度调整，添加简体中文逐句翻译、语境注释、学习总结及原创练习。保留数据或事件年份；不是逐字转载，也不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "it-bilanci-oltre-la-media-01",
+      "text": "Quanto spende una famiglia residente in Italia in un mese, e che cosa possiamo davvero capire da una cifra che riassume situazioni tanto diverse?",
+      "zh": "一个居住在意大利的家庭每月花多少钱？一个概括了如此不同情况的数字，究竟能让我们了解什么？",
+      "glosses": [
+        {
+          "surface": "riassume",
+          "lemma": "riassumere",
+          "zh": "概括"
+        },
+        {
+          "surface": "cifra",
+          "lemma": "cifra",
+          "zh": "数字；金额"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-02",
+      "text": "Il rapporto dell’Istat pubblicato l’8 ottobre 2026, riferito al 2025, offre una risposta articolata: la spesa media mensile per consumi è stimata in 2.782 euro.",
+      "zh": "Istat于2026年10月8日发布、以2025年为参照的报告给出了细致的回答：家庭月均消费支出估计为2782欧元。",
+      "glosses": [
+        {
+          "surface": "articolata",
+          "lemma": "articolato",
+          "zh": "细致且分层次的"
+        },
+        {
+          "surface": "stimata",
+          "lemma": "stimare",
+          "zh": "估计的"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-03",
+      "text": "Rispetto ai 2.755 euro del 2024, l’aumento è dell’1%, ma l’Istituto descrive questo livello complessivo come sostanzialmente stabile rispetto all’anno precedente.",
+      "zh": "与2024年的2755欧元相比，增幅为1%，但该机构将这一总体水平描述为与上一年相比基本稳定。",
+      "glosses": [
+        {
+          "surface": "sostanzialmente",
+          "lemma": "sostanzialmente",
+          "zh": "基本上"
+        },
+        {
+          "surface": "complessivo",
+          "lemma": "complessivo",
+          "zh": "总体的"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-04",
+      "text": "Si tratta inoltre di valori correnti, cioè di importi che non sono stati corretti per eliminare l’effetto delle variazioni dei prezzi.",
+      "zh": "此外，这些是现价数值，也就是尚未通过调整来剔除价格变动影响的金额。",
+      "glosses": [
+        {
+          "surface": "correnti",
+          "lemma": "corrente",
+          "zh": "现价的"
+        },
+        {
+          "surface": "corretti",
+          "lemma": "correggere",
+          "zh": "经调整的"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-05",
+      "text": "Nello stesso anno, l’inflazione misurata con l’indice armonizzato dei prezzi al consumo è stata dell’1,6%, un elemento da considerare quando si interpretano gli importi.",
+      "zh": "同年，以消费者价格协调指数衡量的通胀率为1.6%，解读这些金额时需要考虑这一因素。",
+      "glosses": [
+        {
+          "surface": "inflazione",
+          "lemma": "inflazione",
+          "zh": "通货膨胀"
+        },
+        {
+          "surface": "interpretano",
+          "lemma": "interpretare",
+          "zh": "解读"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-06",
+      "text": "La media, tuttavia, non coincide con la spesa della maggioranza delle famiglie, perché i consumi sono distribuiti in modo asimmetrico e si concentrano sui livelli medio-bassi.",
+      "zh": "然而，平均数并不等于大多数家庭的支出，因为消费分布并不对称，且集中在中低水平。",
+      "glosses": [
+        {
+          "surface": "coincide",
+          "lemma": "coincidere",
+          "zh": "一致；相等"
+        },
+        {
+          "surface": "asimmetrico",
+          "lemma": "asimmetrico",
+          "zh": "不对称的"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-07",
+      "text": "Per questo è utile osservare anche la mediana, che divide le famiglie in due gruppi ugualmente numerosi secondo il loro livello di spesa.",
+      "zh": "因此，同时观察中位数也很有用；它按支出水平把家庭分成家庭数量相等的两组。",
+      "glosses": [
+        {
+          "surface": "mediana",
+          "lemma": "mediana",
+          "zh": "中位数"
+        },
+        {
+          "surface": "numerosi",
+          "lemma": "numeroso",
+          "zh": "数量多的；此处指组内家庭数量"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-08",
+      "text": "Nel 2025 questo valore raggiunge 2.338 euro, contro i 2.240 dell’anno precedente, e rimane inferiore alla media nazionale.",
+      "zh": "2025年，该数值达到2338欧元，上一年为2240欧元，仍低于全国平均数。",
+      "glosses": [
+        {
+          "surface": "inferiore",
+          "lemma": "inferiore",
+          "zh": "低于的"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-09",
+      "text": "Guardando al contenuto del carrello, la spesa per alimenti e bevande analcoliche passa da 533 a 552 euro mensili, con un aumento del 3,6%.",
+      "zh": "再看购物篮中的内容，食品和非酒精饮料月支出从533欧元增至552欧元，增长3.6%。",
+      "glosses": [
+        {
+          "surface": "carrello",
+          "lemma": "carrello",
+          "zh": "购物车；此处喻消费篮子"
+        },
+        {
+          "surface": "analcoliche",
+          "lemma": "analcolico",
+          "zh": "不含酒精的"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-10",
+      "text": "L’Istat collega questa crescita anche all’aumento dei prezzi della categoria, pari al 3%: spendere di più, quindi, non significa automaticamente acquistare quantità maggiori.",
+      "zh": "Istat认为这一增长也与该类商品价格上涨3%有关：因此，花费更多并不自动意味着购买数量更多。",
+      "glosses": [
+        {
+          "surface": "collega",
+          "lemma": "collegare",
+          "zh": "将……联系起来"
+        },
+        {
+          "surface": "automaticamente",
+          "lemma": "automaticamente",
+          "zh": "自动地；必然地"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-11",
+      "text": "Il peso di alimenti e bevande analcoliche sul totale sale al 19,8%, mentre le spese non alimentari restano stabili, a 2.230 euro al mese.",
+      "zh": "食品和非酒精饮料占总支出的比例升至19.8%，非食品支出则保持稳定，为每月2230欧元。",
+      "glosses": [
+        {
+          "surface": "peso",
+          "lemma": "peso",
+          "zh": "比重"
+        },
+        {
+          "surface": "stabili",
+          "lemma": "stabile",
+          "zh": "稳定的"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-12",
+      "text": "Tra le voci principali del bilancio compaiono l’abitazione, l’acqua e l’energia, considerate insieme con il 36%, seguite dai trasporti con il 10,6%.",
+      "zh": "预算主要项目包括住房、水与能源，合计占36%，其次是交通，占10.6%。",
+      "glosses": [
+        {
+          "surface": "voci",
+          "lemma": "voce",
+          "zh": "项目"
+        },
+        {
+          "surface": "bilancio",
+          "lemma": "bilancio",
+          "zh": "预算；收支"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-13",
+      "text": "La geografia introduce ulteriori differenze: nel Nord-est la spesa media mensile è di 3.087 euro, mentre nel Sud si ferma a 2.215 euro.",
+      "zh": "地理位置带来了进一步差异：东北部月均支出为3087欧元，南部则为2215欧元。",
+      "glosses": [
+        {
+          "surface": "ulteriori",
+          "lemma": "ulteriore",
+          "zh": "进一步的"
+        },
+        {
+          "surface": "si ferma a",
+          "lemma": "fermarsi a",
+          "zh": "停留在；仅为"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-14",
+      "text": "Nel Sud gli alimenti e le bevande analcoliche assorbono il 25,4% della spesa totale, una quota maggiore di quella nazionale e del 17,7% del Nord-ovest.",
+      "zh": "在南部，食品和非酒精饮料占总支出的25.4%，高于全国占比，也高于西北部的17.7%。",
+      "glosses": [
+        {
+          "surface": "assorbono",
+          "lemma": "assorbire",
+          "zh": "占用"
+        },
+        {
+          "surface": "quota",
+          "lemma": "quota",
+          "zh": "占比"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-15",
+      "text": "Una quota più alta, però, non equivale necessariamente a un importo più elevato: per confrontare i bilanci occorre distinguere il peso relativo dalla somma effettivamente spesa.",
+      "zh": "不过，更高的占比不一定等于更高的金额：比较家庭预算时，需要区分相对比重与实际花费的金额。",
+      "glosses": [
+        {
+          "surface": "equivale",
+          "lemma": "equivalere",
+          "zh": "相当于"
+        },
+        {
+          "surface": "distinguere",
+          "lemma": "distinguere",
+          "zh": "区分"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-16",
+      "text": "Le risposte delle famiglie mostrano anche cambiamenti nelle scelte quotidiane: il 29,4% dichiara di aver limitato la spesa alimentare riducendo la quantità o la qualità degli acquisti.",
+      "zh": "家庭的回答也显示了日常选择的变化：29.4%的家庭表示通过减少购买数量或降低品质，限制了食品开支。",
+      "glosses": [
+        {
+          "surface": "limitato",
+          "lemma": "limitare",
+          "zh": "限制了"
+        },
+        {
+          "surface": "acquisti",
+          "lemma": "acquisto",
+          "zh": "购买的商品；采购"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-17",
+      "text": "La percentuale era del 31,1% nel 2024, perciò il fenomeno riguarda una quota leggermente più bassa di famiglie, pur restando vicino a tre su dieci.",
+      "zh": "2024年这一比例为31.1%，因此涉及的家庭占比略低了，尽管仍接近十分之三。",
+      "glosses": [
+        {
+          "surface": "leggermente",
+          "lemma": "leggermente",
+          "zh": "略微"
+        },
+        {
+          "surface": "pur restando",
+          "lemma": "restare",
+          "zh": "尽管仍然是"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-18",
+      "text": "Anche vivere da soli cambia il quadro: per le famiglie composte da una sola persona, la spesa media sale da 1.932 a 2.070 euro mensili.",
+      "zh": "独居也使情况有所不同：单人家庭月均支出从1932欧元升至2070欧元。",
+      "glosses": [
+        {
+          "surface": "quadro",
+          "lemma": "quadro",
+          "zh": "整体情况"
+        },
+        {
+          "surface": "composte",
+          "lemma": "comporre",
+          "zh": "组成的"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-19",
+      "text": "L’abitazione, l’acqua e l’energia pesano per il 42% sul loro totale, contro il 29,3% osservato tra le famiglie con almeno cinque componenti.",
+      "zh": "住房、水与能源占单人家庭总支出的42%，而至少五人家庭的这一比例为29.3%。",
+      "glosses": [
+        {
+          "surface": "componenti",
+          "lemma": "componente",
+          "zh": "成员"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-20",
+      "text": "Il rapporto richiama infatti le economie di scala: aumentando il numero di persone, alcune spese possono essere condivise e il totale cresce meno che proporzionalmente.",
+      "zh": "报告提到了规模经济：人数增加时，一些支出可以分摊，总支出的增长幅度低于人数的增长幅度。",
+      "glosses": [
+        {
+          "surface": "condivise",
+          "lemma": "condividere",
+          "zh": "共同分担的"
+        },
+        {
+          "surface": "proporzionalmente",
+          "lemma": "proporzionalmente",
+          "zh": "按比例地"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-21",
+      "text": "Infine, non ogni uscita di denaro rientra nei consumi: le rate del mutuo, pur rappresentando un impegno importante per chi le paga, sono escluse da questa definizione.",
+      "zh": "最后，并非每笔现金支出都属于消费：房贷分期付款虽然对付款家庭是重要负担，却不在这一定义内。",
+      "glosses": [
+        {
+          "surface": "uscita",
+          "lemma": "uscita",
+          "zh": "支出"
+        },
+        {
+          "surface": "rate",
+          "lemma": "rata",
+          "zh": "分期付款"
+        }
+      ]
+    },
+    {
+      "id": "it-bilanci-oltre-la-media-22",
+      "text": "Per leggere correttamente questi dati, occorre quindi tenere insieme il periodo di riferimento, la composizione della famiglia e il significato preciso dell’indicatore utilizzato.",
+      "zh": "因此，要正确理解这些数据，需要同时考虑参照时期、家庭构成以及所用指标的准确含义。",
+      "glosses": [
+        {
+          "surface": "indicatore",
+          "lemma": "indicatore",
+          "zh": "指标"
+        },
+        {
+          "surface": "riferimento",
+          "lemma": "riferimento",
+          "zh": "参照"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "stimata",
+        "zh": "估计的",
+        "sentenceId": "it-bilanci-oltre-la-media-02",
+        "note": "阴性单数，与 spesa 一致。"
+      },
+      {
+        "text": "correnti",
+        "zh": "现价的",
+        "sentenceId": "it-bilanci-oltre-la-media-04",
+        "note": "valori correnti 未剔除价格变化。"
+      },
+      {
+        "text": "inflazione",
+        "zh": "通货膨胀",
+        "sentenceId": "it-bilanci-oltre-la-media-05",
+        "note": "阴性名词 l’inflazione。"
+      },
+      {
+        "text": "mediana",
+        "zh": "中位数",
+        "sentenceId": "it-bilanci-oltre-la-media-07",
+        "note": "把排序后的家庭分成数量相等两组的支出值。"
+      },
+      {
+        "text": "analcoliche",
+        "zh": "不含酒精的",
+        "sentenceId": "it-bilanci-oltre-la-media-09",
+        "note": "阴性复数，修饰 bevande。"
+      },
+      {
+        "text": "voci",
+        "zh": "项目",
+        "sentenceId": "it-bilanci-oltre-la-media-12",
+        "note": "voce 在预算语境下不是“嗓音”。"
+      },
+      {
+        "text": "distinguere",
+        "zh": "区分",
+        "sentenceId": "it-bilanci-oltre-la-media-15",
+        "note": "distinguere A da B。"
+      },
+      {
+        "text": "condivise",
+        "zh": "共同分担的",
+        "sentenceId": "it-bilanci-oltre-la-media-20",
+        "note": "阴性复数，修饰 spese。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Rispetto ai",
+        "zh": "与……相比",
+        "sentenceId": "it-bilanci-oltre-la-media-03",
+        "note": "ai = a + i；比较数据的常用搭配。"
+      },
+      {
+        "text": "si concentrano sui",
+        "zh": "集中在……上",
+        "sentenceId": "it-bilanci-oltre-la-media-06",
+        "note": "concentrarsi su，sui = su + i。"
+      },
+      {
+        "text": "non equivale necessariamente a",
+        "zh": "不一定等同于",
+        "sentenceId": "it-bilanci-oltre-la-media-15",
+        "note": "用来限制推论，避免把比率等同于金额。"
+      },
+      {
+        "text": "meno che proporzionalmente",
+        "zh": "低于按比例增长的程度",
+        "sentenceId": "it-bilanci-oltre-la-media-20",
+        "note": "说明人数翻倍不必然使支出翻倍。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-bilanci-oltre-la-media-10",
+        "note": "anche 表示价格是增长因素之一；quindi 引入推论，不能将金额增长直接当成数量增长。"
+      },
+      {
+        "sentenceId": "it-bilanci-oltre-la-media-21",
+        "note": "non ogni 是部分否定；pur + 副动词表达让步，说明房贷重要但不计入该消费定义。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quando confronti due bilanci familiari, quali informazioni cerchi oltre alla spesa totale?",
+        "zh": "比较两份家庭预算时，除了总支出，你还会寻找哪些信息？"
+      },
+      {
+        "text": "Quali spese si possono condividere vivendo insieme, e quali restano personali?",
+        "zh": "共同居住时，哪些开支可以分摊，哪些仍属于个人？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Una quota più alta non significa necessariamente che…",
+        "zh": "更高的占比不一定意味着……",
+        "note": "用于谨慎解释数据；可接 congiuntivo，如 la spesa sia maggiore。"
+      },
+      {
+        "text": "Per fare un confronto corretto, bisogna considerare…",
+        "zh": "为了进行正确比较，需要考虑……",
+        "note": "接要考虑的因素，避免只比较一个数值。"
+      }
+    ]
+  }
+}

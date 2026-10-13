@@ -38,6 +38,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-13-fr-decider-ensemble-des-recherches",
+      "lang": "fr",
+      "date": "2026-10-13",
+      "title": "Décider ensemble des recherches agricoles",
+      "titleZh": "一起决定农业研究的方向",
+      "summaryZh": "INRAE与奥克西塔尼农业商会组织的CoRAE协商，让市民、农民、研究者和公共部门共同提出研究需求。五项优先事项已经形成，长期协调与实际效果仍需后续落实。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "公众参与",
+        "农业未来",
+        "研究优先事项"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-08",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-fr-une-regle-pour-les-rivieres",
       "lang": "fr",
       "date": "2026-10-13",
@@ -52,6 +70,24 @@
         "参与式科学"
       ],
       "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-08",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-it-bilanci-oltre-la-media",
+      "lang": "it",
+      "date": "2026-10-13",
+      "title": "Il bilancio delle famiglie oltre la media",
+      "titleZh": "从平均值之外看家庭开支",
+      "summaryZh": "Istat在2026年10月8日发布的2025年家庭消费报告中指出，月均支出基本稳定，但食品、地区差异及独居家庭呈现不同变化。阅读区分平均数与中位数、金额与占比，以及消费支出与房贷支出。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "家庭预算",
+        "消费习惯",
+        "统计素养"
+      ],
+      "sourceLang": "it",
       "sourcePublishedAt": "2026-10-08",
       "contentType": "native-adaptation"
     },
@@ -74,6 +110,60 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-13-it-differenziare-e-ridurre",
+      "lang": "it",
+      "date": "2026-10-13",
+      "title": "Separare meglio, produrre meno rifiuti",
+      "titleZh": "更好分类，也要减少垃圾",
+      "summaryZh": "Istat于2026年10月7日发布的报告显示，2024年垃圾分类收集占比上升，但城市垃圾总量也增加。2025年家庭自报的分类习惯有所改善，电池与过期药品却出现小幅倒退。",
+      "level": "B1",
+      "category": "environment",
+      "topics": [
+        "垃圾分类",
+        "家庭习惯",
+        "城市服务"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-07",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-en-ai-patient-trust",
+      "lang": "en",
+      "date": "2026-10-13",
+      "title": "Why medical AI needs checks after it starts work",
+      "titleZh": "医疗AI投入使用后，为什么还要继续检查",
+      "summaryZh": "2026年10月6日的英国医疗AI公告强调持续监测与患者知情。文章区分“接受建议”和“已经实施”，并非个人医疗建议。",
+      "level": "B1",
+      "category": "health",
+      "topics": [
+        "医疗技术",
+        "患者知情",
+        "持续监督"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-06",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-fr-un-livre-a-partager",
+      "lang": "fr",
+      "date": "2026-10-13",
+      "title": "Un premier livre à partager",
+      "titleZh": "一起分享第一本书",
+      "summaryZh": "2026年法国婴幼儿图书奖选中《在沙滩上》。即使还不识字，孩子也能通过图像、声音和触摸与大人一起探索书。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "亲子阅读",
+        "绘本",
+        "图书馆"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-06",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-12-fr-sorgho-et-eau",
       "lang": "fr",
       "date": "2026-10-12",
@@ -92,6 +182,42 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-13-en-income-beyond-the-headline",
+      "lang": "en",
+      "date": "2026-10-13",
+      "title": "Household income: reading beyond the headline",
+      "titleZh": "家庭收入：读懂醒目数字背后的含义",
+      "summaryZh": "以2026年10月2日发布的英国收入统计为线索，读懂中位数、可支配收入、家庭差异和样本局限；数据对应2024年4月至2025年3月。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "家庭收入",
+        "生活水平",
+        "统计解读"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-02",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-fr-marchands-et-valeur-culturelle",
+      "lang": "fr",
+      "date": "2026-10-13",
+      "title": "Marchands, musées et valeur de la culture",
+      "titleZh": "商人、博物馆与文化的价值",
+      "summaryZh": "布卢瓦历史节以商人为主题，原定活动期为10月7日至11日。本篇回看文化部事前公布的安排，讨论文化投资、艺术品来源和数字化探索，不把预告写成事后成效。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "历史节",
+        "艺术品来源",
+        "文化价值"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-02",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-11-de-sichere-spiele-chats",
       "lang": "de",
       "date": "2026-10-11",
@@ -107,6 +233,24 @@
       ],
       "sourceLang": "de",
       "sourcePublishedAt": "2026-10-02",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-it-strumenti-in-prestito",
+      "lang": "it",
+      "date": "2026-10-13",
+      "title": "Tre strumenti in viaggio per la ricerca",
+      "titleZh": "为科研远行的三台仪器",
+      "summaryZh": "INGV于2026年10月1日报道向委内瑞拉临时提供三台地震观测设备。设备仍归INGV所有，合作还包括知识与经验的交流。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "科学合作",
+        "借用设备",
+        "知识共享"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-01",
       "contentType": "native-adaptation"
     },
     {
@@ -235,6 +379,60 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-13-en-school-costs",
+      "lang": "en",
+      "date": "2026-10-13",
+      "title": "A less expensive start to the school day",
+      "titleZh": "上学的一天，怎样少花一点钱",
+      "summaryZh": "从免费早餐到校服，理解一份2026年9月1日的英格兰家庭支持公告；保留“可能”“最多”等条件，不把上限当人人领取的金额。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "学校日常",
+        "家庭预算",
+        "公共服务"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-01",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-de-ki-woerter-im-alltag",
+      "lang": "de",
+      "date": "2026-10-13",
+      "title": "KI-Wörter im Alltag",
+      "titleZh": "日常生活中的人工智能词语",
+      "summaryZh": "这篇8月发布的术语介绍帮助读者区分聊天机器人、生成式人工智能与提示语，并认识错误信息和偏差。",
+      "level": "A2",
+      "category": "technology",
+      "topics": [
+        "日常AI",
+        "数字词汇",
+        "信息判断"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-08-20",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-de-suchen-ohne-weiterzuklicken",
+      "lang": "de",
+      "date": "2026-10-13",
+      "title": "Suchen, ohne weiterzuklicken?",
+      "titleZh": "搜索之后，不再点击？",
+      "summaryZh": "8月的bpb文章讨论AI搜索摘要如何改变读者与网站的关系，以及免费信息和媒体多样性面临的压力。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "搜索习惯",
+        "媒体多样性",
+        "信息来源"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-08-19",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-10-en-satellites-everyday-life",
       "lang": "en",
       "date": "2026-10-10",
@@ -249,6 +447,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-08-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-13-de-welche-geschichten-wir-ueber-ki-erzaehlen",
+      "lang": "de",
+      "date": "2026-10-13",
+      "title": "Welche Geschichten erzählen wir über KI?",
+      "titleZh": "我们怎样讲述人工智能？",
+      "summaryZh": "在7月的访谈中，漫画随笔作者Julia Schneider讨论了进步与威胁两种AI叙事，以及艺术、青少年观点和社会关系如何拓宽讨论。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "漫画随笔",
+        "技术叙事",
+        "多元视角"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-07-21",
       "contentType": "native-adaptation"
     },
     {

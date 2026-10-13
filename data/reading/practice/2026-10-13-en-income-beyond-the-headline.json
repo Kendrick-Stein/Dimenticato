@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-en-income-beyond-the-headline",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s5",
+      "start": 0,
+      "answer": "Disposable",
+      "options": [
+        "Disposable",
+        "Disposed",
+        "Disposing",
+        "Disposal"
+      ],
+      "explanation": "可支配的。句首大写；disposable income是扣除直接税后的可用收入。 请还原本文的原词形。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 13,
+      "answer": "median",
+      "options": [
+        "median",
+        "medium",
+        "media",
+        "medal"
+      ],
+      "explanation": "中位数。统计术语，此处与mean作明确对比。 请还原本文的原词形。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s14",
+      "start": 58,
+      "answer": "inflation",
+      "options": [
+        "inflate",
+        "inflated",
+        "inflation",
+        "inflating"
+      ],
+      "explanation": "通货膨胀。不可数名词，指总体价格水平上涨。 请还原本文的原词形。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s16",
+      "start": 39,
+      "answer": "inequality",
+      "options": [
+        "unequal",
+        "inequality",
+        "unequally",
+        "equalise"
+      ],
+      "explanation": "不平等。名词；a measure of后接名词，不是形容词。 请还原本文的原词形。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s20",
+      "start": 103,
+      "answer": "composition",
+      "options": [
+        "composed",
+        "composing",
+        "compositional",
+        "composition"
+      ],
+      "explanation": "构成。the composition of指群体由哪些成员组成。 请还原本文的原词形。"
+    }
+  ]
+}

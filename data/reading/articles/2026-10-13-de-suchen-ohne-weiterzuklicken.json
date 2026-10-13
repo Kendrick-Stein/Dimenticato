@@ -1,0 +1,386 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-de-suchen-ohne-weiterzuklicken",
+  "storyId": "bpb-google-search-2026-08-19",
+  "lang": "de",
+  "date": "2026-10-13",
+  "title": "Suchen, ohne weiterzuklicken?",
+  "titleZh": "搜索之后，不再点击？",
+  "summaryZh": "8月的bpb文章讨论AI搜索摘要如何改变读者与网站的关系，以及免费信息和媒体多样性面临的压力。",
+  "level": "B1",
+  "levelReason": "围绕一个日常场景展开原因、条件与对比；使用weil、wenn、damit等连接词解释媒体收入机制，保留风险的可能性。级别为编辑估计。",
+  "category": "society",
+  "topics": [
+    "搜索习惯",
+    "媒体多样性",
+    "信息来源"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Bundeszentrale für politische Bildung — Werkstatt",
+    "title": "Zukunft der Google-Suche",
+    "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580712/zukunft-der-google-suche/",
+    "publishedAt": "2026-08-19",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+  },
+  "attribution": "Bundeszentrale für politische Bildung, Werkstatt, bpb.de, „Zukunft der Google-Suche“, 2026-08-19. Quelle: https://www.bpb.de/lernen/digitale-bildung/werkstatt/580712/zukunft-der-google-suche/ Lizenz: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/deed.de).",
+  "adaptation": "Dimenticato德语教学改写：删节、重组并简化原文，新增中文逐句翻译、语境词注、学习总结和口语练习；配套练习亦为改编。全部改编文字及新增教学材料以CC BY-SA 4.0发布。未使用图片、漫画、音视频或另有署名的第三方引语；不表示原作者或bpb认可本版本。原文日期与本学习版日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Wer im Internet eine Frage stellt, möchte meistens schnell eine verständliche Antwort bekommen.",
+      "zh": "在网上提出问题的人，通常希望快速得到一个易懂的答案。",
+      "glosses": [
+        {
+          "surface": "verständliche",
+          "lemma": "verständlich",
+          "zh": "易懂的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Früher führte der Weg bei einer Suchmaschine oft über eine Liste mit Links zu verschiedenen Websites.",
+      "zh": "过去，使用搜索引擎时，人们常通过链接列表前往不同的网站。",
+      "glosses": [
+        {
+          "surface": "Suchmaschine",
+          "lemma": "Suchmaschine",
+          "zh": "搜索引擎"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "In ihrem Beitrag vom August 2026 beschreibt die bpb-Werkstatt, wie KI-Zusammenfassungen diesen Weg verändern.",
+      "zh": "bpb的Werkstatt栏目在2026年8月的文章中描述了AI摘要如何改变这一路径。",
+      "glosses": [
+        {
+          "surface": "Zusammenfassungen",
+          "lemma": "Zusammenfassung",
+          "zh": "摘要"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Die Suche bei Google zeigt nicht nur Links, sondern beantwortet manche Fragen bereits auf der eigenen Seite.",
+      "zh": "谷歌搜索不只显示链接，还在自己的页面上直接回答某些问题。",
+      "glosses": [
+        {
+          "surface": "eigenen",
+          "lemma": "eigen",
+          "zh": "自己的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Dadurch haben die Nutzer weniger Gründe, die Website zu öffnen, von der eine Information ursprünglich stammt.",
+      "zh": "因此，用户打开信息最初来源网站的理由变少了。",
+      "glosses": [
+        {
+          "surface": "ursprünglich",
+          "lemma": "ursprünglich",
+          "zh": "最初"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Für sie kann das bequem sein, doch für die Menschen hinter diesen Websites entstehen dadurch Probleme.",
+      "zh": "这对用户来说可能很方便，却会给这些网站背后的人带来问题。",
+      "glosses": [
+        {
+          "surface": "bequem",
+          "lemma": "bequem",
+          "zh": "方便的"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Der Beitrag verwendet dafür den Ausdruck Google Zero: Websites erhalten seit der Einführung solcher Antworten weniger Besuche.",
+      "zh": "文章为此使用Google Zero这个说法：自从引入这类回答后，网站获得的访问减少了。",
+      "glosses": [
+        {
+          "surface": "Einführung",
+          "lemma": "Einführung",
+          "zh": "引入"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Eine genaue Zahl nennt der Text dabei nicht.",
+      "zh": "文章在此没有给出确切数字。",
+      "glosses": [
+        {
+          "surface": "genaue",
+          "lemma": "genau",
+          "zh": "确切的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Viele Medienangebote brauchen jedoch Besuche, weil sie mit Werbung oder mit bezahlten Abonnements Geld verdienen.",
+      "zh": "然而，许多媒体服务需要访问量，因为它们通过广告或付费订阅赚钱。",
+      "glosses": [
+        {
+          "surface": "Werbung",
+          "lemma": "Werbung",
+          "zh": "广告"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Wenn weniger Menschen auf ihre Seiten kommen, kann diese Finanzierung schwieriger werden.",
+      "zh": "如果进入其页面的人减少，这种筹资方式就可能变得更困难。",
+      "glosses": [
+        {
+          "surface": "Finanzierung",
+          "lemma": "Finanzierung",
+          "zh": "资金来源、筹资"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Im Artikel wird deshalb die Sorge beschrieben, dass manche Anbieter ihre Angebote aufgeben könnten.",
+      "zh": "所以，文章描述了这样一种担忧：某些提供者可能放弃其服务。",
+      "glosses": [
+        {
+          "surface": "aufgeben",
+          "lemma": "aufgeben",
+          "zh": "放弃"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Andere könnten mehr Inhalte nur noch gegen Geld zugänglich machen.",
+      "zh": "另一些提供者可能会让更多内容只能付费访问。",
+      "glosses": [
+        {
+          "surface": "zugänglich",
+          "lemma": "zugänglich",
+          "zh": "可访问的"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Das wäre auch für Leser wichtig, die bisher kostenlose Informationen nutzen konnten.",
+      "zh": "这对以往能够使用免费信息的读者也会有影响。",
+      "glosses": [
+        {
+          "surface": "kostenlose",
+          "lemma": "kostenlos",
+          "zh": "免费的"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Weniger frei erreichbare Angebote könnten die Vielfalt der verfügbaren Informationen einschränken.",
+      "zh": "更少可自由访问的服务可能限制可获取信息的多样性。",
+      "glosses": [
+        {
+          "surface": "Vielfalt",
+          "lemma": "Vielfalt",
+          "zh": "多样性"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Außerdem kritisieren Medienschaffende laut dem Beitrag, dass ihre Arbeit ohne Bezahlung genutzt wird.",
+      "zh": "此外，文章称，媒体从业者批评他们的工作成果被无偿使用。",
+      "glosses": [
+        {
+          "surface": "Bezahlung",
+          "lemma": "Bezahlung",
+          "zh": "报酬"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Es geht also nicht nur darum, wie schnell jemand eine Antwort findet, sondern auch um die Arbeit dahinter.",
+      "zh": "因此，问题不仅在于一个人多快找到答案，也涉及答案背后的劳动。",
+      "glosses": [
+        {
+          "surface": "dahinter",
+          "lemma": "dahinter",
+          "zh": "在其背后"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Ein weiteres Problem ist die Auswahl der Quellen: Für Nutzer ist nicht klar, warum bestimmte Quellen verwendet werden.",
+      "zh": "另一个问题是来源的选择：用户并不清楚为什么采用某些来源。",
+      "glosses": [
+        {
+          "surface": "Quellen",
+          "lemma": "Quelle",
+          "zh": "信息来源"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Auch können die automatisch erzeugten Antworten Fehler enthalten.",
+      "zh": "自动生成的回答也可能包含错误。",
+      "glosses": [
+        {
+          "surface": "enthalten",
+          "lemma": "enthalten",
+          "zh": "包含"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Die Werkstatt schlägt deshalb vor, im Unterricht über die eigene Suche und ihre gesellschaftlichen Folgen zu sprechen.",
+      "zh": "因此，Werkstatt建议在课堂上讨论个人的搜索行为及其社会后果。",
+      "glosses": [
+        {
+          "surface": "Folgen",
+          "lemma": "Folge",
+          "zh": "后果"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "So verbindet eine alltägliche Handlung die persönliche Nutzung mit der Frage, wie Medien ihre Arbeit langfristig finanzieren können.",
+      "zh": "这样，一种日常行为就将个人使用与媒体如何长期为工作筹资的问题联系起来。",
+      "glosses": [
+        {
+          "surface": "langfristig",
+          "lemma": "langfristig",
+          "zh": "长期地"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Suchmaschine",
+        "zh": "搜索引擎",
+        "sentenceId": "s2",
+        "lemma": "Suchmaschine"
+      },
+      {
+        "text": "Einführung",
+        "zh": "引入",
+        "sentenceId": "s7",
+        "lemma": "Einführung"
+      },
+      {
+        "text": "Werbung",
+        "zh": "广告",
+        "sentenceId": "s9",
+        "lemma": "Werbung"
+      },
+      {
+        "text": "Finanzierung",
+        "zh": "资金来源",
+        "sentenceId": "s10",
+        "lemma": "Finanzierung"
+      },
+      {
+        "text": "Vielfalt",
+        "zh": "多样性",
+        "sentenceId": "s14",
+        "lemma": "Vielfalt"
+      },
+      {
+        "text": "Quellen",
+        "zh": "信息来源",
+        "sentenceId": "s17",
+        "lemma": "Quelle"
+      },
+      {
+        "text": "enthalten",
+        "zh": "包含",
+        "sentenceId": "s18",
+        "lemma": "enthalten"
+      },
+      {
+        "text": "langfristig",
+        "zh": "长期地",
+        "sentenceId": "s20",
+        "lemma": "langfristig"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "nicht nur Links, sondern",
+        "zh": "不只是链接，而是还……",
+        "sentenceId": "s4",
+        "lemma": "nicht nur …, sondern …"
+      },
+      {
+        "text": "Geld verdienen",
+        "zh": "赚钱",
+        "sentenceId": "s9",
+        "lemma": "Geld verdienen"
+      },
+      {
+        "text": "gegen Geld",
+        "zh": "付费、以金钱交换",
+        "sentenceId": "s12",
+        "lemma": "gegen Geld"
+      },
+      {
+        "text": "gesellschaftlichen Folgen",
+        "zh": "社会后果",
+        "sentenceId": "s19",
+        "lemma": "gesellschaftliche Folgen"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "wenn条件句与kann搭配，表示可能后果，并未断言所有媒体的收入都会下降。"
+      },
+      {
+        "sentenceId": "s16",
+        "note": "es geht um表示“问题涉及……”；nicht nur…sondern auch连接两层讨论。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Wann klickst du nach einer Suchantwort noch auf die ursprüngliche Website?",
+        "zh": "搜索得到答案后，你何时还会点击原始网站？"
+      },
+      {
+        "text": "Wie könnte man schnelle Antworten und vielfältige Medienangebote miteinander verbinden?",
+        "zh": "如何兼顾快速回答与多样化的媒体服务？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Für mich ist entscheidend, dass …",
+        "zh": "对我来说，关键是……",
+        "note": "用来提出判断标准。"
+      },
+      {
+        "text": "Wenn …, könnte …",
+        "zh": "如果……，就可能……",
+        "note": "讨论可能的影响，而非确定结果。"
+      }
+    ]
+  }
+}

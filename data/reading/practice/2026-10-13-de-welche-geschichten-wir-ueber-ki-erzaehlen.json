@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-de-welche-geschichten-wir-ueber-ki-erzaehlen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 107,
+      "answer": "Widersprüche",
+      "options": [
+        "Widersprüche",
+        "Widersprüchen",
+        "Widerspruchs",
+        "Widerspruches"
+      ],
+      "explanation": "介词für后的并列宾语用复数第四格Widersprüche，意为“矛盾”；Widersprüchen为复数第三格。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 141,
+      "answer": "Wirklichkeit",
+      "options": [
+        "Wirklichkeit",
+        "Wirklichkeiten",
+        "Wirklichkeits",
+        "Wirklichkeitem"
+      ],
+      "explanation": "eine komplizierte后接阴性单数Wirklichkeit，表示现实；不能用复数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 92,
+      "answer": "auslösen",
+      "options": [
+        "auslösen",
+        "auslöst",
+        "auslöste",
+        "auslösest"
+      ],
+      "explanation": "情态动词können要求不定式auslösen，意为“引发”；其他形式与该结构不符。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 4,
+      "answer": "Einwand",
+      "options": [
+        "Einwand",
+        "Einwände",
+        "Einwänden",
+        "Einwandes"
+      ],
+      "explanation": "Ihr与单数动词lautet要求单数主格Einwand，意为“异议”。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s15",
+      "start": 81,
+      "answer": "mitbestimmen",
+      "options": [
+        "mitbestimmen",
+        "mitbestimmt",
+        "mitbestimmte",
+        "mitbestimmst"
+      ],
+      "explanation": "情态动词kann后用不定式mitbestimmen，意为“参与决定”；其他形式不能与kann构成本句所需结构。"
+    }
+  ]
+}

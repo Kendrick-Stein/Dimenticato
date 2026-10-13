@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-fr-marchands-et-valeur-culturelle",
+  "storyId": "culture-blois-merchants-2026-10-02",
+  "lang": "fr",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "title": "Marchands, musées et valeur de la culture",
+  "titleZh": "商人、博物馆与文化的价值",
+  "summaryZh": "布卢瓦历史节以商人为主题，原定活动期为10月7日至11日。本篇回看文化部事前公布的安排，讨论文化投资、艺术品来源和数字化探索，不把预告写成事后成效。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：连贯说明与因果关系，未完成过去时回述已公布的计划，含关系从句和文化领域词汇；需要区分活动预告与经核实的结果。非认证 CEFR 测评。",
+  "category": "culture",
+  "topics": [
+    "历史节",
+    "艺术品来源",
+    "文化价值"
+  ],
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Rendez-vous de l’histoire de Blois : les Marchands au cœur des débats",
+    "url": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats",
+    "publishedAt": "2026-10-02",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+  },
+  "attribution": "来源：Ministère de la Culture，《Rendez-vous de l’histoire de Blois : les Marchands au cœur des débats》，原文发布日期 2026-10-02，查阅日期 2026-10-13。原文链接见来源栏。仅使用机构自有正文；排除图片、书中文字、直接引语与外部链接材料。",
+  "adaptation": "Dimenticato 根据法语机构原文进行同语言节选、重组与分级改写，添加简中逐句翻译、语境注释和原创练习；不代表原机构认可。本改写、中文译文及配套学习材料按 CC BY-SA 3.0 FR 发布。",
+  "sentences": [
+    {
+      "id": "fr-blois-marchands-01",
+      "text": "Du 7 au 11 octobre 2026, Blois devait accueillir la vingt-neuvième édition des Rendez-vous de l’histoire, consacrée aux marchands.",
+      "zh": "2026年10月7日至11日，布卢瓦原定举办第二十九届历史之约活动，主题是商人。",
+      "glosses": [
+        {
+          "surface": "devait",
+          "lemma": "devoir",
+          "zh": "原定要"
+        },
+        {
+          "surface": "marchands",
+          "lemma": "marchand",
+          "zh": "商人"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-02",
+      "text": "Le programme présenté par le ministère de la Culture le 2 octobre permet de comprendre les questions proposées au public.",
+      "zh": "文化部10月2日介绍的活动安排让人了解向公众提出了哪些问题。",
+      "glosses": [
+        {
+          "surface": "programme",
+          "lemma": "programme",
+          "zh": "活动安排"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-03",
+      "text": "À la date de cette lecture, la période annoncée est terminée ; il ne s’agit donc plus d’un programme à venir.",
+      "zh": "在本篇阅读材料发布时，预告中的活动时段已经结束，因此它不再是未来日程。",
+      "glosses": [
+        {
+          "surface": "terminée",
+          "lemma": "terminer",
+          "zh": "结束的"
+        },
+        {
+          "surface": "annoncée",
+          "lemma": "annoncer",
+          "zh": "预告的"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-04",
+      "text": "Pourquoi étudier les marchands dans un festival d’histoire ?",
+      "zh": "为什么在历史节上研究商人？",
+      "glosses": [
+        {
+          "surface": "étudier",
+          "lemma": "étudier",
+          "zh": "研究"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-05",
+      "text": "Parce que leurs activités font circuler des objets, mais aussi des images et des idées entre différentes sociétés.",
+      "zh": "因为他们的活动不仅让物品流通，也让图像和思想在不同社会之间传播。",
+      "glosses": [
+        {
+          "surface": "circuler",
+          "lemma": "circuler",
+          "zh": "流通；传播"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-06",
+      "text": "Le commerce offre ainsi une manière d’observer les changements économiques, sociaux et culturels, au-delà du simple achat d’un produit.",
+      "zh": "因此，商业提供了观察经济、社会与文化变化的视角，而不限于单纯购买一件商品。",
+      "glosses": [
+        {
+          "surface": "au-delà",
+          "lemma": "au-delà",
+          "zh": "超出……范围"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-07",
+      "text": "Une rencontre prévue le 9 octobre portait sur la valeur de la culture et sur les raisons de la considérer comme un investissement.",
+      "zh": "原定10月9日举行的一场交流聚焦文化的价值，以及将其视为投资的理由。",
+      "glosses": [
+        {
+          "surface": "investissement",
+          "lemma": "investissement",
+          "zh": "投资"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-08",
+      "text": "Elle devait examiner ses effets économiques dans les territoires, notamment à la campagne, ainsi que sa dimension internationale.",
+      "zh": "这场交流原计划研究文化在各地、特别在乡村的经济影响，以及其国际层面。",
+      "glosses": [
+        {
+          "surface": "notamment",
+          "lemma": "notamment",
+          "zh": "特别；尤其"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-09",
+      "text": "Une autre discussion, annoncée pour le 8 octobre, concernait la provenance des œuvres conservées dans les collections publiques ou vendues sur le marché de l’art.",
+      "zh": "另一场预告在10月8日举行的讨论涉及公共收藏中保存或艺术市场上出售的作品的来源。",
+      "glosses": [
+        {
+          "surface": "provenance",
+          "lemma": "provenance",
+          "zh": "来源；流传经历"
+        },
+        {
+          "surface": "œuvres",
+          "lemma": "œuvre",
+          "zh": "艺术作品"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-10",
+      "text": "Rechercher cette provenance, c’est demander à qui un objet a appartenu et dans quelles conditions il a changé de propriétaire.",
+      "zh": "研究这种来源，就是追问一件物品曾归谁所有，以及它在什么条件下易主。",
+      "glosses": [
+        {
+          "surface": "appartenu",
+          "lemma": "appartenir",
+          "zh": "曾属于"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-11",
+      "text": "Le ministère rappelait notamment les biens volés aux Juifs entre 1933 et 1945 et les demandes de restitution de pays anciennement colonisés.",
+      "zh": "文化部特别提到了1933年至1945年间从犹太人手中掠夺的物品，以及曾遭殖民国家提出的返还要求。",
+      "glosses": [
+        {
+          "surface": "restitution",
+          "lemma": "restitution",
+          "zh": "返还"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-12",
+      "text": "Les catalogues de ventes numérisés et les nouvelles méthodes de recherche peuvent aider à reconstituer ces parcours.",
+      "zh": "数字化拍卖目录与新的研究方法可以帮助重建这些流传轨迹。",
+      "glosses": [
+        {
+          "surface": "numérisés",
+          "lemma": "numériser",
+          "zh": "经过数字化的"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-13",
+      "text": "Le programme proposait également des découvertes de musées en réalité virtuelle, avec une expérience conçue par le ministère.",
+      "zh": "活动安排还通过文化部设计的一项体验，提供以虚拟现实探索博物馆的机会。",
+      "glosses": [
+        {
+          "surface": "conçue",
+          "lemma": "concevoir",
+          "zh": "设计的"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-14",
+      "text": "Enfin, plusieurs rencontres étaient consacrées à la photographie, à son histoire et aux traces qu’elle laisse dans les archives.",
+      "zh": "最后，多场交流围绕摄影、摄影史及其在档案中留下的痕迹展开安排。",
+      "glosses": [
+        {
+          "surface": "traces",
+          "lemma": "trace",
+          "zh": "痕迹"
+        }
+      ]
+    },
+    {
+      "id": "fr-blois-marchands-15",
+      "text": "Ces différents thèmes invitaient à réfléchir à ce qui donne de la valeur à un objet culturel, sans la réduire à son prix.",
+      "zh": "这些不同主题邀请人们思考什么赋予文化物品价值，而不把价值简化为价格。",
+      "glosses": [
+        {
+          "surface": "réduire",
+          "lemma": "réduire",
+          "zh": "简化；缩减"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "terminée",
+        "zh": "结束的",
+        "sentenceId": "fr-blois-marchands-03"
+      },
+      {
+        "text": "conçue",
+        "zh": "设计的",
+        "sentenceId": "fr-blois-marchands-13"
+      },
+      {
+        "text": "appartenu",
+        "zh": "曾属于",
+        "sentenceId": "fr-blois-marchands-10"
+      },
+      {
+        "text": "numérisés",
+        "zh": "数字化的",
+        "sentenceId": "fr-blois-marchands-12"
+      },
+      {
+        "text": "réduire",
+        "zh": "简化",
+        "sentenceId": "fr-blois-marchands-15"
+      },
+      {
+        "text": "marchands",
+        "zh": "商人",
+        "sentenceId": "fr-blois-marchands-01"
+      },
+      {
+        "text": "provenance",
+        "zh": "来源；流传经历",
+        "sentenceId": "fr-blois-marchands-09"
+      },
+      {
+        "text": "restitution",
+        "zh": "返还",
+        "sentenceId": "fr-blois-marchands-11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "à venir",
+        "zh": "即将到来的",
+        "sentenceId": "fr-blois-marchands-03"
+      },
+      {
+        "text": "au-delà du simple achat",
+        "zh": "超出单纯购买的范围",
+        "sentenceId": "fr-blois-marchands-06"
+      },
+      {
+        "text": "à la campagne",
+        "zh": "在乡村",
+        "sentenceId": "fr-blois-marchands-08"
+      },
+      {
+        "text": "a changé de propriétaire",
+        "zh": "已经易主",
+        "sentenceId": "fr-blois-marchands-10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-blois-marchands-06",
+        "note": "ainsi 表示推论，au-delà de 表示超出某个范围；可用于扩展讨论视角。"
+      },
+      {
+        "sentenceId": "fr-blois-marchands-10",
+        "note": "c’est + 不定式解释一个概念；间接疑问 à qui / dans quelles conditions 引出调查问题。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pour vous, la valeur d’une œuvre se mesure-t-elle surtout par son prix ?",
+        "zh": "对你来说，作品的价值主要由价格衡量吗？"
+      },
+      {
+        "text": "Que voudriez-vous apprendre sur l’histoire d’un objet exposé au musée ?",
+        "zh": "对于博物馆展品，你想了解它的哪些历史？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "La valeur de cet objet ne dépend pas seulement de…",
+        "zh": "这件物品的价值不仅取决于……",
+        "note": "原创口语表达，可按自己的观点补充。"
+      },
+      {
+        "text": "Avant de l’exposer, il faudrait savoir…",
+        "zh": "在展出它之前，应当了解……",
+        "note": "原创口语表达，可按自己的观点补充。"
+      }
+    ]
+  }
+}

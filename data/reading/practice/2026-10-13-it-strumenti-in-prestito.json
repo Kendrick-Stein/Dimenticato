@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-13-it-strumenti-in-prestito",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-strumenti-in-prestito-01",
+      "start": 4,
+      "answer": "strumenti",
+      "options": [
+        "strumenti",
+        "strumento",
+        "strumentale",
+        "strumentazione"
+      ],
+      "explanation": "三个具体仪器，用阳性复数 strumenti；tre 后不能用单数或集合名词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-strumenti-in-prestito-01",
+      "start": 46,
+      "answer": "terremoti",
+      "options": [
+        "terremoti",
+        "terremoto",
+        "terremotata",
+        "terremotare"
+      ],
+      "explanation": "sui = su + i，后接阳性复数 terremoti，意为地震。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-strumenti-in-prestito-04",
+      "start": 21,
+      "answer": "mobili",
+      "options": [
+        "mobili",
+        "mobile",
+        "mobilità",
+        "mobilmente"
+      ],
+      "explanation": "形容词修饰复数 stazioni，须用 mobili；不要与表示流动性的名词 mobilità 混淆。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-strumenti-in-prestito-05",
+      "start": 38,
+      "answer": "consegnato",
+      "options": [
+        "consegnato",
+        "consegnare",
+        "consegna",
+        "consegnando"
+      ],
+      "explanation": "ha + 过去分词构成近过去时；consegnare 的过去分词为 consegnato。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-strumenti-in-prestito-07",
+      "start": 17,
+      "answer": "conservare",
+      "options": [
+        "conservare",
+        "conservato",
+        "conserva",
+        "conservazione"
+      ],
+      "explanation": "情态动词 deve 后接动词原形 conservare，表示须保管。"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "schema": 1,
+  "id": "2026-10-13-en-ai-patient-trust",
+  "storyId": "en-2026-10-06-ai-patient-trust",
+  "lang": "en",
+  "date": "2026-10-13",
+  "contentType": "native-adaptation",
+  "category": "health",
+  "topics": [
+    "医疗技术",
+    "患者知情",
+    "持续监督"
+  ],
+  "title": "Why medical AI needs checks after it starts work",
+  "titleZh": "医疗AI投入使用后，为什么还要继续检查",
+  "summaryZh": "2026年10月6日的英国医疗AI公告强调持续监测与患者知情。文章区分“接受建议”和“已经实施”，并非个人医疗建议。",
+  "level": "B1",
+  "levelReason": "以解释性段落连接政策决定、原因、例子和后续步骤；有被动语态、定语从句和情态动词，医疗监管词得到解释。 编辑估计，非认证CEFR测评。",
+  "source": {
+    "name": "Medicines and Healthcare products Regulatory Agency / GOV.UK",
+    "title": "Government backs recommendations of NHS doctors-led AI Commission",
+    "url": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+    "publishedAt": "2026-10-06",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidenceUrl": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission"
+  },
+  "attribution": "Adapted from Medicines and Healthcare products Regulatory Agency / GOV.UK, “Government backs recommendations of NHS doctors-led AI Commission”, published 2026-10-06. Contains public sector information licensed under the Open Government Licence v3.0. Dimenticato adapted the English, translated it into Chinese and added teaching notes and exercises. No official endorsement is implied.",
+  "adaptation": "英语机构原文的同语言分级改写及逐句中文翻译；排除图片、标识、所有外部直接引语和链接报告。事实日期与整理日期分开；口语问题及表达为教学补充。原语判断依据机构署名及英语编辑语境，不声称认证作者母语。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "When an AI tool becomes part of healthcare, checking it once is not the end of the story.",
+      "zh": "当AI工具成为医疗服务的一部分时，检查一次并不意味着事情就结束了。",
+      "glosses": [
+        {
+          "surface": "healthcare",
+          "lemma": "healthcare",
+          "zh": "医疗服务",
+          "note": "不可数名词"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Its performance needs attention throughout the time it is used, especially when the technology changes.",
+      "zh": "在整个使用期间都需要关注它的表现，尤其是在技术发生变化时。",
+      "glosses": [
+        {
+          "surface": "throughout",
+          "lemma": "throughout",
+          "zh": "在整个……期间",
+          "note": "介词，强调覆盖完整使用期间。"
+        },
+        {
+          "surface": "performance",
+          "lemma": "performance",
+          "zh": "表现",
+          "note": "这里指工具在实际使用中的性能"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "That is a central idea in a UK government announcement published on 6 October 2026.",
+      "zh": "这是英国政府2026年10月6日发布的一份公告的核心观点。",
+      "glosses": [
+        {
+          "surface": "announcement",
+          "lemma": "announcement",
+          "zh": "公告",
+          "note": "可数名词"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The government accepted all 44 recommendations from an independent commission on the regulation of AI in healthcare.",
+      "zh": "政府接受了一个医疗AI监管独立委员会提出的全部44项建议。",
+      "glosses": [
+        {
+          "surface": "recommendations",
+          "lemma": "recommendation",
+          "zh": "建议",
+          "note": "复数名词，与44搭配。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Accepting the recommendations is a commitment to further work; it does not mean that every change has already happened.",
+      "zh": "接受建议意味着承诺继续开展工作，并不表示所有变化都已落实。",
+      "glosses": [
+        {
+          "surface": "commitment",
+          "lemma": "commitment",
+          "zh": "承诺",
+          "note": "a commitment to +名词；此处不等于已经完成。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "The MHRA, which regulates medicines and medical devices in the UK, is developing the next steps with other organisations.",
+      "zh": "负责英国药品及医疗器械监管的MHRA正与其他机构一起制定后续步骤。",
+      "glosses": [
+        {
+          "surface": "regulates",
+          "lemma": "regulate",
+          "zh": "监管",
+          "note": "第三人称单数"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The proposed approach pays more attention to how AI-enabled devices perform during their whole working life.",
+      "zh": "拟议的方法更加关注使用AI的器械在整个工作寿命中的表现。",
+      "glosses": [
+        {
+          "surface": "approach",
+          "lemma": "approach",
+          "zh": "方法；做法",
+          "note": "此处作名词"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Instead of relying too heavily on a single assessment, regulators want evidence from continuing use.",
+      "zh": "监管机构希望获得持续使用中的证据，而不是过度依赖一次评估。",
+      "glosses": [
+        {
+          "surface": "assessment",
+          "lemma": "assessment",
+          "zh": "评估",
+          "note": "可数名词单数，与a single搭配。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The announcement also opened applications for the third phase of a programme called AI Airlock.",
+      "zh": "公告还宣布启动AI Airlock项目第三阶段的申请。",
+      "glosses": [
+        {
+          "surface": "applications",
+          "lemma": "application",
+          "zh": "申请",
+          "note": "复数；此处不是手机应用"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "This programme brings developers, regulators and healthcare partners together to explore difficult questions using real products.",
+      "zh": "这个项目让开发者、监管机构和医疗合作方聚在一起，利用真实产品探讨难题。",
+      "glosses": [
+        {
+          "surface": "developers",
+          "lemma": "developer",
+          "zh": "开发者",
+          "note": "复数"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "The new phase focuses on monitoring devices after they have entered use and managing them safely over time.",
+      "zh": "新阶段重点关注器械投入使用后的监测，以及长期安全管理。",
+      "glosses": [
+        {
+          "surface": "monitoring",
+          "lemma": "monitor",
+          "zh": "监测",
+          "note": "focus on之后用-ing形式"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "The evidence collected will help shape future guidance, rather than act as a promise that every product is safe.",
+      "zh": "收集到的证据将帮助制定未来的指导意见，而不是承诺每一种产品都安全。",
+      "glosses": [
+        {
+          "surface": "evidence",
+          "lemma": "evidence",
+          "zh": "证据",
+          "note": "不可数名词"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "The MHRA plans to issue draft guidance by December 2026 on managing changes to AI-enabled medical devices.",
+      "zh": "MHRA计划最迟于2026年12月发布关于管理AI医疗器械变化的指导意见草案。",
+      "glosses": [
+        {
+          "surface": "draft",
+          "lemma": "draft",
+          "zh": "草案的",
+          "note": "draft guidance：尚非最终版本的指导意见。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "A full roadmap covering responsibilities and timing is planned for publication by spring 2027.",
+      "zh": "涵盖责任分工与时间安排的完整路线图计划最迟于2027年春季公布。",
+      "glosses": [
+        {
+          "surface": "roadmap",
+          "lemma": "roadmap",
+          "zh": "路线图；实施规划",
+          "note": "这里不是道路地图"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "The government also wants patients to be better informed about when AI is used in their care.",
+      "zh": "政府还希望患者能够更清楚地知道自己的医疗服务何时使用了AI。",
+      "glosses": [
+        {
+          "surface": "informed",
+          "lemma": "inform",
+          "zh": "知情的",
+          "note": "be informed about了解……"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Other commitments include involving patients in decisions and improving ways to seek redress when care falls below expected standards.",
+      "zh": "其他承诺包括让患者参与决策，以及在医疗服务未达到预期标准时改善寻求补救的途径。",
+      "glosses": [
+        {
+          "surface": "redress",
+          "lemma": "redress",
+          "zh": "补救；纠正损害",
+          "note": "seek redress是寻求补救，不一定指经济赔偿。"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "For readers, the important distinction is between an ambition to improve care and evidence that a particular tool actually does so.",
+      "zh": "对读者而言，重要的是区分改善医疗服务的愿望，与证明某一具体工具确实实现了改善的证据。",
+      "glosses": [
+        {
+          "surface": "distinction",
+          "lemma": "distinction",
+          "zh": "区别",
+          "note": "distinction between A and B：A与B的区别"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "throughout",
+        "lemma": "throughout",
+        "zh": "在整个……期间",
+        "note": "介词，强调覆盖完整使用期间。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "recommendations",
+        "lemma": "recommendation",
+        "zh": "建议",
+        "note": "复数名词，与44搭配。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "commitment",
+        "lemma": "commitment",
+        "zh": "承诺",
+        "note": "a commitment to +名词；此处不等于已经完成。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "assessment",
+        "lemma": "assessment",
+        "zh": "评估",
+        "note": "可数名词单数，与a single搭配。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "redress",
+        "lemma": "redress",
+        "zh": "补救；纠正损害",
+        "note": "seek redress是寻求补救，不一定指经济赔偿。",
+        "sentenceId": "s16"
+      },
+      {
+        "text": "draft",
+        "lemma": "draft",
+        "zh": "草案的",
+        "note": "draft guidance：尚非最终版本的指导意见。",
+        "sentenceId": "s13"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "part of healthcare",
+        "zh": "医疗服务的一部分",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "relying too heavily on",
+        "zh": "过度依赖",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "over time",
+        "zh": "随着时间推移；长期",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "falls below expected standards",
+        "zh": "低于预期标准",
+        "sentenceId": "s16"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "分号连接两个相关判断；does not mean that引出不能由前半句推出的结论。"
+      },
+      {
+        "sentenceId": "s17",
+        "note": "the distinction is between A and B用于区分目标与证据，避免混为一谈。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What would you want to know before an AI tool was used in your care?",
+        "zh": "在医疗服务使用AI工具前，你想了解什么？"
+      },
+      {
+        "text": "Why might a one-time check be insufficient?",
+        "zh": "一次性的检查为什么可能不够？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would want clear information about how the tool is monitored.",
+        "zh": "我希望清楚了解这个工具如何被监测。",
+        "note": "教学补充，用于讨论本文，不是新闻原文引语。"
+      },
+      {
+        "text": "A useful aim still needs supporting evidence.",
+        "zh": "有价值的目标仍然需要证据支持。",
+        "note": "教学补充，用于讨论本文，不是新闻原文引语。"
+      }
+    ]
+  }
+}

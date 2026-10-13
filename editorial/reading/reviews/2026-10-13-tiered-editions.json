@@ -1,0 +1,462 @@
+{
+  "editionDate": "2026-10-13",
+  "baseCommit": "0bd324c851f80e18a721c592e5c82bc3d7206098",
+  "scope": "Twelve distinct native-language source adaptations, three editorial tiers in each of IT/FR/DE/EN, plus sixty reviewed exact-word recall questions. No historical article edits.",
+  "qualityStatus": "PASS",
+  "independentReview": "Each language reviewed by an editor who did not author its articles. All sentence pairs, factual claims/numbers, glosses, learning summaries, speaking supplements, licences and every distractor reviewed. Final corrections rechecked against exact artifacts.",
+  "correctionsVerified": [
+    "Italian median Chinese definition now counts households, not people; resident-household scope explicit.",
+    "French consultation text keeps pesticide health implications broad, avoiding an unsupported attribution to alternative techniques.",
+    "German Google practice distractor with plausible alternate noun replaced; morphology explanations aligned.",
+    "English school-cost distractors allowing reportive-present and superlative readings replaced; December/spring publication deadlines translated precisely."
+  ],
+  "historicalCoverage": {
+    "articleFilesUnchanged": 16,
+    "practiceFilesUnchanged": 4,
+    "todaysEarlierShortArticles": "Retained unchanged as additional reading; actual81–130bodywords, not counted toward the new three-tier target."
+  },
+  "freshness": "Original dates retained; German July21/August19/August20 are90-day fallback features, not October breaking news. English school-cost source is September1. Other new sources October1–8. Edition dates never substitute for source dates.",
+  "rightsScope": "Licensed institutional prose only, no images/logos or unlicensed external quotations. German licensed interview authors explicitly credited; separately ND-licensed comic images excluded. French ministry derivatives retain CC BY-SA3.0FR; German derivatives CC BY-SA4.0; IT CC BY4.0; INRAE Etalab2.0; EN OGLv3.0. Chinese and teaching additions follow article rights.",
+  "sourceAccessLimitations": "Canonical OGL web open returned an internal error; official indexed full licence text was available. ONS canonical raw-HTML fetch returned403 and was not retried; complete official web rendering was independently inspected. No raw HTML hash is claimed for that source.",
+  "duplicateChecks": [
+    "Published16articles, current25candidate metadata, repository article history, withdrawn story exclusion, currentPR query and concurrently merged UI-only changes",
+    "Distinct canonical source URLs, story IDs and normalized foreign-body hashes across all28articles"
+  ],
+  "articles": [
+    {
+      "id": "2026-10-13-de-ki-woerter-im-alltag",
+      "language": "de",
+      "tier": "short",
+      "bodyWords": 156,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "A2",
+      "levelReason": "短句为主，用日常电脑操作解释新词；少量weil和wenn从句有中文与词注支持。级别为编辑估计。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Bundeszentrale für politische Bildung — Werkstatt",
+        "title": "Begriffe rund um KI",
+        "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580724/begriffe-rund-um-ki/",
+        "publishedAt": "2026-08-20",
+        "lang": "de"
+      },
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "e7b82a8faeafbed3a437314a8c55e544a8f22de4522f7327f0d45f5b2d1e1626",
+      "practiceSha256": "351e15a4215981317f506bba7de0161fb6d04cd2575b556c332969cf39dc9c1f",
+      "bodySha256": "ec84b455a2472837bde81d1f8ad5c78adb45b755a54b08dd77cadc1021ec2e76",
+      "factLocators": [
+        "s1–2: header and KI heading, L25–34",
+        "s3–6: KI, LLM, Chatbots definitions, L34–41",
+        "s7–13: Generative KI, Prompting and LLM, L37–47",
+        "s14–16: KI-Bias, L57–59"
+      ]
+    },
+    {
+      "id": "2026-10-13-de-suchen-ohne-weiterzuklicken",
+      "language": "de",
+      "tier": "standard",
+      "bodyWords": 283,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "B1",
+      "levelReason": "围绕一个日常场景展开原因、条件与对比；使用weil、wenn、damit等连接词解释媒体收入机制，保留风险的可能性。级别为编辑估计。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Bundeszentrale für politische Bildung — Werkstatt",
+        "title": "Zukunft der Google-Suche",
+        "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/580712/zukunft-der-google-suche/",
+        "publishedAt": "2026-08-19",
+        "lang": "de"
+      },
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "ed384cc5ba3e1a20f4a8688c6fa0665ebdc54e3dfff1c3b05bb756aa340dfec7",
+      "practiceSha256": "dcf3059436ed23928024ce7e75239e7f8d919d9ef475aded5c87981ab79231e3",
+      "bodySha256": "7fd447791df416b9fd09fcb020e3cad1f3bd46eca44f75603e9592b9109f0251",
+      "factLocators": [
+        "s1–7: introductory search contrast and Google Zero definition, L28–32",
+        "s8: absence of quantified traffic decline in entire source",
+        "s9–16: criticism about compensation and media diversity, L33–37",
+        "s17–18: source transparency and incorrect generated answers, L38",
+        "s19–20: Unterrichtsimpulse, L44–50; final sentence synthesizes earlier media-financing discussion"
+      ]
+    },
+    {
+      "id": "2026-10-13-de-welche-geschichten-wir-ueber-ki-erzaehlen",
+      "language": "de",
+      "tier": "extended",
+      "bodyWords": 517,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "B2",
+      "levelReason": "用较长的复合句比较相反叙事，区分作者判断、访谈经验和事实；涉及抽象社会文化词汇与让步结构。级别为编辑估计。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Bundeszentrale für politische Bildung — Werkstatt",
+        "title": "„Eine Geschichte setzt das Erzählen voraus“",
+        "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579493/eine-geschichte-setzt-das-erzaehlen-voraus/",
+        "publishedAt": "2026-07-21",
+        "lang": "de"
+      },
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "98c3120581e576f0cb8c5d6bf4305d5bd0c7327a98309e6024bf1a58a2956d9c",
+      "practiceSha256": "be41524c85272bf8363afc7a2939737238c186918e33360c23e8019f370f37c7",
+      "bodySha256": "59bc7955de11841c9dc4c90fc08adf1d96f6b2af4697689f00225aa56de6449c",
+      "factLocators": [
+        "s1–9: perspectives and narrative poles, L35–47; author judgments explicitly attributed",
+        "s10–13: spring 2022 interviews with 200 people aged eleven to nineteen, L48–53; adaptation preserves historical data date, does not represent as a 2026 survey",
+        "s14–18: interests, power, material effects and missing perspectives, L67–69 and L78–82",
+        "s19: editorial clarification: interview offers no newly measured product-level environmental figures",
+        "s20–22: educational argument, source criticism and tolerance of multiple perspectives, L87–91",
+        "s23–26: analytical/artistic combination and six-sentence/six-image method with Miriam Beblo, L92–97"
+      ]
+    },
+    {
+      "id": "2026-10-13-en-ai-patient-trust",
+      "language": "en",
+      "tier": "standard",
+      "bodyWords": 290,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "B1",
+      "levelReason": "以解释性段落连接政策决定、原因、例子和后续步骤；有被动语态、定语从句和情态动词，医疗监管词得到解释。 编辑估计，非认证CEFR测评。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Medicines and Healthcare products Regulatory Agency / GOV.UK",
+        "title": "Government backs recommendations of NHS doctors-led AI Commission",
+        "url": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission",
+        "publishedAt": "2026-10-06",
+        "lang": "en"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "evidenceUrl": "https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "1076491b49e82cbcb179909ef180b35175a92d6fdfa7b23229ffe174e3070eb6",
+      "practiceSha256": "5739d3874372d2bb6897bb99d79b44b03f23f295dff0d79f0246b6dfbb54950b",
+      "bodySha256": "dd422b9a6dc33dd9dc8171231634f77c4b1117450afe0210d11efa2072c190b3",
+      "factLocators": "MHRA first narrative and sections A new approach / AI Airlock Phase3 / Moving from one-off assessment:44recommendations; workinglife monitoring; draft guidance byDec2026; roadmap bySpring2027; patientengagement/redress. No actual product safety claim."
+    },
+    {
+      "id": "2026-10-13-en-income-beyond-the-headline",
+      "language": "en",
+      "tier": "extended",
+      "bodyWords": 503,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "B2",
+      "levelReason": "较长论述保留均值与中位数、等值化及样本局限的区别；使用让步、限定和比较结构，需要跨段综合证据。 编辑估计，非认证CEFR测评。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Office for National Statistics",
+        "title": "Average household income, UK: financial year ending 2025",
+        "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025",
+        "publishedAt": "2026-10-02",
+        "lang": "en"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "evidenceUrl": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2025"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "9c9f0f7a459e57d711498a14acc2e314d246211342f599eedb4e6422f0ea7c76",
+      "practiceSha256": "a6fb37fb1c88ada7c306b286ddf08062bf71ec67b836d2861262050c76408075",
+      "bodySha256": "8cfa8a0a5c3866b4dd2129cdf84214b069e54085ca28c75dfd36ec781b08cebd",
+      "factLocators": "ONS Mainpoints £39200,3.5%,Gini32.7%−0.2pp. Glossary:disposable/median/mean/equivalisation; Sources/Quality:8000vs11300/29% samplefall,homeless/institution exclusions,retired/weighting caveats. PeriodApr2024–Mar2025 kept distinct fromOct2026release."
+    },
+    {
+      "id": "2026-10-13-en-school-costs",
+      "language": "en",
+      "tier": "short",
+      "bodyWords": 153,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "A2",
+      "levelReason": "围绕早餐、午餐、校服等具体生活场景；以现在时、过去时及could表达条件性帮助，少量政策词带注释。 编辑估计，非认证CEFR测评。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Department for Education / GOV.UK",
+        "title": "Breathing space for families as government eases school costs",
+        "url": "https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs",
+        "publishedAt": "2026-09-01",
+        "lang": "en"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "evidenceUrl": "https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "cea51c8dd91fef21f62a4e9286285a0b8d4646563a93f3ced9ed6944d71fdcab",
+      "practiceSha256": "293fcbc32b699742af47ed490c08fc7db71af2fda5bd0cf9aed4aaee297cf2d8",
+      "bodySha256": "e572846ea096f14aeeffdfc73d68483ba9190fb1fa605b961dd3661719dc29a5",
+      "factLocators": "DfE narrative paragraphs1–3 and 8–10: England, eligible Universal Credit households, 1400 breakfastclubs, conditional £1200combined savings, ~450nurseries/9000places. Excludes study/thirdparty quotes and stale school-food future promise."
+    },
+    {
+      "id": "2026-10-13-fr-decider-ensemble-des-recherches",
+      "language": "fr",
+      "tier": "extended",
+      "bodyWords": 556,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "B2",
+      "levelReason": "编辑估计 B2：较长的论证链、关系从句、抽象名词和政策讨论词汇；须理解协商方法、制度安排及“承诺不等于成效”的限定。非认证 CEFR 测评。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "INRAE et Chambre régionale d’agriculture d’Occitanie",
+        "title": "Agriculture occitane : une consultation inédite pour affronter la crise climatique et le défi du renouvellement des générations",
+        "url": "https://www.inrae.fr/actualites/agriculture-occitane-consultation-inedite-affronter-crise-climatique-defi-du-renouvellement-generations",
+        "publishedAt": "2026-10-08",
+        "lang": "fr"
+      },
+      "license": {
+        "name": "Licence Ouverte / Open Licence 2.0 (Etalab)",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "4b8d195c8e21124d0aaef39b7fab5c4b4ff3a623a465b43376f325db7606f732",
+      "practiceSha256": "55920ce46d1371e3203e7d5c4d28ff1d573580492d8babdcb1a1532695453c8c",
+      "bodySha256": "84877279f1704dfbf2b1d7b4ebe7c150815984d6f6897b9cc6fdde95c1569fda",
+      "factLocators": [
+        {
+          "sentences": "01–06",
+          "sourceSections": "Opening institutional press release and Une agriculture en état d’urgence; avoid quantitative economic claims."
+        },
+        {
+          "sentences": "07–12",
+          "sourceSections": "Une méthode inédite: panels/colleges, eight webinars, February/April/June chronology, 115 participants, 137 pistes."
+        },
+        {
+          "sentences": "13–18",
+          "sourceSections": "Cinq priorités de recherche à impact: water; 2050 crops; livestock; resilient territories; pesticides."
+        },
+        {
+          "sentences": "19–22",
+          "sourceSections": "Un dispositif pour amplifier et pérenniser la dynamique and final paragraph of priority section; coordination gap and proposed mechanism."
+        },
+        {
+          "sentences": "23",
+          "sourceSections": "Un protocole d’accord: signed October 7."
+        },
+        {
+          "sentences": "24–25",
+          "sourceSections": "Editorial distinction between a signed commitment and unmeasured outcomes; future implementation language grounded in coordination and protocol sections, not claimed as observed research result."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-13-fr-marchands-et-valeur-culturelle",
+      "language": "fr",
+      "tier": "standard",
+      "bodyWords": 289,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "B1",
+      "levelReason": "编辑估计 B1：连贯说明与因果关系，未完成过去时回述已公布的计划，含关系从句和文化领域词汇；需要区分活动预告与经核实的结果。非认证 CEFR 测评。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Rendez-vous de l’histoire de Blois : les Marchands au cœur des débats",
+        "url": "https://www.culture.gouv.fr/actualites/rendez-vous-de-l-histoire-de-blois-les-marchands-au-caeur-des-debats",
+        "publishedAt": "2026-10-02",
+        "lang": "fr"
+      },
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "d3473f9511cdb7ebc402ef46b80ec87a5fc916cd7873b546c0d78e89d51cc670",
+      "practiceSha256": "2df51cf036415dc42ae4b3a7702357a4d54e30247382bb87f173f184aea65bcc",
+      "bodySha256": "bbc878212cc321b783372e1860acb048846e90feae5dfb9faaeedb8f1419f5a6",
+      "factLocators": [
+        {
+          "sentences": "01–03",
+          "sourceSections": "Header published October 2 announces October 7–11 event; October 13 elapsed-time statement is editorial calendar comparison."
+        },
+        {
+          "sentences": "04–06",
+          "sourceSections": "Opening narrative on merchants and circulation of objects/images/ideas."
+        },
+        {
+          "sentences": "07–08",
+          "sourceSections": "Économie de la culture section; omit sector ranking from external report."
+        },
+        {
+          "sentences": "09–12",
+          "sourceSections": "Du marché de l’art à la provenance des œuvres; omit specific legislation status claim."
+        },
+        {
+          "sentences": "13–15",
+          "sourceSections": "L’exploration en réalité virtuelle and photography programme; final value question from closing paragraph."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-13-fr-un-livre-a-partager",
+      "language": "fr",
+      "tier": "short",
+      "bodyWords": 163,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "A2",
+      "levelReason": "编辑估计 A2：具体家庭阅读情境，常用现在时、复合过去时和 pouvoir + 不定式；机构名与新词有语境注释。非认证 CEFR 测评。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Prix du livre pour les bébés : « comme un petit poème » à partager",
+        "url": "https://www.culture.gouv.fr/actualites/prix-du-livre-pour-les-bebes-comme-un-petit-poeme-a-partager",
+        "publishedAt": "2026-10-06",
+        "lang": "fr"
+      },
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "56bb0b57aa8adf4d6f9f80377f85c4dab10b4d15ec4c731372fb956e599dcaca",
+      "practiceSha256": "91086a21bf3187d4d546e43a4225bccc591b67778654c7fc5200def841f2d76e",
+      "bodySha256": "ed5139870e66b29328450cf3a689281baffbfabd532cba8c455d86a044707745",
+      "factLocators": [
+        {
+          "sentences": "01–04",
+          "sourceSections": "Header and paragraph beginning Créé en 2025: prize, creators, twenty-book selection; award event not claimed as independently observed."
+        },
+        {
+          "sentences": "05–07",
+          "sourceSections": "Unquoted narrative on beach setting and image creation; book text and direct creator quotes not adapted."
+        },
+        {
+          "sentences": "08–11",
+          "sourceSections": "Unquoted paragraph Un livre entre les mains… describes early reading actions."
+        },
+        {
+          "sentences": "12",
+          "sourceSections": "Du premier album à la première bibliothèque: Ma première carte de bibliothèque since 2025."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-13-it-bilanci-oltre-la-media",
+      "language": "it",
+      "tier": "extended",
+      "bodyWords": 523,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "B2",
+      "levelReason": "编辑估计 B2：连续分析多种统计口径与群体差异，保留让步、条件、关系从句和名词化表达；要求区分名义金额、比例、中位数。专业概念有语境说明。非认证 CEFR 测评。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Istat",
+        "title": "Spese per consumi delle famiglie – Anno 2025",
+        "url": "https://www.istat.it/comunicato-stampa/spese-per-consumi-delle-famiglie-anno-2025/",
+        "publishedAt": "2026-10-08",
+        "lang": "it"
+      },
+      "license": {
+        "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidenceUrl": "https://www.istat.it/note-legali/"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "2e67a7a5bb383622c3cb24bece485adc86df2ce579720ed88ac08bb1686c0430",
+      "practiceSha256": "9dded9a890554cd695505eed7be02922e2ce11582f10edc9d97cb1f7b483da35",
+      "bodySha256": "1c20440dab3d2bb19ac715f522e0e8c1557e3b537abb2171cb00a16c1dade4d5",
+      "factLocators": {
+        "s1-s8": "Publication 2026-10-08; data year 2025. Mean 2782 vs2755 (+1.0%) described as substantially unchanged; IPCA1.6%; median2338 vs2240; current-price and median definitions preserved. No claim of statistical significance is added.",
+        "s9-s15": "Food/non-alcoholic drink533→552,+3.6%; category prices+3%; share19.8%; non-food2230 stable; housing/water/energy36%, transport10.6%; Northeast3087 vsSouth2215; South foodshare25.4%, Northwest17.7%. No subtraction of separately rounded regional totals; no inference of purchased volume.",
+        "s16-s22": "Self-reported food cutbacks29.4% vs31.1%, via quantity or quality; single-household1932→2070; housing share42% vs29.3% for5+members; economies of scale and mortgage exclusion expressly in source. No household-specific financial advice."
+      }
+    },
+    {
+      "id": "2026-10-13-it-differenziare-e-ridurre",
+      "language": "it",
+      "tier": "standard",
+      "bodyWords": 284,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "B1",
+      "levelReason": "编辑估计 B1：围绕日常垃圾分类连接现象、比较与解释，使用过去时、关系从句、转折及少量统计术语；具体数字辅助理解。非认证 CEFR 测评。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "Istat",
+        "title": "Raccolta differenziata: comportamenti civici e politiche sostenibilità urbana – Anni 2024-2025",
+        "url": "https://www.istat.it/comunicato-stampa/raccolta-differenziata-dei-rifiuti-comportamenti-civici-e-politiche-per-la-sostenibilita-urbana-anni-2024-2025/",
+        "publishedAt": "2026-10-07",
+        "lang": "it"
+      },
+      "license": {
+        "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidenceUrl": "https://www.istat.it/note-legali/"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "d767a47df78c1a0b5a126299a54ac0c6ef6f25eccf48a6138bea148b03a5a159",
+      "practiceSha256": "02ce6b7f373d8a06eee94aa43b8a95bb507d8aae500f8e38c92567428025b963",
+      "bodySha256": "8f56ca7605c451933922e1aa631472b2ddbfc36a44173ffa3a47b22f0a6b361f",
+      "factLocators": {
+        "s1-s8": "2024 municipal waste29.9m tonnes,+2.3%,507.7kg/person,+11.5 vs2023; separated share67.7%,+1percentage point; Northeast77.8%,Northwest71.3%. Framed as separate volume/share measures.",
+        "s9-s14": "2025 family self-reports paper93%,plastic92.7%,glass92.2%; batteries52.8%(2021)→51.3%(2025); expired medicines54.6→54; organic86.7→89.8. Observation that efficient collection can improve measurement retained as possibility, not universal cause. No 2025 family percentage equated to2024 waste share."
+      }
+    },
+    {
+      "id": "2026-10-13-it-strumenti-in-prestito",
+      "language": "it",
+      "tier": "short",
+      "bodyWords": 156,
+      "wordCountMethod": "Unicode whitespace tokens containing a letter or number; foreign body only; internal apostrophes/hyphens retained.",
+      "level": "A2",
+      "levelReason": "编辑估计 A2：短句叙述设备从罗马到委内瑞拉的路线，主要使用现在时与近过去时；机构名称及少量科学词提供中文辅助。非认证 CEFR 测评。",
+      "lengthDeviation": null,
+      "source": {
+        "name": "INGV Ufficio Stampa",
+        "title": "INGV | Dall’Italia al Venezuela: tre stazioni sismologiche per rafforzare ricerca e monitoraggio",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ingv-dall-italia-al-venezuela-tre-stazioni-sismologiche-per-rafforzare-ricerca-e-monitoraggio",
+        "publishedAt": "2026-10-01",
+        "lang": "it"
+      },
+      "license": {
+        "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/ingv-dall-italia-al-venezuela-tre-stazioni-sismologiche-per-rafforzare-ricerca-e-monitoraggio"
+      },
+      "review": "PASS",
+      "practiceReview": "PASS, five questions; all options checked for alternate natural readings in context.",
+      "articleSha256": "48bebfa010f212356921618ce0470adbf612ace4e917ccbbe1195ba243998803",
+      "practiceSha256": "77152560b5c563a70441debcd686c7492ab6c65c4b4757870146826ecc3cda32",
+      "bodySha256": "fd5fa2f6a45cda15d3d81a6da8bb10b0b4e67b8bd2cc2003c9eab186f6a34e20",
+      "factLocators": {
+        "s1-s6": "Publication2026-10-01; three mobile INGV-owned seismic stations temporarily supplied; handover at Venezuelan diplomatic mission Rome2026-08-04, later FUNVISIS transfer. These are institutional aggregate facts, not individual personal data.",
+        "s7-s11": "FUNVISIS custody/proper use, temporary loan not donation, complement existing networks, ONT staff participation and mutual scientific knowledge exchange; no earthquake prediction claim."
+      }
+    }
+  ],
+  "validation": {
+    "articleValidator": "PASS,28articles",
+    "candidateValidator": "PASS,25candidates",
+    "practiceValidator": "PASS,16companions",
+    "readingTests": "PASS,106assertions",
+    "practiceTests": "PASS,566assertions",
+    "fullSuite": "TZ=UTC npm test:38harnesses,475194passed,0failed,0knownissues",
+    "gitDiffCheck": "PASS",
+    "historicalHashes": "All16article and4practiceSHA256unchanged",
+    "browserScope": "Production verification follows publication; no mobile or actual audio-quality pass is claimed by this editorial record."
+  }
+}
