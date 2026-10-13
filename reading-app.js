@@ -1,7 +1,7 @@
 /** Curated reading. No remote translation service; untrusted content is text only. */
 (function (global) {
   'use strict';
-  var entering = false, active = null, request = 0, level = '', category = '', indexCache = null;
+  var entering = false, active = null, request = 0, level = '', category = '', indexCache = null, query = '', visible = 12, returnTo = null;
   var LEVELS = ['A1','A2','B1','B2','C1','C2'];
   function el(tag, text, cls) { var n = document.createElement(tag); if (text !== undefined) n.textContent = text; if (cls) n.className = cls; return n; }
   function button(text, fn) { var n = el('button', text, 'btn btn-ghost'); n.type = 'button'; n.addEventListener('click', fn); return n; }
@@ -170,23 +170,75 @@
         if (!entry || !/^[a-z0-9-]+$/.test(id)) { status(host, '没有找到这篇文章，请返回阅读目录。'); var a = el('a','返回阅读目录'); a.href = global.DimRouter.href(l,'readingScreen'); host.appendChild(a); return; }
         return fetchJSON('data/reading/articles/' + id + '.json').then(function (a) { if (current()) { if (a.id !== id || a.lang !== code(l)) throw new Error('article mismatch'); renderArticle(host, a, l); } });
       }
-      active = null; host.replaceChildren(el('p','READING JOURNAL','kicker'), el('h1','外文精品阅读'), el('p','从各语言机构独立选材，同语言分级改写，配中文译文和学习总结。按主题积累素材，保留原文与整理日期；优先近期原语选读，没有合规内容时不补造。','reading-deck'));
+      active = null;
+      host.replaceChildren(el('p','READING JOURNAL','kicker'), el('h1','外文精品阅读'), el('p','从一篇感兴趣的文章开始。按主题与等级探索，把阅读变成自己的表达。','reading-deck'));
       var filters = el('div', undefined, 'reading-filters');
+      var searchLabel = el('label', '搜索文章', 'reading-search'), search = el('input');
+      search.id = 'readingSearch'; search.type = 'search'; search.placeholder = '标题、话题或关键词'; search.value = query;
+      searchLabel.appendChild(search); filters.appendChild(searchLabel);
       function filter(id, text, options, value, change) {
         var label = el('label', text), select = el('select'); select.id = id;
         options.forEach(function (option) { var o = el('option', option[1]); o.value = option[0]; select.appendChild(o); });
-        select.value = value; select.addEventListener('change', function () { change(select.value); open(l, null, true, id); });
+        select.value = value; select.addEventListener('change', function () { change(select.value); visible = 12; draw(); select.focus({preventScroll:true}); });
         label.appendChild(select); filters.appendChild(label); return select;
       }
-      filter('readingCategoryFilter', '主题分类', [['', '全部主题']].concat(global.ReadingCatalog.categories), category, function (value) { category = value; });
-      filter('readingLevelFilter', '阅读等级（编辑估计）', [['','全部等级']].concat(LEVELS.map(function (v) { return [v,v]; })), level, function (value) { level = value; });
-      if (category || level) filters.appendChild(button('清除筛选', function () { category = ''; level = ''; open(l, null, true, 'readingCategoryFilter'); }));
-      host.appendChild(filters);
-      var entries = index.articles.filter(function (a) { return a.lang === code(l) && (!level || a.level === level) && (!category || a.category === category); }).sort(global.ReadingCatalog.compare);
-      var count = el('p', entries.length + ' 篇已发布阅读 · 原语选读优先，同类按原文日期由新到旧', 'reading-hint'); count.setAttribute('role', 'status'); host.appendChild(count);
-      if (!entries.length) host.appendChild(el('p','当前语言、主题和等级下暂无已发布阅读。试试其他主题或等级，或清除筛选。','empty'));
-      var list = el('div',undefined,'reading-list'), p = progress(l);
-      entries.forEach(function (a) { var item = el('article',undefined,'reading-card'); item.appendChild(el('p',(a.sourcePublishedAt ? '原文 ' + a.sourcePublishedAt + ' · ' : '') + '整理 ' + a.date + ' · ' + a.level + (p[a.id] ? ' · 已读完' : ''),'kicker')); item.appendChild(renderTopics(a)); var title = el('a',a.title); title.lang = a.lang; title.href = global.DimRouter.href(l,'readingArticleScreen') + '/' + a.id; item.appendChild(title); item.appendChild(el('p',contentLabel(a),'reading-content-label')); item.appendChild(el('p',a.titleZh)); item.appendChild(el('p',a.summaryZh)); list.appendChild(item); }); host.appendChild(list); var previousFilter = restoreFilter && document.getElementById(restoreFilter); if (previousFilter && previousFilter.focus) previousFilter.focus({preventScroll:true}); else focusHeading(host);
+      var categorySelect = filter('readingCategoryFilter', '主题', [['', '全部主题']].concat(global.ReadingCatalog.categories), category, function (value) { category = value; });
+      var levelSelect = filter('readingLevelFilter', '等级 · 编辑估计', [['','全部等级']].concat(LEVELS.map(function (v) { return [v,v]; })), level, function (value) { level = value; });
+      var clear = button('清除筛选', function () { query = ''; category = ''; level = ''; visible = 12; search.value = ''; categorySelect.value = ''; levelSelect.value = ''; draw(); search.focus(); });
+      filters.appendChild(clear); host.appendChild(filters);
+      var results = el('div'); host.appendChild(results);
+      function card(a, tier) {
+        var item = el('article', undefined, 'reading-card');
+        if (tier) item.appendChild(el('p', tier, 'reading-tier'));
+        item.appendChild(el('p', a.level + (progress(l)[a.id] ? ' · 已读完' : ''), 'reading-card-level'));
+        item.appendChild(renderTopics(a));
+        var heading = el('h3'), title = el('a', a.title); title.lang = a.lang;
+        title.href = global.DimRouter.href(l, 'readingArticleScreen') + '/' + a.id; title.addEventListener('click', function () { returnTo = { lang: code(l), id: a.id }; }); heading.appendChild(title); item.appendChild(heading);
+        item.appendChild(el('p', a.titleZh, 'reading-card-zh'));
+        item.appendChild(el('p', a.summaryZh, 'reading-card-excerpt'));
+        item.appendChild(el('p', (a.sourcePublishedAt ? '原文 ' + a.sourcePublishedAt + ' · ' : '') + '整理 ' + a.date, 'reading-card-dates'));
+        item.appendChild(el('p', contentLabel(a), 'reading-content-label')); return item;
+      }
+      function draw() {
+        if (!current()) return;
+        results.replaceChildren();
+        clear.hidden = !(category || level || query);
+        var entries = global.ReadingCatalog.select(index.articles, code(l), category, level, query);
+        var featured = !(category || level || query) ? global.ReadingCatalog.today(entries, global.ReadingCatalog.localDate(new Date())) : [];
+        if (featured.length) {
+          var section = el('section', undefined, 'reading-today');
+          section.appendChild(el('h2', '今日选读'));
+          section.appendChild(el('p', '按编辑等级选一篇；只展示今天实际整理的内容。', 'reading-hint'));
+          var picks = el('div', undefined, 'reading-list');
+          featured.forEach(function (pick) { picks.appendChild(card(pick.article, pick.label)); });
+          section.appendChild(picks); results.appendChild(section);
+        }
+        var selected = featured.map(function (pick) { return pick.article.id; });
+        var rest = entries.filter(function (a) { return selected.indexOf(a.id) < 0; });
+        results.appendChild(el('h2', featured.length ? '继续探索' : '文章库', 'reading-library-title'));
+        var count = el('p', entries.length + ' 篇已发布阅读 · 原语选读优先，同类按原文日期由新到旧', 'reading-hint');
+        count.setAttribute('role', 'status'); results.appendChild(count);
+        if (!entries.length) results.appendChild(el('p','当前语言、搜索词、主题和等级下暂无已发布阅读。试试其他关键词，或清除筛选。','empty'));
+        var list = el('div', undefined, 'reading-list'); rest.slice(0, visible).forEach(function (a) { list.appendChild(card(a)); }); results.appendChild(list);
+        if (rest.length > visible) {
+          var more = button('再看 12 篇（剩余 ' + (rest.length - visible) + ' 篇）', function () {
+            var previous = visible; visible += 12; draw();
+            var first = results.querySelectorAll('.reading-list');
+            var archive = first[first.length - 1], links = archive.querySelectorAll('h3 a');
+            if (links[previous]) links[previous].focus();
+          }); more.className += ' reading-load-more'; results.appendChild(more);
+        }
+      }
+      search.addEventListener('input', function (event) { if (event.isComposing) return; query = search.value; visible = 12; draw(); });
+      search.addEventListener('compositionend', function () { query = search.value; visible = 12; draw(); });
+      draw(); var previousFilter = restoreFilter && document.getElementById(restoreFilter);
+      if (previousFilter && previousFilter.focus) previousFilter.focus({preventScroll:true});
+      else if (returnTo && returnTo.lang === code(l)) {
+        var target = Array.from(results.querySelectorAll('a')).find(function (a) { return a.href.endsWith('/' + returnTo.id); });
+        returnTo = null;
+        if (target) target.focus(); else focusHeading(host);
+      } else focusHeading(host);
+
     }).catch(function () { if (current()) { status(host,'阅读内容暂时加载失败，请检查网络后重试。'); host.appendChild(button('重试',function () { indexCache = null; open(l,id); })); } });
   }
   document.addEventListener('keydown', function (event) { if (event.key === 'Escape') { var box = document.getElementById('readingLookup'); if (box) box.hidden = true; } });
