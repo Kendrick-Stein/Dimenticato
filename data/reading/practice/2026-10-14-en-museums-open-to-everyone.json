@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-en-museums-open-to-everyone",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 52,
+      "answer": "visitors",
+      "options": [
+        "visitors",
+        "visited",
+        "visiting",
+        "visitation"
+      ],
+      "explanation": "welcome后需要表示人的名词，visitors为复数“参观者”。其余选项不是这里所需的人称名词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s2",
+      "start": 37,
+      "answer": "confirmed",
+      "options": [
+        "confirming",
+        "confirmation",
+        "confirmed",
+        "confirm"
+      ],
+      "explanation": "句中需要与the government搭配的谓语，过去式confirmed符合日期明确的过去叙述；confirm与单数主语不一致，其余两项不能独立作谓语。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 38,
+      "answer": "charges",
+      "options": [
+        "charged",
+        "charges",
+        "charging",
+        "charge"
+      ],
+      "explanation": "these要求复数名词，charges表示这些收费；单数charge及动词形式不符合结构。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 11,
+      "answer": "began",
+      "options": [
+        "begun",
+        "beginning",
+        "begin",
+        "began"
+      ],
+      "explanation": "in 2001说明过去事件，begin的过去式为began；begun为过去分词，begin与单数主语不一致，beginning不能独立作此句谓语。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 57,
+      "answer": "buildings",
+      "options": [
+        "buildings",
+        "build",
+        "built",
+        "builds"
+      ],
+      "explanation": "their后需要表示建筑物的名词buildings；build/built为动词形式，builds不表示这里所说的博物馆建筑。"
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-fr-les-visiteurs-du-patrimoine",
+  "storyId": "culture-patrimostat-2025-2026-09-11",
+  "lang": "fr",
+  "date": "2026-10-14",
+  "contentType": "native-adaptation",
+  "title": "Qui visite les musées et les monuments ?",
+  "titleZh": "谁在参观博物馆与古迹？",
+  "summaryZh": "文化部2026年发布的Patrimostat介绍2025年初步访客数据，也关注参观人群及其对生态措施的看法。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：围绕参观经历连接统计比较与原因，保留初步估计、数据年份及百分点的区别；专业词汇均有解释。非认证 CEFR 测评。",
+  "category": "society",
+  "topics": [
+    "博物馆",
+    "文化参与",
+    "生态转型"
+  ],
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Patrimoine : la fréquentation se stabilise en 2025",
+    "url": "https://www.culture.gouv.fr/actualites/patrimoine-la-frequentation-se-stabilise-en-2025",
+    "publishedAt": "2026-09-11",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+  },
+  "attribution": "来源：Ministère de la Culture，《Patrimoine : la fréquentation se stabilise en 2025》，原文发布日期 2026-09-11，查阅日期 2026-10-14。原文链接见来源栏。仅使用文化部机构正文，不使用图片、标识、第三方署名材料或链接中的外部作品。",
+  "adaptation": "Dimenticato 根据法语机构原文进行同语言节选、重组与分级改写，添加简中逐句翻译、语境注释和原创练习；不代表原机构认可。本改写、中文译文及配套学习材料按 CC BY-SA 3.0 FR 发布。",
+  "sentences": [
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-01",
+      "text": "En septembre 2026, le ministère de la Culture a présenté les principaux résultats de Patrimostat sur les visites des sites patrimoniaux français.",
+      "zh": "2026年9月，法国文化部介绍了Patrimostat关于法国文化遗产场所参观情况的主要结果。",
+      "glosses": [
+        {
+          "surface": "résultats",
+          "lemma": "résultat",
+          "zh": "结果"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-02",
+      "text": "Cette publication décrit les lieux culturels, les pratiques des visiteurs et les dispositifs qui protègent le patrimoine.",
+      "zh": "这份出版物介绍文化场所、访客的活动以及保护文化遗产的措施。",
+      "glosses": [
+        {
+          "surface": "protègent",
+          "lemma": "protéger",
+          "zh": "保护"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-03",
+      "text": "Il faut distinguer deux périodes : elle présente des estimations pour 2025 et des chiffres consolidés pour 2024.",
+      "zh": "需要区分两个时期：它提供2025年的估计数据以及2024年的核定数据。",
+      "glosses": [
+        {
+          "surface": "estimations",
+          "lemma": "estimation",
+          "zh": "估计数据"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-04",
+      "text": "Selon les premières estimations, la fréquentation des sites et établissements patrimoniaux se stabilise ou augmente.",
+      "zh": "根据初步估计，文化遗产场所和机构的参观人数趋于稳定或有所增长。",
+      "glosses": [
+        {
+          "surface": "fréquentation",
+          "lemma": "fréquentation",
+          "zh": "参观人数"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-05",
+      "text": "Le Centre des monuments nationaux dépasse ainsi douze millions de visiteurs, soit une hausse de 10 % par rapport à 2024.",
+      "zh": "法国国家古迹中心的访客由此超过一千二百万人次，比2024年增长10%。",
+      "glosses": [
+        {
+          "surface": "hausse",
+          "lemma": "hausse",
+          "zh": "增长"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-06",
+      "text": "Les musées nationaux et les lieux d’exposition totalisent, eux, 32,8 millions d’entrées, un niveau proche de celui de l’année précédente.",
+      "zh": "国家博物馆与展览场所共计有3280万人次入场，与前一年水平相近。",
+      "glosses": [
+        {
+          "surface": "entrées",
+          "lemma": "entrée",
+          "zh": "入场人次"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-07",
+      "text": "Ce résultat est observé malgré plusieurs fermetures, dont celle du Centre Georges-Pompidou à Paris.",
+      "zh": "尽管发生了多起闭馆，包括巴黎蓬皮杜中心闭馆，仍出现了这一结果。",
+      "glosses": [
+        {
+          "surface": "malgré",
+          "lemma": "malgré",
+          "zh": "尽管"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-08",
+      "text": "La réouverture des Galeries nationales du Grand Palais a contribué à soutenir les visites des lieux d’exposition.",
+      "zh": "大皇宫国家展览馆的重新开放有助于支撑展览场所的参观人数。",
+      "glosses": [
+        {
+          "surface": "réouverture",
+          "lemma": "réouverture",
+          "zh": "重新开放"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-09",
+      "text": "L’été 2025 a également enregistré un rebond, avec 9,5 millions d’entrées en juillet et août, soit 22 % de plus qu’à l’été 2024.",
+      "zh": "2025年夏季也出现回升，7月和8月共录得950万人次入场，比2024年夏季多22%。",
+      "glosses": [
+        {
+          "surface": "rebond",
+          "lemma": "rebond",
+          "zh": "回升"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-10",
+      "text": "Les touristes étrangers jouent un rôle important : ils représentent 40 % de la fréquentation des monuments et 50 % de celle des musées.",
+      "zh": "外国游客发挥着重要作用：他们占古迹访客的40%，占博物馆访客的50%。",
+      "glosses": [
+        {
+          "surface": "étrangers",
+          "lemma": "étranger",
+          "zh": "外国的"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-11",
+      "text": "Mais compter les entrées ne suffit pas pour comprendre les publics : la publication rassemble aussi des enquêtes sur leur expérience de visite.",
+      "zh": "但是，统计入场人次不足以了解受众：出版物还汇集了关于他们参观体验的调查。",
+      "glosses": [
+        {
+          "surface": "enquêtes",
+          "lemma": "enquête",
+          "zh": "调查"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-12",
+      "text": "Les catégories favorisées et les personnes les plus diplômées restent fortement présentes dans les musées et les expositions.",
+      "zh": "优势社会群体和学历最高的人群在博物馆与展览访客中仍然占据显著位置。",
+      "glosses": [
+        {
+          "surface": "diplômées",
+          "lemma": "diplômé",
+          "zh": "取得学历的"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-13",
+      "text": "La part des visiteurs non diplômés augmente toutefois de quatre points par rapport à 2024, selon l’étude présentée.",
+      "zh": "不过，根据文中介绍的研究，无文凭访客的占比相较2024年增加了四个百分点。",
+      "glosses": [
+        {
+          "surface": "toutefois",
+          "lemma": "toutefois",
+          "zh": "不过"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-14",
+      "text": "Les enquêtes interrogent également les visiteurs sur les enjeux écologiques : transports en commun, espaces végétalisés, énergie des bâtiments et réutilisation du matériel d’exposition.",
+      "zh": "调查也询问访客对生态问题的看法：公共交通、绿化空间、建筑能源及展览材料再利用。",
+      "glosses": [
+        {
+          "surface": "réutilisation",
+          "lemma": "réutilisation",
+          "zh": "再利用"
+        }
+      ]
+    },
+    {
+      "id": "fr-les-visiteurs-du-patrimoine-15",
+      "text": "Les tours de Notre-Dame de Paris, rouvertes en septembre 2025, ont pour leur part attiré 110 000 visiteurs en quatre mois.",
+      "zh": "巴黎圣母院的塔楼于2025年9月重新开放，在四个月内吸引了十一万人次参观。",
+      "glosses": [
+        {
+          "surface": "rouvertes",
+          "lemma": "rouvrir",
+          "zh": "重新开放的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "résultats",
+        "zh": "结果",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-01"
+      },
+      {
+        "text": "protègent",
+        "zh": "保护",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-02"
+      },
+      {
+        "text": "estimations",
+        "zh": "估计数据",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-03"
+      },
+      {
+        "text": "entrées",
+        "zh": "入场人次",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-06"
+      },
+      {
+        "text": "étrangers",
+        "zh": "外国的",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-10"
+      },
+      {
+        "text": "réutilisation",
+        "zh": "再利用",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-14"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "par rapport à 2024",
+        "zh": "与2024年相比",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-05"
+      },
+      {
+        "text": "proche de celui",
+        "zh": "接近那个……的水平",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-06"
+      },
+      {
+        "text": "a contribué à",
+        "zh": "有助于",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-08"
+      },
+      {
+        "text": "ne suffit pas pour",
+        "zh": "不足以",
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-03",
+        "note": "distinguer 两个年份；estimations 是估计而 chiffres consolidés 是核定统计，不能把出版年当作数据年。"
+      },
+      {
+        "sentenceId": "fr-les-visiteurs-du-patrimoine-13",
+        "note": "toutefois 表示转折；de quatre points 指四个百分点，不是增长4%。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Qu’est-ce qui vous donne envie de visiter un musée ?",
+        "zh": "什么会让你想参观博物馆？"
+      },
+      {
+        "text": "Quelle mesure écologique vous paraît la plus utile dans un musée ?",
+        "zh": "你认为博物馆中哪种生态措施最有用？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ce qui me donne envie de venir, c’est…",
+        "zh": "让我想来的是……",
+        "note": "原创口语表达，可根据自己的想法补充。"
+      },
+      {
+        "text": "À mon avis, il faudrait améliorer…",
+        "zh": "在我看来，应该改善……",
+        "note": "原创口语表达，可根据自己的想法补充。"
+      }
+    ]
+  }
+}

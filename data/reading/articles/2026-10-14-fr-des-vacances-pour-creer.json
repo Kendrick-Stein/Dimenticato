@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-fr-des-vacances-pour-creer",
+  "storyId": "culture-cultural-holidays-2026-10-13",
+  "lang": "fr",
+  "date": "2026-10-14",
+  "contentType": "native-adaptation",
+  "title": "Des vacances pour créer et prendre sa place",
+  "titleZh": "在假期里创作，参与文化生活",
+  "summaryZh": "文化部介绍“文化假期”的目标：通过地方合作让年轻人参与创作、接触文化，并回应休闲机会不平等与被动使用屏幕的问题。",
+  "level": "B2",
+  "levelReason": "编辑估计 B2：约500至700词的政策解释，涉及文化民主、地域差异与公共政策目标，包含关系从句、让步、因果与名词化表达；保留目标与已证实成果的区别。非认证 CEFR 测评。",
+  "category": "education",
+  "topics": [
+    "文化教育",
+    "假期活动",
+    "地方合作"
+  ],
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Les Vacances culturelles, un « véritable outil de démocratie culturelle »",
+    "url": "https://www.culture.gouv.fr/actualites/les-vacances-culturelles-un-veritable-outil-de-democratie-culturelle",
+    "publishedAt": "2026-10-13",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+  },
+  "attribution": "来源：Ministère de la Culture，《Les Vacances culturelles, un « véritable outil de démocratie culturelle »》，原文发布日期 2026-10-13，查阅日期 2026-10-14。原文链接见来源栏。仅使用文化部机构正文，不使用图片、标识、第三方署名材料或链接中的外部作品。 机构访谈受访者：Isabelle Chardonnier（文化部文化民主、教学与研究总司长）；本文转述其关于本部门项目的说明，不使用外部受访者材料。",
+  "adaptation": "Dimenticato 根据法语机构原文进行同语言节选、重组与分级改写，添加简中逐句翻译、语境注释和原创练习；不代表原机构认可。本改写、中文译文及配套学习材料按 CC BY-SA 3.0 FR 发布。",
+  "sentences": [
+    {
+      "id": "fr-des-vacances-pour-creer-01",
+      "text": "Les vacances scolaires peuvent devenir un temps de découverte artistique, mais tous les jeunes ne disposent pas des mêmes possibilités pour en profiter.",
+      "zh": "学校假期可以成为探索艺术的时间，但并非所有年轻人都拥有同样的机会去享受它。",
+      "glosses": [
+        {
+          "surface": "disposent",
+          "lemma": "disposer",
+          "zh": "拥有；可利用"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-02",
+      "text": "Dans un entretien publié le 13 octobre 2026, le ministère de la Culture présente les ambitions du dispositif Vacances culturelles, lancé l’été précédent.",
+      "zh": "在2026年10月13日发布的一篇访谈中，法国文化部介绍了此前夏季启动的“文化假期”项目的目标。",
+      "glosses": [
+        {
+          "surface": "ambitions",
+          "lemma": "ambition",
+          "zh": "目标；抱负"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-03",
+      "text": "Isabelle Chardonnier, directrice générale de la démocratie culturelle, des enseignements et de la recherche au ministère, explique comment cette initiative entend rapprocher la culture des enfants, des jeunes et de leurs familles.",
+      "zh": "文化部文化民主、教学与研究总司长伊莎贝尔·沙尔多尼耶解释了这一举措如何希望拉近文化与儿童、年轻人及其家庭的距离。",
+      "glosses": [
+        {
+          "surface": "rapprocher",
+          "lemma": "rapprocher",
+          "zh": "拉近"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-04",
+      "text": "Son objectif est de proposer des expériences de qualité au plus près des lieux de vie ou de vacances, en donnant une place importante à la pratique.",
+      "zh": "其目标是在尽可能贴近日常生活或度假地点的地方提供高质量体验，并重视亲身实践。",
+      "glosses": [
+        {
+          "surface": "pratique",
+          "lemma": "pratique",
+          "zh": "实践"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-05",
+      "text": "Les participants sont invités à rencontrer des artistes, à découvrir le patrimoine et à prendre part à des créations collectives, plutôt qu’à rester de simples spectateurs.",
+      "zh": "参与者受邀与艺术家见面、探索文化遗产并参与集体创作，而非仅仅充当观众。",
+      "glosses": [
+        {
+          "surface": "spectateurs",
+          "lemma": "spectateur",
+          "zh": "观众"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-06",
+      "text": "Cette approche prolonge l’éducation artistique et culturelle, que le ministère souhaite développer à l’école comme en dehors du temps scolaire.",
+      "zh": "这种方式延伸了艺术与文化教育，文化部希望在学校内外都发展这种教育。",
+      "glosses": [
+        {
+          "surface": "prolonge",
+          "lemma": "prolonger",
+          "zh": "延伸"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-07",
+      "text": "Elle répond notamment à la progression des usages passifs des écrans pendant les vacances, en offrant des moments de création et de présence aux autres.",
+      "zh": "它尤其通过提供创作以及与他人共同相处的时刻，来回应假期里被动使用屏幕增多的问题。",
+      "glosses": [
+        {
+          "surface": "passifs",
+          "lemma": "passif",
+          "zh": "被动的"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-08",
+      "text": "L’entretien souligne également que les inégalités d’accès aux loisirs et aux découvertes peuvent se creuser durant ces périodes, puisque tous les enfants ne partent pas.",
+      "zh": "访谈也指出，由于并非所有儿童都外出度假，休闲和探索机会的不平等可能在这些时期扩大。",
+      "glosses": [
+        {
+          "surface": "inégalités",
+          "lemma": "inégalité",
+          "zh": "不平等"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-09",
+      "text": "Le dispositif accorde donc une attention particulière à ceux qui restent chez eux, ainsi qu’aux jeunes accompagnés par des structures sociales, médico-sociales ou de protection judiciaire.",
+      "zh": "因此，项目特别关注留在家中的儿童，以及由社会、医疗社会或司法保护机构陪伴支持的年轻人。",
+      "glosses": [
+        {
+          "surface": "accompagnés",
+          "lemma": "accompagner",
+          "zh": "受到陪伴支持的"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-10",
+      "text": "Pour 2026, le ministère annonce le soutien de mille à mille trois cents projets, portés par un réseau d’acteurs culturels, associatifs et territoriaux.",
+      "zh": "文化部宣布，2026年将支持一千至一千三百个项目，由文化、协会及地方参与者组成的网络推动。",
+      "glosses": [
+        {
+          "surface": "soutien",
+          "lemma": "soutien",
+          "zh": "支持"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-11",
+      "text": "Ces projets doivent permettre aux jeunes de développer leur créativité, leur esprit critique et leur confiance en eux, tout en rencontrant des œuvres et des professionnels.",
+      "zh": "这些项目旨在让年轻人在接触作品与专业人士的同时，发展创造力、批判性思维和自信。",
+      "glosses": [
+        {
+          "surface": "créativité",
+          "lemma": "créativité",
+          "zh": "创造力"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-12",
+      "text": "Ils offrent aussi aux artistes des espaces pour créer, transmettre et rencontrer des publics, ce qui concerne notamment les jeunes diplômés des établissements supérieurs de la Culture.",
+      "zh": "项目也为艺术家提供创作、传授与接触公众的空间，尤其涉及文化部所属高等院校的年轻毕业生。",
+      "glosses": [
+        {
+          "surface": "transmettre",
+          "lemma": "transmettre",
+          "zh": "传授"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-13",
+      "text": "Pour ces derniers, il peut s’agir d’une occasion de développer leurs premiers projets au contact des habitants et de favoriser leur insertion professionnelle.",
+      "zh": "对后者来说，这可能是在接触居民的过程中开展首批项目、促进职业融入的机会。",
+      "glosses": [
+        {
+          "surface": "insertion",
+          "lemma": "insertion",
+          "zh": "融入"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-14",
+      "text": "La diversité des territoires impose cependant de construire les actions à partir des réalités locales, des ressources disponibles et des besoins des publics concernés.",
+      "zh": "然而，地域的多样性要求根据地方实际、可用资源和相关人群的需要来组织活动。",
+      "glosses": [
+        {
+          "surface": "ressources",
+          "lemma": "ressource",
+          "zh": "资源"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-15",
+      "text": "Les services territoriaux du ministère jouent un rôle central : ils accompagnent les porteurs de projets et facilitent les relations entre collectivités, associations, artistes et établissements culturels.",
+      "zh": "文化部的地方部门发挥核心作用：支持项目负责人，并促进地方政府、协会、艺术家与文化机构之间的联系。",
+      "glosses": [
+        {
+          "surface": "facilitent",
+          "lemma": "faciliter",
+          "zh": "促进；使更容易"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-16",
+      "text": "Des réseaux nationaux apportent également leur expertise et leur présence sur le territoire, afin d’atteindre des publics souvent éloignés de l’offre culturelle.",
+      "zh": "全国性网络也贡献专业知识与地方覆盖能力，以接触那些往往远离文化供给的人群。",
+      "glosses": [
+        {
+          "surface": "éloignés",
+          "lemma": "éloigné",
+          "zh": "远离的"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-17",
+      "text": "Cette coopération permet de tenir compte des besoins des quartiers prioritaires, des zones rurales et des outre-mer, plutôt que de proposer partout une réponse uniforme.",
+      "zh": "这种合作能够考虑重点城区、乡村地区和海外领地的需要，而非在所有地方提供一模一样的方案。",
+      "glosses": [
+        {
+          "surface": "coopération",
+          "lemma": "coopération",
+          "zh": "合作"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-18",
+      "text": "Le partenariat avec l’Union nationale des associations de tourisme et de plein air permet, de son côté, de développer des projets artistiques dans les centres de vacances.",
+      "zh": "另一方面，与全国旅游及户外活动协会联盟的合作，使度假中心能够开展艺术项目。",
+      "glosses": [
+        {
+          "surface": "partenariat",
+          "lemma": "partenariat",
+          "zh": "伙伴合作"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-19",
+      "text": "Trois priorités thématiques structurent cette édition : le livre et la lecture, le patrimoine de proximité, puis l’éducation aux médias et à l’information.",
+      "zh": "三项主题重点构成了本届项目的框架：图书与阅读、身边的文化遗产，以及媒体与信息教育。",
+      "glosses": [
+        {
+          "surface": "proximité",
+          "lemma": "proximité",
+          "zh": "邻近；身边"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-20",
+      "text": "Des ateliers d’écriture, des rencontres avec des auteurs et des parcours avec des bibliothèques cherchent ainsi à renouer le lien des jeunes avec la lecture.",
+      "zh": "写作工作坊、作家见面会以及与图书馆合作的活动，希望重新建立年轻人与阅读的联系。",
+      "glosses": [
+        {
+          "surface": "renouer",
+          "lemma": "renouer",
+          "zh": "重新建立"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-21",
+      "text": "La découverte du patrimoine local peut également inclure une participation directe à sa valorisation, tandis que les ateliers radio et les créations audiovisuelles abordent les usages numériques.",
+      "zh": "探索当地文化遗产也可以包括直接参与提升其价值，而广播工作坊与视听创作则涉及数字使用方式。",
+      "glosses": [
+        {
+          "surface": "valorisation",
+          "lemma": "valorisation",
+          "zh": "价值的发掘与提升"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-vacances-pour-creer-22",
+      "text": "Face à l’abondance des images et des informations, l’enjeu présenté par le ministère est de donner aux jeunes des moyens concrets d’exercer leur esprit critique.",
+      "zh": "面对大量图像与信息，文化部所提出的关键任务是为年轻人提供发挥批判性思维的具体途径。",
+      "glosses": [
+        {
+          "surface": "abondance",
+          "lemma": "abondance",
+          "zh": "大量；丰富"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "disposent",
+        "zh": "拥有；可利用",
+        "sentenceId": "fr-des-vacances-pour-creer-01"
+      },
+      {
+        "text": "spectateurs",
+        "zh": "观众",
+        "sentenceId": "fr-des-vacances-pour-creer-05"
+      },
+      {
+        "text": "inégalités",
+        "zh": "不平等",
+        "sentenceId": "fr-des-vacances-pour-creer-08"
+      },
+      {
+        "text": "créativité",
+        "zh": "创造力",
+        "sentenceId": "fr-des-vacances-pour-creer-11"
+      },
+      {
+        "text": "transmettre",
+        "zh": "传授",
+        "sentenceId": "fr-des-vacances-pour-creer-12"
+      },
+      {
+        "text": "facilitent",
+        "zh": "促进；使更容易",
+        "sentenceId": "fr-des-vacances-pour-creer-15"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "au plus près",
+        "zh": "尽可能贴近",
+        "sentenceId": "fr-des-vacances-pour-creer-04"
+      },
+      {
+        "text": "prendre part à",
+        "zh": "参与",
+        "sentenceId": "fr-des-vacances-pour-creer-05"
+      },
+      {
+        "text": "tout en rencontrant",
+        "zh": "在接触……的同时",
+        "sentenceId": "fr-des-vacances-pour-creer-11"
+      },
+      {
+        "text": "tenir compte des besoins",
+        "zh": "考虑需要",
+        "sentenceId": "fr-des-vacances-pour-creer-17"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-des-vacances-pour-creer-11",
+        "note": "devoir 在政策说明中可表达预期目标，不等于已证实效果；tout en + 现在分词连接同时发生的活动。"
+      },
+      {
+        "sentenceId": "fr-des-vacances-pour-creer-21",
+        "note": "tandis que 连接两种不同活动；valorisation 不只指保护，还包括展现和提升遗产价值。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Comment rendre les activités culturelles accessibles aux jeunes qui ne partent pas en vacances ?",
+        "zh": "怎样让不外出度假的年轻人也能参与文化活动？"
+      },
+      {
+        "text": "Quel projet aimeriez-vous créer avec un artiste dans votre quartier ?",
+        "zh": "你想和艺术家在自己社区创作什么项目？"
+      },
+      {
+        "text": "Comment un atelier radio peut-il aider à mieux comprendre les médias ?",
+        "zh": "广播工作坊怎样帮助人们更好地理解媒体？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Il faudrait tenir compte de…",
+        "zh": "应该考虑……",
+        "note": "原创口语表达，可根据自己的想法补充。"
+      },
+      {
+        "text": "Ce projet permettrait aux jeunes de…",
+        "zh": "这个项目可以让年轻人……",
+        "note": "原创口语表达，可根据自己的想法补充。"
+      }
+    ]
+  }
+}

@@ -284,6 +284,66 @@
       "nativeLanguageCaution": "Official UK English statistical commentary; verify named ONS publisher and original English release, excluding Welsh translations and externally supplied prose.",
       "checkedAt": "2026-10-13",
       "reviewScope": "Registry policy inspected; no article is cleared by registration."
+    },
+    {
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "languages": [
+        "en"
+      ],
+      "license": "Open Government Licence v3.0, except where otherwise stated",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "articleReviewRequired": true,
+      "conditions": "GOV.UK From metadata must name the registered institution. Recheck article text, original publication date, OGL footer and exceptions every time. Adapt only Crown/public-sector institutional narrative, excluding third-party quotations, photos, logos, linked reports and personal case-study details unless independently cleared. Preserve source, date, OGL attribution and changes; no endorsement.",
+      "nativeLanguageCaution": "Use institution-authored English news, not translated locales, externally syndicated stories or a common article reused across language slots. From/publisher and article context support original-language provenance, not a verified author drafting-language certificate.",
+      "id": "govuk-dcms-english-news",
+      "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/department-for-digital-culture-media-and-sport",
+      "requiredPublisherNames": [
+        "Department for Digital, Culture, Media and Sport"
+      ]
+    },
+    {
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "languages": [
+        "en"
+      ],
+      "license": "Open Government Licence v3.0, except where otherwise stated",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "articleReviewRequired": true,
+      "conditions": "GOV.UK From metadata must name the registered institution. Recheck article text, original publication date, OGL footer and exceptions every time. Adapt only Crown/public-sector institutional narrative, excluding third-party quotations, photos, logos, linked reports and personal case-study details unless independently cleared. Preserve source, date, OGL attribution and changes; no endorsement.",
+      "nativeLanguageCaution": "Use institution-authored English news, not translated locales, externally syndicated stories or a common article reused across language slots. From/publisher and article context support original-language provenance, not a verified author drafting-language certificate.",
+      "id": "govuk-defra-english-news",
+      "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs",
+      "requiredPublisherNames": [
+        "Department for Environment, Food & Rural Affairs"
+      ]
+    },
+    {
+      "id": "irights-german-culture",
+      "name": "iRights.info — iRights e.V.",
+      "url": "https://irights.info/artikel",
+      "languages": [
+        "de"
+      ],
+      "allowedUrlPrefixes": [
+        "https://irights.info/artikel/"
+      ],
+      "rightsPolicyUrl": "https://irights.info/impressum-2",
+      "licenseEvidence": "https://irights.info/impressum-2",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "license": "CC BY 4.0 for original site content unless otherwise stated",
+      "articleReviewRequired": true,
+      "conditions": "Impressum explicitly licenses site content under CC BY 4.0 and permits commercial and non-commercial redistribution. Article/footer exceptions still control. Credit named author/editor and iRights.info, link source and licence, disclose simplification/Chinese translation/learning additions. Exclude images, externally credited quotes, linked publications and third-party material. Do not infer a linked paper licence covers article or vice versa. Legal explanations must remain source-attributed educational material, not personal advice.",
+      "nativeLanguageCaution": "Berlin nonprofit German editorial service; verify each byline and no translation/republication credit, never assume source language from hostname alone."
     }
   ],
   "archiveOnly": {

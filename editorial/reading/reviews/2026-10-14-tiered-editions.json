@@ -1,0 +1,731 @@
+{
+  "editionDate": "2026-10-14",
+  "baseCommit": "fcfa4e21b5d845a0da3c82a48e56ab7c9ebb87a0",
+  "qualityStatus": "PASS",
+  "scope": "11 independent original-language adaptations and55 questions. German extended tier omitted for lack of fully verified suitable material.",
+  "wordCountMethod": "Foreign sentences only; whitespace tokens containing a Unicode letter or number; apostrophes and hyphens retained. CEFR is an editorial estimate.",
+  "independentReview": "Each edition checked by a separate editor, all final article and companion SHA256 values matched reviewed bytes.",
+  "correctionsVerified": [
+    "Italian generic singular laboratory distractor replaced; final answer choices rechecked.",
+    "French A2 ambiguous plural recall replaced with contextually unambiguous imperfect verb; sauver terminology and Chinese explanations corrected.",
+    "English distractors allowing historical-present or gerund alternatives replaced; final forms independently rechecked.",
+    "German possibility claim restored and postposed-subject agreement ambiguity removed by changing target word."
+  ],
+  "historicalCoverage": {
+    "unchangedArticleFiles": 28,
+    "unchangedPracticeFiles": 16
+  },
+  "rightsScope": "Institutional or licensed editorial prose only; images/logos and unlicensed external quotations excluded. Adaptation, Chinese translation and educational additions attributed and released under corresponding licence.",
+  "freshnessNotice": "Five editions use explicitly dated31–75-day fallback sources. German July/August texts and event announcements are historical reviews within90days, never claimed as new October event outcomes.",
+  "missingSlots": [
+    {
+      "language": "de",
+      "tier": "extended",
+      "reason": "No suitable independent source with full exact-date, native-language, adaptation-rights and editorial checks completed; do not pad shorter originals."
+    }
+  ],
+  "articles": [
+    {
+      "id": "2026-10-14-de-ein-comic-hilft-beim-teilen",
+      "language": "de",
+      "tier": "short",
+      "level": "A2",
+      "levelReason": "短句和常见动词为主，围绕漫画、学习材料和求助，少量关系从句与专业词有语境注释。A2为编辑估计。",
+      "bodyWords": 154,
+      "lengthDeviation": null,
+      "source": {
+        "name": "iRights.info — iRights e.V.",
+        "title": "Open Educational Resources rechtlich entspannt veröffentlichen",
+        "url": "https://irights.info/artikel/open-educational-resources-rechtlich-entspannt-veroeffentlichen/32878",
+        "publishedAt": "2026-07-31",
+        "lang": "de"
+      },
+      "sourceAgeDays": 75,
+      "freshness": "within_90_days",
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "articleSha256": "f58e7544d3624a5c6e35f91b39e22c6e5e74f8f234d1112342a31666e3496ce9",
+      "practiceSha256": "ad2ee4433c603068064bdaa67eb5497f1a9b60a3aa965ad68c76c3ebc035d91c",
+      "bodySha256": "22668a04af6b31cbed26411ee85c6ab350c074c79f67b15440e36348d3566e14",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": "Full source and every adapted sentence independently compared; no unsupported factual extension accepted."
+    },
+    {
+      "id": "2026-10-14-de-kulturerbe-und-offene-quellen",
+      "language": "de",
+      "tier": "standard",
+      "level": "B1",
+      "levelReason": "连贯介绍公告与文化记忆问题，包含过去时、原因从句、间接疑问句和比较；版权与史料词汇有注释。B1为编辑估计。",
+      "bodyWords": 292,
+      "lengthDeviation": null,
+      "source": {
+        "name": "iRights.info — iRights e.V.",
+        "title": "„Zugang gestalten!“ vom 30. September – 02. Oktober 2026 in der Staatsbibliothek zu Berlin",
+        "url": "https://irights.info/artikel/zugang-gestalten-vom-30-september-02-oktober-2026-in-der-staatsbibliothek-zu-berlin/32890",
+        "publishedAt": "2026-08-19",
+        "lang": "de"
+      },
+      "sourceAgeDays": 56,
+      "freshness": "within_90_days",
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "articleSha256": "52aefc27317985ff2075e4c4fb0a6d72a13cce3c2158b373f34901122513e996",
+      "practiceSha256": "a4645ea9ec935e08bab3c537956a31ccea2de582509677b1bf717d0cd058f882",
+      "bodySha256": "c947862514f8b510f79dbe868863fd82fb29682b6aa5340edbb669bfe8c5ee7a",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": "Full source and every adapted sentence independently compared; no unsupported factual extension accepted."
+    },
+    {
+      "id": "2026-10-14-en-museums-open-to-everyone",
+      "language": "en",
+      "tier": "short",
+      "level": "A2",
+      "levelReason": "围绕博物馆参观与免费入馆，用短句、常见动词和明确时间线；少量公共资金词带注释。 编辑估计，非认证CEFR测评。",
+      "bodyWords": 156,
+      "lengthDeviation": null,
+      "source": {
+        "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+        "title": "National museums to remain free for everyone",
+        "url": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone",
+        "publishedAt": "2026-09-29",
+        "lang": "en"
+      },
+      "sourceAgeDays": 15,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "articleSha256": "b284a0acc3112d81d3f09f2602c11cb4b1c3cf0425afb19facaf529d90ec9c8f",
+      "practiceSha256": "0207b1385fab50bd99a9403f3c6f18d83cd11ad49717891f499b12c0d650d9f7",
+      "bodySha256": "f0ad4917cc69451ef0f3b650b468410b324b5c20a339766e3708bd862c39f548",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": [
+        {
+          "sentences": "s1–s6",
+          "sourceLines": "66–68",
+          "fact": "England national museums free for everyone; overseas charge considered and rejected; potential domestic deterrence is government belief."
+        },
+        {
+          "sentences": "s7–s8",
+          "sourceLines": "67,70–71",
+          "fact": "Free admission 2001; 2025 visits 7.1m and 6.4m."
+        },
+        {
+          "sentences": "s9–s12",
+          "sourceLines": "73–76",
+          "fact": "Maintenance and local/regional support; future strategic plan. No claims all exhibitions or all UK museums are free."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-en-people-and-places-for-young-people",
+      "language": "en",
+      "tier": "extended",
+      "level": "B2",
+      "levelReason": "连接公共服务设计、资源分配与实施条件；包含定语从句、名词化、比较与限定语，读者须区分短期安排和长期目标。 编辑估计，非认证CEFR测评。",
+      "bodyWords": 524,
+      "lengthDeviation": null,
+      "source": {
+        "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+        "title": "1000 new youth workers to help reduce the risk of unemployment",
+        "url": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment",
+        "publishedAt": "2026-09-26",
+        "lang": "en"
+      },
+      "sourceAgeDays": 18,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "articleSha256": "b3963e2c4d32a2213c1d738aad5f847d2e84d8d488a2c420155c5c8146bd3eeb",
+      "practiceSha256": "064779f11f7cd8936873bb64d2a1079af21c8c565daaa245e6ca5a91fcd7b7b8",
+      "bodySha256": "a70d2c3f3502250779fd7e02d49648651dda3a2c5093bb78f7a2fc92a86d8b4c",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": [
+        {
+          "sentences": "s1–s7",
+          "sourceLines": "66,70–71",
+          "fact": "1000 training/employment; ages11+; outreach/NEET; multi-agency activity support."
+        },
+        {
+          "sentences": "s8–s10",
+          "sourceLines": "69,72",
+          "fact": "First workers by spring2027, not all deployed; 500000 additional trusted-adult access ambition by2035."
+        },
+        {
+          "sentences": "s11–s15",
+          "sourceLines": "65,73,80",
+          "fact": "£450m fund; underserved areas; applications soon at release date; capital and programme-management scope; gap-narrowing aim."
+        },
+        {
+          "sentences": "s16–s20",
+          "sourceLines": "74–75,79",
+          "fact": "Dec2025 launch; 14000 consultation; age ranges; supportive spaces, online interaction and youth design."
+        },
+        {
+          "sentences": "s21–s23",
+          "sourceLines": "82–84",
+          "fact": "Social-media plans only, not enacted-law claim; separate Youth Guarantee18–24; further delivery details outstanding. No spending amounts added together."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-en-saving-flag-fen",
+      "language": "en",
+      "tier": "standard",
+      "level": "B1",
+      "levelReason": "以遗址、威胁、资助、志愿参与为连贯线索，使用因果连接、现在完成时及目标表达；专业词有具体解释。 编辑估计，非认证CEFR测评。",
+      "bodyWords": 296,
+      "lengthDeviation": null,
+      "source": {
+        "name": "Department for Environment, Food & Rural Affairs and Historic England / GOV.UK",
+        "title": "Funding secured for excavation to unlock secrets of Bronze Age Flag Fen site",
+        "url": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site",
+        "publishedAt": "2026-09-13",
+        "lang": "en"
+      },
+      "sourceAgeDays": 31,
+      "freshness": "within_90_days",
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "articleSha256": "6488c52c8b6591efc5610a807bb09e16eb5d6453c00b25ce1435d50b55d80e5c",
+      "practiceSha256": "ba612aa4bc935b242722e8e29aec16af438d4ad68c4c47e96ad79afb15e7575f",
+      "bodySha256": "a3abc132fe2c21bcdccb77c13cae7f69aa5c3185dad7bc5c338cfd022ff07581",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": [
+        {
+          "sentences": "s1–s4",
+          "sourceLines": "64–67",
+          "fact": "Peterborough/Cambridgeshire; Bronze Age 3500-year timber causeway/platform; rarity. s3 only vocabulary definition, not new site event."
+        },
+        {
+          "sentences": "s5–s8",
+          "sourceLines": "69–70",
+          "fact": "Groundwater/peat threat, deterioration, register since 2012."
+        },
+        {
+          "sentences": "s9–s12",
+          "sourceLines": "60–61,70–71",
+          "fact": "13 September release; £700,000; western post alignment; visitor interpretation."
+        },
+        {
+          "sentences": "s13–s16",
+          "sourceLines": "79–82",
+          "fact": "Named participant groups and progressive training; goals kept aspirational; all direct quotations excluded."
+        },
+        {
+          "sentences": "s17–s18",
+          "sourceLines": "66,82",
+          "fact": "Nature setting; local economic support remains aim."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-fr-decouvrir-le-patrimoine",
+      "language": "fr",
+      "tier": "short",
+      "level": "A2",
+      "levelReason": "编辑估计 A2：具体地点与可见活动，简短句、常见词，主要用未完成过去时回顾活动安排；新词附语境注释。非认证 CEFR 测评。",
+      "bodyWords": 161,
+      "lengthDeviation": null,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Retrouvez les Journées européennes du patrimoine dans vos régions",
+        "url": "https://www.culture.gouv.fr/actualites/retrouvez-les-journees-europeennes-du-patrimoine-dans-vos-regions",
+        "publishedAt": "2026-09-16",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 28,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+      },
+      "articleSha256": "06d4b98cc9d60c770b4d2e71a6f3ef3fa5814fa1639a1503032eb754c372f453",
+      "practiceSha256": "499388dc2a49fc1acb9c4e856e3dc7a8c59f0de3b68854f30a69e63bceccef54",
+      "bodySha256": "cb5ce43ce87bc1240d0f34e2e3084a1c220b11c567f2d90b43e64b2ff321be54",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": [
+        {
+          "id": "fr-decouvrir-le-patrimoine-01",
+          "sourceLines": "19,21",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-02",
+          "sourceLines": "19,21",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-03",
+          "sourceLines": "19,34",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-04",
+          "sourceLines": "37",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-05",
+          "sourceLines": "38",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-06",
+          "sourceLines": "41",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-07",
+          "sourceLines": "41",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-08",
+          "sourceLines": "48",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-09",
+          "sourceLines": "50",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-10",
+          "sourceLines": "50",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-decouvrir-le-patrimoine-11",
+          "sourceLines": "52",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-fr-des-vacances-pour-creer",
+      "language": "fr",
+      "tier": "extended",
+      "level": "B2",
+      "levelReason": "编辑估计 B2：约500至700词的政策解释，涉及文化民主、地域差异与公共政策目标，包含关系从句、让步、因果与名词化表达；保留目标与已证实成果的区别。非认证 CEFR 测评。",
+      "bodyWords": 549,
+      "lengthDeviation": null,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Les Vacances culturelles, un « véritable outil de démocratie culturelle »",
+        "url": "https://www.culture.gouv.fr/actualites/les-vacances-culturelles-un-veritable-outil-de-democratie-culturelle",
+        "publishedAt": "2026-10-13",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 1,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+      },
+      "articleSha256": "47e71e6ad4f73fe820efc5fbd0c458ca65208b33bc9c0d66e74ec6f34b4803aa",
+      "practiceSha256": "007084b65ee02b54faef056fb0cb3138be5e00d03da4040b8c491284ff291692",
+      "bodySha256": "2c60a65970211c9b4147afa517d9f38bb9b1a4af975a586b645d12543c975941",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": [
+        {
+          "id": "fr-des-vacances-pour-creer-01",
+          "sourceLines": "47,49–50",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-02",
+          "sourceLines": "21,36",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-03",
+          "sourceLines": "44",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-04",
+          "sourceLines": "47,68",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-05",
+          "sourceLines": "36,52,68",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-06",
+          "sourceLines": "48",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-07",
+          "sourceLines": "49",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-08",
+          "sourceLines": "49–50",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-09",
+          "sourceLines": "50",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-10",
+          "sourceLines": "51",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-11",
+          "sourceLines": "52",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-12",
+          "sourceLines": "52–53",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-13",
+          "sourceLines": "53",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-14",
+          "sourceLines": "61",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-15",
+          "sourceLines": "62–63",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-16",
+          "sourceLines": "64",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-17",
+          "sourceLines": "65",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-18",
+          "sourceLines": "69",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-19",
+          "sourceLines": "70–72",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-20",
+          "sourceLines": "70",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-21",
+          "sourceLines": "71,73",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-des-vacances-pour-creer-22",
+          "sourceLines": "72–73",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-fr-les-visiteurs-du-patrimoine",
+      "language": "fr",
+      "tier": "standard",
+      "level": "B1",
+      "levelReason": "编辑估计 B1：围绕参观经历连接统计比较与原因，保留初步估计、数据年份及百分点的区别；专业词汇均有解释。非认证 CEFR 测评。",
+      "bodyWords": 287,
+      "lengthDeviation": null,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Patrimoine : la fréquentation se stabilise en 2025",
+        "url": "https://www.culture.gouv.fr/actualites/patrimoine-la-frequentation-se-stabilise-en-2025",
+        "publishedAt": "2026-09-11",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 33,
+      "freshness": "within_90_days",
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+      },
+      "articleSha256": "0cb62533a53a3f194e798cae231589b942435104d2aa5a553f43061595ea1e5a",
+      "practiceSha256": "65162c6042aeccc7850d670a835cf72f05aa7eed10e6f91867b4daea9c031695",
+      "bodySha256": "8721b59abfa951644f5d68c1255bd97dde89592f01606d61ba70a6d32f9107af",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": [
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-01",
+          "sourceLines": "21,32",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-02",
+          "sourceLines": "33",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-03",
+          "sourceLines": "33",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-04",
+          "sourceLines": "36",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-05",
+          "sourceLines": "36",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-06",
+          "sourceLines": "38",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-07",
+          "sourceLines": "38",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-08",
+          "sourceLines": "38",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-09",
+          "sourceLines": "39",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-10",
+          "sourceLines": "41",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-11",
+          "sourceLines": "44",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-12",
+          "sourceLines": "45",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-13",
+          "sourceLines": "46",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-14",
+          "sourceLines": "47",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        },
+        {
+          "id": "fr-les-visiteurs-du-patrimoine-15",
+          "sourceLines": "37",
+          "factsAndTranslation": "PASS",
+          "boundary": "Reported programme/claim/estimate retained; no independent outcome or extra numerical claim added."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-it-giochi-tra-generazioni",
+      "language": "it",
+      "tier": "extended",
+      "level": "B2",
+      "levelReason": "编辑估计B2：长篇比较不同年龄、性别及年代的游戏习惯，保留让步、限定和统计口径，需跨句整合。非认证测评。",
+      "bodyWords": 514,
+      "lengthDeviation": null,
+      "source": {
+        "name": "Istat",
+        "title": "Giochi, un’attività abituale per la maggioranza dei cittadini – Anno 2024",
+        "url": "https://www.istat.it/comunicato-stampa/giochi-unattivita-abituale-per-la-maggioranza-dei-cittadini/",
+        "publishedAt": "2026-09-03",
+        "lang": "it"
+      },
+      "sourceAgeDays": 41,
+      "freshness": "within_90_days",
+      "license": {
+        "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "articleSha256": "a59c99f112b530868d3092e646af03a25c516c87b7b979f3d161853ceaebf2ec",
+      "practiceSha256": "1608083edca6405810df476024f3ab432d8d493fa17bf65fe4eb25674f9cc8a9",
+      "bodySha256": "f6abb266dc2fae2124c126284269c18299db01481e3889234936920caaa9324b",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": [
+        "01–04: metadata date 3 September2026/reference2024; first paragraph and Quattro persone... section:52.9%,27.510m, ages14+, young14–24 almost7/10,75+42.7%.",
+        "05–07: opening frequency statistics12.3%,65+19.3%,14–24 13.5%; text explicitly distinguishes within-group rates from composition of players.",
+        "08–09: activity rates cards39.7%,crosswords31.5%,board24.5%,chess/draughts14.8%,bowling/billiards14.5%,escape6.5%.",
+        "10–12: crosswords around1/3 across ages; weekly13.1%65+ vs4.1%14–17; board weekly5.8%14–17 vs0.7%75+.",
+        "13–15: overall male54.3%/female51.5%; direction of genre differences and board25%/24%.",
+        "16–18:2000–2024 comparisons cards46.7→39.7,crosswords40.3→31.5,board22.3→24.5; women cards37.6→37.7; decline in men.",
+        "19:North57.6%,Centre53.5%,South45.9%.",
+        "20: explicitly editorial noncausality/individual-level qualification; no causal inference added."
+      ]
+    },
+    {
+      "id": "2026-10-14-it-scienza-da-incontrare",
+      "language": "it",
+      "tier": "short",
+      "level": "A2",
+      "levelReason": "编辑估计A2：以短句回看科普活动计划，采用常用活动与地点词汇，少量未完成过去时配中文辅助。非认证测评。",
+      "bodyWords": 158,
+      "lengthDeviation": null,
+      "source": {
+        "name": "INGV Ufficio Stampa",
+        "title": "NOTTE EUROPEA DEI RICERCATORI 2026 | Gli appuntamenti dell’INGV per conoscere il nostro pianeta",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/notte-europea-dei-ricercatori-2026-gli-appuntamenti-dell-ingv-per-conoscere-il-nostro-pianeta",
+        "publishedAt": "2026-09-17",
+        "lang": "it"
+      },
+      "sourceAgeDays": 27,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "articleSha256": "142e705fe8f2ba44b2b38d71313f86ef5d163529de72db4b3aadc4e91fa444ab",
+      "practiceSha256": "62fb420e46cf731ebaf87805c09a1daf2e72d87f78799c99afebc85480edef01",
+      "bodySha256": "26b6a0b11314e152d5d5dcc2b22c2847871eb7a2f4e3f40c0ec53876a4c20823",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": [
+        "01–04: source heading/date and opening paragraphs: INGV announced programme on 17 September for 25–26 September; public-science meeting, games/labs/visits.",
+        "05–07: Emilia Romagna / Bologna entries Un pianeta in movimento, Come osserviamo il nostro pianeta?, Ma che storia è?",
+        "08–09: Liguria / La Spezia / Un sorso di scienza: informal tables with researchers, sea biodiversity, pollution and technologies.",
+        "10: Lazio / Roma / La Sala Sismica di Roma: planned real-time connection.",
+        "11: editorial temporal limitation: announcement is not proof of actual delivery."
+      ]
+    },
+    {
+      "id": "2026-10-14-it-turismo-notti-e-arrivi",
+      "language": "it",
+      "tier": "standard",
+      "level": "B1",
+      "levelReason": "编辑估计B1：用连贯说明比较旅游人数与住宿夜数，练习比较结构及统计表达；专业词有语境解释。非认证测评。",
+      "bodyWords": 283,
+      "lengthDeviation": null,
+      "source": {
+        "name": "Istat",
+        "title": "Flussi turistici – II trimestre 2026",
+        "url": "https://www.istat.it/comunicato-stampa/flussi-turistici-ii-trimestre-2026/",
+        "publishedAt": "2026-09-14",
+        "lang": "it"
+      },
+      "sourceAgeDays": 30,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "articleSha256": "fc426540f3272cf9adcd170482237fa55b5d2f04b5231175edf69739976cb39c",
+      "practiceSha256": "d6c01dc88fc24422fe8f4f8d566358cc7eef8379419b344c4128d46b87029c98",
+      "bodySha256": "70b9782eace78a9e1f57cd638e925e1b99c51f8fd501b816683fc55aad1f1661",
+      "review": "PASS — independent full-source, fact, translation, provenance, licence, learning-summary and difficulty review",
+      "practiceReview": "PASS — all five answers, forms, context, offsets and distractors independently reviewed",
+      "factLocators": [
+        "01,03–06,14: full HTML body and Il commento; presenze explicitly defined as nights, arrivi −0.8% year-on-year vs presenze +3.9%; editorial explanation of comparisons adds no new empirical claim.",
+        "02: publication metadata 14 September 2026, reference II trimestre 2026.",
+        "07–08: foreign share61.6%; growth foreign4.6%, Italian2.7%.",
+        "09: May strongest year-on-year growth; June44.1% of quarter nights.",
+        "10–11: alberghiero2.4%, extra-alberghiero5.6%; short holiday apartment/house rentals included irrespective of business/nonbusiness management.",
+        "12–13: average stay3.15, foreign3.34, Italian2.88 nights."
+      ]
+    }
+  ],
+  "checks": {
+    "historicalSha256": "PASS",
+    "articleCandidatePracticeValidators": "PASS",
+    "fullTestSuite": "PASS — TZ=UTC npm test;39 harnesses,475618 passed,0 failed",
+    "gitDiffCheck": "PASS",
+    "targetedPracticeTest": "PASS — 940 assertions",
+    "testFixtureCorrection": "Only negative duplicate-option fixture chooses an actual non-answer option instead of assuming index1. Runtime validator and all content option ordering unchanged. Minimal correction explicitly approved.",
+    "independentFixtureReview": "PASS — all27 companions tested with answer positions0/1/2/3 (108 permutations); each valid case accepted, each deliberately duplicated case rejected; runtime validator unchanged."
+  },
+  "publicationStatus": "Content approved; deployment verification remains separate."
+}

@@ -1,0 +1,286 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-en-museums-open-to-everyone",
+  "storyId": "en-2026-09-29-national-museums-free",
+  "lang": "en",
+  "date": "2026-10-14",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "博物馆",
+    "文化参与",
+    "免费入馆"
+  ],
+  "title": "Museums open to everyone",
+  "titleZh": "向每个人开放的博物馆",
+  "summaryZh": "英格兰国家博物馆将继续免费入馆。读懂9月29日的决定，以及“免费”与博物馆维修费用之间的关系。",
+  "level": "A2",
+  "levelReason": "围绕博物馆参观与免费入馆，用短句、常见动词和明确时间线；少量公共资金词带注释。 编辑估计，非认证CEFR测评。",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "National museums to remain free for everyone",
+    "url": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone",
+    "publishedAt": "2026-09-29",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Adapted from Department for Digital, Culture, Media and Sport / GOV.UK, “National museums to remain free for everyone”, published 2026-09-29. Contains public sector information licensed under the Open Government Licence v3.0. Dimenticato adapted the English, translated it into Chinese and added teaching notes and exercises. No official endorsement is implied.",
+  "adaptation": "英语机构原文的同语言分级改写及逐句中文翻译；排除图片、标识、直接引语及链接第三方作品。区分公告时的计划、目标与已经实现的结果。口语问题及表达为教学补充。原语依据机构署名与英语编辑语境，不认证个人母语。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "England’s national museums will continue to welcome visitors without an entry charge.",
+      "zh": "英格兰的国家博物馆将继续欢迎游客免费入馆。",
+      "glosses": [
+        {
+          "surface": "visitors",
+          "lemma": "visitor",
+          "zh": "参观者",
+          "note": "复数名词，指到博物馆参观的人。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "On 29 September 2026, the government confirmed that entry would stay free for everyone.",
+      "zh": "2026年9月29日，政府确认每个人都将继续享有免费入馆的待遇。",
+      "glosses": [
+        {
+          "surface": "confirmed",
+          "lemma": "confirm",
+          "zh": "确认",
+          "note": "过去式，叙述9月29日的决定。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "This includes people who live in other countries and come to England for a visit.",
+      "zh": "这也包括住在其他国家、到英格兰旅游的人。",
+      "glosses": [
+        {
+          "surface": "includes",
+          "lemma": "include",
+          "zh": "包括"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The government had looked at charging overseas visitors to help museums pay their costs.",
+      "zh": "政府曾考虑向海外游客收费，以帮助博物馆支付开销。",
+      "glosses": [
+        {
+          "surface": "overseas",
+          "lemma": "overseas",
+          "zh": "海外的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "But it decided not to introduce these charges.",
+      "zh": "但政府决定不引入这些收费。",
+      "glosses": [
+        {
+          "surface": "charges",
+          "lemma": "charge",
+          "zh": "收费",
+          "note": "these后接复数名词。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "It believes the change could also put people in Britain off visiting museums.",
+      "zh": "政府认为，这种变化也可能使英国本地的人不愿参观博物馆。",
+      "glosses": [
+        {
+          "surface": "visiting",
+          "lemma": "visit",
+          "zh": "参观"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Free entry began in 2001, so it is already an important part of museum life.",
+      "zh": "免费入馆始于2001年，因此它已经是博物馆日常运营中的重要一环。",
+      "glosses": [
+        {
+          "surface": "began",
+          "lemma": "begin",
+          "zh": "开始",
+          "note": "begin的不规则过去式。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "In 2025, the Natural History Museum received 7.1 million visitors, and the British Museum received 6.4 million.",
+      "zh": "2025年，自然历史博物馆接待了710万人次，大英博物馆接待了640万人次。",
+      "glosses": [
+        {
+          "surface": "received",
+          "lemma": "receive",
+          "zh": "接待"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Keeping these places open also means looking after their buildings.",
+      "zh": "让这些场馆保持开放，也意味着要维护它们的建筑。",
+      "glosses": [
+        {
+          "surface": "buildings",
+          "lemma": "building",
+          "zh": "建筑物",
+          "note": "their后接复数名词，指博物馆建筑。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Government funding will help with repairs at national museums and other cultural organisations.",
+      "zh": "政府资金将帮助国家博物馆及其他文化机构开展维修。",
+      "glosses": [
+        {
+          "surface": "repairs",
+          "lemma": "repair",
+          "zh": "维修",
+          "note": "此处为复数名词。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Local and regional museums will receive support too.",
+      "zh": "地方和区域博物馆也将获得支持。",
+      "glosses": [
+        {
+          "surface": "regional",
+          "lemma": "regional",
+          "zh": "区域的"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "The government also plans to work with the museum sector on a long-term plan for its future.",
+      "zh": "政府还计划与博物馆行业合作，制定关于其未来的长期规划。",
+      "glosses": [
+        {
+          "surface": "sector",
+          "lemma": "sector",
+          "zh": "行业"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "visitors",
+        "lemma": "visitor",
+        "zh": "参观者",
+        "sentenceId": "s1",
+        "note": "复数名词，指到博物馆参观的人。"
+      },
+      {
+        "text": "confirmed",
+        "lemma": "confirm",
+        "zh": "确认",
+        "sentenceId": "s2",
+        "note": "过去式，叙述9月29日的决定。"
+      },
+      {
+        "text": "charges",
+        "lemma": "charge",
+        "zh": "收费",
+        "sentenceId": "s5",
+        "note": "these后接复数名词。"
+      },
+      {
+        "text": "began",
+        "lemma": "begin",
+        "zh": "开始",
+        "sentenceId": "s7",
+        "note": "begin的不规则过去式。"
+      },
+      {
+        "text": "buildings",
+        "lemma": "building",
+        "zh": "建筑物",
+        "sentenceId": "s9",
+        "note": "their后接复数名词，指博物馆建筑。"
+      },
+      {
+        "text": "repairs",
+        "lemma": "repair",
+        "zh": "维修",
+        "sentenceId": "s10",
+        "note": "此处为复数名词。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "stay free",
+        "zh": "保持免费",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "pay their costs",
+        "zh": "支付它们的开销",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "looking after",
+        "zh": "照顾；维护",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "work with",
+        "zh": "与……合作",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "put someone off doing something表示让某人失去做某事的意愿；could保留政府判断的不确定性。"
+      },
+      {
+        "sentenceId": "s12",
+        "note": "plans to +动词原形表达计划；on后说明合作的事项。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What do you like to see in a museum?",
+        "zh": "你喜欢在博物馆里看什么？"
+      },
+      {
+        "text": "Does free entry change how often you visit?",
+        "zh": "免费入馆会影响你的参观频率吗？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would visit more often if entry were free.",
+        "zh": "如果免费入馆，我会更常去参观。",
+        "note": "教学补充，用于讨论本文，不是来源引语。"
+      },
+      {
+        "text": "A museum also needs money for repairs.",
+        "zh": "博物馆也需要资金进行维修。",
+        "note": "教学补充，用于讨论本文，不是来源引语。"
+      }
+    ]
+  }
+}

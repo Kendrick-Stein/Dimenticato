@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-de-kulturerbe-und-offene-quellen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 82,
+      "answer": "stattfinden",
+      "options": [
+        "stattfindet",
+        "stattgefunden",
+        "stattfinden",
+        "stattfand"
+      ],
+      "explanation": "sollte后接不定式stattfinden，表示当时计划“举行”；不是对活动已完成的确认。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 85,
+      "answer": "bewahren",
+      "options": [
+        "bewahrt",
+        "bewahren",
+        "bewahrst",
+        "bewahrend"
+      ],
+      "explanation": "关系代词die指复数Einrichtungen，从句使用现在时bewahren，并与machen并列；其余选项均不能充当这里的复数限定谓语。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s15",
+      "start": 35,
+      "answer": "kostenlos",
+      "options": [
+        "kostenlose",
+        "kostenlosem",
+        "kostenlos",
+        "kostenlosen"
+      ],
+      "explanation": "在war后作表语，形容词不加词尾，必须用kostenlos，意思是“免费的”。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 75,
+      "answer": "Lücken",
+      "options": [
+        "Lücke",
+        "Lückes",
+        "Lücken",
+        "Lückens"
+      ],
+      "explanation": "谓语können是复数，主语应为Lücken，意为“缺口”；单数Lücke需kann。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s4",
+      "start": 90,
+      "answer": "angekündigt",
+      "options": [
+        "ankündigen",
+        "angekündigte",
+        "angekündigt",
+        "kündigten"
+      ],
+      "explanation": "war与过去分词angekündigt构成状态被动，表示第16届会议当时已被预告；其他选项是不定式、带词尾形式或过去时复数。"
+    }
+  ]
+}

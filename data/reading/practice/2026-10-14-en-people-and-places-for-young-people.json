@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-en-people-and-places-for-young-people",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 114,
+      "answer": "employment",
+      "options": [
+        "employ",
+        "employed",
+        "employment",
+        "employs"
+      ],
+      "explanation": "the training and employment of…中两个名词并列，employment表示聘用；其余动词形式不符合这一名词结构。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 62,
+      "answer": "collaborate",
+      "options": [
+        "collaboration",
+        "collaborative",
+        "collaborates",
+        "collaborate"
+      ],
+      "explanation": "情态动词will后用动词原形collaborate；collaborates是第三人称单数形式。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 81,
+      "answer": "recruited",
+      "options": [
+        "recruit",
+        "recruits",
+        "recruited",
+        "recruitment"
+      ],
+      "explanation": "have already been后需要过去分词recruited，构成完成时被动语态，表示这些工作者被招聘；其他词形不能完成此结构。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 102,
+      "answer": "facilities",
+      "options": [
+        "facilitate",
+        "facilitates",
+        "facilities",
+        "facilitating"
+      ],
+      "explanation": "build, improve and expand后需要宾语，facilities为“设施”的复数名词；其余选项属于动词facilitate。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s15",
+      "start": 27,
+      "answer": "participation",
+      "options": [
+        "participate",
+        "participating",
+        "participation",
+        "participatory"
+      ],
+      "explanation": "固定搭配participation gap用名词participation修饰gap，指参与差距；其余词形不符合原文搭配。"
+    }
+  ]
+}

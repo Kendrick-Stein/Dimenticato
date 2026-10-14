@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-fr-decouvrir-le-patrimoine",
+  "storyId": "culture-regional-heritage-days-2026-09-16",
+  "lang": "fr",
+  "date": "2026-10-14",
+  "contentType": "native-adaptation",
+  "title": "Découvrir le patrimoine près de chez soi",
+  "titleZh": "发现家门口的文化遗产",
+  "summaryZh": "回看9月法国欧洲遗产日的活动安排：从照片、石工到剧院后台，通过动手和参观认识身边的历史。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2：具体地点与可见活动，简短句、常见词，主要用未完成过去时回顾活动安排；新词附语境注释。非认证 CEFR 测评。",
+  "category": "culture",
+  "topics": [
+    "地方文化",
+    "文化遗产",
+    "动手体验"
+  ],
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Retrouvez les Journées européennes du patrimoine dans vos régions",
+    "url": "https://www.culture.gouv.fr/actualites/retrouvez-les-journees-europeennes-du-patrimoine-dans-vos-regions",
+    "publishedAt": "2026-09-16",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+  },
+  "attribution": "来源：Ministère de la Culture，《Retrouvez les Journées européennes du patrimoine dans vos régions》，原文发布日期 2026-09-16，查阅日期 2026-10-14。原文链接见来源栏。仅使用文化部机构正文，不使用图片、标识、第三方署名材料或链接中的外部作品。",
+  "adaptation": "Dimenticato 根据法语机构原文进行同语言节选、重组与分级改写，添加简中逐句翻译、语境注释和原创练习；不代表原机构认可。本改写、中文译文及配套学习材料按 CC BY-SA 3.0 FR 发布。",
+  "sentences": [
+    {
+      "id": "fr-decouvrir-le-patrimoine-01",
+      "text": "Les Journées européennes du patrimoine étaient prévues les 19 et 20 septembre 2026.",
+      "zh": "2026年欧洲遗产日计划于9月19日和20日举行。",
+      "glosses": [
+        {
+          "surface": "patrimoine",
+          "lemma": "patrimoine",
+          "zh": "文化遗产"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-02",
+      "text": "Avant ce week-end, le ministère de la Culture présentait plusieurs idées de visites dans les régions françaises.",
+      "zh": "在那个周末之前，法国文化部介绍了法国各地区的几种参观选择。",
+      "glosses": [
+        {
+          "surface": "visites",
+          "lemma": "visite",
+          "zh": "参观"
+        },
+        {
+          "surface": "présentait",
+          "lemma": "présenter",
+          "zh": "介绍（过去）"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-03",
+      "text": "Le programme invitait les familles à regarder autrement les lieux autour de chez elles.",
+      "zh": "活动安排邀请家庭换个角度看待家附近的地方。",
+      "glosses": [
+        {
+          "surface": "autrement",
+          "lemma": "autrement",
+          "zh": "换一种方式"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-04",
+      "text": "À Dijon, on pouvait découvrir des photographies de cathédrales et un atelier pour créer des images bleues.",
+      "zh": "在第戎，人们可以欣赏大教堂的照片，还可以参加制作蓝色图像的工作坊。",
+      "glosses": [
+        {
+          "surface": "photographies",
+          "lemma": "photographie",
+          "zh": "照片"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-05",
+      "text": "À La Réunion, les chansons racontaient l’histoire du petit train à la gare de la Grande Chaloupe.",
+      "zh": "在留尼汪岛，歌曲在格朗德沙卢普车站讲述小火车的故事。",
+      "glosses": [
+        {
+          "surface": "chansons",
+          "lemma": "chanson",
+          "zh": "歌曲"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-06",
+      "text": "Au château de Montferrand, des bénévoles proposaient des démonstrations de taille de pierre.",
+      "zh": "在蒙费朗城堡，志愿者安排了石料切凿演示。",
+      "glosses": [
+        {
+          "surface": "bénévoles",
+          "lemma": "bénévole",
+          "zh": "志愿者"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-07",
+      "text": "À Orléans, un atelier expliquait comment sauver des livres et des archives abîmés par l’eau.",
+      "zh": "在奥尔良，一个工作坊讲解如何抢救被水损坏的书和档案。",
+      "glosses": [
+        {
+          "surface": "abîmés",
+          "lemma": "abîmé",
+          "zh": "受损的"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-08",
+      "text": "D’autres activités permettaient aux familles de découvrir le travail des archéologues.",
+      "zh": "其他活动让家庭有机会了解考古学家的工作。",
+      "glosses": [
+        {
+          "surface": "travail",
+          "lemma": "travail",
+          "zh": "工作"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-09",
+      "text": "À Barentin, les visiteurs pouvaient aussi entrer dans les coulisses d’un théâtre.",
+      "zh": "在巴朗坦，参观者还可以进入一家剧院的后台。",
+      "glosses": [
+        {
+          "surface": "coulisses",
+          "lemma": "coulisse",
+          "zh": "后台"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-10",
+      "text": "À Brive, une chasse au trésor proposait une autre façon de découvrir un théâtre.",
+      "zh": "在布里夫，寻宝游戏提供了另一种探索剧院的方式。",
+      "glosses": [
+        {
+          "surface": "trésor",
+          "lemma": "trésor",
+          "zh": "宝藏"
+        }
+      ]
+    },
+    {
+      "id": "fr-decouvrir-le-patrimoine-11",
+      "text": "Le programme mettait ainsi en valeur l’histoire des lieux et le travail des personnes qui les font vivre.",
+      "zh": "活动安排由此凸显了场所的历史，以及让这些场所保持活力的人们的工作。",
+      "glosses": [
+        {
+          "surface": "histoire",
+          "lemma": "histoire",
+          "zh": "历史"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "présentait",
+        "zh": "介绍（过去）",
+        "sentenceId": "fr-decouvrir-le-patrimoine-02"
+      },
+      {
+        "text": "photographies",
+        "zh": "照片",
+        "sentenceId": "fr-decouvrir-le-patrimoine-04"
+      },
+      {
+        "text": "chansons",
+        "zh": "歌曲",
+        "sentenceId": "fr-decouvrir-le-patrimoine-05"
+      },
+      {
+        "text": "bénévoles",
+        "zh": "志愿者",
+        "sentenceId": "fr-decouvrir-le-patrimoine-06"
+      },
+      {
+        "text": "abîmés",
+        "zh": "受损的",
+        "sentenceId": "fr-decouvrir-le-patrimoine-07"
+      },
+      {
+        "text": "coulisses",
+        "zh": "后台",
+        "sentenceId": "fr-decouvrir-le-patrimoine-09"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "autour de chez elles",
+        "zh": "在她们/它们家附近",
+        "sentenceId": "fr-decouvrir-le-patrimoine-03"
+      },
+      {
+        "text": "taille de pierre",
+        "zh": "石料切凿",
+        "sentenceId": "fr-decouvrir-le-patrimoine-06"
+      },
+      {
+        "text": "par l’eau",
+        "zh": "被水",
+        "sentenceId": "fr-decouvrir-le-patrimoine-07"
+      },
+      {
+        "text": "une chasse au trésor",
+        "zh": "一场寻宝游戏",
+        "sentenceId": "fr-decouvrir-le-patrimoine-10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-decouvrir-le-patrimoine-04",
+        "note": "on pouvait + 不定式回顾当时可以参加的活动；并不证明每位访客实际参加。"
+      },
+      {
+        "sentenceId": "fr-decouvrir-le-patrimoine-07",
+        "note": "comment + 不定式引出“如何做”；abîmés 与阳性复数 livres et archives 一致。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel lieu de votre région aimeriez-vous découvrir ?",
+        "zh": "你想探索自己所在地区的哪个地方？"
+      },
+      {
+        "text": "Préférez-vous une visite ou un atelier ? Pourquoi ?",
+        "zh": "你更喜欢参观还是工作坊？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "J’aimerais découvrir…",
+        "zh": "我想探索……",
+        "note": "原创口语表达，可根据自己的想法补充。"
+      },
+      {
+        "text": "Un atelier permet de…",
+        "zh": "工作坊可以让人……",
+        "note": "原创口语表达，可根据自己的想法补充。"
+      }
+    ]
+  }
+}

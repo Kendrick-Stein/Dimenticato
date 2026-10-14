@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-it-giochi-tra-generazioni",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-giochi-tra-generazioni-02",
+      "start": 72,
+      "answer": "abitudini",
+      "options": [
+        "abitudine",
+        "abituale",
+        "abitualmente",
+        "abitudini"
+      ],
+      "explanation": "queste要求阴性复数abitudini；其他是单数名词、形容词或副词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-giochi-tra-generazioni-04",
+      "start": 145,
+      "answer": "fasce",
+      "options": [
+        "fasci",
+        "fasciare",
+        "fasce",
+        "fascia"
+      ],
+      "explanation": "nelle及successive要求阴性复数fasce，指年龄组别。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-giochi-tra-generazioni-06",
+      "start": 9,
+      "answer": "settimanale",
+      "options": [
+        "settimana",
+        "settimanale",
+        "settimanali",
+        "settimanalmente"
+      ],
+      "explanation": "gioco为阳性单数，需形容词settimanale；其他为复数、副词或名词。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-giochi-tra-generazioni-08",
+      "start": 6,
+      "answer": "passatempi",
+      "options": [
+        "passatempi",
+        "passatempo",
+        "passatempista",
+        "passare"
+      ],
+      "explanation": "i后需复数名词passatempi“消遣活动”，且与considerati一致。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-giochi-tra-generazioni-10",
+      "start": 53,
+      "answer": "uniforme",
+      "options": [
+        "uniformi",
+        "uniformemente",
+        "uniformità",
+        "uniforme"
+      ],
+      "explanation": "形容词uniforme修饰单数diffusione；其他为复数、副词或名词。"
+    }
+  ]
+}

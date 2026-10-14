@@ -1,0 +1,362 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-it-giochi-tra-generazioni",
+  "storyId": "it-2026-09-03-giochi-tra-generazioni",
+  "lang": "it",
+  "date": "2026-10-14",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "休闲生活",
+    "代际差异",
+    "桌游"
+  ],
+  "title": "Come cambia il gioco tra generazioni",
+  "titleZh": "不同世代的游戏习惯如何变化",
+  "summaryZh": "Istat于2026年9月3日发布2024年游戏习惯调查。文章聚焦纸牌、填字和桌游，比较年度参与和每周频率，避免把相关差异解释成因果。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：长篇比较不同年龄、性别及年代的游戏习惯，保留让步、限定和统计口径，需跨句整合。非认证测评。",
+  "source": {
+    "name": "Istat",
+    "title": "Giochi, un’attività abituale per la maggioranza dei cittadini – Anno 2024",
+    "url": "https://www.istat.it/comunicato-stampa/giochi-unattivita-abituale-per-la-maggioranza-dei-cittadini/",
+    "publishedAt": "2026-09-03",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：Istat，《Giochi, un’attività abituale per la maggioranza dei cittadini – Anno 2024》，2026-09-03；2026-10-14查阅。依据CC BY 4.0使用机构文字，原文及许可链接见上。未使用图片、标志、第三方作品或直接引语。",
+  "adaptation": "Dimenticato依据意大利语机构原文进行同语言节选、重组与难度调整，添加简体中文翻译、语境注释、学习总结及原创口语和练习。保留原始数据及事件时期；不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "it-giochi-tra-generazioni-01",
+      "text": "Una partita a carte, un cruciverba o un gioco di società sono modi diversi di trascorrere il tempo libero, ma quanto sono diffusi e chi li pratica?",
+      "zh": "打一次纸牌、做一道填字游戏或玩一场桌游，都是度过闲暇的不同方式，但它们有多普及，又有哪些人在玩呢？",
+      "glosses": [
+        {
+          "surface": "cruciverba",
+          "lemma": "cruciverba",
+          "zh": "填字游戏"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-02",
+      "text": "Un comunicato pubblicato dall’Istat il 3 settembre 2026 descrive queste abitudini attraverso dati riferiti al 2024, che non vanno quindi interpretati come una fotografia dell’autunno 2026.",
+      "zh": "Istat于2026年9月3日发布的新闻稿用2024年数据描述这些习惯，因此不能把它们理解为2026年秋季的即时写照。",
+      "glosses": [
+        {
+          "surface": "abitudini",
+          "lemma": "abitudine",
+          "zh": "习惯"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-03",
+      "text": "Nell’anno osservato, il 52,9% delle persone di almeno 14 anni aveva svolto almeno un’attività di gioco tra quelle considerate, pari a 27 milioni e 510 mila persone.",
+      "zh": "在调查所指年份，14岁及以上人群中有52.9%至少参与过一项所考察的游戏活动，相当于2751万人。",
+      "glosses": [
+        {
+          "surface": "considerate",
+          "lemma": "considerare",
+          "zh": "被考察的"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-04",
+      "text": "La partecipazione annuale risultava particolarmente elevata tra i giovani di 14-24 anni, quasi sette su dieci, e scendeva progressivamente nelle fasce successive fino al 42,7% tra gli ultrasettantacinquenni.",
+      "zh": "14至24岁年轻人的年度参与率尤其高，接近十分之七；之后随年龄组上升而逐渐下降，在75岁以上人群中降至42.7%。",
+      "glosses": [
+        {
+          "surface": "fasce",
+          "lemma": "fascia",
+          "zh": "组别"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-05",
+      "text": "Tuttavia, partecipare almeno una volta durante l’anno e giocare ogni settimana sono due misure diverse, capaci di restituire un’immagine meno semplice del rapporto tra gioco ed età.",
+      "zh": "然而，一年中至少参与一次与每周都玩，是两种不同指标，能够呈现游戏与年龄之间更为复杂的关系。",
+      "glosses": [
+        {
+          "surface": "restituire",
+          "lemma": "restituire",
+          "zh": "呈现"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-06",
+      "text": "Il gioco settimanale riguardava infatti il 12,3% dell’intera popolazione di almeno 14 anni, ma raggiungeva il 19,3% tra le persone con più di 65 anni, contro il 13,5% tra i 14-24enni.",
+      "zh": "事实上，14岁及以上总人口中有12.3%每周玩游戏，但65岁以上人群中这一比例达到19.3%，14至24岁人群则为13.5%。",
+      "glosses": [
+        {
+          "surface": "settimanale",
+          "lemma": "settimanale",
+          "zh": "每周的"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-07",
+      "text": "Queste percentuali descrivono la frequenza entro ciascun gruppo e non la quota di anziani o giovani sul totale dei giocatori abituali.",
+      "zh": "这些百分比描述各群体内部的频率，而不是老年人或年轻人在经常玩游戏者总数中所占的份额。",
+      "glosses": [
+        {
+          "surface": "ciascun",
+          "lemma": "ciascuno",
+          "zh": "每个"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-08",
+      "text": "Tra i passatempi considerati, le carte erano al primo posto con il 39,7%, seguite dai cruciverba al 31,5% e dai giochi di società al 24,5%.",
+      "zh": "在所考察的消遣活动中，纸牌以39.7%的参与率位列第一，其后是31.5%的填字游戏和24.5%的桌游。",
+      "glosses": [
+        {
+          "surface": "passatempi",
+          "lemma": "passatempo",
+          "zh": "消遣活动"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-09",
+      "text": "Gli scacchi e la dama coinvolgevano il 14,8%, mentre il biliardo e il bowling arrivavano al 14,5%; le escape room, comprese le versioni in scatola, si fermavano al 6,5%.",
+      "zh": "国际象棋和西洋跳棋的参与率为14.8%，台球和保龄球为14.5%；密室逃脱，包括盒装版本，为6.5%。",
+      "glosses": [
+        {
+          "surface": "coinvolgevano",
+          "lemma": "coinvolgere",
+          "zh": "涉及"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-10",
+      "text": "I cruciverba mostravano una diffusione relativamente uniforme tra le età, intorno a una persona su tre, anche se la frequenza settimanale variava sensibilmente.",
+      "zh": "填字游戏在不同年龄中的普及率相对均匀，约为三分之一，但每周参与频率的差异相当明显。",
+      "glosses": [
+        {
+          "surface": "uniforme",
+          "lemma": "uniforme",
+          "zh": "均匀的"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-11",
+      "text": "Per esempio, il 13,1% delle persone di 65 anni e più li faceva almeno una volta alla settimana, rispetto al 4,1% dei ragazzi di 14-17 anni.",
+      "zh": "例如，65岁及以上人群中有13.1%至少每周做一次填字游戏，而14至17岁青少年中这一比例为4.1%。",
+      "glosses": [
+        {
+          "surface": "rispetto",
+          "lemma": "rispetto",
+          "zh": "相比"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-12",
+      "text": "Per i giochi di società, invece, la pratica settimanale raggiungeva il 5,8% tra i 14-17enni e scendeva allo 0,7% tra gli ultrasettantacinquenni.",
+      "zh": "桌游则相反：14至17岁群体的每周参与率达到5.8%，而75岁以上人群降至0.7%。",
+      "glosses": [
+        {
+          "surface": "pratica",
+          "lemma": "pratica",
+          "zh": "参与活动"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-13",
+      "text": "Anche il confronto tra uomini e donne rivelava differenze: la partecipazione complessiva era rispettivamente del 54,3% e del 51,5%, dunque abbastanza vicina.",
+      "zh": "男性与女性的比较也显示出差异：总体参与率分别为54.3%和51.5%，因此相当接近。",
+      "glosses": [
+        {
+          "surface": "complessiva",
+          "lemma": "complessivo",
+          "zh": "总体的"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-14",
+      "text": "Gli uomini partecipavano più spesso ai giochi di carte e agli scacchi o alla dama, mentre le donne dichiaravano più frequentemente di dedicarsi ai cruciverba.",
+      "zh": "男性更多参与纸牌、国际象棋或西洋跳棋，而女性更常表示自己会做填字游戏。",
+      "glosses": [
+        {
+          "surface": "dedicarsi",
+          "lemma": "dedicarsi",
+          "zh": "投入于"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-15",
+      "text": "Per i giochi di società, i valori erano simili: il 25% degli uomini e il 24% delle donne, senza una distanza paragonabile a quella osservata per altri passatempi.",
+      "zh": "桌游的参与率相近：男性为25%，女性为24%，差距没有其他消遣活动中观察到的那么大。",
+      "glosses": [
+        {
+          "surface": "paragonabile",
+          "lemma": "paragonabile",
+          "zh": "可相比的"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-16",
+      "text": "Il confronto con il 2000 segnala inoltre un cambiamento nelle preferenze rilevate: la quota di chi giocava a carte è passata dal 46,7% al 39,7%, e quella dei cruciverba dal 40,3% al 31,5%.",
+      "zh": "与2000年比较，还可以看到记录下来的偏好发生变化：玩纸牌的比例从46.7%降至39.7%，做填字游戏的比例从40.3%降至31.5%。",
+      "glosses": [
+        {
+          "surface": "preferenze",
+          "lemma": "preferenza",
+          "zh": "偏好"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-17",
+      "text": "Nello stesso periodo, i giochi di società sono saliti dal 22,3% al 24,5%, mostrando un aumento contenuto anziché una trasformazione radicale delle abitudini.",
+      "zh": "同一时期，桌游参与率从22.3%升至24.5%，呈现小幅增长，而非习惯的根本转变。",
+      "glosses": [
+        {
+          "surface": "contenuto",
+          "lemma": "contenuto",
+          "zh": "有限的"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-18",
+      "text": "La diminuzione del gioco delle carte ha riguardato gli uomini, mentre per le donne la quota è rimasta quasi identica: 37,6% nel 2000 e 37,7% nel 2024.",
+      "zh": "纸牌参与率的下降出现在男性群体，而女性比例几乎未变：2000年为37.6%，2024年为37.7%。",
+      "glosses": [
+        {
+          "surface": "diminuzione",
+          "lemma": "diminuzione",
+          "zh": "下降"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-19",
+      "text": "Infine, la partecipazione risultava più diffusa nel Nord, con il 57,6%, rispetto al Centro, al 53,5%, e al Mezzogiorno, al 45,9%.",
+      "zh": "最后，北部的参与率更高，为57.6%，中部为53.5%，南部为45.9%。",
+      "glosses": [
+        {
+          "surface": "Mezzogiorno",
+          "lemma": "Mezzogiorno",
+          "zh": "意大利南部"
+        }
+      ]
+    },
+    {
+      "id": "it-giochi-tra-generazioni-20",
+      "text": "Sono differenze descrittive: da sole non spiegano perché una persona scelga un passatempo, né permettono di attribuire a un’intera generazione le stesse preferenze.",
+      "zh": "这些是描述性的差异：它们本身并不能解释一个人为何选择某种消遣，也不能据此认定整整一代人拥有相同偏好。",
+      "glosses": [
+        {
+          "surface": "attribuire",
+          "lemma": "attribuire",
+          "zh": "归于"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "abitudini",
+        "zh": "习惯",
+        "sentenceId": "it-giochi-tra-generazioni-02"
+      },
+      {
+        "text": "fasce",
+        "zh": "组别",
+        "sentenceId": "it-giochi-tra-generazioni-04"
+      },
+      {
+        "text": "settimanale",
+        "zh": "每周的",
+        "sentenceId": "it-giochi-tra-generazioni-06"
+      },
+      {
+        "text": "passatempi",
+        "zh": "消遣活动",
+        "sentenceId": "it-giochi-tra-generazioni-08"
+      },
+      {
+        "text": "uniforme",
+        "zh": "均匀的",
+        "sentenceId": "it-giochi-tra-generazioni-10"
+      },
+      {
+        "text": "attribuire",
+        "zh": "归于",
+        "sentenceId": "it-giochi-tra-generazioni-20"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "tempo libero",
+        "zh": "闲暇",
+        "sentenceId": "it-giochi-tra-generazioni-01"
+      },
+      {
+        "text": "pari a",
+        "zh": "相当于",
+        "sentenceId": "it-giochi-tra-generazioni-03"
+      },
+      {
+        "text": "senza una distanza paragonabile",
+        "zh": "没有可相比的差距",
+        "sentenceId": "it-giochi-tra-generazioni-15"
+      },
+      {
+        "text": "da sole",
+        "zh": "仅凭它们自身",
+        "sentenceId": "it-giochi-tra-generazioni-20"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-giochi-tra-generazioni-05",
+        "note": "tuttavia引出限制条件，区分参与率与频率。"
+      },
+      {
+        "sentenceId": "it-giochi-tra-generazioni-20",
+        "note": "non…né…连接两项不能推出的结论；scelga为虚拟式。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Perché distinguere tra partecipazione annuale e frequenza settimanale cambia la lettura dei dati?",
+        "zh": "为什么区分年度参与率与每周频率，会改变对数据的理解？"
+      },
+      {
+        "text": "Quali giochi potrebbero riunire persone di generazioni diverse? Motiva la tua scelta.",
+        "zh": "哪些游戏能够把不同世代的人聚在一起？请说明理由。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Il dato descrive una differenza, ma non ne dimostra la causa.",
+        "zh": "这一数据描述了差异，却并未证明其原因。"
+      },
+      {
+        "text": "La frequenza conta quanto il numero di partecipanti.",
+        "zh": "参与频率和参与人数同样重要。"
+      }
+    ]
+  }
+}

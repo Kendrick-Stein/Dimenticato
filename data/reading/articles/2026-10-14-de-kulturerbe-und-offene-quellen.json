@@ -1,0 +1,351 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-de-kulturerbe-und-offene-quellen",
+  "storyId": "irights-kulturerbe-und-offene-quellen-2026-08-19",
+  "lang": "de",
+  "date": "2026-10-14",
+  "title": "Kulturerbe: Wer bekommt Zugang zur Vergangenheit?",
+  "titleZh": "文化遗产：谁能接触过去的资料？",
+  "summaryZh": "回看2026年8月19日的文化会议公告：原定9月30日至10月2日的柏林会议围绕历史记忆与资料开放展开。本篇介绍公告提出的问题，不声称会议已按计划举行或已有结论。",
+  "level": "B1",
+  "levelReason": "连贯介绍公告与文化记忆问题，包含过去时、原因从句、间接疑问句和比较；版权与史料词汇有注释。B1为编辑估计。",
+  "category": "culture",
+  "topics": [
+    "文化遗产",
+    "历史记忆",
+    "资料开放"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "iRights.info — iRights e.V.",
+    "title": "„Zugang gestalten!“ vom 30. September – 02. Oktober 2026 in der Staatsbibliothek zu Berlin",
+    "url": "https://irights.info/artikel/zugang-gestalten-vom-30-september-02-oktober-2026-in-der-staatsbibliothek-zu-berlin/32890",
+    "publishedAt": "2026-08-19",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Redaktion iRights.info, iRights.info, „„Zugang gestalten!“ vom 30. September – 02. Oktober 2026 in der Staatsbibliothek zu Berlin“, 2026-08-19. Quelle: https://irights.info/artikel/zugang-gestalten-vom-30-september-02-oktober-2026-in-der-staatsbibliothek-zu-berlin/32890 Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+  "adaptation": "Dimenticato德语教学改写：删节、简化、重组原文，新增中文逐句翻译、语境词注、学习总结、口语及配套练习。改编文字和教学材料以CC BY 4.0发布。未使用图片、漫画内容、第三方引语、媒体或链接文献。原作者及iRights.info未审核或认可本学习版；原文日期和学习版日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Am 19. August 2026 kündigte iRights.info eine Konferenz über den Zugang zu unserem kulturellen Erbe an.",
+      "zh": "2026年8月19日，iRights.info预告了一场讨论文化遗产开放获取的会议。",
+      "glosses": [
+        {
+          "surface": "kündigte",
+          "lemma": "ankündigen",
+          "zh": "预告了"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Sie sollte vom 30. September bis zum 2. Oktober in der Staatsbibliothek zu Berlin stattfinden.",
+      "zh": "会议原定于9月30日至10月2日在柏林国家图书馆举行。",
+      "glosses": [
+        {
+          "surface": "stattfinden",
+          "lemma": "stattfinden",
+          "zh": "举行"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Dieser Text blickt auf die Ankündigung zurück und beschreibt die dort genannten Fragen, nicht die Ergebnisse der Veranstaltung.",
+      "zh": "本文回顾这则公告，介绍其中提出的问题，而非会议结果。",
+      "glosses": [
+        {
+          "surface": "Ankündigung",
+          "lemma": "Ankündigung",
+          "zh": "公告；预告"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Die Reihe heißt „Zugang gestalten!“ und begann 2011; für 2026 war ihre sechzehnte Ausgabe angekündigt.",
+      "zh": "这一系列会议名为“塑造开放获取！”，始于2011年；公告称2026年将举办第16届。",
+      "glosses": [
+        {
+          "surface": "Reihe",
+          "lemma": "Reihe",
+          "zh": "系列"
+        },
+        {
+          "surface": "angekündigt",
+          "lemma": "ankündigen",
+          "zh": "预告的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Im Mittelpunkt sollten diesmal Geschichtspolitik und Erinnerung stehen, also auch unser Umgang mit Zeugnissen der Vergangenheit.",
+      "zh": "此次的中心议题原定是历史政治与记忆，也就是包括我们如何对待历史遗存。",
+      "glosses": [
+        {
+          "surface": "Vergangenheit",
+          "lemma": "Vergangenheit",
+          "zh": "过去"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Die Redaktion fragte, welche Rolle Einrichtungen spielen, die unser kulturelles Erbe bewahren und für andere zugänglich machen.",
+      "zh": "编辑部提出问题：保存文化遗产并使他人能够接触它的机构扮演什么角色？",
+      "glosses": [
+        {
+          "surface": "bewahren",
+          "lemma": "bewahren",
+          "zh": "保存"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Nutzen solche Einrichtungen historische Quellen, um eine bestimmte Sicht auf die Geschichte zu unterstützen?",
+      "zh": "这些机构是否会用历史资料支持某一种历史观？",
+      "glosses": [
+        {
+          "surface": "Quellen",
+          "lemma": "Quelle",
+          "zh": "资料；来源"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Oder geben sie den Nutzenden Zugang zu diesen Quellen, damit diese sich selbst ein Urteil bilden können?",
+      "zh": "还是说，它们让使用者接触这些资料，使其能够自己形成判断？",
+      "glosses": [
+        {
+          "surface": "Urteil",
+          "lemma": "Urteil",
+          "zh": "判断"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Das sind Fragen darüber, wie Geschichte vermittelt wird und wer an der Diskussion über sie teilnehmen kann.",
+      "zh": "这些问题涉及历史如何被呈现，以及谁能够参与相关讨论。",
+      "glosses": [
+        {
+          "surface": "vermittelt",
+          "lemma": "vermitteln",
+          "zh": "传达；呈现"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Dabei spielt nach Darstellung der Ankündigung auch das Urheberrecht eine wichtige Rolle für den Zugang zu historischen Zeugnissen.",
+      "zh": "按照公告的说明，版权也对历史遗存的开放获取起着重要作用。",
+      "glosses": [
+        {
+          "surface": "Zugang",
+          "lemma": "Zugang",
+          "zh": "接触；获取途径"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Solange Schutzfristen laufen oder der rechtliche Status unklar ist, können Lücken in der Überlieferung entstehen.",
+      "zh": "在保护期限尚未结束或法律状态不明确时，历史资料的传承可能出现缺口。",
+      "glosses": [
+        {
+          "surface": "Lücken",
+          "lemma": "Lücke",
+          "zh": "缺口"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Dadurch fehlen möglicherweise bestimmte historische Perspektiven, und unser Bild der Vergangenheit kann verzerrt werden.",
+      "zh": "这样就可能缺少某些历史视角，我们对过去的认识也可能受到扭曲。",
+      "glosses": [
+        {
+          "surface": "möglicherweise",
+          "lemma": "möglicherweise",
+          "zh": "可能"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Solche Folgen müssen nicht beabsichtigt sein; gerade deshalb wollte die Konferenz ihre Bedeutung genauer untersuchen.",
+      "zh": "这些后果未必是有意造成的；恰恰因此，会议原计划更仔细地考察其意义。",
+      "glosses": [
+        {
+          "surface": "beabsichtigt",
+          "lemma": "beabsichtigen",
+          "zh": "有意造成的"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Die Fragen betreffen sowohl die öffentliche Diskussion als auch die wissenschaftliche Beschäftigung mit Geschichte und Erinnerung.",
+      "zh": "这些问题既涉及公共讨论，也涉及对历史与记忆的学术研究。",
+      "glosses": [
+        {
+          "surface": "sowohl",
+          "lemma": "sowohl",
+          "zh": "既（与als auch连用）"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Die Teilnahme war laut Ankündigung kostenlos, allerdings sollten sich Interessierte vorher anmelden; die Deutsche UNESCO-Kommission übernahm die Schirmherrschaft.",
+      "zh": "根据公告，参加会议免费，但感兴趣的人应事先报名；德国联合国教科文组织委员会担任会议的荣誉支持机构。",
+      "glosses": [
+        {
+          "surface": "kostenlos",
+          "lemma": "kostenlos",
+          "zh": "免费的"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Zum Kreis der Partner gehörten unter anderem das Bundesarchiv, die Deutsche Digitale Bibliothek, Wikimedia Deutschland und verschiedene Museen.",
+      "zh": "合作方包括德国联邦档案馆、德国数字图书馆、德国维基媒体协会以及不同的博物馆。",
+      "glosses": [
+        {
+          "surface": "gehörten",
+          "lemma": "gehören",
+          "zh": "属于；包括在内"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Für den ersten Abend war ein Programm im Deutschlandmuseum vorgesehen, für den zweiten eines in der Staatsbibliothek.",
+      "zh": "第一晚的活动原计划安排在德国博物馆，第二晚则在国家图书馆。",
+      "glosses": [
+        {
+          "surface": "vorgesehen",
+          "lemma": "vorsehen",
+          "zh": "原计划安排的"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Die Ankündigung machte damit deutlich, dass der Zugang zu kulturellem Erbe verschiedene Einrichtungen und Perspektiven zusammenbringt.",
+      "zh": "这则公告由此表明，文化遗产开放获取把不同机构和视角联系在一起。",
+      "glosses": [
+        {
+          "surface": "Perspektiven",
+          "lemma": "Perspektive",
+          "zh": "视角"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "stattfinden",
+        "zh": "举行",
+        "sentenceId": "s2",
+        "lemma": "stattfinden"
+      },
+      {
+        "text": "bewahren",
+        "zh": "保存",
+        "sentenceId": "s6",
+        "lemma": "bewahren"
+      },
+      {
+        "text": "Quellen",
+        "zh": "资料；来源",
+        "sentenceId": "s7",
+        "lemma": "Quelle"
+      },
+      {
+        "text": "Lücken",
+        "zh": "缺口",
+        "sentenceId": "s11",
+        "lemma": "Lücke"
+      },
+      {
+        "text": "angekündigt",
+        "zh": "预告的",
+        "sentenceId": "s4",
+        "lemma": "ankündigen"
+      },
+      {
+        "text": "kostenlos",
+        "zh": "免费的",
+        "sentenceId": "s15",
+        "lemma": "kostenlos"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Im Mittelpunkt",
+        "zh": "处于核心位置",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "sich selbst ein Urteil bilden",
+        "zh": "自己形成判断",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "eine wichtige Rolle",
+        "zh": "重要作用",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "sowohl die öffentliche Diskussion als auch die wissenschaftliche Beschäftigung",
+        "zh": "既包括公共讨论，也包括学术研究",
+        "sentenceId": "s14"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "damit引出目的，从句末尾使用können；sich ein Urteil bilden是“形成判断”的固定搭配。"
+      },
+      {
+        "sentenceId": "s13",
+        "note": "müssen nicht表示“不一定”，而不是“不许”；分号连接原因与后续计划。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Soll ein Museum eine klare Geschichte erzählen oder mehrere Perspektiven nebeneinander zeigen? Warum?",
+        "zh": "博物馆应该讲述一条明确的历史叙事，还是并列呈现多个视角？为什么？"
+      },
+      {
+        "text": "Welche Quellen würdest du nutzen, um mehr über die Geschichte deiner Stadt zu erfahren?",
+        "zh": "要了解自己城市的历史，你会使用哪些资料？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich möchte mir selbst ein Urteil bilden.",
+        "zh": "我想自己形成判断。",
+        "note": "说明你希望独立评估资料。"
+      },
+      {
+        "text": "Aus meiner Sicht fehlt hier eine Perspektive.",
+        "zh": "在我看来，这里缺少一种视角。",
+        "note": "用于指出叙述可能不完整。"
+      }
+    ]
+  }
+}

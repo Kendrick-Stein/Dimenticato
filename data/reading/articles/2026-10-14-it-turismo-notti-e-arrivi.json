@@ -1,0 +1,295 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-it-turismo-notti-e-arrivi",
+  "storyId": "it-2026-09-14-turismo-notti-e-arrivi",
+  "lang": "it",
+  "date": "2026-10-14",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "旅游习惯",
+    "住宿",
+    "统计素养"
+  ],
+  "title": "Turismo: contare gli arrivi e le notti",
+  "titleZh": "旅游统计：数抵达次数，也数住宿夜数",
+  "summaryZh": "Istat于9月14日发布2026年第二季度旅游数据：抵达次数略降，但住宿夜数增加。文章区分两种指标，并比较国内外游客与住宿类型。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：用连贯说明比较旅游人数与住宿夜数，练习比较结构及统计表达；专业词有语境解释。非认证测评。",
+  "source": {
+    "name": "Istat",
+    "title": "Flussi turistici – II trimestre 2026",
+    "url": "https://www.istat.it/comunicato-stampa/flussi-turistici-ii-trimestre-2026/",
+    "publishedAt": "2026-09-14",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：Istat，《Flussi turistici – II trimestre 2026》，2026-09-14；2026-10-14查阅。依据CC BY 4.0使用机构文字，原文及许可链接见上。未使用图片、标志、第三方作品或直接引语。",
+  "adaptation": "Dimenticato依据意大利语机构原文进行同语言节选、重组与难度调整，添加简体中文翻译、语境注释、学习总结及原创口语和练习。保留原始数据及事件时期；不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "it-turismo-notti-e-arrivi-01",
+      "text": "Il turismo può crescere anche quando diminuiscono gli arrivi: per capire questa apparente contraddizione, bisogna osservare anche le notti trascorse nelle strutture ricettive.",
+      "zh": "即使抵达次数减少，旅游业的某些指标也可能增长：要理解这一表面上的矛盾，还需要观察游客在住宿设施度过的夜数。",
+      "glosses": [
+        {
+          "surface": "arrivi",
+          "lemma": "arrivo",
+          "zh": "抵达次数"
+        },
+        {
+          "surface": "ricettive",
+          "lemma": "ricettivo",
+          "zh": "接待住宿的"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-02",
+      "text": "Il 14 settembre 2026 l’Istat ha pubblicato i dati sul secondo trimestre dell’anno, cioè sui mesi di aprile, maggio e giugno.",
+      "zh": "2026年9月14日，Istat公布了当年第二季度，即4月、5月和6月的数据。",
+      "glosses": [
+        {
+          "surface": "trimestre",
+          "lemma": "trimestre",
+          "zh": "季度"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-03",
+      "text": "In questo periodo, gli esercizi ricettivi italiani hanno registrato poco meno di 47 milioni di arrivi e quasi 148 milioni di presenze.",
+      "zh": "这一时期，意大利住宿设施登记了略少于4700万次抵达和近1.48亿人夜住宿。",
+      "glosses": [
+        {
+          "surface": "presenze",
+          "lemma": "presenza",
+          "zh": "住宿人夜数"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-04",
+      "text": "Le presenze indicano le notti trascorse dai clienti nelle strutture, quindi misurano un aspetto diverso rispetto agli arrivi.",
+      "zh": "住宿人夜数指住客在设施中度过的夜数，因此衡量的是与抵达次数不同的方面。",
+      "glosses": [
+        {
+          "surface": "indicano",
+          "lemma": "indicare",
+          "zh": "表示"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-05",
+      "text": "Rispetto allo stesso trimestre del 2025, gli arrivi sono diminuiti dello 0,8%, mentre le presenze sono aumentate del 3,9%.",
+      "zh": "与2025年同一季度相比，抵达次数减少了0.8%，而住宿夜数增加了3.9%。",
+      "glosses": [
+        {
+          "surface": "aumentate",
+          "lemma": "aumentare",
+          "zh": "增加了"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-06",
+      "text": "Il confronto riguarda dunque lo stesso periodo di due anni diversi, non il trimestre precedente: è una distinzione importante per leggere correttamente le variazioni riportate nel comunicato.",
+      "zh": "因此，这一比较针对不同年份的同一时期，而不是上一季度：要正确理解新闻稿中的变化，这一区分很重要。",
+      "glosses": [
+        {
+          "surface": "confronto",
+          "lemma": "confronto",
+          "zh": "比较"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-07",
+      "text": "I turisti stranieri hanno rappresentato il 61,6% delle presenze complessive, una quota superiore a quella dei turisti italiani.",
+      "zh": "外国游客占全部住宿夜数的61.6%，这一比例高于意大利游客。",
+      "glosses": [
+        {
+          "surface": "quota",
+          "lemma": "quota",
+          "zh": "比例"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-08",
+      "text": "Le loro presenze sono cresciute del 4,6%, contro un aumento del 2,7% per la clientela italiana.",
+      "zh": "他们的住宿夜数增长了4.6%，意大利游客则增长了2.7%。",
+      "glosses": [
+        {
+          "surface": "clientela",
+          "lemma": "clientela",
+          "zh": "顾客群体"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-09",
+      "text": "Maggio ha mostrato l’aumento più forte rispetto all’anno precedente, ma giugno ha raccolto il 44,1% delle presenze del trimestre.",
+      "zh": "与上一年相比，5月增幅最大，但6月集中了该季度44.1%的住宿夜数。",
+      "glosses": [
+        {
+          "surface": "raccolto",
+          "lemma": "raccogliere",
+          "zh": "集中了"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-10",
+      "text": "Anche il tipo di alloggio fa emergere differenze: le presenze sono cresciute del 2,4% negli alberghi e del 5,6% nelle strutture extra-alberghiere.",
+      "zh": "住宿类型也呈现出差异：酒店住宿夜数增长了2.4%，非酒店住宿设施则增长了5.6%。",
+      "glosses": [
+        {
+          "surface": "alloggio",
+          "lemma": "alloggio",
+          "zh": "住宿"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-11",
+      "text": "Queste ultime comprendono anche case e appartamenti affittati per brevi soggiorni turistici, gestiti sia da imprese sia da soggetti non imprenditoriali.",
+      "zh": "后者也包括用于短期旅游住宿的出租房屋和公寓，经营者既有企业，也有非企业主体。",
+      "glosses": [
+        {
+          "surface": "soggiorni",
+          "lemma": "soggiorno",
+          "zh": "停留"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-12",
+      "text": "La permanenza media è stata di 3,15 notti per cliente, leggermente più lunga rispetto al 2025.",
+      "zh": "每位住客平均停留3.15夜，比2025年略长。",
+      "glosses": [
+        {
+          "surface": "permanenza",
+          "lemma": "permanenza",
+          "zh": "停留"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-13",
+      "text": "Per gli stranieri la media è stata di 3,34 notti, mentre per gli italiani si è fermata a 2,88.",
+      "zh": "外国游客平均停留3.34夜，而意大利游客为2.88夜。",
+      "glosses": [
+        {
+          "surface": "media",
+          "lemma": "media",
+          "zh": "平均值"
+        }
+      ]
+    },
+    {
+      "id": "it-turismo-notti-e-arrivi-14",
+      "text": "Leggere insieme questi indicatori permette di distinguere il numero degli arrivi dalla durata dei soggiorni e di descrivere meglio il movimento turistico.",
+      "zh": "综合阅读这些指标，可以区分抵达次数与停留时长，从而更好地描述旅游流动。",
+      "glosses": [
+        {
+          "surface": "durata",
+          "lemma": "durata",
+          "zh": "时长"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "arrivi",
+        "zh": "抵达次数",
+        "sentenceId": "it-turismo-notti-e-arrivi-01"
+      },
+      {
+        "text": "trimestre",
+        "zh": "季度",
+        "sentenceId": "it-turismo-notti-e-arrivi-02"
+      },
+      {
+        "text": "presenze",
+        "zh": "住宿人夜数",
+        "sentenceId": "it-turismo-notti-e-arrivi-03"
+      },
+      {
+        "text": "confronto",
+        "zh": "比较",
+        "sentenceId": "it-turismo-notti-e-arrivi-06"
+      },
+      {
+        "text": "alloggio",
+        "zh": "住宿",
+        "sentenceId": "it-turismo-notti-e-arrivi-10"
+      },
+      {
+        "text": "durata",
+        "zh": "时长",
+        "sentenceId": "it-turismo-notti-e-arrivi-14"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "poco meno di",
+        "zh": "略少于",
+        "sentenceId": "it-turismo-notti-e-arrivi-03"
+      },
+      {
+        "text": "Rispetto allo stesso trimestre",
+        "zh": "与同一季度相比",
+        "sentenceId": "it-turismo-notti-e-arrivi-05"
+      },
+      {
+        "text": "fa emergere differenze",
+        "zh": "使差异显现",
+        "sentenceId": "it-turismo-notti-e-arrivi-10"
+      },
+      {
+        "text": "Leggere insieme",
+        "zh": "综合阅读",
+        "sentenceId": "it-turismo-notti-e-arrivi-14"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-turismo-notti-e-arrivi-05",
+        "note": "mentre在此连接两个相反的变化趋势。"
+      },
+      {
+        "sentenceId": "it-turismo-notti-e-arrivi-11",
+        "note": "sia…sia…表示“既……也……”。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Per descrivere il turismo di una città, guarderesti prima gli arrivi o le notti? Perché?",
+        "zh": "描述一座城市的旅游情况，你会先看抵达次数还是住宿夜数？为什么？"
+      },
+      {
+        "text": "Quando viaggi, preferisci un albergo o un appartamento?",
+        "zh": "旅行时，你更喜欢酒店还是公寓？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Per capire il fenomeno, confronterei entrambi gli indicatori.",
+        "zh": "为了理解这一现象，我会比较两个指标。"
+      },
+      {
+        "text": "Un soggiorno più lungo non significa necessariamente più arrivi.",
+        "zh": "停留时间更长不一定意味着抵达次数更多。"
+      }
+    ]
+  }
+}

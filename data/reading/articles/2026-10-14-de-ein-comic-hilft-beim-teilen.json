@@ -1,0 +1,298 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-de-ein-comic-hilft-beim-teilen",
+  "storyId": "irights-ein-comic-hilft-beim-teilen-2026-07-31",
+  "lang": "de",
+  "date": "2026-10-14",
+  "title": "Ein Comic hilft beim Teilen von Lernmaterial",
+  "titleZh": "漫画帮助人们分享学习材料",
+  "summaryZh": "回看2026年7月31日的教育新闻：一部汉堡短漫画介绍开放学习材料创作者可以在哪里找到版权支持；本篇不转载漫画。",
+  "level": "A2",
+  "levelReason": "短句和常见动词为主，围绕漫画、学习材料和求助，少量关系从句与专业词有语境注释。A2为编辑估计。",
+  "category": "education",
+  "topics": [
+    "开放学习材料",
+    "漫画",
+    "求助"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "iRights.info — iRights e.V.",
+    "title": "Open Educational Resources rechtlich entspannt veröffentlichen",
+    "url": "https://irights.info/artikel/open-educational-resources-rechtlich-entspannt-veroeffentlichen/32878",
+    "publishedAt": "2026-07-31",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Lea Singson, iRights.info, „Open Educational Resources rechtlich entspannt veröffentlichen“, 2026-07-31. Quelle: https://irights.info/artikel/open-educational-resources-rechtlich-entspannt-veroeffentlichen/32878 Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+  "adaptation": "Dimenticato德语教学改写：删节、简化、重组原文，新增中文逐句翻译、语境词注、学习总结、口语及配套练习。改编文字和教学材料以CC BY 4.0发布。未使用图片、漫画内容、第三方引语、媒体或链接文献。原作者及iRights.info未审核或认可本学习版；原文日期和学习版日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Am 31. Juli 2026 hat iRights.info einen kurzen Comic aus Hamburg vorgestellt.",
+      "zh": "2026年7月31日，iRights.info介绍了一部来自汉堡的短漫画。",
+      "glosses": [
+        {
+          "surface": "vorgestellt",
+          "lemma": "vorstellen",
+          "zh": "介绍了"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Das Thema ist das Teilen von Lernmaterialien, die andere Menschen frei nutzen können.",
+      "zh": "主题是分享其他人可以自由使用的学习材料。",
+      "glosses": [
+        {
+          "surface": "Lernmaterialien",
+          "lemma": "Lernmaterial",
+          "zh": "学习材料"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Solche offenen Materialien heißen auch Open Educational Resources, kurz OER.",
+      "zh": "这样的开放材料也叫开放教育资源，简称OER。",
+      "glosses": [
+        {
+          "surface": "offenen",
+          "lemma": "offen",
+          "zh": "开放的"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Sie sollen Bildung für alle leichter zugänglich machen.",
+      "zh": "它们旨在让所有人更容易获得教育。",
+      "glosses": [
+        {
+          "surface": "zugänglich",
+          "lemma": "zugänglich",
+          "zh": "可获得的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Aber viele Menschen sind unsicher, wenn sie eigene Materialien erstellen und im Internet veröffentlichen wollen.",
+      "zh": "但许多人在想制作自己的材料并在网上发布时会感到不确定。",
+      "glosses": [
+        {
+          "surface": "unsicher",
+          "lemma": "unsicher",
+          "zh": "不确定的"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Besonders Fragen zum Urheberrecht können schwierig sein.",
+      "zh": "尤其是版权问题可能很难。",
+      "glosses": [
+        {
+          "surface": "Urheberrecht",
+          "lemma": "Urheberrecht",
+          "zh": "版权"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Deshalb kann es passieren, dass Menschen am Ende gar kein Material veröffentlichen.",
+      "zh": "因此，可能出现有人最终根本不发布材料的情况。",
+      "glosses": [
+        {
+          "surface": "Deshalb",
+          "lemma": "deshalb",
+          "zh": "因此"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Die Hamburg Open Online University hat einen Comic zu diesem Problem veröffentlicht.",
+      "zh": "汉堡开放在线大学针对这个问题发布了一部漫画。",
+      "glosses": [
+        {
+          "surface": "veröffentlicht",
+          "lemma": "veröffentlichen",
+          "zh": "发布了"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Er zeigt auf spielerische Weise, wo Menschen Unterstützung bekommen können.",
+      "zh": "它以轻松有趣的方式展示人们可以在哪里获得支持。",
+      "glosses": [
+        {
+          "surface": "zeigt",
+          "lemma": "zeigen",
+          "zh": "展示"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "An Hochschulen und an anderen Stellen gibt es Einrichtungen und Informationen, die ihnen helfen können.",
+      "zh": "高校和其他地方有可以帮助他们的机构和信息。",
+      "glosses": [
+        {
+          "surface": "helfen",
+          "lemma": "helfen",
+          "zh": "帮助"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Interessierte können auch eine Version mit leicht verständlichen Informationen zum Selbstlernen suchen.",
+      "zh": "感兴趣的人也可以寻找附有通俗自学资料的版本。",
+      "glosses": [
+        {
+          "surface": "suchen",
+          "lemma": "suchen",
+          "zh": "寻找"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Der Comic hilft also dabei, passende Unterstützung zu finden.",
+      "zh": "因此，这部漫画帮助人们找到合适的支持。",
+      "glosses": [
+        {
+          "surface": "hilft",
+          "lemma": "helfen",
+          "zh": "帮助"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Einrichtungen können ihn herunterladen und passende eigene Informationen ergänzen.",
+      "zh": "相关机构可以下载漫画并补充适合自己的信息。",
+      "glosses": [
+        {
+          "surface": "ergänzen",
+          "lemma": "ergänzen",
+          "zh": "补充"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Danach können sie ihn als Flyer verteilen, veröffentlichen oder verschicken.",
+      "zh": "之后，它们可以把它作为传单分发、发布或寄送。",
+      "glosses": [
+        {
+          "surface": "verteilen",
+          "lemma": "verteilen",
+          "zh": "分发"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "veröffentlicht",
+        "zh": "发布了",
+        "sentenceId": "s8",
+        "lemma": "veröffentlichen"
+      },
+      {
+        "text": "zeigt",
+        "zh": "展示",
+        "sentenceId": "s9",
+        "lemma": "zeigen"
+      },
+      {
+        "text": "helfen",
+        "zh": "帮助",
+        "sentenceId": "s10",
+        "lemma": "helfen"
+      },
+      {
+        "text": "suchen",
+        "zh": "寻找",
+        "sentenceId": "s11",
+        "lemma": "suchen"
+      },
+      {
+        "text": "hilft",
+        "zh": "帮助",
+        "sentenceId": "s12",
+        "lemma": "helfen"
+      },
+      {
+        "text": "Lernmaterialien",
+        "zh": "学习材料",
+        "sentenceId": "s2",
+        "lemma": "Lernmaterial"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "für alle",
+        "zh": "面向所有人",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "am Ende",
+        "zh": "最终",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "auf spielerische Weise",
+        "zh": "以轻松有趣的方式",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "Unterstützung zu finden",
+        "zh": "找到支持",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s9",
+        "note": "wo引导间接疑问句，情态动词können放在从句末尾。"
+      },
+      {
+        "sentenceId": "s13",
+        "note": "können后接两个由und连接的不定式：herunterladen与ergänzen。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Was hilft dir beim Lernen mehr: ein Comic oder ein langer Text? Warum?",
+        "zh": "学习时，漫画和长文哪一种对你帮助更大？为什么？"
+      },
+      {
+        "text": "Wo würdest du Hilfe suchen, bevor du eigene Lernmaterialien teilst?",
+        "zh": "分享自己的学习材料之前，你会去哪里寻求帮助？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich finde einen Comic hilfreich, weil …",
+        "zh": "我觉得漫画有帮助，因为……",
+        "note": "用weil说明理由，动词放在从句末尾。"
+      },
+      {
+        "text": "Bei dieser Frage brauche ich Unterstützung.",
+        "zh": "这个问题我需要帮助。",
+        "note": "用于指出具体需要协助的地方。"
+      }
+    ]
+  }
+}

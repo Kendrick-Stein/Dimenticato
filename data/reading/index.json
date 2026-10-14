@@ -2,6 +2,24 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-14-fr-des-vacances-pour-creer",
+      "lang": "fr",
+      "date": "2026-10-14",
+      "title": "Des vacances pour créer et prendre sa place",
+      "titleZh": "在假期里创作，参与文化生活",
+      "summaryZh": "文化部介绍“文化假期”的目标：通过地方合作让年轻人参与创作、接触文化，并回应休闲机会不平等与被动使用屏幕的问题。",
+      "level": "B2",
+      "category": "education",
+      "topics": [
+        "文化教育",
+        "假期活动",
+        "地方合作"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-13",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-en-robots-at-work",
       "lang": "en",
       "date": "2026-10-13",
@@ -272,6 +290,42 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-14-en-museums-open-to-everyone",
+      "lang": "en",
+      "date": "2026-10-14",
+      "title": "Museums open to everyone",
+      "titleZh": "向每个人开放的博物馆",
+      "summaryZh": "英格兰国家博物馆将继续免费入馆。读懂9月29日的决定，以及“免费”与博物馆维修费用之间的关系。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "博物馆",
+        "文化参与",
+        "免费入馆"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-29",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-14-en-people-and-places-for-young-people",
+      "lang": "en",
+      "date": "2026-10-14",
+      "title": "People and places for young people",
+      "titleZh": "年轻人需要的人与空间",
+      "summaryZh": "青年服务不只是建一栋楼。英国9月26日的公告把专业人员、社区空间和青年参与联系起来，并保留实施时间、资金细节尚待公布的限制。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "青年服务",
+        "社区空间",
+        "面对面交流"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-26",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-10-it-plastica-radar",
       "lang": "it",
       "date": "2026-10-10",
@@ -343,6 +397,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-14-it-scienza-da-incontrare",
+      "lang": "it",
+      "date": "2026-10-14",
+      "title": "Una serata per incontrare la scienza",
+      "titleZh": "一个与科学相遇的夜晚",
+      "summaryZh": "回看INGV于9月17日公布的研究者之夜计划：公众可以通过实验、提问和历史资料认识地球。这是活动安排的回顾，不是现场成果报道。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "科学活动",
+        "公众参与",
+        "城市文化"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-09-17",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-12-it-energia-a-scuola",
       "lang": "it",
       "date": "2026-10-12",
@@ -361,6 +433,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-14-fr-decouvrir-le-patrimoine",
+      "lang": "fr",
+      "date": "2026-10-14",
+      "title": "Découvrir le patrimoine près de chez soi",
+      "titleZh": "发现家门口的文化遗产",
+      "summaryZh": "回看9月法国欧洲遗产日的活动安排：从照片、石工到剧院后台，通过动手和参观认识身边的历史。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "地方文化",
+        "文化遗产",
+        "动手体验"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-16",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-11-it-lipari-storia-sommersa",
       "lang": "it",
       "date": "2026-10-11",
@@ -376,6 +466,78 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-09-15",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-14-it-turismo-notti-e-arrivi",
+      "lang": "it",
+      "date": "2026-10-14",
+      "title": "Turismo: contare gli arrivi e le notti",
+      "titleZh": "旅游统计：数抵达次数，也数住宿夜数",
+      "summaryZh": "Istat于9月14日发布2026年第二季度旅游数据：抵达次数略降，但住宿夜数增加。文章区分两种指标，并比较国内外游客与住宿类型。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "旅游习惯",
+        "住宿",
+        "统计素养"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-09-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-14-en-saving-flag-fen",
+      "lang": "en",
+      "date": "2026-10-14",
+      "title": "Saving the stories beneath Flag Fen",
+      "titleZh": "保存弗拉格芬地下的故事",
+      "summaryZh": "一笔发掘资助把古代木构遗址、环境变化与社区志愿者联系起来。区分保护目标和已经完成的成果。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "文化遗产",
+        "考古",
+        "社区志愿服务"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-13",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-14-fr-les-visiteurs-du-patrimoine",
+      "lang": "fr",
+      "date": "2026-10-14",
+      "title": "Qui visite les musées et les monuments ?",
+      "titleZh": "谁在参观博物馆与古迹？",
+      "summaryZh": "文化部2026年发布的Patrimostat介绍2025年初步访客数据，也关注参观人群及其对生态措施的看法。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "博物馆",
+        "文化参与",
+        "生态转型"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-14-it-giochi-tra-generazioni",
+      "lang": "it",
+      "date": "2026-10-14",
+      "title": "Come cambia il gioco tra generazioni",
+      "titleZh": "不同世代的游戏习惯如何变化",
+      "summaryZh": "Istat于2026年9月3日发布2024年游戏习惯调查。文章聚焦纸牌、填字和桌游，比较年度参与和每周频率，避免把相关差异解释成因果。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "休闲生活",
+        "代际差异",
+        "桌游"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-09-03",
       "contentType": "native-adaptation"
     },
     {
@@ -415,6 +577,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-14-de-kulturerbe-und-offene-quellen",
+      "lang": "de",
+      "date": "2026-10-14",
+      "title": "Kulturerbe: Wer bekommt Zugang zur Vergangenheit?",
+      "titleZh": "文化遗产：谁能接触过去的资料？",
+      "summaryZh": "回看2026年8月19日的文化会议公告：原定9月30日至10月2日的柏林会议围绕历史记忆与资料开放展开。本篇介绍公告提出的问题，不声称会议已按计划举行或已有结论。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "文化遗产",
+        "历史记忆",
+        "资料开放"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-08-19",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-de-suchen-ohne-weiterzuklicken",
       "lang": "de",
       "date": "2026-10-13",
@@ -447,6 +627,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-08-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-14-de-ein-comic-hilft-beim-teilen",
+      "lang": "de",
+      "date": "2026-10-14",
+      "title": "Ein Comic hilft beim Teilen von Lernmaterial",
+      "titleZh": "漫画帮助人们分享学习材料",
+      "summaryZh": "回看2026年7月31日的教育新闻：一部汉堡短漫画介绍开放学习材料创作者可以在哪里找到版权支持；本篇不转载漫画。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "开放学习材料",
+        "漫画",
+        "求助"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-07-31",
       "contentType": "native-adaptation"
     },
     {
