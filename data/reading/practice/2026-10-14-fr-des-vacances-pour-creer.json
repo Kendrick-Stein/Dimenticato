@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-fr-des-vacances-pour-creer",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-des-vacances-pour-creer-01",
+      "start": 98,
+      "answer": "disposent",
+      "options": [
+        "disposer",
+        "disposez",
+        "disposent",
+        "disposons"
+      ],
+      "explanation": "按原文恢复词形：主语 tous les jeunes 是第三人称复数，因此用 disposent；disposer de 意为“拥有、可利用”。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-des-vacances-pour-creer-05",
+      "start": 160,
+      "answer": "spectateurs",
+      "options": [
+        "spectateur",
+        "spectatrice",
+        "spectatrices",
+        "spectateurs"
+      ],
+      "explanation": "按原文恢复词形：de simples spectateurs 中 spectateurs 与 participants 及 simples 的阳性复数形式一致；其他选项不符合性数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-des-vacances-pour-creer-08",
+      "start": 39,
+      "answer": "inégalités",
+      "options": [
+        "inégalités",
+        "inégalité",
+        "inégal",
+        "inégalement"
+      ],
+      "explanation": "按原文恢复词形：les 后作为主语需要复数名词 inégalités（不平等现象）；其余为单数名词、形容词或副词。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-des-vacances-pour-creer-12",
+      "start": 55,
+      "answer": "transmettre",
+      "options": [
+        "transmis",
+        "transmettre",
+        "transmettent",
+        "transmettez"
+      ],
+      "explanation": "按原文恢复词形：pour 后用不定式，与 créer 和 rencontrer 并列，因此为 transmettre（传授）。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-des-vacances-pour-creer-15",
+      "start": 108,
+      "answer": "facilitent",
+      "options": [
+        "faciliter",
+        "facilitez",
+        "facilitent",
+        "facilitons"
+      ],
+      "explanation": "按原文恢复词形：主语 ils 指 services，因此用第三人称复数 facilitent（促进）；其余词形不合主语及句法。"
+    }
+  ]
+}

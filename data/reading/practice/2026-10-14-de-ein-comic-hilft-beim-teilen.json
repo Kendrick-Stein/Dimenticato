@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-de-ein-comic-hilft-beim-teilen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s8",
+      "start": 69,
+      "answer": "veröffentlicht",
+      "options": [
+        "veröffentliche",
+        "veröffentlicht",
+        "veröffentlichen",
+        "veröffentlichte"
+      ],
+      "explanation": "hat后要用过去分词veröffentlicht，表示“已经发布”；其余选项是限定动词或不定式。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s9",
+      "start": 3,
+      "answer": "zeigt",
+      "options": [
+        "zeigen",
+        "gezeigt",
+        "zeigt",
+        "zeigst"
+      ],
+      "explanation": "主语Er是第三人称单数，独立谓语用zeigt；gezeigt需要助动词。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s10",
+      "start": 89,
+      "answer": "helfen",
+      "options": [
+        "hilfst",
+        "geholfen",
+        "hilft",
+        "helfen"
+      ],
+      "explanation": "句末können与不定式helfen构成情态动词结构，意为“可以帮助”。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 96,
+      "answer": "suchen",
+      "options": [
+        "suchen",
+        "sucht",
+        "suchte",
+        "gesucht"
+      ],
+      "explanation": "können后使用不定式suchen，表示“可以寻找”；sucht与suchte不是这里需要的形式。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 10,
+      "answer": "hilft",
+      "options": [
+        "helfen",
+        "hilfst",
+        "hilft",
+        "geholfen"
+      ],
+      "explanation": "主语Der Comic为第三人称单数，helfen的相应现在时是不规则的hilft。"
+    }
+  ]
+}

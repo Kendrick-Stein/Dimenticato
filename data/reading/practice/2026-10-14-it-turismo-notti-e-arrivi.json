@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-it-turismo-notti-e-arrivi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-turismo-notti-e-arrivi-01",
+      "start": 54,
+      "answer": "arrivi",
+      "options": [
+        "arrivo",
+        "arrivare",
+        "arrivata",
+        "arrivi"
+      ],
+      "explanation": "gli后需阳性复数名词arrivi，指抵达次数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-turismo-notti-e-arrivi-02",
+      "start": 62,
+      "answer": "trimestre",
+      "options": [
+        "trimestrale",
+        "trimestralmente",
+        "trimestre",
+        "trimestri"
+      ],
+      "explanation": "secondo修饰单数名词trimestre；其他选项为复数、形容词或副词。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-turismo-notti-e-arrivi-03",
+      "start": 125,
+      "answer": "presenze",
+      "options": [
+        "presente",
+        "presenze",
+        "presenza",
+        "presentare"
+      ],
+      "explanation": "milioni di presenze指住宿人夜数，使用阴性复数；其余词形或词义不符合。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-turismo-notti-e-arrivi-06",
+      "start": 3,
+      "answer": "confronto",
+      "options": [
+        "confronto",
+        "confronti",
+        "confrontare",
+        "confrontata"
+      ],
+      "explanation": "il后使用单数名词confronto“比较”，与riguarda呼应。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-turismo-notti-e-arrivi-10",
+      "start": 17,
+      "answer": "alloggio",
+      "options": [
+        "alloggiare",
+        "alloggiata",
+        "alloggiavano",
+        "alloggio"
+      ],
+      "explanation": "tipo di alloggio表示住宿类型，alloggio是名词；其他均为动词形式。"
+    }
+  ]
+}

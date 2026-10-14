@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-fr-les-visiteurs-du-patrimoine",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-les-visiteurs-du-patrimoine-01",
+      "start": 72,
+      "answer": "résultats",
+      "options": [
+        "résultat",
+        "résulter",
+        "résultats",
+        "résultant"
+      ],
+      "explanation": "按原文恢复词形：les principaux 要求阳性复数名词 résultats（结果）；其余形态不合这一名词短语。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-les-visiteurs-du-patrimoine-02",
+      "start": 97,
+      "answer": "protègent",
+      "options": [
+        "protéger",
+        "protégez",
+        "protégeons",
+        "protègent"
+      ],
+      "explanation": "按原文恢复词形：关系代词 qui 指复数 dispositifs，因此用第三人称复数 protègent（保护）；其余人称或不定式不合主语。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-les-visiteurs-du-patrimoine-03",
+      "start": 53,
+      "answer": "estimations",
+      "options": [
+        "estimations",
+        "estimation",
+        "estimer",
+        "estimé"
+      ],
+      "explanation": "按原文恢复词形：des 后此处需要复数名词 estimations（估计数据）；其余形态不合。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-les-visiteurs-du-patrimoine-06",
+      "start": 80,
+      "answer": "entrées",
+      "options": [
+        "entrée",
+        "entrées",
+        "entrer",
+        "entré"
+      ],
+      "explanation": "按原文恢复词形：millions d’ 后此处为可数名词复数 entrées（入场人次）；其余形态不合语法。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-les-visiteurs-du-patrimoine-10",
+      "start": 14,
+      "answer": "étrangers",
+      "options": [
+        "étrangère",
+        "étrangères",
+        "étrangers",
+        "étranger"
+      ],
+      "explanation": "按原文恢复词形：touristes 本身可指男性或女性；本句后文 ils 表明使用阳性复数，因此形容词为 étrangers（外国的）；其余词形性数不一致。"
+    }
+  ]
+}

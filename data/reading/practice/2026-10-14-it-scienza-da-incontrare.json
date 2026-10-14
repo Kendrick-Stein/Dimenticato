@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-it-scienza-da-incontrare",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-scienza-da-incontrare-01",
+      "start": 49,
+      "answer": "programma",
+      "options": [
+        "programmi",
+        "programmare",
+        "programmato",
+        "programma"
+      ],
+      "explanation": "programma在il suo之后为阳性单数名词“活动安排”；其他选项为复数、动词原形或分词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-scienza-da-incontrare-02",
+      "start": 34,
+      "answer": "previsti",
+      "options": [
+        "previste",
+        "prevedere",
+        "previsti",
+        "previsto"
+      ],
+      "explanation": "previsti与阳性复数gli appuntamenti一致，表示“预定的”。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-scienza-da-incontrare-03",
+      "start": 38,
+      "answer": "laboratori",
+      "options": [
+        "lavorare",
+        "laboratori",
+        "laboriose",
+        "laborioso"
+      ],
+      "explanation": "laboratori为阳性复数“实验工作坊”；其余为形容词或动词，没有此处需要的名词意义，均不符合原文。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-scienza-da-incontrare-04",
+      "start": 36,
+      "answer": "incontro",
+      "options": [
+        "incontro",
+        "incontri",
+        "incontrare",
+        "incontrata"
+      ],
+      "explanation": "un要求单数名词incontro，表示公众与研究人员的相遇。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-scienza-da-incontrare-08",
+      "start": 53,
+      "answer": "domande",
+      "options": [
+        "domandava",
+        "domandare",
+        "domandato",
+        "domande"
+      ],
+      "explanation": "fare domande表示提问；此处需复数名词domande，其余选项为动词变位、原形或分词，不合结构。"
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-en-people-and-places-for-young-people",
+  "storyId": "en-2026-09-26-youth-workers-community",
+  "lang": "en",
+  "date": "2026-10-14",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "青年服务",
+    "社区空间",
+    "面对面交流"
+  ],
+  "title": "People and places for young people",
+  "titleZh": "年轻人需要的人与空间",
+  "summaryZh": "青年服务不只是建一栋楼。英国9月26日的公告把专业人员、社区空间和青年参与联系起来，并保留实施时间、资金细节尚待公布的限制。",
+  "level": "B2",
+  "levelReason": "连接公共服务设计、资源分配与实施条件；包含定语从句、名词化、比较与限定语，读者须区分短期安排和长期目标。 编辑估计，非认证CEFR测评。",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "1000 new youth workers to help reduce the risk of unemployment",
+    "url": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment",
+    "publishedAt": "2026-09-26",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Adapted from Department for Digital, Culture, Media and Sport / GOV.UK, “1000 new youth workers to help reduce the risk of unemployment”, published 2026-09-26. Contains public sector information licensed under the Open Government Licence v3.0. Dimenticato adapted the English, translated it into Chinese and added teaching notes and exercises. No official endorsement is implied.",
+  "adaptation": "英语机构原文的同语言分级改写及逐句中文翻译；排除图片、标识、直接引语及链接第三方作品。区分公告时的计划、目标与已经实现的结果。口语问题及表达为教学补充。原语依据机构署名与英语编辑语境，不认证个人母语。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A place to meet can matter to a young person, but the people available there are also central to the government’s plans for youth services in England.",
+      "zh": "一个可以相聚的地方可能对年轻人很重要，但在那里提供服务的人，也是政府关于英格兰青年服务计划的核心。",
+      "glosses": [
+        {
+          "surface": "central",
+          "lemma": "central",
+          "zh": "核心的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "On 26 September 2026, the Department for Digital, Culture, Media and Sport announced support for the training and employment of 1,000 new youth workers.",
+      "zh": "2026年9月26日，英国数字、文化、媒体和体育部宣布支持培训并聘用1000名新的青年工作者。",
+      "glosses": [
+        {
+          "surface": "employment",
+          "lemma": "employment",
+          "zh": "聘用；就业",
+          "note": "不可数名词，与training并列。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Their role will extend beyond organising activities: they will offer specialised support outside the home and school, working both in community spaces and through outreach.",
+      "zh": "他们的职责不限于组织活动：他们将在家庭和学校之外提供专业支持，既在社区空间工作，也开展外展服务。",
+      "glosses": [
+        {
+          "surface": "outreach",
+          "lemma": "outreach",
+          "zh": "外展服务",
+          "note": "主动联系和服务可能难以接触常规服务的人。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The announcement covers young people aged 11 and above, including those who may find it particularly difficult to access help through existing services.",
+      "zh": "公告涵盖11岁及以上的年轻人，包括那些可能特别难以通过现有服务获得帮助的人。",
+      "glosses": [
+        {
+          "surface": "access",
+          "lemma": "access",
+          "zh": "获得；使用"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "One priority is reaching those at greatest risk of becoming NEET, an abbreviation for not being in education, employment or training.",
+      "zh": "优先事项之一是接触最有可能成为NEET的人；NEET是“不在接受教育、没有就业、也未参加培训”的缩写。",
+      "glosses": [
+        {
+          "surface": "abbreviation",
+          "lemma": "abbreviation",
+          "zh": "缩写"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Rather than working in isolation, the specialist workers will collaborate with teams responsible for education, training, health and crime prevention.",
+      "zh": "这些专业工作者不会孤立开展工作，而将与负责教育、培训、健康和犯罪预防的团队协作。",
+      "glosses": [
+        {
+          "surface": "collaborate",
+          "lemma": "collaborate",
+          "zh": "协作",
+          "note": "will后接动词原形。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The activities described include sport, arts and mentoring, connecting opportunities to join in with access to wider youth services and support.",
+      "zh": "公告提到的活动包括体育、艺术和指导辅导，把参与活动的机会与获得更广泛的青年服务和支持联系起来。",
+      "glosses": [
+        {
+          "surface": "mentoring",
+          "lemma": "mentoring",
+          "zh": "指导辅导"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "However, the announcement does not mean that all 1,000 workers have already been recruited or are available in local communities.",
+      "zh": "不过，这份公告不意味着1000名工作者都已经招聘到位，或已在当地社区提供服务。",
+      "glosses": [
+        {
+          "surface": "recruited",
+          "lemma": "recruit",
+          "zh": "招聘",
+          "note": "have been后用过去分词，构成完成时被动语态。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The first workers are expected to be in position by spring 2027, making the recruitment drive an initial step in rebuilding the workforce.",
+      "zh": "首批工作者预计于2027年春季前到岗，因此此次招聘行动是重建这支队伍的起步。",
+      "glosses": [
+        {
+          "surface": "workforce",
+          "lemma": "workforce",
+          "zh": "工作人员队伍"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "It is also intended to contribute to a much longer-term ambition: giving 500,000 more young people access to a trusted adult by 2035.",
+      "zh": "这也旨在推动一个更长期的目标：到2035年，让另外50万名年轻人能够获得一位可信赖成年人的支持。",
+      "glosses": [
+        {
+          "surface": "trusted",
+          "lemma": "trust",
+          "zh": "可信赖的"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Alongside the staffing plans, a £450 million programme is intended to build, improve and expand youth facilities in England’s most underserved areas.",
+      "zh": "在人员安排之外，一项4.5亿英镑的计划旨在英格兰服务最不足的地区建设、改善和扩建青年设施。",
+      "glosses": [
+        {
+          "surface": "facilities",
+          "lemma": "facility",
+          "zh": "设施",
+          "note": "复数形式；facility变y为ies。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "This Youth Matters Fund will support spaces where young people can connect, as well as youth work and in-person activities such as music, sport and volunteering.",
+      "zh": "这项Youth Matters基金将支持供年轻人建立联系的空间，也支持青年工作以及音乐、体育和志愿服务等线下活动。",
+      "glosses": [
+        {
+          "surface": "in-person",
+          "lemma": "in-person",
+          "zh": "面对面的；线下的"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "At the time of the announcement, applications were due to open soon; the release did not provide a completed list of funded local projects.",
+      "zh": "在公告发布时，申请预计即将开放；公告没有提供一份已经确定资助的地方项目完整名单。",
+      "glosses": [
+        {
+          "surface": "applications",
+          "lemma": "application",
+          "zh": "申请",
+          "note": "复数名词，与were搭配。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "The programme includes construction, renovation and equipment, but its scope also covers programme management and support, rather than buildings alone.",
+      "zh": "该计划包括建设、翻修和设备，但范围也涵盖项目管理及支持，并不只涉及建筑。",
+      "glosses": [
+        {
+          "surface": "renovation",
+          "lemma": "renovation",
+          "zh": "翻修"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "It aims to help narrow the participation gap between disadvantaged young people and their peers in activities that enrich everyday life.",
+      "zh": "该计划旨在帮助缩小处境不利年轻人与其同龄人在参与丰富日常生活的活动方面的差距。",
+      "glosses": [
+        {
+          "surface": "participation",
+          "lemma": "participation",
+          "zh": "参与",
+          "note": "不可数名词，participation gap指参与机会或程度的差距。"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "These measures form part of the national Youth Matters strategy, which was launched in December 2025 after consultation with 14,000 young people.",
+      "zh": "这些措施属于全国Youth Matters战略的一部分；该战略在咨询1.4万名年轻人后，于2025年12月推出。",
+      "glosses": [
+        {
+          "surface": "consultation",
+          "lemma": "consultation",
+          "zh": "咨询；征求意见"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "The consultation included people aged 10 to 21, extending to age 25 for those with special educational needs and disabilities.",
+      "zh": "咨询对象包括10至21岁的人；对于有特殊教育需要和残障的人，年龄上限扩展至25岁。",
+      "glosses": [
+        {
+          "surface": "extending",
+          "lemma": "extend",
+          "zh": "延伸；扩展"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "According to the department’s account, the survey highlighted a lack of safe, supportive environments and communities to belong to for many young people.",
+      "zh": "根据该部门的说明，调查凸显出许多年轻人缺乏安全、支持性的环境，以及能够产生归属感的社区。",
+      "glosses": [
+        {
+          "surface": "supportive",
+          "lemma": "supportive",
+          "zh": "提供支持的"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "It also described increasing reliance on online interaction where opportunities to meet face to face were missing, linking the strategy to everyday social connection.",
+      "zh": "调查还描述了在缺少面对面见面机会的情况下，对线上互动的依赖日益增加，这使该战略与日常社会联系相关联。",
+      "glosses": [
+        {
+          "surface": "reliance",
+          "lemma": "reliance",
+          "zh": "依赖"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "The government wants local communities to have greater influence, with young people helping to design services around the skills and opportunities they need.",
+      "zh": "政府希望当地社区拥有更大影响力，并让年轻人帮助根据自身需要的技能和机会设计服务。",
+      "glosses": [
+        {
+          "surface": "influence",
+          "lemma": "influence",
+          "zh": "影响力"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "The release places the programme alongside planned social-media restrictions and other youth support, including the Youth Guarantee for people aged 18 to 24.",
+      "zh": "公告把该计划与拟议的社交媒体限制及其他青年支持措施并列介绍，其中包括面向18至24岁人群的Youth Guarantee。",
+      "glosses": [
+        {
+          "surface": "restrictions",
+          "lemma": "restriction",
+          "zh": "限制措施"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "That separate initiative is designed to provide access to education, training, an apprenticeship or help finding a job, rather than replacing the community work described here.",
+      "zh": "那项独立举措旨在提供接受教育、培训、学徒培训或求职帮助的机会，而不是取代此处介绍的社区工作。",
+      "glosses": [
+        {
+          "surface": "apprenticeship",
+          "lemma": "apprenticeship",
+          "zh": "学徒培训"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Further funding and delivery details remain subject to work with the youth services sector and the normal programme development processes, the department says.",
+      "zh": "该部门表示，更多资金与实施细节仍需通过与青年服务行业合作及正常项目开发流程来确定。",
+      "glosses": [
+        {
+          "surface": "delivery",
+          "lemma": "delivery",
+          "zh": "实施"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "employment",
+        "lemma": "employment",
+        "zh": "聘用；就业",
+        "sentenceId": "s2",
+        "note": "不可数名词，与training并列。"
+      },
+      {
+        "text": "collaborate",
+        "lemma": "collaborate",
+        "zh": "协作",
+        "sentenceId": "s6",
+        "note": "will后接动词原形。"
+      },
+      {
+        "text": "recruited",
+        "lemma": "recruit",
+        "zh": "招聘",
+        "sentenceId": "s8",
+        "note": "have been后用过去分词，构成完成时被动语态。"
+      },
+      {
+        "text": "facilities",
+        "lemma": "facility",
+        "zh": "设施",
+        "sentenceId": "s11",
+        "note": "复数形式；facility变y为ies。"
+      },
+      {
+        "text": "applications",
+        "lemma": "application",
+        "zh": "申请",
+        "sentenceId": "s13",
+        "note": "复数名词，与were搭配。"
+      },
+      {
+        "text": "participation",
+        "lemma": "participation",
+        "zh": "参与",
+        "sentenceId": "s15",
+        "note": "不可数名词，participation gap指参与机会或程度的差距。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in isolation",
+        "zh": "孤立地",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "in position",
+        "zh": "到岗；就位",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "as well as",
+        "zh": "以及",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "subject to",
+        "zh": "取决于；须经过",
+        "sentenceId": "s23"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "does not mean that…用于区分公告与事实进展；have already been recruited是现在完成时的被动语态。"
+      },
+      {
+        "sentenceId": "s23",
+        "note": "remain subject to说明未决条件；the department says标明信息来源，避免把安排写成确定成果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What makes a community space welcoming to young people?",
+        "zh": "什么能让社区空间受到年轻人欢迎？"
+      },
+      {
+        "text": "How should young people be involved in designing local services?",
+        "zh": "应怎样让年轻人参与设计地方服务？"
+      },
+      {
+        "text": "Why might a building and trained staff need to be planned together?",
+        "zh": "为什么建筑与受过培训的人员可能需要一并规划？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Access depends on both the space and the support available.",
+        "zh": "能否获得服务，既取决于空间，也取决于提供的支持。",
+        "note": "教学补充，用于讨论本文，不是来源引语。"
+      },
+      {
+        "text": "The announcement sets an ambition, but delivery details still matter.",
+        "zh": "公告设定了目标，但实施细节依然重要。",
+        "note": "教学补充，用于讨论本文，不是来源引语。"
+      }
+    ]
+  }
+}

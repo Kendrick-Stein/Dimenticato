@@ -11,7 +11,7 @@ for(const name of fs.readdirSync(path.join(root,'data/reading/practice'))){
  for(const q of d.questions){check(()=>assert.equal(P.grade(q.answer,q.answer),'correct')); for(const x of q.options.filter(x=>x!==q.answer))check(()=>assert.notEqual(P.grade(x,q.answer),'correct')); check(()=>assert.equal(s.submit(q,''),null)); const first=s.submit(q,q.answer);check(()=>assert.equal(s.submit(q,'wrong'),first));}
  s.reset(); check(()=>assert.equal(Object.keys(s.answers).length,0));
  const bad=JSON.parse(JSON.stringify(d));bad.questions[0].answer+='x';check(()=>assert(!P.validate(bad,a)));
- const dup=JSON.parse(JSON.stringify(d));dup.questions[0].options[1]=dup.questions[0].answer;check(()=>assert(!P.validate(dup,a)));
+ const dup=JSON.parse(JSON.stringify(d));const wrongOption=dup.questions[0].options.findIndex(option=>option!==dup.questions[0].answer);dup.questions[0].options[wrongOption]=dup.questions[0].answer;check(()=>assert(!P.validate(dup,a)));
 }
 for(const [input,answer,result] of [['equipe','équipe','accent'],['nähe','Nähe','case'],['mappe','mappa','wrong'],['erreicht','erreichen','wrong'],['harvest','harvests','wrong'],[' lége\u0301r ','légér','correct']])check(()=>assert.equal(P.grade(input,answer),result));
 const w=createWindow();w.Map=Map;w.Set=Set;

@@ -1,0 +1,368 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-en-saving-flag-fen",
+  "storyId": "en-2026-09-13-flag-fen-excavation",
+  "lang": "en",
+  "date": "2026-10-14",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "文化遗产",
+    "考古",
+    "社区志愿服务"
+  ],
+  "title": "Saving the stories beneath Flag Fen",
+  "titleZh": "保存弗拉格芬地下的故事",
+  "summaryZh": "一笔发掘资助把古代木构遗址、环境变化与社区志愿者联系起来。区分保护目标和已经完成的成果。",
+  "level": "B1",
+  "levelReason": "以遗址、威胁、资助、志愿参与为连贯线索，使用因果连接、现在完成时及目标表达；专业词有具体解释。 编辑估计，非认证CEFR测评。",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs and Historic England / GOV.UK",
+    "title": "Funding secured for excavation to unlock secrets of Bronze Age Flag Fen site",
+    "url": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site",
+    "publishedAt": "2026-09-13",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Adapted from Department for Environment, Food & Rural Affairs and Historic England / GOV.UK, “Funding secured for excavation to unlock secrets of Bronze Age Flag Fen site”, published 2026-09-13. Contains public sector information licensed under the Open Government Licence v3.0. Dimenticato adapted the English, translated it into Chinese and added teaching notes and exercises. No official endorsement is implied.",
+  "adaptation": "英语机构原文的同语言分级改写及逐句中文翻译；排除图片、标识、直接引语及链接第三方作品。区分公告时的计划、目标与已经实现的结果。口语问题及表达为教学补充。原语依据机构署名与英语编辑语境，不认证个人母语。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Near Peterborough in Cambridgeshire, an ancient wooden structure is helping people explore life in Bronze Age Britain.",
+      "zh": "在剑桥郡彼得伯勒附近，一座古老的木构遗迹正帮助人们探索青铜时代英国的生活。",
+      "glosses": [
+        {
+          "surface": "ancient",
+          "lemma": "ancient",
+          "zh": "古老的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Flag Fen Archaeology Park contains the remains of a timber causeway and platform that people built about 3,500 years ago.",
+      "zh": "弗拉格芬考古公园保存着约3500年前人们建造的木质通道和平台的遗迹。",
+      "glosses": [
+        {
+          "surface": "remains",
+          "lemma": "remains",
+          "zh": "遗迹",
+          "note": "名词复数形式，指古代结构留下的部分。"
+        },
+        {
+          "surface": "causeway",
+          "lemma": "causeway",
+          "zh": "堤道；高架通道"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "A causeway is a raised route across wet ground, and timber is wood used for building.",
+      "zh": "causeway指穿过湿地的高起通道，timber则指用于建筑的木材。",
+      "glosses": [
+        {
+          "surface": "raised",
+          "lemma": "raise",
+          "zh": "高起的"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Few Bronze Age platforms survive anywhere in the world, making this large and complex site particularly important.",
+      "zh": "世界上现存的青铜时代平台很少，因此这处规模大、结构复杂的遗址尤为重要。",
+      "glosses": [
+        {
+          "surface": "survive",
+          "lemma": "survive",
+          "zh": "保存下来"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "However, the evidence hidden in the ground is becoming harder to protect.",
+      "zh": "然而，隐藏在地下的证据正变得越来越难以保护。",
+      "glosses": [
+        {
+          "surface": "evidence",
+          "lemma": "evidence",
+          "zh": "证据",
+          "note": "不可数名词，指帮助理解历史的遗存。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Changes in groundwater levels and drying peat threaten the old wood and other fragile organic remains.",
+      "zh": "地下水位的变化以及泥炭变干，威胁着古老木材和其他脆弱的有机遗存。",
+      "glosses": [
+        {
+          "surface": "fragile",
+          "lemma": "fragile",
+          "zh": "脆弱的",
+          "note": "形容词，修饰organic remains。"
+        },
+        {
+          "surface": "peat",
+          "lemma": "peat",
+          "zh": "泥炭"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Recent investigations have confirmed that some of these materials are deteriorating.",
+      "zh": "近期调查已确认，其中一些材料正在劣化。",
+      "glosses": [
+        {
+          "surface": "deteriorating",
+          "lemma": "deteriorate",
+          "zh": "劣化；变坏",
+          "note": "与are构成现在进行时。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "The site has been on Historic England’s Heritage at Risk Register since 2012.",
+      "zh": "这处遗址自2012年以来一直列于英格兰历史建筑与古迹委员会的濒危遗产名录。",
+      "glosses": [
+        {
+          "surface": "Register",
+          "lemma": "register",
+          "zh": "名录"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "On 13 September 2026, the government announced funding for a new excavation to uncover and record more of the site’s history.",
+      "zh": "2026年9月13日，政府宣布为一项新的发掘提供资助，以揭示并记录更多遗址历史。",
+      "glosses": [
+        {
+          "surface": "excavation",
+          "lemma": "excavation",
+          "zh": "考古发掘"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The project will receive £700,000 through a heritage service run in partnership by Defra and Historic England.",
+      "zh": "该项目将通过英国环境、食品与农村事务部和英格兰历史建筑与古迹委员会合作的遗产服务获得70万英镑。",
+      "glosses": [
+        {
+          "surface": "partnership",
+          "lemma": "partnership",
+          "zh": "合作关系"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Researchers will investigate a line of wooden posts in the western part of the site.",
+      "zh": "研究人员将调查遗址西部的一排木桩。",
+      "glosses": [
+        {
+          "surface": "posts",
+          "lemma": "post",
+          "zh": "桩；柱",
+          "note": "此处不是邮件或职位；a line of后指一排多根木桩。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "The new records should help explain Flag Fen to visitors now and in the future.",
+      "zh": "新的记录应能帮助现在及未来的游客理解弗拉格芬。",
+      "glosses": [
+        {
+          "surface": "records",
+          "lemma": "record",
+          "zh": "记录"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Local people, university students, young carers and volunteers from earlier surveys will have opportunities to take part.",
+      "zh": "当地居民、大学生、承担照护责任的年轻人，以及曾参与早期调查的志愿者将有机会参加。",
+      "glosses": [
+        {
+          "surface": "volunteers",
+          "lemma": "volunteer",
+          "zh": "志愿者",
+          "note": "复数名词，指自愿参加工作的人。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "They will receive training in stages, with the aim of developing skills to become supervisors and tour leaders.",
+      "zh": "他们将分阶段接受培训，目的是培养成为督导人员和导览员所需的技能。",
+      "glosses": [
+        {
+          "surface": "supervisors",
+          "lemma": "supervisor",
+          "zh": "督导人员"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "The longer-term ambition is to remove Flag Fen from the risk register and strengthen the community’s connection with its past.",
+      "zh": "更长期的愿望是让弗拉格芬退出濒危名录，并加强社区与其历史的联系。",
+      "glosses": [
+        {
+          "surface": "ambition",
+          "lemma": "ambition",
+          "zh": "目标；愿望"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "These are goals for the project, rather than results that the funding announcement shows have already been achieved.",
+      "zh": "这些是项目的目标，而不是资助公告显示已经实现的成果。",
+      "glosses": [
+        {
+          "surface": "achieved",
+          "lemma": "achieve",
+          "zh": "实现"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "The park is also a place for nature to thrive, so its future connects heritage with the surrounding landscape.",
+      "zh": "公园也是让自然繁盛的地方，因此其未来将遗产与周边环境联系起来。",
+      "glosses": [
+        {
+          "surface": "thrive",
+          "lemma": "thrive",
+          "zh": "繁盛"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Developing it as a visitor destination is intended to support the Peterborough area’s economy.",
+      "zh": "将其发展成游客目的地，旨在支持彼得伯勒地区的经济。",
+      "glosses": [
+        {
+          "surface": "destination",
+          "lemma": "destination",
+          "zh": "目的地"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "remains",
+        "lemma": "remains",
+        "zh": "遗迹",
+        "sentenceId": "s2",
+        "note": "名词复数形式，指古代结构留下的部分。"
+      },
+      {
+        "text": "evidence",
+        "lemma": "evidence",
+        "zh": "证据",
+        "sentenceId": "s5",
+        "note": "不可数名词，指帮助理解历史的遗存。"
+      },
+      {
+        "text": "fragile",
+        "lemma": "fragile",
+        "zh": "脆弱的",
+        "sentenceId": "s6",
+        "note": "形容词，修饰organic remains。"
+      },
+      {
+        "text": "deteriorating",
+        "lemma": "deteriorate",
+        "zh": "劣化；变坏",
+        "sentenceId": "s7",
+        "note": "与are构成现在进行时。"
+      },
+      {
+        "text": "posts",
+        "lemma": "post",
+        "zh": "桩；柱",
+        "sentenceId": "s11",
+        "note": "此处不是邮件或职位；a line of后指一排多根木桩。"
+      },
+      {
+        "text": "volunteers",
+        "lemma": "volunteer",
+        "zh": "志愿者",
+        "sentenceId": "s13",
+        "note": "复数名词，指自愿参加工作的人。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "has been on",
+        "zh": "一直列于",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "in partnership",
+        "zh": "以合作方式",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "take part",
+        "zh": "参与",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "with the aim of",
+        "zh": "目的是",
+        "sentenceId": "s14"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "has been…since将2012年以来持续的状态连接到公告时点。"
+      },
+      {
+        "sentenceId": "s14",
+        "note": "with the aim of后用动名词developing，说明培训目的，避免把目标当作已实现的结果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Would you like to volunteer at a local heritage site? Why?",
+        "zh": "你愿意在本地文化遗产地做志愿者吗？为什么？"
+      },
+      {
+        "text": "How can a community learn about a place while helping to protect it?",
+        "zh": "社区怎样在帮助保护一个地方的同时了解它？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would like to help record local history.",
+        "zh": "我想帮助记录本地历史。",
+        "note": "教学补充，用于讨论本文，不是来源引语。"
+      },
+      {
+        "text": "The aim is to protect the site and involve local people.",
+        "zh": "目的是保护遗址，并让当地居民参与。",
+        "note": "教学补充，用于讨论本文，不是来源引语。"
+      }
+    ]
+  }
+}

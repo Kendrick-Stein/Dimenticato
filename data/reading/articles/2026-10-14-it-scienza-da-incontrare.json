@@ -1,0 +1,254 @@
+{
+  "schema": 1,
+  "id": "2026-10-14-it-scienza-da-incontrare",
+  "storyId": "it-2026-09-17-scienza-da-incontrare",
+  "lang": "it",
+  "date": "2026-10-14",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "科学活动",
+    "公众参与",
+    "城市文化"
+  ],
+  "title": "Una serata per incontrare la scienza",
+  "titleZh": "一个与科学相遇的夜晚",
+  "summaryZh": "回看INGV于9月17日公布的研究者之夜计划：公众可以通过实验、提问和历史资料认识地球。这是活动安排的回顾，不是现场成果报道。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以短句回看科普活动计划，采用常用活动与地点词汇，少量未完成过去时配中文辅助。非认证测评。",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "NOTTE EUROPEA DEI RICERCATORI 2026 | Gli appuntamenti dell’INGV per conoscere il nostro pianeta",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/notte-europea-dei-ricercatori-2026-gli-appuntamenti-dell-ingv-per-conoscere-il-nostro-pianeta",
+    "publishedAt": "2026-09-17",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：INGV Ufficio Stampa，《NOTTE EUROPEA DEI RICERCATORI 2026 | Gli appuntamenti dell’INGV per conoscere il nostro pianeta》，2026-09-17；2026-10-14查阅。依据CC BY 4.0使用机构文字，原文及许可链接见上。未使用图片、标志、第三方作品或直接引语。",
+  "adaptation": "Dimenticato依据意大利语机构原文进行同语言节选、重组与难度调整，添加简体中文翻译、语境注释、学习总结及原创口语和练习。保留原始数据及事件时期；不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "it-scienza-da-incontrare-01",
+      "text": "Il 17 settembre 2026 l’INGV ha presentato il suo programma per la Notte Europea dei Ricercatori.",
+      "zh": "2026年9月17日，INGV公布了自己的欧洲研究者之夜活动安排。",
+      "glosses": [
+        {
+          "surface": "programma",
+          "lemma": "programma",
+          "zh": "活动安排"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-02",
+      "text": "Gli appuntamenti principali erano previsti per il 25 e il 26 settembre, in diverse città italiane.",
+      "zh": "主要活动原定于9月25日和26日在意大利多个城市举行。",
+      "glosses": [
+        {
+          "surface": "previsti",
+          "lemma": "prevedere",
+          "zh": "预定的"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-03",
+      "text": "Il programma offriva giochi, visite e laboratori per conoscere meglio il nostro pianeta.",
+      "zh": "活动安排包括游戏、参观和实验工作坊，帮助人们更好地认识我们的星球。",
+      "glosses": [
+        {
+          "surface": "laboratori",
+          "lemma": "laboratorio",
+          "zh": "实验工作坊"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-04",
+      "text": "L’obiettivo era semplice: creare un incontro tra il pubblico e le persone che fanno ricerca.",
+      "zh": "目标很简单：让公众与从事研究的人相遇。",
+      "glosses": [
+        {
+          "surface": "incontro",
+          "lemma": "incontro",
+          "zh": "相遇"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-05",
+      "text": "A Bologna, un’attività spiegava come si muovono le grandi parti della superficie terrestre.",
+      "zh": "在博洛尼亚，一项活动介绍地球表面的大块板块如何移动。",
+      "glosses": [
+        {
+          "surface": "superficie",
+          "lemma": "superficie",
+          "zh": "表面"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-06",
+      "text": "Un’altra proponeva di scoprire come gli strumenti osservano la Terra.",
+      "zh": "另一项活动提议探索仪器如何观测地球。",
+      "glosses": [
+        {
+          "surface": "strumenti",
+          "lemma": "strumento",
+          "zh": "仪器"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-07",
+      "text": "C’erano anche documenti e immagini per parlare dei terremoti del passato.",
+      "zh": "此外还有文献和图片，用于讲述过去的地震。",
+      "glosses": [
+        {
+          "surface": "passato",
+          "lemma": "passato",
+          "zh": "过去"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-08",
+      "text": "Alla Spezia, il programma prevedeva tavoli dove fare domande ai ricercatori e parlare del mare.",
+      "zh": "在拉斯佩齐亚，活动安排了交流桌，让人们向研究人员提问，讨论海洋。",
+      "glosses": [
+        {
+          "surface": "domande",
+          "lemma": "domanda",
+          "zh": "问题"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-09",
+      "text": "I temi comprendevano gli animali e le piante del mare, l’inquinamento e le tecnologie per studiarlo.",
+      "zh": "主题包括海洋动植物、污染以及研究海洋的技术。",
+      "glosses": [
+        {
+          "surface": "inquinamento",
+          "lemma": "inquinamento",
+          "zh": "污染"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-10",
+      "text": "A Roma era previsto un collegamento con la Sala Sismica per vedere i dati in tempo reale.",
+      "zh": "在罗马，原定通过与地震监测室连线，实时查看数据。",
+      "glosses": [
+        {
+          "surface": "collegamento",
+          "lemma": "collegamento",
+          "zh": "连线"
+        }
+      ]
+    },
+    {
+      "id": "it-scienza-da-incontrare-11",
+      "text": "Queste informazioni descrivono il programma annunciato a settembre, non raccontano come si sono svolti gli eventi.",
+      "zh": "这些信息描述的是9月公布的安排，并非报道活动实际如何开展。",
+      "glosses": [
+        {
+          "surface": "annunciato",
+          "lemma": "annunciare",
+          "zh": "公布的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "programma",
+        "zh": "活动安排",
+        "sentenceId": "it-scienza-da-incontrare-01"
+      },
+      {
+        "text": "previsti",
+        "zh": "预定的",
+        "sentenceId": "it-scienza-da-incontrare-02"
+      },
+      {
+        "text": "laboratori",
+        "zh": "实验工作坊",
+        "sentenceId": "it-scienza-da-incontrare-03"
+      },
+      {
+        "text": "incontro",
+        "zh": "相遇",
+        "sentenceId": "it-scienza-da-incontrare-04"
+      },
+      {
+        "text": "domande",
+        "zh": "问题",
+        "sentenceId": "it-scienza-da-incontrare-08"
+      },
+      {
+        "text": "inquinamento",
+        "zh": "污染",
+        "sentenceId": "it-scienza-da-incontrare-09"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "conoscere meglio",
+        "zh": "更好地认识",
+        "sentenceId": "it-scienza-da-incontrare-03"
+      },
+      {
+        "text": "del passato",
+        "zh": "过去的",
+        "sentenceId": "it-scienza-da-incontrare-07"
+      },
+      {
+        "text": "fare domande",
+        "zh": "提问",
+        "sentenceId": "it-scienza-da-incontrare-08"
+      },
+      {
+        "text": "in tempo reale",
+        "zh": "实时",
+        "sentenceId": "it-scienza-da-incontrare-10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-scienza-da-incontrare-04",
+        "note": "用l’obiettivo era＋不定式表达过去的目标。"
+      },
+      {
+        "sentenceId": "it-scienza-da-incontrare-11",
+        "note": "区分已公布的计划与实际发生的结果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quale attività del programma ti interessa di più? Perché?",
+        "zh": "安排中的哪项活动最让你感兴趣？为什么？"
+      },
+      {
+        "text": "Quale domanda vorresti fare a un ricercatore sul mare?",
+        "zh": "你想向研究海洋的科研人员提什么问题？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mi interessa soprattutto il laboratorio sui terremoti.",
+        "zh": "我尤其对地震工作坊感兴趣。"
+      },
+      {
+        "text": "Vorrei sapere come si osserva il mare.",
+        "zh": "我想知道如何观测海洋。"
+      }
+    ]
+  }
+}

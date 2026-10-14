@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-10-14",
+  "language": "de",
+  "missingTiers": [
+    {
+      "tier": "extended",
+      "level": "B2/C1",
+      "reason": "No independent recent source meeting full date, native-language and adaptation-rights requirements was verified. No artificial expansion of the two shorter originals."
+    }
+  ],
+  "checks": [
+    {
+      "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/",
+      "reason": "Most newest reusable German originals already used on October 11–13. AI terms, search changes and AI narratives explicitly excluded as duplicates."
+    },
+    {
+      "url": "https://www.bpb.de/kurz-knapp/taegliche-dosis-politik/582121/gletscherschmelze/",
+      "publishedAt": "2026-10-05",
+      "reason": "Complete accessible German text has no explicit article text licence; bpb FAQ denies domain-wide licence inference. Not adapted."
+    },
+    {
+      "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/574088/digital-wellbeing/",
+      "publishedAt": "2025-04-14",
+      "reason": "CC BY-SA 4.0 verified, but too old for daily current selection."
+    },
+    {
+      "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579546/schueler-id/",
+      "publishedAt": "2026-07-08",
+      "reason": "Outside 90 days; no current slot."
+    },
+    {
+      "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579467/die-erinnerung-an-den-holocaust-hat-sich-immer-wieder-verschiedenen-medienformen-angepasst/",
+      "publishedAt": "2026-07-13",
+      "reason": "93 days old, outside 90-day fallback."
+    },
+    {
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N069_73.html",
+      "reason": "Read attempt returned 403. No full-text/date/precise adaptation-rights verification; did not bypass."
+    },
+    {
+      "url": "https://blog.wikimedia.de/2026/09/30/wikicon-wie-es-der-wikipedia-community-geht/",
+      "reason": "Good recent German community story, but no current explicit text reuse grant verified. Image licence does not cover prose."
+    },
+    {
+      "url": "https://netzpolitik.org/2026/breakpoint-im-gleichschritt-der-cowboystiefel/",
+      "publishedAt": "2026-09-27",
+      "reason": "CC BY-NC-SA 4.0 original text grant verified; excluded because noncommercial scope not established for reusable public site."
+    },
+    {
+      "url": "https://www.boell.de/de/2026/09/23/die-erde-schadstoffe-belasten-unsere-wohnung",
+      "publishedAt": "2026-09-23",
+      "reason": "Explicit article text licence CC BY-NC-ND 4.0 prohibits adaptations."
+    },
+    {
+      "url": "https://www.boell.de/de/2026/09/29/elektrisierend-15-fakten-ueber-strom",
+      "publishedAtPrecision": "2026-09",
+      "rightsEvidence": "https://www.boell.de/sites/default/files/2026-09/boell-fakten_elektrisierend_2026.pdf",
+      "reason": "Booklet imprint page 2 explicitly grants CC BY-SA 4.0, named German authors; visible date only September 2026. URL day not accepted as date evidence. No candidate inserted under schema requiring exact date; no source entry or candidate promoted."
+    },
+    {
+      "url": "https://www.bpb.de/themen/politisches-system/politik-einfach-fuer-alle/573368/einmischen-im-alltag/",
+      "publishedAt": "2025-12-01",
+      "reason": "Everyday topic is suitable but old; a September 2026 credits-page update cannot refresh the chapter."
+    },
+    {
+      "url": "https://irights.info/artikel/urheberrecht-ueberblick-der-beitraege/32896",
+      "publishedAt": "2026-08-26",
+      "reason": "Original says first published at OERinfo; canonical date not independently verified. Broad legal-link digest also not preferred for a new daily long reading. No adaptation."
+    }
+  ]
+}

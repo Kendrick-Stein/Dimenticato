@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-fr-decouvrir-le-patrimoine",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-decouvrir-le-patrimoine-02",
+      "start": 46,
+      "answer": "présentait",
+      "options": [
+        "présentaient",
+        "présenter",
+        "présentait",
+        "présentiez"
+      ],
+      "explanation": "按原文恢复词形：présentait 是 présenter（介绍）的未完成过去时第三人称单数，与主语 le ministère 一致；présentaient 是第三人称复数，présentiez 是第二人称复数，présenter 是不定式。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-decouvrir-le-patrimoine-04",
+      "start": 34,
+      "answer": "photographies",
+      "options": [
+        "photographie",
+        "photographier",
+        "photographié",
+        "photographies"
+      ],
+      "explanation": "按原文恢复词形：des 后这里需要复数名词 photographies（照片）；其余形态不能组成 des … de cathédrales。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-decouvrir-le-patrimoine-05",
+      "start": 18,
+      "answer": "chansons",
+      "options": [
+        "chansons",
+        "chanson",
+        "chanter",
+        "chanté"
+      ],
+      "explanation": "按原文恢复词形：les 后作为主语需要复数名词 chansons（歌曲）；其余形态不合本句语法。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-decouvrir-le-patrimoine-06",
+      "start": 31,
+      "answer": "bénévoles",
+      "options": [
+        "bénévole",
+        "bénévoles",
+        "bénévolat",
+        "bénévolement"
+      ],
+      "explanation": "按原文恢复词形：des 后指人，使用复数 bénévoles（志愿者）；单数、抽象名词及副词均不合此处。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-decouvrir-le-patrimoine-07",
+      "start": 75,
+      "answer": "abîmés",
+      "options": [
+        "abîmé",
+        "abîmée",
+        "abîmés",
+        "abîmer"
+      ],
+      "explanation": "按原文恢复词形：abîmés（受损的）修饰 livres et archives，混合性别复数采用阳性复数；不能用单数或不定式。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-14-en-saving-flag-fen",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s5",
+      "start": 13,
+      "answer": "evidence",
+      "options": [
+        "evident",
+        "evidential",
+        "evidence",
+        "evidently"
+      ],
+      "explanation": "the后需要名词作主语，evidence为不可数名词“证据”；其他三个选项是形容词或副词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 78,
+      "answer": "fragile",
+      "options": [
+        "fragility",
+        "fragile",
+        "fragilely",
+        "fragilities"
+      ],
+      "explanation": "organic remains前需要形容词fragile，表示遗存脆弱；fragility是名词。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 70,
+      "answer": "deteriorating",
+      "options": [
+        "deterioration",
+        "deteriorates",
+        "deteriorating",
+        "deteriorate"
+      ],
+      "explanation": "are后接现在分词deteriorating构成进行时，表示劣化正在发生。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 46,
+      "answer": "posts",
+      "options": [
+        "posting",
+        "posted",
+        "posts",
+        "postage"
+      ],
+      "explanation": "a line of需要表示多根木桩的复数名词posts；posting、posted和postage不表示木桩。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s13",
+      "start": 52,
+      "answer": "volunteers",
+      "options": [
+        "volunteering",
+        "volunteers",
+        "voluntary",
+        "voluntarily"
+      ],
+      "explanation": "与Local people等并列、随后接will，需要表示人的复数名词volunteers；其他项不能表达这些参与者。"
+    }
+  ]
+}

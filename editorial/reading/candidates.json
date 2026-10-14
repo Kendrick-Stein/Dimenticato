@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-13",
+  "collectedAt": "2026-10-14",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -77,8 +77,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 13,
+          "asOf": "2026-10-14",
+          "ageDays": 14,
           "bucket": "within_30_days"
         }
       },
@@ -159,8 +159,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 26,
+          "asOf": "2026-10-14",
+          "ageDays": 27,
           "bucket": "within_30_days"
         }
       },
@@ -241,8 +241,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 28,
+          "asOf": "2026-10-14",
+          "ageDays": 29,
           "bucket": "within_30_days"
         }
       },
@@ -333,8 +333,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-business-innovation-science-and-trade"
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 4,
+          "asOf": "2026-10-14",
+          "ageDays": 5,
           "bucket": "within_30_days"
         }
       },
@@ -424,8 +424,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 4,
+          "asOf": "2026-10-14",
+          "ageDays": 5,
           "bucket": "within_30_days"
         }
       },
@@ -515,8 +515,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency"
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 7,
+          "asOf": "2026-10-14",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
       },
@@ -599,8 +599,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 5,
+          "asOf": "2026-10-14",
+          "ageDays": 6,
           "bucket": "within_30_days"
         }
       },
@@ -683,8 +683,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 5,
+          "asOf": "2026-10-14",
+          "ageDays": 6,
           "bucket": "within_30_days"
         }
       },
@@ -767,8 +767,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 7,
+          "asOf": "2026-10-14",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
       },
@@ -857,8 +857,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 11,
+          "asOf": "2026-10-14",
+          "ageDays": 12,
           "bucket": "within_30_days"
         }
       },
@@ -947,8 +947,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 21,
+          "asOf": "2026-10-14",
+          "ageDays": 22,
           "bucket": "within_30_days"
         }
       },
@@ -1038,8 +1038,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 22,
+          "asOf": "2026-10-14",
+          "ageDays": 23,
           "bucket": "within_30_days"
         }
       },
@@ -1112,8 +1112,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 4,
+          "asOf": "2026-10-14",
+          "ageDays": 5,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1207,8 +1207,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 54,
+          "asOf": "2026-10-14",
+          "ageDays": 55,
           "bucket": "within_90_days"
         }
       },
@@ -1301,8 +1301,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 25,
+          "asOf": "2026-10-14",
+          "ageDays": 26,
           "bucket": "within_30_days"
         }
       },
@@ -1374,8 +1374,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 12,
+          "asOf": "2026-10-14",
+          "ageDays": 13,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1458,8 +1458,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 5,
+          "asOf": "2026-10-14",
+          "ageDays": 6,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1554,8 +1554,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 55,
+          "asOf": "2026-10-14",
+          "ageDays": 56,
           "bucket": "within_90_days"
         }
       },
@@ -1645,8 +1645,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 42,
+          "asOf": "2026-10-14",
+          "ageDays": 43,
           "bucket": "within_90_days"
         }
       },
@@ -1717,8 +1717,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 5,
+          "asOf": "2026-10-14",
+          "ageDays": 6,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1795,8 +1795,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 6,
+          "asOf": "2026-10-14",
+          "ageDays": 7,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1880,8 +1880,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 11,
+          "asOf": "2026-10-14",
+          "ageDays": 12,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1965,8 +1965,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 7,
+          "asOf": "2026-10-14",
+          "ageDays": 8,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2062,8 +2062,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 84,
+          "asOf": "2026-10-14",
+          "ageDays": 85,
           "bucket": "within_90_days"
         }
       },
@@ -2135,8 +2135,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-13",
-          "ageDays": 11,
+          "asOf": "2026-10-14",
+          "ageDays": 12,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2147,6 +2147,1014 @@
         }
       },
       "linkToArticleId": "2026-10-13-en-income-beyond-the-headline"
+    },
+    {
+      "id": "it-2026-09-17-scienza-da-incontrare",
+      "language": "it",
+      "sourceTitle": "NOTTE EUROPEA DEI RICERCATORI 2026 | Gli appuntamenti dell’INGV per conoscere il nostro pianeta",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/notte-europea-dei-ricercatori-2026-gli-appuntamenti-dell-ingv-per-conoscere-il-nostro-pianeta",
+      "sourceName": "INGV Ufficio Stampa",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-09-17",
+      "collectedAt": "2026-10-14",
+      "category": "culture",
+      "topics": [
+        "科学活动",
+        "公众参与",
+        "城市文化"
+      ],
+      "level": "A2",
+      "status": "verified",
+      "editorialNote": "Proposed A2 158-word edition 2026-10-14-it-scienza-da-incontrare; source cleared, article/practice awaiting independent editorial review. Preserve original data/event dates and do not infer completion from event plans.",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-14",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/notte-europea-dei-ricercatori-2026-gli-appuntamenti-dell-ingv-per-conoscere-il-nostro-pianeta",
+          "checkedAt": "2026-10-14",
+          "notes": "Full visible HTML article, metadata, all body sections and footer read through web tool. Linked reports were not needed for selected facts and were not reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible original publication header 2026-09-17; separate data/event dates retained.",
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/notte-europea-dei-ricercatori-2026-gli-appuntamenti-dell-ingv-per-conoscere-il-nostro-pianeta"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Italian INGV press-office programme for its own researchers and activities, institutional first-party narrative with no translator or republication marker.",
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/notte-europea-dei-ricercatori-2026-gli-appuntamenti-dell-ingv-per-conoscere-il-nostro-pianeta",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional publication provenance, not a certificate of personal mother tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Exact article footer explicitly applies CC BY4.0 to INGV-published page content. Legal notice Copyright says personnel supplied information and INGV owns it unless otherwise marked. This is INGV’s own nationwide event programme; no external republication or translation credit found. Only its narrative and own activity descriptions selected, not artwork, logos or third-party material.",
+          "evidenceUrls": [
+            "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/notte-europea-dei-ricercatori-2026-gli-appuntamenti-dell-ingv-per-conoscere-il-nostro-pianeta",
+            "https://www.ingv.it/note-legali",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Institutional Italian article narrative only, with original educational adaptation and Chinese translation.",
+          "exclusions": [
+            "Images, logos, third-party works, linked reports and datasets, verbatim external quotations"
+          ],
+          "attributionRequirements": [
+            "Credit institution, title, source URL and date",
+            "Link CC BY4.0, disclose all changes; no endorsement"
+          ],
+          "basis": "institutional-license-and-article-exception-review",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 27,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 28,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-14-it-scienza-da-incontrare"
+    },
+    {
+      "id": "it-2026-09-14-turismo-notti-e-arrivi",
+      "language": "it",
+      "sourceTitle": "Flussi turistici – II trimestre 2026",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/flussi-turistici-ii-trimestre-2026/",
+      "sourceName": "Istat — Italian society and everyday life",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-09-14",
+      "collectedAt": "2026-10-14",
+      "category": "society",
+      "topics": [
+        "旅游习惯",
+        "住宿",
+        "统计素养"
+      ],
+      "level": "B1",
+      "status": "verified",
+      "editorialNote": "Proposed B1 283-word edition 2026-10-14-it-turismo-notti-e-arrivi; source cleared, article/practice awaiting independent editorial review. Preserve original data/event dates and do not infer completion from event plans.",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-14",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/flussi-turistici-ii-trimestre-2026/",
+          "checkedAt": "2026-10-14",
+          "notes": "Full visible HTML article, metadata, all body sections and footer read through web tool. Linked reports were not needed for selected facts and were not reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible original publication header 2026-09-14; separate data/event dates retained.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/flussi-turistici-ii-trimestre-2026/"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Istat’s own Italian statistical release, Italian reference-period and publication metadata, institutional press contact; no translator or republication marker. English switch exists but selected original is Italian.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/flussi-turistici-ii-trimestre-2026/",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional publication provenance, not a certificate of personal mother tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Istat legal notice Licenza CC-by Creative Commons4.0 explicitly permits modifying and redistributing site content unless otherwise indicated, with attribution/licence/change notice/no endorsement. Full HTML release is Istat institutional statistical narrative, with press contact and no external author, translation or conflicting text-rights notice. Linked report, datasets, logos and media are not reused.",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/flussi-turistici-ii-trimestre-2026/",
+            "https://www.istat.it/note-legali/",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Institutional Italian article narrative only, with original educational adaptation and Chinese translation.",
+          "exclusions": [
+            "Images, logos, third-party works, linked reports and datasets, verbatim external quotations"
+          ],
+          "attributionRequirements": [
+            "Credit institution, title, source URL and date",
+            "Link CC BY4.0, disclose all changes; no endorsement"
+          ],
+          "basis": "institutional-license-and-article-exception-review",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 30,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 28,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-14-it-turismo-notti-e-arrivi"
+    },
+    {
+      "id": "it-2026-09-03-giochi-tra-generazioni",
+      "language": "it",
+      "sourceTitle": "Giochi, un’attività abituale per la maggioranza dei cittadini – Anno 2024",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/giochi-unattivita-abituale-per-la-maggioranza-dei-cittadini/",
+      "sourceName": "Istat — Italian society and everyday life",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-09-03",
+      "collectedAt": "2026-10-14",
+      "category": "culture",
+      "topics": [
+        "休闲生活",
+        "代际差异",
+        "桌游"
+      ],
+      "level": "B2",
+      "status": "verified",
+      "editorialNote": "Proposed B2 514-word edition 2026-10-14-it-giochi-tra-generazioni; source cleared, article/practice awaiting independent editorial review. 41-day fallback chosen for everyday culture breadth; no suitable newer long-form culture release found in inspected registered Istat culture feed. Gambling sections are excluded; focus is ordinary games.",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-14",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/giochi-unattivita-abituale-per-la-maggioranza-dei-cittadini/",
+          "checkedAt": "2026-10-14",
+          "notes": "Full visible HTML article, metadata, all body sections and footer read through web tool. Linked reports were not needed for selected facts and were not reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible original publication header 2026-09-03; separate data/event dates retained.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/giochi-unattivita-abituale-per-la-maggioranza-dei-cittadini/"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Istat’s own Italian statistical release, Italian reference-period and publication metadata, institutional press contact; no translator or republication marker. English switch exists but selected original is Italian.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/giochi-unattivita-abituale-per-la-maggioranza-dei-cittadini/",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional publication provenance, not a certificate of personal mother tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Istat legal notice Licenza CC-by Creative Commons4.0 explicitly permits modifying and redistributing site content unless otherwise indicated, with attribution/licence/change notice/no endorsement. Full HTML release is Istat institutional statistical narrative, with press contact and no external author, translation or conflicting text-rights notice. Linked report, datasets, logos and media are not reused.",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/giochi-unattivita-abituale-per-la-maggioranza-dei-cittadini/",
+            "https://www.istat.it/note-legali/",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Institutional Italian article narrative only, with original educational adaptation and Chinese translation.",
+          "exclusions": [
+            "Images, logos, third-party works, linked reports and datasets, verbatim external quotations"
+          ],
+          "attributionRequirements": [
+            "Credit institution, title, source URL and date",
+            "Link CC BY4.0, disclose all changes; no endorsement"
+          ],
+          "basis": "institutional-license-and-article-exception-review",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 41,
+          "bucket": "within_90_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 28,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-14-it-giochi-tra-generazioni"
+    },
+    {
+      "id": "en-2026-09-29-national-museums-free",
+      "language": "en",
+      "sourceTitle": "National museums to remain free for everyone",
+      "sourceUrl": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-09-29",
+      "collectedAt": "2026-10-14",
+      "category": "culture",
+      "topics": [
+        "博物馆",
+        "文化参与",
+        "免费入馆"
+      ],
+      "level": "A2",
+      "status": "verified",
+      "editorialNote": "A2 tier; 156 body words. Distinct story. Full source/date/publisher/licence checked. Independent article/practice review pending. Metadata only; not publication approval.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-14",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone",
+          "checkedAt": "2026-10-14",
+          "notes": "Complete public web extraction, including article body, source/date, quotations, notes to editors and OGL footer, read. No login/access bypass. Reviewer can refetch canonical URL."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible Published field at lines60–61; source publication date not edition date.",
+          "evidenceUrl": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "GOV.UK From identifies UK institutional provider. English domestic-policy release; no translator or syndicated republication label found. Provider/English editorial context supports institutional-original-language inference.",
+          "evidenceUrl": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Does not certify individual author mother tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Article footer states OGL v3.0 except otherwise stated; GOV.UK terms Using GOV.UK content permits reproduction; official National Archives full indexed licence explicitly permits adaptation, publication and distribution. No conflicting article text notice found.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "scope": "Public-sector institutional narrative and facts only, with source-specific attribution. No source media or external works.",
+          "exclusions": [
+            "All photos, video, logos and other media",
+            "All direct quotations and personal case-study details",
+            "Linked third-party reports and works"
+          ],
+          "attributionRequirements": [
+            "Contains public sector information licensed under the Open Government Licence v3.0.",
+            "Credit institutional provider, source title, original date and canonical URL",
+            "Link licence; identify English adaptation, Chinese translation and teaching additions; no endorsement"
+          ],
+          "licenseRetrievalNote": "Direct canonical OGL open returned403. No retry or bypass. Ordinary official-domain search returned complete indexed OGLv3 text. Article/footer and GOV.UK terms directly available.",
+          "reviewBeforeConversionRequired": true
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone"
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 15,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 28,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-14-en-museums-open-to-everyone"
+    },
+    {
+      "id": "en-2026-09-13-flag-fen-excavation",
+      "language": "en",
+      "sourceTitle": "Funding secured for excavation to unlock secrets of Bronze Age Flag Fen site",
+      "sourceUrl": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site",
+      "sourceName": "Department for Environment, Food & Rural Affairs and Historic England / GOV.UK",
+      "registrySourceId": "govuk-defra-english-news",
+      "sourcePublishedAt": "2026-09-13",
+      "collectedAt": "2026-10-14",
+      "category": "culture",
+      "topics": [
+        "文化遗产",
+        "考古",
+        "社区志愿服务"
+      ],
+      "level": "B1",
+      "status": "verified",
+      "editorialNote": "B1 tier; 296 body words. Distinct story. Full source/date/publisher/licence checked. Independent article/practice review pending. Metadata only; not publication approval.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-14",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site",
+          "checkedAt": "2026-10-14",
+          "notes": "Complete public web extraction, including article body, source/date, quotations, notes to editors and OGL footer, read. No login/access bypass. Reviewer can refetch canonical URL."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible Published field at lines60–61; source publication date not edition date.",
+          "evidenceUrl": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "GOV.UK From identifies UK institutional provider. English domestic-policy release; no translator or syndicated republication label found. Provider/English editorial context supports institutional-original-language inference.",
+          "evidenceUrl": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Does not certify individual author mother tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Article footer states OGL v3.0 except otherwise stated; GOV.UK terms Using GOV.UK content permits reproduction; official National Archives full indexed licence explicitly permits adaptation, publication and distribution. No conflicting article text notice found.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "scope": "Public-sector institutional narrative and facts only, with source-specific attribution. No source media or external works.",
+          "exclusions": [
+            "All photos, video, logos and other media",
+            "All direct quotations and personal case-study details",
+            "Linked third-party reports and works"
+          ],
+          "attributionRequirements": [
+            "Contains public sector information licensed under the Open Government Licence v3.0.",
+            "Credit institutional provider, source title, original date and canonical URL",
+            "Link licence; identify English adaptation, Chinese translation and teaching additions; no endorsement"
+          ],
+          "licenseRetrievalNote": "Direct canonical OGL open returned403. No retry or bypass. Ordinary official-domain search returned complete indexed OGLv3 text. Article/footer and GOV.UK terms directly available.",
+          "reviewBeforeConversionRequired": true
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Environment, Food & Rural Affairs",
+            "Historic England"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site"
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 31,
+          "bucket": "within_90_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 28,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-14-en-saving-flag-fen"
+    },
+    {
+      "id": "en-2026-09-26-youth-workers-community",
+      "language": "en",
+      "sourceTitle": "1000 new youth workers to help reduce the risk of unemployment",
+      "sourceUrl": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-09-26",
+      "collectedAt": "2026-10-14",
+      "category": "society",
+      "topics": [
+        "青年服务",
+        "社区空间",
+        "面对面交流"
+      ],
+      "level": "B2",
+      "status": "verified",
+      "editorialNote": "B2 tier; 524 body words. Distinct story. Full source/date/publisher/licence checked. Independent article/practice review pending. Metadata only; not publication approval.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-14",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment",
+          "checkedAt": "2026-10-14",
+          "notes": "Complete public web extraction, including article body, source/date, quotations, notes to editors and OGL footer, read. No login/access bypass. Reviewer can refetch canonical URL."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible Published field at lines60–61; source publication date not edition date.",
+          "evidenceUrl": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "GOV.UK From identifies UK institutional provider. English domestic-policy release; no translator or syndicated republication label found. Provider/English editorial context supports institutional-original-language inference.",
+          "evidenceUrl": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Does not certify individual author mother tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Article footer states OGL v3.0 except otherwise stated; GOV.UK terms Using GOV.UK content permits reproduction; official National Archives full indexed licence explicitly permits adaptation, publication and distribution. No conflicting article text notice found.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "scope": "Public-sector institutional narrative and facts only, with source-specific attribution. No source media or external works.",
+          "exclusions": [
+            "All photos, video, logos and other media",
+            "All direct quotations and personal case-study details",
+            "Linked third-party reports and works"
+          ],
+          "attributionRequirements": [
+            "Contains public sector information licensed under the Open Government Licence v3.0.",
+            "Credit institutional provider, source title, original date and canonical URL",
+            "Link licence; identify English adaptation, Chinese translation and teaching additions; no endorsement"
+          ],
+          "licenseRetrievalNote": "Direct canonical OGL open returned403. No retry or bypass. Ordinary official-domain search returned complete indexed OGLv3 text. Article/footer and GOV.UK terms directly available.",
+          "reviewBeforeConversionRequired": true
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment"
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 18,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 28,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-14-en-people-and-places-for-young-people"
+    },
+    {
+      "id": "fr-2026-09-16-regional-heritage-days",
+      "language": "fr",
+      "sourceTitle": "Retrouvez les Journées européennes du patrimoine dans vos régions",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/retrouvez-les-journees-europeennes-du-patrimoine-dans-vos-regions",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-09-16",
+      "collectedAt": "2026-10-14",
+      "category": "culture",
+      "topics": [
+        "地方文化",
+        "文化遗产",
+        "动手体验"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "独立A2档；正文161词。编辑估计 A2：具体地点与可见活动，简短句、常见词，主要用未完成过去时回顾活动安排；新词附语境注释。非认证 CEFR 测评。 保留原文日期，事件、计划及成果不混淆。 口语角度：你想探索自己所在地区的哪个地方？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-14",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/retrouvez-les-journees-europeennes-du-patrimoine-dans-vos-regions",
+          "checkedAt": "2026-10-14",
+          "notes": "Full visible main article, date, institutional origin, media credits and linked-work boundaries inspected. No linked report or external programme text adapted."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/retrouvez-les-journees-europeennes-du-patrimoine-dans-vos-regions",
+          "evidence": "Visible publication header: 2026-09-16. Event/data dates remain separate."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/retrouvez-les-journees-europeennes-du-patrimoine-dans-vos-regions",
+          "additionalEvidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "author": "Ministère de la Culture",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Official French editorial page produced by the ministry editorial service named in legal notice I.4; no translation, syndication or external text-author credit. The French canonical page differs from the separately described automatic translation service. ",
+          "caveat": "Institutional provenance supports French-original editorial publication, not proof of an individual author’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidence": "Legal notice II.4.3.1(a) explicitly licenses ministry-produced text under CC BY-SA 3.0 FR; II.4.3.2 excludes automatic coverage of partner works. This article is institutional editorial text. CC deed explicitly permits sharing and adaptation; translations and learning materials retain ShareAlike.",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+            "https://www.culture.gouv.fr/actualites/retrouvez-les-journees-europeennes-du-patrimoine-dans-vos-regions"
+          ],
+          "scope": "Ministry-owned article narrative and official ministry programme explanations only.",
+          "exclusions": [
+            "All images, photographers’ captions, logos and media",
+            "Linked external programmes, reports, books and third-party works",
+            "External interviewee quotations and separately credited partner prose"
+          ],
+          "attributionRequirements": [
+            "Credit ministry, original title, date and source URL",
+            "Credit named official for interview paraphrase where applicable",
+            "Link CC BY-SA 3.0 FR",
+            "Disclose simplification, Chinese translation and added exercises; no endorsement",
+            "Release adaptation, translation and companion under CC BY-SA 3.0 FR"
+          ],
+          "shareAlikeRequired": true,
+          "reviewBeforeConversionRequired": false
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Ministère de la Culture"
+          ],
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/retrouvez-les-journees-europeennes-du-patrimoine-dans-vos-regions",
+          "institutionUrl": "https://www.culture.gouv.fr/"
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 28,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 28,
+          "checkedAt": "2026-10-14",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-14-fr-decouvrir-le-patrimoine"
+    },
+    {
+      "id": "fr-2026-10-13-cultural-holidays",
+      "language": "fr",
+      "sourceTitle": "Les Vacances culturelles, un « véritable outil de démocratie culturelle »",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/les-vacances-culturelles-un-veritable-outil-de-democratie-culturelle",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-13",
+      "collectedAt": "2026-10-14",
+      "category": "education",
+      "topics": [
+        "文化教育",
+        "假期活动",
+        "地方合作"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "独立B2档；正文549词。编辑估计 B2：约500至700词的政策解释，涉及文化民主、地域差异与公共政策目标，包含关系从句、让步、因果与名词化表达；保留目标与已证实成果的区别。非认证 CEFR 测评。 保留原文日期，事件、计划及成果不混淆。 口语角度：怎样让不外出度假的年轻人也能参与文化活动？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-14",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/les-vacances-culturelles-un-veritable-outil-de-democratie-culturelle",
+          "checkedAt": "2026-10-14",
+          "notes": "Full visible main article, date, institutional origin, media credits and linked-work boundaries inspected. No linked report or external programme text adapted."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/les-vacances-culturelles-un-veritable-outil-de-democratie-culturelle",
+          "evidence": "Visible publication header: 2026-10-13. Event/data dates remain separate."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/les-vacances-culturelles-un-veritable-outil-de-democratie-culturelle",
+          "additionalEvidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "author": "Ministère de la Culture / Isabelle Chardonnier",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Official French editorial page produced by the ministry editorial service named in legal notice I.4; no translation, syndication or external text-author credit. The French canonical page differs from the separately described automatic translation service. This is the ministry’s own interview with its own director general Isabelle Chardonnier, identified as a ministry official on the page; institutional programme explanations are paraphrased and attributed, not external interviewee testimony. ",
+          "caveat": "Institutional provenance supports French-original editorial publication, not proof of an individual author’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidence": "Legal notice II.4.3.1(a) explicitly licenses ministry-produced text under CC BY-SA 3.0 FR; II.4.3.2 excludes automatic coverage of partner works. This article is institutional editorial text. This is the ministry’s own interview with its own director general Isabelle Chardonnier, identified as a ministry official on the page; institutional programme explanations are paraphrased and attributed, not external interviewee testimony. CC deed explicitly permits sharing and adaptation; translations and learning materials retain ShareAlike.",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+            "https://www.culture.gouv.fr/actualites/les-vacances-culturelles-un-veritable-outil-de-democratie-culturelle"
+          ],
+          "scope": "Ministry-owned article narrative and official ministry programme explanations only.",
+          "exclusions": [
+            "All images, photographers’ captions, logos and media",
+            "Linked external programmes, reports, books and third-party works",
+            "External interviewee quotations and separately credited partner prose"
+          ],
+          "attributionRequirements": [
+            "Credit ministry, original title, date and source URL",
+            "Credit named official for interview paraphrase where applicable",
+            "Link CC BY-SA 3.0 FR",
+            "Disclose simplification, Chinese translation and added exercises; no endorsement",
+            "Release adaptation, translation and companion under CC BY-SA 3.0 FR"
+          ],
+          "shareAlikeRequired": true,
+          "reviewBeforeConversionRequired": false
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Ministère de la Culture"
+          ],
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/les-vacances-culturelles-un-veritable-outil-de-democratie-culturelle",
+          "institutionUrl": "https://www.culture.gouv.fr/"
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 28,
+          "checkedAt": "2026-10-14",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-14-fr-des-vacances-pour-creer"
+    },
+    {
+      "id": "fr-2026-09-11-patrimostat-2025",
+      "language": "fr",
+      "sourceTitle": "Patrimoine : la fréquentation se stabilise en 2025",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/patrimoine-la-frequentation-se-stabilise-en-2025",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-09-11",
+      "collectedAt": "2026-10-14",
+      "category": "society",
+      "topics": [
+        "博物馆",
+        "文化参与",
+        "生态转型"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "独立B1档；正文287词。编辑估计 B1：围绕参观经历连接统计比较与原因，保留初步估计、数据年份及百分点的区别；专业词汇均有解释。非认证 CEFR 测评。 33天来源作为90天内fallback，30天内可用独立故事已用于其他档。出版年2026与数据年2025/2024分开；保持初步估计，百分点不同于百分比。 口语角度：什么会让你想参观博物馆？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-14",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/patrimoine-la-frequentation-se-stabilise-en-2025",
+          "checkedAt": "2026-10-14",
+          "notes": "Full visible main article, date, institutional origin, media credits and linked-work boundaries inspected. No linked report or external programme text adapted."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/patrimoine-la-frequentation-se-stabilise-en-2025",
+          "evidence": "Visible publication header: 2026-09-11. Event/data dates remain separate."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/patrimoine-la-frequentation-se-stabilise-en-2025",
+          "additionalEvidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "author": "Ministère de la Culture",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Official French editorial page produced by the ministry editorial service named in legal notice I.4; no translation, syndication or external text-author credit. The French canonical page differs from the separately described automatic translation service. ",
+          "caveat": "Institutional provenance supports French-original editorial publication, not proof of an individual author’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidence": "Legal notice II.4.3.1(a) explicitly licenses ministry-produced text under CC BY-SA 3.0 FR; II.4.3.2 excludes automatic coverage of partner works. This article is institutional editorial text. CC deed explicitly permits sharing and adaptation; translations and learning materials retain ShareAlike.",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+            "https://www.culture.gouv.fr/actualites/patrimoine-la-frequentation-se-stabilise-en-2025"
+          ],
+          "scope": "Ministry-owned article narrative and official ministry programme explanations only.",
+          "exclusions": [
+            "All images, photographers’ captions, logos and media",
+            "Linked external programmes, reports, books and third-party works",
+            "External interviewee quotations and separately credited partner prose"
+          ],
+          "attributionRequirements": [
+            "Credit ministry, original title, date and source URL",
+            "Credit named official for interview paraphrase where applicable",
+            "Link CC BY-SA 3.0 FR",
+            "Disclose simplification, Chinese translation and added exercises; no endorsement",
+            "Release adaptation, translation and companion under CC BY-SA 3.0 FR"
+          ],
+          "shareAlikeRequired": true,
+          "reviewBeforeConversionRequired": false
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Ministère de la Culture"
+          ],
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/patrimoine-la-frequentation-se-stabilise-en-2025",
+          "institutionUrl": "https://www.culture.gouv.fr/"
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 33,
+          "bucket": "within_90_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 28,
+          "checkedAt": "2026-10-14",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-14-fr-les-visiteurs-du-patrimoine"
+    },
+    {
+      "id": "fr-2026-09-09-culture-handicap-employment",
+      "language": "fr",
+      "sourceTitle": "Culture et handicap : 17 recommandations pour l’accès à l’emploi",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/culture-et-handicap-17-recommandations-pour-l-acces-a-l-emploi",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-09-09",
+      "collectedAt": "2026-10-14",
+      "category": "work-economy",
+      "topics": [
+        "文化就业",
+        "无障碍",
+        "培训"
+      ],
+      "level": "A2",
+      "priority": 2,
+      "status": "collected",
+      "editorialNote": "额外储备线索，35天。考虑A2 150–220词，仅限文化部导语中报告发布及职业障碍概览；外部记者Laetitia Bernard的采访回答不可自动继承许可。完整页面已读，但可用机构叙述能否支撑字数及统计口径仍待核验；不改写、不进入公开目录。口语角度：文化职业培训与场所怎样更容易进入？",
+      "verification": {
+        "workflowStage": "discovered",
+        "checkedAt": "2026-10-14",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/culture-et-handicap-17-recommandations-pour-l-acces-a-l-emploi",
+          "checkedAt": "2026-10-14",
+          "notes": "Full page read; external interviewee answers require separate rights assessment. Institutional introduction only may be suitable; not cleared."
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 35,
+          "bucket": "within_90_days"
+        }
+      }
+    },
+    {
+      "id": "de-2026-08-19-cultural-heritage-access",
+      "language": "de",
+      "sourceTitle": "„Zugang gestalten!“ vom 30. September – 02. Oktober 2026 in der Staatsbibliothek zu Berlin",
+      "sourceUrl": "https://irights.info/artikel/zugang-gestalten-vom-30-september-02-oktober-2026-in-der-staatsbibliothek-zu-berlin/32890",
+      "sourceName": "iRights.info — iRights e.V.",
+      "registrySourceId": "irights-german-culture",
+      "sourcePublishedAt": "2026-08-19",
+      "collectedAt": "2026-10-14",
+      "category": "culture",
+      "topics": [
+        "文化遗产",
+        "历史记忆",
+        "资料开放"
+      ],
+      "level": "B1",
+      "status": "verified",
+      "editorialNote": "B1 standard, 292 words. August 19 conference announcement, explicitly retrospective; no assertion event took place or produced conclusions. Focus on historical sources and cultural memory, not expired registration promotion. Speaking angle: museums framing history versus enabling independent judgments. Awaiting independent article/practice review; not ready for publication.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-14",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://irights.info/artikel/zugang-gestalten-vom-30-september-02-oktober-2026-in-der-staatsbibliothek-zu-berlin/32890",
+          "checkedAt": "2026-10-14",
+          "notes": "Complete public article body and article footer read; web extraction retained in private artifact evidence/source-pages.json. No login or access-control bypass."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://irights.info/artikel/zugang-gestalten-vom-30-september-02-oktober-2026-in-der-staatsbibliothek-zu-berlin/32890",
+          "evidence": "19. August 2026, article metadata immediately before Redaktion iRights.info. Event date 30 September–2 October is not the source publication date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://irights.info/artikel/zugang-gestalten-vom-30-september-02-oktober-2026-in-der-staatsbibliothek-zu-berlin/32890",
+          "additionalEvidenceUrls": [
+            "https://irights.info/impressum-2"
+          ],
+          "author": "Redaktion iRights.info",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Own German announcement by Redaktion iRights.info for a conference whose partners include iRights e.V.; German editorial service and publisher in Berlin, no translation credit.",
+          "caveat": "Institutional German-original provenance, not a claim about author mother tongue."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "site-policy-and-article-footer",
+          "evidenceUrls": [
+            "https://irights.info/artikel/zugang-gestalten-vom-30-september-02-oktober-2026-in-der-staatsbibliothek-zu-berlin/32890",
+            "https://irights.info/impressum-2",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "evidence": "Impressum Hinweise assigns original site content CC BY 4.0; article footer confirms same grant except where otherwise stated. No conflicting text licence. Separate image credit excluded.",
+          "scope": "Original article editorial prose only. Translation, simplification and public redistribution with attribution, licence link and modification disclosure.",
+          "exclusions": [
+            "Images and comic contents",
+            "Third-party quotations and linked works",
+            "Logos, media, comments and donations section"
+          ],
+          "shareAlikeRequired": false,
+          "attributionRequirements": [
+            "Credit Redaktion iRights.info and iRights.info",
+            "Retain source title, date, source URL and CC BY 4.0 link",
+            "Disclose simplification, Chinese translation and teaching additions; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 37,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 56,
+          "bucket": "within_90_days"
+        }
+      },
+      "linkToArticleId": "2026-10-14-de-kulturerbe-und-offene-quellen"
+    },
+    {
+      "id": "de-2026-07-31-oer-comic-support",
+      "language": "de",
+      "sourceTitle": "Open Educational Resources rechtlich entspannt veröffentlichen",
+      "sourceUrl": "https://irights.info/artikel/open-educational-resources-rechtlich-entspannt-veroeffentlichen/32878",
+      "sourceName": "iRights.info — iRights e.V.",
+      "registrySourceId": "irights-german-culture",
+      "sourcePublishedAt": "2026-07-31",
+      "collectedAt": "2026-10-14",
+      "category": "education",
+      "topics": [
+        "开放学习材料",
+        "漫画",
+        "求助"
+      ],
+      "level": "A2",
+      "status": "verified",
+      "editorialNote": "A2 short, 154 words. July 31 educational news, explicitly retrospective; source sufficient for short adaptation only. No comic contents copied. Speaking angle: where to seek support before sharing learning resources. Awaiting independent article/practice review; not ready for publication.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-14",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://irights.info/artikel/open-educational-resources-rechtlich-entspannt-veroeffentlichen/32878",
+          "checkedAt": "2026-10-14",
+          "notes": "Complete public article body and article footer read; web extraction retained in private artifact evidence/source-pages.json. No login or access-control bypass."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://irights.info/artikel/open-educational-resources-rechtlich-entspannt-veroeffentlichen/32878",
+          "evidence": "31. Juli 2026, article metadata immediately before author Lea Singson."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://irights.info/artikel/open-educational-resources-rechtlich-entspannt-veroeffentlichen/32878",
+          "additionalEvidenceUrls": [
+            "https://irights.info/impressum-2"
+          ],
+          "author": "Lea Singson",
+          "basis": "institutional-original-language-inference",
+          "evidence": "German editorial article by named iRights.info editor Lea Singson, whose bio identifies legal/editorial work. No translation or prior foreign publication credit.",
+          "caveat": "Institutional German-original provenance, not a claim about author mother tongue."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "site-policy-and-article-footer",
+          "evidenceUrls": [
+            "https://irights.info/artikel/open-educational-resources-rechtlich-entspannt-veroeffentlichen/32878",
+            "https://irights.info/impressum-2",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "evidence": "Impressum Hinweise assigns original site content CC BY 4.0; article footer confirms same grant except where otherwise stated. No conflicting text licence. Separate image credit excluded.",
+          "scope": "Original article editorial prose only. Translation, simplification and public redistribution with attribution, licence link and modification disclosure.",
+          "exclusions": [
+            "Images and comic contents",
+            "Third-party quotations and linked works",
+            "Logos, media, comments and donations section"
+          ],
+          "shareAlikeRequired": false,
+          "attributionRequirements": [
+            "Credit Lea Singson and iRights.info",
+            "Retain source title, date, source URL and CC BY 4.0 link",
+            "Disclose simplification, Chinese translation and teaching additions; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 37,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 75,
+          "bucket": "within_90_days"
+        }
+      },
+      "linkToArticleId": "2026-10-14-de-ein-comic-hilft-beim-teilen"
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",
