@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checkedAt": "2026-10-13",
+  "checkedAt": "2026-10-14",
   "policy": "Candidate list only, not blanket republication permission. Independently select a different original-language institutional source/article for IT, FR, DE and EN. Confirm article ownership, adaptation/translation/publication rights, exclusions, attribution, source language provenance and date for every edition. Never fill language slots by translating a common article. If evidence or rights are insufficient, skip that language/day. Text only; no images/logos/third-party quotations without separate clearance; never bypass access restrictions.",
   "sources": [
     {
@@ -344,6 +344,108 @@
       "articleReviewRequired": true,
       "conditions": "Impressum explicitly licenses site content under CC BY 4.0 and permits commercial and non-commercial redistribution. Article/footer exceptions still control. Credit named author/editor and iRights.info, link source and licence, disclose simplification/Chinese translation/learning additions. Exclude images, externally credited quotes, linked publications and third-party material. Do not infer a linked paper licence covers article or vice versa. Legal explanations must remain source-attributed educational material, not personal advice.",
       "nativeLanguageCaution": "Berlin nonprofit German editorial service; verify each byline and no translation/republication credit, never assume source language from hostname alone."
+    },
+    {
+      "id": "govuk-fsa-english-consumer",
+      "name": "Food Standards Agency — consumer food research / GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/food-standards-agency",
+      "languages": [
+        "en"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/publications/",
+        "https://www.gov.uk/government/news/"
+      ],
+      "requiredPublisherNames": [
+        "Food Standards Agency"
+      ],
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "license": "Open Government Licence v3.0 except identified exclusions",
+      "articleReviewRequired": true,
+      "conditions": "Only FSA-authored English pages with matching From metadata and explicit OGL text scope. Recheck third-party credits; exclude photographs, logos, external reports and quotes unless separately cleared. Credit FSA and named authors, link original and OGL, disclose adaptation/translation. Preserve survey fieldwork dates, geographic scope, denominators and self-report limitations. Registry does not clear any report in full.",
+      "nativeLanguageCaution": "UK institutional English original; inspect authors and translation markers. Welsh translation acknowledgement supports English-original inference, not personal mother-tongue certification.",
+      "checkedAt": "2026-10-14",
+      "reviewScope": "Source policy and report copyright header inspected; whole-report candidate review remains incomplete."
+    },
+    {
+      "id": "bercy-french-consumer",
+      "name": "Bercy Infos — French consumer life",
+      "url": "https://www.economie.gouv.fr/particuliers",
+      "languages": [
+        "fr"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.economie.gouv.fr/particuliers/"
+      ],
+      "rightsPolicyUrl": "https://www.economie.gouv.fr/mentions-legales",
+      "licenseEvidence": "https://www.economie.gouv.fr/mentions-legales",
+      "license": "Licence Ouverte / Open Licence Etalab 2.0, except third-party material",
+      "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+      "articleReviewRequired": true,
+      "conditions": "Official terms permit adaptation and republication. Credit Bercy Infos, source, displayed last-update date and licence; disclose changes. Exclude third-party quotations, photos, logos, media and outside documents. Use the normal article, not AI-generated simplified expandable summaries. Verify whether displayed written dates represent original publication before marking verified; do not treat updated advice as new news.",
+      "nativeLanguageCaution": "Official specialist French editorial team: https://www.economie.gouv.fr/entreprises/bercy-infos-qui-sommes-nous ; inspect article provenance and translated/AI notices.",
+      "checkedAt": "2026-10-14",
+      "reviewScope": "Policy inspected; article-level review still required."
+    },
+    {
+      "id": "archivi-italian-culture",
+      "name": "Ministero della Cultura — Direzione generale Archivi",
+      "url": "https://archivi.cultura.gov.it/",
+      "languages": [
+        "it"
+      ],
+      "allowedUrlPrefixes": [
+        "https://archivi.cultura.gov.it/archivio-notizie/"
+      ],
+      "rightsPolicyUrl": "https://cultura.gov.it/note-legali",
+      "licenseEvidence": "https://cultura.gov.it/note-legali",
+      "license": "CC BY 3.0 unless otherwise stated",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "articleReviewRequired": true,
+      "conditions": "Candidate footer links ministry legal notice via beniculturali.it redirect; confirm each page shares this notice. Adapt institutional prose only; credit ministry, title/source/licence and changes. Exclude third-party text, images, logos and embedded reproductions. Preserve actual event date and distinguish past cultural events from upcoming invitations.",
+      "nativeLanguageCaution": "Italian institutional editorial original; English version explicitly separated below. Select Italian prose, inspect bylines and republication notices.",
+      "checkedAt": "2026-10-14",
+      "reviewScope": "Policy inspected; article-level review still required."
+    },
+    {
+      "id": "rki-johm-german",
+      "name": "Robert Koch-Institut — Journal of Health Monitoring",
+      "url": "https://www.rki.de/jhealthmonit",
+      "languages": [
+        "de"
+      ],
+      "allowedUrlPrefixes": [
+        "https://edoc.rki.de/bitstream/handle/176904/"
+      ],
+      "rightsPolicyUrl": "https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1",
+      "licenseEvidence": "https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "license": "Article-specific CC BY 4.0; no repository-wide grant",
+      "articleReviewRequired": true,
+      "conditions": "Verify explicit article licence on PDF first page for each German article. Adapt author text only, exclude third-party instrument wording, citation excerpts, images, datasets and logos. Attribute all authors/title/DOI/licence and identify simplification/Chinese translation. Preserve population, study period and observational limitations; no personal medical advice. Do not infer all edoc items share this licence.",
+      "nativeLanguageCaution": "German authored institutional article with separate English edition; check manuscript/byline and translation credits per item. This is provenance inference, not native-tongue certification.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "id": "netzpolitik-german-culture",
+      "name": "netzpolitik.org — culture (link-only pending NC review)",
+      "url": "https://netzpolitik.org/",
+      "languages": [
+        "de"
+      ],
+      "allowedUrlPrefixes": [
+        "https://netzpolitik.org/2026/"
+      ],
+      "rightsPolicyUrl": "https://netzpolitik.org/2026/breakpoint-im-gleichschritt-der-cowboystiefel/",
+      "licenseEvidence": "https://netzpolitik.org/2026/breakpoint-im-gleichschritt-der-cowboystiefel/",
+      "license": "CC BY-NC-SA 4.0 unless otherwise stated; site-use compatibility unresolved",
+      "articleReviewRequired": true,
+      "collectionMode": "link-only",
+      "conditions": "Do not adapt or republish until noncommercial compatibility is established for this public website and the individual article. For now collect link metadata and original short introductions only; not a cleared reading source. Exclude external images, quotes and user comments; any future adaptation requires attribution, changes and matching ShareAlike.",
+      "nativeLanguageCaution": "German editorial column by named author; inspect each byline and translation credits.",
+      "checkedAt": "2026-10-14"
     }
   ],
   "archiveOnly": {
