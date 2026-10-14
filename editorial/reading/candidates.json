@@ -3155,6 +3155,290 @@
         }
       },
       "linkToArticleId": "2026-10-14-de-ein-comic-hilft-beim-teilen"
+    },
+    {
+      "id": "en-2026-09-29-fsa-hygiene-choices",
+      "language": "en",
+      "sourceTitle": "Food Hygiene Rating Scheme (FHRS) Food and You 2 report: wave 11",
+      "sourceUrl": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11",
+      "sourceName": "Food Standards Agency — consumer food research / GOV.UK",
+      "registrySourceId": "govuk-fsa-english-consumer",
+      "sourcePublishedAt": "2026-09-29",
+      "collectedAt": "2026-10-14",
+      "category": "society",
+      "topics": [
+        "外出用餐",
+        "食品卫生",
+        "消费选择"
+      ],
+      "level": "B2",
+      "status": "collected",
+      "editorialNote": "进阶/挑战档待审：讨论外卖与餐厅选择中卫生标签的作用；长报告需选一个连贯论点，不把同一报告分成多篇凑数。这是9月新发布的调查报告，调查期为2025年5–8月，非2026年消费者行为。全文后半及附录尚未逐段核验，暂不清稿。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-14",
+        "fullText": {
+          "accessible": true,
+          "read": false,
+          "url": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11",
+          "checkedAt": "2026-10-14",
+          "notes": "HTML accessible; publication header, copyright, executive summary and introductory interpretation sections inspected; later chapters/annex not fully read."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "HTML header explicitly Published 29 September 2026; separate parent metadata agrees.",
+          "evidenceUrl": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "FSA English institutional report credits four authors and acknowledges a Welsh translation team.",
+          "evidenceUrl": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11",
+          "author": "Megan Potts; Rachael Shillitoe; Robin Clifford; Matt Jenkins",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Does not certify personal native tongue."
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 15,
+          "bucket": "within_30_days"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Food Standards Agency"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 39,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      }
+    },
+    {
+      "id": "fr-2026-09-23-bercy-energy",
+      "language": "fr",
+      "sourceTitle": "Comment bénéficier du chèque énergie ?",
+      "sourceUrl": "https://www.economie.gouv.fr/particuliers/gerer-mon-argent/comment-beneficier-du-cheque-energie",
+      "sourceName": "Bercy Infos — French consumer life",
+      "registrySourceId": "bercy-french-consumer",
+      "sourcePublishedAt": "2026-09-23",
+      "collectedAt": "2026-10-14",
+      "category": "society",
+      "topics": [
+        "家庭开支",
+        "能源",
+        "公共服务"
+      ],
+      "level": "B1",
+      "status": "collected",
+      "editorialNote": "进阶候选：家庭如何理解能源补助信息；不作个人资格或财务建议。需逐篇核验原始发布日期及政策有效期、全文权利例外；排除页面单列AI简化摘要。尚非合格新新闻，不计每日配额。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-14",
+        "originalDate": {
+          "verified": false,
+          "evidence": "Page displays Écrit le 23/09/2026; original-versus-revision provenance remains to be checked.",
+          "evidenceUrl": "https://www.economie.gouv.fr/particuliers/gerer-mon-argent/comment-beneficier-du-cheque-energie"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 39,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      }
+    },
+    {
+      "id": "fr-2026-08-12-bercy-student-housing",
+      "language": "fr",
+      "sourceTitle": "Logement étudiant : 6 conseils avant de signer",
+      "sourceUrl": "https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/logement-etudiant-6-conseils-avant-de-signer",
+      "sourceName": "Bercy Infos — French consumer life",
+      "registrySourceId": "bercy-french-consumer",
+      "sourcePublishedAt": "2026-08-12",
+      "collectedAt": "2026-10-14",
+      "category": "society",
+      "topics": [
+        "学生住房",
+        "租房",
+        "消费权益"
+      ],
+      "level": "B2",
+      "status": "collected",
+      "editorialNote": "挑战档待审，8分钟原站阅读长度为线索而非词数验证。口语角度：签租约前应比较哪些条件？90天后备；需确认是新发布内容而非更新常青指南，再决定是否可进入日更。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-14",
+        "originalDate": {
+          "verified": false,
+          "evidence": "Page displays Écrit le 12/08/2026; original-versus-revision provenance remains to be checked.",
+          "evidenceUrl": "https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/logement-etudiant-6-conseils-avant-de-signer"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 39,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      }
+    },
+    {
+      "id": "it-2026-10-04-archivi-carta",
+      "language": "it",
+      "sourceTitle": "Domenica di Carta e Carte in Dimora 2026: archivi e biblioteche aprono le porte alla storia d'Italia",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=9170f636385fbaff93a2c519601712b1&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2772",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-04",
+      "collectedAt": "2026-10-14",
+      "category": "culture",
+      "topics": [
+        "档案馆",
+        "图书馆",
+        "文化休闲"
+      ],
+      "level": "B1",
+      "status": "collected",
+      "editorialNote": "进阶/挑战待审：周末参观、造纸和书籍修复的文化体验；意文部分独立选取，不能把下方英文译稿再当英语来源。活动已结束，不能写成未来邀请；全文逐段及署名例外尚待复核。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-14",
+        "originalDate": {
+          "verified": false,
+          "evidence": "Header displays 04 ottobre 2026; date observed, final source review pending.",
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=9170f636385fbaff93a2c519601712b1&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2772"
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 10,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 39,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      }
+    },
+    {
+      "id": "de-2026-09-09-rki-sleep-resources",
+      "language": "de",
+      "sourceTitle": "Subjektive Schlafqualität im Zusammenhang mit psychosozialen Ressourcen und Belastungen – Eine explorative Datenanalyse des NRW-Gesundheitssurveys 2024",
+      "sourceUrl": "https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1",
+      "sourceName": "Robert Koch-Institut — Journal of Health Monitoring",
+      "registrySourceId": "rki-johm-german",
+      "sourcePublishedAt": "2026-09-09",
+      "collectedAt": "2026-10-14",
+      "category": "health",
+      "topics": [
+        "睡眠",
+        "社会联系",
+        "日常压力"
+      ],
+      "level": "B2",
+      "status": "verified",
+      "editorialNote": "挑战档500–700词可选长文，90天后备（35天），非近30天。口语角度：日常生活条件与睡眠体验有什么联系？仅观察关联，不写因果或个人医疗建议；NRW样本不泛化全德国。此为新报告阅读，非事件快讯。署名按PDF Borrmann，元数据Bormann有差异。DOI: https://doi.org/10.25646/14314",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-14",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1",
+          "checkedAt": "2026-10-14",
+          "notes": "German 11-page article body read by source researcher; educational adaptation not yet written or reviewed."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "PDF page 1 Veröffentlicht 09.09.2026, repository issue date agrees.",
+          "evidenceUrl": "https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "German manuscript/byline and institutional authors, separately linked English version; no translation credit in inspected German article.",
+          "evidenceUrl": "https://edoc.rki.de/handle/176904/13909?show=full",
+          "author": "Daria Kozica; Anja Viehmann; Jonas Weidtmann; Brigitte Borrmann",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Publication provenance, not certified personal native tongue or first draft language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Article PDF page 1 explicitly CC BY 4.0. Repository metadata instead lists CC BY 3.0 DE; this discrepancy is recorded, and the more specific article PDF notice is the basis used here. Both permit adaptation, but do not conflate their versions. Scope excludes separately credited material.",
+          "evidenceUrls": [
+            "https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1",
+            "https://edoc.rki.de/handle/176904/13909?show=full"
+          ],
+          "scope": "Authors explanatory prose only.",
+          "exclusions": [
+            "Third-party questionnaire wording and citation excerpts",
+            "Images, logos, external works and restricted participant data"
+          ],
+          "attributionRequirements": [
+            "Name authors/title, DOI and licence",
+            "Disclose adaptation and translation; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 35,
+          "bucket": "within_90_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-14",
+          "checkedAgainstArticleCount": 39,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      }
+    },
+    {
+      "id": "de-2026-09-27-netzpolitik-fashion",
+      "language": "de",
+      "sourceTitle": "Breakpoint: Im Gleichschritt der Cowboystiefel",
+      "sourceUrl": "https://netzpolitik.org/2026/breakpoint-im-gleichschritt-der-cowboystiefel/",
+      "sourceName": "netzpolitik.org",
+      "registrySourceId": "netzpolitik-german-culture",
+      "sourcePublishedAt": "2026-09-27",
+      "collectedAt": "2026-10-14",
+      "category": "culture",
+      "topics": [
+        "时尚",
+        "社交媒体",
+        "从众"
+      ],
+      "level": "C1",
+      "status": "collected",
+      "editorialNote": "仅原站链接线索：讨论潮流与个人选择。观点专栏不可当客观研究结论；NC与本站用途适配未解决，不能计入可改编精读储备。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-14",
+        "freshness": {
+          "asOf": "2026-10-14",
+          "ageDays": 17,
+          "bucket": "within_30_days"
+        }
+      }
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

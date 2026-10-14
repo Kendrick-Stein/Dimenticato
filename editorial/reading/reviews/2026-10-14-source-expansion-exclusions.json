@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-14",
+  "scope": "Source expansion exclusions and link leads; no article text copied, no publication clearance inferred.",
+  "checks": [
+    {
+      "source": "The Public Domain Review",
+      "url": "https://publicdomainreview.org/essay/philip-sidney-and-the-extreme-disgraces-of-the-parenthesis/",
+      "date": "2026-09-30",
+      "decision": "link-only",
+      "reason": "Specific footer is a copyrighted Basic Books excerpt; broad CC policy explicitly warns of essay exceptions."
+    },
+    {
+      "source": "The Public Domain Review",
+      "url": "https://publicdomainreview.org/essay/veroneses-dogs/",
+      "date": "2026-09-16",
+      "decision": "link-only",
+      "reason": "Specific footer is a copyrighted Penguin book excerpt; no applicable adaptation grant."
+    },
+    {
+      "source": "Ministero dell Interno",
+      "url": "https://www.interno.gov.it/it/note-legali",
+      "decision": "not-added",
+      "reason": "CC BY 4.0 policy promising, but candidate access returned 403; no bypass or fully reviewed candidate."
+    },
+    {
+      "source": "ENEA",
+      "url": "https://www.enea.it/it/note-legali.html",
+      "decision": "excluded",
+      "reason": "CC BY-NC-ND does not permit distributed adaptations."
+    },
+    {
+      "source": "INED",
+      "url": "https://www.ined.fr/fr/mentions-legales-credits-0",
+      "decision": "link-only",
+      "reason": "Protected content translation/publication needs written permission."
+    },
+    {
+      "source": "CNR",
+      "url": "https://www.cnr.it/it/note-legali",
+      "decision": "link-only",
+      "reason": "Press republication clause does not clearly grant translated/graded derivatives."
+    },
+    {
+      "source": "ARPAT",
+      "url": "https://www.arpat.toscana.it/note-legali/",
+      "decision": "link-only",
+      "reason": "CC BY-NC-SA 3.0 Italy; public-site NC suitability unresolved."
+    },
+    {
+      "source": "Trend Report",
+      "url": "https://trendreport.de/kann-ki-die-sprachbarriere-im-beruf-senken/",
+      "title": "Kann KI die Sprachbarriere im Beruf senken?",
+      "date": "2026-09-22",
+      "reason": "Article-specific CC BY-ND 4.0 overrides sitewide CC BY-SA footer; adaptation/translation redistribution excluded."
+    },
+    {
+      "source": "Trend Report",
+      "url": "https://trendreport.de/deutsche-rentner-im-ausland-wohin-die-rente-fliesst/",
+      "title": "Deutsche Rentner im Ausland: Wohin die Rente fließt",
+      "date": "2026-09-15",
+      "reason": "Explicit CC BY-ND 4.0; says adaptations may not be distributed."
+    },
+    {
+      "source": "Wikinews German",
+      "url": "https://de.wikinews.org/wiki/Hauptseite",
+      "reason": "Official homepage reports closure May 2026; cannot support fresh 30/90-day daily feed."
+    },
+    {
+      "source": "Soziopolis",
+      "url": "https://www.soziopolis.de/mut-zur-erfahrung.html",
+      "title": "Mut zur Erfahrung!",
+      "date": "2026-10-14",
+      "author": "Claudia Schroth",
+      "reason": "Full German book-review text read; no adaptation license verified, link-only at most."
+    },
+    {
+      "source": "Wikimedia Deutschland Blog",
+      "url": "https://blog.wikimedia.de/2026/08/20/10-ungewohnliche-orte-an-denen-menschen-zur-wikipedia-beitragen/",
+      "date": "2026-08-20",
+      "decision": "link-only",
+      "reason": "Image CC credits do not establish text adaptation rights."
+    }
+  ]
+}
