@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-fr-regarder-sa-ville-autrement",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quel est le but de ces journées ?",
+      "options": [
+        "Choisir des logements pour les familles de la ville.",
+        "Préparer des travaux pour agrandir les musées de France.",
+        "Découvrir les bâtiments et réfléchir à notre cadre de vie.",
+        "Organiser des expositions sur les artistes de chaque ville."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "fr-regarder-sa-ville-autrement-02",
+        "fr-regarder-sa-ville-autrement-04",
+        "fr-regarder-sa-ville-autrement-11"
+      ],
+      "explanationZh": "文章介绍了认识建筑、思考建筑新用途等活动，最后说明目的还包括观察生活环境并思考其未来。因此，了解建筑并思考生活环境最能概括全文。",
+      "promptZh": "这些活动日的目的是什么？"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Que peuvent faire les enfants à partir de sept ans aux Récollets ?",
+      "options": [
+        "Construire une cité-jardin avec du papier.",
+        "Participer aux débats dans un petit parlement.",
+        "Découvrir la ville pendant une promenade.",
+        "Visiter un musée avec les tout-petits."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "fr-regarder-sa-ville-autrement-06",
+        "fr-regarder-sa-ville-autrement-07",
+        "fr-regarder-sa-ville-autrement-08",
+        "fr-regarder-sa-ville-autrement-09"
+      ],
+      "explanationZh": "第8句明确说，在巴黎的Récollets，七岁及以上的儿童可以用纸搭建一座花园城市。博物馆参观、城市散步和小议会讨论属于文中其他地点的活动。",
+      "promptZh": "七岁及以上的儿童可以在Récollets做什么？"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi rénover un bâtiment, selon le texte ?",
+      "options": [
+        "Pour préparer les salles aux rencontres avec les architectes.",
+        "Pour accueillir plus de visiteurs pendant les journées.",
+        "Pour offrir plus de place aux ateliers des enfants.",
+        "Pour conserver le patrimoine et réduire notre empreinte carbone."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "fr-regarder-sa-ville-autrement-05"
+      ],
+      "explanationZh": "第5句给出的两个作用是保护文化遗产和减少碳足迹。其余选项虽然与活动有关，但不是文章说明的翻新建筑的理由。",
+      "promptZh": "根据文章，为什么要翻新建筑？"
+    }
+  ]
+}

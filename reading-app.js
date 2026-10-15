@@ -164,7 +164,8 @@
     var body = el('div', undefined, 'reading-body'); body.id = 'readingBody';
     a.sentences.forEach(function (s, i) {
       var row = el('section', undefined, 'reading-sentence'); row.dataset.sentence = s.id;
-      var foreign = el('p', undefined, 'reading-foreign'); foreign.lang = a.lang; tokens(foreign, s, a); row.appendChild(foreign);
+      var foreign = el('p', undefined, 'reading-foreign'); foreign.lang = a.lang; foreign.id = 'reading-sentence-text-' + i; tokens(foreign, s, a); row.appendChild(foreign);
+      row.setAttribute('tabindex', '-1'); row.setAttribute('aria-labelledby', foreign.id);
       var zh = el('p', s.zh, 'reading-translation'); zh.id = 'reading-translation-' + i; row.appendChild(zh);
       var audio = button('听读', function () { global.App.speak(s.text, a.lang); });
       audio.className = 'reading-sentence-audio'; audio.hidden = true;
@@ -173,6 +174,35 @@
     function selected() { var selection = global.getSelection && global.getSelection(); if (!selection || selection.isCollapsed) return; var node = selection.anchorNode; node = node && (node.nodeType === 1 ? node : node.parentElement); var row = node && node.closest('.reading-sentence'); var end = selection.focusNode; end = end && (end.nodeType === 1 ? end : end.parentElement); if (!row || !body.contains(row) || !end || !row.contains(end) || !node.closest('.reading-foreign') || !end.closest('.reading-foreign')) return; var text = selection.toString().trim(); if (text && text.length < 100) showLookup(a, row.dataset.sentence, text); }
     body.addEventListener('mouseup', selected); body.addEventListener('keyup', selected); body.addEventListener('touchend', function () { setTimeout(selected, 0); }); host.appendChild(body);
     var box = el('aside', undefined, 'reading-lookup'); box.id = 'readingLookup'; box.hidden = true; box.setAttribute('aria-live', 'polite'); host.appendChild(box);
+    // Optional comprehension sits before vocabulary hints, with the same stale-request
+    // protections as practice. Legacy articles without a companion stay unchanged.
+    if (global.ReadingComprehensionApp) {
+      var comprehensionRequest = request, comprehension = el('section', undefined, 'reading-comprehension');
+      comprehension.hidden = true; host.appendChild(comprehension);
+      function comprehensionCurrent() {
+        return request === comprehensionRequest && active === a && host.contains(comprehension) && global.Shell.current() === 'readingArticleScreen' && code(global.getActiveLanguage()) === a.lang;
+      }
+      function loadComprehension(retry) {
+        if (!comprehensionCurrent()) return;
+        comprehension.replaceChildren(); comprehension.hidden = !retry;
+        if (retry) { var loading = el('p', '正在重新加载阅读理解…', 'reading-hint'); loading.setAttribute('role', 'status'); comprehension.appendChild(loading); }
+        fetch('data/reading/comprehension/' + a.id + '.json').then(function (response) {
+          if (response.status === 404 || response.status === 410) return null;
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.json().catch(function (error) { if (error && error.name === 'SyntaxError') return null; throw error; });
+        }).then(function (data) {
+          if (!comprehensionCurrent()) return;
+          comprehension.replaceChildren(); comprehension.hidden = true;
+          if (data) global.ReadingComprehensionApp.mount(comprehension, a, data, body);
+        }).catch(function () {
+          if (!comprehensionCurrent()) return;
+          comprehension.hidden = false; comprehension.replaceChildren(el('h2', '阅读理解'));
+          var failure = el('p', '阅读理解暂时加载失败。正文和其他练习仍可使用。', 'reading-hint'); failure.setAttribute('role', 'status'); comprehension.appendChild(failure);
+          comprehension.appendChild(button('重试阅读理解', function () { loadComprehension(true); }));
+        });
+      }
+      loadComprehension(false);
+    }
     host.appendChild(renderLearningSummary(a));
     var practiceRequest = request, practice = el('section', undefined, 'reading-practice'); host.appendChild(practice);
     if (global.ReadingPracticeApp) fetchJSON('data/reading/practice/' + a.id + '.json').then(function (data) { if (request === practiceRequest && active === a && host.contains(practice) && global.Shell.current() === 'readingArticleScreen') global.ReadingPracticeApp.mount(practice, a, data); }).catch(function () { /* Optional companion; old articles keep their original reading experience. */ });

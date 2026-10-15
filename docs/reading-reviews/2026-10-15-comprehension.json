@@ -1,0 +1,389 @@
+{
+  "date": "2026-10-15",
+  "baseCommit": "9508535addf1b1d23e1e979f7c57c01b5b6f187a",
+  "scope": "Optional comprehension companions; historical articles, catalog and cloze practice remain unchanged.",
+  "review": {
+    "initialBlindSolve": "41/41 proposed answers matched an independent solve from articles and prompts/options only; keys, evidence and explanations withheld.",
+    "revisions": "Six B2 questions revised for plausible parallel distractors, article-specific synthesis and accurate announced-event wording. A second independent blind solve matched all six final answers.",
+    "explanations": "All final Chinese explanations and sentence evidence checked against the published articles.",
+    "code": "Independent review found no release-blocking defect; language-enum consistency suggestion fixed and regression tested.",
+    "assessmentLimits": "Editor-estimated CEFR and formative learning questions; no certified measurement or subjective automatic scoring."
+  },
+  "validation": {
+    "fullSuite": "42 harnesses — 476508 passed, 0 failed, 0 known issues",
+    "diffCheck": "PASS",
+    "immutability": "Published article, index and existing practice bytes unchanged from base.",
+    "browser": "Public production article checked as available. New UI has DOM/integration coverage; premerge real-browser/mobile visual verification unavailable in this runtime. No audio-quality verification claimed."
+  },
+  "articles": [
+    {
+      "articleId": "2026-10-15-de-schlaf-und-lebensbedingungen",
+      "lang": "de",
+      "level": "B2",
+      "questions": 5,
+      "sha256": "b628710f7b4b5bf132205c8fb36375514fb60d90465517a1489309c48b85837b",
+      "kinds": [
+        "main-idea",
+        "detail",
+        "cause",
+        "cause",
+        "inference"
+      ],
+      "evidence": {
+        "2026-10-15-de-schlaf-und-lebensbedingungen-q1": [
+          "s3",
+          "s8",
+          "s20",
+          "s21",
+          "s22",
+          "s27"
+        ],
+        "2026-10-15-de-schlaf-und-lebensbedingungen-q2": [
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "2026-10-15-de-schlaf-und-lebensbedingungen-q3": [
+          "s12",
+          "s13",
+          "s14"
+        ],
+        "2026-10-15-de-schlaf-und-lebensbedingungen-q4": [
+          "s22",
+          "s23"
+        ],
+        "2026-10-15-de-schlaf-und-lebensbedingungen-q5": [
+          "s24",
+          "s25",
+          "s26"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    },
+    {
+      "articleId": "2026-10-15-en-hygiene-labels-and-choices",
+      "lang": "en",
+      "level": "B2",
+      "questions": 5,
+      "sha256": "8629f627128e0a33f9ab2e6ca84291ec50656af063cdf2cbcc5006c752c7e1e1",
+      "kinds": [
+        "main-idea",
+        "detail",
+        "cause",
+        "inference",
+        "inference"
+      ],
+      "evidence": {
+        "2026-10-15-en-hygiene-labels-and-choices-q1": [
+          "s7",
+          "s11",
+          "s13",
+          "s20",
+          "s21"
+        ],
+        "2026-10-15-en-hygiene-labels-and-choices-q2": [
+          "s8",
+          "s9",
+          "s10"
+        ],
+        "2026-10-15-en-hygiene-labels-and-choices-q3": [
+          "s11",
+          "s12"
+        ],
+        "2026-10-15-en-hygiene-labels-and-choices-q4": [
+          "s14",
+          "s17"
+        ],
+        "2026-10-15-en-hygiene-labels-and-choices-q5": [
+          "s3",
+          "s4",
+          "s18",
+          "s19"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    },
+    {
+      "articleId": "2026-10-15-en-more-organic-food",
+      "lang": "en",
+      "level": "A2",
+      "questions": 3,
+      "sha256": "8cdc86c1100ccb543efef64c002c41a0ca4157bcbfb27611f82453eb9c4851db",
+      "kinds": [
+        "main-idea",
+        "detail",
+        "detail"
+      ],
+      "evidence": {
+        "2026-10-15-en-more-organic-food-q1": [
+          "s1",
+          "s3",
+          "s5",
+          "s13"
+        ],
+        "2026-10-15-en-more-organic-food-q2": [
+          "s3",
+          "s4"
+        ],
+        "2026-10-15-en-more-organic-food-q3": [
+          "s9",
+          "s10",
+          "s11"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    },
+    {
+      "articleId": "2026-10-15-en-rural-broadband-arrives",
+      "lang": "en",
+      "level": "B1",
+      "questions": 4,
+      "sha256": "ac7a583beea0293d7906bbdfdd5e6aa01d8ac8bd34f742345915387ae5b14de4",
+      "kinds": [
+        "main-idea",
+        "detail",
+        "cause",
+        "inference"
+      ],
+      "evidence": {
+        "2026-10-15-en-rural-broadband-arrives-q1": [
+          "s2",
+          "s3",
+          "s5",
+          "s8"
+        ],
+        "2026-10-15-en-rural-broadband-arrives-q2": [
+          "s3",
+          "s9",
+          "s10"
+        ],
+        "2026-10-15-en-rural-broadband-arrives-q3": [
+          "s5",
+          "s6"
+        ],
+        "2026-10-15-en-rural-broadband-arrives-q4": [
+          "s11",
+          "s12",
+          "s13",
+          "s14"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    },
+    {
+      "articleId": "2026-10-15-fr-apprendre-a-proteger-le-patrimoine",
+      "lang": "fr",
+      "level": "B1",
+      "questions": 4,
+      "sha256": "7525e155ebd59629268b2f35746d584d0ef2a939df2967a70669bb3310d1299e",
+      "kinds": [
+        "main-idea",
+        "detail",
+        "cause",
+        "inference"
+      ],
+      "evidence": {
+        "q1": [
+          "fr-apprendre-a-proteger-le-patrimoine-01",
+          "fr-apprendre-a-proteger-le-patrimoine-03",
+          "fr-apprendre-a-proteger-le-patrimoine-08",
+          "fr-apprendre-a-proteger-le-patrimoine-12",
+          "fr-apprendre-a-proteger-le-patrimoine-13"
+        ],
+        "q2": [
+          "fr-apprendre-a-proteger-le-patrimoine-04",
+          "fr-apprendre-a-proteger-le-patrimoine-05"
+        ],
+        "q3": [
+          "fr-apprendre-a-proteger-le-patrimoine-10",
+          "fr-apprendre-a-proteger-le-patrimoine-12"
+        ],
+        "q4": [
+          "fr-apprendre-a-proteger-le-patrimoine-03",
+          "fr-apprendre-a-proteger-le-patrimoine-11",
+          "fr-apprendre-a-proteger-le-patrimoine-13"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    },
+    {
+      "articleId": "2026-10-15-fr-cinema-cooperation-et-promesses",
+      "lang": "fr",
+      "level": "B2",
+      "questions": 5,
+      "sha256": "ac7d6904470fcbe456610f2c76154410e7780b17d3e398014ffff6b97ba20890",
+      "kinds": [
+        "main-idea",
+        "detail",
+        "cause",
+        "detail",
+        "inference"
+      ],
+      "evidence": {
+        "q1": [
+          "fr-cinema-cooperation-et-promesses-05",
+          "fr-cinema-cooperation-et-promesses-06",
+          "fr-cinema-cooperation-et-promesses-11",
+          "fr-cinema-cooperation-et-promesses-15",
+          "fr-cinema-cooperation-et-promesses-19"
+        ],
+        "q2": [
+          "fr-cinema-cooperation-et-promesses-11",
+          "fr-cinema-cooperation-et-promesses-12",
+          "fr-cinema-cooperation-et-promesses-13",
+          "fr-cinema-cooperation-et-promesses-14"
+        ],
+        "q3": [
+          "fr-cinema-cooperation-et-promesses-03",
+          "fr-cinema-cooperation-et-promesses-04"
+        ],
+        "q4": [
+          "fr-cinema-cooperation-et-promesses-06",
+          "fr-cinema-cooperation-et-promesses-07",
+          "fr-cinema-cooperation-et-promesses-08",
+          "fr-cinema-cooperation-et-promesses-16",
+          "fr-cinema-cooperation-et-promesses-19"
+        ],
+        "q5": [
+          "fr-cinema-cooperation-et-promesses-16",
+          "fr-cinema-cooperation-et-promesses-17",
+          "fr-cinema-cooperation-et-promesses-18",
+          "fr-cinema-cooperation-et-promesses-19"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    },
+    {
+      "articleId": "2026-10-15-fr-regarder-sa-ville-autrement",
+      "lang": "fr",
+      "level": "A2",
+      "questions": 3,
+      "sha256": "8558e5f5cdb9f6805c5b950fcecf452377fe362c8cf52075bb3cee721fdfe2f7",
+      "kinds": [
+        "main-idea",
+        "detail",
+        "cause"
+      ],
+      "evidence": {
+        "q1": [
+          "fr-regarder-sa-ville-autrement-02",
+          "fr-regarder-sa-ville-autrement-04",
+          "fr-regarder-sa-ville-autrement-11"
+        ],
+        "q2": [
+          "fr-regarder-sa-ville-autrement-06",
+          "fr-regarder-sa-ville-autrement-07",
+          "fr-regarder-sa-ville-autrement-08",
+          "fr-regarder-sa-ville-autrement-09"
+        ],
+        "q3": [
+          "fr-regarder-sa-ville-autrement-05"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    },
+    {
+      "articleId": "2026-10-15-it-memoria-nelle-carte",
+      "lang": "it",
+      "level": "B2",
+      "questions": 5,
+      "sha256": "ae21947a3f1353503c0ed7c97261bee51f9aff51481e47b33ce8d384cd449e4d",
+      "kinds": [
+        "main-idea",
+        "detail",
+        "inference",
+        "cause",
+        "detail"
+      ],
+      "evidence": {
+        "it-memoria-nelle-carte-q1": [
+          "it-memoria-nelle-carte-01",
+          "it-memoria-nelle-carte-07",
+          "it-memoria-nelle-carte-08",
+          "it-memoria-nelle-carte-21"
+        ],
+        "it-memoria-nelle-carte-q2": [
+          "it-memoria-nelle-carte-05",
+          "it-memoria-nelle-carte-06"
+        ],
+        "it-memoria-nelle-carte-q3": [
+          "it-memoria-nelle-carte-15",
+          "it-memoria-nelle-carte-16",
+          "it-memoria-nelle-carte-17"
+        ],
+        "it-memoria-nelle-carte-q4": [
+          "it-memoria-nelle-carte-11",
+          "it-memoria-nelle-carte-12"
+        ],
+        "it-memoria-nelle-carte-q5": [
+          "it-memoria-nelle-carte-09",
+          "it-memoria-nelle-carte-10",
+          "it-memoria-nelle-carte-18",
+          "it-memoria-nelle-carte-19"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    },
+    {
+      "articleId": "2026-10-15-it-protezione-in-piazza",
+      "lang": "it",
+      "level": "A2",
+      "questions": 3,
+      "sha256": "b86cc44ce94c39b310181c5341df98955cbad9b618d010feba06a4f219ea9b09",
+      "kinds": [
+        "main-idea",
+        "detail",
+        "cause"
+      ],
+      "evidence": {
+        "it-protezione-in-piazza-q1": [
+          "it-protezione-in-piazza-02",
+          "it-protezione-in-piazza-05",
+          "it-protezione-in-piazza-11"
+        ],
+        "it-protezione-in-piazza-q2": [
+          "it-protezione-in-piazza-03"
+        ],
+        "it-protezione-in-piazza-q3": [
+          "it-protezione-in-piazza-07",
+          "it-protezione-in-piazza-08"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    },
+    {
+      "articleId": "2026-10-15-it-regioni-che-cambiano",
+      "lang": "it",
+      "level": "B1",
+      "questions": 4,
+      "sha256": "ef73b067cc8324a86c6faa1b9b17e7ab47f8ab1e568f9ba9ae47dff5ea99bb3d",
+      "kinds": [
+        "main-idea",
+        "cause",
+        "detail",
+        "inference"
+      ],
+      "evidence": {
+        "it-regioni-che-cambiano-q1": [
+          "it-regioni-che-cambiano-01",
+          "it-regioni-che-cambiano-02",
+          "it-regioni-che-cambiano-13"
+        ],
+        "it-regioni-che-cambiano-q2": [
+          "it-regioni-che-cambiano-05"
+        ],
+        "it-regioni-che-cambiano-q3": [
+          "it-regioni-che-cambiano-07",
+          "it-regioni-che-cambiano-08",
+          "it-regioni-che-cambiano-09"
+        ],
+        "it-regioni-che-cambiano-q4": [
+          "it-regioni-che-cambiano-04",
+          "it-regioni-che-cambiano-06"
+        ]
+      },
+      "review": "PASS; unique text-supported answers, references and Chinese explanations verified."
+    }
+  ]
+}

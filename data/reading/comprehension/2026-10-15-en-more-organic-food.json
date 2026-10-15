@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-en-more-organic-food",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "2026-10-15-en-more-organic-food-q1",
+      "kind": "main-idea",
+      "prompt": "What is the plan mainly about?",
+      "options": [
+        "Making all English farms sell food online.",
+        "Helping English farms produce and sell more organic food.",
+        "Moving organic food sales from shops to farms.",
+        "Opening more restaurants on English organic farms."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s3",
+        "s5",
+        "s13"
+      ],
+      "explanationZh": "计划的核心是帮助英格兰的农场增加有机食品的生产和销售，让商店和餐馆有更多选择。文章没有说所有农场都要网上销售、改在农场销售或开餐馆。",
+      "promptZh": "这项计划主要涉及什么？"
+    },
+    {
+      "id": "2026-10-15-en-more-organic-food-q2",
+      "kind": "detail",
+      "prompt": "Which farmers can get advice and support?",
+      "options": [
+        "Only farmers who already sell food to restaurants.",
+        "Only farmers who are starting their first business.",
+        "Farmers who want to stop producing organic food.",
+        "Organic farmers and farmers thinking about a change."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "第3句同时提到已经生产有机食品的农民和正在考虑转变的农民，第4句说明这些农民可以获得建议与支持。",
+      "promptZh": "哪些农民可以获得建议和支持？"
+    },
+    {
+      "id": "2026-10-15-en-more-organic-food-q3",
+      "kind": "detail",
+      "prompt": "What does the plan say about organic farmland?",
+      "options": [
+        "The aim is to move towards 10% by 2036.",
+        "The share has already reached 10% in England.",
+        "The aim is to move towards 3.4% by 2036.",
+        "The share will stay at 3.4% until 2036."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "公告中的现状约为3.4%，到2036年朝10%迈进是未来目标。第11句明确说，这不表示变化已经发生。",
+      "promptZh": "这项计划对有机耕地怎么说？"
+    }
+  ]
+}

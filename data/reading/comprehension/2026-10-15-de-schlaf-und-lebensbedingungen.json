@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-de-schlaf-und-lebensbedingungen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "2026-10-15-de-schlaf-und-lebensbedingungen-q1",
+      "kind": "main-idea",
+      "prompt": "Welche Aussage fasst die zentrale Botschaft des Textes am besten zusammen?",
+      "options": [
+        "Die Untersuchung zeigt, welche Behandlung Schlafstörungen am zuverlässigsten heilt.",
+        "Die Untersuchung beschreibt die aktuelle Schlafsituation aller Menschen in Deutschland.",
+        "Die Untersuchung vergleicht medizinische Diagnosen aus mehreren deutschen Schlaflaboren.",
+        "Die Untersuchung zeigt Zusammenhänge mit Lebensbedingungen, lässt aber Ursachen offen."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s8",
+        "s20",
+        "s21",
+        "s22",
+        "s27"
+      ],
+      "explanationZh": "文章讨论睡眠质量与心理负担及生活条件的关联，同时强调不能据此确定原因或证明治疗措施有效。它既不是全国当下的普查，也不是睡眠实验室中的诊断比较。",
+      "promptZh": "哪一项最能概括文章的核心信息？"
+    },
+    {
+      "id": "2026-10-15-de-schlaf-und-lebensbedingungen-q2",
+      "kind": "detail",
+      "prompt": "Welche Aussage zur Datengrundlage ist richtig?",
+      "options": [
+        "Die Angaben aller 2.002 Befragten wurden im endgültigen Modell ausgewertet.",
+        "Das endgültige Modell nutzte Angaben von 1.799 der 2.002 befragten Erwachsenen.",
+        "Die 1.799 Personen im Modell lebten überwiegend in Pflegeeinrichtungen.",
+        "Die 2.002 Erwachsenen wurden erst im Jahr der Veröffentlichung befragt."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "第4句说2024年共访问了2,002名成年人，第7句说最终模型使用1,799人的资料。机构住民不在这种调查方法覆盖的群体中，调查年份也不是发表的2026年。",
+      "promptZh": "关于数据基础，哪一项说法正确？"
+    },
+    {
+      "id": "2026-10-15-de-schlaf-und-lebensbedingungen-q3",
+      "kind": "cause",
+      "prompt": "Warum darf schlechte Schlafqualität hier nicht mit einer ärztlich festgestellten Schlafstörung gleichgesetzt werden?",
+      "options": [
+        "Die Fragebogenangaben wurden weder im Schlaflabor noch anhand medizinischer Diagnosen überprüft.",
+        "Die Befragten wurden ausschließlich nach Schlafproblemen während ihrer Kindheit gefragt.",
+        "Die Forschenden berücksichtigten nur Personen ohne psychische Belastungen in ihrem Modell.",
+        "Die Schlafqualität wurde aus den Arbeitszeiten berechnet und nicht von den Befragten beschrieben."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "睡眠质量来自受访者对访问前四周的问卷回答，没有经睡眠实验室或医学诊断比对验证。因此，主观感受较差不能直接等同于医生确诊的睡眠障碍。",
+      "promptZh": "为什么这里不能把较差的睡眠质量等同于医生确诊的睡眠障碍？"
+    },
+    {
+      "id": "2026-10-15-de-schlaf-und-lebensbedingungen-q4",
+      "kind": "cause",
+      "prompt": "Welche methodische Eigenschaft nennt der Text als unmittelbaren Grund dafür, dass die Richtung der Beziehungen offenbleibt?",
+      "options": [
+        "Es fehlen Angaben zu Schichtarbeit, Umgebungslärm und Medikamenten, die ebenfalls den Schlaf beeinflussen können.",
+        "Menschen mit niedrigem und hohem sozioökonomischem Status sind in der untersuchten Stichprobe unterrepräsentiert.",
+        "Die Studie betrachtet eine Erhebung, statt dieselben Menschen über einen längeren Zeitraum zu begleiten.",
+        "Die Schlafqualität wurde durch einen Fragebogen erfasst und nicht mit medizinischen Diagnosen verglichen."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s22",
+        "s23"
+      ],
+      "explanationZh": "第22句说明这是一项横断面研究，只考察一次调查中的关联，没有长期跟踪同一批人；第23句紧接着用“Deshalb”指出，因此关联方向仍不确定。其他选项也是真实的研究局限，但文章没有把它们作为这里判断关联方向的直接理由。",
+      "promptZh": "文章直接用哪一项研究方法特点解释关联方向为何仍不确定？"
+    },
+    {
+      "id": "2026-10-15-de-schlaf-und-lebensbedingungen-q5",
+      "kind": "inference",
+      "prompt": "Welche Kombination würde zwei ausdrücklich genannte Grenzen der Datengrundlage aufgreifen?",
+      "options": [
+        "Angaben zur Kompetenz ergänzen und deutschsprachige Erwachsene aus privaten Haushalten telefonisch befragen.",
+        "Angaben zur Schichtarbeit ergänzen und niedrige sowie hohe Statusgruppen stärker in die Stichprobe einbeziehen.",
+        "Angaben zur Einsamkeit ergänzen und Frauen sowie Männer getrennt in der Auswertung berücksichtigen.",
+        "Angaben zur Autonomie ergänzen und Personen mit einer diagnostizierten Depression in der Analyse berücksichtigen."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s24",
+        "s25",
+        "s26"
+      ],
+      "explanationZh": "第25句明确说调查缺少轮班工作等信息，第26句指出社会经济地位较低与较高的人在样本中的代表性不足。因此，补充轮班工作资料并提高这两类人群的样本代表性，能分别回应这两项局限。其他选项提到的胜任感、孤独感、自主性、抑郁情况以及相关调查或分析方式，已经包含在本文描述的研究中。",
+      "promptZh": "哪一组改进会回应文章明确指出的两项数据基础局限？"
+    }
+  ]
+}

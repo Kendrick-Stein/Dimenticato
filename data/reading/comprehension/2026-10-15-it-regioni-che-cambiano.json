@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-it-regioni-che-cambiano",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "it-regioni-che-cambiano-q1",
+      "kind": "main-idea",
+      "prompt": "Qual è il tema principale del testo?",
+      "options": [
+        "La crescita del turismo nelle città italiane durante l’autunno del 2026.",
+        "I diversi cambiamenti della popolazione e dell’economia regionale nel tempo.",
+        "Le nuove industrie aperte nelle regioni italiane durante l’ultimo anno.",
+        "Le differenze tra i servizi offerti oggi nelle principali città italiane."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "it-regioni-che-cambiano-01",
+        "it-regioni-che-cambiano-02",
+        "it-regioni-che-cambiano-13"
+      ],
+      "explanationZh": "文章介绍意大利不同地区的人口、工作与经济活动如何随时间变化。最后一句强调，这些是几十年间的历史变化，并非只发生在2026年秋季。",
+      "promptZh": "这篇文章的主要主题是什么？"
+    },
+    {
+      "id": "it-regioni-che-cambiano-q2",
+      "kind": "cause",
+      "prompt": "Che cosa ha favorito l’arrivo di nuovi abitanti in Veneto?",
+      "options": [
+        "La diminuzione degli abitanti nelle regioni vicine.",
+        "La crescita del turismo prima degli anni Sessanta.",
+        "Il trasferimento delle attività agricole verso Venezia.",
+        "Lo sviluppo industriale dopo un periodo di emigrazione."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "it-regioni-che-cambiano-05"
+      ],
+      "explanationZh": "第5句先说明威尼托直到20世纪60年代还是许多人迁出的地区，再明确指出，后来的工业发展促进了新居民迁入。",
+      "promptZh": "什么促进了新居民迁入威尼托？"
+    },
+    {
+      "id": "it-regioni-che-cambiano-q3",
+      "kind": "detail",
+      "prompt": "Quale descrizione della Liguria corrisponde al testo?",
+      "options": [
+        "La popolazione è aumentata dagli anni Ottanta e Genova ha perso abitanti.",
+        "Le migrazioni interne hanno fatto diminuire la popolazione prima degli anni Settanta.",
+        "La popolazione è diminuita e l’immigrazione dall’estero oggi riduce questo calo.",
+        "L’arrivo di persone dall’estero ha fatto crescere rapidamente la popolazione giovane."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "it-regioni-che-cambiano-07",
+        "it-regioni-che-cambiano-08",
+        "it-regioni-che-cambiano-09"
+      ],
+      "explanationZh": "国内人口迁移曾推动利古里亚人口增长，但从20世纪80年代开始，居民人数下降、人口快速老龄化。如今，来自国外的移民减缓了下降，并不表示文中已经确认人口恢复增长。",
+      "promptZh": "哪一项关于利古里亚的描述符合文章内容？"
+    },
+    {
+      "id": "it-regioni-che-cambiano-q4",
+      "kind": "inference",
+      "prompt": "Che cosa si capisce confrontando Piemonte e Veneto?",
+      "options": [
+        "I capoluoghi hanno attività di servizi e le due regioni conservano un’industria importante.",
+        "I servizi si sviluppano nei capoluoghi perché l’industria è scomparsa dalle due regioni.",
+        "Le due regioni hanno aumentato la popolazione più della media nazionale grazie al turismo.",
+        "Torino e Venezia hanno seguito lo stesso percorso, diventando soprattutto centri industriali."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "it-regioni-che-cambiano-04",
+        "it-regioni-che-cambiano-06"
+      ],
+      "explanationZh": "第4句和第6句共同表明：皮埃蒙特与威尼托的工业依然重要，同时，都灵发展了服务业与创新，威尼斯则以服务业和旅游业见长。首府的服务业发展可以与地区工业并存。",
+      "promptZh": "比较皮埃蒙特与威尼托，可以看出什么？"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-it-protezione-in-piazza",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "it-protezione-in-piazza-q1",
+      "kind": "main-idea",
+      "prompt": "Di che cosa parla soprattutto il testo?",
+      "options": [
+        "Di attività a Roma per conoscere rischi e prevenzione.",
+        "Di incontri tra studenti per parlare della vita universitaria.",
+        "Di visite a tre città per studiare la storia italiana.",
+        "Di corsi per imparare a lavorare nelle sale operative."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "it-protezione-in-piazza-02",
+        "it-protezione-in-piazza-05",
+        "it-protezione-in-piazza-11"
+      ],
+      "explanationZh": "文章介绍在罗马举办的民防主题活动。公众可以了解科学家的工作，活动的目标是帮助人们认识风险和预防的重要性。",
+      "promptZh": "这篇文章主要讲什么？"
+    },
+    {
+      "id": "it-protezione-in-piazza-q2",
+      "kind": "detail",
+      "prompt": "Dove si trova il villaggio e a che ora è aperto?",
+      "options": [
+        "A Villa Borghese, dalle diciassette alle ventuno.",
+        "In una scuola di Roma, dalle nove alle diciassette.",
+        "A Villa Borghese, dalle nove alle diciassette.",
+        "In una scuola di Roma, dalle diciassette alle ventuno."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "it-protezione-in-piazza-03"
+      ],
+      "explanationZh": "第3句明确说明，活动村位于博尔盖塞公园的锡耶纳广场，开放时间为9时至17时。",
+      "promptZh": "活动村在哪里，几点开放？"
+    },
+    {
+      "id": "it-protezione-in-piazza-q3",
+      "kind": "cause",
+      "prompt": "A che cosa servono i collegamenti con le sale operative?",
+      "options": [
+        "A partecipare ai tre seminari con gli studenti universitari.",
+        "A vedere come funziona il monitoraggio in tempo reale.",
+        "A conoscere il programma della Settimana Nazionale.",
+        "A visitare di persona le sale di Roma, Napoli e Catania."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "it-protezione-in-piazza-07",
+        "it-protezione-in-piazza-08"
+      ],
+      "explanationZh": "第7句介绍与三个城市监测室的连线，第8句用“Così”说明其作用：让参观者看到实时监测如何运行。",
+      "promptZh": "与监测室的连线有什么作用？"
+    }
+  ]
+}
