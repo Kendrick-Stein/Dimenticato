@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-en-hygiene-labels-and-choices",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 61,
+      "answer": "conducted",
+      "options": [
+        "conducted",
+        "conduct",
+        "conducts",
+        "conduction"
+      ],
+      "explanation": "was后用过去分词conducted构成被动语态，表示调查被开展。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 18,
+      "answer": "respondents",
+      "options": [
+        "responded",
+        "respondents",
+        "responding",
+        "respond"
+      ],
+      "explanation": "数字后需要可数复数名词respondents，指受访者；其余为动词形式。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 123,
+      "answer": "comparable",
+      "options": [
+        "comparably",
+        "compares",
+        "comparable",
+        "compare"
+      ],
+      "explanation": "comparable表示“可比较的”，修饰survey waves，说明这些调查轮次具有可比性；comparably是副词，compare和compares是动词形式，均不能在这里表达这一属性。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s16",
+      "start": 151,
+      "answer": "prominently",
+      "options": [
+        "prominent",
+        "prominence",
+        "prominences",
+        "prominently"
+      ],
+      "explanation": "副词prominently修饰display，表示显眼地展示；形容词和名词不能作此方式状语。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s19",
+      "start": 180,
+      "answer": "limitations",
+      "options": [
+        "limitations",
+        "limited",
+        "limiting",
+        "limitless"
+      ],
+      "explanation": "important后需要名词，limitations指方法及解释上的局限；其余为形容词或分词。"
+    }
+  ]
+}

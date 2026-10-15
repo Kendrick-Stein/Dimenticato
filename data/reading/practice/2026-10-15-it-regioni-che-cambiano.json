@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-it-regioni-che-cambiano",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-regioni-che-cambiano-01",
+      "start": 77,
+      "answer": "trasformazioni",
+      "options": [
+        "trasformazione",
+        "trasformare",
+        "trasformazioni",
+        "trasformata"
+      ],
+      "explanation": "sulle由su＋le构成，后接阴性复数trasformazioni，表示变化。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-regioni-che-cambiano-02",
+      "start": 3,
+      "answer": "schede",
+      "options": [
+        "scheda",
+        "schede",
+        "schedare",
+        "schedato"
+      ],
+      "explanation": "Le与复数动词raccontano共同要求复数名词schede。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-regioni-che-cambiano-03",
+      "start": 70,
+      "answer": "persone",
+      "options": [
+        "persona",
+        "personale",
+        "personalmente",
+        "persone"
+      ],
+      "explanation": "molte要求阴性复数persone，表示许多人。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-regioni-che-cambiano-04",
+      "start": 78,
+      "answer": "capoluogo",
+      "options": [
+        "capoluoghi",
+        "capoluogo",
+        "capitali",
+        "capitanare"
+      ],
+      "explanation": "il suo后接阳性单数capoluogo，指该地区首府。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-regioni-che-cambiano-05",
+      "start": 164,
+      "answer": "abitanti",
+      "options": [
+        "abitante",
+        "abitare",
+        "abitanti",
+        "abitata"
+      ],
+      "explanation": "nuovi要求阳性复数abitanti，表示新居民。"
+    }
+  ]
+}

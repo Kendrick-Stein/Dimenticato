@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-it-memoria-nelle-carte",
+  "storyId": "it-2026-10-04-archivi-carta",
+  "lang": "it",
+  "date": "2026-10-15",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "档案馆",
+    "图书馆",
+    "文化记忆"
+  ],
+  "title": "La memoria di un Paese passa anche dalle carte",
+  "titleZh": "一个国家的记忆也留在纸页之间",
+  "summaryZh": "回看10月4日发布的意大利档案馆与图书馆开放活动计划：公共档案、私人收藏和修复工作如何让人们接近历史。本文不提供当前参观安排，也不声称活动结果已经核实。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：以公共与私人记忆为线索组织长篇说明，包含关系从句、过去计划的叙述、抽象文化词汇和具体例子。非认证测评。",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "Domenica di Carta e Carte in Dimora 2026: archivi e biblioteche aprono le porte alla storia d'Italia",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=9170f636385fbaff93a2c519601712b1&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2772",
+    "publishedAt": "2026-10-04",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 3.0 (CC BY 3.0)",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "来源：Ministero della Cultura — Direzione generale Archivi，《Domenica di Carta e Carte in Dimora 2026: archivi e biblioteche aprono le porte alla storia d'Italia》，2026-10-04；2026-10-15查阅。依据CC BY 3.0使用机构正文，原文及许可链接见上。未使用图片、标志、外部作品或直接引语。",
+  "adaptation": "Dimenticato依据意大利语机构原文进行同语言节选、重组与难度调整，添加简体中文翻译、语境注释、学习总结及原创口语和练习。保留原始数据及事件时期；不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "it-memoria-nelle-carte-01",
+      "text": "Un documento conservato in un archivio può raccontare molto più della vicenda di una singola famiglia: può aiutare a ricostruire la storia di una comunità e del territorio in cui ha vissuto.",
+      "zh": "档案馆保存的一份文件所讲述的，可能远不止一个家庭的经历：它可以帮助重建一个社群及其所生活地区的历史。",
+      "glosses": [
+        {
+          "surface": "ricostruire",
+          "lemma": "ricostruire",
+          "zh": "重建"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-02",
+      "text": "È questa la prospettiva che emerge dal programma di “Domenica di Carta” e “Carte in Dimora”, presentato dalla Direzione generale Archivi in una notizia pubblicata il 4 ottobre 2026.",
+      "zh": "这正是档案总局在2026年10月4日发布的一则消息中介绍的“纸张星期日”和“宅邸中的档案”活动计划所体现的视角。",
+      "glosses": [
+        {
+          "surface": "prospettiva",
+          "lemma": "prospettiva",
+          "zh": "视角"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-03",
+      "text": "Le iniziative erano dedicate al patrimonio documentario pubblico e privato, con appuntamenti previsti per il 3 e il 4 ottobre in numerosi luoghi italiani.",
+      "zh": "这些活动聚焦公共和私人文献遗产，计划于10月3日和4日在意大利多个地点举行。",
+      "glosses": [
+        {
+          "surface": "patrimonio",
+          "lemma": "patrimonio",
+          "zh": "遗产"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-04",
+      "text": "Rileggere oggi quel programma significa osservare le proposte culturali annunciate, senza confonderle con un resoconto verificato di ciò che è effettivamente avvenuto.",
+      "zh": "今天重读这份计划，意味着了解当时公布的文化活动，而不将其混同于经过核实的实际活动报道。",
+      "glosses": [
+        {
+          "surface": "resoconto",
+          "lemma": "resoconto",
+          "zh": "报道"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-05",
+      "text": "“Domenica di Carta”, promossa dal Ministero della Cultura, prevedeva l’apertura degli Archivi di Stato e delle Biblioteche pubbliche statali attraverso mostre, visite guidate e incontri.",
+      "zh": "文化部推动的“纸张星期日”计划通过展览、导览和交流活动，向公众开放国家档案馆和国立公共图书馆。",
+      "glosses": [
+        {
+          "surface": "apertura",
+          "lemma": "apertura",
+          "zh": "开放"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-06",
+      "text": "“Carte in Dimora”, organizzata dall’Associazione Dimore Storiche Italiane, proponeva invece di conoscere archivi e biblioteche private custoditi in castelli, ville e palazzi.",
+      "zh": "由意大利历史宅邸协会组织的“宅邸中的档案”，则提议让公众了解保存在城堡、别墅和宫邸中的私人档案与图书馆。",
+      "glosses": [
+        {
+          "surface": "custoditi",
+          "lemma": "custodire",
+          "zh": "保管的"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-07",
+      "text": "Accostare i due percorsi permetteva di mettere in relazione raccolte diverse, mostrando come la memoria nazionale sia distribuita fra istituzioni pubbliche e luoghi privati.",
+      "zh": "将这两条参观路线结合起来，可以让不同收藏发生联系，展示国家记忆如何分布于公共机构与私人场所。",
+      "glosses": [
+        {
+          "surface": "raccolte",
+          "lemma": "raccolta",
+          "zh": "收藏"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-08",
+      "text": "Manoscritti, mappe, lettere e libri costituivano il punto di partenza per avvicinarsi a epoche e protagonisti differenti attraverso le fonti originali.",
+      "zh": "手稿、地图、信件和书籍构成了起点，让人们通过原始资料接近不同的时代与人物。",
+      "glosses": [
+        {
+          "surface": "fonti",
+          "lemma": "fonte",
+          "zh": "资料来源"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-09",
+      "text": "A Roma, la sede di Sant’Ivo alla Sapienza dell’Archivio di Stato prevedeva visite alla mostra dedicata a Cristina di Svezia e alle testimonianze conservate nelle sue carte.",
+      "zh": "在罗马，国家档案馆的圣伊沃·阿拉·萨皮恩扎馆址计划安排参观有关瑞典克里斯蒂娜女王及相关档案记录的展览。",
+      "glosses": [
+        {
+          "surface": "testimonianze",
+          "lemma": "testimonianza",
+          "zh": "历史记录"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-10",
+      "text": "Il programma comprendeva anche la visita alla Sala Alessandrina e un laboratorio creativo di bambole di carta, ispirate ai personaggi della corte della regina.",
+      "zh": "计划还包括参观亚历山德里娜大厅，以及制作纸娃娃的创意工作坊，其灵感来自女王宫廷中的人物。",
+      "glosses": [
+        {
+          "surface": "laboratorio",
+          "lemma": "laboratorio",
+          "zh": "工作坊"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-11",
+      "text": "A Torino erano previste visite guidate gratuite agli Archivi di Corte, all’interno dell’edificio progettato da Filippo Juvarra e costruito tra il 1731 e il 1733.",
+      "zh": "在都灵，计划举办免费导览，参观宫廷档案馆；其建筑由菲利波·尤瓦拉设计，建于1731年至1733年。",
+      "glosses": [
+        {
+          "surface": "gratuite",
+          "lemma": "gratuito",
+          "zh": "免费的"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-12",
+      "text": "Quell’edificio era stato pensato appositamente per conservare le carte necessarie al governo dello Stato: anche lo spazio, quindi, faceva parte della storia dei documenti.",
+      "zh": "那座建筑是专门为保存国家治理所需文件而设计的：因此，空间本身也是文献历史的一部分。",
+      "glosses": [
+        {
+          "surface": "conservare",
+          "lemma": "conservare",
+          "zh": "保存"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-13",
+      "text": "A Caserta, planimetrie, progetti, inventari e corrispondenza avrebbero accompagnato il pubblico nel passaggio dalla precedente residenza alla realizzazione della Reggia.",
+      "zh": "在卡塞塔，平面图、设计图、清单和通信原计划带领公众了解从旧宅邸到卡塞塔王宫建成的转变。",
+      "glosses": [
+        {
+          "surface": "corrispondenza",
+          "lemma": "corrispondenza",
+          "zh": "通信"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-14",
+      "text": "Il percorso intendeva ricostruire le trasformazioni delle due dimore, le loro funzioni istituzionali e alcuni aspetti della vita della corte borbonica.",
+      "zh": "这条参观路线旨在重建两处宅邸的变化、其制度性职能以及波旁王朝宫廷生活的某些方面。",
+      "glosses": [
+        {
+          "surface": "dimore",
+          "lemma": "dimora",
+          "zh": "宅邸"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-15",
+      "text": "A Ravenna, invece, due visite guidate avrebbero consentito di entrare nei depositi dell’Archivio di Stato e conoscere una parte dei materiali lì conservati.",
+      "zh": "而在拉文纳，两场导览原计划让公众进入国家档案馆库房，了解保存在那里的部分资料。",
+      "glosses": [
+        {
+          "surface": "depositi",
+          "lemma": "deposito",
+          "zh": "库房"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-16",
+      "text": "Le biblioteche proponevano altri modi di leggere questo patrimonio: a Roma, la Biblioteca statale Antonio Baldini annunciava un’esposizione di edizioni di Pinocchio provenienti dalle proprie raccolte.",
+      "zh": "图书馆提出了理解这些遗产的其他方式：在罗马，安东尼奥·巴尔迪尼国立图书馆宣布将展出自身馆藏的不同版本《匹诺曹》。",
+      "glosses": [
+        {
+          "surface": "edizioni",
+          "lemma": "edizione",
+          "zh": "版本"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-17",
+      "text": "Tra traduzioni e libri d’artista, il percorso avrebbe permesso di osservare da vicino versioni meno conosciute delle avventure del burattino.",
+      "zh": "通过翻译版本与艺术家书籍，这一展览原计划让公众近距离观察木偶奇遇故事中不那么为人熟知的版本。",
+      "glosses": [
+        {
+          "surface": "traduzioni",
+          "lemma": "traduzione",
+          "zh": "译本"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-18",
+      "text": "A Cremona, un’attività rivolta ai più giovani prevedeva di trasformare per un giorno la Sala dei Ragazzi in un laboratorio ispirato al Duecento.",
+      "zh": "在克雷莫纳，一项面向年轻读者的活动计划将儿童阅览室在一天内变成以13世纪为灵感的工作坊。",
+      "glosses": [
+        {
+          "surface": "rivolta",
+          "lemma": "rivolgere",
+          "zh": "面向的"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-19",
+      "text": "Con l’aiuto degli animatori, i partecipanti avrebbero potuto realizzare un foglio di carta secondo le pratiche dei mastri cartai medievali.",
+      "zh": "在活动指导人员的帮助下，参与者原本可以按照中世纪造纸匠的工艺制作一张纸。",
+      "glosses": [
+        {
+          "surface": "foglio",
+          "lemma": "foglio",
+          "zh": "纸张"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-20",
+      "text": "A Lucca, un incontro con esperti era dedicato al restauro dei libri, dalle antiche riparazioni alle tecniche e ai materiali utilizzati oggi.",
+      "zh": "在卢卡，一场专家交流活动以书籍修复为主题，涵盖古代修补到今天使用的技术与材料。",
+      "glosses": [
+        {
+          "surface": "restauro",
+          "lemma": "restauro",
+          "zh": "修复"
+        }
+      ]
+    },
+    {
+      "id": "it-memoria-nelle-carte-21",
+      "text": "Nel loro insieme, queste proposte collegavano la scoperta delle fonti alla cura materiale degli oggetti che le trasmettono, rendendo più vicino un patrimonio spesso poco conosciuto.",
+      "zh": "总体而言，这些活动将发现历史资料与维护承载资料的实物联系起来，让人们更接近往往不太为人熟知的遗产。",
+      "glosses": [
+        {
+          "surface": "cura",
+          "lemma": "cura",
+          "zh": "维护"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "prospettiva",
+        "zh": "视角",
+        "sentenceId": "it-memoria-nelle-carte-02",
+        "lemma": "prospettiva"
+      },
+      {
+        "text": "patrimonio",
+        "zh": "遗产",
+        "sentenceId": "it-memoria-nelle-carte-03",
+        "lemma": "patrimonio"
+      },
+      {
+        "text": "resoconto",
+        "zh": "报道",
+        "sentenceId": "it-memoria-nelle-carte-04",
+        "lemma": "resoconto"
+      },
+      {
+        "text": "apertura",
+        "zh": "开放",
+        "sentenceId": "it-memoria-nelle-carte-05",
+        "lemma": "apertura"
+      },
+      {
+        "text": "custoditi",
+        "zh": "保管的",
+        "sentenceId": "it-memoria-nelle-carte-06",
+        "lemma": "custodire"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "mettere in relazione",
+        "zh": "将……联系起来",
+        "sentenceId": "it-memoria-nelle-carte-07"
+      },
+      {
+        "text": "attraverso le fonti originali",
+        "zh": "通过原始资料",
+        "sentenceId": "it-memoria-nelle-carte-08"
+      },
+      {
+        "text": "era stato pensato",
+        "zh": "此前曾被设计",
+        "sentenceId": "it-memoria-nelle-carte-12"
+      },
+      {
+        "text": "Nel loro insieme",
+        "zh": "总体而言",
+        "sentenceId": "it-memoria-nelle-carte-21"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-memoria-nelle-carte-04",
+        "note": "senza＋不定式表达“而不……”，明确区分计划与结果。"
+      },
+      {
+        "sentenceId": "it-memoria-nelle-carte-19",
+        "note": "avrebbero potuto表示从过去视角看计划中可能发生的事，并不证明活动已实现。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Perché può essere utile collegare archivi pubblici e raccolte private?",
+        "zh": "为什么将公共档案与私人收藏联系起来可能有帮助？"
+      },
+      {
+        "text": "Quale attività ti farebbe sentire più vicino al passato: leggere una lettera, visitare un deposito o fabbricare carta?",
+        "zh": "哪项活动更能让你接近过去：读一封信、参观库房，还是造纸？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mettere in relazione fonti diverse aiuta a ricostruire una storia.",
+        "zh": "把不同资料联系起来有助于重建一段历史。"
+      },
+      {
+        "text": "La conservazione dei documenti rende possibile la loro lettura nel futuro.",
+        "zh": "保存文献使未来的人能够阅读它们。"
+      }
+    ]
+  }
+}

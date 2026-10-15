@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-en-rural-broadband-arrives",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 33,
+      "answer": "reliable",
+      "options": [
+        "reliable",
+        "reliably",
+        "reliability",
+        "rely"
+      ],
+      "explanation": "修饰internet connection需要形容词reliable；其他形式不能直接作此定语。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 40,
+      "answer": "completed",
+      "options": [
+        "completion",
+        "completed",
+        "completes",
+        "completing"
+      ],
+      "explanation": "has been后以过去分词completed构成被动完成时；其余形式不合结构。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s4",
+      "start": 32,
+      "answer": "supplier",
+      "options": [
+        "supplied",
+        "supplying",
+        "supplier",
+        "supplies"
+      ],
+      "explanation": "the后需要单数名词supplier，指供应商Gigaclear；其余不表示此角色。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 28,
+      "answer": "residents",
+      "options": [
+        "residential",
+        "residence",
+        "residing",
+        "residents"
+      ],
+      "explanation": "help后是能够学习、工作和经营业务的居民residents；其余不表示这些人。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 34,
+      "answer": "continuing",
+      "options": [
+        "continuing",
+        "continues",
+        "continue",
+        "continuation"
+      ],
+      "explanation": "is后用continuing构成现在进行时，表示工程仍在推进。"
+    }
+  ]
+}

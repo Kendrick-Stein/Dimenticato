@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-fr-regarder-sa-ville-autrement",
+  "storyId": "culture-architecture-regions-2026-10-14",
+  "lang": "fr",
+  "date": "2026-10-15",
+  "contentType": "native-adaptation",
+  "title": "Regarder sa ville autrement",
+  "titleZh": "换一种眼光看城市",
+  "summaryZh": "10月15日至18日，法国建筑日通过参观、散步与儿童活动，让人们观察建筑及其日常用途。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体地点与活动、常用现在时和简单目的表达；建筑相关新词有中文支持。非认证CEFR测评。",
+  "category": "culture",
+  "topics": [
+    "建筑",
+    "城市生活",
+    "亲子活动"
+  ],
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Les Journées nationales de l’architecture dans vos régions",
+    "url": "https://www.culture.gouv.fr/actualites/les-journees-nationales-de-l-architecture-dans-vos-regions",
+    "publishedAt": "2026-10-14",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+  },
+  "attribution": "来源：Ministère de la Culture，《Les Journées nationales de l’architecture dans vos régions》，原文发布日期 2026-10-14，查阅日期 2026-10-15。原文链接见来源栏。仅改写文化部机构叙述，不使用图片、标识、第三方采访引语或链接中的作品。",
+  "adaptation": "Dimenticato 根据法语机构原文进行同语言节选、重组与分级改写，添加简中逐句翻译、语境注释和原创练习；不代表原机构认可。本改写、中文译文及配套学习材料按 CC BY-SA 3.0 FR 发布。",
+  "sentences": [
+    {
+      "id": "fr-regarder-sa-ville-autrement-01",
+      "text": "Du 15 au 18 octobre 2026, les Journées nationales de l’architecture proposent des activités dans les régions françaises.",
+      "zh": "2026年10月15日至18日，全国建筑日在法国各地区举办活动。",
+      "glosses": [
+        {
+          "surface": "activités",
+          "lemma": "activité",
+          "zh": "活动"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-02",
+      "text": "Pendant quatre jours, les visiteurs peuvent découvrir des bâtiments et rencontrer des professionnels près de chez eux.",
+      "zh": "四天里，参观者可以在家附近探索建筑并与专业人士见面。",
+      "glosses": [
+        {
+          "surface": "bâtiments",
+          "lemma": "bâtiment",
+          "zh": "建筑"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-03",
+      "text": "Ils peuvent aussi poser des questions pour mieux comprendre le travail des architectes.",
+      "zh": "他们也可以提问，以更好地了解建筑师的工作。",
+      "glosses": [
+        {
+          "surface": "comprendre",
+          "lemma": "comprendre",
+          "zh": "理解"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-04",
+      "text": "Cette année, le programme invite à réfléchir à la transformation des bâtiments et à leurs nouvelles fonctions.",
+      "zh": "今年的活动邀请大家思考建筑的改造及其新用途。",
+      "glosses": [
+        {
+          "surface": "fonctions",
+          "lemma": "fonction",
+          "zh": "用途"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-05",
+      "text": "Rénover un bâtiment permet de conserver le patrimoine et de réduire notre empreinte carbone.",
+      "zh": "翻新建筑可以保护文化遗产，并减少我们的碳足迹。",
+      "glosses": [
+        {
+          "surface": "réduire",
+          "lemma": "réduire",
+          "zh": "减少"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-06",
+      "text": "À Bourges, le musée Estève propose des visites pour les tout-petits.",
+      "zh": "在布尔日，埃斯泰夫博物馆为幼儿安排参观活动。",
+      "glosses": [
+        {
+          "surface": "tout-petits",
+          "lemma": "tout-petit",
+          "zh": "幼儿"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-07",
+      "text": "À Caen, des promenades permettent de découvrir la ville reconstruite.",
+      "zh": "在卡昂，人们可以通过散步了解重建后的城市。",
+      "glosses": [
+        {
+          "surface": "promenades",
+          "lemma": "promenade",
+          "zh": "散步活动"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-08",
+      "text": "À Paris, les enfants peuvent construire une cité-jardin en papier aux Récollets, à partir de sept ans.",
+      "zh": "在巴黎，七岁及以上的儿童可以在Récollets用纸搭建一座花园城市。",
+      "glosses": [
+        {
+          "surface": "papier",
+          "lemma": "papier",
+          "zh": "纸"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-09",
+      "text": "À Toulon, un petit parlement invite les enfants à débattre.",
+      "zh": "在土伦，一个小议会邀请儿童参与讨论。",
+      "glosses": [
+        {
+          "surface": "débattre",
+          "lemma": "débattre",
+          "zh": "讨论"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-10",
+      "text": "Plus de 1 400 événements sont annoncés pour les petits et les grands.",
+      "zh": "活动预告包括面向儿童与成人的1400多场活动。",
+      "glosses": [
+        {
+          "surface": "annoncés",
+          "lemma": "annoncer",
+          "zh": "预告的"
+        }
+      ]
+    },
+    {
+      "id": "fr-regarder-sa-ville-autrement-11",
+      "text": "Le but est aussi d’observer notre cadre de vie et de réfléchir à son avenir.",
+      "zh": "目的还包括观察我们的生活环境，并思考它的未来。",
+      "glosses": [
+        {
+          "surface": "avenir",
+          "lemma": "avenir",
+          "zh": "未来"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "activités",
+        "zh": "活动",
+        "sentenceId": "fr-regarder-sa-ville-autrement-01"
+      },
+      {
+        "text": "bâtiments",
+        "zh": "建筑",
+        "sentenceId": "fr-regarder-sa-ville-autrement-02"
+      },
+      {
+        "text": "comprendre",
+        "zh": "理解",
+        "sentenceId": "fr-regarder-sa-ville-autrement-03"
+      },
+      {
+        "text": "réduire",
+        "zh": "减少",
+        "sentenceId": "fr-regarder-sa-ville-autrement-05"
+      },
+      {
+        "text": "promenades",
+        "zh": "散步活动",
+        "sentenceId": "fr-regarder-sa-ville-autrement-07"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "près de chez eux",
+        "zh": "在他们家附近",
+        "sentenceId": "fr-regarder-sa-ville-autrement-02"
+      },
+      {
+        "text": "à partir de sept ans",
+        "zh": "从七岁起",
+        "sentenceId": "fr-regarder-sa-ville-autrement-08"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-regarder-sa-ville-autrement-03",
+        "note": "pour + 不定式表达目的；mieux 表示“更好地”。"
+      },
+      {
+        "sentenceId": "fr-regarder-sa-ville-autrement-11",
+        "note": "le but est de + 不定式用于说明目标。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel bâtiment aimeriez-vous visiter dans votre ville ?",
+        "zh": "你想参观自己城市里的哪座建筑？"
+      },
+      {
+        "text": "Préférez-vous une promenade ou un atelier en famille ?",
+        "zh": "你更喜欢一家人散步还是参加工作坊？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "J’aimerais visiter…",
+        "zh": "我想参观……",
+        "note": "原创口语表达，可按自己的观点补充。"
+      },
+      {
+        "text": "Près de chez moi, il y a…",
+        "zh": "在我家附近有……",
+        "note": "原创口语表达，可按自己的观点补充。"
+      }
+    ]
+  }
+}

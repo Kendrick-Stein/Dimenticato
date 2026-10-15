@@ -2,6 +2,114 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-15-en-more-organic-food",
+      "lang": "en",
+      "date": "2026-10-15",
+      "title": "More organic food from English farms",
+      "titleZh": "来自英格兰农场的更多有机食品",
+      "summaryZh": "英格兰发布有机农业行动计划，希望帮助农民生产和销售更多有机食品。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "日常购物",
+        "农业",
+        "食品选择"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-15-fr-apprendre-a-proteger-le-patrimoine",
+      "lang": "fr",
+      "date": "2026-10-15",
+      "title": "Protéger le patrimoine en échangeant les expériences",
+      "titleZh": "通过交流经验保护文化遗产",
+      "summaryZh": "Courants du monde项目让14名专业人士在法国交流文化遗产与气候风险经验，强调相互学习及因地制宜。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "文化遗产",
+        "国际交流",
+        "气候适应"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-15-fr-regarder-sa-ville-autrement",
+      "lang": "fr",
+      "date": "2026-10-15",
+      "title": "Regarder sa ville autrement",
+      "titleZh": "换一种眼光看城市",
+      "summaryZh": "10月15日至18日，法国建筑日通过参观、散步与儿童活动，让人们观察建筑及其日常用途。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "建筑",
+        "城市生活",
+        "亲子活动"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-15-it-protezione-in-piazza",
+      "lang": "it",
+      "date": "2026-10-15",
+      "title": "La protezione civile arriva in piazza",
+      "titleZh": "民防知识走进广场",
+      "summaryZh": "INGV于10月14日介绍罗马民防主题活动：10月15日至18日，公众和学校可了解地震与火山监测。本文介绍公布的计划。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "公共活动",
+        "防灾知识",
+        "科学交流"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-15-en-rural-broadband-arrives",
+      "lang": "en",
+      "date": "2026-10-15",
+      "title": "Better connections for rural communities",
+      "titleZh": "为乡村社区带来更好的网络连接",
+      "summaryZh": "北牛津郡的全光纤工程提前完成，更多偏远家庭和企业可以接入网络；南部工程仍在进行。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "乡村生活",
+        "网络连接",
+        "公共服务"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-13",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-15-it-regioni-che-cambiano",
+      "lang": "it",
+      "date": "2026-10-15",
+      "title": "Le regioni italiane raccontate dai dati",
+      "titleZh": "用数据讲述意大利地区的变化",
+      "summaryZh": "Istat于10月13日发布地区变迁资料。本文比较几个地区长期的人口流动、产业变化和大区首府角色，不把历史趋势当成10月新发生的变化。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "地区变迁",
+        "人口流动",
+        "城市生活"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-13",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-14-fr-des-vacances-pour-creer",
       "lang": "fr",
       "date": "2026-10-14",
@@ -200,6 +308,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-15-it-memoria-nelle-carte",
+      "lang": "it",
+      "date": "2026-10-15",
+      "title": "La memoria di un Paese passa anche dalle carte",
+      "titleZh": "一个国家的记忆也留在纸页之间",
+      "summaryZh": "回看10月4日发布的意大利档案馆与图书馆开放活动计划：公共档案、私人收藏和修复工作如何让人们接近历史。本文不提供当前参观安排，也不声称活动结果已经核实。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "档案馆",
+        "图书馆",
+        "文化记忆"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-04",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-en-income-beyond-the-headline",
       "lang": "en",
       "date": "2026-10-13",
@@ -287,6 +413,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-09-30",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-15-en-hygiene-labels-and-choices",
+      "lang": "en",
+      "date": "2026-10-15",
+      "title": "Food hygiene labels: awareness is only the beginning",
+      "titleZh": "食品卫生标签：知道只是第一步",
+      "summaryZh": "一份新发布的报告分析2025年的调查：认识卫生评分、实际查看评分和把评分用于消费决策，是不同层面的行为。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "外出用餐",
+        "消费选择",
+        "调查解读"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-29",
       "contentType": "native-adaptation"
     },
     {
@@ -505,6 +649,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-15-fr-cinema-cooperation-et-promesses",
+      "lang": "fr",
+      "date": "2026-10-15",
+      "title": "Cinéma : donner une suite aux engagements internationaux",
+      "titleZh": "电影：如何落实国际承诺",
+      "summaryZh": "9月的Sommet Lumière提出国际网络、文化项目与融资承诺。本文区分已建立的合作框架与仍待落实的计划。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "电影",
+        "国际合作",
+        "文化政策"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-11",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-14-fr-les-visiteurs-du-patrimoine",
       "lang": "fr",
       "date": "2026-10-14",
@@ -520,6 +682,24 @@
       ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2026-09-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-15-de-schlaf-und-lebensbedingungen",
+      "lang": "de",
+      "date": "2026-10-15",
+      "title": "Schlaf und Lebensbedingungen: Was eine Befragung zeigen kann",
+      "titleZh": "睡眠与生活条件：一项调查能够说明什么",
+      "summaryZh": "阅读2026年9月发表的北威州睡眠研究：数据采集于2024年，显示睡眠体验与心理负担和资源存在关联。本篇同时解释样本限制、自我报告和“关联不等于因果”。",
+      "level": "B2",
+      "category": "health",
+      "topics": [
+        "睡眠",
+        "社会生活",
+        "研究方法"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-09",
       "contentType": "native-adaptation"
     },
     {

@@ -1,0 +1,343 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-fr-cinema-cooperation-et-promesses",
+  "storyId": "culture-sommet-lumiere-2026-09-11",
+  "lang": "fr",
+  "date": "2026-10-15",
+  "contentType": "native-adaptation",
+  "title": "Cinéma : donner une suite aux engagements internationaux",
+  "titleZh": "电影：如何落实国际承诺",
+  "summaryZh": "9月的Sommet Lumière提出国际网络、文化项目与融资承诺。本文区分已建立的合作框架与仍待落实的计划。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：以国际电影政策为主题，区分机构、承诺、资金工具及执行前景；包含复合句、让步和概念性词汇。非认证CEFR测评。",
+  "category": "culture",
+  "topics": [
+    "电影",
+    "国际合作",
+    "文化政策"
+  ],
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Sommet Lumière : des engagements concrets pour le cinéma et l’image animée",
+    "url": "https://www.culture.gouv.fr/actualites/sommet-lumiere-des-engagements-concrets-pour-le-cinema-et-l-image-animee",
+    "publishedAt": "2026-09-11",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+  },
+  "attribution": "来源：Ministère de la Culture，《Sommet Lumière : des engagements concrets pour le cinéma et l’image animée》，原文发布日期 2026-09-11，查阅日期 2026-10-15。原文链接见来源栏。仅改写文化部机构叙述，不使用图片、标识、第三方采访引语或链接中的作品。",
+  "adaptation": "Dimenticato 根据法语机构原文进行同语言节选、重组与分级改写，添加简中逐句翻译、语境注释和原创练习；不代表原机构认可。本改写、中文译文及配套学习材料按 CC BY-SA 3.0 FR 发布。",
+  "sentences": [
+    {
+      "id": "fr-cinema-cooperation-et-promesses-01",
+      "text": "Le 11 septembre 2026, le ministère de la Culture a présenté les résultats du premier Sommet Lumière, organisé quatre jours plus tôt à Saint-Paul-de-Vence.",
+      "zh": "2026年9月11日，文化部介绍了四天前在圣保罗德旺斯举办的首届Sommet Lumière峰会的成果。",
+      "glosses": [
+        {
+          "surface": "résultats",
+          "lemma": "résultat",
+          "zh": "成果"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-02",
+      "text": "Plus de deux cents invités, représentant soixante pays, régions et organisations internationales, s’y étaient réunis pour réfléchir à l’avenir du cinéma et de l’image animée.",
+      "zh": "两百多名代表六十个国家、地区和国际组织的嘉宾在此聚会，思考电影与动态图像的未来。",
+      "glosses": [
+        {
+          "surface": "invités",
+          "lemma": "invité",
+          "zh": "受邀嘉宾"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-03",
+      "text": "La rencontre rassemblait des responsables publics, des créateurs, des producteurs, des diffuseurs, des plateformes et des représentants des salles, du jeu vidéo et de la technologie.",
+      "zh": "聚会汇集了公共部门负责人、创作者、制片人、传播机构、平台，以及影院、电子游戏和技术领域的代表。",
+      "glosses": [
+        {
+          "surface": "diffuseurs",
+          "lemma": "diffuseur",
+          "zh": "传播、播映机构"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-04",
+      "text": "Ces acteurs n’ont pas tous les mêmes intérêts ni les mêmes modèles économiques, mais le sommet cherchait précisément à faire émerger des positions communes et de nouvelles coopérations.",
+      "zh": "这些参与者的利益和经济模式不尽相同，而峰会恰恰希望促成共同立场与新的合作。",
+      "glosses": [
+        {
+          "surface": "émerger",
+          "lemma": "émerger",
+          "zh": "形成、出现"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-05",
+      "text": "Parmi ses réalisations figure l’Alliance Lumière, présentée comme le premier réseau mondial des institutions publiques chargées du cinéma et de l’audiovisuel.",
+      "zh": "峰会成果包括Alliance Lumière，它被介绍为负责电影和视听事务的公共机构的首个全球网络。",
+      "glosses": [
+        {
+          "surface": "réseau",
+          "lemma": "réseau",
+          "zh": "网络"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-06",
+      "text": "Au moment de la publication, cinquante-six agences avaient adhéré à cette alliance, destinée à partager les expertises, à coordonner les positions internationales et à susciter des projets communs.",
+      "zh": "截至文章发布时，已有56家机构加入这一联盟，旨在分享专业经验、协调国际立场并推动共同项目。",
+      "glosses": [
+        {
+          "surface": "adhéré",
+          "lemma": "adhérer",
+          "zh": "加入"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-07",
+      "text": "Pour prolonger les échanges, ses membres doivent se retrouver chaque année à Cannes et lors d’un congrès accueilli à tour de rôle par un État membre.",
+      "zh": "为延续交流，联盟成员计划每年在戛纳以及由成员国轮流举办的大会上聚会。",
+      "glosses": [
+        {
+          "surface": "prolonger",
+          "lemma": "prolonger",
+          "zh": "延续"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-08",
+      "text": "La Grèce s’est portée candidate pour accueillir l’édition 2027 : il s’agit d’une candidature mentionnée par l’article, et non de la confirmation d’une décision définitive.",
+      "zh": "希腊已申请承办2027年的大会：这是文章提到的一项申请，而非最终决定的确认。",
+      "glosses": [
+        {
+          "surface": "candidature",
+          "lemma": "candidature",
+          "zh": "申请"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-09",
+      "text": "Le sommet a également abouti à six déclarations, dont la Déclaration Lumière, approuvée par plus de cent vingt signataires pour définir un cadre commun.",
+      "zh": "峰会还形成了六份宣言，其中包括得到120多个签署方认可、用于确定共同框架的Lumière宣言。",
+      "glosses": [
+        {
+          "surface": "signataires",
+          "lemma": "signataire",
+          "zh": "签署方"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-10",
+      "text": "Les cinq autres textes concernent l’intelligence artificielle et la création, l’éducation à l’image, la lutte contre le piratage, la parité ainsi que la prévention des violences et du harcèlement sexistes et sexuels, et enfin la durabilité.",
+      "zh": "另外五份文本涉及人工智能与创作、影像教育、反盗版、性别平等及性别和性方面暴力与骚扰的预防，以及可持续性。",
+      "glosses": [
+        {
+          "surface": "durabilité",
+          "lemma": "durabilité",
+          "zh": "可持续性"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-11",
+      "text": "À ces déclarations correspondent six mesures phares, dont l’Alliance Lumière et IRIS, une initiative internationale qui doit soutenir les salles et les distributeurs indépendants tout en favorisant la circulation des œuvres.",
+      "zh": "这些宣言对应六项重点措施，其中包括Alliance Lumière及IRIS；后者是一项拟支持独立影院和发行商，同时促进作品流通的国际倡议。",
+      "glosses": [
+        {
+          "surface": "indépendants",
+          "lemma": "indépendant",
+          "zh": "独立的"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-12",
+      "text": "Un autre effort, conduit avec ALIPH, l’Alliance internationale pour la protection du patrimoine dans les zones en conflit, doit contribuer à préserver les films et les archives audiovisuelles menacés.",
+      "zh": "另一项与ALIPH，即冲突地区遗产保护国际联盟合作开展的行动，旨在帮助保存受威胁的电影和视听档案。",
+      "glosses": [
+        {
+          "surface": "préserver",
+          "lemma": "préserver",
+          "zh": "保存、保护"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-13",
+      "text": "Un manifeste élaboré avec l’UNESCO vise, pour sa part, à faire de l’éducation à l’image un apprentissage universel.",
+      "zh": "一份与联合国教科文组织共同制定的宣言则旨在让影像教育成为普遍性的学习内容。",
+      "glosses": [
+        {
+          "surface": "apprentissage",
+          "lemma": "apprentissage",
+          "zh": "学习"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-14",
+      "text": "S’y ajoutent un futur festival international du jeu vidéo et Audiovisual Next Gen, un programme de mentorat pour une nouvelle génération de professionnels des industries créatives.",
+      "zh": "此外还有一个未来的国际电子游戏节，以及面向新一代创意产业专业人士的导师指导项目Audiovisual Next Gen。",
+      "glosses": [
+        {
+          "surface": "mentorat",
+          "lemma": "mentorat",
+          "zh": "导师指导"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-15",
+      "text": "L’annonce financière majeure est le Partenariat Lumière, qui reste ouvert à d’autres États et vise le développement des industries du cinéma, de l’audiovisuel et de l’image animée.",
+      "zh": "最重要的融资公告是Partenariat Lumière，它仍向其他国家开放，旨在发展电影、视听和动态图像产业。",
+      "glosses": [
+        {
+          "surface": "développement",
+          "lemma": "développement",
+          "zh": "发展"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-16",
+      "text": "La France mobilisera cinq cents millions d’euros par l’intermédiaire de Bpifrance sur la période 2027-2031, notamment au moyen d’investissements en capital et de financements pour la recherche, le développement et l’innovation créative.",
+      "zh": "法国将于2027至2031年通过Bpifrance调动五亿欧元，特别是采用股权投资，以及面向研究、开发和创意创新的融资方式。",
+      "glosses": [
+        {
+          "surface": "investissements",
+          "lemma": "investissement",
+          "zh": "投资"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-17",
+      "text": "Le dispositif prévoit aussi des mécanismes de cofinancement et de partage des risques ; la somme annoncée ne correspond donc pas à une seule catégorie d’aide.",
+      "zh": "该安排还包括共同融资和风险分担机制；因此，公布的金额并非只对应一种援助形式。",
+      "glosses": [
+        {
+          "surface": "cofinancement",
+          "lemma": "cofinancement",
+          "zh": "共同融资"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-18",
+      "text": "La République de Corée a annoncé un engagement équivalent pour soutenir sa propre industrie cinématographique, ce qui porte à un milliard d’euros l’effort annoncé par les deux pays.",
+      "zh": "大韩民国宣布了同等金额的承诺，以支持本国电影产业，使两国宣布的总额达到十亿欧元。",
+      "glosses": [
+        {
+          "surface": "engagement",
+          "lemma": "engagement",
+          "zh": "承诺"
+        }
+      ]
+    },
+    {
+      "id": "fr-cinema-cooperation-et-promesses-19",
+      "text": "Ces montants sont des engagements présentés en septembre, et non un bilan de dépenses déjà réalisées ; l’enjeu souligné par le ministère reste de transformer les annonces et les rencontres en partenariats durables.",
+      "zh": "这些金额是九月提出的承诺，而非已完成支出的账目；文化部强调的挑战仍是把公告与会面转化为持久的伙伴关系。",
+      "glosses": [
+        {
+          "surface": "durables",
+          "lemma": "durable",
+          "zh": "持久的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "résultats",
+        "zh": "成果",
+        "sentenceId": "fr-cinema-cooperation-et-promesses-01"
+      },
+      {
+        "text": "réseau",
+        "zh": "网络",
+        "sentenceId": "fr-cinema-cooperation-et-promesses-05"
+      },
+      {
+        "text": "adhéré",
+        "zh": "加入",
+        "sentenceId": "fr-cinema-cooperation-et-promesses-06"
+      },
+      {
+        "text": "signataires",
+        "zh": "签署方",
+        "sentenceId": "fr-cinema-cooperation-et-promesses-09"
+      },
+      {
+        "text": "engagement",
+        "zh": "承诺",
+        "sentenceId": "fr-cinema-cooperation-et-promesses-18"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "à tour de rôle",
+        "zh": "轮流",
+        "sentenceId": "fr-cinema-cooperation-et-promesses-07"
+      },
+      {
+        "text": "doit contribuer à",
+        "zh": "预期有助于",
+        "sentenceId": "fr-cinema-cooperation-et-promesses-12"
+      },
+      {
+        "text": "par l’intermédiaire de",
+        "zh": "通过……",
+        "sentenceId": "fr-cinema-cooperation-et-promesses-16"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-cinema-cooperation-et-promesses-08",
+        "note": "candidature 是申请；不能把申办写成已确定举办。"
+      },
+      {
+        "sentenceId": "fr-cinema-cooperation-et-promesses-19",
+        "note": "区别 engagement 与 dépenses réalisées：承诺金额不等于已支付金额。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel rôle les salles indépendantes jouent-elles dans la diversité culturelle ?",
+        "zh": "独立影院在文化多样性方面起什么作用？"
+      },
+      {
+        "text": "Comment pourrait-on vérifier qu’un sommet produit des résultats durables ?",
+        "zh": "如何检验一次峰会是否产生了持久的成果？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Un engagement devrait être suivi de…",
+        "zh": "一项承诺之后应当有……",
+        "note": "原创口语表达，可按自己的观点补充。"
+      },
+      {
+        "text": "La coopération serait plus efficace si…",
+        "zh": "如果……，合作会更有效。",
+        "note": "原创口语表达，可按自己的观点补充。"
+      }
+    ]
+  }
+}

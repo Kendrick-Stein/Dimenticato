@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-fr-regarder-sa-ville-autrement",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-regarder-sa-ville-autrement-01",
+      "start": 82,
+      "answer": "activités",
+      "options": [
+        "activité",
+        "activités",
+        "actif",
+        "activer"
+      ],
+      "explanation": "按原文恢复词形：des 后用复数名词 activités，指活动。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-regarder-sa-ville-autrement-02",
+      "start": 58,
+      "answer": "bâtiments",
+      "options": [
+        "bâtir",
+        "bâtiment",
+        "bâtiments",
+        "bâti"
+      ],
+      "explanation": "按原文恢复词形：des 后需要复数名词 bâtiments。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-regarder-sa-ville-autrement-03",
+      "start": 49,
+      "answer": "comprendre",
+      "options": [
+        "comprenons",
+        "comprenez",
+        "comprendre",
+        "comprend"
+      ],
+      "explanation": "按原文恢复词形：pour mieux 后接不定式 comprendre，表示目的。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-regarder-sa-ville-autrement-05",
+      "start": 60,
+      "answer": "réduire",
+      "options": [
+        "réduisons",
+        "réduire",
+        "réduisez",
+        "réduit"
+      ],
+      "explanation": "按原文恢复词形：permet de 后的并列动词用不定式 réduire。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-regarder-sa-ville-autrement-07",
+      "start": 12,
+      "answer": "promenades",
+      "options": [
+        "promener",
+        "promenade",
+        "promenades",
+        "promenant"
+      ],
+      "explanation": "按原文恢复词形：des 后及复数动词 permettent 前需要复数名词 promenades。"
+    }
+  ]
+}
