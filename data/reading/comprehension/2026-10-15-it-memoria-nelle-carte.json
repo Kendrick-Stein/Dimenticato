@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-it-memoria-nelle-carte",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "it-memoria-nelle-carte-q1",
+      "kind": "main-idea",
+      "prompt": "Quale idea collega le diverse proposte culturali presentate nel testo?",
+      "options": [
+        "Il confronto tra edifici storici serve soprattutto a ricostruire l’evoluzione dell’architettura italiana.",
+        "Le collezioni delle corti spiegano soprattutto come le famiglie reali organizzavano la loro vita quotidiana.",
+        "Le fonti conservate in luoghi pubblici e privati aiutano a conoscere e trasmettere la memoria del Paese.",
+        "Le attività manuali hanno lo scopo principale di preparare nuovi professionisti del restauro e della carta."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "it-memoria-nelle-carte-01",
+        "it-memoria-nelle-carte-07",
+        "it-memoria-nelle-carte-08",
+        "it-memoria-nelle-carte-21"
+      ],
+      "explanationZh": "文章将公共与私人收藏联系起来，说明原始文献能帮助人们了解社区、地区与国家的历史。结尾又把发现历史资料与维护承载资料的实物相联系，因此核心是了解和传承文化记忆。",
+      "promptZh": "文中介绍的不同文化活动由哪一个共同理念联系起来？"
+    },
+    {
+      "id": "it-memoria-nelle-carte-q2",
+      "kind": "detail",
+      "prompt": "In che cosa si distinguevano “Domenica di Carta” e “Carte in Dimora”?",
+      "options": [
+        "La prima riguardava archivi e biblioteche statali; la seconda raccolte private custodite in dimore storiche.",
+        "La prima riguardava le raccolte delle dimore private; la seconda gli Archivi di Stato e le biblioteche statali.",
+        "La prima proponeva laboratori nelle dimore storiche; la seconda incontri sul restauro nelle biblioteche statali.",
+        "La prima si concentrava sulle carte delle famiglie; la seconda sui documenti necessari al governo dello Stato."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "it-memoria-nelle-carte-05",
+        "it-memoria-nelle-carte-06"
+      ],
+      "explanationZh": "第5句说明“Domenica di Carta”计划开放国家档案馆和国立公共图书馆；第6句说明“Carte in Dimora”面向保存在城堡、别墅和宫邸中的私人档案与图书馆。区别在于公共机构与私人收藏的范围。",
+      "promptZh": "“Domenica di Carta”与“Carte in Dimora”有什么区别？"
+    },
+    {
+      "id": "it-memoria-nelle-carte-q3",
+      "kind": "inference",
+      "prompt": "Una persona vuole esplorare materiali conservati nei depositi e poi confrontare diverse versioni di un’opera letteraria. Quali proposte rispondono a questi due interessi?",
+      "options": [
+        "Le visite agli Archivi di Corte di Torino e l’esposizione della Biblioteca Antonio Baldini.",
+        "Le visite all’Archivio di Stato di Ravenna e il laboratorio nella Sala dei Ragazzi di Cremona.",
+        "La mostra sulle carte di Cristina di Svezia e l’esposizione della Biblioteca Antonio Baldini.",
+        "Le visite all’Archivio di Stato di Ravenna e l’esposizione della Biblioteca Antonio Baldini."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "it-memoria-nelle-carte-15",
+        "it-memoria-nelle-carte-16",
+        "it-memoria-nelle-carte-17"
+      ],
+      "explanationZh": "需要同时匹配两个目的：第15句的拉文纳活动让人进入档案库房；第16—17句的巴尔迪尼图书馆展览展示《木偶奇遇记》的译本与艺术家版本。其他组合虽都来自本文，但不同时满足库房参观与同一作品版本比较。",
+      "promptZh": "一位读者想探索库房中保存的资料，然后比较同一文学作品的不同版本。哪些活动符合这两个兴趣？"
+    },
+    {
+      "id": "it-memoria-nelle-carte-q4",
+      "kind": "cause",
+      "prompt": "Perché anche l’edificio degli Archivi di Corte di Torino fa parte della storia dei documenti?",
+      "options": [
+        "Perché era una residenza reale trasformata di recente in uno spazio per mostre temporanee.",
+        "Perché era stato progettato proprio per conservare le carte necessarie al governo dello Stato.",
+        "Perché riuniva le collezioni private che prima erano custodite nei castelli della regione.",
+        "Perché ospitava un laboratorio dedicato alle tecniche impiegate per riparare i libri antichi."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "it-memoria-nelle-carte-11",
+        "it-memoria-nelle-carte-12"
+      ],
+      "explanationZh": "第12句明确给出原因：这座建筑就是为了保存国家治理所需的文件而专门设计的。它的原始用途与所保存的文献直接相关，所以建筑空间本身也是文献历史的一部分。",
+      "promptZh": "为什么都灵宫廷档案馆的建筑本身也是文献历史的一部分？"
+    },
+    {
+      "id": "it-memoria-nelle-carte-q5",
+      "kind": "detail",
+      "prompt": "Nel programma annunciato, quale confronto descrive il modo in cui i laboratori di Roma e Cremona avrebbero coinvolto i partecipanti nella scoperta del passato?",
+      "options": [
+        "A Roma si ricostruivano ambienti della corte con planimetrie; a Cremona si illustravano nuove edizioni di Pinocchio.",
+        "A Roma si provavano antiche tecniche di riparazione; a Cremona si riproducevano lettere tratte dagli archivi privati.",
+        "A Roma si realizzava carta con metodi medievali; a Cremona si creavano figure ispirate ai personaggi della corte.",
+        "A Roma si creavano figure ispirate alla corte della regina; a Cremona si sperimentava la produzione medievale della carta."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "it-memoria-nelle-carte-09",
+        "it-memoria-nelle-carte-10",
+        "it-memoria-nelle-carte-18",
+        "it-memoria-nelle-carte-19"
+      ],
+      "explanationZh": "按公布的计划，罗马活动承接瑞典女王克里斯蒂娜的展览，以宫廷人物为灵感制作纸娃娃；克雷莫纳则计划尝试中世纪造纸。两地都安排了动手参与历史的活动，但具体人物与工艺不同，不能将地点和活动对调。本文介绍的是活动计划，并未核实实际开展情况。",
+      "promptZh": "根据公布的活动计划，哪一项比较说明了罗马与克雷莫纳的工作坊将如何让参与者探索过去？"
+    }
+  ]
+}

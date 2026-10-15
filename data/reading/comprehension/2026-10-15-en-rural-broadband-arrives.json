@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-en-rural-broadband-arrives",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "2026-10-15-en-rural-broadband-arrives-q1",
+      "kind": "main-idea",
+      "prompt": "What is the main news in the article?",
+      "options": [
+        "A survey shows how rural families use public services.",
+        "A company plans its first broadband project in Oxfordshire.",
+        "A finished project brings broadband access to rural communities.",
+        "A report compares broadband prices in towns and villages."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s3",
+        "s5",
+        "s8"
+      ],
+      "explanationZh": "新闻重点是北牛津郡全光纤网络建设已经完成，为乡村社区提供接入条件。文章没有公布上网行为调查或价格比较。",
+      "promptZh": "文章主要报道了什么新闻？"
+    },
+    {
+      "id": "2026-10-15-en-rural-broadband-arrives-q2",
+      "kind": "detail",
+      "prompt": "What does the figure of 3,880 refer to?",
+      "options": [
+        "Homes and business premises with access to the northern network.",
+        "Households that have already paid for the northern broadband service.",
+        "Homes and business premises covered by both completed projects.",
+        "Customers waiting for work on the southern network to begin."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "3,880指北部项目完成后可以接入网络的住宅和营业场所。第9至10句特别区分了“可以接入”和“已经购买服务”，并未报告已付费用户数。",
+      "promptZh": "3,880这个数字指的是什么？"
+    },
+    {
+      "id": "2026-10-15-en-rural-broadband-arrives-q3",
+      "kind": "cause",
+      "prompt": "What reason does the article give for the difficulty of rural broadband work?",
+      "options": [
+        "The project needs to serve public services before it can serve homes.",
+        "The northern network must use connections from the unfinished southern project.",
+        "The supplier has to wait for every household to buy a service.",
+        "The villages are far apart and some locations are difficult to reach."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "第6句直接说明，距离和较难到达的位置使乡村宽带扩建更有挑战。其他选项中的原因没有出现在文章中。",
+      "promptZh": "文章指出，乡村宽带建设困难的原因是什么？"
+    },
+    {
+      "id": "2026-10-15-en-rural-broadband-arrives-q4",
+      "kind": "inference",
+      "prompt": "What can we conclude by comparing the northern and southern projects?",
+      "options": [
+        "Both projects are complete, but only northern customers can sign up.",
+        "The expected total includes a southern project that is still being built.",
+        "The southern project has already connected all of the 9,300 premises.",
+        "The northern project alone accounts for the full £23.1 million support."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11",
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "北部项目已完成，南部项目仍在施工；约9,300处和2,310万英镑都属于两个合同合计的范围。因此，合计预期中包含尚未完工的南部部分，不能当成已全部完成的结果。",
+      "promptZh": "比较北部和南部项目，我们可以得出什么结论？"
+    }
+  ]
+}

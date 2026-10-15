@@ -9,3 +9,36 @@
 .reading-practice-feedback p { margin: .45rem 0; }
 .reading-word-game { margin-top: 1rem; overflow: hidden; }
 .reading-word-game canvas { display: block; border-radius: 14px; }
+
+/* Comprehension comes before the learning summary and never shares exercise state. */
+.reading-comprehension { margin: 2.5rem 0; padding-top: 1.5rem; border-top: 2px solid var(--ink); }
+.reading-comprehension > h2 { font-size: 1.6rem; margin-bottom: .65rem; }
+.reading-comprehension-score { font-weight: 600; margin: 1rem 0; }
+.reading-comprehension-card { margin: 1.3rem 0; padding: 1.3rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); overflow-wrap: anywhere; }
+.reading-comprehension-kind { color: var(--muted); font-size: .8rem; margin-bottom: .65rem; }
+.reading-comprehension-prompt { font-size: 1.2rem; line-height: 1.65; }
+.reading-comprehension-aid { color: var(--muted); margin-top: .6rem; line-height: 1.75; }
+.reading-comprehension-choices { display: grid; grid-template-columns: minmax(0, 1fr); gap: .6rem; margin-top: 1rem; }
+.reading-comprehension-option.btn { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; width: 100%; min-height: 44px; height: auto; padding: .8rem 1rem; border: 1px solid var(--control-line); text-align: left; white-space: normal; font-size: 1rem; font-weight: 400; line-height: 1.65; letter-spacing: normal; text-transform: none; }
+.reading-comprehension-option.btn:disabled { opacity: 1; cursor: default; transform: none; }
+.reading-comprehension-option.btn:disabled:not(.is-correct):not(.is-incorrect) { background: transparent; }
+.reading-comprehension-option.is-correct { border-color: var(--verde); background: var(--verde-soft); color: var(--ink); }
+.reading-comprehension-option.is-incorrect { border-color: var(--red); background: var(--red-soft); color: var(--ink); }
+.reading-comprehension-option.is-selected { border-width: 2px; }
+.reading-comprehension-option-label { display: block; font-size: .8rem; font-weight: 600; }
+.reading-comprehension-feedback { border-left: 3px solid var(--verde); padding-left: 1rem; margin-top: 1.2rem; }
+.reading-comprehension-feedback.is-incorrect { border-left-color: var(--red); }
+.reading-comprehension-feedback h4 { font-size: 1rem; line-height: 1.6; }
+.reading-comprehension-feedback p { margin: .65rem 0; line-height: 1.8; }
+.reading-comprehension-evidence { margin-top: 1rem; padding-top: .6rem; border-top: 1px solid var(--line); }
+.reading-comprehension-evidence-label { color: var(--muted); font-size: .8rem; }
+.reading-comprehension-evidence blockquote { margin: .5rem 0; font-family: var(--serif); font-size: 1.1rem; line-height: 1.85; }
+.reading-comprehension-evidence-meaning { color: var(--muted); }
+.reading-comprehension button:focus-visible, .reading-comprehension-feedback:focus, .reading-comprehension > h2:focus, .reading-comprehension-return:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.reading-sentence.reading-comprehension-highlight { background: var(--gold-soft); outline: 2px solid var(--gold); outline-offset: .35rem; scroll-margin-block: 6rem; }
+.reading-comprehension-return { margin: .6rem 0; }
+@media (max-width: 600px) {
+  .reading-comprehension-card { padding: 1rem; }
+  .reading-comprehension-option.btn { padding: .7rem; }
+  .reading-comprehension-feedback { padding-left: .7rem; }
+}

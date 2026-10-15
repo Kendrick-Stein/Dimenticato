@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-fr-apprendre-a-proteger-le-patrimoine",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Que montre surtout ce texte sur la rencontre d’octobre ?",
+      "options": [
+        "Elle aide les musées français à recruter des professionnels étrangers.",
+        "Elle prépare une exposition commune sur les collections des musées.",
+        "Elle propose une méthode de protection à appliquer partout de la même façon.",
+        "Elle permet de partager des expériences pour protéger le patrimoine face au climat."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "fr-apprendre-a-proteger-le-patrimoine-01",
+        "fr-apprendre-a-proteger-le-patrimoine-03",
+        "fr-apprendre-a-proteger-le-patrimoine-08",
+        "fr-apprendre-a-proteger-le-patrimoine-12",
+        "fr-apprendre-a-proteger-le-patrimoine-13"
+      ],
+      "explanationZh": "交流以文化遗产和气候变化为主题，参与者分享职业实践，讨论应急准备，并考虑地区差异。重点是通过互相学习加强遗产保护，而不是招聘、筹办展览或统一使用一种方法。",
+      "promptZh": "关于十月的这次交流，文章主要说明了什么？"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quel format a pris la rencontre d’octobre consacrée au climat ?",
+      "options": [
+        "Un séjour individuel adapté aux besoins d’une personne.",
+        "Un itinéraire collectif organisé autour d’un thème.",
+        "Une résidence d’un mois dans une structure culturelle.",
+        "Une résidence de trois mois dans un musée partenaire."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "fr-apprendre-a-proteger-le-patrimoine-04",
+        "fr-apprendre-a-proteger-le-patrimoine-05"
+      ],
+      "explanationZh": "第4句列出集体行程、个人访问和机构驻留三种形式。第5句进一步明确，此次十月交流属于Itinéraire culture集体行程，不能把驻留的一至三个月期限套用到这次交流上。",
+      "promptZh": "此次以气候为主题的十月交流采用了哪种形式？"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi faut-il adapter les méthodes de protection à chaque territoire ?",
+      "options": [
+        "Parce que les effets du climat et les situations locales varient.",
+        "Parce que les cartes présentées remplacent les connaissances locales.",
+        "Parce que les échanges portent uniquement sur les collections des musées.",
+        "Parce que les participants travaillent dans une seule institution française."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "fr-apprendre-a-proteger-le-patrimoine-10",
+        "fr-apprendre-a-proteger-le-patrimoine-12"
+      ],
+      "explanationZh": "文章指出，一种方法不能在所有地方原样使用，因为各地区受到的气候影响和当地情况不同。应对措施因此必须考虑这些差异。",
+      "promptZh": "为什么需要根据各地区的情况调整保护方法？"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Quelle conclusion peut-on tirer du rôle des participants ?",
+      "options": [
+        "Ils se préparent surtout à travailler dans les institutions françaises.",
+        "Ils évaluent les pratiques françaises pour choisir un modèle unique.",
+        "Ils peuvent apprendre des autres tout en enrichissant la réflexion commune.",
+        "Ils reçoivent des méthodes à utiliser sans changement dans leur pays."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "fr-apprendre-a-proteger-le-patrimoine-03",
+        "fr-apprendre-a-proteger-le-patrimoine-11",
+        "fr-apprendre-a-proteger-le-patrimoine-13"
+      ],
+      "explanationZh": "第3句说明参与者了解机构并与同行交流，第11句强调比较经验，第13句说明每个人也会贡献自己的知识、方法和问题。因此，他们既是学习者，也是共同思考的参与者。",
+      "promptZh": "关于参与者的作用，可以得出什么结论？"
+    }
+  ]
+}

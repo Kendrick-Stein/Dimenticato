@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-en-hygiene-labels-and-choices",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "2026-10-15-en-hygiene-labels-and-choices-q1",
+      "kind": "main-idea",
+      "prompt": "Which statement best captures the article’s main point?",
+      "options": [
+        "Knowing about ratings, finding them and using them are different stages.",
+        "Hygiene ratings have replaced price and recommendations in food choices.",
+        "Online ratings have become the main source of information for customers.",
+        "Rules on displaying ratings have made customers behave in the same way."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s11",
+        "s13",
+        "s20",
+        "s21"
+      ],
+      "explanationZh": "全文用知晓、查找和决策影响三方面的数据说明：知道有标签、找到标签和用它来决定购买，是不同的环节，不能混为一谈。",
+      "promptZh": "哪一项最能概括文章的中心观点？"
+    },
+    {
+      "id": "2026-10-15-en-hygiene-labels-and-choices-q2",
+      "kind": "detail",
+      "prompt": "Who does the 86% figure for looking at a sticker describe?",
+      "options": [
+        "All respondents aged 16 or over who took part in the survey.",
+        "Respondents who said an online search for a rating was easy.",
+        "Respondents who had checked a rating during the period asked about.",
+        "All respondents who said they had heard of the rating scheme."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "86%的分母是已经查看过评级的受访者，不是全体受访者，也不是仅仅听说过该制度的人。第10句专门解释了这一点。",
+      "promptZh": "查看贴纸的86%这个数字描述的是哪些人？"
+    },
+    {
+      "id": "2026-10-15-en-hygiene-labels-and-choices-q3",
+      "kind": "cause",
+      "prompt": "Why would it be misleading to say that the other 71% found online searching difficult?",
+      "options": [
+        "The online-search figure refers only to people who had already used a sticker.",
+        "The remaining answers included not looking for ratings and not knowing.",
+        "The 29% figure describes people who avoided a business without a sticker.",
+        "The online-search percentage was calculated only for businesses located in England."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "29%觉得网上查找容易，不等于其余71%都觉得困难。第12句说明，其余选项还包括没有查找过以及不知道，不能把不同回答合并成“困难”。",
+      "promptZh": "为什么说另外71%的人觉得网上查找困难会产生误导？"
+    },
+    {
+      "id": "2026-10-15-en-hygiene-labels-and-choices-q4",
+      "kind": "inference",
+      "prompt": "What is the best-supported comparison of the 28% and 94% findings?",
+      "options": [
+        "The figures suggest that existing display rules had reduced avoidance by making missing stickers less common.",
+        "The figures suggest that people who had checked ratings supported display more often than other respondents.",
+        "The figures may not be comparable because one covers rating-checkers and the other covers everyone who knew the scheme.",
+        "The figures suggest support for display was more common than reported avoidance among respondents familiar with the scheme."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s14",
+        "s17"
+      ],
+      "explanationZh": "28%和94%的分母都是听说过评级制度的受访者：前者报告曾因没有贴纸而避开商家，后者支持商家必须展示评级。因此，在同一知晓制度的群体中，支持展示的比例高于报告避开的比例。文章没有用这两个数字证明展示规定减少了避开行为，也没有比较查看过评级者与其他人的支持程度。",
+      "promptZh": "对于28%和94%这两项调查结果，哪一种比较最有文章依据？"
+    },
+    {
+      "id": "2026-10-15-en-hygiene-labels-and-choices-q5",
+      "kind": "inference",
+      "prompt": "Which summary best respects the survey’s timing, coverage and method?",
+      "options": [
+        "The report describes self-reported choices throughout the UK in 2025, with some uncertainty remaining after weighting.",
+        "The report describes directly observed choices in three UK countries in 2025, with some uncertainty remaining after weighting.",
+        "The report describes self-reported choices in three UK countries in 2025, with some uncertainty remaining after weighting.",
+        "The report describes self-reported choices in three UK countries in 2026, with some uncertainty remaining after weighting."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s4",
+        "s18",
+        "s19"
+      ],
+      "explanationZh": "调查在2025年进行，覆盖英格兰、威尔士和北爱尔兰，不包括苏格兰；2026年是报告发表年份。行为数据来自受访者自述，并非研究者直接观察。加权改善了代表性，但没有消除抽样等不确定性。把这些信息合并起来，只有该概括同时准确保留了时间、范围和方法。",
+      "promptZh": "哪项概括最符合这项调查的时间、覆盖范围和方法？"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed reading comprehension companion (immutable article)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "articleId",
+    "lang",
+    "questions"
+  ],
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "articleId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "lang": {
+      "enum": [
+        "it",
+        "fr",
+        "de",
+        "en"
+      ]
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "prompt",
+          "options",
+          "answerIndex",
+          "evidence",
+          "explanationZh"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "kind": {
+            "enum": [
+              "main-idea",
+              "detail",
+              "cause",
+              "inference"
+            ]
+          },
+          "prompt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "promptZh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "options": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "answerIndex": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "explanationZh": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}
