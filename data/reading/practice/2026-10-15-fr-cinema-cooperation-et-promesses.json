@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-fr-cinema-cooperation-et-promesses",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-cinema-cooperation-et-promesses-01",
+      "start": 64,
+      "answer": "résultats",
+      "options": [
+        "résultat",
+        "résultats",
+        "résulter",
+        "résultant"
+      ],
+      "explanation": "按原文恢复词形：les 后用复数名词 résultats。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-cinema-cooperation-et-promesses-05",
+      "start": 77,
+      "answer": "réseau",
+      "options": [
+        "réseaux",
+        "réseau",
+        "réseauter",
+        "réseauté"
+      ],
+      "explanation": "按原文恢复词形：le premier 后用阳性单数名词 réseau。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-cinema-cooperation-et-promesses-06",
+      "start": 59,
+      "answer": "adhéré",
+      "options": [
+        "adhérer",
+        "adhérez",
+        "adhérons",
+        "adhéré"
+      ],
+      "explanation": "按原文恢复词形：avaient 后构成愈过去时，需要过去分词 adhéré。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-cinema-cooperation-et-promesses-09",
+      "start": 111,
+      "answer": "signataires",
+      "options": [
+        "signer",
+        "signataire",
+        "signataires",
+        "signant"
+      ],
+      "explanation": "按原文恢复词形：cent vingt 后用复数名词 signataires。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-cinema-cooperation-et-promesses-18",
+      "start": 36,
+      "answer": "engagement",
+      "options": [
+        "engager",
+        "engagements",
+        "engagée",
+        "engagement"
+      ],
+      "explanation": "按原文恢复词形：un 及 équivalent 要求阳性单数名词 engagement。"
+    }
+  ]
+}

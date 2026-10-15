@@ -1,0 +1,249 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-it-protezione-in-piazza",
+  "storyId": "it-2026-10-14-protezione-in-piazza",
+  "lang": "it",
+  "date": "2026-10-15",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "公共活动",
+    "防灾知识",
+    "科学交流"
+  ],
+  "title": "La protezione civile arriva in piazza",
+  "titleZh": "民防知识走进广场",
+  "summaryZh": "INGV于10月14日介绍罗马民防主题活动：10月15日至18日，公众和学校可了解地震与火山监测。本文介绍公布的计划。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以时间、地点和具体参观活动为主，短句与常用将来时，专业词汇配中文注释。非认证测评。",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "SETTIMANA DELLA PROTEZIONE CIVILE | L’INGV al villaggio “Percorsi di protezione civile” a Roma",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/settimana-della-protezione-civile-l-ingv-al-villaggio-percorsi-di-protezione-civile-a-roma",
+    "publishedAt": "2026-10-14",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：INGV Ufficio Stampa，《SETTIMANA DELLA PROTEZIONE CIVILE | L’INGV al villaggio “Percorsi di protezione civile” a Roma》，2026-10-14；2026-10-15查阅。依据CC BY 4.0使用机构正文，原文及许可链接见上。未使用图片、标志、外部作品或直接引语。",
+  "adaptation": "Dimenticato依据意大利语机构原文进行同语言节选、重组与难度调整，添加简体中文翻译、语境注释、学习总结及原创口语和练习。保留原始数据及事件时期；不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "it-protezione-in-piazza-01",
+      "text": "Il 14 ottobre 2026 l’INGV ha presentato un appuntamento per conoscere meglio la protezione civile.",
+      "zh": "2026年10月14日，INGV介绍了一项帮助公众进一步了解民防的活动。",
+      "glosses": [
+        {
+          "surface": "appuntamento",
+          "lemma": "appuntamento",
+          "zh": "活动"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-02",
+      "text": "Dal 15 al 18 ottobre, a Roma, è in programma il villaggio “Percorsi di protezione civile”.",
+      "zh": "10月15日至18日，罗马计划举办“民防之路”主题活动村。",
+      "glosses": [
+        {
+          "surface": "villaggio",
+          "lemma": "villaggio",
+          "zh": "主题活动村"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-03",
+      "text": "Il villaggio si trova a Villa Borghese, in Piazza di Siena, ed è aperto dalle nove alle diciassette.",
+      "zh": "活动村位于博尔盖塞公园的锡耶纳广场，开放时间为9时至17时。",
+      "glosses": [
+        {
+          "surface": "aperto",
+          "lemma": "aprire",
+          "zh": "开放的"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-04",
+      "text": "Il programma fa parte della Settimana Nazionale della Protezione Civile, che continua fino al 18 ottobre.",
+      "zh": "该活动属于全国民防周的一部分，民防周持续至10月18日。",
+      "glosses": [
+        {
+          "surface": "continua",
+          "lemma": "continuare",
+          "zh": "持续"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-05",
+      "text": "Allo stand dell’INGV, il pubblico e le scuole potranno conoscere il lavoro degli scienziati.",
+      "zh": "在INGV的展位，公众和学校来访者将能了解科学家的工作。",
+      "glosses": [
+        {
+          "surface": "scuole",
+          "lemma": "scuola",
+          "zh": "学校"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-06",
+      "text": "Gli esperti studiano i terremoti e i vulcani e osservano continuamente la loro attività.",
+      "zh": "专家研究地震和火山，并持续观测它们的活动。",
+      "glosses": [
+        {
+          "surface": "terremoti",
+          "lemma": "terremoto",
+          "zh": "地震"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-07",
+      "text": "Durante la visita saranno disponibili collegamenti con le sale operative di Roma, Napoli e Catania.",
+      "zh": "参观期间，将提供与罗马、那不勒斯和卡塔尼亚监测室的连线。",
+      "glosses": [
+        {
+          "surface": "collegamenti",
+          "lemma": "collegamento",
+          "zh": "连线"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-08",
+      "text": "Così i visitatori potranno vedere come funziona il monitoraggio in tempo reale.",
+      "zh": "这样，参观者将能看到实时监测如何运行。",
+      "glosses": [
+        {
+          "surface": "visitatori",
+          "lemma": "visitatore",
+          "zh": "参观者"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-09",
+      "text": "Il 15 e il 16 ottobre sono previsti anche tre seminari con studenti universitari.",
+      "zh": "10月15日和16日，还计划举办三场有大学生参与的专题讲座。",
+      "glosses": [
+        {
+          "surface": "previsti",
+          "lemma": "prevedere",
+          "zh": "计划安排的"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-10",
+      "text": "Si parlerà dei vulcani siciliani, dei terremoti dell’Italia centrale e della storia dei terremoti a Roma.",
+      "zh": "讲座将讨论西西里火山、意大利中部地震以及罗马地震的历史。",
+      "glosses": [
+        {
+          "surface": "storia",
+          "lemma": "storia",
+          "zh": "历史"
+        }
+      ]
+    },
+    {
+      "id": "it-protezione-in-piazza-11",
+      "text": "Queste attività vogliono aiutare le persone a conoscere i rischi e a capire l’importanza della prevenzione.",
+      "zh": "这些活动旨在帮助人们认识风险，理解预防的重要性。",
+      "glosses": [
+        {
+          "surface": "prevenzione",
+          "lemma": "prevenzione",
+          "zh": "预防"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "appuntamento",
+        "zh": "活动",
+        "sentenceId": "it-protezione-in-piazza-01",
+        "lemma": "appuntamento"
+      },
+      {
+        "text": "aperto",
+        "zh": "开放的",
+        "sentenceId": "it-protezione-in-piazza-03",
+        "lemma": "aprire"
+      },
+      {
+        "text": "scuole",
+        "zh": "学校",
+        "sentenceId": "it-protezione-in-piazza-05",
+        "lemma": "scuola"
+      },
+      {
+        "text": "terremoti",
+        "zh": "地震",
+        "sentenceId": "it-protezione-in-piazza-06",
+        "lemma": "terremoto"
+      },
+      {
+        "text": "previsti",
+        "zh": "计划安排的",
+        "sentenceId": "it-protezione-in-piazza-09",
+        "lemma": "prevedere"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "è in programma",
+        "zh": "计划举办",
+        "sentenceId": "it-protezione-in-piazza-02"
+      },
+      {
+        "text": "in tempo reale",
+        "zh": "实时",
+        "sentenceId": "it-protezione-in-piazza-08"
+      },
+      {
+        "text": "l’importanza della prevenzione",
+        "zh": "预防的重要性",
+        "sentenceId": "it-protezione-in-piazza-11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-protezione-in-piazza-07",
+        "note": "saranno disponibili用将来时介绍计划提供的服务。"
+      },
+      {
+        "sentenceId": "it-protezione-in-piazza-08",
+        "note": "potranno＋不定式表达未来能够做的事情。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Che cosa vorresti vedere allo stand dell’INGV?",
+        "zh": "你想在INGV展位看什么？"
+      },
+      {
+        "text": "Preferisci una visita o un seminario per conoscere questi temi?",
+        "zh": "你更喜欢通过参观还是讲座了解这些主题？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Vorrei capire come funziona il monitoraggio.",
+        "zh": "我想了解监测如何运行。"
+      },
+      {
+        "text": "Mi interessa il lavoro degli scienziati.",
+        "zh": "我对科学家的工作感兴趣。"
+      }
+    ]
+  }
+}

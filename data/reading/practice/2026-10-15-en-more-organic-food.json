@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-en-more-organic-food",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 15,
+      "answer": "published",
+      "options": [
+        "published",
+        "publish",
+        "publishing",
+        "publication"
+      ],
+      "explanation": "明确的过去日期要求过去式published；其余选项不能在这里作过去时谓语。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 34,
+      "answer": "advice",
+      "options": [
+        "advise",
+        "advice",
+        "advises",
+        "advised"
+      ],
+      "explanation": "此处advice是与support并列的名词，表示“建议”。advise、advises、advised是动词形式，不适合这里get后的名词位置。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 40,
+      "answer": "quicker",
+      "options": [
+        "quickly",
+        "quickness",
+        "quicker",
+        "quicken"
+      ],
+      "explanation": "be后需要形容词，quicker表示更快；其余为副词、名词或动词。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s12",
+      "start": 19,
+      "answer": "choose",
+      "options": [
+        "chooses",
+        "chose",
+        "chosen",
+        "choose"
+      ],
+      "explanation": "will后使用动词原形choose；其余是第三人称单数、过去式或过去分词。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s13",
+      "start": 4,
+      "answer": "shoppers",
+      "options": [
+        "shoppers",
+        "shopper",
+        "shopped",
+        "shoplifting"
+      ],
+      "explanation": "这里说明计划对购买食品的人有何意义，shoppers指购物者；其余不表示这一人群。"
+    }
+  ]
+}

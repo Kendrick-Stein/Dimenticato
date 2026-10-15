@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-fr-apprendre-a-proteger-le-patrimoine",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-03",
+      "start": 44,
+      "answer": "institutions",
+      "options": [
+        "institution",
+        "instituer",
+        "institutions",
+        "institué"
+      ],
+      "explanation": "按原文恢复词形：les 及后面的复数形容词要求 institutions。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-04",
+      "start": 28,
+      "answer": "formats",
+      "options": [
+        "format",
+        "formats",
+        "formater",
+        "formaté"
+      ],
+      "explanation": "按原文恢复词形：trois 后的可数名词用复数 formats。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-06",
+      "start": 21,
+      "answer": "visité",
+      "options": [
+        "visiter",
+        "visitez",
+        "visité",
+        "visitons"
+      ],
+      "explanation": "按原文恢复词形：ont 后构成复合过去时，需要过去分词 visité。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-07",
+      "start": 95,
+      "answer": "risques",
+      "options": [
+        "risque",
+        "risquer",
+        "risquant",
+        "risques"
+      ],
+      "explanation": "按原文恢复词形：les 后需要复数名词 risques。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-10",
+      "start": 53,
+      "answer": "appliquer",
+      "options": [
+        "appliquons",
+        "appliquer",
+        "appliquez",
+        "appliqué"
+      ],
+      "explanation": "按原文恢复词形：pouvoir 后必须接不定式 appliquer。"
+    }
+  ]
+}

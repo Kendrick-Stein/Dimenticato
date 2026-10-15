@@ -1,0 +1,548 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-de-schlaf-und-lebensbedingungen",
+  "storyId": "rki-nrw-sleep-resources-2026-09-09",
+  "lang": "de",
+  "date": "2026-10-15",
+  "title": "Schlaf und Lebensbedingungen: Was eine Befragung zeigen kann",
+  "titleZh": "睡眠与生活条件：一项调查能够说明什么",
+  "summaryZh": "阅读2026年9月发表的北威州睡眠研究：数据采集于2024年，显示睡眠体验与心理负担和资源存在关联。本篇同时解释样本限制、自我报告和“关联不等于因果”。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：较长的研究解释包含关系从句、被动态、名词化和审慎推断，区分样本、主观测量、关联与因果；专业词汇有语境注释。非认证CEFR测评。",
+  "category": "health",
+  "topics": [
+    "睡眠",
+    "社会生活",
+    "研究方法"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Robert Koch-Institut — Journal of Health Monitoring",
+    "title": "Subjektive Schlafqualität im Zusammenhang mit psychosozialen Ressourcen und Belastungen – Eine explorative Datenanalyse des NRW-Gesundheitssurveys 2024",
+    "url": "https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1",
+    "publishedAt": "2026-09-09",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Daria Kozica, Anja Viehmann, Jonas Weidtmann und Brigitte Borrmann: Subjektive Schlafqualität im Zusammenhang mit psychosozialen Ressourcen und Belastungen – Eine explorative Datenanalyse des NRW-Gesundheitssurveys 2024. Robert Koch-Institut, Journal of Health Monitoring 2026;11:16, veröffentlicht 09.09.2026. DOI: https://doi.org/10.25646/14314. Quelle: https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ (Lizenzangabe auf Seite 1 des Artikels).",
+  "adaptation": "Dimenticato德语教学改写：删节、简化和重组作者说明性文字，新增中文逐句翻译、词注、学习总结、口语及配套练习，均以CC BY 4.0发布。未使用第三方问卷原句、引文、图片、图表、标志或受限个体数据。依据PDF首页明确的CC BY 4.0；资料库元数据另标CC BY 3.0 DE，两者版本不混同。作者及出版机构未审核或认可本版。本篇是报告阅读，不提供个人医疗建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Am 9. September 2026 erschien im Journal of Health Monitoring eine Untersuchung darüber, wie Erwachsene in Nordrhein-Westfalen ihre Schlafqualität erleben.",
+      "zh": "2026年9月9日，《健康监测杂志》发表了一项研究，探讨北莱茵—威斯特法伦州成年人如何感受自己的睡眠质量。",
+      "glosses": [
+        {
+          "surface": "Untersuchung",
+          "lemma": "Untersuchung",
+          "zh": "研究"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Der Bericht von Daria Kozica, Anja Viehmann, Jonas Weidtmann und Brigitte Borrmann wertet Daten des NRW-Gesundheitssurveys 2024 aus.",
+      "zh": "达里娅·科齐察、安雅·菲曼、约纳斯·魏特曼和布里吉特·博尔曼的报告分析了2024年北威州健康调查的数据。",
+      "glosses": [
+        {
+          "surface": "wertet",
+          "lemma": "auswerten",
+          "zh": "分析（与aus构成可分动词）"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Es handelt sich also um eine neu veröffentlichte Analyse älterer Befragungsdaten, nicht um eine Messung der heutigen Schlafsituation in ganz Deutschland.",
+      "zh": "因此，这是新发表的较早调查数据分析，并不是对今天全德国睡眠状况的测量。",
+      "glosses": [
+        {
+          "surface": "Befragungsdaten",
+          "lemma": "Befragungsdaten",
+          "zh": "调查数据"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Zwischen dem 30. August und dem 7. Oktober 2024 wurden insgesamt 2.002 Erwachsene telefonisch befragt.",
+      "zh": "2024年8月30日至10月7日，共有2002名成年人接受了电话访问。",
+      "glosses": [
+        {
+          "surface": "befragt",
+          "lemma": "befragen",
+          "zh": "被访问"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Die Befragung richtete sich an deutschsprachige Menschen, die mindestens 18 Jahre alt waren und in privaten Haushalten in Nordrhein-Westfalen lebten.",
+      "zh": "调查面向年满18岁、居住在北威州私人住户中的德语使用者。",
+      "glosses": [
+        {
+          "surface": "Haushalten",
+          "lemma": "Haushalt",
+          "zh": "住户（复数第三格）"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Menschen in Einrichtungen und Personen ohne ausreichende Deutschkenntnisse konnten mit diesem Verfahren nicht erfasst werden.",
+      "zh": "这种方法无法涵盖住在机构中的人以及德语能力不足的人。",
+      "glosses": [
+        {
+          "surface": "erfasst",
+          "lemma": "erfassen",
+          "zh": "被涵盖、记录"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Für das endgültige statistische Modell standen Angaben von 1.799 Personen zur Verfügung.",
+      "zh": "最终的统计模型使用了1799人的资料。",
+      "glosses": [
+        {
+          "surface": "Angaben",
+          "lemma": "Angabe",
+          "zh": "资料、信息"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Die Forschenden untersuchten sowohl Belastungen als auch Ressourcen, also Bedingungen, die Menschen im Alltag möglicherweise unterstützen.",
+      "zh": "研究人员既考察了压力负担，也考察了资源，即可能在日常生活中支持人们的条件。",
+      "glosses": [
+        {
+          "surface": "Ressourcen",
+          "lemma": "Ressource",
+          "zh": "支持性资源"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Dabei ging es unter anderem um Einsamkeit, psychische Gesundheit und die Erfüllung grundlegender psychologischer Bedürfnisse.",
+      "zh": "其中涉及孤独感、心理健康以及基本心理需求的满足。",
+      "glosses": [
+        {
+          "surface": "Bedürfnisse",
+          "lemma": "Bedürfnis",
+          "zh": "需求"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "In der ausgewerteten Gruppe berichteten 36,9 Prozent eine schlechte Schlafqualität; bei Frauen waren es 43,9 Prozent, bei Männern 31,4 Prozent.",
+      "zh": "在纳入分析的群体中，36.9%的人报告睡眠质量较差；女性为43.9%，男性为31.4%。",
+      "glosses": [
+        {
+          "surface": "Schlafqualität",
+          "lemma": "Schlafqualität",
+          "zh": "睡眠质量"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Diese Werte beschreiben die untersuchte Gruppe und dürfen nicht ohne Weiteres auf jede Bevölkerungsgruppe übertragen werden.",
+      "zh": "这些数值描述的是所研究的群体，不能不加审慎地推广到每个人群。",
+      "glosses": [
+        {
+          "surface": "übertragen",
+          "lemma": "übertragen",
+          "zh": "推广、套用"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Die Angaben zur Schlafqualität bezogen sich auf die vier Wochen vor der jeweiligen Befragung.",
+      "zh": "有关睡眠质量的信息指的是每位受访者接受访问前的四周。",
+      "glosses": [
+        {
+          "surface": "bezogen",
+          "lemma": "beziehen",
+          "zh": "涉及（sich beziehen auf）"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Sie wurden mit einem Fragebogen erhoben und weder im Schlaflabor noch durch einen Vergleich mit medizinischen Diagnosen überprüft.",
+      "zh": "这些信息通过问卷收集，既未在睡眠实验室中验证，也未与医学诊断进行比对。",
+      "glosses": [
+        {
+          "surface": "erhoben",
+          "lemma": "erheben",
+          "zh": "被收集"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Eine subjektiv schlechte Schlafqualität ist deshalb hier nicht einfach mit einer ärztlich festgestellten Schlafstörung gleichzusetzen.",
+      "zh": "因此，这里主观上较差的睡眠质量不能简单等同于医生确诊的睡眠障碍。",
+      "glosses": [
+        {
+          "surface": "gleichzusetzen",
+          "lemma": "gleichsetzen",
+          "zh": "等同起来"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Ein auffälliger Zusammenhang zeigte sich zwischen schlechter Schlafqualität und einer Depression oder depressiven Verstimmung, die nach Angaben der Befragten ärztlich oder psychotherapeutisch diagnostiziert worden war und in den letzten zwölf Monaten noch bestanden hatte.",
+      "zh": "较差的睡眠质量与抑郁症或抑郁情绪之间呈现出明显关联；这里所指的是受访者报告曾由医生或心理治疗人员诊断、且在过去十二个月内仍然存在的情况。",
+      "glosses": [
+        {
+          "surface": "Zusammenhang",
+          "lemma": "Zusammenhang",
+          "zh": "关联"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Auch eine erhöhte Einsamkeitsbelastung war im Gesamtmodell mit schlechter Schlafqualität verbunden, wobei sich die Ergebnisse je nach Geschlecht unterschieden.",
+      "zh": "在总体模型中，较高的孤独感负担也与较差的睡眠质量相关，但结果因性别而异。",
+      "glosses": [
+        {
+          "surface": "unterschieden",
+          "lemma": "unterscheiden",
+          "zh": "有所不同"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Die Autorinnen und Autoren betonen zugleich, dass psychologische Ressourcen bei der weiteren Forschung mehr Aufmerksamkeit verdienen.",
+      "zh": "作者们同时强调，心理资源在后续研究中值得获得更多关注。",
+      "glosses": [
+        {
+          "surface": "Aufmerksamkeit",
+          "lemma": "Aufmerksamkeit",
+          "zh": "关注"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Autonomie bedeutet dabei, das eigene Handeln als selbstbestimmt zu erleben, während Kompetenz das Gefühl beschreibt, etwas bewirken zu können.",
+      "zh": "其中，自主性指体验到自己的行动由自己决定，而胜任感描述的是觉得自己能够发挥作用。",
+      "glosses": [
+        {
+          "surface": "selbstbestimmt",
+          "lemma": "selbstbestimmt",
+          "zh": "自主决定的"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Hinzu kommt Verbundenheit, also das Erleben, von anderen verstanden zu werden und Zuwendung zu erhalten.",
+      "zh": "此外还有联结感，即感到被他人理解并获得关怀。",
+      "glosses": [
+        {
+          "surface": "Verbundenheit",
+          "lemma": "Verbundenheit",
+          "zh": "联结感"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "In der Analyse gingen insbesondere nicht ausreichend erfüllte Bedürfnisse nach Autonomie und Kompetenz mit schlechter Schlafqualität einher.",
+      "zh": "分析中，尤其是自主性和胜任感需求未充分满足，与较差的睡眠质量同时出现。",
+      "glosses": [
+        {
+          "surface": "einher",
+          "lemma": "einhergehen",
+          "zh": "相伴出现（与gingen构成动词）"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Daraus lässt sich jedoch nicht ableiten, dass ein einzelner dieser Faktoren die Schlafprobleme verursacht hat.",
+      "zh": "然而，不能由此推断其中某个因素导致了睡眠问题。",
+      "glosses": [
+        {
+          "surface": "ableiten",
+          "lemma": "ableiten",
+          "zh": "推断"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Die Untersuchung ist eine Querschnittstudie: Sie betrachtet Zusammenhänge innerhalb einer Erhebung, statt dieselben Menschen über längere Zeit zu begleiten.",
+      "zh": "这是一项横断面研究：它考察一次调查中的关联，而不是长期追踪同一批人。",
+      "glosses": [
+        {
+          "surface": "Querschnittstudie",
+          "lemma": "Querschnittstudie",
+          "zh": "横断面研究"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Deshalb bleibt offen, in welche Richtung die Beziehungen verlaufen und ob sich Belastungen und Schlafprobleme gegenseitig verstärken.",
+      "zh": "因此，关联朝哪个方向发展，以及压力负担与睡眠问题是否相互强化，仍未确定。",
+      "glosses": [
+        {
+          "surface": "gegenseitig",
+          "lemma": "gegenseitig",
+          "zh": "相互地"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Weitere Grenzen ergeben sich daraus, dass die ursprüngliche Befragung nicht speziell für diese Forschungsfrage entwickelt worden war.",
+      "zh": "其他局限还来自于原始调查并非专门为这一研究问题而设计。",
+      "glosses": [
+        {
+          "surface": "Grenzen",
+          "lemma": "Grenze",
+          "zh": "局限"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "So fehlten beispielsweise Angaben zu Schichtarbeit, Umgebungslärm und der Einnahme von Schlafmitteln oder anderen Medikamenten, die den Schlaf beeinflussen können.",
+      "zh": "例如，调查缺少轮班工作、环境噪声以及服用安眠药或其他可能影响睡眠的药物的信息。",
+      "glosses": [
+        {
+          "surface": "Schichtarbeit",
+          "lemma": "Schichtarbeit",
+          "zh": "轮班工作"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Außerdem waren Menschen mit niedrigem und mit hohem sozioökonomischem Status in der Stichprobe unterrepräsentiert, was die Aussagekraft zusätzlich begrenzt.",
+      "zh": "此外，社会经济地位较低和较高的人在样本中的代表性均不足，这进一步限制了结论的解释力。",
+      "glosses": [
+        {
+          "surface": "Stichprobe",
+          "lemma": "Stichprobe",
+          "zh": "样本"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Die Ergebnisse liefern somit Hinweise für weitere Forschung, aber keinen Nachweis für die Wirksamkeit einer bestimmten Maßnahme.",
+      "zh": "因此，结果为后续研究提供了线索，但不能证明某项具体措施有效。",
+      "glosses": [
+        {
+          "surface": "Nachweis",
+          "lemma": "Nachweis",
+          "zh": "证明"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Für die Gesundheitsförderung schlagen die Forschenden vor, soziale Lebensbedingungen stärker mitzudenken, etwa in Schulen, Betrieben und Pflegeeinrichtungen.",
+      "zh": "对于健康促进，研究人员建议更多地考虑社会生活条件，例如学校、企业和照护机构中的条件。",
+      "glosses": [
+        {
+          "surface": "Gesundheitsförderung",
+          "lemma": "Gesundheitsförderung",
+          "zh": "健康促进"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Verlässliche Beziehungen, Möglichkeiten zur Mitgestaltung sowie angemessene Herausforderungen und hilfreiche Rückmeldungen können dabei als Ansatzpunkte dienen.",
+      "zh": "可靠的人际关系、参与塑造环境的机会、适当的挑战以及有帮助的反馈，都可以作为切入点。",
+      "glosses": [
+        {
+          "surface": "Mitgestaltung",
+          "lemma": "Mitgestaltung",
+          "zh": "参与塑造、共同参与设计"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Welche Ansätze tatsächlich helfen und wie sie mit unterschiedlichen Lebenslagen zusammenhängen, muss jedoch durch weitere Untersuchungen geklärt werden.",
+      "zh": "然而，哪些方法真正有帮助，以及它们与不同生活处境如何关联，仍须通过进一步研究来澄清。",
+      "glosses": [
+        {
+          "surface": "Lebenslagen",
+          "lemma": "Lebenslage",
+          "zh": "生活处境"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Untersuchung",
+        "lemma": "Untersuchung",
+        "zh": "研究",
+        "sentenceId": "s1",
+        "note": "die Untersuchung，复数 Untersuchungen。"
+      },
+      {
+        "text": "befragt",
+        "lemma": "befragen",
+        "zh": "被访问",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "Ressourcen",
+        "lemma": "Ressource",
+        "zh": "支持性资源",
+        "sentenceId": "s8",
+        "note": "die Ressource，复数 Ressourcen；本句为复数。"
+      },
+      {
+        "text": "Schlafqualität",
+        "lemma": "Schlafqualität",
+        "zh": "睡眠质量",
+        "sentenceId": "s10",
+        "note": "die Schlafqualität，通常用单数。"
+      },
+      {
+        "text": "Zusammenhang",
+        "lemma": "Zusammenhang",
+        "zh": "关联",
+        "sentenceId": "s15",
+        "note": "der Zusammenhang，复数 Zusammenhänge。"
+      },
+      {
+        "text": "Aufmerksamkeit",
+        "lemma": "Aufmerksamkeit",
+        "zh": "关注",
+        "sentenceId": "s17",
+        "note": "die Aufmerksamkeit，此义通常用单数。"
+      },
+      {
+        "text": "selbstbestimmt",
+        "lemma": "selbstbestimmt",
+        "zh": "自主决定的",
+        "sentenceId": "s18"
+      },
+      {
+        "text": "Verbundenheit",
+        "lemma": "Verbundenheit",
+        "zh": "联结感",
+        "sentenceId": "s19",
+        "note": "die Verbundenheit，通常用单数。"
+      },
+      {
+        "text": "Querschnittstudie",
+        "lemma": "Querschnittstudie",
+        "zh": "横断面研究",
+        "sentenceId": "s22",
+        "note": "die Querschnittstudie，复数 Querschnittstudien。"
+      },
+      {
+        "text": "gegenseitig",
+        "lemma": "gegenseitig",
+        "zh": "相互地",
+        "sentenceId": "s23"
+      },
+      {
+        "text": "Stichprobe",
+        "lemma": "Stichprobe",
+        "zh": "样本",
+        "sentenceId": "s26",
+        "note": "die Stichprobe，复数 Stichproben。"
+      },
+      {
+        "text": "Nachweis",
+        "lemma": "Nachweis",
+        "zh": "证明",
+        "sentenceId": "s27",
+        "note": "der Nachweis，复数 Nachweise。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "zur Verfügung",
+        "zh": "可供使用",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "nicht ohne Weiteres",
+        "zh": "不能不加审慎地／不能轻易地",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "lässt sich jedoch nicht ableiten",
+        "zh": "然而不能据此推断",
+        "sentenceId": "s21"
+      },
+      {
+        "text": "bleibt offen",
+        "zh": "仍未确定",
+        "sentenceId": "s23"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "sowohl … als auch …连接并列成分，表示“既……也……”；also引出解释。"
+      },
+      {
+        "sentenceId": "s21",
+        "note": "sich lassen + 不定式表达可能性；nicht ableiten避免把关联误写为因果。"
+      },
+      {
+        "sentenceId": "s30",
+        "note": "以welche和wie引导的问题作主语，后接muss … geklärt werden被动态，保留研究尚未解决之处。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Warum ist es wichtig, bei diesem Bericht zwischen dem Jahr der Veröffentlichung und dem Jahr der Befragung zu unterscheiden?",
+        "zh": "为什么阅读这份报告时，要区分发表年份和调查年份？"
+      },
+      {
+        "text": "Welche Möglichkeiten zur Mitgestaltung könnten Schulen oder Betriebe anbieten, und wie könnte man ihre Wirkung untersuchen?",
+        "zh": "学校或企业可以提供哪些参与机会？可以怎样研究这些机会的效果？"
+      },
+      {
+        "text": "Welche Grenzen der Untersuchung würdest du in einer kurzen Nachricht unbedingt erwähnen?",
+        "zh": "如果写一则简短消息，你一定会提到这项研究的哪些局限？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Daraus lässt sich jedoch nicht ableiten",
+        "zh": "然而，不能由此推断",
+        "sentenceId": "s21"
+      },
+      {
+        "text": "Deshalb bleibt offen",
+        "zh": "因此，仍未确定",
+        "sentenceId": "s23"
+      },
+      {
+        "text": "Die Ergebnisse liefern somit Hinweise",
+        "zh": "因此，结果提供了线索",
+        "sentenceId": "s27"
+      }
+    ]
+  }
+}

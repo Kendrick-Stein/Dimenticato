@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-fr-apprendre-a-proteger-le-patrimoine",
+  "storyId": "culture-courants-climat-2026-10-14",
+  "lang": "fr",
+  "date": "2026-10-15",
+  "contentType": "native-adaptation",
+  "title": "Protéger le patrimoine en échangeant les expériences",
+  "titleZh": "通过交流经验保护文化遗产",
+  "summaryZh": "Courants du monde项目让14名专业人士在法国交流文化遗产与气候风险经验，强调相互学习及因地制宜。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连贯解释项目、比较方法与适用条件，使用关系从句、因果与转折；抽象词附注释。非认证CEFR测评。",
+  "category": "culture",
+  "topics": [
+    "文化遗产",
+    "国际交流",
+    "气候适应"
+  ],
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Courants du monde : le patrimoine face au climat",
+    "url": "https://www.culture.gouv.fr/actualites/courants-du-monde-le-patrimoine-face-au-climat",
+    "publishedAt": "2026-10-14",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+  },
+  "attribution": "来源：Ministère de la Culture，《Courants du monde : le patrimoine face au climat》，原文发布日期 2026-10-14，查阅日期 2026-10-15。原文链接见来源栏。仅改写文化部机构叙述，不使用图片、标识、第三方采访引语或链接中的作品。",
+  "adaptation": "Dimenticato 根据法语机构原文进行同语言节选、重组与分级改写，添加简中逐句翻译、语境注释和原创练习；不代表原机构认可。本改写、中文译文及配套学习材料按 CC BY-SA 3.0 FR 发布。",
+  "sentences": [
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-01",
+      "text": "Du 6 au 14 octobre 2026, quatorze professionnels étrangers ont participé en France à un parcours consacré au patrimoine et au changement climatique.",
+      "zh": "2026年10月6日至14日，14名外国专业人士在法国参加了围绕文化遗产与气候变化的交流行程。",
+      "glosses": [
+        {
+          "surface": "parcours",
+          "lemma": "parcours",
+          "zh": "行程"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-02",
+      "text": "Cette rencontre faisait partie de Courants du monde, un programme du ministère de la Culture qui existe depuis 1992.",
+      "zh": "这次交流属于文化部自1992年开展的Courants du monde项目。",
+      "glosses": [
+        {
+          "surface": "rencontre",
+          "lemma": "rencontre",
+          "zh": "交流会"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-03",
+      "text": "Il permet aux participants de découvrir les institutions culturelles françaises et d’échanger avec leurs collègues sur leurs pratiques professionnelles.",
+      "zh": "它让参与者了解法国文化机构，并与同行交流职业实践。",
+      "glosses": [
+        {
+          "surface": "institutions",
+          "lemma": "institution",
+          "zh": "机构"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-04",
+      "text": "Le programme comprend trois formats : un itinéraire collectif autour d’un thème, un séjour individuel adapté à la personne et une résidence dans une structure culturelle.",
+      "zh": "项目包含三种形式：围绕一个主题的集体行程、按个人需求安排的访问，以及在文化机构内驻留。",
+      "glosses": [
+        {
+          "surface": "formats",
+          "lemma": "format",
+          "zh": "形式"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-05",
+      "text": "La résidence dure entre un et trois mois ; cette rencontre d’octobre relevait, elle, du format collectif Itinéraire culture.",
+      "zh": "驻留持续一至三个月；此次十月的交流则属于Itinéraire culture集体行程。",
+      "glosses": [
+        {
+          "surface": "collectif",
+          "lemma": "collectif",
+          "zh": "集体的"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-06",
+      "text": "Les participants ont visité des sites, rencontré des professionnels et échangé avec des organisations internationales, notamment l’UNESCO et la Commission européenne.",
+      "zh": "参与者参观了相关场所，会见专业人士，并与包括联合国教科文组织和欧盟委员会在内的国际组织交流。",
+      "glosses": [
+        {
+          "surface": "visité",
+          "lemma": "visiter",
+          "zh": "参观了"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-07",
+      "text": "Ils ont découvert des outils de prévention et des cartes qui permettent de mieux connaître les risques.",
+      "zh": "他们了解了预防工具和有助于更好认识风险的地图。",
+      "glosses": [
+        {
+          "surface": "risques",
+          "lemma": "risque",
+          "zh": "风险"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-08",
+      "text": "Les discussions concernaient aussi la gestion des crises, la conservation des collections et l’organisation des musées, avec un objectif : mieux préparer les institutions aux situations d’urgence.",
+      "zh": "讨论还涉及危机管理、馆藏保护以及博物馆的治理，目标是让机构更好地准备应对紧急情况。",
+      "glosses": [
+        {
+          "surface": "collections",
+          "lemma": "collection",
+          "zh": "馆藏"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-09",
+      "text": "Le patrimoine culturel immatériel, c’est-à-dire notamment les savoirs et les pratiques transmis, faisait également partie des sujets abordés.",
+      "zh": "非物质文化遗产，也就是尤其包括传承的知识与实践，也属于讨论内容。",
+      "glosses": [
+        {
+          "surface": "transmis",
+          "lemma": "transmettre",
+          "zh": "传承的"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-10",
+      "text": "Mais découvrir une méthode ne signifie pas pouvoir l’appliquer partout de la même manière.",
+      "zh": "但是，了解一种方法并不意味着可以在任何地方以同样的方式使用它。",
+      "glosses": [
+        {
+          "surface": "appliquer",
+          "lemma": "appliquer",
+          "zh": "应用"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-11",
+      "text": "Les approches présentées servent plutôt à comparer les expériences et à réfléchir à ce qui peut changer dans son propre travail.",
+      "zh": "展示的方法更多是帮助人们比较经验，并思考自己的工作可以有哪些改变。",
+      "glosses": [
+        {
+          "surface": "comparer",
+          "lemma": "comparer",
+          "zh": "比较"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-12",
+      "text": "Les effets du climat et les réalités locales sont différents selon les territoires ; les réponses doivent donc tenir compte de ces différences.",
+      "zh": "气候的影响及当地情况因地区而异，因此应对方式必须考虑这些差异。",
+      "glosses": [
+        {
+          "surface": "différences",
+          "lemma": "différence",
+          "zh": "差异"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-13",
+      "text": "La réciprocité est importante : chacun apporte ses connaissances, ses méthodes et les questions liées à son contexte.",
+      "zh": "相互交流很重要：每个人都带来自己的知识、方法及与自身环境有关的问题。",
+      "glosses": [
+        {
+          "surface": "réciprocité",
+          "lemma": "réciprocité",
+          "zh": "互惠、相互交流"
+        }
+      ]
+    },
+    {
+      "id": "fr-apprendre-a-proteger-le-patrimoine-14",
+      "text": "Après le séjour, ces échanges peuvent favoriser de nouveaux liens professionnels, des projets communs et une coopération durable entre institutions.",
+      "zh": "访问结束后，这些交流可能促成新的专业联系、共同项目及机构之间的持久合作。",
+      "glosses": [
+        {
+          "surface": "durable",
+          "lemma": "durable",
+          "zh": "持久的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "institutions",
+        "zh": "机构",
+        "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-03"
+      },
+      {
+        "text": "formats",
+        "zh": "形式",
+        "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-04"
+      },
+      {
+        "text": "visité",
+        "zh": "参观了",
+        "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-06"
+      },
+      {
+        "text": "risques",
+        "zh": "风险",
+        "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-07"
+      },
+      {
+        "text": "appliquer",
+        "zh": "应用",
+        "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "tenir compte de",
+        "zh": "考虑到",
+        "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-12"
+      },
+      {
+        "text": "des projets communs",
+        "zh": "共同项目",
+        "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-14"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-10",
+        "note": "ne signifie pas + 不定式说明一种行为不等于另一种能力。"
+      },
+      {
+        "sentenceId": "fr-apprendre-a-proteger-le-patrimoine-14",
+        "note": "peuvent 表示可能性，不能理解为合作已实现。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pourquoi faut-il adapter une méthode au contexte local ?",
+        "zh": "为什么需要根据当地情况调整方法？"
+      },
+      {
+        "text": "Qu’aimeriez-vous apprendre de professionnels d’un autre pays ?",
+        "zh": "你想向另一个国家的专业人士学习什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Cette méthode pourrait être utile si…",
+        "zh": "如果……，这种方法可能有用。",
+        "note": "原创口语表达，可按自己的观点补充。"
+      },
+      {
+        "text": "Il faut tenir compte de…",
+        "zh": "必须考虑……",
+        "note": "原创口语表达，可按自己的观点补充。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-it-memoria-nelle-carte",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-memoria-nelle-carte-02",
+      "start": 12,
+      "answer": "prospettiva",
+      "options": [
+        "prospettive",
+        "prospettiva",
+        "prospettico",
+        "prospettici"
+      ],
+      "explanation": "questa la后接阴性单数prospettiva，意为视角。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-memoria-nelle-carte-03",
+      "start": 32,
+      "answer": "patrimonio",
+      "options": [
+        "patrimoniali",
+        "patrimonio",
+        "patrimoni",
+        "patrimoniale"
+      ],
+      "explanation": "al由a＋il构成，要求阳性单数名词patrimonio；documentario与之配合。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-memoria-nelle-carte-04",
+      "start": 109,
+      "answer": "resoconto",
+      "options": [
+        "resoconti",
+        "resoconto",
+        "raccontare",
+        "raccontate"
+      ],
+      "explanation": "un与verificato要求阳性单数名词resoconto。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-memoria-nelle-carte-05",
+      "start": 71,
+      "answer": "apertura",
+      "options": [
+        "aprivano",
+        "apriranno",
+        "apriremo",
+        "apertura"
+      ],
+      "explanation": "l’apertura是阴性单数名词，作prevedeva的宾语，表示开放。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-memoria-nelle-carte-06",
+      "start": 135,
+      "answer": "custoditi",
+      "options": [
+        "custodita",
+        "custodisce",
+        "custoditi",
+        "custodire"
+      ],
+      "explanation": "custoditi修饰archivi e biblioteche这个混合性别复数组合，使用阳性复数。"
+    }
+  ]
+}

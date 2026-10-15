@@ -1,0 +1,289 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-en-rural-broadband-arrives",
+  "storyId": "dcms-north-oxfordshire-broadband-2026-10-13",
+  "lang": "en",
+  "date": "2026-10-15",
+  "category": "society",
+  "topics": [
+    "乡村生活",
+    "网络连接",
+    "公共服务"
+  ],
+  "title": "Better connections for rural communities",
+  "titleZh": "为乡村社区带来更好的网络连接",
+  "summaryZh": "北牛津郡的全光纤工程提前完成，更多偏远家庭和企业可以接入网络；南部工程仍在进行。",
+  "level": "B1",
+  "levelReason": "通过工程完成情况解释乡村网络与日常生活的联系，含原因、比较、被动结构和完成时；保留可接入与已订购的区别。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport and Building Digital UK / GOV.UK",
+    "title": "North Oxfordshire gets broadband boost four months early through Project Gigabit",
+    "url": "https://www.gov.uk/government/news/north-oxfordshire-gets-broadband-boost-four-months-early-through-project-gigabit",
+    "publishedAt": "2026-10-13",
+    "lang": "en",
+    "author": "Department for Digital, Culture, Media and Sport; Building Digital UK"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. 来源：Department for Digital, Culture, Media and Sport and Building Digital UK / GOV.UK；作者/发布机构：Department for Digital, Culture, Media and Sport; Building Digital UK；原文发表于2026-10-13：https://www.gov.uk/government/news/north-oxfordshire-gets-broadband-boost-four-months-early-through-project-gigabit。© Crown copyright 2026。",
+  "adaptation": "依据机构英文原文进行同语言教学改写，配中文逐句翻译、词汇释义和原创练习；不代表发布机构认可。仅使用机构叙述，未使用图片、标志、第三方引语或外部文献原文。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "For people in a rural village, a reliable internet connection can make everyday tasks easier, from studying to using public services.",
+      "zh": "对于乡村居民来说，可靠的互联网连接可以让学习和使用公共服务等日常事务更方便。",
+      "glosses": [
+        {
+          "surface": "reliable",
+          "lemma": "reliable",
+          "zh": "可靠的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "A government announcement on 13 October 2026 described a new step towards better connections in North Oxfordshire.",
+      "zh": "2026年10月13日的一份政府公告介绍了北牛津郡改善网络连接的新进展。",
+      "glosses": [
+        {
+          "surface": "announcement",
+          "lemma": "announcement",
+          "zh": "公告"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "A full-fibre broadband project has been completed four months earlier than planned, giving 3,880 homes and business premises access to the network.",
+      "zh": "一项全光纤宽带工程比计划提前四个月完成，使3,880处住宅和商业场所能够接入网络。",
+      "glosses": [
+        {
+          "surface": "completed",
+          "lemma": "complete",
+          "zh": "完成"
+        },
+        {
+          "surface": "premises",
+          "lemma": "premises",
+          "zh": "场所"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The work was carried out by the supplier Gigaclear under an £8.2 million government contract through Project Gigabit.",
+      "zh": "这项工程由供应商Gigaclear通过“千兆项目”实施，政府合同金额为820万英镑。",
+      "glosses": [
+        {
+          "surface": "supplier",
+          "lemma": "supplier",
+          "zh": "供应商"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The locations include Stratton Audley, Hanwell, Horley, Wendlebury and North Newington, together with other nearby villages and small settlements.",
+      "zh": "这些地点包括Stratton Audley、Hanwell、Horley、Wendlebury和North Newington，以及附近其他村庄和小型聚居点。",
+      "glosses": [
+        {
+          "surface": "settlements",
+          "lemma": "settlement",
+          "zh": "聚居点"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "These are rural communities where distance and difficult locations can make broadband expansion more challenging than it is elsewhere.",
+      "zh": "这些乡村社区的距离和不便的位置可能使宽带扩建比其他地方更具挑战性。",
+      "glosses": [
+        {
+          "surface": "expansion",
+          "lemma": "expansion",
+          "zh": "扩建"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The government says the programme is bringing better connections to places that could otherwise be left behind.",
+      "zh": "政府表示，该项目正在为原本可能落后的地区带来更好的网络连接。",
+      "glosses": [
+        {
+          "surface": "otherwise",
+          "lemma": "otherwise",
+          "zh": "否则；若非如此"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "A stronger network can help residents study, work and run businesses online, as well as reach public services through the internet.",
+      "zh": "更完善的网络可以帮助居民在线学习、工作和经营业务，也能让他们通过互联网使用公共服务。",
+      "glosses": [
+        {
+          "surface": "residents",
+          "lemma": "resident",
+          "zh": "居民"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "However, being able to access the new network is not the same as saying that every household has already bought a broadband service.",
+      "zh": "不过，能够接入新网络，并不等于每个家庭都已经购买了宽带服务。",
+      "glosses": [
+        {
+          "surface": "household",
+          "lemma": "household",
+          "zh": "家庭"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The announcement reports the completion of the build and the availability of connections, rather than the number of customers who have signed up.",
+      "zh": "公告报告的是建设完成及网络可供接入的情况，而非已经签约的客户数量。",
+      "glosses": [
+        {
+          "surface": "availability",
+          "lemma": "availability",
+          "zh": "可用性"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "North Oxfordshire is only one part of Gigaclear’s work in the county, because a second Project Gigabit contract covers South Oxfordshire.",
+      "zh": "北牛津郡只是Gigaclear在该郡工作的一个部分，因为第二份“千兆项目”合同覆盖南牛津郡。",
+      "glosses": [
+        {
+          "surface": "covers",
+          "lemma": "cover",
+          "zh": "覆盖"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Work on that southern contract is continuing, so the two projects have not both been finished.",
+      "zh": "南部合同对应的工程仍在进行，因此两个项目并非都已完成。",
+      "glosses": [
+        {
+          "surface": "continuing",
+          "lemma": "continue",
+          "zh": "继续进行"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Together, the contracts represent £23.1 million in government support and are expected to bring gigabit-capable broadband to around 9,300 premises.",
+      "zh": "两份合同合计获得2,310万英镑政府支持，预计将为约9,300处场所提供千兆级宽带接入条件。",
+      "glosses": [
+        {
+          "surface": "expected",
+          "lemma": "expect",
+          "zh": "预计的"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "That larger figure is a combined expectation, while the 3,880 premises in the northern project are the completed stage described in this news.",
+      "zh": "较大的数字是两项工程合计的预期，而北部项目的3,880处场所是这则新闻所描述的已完成阶段。",
+      "glosses": [
+        {
+          "surface": "combined",
+          "lemma": "combine",
+          "zh": "合计的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "reliable",
+        "zh": "可靠的",
+        "sentenceId": "s1",
+        "lemma": "reliable"
+      },
+      {
+        "text": "completed",
+        "zh": "完成",
+        "sentenceId": "s3",
+        "lemma": "complete"
+      },
+      {
+        "text": "supplier",
+        "zh": "供应商",
+        "sentenceId": "s4",
+        "lemma": "supplier"
+      },
+      {
+        "text": "residents",
+        "zh": "居民",
+        "sentenceId": "s8",
+        "lemma": "resident"
+      },
+      {
+        "text": "continuing",
+        "zh": "继续进行",
+        "sentenceId": "s12",
+        "lemma": "continue"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "carried out",
+        "zh": "实施",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "be left behind",
+        "zh": "落在后面",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "are expected to",
+        "zh": "预计会",
+        "sentenceId": "s13"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "is continuing描述仍在进行的工程；have not both been finished避免误称两个工程均已完成。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which online task would be hardest for you without a reliable connection?",
+        "zh": "如果没有可靠的网络连接，哪项线上事务对你而言最难完成？"
+      },
+      {
+        "text": "Why should a news report separate completed work from future plans?",
+        "zh": "新闻报道为什么应当区分已完成的工作和未来计划？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "carried out",
+        "zh": "实施",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "be left behind",
+        "zh": "落在后面",
+        "sentenceId": "s7"
+      }
+    ]
+  }
+}

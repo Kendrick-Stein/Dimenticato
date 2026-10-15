@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-de-schlaf-und-lebensbedingungen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 94,
+      "answer": "befragt",
+      "options": [
+        "befragen",
+        "befragte",
+        "befragst",
+        "befragt"
+      ],
+      "explanation": "原文为wurden … befragt：过去时被动态需要过去分词befragt，意为“接受了访问”；其余选项不是此处所需的分词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s10",
+      "start": 68,
+      "answer": "Schlafqualität",
+      "options": [
+        "Schlafmitteln",
+        "Schichtarbeit",
+        "Schlafqualität",
+        "Schlaflabor"
+      ],
+      "explanation": "本句报告的是“睡眠质量较差”。eine schlechte后接阴性单数Schlafqualität；Schlaflabor为中性，Schlafmitteln为复数第三格，Schichtarbeit意为轮班工作。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s15",
+      "start": 16,
+      "answer": "Zusammenhang",
+      "options": [
+        "Ressourcen",
+        "Zusammenhang",
+        "Haushalten",
+        "Fragebogen"
+      ],
+      "explanation": "zwischen A und B与Zusammenhang搭配，表示两者之间的“关联”；主语是阳性单数，ein auffälliger与之呼应，其他词不符合句意。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s22",
+      "start": 26,
+      "answer": "Querschnittstudie",
+      "options": [
+        "Querschnittstudie",
+        "Schlafmitteln",
+        "Haushalten",
+        "Schlaflabor"
+      ],
+      "explanation": "冒号后解释同一次调查中的关联而非长期追踪，对应“横断面研究”Querschnittstudie；eine要求阴性单数，其余词的形式也不合适。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s26",
+      "start": 84,
+      "answer": "Stichprobe",
+      "options": [
+        "Schlafmitteln",
+        "Haushalten",
+        "Fragebogen",
+        "Stichprobe"
+      ],
+      "explanation": "这里表达社会群体在“样本”中代表性不足，in der后为阴性单数第三格Stichprobe；其他选项既不符合意思，也不匹配该冠词形式。"
+    }
+  ]
+}

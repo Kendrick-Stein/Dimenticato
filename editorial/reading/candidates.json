@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-14",
+  "collectedAt": "2026-10-15",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -77,8 +77,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 14,
+          "asOf": "2026-10-15",
+          "ageDays": 15,
           "bucket": "within_30_days"
         }
       },
@@ -159,8 +159,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 27,
+          "asOf": "2026-10-15",
+          "ageDays": 28,
           "bucket": "within_30_days"
         }
       },
@@ -241,8 +241,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 29,
+          "asOf": "2026-10-15",
+          "ageDays": 30,
           "bucket": "within_30_days"
         }
       },
@@ -333,8 +333,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-business-innovation-science-and-trade"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 5,
+          "asOf": "2026-10-15",
+          "ageDays": 6,
           "bucket": "within_30_days"
         }
       },
@@ -424,8 +424,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 5,
+          "asOf": "2026-10-15",
+          "ageDays": 6,
           "bucket": "within_30_days"
         }
       },
@@ -515,8 +515,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 8,
+          "asOf": "2026-10-15",
+          "ageDays": 9,
           "bucket": "within_30_days"
         }
       },
@@ -599,8 +599,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 6,
+          "asOf": "2026-10-15",
+          "ageDays": 7,
           "bucket": "within_30_days"
         }
       },
@@ -683,8 +683,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 6,
+          "asOf": "2026-10-15",
+          "ageDays": 7,
           "bucket": "within_30_days"
         }
       },
@@ -767,8 +767,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 8,
+          "asOf": "2026-10-15",
+          "ageDays": 9,
           "bucket": "within_30_days"
         }
       },
@@ -857,8 +857,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 12,
+          "asOf": "2026-10-15",
+          "ageDays": 13,
           "bucket": "within_30_days"
         }
       },
@@ -947,8 +947,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 22,
+          "asOf": "2026-10-15",
+          "ageDays": 23,
           "bucket": "within_30_days"
         }
       },
@@ -1038,8 +1038,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 23,
+          "asOf": "2026-10-15",
+          "ageDays": 24,
           "bucket": "within_30_days"
         }
       },
@@ -1112,8 +1112,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 5,
+          "asOf": "2026-10-15",
+          "ageDays": 6,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1207,8 +1207,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 55,
+          "asOf": "2026-10-15",
+          "ageDays": 56,
           "bucket": "within_90_days"
         }
       },
@@ -1301,8 +1301,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 26,
+          "asOf": "2026-10-15",
+          "ageDays": 27,
           "bucket": "within_30_days"
         }
       },
@@ -1374,8 +1374,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 13,
+          "asOf": "2026-10-15",
+          "ageDays": 14,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1458,8 +1458,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 6,
+          "asOf": "2026-10-15",
+          "ageDays": 7,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1554,8 +1554,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 56,
+          "asOf": "2026-10-15",
+          "ageDays": 57,
           "bucket": "within_90_days"
         }
       },
@@ -1645,8 +1645,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 43,
+          "asOf": "2026-10-15",
+          "ageDays": 44,
           "bucket": "within_90_days"
         }
       },
@@ -1717,8 +1717,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 6,
+          "asOf": "2026-10-15",
+          "ageDays": 7,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1795,8 +1795,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 7,
+          "asOf": "2026-10-15",
+          "ageDays": 8,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1880,8 +1880,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 12,
+          "asOf": "2026-10-15",
+          "ageDays": 13,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1965,8 +1965,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 8,
+          "asOf": "2026-10-15",
+          "ageDays": 9,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2062,8 +2062,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 85,
+          "asOf": "2026-10-15",
+          "ageDays": 86,
           "bucket": "within_90_days"
         }
       },
@@ -2135,8 +2135,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 12,
+          "asOf": "2026-10-15",
+          "ageDays": 13,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2214,8 +2214,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 27,
+          "asOf": "2026-10-15",
+          "ageDays": 28,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2293,9 +2293,9 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 30,
-          "bucket": "within_30_days"
+          "asOf": "2026-10-15",
+          "ageDays": 31,
+          "bucket": "within_90_days"
         },
         "duplicateCheck": {
           "checkedAt": "2026-10-14",
@@ -2372,8 +2372,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 41,
+          "asOf": "2026-10-15",
+          "ageDays": 42,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2461,8 +2461,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 15,
+          "asOf": "2026-10-15",
+          "ageDays": 16,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2551,8 +2551,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 31,
+          "asOf": "2026-10-15",
+          "ageDays": 32,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2640,8 +2640,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 18,
+          "asOf": "2026-10-15",
+          "ageDays": 19,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2737,8 +2737,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 28,
+          "asOf": "2026-10-15",
+          "ageDays": 29,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2834,8 +2834,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 1,
+          "asOf": "2026-10-15",
+          "ageDays": 2,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2931,8 +2931,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 33,
+          "asOf": "2026-10-15",
+          "ageDays": 34,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2976,8 +2976,8 @@
           "notes": "Full page read; external interviewee answers require separate rights assessment. Institutional introduction only may be suitable; not cleared."
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 35,
+          "asOf": "2026-10-15",
+          "ageDays": 36,
           "bucket": "within_90_days"
         }
       }
@@ -3062,8 +3062,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 56,
+          "asOf": "2026-10-15",
+          "ageDays": 57,
           "bucket": "within_90_days"
         }
       },
@@ -3149,8 +3149,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 75,
+          "asOf": "2026-10-15",
+          "ageDays": 76,
           "bucket": "within_90_days"
         }
       },
@@ -3168,56 +3168,77 @@
       "category": "society",
       "topics": [
         "外出用餐",
-        "食品卫生",
-        "消费选择"
+        "消费选择",
+        "调查解读"
       ],
       "level": "B2",
-      "status": "collected",
-      "editorialNote": "进阶/挑战档待审：讨论外卖与餐厅选择中卫生标签的作用；长报告需选一个连贯论点，不把同一报告分成多篇凑数。这是9月新发布的调查报告，调查期为2025年5–8月，非2026年消费者行为。全文后半及附录尚未逐段核验，暂不清稿。",
+      "status": "verified",
+      "editorialNote": "2026-10-15 B2档，正文511词；独立全文、译文、许可和5题答案审校通过。一份新发布的报告分析2025年的调查：认识卫生评分、实际查看评分和把评分用于消费决策，是不同层面的行为。",
       "verification": {
-        "workflowStage": "discovered",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-14",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-15",
         "fullText": {
           "accessible": true,
-          "read": false,
+          "read": true,
           "url": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11",
-          "checkedAt": "2026-10-14",
-          "notes": "HTML accessible; publication header, copyright, executive summary and introductory interpretation sections inspected; later chapters/annex not fully read."
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
         },
         "originalDate": {
           "verified": true,
-          "evidence": "HTML header explicitly Published 29 September 2026; separate parent metadata agrees.",
+          "evidence": "Publication header explicitly states 2026-09-29.",
           "evidenceUrl": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11"
         },
         "nativeLanguage": {
           "verified": true,
-          "evidence": "FSA English institutional report credits four authors and acknowledges a Welsh translation team.",
+          "evidence": "Matching registered UK government institution in From metadata; English institutional prose, no translation/syndication credit. FSA credits named authors and Welsh translation team. This is original-language provenance inference, not mother-tongue certification.",
           "evidenceUrl": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11",
-          "author": "Megan Potts; Rachael Shillitoe; Robin Clifford; Matt Jenkins",
           "basis": "institutional-original-language-inference",
-          "caveat": "Does not certify personal native tongue."
+          "caveat": "Not certification of individual mother tongue or earliest drafting language."
         },
-        "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 15,
-          "bucket": "within_30_days"
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Page-level OGL v3.0 footer; FSA also explicit publication-level Crown copyright 2026/OGL v3 paragraph. GOV.UK terms Using GOV.UK content confirms Crown copyright narrative reuse. National Archives OGL v3 primary search result retrieved full licence text: permits copy/publish/distribute/adapt commercially and non-commercially, requires source acknowledgement, excludes third-party rights and endorsement.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "Institution-authored narrative only.",
+          "exclusions": [
+            "Images/logos, external linked reports/datasets, questionnaire wording, World Food Summit food-security definition and USDA instrument material in annex, all third-party material omitted. Annex/footnotes read for methods and denominators only."
+          ],
+          "attributionRequirements": [
+            "Credit provider/title/date/source, link OGL v3, disclose adaptation and Chinese translation; no endorsement."
+          ],
+          "reviewBeforeConversionRequired": true,
+          "licenseRetrievalNote": "Direct National Archives URL returned 403; no bypass attempted. Primary search result supplied full public licence text."
         },
         "publisher": {
           "verified": true,
           "names": [
             "Food Standards Agency"
           ],
-          "evidenceUrl": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11"
+          "evidenceUrl": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11"
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-14",
           "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 16,
+          "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-15-en-hygiene-labels-and-choices"
     },
     {
       "id": "fr-2026-09-23-bercy-energy",
@@ -3252,6 +3273,11 @@
           "checkedAgainstArticleCount": 39,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 22,
+          "bucket": "within_30_days"
         }
       }
     },
@@ -3288,6 +3314,11 @@
           "checkedAgainstArticleCount": 39,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 64,
+          "bucket": "within_90_days"
         }
       }
     },
@@ -3306,31 +3337,68 @@
         "图书馆",
         "文化休闲"
       ],
-      "level": "B1",
-      "status": "collected",
-      "editorialNote": "进阶/挑战待审：周末参观、造纸和书籍修复的文化体验；意文部分独立选取，不能把下方英文译稿再当英语来源。活动已结束，不能写成未来邀请；全文逐段及署名例外尚待复核。",
+      "level": "B2",
+      "status": "verified",
+      "editorialNote": "2026-10-15 B2档，正文500词；独立全文、译文、许可和5题答案审校通过。回看10月4日发布的意大利档案馆与图书馆开放活动计划：公共档案、私人收藏和修复工作如何让人们接近历史。本文不提供当前参观安排，也不声称活动结果已经核实。",
       "verification": {
-        "workflowStage": "discovered",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-14",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-15",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=9170f636385fbaff93a2c519601712b1&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2772",
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
+        },
         "originalDate": {
-          "verified": false,
-          "evidence": "Header displays 04 ottobre 2026; date observed, final source review pending.",
+          "verified": true,
+          "evidence": "Article publication header explicitly 2026-10-04; a dated news release, not a refreshed evergreen guide.",
           "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=9170f636385fbaff93a2c519601712b1&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2772"
         },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Italian institutional editorial release, institutional ownership and Italian publication context; no translation or external syndication credit in selected body.",
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=9170f636385fbaff93a2c519601712b1&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2772",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certification of individual native tongue or initial drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "evidence": "The article footer Note legali links beniculturali.it/note-legali, which redirects to cultura.gov.it/note-legali. Its licence section applies CC BY 3.0 except stated exceptions, explicitly permits reproduction/distribution/adaptation commercially. Italian institutional narrative has no conflicting text rights; all quoted statements and third-party works excluded.",
+          "evidenceUrls": [
+            "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=9170f636385fbaff93a2c519601712b1&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2772",
+            "https://cultura.gov.it/note-legali"
+          ],
+          "scope": "Institutional narrative only; no direct quotations, images or separately credited third-party works.",
+          "exclusions": [
+            "Photographs, logos and media",
+            "Direct quotations and external/third-party works"
+          ],
+          "attributionRequirements": [
+            "Credit institutional author, title, original URL and date",
+            "Link licence and disclose adaptation/translation; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 10,
+          "asOf": "2026-10-15",
+          "ageDays": 11,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-14",
           "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         }
-      }
+      },
+      "linkToArticleId": "2026-10-15-it-memoria-nelle-carte"
     },
     {
       "id": "de-2026-09-09-rki-sleep-resources",
@@ -3349,18 +3417,18 @@
       ],
       "level": "B2",
       "status": "verified",
-      "editorialNote": "挑战档500–700词可选长文，90天后备（35天），非近30天。口语角度：日常生活条件与睡眠体验有什么联系？仅观察关联，不写因果或个人医疗建议；NRW样本不泛化全德国。此为新报告阅读，非事件快讯。署名按PDF Borrmann，元数据Bormann有差异。DOI: https://doi.org/10.25646/14314",
+      "editorialNote": "2026-10-15 B2档，正文530词；独立全文、译文、许可和5题答案审校通过。阅读2026年9月发表的北威州睡眠研究：数据采集于2024年，显示睡眠体验与心理负担和资源存在关联。本篇同时解释样本限制、自我报告和“关联不等于因果”。",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-14",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-15",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1",
-          "checkedAt": "2026-10-14",
-          "notes": "German 11-page article body read by source researcher; educational adaptation not yet written or reviewed."
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
         },
         "originalDate": {
           "verified": true,
@@ -3395,20 +3463,21 @@
             "Name authors/title, DOI and licence",
             "Disclose adaptation and translation; no endorsement"
           ],
-          "reviewBeforeConversionRequired": true
+          "reviewBeforeConversionRequired": false
         },
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 35,
+          "asOf": "2026-10-15",
+          "ageDays": 36,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-14",
           "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         }
-      }
+      },
+      "linkToArticleId": "2026-10-15-de-schlaf-und-lebensbedingungen"
     },
     {
       "id": "de-2026-09-27-netzpolitik-fashion",
@@ -3434,11 +3503,623 @@
         "editorialReviewComplete": false,
         "checkedAt": "2026-10-14",
         "freshness": {
-          "asOf": "2026-10-14",
-          "ageDays": 17,
+          "asOf": "2026-10-15",
+          "ageDays": 18,
           "bucket": "within_30_days"
         }
       }
+    },
+    {
+      "id": "it-2026-10-14-protezione-in-piazza",
+      "language": "it",
+      "sourceTitle": "SETTIMANA DELLA PROTEZIONE CIVILE | L’INGV al villaggio “Percorsi di protezione civile” a Roma",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/settimana-della-protezione-civile-l-ingv-al-villaggio-percorsi-di-protezione-civile-a-roma",
+      "sourceName": "INGV Ufficio Stampa",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-10-14",
+      "collectedAt": "2026-10-15",
+      "category": "society",
+      "topics": [
+        "公共活动",
+        "防灾知识",
+        "科学交流"
+      ],
+      "level": "A2",
+      "status": "verified",
+      "editorialNote": "2026-10-15 A2档，正文166词；独立全文、译文、许可和5题答案审校通过。INGV于10月14日介绍罗马民防主题活动：10月15日至18日，公众和学校可了解地震与火山监测。本文介绍公布的计划。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-15",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/settimana-della-protezione-civile-l-ingv-al-villaggio-percorsi-di-protezione-civile-a-roma",
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Article publication header explicitly 2026-10-14; a dated news release, not a refreshed evergreen guide.",
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/settimana-della-protezione-civile-l-ingv-al-villaggio-percorsi-di-protezione-civile-a-roma"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Italian institutional editorial release, institutional ownership and Italian publication context; no translation or external syndication credit in selected body.",
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/settimana-della-protezione-civile-l-ingv-al-villaggio-percorsi-di-protezione-civile-a-roma",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certification of individual native tongue or initial drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Article footer explicitly applies CC BY 4.0 to INGV-published content; legal page repeats it. No conflicting text credit. Unrelated photo caption about Mamone is excluded.",
+          "evidenceUrls": [
+            "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/settimana-della-protezione-civile-l-ingv-al-villaggio-percorsi-di-protezione-civile-a-roma",
+            "https://www.ingv.it/note-legali"
+          ],
+          "scope": "Institutional narrative only; no direct quotations, images or separately credited third-party works.",
+          "exclusions": [
+            "Photographs, logos and media",
+            "Direct quotations and external/third-party works"
+          ],
+          "attributionRequirements": [
+            "Credit institutional author, title, original URL and date",
+            "Link licence and disclose adaptation/translation; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-15-it-protezione-in-piazza"
+    },
+    {
+      "id": "it-2026-10-13-regioni-che-cambiano",
+      "language": "it",
+      "sourceTitle": "Storie di dati – Le trasformazioni delle regioni italiane",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/storie-di-dati-le-trasformazioni-delle-regioni-italiane/",
+      "sourceName": "Istat — Italian society and everyday life",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-13",
+      "collectedAt": "2026-10-15",
+      "category": "society",
+      "topics": [
+        "地区变迁",
+        "人口流动",
+        "城市生活"
+      ],
+      "level": "B1",
+      "status": "verified",
+      "editorialNote": "2026-10-15 B1档，正文282词；独立全文、译文、许可和5题答案审校通过。Istat于10月13日发布地区变迁资料。本文比较几个地区长期的人口流动、产业变化和大区首府角色，不把历史趋势当成10月新发生的变化。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-15",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/storie-di-dati-le-trasformazioni-delle-regioni-italiane/",
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Article publication header explicitly 2026-10-13; a dated news release, not a refreshed evergreen guide.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/storie-di-dati-le-trasformazioni-delle-regioni-italiane/"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Italian institutional editorial release, institutional ownership and Italian publication context; no translation or external syndication credit in selected body.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/storie-di-dati-le-trasformazioni-delle-regioni-italiane/",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certification of individual native tongue or initial drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Istat legal notice expressly applies CC BY 4.0 unless otherwise noted and permits sharing and transformation. This Italian release links that notice and has no exception or external author credit in narrative.",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/storie-di-dati-le-trasformazioni-delle-regioni-italiane/",
+            "https://www.istat.it/note-legali/"
+          ],
+          "scope": "Institutional narrative only; no direct quotations, images or separately credited third-party works.",
+          "exclusions": [
+            "Photographs, logos and media",
+            "Direct quotations and external/third-party works"
+          ],
+          "attributionRequirements": [
+            "Credit institutional author, title, original URL and date",
+            "Link licence and disclose adaptation/translation; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 2,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-15-it-regioni-che-cambiano"
+    },
+    {
+      "id": "fr-2026-10-14-regarder-sa-ville-autrement",
+      "language": "fr",
+      "sourceTitle": "Les Journées nationales de l’architecture dans vos régions",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/les-journees-nationales-de-l-architecture-dans-vos-regions",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-14",
+      "collectedAt": "2026-10-15",
+      "category": "culture",
+      "topics": [
+        "建筑",
+        "城市生活",
+        "亲子活动"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-15 A2档，正文155词；独立全文、译文、许可和5题答案审校通过。10月15日至18日，法国建筑日通过参观、散步与儿童活动，让人们观察建筑及其日常用途。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-15",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/les-journees-nationales-de-l-architecture-dans-vos-regions",
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/les-journees-nationales-de-l-architecture-dans-vos-regions",
+          "evidence": "Visible original publication header: Publié le 2026-10-14. Not an update date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/les-journees-nationales-de-l-architecture-dans-vos-regions",
+          "additionalEvidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "author": "Ministère de la Culture",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Official French editorial page produced by the ministry editorial service named in legal notice I.4; no translation, syndication or external text-author credit. The French canonical page differs from the separately described automatic translation service. ",
+          "caveat": "Institutional provenance supports French-original editorial publication, not proof of an individual author’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidence": "Legal notice II.4.3.1(a) explicitly licenses ministry-produced text under CC BY-SA 3.0 FR; II.4.3.2 excludes automatic coverage of partner works. This article is institutional editorial text. CC deed explicitly permits sharing and adaptation; translations and learning materials retain ShareAlike.",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+            "https://www.culture.gouv.fr/actualites/les-journees-nationales-de-l-architecture-dans-vos-regions"
+          ],
+          "scope": "Ministry-owned article narrative and official ministry programme explanations only.",
+          "exclusions": [
+            "All images, photographers’ captions, logos and media",
+            "Linked external programmes, reports, books and third-party works",
+            "External interviewee quotations and separately credited partner prose"
+          ],
+          "attributionRequirements": [
+            "Credit ministry, original title, date and source URL",
+            "Link CC BY-SA 3.0 FR",
+            "Disclose simplification, Chinese translation and added exercises; no endorsement",
+            "Release adaptation, translation and companion under CC BY-SA 3.0 FR"
+          ],
+          "shareAlikeRequired": true,
+          "reviewBeforeConversionRequired": true
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Ministère de la Culture"
+          ],
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/les-journees-nationales-de-l-architecture-dans-vos-regions",
+          "institutionUrl": "https://www.culture.gouv.fr/"
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-15-fr-regarder-sa-ville-autrement"
+    },
+    {
+      "id": "fr-2026-10-14-apprendre-a-proteger-le-patrimoine",
+      "language": "fr",
+      "sourceTitle": "Courants du monde : le patrimoine face au climat",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/courants-du-monde-le-patrimoine-face-au-climat",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-14",
+      "collectedAt": "2026-10-15",
+      "category": "culture",
+      "topics": [
+        "文化遗产",
+        "国际交流",
+        "气候适应"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-15 B1档，正文280词；独立全文、译文、许可和5题答案审校通过。Courants du monde项目让14名专业人士在法国交流文化遗产与气候风险经验，强调相互学习及因地制宜。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-15",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/courants-du-monde-le-patrimoine-face-au-climat",
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/courants-du-monde-le-patrimoine-face-au-climat",
+          "evidence": "Visible original publication header: Publié le 2026-10-14. Not an update date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/courants-du-monde-le-patrimoine-face-au-climat",
+          "additionalEvidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "author": "Ministère de la Culture",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Official French editorial page produced by the ministry editorial service named in legal notice I.4; no translation, syndication or external text-author credit. The French canonical page differs from the separately described automatic translation service. ",
+          "caveat": "Institutional provenance supports French-original editorial publication, not proof of an individual author’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidence": "Legal notice II.4.3.1(a) explicitly licenses ministry-produced text under CC BY-SA 3.0 FR; II.4.3.2 excludes automatic coverage of partner works. This article is institutional editorial text. CC deed explicitly permits sharing and adaptation; translations and learning materials retain ShareAlike.",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+            "https://www.culture.gouv.fr/actualites/courants-du-monde-le-patrimoine-face-au-climat"
+          ],
+          "scope": "Ministry-owned article narrative and official ministry programme explanations only.",
+          "exclusions": [
+            "All images, photographers’ captions, logos and media",
+            "Linked external programmes, reports, books and third-party works",
+            "External interviewee quotations and separately credited partner prose"
+          ],
+          "attributionRequirements": [
+            "Credit ministry, original title, date and source URL",
+            "Link CC BY-SA 3.0 FR",
+            "Disclose simplification, Chinese translation and added exercises; no endorsement",
+            "Release adaptation, translation and companion under CC BY-SA 3.0 FR"
+          ],
+          "shareAlikeRequired": true,
+          "reviewBeforeConversionRequired": true
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Ministère de la Culture"
+          ],
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/courants-du-monde-le-patrimoine-face-au-climat",
+          "institutionUrl": "https://www.culture.gouv.fr/"
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-15-fr-apprendre-a-proteger-le-patrimoine"
+    },
+    {
+      "id": "fr-2026-09-11-cinema-cooperation-et-promesses",
+      "language": "fr",
+      "sourceTitle": "Sommet Lumière : des engagements concrets pour le cinéma et l’image animée",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/sommet-lumiere-des-engagements-concrets-pour-le-cinema-et-l-image-animee",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-09-11",
+      "collectedAt": "2026-10-15",
+      "category": "culture",
+      "topics": [
+        "电影",
+        "国际合作",
+        "文化政策"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-15 B2档，正文510词；独立全文、译文、许可和5题答案审校通过。9月的Sommet Lumière提出国际网络、文化项目与融资承诺。本文区分已建立的合作框架与仍待落实的计划。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-15",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/sommet-lumiere-des-engagements-concrets-pour-le-cinema-et-l-image-animee",
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/sommet-lumiere-des-engagements-concrets-pour-le-cinema-et-l-image-animee",
+          "evidence": "Visible original publication header: Publié le 2026-09-11. Not an update date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/sommet-lumiere-des-engagements-concrets-pour-le-cinema-et-l-image-animee",
+          "additionalEvidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "author": "Ministère de la Culture",
+          "basis": "institutional-original-language-inference",
+          "evidence": "Official French editorial page produced by the ministry editorial service named in legal notice I.4; no translation, syndication or external text-author credit. The French canonical page differs from the separately described automatic translation service. ",
+          "caveat": "Institutional provenance supports French-original editorial publication, not proof of an individual author’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidence": "Legal notice II.4.3.1(a) explicitly licenses ministry-produced text under CC BY-SA 3.0 FR; II.4.3.2 excludes automatic coverage of partner works. This article is institutional editorial text. CC deed explicitly permits sharing and adaptation; translations and learning materials retain ShareAlike.",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+            "https://www.culture.gouv.fr/actualites/sommet-lumiere-des-engagements-concrets-pour-le-cinema-et-l-image-animee"
+          ],
+          "scope": "Ministry-owned article narrative and official ministry programme explanations only.",
+          "exclusions": [
+            "All images, photographers’ captions, logos and media",
+            "Linked external programmes, reports, books and third-party works",
+            "External interviewee quotations and separately credited partner prose"
+          ],
+          "attributionRequirements": [
+            "Credit ministry, original title, date and source URL",
+            "Link CC BY-SA 3.0 FR",
+            "Disclose simplification, Chinese translation and added exercises; no endorsement",
+            "Release adaptation, translation and companion under CC BY-SA 3.0 FR"
+          ],
+          "shareAlikeRequired": true,
+          "reviewBeforeConversionRequired": true
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Ministère de la Culture"
+          ],
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/sommet-lumiere-des-engagements-concrets-pour-le-cinema-et-l-image-animee",
+          "institutionUrl": "https://www.culture.gouv.fr/"
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 34,
+          "bucket": "within_90_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-15-fr-cinema-cooperation-et-promesses"
+    },
+    {
+      "id": "en-2026-10-13-rural-broadband-arrives",
+      "language": "en",
+      "sourceTitle": "North Oxfordshire gets broadband boost four months early through Project Gigabit",
+      "sourceUrl": "https://www.gov.uk/government/news/north-oxfordshire-gets-broadband-boost-four-months-early-through-project-gigabit",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-10-13",
+      "collectedAt": "2026-10-15",
+      "category": "society",
+      "topics": [
+        "乡村生活",
+        "网络连接",
+        "公共服务"
+      ],
+      "level": "B1",
+      "status": "verified",
+      "editorialNote": "2026-10-15 B1档，正文280词；独立全文、译文、许可和5题答案审校通过。北牛津郡的全光纤工程提前完成，更多偏远家庭和企业可以接入网络；南部工程仍在进行。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-15",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/north-oxfordshire-gets-broadband-boost-four-months-early-through-project-gigabit",
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Publication header explicitly states 2026-10-13.",
+          "evidenceUrl": "https://www.gov.uk/government/news/north-oxfordshire-gets-broadband-boost-four-months-early-through-project-gigabit"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Matching registered UK government institution in From metadata; English institutional prose, no translation/syndication credit. This is original-language provenance inference, not mother-tongue certification.",
+          "evidenceUrl": "https://www.gov.uk/government/news/north-oxfordshire-gets-broadband-boost-four-months-early-through-project-gigabit",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not certification of individual mother tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Page-level OGL v3.0 footer; FSA also explicit publication-level Crown copyright 2026/OGL v3 paragraph. GOV.UK terms Using GOV.UK content confirms Crown copyright narrative reuse. National Archives OGL v3 primary search result retrieved full licence text: permits copy/publish/distribute/adapt commercially and non-commercially, requires source acknowledgement, excludes third-party rights and endorsement.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/north-oxfordshire-gets-broadband-boost-four-months-early-through-project-gigabit",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "Institution-authored narrative only.",
+          "exclusions": [
+            "All minister/company quotations, photos/logos excluded. Uses only departmental news narrative; distinguishes completed North rollout from continuing South work."
+          ],
+          "attributionRequirements": [
+            "Credit provider/title/date/source, link OGL v3, disclose adaptation and Chinese translation; no endorsement."
+          ],
+          "reviewBeforeConversionRequired": true,
+          "licenseRetrievalNote": "Direct National Archives URL returned 403; no bypass attempted. Primary search result supplied full public licence text."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/north-oxfordshire-gets-broadband-boost-four-months-early-through-project-gigabit"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 2,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-15-en-rural-broadband-arrives"
+    },
+    {
+      "id": "en-2026-10-14-more-organic-food",
+      "language": "en",
+      "sourceTitle": "Plan to unlock organic market for stronger farms, more homegrown food",
+      "sourceUrl": "https://www.gov.uk/government/news/plan-to-unlock-organic-market-for-stronger-farms-more-homegrown-food",
+      "sourceName": "Department for Environment, Food & Rural Affairs / GOV.UK",
+      "registrySourceId": "govuk-defra-english-news",
+      "sourcePublishedAt": "2026-10-14",
+      "collectedAt": "2026-10-15",
+      "category": "society",
+      "topics": [
+        "日常购物",
+        "农业",
+        "食品选择"
+      ],
+      "level": "A2",
+      "status": "verified",
+      "editorialNote": "2026-10-15 A2档，正文168词；独立全文、译文、许可和5题答案审校通过。英格兰发布有机农业行动计划，希望帮助农民生产和销售更多有机食品。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-15",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/plan-to-unlock-organic-market-for-stronger-farms-more-homegrown-food",
+          "checkedAt": "2026-10-15",
+          "notes": "Full original read and source-specific claims, date, provenance, rights and exclusions independently checked at conversion; edition and five-question companion approved separately."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Publication header explicitly states 2026-10-14.",
+          "evidenceUrl": "https://www.gov.uk/government/news/plan-to-unlock-organic-market-for-stronger-farms-more-homegrown-food"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Matching registered UK government institution in From metadata; English institutional prose, no translation/syndication credit. This is original-language provenance inference, not mother-tongue certification.",
+          "evidenceUrl": "https://www.gov.uk/government/news/plan-to-unlock-organic-market-for-stronger-farms-more-homegrown-food",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not certification of individual mother tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Page-level OGL v3.0 footer; FSA also explicit publication-level Crown copyright 2026/OGL v3 paragraph. GOV.UK terms Using GOV.UK content confirms Crown copyright narrative reuse. National Archives OGL v3 primary search result retrieved full licence text: permits copy/publish/distribute/adapt commercially and non-commercially, requires source acknowledgement, excludes third-party rights and endorsement.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/plan-to-unlock-organic-market-for-stronger-farms-more-homegrown-food",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "Institution-authored narrative only.",
+          "exclusions": [
+            "All stakeholder/minister quotations, named farm/company case studies, photos/logos and linked action-plan full text excluded."
+          ],
+          "attributionRequirements": [
+            "Credit provider/title/date/source, link OGL v3, disclose adaptation and Chinese translation; no endorsement."
+          ],
+          "reviewBeforeConversionRequired": true,
+          "licenseRetrievalNote": "Direct National Archives URL returned 403; no bypass attempted. Primary search result supplied full public licence text."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Environment, Food & Rural Affairs"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/plan-to-unlock-organic-market-for-stronger-farms-more-homegrown-food"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 39,
+          "checkedAt": "2026-10-15",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-15",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-15-en-more-organic-food"
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

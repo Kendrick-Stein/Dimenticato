@@ -1,0 +1,359 @@
+{
+  "editionDate": "2026-10-15",
+  "baseCommit": "edfcacd0367141b6478ac5c7ee3f8f429aa0b1e8",
+  "qualityStatus": "PASS",
+  "scope": "10 independent original-language editions and 50 questions; German A2/B1 omitted.",
+  "wordCountMethod": "Foreign sentences only; whitespace tokens containing Unicode letter or number. Editorial CEFR, not certification.",
+  "historicalCoverage": {
+    "unchangedArticleFiles": 39,
+    "unchangedPracticeFiles": 27
+  },
+  "missingSlots": [
+    {
+      "language": "de",
+      "tier": "short",
+      "reason": "No unused suitable recent source with full native-language and adaptation-rights checks; no recycled or padded edition."
+    },
+    {
+      "language": "de",
+      "tier": "standard",
+      "reason": "No unused suitable recent source with full native-language and adaptation-rights checks; no recycled or padded edition."
+    }
+  ],
+  "correctionsVerified": [
+    "Italian B2 nominal-infinitive and nearest-noun agreement distractors replaced; location Chinese precision corrected.",
+    "German depression variable specifies reported professional diagnosis and persistence within past twelve months; noun forms annotated.",
+    "English online-search denominator wording clarified and noun/gerund distractor alternatives removed."
+  ],
+  "freshnessNotice": "French B2 34-day and German B2 36-day fallbacks explicitly retain original dates. RKI is a newly published observational report with 2024 data, not a breaking-news or causal claim. Archivi October programme is retrospective, not evidence of attendance or completed outcomes.",
+  "rightsScope": "Licensed institution-authored explanatory prose only; no images/logos, restricted questionnaires, external quotations or linked third-party works. Source-specific derivative attribution and ShareAlike retained.",
+  "articles": [
+    {
+      "id": "2026-10-15-it-memoria-nelle-carte",
+      "language": "it",
+      "tier": "extended",
+      "level": "B2",
+      "levelReason": "编辑估计B2：以公共与私人记忆为线索组织长篇说明，包含关系从句、过去计划的叙述、抽象文化词汇和具体例子。非认证测评。",
+      "bodyWords": 500,
+      "source": {
+        "name": "Ministero della Cultura — Direzione generale Archivi",
+        "title": "Domenica di Carta e Carte in Dimora 2026: archivi e biblioteche aprono le porte alla storia d'Italia",
+        "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=9170f636385fbaff93a2c519601712b1&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2772",
+        "publishedAt": "2026-10-04",
+        "lang": "it"
+      },
+      "sourceAgeDays": 11,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Creative Commons Attribution 3.0 (CC BY 3.0)",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      "articleSha256": "ef920a9fb12a9d0f660c79c098eaca2f1d116dea2c09dd4d702402fe1f3d5f38",
+      "practiceSha256": "3912687ee35408917f3149a12f5f25436d938f770166a0b178780b5b857ab814",
+      "bodySha256": "d4e916de4ce2eebb3873909e628658373c2f0d0cc922e08a113ac6084fee6c94",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "primary": "Article source URL, Italian text above English version; publication heading and paragraphs about two initiatives, Rome, Turin, Caserta, Ravenna, Baldini, Cremona and Lucca",
+        "rights": "Article footer Note legali links www.beniculturali.it/note-legali; independently followed redirect to https://cultura.gov.it/note-legali : Licenza CC BY 3.0, adaptation permitted; third-party exceptions excluded",
+        "facts": "October 4 publication; October 3–4 planned events; 1731–1733 building dates; two Ravenna visits; Duecento means thirteenth century. Past programme framing does not assert completed events."
+      }
+    },
+    {
+      "id": "2026-10-15-it-protezione-in-piazza",
+      "language": "it",
+      "tier": "short",
+      "level": "A2",
+      "levelReason": "编辑估计A2：以时间、地点和具体参观活动为主，短句与常用将来时，专业词汇配中文注释。非认证测评。",
+      "bodyWords": 166,
+      "source": {
+        "name": "INGV Ufficio Stampa",
+        "title": "SETTIMANA DELLA PROTEZIONE CIVILE | L’INGV al villaggio “Percorsi di protezione civile” a Roma",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/settimana-della-protezione-civile-l-ingv-al-villaggio-percorsi-di-protezione-civile-a-roma",
+        "publishedAt": "2026-10-14",
+        "lang": "it"
+      },
+      "sourceAgeDays": 1,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "articleSha256": "254fe73817cadf93f82302311cbdc0c9020e91a575bafba8c21bc0a27969f427",
+      "practiceSha256": "ae61158b0383092928beca21a0de1c4f486a29ad9b867cd7b97dbf22128dac0b",
+      "bodySha256": "eb30644f957a714c2d844319adf6670df11754bb5ba2e1f133c4435202f132df",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "primary": "evidence/ingv-independent.html: article title, publication field, complete body paragraphs and footer (independently fetched public HTML)",
+        "rights": "https://www.ingv.it/note-legali : Copyright and footer CC BY 4.0; same explicit footer on article",
+        "facts": "Publication October 14; October 15–18, 09–17, Villa Borghese/Piazza di Siena; operations rooms Rome/Naples/Catania; three seminars October 15–16 and their three topics. All preserved. No inference of completed attendance or personal safety advice."
+      }
+    },
+    {
+      "id": "2026-10-15-it-regioni-che-cambiano",
+      "language": "it",
+      "tier": "standard",
+      "level": "B1",
+      "levelReason": "编辑估计B1：通过具体地区连接过去与现在，使用比较结构、原因表达和常用统计概念；术语配中文注释。非认证测评。",
+      "bodyWords": 282,
+      "source": {
+        "name": "Istat — Italian society and everyday life",
+        "title": "Storie di dati – Le trasformazioni delle regioni italiane",
+        "url": "https://www.istat.it/comunicato-stampa/storie-di-dati-le-trasformazioni-delle-regioni-italiane/",
+        "publishedAt": "2026-10-13",
+        "lang": "it"
+      },
+      "sourceAgeDays": 2,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "articleSha256": "dc4cde0e6c53f707d452fd574a05d4f6eb7c67876404528ad6c3fc30b1450211",
+      "practiceSha256": "46b9ffa15fe3f1d672371e40fa1c64bf73d50871442436f2d0ac57037250e5e9",
+      "bodySha256": "ccd77cc12b818f96a80cbf8b30071a1dd2d7d7338e975e9863045f16a83f9a4b",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "primary": "https://www.istat.it/comunicato-stampa/storie-di-dati-le-trasformazioni-delle-regioni-italiane/ : publication heading; Piemonte, Veneto, Liguria, Emilia-Romagna, Sardegna HTML sections",
+        "rights": "https://www.istat.it/note-legali/ : Licenza CC-by Creative Commons 4.0 and Uso del marchio/logo e patrocinio",
+        "facts": "October 13 publication; historical regional migration/industry trends, Genoa over one third, Sardinia decline since 1990s, Emilia-Romagna recent positive dynamics all match HTML. No PDF statistics imported. Historical periods separated from new publication."
+      }
+    },
+    {
+      "id": "2026-10-15-fr-apprendre-a-proteger-le-patrimoine",
+      "language": "fr",
+      "tier": "standard",
+      "level": "B1",
+      "levelReason": "编辑估计B1：连贯解释项目、比较方法与适用条件，使用关系从句、因果与转折；抽象词附注释。非认证CEFR测评。",
+      "bodyWords": 280,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Courants du monde : le patrimoine face au climat",
+        "url": "https://www.culture.gouv.fr/actualites/courants-du-monde-le-patrimoine-face-au-climat",
+        "publishedAt": "2026-10-14",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 1,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+      },
+      "articleSha256": "cae6427a02b013f500338962cdb1fb979a4131707980d555db17090a1df30690",
+      "practiceSha256": "57fd858c9432669e9807391233cb5f8ec274ba2478bdeaf7ce9117961491b317",
+      "bodySha256": "e508d313c453361f5c056e0968014948477238e9fcf589a0a515386c709b74cd",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "facts": "PASS. A2 sentences 1-11 match architecture L19,21,33-39; B1 sentences 1-14 match Courants L19,21,33-38,49,51,54,57; B2 sentences 1-19 match Sommet L19,21,32-36,41,43,45,47-53. All numbers, dates and locations preserved.",
+        "rights": "PASS for ministry institutional text only. Current legal notice independently reopened 2026-10-15: I.4 editorial management; II.4.3.1(a) CC BY-SA 3.0 FR; II.4.3.2 partner exceptions. No photos/captions/logos, interviewee quotations or linked declaration text adapted. Attribution and changes notice cover French derivative, Chinese and exercises."
+      }
+    },
+    {
+      "id": "2026-10-15-fr-cinema-cooperation-et-promesses",
+      "language": "fr",
+      "tier": "extended",
+      "level": "B2",
+      "levelReason": "编辑估计B2：以国际电影政策为主题，区分机构、承诺、资金工具及执行前景；包含复合句、让步和概念性词汇。非认证CEFR测评。",
+      "bodyWords": 510,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Sommet Lumière : des engagements concrets pour le cinéma et l’image animée",
+        "url": "https://www.culture.gouv.fr/actualites/sommet-lumiere-des-engagements-concrets-pour-le-cinema-et-l-image-animee",
+        "publishedAt": "2026-09-11",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 34,
+      "freshness": "within_90_days",
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+      },
+      "articleSha256": "337871693f46d0c817cdcc05146240957f8fcb60e63930542da055c284bd19aa",
+      "practiceSha256": "65410c08da943e54b0d3e37b428c3628fa07f83d45292f207e12f98a59df5cda",
+      "bodySha256": "27563518a7792fa5426e65cf58b88192e1b790fa64ee9be107ddf5f82f7aaaf9",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "facts": "PASS. A2 sentences 1-11 match architecture L19,21,33-39; B1 sentences 1-14 match Courants L19,21,33-38,49,51,54,57; B2 sentences 1-19 match Sommet L19,21,32-36,41,43,45,47-53. All numbers, dates and locations preserved.",
+        "rights": "PASS for ministry institutional text only. Current legal notice independently reopened 2026-10-15: I.4 editorial management; II.4.3.1(a) CC BY-SA 3.0 FR; II.4.3.2 partner exceptions. No photos/captions/logos, interviewee quotations or linked declaration text adapted. Attribution and changes notice cover French derivative, Chinese and exercises."
+      }
+    },
+    {
+      "id": "2026-10-15-fr-regarder-sa-ville-autrement",
+      "language": "fr",
+      "tier": "short",
+      "level": "A2",
+      "levelReason": "编辑估计A2：具体地点与活动、常用现在时和简单目的表达；建筑相关新词有中文支持。非认证CEFR测评。",
+      "bodyWords": 155,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Les Journées nationales de l’architecture dans vos régions",
+        "url": "https://www.culture.gouv.fr/actualites/les-journees-nationales-de-l-architecture-dans-vos-regions",
+        "publishedAt": "2026-10-14",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 1,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+      },
+      "articleSha256": "2b509d73ca49183f1bc6360e61ade4650266ac464289da1ddf547afe6ac61ef2",
+      "practiceSha256": "ce459d17e140e8ccec5d4f4fc6745e386fc28a572f2920c0b83c5afca4fa8ea7",
+      "bodySha256": "bdfe305d293d4c78398ba65f3e34ef9b5bbd516234435d665d705e4d992bf264",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "facts": "PASS. A2 sentences 1-11 match architecture L19,21,33-39; B1 sentences 1-14 match Courants L19,21,33-38,49,51,54,57; B2 sentences 1-19 match Sommet L19,21,32-36,41,43,45,47-53. All numbers, dates and locations preserved.",
+        "rights": "PASS for ministry institutional text only. Current legal notice independently reopened 2026-10-15: I.4 editorial management; II.4.3.1(a) CC BY-SA 3.0 FR; II.4.3.2 partner exceptions. No photos/captions/logos, interviewee quotations or linked declaration text adapted. Attribution and changes notice cover French derivative, Chinese and exercises."
+      }
+    },
+    {
+      "id": "2026-10-15-de-schlaf-und-lebensbedingungen",
+      "language": "de",
+      "tier": "extended",
+      "level": "B2",
+      "levelReason": "编辑估计B2：较长的研究解释包含关系从句、被动态、名词化和审慎推断，区分样本、主观测量、关联与因果；专业词汇有语境注释。非认证CEFR测评。",
+      "bodyWords": 530,
+      "source": {
+        "name": "Robert Koch-Institut — Journal of Health Monitoring",
+        "title": "Subjektive Schlafqualität im Zusammenhang mit psychosozialen Ressourcen und Belastungen – Eine explorative Datenanalyse des NRW-Gesundheitssurveys 2024",
+        "url": "https://edoc.rki.de/bitstream/handle/176904/13909/johm-11-16-DE-pdf.pdf?isAllowed=y&sequence=1",
+        "publishedAt": "2026-09-09",
+        "lang": "de"
+      },
+      "sourceAgeDays": 36,
+      "freshness": "within_90_days",
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "articleSha256": "e53928910846a5886a44c549c2625cefe41b74f6a543eaea3e553187e3462e77",
+      "practiceSha256": "7745f8003c88ddf2f8930fe5747e32148936346dabd04741e93a62e2d4628868",
+      "bodySha256": "3ca5a14f32d07ed71d0e521501a6e6423d4ffcb10f2adc1a45cfd8159d30ab04",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "facts": "PDF pp.3–4 methods: NRW 2024 self-reported survey; 2002 respondents/1799 complete analysis. p.4 depression variable: reported professional diagnosis and persistence in last twelve months. Results Tables 1/2 and model interpretation: 36.9%,43.9%,31.4%, no causal claim. Discussion limitations: cross-sectional, subjective measures, no Germany-wide generalization.",
+        "rights": "PDF p.1 CC BY 4.0 and publication 09.09.2026. Repository metadata differs (CC BY 3.0 DE/Bormann); use article-specific PDF notice and Borrmann byline, explicitly disclosed.",
+        "review": "Independent second-editor final readback of diagnosis wording, Chinese, noun forms and all five offsets/alternatives passed."
+      }
+    },
+    {
+      "id": "2026-10-15-en-hygiene-labels-and-choices",
+      "language": "en",
+      "tier": "extended",
+      "level": "B2",
+      "levelReason": "围绕同一调查展开连贯分析，含统计口径、限定条件、对照和方法局限；使用从句及抽象词汇但不堆砌术语。",
+      "bodyWords": 511,
+      "source": {
+        "name": "Food Standards Agency / GOV.UK",
+        "title": "Food Hygiene Rating Scheme (FHRS) Food and You 2 report: wave 11",
+        "url": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11",
+        "publishedAt": "2026-09-29",
+        "lang": "en",
+        "author": "Megan Potts; Rachael Shillitoe; Robin Clifford; Matt Jenkins"
+      },
+      "sourceAgeDays": 16,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "articleSha256": "9e42312f759dd4c6ddb040a348c2349ecc3487f9e138328d0fd2c865dc9ab64b",
+      "practiceSha256": "09479d859d6dcf19ae3063a70654a541822543686976b92a12df272dbbfe8ff8",
+      "bodySha256": "27e97ab377be4c5e4506efb4cc42183f5a23fc83e591c974d66eefa4c4809e86",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "sourceFile": "/tmp/en-oct15/fsa-source.txt",
+        "facts": "Executive summary lines 650–701; introduction/scheme and fieldwork; interpretation lines 786–794; chapters 2–4; footnotes 4,10,13,18,22,26,29 at lines 1597,1615,1624,1639,1651,1663,1672.",
+        "article": "s1–s21",
+        "notes": "B2 511 words: release date distinct from 2025 fieldwork; England/Wales/NI scope, 5,898 age16+; 91%,55%,41–44%,86% of checkers,56%/29% ease,28% and94% scheme-aware all supported. Nonresponse, sampling, recall and desirability limitations match report. Missing sticker is not asserted to prove poor hygiene."
+      }
+    },
+    {
+      "id": "2026-10-15-en-more-organic-food",
+      "language": "en",
+      "tier": "short",
+      "level": "A2",
+      "levelReason": "短句为主，以农场、商店和购物为具体场景；少量有机农业词汇有中文释义，区分计划与已实现结果。",
+      "bodyWords": 168,
+      "source": {
+        "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+        "title": "Plan to unlock organic market for stronger farms, more homegrown food",
+        "url": "https://www.gov.uk/government/news/plan-to-unlock-organic-market-for-stronger-farms-more-homegrown-food",
+        "publishedAt": "2026-10-14",
+        "lang": "en",
+        "author": "Department for Environment, Food & Rural Affairs"
+      },
+      "sourceAgeDays": 1,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "articleSha256": "3958a1362e3fc0b5ad2134b9cb49635e6e5748eaffa4d927b47d79bf7705f9bd",
+      "practiceSha256": "976a7fce79e6b43401dc09926d185592f55410d1c73ce12b394ae6906a4e8cbb",
+      "bodySha256": "1478875f2f62d85132717f304d50983a105f0f103fded181f365a6b10f50895b",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "sourceFile": "/tmp/en-oct15/organic-source.txt",
+        "facts": "Visible publication date; lines 489–515: opening plan, 3.4% toward 10% by 2036, supply-chain speed, three areas of support, farmers choosing systems, consumer choice.",
+        "article": "s1–s13",
+        "notes": "A2 168 words: concrete explanatory progression; ambition consistently distinguished from achieved outcome; all quotations, images and named-farm case studies excluded."
+      }
+    },
+    {
+      "id": "2026-10-15-en-rural-broadband-arrives",
+      "language": "en",
+      "tier": "standard",
+      "level": "B1",
+      "levelReason": "通过工程完成情况解释乡村网络与日常生活的联系，含原因、比较、被动结构和完成时；保留可接入与已订购的区别。",
+      "bodyWords": 280,
+      "source": {
+        "name": "Department for Digital, Culture, Media and Sport and Building Digital UK / GOV.UK",
+        "title": "North Oxfordshire gets broadband boost four months early through Project Gigabit",
+        "url": "https://www.gov.uk/government/news/north-oxfordshire-gets-broadband-boost-four-months-early-through-project-gigabit",
+        "publishedAt": "2026-10-13",
+        "lang": "en",
+        "author": "Department for Digital, Culture, Media and Sport; Building Digital UK"
+      },
+      "sourceAgeDays": 2,
+      "freshness": "within_30_days",
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "articleSha256": "6e0ec9e16e5418ce3dc10d5d10c751c9493ae28fdf60d81cc5d105aff854a3a0",
+      "practiceSha256": "b3fecc8d5fff658b8c365ecb7c77fd43abd6b72273099fe56b1d4c587629ddeb",
+      "bodySha256": "720ac8be656f7ec916583ea8d48488740975443fea9488bfae199dadffbba7f6",
+      "review": "PASS — independent source, fact, translation, native provenance, rights, difficulty and learning-summary checks",
+      "practiceReview": "PASS — five exact-form questions independently checked, contextual alternatives removed",
+      "sourceLocators": {
+        "sourceFile": "/tmp/en-oct15/broadband-source.txt",
+        "facts": "Visible publication metadata; opening three bullets and four paragraphs; final two-contract paragraph and continuing-South paragraph.",
+        "article": "s1–s14",
+        "notes": "B1 280 words: 3,880 completed premises, four months early, £8.2m northern contract, £23.1m combined subsidy and expected around 9,300 are correctly separated; availability is not takeup. Interpretive scaffolding is relevant rather than unsupported padding."
+      }
+    }
+  ],
+  "tests": {
+    "baseline": "39 harnesses — 475624 passed, 0 failed, 0 known issues",
+    "focused": "article/candidate/practice validators and 1280 practice tests passed",
+    "fullSuite": "39 harnesses — 475971 passed, 0 failed, 0 known issues",
+    "diffCheck": "PASS"
+  },
+  "reserveStatus": {
+    "candidateCount": 50,
+    "remainingUnlinked": 5,
+    "note": "Original dates/freshness refreshed. Source discovery does not imply rights clearance; unlinked leads remain not ready. A full week of approved editions is not claimed."
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-en-hygiene-labels-and-choices",
+  "storyId": "fsa-hygiene-choices-2026-09-29",
+  "lang": "en",
+  "date": "2026-10-15",
+  "category": "society",
+  "topics": [
+    "外出用餐",
+    "消费选择",
+    "调查解读"
+  ],
+  "title": "Food hygiene labels: awareness is only the beginning",
+  "titleZh": "食品卫生标签：知道只是第一步",
+  "summaryZh": "一份新发布的报告分析2025年的调查：认识卫生评分、实际查看评分和把评分用于消费决策，是不同层面的行为。",
+  "level": "B2",
+  "levelReason": "围绕同一调查展开连贯分析，含统计口径、限定条件、对照和方法局限；使用从句及抽象词汇但不堆砌术语。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Food Standards Agency / GOV.UK",
+    "title": "Food Hygiene Rating Scheme (FHRS) Food and You 2 report: wave 11",
+    "url": "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11",
+    "publishedAt": "2026-09-29",
+    "lang": "en",
+    "author": "Megan Potts; Rachael Shillitoe; Robin Clifford; Matt Jenkins"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. 来源：Food Standards Agency / GOV.UK；作者/发布机构：Megan Potts; Rachael Shillitoe; Robin Clifford; Matt Jenkins；原文发表于2026-09-29：https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11/food-hygiene-rating-scheme-fhrs-food-and-you-2-report-wave-11。© Crown copyright 2026。",
+  "adaptation": "依据机构英文原文进行同语言教学改写，配中文逐句翻译、词汇释义和原创练习；不代表发布机构认可。仅使用机构叙述，未使用图片、标志、第三方引语或外部文献原文。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "When choosing somewhere to eat, people may weigh up familiar food, price and recommendations, but a hygiene rating offers a different kind of information.",
+      "zh": "选择用餐地点时，人们可能会权衡熟悉的食物、价格和推荐，而卫生评分提供的是另一类信息。",
+      "glosses": [
+        {
+          "surface": "weigh",
+          "lemma": "weigh",
+          "zh": "权衡"
+        },
+        {
+          "surface": "recommendations",
+          "lemma": "recommendation",
+          "zh": "推荐"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "A Food Standards Agency report published on 29 September 2026 explores how people recognise these ratings, look for them and use them in decisions.",
+      "zh": "食品标准局于2026年9月29日发布的一份报告探讨人们如何识别、查找这些评分，并将其用于决策。",
+      "glosses": [
+        {
+          "surface": "recognise",
+          "lemma": "recognise",
+          "zh": "识别"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Although the publication is recent, the survey behind it was conducted between 19 May and 7 August 2025, so its results describe that earlier period.",
+      "zh": "尽管报告是最近发布的，其背后的调查却于2025年5月19日至8月7日进行，因此结果描述的是更早的时期。",
+      "glosses": [
+        {
+          "surface": "conducted",
+          "lemma": "conduct",
+          "zh": "开展"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "It involved 5,898 respondents aged 16 or over in England, Wales and Northern Ireland; the findings in this report do not cover Scotland.",
+      "zh": "调查涉及英格兰、威尔士和北爱尔兰5,898名16岁及以上受访者；本报告的结果不涵盖苏格兰。",
+      "glosses": [
+        {
+          "surface": "respondents",
+          "lemma": "respondent",
+          "zh": "受访者"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The Food Hygiene Rating Scheme gives businesses a score from zero to five, based on the hygiene standards found during local authority inspections.",
+      "zh": "食品卫生评级制度根据地方政府检查时发现的卫生状况，为商家打出零至五分的评分。",
+      "glosses": [
+        {
+          "surface": "inspections",
+          "lemma": "inspection",
+          "zh": "检查"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Five indicates very good standards, whereas zero means urgent improvement is necessary, and the information is intended to support informed choices about food.",
+      "zh": "五分表示卫生标准非常好，零分则表示需要紧急改进；这些信息旨在帮助人们在充分了解情况后作出食品消费选择。",
+      "glosses": [
+        {
+          "surface": "whereas",
+          "lemma": "whereas",
+          "zh": "而"
+        },
+        {
+          "surface": "informed",
+          "lemma": "informed",
+          "zh": "掌握充分信息的"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "In the survey, 91% of respondents said they had heard of the scheme, yet a much smaller share reported actually checking a rating.",
+      "zh": "调查中，91%的受访者表示听说过该制度，但报告自己实际查看过评分的比例要小得多。",
+      "glosses": [
+        {
+          "surface": "share",
+          "lemma": "share",
+          "zh": "比例"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Overall, 55% said they had checked one during the previous twelve months, compared with between 41% and 44% in the earlier comparable survey waves.",
+      "zh": "总体而言，55%的人表示在此前十二个月中查看过评分，而此前可比较的几轮调查中这一比例为41%至44%。",
+      "glosses": [
+        {
+          "surface": "comparable",
+          "lemma": "comparable",
+          "zh": "可比较的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Among those who had checked, the most common method was looking at the sticker displayed at the business, reported by 86% of that group.",
+      "zh": "在查看过评分的人中，最常见的方式是看商家展示的贴纸，该群体中86%的人报告使用过这种方式。",
+      "glosses": [
+        {
+          "surface": "displayed",
+          "lemma": "display",
+          "zh": "展示的"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "This does not mean that 86% of everyone surveyed had used a sticker: the percentage refers specifically to respondents who had already checked a rating.",
+      "zh": "这并不意味着所有受访者中有86%使用过贴纸：该比例专指那些已经查看过评分的受访者。",
+      "glosses": [
+        {
+          "surface": "specifically",
+          "lemma": "specifically",
+          "zh": "具体地；专门地"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Finding the information also appeared easier in person than online, with 56% describing the in-person search as easy, against 29% for an online search.",
+      "zh": "找到信息似乎也是线下比线上更容易：56%的人认为线下查找容易，而认为线上查找容易的比例为29%。",
+      "glosses": [
+        {
+          "surface": "against",
+          "lemma": "against",
+          "zh": "与……相比"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "However, the other answers to the online-search question did not all indicate difficulty, because the options also included not looking for ratings and not knowing.",
+      "zh": "不过，对线上查找问题的其他回答并非都表示查找困难，因为选项还包括不查找评分和不知道。",
+      "glosses": [
+        {
+          "surface": "indicate",
+          "lemma": "indicate",
+          "zh": "表示"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "A visible rating can matter when a customer chooses whether to enter a business, although familiarity with the scheme does not automatically determine that choice.",
+      "zh": "顾客决定是否进入一家商店或餐馆时，看得见的评分可能很重要，尽管熟悉该制度并不会自动决定其选择。",
+      "glosses": [
+        {
+          "surface": "automatically",
+          "lemma": "automatically",
+          "zh": "自动地；必然地"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Among respondents who had heard of the scheme, 28% said they had avoided a business in the previous twelve months because its sticker was missing.",
+      "zh": "在听说过该制度的受访者中，28%表示曾在此前十二个月中因商家未展示贴纸而放弃使用其服务。",
+      "glosses": [
+        {
+          "surface": "avoided",
+          "lemma": "avoid",
+          "zh": "避开了；放弃了"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "That finding records what people said they had done; it does not establish that every business without a visible sticker has poor hygiene.",
+      "zh": "这一结果记录的是人们自述的行为，并不能证明每家没有明显展示贴纸的商家都卫生状况不佳。",
+      "glosses": [
+        {
+          "surface": "establish",
+          "lemma": "establish",
+          "zh": "证实"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "The report explains that display is encouraged in England, while businesses in Wales and Northern Ireland are legally required to display their rating prominently.",
+      "zh": "报告解释说，英格兰鼓励展示评分，而威尔士和北爱尔兰的商家依法必须在显眼位置展示评分。",
+      "glosses": [
+        {
+          "surface": "prominently",
+          "lemma": "prominently",
+          "zh": "显眼地"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Support for a display requirement was strong: 94% of those who had heard of the scheme thought businesses should have to show their rating at their premises.",
+      "zh": "受访者对强制展示的支持很高：听说过该制度的人中，94%认为商家应当必须在经营场所展示评分。",
+      "glosses": [
+        {
+          "surface": "requirement",
+          "lemma": "requirement",
+          "zh": "要求"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Still, the report warns that survey answers are self-reported, meaning that imperfect memories or a wish to give socially acceptable answers may affect them.",
+      "zh": "不过，报告提醒，调查答案来自自我报告，这意味着记忆不准确或希望给出社会认可的答案，都可能影响回答。",
+      "glosses": [
+        {
+          "surface": "self-reported",
+          "lemma": "self-reported",
+          "zh": "自我报告的"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "The researchers used weighting to improve representativeness, but sampling uncertainty and possible differences between people who responded and those who did not remain important limitations.",
+      "zh": "研究人员使用加权来改善代表性，但抽样不确定性，以及回应者与未回应者之间可能存在的差异，仍是重要局限。",
+      "glosses": [
+        {
+          "surface": "weighting",
+          "lemma": "weighting",
+          "zh": "加权"
+        },
+        {
+          "surface": "limitations",
+          "lemma": "limitation",
+          "zh": "局限"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Taken together, the results suggest a useful distinction between knowing that a label exists, being able to find it and allowing it to influence a purchase.",
+      "zh": "综合来看，结果提示我们有必要区分三个层面：知道某个标签存在、能够找到它，以及让它影响购买决定。",
+      "glosses": [
+        {
+          "surface": "distinction",
+          "lemma": "distinction",
+          "zh": "区别"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "For readers, that distinction makes the statistics more meaningful without turning a survey about reported behaviour into a simple claim about how everyone actually eats.",
+      "zh": "对于读者而言，这种区分让统计数据更有意义，也避免把一项关于自述行为的调查变成对所有人实际饮食行为的简单断言。",
+      "glosses": [
+        {
+          "surface": "meaningful",
+          "lemma": "meaningful",
+          "zh": "有意义的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "conducted",
+        "zh": "开展",
+        "sentenceId": "s3",
+        "lemma": "conduct"
+      },
+      {
+        "text": "respondents",
+        "zh": "受访者",
+        "sentenceId": "s4",
+        "lemma": "respondent"
+      },
+      {
+        "text": "comparable",
+        "zh": "可比较的",
+        "sentenceId": "s8",
+        "lemma": "comparable"
+      },
+      {
+        "text": "prominently",
+        "zh": "显眼地",
+        "sentenceId": "s16",
+        "lemma": "prominently"
+      },
+      {
+        "text": "limitations",
+        "zh": "局限",
+        "sentenceId": "s19",
+        "lemma": "limitation"
+      },
+      {
+        "text": "distinction",
+        "zh": "区别",
+        "sentenceId": "s20",
+        "lemma": "distinction"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "weigh up",
+        "zh": "权衡",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "refers specifically to",
+        "zh": "专指",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "Taken together",
+        "zh": "综合来看",
+        "sentenceId": "s20"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "not all表示“并非所有”，避免把非肯定回答全部误读为否定回答。"
+      },
+      {
+        "sentenceId": "s19",
+        "note": "but转折保留统计方法的局限，不能把加权理解为消除所有偏差。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "How would you compare a hygiene rating with a friend’s recommendation when choosing a restaurant?",
+        "zh": "选择餐馆时，你会如何比较卫生评分与朋友推荐的作用？"
+      },
+      {
+        "text": "Why is it important to know which group a percentage describes?",
+        "zh": "为什么了解一个百分比描述的是哪个群体很重要？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "weigh up",
+        "zh": "权衡",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "refers specifically to",
+        "zh": "专指",
+        "sentenceId": "s10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-it-regioni-che-cambiano",
+  "storyId": "it-2026-10-13-regioni-che-cambiano",
+  "lang": "it",
+  "date": "2026-10-15",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "地区变迁",
+    "人口流动",
+    "城市生活"
+  ],
+  "title": "Le regioni italiane raccontate dai dati",
+  "titleZh": "用数据讲述意大利地区的变化",
+  "summaryZh": "Istat于10月13日发布地区变迁资料。本文比较几个地区长期的人口流动、产业变化和大区首府角色，不把历史趋势当成10月新发生的变化。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：通过具体地区连接过去与现在，使用比较结构、原因表达和常用统计概念；术语配中文注释。非认证测评。",
+  "source": {
+    "name": "Istat — Italian society and everyday life",
+    "title": "Storie di dati – Le trasformazioni delle regioni italiane",
+    "url": "https://www.istat.it/comunicato-stampa/storie-di-dati-le-trasformazioni-delle-regioni-italiane/",
+    "publishedAt": "2026-10-13",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：Istat — Italian society and everyday life，《Storie di dati – Le trasformazioni delle regioni italiane》，2026-10-13；2026-10-15查阅。依据CC BY 4.0使用机构正文，原文及许可链接见上。未使用图片、标志、外部作品或直接引语。",
+  "adaptation": "Dimenticato依据意大利语机构原文进行同语言节选、重组与难度调整，添加简体中文翻译、语境注释、学习总结及原创口语和练习。保留原始数据及事件时期；不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "it-regioni-che-cambiano-01",
+      "text": "Il 13 ottobre 2026 l’Istat ha pubblicato “Storie di dati”, un percorso sulle trasformazioni delle regioni italiane dall’Unità d’Italia a oggi.",
+      "zh": "2026年10月13日，Istat发布“数据故事”，展现意大利统一至今各地区的变化。",
+      "glosses": [
+        {
+          "surface": "trasformazioni",
+          "lemma": "trasformazione",
+          "zh": "变化"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-02",
+      "text": "Le schede raccontano come sono cambiati la popolazione, il lavoro e le attività economiche, mostrando percorsi diversi all’interno dello stesso Paese.",
+      "zh": "各地区简介讲述人口、工作和经济活动如何变化，展示同一国家内部不同的发展历程。",
+      "glosses": [
+        {
+          "surface": "schede",
+          "lemma": "scheda",
+          "zh": "简介"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-03",
+      "text": "In Piemonte, durante gli anni del boom economico, sono arrivate molte persone da altre zone d’Italia, ma nel lungo periodo la popolazione è cresciuta meno della media nazionale.",
+      "zh": "在经济繁荣时期，许多人从意大利其他地区来到皮埃蒙特，但从长期看，该地区人口增长低于全国平均水平。",
+      "glosses": [
+        {
+          "surface": "persone",
+          "lemma": "persona",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-04",
+      "text": "La regione conserva un’importante attività industriale, mentre Torino, il suo capoluogo, è diventata anche un centro di servizi e di innovazione.",
+      "zh": "该地区仍保有重要工业，而其首府都灵也已成为服务业与创新中心。",
+      "glosses": [
+        {
+          "surface": "capoluogo",
+          "lemma": "capoluogo",
+          "zh": "地区首府"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-05",
+      "text": "Il Veneto offre un altro esempio: fino agli anni Sessanta era una regione da cui molte persone partivano, poi lo sviluppo industriale ha favorito l’arrivo di nuovi abitanti.",
+      "zh": "威尼托提供了另一个例子：直到20世纪60年代，它还是许多人迁出的地区，后来工业发展促进了新居民迁入。",
+      "glosses": [
+        {
+          "surface": "abitanti",
+          "lemma": "abitante",
+          "zh": "居民"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-06",
+      "text": "Oggi l’industria mantiene un ruolo importante nella regione, mentre Venezia si distingue per i servizi e per il turismo.",
+      "zh": "如今，工业在该地区仍发挥重要作用，而威尼斯以服务业和旅游业见长。",
+      "glosses": [
+        {
+          "surface": "ruolo",
+          "lemma": "ruolo",
+          "zh": "作用"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-07",
+      "text": "Anche in Liguria le migrazioni interne hanno sostenuto la crescita della popolazione fino ai primi anni Settanta.",
+      "zh": "在利古里亚，国内人口迁移也曾推动人口增长，持续到20世纪70年代初。",
+      "glosses": [
+        {
+          "surface": "crescita",
+          "lemma": "crescita",
+          "zh": "增长"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-08",
+      "text": "Dal decennio successivo, però, il numero dei residenti ha cominciato a diminuire e la popolazione è invecchiata rapidamente.",
+      "zh": "但从随后的十年起，居民人数开始减少，人口迅速老龄化。",
+      "glosses": [
+        {
+          "surface": "residenti",
+          "lemma": "residente",
+          "zh": "居民"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-09",
+      "text": "L’immigrazione dall’estero attenua oggi questo calo, e Genova concentra oltre un terzo degli abitanti della regione.",
+      "zh": "来自国外的移民如今减缓了这一人口下降，热那亚集中了该地区超过三分之一的居民。",
+      "glosses": [
+        {
+          "surface": "calo",
+          "lemma": "calo",
+          "zh": "下降"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-10",
+      "text": "La storia dell’Emilia-Romagna mostra invece il passaggio da terra di emigrazione a territorio capace di attirare persone grazie allo sviluppo industriale del dopoguerra.",
+      "zh": "艾米利亚-罗马涅的历史则呈现另一种转变：从人口迁出地区，变为凭借战后工业发展吸引人口的地区。",
+      "glosses": [
+        {
+          "surface": "dopoguerra",
+          "lemma": "dopoguerra",
+          "zh": "战后时期"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-11",
+      "text": "Nell’ultimo decennio questa capacità di attrazione ha contribuito a mantenere positiva la dinamica demografica, in contrasto con l’andamento dell’Italia nel suo insieme.",
+      "zh": "在最近十年，这种吸引力帮助该地区保持人口增长，与意大利整体趋势形成对照。",
+      "glosses": [
+        {
+          "surface": "attrazione",
+          "lemma": "attrazione",
+          "zh": "吸引力"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-12",
+      "text": "In Sardegna, infine, l’economia storicamente agricola si è orientata sempre più verso i servizi, soprattutto il turismo, mentre dagli anni Novanta la popolazione affronta una fase di declino.",
+      "zh": "最后，在撒丁岛，历史上以农业为主的经济日益转向服务业，尤其是旅游业，而人口自20世纪90年代起进入下降阶段。",
+      "glosses": [
+        {
+          "surface": "declino",
+          "lemma": "declino",
+          "zh": "衰减"
+        }
+      ]
+    },
+    {
+      "id": "it-regioni-che-cambiano-13",
+      "text": "La pubblicazione è nuova, ma queste storie riguardano cambiamenti avvenuti nel corso di molti decenni, non soltanto nell’autunno del 2026.",
+      "zh": "这份资料是新发布的，但这些故事涉及几十年间发生的变化，并不仅是2026年秋季的变化。",
+      "glosses": [
+        {
+          "surface": "decenni",
+          "lemma": "decennio",
+          "zh": "数十年（decennio的复数）"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "trasformazioni",
+        "zh": "变化",
+        "sentenceId": "it-regioni-che-cambiano-01",
+        "lemma": "trasformazione"
+      },
+      {
+        "text": "schede",
+        "zh": "简介",
+        "sentenceId": "it-regioni-che-cambiano-02",
+        "lemma": "scheda"
+      },
+      {
+        "text": "persone",
+        "zh": "人",
+        "sentenceId": "it-regioni-che-cambiano-03",
+        "lemma": "persona"
+      },
+      {
+        "text": "capoluogo",
+        "zh": "地区首府",
+        "sentenceId": "it-regioni-che-cambiano-04",
+        "lemma": "capoluogo"
+      },
+      {
+        "text": "abitanti",
+        "zh": "居民",
+        "sentenceId": "it-regioni-che-cambiano-05",
+        "lemma": "abitante"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "nel lungo periodo",
+        "zh": "从长期来看",
+        "sentenceId": "it-regioni-che-cambiano-03"
+      },
+      {
+        "text": "oltre un terzo",
+        "zh": "超过三分之一",
+        "sentenceId": "it-regioni-che-cambiano-09"
+      },
+      {
+        "text": "in contrasto con",
+        "zh": "与……形成对照",
+        "sentenceId": "it-regioni-che-cambiano-11"
+      },
+      {
+        "text": "nel corso di",
+        "zh": "在……期间",
+        "sentenceId": "it-regioni-che-cambiano-13"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "it-regioni-che-cambiano-05",
+        "note": "era与ha favorito连接过去的背景与后来的变化。"
+      },
+      {
+        "sentenceId": "it-regioni-che-cambiano-13",
+        "note": "用ma区分新的发布日期与所描述的长期历史。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quale cambiamento regionale ti colpisce di più? Perché?",
+        "zh": "哪一种地区变化最让你印象深刻？为什么？"
+      },
+      {
+        "text": "Nella tua città, quale ruolo hanno l’industria, i servizi e il turismo?",
+        "zh": "在你的城市，工业、服务业和旅游业分别发挥什么作用？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Nel lungo periodo la città è cambiata molto.",
+        "zh": "从长期来看，这座城市变化很大。"
+      },
+      {
+        "text": "Il confronto tra regioni aiuta a capire le differenze.",
+        "zh": "地区间的比较有助于理解差异。"
+      }
+    ]
+  }
+}

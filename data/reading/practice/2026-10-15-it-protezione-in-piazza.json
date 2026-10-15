@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-15-it-protezione-in-piazza",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "it-protezione-in-piazza-01",
+      "start": 43,
+      "answer": "appuntamento",
+      "options": [
+        "appuntamenti",
+        "appuntamento",
+        "appuntare",
+        "appuntate"
+      ],
+      "explanation": "un后需要阳性单数名词appuntamento，这里表示一次活动。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "it-protezione-in-piazza-03",
+      "start": 65,
+      "answer": "aperto",
+      "options": [
+        "aperte",
+        "aperta",
+        "aperto",
+        "aprire"
+      ],
+      "explanation": "aperto与阳性单数il villaggio一致，表示开放的状态。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "it-protezione-in-piazza-05",
+      "start": 39,
+      "answer": "scuole",
+      "options": [
+        "scuola",
+        "scolastico",
+        "scuole",
+        "scolastica"
+      ],
+      "explanation": "le后需要阴性复数scuole；此处指学校来访者。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "it-protezione-in-piazza-06",
+      "start": 23,
+      "answer": "terremoti",
+      "options": [
+        "terremoto",
+        "terrestre",
+        "terremoti",
+        "terremotata"
+      ],
+      "explanation": "i后需要阳性复数名词terremoti，表示地震。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "it-protezione-in-piazza-09",
+      "start": 27,
+      "answer": "previsti",
+      "options": [
+        "previsto",
+        "previste",
+        "prevedere",
+        "previsti"
+      ],
+      "explanation": "previsti与阳性复数tre seminari一致，sono previsti表示列入计划。"
+    }
+  ]
+}

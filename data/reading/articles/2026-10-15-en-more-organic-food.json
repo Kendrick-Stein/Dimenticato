@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "id": "2026-10-15-en-more-organic-food",
+  "storyId": "defra-organic-plan-2026-10-14",
+  "lang": "en",
+  "date": "2026-10-15",
+  "category": "society",
+  "topics": [
+    "日常购物",
+    "农业",
+    "食品选择"
+  ],
+  "title": "More organic food from English farms",
+  "titleZh": "来自英格兰农场的更多有机食品",
+  "summaryZh": "英格兰发布有机农业行动计划，希望帮助农民生产和销售更多有机食品。",
+  "level": "A2",
+  "levelReason": "短句为主，以农场、商店和购物为具体场景；少量有机农业词汇有中文释义，区分计划与已实现结果。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+    "title": "Plan to unlock organic market for stronger farms, more homegrown food",
+    "url": "https://www.gov.uk/government/news/plan-to-unlock-organic-market-for-stronger-farms-more-homegrown-food",
+    "publishedAt": "2026-10-14",
+    "lang": "en",
+    "author": "Department for Environment, Food & Rural Affairs"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. 来源：Department for Environment, Food & Rural Affairs / GOV.UK；作者/发布机构：Department for Environment, Food & Rural Affairs；原文发表于2026-10-14：https://www.gov.uk/government/news/plan-to-unlock-organic-market-for-stronger-farms-more-homegrown-food。© Crown copyright 2026。",
+  "adaptation": "依据机构英文原文进行同语言教学改写，配中文逐句翻译、词汇释义和原创练习；不代表发布机构认可。仅使用机构叙述，未使用图片、标志、第三方引语或外部文献原文。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A new plan in England aims to bring more organic food from farms to shops and restaurants.",
+      "zh": "英格兰的一项新计划旨在把更多有机食品从农场送到商店和餐馆。",
+      "glosses": [
+        {
+          "surface": "organic",
+          "lemma": "organic",
+          "zh": "有机的"
+        },
+        {
+          "surface": "aims",
+          "lemma": "aim",
+          "zh": "旨在"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The government published the plan on 14 October 2026.",
+      "zh": "政府于2026年10月14日发布了这项计划。",
+      "glosses": [
+        {
+          "surface": "published",
+          "lemma": "publish",
+          "zh": "发布了"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "It wants to help farmers who already produce organic food and farmers who are thinking about a change.",
+      "zh": "该计划希望帮助已经生产有机食品的农民，以及正在考虑转变生产方式的农民。",
+      "glosses": [
+        {
+          "surface": "produce",
+          "lemma": "produce",
+          "zh": "生产"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "These farmers will be able to get advice and support.",
+      "zh": "这些农民将能够获得建议和支持。",
+      "glosses": [
+        {
+          "surface": "advice",
+          "lemma": "advice",
+          "zh": "建议"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The plan also aims to make it easier to sell their food.",
+      "zh": "该计划还旨在让他们更容易销售自己的食品。",
+      "glosses": [
+        {
+          "surface": "sell",
+          "lemma": "sell",
+          "zh": "销售"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Food needs to move from farms to the places where people buy it.",
+      "zh": "食品需要从农场运送到人们购买食品的地方。",
+      "glosses": [
+        {
+          "surface": "buy",
+          "lemma": "buy",
+          "zh": "购买"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The government wants this journey to be quicker for organic products.",
+      "zh": "政府希望有机产品的这一运输过程更快。",
+      "glosses": [
+        {
+          "surface": "quicker",
+          "lemma": "quick",
+          "zh": "更快的"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "It also wants more people to know about English organic food.",
+      "zh": "政府还希望更多人了解英格兰的有机食品。",
+      "glosses": [
+        {
+          "surface": "know",
+          "lemma": "know",
+          "zh": "了解"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "About 3.4% of agricultural land in England is farmed organically, according to the announcement.",
+      "zh": "公告称，英格兰约3.4%的农业用地采用有机耕作方式。",
+      "glosses": [
+        {
+          "surface": "land",
+          "lemma": "land",
+          "zh": "土地"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The plan aims to move towards 10% by 2036.",
+      "zh": "该计划的目标是到2036年向10%迈进。",
+      "glosses": [
+        {
+          "surface": "towards",
+          "lemma": "towards",
+          "zh": "朝着"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "This is a goal for the future, so it does not mean the change has already happened.",
+      "zh": "这是一个未来目标，因此并不意味着变化已经发生。",
+      "glosses": [
+        {
+          "surface": "goal",
+          "lemma": "goal",
+          "zh": "目标"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Farmers will still choose the way of farming that works best for their businesses.",
+      "zh": "农民仍将选择最适合自己经营的耕作方式。",
+      "glosses": [
+        {
+          "surface": "choose",
+          "lemma": "choose",
+          "zh": "选择"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "For shoppers, the plan promises more choice in local shops, supermarkets and restaurants.",
+      "zh": "对于购物者，这项计划承诺在本地商店、超市和餐馆提供更多选择。",
+      "glosses": [
+        {
+          "surface": "shoppers",
+          "lemma": "shopper",
+          "zh": "购物者"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "published",
+        "zh": "发布了",
+        "sentenceId": "s2",
+        "lemma": "publish"
+      },
+      {
+        "text": "advice",
+        "zh": "建议",
+        "sentenceId": "s4",
+        "lemma": "advice"
+      },
+      {
+        "text": "quicker",
+        "zh": "更快的",
+        "sentenceId": "s7",
+        "lemma": "quick"
+      },
+      {
+        "text": "choose",
+        "zh": "选择",
+        "sentenceId": "s12",
+        "lemma": "choose"
+      },
+      {
+        "text": "shoppers",
+        "zh": "购物者",
+        "sentenceId": "s13",
+        "lemma": "shopper"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "thinking about a change",
+        "zh": "考虑作出改变",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "by 2036",
+        "zh": "到2036年为止",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "so连接原因与结果；does not mean后接完整从句，帮助区分目标与事实。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What matters most to you when you choose food in a shop?",
+        "zh": "你在商店挑选食品时，最看重什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "thinking about a change",
+        "zh": "考虑作出改变",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "by 2036",
+        "zh": "到2036年为止",
+        "sentenceId": "s10"
+      }
+    ]
+  }
+}
