@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-fr-des-prairies-et-des-rencontres",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-des-prairies-et-des-rencontres-02",
+      "start": 65,
+      "answer": "sols",
+      "options": [
+        "ports",
+        "sols",
+        "vêtements",
+        "routes"
+      ],
+      "explanation": "保护土壤及水质：sols为土壤的复数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-des-prairies-et-des-rencontres-03",
+      "start": 105,
+      "answer": "gestion",
+      "options": [
+        "décoration",
+        "traduction",
+        "gestion",
+        "cuisson"
+      ],
+      "explanation": "gestion des élevages表示养殖管理。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-des-prairies-et-des-rencontres-07",
+      "start": 31,
+      "answer": "télédétection",
+      "options": [
+        "télédétection",
+        "natation",
+        "peinture",
+        "pâtisserie"
+      ],
+      "explanation": "télédétection是遥感，与人工智能并列。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-des-prairies-et-des-rencontres-11",
+      "start": 26,
+      "answer": "éleveurs",
+      "options": [
+        "dentistes",
+        "éleveurs",
+        "chanteurs",
+        "marins"
+      ],
+      "explanation": "éleveurs为养殖者，与本项目实地参与人群对应。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-des-prairies-et-des-rencontres-15",
+      "start": 41,
+      "answer": "contraintes",
+      "options": [
+        "couleurs",
+        "récompenses",
+        "contraintes",
+        "vacances"
+      ],
+      "explanation": "contraintes为限制条件，农场实际面对的约束。"
+    }
+  ]
+}

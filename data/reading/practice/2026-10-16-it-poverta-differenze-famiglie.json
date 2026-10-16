@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-it-poverta-differenze-famiglie",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 99,
+      "answer": "denominatori",
+      "options": [
+        "denominatori",
+        "archivi",
+        "capitoli",
+        "visitatori"
+      ],
+      "explanation": "denominatori指分母，强调两项比例针对不同总体。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 76,
+      "answer": "statistica",
+      "options": [
+        "musicale",
+        "marittima",
+        "statistica",
+        "letteraria"
+      ],
+      "explanation": "significatività statistica是统计显著性。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s13",
+      "start": 78,
+      "answer": "componenti",
+      "options": [
+        "componenti",
+        "strumenti",
+        "documenti",
+        "edifici"
+      ],
+      "explanation": "componenti指家庭成员，不能用物件或建筑替代。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s15",
+      "start": 161,
+      "answer": "causa",
+      "options": [
+        "quota",
+        "causa",
+        "soglia",
+        "fascia"
+      ],
+      "explanation": "dimostrare una causa指证明因果，而不是只显示关联。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s17",
+      "start": 140,
+      "answer": "soglia",
+      "options": [
+        "cerimonia",
+        "lettera",
+        "corte",
+        "soglia"
+      ],
+      "explanation": "soglia指门槛，此处为贫困线。"
+    }
+  ]
+}

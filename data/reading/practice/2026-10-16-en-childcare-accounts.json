@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-en-childcare-accounts",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 67,
+      "answer": "top-ups",
+      "options": [
+        "top-ups",
+        "take-offs",
+        "turnouts",
+        "timeouts"
+      ],
+      "explanation": "根据本句中文意思，应使用top-ups（n. 追加补贴（复数））；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 38,
+      "answer": "eligible",
+      "options": [
+        "equal",
+        "eligible",
+        "elderly",
+        "entire"
+      ],
+      "explanation": "根据本句中文意思，应使用eligible（adj. 符合条件的）；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 55,
+      "answer": "separate",
+      "options": [
+        "similar",
+        "single",
+        "separate",
+        "shared"
+      ],
+      "explanation": "根据本句中文意思，应使用separate（adj. 单独的）；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s10",
+      "start": 121,
+      "answer": "withdrawn",
+      "options": [
+        "written",
+        "witnessed",
+        "weighed",
+        "withdrawn"
+      ],
+      "explanation": "根据本句中文意思，应使用withdrawn（v. 取出（过去分词））；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s13",
+      "start": 29,
+      "answer": "confirm",
+      "options": [
+        "confirm",
+        "confuse",
+        "compare",
+        "combine"
+      ],
+      "explanation": "根据本句中文意思，应使用confirm（v. 确认）；其他选项不能表达这里的语境含义。"
+    }
+  ]
+}

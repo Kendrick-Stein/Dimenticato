@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-fr-une-saison-pour-le-cabaret",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-une-saison-pour-le-cabaret-03",
+      "start": 69,
+      "answer": "ateliers",
+      "options": [
+        "jardins",
+        "ateliers",
+        "marchés",
+        "trains"
+      ],
+      "explanation": "ateliers意为工作坊，对应中文“工作坊”；其余名词与原句活动清单不符。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-une-saison-pour-le-cabaret-04",
+      "start": 11,
+      "answer": "mélange",
+      "options": [
+        "ferme",
+        "termine",
+        "mélange",
+        "vend"
+      ],
+      "explanation": "mélanger表示融合；主语单数现在时mélange。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-une-saison-pour-le-cabaret-06",
+      "start": 43,
+      "answer": "métiers",
+      "options": [
+        "métiers",
+        "voyages",
+        "repas",
+        "immeubles"
+      ],
+      "explanation": "后面列化妆师与假发制作师，属于职业métiers。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-une-saison-pour-le-cabaret-08",
+      "start": 18,
+      "answer": "photographies",
+      "options": [
+        "voitures",
+        "recettes",
+        "cartes",
+        "photographies"
+      ],
+      "explanation": "本句谈摄影展；photographies是照片的复数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-une-saison-pour-le-cabaret-11",
+      "start": 37,
+      "answer": "diversité",
+      "options": [
+        "température",
+        "diversité",
+        "vitesse",
+        "distance"
+      ],
+      "explanation": "本文强调歌舞秀的多样性diversité。"
+    }
+  ]
+}

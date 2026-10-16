@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-en-community-heritage-repairs",
+  "storyId": "govuk-community-heritage-repairs-2026-10-15",
+  "lang": "en",
+  "date": "2026-10-16",
+  "category": "culture",
+  "topics": [
+    "老建筑与新的社区用途"
+  ],
+  "title": "Old buildings, new community uses",
+  "titleZh": "老建筑与新的社区用途",
+  "summaryZh": "老建筑与新的社区用途：基于机构近期报道的分级阅读。",
+  "level": "A2",
+  "levelReason": "短句叙述具体地点及未来用途，提供完整中文辅助。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "Major drive to restore churches and revitalise heritage buildings in communities across England announced",
+    "url": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
+    "publishedAt": "2026-10-15",
+    "lang": "en",
+    "author": "Department for Digital, Culture, Media and Sport; Historic England"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport; Historic England; 2026-10-15; https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
+  "adaptation": "依据机构英文叙述作同语言教学改写，附中文翻译与原创教学补充，不代表机构认可。未使用图片、标志或直接引语。保留原日期，计划不作已实现成果。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 15 October, the government announced more than £41 million to help repair old buildings in England.",
+      "zh": "10月15日，政府宣布提供超过4,100万英镑，帮助修缮英格兰的老建筑。",
+      "glosses": [
+        {
+          "surface": "repair",
+          "lemma": "repair",
+          "zh": "v. 修缮"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The support will reach 74 places, including churches, town halls and castles.",
+      "zh": "这笔支持将惠及74处地点，包括教堂、市政厅和城堡。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "These buildings are part of local history, but some need important repairs before people can use them again.",
+      "zh": "这些建筑是当地历史的一部分，但有些需要进行重要修缮，人们才能重新使用。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "In Margate, the museum and old town hall will receive money for work on the buildings.",
+      "zh": "在马盖特，博物馆和旧市政厅将获得用于建筑工程的资金。",
+      "glosses": [
+        {
+          "surface": "receive",
+          "lemma": "receive",
+          "zh": "v. 收到"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The museum plans to protect its collections better and make visits easier for the public.",
+      "zh": "博物馆计划更好地保护馆藏，让公众参观更加方便。",
+      "glosses": [
+        {
+          "surface": "collections",
+          "lemma": "collection",
+          "zh": "n. 馆藏（复数）"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "The empty town hall will become a place with several different uses for the community.",
+      "zh": "闲置的市政厅将成为供社区多种用途使用的场所。",
+      "glosses": [
+        {
+          "surface": "empty",
+          "lemma": "empty",
+          "zh": "adj. 闲置的"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "In Blackpool, money will help with the first stage of work on a former post office.",
+      "zh": "在布莱克浦，资金将帮助开展一座旧邮局的第一阶段工程。",
+      "glosses": [
+        {
+          "surface": "former",
+          "lemma": "former",
+          "zh": "adj. 以前的"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "The plan is to turn it into a cultural and creative centre led by the community.",
+      "zh": "计划是将其改造成由社区主导的文化创意中心。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "This first stage will make the building's structure secure and move plans forward.",
+      "zh": "这一阶段将加固建筑结构并推进相关计划。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "The announcement describes future work; it does not say that all these buildings are already open.",
+      "zh": "公告描述的是未来工程，并没有说这些建筑都已开放。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "repair",
+        "zh": "v. 修缮",
+        "lemma": "repair",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "receive",
+        "zh": "v. 收到",
+        "lemma": "receive",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "collections",
+        "zh": "n. 馆藏（复数）",
+        "lemma": "collection",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "empty",
+        "zh": "adj. 闲置的",
+        "lemma": "empty",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "former",
+        "zh": "adj. 以前的",
+        "lemma": "former",
+        "sentenceId": "s7"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "first stage",
+        "zh": "第一阶段",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "turn it into",
+        "zh": "把它改造成",
+        "sentenceId": "s8"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "turn ... into ... 表示把某物改造成另一种用途；it指上一句的旧邮局，led by the community说明由社区主导。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which part of this story matters most to everyday life, and why?",
+        "zh": "这则报道的哪一部分与日常生活最相关？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "first stage",
+        "zh": "第一阶段",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "turn it into",
+        "zh": "把它改造成",
+        "sentenceId": "s8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-16",
+  "checks": [
+    {
+      "language": "de",
+      "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/579546/schueler-id/",
+      "originalDate": "2026-07-08",
+      "decision": "reserve-only",
+      "reason": "100 days old; outside90-day daily range. No adaptation created."
+    },
+    {
+      "language": "de",
+      "url": "https://irights.info/artikel/urheberrecht-ueberblick-der-beitraege/32896",
+      "originalDate": "2026-08-26",
+      "decision": "reserve-only",
+      "reason": "Roundup of prior evergreen legal guides, not an independent recent-news story. Linked works not cleared by roundup licence."
+    },
+    {
+      "language": "de",
+      "url": "https://netzpolitik.org/2026/breakpoint-im-gleichschritt-der-cowboystiefel/",
+      "decision": "still-link-only",
+      "reason": "Existing NC compatibility unresolved; no adaptation or new rights clearance claimed."
+    }
+  ],
+  "missingDailySlots": [
+    "de-B1",
+    "de-B2/C1"
+  ],
+  "boundary": "Limited curated search, not proof that no suitable German articles exist anywhere. No repeated story or translation padding."
+}

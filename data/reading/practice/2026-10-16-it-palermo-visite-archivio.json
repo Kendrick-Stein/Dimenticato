@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-it-palermo-visite-archivio",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 69,
+      "answer": "volontari",
+      "options": [
+        "volontari",
+        "biglietti",
+        "porti",
+        "cortili"
+      ],
+      "explanation": "volontari是志愿者，指参与协助参观的人。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 13,
+      "answer": "gratuito",
+      "options": [
+        "antico",
+        "gratuito",
+        "interno",
+        "chiuso"
+      ],
+      "explanation": "gratuito表示免费；中文句意明确不收费。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 64,
+      "answer": "corte",
+      "options": [
+        "legge",
+        "catena",
+        "corte",
+        "storia"
+      ],
+      "explanation": "corte interna是内院，不是法律或链条。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 72,
+      "answer": "documenti",
+      "options": [
+        "venerdì",
+        "conventi",
+        "ingressi",
+        "documenti"
+      ],
+      "explanation": "documenti conservati意为保存的文献。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 82,
+      "answer": "porto",
+      "options": [
+        "porto",
+        "mese",
+        "progetto",
+        "pubblico"
+      ],
+      "explanation": "porto为港口；铁链保护的是港口入口。"
+    }
+  ]
+}

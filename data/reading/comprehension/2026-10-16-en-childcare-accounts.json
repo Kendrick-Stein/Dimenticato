@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-en-childcare-accounts",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Which period do the figures for 601,620 families describe?",
+      "options": [
+        "The October holiday period in 2026.",
+        "The entire calendar year of 2026.",
+        "The three months after October 2026.",
+        "The month of June before the reminder."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "s3—s4区分6月数据与10月发布的提醒。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "A family has two eligible children. How should their accounts be arranged?",
+      "options": [
+        "One shared account with two separate limits.",
+        "A separate account for each of the children.",
+        "One parental account and one holiday account.",
+        "Two accounts divided by type of childcare."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "s8规定按子女分别开户，而不是按家庭或托育类型划分。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Why does opening an account not finish the ongoing requirements?",
+      "options": [
+        "The family must change childcare providers each term.",
+        "The deposits must be spent within each school holiday.",
+        "The holder must confirm details every three months.",
+        "The yearly limit must be requested from each nursery."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s13"
+      ],
+      "explanationZh": "s13说明为了持续获得追加补贴，需要每三个月确认资料。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "How should a parent interpret the reported £93 average?",
+      "options": [
+        "As a description of June payments across those families.",
+        "As the monthly amount paid to every eligible child.",
+        "As the minimum deposit required to open an account.",
+        "As the quarterly maximum for a household account."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s15",
+        "s6"
+      ],
+      "explanationZh": "s15将93英镑限定为6月该群体平均值；s6的补贴上限是不同概念。"
+    }
+  ]
+}

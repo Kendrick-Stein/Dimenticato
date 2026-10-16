@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-fr-une-saison-pour-le-cabaret",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Que prévoit le programme au Mans ?",
+      "options": [
+        "Une rencontre avec des photographes.",
+        "Une projection de films de cirque.",
+        "Un spectacle présenté par des étudiants.",
+        "Un atelier de fabrication de perruques."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "fr-une-saison-pour-le-cabaret-07"
+      ],
+      "explanationZh": "第7句明确说勒芒的学生将呈现演出；其他活动虽然同属文化活动，但没有被安排在本文的勒芒段落中。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Où les photographies doivent-elles être présentées à Paris ?",
+      "options": [
+        "Sur les grilles d’un square.",
+        "Dans une école de danse.",
+        "À l’intérieur d’un cabaret.",
+        "Dans une salle de cinéma."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "fr-une-saison-pour-le-cabaret-09"
+      ],
+      "explanationZh": "第9句指出巴黎展览地点为Square du Temple的围栏。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Que montre l’ensemble du programme décrit ?",
+      "options": [
+        "La saison est organisée autour d’un concours entre étudiants.",
+        "La saison présente plusieurs arts et des métiers du spectacle.",
+        "La saison propose surtout une histoire du cinéma français.",
+        "La saison réunit des photographes pour créer un nouveau spectacle."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "fr-une-saison-pour-le-cabaret-03",
+        "fr-une-saison-pour-le-cabaret-04",
+        "fr-une-saison-pour-le-cabaret-06",
+        "fr-une-saison-pour-le-cabaret-07",
+        "fr-une-saison-pour-le-cabaret-08",
+        "fr-une-saison-pour-le-cabaret-11"
+      ],
+      "explanationZh": "演出、不同艺术、职业和摄影展共同体现活动内容的多样性。其他选项把个别元素误当成整个活动的组织核心。"
+    }
+  ]
+}

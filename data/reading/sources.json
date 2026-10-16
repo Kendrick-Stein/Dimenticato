@@ -236,15 +236,16 @@
         "fr"
       ],
       "allowedUrlPrefixes": [
-        "https://www.culture.gouv.fr/actualites/"
+        "https://www.culture.gouv.fr/actualites/",
+        "https://saisoncabaret.culture.gouv.fr/actualites/"
       ],
       "rightsPolicyUrl": "https://www.culture.gouv.fr/mentions-legales",
       "licenseEvidence": "https://www.culture.gouv.fr/mentions-legales",
       "license": "CC BY-SA 3.0 FR for ministry-produced text; partner content has separate terms",
       "articleReviewRequired": true,
-      "conditions": "Legal notice 4.3.1(a) covers ministry-produced text, not all partner material (4.3.2). Retain attribution and modifications, satisfy ShareAlike with a compatible licence. Exclude images, logos, multimedia, third-party quotations and literary excerpts unless separately cleared. Do not mislabel prose as Etalab open data.",
+      "conditions": "Legal notice 4.3.1(a) covers ministry-produced text, not all partner material (4.3.2). Retain attribution and modifications, satisfy ShareAlike with a compatible licence. Exclude images, logos, multimedia, third-party quotations and literary excerpts unless separately cleared. Do not mislabel prose as Etalab open data. Seasonal Cabaret ministry subdomain legal footer independently checked 2026-10-16: https://saisoncabaret.culture.gouv.fr/mentions-legales section4.3.1a licenses ministry text CC BY-SA3.0FR. Exclude named artist quotations and images; inspect each article. Registry expansion reviewed before candidate readiness, not blanket approval.",
       "nativeLanguageCaution": "Legal notice names the ministry editorial team and automatic translation service; use French original editorial pages, never translated locales. Check article byline and partner credits.",
-      "checkedAt": "2026-10-13",
+      "checkedAt": "2026-10-16",
       "reviewScope": "Registry policy inspected; no article is cleared by registration."
     },
     {
@@ -446,6 +447,28 @@
       "conditions": "Do not adapt or republish until noncommercial compatibility is established for this public website and the individual article. For now collect link metadata and original short introductions only; not a cleared reading source. Exclude external images, quotes and user comments; any future adaptation requires attribution, changes and matching ShareAlike.",
       "nativeLanguageCaution": "German editorial column by named author; inspect each byline and translation credits.",
       "checkedAt": "2026-10-14"
+    },
+    {
+      "id": "govuk-hmrc-english-family",
+      "name": "HM Revenue & Customs — family support news",
+      "url": "https://www.gov.uk/government/organisations/hm-revenue-customs",
+      "languages": [
+        "en"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "requiredPublisherNames": [
+        "HM Revenue & Customs"
+      ],
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "license": "Open Government Licence v3.0 except identified exclusions",
+      "articleReviewRequired": true,
+      "conditions": "Verify HMRC From metadata, original date, OGL footer and article exclusions. Adapt institutional prose only; exclude images/logos/quotes/personal cases. Credit Crown/HMRC/source/date/licence and modifications; no endorsement. Preserve eligibility limits and statistics period; not personalised tax advice.",
+      "nativeLanguageCaution": "Institutional English original inference; inspect translation links and third-party credits per article.",
+      "checkedAt": "2026-10-16"
     }
   ],
   "archiveOnly": {

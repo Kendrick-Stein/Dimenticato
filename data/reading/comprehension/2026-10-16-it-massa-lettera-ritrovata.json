@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-it-massa-lettera-ritrovata",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quale ruolo di Ariosto emerge dal contenuto della lettera?",
+      "options": [
+        "Organizzava la vendita di opere letterarie.",
+        "Raccoglieva libri per una biblioteca americana.",
+        "Informava il duca sui problemi del territorio.",
+        "Preparava spettacoli per gli studenti di Massa."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "信中涉及地方治理，阿里奥斯托的信息帮助公爵决策。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Perché viene citato l’inventario dell’Ottocento?",
+      "options": [
+        "Ha aiutato a ricostruire l’origine del documento.",
+        "Ha stabilito il prezzo della lettera durante l’asta.",
+        "Ha raccolto le letture degli studenti del liceo.",
+        "Ha annunciato il programma della cerimonia a Roma."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "十九世纪目录和相关研究用于确定文献来源，不是拍卖定价或仪式记录。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quale differenza c’è tra gli appuntamenti di aprile e ottobre?",
+      "options": [
+        "Ad aprile si scrisse la lettera; a ottobre fu donata.",
+        "Ad aprile si tenne l’asta; a ottobre iniziò la ricerca.",
+        "Ad aprile si visitò New York; a ottobre si compilò l’inventario.",
+        "Ad aprile fu presentato il recupero; a ottobre avvenne la riconsegna."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "4月介绍找回成果，10月是正式交还档案馆。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Perché il ritorno a Massa ha valore anche per chi studia la storia locale?",
+      "options": [
+        "Permette di confrontare i prezzi delle aste di libri.",
+        "Ricollega la lettera ad altre testimonianze del governo locale.",
+        "Rende disponibili nuove poesie scritte dal duca.",
+        "Documenta le origini del laboratorio teatrale del liceo."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s9",
+        "s14"
+      ],
+      "explanationZh": "信件关于当地行政事务，归还后与原有文献重新关联，因此有助于地方治理史研究。"
+    }
+  ]
+}

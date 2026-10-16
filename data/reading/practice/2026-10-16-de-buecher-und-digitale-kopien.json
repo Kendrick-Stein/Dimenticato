@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-de-buecher-und-digitale-kopien",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 81,
+      "answer": "verfügbar",
+      "options": [
+        "verfügbaren",
+        "verfügbare",
+        "verfügbarem",
+        "verfügbar"
+      ],
+      "explanation": "恢复原文词形verfügbar，本句意为“可获得的”。形容词；verfügbar sein：可以获得。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 83,
+      "answer": "Folgen",
+      "options": [
+        "Umschläge",
+        "Bibliotheken",
+        "Folgen",
+        "Buchstaben"
+      ],
+      "explanation": "恢复原文词形Folgen，本句意为“后果”。die Folge，复数die Folgen。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 42,
+      "answer": "Bindung",
+      "options": [
+        "Übersetzung",
+        "Bindung",
+        "Rechnung",
+        "Bestellung"
+      ],
+      "explanation": "恢复原文词形Bindung，本句意为“装订部分”。die Bindung，复数die Bindungen。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 32,
+      "answer": "Altpapier",
+      "options": [
+        "Altpapier",
+        "Buchladen",
+        "Lesesaal",
+        "Leihgabe"
+      ],
+      "explanation": "恢复原文词形Altpapier，本句意为“废纸”。das Altpapier；此处为不可数集合名词。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 89,
+      "answer": "Öffentlichkeit",
+      "options": [
+        "Bindung",
+        "Druckerei",
+        "Seitenzahl",
+        "Öffentlichkeit"
+      ],
+      "explanation": "恢复原文词形Öffentlichkeit，本句意为“公众”。die Öffentlichkeit；此处通常不使用复数。"
+    }
+  ]
+}

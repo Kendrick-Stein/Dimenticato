@@ -1,0 +1,483 @@
+{
+  "editionDate": "2026-10-16",
+  "baseCommit": "3cfdece085c2ab645b1526befa77f1bde6941a51",
+  "qualityStatus": "PASS",
+  "scope": "10 independent native-language editions, 50 cloze and 39 comprehension questions",
+  "wordCountMethod": "Foreign body whitespace tokens containing Unicode letter or number, no Chinese/headers; CEFR editorial estimates.",
+  "historicalFilesUnchanged": 96,
+  "missingSlots": [
+    {
+      "language": "de",
+      "tier": "B1",
+      "reason": "No additional unused suitable recent legally cleared story in limited curated search."
+    },
+    {
+      "language": "de",
+      "tier": "B2/C1",
+      "reason": "No additional unused suitable recent legally cleared story; no multi-level reuse of A2 source."
+    }
+  ],
+  "freshnessNotice": "French Cabaret original2026-09-10 and German book-scanning original2026-08-13 are90-day fallbacks, not today news. All dates preserved.",
+  "rightsBoundary": "Institutional/author licensed prose only. No images/logos/third-party quotes or linked works. French Cabaret text-specific CC BY-SA3.0FR overrides generic Etalabfooter. DirectNationalArchiveslicense refresh403notretried;officialarticleOGLfooters/GOVUKterms inspected.",
+  "articles": [
+    {
+      "id": "2026-10-16-de-buecher-und-digitale-kopien",
+      "language": "de",
+      "level": "A2",
+      "bodyWords": 176,
+      "source": {
+        "name": "iRights.info",
+        "title": "Aus Sorge vor dem Urheberrecht? KI-Unternehmen und das destruktive Scannen von Büchern",
+        "url": "https://irights.info/artikel/aus-sorge-vor-dem-urheberrecht-ki-unternehmen-und-das-destruktive-scannen-von-buechern/32885",
+        "publishedAt": "2026-08-13",
+        "lang": "de"
+      },
+      "sourceAgeDays": 64,
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "sha256": {
+        "articles": "e80df20e6380ac0ce432f928f671b5d90cf167a26bca7fe1c499db21a17235b4",
+        "practice": "df9e45f735b1361a2e62e293ff6200d25de1d141694376ce0879ffcf5adf14be",
+        "comprehension": "6db6faaa0b8ecd04cd5b4ce6bb1e5b232100755cd674d408b94acfe3c6a618bf"
+      }
+    },
+    {
+      "id": "2026-10-16-fr-organiser-les-circuits-alimentaires",
+      "language": "fr",
+      "level": "B2",
+      "bodyWords": 505,
+      "source": {
+        "name": "INRAE",
+        "title": "Le RMT Alimentation Locale lance sa 3ème programmation",
+        "url": "https://www.inrae.fr/actualites/rmt-alimentation-locale-lance-sa-3eme-programmation",
+        "publishedAt": "2026-09-28",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 18,
+      "license": {
+        "name": "Licence Ouverte Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+      },
+      "sha256": {
+        "articles": "cc5826e6ea97dc62c38e48cbfc29e49bb8f2daf6e6db963c59a03806b1540a84",
+        "practice": "2e1c192d4a2a777933ae42617f51f45e1efec021c44fa9a7976dced23f8e8c51",
+        "comprehension": "09db2145d8b243ae2f51380668275fdf2c5d2bc47315b2b026094ba9a575d12f"
+      }
+    },
+    {
+      "id": "2026-10-16-it-palermo-visite-archivio",
+      "language": "it",
+      "level": "A2",
+      "bodyWords": 153,
+      "source": {
+        "name": "Ministero della Cultura — Direzione generale Archivi",
+        "title": "Archivio di Stato di Palermo, al via “Aperti per Voi” con il Touring Club Italiano: visite e accoglienza per nuovi pubblici",
+        "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=a5808b39947199bae09a2a83ead6cd18&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2761",
+        "publishedAt": "2026-09-25",
+        "lang": "it"
+      },
+      "sourceAgeDays": 21,
+      "license": {
+        "name": "CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      "sha256": {
+        "articles": "af61284192aaa0f73473b9190a55230bc2166fa8fa01183180e5c9016a4c992c",
+        "practice": "faf02690d706750ff8cad95fe6d3cf5113a2a51c9b69740b627190860e14bd5e",
+        "comprehension": "36571e55bd0824e0258865e82e6eabee6b96d82bdc295ce83ef006f41a7e70be"
+      }
+    },
+    {
+      "id": "2026-10-16-it-massa-lettera-ritrovata",
+      "language": "it",
+      "level": "B1",
+      "bodyWords": 288,
+      "source": {
+        "name": "Ministero della Cultura — Direzione generale Archivi",
+        "title": "La lettera di Alfonso I d’Este a Ludovico Ariosto torna all’Archivio di Stato di Massa",
+        "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c7766fc2f9e8cf41cb33bcc57a568e4d&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2795",
+        "publishedAt": "2026-10-09",
+        "lang": "it"
+      },
+      "sourceAgeDays": 7,
+      "license": {
+        "name": "CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      "sha256": {
+        "articles": "544e71ccb699c9d25509d95dc47d2cec946408f3da2d0506bb7779788cb97044",
+        "practice": "364478172979c08561e284343c1703747fe7d22a9a8c318b1c6b3e312b58e9c0",
+        "comprehension": "45ca31c25b26e2bbbe47168c2a9297bd0469cfc941d74aa1662e2b1b895adf53"
+      }
+    },
+    {
+      "id": "2026-10-16-en-childcare-accounts",
+      "language": "en",
+      "level": "B1",
+      "bodyWords": 283,
+      "source": {
+        "name": "HM Revenue & Customs / GOV.UK",
+        "title": "More than 600,000 families conjure up Hallowe’en savings with Tax-Free Childcare",
+        "url": "https://www.gov.uk/government/news/more-than-600000-families-conjure-up-halloween-savings-with-tax-free-childcare",
+        "publishedAt": "2026-10-13",
+        "lang": "en",
+        "author": "HM Revenue & Customs"
+      },
+      "sourceAgeDays": 3,
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sha256": {
+        "articles": "ee51f48247c7dfe868bf57a47435087eb4d6d6135eeb9a5c749b5482683ec4bc",
+        "practice": "c14e04ab08052c23f52dca5002de0822c70d7dce3936b36e8ec5685b92fe2c19",
+        "comprehension": "18e1093bdbe77fb3b3acd409ba35e1b20718a69d8fef5e31bf5a4cf6c94e7ef1"
+      }
+    },
+    {
+      "id": "2026-10-16-fr-une-saison-pour-le-cabaret",
+      "language": "fr",
+      "level": "A2",
+      "bodyWords": 154,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Saison Cabaret : trois mois d’événements partout en France",
+        "url": "https://saisoncabaret.culture.gouv.fr/actualites/saison-cabaret-trois-mois-d-evenements-partout-en-france",
+        "publishedAt": "2026-09-10",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 36,
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://saisoncabaret.culture.gouv.fr/mentions-legales"
+      },
+      "sha256": {
+        "articles": "d3cb5c3d4ef593641055c3f48ac943c14c76b4b11941ffbf986af64383b2f6b5",
+        "practice": "d3e5a412ffe273212c41be1881e403920b433e2e1da48222a7256fc1e5667ad7",
+        "comprehension": "f55074ab5e9a19fdc07aac24ea5fb862646ad744901f440e06c4845453bb053a"
+      }
+    },
+    {
+      "id": "2026-10-16-it-poverta-differenze-famiglie",
+      "language": "it",
+      "level": "B2",
+      "bodyWords": 509,
+      "source": {
+        "name": "Istat",
+        "title": "La povertà in Italia – Anno 2025",
+        "url": "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/",
+        "publishedAt": "2026-10-15",
+        "lang": "it"
+      },
+      "sourceAgeDays": 1,
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "sha256": {
+        "articles": "eb423becc073e84266a1128f6387dda6961df8067bd0af90305789e35d021e18",
+        "practice": "c64ef9b62ee5c290d6251ec08184257e8c496013ef7647202ff6b8ae2badb1b0",
+        "comprehension": "33126f73a577e7351e830b1896a3572ee5556e636393c72b28af252da7caf6cb"
+      }
+    },
+    {
+      "id": "2026-10-16-en-ai-public-service-defences",
+      "language": "en",
+      "level": "B2",
+      "bodyWords": 518,
+      "source": {
+        "name": "Cabinet Office; AI Security Institute; National Cyber Security Centre; Department for Digital, Culture, Media and Sport / GOV.UK",
+        "title": "Britain steps up national defences against growing AI risks",
+        "url": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+        "publishedAt": "2026-10-12",
+        "lang": "en",
+        "author": "Cabinet Office; AI Security Institute; National Cyber Security Centre; Department for Digital, Culture, Media and Sport"
+      },
+      "sourceAgeDays": 4,
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sha256": {
+        "articles": "bc64678945b23b57cb9b5faaa4f1951f380b4ee2dcd135be3ee58a2cbfb5aa25",
+        "practice": "51557da0c98b931ad9f8acf3b11254e57f810fef463cc06053f0e60f437ef5db",
+        "comprehension": "c597171cdc06264347e03068cc3e014b1668f77411afef2d516f2c33cd293198"
+      }
+    },
+    {
+      "id": "2026-10-16-en-community-heritage-repairs",
+      "language": "en",
+      "level": "A2",
+      "bodyWords": 154,
+      "source": {
+        "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+        "title": "Major drive to restore churches and revitalise heritage buildings in communities across England announced",
+        "url": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
+        "publishedAt": "2026-10-15",
+        "lang": "en",
+        "author": "Department for Digital, Culture, Media and Sport; Historic England"
+      },
+      "sourceAgeDays": 1,
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sha256": {
+        "articles": "595c1d8688d3d3b1b3148238d76a9c80abbf7e30758debdc6914f8673c4bf942",
+        "practice": "b8bdfa6596212a519e9396eed554a3b401a95c4c034efa5becc5aa46ebba05c1",
+        "comprehension": "a345addde4aaa385092059eaee146141ac1402206da0fbf87c31f90fb87718b0"
+      }
+    },
+    {
+      "id": "2026-10-16-fr-des-prairies-et-des-rencontres",
+      "language": "fr",
+      "level": "B1",
+      "bodyWords": 283,
+      "source": {
+        "name": "Anaïs Rodrigues / INRAE",
+        "title": "Lancement du projet GrassConnect : mieux valoriser la multifonctionnalité des systèmes d’élevage herbagers",
+        "url": "https://www.inrae.fr/actualites/lancement-du-projet-grassconnect-mieux-valoriser-multifonctionnalite-systemes-delevage-herbagers",
+        "publishedAt": "2026-10-13",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 3,
+      "license": {
+        "name": "Licence Ouverte Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+      },
+      "sha256": {
+        "articles": "34e43716b0346596bd8d9c4848a438b7f0b2d864f5a960c1816157dd6b6cd41f",
+        "practice": "d017de7042c6b230fe3b8f4ecca316492981b3d9d12650d373c801ab21f96301",
+        "comprehension": "317a63cde70a9e9078e35bb24aa01ea2fa98bd14befc412d9007d12f5a92ac1a"
+      }
+    }
+  ],
+  "independentReviews": [
+    {
+      "language": "it",
+      "report": {
+        "reviewer": "independent language editor",
+        "date": "2026-10-16",
+        "status": "PASS",
+        "scope": "IT3 source facts, complete adapted sentences and Chinese translations, licence, glosses/summaries,15cloze,12comprehension",
+        "blindBeforeKeys": true,
+        "blindAnswersZeroBased": {
+          "palermo": [
+            1,
+            2,
+            0
+          ],
+          "massa": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "poverta": [
+            2,
+            1,
+            0,
+            3,
+            1
+          ]
+        },
+        "corrections": [
+          "Palermo s1 Sept25 was news announcement; presentation eventSept26. Corrected to ha annunciato/发布 and reread.",
+          "Poverty B2 q1/q4 weak distractors replaced with plausible statistical confusions; same unique answers rereviewed.",
+          "Moved new small-town statistic s21 before concluding s20 questions and s22 reference; no wording/key changes, rereviewed final order.",
+          "Integration follow-up: independently checked all seven added learningSummary words against exact sentence text, meanings, lemmas, gender/number and verb form. gratuito/s5 agrees with ingresso; documenti/s7 is plural documento; porto/s10 is masculine harbour noun; poesia/s3 is feminine poetry noun; leggendo/s12 is leggere present gerund expressing manner; statistica/s5 is feminine adjective agreeing with significatività; causa/s15 is feminine cause noun. All PASS."
+        ],
+        "sourcesReviewed": [
+          "Archivi Palermo full institutional narrative lines61-75 (web fetched).",
+          "Archivi Massa full institutional narrative lines61-80 (web fetched).",
+          "Istat complete downloaded article text incl all quoted numerical groups and methodological stability caveat.",
+          "Istat legal page explicitly CC BY4 reuse/adaptation commercial permitted.",
+          "Cultura legal page cached web tool record full read lines109-114 explicitly CC BY3 except images/logos/third-party. Direct sameURL timed out twice, existing toolrecord retrieved successfully."
+        ],
+        "factFindings": [
+          "Palermo visits2nd/4th Friday10:30-12:30,free/nobooking,sala studio services,chainharbour and1843 archivalconversion match.",
+          "Massa letter31Jan1524,governor/banditry/pardons,1973auction,laterMorgan donation,19centuryinventory,April30presentation/Oct9return match.",
+          "Poverty all numeric claims match fullsource:household8.0/individual9.3,North45.3distribution vsSouth9.6incidence,ages12.5/12.1/8.9/6.1,size19.2/10.5,education4.4/11.9,intensity18.5/21.6,relative10.8/14.8,towns8.9→7.4 excludingmetropolitanperiphery."
+        ],
+        "limits": [
+          "Not statistical replication or legal advice. CEFR is editorial estimate."
+        ],
+        "hashes": {
+          "articles/2026-10-16-it-poverta-differenze-famiglie.json": "eb423becc073e84266a1128f6387dda6961df8067bd0af90305789e35d021e18",
+          "articles/2026-10-16-it-massa-lettera-ritrovata.json": "544e71ccb699c9d25509d95dc47d2cec946408f3da2d0506bb7779788cb97044",
+          "articles/2026-10-16-it-palermo-visite-archivio.json": "af61284192aaa0f73473b9190a55230bc2166fa8fa01183180e5c9016a4c992c",
+          "practice/2026-10-16-it-poverta-differenze-famiglie.json": "c64ef9b62ee5c290d6251ec08184257e8c496013ef7647202ff6b8ae2badb1b0",
+          "practice/2026-10-16-it-massa-lettera-ritrovata.json": "364478172979c08561e284343c1703747fe7d22a9a8c318b1c6b3e312b58e9c0",
+          "practice/2026-10-16-it-palermo-visite-archivio.json": "faf02690d706750ff8cad95fe6d3cf5113a2a51c9b69740b627190860e14bd5e",
+          "comprehension/2026-10-16-it-poverta-differenze-famiglie.json": "33126f73a577e7351e830b1896a3572ee5556e636393c72b28af252da7caf6cb",
+          "comprehension/2026-10-16-it-massa-lettera-ritrovata.json": "45ca31c25b26e2bbbe47168c2a9297bd0469cfc941d74aa1662e2b1b895adf53",
+          "comprehension/2026-10-16-it-palermo-visite-archivio.json": "36571e55bd0824e0258865e82e6eabee6b96d82bdc295ce83ef006f41a7e70be"
+        },
+        "summaryIntegrationReview": {
+          "status": "PASS",
+          "entriesChecked": 7,
+          "definitionsInflectionsAndSentenceReferences": "PASS"
+        }
+      }
+    },
+    {
+      "language": "fr",
+      "report": {
+        "reviewer": "independent language editor",
+        "status": "PASS",
+        "reviewedAt": "2026-10-16T00:46:00Z",
+        "blindAnswers": {
+          "cabaret": [
+            2,
+            0,
+            1
+          ],
+          "prairies": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "circuits": [
+            2,
+            0,
+            3,
+            1,
+            0
+          ]
+        },
+        "checks": [
+          "Blind comprehension solved before keys; all 12 matched unique answers.",
+          "Full source texts, article dates, original French provenance, numeric claims and Chinese translations checked.",
+          "Cabaret article-specific text grant CC BY-SA 3.0 FR takes precedence over generic footer; third-party quotes/images excluded; adaptation share-alike stated. INRAE public text under Etalab 2.0; no article-specific text exception.",
+          "Article lengths 154/285/514 whitespace words; CEFR editorial estimates.",
+          "All 15 cloze spans and correct options checked.",
+          "Good-sentence notes specific to text; word lemmas and gender corrected.",
+          "Requested plausible distractors and B2 q4 explanation corrected; final versions rechecked."
+        ],
+        "hashes": {
+          "articles/2026-10-16-fr-des-prairies-et-des-rencontres.json": "34e43716b0346596bd8d9c4848a438b7f0b2d864f5a960c1816157dd6b6cd41f",
+          "articles/2026-10-16-fr-organiser-les-circuits-alimentaires.json": "cc5826e6ea97dc62c38e48cbfc29e49bb8f2daf6e6db963c59a03806b1540a84",
+          "articles/2026-10-16-fr-une-saison-pour-le-cabaret.json": "d3cb5c3d4ef593641055c3f48ac943c14c76b4b11941ffbf986af64383b2f6b5",
+          "practice/2026-10-16-fr-des-prairies-et-des-rencontres.json": "d017de7042c6b230fe3b8f4ecca316492981b3d9d12650d373c801ab21f96301",
+          "practice/2026-10-16-fr-organiser-les-circuits-alimentaires.json": "2e1c192d4a2a777933ae42617f51f45e1efec021c44fa9a7976dced23f8e8c51",
+          "practice/2026-10-16-fr-une-saison-pour-le-cabaret.json": "d3e5a412ffe273212c41be1881e403920b433e2e1da48222a7256fc1e5667ad7",
+          "comprehension/2026-10-16-fr-des-prairies-et-des-rencontres.json": "317a63cde70a9e9078e35bb24aa01ea2fa98bd14befc412d9007d12f5a92ac1a",
+          "comprehension/2026-10-16-fr-organiser-les-circuits-alimentaires.json": "09db2145d8b243ae2f51380668275fdf2c5d2bc47315b2b026094ba9a575d12f",
+          "comprehension/2026-10-16-fr-une-saison-pour-le-cabaret.json": "f55074ab5e9a19fdc07aac24ea5fb862646ad744901f440e06c4845453bb053a"
+        },
+        "coordinatorCountClarification": {
+          "effectiveContractCounts": {
+            "A2": 154,
+            "B1": 283,
+            "B2": 505
+          },
+          "method": "Repository bodyWordCount: whitespace-separated tokens containing Unicode letters or numbers. Raw whitespace counts 154/285/514 include punctuation-only tokens; both are reported transparently. No article or exercise content changed."
+        }
+      }
+    },
+    {
+      "language": "en",
+      "report": {
+        "date": "2026-10-16",
+        "reviewer": "independent language editor",
+        "status": "PASS",
+        "blindReview": {
+          "keysSeenBeforeFirstSolve": false,
+          "answers": {
+            "ai-public-service-defences": [
+              1,
+              2,
+              0,
+              3,
+              1
+            ],
+            "childcare-accounts": [
+              3,
+              1,
+              2,
+              0
+            ],
+            "community-heritage-repairs": [
+              1,
+              2,
+              0
+            ]
+          },
+          "matched": 12,
+          "total": 12
+        },
+        "checks": {
+          "factsDatesNumbers": "PASS against complete original institutional prose",
+          "translation": "PASS all sentences",
+          "nativeLanguage": "English institutional releases; childcare Welsh separately linked",
+          "license": "GOV.UK terms independently opened, lines91–98 and article OGL footers verified. Original institutional prose only; images, logos and direct quotations excluded. National Archives licence text refresh blocked 403 as disclosed by author, not bypassed.",
+          "level": "Editorial A2/B1/B2 estimates reasonable",
+          "cloze": "All15 answers unique in Chinese context; morphology and spans pass",
+          "comprehension": "All12 unique, evidence-linked; final replacement distractors reviewed",
+          "summaries": "Final sentence-specific grammar and reference notes reviewed",
+          "validator": "Article errors[]; ReadingPractice and ReadingComprehension true for all3",
+          "bodyWordCount": {
+            "A2": 154,
+            "B1": 283,
+            "B2": 518
+          }
+        },
+        "correctionsReviewed": [
+          "A2 distractor postal services",
+          "B2 question1 parallel plausible options",
+          "B1 sentence12 source-faithful full eligibility wording",
+          "All3 specific good-sentence notes",
+          "Historic England added to heritage attribution"
+        ],
+        "sha256": {
+          "2026-10-16-en-ai-public-service-defences.article.json": "bc64678945b23b57cb9b5faaa4f1951f380b4ee2dcd135be3ee58a2cbfb5aa25",
+          "2026-10-16-en-ai-public-service-defences.comprehension.json": "c597171cdc06264347e03068cc3e014b1668f77411afef2d516f2c33cd293198",
+          "2026-10-16-en-ai-public-service-defences.practice.json": "51557da0c98b931ad9f8acf3b11254e57f810fef463cc06053f0e60f437ef5db",
+          "2026-10-16-en-childcare-accounts.article.json": "ee51f48247c7dfe868bf57a47435087eb4d6d6135eeb9a5c749b5482683ec4bc",
+          "2026-10-16-en-childcare-accounts.comprehension.json": "18e1093bdbe77fb3b3acd409ba35e1b20718a69d8fef5e31bf5a4cf6c94e7ef1",
+          "2026-10-16-en-childcare-accounts.practice.json": "c14e04ab08052c23f52dca5002de0822c70d7dce3936b36e8ec5685b92fe2c19",
+          "2026-10-16-en-community-heritage-repairs.article.json": "595c1d8688d3d3b1b3148238d76a9c80abbf7e30758debdc6914f8673c4bf942",
+          "2026-10-16-en-community-heritage-repairs.comprehension.json": "a345addde4aaa385092059eaee146141ac1402206da0fbf87c31f90fb87718b0",
+          "2026-10-16-en-community-heritage-repairs.practice.json": "b8bdfa6596212a519e9396eed554a3b401a95c4c034efa5becc5aa46ebba05c1"
+        }
+      }
+    }
+  ],
+  "germanReview": {
+    "status": "PASS",
+    "blindBeforeKeys": true,
+    "blindAnswers": [
+      1,
+      2,
+      0
+    ],
+    "sourceCheck": "Complete German sourceHTML/date/byline/original-contentCCBY4footer reviewed; thirdparty photos/quotes/legalclaims excluded.",
+    "corrections": [
+      "Two weak distractor groups replaced with topic-plausible alternatives; main-idea explanation distinguishespartialanswer rather than declaringfalse.",
+      "Simplified two sentences and synchronizedphrase note."
+    ],
+    "checks": [
+      "All13bilingualsentences,wordgender/plurals and5cloze reviewed; offsets exact.",
+      "Final3comprehension keys/evidence/explanations and exacthashes reviewed."
+    ],
+    "hashes": {
+      "article": "e80df20e6380ac0ce432f928f671b5d90cf167a26bca7fe1c499db21a17235b4",
+      "practice": "df9e45f735b1361a2e62e293ff6200d25de1d141694376ce0879ffcf5adf14be",
+      "comprehension": "6db6faaa0b8ecd04cd5b4ce6bb1e5b232100755cd674d408b94acfe3c6a618bf"
+    }
+  },
+  "checks": {
+    "contentValidators": "PASS",
+    "focusedTests": "PASS",
+    "fullSuite": "PASS: TZ=UTC npm test; 42 harnesses, 477307 passed, 0 failed, 0 known issues",
+    "gitDiff": "PASS"
+  },
+  "deploymentStatus": "awaiting authorized publication; no live claim",
+  "integrationCorrection": "Initial practice validation identified seven missing Italian same-sentence vocabulary references. Added and independently reviewed the entries; final validators and complete suite passed."
+}

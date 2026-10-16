@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-de-buecher-und-digitale-kopien",
+  "storyId": "irights-book-scanning-2026-08-13",
+  "lang": "de",
+  "date": "2026-10-16",
+  "title": "Was beim Scannen mit einem Buch passiert",
+  "titleZh": "扫描时，一本书会发生什么",
+  "summaryZh": "两种图书扫描方式的速度、成本和保存后果有何不同？根据8月的德语报道，比较数字化便利与公共文化资源的可及性。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以具体书页处理过程为主，用简单因果和被动态连接步骤，专业名词配中文注释；末句提出讨论问题。非认证CEFR测评。",
+  "category": "culture",
+  "topics": [
+    "图书",
+    "数字化",
+    "文化保存"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "iRights.info",
+    "title": "Aus Sorge vor dem Urheberrecht? KI-Unternehmen und das destruktive Scannen von Büchern",
+    "url": "https://irights.info/artikel/aus-sorge-vor-dem-urheberrecht-ki-unternehmen-und-das-destruktive-scannen-von-buechern/32885",
+    "publishedAt": "2026-08-13",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Jens Crueger / iRights.info, 13.08.2026, Aus Sorge vor dem Urheberrecht? KI-Unternehmen und das destruktive Scannen von Büchern, https://doi.org/10.59350/a752b-eqy25. Originaltext unter CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.",
+  "adaptation": "Dimenticato同语言教学改写，删节和简化作者关于扫描技术、成本和公共可及性的文字，新增中文翻译、词注及练习，采用CC BY 4.0。未使用图片、第三方引语或法律结论；不代表作者认可。原文发表于2026年8月13日，按90日备选素材使用，并非今日新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Am 13. August 2026 berichtete iRights.info darüber, warum KI-Unternehmen gedruckte Bücher kaufen und digitalisieren.",
+      "zh": "2026年8月13日，iRights.info报道了人工智能企业为何购买纸质书并将其数字化。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Dabei geht es auch um ältere Sachbücher, die oft noch nicht als digitale Ausgabe verfügbar sind.",
+      "zh": "其中也包括较早出版、往往尚无数字版本的知识类书籍。",
+      "glosses": [
+        {
+          "surface": "verfügbar",
+          "lemma": "verfügbar",
+          "zh": "可获得的",
+          "note": "形容词；verfügbar sein：可以获得。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Diese Bücher enthalten Informationen und erklären Zusammenhänge mit ausführlichen Texten.",
+      "zh": "这些书包含信息，并通过详尽的文字解释各种联系。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Beim Scannen gibt es jedoch verschiedene Verfahren, und sie haben unterschiedliche Folgen für das Buch.",
+      "zh": "然而，扫描有不同的方法，它们对书本会产生不同的影响。",
+      "glosses": [
+        {
+          "surface": "Folgen",
+          "lemma": "Folge",
+          "zh": "后果",
+          "note": "die Folge，复数die Folgen。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Ein spezieller Buchscanner kann die Seiten aufnehmen, ohne das Buch zu zerstören.",
+      "zh": "专门的图书扫描仪可以在不毁坏书本的情况下扫描书页。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Das ist aufwendig, weil die Seiten an der Bindung nicht ganz flach liegen.",
+      "zh": "这比较费工夫，因为书页靠近装订处的位置并不完全平整。",
+      "glosses": [
+        {
+          "surface": "Bindung",
+          "lemma": "Bindung",
+          "zh": "装订部分",
+          "note": "die Bindung，复数die Bindungen。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Bei einem anderen Verfahren wird zuerst die Bindung entfernt; danach bleiben einzelne Blätter übrig.",
+      "zh": "另一种方法先去掉装订部分，之后便只剩下单独的纸页。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Ein Scanner kann diese einzelnen Blätter leichter und schneller aufnehmen.",
+      "zh": "扫描仪可以更容易、更快地扫描这些单独的纸页。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Nach dem Scannen werden sie als Altpapier entsorgt, und das gedruckte Exemplar geht verloren.",
+      "zh": "扫描后，纸页被当作废纸处理，纸质书这一实体便不复存在。",
+      "glosses": [
+        {
+          "surface": "Altpapier",
+          "lemma": "Altpapier",
+          "zh": "废纸",
+          "note": "das Altpapier；此处为不可数集合名词。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Für Unternehmen kann dieses Verfahren günstiger sein, besonders wenn sie sehr viele Bücher bearbeiten.",
+      "zh": "对于企业来说，这种方法可能更便宜，尤其是在处理大量书籍时。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Der Beitrag erklärt aber auch: Manche Titel findet man im Handel nur selten.",
+      "zh": "但该报道指出，有些书在市场上很难找到。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Außerdem ist eine digitale Kopie für ein einzelnes Unternehmen nicht automatisch für die Öffentlichkeit zugänglich.",
+      "zh": "此外，某一家企业拥有的数字副本，并不会自动向公众开放。",
+      "glosses": [
+        {
+          "surface": "Öffentlichkeit",
+          "lemma": "Öffentlichkeit",
+          "zh": "公众",
+          "note": "die Öffentlichkeit；此处通常不使用复数。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "So stellt sich die Frage, wie man Informationen digital nutzen und zugleich gedruckte Bücher bewahren kann.",
+      "zh": "因此，一个问题随之出现：如何利用数字化信息，同时保存纸质书？",
+      "glosses": [
+        {
+          "surface": "bewahren",
+          "lemma": "bewahren",
+          "zh": "保存",
+          "note": "及物动词，etwas bewahren。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "verfügbar",
+        "lemma": "verfügbar",
+        "zh": "可获得的",
+        "sentenceId": "s2",
+        "note": "形容词；verfügbar sein：可以获得。"
+      },
+      {
+        "text": "Folgen",
+        "lemma": "Folge",
+        "zh": "后果",
+        "sentenceId": "s4",
+        "note": "die Folge，复数die Folgen。"
+      },
+      {
+        "text": "Bindung",
+        "lemma": "Bindung",
+        "zh": "装订部分",
+        "sentenceId": "s6",
+        "note": "die Bindung，复数die Bindungen。"
+      },
+      {
+        "text": "Altpapier",
+        "lemma": "Altpapier",
+        "zh": "废纸",
+        "sentenceId": "s9",
+        "note": "das Altpapier；此处为不可数集合名词。"
+      },
+      {
+        "text": "Öffentlichkeit",
+        "lemma": "Öffentlichkeit",
+        "zh": "公众",
+        "sentenceId": "s12",
+        "note": "die Öffentlichkeit；此处通常不使用复数。"
+      },
+      {
+        "text": "bewahren",
+        "lemma": "bewahren",
+        "zh": "保存",
+        "sentenceId": "s13",
+        "note": "及物动词，etwas bewahren。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "übrig",
+        "zh": "剩下",
+        "sentenceId": "s7",
+        "note": "übrig bleiben：剩下来。"
+      },
+      {
+        "text": "nur selten",
+        "zh": "很少、难得",
+        "sentenceId": "s11",
+        "note": "selten表达频率低；nur进一步强调。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "nicht automatisch区分“存在数字副本”和“公众能够访问”，避免把两者等同。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Bücher möchtest du lieber auf Papier lesen? Warum?",
+        "zh": "哪些书你更愿意读纸质版？为什么？"
+      },
+      {
+        "text": "Soll eine digitale Bibliothek für alle zugänglich sein?",
+        "zh": "数字图书馆应该向所有人开放吗？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Für mich ist wichtig, dass …",
+        "zh": "对我来说，重要的是……",
+        "note": "教学补充，用于表达看重的条件，并非新闻引语。"
+      }
+    ]
+  }
+}

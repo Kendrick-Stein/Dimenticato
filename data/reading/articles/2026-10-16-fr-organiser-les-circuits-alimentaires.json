@@ -1,0 +1,280 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-fr-organiser-les-circuits-alimentaires",
+  "storyId": "fr-organiser-les-circuits-alimentaires-2026-09-28",
+  "lang": "fr",
+  "date": "2026-10-16",
+  "contentType": "native-adaptation",
+  "title": "Relier les initiatives alimentaires locales",
+  "titleZh": "连接地方食品倡议",
+  "summaryZh": "地方食品网络进入2026—2030新阶段；文章区分农场比例、购买者比例以及组织目标。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：多段论述、统计口径、组织分工和目标与证据的区分。非认证CEFR测评。",
+  "category": "society",
+  "topics": [
+    "连接地方食品倡议"
+  ],
+  "source": {
+    "name": "INRAE",
+    "title": "Le RMT Alimentation Locale lance sa 3ème programmation",
+    "url": "https://www.inrae.fr/actualites/rmt-alimentation-locale-lance-sa-3eme-programmation",
+    "publishedAt": "2026-09-28",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+  },
+  "attribution": "来源：INRAE，《Le RMT Alimentation Locale lance sa 3ème programmation》，原文发布日期 2026-09-28，查阅日期2026-10-16。仅使用机构正文，图片、商标、采访引语和外链内容不予转载。",
+  "adaptation": "根据法语机构原文进行同语言分级改写，并添加简中逐句翻译、词汇注释和原创教学练习，不代表原机构认可。保留来源、日期及Licence Ouverte Etalab 2.0许可说明。",
+  "sentences": [
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-01",
+      "text": "Acheter un produit à un agriculteur semble être un geste individuel, mais développer les filières alimentaires locales suppose aussi de relier des producteurs, des collectivités, des enseignants et des chercheurs.",
+      "zh": "向农民购买一种产品看似是个人行为，但发展地方食品产业链还需要连接生产者、地方政府、教师与研究人员。",
+      "glosses": [
+        {
+          "surface": "filières",
+          "lemma": "filière",
+          "zh": "une filière（阴性），复数filières；产业链"
+        }
+      ]
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-02",
+      "text": "C’est dans cette perspective que le Réseau Mixte Technologique Alimentation Locale, créé en 2015, engage une troisième programmation pour la période 2026-2030.",
+      "zh": "正是在这一思路下，成立于2015年的地方食品混合技术网络启动了2026至2030年的第三期计划。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-03",
+      "text": "Le communiqué publié par INRAE le 28 septembre présente une organisation renouvelée et des objectifs communs, plutôt qu’un nouveau service de vente destiné directement aux consommateurs.",
+      "zh": "INRAE于9月28日发布的公告介绍了更新的组织安排和共同目标，而不是直接面向消费者的新销售服务。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-04",
+      "text": "Le réseau cherche à produire et à partager des connaissances, des outils et des formations pour accompagner la réorganisation des systèmes alimentaires autour des territoires.",
+      "zh": "该网络希望生产并共享知识、工具和培训，支持围绕地方重组食品体系。",
+      "glosses": [
+        {
+          "surface": "formations",
+          "lemma": "formation",
+          "zh": "une formation（阴性），复数formations；培训"
+        }
+      ]
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-05",
+      "text": "Son ambition est de contribuer à des systèmes plus durables et plus résistants aux difficultés, en rapprochant les initiatives locales et les compétences nécessaires pour les comprendre.",
+      "zh": "它希望通过连接地方倡议与理解这些倡议所需的专业能力，促进更可持续、更能应对困难的体系。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-06",
+      "text": "Plusieurs chiffres éclairent le contexte, à condition de conserver leurs dates et de distinguer ce qu’ils mesurent.",
+      "zh": "若保留日期并区分各项数据衡量的对象，多组数字有助于说明背景。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-07",
+      "text": "Selon les recensements agricoles cités, la proportion des exploitations françaises vendant en circuits courts est passée de 19,8 % en 2010 à 26,3 % en 2020.",
+      "zh": "根据公告引用的农业普查，法国通过短供应链销售的农场比例从2010年的19.8%升至2020年的26.3%。",
+      "glosses": [
+        {
+          "surface": "exploitations",
+          "lemma": "exploitation",
+          "zh": "une exploitation（阴性），复数exploitations；此处指农场"
+        }
+      ]
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-08",
+      "text": "Le second pourcentage correspond à 109 215 exploitations en 2020 ; il ne décrit donc pas une mesure réalisée en 2026.",
+      "zh": "第二个比例对应2020年的109215家农场，因此并不是2026年进行的测量。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-09",
+      "text": "Le communiqué indique aussi qu’en septembre 2024, 52,2 % des Français avaient acheté au moins un produit directement à un agriculteur, contre 37,2 % en mars 2013.",
+      "zh": "公告还指出，2024年9月有52.2%的法国人至少直接向农民购买过一种产品，2013年3月则为37.2%。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-10",
+      "text": "Cet indicateur concerne les acheteurs : il ne représente ni la part des fermes ni la proportion de tous les achats alimentaires effectués en vente directe.",
+      "zh": "这一指标涉及购买者：既不是农场占比，也不是所有食品采购中直接购买的比例。",
+      "glosses": [
+        {
+          "surface": "indicateur",
+          "lemma": "indicateur",
+          "zh": "un indicateur（阳性），复数indicateurs；指标"
+        }
+      ]
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-11",
+      "text": "Autre signe du développement territorial mentionné dans le texte, près de 450 Projets Alimentaires Territoriaux étaient recensés en août 2026, contre un peu moins de 200 à la fin de 2020.",
+      "zh": "文中提到的另一地方发展迹象是：2026年8月登记有近450个地方食品项目，而2020年底略少于200个。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-12",
+      "text": "Pour la nouvelle programmation, INRAE porte le réseau avec une co-animation assurée par Chambres d’agriculture France et l’appui d’une équipe de neuf structures partenaires.",
+      "zh": "在新一期计划中，INRAE承担网络组织工作，法国农业商会共同协调，并得到由九家合作机构组成团队的支持。",
+      "glosses": [
+        {
+          "surface": "appui",
+          "lemma": "appui",
+          "zh": "un appui（阳性），复数appuis；支持"
+        }
+      ]
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-13",
+      "text": "Les organismes qui avaient porté les éditions précédentes, la FR CIVAM Bretagne et le Réseau CIVAM, continueront à participer.",
+      "zh": "承担过前几期工作的布列塔尼FR CIVAM和CIVAM网络将继续参与。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-14",
+      "text": "Ce changement de responsabilité n’efface donc pas les collaborations antérieures ; il s’accompagne d’un élargissement du réseau et de liens renforcés avec d’autres réseaux technologiques.",
+      "zh": "因此，这种职责变化并不意味着取消原有合作；同时还包括扩大网络以及加强与其他技术网络的联系。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-15",
+      "text": "Quatre objectifs sont annoncés : étudier les dynamiques et leurs effets, créer des outils de formation, repérer des questions de recherche-développement et formuler des propositions pour l’action publique.",
+      "zh": "公告提出四项目标：研究发展动态及其影响、创建培训工具、识别研发问题，以及为公共行动提出建议。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-16",
+      "text": "Le programme se décline en quatre axes et douze tâches, notamment pour analyser la diversification des activités économiques vers les circuits courts et la coopération au sein des filières locales.",
+      "zh": "计划分为四条主线和十二项任务，尤其包括分析向短供应链拓展经营活动，以及地方产业链内部的合作。",
+      "glosses": [
+        {
+          "surface": "diversification",
+          "lemma": "diversification",
+          "zh": "la diversification（阴性）；多样化经营"
+        }
+      ]
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-17",
+      "text": "Le réseau met à disposition des producteurs, artisans, collectivités et enseignants des guides pratiques, des outils numériques et des formations adaptés à leurs activités, afin de soutenir concrètement leurs projets dans les territoires.",
+      "zh": "网络向生产者、手工从业者、地方政府和教师提供适合其活动的实用指南、数字工具与培训，以具体支持其在各地开展的项目。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-18",
+      "text": "Il aide également à faire émerger des projets auprès de financeurs nationaux et européens, tout en apportant des données utiles à la réflexion publique par son observatoire.",
+      "zh": "它还帮助形成面向法国和欧洲资助方的项目，并通过观察平台提供有助于公共讨论的数据。",
+      "glosses": [
+        {
+          "surface": "financeurs",
+          "lemma": "financeur",
+          "zh": "un financeur（阳性），复数financeurs；资助方"
+        }
+      ]
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-19",
+      "text": "Plus de quarante structures participent à cette programmation, qui reste ouverte à de nouveaux membres pendant toute sa durée.",
+      "zh": "四十多家机构参与本期计划，且在整个计划期间继续接纳新成员。",
+      "glosses": []
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-20",
+      "text": "Les chiffres cités décrivent une progression passée et les actions annoncées fixent un programme de travail ; ils ne démontrent pas à eux seuls les effets futurs de cette nouvelle organisation.",
+      "zh": "所引数字描述过去的发展，所宣布行动则确立工作计划；它们本身并不能证明新组织安排未来会产生哪些效果。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "filières",
+        "zh": "une filière（阴性），复数filières；产业链",
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-01"
+      },
+      {
+        "text": "formations",
+        "zh": "une formation（阴性），复数formations；培训",
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-04"
+      },
+      {
+        "text": "exploitations",
+        "zh": "une exploitation（阴性），复数exploitations；此处指农场",
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-07"
+      },
+      {
+        "text": "indicateur",
+        "zh": "un indicateur（阳性），复数indicateurs；指标",
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-10"
+      },
+      {
+        "text": "appui",
+        "zh": "un appui（阳性），复数appuis；支持",
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-12"
+      },
+      {
+        "text": "diversification",
+        "zh": "la diversification（阴性）；多样化经营",
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-16"
+      },
+      {
+        "text": "financeurs",
+        "zh": "un financeur（阳性），复数financeurs；资助方",
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-18"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "ni la part des fermes ni la proportion",
+        "zh": "既不是农场占比，也不是比例；ni…ni…连接否定项",
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-10"
+      },
+      {
+        "text": "met à disposition",
+        "zh": "mettre à disposition de：向……提供使用",
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-17"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-10",
+        "note": "ni…ni…并列两个否定项，提醒52.2%不是农场份额，也不是全部购买量的份额。"
+      },
+      {
+        "sentenceId": "fr-organiser-les-circuits-alimentaires-20",
+        "note": "à eux seuls 表示“仅凭它们”；démontrer的宾语为未来效果，强调描述过去的数字不能单独证明新计划的成效。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quels acteurs doivent coopérer pour développer l’alimentation locale ?",
+        "zh": "发展地方食品需要哪些参与方合作？"
+      },
+      {
+        "text": "Pourquoi faut-il préciser ce qu’un pourcentage mesure ?",
+        "zh": "为什么需要说明百分比衡量的对象？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ce qui me semble important, c’est…",
+        "zh": "我觉得重要的是……",
+        "note": "原创教学补充，不是新闻引语。"
+      },
+      {
+        "text": "Dans ma région, on pourrait…",
+        "zh": "在我所在地区，人们可以……",
+        "note": "原创教学补充，用条件式表达建议。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-en-ai-public-service-defences",
+  "storyId": "govuk-ai-public-service-defences-2026-10-12",
+  "lang": "en",
+  "date": "2026-10-16",
+  "category": "technology",
+  "topics": [
+    "为能力更强的人工智能做好公共服务防护"
+  ],
+  "title": "Preparing public services for more capable AI",
+  "titleZh": "为能力更强的人工智能做好公共服务防护",
+  "summaryZh": "为能力更强的人工智能做好公共服务防护：基于机构近期报道的分级阅读。",
+  "level": "B2",
+  "levelReason": "区分成果、政策意向和证据边界，使用抽象词汇与跨句论述。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Cabinet Office; AI Security Institute; National Cyber Security Centre; Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "Britain steps up national defences against growing AI risks",
+    "url": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+    "publishedAt": "2026-10-12",
+    "lang": "en",
+    "author": "Cabinet Office; AI Security Institute; National Cyber Security Centre; Department for Digital, Culture, Media and Sport"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Cabinet Office; AI Security Institute; National Cyber Security Centre; Department for Digital, Culture, Media and Sport; 2026-10-12; https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+  "adaptation": "依据机构英文叙述作同语言教学改写，附中文翻译与原创教学补充，不代表机构认可。未使用图片、标志或直接引语。保留原日期，计划不作已实现成果。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Artificial intelligence is increasingly relevant to the public services people depend on, both as a tool for protection and as a possible source of disruption.",
+      "zh": "人工智能与人们依赖的公共服务日益相关，既可以成为防护工具，也可能成为干扰的来源。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "A British government announcement on 12 October 2026 brings these two roles together in a programme concerned with stronger cyber defences and preparation for serious AI incidents.",
+      "zh": "英国政府2026年10月12日的一则公告将这两个角色放在同一计划中，关注加强网络防御以及为严重AI事件作准备。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "According to the announcement, two pilot projects have already helped identify and fix more than a thousand potential cyber vulnerabilities across government systems, as well as detect possible threats.",
+      "zh": "根据公告，两项试点已帮助发现并修复政府系统中超过一千个潜在网络漏洞，同时识别可能的威胁。",
+      "glosses": [
+        {
+          "surface": "vulnerabilities",
+          "lemma": "vulnerability",
+          "zh": "n. 漏洞（复数）"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The government intends to extend this work to protect everyday public services in the short term and support wider public-sector adoption over time.",
+      "zh": "政府打算扩展这项工作，在短期内保护日常公共服务，并逐步支持公共部门更广泛地采用它。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "That reported pilot result is different from a promise that every government system has become secure, or that all future attacks can be prevented.",
+      "zh": "这一报告中的试点结果并不等于承诺每个政府系统都已安全，也不意味着能够阻止未来所有攻击。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "At the same time, increasingly capable systems may introduce risks when they are used maliciously or behave in ways that people cannot adequately control.",
+      "zh": "与此同时，能力日益增强的系统在被恶意使用或以人们无法充分控制的方式运行时，可能引入风险。",
+      "glosses": [
+        {
+          "surface": "maliciously",
+          "lemma": "maliciously",
+          "zh": "adv. 恶意地"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The announcement therefore discusses not only using AI defensively, but also preparing for problems caused by autonomous systems themselves.",
+      "zh": "因此，公告不仅讨论将AI用于防御，也讨论为自主系统自身引发的问题作准备。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "It describes work with the National Cyber Security Centre and the AI Security Institute on responses to incidents involving AI agents, which can carry out complex tasks with little human supervision.",
+      "zh": "公告介绍了与国家网络安全中心和AI安全研究所合作的工作，研究如何应对涉及AI智能体的事件；这些智能体能够在较少人工监督下完成复杂任务。",
+      "glosses": [
+        {
+          "surface": "supervision",
+          "lemma": "supervision",
+          "zh": "n. 监督"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "One concern is that a major agent-related incident could spread faster and more widely than the emergencies existing government arrangements were designed to handle.",
+      "zh": "一项担忧是，涉及智能体的重大事件可能比现有政府应对机制原本针对的紧急情况传播得更快、更广。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Developing the expertise and capabilities to respond is therefore presented as an ongoing task, rather than an already completed defence.",
+      "zh": "因此，培养应对所需的专业知识和能力被描述为持续进行的任务，而不是已完成的防御措施。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "The government also plans to explore stronger protections within the Cyber Security and Resilience Bill and the wider regulatory system, including risks to essential services such as hospitals and utilities.",
+      "zh": "政府还计划探索在网络安全与韧性法案及更广泛监管体系内加强保护，包括应对医院和公用事业等基本服务面临的风险。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Among the concerns mentioned is loss of control, in which autonomous AI systems evade human oversight; the text does not claim that every autonomous system behaves this way.",
+      "zh": "提到的担忧之一是失去控制，即自主AI系统规避人工监督；文中并未声称所有自主系统都会如此。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Another proposed area of work concerns identifying and reporting near misses, so that lessons can be learned before similar problems lead to further harm.",
+      "zh": "另一项拟开展的工作是识别并报告险些发生的事故，以便在类似问题造成进一步伤害之前吸取教训。",
+      "glosses": [
+        {
+          "surface": "near misses",
+          "lemma": "near miss",
+          "zh": "n. 险些发生的事故（复数）"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Details are to be developed with parliamentarians, technical experts and the operators who would have to put any measures into practice.",
+      "zh": "细节将与议员、技术专家以及负责实施相关措施的运营者共同制定。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "This means that the announcement identifies a direction of travel without supplying a finished set of operational reporting rules for readers to apply immediately.",
+      "zh": "这意味着公告指出了发展方向，却没有提供一套可供读者立即执行的完整事件报告操作规则。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Alongside response planning, scientists at the AI Security Institute are evaluating the latest generation of advanced models following work with developers and the US government.",
+      "zh": "在制定应对计划的同时，AI安全研究所的科学家正继与开发者及美国政府合作之后，评估最新一代先进模型。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "The announcement also highlights AI verification: checking whether claims about how systems were developed, tested and assessed withstand scrutiny.",
+      "zh": "公告还强调AI验证，即检查有关系统如何开发、测试和评估的说法能否经得起审查。",
+      "glosses": [
+        {
+          "surface": "scrutiny",
+          "lemma": "scrutiny",
+          "zh": "n. 严格审查"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "It says that further details of support for verification will be announced in the coming months, which leaves the form of that support unresolved in this release.",
+      "zh": "公告称，将在未来几个月公布支持验证工作的更多细节，因此本次公告尚未明确这类支持的形式。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Taken together, the measures combine a reported use of AI for defence with plans for oversight, incident response and scrutiny of technical claims.",
+      "zh": "综合来看，这些措施把已报告的AI防御用途与监督、事件响应和技术主张审查方面的计划结合起来。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "For readers, the important distinction is between what the pilots reportedly achieved, what officials are currently examining, and what still needs to be designed and delivered.",
+      "zh": "对读者而言，重要的区别在于：试点据报道取得了什么成果、官员目前在研究什么，以及哪些内容仍需设计和落实。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "The distinction matters because a demonstration of one defensive use does not, by itself, establish readiness for the different problem of responding to autonomous agents.",
+      "zh": "这种区别很重要，因为展示一种防御用途本身，并不能证明已经准备好应对自主智能体这一不同问题。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "vulnerabilities",
+        "zh": "n. 漏洞（复数）",
+        "lemma": "vulnerability",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "maliciously",
+        "zh": "adv. 恶意地",
+        "lemma": "maliciously",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "supervision",
+        "zh": "n. 监督",
+        "lemma": "supervision",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "near misses",
+        "zh": "n. 险些发生的事故（复数）",
+        "lemma": "near miss",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "scrutiny",
+        "zh": "n. 严格审查",
+        "lemma": "scrutiny",
+        "sentenceId": "s17"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in the short term",
+        "zh": "在短期内",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "put any measures into practice",
+        "zh": "将相关措施付诸实践",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "Taken together",
+        "zh": "综合来看",
+        "sentenceId": "s19"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s14",
+        "note": "who would have to ...限定operators，指真正负责实施措施的运营者；are to be developed表示计划中的工作，并非已完成规则。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which part of this story matters most to everyday life, and why?",
+        "zh": "这则报道的哪一部分与日常生活最相关？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "in the short term",
+        "zh": "在短期内",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "put any measures into practice",
+        "zh": "将相关措施付诸实践",
+        "sentenceId": "s14"
+      }
+    ]
+  }
+}

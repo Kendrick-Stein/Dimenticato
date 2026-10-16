@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-it-palermo-visite-archivio",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quale visita corrisponde al programma annunciato?",
+      "options": [
+        "Il primo lunedì del mese, alle undici.",
+        "Il secondo venerdì del mese, alle undici.",
+        "Il quarto venerdì del mese, alle quindici.",
+        "Il secondo sabato del mese, alle undici."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4"
+      ],
+      "explanationZh": "公告规定每月第二和第四个周五10:30—12:30；只有第二个周五11点符合。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa scoprono i visitatori nella sala studio?",
+      "options": [
+        "Come lavoravano i monaci nel convento.",
+        "Come veniva chiuso il porto della città.",
+        "Quali servizi offre l’archivio al pubblico.",
+        "Quali edifici visita il Touring Club."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "阅览室环节介绍档案馆的服务，其他选项混用了文中不同信息。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Che cosa ricorda il nome Catena?",
+      "options": [
+        "Un oggetto usato per proteggere il porto.",
+        "Un documento conservato nella sala studio.",
+        "Un gruppo di volontari della città.",
+        "Un progetto per finanziare il convento."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "Catena源于过去保护港口入口的大铁链，不是项目或文献名称。"
+    }
+  ]
+}

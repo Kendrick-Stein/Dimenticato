@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-it-poverta-differenze-famiglie",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale sintesi rispecchia il percorso del testo?",
+      "options": [
+        "La riduzione di ogni percentuale conferma un miglioramento uniforme.",
+        "La concentrazione delle famiglie povere identifica il territorio con maggiore incidenza.",
+        "Il confronto richiede di distinguere indicatori, popolazioni e territori.",
+        "Il numero delle famiglie sostituisce le percentuali nei confronti regionali."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s5",
+        "s6",
+        "s17",
+        "s19",
+        "s20"
+      ],
+      "explanationZh": "文章反复区分统计口径、群体和地域；并非均匀改善、把贫困家庭的集中程度等同于贫困发生率最高或用总数替代比例。"
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": "Come si conciliano il 45,3% del Nord e il 9,6% del Mezzogiorno?",
+      "options": [
+        "La prima quota riguarda individui, la seconda famiglie con minori.",
+        "Le due quote usano popolazioni di riferimento differenti.",
+        "La prima quota misura povertà relativa, la seconda intensità.",
+        "Le due quote confrontano rispettivamente il 2024 e il 2025."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "45.3%是北部占全国贫困家庭的份额；9.6%是南部居民家庭中的贫困发生率。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quale confronto riguarda l’intensità della povertà?",
+      "options": [
+        "Il 21,6% per le famiglie con minori e il 18,5% complessivo.",
+        "Il 12,5% dei minori e il 12,1% dei giovani adulti.",
+        "Il 19,2% delle famiglie numerose e il 10,5% di quelle con quattro membri.",
+        "Il 7,7% nel Nord-ovest e il 7,4% nel Nord-est."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s16",
+        "s17",
+        "s18"
+      ],
+      "explanationZh": "只有21.6%与18.5%衡量支出距贫困线的程度；其余是发生率。"
+    },
+    {
+      "id": "q4",
+      "kind": "cause",
+      "prompt": "Perché il testo invita a non leggere il calo numerico come una variazione certa?",
+      "options": [
+        "Perché le quote nazionali derivano dalla media semplice delle quote regionali.",
+        "Perché il confronto annuale richiede di sommare le quote familiari e individuali.",
+        "Perché una percentuale più bassa corrisponde necessariamente a meno residenti.",
+        "Perché il confronto deve considerare la significatività statistica."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "Istat报告将两项比例称为稳定，解释年度差异需考虑统计显著性。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Quale gruppo presenta un’incidenza superiore al 19% nel testo?",
+      "options": [
+        "Le persone di almeno 65 anni.",
+        "Le famiglie con cinque o più componenti.",
+        "Le famiglie con riferimento diplomato.",
+        "Le persone tra 35 e 64 anni."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "五人及以上家庭的发生率19.2%；其他三组分别6.1%、4.4%、8.9%。"
+    }
+  ]
+}

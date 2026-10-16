@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-fr-organiser-les-circuits-alimentaires",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-organiser-les-circuits-alimentaires-04",
+      "start": 80,
+      "answer": "formations",
+      "options": [
+        "bâtiments",
+        "billets",
+        "formations",
+        "vêtements"
+      ],
+      "explanation": "formations表示培训，与知识和工具并列。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-organiser-les-circuits-alimentaires-07",
+      "start": 58,
+      "answer": "exploitations",
+      "options": [
+        "exploitations",
+        "bibliothèques",
+        "écoles",
+        "cliniques"
+      ],
+      "explanation": "此处exploitations agricoles指农场。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-organiser-les-circuits-alimentaires-10",
+      "start": 4,
+      "answer": "indicateur",
+      "options": [
+        "acteur",
+        "indicateur",
+        "spectacle",
+        "contrat"
+      ],
+      "explanation": "indicateur意为指标，承接前文的比例。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-organiser-les-circuits-alimentaires-12",
+      "start": 123,
+      "answer": "appui",
+      "options": [
+        "retard",
+        "prix",
+        "départ",
+        "appui"
+      ],
+      "explanation": "avec l’appui de表示在……支持下。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-organiser-les-circuits-alimentaires-18",
+      "start": 56,
+      "answer": "financeurs",
+      "options": [
+        "cuisiniers",
+        "danseurs",
+        "financeurs",
+        "visiteurs"
+      ],
+      "explanation": "financeurs是资助方，与项目经费相关。"
+    }
+  ]
+}
