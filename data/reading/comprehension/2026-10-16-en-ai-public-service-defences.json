@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-en-ai-public-service-defences",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Which pairing best captures the two strands developed in the article?",
+      "options": [
+        "Replacing model evaluation with mandatory incident reports.",
+        "Expanding defensive AI use and preparing for agent incidents.",
+        "Using verification grants to repair hospital networks directly.",
+        "Shifting public-sector security work to private AI developers."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s4",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "正文一条线是扩展AI防御试点，另一条是准备应对自主AI智能体事件。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why might agent-related incidents require new response capabilities?",
+      "options": [
+        "The pilots used fewer systems than expected.",
+        "Hospitals report fewer incidents than other services.",
+        "The incidents may develop faster and spread more widely.",
+        "The existing evaluations focus on cheaper models."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "s9—s10将事件速度和影响范围与新响应能力的需求联系起来。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What is the stated purpose of AI verification?",
+      "options": [
+        "To check claims about development, testing and assessment.",
+        "To replace model evaluation with incident reporting.",
+        "To allocate funding between hospitals and utilities.",
+        "To identify which operators should draft legislation."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s17"
+      ],
+      "explanationZh": "s17明确验证针对开发、测试和评估主张的可审查性。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Which activity is reported as having already helped fix problems?",
+      "options": [
+        "The new operational near-miss reporting requirements.",
+        "The planned support package for verification providers.",
+        "The proposed stronger protections in the regulatory system.",
+        "The two pilots examining government cyber vulnerabilities."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s11",
+        "s13",
+        "s18"
+      ],
+      "explanationZh": "s3给出已报告的试点结果；其他三项仍是拟定、探索或待公布内容。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Why would the pilot result alone be insufficient to judge incident readiness?",
+      "options": [
+        "It measures government adoption rather than vulnerability repair.",
+        "It addresses a defensive use, while agent response raises a different challenge.",
+        "It evaluates agents abroad rather than systems used in Britain.",
+        "It establishes reporting rules, while verification funding remains undecided."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s8",
+        "s9",
+        "s21"
+      ],
+      "explanationZh": "试点的漏洞修复用途与应对智能体快速扩散事件不是同一问题；s21明确这一证据边界。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-en-community-heritage-repairs",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 70,
+      "answer": "repair",
+      "options": [
+        "repair",
+        "prepare",
+        "return",
+        "replace"
+      ],
+      "explanation": "根据本句中文意思，应使用repair（v. 修缮）；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 46,
+      "answer": "receive",
+      "options": [
+        "reduce",
+        "receive",
+        "remove",
+        "refuse"
+      ],
+      "explanation": "根据本句中文意思，应使用receive（v. 收到）；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 32,
+      "answer": "collections",
+      "options": [
+        "connections",
+        "corrections",
+        "collections",
+        "conclusions"
+      ],
+      "explanation": "根据本句中文意思，应使用collections（n. 馆藏（复数））；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 4,
+      "answer": "empty",
+      "options": [
+        "easy",
+        "early",
+        "extra",
+        "empty"
+      ],
+      "explanation": "根据本句中文意思，应使用empty（adj. 闲置的）；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s7",
+      "start": 64,
+      "answer": "former",
+      "options": [
+        "former",
+        "further",
+        "foreign",
+        "final"
+      ],
+      "explanation": "根据本句中文意思，应使用former（adj. 以前的）；其他选项不能表达这里的语境含义。"
+    }
+  ]
+}

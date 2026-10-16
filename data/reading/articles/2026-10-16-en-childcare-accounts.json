@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-en-childcare-accounts",
+  "storyId": "govuk-childcare-accounts-2026-10-13",
+  "lang": "en",
+  "date": "2026-10-16",
+  "category": "society",
+  "topics": [
+    "托育账户如何为家庭提供支持"
+  ],
+  "title": "How childcare accounts support families",
+  "titleZh": "托育账户如何为家庭提供支持",
+  "summaryZh": "托育账户如何为家庭提供支持：基于机构近期报道的分级阅读。",
+  "level": "B1",
+  "levelReason": "连续解释金额、时间与账户条件，包含条件表达及对照。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "HM Revenue & Customs / GOV.UK",
+    "title": "More than 600,000 families conjure up Hallowe’en savings with Tax-Free Childcare",
+    "url": "https://www.gov.uk/government/news/more-than-600000-families-conjure-up-halloween-savings-with-tax-free-childcare",
+    "publishedAt": "2026-10-13",
+    "lang": "en",
+    "author": "HM Revenue & Customs"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. HM Revenue & Customs; 2026-10-13; https://www.gov.uk/government/news/more-than-600000-families-conjure-up-halloween-savings-with-tax-free-childcare",
+  "adaptation": "依据机构英文叙述作同语言教学改写，附中文翻译与原创教学补充，不代表机构认可。未使用图片、标志或直接引语。保留原日期，计划不作已实现成果。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "As the autumn school holidays approach, some working parents need childcare while they continue to work.",
+      "zh": "随着秋季学校假期临近，一些在职家长在继续工作期间需要托育服务。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "On 13 October 2026, HM Revenue and Customs published a reminder about the UK's Tax-Free Childcare scheme.",
+      "zh": "2026年10月13日，英国税务海关总署发布了一则有关英国免税托育计划的提醒。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "The announcement reports that 601,620 families received government top-ups in June, worth £55.7 million in total.",
+      "zh": "公告称，6月有601,620个家庭获得政府追加补贴，总额为5,570万英镑。",
+      "glosses": [
+        {
+          "surface": "top-ups",
+          "lemma": "top-up",
+          "zh": "n. 追加补贴（复数）"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "These figures describe June, rather than the number of families using the scheme during the October holidays.",
+      "zh": "这些数字描述的是6月，而不是10月假期期间使用该计划的家庭数量。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "For every £8 that parents put into an eligible child's account, the government adds another £2.",
+      "zh": "家长每向符合条件的子女账户存入8英镑，政府就另加2英镑。",
+      "glosses": [
+        {
+          "surface": "eligible",
+          "lemma": "eligible",
+          "zh": "adj. 符合条件的"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Parents can normally receive up to £500 every three months, with a yearly limit of £2,000 for each eligible child.",
+      "zh": "通常，每名符合条件的子女每三个月最多可获得500英镑补贴，年度上限为2,000英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "The limits are higher for eligible children with disabilities: £1,000 every three months and £4,000 a year.",
+      "zh": "对于符合条件的残障子女，上限更高：每三个月1,000英镑，每年4,000英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Families with more than one eligible child must open a separate account for each child, rather than sharing one household account.",
+      "zh": "有多名符合条件子女的家庭必须为每名子女单独开户，而不是共用一个家庭账户。",
+      "glosses": [
+        {
+          "surface": "separate",
+          "lemma": "separate",
+          "zh": "adj. 单独的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The money can pay for approved care, including nurseries, clubs before or after school, and holiday activity clubs.",
+      "zh": "这些钱可以支付获认可的托育服务，包括托儿所、课前或课后俱乐部，以及假期活动俱乐部。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Parents can use their deposits immediately or leave the money in the account until they need it, and unused money can be withdrawn.",
+      "zh": "家长可以立即使用存款，也可以把钱留在账户中待需要时使用；未使用的款项可以取出。",
+      "glosses": [
+        {
+          "surface": "withdrawn",
+          "lemma": "withdraw",
+          "zh": "v. 取出（过去分词）"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Receiving help is not automatic for every working family, because age, income and other benefit conditions apply.",
+      "zh": "并非每个在职家庭都能自动获得帮助，因为还存在年龄、收入和其他福利方面的条件。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "The announcement directs readers to the official guidance for the full eligibility rules that apply to their circumstances rather than treating employment alone as sufficient.",
+      "zh": "公告引导读者查阅官方指南了解适用于自身情况的完整资格规则，而不是认为有工作就足够了。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Account holders also need to confirm their details every three months to continue receiving the government contribution.",
+      "zh": "账户持有人还需要每三个月确认个人资料，才能继续获得政府补贴。",
+      "glosses": [
+        {
+          "surface": "confirm",
+          "lemma": "confirm",
+          "zh": "v. 确认"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "This reminder combines information about paying for care now with the steps needed to keep that support available later.",
+      "zh": "这则提醒既介绍当前如何支付托育费用，也说明以后继续获得支持所需的步骤。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "The published average top-up was £93 per family in June; it describes that group and month, rather than promising each applicant the same payment.",
+      "zh": "公布的6月每户平均追加补贴为93英镑；这描述的是该群体和月份，而不是承诺每位申请者获得相同款项。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "top-ups",
+        "zh": "n. 追加补贴（复数）",
+        "lemma": "top-up",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "eligible",
+        "zh": "adj. 符合条件的",
+        "lemma": "eligible",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "separate",
+        "zh": "adj. 单独的",
+        "lemma": "separate",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "withdrawn",
+        "zh": "v. 取出（过去分词）",
+        "lemma": "withdraw",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "confirm",
+        "zh": "v. 确认",
+        "lemma": "confirm",
+        "sentenceId": "s13"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "up to",
+        "zh": "最多",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "rather than",
+        "zh": "而不是",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "every three months",
+        "zh": "每三个月",
+        "sentenceId": "s13"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "can ... or ...列出立即使用与留待以后两种选择；can be withdrawn是被动表达，说明未使用款项可以取出。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which part of this story matters most to everyday life, and why?",
+        "zh": "这则报道的哪一部分与日常生活最相关？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "up to",
+        "zh": "最多",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "rather than",
+        "zh": "而不是",
+        "sentenceId": "s8"
+      }
+    ]
+  }
+}

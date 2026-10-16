@@ -2,6 +2,39 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-16-en-community-heritage-repairs",
+      "lang": "en",
+      "date": "2026-10-16",
+      "title": "Old buildings, new community uses",
+      "titleZh": "老建筑与新的社区用途",
+      "summaryZh": "老建筑与新的社区用途：基于机构近期报道的分级阅读。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "老建筑与新的社区用途"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-15",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-16-it-poverta-differenze-famiglie",
+      "lang": "it",
+      "date": "2026-10-16",
+      "title": "Leggere la povertà oltre la media nazionale",
+      "titleZh": "越过全国平均值理解贫困",
+      "summaryZh": "越过全国平均值理解贫困：据意大利官方原语报道分级改写，保留原报道日期。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "社会统计",
+        "家庭生活"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-15",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-15-en-more-organic-food",
       "lang": "en",
       "date": "2026-10-15",
@@ -74,6 +107,38 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-16-en-childcare-accounts",
+      "lang": "en",
+      "date": "2026-10-16",
+      "title": "How childcare accounts support families",
+      "titleZh": "托育账户如何为家庭提供支持",
+      "summaryZh": "托育账户如何为家庭提供支持：基于机构近期报道的分级阅读。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "托育账户如何为家庭提供支持"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-13",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-16-fr-des-prairies-et-des-rencontres",
+      "lang": "fr",
+      "date": "2026-10-16",
+      "title": "Des prairies étudiées avec les éleveurs",
+      "titleZh": "与养殖者一起研究草地",
+      "summaryZh": "GrassConnect结合生态、经济与实地需求；13个地方协作点和国际合作网络的范围不同。",
+      "level": "B1",
+      "category": "environment",
+      "topics": [
+        "与养殖者一起研究草地"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-13",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-15-en-rural-broadband-arrives",
       "lang": "en",
       "date": "2026-10-15",
@@ -125,6 +190,39 @@
       ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2026-10-13",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-16-en-ai-public-service-defences",
+      "lang": "en",
+      "date": "2026-10-16",
+      "title": "Preparing public services for more capable AI",
+      "titleZh": "为能力更强的人工智能做好公共服务防护",
+      "summaryZh": "为能力更强的人工智能做好公共服务防护：基于机构近期报道的分级阅读。",
+      "level": "B2",
+      "category": "technology",
+      "topics": [
+        "为能力更强的人工智能做好公共服务防护"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-12",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-16-it-massa-lettera-ritrovata",
+      "lang": "it",
+      "date": "2026-10-16",
+      "title": "Una lettera e le tracce della sua storia",
+      "titleZh": "一封书信及其归属的线索",
+      "summaryZh": "一封书信及其归属的线索：据意大利官方原语报道分级改写，保留原报道日期。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "文物归还",
+        "地方历史"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-09",
       "contentType": "native-adaptation"
     },
     {
@@ -452,6 +550,22 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-16-fr-organiser-les-circuits-alimentaires",
+      "lang": "fr",
+      "date": "2026-10-16",
+      "title": "Relier les initiatives alimentaires locales",
+      "titleZh": "连接地方食品倡议",
+      "summaryZh": "地方食品网络进入2026—2030新阶段；文章区分农场比例、购买者比例以及组织目标。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "连接地方食品倡议"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-28",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-14-en-people-and-places-for-young-people",
       "lang": "en",
       "date": "2026-10-14",
@@ -467,6 +581,23 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-09-26",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-16-it-palermo-visite-archivio",
+      "lang": "it",
+      "date": "2026-10-16",
+      "title": "Una visita alla sede Catena",
+      "titleZh": "在巴勒莫参观卡泰纳档案馆",
+      "summaryZh": "在巴勒莫参观卡泰纳档案馆：据意大利官方原语报道分级改写，保留原报道日期。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "档案馆",
+        "城市文化"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-09-25",
       "contentType": "native-adaptation"
     },
     {
@@ -685,6 +816,22 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-16-fr-une-saison-pour-le-cabaret",
+      "lang": "fr",
+      "date": "2026-10-16",
+      "title": "Des scènes et des rencontres cet automne",
+      "titleZh": "秋天的舞台与交流",
+      "summaryZh": "法国歌舞秀季带来演出、工作坊和摄影展；这篇9月的预告保留活动原日期。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "秋天的舞台与交流"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-10",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-15-de-schlaf-und-lebensbedingungen",
       "lang": "de",
       "date": "2026-10-15",
@@ -807,6 +954,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-08-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-16-de-buecher-und-digitale-kopien",
+      "lang": "de",
+      "date": "2026-10-16",
+      "title": "Was beim Scannen mit einem Buch passiert",
+      "titleZh": "扫描时，一本书会发生什么",
+      "summaryZh": "两种图书扫描方式的速度、成本和保存后果有何不同？根据8月的德语报道，比较数字化便利与公共文化资源的可及性。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "图书",
+        "数字化",
+        "文化保存"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-08-13",
       "contentType": "native-adaptation"
     },
     {

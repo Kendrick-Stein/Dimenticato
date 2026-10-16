@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-en-ai-public-service-defences",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 124,
+      "answer": "vulnerabilities",
+      "options": [
+        "vulnerabilities",
+        "variations",
+        "valuations",
+        "validations"
+      ],
+      "explanation": "根据本句中文意思，应使用vulnerabilities（n. 漏洞（复数））；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 86,
+      "answer": "maliciously",
+      "options": [
+        "manually",
+        "maliciously",
+        "mutually",
+        "moderately"
+      ],
+      "explanation": "根据本句中文意思，应使用maliciously（adv. 恶意地）；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 187,
+      "answer": "supervision",
+      "options": [
+        "substitution",
+        "subscription",
+        "supervision",
+        "suspension"
+      ],
+      "explanation": "根据本句中文意思，应使用supervision（n. 监督）；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s13",
+      "start": 65,
+      "answer": "near misses",
+      "options": [
+        "new methods",
+        "next steps",
+        "narrow limits",
+        "near misses"
+      ],
+      "explanation": "根据本句中文意思，应使用near misses（n. 险些发生的事故（复数））；其他选项不能表达这里的语境含义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s17",
+      "start": 138,
+      "answer": "scrutiny",
+      "options": [
+        "scrutiny",
+        "security",
+        "scarcity",
+        "strategy"
+      ],
+      "explanation": "根据本句中文意思，应使用scrutiny（n. 严格审查）；其他选项不能表达这里的语境含义。"
+    }
+  ]
+}

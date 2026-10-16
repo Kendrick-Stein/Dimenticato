@@ -1,0 +1,306 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-it-poverta-differenze-famiglie",
+  "storyId": "it-poverta-differenze-famiglie-2026-10-15",
+  "lang": "it",
+  "date": "2026-10-16",
+  "title": "Leggere la povertà oltre la media nazionale",
+  "titleZh": "越过全国平均值理解贫困",
+  "summaryZh": "越过全国平均值理解贫困：据意大利官方原语报道分级改写，保留原报道日期。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：比较不同统计口径、群体与地域差异，使用从句及限定性表达，区分比例、规模与解释边界。",
+  "source": {
+    "name": "Istat",
+    "title": "La povertà in Italia – Anno 2025",
+    "url": "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/",
+    "publishedAt": "2026-10-15",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者/发布机构：Istat；原报道：https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/。中文翻译与教学改写：Dimenticato。",
+  "adaptation": "经许可将机构意大利语正文分级改写并配中文翻译；词汇、练习和口语问题为教学补充，不代表原机构背书。未使用图片、视频、标识、外部媒体正文或直接引语。数据描述2025年，报道发表于2026年；不将统计关联解释为因果。",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "社会统计",
+    "家庭生活"
+  ],
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il rapporto pubblicato dall’Istat il 15 ottobre 2026 descrive la povertà in Italia nel 2025, distinguendo il numero delle persone coinvolte dalla diffusione del fenomeno nei diversi gruppi.",
+      "zh": "Istat于2026年10月15日发布的报告描述了意大利2025年的贫困状况，区分受影响人数与该现象在不同群体中的普遍程度。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Le famiglie in povertà assoluta sono stimate in oltre 2,1 milioni, mentre le persone interessate sono più di 5,4 milioni.",
+      "zh": "估计超过210万户家庭处于绝对贫困，涉及人数超过540万。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "L’incidenza è pari all’8,0% tra le famiglie e al 9,3% tra gli individui: due percentuali che hanno denominatori differenti e non devono essere scambiate.",
+      "zh": "家庭中的发生率为8.0%，个人中的发生率为9.3%：两项百分比的分母不同，不能互换。",
+      "glosses": [
+        {
+          "surface": "incidenza",
+          "lemma": "incidenza",
+          "zh": "发生率/占比",
+          "note": "阴性名词，此处为相应群体中处于贫困的比例。"
+        },
+        {
+          "surface": "denominatori",
+          "lemma": "denominatore",
+          "zh": "分母",
+          "note": "阳性复数，单数denominatore。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "L’Istat considera entrambe le quote stabili rispetto al 2024, anche se i valori numerici risultano inferiori a quelli dell’anno precedente.",
+      "zh": "尽管数值低于上一年，Istat仍认为这两项比例与2024年相比保持稳定。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Per interpretare il confronto occorre quindi considerare la significatività statistica richiamata dal rapporto, invece di trasformare ogni differenza numerica in una variazione certa.",
+      "zh": "因此，理解比较结果时需要考虑报告提到的统计显著性，而不是把每个数值差异都视为确定的变化。",
+      "glosses": [
+        {
+          "surface": "significatività",
+          "lemma": "significatività",
+          "zh": "显著性",
+          "note": "阴性名词，此处为统计显著性。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "La media nazionale, tuttavia, riassume situazioni territoriali diverse: tra le famiglie residenti nel Mezzogiorno l’incidenza raggiunge il 9,6%, mentre nel Centro si ferma al 6,3%.",
+      "zh": "然而，全国平均值概括了不同的地区状况：南部地区居民家庭的发生率为9.6%，中部为6.3%。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Nel Nord-ovest è pari al 7,7% e nel Nord-est al 7,4%, ma queste quote non indicano come tutte le famiglie povere si distribuiscano sul territorio.",
+      "zh": "西北部为7.7%，东北部为7.4%，但这些比例不表示全部贫困家庭在各地如何分布。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Se si guarda infatti alla distribuzione delle famiglie in povertà assoluta, il 45,3% vive al Nord e il 38,6% nel Mezzogiorno.",
+      "zh": "如果看绝对贫困家庭的分布，45.3%住在北部，38.6%住在南部地区。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Il Nord può dunque ospitare una quota maggiore delle famiglie povere del Paese senza presentare l’incidenza più alta tra le proprie famiglie residenti.",
+      "zh": "因此，北部可以容纳全国更大份额的贫困家庭，同时其本地居民家庭中的贫困发生率并不是最高。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Anche l’età introduce differenze importanti: la povertà assoluta riguarda il 12,5% dei minori e il 12,1% dei giovani tra 18 e 34 anni.",
+      "zh": "年龄也带来重要差异：绝对贫困影响12.5%的未成年人和12.1%的18至34岁年轻人。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "La quota scende all’8,9% nella fascia tra 35 e 64 anni e al 6,1% tra le persone di almeno 65 anni.",
+      "zh": "比例在35至64岁群体中降至8.9%，在65岁及以上人群中为6.1%。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Queste percentuali descrivono gruppi di popolazione e non permettono, da sole, di spiegare la storia economica di una singola persona.",
+      "zh": "这些百分比描述人口群体，仅凭它们不能解释一个人的经济经历。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "La dimensione familiare è un altro elemento: tra le famiglie con cinque o più componenti l’incidenza arriva al 19,2%, contro il 10,5% di quelle con quattro componenti.",
+      "zh": "家庭规模是另一个因素：五人及以上家庭的发生率达到19.2%，四人家庭为10.5%。",
+      "glosses": [
+        {
+          "surface": "componenti",
+          "lemma": "componente",
+          "zh": "成员",
+          "note": "此处阳性复数，家庭成员。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Le famiglie con una persona di riferimento che ha almeno il diploma di scuola secondaria superiore presentano un’incidenza del 4,4%.",
+      "zh": "家庭主要参考成员至少取得高中毕业文凭的家庭，发生率为4.4%。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Quando questa persona ha al massimo la licenza di scuola media, la quota raggiunge invece l’11,9%; il confronto mostra un’associazione, non dimostra da solo una causa.",
+      "zh": "当该成员最高学历为初中时，比例达到11.9%；这个比较显示关联，本身不能证明因果。",
+      "glosses": [
+        {
+          "surface": "associazione",
+          "lemma": "associazione",
+          "zh": "关联",
+          "note": "阴性名词，此处不是组织或协会。"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Il rapporto considera inoltre l’intensità della povertà, cioè quanto la spesa delle famiglie povere si trovi mediamente al di sotto della linea di povertà.",
+      "zh": "报告还考虑贫困强度，即贫困家庭支出平均低于贫困线的程度。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Questo indicatore è pari al 18,5% a livello nazionale: non rappresenta la percentuale di famiglie povere, ma misura la distanza media dalla soglia.",
+      "zh": "全国该指标为18.5%：它不是贫困家庭所占比例，而是衡量与门槛的平均距离。",
+      "glosses": [
+        {
+          "surface": "soglia",
+          "lemma": "soglia",
+          "zh": "门槛/阈值",
+          "note": "阴性名词，复数soglie。"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Tra le famiglie con minori l’intensità raggiunge il 21,6%, un valore superiore a quello calcolato per l’insieme delle famiglie povere.",
+      "zh": "在有未成年人的贫困家庭中，贫困强度达到21.6%，高于对全部贫困家庭计算的数值。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Infine, la povertà relativa costituisce una misura distinta: nel 2025 coinvolge il 10,8% delle famiglie e il 14,8% degli individui.",
+      "zh": "最后，相对贫困是另一种衡量方式：2025年涉及10.8%的家庭和14.8%的个人。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Nei comuni fino a cinquantamila abitanti, esclusi quelli periferici delle aree metropolitane, l’incidenza familiare scende dall’8,9% al 7,4%: un miglioramento che riguarda dunque una categoria territoriale precisa.",
+      "zh": "在五万人及以下的市镇中，排除大都市外围市镇，家庭贫困发生率从8.9%降至7.4%：这一改善因而针对一个明确的地区类别。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "Nel leggere il quadro complessivo è quindi utile chiedersi sempre quale indicatore sia usato, a quale popolazione si riferisca e quale anno descriva.",
+      "zh": "因此，阅读整体情况时，应始终询问所用的是哪个指标、针对哪类人口、描述的是哪一年。",
+      "glosses": []
+    },
+    {
+      "id": "s22",
+      "text": "Sono domande di lettura dei dati, aggiunte qui per lo studio, che aiutano a non confondere la stabilità nazionale con l’assenza di differenze tra le famiglie.",
+      "zh": "这些是本文为学习补充的数据阅读问题，有助于避免将全国层面的稳定混同于家庭之间没有差异。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "incidenza",
+        "lemma": "incidenza",
+        "zh": "发生率/占比",
+        "note": "阴性名词，此处为相应群体中处于贫困的比例。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "denominatori",
+        "lemma": "denominatore",
+        "zh": "分母",
+        "note": "阳性复数，单数denominatore。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "significatività",
+        "lemma": "significatività",
+        "zh": "显著性",
+        "note": "阴性名词，此处为统计显著性。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "componenti",
+        "lemma": "componente",
+        "zh": "成员",
+        "note": "此处阳性复数，家庭成员。",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "associazione",
+        "lemma": "associazione",
+        "zh": "关联",
+        "note": "阴性名词，此处不是组织或协会。",
+        "sentenceId": "s15"
+      },
+      {
+        "text": "soglia",
+        "lemma": "soglia",
+        "zh": "门槛/阈值",
+        "note": "阴性名词，复数soglie。",
+        "sentenceId": "s17"
+      },
+      {
+        "text": "statistica",
+        "lemma": "statistico",
+        "zh": "统计的",
+        "note": "阴性单数形容词，与significatività配合。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "causa",
+        "lemma": "causa",
+        "zh": "原因",
+        "note": "阴性名词；复数cause。",
+        "sentenceId": "s15"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "rispetto al",
+        "zh": "相对于",
+        "note": "rispetto a + il = rispetto al。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "al di sotto della",
+        "zh": "低于",
+        "note": "al di sotto di，后接冠词构成della。",
+        "sentenceId": "s16"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "这一句的分母是全国贫困家庭，而第6—7句是各地全部居民家庭，必须区分。"
+      },
+      {
+        "sentenceId": "s15",
+        "note": "non dimostra da solo una causa强调关联与因果不同；是教学解释，不是额外研究结果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali dati confronteresti per descrivere la povertà in due territori?",
+        "zh": "比较两个地区的贫困状况时，你会先看哪类数据？",
+        "note": "教学讨论问题，不是新闻引语。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Occorre distinguere tra…",
+        "zh": "需要区分……",
+        "note": "教学补充，可用于口语讨论。"
+      }
+    ]
+  }
+}

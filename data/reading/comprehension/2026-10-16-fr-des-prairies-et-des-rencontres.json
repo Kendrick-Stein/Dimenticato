@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-fr-des-prairies-et-des-rencontres",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "À quoi correspondent les onze pays mentionnés ?",
+      "options": [
+        "Aux pays visités pendant la réunion de septembre.",
+        "Aux pays qui financent seuls les recherches.",
+        "Aux pays où se trouvent les trente-deux organisations.",
+        "Aux pays où sont répartis les treize hubs."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "fr-des-prairies-et-des-rencontres-10",
+        "fr-des-prairies-et-des-rencontres-12"
+      ],
+      "explanationZh": "第10及12句区分hub网络的11国和国际合作的14国。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi les participants ont-ils visité deux sites agricoles ?",
+      "options": [
+        "Pour comparer les prix du lait dans deux régions.",
+        "Pour rapprocher la recherche des contraintes concrètes des exploitations.",
+        "Pour choisir les entreprises qui produiront les nouveaux outils.",
+        "Pour présenter les résultats définitifs aux producteurs de fromage."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "fr-des-prairies-et-des-rencontres-14",
+        "fr-des-prairies-et-des-rencontres-15"
+      ],
+      "explanationZh": "第15句说明参观目的是了解限制、联系具体情境，不是价格调查、采购或展示最终结果。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "Quelle place les outils déjà utilisés auront-ils dans le projet ?",
+      "options": [
+        "Ils serviront de point d’appui aux méthodes à développer.",
+        "Ils serviront uniquement à comparer les prix des produits.",
+        "Ils remplaceront les échanges avec les professionnels.",
+        "Ils seront réservés aux fermes visitées en septembre."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "fr-des-prairies-et-des-rencontres-08",
+        "fr-des-prairies-et-des-rencontres-09",
+        "fr-des-prairies-et-des-rencontres-11"
+      ],
+      "explanationZh": "第8句明确依托已有工具，第9句说明贴近日常需求；“作为出发基础”是该安排的合理概括。"
+    },
+    {
+      "id": "q4",
+      "kind": "main-idea",
+      "prompt": "Quelle démarche caractérise GrassConnect dans ce texte ?",
+      "options": [
+        "Comparer surtout la production de fromage des fermes européennes.",
+        "Séparer les questions économiques des questions écologiques.",
+        "Associer plusieurs disciplines et les acteurs du terrain.",
+        "Diffuser un outil d’intelligence artificielle déjà achevé."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "fr-des-prairies-et-des-rencontres-04",
+        "fr-des-prairies-et-des-rencontres-06",
+        "fr-des-prairies-et-des-rencontres-08",
+        "fr-des-prairies-et-des-rencontres-11",
+        "fr-des-prairies-et-des-rencontres-16"
+      ],
+      "explanationZh": "跨学科结合地方合作是全文主线；工具尚待开发，文章也不是奶酪生产比较。"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-en-community-heritage-repairs",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "What will the work in Margate help the museum do?",
+      "options": [
+        "Move its collections into the post office.",
+        "Protect collections and improve public visits.",
+        "Share its rooms with the local post office.",
+        "Prepare the town hall for postal services."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "s4—s5说明马盖特博物馆将保护馆藏并改善公众参观。邮局属于布莱克浦。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Which building is planned as a community-led cultural centre?",
+      "options": [
+        "The castle receiving repair money.",
+        "The town hall beside the museum.",
+        "The former post office in Blackpool.",
+        "The museum building in Margate."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "s7—s8明确将布莱克浦旧邮局改造成社区主导的文化创意中心。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What does the first stage in Blackpool focus on?",
+      "options": [
+        "Making the structure safe and developing plans.",
+        "Opening new exhibitions and selling tickets.",
+        "Moving the museum collections into new rooms.",
+        "Training guides and arranging public visits."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s9"
+      ],
+      "explanationZh": "s9说明首阶段用于加固结构并推进计划，其他选项不是文中所述工程。"
+    }
+  ]
+}

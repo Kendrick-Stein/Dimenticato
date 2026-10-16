@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-15",
+  "collectedAt": "2026-10-16",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -4120,6 +4120,834 @@
         }
       },
       "linkToArticleId": "2026-10-15-en-more-organic-food"
+    },
+    {
+      "id": "de-2026-08-13-book-scanning",
+      "language": "de",
+      "sourceTitle": "Aus Sorge vor dem Urheberrecht? KI-Unternehmen und das destruktive Scannen von Büchern",
+      "sourceUrl": "https://irights.info/artikel/aus-sorge-vor-dem-urheberrecht-ki-unternehmen-und-das-destruktive-scannen-von-buechern/32885",
+      "sourceName": "iRights.info",
+      "registrySourceId": "irights-german-culture",
+      "sourcePublishedAt": "2026-08-13",
+      "collectedAt": "2026-10-16",
+      "category": "culture",
+      "topics": [
+        "图书",
+        "数字化",
+        "文化保存"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "A2辅助阅读，180词左右；文化资源的保存、扫描速度成本与公共可及性。64日备选原文；不含法律结论、照片和第三方引语。",
+      "linkToArticleId": "2026-10-16-de-buecher-und-digitale-kopien",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://irights.info/artikel/aus-sorge-vor-dem-urheberrecht-ki-unternehmen-und-das-destruktive-scannen-von-buechern/32885",
+          "checkedAt": "2026-10-16",
+          "notes": "完整原文HTML读取，包含日期作者及原创内容CC BY4页脚。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "正文日期13. August 2026，HTML发布日期一致；不是9月英语译版。",
+          "evidenceUrl": "https://irights.info/artikel/aus-sorge-vor-dem-urheberrecht-ki-unternehmen-und-das-destruktive-scannen-von-buechern/32885"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Jens Crueger",
+          "evidence": "德国编辑Jens Crueger署名德语原稿；首页将9月英文译版另列，德语原稿8月13日。",
+          "evidenceUrl": "https://irights.info/artikel/aus-sorge-vor-dem-urheberrecht-ki-unternehmen-und-das-destruktive-scannen-von-buechern/32885",
+          "caveat": "原语机构编辑判断，不证明个人母语。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "文章页脚明确所有原创内容除另注外为CC BY4；正文无其他限制标记。",
+          "evidenceUrls": [
+            "https://irights.info/artikel/aus-sorge-vor-dem-urheberrecht-ki-unternehmen-und-das-destruktive-scannen-von-buechern/32885",
+            "https://irights.info/impressum-2"
+          ],
+          "scope": "仅作者技术和文化可及性说明文字的删节改写。",
+          "exclusions": [
+            "照片及图注",
+            "第三方引语",
+            "外部法律裁决引文",
+            "读者评论"
+          ],
+          "attributionRequirements": [
+            "作者及iRights.info",
+            "原文URL和日期",
+            "许可链接",
+            "修改和中文翻译说明"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 64,
+          "bucket": "within_90_days"
+        }
+      }
+    },
+    {
+      "id": "candidate-it-massa-lettera-ritrovata-2026-10-09",
+      "language": "it",
+      "sourceTitle": "La lettera di Alfonso I d’Este a Ludovico Ariosto torna all’Archivio di Stato di Massa",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c7766fc2f9e8cf41cb33bcc57a568e4d&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2795",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-09",
+      "collectedAt": "2026-10-16",
+      "category": "culture",
+      "topics": [
+        "文物归还",
+        "地方历史"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "编辑估计B1：串联文物流转、找回依据和历史背景，含过去时、被动表达与原因关系。 拟发布档次B1；口语讨论角度：为什么古老的目录也能帮助找回一份文献？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c7766fc2f9e8cf41cb33bcc57a568e4d&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2795",
+          "checkedAt": "2026-10-16",
+          "notes": "原网页正文通过web全文读取。仅改写机构叙事；无媒体、采访引语、外部链接正文。网页页脚直接链接MiC法律说明；不使用图片及采访直接引语。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "正文日期2026-10-09；与栏目页相符。",
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c7766fc2f9e8cf41cb33bcc57a568e4d&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2795"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Ministero della Cultura — Direzione generale Archivi",
+          "evidence": "意大利机构原生编辑发布，页面意语标题与正文，无译者或转载标记；未采用英语版本。",
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c7766fc2f9e8cf41cb33bcc57a568e4d&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2795",
+          "caveat": "机构原语编辑判断，不证明个人母语。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "evidence": "法律页明确允许改编及分发；已核文章无相反正文权利标记。",
+          "evidenceUrls": [
+            "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c7766fc2f9e8cf41cb33bcc57a568e4d&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2795",
+            "https://cultura.gov.it/note-legali"
+          ],
+          "scope": "机构正文的同语言分级改写和中文翻译。",
+          "exclusions": [
+            "图片与视频",
+            "标识",
+            "第三方直接引语",
+            "外部媒体报道"
+          ],
+          "attributionRequirements": [
+            "机构名",
+            "原文标题链接日期",
+            "许可链接",
+            "改写及翻译说明"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 7,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-16-it-massa-lettera-ritrovata"
+    },
+    {
+      "id": "candidate-it-palermo-visite-archivio-2026-09-25",
+      "language": "it",
+      "sourceTitle": "Archivio di Stato di Palermo, al via “Aperti per Voi” con il Touring Club Italiano: visite e accoglienza per nuovi pubblici",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=a5808b39947199bae09a2a83ead6cd18&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2761",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-09-25",
+      "collectedAt": "2026-10-16",
+      "category": "culture",
+      "topics": [
+        "档案馆",
+        "城市文化"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "编辑估计A2：具体参观场景、时间表达和短句，中文逐句辅助；少量文化词汇有解释。 拟发布档次A2；口语讨论角度：你想了解这座档案馆的什么？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=a5808b39947199bae09a2a83ead6cd18&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2761",
+          "checkedAt": "2026-10-16",
+          "notes": "原网页正文通过web全文读取。仅改写机构叙事；无媒体、采访引语、外部链接正文。网页页脚直接链接MiC法律说明；不使用图片及采访直接引语。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "正文日期2026-09-25；与栏目页相符。",
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=a5808b39947199bae09a2a83ead6cd18&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2761"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Ministero della Cultura — Direzione generale Archivi",
+          "evidence": "意大利机构原生编辑发布，页面意语标题与正文，无译者或转载标记；未采用英语版本。",
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=a5808b39947199bae09a2a83ead6cd18&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2761",
+          "caveat": "机构原语编辑判断，不证明个人母语。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "evidence": "法律页明确允许改编及分发；已核文章无相反正文权利标记。",
+          "evidenceUrls": [
+            "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=a5808b39947199bae09a2a83ead6cd18&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2761",
+            "https://cultura.gov.it/note-legali"
+          ],
+          "scope": "机构正文的同语言分级改写和中文翻译。",
+          "exclusions": [
+            "图片与视频",
+            "标识",
+            "第三方直接引语",
+            "外部媒体报道"
+          ],
+          "attributionRequirements": [
+            "机构名",
+            "原文标题链接日期",
+            "许可链接",
+            "改写及翻译说明"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 21,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-16-it-palermo-visite-archivio"
+    },
+    {
+      "id": "candidate-it-poverta-differenze-famiglie-2026-10-15",
+      "language": "it",
+      "sourceTitle": "La povertà in Italia – Anno 2025",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/",
+      "sourceName": "Istat",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-15",
+      "collectedAt": "2026-10-16",
+      "category": "society",
+      "topics": [
+        "社会统计",
+        "家庭生活"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "编辑估计B2：比较不同统计口径、群体与地域差异，使用从句及限定性表达，区分比例、规模与解释边界。 拟发布档次B2；口语讨论角度：比较两个地区的贫困状况时，你会先看哪类数据？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/",
+          "checkedAt": "2026-10-16",
+          "notes": "原网页正文通过web全文读取。仅改写机构叙事；无媒体、采访引语、外部链接正文。原网页统计数据保留2025年，不包装为2026年人口数据。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "正文日期2026-10-15；与栏目页相符。",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Istat",
+          "evidence": "意大利机构原生编辑发布，页面意语标题与正文，无译者或转载标记；未采用英语版本。",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/",
+          "caveat": "机构原语编辑判断，不证明个人母语。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "法律页明确允许改编及分发；已核文章无相反正文权利标记。",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/",
+            "https://www.istat.it/note-legali/"
+          ],
+          "scope": "机构正文的同语言分级改写和中文翻译。",
+          "exclusions": [
+            "图片与视频",
+            "标识",
+            "第三方直接引语",
+            "外部媒体报道"
+          ],
+          "attributionRequirements": [
+            "机构名",
+            "原文标题链接日期",
+            "许可链接",
+            "改写及翻译说明"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-16-it-poverta-differenze-famiglie"
+    },
+    {
+      "id": "fr-organiser-les-circuits-alimentaires-2026-09-28",
+      "language": "fr",
+      "sourceTitle": "Le RMT Alimentation Locale lance sa 3ème programmation",
+      "sourceUrl": "https://www.inrae.fr/actualites/rmt-alimentation-locale-lance-sa-3eme-programmation",
+      "sourceName": "INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-09-28",
+      "collectedAt": "2026-10-16",
+      "category": "society",
+      "topics": [
+        "连接地方食品倡议"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "独立法语稿；等待独立全文核查和题目复核后才能标记ready。",
+      "linkToArticleId": "2026-10-16-fr-organiser-les-circuits-alimentaires",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.inrae.fr/actualites/rmt-alimentation-locale-lance-sa-3eme-programmation",
+          "checkedAt": "2026-10-16",
+          "notes": "已获取完整机构HTML正文，保存在工作材料中。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "正文Publié le与日期一致。",
+          "evidenceUrl": "https://www.inrae.fr/actualites/rmt-alimentation-locale-lance-sa-3eme-programmation"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "INRAE",
+          "evidence": "法语机构编辑原稿，机构署名、法国相关议题，无翻译或外部转载署名。",
+          "evidenceUrl": "https://www.inrae.fr/actualites/rmt-alimentation-locale-lance-sa-3eme-programmation",
+          "caveat": "原语编辑判断，不证明作者母语。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Licence Ouverte Etalab 2.0",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "evidence": "机构公开正文适用许可；已检查正文无相反文字许可，第三方引语与图片均排除。",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/rmt-alimentation-locale-lance-sa-3eme-programmation",
+            "https://www.inrae.fr/conditions-generales-dutilisation"
+          ],
+          "scope": "仅机构原创正文的法语改写和中文翻译。",
+          "exclusions": [
+            "图片与标识",
+            "第三方采访引语",
+            "外链资料"
+          ],
+          "attributionRequirements": [
+            "机构与署名",
+            "原文链接日期",
+            "许可链接及修改说明"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 18,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-2026-10-13",
+      "language": "fr",
+      "sourceTitle": "Lancement du projet GrassConnect : mieux valoriser la multifonctionnalité des systèmes d’élevage herbagers",
+      "sourceUrl": "https://www.inrae.fr/actualites/lancement-du-projet-grassconnect-mieux-valoriser-multifonctionnalite-systemes-delevage-herbagers",
+      "sourceName": "Anaïs Rodrigues / INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-10-13",
+      "collectedAt": "2026-10-16",
+      "category": "environment",
+      "topics": [
+        "与养殖者一起研究草地"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "独立法语稿；等待独立全文核查和题目复核后才能标记ready。",
+      "linkToArticleId": "2026-10-16-fr-des-prairies-et-des-rencontres",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.inrae.fr/actualites/lancement-du-projet-grassconnect-mieux-valoriser-multifonctionnalite-systemes-delevage-herbagers",
+          "checkedAt": "2026-10-16",
+          "notes": "已获取完整机构HTML正文，保存在工作材料中。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "正文Publié le与日期一致。",
+          "evidenceUrl": "https://www.inrae.fr/actualites/lancement-du-projet-grassconnect-mieux-valoriser-multifonctionnalite-systemes-delevage-herbagers"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Anaïs Rodrigues / INRAE",
+          "evidence": "法语机构编辑原稿，机构署名、法国相关议题，无翻译或外部转载署名。",
+          "evidenceUrl": "https://www.inrae.fr/actualites/lancement-du-projet-grassconnect-mieux-valoriser-multifonctionnalite-systemes-delevage-herbagers",
+          "caveat": "原语编辑判断，不证明作者母语。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Licence Ouverte Etalab 2.0",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "evidence": "机构公开正文适用许可；已检查正文无相反文字许可，第三方引语与图片均排除。",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/lancement-du-projet-grassconnect-mieux-valoriser-multifonctionnalite-systemes-delevage-herbagers",
+            "https://www.inrae.fr/conditions-generales-dutilisation"
+          ],
+          "scope": "仅机构原创正文的法语改写和中文翻译。",
+          "exclusions": [
+            "图片与标识",
+            "第三方采访引语",
+            "外链资料"
+          ],
+          "attributionRequirements": [
+            "机构与署名",
+            "原文链接日期",
+            "许可链接及修改说明"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-2026-09-10",
+      "language": "fr",
+      "sourceTitle": "Saison Cabaret : trois mois d’événements partout en France",
+      "sourceUrl": "https://saisoncabaret.culture.gouv.fr/actualites/saison-cabaret-trois-mois-d-evenements-partout-en-france",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-09-10",
+      "collectedAt": "2026-10-16",
+      "category": "culture",
+      "topics": [
+        "秋天的舞台与交流"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "独立法语稿；等待独立全文核查和题目复核后才能标记ready。36日备选，活动仍在预告期间，避免声称已举行。",
+      "linkToArticleId": "2026-10-16-fr-une-saison-pour-le-cabaret",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://saisoncabaret.culture.gouv.fr/actualites/saison-cabaret-trois-mois-d-evenements-partout-en-france",
+          "checkedAt": "2026-10-16",
+          "notes": "已获取完整机构HTML正文，保存在工作材料中。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "正文Publié le与日期一致。",
+          "evidenceUrl": "https://saisoncabaret.culture.gouv.fr/actualites/saison-cabaret-trois-mois-d-evenements-partout-en-france"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Ministère de la Culture",
+          "evidence": "法语机构编辑原稿，机构署名、法国相关议题，无翻译或外部转载署名。",
+          "evidenceUrl": "https://saisoncabaret.culture.gouv.fr/actualites/saison-cabaret-trois-mois-d-evenements-partout-en-france",
+          "caveat": "原语编辑判断，不证明作者母语。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidence": "机构公开正文适用许可；已检查正文无相反文字许可，第三方引语与图片均排除。",
+          "evidenceUrls": [
+            "https://saisoncabaret.culture.gouv.fr/actualites/saison-cabaret-trois-mois-d-evenements-partout-en-france",
+            "https://saisoncabaret.culture.gouv.fr/mentions-legales"
+          ],
+          "scope": "仅机构原创正文的法语改写和中文翻译。",
+          "exclusions": [
+            "图片与标识",
+            "第三方采访引语",
+            "外链资料"
+          ],
+          "attributionRequirements": [
+            "机构与署名",
+            "原文链接日期",
+            "许可链接及修改说明",
+            "改写及翻译保持CC BY-SA3.0FR"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 36,
+          "bucket": "within_90_days"
+        }
+      }
+    },
+    {
+      "language": "en",
+      "sourceTitle": "Britain steps up national defences against growing AI risks",
+      "sourceUrl": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+      "sourceName": "Cabinet Office; AI Security Institute; National Cyber Security Centre; Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-10-12",
+      "category": "technology",
+      "topics": [
+        "为能力更强的人工智能做好公共服务防护"
+      ],
+      "level": "B2",
+      "collectedAt": "2026-10-16",
+      "editorialNote": "Discuss Preparing public services for more capable AI. Retain announcement versus achieved result boundaries; dates verified in original header.",
+      "id": "candidate-2026-10-16-en-ai-public-service-defences",
+      "priority": 1,
+      "status": "verified",
+      "linkToArticleId": "2026-10-16-en-ai-public-service-defences",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+          "checkedAt": "2026-10-16",
+          "notes": "Full official HTML inspected."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Official Published header date matches source date.",
+          "evidenceUrl": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "UK government institution English original press release; no translation or syndication notice; childcare additionally offers separate Cymraeg translation.",
+          "evidenceUrl": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+          "caveat": "Institutional original-language inference, not mother-tongue certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Institutional Crown prose only; explicit OGL footer and GOV.UK terms verified; no direct quotations, photos, logos, personal cases. NationalArchives licence URL direct403 on refresh; no retry or alternate route.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "Institutional Crown prose, excluding third-party content.",
+          "exclusions": [
+            "images",
+            "logos",
+            "third-party quotations",
+            "personal case study details"
+          ],
+          "attributionRequirements": [
+            "publisher",
+            "original URL/date",
+            "OGL licence link",
+            "adaptation/translation notice"
+          ],
+          "licenseRetrievalNote": "Direct NationalArchives refresh returned403; not retried or bypassed. Article OGL notice and GOV.UK terms successfully inspected."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 4,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "language": "en",
+      "sourceTitle": "More than 600,000 families conjure up Hallowe’en savings with Tax-Free Childcare",
+      "sourceUrl": "https://www.gov.uk/government/news/more-than-600000-families-conjure-up-halloween-savings-with-tax-free-childcare",
+      "sourceName": "HM Revenue & Customs / GOV.UK",
+      "registrySourceId": "govuk-hmrc-english-family",
+      "sourcePublishedAt": "2026-10-13",
+      "category": "society",
+      "topics": [
+        "托育账户如何为家庭提供支持"
+      ],
+      "level": "B1",
+      "collectedAt": "2026-10-16",
+      "editorialNote": "Discuss How childcare accounts support families. Retain announcement versus achieved result boundaries; dates verified in original header.",
+      "id": "candidate-2026-10-16-en-childcare-accounts",
+      "priority": 1,
+      "status": "verified",
+      "linkToArticleId": "2026-10-16-en-childcare-accounts",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/more-than-600000-families-conjure-up-halloween-savings-with-tax-free-childcare",
+          "checkedAt": "2026-10-16",
+          "notes": "Full official HTML inspected."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Official Published header date matches source date.",
+          "evidenceUrl": "https://www.gov.uk/government/news/more-than-600000-families-conjure-up-halloween-savings-with-tax-free-childcare"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "UK government institution English original press release; no translation or syndication notice; childcare additionally offers separate Cymraeg translation.",
+          "evidenceUrl": "https://www.gov.uk/government/news/more-than-600000-families-conjure-up-halloween-savings-with-tax-free-childcare",
+          "caveat": "Institutional original-language inference, not mother-tongue certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Institutional Crown prose only; explicit OGL footer and GOV.UK terms verified; no direct quotations, photos, logos, personal cases. NationalArchives licence URL direct403 on refresh; no retry or alternate route.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/more-than-600000-families-conjure-up-halloween-savings-with-tax-free-childcare",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "Institutional Crown prose, excluding third-party content.",
+          "exclusions": [
+            "images",
+            "logos",
+            "third-party quotations",
+            "personal case study details"
+          ],
+          "attributionRequirements": [
+            "publisher",
+            "original URL/date",
+            "OGL licence link",
+            "adaptation/translation notice"
+          ],
+          "licenseRetrievalNote": "Direct NationalArchives refresh returned403; not retried or bypassed. Article OGL notice and GOV.UK terms successfully inspected."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "HM Revenue & Customs"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/more-than-600000-families-conjure-up-halloween-savings-with-tax-free-childcare"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "language": "en",
+      "sourceTitle": "Major drive to restore churches and revitalise heritage buildings in communities across England announced",
+      "sourceUrl": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-10-15",
+      "category": "culture",
+      "topics": [
+        "老建筑与新的社区用途"
+      ],
+      "level": "A2",
+      "collectedAt": "2026-10-16",
+      "editorialNote": "Discuss Old buildings, new community uses. Retain announcement versus achieved result boundaries; dates verified in original header.",
+      "id": "candidate-2026-10-16-en-community-heritage-repairs",
+      "priority": 1,
+      "status": "verified",
+      "linkToArticleId": "2026-10-16-en-community-heritage-repairs",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-16",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
+          "checkedAt": "2026-10-16",
+          "notes": "Full official HTML inspected."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Official Published header date matches source date.",
+          "evidenceUrl": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "UK government institution English original press release; no translation or syndication notice; childcare additionally offers separate Cymraeg translation.",
+          "evidenceUrl": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
+          "caveat": "Institutional original-language inference, not mother-tongue certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Institutional Crown prose only; explicit OGL footer and GOV.UK terms verified; no direct quotations, photos, logos, personal cases. NationalArchives licence URL direct403 on refresh; no retry or alternate route.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "Institutional Crown prose, excluding third-party content.",
+          "exclusions": [
+            "images",
+            "logos",
+            "third-party quotations",
+            "personal case study details"
+          ],
+          "attributionRequirements": [
+            "publisher",
+            "original URL/date",
+            "OGL licence link",
+            "adaptation/translation notice"
+          ],
+          "licenseRetrievalNote": "Direct NationalArchives refresh returned403; not retried or bypassed. Article OGL notice and GOV.UK terms successfully inspected."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 49,
+          "checkedAt": "2026-10-16",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-16",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        }
+      }
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

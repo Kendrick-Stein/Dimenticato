@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-de-buecher-und-digitale-kopien",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welche Frage verbindet die Beispiele im Text?",
+      "options": [
+        "Wie spart man beim Scannen Geld und erhält trotzdem die gedruckten Bücher?",
+        "Wie unterscheiden sich schnelle digitale Nutzung, Erhaltung und öffentlicher Zugang?",
+        "Wie werden seltene Bücher für Unternehmen ausgewählt und anschließend weiterverkauft?",
+        "Wie werden alle digitalen Bücher gemeinsam gesammelt und kostenlos verteilt?"
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s9",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "正文同时讨论扫描速度与成本、实体书的毁损和数字副本是否公众可及。A只涵盖成本与保存，遗漏公共可及性这一重要部分；C的转售、D的集中免费分发均无正文依据。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Warum ist das Scannen ohne Zerstörung laut Text aufwendig?",
+      "options": [
+        "Die einzelnen Blätter müssen nach dem Scannen wieder zusammengefügt werden.",
+        "Die Scanner müssen zuerst die Informationen aus den Texten auswählen.",
+        "Die Seiten liegen an der Bindung nicht vollständig flach.",
+        "Die Bücher müssen nach dem Scannen wieder an Händler zurückgehen."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "s6把困难与装订处书页不平整相连。重新拼接散页属于另一种假设流程；筛选信息、退还商家都不是正文给出的原因。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Was geschieht bei dem zweiten Verfahren nach dem Scannen?",
+      "options": [
+        "Die Blätter werden als Altpapier entsorgt.",
+        "Die Blätter werden zu einem neuen Buch gebunden.",
+        "Die Bücher werden an ihre Verkäufer zurückgegeben.",
+        "Die Bücher werden in einer öffentlichen Bibliothek gesammelt."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "s7至s9描述先拆装订、扫描散页，再将它们作为废纸处理；没有重新装订、退还或入藏。"
+    }
+  ]
+}

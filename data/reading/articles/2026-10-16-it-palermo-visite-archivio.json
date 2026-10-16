@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-it-palermo-visite-archivio",
+  "storyId": "it-palermo-visite-archivio-2026-09-25",
+  "lang": "it",
+  "date": "2026-10-16",
+  "title": "Una visita alla sede Catena",
+  "titleZh": "在巴勒莫参观卡泰纳档案馆",
+  "summaryZh": "在巴勒莫参观卡泰纳档案馆：据意大利官方原语报道分级改写，保留原报道日期。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体参观场景、时间表达和短句，中文逐句辅助；少量文化词汇有解释。",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "Archivio di Stato di Palermo, al via “Aperti per Voi” con il Touring Club Italiano: visite e accoglienza per nuovi pubblici",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=a5808b39947199bae09a2a83ead6cd18&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2761",
+    "publishedAt": "2026-09-25",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原作者/发布机构：Ministero della Cultura — Direzione generale Archivi；原报道：https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=a5808b39947199bae09a2a83ead6cd18&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2761。中文翻译与教学改写：Dimenticato。",
+  "adaptation": "经许可将机构意大利语正文分级改写并配中文翻译；词汇、练习和口语问题为教学补充，不代表原机构背书。未使用图片、视频、标识、外部媒体正文或直接引语。文中保留历史事件与报道日期；参观安排仅转述当时公告，出行前应另核现行安排。",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "档案馆",
+    "城市文化"
+  ],
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 25 settembre 2026, la Direzione generale Archivi ha annunciato un programma di visite a Palermo.",
+      "zh": "2026年9月25日，档案总局发布了一项巴勒莫参观计划。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Il progetto si chiama Aperti per Voi e riguarda la sede Catena dell’Archivio di Stato.",
+      "zh": "项目名为“为你开放”，涉及国家档案馆的卡泰纳馆址。",
+      "glosses": [
+        {
+          "surface": "sede",
+          "lemma": "sede",
+          "zh": "馆址",
+          "note": "阴性名词，复数sedi。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Secondo l’annuncio, le visite iniziano il 9 ottobre, con l’aiuto dei volontari del Touring Club Italiano.",
+      "zh": "根据公告，参观从10月9日开始，由意大利旅游俱乐部志愿者协助。",
+      "glosses": [
+        {
+          "surface": "volontari",
+          "lemma": "volontario",
+          "zh": "志愿者",
+          "note": "阳性复数；单数volontario，阴性volontaria。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Sono previste il secondo e il quarto venerdì di ogni mese, dalle dieci e mezza alle dodici e mezza.",
+      "zh": "计划安排在每月第二和第四个星期五，上午十点半至十二点半。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "L’ingresso è gratuito e non serve una prenotazione.",
+      "zh": "入场免费，也无需预约。",
+      "glosses": [
+        {
+          "surface": "prenotazione",
+          "lemma": "prenotazione",
+          "zh": "预约",
+          "note": "阴性名词，复数prenotazioni。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Il percorso comincia all’esterno dell’edificio e continua nella corte interna.",
+      "zh": "参观路线从建筑外部开始，随后进入内院。",
+      "glosses": [
+        {
+          "surface": "corte",
+          "lemma": "corte",
+          "zh": "庭院",
+          "note": "阴性名词，此处指内院。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Durante la visita, il pubblico può conoscere la storia della sede e dei documenti conservati.",
+      "zh": "参观时，公众可以了解馆址及所保存文献的历史。",
+      "glosses": [
+        {
+          "surface": "conservati",
+          "lemma": "conservare",
+          "zh": "保存的",
+          "note": "过去分词阳性复数，配合documenti。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Nella sala studio vengono presentati anche i servizi dell’archivio.",
+      "zh": "在阅览室，人们还会听到档案馆服务的介绍。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Alla fine si presenta Dona alla Storia, un’iniziativa per sostenere il patrimonio archivistico.",
+      "zh": "最后会介绍“捐赠给历史”，这是一项支持档案遗产的倡议。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il nome Catena ricorda una grande catena che in passato proteggeva l’ingresso del porto.",
+      "zh": "“Catena”这个名字使人想起过去保护港口入口的一条大铁链。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "L’edificio è stato anche un convento e, dopo la legge del 1843, è diventato una sede archivistica stabile.",
+      "zh": "这座建筑也曾是修道院，在1843年的法律之后成为固定档案馆址。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "sede",
+        "lemma": "sede",
+        "zh": "馆址",
+        "note": "阴性名词，复数sedi。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "volontari",
+        "lemma": "volontario",
+        "zh": "志愿者",
+        "note": "阳性复数；单数volontario，阴性volontaria。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "prenotazione",
+        "lemma": "prenotazione",
+        "zh": "预约",
+        "note": "阴性名词，复数prenotazioni。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "corte",
+        "lemma": "corte",
+        "zh": "庭院",
+        "note": "阴性名词，此处指内院。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "conservati",
+        "lemma": "conservare",
+        "zh": "保存的",
+        "note": "过去分词阳性复数，配合documenti。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "gratuito",
+        "lemma": "gratuito",
+        "zh": "免费的",
+        "note": "阳性单数形容词，与ingresso配合；阴性gratuita。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "documenti",
+        "lemma": "documento",
+        "zh": "文献/文件",
+        "note": "阳性名词复数；单数documento。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "porto",
+        "lemma": "porto",
+        "zh": "港口",
+        "note": "阳性名词；复数porti。",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "non serve",
+        "zh": "不需要",
+        "note": "serve为servire第三人称单数。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "in passato",
+        "zh": "过去",
+        "note": "常用于回顾往事。",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "il secondo e il quarto venerdì：不是每个星期五，而是每月指定的两个星期五。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Che cosa vorresti conoscere di questo archivio?",
+        "zh": "你想了解这座档案馆的什么？",
+        "note": "教学讨论问题，不是新闻引语。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mi interessa soprattutto…",
+        "zh": "我尤其感兴趣的是……",
+        "note": "教学补充，可用于口语讨论。"
+      }
+    ]
+  }
+}

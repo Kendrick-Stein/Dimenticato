@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-fr-des-prairies-et-des-rencontres",
+  "storyId": "fr-des-prairies-et-des-rencontres-2026-10-13",
+  "lang": "fr",
+  "date": "2026-10-16",
+  "contentType": "native-adaptation",
+  "title": "Des prairies étudiées avec les éleveurs",
+  "titleZh": "与养殖者一起研究草地",
+  "summaryZh": "GrassConnect结合生态、经济与实地需求；13个地方协作点和国际合作网络的范围不同。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：说明多个角色、方法和目的，包含关系从句及对比。非认证CEFR测评。",
+  "category": "environment",
+  "topics": [
+    "与养殖者一起研究草地"
+  ],
+  "source": {
+    "name": "Anaïs Rodrigues / INRAE",
+    "title": "Lancement du projet GrassConnect : mieux valoriser la multifonctionnalité des systèmes d’élevage herbagers",
+    "url": "https://www.inrae.fr/actualites/lancement-du-projet-grassconnect-mieux-valoriser-multifonctionnalite-systemes-delevage-herbagers",
+    "publishedAt": "2026-10-13",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "evidenceUrl": "https://www.inrae.fr/conditions-generales-dutilisation"
+  },
+  "attribution": "来源：Anaïs Rodrigues / INRAE，《Lancement du projet GrassConnect : mieux valoriser la multifonctionnalité des systèmes d’élevage herbagers》，原文发布日期 2026-10-13，查阅日期2026-10-16。仅使用机构正文，图片、商标、采访引语和外链内容不予转载。",
+  "adaptation": "根据法语机构原文进行同语言分级改写，并添加简中逐句翻译、词汇注释和原创教学练习，不代表原机构认可。保留来源、日期及Licence Ouverte Etalab 2.0许可说明。",
+  "sentences": [
+    {
+      "id": "fr-des-prairies-et-des-rencontres-01",
+      "text": "Une prairie ne sert pas seulement à nourrir les animaux qui produisent du lait ou de la viande.",
+      "zh": "草地不只是为产奶或产肉的动物提供食物。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-02",
+      "text": "Elle peut aussi stocker du carbone et contribuer à préserver les sols ainsi que la qualité de l’eau.",
+      "zh": "它还可以储存碳，并有助于保护土壤与水质。",
+      "glosses": [
+        {
+          "surface": "sols",
+          "lemma": "sol",
+          "zh": "un sol（阳性），复数sols；土壤"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-03",
+      "text": "Pourtant, selon INRAE, ces différentes fonctions sont encore insuffisamment considérées ensemble dans la gestion des élevages.",
+      "zh": "不过，据INRAE介绍，在养殖管理中，这些不同功能仍未被充分综合考虑。",
+      "glosses": [
+        {
+          "surface": "gestion",
+          "lemma": "gestion",
+          "zh": "la gestion（阴性）；管理"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-04",
+      "text": "Le projet GrassConnect veut mieux comprendre ces services et développer des méthodes utiles aux professionnels.",
+      "zh": "GrassConnect项目希望更好地理解这些作用，并开发对从业者有用的方法。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-05",
+      "text": "Coordonné par INRAE, il réunit trente-deux organisations de quatorze pays pour un travail prévu sur quatre ans et demi.",
+      "zh": "项目由INRAE协调，汇集14个国家的32家机构，计划开展四年半的工作。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-06",
+      "text": "Les équipes associeront l’écologie, l’élevage, l’économie et les sciences sociales, au lieu de regarder chaque question séparément.",
+      "zh": "团队将结合生态学、养殖、经济学和社会科学，而非孤立地看待各个问题。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-07",
+      "text": "Elles exploreront notamment la télédétection et l’intelligence artificielle pour suivre les services rendus par les prairies.",
+      "zh": "它们将尤其探索遥感和人工智能，以跟踪草地发挥的作用。",
+      "glosses": [
+        {
+          "surface": "télédétection",
+          "lemma": "télédétection",
+          "zh": "la télédétection（阴性）；遥感"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-08",
+      "text": "Mais elles s’appuieront également sur des outils de décision déjà utilisés par les acteurs de l’élevage.",
+      "zh": "但它们也会依托养殖领域人员已经使用的决策工具。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-09",
+      "text": "Il s’agit de rapprocher les connaissances scientifiques des pratiques quotidiennes et des besoins du terrain.",
+      "zh": "目的是让科学知识更贴近日常实践和实地需求。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-10",
+      "text": "Treize espaces de collaboration, appelés hubs, seront mobilisés dans onze pays.",
+      "zh": "项目将在11个国家动员13个称为hub的协作空间。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-11",
+      "text": "Ils réuniront chercheurs, éleveurs, instituts techniques, entreprises et autres acteurs locaux pour construire ensemble des solutions adaptées aux besoins de chaque territoire.",
+      "zh": "这些空间将汇集研究者、养殖者、技术机构、企业和其他地方参与者，共同构建适应各地区需求的解决方案。",
+      "glosses": [
+        {
+          "surface": "éleveurs",
+          "lemma": "éleveur",
+          "zh": "un éleveur（阳性），复数éleveurs；养殖者"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-12",
+      "text": "Les deux nombres de pays ne désignent donc pas le même ensemble : le partenariat international compte quatorze pays, le réseau de hubs en compte onze.",
+      "zh": "因此，两组国家数指的不是同一范围：国际合作伙伴涉及14国，而hub网络涉及11国。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-13",
+      "text": "Du 15 au 17 septembre 2026, soixante-cinq participants se sont retrouvés à Clermont-Ferrand pour lancer les travaux.",
+      "zh": "2026年9月15日至17日，65名参与者在克莱蒙费朗会面，启动相关工作。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-14",
+      "text": "Ils ont visité les prairies expérimentales de Laqueuille et la ferme Le Roc, qui produit du Saint-Nectaire.",
+      "zh": "他们参观了Laqueuille的实验草地，以及生产圣内克泰尔奶酪的Le Roc农场。",
+      "glosses": []
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-15",
+      "text": "Ces visites permettaient de discuter des contraintes des exploitations et de relier les objectifs de recherche à des situations concrètes.",
+      "zh": "这些参观让他们得以讨论农场面临的限制，并把研究目标与具体情境联系起来。",
+      "glosses": [
+        {
+          "surface": "contraintes",
+          "lemma": "contrainte",
+          "zh": "une contrainte（阴性），复数contraintes；限制条件"
+        }
+      ]
+    },
+    {
+      "id": "fr-des-prairies-et-des-rencontres-16",
+      "text": "L’article annonce ainsi une démarche de coopération jusqu’en 2031 ; il ne présente pas encore des résultats prouvant l’efficacité des futurs outils.",
+      "zh": "因此，文章宣布的是延续至2031年的合作过程；它尚未展示能够证明未来工具有效性的结果。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "sols",
+        "zh": "un sol（阳性），复数sols；土壤",
+        "sentenceId": "fr-des-prairies-et-des-rencontres-02"
+      },
+      {
+        "text": "gestion",
+        "zh": "la gestion（阴性）；管理",
+        "sentenceId": "fr-des-prairies-et-des-rencontres-03"
+      },
+      {
+        "text": "télédétection",
+        "zh": "la télédétection（阴性）；遥感",
+        "sentenceId": "fr-des-prairies-et-des-rencontres-07"
+      },
+      {
+        "text": "éleveurs",
+        "zh": "un éleveur（阳性），复数éleveurs；养殖者",
+        "sentenceId": "fr-des-prairies-et-des-rencontres-11"
+      },
+      {
+        "text": "contraintes",
+        "zh": "une contrainte（阴性），复数contraintes；限制条件",
+        "sentenceId": "fr-des-prairies-et-des-rencontres-15"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "s’appuieront",
+        "zh": "s’appuyer sur：依托；简单将来时",
+        "sentenceId": "fr-des-prairies-et-des-rencontres-08"
+      },
+      {
+        "text": "besoins du terrain",
+        "zh": "实地需求；besoin de常用于表达需要",
+        "sentenceId": "fr-des-prairies-et-des-rencontres-09"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-des-prairies-et-des-rencontres-08",
+        "note": "s’appuyer sur 表示“依托”；s’appuieront为简单将来时，描述计划采用的方法，不是已经完成的结果。"
+      },
+      {
+        "sentenceId": "fr-des-prairies-et-des-rencontres-16",
+        "note": "ne…pas encore 表示“尚未”；此句区分已启动的合作与仍未证实的工具效果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pourquoi faut-il écouter les éleveurs dans ce projet ?",
+        "zh": "为什么这个项目需要听取养殖者的意见？"
+      },
+      {
+        "text": "Quels services une prairie peut-elle rendre ?",
+        "zh": "草地可以发挥哪些作用？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ce qui me semble important, c’est…",
+        "zh": "我觉得重要的是……",
+        "note": "原创教学补充，不是新闻引语。"
+      },
+      {
+        "text": "Dans ma région, on pourrait…",
+        "zh": "在我所在地区，人们可以……",
+        "note": "原创教学补充，用条件式表达建议。"
+      }
+    ]
+  }
+}

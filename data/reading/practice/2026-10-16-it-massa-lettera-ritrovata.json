@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-it-massa-lettera-ritrovata",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 121,
+      "answer": "governatore",
+      "options": [
+        "governatore",
+        "visitatore",
+        "traduttore",
+        "volontario"
+      ],
+      "explanation": "governatore指总督，文中阿里奥斯托的职务。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 45,
+      "answer": "poesia",
+      "options": [
+        "poesia",
+        "geografia",
+        "musica",
+        "pittura"
+      ],
+      "explanation": "poesia是诗歌；正文将文学身份与实际治理工作对照。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 73,
+      "answer": "asta",
+      "options": [
+        "sede",
+        "corte",
+        "asta",
+        "scuola"
+      ],
+      "explanation": "asta指拍卖；中文明确文献出现在拍卖中。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 3,
+      "answer": "inventario",
+      "options": [
+        "laboratorio",
+        "inventario",
+        "biglietto",
+        "palazzo"
+      ],
+      "explanation": "inventario是帮助识别文献的目录。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 92,
+      "answer": "leggendo",
+      "options": [
+        "vendendo",
+        "chiudendo",
+        "dipingendo",
+        "leggendo"
+      ],
+      "explanation": "leggendo为leggere的副动词，表示通过朗读结束活动。"
+    }
+  ]
+}

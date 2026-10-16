@@ -1,0 +1,204 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-fr-une-saison-pour-le-cabaret",
+  "storyId": "fr-une-saison-pour-le-cabaret-2026-09-10",
+  "lang": "fr",
+  "date": "2026-10-16",
+  "contentType": "native-adaptation",
+  "title": "Des scènes et des rencontres cet automne",
+  "titleZh": "秋天的舞台与交流",
+  "summaryZh": "法国歌舞秀季带来演出、工作坊和摄影展；这篇9月的预告保留活动原日期。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：短句、时间地点和文化活动词汇，附充分中文辅助。非认证CEFR测评。",
+  "category": "culture",
+  "topics": [
+    "秋天的舞台与交流"
+  ],
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Saison Cabaret : trois mois d’événements partout en France",
+    "url": "https://saisoncabaret.culture.gouv.fr/actualites/saison-cabaret-trois-mois-d-evenements-partout-en-france",
+    "publishedAt": "2026-09-10",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "evidenceUrl": "https://saisoncabaret.culture.gouv.fr/mentions-legales"
+  },
+  "attribution": "来源：Ministère de la Culture，《Saison Cabaret : trois mois d’événements partout en France》，原文发布日期 2026-09-10，查阅日期2026-10-16。仅使用机构正文，图片、商标、采访引语和外链内容不予转载。",
+  "adaptation": "根据法语机构原文进行同语言分级改写，并添加简中逐句翻译、词汇注释和原创教学练习，不代表原机构认可。改写、中文译文及配套教学材料按CC BY-SA 3.0 FR发布。",
+  "sentences": [
+    {
+      "id": "fr-une-saison-pour-le-cabaret-01",
+      "text": "Du 18 septembre au 18 décembre 2026, la France propose une première saison consacrée au cabaret.",
+      "zh": "2026年9月18日至12月18日，法国举办首届专门围绕歌舞秀的活动季。",
+      "glosses": []
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-02",
+      "text": "Le ministère de la Culture annonce plus de cent événements dans différentes régions.",
+      "zh": "文化部预告将在不同地区开展一百多场活动。",
+      "glosses": []
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-03",
+      "text": "On peut y découvrir des spectacles, des films, des rencontres et des ateliers.",
+      "zh": "人们可以在活动中欣赏演出和影片，参加交流与工作坊。",
+      "glosses": [
+        {
+          "surface": "ateliers",
+          "lemma": "atelier",
+          "zh": "un atelier（阳性），复数ateliers；工作坊"
+        }
+      ]
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-04",
+      "text": "Le cabaret mélange plusieurs arts, par exemple la danse, le cirque, la magie et la chanson.",
+      "zh": "歌舞秀融合多种艺术，例如舞蹈、马戏、魔术与歌曲。",
+      "glosses": [
+        {
+          "surface": "mélange",
+          "lemma": "mélanger",
+          "zh": "mélanger：融合；第三人称单数现在时"
+        }
+      ]
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-05",
+      "text": "Des professionnels du secteur public et du secteur privé participent à cette saison.",
+      "zh": "来自公共和私营领域的从业者参与这个活动季。",
+      "glosses": []
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-06",
+      "text": "Le programme permet aussi de découvrir des métiers, comme ceux des maquilleurs et des perruquiers.",
+      "zh": "活动也让人们了解化妆师和假发制作师等职业。",
+      "glosses": [
+        {
+          "surface": "métiers",
+          "lemma": "métier",
+          "zh": "un métier（阳性），复数métiers；职业"
+        }
+      ]
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-07",
+      "text": "Au Mans, des étudiants doivent présenter un spectacle les 18 et 19 novembre.",
+      "zh": "在勒芒，学生们按计划将于11月18日和19日呈现一场演出。",
+      "glosses": []
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-08",
+      "text": "Une exposition de photographies est également annoncée dans plusieurs villes.",
+      "zh": "此外还预告了一场在多个城市展出的摄影展。",
+      "glosses": [
+        {
+          "surface": "photographies",
+          "lemma": "photographie",
+          "zh": "une photographie（阴性），复数photographies；照片"
+        }
+      ]
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-09",
+      "text": "À Paris, elle est prévue sur les grilles du Square du Temple, du 22 septembre au 18 décembre.",
+      "zh": "在巴黎，它计划于9月22日至12月18日在唐普尔广场公园的围栏上展出。",
+      "glosses": []
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-10",
+      "text": "Les photos montrent les artistes, les costumes et les lieux du cabaret.",
+      "zh": "照片展示歌舞秀的艺术家、服饰和场所。",
+      "glosses": []
+    },
+    {
+      "id": "fr-une-saison-pour-le-cabaret-11",
+      "text": "Cette saison veut faire connaître la diversité du cabaret, au-delà des plumes et des paillettes.",
+      "zh": "这个活动季希望让人们认识羽毛与亮片之外的歌舞秀多样性。",
+      "glosses": [
+        {
+          "surface": "diversité",
+          "lemma": "diversité",
+          "zh": "la diversité（阴性）；多样性"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "ateliers",
+        "zh": "un atelier（阳性），复数ateliers；工作坊",
+        "sentenceId": "fr-une-saison-pour-le-cabaret-03"
+      },
+      {
+        "text": "mélange",
+        "zh": "mélanger：融合；第三人称单数现在时",
+        "sentenceId": "fr-une-saison-pour-le-cabaret-04"
+      },
+      {
+        "text": "métiers",
+        "zh": "un métier（阳性），复数métiers；职业",
+        "sentenceId": "fr-une-saison-pour-le-cabaret-06"
+      },
+      {
+        "text": "photographies",
+        "zh": "une photographie（阴性），复数photographies；照片",
+        "sentenceId": "fr-une-saison-pour-le-cabaret-08"
+      },
+      {
+        "text": "diversité",
+        "zh": "la diversité（阴性）；多样性",
+        "sentenceId": "fr-une-saison-pour-le-cabaret-11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "consacrée au",
+        "zh": "专门围绕……的；consacrer à",
+        "sentenceId": "fr-une-saison-pour-le-cabaret-01"
+      },
+      {
+        "text": "au-delà des",
+        "zh": "超越……；au-delà de",
+        "sentenceId": "fr-une-saison-pour-le-cabaret-11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-une-saison-pour-le-cabaret-01",
+        "note": "consacré à 表示“专门围绕……”；saison为阴性，故分词用consacrée。au是à与le的缩合。"
+      },
+      {
+        "sentenceId": "fr-une-saison-pour-le-cabaret-11",
+        "note": "au-delà de 表示超越某种范围；这里提示不要把歌舞秀仅理解为羽毛和亮片。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel métier du spectacle aimeriez-vous découvrir ?",
+        "zh": "你想了解哪种舞台相关职业？"
+      },
+      {
+        "text": "Préférez-vous un spectacle ou un atelier ? Pourquoi ?",
+        "zh": "你更喜欢观看演出还是参加工作坊？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ce qui me semble important, c’est…",
+        "zh": "我觉得重要的是……",
+        "note": "原创教学补充，不是新闻引语。"
+      },
+      {
+        "text": "Dans ma région, on pourrait…",
+        "zh": "在我所在地区，人们可以……",
+        "note": "原创教学补充，用条件式表达建议。"
+      }
+    ]
+  }
+}

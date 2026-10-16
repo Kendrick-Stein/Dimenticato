@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "id": "2026-10-16-it-massa-lettera-ritrovata",
+  "storyId": "it-massa-lettera-ritrovata-2026-10-09",
+  "lang": "it",
+  "date": "2026-10-16",
+  "title": "Una lettera e le tracce della sua storia",
+  "titleZh": "一封书信及其归属的线索",
+  "summaryZh": "一封书信及其归属的线索：据意大利官方原语报道分级改写，保留原报道日期。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：串联文物流转、找回依据和历史背景，含过去时、被动表达与原因关系。",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "La lettera di Alfonso I d’Este a Ludovico Ariosto torna all’Archivio di Stato di Massa",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c7766fc2f9e8cf41cb33bcc57a568e4d&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2795",
+    "publishedAt": "2026-10-09",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原作者/发布机构：Ministero della Cultura — Direzione generale Archivi；原报道：https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c7766fc2f9e8cf41cb33bcc57a568e4d&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2795。中文翻译与教学改写：Dimenticato。",
+  "adaptation": "经许可将机构意大利语正文分级改写并配中文翻译；词汇、练习和口语问题为教学补充，不代表原机构背书。未使用图片、视频、标识、外部媒体正文或直接引语。文中保留历史事件与报道日期；参观安排仅转述当时公告，出行前应另核现行安排。",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "文物归还",
+    "地方历史"
+  ],
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 9 ottobre 2026 una lettera del duca Alfonso I d’Este a Ludovico Ariosto è stata riconsegnata ufficialmente all’Archivio di Stato di Massa.",
+      "zh": "2026年10月9日，阿方索一世·德斯特公爵写给卢多维科·阿里奥斯托的一封信正式交还马萨国家档案馆。",
+      "glosses": [
+        {
+          "surface": "riconsegnata",
+          "lemma": "riconsegnare",
+          "zh": "交还的",
+          "note": "过去分词阴性单数，与lettera配合；essere stata riconsegnata为被动。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Il documento porta la data del 31 gennaio 1524 e racconta un aspetto meno noto della vita di Ariosto: il suo lavoro come governatore della Garfagnana.",
+      "zh": "文献日期为1524年1月31日，展现了阿里奥斯托生活中较少为人所知的一面：担任加尔法尼亚纳总督的工作。",
+      "glosses": [
+        {
+          "surface": "governatore",
+          "lemma": "governatore",
+          "zh": "总督",
+          "note": "阳性名词，复数governatori。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Nella lettera non si parla principalmente di poesia, ma di problemi concreti del territorio, come l’ordine pubblico, il banditismo e le richieste di grazia.",
+      "zh": "信中主要谈的并非诗歌，而是当地具体问题，例如公共秩序、盗匪活动和赦免请求。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Le informazioni inviate da Ariosto aiutavano il duca a prendere decisioni su queste questioni.",
+      "zh": "阿里奥斯托提供的信息帮助公爵就这些问题作出决定。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "La lettera era stata sottratta al patrimonio statale, era comparsa in un’asta nel 1973 ed era stata poi donata alla Morgan Library di New York.",
+      "zh": "这封信此前曾被从国家文献遗产中盗走，1973年出现在一次拍卖中，之后被捐赠给纽约摩根图书馆。",
+      "glosses": [
+        {
+          "surface": "asta",
+          "lemma": "asta",
+          "zh": "拍卖",
+          "note": "阴性名词，复数aste。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Per riportarla in Italia sono stati necessari il lavoro dei Carabinieri per la tutela del patrimonio culturale e la collaborazione delle autorità statunitensi.",
+      "zh": "为了将其带回意大利，负责文化遗产保护的宪兵开展了工作，并与美国当局合作。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Ma come è stato possibile capire da dove proveniva un documento che si trovava così lontano?",
+      "zh": "但是，一份文献已经远在异国，人们如何确定它来自哪里呢？",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Un inventario dell’Ottocento, insieme alle ricerche e alle pubblicazioni dell’archivista Giovanni Sforza, ha fornito elementi importanti per identificarlo.",
+      "zh": "一份十九世纪目录，加上档案学家乔瓦尼·斯福尔扎的研究和著述，为识别文献提供了重要线索。",
+      "glosses": [
+        {
+          "surface": "inventario",
+          "lemma": "inventario",
+          "zh": "目录/清册",
+          "note": "阳性名词，复数inventari。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Questi strumenti hanno permesso di ricostruire la provenienza della lettera e di collegarla al patrimonio documentario della Garfagnana.",
+      "zh": "这些工具使人们能够重建书信的来源，并将它与加尔法尼亚纳的文献遗产联系起来。",
+      "glosses": [
+        {
+          "surface": "provenienza",
+          "lemma": "provenienza",
+          "zh": "来源",
+          "note": "阴性名词。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Il recupero era già stato presentato a Roma il 30 aprile, mentre la cerimonia di ottobre ha segnato la restituzione ufficiale all’archivio.",
+      "zh": "找回文献的成果已于4月30日在罗马介绍，而10月的仪式标志着向档案馆正式归还。",
+      "glosses": [
+        {
+          "surface": "restituzione",
+          "lemma": "restituzione",
+          "zh": "归还",
+          "note": "阴性名词，复数restituzioni。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "A Massa erano presenti rappresentanti delle istituzioni, studiosi e studenti del territorio.",
+      "zh": "在马萨，机构代表、学者和当地学生出席了仪式。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Gli studenti del laboratorio teatrale del liceo classico P. Rossi hanno concluso l’incontro leggendo il testo originale della lettera.",
+      "zh": "P. Rossi古典高中戏剧工作坊的学生朗读信件原文，为活动收尾。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "La descrizione contenuta nei vecchi strumenti di ricerca non serviva dunque soltanto a organizzare le carte, ma anche a riconoscere il documento quando era lontano dall’archivio.",
+      "zh": "因此，旧检索工具里的描述不仅用于整理档案，也帮助人们在文献远离档案馆时认出它。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Il ritorno riunisce quindi la lettera con altri documenti conservati a Massa e rende nuovamente leggibile una parte della storia amministrativa locale.",
+      "zh": "因此，这次归还让书信重新与马萨保存的其他文献相聚，也让地方行政史的一部分能够再次被阅读。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "riconsegnata",
+        "lemma": "riconsegnare",
+        "zh": "交还的",
+        "note": "过去分词阴性单数，与lettera配合；essere stata riconsegnata为被动。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "governatore",
+        "lemma": "governatore",
+        "zh": "总督",
+        "note": "阳性名词，复数governatori。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "asta",
+        "lemma": "asta",
+        "zh": "拍卖",
+        "note": "阴性名词，复数aste。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "inventario",
+        "lemma": "inventario",
+        "zh": "目录/清册",
+        "note": "阳性名词，复数inventari。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "provenienza",
+        "lemma": "provenienza",
+        "zh": "来源",
+        "note": "阴性名词。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "restituzione",
+        "lemma": "restituzione",
+        "zh": "归还",
+        "note": "阴性名词，复数restituzioni。",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "poesia",
+        "lemma": "poesia",
+        "zh": "诗歌",
+        "note": "阴性名词；此处指诗歌这一文类。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "leggendo",
+        "lemma": "leggere",
+        "zh": "朗读着/通过朗读",
+        "note": "现在副动词，说明学生结束活动的方式。",
+        "sentenceId": "s12"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "prendere decisioni",
+        "zh": "作出决定",
+        "note": "prendere + decisioni。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "hanno permesso di",
+        "zh": "使得能够",
+        "note": "permettere di + 动词原形，主语为复数。",
+        "sentenceId": "s9"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "era già stato presentato与ha segnato对照：先前介绍找回成果，之后正式交还。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Perché un vecchio inventario può aiutare a ritrovare un documento?",
+        "zh": "为什么古老的目录也能帮助找回一份文献？",
+        "note": "教学讨论问题，不是新闻引语。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Questo documento permette di capire…",
+        "zh": "这份文献让人能够理解……",
+        "note": "教学补充，可用于口语讨论。"
+      }
+    ]
+  }
+}

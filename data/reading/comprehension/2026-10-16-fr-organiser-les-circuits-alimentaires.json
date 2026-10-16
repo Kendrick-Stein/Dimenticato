@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-16-fr-organiser-les-circuits-alimentaires",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Que mesure le chiffre de 52,2 % cité dans l’article ?",
+      "options": [
+        "La part des achats alimentaires réalisés auprès des fermes en 2024.",
+        "La part des fermes vendant sans intermédiaire en 2020.",
+        "La part des Français ayant acheté directement à un agriculteur en septembre 2024.",
+        "La part des projets territoriaux proposant un point de vente en août 2026."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "fr-organiser-les-circuits-alimentaires-09",
+        "fr-organiser-les-circuits-alimentaires-10"
+      ],
+      "explanationZh": "第9句给出购买者比例及日期；第10句明确排除食品采购份额与农场占比。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Que deviennent les organismes qui portaient les éditions précédentes ?",
+      "options": [
+        "Ils continuent de participer malgré le changement de pilotage.",
+        "Ils assurent désormais seuls la formation des consommateurs.",
+        "Ils remplacent les neuf structures de l’équipe d’animation.",
+        "Ils rejoignent uniquement les projets financés par l’Europe."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "fr-organiser-les-circuits-alimentaires-12",
+        "fr-organiser-les-circuits-alimentaires-13",
+        "fr-organiser-les-circuits-alimentaires-14"
+      ],
+      "explanationZh": "原组织继续参与；没有转为独自培训消费者、替代九家机构或只参加欧洲项目。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Quel rôle le texte attribue-t-il principalement au réseau ?",
+      "options": [
+        "Créer une chaîne de magasins gérée par les collectivités.",
+        "Fixer des objectifs de vente communs à toutes les fermes.",
+        "Remplacer les initiatives territoriales par une organisation nationale unique.",
+        "Relier les acteurs et les ressources pour soutenir les systèmes alimentaires locaux."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "fr-organiser-les-circuits-alimentaires-01",
+        "fr-organiser-les-circuits-alimentaires-04",
+        "fr-organiser-les-circuits-alimentaires-15",
+        "fr-organiser-les-circuits-alimentaires-17",
+        "fr-organiser-les-circuits-alimentaires-18"
+      ],
+      "explanationZh": "网络通过知识、工具、培训和协作支持地方体系；正文没有设立零售连锁、统一销量或取消地方倡议。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Un artisan qui cherche des ressources pour son activité correspond-il au public du réseau ?",
+      "options": [
+        "Oui, mais seulement après avoir rejoint l’équipe d’animation.",
+        "Oui, car des guides et des formations sont prévus pour les artisans.",
+        "Non, car les ressources sont réservées aux neuf partenaires.",
+        "Non, car le réseau s’adresse aux consommateurs individuels."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "fr-organiser-les-circuits-alimentaires-17",
+        "fr-organiser-les-circuits-alimentaires-19"
+      ],
+      "explanationZh": "第17句把artisans列为资源使用对象，正文没有要求先加入协调团队，也未限定为九家协调伙伴。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Quelle comparaison respecte les données présentées ?",
+      "options": [
+        "Comparer 19,8 % et 26,3 % pour suivre la part des exploitations vendant en circuits courts.",
+        "Comparer 26,3 % et 52,2 % pour calculer la hausse des ventes des fermes entre 2020 et 2024.",
+        "Comparer 109 215 et 450 pour mesurer la baisse du nombre de producteurs.",
+        "Comparer 37,2 % et 19,8 % pour évaluer la part des achats locaux en 2013."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "fr-organiser-les-circuits-alimentaires-06",
+        "fr-organiser-les-circuits-alimentaires-07",
+        "fr-organiser-les-circuits-alimentaires-08",
+        "fr-organiser-les-circuits-alimentaires-09",
+        "fr-organiser-les-circuits-alimentaires-10",
+        "fr-organiser-les-circuits-alimentaires-11"
+      ],
+      "explanationZh": "19.8%和26.3%对应同类农场指标的两个年份。其余选项混合农场、消费者、项目数量或不同口径，无法支持所声称的比较。"
+    }
+  ]
+}
