@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-en-earnse-bay-community-space",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Which description best brings together the purposes of the new building?",
+      "promptZh": "哪项最能综合概括新建筑的用途？",
+      "options": [
+        "A base for reserve research and school accommodation.",
+        "A centre for coastal tourism and visitor accommodation.",
+        "A centre for community events and contractor training.",
+        "A base for reserve management and community learning."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第3句明确管理基地和公众了解海岸两项用途，第8—9句补充社区学习活动；其余选项混入未提到的用途。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Which activity is included in the planned programme?",
+      "promptZh": "计划中包括哪项活动？",
+      "options": [
+        "Gardening for wildlife and growing food.",
+        "Growing food and training nature tour guides.",
+        "Training nature tour guides and restoring boats.",
+        "Restoring boats and gardening for wildlife."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "第9句同时列出种植食物及有利于野生生物的园艺；培训自然导览员与修复船只都未在计划中出现。每项都包含两个活动，须核对整个组合。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Why will people find part of the car park blocked off?",
+      "promptZh": "为什么人们会发现停车场的一部分被围挡？",
+      "options": [
+        "It is being used for the planned community events.",
+        "It is being closed as part of the construction period.",
+        "It is being turned into a wildlife-friendly garden.",
+        "It is being reserved for the first school programme."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第11—12句说明仍处施工阶段，施工期间部分停车场被围挡；不是已开放活动的停车安排。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Which access arrangements are described for the construction period?",
+      "promptZh": "文章如何描述施工期间的通行安排？",
+      "options": [
+        "The development site stays open, but the whole car park closes.",
+        "The development site closes, but the whole car park stays open.",
+        "The development site and part of the car park remain closed.",
+        "The development site and car park close only during school visits."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第12句明确区分两个范围：整个项目工地对公众关闭，公共停车场则只有一部分被围挡；第13句补充用标识引导安全通行。不是整个停车场关闭，也没有仅学校来访时关闭的限制。"
+    }
+  ]
+}

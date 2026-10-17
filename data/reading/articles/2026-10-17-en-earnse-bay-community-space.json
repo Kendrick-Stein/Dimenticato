@@ -1,0 +1,307 @@
+{
+  "schema": 1,
+  "id": "2026-10-17-en-earnse-bay-community-space",
+  "storyId": "natural-england-earnse-bay-community-space-2026-10-06",
+  "lang": "en",
+  "date": "2026-10-17",
+  "title": "A new community space beside the sea",
+  "titleZh": "海边的新社区空间",
+  "summaryZh": "Earnse Bay 海滩学校与工作基地开始建设，将兼顾自然保护管理、社区活动和户外学习。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：多个项目角色、时间层次与因果关系；包含被动语态、并列及目的表达，区分建设现状与未来用途。",
+  "source": {
+    "name": "Natural England",
+    "title": "Construction begins at Earnse Bay's coastal community hub",
+    "url": "https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub",
+    "publishedAt": "2026-10-06",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright / Natural England, 2026-10-06. Source: https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub.",
+  "adaptation": "基于 Natural England 英语机构原稿进行同语言分级改写，并由 Dimenticato 编辑加入逐句中文、词汇和练习；非逐字原文。未使用图片、标志、外部引语或媒体附件。不表示原机构认可本网站。原报道日期与整理日期分别保留。",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "社区空间",
+    "户外学习",
+    "海岸"
+  ],
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Work has begun on a Beach School and Work Base at Earnse Bay, near Barrow-in-Furness in Cumbria.",
+      "zh": "位于坎布里亚郡巴罗因弗内斯附近 Earnse Bay 的海滩学校与工作基地已开始建设。",
+      "glosses": [
+        {
+          "surface": "begun",
+          "lemma": "begin",
+          "zh": "开始"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Natural England reported on 6 October that the building contractor had arrived that week to start work on the ground.",
+      "zh": "Natural England 于10月6日报道，建筑承包商已在当周到达现场，开始地面施工。",
+      "glosses": [
+        {
+          "surface": "contractor",
+          "lemma": "contractor",
+          "zh": "承包商"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "The new building will have two connected roles: it will be a base for managing North Walney National Nature Reserve and a place where people can discover the coast.",
+      "zh": "新建筑将有两个相关用途：作为管理北沃尔尼国家自然保护区的基地，也为人们提供了解海岸的场所。",
+      "glosses": [
+        {
+          "surface": "managing",
+          "lemma": "manage",
+          "zh": "管理"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The reserve contains several different habitats, including sand dunes and saltmarsh, which support rare plants, birds and other wildlife.",
+      "zh": "保护区包含沙丘、盐沼等不同栖息地，为珍稀植物、鸟类和其他野生生物提供生存环境。",
+      "glosses": [
+        {
+          "surface": "habitats",
+          "lemma": "habitat",
+          "zh": "栖息地"
+        },
+        {
+          "surface": "saltmarsh",
+          "lemma": "saltmarsh",
+          "zh": "盐沼"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Nearby, Earnse Bay has wide sandy areas and a shore covered with small stones, valued by both residents and visitors.",
+      "zh": "附近的 Earnse Bay 拥有宽阔的沙地和铺满小石子的海岸，深受居民和游客珍视。",
+      "glosses": [
+        {
+          "surface": "residents",
+          "lemma": "resident",
+          "zh": "居民"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Defra is funding the £1.95 million building, which is intended to help protect the reserve while opening up opportunities to learn about it.",
+      "zh": "Defra 为这座耗资195万英镑的建筑提供资金，旨在帮助保护自然保护区，同时创造了解它的机会。",
+      "glosses": [
+        {
+          "surface": "funding",
+          "lemma": "fund",
+          "zh": "资助"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "It will house the Earnse Project, a partnership involving Natural England, the local council, Art Gene and Cumbria Wildlife Trust.",
+      "zh": "它将成为 Earnse Project 的所在地；这个合作项目由 Natural England、地方议会、Art Gene 和 Cumbria Wildlife Trust 共同参与。",
+      "glosses": [
+        {
+          "surface": "partnership",
+          "lemma": "partnership",
+          "zh": "合作关系；合作项目"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "The project aims to connect local communities with their natural heritage, improve wellbeing and encourage people to care for nature.",
+      "zh": "项目旨在让当地社区与自然遗产建立联系、增进身心福祉，并鼓励人们关爱自然。",
+      "glosses": [
+        {
+          "surface": "heritage",
+          "lemma": "heritage",
+          "zh": "遗产"
+        },
+        {
+          "surface": "wellbeing",
+          "lemma": "wellbeing",
+          "zh": "身心福祉"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Its planned programme brings together outdoor learning, volunteering, arts and cultural activities, growing food, and gardening that supports wildlife.",
+      "zh": "计划中的活动涵盖户外学习、志愿服务、艺术文化活动、种植食物，以及有利于野生生物的园艺。",
+      "glosses": [
+        {
+          "surface": "volunteering",
+          "lemma": "volunteer",
+          "zh": "志愿服务"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Staff, schools, volunteers and local groups will therefore share a facility with activities that go beyond traditional classroom lessons.",
+      "zh": "因此，工作人员、学校、志愿者和当地团体将共享一个设施，其活动不局限于传统课堂教学。",
+      "glosses": [
+        {
+          "surface": "facility",
+          "lemma": "facility",
+          "zh": "设施；场所"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "However, the news concerns the beginning of construction, rather than the opening of the completed centre, and gives no opening date.",
+      "zh": "不过，这则新闻报道的是开工，而不是建成后的中心开放，也没有给出开放日期。",
+      "glosses": [
+        {
+          "surface": "construction",
+          "lemma": "construction",
+          "zh": "建设；施工"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "During construction, the development site will stay closed to the public, and part of the public car park will also be blocked off.",
+      "zh": "施工期间，项目工地将继续对公众关闭，公共停车场的一部分也将被围挡。",
+      "glosses": [
+        {
+          "surface": "blocked off",
+          "lemma": "block off",
+          "zh": "封闭；围挡"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Signs will help people move around the area safely while this final phase of the wider Earnse Bay development takes place.",
+      "zh": "在整个 Earnse Bay 开发项目的最后阶段施工期间，标识将帮助人们安全通行。",
+      "glosses": [
+        {
+          "surface": "phase",
+          "lemma": "phase",
+          "zh": "阶段"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "The National Lottery Heritage Fund supports the partnership project, while the wider development also has funding from the Brilliant Barrow Town Deal.",
+      "zh": "National Lottery Heritage Fund 支持这一合作项目，而更广泛的开发项目还获得了 Brilliant Barrow Town Deal 的资金支持。",
+      "glosses": [
+        {
+          "surface": "supports",
+          "lemma": "support",
+          "zh": "支持"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "contractor",
+        "lemma": "contractor",
+        "zh": "承包商",
+        "sentenceId": "s2",
+        "note": "可数名词；building contractor 建筑承包商。"
+      },
+      {
+        "text": "residents",
+        "lemma": "resident",
+        "zh": "居民",
+        "sentenceId": "s5",
+        "note": "复数；resident 指居住在当地的人。"
+      },
+      {
+        "text": "funding",
+        "lemma": "fund",
+        "zh": "提供资金",
+        "sentenceId": "s6",
+        "note": "动词现在分词；is funding 表示正在资助。"
+      },
+      {
+        "text": "heritage",
+        "lemma": "heritage",
+        "zh": "遗产",
+        "sentenceId": "s8",
+        "note": "natural heritage 自然遗产。"
+      },
+      {
+        "text": "volunteering",
+        "lemma": "volunteer",
+        "zh": "志愿服务",
+        "sentenceId": "s9",
+        "note": "动名词，活动类别。"
+      },
+      {
+        "text": "facility",
+        "lemma": "facility",
+        "zh": "设施；场所",
+        "sentenceId": "s10",
+        "note": "本文指供多类人群使用的实体场所。"
+      },
+      {
+        "text": "construction",
+        "lemma": "construction",
+        "zh": "建设；施工",
+        "sentenceId": "s12",
+        "note": "名词；during construction 表示在施工期间，此义通常不可数。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "is intended to help",
+        "zh": "旨在帮助",
+        "sentenceId": "s6",
+        "note": "be intended to do 表示预期目的，并不保证效果。"
+      },
+      {
+        "text": "go beyond",
+        "zh": "超出；不局限于",
+        "sentenceId": "s10",
+        "note": "搭配名词，本文说明活动不止课堂授课。"
+      },
+      {
+        "text": "closed to the public",
+        "zh": "不对公众开放",
+        "sentenceId": "s12",
+        "note": "closed to 表示对某群体关闭。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "which 引导非限定性定语从句，补充说明这座建筑的目的；is intended to 表示“旨在”，while opening up 并列说明同时创造学习机会，不表示已经产生了成效。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which planned activity would help your community connect with nature, and why?",
+        "zh": "哪项计划中的活动能帮助你的社区亲近自然？为什么？",
+        "note": "教学补充，依据本文讨论，不是新闻引语。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "The project aims to ..., while ...",
+        "zh": "项目旨在……，与此同时……",
+        "note": "原创教学表达：区分项目预期用途与当前施工阶段，不将计划说成已经实现。"
+      }
+    ]
+  }
+}

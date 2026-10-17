@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-en-a-surprise-on-the-beach",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Why was the camera originally placed at the reserve?",
+      "promptZh": "保护区最初为什么放置这台摄像机？",
+      "options": [
+        "To find out where martens built their nests.",
+        "To count people visiting the beach each day.",
+        "To record animals and disturbance affecting birds.",
+        "To compare bird numbers in England and Wales."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2"
+      ],
+      "explanationZh": "第2句说明原目的是观察捕食鸟类的动物及干扰因素，并非专门寻找或比较貂。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "According to the article, why did pine marten numbers fall?",
+      "promptZh": "根据文章，松貂数量为什么下降？",
+      "options": [
+        "They lost habitat and were hunted by people.",
+        "They moved away when coastal bird numbers grew.",
+        "They faced more predators in their remaining habitat.",
+        "They lost food because fewer birds nested nearby."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "第6句给出栖息地丧失和人类捕猎两个原因。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "What can the reader say about the filmed animal?",
+      "promptZh": "读者能对拍到的动物作出什么判断？",
+      "options": [
+        "The video shows a pine marten living with its young.",
+        "The animal could be a pine marten or a beech marten.",
+        "The camera recorded both a pine marten and a beech marten.",
+        "The animal is a beech marten returning to its nest."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "第3—4句保留松貂和石貂两种可能，尚未确认，不能凭大小作确定判断。"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-it-prezzi-settembre",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quale confronto tra i tassi annui di agosto e settembre è riportato nel testo?",
+      "options": [
+        "Il NIC passa dal 3,3% al 4,2%, mentre l’inflazione di fondo passa dall’1,6% all’1,5%.",
+        "Il NIC passa dal 3,3% al 4,2%, mentre l’inflazione di fondo passa dall’1,5% all’1,6%.",
+        "Il NIC passa dal 4,2% al 3,3%, mentre l’inflazione di fondo passa dall’1,5% all’1,6%.",
+        "Il NIC passa dal 4,2% al 3,3%, mentre l’inflazione di fondo passa dall’1,6% all’1,5%."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s4",
+        "s9"
+      ],
+      "explanationZh": "NIC同比涨幅从8月3.3%升至9月4.2%；核心通胀从1.5%升至1.6%。两者均上升，另外三项颠倒了至少一个指标的变化方向。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa è successo ai servizi di trasporto a settembre?",
+      "options": [
+        "Sono aumentati sul mese e diminuiti sull’anno.",
+        "Sono diminuiti sul mese e rimasti stabili sull’anno.",
+        "Sono aumentati sia sul mese sia sull’anno.",
+        "Sono diminuiti sul mese e aumentati sull’anno."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "运输服务环比下降2.5%，同比上涨1.6%，两个比较口径不同。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Quale fattore contribuisce al diverso aumento mensile dell’IPCA rispetto al NIC?",
+      "options": [
+        "La conclusione dei saldi estivi.",
+        "La crescita della spesa delle famiglie.",
+        "La diminuzione dei servizi culturali.",
+        "L’esclusione degli alimenti freschi."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "原文明确指出IPCA计入夏季折扣结束的影响，NIC不考虑这一因素；其他选项不是该差异的解释。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Nel confronto del terzo trimestre, quale gruppo registra l’aumento più alto?",
+      "options": [
+        "Le famiglie che comprano servizi culturali.",
+        "Le famiglie con livelli di spesa elevati.",
+        "Le famiglie con livelli di spesa bassi.",
+        "Le famiglie che usano servizi di trasporto."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "第三季度按IPCA衡量，低支出家庭涨幅4.4%，高支出家庭2.9%；未给出按文化或交通消费划分的家庭涨幅。"
+    }
+  ]
+}

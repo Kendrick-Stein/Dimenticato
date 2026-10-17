@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checkedAt": "2026-10-14",
+  "checkedAt": "2026-10-17",
   "policy": "Candidate list only, not blanket republication permission. Independently select a different original-language institutional source/article for IT, FR, DE and EN. Confirm article ownership, adaptation/translation/publication rights, exclusions, attribution, source language provenance and date for every edition. Never fill language slots by translating a common article. If evidence or rights are insufficient, skip that language/day. Text only; no images/logos/third-party quotations without separate clearance; never bypass access restrictions.",
   "sources": [
     {
@@ -469,6 +469,45 @@
       "conditions": "Verify HMRC From metadata, original date, OGL footer and article exclusions. Adapt institutional prose only; exclude images/logos/quotes/personal cases. Credit Crown/HMRC/source/date/licence and modifications; no endorsement. Preserve eligibility limits and statistics period; not personalised tax advice.",
       "nativeLanguageCaution": "Institutional English original inference; inspect translation links and third-party credits per article.",
       "checkedAt": "2026-10-16"
+    },
+    {
+      "id": "govuk-natural-england-english",
+      "name": "Natural England — nature and communities",
+      "url": "https://www.gov.uk/government/organisations/natural-england",
+      "languages": [
+        "en"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "requiredPublisherNames": [
+        "Natural England"
+      ],
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "license": "Open Government Licence v3.0 except identified exclusions",
+      "articleReviewRequired": true,
+      "conditions": "Verify article From field names Natural England, original date, OGL footer and individual exclusions. Reuse institutional narrative only; exclude photos, logos, media, external quotations and linked third-party works. Attribute Natural England/Crown/source/date/licence and identify adaptation and Chinese translation. Do not imply endorsement or turn uncertain sightings or planned projects into established outcomes.",
+      "nativeLanguageCaution": "Institutional English original inference, not certification of earliest drafting language or author native tongue; inspect translators and third-party credits.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "oerinfo-german-articles",
+      "name": "OERinfo – Die Informationsstelle OER",
+      "url": "https://open-educational-resources.de/",
+      "languages": [
+        "de"
+      ],
+      "license": "Article-specific CC BY 4.0 where explicitly stated; not a blanket site permission",
+      "licenseEvidence": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
+      "conditions": "Check each article byline and explicit text license. Preserve specified attribution, source and license links and modification notice. Exclude images, logos, comments and linked third-party material unless separately cleared.",
+      "nativeLanguageCaution": "Verify a signed original German contribution commissioned for OERinfo, and check for translator/reprint notices. Language code alone is insufficient; German publication provenance does not certify the author’s native tongue or first drafting language.",
+      "allowedUrlPrefixes": [
+        "https://open-educational-resources.de/"
+      ],
+      "rightsPolicyUrl": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
+      "articleReviewRequired": true
     }
   ],
   "archiveOnly": {

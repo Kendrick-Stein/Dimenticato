@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-fr-acceder-aux-metiers-culturels",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "fr-culture-handicap-02",
+      "start": 126,
+      "answer": "parcours",
+      "options": [
+        "parcours",
+        "spectacles",
+        "budgets",
+        "transports"
+      ],
+      "explanation": "中文“职业发展历程”对应parcours professionnels；parcours单复数拼写相同。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "fr-culture-handicap-03",
+      "start": 78,
+      "answer": "recrutement",
+      "options": [
+        "logement",
+        "recrutement",
+        "financement",
+        "patrimoine"
+      ],
+      "explanation": "培训、招聘和工作条件是原句列出的三个阶段/方面；recrutement指招聘。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "fr-culture-handicap-07",
+      "start": 101,
+      "answer": "salariés",
+      "options": [
+        "visiteurs",
+        "bénévoles",
+        "salariés",
+        "spectateurs"
+      ],
+      "explanation": "salariés是受雇员工，与中文“雇员”对应，不是观众或志愿者。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "fr-culture-handicap-11",
+      "start": 20,
+      "answer": "renoncé",
+      "options": [
+        "participé",
+        "accédé",
+        "répondu",
+        "renoncé"
+      ],
+      "explanation": "renoncer à意为放弃，复合过去时为ont renoncé；其他选项与中文句意不符。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "fr-culture-handicap-12",
+      "start": 80,
+      "answer": "aménagements",
+      "options": [
+        "aménagements",
+        "spectacles",
+        "recrutements",
+        "voyages"
+      ],
+      "explanation": "这里的aménagements指针对需要提供的适应性安排；不是演出、招聘或旅行。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-de-lernmaterialien-mit-ki",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 119,
+      "answer": "beruhen",
+      "options": [
+        "verzichten",
+        "warten",
+        "beruhen",
+        "hoffen"
+      ],
+      "explanation": "beruhen auf + Dativ 表示“基于”，与中文“来自人的劳动”对应。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s4",
+      "start": 80,
+      "answer": "Bestandteile",
+      "options": [
+        "Bestandteile",
+        "Zeiträume",
+        "Standorte",
+        "Absichten"
+      ],
+      "explanation": "Bestandteile 是可拆分材料的“组成部分”；其余为时间段、地点、意图。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s12",
+      "start": 134,
+      "answer": "gesondert",
+      "options": [
+        "zufällig",
+        "rückwirkend",
+        "allmählich",
+        "gesondert"
+      ],
+      "explanation": "gesondert 表示“单独地”，呼应将人工智能部分独立标出。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s19",
+      "start": 43,
+      "answer": "Transparenz",
+      "options": [
+        "Konkurrenz",
+        "Transparenz",
+        "Geduld",
+        "Entfernung"
+      ],
+      "explanation": "Transparenz 指来源透明，与后文向使用者说明制作过程一致。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s24",
+      "start": 97,
+      "answer": "Weiterverwendung",
+      "options": [
+        "Unterbrechung",
+        "Benachteiligung",
+        "Weiterverwendung",
+        "Vorauszahlung"
+      ],
+      "explanation": "Weiterverwendung 是“继续利用”，这里讨论许可允许的再次使用。"
+    }
+  ]
+}

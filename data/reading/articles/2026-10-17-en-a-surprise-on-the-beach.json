@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "id": "2026-10-17-en-a-surprise-on-the-beach",
+  "storyId": "natural-england-a-surprise-on-the-beach-2026-10-07",
+  "lang": "en",
+  "date": "2026-10-17",
+  "title": "A surprise on the beach",
+  "titleZh": "海滩上的意外发现",
+  "summaryZh": "保护区摄像机拍到了疑似松貂的动物，但种类尚未确认。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2：短句、一般过去时与将来时；用 may/could 保留物种判断的不确定性，专业词有中文辅助。",
+  "source": {
+    "name": "Natural England",
+    "title": "Pine marten caught on camera in Suffolk nature reserve 'first'",
+    "url": "https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first",
+    "publishedAt": "2026-10-07",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright / Natural England, 2026-10-07. Source: https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first.",
+  "adaptation": "基于 Natural England 英语机构原稿进行同语言分级改写，并由 Dimenticato 编辑加入逐句中文、词汇和练习；非逐字原文。未使用图片、标志、外部引语或媒体附件。不表示原机构认可本网站。原报道日期与整理日期分别保留。",
+  "contentType": "native-adaptation",
+  "category": "environment",
+  "topics": [
+    "野生动物",
+    "自然观察"
+  ],
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A camera at Benacre National Nature Reserve in Suffolk has recorded an unusual visitor on the beach.",
+      "zh": "英国萨福克郡贝纳克国家自然保护区的一台摄像机记录下了一位不寻常的海滩访客。",
+      "glosses": [
+        {
+          "surface": "recorded",
+          "lemma": "record",
+          "zh": "记录"
+        },
+        {
+          "surface": "unusual",
+          "lemma": "unusual",
+          "zh": "不寻常的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Staff put the camera there to watch animals that hunt birds and to understand what disturbs the birds.",
+      "zh": "工作人员在那里安装摄像机，是为了观察捕食鸟类的动物，并了解哪些因素会干扰鸟类。",
+      "glosses": [
+        {
+          "surface": "disturbs",
+          "lemma": "disturb",
+          "zh": "干扰"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "The animal in the video may be a pine marten, but its species is not confirmed.",
+      "zh": "视频中的动物可能是一只松貂，但其种类还没有得到确认。",
+      "glosses": [
+        {
+          "surface": "species",
+          "lemma": "species",
+          "zh": "物种"
+        },
+        {
+          "surface": "confirmed",
+          "lemma": "confirm",
+          "zh": "确认"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "It could also be a beech marten, which looks very similar.",
+      "zh": "它也可能是一只石貂，两者外形非常相似。",
+      "glosses": [
+        {
+          "surface": "similar",
+          "lemma": "similar",
+          "zh": "相似的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Pine martens are about the size of a cat and are related to weasels and stoats.",
+      "zh": "松貂的大小与猫相近，与鼬和白鼬有亲缘关系。",
+      "glosses": [
+        {
+          "surface": "related",
+          "lemma": "relate",
+          "zh": "有亲缘关系的"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "They were once common across Britain, but their numbers fell because they lost habitat and people hunted them.",
+      "zh": "它们曾经广泛分布于英国，但由于栖息地丧失以及人类捕猎，数量下降了。",
+      "glosses": [
+        {
+          "surface": "habitat",
+          "lemma": "habitat",
+          "zh": "栖息地"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Today, they are rare in England; most live in Scotland and parts of Wales.",
+      "zh": "如今它们在英格兰很少见，主要分布在苏格兰及威尔士部分地区。",
+      "glosses": [
+        {
+          "surface": "rare",
+          "lemma": "rare",
+          "zh": "少见的"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "The reserve is also important for birds: more than one hundred species breed there.",
+      "zh": "这个保护区对鸟类也很重要：超过一百种鸟类在那里繁殖。",
+      "glosses": [
+        {
+          "surface": "breed",
+          "lemma": "breed",
+          "zh": "繁殖"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The cameras will continue to collect information about animals and disturbance at the site.",
+      "zh": "这些摄像机将继续收集有关当地动物和干扰因素的信息。",
+      "glosses": [
+        {
+          "surface": "collect",
+          "lemma": "collect",
+          "zh": "收集"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "This work will help staff protect birds that build their nests on the ground during the breeding season.",
+      "zh": "这项工作将帮助工作人员在繁殖季保护那些在地面筑巢的鸟类。",
+      "glosses": [
+        {
+          "surface": "nests",
+          "lemma": "nest",
+          "zh": "巢"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "recorded",
+        "lemma": "record",
+        "zh": "记录",
+        "sentenceId": "s1",
+        "note": "动词过去分词；has recorded 构成现在完成时。"
+      },
+      {
+        "text": "species",
+        "lemma": "species",
+        "zh": "物种",
+        "sentenceId": "s3",
+        "note": "名词，单复数同形。"
+      },
+      {
+        "text": "similar",
+        "lemma": "similar",
+        "zh": "相似的",
+        "sentenceId": "s4",
+        "note": "形容词；similar to 表示与……相似。"
+      },
+      {
+        "text": "habitat",
+        "lemma": "habitat",
+        "zh": "栖息地",
+        "sentenceId": "s6",
+        "note": "名词；复数 habitats。"
+      },
+      {
+        "text": "breed",
+        "lemma": "breed",
+        "zh": "繁殖",
+        "sentenceId": "s8",
+        "note": "动词；过去式和过去分词 bred。"
+      },
+      {
+        "text": "nests",
+        "lemma": "nest",
+        "zh": "巢",
+        "sentenceId": "s10",
+        "note": "名词复数；单数 nest。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "is not confirmed",
+        "zh": "尚未得到确认",
+        "sentenceId": "s3",
+        "note": "一般现在时被动语态，避免把猜测当作事实。"
+      },
+      {
+        "text": "because they lost habitat",
+        "zh": "因为它们失去了栖息地",
+        "sentenceId": "s6",
+        "note": "because 引导原因。"
+      },
+      {
+        "text": "on the ground",
+        "zh": "在地面上",
+        "sentenceId": "s10",
+        "note": "介词短语，说明筑巢位置。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "may be 表示“可能是”；is not confirmed 是被动语态，强调鉴定尚未完成。下一句 could also be 补充另一种可能，不能复述成已经确认为松貂。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Why is it important to say that the animal is not yet identified?",
+        "zh": "为什么需要说明动物的种类尚未确认？",
+        "note": "教学补充，依据本文讨论，不是新闻引语。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "It may be ..., but ...",
+        "zh": "它可能是……，但……",
+        "note": "原创教学表达：用may保留可能性，并用but补充尚未确定的限制。"
+      }
+    ]
+  }
+}
