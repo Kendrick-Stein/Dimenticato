@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-it-prezzi-settembre",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 48,
+      "answer": "definitivi",
+      "options": [
+        "definitivi",
+        "provvisori",
+        "mensili",
+        "annuali"
+      ],
+      "explanation": "最终的。形容词阳性复数，修饰dati。 请结合该句中文与原文语义。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 25,
+      "answer": "precedente",
+      "options": [
+        "successivo",
+        "seguente",
+        "attuale",
+        "precedente"
+      ],
+      "explanation": "先前的。形容词，此处修饰mese。 请结合该句中文与原文语义。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 24,
+      "answer": "accelerazione",
+      "options": [
+        "stabilità",
+        "flessione",
+        "accelerazione",
+        "riduzione"
+      ],
+      "explanation": "加速。阴性名词；此处指通胀加速。 请结合该句中文与原文语义。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 131,
+      "answer": "lavorati",
+      "options": [
+        "importati",
+        "lavorati",
+        "freschi",
+        "congelati"
+      ],
+      "explanation": "加工过的。过去分词作形容词，阳性复数。 请结合该句中文与原文语义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 51,
+      "answer": "esclude",
+      "options": [
+        "esclude",
+        "include",
+        "misura",
+        "confronta"
+      ],
+      "explanation": "排除。动词直陈式现在时第三人称单数。 请结合该句中文与原文语义。"
+    }
+  ]
+}

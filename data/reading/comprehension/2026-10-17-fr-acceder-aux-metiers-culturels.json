@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-fr-acceder-aux-metiers-culturels",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quel groupe correspond au chiffre d’environ 5,5 % ?",
+      "options": [
+        "Les étudiants qui connaissent les aménagements proposés.",
+        "Les agents du ministère de la Culture et de ses opérateurs.",
+        "Les salariés des entreprises culturelles privées d’au moins vingt salariés.",
+        "Les intermittents du spectacle mentionnés dans le rapport."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "fr-culture-handicap-06",
+        "fr-culture-handicap-07",
+        "fr-culture-handicap-08",
+        "fr-culture-handicap-12"
+      ],
+      "explanationZh": "约5.5%明确对应文化部及其所属机构人员中的残障人士比例；私营文化企业低于3%，演艺间歇性从业者为1%至1.5%，清楚了解院校安排的受访学生为9%。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Que savaient clairement les 9 % d’étudiants mentionnés dans l’article ?",
+      "options": [
+        "Les conditions pour obtenir un emploi culturel.",
+        "Les dates de leurs prochains voyages pédagogiques.",
+        "Les adaptations proposées par leur établissement.",
+        "Les résultats des dix-sept recommandations."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "fr-culture-handicap-12"
+      ],
+      "explanationZh": "第12句指出，申请时清楚了解的是院校提供的aménagements，即适应性安排；并非工作条件、旅行日期或建议实施结果。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Quel résumé réunit les deux principaux constats présentés dans le texte ?",
+      "options": [
+        "Des écarts entre secteurs culturels et des obstacles dans les parcours étudiants motivent des recommandations.",
+        "Des différences entre établissements et des dépenses de transport motivent une réforme du financement étudiant.",
+        "Des difficultés de recrutement et des résultats de formation montrent les effets des recommandations appliquées.",
+        "Des choix de métiers et des différences de salaire expliquent la mobilité des étudiants vers le secteur privé."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "fr-culture-handicap-03",
+        "fr-culture-handicap-04",
+        "fr-culture-handicap-05",
+        "fr-culture-handicap-10",
+        "fr-culture-handicap-11",
+        "fr-culture-handicap-13",
+        "fr-culture-handicap-14"
+      ],
+      "explanationZh": "正文一部分比较不同文化就业群体的比例，另一部分介绍受访学生在课程选择和活动参与方面遇到的障碍；报告因此提出建议。没有分析交通开支与融资改革、实施后的效果，也没有讨论工资和流向私营部门的问题。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Quelle lecture des chiffres de 74 % et de 52 % respecte le texte ?",
+      "options": [
+        "Ils indiquent une amélioration de l’accessibilité entre deux périodes étudiées.",
+        "Ils mesurent deux groupes d’étudiants ayant quitté leur formation supérieure.",
+        "Ils comparent les difficultés rencontrées dans deux secteurs professionnels différents.",
+        "Ils concernent des renoncements à deux types d’activités de la vie étudiante."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "fr-culture-handicap-10",
+        "fr-culture-handicap-13",
+        "fr-culture-handicap-14"
+      ],
+      "explanationZh": "74%对应放弃学生活动，52%对应放弃教学旅行。它们描述受访学生在不同活动上的经历，不能当作时间变化、退学比例或两个就业部门。"
+    }
+  ]
+}

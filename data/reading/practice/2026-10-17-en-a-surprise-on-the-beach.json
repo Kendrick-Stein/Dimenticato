@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-en-a-surprise-on-the-beach",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 59,
+      "answer": "recorded",
+      "options": [
+        "recorded",
+        "repaired",
+        "invited",
+        "borrowed"
+      ],
+      "explanation": "句意为摄像机“记录下”访客；has recorded 是现在完成时。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 54,
+      "answer": "species",
+      "options": [
+        "ticket",
+        "species",
+        "recipe",
+        "weather"
+      ],
+      "explanation": "句意是动物的“物种”未确认；species 单复数同形。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s4",
+      "start": 50,
+      "answer": "similar",
+      "options": [
+        "delicious",
+        "expensive",
+        "similar",
+        "empty"
+      ],
+      "explanation": "两种动物外形“相似”；look similar。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 79,
+      "answer": "habitat",
+      "options": [
+        "homework",
+        "luggage",
+        "furniture",
+        "habitat"
+      ],
+      "explanation": "数量减少的原因之一是失去“栖息地”。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s8",
+      "start": 71,
+      "answer": "breed",
+      "options": [
+        "breed",
+        "translate",
+        "retire",
+        "apologise"
+      ],
+      "explanation": "鸟类在保护区“繁殖”；此处主语为复数 species。"
+    }
+  ]
+}

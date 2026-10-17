@@ -1,0 +1,260 @@
+{
+  "schema": 1,
+  "id": "2026-10-17-fr-acceder-aux-metiers-culturels",
+  "storyId": "fr-culture-handicap-employment-2026-09-09",
+  "lang": "fr",
+  "date": "2026-10-17",
+  "contentType": "native-adaptation",
+  "title": "Accéder aux métiers culturels : des obstacles à plusieurs étapes",
+  "titleZh": "进入文化职业：多个阶段的障碍",
+  "summaryZh": "文化部介绍17项建议，并列出文化行业就业及受访学生遇到的障碍；建议不等于已落实，调查数字不代表所有学生。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：比较不同统计群体，理解比例、范围限制与因果连接；配有逐句中文辅助。等级不是认证结果。",
+  "category": "work-economy",
+  "topics": [
+    "文化就业",
+    "无障碍",
+    "教育机会"
+  ],
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Culture et handicap : 17 recommandations pour l’accès à l’emploi",
+    "url": "https://www.culture.gouv.fr/actualites/culture-et-handicap-17-recommandations-pour-l-acces-a-l-emploi",
+    "publishedAt": "2026-09-09",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 France",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+    "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+  },
+  "attribution": "来源：法国文化部，Culture et handicap : 17 recommandations pour l’accès à l’emploi，2026-09-09。原网页未列个人撰稿者，Laetitia Bernard为报告作者及受访者，不冒称网页作者。根据文化部法律声明 §4.3.1(a)，机构文字采用CC BY-SA 3.0 France。仅改写机构叙述与机构列出的统计栏目；不使用受访者回答、AFP图片、商标及外部报告。",
+  "adaptation": "2026-10-17整理：法语同语言B1分级改写及中文翻译，非原文逐字转载；原报道距整理38天，采用90天回退材料，不称当天新闻。改写、译文和教学补充以CC BY-SA 3.0 France提供，保留署名、来源及修改说明。统计适用范围和建议尚非实施结果的提示为基于原文的编辑说明，不代表机构背书。",
+  "sentences": [
+    {
+      "id": "fr-culture-handicap-01",
+      "text": "Le 9 septembre 2026, le ministère français de la Culture a présenté un rapport sur la place des personnes en situation de handicap dans les métiers culturels.",
+      "zh": "2026年9月9日，法国文化部介绍了一份关于残障人士在文化职业中所处状况的报告。",
+      "glosses": []
+    },
+    {
+      "id": "fr-culture-handicap-02",
+      "text": "La journaliste Laetitia Bernard, chargée de cette mission par la ministre, y examine les difficultés rencontrées au cours des parcours professionnels.",
+      "zh": "记者Laetitia Bernard受部长委托开展这项工作，考察人们在职业发展过程中遇到的困难。",
+      "glosses": [
+        {
+          "surface": "parcours",
+          "lemma": "parcours",
+          "zh": "un parcours（阳性；复数同形）：这里指职业发展历程"
+        }
+      ]
+    },
+    {
+      "id": "fr-culture-handicap-03",
+      "text": "Le document propose dix-sept recommandations, qui concernent la formation, le recrutement et les conditions de travail.",
+      "zh": "这份文件提出17项建议，涉及培训、招聘及工作条件。",
+      "glosses": [
+        {
+          "surface": "recrutement",
+          "lemma": "recrutement",
+          "zh": "le recrutement（阳性）：招聘"
+        }
+      ]
+    },
+    {
+      "id": "fr-culture-handicap-04",
+      "text": "Il présente donc des pistes pour améliorer la situation, et non le bilan de mesures déjà réalisées.",
+      "zh": "因此，它提出的是改善状况的方向，而不是已经落实措施的成果总结。",
+      "glosses": []
+    },
+    {
+      "id": "fr-culture-handicap-05",
+      "text": "Les chiffres présentés par le ministère montrent des différences importantes entre les secteurs étudiés.",
+      "zh": "文化部列出的数字显示，所研究的不同部门之间存在明显差异。",
+      "glosses": []
+    },
+    {
+      "id": "fr-culture-handicap-06",
+      "text": "Les personnes en situation de handicap représentent environ 5,5 % des effectifs du ministère et de ses opérateurs.",
+      "zh": "残障人士约占文化部及其所属机构人员总数的5.5%。",
+      "glosses": []
+    },
+    {
+      "id": "fr-culture-handicap-07",
+      "text": "Cette part est inférieure à 3 % dans les entreprises culturelles privées qui comptent au moins vingt salariés.",
+      "zh": "在雇员不少于20人的私营文化企业中，这一比例低于3%。",
+      "glosses": [
+        {
+          "surface": "salariés",
+          "lemma": "salarié",
+          "zh": "un salarié / une salariée：受雇员工；此处为阳性复数泛指员工"
+        }
+      ]
+    },
+    {
+      "id": "fr-culture-handicap-08",
+      "text": "Elle se situe entre 1 et 1,5 % parmi les intermittents du spectacle, une autre catégorie professionnelle présentée dans ce rapport.",
+      "zh": "在演艺行业间歇性从业者这一报告中提到的另一职业类别中，该比例介于1%至1.5%。",
+      "glosses": []
+    },
+    {
+      "id": "fr-culture-handicap-09",
+      "text": "Ces pourcentages concernent des groupes différents : ils ne décrivent pas une seule entreprise ni une évolution dans le temps.",
+      "zh": "这些比例涉及不同群体，并不是描述同一家企业，也不是描述随时间发生的变化。",
+      "glosses": []
+    },
+    {
+      "id": "fr-culture-handicap-10",
+      "text": "L’article donne aussi des informations sur les étudiants en situation de handicap qui ont été interrogés.",
+      "zh": "文章还提供了关于接受调查的残障学生的信息。",
+      "glosses": []
+    },
+    {
+      "id": "fr-culture-handicap-11",
+      "text": "Parmi eux, 32 % ont renoncé à une ou plusieurs formations supérieures à cause de leur handicap.",
+      "zh": "在他们当中，32%因自身残障情况而放弃过一项或多项高等教育课程。",
+      "glosses": [
+        {
+          "surface": "renoncé",
+          "lemma": "renoncer",
+          "zh": "renoncer à：放弃；此处为复合过去时过去分词"
+        }
+      ]
+    },
+    {
+      "id": "fr-culture-handicap-12",
+      "text": "Au moment de présenter leur candidature, seuls 9 % connaissaient clairement les aménagements proposés par leur établissement.",
+      "zh": "申请时，只有9%清楚了解所在院校提供的适应性安排。",
+      "glosses": [
+        {
+          "surface": "aménagements",
+          "lemma": "aménagement",
+          "zh": "un aménagement（阳性）：这里指为适应残障需要提供的安排"
+        }
+      ]
+    },
+    {
+      "id": "fr-culture-handicap-13",
+      "text": "Les obstacles touchent également la participation à la vie étudiante, au-delà du choix d’une formation.",
+      "zh": "除了选择课程之外，障碍也影响到参与学生生活。",
+      "glosses": []
+    },
+    {
+      "id": "fr-culture-handicap-14",
+      "text": "Pour des raisons d’accessibilité, 74 % ont renoncé à un événement étudiant et 52 % à un voyage pédagogique.",
+      "zh": "出于无障碍条件方面的原因，74%放弃过学生活动，52%放弃过教学旅行。",
+      "glosses": [
+        {
+          "surface": "accessibilité",
+          "lemma": "accessibilité",
+          "zh": "l’accessibilité（阴性）：无障碍可达性"
+        }
+      ]
+    },
+    {
+      "id": "fr-culture-handicap-15",
+      "text": "Ces résultats portent sur les personnes interrogées ; l’article ne précise pas comment elles ont été sélectionnées.",
+      "zh": "这些结果针对受访者；文章没有说明他们是如何被选取的。",
+      "glosses": []
+    },
+    {
+      "id": "fr-culture-handicap-16",
+      "text": "Ils ne permettent donc pas, à eux seuls, de connaître la situation de tous les étudiants handicapés en France.",
+      "zh": "因此，仅凭这些结果，无法了解法国所有残障学生的状况。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "parcours",
+        "lemma": "parcours",
+        "zh": "un parcours（阳性；复数同形）：这里指职业发展历程",
+        "sentenceId": "fr-culture-handicap-02"
+      },
+      {
+        "text": "recrutement",
+        "lemma": "recrutement",
+        "zh": "le recrutement（阳性）：招聘",
+        "sentenceId": "fr-culture-handicap-03"
+      },
+      {
+        "text": "salariés",
+        "lemma": "salarié",
+        "zh": "un salarié / une salariée：受雇员工；此处为阳性复数泛指员工",
+        "sentenceId": "fr-culture-handicap-07"
+      },
+      {
+        "text": "renoncé",
+        "lemma": "renoncer",
+        "zh": "renoncer à：放弃；此处为复合过去时过去分词",
+        "sentenceId": "fr-culture-handicap-11"
+      },
+      {
+        "text": "aménagements",
+        "lemma": "aménagement",
+        "zh": "un aménagement（阳性）：这里指为适应残障需要提供的安排",
+        "sentenceId": "fr-culture-handicap-12"
+      },
+      {
+        "text": "accessibilité",
+        "lemma": "accessibilité",
+        "zh": "l’accessibilité（阴性）：无障碍可达性",
+        "sentenceId": "fr-culture-handicap-14"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "au cours des",
+        "zh": "在……过程中；au cours de后接复数定冠词les时缩合为des。",
+        "sentenceId": "fr-culture-handicap-02"
+      },
+      {
+        "text": "au moins",
+        "zh": "至少；设置一个下限。",
+        "sentenceId": "fr-culture-handicap-07"
+      },
+      {
+        "text": "à cause de",
+        "zh": "由于；此处引出放弃课程的原因。",
+        "sentenceId": "fr-culture-handicap-11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "fr-culture-handicap-09",
+        "note": "ne…pas…ni…把两种可能的误读一起排除：不是同一企业，也不是时间趋势。"
+      },
+      {
+        "sentenceId": "fr-culture-handicap-15",
+        "note": "porter sur表示“涉及、针对”；comment引导间接疑问，提醒调查样本的范围。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pourquoi faut-il distinguer les différents groupes quand on compare ces pourcentages ?",
+        "zh": "比较这些比例时，为什么必须区分不同群体？",
+        "note": "原创教学讨论，不是新闻引语。"
+      },
+      {
+        "text": "Quelles informations sur les aménagements aimeriez-vous trouver avant de choisir une formation ?",
+        "zh": "选择课程之前，你希望了解到哪些适应性安排的信息？",
+        "note": "原创教学讨论，不推定你本人的健康状况。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ces résultats portent sur…",
+        "zh": "这些结果针对……",
+        "note": "原创教学句式，用来限定统计适用范围。"
+      },
+      {
+        "text": "Il faudrait mieux informer les candidats sur…",
+        "zh": "应该更充分地向申请者介绍……",
+        "note": "原创教学建议表达，不是原报道中的政策决定。"
+      }
+    ]
+  }
+}

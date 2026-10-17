@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-de-lernmaterialien-mit-ki",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welche Verbindung stellt der Text zwischen der Einordnung von Materialien und ihrer Weitergabe her?",
+      "options": [
+        "Ein einheitliches Format erleichtert vor allem den Vergleich verschiedener KI-Programme.",
+        "Die menschliche Arbeit sollte vor allem anhand der veröffentlichten Prompts bewertet werden.",
+        "Die Art der Mischung beeinflusst Rechtehinweise und die Darstellung ihrer Entstehung.",
+        "Die Qualität der Bilder entscheidet über die passende Lizenz des gesamten Beitrags."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4",
+        "s7",
+        "s24"
+      ],
+      "explanationZh": "全文从混合形式出发，分别讨论许可指向及制作过程透明；并非比较软件、以提示词评定创作或以图片质量决定许可。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Worin unterscheiden sich die beiden Beispiele am Anfang?",
+      "options": [
+        "Im ersten Fall sind Bild und Text getrennt, im zweiten betreffen beide Herstellungsweisen denselben Text.",
+        "Im ersten Fall wird ein vorhandenes Bild verändert, im zweiten wird ein unverändertes Bild ergänzt.",
+        "Im ersten Fall dient KI der Textkorrektur, im zweiten wird sie zur Gestaltung der Überschrift eingesetzt.",
+        "Im ersten Fall erscheint der Text online, im zweiten wird er für ein gedrucktes Lehrbuch erstellt."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "第一例为自行写作配 AI 标题图；第二例为同一文字中混合两种制作方式。其余选项的具体情节不在正文。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Warum erklärt der Text die Public Domain Mark und eine Lizenz getrennt?",
+      "options": [
+        "Die Markierung erklärt das Herstellungsverfahren, während die Lizenz den dafür verwendeten KI-Dienst benennt.",
+        "Die Markierung erlaubt die Bearbeitung geschützter Inhalte, während die Lizenz ihre Gemeinfreiheit feststellt.",
+        "Die Markierung gestattet das Lesen eines Inhalts, während die Lizenz dessen Weitergabe und Veränderung erlaubt.",
+        "Die Markierung bezeichnet einen rechtlichen Status, während die Lizenz die Nutzung eines geschützten Inhalts erlaubt."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "s14 区分状态标记与对受保护内容的使用授权。A 混入制作过程和服务名称，B 颠倒状态与授权，C 把状态标记误作阅读许可。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Eine Autorin fügt ihrem eigenen Artikel ein separat erzeugtes KI-Bild hinzu. Welche Vorgehensweise entspricht den Empfehlungen?",
+      "options": [
+        "Sie beschreibt den Prompt und verzichtet dafür auf die getrennte Zuordnung der Hinweise.",
+        "Sie ordnet die Rechtehinweise den Bestandteilen zu und erläutert den KI-Einsatz nahe am Bild.",
+        "Sie behandelt Text und Bild als untrennbaren Inhalt und kennzeichnet nur dessen Entstehungsdatum.",
+        "Sie nennt das KI-Programm als Urheber des Textes und erläutert die Bildauswahl am Schluss."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s12",
+        "s13",
+        "s20",
+        "s22"
+      ],
+      "explanationZh": "需综合图文可分开、分别处理许可/标记，以及 AI 图附近说明服务和用途；提示词说明不能代替这些区分。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Welche Einschränkung macht der Text bei menschlichen Änderungen an KI-Inhalten?",
+      "options": [
+        "Der Schutz wird nach dem Umfang der Veröffentlichung festgelegt.",
+        "Ein Schutz kommt nur bei einer nachträglich ergänzten Abbildung in Betracht.",
+        "Die kreative Eigenleistung ist relevant, ohne dass eine feste Prozentgrenze angegeben wird.",
+        "Die Verwendung desselben Programms führt bei verschiedenen Texten zur gleichen Einordnung."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10",
+        "s11",
+        "s17",
+        "s18"
+      ],
+      "explanationZh": "s10—11 说明创造性改动可能改变判断，但无自动保护百分比；s17 还明确不能仅凭软件判断。"
+    }
+  ]
+}

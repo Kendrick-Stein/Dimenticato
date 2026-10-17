@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "id": "2026-10-17-it-prezzi-settembre",
+  "storyId": "istat-prezzi-consumo-settembre-2026-definitivi",
+  "lang": "it",
+  "date": "2026-10-17",
+  "title": "Prezzi di settembre: leggere bene i confronti",
+  "titleZh": "九月物价：读懂不同的比较",
+  "summaryZh": "从能源、交通和家庭支出差异入手，区分环比、同比与不同价格指数。原报道发表于10月16日，统计期为9月及第三季度。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：用日常消费主题解释统计比较，含因果、转折和时间限定；保留必要术语并以中文释义辅助。",
+  "source": {
+    "name": "Istat",
+    "title": "Prezzi al consumo – Settembre 2026",
+    "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-settembre-2026/",
+    "publishedAt": "2026-10-16",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者/发布机构：Istat。原文：https://www.istat.it/comunicato-stampa/prezzi-al-consumo-settembre-2026/；依据 CC BY 4.0 改写。中文翻译及教学材料：Dimenticato。",
+  "adaptation": "机构意大利语新闻的同语言分级改写及逐句中文翻译；比较口径说明和最后一句为教学补充。保留原报道日期，统计期不是整理日期。仅使用机构正文，不使用图片、标识、第三方内容或直接引语；不代表原机构背书。",
+  "contentType": "native-adaptation",
+  "category": "work-economy",
+  "topics": [
+    "日常物价",
+    "家庭消费",
+    "数据阅读"
+  ],
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 16 ottobre 2026 l’Istat ha pubblicato i dati definitivi sui prezzi al consumo di settembre, che descrivono aumenti diversi secondo i prodotti e i servizi.",
+      "zh": "2026年10月16日，Istat发布了9月份消费价格的最终数据，显示不同产品和服务的涨幅有所不同。",
+      "glosses": [
+        {
+          "surface": "definitivi",
+          "lemma": "definitivo",
+          "zh": "最终的",
+          "note": "形容词阳性复数，修饰dati。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "L’indice nazionale NIC è cresciuto dello 0,7% rispetto ad agosto e del 4,2% rispetto a settembre dell’anno precedente, confermando la prima stima.",
+      "zh": "全国NIC指数比8月上涨0.7%，比上一年9月上涨4.2%，确认了初步估计。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Il confronto con il mese precedente e quello con lo stesso mese di un anno prima rispondono quindi a due domande diverse.",
+      "zh": "因此，与前一个月比较和与一年前同月比较，回答的是两个不同的问题。",
+      "glosses": [
+        {
+          "surface": "precedente",
+          "lemma": "precedente",
+          "zh": "先前的",
+          "note": "形容词，此处修饰mese。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Il tasso annuo era del 3,3% ad agosto: a settembre, dunque, la crescita dei prezzi è diventata più rapida.",
+      "zh": "8月份的同比涨幅为3.3%：因此，9月份价格上涨加快了。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Secondo l’Istat, questa accelerazione dipende soprattutto dall’energia e dagli alimenti non lavorati, come indica il confronto tra i diversi gruppi di prodotti.",
+      "zh": "根据Istat的说明，此次加速主要来自能源和未加工食品，不同产品类别的比较显示了这一点。",
+      "glosses": [
+        {
+          "surface": "accelerazione",
+          "lemma": "accelerazione",
+          "zh": "加速",
+          "note": "阴性名词；此处指通胀加速。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Anche i servizi ricreativi, culturali e per la cura della persona hanno registrato un aumento annuo più forte: il tasso è passato dal 2,6% al 2,9%.",
+      "zh": "休闲、文化和个人护理服务的同比涨幅也有所扩大：涨幅从2.6%升至2.9%。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Non tutti i prezzi, però, sono saliti rispetto ad agosto: quelli dei servizi di trasporto sono scesi del 2,5%, mentre gli alimenti lavorati sono diminuiti dello 0,6%.",
+      "zh": "不过，并非所有价格都比8月上涨：运输服务价格下降了2.5%，加工食品价格下降了0.6%。",
+      "glosses": [
+        {
+          "surface": "lavorati",
+          "lemma": "lavorato",
+          "zh": "加工过的",
+          "note": "过去分词作形容词，阳性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Per i servizi di trasporto, il calo mensile convive con un aumento annuo dell’1,6%: cambiare il periodo di confronto cambia il significato del dato.",
+      "zh": "运输服务价格环比下降的同时，同比上涨了1.6%：改变比较期间会改变数据的含义。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Un altro indicatore, chiamato inflazione di fondo, esclude l’energia e gli alimenti freschi; a settembre è salito dall’1,5% all’1,6%.",
+      "zh": "另一个称为核心通胀的指标排除了能源和新鲜食品；9月该指标从1.5%升至1.6%。",
+      "glosses": [
+        {
+          "surface": "esclude",
+          "lemma": "escludere",
+          "zh": "排除",
+          "note": "动词直陈式现在时第三人称单数。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "L’indice armonizzato IPCA, invece, è aumentato del 2,1% sul mese: in questo caso conta anche la fine dei saldi estivi, che il NIC non considera.",
+      "zh": "协调消费者价格指数IPCA则环比上涨2.1%：这里还计入了夏季打折结束的影响，而NIC不考虑这一因素。",
+      "glosses": [
+        {
+          "surface": "saldi",
+          "lemma": "saldo",
+          "zh": "打折促销",
+          "note": "阳性复数；saldi estivi夏季打折。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Il rapporto presenta inoltre un confronto per il terzo trimestre: secondo l’IPCA, l’aumento è stato del 4,4% per le famiglie con poca spesa e del 2,9% per quelle con spesa elevata.",
+      "zh": "报告还给出了第三季度的比较：按IPCA衡量，支出较低家庭的涨幅为4.4%，支出较高家庭为2.9%。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Come osservazione didattica, questi risultati invitano a controllare sempre l’indice, il periodo e il gruppo considerato prima di confrontare due percentuali.",
+      "zh": "作为教学提示，这些结果提醒我们：比较两个百分比之前，应先核对指数、时期和所涉及的群体。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "definitivi",
+        "lemma": "definitivo",
+        "zh": "最终的",
+        "note": "形容词阳性复数，修饰dati。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "precedente",
+        "lemma": "precedente",
+        "zh": "先前的",
+        "note": "形容词，此处修饰mese。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "accelerazione",
+        "lemma": "accelerazione",
+        "zh": "加速",
+        "note": "阴性名词；此处指通胀加速。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "lavorati",
+        "lemma": "lavorato",
+        "zh": "加工过的",
+        "note": "过去分词作形容词，阳性复数。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "esclude",
+        "lemma": "escludere",
+        "zh": "排除",
+        "note": "动词直陈式现在时第三人称单数。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "saldi",
+        "lemma": "saldo",
+        "zh": "打折促销",
+        "note": "阳性复数；saldi estivi夏季打折。",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "rispetto ad agosto",
+        "zh": "与8月相比",
+        "note": "rispetto a表示比较；元音前a可写成ad。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "in questo caso",
+        "zh": "在这种情况下",
+        "note": "引出当前所讨论情形的特点。",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "convivere con表示两种情况同时存在；这里强调环比下降与同比上涨并不矛盾。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali spese controlli più spesso quando fai un bilancio mensile?",
+        "zh": "做月度预算时，你最经常关注哪些支出？",
+        "note": "教学讨论，不是原报道引语。"
+      },
+      {
+        "text": "Perché due percentuali sui prezzi possono essere diverse senza contraddirsi?",
+        "zh": "为什么两个物价百分比可以不同，却不互相矛盾？",
+        "note": "根据文中比较口径展开。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Rispetto al mese precedente…",
+        "zh": "与前一个月相比……",
+        "note": "教学补充，用于说明时间比较。"
+      },
+      {
+        "text": "Bisogna distinguere tra…",
+        "zh": "需要区分……",
+        "note": "教学补充，用于辨析不同概念。"
+      }
+    ]
+  }
+}
