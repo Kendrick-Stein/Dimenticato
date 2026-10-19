@@ -2,6 +2,24 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-17-it-prezzi-settembre",
+      "lang": "it",
+      "date": "2026-10-17",
+      "title": "Prezzi di settembre: leggere bene i confronti",
+      "titleZh": "九月物价：读懂不同的比较",
+      "summaryZh": "从能源、交通和家庭支出差异入手，区分环比、同比与不同价格指数。原报道发表于10月16日，统计期为9月及第三季度。",
+      "level": "B1",
+      "category": "work-economy",
+      "topics": [
+        "日常物价",
+        "家庭消费",
+        "数据阅读"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-16",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-16-en-community-heritage-repairs",
       "lang": "en",
       "date": "2026-10-16",
@@ -334,6 +352,23 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-17-en-a-surprise-on-the-beach",
+      "lang": "en",
+      "date": "2026-10-17",
+      "title": "A surprise on the beach",
+      "titleZh": "海滩上的意外发现",
+      "summaryZh": "保护区摄像机拍到了疑似松貂的动物，但种类尚未确认。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "野生动物",
+        "自然观察"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-07",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-it-differenziare-e-ridurre",
       "lang": "it",
       "date": "2026-10-13",
@@ -349,6 +384,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-07",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-17-en-earnse-bay-community-space",
+      "lang": "en",
+      "date": "2026-10-17",
+      "title": "A new community space beside the sea",
+      "titleZh": "海边的新社区空间",
+      "summaryZh": "Earnse Bay 海滩学校与工作基地开始建设，将兼顾自然保护管理、社区活动和户外学习。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "社区空间",
+        "户外学习",
+        "海岸"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-06",
       "contentType": "native-adaptation"
     },
     {
@@ -618,6 +671,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-17-de-lernmaterialien-mit-ki",
+      "lang": "de",
+      "date": "2026-10-17",
+      "title": "Lernmaterialien mit KI: Was muss erkennbar bleiben?",
+      "titleZh": "人工智能参与的学习材料：哪些信息应当清楚可见？",
+      "summaryZh": "一篇近期德国教育资源文章区分可分开的图文与混合创作，讨论开放许可和来源透明。本文保留法律判断的条件，不把操作建议变成普遍义务。",
+      "level": "B2",
+      "category": "education",
+      "topics": [
+        "开放教育资源",
+        "人工智能",
+        "创作与署名"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-23",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-12-de-meinungen-im-unterricht",
       "lang": "de",
       "date": "2026-10-12",
@@ -829,6 +900,24 @@
       ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2026-09-10",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-17-fr-acceder-aux-metiers-culturels",
+      "lang": "fr",
+      "date": "2026-10-17",
+      "title": "Accéder aux métiers culturels : des obstacles à plusieurs étapes",
+      "titleZh": "进入文化职业：多个阶段的障碍",
+      "summaryZh": "文化部介绍17项建议，并列出文化行业就业及受访学生遇到的障碍；建议不等于已落实，调查数字不代表所有学生。",
+      "level": "B1",
+      "category": "work-economy",
+      "topics": [
+        "文化就业",
+        "无障碍",
+        "教育机会"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-09",
       "contentType": "native-adaptation"
     },
     {

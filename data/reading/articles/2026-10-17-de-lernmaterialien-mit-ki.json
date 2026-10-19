@@ -1,0 +1,317 @@
+{
+  "schema": 1,
+  "id": "2026-10-17-de-lernmaterialien-mit-ki",
+  "storyId": "oerinfo-ki-materialmix-2026-09-23",
+  "lang": "de",
+  "date": "2026-10-17",
+  "title": "Lernmaterialien mit KI: Was muss erkennbar bleiben?",
+  "titleZh": "人工智能参与的学习材料：哪些信息应当清楚可见？",
+  "summaryZh": "一篇近期德国教育资源文章区分可分开的图文与混合创作，讨论开放许可和来源透明。本文保留法律判断的条件，不把操作建议变成普遍义务。",
+  "level": "B2",
+  "levelReason": "编辑估计：抽象名词、被动结构、条件与转折关系密集，需要区分版权状态、许可授权和透明性建议；中文逐句辅助。",
+  "category": "education",
+  "topics": [
+    "开放教育资源",
+    "人工智能",
+    "创作与署名"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "OERinfo – Die Informationsstelle OER",
+    "title": "Die Mischung macht’s: Kennzeichnung und Lizenzierung von Materialien mit KI-Anteil",
+    "url": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
+    "publishedAt": "2026-09-23",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Lea Singson, iRights.info für OERinfo – Die Informationsstelle OER。原文正文 CC BY 4.0；原文链接见上。Dimenticato 对正文进行德语教学改写、中文翻译及原创练习编写，非作者认可的测评；本文及配套教学内容按 CC BY 4.0 提供。补充解释来源：Fabian Rack, iRights.info für OERinfo《OER und CC-Lizenzen bei generativer KI》（https://open-educational-resources.de/oer-und-cc-lizenzen-bei-generativer-ki/）及 Maya El-Auwad, iRights.info für OERinfo《CC0 Freigabe》（https://open-educational-resources.de/was-die-cc0-freigabe-bedeutet-und-welche-moeglichkeiten-sie-eroeffnen/），两篇正文亦为 CC BY 4.0。",
+  "adaptation": "2026-10-17 整理；主报道原发2026-09-23，并非当天新闻。仅使用许可正文，不使用图片、标志、评论。重组并释义原文，依据其所链接解释澄清 prompt 与作品创作、CC0 与德国著作权的区别；旧解释仅作背景核查，不计作新报道。中文、词汇与问题由编辑补充。本篇为语言阅读材料，不是个案法律意见。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Wer offene Lernmaterialien erstellt, kann heute eigene Texte mit künstlich erzeugten Bildern verbinden oder sich beim Schreiben von einem KI-System unterstützen lassen.",
+      "zh": "制作开放学习材料的人如今可以把自己的文字与人工生成的图片结合，也可以在写作时让人工智能系统提供帮助。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Dadurch entstehen Mischungen, bei denen nicht auf den ersten Blick erkennbar ist, welche Teile auf menschlicher Arbeit beruhen und welche automatisch erzeugt wurden.",
+      "zh": "这样产生的混合材料，并不总能让人一眼看出哪些部分来自人的劳动，哪些部分是自动生成的。",
+      "glosses": [
+        {
+          "surface": "beruhen",
+          "lemma": "beruhen",
+          "zh": "基于；建立在……之上",
+          "note": "beruhen auf + Dativ"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "In einem am 23. September 2026 veröffentlichten Beitrag erklärt Lea Singson für OERinfo, warum diese Unterscheidung sowohl für die Lizenzierung als auch für die Kennzeichnung wichtig ist.",
+      "zh": "在2026年9月23日发表的一篇文章中，Lea Singson 为 OERinfo 解释了为什么这种区分对许可授权和标注都很重要。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Sie unterscheidet zunächst zwei Situationen: Entweder lassen sich die einzelnen Bestandteile voneinander trennen, oder menschliche und maschinelle Beiträge stecken gemeinsam in einem Hauptelement.",
+      "zh": "她首先区分两种情况：各个组成部分可以彼此分开，或者人的贡献和机器的贡献共同存在于一个主体内容中。",
+      "glosses": [
+        {
+          "surface": "Bestandteile",
+          "lemma": "Bestandteil",
+          "zh": "组成部分",
+          "note": "der Bestandteil，复数 Bestandteile"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Ein selbst verfasster Artikel mit einem KI-generierten Titelbild ist ein Beispiel für die erste Situation, weil Text und Bild einzeln betrachtet werden können.",
+      "zh": "一篇自行撰写的文章配上一张人工智能生成的标题图，就是第一种情况的例子，因为文字和图片可以分别考察。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Wenn dagegen derselbe Text zum Teil selbst geschrieben und zum Teil mit KI erstellt wird, sind zwei Herstellungsweisen innerhalb eines einzigen Inhalts verbunden.",
+      "zh": "相反，如果同一篇文字一部分由自己撰写，一部分借助人工智能生成，那么两种制作方式就结合在同一个内容之中了。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Diese Unterscheidung hilft bei der Frage, worauf sich ein späterer Lizenzhinweis überhaupt bezieht und an welcher Stelle zusätzliche Informationen sinnvoll sind.",
+      "zh": "这种区分有助于弄清后来添加的许可说明究竟针对什么，以及在哪里补充信息比较合适。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Für den urheberrechtlichen Schutz stellt der Beitrag die persönliche geistige Schöpfung in den Mittelpunkt: Entscheidend sind eigene kreative und individuelle Entscheidungen eines Menschen.",
+      "zh": "在著作权保护方面，文章把个人的智力创作放在核心位置：关键是一个人自己作出的有创造性、有个性的决定。",
+      "glosses": [
+        {
+          "surface": "Schöpfung",
+          "lemma": "Schöpfung",
+          "zh": "创作；创造性成果",
+          "note": "die Schöpfung，复数 Schöpfungen"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Die bloße Eingabe einer technischen Anweisung wird dabei nicht mit einer solchen Gestaltung des erzeugten Ergebnisses gleichgesetzt, auch wenn sie dessen Entstehung auslöst.",
+      "zh": "在这里，单纯输入一条技术指令并不等同于对生成结果进行这种创作，尽管指令促成了结果的产生。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Anders kann die Situation aussehen, wenn eine Person den zunächst erzeugten Inhalt eigenständig ergänzt, verändert oder kreativ neu zusammenstellt.",
+      "zh": "如果一个人独立补充、修改最初生成的内容，或者创造性地重新组织内容，情况就可能不同。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Die vom Beitrag verlinkte Erläuterung betont deshalb den schöpferischen menschlichen Anteil; sie liefert jedoch keine Prozentzahl, ab der ein Werk automatisch geschützt wäre.",
+      "zh": "文章链接的解释因此强调人的创造性贡献，但没有给出一个达到后作品就会自动获得保护的百分比。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Bei getrennten Bestandteilen schlägt Singson vor, den selbst geschaffenen und geschützten Text offen zu lizenzieren und den KI-Anteil gesondert kenntlich zu machen.",
+      "zh": "对于彼此分开的组成部分，Singson 建议为自行创作且受保护的文字设置开放许可，并单独标明人工智能部分。",
+      "glosses": [
+        {
+          "surface": "gesondert",
+          "lemma": "gesondert",
+          "zh": "单独地",
+          "note": "副词"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Für den menschlich verfassten Text nennt sie CC BY 4.0; für einen gemeinfreien KI-Anteil empfiehlt sie eine Kennzeichnung mit der Public Domain Mark.",
+      "zh": "对于人类撰写的文字，她提到 CC BY 4.0；对于属于公有领域的人工智能部分，她建议用 Public Domain Mark 标注。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Die Markierung beschreibt dabei einen rechtlichen Status, während eine Lizenz die Nutzung eines geschützten Inhalts erlaubt: Beide Hinweise erfüllen also unterschiedliche Aufgaben.",
+      "zh": "这种标记描述一种法律状态，而许可授权则允许使用受保护的内容：因此，两种说明承担不同的作用。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Als weitere Möglichkeit behandelt der Beitrag CC0, insbesondere wenn ein gemischtes Material möglichst einheitlich und offen weitergegeben werden soll.",
+      "zh": "文章还讨论了 CC0 这种选择，尤其适用于希望尽可能统一、开放地分享混合材料的情形。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Das bedeutet im deutschen Recht jedoch nicht, dass sämtliche Urheberrechte einfach verschwinden; die verlinkte Erklärung beschreibt vielmehr eine weitgehende Freigabe zur Nutzung.",
+      "zh": "但这在德国法律中并不意味着所有著作权都会直接消失；链接的解释描述的其实是一种广泛的使用授权。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Bei einem untrennbaren Hauptinhalt richtet sich die Einordnung nach dem Verhältnis der menschlichen Gestaltung zur KI-Erzeugung, nicht allein nach dem verwendeten Programm.",
+      "zh": "对于不可分开的主体内容，分类判断取决于人的创作与人工智能生成之间的关系，而不只是所用的软件。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Der Beitrag behandelt eine CC-Lizenz als Möglichkeit, wenn die persönliche schöpferische Arbeit im Vordergrund steht; daraus folgt keine pauschale Bewertung jedes KI-unterstützten Textes.",
+      "zh": "文章把人的创造性劳动居于主要地位视为可以使用 CC 许可的一种情况；这并不构成对每一篇人工智能辅助文字的一概判断。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Neben diesen Fragen der Nutzung geht es um Transparenz gegenüber den Menschen, die das Material lesen, bearbeiten oder später selbst weitergeben möchten.",
+      "zh": "除了这些使用问题，文章还关注对那些希望阅读、编辑或日后继续分享材料的人保持透明。",
+      "glosses": [
+        {
+          "surface": "Transparenz",
+          "lemma": "Transparenz",
+          "zh": "透明性",
+          "note": "die Transparenz，通常不可数"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Singson empfiehlt, den eingesetzten KI-Dienst zu nennen und zu erklären, für welchen Arbeitsschritt er verwendet wurde, statt nur einen allgemeinen KI-Hinweis anzubringen.",
+      "zh": "Singson 建议说明所使用的人工智能服务，并解释它用于哪个工作步骤，而不只是贴上笼统的人工智能标记。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Auch eine allgemeine Beschreibung des Prompts kann den Entstehungsprozess verständlicher machen, ohne dass dadurch die rechtliche Einordnung des Materials schon entschieden wäre.",
+      "zh": "对提示词作概括说明也可以让制作过程更易理解，但这本身并不意味着材料的法律分类已经得到确定。",
+      "glosses": []
+    },
+    {
+      "id": "s22",
+      "text": "Bei einem separat eingefügten KI-Bild sollte der Hinweis möglichst nahe am Bild stehen; bei einem gemeinsam erarbeiteten Hauptinhalt bietet sich ein Hinweis darunter an.",
+      "zh": "对于单独插入的人工智能图片，说明应尽量靠近图片；对于共同制作的主体内容，可以在内容下方添加说明。",
+      "glosses": []
+    },
+    {
+      "id": "s23",
+      "text": "Diese praktischen Empfehlungen sollen Herkunft und Bearbeitung nachvollziehbar machen und werden hier nicht als allgemeine gesetzliche Kennzeichnungspflicht für alle Lernmaterialien dargestellt.",
+      "zh": "这些实用建议旨在让来源和加工过程有迹可循；这里并没有把它们描述为适用于所有学习材料的普遍法定标注义务。",
+      "glosses": []
+    },
+    {
+      "id": "s24",
+      "text": "Wer Materialien nachnutzt, braucht somit zwei Arten von Informationen: Hinweise auf die erlaubte Weiterverwendung und eine verständliche Darstellung der jeweiligen menschlichen und technischen Beiträge.",
+      "zh": "因此，再利用材料的人需要两类信息：关于允许如何继续使用的说明，以及对人和技术各自贡献的清楚描述。",
+      "glosses": [
+        {
+          "surface": "Weiterverwendung",
+          "lemma": "Weiterverwendung",
+          "zh": "再次使用；继续利用",
+          "note": "die Weiterverwendung，通常不可数"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "beruhen",
+        "lemma": "beruhen",
+        "zh": "基于；建立在……之上",
+        "note": "beruhen auf + Dativ",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "Bestandteile",
+        "lemma": "Bestandteil",
+        "zh": "组成部分",
+        "note": "der Bestandteil，复数 Bestandteile",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "Schöpfung",
+        "lemma": "Schöpfung",
+        "zh": "创作；创造性成果",
+        "note": "die Schöpfung，复数 Schöpfungen",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "gesondert",
+        "lemma": "gesondert",
+        "zh": "单独地",
+        "note": "副词",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "Transparenz",
+        "lemma": "Transparenz",
+        "zh": "透明性",
+        "note": "die Transparenz，通常不可数",
+        "sentenceId": "s19"
+      },
+      {
+        "text": "Weiterverwendung",
+        "lemma": "Weiterverwendung",
+        "zh": "再次使用；继续利用",
+        "note": "die Weiterverwendung，通常不可数",
+        "sentenceId": "s24"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "auf den ersten Blick",
+        "zh": "乍一看",
+        "sentenceId": "s2",
+        "note": "描述初步观察，常与 nicht erkennbar 搭配。"
+      },
+      {
+        "text": "im Vordergrund steht",
+        "zh": "处于主要位置",
+        "sentenceId": "s18",
+        "lemma": "im Vordergrund stehen",
+        "note": "这里指创造性劳动的重要性，不是数学比例。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s14",
+        "note": "während 对比两种概念；冒号后解释为什么不能混同。"
+      },
+      {
+        "sentenceId": "s21",
+        "note": "ohne dass + 从句表示“并不因此……”；wäre 表达假设结果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Angaben würden dir helfen, ein Lernmaterial mit KI-Anteil besser einzuschätzen?",
+        "zh": "哪些信息能帮助你更好地判断一份有人工智能参与的学习材料？",
+        "note": "教学讨论，不设自动标准答案。"
+      },
+      {
+        "text": "Wann ist ein Hinweis direkt am Bild hilfreicher als ein Hinweis am Ende eines Textes?",
+        "zh": "什么时候直接在图片旁标注，比在文章末尾说明更有用？",
+        "note": "结合文中的可分开图文例子讨论。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Für mich ist entscheidend, dass …",
+        "zh": "对我而言，关键在于……",
+        "note": "教学补充，用来说明判断标准。"
+      },
+      {
+        "text": "Dabei sollte man zwischen … und … unterscheiden.",
+        "zh": "其中应当区分……和……。",
+        "note": "教学补充，比较两个概念。"
+      }
+    ]
+  }
+}

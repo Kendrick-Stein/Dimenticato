@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-17",
+  "scope": "Limited source reserve maintenance, not a claim of a fully reviewed week of future content",
+  "notPublished": [
+    {
+      "status": "discovered_not_cleared",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=6d6787588b16873c0ed5247d7262c4b7&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2789",
+      "dateCaution": "Visible18October2026 is eventdate. Ministry parallel page https://cultura.gov.it/index.php/evento/scacco-matto search extract gives Published2026-10-08 16:13:56, updatedOct9. Do not assign mirrordate to Archivi without verifying sharedprovenance.",
+      "rightsBlocker": "Cultura.gov.it/note-legali currentfullpage timeout/502; registry priorreview is not currentarticleclearance.",
+      "proposedLevel": "A2",
+      "category": "culture",
+      "noArticleGenerated": true
+    },
+    {
+      "sourceUrl": "https://irights.info/artikel/kennzeichnung-von-medieninhalten-in-zeiten-generativer-ki-ein-neues-thesenpapier-von-irights-lab/32908",
+      "reason": "October8 announcement has about146 substantive words; underlying paper is from June, outside90daywindow. Not padded to B1/B2."
+    },
+    {
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+      "reason": "Existing reserve retained; research infrastructure topic not prioritized over everyday life. No article generated solely to fill a missing tier."
+    }
+  ]
+}

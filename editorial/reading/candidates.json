@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-16",
+  "collectedAt": "2026-10-17",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -77,8 +77,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 15,
+          "asOf": "2026-10-17",
+          "ageDays": 17,
           "bucket": "within_30_days"
         }
       },
@@ -159,8 +159,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 28,
+          "asOf": "2026-10-17",
+          "ageDays": 30,
           "bucket": "within_30_days"
         }
       },
@@ -241,9 +241,9 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 30,
-          "bucket": "within_30_days"
+          "asOf": "2026-10-17",
+          "ageDays": 32,
+          "bucket": "within_90_days"
         }
       },
       "linkToArticleId": "2026-10-11-it-lipari-storia-sommersa"
@@ -333,8 +333,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-business-innovation-science-and-trade"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 6,
+          "asOf": "2026-10-17",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
       },
@@ -424,8 +424,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 6,
+          "asOf": "2026-10-17",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
       },
@@ -515,8 +515,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 9,
+          "asOf": "2026-10-17",
+          "ageDays": 11,
           "bucket": "within_30_days"
         }
       },
@@ -599,8 +599,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 7,
+          "asOf": "2026-10-17",
+          "ageDays": 9,
           "bucket": "within_30_days"
         }
       },
@@ -683,8 +683,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 7,
+          "asOf": "2026-10-17",
+          "ageDays": 9,
           "bucket": "within_30_days"
         }
       },
@@ -767,8 +767,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 9,
+          "asOf": "2026-10-17",
+          "ageDays": 11,
           "bucket": "within_30_days"
         }
       },
@@ -857,8 +857,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 13,
+          "asOf": "2026-10-17",
+          "ageDays": 15,
           "bucket": "within_30_days"
         }
       },
@@ -947,8 +947,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 23,
+          "asOf": "2026-10-17",
+          "ageDays": 25,
           "bucket": "within_30_days"
         }
       },
@@ -1038,8 +1038,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 24,
+          "asOf": "2026-10-17",
+          "ageDays": 26,
           "bucket": "within_30_days"
         }
       },
@@ -1112,8 +1112,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 6,
+          "asOf": "2026-10-17",
+          "ageDays": 8,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1207,8 +1207,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 56,
+          "asOf": "2026-10-17",
+          "ageDays": 58,
           "bucket": "within_90_days"
         }
       },
@@ -1301,8 +1301,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 27,
+          "asOf": "2026-10-17",
+          "ageDays": 29,
           "bucket": "within_30_days"
         }
       },
@@ -1374,8 +1374,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 14,
+          "asOf": "2026-10-17",
+          "ageDays": 16,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1458,8 +1458,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 7,
+          "asOf": "2026-10-17",
+          "ageDays": 9,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1554,8 +1554,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 57,
+          "asOf": "2026-10-17",
+          "ageDays": 59,
           "bucket": "within_90_days"
         }
       },
@@ -1645,8 +1645,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 44,
+          "asOf": "2026-10-17",
+          "ageDays": 46,
           "bucket": "within_90_days"
         }
       },
@@ -1717,8 +1717,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 7,
+          "asOf": "2026-10-17",
+          "ageDays": 9,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1795,8 +1795,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 8,
+          "asOf": "2026-10-17",
+          "ageDays": 10,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1880,8 +1880,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 13,
+          "asOf": "2026-10-17",
+          "ageDays": 15,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1965,8 +1965,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 9,
+          "asOf": "2026-10-17",
+          "ageDays": 11,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2062,8 +2062,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 86,
+          "asOf": "2026-10-17",
+          "ageDays": 88,
           "bucket": "within_90_days"
         }
       },
@@ -2135,8 +2135,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 13,
+          "asOf": "2026-10-17",
+          "ageDays": 15,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2214,8 +2214,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 28,
+          "asOf": "2026-10-17",
+          "ageDays": 30,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2293,8 +2293,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 31,
+          "asOf": "2026-10-17",
+          "ageDays": 33,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2372,8 +2372,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 42,
+          "asOf": "2026-10-17",
+          "ageDays": 44,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2461,8 +2461,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 16,
+          "asOf": "2026-10-17",
+          "ageDays": 18,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2551,8 +2551,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 32,
+          "asOf": "2026-10-17",
+          "ageDays": 34,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2640,8 +2640,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 19,
+          "asOf": "2026-10-17",
+          "ageDays": 21,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2737,9 +2737,9 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 29,
-          "bucket": "within_30_days"
+          "asOf": "2026-10-17",
+          "ageDays": 31,
+          "bucket": "within_90_days"
         },
         "duplicateCheck": {
           "checkedAgainstArticleCount": 28,
@@ -2834,8 +2834,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 2,
+          "asOf": "2026-10-17",
+          "ageDays": 4,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2931,8 +2931,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 34,
+          "asOf": "2026-10-17",
+          "ageDays": 36,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2959,28 +2959,78 @@
         "无障碍",
         "培训"
       ],
-      "level": "A2",
+      "level": "B1",
       "priority": 2,
-      "status": "collected",
-      "editorialNote": "额外储备线索，35天。考虑A2 150–220词，仅限文化部导语中报告发布及职业障碍概览；外部记者Laetitia Bernard的采访回答不可自动继承许可。完整页面已读，但可用机构叙述能否支撑字数及统计口径仍待核验；不改写、不进入公开目录。口语角度：文化职业培训与场所怎样更容易进入？",
+      "status": "verified",
+      "editorialNote": "B1 draft, 292 whitespace-delimited body words. Uses only ministry introduction, institutional narrative and ministry-displayed key statistics. Excludes all Laetitia Bernard interview answers, AFP photographs and external report. 38-day fallback; source date retained. Questions and translations await independent review; no publication readiness claim.",
       "verification": {
-        "workflowStage": "discovered",
-        "checkedAt": "2026-10-14",
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-17",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
+        "editorialReviewComplete": true,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.culture.gouv.fr/actualites/culture-et-handicap-17-recommandations-pour-l-acces-a-l-emploi",
-          "checkedAt": "2026-10-14",
-          "notes": "Full page read; external interviewee answers require separate rights assessment. Institutional introduction only may be suitable; not cleared."
+          "checkedAt": "2026-10-17",
+          "notes": "Full page read; only institutional introduction/narrative and key-figures section adapted. External interview answers excluded, rather than assuming rights transfer."
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 36,
+          "asOf": "2026-10-17",
+          "ageDays": 38,
           "bucket": "within_90_days"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/culture-et-handicap-17-recommandations-pour-l-acces-a-l-emploi",
+          "evidence": "Article explicitly says Publié le 9 septembre 2026; report released same date. Collection date is not publication date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/culture-et-handicap-17-recommandations-pour-l-acces-a-l-emploi",
+          "additionalEvidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "author": "Ministère de la Culture (no individual webpage byline)",
+          "basis": "institutional-original-language-inference",
+          "evidence": "French ministry own French-language institutional article about commissioned report, no translation credit; reuse restricted to own narrative and statistics.",
+          "caveat": "Editorial provenance inference, not author-mother-tongue certification. Laetitia Bernard is report author/interviewee, not attributed as webpage author."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 France",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "basis": "site-policy-and-article-scope",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/actualites/culture-et-handicap-17-recommandations-pour-l-acces-a-l-emploi",
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "evidence": "Legal terms §4.3.1(a) grants ministry-produced text CC BY-SA 3.0 FR. Article has separate AFP photo credits. §4.3.2 reserves partner content; all interviewee answers and external report therefore excluded.",
+          "scope": "Ministry original introduction, institutional narrative and displayed key statistics only; same-language adaptation and Chinese translation under same CC BY-SA 3.0 FR.",
+          "exclusions": [
+            "All interviewee answers",
+            "AFP photographs and captions",
+            "External linked report and third-party works",
+            "Logos and media"
+          ],
+          "shareAlikeRequired": true,
+          "attributionRequirements": [
+            "Credit Ministère de la Culture, original title/date/URL",
+            "Retain CC BY-SA 3.0 FR licence link and apply same licence to adapted edition",
+            "Disclose same-language simplification, Chinese translation, teaching additions; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 59,
+          "checkedAt": "2026-10-17",
+          "sourceUrlAlreadyPublished": true,
+          "titleAlreadyPublished": true
         }
-      }
+      },
+      "linkToArticleId": "2026-10-17-fr-acceder-aux-metiers-culturels"
     },
     {
       "id": "de-2026-08-19-cultural-heritage-access",
@@ -3062,8 +3112,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 57,
+          "asOf": "2026-10-17",
+          "ageDays": 59,
           "bucket": "within_90_days"
         }
       },
@@ -3149,8 +3199,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 76,
+          "asOf": "2026-10-17",
+          "ageDays": 78,
           "bucket": "within_90_days"
         }
       },
@@ -3233,8 +3283,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 16,
+          "asOf": "2026-10-17",
+          "ageDays": 18,
           "bucket": "within_30_days"
         }
       },
@@ -3275,8 +3325,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 22,
+          "asOf": "2026-10-17",
+          "ageDays": 24,
           "bucket": "within_30_days"
         }
       }
@@ -3316,8 +3366,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 64,
+          "asOf": "2026-10-17",
+          "ageDays": 66,
           "bucket": "within_90_days"
         }
       }
@@ -3387,8 +3437,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 11,
+          "asOf": "2026-10-17",
+          "ageDays": 13,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3466,8 +3516,8 @@
           "reviewBeforeConversionRequired": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 36,
+          "asOf": "2026-10-17",
+          "ageDays": 38,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -3503,8 +3553,8 @@
         "editorialReviewComplete": false,
         "checkedAt": "2026-10-14",
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 18,
+          "asOf": "2026-10-17",
+          "ageDays": 20,
           "bucket": "within_30_days"
         }
       }
@@ -3574,8 +3624,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 1,
+          "asOf": "2026-10-17",
+          "ageDays": 3,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3652,8 +3702,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 2,
+          "asOf": "2026-10-17",
+          "ageDays": 4,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3748,8 +3798,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 1,
+          "asOf": "2026-10-17",
+          "ageDays": 3,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3844,8 +3894,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 1,
+          "asOf": "2026-10-17",
+          "ageDays": 3,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3940,8 +3990,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 34,
+          "asOf": "2026-10-17",
+          "ageDays": 36,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -4030,8 +4080,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 2,
+          "asOf": "2026-10-17",
+          "ageDays": 4,
           "bucket": "within_30_days"
         }
       },
@@ -4114,8 +4164,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-15",
-          "ageDays": 1,
+          "asOf": "2026-10-17",
+          "ageDays": 3,
           "bucket": "within_30_days"
         }
       },
@@ -4198,8 +4248,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 64,
+          "asOf": "2026-10-17",
+          "ageDays": 65,
           "bucket": "within_90_days"
         }
       }
@@ -4279,8 +4329,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 7,
+          "asOf": "2026-10-17",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
       },
@@ -4361,8 +4411,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 21,
+          "asOf": "2026-10-17",
+          "ageDays": 22,
           "bucket": "within_30_days"
         }
       },
@@ -4443,8 +4493,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 1,
+          "asOf": "2026-10-17",
+          "ageDays": 2,
           "bucket": "within_30_days"
         }
       },
@@ -4523,8 +4573,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 18,
+          "asOf": "2026-10-17",
+          "ageDays": 19,
           "bucket": "within_30_days"
         }
       }
@@ -4602,8 +4652,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 3,
+          "asOf": "2026-10-17",
+          "ageDays": 4,
           "bucket": "within_30_days"
         }
       }
@@ -4682,8 +4732,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 36,
+          "asOf": "2026-10-17",
+          "ageDays": 37,
           "bucket": "within_90_days"
         }
       }
@@ -4769,8 +4819,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 4,
+          "asOf": "2026-10-17",
+          "ageDays": 5,
           "bucket": "within_30_days"
         }
       }
@@ -4856,8 +4906,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 3,
+          "asOf": "2026-10-17",
+          "ageDays": 4,
           "bucket": "within_30_days"
         }
       }
@@ -4943,11 +4993,354 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-16",
-          "ageDays": 1,
+          "asOf": "2026-10-17",
+          "ageDays": 2,
           "bucket": "within_30_days"
         }
       }
+    },
+    {
+      "id": "en-2026-10-06-earnse-bay-community-space",
+      "language": "en",
+      "sourceTitle": "Construction begins at Earnse Bay's coastal community hub",
+      "sourceUrl": "https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub",
+      "sourceName": "Natural England",
+      "registrySourceId": "govuk-natural-england-english",
+      "sourcePublishedAt": "2026-10-06",
+      "collectedAt": "2026-10-17",
+      "category": "society",
+      "topics": [
+        "社区空间",
+        "户外学习",
+        "海岸"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "口语角度：哪项计划中的活动能帮助你的社区亲近自然？为什么？ 正文和题组尚需独立核查，不是发布许可。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-17",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub",
+          "checkedAt": "2026-10-17",
+          "notes": "Read entire institutional article body, date, captions, quotes and OGL footer. No image or quotation reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Published header: 2026-10-06",
+          "evidenceUrl": "https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "English Natural England press release on its own reserve/project, no translator or external reprint credit.",
+          "evidenceUrl": "https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub",
+          "author": "Natural England",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Publication provenance does not certify first drafting language or personal native tongue."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Natural England"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub",
+          "institutionUrl": "https://www.gov.uk/government/organisations/natural-england"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Both article footer and GOV.UK Terms Using GOV.UK content state OGL reuse applies except identified exclusions. The institutional narrative has no conflicting rights credit. Photos and quotations are excluded.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "Natural England institutional prose only.",
+          "exclusions": [
+            "Images, logos, video and attachments",
+            "Third-party quotations and linked external works"
+          ],
+          "attributionRequirements": [
+            "Credit Crown copyright / Natural England and original date/source",
+            "Link OGL v3.0 and identify English simplification/Chinese translation",
+            "No endorsement claim"
+          ],
+          "licenseRetrievalNote": "GOV.UK licence application and content-reuse terms read directly today. National Archives full licence text was not retrieved in this pass; earlier 403 recorded and not retried.",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-17",
+          "ageDays": 11,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 59,
+          "checkedAt": "2026-10-17",
+          "sourceUrlAlreadyPublished": true,
+          "titleAlreadyPublished": true
+        }
+      },
+      "linkToArticleId": "2026-10-17-en-earnse-bay-community-space"
+    },
+    {
+      "id": "en-2026-10-07-a-surprise-on-the-beach",
+      "language": "en",
+      "sourceTitle": "Pine marten caught on camera in Suffolk nature reserve 'first'",
+      "sourceUrl": "https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first",
+      "sourceName": "Natural England",
+      "registrySourceId": "govuk-natural-england-english",
+      "sourcePublishedAt": "2026-10-07",
+      "collectedAt": "2026-10-17",
+      "category": "environment",
+      "topics": [
+        "野生动物",
+        "自然观察"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "口语角度：为什么需要说明动物的种类尚未确认？ 正文和题组尚需独立核查，不是发布许可。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-17",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first",
+          "checkedAt": "2026-10-17",
+          "notes": "Read entire institutional article body, date, captions, quotes and OGL footer. No image or quotation reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Published header: 2026-10-07",
+          "evidenceUrl": "https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "English Natural England press release on its own reserve/project, no translator or external reprint credit.",
+          "evidenceUrl": "https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first",
+          "author": "Natural England",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Publication provenance does not certify first drafting language or personal native tongue."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Natural England"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first",
+          "institutionUrl": "https://www.gov.uk/government/organisations/natural-england"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Both article footer and GOV.UK Terms Using GOV.UK content state OGL reuse applies except identified exclusions. The institutional narrative has no conflicting rights credit. Photos and quotations are excluded.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "Natural England institutional prose only.",
+          "exclusions": [
+            "Images, logos, video and attachments",
+            "Third-party quotations and linked external works"
+          ],
+          "attributionRequirements": [
+            "Credit Crown copyright / Natural England and original date/source",
+            "Link OGL v3.0 and identify English simplification/Chinese translation",
+            "No endorsement claim"
+          ],
+          "licenseRetrievalNote": "GOV.UK licence application and content-reuse terms read directly today. National Archives full licence text was not retrieved in this pass; earlier 403 recorded and not retried.",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-17",
+          "ageDays": 10,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 59,
+          "checkedAt": "2026-10-17",
+          "sourceUrlAlreadyPublished": true,
+          "titleAlreadyPublished": true
+        }
+      },
+      "linkToArticleId": "2026-10-17-en-a-surprise-on-the-beach"
+    },
+    {
+      "id": "de-2026-09-23-oerinfo-ki-materialmix",
+      "language": "de",
+      "sourceTitle": "Die Mischung macht’s: Kennzeichnung und Lizenzierung von Materialien mit KI-Anteil",
+      "sourceUrl": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
+      "sourceName": "OERinfo – Die Informationsstelle OER",
+      "registrySourceId": "oerinfo-german-articles",
+      "sourcePublishedAt": "2026-09-23",
+      "collectedAt": "2026-10-17",
+      "category": "education",
+      "topics": [
+        "开放教育资源",
+        "人工智能",
+        "创作与署名"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "B2 challenge draft 538 words; abstract distinctions and qualified reasoning. Discussion: how to disclose human/AI contributions when sharing learning materials. Article commentary published 24 days ago; not breaking news or a newly enacted law. Source wording about prompt/output and CC0 checked against its linked explanations; no numerical human-contribution threshold. Independent adaptation, translations and questions remain to be reviewed.",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-17",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
+          "checkedAt": "2026-10-17",
+          "notes": "Read full original body, byline, publication date and article-specific license plus the linked explanations on human creative editing and CC0. Image caption/asset excluded."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Original OERinfo header says 23 September 2026; posting-account Angela Karnoll is not the signed article author.",
+          "evidenceUrl": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "German education-information publisher presents a signed contribution by Lea Singson, with specified credit iRights.info für OERinfo; discussion addresses German copyright and German-language OER practice. Original page bears no translator or translation-source notice.",
+          "evidenceUrl": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
+          "author": "Lea Singson",
+          "basis": "signed-original-contribution-provenance",
+          "caveat": "Editorial inference from signed commissioned contribution and publisher provenance; not certification of personal native tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "The article closing notice explicitly licenses THIS TEXT CC BY 4.0 and specifies author credit. CC official deed allows redistribution and adaptation, including commercial use, with attribution, license link and changes indicated.",
+          "evidenceUrls": [
+            "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Signed article narrative only; separately credited CC BY 4.0 linked explanatory texts used narrowly for clarification and also attributed.",
+          "exclusions": [
+            "All images and logos",
+            "Comments and third-party linked works except separately checked CC BY 4.0 explanatory articles",
+            "No AI provider contractual terms or currently applicable duties inferred from old examples"
+          ],
+          "attributionRequirements": [
+            "Lea Singson, iRights.info für OERinfo – Die Informationsstelle OER",
+            "Link original and CC BY 4.0; identify adaptation and Chinese translation",
+            "Credit Fabian Rack and Maya El-Auwad with linked explanatory sources for respective clarifications; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-17",
+          "ageDays": 24,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 59,
+          "checkedAt": "2026-10-17",
+          "sourceUrlAlreadyPublished": true,
+          "titleAlreadyPublished": true
+        }
+      },
+      "linkToArticleId": "2026-10-17-de-lernmaterialien-mit-ki"
+    },
+    {
+      "id": "it-2026-10-16-prezzi-settembre",
+      "language": "it",
+      "sourceTitle": "Prezzi al consumo – Settembre 2026",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-settembre-2026/",
+      "sourceName": "Istat",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-16",
+      "collectedAt": "2026-10-17",
+      "category": "work-economy",
+      "topics": [
+        "日常物价",
+        "家庭消费",
+        "数据阅读"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "口语角度：日常消费与家庭预算；区分同比、环比和不同指数。284词B1草稿及两类题待独立审，候选本身不可发布。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-17",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-settembre-2026/",
+          "checkedAt": "2026-10-17",
+          "notes": "完整网页版新闻正文含所有数据段落与Il commento已读；不声称阅读附件方法学PDF。此改写只据网页正文。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "页面Data pubblicazione:16 Ottobre 2026；Periodo di riferimento:Settembre 2026是统计期。",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-settembre-2026/"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "意大利国家统计局发布的本国统计原创意大利语新闻，独立English入口；没有翻译署名或外部转载标记。",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-settembre-2026/",
+          "author": "Istat",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构来源判断，不证明作者母语或最早草稿语言。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Istat Note legali明确除另有说明外所有内容CC BY4，允许任何用途分享与改编；机构本文没有不同正文许可或第三方署名。",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-settembre-2026/",
+            "https://www.istat.it/note-legali/"
+          ],
+          "scope": "Istat机构意大利语网页新闻正文的分级改写、中文翻译与基于正文的教学练习。",
+          "exclusions": [
+            "图片、标识、商标及第三方内容",
+            "未读取的PDF附件与其他外部作品"
+          ],
+          "attributionRequirements": [
+            "标注Istat与原新闻URL",
+            "链接CC BY4并说明分级改写、翻译和教学补充",
+            "不暗示Istat背书"
+          ],
+          "basis": "site-policy-explicit-license",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-17",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 59,
+          "checkedAt": "2026-10-17",
+          "sourceUrlAlreadyPublished": true,
+          "titleAlreadyPublished": true
+        }
+      },
+      "linkToArticleId": "2026-10-17-it-prezzi-settembre"
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

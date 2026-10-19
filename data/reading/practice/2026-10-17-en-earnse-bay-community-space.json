@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-17-en-earnse-bay-community-space",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 56,
+      "answer": "contractor",
+      "options": [
+        "contractor",
+        "passenger",
+        "customer",
+        "librarian"
+      ],
+      "explanation": "到施工现场开始工作的建筑“承包商”：building contractor。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 94,
+      "answer": "residents",
+      "options": [
+        "ingredients",
+        "residents",
+        "instructions",
+        "instruments"
+      ],
+      "explanation": "与游客并列的是当地“居民”。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 9,
+      "answer": "funding",
+      "options": [
+        "translating",
+        "borrowing",
+        "funding",
+        "forgetting"
+      ],
+      "explanation": "Defra 正为建筑“提供资金”；is funding。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 65,
+      "answer": "heritage",
+      "options": [
+        "furniture",
+        "traffic",
+        "luggage",
+        "heritage"
+      ],
+      "explanation": "natural heritage 指自然遗产。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 7,
+      "answer": "construction",
+      "options": [
+        "construction",
+        "translation",
+        "conversation",
+        "celebration"
+      ],
+      "explanation": "工地和部分停车场关闭发生在“施工”期间。"
+    }
+  ]
+}

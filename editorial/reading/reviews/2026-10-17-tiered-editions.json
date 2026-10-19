@@ -1,0 +1,338 @@
+{
+  "editionDate": "2026-10-17",
+  "baseCommit": "6e37637f88350eaee7a1adb87272e01e9618f39c",
+  "qualityStatus": "PASS",
+  "scope": "5 independent native-language editions, 25 cloze and 20 comprehension questions",
+  "wordCountMethod": "Foreign body whitespace tokens containing a Unicode letter or number; excludes standalone punctuation, Chinese and headings. CEFR editorial estimates.",
+  "historicalFilesUnchanged": 126,
+  "missingSlots": [
+    {
+      "language": "it",
+      "tier": "A2",
+      "reason": "No additional independent recent article cleared to the required quality and reuse scope; no repeated story or translated filler."
+    },
+    {
+      "language": "it",
+      "tier": "B2",
+      "reason": "No additional independent recent article cleared to the required quality and reuse scope; no repeated story or translated filler."
+    },
+    {
+      "language": "fr",
+      "tier": "A2",
+      "reason": "No additional independent recent article cleared to the required quality and reuse scope; no repeated story or translated filler."
+    },
+    {
+      "language": "fr",
+      "tier": "B2",
+      "reason": "No additional independent recent article cleared to the required quality and reuse scope; no repeated story or translated filler."
+    },
+    {
+      "language": "de",
+      "tier": "A2",
+      "reason": "No additional independent recent article cleared to the required quality and reuse scope; no repeated story or translated filler."
+    },
+    {
+      "language": "de",
+      "tier": "B1",
+      "reason": "No additional independent recent article cleared to the required quality and reuse scope; no repeated story or translated filler."
+    },
+    {
+      "language": "en",
+      "tier": "B2",
+      "reason": "No additional independent recent article cleared to the required quality and reuse scope; no repeated story or translated filler."
+    }
+  ],
+  "freshnessNotice": "French source dated 2026-09-09 is a 38-day, 90-day-window fallback. All original dates retained.",
+  "rightsBoundary": "Text only. No third-party media/quotes or linked report text. French CC BY-SA3.0FR share-alike applies to adaptations. German supporting old explainers are credited background, not fresh stories. GOV.UK original pages and terms confirm OGLv3; direct National Archives license fetch returned403 and was not bypassed.",
+  "articles": [
+    {
+      "id": "2026-10-17-fr-acceder-aux-metiers-culturels",
+      "language": "fr",
+      "level": "B1",
+      "bodyWords": 283,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Culture et handicap : 17 recommandations pour l’accès à l’emploi",
+        "url": "https://www.culture.gouv.fr/actualites/culture-et-handicap-17-recommandations-pour-l-acces-a-l-emploi",
+        "publishedAt": "2026-09-09",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 38,
+      "license": {
+        "name": "CC BY-SA 3.0 France",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidenceUrl": "https://www.culture.gouv.fr/mentions-legales"
+      },
+      "sha256": {
+        "articles": "14354ea8551a065a4413f538d556aab192b2f0808abbc1b155c1eda5611d54b4",
+        "practice": "70c9497671099536a143414851db07659cb1caa26ac8c029fa895148382ef466",
+        "comprehension": "ecb7c857ee484ee7eceb83eb7cf0f1eb0ef635b3810ece6d6eadef81315a320f"
+      }
+    },
+    {
+      "id": "2026-10-17-de-lernmaterialien-mit-ki",
+      "language": "de",
+      "level": "B2",
+      "bodyWords": 538,
+      "source": {
+        "name": "OERinfo – Die Informationsstelle OER",
+        "title": "Die Mischung macht’s: Kennzeichnung und Lizenzierung von Materialien mit KI-Anteil",
+        "url": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
+        "publishedAt": "2026-09-23",
+        "lang": "de"
+      },
+      "sourceAgeDays": 24,
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "sha256": {
+        "articles": "366db7230081467fa5655d713ae6cc63c8e772648dce9c00b0a06138a1613a97",
+        "practice": "1b036235274fa3798e33aae1675eb4ea527f547398c1ec2365c7e715c2ec00c6",
+        "comprehension": "498a3b1d4c83d95a94f787b4d9486ddf6162a3b024116d36d9e187a8ffca9ce7"
+      }
+    },
+    {
+      "id": "2026-10-17-it-prezzi-settembre",
+      "language": "it",
+      "level": "B1",
+      "bodyWords": 284,
+      "source": {
+        "name": "Istat",
+        "title": "Prezzi al consumo – Settembre 2026",
+        "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-settembre-2026/",
+        "publishedAt": "2026-10-16",
+        "lang": "it"
+      },
+      "sourceAgeDays": 1,
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "sha256": {
+        "articles": "efede3c9ae065feddd791003099280d6cb1b4c347c10e79eaa5740f8aa154eb9",
+        "practice": "fbf72251d0a5bf283dcbac3c2eeb82706877e33d9cb75ad07ffd125c1511f57e",
+        "comprehension": "af13278d36f04c49f1850be5542a92b553f11ce28dd2a8a4e0a3120a833c8296"
+      }
+    },
+    {
+      "id": "2026-10-17-en-a-surprise-on-the-beach",
+      "language": "en",
+      "level": "A2",
+      "bodyWords": 156,
+      "source": {
+        "name": "Natural England",
+        "title": "Pine marten caught on camera in Suffolk nature reserve 'first'",
+        "url": "https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first",
+        "publishedAt": "2026-10-07",
+        "lang": "en"
+      },
+      "sourceAgeDays": 10,
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sha256": {
+        "articles": "a069bf0fd6ba64fd1d1a3fa73db864f1b7d744a0ab214a9ca313c99836beb38b",
+        "practice": "c41fb1f6dd90b896da03310f2574b764f24f6be86b1647cb5e10abccc4f6220a",
+        "comprehension": "967bf5f906813581475ee33b7e8b34924103048c0e8ff671aa2450861448e3a7"
+      }
+    },
+    {
+      "id": "2026-10-17-en-earnse-bay-community-space",
+      "language": "en",
+      "level": "B1",
+      "bodyWords": 293,
+      "source": {
+        "name": "Natural England",
+        "title": "Construction begins at Earnse Bay's coastal community hub",
+        "url": "https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub",
+        "publishedAt": "2026-10-06",
+        "lang": "en"
+      },
+      "sourceAgeDays": 11,
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "sha256": {
+        "articles": "0ec7582b49a885dc49769f429606a7da0dad6f54d340d46feb6d204c5c0ab173",
+        "practice": "1d41aaefe77e67c991f159ae43461bc902a09abcf31d62121092bd10bcecbe53",
+        "comprehension": "d20240b7b980d4e9a5ae058cea4a3b62b9d78ce6343aeefd953e1b32fbe69b3b"
+      }
+    }
+  ],
+  "independentReview": {
+    "method": "Initial blind solutions saved before key access. Revised questions re-reviewed; EN/IT revisions seen at keyed stage and are not represented as new blind tests. Full institutional source pages independently opened and read; rights notices read, with OGL licence full page fetch 403 but GOV.UK page-level OGL v3 notice verified. No source media or third-party quotes used.",
+    "editions": [
+      {
+        "id": "2026-10-17-fr-acceder-aux-metiers-culturels",
+        "sourceUrl": "https://www.culture.gouv.fr/actualites/culture-et-handicap-17-recommandations-pour-l-acces-a-l-emploi",
+        "sourceDate": "2026-09-09",
+        "level": "B1",
+        "bodyWordCount": 283,
+        "status": "approved",
+        "blockingIssues": [],
+        "checks": {
+          "sourceFactsNumbersDates": "pass",
+          "translationAndInflections": "pass",
+          "contextualClozeUniqueWithChineseCue": "pass",
+          "clozeCount": 5,
+          "comprehensionUniqueAndEvidence": "pass",
+          "revisedAnswerIndices": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "clozeAnswerPositions": [
+            0,
+            1,
+            2,
+            3,
+            0
+          ]
+        }
+      },
+      {
+        "id": "2026-10-17-de-lernmaterialien-mit-ki",
+        "sourceUrl": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
+        "sourceDate": "2026-09-23",
+        "level": "B2",
+        "bodyWordCount": 538,
+        "status": "approved",
+        "blockingIssues": [],
+        "checks": {
+          "sourceFactsNumbersDates": "pass",
+          "translationAndInflections": "pass",
+          "contextualClozeUniqueWithChineseCue": "pass",
+          "clozeCount": 5,
+          "comprehensionUniqueAndEvidence": "pass",
+          "revisedAnswerIndices": [
+            2,
+            0,
+            3,
+            1,
+            2
+          ],
+          "clozeAnswerPositions": [
+            2,
+            0,
+            3,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "id": "2026-10-17-it-prezzi-settembre",
+        "sourceUrl": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-settembre-2026/",
+        "sourceDate": "2026-10-16",
+        "level": "B1",
+        "bodyWordCount": 284,
+        "status": "approved",
+        "blockingIssues": [],
+        "checks": {
+          "sourceFactsNumbersDates": "pass",
+          "translationAndInflections": "pass",
+          "contextualClozeUniqueWithChineseCue": "pass",
+          "clozeCount": 5,
+          "comprehensionUniqueAndEvidence": "pass",
+          "revisedAnswerIndices": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "clozeAnswerPositions": [
+            0,
+            3,
+            2,
+            1,
+            0
+          ]
+        }
+      },
+      {
+        "id": "2026-10-17-en-a-surprise-on-the-beach",
+        "sourceUrl": "https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first",
+        "sourceDate": "2026-10-07",
+        "level": "A2",
+        "bodyWordCount": 156,
+        "status": "approved",
+        "blockingIssues": [],
+        "checks": {
+          "sourceFactsNumbersDates": "pass",
+          "translationAndInflections": "pass",
+          "contextualClozeUniqueWithChineseCue": "pass",
+          "clozeCount": 5,
+          "comprehensionUniqueAndEvidence": "pass",
+          "revisedAnswerIndices": [
+            2,
+            0,
+            1
+          ],
+          "clozeAnswerPositions": [
+            0,
+            1,
+            2,
+            3,
+            0
+          ]
+        }
+      },
+      {
+        "id": "2026-10-17-en-earnse-bay-community-space",
+        "sourceUrl": "https://www.gov.uk/government/news/construction-begins-at-earnse-bays-coastal-community-hub",
+        "sourceDate": "2026-10-06",
+        "level": "B1",
+        "bodyWordCount": 293,
+        "status": "approved",
+        "blockingIssues": [],
+        "checks": {
+          "sourceFactsNumbersDates": "pass",
+          "translationAndInflections": "pass",
+          "contextualClozeUniqueWithChineseCue": "pass",
+          "clozeCount": 5,
+          "comprehensionUniqueAndEvidence": "pass",
+          "revisedAnswerIndices": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "clozeAnswerPositions": [
+            0,
+            1,
+            2,
+            3,
+            0
+          ]
+        }
+      }
+    ],
+    "revisionSummary": [
+      "French under-3-percent item replaced because it included the 1–1.5-percent group; whole-text synthesis and option balance improved.",
+      "German rights-marker distractors replaced with plausible parallel alternatives.",
+      "Italian general-statistics question replaced with article-specific paired-rate comparison.",
+      "English weak distractors replaced; construction added to required word summary; concrete language notes replace generic notes."
+    ],
+    "firstBlindAnswers": {
+      "fr": "B/C/A/D",
+      "de": "C/A/D/B/C",
+      "it": "B/D/A/C",
+      "en-A2": "B/C/D",
+      "en-B1": "A/C/B/D"
+    },
+    "revisionRecheck": "Revised questions independently re-reviewed; no claim that key-visible EN/IT revision checks were a second fresh blind examination."
+  },
+  "validation": {
+    "articleCandidatePracticeComprehension": "PASS",
+    "practiceTests": "1790 passed,0 failed",
+    "comprehensionTests": "1204 passed,0 failed",
+    "comprehensionLoadingTests": "9 passed,0 failed",
+    "fullTests": "42 harnesses,477711 passed,0 failed,0 known issues",
+    "gitDiffCheck": "PASS"
+  },
+  "deploymentStatus": "Prepared for publication; deployment verification is a separate post-merge check."
+}
