@@ -1,0 +1,301 @@
+{
+  "verifiedAt": "2026-10-20",
+  "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
+  "entries": [
+    {
+      "id": "it-rai-hotel-a2",
+      "title": "Le parole dell'italiano: prenotare l'albergo, da oggi a mercoledì",
+      "titleZh": "预订酒店：房型与入住时间",
+      "provider": "Rai Scuola",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-cb6a6a21-4cc6-4e49-b3b5-52fb7d387671.html",
+      "kind": "lesson",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "听酒店预订情境，练习分辨房型、住宿条件与起止时间。",
+      "guideZh": "第一遍先听懂：客人要预订什么？ 第二遍记录房型、浴室设施和入住晚数。 做题后回到原站文字稿核对，再复听一次。",
+      "vocabulary": [
+        {
+          "text": "prenotare",
+          "zh": "预订"
+        },
+        {
+          "text": "camera doppia",
+          "zh": "双床房（本课语境）"
+        },
+        {
+          "text": "camera singola",
+          "zh": "单人房"
+        },
+        {
+          "text": "doccia",
+          "zh": "淋浴"
+        },
+        {
+          "text": "compreso",
+          "zh": "已包含的"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-hotel-1",
+          "prompt": "Quali camere vuole prenotare Salif?",
+          "options": [
+            "Una doppia e una singola",
+            "Due singole",
+            "Una tripla",
+            "Una doppia e una tripla"
+          ],
+          "evidenceRef": "it-transcript-402-404",
+          "answerIndex": 0,
+          "explanationZh": "他分别询问双床房与单人房是否还有空房。",
+          "promptZh": "Salif 需要怎样的房间组合？"
+        },
+        {
+          "id": "it-hotel-2",
+          "prompt": "Che cosa c’è nel bagno di tutte le camere?",
+          "options": [
+            "Solo una vasca",
+            "Una doccia",
+            "Le camere non hanno il bagno",
+            "Ci sono solo bagni comuni"
+          ],
+          "evidenceRef": "it-transcript-405-406",
+          "answerIndex": 1,
+          "explanationZh": "工作人员说明所有客房都配有带淋浴的浴室。",
+          "promptZh": "这家酒店的客房浴室有什么设施？"
+        },
+        {
+          "id": "it-hotel-3",
+          "prompt": "Quante notti vuole restare Salif?",
+          "options": [
+            "Due notti",
+            "Quattro notti",
+            "Tre notti",
+            "Cinque notti"
+          ],
+          "evidenceRef": "it-transcript-412-414",
+          "answerIndex": 2,
+          "explanationZh": "他说明住宿为三晚，离店日是星期三。",
+          "promptZh": "他打算住几晚？"
+        }
+      ],
+      "lang": "it",
+      "addedAt": "2026-10-20",
+      "verificationZh": "已依据官方文字稿核对题目；尚未实际测试媒体播放。"
+    },
+    {
+      "id": "fr-tv5-bonjour-a1",
+      "title": "Bonjour !",
+      "titleZh": "初次见面：名字与昵称",
+      "provider": "TV5MONDE · Hachette FLE",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/bonjour",
+      "availableUntil": "2028-03-04",
+      "kind": "lesson",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "跟着法国中学生练习问候、自我介绍与辨认昵称。",
+      "guideZh": "第一遍关注谁在介绍自己，不必记住所有名字。 第二遍专门听学校、班级和昵称。 做完本站原创题，也可以继续原站练习。",
+      "vocabulary": [
+        {
+          "text": "bonjour",
+          "zh": "你好（常见日间问候）"
+        },
+        {
+          "text": "salut",
+          "zh": "嗨／再见（非正式）"
+        },
+        {
+          "text": "un collège",
+          "zh": "法国初中"
+        },
+        {
+          "text": "un copain",
+          "zh": "朋友、伙伴"
+        },
+        {
+          "text": "un surnom",
+          "zh": "昵称、绰号"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr-bonjour-1",
+          "prompt": "Quel collège est nommé dans plusieurs présentations ?",
+          "options": [
+            "Le collège Victor-Hugo",
+            "Le collège Massillon",
+            "Le collège Pasteur",
+            "Le collège Jean-Moulin"
+          ],
+          "evidenceRef": "fr-transcript-school",
+          "answerIndex": 1,
+          "explanationZh": "Romain、Jeanne 和 Lisa 的介绍都提到 Massillon。",
+          "promptZh": "几位学生提到的学校叫什么？"
+        },
+        {
+          "id": "fr-bonjour-2",
+          "prompt": "Comment les copains de Gaspard l’appellent-ils ?",
+          "options": [
+            "Gaspacho",
+            "Alex",
+            "Éno",
+            "Louis"
+          ],
+          "evidenceRef": "fr-transcript-gaspard",
+          "answerIndex": 0,
+          "explanationZh": "他介绍名字之后，补充朋友们给他的昵称。",
+          "promptZh": "朋友们怎样称呼 Gaspard？"
+        },
+        {
+          "id": "fr-bonjour-3",
+          "prompt": "Dans quelle classe sont Lisa et Sami ?",
+          "options": [
+            "En 5e A",
+            "En 4e D",
+            "En 6e C",
+            "En 3e B"
+          ],
+          "evidenceRef": "fr-transcript-class",
+          "answerIndex": 2,
+          "explanationZh": "两人的自我介绍都包含 6e C。",
+          "promptZh": "Lisa 与 Sami 都提到了哪个班级？"
+        }
+      ],
+      "lang": "fr",
+      "addedAt": "2026-10-20",
+      "verificationZh": "已依据官方文字稿核对题目；尚未实际测试媒体播放。",
+      "sourcePublishedAt": "2023-11-23"
+    },
+    {
+      "id": "de-logo-ordnung",
+      "title": "Zimmer aufräumen: Team Ordnung oder Chaos?",
+      "titleZh": "整理房间：整洁派还是随性派？",
+      "provider": "ZDF logo!",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "url": "https://www.logo.de/umfrage-aufraeumen-102.html",
+      "kind": "news",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "一段关于整理房间的儿童访谈。儿童节目不等于 A2，适合按自己的理解程度选听。",
+      "guideZh": "先看原站视频，尝试辨认与整理房间有关的词。 选择听懂的一句话反复听；听不懂时不用强求整段。 记录自己的收获即可，本条不计测验分数。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "aufräumen",
+          "zh": "收拾、整理"
+        },
+        {
+          "text": "das Zimmer",
+          "zh": "房间"
+        },
+        {
+          "text": "die Ordnung",
+          "zh": "整洁、秩序"
+        },
+        {
+          "text": "das Chaos",
+          "zh": "杂乱"
+        },
+        {
+          "text": "ordentlich",
+          "zh": "整齐的"
+        }
+      ],
+      "questions": [],
+      "lang": "de",
+      "addedAt": "2026-10-20",
+      "verificationZh": "已核对官方页面；未核验音频或逐字稿，暂不设测验。母语儿童内容，未作 CEFR 等级判定；尚未实际测试媒体播放。",
+      "duration": "1:06",
+      "sourcePublishedAt": "2026-10-16"
+    },
+    {
+      "id": "en-bc-changing-plans-a2",
+      "title": "Changing plans",
+      "titleZh": "临时改约：原因与新安排",
+      "provider": "British Council LearnEnglish",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/changing-plans",
+      "kind": "lesson",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "两位朋友讨论临时变化，练习抓住改约原因与最终安排。",
+      "guideZh": "第一遍分辨：谁想改变计划？ 第二遍抓住本周与下周的安排。 先答题，再展开原站 Transcript 核对。",
+      "vocabulary": [
+        {
+          "text": "a play",
+          "zh": "戏剧演出"
+        },
+        {
+          "text": "a concert",
+          "zh": "音乐会"
+        },
+        {
+          "text": "band practice",
+          "zh": "乐队排练"
+        },
+        {
+          "text": "a nephew",
+          "zh": "侄子／外甥"
+        },
+        {
+          "text": "promise",
+          "zh": "承诺"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-plans-1",
+          "prompt": "Why can’t the theatre plan go ahead this Friday?",
+          "options": [
+            "Sachi has a business trip",
+            "Francesco has a concert",
+            "The theatre is closed",
+            "They forgot to buy train tickets"
+          ],
+          "evidenceRef": "en-transcript-29-36",
+          "answerIndex": 1,
+          "explanationZh": "Francesco 忘了本周五已有音乐会安排。",
+          "promptZh": "为什么原定本周五的剧院安排无法照常进行？"
+        },
+        {
+          "id": "en-plans-2",
+          "prompt": "What does Francesco suggest doing before the concert?",
+          "options": [
+            "Having dinner together",
+            "Watching a film together",
+            "Buying a birthday present",
+            "Going to a dance class"
+          ],
+          "evidenceRef": "en-transcript-51",
+          "answerIndex": 0,
+          "explanationZh": "他用一起吃晚饭作为当天的新安排。",
+          "promptZh": "Francesco 提议在音乐会之前做什么？"
+        },
+        {
+          "id": "en-plans-3",
+          "prompt": "When do they finally agree to see the play?",
+          "options": [
+            "This Sunday",
+            "Next Monday",
+            "Next Friday",
+            "Next month"
+          ],
+          "evidenceRef": "en-transcript-51-59",
+          "answerIndex": 2,
+          "explanationZh": "Sachi 要求他保证下周五去，Francesco 作出承诺。",
+          "promptZh": "两人最后约定何时去看戏？"
+        }
+      ],
+      "lang": "en",
+      "addedAt": "2026-10-20",
+      "verificationZh": "已依据官方文字稿核对题目；尚未实际测试媒体播放。"
+    }
+  ],
+  "schema": 1
+}

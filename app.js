@@ -594,6 +594,7 @@
       if (hasModule('collocations', l)) card('collocations', 'link', '动词搭配', tl('collocations', l), '动词与介词、宾语的固定搭配和例句。', '浏览 · 练习');
       if (hasModule('cognates', l)) card('cognates', 'join_inner', '同源词', tl('cognates', l), '和英语长得像的词，借已有词汇量抄近路。', '按词形规律分组');
       if (hasModule('course', l)) card('course', 'route', '课程路线', tl('course', l), '按教材单元推进：每课的语法重点与核心词汇一一对应。', '按单元 · 按等级');
+      card('listening', 'headphones', '外文听力', 'LISTENING', '原站音视频、中文导听与原创理解练习。', '四语 · 先听后看解析');
       card('reading', 'auto_stories', '外文精品阅读', 'READING', '逐句中文对照、语境查词与分级短篇。', '四语 · 来源可追溯');
       card('go-progress', 'insights', '学习进度', tl('progress', l), '每周走势、各等级掌握度与复习计划。',
         '已掌握 <span class="num">' + (total ? (mastered / total * 100).toFixed(1) : '0') + '%</span>');
@@ -1118,6 +1119,7 @@
   }
 
   var MODULE_OPENERS = {
+    listening: function (l) { global.ListeningApp.open(l); },
     reading: function (l) { global.ReadingApp.open(l); },
     'grammar-book': function (l) { openGrammarBook(l); },
     conjugation: function (l) {
@@ -1143,7 +1145,7 @@
 
   // ==================== 语言切换 ====================
 
-  var SECTION_ROOTS = { readingScreen: 1, homeScreen: 1, vocabScreen: 1, browseScreen: 1, grammarScreen: 1, progressScreen: 1, settingsScreen: 1 };
+  var SECTION_ROOTS = { listeningScreen: 1, readingScreen: 1, homeScreen: 1, vocabScreen: 1, browseScreen: 1, grammarScreen: 1, progressScreen: 1, settingsScreen: 1 };
 
   function syncLangSwitch() {
     var l = lang();
@@ -1177,8 +1179,9 @@
       var meta = Shell().SCREENS[current] || {};
       var target = opts.screen || (SECTION_ROOTS[current] ? current
         : meta.section === 'grammar' ? 'grammarScreen'
-          : meta.section === 'vocab' ? 'vocabScreen' : meta.section === 'reading' ? 'readingScreen' : 'homeScreen');
-      if (target === 'readingScreen') global.ReadingApp.open(key);
+          : meta.section === 'vocab' ? 'vocabScreen' : meta.section === 'listening' ? 'listeningScreen' : meta.section === 'reading' ? 'readingScreen' : 'homeScreen');
+      if (target === 'listeningScreen') global.ListeningApp.open(key);
+      else if (target === 'readingScreen') global.ReadingApp.open(key);
       else global.showScreen(target, { keepScroll: target === current });
     });
   }
@@ -1186,6 +1189,7 @@
   // ==================== 渲染调度 ====================
 
   var RENDERERS = {
+    listeningScreen: function () { global.ListeningApp.enter(lang()); },
     readingScreen: function () { global.ReadingApp.enter(lang()); },
     homeScreen: renderHome,
     vocabScreen: renderVocab,
@@ -1535,6 +1539,8 @@
 
       // 深链接直达功能模块屏时，由各模块自己的 open 负责装数据再切屏
       var R = Shell().registerOpener;
+      R('listeningScreen', function (l) { global.ListeningApp.open(l); });
+      R('listeningLessonScreen', function (l, id) { global.ListeningApp.open(l, id); });
       R('readingScreen', function (l) { global.ReadingApp.open(l); });
       R('readingArticleScreen', function (l, id) { global.ReadingApp.open(l, id); });
       R('grammarBookScreen', function (l, slug) { openGrammarBook(l, slug); });
