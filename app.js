@@ -195,6 +195,35 @@
   // ==================== 练习会话（选择题 / 拼写） ====================
 
   var session = null;
+  var QUIZ_AUDIO_KEY = 'dimenticato_quiz_auto_audio';
+  var quizAutoAudio = true;
+  try { quizAutoAudio = localStorage.getItem(QUIZ_AUDIO_KEY) !== 'false'; } catch (e) { /* default on */ }
+
+  function syncQuizAudio() {
+    var btn = $('quizAutoAudio');
+    if (!btn) return;
+    btn.setAttribute('aria-pressed', String(quizAutoAudio));
+    btn.textContent = '自动朗读：' + (quizAutoAudio ? '开' : '关');
+  }
+
+  function readQuizWord(s, manual) {
+    if (!s || !s.currentWord || (!s.engine.shouldSpeakQuestion() && !s.answered)) return;
+    if (!manual && (!quizAutoAudio || s.spokenIndex === s.quizIndex)) return;
+    s.spokenIndex = s.quizIndex;
+    var index = s.quizIndex;
+    Speaker.speak(global.Vocab.headword(s.currentWord), s.lang, function () {
+      if (session === s && s.quizIndex === index && Shell().current() === 'quizScreen') {
+        toast('暂时无法自动朗读，请点扬声器重试');
+      }
+    });
+  }
+
+  function leavePracticeScreen(id) {
+    if (session && id !== (session.mode === 'quiz' ? 'quizScreen' : 'spellScreen')) {
+      Speaker.cancel();
+      session = null; // invalidate any queued automatic next-question callback
+    }
+  }
 
   function makeEngine(s) {
     return new global.QuizEngine({
@@ -237,6 +266,7 @@
       return;
     }
     s.masteredAtStart = s.words.filter(function (w) { return s.mastered.has(w.word); }).length;
+    Speaker.cancel();
     session = s;
     global.setPracticeContext(mode);
 
@@ -295,6 +325,8 @@
     $('quizNextBtn').classList.add('hidden');
     s.hintStage = global.PracticeFlow.hintReset($('quizHint'), $('quizHintBtn'), '显示提示');
     sessionBar('quiz');
+    syncQuizAudio();
+    readQuizWord(s, false);
   }
 
   function onQuizAnswer(btn) {
@@ -317,6 +349,10 @@
       startedAt: s.startedAt
     });
     $('quizUsage').innerHTML = usageHtml(s.currentWord);
+    if (s.engine.isReverse()) {
+      $('quizSpeak').classList.remove('hidden');
+      readQuizWord(s, false);
+    }
     $('quizNextBtn').classList.remove('hidden');
     $('quizHintBtn').classList.add('hidden');
     sessionBar('quiz');
@@ -412,11 +448,13 @@
   function nextQuestion() {
     var s = session;
     if (!s) return;
+    Speaker.cancel();
     s.quizIndex += 1;
     if (s.mode === 'quiz') renderQuiz(); else renderSpell();
   }
 
   function finishSession() {
+    Speaker.cancel();
     var s = session;
     var prefix = s.mode === 'quiz' ? 'quiz' : 'spell';
     Progress.flush();
@@ -1163,6 +1201,7 @@
     if (!key) return Promise.resolve();
     var changed = key !== lang();
     if (changed) {
+      Speaker.cancel();
       Progress.flush();
       session = null;
       resetBrowse();
@@ -1278,7 +1317,14 @@
     // 选择题
     $('quizNextBtn').addEventListener('click', nextQuestion);
     $('quizSpeak').addEventListener('click', function () {
-      if (session && session.currentWord) Speaker.speak(global.Vocab.headword(session.currentWord), session.lang);
+      readQuizWord(session, true);
+    });
+    $('quizAutoAudio').addEventListener('click', function () {
+      quizAutoAudio = !quizAutoAudio;
+      try { localStorage.setItem(QUIZ_AUDIO_KEY, String(quizAutoAudio)); } catch (e) { /* session only */ }
+      syncQuizAudio();
+      if (!quizAutoAudio) Speaker.cancel();
+      else if (session) readQuizWord(session, true);
     });
     $('quizHintBtn').addEventListener('click', function () {
       if (!session) return;
@@ -1529,6 +1575,7 @@
       Speaker.init();
       bind();
       Shell().onEnter(function (id) {
+        leavePracticeScreen(id);
         renderScreen(id);
         if (id === 'spellScreen') {
           // 特殊字母键盘：按键不抢焦点（手机上失焦会收起软键盘），见 Languages.mountAccentKeys
