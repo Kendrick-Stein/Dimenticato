@@ -848,3 +848,9 @@ Supabase key 失效、bucket 或表结构不匹配时，社区上传 / 浏览 / 
 - **改词库数据** → `data/vocab/<code>.js` 的构建脚本（§8.1）+ `node scripts/validate_vocab.js`
 - **改模块数据** → `docs/data-schema.md` + §8 的构建 / 规范化脚本 + `node scripts/validate_modules.js`
 - **跑测试** → `npm test`（`node tests/run-headless.js [filter]`）
+
+### 2026-10-20：四语听力精选
+- `listening-app.js` + `listening.css`：首页导览卡片、顶部听力导航、四语目录和单条导听/原创理解题。路由 `#/<code>/listening` 与 `#/<code>/listening/lesson/<id>`，通过 `lib/shell.js` 和共享 loader 接入。
+- `data/listening/catalog.json`：独立 schema 1 目录；来源分级与编辑估计分开，日期/时长缺证据时省略。仅链接官方原站，不复制媒体、字幕、图片，不自动嵌入第三方播放器。
+- 学习结果仅当前页面内存，不写 localStorage、不影响词汇/SRS/阅读进度；重做清空答案与解析，切换语言回对应目录。理解题须有官方内容依据；无充分依据的条目只有导听资源。
+- `docs/listening-module.md` 定义维护边界，`tests/test-listening.js` 覆盖数据、路由、加载及安全链接。新增内容不属于每日阅读更新的自动授权范围。
