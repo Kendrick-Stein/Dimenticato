@@ -594,7 +594,7 @@
       if (hasModule('collocations', l)) card('collocations', 'link', '动词搭配', tl('collocations', l), '动词与介词、宾语的固定搭配和例句。', '浏览 · 练习');
       if (hasModule('cognates', l)) card('cognates', 'join_inner', '同源词', tl('cognates', l), '和英语长得像的词，借已有词汇量抄近路。', '按词形规律分组');
       if (hasModule('course', l)) card('course', 'route', '课程路线', tl('course', l), '按教材单元推进：每课的语法重点与核心词汇一一对应。', '按单元 · 按等级');
-      card('listening', 'headphones', '外文听力', 'LISTENING', '原站音视频、中文导听与原创理解练习。', '四语 · 先听后看解析');
+      card('listening', 'headphones', '外文听力', 'LISTENING', '听短片、练理解，积累实用表达。', '精选音视频');
       card('reading', 'auto_stories', '外文精品阅读', 'READING', '逐句中文对照、语境查词与分级短篇。', '四语 · 来源可追溯');
       card('go-progress', 'insights', '学习进度', tl('progress', l), '每周走势、各等级掌握度与复习计划。',
         '已掌握 <span class="num">' + (total ? (mastered / total * 100).toFixed(1) : '0') + '%</span>');
