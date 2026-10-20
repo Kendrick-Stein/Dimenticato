@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-en-coast-beyond-the-title",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Which interpretation best connects the anniversary with the rest of the article?",
+      "options": [
+        "The anniversary introduces a new international title that replaces local conservation arrangements.",
+        "The anniversary marks the completion of coastal research and shifts attention towards tourism.",
+        "The anniversary celebrates cooperation while explaining the continuing structures and tasks of protection.",
+        "The anniversary chiefly records how one council has taken responsibility for the whole coast."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s1",
+        "s2",
+        "s11",
+        "s12",
+        "s14",
+        "s18",
+        "s19"
+      ],
+      "explanationZh": "文章既庆祝合作成果，也解释称号、实际保护及合作管理，并指出保护仍需继续；并非新称号、任务完成或单一议会管理。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "How does the article relate the two distances it gives?",
+      "options": [
+        "Ninety-five miles describes the heritage site; 2,700 miles describes the wider coast path when complete.",
+        "Ninety-five miles describes the coast path; 2,700 miles describes the heritage site.",
+        "Ninety-five miles describes Dorset’s coastline; 2,700 miles describes the combined heritage sites.",
+        "Ninety-five miles describes the anniversary walk; 2,700 miles describes the protected landscapes."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s17"
+      ],
+      "explanationZh": "95英里是本遗产地从Exmouth至Studland Bay的范围；2700英里是整个海岸步道完工后的长度。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What role is given to Dorset Council and Devon County Council?",
+      "options": [
+        "They provide the geological evidence for the original UNESCO inscription.",
+        "They organise all of the scientific research described in the report.",
+        "They issue the World Heritage designation for the entire coast.",
+        "They coordinate cooperation among a wide range of stakeholders."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "s14明确两个议会协调多方合作；未将联合国认定或全部科研交给它们。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "What follows from the distinction about World Heritage status?",
+      "options": [
+        "The site’s habitats are protected only when international visitor numbers remain high.",
+        "Understanding protection requires looking at existing designations and planning policies as well as the title.",
+        "The two National Landscapes replace the need for cooperation among local organisations.",
+        "The title applies to geological features, while wildlife is outside the management described."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9",
+        "s11",
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "世界遗产地位本身不是英国法定认定，实际保护借助既有认定和规划；这不排除野生生物保护，也不取代合作。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Which pair of activities belongs to the planned anniversary celebrations?",
+      "options": [
+        "Introducing new statutory sites and extending the heritage boundary.",
+        "Opening research laboratories and completing the national coast path.",
+        "Cleaning beaches and holding events with local artists.",
+        "Counting visitors and selecting new international conservation partners."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s16"
+      ],
+      "explanationZh": "周年计划包括清洁海滩、步行和当地艺术家活动；其他选项把不同背景或未提及的行动混作庆典计划。"
+    }
+  ]
+}

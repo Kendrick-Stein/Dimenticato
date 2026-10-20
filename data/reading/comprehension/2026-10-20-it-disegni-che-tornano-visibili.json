@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-it-disegni-che-tornano-visibili",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale sintesi descrive meglio il progetto presentato?",
+      "options": [
+        "Digitalizzare i disegni per sostituire la conservazione dei documenti originali.",
+        "Finanziare le copie digitali con la vendita immediata dei modelli già prodotti.",
+        "Valorizzare un archivio con copie digitali, modelli ed esposizioni.",
+        "Concentrare l’accordo sulla consultazione online, rinviando modelli ed esposizioni a un’altra intesa."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s5",
+        "s7",
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第5、7、10及12句把数字化、模型与展览列为同一协议中的不同工作；没有说以数字副本替代原件保存，也没有说靠已制成模型的即时销售支付数字化费用，或把模型和展览留给另一协议。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Come vengono divise le spese per i due lavori principali?",
+      "options": [
+        "L’azienda paga i prototipi; la Direzione generale Archivi paga la digitalizzazione.",
+        "L’azienda paga la digitalizzazione; la Direzione generale Archivi paga i prototipi.",
+        "L’azienda paga entrambi i lavori; il Ministero divide solo i ricavi.",
+        "Il Ministero paga entrambi i lavori; l’azienda organizza solo le visite."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s7"
+      ],
+      "explanationZh": "第5句说明数字化费用由档案总局承担，第7句说明企业自费制作原型。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quale coppia di scadenze è prevista nell’accordo?",
+      "options": [
+        "Sei mesi per i disegni e cinque anni per i prototipi.",
+        "Dodici mesi per i disegni e sei mesi per i prototipi.",
+        "Cinque anni per i disegni e dodici mesi per i prototipi.",
+        "Sei mesi per i disegni e dodici mesi per i prototipi."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "数字化图纸计划十二个月内交付，至少十个模型原型计划六个月内完成；五年是协议期限。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Anche se i prototipi fossero pronti entro sei mesi, quale condizione dovrebbe essere rispettata prima della vendita?",
+      "options": [
+        "La consegna di tutti i disegni digitalizzati.",
+        "Il trasferimento dell’archivio a Roma.",
+        "La prenotazione delle prime visite pubbliche.",
+        "L’approvazione delle riproduzioni da parte del Ministero."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s9"
+      ],
+      "explanationZh": "第9句把文化部批准列为销售前的条件；制作完成并不自动等于获准出售。其他选项不是正文规定的销售条件。",
+      "promptZh": "即使模型原型在六个月内准备好了，销售前仍须满足哪项条件？"
+    }
+  ]
+}

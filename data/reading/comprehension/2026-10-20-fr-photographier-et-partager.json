@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-fr-photographier-et-partager",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle idée relie les étapes techniques et sociales présentées dans le texte ?",
+      "promptZh": "什么观点把文中介绍的技术与社会阶段联系起来？",
+      "options": [
+        "Les innovations ont rapproché la photographie de la peinture avant de la remplacer.",
+        "Les changements techniques ont surtout servi à conserver les mêmes usages professionnels.",
+        "La photographie est devenue plus accessible, tandis que ses fonctions et ses regards se diversifiaient.",
+        "La diffusion des photographies a progressé surtout grâce à une réduction de leur contenu artistique."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10",
+        "s11",
+        "s13",
+        "s14",
+        "s17",
+        "s20",
+        "s21",
+        "s23"
+      ],
+      "explanationZh": "全文同时说明便利性的提升和记录、信息、艺术表达等用途的扩展；没有说摄影取代绘画、用途不变或艺术含量减少。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quelle différence le texte établit-il entre la mission confiée aux cinq photographes en 1851 et la pratique de Cameron ?",
+      "promptZh": "文章如何区分1851年的摄影考察任务与卡梅伦的实践？",
+      "options": [
+        "La première documente des édifices ; la seconde explore des choix expressifs de cadrage et de lumière.",
+        "La première simplifie le développement ; la seconde organise la diffusion des images dans la presse.",
+        "La première privilégie la couleur ; la seconde conserve des vues menacées de disparition.",
+        "La première produit des portraits privés ; la seconde réduit les temps de pose sur métal."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "1851年的任务记录建筑；卡梅伦则用构图、光线和模糊效果形成表现力，不能把后来的技术或其他用途错配到两者。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi le premier Kodak a-t-il facilité la pratique, selon l’article ?",
+      "promptZh": "据文章，第一款柯达相机为何让摄影实践更容易？",
+      "options": [
+        "L’appareil transmettait directement les images aux journaux.",
+        "Les photographies pouvaient être consultées comme fichiers.",
+        "Les utilisateurs choisissaient moins de sujets à photographier.",
+        "L’entreprise réalisait le développement à la place de l’utilisateur."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "公司接手冲洗，用户不必掌握全部技术操作；文件即时查看属于后来的数码阶段，并非1888年柯达的原因。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Comment le texte distingue-t-il le Polaroid et les appareils numériques ?",
+      "promptZh": "文章怎样区分宝丽来与数码相机？",
+      "options": [
+        "Le Polaroid simplifie la diffusion sociale ; le numérique confie le développement à une entreprise.",
+        "Le Polaroid raccourcit l’attente du résultat ; le numérique rend des fichiers immédiatement consultables.",
+        "Le Polaroid documente les monuments ; le numérique transforme les images en plaques uniques.",
+        "Le Polaroid introduit la presse illustrée ; le numérique rend les portraits accessibles aux familles."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s19",
+        "s20"
+      ],
+      "explanationZh": "两者都涉及等待时间的缩短，但文章特别说明数码相机把图像存成可立即查看的文件；其他选项混淆历史阶段。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Que permet de comprendre le rapprochement entre Cameron, Vu et Magnum Photos ?",
+      "promptZh": "把卡梅伦、《Vu》和马格南图片社联系起来，可以理解什么？",
+      "options": [
+        "L’importance d’une image dépend principalement de la vitesse avec laquelle elle est produite.",
+        "La valeur documentaire disparaît lorsque le photographe adopte un regard personnel.",
+        "Les photographes ont attendu les fichiers numériques pour construire des récits visuels.",
+        "Les images pouvaient exprimer un regard et raconter l’actualité avant les appareils numériques."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11",
+        "s17",
+        "s18",
+        "s20"
+      ],
+      "explanationZh": "卡梅伦的表现性实践、《Vu》的新闻叙述和马格南的作者地位都早于数码相机，说明个人视角与叙事不是数码时代才出现的。"
+    }
+  ]
+}

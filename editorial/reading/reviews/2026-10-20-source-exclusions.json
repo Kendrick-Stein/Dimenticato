@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-20",
+  "scope": "Source discovery exclusions and unverified leads; not publication-ready material.",
+  "germanReserveLeads": [
+    {
+      "url": "https://open-educational-resources.de/oer-und-das-urheberrecht-ein-ueberblick/",
+      "title": "OER und das Urheberrecht – ein Überblick",
+      "status": "collected-only",
+      "reason": "German authored overview by Jens Crueger republished at iRights Aug26 with explicitCCBY4.0. Primary original fetch timed out; first date unverified, not ready for conversion."
+    },
+    {
+      "url": "https://open-educational-resources.de/freie-bildungsmaterialien-zu-pubertaet-und-organspende-der-siemens-stiftung/",
+      "title": "Freie Bildungsmaterialien zu Pubertät und Organspende der Siemens Stiftung",
+      "status": "collected-only",
+      "reason": "Sidebar lead, original full text timed out twice. Date/fulltext/licence not verified. No adaptation."
+    }
+  ],
+  "germanExclusions": [
+    {
+      "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/577276/das-derzeitige-fundament-von-ki-ist-nicht-tragfaehig/",
+      "reason": "May4 outside90days and expressly translated from English interview; not nativeGerman slot."
+    },
+    {
+      "url": "https://open-educational-resources.de/querschnittsthemen/didaktik/",
+      "reason": "Fachtag item originalMay21 despite updateOct16; no date laundering."
+    },
+    {
+      "url": "https://netzpolitik.org/2026/breakpoint-im-gleichschritt-der-cowboystiefel/",
+      "reason": "Existing NC compatibility unresolved; remains link-only."
+    }
+  ],
+  "italianExclusions": [
+    {
+      "url": "https://archivi.cultura.gov.it",
+      "reason": "A golden-seal archive lead could not be retrieved (cache miss/503). Not converted, and no full-text or rights approval claimed."
+    }
+  ]
+}

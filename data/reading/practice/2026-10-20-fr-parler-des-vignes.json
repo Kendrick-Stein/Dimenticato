@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-fr-parler-des-vignes",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 35,
+      "answer": "habitants",
+      "options": [
+        "visiteurs",
+        "habitants",
+        "élèves",
+        "artistes"
+      ],
+      "explanation": "中文说的是当地“居民”，应恢复原文 habitants；habitants 是复数，与 les 一致。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 59,
+      "answer": "échanger",
+      "options": [
+        "construire",
+        "voyager",
+        "échanger",
+        "dessiner"
+      ],
+      "explanation": "这里是围绕问题“交流”，故用 échanger；vont 后接动词原形。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 24,
+      "answer": "panneaux",
+      "options": [
+        "panneaux",
+        "bureaux",
+        "bateaux",
+        "cadeaux"
+      ],
+      "explanation": "展览由十二块“展板”组成，原词 panneaux；panneau 的复数结尾为 -eaux。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 4,
+      "answer": "témoignages",
+      "options": [
+        "paysages",
+        "messages",
+        "personnages",
+        "témoignages"
+      ],
+      "explanation": "这些镜头前的经历分享在原文称为 témoignages，不是风景或人物；注意复数 -s。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 27,
+      "answer": "débat",
+      "options": [
+        "repas",
+        "voyage",
+        "débat",
+        "concert"
+      ],
+      "explanation": "原文说放映后进行“讨论”，恢复 débat，阳性单数名词。"
+    }
+  ]
+}

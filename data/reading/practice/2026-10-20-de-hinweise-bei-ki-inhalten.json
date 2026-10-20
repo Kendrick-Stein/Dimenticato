@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-de-hinweise-bei-ki-inhalten",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 78,
+      "answer": "vertrauen",
+      "options": [
+        "vertrauen",
+        "vergessen",
+        "verkaufen",
+        "besuchen"
+      ],
+      "explanation": "按原文恢复 vertrauen，此处意为“信任”。jemandem/etwas vertrauen，支配第三格。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 35,
+      "answer": "enthält",
+      "options": [
+        "verliert",
+        "enthält",
+        "bezahlt",
+        "schließt"
+      ],
+      "explanation": "按原文恢复 enthält，此处意为“包含”。enthalten 的第三人称单数现在时。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 11,
+      "answer": "erschien",
+      "options": [
+        "verschwand",
+        "gewann",
+        "erschien",
+        "blieb"
+      ],
+      "explanation": "按原文恢复 erschien，此处意为“发表；出版”。erscheinen 的过去时第三人称单数。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 41,
+      "answer": "Hinweis",
+      "options": [
+        "Vertrag",
+        "Besuch",
+        "Versuch",
+        "Hinweis"
+      ],
+      "explanation": "按原文恢复 Hinweis，此处意为“提示；说明”。der Hinweis，复数 Hinweise。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 64,
+      "answer": "kostenlos",
+      "options": [
+        "kostenlos",
+        "zufällig",
+        "heimlich",
+        "persönlich"
+      ],
+      "explanation": "按原文恢复 kostenlos，此处意为“免费地”。这里修饰 lesen。 其他选项不能表达本句中文提示中的意思。"
+    }
+  ]
+}

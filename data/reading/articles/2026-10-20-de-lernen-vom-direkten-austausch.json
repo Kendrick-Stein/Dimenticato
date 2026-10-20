@@ -1,0 +1,308 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-de-lernen-vom-direkten-austausch",
+  "storyId": "oerinfo-forums-2026-09-01",
+  "lang": "de",
+  "date": "2026-10-20",
+  "title": "Was ein Gespräch sichtbar machen kann",
+  "titleZh": "一次交流能让什么变得可见",
+  "summaryZh": "OERinfo 的访谈交流揭示：网上看不到的活动不一定不存在，开放材料的潜力也需要时间、知识和质量保障才能发挥。",
+  "level": "B2",
+  "levelReason": "编辑估计：比较两种调查视角，区分不同样本及比例含义，含抽象名词、条件、限制和较长从句；不得把小规模交流推广为所有机构的结论。",
+  "category": "education",
+  "topics": [
+    "知识共享",
+    "职业教育",
+    "学习资源"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "OERinfo – Die Informationsstelle OER",
+    "title": "Zentrale Erkenntnisse aus den OERinfo-Austauschforen für Elementarbildung und berufliche Bildung",
+    "url": "https://open-educational-resources.de/zentrale-erkenntnisse-aus-den-oerinfo-austauschforen-fuer-elementar-und-berufliche-bildung/",
+    "publishedAt": "2026-09-01",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者 Johannes Appel für OERinfo – Die Informationsstelle OER；原文及许可链接见上。Dimenticato 进行德语分级改写、中文翻译及教学补充；本文和配套练习按 CC BY 4.0 提供。作者与来源机构未认可或认证本教学材料。",
+  "adaptation": "2026-10-20 整理。原发2026年9月1日，为49天的90天窗口备用素材；介绍的线上交流发生于2026年6月。只依据这篇回顾，不复用外链论文或问卷文本，不把小样本交流当总体统计。 不使用图片、标志、评论、外链报告正文或第三方引语。词汇解释、口语问题和练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Wie viel lässt sich über eine Bildungseinrichtung erfahren, wenn man nur ihre öffentlich sichtbaren Angebote untersucht, und was bleibt dabei möglicherweise verborgen?",
+      "zh": "如果只研究一家教育机构公开可见的服务，能了解多少，又可能遗漏什么？",
+      "glosses": [
+        {
+          "surface": "verborgen",
+          "lemma": "verborgen",
+          "zh": "隐藏的；未被看见的",
+          "note": "verborgen bleiben：仍然隐藏；这里指外部检索难以发现的情况。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Ein am 1. September 2026 veröffentlichter Beitrag von Johannes Appel für OERinfo zeigt, warum der direkte Austausch eine solche Außenperspektive sinnvoll ergänzen kann.",
+      "zh": "Johannes Appel 于2026年9月1日为 OERinfo 发表的文章说明，为什么直接交流能够有效补充这种外部视角。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Der Bericht blickt auf Online-Veranstaltungen im Juni 2026 zurück, bei denen Beteiligte aus der frühen und der beruflichen Bildung über offene Bildungsmaterialien sprachen.",
+      "zh": "这篇报道回顾了2026年6月的线上活动，早期教育和职业教育领域的参与者在会上讨论了开放学习材料。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Vor diesen Gesprächen hatte das Team ausgewählte Institutionen mithilfe standardisierter Online-Recherchen untersucht und ihre erkennbaren Aktivitäten im Bereich Open Educational Resources, kurz OER, eingeschätzt.",
+      "zh": "在这些交流之前，团队通过标准化网络检索研究了选定的机构，并评估了它们在开放教育资源（简称 OER）方面可见的活动。",
+      "glosses": [
+        {
+          "surface": "eingeschätzt",
+          "lemma": "einschätzen",
+          "zh": "评估",
+          "note": "einschätzen 的第二分词，与 hatte 构成过去完成时。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Bei rund siebzig Prozent der untersuchten Einrichtungen waren keine entsprechenden Aktivitäten sichtbar; das bedeutete jedoch zunächst nur, dass die Recherche keine solchen Hinweise gefunden hatte.",
+      "zh": "在约百分之七十的被研究机构中，看不到相关活动；但这首先只意味着检索没有找到这样的线索。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Anschließend wurden gezielt Personen und Institutionen angesprochen, die sich mit ihren Angeboten bereits in der Nähe offener Bildungsarbeit bewegten.",
+      "zh": "随后，团队有针对性地联系了一些个人和机构，它们提供的服务已经接近开放教育的范畴。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Eine begleitende Vorbefragung sollte klären, welche Erfahrungen diese Beteiligten mit OER hatten, welche Hindernisse sie wahrnahmen und welche Unterstützung sie sich wünschten; dafür wurden sieben teilweise offene und teilweise geschlossene Fragen gestellt.",
+      "zh": "配套的前期调查旨在了解这些参与者有哪些开放教育资源经验、感受到哪些障碍，以及希望获得什么支持；为此设置了七个问题，其中一部分开放作答，一部分限定选项。",
+      "glosses": [
+        {
+          "surface": "Hindernisse",
+          "lemma": "Hindernis",
+          "zh": "障碍",
+          "note": "das Hindernis，复数 Hindernisse。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Daran nahmen vierzehn Personen teil, jeweils sieben aus den beiden Bildungsbereichen; dreizehn von ihnen kannten die Begriffe OER oder offene Bildungsmaterialien.",
+      "zh": "十四人参加了调查，两个教育领域各七人；其中十三人知道 OER 或开放学习材料这些概念。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Nur eine befragte Person berichtete, ihr seien bislang keine OER-Aktivitäten an der eigenen Institution bekannt, während die anderen sehr unterschiedliche Erfahrungen beschrieben.",
+      "zh": "只有一位受访者表示，据其所知，自己所在机构目前没有开放教育资源活动，而其他人描述了各种不同的经验。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Diese reichten von ersten Überlegungen und der gelegentlichen Nutzung fremder Materialien bis zur Veröffentlichung eigener Angebote oder zum Betrieb gemeinsamer Portale.",
+      "zh": "这些经验从初步思考、偶尔使用他人的材料，到发布自己的内容或运营共同门户网站，不一而足。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Die Befragung und die vorherige Online-Recherche betrafen unterschiedliche Zugänge; ihre Zahlen dürfen daher nicht wie zwei Messungen derselben repräsentativen Gruppe behandelt werden.",
+      "zh": "问卷调查与此前的网络检索采用了不同的接触和观察方式；因此，不能把它们的数字当作对同一个代表性群体的两次测量。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Der Vergleich lieferte vielmehr Hinweise darauf, dass öffentlich erkennbare Aktivitäten das tatsächliche Engagement einer Institution nicht immer vollständig abbilden.",
+      "zh": "比较更重要的意义在于提示：公开可见的活动不一定能完整反映一家机构实际的投入。",
+      "glosses": [
+        {
+          "surface": "abbilden",
+          "lemma": "abbilden",
+          "zh": "反映；呈现",
+          "note": "这里并非绘图，而是呈现实际投入。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "In den anschließenden zweistündigen Austauschforen diskutierten neun Personen aus der beruflichen und elf aus der frühen Bildung, welche Chancen und Schwierigkeiten sie im Alltag sehen.",
+      "zh": "在随后各持续两小时的交流会上，九位职业教育参与者和十一位早期教育参与者讨论了他们在日常工作中看到的机会与困难。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Die Ergebnisse der Vorbefragung wurden dabei als Gesprächsimpulse eingesetzt, nicht als Vorgabe, auf die sich alle Teilnehmenden einigen mussten; nach einer Vorstellungsrunde konnten sie ihre eigenen Angebote, Erfahrungen und Herausforderungen erläutern.",
+      "zh": "前期调查的结果被用作讨论的引子，而不是要求所有参与者一致接受的规定；在自我介绍之后，他们可以说明自己的服务、经验和挑战。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Als Vorteile nannten die Befragten unter anderem den Wissenstransfer, die flexible Anpassung von Materialien und mögliche Zeitersparnisse bei deren eigener Erstellung im pädagogischen Alltag.",
+      "zh": "受访者提到的优势包括知识传递、灵活调整材料，以及在日常教育工作中自己制作材料时可能节省时间。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Gerade in der beruflichen Bildung wurde aber deutlich, dass schnell verfügbare Inhalte auch zuverlässig sein müssen, besonders wenn sie hochspezialisierte Themen behandeln.",
+      "zh": "但尤其是在职业教育中，人们也明确指出，快速获得的内容还必须可靠，特别是当它们涉及高度专业化的主题时。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Die Möglichkeit, Materialien einfach zu überarbeiten, ersetzt deshalb nicht die Aufgabe, ihre fachliche Korrektheit vor einer weiteren Nutzung zu prüfen.",
+      "zh": "因此，能够轻松修改材料，并不能取代在进一步使用前核查其专业准确性的任务。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Künstliche Intelligenz erschien in den Gesprächen sowohl als mögliche Hilfe beim Suchen und Erstellen als auch als Herausforderung für die Qualitätssicherung.",
+      "zh": "在讨论中，人工智能既被视为搜索和制作材料的潜在助手，也被视为质量保障面临的挑战。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "In der frühen Bildung stand stärker im Mittelpunkt, wie wissenschaftliche Erkenntnisse Fachkräfte erreichen und wie diese ihr Wissen untereinander weitergeben können.",
+      "zh": "在早期教育中，人们更关注科学知识如何传递给专业人员，以及他们如何彼此分享知识。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "Damit entsprechende Angebote im Arbeitsalltag nutzbar werden, sollten sie nach den Diskussionen leicht zugänglich, verständlich aufbereitet und an die Zielgruppe angepasst sein.",
+      "zh": "根据讨论，要让这些服务能在日常工作中使用，就应当让它们易于获取、表达清楚，并适合目标人群。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Fehlende Zeit war in beiden Bereichen ein zentrales Hindernis, etwa beim Einarbeiten in Lizenzfragen oder beim Suchen, Erstellen und Teilen geeigneter Materialien.",
+      "zh": "时间不足是两个领域的主要障碍，例如了解许可问题，或寻找、制作和分享合适材料时。",
+      "glosses": [
+        {
+          "surface": "Einarbeiten",
+          "lemma": "Einarbeiten",
+          "zh": "熟悉；钻研入门",
+          "note": "名词化不定式，beim Einarbeiten in + Akkusativ。"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Der Bericht beschreibt Austausch und Vernetzung deshalb als wichtige Unterstützung, ohne daraus abzuleiten, dass offene Materialien allein alle praktischen Schwierigkeiten lösen könnten.",
+      "zh": "因此，报道把交流和建立联系描述为重要的支持，但并没有据此认为仅凭开放材料就能解决所有实际困难。",
+      "glosses": [
+        {
+          "surface": "Vernetzung",
+          "lemma": "Vernetzung",
+          "zh": "建立联系；形成合作网络",
+          "note": "die Vernetzung，与 Austausch 并列。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "verborgen",
+        "lemma": "verborgen",
+        "zh": "隐藏的；未被看见的",
+        "note": "verborgen bleiben：仍然隐藏；这里指外部检索难以发现的情况。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "eingeschätzt",
+        "lemma": "einschätzen",
+        "zh": "评估",
+        "note": "einschätzen 的第二分词，与 hatte 构成过去完成时。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "Hindernisse",
+        "lemma": "Hindernis",
+        "zh": "障碍",
+        "note": "das Hindernis，复数 Hindernisse。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "abbilden",
+        "lemma": "abbilden",
+        "zh": "反映；呈现",
+        "note": "这里并非绘图，而是呈现实际投入。",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "Einarbeiten",
+        "lemma": "Einarbeiten",
+        "zh": "熟悉；钻研入门",
+        "note": "名词化不定式，beim Einarbeiten in + Akkusativ。",
+        "sentenceId": "s21"
+      },
+      {
+        "text": "Vernetzung",
+        "lemma": "Vernetzung",
+        "zh": "建立联系；形成合作网络",
+        "note": "die Vernetzung，与 Austausch 并列。",
+        "sentenceId": "s22"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "zunächst nur",
+        "zh": "首先仅仅",
+        "note": "限定可由观察结果得出的结论。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "Diese reichten von",
+        "zh": "这些从……延伸到",
+        "note": "von … bis … 表示经验范围。",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "unter anderem",
+        "zh": "其中包括；此外还有",
+        "note": "表明列举并不穷尽。",
+        "sentenceId": "s15"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "dürfen nicht … behandelt werden：用被动态说明比较上的限制。"
+      },
+      {
+        "sentenceId": "s20",
+        "note": "Damit …, sollten …：先交代目的，再给出建议。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Arbeit bleibt von außen leicht unsichtbar, und wie könnte ein Gespräch sie sichtbar machen?",
+        "zh": "哪些工作容易从外部视角中被忽略，一次交流又怎样让它们被看见？"
+      },
+      {
+        "text": "Was ist beim Teilen von Lernmaterialien wichtiger: schneller Zugang oder genaue Prüfung? Wie lässt sich beides verbinden?",
+        "zh": "分享学习材料时，快速获取和仔细核查哪个更重要？如何结合两者？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Von außen sieht man …, aber im Gespräch …",
+        "zh": "从外部能看到……，但在交流中……",
+        "note": "教学补充，可用自己的例子完成句子。"
+      },
+      {
+        "text": "Die Zahlen zeigen …; daraus folgt jedoch nicht, dass …",
+        "zh": "这些数字表明……；但由此并不能得出……",
+        "note": "教学补充，可用自己的例子完成句子。"
+      }
+    ]
+  }
+}

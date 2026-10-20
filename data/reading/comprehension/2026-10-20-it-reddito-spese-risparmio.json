@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-it-reddito-spese-risparmio",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quale periodo descrivono i dati pubblicati il 5 ottobre?",
+      "options": [
+        "I mesi da luglio a settembre 2026.",
+        "I mesi da aprile a giugno 2026.",
+        "I mesi da gennaio a marzo 2026.",
+        "I mesi da ottobre a dicembre 2026."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1"
+      ],
+      "explanationZh": "第1句明确说明第二季度是四、五、六月；发布日期是10月5日，不代表数据描述十月。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa è cresciuto più rapidamente nel periodo descritto?",
+      "options": [
+        "La parte di reddito risparmiata.",
+        "Il potere d’acquisto delle famiglie.",
+        "Il reddito disponibile delle famiglie.",
+        "La spesa delle famiglie per i consumi."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s2",
+        "s3",
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "收入增长0.4%，消费支出增长1.7%；储蓄比例与购买力则下降，因此消费支出的增幅更大。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Perché il potere d’acquisto è sceso anche se il reddito è aumentato?",
+      "options": [
+        "I prezzi sono cresciuti più del reddito.",
+        "I prezzi sono scesi meno della spesa per i consumi.",
+        "Il reddito è diminuito mentre i prezzi sono rimasti uguali.",
+        "Il reddito e i prezzi sono cresciuti allo stesso ritmo."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s6",
+        "s9"
+      ],
+      "explanationZh": "第6句说明收入虽然增长，但未赶上消费价格的上涨，因此购买力下降；其余选项对收入或价格的变化方向、速度的描述与正文不符。"
+    }
+  ]
+}

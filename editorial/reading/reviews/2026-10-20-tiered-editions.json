@@ -1,0 +1,604 @@
+{
+  "editionDate": "2026-10-20",
+  "baseCommit": "4b88db2f4ab447e78bde35bd9a2186f98e7ff263",
+  "qualityStatus": "PASS",
+  "scope": "12 independent native-language editions; IT/FR/DE/EN A2/B1/B2; 60 cloze and 48 comprehension questions",
+  "wordCountMethod": "Foreign body whitespace tokens containing a Unicode letter or number; headings/Chinese/standalone punctuation excluded. CEFR levels are editorial estimates.",
+  "historicalFilesUnchanged": 141,
+  "missingSlots": [],
+  "articles": [
+    {
+      "id": "2026-10-20-de-gemeinsam-offen-arbeiten",
+      "lang": "de",
+      "level": "B1",
+      "bodyWords": 279,
+      "source": {
+        "name": "OERinfo – Die Informationsstelle OER",
+        "title": "Zwischen Institution und Individuum: Die eigene Haltung zu Offenheit mit einem OER-Kodex kommunizieren",
+        "url": "https://open-educational-resources.de/die-eigene-haltung-zu-offenheit-mit-einem-oer-kodex-kommunizieren/",
+        "publishedAt": "2026-09-15",
+        "lang": "de"
+      },
+      "sourceAgeDays": 35,
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence": "Explicit end-of-text CC BY4.0 text licence and required author attribution verified.",
+        "evidenceUrls": [
+          "https://open-educational-resources.de/die-eigene-haltung-zu-offenheit-mit-einem-oer-kodex-kommunizieren/",
+          "https://creativecommons.org/licenses/by/4.0/"
+        ],
+        "scope": "Named author original institutional article narrative; German adaptation and Chinese translation with separately disclosed teaching additions.",
+        "exclusions": [
+          "Images, logos and multimedia",
+          "Third-party quotations, linked reports, questionnaire wording and comments"
+        ],
+        "attributionRequirements": [
+          "Credit Sonja Philipp, DHBW Mosbach für OERinfo – Die Informationsstelle OER",
+          "Link source and CC BY4.0",
+          "Retain original date and disclose adaptation/translation/teaching additions",
+          "No publisher endorsement"
+        ],
+        "basis": "explicit text licence and CC permission for adaptations",
+        "reviewBeforeConversionRequired": true
+      },
+      "lengthNote": "B1 279 words is within approximate 280-word target tolerance; no padding."
+    },
+    {
+      "id": "2026-10-20-de-hinweise-bei-ki-inhalten",
+      "lang": "de",
+      "level": "A2",
+      "bodyWords": 157,
+      "source": {
+        "name": "iRights.info",
+        "title": "Kennzeichnung von Medieninhalten in Zeiten generativer KI – ein neues Thesenpapier von iRights.Lab",
+        "url": "https://irights.info/artikel/kennzeichnung-von-medieninhalten-in-zeiten-generativer-ki-ein-neues-thesenpapier-von-irights-lab/32908",
+        "publishedAt": "2026-10-08",
+        "lang": "de"
+      },
+      "sourceAgeDays": 12,
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence": "Original article footer CC BY4.0 unless otherwise noted; no contrary text credit. Impressum expressly permits commercial and noncommercial sharing.",
+        "evidenceUrls": [
+          "https://irights.info/artikel/kennzeichnung-von-medieninhalten-in-zeiten-generativer-ki-ein-neues-thesenpapier-von-irights-lab/32908",
+          "https://creativecommons.org/licenses/by/4.0/",
+          "https://irights.info/impressum-2"
+        ],
+        "scope": "Named author original institutional article narrative; German adaptation and Chinese translation with separately disclosed teaching additions.",
+        "exclusions": [
+          "Images, logos and multimedia",
+          "Third-party quotations, linked reports, questionnaire wording and comments"
+        ],
+        "attributionRequirements": [
+          "Credit Jens Crueger",
+          "Link source and CC BY4.0",
+          "Retain original date and disclose adaptation/translation/teaching additions",
+          "No publisher endorsement"
+        ],
+        "basis": "explicit text licence and CC permission for adaptations",
+        "reviewBeforeConversionRequired": true
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-de-lernen-vom-direkten-austausch",
+      "lang": "de",
+      "level": "B2",
+      "bodyWords": 503,
+      "source": {
+        "name": "OERinfo – Die Informationsstelle OER",
+        "title": "Zentrale Erkenntnisse aus den OERinfo-Austauschforen für Elementarbildung und berufliche Bildung",
+        "url": "https://open-educational-resources.de/zentrale-erkenntnisse-aus-den-oerinfo-austauschforen-fuer-elementar-und-berufliche-bildung/",
+        "publishedAt": "2026-09-01",
+        "lang": "de"
+      },
+      "sourceAgeDays": 49,
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence": "Explicit end-of-text CC BY4.0 text licence and required author attribution verified.",
+        "evidenceUrls": [
+          "https://open-educational-resources.de/zentrale-erkenntnisse-aus-den-oerinfo-austauschforen-fuer-elementar-und-berufliche-bildung/",
+          "https://creativecommons.org/licenses/by/4.0/"
+        ],
+        "scope": "Named author original institutional article narrative; German adaptation and Chinese translation with separately disclosed teaching additions.",
+        "exclusions": [
+          "Images, logos and multimedia",
+          "Third-party quotations, linked reports, questionnaire wording and comments"
+        ],
+        "attributionRequirements": [
+          "Credit Johannes Appel für OERinfo – Die Informationsstelle OER",
+          "Link source and CC BY4.0",
+          "Retain original date and disclose adaptation/translation/teaching additions",
+          "No publisher endorsement"
+        ],
+        "basis": "explicit text licence and CC permission for adaptations",
+        "reviewBeforeConversionRequired": true
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-en-coast-beyond-the-title",
+      "lang": "en",
+      "level": "B2",
+      "bodyWords": 513,
+      "source": {
+        "name": "Natural England",
+        "title": "England's only natural world heritage site has a birthday",
+        "url": "https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday",
+        "publishedAt": "2026-09-28",
+        "lang": "en",
+        "author": "Natural England"
+      },
+      "sourceAgeDays": 22,
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "Open Government Licence v3.0",
+        "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "evidence": "本篇页脚明确标明除另述外全文OGL v3；GOV.UK条款Using GOV.UK content明确说明可依OGL转载。机构叙述无相反文字权利声明；具名外部引语、图片及链接文献全部排除。",
+        "evidenceUrls": [
+          "https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday",
+          "https://www.gov.uk/help/terms-conditions"
+        ],
+        "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+        "exclusions": [
+          "照片、图片、标志、视频",
+          "第三方直接引语、外部文献及链接作品"
+        ],
+        "attributionRequirements": [
+          "机构与Crown copyright署名",
+          "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+        ],
+        "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+        "licenseRetrievalNote": "本次直接OGL目标页返回Internal Error；未绕过；未声称已读取本次完整许可目标页。",
+        "reviewBeforeConversionRequired": true
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-en-food-near-home",
+      "lang": "en",
+      "level": "A2",
+      "bodyWords": 152,
+      "source": {
+        "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+        "title": "Government acts on food insecurity and affordability with £10 million to put good food within reach",
+        "url": "https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach",
+        "publishedAt": "2026-09-30",
+        "lang": "en",
+        "author": "Department for Environment, Food & Rural Affairs"
+      },
+      "sourceAgeDays": 20,
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "Open Government Licence v3.0",
+        "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "evidence": "本篇页脚明确标明除另述外全文OGL v3；GOV.UK条款Using GOV.UK content明确说明可依OGL转载。机构叙述无相反文字权利声明；具名外部引语、图片及链接文献全部排除。",
+        "evidenceUrls": [
+          "https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach",
+          "https://www.gov.uk/help/terms-conditions"
+        ],
+        "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+        "exclusions": [
+          "照片、图片、标志、视频",
+          "第三方直接引语、外部文献及链接作品"
+        ],
+        "attributionRequirements": [
+          "机构与Crown copyright署名",
+          "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+        ],
+        "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+        "licenseRetrievalNote": "本次直接OGL目标页返回Internal Error；未绕过；未声称已读取本次完整许可目标页。",
+        "reviewBeforeConversionRequired": true
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-en-octopus-and-fishing-choices",
+      "lang": "en",
+      "level": "B1",
+      "bodyWords": 288,
+      "source": {
+        "name": "Department for Environment, Food & Rural Affairs",
+        "title": "Octopus explosion off South West prompts talks between fishermen and scientists",
+        "url": "https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists",
+        "publishedAt": "2026-10-16",
+        "lang": "en",
+        "author": "Department for Environment, Food & Rural Affairs"
+      },
+      "sourceAgeDays": 4,
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "Open Government Licence v3.0",
+        "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "evidence": "本篇页脚明确标明除另述外全文OGL v3；GOV.UK条款Using GOV.UK content明确说明可依OGL转载。机构叙述无相反文字权利声明；具名外部引语、图片及链接文献全部排除。",
+        "evidenceUrls": [
+          "https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists",
+          "https://www.gov.uk/help/terms-conditions"
+        ],
+        "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+        "exclusions": [
+          "照片、图片、标志、视频",
+          "第三方直接引语、外部文献及链接作品"
+        ],
+        "attributionRequirements": [
+          "机构与Crown copyright署名",
+          "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+        ],
+        "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+        "licenseRetrievalNote": "本次直接OGL目标页返回Internal Error；未绕过；未声称已读取本次完整许可目标页。",
+        "reviewBeforeConversionRequired": true
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-fr-comprendre-les-pertes-alimentaires",
+      "lang": "fr",
+      "level": "B1",
+      "bodyWords": 294,
+      "source": {
+        "name": "INRAE",
+        "title": "Pertes et gaspillage alimentaires. Les défis à relever",
+        "url": "https://www.inrae.fr/actualites/pertes-gaspillage-alimentaires-defis-relever",
+        "publishedAt": "2026-10-15",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 5,
+      "license": {
+        "name": "Licence Ouverte / Open Licence Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "Licence Ouverte / Open Licence Etalab 2.0",
+        "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "evidence": "INRAE current terms PROPRIETE INTELLECTUELLE license public institutional contents under Etalab2.0 unless separate rights/ND/all-rights-reserved notice. Complete article has no conflicting text notice; news overview only, no book text. Official Etalab2.0 terms read, explicitly allow adaptation, transformation, redistribution and publication with source/date credit and no endorsement.",
+        "evidenceUrls": [
+          "https://www.inrae.fr/actualites/pertes-gaspillage-alimentaires-defis-relever",
+          "https://www.inrae.fr/conditions-generales-dutilisation",
+          "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+        ],
+        "scope": "Institutional French narrative only; same-language teaching adaptation, Chinese translation and companion learning material, not original publisher-certified content.",
+        "exclusions": [
+          "All images, image captions, logos and third-party quotations",
+          "Linked books, PDFs, recordings and outside sites",
+          "Susan Sontag quotation and echo in photography article"
+        ],
+        "attributionRequirements": [
+          "Credit source institution and original title, URL, date",
+          "Link license and disclose French adaptation, Chinese translation, teaching additions; no endorsement"
+        ],
+        "basis": "current-institutional-public-text-license-and-article-exception-review",
+        "reviewBeforeConversionRequired": true,
+        "shareAlikeRequired": false
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-fr-parler-des-vignes",
+      "lang": "fr",
+      "level": "A2",
+      "bodyWords": 170,
+      "source": {
+        "name": "INRAE — Centre Occitanie-Montpellier",
+        "title": "\"Vignes en transition, quels vins demain ?\"",
+        "url": "https://www.inrae.fr/actualites/vignes-transition-quels-vins-demain",
+        "publishedAt": "2026-09-28",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 22,
+      "license": {
+        "name": "Licence Ouverte / Open Licence Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "Licence Ouverte / Open Licence Etalab 2.0",
+        "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "evidence": "INRAE current terms PROPRIETE INTELLECTUELLE license public institutional contents under Etalab2.0 unless separate rights/ND/all-rights-reserved notice. Complete article has no conflicting text notice; news overview only, no book text. Official Etalab2.0 terms read, explicitly allow adaptation, transformation, redistribution and publication with source/date credit and no endorsement.",
+        "evidenceUrls": [
+          "https://www.inrae.fr/actualites/vignes-transition-quels-vins-demain",
+          "https://www.inrae.fr/conditions-generales-dutilisation",
+          "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+        ],
+        "scope": "Institutional French narrative only; same-language teaching adaptation, Chinese translation and companion learning material, not original publisher-certified content.",
+        "exclusions": [
+          "All images, image captions, logos and third-party quotations",
+          "Linked books, PDFs, recordings and outside sites",
+          "Susan Sontag quotation and echo in photography article"
+        ],
+        "attributionRequirements": [
+          "Credit source institution and original title, URL, date",
+          "Link license and disclose French adaptation, Chinese translation, teaching additions; no endorsement"
+        ],
+        "basis": "current-institutional-public-text-license-and-article-exception-review",
+        "reviewBeforeConversionRequired": true,
+        "shareAlikeRequired": false
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-fr-photographier-et-partager",
+      "lang": "fr",
+      "level": "B2",
+      "bodyWords": 569,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Pour ses 200 ans, la photographie voit en grand",
+        "url": "https://www.culture.gouv.fr/actualites/pour-ses-200-ans-la-photographie-voit-en-grand",
+        "publishedAt": "2026-08-19",
+        "lang": "fr"
+      },
+      "sourceAgeDays": 62,
+      "license": {
+        "name": "CC BY-SA 3.0 France",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY-SA 3.0 France",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "evidence": "Ministry notice section4.3.1(a) expressly licenses ministry-produced text CC BY-SA3.0FR;4.3.2 excludes partner works. Complete article found no separate text-rights notice; image credits distinct. CC deed read and permits sharing/adaptation including commercial subject to attribution/change notice/ShareAlike.",
+        "evidenceUrls": [
+          "https://www.culture.gouv.fr/actualites/pour-ses-200-ans-la-photographie-voit-en-grand",
+          "https://www.culture.gouv.fr/mentions-legales",
+          "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+        ],
+        "scope": "Institutional French narrative only; same-language teaching adaptation, Chinese translation and companion learning material, not original publisher-certified content.",
+        "exclusions": [
+          "All images, image captions, logos and third-party quotations",
+          "Linked books, PDFs, recordings and outside sites",
+          "Susan Sontag quotation and echo in photography article"
+        ],
+        "attributionRequirements": [
+          "Credit source institution and original title, URL, date",
+          "Link license and disclose French adaptation, Chinese translation, teaching additions; no endorsement",
+          "Retain CC BY-SA3.0FR for article and companion adaptations"
+        ],
+        "basis": "current-institutional-public-text-license-and-article-exception-review",
+        "reviewBeforeConversionRequired": true,
+        "shareAlikeRequired": true
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-it-disegni-che-tornano-visibili",
+      "lang": "it",
+      "level": "B1",
+      "bodyWords": 281,
+      "source": {
+        "name": "Ministero della Cultura — Direzione generale Archivi",
+        "title": "La Direzione generale Archivi rilancia la memoria dell’aeronautica italiana: accordo con Baykar Piaggio Aerospace",
+        "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=d0303c5d7d318bb41e38f4a3febda4d4&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2801",
+        "publishedAt": "2026-10-15",
+        "lang": "it"
+      },
+      "sourceAgeDays": 5,
+      "license": {
+        "name": "CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "evidence": "Article full Italian narrative read, English version explicitly separate. Source dated15 October2026 is a signed-agreement announcement, not a future-event listing. Footer Note legali points to Ministry terms; terms explicitly CC BY3.0 adaptation and redistribution with source attribution, excluding images/logos/third-party content. No contrary narrative text credit. Excluded Tarasco quotation, images, English translation and source archive documents. Main facts checked: five-year agreement; archive acquired2025; ~28000 drawings, DGA cost/12months; at least10 prototypes company cost/6months; ministerial approval before sale and equal proceeds; planned permanent exhibition.",
+        "evidenceUrls": [
+          "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=d0303c5d7d318bb41e38f4a3febda4d4&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2801",
+          "https://cultura.gov.it/note-legali/",
+          "https://creativecommons.org/licenses/by/3.0/"
+        ],
+        "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
+        "exclusions": [
+          "Photos, logos, media",
+          "All direct quotations and third-party credited text",
+          "Linked documents and English translation"
+        ],
+        "attributionRequirements": [
+          "Institutional author/title/source/date",
+          "License link and disclosure of Italian adaptation/Chinese translation",
+          "No endorsement; retain exclusion of third-party works"
+        ],
+        "reviewBeforeConversionRequired": true
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-it-osservare-oceano-nel-tempo",
+      "lang": "it",
+      "level": "B2",
+      "bodyWords": 513,
+      "source": {
+        "name": "INGV Ufficio Stampa",
+        "title": "Gli osservatori oceanografici europei di profondità progettano il prossimo decennio: a Roma il kick-off meeting di EMSO EVOLVE",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+        "publishedAt": "2026-10-09",
+        "lang": "it"
+      },
+      "sourceAgeDays": 11,
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence": "Full article and INGV legal notice read20Oct. Article footer explicitly CC BY4 for institution-published page content; legal notice identifies INGV ownership absent contrary indication. No conflicting institutional narrative credit. Excluded Ingrid Puillat quotation and all media. Publication field9Oct; project48months1Sep2026–31Aug2030, strategic2035,19partners10countries,14facilities21sites~125variables, budget4.99m/UE3.99m checked. Source calls four areas but lists ambiguously more topics; adaptation lists topics without reproducing an unsupported count.",
+        "evidenceUrls": [
+          "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+          "https://www.ingv.it/note-legali/",
+          "https://creativecommons.org/licenses/by/4.0/"
+        ],
+        "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
+        "exclusions": [
+          "Photos, logos, media",
+          "All direct quotations and third-party credited text",
+          "Linked documents and English translation"
+        ],
+        "attributionRequirements": [
+          "Institutional author/title/source/date",
+          "License link and disclosure of Italian adaptation/Chinese translation",
+          "No endorsement; retain exclusion of third-party works"
+        ],
+        "reviewBeforeConversionRequired": true
+      },
+      "lengthNote": "Within editorial target."
+    },
+    {
+      "id": "2026-10-20-it-reddito-spese-risparmio",
+      "lang": "it",
+      "level": "A2",
+      "bodyWords": 166,
+      "source": {
+        "name": "Istat",
+        "title": "Conto trimestrale delle Amministrazioni pubbliche, reddito e risparmio delle famiglie e profitti delle società - II trimestre 2026",
+        "url": "https://www.istat.it/comunicato-stampa/conto-trimestrale-ap-reddito-famiglie-profitti-societa-ii-trimestre-2026/",
+        "publishedAt": "2026-10-05",
+        "lang": "it"
+      },
+      "sourceAgeDays": 15,
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "rightsEvidence": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence": "Istat legal notice explicitly grants modification, redistribution, commercial use under CC BY4 unless stated otherwise (licence section); entire source HTML including comment read and no conflicting text notice. Date field explicitly Data pubblicazione 5 Ottobre 2026; reference period II trimestre2026 separately stated. Household data seasonally adjusted; income +0.4%, consumption+1.7%, saving6.7% (-1.2pp), purchasing power-0.9%, deflator+1.4%. Text only.",
+        "evidenceUrls": [
+          "https://www.istat.it/comunicato-stampa/conto-trimestrale-ap-reddito-famiglie-profitti-societa-ii-trimestre-2026/",
+          "https://www.istat.it/note-legali/",
+          "https://creativecommons.org/licenses/by/4.0/"
+        ],
+        "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
+        "exclusions": [
+          "Photos, logos, media",
+          "All direct quotations and third-party credited text",
+          "Linked documents and English translation"
+        ],
+        "attributionRequirements": [
+          "Institutional author/title/source/date",
+          "License link and disclosure of Italian adaptation/Chinese translation",
+          "No endorsement; retain exclusion of third-party works"
+        ],
+        "reviewBeforeConversionRequired": true
+      },
+      "lengthNote": "Within editorial target."
+    }
+  ],
+  "independentReview": {
+    "method": "Two independent examiners solved article-plus-options packages before seeing answer keys/evidence/explanations. All 48 initial answers matched. Full institutional originals, dates, authors, reuse rights, Chinese translations, glosses, cloze forms and keys then independently checked. Corrections and final files rechecked with SHA256 binding; revision checks are keyed checks, not a second fresh blind examination.",
+    "refinements": [
+      "Broadened shellfish Chinese translation to cover crustaceans.",
+      "Replaced weak Italian/German distractors and chronology-only items with closer text-grounded alternatives.",
+      "Corrected a French question label absent from its body and updated its dependent explanation.",
+      "Relabelled direct-retrieval English question as detail.",
+      "Corrected German separable-verb learning note and stale summary surface."
+    ],
+    "finalFileSha256": {
+      "articles/2026-10-20-en-food-near-home.json": "54b0a0d0eddb6a6e432e935fc2a7886f5c77ee331f6098b811b0b1687becbcf7",
+      "comprehension/2026-10-20-en-food-near-home.json": "11aed0a6a4720cdefa06c48414126b03e164f8b910645f600b334df71f344922",
+      "practice/2026-10-20-en-food-near-home.json": "14f799d18a5c31124d50b3e2f3315f99d014163b10a148568a6c01642b6bdec9",
+      "articles/2026-10-20-en-octopus-and-fishing-choices.json": "49ff87be551612e50a78e9cd5d10b34c52c78123976db54bc3ce2b21139e03c2",
+      "comprehension/2026-10-20-en-octopus-and-fishing-choices.json": "b4398235226fef43e3a5e6b73ae939764059d24f8f46592958626ed526765f02",
+      "practice/2026-10-20-en-octopus-and-fishing-choices.json": "6c3308a71bd1a92648b25ab8eb3dbbb1fa4be207583659587254cb30fa6b4567",
+      "articles/2026-10-20-en-coast-beyond-the-title.json": "81164c3c47038d6dd3a5ae5942dc778923374452294c813264ac556447e7d702",
+      "comprehension/2026-10-20-en-coast-beyond-the-title.json": "8a849f6ff0e5afdaa9105643b9bd70da9b27a25f47c585639ade4a4fd3e69154",
+      "practice/2026-10-20-en-coast-beyond-the-title.json": "f4fecadb9f2cac5e87380665282513ff451d3759f3c597362cdfb7e4be2b8830",
+      "articles/2026-10-20-fr-parler-des-vignes.json": "d87db539489a1cd9b43ac94b4ab6eff37bdcc398c748bbfe69413ecd9fc6d94d",
+      "comprehension/2026-10-20-fr-parler-des-vignes.json": "286fda1604188654e30d08e24f9e8e30f944a3a1abd11c371392d7b9cd8a8552",
+      "practice/2026-10-20-fr-parler-des-vignes.json": "243e27ae59066f1ec7425638eba6f9d03c95e2e2c294adb0d1296da852c58261",
+      "articles/2026-10-20-fr-comprendre-les-pertes-alimentaires.json": "29ebd86cf719c8fe60342f59a696ec2010fdf31e4612c023cee309473b5c6c2b",
+      "comprehension/2026-10-20-fr-comprendre-les-pertes-alimentaires.json": "375d2437cf5b68ade312c07a0ef08577fe0f16590a8e6c0eeab47d45e321f615",
+      "practice/2026-10-20-fr-comprendre-les-pertes-alimentaires.json": "8cf67eaf5ca4ba0154188a042b2f884f17993b3e673e6a317305aa79b245f6c6",
+      "articles/2026-10-20-fr-photographier-et-partager.json": "8ec4607c55d223b6e995b2765b4f3781f0b6410867ff269d9d1772b7860dad68",
+      "comprehension/2026-10-20-fr-photographier-et-partager.json": "9ea6ed90ddefa3b728239326fec6e3a504106d89df628756bd0dbc3c4564edab",
+      "practice/2026-10-20-fr-photographier-et-partager.json": "e38591fabf8362b3056c62469d502263f36dd4722d6ea6d25928e2473a4f88bb",
+      "articles/2026-10-20-it-disegni-che-tornano-visibili.json": "917c51b7ff25e7ded2935d5f9179d50ca09753e86985843073b19ebc6aacfa14",
+      "articles/2026-10-20-it-osservare-oceano-nel-tempo.json": "0740b5e1c65ab38b290b61faa353eb79e8754bbbd6acd09473ccedb3a23ea6d2",
+      "articles/2026-10-20-it-reddito-spese-risparmio.json": "b601550a17524514718266c85f51eb48f9093f25225357d1026cb1078ddfa7ab",
+      "articles/2026-10-20-de-gemeinsam-offen-arbeiten.json": "b162876357622eb8be758c4cb940b9a6a942328d8ab828bf7eec6335ac28d71f",
+      "articles/2026-10-20-de-hinweise-bei-ki-inhalten.json": "daba49b95a3126ec31481ca6e74289ebaeb9672464b3524f139b34a01d0297e9",
+      "articles/2026-10-20-de-lernen-vom-direkten-austausch.json": "651f5d67cf4e6afe02fdd5558c5e4e07d1e9bbac399867fed52afd2371db64f0",
+      "practice/2026-10-20-it-disegni-che-tornano-visibili.json": "1c68b2115acbc8474074453037bec9831c23b48c7d2f8257440529ffbfb3ac11",
+      "practice/2026-10-20-it-osservare-oceano-nel-tempo.json": "7a779f786ce92b81c59200caee7eff12ef97d042ecd0041d7c99d99c178fa21e",
+      "practice/2026-10-20-it-reddito-spese-risparmio.json": "53612fd9529b16d24eceab656356cc3c730401c89ddd792d17875cfd351b9abf",
+      "practice/2026-10-20-de-gemeinsam-offen-arbeiten.json": "ebb6af72ac23f23dffc53304b55cdab356b0dae3b297c6edb941e698dc62b069",
+      "practice/2026-10-20-de-hinweise-bei-ki-inhalten.json": "2916dc1036870e80cb39014c9016a524ea52b0658660679deed8f6426970f311",
+      "practice/2026-10-20-de-lernen-vom-direkten-austausch.json": "60564e313cb7ff581002a1cb0f731a2ca5c2854281d51133c6adfcf8f4fdfd81",
+      "comprehension/2026-10-20-it-disegni-che-tornano-visibili.json": "afcda252eed61154accca2d78528b2fe5b60c863a0d8c549f34dcf3e0a553061",
+      "comprehension/2026-10-20-it-osservare-oceano-nel-tempo.json": "e40299882e33de88bdc0c12e69813f1564937ba26d6cb280628843c115b1e325",
+      "comprehension/2026-10-20-it-reddito-spese-risparmio.json": "4907bffd60af2b7c3a4c2afae64f5b2599d8ecb3436c45966e0d5ab9a0f37301",
+      "comprehension/2026-10-20-de-gemeinsam-offen-arbeiten.json": "cfdae7fab9549ffeb57d8d98d36b858f370b9b5c69657e7277d9bd354bac874c",
+      "comprehension/2026-10-20-de-hinweise-bei-ki-inhalten.json": "c6fb70cfa3a17b0aa9a8c7d771a29770bdd151f57b5767373e7cbedd6974b1ee",
+      "comprehension/2026-10-20-de-lernen-vom-direkten-austausch.json": "7b241a2c81f3788f768b612718f78ab3f24793b9228dd7e3b1657caabae6d018"
+    }
+  },
+  "validation": {
+    "articleCandidatePracticeComprehension": "PASS",
+    "practiceTests": "2198 passed, 0 failed",
+    "comprehensionTests": "1756 passed, 0 failed",
+    "comprehensionLoadingTests": "9 passed, 0 failed",
+    "fullTests": "42 harnesses, 478687 passed, 0 failed, 0 known issues",
+    "gitDiffCheck": "PASS"
+  },
+  "rightsBoundary": "Text only, no source images/logos, external quotations or linked book/report text. Source-specific attribution and share-alike preserved. GOV.UK pages and terms explicitly confirm OGLv3; direct National Archives licence endpoint returned Internal Error and was not bypassed or claimed read.",
+  "freshnessNotice": "FR B2 source 19 August (62 days); DE B1 15 September (35 days), DE B2 1 September (49 days): permitted 90-day fallback. Other nine originals within30 days. Original dates retained, past events not relabelled current news.",
+  "reserve": "Five additional source-verified unused candidates: two IT, one FR, two EN. Three existing collected-only candidates retained. Two DE discovery leads with retrieval gaps recorded separately, not marked verified.",
+  "deploymentStatus": "Prepublication audit. Remote commit/deployment/live browser verification remain separate post-publication checks."
+}

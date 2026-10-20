@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-en-food-near-home",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "How will the programme help communities?",
+      "options": [
+        "It will help families pay for meals at selected restaurants.",
+        "It will help local leaders develop food support for their areas.",
+        "It will help vegetable sellers find new markets abroad.",
+        "It will help food businesses train staff for school kitchens."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s5",
+        "s6",
+        "s7",
+        "s9"
+      ],
+      "explanationZh": "正文说明资金交给地方政府，地方领导者按社区需要选择食物支持措施；没有餐厅餐费补贴、海外销售或学校厨房员工培训的安排。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "How much funding will each local authority receive?",
+      "options": [
+        "Almost £10 million.",
+        "£45,000.",
+        "£222,000.",
+        "£10,000."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s3"
+      ],
+      "explanationZh": "近1,000万英镑是总额；每个地方政府获得222,000英镑。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Which activities does the article give as examples?",
+      "options": [
+        "Lunch clubs and cooking lessons.",
+        "Food delivery from school kitchens.",
+        "Restaurant vouchers and free transport.",
+        "Farm visits and gardening lessons."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "正文举例包括午餐俱乐部和烹饪课程；其他选项虽与食物相关，但不是文中列出的活动。"
+    }
+  ]
+}

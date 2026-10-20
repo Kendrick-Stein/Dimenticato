@@ -1,0 +1,285 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-en-coast-beyond-the-title",
+  "storyId": "natural-england-jurassic-anniversary-2026-09-28",
+  "lang": "en",
+  "date": "2026-10-20",
+  "title": "A celebrated coast, and the work behind its protection",
+  "titleZh": "著名海岸背后的保护工作",
+  "summaryZh": "以侏罗纪海岸二十五周年纪念为线索，区分世界遗产称号、法定保护工具和长期合作管理。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：长句中结合让步、对比及关系从句；区分国际认可、法定认定与管理实践，包含地质与保护领域词汇。",
+  "category": "culture",
+  "topics": [
+    "自然遗产",
+    "海岸旅游",
+    "合作保护"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Natural England",
+    "title": "England's only natural world heritage site has a birthday",
+    "url": "https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday",
+    "publishedAt": "2026-09-28",
+    "lang": "en",
+    "author": "Natural England"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. 原文机构：Natural England；原发日期：2026-09-28；https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday。Dimenticato编写同语言教学改写、中文翻译与原创练习，不代表机构认可。",
+  "adaptation": "2026-10-20整理；依据2026-09-28机构英文报道重组、简化并释义，非当天新闻或原文逐字转载。保留事实范围与不确定性；不使用照片、标志、外部直接引语或链接作品。词汇、语言分析及口语讨论为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "When organisations gathered at Lulworth Cove on 14 September 2026, they were celebrating twenty-five years of cooperation along the Dorset and East Devon coast, rather than the age of the landscape itself.",
+      "zh": "2026年9月14日，各组织在拉尔沃思湾相聚时，庆祝的是多塞特与东德文海岸沿线二十五年的合作，而不是这片地貌本身的年龄。",
+      "glosses": [
+        {
+          "surface": "cooperation",
+          "lemma": "cooperation",
+          "zh": "合作",
+          "note": "通常不可数"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "A Natural England report published on 28 September describes the anniversary as an occasion to recognise conservation, research and partnership, while looking ahead to work that still needs to be done.",
+      "zh": "自然英格兰署9月28日发布的一篇报道，把周年纪念描述为回顾保护、研究及合作成果，同时展望未竟工作的契机。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "The area commonly called the Jurassic Coast stretches for ninety-five miles between Exmouth in Devon and Studland Bay in Dorset, bringing many different coastal landscapes into one connected site.",
+      "zh": "通常被称为侏罗纪海岸的地区，从德文郡的埃克斯茅斯延伸至多塞特郡的斯塔德兰湾，全长九十五英里，把多种沿海地貌连接在同一遗产地内。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Its rocks contain a record of almost 185 million years of Earth’s history, a geological range that helped the coast gain international recognition in 2001.",
+      "zh": "这里的岩石记录了地球近1.85亿年的历史，这一地质时间跨度帮助该海岸于2001年获得国际认可。",
+      "glosses": [
+        {
+          "surface": "recognition",
+          "lemma": "recognition",
+          "zh": "认可",
+          "note": "gain recognition 获得认可"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The official UNESCO inscription uses the name Dorset and East Devon Coast; the familiar name Jurassic Coast refers to the same World Heritage Site.",
+      "zh": "联合国教科文组织正式列入名录时使用“多塞特与东德文海岸”这一名称；人们熟悉的“侏罗纪海岸”指的是同一处世界遗产地。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "It remains England’s only natural World Heritage Site, but understanding its importance requires looking beyond the title and considering what is protected on the ground.",
+      "zh": "它仍是英格兰唯一的自然类世界遗产地，但理解其重要性需要超越这一称号，关注实地受到保护的事物。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Towering cliffs, beaches covered with small stones and the distinctive shapes of Lulworth Cove and Old Harry’s Rocks form part of its widely recognised scenery.",
+      "zh": "高耸的悬崖、铺满小石子的海滩，以及拉尔沃思湾和老哈利岩独特的形态，共同构成了这里广为人知的景观。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "The report says that the site attracts fourteen million visitors a year and has long inspired art, literature and film, linking natural history with cultural life.",
+      "zh": "报道说，该遗产地每年吸引一千四百万游客，长期以来为艺术、文学和电影提供灵感，把自然历史与文化生活联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Yet the coast matters for more than its views: its varied protected landscapes also provide habitats for rare species, including the early spider-orchid and Morris’s wainscot moth.",
+      "zh": "然而，这片海岸的价值不止于风景：多样的受保护景观也为珍稀物种提供栖息地，包括早花蜘蛛兰和Morris’s wainscot蛾。",
+      "glosses": [
+        {
+          "surface": "habitats",
+          "lemma": "habitat",
+          "zh": "栖息地",
+          "note": "可数名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "For more than two centuries, the area has contributed to the development of geology and palaeontology, and it continues to function as an outdoor setting for learning and research.",
+      "zh": "两个多世纪以来，该地区推动了地质学与古生物学的发展，至今仍是学习与研究的户外场所。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "A crucial distinction appears in the report’s background notes: World Heritage status is not itself a statutory designation in the United Kingdom.",
+      "zh": "报道的背景说明提出了一项重要区别：在英国，世界遗产地位本身并非法定保护区认定。",
+      "glosses": [
+        {
+          "surface": "statutory",
+          "lemma": "statutory",
+          "zh": "法定的",
+          "note": "形容词，修饰designation"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Protection instead operates through existing designations, including thirteen Sites of Special Scientific Interest and two National Landscapes, alongside other protected sites and local planning policies.",
+      "zh": "保护实际通过现有认定机制开展，包括十三处具有特殊科学价值的地点和两处国家景观区，以及其他受保护地点与地方规划政策。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "The two National Landscapes named in the report are East Devon and Dorset, showing how the heritage site overlaps with established forms of landscape protection.",
+      "zh": "报道列出的两处国家景观区是东德文与多塞特，这表明世界遗产地与既有景观保护形式有所重叠。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Management also depends on partnership rather than one organisation acting alone: a wide range of stakeholders works together, coordinated by Dorset Council and Devon County Council.",
+      "zh": "管理也依靠合作，而非一个组织单独行动：多个利益相关方共同工作，由多塞特议会与德文郡议会协调。",
+      "glosses": [
+        {
+          "surface": "stakeholders",
+          "lemma": "stakeholder",
+          "zh": "利益相关方",
+          "note": "可数名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Natural England’s account identifies the UK National Commission for UNESCO and the two councils among the partners, and presents long-term cooperation as central to caring for the coast.",
+      "zh": "自然英格兰署的报道把英国联合国教科文组织全国委员会及上述两个议会列为合作方，并将长期合作视为照护海岸的核心。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Anniversary activities planned throughout the year include beach cleaning, walks and events involving local artists, connecting the celebration with opportunities for public participation.",
+      "zh": "全年计划开展的周年活动包括海滩清洁、步行活动和当地艺术家参与的活动，把纪念庆典与公众参与的机会联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "The coastline also forms part of the King Charles III England Coast Path, which is expected to extend for 2,700 miles when complete; that is the wider path’s length, not the length of this heritage site.",
+      "zh": "这段海岸也是查尔斯三世国王英格兰海岸步道的一部分；整个步道完工后预计长达2,700英里，这指更大范围步道的长度，而非本遗产地的长度。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Looking beyond the anniversary, Natural England and its partners intend to protect geology and wildlife, address climate-change threats, widen access to nature and support education and sustainable tourism.",
+      "zh": "展望周年纪念之后，自然英格兰署及其合作方计划保护地质与野生生物、应对气候变化威胁、扩大接触自然的机会，并支持教育与可持续旅游。",
+      "glosses": [
+        {
+          "surface": "sustainable",
+          "lemma": "sustainable",
+          "zh": "可持续的",
+          "note": "形容词，修饰tourism"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "The celebration therefore marks a continuing commitment, not a declaration that conservation has been completed: international recognition, practical protection and cooperative management each play a different part.",
+      "zh": "因此，这场庆典标志着持续的承诺，而不是宣告保护工作已经结束：国际认可、实际保护和合作管理分别发挥不同作用。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "cooperation",
+        "lemma": "cooperation",
+        "zh": "合作",
+        "note": "通常不可数",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "recognition",
+        "lemma": "recognition",
+        "zh": "认可",
+        "note": "gain recognition 获得认可",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "habitats",
+        "lemma": "habitat",
+        "zh": "栖息地",
+        "note": "可数名词复数",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "statutory",
+        "lemma": "statutory",
+        "zh": "法定的",
+        "note": "形容词，修饰designation",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "stakeholders",
+        "lemma": "stakeholder",
+        "zh": "利益相关方",
+        "note": "可数名词复数",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "sustainable",
+        "lemma": "sustainable",
+        "zh": "可持续的",
+        "note": "形容词，修饰tourism",
+        "sentenceId": "s18"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "looking beyond",
+        "zh": "超越……来看",
+        "note": "look beyond强调不止看到表面称号",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "play a different part",
+        "zh": "分别发挥不同作用",
+        "note": "play a part表示发挥作用",
+        "sentenceId": "s19"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "冒号引出核心概念区别；not itself限定“地位本身”，不等于说遗产地没有保护。"
+      },
+      {
+        "sentenceId": "s17",
+        "note": "which is expected to...保留预期语气；分号后明确2700英里属于整体步道，避免范围混淆。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "How can a heritage title and local protection measures support different parts of conservation?",
+        "zh": "遗产称号和地方保护措施可以怎样支持保护工作的不同方面？"
+      },
+      {
+        "text": "Which anniversary activity would help you understand the coast better, and why?",
+        "zh": "哪种周年活动更能帮助你理解这段海岸？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Recognition is important, but it also takes … to …",
+        "zh": "认可是重要的，但要……还需要……",
+        "note": "教学补充表达，不是原文引语。"
+      },
+      {
+        "text": "We should distinguish between … and …",
+        "zh": "我们应当区分……和……",
+        "note": "教学补充表达，不是原文引语。"
+      }
+    ]
+  }
+}

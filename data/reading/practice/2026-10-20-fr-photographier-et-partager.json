@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-fr-photographier-et-partager",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 16,
+      "answer": "plaque",
+      "options": [
+        "plaque",
+        "boîte",
+        "feuille",
+        "vitre"
+      ],
+      "explanation": "原文为一块“锡板”，une plaque d’étain；其余词不能恢复原文所说的载体。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 47,
+      "answer": "raccourcir",
+      "options": [
+        "ralentir",
+        "retenir",
+        "raccourcir",
+        "répartir"
+      ],
+      "explanation": "此处指“缩短”曝光时间，故用 raccourcir；à 后接动词原形。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s10",
+      "start": 56,
+      "answer": "traces",
+      "options": [
+        "places",
+        "traces",
+        "formes",
+        "lignes"
+      ],
+      "explanation": "conserver des traces 表示留下“痕迹/记录”，这里指保存地点的影像。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 116,
+      "answer": "cadrage",
+      "options": [
+        "montage",
+        "lavage",
+        "tirage",
+        "cadrage"
+      ],
+      "explanation": "与光线、模糊效果并列的是“构图”，摄影语境用 cadrage。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s13",
+      "start": 155,
+      "answer": "développement",
+      "options": [
+        "déplacement",
+        "déroulement",
+        "développement",
+        "déclenchement"
+      ],
+      "explanation": "柯达承担的是拍摄后的“冲洗/显影”，故为 développement，而不是移动或按快门。"
+    }
+  ]
+}

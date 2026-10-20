@@ -1,0 +1,254 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-de-gemeinsam-offen-arbeiten",
+  "storyId": "oerinfo-kodex-2026-09-15",
+  "lang": "de",
+  "date": "2026-10-20",
+  "title": "Gemeinsam offen arbeiten",
+  "titleZh": "一起开展开放的工作",
+  "summaryZh": "两个德国高校项目讨论：正式的机构政策之外，怎样把日常合作中的开放态度说清楚？",
+  "level": "B1",
+  "levelReason": "编辑估计：解释性叙述，比较两种机构背景，并用原因、目的及让步关系区分政策与共同态度；专业术语有中文支持。",
+  "category": "education",
+  "topics": [
+    "合作",
+    "开放学习材料",
+    "高校"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "OERinfo – Die Informationsstelle OER",
+    "title": "Zwischen Institution und Individuum: Die eigene Haltung zu Offenheit mit einem OER-Kodex kommunizieren",
+    "url": "https://open-educational-resources.de/die-eigene-haltung-zu-offenheit-mit-einem-oer-kodex-kommunizieren/",
+    "publishedAt": "2026-09-15",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者 Sonja Philipp，DHBW Mosbach für OERinfo – Die Informationsstelle OER；原文及许可链接见上。Dimenticato 进行德语分级改写、中文翻译及教学补充；本文和配套练习按 CC BY 4.0 提供。作者与来源机构未认可或认证本教学材料。",
+  "adaptation": "2026-10-20 整理。原发2026年9月15日，为35天内的备用素材；原文曾预告10月8日活动，本文仅报告当时的计划，不声称活动已举行或已有成果。 不使用图片、标志、评论、外链报告正文或第三方引语。词汇解释、口语问题和练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Offene Bildungsmaterialien lassen sich leichter gemeinsam nutzen, wenn Menschen wissen, welche Haltung hinter der Zusammenarbeit steht.",
+      "zh": "如果人们知道合作背后的态度，开放学习材料就更容易被共同使用。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "In einem Beitrag vom 15. September 2026 beschreibt Sonja Philipp für OERinfo deshalb die Idee eines OER-Kodex.",
+      "zh": "因此，Sonja Philipp 在2026年9月15日为 OERinfo 撰写的文章中介绍了开放教育资源行为准则的构想。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "OER bedeutet Open Educational Resources; gemeint sind offene Bildungsmaterialien, die Menschen in ihrer Bildungsarbeit erstellen, nutzen oder weitergeben.",
+      "zh": "OER 是 Open Educational Resources 的缩写，指人们在教育工作中制作、使用或分享的开放学习材料。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Eine Strategie oder eine Policy formuliert zunächst, welche Ziele eine Institution mit offener Bildung verfolgt.",
+      "zh": "一项战略或政策首先说明，一个机构在开放教育方面追求哪些目标。",
+      "glosses": [
+        {
+          "surface": "verfolgt",
+          "lemma": "verfolgen",
+          "zh": "追求",
+          "note": "Ziele verfolgen；主语 eine Institution，第三人称单数。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Im Alltag entscheiden jedoch auch Teams und einzelne Personen darüber, wie sie Materialien erstellen, nutzen und weitergeben.",
+      "zh": "然而，在日常工作中，团队和个人也决定着如何制作、使用和分享材料。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Der geplante Kodex soll ihre Haltung sichtbar machen und eine gemeinsame Sprache für diese Zusammenarbeit bieten, anstatt nur allgemeine Ziele einer Einrichtung zu beschreiben.",
+      "zh": "拟议中的准则应当让他们的态度变得可见，并为这种合作提供共同的表达方式，而不是只描述一个机构的一般目标。",
+      "glosses": [
+        {
+          "surface": "Haltung",
+          "lemma": "Haltung",
+          "zh": "态度；立场",
+          "note": "die Haltung，这里不是身体姿势。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Die Idee entstand Ende 2024 im Austausch innerhalb der OER-Community und wurde von zwei Projekten weiterentwickelt.",
+      "zh": "这个想法于2024年年底在开放教育资源社群的交流中产生，之后由两个项目继续发展。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Ombrella arbeitet an der Dualen Hochschule Baden-Württemberg im Südwesten Deutschlands und kennt den Bereich der dualen Hochschulbildung.",
+      "zh": "Ombrella 在德国西南部的巴登-符腾堡双元制大学开展工作，熟悉双元制高等教育领域。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Co-WOERK ist dagegen im Nordosten Deutschlands tätig und kommt aus einem universitären Umfeld.",
+      "zh": "相反，Co-WOERK 在德国东北部开展工作，来自综合性大学环境。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Durch die Zusammenarbeit konnten die Projekte unterschiedliche Erfahrungen und Arbeitsweisen in ihre Entwürfe aufnehmen.",
+      "zh": "通过合作，这些项目得以把不同的经验和工作方式纳入草案。",
+      "glosses": [
+        {
+          "surface": "Entwürfe",
+          "lemma": "Entwurf",
+          "zh": "草案",
+          "note": "der Entwurf，复数 Entwürfe。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Der Kodex soll keine zusätzliche bürokratische Vorschrift werden, sondern Erstellenden, Multiplikatoren und anderen Hochschulangehörigen Sicherheit und Orientierung geben.",
+      "zh": "这份准则不应成为额外的官僚规定，而应为制作者、推广者和其他高校人员提供信心和方向。",
+      "glosses": [
+        {
+          "surface": "Orientierung",
+          "lemma": "Orientierung",
+          "zh": "方向；指引",
+          "note": "Orientierung geben：提供方向。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Im Mittelpunkt stehen etwa Verantwortung, Transparenz, gegenseitige Unterstützung und die Frage, welche Werte offene Bildung prägen.",
+      "zh": "核心内容包括责任、透明性、互相支持，以及哪些价值观塑造开放教育的问题。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Der Beitrag kündigte für den 8. Oktober einen offenen Online-Austausch an, bei dem die Projekte ihre Entwürfe vorstellen wollten; eingeladen waren Hochschulangehörige und weitere Interessierte aus dem OER-Netzwerk.",
+      "zh": "这篇文章预告了10月8日的一次开放线上交流，项目方计划在会上介绍草案；受邀者包括高校人员和开放教育资源网络中的其他感兴趣者。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Besonders wichtig war ihnen das Feedback aus der Praxis, damit verschiedene Anforderungen in die weitere Entwicklung einfließen können.",
+      "zh": "他们特别看重实践中的反馈，以便让不同的需求进入后续开发过程。",
+      "glosses": [
+        {
+          "surface": "Anforderungen",
+          "lemma": "Anforderung",
+          "zh": "要求；需求",
+          "note": "die Anforderung，复数 Anforderungen。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Außerdem waren für das Jahresende zwei Podcast-Folgen über den Inhalt, die Entstehung und die Zusammenarbeit geplant.",
+      "zh": "此外，原计划在年底推出两期播客，讨论准则内容、形成过程以及合作。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Der Septemberbeitrag beschreibt damit einen laufenden Entwicklungsprozess und berichtet noch nicht über Ergebnisse des angekündigten Treffens.",
+      "zh": "因此，这篇9月的文章描述的是一个进行中的开发过程，还没有报告所预告会议的成果。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "verfolgt",
+        "lemma": "verfolgen",
+        "zh": "追求",
+        "note": "Ziele verfolgen；主语 eine Institution，第三人称单数。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "Haltung",
+        "lemma": "Haltung",
+        "zh": "态度；立场",
+        "note": "die Haltung，这里不是身体姿势。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "Entwürfe",
+        "lemma": "Entwurf",
+        "zh": "草案",
+        "note": "der Entwurf，复数 Entwürfe。",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "Orientierung",
+        "lemma": "Orientierung",
+        "zh": "方向；指引",
+        "note": "Orientierung geben：提供方向。",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "Anforderungen",
+        "lemma": "Anforderung",
+        "zh": "要求；需求",
+        "note": "die Anforderung，复数 Anforderungen。",
+        "sentenceId": "s14"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Im Alltag",
+        "zh": "在日常工作或生活中",
+        "note": "用于从政策转向实际行动。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "Sicherheit und Orientierung geben",
+        "zh": "给予信心和方向",
+        "note": "geben 与两个抽象名词搭配，说明准则的支持作用。",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "Im Mittelpunkt stehen",
+        "zh": "处于核心位置的是",
+        "note": "复数主语列举多个重点。",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "konnten + 不定式：描述合作使某事成为可能。"
+      },
+      {
+        "sentenceId": "s14",
+        "note": "damit 引导目的从句，动词置于句末。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Was braucht ein Team außer gemeinsamen Regeln, um gut zusammenzuarbeiten?",
+        "zh": "除共同规则之外，一个团队还需要什么才能顺利合作？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Für unser Team ist wichtig, dass …",
+        "zh": "对我们团队来说，重要的是……",
+        "note": "教学补充，可用自己的例子完成句子。"
+      },
+      {
+        "text": "Eine Regel hilft, wenn …",
+        "zh": "当……时，一条规则会有帮助。",
+        "note": "教学补充，可用自己的例子完成句子。"
+      }
+    ]
+  }
+}

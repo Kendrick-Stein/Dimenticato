@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-it-disegni-che-tornano-visibili",
+  "storyId": "dga-piaggio-archive-agreement-2026-10-15",
+  "lang": "it",
+  "date": "2026-10-20",
+  "title": "Dai disegni storici a nuovi modi di visitare un archivio",
+  "titleZh": "从历史图纸到参观档案的新方式",
+  "summaryZh": "一项五年协议提出数字化约2.8万张历史图纸、制作模型并筹办常设展览。阅读时区分已签署的协议与尚待完成的项目。",
+  "level": "B1",
+  "levelReason": "编辑估计：连续叙述档案保存、数字化与展览计划，包含时间期限、费用承担和条件表达；抽象词汇配有中文解释。",
+  "category": "culture",
+  "topics": [
+    "工业记忆",
+    "数字化",
+    "公共展览"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "La Direzione generale Archivi rilancia la memoria dell’aeronautica italiana: accordo con Baykar Piaggio Aerospace",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=d0303c5d7d318bb41e38f4a3febda4d4&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2801",
+    "publishedAt": "2026-10-15",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：Ministero della Cultura — Direzione generale Archivi（机构署名，未列个人文字作者）。原文标题、日期与链接见上；许可为CC BY 3.0。Dimenticato 编写意大利语分级改写、中文翻译和教学练习，非原机构认可的测评；本篇改写和配套教学材料亦按CC BY 3.0提供。",
+  "adaptation": "2026-10-20整理；原文发表于2026-10-15，不是当天新闻。仅改写机构新闻正文，不使用图片、标志、引语、英文译稿或链接文件。重新组织内容并添加中文词义和原创练习；释义及学习问题属于教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 15 ottobre 2026 la Direzione generale Archivi ha annunciato un accordo di cinque anni con Baykar Piaggio Aerospace per rendere più accessibile un importante patrimonio industriale.",
+      "zh": "2026年10月15日，档案总局宣布与 Baykar Piaggio Aerospace 达成一项为期五年的协议，以让一批重要工业遗产更便于公众接触。",
+      "glosses": [
+        {
+          "surface": "patrimonio",
+          "lemma": "patrimonio",
+          "zh": "遗产",
+          "note": "阳性单数名词，这里指保存下来的工业文化遗产"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Al centro dell’intesa c’è l’archivio storico delle Industrie Aeronautiche e Meccaniche Rinaldo Piaggio, acquisito dal Ministero della Cultura nel 2025.",
+      "zh": "协议的核心是 Rinaldo Piaggio 航空与机械工业公司的历史档案，文化部于2025年取得了这些档案。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Progetti, fotografie, documenti e modelli aerodinamici conservano oltre un secolo di storia della tecnologia e dell’industria italiana.",
+      "zh": "设计方案、照片、文件与空气动力学模型保存了意大利一个多世纪的技术和工业历史。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "L’accordo è stato firmato a Roma, nel complesso di San Michele a Ripa, dal Direttore generale Archivi Antonio Tarasco e dall’amministratore delegato Francesco Cristian Toninelli per l’azienda, alla presenza dell’ambasciatrice turca in Italia, Elif Çomoğlu Ülgen.",
+      "zh": "协议在罗马的 San Michele a Ripa 建筑群由档案总局局长 Antonio Tarasco 与企业首席执行官 Francesco Cristian Toninelli 签署，土耳其驻意大利大使 Elif Çomoğlu Ülgen 在场。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Una prima attività riguarda circa 28.000 disegni storici: l’azienda dovrà digitalizzarli, mentre i costi saranno a carico della Direzione generale Archivi.",
+      "zh": "第一项活动涉及约2.8万张历史图纸：企业将负责把它们数字化，费用由档案总局承担。",
+      "glosses": [
+        {
+          "surface": "costi",
+          "lemma": "costo",
+          "zh": "费用",
+          "note": "阳性复数名词；essere a carico di 表示由……承担"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "La consegna è prevista entro dodici mesi; il comunicato presenta quindi un lavoro da realizzare, non una raccolta digitale già completata.",
+      "zh": "计划在十二个月内交付；因此，公报描述的是待实施的工作，而不是已经完成的数字资料集。",
+      "glosses": [
+        {
+          "surface": "consegna",
+          "lemma": "consegna",
+          "zh": "交付",
+          "note": "阴性单数名词，与 prevista 一致"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Un’altra parte del progetto riguarda i modelli degli aerei: Baykar Piaggio Aerospace produrrà a proprie spese almeno dieci prototipi entro sei mesi.",
+      "zh": "项目的另一部分涉及飞机模型：Baykar Piaggio Aerospace 将自费在六个月内制作至少十个原型。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Si tratta di riproduzioni in scala dei modelli aerodinamici conservati nell’archivio, pensate anche per una futura vendita.",
+      "zh": "它们是档案中保存的空气动力学模型的缩比复制品，也考虑到未来销售的用途。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Prima di venderle sarà però necessaria l’approvazione del Ministero; gli introiti saranno poi divisi in parti uguali tra il Ministero e l’azienda.",
+      "zh": "但销售前需要文化部批准；之后收入将由文化部与企业平分。",
+      "glosses": [
+        {
+          "surface": "approvazione",
+          "lemma": "approvazione",
+          "zh": "批准",
+          "note": "阴性单数名词，这里指文化部对模型销售前的批准"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "L’intesa prevede inoltre una nuova esposizione permanente nella sede aziendale di Villanova d’Albenga, in provincia di Savona, con apertura al pubblico.",
+      "zh": "协议还计划新设一处常设展览，地点在萨沃纳省 Villanova d’Albenga 的企业所在地，并将向公众开放。",
+      "glosses": [
+        {
+          "surface": "permanente",
+          "lemma": "permanente",
+          "zh": "常设的",
+          "note": "形容词单数，与 esposizione 一致"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Sono possibili anche altre iniziative espositive in Italia e all’estero, ma la notizia non fornisce un calendario di visite già prenotabili.",
+      "zh": "也可能在意大利和国外举办其他展览活动，但这条新闻没有提供已经可以预约的参观日程。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Documenti digitalizzati, modelli ed esposizioni sono dunque tre strumenti diversi previsti dall’accordo per valorizzare la memoria industriale; l’intesa prosegue inoltre una cooperazione culturale tra Italia e Turchia, rafforzata da un precedente memorandum archivistico firmato nel 2025.",
+      "zh": "因此，数字化文件、模型和展览是协议计划用于展示工业记忆价值的三种不同方式；这项协议也延续了意大利与土耳其的文化合作，此前2025年签署的档案合作备忘录加强了这种合作。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "patrimonio",
+        "lemma": "patrimonio",
+        "zh": "遗产",
+        "note": "阳性单数名词，这里指保存下来的工业文化遗产",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "costi",
+        "lemma": "costo",
+        "zh": "费用",
+        "note": "阳性复数名词；essere a carico di 表示由……承担",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "consegna",
+        "lemma": "consegna",
+        "zh": "交付",
+        "note": "阴性单数名词，与 prevista 一致",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "approvazione",
+        "lemma": "approvazione",
+        "zh": "批准",
+        "note": "阴性单数名词，这里指文化部对模型销售前的批准",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "permanente",
+        "lemma": "permanente",
+        "zh": "常设的",
+        "note": "形容词单数，与 esposizione 一致",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "a carico della",
+        "zh": "由……承担",
+        "sentenceId": "s5",
+        "note": "费用承担的常用表达；della = di + la。"
+      },
+      {
+        "text": "in parti uguali",
+        "zh": "平均地；平分",
+        "sentenceId": "s9",
+        "note": "说明双方分得相同的份额。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "è prevista + 时间表达：区分计划交付与已经完成的结果。"
+      },
+      {
+        "sentenceId": "s9",
+        "note": "Prima di + 不定式表达先后条件；sarà necessaria 表示未来的必要条件。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Preferiresti vedere documenti originali, copie digitali o modelli? Perché?",
+        "zh": "你更愿意看原始文件、数字副本还是模型？为什么？",
+        "note": "教学讨论，不设自动标准答案。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mi interesserebbe soprattutto … perché …",
+        "zh": "我尤其对……感兴趣，因为……。",
+        "note": "教学补充，可根据个人情况补全。"
+      }
+    ]
+  }
+}

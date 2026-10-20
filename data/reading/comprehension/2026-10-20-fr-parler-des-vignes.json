@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-fr-parler-des-vignes",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Que veut faire le projet en réunissant ces différents publics ?",
+      "promptZh": "这项活动把不同群体聚在一起，是想做什么？",
+      "options": [
+        "Présenter des vins à des acheteurs étrangers.",
+        "Faire dialoguer la recherche et les habitants.",
+        "Choisir les meilleures vidéos réalisées en classe.",
+        "Former des guides pour les visites de la région."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s8",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "研究人员、行业人士、公民交流，专家回答来自实际生活的问题，目的在于拉近研究与居民的距离。文中没有售酒、视频比赛或导游培训计划。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Comment les organisateurs préparent-ils les cinq vidéos ?",
+      "promptZh": "组织方如何准备这五部视频？",
+      "options": [
+        "Ils filment les visiteurs devant les douze panneaux.",
+        "Ils enregistrent les réponses des experts après le débat.",
+        "Ils recueillent les expériences et les questions de témoins.",
+        "Ils réunissent les films déjà produits dans les écoles."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "镜头前收集居民和行业人士的经历与问题，再制作五部短视频；不是录制展板参观、会后专家答复或已有学生影片。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Que prévoit l’annonce pour la rencontre du 7 décembre ?",
+      "promptZh": "公告对12月7日的见面活动作了什么安排？",
+      "options": [
+        "Une projection à Montpellier, puis un débat.",
+        "Une exposition à Montpellier, puis une visite de vigne.",
+        "Des expériences dans les écoles, puis un concert.",
+        "Un atelier dans quatre départements, puis un repas."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第10句明确说蒙彼利埃举行放映，随后讨论；第11句补充专家回应问题，其他安排不符合该场活动。"
+    }
+  ]
+}

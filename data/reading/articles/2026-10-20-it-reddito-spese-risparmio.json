@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-it-reddito-spese-risparmio",
+  "storyId": "istat-household-income-q2-2026",
+  "lang": "it",
+  "date": "2026-10-20",
+  "title": "Entrate, spese e risparmio delle famiglie",
+  "titleZh": "家庭的收入、支出与储蓄",
+  "summaryZh": "收入增加，不一定意味着能买到更多东西。用短句阅读家庭收入、消费与购买力的不同变化。",
+  "level": "A2",
+  "levelReason": "编辑估计：以家庭收支为具体话题，短句和明确时间标记为主；reddito、risparmio和potere d’acquisto等术语均有中文解释，数字比较需要辅助阅读。",
+  "category": "society",
+  "topics": [
+    "家庭预算",
+    "消费",
+    "储蓄"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Istat",
+    "title": "Conto trimestrale delle Amministrazioni pubbliche, reddito e risparmio delle famiglie e profitti delle società - II trimestre 2026",
+    "url": "https://www.istat.it/comunicato-stampa/conto-trimestrale-ap-reddito-famiglie-profitti-societa-ii-trimestre-2026/",
+    "publishedAt": "2026-10-05",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Istat（机构署名，未列个人文字作者）。原文标题、日期与链接见上；许可为CC BY 4.0。Dimenticato 编写意大利语分级改写、中文翻译和教学练习，非原机构认可的测评；本篇改写和配套教学材料亦按CC BY 4.0提供。",
+  "adaptation": "2026-10-20整理；原文发表于2026-10-05，不是当天新闻。仅改写机构新闻正文，不使用图片、标志、引语、英文译稿或链接文件。重新组织内容并添加中文词义和原创练习；释义及学习问题属于教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 5 ottobre 2026 l’Istat ha pubblicato nuovi dati sulle famiglie italiane: i numeri descrivono il secondo trimestre, cioè aprile, maggio e giugno.",
+      "zh": "2026年10月5日，意大利国家统计局发布了有关意大利家庭的新数据：这些数字描述第二季度，即四月、五月和六月。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "In questo periodo il reddito disponibile delle famiglie è aumentato dello 0,4% rispetto ai tre mesi precedenti.",
+      "zh": "在这一时期，家庭可支配收入比前三个月增长了0.4%。",
+      "glosses": [
+        {
+          "surface": "reddito",
+          "lemma": "reddito",
+          "zh": "收入",
+          "note": "阳性单数名词，il reddito disponibile 指可支配收入"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "La spesa per i consumi è invece cresciuta dell’1,7%, quindi più del reddito.",
+      "zh": "消费支出则增长了1.7%，因此增幅高于收入。",
+      "glosses": [
+        {
+          "surface": "spesa",
+          "lemma": "spesa",
+          "zh": "支出",
+          "note": "阴性单数名词，la spesa per i consumi 指消费支出"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Le famiglie hanno dunque usato per i consumi una parte più grande del loro reddito.",
+      "zh": "因此，家庭把更大一部分收入用于消费。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "La parte risparmiata è stata il 6,7%: questo valore è sceso di 1,2 punti percentuali rispetto al trimestre precedente.",
+      "zh": "储蓄的部分占6.7%：这一数值比上一季度下降了1.2个百分点。",
+      "glosses": [
+        {
+          "surface": "risparmiata",
+          "lemma": "risparmiare",
+          "zh": "储蓄起来的",
+          "note": "过去分词作定语，与阴性单数 parte 一致"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Anche il potere d’acquisto è diminuito, dello 0,9%: il reddito è salito, ma non abbastanza rispetto alla crescita dei prezzi misurata dall’indicatore dei consumi.",
+      "zh": "购买力也下降了0.9%：收入虽然增加，但相对于消费价格指标所衡量的价格增长，增幅还不够。",
+      "glosses": [
+        {
+          "surface": "diminuito",
+          "lemma": "diminuire",
+          "zh": "下降了",
+          "note": "è diminuito 是阳性单数主语 il potere 的近过去时"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Per leggere questi dati, possiamo distinguere i soldi disponibili dalle cose che quei soldi permettono di comprare.",
+      "zh": "阅读这些数据时，我们可以区分可用的钱与这些钱能够购买的东西。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Questa è una spiegazione didattica della differenza tra reddito e potere d’acquisto, non un nuovo risultato dell’indagine.",
+      "zh": "这是对收入与购买力差别的教学解释，而不是调查的新结果。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Il comunicato presenta le informazioni sulle famiglie dopo una correzione degli effetti stagionali; non descrive il bilancio di una singola famiglia.",
+      "zh": "公报中的家庭信息经过了季节性影响调整；它并不描述某一个家庭的收支。",
+      "glosses": [
+        {
+          "surface": "stagionali",
+          "lemma": "stagionale",
+          "zh": "季节性的",
+          "note": "形容词复数，与阳性复数 effetti 一致"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "reddito",
+        "lemma": "reddito",
+        "zh": "收入",
+        "note": "阳性单数名词，il reddito disponibile 指可支配收入",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "spesa",
+        "lemma": "spesa",
+        "zh": "支出",
+        "note": "阴性单数名词，la spesa per i consumi 指消费支出",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "risparmiata",
+        "lemma": "risparmiare",
+        "zh": "储蓄起来的",
+        "note": "过去分词作定语，与阴性单数 parte 一致",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "diminuito",
+        "lemma": "diminuire",
+        "zh": "下降了",
+        "note": "è diminuito 是阳性单数主语 il potere 的近过去时",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "stagionali",
+        "lemma": "stagionale",
+        "zh": "季节性的",
+        "note": "形容词复数，与阳性复数 effetti 一致",
+        "sentenceId": "s9"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "rispetto ai",
+        "zh": "与……相比",
+        "sentenceId": "s2",
+        "note": "rispetto a 表示比较；a 与 i 合成 ai。"
+      },
+      {
+        "text": "potere d’acquisto",
+        "zh": "购买力",
+        "sentenceId": "s6",
+        "note": "指收入实际能够购买商品和服务的能力。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "invece 表示对照；più del reddito 比较的是两个增幅。"
+      },
+      {
+        "sentenceId": "s5",
+        "note": "punti percentuali 指两个百分比的差，不等同于相对百分比变化。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quando fai la spesa, guardi soprattutto il prezzo o la quantità?",
+        "zh": "购物时，你主要看价格还是数量？",
+        "note": "教学讨论，不设自动标准答案。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Rispetto a prima, spendo di più per …",
+        "zh": "与以前相比，我在……方面花得更多。",
+        "note": "教学补充，可根据个人情况补全。"
+      }
+    ]
+  }
+}

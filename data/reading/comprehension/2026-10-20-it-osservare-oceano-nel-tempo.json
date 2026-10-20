@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-it-osservare-oceano-nel-tempo",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale cambiamento costituisce il filo conduttore del progetto?",
+      "options": [
+        "Passare dai satelliti a una rete di osservatori completamente nuova.",
+        "Collegare una rete esistente a osservazioni, servizi e competenze più coordinati.",
+        "Sostituire le misure sul posto con modelli digitali del solo fondale.",
+        "Concentrare i siti europei in un unico centro di ricerca a Roma."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s9",
+        "s15",
+        "s16",
+        "s17",
+        "s18"
+      ],
+      "explanationZh": "文章强调利用既有网络，把单站点观测推进为区域协调的观测、服务和培训体系；不是废除卫星、重建一切或把站点集中到罗马。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Perché il testo affianca gli osservatori in mare ai satelliti?",
+      "options": [
+        "Perché i satelliti non permettono di condividere online i dati raccolti.",
+        "Perché gli osservatori studiano il clima soltanto durante il progetto.",
+        "Perché i satelliti misurano direttamente tutte le variabili dei fondali.",
+        "Perché le misure sul posto seguono anche ciò che avviene sotto la superficie."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "卫星提供海面信息，现场观测能覆盖海底到海面的水体；两者区别是观测对象与连续现场测量，而不是能否共享数据。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quale descrizione corrisponde alle forme di accesso indicate?",
+      "options": [
+        "I dati si consultano liberamente online; l’accesso fisico può essere richiesto dai ricercatori.",
+        "I dati si consultano online solo dopo l’approvazione di una richiesta di accesso fisico.",
+        "I dati sono riservati alle organizzazioni partner, mentre ogni ricercatore può entrare negli osservatori senza domanda.",
+        "I dati sono aperti online e la loro consultazione dà automaticamente diritto a visitare gli osservatori."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第10—11句明确区分在线开放数据与科研人员申请实地访问；不能把可申请误读为无需申请的自由进入。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Come si collegano la durata del progetto e l’anno 2035?",
+      "options": [
+        "Il progetto terminerà nel 2035, dopo quattro anni di misure iniziate nel 2030.",
+        "Il 2035 è la data di avvio della rete, mentre il progetto comincia nel 2016.",
+        "Il progetto termina nel 2030; il 2035 è un orizzonte strategico più lontano.",
+        "Il progetto comincerà nel 2035, dopo la consegna degli strumenti nel 2030."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "执行期是2026年9月至2030年8月，2035是巩固长期观测地位的战略目标；2016是既有基础设施的管理起点。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Una ricercatrice esterna vuole iniziare subito uno studio usando i dati EMSO e poi lavorare sul posto. Quale percorso è coerente con il testo?",
+      "options": [
+        "Aspettare il 2035 per consultare i dati e poi entrare negli osservatori senza domanda.",
+        "Consultare i dati già aperti online e presentare una richiesta separata per l’accesso fisico.",
+        "Entrare prima in un osservatorio, perché soltanto la visita consente di ottenere i dati.",
+        "Iscriversi prima all’Academy, perché la formazione completata dà automaticamente accesso ai siti."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s10",
+        "s11",
+        "s18",
+        "s19"
+      ],
+      "explanationZh": "第10—11句区分已经开放的在线数据与须提出申请的实地访问。外部研究人员可先使用数据，再申请现场访问；正文没有2035年的数据等待期、先参观才能取数的限制，也没有 Academy 培训后自动进入站点的规则。",
+      "promptZh": "一位外部研究人员想立即利用 EMSO 数据开展研究，之后再到现场工作。哪种做法符合正文？"
+    }
+  ]
+}

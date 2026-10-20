@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-en-food-near-home",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 71,
+      "answer": "afford",
+      "options": [
+        "afford",
+        "avoid",
+        "announce",
+        "arrange"
+      ],
+      "explanation": "afford意为负担得起；情态动词can后用动词原形，与prices搭配。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 49,
+      "answer": "deprivation",
+      "options": [
+        "decoration",
+        "deprivation",
+        "destination",
+        "delivery"
+      ],
+      "explanation": "deprivation意为贫困、资源匮乏，是不可数名词；后面的or短语提供解释。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 61,
+      "answer": "needs",
+      "options": [
+        "names",
+        "nights",
+        "needs",
+        "notes"
+      ],
+      "explanation": "meet the needs of表示满足……的需要；这里保留原文复数needs。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 26,
+      "answer": "include",
+      "options": [
+        "improve",
+        "increase",
+        "introduce",
+        "include"
+      ],
+      "explanation": "include意为包括；主语activities是复数，一般现在时用原形。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 49,
+      "answer": "charities",
+      "options": [
+        "charities",
+        "challenges",
+        "choices",
+        "changes"
+      ],
+      "explanation": "charities为charity的复数，辅音字母+y变为-ies；与businesses并列，表示慈善机构。"
+    }
+  ]
+}

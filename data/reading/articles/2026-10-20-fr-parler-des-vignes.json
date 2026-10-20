@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-fr-parler-des-vignes",
+  "storyId": "parler-des-vignes-2026-09-28",
+  "lang": "fr",
+  "date": "2026-10-20",
+  "title": "Des rencontres pour parler des vignes",
+  "titleZh": "通过见面交流了解葡萄种植",
+  "summaryZh": "从展板、实验到短视频，一项法国科普活动把研究人员和居民聚到一起，讨论葡萄种植的未来。",
+  "level": "A2",
+  "levelReason": "编辑估计：短句、具体活动和清楚的时间顺序为主；vigne、cépage 等少量新词有中文释义，完整逐句中文辅助。",
+  "category": "society",
+  "topics": [
+    "科普交流",
+    "农业与生活",
+    "社区活动"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE — Centre Occitanie-Montpellier",
+    "title": "\"Vignes en transition, quels vins demain ?\"",
+    "url": "https://www.inrae.fr/actualites/vignes-transition-quels-vins-demain",
+    "publishedAt": "2026-09-28",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "原文：INRAE Occitanie-Montpellier，文章列出传播联系人 Mina S. Vilayleck，未单列个人作者。原文机构正文按 Licence Ouverte 2.0 使用；原链接及日期见上。Dimenticato 作法语分级改写、中文翻译及原创教学练习，不代表 INRAE 认可。",
+  "adaptation": "2026-10-20 整理；原报道发表于2026-09-28，并非当天新闻。仅改写机构正文；不使用图片、附件、个人联系方式或第三方内容。保留活动的计划语气，不声称已经举办或已经产生效果；本文不鼓励饮酒。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "En Occitanie, un projet invite les habitants à parler de la vigne et de son avenir.",
+      "zh": "在法国奥克西塔尼大区，一项活动邀请居民讨论葡萄藤及其未来。",
+      "glosses": [
+        {
+          "surface": "habitants",
+          "lemma": "habitant",
+          "zh": "居民",
+          "note": "un habitant；这里为阳性复数，也可泛指居民。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "INRAE a présenté ce projet dans un article publié le 28 septembre 2026.",
+      "zh": "INRAE 在2026年9月28日发表的一篇文章中介绍了这项活动。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Des scientifiques, des professionnels et des citoyens vont échanger autour de plusieurs questions.",
+      "zh": "科研人员、行业人士和公民将围绕几个问题交流。",
+      "glosses": [
+        {
+          "surface": "échanger",
+          "lemma": "échanger",
+          "zh": "交流",
+          "note": "vont + 动词原形，表示将要做某事。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Comment utiliser moins d’eau et comment choisir les variétés de raisin, aussi appelées cépages ?",
+      "zh": "怎样减少用水，又怎样选择葡萄品种，也就是法语中所说的 cépages？",
+      "glosses": [
+        {
+          "surface": "cépages",
+          "lemma": "cépage",
+          "zh": "葡萄品种",
+          "note": "un cépage；这里是葡萄种植术语。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Le programme est prévu de septembre 2026 à avril 2027 dans quatre départements de la région.",
+      "zh": "该计划预计于2026年9月至2027年4月在这一大区的四个省开展。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Une exposition de douze panneaux doit aider le public à découvrir ces sujets.",
+      "zh": "一场由十二块展板组成的展览将帮助公众了解这些主题。",
+      "glosses": [
+        {
+          "surface": "panneaux",
+          "lemma": "panneau",
+          "zh": "展板",
+          "note": "un panneau 的复数为 panneaux。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Il y aura aussi des jeux, des expériences et des ateliers pour les écoles et d’autres lieux publics.",
+      "zh": "还将为学校和其他公共场所安排游戏、实验和工作坊。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Les organisateurs souhaitent recueillir les expériences et les questions des habitants et des professionnels devant une caméra.",
+      "zh": "组织方希望通过摄像机收集居民和行业人士的经历与问题。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Ces témoignages doivent servir à préparer cinq courtes vidéos.",
+      "zh": "这些分享将用于制作五部短视频。",
+      "glosses": [
+        {
+          "surface": "témoignages",
+          "lemma": "témoignage",
+          "zh": "经历分享；见证",
+          "note": "un témoignage；这里指镜头前分享的经历和问题。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Une projection suivie d’un débat est annoncée pour le 7 décembre à Montpellier.",
+      "zh": "公告计划于12月7日在蒙彼利埃举行放映，并在放映后展开讨论。",
+      "glosses": [
+        {
+          "surface": "débat",
+          "lemma": "débat",
+          "zh": "讨论；辩论",
+          "note": "un débat；这里是放映后的交流。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Des experts seront invités à répondre aux questions venues du terrain.",
+      "zh": "专家将受邀回答来自实际生活与工作中的问题。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Le projet cherche ainsi à rapprocher la recherche des personnes qui vivent et travaillent dans la région.",
+      "zh": "这项活动因此希望拉近研究与当地生活、工作的人们之间的距离。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "habitants",
+        "lemma": "habitant",
+        "zh": "居民",
+        "note": "un habitant；这里为阳性复数，也可泛指居民。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "échanger",
+        "lemma": "échanger",
+        "zh": "交流",
+        "note": "vont + 动词原形，表示将要做某事。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "panneaux",
+        "lemma": "panneau",
+        "zh": "展板",
+        "note": "un panneau 的复数为 panneaux。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "témoignages",
+        "lemma": "témoignage",
+        "zh": "经历分享；见证",
+        "note": "un témoignage；这里指镜头前分享的经历和问题。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "débat",
+        "lemma": "débat",
+        "zh": "讨论；辩论",
+        "note": "un débat；这里是放映后的交流。",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "cépages",
+        "lemma": "cépage",
+        "zh": "葡萄品种",
+        "note": "un cépage；这里是葡萄种植术语。",
+        "sentenceId": "s4"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "autour de",
+        "zh": "围绕",
+        "note": "后接交流的主题。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "suivie d’un débat",
+        "zh": "随后是讨论",
+        "note": "suivie 与阴性名词 projection 一致。",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "être invité à + 动词原形：被邀请做某事；seront 是 être 的简单将来时。"
+      },
+      {
+        "sentenceId": "s12",
+        "note": "les personnes qui…：用关系从句说明是哪一类人。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Dans quel lieu de ta ville aimerais-tu participer à un atelier scientifique ?",
+        "zh": "你想在城市里的什么地方参加科学工作坊？",
+        "note": "教学讨论，不作自动评分。"
+      },
+      {
+        "text": "Préférerais-tu poser une question en vidéo ou pendant un débat ? Pourquoi ?",
+        "zh": "你更愿意通过视频提问，还是在讨论时提问？为什么？",
+        "note": "教学讨论，不作自动评分。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "J’aimerais mieux comprendre…",
+        "zh": "我想更好地了解……",
+        "note": "教学补充，可替换省略号部分。"
+      },
+      {
+        "text": "Je préfère participer à… parce que…",
+        "zh": "我更愿意参加……，因为……",
+        "note": "教学补充，可替换省略号部分。"
+      }
+    ]
+  }
+}

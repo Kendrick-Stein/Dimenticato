@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-fr-comprendre-les-pertes-alimentaires",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 61,
+      "answer": "pertes",
+      "options": [
+        "ventes",
+        "pertes",
+        "récoltes",
+        "dépenses"
+      ],
+      "explanation": "中文指食物“损失”，恢复 pertes；它与 gaspillage 并列，而非销量、收成或支出。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 39,
+      "answer": "coupable",
+      "options": [
+        "candidat",
+        "partenaire",
+        "coupable",
+        "client"
+      ],
+      "explanation": "文意不是要指出一个“责任人”，因此用名词 coupable；这里由 un 引出。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 77,
+      "answer": "consommation",
+      "options": [
+        "consommation",
+        "préparation",
+        "production",
+        "distribution"
+      ],
+      "explanation": "这句话的终点是在家或餐馆“食用”，原文为 consommation；其他选项是不同环节。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 39,
+      "answer": "prévention",
+      "options": [
+        "présentation",
+        "préparation",
+        "protection",
+        "prévention"
+      ],
+      "explanation": "这里要区分事前“预防”与事后再利用，所以是 prévention。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s14",
+      "start": 105,
+      "answer": "priorités",
+      "options": [
+        "qualités",
+        "priorités",
+        "quantités",
+        "activités"
+      ],
+      "explanation": "不同参与者的“优先事项”不同，恢复 priorités；复数与 les mêmes 一致。"
+    }
+  ]
+}

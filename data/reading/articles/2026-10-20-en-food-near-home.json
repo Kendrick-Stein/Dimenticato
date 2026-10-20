@@ -1,0 +1,191 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-en-food-near-home",
+  "storyId": "defra-good-food-neighbourhoods-2026-09-30",
+  "lang": "en",
+  "date": "2026-10-20",
+  "category": "society",
+  "topics": [
+    "社区食物支持",
+    "日常开支"
+  ],
+  "title": "Food support close to home",
+  "titleZh": "家门口的食物支持",
+  "summaryZh": "英格兰45个地方政府将获资助，因地制宜改善居民获得健康、可负担食物的机会。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体社区服务与短句为主，使用because、may和will说明理由与计划；deprivation等少量较难词有中文释义。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+    "title": "Government acts on food insecurity and affordability with £10 million to put good food within reach",
+    "url": "https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach",
+    "publishedAt": "2026-09-30",
+    "lang": "en",
+    "author": "Department for Environment, Food & Rural Affairs"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Environment, Food & Rural Affairs; 2026-09-30; https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach",
+  "adaptation": "2026-10-20整理；原报道发表于2026-09-30，并非当天新闻。依据机构英文叙述作同语言教学改写，附中文翻译与原创教学补充，不代表机构认可。未使用图片、标志或直接引语。保留原日期，计划不作已实现成果。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Some families find it difficult to buy healthy food at prices they can afford.",
+      "zh": "一些家庭发现，很难以负担得起的价格购买健康食物。",
+      "glosses": [
+        {
+          "surface": "afford",
+          "lemma": "afford",
+          "zh": "v. 负担得起"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "On 30 September 2026, the UK government announced almost £10 million for a new food programme in England.",
+      "zh": "2026年9月30日，英国政府宣布将向英格兰一项新的食物计划提供近1,000万英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "The money will go to 45 local authorities, and each local authority will receive £222,000.",
+      "zh": "这笔资金将分配给45个地方政府，每个将获得222,000英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "These areas were chosen because many people face deprivation, or lack basic resources, and childhood obesity is high.",
+      "zh": "选择这些地区是因为许多人面临贫困、缺乏基本资源，而且儿童肥胖程度较高。",
+      "glosses": [
+        {
+          "surface": "deprivation",
+          "lemma": "deprivation",
+          "zh": "n. 贫困，匮乏"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Local leaders will decide how to use the support to meet the needs of their communities.",
+      "zh": "地方领导者将决定如何使用这些支持，以满足所在社区的需要。",
+      "glosses": [
+        {
+          "surface": "needs",
+          "lemma": "need",
+          "zh": "n. 需要（复数）"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "They could support food shops in the community or sellers who bring fresh vegetables to different places.",
+      "zh": "他们可以支持社区食物商店，或把新鲜蔬菜送到不同地方销售的商贩。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Other possible activities include lunch clubs, community kitchens and cooking lessons.",
+      "zh": "其他可能开展的活动包括午餐俱乐部、社区厨房和烹饪课程。",
+      "glosses": [
+        {
+          "surface": "include",
+          "lemma": "include",
+          "zh": "v. 包括"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "These are only examples, and different areas may offer different activities.",
+      "zh": "这些只是例子，不同地区可能会提供不同的活动。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "The programme will also work with businesses and charities to build on projects that already exist.",
+      "zh": "该计划还将与企业和慈善机构合作，在现有项目的基础上继续开展工作。",
+      "glosses": [
+        {
+          "surface": "charities",
+          "lemma": "charity",
+          "zh": "n. 慈善机构（复数）"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The aim is to help more people get healthy, affordable food close to where they live.",
+      "zh": "目标是帮助更多人在居住地附近获得健康、价格可负担的食物。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "afford",
+        "lemma": "afford",
+        "zh": "v. 负担得起",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "deprivation",
+        "lemma": "deprivation",
+        "zh": "n. 贫困，匮乏",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "needs",
+        "lemma": "need",
+        "zh": "n. 需要（复数）",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "include",
+        "lemma": "include",
+        "zh": "v. 包括",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "charities",
+        "lemma": "charity",
+        "zh": "n. 慈善机构（复数）",
+        "sentenceId": "s9"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "close to",
+        "zh": "靠近",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "build on",
+        "zh": "在……基础上继续发展",
+        "sentenceId": "s9"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "may表示可能性，说明列举的服务只是选项，不代表各地都会开展相同活动。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which would help your neighbourhood more: a community kitchen or a mobile vegetable seller? Why?",
+        "zh": "社区厨房和流动蔬菜商贩，哪一种对你所在社区帮助更大？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "In my neighbourhood, we need...",
+        "zh": "在我所在的社区，我们需要……",
+        "note": "教学补充表达，不是新闻引语。"
+      }
+    ]
+  }
+}

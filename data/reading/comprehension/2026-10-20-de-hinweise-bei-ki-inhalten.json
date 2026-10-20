@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-de-hinweise-bei-ki-inhalten",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Was macht Cruegers Artikel nach dieser Vorstellung?",
+      "promptZh": "根据本文介绍，Crueger 的文章做了什么？",
+      "options": [
+        "Er vergleicht die Qualität von zehn KI-Programmen.",
+        "Er stellt ein Papier über Hinweise und Vertrauen vor.",
+        "Er zeigt die Ergebnisse einer Umfrage im Internet.",
+        "Er erklärt die Bedienung einer neuen Website."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s4",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "第3—4句说明他介绍一份含十条论点的文件，第7—8句说明主题是标注与信任；不是程序评测、调查结果或网站教程。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Welche Reihenfolge beschreibt der Text?",
+      "promptZh": "文章描述了哪种时间顺序？",
+      "options": [
+        "Zuerst erschien das Papier im Oktober, dann der Artikel im Juni.",
+        "Papier und Artikel erschienen beide im Juni.",
+        "Papier und Artikel erschienen beide im Oktober.",
+        "Zuerst erschien das Papier im Juni, dann der Artikel im Oktober."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s6"
+      ],
+      "explanationZh": "文章是10月8日发表，所介绍的文件6月已经发表。不能把介绍日期当成文件首次发布日期。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Worauf beruhten die zehn Thesen laut Text?",
+      "promptZh": "根据文章，十条论点以什么为基础？",
+      "options": [
+        "Auf gemeinsamen Arbeiten in Zukunftslaboren.",
+        "Auf einer Sammlung von Kommentaren der Leser.",
+        "Auf einem Vergleich von Bildern im Internet.",
+        "Auf einer Liste kostenloser Computerprogramme."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "第5句明确指出基础是未来实验室中的共同工作；文中没有说它们来自读者评论、图片对比或软件清单。"
+    }
+  ]
+}

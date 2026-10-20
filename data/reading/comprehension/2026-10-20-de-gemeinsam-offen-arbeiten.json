@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-de-gemeinsam-offen-arbeiten",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welche Aufgabe soll der Kodex zusätzlich zu institutionellen Strategien übernehmen?",
+      "promptZh": "除机构战略之外，这份准则应承担什么作用？",
+      "options": [
+        "Die technischen Regeln für gemeinsame Portale festlegen.",
+        "Den Erfolg verschiedener Hochschulen anhand ihrer Materialien vergleichen.",
+        "Die Haltung von Personen und Teams zur Zusammenarbeit sichtbar machen.",
+        "Die Zuständigkeit für die Finanzierung offener Materialien bestimmen."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4",
+        "s5",
+        "s6",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "机构战略说明目标，而准则要表达个人与团队在日常合作中的态度和价值。其核心不是技术、排名或资金分工。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Was brachte die Zusammenarbeit von Ombrella und Co-WOERK in die Entwürfe ein?",
+      "promptZh": "Ombrella 与 Co-WOERK 的合作为草案带来了什么？",
+      "options": [
+        "Erfahrungen aus verschiedenen Hochschularten und Regionen.",
+        "Ergebnisse aus einer gemeinsamen Prüfung aller deutschen Hochschulen.",
+        "Vorgaben aus zwei bereits abgeschlossenen Podcast-Reihen.",
+        "Regeln aus einem einheitlichen Studiengang beider Projekte."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第8—10句比较两项目的地区、高校类型和工作背景，说明这些差异丰富了草案。文中没有全国评估、已完结播客或统一专业。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Warum war den Projekten das Feedback aus der Praxis wichtig?",
+      "promptZh": "为什么这些项目重视实践中的反馈？",
+      "options": [
+        "Damit sie den Online-Austausch durch einen schriftlichen Test ersetzen konnten.",
+        "Damit sie unterschiedliche Anforderungen bei der Weiterentwicklung berücksichtigen konnten.",
+        "Damit sie die Veröffentlichung der beiden Podcast-Folgen nachweisen konnten.",
+        "Damit sie die Arbeit an den bisherigen Entwürfen unmittelbar beenden konnten."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s14"
+      ],
+      "explanationZh": "反馈的目的在于让不同要求进入后续开发，并非更换活动形式、证明播客上线或立即结束开发。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Eine Teilnehmerin möchte Erfahrungen ihres Teams in den Kodex einbringen. Welche Rolle sieht der Beitrag dafür vor?",
+      "promptZh": "一位参与者希望把团队经验纳入准则。文章为这种经验安排了什么作用？",
+      "options": [
+        "Sie soll damit prüfen, ob ihr Team einen bereits verbindlichen Kodex vollständig erfüllt.",
+        "Sie soll ihre Erfahrungen erst nach Abschluss der beiden Podcast-Folgen einreichen.",
+        "Sie soll damit die institutionellen Strategien durch einen einheitlichen Studienplan ersetzen.",
+        "Sie kann Rückmeldungen zu den Entwürfen geben, die deren weitere Entwicklung unterstützen."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6",
+        "s11",
+        "s13",
+        "s14",
+        "s16"
+      ],
+      "explanationZh": "第13—14句说明草案会被介绍，实践反馈应进入后续开发；因此团队经验可以用来改进草案，而不是检查对已生效准则的遵守情况。正文也没有要求等播客完成后才反馈，或以统一课程方案替代机构战略。"
+    }
+  ]
+}

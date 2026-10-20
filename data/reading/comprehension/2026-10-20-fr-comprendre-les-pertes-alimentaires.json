@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-fr-comprendre-les-pertes-alimentaires",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle démarche le livre privilégie-t-il pour comprendre le gaspillage ?",
+      "promptZh": "这本书优先采用什么思路来理解浪费？",
+      "options": [
+        "Comparer surtout les habitudes de cuisine dans plusieurs pays.",
+        "Mesurer surtout les déchets produits dans les restaurants français.",
+        "Choisir la technique de recyclage la plus rentable pour les entreprises.",
+        "Examiner la chaîne alimentaire et les tensions entre les réponses."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s2",
+        "s3",
+        "s7",
+        "s8",
+        "s11",
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "文章把整条食物链与不同回应之间的矛盾联系起来；并非仅比较厨房习惯、仅测量餐馆垃圾或选择企业回收技术。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Que représente le chiffre d’environ 30 % cité dans le texte ?",
+      "promptZh": "文中约30%的数字代表什么？",
+      "options": [
+        "Les pertes dans les restaurants par rapport aux repas français.",
+        "Les pertes et le gaspillage par rapport à la production mondiale.",
+        "Les restes des ménages par rapport aux achats européens.",
+        "Les matières valorisées par rapport aux déchets agricoles."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "约30%指全球食品生产中的损失与浪费，第5句明确排除仅指法国家庭剩食的理解。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quelle situation correspond à la valorisation plutôt qu’à la prévention décrite ici ?",
+      "promptZh": "哪种情况符合这里所说的再利用，而非预防？",
+      "options": [
+        "Réduire les quantités perdues avant leur apparition.",
+        "Modifier une organisation pour éviter les pertes.",
+        "Trouver un usage à des matières déjà écartées.",
+        "Mesurer la quantité de matières déjà écartées."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "预防发生在损失之前，再利用为已经损失或被剔除的材料找到用途；选项A和B是事前避免，选项D只测量数量，并未为材料找到用途。"
+    },
+    {
+      "id": "q4",
+      "kind": "cause",
+      "prompt": "Pourquoi le texte invite-t-il à examiner une solution dans son contexte ?",
+      "promptZh": "为什么文章建议结合具体背景考察一种解决办法？",
+      "options": [
+        "Les acteurs peuvent avoir des priorités différentes et subir des effets indésirables.",
+        "Les chercheuses veulent limiter leur analyse aux habitudes individuelles françaises.",
+        "Les règles publiques remplacent peu à peu les activités de recherche alimentaire.",
+        "Les données internationales empêchent de suivre les aliments jusqu’aux consommateurs."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "不同参与者的利益和优先事项可能不同，一些办法也会产生负面影响，所以不能把办法当通用配方；其他说法文中未提出。"
+    }
+  ]
+}

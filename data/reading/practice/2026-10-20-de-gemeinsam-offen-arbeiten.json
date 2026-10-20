@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-de-gemeinsam-offen-arbeiten",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 103,
+      "answer": "verfolgt",
+      "options": [
+        "bezahlt",
+        "verliert",
+        "verfolgt",
+        "vergisst"
+      ],
+      "explanation": "按原文恢复 verfolgt，此处意为“追求”。Ziele verfolgen；主语 eine Institution，第三人称单数。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 29,
+      "answer": "Haltung",
+      "options": [
+        "Haltung",
+        "Rechnung",
+        "Wohnung",
+        "Reise"
+      ],
+      "explanation": "按原文恢复 Haltung，此处意为“态度；立场”。die Haltung，这里不是身体姿势。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s10",
+      "start": 101,
+      "answer": "Entwürfe",
+      "options": [
+        "Besuche",
+        "Fehler",
+        "Noten",
+        "Entwürfe"
+      ],
+      "explanation": "按原文恢复 Entwürfe，此处意为“草案”。der Entwurf，复数 Entwürfe。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 152,
+      "answer": "Orientierung",
+      "options": [
+        "Unterkunft",
+        "Orientierung",
+        "Verpflegung",
+        "Unterhaltung"
+      ],
+      "explanation": "按原文恢复 Orientierung，此处意为“方向；指引”。Orientierung geben：提供方向。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s14",
+      "start": 76,
+      "answer": "Anforderungen",
+      "options": [
+        "Anforderungen",
+        "Erinnerungen",
+        "Ermäßigungen",
+        "Abfahrten"
+      ],
+      "explanation": "按原文恢复 Anforderungen，此处意为“要求；需求”。die Anforderung，复数 Anforderungen。 其他选项不能表达本句中文提示中的意思。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-de-lernen-vom-direkten-austausch",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 157,
+      "answer": "verborgen",
+      "options": [
+        "sichtbar",
+        "verborgen",
+        "bekannt",
+        "bezahlbar"
+      ],
+      "explanation": "按原文恢复 verborgen，此处意为“隐藏的；未被看见的”。verborgen bleiben：仍然隐藏；这里指外部检索难以发现的情况。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 200,
+      "answer": "eingeschätzt",
+      "options": [
+        "ausgetauscht",
+        "veröffentlicht",
+        "abgeschafft",
+        "eingeschätzt"
+      ],
+      "explanation": "按原文恢复 eingeschätzt，此处意为“评估”。einschätzen 的第二分词，与 hatte 构成过去完成时。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 105,
+      "answer": "Hindernisse",
+      "options": [
+        "Hindernisse",
+        "Veranstaltungen",
+        "Auszeichnungen",
+        "Ergebnisse"
+      ],
+      "explanation": "按原文恢复 Hindernisse，此处意为“障碍”。das Hindernis，复数 Hindernisse。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s12",
+      "start": 158,
+      "answer": "abbilden",
+      "options": [
+        "verbieten",
+        "ersetzen",
+        "abbilden",
+        "bezahlen"
+      ],
+      "explanation": "按原文恢复 abbilden，此处意为“反映；呈现”。这里并非绘图，而是呈现实际投入。 其他选项不能表达本句中文提示中的意思。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s21",
+      "start": 73,
+      "answer": "Einarbeiten",
+      "options": [
+        "Abschreiben",
+        "Einarbeiten",
+        "Abstellen",
+        "Einsteigen"
+      ],
+      "explanation": "按原文恢复 Einarbeiten，此处意为“熟悉；钻研入门”。名词化不定式，beim Einarbeiten in + Akkusativ。 其他选项不能表达本句中文提示中的意思。"
+    }
+  ]
+}

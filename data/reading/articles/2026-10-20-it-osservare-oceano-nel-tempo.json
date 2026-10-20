@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-it-osservare-oceano-nel-tempo",
+  "storyId": "ingv-emso-evolve-2026-10-09",
+  "lang": "it",
+  "date": "2026-10-20",
+  "title": "Osservare l’oceano: perché servono misure che durano nel tempo",
+  "titleZh": "观察海洋：为何需要长期持续的测量",
+  "summaryZh": "从海面卫星观测到海底现场测量，EMSO EVOLVE 希望把分散站点连接为更协调的区域观测与数据服务体系。",
+  "level": "B2",
+  "levelReason": "编辑估计：含让步、目的与条件关系，长句及被动结构；需要理解连续观测、跨站点协作和计划与既有能力之间的区别，不仅依据篇幅定级。",
+  "category": "environment",
+  "topics": [
+    "海洋观测",
+    "数据共享",
+    "长期研究"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "Gli osservatori oceanografici europei di profondità progettano il prossimo decennio: a Roma il kick-off meeting di EMSO EVOLVE",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+    "publishedAt": "2026-10-09",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：INGV Ufficio Stampa（机构署名，未列个人文字作者）。原文标题、日期与链接见上；许可为CC BY 4.0。Dimenticato 编写意大利语分级改写、中文翻译和教学练习，非原机构认可的测评；本篇改写和配套教学材料亦按CC BY 4.0提供。",
+  "adaptation": "2026-10-20整理；原文发表于2026-10-09，不是当天新闻。仅改写机构新闻正文，不使用图片、标志、引语、英文译稿或链接文件。重新组织内容并添加中文词义和原创练习；释义及学习问题属于教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 9 ottobre 2026 l’INGV ha presentato l’avvio a Roma di EMSO EVOLVE, un progetto europeo che intende preparare l’osservazione dell’oceano profondo alle esigenze del prossimo decennio.",
+      "zh": "2026年10月9日，意大利国家地球物理与火山研究所介绍了在罗马启动的 EMSO EVOLVE 欧洲项目，该项目旨在使深海观测为未来十年的需求做好准备。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "L’iniziativa riunisce diciannove organizzazioni di dieci Paesi ed è coordinata da EMSO ERIC, il consorzio con sede a Roma che gestisce una rete di osservatori del fondale e della colonna d’acqua.",
+      "zh": "这项计划汇集十个国家的十九个组织，由总部设在罗马的 EMSO ERIC 协调；该联合体管理着一个海底及水体观测站网络。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "La questione di partenza è un divario fra l’importanza dell’oceano per il pianeta e la conoscenza ancora limitata di ciò che avviene nelle sue profondità.",
+      "zh": "出发点是这样一种差距：海洋对地球十分重要，但人们对其深处发生的事情仍了解有限。",
+      "glosses": [
+        {
+          "surface": "divario",
+          "lemma": "divario",
+          "zh": "差距",
+          "note": "阳性单数名词，fra 引出存在差距的两方面"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "L’oceano contribuisce infatti a regolare il clima e assorbe calore e anidride carbonica legati alle attività umane, mentre i fondali possono essere interessati da terremoti, frane e tsunami.",
+      "zh": "海洋事实上有助于调节气候，并吸收与人类活动有关的热量和二氧化碳；与此同时，海底也可能受到地震、滑坡和海啸的影响。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Nonostante questa rilevanza, le profondità e gli strati d’acqua sovrastanti restano tra gli ambienti meno osservati, e una visione della sola superficie non basta a descriverli.",
+      "zh": "尽管如此重要，深海及其上方的水层仍是观测最不足的环境之一，仅仅观察表面不足以描述它们。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "I satelliti offrono informazioni sulla superficie marina; gli strumenti collocati direttamente in mare permettono invece di seguire quello che succede dal fondale verso la superficie, anno dopo anno.",
+      "zh": "卫星提供海面信息；直接布设在海中的仪器则能够年复一年地跟踪从海底到海面的变化。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Il valore di queste misure non dipende quindi soltanto dal luogo in cui vengono raccolte, ma anche dalla continuità con cui rendono osservabili i cambiamenti.",
+      "zh": "因此，这些测量的价值不仅取决于采集地点，也取决于它们能够多么持续地让变化被观测到。",
+      "glosses": [
+        {
+          "surface": "continuità",
+          "lemma": "continuità",
+          "zh": "连续性",
+          "note": "阴性名词，重音在末尾，单复数形式相同"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Il comunicato collega le serie temporali di lungo periodo allo studio della variabilità oceanica, dei rischi geologici, della biodiversità e dei processi del carbonio, del riscaldamento e dell’acidificazione.",
+      "zh": "公报将长期时间序列与海洋变动、地质风险、生物多样性，以及碳循环、升温和酸化过程的研究联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "EMSO EVOLVE non parte da una rete inesistente: dal 2016 EMSO ERIC gestisce un’infrastruttura composta da quattordici strutture regionali distribuite in ventuno siti, dai mari nordici al Mar Nero e all’Atlantico.",
+      "zh": "EMSO EVOLVE 并非从零建立网络：自2016年以来，EMSO ERIC 管理着由十四个区域设施组成的基础设施，分布在从北方海域到黑海和大西洋的二十一个站点。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Questa infrastruttura fornisce circa centoventicinque variabili misurate sul posto; i suoi dati sono liberamente accessibili online, mentre i ricercatori possono richiedere l’accesso fisico agli osservatori.",
+      "zh": "这套基础设施提供约一百二十五种现场测量变量；其数据可在线自由获取，研究人员还可以申请实际进入观测站。",
+      "glosses": [
+        {
+          "surface": "richiedere",
+          "lemma": "richiedere",
+          "zh": "申请",
+          "note": "不定式接在 possono 之后，表示可以提出申请，不等于自动获准"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "La disponibilità dei dati e la possibilità di presentare una richiesta di visita scientifica sono dunque due forme di accesso distinte, che non vanno confuse fra loro.",
+      "zh": "因此，数据可用和可以提交科研实地访问申请，是两种不同的访问形式，不应混为一谈。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Per l’Italia partecipano OGS, INGV e CNR; il carattere internazionale della collaborazione emerge sia dalla distribuzione degli osservatori sia dalla composizione dei partner.",
+      "zh": "意大利方面的参与机构包括 OGS、INGV 和 CNR；观测站的分布与合作伙伴的组成都体现了合作的国际性质。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Il progetto dura quarantotto mesi, dal 1° settembre 2026 al 31 agosto 2030, e dispone di un bilancio complessivo di 4,99 milioni di euro, di cui 3,99 milioni provenienti dall’Unione europea.",
+      "zh": "项目持续四十八个月，从2026年9月1日至2030年8月31日，总预算为499万欧元，其中399万欧元来自欧盟。",
+      "glosses": [
+        {
+          "surface": "bilancio",
+          "lemma": "bilancio",
+          "zh": "预算",
+          "note": "阳性单数名词，bilancio complessivo 指总预算"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Questo periodo operativo va distinto dall’orizzonte strategico del 2035, entro il quale si vuole consolidare il ruolo di EMSO nell’osservazione oceanica europea di lungo termine.",
+      "zh": "这一执行期应与2035年的战略时间目标区分开来：项目希望在2035年前巩固 EMSO 在欧洲长期海洋观测中的地位。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Durante i quattro anni sono previsti interventi sull’organizzazione del consorzio, sulla partecipazione dei membri e sulla progettazione del sistema di osservazione alla scala dei sottobacini oceanici.",
+      "zh": "在这四年中，计划开展的工作涉及联合体组织、成员参与，以及按海洋次级海盆尺度设计观测系统。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Il passaggio cercato è quindi da singoli siti osservati separatamente a un sistema di osservazioni e servizi coordinato su una scala regionale più ampia.",
+      "zh": "因此，所追求的转变是从分别观测单个站点，走向在更大区域尺度上协调的观测与服务体系。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Anche i servizi digitali dovranno essere modernizzati secondo i principi FAIR, favorendo l’interoperabilità con iniziative europee come Copernicus, EMODnet e il Digital Twin of the Ocean.",
+      "zh": "数字服务也将按照 FAIR 原则进行现代化改造，促进与 Copernicus、EMODnet 和 Digital Twin of the Ocean 等欧洲计划的互操作。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Accanto agli strumenti e ai dati, il programma prevede una EMSO Academy permanente dedicata alla formazione e allo sviluppo delle competenze, perché il rafforzamento della rete comprende anche le persone.",
+      "zh": "除了仪器和数据，计划还设立一所长期开展培训和能力发展的 EMSO Academy，因为加强网络也涉及人员。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Questi sono obiettivi annunciati all’avvio del progetto: il comunicato descrive le attività da organizzare e i risultati attesi, non certifica che la trasformazione sia già stata completata.",
+      "zh": "这些是项目启动时宣布的目标：公报描述的是待组织的活动和预期成果，并不证明转型已经完成。",
+      "glosses": [
+        {
+          "surface": "attesi",
+          "lemma": "atteso",
+          "zh": "预期的",
+          "note": "形容词/过去分词阳性复数，与 risultati 一致"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "divario",
+        "lemma": "divario",
+        "zh": "差距",
+        "note": "阳性单数名词，fra 引出存在差距的两方面",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "continuità",
+        "lemma": "continuità",
+        "zh": "连续性",
+        "note": "阴性名词，重音在末尾，单复数形式相同",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "richiedere",
+        "lemma": "richiedere",
+        "zh": "申请",
+        "note": "不定式接在 possono 之后，表示可以提出申请，不等于自动获准",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "bilancio",
+        "lemma": "bilancio",
+        "zh": "预算",
+        "note": "阳性单数名词，bilancio complessivo 指总预算",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "attesi",
+        "lemma": "atteso",
+        "zh": "预期的",
+        "note": "形容词/过去分词阳性复数，与 risultati 一致",
+        "sentenceId": "s19"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "non dipende quindi soltanto",
+        "zh": "因此不仅仅取决于",
+        "sentenceId": "s7",
+        "note": "non soltanto ... ma anche ... 连接两个互补条件。"
+      },
+      {
+        "text": "va distinto",
+        "zh": "应当区分",
+        "sentenceId": "s14",
+        "note": "andare + 过去分词表达应当进行的处理，不是移动。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "分号连接既有测量能力与访问方式；mentre 对比数据获取和现场申请。"
+      },
+      {
+        "sentenceId": "s19",
+        "note": "non certifica che ... sia ...：否定认定后的从句用虚拟式，强调尚不能把计划当成果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali vantaggi può avere una serie di misure raccolte per molti anni rispetto a una singola osservazione?",
+        "zh": "多年连续测量相对于一次观测可能有什么优势？",
+        "note": "教学讨论，不设自动标准答案。"
+      },
+      {
+        "text": "Quali difficoltà immagini quando più Paesi devono condividere strumenti e dati?",
+        "zh": "多个国家共享仪器与数据时，你能想到哪些困难？",
+        "note": "教学讨论，不设自动标准答案。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Non conta soltanto …, ma anche …",
+        "zh": "重要的不只是……，还有……。",
+        "note": "教学补充，可根据个人情况补全。"
+      },
+      {
+        "text": "Bisogna distinguere tra un obiettivo e …",
+        "zh": "需要区分目标与……。",
+        "note": "教学补充，可根据个人情况补全。"
+      }
+    ]
+  }
+}

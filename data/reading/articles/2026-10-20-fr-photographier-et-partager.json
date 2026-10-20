@@ -1,0 +1,316 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-fr-photographier-et-partager",
+  "storyId": "photographier-et-partager-2026-08-19",
+  "lang": "fr",
+  "date": "2026-10-20",
+  "title": "De la plaque au téléphone : regarder autrement",
+  "titleZh": "从金属板到手机：观看方式的变化",
+  "summaryZh": "摄影如何从缓慢的技术实验变成记录、表达与分享的日常行为？这篇历史文化阅读保留原报道日期，区分技术便利和作者视角。",
+  "level": "B2",
+  "levelReason": "编辑估计：跨越多个历史阶段，包含关系从句、被动式、让步与抽象概念；重点在于理解技术变化与社会用途之间的联系，而非只记忆年份。",
+  "category": "culture",
+  "topics": [
+    "摄影",
+    "日常记忆",
+    "技术与艺术"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Pour ses 200 ans, la photographie voit en grand",
+    "url": "https://www.culture.gouv.fr/actualites/pour-ses-200-ans-la-photographie-voit-en-grand",
+    "publishedAt": "2026-08-19",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 France",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：Ministère de la Culture 机构编辑部，原文未列个人文字作者。机构正文依据 CC BY-SA 3.0 France 改编；原链接和日期见上。Dimenticato 作法语重组改写、中文翻译与原创教学练习；本篇及配套教学内容以 CC BY-SA 3.0 France 提供，不表示原机构认可。",
+  "adaptation": "2026-10-20 整理；采用2026-08-19原报道，距整理日62天，属于90天窗口内的文化后备材料，不当作当天新闻。只使用机构历史叙述；排除 Susan Sontag 引文及其末尾呼应、所有图片与图注、机构标志及外链内容。保留约1826—1827年的不确定日期；活动部分仅回顾报道中的宣布，不推定实际举办状态。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Photographier un repas, un paysage ou une rencontre semble aujourd’hui presque immédiat : le téléphone permet de produire une image, de la regarder puis de la partager en quelques secondes.",
+      "zh": "拍摄一顿饭、一处风景或一次相聚，如今似乎几乎可以瞬间完成：手机使人在几秒内制作、查看并分享图像。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Dans un article publié le 19 août 2026, le ministère de la Culture replace ce geste familier dans une histoire longue, faite d’innovations techniques et de transformations des usages.",
+      "zh": "在2026年8月19日发表的一篇文章中，法国文化部把这一熟悉动作放回一段由技术创新和用途变化构成的漫长历史。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Au début du dix-neuvième siècle, Nicéphore Niépce cherche à conserver durablement la vue qu’il observe depuis sa fenêtre, près de Chalon-sur-Saône.",
+      "zh": "19世纪初，尼塞福尔·涅普斯试图永久保存他在索恩河畔沙隆附近从窗前看到的景象。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Il recouvre une plaque d’étain d’une fine couche de bitume, puis l’expose à la lumière dans une chambre obscure pendant de longues heures.",
+      "zh": "他在一块锡板上涂上薄薄的沥青，再把它放入暗箱中，让其接受长时间的光照。",
+      "glosses": [
+        {
+          "surface": "plaque",
+          "lemma": "plaque",
+          "zh": "板；片",
+          "note": "une plaque d’étain：锡板。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Les parties qui ont durci restent après le lavage et font apparaître une image ; le procédé est encore lent et délicat, mais il permet de fixer une vue.",
+      "zh": "硬化的部分在清洗后保留下来并显现图像；这一工艺仍缓慢且操作需格外小心，但已经可以固定一个景象。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Son Point de vue du Gras, réalisé vers 1826-1827, marque ainsi une étape importante dans les relations entre la lumière, le temps et la mémoire.",
+      "zh": "因此，他在约1826—1827年制作的《窗外景色》标志着光、时间和记忆之间关系的一个重要阶段。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Les inventions suivantes cherchent notamment à raccourcir les temps de pose et à rendre la prise de vue plus simple, sans suivre pour autant une seule direction.",
+      "zh": "之后的发明尤其试图缩短曝光时间，使拍摄更简单，但其发展并非只有一个方向。",
+      "glosses": [
+        {
+          "surface": "raccourcir",
+          "lemma": "raccourcir",
+          "zh": "缩短",
+          "note": "动词原形，chercher à 后接不定式。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "En 1839, François Arago présente publiquement le daguerréotype de Louis Daguerre, qui produit une image unique sur une plaque métallique.",
+      "zh": "1839年，弗朗索瓦·阿拉戈公开介绍路易·达盖尔的银版摄影法；这种方法在金属板上生成一幅独一的图像。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "En 1851, cinq photographes reçoivent une autre mission : parcourir la France pour documenter des édifices remarquables à la demande de la Commission des monuments historiques.",
+      "zh": "1851年，五名摄影师接受了另一项任务：应历史古迹委员会的要求，走访法国，记录杰出的建筑。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "La photographie devient alors un moyen de conserver des traces de lieux qui risquent de changer ou de disparaître, et pas seulement de réaliser des portraits.",
+      "zh": "摄影于是成为保存可能改变或消失的地点痕迹的一种手段，而不只是拍摄肖像。",
+      "glosses": [
+        {
+          "surface": "traces",
+          "lemma": "trace",
+          "zh": "痕迹；记录",
+          "note": "une trace；这里指关于地点的影像记录。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Cependant, documenter ne signifie pas simplement copier : dans les années 1860, Julia Margaret Cameron travaille le cadrage, la lumière et le flou pour créer des images expressives.",
+      "zh": "然而，记录并不意味着单纯复制：在19世纪60年代，朱莉娅·玛格丽特·卡梅伦通过构图、光线和模糊效果创作富有表现力的图像。",
+      "glosses": [
+        {
+          "surface": "cadrage",
+          "lemma": "cadrage",
+          "zh": "构图；取景",
+          "note": "le cadrage；决定画面纳入什么。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "La facilité technique et le regard personnel constituent donc deux dimensions différentes de cette histoire, même lorsqu’elles évoluent au même moment.",
+      "zh": "因此，技术便利和个人视角构成了这段历史的两个不同维度，即使它们同时发展。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Avec le premier appareil Kodak, lancé en 1888, l’utilisateur n’a plus besoin de maîtriser lui-même toutes les opérations : l’entreprise prend en charge le développement.",
+      "zh": "随着第一款柯达相机在1888年推出，用户不再需要亲自掌握所有操作：冲洗由公司承担。",
+      "glosses": [
+        {
+          "surface": "développement",
+          "lemma": "développement",
+          "zh": "冲洗；显影",
+          "note": "这里是摄影语境，不是经济发展。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Cette organisation simplifie la pratique et aide les images à trouver leur place dans les voyages, les fêtes et la vie familiale.",
+      "zh": "这种安排简化了拍摄实践，帮助图像融入旅行、节庆和家庭生活。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Les progrès de l’impression ouvrent également de nouvelles possibilités aux journaux, qui accordent progressivement davantage de place aux photographies dans leurs récits de l’actualité.",
+      "zh": "印刷技术的进步也为报纸创造了新可能，报纸逐步在新闻叙述中给予照片更多空间。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Diffusé à partir de 1907, l’autochrome contribue, de son côté, au développement de la photographie en couleurs et enrichit les usages documentaires de l’image.",
+      "zh": "自1907年起推广的奥托克罗姆彩色摄影工艺，则促进了彩色摄影的发展，丰富了图像的记录用途。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "En 1928, le magazine Vu fait de la photographie un élément central de son récit : elle peut porter une information au lieu de seulement accompagner des mots.",
+      "zh": "1928年，《Vu》杂志让摄影成为叙述的核心元素：照片可以承载信息，而不只是陪衬文字。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "La création de Magnum Photos en 1947, sous forme de coopérative, illustre aussi l’affirmation du photographe comme auteur et témoin de son époque.",
+      "zh": "1947年，马格南图片社以合作社形式成立，也体现了摄影师作为作者和时代见证者的地位得到确立。",
+      "glosses": [
+        {
+          "surface": "témoin",
+          "lemma": "témoin",
+          "zh": "见证者",
+          "note": "un témoin de son époque：时代见证者。"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "La même année, le Polaroid réduit fortement le délai entre la prise de vue et le moment où l’on peut regarder le résultat.",
+      "zh": "同一年，宝丽来大幅缩短了拍摄与能够看到结果之间的等待时间。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "À la fin des années 1990, la diffusion des appareils numériques accélère encore ce mouvement : les images sont enregistrées comme fichiers et deviennent immédiatement consultables.",
+      "zh": "20世纪90年代末，数码相机的普及进一步加快了这一过程：图像被保存为文件，并能立即查看。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Le téléphone rapproche ensuite la prise de vue de la circulation des images, tandis que les réseaux sociaux et les retouches automatisées continuent de modifier les pratiques.",
+      "zh": "随后，手机使拍摄和图像传播更加紧密地结合起来，而社交网络和自动修图继续改变着人们的实践。",
+      "glosses": []
+    },
+    {
+      "id": "s22",
+      "text": "L’article annonçait enfin un programme de célébration du bicentenaire à partir du 1er septembre 2026, associant expositions, rencontres, ateliers et projets numériques.",
+      "zh": "文章最后宣布了一项自2026年9月1日起开展的两百周年庆祝计划，结合展览、交流、工作坊和数字项目。",
+      "glosses": []
+    },
+    {
+      "id": "s23",
+      "text": "Ce parcours historique invite à considérer une photographie à la fois comme un objet technique, une trace du passé et une manière choisie de raconter le monde.",
+      "zh": "这段历史引导人们同时把照片视为技术产物、过去的痕迹，以及一种经过选择的叙述世界的方式。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "plaque",
+        "lemma": "plaque",
+        "zh": "板；片",
+        "note": "une plaque d’étain：锡板。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "raccourcir",
+        "lemma": "raccourcir",
+        "zh": "缩短",
+        "note": "动词原形，chercher à 后接不定式。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "traces",
+        "lemma": "trace",
+        "zh": "痕迹；记录",
+        "note": "une trace；这里指关于地点的影像记录。",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "cadrage",
+        "lemma": "cadrage",
+        "zh": "构图；取景",
+        "note": "le cadrage；决定画面纳入什么。",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "développement",
+        "lemma": "développement",
+        "zh": "冲洗；显影",
+        "note": "这里是摄影语境，不是经济发展。",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "témoin",
+        "lemma": "témoin",
+        "zh": "见证者",
+        "note": "un témoin de son époque：时代见证者。",
+        "sentenceId": "s18"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "prend en charge",
+        "zh": "负责；承担",
+        "note": "prendre en charge 的第三人称单数现在时。",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "au lieu de",
+        "zh": "而不是",
+        "note": "后接不定式，比较两种作用。",
+        "sentenceId": "s17"
+      },
+      {
+        "text": "à la fois",
+        "zh": "同时；既……又……",
+        "note": "与多个并列名词短语配合使用。",
+        "sentenceId": "s23"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "même lorsque：即使在……的时候，用来区分同时发生与概念相同。"
+      },
+      {
+        "sentenceId": "s21",
+        "note": "tandis que 连接两个并行变化；不是把一种变化解释为另一种的唯一原因。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Une photo est-elle surtout un souvenir, une information ou une création pour toi ?",
+        "zh": "对你来说，一张照片主要是记忆、信息还是创作？",
+        "note": "教学讨论，不作自动评分。"
+      },
+      {
+        "text": "Le fait de voir immédiatement une photo change-t-il ta manière de la prendre ?",
+        "zh": "能立刻看到照片是否改变了你的拍摄方式？",
+        "note": "教学讨论，不作自动评分。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ce qui a changé, c’est…",
+        "zh": "发生变化的是……",
+        "note": "教学补充，可替换省略号部分。"
+      },
+      {
+        "text": "La technique facilite…, mais le choix de… reste important.",
+        "zh": "技术使……更方便，但对……的选择仍很重要。",
+        "note": "教学补充，可替换省略号部分。"
+      }
+    ]
+  }
+}

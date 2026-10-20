@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-it-reddito-spese-risparmio",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 21,
+      "answer": "reddito",
+      "options": [
+        "affitto",
+        "reddito",
+        "prezzo",
+        "debito"
+      ],
+      "explanation": "根据中文句意还原原文：reddito 表示“收入”。阳性单数名词，il reddito disponibile 指可支配收入。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 3,
+      "answer": "spesa",
+      "options": [
+        "durata",
+        "scelta",
+        "spesa",
+        "distanza"
+      ],
+      "explanation": "根据中文句意还原原文：spesa 表示“支出”。阴性单数名词，la spesa per i consumi 指消费支出。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 9,
+      "answer": "risparmiata",
+      "options": [
+        "risparmiata",
+        "prestata",
+        "ricevuta",
+        "restituita"
+      ],
+      "explanation": "根据中文句意还原原文：risparmiata 表示“储蓄起来的”。过去分词作定语，与阴性单数 parte 一致。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 29,
+      "answer": "diminuito",
+      "options": [
+        "aumentato",
+        "migliorato",
+        "raddoppiato",
+        "diminuito"
+      ],
+      "explanation": "根据中文句意还原原文：diminuito 表示“下降了”。è diminuito 是阳性单数主语 il potere 的近过去时。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 88,
+      "answer": "stagionali",
+      "options": [
+        "personali",
+        "stagionali",
+        "familiari",
+        "territoriali"
+      ],
+      "explanation": "根据中文句意还原原文：stagionali 表示“季节性的”。形容词复数，与阳性复数 effetti 一致。其余选项不符合本句所表达的内容。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-it-disegni-che-tornano-visibili",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 160,
+      "answer": "patrimonio",
+      "options": [
+        "programma",
+        "patrimonio",
+        "personale",
+        "percorso"
+      ],
+      "explanation": "根据中文句意还原原文：patrimonio 表示“遗产”。阳性单数名词，这里指保存下来的工业文化遗产。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 99,
+      "answer": "costi",
+      "options": [
+        "visitatori",
+        "ricavi",
+        "costi",
+        "disegni"
+      ],
+      "explanation": "根据中文句意还原原文：costi 表示“费用”。阳性复数名词；essere a carico di 表示由……承担。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 3,
+      "answer": "consegna",
+      "options": [
+        "consegna",
+        "chiusura",
+        "vendita",
+        "visita"
+      ],
+      "explanation": "根据中文句意还原原文：consegna 表示“交付”。阴性单数名词，与 prevista 一致。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 41,
+      "answer": "approvazione",
+      "options": [
+        "partecipazione",
+        "prenotazione",
+        "presentazione",
+        "approvazione"
+      ],
+      "explanation": "根据中文句意还原原文：approvazione 表示“批准”。阴性单数名词，这里指文化部对模型销售前的批准。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 47,
+      "answer": "permanente",
+      "options": [
+        "itinerante",
+        "permanente",
+        "temporanea",
+        "annuale"
+      ],
+      "explanation": "根据中文句意还原原文：permanente 表示“常设的”。形容词单数，与 esposizione 一致。其余选项不符合本句所表达的内容。"
+    }
+  ]
+}

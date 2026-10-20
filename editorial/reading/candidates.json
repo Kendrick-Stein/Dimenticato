@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-17",
+  "collectedAt": "2026-10-20",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -77,8 +77,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 17,
+          "asOf": "2026-10-20",
+          "ageDays": 20,
           "bucket": "within_30_days"
         }
       },
@@ -159,9 +159,9 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 30,
-          "bucket": "within_30_days"
+          "asOf": "2026-10-20",
+          "ageDays": 33,
+          "bucket": "within_90_days"
         }
       },
       "linkToArticleId": "2026-10-12-it-energia-a-scuola"
@@ -241,8 +241,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 32,
+          "asOf": "2026-10-20",
+          "ageDays": 35,
           "bucket": "within_90_days"
         }
       },
@@ -333,8 +333,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-business-innovation-science-and-trade"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 8,
+          "asOf": "2026-10-20",
+          "ageDays": 11,
           "bucket": "within_30_days"
         }
       },
@@ -424,8 +424,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 8,
+          "asOf": "2026-10-20",
+          "ageDays": 11,
           "bucket": "within_30_days"
         }
       },
@@ -515,8 +515,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 11,
+          "asOf": "2026-10-20",
+          "ageDays": 14,
           "bucket": "within_30_days"
         }
       },
@@ -599,8 +599,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 9,
+          "asOf": "2026-10-20",
+          "ageDays": 12,
           "bucket": "within_30_days"
         }
       },
@@ -683,8 +683,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 9,
+          "asOf": "2026-10-20",
+          "ageDays": 12,
           "bucket": "within_30_days"
         }
       },
@@ -767,8 +767,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 11,
+          "asOf": "2026-10-20",
+          "ageDays": 14,
           "bucket": "within_30_days"
         }
       },
@@ -857,8 +857,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 15,
+          "asOf": "2026-10-20",
+          "ageDays": 18,
           "bucket": "within_30_days"
         }
       },
@@ -947,8 +947,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 25,
+          "asOf": "2026-10-20",
+          "ageDays": 28,
           "bucket": "within_30_days"
         }
       },
@@ -1038,8 +1038,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 26,
+          "asOf": "2026-10-20",
+          "ageDays": 29,
           "bucket": "within_30_days"
         }
       },
@@ -1057,73 +1057,76 @@
       "category": "environment",
       "topics": [
         "海洋观测",
-        "科研合作",
-        "开放数据"
+        "数据共享",
+        "长期研究"
       ],
-      "level": "B1",
-      "priority": 4,
-      "status": "collected",
-      "editorialNote": "潜在口语角度：为什么需要长期观察海洋？哪些科学数据应该向公众开放？最新机构新闻，但原语来源与稿件权属仍待进一步核查。涉及跨国研究联盟，不能只凭意大利语网页或页脚许可便认定全部稿件为INGV原创。仅采集元数据，不改写、不发布；若进入复审，排除外部机构负责人引语、图片和链接内容，并区分四年计划与已完成成果。",
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "从海面卫星观测到海底现场测量，EMSO EVOLVE 希望把分散站点连接为更协调的区域观测与数据服务体系。 2026-10-20 source rechecked; B2 draft 513 words; independent editorial review pending. Do not publish candidate directly.",
       "verification": {
-        "workflowStage": "discovered",
-        "checkedAt": "2026-10-11",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
         "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-20",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
-          "checkedAt": "2026-10-11",
-          "notes": "Read full institutional news page through web tool: visible date, narrative, project details, external quotation, image caption and article footer. No adapted body retained."
+          "checkedAt": "2026-10-20",
+          "notes": "Whole institutional HTML body read, including date, text credits and licence/footer; no linked report/media reused."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
-          "evidence": "Article header Pubblicato: 09 Ottobre 2026, matching registered-source feed."
+          "evidence": "Explicit publication/date field 2026-10-09; announcement/report rather than future event listing."
         },
         "nativeLanguage": {
-          "verified": false,
+          "verified": true,
           "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
-          "basis": "institutional-language-observed-original-provenance-pending",
-          "evidence": "Official INGV Italian press page. A multi-country consortium and its external coordinator are central; no explicit translator marker found, but earliest Italian institutional-origin/republishing provenance was not settled in this bounded discovery pass.",
-          "caveat": "Do not promote to native-adaptation until article origin is independently checked; language-code match is not proof."
+          "evidence": "Italian institutional editorial prose. No translator or syndication marker; any English version is explicitly separate and was not used.",
+          "author": "INGV Ufficio Stampa (institutional authorship; no individual text byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional provenance supports original-language editorial publication, not individual mother tongue or a certified drafting-language history."
         },
         "rights": {
-          "verified": false,
-          "adaptationAllowed": false,
-          "publicRedistributionAllowed": false,
-          "license": "Article footer states CC BY 4.0 for INGV-published content; exact consortium-text scope pending",
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-          "evidence": "Article footer repeats INGV CC BY 4.0 notice. Whether every unquoted paragraph is INGV-owned rather than consortium-syndicated prose remains unresolved; external coordinator quotation is explicitly excluded. False values mean not yet cleared, not a final prohibition.",
+          "evidence": "Full article and INGV legal notice read20Oct. Article footer explicitly CC BY4 for institution-published page content; legal notice identifies INGV ownership absent contrary indication. No conflicting institutional narrative credit. Excluded Ingrid Puillat quotation and all media. Publication field9Oct; project48months1Sep2026–31Aug2030, strategic2035,19partners10countries,14facilities21sites~125variables, budget4.99m/UE3.99m checked. Source calls four areas but lists ambiguously more topics; adaptation lists topics without reproducing an unsupported count.",
           "evidenceUrls": [
             "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
-            "https://www.ingv.it/note-legali"
+            "https://www.ingv.it/note-legali/",
+            "https://creativecommons.org/licenses/by/4.0/"
           ],
-          "scope": "Metadata-only discovery; no article prose cleared for adaptation in this pass.",
+          "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
           "exclusions": [
-            "All images, captions, logos and linked external works",
-            "Quoted statement from EMSO ERIC coordinator Ingrid Puillat",
-            "Any consortium-owned or externally syndicated text unless rights are independently cleared"
+            "Photos, logos, media",
+            "All direct quotations and third-party credited text",
+            "Linked documents and English translation"
           ],
           "attributionRequirements": [
-            "If cleared, credit INGV and any supplied creator/consortium attribution, original title/date and source URL",
-            "Link applicable licence and disclose adaptation/translation without implying endorsement"
+            "Institutional author/title/source/date",
+            "License link and disclosure of Italian adaptation/Chinese translation",
+            "No endorsement; retain exclusion of third-party works"
           ],
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 8,
+          "asOf": "2026-10-20",
+          "ageDays": 11,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-13",
-          "checkedAgainstArticleCount": 16,
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         }
       },
-      "linkToArticleId": null
+      "linkToArticleId": "2026-10-20-it-osservare-oceano-nel-tempo"
     },
     {
       "id": "de-2026-08-20-ai-everyday-terms",
@@ -1207,8 +1210,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 58,
+          "asOf": "2026-10-20",
+          "ageDays": 61,
           "bucket": "within_90_days"
         }
       },
@@ -1301,9 +1304,9 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 29,
-          "bucket": "within_30_days"
+          "asOf": "2026-10-20",
+          "ageDays": 32,
+          "bucket": "within_90_days"
         }
       },
       "linkToArticleId": "2026-10-12-en-more-chances-to-join-in"
@@ -1374,8 +1377,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 16,
+          "asOf": "2026-10-20",
+          "ageDays": 19,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1458,8 +1461,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 9,
+          "asOf": "2026-10-20",
+          "ageDays": 12,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1554,8 +1557,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 59,
+          "asOf": "2026-10-20",
+          "ageDays": 62,
           "bucket": "within_90_days"
         }
       },
@@ -1645,8 +1648,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 46,
+          "asOf": "2026-10-20",
+          "ageDays": 49,
           "bucket": "within_90_days"
         }
       },
@@ -1717,8 +1720,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 9,
+          "asOf": "2026-10-20",
+          "ageDays": 12,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1795,8 +1798,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 10,
+          "asOf": "2026-10-20",
+          "ageDays": 13,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1880,8 +1883,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 15,
+          "asOf": "2026-10-20",
+          "ageDays": 18,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1965,8 +1968,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 11,
+          "asOf": "2026-10-20",
+          "ageDays": 14,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2062,9 +2065,9 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 88,
-          "bucket": "within_90_days"
+          "asOf": "2026-10-20",
+          "ageDays": 91,
+          "bucket": "archive"
         }
       },
       "linkToArticleId": "2026-10-13-de-welche-geschichten-wir-ueber-ki-erzaehlen"
@@ -2135,8 +2138,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 15,
+          "asOf": "2026-10-20",
+          "ageDays": 18,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2214,9 +2217,9 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 30,
-          "bucket": "within_30_days"
+          "asOf": "2026-10-20",
+          "ageDays": 33,
+          "bucket": "within_90_days"
         },
         "duplicateCheck": {
           "checkedAt": "2026-10-14",
@@ -2293,8 +2296,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 33,
+          "asOf": "2026-10-20",
+          "ageDays": 36,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2372,8 +2375,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 44,
+          "asOf": "2026-10-20",
+          "ageDays": 47,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2461,8 +2464,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 18,
+          "asOf": "2026-10-20",
+          "ageDays": 21,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2551,8 +2554,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 34,
+          "asOf": "2026-10-20",
+          "ageDays": 37,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2640,8 +2643,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 21,
+          "asOf": "2026-10-20",
+          "ageDays": 24,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2737,8 +2740,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 31,
+          "asOf": "2026-10-20",
+          "ageDays": 34,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2834,8 +2837,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 4,
+          "asOf": "2026-10-20",
+          "ageDays": 7,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2931,8 +2934,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 36,
+          "asOf": "2026-10-20",
+          "ageDays": 39,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2976,8 +2979,8 @@
           "notes": "Full page read; only institutional introduction/narrative and key-figures section adapted. External interview answers excluded, rather than assuming rights transfer."
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 38,
+          "asOf": "2026-10-20",
+          "ageDays": 41,
           "bucket": "within_90_days"
         },
         "originalDate": {
@@ -3112,8 +3115,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 59,
+          "asOf": "2026-10-20",
+          "ageDays": 62,
           "bucket": "within_90_days"
         }
       },
@@ -3199,8 +3202,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 78,
+          "asOf": "2026-10-20",
+          "ageDays": 81,
           "bucket": "within_90_days"
         }
       },
@@ -3283,8 +3286,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 18,
+          "asOf": "2026-10-20",
+          "ageDays": 21,
           "bucket": "within_30_days"
         }
       },
@@ -3325,8 +3328,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 24,
+          "asOf": "2026-10-20",
+          "ageDays": 27,
           "bucket": "within_30_days"
         }
       }
@@ -3366,8 +3369,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 66,
+          "asOf": "2026-10-20",
+          "ageDays": 69,
           "bucket": "within_90_days"
         }
       }
@@ -3437,8 +3440,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 13,
+          "asOf": "2026-10-20",
+          "ageDays": 16,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3516,8 +3519,8 @@
           "reviewBeforeConversionRequired": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 38,
+          "asOf": "2026-10-20",
+          "ageDays": 41,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -3553,8 +3556,8 @@
         "editorialReviewComplete": false,
         "checkedAt": "2026-10-14",
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 20,
+          "asOf": "2026-10-20",
+          "ageDays": 23,
           "bucket": "within_30_days"
         }
       }
@@ -3624,8 +3627,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 3,
+          "asOf": "2026-10-20",
+          "ageDays": 6,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3702,8 +3705,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 4,
+          "asOf": "2026-10-20",
+          "ageDays": 7,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3798,8 +3801,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 3,
+          "asOf": "2026-10-20",
+          "ageDays": 6,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3894,8 +3897,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 3,
+          "asOf": "2026-10-20",
+          "ageDays": 6,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3990,8 +3993,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 36,
+          "asOf": "2026-10-20",
+          "ageDays": 39,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -4080,8 +4083,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 4,
+          "asOf": "2026-10-20",
+          "ageDays": 7,
           "bucket": "within_30_days"
         }
       },
@@ -4164,8 +4167,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 3,
+          "asOf": "2026-10-20",
+          "ageDays": 6,
           "bucket": "within_30_days"
         }
       },
@@ -4248,8 +4251,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 65,
+          "asOf": "2026-10-20",
+          "ageDays": 68,
           "bucket": "within_90_days"
         }
       }
@@ -4329,8 +4332,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 8,
+          "asOf": "2026-10-20",
+          "ageDays": 11,
           "bucket": "within_30_days"
         }
       },
@@ -4411,8 +4414,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 22,
+          "asOf": "2026-10-20",
+          "ageDays": 25,
           "bucket": "within_30_days"
         }
       },
@@ -4493,8 +4496,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 2,
+          "asOf": "2026-10-20",
+          "ageDays": 5,
           "bucket": "within_30_days"
         }
       },
@@ -4573,8 +4576,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 19,
+          "asOf": "2026-10-20",
+          "ageDays": 22,
           "bucket": "within_30_days"
         }
       }
@@ -4652,8 +4655,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 4,
+          "asOf": "2026-10-20",
+          "ageDays": 7,
           "bucket": "within_30_days"
         }
       }
@@ -4732,8 +4735,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 37,
+          "asOf": "2026-10-20",
+          "ageDays": 40,
           "bucket": "within_90_days"
         }
       }
@@ -4819,8 +4822,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 5,
+          "asOf": "2026-10-20",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
       }
@@ -4906,8 +4909,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 4,
+          "asOf": "2026-10-20",
+          "ageDays": 7,
           "bucket": "within_30_days"
         }
       }
@@ -4993,8 +4996,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 2,
+          "asOf": "2026-10-20",
+          "ageDays": 5,
           "bucket": "within_30_days"
         }
       }
@@ -5076,8 +5079,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 11,
+          "asOf": "2026-10-20",
+          "ageDays": 14,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5165,8 +5168,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 10,
+          "asOf": "2026-10-20",
+          "ageDays": 13,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5247,8 +5250,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 24,
+          "asOf": "2026-10-20",
+          "ageDays": 27,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5329,8 +5332,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-17",
-          "ageDays": 1,
+          "asOf": "2026-10-20",
+          "ageDays": 4,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5341,6 +5344,1362 @@
         }
       },
       "linkToArticleId": "2026-10-17-it-prezzi-settembre"
+    },
+    {
+      "id": "it-2026-10-05-reddito-spese-risparmio",
+      "language": "it",
+      "sourceTitle": "Conto trimestrale delle Amministrazioni pubbliche, reddito e risparmio delle famiglie e profitti delle società - II trimestre 2026",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/conto-trimestrale-ap-reddito-famiglie-profitti-societa-ii-trimestre-2026/",
+      "sourceName": "Istat",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-05",
+      "collectedAt": "2026-10-20",
+      "category": "society",
+      "topics": [
+        "家庭预算",
+        "消费",
+        "储蓄"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "收入增加，不一定意味着能买到更多东西。用短句阅读家庭收入、消费与购买力的不同变化。 2026-10-20 source rechecked; A2 draft 166 words; independent editorial review pending. Do not publish candidate directly.",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/conto-trimestrale-ap-reddito-famiglie-profitti-societa-ii-trimestre-2026/",
+          "checkedAt": "2026-10-20",
+          "notes": "Whole institutional HTML body read, including date, text credits and licence/footer; no linked report/media reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/conto-trimestrale-ap-reddito-famiglie-profitti-societa-ii-trimestre-2026/",
+          "evidence": "Explicit publication/date field 2026-10-05; announcement/report rather than future event listing."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/conto-trimestrale-ap-reddito-famiglie-profitti-societa-ii-trimestre-2026/",
+          "evidence": "Italian institutional editorial prose. No translator or syndication marker; any English version is explicitly separate and was not used.",
+          "author": "Istat (institutional authorship; no individual text byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional provenance supports original-language editorial publication, not individual mother tongue or a certified drafting-language history."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Istat legal notice explicitly grants modification, redistribution, commercial use under CC BY4 unless stated otherwise (licence section); entire source HTML including comment read and no conflicting text notice. Date field explicitly Data pubblicazione 5 Ottobre 2026; reference period II trimestre2026 separately stated. Household data seasonally adjusted; income +0.4%, consumption+1.7%, saving6.7% (-1.2pp), purchasing power-0.9%, deflator+1.4%. Text only.",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/conto-trimestrale-ap-reddito-famiglie-profitti-societa-ii-trimestre-2026/",
+            "https://www.istat.it/note-legali/",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
+          "exclusions": [
+            "Photos, logos, media",
+            "All direct quotations and third-party credited text",
+            "Linked documents and English translation"
+          ],
+          "attributionRequirements": [
+            "Institutional author/title/source/date",
+            "License link and disclosure of Italian adaptation/Chinese translation",
+            "No endorsement; retain exclusion of third-party works"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 15,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-20-it-reddito-spese-risparmio"
+    },
+    {
+      "id": "it-2026-10-15-disegni-che-tornano-visibili",
+      "language": "it",
+      "sourceTitle": "La Direzione generale Archivi rilancia la memoria dell’aeronautica italiana: accordo con Baykar Piaggio Aerospace",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=d0303c5d7d318bb41e38f4a3febda4d4&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2801",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-15",
+      "collectedAt": "2026-10-20",
+      "category": "culture",
+      "topics": [
+        "工业记忆",
+        "数字化",
+        "公共展览"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "一项五年协议提出数字化约2.8万张历史图纸、制作模型并筹办常设展览。阅读时区分已签署的协议与尚待完成的项目。 2026-10-20 source rechecked; B1 draft 281 words; independent editorial review pending. Do not publish candidate directly.",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=d0303c5d7d318bb41e38f4a3febda4d4&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2801",
+          "checkedAt": "2026-10-20",
+          "notes": "Whole institutional HTML body read, including date, text credits and licence/footer; no linked report/media reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=d0303c5d7d318bb41e38f4a3febda4d4&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2801",
+          "evidence": "Explicit publication/date field 2026-10-15; announcement/report rather than future event listing."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=d0303c5d7d318bb41e38f4a3febda4d4&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2801",
+          "evidence": "Italian institutional editorial prose. No translator or syndication marker; any English version is explicitly separate and was not used.",
+          "author": "Ministero della Cultura — Direzione generale Archivi (institutional authorship; no individual text byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional provenance supports original-language editorial publication, not individual mother tongue or a certified drafting-language history."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "evidence": "Article full Italian narrative read, English version explicitly separate. Source dated15 October2026 is a signed-agreement announcement, not a future-event listing. Footer Note legali points to Ministry terms; terms explicitly CC BY3.0 adaptation and redistribution with source attribution, excluding images/logos/third-party content. No contrary narrative text credit. Excluded Tarasco quotation, images, English translation and source archive documents. Main facts checked: five-year agreement; archive acquired2025; ~28000 drawings, DGA cost/12months; at least10 prototypes company cost/6months; ministerial approval before sale and equal proceeds; planned permanent exhibition.",
+          "evidenceUrls": [
+            "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=d0303c5d7d318bb41e38f4a3febda4d4&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2801",
+            "https://cultura.gov.it/note-legali/",
+            "https://creativecommons.org/licenses/by/3.0/"
+          ],
+          "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
+          "exclusions": [
+            "Photos, logos, media",
+            "All direct quotations and third-party credited text",
+            "Linked documents and English translation"
+          ],
+          "attributionRequirements": [
+            "Institutional author/title/source/date",
+            "License link and disclosure of Italian adaptation/Chinese translation",
+            "No endorsement; retain exclusion of third-party works"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 5,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-20-it-disegni-che-tornano-visibili"
+    },
+    {
+      "id": "fr-2026-09-28-parler-des-vignes",
+      "language": "fr",
+      "sourceTitle": "\"Vignes en transition, quels vins demain ?\"",
+      "sourceUrl": "https://www.inrae.fr/actualites/vignes-transition-quels-vins-demain",
+      "sourceName": "INRAE — Centre Occitanie-Montpellier",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-09-28",
+      "collectedAt": "2026-10-20",
+      "category": "society",
+      "topics": [
+        "科普交流",
+        "农业与生活",
+        "社区活动"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "本轮学习文章已编写，等待独立盲解、事实、语言和许可复核。原文在30天窗口内。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.inrae.fr/actualites/vignes-transition-quels-vins-demain",
+          "checkedAt": "2026-10-20",
+          "notes": "Complete original HTML body and bylines/date/credits read through public web, not only snippet; linked books, attachments and media excluded."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible original page says Publié le 2026-09-28; not edition or event date.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/vignes-transition-quels-vins-demain"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "French institutional editorial page with no translation or syndication marker; French original URL and institutional publication context inspected. Named book authors are not misrepresented as article bylines.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/vignes-transition-quels-vins-demain",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certificate of an individual author’s mother tongue or earliest drafting language.",
+          "author": "INRAE — Centre Occitanie-Montpellier institutional editorial authorship; no distinct individual byline"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Licence Ouverte / Open Licence Etalab 2.0",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "evidence": "INRAE current terms PROPRIETE INTELLECTUELLE license public institutional contents under Etalab2.0 unless separate rights/ND/all-rights-reserved notice. Complete article has no conflicting text notice; news overview only, no book text. Official Etalab2.0 terms read, explicitly allow adaptation, transformation, redistribution and publication with source/date credit and no endorsement.",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/vignes-transition-quels-vins-demain",
+            "https://www.inrae.fr/conditions-generales-dutilisation",
+            "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+          ],
+          "scope": "Institutional French narrative only; same-language teaching adaptation, Chinese translation and companion learning material, not original publisher-certified content.",
+          "exclusions": [
+            "All images, image captions, logos and third-party quotations",
+            "Linked books, PDFs, recordings and outside sites",
+            "Susan Sontag quotation and echo in photography article"
+          ],
+          "attributionRequirements": [
+            "Credit source institution and original title, URL, date",
+            "Link license and disclose French adaptation, Chinese translation, teaching additions; no endorsement"
+          ],
+          "basis": "current-institutional-public-text-license-and-article-exception-review",
+          "reviewBeforeConversionRequired": true,
+          "shareAlikeRequired": false
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 22,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-20-fr-parler-des-vignes"
+    },
+    {
+      "id": "fr-2026-10-15-comprendre-les-pertes-alimentaires",
+      "language": "fr",
+      "sourceTitle": "Pertes et gaspillage alimentaires. Les défis à relever",
+      "sourceUrl": "https://www.inrae.fr/actualites/pertes-gaspillage-alimentaires-defis-relever",
+      "sourceName": "INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-10-15",
+      "collectedAt": "2026-10-20",
+      "category": "society",
+      "topics": [
+        "食物浪费",
+        "日常饮食",
+        "集体行动"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "本轮学习文章已编写，等待独立盲解、事实、语言和许可复核。原文在30天窗口内。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.inrae.fr/actualites/pertes-gaspillage-alimentaires-defis-relever",
+          "checkedAt": "2026-10-20",
+          "notes": "Complete original HTML body and bylines/date/credits read through public web, not only snippet; linked books, attachments and media excluded."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible original page says Publié le 2026-10-15; not edition or event date.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/pertes-gaspillage-alimentaires-defis-relever"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "French institutional editorial page with no translation or syndication marker; French original URL and institutional publication context inspected. Named book authors are not misrepresented as article bylines.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/pertes-gaspillage-alimentaires-defis-relever",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certificate of an individual author’s mother tongue or earliest drafting language.",
+          "author": "INRAE institutional editorial authorship; no distinct individual byline"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Licence Ouverte / Open Licence Etalab 2.0",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "evidence": "INRAE current terms PROPRIETE INTELLECTUELLE license public institutional contents under Etalab2.0 unless separate rights/ND/all-rights-reserved notice. Complete article has no conflicting text notice; news overview only, no book text. Official Etalab2.0 terms read, explicitly allow adaptation, transformation, redistribution and publication with source/date credit and no endorsement.",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/pertes-gaspillage-alimentaires-defis-relever",
+            "https://www.inrae.fr/conditions-generales-dutilisation",
+            "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+          ],
+          "scope": "Institutional French narrative only; same-language teaching adaptation, Chinese translation and companion learning material, not original publisher-certified content.",
+          "exclusions": [
+            "All images, image captions, logos and third-party quotations",
+            "Linked books, PDFs, recordings and outside sites",
+            "Susan Sontag quotation and echo in photography article"
+          ],
+          "attributionRequirements": [
+            "Credit source institution and original title, URL, date",
+            "Link license and disclose French adaptation, Chinese translation, teaching additions; no endorsement"
+          ],
+          "basis": "current-institutional-public-text-license-and-article-exception-review",
+          "reviewBeforeConversionRequired": true,
+          "shareAlikeRequired": false
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 5,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-20-fr-comprendre-les-pertes-alimentaires"
+    },
+    {
+      "id": "fr-2026-08-19-photographier-et-partager",
+      "language": "fr",
+      "sourceTitle": "Pour ses 200 ans, la photographie voit en grand",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/pour-ses-200-ans-la-photographie-voit-en-grand",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-08-19",
+      "collectedAt": "2026-10-20",
+      "category": "culture",
+      "topics": [
+        "摄影",
+        "日常记忆",
+        "技术与艺术"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "本轮学习文章已编写，等待独立盲解、事实、语言和许可复核。90天窗口后备，原文日期保留；不当作新近事件。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/pour-ses-200-ans-la-photographie-voit-en-grand",
+          "checkedAt": "2026-10-20",
+          "notes": "Complete original HTML body and bylines/date/credits read through public web, not only snippet; linked books, attachments and media excluded."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible original page says Publié le 2026-08-19; not edition or event date.",
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/pour-ses-200-ans-la-photographie-voit-en-grand"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "French institutional editorial page with no translation or syndication marker; French original URL and institutional publication context inspected. Named book authors are not misrepresented as article bylines.",
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/pour-ses-200-ans-la-photographie-voit-en-grand",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certificate of an individual author’s mother tongue or earliest drafting language.",
+          "author": "Ministère de la Culture institutional editorial authorship; no distinct individual byline"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 France",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidence": "Ministry notice section4.3.1(a) expressly licenses ministry-produced text CC BY-SA3.0FR;4.3.2 excludes partner works. Complete article found no separate text-rights notice; image credits distinct. CC deed read and permits sharing/adaptation including commercial subject to attribution/change notice/ShareAlike.",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/actualites/pour-ses-200-ans-la-photographie-voit-en-grand",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+          ],
+          "scope": "Institutional French narrative only; same-language teaching adaptation, Chinese translation and companion learning material, not original publisher-certified content.",
+          "exclusions": [
+            "All images, image captions, logos and third-party quotations",
+            "Linked books, PDFs, recordings and outside sites",
+            "Susan Sontag quotation and echo in photography article"
+          ],
+          "attributionRequirements": [
+            "Credit source institution and original title, URL, date",
+            "Link license and disclose French adaptation, Chinese translation, teaching additions; no endorsement",
+            "Retain CC BY-SA3.0FR for article and companion adaptations"
+          ],
+          "basis": "current-institutional-public-text-license-and-article-exception-review",
+          "reviewBeforeConversionRequired": true,
+          "shareAlikeRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 62,
+          "bucket": "within_90_days"
+        }
+      },
+      "linkToArticleId": "2026-10-20-fr-photographier-et-partager"
+    },
+    {
+      "id": "fr-2026-09-15-jardins-biodiversite",
+      "language": "fr",
+      "sourceTitle": "Paris, métropole verte ? Des jardins et des espaces cultivés, vecteurs de biodiversité",
+      "sourceUrl": "https://www.inrae.fr/actualites/paris-metropole-verte-jardins-espaces-cultives-vecteurs-biodiversite",
+      "sourceName": "INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-09-15",
+      "collectedAt": "2026-10-20",
+      "category": "environment",
+      "topics": [
+        "城市绿地",
+        "生物多样性",
+        "日常园艺"
+      ],
+      "level": "B1",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "备用来源；正文与许可核验完成，尚无学习文章或题目。口语角度：城市绿地的使用与管理如何影响自然？90天窗口后备，原文日期保留；不当作新近事件。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.inrae.fr/actualites/paris-metropole-verte-jardins-espaces-cultives-vecteurs-biodiversite",
+          "checkedAt": "2026-10-20",
+          "notes": "Complete original HTML body and bylines/date/credits read through public web, not only snippet; linked books, attachments and media excluded."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Visible original page says Publié le 2026-09-15; not edition or event date.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/paris-metropole-verte-jardins-espaces-cultives-vecteurs-biodiversite"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "French institutional editorial page with no translation or syndication marker; French original URL and institutional publication context inspected. Named book authors are not misrepresented as article bylines.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/paris-metropole-verte-jardins-espaces-cultives-vecteurs-biodiversite",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certificate of an individual author’s mother tongue or earliest drafting language.",
+          "author": "INRAE institutional editorial authorship; no distinct individual byline"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Licence Ouverte / Open Licence Etalab 2.0",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "evidence": "INRAE current terms PROPRIETE INTELLECTUELLE license public institutional contents under Etalab2.0 unless separate rights/ND/all-rights-reserved notice. Complete article has no conflicting text notice; news overview only, no book text. Official Etalab2.0 terms read, explicitly allow adaptation, transformation, redistribution and publication with source/date credit and no endorsement.",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/paris-metropole-verte-jardins-espaces-cultives-vecteurs-biodiversite",
+            "https://www.inrae.fr/conditions-generales-dutilisation",
+            "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+          ],
+          "scope": "Institutional French narrative only; same-language teaching adaptation, Chinese translation and companion learning material, not original publisher-certified content.",
+          "exclusions": [
+            "All images, image captions, logos and third-party quotations",
+            "Linked books, PDFs, recordings and outside sites",
+            "Susan Sontag quotation and echo in photography article"
+          ],
+          "attributionRequirements": [
+            "Credit source institution and original title, URL, date",
+            "Link license and disclose French adaptation, Chinese translation, teaching additions; no endorsement"
+          ],
+          "basis": "current-institutional-public-text-license-and-article-exception-review",
+          "reviewBeforeConversionRequired": true,
+          "shareAlikeRequired": false
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 35,
+          "bucket": "within_90_days"
+        }
+      }
+    },
+    {
+      "id": "en-2026-09-30-food-near-home",
+      "language": "en",
+      "sourceTitle": "Government acts on food insecurity and affordability with £10 million to put good food within reach",
+      "sourceUrl": "https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach",
+      "sourceName": "Department for Environment, Food & Rural Affairs",
+      "registrySourceId": "govuk-defra-english-news",
+      "sourcePublishedAt": "2026-09-30",
+      "collectedAt": "2026-10-20",
+      "category": "society",
+      "topics": [
+        "社区食物支持",
+        "日常开支"
+      ],
+      "level": "A2",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "A2本轮待独立审核教学稿；源文本已重读。英格兰45个地方政府将获资助，因地制宜改善居民获得健康、可负担食物的机会。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-20",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach",
+          "checkedAt": "2026-10-20",
+          "notes": "完整官方新闻正文、原发日期、机构From字段与OGL页脚已阅读；非搜索摘要核查。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "页面Published字段，与事件日期及整理日期分开记录。",
+          "evidenceUrl": "https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "英国机构署名英文新闻稿，正文为机构叙述，未见译者或外部转载标记。",
+          "evidenceUrl": "https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach",
+          "author": "Department for Environment, Food & Rural Affairs",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构来源与文章语境支持原语判断，不认证作者母语或最初起草语言。"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Environment, Food & Rural Affairs"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "本篇页脚明确标明除另述外全文OGL v3；GOV.UK条款Using GOV.UK content明确说明可依OGL转载。机构叙述无相反文字权利声明；具名外部引语、图片及链接文献全部排除。",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/government-acts-on-food-insecurity-and-affordability-with-10-million-to-put-good-food-within-reach",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+          "exclusions": [
+            "照片、图片、标志、视频",
+            "第三方直接引语、外部文献及链接作品"
+          ],
+          "attributionRequirements": [
+            "机构与Crown copyright署名",
+            "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+          ],
+          "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+          "licenseRetrievalNote": "本次直接OGL目标页返回Internal Error；未绕过；未声称已读取本次完整许可目标页。",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 20,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-20-en-food-near-home"
+    },
+    {
+      "id": "en-2026-10-16-octopus-and-fishing-choices",
+      "language": "en",
+      "sourceTitle": "Octopus explosion off South West prompts talks between fishermen and scientists",
+      "sourceUrl": "https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists",
+      "sourceName": "Department for Environment, Food & Rural Affairs",
+      "registrySourceId": "govuk-defra-english-news",
+      "sourcePublishedAt": "2026-10-16",
+      "collectedAt": "2026-10-20",
+      "category": "environment",
+      "topics": [
+        "渔业",
+        "海洋变化",
+        "合作决策"
+      ],
+      "level": "B1",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "B1本轮待独立审核教学稿；源文本已重读。一次渔业会议对照新增收入、贝类损失和海上安全问题；捕获量不等于海中种群数量。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-20",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists",
+          "checkedAt": "2026-10-20",
+          "notes": "完整官方新闻正文、原发日期、机构From字段与OGL页脚已阅读；非搜索摘要核查。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "页面Published字段，与事件日期及整理日期分开记录。",
+          "evidenceUrl": "https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "英国机构署名英文新闻稿，正文为机构叙述，未见译者或外部转载标记。",
+          "evidenceUrl": "https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists",
+          "author": "Department for Environment, Food & Rural Affairs",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构来源与文章语境支持原语判断，不认证作者母语或最初起草语言。"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Environment, Food & Rural Affairs"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "本篇页脚明确标明除另述外全文OGL v3；GOV.UK条款Using GOV.UK content明确说明可依OGL转载。机构叙述无相反文字权利声明；具名外部引语、图片及链接文献全部排除。",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+          "exclusions": [
+            "照片、图片、标志、视频",
+            "第三方直接引语、外部文献及链接作品"
+          ],
+          "attributionRequirements": [
+            "机构与Crown copyright署名",
+            "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+          ],
+          "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+          "licenseRetrievalNote": "本次直接OGL目标页返回Internal Error；未绕过；未声称已读取本次完整许可目标页。",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 4,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-20-en-octopus-and-fishing-choices"
+    },
+    {
+      "id": "en-2026-09-28-coast-beyond-the-title",
+      "language": "en",
+      "sourceTitle": "England's only natural world heritage site has a birthday",
+      "sourceUrl": "https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday",
+      "sourceName": "Natural England",
+      "registrySourceId": "govuk-natural-england-english",
+      "sourcePublishedAt": "2026-09-28",
+      "collectedAt": "2026-10-20",
+      "category": "culture",
+      "topics": [
+        "自然遗产",
+        "海岸旅游",
+        "合作保护"
+      ],
+      "level": "B2",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "B2本轮待独立审核教学稿；源文本已重读。以侏罗纪海岸二十五周年纪念为线索，区分世界遗产称号、法定保护工具和长期合作管理。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-20",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday",
+          "checkedAt": "2026-10-20",
+          "notes": "完整官方新闻正文、原发日期、机构From字段与OGL页脚已阅读；非搜索摘要核查。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "页面Published字段，与事件日期及整理日期分开记录。",
+          "evidenceUrl": "https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "英国机构署名英文新闻稿，正文为机构叙述，未见译者或外部转载标记。",
+          "evidenceUrl": "https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday",
+          "author": "Natural England",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构来源与文章语境支持原语判断，不认证作者母语或最初起草语言。"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Natural England"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "本篇页脚明确标明除另述外全文OGL v3；GOV.UK条款Using GOV.UK content明确说明可依OGL转载。机构叙述无相反文字权利声明；具名外部引语、图片及链接文献全部排除。",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/englands-only-natural-world-heritage-site-has-a-birthday",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+          "exclusions": [
+            "照片、图片、标志、视频",
+            "第三方直接引语、外部文献及链接作品"
+          ],
+          "attributionRequirements": [
+            "机构与Crown copyright署名",
+            "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+          ],
+          "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+          "licenseRetrievalNote": "本次直接OGL目标页返回Internal Error；未绕过；未声称已读取本次完整许可目标页。",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 22,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-10-20-en-coast-beyond-the-title"
+    },
+    {
+      "id": "en-2026-10-14-foster-carer-campaign",
+      "language": "en",
+      "sourceTitle": "National call to recruit more foster carers launched at Number 10",
+      "sourceUrl": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
+      "sourceName": "Department for Education",
+      "registrySourceId": "govuk-education-english-news",
+      "sourcePublishedAt": "2026-10-14",
+      "collectedAt": "2026-10-20",
+      "category": "society",
+      "topics": [
+        "寄养照护",
+        "社区支持"
+      ],
+      "level": "B1",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "储备，不计已发文章。可讨论怎样降低志愿照护的现实门槛；保留10000新名额为目标、66%为条件式调查态度而非实际申请率。排除第三方引语及个人经历，正文可聚焦组织支持。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-20",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
+          "checkedAt": "2026-10-20",
+          "notes": "完整官方新闻正文、原发日期、机构From字段与OGL页脚已阅读；非搜索摘要核查。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "页面Published字段，与事件日期及整理日期分开记录。",
+          "evidenceUrl": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "英国机构署名英文新闻稿，正文为机构叙述，未见译者或外部转载标记。",
+          "evidenceUrl": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
+          "author": "Department for Education",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构来源与文章语境支持原语判断，不认证作者母语或最初起草语言。"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Education"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "本篇页脚明确标明除另述外全文OGL v3；GOV.UK条款Using GOV.UK content明确说明可依OGL转载。机构叙述无相反文字权利声明；具名外部引语、图片及链接文献全部排除。",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+          "exclusions": [
+            "照片、图片、标志、视频",
+            "第三方直接引语、外部文献及链接作品"
+          ],
+          "attributionRequirements": [
+            "机构与Crown copyright署名",
+            "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+          ],
+          "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+          "licenseRetrievalNote": "本次直接OGL目标页返回Internal Error；未绕过；未声称已读取本次完整许可目标页。",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 6,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      }
+    },
+    {
+      "id": "en-2026-10-01-natural-england-planning-advice",
+      "language": "en",
+      "sourceTitle": "New streamlined planning role for Natural England takes effect",
+      "sourceUrl": "https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect",
+      "sourceName": "Natural England",
+      "registrySourceId": "govuk-natural-england-english",
+      "sourcePublishedAt": "2026-10-01",
+      "collectedAt": "2026-10-20",
+      "category": "environment",
+      "topics": [
+        "规划咨询",
+        "自然保护"
+      ],
+      "level": "B2",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "储备，不计已发文章。可讨论有限专家资源应如何分配；新模式逐步引入，不能写成已全面实施，保护责任不因咨询方式改变而取消。排除引语与图片，非个案法律建议。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-20",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect",
+          "checkedAt": "2026-10-20",
+          "notes": "完整官方新闻正文、原发日期、机构From字段与OGL页脚已阅读；非搜索摘要核查。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "页面Published字段，与事件日期及整理日期分开记录。",
+          "evidenceUrl": "https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "英国机构署名英文新闻稿，正文为机构叙述，未见译者或外部转载标记。",
+          "evidenceUrl": "https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect",
+          "author": "Natural England",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构来源与文章语境支持原语判断，不认证作者母语或最初起草语言。"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Natural England"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "本篇页脚明确标明除另述外全文OGL v3；GOV.UK条款Using GOV.UK content明确说明可依OGL转载。机构叙述无相反文字权利声明；具名外部引语、图片及链接文献全部排除。",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+          "exclusions": [
+            "照片、图片、标志、视频",
+            "第三方直接引语、外部文献及链接作品"
+          ],
+          "attributionRequirements": [
+            "机构与Crown copyright署名",
+            "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+          ],
+          "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+          "licenseRetrievalNote": "本次直接OGL目标页返回Internal Error；未绕过；未声称已读取本次完整许可目标页。",
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 19,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      }
+    },
+    {
+      "id": "it-2026-10-15-road-data-provincial",
+      "language": "it",
+      "sourceTitle": "Incidenti stradali in Italia. Aggiornamento dati provinciali - Anno 2025",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
+      "sourceName": "Istat",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-15",
+      "collectedAt": "2026-10-20",
+      "category": "society",
+      "topics": [
+        "道路安全",
+        "地图阅读",
+        "统计更新"
+      ],
+      "level": "B1",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "省级道路事故数据更新：适合讨论地图如何帮助理解居住地风险。该网页是10月15日新发布的更新说明，明确原始2025数据曾于2026年7月24日公布，不把旧数据当10月新发生的事故。地图省级弹窗和分类变化可以作为B1阅读，但尚未编写正文。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
+          "checkedAt": "2026-10-20",
+          "notes": "Whole HTML update note read, including date15Oct2026. Explicitly states earlier data release24July2026 and newly finer provincial detail; six road-location categories instead of three; some totals corrected due to geolocation/municipality-code correction. No linked tables/maps/PDF reused. Istat CC BY4 notice checked, no conflicting article text credit. Provisional planning only."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
+          "evidence": "Source Data pubblicazione explicitly 2026-10-15; source reference year/month is separate."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
+          "evidence": "Italian institutional editorial prose. No translator or syndication marker; any English version is explicitly separate and was not used.",
+          "author": "Istat (institutional authorship; no individual text byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional provenance supports original-language editorial publication, not individual mother tongue or a certified drafting-language history."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Whole HTML update note read, including date15Oct2026. Explicitly states earlier data release24July2026 and newly finer provincial detail; six road-location categories instead of three; some totals corrected due to geolocation/municipality-code correction. No linked tables/maps/PDF reused. Istat CC BY4 notice checked, no conflicting article text credit. Provisional planning only.",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
+            "https://www.istat.it/note-legali/",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
+          "exclusions": [
+            "Photos, logos, media",
+            "All direct quotations and third-party credited text",
+            "Linked documents and English translation"
+          ],
+          "attributionRequirements": [
+            "Institutional author/title/source/date",
+            "License link and disclosure of Italian adaptation/Chinese translation",
+            "No endorsement; retain exclusion of third-party works"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 5,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      }
+    },
+    {
+      "id": "it-2026-10-16-trade-august",
+      "language": "it",
+      "sourceTitle": "Commercio con l’estero e prezzi all’import - Agosto 2026",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
+      "sourceName": "Istat",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-16",
+      "collectedAt": "2026-10-20",
+      "category": "work-economy",
+      "topics": [
+        "进出口",
+        "能源价格",
+        "统计比较"
+      ],
+      "level": "B2",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "贸易与日常商品价格的联系：作为较低优先级储备，避免连续经济政策题材。可用B2练习区分同比与环比、金额与数量；八月数据，10月16日发布。资料已核读但正文和题目尚未编写，不计作已审核精读。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
+          "checkedAt": "2026-10-20",
+          "notes": "Complete HTML narrative and Il commento read20Oct. Explicit publication16Oct2026/referenceAugust2026. Export-1.5%monthly yet+9.0%annual value/+1.9%volume; imports-1.6%monthly yet+9.7%annual value/-2.4%volume. Import prices+1.7%monthly/+7.3%annual. No linked PDFs/data reused. Istat CC BY4 notice checked; no conflicting text credit."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
+          "evidence": "Source Data pubblicazione explicitly 2026-10-16; source reference year/month is separate."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
+          "evidence": "Italian institutional editorial prose. No translator or syndication marker; any English version is explicitly separate and was not used.",
+          "author": "Istat (institutional authorship; no individual text byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional provenance supports original-language editorial publication, not individual mother tongue or a certified drafting-language history."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Complete HTML narrative and Il commento read20Oct. Explicit publication16Oct2026/referenceAugust2026. Export-1.5%monthly yet+9.0%annual value/+1.9%volume; imports-1.6%monthly yet+9.7%annual value/-2.4%volume. Import prices+1.7%monthly/+7.3%annual. No linked PDFs/data reused. Istat CC BY4 notice checked; no conflicting text credit.",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
+            "https://www.istat.it/note-legali/",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
+          "exclusions": [
+            "Photos, logos, media",
+            "All direct quotations and third-party credited text",
+            "Linked documents and English translation"
+          ],
+          "attributionRequirements": [
+            "Institutional author/title/source/date",
+            "License link and disclosure of Italian adaptation/Chinese translation",
+            "No endorsement; retain exclusion of third-party works"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 4,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-20",
+          "checkedAgainstArticleCount": 64,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      }
+    },
+    {
+      "id": "de-2026-10-08-hinweise-bei-ki-inhalten",
+      "language": "de",
+      "sourceTitle": "Kennzeichnung von Medieninhalten in Zeiten generativer KI – ein neues Thesenpapier von iRights.Lab",
+      "sourceUrl": "https://irights.info/artikel/kennzeichnung-von-medieninhalten-in-zeiten-generativer-ki-ein-neues-thesenpapier-von-irights-lab/32908",
+      "sourceName": "iRights.info",
+      "registrySourceId": "irights-german-culture",
+      "sourcePublishedAt": "2026-10-08",
+      "collectedAt": "2026-10-20",
+      "category": "society",
+      "topics": [
+        "数字媒体",
+        "信任",
+        "人工智能"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "拟用于A2独立素材；完整教学草稿已准备，独立审核由协调者另行安排。10月8日的短文介绍一份6月发表的讨论文件：怎样在人工智能时代理解数字内容的可信度？",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://irights.info/artikel/kennzeichnung-von-medieninhalten-in-zeiten-generativer-ki-ein-neues-thesenpapier-von-irights-lab/32908",
+          "checkedAt": "2026-10-20",
+          "notes": "Complete original body, date/byline and end-of-text copyright attribution read via public web retrieval. No snippet substituted for full text. Later OERinfo shell fetch returned503 and was not bypassed."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://irights.info/artikel/kennzeichnung-von-medieninhalten-in-zeiten-generativer-ki-ein-neues-thesenpapier-von-irights-lab/32908",
+          "evidence": "Header8.Oktober2026; underlying thesis paper June2026, not substituted."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://irights.info/artikel/kennzeichnung-von-medieninhalten-in-zeiten-generativer-ki-ein-neues-thesenpapier-von-irights-lab/32908",
+          "author": "Jens Crueger",
+          "basis": "signed German editorial contribution for German institution",
+          "caveat": "Publication provenance inference, not personal native-tongue certification.",
+          "evidence": "Named original German contribution, no translator/foreign republication credit; institutional context inspected."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Original article footer CC BY4.0 unless otherwise noted; no contrary text credit. Impressum expressly permits commercial and noncommercial sharing.",
+          "evidenceUrls": [
+            "https://irights.info/artikel/kennzeichnung-von-medieninhalten-in-zeiten-generativer-ki-ein-neues-thesenpapier-von-irights-lab/32908",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://irights.info/impressum-2"
+          ],
+          "scope": "Named author original institutional article narrative; German adaptation and Chinese translation with separately disclosed teaching additions.",
+          "exclusions": [
+            "Images, logos and multimedia",
+            "Third-party quotations, linked reports, questionnaire wording and comments"
+          ],
+          "attributionRequirements": [
+            "Credit Jens Crueger",
+            "Link source and CC BY4.0",
+            "Retain original date and disclose adaptation/translation/teaching additions",
+            "No publisher endorsement"
+          ],
+          "basis": "explicit text licence and CC permission for adaptations",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 64,
+          "checkedAt": "2026-10-20",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 12,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-20-de-hinweise-bei-ki-inhalten"
+    },
+    {
+      "id": "de-2026-09-15-gemeinsam-offen-arbeiten",
+      "language": "de",
+      "sourceTitle": "Zwischen Institution und Individuum: Die eigene Haltung zu Offenheit mit einem OER-Kodex kommunizieren",
+      "sourceUrl": "https://open-educational-resources.de/die-eigene-haltung-zu-offenheit-mit-einem-oer-kodex-kommunizieren/",
+      "sourceName": "OERinfo – Die Informationsstelle OER",
+      "registrySourceId": "oerinfo-german-articles",
+      "sourcePublishedAt": "2026-09-15",
+      "collectedAt": "2026-10-20",
+      "category": "education",
+      "topics": [
+        "合作",
+        "开放学习材料",
+        "高校"
+      ],
+      "level": "B1",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "拟用于B1独立素材；完整教学草稿已准备，独立审核由协调者另行安排。两个德国高校项目讨论：正式的机构政策之外，怎样把日常合作中的开放态度说清楚？",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://open-educational-resources.de/die-eigene-haltung-zu-offenheit-mit-einem-oer-kodex-kommunizieren/",
+          "checkedAt": "2026-10-20",
+          "notes": "Complete original body, date/byline and end-of-text copyright attribution read via public web retrieval. No snippet substituted for full text. Later OERinfo shell fetch returned503 and was not bypassed."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://open-educational-resources.de/die-eigene-haltung-zu-offenheit-mit-einem-oer-kodex-kommunizieren/",
+          "evidence": "Published header15.September2026; adjacent9.September2026 marker is not used."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://open-educational-resources.de/die-eigene-haltung-zu-offenheit-mit-einem-oer-kodex-kommunizieren/",
+          "author": "Sonja Philipp, DHBW Mosbach für OERinfo – Die Informationsstelle OER",
+          "basis": "signed German editorial contribution for German institution",
+          "caveat": "Publication provenance inference, not personal native-tongue certification.",
+          "evidence": "Named original German contribution, no translator/foreign republication credit; institutional context inspected."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Explicit end-of-text CC BY4.0 text licence and required author attribution verified.",
+          "evidenceUrls": [
+            "https://open-educational-resources.de/die-eigene-haltung-zu-offenheit-mit-einem-oer-kodex-kommunizieren/",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Named author original institutional article narrative; German adaptation and Chinese translation with separately disclosed teaching additions.",
+          "exclusions": [
+            "Images, logos and multimedia",
+            "Third-party quotations, linked reports, questionnaire wording and comments"
+          ],
+          "attributionRequirements": [
+            "Credit Sonja Philipp, DHBW Mosbach für OERinfo – Die Informationsstelle OER",
+            "Link source and CC BY4.0",
+            "Retain original date and disclose adaptation/translation/teaching additions",
+            "No publisher endorsement"
+          ],
+          "basis": "explicit text licence and CC permission for adaptations",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 64,
+          "checkedAt": "2026-10-20",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 35,
+          "bucket": "within_90_days"
+        }
+      },
+      "linkToArticleId": "2026-10-20-de-gemeinsam-offen-arbeiten"
+    },
+    {
+      "id": "de-2026-09-01-lernen-vom-direkten-austausch",
+      "language": "de",
+      "sourceTitle": "Zentrale Erkenntnisse aus den OERinfo-Austauschforen für Elementarbildung und berufliche Bildung",
+      "sourceUrl": "https://open-educational-resources.de/zentrale-erkenntnisse-aus-den-oerinfo-austauschforen-fuer-elementar-und-berufliche-bildung/",
+      "sourceName": "OERinfo – Die Informationsstelle OER",
+      "registrySourceId": "oerinfo-german-articles",
+      "sourcePublishedAt": "2026-09-01",
+      "collectedAt": "2026-10-20",
+      "category": "education",
+      "topics": [
+        "知识共享",
+        "职业教育",
+        "学习资源"
+      ],
+      "level": "B2",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "拟用于B2独立素材；完整教学草稿已准备，独立审核由协调者另行安排。OERinfo 的访谈交流揭示：网上看不到的活动不一定不存在，开放材料的潜力也需要时间、知识和质量保障才能发挥。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-20",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://open-educational-resources.de/zentrale-erkenntnisse-aus-den-oerinfo-austauschforen-fuer-elementar-und-berufliche-bildung/",
+          "checkedAt": "2026-10-20",
+          "notes": "Complete original body, date/byline and end-of-text copyright attribution read via public web retrieval. No snippet substituted for full text. Later OERinfo shell fetch returned503 and was not bypassed."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://open-educational-resources.de/zentrale-erkenntnisse-aus-den-oerinfo-austauschforen-fuer-elementar-und-berufliche-bildung/",
+          "evidence": "Published header1.September2026; adjacent7.September2026 update marker not used. Forums happened June2026."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://open-educational-resources.de/zentrale-erkenntnisse-aus-den-oerinfo-austauschforen-fuer-elementar-und-berufliche-bildung/",
+          "author": "Johannes Appel für OERinfo – Die Informationsstelle OER",
+          "basis": "signed German editorial contribution for German institution",
+          "caveat": "Publication provenance inference, not personal native-tongue certification.",
+          "evidence": "Named original German contribution, no translator/foreign republication credit; institutional context inspected."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "Explicit end-of-text CC BY4.0 text licence and required author attribution verified.",
+          "evidenceUrls": [
+            "https://open-educational-resources.de/zentrale-erkenntnisse-aus-den-oerinfo-austauschforen-fuer-elementar-und-berufliche-bildung/",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Named author original institutional article narrative; German adaptation and Chinese translation with separately disclosed teaching additions.",
+          "exclusions": [
+            "Images, logos and multimedia",
+            "Third-party quotations, linked reports, questionnaire wording and comments"
+          ],
+          "attributionRequirements": [
+            "Credit Johannes Appel für OERinfo – Die Informationsstelle OER",
+            "Link source and CC BY4.0",
+            "Retain original date and disclose adaptation/translation/teaching additions",
+            "No publisher endorsement"
+          ],
+          "basis": "explicit text licence and CC permission for adaptations",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 64,
+          "checkedAt": "2026-10-20",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-20",
+          "ageDays": 49,
+          "bucket": "within_90_days"
+        }
+      },
+      "linkToArticleId": "2026-10-20-de-lernen-vom-direkten-austausch"
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

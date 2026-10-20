@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-en-octopus-and-fishing-choices",
+  "storyId": "defra-octopus-fisheries-2026-10-16",
+  "lang": "en",
+  "date": "2026-10-20",
+  "title": "More octopuses, different fishing experiences",
+  "titleZh": "章鱼增多，渔民的处境却不同",
+  "summaryZh": "一次渔业会议对照新增收入、甲壳类和贝类水产损失和海上安全问题；捕获量不等于海中种群数量。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：以会议报道组织因果和比较，区分统计对象、从业者经历与未来决策；包含定语从句和rather than等连接表达。",
+  "category": "environment",
+  "topics": [
+    "渔业",
+    "海洋变化",
+    "合作决策"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs",
+    "title": "Octopus explosion off South West prompts talks between fishermen and scientists",
+    "url": "https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists",
+    "publishedAt": "2026-10-16",
+    "lang": "en",
+    "author": "Department for Environment, Food & Rural Affairs"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. 原文机构：Department for Environment, Food & Rural Affairs；原发日期：2026-10-16；https://www.gov.uk/government/news/octopus-explosion-off-south-west-prompts-talks-between-fishermen-and-scientists。Dimenticato编写同语言教学改写、中文翻译与原创练习，不代表机构认可。",
+  "adaptation": "2026-10-20整理；依据2026-10-16机构英文报道重组、简化并释义，非当天新闻或原文逐字转载。保留事实范围与不确定性；不使用照片、标志、外部直接引语或链接作品。词汇、语言分析及口语讨论为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A rapid increase in octopus catches is changing working life along the south-west coast of England.",
+      "zh": "章鱼捕获量迅速增加，正在改变英格兰西南海岸的工作生活。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "On 15 October 2026, fishermen, scientists and fisheries managers met at a conference organised by Defra to compare their experiences and discuss possible responses.",
+      "zh": "2026年10月15日，渔民、科学家和渔业管理人员参加了Defra组织的会议，交流各自经验并讨论可能的应对办法。",
+      "glosses": [
+        {
+          "surface": "responses",
+          "lemma": "response",
+          "zh": "回应；应对办法",
+          "note": "可数名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "The department reported the meeting the following day, describing both opportunities and problems for the fishing industry.",
+      "zh": "该部门在次日报道了会议，介绍了捕鱼业面临的机遇与问题。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "According to its report, octopus landings by UK vessels into UK ports have risen from an annual average of around 220 tonnes to more than 3,700 tonnes since 2021.",
+      "zh": "根据报道，自2021年以来，英国船只在英国港口卸下的章鱼量，已由年均约220吨升至超过3,700吨。",
+      "glosses": [
+        {
+          "surface": "landings",
+          "lemma": "landing",
+          "zh": "渔获物上岸量",
+          "note": "渔业语境，不是飞机降落"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "These figures describe the catch brought to ports, rather than a count of all the octopuses living in the sea.",
+      "zh": "这些数字描述的是运到港口的渔获物，而不是对海中所有章鱼的数量统计。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "For some fishermen, the increase has created a valuable new source of income, with a fishery developing very quickly.",
+      "zh": "对一些渔民来说，增加的章鱼带来了新的收入来源，一项新的捕捞业迅速发展起来。",
+      "glosses": [
+        {
+          "surface": "income",
+          "lemma": "income",
+          "zh": "收入",
+          "note": "通常作不可数名词"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Others have had a different experience, especially people whose businesses depend on shellfish.",
+      "zh": "另一些人的经历则不同，尤其是生意依赖甲壳类和贝类水产的人。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "At the meeting, fishermen and managers said that octopuses had eaten large amounts of shellfish, seriously reducing these stocks.",
+      "zh": "在会上，渔民和管理人员表示，章鱼吃掉了大量甲壳类和贝类水产，使这些资源量严重减少。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "They also described tension and safety concerns as more boats began fishing in the same areas.",
+      "zh": "他们还描述了更多船只开始在相同区域捕鱼后出现的矛盾和安全担忧。",
+      "glosses": [
+        {
+          "surface": "concerns",
+          "lemma": "concern",
+          "zh": "担忧",
+          "note": "可数名词复数"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The discussion therefore considered not only what could be caught, but also how different fishing activities could share the water.",
+      "zh": "因此，讨论不仅涉及可以捕捞什么，也涉及不同捕鱼活动如何共用海域。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Scientists presented evidence about the environmental factors behind the increase, changes in octopus stocks and priorities for further research.",
+      "zh": "科学家介绍了有关章鱼增加背后的环境因素、章鱼资源量变化以及后续研究重点的证据。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "International experts discussed the experience of Brittany and shared examples of responses in Spain and Australia.",
+      "zh": "国际专家讨论了布列塔尼的经历，并分享了西班牙和澳大利亚的应对实例。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Defra and the Marine Management Organisation will publish a summary of the discussions to inform future decisions.",
+      "zh": "Defra和海洋管理组织将发布讨论摘要，为今后的决策提供参考。",
+      "glosses": [
+        {
+          "surface": "summary",
+          "lemma": "summary",
+          "zh": "摘要",
+          "note": "a summary of..."
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "The conference builds on cooperation that was already taking place, rather than starting contact between these groups for the first time.",
+      "zh": "这次会议建立在已经开展的合作之上，而不是这些群体首次建立联系。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "The report presents a process of gathering evidence and considering management options, rather than announcing a final set of new fishing rules.",
+      "zh": "报道呈现的是收集证据、考虑管理方案的过程，而不是宣布一套最终确定的新捕鱼规则。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "responses",
+        "lemma": "response",
+        "zh": "回应；应对办法",
+        "note": "可数名词复数",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "landings",
+        "lemma": "landing",
+        "zh": "渔获物上岸量",
+        "note": "渔业语境，不是飞机降落",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "income",
+        "lemma": "income",
+        "zh": "收入",
+        "note": "通常作不可数名词",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "concerns",
+        "lemma": "concern",
+        "zh": "担忧",
+        "note": "可数名词复数",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "summary",
+        "lemma": "summary",
+        "zh": "摘要",
+        "note": "a summary of...",
+        "sentenceId": "s13"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "depend on",
+        "zh": "依赖",
+        "note": "depend on +名词",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "rather than",
+        "zh": "而不是",
+        "note": "对比正在进行的过程与尚未宣布的结果",
+        "sentenceId": "s15"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "rather than区分两种统计对象，避免把上岸渔获量误当种群数量。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "not only...but also...把讨论从捕获量扩展到共享海域。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Why can the same change be good news for one fishing business and a problem for another?",
+        "zh": "为什么同一种变化可能让一家渔业企业受益，却给另一家带来问题？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "From one point of view, …; from another, …",
+        "zh": "从一个角度看……；从另一个角度看……",
+        "note": "教学补充表达，不是原文引语。"
+      }
+    ]
+  }
+}

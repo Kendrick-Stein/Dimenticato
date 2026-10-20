@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-it-osservare-oceano-nel-tempo",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 30,
+      "answer": "divario",
+      "options": [
+        "divario",
+        "percorso",
+        "confine",
+        "legame"
+      ],
+      "explanation": "根据中文句意还原原文：divario 表示“差距”。阳性单数名词，fra 引出存在差距的两方面。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 105,
+      "answer": "continuità",
+      "options": [
+        "profondità",
+        "velocità",
+        "continuità",
+        "difficoltà"
+      ],
+      "explanation": "根据中文句意还原原文：continuità 表示“连续性”。阴性名词，重音在末尾，单复数形式相同。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s10",
+      "start": 162,
+      "answer": "richiedere",
+      "options": [
+        "garantire",
+        "richiedere",
+        "evitare",
+        "sostituire"
+      ],
+      "explanation": "根据中文句意还原原文：richiedere 表示“申请”。不定式接在 possono 之后，表示可以提出申请，不等于自动获准。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s13",
+      "start": 92,
+      "answer": "bilancio",
+      "options": [
+        "risultato",
+        "contributo",
+        "risparmio",
+        "bilancio"
+      ],
+      "explanation": "根据中文句意还原原文：bilancio 表示“预算”。阳性单数名词，bilancio complessivo 指总预算。其余选项不符合本句所表达的内容。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s19",
+      "start": 121,
+      "answer": "attesi",
+      "options": [
+        "attesi",
+        "misurati",
+        "pubblicati",
+        "ottenuti"
+      ],
+      "explanation": "根据中文句意还原原文：attesi 表示“预期的”。形容词/过去分词阳性复数，与 risultati 一致。其余选项不符合本句所表达的内容。"
+    }
+  ]
+}

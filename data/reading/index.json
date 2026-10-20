@@ -2,6 +2,24 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-20-en-octopus-and-fishing-choices",
+      "lang": "en",
+      "date": "2026-10-20",
+      "title": "More octopuses, different fishing experiences",
+      "titleZh": "章鱼增多，渔民的处境却不同",
+      "summaryZh": "一次渔业会议对照新增收入、甲壳类和贝类水产损失和海上安全问题；捕获量不等于海中种群数量。",
+      "level": "B1",
+      "category": "environment",
+      "topics": [
+        "渔业",
+        "海洋变化",
+        "合作决策"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-16",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-17-it-prezzi-settembre",
       "lang": "it",
       "date": "2026-10-17",
@@ -17,6 +35,42 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-16",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-20-fr-comprendre-les-pertes-alimentaires",
+      "lang": "fr",
+      "date": "2026-10-20",
+      "title": "Le gaspillage alimentaire, une question collective",
+      "titleZh": "食物浪费是一个集体问题",
+      "summaryZh": "一本新书从整条食物链解释损失与浪费，区分预防和再利用，并提醒不同解决办法也可能产生矛盾。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "食物浪费",
+        "日常饮食",
+        "集体行动"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-15",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-20-it-disegni-che-tornano-visibili",
+      "lang": "it",
+      "date": "2026-10-20",
+      "title": "Dai disegni storici a nuovi modi di visitare un archivio",
+      "titleZh": "从历史图纸到参观档案的新方式",
+      "summaryZh": "一项五年协议提出数字化约2.8万张历史图纸、制作模型并筹办常设展览。阅读时区分已签署的协议与尚待完成的项目。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "工业记忆",
+        "数字化",
+        "公共展览"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-15",
       "contentType": "native-adaptation"
     },
     {
@@ -227,6 +281,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-20-it-osservare-oceano-nel-tempo",
+      "lang": "it",
+      "date": "2026-10-20",
+      "title": "Osservare l’oceano: perché servono misure che durano nel tempo",
+      "titleZh": "观察海洋：为何需要长期持续的测量",
+      "summaryZh": "从海面卫星观测到海底现场测量，EMSO EVOLVE 希望把分散站点连接为更协调的区域观测与数据服务体系。",
+      "level": "B2",
+      "category": "environment",
+      "topics": [
+        "海洋观测",
+        "数据共享",
+        "长期研究"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-09",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-16-it-massa-lettera-ritrovata",
       "lang": "it",
       "date": "2026-10-16",
@@ -277,6 +349,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-10-09",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-20-de-hinweise-bei-ki-inhalten",
+      "lang": "de",
+      "date": "2026-10-20",
+      "title": "Ein Hinweis und viele Fragen",
+      "titleZh": "一个标注与许多问题",
+      "summaryZh": "10月8日的短文介绍一份6月发表的讨论文件：怎样在人工智能时代理解数字内容的可信度？",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "数字媒体",
+        "信任",
+        "人工智能"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-08",
       "contentType": "native-adaptation"
     },
     {
@@ -459,6 +549,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-20-it-reddito-spese-risparmio",
+      "lang": "it",
+      "date": "2026-10-20",
+      "title": "Entrate, spese e risparmio delle famiglie",
+      "titleZh": "家庭的收入、支出与储蓄",
+      "summaryZh": "收入增加，不一定意味着能买到更多东西。用短句阅读家庭收入、消费与购买力的不同变化。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "家庭预算",
+        "消费",
+        "储蓄"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-05",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-15-it-memoria-nelle-carte",
       "lang": "it",
       "date": "2026-10-15",
@@ -549,6 +657,23 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-20-en-food-near-home",
+      "lang": "en",
+      "date": "2026-10-20",
+      "title": "Food support close to home",
+      "titleZh": "家门口的食物支持",
+      "summaryZh": "英格兰45个地方政府将获资助，因地制宜改善居民获得健康、可负担食物的机会。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "社区食物支持",
+        "日常开支"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-30",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-it-etna-tra-mappe-e-modelli",
       "lang": "it",
       "date": "2026-10-13",
@@ -600,6 +725,42 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-09-29",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-20-en-coast-beyond-the-title",
+      "lang": "en",
+      "date": "2026-10-20",
+      "title": "A celebrated coast, and the work behind its protection",
+      "titleZh": "著名海岸背后的保护工作",
+      "summaryZh": "以侏罗纪海岸二十五周年纪念为线索，区分世界遗产称号、法定保护工具和长期合作管理。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "自然遗产",
+        "海岸旅游",
+        "合作保护"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-28",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-20-fr-parler-des-vignes",
+      "lang": "fr",
+      "date": "2026-10-20",
+      "title": "Des rencontres pour parler des vignes",
+      "titleZh": "通过见面交流了解葡萄种植",
+      "summaryZh": "从展板、实验到短视频，一项法国科普活动把研究人员和居民聚到一起，讨论葡萄种植的未来。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "科普交流",
+        "农业与生活",
+        "社区活动"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-28",
       "contentType": "native-adaptation"
     },
     {
@@ -797,6 +958,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-20-de-gemeinsam-offen-arbeiten",
+      "lang": "de",
+      "date": "2026-10-20",
+      "title": "Gemeinsam offen arbeiten",
+      "titleZh": "一起开展开放的工作",
+      "summaryZh": "两个德国高校项目讨论：正式的机构政策之外，怎样把日常合作中的开放态度说清楚？",
+      "level": "B1",
+      "category": "education",
+      "topics": [
+        "合作",
+        "开放学习材料",
+        "高校"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-15",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-11-it-lipari-storia-sommersa",
       "lang": "it",
       "date": "2026-10-11",
@@ -957,6 +1136,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-20-de-lernen-vom-direkten-austausch",
+      "lang": "de",
+      "date": "2026-10-20",
+      "title": "Was ein Gespräch sichtbar machen kann",
+      "titleZh": "一次交流能让什么变得可见",
+      "summaryZh": "OERinfo 的访谈交流揭示：网上看不到的活动不一定不存在，开放材料的潜力也需要时间、知识和质量保障才能发挥。",
+      "level": "B2",
+      "category": "education",
+      "topics": [
+        "知识共享",
+        "职业教育",
+        "学习资源"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-01",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-en-school-costs",
       "lang": "en",
       "date": "2026-10-13",
@@ -990,6 +1187,24 @@
       ],
       "sourceLang": "de",
       "sourcePublishedAt": "2026-08-20",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-20-fr-photographier-et-partager",
+      "lang": "fr",
+      "date": "2026-10-20",
+      "title": "De la plaque au téléphone : regarder autrement",
+      "titleZh": "从金属板到手机：观看方式的变化",
+      "summaryZh": "摄影如何从缓慢的技术实验变成记录、表达与分享的日常行为？这篇历史文化阅读保留原报道日期，区分技术便利和作者视角。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "摄影",
+        "日常记忆",
+        "技术与艺术"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-08-19",
       "contentType": "native-adaptation"
     },
     {

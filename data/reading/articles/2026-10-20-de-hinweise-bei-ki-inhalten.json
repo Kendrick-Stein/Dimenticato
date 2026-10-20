@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-de-hinweise-bei-ki-inhalten",
+  "storyId": "irights-media-labels-2026-10-08",
+  "lang": "de",
+  "date": "2026-10-20",
+  "title": "Ein Hinweis und viele Fragen",
+  "titleZh": "一个标注与许多问题",
+  "summaryZh": "10月8日的短文介绍一份6月发表的讨论文件：怎样在人工智能时代理解数字内容的可信度？",
+  "level": "A2",
+  "levelReason": "编辑估计：短句、常见动词和明确日期对比；少量抽象媒体词汇配中文解释，不涉及法规细节。",
+  "category": "society",
+  "topics": [
+    "数字媒体",
+    "信任",
+    "人工智能"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "iRights.info",
+    "title": "Kennzeichnung von Medieninhalten in Zeiten generativer KI – ein neues Thesenpapier von iRights.Lab",
+    "url": "https://irights.info/artikel/kennzeichnung-von-medieninhalten-in-zeiten-generativer-ki-ein-neues-thesenpapier-von-irights-lab/32908",
+    "publishedAt": "2026-10-08",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者 Jens Crueger，iRights.info；原文及许可链接见上。Dimenticato 进行德语分级改写、中文翻译及教学补充；本文和配套练习按 CC BY 4.0 提供。作者与来源机构未认可或认证本教学材料。",
+  "adaptation": "2026-10-20 整理。原报道发表于2026年10月8日，介绍的讨论文件已于2026年6月发表；不是10月新研究结果。只改写这篇机构介绍，不复述未读的十条论点，也不提供法律建议。 不使用图片、标志、评论、外链报告正文或第三方引语。词汇解释、口语问题和练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Im Internet lesen wir Texte und sehen Bilder, aber können wir diesen Inhalten vertrauen?",
+      "zh": "我们在网上读文字、看图片，但我们能信任这些内容吗？",
+      "glosses": [
+        {
+          "surface": "vertrauen",
+          "lemma": "vertrauen",
+          "zh": "信任",
+          "note": "jemandem/etwas vertrauen，支配第三格。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Diese Frage gibt es schon lange, nicht erst seit den neuen Programmen mit künstlicher Intelligenz.",
+      "zh": "这个问题早就存在，并不是新的人工智能程序出现以后才有的。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Am 8. Oktober 2026 stellte Jens Crueger auf iRights.info einen Text zu diesem Thema vor.",
+      "zh": "2026年10月8日，Jens Crueger 在 iRights.info 上介绍了一份有关这个话题的文件。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Der Text kommt von iRights.Lab und enthält zehn Thesen, also zehn Aussagen für eine Diskussion.",
+      "zh": "这份文件来自 iRights.Lab，包含十条论点，也就是供讨论的十个观点。",
+      "glosses": [
+        {
+          "surface": "enthält",
+          "lemma": "enthalten",
+          "zh": "包含",
+          "note": "enthalten 的第三人称单数现在时。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Solvejg Gunkel hat diese Thesen formuliert; die Grundlage waren gemeinsame Arbeiten in sogenannten Zukunftslaboren.",
+      "zh": "Solvejg Gunkel 提出了这些论点；它们的基础是在所谓的未来实验室中开展的共同工作。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Das Papier erschien bereits im Juni 2026, also einige Monate vor Cruegers Artikel.",
+      "zh": "这份文件早在2026年6月就发表了，比 Crueger 的文章早几个月。",
+      "glosses": [
+        {
+          "surface": "erschien",
+          "lemma": "erscheinen",
+          "zh": "发表；出版",
+          "note": "erscheinen 的过去时第三人称单数。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Die zentrale Frage ist: Warum reicht ein Hinweis auf den Einsatz von KI allein nicht aus?",
+      "zh": "核心问题是：为什么仅仅标注使用了人工智能还不够？",
+      "glosses": [
+        {
+          "surface": "Hinweis",
+          "lemma": "Hinweis",
+          "zh": "提示；说明",
+          "note": "der Hinweis，复数 Hinweise。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Der Artikel nennt dabei auch Vertrauen, klare Informationen und die Frage, wie Inhalte entstehen.",
+      "zh": "文章在这里也提到信任、清楚的信息，以及内容是如何产生的问题。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Es geht also nicht nur darum, ob ein Computer bei einem Inhalt geholfen hat.",
+      "zh": "所以，这不只是在问计算机是否参与了某个内容的制作。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Interessierte können das Papier auf der Website von iRights.Lab kostenlos lesen; der Artikel verlinkt es.",
+      "zh": "感兴趣的人可以在 iRights.Lab 网站上免费阅读这份文件；文章提供了链接。",
+      "glosses": [
+        {
+          "surface": "kostenlos",
+          "lemma": "kostenlos",
+          "zh": "免费地",
+          "note": "这里修饰 lesen。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Diese kurze Vorstellung erklärt jedoch nicht jede einzelne These aus dem Papier.",
+      "zh": "不过，这篇简短介绍并没有解释文件中的每一条论点。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "vertrauen",
+        "lemma": "vertrauen",
+        "zh": "信任",
+        "note": "jemandem/etwas vertrauen，支配第三格。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "enthält",
+        "lemma": "enthalten",
+        "zh": "包含",
+        "note": "enthalten 的第三人称单数现在时。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "erschien",
+        "lemma": "erscheinen",
+        "zh": "发表；出版",
+        "note": "erscheinen 的过去时第三人称单数。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "Hinweis",
+        "lemma": "Hinweis",
+        "zh": "提示；说明",
+        "note": "der Hinweis，复数 Hinweise。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "kostenlos",
+        "lemma": "kostenlos",
+        "zh": "免费地",
+        "note": "这里修饰 lesen。",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "schon lange",
+        "zh": "早已；很长时间以来",
+        "note": "说明问题并非刚出现。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "reicht ein Hinweis",
+        "zh": "一个提示足够",
+        "note": "ausreichen 是可分动词，reicht … aus；nicht 是否定词。",
+        "sentenceId": "s7"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "bereits 与 also 连接时间信息：先说明6月，再与10月作比较。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "können + 不定式 lesen 表达可以进行的活动。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Informationen helfen dir, einem Text im Internet zu vertrauen?",
+        "zh": "哪些信息能帮助你信任一篇网络文章？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich möchte wissen, wer …",
+        "zh": "我想知道是谁……",
+        "note": "教学补充，可用自己的例子完成句子。"
+      },
+      {
+        "text": "Ein Hinweis hilft mir, aber …",
+        "zh": "一个提示对我有帮助，但是……",
+        "note": "教学补充，可用自己的例子完成句子。"
+      }
+    ]
+  }
+}

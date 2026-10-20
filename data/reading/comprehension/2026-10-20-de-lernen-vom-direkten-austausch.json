@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-de-lernen-vom-direkten-austausch",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welche Schlussfolgerung verbindet die verschiedenen Teile des Berichts am besten?",
+      "promptZh": "哪个结论最能串联报道的各部分？",
+      "options": [
+        "Direkte Gespräche ergänzen sichtbare Daten und helfen, praktische Unterstützungsbedarfe zu verstehen.",
+        "Öffentlich sichtbare Angebote reichen aus, um den Entwicklungsstand einzelner Institutionen zu bestimmen.",
+        "Offene Materialien sparen in beiden Bildungsbereichen bereits nachweislich gleich viel Arbeitszeit.",
+        "Die beiden Foren lieferten eine repräsentative Rangfolge aller Hindernisse in deutschen Einrichtungen."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s11",
+        "s12",
+        "s19",
+        "s21",
+        "s22"
+      ],
+      "explanationZh": "全文先指出外部观察的局限，再用交流说明实践需求；既没有证明统一的节时效果，也没有代表性障碍排名。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Welche Zahlen beziehen sich auf die Vorbefragung und nicht auf die späteren Foren?",
+      "promptZh": "哪些数字指前期调查，而不是后来的交流会？",
+      "options": [
+        "Neun Personen aus der beruflichen und elf aus der frühen Bildung.",
+        "Siebzig Prozent der Befragten kannten den Begriff OER.",
+        "Vierzehn Personen nahmen teil, davon kannten dreizehn die einschlägigen Begriffe.",
+        "Je elf Personen aus beiden Bereichen berichteten über ihre Erfahrungen."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8",
+        "s13"
+      ],
+      "explanationZh": "前期调查有14人，其中13人知道相关概念；9和11是两个交流会的人数，70%则来自更早的机构外部检索。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "Eine Institution zeigt online kaum OER-Aktivitäten. Welche Bewertung passt zum Bericht?",
+      "promptZh": "某机构在网上几乎没有展示 OER 活动，哪种判断符合报道？",
+      "options": [
+        "Ihre Mitarbeitenden beschäftigen sich wahrscheinlich nur mit kostenpflichtigen Materialien.",
+        "Die fehlende Sichtbarkeit reicht nicht aus, um ihr tatsächliches Engagement vollständig zu beurteilen.",
+        "Sie gehört deshalb zu den Einrichtungen, deren Antworten in der Vorbefragung fehlen.",
+        "Ihre internen Aktivitäten müssen stärker entwickelt sein als ihre öffentlichen Angebote."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "没有可见线索只能说明外部观察的结果；不足以判断实际投入，也不能反向断言内部活动一定丰富或样本归属。"
+    },
+    {
+      "id": "q4",
+      "kind": "cause",
+      "prompt": "Warum wurde Qualitätssicherung in der beruflichen Bildung besonders hervorgehoben?",
+      "promptZh": "为什么职业教育中特别强调质量保障？",
+      "options": [
+        "Weil die Teilnehmenden die Veröffentlichung eigener Materialien grundsätzlich ablehnten.",
+        "Weil offene Materialien nur nach Abschluss eines gemeinsamen Portals genutzt werden sollten.",
+        "Weil die Vorbefragung die fachliche Qualität aller verwendeten Materialien bereits gemessen hatte.",
+        "Weil schnell verfügbare, veränderbare Materialien auch bei spezialisierten Themen korrekt sein müssen."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s16",
+        "s17"
+      ],
+      "explanationZh": "快速可得和易于修改不等于准确，专业内容仍须核查；报道没有说不愿发布、必须等门户完工或已经测量全部内容质量。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Welche Kombination beschreibt die frühe Bildung im Bericht zutreffend?",
+      "promptZh": "哪组内容准确描述了报道中的早期教育？",
+      "options": [
+        "Wissenstransfer in die Praxis und leicht nutzbare Angebote bei begrenzter Zeit.",
+        "Wissenstransfer vor allem zwischen Forschenden und längere Einführungskurse als Voraussetzung des Zugangs.",
+        "Leichter Zugang zu Materialien, wodurch eine Beschäftigung mit Lizenzfragen nicht mehr nötig ist.",
+        "Mehr Zeit für die Materialsuche, weil die Veröffentlichung eigener Angebote keine Rolle spielt."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s19",
+        "s20",
+        "s21"
+      ],
+      "explanationZh": "第19—21句把科研知识向实践人员及同行之间传递、易用且适合对象的服务与时间不足联系起来。正文不是主要讨论研究者之间交流，没有把长培训设为获取条件，也没有说开放获取免除了许可问题，或材料搜索时间已变充裕。"
+    }
+  ]
+}

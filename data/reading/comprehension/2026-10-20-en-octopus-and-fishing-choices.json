@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-20-en-octopus-and-fishing-choices",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "What did the meeting bring together?",
+      "options": [
+        "Plans to move fishing boats abroad and reduce local research.",
+        "Different fishing experiences and evidence for future management.",
+        "A new seafood market and a final list of rules for its sellers.",
+        "A survey of seafood buyers and a plan to change port prices."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s6",
+        "s7",
+        "s11",
+        "s13",
+        "s15"
+      ],
+      "explanationZh": "会议把不同从业者的经历与研究证据放在一起，用于未来管理；未决定最终规则，也不是消费者或市场价格调查。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What do the figures of around 220 and over 3,700 tonnes refer to?",
+      "options": [
+        "Shellfish eaten by octopuses along the south-west coast.",
+        "Octopus stocks counted by scientists across British waters.",
+        "Seafood sold by British businesses to overseas customers.",
+        "Octopus catches landed by UK vessels in UK ports."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "s4说明船只与港口范围，s5明确这些是上岸渔获物而非海中章鱼总量。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Why did some participants raise safety concerns?",
+      "options": [
+        "More boats were fishing in the same areas.",
+        "Fishing boats had begun travelling farther from the coast.",
+        "Ports had changed the way they recorded catches.",
+        "Scientists had asked boats to catch larger shellfish."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "安全担忧与更多船只集中于相同渔场有关，其他原因未在文中出现。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Which account of the next stage matches the article?",
+      "options": [
+        "International examples will replace information from local fishermen.",
+        "The new rules will be published before the discussion summary.",
+        "A discussion summary will help shape later decisions.",
+        "The rise in landings will be treated as a full count of octopuses."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11",
+        "s12",
+        "s13",
+        "s15"
+      ],
+      "explanationZh": "摘要将为后续决策提供信息；文中没有说国际经验替代本地经验、已有新规则或上岸量就是种群总量。"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "id": "2026-10-20-fr-comprendre-les-pertes-alimentaires",
+  "storyId": "comprendre-les-pertes-alimentaires-2026-10-15",
+  "lang": "fr",
+  "date": "2026-10-20",
+  "title": "Le gaspillage alimentaire, une question collective",
+  "titleZh": "食物浪费是一个集体问题",
+  "summaryZh": "一本新书从整条食物链解释损失与浪费，区分预防和再利用，并提醒不同解决办法也可能产生矛盾。",
+  "level": "B1",
+  "levelReason": "编辑估计：围绕日常饮食展开连贯解释，包含对比、原因及条件结构；若干抽象词汇配释义，逐句中文帮助区分预防和再利用。",
+  "category": "society",
+  "topics": [
+    "食物浪费",
+    "日常饮食",
+    "集体行动"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE",
+    "title": "Pertes et gaspillage alimentaires. Les défis à relever",
+    "url": "https://www.inrae.fr/actualites/pertes-gaspillage-alimentaires-defis-relever",
+    "publishedAt": "2026-10-15",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "原文：INRAE 机构新闻介绍，未列个人文章作者；所介绍书籍作者为 Barbara Redlingshöfer、Séverine Gojard、Tiphaine Lucas、Marine Masson。仅使用 INRAE 新闻正文，按 Licence Ouverte 2.0 署名使用。Dimenticato 作法语教学改写、中文翻译及原创练习；不代表机构或书籍作者认可。",
+  "adaptation": "2026-10-20 整理；原报道发表于2026-10-15。仅改写机构新闻介绍，不使用书籍正文、封面、图片或外链资料。保留约数、地域范围及作者的限定；这是一篇新闻介绍的语言教学改写，并非完整书评。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 15 octobre 2026, INRAE a présenté un ouvrage consacré aux pertes et au gaspillage alimentaires.",
+      "zh": "2026年10月15日，INRAE 介绍了一本讨论食物损失与浪费的书。",
+      "glosses": [
+        {
+          "surface": "pertes",
+          "lemma": "perte",
+          "zh": "损失",
+          "note": "une perte；此处为复数，与 gaspillage 并列。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Quatre chercheuses d’INRAE et d’AgroParisTech y croisent plusieurs approches, de la sociologie à l’étude des transformations alimentaires.",
+      "zh": "四位来自 INRAE 和 AgroParisTech 的女研究者在书中结合了多种视角，从社会学到食品加工研究。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Leur objectif n’est pas de désigner un coupable, mais de comprendre comment les pertes apparaissent et quelles difficultés accompagnent les solutions.",
+      "zh": "她们的目标不是指出一个责任人，而是理解损失如何产生，以及解决办法伴随哪些困难。",
+      "glosses": [
+        {
+          "surface": "coupable",
+          "lemma": "coupable",
+          "zh": "责任人；有过错的人",
+          "note": "un coupable；这里指被归责的人。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Selon cette présentation, les pertes et le gaspillage représentent environ 30 % de la production alimentaire mondiale.",
+      "zh": "据这篇介绍，损失和浪费约占全球食品生产的30%。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Ce chiffre est une estimation mondiale : il ne décrit pas seulement les restes jetés dans les cuisines françaises.",
+      "zh": "这个数字是全球估计值，并不只是描述法国家庭厨房丢掉的剩余食物。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "L’enquête s’intéresse surtout à la France, tout en apportant des éclairages européens et internationaux.",
+      "zh": "这项考察主要关注法国，同时也提供欧洲和国际层面的视角。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Les autrices suivent les aliments depuis la production agricole jusqu’à leur consommation à la maison ou au restaurant.",
+      "zh": "作者们追踪食物从农业生产直到在家中或餐馆消费的过程。",
+      "glosses": [
+        {
+          "surface": "consommation",
+          "lemma": "consommation",
+          "zh": "消费；食用",
+          "note": "la consommation；这里包括家中和餐馆的食用。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Elles étudient également la transformation et la distribution, car les pertes ne commencent pas nécessairement chez le consommateur.",
+      "zh": "她们也研究加工和销售流通，因为损失未必始于消费者这一环。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Le livre revient sur l’apparition de la notion de gaspillage dans les sociétés occidentales au cours du vingtième siècle.",
+      "zh": "这本书还回顾了20世纪西方社会中浪费这一概念的出现。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il présente aussi les politiques publiques et les règles qui se sont progressivement construites autour de ce problème.",
+      "zh": "它也介绍了围绕这一问题逐步形成的公共政策和规则。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Une distinction importante concerne la prévention des pertes et la valorisation des matières déjà perdues ou écartées.",
+      "zh": "一个重要区分是：预防损失，与对已经损失或被剔除的材料进行再利用。",
+      "glosses": [
+        {
+          "surface": "prévention",
+          "lemma": "prévention",
+          "zh": "预防",
+          "note": "la prévention；在损失发生前采取行动。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Prévenir signifie agir avant que ces pertes se produisent, tandis que valoriser consiste à donner un usage aux matières concernées.",
+      "zh": "预防意味着在损失发生前行动，而再利用则是为相关材料找到用途。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Ces démarches ne répondent donc pas exactement à la même question, même si elles cherchent toutes deux à réduire les problèmes liés aux pertes.",
+      "zh": "因此，尽管两种做法都力求减少损失带来的问题，它们回答的并不是完全相同的问题。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Les chercheuses soulignent que les différents acteurs n’ont pas toujours les mêmes intérêts ni les mêmes priorités.",
+      "zh": "研究者们强调，不同参与者未必具有相同的利益和优先事项。",
+      "glosses": [
+        {
+          "surface": "priorités",
+          "lemma": "priorité",
+          "zh": "优先事项",
+          "note": "une priorité 的复数，注意重音。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Certaines réponses peuvent ainsi avoir des effets indésirables ; une solution doit être examinée dans son contexte plutôt que considérée comme une recette universelle.",
+      "zh": "某些应对办法因而可能产生不希望出现的影响；应当结合其背景考察一种办法，而不是把它视为通用配方。",
+      "glosses": [
+        {
+          "surface": "indésirables",
+          "lemma": "indésirable",
+          "zh": "不希望出现的",
+          "note": "形容词复数，与 effets 一致。"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Le livre invite finalement à réfléchir ensemble à des systèmes alimentaires plus sobres, plus durables et plus inclusifs.",
+      "zh": "这本书最终邀请大家共同思考如何构建更加节制、可持续和包容的食物体系。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "pertes",
+        "lemma": "perte",
+        "zh": "损失",
+        "note": "une perte；此处为复数，与 gaspillage 并列。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "coupable",
+        "lemma": "coupable",
+        "zh": "责任人；有过错的人",
+        "note": "un coupable；这里指被归责的人。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "consommation",
+        "lemma": "consommation",
+        "zh": "消费；食用",
+        "note": "la consommation；这里包括家中和餐馆的食用。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "prévention",
+        "lemma": "prévention",
+        "zh": "预防",
+        "note": "la prévention；在损失发生前采取行动。",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "priorités",
+        "lemma": "priorité",
+        "zh": "优先事项",
+        "note": "une priorité 的复数，注意重音。",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "indésirables",
+        "lemma": "indésirable",
+        "zh": "不希望出现的",
+        "note": "形容词复数，与 effets 一致。",
+        "sentenceId": "s15"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "tout en apportant",
+        "zh": "同时提供",
+        "note": "tout en + 现在分词连接同时进行的动作。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "plutôt que",
+        "zh": "而不是",
+        "note": "用来比较两种判断方式。",
+        "sentenceId": "s15"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "ne… pas… mais…：先否定一种目的，再说明真正目的。"
+      },
+      {
+        "sentenceId": "s12",
+        "note": "tandis que 连接对比：行动时点和处理对象不同。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Dans ton quotidien, qu’est-ce qui permet d’éviter de jeter des aliments ?",
+        "zh": "在你的日常生活里，什么做法能避免丢弃食物？",
+        "note": "教学讨论，不作自动评分。"
+      },
+      {
+        "text": "Pourquoi une solution utile à un acteur peut-elle poser un problème à un autre ?",
+        "zh": "为什么对某个参与者有用的解决办法可能给另一个参与者带来问题？",
+        "note": "教学讨论，不作自动评分。"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Il faut distinguer… de…",
+        "zh": "需要区分……和……",
+        "note": "教学补充，可替换省略号部分。"
+      },
+      {
+        "text": "Cette solution peut aider, mais…",
+        "zh": "这个办法可能有帮助，但是……",
+        "note": "教学补充，可替换省略号部分。"
+      }
+    ]
+  }
+}
