@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-en-food-checks-local-and-national",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "What is the report mainly trying to establish?",
+      "options": [
+        "How food retailers should replace their existing suppliers.",
+        "Why each local authority should design a separate food law.",
+        "Which national role could strengthen a system that retains local regulation.",
+        "How businesses should publish their own hygiene ratings."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s8",
+        "s10",
+        "s14",
+        "s19"
+      ],
+      "explanationZh": "报告比较全国层面角色如何与地方体系协同，并承认需进一步设计；不涉及企业自行发布评级等安排。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why does the Agency see a case for national oversight of large retailers?",
+      "options": [
+        "Their local branches are described as the least compliant businesses.",
+        "Company-level decisions can affect consumers and suppliers across many areas.",
+        "Local authorities have requested the removal of all their food duties.",
+        "Their staff can provide the legal powers needed by local authorities."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "即便分店合规，公司层面决策仍可产生跨地区影响，这才是报告的论证。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "How would Direct Assurance differ from the alternative framework?",
+      "options": [
+        "Local authorities would remain the competent authority for the businesses concerned.",
+        "The Agency would stop collecting company-wide data and audit evidence.",
+        "Large businesses would select the local officers who inspect them.",
+        "Local food teams would regulate only businesses that volunteered."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "直接保证评估保留地方主管机关职责，另一方案由该局直接监管大企业。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "What warning does the report give about local resources?",
+      "options": [
+        "They should be transferred to businesses submitting the most data.",
+        "They should be replaced by the expected savings from consultation.",
+        "They should be reduced once either framework enters detailed design.",
+        "They should not be cut merely because national arrangements are created."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s17",
+        "s18"
+      ],
+      "explanationZh": "报告明确反对把设立全国安排当作削减地方资源的理由，大多数企业仍受地方监管。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "What can a reader conclude about the two recommended frameworks?",
+      "options": [
+        "Their comparative effects on food safety have already been demonstrated.",
+        "Their practical feasibility still needs work despite their strategic appeal.",
+        "Their legal and staffing requirements are already fully funded.",
+        "Their adoption by different governments has already been agreed."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9",
+        "s15",
+        "s16",
+        "s20",
+        "s21",
+        "s22"
+      ],
+      "explanationZh": "方案得到战略层面的推荐，但人员、资金、法律和数字系统问题仍待研究，不能推成已证明效果或已获各政府同意。"
+    }
+  ]
+}

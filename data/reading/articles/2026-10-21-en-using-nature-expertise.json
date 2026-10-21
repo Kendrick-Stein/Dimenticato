@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-en-using-nature-expertise",
+  "storyId": "natural-england-planning-advice-2026-10-01",
+  "lang": "en",
+  "date": "2026-10-21",
+  "category": "environment",
+  "topics": [
+    "自然保护",
+    "公共服务"
+  ],
+  "title": "Putting nature expertise where it is needed",
+  "titleZh": "把自然保护专业力量用在需要的地方",
+  "summaryZh": "Natural England调整规划咨询方式，在保留保护责任的同时，把专家注意力转向复杂项目。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：以原因、对比和未来安排串联说明，含少量规划和环境术语，中文释义帮助理解。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Natural England / GOV.UK",
+    "title": "New streamlined planning role for Natural England takes effect",
+    "url": "https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect",
+    "publishedAt": "2026-10-01",
+    "lang": "en",
+    "author": "Natural England"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Natural England; 2026-10-01; https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect",
+  "adaptation": "2026-10-21整理；依据发表于2026-10-01的机构英文材料作同语言教学改写，配中文翻译及原创学习补充。非今日新闻、非原文逐字转载，不代表原机构认可。排除图片、标志、直接引语及第三方作品；保留计划、观点与实施成果的区别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "When local authorities consider plans for development, they may need specialist advice about the possible effects on nature.",
+      "zh": "地方政府考虑开发规划时，可能需要关于其潜在自然影响的专业建议。",
+      "glosses": [
+        {
+          "surface": "specialist",
+          "lemma": "specialist",
+          "zh": "专业的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Natural England provides this expertise, but growing demand has meant dealing with many requests, including cases already covered by guidance.",
+      "zh": "Natural England提供这种专业知识，但不断增长的需求意味着它要处理大量请求，包括指导文件已涵盖的情况。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "On 1 October 2026, the organisation announced changes to the way it would provide planning advice.",
+      "zh": "2026年10月1日，该机构宣布调整提供规划建议的方式。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "The aim is to use its specialists more effectively while continuing to protect the natural environment.",
+      "zh": "目的是在继续保护自然环境的同时，更有效地使用专业人员。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Instead of repeatedly giving similar advice on individual cases, it will pay more attention to complex proposals and larger-scale planning.",
+      "zh": "它将不再反复就个别案例提供相似建议，而是更加关注复杂方案及较大尺度的规划。",
+      "glosses": [
+        {
+          "surface": "repeatedly",
+          "lemma": "repeatedly",
+          "zh": "反复地"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Projects that present the greatest risks or opportunities for nature will receive particular attention under the new approach.",
+      "zh": "在新方式下，对自然带来最大风险或机遇的项目将受到特别关注。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Working earlier in the planning process should help specialists identify environmental problems before decisions have progressed too far.",
+      "zh": "在规划过程中更早介入，应有助于专业人员在决策推进过深之前识别环境问题。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "For more routine matters, local planning authorities will be able to use established guidance or advice provided in advance.",
+      "zh": "对于较常规的事项，地方规划部门可使用已有指导文件或预先提供的建议。",
+      "glosses": [
+        {
+          "surface": "routine",
+          "lemma": "routine",
+          "zh": "常规的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "This means that useful information can support a decision without the same specialist response being written again for each request.",
+      "zh": "这意味着有用信息可以支持决策，而不必为每个请求再次撰写相同的专业回复。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "However, changing the way advice is delivered does not remove Natural England’s legal responsibilities to protect nature.",
+      "zh": "不过，改变建议的提供方式，并不会取消Natural England保护自然的法定责任。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Protections for habitats, species and designated sites remain in place, according to the announcement.",
+      "zh": "公告说明，对栖息地、物种和指定保护地点的保护仍然有效。",
+      "glosses": [
+        {
+          "surface": "habitats",
+          "lemma": "habitat",
+          "zh": "栖息地"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "The organisation says that the changes should give planning authorities and developers greater consistency and clarity.",
+      "zh": "该机构表示，这些改变应使规划部门和开发者获得更一致、更清晰的信息。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "The approach will be introduced gradually, rather than replacing every existing arrangement at once.",
+      "zh": "这一方式将逐步推行，而不是一次性替换所有现行安排。",
+      "glosses": [
+        {
+          "surface": "gradually",
+          "lemma": "gradually",
+          "zh": "逐步地"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Natural England will continue working with local authorities, developers and other partners during the transition.",
+      "zh": "过渡期间，Natural England将继续与地方政府、开发者和其他伙伴合作。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Updated guidance and practical tools will explain more clearly when and how people should ask the organisation for advice.",
+      "zh": "更新后的指导文件和实用工具将更清楚地说明何时及如何向该机构寻求建议。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "The announcement therefore describes a new way of organising expert support, not evidence that environmental problems have already been solved.",
+      "zh": "因此，这份公告描述的是组织专业支持的新方式，而不是环境问题已经得到解决的证据。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "specialist",
+        "zh": "专业的",
+        "sentenceId": "s1",
+        "lemma": "specialist",
+        "note": "specialist advice意为专业建议，specialist在此修饰advice。"
+      },
+      {
+        "text": "repeatedly",
+        "zh": "反复地",
+        "sentenceId": "s5",
+        "lemma": "repeatedly",
+        "note": "repeatedly giving表示反复给予；对应后面的相似建议。"
+      },
+      {
+        "text": "routine",
+        "zh": "常规的",
+        "sentenceId": "s8",
+        "lemma": "routine",
+        "note": "routine matters指较常规的事项，与复杂项目相对。"
+      },
+      {
+        "text": "habitats",
+        "zh": "栖息地",
+        "sentenceId": "s11",
+        "lemma": "habitat",
+        "note": "habitats是habitat的复数，与species及designated sites并列。"
+      },
+      {
+        "text": "gradually",
+        "zh": "逐步地",
+        "sentenceId": "s13",
+        "lemma": "gradually",
+        "note": "gradually与后文rather than ... at once形成对照，意为逐步地。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in advance",
+        "zh": "预先",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "remain in place",
+        "zh": "仍然有效",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "留意本句中的固定搭配，并结合中文对照复述完整意思。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "When should a public service give individual advice, and when is shared guidance enough?",
+        "zh": "公共服务何时应提供个别建议，何时共用指导就足够？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "in advance",
+        "zh": "预先",
+        "sentenceId": "s8",
+        "note": "可替换后面的内容，讨论类似情境。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-fr-les-festivals-entre-public-et-fragilite",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 13,
+      "answer": "répondants",
+      "options": [
+        "répondants",
+        "spectateurs",
+        "musiciens",
+        "assureurs"
+      ],
+      "explanation": "中文句意需要“回应者”，恢复原文 répondants。阳性复数；这里指回答调查的节庆组织方，并非所有节庆。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 97,
+      "answer": "aménagé",
+      "options": [
+        "vendu",
+        "fermé",
+        "aménagé",
+        "quitté"
+      ],
+      "explanation": "中文句意需要“调整；改造（场地）”，恢复原文 aménagé。ont aménagé 为复合过去时；宾语 sites 指场地。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s12",
+      "start": 34,
+      "answer": "dépenses",
+      "options": [
+        "répétitions",
+        "dépenses",
+        "réservations",
+        "invitations"
+      ],
+      "explanation": "中文句意需要“支出”，恢复原文 dépenses。阴性复数；与 recettes（收入）相对。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s13",
+      "start": 88,
+      "answer": "subventions",
+      "options": [
+        "représentations",
+        "installations",
+        "émissions",
+        "subventions"
+      ],
+      "explanation": "中文句意需要“补助”，恢复原文 subventions。阴性复数，publiques 与其一致，指公共资助。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s14",
+      "start": 43,
+      "answer": "anticipent",
+      "options": [
+        "anticipent",
+        "remboursent",
+        "annulent",
+        "distribuent"
+      ],
+      "explanation": "中文句意需要“预计”，恢复原文 anticipent。直陈式现在时第三人称复数，指预期而非已结算结果。"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-en-supporting-foster-families",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Who are the changes meant to help?",
+      "options": [
+        "New carers and people already providing foster care.",
+        "Children preparing to study at boarding school.",
+        "Adults starting work in residential care homes.",
+        "Families planning to spend a weekend on holiday."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "招募活动寻找新人，后文又说明变化也支持已有照护者；不是寄宿学校或旅游项目。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What will some new programmes test?",
+      "options": [
+        "Care arranged only during the school holidays.",
+        "Care provided at weekends.",
+        "Care offered only by people over forty.",
+        "Care provided only in residential centres."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "第8句明确举出周末照护，是拟试验的灵活形式。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What does the figure 10,000 describe?",
+      "options": [
+        "Adults who have already completed their training.",
+        "Existing carers who receive weekend support.",
+        "New foster places the government wants to create.",
+        "Children who have already moved into foster families."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "10,000是计划新增的寄养名额，不是已经实现的人数。"
+    }
+  ]
+}

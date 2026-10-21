@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-en-using-nature-expertise",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "What change does the announcement describe?",
+      "options": [
+        "Giving developers responsibility for writing nature guidance.",
+        "Replacing local planning decisions with national inspections.",
+        "Concentrating expert advice on more complex planning work.",
+        "Moving nature protection work from specialists to volunteers."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s5",
+        "s6",
+        "s8"
+      ],
+      "explanationZh": "核心是把专家建议集中用于复杂项目，常规事项更多使用现有指导；没有转交志愿者等安排。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why is Natural England changing its approach?",
+      "options": [
+        "Specialists have been handling many requests, even where guidance exists.",
+        "Local authorities have stopped considering environmental effects.",
+        "Developers have asked for every project to receive identical advice.",
+        "Existing protection rules have been removed from planning law."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "需求增加，许多请求属于已有指导覆盖的情形，因此希望更有效使用专家力量。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What remains unchanged in the announcement?",
+      "options": [
+        "The procedure for every individual request.",
+        "The time at which every project receives advice.",
+        "The number of partners involved in planning.",
+        "The organisation’s legal duties to protect nature."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "建议提供方式改变，但法定自然保护责任与相关保护依旧存在。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "What should a local authority expect during the transition?",
+      "options": [
+        "All current guidance will be withdrawn immediately.",
+        "New arrangements will develop with guidance and cooperation.",
+        "Each routine case will receive a new specialist report.",
+        "Environmental problems will be solved before planning begins."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s13",
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "逐步推行、持续合作与更新指导共同支持这个判断；并非立即撤销指导或保证问题已解决。"
+    }
+  ]
+}

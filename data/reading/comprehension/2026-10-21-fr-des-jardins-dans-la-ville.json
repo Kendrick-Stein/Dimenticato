@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-fr-des-jardins-dans-la-ville",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quels éléments le livre étudie-t-il ensemble ?",
+      "promptZh": "这本书把哪些方面放在一起研究？",
+      "options": [
+        "Les voyages, les hôtels et les transports parisiens.",
+        "Les marchés, les prix et les magasins de quartier.",
+        "Les jardins, les habitants et la diversité du vivant.",
+        "Les musées, les artistes et les visites scolaires."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s7",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "正文把绿地、生物多样性和居民观念、管理方式联系起来，不是研究旅游、商业或艺术活动。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Que peut-on trouver dans un même jardin, selon le texte ?",
+      "promptZh": "根据文章，同一个花园中可能有什么？",
+      "options": [
+        "Une zone qui produit des aliments et une zone qui n’en produit pas.",
+        "Une ferme qui vend aux marchés et une boutique de quartier.",
+        "Un espace réservé aux chercheurs et un espace réservé aux écoles.",
+        "Une partie ouverte aux habitants et une partie ouverte aux touristes."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "第5句区分生产与不生产食物的空间，第6句说明两种情况可以出现在同一花园中；其余划分未被提及。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Que font les chercheurs pour comprendre ces espaces ?",
+      "promptZh": "研究人员如何理解这些空间？",
+      "options": [
+        "Ils comparent les prix des légumes dans les marchés.",
+        "Ils comptent les visiteurs des parcs pendant les vacances.",
+        "Ils préparent des plans pour construire de nouveaux logements.",
+        "Ils étudient les opinions, les quartiers et la gestion des jardins."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第9—10句说明跨领域合作及三个观察角度：居民观念、街区特点、花园管理；其他选项是不同的研究内容。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-fr-transformer-les-batiments-existants",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 26,
+      "answer": "lendemain",
+      "options": [
+        "lendemain",
+        "printemps",
+        "matin",
+        "week-end"
+      ],
+      "explanation": "中文句意需要“次日”，恢复原文 lendemain。le lendemain 指前面15日的下一天，即16日。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 42,
+      "answer": "existant",
+      "options": [
+        "avenir",
+        "existant",
+        "intérieur",
+        "extérieur"
+      ],
+      "explanation": "中文句意需要“既有建筑（已有事物）”，恢复原文 existant。l’existant 是名词化表达，在此指已经存在的建筑。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 27,
+      "answer": "distingué",
+      "options": [
+        "construit",
+        "vendu",
+        "distingué",
+        "démoli"
+      ],
+      "explanation": "中文句意需要“评选出；表彰”，恢复原文 distingué。avait distingué 为愈过去时，表示此前首届已经完成的评选。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 35,
+      "answer": "ensemble",
+      "options": [
+        "séparément",
+        "tardivement",
+        "oralement",
+        "ensemble"
+      ],
+      "explanation": "中文句意需要“共同”，恢复原文 ensemble。副词修饰 présentée，表示双方共同申请。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s13",
+      "start": 45,
+      "answer": "dossier",
+      "options": [
+        "dossier",
+        "budget",
+        "bâtiment",
+        "calendrier"
+      ],
+      "explanation": "中文句意需要“申请材料”，恢复原文 dossier。son propre dossier 为单数，每个项目各自一份。"
+    }
+  ]
+}

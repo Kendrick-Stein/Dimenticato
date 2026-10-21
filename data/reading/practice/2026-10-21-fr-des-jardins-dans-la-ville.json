@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-fr-des-jardins-dans-la-ville",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 62,
+      "answer": "jardins",
+      "options": [
+        "bureaux",
+        "jardins",
+        "magasins",
+        "musées"
+      ],
+      "explanation": "中文句意需要“花园”，恢复原文 jardins。un jardin 的复数；les 后用复数名词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 4,
+      "answer": "chercheurs",
+      "options": [
+        "voyageurs",
+        "vendeurs",
+        "chercheurs",
+        "chanteurs"
+      ],
+      "explanation": "中文句意需要“研究人员”，恢复原文 chercheurs。un chercheur 的复数；作 regardent 的主语。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 40,
+      "answer": "nourriture",
+      "options": [
+        "nourriture",
+        "musique",
+        "lumière",
+        "chaleur"
+      ],
+      "explanation": "中文句意需要“食物”，恢复原文 nourriture。阴性单数名词，de la nourriture 表示食物这一物质。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 65,
+      "answer": "habitants",
+      "options": [
+        "touristes",
+        "clients",
+        "acteurs",
+        "habitants"
+      ],
+      "explanation": "中文句意需要“居民”，恢复原文 habitants。阳性复数；des habitants 在此泛指居民。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 97,
+      "answer": "ensemble",
+      "options": [
+        "demain",
+        "ensemble",
+        "dehors",
+        "ailleurs"
+      ],
+      "explanation": "中文句意需要“一起”，恢复原文 ensemble。此处是副词，修饰 travaillent，不随主语变复数。"
+    }
+  ]
+}

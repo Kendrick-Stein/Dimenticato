@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-en-supporting-foster-families",
+  "storyId": "dfe-foster-campaign-2026-10-14",
+  "lang": "en",
+  "date": "2026-10-21",
+  "category": "society",
+  "topics": [
+    "寄养家庭",
+    "社区照护"
+  ],
+  "title": "Opening homes, supporting carers",
+  "titleZh": "打开家门，也支持照护者",
+  "summaryZh": "英格兰招募寄养照护者的新宣传活动强调多种参与方式，同时支持已有照护者。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：短句、具体家庭照护情境和常见时态为主；寄养等专门词配中文释义。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Education / GOV.UK",
+    "title": "National call to recruit more foster carers launched at Number 10",
+    "url": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
+    "publishedAt": "2026-10-14",
+    "lang": "en",
+    "author": "Department for Education and Josh MacAlister OBE MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Education and Josh MacAlister OBE MP; 2026-10-14; https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
+  "adaptation": "2026-10-21整理；依据发表于2026-10-14的机构英文材料作同语言教学改写，配中文翻译及原创学习补充。非今日新闻、非原文逐字转载，不代表原机构认可。排除图片、标志、直接引语及第三方作品；保留计划、观点与实施成果的区别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Some children in England need a safe and supportive home with a foster family.",
+      "zh": "英格兰一些儿童需要一个由寄养家庭提供的、安全且支持他们的家。",
+      "glosses": [
+        {
+          "surface": "supportive",
+          "lemma": "supportive",
+          "zh": "给予支持的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "A foster carer looks after a child who needs this kind of care.",
+      "zh": "寄养照护者照顾需要这种照护的儿童。",
+      "glosses": [
+        {
+          "surface": "carer",
+          "lemma": "carer",
+          "zh": "照护者"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "On 14 October 2026, the Department for Education announced a new national campaign to find more carers.",
+      "zh": "2026年10月14日，英国教育部宣布开展一项新的全国宣传活动，寻找更多照护者。",
+      "glosses": [
+        {
+          "surface": "campaign",
+          "lemma": "campaign",
+          "zh": "宣传活动"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The campaign asks adults to learn more before deciding that fostering is not for them.",
+      "zh": "这项活动请成年人先多了解情况，不要过早认定寄养照护不适合自己。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "It especially hopes to reach people in their thirties and forties who have not seriously considered it before.",
+      "zh": "它尤其希望接触此前没有认真考虑过此事的三四十岁人士。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "The government wants to create 10,000 new foster places by the end of this Parliament.",
+      "zh": "政府希望在本届议会任期结束前新增10,000个寄养名额。",
+      "glosses": [
+        {
+          "surface": "places",
+          "lemma": "place",
+          "zh": "名额"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "This is a target, not the number of new places already available.",
+      "zh": "这是一个目标，并不是已经提供的新名额数量。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Some new programmes will test more flexible ways to help, including care at weekends.",
+      "zh": "一些新项目将试验更灵活的帮助方式，包括周末照护。",
+      "glosses": [
+        {
+          "surface": "flexible",
+          "lemma": "flexible",
+          "zh": "灵活的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Other programmes will offer training or help children move from residential care into foster families when this meets their needs.",
+      "zh": "其他项目将提供培训，或在符合儿童需要时，帮助他们从机构照护转入寄养家庭。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "The changes aim to support existing carers too, not only recruit new ones.",
+      "zh": "这些改变也旨在支持已有照护者，而不只是招募新人。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Better information and support should help carers understand the process at each stage.",
+      "zh": "更好的信息和支持应有助于照护者理解各阶段的流程。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "supportive",
+        "zh": "给予支持的",
+        "sentenceId": "s1",
+        "lemma": "supportive",
+        "note": "supportive是形容词，修饰home，意为给予支持的。"
+      },
+      {
+        "text": "carer",
+        "zh": "照护者",
+        "sentenceId": "s2",
+        "lemma": "carer",
+        "note": "carer是可数名词，前有a；本句说明寄养照护者的职责。"
+      },
+      {
+        "text": "campaign",
+        "zh": "宣传活动",
+        "sentenceId": "s3",
+        "lemma": "campaign",
+        "note": "campaign指有组织的宣传活动；这里不是节日或旅程。"
+      },
+      {
+        "text": "places",
+        "zh": "名额",
+        "sentenceId": "s6",
+        "lemma": "place",
+        "note": "foster places指寄养名额；10,000后用复数places。"
+      },
+      {
+        "text": "flexible",
+        "zh": "灵活的",
+        "sentenceId": "s8",
+        "lemma": "flexible",
+        "note": "more flexible ways表示更灵活的方式；周末照护是具体例子。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "learn more",
+        "zh": "进一步了解",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "not only",
+        "zh": "不只是",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "留意本句中的固定搭配，并结合中文对照复述完整意思。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What information would help someone understand the role of a foster carer?",
+        "zh": "哪些信息有助于人们了解寄养照护者这一角色？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "learn more",
+        "zh": "进一步了解",
+        "sentenceId": "s4",
+        "note": "可替换后面的内容，讨论类似情境。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-en-using-nature-expertise",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 69,
+      "answer": "specialist",
+      "options": [
+        "seasonal",
+        "specialist",
+        "personal",
+        "financial"
+      ],
+      "explanation": "specialist advice意为专业建议，specialist在此修饰advice。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 11,
+      "answer": "repeatedly",
+      "options": [
+        "secretly",
+        "recently",
+        "repeatedly",
+        "accidentally"
+      ],
+      "explanation": "repeatedly giving表示反复给予；对应后面的相似建议。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 9,
+      "answer": "routine",
+      "options": [
+        "routine",
+        "musical",
+        "coastal",
+        "private"
+      ],
+      "explanation": "routine matters指较常规的事项，与复杂项目相对。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 16,
+      "answer": "habitats",
+      "options": [
+        "habits",
+        "headlines",
+        "harvests",
+        "habitats"
+      ],
+      "explanation": "habitats是habitat的复数，与species及designated sites并列。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s13",
+      "start": 32,
+      "answer": "gradually",
+      "options": [
+        "globally",
+        "gradually",
+        "privately",
+        "recently"
+      ],
+      "explanation": "gradually与后文rather than ... at once形成对照，意为逐步地。"
+    }
+  ]
+}

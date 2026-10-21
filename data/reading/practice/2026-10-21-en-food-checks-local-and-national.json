@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-en-food-checks-local-and-national",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 24,
+      "answer": "tension",
+      "options": [
+        "tradition",
+        "tension",
+        "transaction",
+        "translation"
+      ],
+      "explanation": "a tension在这里指地方经验与跨地区影响之间需要协调的张力。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 46,
+      "answer": "reveal",
+      "options": [
+        "rent",
+        "repair",
+        "reveal",
+        "reserve"
+      ],
+      "explanation": "could后用动词原形reveal，意为揭示信息中潜藏的风险。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 102,
+      "answer": "outcomes",
+      "options": [
+        "outcomes",
+        "outfits",
+        "outlets",
+        "outskirts"
+      ],
+      "explanation": "intended outcomes意为预期成效，是评估框架的尺度。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s16",
+      "start": 58,
+      "answer": "staffing",
+      "options": [
+        "shipping",
+        "shopping",
+        "spelling",
+        "staffing"
+      ],
+      "explanation": "staffing指人员配置，与finance、legal powers并列，是尚待解决的实施问题。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s21",
+      "start": 111,
+      "answer": "consultation",
+      "options": [
+        "construction",
+        "consultation",
+        "conservation",
+        "consumption"
+      ],
+      "explanation": "formal consultation指正式征求意见，在本句位于模型形成之后。"
+    }
+  ]
+}

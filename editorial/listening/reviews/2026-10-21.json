@@ -1,0 +1,210 @@
+{
+  "checkedAt": "2026-10-21",
+  "status": "all-four-pass",
+  "scope": "Four new outbound official resources independently reviewed; IT/EN3questions each, FR/DEsource-only. No downloaded/rehosted media, full subtitles, images or provider exercise sets.",
+  "playback": "Not tested for any of the four entries. No audio-quality claims.",
+  "entries": [
+    {
+      "id": "it-rai-tempo-impegno-a2",
+      "status": "pass-official-transcript",
+      "sha256": "9d6d42e2f80eeb735d63ef09f1894f22cbac82813bce1332471fb0bbc8223394",
+      "canonicalEntrySha256": "7cf8a422cd5ccba476947940c2f69938231bd20f5c7a565d3df57c9ea2c532a9",
+      "sourceReview": {
+        "checkedAt": "2026-10-21",
+        "id": "it-rai-tempo-impegno-a2",
+        "status": "pass-official-transcript",
+        "source_checks": [
+          {
+            "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-Quanto-ci-metti-Il-tempo-che-ci-vuole-03b4362e-1732-4c18-81b1-5f9072d939d8.html",
+            "reference": "turn149view0/turn150view0 lines 392-401",
+            "finding": "Official matching complete lesson transcript. Explicit A2 heading. Selected vocabulary appears in instructional discussion."
+          },
+          {
+            "url": "https://www.raiscuola.rai.it/percorsi/unita2-livelloa2",
+            "reference": "turn150view1 lines 386-412",
+            "finding": "Official Unit 2 A2 course lists the exact selected video lesson."
+          },
+          {
+            "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-Quanto-ci-metti-Il-tempo-che-ci-vuole-03b4362e-1732-4c18-81b1-5f9072d939d8.html",
+            "reference": "it-date-evidence.json",
+            "finding": "Independent HTTP200 HTML retrieval verifies JSON-LD datePublished 2021-06-11 and dateModified 2021-06-18; original date is not inferred merely from URL."
+          }
+        ],
+        "question_review": {
+          "count": 3,
+          "answersVerified": [
+            1,
+            2,
+            0
+          ],
+          "blind": true,
+          "blindEvidence": "it-blind-solve.json",
+          "method": "Read no-key listening-blind.json first, independently fetched corresponding official transcript, wrote blind solve, then read listening-entry.json keys and explanations.",
+          "findings": [
+            {
+              "id": "it-tempo-1",
+              "answerIndex": 1,
+              "reference": "Official transcript line 396",
+              "assessment": "Half-hour journey explicit. Four parallel duration options; unique key. Chinese explanation correctly distinguishes unrelated one-second anger expression."
+            },
+            {
+              "id": "it-tempo-2",
+              "answerIndex": 2,
+              "reference": "Official transcript line 398",
+              "assessment": "Study effort explicitly motivates admiration. Four parallel reasons; unique key and accurate Chinese explanation."
+            },
+            {
+              "id": "it-tempo-3",
+              "answerIndex": 0,
+              "reference": "Official transcript line 400",
+              "assessment": "Olga moved by gift explicit. Four parallel emotional responses; unique key. Explanation distinguishes prior disappointment."
+            }
+          ]
+        },
+        "rights": "Outbound official link; original short Chinese guide and glosses; four brief ordinary expressions; original three questions based on independently retrieved matching transcript. No reused media, thumbnail, subtitles, full transcript or source exercises published; no republication permission claimed.",
+        "limits": [
+          "No actual playback/audio-quality test."
+        ],
+        "sha256": "9d6d42e2f80eeb735d63ef09f1894f22cbac82813bce1332471fb0bbc8223394",
+        "canonicalEntrySha256": "7cf8a422cd5ccba476947940c2f69938231bd20f5c7a565d3df57c9ea2c532a9"
+      }
+    },
+    {
+      "id": "fr-tv5-une-journee-a1",
+      "status": "pass-resource-only",
+      "sha256": "35774dc08312f755d8a41d9b39012d538cc50ca548efc825613678fe90e7bf64",
+      "canonicalEntrySha256": "805fef4fc70d4d7910d08b713d9b2a4a7e51d11aa930e9c6cf6c9e5ec1ec3cfd",
+      "sourceReview": {
+        "status": "pass-resource-only",
+        "source_checks": [
+          {
+            "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/une-journee",
+            "reference": "turn142view0 lines 36-61,89-159",
+            "finding": "Official A1; Hachette FLE; published 2024-02-20; available until 2028-03-04; subtitles tag; three selected short vocabulary terms appear in official course list."
+          },
+          {
+            "url": "https://apprendre.tv5monde.com/fr/exercice/32479?exercice=1&id_serie=32484&niveau=a1_debutant&nom_serie=une_journee_",
+            "reference": "turn145view1 lines 13-21",
+            "finding": "Official matching course exercise page exposes video-player placeholder and school-day listening setup, not a complete transcript."
+          }
+        ],
+        "question_review": {
+          "count": 0,
+          "finding": "Correctly does not guess comprehension answers from metadata/exercise prompts."
+        },
+        "suggestions": [
+          "Optionally carry availableUntil 2028-03-04 in catalog metadata, as existing FR entry does."
+        ],
+        "rights": "Outbound link only; no copied media/subtitles/thumbnail/exercise. Brief ordinary vocabulary with original Chinese glosses and guide. Evergreen, not presented as current news.",
+        "limits": [
+          "No actual playback or complete transcript verified."
+        ],
+        "checkedAt": "2026-10-21",
+        "sha256": "35774dc08312f755d8a41d9b39012d538cc50ca548efc825613678fe90e7bf64",
+        "id": "fr-tv5-une-journee-a1",
+        "canonicalEntrySha256": "805fef4fc70d4d7910d08b713d9b2a4a7e51d11aa930e9c6cf6c9e5ec1ec3cfd"
+      }
+    },
+    {
+      "id": "de-logo-schulwuensche-20261015",
+      "status": "pass-resource-only",
+      "sha256": "afe09c3bf28beed0f57a02d56955a6edb8c667eacb8d2631f8b6d42a98ba573f",
+      "canonicalEntrySha256": "b6e4bd2ab10adcd435645f3f0d3baae1acf0e98acd9e3cc4593efe869e0c9da5",
+      "sourceReview": {
+        "status": "pass-resource-only",
+        "source_checks": [
+          {
+            "url": "https://www.logo.de/umfrage-zufriedenheit-schule-100.html",
+            "reference": "turn141view0 lines 35-45",
+            "finding": "Official ZDF logo page. Published 2026-10-15 17:38. School-wishes topic and preview vocabulary verified."
+          },
+          {
+            "url": "https://www.logo.de/",
+            "reference": "turn141view1 lines 136-142",
+            "finding": "Official homepage links the selected resource and lists duration 1:25."
+          }
+        ],
+        "question_review": {
+          "count": 0,
+          "finding": "No transcript or actual playback evidence. Empty questions appropriate."
+        },
+        "corrections": [
+          "Initial B1 editorial estimate was unsupported. Parent corrected to 未分级 and native-child/no-CEFR label.",
+          "Parent added thematic preparation vocabulary label."
+        ],
+        "rights": "Only official outbound link and brief commonplace lexical items plus original Chinese pedagogical text. No stored media, subtitles, thumbnails, source exercises or embed. No republication permission inferred.",
+        "limits": [
+          "Actual playback, audio quality and CEFR difficulty not tested.",
+          "DW not fetched or retried; reported robots denial respected."
+        ],
+        "checkedAt": "2026-10-21",
+        "sha256": "afe09c3bf28beed0f57a02d56955a6edb8c667eacb8d2631f8b6d42a98ba573f",
+        "id": "de-logo-schulwuensche-20261015",
+        "canonicalEntrySha256": "b6e4bd2ab10adcd435645f3f0d3baae1acf0e98acd9e3cc4593efe869e0c9da5"
+      }
+    },
+    {
+      "id": "en-bc-party-directions-a2",
+      "status": "pass-official-transcript",
+      "sha256": "a440743245481b0739d6a8ed1161e83908572e8487ebab6052a5b0e2444130f4",
+      "canonicalEntrySha256": "d35adae634f0309dc43b7aec99f5b75565ab6ffaad6b03091c6091a72cffb154",
+      "sourceReview": {
+        "status": "pass-official-transcript",
+        "source_checks": [
+          {
+            "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/invitation-party",
+            "reference": "turn142view1 lines 17-26 and 44-46",
+            "finding": "Official matching transcript and provider A2. Date not specified. Evergreen claim is honest."
+          },
+          {
+            "url": "https://learnenglish.britishcouncil.org/sites/podcasts/files/LearnEnglish-Listening-A2-An-invitation-to-a-party.pdf",
+            "reference": "turn145view0 pages 0-4",
+            "finding": "Official worksheet exercises compared for copying; copyright 2019 is not a verified exact publication date."
+          }
+        ],
+        "question_review": {
+          "count": 3,
+          "answersVerified": [
+            1,
+            2,
+            0
+          ],
+          "blind": false,
+          "method": "Read proposed answers before source discovery; independently verified against actual corresponding official transcript, not blind solving.",
+          "findings": [
+            {
+              "id": "en-party-1",
+              "answerIndex": 1,
+              "evidence": "Official transcript message 1 final directions promise at turn142view1 line 19.",
+              "assessment": "Revised item asks what information will be sent later. Unique correct answer directions; four parallel noun phrases; not an existing worksheet exercise."
+            },
+            {
+              "id": "en-party-2",
+              "answerIndex": 2,
+              "evidence": "Official message 2 directs car traveller down the road and left after exit 13A.",
+              "assessment": "Unique answer; all alternatives route actions; sequence question not copied provider item."
+            },
+            {
+              "id": "en-party-3",
+              "answerIndex": 0,
+              "evidence": "Official message 2 asks bus traveller to call on arrival in Brownsville so somebody can collect them.",
+              "assessment": "Unique answer; all alternatives actions; Chinese explanation accurate. Provider worksheet also tests pickup but new prompt specifically asks caller action, not a copied wording."
+            }
+          ]
+        },
+        "corrections": [
+          "Resolved: en-party-1 replaced with distinct promised-information item and reverified against official transcript.",
+          "Resolved: vocabulary now uses complete phrase take exit 13A."
+        ],
+        "rights": "Only official outbound link, brief ordinary lexical expressions, original Chinese guide/glosses and original multiple-choice questions. Compared official worksheet: no reused wording, layout, exercise set or copied answer set. No media/subtitles/thumbnail/embed and no source republication permission claimed.",
+        "limits": [
+          "Actual playback/audio quality not tested."
+        ],
+        "checkedAt": "2026-10-21",
+        "sha256": "a440743245481b0739d6a8ed1161e83908572e8487ebab6052a5b0e2444130f4",
+        "id": "en-bc-party-directions-a2",
+        "canonicalEntrySha256": "d35adae634f0309dc43b7aec99f5b75565ab6ffaad6b03091c6091a72cffb154"
+      }
+    }
+  ]
+}

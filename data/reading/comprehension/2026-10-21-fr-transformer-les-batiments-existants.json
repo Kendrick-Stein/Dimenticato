@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-fr-transformer-les-batiments-existants",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quel principe relie les objectifs et les exemples recherchés par ce palmarès ?",
+      "promptZh": "哪一理念将这项评选的目标与所寻找的案例联系起来？",
+      "options": [
+        "Transformer les bâtiments en conciliant création, usages et patrimoine.",
+        "Conserver les bâtiments en limitant les travaux à leur décoration.",
+        "Remplacer les bâtiments anciens par des modèles identiques dans chaque région.",
+        "Réserver les bâtiments réhabilités aux activités des architectes."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s6",
+        "s7",
+        "s15"
+      ],
+      "explanationZh": "第5—7句强调既有建筑改造也是创作，并同时考虑环境、用途和遗产；第15句说明案例的示范作用。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Comment une agence peut-elle présenter trois projets ?",
+      "promptZh": "一家事务所怎样才能提交三个项目？",
+      "options": [
+        "En réunissant les trois projets dans une candidature orale.",
+        "En choisissant trois projets dans une même région.",
+        "En proposant un projet par région, avec trois dossiers distincts.",
+        "En présentant les trois projets sans les maîtres d’ouvrage."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第12句要求三个项目分属不同地区，第13句要求每个项目独立材料；第11句还要求与业主共同申请。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "À quoi correspondent les dix projets mentionnés dans le texte ?",
+      "promptZh": "文中的十个项目指什么？",
+      "options": [
+        "Aux candidatures acceptées pour la nouvelle édition.",
+        "Aux réalisations distinguées lors de la première édition.",
+        "Aux exemples qui seront sélectionnés par chaque région.",
+        "Aux bâtiments que chaque agence doit avoir transformés."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "十个项目属于2023年首届的已完成评选，不是新一届的名额或申请条件。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Pourquoi les résultats de la nouvelle édition ne peuvent-ils pas encore être présentés comme acquis au 21 octobre 2026 ?",
+      "promptZh": "为什么在2026年10月21日还不能把新一届结果当作既成事实？",
+      "options": [
+        "Le comité scientifique doit encore décider de créer le palmarès.",
+        "La première édition doit encore choisir ses dix lauréats.",
+        "Les bâtiments concernés doivent encore être construits.",
+        "Le dépôt des candidatures reste ouvert et les résultats sont annoncés pour 2027."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "第14句申请截止于11月底，第15句结果预计2027年下半年公布。由这两个时间点可推出10月21日结果尚不能视为已确定。"
+    }
+  ]
+}

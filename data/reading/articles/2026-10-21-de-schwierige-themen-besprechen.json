@@ -1,0 +1,315 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-de-schwierige-themen-besprechen",
+  "storyId": "oerinfo-siemens-sensitive-topics-2026-09-08",
+  "lang": "de",
+  "date": "2026-10-21",
+  "title": "Schwierige Themen gemeinsam besprechen",
+  "titleZh": "一起讨论难以启齿的话题",
+  "summaryZh": "西门子基金会介绍两套教学材料：不同年龄的学生怎样学习身体知识，并在尊重与自主的前提下讨论敏感问题？",
+  "level": "B1",
+  "levelReason": "编辑估计：以清晰教学流程串联内容，使用关系从句、被动态、目的与转折关系；抽象词配中文注释。",
+  "category": "education",
+  "topics": [
+    "课堂讨论",
+    "尊重",
+    "自主学习"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "OERinfo – Die Informationsstelle OER",
+    "title": "Freie Bildungsmaterialien zu Pubertät und Organspende der Siemens Stiftung",
+    "url": "https://open-educational-resources.de/freie-bildungsmaterialien-zu-pubertaet-und-organspende-der-siemens-stiftung/",
+    "publishedAt": "2026-09-08",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者：Siemens Stiftung für OERinfo – Die Informationsstelle OER；页面发布者 Angela Karnoll。Dimenticato 作德语分级改写、中文翻译及教学补充。本文与配套练习按 CC BY 4.0 提供；来源机构未认证本教学材料。",
+  "adaptation": "2026-10-21 整理，原报道2026-09-08发表。本文仅概述机构介绍的教学流程与目标，不复制课程、漫画、图片或第三方材料，不提供医疗或个人决定建议，也不将教学目标写成效果证明。词汇、练习和口语问题为原创教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Über manche Themen sprechen Menschen nicht gern, weil sie persönliche Gefühle und schwierige Fragen berühren.",
+      "zh": "有些话题人们不愿谈起，因为它们涉及个人感受和难题。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Wie kann eine Schulklasse trotzdem ruhig darüber sprechen, ohne jemanden unter Druck zu setzen?",
+      "zh": "那么，一个班怎样才能平静地谈论它们，而不向任何人施压呢？",
+      "glosses": [
+        {
+          "surface": "Druck",
+          "lemma": "Druck",
+          "zh": "压力",
+          "note": "unter Druck setzen：给……施压。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Ein Beitrag der Siemens Stiftung auf OERinfo stellte am 8. September 2026 neue Unterrichtsmaterialien vor.",
+      "zh": "西门子基金会2026年9月8日在 OERinfo 的一篇文章中介绍了新的教学材料。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Sie behandeln die Pubertät und die Organspende, richten sich aber an unterschiedliche Altersgruppen.",
+      "zh": "它们涉及青春期和器官捐献，但面向不同年龄群体。",
+      "glosses": [
+        {
+          "surface": "Altersgruppen",
+          "lemma": "Altersgruppe",
+          "zh": "年龄群体",
+          "note": "复数，与 unterschiedliche 连用。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Das erste Paket erklärt körperliche Veränderungen und ist für Kinder ab der dritten Klasse gedacht.",
+      "zh": "第一套材料解释身体变化，适用于三年级及以上的儿童。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Es wurde zusammen mit der Bildungsinitiative KNOWBODY entwickelt und enthält vierzehn einzelne Medien.",
+      "zh": "它与教育倡议 KNOWBODY 合作开发，包含十四项独立媒体材料。",
+      "glosses": [
+        {
+          "surface": "enthält",
+          "lemma": "enthalten",
+          "zh": "包含",
+          "note": "第三人称单数现在时。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Dazu gehören interaktive Übungen, Grafiken und ein Leitfaden, der Lehrkräften bei der Vorbereitung hilft.",
+      "zh": "其中包括互动练习、图示，以及帮助教师备课的指南。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Neben Wissen über den Körper geht es darum, respektvoll zu sprechen und mit Unsicherheit umzugehen.",
+      "zh": "除了身体知识，重点还在于尊重地交流，以及应对不确定感。",
+      "glosses": [
+        {
+          "surface": "respektvoll",
+          "lemma": "respektvoll",
+          "zh": "尊重地",
+          "note": "在 sprechen 前作方式状语。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Das zweite Paket beschäftigt sich mit Organspende und eignet sich laut dem Beitrag ab der achten Klasse.",
+      "zh": "第二套材料关注器官捐献，按照文章介绍，适用于八年级及以上学生。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Hier sollen Jugendliche Informationen sammeln und eine eigene Entscheidung entwickeln, nicht eine vorgegebene Meinung übernehmen.",
+      "zh": "青少年应在这里搜集信息、形成自己的决定，而不是接受预先规定的意见。",
+      "glosses": [
+        {
+          "surface": "Entscheidung",
+          "lemma": "Entscheidung",
+          "zh": "决定",
+          "note": "eine Entscheidung entwickeln：逐渐形成决定。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Am Anfang steht ein Comic, in dem zwei Figuren in einer Alltagssituation über das Thema sprechen.",
+      "zh": "开头是一则漫画，两个人物在日常情境中谈论这个话题。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Danach betrachten die Lernenden gesundheitliche, emotionale, soziale und ethisch-religiöse Aspekte, statt nur eine Seite zu sehen.",
+      "zh": "之后，学习者从健康、情感、社会以及伦理宗教方面看待问题，而不是只看一个方面。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "In Teams wählen sie einen Impuls oder eine Frage aus und suchen selbstständig nach Informationen.",
+      "zh": "他们以小组为单位选择一个启发点或问题，自主查找信息。",
+      "glosses": [
+        {
+          "surface": "selbstständig",
+          "lemma": "selbstständig",
+          "zh": "自主地",
+          "note": "修饰 suchen，强调自行查找。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Ihre Ergebnisse stellen sie auf kleinen Informationskarten dar, die anschließend zu einem gemeinsamen Archiv zusammenkommen.",
+      "zh": "他们将结果呈现在小信息卡片上，之后汇集成一个共同的资料库。",
+      "glosses": [
+        {
+          "surface": "Ergebnisse",
+          "lemma": "Ergebnis",
+          "zh": "结果",
+          "note": "复数，作 stellen ... dar 的宾语。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Dieses Archiv soll bei der persönlichen Entscheidung helfen und auch Raum für Zweifel und Ängste lassen.",
+      "zh": "这个资料库应帮助个人作出决定，也为疑惑与担忧留下空间。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Zum Schluss spricht die ganze Klasse darüber, wie sie die Diskussion über ein emotionales Thema geführt hat.",
+      "zh": "最后，全班讨论自己是怎样围绕一个涉及情感的话题展开交流的。",
+      "glosses": [
+        {
+          "surface": "geführt",
+          "lemma": "führen",
+          "zh": "进行过",
+          "note": "eine Diskussion führen；这里为过去分词。"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Die Einheit umfasst insgesamt vier Schulstunden; eine Präsentation und zusätzliche Hinweise begleiten die Arbeit.",
+      "zh": "整个单元共四课时；演示文稿和补充指导辅助学习活动。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Laut dem Beitrag ist sie nicht nur für Biologie geeignet, sondern auch für Ethik, Religion oder einen Thementag.",
+      "zh": "按照文章介绍，它不仅适合生物课，也适合伦理课、宗教课或主题日。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Das beschriebene Ziel ist also eine informierte Auseinandersetzung ohne Druck, nicht eine bestimmte Antwort für alle.",
+      "zh": "因此，文中所述目标是没有压力、以信息为基础的探讨，而不是让所有人给出某个指定答案。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Druck",
+        "lemma": "Druck",
+        "zh": "压力",
+        "note": "unter Druck setzen：给……施压。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "Altersgruppen",
+        "lemma": "Altersgruppe",
+        "zh": "年龄群体",
+        "note": "复数，与 unterschiedliche 连用。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "enthält",
+        "lemma": "enthalten",
+        "zh": "包含",
+        "note": "第三人称单数现在时。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "respektvoll",
+        "lemma": "respektvoll",
+        "zh": "尊重地",
+        "note": "在 sprechen 前作方式状语。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "Entscheidung",
+        "lemma": "Entscheidung",
+        "zh": "决定",
+        "note": "eine Entscheidung entwickeln：逐渐形成决定。",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "selbstständig",
+        "lemma": "selbstständig",
+        "zh": "自主地",
+        "note": "修饰 suchen，强调自行查找。",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "Ergebnisse",
+        "lemma": "Ergebnis",
+        "zh": "结果",
+        "note": "复数，作 stellen ... dar 的宾语。",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "geführt",
+        "lemma": "führen",
+        "zh": "进行过",
+        "note": "eine Diskussion führen；这里为过去分词。",
+        "sentenceId": "s16"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "unter Druck zu setzen",
+        "zh": "施加压力；zu 不定式中 zu 位于 setzen 前",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "Raum für Zweifel und Ängste",
+        "zh": "为疑惑和担忧留下的空间；Raum für + 第四格",
+        "sentenceId": "s15"
+      },
+      {
+        "text": "nicht nur für Biologie",
+        "zh": "不仅适合生物课；与后面的 sondern auch 构成递进",
+        "sentenceId": "s18"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "sollen 表示教学目标，并不声称已经实现；nicht ... 对比要避免的做法。"
+      },
+      {
+        "sentenceId": "s16",
+        "note": "darüber, wie ... 用从句具体说明讨论内容；geführt hat 是完成时。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Was hilft dir, in einer Gruppe über ein schwieriges Thema zu sprechen?",
+        "zh": "什么能帮助你在小组中讨论困难的话题？"
+      },
+      {
+        "text": "Warum kann ein gemeinsames Informationsarchiv beim Lernen nützlich sein?",
+        "zh": "为什么共同的信息资料库可能有助于学习？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich möchte zuerst mehr darüber erfahren.",
+        "zh": "我想先多了解一些。",
+        "note": "表达形成判断前的信息需求。"
+      },
+      {
+        "text": "Wir können unterschiedliche Meinungen respektieren.",
+        "zh": "我们可以尊重不同意见。",
+        "note": "适合小组讨论。"
+      }
+    ]
+  }
+}

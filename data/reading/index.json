@@ -2,6 +2,78 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-21-it-carbonio-profondo-e-limiti",
+      "lang": "it",
+      "date": "2026-10-21",
+      "title": "Il carbonio profondo e i limiti di una spiegazione",
+      "titleZh": "深部碳释放与解释的边界",
+      "summaryZh": "Taylor Valley 的重复测量发现土壤二氧化碳通量上升；化学证据指向深部来源，却尚不能把增幅直接归因于永久冻土融化。",
+      "level": "B2",
+      "category": "environment",
+      "topics": [
+        "永久冻土",
+        "碳循环",
+        "因果与证据"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-20",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-21-it-scacchi-e-documenti",
+      "lang": "it",
+      "date": "2026-10-21",
+      "title": "Scacchi, documenti e una pausa insieme",
+      "titleZh": "下棋、看档案，一起休息",
+      "summaryZh": "科森扎档案馆把国际象棋活动与展览结合起来；特别活动已结束，游戏主题展览另有开放日期。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "国际象棋",
+        "档案展览",
+        "学校参观"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-21-fr-les-festivals-entre-public-et-fragilite",
+      "lang": "fr",
+      "date": "2026-10-21",
+      "title": "Des festivals fréquentés, mais sous pression",
+      "titleZh": "观众踊跃，节庆为何仍承压",
+      "summaryZh": "法国文化部的阶段性调查呈现一种反差：不少节庆上座率较高，却同时面对天气扰动、成本上涨和收支压力。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "节庆",
+        "气候适应",
+        "文化经济"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-16",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-21-fr-transformer-les-batiments-existants",
+      "lang": "fr",
+      "date": "2026-10-21",
+      "title": "Transformer les bâtiments sans effacer leur histoire",
+      "titleZh": "改造建筑，同时保留历史",
+      "summaryZh": "réHAB XXe第二届评选关注20世纪建筑再利用，把环境表现、使用需求和遗产保护放在同一框架内。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "建筑再利用",
+        "文化遗产",
+        "城市生活"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-16",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-20-en-octopus-and-fishing-choices",
       "lang": "en",
       "date": "2026-10-20",
@@ -104,6 +176,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-15",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-21-en-supporting-foster-families",
+      "lang": "en",
+      "date": "2026-10-21",
+      "title": "Opening homes, supporting carers",
+      "titleZh": "打开家门，也支持照护者",
+      "summaryZh": "英格兰招募寄养照护者的新宣传活动强调多种参与方式，同时支持已有照护者。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "寄养家庭",
+        "社区照护"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-14",
       "contentType": "native-adaptation"
     },
     {
@@ -278,6 +367,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-10-12",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-21-it-fotografie-delle-montagne",
+      "lang": "it",
+      "date": "2026-10-21",
+      "title": "Le montagne viste attraverso gli archivi",
+      "titleZh": "从档案中的照片看山地",
+      "summaryZh": "Archivi di Vetta 项目把不同档案中的山地照片联系起来，呈现社区与地方的关系；平台只是逐步扩展工作的第一步。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "山地社区",
+        "历史照片",
+        "数字档案"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-11",
       "contentType": "native-adaptation"
     },
     {
@@ -639,6 +746,23 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-21-en-using-nature-expertise",
+      "lang": "en",
+      "date": "2026-10-21",
+      "title": "Putting nature expertise where it is needed",
+      "titleZh": "把自然保护专业力量用在需要的地方",
+      "summaryZh": "Natural England调整规划咨询方式，在保留保护责任的同时，把专家注意力转向复杂项目。",
+      "level": "B1",
+      "category": "environment",
+      "topics": [
+        "自然保护",
+        "公共服务"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-01",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-it-strumenti-in-prestito",
       "lang": "it",
       "date": "2026-10-13",
@@ -958,6 +1082,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-21-fr-des-jardins-dans-la-ville",
+      "lang": "fr",
+      "date": "2026-10-21",
+      "title": "Des jardins dans la ville",
+      "titleZh": "城市里的花园",
+      "summaryZh": "巴黎地区的研究把花园、居民和城市自然放在一起观察：绿地不只是种蔬菜的地方。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "城市绿地",
+        "花园",
+        "人与自然"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-15",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-20-de-gemeinsam-offen-arbeiten",
       "lang": "de",
       "date": "2026-10-20",
@@ -1115,6 +1257,42 @@
       ],
       "sourceLang": "de",
       "sourcePublishedAt": "2026-09-09",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-21-de-schwierige-themen-besprechen",
+      "lang": "de",
+      "date": "2026-10-21",
+      "title": "Schwierige Themen gemeinsam besprechen",
+      "titleZh": "一起讨论难以启齿的话题",
+      "summaryZh": "西门子基金会介绍两套教学材料：不同年龄的学生怎样学习身体知识，并在尊重与自主的前提下讨论敏感问题？",
+      "level": "B1",
+      "category": "education",
+      "topics": [
+        "课堂讨论",
+        "尊重",
+        "自主学习"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-08",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-21-en-food-checks-local-and-national",
+      "lang": "en",
+      "date": "2026-10-21",
+      "title": "Food checks: local knowledge and a national view",
+      "titleZh": "食品监管：地方经验与全国视角",
+      "summaryZh": "一份FSA董事会报告比较两种大企业监管方案，讨论数据、地方专业能力与改革成本，保留提议而非已实施的状态。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "食品安全",
+        "公共服务",
+        "制度比较"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-03",
       "contentType": "native-adaptation"
     },
     {

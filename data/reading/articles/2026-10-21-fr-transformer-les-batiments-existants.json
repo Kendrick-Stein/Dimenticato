@@ -1,0 +1,254 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-fr-transformer-les-batiments-existants",
+  "storyId": "transformer-les-batiments-existants-2026-10-16",
+  "lang": "fr",
+  "date": "2026-10-21",
+  "title": "Transformer les bâtiments sans effacer leur histoire",
+  "titleZh": "改造建筑，同时保留历史",
+  "summaryZh": "réHAB XXe第二届评选关注20世纪建筑再利用，把环境表现、使用需求和遗产保护放在同一框架内。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连贯说明评选的目的、对象和申请方式；含关系从句、过去时、将来时及用途比较，建筑术语配中文解释。",
+  "category": "culture",
+  "topics": [
+    "建筑再利用",
+    "文化遗产",
+    "城市生活"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "réHAB XXe– lancement par le ministère de la culture du palmarès « REHAB XXE EDITION 2 », le palmarès des réhabilitations exemplaires d’architectures",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/rehab-xxe-lancement-par-le-ministere-de-la-culture-du-palmares-rehab-xxe-edition-2-le-palmares-des-rehabilitations-exemplaires-d-architectures",
+    "publishedAt": "2026-10-16",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 France",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：Ministère de la Culture，未单列个人作者。原文标题、发布日期和链接见来源信息。Dimenticato 制作法语分级改写、中文翻译及教学补充，不代表原机构认可。本文、中文译文及配套练习依 CC BY-SA 3.0 France 许可共享。",
+  "adaptation": "2026-10-21整理，原报道发表于2026-10-16，不是当天新闻。仅改写机构正文；不使用照片、附件、链接作品或第三方引语。保留事实的时间范围、调查样本和计划语气，口语练习属于教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Donner une nouvelle vie à un bâtiment ne consiste pas forcément à le remplacer par une construction neuve.",
+      "zh": "让一栋建筑获得新生，并不一定意味着用一栋新建筑替代它。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Le ministère français de la Culture met en avant cette idée avec la deuxième édition du palmarès réHAB XXe, annoncée le 15 octobre 2026.",
+      "zh": "法国文化部通过2026年10月15日宣布的第二届réHAB XXe评选，突出这一理念。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Son communiqué, publié le lendemain, présente un appel à candidatures pour des projets de réhabilitation.",
+      "zh": "文化部次日发布的新闻稿介绍了一项针对建筑改造项目的征集。",
+      "glosses": [
+        {
+          "surface": "lendemain",
+          "lemma": "lendemain",
+          "zh": "次日",
+          "note": "le lendemain 指前面15日的下一天，即16日。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Ce programme concerne des bâtiments construits entre 1900 et 2000 et transformés par des architectes avec leurs maîtres d’ouvrage, les responsables qui commandent les travaux.",
+      "zh": "该计划关注1900年至2000年建成、由建筑师与项目业主共同改造的建筑；项目业主是委托工程的负责人。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Il cherche à montrer que travailler sur l’existant peut être un véritable acte de création architecturale.",
+      "zh": "它希望展示：在既有建筑上开展工作，也可以是真正的建筑创作。",
+      "glosses": [
+        {
+          "surface": "existant",
+          "lemma": "existant",
+          "zh": "既有建筑（已有事物）",
+          "note": "l’existant 是名词化表达，在此指已经存在的建筑。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Les projets doivent permettre de réfléchir à plusieurs objectifs à la fois : la qualité de l’architecture, la performance environnementale, les usages et le respect du patrimoine.",
+      "zh": "这些项目应帮助人们同时思考多个目标：建筑品质、环境表现、使用需求和遗产保护。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Il ne s’agit donc pas seulement de conserver une apparence, mais aussi d’adapter les lieux à leur utilisation.",
+      "zh": "因此，这不仅仅是保留外观，也包括让场所适应使用需求。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Le ministère veut faire connaître des réalisations exemplaires dans différentes régions françaises et documenter les pratiques actuelles.",
+      "zh": "文化部希望让人们了解法国不同地区的示范性成果，并记录当前的实践。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Une première édition avait distingué dix projets en 2023 ; la nouvelle édition s’appuie sur un règlement préparé avec un comité scientifique de plusieurs disciplines.",
+      "zh": "首届评选于2023年选出了十个项目；新一届采用与跨学科科学委员会共同制定的规则。",
+      "glosses": [
+        {
+          "surface": "distingué",
+          "lemma": "distinguer",
+          "zh": "评选出；表彰",
+          "note": "avait distingué 为愈过去时，表示此前首届已经完成的评选。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Les équipes candidates sont invitées à répondre à dix questions qui accompagnent la réflexion sur la transformation des constructions existantes.",
+      "zh": "申请团队受邀回答十个问题，以此思考既有建筑的改造。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "La candidature doit être présentée ensemble par l’agence d’architecture responsable du projet et par le maître d’ouvrage.",
+      "zh": "申请必须由负责项目的建筑事务所与项目业主共同提交。",
+      "glosses": [
+        {
+          "surface": "ensemble",
+          "lemma": "ensemble",
+          "zh": "共同",
+          "note": "副词修饰 présentée，表示双方共同申请。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Une agence peut proposer jusqu’à trois projets, à condition qu’ils se trouvent dans trois régions différentes.",
+      "zh": "一家事务所最多可提交三个项目，条件是它们分布在三个不同地区。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Chaque projet nécessite néanmoins son propre dossier, et les documents doivent être rédigés en français.",
+      "zh": "不过，每个项目都需要独立的申请材料，文件必须用法语撰写。",
+      "glosses": [
+        {
+          "surface": "dossier",
+          "lemma": "dossier",
+          "zh": "申请材料",
+          "note": "son propre dossier 为单数，每个项目各自一份。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Le communiqué fixe au 30 novembre 2026, à 23 h 59, la date limite de la candidature simplifiée en ligne.",
+      "zh": "新闻稿将线上简化申请的截止时间定为2026年11月30日23时59分。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Les résultats sont attendus au second semestre de 2027, et les projets retenus doivent former un ensemble d’exemples pour d’autres équipes.",
+      "zh": "结果预计于2027年下半年公布，入选项目将组成一批可供其他团队参考的案例。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "lendemain",
+        "lemma": "lendemain",
+        "zh": "次日",
+        "sentenceId": "s3",
+        "note": "le lendemain 指前面15日的下一天，即16日。"
+      },
+      {
+        "text": "existant",
+        "lemma": "existant",
+        "zh": "既有建筑（已有事物）",
+        "sentenceId": "s5",
+        "note": "l’existant 是名词化表达，在此指已经存在的建筑。"
+      },
+      {
+        "text": "distingué",
+        "lemma": "distinguer",
+        "zh": "评选出；表彰",
+        "sentenceId": "s9",
+        "note": "avait distingué 为愈过去时，表示此前首届已经完成的评选。"
+      },
+      {
+        "text": "ensemble",
+        "lemma": "ensemble",
+        "zh": "共同",
+        "sentenceId": "s11",
+        "note": "副词修饰 présentée，表示双方共同申请。"
+      },
+      {
+        "text": "dossier",
+        "lemma": "dossier",
+        "zh": "申请材料",
+        "sentenceId": "s13",
+        "note": "son propre dossier 为单数，每个项目各自一份。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "travailler sur l’existant",
+        "zh": "在既有建筑基础上开展工作",
+        "sentenceId": "s5",
+        "note": "sur 表示工作的对象，不是地理位置。"
+      },
+      {
+        "text": "à condition qu’ils",
+        "zh": "条件是它们",
+        "sentenceId": "s12",
+        "note": "引出条件，后面的 se trouvent 形式与直陈式相同，但这里属于虚拟式。"
+      },
+      {
+        "text": "son propre dossier",
+        "zh": "它自己独立的一份申请材料",
+        "sentenceId": "s13",
+        "note": "propre 放在名词前，强调归属。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s7",
+        "note": "ne…pas seulement…mais aussi… 将保护外观与适应用途并列。"
+      },
+      {
+        "sentenceId": "s12",
+        "note": "jusqu’à 表示上限，不表示必须提交三个项目。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Dans votre ville, quel bâtiment pourrait avoir un nouvel usage ?",
+        "zh": "你所在城市的哪栋建筑可以拥有新的用途？"
+      },
+      {
+        "text": "Comment garder l’histoire d’un lieu tout en répondant à de nouveaux besoins ?",
+        "zh": "如何在回应新需求的同时保留一个场所的历史？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "travailler sur l’existant",
+        "zh": "在既有建筑基础上开展工作",
+        "sentenceId": "s5",
+        "note": "sur 表示工作的对象，不是地理位置。"
+      },
+      {
+        "text": "à condition qu’ils",
+        "zh": "条件是它们",
+        "sentenceId": "s12",
+        "note": "引出条件，后面的 se trouvent 形式与直陈式相同，但这里属于虚拟式。"
+      }
+    ]
+  }
+}

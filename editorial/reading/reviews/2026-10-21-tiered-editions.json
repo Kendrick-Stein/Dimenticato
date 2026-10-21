@@ -1,0 +1,1764 @@
+{
+  "editionDate": "2026-10-21",
+  "baseCommit": "d198fc1315e18d783215ae0629a0ae3367373386",
+  "qualityStatus": "PASS",
+  "scope": "10 independent readings; IT/FR/EN A2/B1/B2, DE B1;50 cloze and40 comprehension questions",
+  "historicalFilesUnchanged": 177,
+  "wordCountMethod": "Foreign-body whitespace tokens containing Unicode letters/numbers; editorial levels, not certification.",
+  "missingSlots": [
+    {
+      "lang": "de",
+      "level": "A2",
+      "reason": "Current full original Halloween article unavailable (404/503); cached discovery alone not enough."
+    },
+    {
+      "lang": "de",
+      "level": "B2",
+      "reason": "No suitable distinct recent registered full-length source cleared; no padding or reused stories."
+    }
+  ],
+  "blindProtocol": "Each reading exercise solved and recorded before its keyed file, author script or source review was opened. All final keys then compared with prior independent answers. No build.py files read.",
+  "resolvedFindings": [
+    "German B1 q4 and Italian B1 q4 reclassified from inference to detail.",
+    "Italian B1 q1 now includes s12 and its explanation names s12, strengthening explicit community-memory evidence.",
+    "French B1 phrase surface now includes elision matching s12; body and questions unchanged.",
+    "English B1 s15 adds more clearly; meaning and answer support unchanged."
+  ],
+  "articles": [
+    {
+      "articleId": "2026-10-21-it-carbonio-profondo-e-limiti",
+      "language": "it",
+      "level": "B2",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 518,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s4",
+            "s5",
+            "s7",
+            "s11",
+            "s12",
+            "s13"
+          ],
+          "independentSupportingSentenceIds": [
+            "s4",
+            "s5",
+            "s7",
+            "s11",
+            "s12",
+            "s13",
+            "s14"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s4",
+            "s5"
+          ],
+          "independentSupportingSentenceIds": [
+            "s4",
+            "s5"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 3,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s12",
+            "s13"
+          ],
+          "independentSupportingSentenceIds": [
+            "s12",
+            "s13"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q4",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s6",
+            "s7",
+            "s10",
+            "s12",
+            "s13"
+          ],
+          "independentSupportingSentenceIds": [
+            "s12",
+            "s13",
+            "s14"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q5",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s15",
+            "s16",
+            "s18"
+          ],
+          "independentSupportingSentenceIds": [
+            "s15",
+            "s16",
+            "s18"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s4",
+          "answer": "flusso",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s6",
+          "answer": "origine",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s11",
+          "answer": "percorso",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s13",
+          "answer": "sistematicamente",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s16",
+          "answer": "persistenza",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass",
+        "notes": "Institutional text-only scope, attribution, adaptation identification, source URL/date and stated license align with inspected official terms or explicit source-page license. Images, logos, third-party quotations and linked works excluded."
+      },
+      "issues": []
+    },
+    {
+      "articleId": "2026-10-21-it-fotografie-delle-montagne",
+      "language": "it",
+      "level": "B1",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 282,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s6",
+            "s9",
+            "s10",
+            "s11",
+            "s12"
+          ],
+          "independentSupportingSentenceIds": [
+            "s6",
+            "s9",
+            "s10",
+            "s12"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 3,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s5"
+          ],
+          "independentSupportingSentenceIds": [
+            "s5"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s6",
+            "s7",
+            "s8"
+          ],
+          "independentSupportingSentenceIds": [
+            "s6"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q4",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s9",
+            "s11"
+          ],
+          "independentSupportingSentenceIds": [
+            "s9",
+            "s11"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s4",
+          "answer": "sostegno",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s5",
+          "answer": "amatoriali",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s9",
+          "answer": "selezione",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s10",
+          "answer": "accessibili",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s11",
+          "answer": "ampliarsi",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass-with-provenance-caveat",
+        "notes": "DGA CC BY 3.0 license clearance corroborated by coordinator; I independently reviewed factual bodies, but did not independently retrieve the DGA legal-page text."
+      },
+      "issues": []
+    },
+    {
+      "articleId": "2026-10-21-it-scacchi-e-documenti",
+      "language": "it",
+      "level": "A2",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 160,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s2",
+            "s3"
+          ],
+          "independentSupportingSentenceIds": [
+            "s2",
+            "s3"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s8"
+          ],
+          "independentSupportingSentenceIds": [
+            "s8"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s9"
+          ],
+          "independentSupportingSentenceIds": [
+            "s9"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s2",
+          "answer": "mostre",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s3",
+          "answer": "premi",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s4",
+          "answer": "pausa",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s6",
+          "answer": "vietati",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s9",
+          "answer": "gratuite",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass-with-provenance-caveat",
+        "notes": "DGA CC BY 3.0 license clearance corroborated by coordinator; I independently reviewed factual bodies, but did not independently retrieve the DGA legal-page text."
+      },
+      "issues": []
+    },
+    {
+      "articleId": "2026-10-21-fr-des-jardins-dans-la-ville",
+      "language": "fr",
+      "level": "A2",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 181,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s3",
+            "s7",
+            "s10",
+            "s11"
+          ],
+          "independentSupportingSentenceIds": [
+            "s1",
+            "s3",
+            "s7",
+            "s8",
+            "s9",
+            "s10",
+            "s11"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s5",
+            "s6"
+          ],
+          "independentSupportingSentenceIds": [
+            "s5",
+            "s6"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 3,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s9",
+            "s10"
+          ],
+          "independentSupportingSentenceIds": [
+            "s10"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s1",
+          "answer": "jardins",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s4",
+          "answer": "chercheurs",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s5",
+          "answer": "nourriture",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s7",
+          "answer": "habitants",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s9",
+          "answer": "ensemble",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass",
+        "notes": "Institutional text-only scope, attribution, adaptation identification, source URL/date and stated license align with inspected official terms or explicit source-page license. Images, logos, third-party quotations and linked works excluded."
+      },
+      "issues": []
+    },
+    {
+      "articleId": "2026-10-21-fr-les-festivals-entre-public-et-fragilite",
+      "language": "fr",
+      "level": "B2",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 551,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s5",
+            "s12",
+            "s14",
+            "s16",
+            "s18",
+            "s19"
+          ],
+          "independentSupportingSentenceIds": [
+            "s1",
+            "s5",
+            "s12",
+            "s13",
+            "s16",
+            "s18",
+            "s19"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 3,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s2",
+            "s3"
+          ],
+          "independentSupportingSentenceIds": [
+            "s3"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s12",
+            "s13",
+            "s14",
+            "s16",
+            "s17",
+            "s18"
+          ],
+          "independentSupportingSentenceIds": [
+            "s12",
+            "s13",
+            "s17",
+            "s18"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q4",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s14",
+            "s15"
+          ],
+          "independentSupportingSentenceIds": [
+            "s14",
+            "s15"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q5",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s2",
+            "s4",
+            "s10",
+            "s15"
+          ],
+          "independentSupportingSentenceIds": [
+            "s2",
+            "s4"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s3",
+          "answer": "répondants",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s7",
+          "answer": "aménagé",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s12",
+          "answer": "dépenses",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s13",
+          "answer": "subventions",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s14",
+          "answer": "anticipent",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass",
+        "notes": "Institutional text-only scope, attribution, adaptation identification, source URL/date and stated license align with inspected official terms or explicit source-page license. Images, logos, third-party quotations and linked works excluded."
+      },
+      "issues": []
+    },
+    {
+      "articleId": "2026-10-21-fr-transformer-les-batiments-existants",
+      "language": "fr",
+      "level": "B1",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 294,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s5",
+            "s6",
+            "s7",
+            "s15"
+          ],
+          "independentSupportingSentenceIds": [
+            "s5",
+            "s6",
+            "s7",
+            "s8"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s11",
+            "s12",
+            "s13"
+          ],
+          "independentSupportingSentenceIds": [
+            "s12",
+            "s13"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s9"
+          ],
+          "independentSupportingSentenceIds": [
+            "s9"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q4",
+          "independentAnswerIndex": 3,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s14",
+            "s15"
+          ],
+          "independentSupportingSentenceIds": [
+            "s14",
+            "s15"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s3",
+          "answer": "lendemain",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s5",
+          "answer": "existant",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s9",
+          "answer": "distingué",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s11",
+          "answer": "ensemble",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s13",
+          "answer": "dossier",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass",
+        "notes": "Institutional text-only scope, attribution, adaptation identification, source URL/date and stated license align with inspected official terms or explicit source-page license. Images, logos, third-party quotations and linked works excluded."
+      },
+      "issues": []
+    },
+    {
+      "articleId": "2026-10-21-de-schwierige-themen-besprechen",
+      "language": "de",
+      "level": "B1",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 289,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s4",
+            "s5",
+            "s8",
+            "s9",
+            "s10"
+          ],
+          "independentSupportingSentenceIds": [
+            "s1",
+            "s4",
+            "s5",
+            "s8",
+            "s9",
+            "s10"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s11",
+            "s13",
+            "s14"
+          ],
+          "independentSupportingSentenceIds": [
+            "s11"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s13",
+            "s14"
+          ],
+          "independentSupportingSentenceIds": [
+            "s13",
+            "s14"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q4",
+          "independentAnswerIndex": 3,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s16",
+            "s19"
+          ],
+          "independentSupportingSentenceIds": [
+            "s16"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s2",
+          "answer": "Druck",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s4",
+          "answer": "Altersgruppen",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s6",
+          "answer": "enthält",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s13",
+          "answer": "selbstständig",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s16",
+          "answer": "geführt",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass",
+        "notes": "Institutional text-only scope, attribution, adaptation identification, source URL/date and stated license align with inspected official terms or explicit source-page license. Images, logos, third-party quotations and linked works excluded."
+      },
+      "issues": []
+    },
+    {
+      "articleId": "2026-10-21-en-food-checks-local-and-national",
+      "language": "en",
+      "level": "B2",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 500,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s2",
+            "s8",
+            "s10",
+            "s14",
+            "s19"
+          ],
+          "independentSupportingSentenceIds": [
+            "s2",
+            "s10",
+            "s12",
+            "s13",
+            "s14",
+            "s17",
+            "s18"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s5",
+            "s6",
+            "s7"
+          ],
+          "independentSupportingSentenceIds": [
+            "s4",
+            "s6",
+            "s7"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s11",
+            "s12",
+            "s13"
+          ],
+          "independentSupportingSentenceIds": [
+            "s11",
+            "s12",
+            "s13"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q4",
+          "independentAnswerIndex": 3,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s17",
+            "s18"
+          ],
+          "independentSupportingSentenceIds": [
+            "s17"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q5",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s9",
+            "s15",
+            "s16",
+            "s20",
+            "s21",
+            "s22"
+          ],
+          "independentSupportingSentenceIds": [
+            "s8",
+            "s16",
+            "s21",
+            "s22"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s4",
+          "answer": "tension",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s7",
+          "answer": "reveal",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s9",
+          "answer": "outcomes",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s16",
+          "answer": "staffing",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s21",
+          "answer": "consultation",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record.",
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass",
+        "notes": "Institutional text-only scope, attribution, adaptation identification, source URL/date and stated license align with inspected official terms or explicit source-page license. Images, logos, third-party quotations and linked works excluded."
+      },
+      "issues": []
+    },
+    {
+      "articleId": "2026-10-21-en-supporting-foster-families",
+      "language": "en",
+      "level": "A2",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 164,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s3",
+            "s8",
+            "s9",
+            "s10"
+          ],
+          "independentSupportingSentenceIds": [
+            "s3",
+            "s10"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s8"
+          ],
+          "independentSupportingSentenceIds": [
+            "s8"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s6",
+            "s7"
+          ],
+          "independentSupportingSentenceIds": [
+            "s6",
+            "s7"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s1",
+          "answer": "supportive",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s2",
+          "answer": "carer",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s3",
+          "answer": "campaign",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s6",
+          "answer": "places",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s8",
+          "answer": "flexible",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass",
+        "notes": "Institutional text-only scope, attribution, adaptation identification, source URL/date and stated license align with inspected official terms or explicit source-page license. Images, logos, third-party quotations and linked works excluded."
+      },
+      "issues": []
+    },
+    {
+      "articleId": "2026-10-21-en-using-nature-expertise",
+      "language": "en",
+      "level": "B1",
+      "status": "pass",
+      "bodyWhitespaceWordCount": 280,
+      "finalBlindBundleArticleAndQuestionMatch": true,
+      "chineseTranslationReview": "All sentences read; meaning, numeric scope, dates, uncertainty and future/past distinctions preserved.",
+      "comprehension": [
+        {
+          "id": "q1",
+          "independentAnswerIndex": 2,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s2",
+            "s5",
+            "s6",
+            "s8"
+          ],
+          "independentSupportingSentenceIds": [
+            "s4",
+            "s5",
+            "s6"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q2",
+          "independentAnswerIndex": 0,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s2",
+            "s4",
+            "s5"
+          ],
+          "independentSupportingSentenceIds": [
+            "s2",
+            "s5",
+            "s9"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q3",
+          "independentAnswerIndex": 3,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s10",
+            "s11"
+          ],
+          "independentSupportingSentenceIds": [
+            "s10",
+            "s11"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        },
+        {
+          "id": "q4",
+          "independentAnswerIndex": 1,
+          "keyMatch": true,
+          "keyedEvidence": [
+            "s13",
+            "s14",
+            "s15"
+          ],
+          "independentSupportingSentenceIds": [
+            "s13",
+            "s14",
+            "s15"
+          ],
+          "evidenceAndExplanationReview": "pass",
+          "uniqueAnswer": true
+        }
+      ],
+      "practice": [
+        {
+          "id": "q1",
+          "sentenceId": "s1",
+          "answer": "specialist",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q2",
+          "sentenceId": "s5",
+          "answer": "repeatedly",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q3",
+          "sentenceId": "s8",
+          "answer": "routine",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q4",
+          "sentenceId": "s11",
+          "answer": "habitats",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        },
+        {
+          "id": "q5",
+          "sentenceId": "s13",
+          "answer": "gradually",
+          "offsetMatch": true,
+          "oneCorrectOption": true,
+          "morphologyChineseAndDistractorReview": "pass; Chinese prompt disambiguates context-restoration choices"
+        }
+      ],
+      "sourceFactsReview": {
+        "status": "pass",
+        "evidencePaths": [
+          "Preserved official-source retrieval evidence inspected; source URL and licence listed in source record."
+        ],
+        "method": "Compared adaptation against preserved official-source body or full official-source tool response; author audit not accepted alone as factual evidence."
+      },
+      "rightsReview": {
+        "status": "pass",
+        "notes": "Institutional text-only scope, attribution, adaptation identification, source URL/date and stated license align with inspected official terms or explicit source-page license. Images, logos, third-party quotations and linked works excluded."
+      },
+      "issues": []
+    }
+  ],
+  "sources": [
+    {
+      "articleId": "2026-10-21-it-scacchi-e-documenti",
+      "source": {
+        "name": "Ministero della Cultura — Direzione generale Archivi",
+        "title": "Cosenza | Apertura straordinaria | \"Scacco matto\": una giornata tra archivi e scacchi",
+        "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=6d6787588b16873c0ed5247d7262c4b7&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2789",
+        "publishedAt": "2026-10-18",
+        "lang": "it"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "evidence": "Article footer Note legali links beniculturali.it then redirects to ministry legal notice: default CC BY3 and explicit freedom to reproduce/distribute/adapt; third-party material excluded.",
+        "evidenceUrls": [
+          "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=6d6787588b16873c0ed5247d7262c4b7&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2789",
+          "https://cultura.gov.it/note-legali",
+          "https://creativecommons.org/licenses/by/3.0/"
+        ],
+        "scope": "Institutional original narrative adapted in Italian, Chinese translation and teaching additions, attributed with modifications; no direct quotes.",
+        "exclusions": [
+          "Images, logos, video, attachments and third-party works",
+          "Linked research paper text and direct interview quotations"
+        ],
+        "attributionRequirements": [
+          "Credit institutional author, original title/date and URL",
+          "Link licence; disclose adaptation and translation",
+          "No endorsement claim"
+        ],
+        "basis": "article-linked explicit Creative Commons licence allowing adaptation",
+        "reviewBeforeConversionRequired": true
+      }
+    },
+    {
+      "articleId": "2026-10-21-it-fotografie-delle-montagne",
+      "source": {
+        "name": "Ministero della Cultura — Direzione generale Archivi",
+        "title": "SAB Veneto e Trentino-Alto Adige | “Archivi di Vetta”: online il patrimonio fotografico della montagna",
+        "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=fbde1a3ad05149dd7f0a8f9652b3163c&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2794",
+        "publishedAt": "2026-10-11",
+        "lang": "it"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "evidence": "Article footer Note legali links beniculturali.it then redirects to ministry legal notice: default CC BY3 and explicit freedom to reproduce/distribute/adapt; third-party material excluded.",
+        "evidenceUrls": [
+          "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=fbde1a3ad05149dd7f0a8f9652b3163c&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2794",
+          "https://cultura.gov.it/note-legali",
+          "https://creativecommons.org/licenses/by/3.0/"
+        ],
+        "scope": "Institutional original narrative adapted in Italian, Chinese translation and teaching additions, attributed with modifications; no direct quotes.",
+        "exclusions": [
+          "Images, logos, video, attachments and third-party works",
+          "Linked research paper text and direct interview quotations"
+        ],
+        "attributionRequirements": [
+          "Credit institutional author, original title/date and URL",
+          "Link licence; disclose adaptation and translation",
+          "No endorsement claim"
+        ],
+        "basis": "article-linked explicit Creative Commons licence allowing adaptation",
+        "reviewBeforeConversionRequired": true
+      }
+    },
+    {
+      "articleId": "2026-10-21-it-carbonio-profondo-e-limiti",
+      "source": {
+        "name": "INGV Ufficio Stampa",
+        "title": "ANTARTIDE | Dal permafrost emerge carbonio geologico profondo: nella Taylor Valley le emissioni di anidride carbonica sono aumentate di oltre cinque volte",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/antartide-dal-permafrost-emerge-carbonio-geologico-profondo-nella-taylor-valley-le-emissioni-di-anidride-carbonica-sono-aumentate-di-oltre-cinque-volte",
+        "publishedAt": "2026-10-20",
+        "lang": "it"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence": "INGV article footer explicitly licenses INGV published content CC BY4; legal page footer repeats it.",
+        "evidenceUrls": [
+          "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/antartide-dal-permafrost-emerge-carbonio-geologico-profondo-nella-taylor-valley-le-emissioni-di-anidride-carbonica-sono-aumentate-di-oltre-cinque-volte",
+          "https://www.ingv.it/note-legali",
+          "https://creativecommons.org/licenses/by/4.0/"
+        ],
+        "scope": "Institutional original narrative adapted in Italian, Chinese translation and teaching additions, attributed with modifications; no direct quotes.",
+        "exclusions": [
+          "Images, logos, video, attachments and third-party works",
+          "Linked research paper text and direct interview quotations"
+        ],
+        "attributionRequirements": [
+          "Credit institutional author, original title/date and URL",
+          "Link licence; disclose adaptation and translation",
+          "No endorsement claim"
+        ],
+        "basis": "article-linked explicit Creative Commons licence allowing adaptation",
+        "reviewBeforeConversionRequired": true
+      }
+    },
+    {
+      "articleId": "2026-10-21-fr-des-jardins-dans-la-ville",
+      "source": {
+        "name": "INRAE",
+        "title": "Paris, métropole verte ? Des jardins et des espaces cultivés, vecteurs de biodiversité",
+        "url": "https://www.inrae.fr/actualites/paris-metropole-verte-jardins-espaces-cultives-vecteurs-biodiversite",
+        "publishedAt": "2026-09-15",
+        "lang": "fr"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "Licence Ouverte / Open Licence Etalab 2.0",
+        "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "basis": "official-public-text-license-plus-article-exceptions-review",
+        "evidenceUrls": [
+          "https://www.inrae.fr/actualites/paris-metropole-verte-jardins-espaces-cultives-vecteurs-biodiversite",
+          "https://www.inrae.fr/conditions-generales-dutilisation",
+          "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+        ],
+        "evidence": "INRAE current CGU PROPRIETE INTELLECTUELLE licenses public institutional contents under Etalab2.0 unless marked exception. Complete selected article has no contradictory text-rights or syndication/translation credit. Etalab2.0 expressly permits adaptation and redistribution, source/date attribution and no implied endorsement.",
+        "scope": "Institutional French narrative only; exclude third-party/direct quotations and linked works. Same-language adaptation, Chinese translation and original teaching supplements.",
+        "exclusions": [
+          "All images, logos, media and captions",
+          "Linked books, papers, attachments and other sites",
+          "Direct quotations or third-party material without separate clearance"
+        ],
+        "attributionRequirements": [
+          "Credit original institution, author if named, original title/date/URL",
+          "Link license and mark adaptation, translation and teaching additions; no endorsement"
+        ],
+        "reviewBeforeConversionRequired": true,
+        "shareAlikeRequired": false
+      }
+    },
+    {
+      "articleId": "2026-10-21-fr-les-festivals-entre-public-et-fragilite",
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Baromètre des festivals 2026 : face aux défis climatiques et économiques, le ministère de la Culture accompagne les festivals dans leur adaptation",
+        "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/barometre-des-festivals-2026-face-aux-defis-climatiques-et-economiques-le-ministere-de-la-culture-accompagne-les-festivals-dans-leur-adaptation",
+        "publishedAt": "2026-10-16",
+        "lang": "fr"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY-SA 3.0 France",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "basis": "official-public-text-license-plus-article-exceptions-review",
+        "evidenceUrls": [
+          "https://www.culture.gouv.fr/presse/communiques-de-presse/barometre-des-festivals-2026-face-aux-defis-climatiques-et-economiques-le-ministere-de-la-culture-accompagne-les-festivals-dans-leur-adaptation",
+          "https://www.culture.gouv.fr/mentions-legales",
+          "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+        ],
+        "evidence": "Ministry legal notice 4.3.1(a) expressly licenses ministry-produced text CC BY-SA3.0FR; 4.3.2 excludes partner contents. These are ministry-authored press releases with no separate third-party text credit. CC deed permits adaptation and redistribution with attribution, change notice and ShareAlike. Official French text only.",
+        "scope": "Institutional French narrative only; exclude third-party/direct quotations and linked works. Same-language adaptation, Chinese translation and original teaching supplements.",
+        "exclusions": [
+          "All images, logos, media and captions",
+          "Linked books, papers, attachments and other sites",
+          "Direct quotations or third-party material without separate clearance"
+        ],
+        "attributionRequirements": [
+          "Credit original institution, author if named, original title/date/URL",
+          "Link license and mark adaptation, translation and teaching additions; no endorsement",
+          "Release article and companion adaptations under CC BY-SA3.0FR"
+        ],
+        "reviewBeforeConversionRequired": true,
+        "shareAlikeRequired": true
+      }
+    },
+    {
+      "articleId": "2026-10-21-fr-transformer-les-batiments-existants",
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "réHAB XXe– lancement par le ministère de la culture du palmarès « REHAB XXE EDITION 2 », le palmarès des réhabilitations exemplaires d’architectures",
+        "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/rehab-xxe-lancement-par-le-ministere-de-la-culture-du-palmares-rehab-xxe-edition-2-le-palmares-des-rehabilitations-exemplaires-d-architectures",
+        "publishedAt": "2026-10-16",
+        "lang": "fr"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY-SA 3.0 France",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+        "basis": "official-public-text-license-plus-article-exceptions-review",
+        "evidenceUrls": [
+          "https://www.culture.gouv.fr/presse/communiques-de-presse/rehab-xxe-lancement-par-le-ministere-de-la-culture-du-palmares-rehab-xxe-edition-2-le-palmares-des-rehabilitations-exemplaires-d-architectures",
+          "https://www.culture.gouv.fr/mentions-legales",
+          "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+        ],
+        "evidence": "Ministry legal notice 4.3.1(a) expressly licenses ministry-produced text CC BY-SA3.0FR; 4.3.2 excludes partner contents. These are ministry-authored press releases with no separate third-party text credit. CC deed permits adaptation and redistribution with attribution, change notice and ShareAlike. Official French text only.",
+        "scope": "Institutional French narrative only; exclude third-party/direct quotations and linked works. Same-language adaptation, Chinese translation and original teaching supplements.",
+        "exclusions": [
+          "All images, logos, media and captions",
+          "Linked books, papers, attachments and other sites",
+          "Direct quotations or third-party material without separate clearance"
+        ],
+        "attributionRequirements": [
+          "Credit original institution, author if named, original title/date/URL",
+          "Link license and mark adaptation, translation and teaching additions; no endorsement",
+          "Release article and companion adaptations under CC BY-SA3.0FR"
+        ],
+        "reviewBeforeConversionRequired": true,
+        "shareAlikeRequired": true
+      }
+    },
+    {
+      "articleId": "2026-10-21-en-supporting-foster-families",
+      "source": {
+        "name": "Department for Education / GOV.UK",
+        "title": "National call to recruit more foster carers launched at Number 10",
+        "url": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
+        "publishedAt": "2026-10-14",
+        "lang": "en",
+        "author": "Department for Education and Josh MacAlister OBE MP"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "Open Government Licence v3.0",
+        "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "evidence": "本篇OGL v3.0明确声明与GOV.UK Using GOV.UK content条款（第91–98行）已重读；B2正文起首明确版权©Crown2026和OGL覆盖。排除具名/第三方引语、图片、标志和外部作品。",
+        "evidenceUrls": [
+          "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
+          "https://www.gov.uk/help/terms-conditions"
+        ],
+        "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+        "exclusions": [
+          "照片、图片、标志、视频",
+          "第三方直接引语、外部文献及链接作品"
+        ],
+        "attributionRequirements": [
+          "机构与Crown copyright署名",
+          "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+        ],
+        "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+        "licenseRetrievalNote": "2026-10-21直接访问National Archives规范许可页返回403；未绕过或重试；没有声称本次读到该目标页。具体文章明示OGL及GOV.UK官方再用条款已核实。",
+        "reviewBeforeConversionRequired": true
+      }
+    },
+    {
+      "articleId": "2026-10-21-en-food-checks-local-and-national",
+      "source": {
+        "name": "Food Standards Agency / GOV.UK",
+        "title": "Future of Food Regulation report to the FSA Board: September 2026",
+        "url": "https://www.gov.uk/government/publications/food-standards-agency-september-2026-board-meeting/future-of-food-regulation-report-to-the-fsa-board-september-2026",
+        "publishedAt": "2026-09-03",
+        "lang": "en",
+        "author": "Emily Antcliffe / Food Standards Agency"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "Open Government Licence v3.0",
+        "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "evidence": "本篇OGL v3.0明确声明与GOV.UK Using GOV.UK content条款（第91–98行）已重读；B2正文起首明确版权©Crown2026和OGL覆盖。排除具名/第三方引语、图片、标志和外部作品。",
+        "evidenceUrls": [
+          "https://www.gov.uk/government/publications/food-standards-agency-september-2026-board-meeting/future-of-food-regulation-report-to-the-fsa-board-september-2026",
+          "https://www.gov.uk/help/terms-conditions"
+        ],
+        "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+        "exclusions": [
+          "照片、图片、标志、视频",
+          "第三方直接引语、外部文献及链接作品"
+        ],
+        "attributionRequirements": [
+          "机构与Crown copyright署名",
+          "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+        ],
+        "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+        "licenseRetrievalNote": "2026-10-21直接访问National Archives规范许可页返回403；未绕过或重试；没有声称本次读到该目标页。具体文章明示OGL及GOV.UK官方再用条款已核实。",
+        "reviewBeforeConversionRequired": true
+      }
+    },
+    {
+      "articleId": "2026-10-21-en-using-nature-expertise",
+      "source": {
+        "name": "Natural England / GOV.UK",
+        "title": "New streamlined planning role for Natural England takes effect",
+        "url": "https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect",
+        "publishedAt": "2026-10-01",
+        "lang": "en",
+        "author": "Natural England"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "Open Government Licence v3.0",
+        "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "evidence": "本篇OGL v3.0明确声明与GOV.UK Using GOV.UK content条款（第91–98行）已重读；B2正文起首明确版权©Crown2026和OGL覆盖。排除具名/第三方引语、图片、标志和外部作品。",
+        "evidenceUrls": [
+          "https://www.gov.uk/government/news/new-streamlined-planning-role-for-natural-england-takes-effect",
+          "https://www.gov.uk/help/terms-conditions"
+        ],
+        "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+        "exclusions": [
+          "照片、图片、标志、视频",
+          "第三方直接引语、外部文献及链接作品"
+        ],
+        "attributionRequirements": [
+          "机构与Crown copyright署名",
+          "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+        ],
+        "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
+        "licenseRetrievalNote": "2026-10-21直接访问National Archives规范许可页返回403；未绕过或重试；没有声称本次读到该目标页。具体文章明示OGL及GOV.UK官方再用条款已核实。",
+        "reviewBeforeConversionRequired": true
+      }
+    },
+    {
+      "articleId": "2026-10-21-de-schwierige-themen-besprechen",
+      "source": {
+        "name": "OERinfo – Die Informationsstelle OER",
+        "title": "Freie Bildungsmaterialien zu Pubertät und Organspende der Siemens Stiftung",
+        "url": "https://open-educational-resources.de/freie-bildungsmaterialien-zu-pubertaet-und-organspende-der-siemens-stiftung/",
+        "publishedAt": "2026-09-08",
+        "lang": "de"
+      },
+      "rights": {
+        "verified": true,
+        "adaptationAllowed": true,
+        "publicRedistributionAllowed": true,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "basis": "explicit article text licence",
+        "evidenceUrls": [
+          "https://open-educational-resources.de/freie-bildungsmaterialien-zu-pubertaet-und-organspende-der-siemens-stiftung/",
+          "https://creativecommons.org/licenses/by/4.0/"
+        ],
+        "evidence": "Article line99 states Dieser Text steht unter der CC BY4.0-Lizenz and names Siemens Stiftung für OERinfo. CC deed inspected today confirms sharing/adapting with attribution/change notices.",
+        "scope": "Article prose only; educational German adaptation/Chinese translation and original companion exercises.",
+        "exclusions": [
+          "Images and graphics (separate BY-SA credits), logos",
+          "Linked Siemens course PDFs, comics, exercises and media",
+          "Comments and external third-party sources"
+        ],
+        "attributionRequirements": [
+          "Credit Siemens Stiftung für OERinfo",
+          "Link original and CC BY4.0",
+          "Retain source date and disclose changes/Chinese teaching",
+          "No source endorsement"
+        ],
+        "reviewBeforeConversionRequired": true
+      }
+    }
+  ],
+  "fileHashes": {
+    "data/reading/articles/2026-10-21-it-carbonio-profondo-e-limiti.json": "11d9f80d3f3151f7a888335314cc7a1ad1deb20657b40477bc7e62827a9e9bd8",
+    "data/reading/comprehension/2026-10-21-it-carbonio-profondo-e-limiti.json": "b6dcb19af7d17b36298e3d34591d38598f4a698b511af0104986229d3fee1124",
+    "data/reading/practice/2026-10-21-it-carbonio-profondo-e-limiti.json": "cb8ad61c9e3abe196b9fd1dd0130eb60363b08f967b0002877642ebc31dfafdf",
+    "data/reading/articles/2026-10-21-it-fotografie-delle-montagne.json": "8599aa069eaf89d9cd7301d56410438f9ebbcd64042d2d168eb27ec6a3c054da",
+    "data/reading/comprehension/2026-10-21-it-fotografie-delle-montagne.json": "50d9dae407a3b6ad1d7c8ed3054aa4fb12dc6101c164faeb71f2a2d5df1a4a4d",
+    "data/reading/practice/2026-10-21-it-fotografie-delle-montagne.json": "53051623b707a68cb43561d3f1ef1deb20757d0cc23996f6a075701704e8579e",
+    "data/reading/articles/2026-10-21-it-scacchi-e-documenti.json": "edb493118bdaa6e512a8a6a46ebf89979f6f681060d09705d4d0f96d2f2bc5e6",
+    "data/reading/comprehension/2026-10-21-it-scacchi-e-documenti.json": "c1fb31a60a4d95ca3bb7306af49ebbe5450a558e2b058d9420892041640bb210",
+    "data/reading/practice/2026-10-21-it-scacchi-e-documenti.json": "4b43a345c2e256cfd0c7ee9a947c418990f534d4d69df287f6ec8742488a9bd1",
+    "data/reading/articles/2026-10-21-fr-des-jardins-dans-la-ville.json": "9780a3a4d2ffed2fac9fa1bed3748794f9dca7d17696ad500b51e39a13b104f2",
+    "data/reading/comprehension/2026-10-21-fr-des-jardins-dans-la-ville.json": "9d51ff8eee757871a84f9a040a07580ab13d588f2ee5a3613ef1fdd30b7ef940",
+    "data/reading/practice/2026-10-21-fr-des-jardins-dans-la-ville.json": "4c395c8180976abd1178105fdea828e3003acd285318a40f0ef485b89eb7dde9",
+    "data/reading/articles/2026-10-21-fr-les-festivals-entre-public-et-fragilite.json": "e6c5ec00ce238598b0257b138a88cac10e7e18a81f1e7be5bc255ec794fe07c0",
+    "data/reading/comprehension/2026-10-21-fr-les-festivals-entre-public-et-fragilite.json": "1c7ec93d5a801314e613dd177216ff42db2d4455efde1068266ca9277292ca32",
+    "data/reading/practice/2026-10-21-fr-les-festivals-entre-public-et-fragilite.json": "d4f60707b2c0771d113b55bf19e3bdf984c989ed7ed260bdb65c0a154cd72e16",
+    "data/reading/articles/2026-10-21-fr-transformer-les-batiments-existants.json": "880102413fcffcc907bccaaa00e8d6fdd2d9084ce4a76417e29cf508f94ddd92",
+    "data/reading/comprehension/2026-10-21-fr-transformer-les-batiments-existants.json": "bb3c631a097813243f7b4e95a9f0d8bee432dcfdb18f216d167a12357342a8ea",
+    "data/reading/practice/2026-10-21-fr-transformer-les-batiments-existants.json": "b6a17b60061a0ffedf2e1b61d290c0f9c0d2d6c1c6bbb3bef3e1fcc9e5c2d46e",
+    "data/reading/articles/2026-10-21-de-schwierige-themen-besprechen.json": "c8d1afd19a26bebc845fbdccca09bb013d39b068a1f14f3d60a42d45fc26c3db",
+    "data/reading/comprehension/2026-10-21-de-schwierige-themen-besprechen.json": "de8a2f39410a569b7302acbaa2e4bbe618d8d13db6366e5082d2a29850f78bdc",
+    "data/reading/practice/2026-10-21-de-schwierige-themen-besprechen.json": "2078092aa2dfff6591d111305c8466d7e7b2fd73ae2b64f40d349df55b9730da",
+    "data/reading/articles/2026-10-21-en-food-checks-local-and-national.json": "88782b444e04049278e163c8a6ac3aebc84b802126621f393015951e9b7642f4",
+    "data/reading/comprehension/2026-10-21-en-food-checks-local-and-national.json": "888d0fe83db0433091d2111fdffc82aa10809cdbaee2039b66af94a88fb54bc8",
+    "data/reading/practice/2026-10-21-en-food-checks-local-and-national.json": "b711d25b6783b6255c7b9bb3c702d65b715a8333e9bcb97f3e98200c99996705",
+    "data/reading/articles/2026-10-21-en-supporting-foster-families.json": "ae97a6e16e5dd1618a51d663cc1f7c02c93c60e720911d878a9514ced8392813",
+    "data/reading/comprehension/2026-10-21-en-supporting-foster-families.json": "7e12f6e02343502e48e3592ed41efb774949f43dd719548887c958394e07f0b2",
+    "data/reading/practice/2026-10-21-en-supporting-foster-families.json": "c0531f2b179abff74359ab1cfb62c8e81f9a17b634ae0863a0b68eef902f1426",
+    "data/reading/articles/2026-10-21-en-using-nature-expertise.json": "f9fd26bf216c1ff168344f49dd7b80854981b52fa429d6240532fc5bc7028497",
+    "data/reading/comprehension/2026-10-21-en-using-nature-expertise.json": "b314b274a140622acc26340b839e4b22b741a3eadbeaa799214722c6395c9ba5",
+    "data/reading/practice/2026-10-21-en-using-nature-expertise.json": "2384812ff5aa8cd4fe18b2808335a297448e1816d084042ae35b2e91bf3b6c5b"
+  },
+  "sourceFactReview": "All foreign body and Chinese paired sentences checked independently against official source full text or preserved successful official retrieval. Dates, numeric denominators, planned vs completed actions and causal uncertainty retained. No media or third-party quotations copied.",
+  "dateNotes": [
+    "FR festivals original date2026-10-16 independently confirmed by exact canonical official press-list card datetime, not crawl time.",
+    "EN FSA original parent publication2026-09-03; Oct19 update not substituted."
+  ],
+  "reserve": {
+    "verifiedUnconverted": {
+      "it": 5,
+      "fr": 2,
+      "de": 0,
+      "en": 1
+    },
+    "capacity": "Below approximately one week at full target volume; retain only verified sources and clearly separated unverified leads, rather than claim discovery is review."
+  },
+  "checks": {
+    "articleCandidatePracticeComprehensionValidators": "PASS",
+    "listeningTest": "171 passed,0failed",
+    "fullSuite": "44 harnesses;479712 passed,0 failed,0 known issues (TZ=UTC npm test)",
+    "gitDiffCheck": "PASS",
+    "finalNewContentDom": "All10final articles with full body, summary and comprehension rendered in isolated DOM shim; not browser visual QA."
+  },
+  "limitations": [
+    "CEFR levels are editorial estimates.",
+    "Local real-browser preview unavailable: own cloud browser and HTTP server are isolated (ERR_CONNECTION_REFUSED). No mobile/audio-quality claim. Production verification follows content-only deployment."
+  ]
+}

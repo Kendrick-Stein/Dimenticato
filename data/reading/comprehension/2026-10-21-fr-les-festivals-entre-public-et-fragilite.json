@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-fr-les-festivals-entre-public-et-fragilite",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle lecture d’ensemble le texte propose-t-il du baromètre ?",
+      "promptZh": "文章对这份调查作出了怎样的整体解读？",
+      "options": [
+        "La hausse des réponses prouve que les festivals se multiplient rapidement.",
+        "La fréquentation encourageante coexiste avec des fragilités climatiques et financières.",
+        "Les adaptations horaires ont déjà résolu l’essentiel des difficultés financières.",
+        "Les prévisions de déficit rendent peu probable la tenue des prochaines éditions."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s12",
+        "s14",
+        "s16",
+        "s18",
+        "s19"
+      ],
+      "explanationZh": "文本将人气、天气适应和财务压力并列分析，不把参与调查增幅当行业增长，也未称问题已解决或下一届普遍无望。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "À quoi correspond précisément la hausse de 25 % ?",
+      "promptZh": "25%的增幅具体对应什么？",
+      "options": [
+        "Au nombre de spectateurs par festival par rapport à l’année précédente.",
+        "Aux recettes de billetterie de l’ensemble des festivals français.",
+        "À la part des événements organisés entre septembre et décembre.",
+        "Au nombre de festivals ayant répondu par rapport à l’année précédente."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s2",
+        "s3"
+      ],
+      "explanationZh": "第3句明确将25%限定为回应调查的数量增长，不能替换为观众、票房或年末活动占比。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi le taux de remplissage ne permet-il pas, à lui seul, de conclure à la rentabilité ?",
+      "promptZh": "为什么仅凭上座率不能判断盈利能力？",
+      "options": [
+        "Parce que les coûts et les autres ressources entrent aussi dans l’équilibre financier.",
+        "Parce que les répondants ont calculé la fréquentation sur une autre année.",
+        "Parce que les recettes de billetterie ne sont pas évoquées dans le baromètre.",
+        "Parce que les festivals les plus remplis n’ont pas répondu à l’enquête."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s12",
+        "s13",
+        "s14",
+        "s16",
+        "s17",
+        "s18"
+      ],
+      "explanationZh": "支出、补助等也影响收支，票务及上座情况只是其中一部分；其他选项与正文不符或没有依据。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quelle situation le chiffre de 35 % décrit-il ?",
+      "promptZh": "35%描述了哪种情况？",
+      "options": [
+        "Des festivals ayant déjà annulé toute leur programmation annuelle.",
+        "Des festivals ayant réduit leurs horaires d’accueil du public.",
+        "Des répondants prévoyant des dépenses supérieures à leurs recettes.",
+        "Des répondants dont les comptes définitifs montrent un excédent."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "第14句35%对应预计支出高于收入，第15句强调是财务预期，不是已结算的结果。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Quelle conclusion respecte la portée temporelle de cette publication ?",
+      "promptZh": "哪一结论符合这份发布材料的时间范围？",
+      "options": [
+        "Elle fournit déjà le bilan des festivals de toute l’année 2026.",
+        "Elle doit être complétée pour décrire aussi les festivals de la fin de l’année.",
+        "Elle vérifie déjà l’efficacité finale des diagnostics prévus pour l’été 2027.",
+        "Elle permet de comparer les comptes définitifs de chaque édition 2027."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s4",
+        "s10",
+        "s15"
+      ],
+      "explanationZh": "样本活动只覆盖1—8月，纳入9—12月的全年总结尚待2027年夏季发布；诊断成果和最终账目也不能提前视为已知。"
+    }
+  ]
+}

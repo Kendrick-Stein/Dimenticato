@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-20",
+  "verifiedAt": "2026-10-21",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -295,6 +295,233 @@
       "lang": "en",
       "addedAt": "2026-10-20",
       "verificationZh": "已依据官方文字稿核对题目；尚未实际测试媒体播放。"
+    },
+    {
+      "id": "it-rai-tempo-impegno-a2",
+      "lang": "it",
+      "title": "Le parole dell’italiano: quanto ci metti? Il tempo che ci vuole!",
+      "titleZh": "需要多久？努力与情绪表达",
+      "provider": "Rai Scuola",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-Quanto-ci-metti-Il-tempo-che-ci-vuole-03b4362e-1732-4c18-81b1-5f9072d939d8.html",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-21",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青课程：从 Fela、Salif 和 Olga 的对话中听懂所需时间、努力与情绪。",
+      "guideZh": "第一遍听人物在做什么；第二遍注意到达需要多久、朋友怎样回应努力，以及礼物带来的感受。",
+      "verificationZh": "题目依据官方对应文字稿核对；原站HTML日期元数据为2021-06-11，按常青课程收录。未实际检验播放或音质。",
+      "vocabulary": [
+        {
+          "text": "metterci",
+          "zh": "花费时间"
+        },
+        {
+          "text": "ce la metto tutta",
+          "zh": "我全力以赴"
+        },
+        {
+          "text": "ci vuole",
+          "zh": "需要"
+        },
+        {
+          "text": "farcela",
+          "zh": "成功做到"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-tempo-1",
+          "prompt": "Quanto tempo impiega Salif per raggiungere Fela?",
+          "promptZh": "Salif 到 Fela 那里需要多久？",
+          "options": [
+            "Circa un’ora.",
+            "Circa mezz’ora.",
+            "Circa un quarto d’ora.",
+            "Circa due ore."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "rai-official-transcript-line-396",
+          "explanationZh": "官方文字稿中，Fela 回答到他那里约需半小时；不要把提到的“一秒钟就发火”当成路程时间。"
+        },
+        {
+          "id": "it-tempo-2",
+          "prompt": "Per quale motivo Salif esprime ammirazione per Fela?",
+          "promptZh": "Salif 为什么表达对 Fela 的赞赏？",
+          "options": [
+            "Perché arriva molto presto.",
+            "Perché prepara un lungo viaggio.",
+            "Perché fa il massimo per studiare.",
+            "Perché conosce già tutte le espressioni."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "rai-official-transcript-line-398",
+          "explanationZh": "官方讲解说明 Fela 在学习中尽力而为，Salif 的赞赏正是针对这一努力，并非说他已经学会全部表达。"
+        },
+        {
+          "id": "it-tempo-3",
+          "prompt": "Come reagisce Olga al regalo di Fela?",
+          "promptZh": "Olga 对 Fela 的礼物有什么反应？",
+          "options": [
+            "Si commuove.",
+            "Si arrabbia.",
+            "Si annoia.",
+            "Si preoccupa."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "rai-official-transcript-line-400",
+          "explanationZh": "官方文字稿在介绍人物情绪时说明，Olga 最后因 Fela 的礼物而感动；此前的失望与争吵不能代替这一反应。"
+        }
+      ],
+      "sourcePublishedAt": "2021-06-11"
+    },
+    {
+      "id": "fr-tv5-une-journee-a1",
+      "lang": "fr",
+      "title": "Une journée !",
+      "titleZh": "中学生的一天",
+      "provider": "TV5MONDE · Hachette FLE",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/une-journee",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-21",
+      "sourcePublishedAt": "2024-02-20",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "跟着法语初学课程，听校园生活中的日常表达。",
+      "guideZh": "先到原站听一遍，记下听到的校园地点或活动；再借助原站字幕复听，挑一句自己能复述的表达。",
+      "verificationZh": "已核对官方A1分级、课程入口与原发布日期；未实际听看或取得完整对应文字稿，仅提供常青资源入口，不设本站理解题。",
+      "vocabulary": [
+        {
+          "text": "un cours",
+          "zh": "一节课；课程"
+        },
+        {
+          "text": "un devoir",
+          "zh": "作业"
+        },
+        {
+          "text": "une cantine",
+          "zh": "食堂"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "de-logo-schulwuensche-20261015",
+      "lang": "de",
+      "title": "Was wünscht ihr euch für eure Schulen?",
+      "titleZh": "你希望学校有哪些改变？",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/umfrage-zufriedenheit-schule-100.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-10-21",
+      "sourcePublishedAt": "2026-10-15",
+      "duration": "1:25",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "从校园生活切入，听孩子们怎样表达意见和愿望。",
+      "guideZh": "先留意熟悉的校园词，再尝试听出一句表达愿望的话。可以分段复听；不必一次听懂全部。",
+      "verificationZh": "官方页面日期为2026-10-15，官方首页列出视频时长1:25。面向德语母语儿童，未作CEFR等级判定；未核听完整视频或逐字稿，不设置理解题。",
+      "vocabulary": [
+        {
+          "text": "die Schule",
+          "zh": "学校"
+        },
+        {
+          "text": "sich etwas wünschen",
+          "zh": "希望得到某物；表达愿望"
+        },
+        {
+          "text": "nerven",
+          "zh": "让人烦恼"
+        }
+      ],
+      "questions": [],
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）"
+    },
+    {
+      "id": "en-bc-party-directions-a2",
+      "lang": "en",
+      "title": "An invitation to a party",
+      "titleZh": "生日聚会：听懂留言与路线",
+      "provider": "British Council LearnEnglish",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/invitation-party",
+      "kind": "lesson",
+      "addedAt": "2026-10-21",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "听两段电话留言，区分聚会地点、开车路线与乘公交后的安排。",
+      "guideZh": "先听邀请内容，再记录第二段留言中两种出行方式的不同步骤。复听时留意出口编号和方向词。",
+      "verificationZh": "常青课程，原发布日期未标明；依据官方文字稿核对，未实测音质。",
+      "vocabulary": [
+        {
+          "text": "countryside",
+          "zh": "乡间"
+        },
+        {
+          "text": "drive straight on",
+          "zh": "一直向前开"
+        },
+        {
+          "text": "take exit 13A",
+          "zh": "从13A出口驶出"
+        },
+        {
+          "text": "pick you up",
+          "zh": "开车接你"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-party-1",
+          "prompt": "What does the speaker promise to send later in the first message?",
+          "promptZh": "第一段留言中，说话者答应稍后发送什么？",
+          "options": [
+            "The birthday photos.",
+            "The directions to the house.",
+            "The list of party guests.",
+            "The times of the buses."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "official-transcript-message-1-final-directions-promise",
+          "explanationZh": "第一段留言结束前，说话者答应稍后发送前往聚会地点的路线说明；不是照片、名单或公交时刻。"
+        },
+        {
+          "id": "en-party-2",
+          "prompt": "After taking exit 13A, what should a driver do next?",
+          "promptZh": "驶出13A出口后，开车的人下一步该怎么走？",
+          "options": [
+            "Turn right and pass the swimming pool.",
+            "Drive back towards the motorway.",
+            "Drive down the road and turn left.",
+            "Stop at the bus station in Brownsville."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "official-transcript-message-2-driving-directions",
+          "explanationZh": "第二段留言先说驶出13A出口，再沿路开并左转，房子在右边。"
+        },
+        {
+          "id": "en-party-3",
+          "prompt": "What should someone travelling by bus do on reaching Brownsville?",
+          "promptZh": "乘公交的人到达Brownsville后应该做什么？",
+          "options": [
+            "Call so that someone can collect them.",
+            "Take another bus to the house.",
+            "Walk to the first house on Forest Road.",
+            "Wait for the speaker at exit 13A."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "official-transcript-message-2-bus-directions",
+          "explanationZh": "对公交乘客的安排是乘80路到Brownsville，到达后打电话，让人开车来接。"
+        }
+      ]
     }
   ],
   "schema": 1

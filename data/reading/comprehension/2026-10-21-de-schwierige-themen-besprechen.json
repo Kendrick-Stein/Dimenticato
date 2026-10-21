@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-de-schwierige-themen-besprechen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welches Ziel verbindet die beiden beschriebenen Materialpakete?",
+      "options": [
+        "Sie bereiten Klassen auf eine gemeinsame Prüfung vor.",
+        "Sie erklären persönliche Themen mit passenden Lernangeboten.",
+        "Sie ersetzen Gespräche durch selbstständige Onlinekurse.",
+        "Sie führen jüngere und ältere Kinder in einem Kurs zusammen."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s5",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "两套材料面对不同年龄，分别讨论身体变化和器官捐献，均配有合适的教学活动；并非共同考试、纯网络课程或混龄课程。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Wie beginnt die Unterrichtseinheit zur Organspende?",
+      "options": [
+        "Mit der Arbeit an einem gemeinsamen Informationsarchiv.",
+        "Mit einem Vortrag über vier medizinische Fälle.",
+        "Mit einem Comic über ein Gespräch im Alltag.",
+        "Mit einer Diskussion über die Ergebnisse der Teams."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "漫画是开头；分组查资料、形成资料库在后面，四方面不等于四个医学案例。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Was machen die Teams mit ihren recherchierten Informationen?",
+      "options": [
+        "Sie gestalten Karten für ein gemeinsames Archiv.",
+        "Sie schreiben einen neuen Leitfaden für Lehrkräfte.",
+        "Sie erstellen Übungen für Kinder der dritten Klasse.",
+        "Sie vergleichen die Antworten in einer Abschlussprüfung."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "小组查找信息后制成卡片并汇集到资料库；教师指南属于现成材料，三年级是另一套材料对象。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Was gehört laut Beschreibung auch zum Abschluss der Einheit?",
+      "options": [
+        "Die Klasse legt eine einheitliche Entscheidung fest.",
+        "Die Teams prüfen die medizinischen Kenntnisse der Eltern.",
+        "Die Lehrkraft wählt die beste persönliche Meinung aus.",
+        "Die Klasse betrachtet die Art ihres eigenen Gesprächs."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s16",
+        "s19"
+      ],
+      "explanationZh": "结尾回顾讨论方式，而不是评选立场或统一个人决定。这是对讨论过程的反思。"
+    }
+  ]
+}

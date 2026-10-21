@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-fr-les-festivals-entre-public-et-fragilite",
+  "storyId": "les-festivals-entre-public-et-fragilite-2026-10-16",
+  "lang": "fr",
+  "date": "2026-10-21",
+  "title": "Des festivals fréquentés, mais sous pression",
+  "titleZh": "观众踊跃，节庆为何仍承压",
+  "summaryZh": "法国文化部的阶段性调查呈现一种反差：不少节庆上座率较高，却同时面对天气扰动、成本上涨和收支压力。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：需综合调查样本、比例和预测时间，理解让步、因果限制及受欢迎程度与财务状况之间的区别；采用长短句结合的解释性论述。",
+  "category": "culture",
+  "topics": [
+    "节庆",
+    "气候适应",
+    "文化经济"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Baromètre des festivals 2026 : face aux défis climatiques et économiques, le ministère de la Culture accompagne les festivals dans leur adaptation",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/barometre-des-festivals-2026-face-aux-defis-climatiques-et-economiques-le-ministere-de-la-culture-accompagne-les-festivals-dans-leur-adaptation",
+    "publishedAt": "2026-10-16",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 France",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：Ministère de la Culture，未单列个人作者。原文标题、发布日期和链接见来源信息。Dimenticato 制作法语分级改写、中文翻译及教学补充，不代表原机构认可。本文、中文译文及配套练习依 CC BY-SA 3.0 France 许可共享。",
+  "adaptation": "2026-10-21整理，原报道发表于2026-10-16，不是当天新闻。仅改写机构正文；不使用照片、附件、链接作品或第三方引语。保留事实的时间范围、调查样本和计划语气，口语练习属于教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Un festival peut attirer de nombreux spectateurs sans pour autant disposer d’une situation financière confortable : c’est l’une des tensions qui ressortent du baromètre présenté par le ministère français de la Culture en octobre 2026.",
+      "zh": "一个节庆活动可以吸引大量观众，却未必拥有宽裕的财务状况：这是法国文化部2026年10月公布的调查所呈现的一种矛盾。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Cette première photographie de la saison repose sur les réponses de 1 882 festivals, toutes disciplines artistiques confondues, dont l’édition s’est déroulée entre le 1er janvier et le 31 août.",
+      "zh": "这份对当季情况的初步观察，依据的是1882个节庆活动的回答，涵盖所有艺术门类，其当届活动举办时间为1月1日至8月31日。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Le nombre de répondants a augmenté de 25 % par rapport à l’année précédente, mais cette progression décrit la participation à l’enquête, non une croissance équivalente du nombre de festivals ou de leurs publics.",
+      "zh": "回应者数量较上年增加25%，但这个增幅描述的是调查参与情况，并不意味着节庆数量或观众人数也同幅增长。",
+      "glosses": [
+        {
+          "surface": "répondants",
+          "lemma": "répondant",
+          "zh": "回应者",
+          "note": "阳性复数；这里指回答调查的节庆组织方，并非所有节庆。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Les résultats concernent donc les festivals interrogés et constituent un état des lieux partiel ; le bilan intégrant les manifestations de septembre à décembre est annoncé pour l’été 2027.",
+      "zh": "因此，这些结果涉及受调查的节庆，属于阶段性情况汇总；纳入9月至12月活动的完整总结计划在2027年夏季公布。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Sur le plan climatique, les températures extrêmes, les orages et d’autres épisodes météorologiques ont perturbé l’accueil des spectateurs et les conditions de travail des équipes.",
+      "zh": "在气候方面，极端气温、雷暴及其他天气事件扰乱了观众接待和团队的工作条件。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Des annulations totales ou partielles ont été déclarées par 8 % des répondants, notamment en raison de ces aléas, ce qui ne signifie pas que toutes les annulations aient eu une cause unique.",
+      "zh": "8%的回应者报告了全部或部分取消活动的情况，原因尤其包括这些天气变故；这并不意味着所有取消都只有一个原因。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Pour s’adapter, 47 % des organisateurs ont mis en place une communication spécifique et 46 % ont aménagé leurs sites, par exemple en créant des îlots de fraîcheur.",
+      "zh": "为适应这些情况，47%的组织方采取了专门的沟通措施，46%调整了场地，例如设置清凉区域。",
+      "glosses": [
+        {
+          "surface": "aménagé",
+          "lemma": "aménager",
+          "zh": "调整；改造（场地）",
+          "note": "ont aménagé 为复合过去时；宾语 sites 指场地。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Les horaires ont également servi de levier : 41 % ont modifié ceux de l’accueil du public, tandis qu’un tiers ont changé ceux des personnels.",
+      "zh": "时间安排也成为应对手段：41%调整了观众接待时间，三分之一调整了工作人员的工作时间。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Ces mesures montrent que l’adaptation passe par des choix d’organisation et d’aménagement, et pas seulement par une décision finale de maintenir ou d’annuler une manifestation.",
+      "zh": "这些措施表明，适应工作涉及组织和场地安排的选择，而不只是最终决定继续还是取消活动。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Le projet ATLAS doit accompagner cette transition en donnant aux festivals un accès prioritaire à des diagnostics de vulnérabilité météorologique, dont les premiers résultats doivent être partagés avec le secteur d’ici l’été 2027.",
+      "zh": "ATLAS项目将通过优先向节庆提供天气风险脆弱性诊断来支持这一转变，首批诊断结果计划于2027年夏季前供行业使用。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Une étude confiée au Centre national de la musique porte aussi sur l’assurance des manifestations musicales en plein air et sur la possibilité de solutions mutualistes plus protectrices.",
+      "zh": "一项委托法国国家音乐中心开展的研究也关注露天音乐活动的保险，以及更有保障的互助型方案的可能性。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Du côté économique, la hausse des dépenses techniques et logistiques touche 42 % des répondants, celle des dépenses artistiques 40 %, et un quart signalent une augmentation des frais d’assurance.",
+      "zh": "在经济方面，42%的回应者面临技术和后勤支出上涨，40%面临艺术支出上涨，四分之一报告保险费用增加。",
+      "glosses": [
+        {
+          "surface": "dépenses",
+          "lemma": "dépense",
+          "zh": "支出",
+          "note": "阴性复数；与 recettes（收入）相对。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "À ces pressions s’ajoute, selon le ministère, une tendance générale à la diminution des subventions publiques, qui complique encore la recherche d’un équilibre.",
+      "zh": "据文化部介绍，这些压力之外还存在公共补助整体下降的趋势，进一步增加了实现收支平衡的难度。",
+      "glosses": [
+        {
+          "surface": "subventions",
+          "lemma": "subvention",
+          "zh": "补助",
+          "note": "阴性复数，publiques 与其一致，指公共资助。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Dans leurs prévisions, 35 % des répondants anticipent des dépenses supérieures aux recettes, 49 % un résultat proche de l’équilibre à 5 % près, et 16 % des recettes supérieures aux dépenses.",
+      "zh": "在预测中，35%的回应者预计支出超过收入，49%预计结果在收支平衡上下5%的范围内，16%预计收入超过支出。",
+      "glosses": [
+        {
+          "surface": "anticipent",
+          "lemma": "anticiper",
+          "zh": "预计",
+          "note": "直陈式现在时第三人称复数，指预期而非已结算结果。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Il s’agit ici d’anticipations financières, qu’il faut distinguer d’un bilan définitif : le communiqué ne présente pas ces proportions comme des comptes annuels déjà arrêtés.",
+      "zh": "这里说的是财务预期，需要与最终总结区分；新闻稿并未把这些比例说成已经结算的年度账目。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Pourtant, la fréquentation reste soutenue : 76 % des répondants affichent un taux de remplissage supérieur à 75 %, et 19 % dépassent même les 98 %.",
+      "zh": "然而，观众到场情况依然强劲：76%的回应者报告上座率超过75%，19%甚至超过98%。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Les recettes de billetterie progressent pour 39 % d’entre eux, mais une amélioration de cette seule source de revenus ne suffit pas à décrire l’ensemble des dépenses et des ressources.",
+      "zh": "39%的回应者票务收入增长，但仅这一项收入改善，并不足以描述全部支出和资金来源的情况。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Le contraste invite ainsi à distinguer l’intérêt du public de la solidité économique des manifestations, sans conclure qu’un événement très fréquenté est nécessairement bénéficiaire.",
+      "zh": "这种反差因此提示我们，应区分公众的兴趣与活动的经济稳健程度，不能认定观众很多的活动就必然盈利。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Enfin, 84 % des répondants se disent certains d’organiser leur prochaine édition ; cette confiance déclarée renseigne sur leurs perspectives, mais elle n’efface ni les risques météorologiques ni les difficultés de financement décrites dans l’enquête.",
+      "zh": "最后，84%的回应者表示确定会举办下一届；这种自述的信心反映了他们的展望，但并不抹去调查中描述的天气风险和资金困难。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "répondants",
+        "lemma": "répondant",
+        "zh": "回应者",
+        "sentenceId": "s3",
+        "note": "阳性复数；这里指回答调查的节庆组织方，并非所有节庆。"
+      },
+      {
+        "text": "aménagé",
+        "lemma": "aménager",
+        "zh": "调整；改造（场地）",
+        "sentenceId": "s7",
+        "note": "ont aménagé 为复合过去时；宾语 sites 指场地。"
+      },
+      {
+        "text": "dépenses",
+        "lemma": "dépense",
+        "zh": "支出",
+        "sentenceId": "s12",
+        "note": "阴性复数；与 recettes（收入）相对。"
+      },
+      {
+        "text": "subventions",
+        "lemma": "subvention",
+        "zh": "补助",
+        "sentenceId": "s13",
+        "note": "阴性复数，publiques 与其一致，指公共资助。"
+      },
+      {
+        "text": "anticipent",
+        "lemma": "anticiper",
+        "zh": "预计",
+        "sentenceId": "s14",
+        "note": "直陈式现在时第三人称复数，指预期而非已结算结果。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "sans pour autant",
+        "zh": "却并不因此",
+        "sentenceId": "s1",
+        "note": "表达前项成立并不保证后项成立。"
+      },
+      {
+        "text": "un état des lieux partiel",
+        "zh": "阶段性的情况汇总",
+        "sentenceId": "s4",
+        "note": "partiel 限定材料覆盖范围，不是完整年度结论。"
+      },
+      {
+        "text": "proche de l’équilibre",
+        "zh": "接近收支平衡",
+        "sentenceId": "s14",
+        "note": "本文下一限定语 à 5 % près 给出具体范围。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "mais 将同一数字的正确含义与不应推出的结论对照。"
+      },
+      {
+        "sentenceId": "s18",
+        "note": "sans conclure que… 提醒避免由上座率直接推出盈利。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pour choisir un festival, quelle importance accordez-vous aux horaires et aux espaces frais ?",
+        "zh": "选择节庆活动时，你有多在意时间安排和清凉区域？"
+      },
+      {
+        "text": "Pourquoi faut-il connaître les dépenses avant de juger le succès économique d’un événement ?",
+        "zh": "判断一个活动的经济成效之前，为什么需要了解支出？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "sans pour autant",
+        "zh": "却并不因此",
+        "sentenceId": "s1",
+        "note": "表达前项成立并不保证后项成立。"
+      },
+      {
+        "text": "un état des lieux partiel",
+        "zh": "阶段性的情况汇总",
+        "sentenceId": "s4",
+        "note": "partiel 限定材料覆盖范围，不是完整年度结论。"
+      }
+    ]
+  }
+}

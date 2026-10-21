@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-it-scacchi-e-documenti",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Che cosa distingue il programma del 18 ottobre?",
+      "options": [
+        "Unisce visite alle mostre e una gara di scacchi.",
+        "Unisce lezioni scolastiche e vendita di libri.",
+        "Unisce una mostra di quadri e un corso di cucina.",
+        "Unisce una visita guidata e una gara di fotografia."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s3"
+      ],
+      "explanationZh": "第2句把看展与下棋联系起来，第3句补充比赛安排；其他组合不在文中。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quando sono previste le visite pomeridiane dal 19 ottobre?",
+      "options": [
+        "Il martedì e il giovedì.",
+        "Il venerdì e il sabato.",
+        "Il lunedì e il mercoledì.",
+        "Il mercoledì e la domenica."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "第8句明确列出星期一与星期三下午，不要把每日上午开放与下午时段混淆。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Che cosa possono richiedere le scuole per email?",
+      "options": [
+        "I premi della gara di scacchi.",
+        "Visite didattiche senza pagamento.",
+        "Un pranzo gratuito nel chiostro.",
+        "Copie dei documenti da portare via."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "第9句说明学校可申请免费教学参观；免费不指午餐、奖品或带走文件。"
+    }
+  ]
+}

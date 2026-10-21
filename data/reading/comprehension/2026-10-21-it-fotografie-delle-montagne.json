@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-it-fotografie-delle-montagne",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale funzione ha lo spazio web descritto?",
+      "options": [
+        "Raccogliere fotografie nuove per preparare gare sulle Alpi.",
+        "Collegare fotografie di archivi diversi alla memoria delle comunità.",
+        "Vendere fotografie storiche per finanziare associazioni sportive.",
+        "Sostituire le sezioni del Club Alpino con un archivio centrale."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第6、9、10、12句把照片、不同档案和社区记忆联系起来；未提到竞赛准备、出售或取代俱乐部分会。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quali materiali hanno avuto un ruolo importante nella prima fase?",
+      "options": [
+        "Gli archivi dei musei stranieri e delle scuole di Belluno.",
+        "I documenti delle imprese turistiche e degli alberghi alpini.",
+        "Le raccolte delle biblioteche universitarie e dei giornali locali.",
+        "Le raccolte del CAI veneto e delle associazioni sportive amatoriali."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "第5句明确说明第一阶段重点是 CAI 威尼托分会及业余体育协会资料。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Perché il progetto dedica particolare attenzione alle fotografie?",
+      "options": [
+        "Raccontano il rapporto delle comunità alpine con il territorio.",
+        "Permettono di sostituire la descrizione dei materiali raccolti.",
+        "Mostrano soltanto le cime senza persone o attività umane.",
+        "Sono tutte conservate nello stesso archivio di Belluno."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "第6句给出原因，第7、8句补充人物、活动和变化；其余说法分别与清点描述、人物活动、不同档案相矛盾。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Che cosa si può concludere sullo sviluppo del progetto?",
+      "options": [
+        "La prima fase comprende già ogni archivio dedicato alle Alpi.",
+        "La raccolta riguarda solo gli interventi presentati a Belluno.",
+        "La selezione pubblicata è un primo passo verso altri materiali.",
+        "Il progetto ha terminato il lavoro dopo la presentazione pubblica."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9",
+        "s11"
+      ],
+      "explanationZh": "第9句称其为精选，第11句说只是初步成果并计划逐步扩展，因此不能理解为覆盖所有档案或工作已结束。"
+    }
+  ]
+}

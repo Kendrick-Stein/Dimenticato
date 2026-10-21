@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-it-scacchi-e-documenti",
+  "storyId": "dga-cosenza-scacco-matto-2026-10-18",
+  "lang": "it",
+  "date": "2026-10-21",
+  "title": "Scacchi, documenti e una pausa insieme",
+  "titleZh": "下棋、看档案，一起休息",
+  "summaryZh": "科森扎档案馆把国际象棋活动与展览结合起来；特别活动已结束，游戏主题展览另有开放日期。",
+  "level": "A2",
+  "levelReason": "编辑估计：以活动安排、地点与参观为主，使用简短句和常用时间表达；少量档案词汇有中文辅助。",
+  "category": "culture",
+  "topics": [
+    "国际象棋",
+    "档案展览",
+    "学校参观"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "Cosenza | Apertura straordinaria | \"Scacco matto\": una giornata tra archivi e scacchi",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=6d6787588b16873c0ed5247d7262c4b7&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2789",
+    "publishedAt": "2026-10-18",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：Ministero della Cultura — Direzione generale Archivi（机构署名，未列个人文字作者）；原题、日期和链接见来源信息。依据CC BY 3.0改写。Dimenticato 编写同语言分级改写、中文翻译与原创练习，非原机构认可的测评；本篇教学材料按同一许可提供。",
+  "adaptation": "2026-10-21整理，原文发表于2026-10-18，不伪称当天新闻。仅改写机构新闻文字，不使用照片、标志、附件或第三方作品，不复制直接引语。中文释义、讨论与练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "L’Archivio di Stato di Cosenza ha presentato una giornata speciale per domenica 18 ottobre 2026, dalle nove del mattino alle otto di sera.",
+      "zh": "科森扎国家档案馆公布了一项特别活动，定于2026年10月18日星期日，从上午九点到晚上八点。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Il programma univa due attività: visitare le mostre e giocare a scacchi insieme ad altre persone.",
+      "zh": "活动安排把两项活动结合起来：参观展览，以及与其他人一起下国际象棋。",
+      "glosses": [
+        {
+          "surface": "mostre",
+          "lemma": "mostra",
+          "zh": "展览",
+          "note": "阴性复数名词；visitare le mostre 表示参观展览"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Il torneo iniziava alle 9:15; la consegna dei premi era prevista verso le 18:45.",
+      "zh": "比赛定于9点15分开始；颁奖计划在18点45分左右进行。",
+      "glosses": [
+        {
+          "surface": "premi",
+          "lemma": "premio",
+          "zh": "奖项",
+          "note": "阳性复数，与 dei 搭配"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Alle tredici c’era una pausa pranzo nel chiostro, uno spazio dell’Istituto dove incontrarsi e stare insieme.",
+      "zh": "十三点在回廊安排了午餐休息，人们可以在档案馆的这个空间见面、共处。",
+      "glosses": [
+        {
+          "surface": "pausa",
+          "lemma": "pausa",
+          "zh": "休息",
+          "note": "阴性单数，pausa pranzo 指午餐休息"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Una mostra racconta la storia dei giochi attraverso vecchi documenti conservati nell’archivio.",
+      "zh": "一场展览通过档案馆保存的旧文件讲述游戏的历史。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Tra questi c’è un manifesto sui giochi proibiti: in alcuni periodi e luoghi anche gli scacchi erano vietati.",
+      "zh": "其中有一张关于禁玩游戏的告示：在某些时期和地方，国际象棋也曾被禁止。",
+      "glosses": [
+        {
+          "surface": "vietati",
+          "lemma": "vietato",
+          "zh": "被禁止的",
+          "note": "阳性复数，与 gli scacchi 一致"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "La giornata speciale è ormai passata, ma la mostra sui giochi è annunciata fino al 13 novembre.",
+      "zh": "特别活动日已经过去，但游戏主题展览公布的展期持续到11月13日。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Dal 19 ottobre le visite sono previste dal lunedì al venerdì, dalle nove alle tredici, e anche il lunedì e il mercoledì pomeriggio, dalle 15:00 alle 16:30.",
+      "zh": "从10月19日起，安排的参观时段为星期一至星期五九点至十三点，以及星期一、星期三下午15点至16点30分。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Le scuole possono chiedere per email visite didattiche gratuite per conoscere i documenti e il lavoro dell’archivista.",
+      "zh": "学校可以通过邮件申请免费教学参观，了解档案文件和档案工作人员的工作。",
+      "glosses": [
+        {
+          "surface": "gratuite",
+          "lemma": "gratuito",
+          "zh": "免费的",
+          "note": "阴性复数，修饰 visite didattiche"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "mostre",
+        "lemma": "mostra",
+        "zh": "展览",
+        "note": "阴性复数名词；visitare le mostre 表示参观展览",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "premi",
+        "lemma": "premio",
+        "zh": "奖项",
+        "note": "阳性复数，与 dei 搭配",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "pausa",
+        "lemma": "pausa",
+        "zh": "休息",
+        "note": "阴性单数，pausa pranzo 指午餐休息",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "vietati",
+        "lemma": "vietato",
+        "zh": "被禁止的",
+        "note": "阳性复数，与 gli scacchi 一致",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "gratuite",
+        "lemma": "gratuito",
+        "zh": "免费的",
+        "note": "阴性复数，修饰 visite didattiche",
+        "sentenceId": "s9"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "stare insieme",
+        "zh": "待在一起",
+        "sentenceId": "s4",
+        "note": "stare + 副词表示共处。"
+      },
+      {
+        "text": "per email",
+        "zh": "通过邮件",
+        "sentenceId": "s9",
+        "note": "说明联系的方式。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s7",
+        "note": "ma 连接已结束的活动与仍在展期内的展览，注意两者时间不同。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Preferisci visitare una mostra o partecipare a un gioco? Perché?",
+        "zh": "你更愿意看展还是参加游戏？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Preferisco … perché posso …",
+        "zh": "我更喜欢……，因为我可以……。",
+        "note": "教学补充，可按个人观点补全。"
+      }
+    ]
+  }
+}

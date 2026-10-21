@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-de-schwierige-themen-besprechen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 79,
+      "answer": "Druck",
+      "options": [
+        "Druck",
+        "Urlaub",
+        "Besuch",
+        "Schutz"
+      ],
+      "explanation": "恢复原文 Druck（压力）。unter Druck setzen：给……施压。 其他选项不符合本句中文提示。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 86,
+      "answer": "Altersgruppen",
+      "options": [
+        "Reisegruppen",
+        "Arbeitsgruppen",
+        "Altersgruppen",
+        "Lerngruppen"
+      ],
+      "explanation": "恢复原文 Altersgruppen（年龄群体）。复数，与 unterschiedliche 连用。 其他选项不符合本句中文提示。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 69,
+      "answer": "enthält",
+      "options": [
+        "bezahlt",
+        "enthält",
+        "verkauft",
+        "bestellt"
+      ],
+      "explanation": "恢复原文 enthält（包含）。第三人称单数现在时。 其他选项不符合本句中文提示。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s13",
+      "start": 64,
+      "answer": "selbstständig",
+      "options": [
+        "gemeinsam",
+        "langsam",
+        "öffentlich",
+        "selbstständig"
+      ],
+      "explanation": "恢复原文 selbstständig（自主地）。修饰 suchen，强调自行查找。 其他选项不符合本句中文提示。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s16",
+      "start": 96,
+      "answer": "geführt",
+      "options": [
+        "geführt",
+        "gekauft",
+        "gebaut",
+        "gemalt"
+      ],
+      "explanation": "恢复原文 geführt（进行过）。eine Diskussion führen；这里为过去分词。 其他选项不符合本句中文提示。"
+    }
+  ]
+}

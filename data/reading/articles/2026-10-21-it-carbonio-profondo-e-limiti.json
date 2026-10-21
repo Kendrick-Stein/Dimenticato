@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-it-carbonio-profondo-e-limiti",
+  "storyId": "ingv-taylor-valley-carbon-2026-10-20",
+  "lang": "it",
+  "date": "2026-10-21",
+  "title": "Il carbonio profondo e i limiti di una spiegazione",
+  "titleZh": "深部碳释放与解释的边界",
+  "summaryZh": "Taylor Valley 的重复测量发现土壤二氧化碳通量上升；化学证据指向深部来源，却尚不能把增幅直接归因于永久冻土融化。",
+  "level": "B2",
+  "levelReason": "编辑估计：区分测量结果、来源解释与尚未建立的因果关系，包含限定、让步和抽象论述；不是仅按字数定级。",
+  "category": "environment",
+  "topics": [
+    "永久冻土",
+    "碳循环",
+    "因果与证据"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "ANTARTIDE | Dal permafrost emerge carbonio geologico profondo: nella Taylor Valley le emissioni di anidride carbonica sono aumentate di oltre cinque volte",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/antartide-dal-permafrost-emerge-carbonio-geologico-profondo-nella-taylor-valley-le-emissioni-di-anidride-carbonica-sono-aumentate-di-oltre-cinque-volte",
+    "publishedAt": "2026-10-20",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：INGV Ufficio Stampa（机构署名，未列个人文字作者）；原题、日期和链接见来源信息。依据CC BY 4.0改写。Dimenticato 编写同语言分级改写、中文翻译与原创练习，非原机构认可的测评；本篇教学材料按同一许可提供。",
+  "adaptation": "2026-10-21整理，原文发表于2026-10-20，不伪称当天新闻。仅改写机构新闻文字，不使用照片、标志、附件或第三方作品，不复制直接引语。中文释义、讨论与练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Un comunicato dell’INGV del 20 ottobre 2026 presenta una ricerca sul trasferimento di carbonio dal sottosuolo antartico verso l’atmosfera, un processo che potrebbe avere un ruolo finora poco considerato nel ciclo del carbonio.",
+      "zh": "INGV 于2026年10月20日发布的公报介绍了一项研究：碳从南极地下向大气转移，这一过程在碳循环中的作用此前可能没有受到足够关注。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Lo studio riguarda la Taylor Valley, una delle principali zone prive di ghiacci delle McMurdo Dry Valleys, e coinvolge ricercatori del CNR, dell’INGV e delle università neozelandesi di Otago e Waikato.",
+      "zh": "研究涉及麦克默多干谷主要无冰区之一 Taylor Valley，参与者来自 CNR、INGV，以及新西兰的奥塔哥大学和怀卡托大学。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Le analisi geochimiche sono state svolte durante campagne nel 2020, nel 2023 e nel 2025: la data della notizia, dunque, non coincide con quella delle misure.",
+      "zh": "地球化学分析分别在2020、2023和2025年的考察中开展：因此，消息发布日期与测量时间并不相同。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Il flusso medio di anidride carbonica dal suolo è passato da 1,73 grammi per metro quadrato al giorno nel 2020 a 9,49 nel 2025, raggiungendo circa cinque volte e mezzo il valore iniziale.",
+      "zh": "土壤二氧化碳平均通量从2020年的每日每平方米1.73克增至2025年的9.49克，达到初始值约5.5倍。",
+      "glosses": [
+        {
+          "surface": "flusso",
+          "lemma": "flusso",
+          "zh": "通量",
+          "note": "阳性单数，本文指单位面积、单位时间的气体释放量"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Anche il massimo misurato è aumentato, da 11,36 a 72,99 grammi per metro quadrato al giorno, mentre l’incremento ha interessato l’intera distribuzione dei flussi osservati, non soltanto pochi valori estremi.",
+      "zh": "测得的最大值也从每日每平方米11.36克升至72.99克，而增幅涉及所观察通量的整个分布，并不局限于少数极端值。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Per interpretare questi risultati, i ricercatori hanno esaminato la composizione molecolare e isotopica dell’anidride carbonica e del metano: tali caratteristiche aiutano a riconoscere l’origine dei gas.",
+      "zh": "为解释这些结果，研究者分析了二氧化碳和甲烷的分子与同位素组成：这些特征有助于识别气体来源。",
+      "glosses": [
+        {
+          "surface": "origine",
+          "lemma": "origine",
+          "zh": "来源",
+          "note": "阴性单数名词，l’origine dei gas 指气体来自哪里"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Secondo il comunicato, la maggior parte dei campioni indica un contributo importante di sorgenti geologiche profonde, anziché una produzione spiegabile semplicemente con l’attività microbica superficiale.",
+      "zh": "根据公报，大部分样本表明深部地质来源有重要贡献，而不能简单地用地表微生物活动产生的气体解释。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Il permafrost, cioè il terreno perennemente ghiacciato, può quindi essere attraversato da carbonio che proviene da sistemi più profondi e raggiunge la superficie.",
+      "zh": "因此，来自更深部系统的碳可以穿过永久冻土，也就是常年冻结的土层，到达地表。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Questa interpretazione richiede di considerare insieme processi atmosferici, biologici, geologici e idrologici, senza ridurre il ciclo del carbonio antartico a ciò che avviene vicino alla superficie.",
+      "zh": "这一解释要求同时考虑大气、生物、地质和水文过程，而不是把南极碳循环简化为近地表发生的过程。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il sottosuolo della Taylor Valley presenta però una struttura complessa: il permafrost non è uniforme, sono presenti sacche d’acqua molto salata e una rete di connessioni geologiche e idriche.",
+      "zh": "但 Taylor Valley 地下结构复杂：永久冻土并不均一，存在高盐度的水囊，以及地质和水文连接网络。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Indagini geofisiche precedenti avevano già segnalato fluidi sotto il terreno congelato, ma i dati disponibili non permettono ancora di identificare un unico percorso di risalita né uno specifico meccanismo responsabile delle anomalie superficiali.",
+      "zh": "此前的地球物理调查已指出冻结土层下存在流体，但现有数据仍不能确定唯一的上升路径，也不能确定造成地表异常的某一具体机制。",
+      "glosses": [
+        {
+          "surface": "percorso",
+          "lemma": "percorso",
+          "zh": "路径",
+          "note": "阳性单数，percorso di risalita 指向上移动的路径"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Un altro limite riguarda la causa dell’aumento: lo studio non lo attribuisce direttamente allo scongelamento del permafrost, pur descrivendo un cambiamento marcato nelle aree osservate.",
+      "zh": "另一个限制涉及增幅的成因：尽管研究描述了观察区域中的显著变化，却没有将其直接归因于永久冻土融化。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Temperatura del terreno, contenuto d’acqua e spessore dello strato attivo non sono stati misurati sistematicamente in tutte le campagne; manca quindi la base per stabilire quella relazione causale diretta.",
+      "zh": "各次考察没有系统测量土温、含水量和活动层厚度，因此缺乏建立这种直接因果关系的基础。",
+      "glosses": [
+        {
+          "surface": "sistematicamente",
+          "lemma": "sistematicamente",
+          "zh": "系统地",
+          "note": "副词，修饰 sono stati misurati"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "La distinzione è importante: riconoscere la provenienza profonda di una parte del carbonio non equivale a conoscere completamente ciò che ha fatto aumentare il suo passaggio verso l’atmosfera.",
+      "zh": "这个区别很重要：识别出一部分碳来自深部，并不等于已经完全了解是什么使其向大气的转移增加。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Le ricerche future dovranno approfondire i canali idrici sotterranei, le variazioni di pressione che muovono i fluidi e i cambiamenti nella permeabilità del terreno, cioè nella sua capacità di lasciarli passare.",
+      "zh": "未来研究需要深入考察地下水通道、推动流体的压力变化，以及土层渗透性，也就是让流体通过的能力的变化。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Restano inoltre da determinare l’estensione spaziale e la persistenza nel tempo del fenomeno: i risultati ottenuti nella valle non risolvono automaticamente queste due questioni.",
+      "zh": "这一现象的空间范围和时间持续性也仍有待确定：在该谷地得到的结果并不能自动解决这两个问题。",
+      "glosses": [
+        {
+          "surface": "persistenza",
+          "lemma": "persistenza",
+          "zh": "持续性",
+          "note": "阴性单数，nel tempo 指在时间上的延续"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Le attività si sono svolte nei progetti PNRA SENECA e SENECA 2, durante tre spedizioni italiane in Antartide, con il supporto logistico di UTA-ENEA e Antarctica New Zealand: tornare negli stessi luoghi permette di confrontare i cambiamenti osservati.",
+      "zh": "研究活动在 PNRA SENECA 与 SENECA 2 项目下、三次意大利南极考察期间开展，由 UTA-ENEA 和 Antarctica New Zealand 提供后勤支持；重返相同地点有助于比较观察到的变化。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Gli autori chiedono perciò osservazioni stagionali e pluriennali, misure della temperatura e dell’idrologia del permafrost e indagini geofisiche capaci di collegare le anomalie superficiali ai sistemi fluidi profondi.",
+      "zh": "因此，作者提出需要季节性和多年观测、永久冻土温度和水文测量，以及能够把地表异常与深部流体系统联系起来的地球物理调查。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "flusso",
+        "lemma": "flusso",
+        "zh": "通量",
+        "note": "阳性单数，本文指单位面积、单位时间的气体释放量",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "origine",
+        "lemma": "origine",
+        "zh": "来源",
+        "note": "阴性单数名词，l’origine dei gas 指气体来自哪里",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "percorso",
+        "lemma": "percorso",
+        "zh": "路径",
+        "note": "阳性单数，percorso di risalita 指向上移动的路径",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "sistematicamente",
+        "lemma": "sistematicamente",
+        "zh": "系统地",
+        "note": "副词，修饰 sono stati misurati",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "persistenza",
+        "lemma": "persistenza",
+        "zh": "持续性",
+        "note": "阴性单数，nel tempo 指在时间上的延续",
+        "sentenceId": "s16"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "pur descrivendo",
+        "zh": "虽然描述了",
+        "sentenceId": "s12",
+        "note": "pur + 副动词引出让步关系。"
+      },
+      {
+        "text": "non equivale a",
+        "zh": "不等于",
+        "sentenceId": "s14",
+        "note": "equivalere a 区分两个不能混同的判断。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s13",
+        "note": "因果判断受制于测量范围；non ... sistematicamente 不等于完全没有测量。"
+      },
+      {
+        "sentenceId": "s16",
+        "note": "Restano ... da determinare 表示问题尚待确定，不能写成现象没有发生。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Perché è utile distinguere l’origine di un fenomeno dalla causa del suo aumento?",
+        "zh": "为什么应区分现象的来源与增幅的原因？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I dati indicano … ma non permettono ancora di …",
+        "zh": "数据表明……，但尚不能据此……。",
+        "note": "教学补充，可按个人观点补全。"
+      }
+    ]
+  }
+}

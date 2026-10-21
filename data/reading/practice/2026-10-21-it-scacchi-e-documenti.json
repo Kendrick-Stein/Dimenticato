@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-it-scacchi-e-documenti",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 45,
+      "answer": "mostre",
+      "options": [
+        "scuole",
+        "mostre",
+        "strade",
+        "case"
+      ],
+      "explanation": "按中文句意还原原文：mostre表示“展览”。阴性复数名词；visitare le mostre 表示参观展览。其他选项不能表达该句的中文含义。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 46,
+      "answer": "premi",
+      "options": [
+        "biglietti",
+        "documenti",
+        "premi",
+        "pranzi"
+      ],
+      "explanation": "按中文句意还原原文：premi表示“奖项”。阳性复数，与 dei 搭配。其他选项不能表达该句的中文含义。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s4",
+      "start": 23,
+      "answer": "pausa",
+      "options": [
+        "pausa",
+        "gara",
+        "visita",
+        "lezione"
+      ],
+      "explanation": "按中文句意还原原文：pausa表示“休息”。阴性单数，pausa pranzo 指午餐休息。其他选项不能表达该句的中文含义。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 100,
+      "answer": "vietati",
+      "options": [
+        "aperti",
+        "venduti",
+        "conservati",
+        "vietati"
+      ],
+      "explanation": "按中文句意还原原文：vietati表示“被禁止的”。阳性复数，与 gli scacchi 一致。其他选项不能表达该句的中文含义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 55,
+      "answer": "gratuite",
+      "options": [
+        "costose",
+        "gratuite",
+        "private",
+        "brevi"
+      ],
+      "explanation": "按中文句意还原原文：gratuite表示“免费的”。阴性复数，修饰 visite didattiche。其他选项不能表达该句的中文含义。"
+    }
+  ]
+}

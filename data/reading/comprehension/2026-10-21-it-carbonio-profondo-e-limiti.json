@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-it-carbonio-profondo-e-limiti",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale sintesi rispetta meglio i risultati e i loro limiti?",
+      "options": [
+        "Le misure indicano gas superficiali e dimostrano che la pressione sotterranea è diminuita.",
+        "Le misure indicano più gas profondi e spiegano lo scongelamento in tutte le Dry Valleys.",
+        "Le misure mostrano un aumento dei flussi e un’origine profonda importante, ma alcune cause restano aperte.",
+        "Le misure mostrano soltanto un picco isolato e non permettono di discutere l’origine del carbonio."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4",
+        "s5",
+        "s7",
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第4、5句说明通量上升，第7句支持深部来源，第11至13句保留路径与因果限制；不能推广到全部干谷，也不是孤立峰值。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa è cambiato tra il 2020 e il 2025 secondo le misure riportate?",
+      "options": [
+        "Sono aumentati sia il flusso medio sia il valore massimo.",
+        "È aumentato il flusso medio, mentre il massimo è rimasto stabile.",
+        "È aumentato il massimo, mentre il flusso medio è diminuito.",
+        "È aumentata soltanto la frequenza delle campagne di misura."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "第4句与第5句分别给出均值和最大值的上升；不能把考察频率当作测量结果。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Perché non si stabilisce una causa diretta legata allo scongelamento?",
+      "options": [
+        "Le analisi molecolari sono state svolte soltanto fuori dalla Taylor Valley.",
+        "Le osservazioni hanno riguardato il metano senza misurare l’anidride carbonica.",
+        "Il terreno contiene acqua salata che rende inutilizzabili tutti i campioni.",
+        "Alcune variabili del terreno non sono state misurate sistematicamente in ogni campagna."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第13句指出土温、含水量和活动层厚度未在所有考察中系统测量，限制了直接因果判断；其余说法不在文中。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Quale affermazione richiederebbe prove ulteriori rispetto a quelle presentate?",
+      "options": [
+        "Una parte importante del carbonio campionato ha una provenienza profonda.",
+        "L’aumento osservato è causato direttamente dal riscaldamento superficiale.",
+        "Il sottosuolo della valle comprende permafrost e sacche di acqua salata.",
+        "Le caratteristiche isotopiche aiutano a interpretare l’origine dei gas."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7",
+        "s10",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "直接归因于地表变暖超出现有因果证据。其他选项分别有第6、7、10句支持。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Quale combinazione di osservazioni viene proposta per proseguire la ricerca?",
+      "options": [
+        "Monitoraggi estivi, misure atmosferiche e confronti tra valli con climi diversi.",
+        "Analisi di campioni già raccolti e confronti delle sole concentrazioni superficiali.",
+        "Monitoraggi nel tempo, misure del permafrost e indagini sui fluidi profondi.",
+        "Una nuova campagna isotopica e confronti dei valori massimi tra valli diverse."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s15",
+        "s16",
+        "s18"
+      ],
+      "explanationZh": "第15、16、18句把长期/季节观测、永久冻土温度水文及深部流体调查结合起来，针对仍不确定的路径、范围与持续性。"
+    }
+  ]
+}

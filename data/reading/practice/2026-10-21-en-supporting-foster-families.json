@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-en-supporting-foster-families",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 41,
+      "answer": "supportive",
+      "options": [
+        "expensive",
+        "supportive",
+        "crowded",
+        "temporary"
+      ],
+      "explanation": "supportive是形容词，修饰home，意为给予支持的。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s2",
+      "start": 9,
+      "answer": "carer",
+      "options": [
+        "carer",
+        "visitor",
+        "painter",
+        "driver"
+      ],
+      "explanation": "carer是可数名词，前有a；本句说明寄养照护者的职责。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s3",
+      "start": 74,
+      "answer": "campaign",
+      "options": [
+        "journey",
+        "building",
+        "campaign",
+        "festival"
+      ],
+      "explanation": "campaign指有组织的宣传活动；这里不是节日或旅程。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 49,
+      "answer": "places",
+      "options": [
+        "prices",
+        "pages",
+        "pictures",
+        "places"
+      ],
+      "explanation": "foster places指寄养名额；10,000后用复数places。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s8",
+      "start": 35,
+      "answer": "flexible",
+      "options": [
+        "famous",
+        "flexible",
+        "silent",
+        "wooden"
+      ],
+      "explanation": "more flexible ways表示更灵活的方式；周末照护是具体例子。"
+    }
+  ]
+}

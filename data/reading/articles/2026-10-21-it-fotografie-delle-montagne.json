@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-it-fotografie-delle-montagne",
+  "storyId": "dga-archivi-di-vetta-2026-10-11",
+  "lang": "it",
+  "date": "2026-10-21",
+  "title": "Le montagne viste attraverso gli archivi",
+  "titleZh": "从档案中的照片看山地",
+  "summaryZh": "Archivi di Vetta 项目把不同档案中的山地照片联系起来，呈现社区与地方的关系；平台只是逐步扩展工作的第一步。",
+  "level": "B1",
+  "levelReason": "编辑估计：以相连段落解释照片如何保存社区记忆，含过去时、目的和发展计划，配有语境词义。",
+  "category": "culture",
+  "topics": [
+    "山地社区",
+    "历史照片",
+    "数字档案"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "SAB Veneto e Trentino-Alto Adige | “Archivi di Vetta”: online il patrimonio fotografico della montagna",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=fbde1a3ad05149dd7f0a8f9652b3163c&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2794",
+    "publishedAt": "2026-10-11",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：Ministero della Cultura — Direzione generale Archivi（机构署名，未列个人文字作者）；原题、日期和链接见来源信息。依据CC BY 3.0改写。Dimenticato 编写同语言分级改写、中文翻译与原创练习，非原机构认可的测评；本篇教学材料按同一许可提供。",
+  "adaptation": "2026-10-21整理，原文发表于2026-10-11，不伪称当天新闻。仅改写机构新闻文字，不使用照片、标志、附件或第三方作品，不复制直接引语。中文释义、讨论与练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Una fotografia di montagna può mostrare una vetta, ma anche le persone che l’hanno salita e le attività di una comunità, diventando così una fonte per conoscere il passato.",
+      "zh": "一张山地照片可以展示山峰，也可以展示登上山峰的人和一个社区的活动，从而成为了解过去的资料。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Da questa ricchezza di testimonianze nasce il progetto Archivi di Vetta, promosso dalla Soprintendenza archivistica e bibliografica del Veneto e Trentino-Alto Adige.",
+      "zh": "Archivi di Vetta 项目正是从这些丰富的历史见证出发，由威尼托和特伦蒂诺-上阿迪杰档案与图书监管机构推动。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Una notizia dell’11 ottobre 2026 ne annunciava la presentazione pubblica nello stesso giorno, alle 17, nell’Auditorium di Piazza Duomo a Belluno.",
+      "zh": "2026年10月11日的一则消息宣布，项目的公开介绍活动定于当天17点在贝卢诺主教座堂广场的礼堂举行。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Il lavoro era cominciato con una mappatura degli archivi della montagna e degli archivi che parlano della montagna, con il sostegno della Direzione generale Archivi.",
+      "zh": "这项工作首先在档案总局支持下，对山地地区的档案以及记录山地的档案进行了调查整理。",
+      "glosses": [
+        {
+          "surface": "sostegno",
+          "lemma": "sostegno",
+          "zh": "支持",
+          "note": "阳性单数名词，con il sostegno di 表示在……支持下"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Nella prima fase l’attenzione si è concentrata soprattutto sulle raccolte delle sezioni venete del Club Alpino Italiano e sugli archivi di associazioni sportive amatoriali.",
+      "zh": "第一阶段主要关注意大利登山俱乐部在威尼托各分会的资料集，以及业余体育协会的档案。",
+      "glosses": [
+        {
+          "surface": "amatoriali",
+          "lemma": "amatoriale",
+          "zh": "业余的",
+          "note": "复数形容词，修饰 associazioni sportive"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Tra questi materiali, le raccolte fotografiche hanno ricevuto un’attenzione particolare perché raccontano il rapporto tra le comunità alpine e il territorio.",
+      "zh": "在这些材料中，照片资料集尤其受到重视，因为它们讲述了阿尔卑斯社区与地域的关系。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Le immagini documentano persone, attività, ascensioni e pratiche sportive, oltre a luoghi e paesaggi.",
+      "zh": "这些图像记录了人物、活动、登山和体育实践，也记录了地点和景观。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Permettono inoltre di osservare come sono cambiate le montagne e come le comunità le hanno abitate e interpretate nel tempo.",
+      "zh": "它们还让人们观察山地发生了怎样的变化，以及社区如何随着时间居住于山地并理解它。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Dopo il censimento e la descrizione dei materiali è nato uno spazio web che presenta una selezione di fotografie provenienti da archivi diversi.",
+      "zh": "经过材料的清点和描述，一个网络空间形成了，展示来自不同档案的一部分精选照片。",
+      "glosses": [
+        {
+          "surface": "selezione",
+          "lemma": "selezione",
+          "zh": "精选部分",
+          "note": "阴性单数，表示从不同档案中选出的一部分照片"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "La piattaforma non si limita quindi a raccogliere immagini: mette in relazione testimonianze diverse e le rende accessibili al pubblico.",
+      "zh": "因此，这个平台不只是收集图像：它将不同的历史见证联系起来，并使公众能够接触它们。",
+      "glosses": [
+        {
+          "surface": "accessibili",
+          "lemma": "accessibile",
+          "zh": "可接触的",
+          "note": "复数形容词，指 testimonianze 可供公众接触"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Si tratta del primo risultato di un percorso che dovrebbe ampliarsi progressivamente, includendo altri patrimoni documentari sulle Alpi e sulla cultura della montagna.",
+      "zh": "这是一个预计将逐步扩展的过程的初步成果，未来将纳入其他有关阿尔卑斯和山地文化的档案遗产。",
+      "glosses": [
+        {
+          "surface": "ampliarsi",
+          "lemma": "ampliarsi",
+          "zh": "扩展",
+          "note": "自反不定式，跟在 dovrebbe 后表示预计发展"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "L’annuncio collegava questa prospettiva all’esperienza internazionale dei community archives, cioè archivi legati alla memoria delle comunità.",
+      "zh": "公告把这一方向与国际上的 community archives 经验联系起来，即与社区记忆相联系的档案。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Per l’incontro erano previsti gli interventi di Marco Spagni e Francesca Crema, funzionari della Soprintendenza, sul lavoro svolto e sulla trasmissione della memoria alpina.",
+      "zh": "活动计划由监管机构工作人员 Marco Spagni 与 Francesca Crema 介绍已开展的工作，以及阿尔卑斯记忆的传承。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "sostegno",
+        "lemma": "sostegno",
+        "zh": "支持",
+        "note": "阳性单数名词，con il sostegno di 表示在……支持下",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "amatoriali",
+        "lemma": "amatoriale",
+        "zh": "业余的",
+        "note": "复数形容词，修饰 associazioni sportive",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "selezione",
+        "lemma": "selezione",
+        "zh": "精选部分",
+        "note": "阴性单数，表示从不同档案中选出的一部分照片",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "accessibili",
+        "lemma": "accessibile",
+        "zh": "可接触的",
+        "note": "复数形容词，指 testimonianze 可供公众接触",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "ampliarsi",
+        "lemma": "ampliarsi",
+        "zh": "扩展",
+        "note": "自反不定式，跟在 dovrebbe 后表示预计发展",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "nel tempo",
+        "zh": "随着时间",
+        "sentenceId": "s8",
+        "note": "观察长期变化的常用表达。"
+      },
+      {
+        "text": "mette in relazione",
+        "zh": "把……联系起来",
+        "sentenceId": "s10",
+        "note": "mettere in relazione 强调建立事物之间的关系。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "dovrebbe + 不定式表示预期发展，不把未来扩展写成已经完成。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali fotografie conserveresti per raccontare la storia del tuo quartiere?",
+        "zh": "你会保留哪些照片来讲述自己街区的历史？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Conserverei … perché mostrano …",
+        "zh": "我会保留……，因为它们展示了……。",
+        "note": "教学补充，可按个人观点补全。"
+      }
+    ]
+  }
+}

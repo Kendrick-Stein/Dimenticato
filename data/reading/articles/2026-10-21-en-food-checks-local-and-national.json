@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-en-food-checks-local-and-national",
+  "storyId": "fsa-food-regulation-frameworks-2026-09-03",
+  "lang": "en",
+  "date": "2026-10-21",
+  "category": "society",
+  "topics": [
+    "食品安全",
+    "公共服务",
+    "制度比较"
+  ],
+  "title": "Food checks: local knowledge and a national view",
+  "titleZh": "食品监管：地方经验与全国视角",
+  "summaryZh": "一份FSA董事会报告比较两种大企业监管方案，讨论数据、地方专业能力与改革成本，保留提议而非已实施的状态。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：比较两个制度框架，区分机构论证、利益相关方质疑与尚待检验的假设；含让步、条件与复杂名词短语。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Food Standards Agency / GOV.UK",
+    "title": "Future of Food Regulation report to the FSA Board: September 2026",
+    "url": "https://www.gov.uk/government/publications/food-standards-agency-september-2026-board-meeting/future-of-food-regulation-report-to-the-fsa-board-september-2026",
+    "publishedAt": "2026-09-03",
+    "lang": "en",
+    "author": "Emily Antcliffe / Food Standards Agency"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Emily Antcliffe / Food Standards Agency; 2026-09-03; https://www.gov.uk/government/publications/food-standards-agency-september-2026-board-meeting/future-of-food-regulation-report-to-the-fsa-board-september-2026",
+  "adaptation": "2026-10-21整理；依据发表于2026-09-03的机构英文材料作同语言教学改写，配中文翻译及原创学习补充。非今日新闻、非原文逐字转载，不代表原机构认可。排除图片、标志、直接引语及第三方作品；保留计划、观点与实施成果的区别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Food safety and standards regulation is not only about finding a problem in one shop; it also involves understanding decisions that can affect many branches and suppliers.",
+      "zh": "食品安全与标准监管不只是发现某一家商店的问题，也涉及理解那些可能影响许多分店和供应商的决策。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "In a report prepared for its September 2026 Board meeting, the Food Standards Agency examined how national oversight could work alongside local expertise.",
+      "zh": "英国食品标准局在为2026年9月董事会会议准备的一份报告中，探讨了全国层面的监督如何与地方专业能力协同。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "The report, written by Emily Antcliffe, sets out proposals for further design rather than presenting a fully implemented replacement for the existing system.",
+      "zh": "Emily Antcliffe撰写的这份报告提出的是有待进一步设计的方案，而非已全面实施、替代现有体系的制度。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Its starting point is a tension: local officers understand particular places, while large retailers make decisions whose effects extend well beyond one local authority.",
+      "zh": "其出发点是一种张力：地方工作人员了解具体地区，而大型零售商所作决策的影响远超单一地方政府的辖区。",
+      "glosses": [
+        {
+          "surface": "tension",
+          "lemma": "tension",
+          "zh": "张力；两方面之间的矛盾"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Some local authority stakeholders questioned why large businesses were receiving attention when smaller businesses could present greater risks.",
+      "zh": "部分地方政府利益相关方质疑：既然较小企业可能带来更大风险，为何要把注意力放在大企业上？",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "The Agency’s response was that even where individual branches meet requirements, decisions taken across a large company can influence consumers and supply chains on a much wider scale.",
+      "zh": "该局的回应是，即使个别分店符合要求，大公司整体作出的决策仍可能在更大范围影响消费者和供应链。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "It argued that company-wide information could reveal risks that are harder to see when each location is considered separately.",
+      "zh": "它认为，相比逐个地点分别考察，覆盖整个公司的信息可能揭示较难察觉的风险。",
+      "glosses": [
+        {
+          "surface": "reveal",
+          "lemma": "reveal",
+          "zh": "揭示"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "This argument supports a proposed national role, but the report also says that the underlying assumption must be tested further during detailed design.",
+      "zh": "这一论点支持拟议的全国层面角色，但报告也表示，在详细设计中必须进一步检验其基本假设。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Six possible frameworks were assessed, with the comparison focusing on their contribution to intended outcomes rather than simply on how easy they would be to introduce.",
+      "zh": "报告评估了六种可能的框架，比较重点是它们对预期目标的贡献，而不只是实施难易程度。",
+      "glosses": [
+        {
+          "surface": "outcomes",
+          "lemma": "outcome",
+          "zh": "结果；目标成效"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Two frameworks were recommended for further work, both combined with changes intended to strengthen the local system.",
+      "zh": "报告建议进一步研究其中两种框架，两者都结合了旨在加强地方体系的改变。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Under Direct Assurance, large businesses would submit company-wide data and audit evidence to the Agency, which would assess that information centrally.",
+      "zh": "在“直接保证评估”方案下，大企业将向该局提交全公司数据与审计证据，由该局集中评估。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Local authorities would remain the competent authority, using the Agency’s assessment to inform their own regulatory work rather than giving up their responsibilities.",
+      "zh": "地方政府仍是主管机关，利用该局评估指导自身监管工作，而非放弃其职责。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "The alternative would make the Agency the direct regulator for large food businesses, responsible for national oversight, official controls, enforcement and intervention.",
+      "zh": "另一方案将使该局成为大食品企业的直接监管者，负责全国层面的监督、官方管控、执法和干预。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Local authorities would continue to regulate other businesses under that model, so a stronger national role would not mean removing local regulation from the system.",
+      "zh": "在该模式下，地方政府仍监管其他企业，因此强化全国角色并不意味着从体系中取消地方监管。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "The report presents Direct Assurance as requiring less structural change, while describing the second option as more closely aligned with the programme’s objectives overall.",
+      "zh": "报告认为“直接保证评估”所需结构性变化较少，同时认为第二方案整体上更契合项目目标。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Neither recommendation settles the practical questions of staffing, finance, legal powers or the digital systems needed to make the approach work.",
+      "zh": "两项建议都尚未解决人员、资金、法律权限，以及落实该方式所需数字系统等实际问题。",
+      "glosses": [
+        {
+          "surface": "staffing",
+          "lemma": "staffing",
+          "zh": "人员配备"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "In particular, the report warns that creating national arrangements must not become a reason to reduce the resources available to local food teams.",
+      "zh": "报告特别警告，设立全国性安排不能成为削减地方食品监管团队可用资源的理由。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Most businesses would still depend on local oversight, and the cost of changing the system must be considered alongside the expected benefits.",
+      "zh": "大多数企业仍将依靠地方监督，而且制度变更成本必须与预期收益一并考量。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "The proposals also include better registration, clearer guidance and improved sharing of information, rather than treating the choice of regulator as the whole reform.",
+      "zh": "提议还包括改进登记、更清晰的指导与更好的信息共享，而非把选择监管者视为改革的全部。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "Different governments may ultimately choose different approaches, so the Agency intends to balance consistency with local knowledge and devolved responsibilities.",
+      "zh": "不同政府最终可能选择不同方式，因此该局希望在一致性、地方知识与权力下放职责之间取得平衡。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Detailed work with experts and stakeholders is intended to produce an evidenced and costed model before formal consultation.",
+      "zh": "与专家及利益相关方共同开展的详细工作，旨在正式咨询前形成有证据支撑且已核算成本的模式。",
+      "glosses": [
+        {
+          "surface": "consultation",
+          "lemma": "consultation",
+          "zh": "咨询；征求意见"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "For readers, the distinction matters: the report explains why reform is being considered and what must still be examined, not proof that either model has already improved food safety.",
+      "zh": "对读者而言，这一区别很重要：报告说明为何考虑改革、还有哪些问题需要研究，并非证明任一模式已经改善食品安全。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "tension",
+        "zh": "张力；两方面之间的矛盾",
+        "sentenceId": "s4",
+        "lemma": "tension",
+        "note": "a tension在这里指地方经验与跨地区影响之间需要协调的张力。"
+      },
+      {
+        "text": "reveal",
+        "zh": "揭示",
+        "sentenceId": "s7",
+        "lemma": "reveal",
+        "note": "could后用动词原形reveal，意为揭示信息中潜藏的风险。"
+      },
+      {
+        "text": "outcomes",
+        "zh": "结果；目标成效",
+        "sentenceId": "s9",
+        "lemma": "outcome",
+        "note": "intended outcomes意为预期成效，是评估框架的尺度。"
+      },
+      {
+        "text": "staffing",
+        "zh": "人员配备",
+        "sentenceId": "s16",
+        "lemma": "staffing",
+        "note": "staffing指人员配置，与finance、legal powers并列，是尚待解决的实施问题。"
+      },
+      {
+        "text": "consultation",
+        "zh": "咨询；征求意见",
+        "sentenceId": "s21",
+        "lemma": "consultation",
+        "note": "formal consultation指正式征求意见，在本句位于模型形成之后。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "underlying assumption",
+        "zh": "基本假设",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "alongside the expected benefits",
+        "zh": "与预期收益一并",
+        "sentenceId": "s18"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "留意本句中的固定搭配，并结合中文对照复述完整意思。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "How can a national regulator use local knowledge without duplicating local work?",
+        "zh": "全国监管机构如何利用地方经验，同时避免重复地方工作？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "underlying assumption",
+        "zh": "基本假设",
+        "sentenceId": "s8",
+        "note": "可替换后面的内容，讨论类似情境。"
+      }
+    ]
+  }
+}

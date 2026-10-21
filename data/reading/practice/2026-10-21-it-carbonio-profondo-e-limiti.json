@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-21-it-carbonio-profondo-e-limiti",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 3,
+      "answer": "flusso",
+      "options": [
+        "peso",
+        "flusso",
+        "prezzo",
+        "volume"
+      ],
+      "explanation": "按中文句意还原原文：flusso表示“通量”。阳性单数，本文指单位面积、单位时间的气体释放量。其他选项不能表达该句的中文含义。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 187,
+      "answer": "origine",
+      "options": [
+        "altezza",
+        "velocità",
+        "temperatura",
+        "origine"
+      ],
+      "explanation": "按中文句意还原原文：origine表示“来源”。阴性单数名词，l’origine dei gas 指气体来自哪里。其他选项不能表达该句的中文含义。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s11",
+      "start": 157,
+      "answer": "percorso",
+      "options": [
+        "percorso",
+        "campione",
+        "risultato",
+        "periodo"
+      ],
+      "explanation": "按中文句意还原原文：percorso表示“路径”。阳性单数，percorso di risalita 指向上移动的路径。其他选项不能表达该句的中文含义。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s13",
+      "start": 98,
+      "answer": "sistematicamente",
+      "options": [
+        "casualmente",
+        "rapidamente",
+        "sistematicamente",
+        "pubblicamente"
+      ],
+      "explanation": "按中文句意还原原文：sistematicamente表示“系统地”。副词，修饰 sono stati misurati。其他选项不能表达该句的中文含义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s16",
+      "start": 58,
+      "answer": "persistenza",
+      "options": [
+        "distanza",
+        "persistenza",
+        "differenza",
+        "profondità"
+      ],
+      "explanation": "按中文句意还原原文：persistenza表示“持续性”。阴性单数，nel tempo 指在时间上的延续。其他选项不能表达该句的中文含义。"
+    }
+  ]
+}

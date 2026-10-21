@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "id": "2026-10-21-fr-des-jardins-dans-la-ville",
+  "storyId": "des-jardins-dans-la-ville-2026-09-15",
+  "lang": "fr",
+  "date": "2026-10-21",
+  "title": "Des jardins dans la ville",
+  "titleZh": "城市里的花园",
+  "summaryZh": "巴黎地区的研究把花园、居民和城市自然放在一起观察：绿地不只是种蔬菜的地方。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：围绕城市、花园和居民的具体场景，以短句和现在时为主；少量研究词汇配中文释义，正文逐句中文辅助。",
+  "category": "environment",
+  "topics": [
+    "城市绿地",
+    "花园",
+    "人与自然"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE",
+    "title": "Paris, métropole verte ? Des jardins et des espaces cultivés, vecteurs de biodiversité",
+    "url": "https://www.inrae.fr/actualites/paris-metropole-verte-jardins-espaces-cultives-vecteurs-biodiversite",
+    "publishedAt": "2026-09-15",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "原文：INRAE，未单列个人作者。原文标题、发布日期和链接见来源信息。Dimenticato 制作法语分级改写、中文翻译及教学补充，不代表原机构认可。机构正文依 Licence Ouverte 2.0 使用。",
+  "adaptation": "2026-10-21整理，原报道发表于2026-09-15，不是当天新闻。仅改写机构正文；不使用照片、附件、链接作品或第三方引语。保留事实的时间范围、调查样本和计划语气，口语练习属于教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Dans la région parisienne, la nature se trouve aussi dans les jardins et les petites fermes en ville.",
+      "zh": "在巴黎地区，自然也存在于花园和城市里的小型农场中。",
+      "glosses": [
+        {
+          "surface": "jardins",
+          "lemma": "jardin",
+          "zh": "花园",
+          "note": "un jardin 的复数；les 后用复数名词。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Un article publié par INRAE le 15 septembre 2026 présente un livre sur ces espaces verts.",
+      "zh": "INRAE于2026年9月15日发表的一篇文章介绍了一本研究这些绿地的书。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Ce livre réunit plusieurs travaux de recherche sur la ville et la biodiversité, la diversité des êtres vivants.",
+      "zh": "这本书汇集了多项关于城市与生物多样性的研究；生物多样性指生物的多样程度。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Les chercheurs regardent surtout les jardins privés et les très petites fermes urbaines.",
+      "zh": "研究人员主要关注私人花园和非常小的城市农场。",
+      "glosses": [
+        {
+          "surface": "chercheurs",
+          "lemma": "chercheur",
+          "zh": "研究人员",
+          "note": "un chercheur 的复数；作 regardent 的主语。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Dans certains espaces, on produit de la nourriture, mais dans d’autres, on ne cultive pas d’aliments.",
+      "zh": "有些空间生产食物，但另一些空间不种植食用作物。",
+      "glosses": [
+        {
+          "surface": "nourriture",
+          "lemma": "nourriture",
+          "zh": "食物",
+          "note": "阴性单数名词，de la nourriture 表示食物这一物质。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Ces deux situations peuvent même exister dans un seul jardin.",
+      "zh": "这两种情况甚至可以出现在同一个花园中。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Le livre ne parle pas seulement des plantes : il parle aussi des habitants.",
+      "zh": "这本书不只谈植物，也谈居民。",
+      "glosses": [
+        {
+          "surface": "habitants",
+          "lemma": "habitant",
+          "zh": "居民",
+          "note": "阳性复数；des habitants 在此泛指居民。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Comment voient-ils la nature et comment s’occupent-ils de ces lieux ?",
+      "zh": "他们怎样看待自然，又怎样照料这些地方？",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Pour répondre, des spécialistes de la société, des territoires et de l’environnement travaillent ensemble.",
+      "zh": "为了回答这些问题，社会、地域和环境领域的专家共同开展研究。",
+      "glosses": [
+        {
+          "surface": "ensemble",
+          "lemma": "ensemble",
+          "zh": "一起",
+          "note": "此处是副词，修饰 travaillent，不随主语变复数。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Ils étudient les idées des habitants, les caractéristiques des quartiers et les façons de gérer les jardins.",
+      "zh": "他们研究居民的观念、街区的特点以及管理花园的方式。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Leurs analyses portent aussi sur les effets possibles de ces pratiques sur la biodiversité.",
+      "zh": "他们的分析也涉及这些做法对生物多样性可能产生的影响。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Le livre invite donc à réfléchir à la place de la nature dans les grandes villes et à son accès.",
+      "zh": "因此，这本书邀请人们思考自然在大城市中的地位，以及人们接触自然的机会。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "jardins",
+        "lemma": "jardin",
+        "zh": "花园",
+        "sentenceId": "s1",
+        "note": "un jardin 的复数；les 后用复数名词。"
+      },
+      {
+        "text": "chercheurs",
+        "lemma": "chercheur",
+        "zh": "研究人员",
+        "sentenceId": "s4",
+        "note": "un chercheur 的复数；作 regardent 的主语。"
+      },
+      {
+        "text": "nourriture",
+        "lemma": "nourriture",
+        "zh": "食物",
+        "sentenceId": "s5",
+        "note": "阴性单数名词，de la nourriture 表示食物这一物质。"
+      },
+      {
+        "text": "habitants",
+        "lemma": "habitant",
+        "zh": "居民",
+        "sentenceId": "s7",
+        "note": "阳性复数；des habitants 在此泛指居民。"
+      },
+      {
+        "text": "ensemble",
+        "lemma": "ensemble",
+        "zh": "一起",
+        "sentenceId": "s9",
+        "note": "此处是副词，修饰 travaillent，不随主语变复数。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "surtout",
+        "zh": "主要；尤其",
+        "sentenceId": "s4",
+        "note": "副词，用来突出重点。"
+      },
+      {
+        "text": "pas seulement",
+        "zh": "不只是",
+        "sentenceId": "s7",
+        "note": "与后半句 aussi 搭配，补充另一个方面。"
+      },
+      {
+        "text": "effets possibles",
+        "zh": "可能产生的影响",
+        "sentenceId": "s11",
+        "note": "possibles 表示尚未确定，不能省略成确定的效果。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "même 表示“甚至”，强调同一个花园内部也可有不同用途。"
+      },
+      {
+        "sentenceId": "s7",
+        "note": "ne…pas seulement…aussi… 用于说明关注范围不止一个方面。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Y a-t-il des jardins près de chez vous ? À quoi servent-ils ?",
+        "zh": "你家附近有花园吗？它们有哪些用途？"
+      },
+      {
+        "text": "Préférez-vous un jardin avec des légumes ou avec des fleurs ? Pourquoi ?",
+        "zh": "你更喜欢种菜的花园还是种花的花园？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "surtout",
+        "zh": "主要；尤其",
+        "sentenceId": "s4",
+        "note": "副词，用来突出重点。"
+      },
+      {
+        "text": "pas seulement",
+        "zh": "不只是",
+        "sentenceId": "s7",
+        "note": "与后半句 aussi 搭配，补充另一个方面。"
+      }
+    ]
+  }
+}

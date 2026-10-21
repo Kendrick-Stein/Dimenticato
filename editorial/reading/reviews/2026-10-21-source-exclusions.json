@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-21",
+  "scope": "Metadata-only reserve/discovery/exclusions, not approved public learning editions.",
+  "german": [
+    {
+      "sourceUrl": "https://open-educational-resources.de/oer-zu-halloween-kostenlose-materialien-und-lernideen-fuer-den-unterricht/",
+      "title": "OER zu Halloween: Kostenlose Materialien und Lernideen für den Unterricht",
+      "originalDateObserved": "2026-10-20",
+      "authorObserved": "Angela Karnoll für OERinfo",
+      "status": "collected",
+      "reason": "Search returned complete cached page including CC BY4, homepage links item; direct web open404 and shell503 prevent full current-source/access verification. Do not adapt/publish yet.",
+      "proposedTier": "A2",
+      "category": "culture"
+    },
+    {
+      "sourceUrl": "https://open-educational-resources.de/oerinfo-fachtag-2026-und-die-knoer-tagung-2026/",
+      "title": "OERinfo-Fachtag 2026 und die KNOER-Tagung",
+      "originalDateObserved": "2026-05-21",
+      "updatedDateObserved": "2026-10-16",
+      "status": "rejected-for-daily",
+      "reason": "Original publication older than90days despite recent update; archive only, cannot use updated date as news date."
+    },
+    {
+      "sourceUrl": "https://irights.info/artikel/urheberrecht-ueberblick-der-beitraege/32896",
+      "title": "OER und das Urheberrecht – ein Überblick der Beiträge von iRights.info",
+      "originalDateObserved": "2026-08-26",
+      "status": "collected",
+      "reason": "Explicit CC BY4 signed Jens Crueger, first publication OERinfo must be traced before original-date verification. Legal link roundup, not selected due directory format/topic balance."
+    },
+    {
+      "sourceUrl": "https://learngerman.dw.com/de/kurz-und-leicht/s-69137519",
+      "title": "DW Kurz und leicht",
+      "status": "access-blocked",
+      "reason": "web tool robots.txt denied. Stopped fetching; no alternate route attempted. Official DW teaching PDF verifies A2 format only, not current lesson."
+    }
+  ],
+  "english": [
+    {
+      "url": "https://www.gov.uk/government/publications/bduk-hubs-evaluation-connectivity-outcomes-in-libraries",
+      "title": "BDUK Hubs evaluation: connectivity outcomes in libraries",
+      "sourcePublishedAt": "2026-09-10",
+      "status": "collected",
+      "reason": "发现线索，未清权：评估由Belmana和GC Insight受托完成，需核对报告作者权利与样本局限；现登记未覆盖此发布机构，不得直接转化。"
+    },
+    {
+      "url": "https://www.gov.uk/government/news/thousands-more-young-people-to-access-help-with-lifes-biggest-challenges",
+      "sourcePublishedAt": "2026-09-15",
+      "status": "rejected",
+      "reason": "全文已读，但与2026-10-14-en-people-and-places-for-young-people的青年服务战略、社区支持及参与逻辑明显重叠，不再作为当天独立素材。"
+    }
+  ]
+}
