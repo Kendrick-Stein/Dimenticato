@@ -1,0 +1,533 @@
+{
+  "editionDate": "2026-10-22",
+  "baseCommit": "145689799df55f3237cfb2a2de54194354c9d58b",
+  "qualityStatus": "PASS",
+  "scope": "11 independent readings, 55 cloze and 44 comprehension questions; IT/FR/EN A2/B1/B2 and DE A2/B2.",
+  "missingSlots": [
+    {
+      "lang": "de",
+      "level": "B1",
+      "reason": "No additional distinct recent native-source full text cleared without repetition or padding; existing Halloween candidate excluded for source-integrity concerns."
+    }
+  ],
+  "independentReviews": {
+    "it-de": {
+      "2026-10-22-it-deledda-casa-e-memoria": {
+        "status": "PASS",
+        "independentAnswers": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "sourceFactsTranslationLevelLicensePracticeReview": "PASS after complete official source and Chinese/morphology review",
+        "protocol": "Article plus question prompts/options read and independent answers saved before keyed companions; revised options independently re-solved; final explanations rechecked.",
+        "resolvedFindings": [
+          "Replaced implausible or extreme distractors with parallel content-dependent alternatives; removed title-only answer and unsupported inference labels where applicable."
+        ],
+        "hashes": {
+          "articles": "2995c0f3a7a388d5727ee11f96160d8fab872324730f5cca9517b7b940aa4c7f",
+          "practice": "e80bf481d1734effcd130bb1cf636f5b9c8f47a7d95c998c793265f229429bbf",
+          "comprehension": "c4c7b2a631c7d06b7979305c817fbf9cb3d95629b97eec6851cb3db46868351a"
+        }
+      },
+      "2026-10-22-it-parma-archivio-in-immagini": {
+        "status": "PASS",
+        "independentAnswers": [
+          1,
+          2,
+          3
+        ],
+        "sourceFactsTranslationLevelLicensePracticeReview": "PASS after complete official source and Chinese/morphology review",
+        "protocol": "Article plus question prompts/options read and independent answers saved before keyed companions; revised options independently re-solved; final explanations rechecked.",
+        "resolvedFindings": [
+          "Replaced implausible or extreme distractors with parallel content-dependent alternatives; removed title-only answer and unsupported inference labels where applicable."
+        ],
+        "hashes": {
+          "articles": "c881c818b2c412072c9f5918a41eb27668d3ad4ef817e27481b0620494e188ee",
+          "practice": "5f2b59559541e680e99013e572dbf3a29d2418ae6807f0afba206b9f599cda72",
+          "comprehension": "83dd17e8dbedaa0a38d88c70c223a0e956f8a5ef6072b1daab34966104c30180"
+        }
+      },
+      "2026-10-22-it-terremoti-conoscere-e-prepararsi": {
+        "status": "PASS",
+        "independentAnswers": [
+          0,
+          2,
+          1,
+          3,
+          1
+        ],
+        "sourceFactsTranslationLevelLicensePracticeReview": "PASS after complete official source and Chinese/morphology review",
+        "protocol": "Article plus question prompts/options read and independent answers saved before keyed companions; revised options independently re-solved; final explanations rechecked.",
+        "resolvedFindings": [
+          "Replaced implausible or extreme distractors with parallel content-dependent alternatives; removed title-only answer and unsupported inference labels where applicable."
+        ],
+        "hashes": {
+          "articles": "95e4d29a574b56b8ab1565f5ca517306ecd5ea1e39b7288297f6b3d972f0224e",
+          "practice": "d702d2e7c742ccf0a6d3a5815db4fa1eb839e00ecb47500d11414367fb6941d6",
+          "comprehension": "53b669be14d0968ae337616350a1c4dea163a74c3508ccd572084ebda613ea56"
+        }
+      },
+      "2026-10-22-de-alte-texte-wieder-finden": {
+        "status": "PASS",
+        "independentAnswers": [
+          0,
+          2,
+          1
+        ],
+        "sourceFactsTranslationLevelLicensePracticeReview": "PASS after complete official source and Chinese/morphology review",
+        "protocol": "Article plus question prompts/options read and independent answers saved before keyed companions; revised options independently re-solved; final explanations rechecked.",
+        "resolvedFindings": [
+          "Replaced implausible or extreme distractors with parallel content-dependent alternatives; removed title-only answer and unsupported inference labels where applicable."
+        ],
+        "hashes": {
+          "articles": "929770c4c1e20451416da808a9b5808f2756efbb9c1d2b22d4065533196d2267",
+          "practice": "05018193799af2aafc13dea852b1598ef5574b4d13665cdfdccddb5db0ef55a6",
+          "comprehension": "f456b000c1edc3d3544b2de2bc3f305ac927818044fa8a3184ad3afc2c41f491"
+        }
+      },
+      "2026-10-22-de-zurueck-in-den-beruf": {
+        "status": "PASS",
+        "independentAnswers": [
+          0,
+          2,
+          1,
+          3,
+          0
+        ],
+        "sourceFactsTranslationLevelLicensePracticeReview": "PASS after complete official source and Chinese/morphology review",
+        "protocol": "Article plus question prompts/options read and independent answers saved before keyed companions; revised options independently re-solved; final explanations rechecked.",
+        "resolvedFindings": [
+          "Replaced implausible or extreme distractors with parallel content-dependent alternatives; removed title-only answer and unsupported inference labels where applicable."
+        ],
+        "hashes": {
+          "articles": "9c124599f156881ac8dd597d96d925f6fad5bfe3fc01613b486e3a112cf0f3ef",
+          "practice": "528224303502c78b07f2589a9e3328e9e03c25901a678804427cecb6b89c43df",
+          "comprehension": "d9525066ec908f09f127b9289bd0060bb4d4e83fe3a892410054ab48b5211921"
+        }
+      }
+    },
+    "fr": {
+      "stage": "blind-before-key",
+      "answers": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          0,
+          2
+        ],
+        [
+          3,
+          1,
+          0,
+          2,
+          1
+        ]
+      ],
+      "status": "PASS",
+      "issues": [
+        "A2 q1 answer substantially inferable from title; replace with article-dependent detail/main idea not book/hedges keyword.",
+        "A2 q2/q3 distractors mostly unrelated professions/seas/urban centers; replace with plausible agricultural/book audience or scale confusions.",
+        "B1 q1 first distractor implausible replacement of public decisions by science classes; q2 correct answer unusually technical/long; equalize phrasing.",
+        "B2 q1/q2/q3/q5 distractors contain obviously unsupported extremes (all,only,replace,renounce), not credible competing readings.",
+        "B2 q4 cautious wording giveaway, rest all already-completed/exclusive; replace with factual inference from linked sentences or balanced future-planned options."
+      ],
+      "round2BlindAnswers": {
+        "A2": [
+          2,
+          0,
+          1
+        ],
+        "B1": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "B2": [
+          3,
+          1,
+          0,
+          2,
+          1
+        ]
+      },
+      "reviewer": "root-independent",
+      "checks": [
+        "Article French and Chinese checked against complete saved official source incl headers",
+        "Publication dates, author attribution, license exclusions checked",
+        "15 cloze meanings/forms/options and exact offsets checked",
+        "12 comprehension blind solved then keys/evidence/explanations checked; distractors revised and final explanations reread"
+      ],
+      "correction": "A2 water/soil source supported by main header; earlier concern withdrawn",
+      "hashes": {
+        "articles/2026-10-22-fr-partager-les-moyens-de-comprendre-les-forets.json": "d113faff171a8b3c050a7e99bf424dda867e4465205ddac9303881cdbe35bb74",
+        "articles/2026-10-22-fr-faire-dialoguer-recherche-et-action.json": "0d81512cb4cd6d656b8a325e749674983c18bf5b323dc9ad092484c547b62453",
+        "articles/2026-10-22-fr-regarder-les-haies-autrement.json": "a2919ae3cf855d46b3fcdbeb4659785a8557ef4fdd7f73138fbcc18681d61a71",
+        "practice/2026-10-22-fr-partager-les-moyens-de-comprendre-les-forets.json": "9a83341f52385a9b0a47f80482273cf2f8ced389ed5a43eadf8580080acd3aa7",
+        "practice/2026-10-22-fr-faire-dialoguer-recherche-et-action.json": "855a500379ed277bc01dacc5806812483252ab700bb074a2942b5a624e0063c0",
+        "practice/2026-10-22-fr-regarder-les-haies-autrement.json": "5360e90331bac190884065adba891399ce01b32a602c071e98b8683e4647994e",
+        "comprehension/2026-10-22-fr-partager-les-moyens-de-comprendre-les-forets.json": "93e2b922fd10839c945b587ebdd912cfa6c852baba676412c3007e23eca23786",
+        "comprehension/2026-10-22-fr-faire-dialoguer-recherche-et-action.json": "8735430a1f930649137555e032dfacc05760f171a6ce52856e6af27ee0fb8031",
+        "comprehension/2026-10-22-fr-regarder-les-haies-autrement.json": "6eaec64caea819242f280a0beacc6100d0cf2ee3851c9862cbc88cf7aacd3dd4"
+      }
+    },
+    "en": {
+      "date": "2026-10-22",
+      "reviewer": "independent-native-reviewer",
+      "status": "pass",
+      "blindFirstPassFile": "blind-first-pass.json",
+      "articleReview": {
+        "2026-10-22-en-moving-together": {
+          "status": "pass",
+          "wordCountIndependent": 164,
+          "level": "A2",
+          "translation": "All11sentences checked; Chinese preserves age group, England-only sampling, August vs October, percentages and ten-minute start vs daily goal.",
+          "facts": "Official source retrieved independently via web. 8October2026; DCMS/StephaniePeacock;2006parents/guardians of7–11England, August14–24;82%/40%; joiningnotperformance.",
+          "sourceUrl": "https://www.gov.uk/government/news/celebrity-parents-back-government-campaign"
+        },
+        "2026-10-22-en-first-steps-into-tech": {
+          "status": "pass",
+          "wordCountIndependent": 292,
+          "level": "B1",
+          "translation": "All16sentences checked; future plans not achieved results, placements vs jobs, existingvacancies included, targetreach vs participation and disadvantagedgroups retained.",
+          "facts": "Official source retrieved independently via web.21October2026;10000over3years;20000entryjobsperyear;1millionby2028/400000disadvantaged;curriculumAda/pace/topics; allsecondaryschools.",
+          "sourceUrl": "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country"
+        },
+        "2026-10-22-en-culture-beyond-winning": {
+          "status": "pass",
+          "wordCountIndependent": 530,
+          "level": "B2",
+          "translation": "All22sentences checked, funding categories/denominators/priorvsfuture/departmentclaims and editorial inference boundaries retained.",
+          "facts": "Independent read of retained officialHTML snapshot; liveweb InternalError on this URL, not represented as live success.22October2026timestamp00:01+01;4shortlisted from9;125000minimum vs10millionprize;60000priorgrant;6500events>80%free/>30organisations/>88000residents/87%audiences all match.",
+          "sourceUrl": "https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029"
+        }
+      },
+      "practiceReview": {
+        "status": "pass",
+        "count": 15,
+        "method": "Checked each answer literalspan, grammaticalinflection, matching Chinese sentence and learning summary; all supplied alternatives incorrect for the specified Chinese meaning; no answerform errors."
+      },
+      "rightsReview": {
+        "status": "pass-with-recorded-access-limit",
+        "currentTermsVerified": "https://www.gov.uk/help/terms-conditions",
+        "basis": "Official terms usingcontent clause permits reproduction underOGL; individualpageOGLfooters; registeredsourceconditions; full institutional narration only. All directquotes, thirdpartyphotos/logos/linkedassets excluded. Attribution/modification/noendorsement retained.",
+        "limit": "NationalArchivesOGLdeed returned403 on independentcheck; no retry/alternate bypass. CurrentGOV.UKterms and repository priorOGLregistration used, not claim deed fetched."
+      },
+      "openIssues": [],
+      "republishingFullSource": false,
+      "comprehensionReview": {
+        "status": "pass-after-two-revisions",
+        "blindBeforeKey": true,
+        "count": 12,
+        "initialAnswers": {
+          "2026-10-22-en-moving-together": [
+            2,
+            0,
+            3
+          ],
+          "2026-10-22-en-first-steps-into-tech": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "2026-10-22-en-culture-beyond-winning": [
+            1,
+            3,
+            0,
+            2,
+            0
+          ]
+        },
+        "finalAnswers": {
+          "2026-10-22-en-moving-together": [
+            2,
+            0,
+            3
+          ],
+          "2026-10-22-en-first-steps-into-tech": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "2026-10-22-en-culture-beyond-winning": [
+            1,
+            3,
+            0,
+            1,
+            0
+          ]
+        },
+        "revisions": [
+          "Reclassified two directtext questions from inference to detail, avoiding false inference labels.",
+          "Replaced implausible/extreme distractors in A2c3/B1c3c4/B2c2c4 with related misreadings.",
+          "B2c2 options parallelised with same modal to remove cautiouswording cue; B2c4 correctindex now1."
+        ],
+        "finalCheck": "All12 finalquestions checked against article sentenceIDs and Chineseexplanations. Uniqueanswer supported; no grammaronly eliminations or titleonly answer. Revisionreview not falsely described as newlyblind after keys seen."
+      },
+      "files": {
+        "articles/2026-10-22-en-culture-beyond-winning.json": "9b0bdff3aeed115c2108a7ae69c5f9402ea329ec8e1b36472a0fc30f0c85d637",
+        "articles/2026-10-22-en-first-steps-into-tech.json": "13e52690948b16ec6670b88e81ddb2117d0e3bbc4113c3fa8238de42a599853d",
+        "articles/2026-10-22-en-moving-together.json": "69a14ed354a7b1f3cf7e8936af31884c39bba8525cb31f11a3c6179b29d828ec",
+        "practice/2026-10-22-en-culture-beyond-winning.json": "00625630241c863b389f3a3d5e18ff84f28303d6ff9c110c9cd7eb8cf5a5db89",
+        "practice/2026-10-22-en-first-steps-into-tech.json": "b6206e4018938ef3c88f80ade9b41efac46c39f9e514556f26ebcab3e792835a",
+        "practice/2026-10-22-en-moving-together.json": "6a1b86937886f7ba8cd755a9ab4278d3e0e7d3b9f1163536899d28378f681a53",
+        "comprehension/2026-10-22-en-culture-beyond-winning.json": "b7fd2d81bf7413d4b09030e6675e2750f52c40c84e224c9723af64848dd69189",
+        "comprehension/2026-10-22-en-first-steps-into-tech.json": "dc5674784b1e737fe6bd536885d340f299f8ba817862943fb1f6c14b50b0ca0b",
+        "comprehension/2026-10-22-en-moving-together.json": "035bf7c9571b8b8fb7a60a52e9252f13916cc33e22ab9a0ce113edad9f8c020b"
+      }
+    }
+  },
+  "articles": [
+    {
+      "articleId": "2026-10-22-fr-partager-les-moyens-de-comprendre-les-forets",
+      "language": "fr",
+      "level": "B2",
+      "bodyWhitespaceWordCount": 531,
+      "sourcePublishedAt": "2026-10-14",
+      "sourceUrl": "https://www.inrae.fr/actualites/forest-partenariat-europeen-recherche-linnovation-au-service-filieres-foret-bois-durables",
+      "license": {
+        "name": "Licence Ouverte / Open Licence Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+      },
+      "bodySha256": "88952f92b4579ff8b5619013185ab2e6cb66cf8d6f4a28cadc0d2359cb0f5146",
+      "files": {
+        "articles": "d113faff171a8b3c050a7e99bf424dda867e4465205ddac9303881cdbe35bb74",
+        "practice": "9a83341f52385a9b0a47f80482273cf2f8ced389ed5a43eadf8580080acd3aa7",
+        "comprehension": "93e2b922fd10839c945b587ebdd912cfa6c852baba676412c3007e23eca23786"
+      }
+    },
+    {
+      "articleId": "2026-10-22-it-deledda-casa-e-memoria",
+      "language": "it",
+      "level": "B1",
+      "bodyWhitespaceWordCount": 283,
+      "sourcePublishedAt": "2026-10-11",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=1880a380aa37e339589674f90c585161&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2771",
+      "license": {
+        "name": "CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      "bodySha256": "192bec583bd94c6aa881e3ea19fd4537046a76e6df31bdc9cfc3845bca1461bf",
+      "files": {
+        "articles": "2995c0f3a7a388d5727ee11f96160d8fab872324730f5cca9517b7b940aa4c7f",
+        "practice": "e80bf481d1734effcd130bb1cf636f5b9c8f47a7d95c998c793265f229429bbf",
+        "comprehension": "c4c7b2a631c7d06b7979305c817fbf9cb3d95629b97eec6851cb3db46868351a"
+      }
+    },
+    {
+      "articleId": "2026-10-22-en-moving-together",
+      "language": "en",
+      "level": "A2",
+      "bodyWhitespaceWordCount": 163,
+      "sourcePublishedAt": "2026-10-08",
+      "sourceUrl": "https://www.gov.uk/government/news/celebrity-parents-back-government-campaign",
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "bodySha256": "c033de1bae47468e64c299c94faabaf3df8504dcc088639884e12051b4d78b15",
+      "files": {
+        "articles": "69a14ed354a7b1f3cf7e8936af31884c39bba8525cb31f11a3c6179b29d828ec",
+        "practice": "6a1b86937886f7ba8cd755a9ab4278d3e0e7d3b9f1163536899d28378f681a53",
+        "comprehension": "035bf7c9571b8b8fb7a60a52e9252f13916cc33e22ab9a0ce113edad9f8c020b"
+      }
+    },
+    {
+      "articleId": "2026-10-22-en-culture-beyond-winning",
+      "language": "en",
+      "level": "B2",
+      "bodyWhitespaceWordCount": 526,
+      "sourcePublishedAt": "2026-10-22",
+      "sourceUrl": "https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029",
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "bodySha256": "efaafd86b3290c670dc03f9ee89ec11435e13113619148802ec1fd162d712514",
+      "files": {
+        "articles": "9b0bdff3aeed115c2108a7ae69c5f9402ea329ec8e1b36472a0fc30f0c85d637",
+        "practice": "00625630241c863b389f3a3d5e18ff84f28303d6ff9c110c9cd7eb8cf5a5db89",
+        "comprehension": "b7fd2d81bf7413d4b09030e6675e2750f52c40c84e224c9723af64848dd69189"
+      }
+    },
+    {
+      "articleId": "2026-10-22-de-alte-texte-wieder-finden",
+      "language": "de",
+      "level": "A2",
+      "bodyWhitespaceWordCount": 166,
+      "sourcePublishedAt": "2026-10-19",
+      "sourceUrl": "https://irights.info/artikel/irights-e-v-uebernimmt-blogarchiv-von-telemedicus/32922",
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "bodySha256": "c6a8e1962a4334af79a684f78c75f704b5ea2398d59bb19b555dbd9580de48bc",
+      "files": {
+        "articles": "929770c4c1e20451416da808a9b5808f2756efbb9c1d2b22d4065533196d2267",
+        "practice": "05018193799af2aafc13dea852b1598ef5574b4d13665cdfdccddb5db0ef55a6",
+        "comprehension": "f456b000c1edc3d3544b2de2bc3f305ac927818044fa8a3184ad3afc2c41f491"
+      }
+    },
+    {
+      "articleId": "2026-10-22-fr-faire-dialoguer-recherche-et-action",
+      "language": "fr",
+      "level": "B1",
+      "bodyWhitespaceWordCount": 286,
+      "sourcePublishedAt": "2026-09-30",
+      "sourceUrl": "https://www.inrae.fr/actualites/croiser-recherche-action-publique",
+      "license": {
+        "name": "Licence Ouverte / Open Licence Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+      },
+      "bodySha256": "740b644fd2f83cd6d8b30b233e99e103a4391f5d7c914b522ba754c154b4f625",
+      "files": {
+        "articles": "0d81512cb4cd6d656b8a325e749674983c18bf5b323dc9ad092484c547b62453",
+        "practice": "855a500379ed277bc01dacc5806812483252ab700bb074a2942b5a624e0063c0",
+        "comprehension": "8735430a1f930649137555e032dfacc05760f171a6ce52856e6af27ee0fb8031"
+      }
+    },
+    {
+      "articleId": "2026-10-22-de-zurueck-in-den-beruf",
+      "language": "de",
+      "level": "B2",
+      "bodyWhitespaceWordCount": 506,
+      "sourcePublishedAt": "2026-09-30",
+      "sourceUrl": "https://edoc.rki.de/bitstream/handle/176904/13986/johm-11-19-DE-pdf.pdf?isAllowed=y&sequence=1",
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "bodySha256": "2d558f6a0958353d7da09b13ec411797355a511cb62e84162e1a086697ee854e",
+      "files": {
+        "articles": "9c124599f156881ac8dd597d96d925f6fad5bfe3fc01613b486e3a112cf0f3ef",
+        "practice": "528224303502c78b07f2589a9e3328e9e03c25901a678804427cecb6b89c43df",
+        "comprehension": "d9525066ec908f09f127b9289bd0060bb4d4e83fe3a892410054ab48b5211921"
+      }
+    },
+    {
+      "articleId": "2026-10-22-fr-regarder-les-haies-autrement",
+      "language": "fr",
+      "level": "A2",
+      "bodyWhitespaceWordCount": 177,
+      "sourcePublishedAt": "2026-09-25",
+      "sourceUrl": "https://www.inrae.fr/actualites/multifonctionnalite-haies-enjeux-environnementaux-agricoles-juridiques-methodologiques",
+      "license": {
+        "name": "Licence Ouverte / Open Licence Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+      },
+      "bodySha256": "47817ea21338981c7d4ec2d9046d8ffb0457cca17f3b7365ff1da10b9d1dc322",
+      "files": {
+        "articles": "a2919ae3cf855d46b3fcdbeb4659785a8557ef4fdd7f73138fbcc18681d61a71",
+        "practice": "5360e90331bac190884065adba891399ce01b32a602c071e98b8683e4647994e",
+        "comprehension": "6eaec64caea819242f280a0beacc6100d0cf2ee3851c9862cbc88cf7aacd3dd4"
+      }
+    },
+    {
+      "articleId": "2026-10-22-it-parma-archivio-in-immagini",
+      "language": "it",
+      "level": "A2",
+      "bodyWhitespaceWordCount": 163,
+      "sourcePublishedAt": "2026-10-16",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=f67f6e06f96a01ba27e7c2cb1528ee64&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2788",
+      "license": {
+        "name": "CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      "bodySha256": "6d7a8a0a7194c35fbe0793ce0ba245758dbd487b843760c301902e274ff30f0e",
+      "files": {
+        "articles": "c881c818b2c412072c9f5918a41eb27668d3ad4ef817e27481b0620494e188ee",
+        "practice": "5f2b59559541e680e99013e572dbf3a29d2418ae6807f0afba206b9f599cda72",
+        "comprehension": "83dd17e8dbedaa0a38d88c70c223a0e956f8a5ef6072b1daab34966104c30180"
+      }
+    },
+    {
+      "articleId": "2026-10-22-en-first-steps-into-tech",
+      "language": "en",
+      "level": "B1",
+      "bodyWhitespaceWordCount": 289,
+      "sourcePublishedAt": "2026-10-21",
+      "sourceUrl": "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "bodySha256": "794a8b727596fe4c8d9cd64d74845166b0947e5460ba7495988fba47c36ff42e",
+      "files": {
+        "articles": "13e52690948b16ec6670b88e81ddb2117d0e3bbc4113c3fa8238de42a599853d",
+        "practice": "b6206e4018938ef3c88f80ade9b41efac46c39f9e514556f26ebcab3e792835a",
+        "comprehension": "dc5674784b1e737fe6bd536885d340f299f8ba817862943fb1f6c14b50b0ca0b"
+      }
+    },
+    {
+      "articleId": "2026-10-22-it-terremoti-conoscere-e-prepararsi",
+      "language": "it",
+      "level": "B2",
+      "bodyWhitespaceWordCount": 501,
+      "sourcePublishedAt": "2026-10-21",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/festival-della-scienza-2026-torna-a-genova-l-appuntamento-con-la-divulgazione-scientifica",
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "bodySha256": "58d08521ef1b607f8839093707d20441afb60f0a8067787f01a6e70a776fa75d",
+      "files": {
+        "articles": "95e4d29a574b56b8ab1565f5ca517306ecd5ea1e39b7288297f6b3d972f0224e",
+        "practice": "d702d2e7c742ccf0a6d3a5815db4fa1eb839e00ecb47500d11414367fb6941d6",
+        "comprehension": "53b669be14d0968ae337616350a1c4dea163a74c3508ccd572084ebda613ea56"
+      }
+    }
+  ],
+  "candidateMaintenance": {
+    "updatedIds": [
+      "it-2026-10-19-ingv-space-weather-monitoring",
+      "it-2026-10-16-dga-parma-incisioni",
+      "it-2026-10-11-dga-nuoro-casa-deledda",
+      "fr-2026-09-30-croiser-recherche-action-publique",
+      "fr-2026-10-14-forest-partenariat-europeen",
+      "it-2026-10-21-ingv-festival-genova",
+      "it-2026-10-21-ingv-georeal",
+      "it-2026-10-16-ingv-coniri-education",
+      "fr-2026-09-25-multifonctionnalite-haies",
+      "fr-2026-08-31-patrimoine-lieux-familiers",
+      "fr-2026-09-16-agroecologie-portraits",
+      "fr-2026-09-10-organisation-actions-collectives",
+      "de-2026-10-19-telemedicus-archive",
+      "de-2026-09-30-rki-return-work",
+      "dcms-new-moves-2026-10-08",
+      "dcms-tech-placements-2026-10-21",
+      "dcms-culture-shortlist-2026-10-22",
+      "en-2026-10-09-illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-conti",
+      "en-2026-10-20-water-company-bosses-update-national-drought-group-on-resili",
+      "en-2026-09-30-local-communities-to-receive-79-million-to-restore-nature"
+    ],
+    "reservePolicy": "Discovery is not editorial approval. New reserves retained at their verified or collected stage. One-week breadth remains incomplete, especially German; prioritise daily life/culture for future French sourcing."
+  },
+  "limits": [
+    "All readings within 30 days; original dates preserved.",
+    "RKI PDF explicit CC BY4.0 used despite catalogue metadata showing CC BY3.0DE; no figures/tables/database reused.",
+    "GOV.UK OGL deed returned403; current official article footers and official GOV.UK terms verified, no bypass or false fresh deed-read claim.",
+    "No full source capture files published."
+  ],
+  "tests": {
+    "status": "PASS",
+    "reading": "97 articles validated",
+    "candidates": "108 registry/evidence/date/publication-separation records passed",
+    "practice": "85 companions validated; 2912 test assertions passed",
+    "comprehension": "58 companions,232 questions validated;2722 assertions plus9 loading assertions passed",
+    "listening": "node tests/test-listening.js:235 assertions passed; no standalone listening validator/schema exists in current repository",
+    "newEditionDOM": "122 assertions across all11 new articles: load, unified translation toggle, glossary,summary,5cloze answers and all44comprehension answer/feedback rendering. DOM shim, not real browser or audio.",
+    "fullTest": "TZ=UTC npm test:44 harnesses,480671 passed,0 failed,0 known issues",
+    "baseline": "Unchanged base full test had1 timing-only quiz performance failure; isolated unchanged quiz rerun passed290. First edited full run had2 candidate-metadata failures; missing actual-source publisher and native-language evidence fields corrected then full rerun. No code or thresholds changed.",
+    "diff": "git diff --check passed;207 historical article/sidecar hashes unchanged;8 historical listening entries structurally identical",
+    "prepublicationBrowser": "Cloud browser cannot reach separate shell localhost preview. Content tests and isolated DOM checks performed before publication; formal live browser checks are post-deployment, not claimed completed here."
+  }
+}

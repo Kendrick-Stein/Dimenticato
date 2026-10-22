@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-it-terremoti-conoscere-e-prepararsi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s5",
+      "start": 33,
+      "answer": "indizi",
+      "options": [
+        "biglietti",
+        "indizi",
+        "premi",
+        "ingressi"
+      ],
+      "explanation": "按中文句意还原原文：indizi在此表示“线索”。阳性复数名词，作analizzare的宾语；其他选项不表达该句中文含义。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 184,
+      "answer": "consapevoli",
+      "options": [
+        "silenziose",
+        "antiche",
+        "lontane",
+        "consapevoli"
+      ],
+      "explanation": "按中文句意还原原文：consapevoli在此表示“有认识的”。复数形容词，修饰comunità；其他选项不表达该句中文含义。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 162,
+      "answer": "affidabile",
+      "options": [
+        "affidabile",
+        "artistica",
+        "gratuita",
+        "affollata"
+      ],
+      "explanation": "按中文句意还原原文：affidabile在此表示“可靠的”。单数形容词，修饰previsione；其他选项不表达该句中文含义。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s10",
+      "start": 109,
+      "answer": "precursori",
+      "options": [
+        "visitatori",
+        "ricercatori",
+        "precursori",
+        "organizzatori"
+      ],
+      "explanation": "按中文句意还原原文：precursori在此表示“前兆”。阳性复数名词，与sismici构成地震前兆；其他选项不表达该句中文含义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 44,
+      "answer": "conseguenze",
+      "options": [
+        "prenotazioni",
+        "conseguenze",
+        "opinioni",
+        "collezioni"
+      ],
+      "explanation": "按中文句意还原原文：conseguenze在此表示“后果”。阴性复数名词，表示事件带来的影响；其他选项不表达该句中文含义。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-fr-partager-les-moyens-de-comprendre-les-forets",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s6",
+      "start": 93,
+      "answer": "partager",
+      "options": [
+        "vendre",
+        "partager",
+        "cacher",
+        "détruire"
+      ],
+      "explanation": "中文句意需要“共享”，对应原文 partager。不定式，de 后接 partager；在这里不是“分割”，而是共同使用。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 80,
+      "answer": "parcelles",
+      "options": [
+        "machines",
+        "recettes",
+        "factures",
+        "parcelles"
+      ],
+      "explanation": "中文句意需要“地块”，对应原文 parcelles。阴性复数；les mêmes parcelles 强调长期观测保持地块一致。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 39,
+      "answer": "recenser",
+      "options": [
+        "recenser",
+        "fermer",
+        "déplacer",
+        "privatiser"
+      ],
+      "explanation": "中文句意需要“清查”，对应原文 recenser。不定式，destinées à recenser 表示活动的用途；即识别并列出资源。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s14",
+      "start": 118,
+      "answer": "harmoniser",
+      "options": [
+        "interrompre",
+        "dissimuler",
+        "harmoniser",
+        "abandonner"
+      ],
+      "explanation": "中文句意需要“协调统一”，对应原文 harmoniser。不定式，pour 后表示目的；统一测量规程便于共享与比较。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s21",
+      "start": 106,
+      "answer": "comparables",
+      "options": [
+        "invisibles",
+        "comparables",
+        "interdits",
+        "payants"
+      ],
+      "explanation": "中文句意需要“可比较的”，对应原文 comparables。形容词复数，与 travaux 一致；并不表示完全相同。"
+    }
+  ]
+}

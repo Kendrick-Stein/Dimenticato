@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-10-22",
+  "status": "all-four-pass",
+  "scope": "Four outbound official resources; IT/EN three original questions each, FR/DE resource-only. No media, transcript, images or original exercise set copied.",
+  "playback": "Not tested; no audio quality or media-access claims.",
+  "sourceReview": {
+    "date": "2026-10-22",
+    "status": "reviewed-pass",
+    "publicationMode": "outbound-official-links-only",
+    "noMediaCopied": true,
+    "noFullTranscriptCopied": true,
+    "sourceChecks": [
+      {
+        "id": "it-rai-telefono-a1",
+        "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Per-usare-litaliano-pronto-chi-parla-fcc73ec1-10b0-4165-b89b-bd9ee1e045f5.html",
+        "retrievedAt": "2026-10-22",
+        "references": [
+          "turn218view0 lines 392-416 (A1 and Pauline)",
+          "turn218view0 lines 450-452 (Kevin)",
+          "turn218view0 lines 484-488 (party vs birthday)"
+        ],
+        "dateEvidence": "Official HTML meta property=data content=2021-06-10, fetched via urllib; canonical URL matches.",
+        "evidenceSummary": "Pauline asks for Dr Gandini; Kevin volunteers to telephone Aponivi and Sara; Zou distinguishes a Saturday party from a Sunday birthday.",
+        "copyright": "Rai copyrighted course. Only outbound link, original guide and original comprehension questions; no transcript, media, images or original exercise copied. No republication license asserted.",
+        "questionAuthorReview": [
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "id": "fr-tv5-nos-vetements-a1",
+        "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/nos-vetements",
+        "retrievedAt": "2026-10-22",
+        "references": [
+          "turn221view1 lines 36-61 A1/provider/date/availability",
+          "turn221view1 lines 89,142,177 vocabulary",
+          "turn224view1 official exercise landing"
+        ],
+        "evidenceSummary": "Official A1 clothing course, authored Alice Reboul/Hachette FLE, first published16 April2024 and updated2 December2024. Full corresponding transcript not obtained, so questions absent.",
+        "copyright": "TV5MONDE/Hachette FLE; outbound link and brief original guide only, no exercise copying, media or thumbnail."
+      },
+      {
+        "id": "de-logo-klimabericht-20261021",
+        "url": "https://www.logo.de/un-bericht-klimawandel-unwetter-102.html",
+        "retrievedAt": "2026-10-22",
+        "references": [
+          "turn218view1 lines35-43 official title/date/summary",
+          "turn215view0 lines81-87 title/duration1:41"
+        ],
+        "evidenceSummary": "Official date21 October2026; page topic climate report. Full media/transcript not verified; no questions or claimed numerical facts added.",
+        "copyright": "ZDF copyrighted media; outbound link only, no iframe, video, subtitles or image reuse."
+      },
+      {
+        "id": "en-bc-missing-class-a2",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/missing-class",
+        "retrievedAt": "2026-10-22",
+        "references": [
+          "turn221view2 lines25-30 notebook",
+          "turn221view2 lines34-38 practice test purpose",
+          "turn221view2 lines42-44 return agreement",
+          "turn224view0 official worksheet pages0-1 compared"
+        ],
+        "evidenceSummary": "Teacher consults notebook before setting readings; practice test prepares students for mid-term; Diana agrees to return it before Friday. No exact publication date on official page; worksheet copyright2019 is not treated as date.",
+        "copyright": "British Council copyrighted material; original questions use different prompts/options from provider worksheet, no copied transcript/exercise set/media/images. Q3 concerns return commitment, not the provider send method or generic homework deadline.",
+        "questionAuthorReview": [
+          2,
+          0,
+          3
+        ]
+      }
+    ],
+    "limits": [
+      "No actual audio playback or sound-quality test by author.",
+      "French and German are resource-only; no comprehension inferred from metadata."
+    ],
+    "entryHashes": {
+      "it-rai-telefono-a1": "d44c5a94f29f642aa2f335839dae0f8778d8031d62907e108ea0f5efcc55f902",
+      "fr-tv5-nos-vetements-a1": "7f45e54f89eddae59df5e7d31e77fdf6d82baed7caf31f821ae88b12dd1fd2e6",
+      "de-logo-klimabericht-20261021": "b0539be2ca4e1f67ef5800456b3088828c36520fbac704328e852e6dff4b015d",
+      "en-bc-missing-class-a2": "c367f127bbe950474731d3705f5e6d6fab4fe338c00bb8ffc58958181e683e28"
+    }
+  },
+  "independentReview": {
+    "stage": "blind-then-key-checked",
+    "answers": {
+      "it-rai-telefono-a1": [
+        1,
+        2,
+        0
+      ],
+      "en-bc-missing-class-a2": [
+        2,
+        0,
+        3
+      ]
+    },
+    "ambiguities": [],
+    "basis": "Official corresponding text read via web; audio not auditioned.",
+    "questionsPass": 6,
+    "keysMatch": true,
+    "explanations": "PASS: official text supports all six; IT birthday vs party distinction supported.",
+    "resourceMetadata": "FR official A1, publication2024-04-16, expiry2028-03-04 verified; DE publication2026-10-21 and1:41 verified. RAI A1 verified; exact original day requires coordinator metadata evidence.",
+    "originality": "BC official task1/task2 checked via web; new prompts and options are not copies.",
+    "limitations": [
+      "No media audio audition",
+      "No complete transcript or external HTML saved"
+    ],
+    "entriesSha256": "410fea4bc48946de291df2cd554acf7378fe417849523ca1eefeb22181794b05"
+  }
+}

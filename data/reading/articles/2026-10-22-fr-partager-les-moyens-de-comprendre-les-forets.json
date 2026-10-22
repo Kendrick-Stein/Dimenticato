@@ -1,0 +1,324 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-fr-partager-les-moyens-de-comprendre-les-forets",
+  "storyId": "partager-les-moyens-de-comprendre-les-forets-2026-10-14",
+  "lang": "fr",
+  "date": "2026-10-22",
+  "title": "Partager les moyens de comprendre les forêts",
+  "titleZh": "共享理解森林的工具",
+  "summaryZh": "FOREST把跨国研究、长期观测与实际管理联系起来。共享设备和数据能带来什么，又为何不能把合作计划直接当作生态成效？",
+  "level": "B2",
+  "levelReason": "编辑估计B2：包含长句、关系从句、让步及条件表达，区分基础设施、研究议程与治理需求；通过对国家和欧洲项目的比较理解作用范围，保留未来行动和预期效果的证据边界。",
+  "category": "environment",
+  "topics": [
+    "森林",
+    "欧洲合作",
+    "知识共享"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE",
+    "title": "FOREST, un partenariat européen pour la recherche et l’innovation au service de filières forêt-bois durables",
+    "url": "https://www.inrae.fr/actualites/forest-partenariat-europeen-recherche-linnovation-au-service-filieres-foret-bois-durables",
+    "publishedAt": "2026-10-14",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "原文：INRAE（网页未单列个人作者），INRAE。标题、原始发布日期及原站链接见来源信息。机构正文依 Licence Ouverte 2.0 使用；Dimenticato 制作法语分级改写、中文翻译及教学补充，不代表原机构认可。",
+  "adaptation": "2026-10-22整理，原文发表于2026-10-14，不是当天新闻。仅改写机构网页正文；不使用图片、书籍正文、附件、第三方引语或外链材料。保留原文计划与已完成事项的区别；口语问题和表达属于教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Les forêts européennes sont confrontées à des sécheresses, à des tempêtes, à des incendies, mais aussi à des ravageurs et à des maladies.",
+      "zh": "欧洲森林面临干旱、风暴、火灾，也面临害虫和疾病。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Ces risques posent des questions communes à plusieurs pays, alors que la gestion forestière doit également répondre aux attentes de la société et aux différents usages du bois.",
+      "zh": "这些风险向多个国家提出了共同问题，而森林管理还必须回应社会期待以及木材的不同用途。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Dans un article publié le 14 octobre 2026, INRAE présente FOREST, un partenariat européen officiellement lancé la veille à Helsinki pour une durée de dix ans.",
+      "zh": "在2026年10月14日发表的一篇文章中，INRAE介绍了FOREST这一欧洲伙伴计划；该计划前一天在赫尔辛基正式启动，为期十年。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Il doit rassembler plus de cent organisations de vingt-huit pays, sous la coordination du ministère finlandais de l’Agriculture et des Forêts.",
+      "zh": "在芬兰农业与林业部的协调下，它将汇集来自二十八个国家的一百多个组织。",
+      "glosses": [
+        {
+          "surface": "coordination",
+          "lemma": "coordination",
+          "zh": "协调",
+          "note": "阴性单数名词；sous la coordination de 表示在……协调下。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Le partenariat financera des projets associant des équipes de plusieurs pays afin de rapprocher leurs recherches, leurs observations et leurs pratiques de gestion.",
+      "zh": "该伙伴计划将资助多个国家团队参与的项目，以促进研究、观测和管理实践之间的衔接。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Il ne s’agit donc pas uniquement de multiplier les échanges : le dispositif prévoit aussi de partager des moyens de travail que peu d’équipes peuvent réunir seules.",
+      "zh": "因此，它不仅是增加交流：该机制还计划共享少有团队能够独自集齐的工作条件与资源。",
+      "glosses": [
+        {
+          "surface": "partager",
+          "lemma": "partager",
+          "zh": "共享",
+          "note": "不定式，de 后接 partager；在这里不是“分割”，而是共同使用。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Pour étudier une forêt, il faut notamment suivre les mêmes arbres sur les mêmes parcelles pendant des années, disposer de laboratoires spécialisés et accéder à des bases de données.",
+      "zh": "研究一片森林尤其需要多年跟踪同一地块上的同一批树木，具备专业实验室，并能够访问数据库。",
+      "glosses": [
+        {
+          "surface": "parcelles",
+          "lemma": "parcelle",
+          "zh": "地块",
+          "note": "阴性复数；les mêmes parcelles 强调长期观测保持地块一致。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Les expérimentations peuvent également comparer différentes essences ou différents modes de gestion, ce qui donne une place importante aux dispositifs installés sur le terrain.",
+      "zh": "实验还可以比较不同树种或不同管理方式，因此实地设置的研究设施具有重要地位。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "INRAE pilote les activités destinées à recenser les infrastructures disponibles et à faciliter leur accès aux chercheurs des autres pays européens.",
+      "zh": "INRAE牵头开展清查现有基础设施并便利其他欧洲国家研究者使用这些设施的活动。",
+      "glosses": [
+        {
+          "surface": "recenser",
+          "lemma": "recenser",
+          "zh": "清查",
+          "note": "不定式，destinées à recenser 表示活动的用途；即识别并列出资源。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "L’institut coordonne déjà IN-SYLVA, consacrée aux forêts, ainsi que les volets français d’autres infrastructures liées aux écosystèmes et à leurs échanges avec l’atmosphère.",
+      "zh": "该机构已经协调专门研究森林的IN-SYLVA，也协调其他涉及生态系统及其与大气交换的基础设施的法国部分。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Le programme scientifique de FOREST s’appuie sur un agenda élaboré dans le cadre du projet EUFORE, à partir de plus de deux mille contributions.",
+      "zh": "FOREST的科学计划依据的是EUFORE项目框架内制定的研究议程，该议程吸收了两千多份意见。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Chercheurs, professionnels de la forêt, industriels et décideurs ont contribué à cette préparation, qui articule le fonctionnement des écosystèmes, leur adaptation, les pratiques de gestion et les attentes sociales.",
+      "zh": "研究者、林业专业人士、工业界人员和决策者参与了准备工作，将生态系统运作及适应、管理实践与社会期待联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Cette dimension européenne se comprend aussi par la géographie : les grands ensembles forestiers, méditerranéens, montagnards ou nordiques, dépassent les frontières nationales.",
+      "zh": "这一欧洲层面的安排也可从地理理解：地中海、山地或北欧的大型森林区域跨越国界。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "À partir de 2027, des projets pilotes doivent réunir six à sept partenaires pendant dix-huit à vingt-quatre mois pour harmoniser des protocoles de mesure et mettre des données en commun.",
+      "zh": "从2027年起，试点项目计划让六至七个合作伙伴共同工作十八至二十四个月，以协调测量规程并共享数据。",
+      "glosses": [
+        {
+          "surface": "harmoniser",
+          "lemma": "harmoniser",
+          "zh": "协调统一",
+          "note": "不定式，pour 后表示目的；统一测量规程便于共享与比较。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "À la date de publication, ces travaux sont donc annoncés ; leurs effets ne peuvent pas encore être présentés comme des résultats obtenus.",
+      "zh": "因此，在文章发表时，这些工作仍处于预告阶段；其效果还不能被表述为已经取得的成果。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "FOREST cherche également à harmoniser et à adapter les inventaires forestiers nationaux, qui permettent de suivre l’état des forêts.",
+      "zh": "FOREST也力求协调和调整各国用于跟踪森林状况的森林清查。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "En France, ces inventaires sont réalisés par l’IGN, avec lequel des équipes INRAE travaillent déjà sur les méthodes de suivi des dommages et les indicateurs de biodiversité.",
+      "zh": "在法国，这些清查由IGN实施；INRAE的一些团队已与其合作研究损害监测方法和生物多样性指标。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Le partenariat prévoit en outre un réseau de laboratoires vivants, où scientifiques et gestionnaires pourront expérimenter ensemble des pratiques en conditions réelles.",
+      "zh": "该伙伴计划还拟建立生活实验室网络，让科学家与管理者能在真实条件下共同试验实践方法。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "L’enjeu est de vérifier qu’une méthode issue de la recherche répond aux besoins du terrain, plutôt que de séparer sa conception de ses usages.",
+      "zh": "关键在于验证研究产生的方法是否回应实地需求，而不是把方法设计与使用割裂开来。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "Il faut enfin distinguer FOREST du programme national FORESTT : ce dernier finance des équipes françaises, tandis que le partenariat européen soutient des projets entre plusieurs pays.",
+      "zh": "最后，需要区分FOREST与法国国家计划FORESTT：后者资助法国团队，而欧洲伙伴计划支持多个国家之间的项目。",
+      "glosses": [
+        {
+          "surface": "tandis que",
+          "lemma": "tandis que",
+          "zh": "而；与此同时",
+          "note": "连词词组，本句用来对比两个计划的资助范围。"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Leurs priorités se recoupent, et des recherches engagées en France pourraient être rapprochées de travaux comparables ailleurs en Europe.",
+      "zh": "两者的优先方向有所重叠，因此法国开展的研究可能与欧洲其他地方的类似工作衔接。",
+      "glosses": [
+        {
+          "surface": "comparables",
+          "lemma": "comparable",
+          "zh": "可比较的",
+          "note": "形容词复数，与 travaux 一致；并不表示完全相同。"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Cette complémentarité ouvre des possibilités de coopération ; elle ne constitue pas, à elle seule, la preuve que les forêts sont déjà devenues plus résistantes.",
+      "zh": "这种互补性为合作开辟了可能性；但它本身并不能证明森林已经变得更加具有抵抗力。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "partager",
+        "lemma": "partager",
+        "zh": "共享",
+        "note": "不定式，de 后接 partager；在这里不是“分割”，而是共同使用。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "parcelles",
+        "lemma": "parcelle",
+        "zh": "地块",
+        "note": "阴性复数；les mêmes parcelles 强调长期观测保持地块一致。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "recenser",
+        "lemma": "recenser",
+        "zh": "清查",
+        "note": "不定式，destinées à recenser 表示活动的用途；即识别并列出资源。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "harmoniser",
+        "lemma": "harmoniser",
+        "zh": "协调统一",
+        "note": "不定式，pour 后表示目的；统一测量规程便于共享与比较。",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "comparables",
+        "lemma": "comparable",
+        "zh": "可比较的",
+        "note": "形容词复数，与 travaux 一致；并不表示完全相同。",
+        "sentenceId": "s21"
+      },
+      {
+        "text": "coordination",
+        "lemma": "coordination",
+        "zh": "协调",
+        "note": "阴性单数名词；sous la coordination de 表示在……协调下。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "tandis que",
+        "lemma": "tandis que",
+        "zh": "而；与此同时",
+        "note": "连词词组，本句用来对比两个计划的资助范围。",
+        "sentenceId": "s20"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Il ne s’agit donc pas uniquement de",
+        "zh": "因此这不仅是要",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "mettre des données en commun",
+        "zh": "共享数据",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "à elle seule",
+        "zh": "仅凭其自身",
+        "sentenceId": "s22"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s15",
+        "note": "ne peuvent pas encore être présentés：情态动词+被动语态，谨慎区分计划与证据。"
+      },
+      {
+        "sentenceId": "s20",
+        "note": "tandis que 连接两种不同范围，避免把国家计划与跨国合作混为一谈。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quels outils ou connaissances serait-il utile de partager entre pays pour gérer un problème commun ?",
+        "zh": "为了处理共同问题，国家之间共享哪些工具或知识会有帮助？"
+      },
+      {
+        "text": "Pourquoi une méthode conçue en laboratoire doit-elle aussi être examinée sur le terrain ?",
+        "zh": "为什么在实验室设计的方法还应接受实地检验？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Les priorités se recoupent, mais les moyens diffèrent.",
+        "zh": "优先方向有所重叠，但手段不同。",
+        "note": "比较相近项目时，先指出交集，再说明区别。"
+      },
+      {
+        "text": "Il faut distinguer une intention d’un résultat.",
+        "zh": "必须区分意图与结果。",
+        "note": "讨论计划和证据时使用。"
+      },
+      {
+        "text": "Cela ne constitue pas, à lui seul, une preuve.",
+        "zh": "这本身并不能构成证据。",
+        "note": "lui 指阳性名词；指阴性名词时用 elle。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-fr-partager-les-moyens-de-comprendre-les-forets",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle logique relie les différents moyens présentés dans le texte ?",
+      "promptZh": "文中介绍的不同手段由什么逻辑联系起来？",
+      "options": [
+        "Relier les inventaires nationaux à un service central qui réaliserait les mesures.",
+        "Relier les attentes sociales à une campagne européenne de communication forestière.",
+        "Relier les usages industriels du bois à des formations pour les gestionnaires.",
+        "Relier les équipes, les outils partagés et les besoins concrets de gestion."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s5",
+        "s6",
+        "s9",
+        "s18",
+        "s19"
+      ],
+      "explanationZh": "第5、6、9句强调跨国团队和资源共享，第18、19句把研究与真实管理需求联系起来。文中并未把计划描述成集中测量服务、宣传活动或以工业用途培训为中心。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi l’accès partagé aux infrastructures est-il important ici ?",
+      "promptZh": "为什么共享基础设施的使用权在这里很重要？",
+      "options": [
+        "Les pays souhaitent raccourcir le suivi des arbres pour accélérer les comparaisons.",
+        "L’étude des forêts nécessite des moyens durables difficiles à réunir pour une équipe.",
+        "Les gestionnaires souhaitent confier leurs observations courantes aux laboratoires spécialisés.",
+        "Les partenaires veulent installer les mêmes équipements dans chaque forêt étudiée."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "第6至8句说明长期跟踪、实验室、数据库和实地实验需要多种资源，少有单个团队能独立集齐。共享不是为了缩短观测期、代替管理者日常记录或给每片森林配置同样设备。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quel est le rôle des contributions recueillies dans EUFORE ?",
+      "promptZh": "EUFORE收集的意见起什么作用？",
+      "options": [
+        "Elles nourrissent un agenda reliant écosystèmes, gestion et attentes sociales.",
+        "Elles classent les infrastructures selon leur coût et leur disponibilité.",
+        "Elles évaluent les résultats de projets déjà financés par FOREST.",
+        "Elles sélectionnent les partenaires de chaque futur projet pilote."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第11、12句说明两千多份意见参与科学议程形成，涵盖生态系统、适应、管理和社会期待；它们不是设施成本排名、已资助项目的效果评价或逐个试点伙伴的遴选。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Quel rapprochement entre deux passages explique l’intérêt d’harmoniser les mesures ?",
+      "promptZh": "联系文中哪两方面，可以解释协调测量方法的意义？",
+      "options": [
+        "Les risques touchent plusieurs pays ; chaque équipe peut donc choisir un indicateur différent.",
+        "Les usages du bois sont variés ; les inventaires doivent donc privilégier les besoins industriels.",
+        "Les massifs dépassent les frontières ; des méthodes communes facilitent les observations partagées.",
+        "Les projets durent plusieurs mois ; les mesures doivent donc porter sur des arbres nouveaux."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s7",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "第13句说明森林区域跨国，第5、14句说明合作观察、协调方法与共享数据，将两者联系起来可推知共同方法有助于跨国观察。不同指标、优先工业或更换树木均不是这个联系，第7句还强调长期跟踪同一批树木。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "En quoi FOREST et FORESTT sont-ils complémentaires selon le texte ?",
+      "promptZh": "根据本文，FOREST与FORESTT在哪方面形成互补？",
+      "options": [
+        "Leurs sujets se ressemblent, mais ils interviennent à deux étapes successives des projets.",
+        "Leurs priorités se recoupent, mais leurs cadres de coopération ont des portées différentes.",
+        "Leurs équipes sont communes, mais elles se répartissent entre observation et gestion.",
+        "Leurs outils sont partagés, mais ils se distinguent par les essences forestières étudiées."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s20",
+        "s21"
+      ],
+      "explanationZh": "第20句对比法国团队资助与跨国项目，第21句说明优先方向重叠。因此区别在合作范围，并非先后阶段、共同团队的观察与管理分工，或所研究树种。"
+    }
+  ]
+}

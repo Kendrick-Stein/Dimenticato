@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-en-moving-together",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "c1",
+      "kind": "detail",
+      "prompt": "Who was asked about activity in the survey?",
+      "options": [
+        "Parents of teenagers across Britain.",
+        "Children attending sports clubs in England.",
+        "Parents and guardians of young children in England.",
+        "Sports teachers working in British schools."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "s5说明对象是英格兰七至十一岁儿童的家长和监护人，并非儿童本人、教师或全英国青少年家长。"
+    },
+    {
+      "id": "c2",
+      "kind": "cause",
+      "prompt": "Why does the campaign suggest short periods of movement?",
+      "options": [
+        "Some parents say they do not have enough time.",
+        "Most children already take part every day.",
+        "The survey only studied ten-minute lessons.",
+        "Families asked for longer sports lessons."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "s8的时间不足与s9的therefore构成明确原因关系；没有说调查只研究十分钟课程。"
+    },
+    {
+      "id": "c3",
+      "kind": "main-idea",
+      "prompt": "What is the campaign’s main approach in this article?",
+      "options": [
+        "Help families improve a familiar sport before trying another.",
+        "Use regular lessons to compare parents’ and children’s progress.",
+        "Treat a short period together as the complete daily activity goal.",
+        "Start together and build activity without needing to be skilled."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "正文强调无需先擅长、先短时开始并增加活动量，核心是共同参与而非成绩比较。"
+    }
+  ]
+}

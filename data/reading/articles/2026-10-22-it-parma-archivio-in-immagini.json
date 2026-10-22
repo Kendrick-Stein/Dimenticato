@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-it-parma-archivio-in-immagini",
+  "storyId": "dga-parma-incisioni-2026-10-16",
+  "lang": "it",
+  "date": "2026-10-22",
+  "title": "Un archivio da guardare con occhi nuovi",
+  "titleZh": "换个角度看档案馆",
+  "summaryZh": "帕尔马的一场版画展通过25件作品，让公众从空间与图像接近档案记忆。",
+  "level": "A2",
+  "levelReason": "编辑估计：具体展览与参观情境，短句和常用现在时；艺术术语配中文辅助。",
+  "category": "culture",
+  "topics": [
+    "艺术展览",
+    "档案空间"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "Parma | \"Archivio Inciso. Memoria sedimentata\": le incisioni di Daniela Savini all’Archivio di Stato",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=f67f6e06f96a01ba27e7c2cb1528ee64&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2788",
+    "publishedAt": "2026-10-16",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：Ministero della Cultura — Direzione generale Archivi（机构署名，未列个人文字作者）。原题、原日期与链接见来源信息。Dimenticato依据CC BY 3.0进行同语言分级改写、中文翻译及原创教学补充；本篇教学材料采用同一许可，不表示原机构认可。",
+  "adaptation": "2026-10-22整理，原文发表于2026-10-16。仅改写机构新闻文字，不使用照片、图像、标志、第三方作品或直接引语。事件安排与实际发生状态分开；中文释义、讨论和练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A Parma, l’Archivio di Stato presenta una mostra dell’artista Daniela Savini, aperta dal 16 ottobre al 4 dicembre 2026.",
+      "zh": "帕尔马国家档案馆推出艺术家Daniela Savini的展览，展期为2026年10月16日至12月4日。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "La mostra si chiama Archivio Inciso. Memoria sedimentata e presenta venticinque incisioni create per questo luogo.",
+      "zh": "展览名为“刻入的档案：沉积的记忆”，展出专为这里创作的25幅版画。",
+      "glosses": [
+        {
+          "surface": "incisioni",
+          "lemma": "incisione",
+          "zh": "版画",
+          "note": "阴性复数名词；这里指刻版后印制的作品"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "L’artista ha vissuto e studiato a Parma, quindi questo archivio ha anche un significato personale per lei.",
+      "zh": "艺术家曾在帕尔马生活和学习，因此这座档案馆对她也有个人意义。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Nelle opere non ci sono soltanto documenti: anche le stanze, gli scaffali e i depositi raccontano la memoria del territorio.",
+      "zh": "作品中不只有文献：房间、书架和库房也讲述着地方的记忆。",
+      "glosses": [
+        {
+          "surface": "scaffali",
+          "lemma": "scaffale",
+          "zh": "书架",
+          "note": "阳性复数名词，与stanze和depositi并列"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Savini parte dalle fotografie degli ambienti e le trasforma in incisioni, con la tecnica della puntasecca su carta.",
+      "zh": "Savini从室内空间的照片出发，使用纸上干刻版画技法，把它们转化为版画。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Ha già lavorato negli archivi di Mantova e Modena; ora continua il suo percorso a Parma.",
+      "zh": "她此前已在曼托瓦和摩德纳的档案馆开展创作，如今在帕尔马继续这一历程。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "L’ingresso è gratuito e gli orari cambiano secondo il giorno della settimana.",
+      "zh": "入场免费，开放时间随星期几而不同。",
+      "glosses": [
+        {
+          "surface": "gratuito",
+          "lemma": "gratuito",
+          "zh": "免费的",
+          "note": "阳性单数形容词，与ingresso一致"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Il sito indica anche alcune aperture più lunghe e visite su prenotazione negli altri giorni.",
+      "zh": "网站还列出部分延长开放的日期，以及其他日期需预约的参观。",
+      "glosses": [
+        {
+          "surface": "prenotazione",
+          "lemma": "prenotazione",
+          "zh": "预约",
+          "note": "阴性单数名词；su prenotazione意为须预约"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Un nuovo catalogo accompagnerà il progetto e sarà presentato alla conclusione della mostra.",
+      "zh": "项目还将配有一本新图录，并在展览结束时介绍。",
+      "glosses": [
+        {
+          "surface": "catalogo",
+          "lemma": "catalogo",
+          "zh": "图录",
+          "note": "阳性单数名词，指展览作品目录"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Questa iniziativa propone un modo diverso per conoscere le collezioni: osservare gli spazi che custodiscono la storia.",
+      "zh": "这项活动提供了一种认识馆藏的不同方式：观察保存历史的空间。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "incisioni",
+        "zh": "版画",
+        "sentenceId": "s2",
+        "lemma": "incisione",
+        "note": "阴性复数名词；这里指刻版后印制的作品"
+      },
+      {
+        "text": "scaffali",
+        "zh": "书架",
+        "sentenceId": "s4",
+        "lemma": "scaffale",
+        "note": "阳性复数名词，与stanze和depositi并列"
+      },
+      {
+        "text": "gratuito",
+        "zh": "免费的",
+        "sentenceId": "s7",
+        "lemma": "gratuito",
+        "note": "阳性单数形容词，与ingresso一致"
+      },
+      {
+        "text": "prenotazione",
+        "zh": "预约",
+        "sentenceId": "s8",
+        "lemma": "prenotazione",
+        "note": "阴性单数名词；su prenotazione意为须预约"
+      },
+      {
+        "text": "catalogo",
+        "zh": "图录",
+        "sentenceId": "s9",
+        "lemma": "catalogo",
+        "note": "阳性单数名词，指展览作品目录"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "parte dalle fotografie",
+        "zh": "从照片出发",
+        "sentenceId": "s5",
+        "note": "partire da表示以某物为起点"
+      },
+      {
+        "text": "un modo diverso",
+        "zh": "一种不同方式",
+        "sentenceId": "s10",
+        "note": "modo后可接per＋不定式说明用途"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "non soltanto强调不只关注文献，还关注收藏文献的空间。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quale spazio di un museo o di un archivio vorresti fotografare?",
+        "zh": "你想拍摄博物馆或档案馆的哪个空间？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "parte dalle fotografie",
+        "zh": "从照片出发",
+        "note": "partire da表示以某物为起点"
+      },
+      {
+        "text": "un modo diverso",
+        "zh": "一种不同方式",
+        "note": "modo后可接per＋不定式说明用途"
+      }
+    ]
+  }
+}

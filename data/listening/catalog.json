@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-21",
+  "verifiedAt": "2026-10-22",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -520,6 +520,235 @@
           "answerIndex": 0,
           "evidenceRef": "official-transcript-message-2-bus-directions",
           "explanationZh": "对公交乘客的安排是乘80路到Brownsville，到达后打电话，让人开车来接。"
+        }
+      ]
+    },
+    {
+      "id": "it-rai-telefono-a1",
+      "lang": "it",
+      "title": "Per usare l’italiano: pronto, chi parla?",
+      "titleZh": "接听电话：找人、传话与约时间",
+      "provider": "Rai Scuola",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Per-usare-litaliano-pronto-chi-parla-fcc73ec1-10b0-4165-b89b-bd9ee1e045f5.html",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-22",
+      "sourcePublishedAt": "2021-06-10",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青课程：用电话情境练习听出找谁、谁负责联系，以及聚会与生日的不同日期。",
+      "guideZh": "第一遍先听人物名字；第二遍留意由谁打电话，以及星期几。最后对照原站文字稿，复听自己漏掉的片段。",
+      "verificationZh": "依据官方对应文字稿核对；日期来自官方页面元数据，按常青课程收录。未实际检验音视频播放或音质。",
+      "vocabulary": [
+        {
+          "text": "Pronto?",
+          "zh": "喂？（接听电话）"
+        },
+        {
+          "text": "per favore",
+          "zh": "请；劳驾"
+        },
+        {
+          "text": "avvertire",
+          "zh": "通知；告知"
+        },
+        {
+          "text": "il compleanno",
+          "zh": "生日"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-telefono-1",
+          "prompt": "Chi cerca Pauline al telefono?",
+          "promptZh": "Pauline 在电话中找谁？",
+          "options": [
+            "Kevin.",
+            "Il dottor Gandini.",
+            "Aponivi.",
+            "Padma."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "rai-telephone-transcript-pauline",
+          "explanationZh": "Pauline 自报姓名后询问 Gandini 医生是否在；Padma 是另一段中 Giuseppe 要找的人。"
+        },
+        {
+          "id": "it-telefono-2",
+          "prompt": "Chi dice che telefona ad Aponivi e a Sara?",
+          "promptZh": "谁说自己会给 Aponivi 和 Sara 打电话？",
+          "options": [
+            "Giuseppe.",
+            "Zou.",
+            "Kevin.",
+            "Angel."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "rai-telephone-transcript-kevin",
+          "explanationZh": "Giuseppe 先问谁通知 Aponivi，Kevin 随即表示由自己给 Aponivi 和 Sara 打电话。"
+        },
+        {
+          "id": "it-telefono-3",
+          "prompt": "Quando è il compleanno del fratello di Zou?",
+          "promptZh": "Zou 的兄弟实际是哪天过生日？",
+          "options": [
+            "Domenica.",
+            "Sabato.",
+            "Venerdì.",
+            "Giovedì."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "rai-telephone-transcript-birthday",
+          "explanationZh": "Zou 先说聚会在星期六，随后补充实际生日在星期日；要区分聚会日期与生日。"
+        }
+      ]
+    },
+    {
+      "id": "fr-tv5-nos-vetements-a1",
+      "lang": "fr",
+      "title": "Nos vêtements",
+      "titleZh": "我们穿什么？衣着表达",
+      "provider": "TV5MONDE · Hachette FLE",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/nos-vetements",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-22",
+      "sourcePublishedAt": "2024-04-16",
+      "availableUntil": "2028-03-04",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "常青初学课程：听中学生谈衣着，积累日常服装词。",
+      "guideZh": "先看原站视频，尝试听出服装名称；复听时借助字幕辨认冠词，选一句描述自己今天衣着的话练习。",
+      "verificationZh": "已核对官方A1分级、原发布日期和可用期限；未取得完整对应文字稿，未实测媒体，不设置本站理解题。",
+      "vocabularyLabel": "原站课程词汇预习",
+      "vocabulary": [
+        {
+          "text": "un pantalon",
+          "zh": "一条长裤"
+        },
+        {
+          "text": "une chemise",
+          "zh": "一件衬衫"
+        },
+        {
+          "text": "une veste",
+          "zh": "一件外套"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "de-logo-klimabericht-20261021",
+      "lang": "de",
+      "title": "Wird die Erde noch wärmer als gedacht?",
+      "titleZh": "气候报告：地球还会变得更热吗？",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/un-bericht-klimawandel-unwetter-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-10-22",
+      "sourcePublishedAt": "2026-10-21",
+      "duration": "1:41",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "一则围绕气候报告的短视频，练习辨认天气与气候主题词。",
+      "guideZh": "先听整体话题，再找出自己认识的天气词。复听时注意现在的现象与未来的可能变化，不必一次听懂所有信息。",
+      "verificationZh": "官方页面标注2026-10-21，首页列出视频时长1:41；仅核对页面信息，未核验完整视频或逐字稿，不设理解题。母语儿童节目，未作CEFR分级。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "die Hitze",
+          "zh": "高温；酷热"
+        },
+        {
+          "text": "die Überschwemmung",
+          "zh": "洪水；水灾"
+        },
+        {
+          "text": "der Klimaschutz",
+          "zh": "气候保护"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "en-bc-missing-class-a2",
+      "lang": "en",
+      "title": "Missing a class",
+      "titleZh": "请假之后：听懂老师的安排",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/missing-class",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-22",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青课程：听学生与老师商量缺课后的学习安排，区分阅读、练习测验与交回要求。",
+      "guideZh": "第一遍听两人在解决什么问题；第二遍按顺序记下老师的安排。留意练习测验的用途，以及学生需要做出的回应。",
+      "verificationZh": "依据官方对应文字稿核对原创题，并对照原站练习避免复制；原发布日期未标明，按常青课程收录。未实际检验播放或音质。",
+      "vocabulary": [
+        {
+          "text": "a notebook",
+          "zh": "笔记本"
+        },
+        {
+          "text": "a practice test",
+          "zh": "练习测验"
+        },
+        {
+          "text": "a mid-term exam",
+          "zh": "期中考试"
+        },
+        {
+          "text": "a certificate",
+          "zh": "证明文件"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-missing-1",
+          "prompt": "What does the teacher do before giving the reading work?",
+          "promptZh": "布置阅读任务前，老师先做了什么？",
+          "options": [
+            "She checks her email.",
+            "She opens the class website.",
+            "She looks in her notebook.",
+            "She calls the office."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "bc-missing-transcript-notebook",
+          "explanationZh": "学生问在家需要完成什么后，老师先查看笔记本，再列出阅读与线上材料。"
+        },
+        {
+          "id": "en-missing-2",
+          "prompt": "What is the practice test meant to help students do?",
+          "promptZh": "练习测验是为了帮助学生做什么？",
+          "options": [
+            "Prepare for a coming exam.",
+            "Choose their next course.",
+            "Write a report about a video.",
+            "Plan a class presentation."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "bc-missing-transcript-purpose",
+          "explanationZh": "老师解释，练习测验是为了帮助大家准备期中考试，并非选课或准备展示。"
+        },
+        {
+          "id": "en-missing-3",
+          "prompt": "What does Diana agree to do with the practice test?",
+          "promptZh": "Diana 答应怎样处理这份练习测验？",
+          "options": [
+            "Bring it to class next Wednesday.",
+            "Keep it until the mid-term exam.",
+            "Give it to the school office.",
+            "Send it back before Friday."
+          ],
+          "answerIndex": 3,
+          "evidenceRef": "bc-missing-transcript-return",
+          "explanationZh": "老师计划周三发出测验，并询问能否在周五之前交回；Diana 表示可以。这里问的是测验交回要求，不是医生证明的递交地点。"
         }
       ]
     }

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-it-deledda-casa-e-memoria",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "A quali ricorrenze era legata l’iniziativa?",
+      "options": [
+        "Ai cento anni dalla nascita e ai novanta anni dal Premio Nobel.",
+        "Ai cento anni dalla morte e ai novanta anni dalla pubblicazione di Cosima.",
+        "Ai cento anni dal Premio Nobel e ai novanta anni dalla morte.",
+        "Ai cento anni dalla pubblicazione di Cosima e ai novanta anni dalla nascita."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4"
+      ],
+      "explanationZh": "正文同时说明获诺贝尔文学奖一百周年与逝世九十周年；其他选项把出生、小说出版、获奖、逝世的事件互相替换。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "A che cosa servivano le fonti nella mostra documentaria?",
+      "options": [
+        "A ricostruire la formazione della casa e i suoi cambiamenti.",
+        "A scegliere gli attori per una lettura del romanzo.",
+        "A confrontare i prezzi delle case nel centro di Nuoro.",
+        "A preparare una nuova traduzione delle opere di Deledda."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "文献的明确用途是梳理故居形成、背景和部分变化，未提其他用途。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Perché Cosima era importante per questo percorso?",
+      "options": [
+        "Perché documentava la formazione della casa attraverso atti d’archivio.",
+        "Perché confrontava le prime edizioni critiche delle novelle sarde.",
+        "Perché raccoglieva le ricerche degli studiosi invitati alla mostra.",
+        "Perché rievocava il legame di Deledda con Nuoro e la sua terra."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "《Cosima》通过小说化自传回忆作家与努奥罗及故乡的联系，与故居和记忆主题相呼应。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Quale confronto rendeva possibile il percorso proposto?",
+      "options": [
+        "Confrontare i premi ricevuti da Deledda con quelli di altri scrittori.",
+        "Confrontare la storia documentata della casa con la sua memoria letteraria.",
+        "Confrontare le diverse traduzioni di Cosima con le edizioni critiche.",
+        "Confrontare la formazione di Deledda con quella degli archivisti di Nuoro."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s6",
+        "s9",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "节目安排把文学研究与档案资料结合，可推知其提供互补视角；原消息不是结果报道，不能推断公众评价或学术成果。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-en-first-steps-into-tech",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 22,
+      "answer": "employers",
+      "options": [
+        "employees",
+        "employers",
+        "customers",
+        "applicants"
+      ],
+      "explanation": "employers指提供工作或工作体验的机构；a group of后这里使用复数名词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 32,
+      "answer": "gain",
+      "options": [
+        "lose",
+        "refuse",
+        "gain",
+        "hide"
+      ],
+      "explanation": "gain experience是积累经验；help somebody do后使用动词原形。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 73,
+      "answer": "vacancies",
+      "options": [
+        "budgets",
+        "vacancies",
+        "timetables",
+        "qualifications"
+      ],
+      "explanation": "fill vacancies表示填补职位空缺；vacancies为vacancy的复数。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 11,
+      "answer": "ambition",
+      "options": [
+        "receipt",
+        "ambition",
+        "expense",
+        "complaint"
+      ],
+      "explanation": "ambition说明希望实现的目标，区别于已经完成的结果。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 126,
+      "answer": "pace",
+      "options": [
+        "price",
+        "address",
+        "pace",
+        "expense"
+      ],
+      "explanation": "at their own pace表示按自己的节奏，不是按别人的速度。"
+    }
+  ]
+}

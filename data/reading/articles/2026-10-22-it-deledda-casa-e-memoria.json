@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-it-deledda-casa-e-memoria",
+  "storyId": "dga-nuoro-casa-deledda-2026-10-11",
+  "lang": "it",
+  "date": "2026-10-22",
+  "title": "Una casa tra documenti e letteratura",
+  "titleZh": "文献与文学之间的一座故居",
+  "summaryZh": "努奥罗档案馆以Deledda的故居为线索，把历史文献、地方记忆和文学中的重构联系起来。",
+  "level": "B1",
+  "levelReason": "编辑估计：连接人物、地点与档案，包含过去计划的转述、目的和关系解释，专有名词有中文辅助。",
+  "category": "culture",
+  "topics": [
+    "文学记忆",
+    "历史资料",
+    "故居"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "Nuoro | Apertura straordinaria | Casa Deledda: una finestra sul mondo",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=1880a380aa37e339589674f90c585161&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2771",
+    "publishedAt": "2026-10-11",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：Ministero della Cultura — Direzione generale Archivi（机构署名，未列个人文字作者）。原题、原日期与链接见来源信息。Dimenticato依据CC BY 3.0进行同语言分级改写、中文翻译及原创教学补充；本篇教学材料采用同一许可，不表示原机构认可。",
+  "adaptation": "2026-10-22整理，原文发表于2026-10-11。仅改写机构新闻文字，不使用照片、图像、标志、第三方作品或直接引语。事件安排与实际发生状态分开；中文释义、讨论和练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Una casa può essere un luogo della vita quotidiana, ma anche un punto di partenza per conoscere una scrittrice e il rapporto che aveva con la sua città.",
+      "zh": "一座房屋既可以是日常生活的场所，也可以成为认识一位作家及其与城市关系的起点。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "È questa la prospettiva proposta dall’Archivio di Stato di Nuoro in una notizia pubblicata l’11 ottobre 2026, dedicata a un’apertura straordinaria prevista per quello stesso pomeriggio, alle 16.30, con un programma che univa la conferenza di uno studioso e una mostra documentaria.",
+      "zh": "努奥罗国家档案馆在2026年10月11日发布的消息中提出了这样的视角，消息介绍了原定于当天下午16点30分举行的一次特别开放活动，安排结合了学者讲座和文献展览。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Al centro del programma c’era la casa natale di Grazia Deledda, considerata sia come luogo degli affetti e della formazione, sia come spazio della memoria.",
+      "zh": "活动围绕Grazia Deledda的出生故居展开，既把它看作情感与成长的场所，也看作记忆空间。",
+      "glosses": [
+        {
+          "surface": "natale",
+          "lemma": "natale",
+          "zh": "出生的",
+          "note": "单数形容词；casa natale指某人出生的房屋"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "L’iniziativa era legata al centenario del conferimento del Premio Nobel per la letteratura e al novantesimo anniversario della morte della scrittrice.",
+      "zh": "这项活动与作家获诺贝尔文学奖一百周年和逝世九十周年纪念有关。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Per affrontare questo tema, l’Istituto proponeva una conferenza e una mostra basate anche sui documenti deleddiani conservati nei suoi archivi.",
+      "zh": "为了讨论这一主题，档案馆计划举办讲座和展览，也以馆内保存的Deledda相关文献为依据。",
+      "glosses": [
+        {
+          "surface": "conservati",
+          "lemma": "conservare",
+          "zh": "保存的",
+          "note": "过去分词阳性复数，与documenti一致"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "La relazione di Dino Manca, professore all’Università di Sassari e studioso dell’opera di Deledda, avrebbe esplorato il rapporto fra casa, memoria e letteratura.",
+      "zh": "萨萨里大学教授、Deledda作品研究者Dino Manca的报告将探讨房屋、记忆与文学之间的关系。",
+      "glosses": [
+        {
+          "surface": "relazione",
+          "lemma": "relazione",
+          "zh": "报告",
+          "note": "阴性单数名词，在学术活动中指专题报告"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Un riferimento importante era Cosima, un romanzo nel quale la scrittrice rievoca il legame con Nuoro e con la propria terra attraverso una forma di autobiografia romanzata.",
+      "zh": "一个重要参照是小说《Cosima》，作家在其中借助带有小说加工的自传形式，回忆与努奥罗及故土的联系。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Accanto alla conferenza, il programma prevedeva una mostra documentaria curata dall’archivista Raffaella Lucia Carboni.",
+      "zh": "除讲座之外，活动还计划举办由档案工作者Raffaella Lucia Carboni策划的文献展。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Le fonti dovevano aiutare a ricostruire la formazione della casa, il contesto in cui si trovava e alcuni cambiamenti avvenuti nel tempo.",
+      "zh": "这些资料旨在帮助重建故居的形成过程、所处背景，以及随着时间发生的部分变化。",
+      "glosses": [
+        {
+          "surface": "ricostruire",
+          "lemma": "ricostruire",
+          "zh": "重建",
+          "note": "不定式，指根据资料梳理过去的形成过程"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Era inoltre annunciato un contributo dello studioso di storia locale Sebastiano Murru sulle prime fasi della casa.",
+      "zh": "消息还预告了地方史研究者Sebastiano Murru关于故居早期阶段的介绍。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Il percorso metteva così in relazione due prospettive: i documenti ricostruiscono la storia dei luoghi, mentre l’opera letteraria rielabora la memoria di quegli stessi luoghi.",
+      "zh": "这一参观与研究路径由此联系了两种视角：文献重建场所的历史，而文学作品对这些场所的记忆加以重新加工。",
+      "glosses": [
+        {
+          "surface": "rielabora",
+          "lemma": "rielaborare",
+          "zh": "重新加工",
+          "note": "直陈式现在时第三人称单数，主语是l’opera letteraria"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "La notizia descriveva il programma dell’incontro; non era un resoconto delle attività già svolte né delle reazioni del pubblico.",
+      "zh": "这则消息描述的是活动安排，并非对已开展活动或公众反应的报道。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "natale",
+        "zh": "出生的",
+        "sentenceId": "s3",
+        "lemma": "natale",
+        "note": "单数形容词；casa natale指某人出生的房屋"
+      },
+      {
+        "text": "conservati",
+        "zh": "保存的",
+        "sentenceId": "s5",
+        "lemma": "conservare",
+        "note": "过去分词阳性复数，与documenti一致"
+      },
+      {
+        "text": "relazione",
+        "zh": "报告",
+        "sentenceId": "s6",
+        "lemma": "relazione",
+        "note": "阴性单数名词，在学术活动中指专题报告"
+      },
+      {
+        "text": "ricostruire",
+        "zh": "重建",
+        "sentenceId": "s9",
+        "lemma": "ricostruire",
+        "note": "不定式，指根据资料梳理过去的形成过程"
+      },
+      {
+        "text": "rielabora",
+        "zh": "重新加工",
+        "sentenceId": "s11",
+        "lemma": "rielaborare",
+        "note": "直陈式现在时第三人称单数，主语是l’opera letteraria"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "un punto di partenza",
+        "zh": "一个起点",
+        "sentenceId": "s1",
+        "note": "可用于表达研究或讨论的出发点"
+      },
+      {
+        "text": "metteva così in relazione",
+        "zh": "由此联系起来",
+        "sentenceId": "s11",
+        "note": "mettere in relazione表示把不同事物联系起来，未完成过去时描述活动设计"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "avrebbe esplorato使用过去条件式，表示从过去的预告时间看将要开展的内容，而非证明活动已经完成。"
+      },
+      {
+        "sentenceId": "s11",
+        "note": "mentre对照历史文献的重建与文学作品的重新加工。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali differenze possono esserci tra un ricordo personale e un documento storico?",
+        "zh": "个人回忆与历史文献之间可能有什么区别？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "un punto di partenza",
+        "zh": "一个起点",
+        "note": "可用于表达研究或讨论的出发点"
+      },
+      {
+        "text": "metteva così in relazione",
+        "zh": "由此联系起来",
+        "note": "mettere in relazione表示把不同事物联系起来，未完成过去时描述活动设计"
+      }
+    ]
+  }
+}

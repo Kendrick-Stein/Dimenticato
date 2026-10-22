@@ -2,6 +2,60 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-22-en-culture-beyond-winning",
+      "lang": "en",
+      "date": "2026-10-22",
+      "title": "What remains beyond a cultural title?",
+      "titleZh": "文化称号之外，能留下什么？",
+      "summaryZh": "四地进入2029英国文化之城决选；资金、参与和申办过程的价值需要分别理解。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "社区文化",
+        "公共参与",
+        "城市发展"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-22",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-22-en-first-steps-into-tech",
+      "lang": "en",
+      "date": "2026-10-22",
+      "title": "From classroom skills to workplace experience",
+      "titleZh": "从课堂技能到工作体验",
+      "summaryZh": "科技行业的体验机会与入门岗位目标并不相同；新计划还把活动带进中学。",
+      "level": "B1",
+      "category": "work-economy",
+      "topics": [
+        "青年就业",
+        "工作体验",
+        "技术教育"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-21",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-22-it-terremoti-conoscere-e-prepararsi",
+      "lang": "it",
+      "date": "2026-10-22",
+      "title": "Terremoti: capire il passato, prepararsi al futuro",
+      "titleZh": "地震：理解过去，为未来作准备",
+      "summaryZh": "热那亚科学节通过互动解谜与专题讲座区分地震预测的局限和风险减轻的现实路径。",
+      "level": "B2",
+      "category": "education",
+      "topics": [
+        "科学传播",
+        "公众参与",
+        "地震风险"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-21",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-21-it-carbonio-profondo-e-limiti",
       "lang": "it",
       "date": "2026-10-21",
@@ -20,6 +74,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-22-de-alte-texte-wieder-finden",
+      "lang": "de",
+      "date": "2026-10-22",
+      "title": "Alte Texte wieder finden",
+      "titleZh": "重新找到旧文章",
+      "summaryZh": "一个停更后曾无法访问的博客重新开放：保存网页，怎样让过去的知识继续被找到？",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "网络记忆",
+        "数字档案",
+        "查找资料"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-19",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-21-it-scacchi-e-documenti",
       "lang": "it",
       "date": "2026-10-21",
@@ -35,6 +107,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-22-it-parma-archivio-in-immagini",
+      "lang": "it",
+      "date": "2026-10-22",
+      "title": "Un archivio da guardare con occhi nuovi",
+      "titleZh": "换个角度看档案馆",
+      "summaryZh": "帕尔马的一场版画展通过25件作品，让公众从空间与图像接近档案记忆。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "艺术展览",
+        "档案空间"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-16",
       "contentType": "native-adaptation"
     },
     {
@@ -176,6 +265,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-15",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-22-fr-partager-les-moyens-de-comprendre-les-forets",
+      "lang": "fr",
+      "date": "2026-10-22",
+      "title": "Partager les moyens de comprendre les forêts",
+      "titleZh": "共享理解森林的工具",
+      "summaryZh": "FOREST把跨国研究、长期观测与实际管理联系起来。共享设备和数据能带来什么，又为何不能把合作计划直接当作生态成效？",
+      "level": "B2",
+      "category": "environment",
+      "topics": [
+        "森林",
+        "欧洲合作",
+        "知识共享"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-14",
       "contentType": "native-adaptation"
     },
     {
@@ -370,6 +477,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-22-it-deledda-casa-e-memoria",
+      "lang": "it",
+      "date": "2026-10-22",
+      "title": "Una casa tra documenti e letteratura",
+      "titleZh": "文献与文学之间的一座故居",
+      "summaryZh": "努奥罗档案馆以Deledda的故居为线索，把历史文献、地方记忆和文学中的重构联系起来。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "文学记忆",
+        "历史资料",
+        "故居"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-11",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-21-it-fotografie-delle-montagne",
       "lang": "it",
       "date": "2026-10-21",
@@ -456,6 +581,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-10-09",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-22-en-moving-together",
+      "lang": "en",
+      "date": "2026-10-22",
+      "title": "A small start for family activity",
+      "titleZh": "一家人一起动起来，从小小一步开始",
+      "summaryZh": "一项家庭活动宣传鼓励家长和孩子一起尝试，不必先成为运动高手。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "家庭活动",
+        "信心",
+        "日常运动"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-08",
       "contentType": "native-adaptation"
     },
     {
@@ -781,6 +924,42 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-22-de-zurueck-in-den-beruf",
+      "lang": "de",
+      "date": "2026-10-22",
+      "title": "Zurück in den Beruf: Was die Zahlen zeigen",
+      "titleZh": "重返工作：数字说明了什么",
+      "summaryZh": "一项德国康复数据分析显示返岗机会存在收入差异。理解这些数字，还必须看清样本、时间和无法解释的原因。",
+      "level": "B2",
+      "category": "work-economy",
+      "topics": [
+        "重返工作",
+        "社会差异",
+        "理解研究"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-30",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-22-fr-faire-dialoguer-recherche-et-action",
+      "lang": "fr",
+      "date": "2026-10-22",
+      "title": "Faire dialoguer recherche et action",
+      "titleZh": "让研究与公共行动对话",
+      "summaryZh": "公共部门需要证据，科学研究也需要理解现实问题。一次会议的安排展现了双方合作的可能，以及时间节奏上的差异。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "公共生活",
+        "科学沟通",
+        "合作"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-30",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-20-en-food-near-home",
       "lang": "en",
       "date": "2026-10-20",
@@ -919,6 +1098,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-09-26",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-22-fr-regarder-les-haies-autrement",
+      "lang": "fr",
+      "date": "2026-10-22",
+      "title": "Regarder les haies autrement",
+      "titleZh": "换个角度看树篱",
+      "summaryZh": "田野边的树篱不仅划分空间。一篇新书介绍提醒我们关注它们的不同作用，以及保护和重新种植的方法。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "乡村景观",
+        "树篱",
+        "阅读"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-09-25",
       "contentType": "native-adaptation"
     },
     {

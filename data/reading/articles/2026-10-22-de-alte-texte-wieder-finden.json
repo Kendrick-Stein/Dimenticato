@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-de-alte-texte-wieder-finden",
+  "storyId": "irights-telemedicus-archive-2026-10-19",
+  "lang": "de",
+  "date": "2026-10-22",
+  "title": "Alte Texte wieder finden",
+  "titleZh": "重新找到旧文章",
+  "summaryZh": "一个停更后曾无法访问的博客重新开放：保存网页，怎样让过去的知识继续被找到？",
+  "level": "A2",
+  "levelReason": "编辑估计：日常网络场景、短主句与并列转折；过去时、完成时及少量抽象名词配中文辅助。",
+  "category": "culture",
+  "topics": [
+    "网络记忆",
+    "数字档案",
+    "查找资料"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "iRights.info",
+    "title": "iRights e.V. übernimmt Blogarchiv von Telemedicus",
+    "url": "https://irights.info/artikel/irights-e-v-uebernimmt-blogarchiv-von-telemedicus/32922",
+    "publishedAt": "2026-10-19",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者 Fabian Rack，iRights.info。Dimenticato 作德语分级改写、中文翻译及原创教学补充；本文与配套练习按 CC BY 4.0 提供。来源作者未认证本教学材料。",
+  "adaptation": "2026-10-22 整理，原文2026-10-19发表。基于署名德语报道简化改写；不复制照片、截图、评论或 Telemedicus 档案原文。首句为概括性教学引入，末句为依据档案定位作出的编辑归纳；不将旧文章标作新新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Ein alter Link funktioniert nicht mehr, und ein wichtiger Text ist plötzlich weg.",
+      "zh": "一个旧链接失效了，一篇重要文章突然不见了。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Auch das Blog Telemedicus war eine Zeit lang nicht mehr im Internet erreichbar.",
+      "zh": "Telemedicus 博客也曾有一段时间无法在网上访问。",
+      "glosses": [
+        {
+          "surface": "erreichbar",
+          "lemma": "erreichbar",
+          "zh": "可访问的",
+          "note": "im Internet erreichbar sein：能够在网上访问。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Jetzt können Menschen seine alten Beiträge wieder lesen und nach bestimmten Themen suchen.",
+      "zh": "现在，人们又能阅读它的旧文章，并按特定主题查找了。",
+      "glosses": [
+        {
+          "surface": "suchen",
+          "lemma": "suchen",
+          "zh": "查找",
+          "note": "nach etwas suchen：查找某物，nach 后用第三格。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Das berichtet Fabian Rack am 19. Oktober 2026 auf der Website iRights.info.",
+      "zh": "Fabian Rack 于2026年10月19日在 iRights.info 网站报道了这件事。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Der Verein iRights hat das Archiv zusammen mit dem früheren Telemedicus-Team gesichert.",
+      "zh": "iRights 协会与原 Telemedicus 团队共同保存了这份档案。",
+      "glosses": [
+        {
+          "surface": "gesichert",
+          "lemma": "sichern",
+          "zh": "保存；保护了",
+          "note": "hat … gesichert 是完成时，表示已完成的保存工作。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Der erste Artikel des Blogs erschien Ende 2006.",
+      "zh": "这个博客的第一篇文章发表于2006年底。",
+      "glosses": [
+        {
+          "surface": "erschien",
+          "lemma": "erscheinen",
+          "zh": "发表了",
+          "note": "erscheinen 的过去时，主语是单数 Artikel。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Danach kamen mehr als dreitausend Texte über Recht in der digitalen Welt zusammen.",
+      "zh": "此后，博客积累了三千多篇讨论数字世界法律问题的文章。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Sie behandelten zum Beispiel den Schutz persönlicher Daten und die Rechte von Autoren.",
+      "zh": "它们讨论的内容包括个人数据保护和作者权利。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Die Texte waren auch für Menschen ohne juristische Ausbildung gedacht.",
+      "zh": "这些文章也面向没有法律专业教育背景的人。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Für das Archiv hat das Team die alte Blog-Software durch einfache HTML-Seiten ersetzt.",
+      "zh": "为了建立档案，团队用简单的 HTML 网页替换了旧博客软件。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Diese Website braucht weniger technische Pflege, hat aber weiterhin eine Suchfunktion.",
+      "zh": "这个网站需要较少的技术维护，但仍有搜索功能。",
+      "glosses": [
+        {
+          "surface": "Pflege",
+          "lemma": "Pflege",
+          "zh": "维护",
+          "note": "die Pflege；这里指网站的技术维护，不是护理。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Auch die Suche auf iRights.info zeigt nun Ergebnisse aus dem Archiv.",
+      "zh": "iRights.info 的搜索现在也显示这份档案中的结果。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Sie stehen dort getrennt von den anderen Suchergebnissen.",
+      "zh": "这些结果在那里与其他搜索结果分开显示。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Es geht also um den Zugang zu alten Texten, nicht um den Start eines neuen Nachrichtenblogs.",
+      "zh": "所以，这件事是让人们能够访问旧文章，而不是开办一个新的新闻博客。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "erreichbar",
+        "lemma": "erreichbar",
+        "zh": "可访问的",
+        "note": "im Internet erreichbar sein：能够在网上访问。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "suchen",
+        "lemma": "suchen",
+        "zh": "查找",
+        "note": "nach etwas suchen：查找某物，nach 后用第三格。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "gesichert",
+        "lemma": "sichern",
+        "zh": "保存；保护了",
+        "note": "hat … gesichert 是完成时，表示已完成的保存工作。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "erschien",
+        "lemma": "erscheinen",
+        "zh": "发表了",
+        "note": "erscheinen 的过去时，主语是单数 Artikel。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "Pflege",
+        "lemma": "Pflege",
+        "zh": "维护",
+        "note": "die Pflege；这里指网站的技术维护，不是护理。",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "ohne juristische Ausbildung",
+        "zh": "没有法律专业教育背景",
+        "note": "ohne + 第四格；说明文章也面向非专业读者。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "getrennt von",
+        "zh": "与……分开",
+        "note": "von 后用第三格。",
+        "sentenceId": "s13"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "hat … ersetzt：完成时。durch 引出用来替换旧软件的新形式。"
+      },
+      {
+        "sentenceId": "s14",
+        "note": "nicht …：澄清档案开放不等于重新开办新闻博客。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche alten Texte möchtest du im Internet wiederfinden?",
+        "zh": "你想在网上重新找到哪些旧文章？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich möchte noch einmal … lesen.",
+        "zh": "我想再读一次……。",
+        "note": "原创教学补充，可结合自己的情况完成。"
+      },
+      {
+        "text": "Eine Suchfunktion hilft mir, … zu finden.",
+        "zh": "搜索功能帮我找到……。",
+        "note": "原创教学补充，可结合自己的情况完成。"
+      }
+    ]
+  }
+}

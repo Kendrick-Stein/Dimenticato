@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-de-zurueck-in-den-beruf",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Welche Person gehört nach den genannten Kriterien zur analysierten Gruppe?",
+      "promptZh": "按文中条件，哪位人士属于被分析的群体？",
+      "options": [
+        "Eine 45-Jährige mit gesicherter Diagnose, die vor der Reha halbtags arbeitete.",
+        "Ein 70-Jähriger mit gesicherter Diagnose, der vor der Reha ganztags arbeitete.",
+        "Eine 40-Jährige mit gesicherter Diagnose, die vor der Reha nicht arbeitete.",
+        "Ein 50-Jähriger ohne gesicherte Diagnose, der vor der Reha ganztags arbeitete."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第8–10句同时要求18–65岁、确诊、康复前至少半职。只有第一人满足全部已给条件；这里只判断这些条件，不替代完整原研究筛选。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Wie wurde eine erfolgreiche Rückkehr für diese Analyse abgegrenzt?",
+      "promptZh": "这项分析怎样界定成功返岗？",
+      "options": [
+        "Durch dieselbe Tätigkeit beim früheren Arbeitgeber nach einem Jahr.",
+        "Durch eine beliebige bezahlte Tätigkeit unmittelbar nach der Reha.",
+        "Durch mindestens halbe übliche Wochenarbeitszeit innerhalb von zwei Jahren.",
+        "Durch eine unbefristete Vollzeitstelle nach Abschluss der Krebsbehandlung."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "第11句给出24个月内与至少通常周工时一半两个条件，不要求原雇主、无固定期限或全职。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Warum lassen sich die Ergebnisse anderer Studien nur eingeschränkt vergleichen?",
+      "promptZh": "为什么与其他研究结果的比较受到限制？",
+      "options": [
+        "Weil sie unterschiedliche Formen der Rehabilitation miteinander vergleichen.",
+        "Weil sie den Begriff der erfolgreichen Rückkehr unterschiedlich festlegen.",
+        "Weil sie Einkommen mit unterschiedlichen Gruppengrenzen einteilen.",
+        "Weil sie berufliche Anforderungen mit unterschiedlichen Verfahren gewichten."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s22",
+        "s23"
+      ],
+      "explanationZh": "第22、23句指出“成功返岗”的操作定义可能不同；百分比接近不等于就业情况相同。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Jemand erklärt die niedrigere Rückkehrquote mit fehlendem persönlichen Einsatz. Was folgt aus dem Text?",
+      "promptZh": "有人把较低返岗率解释为个人不够努力。从本文能得出什么？",
+      "options": [
+        "Dafür fehlt eine Grundlage, weil das Einkommen vor der Reha nicht erfasst wurde.",
+        "Dafür fehlt eine Grundlage, weil nur Personen ohne frühere Arbeit untersucht wurden.",
+        "Dafür fehlt eine Grundlage, weil die Rückkehr nach der Reha nicht erfasst wurde.",
+        "Dafür fehlt eine Grundlage, weil persönliche Einstellungen und Motive nicht erfasst wurden."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s8",
+        "s9",
+        "s12",
+        "s19",
+        "s20"
+      ],
+      "explanationZh": "研究缺少个人态度和动机，不能把群体间返岗差异归咎于个人不努力。其他选项虽也说缺乏依据，却误述了数据：此前工作、收入和返岗结果实际均已纳入。"
+    },
+    {
+      "id": "q5",
+      "kind": "main-idea",
+      "prompt": "Welche Verbindung stellt der Text zwischen Befund und Empfehlung der Autoren her?",
+      "promptZh": "本文怎样连接研究发现与作者建议？",
+      "options": [
+        "Die geringere Rückkehr benachteiligter Gruppen begründet eine stärkere Ausrichtung beruflicher Unterstützung auf deren Bedürfnisse.",
+        "Die Unterschiede zwischen Bildungsgruppen begründen eine stärkere Ausrichtung beruflicher Unterstützung auf nachgeholte Bildungsabschlüsse.",
+        "Die Unterschiede zwischen Berufsgruppen begründen eine stärkere Ausrichtung beruflicher Unterstützung auf den Wechsel des Berufs.",
+        "Die unterschiedlichen Rückkehrdefinitionen begründen eine stärkere Ausrichtung beruflicher Unterstützung auf einheitliche Arbeitszeitziele."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s24",
+        "s25",
+        "s26"
+      ],
+      "explanationZh": "第24–26句由低收入者的双重不利处境，引出对职业康复与过渡支持的建议。其他选项把教育、职业差异或研究定义差异直接转成具体支持方案，但作者在文中并未作这些建议。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-fr-faire-dialoguer-recherche-et-action",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 100,
+      "answer": "dialogue",
+      "options": [
+        "budget",
+        "dialogue",
+        "voyage",
+        "calendrier"
+      ],
+      "explanation": "中文句意需要“对话”，对应原文 dialogue。阳性单数名词；le dialogue，指双方交流。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 103,
+      "answer": "attendues",
+      "options": [
+        "absentes",
+        "retraitées",
+        "inscrites",
+        "attendues"
+      ],
+      "explanation": "中文句意需要“预计到场的”，对应原文 attendues。过去分词作形容词，和阴性复数 personnes 配合，不表示已实际出席。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 86,
+      "answer": "besoins",
+      "options": [
+        "besoins",
+        "prix",
+        "bâtiments",
+        "horaires"
+      ],
+      "explanation": "中文句意需要“需求”，对应原文 besoins。阳性复数；aux besoins 为 à + les besoins。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 76,
+      "answer": "long",
+      "options": [
+        "rapide",
+        "court",
+        "long",
+        "simple"
+      ],
+      "explanation": "中文句意需要“长”，对应原文 long。形容词阳性单数，与 le temps 一致；plus long que 表示更长。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s16",
+      "start": 54,
+      "answer": "souhaitaient",
+      "options": [
+        "refusaient",
+        "souhaitaient",
+        "oubliaient",
+        "arrêtaient"
+      ],
+      "explanation": "中文句意需要“希望”，对应原文 souhaitaient。直陈式未完成过去时第三人称复数，描述公告中的愿望，不是完成结果。"
+    }
+  ]
+}

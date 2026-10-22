@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-21",
+  "collectedAt": "2026-10-22",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -6974,13 +6974,13 @@
         "workflowStage": "rights_verified",
         "readyForPublication": false,
         "editorialReviewComplete": false,
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/space-weather-l-ingv-inaugura-la-nuova-sala-di-monitoraggio-a-roma",
-          "checkedAt": "2026-10-21",
-          "notes": "Official full body retrieved through web tool. Source text only; photos, attachments and direct quotes excluded. Shell DGA retrieval503 was not bypassed; web successful separately."
+          "checkedAt": "2026-10-22",
+          "notes": "Official full body re-read via web2026-10-22; footer CC BY4 checked. No media or direct quotations."
         },
         "originalDate": {
           "verified": true,
@@ -7021,14 +7021,14 @@
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAgainstArticleCount": 76,
-          "checkedAt": "2026-10-21",
+          "checkedAgainstArticleCount": 86,
+          "checkedAt": "2026-10-22",
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 2,
+          "asOf": "2026-10-22",
+          "ageDays": 3,
           "bucket": "within_30_days"
         }
       }
@@ -7046,21 +7046,21 @@
       "topics": [
         "文化记忆"
       ],
-      "level": "B1",
+      "level": "A2",
       "priority": 3,
       "status": "verified",
-      "editorialNote": "Reserve only, no teaching edition prepared. Exhibition until Dec4; 25 drypoint engravings. Text-only institutional description; NO artworks reproduced. Discuss how art can introduce archives.",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-21",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-22",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=f67f6e06f96a01ba27e7c2cb1528ee64&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2788",
-          "checkedAt": "2026-10-21",
-          "notes": "Official full body retrieved through web tool. Source text only; photos, attachments and direct quotes excluded. Shell DGA retrieval503 was not bypassed; web successful separately."
+          "checkedAt": "2026-10-22",
+          "notes": "Official full body re-read using web tool2026-10-22. DGA shell HTML request returned503, no bypass; successful web body retained locally for reviewer. No images, direct quotations or attachments."
         },
         "originalDate": {
           "verified": true,
@@ -7101,17 +7101,18 @@
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAgainstArticleCount": 76,
-          "checkedAt": "2026-10-21",
+          "checkedAgainstArticleCount": 86,
+          "checkedAt": "2026-10-22",
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 5,
+          "asOf": "2026-10-22",
+          "ageDays": 6,
           "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-22-it-parma-archivio-in-immagini"
     },
     {
       "id": "it-2026-10-11-dga-nuoro-casa-deledda",
@@ -7129,18 +7130,18 @@
       "level": "B1",
       "priority": 3,
       "status": "verified",
-      "editorialNote": "Reserve only, no teaching edition prepared. Event Oct11 now past; discuss house, archive and literary memory. Do not quote novel text or copy artwork.",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-21",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-22",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=1880a380aa37e339589674f90c585161&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2771",
-          "checkedAt": "2026-10-21",
-          "notes": "Official full body retrieved through web tool. Source text only; photos, attachments and direct quotes excluded. Shell DGA retrieval503 was not bypassed; web successful separately."
+          "checkedAt": "2026-10-22",
+          "notes": "Official full body re-read using web tool2026-10-22. DGA shell HTML request returned503, no bypass; successful web body retained locally for reviewer. No images, direct quotations or attachments."
         },
         "originalDate": {
           "verified": true,
@@ -7181,17 +7182,18 @@
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAgainstArticleCount": 76,
-          "checkedAt": "2026-10-21",
+          "checkedAgainstArticleCount": 86,
+          "checkedAt": "2026-10-22",
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 10,
+          "asOf": "2026-10-22",
+          "ageDays": 11,
           "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-22-it-deledda-casa-e-memoria"
     },
     {
       "id": "fr-2026-10-16-les-festivals-entre-public-et-fragilite",
@@ -7374,36 +7376,37 @@
       "collectedAt": "2026-10-21",
       "category": "society",
       "topics": [
-        "知识合作",
-        "公共生活"
+        "公共生活",
+        "科学沟通",
+        "合作"
       ],
       "level": "B1",
       "priority": 2,
       "status": "verified",
-      "editorialNote": "仅储备：完整原语正文与权利检查完成，尚无分级文章/题目。口语角度：研究与公共行动的时间节奏不同，如何合作？保留活动是发布时的计划，不把预计150人与计划举办说成实际结果；原文日期对应星期存在冲突，改写勿复述星期。",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-21",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-22",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.inrae.fr/actualites/croiser-recherche-action-publique",
-          "checkedAt": "2026-10-21",
+          "checkedAt": "2026-10-22",
           "notes": "Full official HTML body, bylines, dates and third-party credits inspected through web; source HTML archived locally. Linked books, PDFs and media not reused."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.inrae.fr/actualites/croiser-recherche-action-publique",
-          "evidence": "Visible article header gives 2026-09-30."
+          "evidence": "Visible official publication line: 2026-09-30"
         },
         "nativeLanguage": {
           "verified": true,
           "basis": "institutional-original-language-inference",
           "author": "Nicole Ladet, rédactrice, INRAE",
           "evidenceUrl": "https://www.inrae.fr/actualites/croiser-recherche-action-publique",
-          "evidence": "Official French institutional news/press page and body inspected; no translation, external syndication, or partner-text copyright marker. French ministry editorial team identified in legal notice; automatic translation infrastructure is not used here.",
+          "evidence": "Full French INRAE institutional article and html lang=fr inspected; no translation or third-party syndication marker in selected narrative. This is institutional original-language provenance inference, not proof of author mother tongue.",
           "caveat": "Provenance inference, not certification of an individual author’s mother tongue or earliest drafting language."
         },
         "rights": {
@@ -7433,17 +7436,18 @@
           "shareAlikeRequired": false
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-21",
-          "checkedAgainstArticleCount": 76,
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 21,
+          "asOf": "2026-10-22",
+          "ageDays": 22,
           "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-22-fr-faire-dialoguer-recherche-et-action"
     },
     {
       "id": "fr-2026-10-14-forest-partenariat-europeen",
@@ -7457,36 +7461,36 @@
       "category": "environment",
       "topics": [
         "森林",
-        "共享研究",
-        "环境"
+        "欧洲合作",
+        "知识共享"
       ],
       "level": "B2",
       "priority": 2,
       "status": "verified",
-      "editorialNote": "仅储备：完整原语正文与权利检查完成，尚无分级文章/题目。口语角度：森林跨越国界，怎样共享长期观测工具与经验？谨慎保留未来项目与2027年计划语气，不把合作目标说成已有成效。",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-21",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-22",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.inrae.fr/actualites/forest-partenariat-europeen-recherche-linnovation-au-service-filieres-foret-bois-durables",
-          "checkedAt": "2026-10-21",
+          "checkedAt": "2026-10-22",
           "notes": "Full official HTML body, bylines, dates and third-party credits inspected through web; source HTML archived locally. Linked books, PDFs and media not reused."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.inrae.fr/actualites/forest-partenariat-europeen-recherche-linnovation-au-service-filieres-foret-bois-durables",
-          "evidence": "Visible article header gives 2026-10-14."
+          "evidence": "Visible official publication line: 2026-10-14"
         },
         "nativeLanguage": {
           "verified": true,
           "basis": "institutional-original-language-inference",
-          "author": "Anna Mutelet, rédactrice, INRAE",
+          "author": "INRAE; no personal article author found in current full HTML. Scientific contacts Oliver Brendel and Catherine Bastien are not treated as bylines.",
           "evidenceUrl": "https://www.inrae.fr/actualites/forest-partenariat-europeen-recherche-linnovation-au-service-filieres-foret-bois-durables",
-          "evidence": "Official French institutional news/press page and body inspected; no translation, external syndication, or partner-text copyright marker. French ministry editorial team identified in legal notice; automatic translation infrastructure is not used here.",
+          "evidence": "Full French INRAE institutional article and html lang=fr inspected; no translation or third-party syndication marker in selected narrative. This is institutional original-language provenance inference, not proof of author mother tongue.",
           "caveat": "Provenance inference, not certification of an individual author’s mother tongue or earliest drafting language."
         },
         "rights": {
@@ -7516,17 +7520,18 @@
           "shareAlikeRequired": false
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-21",
-          "checkedAgainstArticleCount": 76,
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 7,
+          "asOf": "2026-10-22",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-22-fr-partager-les-moyens-de-comprendre-les-forets"
     },
     {
       "id": "en-2026-09-03-food-regulation-frameworks",
@@ -7789,6 +7794,1164 @@
         }
       },
       "linkToArticleId": "2026-10-21-de-schwierige-themen-besprechen"
+    },
+    {
+      "id": "it-2026-10-21-ingv-festival-genova",
+      "language": "it",
+      "sourceTitle": "FESTIVAL DELLA SCIENZA 2026 | Torna a Genova l’appuntamento con la divulgazione scientifica",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/festival-della-scienza-2026-torna-a-genova-l-appuntamento-con-la-divulgazione-scientifica",
+      "sourceName": "INGV Ufficio Stampa",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-10-21",
+      "collectedAt": "2026-10-22",
+      "category": "education",
+      "topics": [
+        "科学传播",
+        "公众参与"
+      ],
+      "level": "B2",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-22",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/festival-della-scienza-2026-torna-a-genova-l-appuntamento-con-la-divulgazione-scientifica",
+          "checkedAt": "2026-10-22",
+          "notes": "Official full body read via web2026-10-22; article footer CC BY4 and INGV legal footer reviewed. No media/attachment/directquotation use."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/festival-della-scienza-2026-torna-a-genova-l-appuntamento-con-la-divulgazione-scientifica",
+          "evidence": "Official header visible publication date 2026-10-21"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/festival-della-scienza-2026-torna-a-genova-l-appuntamento-con-la-divulgazione-scientifica",
+          "author": "INGV Ufficio Stampa（机构署名；未列个人文字作者）",
+          "basis": "Italian institutional original press/news text; no translator or republishing credit.",
+          "caveat": "Institutional provenance, not personal native-tongue certification.",
+          "evidence": "Italian original institutional release with local institutions, no translation marker; article inspected."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "INGV article footer explicitly licenses INGV published content CC BY4; legal page footer repeats it.",
+          "evidenceUrls": [
+            "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/festival-della-scienza-2026-torna-a-genova-l-appuntamento-con-la-divulgazione-scientifica",
+            "https://www.ingv.it/note-legali",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Institutional original narrative adapted in Italian, Chinese translation and teaching additions, attributed with modifications; no direct quotes.",
+          "exclusions": [
+            "Images, logos, video, attachments and third-party works",
+            "Linked research paper text and direct interview quotations"
+          ],
+          "attributionRequirements": [
+            "Credit institutional author, original title/date and URL",
+            "Link licence; disclose adaptation and translation",
+            "No endorsement claim"
+          ],
+          "basis": "article-linked explicit Creative Commons licence allowing adaptation",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 86,
+          "checkedAt": "2026-10-22",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-22-it-terremoti-conoscere-e-prepararsi"
+    },
+    {
+      "id": "it-2026-10-21-ingv-georeal",
+      "language": "it",
+      "sourceTitle": "INGV IRPINIA | Al via il progetto GEOREAL per potenziare le Geoscienze nel Mezzogiorno",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/ingv-irpinia-al-via-il-progetto-georeal-per-potenziare-le-geoscienze-nel-mezzogiorno",
+      "sourceName": "INGV Ufficio Stampa",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-10-21",
+      "collectedAt": "2026-10-22",
+      "category": "education",
+      "topics": [
+        "大学培训",
+        "地方科学传播"
+      ],
+      "level": "B1",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "Reserve only, no teaching draft or publication approval. Training/residential academy and public StemLab angle. Planned30months/about25million not completed impact. Source photo caption appears copied from unrelatedCONIRI award; exclude image/caption and retain fact provenance caution.",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-22",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/ingv-irpinia-al-via-il-progetto-georeal-per-potenziare-le-geoscienze-nel-mezzogiorno",
+          "checkedAt": "2026-10-22",
+          "notes": "Official full body read via web2026-10-22; article footer CC BY4 and INGV legal footer reviewed. No media/attachment/directquotation use."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/ingv-irpinia-al-via-il-progetto-georeal-per-potenziare-le-geoscienze-nel-mezzogiorno",
+          "evidence": "Official header visible publication date 2026-10-21"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/ingv-irpinia-al-via-il-progetto-georeal-per-potenziare-le-geoscienze-nel-mezzogiorno",
+          "author": "INGV Ufficio Stampa（机构署名；未列个人文字作者）",
+          "basis": "Italian institutional original press/news text; no translator or republishing credit.",
+          "caveat": "Institutional provenance, not personal native-tongue certification.",
+          "evidence": "Italian original institutional release with local institutions, no translation marker; article inspected."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "INGV article footer explicitly licenses INGV published content CC BY4; legal page footer repeats it.",
+          "evidenceUrls": [
+            "https://www.ingv.it/stampa-urp/ufficio-stampa/news/ingv-irpinia-al-via-il-progetto-georeal-per-potenziare-le-geoscienze-nel-mezzogiorno",
+            "https://www.ingv.it/note-legali",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Institutional original narrative adapted in Italian, Chinese translation and teaching additions, attributed with modifications; no direct quotes.",
+          "exclusions": [
+            "Images, logos, video, attachments and third-party works",
+            "Linked research paper text and direct interview quotations"
+          ],
+          "attributionRequirements": [
+            "Credit institutional author, original title/date and URL",
+            "Link licence; disclose adaptation and translation",
+            "No endorsement claim"
+          ],
+          "basis": "article-linked explicit Creative Commons licence allowing adaptation",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 86,
+          "checkedAt": "2026-10-22",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "it-2026-10-16-ingv-coniri-education",
+      "language": "it",
+      "sourceTitle": "PREMIO CNEL | Il progetto CON.I.RI. dell’INGV ottiene il riconoscimento “Impatto PA” 2026",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
+      "sourceName": "INGV Ufficio Stampa",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-10-16",
+      "collectedAt": "2026-10-22",
+      "category": "education",
+      "topics": [
+        "学校教育",
+        "自然风险"
+      ],
+      "level": "B1",
+      "priority": 3,
+      "status": "verified",
+      "editorialNote": "Reserve only; more than10,000students is participation reported by institute, not proven learning gain. AwardOct14, releaseOct16. Different programme fromGenova festival; avoid consecutive daily overconcentration in risk/science.",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-22",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
+          "checkedAt": "2026-10-22",
+          "notes": "Official full body read via web2026-10-22; article footer CC BY4 and INGV legal footer reviewed. No media/attachment/directquotation use."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
+          "evidence": "Official header visible publication date 2026-10-16"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
+          "author": "INGV Ufficio Stampa（机构署名；未列个人文字作者）",
+          "basis": "Italian institutional original press/news text; no translator or republishing credit.",
+          "caveat": "Institutional provenance, not personal native-tongue certification.",
+          "evidence": "Italian original institutional release with local institutions, no translation marker; article inspected."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "INGV article footer explicitly licenses INGV published content CC BY4; legal page footer repeats it.",
+          "evidenceUrls": [
+            "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
+            "https://www.ingv.it/note-legali",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "scope": "Institutional original narrative adapted in Italian, Chinese translation and teaching additions, attributed with modifications; no direct quotes.",
+          "exclusions": [
+            "Images, logos, video, attachments and third-party works",
+            "Linked research paper text and direct interview quotations"
+          ],
+          "attributionRequirements": [
+            "Credit institutional author, original title/date and URL",
+            "Link licence; disclose adaptation and translation",
+            "No endorsement claim"
+          ],
+          "basis": "article-linked explicit Creative Commons licence allowing adaptation",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 86,
+          "checkedAt": "2026-10-22",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 6,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "fr-2026-09-25-multifonctionnalite-haies",
+      "language": "fr",
+      "sourceTitle": "Multifonctionnalité des haies. Enjeux environnementaux, agricoles, juridiques et méthodologiques",
+      "sourceUrl": "https://www.inrae.fr/actualites/multifonctionnalite-haies-enjeux-environnementaux-agricoles-juridiques-methodologiques",
+      "sourceName": "INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-09-25",
+      "collectedAt": "2026-10-22",
+      "category": "environment",
+      "topics": [
+        "乡村景观",
+        "树篱",
+        "阅读"
+      ],
+      "level": "A2",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-22",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.inrae.fr/actualites/multifonctionnalite-haies-enjeux-environnementaux-agricoles-juridiques-methodologiques",
+          "checkedAt": "2026-10-22",
+          "notes": "Full official HTML body, bylines, dates and third-party credits inspected through web; source HTML archived locally. Linked books, PDFs and media not reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/multifonctionnalite-haies-enjeux-environnementaux-agricoles-juridiques-methodologiques",
+          "evidence": "Visible official publication line: 2026-09-25"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "basis": "institutional-original-language-inference",
+          "author": "INRAE; no personal webpage byline. Stéphanie Aviron and Audrey Alignier coordinate the described book, not asserted as webpage authors.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/multifonctionnalite-haies-enjeux-environnementaux-agricoles-juridiques-methodologiques",
+          "evidence": "Full French INRAE institutional article and html lang=fr inspected; no translation or third-party syndication marker in selected narrative. This is institutional original-language provenance inference, not proof of author mother tongue.",
+          "caveat": "Provenance inference, not certification of an individual author’s mother tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Licence Ouverte / Open Licence Etalab 2.0",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+          "basis": "official-public-text-license-plus-article-exceptions-review",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/multifonctionnalite-haies-enjeux-environnementaux-agricoles-juridiques-methodologiques",
+            "https://www.inrae.fr/conditions-generales-dutilisation",
+            "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+          ],
+          "evidence": "INRAE current CGU PROPRIETE INTELLECTUELLE licenses public institutional contents under Etalab2.0 unless marked exception. Complete selected article has no contradictory text-rights or syndication/translation credit. Etalab2.0 expressly permits adaptation and redistribution, source/date attribution and no implied endorsement.",
+          "scope": "Institutional French narrative only; exclude third-party/direct quotations and linked works. Same-language adaptation, Chinese translation and original teaching supplements.",
+          "exclusions": [
+            "All images, logos, media and captions",
+            "Linked books, papers, attachments and other sites",
+            "Direct quotations or third-party material without separate clearance"
+          ],
+          "attributionRequirements": [
+            "Credit original institution, author if named, original title/date/URL",
+            "Link license and mark adaptation, translation and teaching additions; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true,
+          "shareAlikeRequired": false
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 27,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-22-fr-regarder-les-haies-autrement"
+    },
+    {
+      "id": "fr-2026-08-31-patrimoine-lieux-familiers",
+      "language": "fr",
+      "sourceTitle": "Loto du patrimoine 2026 : 100 sites, 100 histoires à préserver",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/loto-du-patrimoine-2026-100-sites-100-histoires-a-preserver",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-08-31",
+      "collectedAt": "2026-10-22",
+      "category": "culture",
+      "topics": [
+        "地方遗产",
+        "历史记忆"
+      ],
+      "level": "A2",
+      "status": "collected",
+      "editorialNote": "优先日常文化储备：聚焦熟悉的乡村建筑与地方记忆，不提供彩票参与建议。官方搜索返回全文与日期，但直接原页本轮503，不能完成逐页例外检查；仅发现，不准转化。原报道52天，若未来使用须明确90天备用。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-22",
+        "originalDate": {
+          "verified": false,
+          "evidence": "Displayed official publication date observed, but candidate remains discovery-only pending complete independent source review.",
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/loto-du-patrimoine-2026-100-sites-100-histoires-a-preserver"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 52,
+          "bucket": "within_90_days"
+        }
+      },
+      "priority": 1
+    },
+    {
+      "id": "fr-2026-09-16-agroecologie-portraits",
+      "language": "fr",
+      "sourceTitle": "Sur les chemins de l’agroécologie. Rencontres avec des femmes et des hommes qui la pratiquent au quotidien",
+      "sourceUrl": "https://www.inrae.fr/actualites/chemins-lagroecologie-rencontres-femmes-hommes-qui-pratiquent-au-quotidien",
+      "sourceName": "INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-09-16",
+      "collectedAt": "2026-10-22",
+      "category": "society",
+      "topics": [
+        "农场生活",
+        "农业职业"
+      ],
+      "level": "B1",
+      "status": "collected",
+      "editorialNote": "低优先备用：官方网页全文已保存，介绍约15个农场/组织人物故事，书籍出版日8/28与网页报道9/16分开。尚需独立确认网页机构简介与出版社书摘界限，禁止借机构页许可转载书籍正文或水彩；不计审核完成。优先找更新日常文化，不为凑一周长期偏研究。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-22",
+        "originalDate": {
+          "verified": false,
+          "evidence": "Displayed official publication date observed, but candidate remains discovery-only pending complete independent source review.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/chemins-lagroecologie-rencontres-femmes-hommes-qui-pratiquent-au-quotidien"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 36,
+          "bucket": "within_90_days"
+        }
+      },
+      "priority": 3
+    },
+    {
+      "id": "fr-2026-09-10-organisation-actions-collectives",
+      "language": "fr",
+      "sourceTitle": "Sciences de gestion et agri-environnement : vers une ingénierie organisationnelle des dynamiques collectives",
+      "sourceUrl": "https://www.inrae.fr/actualites/sciences-gestion-agri-environnement-ingenierie-organisationnelle-dynamiques-collectives",
+      "sourceName": "INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-09-10",
+      "collectedAt": "2026-10-22",
+      "category": "society",
+      "topics": [
+        "集体行动",
+        "资源共享"
+      ],
+      "level": "B2",
+      "status": "collected",
+      "editorialNote": "低优先备用：官方正文已读保存；重点可能是多人如何长期共同管理水与土地，而非另写科研政策。尚需独立核对书介正文的权利边界和足够500词的事实支撑，不延展书中未读内容、不以书籍开放下载自动推断改编许可。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-22",
+        "originalDate": {
+          "verified": false,
+          "evidence": "Displayed official publication date observed, but candidate remains discovery-only pending complete independent source review.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/sciences-gestion-agri-environnement-ingenierie-organisationnelle-dynamiques-collectives"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 42,
+          "bucket": "within_90_days"
+        }
+      },
+      "priority": 3
+    },
+    {
+      "id": "de-2026-10-19-telemedicus-archive",
+      "language": "de",
+      "sourceTitle": "iRights e.V. übernimmt Blogarchiv von Telemedicus",
+      "sourceUrl": "https://irights.info/artikel/irights-e-v-uebernimmt-blogarchiv-von-telemedicus/32922",
+      "sourceName": "iRights.info",
+      "registrySourceId": "irights-german-culture",
+      "sourcePublishedAt": "2026-10-19",
+      "collectedAt": "2026-10-22",
+      "category": "culture",
+      "topics": [
+        "网络记忆",
+        "数字档案",
+        "查找资料"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-22",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://irights.info/artikel/irights-e-v-uebernimmt-blogarchiv-von-telemedicus/32922",
+          "checkedAt": "2026-10-22",
+          "notes": "官方原站普通HTTP GET200，完整报道已读取；web索引直开cache miss未被误当拒绝，原站正常公开读取。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://irights.info/artikel/irights-e-v-uebernimmt-blogarchiv-von-telemedicus/32922",
+          "evidence": "页面署名日期19.Oktober2026，JSON-LD datePublished2026-10-19T12:26:42+00:00。"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://irights.info/artikel/irights-e-v-uebernimmt-blogarchiv-von-telemedicus/32922",
+          "author": "原作者 Fabian Rack，iRights.info",
+          "basis": "德国iRights署名作者报道本机构档案保存项目，德文原生叙述，无翻译/转载说明。",
+          "caveat": "原语来源判断不等于作者个人母语认证。",
+          "evidence": "德国iRights署名作者报道本机构档案保存项目，德文原生叙述，无翻译/转载说明。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "explicit original-text site licence checked on article page",
+          "evidenceUrls": [
+            "https://irights.info/artikel/irights-e-v-uebernimmt-blogarchiv-von-telemedicus/32922",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "evidence": "该篇官方署名德语原生报道；页尾明确所有无另行标记的原生内容CC BY4.0。本篇正文未见另行限制，截图、作者照片与档案文本均不纳入。",
+          "scope": "署名文章正文的德语分级改写、中文翻译和原创教学补充。",
+          "exclusions": [
+            "图片、截图、标志、作者照片",
+            "第三方原文引语、参考文献作品",
+            "原始数据库和外链档案/课程全文",
+            "评论、广告或异常注入内容"
+          ],
+          "attributionRequirements": [
+            "保留全部作者或指定署名",
+            "原文URL、日期及CC BY4.0链接",
+            "披露改写/中文翻译和教学补充",
+            "不暗示原作者认可"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-22-de-alte-texte-wieder-finden"
+    },
+    {
+      "id": "de-2026-09-30-rki-return-work",
+      "language": "de",
+      "sourceTitle": "Sozioökonomische Unterschiede bei der Rückkehr ins Erwerbsleben nach onkologischer Rehabilitation – Analyse mit Daten der Deutschen Rentenversicherung",
+      "sourceUrl": "https://edoc.rki.de/bitstream/handle/176904/13986/johm-11-19-DE-pdf.pdf?isAllowed=y&sequence=1",
+      "sourceName": "Robert Koch-Institut – Journal of Health Monitoring",
+      "registrySourceId": "rki-johm-german",
+      "sourcePublishedAt": "2026-09-30",
+      "collectedAt": "2026-10-22",
+      "category": "work-economy",
+      "topics": [
+        "重返工作",
+        "社会差异",
+        "理解研究"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-22",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://edoc.rki.de/bitstream/handle/176904/13986/johm-11-19-DE-pdf.pdf?isAllowed=y&sequence=1",
+          "checkedAt": "2026-10-22",
+          "notes": "官方完整PDF11页已读取，保留本地证据；正文使用方法、结果、讨论与局限，不复制第三方材料。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://edoc.rki.de/bitstream/handle/176904/13986/johm-11-19-DE-pdf.pdf?isAllowed=y&sequence=1",
+          "evidence": "PDF首页Veröffentlicht30.09.2026，与机构仓储issued字段一致。"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://edoc.rki.de/bitstream/handle/176904/13986/johm-11-19-DE-pdf.pdf?isAllowed=y&sequence=1",
+          "author": "原作者 Enno Nowossadeck、Fabian Tetzlaff、Juliane Tetzlaff、Benjamin Barnes、Jens Hoebel；Robert Koch-Institut / Medizinische Hochschule Hannover",
+          "basis": "署名德国机构德语原生论文，另链接English version。",
+          "caveat": "原语来源判断不等于作者个人母语认证。",
+          "evidence": "署名德国机构德语原生论文，另链接English version。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "explicit article PDF licence",
+          "evidenceUrls": [
+            "https://edoc.rki.de/bitstream/handle/176904/13986/johm-11-19-DE-pdf.pdf?isAllowed=y&sequence=1",
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "evidence": "PDF第1页明确CC BY4.0、作者及2026-09-30发布日期。仓储描述字段旧标3.0DE，与PDF不一致；本轮仅以作品自身明确CC BY4.0许可为依据，不推定仓储统一授权。",
+          "scope": "署名文章正文的德语分级改写、中文翻译和原创教学补充。",
+          "exclusions": [
+            "图片、截图、标志、作者照片",
+            "第三方原文引语、参考文献作品",
+            "原始数据库和外链档案/课程全文",
+            "评论、广告或异常注入内容"
+          ],
+          "attributionRequirements": [
+            "保留全部作者或指定署名",
+            "原文URL、日期及CC BY4.0链接",
+            "披露改写/中文翻译和教学补充",
+            "不暗示原作者认可"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 22,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-22-de-zurueck-in-den-beruf"
+    },
+    {
+      "id": "dcms-new-moves-2026-10-08",
+      "language": "en",
+      "sourceTitle": "Celebrity parents back government campaign",
+      "sourceUrl": "https://www.gov.uk/government/news/celebrity-parents-back-government-campaign",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-10-08",
+      "collectedAt": "2026-10-22",
+      "category": "society",
+      "topics": [
+        "家庭活动",
+        "信心",
+        "日常运动"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-22",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/celebrity-parents-back-government-campaign",
+          "checkedAt": "2026-10-22",
+          "notes": "Official full page read with source title, From, publication date and institutional narrative. Excluded quotes and media."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/celebrity-parents-back-government-campaign",
+          "evidence": "Official page Published field; not retrieval or modification date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Department for Digital, Culture, Media and Sport and Stephanie Peacock MP",
+          "evidenceUrl": "https://www.gov.uk/government/news/celebrity-parents-back-government-campaign",
+          "basis": "Original English UK institutional release; no translation attribution.",
+          "caveat": "Institutional provenance, not certification of any author’s native tongue.",
+          "evidence": "Official English page read in full: From field explicitly credits Department for Digital, Culture, Media and Sport. English institutional narrative concerns UK domestic programmes, with no translation credit; publication header and body inspected. This verifies institutional original-language provenance, not an individual’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "Page-specific OGL v3 footer and accessible official GOV.UK terms expressly permitting reproduction under OGL; existing registered source licence review.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/celebrity-parents-back-government-campaign",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "evidence": "Each article says all content available under OGL v3 except otherwise stated. Terms section Using GOV.UK content says most content is Crown copyright/OGL and reproduction allowed under licence conditions. National Archives deed fetch returned 403 today; not bypassed or claimed freshly read.",
+          "scope": "Institutional English narrative, original educational adaptation and Chinese translation only.",
+          "exclusions": [
+            "All direct quotations including ministers and external speakers",
+            "Images, logos, film, third-party tips and external webpages",
+            "Censuswide wording/tables as works; only factual survey numbers attributed to the institutional report"
+          ],
+          "attributionRequirements": [
+            "Credit original authors, URL and date",
+            "Link OGL v3 and retain standard attribution",
+            "State modifications, teaching additions and no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 14,
+          "bucket": "within_30_days"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/celebrity-parents-back-government-campaign",
+          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-digital-culture-media-and-sport"
+        }
+      },
+      "linkToArticleId": "2026-10-22-en-moving-together"
+    },
+    {
+      "id": "dcms-tech-placements-2026-10-21",
+      "language": "en",
+      "sourceTitle": "10,000 young people to get foot in the door of Britain’s tech sector as work placements rolled out across the country",
+      "sourceUrl": "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-10-21",
+      "collectedAt": "2026-10-22",
+      "category": "work-economy",
+      "topics": [
+        "青年就业",
+        "工作体验",
+        "技术教育"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-22",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+          "checkedAt": "2026-10-22",
+          "notes": "Official full page read with source title, From, publication date and institutional narrative. Excluded quotes and media."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+          "evidence": "Official page Published field; not retrieval or modification date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Department for Digital, Culture, Media and Sport; Department for Business, Innovation, Science and Trade; Andy Burnham MP; Lisa Nandy MP",
+          "evidenceUrl": "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+          "basis": "Original English UK institutional release; no translation attribution.",
+          "caveat": "Institutional provenance, not certification of any author’s native tongue.",
+          "evidence": "Official English page read in full: From field explicitly credits Department for Digital, Culture, Media and Sport, Department for Business, Innovation, Science and Trade. English institutional narrative concerns UK domestic programmes, with no translation credit; publication header and body inspected. This verifies institutional original-language provenance, not an individual’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "Page-specific OGL v3 footer and accessible official GOV.UK terms expressly permitting reproduction under OGL; existing registered source licence review.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "evidence": "Each article says all content available under OGL v3 except otherwise stated. Terms section Using GOV.UK content says most content is Crown copyright/OGL and reproduction allowed under licence conditions. National Archives deed fetch returned 403 today; not bypassed or claimed freshly read.",
+          "scope": "Institutional English narrative, original educational adaptation and Chinese translation only.",
+          "exclusions": [
+            "All direct quotations including ministers and external speakers",
+            "Images, logos, film, third-party tips and external webpages",
+            "Censuswide wording/tables as works; only factual survey numbers attributed to the institutional report"
+          ],
+          "attributionRequirements": [
+            "Credit original authors, URL and date",
+            "Link OGL v3 and retain standard attribution",
+            "State modifications, teaching additions and no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport",
+            "Department for Business, Innovation, Science and Trade"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-digital-culture-media-and-sport"
+        }
+      },
+      "linkToArticleId": "2026-10-22-en-first-steps-into-tech"
+    },
+    {
+      "id": "dcms-culture-shortlist-2026-10-22",
+      "language": "en",
+      "sourceTitle": "Blackpool, Milton Keynes, Sheffield and Wrexham shortlisted for UK City of Culture 2029",
+      "sourceUrl": "https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-10-22",
+      "collectedAt": "2026-10-22",
+      "category": "culture",
+      "topics": [
+        "社区文化",
+        "公共参与",
+        "城市发展"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-22：全文、译文、等级、许可及两类练习已完成独立审核；正文及题组最终哈希见本日审核记录。独立原语素材，同语言教学改写，不复制媒体或第三方引语。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-22",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029",
+          "checkedAt": "2026-10-22",
+          "notes": "Official full page read with source title, From, publication date and institutional narrative. Excluded quotes and media."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029",
+          "evidence": "Official page Published field; not retrieval or modification date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Department for Digital, Culture, Media and Sport and Lisa Nandy MP",
+          "evidenceUrl": "https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029",
+          "basis": "Original English UK institutional release; no translation attribution.",
+          "caveat": "Institutional provenance, not certification of any author’s native tongue.",
+          "evidence": "Official English page read in full: From field explicitly credits Department for Digital, Culture, Media and Sport. English institutional narrative concerns UK domestic programmes, with no translation credit; publication header and body inspected. This verifies institutional original-language provenance, not an individual’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "Page-specific OGL v3 footer and accessible official GOV.UK terms expressly permitting reproduction under OGL; existing registered source licence review.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "evidence": "Each article says all content available under OGL v3 except otherwise stated. Terms section Using GOV.UK content says most content is Crown copyright/OGL and reproduction allowed under licence conditions. National Archives deed fetch returned 403 today; not bypassed or claimed freshly read.",
+          "scope": "Institutional English narrative, original educational adaptation and Chinese translation only.",
+          "exclusions": [
+            "All direct quotations including ministers and external speakers",
+            "Images, logos, film, third-party tips and external webpages",
+            "Censuswide wording/tables as works; only factual survey numbers attributed to the institutional report"
+          ],
+          "attributionRequirements": [
+            "Credit original authors, URL and date",
+            "Link OGL v3 and retain standard attribution",
+            "State modifications, teaching additions and no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 0,
+          "bucket": "within_30_days"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029",
+          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-digital-culture-media-and-sport"
+        }
+      },
+      "linkToArticleId": "2026-10-22-en-culture-beyond-winning"
+    },
+    {
+      "id": "en-2026-10-09-illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-conti",
+      "language": "en",
+      "sourceTitle": "Illegal waste at Hoad’s Wood fully cleared as crackdown continues",
+      "sourceUrl": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
+      "sourceName": "Department for Environment, Food & Rural Affairs / GOV.UK",
+      "registrySourceId": "govuk-defra-english-news",
+      "sourcePublishedAt": "2026-10-09",
+      "collectedAt": "2026-10-22",
+      "category": "environment",
+      "topics": [
+        "社区环境",
+        "生活与自然"
+      ],
+      "level": "A2",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "林地清理完成不等于生态恢复完成；39000余吨清理与暂限进入可讲具体日常环境。只作来源储备，尚无教学稿。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-22",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
+          "checkedAt": "2026-10-22",
+          "notes": "Official full page read with source title, From, publication date and institutional narrative. Excluded quotes and media."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
+          "evidence": "Official page Published field; not retrieval or modification date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Environment Agency; Department for Environment, Food & Rural Affairs; Angela Eagle MP",
+          "evidenceUrl": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
+          "basis": "Original English UK institutional release; no translation attribution.",
+          "caveat": "Institutional provenance, not certification of any author’s native tongue.",
+          "evidence": "Official English page read in full: From field explicitly credits Department for Environment, Food & Rural Affairs, Environment Agency. English institutional narrative concerns UK domestic programmes, with no translation credit; publication header and body inspected. This verifies institutional original-language provenance, not an individual’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "Page-specific OGL v3 footer and accessible official GOV.UK terms expressly permitting reproduction under OGL; existing registered source licence review.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "evidence": "Each article says all content available under OGL v3 except otherwise stated. Terms section Using GOV.UK content says most content is Crown copyright/OGL and reproduction allowed under licence conditions. National Archives deed fetch returned 403 today; not bypassed or claimed freshly read.",
+          "scope": "Institutional English narrative, original educational adaptation and Chinese translation only.",
+          "exclusions": [
+            "All direct quotations, images, logos, outside reports and third-party works"
+          ],
+          "attributionRequirements": [
+            "Credit original authors, URL and date",
+            "Link OGL v3 and retain standard attribution",
+            "State modifications, teaching additions and no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 13,
+          "bucket": "within_30_days"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Environment, Food & Rural Affairs",
+            "Environment Agency"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
+          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs"
+        }
+      }
+    },
+    {
+      "id": "en-2026-10-20-water-company-bosses-update-national-drought-group-on-resili",
+      "language": "en",
+      "sourceTitle": "Water company bosses update National Drought Group on resilience",
+      "sourceUrl": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
+      "sourceName": "Department for Environment, Food & Rural Affairs / GOV.UK",
+      "registrySourceId": "govuk-defra-english-news",
+      "sourcePublishedAt": "2026-10-20",
+      "collectedAt": "2026-10-22",
+      "category": "environment",
+      "topics": [
+        "社区环境",
+        "生活与自然"
+      ],
+      "level": "B1",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "干旱与日常供水，区分已采取措施和待审批限水；需要下次转换时复核最新状态。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-22",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
+          "checkedAt": "2026-10-22",
+          "notes": "Official full page read with source title, From, publication date and institutional narrative. Excluded quotes and media."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
+          "evidence": "Official page Published field; not retrieval or modification date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Department for Environment, Food & Rural Affairs; Environment Agency; Emma Hardy MP",
+          "evidenceUrl": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
+          "basis": "Original English UK institutional release; no translation attribution.",
+          "caveat": "Institutional provenance, not certification of any author’s native tongue.",
+          "evidence": "Official English page read in full: From field explicitly credits Department for Environment, Food & Rural Affairs, Environment Agency. English institutional narrative concerns UK domestic programmes, with no translation credit; publication header and body inspected. This verifies institutional original-language provenance, not an individual’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "Page-specific OGL v3 footer and accessible official GOV.UK terms expressly permitting reproduction under OGL; existing registered source licence review.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "evidence": "Each article says all content available under OGL v3 except otherwise stated. Terms section Using GOV.UK content says most content is Crown copyright/OGL and reproduction allowed under licence conditions. National Archives deed fetch returned 403 today; not bypassed or claimed freshly read.",
+          "scope": "Institutional English narrative, original educational adaptation and Chinese translation only.",
+          "exclusions": [
+            "All direct quotations, images, logos, outside reports and third-party works"
+          ],
+          "attributionRequirements": [
+            "Credit original authors, URL and date",
+            "Link OGL v3 and retain standard attribution",
+            "State modifications, teaching additions and no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 2,
+          "bucket": "within_30_days"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Environment, Food & Rural Affairs",
+            "Environment Agency"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
+          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs"
+        }
+      }
+    },
+    {
+      "id": "en-2026-09-30-local-communities-to-receive-79-million-to-restore-nature",
+      "language": "en",
+      "sourceTitle": "Local communities to receive £79 million to restore nature",
+      "sourceUrl": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
+      "sourceName": "Department for Environment, Food & Rural Affairs / GOV.UK",
+      "registrySourceId": "govuk-defra-english-news",
+      "sourcePublishedAt": "2026-09-30",
+      "collectedAt": "2026-10-22",
+      "category": "environment",
+      "topics": [
+        "社区环境",
+        "生活与自然"
+      ],
+      "level": "B2",
+      "priority": 2,
+      "status": "verified",
+      "editorialNote": "树木、街道和社区适应；£53m树木与£26m策略资金须区分，拟树木数非已完成。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-22",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
+          "checkedAt": "2026-10-22",
+          "notes": "Official full page read with source title, From, publication date and institutional narrative. Excluded quotes and media."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
+          "evidence": "Official page Published field; not retrieval or modification date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Department for Environment, Food & Rural Affairs; Angela Eagle MP",
+          "evidenceUrl": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
+          "basis": "Original English UK institutional release; no translation attribution.",
+          "caveat": "Institutional provenance, not certification of any author’s native tongue.",
+          "evidence": "Official English page read in full: From field explicitly credits Department for Environment, Food & Rural Affairs. English institutional narrative concerns UK domestic programmes, with no translation credit; publication header and body inspected. This verifies institutional original-language provenance, not an individual’s first language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "Page-specific OGL v3 footer and accessible official GOV.UK terms expressly permitting reproduction under OGL; existing registered source licence review.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "evidence": "Each article says all content available under OGL v3 except otherwise stated. Terms section Using GOV.UK content says most content is Crown copyright/OGL and reproduction allowed under licence conditions. National Archives deed fetch returned 403 today; not bypassed or claimed freshly read.",
+          "scope": "Institutional English narrative, original educational adaptation and Chinese translation only.",
+          "exclusions": [
+            "All direct quotations, images, logos, outside reports and third-party works"
+          ],
+          "attributionRequirements": [
+            "Credit original authors, URL and date",
+            "Link OGL v3 and retain standard attribution",
+            "State modifications, teaching additions and no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-22",
+          "checkedAgainstArticleCount": 86,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-22",
+          "ageDays": 22,
+          "bucket": "within_30_days"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Environment, Food & Rural Affairs"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
+          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs"
+        }
+      }
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

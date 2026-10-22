@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-en-moving-together",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 19,
+      "answer": "encourages",
+      "options": [
+        "discourages",
+        "encourages",
+        "interrupts",
+        "forbids"
+      ],
+      "explanation": "encourages作单数主语The New Moves Club的谓语，encourage somebody to do表示鼓励某人做某事。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 13,
+      "answer": "worry",
+      "options": [
+        "promise",
+        "confirm",
+        "worry",
+        "celebrate"
+      ],
+      "explanation": "worry that引出所担心的内容；此处不是承诺或确认。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 33,
+      "answer": "guardians",
+      "options": [
+        "spectators",
+        "coaches",
+        "guardians",
+        "referees"
+      ],
+      "explanation": "parents and guardians并列，guardians是复数，指承担监护责任的人。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 21,
+      "answer": "lack",
+      "options": [
+        "record",
+        "lack",
+        "waste",
+        "gift"
+      ],
+      "explanation": "a lack of time是时间不足；a后用名词lack。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 61,
+      "answer": "enjoying",
+      "options": [
+        "enjoying",
+        "measuring",
+        "selling",
+        "postponing"
+      ],
+      "explanation": "focuses on后并列joining、trying、enjoying，表示享受相处时间。"
+    }
+  ]
+}

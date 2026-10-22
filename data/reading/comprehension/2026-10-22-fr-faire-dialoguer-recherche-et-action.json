@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-fr-faire-dialoguer-recherche-et-action",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quel lien le texte établit-il entre la rencontre et l’action publique ?",
+      "promptZh": "本文如何联系这次会议与公共行动？",
+      "options": [
+        "La rencontre devait transformer les questions publiques en cours de formation.",
+        "La rencontre devait rapprocher les besoins publics et les connaissances scientifiques.",
+        "La rencontre devait comparer les délais des projets pour harmoniser leur calendrier.",
+        "La rencontre devait présenter les services publics à de futurs chercheurs."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7",
+        "s11"
+      ],
+      "explanationZh": "第6句给出连接研究知识与公共行动需求的目标，第7、11句说明双向交流。不是把公共问题转为培训课、以统一日程为目的，或主要向未来研究者介绍公共服务。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Comment faut-il comprendre le nombre de 150 personnes ?",
+      "promptZh": "应如何理解150人这个数字？",
+      "options": [
+        "Plus de 150 personnes étaient présentes, selon le bilan final.",
+        "Plus de 150 scientifiques devaient intervenir dans les séances.",
+        "Au maximum 150 personnes pouvaient s’inscrire aux journées.",
+        "Plus de 150 personnes étaient attendues, selon l’annonce initiale."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "文中是“预计超过150人”，并明确不是活动后的出席统计，也不是发言人数或报名上限。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi la différence de durée est-elle présentée comme une difficulté ?",
+      "promptZh": "为什么时间长短的差异被视为困难？",
+      "options": [
+        "Parce que la recherche et l’action publique suivent des rythmes différents.",
+        "Parce que les journées devaient durer plus longtemps que prévu.",
+        "Parce que les établissements préparaient chacun une rencontre différente.",
+        "Parce que les séances scientifiques avaient été déplacées à une autre date."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第9句指出研究时间通常更长，差异在于两种工作的节奏；文章没有说会议延期、各办各的或改期。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Pourquoi les exemples de l’eau potable et de l’éclairage sont-ils utiles dans le texte ?",
+      "promptZh": "饮用水与照明的例子在本文中有什么作用？",
+      "options": [
+        "Ils montrent quels sujets ont obtenu les meilleurs résultats après les journées.",
+        "Ils indiquent quels services devaient être gratuits pour les participants.",
+        "Ils rendent concret le lien entre coopération et vie quotidienne.",
+        "Ils expliquent pourquoi les organisateurs ont choisi ce campus."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "第13、14句将抽象合作与居民生活中的事务联系起来；原文未提供活动后排名、免费服务或选址原因。"
+    }
+  ]
+}

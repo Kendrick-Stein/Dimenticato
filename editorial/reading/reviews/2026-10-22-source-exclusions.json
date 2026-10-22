@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-22",
+  "completedDraftTiers": [
+    "A2",
+    "B2"
+  ],
+  "missingTiers": [
+    "B1"
+  ],
+  "independentReview": "A2 and B2 completed independent review; B1 omitted.",
+  "discoveryNotes": [
+    {
+      "sourceUrl": "https://open-educational-resources.de/oer-zu-halloween-kostenlose-materialien-und-lernideen-fuer-den-unterricht/",
+      "title": "OER zu Halloween: Kostenlose Materialien und Lernideen für den Unterricht",
+      "sourcePublishedAt": "2026-10-20",
+      "previouslyDiscovered": "2026-10-21 source-exclusions record, not a new discovery",
+      "status": "collected",
+      "reason": "普通原站访问今日恢复HTTP200，全文及作者/CC BY4块可读；但许可后出现与教育内容无关的大量外部推广文本，完整性存疑，本轮不转化。未点开可疑链接，保留本地证据不公开复制垃圾文本。"
+    },
+    {
+      "sourceUrl": "https://irights.info/artikel/urheberrecht-ueberblick-der-beitraege/32896",
+      "sourcePublishedAt": "2026-08-26",
+      "status": "collected",
+      "previouslyDiscovered": "2026-10-21",
+      "reason": "仍为链接目录型储备，需要追溯OERinfo初刊，未把转载日期当原始日期；本轮不为B1配额改写既有文章目录。"
+    },
+    {
+      "sourceUrl": "https://open-educational-resources.de/offene-bildungsinfrastrukturen-gemeinsam-weiterentwickeln-eindruecke-und-ergbnisse-aus-dem-hackathoern-projekt/",
+      "sourcePublishedAt": "2026-06-16",
+      "status": "archive-only",
+      "reason": "真实署名CC BY4文字，但原始发布日期超90天，8月活动日期不替代发表日期。"
+    },
+    {
+      "sourceUrl": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/",
+      "status": "checked-no-qualified-new-item",
+      "reason": "首页/档案及日期定向检索：多数近90天明确可用作品已入库，未获得新的逐篇合规独立B1全文；无证据时缺省。"
+    },
+    {
+      "sourceUrl": "https://netzpolitik.org/2026/breakpoint-im-gleichschritt-der-cowboystiefel/",
+      "status": "link-only-existing-reserve",
+      "reason": "既有NC兼容性未解决，不扩充为转载白名单。"
+    }
+  ],
+  "additionalLimits": [
+    "Italian Istat sources returned403; no bypass. French culture source temporary503; no full-text conversion."
+  ]
+}

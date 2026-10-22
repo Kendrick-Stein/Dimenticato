@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-it-parma-archivio-in-immagini",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 80,
+      "answer": "incisioni",
+      "options": [
+        "fotografie",
+        "incisioni",
+        "lettere",
+        "sculture"
+      ],
+      "explanation": "按中文句意还原原文：incisioni在此表示“版画”。阴性复数名词；这里指刻版后印制的作品；其他选项不表达该句中文含义。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 65,
+      "answer": "scaffali",
+      "options": [
+        "biglietti",
+        "giardini",
+        "pittori",
+        "scaffali"
+      ],
+      "explanation": "按中文句意还原原文：scaffali在此表示“书架”。阳性复数名词，与stanze和depositi并列；其他选项不表达该句中文含义。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 13,
+      "answer": "gratuito",
+      "options": [
+        "gratuito",
+        "costoso",
+        "privato",
+        "lontano"
+      ],
+      "explanation": "按中文句意还原原文：gratuito在此表示“免费的”。阳性单数形容词，与ingresso一致；其他选项不表达该句中文含义。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 60,
+      "answer": "prenotazione",
+      "options": [
+        "traduzione",
+        "partenza",
+        "prenotazione",
+        "conservazione"
+      ],
+      "explanation": "按中文句意还原原文：prenotazione在此表示“预约”。阴性单数名词；su prenotazione意为须预约；其他选项不表达该句中文含义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 9,
+      "answer": "catalogo",
+      "options": [
+        "deposito",
+        "catalogo",
+        "laboratorio",
+        "biglietto"
+      ],
+      "explanation": "按中文句意还原原文：catalogo在此表示“图录”。阳性单数名词，指展览作品目录；其他选项不表达该句中文含义。"
+    }
+  ]
+}

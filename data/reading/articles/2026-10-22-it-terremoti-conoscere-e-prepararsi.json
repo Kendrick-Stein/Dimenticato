@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-it-terremoti-conoscere-e-prepararsi",
+  "storyId": "ingv-festival-scienza-genova-2026-10-21",
+  "lang": "it",
+  "date": "2026-10-22",
+  "title": "Terremoti: capire il passato, prepararsi al futuro",
+  "titleZh": "地震：理解过去，为未来作准备",
+  "summaryZh": "热那亚科学节通过互动解谜与专题讲座区分地震预测的局限和风险减轻的现实路径。",
+  "level": "B2",
+  "levelReason": "编辑估计：较长说明性论述，区分预测、知识与风险减轻，含让步、条件及对照关系；不是按字数自动定级。",
+  "category": "education",
+  "topics": [
+    "科学传播",
+    "公众参与",
+    "地震风险"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INGV — Ufficio Stampa",
+    "title": "FESTIVAL DELLA SCIENZA 2026 | Torna a Genova l’appuntamento con la divulgazione scientifica",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/festival-della-scienza-2026-torna-a-genova-l-appuntamento-con-la-divulgazione-scientifica",
+    "publishedAt": "2026-10-21",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：INGV — Ufficio Stampa（机构署名，未列个人文字作者）。原题、原日期与链接见来源信息。Dimenticato依据CC BY 4.0进行同语言分级改写、中文翻译及原创教学补充；本篇教学材料采用同一许可，不表示原机构认可。",
+  "adaptation": "2026-10-22整理，原文发表于2026-10-21。仅改写机构新闻文字，不使用照片、图像、标志、第三方作品或直接引语。事件安排与实际发生状态分开；中文释义、讨论和练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Dal 22 ottobre al 1° novembre 2026, Genova ospita la ventiquattresima edizione del Festival della Scienza, dedicata al tema Prospettive: un invito a cambiare punto di vista e a condividere idee sulla ricerca contemporanea, esplorando nuove direzioni di pensiero e costruendo insieme nuovi orizzonti di conoscenza.",
+      "zh": "2026年10月22日至11月1日，热那亚举办第二十四届科学节，主题为“视角”：邀请人们改变观察角度，分享关于当代研究的想法，探索新的思考方向，共同建立新的知识视野。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Secondo la presentazione pubblicata dall’INGV il 21 ottobre, centinaia di scienziati, ricercatori, divulgatori, autori e artisti incontreranno il pubblico in oltre trenta luoghi del centro cittadino, attraverso conferenze, mostre, laboratori e spettacoli.",
+      "zh": "根据INGV于10月21日发布的介绍，数百位科学家、研究者、科普工作者、作者和艺术家将在市中心三十多个地点，通过讲座、展览、工作坊和演出与公众交流。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "In questo programma, l’Istituto Nazionale di Geofisica e Vulcanologia propone due iniziative sui fenomeni sismici, collegate da una domanda: in che modo la conoscenza scientifica può aiutare le comunità ad affrontare il rischio?",
+      "zh": "在这一安排中，意大利国家地球物理与火山研究所推出两项关于地震现象的活动，它们围绕同一个问题：科学知识如何帮助社区应对风险？",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "La prima è un laboratorio interattivo, organizzato come una escape room, nel quale i partecipanti sono invitati a indagare tre terremoti importanti per la storia sismica italiana, anziché limitarsi ad ascoltare una spiegazione.",
+      "zh": "第一项是以密室解谜形式组织的互动工作坊，邀请参与者调查三次在意大利地震史上具有重要意义的地震，而不只是听取讲解。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Il percorso chiede di analizzare indizi, risolvere enigmi e ricostruire informazioni nascoste nei dati, mostrando come gli eventi del passato abbiano contribuito sia al progresso della ricerca sia alla mitigazione del rischio sismico.",
+      "zh": "这一路径要求参与者分析线索、破解谜题、重建数据中隐藏的信息，展示过去的事件如何促进科研进展以及地震风险的减轻。",
+      "glosses": [
+        {
+          "surface": "indizi",
+          "lemma": "indizio",
+          "zh": "线索",
+          "note": "阳性复数名词，作analizzare的宾语"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "L’obiettivo dichiarato non è soltanto raccontare ciò che è accaduto: attraverso le lezioni dei terremoti precedenti, il laboratorio intende contribuire alla formazione di comunità più consapevoli e preparate ad affrontare quelli futuri.",
+      "zh": "公布的目标不只是讲述已经发生的事情：工作坊希望通过以往地震的经验教训，帮助社区增进认识，为应对未来地震做好准备。",
+      "glosses": [
+        {
+          "surface": "consapevoli",
+          "lemma": "consapevole",
+          "zh": "有认识的",
+          "note": "复数形容词，修饰comunità"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "L’attività è prevista alla Piazza delle Feste, nell’area del Porto Antico, per tutta la durata del festival, dalle 9 alle 16 dal lunedì al venerdì e dalle 10 alle 19 il sabato e la domenica; la presentazione rimanda alle informazioni per le prenotazioni e precisa che i partecipanti dovranno ricostruire, attraverso il gioco, il contributo dei singoli eventi alla ricerca.",
+      "zh": "活动安排在旧港区的Piazza delle Feste，贯穿整个科学节，周一至周五9点至16点开放，周六周日10点至19点开放；介绍页提供预约信息入口，并说明参与者需要通过游戏重建各次事件对研究的贡献。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "La seconda iniziativa, affidata al ricercatore INGV Stefano Solarino, è una conferenza prevista per il 1° novembre alle 18, nell’auditorium del Galata Museo del Mare, che invita a ripensare il rischio sismico.",
+      "zh": "第二项活动由INGV研究者Stefano Solarino主讲，是一场邀请公众重新思考地震风险的讲座，计划于11月1日18点在Galata海洋博物馆礼堂举行。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Il punto di partenza è una difficoltà ancora aperta: nonostante i numerosi metodi proposti e i possibili segnali individuati nel corso degli anni, una previsione affidabile dei terremoti rimane una sfida scientifica particolarmente complessa.",
+      "zh": "讲座从一个尚未解决的困难出发：尽管多年来提出了许多方法，也发现了一些可能的信号，可靠预测地震仍然是一项极其复杂的科学挑战。",
+      "glosses": [
+        {
+          "surface": "affidabile",
+          "lemma": "affidabile",
+          "zh": "可靠的",
+          "note": "单数形容词，修饰previsione"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "La conferenza si propone di discutere vantaggi e limiti dei metodi, distinguendo gli approcci predittivi dai precursori sismici, e di esaminare le potenzialità dell’intelligenza artificiale insieme a quelle delle tecniche di allarme precoce.",
+      "zh": "讲座计划讨论各种方法的优点与局限，区分预测方法和地震前兆，并探讨人工智能及预警技术的潜力。",
+      "glosses": [
+        {
+          "surface": "precursori",
+          "lemma": "precursore",
+          "zh": "前兆",
+          "note": "阳性复数名词，与sismici构成地震前兆"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "L’interrogativo centrale riguarda quindi le conseguenze: se non sappiamo ancora prevedere con certezza quando e dove si verificherà un terremoto, quali risorse ci permettono comunque di ridurre gli effetti sulle comunità?",
+      "zh": "核心问题因此转向后果：如果我们还不能确定预测地震何时何地发生，那么哪些资源仍能帮助我们减轻地震对社区的影响？",
+      "glosses": [
+        {
+          "surface": "conseguenze",
+          "lemma": "conseguenza",
+          "zh": "后果",
+          "note": "阴性复数名词，表示事件带来的影响"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "La presentazione indica tre elementi essenziali: la conoscenza scientifica, il monitoraggio del territorio e la preparazione delle comunità, spostando l’attenzione dalla sola previsione alle diverse possibilità di riduzione del rischio.",
+      "zh": "介绍指出三个关键要素：科学知识、地域监测以及社区准备，把注意力从单纯预测转向减轻风险的多种可能途径。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Le due proposte utilizzano dunque forme differenti di partecipazione, il gioco investigativo e la discussione scientifica, per collegare ciò che si può imparare dai terremoti passati con i problemi che la ricerca deve ancora affrontare.",
+      "zh": "因此，两项活动采用不同的参与形式，即调查式游戏与科学讨论，把能够从过去地震中学到的经验与科研尚需面对的问题联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Si tratta del programma annunciato dagli organizzatori, non di una valutazione dei risultati ottenuti dal festival: gli obiettivi educativi e le potenzialità delle tecnologie non costituiscono, da soli, la prova di una capacità di previsione già raggiunta.",
+      "zh": "这些是组织者公布的安排，而非对科学节成果的评价：教育目标与技术潜力本身，并不能证明已经实现了地震预测能力。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "indizi",
+        "zh": "线索",
+        "sentenceId": "s5",
+        "lemma": "indizio",
+        "note": "阳性复数名词，作analizzare的宾语"
+      },
+      {
+        "text": "consapevoli",
+        "zh": "有认识的",
+        "sentenceId": "s6",
+        "lemma": "consapevole",
+        "note": "复数形容词，修饰comunità"
+      },
+      {
+        "text": "affidabile",
+        "zh": "可靠的",
+        "sentenceId": "s9",
+        "lemma": "affidabile",
+        "note": "单数形容词，修饰previsione"
+      },
+      {
+        "text": "precursori",
+        "zh": "前兆",
+        "sentenceId": "s10",
+        "lemma": "precursore",
+        "note": "阳性复数名词，与sismici构成地震前兆"
+      },
+      {
+        "text": "conseguenze",
+        "zh": "后果",
+        "sentenceId": "s11",
+        "lemma": "conseguenza",
+        "note": "阴性复数名词，表示事件带来的影响"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "anziché limitarsi",
+        "zh": "而非仅限于",
+        "sentenceId": "s4",
+        "note": "anziché＋不定式表达替代或对照"
+      },
+      {
+        "text": "nonostante i numerosi metodi proposti",
+        "zh": "尽管提出了许多方法",
+        "sentenceId": "s9",
+        "note": "nonostante＋名词短语引出让步"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "se引导条件，再以quali提出问题，区分预测能力不足与减轻影响仍有途径。"
+      },
+      {
+        "sentenceId": "s14",
+        "note": "non costituiscono, da soli, la prova说明目标、潜力不等于已经取得结果；该句是明确的编辑阅读提示。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Un laboratorio interattivo può aiutare a capire meglio un rischio? Perché?",
+        "zh": "互动工作坊能否帮助人们更好地理解一种风险？为什么？"
+      },
+      {
+        "text": "Come distingueresti una possibilità tecnologica da un risultato dimostrato?",
+        "zh": "你会怎样区分一种技术潜力和一个已获证明的结果？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "anziché limitarsi",
+        "zh": "而非仅限于",
+        "note": "anziché＋不定式表达替代或对照"
+      },
+      {
+        "text": "nonostante i numerosi metodi proposti",
+        "zh": "尽管提出了许多方法",
+        "note": "nonostante＋名词短语引出让步"
+      }
+    ]
+  }
+}

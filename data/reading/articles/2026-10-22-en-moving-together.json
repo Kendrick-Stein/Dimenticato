@@ -1,0 +1,205 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-en-moving-together",
+  "storyId": "dcms-new-moves-2026-10-08",
+  "lang": "en",
+  "date": "2026-10-22",
+  "category": "society",
+  "topics": [
+    "家庭活动",
+    "信心",
+    "日常运动"
+  ],
+  "title": "A small start for family activity",
+  "titleZh": "一家人一起动起来，从小小一步开始",
+  "summaryZh": "一项家庭活动宣传鼓励家长和孩子一起尝试，不必先成为运动高手。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：家庭活动具体情境，常见动词与短句；数字和少量活动词配中文。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "Celebrity parents back government campaign",
+    "url": "https://www.gov.uk/government/news/celebrity-parents-back-government-campaign",
+    "publishedAt": "2026-10-08",
+    "lang": "en",
+    "author": "Department for Digital, Culture, Media and Sport and Stephanie Peacock MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport and Stephanie Peacock MP; 2026-10-08; https://www.gov.uk/government/news/celebrity-parents-back-government-campaign",
+  "adaptation": "2026-10-22整理；依据2026-10-08发表的机构英文叙述作同语言教学改写，配中文翻译及原创学习补充；不是原文逐字转载，不代表来源机构认可。排除照片、标志、全部直接引语、第三方作品及外链内容；明确区分计划、来源报告与教学解读。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 8 October 2026, the British government announced a new part of its Let’s Move! campaign.",
+      "zh": "2026年10月8日，英国政府宣布了“Let’s Move!”宣传活动的新阶段。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "The New Moves Club encourages families with children aged seven to eleven to try an activity together.",
+      "zh": "“New Moves Club”鼓励有七至十一岁孩子的家庭一起尝试一项活动。",
+      "glosses": [
+        {
+          "surface": "encourages",
+          "lemma": "encourage",
+          "zh": "鼓励"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "The message is simple: you do not need to be good at a sport before you join in.",
+      "zh": "它传达的信息很简单：不必先擅长某项运动，才可以参与。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Some parents worry that they are not sporty enough, and this can stop them from trying.",
+      "zh": "一些家长担心自己不够擅长运动，这种顾虑可能阻止他们尝试。",
+      "glosses": [
+        {
+          "surface": "worry",
+          "lemma": "worry",
+          "zh": "担心"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "A survey asked 2,006 parents and guardians of seven-to-eleven-year-olds in England about being active.",
+      "zh": "一项调查询问了英格兰2,006名七至十一岁儿童的家长和监护人有关活动的情况。",
+      "glosses": [
+        {
+          "surface": "guardians",
+          "lemma": "guardian",
+          "zh": "监护人"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "It took place in August, before the October campaign announcement.",
+      "zh": "调查在八月进行，早于十月的宣传活动公告。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "In that survey, 82 percent wanted their family to be more active together.",
+      "zh": "该调查中，82%的受访者希望家人一起进行更多活动。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Forty percent said a lack of time stopped them from taking part with their children.",
+      "zh": "40%的受访者表示，时间不足阻碍了自己与孩子一起参与活动。",
+      "glosses": [
+        {
+          "surface": "lack",
+          "lemma": "lack",
+          "zh": "缺乏"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The campaign therefore suggests short periods of movement that can take just ten minutes.",
+      "zh": "因此，这项宣传活动建议安排短时间的身体活动，有些只需要十分钟。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "These short periods are a way to start and build up activity, not the whole daily goal.",
+      "zh": "这些短时间的活动是开始并逐渐增加活动量的方式，而不是全天的完整目标。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "The campaign focuses on joining in, trying something new and enjoying time together.",
+      "zh": "这项活动关注的是参与、尝试新事物以及享受一起度过的时间。",
+      "glosses": [
+        {
+          "surface": "enjoying",
+          "lemma": "enjoy",
+          "zh": "享受"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "encourages",
+        "lemma": "encourage",
+        "zh": "鼓励",
+        "sentenceId": "s2",
+        "note": "encourages作单数主语The New Moves Club的谓语，encourage somebody to do表示鼓励某人做某事。"
+      },
+      {
+        "text": "worry",
+        "lemma": "worry",
+        "zh": "担心",
+        "sentenceId": "s4",
+        "note": "worry that引出所担心的内容；此处不是承诺或确认。"
+      },
+      {
+        "text": "guardians",
+        "lemma": "guardian",
+        "zh": "监护人",
+        "sentenceId": "s5",
+        "note": "parents and guardians并列，guardians是复数，指承担监护责任的人。"
+      },
+      {
+        "text": "lack",
+        "lemma": "lack",
+        "zh": "缺乏",
+        "sentenceId": "s8",
+        "note": "a lack of time是时间不足；a后用名词lack。"
+      },
+      {
+        "text": "enjoying",
+        "lemma": "enjoy",
+        "zh": "享受",
+        "sentenceId": "s11",
+        "note": "focuses on后并列joining、trying、enjoying，表示享受相处时间。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "join in",
+        "zh": "参与",
+        "sentenceId": "s3",
+        "note": "join in强调加入正在进行的活动。"
+      },
+      {
+        "text": "taking part",
+        "zh": "参与",
+        "sentenceId": "s8",
+        "note": "take part in后接活动；这里with their children说明和谁一起。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "not连接对比：短时间活动是起点，而非全天目标；a way to do表示做某事的一种方式。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What small activity could a family try together?",
+        "zh": "一家人可以一起尝试什么小活动？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "We could start with ten minutes of…",
+        "zh": "我们可以先用十分钟……",
+        "note": "with后可接名词或动名词，例如walking；这是可复用教学表达。"
+      }
+    ]
+  }
+}

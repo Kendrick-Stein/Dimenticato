@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-it-terremoti-conoscere-e-prepararsi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale idea collega le due iniziative descritte?",
+      "options": [
+        "Collegare la conoscenza dei terremoti alla preparazione delle comunità.",
+        "Confrontare i metodi di allarme precoce attraverso prove in laboratorio.",
+        "Ricostruire le reazioni del pubblico agli ultimi terremoti italiani.",
+        "Presentare l’intelligenza artificiale come tema comune alle attività."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s5",
+        "s6",
+        "s9",
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "互动活动从历史地震学习，讲座讨论预测局限和减轻风险，两者共同强调科学知识与社区准备。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa faranno i partecipanti alla escape room?",
+      "options": [
+        "Progetteranno strumenti per verificare i segnali precursori.",
+        "Simuleranno l’invio di avvisi attraverso sistemi di allarme.",
+        "Analizzeranno dati e indizi relativi a tre terremoti.",
+        "Calcoleranno tempo e luogo di un futuro evento sismico."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "正文给出三个历史地震，以及分析线索、解谜和从数据中重建信息的任务。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Perché la conferenza considera anche la riduzione delle conseguenze?",
+      "options": [
+        "Perché il gioco mette a confronto i sistemi di allarme già disponibili.",
+        "Perché prevedere tempo e luogo di un terremoto rimane una sfida.",
+        "Perché il programma valuta i danni dei tre terremoti in termini economici.",
+        "Perché gli incontri raccolgono i bisogni espressi dai residenti del porto."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "原文以预测何时何地发生的能力仍有限为前提，转问如何减轻后果。正文没有把比较现有预警系统、核算三个地震的经济损失或收集港口居民需求作为这一讨论的原因。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quale insieme di risorse è indicato per ridurre il rischio?",
+      "options": [
+        "Previsione dei singoli eventi, raccolta dei precursori e simulazioni dei danni.",
+        "Allarme precoce, ricostruzione degli edifici e confronto delle evacuazioni.",
+        "Intelligenza artificiale, studio dei precursori e progettazione degli strumenti.",
+        "Conoscenza scientifica, monitoraggio e preparazione delle comunità."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s12"
+      ],
+      "explanationZh": "正文明确列出科学知识、地域监测、社区准备三项资源。其他组合混合了讲座涉及的技术概念以及正文未列入这组三项的措施，不是该段给出的答案。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Quale distinzione emerge mettendo insieme laboratorio e conferenza?",
+      "options": [
+        "Il laboratorio studia i precursori; la conferenza ricostruisce tre eventi passati.",
+        "Dagli eventi passati si impara, mentre la previsione affidabile resta una sfida.",
+        "I dati storici servono alla previsione esatta; la conferenza ne confronta i risultati.",
+        "La preparazione delle comunità dipende dalla conferma dei precursori sismici."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s6",
+        "s9",
+        "s12"
+      ],
+      "explanationZh": "工作坊展示历史地震如何促进研究与风险减轻；讲座同时说明可靠预测仍有困难。两部分结合表明，从过去学习取得进展不等于已经解决预测问题。"
+    }
+  ]
+}

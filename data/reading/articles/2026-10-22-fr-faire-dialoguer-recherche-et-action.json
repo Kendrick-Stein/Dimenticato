@@ -1,0 +1,275 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-fr-faire-dialoguer-recherche-et-action",
+  "storyId": "faire-dialoguer-recherche-et-action-2026-09-30",
+  "lang": "fr",
+  "date": "2026-10-22",
+  "title": "Faire dialoguer recherche et action",
+  "titleZh": "让研究与公共行动对话",
+  "summaryZh": "公共部门需要证据，科学研究也需要理解现实问题。一次会议的安排展现了双方合作的可能，以及时间节奏上的差异。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：围绕合作这一社会话题，使用原因、让步和目的表达，区分过去公告、原定计划及一般判断；抽象词汇由具体公共事务举例辅助。",
+  "category": "society",
+  "topics": [
+    "公共生活",
+    "科学沟通",
+    "合作"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE",
+    "title": "Croiser recherche et action publique",
+    "url": "https://www.inrae.fr/actualites/croiser-recherche-action-publique",
+    "publishedAt": "2026-09-30",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "原文：Nicole Ladet（INRAE rédactrice），INRAE。标题、原始发布日期及原站链接见来源信息。机构正文依 Licence Ouverte 2.0 使用；Dimenticato 制作法语分级改写、中文翻译及教学补充，不代表原机构认可。",
+  "adaptation": "2026-10-22整理，原文发表于2026-09-30，不是当天新闻。仅改写机构网页正文；不使用图片、书籍正文、附件、第三方引语或外链材料。保留原文计划与已完成事项的区别；口语问题和表达属于教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Pour décider dans le domaine public, il faut comprendre les problèmes auxquels une société est confrontée.",
+      "zh": "要在公共领域作决策，就必须理解社会面临的问题。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Le climat, l’énergie ou les risques concernent les responsables publics, mais aussi les scientifiques qui les étudient.",
+      "zh": "气候、能源或风险既涉及公共部门负责人，也涉及研究这些问题的科学家。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Dans un article publié le 30 septembre 2026, INRAE présentait des journées destinées à renforcer le dialogue entre ces deux mondes.",
+      "zh": "在2026年9月30日发表的一篇文章中，INRAE介绍了一次旨在加强这两个领域对话的会议。",
+      "glosses": [
+        {
+          "surface": "dialogue",
+          "lemma": "dialogue",
+          "zh": "对话",
+          "note": "阳性单数名词；le dialogue，指双方交流。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "La rencontre était prévue les 14 et 15 octobre au Campus Agro Paris-Saclay, avec plus de 150 personnes attendues.",
+      "zh": "会议原定于10月14日和15日在Agro Paris-Saclay校区举行，预计参加人数超过150人。",
+      "glosses": [
+        {
+          "surface": "attendues",
+          "lemma": "attendu",
+          "zh": "预计到场的",
+          "note": "过去分词作形容词，和阴性复数 personnes 配合，不表示已实际出席。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Ce chiffre décrivait une attente avant l’événement, et non un bilan de participation.",
+      "zh": "这一数字描述的是活动前的预期，而不是出席情况的总结。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "L’objectif annoncé était de mieux relier les connaissances issues de la recherche aux besoins de l’action publique.",
+      "zh": "公布的目标是更好地将研究产生的知识与公共行动的需求联系起来。",
+      "glosses": [
+        {
+          "surface": "besoins",
+          "lemma": "besoin",
+          "zh": "需求",
+          "note": "阳性复数；aux besoins 为 à + les besoins。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "La plupart des présentations devaient réunir deux intervenants : un scientifique et un acteur public.",
+      "zh": "大多数报告原计划由两位发言者共同进行：一位科学家和一位公共部门参与者。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Cette organisation mettait en avant leur coopération, au lieu de présenter séparément leurs expériences.",
+      "zh": "这种安排突出双方的合作，而不是分别呈现各自的经验。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Une difficulté demeure pourtant : le temps de la recherche est souvent plus long que celui de l’action publique.",
+      "zh": "然而，一个困难依然存在：研究所需的时间通常比公共行动的时间更长。",
+      "glosses": [
+        {
+          "surface": "long",
+          "lemma": "long",
+          "zh": "长",
+          "note": "形容词阳性单数，与 le temps 一致；plus long que 表示更长。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Cela n’empêche pas de construire des projets ensemble et de produire des bénéfices pour les deux parties.",
+      "zh": "这并不妨碍双方一起建设项目，并为双方带来益处。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Selon l’article, les échanges peuvent soutenir les décisions publiques tout en contribuant à la production de nouvelles connaissances.",
+      "zh": "根据文章，这些交流既能支持公共决策，也能促进新知识的产生。",
+      "glosses": [
+        {
+          "surface": "connaissances",
+          "lemma": "connaissance",
+          "zh": "知识",
+          "note": "阴性复数；de nouvelles connaissances 指新知识。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Le programme associait les sciences de l’ingénieur, les sciences humaines et sociales et les sciences du vivant.",
+      "zh": "议程结合了工程科学、人文与社会科学以及生命科学。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Parmi les sujets annoncés figuraient l’eau potable, la nature en ville, l’emploi, la formation et la réduction de l’éclairage public.",
+      "zh": "公布的议题包括饮用水、城市自然、就业、培训以及减少公共照明。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Ces exemples montrent que la rencontre concernait aussi des questions présentes dans la vie quotidienne des habitants.",
+      "zh": "这些例子表明，会议也涉及居民日常生活中的问题。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Plusieurs établissements organisaient ces journées, dont INRAE, chargé de piloter cette édition.",
+      "zh": "多个机构共同组织这次会议，其中INRAE负责牵头这一届活动。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Après une première édition en 2024, les organisateurs souhaitaient installer un rendez-vous national tous les deux ans.",
+      "zh": "在2024年首届活动之后，组织者希望建立一个每两年举办一次的全国性交流活动。",
+      "glosses": [
+        {
+          "surface": "souhaitaient",
+          "lemma": "souhaiter",
+          "zh": "希望",
+          "note": "直陈式未完成过去时第三人称复数，描述公告中的愿望，不是完成结果。"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "L’article décrivait donc une ambition de coopération durable ; il ne présentait pas encore les résultats de la rencontre annoncée.",
+      "zh": "因此，这篇文章描述的是持续合作的愿景；它尚未呈现所预告会议的成果。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "dialogue",
+        "lemma": "dialogue",
+        "zh": "对话",
+        "note": "阳性单数名词；le dialogue，指双方交流。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "attendues",
+        "lemma": "attendu",
+        "zh": "预计到场的",
+        "note": "过去分词作形容词，和阴性复数 personnes 配合，不表示已实际出席。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "besoins",
+        "lemma": "besoin",
+        "zh": "需求",
+        "note": "阳性复数；aux besoins 为 à + les besoins。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "long",
+        "lemma": "long",
+        "zh": "长",
+        "note": "形容词阳性单数，与 le temps 一致；plus long que 表示更长。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "souhaitaient",
+        "lemma": "souhaiter",
+        "zh": "希望",
+        "note": "直陈式未完成过去时第三人称复数，描述公告中的愿望，不是完成结果。",
+        "sentenceId": "s16"
+      },
+      {
+        "text": "connaissances",
+        "lemma": "connaissance",
+        "zh": "知识",
+        "note": "阴性复数；de nouvelles connaissances 指新知识。",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "est confrontée",
+        "zh": "面临",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "au lieu de",
+        "zh": "而不是",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "tout en contribuant",
+        "zh": "同时作出贡献",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s9",
+        "note": "pourtant 表示转折；plus long que 对两种时间节奏作比较。"
+      },
+      {
+        "sentenceId": "s17",
+        "note": "ne…pas encore 表示“尚未”，帮助区分公告与结果报告。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel problème de votre ville gagnerait à réunir des habitants, des responsables publics et des scientifiques ?",
+        "zh": "你所在城市的哪个问题适合让居民、公共部门负责人和科学家一起讨论？"
+      },
+      {
+        "text": "Comment travailler ensemble quand les participants n’ont pas le même rythme ?",
+        "zh": "参与者的工作节奏不同时，怎样合作？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Les deux parties n’ont pas le même rythme.",
+        "zh": "双方的节奏不一样。",
+        "note": "讨论合作困难时使用。"
+      },
+      {
+        "text": "Cela peut profiter aux deux parties.",
+        "zh": "这可能让双方受益。",
+        "note": "用 peut 保留可能性，不保证结果。"
+      }
+    ]
+  }
+}

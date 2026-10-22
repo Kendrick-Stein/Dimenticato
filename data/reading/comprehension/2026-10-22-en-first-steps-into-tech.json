@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-en-first-steps-into-tech",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "c1",
+      "kind": "detail",
+      "prompt": "How are the 10,000 work experiences scheduled?",
+      "options": [
+        "Across a three-year period.",
+        "During one school holiday.",
+        "Every year until 2028.",
+        "After the learning platform closes."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s3"
+      ],
+      "explanationZh": "s3明确未来三年提供，不能把另一项每年岗位目标的时间单位移过来。"
+    },
+    {
+      "id": "c2",
+      "kind": "detail",
+      "prompt": "What may count towards the entry-level jobs target?",
+      "options": [
+        "Only jobs at newly established companies.",
+        "Only jobs completed during school visits.",
+        "New positions and existing vacancies filled by employers.",
+        "School lessons and competitions organised by employers."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "s6两类都包括：新设职位和被填补的现有空缺；体验活动或课程不是此处岗位。"
+    },
+    {
+      "id": "c3",
+      "kind": "main-idea",
+      "prompt": "How does the plan connect education and employment?",
+      "options": [
+        "It prioritises hiring experienced applicants over school-based preparation.",
+        "It combines school activities with workplace opportunities.",
+        "It counts school competitions towards the annual entry-level jobs target.",
+        "It makes the learning platform the main route into work placements."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s7",
+        "s10",
+        "s11",
+        "s15",
+        "s16"
+      ],
+      "explanationZh": "s7、s10、s11的学校学习与s15的职场体验形成衔接。正文没有优先录用有经验者，也未把学校比赛计入就业岗位目标，或说学习平台是工作体验的主要通道。"
+    },
+    {
+      "id": "c4",
+      "kind": "detail",
+      "prompt": "What would be wrong with saying that one million students have already benefited?",
+      "options": [
+        "The figure measures workplace experiences offered over three years.",
+        "The figure describes existing vacancies employers intend to fill.",
+        "The figure counts pupils attending disadvantaged schools alone.",
+        "The figure is a future reach target, not completed participation."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "s8目标期限2028年与s9直接区分目标和实际参与；不能把计划覆盖数写成已经受益数。"
+    }
+  ]
+}

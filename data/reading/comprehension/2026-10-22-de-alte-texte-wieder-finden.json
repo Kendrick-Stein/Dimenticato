@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-de-alte-texte-wieder-finden",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Für wen schrieb Telemedicus auch?",
+      "promptZh": "Telemedicus 还面向哪些读者？",
+      "options": [
+        "Für Menschen ohne juristische Ausbildung.",
+        "Für Menschen ohne Zugang zum Internet.",
+        "Für Menschen ohne Interesse an Datenschutz.",
+        "Für Menschen ohne Erfahrung mit Suchmaschinen."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第9句明确说文章也为没有法律专业教育背景的人而写；其他选项中的条件并未出现。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Warum sind die einfachen HTML-Seiten für das Archiv nützlich?",
+      "promptZh": "简单的 HTML 网页为什么对档案有用？",
+      "options": [
+        "Sie ordnen die Artikel nach ihrem Alter.",
+        "Sie übersetzen die Beiträge in andere Sprachen.",
+        "Sie machen die technische Pflege leichter.",
+        "Sie ergänzen die Texte um neue Nachrichten."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第10、11句说明替换旧软件后，网站需要较少的技术维护；没有提到翻译、自动排序或添加新闻。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Was sieht man jetzt bei der Suche auf iRights.info?",
+      "promptZh": "现在在 iRights.info 上搜索会看到什么？",
+      "options": [
+        "Nur die neuesten Artikel von Telemedicus.",
+        "Archivtreffer getrennt von anderen Ergebnissen.",
+        "Archivtreffer nach Themen geordnet.",
+        "Die alten Artikel ohne weitere Suchergebnisse."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第12、13句说明搜索可返回档案结果，而且与其他结果分开展示；并不是只返回档案。"
+    }
+  ]
+}

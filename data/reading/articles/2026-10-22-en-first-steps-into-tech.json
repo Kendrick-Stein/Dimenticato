@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-en-first-steps-into-tech",
+  "storyId": "dcms-tech-placements-2026-10-21",
+  "lang": "en",
+  "date": "2026-10-22",
+  "category": "work-economy",
+  "topics": [
+    "青年就业",
+    "工作体验",
+    "技术教育"
+  ],
+  "title": "From classroom skills to workplace experience",
+  "titleZh": "从课堂技能到工作体验",
+  "summaryZh": "科技行业的体验机会与入门岗位目标并不相同；新计划还把活动带进中学。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连接计划、时间与对象，比较两类机会；使用定语从句、被动语态和目的表达。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "10,000 young people to get foot in the door of Britain’s tech sector as work placements rolled out across the country",
+    "url": "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+    "publishedAt": "2026-10-21",
+    "lang": "en",
+    "author": "Department for Digital, Culture, Media and Sport; Department for Business, Innovation, Science and Trade; Andy Burnham MP; Lisa Nandy MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport; Department for Business, Innovation, Science and Trade; Andy Burnham MP; Lisa Nandy MP; 2026-10-21; https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+  "adaptation": "2026-10-22整理；依据2026-10-21发表的机构英文叙述作同语言教学改写，配中文翻译及原创学习补充；不是原文逐字转载，不代表来源机构认可。排除照片、标志、全部直接引语、第三方作品及外链内容；明确区分计划、来源报告与教学解读。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Young people who are looking for their first job often need a way to connect learning with the workplace.",
+      "zh": "寻找第一份工作的年轻人往往需要一种把学习与职场联系起来的方式。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "On 21 October 2026, the government announced 10,000 work experience opportunities in Britain’s digital and technology sector.",
+      "zh": "2026年10月21日，政府宣布将在英国数字与科技行业提供10,000个工作体验机会。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "A group of technology employers is backing the programme, with opportunities to be offered over the next three years.",
+      "zh": "一批科技雇主支持这项计划，相关机会将在未来三年提供。",
+      "glosses": [
+        {
+          "surface": "employers",
+          "lemma": "employer",
+          "zh": "雇主"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The aim is to help young people gain experience, develop their skills and add something useful to their CVs.",
+      "zh": "其目的是帮助年轻人积累经验、发展技能，并为简历增添有用内容。",
+      "glosses": [
+        {
+          "surface": "gain",
+          "lemma": "gain",
+          "zh": "获得、积累"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "These placements should not be confused with a separate target for 20,000 entry-level jobs each year.",
+      "zh": "不应把这些体验岗位与每年20,000个入门岗位的另一项目标混为一谈。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "That jobs target can include newly created positions as well as existing vacancies that employers decide to fill.",
+      "zh": "这一就业目标既可以包括新设职位，也可以包括雇主决定填补的现有空缺。",
+      "glosses": [
+        {
+          "surface": "vacancies",
+          "lemma": "vacancy",
+          "zh": "职位空缺"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The announcement also expands TechFirst, a skills programme that all secondary schools can now access.",
+      "zh": "公告还扩大了TechFirst技能计划，目前所有中学都可以参与该计划。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "The government wants it to reach at least one million secondary students by 2028, including 400,000 from disadvantaged schools.",
+      "zh": "政府希望到2028年，该计划覆盖至少一百万名中学生，其中包括来自弱势学校的40万人。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "This is an ambition for the programme, rather than a report that all those students have already taken part.",
+      "zh": "这是计划的目标，而不是说这些学生已经全部参加。",
+      "glosses": [
+        {
+          "surface": "ambition",
+          "lemma": "ambition",
+          "zh": "目标、抱负"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Students will be offered workshops, career talks, technology clubs, competitions and opportunities to experience workplaces.",
+      "zh": "学生将获得工作坊、职业讲座、科技社团、比赛以及体验工作场所的机会。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "They will also have access to the Ada Computer Science learning platform, with lessons linked to the curriculum.",
+      "zh": "他们还将能够使用Ada Computer Science学习平台，学习与课程体系衔接的内容。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "The platform covers subjects such as coding, artificial intelligence and cyber security, and lets students learn at their own pace.",
+      "zh": "该平台涵盖编程、人工智能和网络安全等主题，让学生按自己的节奏学习。",
+      "glosses": [
+        {
+          "surface": "pace",
+          "lemma": "pace",
+          "zh": "节奏"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "TechFirst is designed for all young people, while also aiming to support groups that are underrepresented in technology.",
+      "zh": "TechFirst面向所有年轻人，同时也旨在支持科技领域中代表性不足的群体。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "These include women and girls, and young people from disadvantaged areas who may need better access to opportunities.",
+      "zh": "这些群体包括女性和女孩，以及来自弱势地区、可能需要更好机会渠道的年轻人。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "The government is asking more employers to join the initiative and offer digital and technology work experiences.",
+      "zh": "政府正在邀请更多雇主加入该倡议，提供数字与科技领域的工作体验。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "The plan brings schools, employers and government together, but the announced opportunities and targets still need to become real experiences and jobs.",
+      "zh": "这项计划把学校、雇主和政府联系起来，但所宣布的机会与目标仍需转化为实际体验和工作。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "employers",
+        "lemma": "employer",
+        "zh": "雇主",
+        "sentenceId": "s3",
+        "note": "employers指提供工作或工作体验的机构；a group of后这里使用复数名词。"
+      },
+      {
+        "text": "gain",
+        "lemma": "gain",
+        "zh": "获得、积累",
+        "sentenceId": "s4",
+        "note": "gain experience是积累经验；help somebody do后使用动词原形。"
+      },
+      {
+        "text": "vacancies",
+        "lemma": "vacancy",
+        "zh": "职位空缺",
+        "sentenceId": "s6",
+        "note": "fill vacancies表示填补职位空缺；vacancies为vacancy的复数。"
+      },
+      {
+        "text": "ambition",
+        "lemma": "ambition",
+        "zh": "目标、抱负",
+        "sentenceId": "s9",
+        "note": "ambition说明希望实现的目标，区别于已经完成的结果。"
+      },
+      {
+        "text": "pace",
+        "lemma": "pace",
+        "zh": "节奏",
+        "sentenceId": "s12",
+        "note": "at their own pace表示按自己的节奏，不是按别人的速度。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "should not be confused with",
+        "zh": "不应与……混淆",
+        "sentenceId": "s5",
+        "note": "被动结构be confused with用于区分相近概念。"
+      },
+      {
+        "text": "as well as",
+        "zh": "以及、也包括",
+        "sentenceId": "s6",
+        "note": "连接两种岗位来源，而不是把后者排除。"
+      },
+      {
+        "text": "at their own pace",
+        "zh": "按他们自己的节奏",
+        "sentenceId": "s12",
+        "note": "own强调节奏由学习者自身决定。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "can include表达可能包含的范围；as well as说明目标不只统计新设职位。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which would help you more at the start of a career: a workshop or workplace experience, and why?",
+        "zh": "职业起步时，工作坊与工作体验哪一种对你帮助更大？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "The main difference is that…",
+        "zh": "主要区别在于……",
+        "note": "用that引出完整句子，对比学习机会和实际工作。"
+      }
+    ]
+  }
+}

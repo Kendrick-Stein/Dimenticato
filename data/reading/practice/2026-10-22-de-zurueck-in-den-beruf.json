@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-de-zurueck-in-den-beruf",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s5",
+      "start": 21,
+      "answer": "benachteiligte",
+      "options": [
+        "unbekannte",
+        "benachteiligte",
+        "freiwillige",
+        "zufällige"
+      ],
+      "explanation": "按中文句意恢复 benachteiligte（处境不利的）。benachteiligte Gruppen：形容词复数词形，指社会经济不利处境。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s8",
+      "start": 95,
+      "answer": "gesicherten",
+      "options": [
+        "geplanten",
+        "befürchteten",
+        "gesicherten",
+        "vermuteten"
+      ],
+      "explanation": "按中文句意恢复 gesicherten（确诊的；得到确认的）。mit einer gesicherten Krebsdiagnose：第三格阴性单数，形容词结尾-en。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s11",
+      "start": 52,
+      "answer": "Schwelle",
+      "options": [
+        "Reihenfolge",
+        "Rechnung",
+        "Antwort",
+        "Schwelle"
+      ],
+      "explanation": "按中文句意恢复 Schwelle（门槛）。eine Schwelle festlegen：设定一个判定门槛。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s16",
+      "start": 116,
+      "answer": "berücksichtigt",
+      "options": [
+        "veröffentlicht",
+        "berücksichtigt",
+        "verwechselt",
+        "verschwiegen"
+      ],
+      "explanation": "按中文句意恢复 berücksichtigt（被考虑）。berücksichtigt wurden：过去时被动结构。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s20",
+      "start": 52,
+      "answer": "Motive",
+      "options": [
+        "Motive",
+        "Termine",
+        "Berufe",
+        "Kontakte"
+      ],
+      "explanation": "按中文句意恢复 Motive（动机）。复数；这里不是图案，而是行动或决定的理由。"
+    }
+  ]
+}

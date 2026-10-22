@@ -1,0 +1,352 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-de-zurueck-in-den-beruf",
+  "storyId": "rki-return-work-2026-09-30",
+  "lang": "de",
+  "date": "2026-10-22",
+  "title": "Zurück in den Beruf: Was die Zahlen zeigen",
+  "titleZh": "重返工作：数字说明了什么",
+  "summaryZh": "一项德国康复数据分析显示返岗机会存在收入差异。理解这些数字，还必须看清样本、时间和无法解释的原因。",
+  "level": "B2",
+  "levelReason": "编辑估计：以研究问题、样本、结果、解释边界形成论证；包含较长关系从句、条件句、被动语态与抽象社会经济词汇，要求区分关联和因果。",
+  "category": "work-economy",
+  "topics": [
+    "重返工作",
+    "社会差异",
+    "理解研究"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Robert Koch-Institut – Journal of Health Monitoring",
+    "title": "Sozioökonomische Unterschiede bei der Rückkehr ins Erwerbsleben nach onkologischer Rehabilitation – Analyse mit Daten der Deutschen Rentenversicherung",
+    "url": "https://edoc.rki.de/bitstream/handle/176904/13986/johm-11-19-DE-pdf.pdf?isAllowed=y&sequence=1",
+    "publishedAt": "2026-09-30",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者 Enno Nowossadeck、Fabian Tetzlaff、Juliane Tetzlaff、Benjamin Barnes、Jens Hoebel；Robert Koch-Institut / Medizinische Hochschule Hannover。Dimenticato 作德语分级改写、中文翻译及原创教学补充；本文与配套练习按 CC BY 4.0 提供。来源作者未认证本教学材料。",
+  "adaptation": "2026-10-22 整理，原文2026-09-30发表。根据原生德语论文全文分级改写，保留资料期、样本筛选、返岗定义及非因果边界。第23、27句为明确的编辑归纳；练习与口语内容为原创教学补充。不复制图表、照片、参考文献引文或原始数据库，不提供个人医疗建议。许可依据为PDF第1页明确CC BY4.0。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Nach einer schweren Erkrankung geht es nicht nur darum, die medizinische Behandlung zu beenden.",
+      "zh": "重病之后，问题不仅在于完成医疗治疗。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Wenn Menschen nicht in ihren Beruf zurückkehren können, drohen ihnen neben Einkommensverlusten auch weniger soziale Kontakte.",
+      "zh": "如果人们无法重返工作，除了收入损失，也可能面临社会联系减少。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Eine am 30. September 2026 veröffentlichte Untersuchung im Journal of Health Monitoring fragt deshalb nach sozialen Unterschieden bei dieser Rückkehr.",
+      "zh": "因此，2026年9月30日发表于《健康监测期刊》的一项研究考察了重返工作方面的社会差异。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Das Forschungsteam untersuchte Menschen, die nach einer Krebsbehandlung eine onkologische Rehabilitation abgeschlossen hatten.",
+      "zh": "研究团队考察的是癌症治疗后完成肿瘤康复的人。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Es wollte wissen, ob benachteiligte Gruppen seltener wieder erwerbstätig werden als sozial und wirtschaftlich bessergestellte Gruppen.",
+      "zh": "研究希望了解，处境不利的群体是否比社会经济条件较好的群体更少重新就业。",
+      "glosses": [
+        {
+          "surface": "benachteiligte",
+          "lemma": "benachteiligt",
+          "zh": "处境不利的",
+          "note": "benachteiligte Gruppen：形容词复数词形，指社会经济不利处境。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Grundlage war ein Forschungsdatensatz der Deutschen Rentenversicherung für den Zeitraum von 2014 bis 2021, also keine Befragung zur heutigen Situation.",
+      "zh": "依据是德国养老保险机构2014至2021年的研究数据集，而不是针对当下情况的问卷调查。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Die ausgewerteten Rehabilitationsfälle stammten aus den Jahren 2014 bis 2020; für die Untersuchung wurden mehrere Auswahlkriterien angewendet.",
+      "zh": "接受分析的康复案例来自2014至2020年；研究采用了多项筛选条件。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "In die endgültige Analyse gingen Daten von 64.080 Personen zwischen 18 und 65 Jahren mit einer gesicherten Krebsdiagnose ein.",
+      "zh": "最终分析纳入了64,080名18至65岁、有明确癌症诊断者的数据。",
+      "glosses": [
+        {
+          "surface": "gesicherten",
+          "lemma": "gesichert",
+          "zh": "确诊的；得到确认的",
+          "note": "mit einer gesicherten Krebsdiagnose：第三格阴性单数，形容词结尾-en。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Diese Personen waren vor Beginn der Rehabilitation mindestens zur Hälfte der üblichen Wochenarbeitszeit erwerbstätig gewesen.",
+      "zh": "这些人在康复开始前，曾从事至少相当于通常每周工作时间一半的工作。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Wer vorher nicht oder in geringerem Umfang gearbeitet hatte, gehörte damit nicht zu dieser untersuchten Gruppe.",
+      "zh": "因此，此前没有工作或工作时间更短的人不属于这个研究群体。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Auch für das Ergebnis legte das Team eine bestimmte Schwelle fest: Eine Rückkehr zählte, wenn innerhalb von 24 Monaten wieder mindestens die Hälfte der üblichen Wochenarbeitszeit erreicht wurde.",
+      "zh": "团队也为结果设定了具体门槛：如果在24个月内重新达到至少通常每周工作时间的一半，就算作返岗。",
+      "glosses": [
+        {
+          "surface": "Schwelle",
+          "lemma": "Schwelle",
+          "zh": "门槛",
+          "note": "eine Schwelle festlegen：设定一个判定门槛。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Die Forschenden betrachteten drei soziale Merkmale, nämlich Bildungsabschluss, berufliches Anforderungsniveau und Einkommen vor Beginn der Rehabilitation.",
+      "zh": "研究者考察了三项社会特征，即教育程度、职业技能要求水平，以及康复开始前的收入。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Insgesamt berichteten sie einen Rückkehranteil von 67,2 Prozent; bei Frauen waren es 70,0 Prozent, bei Männern 63,4 Prozent.",
+      "zh": "他们报告的总体返岗比例为67.2%；女性为70.0%，男性为63.4%。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Diese drei Werte sind nicht altersstandardisiert und beziehen sich auf die ausgewählte Studiengruppe, nicht auf alle Menschen mit Krebs.",
+      "zh": "这三个数值未经过年龄标准化，针对的是筛选后的研究群体，而非所有癌症患者。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Bei allen drei sozialen Merkmalen zeigten die beschreibenden Auswertungen höhere Rückkehranteile in den jeweils besser gestellten Gruppen.",
+      "zh": "对这三项社会特征，描述性分析都显示：相应条件较好的群体返岗比例更高。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Besonders deutlich war der Zusammenhang mit dem Einkommen, auch wenn weitere Merkmale in den statistischen Modellen berücksichtigt wurden.",
+      "zh": "与收入的关联尤其明显，即使统计模型考虑了其他特征，情况也是如此。",
+      "glosses": [
+        {
+          "surface": "berücksichtigt",
+          "lemma": "berücksichtigen",
+          "zh": "被考虑",
+          "note": "berücksichtigt wurden：过去时被动结构。"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Dazu gehörten unter anderem das Alter, die Wohnregion und das Jahr der Rehabilitation sowie die jeweils anderen sozialen Merkmale.",
+      "zh": "这些其他特征包括年龄、居住地区、康复年份，以及其余社会特征。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Das bedeutet jedoch nicht, dass die Untersuchung erklärt, wodurch der Einkommensunterschied im Einzelfall entsteht oder wie er sich beseitigen lässt.",
+      "zh": "但这不意味着研究解释了每个个案中与收入相关的差异是如何产生的，或应怎样消除。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Die Autoren halten ausdrücklich fest, dass der verwendete Datensatz keine empirische Erklärung für die gefundenen Unterschiede erlaubt.",
+      "zh": "作者明确指出，所使用的数据集无法对发现的差异给出实证解释。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "So fehlen Angaben zu persönlichen Einstellungen und Motiven, die gesundheitliche und andere Gründe für eine ausbleibende Rückkehr verständlicher machen könnten.",
+      "zh": "例如，数据缺少个人态度和动机的信息，而这些信息可能有助于理解未能返岗的健康原因及其他原因。",
+      "glosses": [
+        {
+          "surface": "Motive",
+          "lemma": "Motiv",
+          "zh": "动机",
+          "note": "复数；这里不是图案，而是行动或决定的理由。"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Die Größe der Stichprobe ist zugleich eine Stärke: Sie ermöglicht Auswertungen für verschiedene Krebserkrankungen und nicht nur für Krebs insgesamt; außerdem enthält der Datensatz Angaben zu Bildung, Beruf und Einkommen, sodass nicht nur ein einzelnes Merkmal der sozialen Lage betrachtet werden muss.",
+      "zh": "样本规模同时也是一个优点：它使研究能够分别分析不同癌症，而不仅是癌症总体；此外，数据集包括教育、职业和收入信息，因此不必只考察社会状况的单一特征。",
+      "glosses": [
+        {
+          "surface": "Stichprobe",
+          "lemma": "Stichprobe",
+          "zh": "样本",
+          "note": "die Stichprobe；研究实际分析的对象集合。"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Dennoch sind Vergleiche mit anderen Studien schwierig, weil diese eine erfolgreiche Rückkehr in den Beruf teilweise anders definieren.",
+      "zh": "然而，与其他研究作比较仍然困难，因为它们有时以不同方式定义成功返岗。",
+      "glosses": []
+    },
+    {
+      "id": "s23",
+      "text": "Eine ähnliche Prozentzahl muss daher nicht dieselbe berufliche Situation beschreiben.",
+      "zh": "因此，相近的百分比未必描述同样的就业情况。",
+      "glosses": []
+    },
+    {
+      "id": "s24",
+      "text": "Das Forschungsteam sieht in den Ergebnissen Hinweise auf eine doppelte Benachteiligung von Menschen mit niedrigerem Einkommen.",
+      "zh": "研究团队认为，结果显示较低收入者可能面临双重不利处境。",
+      "glosses": []
+    },
+    {
+      "id": "s25",
+      "text": "Sie kehren seltener zurück, und die finanziellen sowie sozialen Folgen fehlender Erwerbstätigkeit können sie besonders stark treffen.",
+      "zh": "他们较少重返工作，而没有工作带来的经济和社会后果也可能对他们影响尤其严重。",
+      "glosses": []
+    },
+    {
+      "id": "s26",
+      "text": "Die Autoren sprechen sich deshalb dafür aus, beruflich orientierte Rehabilitation und Unterstützung beim Übergang stärker auf diese Bedürfnisse auszurichten.",
+      "zh": "因此，作者主张让职业导向的康复及过渡支持更加针对这些需求。",
+      "glosses": [
+        {
+          "surface": "auszurichten",
+          "lemma": "ausrichten",
+          "zh": "使……针对",
+          "note": "auf etwas ausrichten 的带zu不定式，可分动词在前缀后加zu。"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Als redaktionelle Einordnung bleibt wichtig: Die Studie beschreibt ungleiche Bedingungen, sie bewertet weder den persönlichen Einsatz einzelner Erkrankter noch beweist sie die Wirkung eines bestimmten Unterstützungsangebots.",
+      "zh": "作为编辑解读，需要强调：研究描述了不平等的条件，既没有评价患者个人是否努力，也没有证明某一种支持服务的效果。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "benachteiligte",
+        "lemma": "benachteiligt",
+        "zh": "处境不利的",
+        "note": "benachteiligte Gruppen：形容词复数词形，指社会经济不利处境。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "gesicherten",
+        "lemma": "gesichert",
+        "zh": "确诊的；得到确认的",
+        "note": "mit einer gesicherten Krebsdiagnose：第三格阴性单数，形容词结尾-en。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "Schwelle",
+        "lemma": "Schwelle",
+        "zh": "门槛",
+        "note": "eine Schwelle festlegen：设定一个判定门槛。",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "berücksichtigt",
+        "lemma": "berücksichtigen",
+        "zh": "被考虑",
+        "note": "berücksichtigt wurden：过去时被动结构。",
+        "sentenceId": "s16"
+      },
+      {
+        "text": "Motive",
+        "lemma": "Motiv",
+        "zh": "动机",
+        "note": "复数；这里不是图案，而是行动或决定的理由。",
+        "sentenceId": "s20"
+      },
+      {
+        "text": "Stichprobe",
+        "lemma": "Stichprobe",
+        "zh": "样本",
+        "note": "die Stichprobe；研究实际分析的对象集合。",
+        "sentenceId": "s21"
+      },
+      {
+        "text": "auszurichten",
+        "lemma": "ausrichten",
+        "zh": "使……针对",
+        "note": "auf etwas ausrichten 的带zu不定式，可分动词在前缀后加zu。",
+        "sentenceId": "s26"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "vor Beginn",
+        "zh": "在开始之前",
+        "note": "vor + 第三格；后接第二格 der Rehabilitation。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "ausdrücklich fest",
+        "zh": "明确指出",
+        "note": "festhalten 为可分动词，这里halten … fest。",
+        "sentenceId": "s19"
+      },
+      {
+        "text": "besonders stark treffen",
+        "zh": "影响尤其严重",
+        "note": "treffen 在此不是见面，而是对人产生不利影响。",
+        "sentenceId": "s25"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s18",
+        "note": "Das bedeutet jedoch nicht, dass …：用否定的从句限制前面结果的解释范围。"
+      },
+      {
+        "sentenceId": "s22",
+        "note": "weil … definieren：原因从句动词位于句末，强调跨研究比较需要定义一致。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Warum sollte man bei einer Prozentzahl auch fragen, wer untersucht wurde?",
+        "zh": "为什么看到一个百分比时，还应该问研究对象是谁？"
+      },
+      {
+        "text": "Welche Unterschiede zwischen einem Ergebnis und seiner Erklärung zeigt dieser Text?",
+        "zh": "本文展示了研究结果和结果解释之间哪些区别？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Die Zahl bezieht sich auf …, nicht auf …",
+        "zh": "这个数字针对的是……，而不是……。",
+        "note": "原创教学补充，可结合自己的情况完成。"
+      },
+      {
+        "text": "Ein Zusammenhang erklärt noch nicht, warum …",
+        "zh": "存在关联还不能解释为什么……。",
+        "note": "原创教学补充，可结合自己的情况完成。"
+      }
+    ]
+  }
+}

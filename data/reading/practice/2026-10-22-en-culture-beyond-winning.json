@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-en-culture-beyond-winning",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 113,
+      "answer": "applications",
+      "options": [
+        "applications",
+        "appointments",
+        "invitations",
+        "regulations"
+      ],
+      "explanation": "applications是application的复数；这里指各地提交的申办申请，而非拨款本身。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 27,
+      "answer": "guaranteed",
+      "options": [
+        "charged",
+        "guaranteed",
+        "refused",
+        "borrowed"
+      ],
+      "explanation": "is guaranteed为被动结构，指短名单各地至少获得的资金承诺。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s11",
+      "start": 153,
+      "answer": "confined",
+      "options": [
+        "confined",
+        "donated",
+        "compared",
+        "owed"
+      ],
+      "explanation": "be confined to表示局限于；not confined to a single year说明预期不只一年。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s14",
+      "start": 136,
+      "answer": "interchangeable",
+      "options": [
+        "invisible",
+        "interchangeable",
+        "unaffordable",
+        "seasonal"
+      ],
+      "explanation": "not interchangeable说明几类数字含义不同，不能彼此替代。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s19",
+      "start": 153,
+      "answer": "momentum",
+      "options": [
+        "distance",
+        "silence",
+        "momentum",
+        "temperature"
+      ],
+      "explanation": "maintain momentum表示保持推进势头；这里不是维持距离或费用。"
+    }
+  ]
+}

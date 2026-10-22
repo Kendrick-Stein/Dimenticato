@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-en-culture-beyond-winning",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "c1",
+      "kind": "detail",
+      "prompt": "Which statement correctly distinguishes the two funding amounts for shortlisted places?",
+      "options": [
+        "Each receives £10 million, while £125,000 is shared by the winner’s partners.",
+        "Each receives at least £125,000, while one winner receives the £10 million prize.",
+        "Each receives £60,000 instead of £125,000 if it remains on the shortlist.",
+        "Each receives £125,000 only after the £10 million prize has been spent."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "s5分别规定短名单各地至少125,000英镑和最终获胜者一千万英镑；s6明确不能把大奖视作每地已获资金。"
+    },
+    {
+      "id": "c2",
+      "kind": "cause",
+      "prompt": "Why can the bidding process have value for an unsuccessful place?",
+      "options": [
+        "It can cover the cost of implementing the unsuccessful bid.",
+        "It can secure a place in the following shortlist.",
+        "It can turn panel feedback into a funded events programme.",
+        "It can strengthen a cultural strategy and connect partners."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s17",
+        "s19",
+        "s20",
+        "s21"
+      ],
+      "explanationZh": "s17说明申办可帮助制定文化战略并形成合作，s19补充未成功者仍获反馈；正文未承诺承担未成功方案的实施费用、下次入围名额，或把反馈转为已获资助的活动项目。"
+    },
+    {
+      "id": "c3",
+      "kind": "detail",
+      "prompt": "What population does the 87 percent figure describe?",
+      "options": [
+        "Audiences of Bradford 2025.",
+        "All residents in the four shortlisted places.",
+        "Organisations receiving Bradford investment.",
+        "All applicants to the 2029 competition."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s15",
+        "s16"
+      ],
+      "explanationZh": "s15明确为Bradford 2025 audiences，s16警示不能扩大成全体居民。"
+    },
+    {
+      "id": "c4",
+      "kind": "detail",
+      "prompt": "What prevents the Bradford figures from being compared as counts of the same outcome?",
+      "options": [
+        "They were collected in different competition years.",
+        "They describe different kinds of participation and support.",
+        "They all refer to the same group of residents.",
+        "They exclude projects run by funded organisations."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "s12–s14分别讨论活动数、获得投资的机构数和参与居民数，三者对象不同，不能当作同一种结果的计数；正文未说年份不同、都是同一批居民或排除受资助机构项目。"
+    },
+    {
+      "id": "c5",
+      "kind": "main-idea",
+      "prompt": "Which conclusion best reflects the article’s treatment of the competition?",
+      "options": [
+        "Winning matters, but the process and reported benefits require separate assessment.",
+        "Past participation figures settle which shortlisted place should receive the title.",
+        "The main value of the competition is distributing identical grants to all applicants.",
+        "Unsuccessful applications matter chiefly as evidence of weak local cultural activity."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s17",
+        "s19",
+        "s20",
+        "s21",
+        "s22"
+      ],
+      "explanationZh": "文章既承认称号价值，又区分申办过程价值和既往证据对未来预测的边界，并未用过去数字决定胜者或贬低失败者。"
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-en-culture-beyond-winning",
+  "storyId": "dcms-culture-shortlist-2026-10-22",
+  "lang": "en",
+  "date": "2026-10-22",
+  "category": "culture",
+  "topics": [
+    "社区文化",
+    "公共参与",
+    "城市发展"
+  ],
+  "title": "What remains beyond a cultural title?",
+  "titleZh": "文化称号之外，能留下什么？",
+  "summaryZh": "四地进入2029英国文化之城决选；资金、参与和申办过程的价值需要分别理解。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：较长论述区分竞争阶段、资金类别和效果证据，使用让步、条件、限定与抽象名词。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "Blackpool, Milton Keynes, Sheffield and Wrexham shortlisted for UK City of Culture 2029",
+    "url": "https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029",
+    "publishedAt": "2026-10-22",
+    "lang": "en",
+    "author": "Department for Digital, Culture, Media and Sport and Lisa Nandy MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport and Lisa Nandy MP; 2026-10-22; https://www.gov.uk/government/news/blackpool-milton-keynes-sheffield-and-wrexham-shortlisted-for-uk-city-of-culture-2029",
+  "adaptation": "2026-10-22整理；依据2026-10-22发表的机构英文叙述作同语言教学改写，配中文翻译及原创学习补充；不是原文逐字转载，不代表来源机构认可。排除照片、标志、全部直接引语、第三方作品及外链内容；明确区分计划、来源报告与教学解读。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Blackpool, Milton Keynes, Sheffield and Wrexham have reached the shortlist for UK City of Culture 2029, according to an announcement published on 22 October 2026.",
+      "zh": "根据2026年10月22日发布的公告，布莱克浦、米尔顿凯恩斯、谢菲尔德和雷克瑟姆已进入2029英国文化之城候选短名单。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Although only one place will eventually receive the title, the announcement presents cultural development as a process that can extend beyond winning a competition.",
+      "zh": "虽然最终只有一地能获得称号，但公告把文化发展呈现为一种可以超越竞赛胜负的过程。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "The four places were recommended by an expert advisory panel chaired by Sir Phil Redmond, after consideration of applications from nine longlisted places.",
+      "zh": "在审议初选长名单中九地的申请后，由菲尔·雷德蒙德爵士担任主席的专家咨询小组推荐了这四地。",
+      "glosses": [
+        {
+          "surface": "applications",
+          "lemma": "application",
+          "zh": "申请"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The other five were Inverness-Highland, Ipswich, Middlesbrough, Portsmouth and Swindon, whose applications will still receive detailed feedback despite their not reaching the final stage.",
+      "zh": "另外五地是因弗内斯—高地、伊普斯威奇、米德尔斯堡、朴次茅斯和斯温登；虽然未进入最后阶段，它们的申请仍将获得详细反馈。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Every shortlisted place is guaranteed at least £125,000 to develop elements of its bid, while the eventual winner will receive a £10 million prize fund.",
+      "zh": "每个入围短名单的地区都保证获得至少125,000英镑，以推进其申办方案的部分内容；最终获胜者将获得一千万英镑奖金。",
+      "glosses": [
+        {
+          "surface": "guaranteed",
+          "lemma": "guarantee",
+          "zh": "保证获得"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "These are different forms of support, so the larger prize should not be understood as money already awarded to each of the four communities.",
+      "zh": "这是不同形式的支持，因此不能把较大的奖金理解为已经分别授予四个社区的资金。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "The winner is due to be announced in early 2027, leaving the shortlisted places with another stage of competition ahead of them.",
+      "zh": "获胜者预计于2027年初公布，这意味着短名单上的地区前面还有一个竞争阶段。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "In their applications, places were asked to explain how culture could help transform community life by strengthening opportunities, economic growth and local pride.",
+      "zh": "各地在申请中被要求说明，文化如何通过增强机会、经济增长和地方自豪感，帮助改变社区生活。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "The competition therefore concerns more than presenting an attractive programme of events: applicants must connect cultural activity with a wider account of their place’s future.",
+      "zh": "因此，这场竞赛不只是展示有吸引力的活动安排：申请者必须把文化活动与当地未来的更广泛图景联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "The department describes previous winners, including Derry-Londonderry, Hull, Coventry and Bradford, as examples of how the title can attract investment and encourage participation in the arts.",
+      "zh": "该部门把德里—伦敦德里、赫尔、考文垂和布拉德福德等往届获胜地列为例子，说明这一称号可以如何吸引投资并鼓励艺术参与。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Its account highlights regeneration, tourism and community pride alongside the cultural events themselves, suggesting that the intended benefits are not confined to a single year.",
+      "zh": "其叙述除文化活动本身外，还强调城市更新、旅游与社区自豪感，表明预期效益不局限于一年。",
+      "glosses": [
+        {
+          "surface": "confined",
+          "lemma": "confine",
+          "zh": "局限"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "For Bradford’s 2025 programme, the announcement reports more than 6,500 events, with over 80 percent of them available free of charge.",
+      "zh": "对于布拉德福德2025年的项目，公告报告了超过6,500场活动，其中超过80%免费开放。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "It also reports capital investment for more than thirty local cultural organisations and participation by over 88,000 residents in key projects during that year.",
+      "zh": "公告还报告称，三十多家当地文化机构获得了资本投资，且当年重点项目有超过88,000名居民参与。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "These figures describe different aspects of the programme: events, organisations receiving investment and residents taking part are not interchangeable measures of the same thing.",
+      "zh": "这些数字描述的是项目的不同方面：活动、获得投资的机构以及参与居民，并不是衡量同一事物的可互换指标。",
+      "glosses": [
+        {
+          "surface": "interchangeable",
+          "lemma": "interchangeable",
+          "zh": "可互换的"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "The department further states that 87 percent of Bradford 2025 audiences agreed that the event made them feel proud of their local area.",
+      "zh": "该部门还表示，布拉德福德2025项目的观众中有87%认同活动让他们对自己的地区感到自豪。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "That statement concerns audiences, rather than every resident, and should not be turned into a claim about the views of the whole population.",
+      "zh": "这一表述涉及观众，而非每一位居民，不应被转化为关于全体人口看法的主张。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "The announcement also argues that the act of bidding can itself be useful, because it helps a place develop a cultural strategy and bring partners together.",
+      "zh": "公告还认为，申办行为本身也可能有用，因为它帮助一个地区制定文化战略并把合作伙伴聚集起来。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "The nine longlisted places had each received £60,000 to strengthen their applications, before those applications were assessed and the shorter list was selected.",
+      "zh": "在申请接受评估、短名单选出之前，初选长名单上的九地各获得了60,000英镑，以加强申请方案。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "All bidders, including unsuccessful ones, will receive feedback identifying areas for development, and the department will discuss how they can maintain momentum afterwards.",
+      "zh": "所有申办者，包括未成功者，都将收到指出改进方向的反馈，该部门还将讨论它们此后如何保持推进势头。",
+      "glosses": [
+        {
+          "surface": "momentum",
+          "lemma": "momentum",
+          "zh": "推进势头"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "For a reader assessing the announcement, this creates an important distinction between securing the title and developing relationships or plans through the application process.",
+      "zh": "对评估这份公告的读者而言，这带来一个重要区分：赢得称号与通过申请过程发展合作关系或规划并不相同。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "The former depends on the final selection; the latter may have value even for a community that does not win, according to the department’s account.",
+      "zh": "前者取决于最终选拔；根据该部门的叙述，后者即使对未获胜的社区也可能有价值。",
+      "glosses": []
+    },
+    {
+      "id": "s22",
+      "text": "The reported experience of previous programmes offers context for these ambitions, but it does not establish what each future finalist will achieve in practice.",
+      "zh": "对往届项目经验的报告为这些目标提供了背景，但并未确定未来各个决选地区实际会实现什么。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "applications",
+        "lemma": "application",
+        "zh": "申请",
+        "sentenceId": "s3",
+        "note": "applications是application的复数；这里指各地提交的申办申请，而非拨款本身。"
+      },
+      {
+        "text": "guaranteed",
+        "lemma": "guarantee",
+        "zh": "保证获得",
+        "sentenceId": "s5",
+        "note": "is guaranteed为被动结构，指短名单各地至少获得的资金承诺。"
+      },
+      {
+        "text": "confined",
+        "lemma": "confine",
+        "zh": "局限",
+        "sentenceId": "s11",
+        "note": "be confined to表示局限于；not confined to a single year说明预期不只一年。"
+      },
+      {
+        "text": "interchangeable",
+        "lemma": "interchangeable",
+        "zh": "可互换的",
+        "sentenceId": "s14",
+        "note": "not interchangeable说明几类数字含义不同，不能彼此替代。"
+      },
+      {
+        "text": "momentum",
+        "lemma": "momentum",
+        "zh": "推进势头",
+        "sentenceId": "s19",
+        "note": "maintain momentum表示保持推进势头；这里不是维持距离或费用。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "free of charge",
+        "zh": "免费",
+        "sentenceId": "s12",
+        "note": "作状语说明不收取费用。"
+      },
+      {
+        "text": "bring partners together",
+        "zh": "把合作伙伴聚集起来",
+        "sentenceId": "s17",
+        "note": "bring…together表示促成合作或汇聚。"
+      },
+      {
+        "text": "in practice",
+        "zh": "在实践中、实际上",
+        "sentenceId": "s22",
+        "note": "与目标或设想形成对照。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s21",
+        "note": "the former/the latter回指上句的两个概念：赢得称号与在申办过程中形成关系和规划；may保留可能性。"
+      },
+      {
+        "sentenceId": "s22",
+        "note": "but连接证据边界：既往经验提供背景，不等于未来每地结果已获证明。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What could make a cultural programme valuable even if a town does not win a national title?",
+        "zh": "即使没有赢得全国称号，什么也能让一个地方的文化项目有价值？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "It is important to distinguish…from…",
+        "zh": "重要的是把……与……区分开。",
+        "note": "可用来区分参与人数和活动数，或短期称号与长期合作。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-fr-regarder-les-haies-autrement",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 40,
+      "answer": "paysage",
+      "options": [
+        "village",
+        "paysage",
+        "voyage",
+        "message"
+      ],
+      "explanation": "中文句意需要“景观”，对应原文 paysage。阳性单数名词；du paysage 是 de + le paysage。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 40,
+      "answer": "livre",
+      "options": [
+        "film",
+        "jardin",
+        "marché",
+        "livre"
+      ],
+      "explanation": "中文句意需要“书”，对应原文 livre。阳性单数名词；un livre。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 44,
+      "answer": "protéger",
+      "options": [
+        "protéger",
+        "vendre",
+        "compter",
+        "dessiner"
+      ],
+      "explanation": "中文句意需要“保护”，对应原文 protéger。不定式；comment 后接不定式，表示“怎样做”。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 25,
+      "answer": "connaissances",
+      "options": [
+        "vacances",
+        "chansons",
+        "connaissances",
+        "invitations"
+      ],
+      "explanation": "中文句意需要“知识”，对应原文 connaissances。阴性复数名词；des connaissances 表示多方面知识。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 5,
+      "answer": "chercheuses",
+      "options": [
+        "visiteuses",
+        "chercheuses",
+        "danseuses",
+        "vendeuses"
+      ],
+      "explanation": "中文句意需要“女性研究者”，对应原文 chercheuses。阴性复数，与 Deux 及后面的两位女性姓名对应。"
+    }
+  ]
+}

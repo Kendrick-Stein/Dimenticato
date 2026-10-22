@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "id": "2026-10-22-fr-regarder-les-haies-autrement",
+  "storyId": "regarder-les-haies-autrement-2026-09-25",
+  "lang": "fr",
+  "date": "2026-10-22",
+  "title": "Regarder les haies autrement",
+  "titleZh": "换个角度看树篱",
+  "summaryZh": "田野边的树篱不仅划分空间。一篇新书介绍提醒我们关注它们的不同作用，以及保护和重新种植的方法。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以田野、树篱和书籍为具体场景，主要使用现在时和简单关系句；biodiversité 等少量主题词有中文解释，全部句子配中文辅助。",
+  "category": "environment",
+  "topics": [
+    "乡村景观",
+    "树篱",
+    "阅读"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE",
+    "title": "Multifonctionnalité des haies. Enjeux environnementaux, agricoles, juridiques et méthodologiques",
+    "url": "https://www.inrae.fr/actualites/multifonctionnalite-haies-enjeux-environnementaux-agricoles-juridiques-methodologiques",
+    "publishedAt": "2026-09-25",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "原文：INRAE（网页未单列个人作者；Stéphanie Aviron 与 Audrey Alignier 为所介绍书籍的协调者），INRAE。标题、原始发布日期及原站链接见来源信息。机构正文依 Licence Ouverte 2.0 使用；Dimenticato 制作法语分级改写、中文翻译及教学补充，不代表原机构认可。",
+  "adaptation": "2026-10-22整理，原文发表于2026-09-25，不是当天新闻。仅改写机构网页正文；不使用图片、书籍正文、附件、第三方引语或外链材料。保留原文计划与已完成事项的区别；口语问题和表达属于教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "À la campagne, les haies font partie du paysage et peuvent séparer des espaces.",
+      "zh": "在乡村，树篱是景观的一部分，也可以把不同空间分开。",
+      "glosses": [
+        {
+          "surface": "paysage",
+          "lemma": "paysage",
+          "zh": "景观",
+          "note": "阳性单数名词；du paysage 是 de + le paysage。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Mais leur rôle ne se limite pas à cette séparation.",
+      "zh": "但它们的作用并不局限于分隔空间。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Le 25 septembre 2026, INRAE présente un livre sur les différentes fonctions des haies.",
+      "zh": "2026年9月25日，INRAE介绍了一本关于树篱不同功能的书。",
+      "glosses": [
+        {
+          "surface": "livre",
+          "lemma": "livre",
+          "zh": "书",
+          "note": "阳性单数名词；un livre。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Ces lignes de végétation sont importantes pour la biodiversité, la diversité des êtres vivants.",
+      "zh": "这些植物带对于生物多样性，也就是生物的多样程度，很重要。",
+      "glosses": [
+        {
+          "surface": "biodiversité",
+          "lemma": "biodiversité",
+          "zh": "生物多样性",
+          "note": "阴性单数；后面的同位语解释其含义。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Elles ont aussi des liens avec le climat, l’eau, les sols et le travail agricole.",
+      "zh": "它们也与气候、水、土壤以及农业劳动有关。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Le livre pose plusieurs questions : comment protéger les haies et comment en replanter ?",
+      "zh": "这本书提出了几个问题：怎样保护树篱，又怎样重新种植树篱？",
+      "glosses": [
+        {
+          "surface": "protéger",
+          "lemma": "protéger",
+          "zh": "保护",
+          "note": "不定式；comment 后接不定式，表示“怎样做”。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Il cherche aussi à comprendre les conditions nécessaires pour leurs différentes fonctions.",
+      "zh": "它也试图理解树篱发挥不同功能所需的条件。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Pour cela, il réunit des connaissances sur la nature, l’agriculture, la société et les règles.",
+      "zh": "为此，它汇集了关于自然、农业、社会和规则的知识。",
+      "glosses": [
+        {
+          "surface": "connaissances",
+          "lemma": "connaissance",
+          "zh": "知识",
+          "note": "阴性复数名词；des connaissances 表示多方面知识。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Il ne regarde pas seulement une ferme, mais aussi un territoire plus large.",
+      "zh": "它关注的不仅是单个农场，还有更大的地区。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Ce travail s’adresse notamment aux scientifiques, aux ingénieurs et à l’enseignement agricole.",
+      "zh": "这项工作尤其面向科学家、工程师和农业教育领域。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Deux chercheuses en écologie, Stéphanie Aviron et Audrey Alignier, coordonnent cet ouvrage.",
+      "zh": "两位生态学研究者Stéphanie Aviron和Audrey Alignier协调编写了这部著作。",
+      "glosses": [
+        {
+          "surface": "chercheuses",
+          "lemma": "chercheuse",
+          "zh": "女性研究者",
+          "note": "阴性复数，与 Deux 及后面的两位女性姓名对应。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Leurs recherches portent sur la biodiversité dans les paysages agricoles et sur les conditions pour la maintenir.",
+      "zh": "她们的研究关注农业景观中的生物多样性及维持它的条件。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Les haies sont donc un sujet qui concerne plusieurs métiers et plusieurs usages du même espace.",
+      "zh": "因此，树篱是一个涉及多种职业以及同一空间多种用途的话题。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "paysage",
+        "lemma": "paysage",
+        "zh": "景观",
+        "note": "阳性单数名词；du paysage 是 de + le paysage。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "livre",
+        "lemma": "livre",
+        "zh": "书",
+        "note": "阳性单数名词；un livre。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "protéger",
+        "lemma": "protéger",
+        "zh": "保护",
+        "note": "不定式；comment 后接不定式，表示“怎样做”。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "connaissances",
+        "lemma": "connaissance",
+        "zh": "知识",
+        "note": "阴性复数名词；des connaissances 表示多方面知识。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "chercheuses",
+        "lemma": "chercheuse",
+        "zh": "女性研究者",
+        "note": "阴性复数，与 Deux 及后面的两位女性姓名对应。",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "biodiversité",
+        "lemma": "biodiversité",
+        "zh": "生物多样性",
+        "note": "阴性单数；后面的同位语解释其含义。",
+        "sentenceId": "s4"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "font partie du paysage",
+        "zh": "是景观的一部分",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "ne se limite pas à",
+        "zh": "并不局限于",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "s’adresse notamment aux",
+        "zh": "尤其面向",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "comment + 不定式可简洁提出做法问题：comment protéger…？怎样保护……？"
+      },
+      {
+        "sentenceId": "s9",
+        "note": "ne…pas seulement…, mais aussi… 表示“不仅……而且……”。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Y a-t-il des haies près de chez vous ? Où les voyez-vous ?",
+        "zh": "你家附近有树篱吗？你在哪些地方看到它们？"
+      },
+      {
+        "text": "Quel métier aimeriez-vous interroger pour mieux comprendre les haies ?",
+        "zh": "为了更了解树篱，你想请教哪种职业的人？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Cela ne se limite pas à…",
+        "zh": "这并不局限于……",
+        "note": "说明某件事还有其他作用。"
+      },
+      {
+        "text": "Je voudrais mieux comprendre…",
+        "zh": "我想更好地理解……",
+        "note": "用于提出自己的学习兴趣。"
+      }
+    ]
+  }
+}

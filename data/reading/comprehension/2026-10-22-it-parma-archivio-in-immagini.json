@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-it-parma-archivio-in-immagini",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Che cosa permette di conoscere questo progetto?",
+      "options": [
+        "La storia di Parma attraverso i ritratti degli abitanti.",
+        "La memoria dell’archivio attraverso immagini dei suoi spazi.",
+        "La vita dell’artista attraverso le sue lettere di scuola.",
+        "La tecnica fotografica attraverso strumenti in prestito."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s5",
+        "s10"
+      ],
+      "explanationZh": "作品从档案馆空间的照片转化而来，旨在让公众以另一种方式接近馆藏与地方记忆。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Come nascono le opere di Savini?",
+      "options": [
+        "Da lettere riscritte a mano.",
+        "Da documenti proiettati sui muri.",
+        "Da fotografie trasformate in incisioni.",
+        "Da oggetti raccolti nelle scuole."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "正文明确说明先拍摄空间，再把照片转化为版画；不是照抄文献或收集物件。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quando sarà presentato il nuovo catalogo?",
+      "options": [
+        "All’apertura di una mostra a Modena.",
+        "Durante una visita scolastica.",
+        "Prima dell’inizio del progetto a Parma.",
+        "Alla conclusione della mostra."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "图录安排在本次展览结束时介绍，其他时间和活动均无正文依据。"
+    }
+  ]
+}

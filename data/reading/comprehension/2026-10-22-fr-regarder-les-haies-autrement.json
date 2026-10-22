@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-fr-regarder-les-haies-autrement",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle idée le texte développe-t-il à propos du livre ?",
+      "promptZh": "本文围绕这本书展开了什么观点？",
+      "options": [
+        "Il présente surtout les étapes pratiques pour planter une haie.",
+        "Il compare surtout les goûts des habitants pour les paysages.",
+        "Il relie les fonctions des haies à plusieurs domaines de connaissance.",
+        "Il raconte surtout le travail quotidien des deux chercheuses."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第6至9句从保护与功能条件，扩展到自然、农业、社会、规则及多个空间尺度，所以重点是跨领域理解。正文没有逐步种植指南、喜好调查或研究者日常纪事。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "À qui ce travail s’adresse-t-il notamment ?",
+      "promptZh": "这项工作尤其面向哪些人？",
+      "options": [
+        "Aux scientifiques, aux ingénieurs et à l’enseignement agricole.",
+        "Aux exploitants agricoles, aux pépiniéristes et aux jardiniers amateurs.",
+        "Aux habitants des campagnes, aux élus et aux associations locales.",
+        "Aux architectes, aux paysagistes et aux visiteurs des jardins."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "第10句明确列出科学家、工程师和农业教育领域，其他人群不是文中列出的主要对象。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "À quelle échelle le livre regarde-t-il les haies ?",
+      "promptZh": "这本书从什么空间尺度观察树篱？",
+      "options": [
+        "À celle d’une plante et des branches qui la composent.",
+        "À celle d’une ferme et d’un territoire plus large.",
+        "À celle d’un jardin et des maisons qui l’entourent.",
+        "À celle d’un village et de ses rues principales."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "第9句说不仅看单个农场，还看更广的地区；其他选项把范围改成单株枝条、住宅花园或村内街道，并非文中列出的两个尺度。"
+    }
+  ]
+}

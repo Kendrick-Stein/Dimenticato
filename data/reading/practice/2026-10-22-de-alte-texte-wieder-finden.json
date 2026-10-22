@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-22-de-alte-texte-wieder-finden",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 68,
+      "answer": "erreichbar",
+      "options": [
+        "sichtbar",
+        "erreichbar",
+        "bekannt",
+        "beliebt"
+      ],
+      "explanation": "按中文句意恢复 erreichbar（可访问的）。im Internet erreichbar sein：能够在网上访问。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 83,
+      "answer": "suchen",
+      "options": [
+        "suchen",
+        "fragen",
+        "reisen",
+        "rufen"
+      ],
+      "explanation": "按中文句意恢复 suchen（查找）。nach etwas suchen：查找某物，nach 后用第三格。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 77,
+      "answer": "gesichert",
+      "options": [
+        "bezahlt",
+        "geplant",
+        "gesichert",
+        "geöffnet"
+      ],
+      "explanation": "按中文句意恢复 gesichert（保存；保护了）。hat … gesichert 是完成时，表示已完成的保存工作。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 28,
+      "answer": "erschien",
+      "options": [
+        "verschwand",
+        "fehlte",
+        "blieb",
+        "erschien"
+      ],
+      "explanation": "按中文句意恢复 erschien（发表了）。erscheinen 的过去时，主语是单数 Artikel。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 41,
+      "answer": "Pflege",
+      "options": [
+        "Werbung",
+        "Pflege",
+        "Geduld",
+        "Übung"
+      ],
+      "explanation": "按中文句意恢复 Pflege（维护）。die Pflege；这里指网站的技术维护，不是护理。"
+    }
+  ]
+}
