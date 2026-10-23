@@ -1,0 +1,185 @@
+{
+  "editionDate": "2026-10-23",
+  "baseCommit": "75d9aaca12545370cb33cca5be31bfbb3a4077f6",
+  "qualityStatus": "PASS",
+  "scope": "10 independent readings; 50 cloze and 40 comprehension questions. IT/FR/EN A2/B1/B2; DE B1.",
+  "missingSlots": [
+    {
+      "lang": "de",
+      "level": "A2",
+      "reason": "No additional distinct recent native-source full text passed licensing, freshness and nonduplication requirements; no padding."
+    },
+    {
+      "lang": "de",
+      "level": "B2",
+      "reason": "No additional distinct recent native-source full text passed licensing, freshness and nonduplication requirements; no padding."
+    }
+  ],
+  "reviewProtocol": "Comprehension first solved from article and options before answer keys; then keys, sentence evidence, Chinese explanations and final file hashes checked. Revisions rechecked after weak distractors and unsupported inference prompts were identified.",
+  "independentReviews": {
+    "fr": {
+      "reviewer": "root-independent-review",
+      "checkedAt": "2026-10-23",
+      "status": "pass",
+      "blindFirst": true,
+      "blindAnswersZeroBased": {
+        "A2": [
+          1,
+          2,
+          0
+        ],
+        "B1": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "B2": [
+          3,
+          1,
+          0,
+          2,
+          1
+        ]
+      },
+      "revisionReview": "B1 distractors q1/q3 and date q4 revised, rechecked unique and evidence-grounded. All added glosses reviewed. B2 final editorial note removed, evidence remains.",
+      "checks": [
+        "official original articles and dates",
+        "Culture terms 4.3.1a CC BY-SA3.0FR, third-party images excluded",
+        "all sentence facts/translations and word forms",
+        "15 cloze keys with Chinese context",
+        "12 comprehension keys/evidence/explanations",
+        "B2 distinct case report vs previously published general programme interview"
+      ]
+    },
+    "it": {
+      "reviewer": "independent-coordinator",
+      "status": "PASS",
+      "blindAnswers": {
+        "A2": [
+          2,
+          0,
+          3
+        ],
+        "B1": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "B2": [
+          1,
+          3,
+          0,
+          2,
+          3
+        ]
+      },
+      "revisionReview": "Distractors made parallel; final B1 q2 source combinations rechecked. Full original DGA pages and Istat PDF checked, including dates, licensing, facts, numbers, translations and morphology."
+    },
+    "en": {
+      "reviewer": "independent-coordinator",
+      "status": "PASS",
+      "blindAnswers": {
+        "A2": [
+          1,
+          0,
+          3
+        ],
+        "B1": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "B2": [
+          1,
+          2,
+          3,
+          0,
+          1
+        ]
+      },
+      "revisionReview": "Weak distractors revised; final B2 q4 replaced common-knowledge threshold distinction with an article-specific cap question. Whole official bodies and Crown/OGL declarations checked; forecasts and proposals not reported as outcomes."
+    },
+    "de": {
+      "reviewer": "independent-coordinator",
+      "status": "PASS",
+      "firstBlindAnswers": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "finalAnswers": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "revisionReview": "Final question replaced with supported inference about unmeasured sleep interruptions. All five pages of German RKI PDF read. Survey scope, self-report limitations, numeric values, Chinese translations, cloze morphology and licence checked."
+    }
+  },
+  "finalFileSha256": {
+    "data/reading/articles/2026-10-23-it-strade-leggere-i-confronti.json": "43d3f743931ce9cac06ebbb36e07a8d6d293c13ed281978c952368eb5baba442",
+    "data/reading/articles/2026-10-23-it-archivi-e-storia-naturale.json": "b22a1ae9b6cd091b1b3d1a4aecd366a0599223d011792b1d4bd957f2cb2a13de",
+    "data/reading/articles/2026-10-23-it-conoscere-gli-archivi.json": "dd554e6a803e1e3ee3dd97310fabe5053b70f50e65898addc9721efbaa264df5",
+    "data/reading/practice/2026-10-23-it-strade-leggere-i-confronti.json": "d1dd6b091c8b218dfb4434dbee7d448bd9fab751a522fe0b1b0b0953b81eef1e",
+    "data/reading/practice/2026-10-23-it-archivi-e-storia-naturale.json": "0699ef3a83642f7c0a513288dd1ab9b220781bcc998b32552477a4bba6d4d2db",
+    "data/reading/practice/2026-10-23-it-conoscere-gli-archivi.json": "93a7aa38f5b875a8e8727159b6ba17920743f6d35d256af40ddad3d09a905708",
+    "data/reading/comprehension/2026-10-23-it-strade-leggere-i-confronti.json": "adb0ef636fddd0425e48ca161abebc0c0e7da1a22cd81a7392a07856e8307cde",
+    "data/reading/comprehension/2026-10-23-it-archivi-e-storia-naturale.json": "522d4f05ebbbf4dea940aa9b04900f3a4bdbd7c8bac184339ab57c0ee888a5a5",
+    "data/reading/comprehension/2026-10-23-it-conoscere-gli-archivi.json": "4e5da907688865881459e4dfc6616ce543bfcf072b5c448081c1304af6cf44b8",
+    "data/reading/articles/2026-10-23-fr-deux-tableaux-avant-le-retour.json": "09801b5690feaeddc05fda6510e58a50d972942c4a642f7aa531dc4a1d8c16e5",
+    "data/reading/articles/2026-10-23-fr-une-maison-pour-les-musiciens.json": "080d47a30b9b5865b77ee8385e3e4f94749c9c300cf53d5eb7d926d126f0d77b",
+    "data/reading/articles/2026-10-23-fr-passer-de-la-reception-a-la-creation.json": "8afcd371b12831469b06eeb32031970f6daebdf9efc211258da1a73ec1eaeae8",
+    "data/reading/practice/2026-10-23-fr-deux-tableaux-avant-le-retour.json": "62b59acf4bd0bb3b549cdc1cff238d0a00f0e94e86397e59c1dd341d5a3c76e6",
+    "data/reading/practice/2026-10-23-fr-une-maison-pour-les-musiciens.json": "2d3d6957c80ea2e9bbf6e4a38e09e4130a39d974912a03c3611348ad5e302cbf",
+    "data/reading/practice/2026-10-23-fr-passer-de-la-reception-a-la-creation.json": "0ab49195888c3db5a344d3d01acf40f8293cf71deca97537da18e416aadc32c5",
+    "data/reading/comprehension/2026-10-23-fr-deux-tableaux-avant-le-retour.json": "6d2df22a6ed542ab3a9af26b6683a09b5bc2e3c0f98e3a6aa184abfcfbaf1d95",
+    "data/reading/comprehension/2026-10-23-fr-une-maison-pour-les-musiciens.json": "a5ca9802d3dc4e7364a974071eaa9662c584e42dfc0c95f216c451c322508444",
+    "data/reading/comprehension/2026-10-23-fr-passer-de-la-reception-a-la-creation.json": "4228ce6239771cde4cb26698497a68923f9c21c484f4774179b78eea595cd396",
+    "data/reading/articles/2026-10-23-de-schlaf-im-wochenverlauf.json": "da8212617961d0d8ae3d19a94b23b873759e21a9862501cc8942159f4c5ae222",
+    "data/reading/practice/2026-10-23-de-schlaf-im-wochenverlauf.json": "66f82bb0fe38a27fea3f2e049cbb1e54d200db172572638e5452b21e70ea1296",
+    "data/reading/comprehension/2026-10-23-de-schlaf-im-wochenverlauf.json": "98d7e036db342cbd07e0983ce415412b24d5107e3602ba6141563383003e9661",
+    "data/reading/articles/2026-10-23-en-borrowing-books-and-paying-creators.json": "81403f621c298aa53853e840787c38ee5f7bafe561271dd56c394249470a76ed",
+    "data/reading/articles/2026-10-23-en-trees-near-everyday-life.json": "9b1c75544d995241865e1a038df25bc07a99b640e4f843b36148af6ce3693389",
+    "data/reading/articles/2026-10-23-en-a-wood-needs-time.json": "841af675e9ef49fc4b78d4523d3019060732f0462fe3e6504506a00722163092",
+    "data/reading/practice/2026-10-23-en-borrowing-books-and-paying-creators.json": "ba0de65d58a027645926180cf85972335913eae1cb56563131d674ecabfe545b",
+    "data/reading/practice/2026-10-23-en-trees-near-everyday-life.json": "88925227c521c4bea7a247dada9692a3be4b9dadb76fcc0fb43196df7694de18",
+    "data/reading/practice/2026-10-23-en-a-wood-needs-time.json": "de650d1a857fb0b2ee8e7aa9aeb0e5b01a9c7b6ae6a4893e8c887acecc6330ef",
+    "data/reading/comprehension/2026-10-23-en-borrowing-books-and-paying-creators.json": "d823194c2e783e03621d55996c5e886b820175b7066790be5081708166124343",
+    "data/reading/comprehension/2026-10-23-en-trees-near-everyday-life.json": "bca188dacc16e0cbd0c2225db8d6b4c96bf1693df5900798a4013475202597d3",
+    "data/reading/comprehension/2026-10-23-en-a-wood-needs-time.json": "6ba0888771f9889888fe1df8b5713f754227e4cc3cad2c29c96ecfc01fff2b35"
+  },
+  "freshness": {
+    "within30Days": 9,
+    "within90DaysFallback": 1,
+    "fallback": "German RKI original 2026-08-19; 65 days old, not October news."
+  },
+  "reserveStatus": "Source discovery and intake maintained in all four languages. Not enough independently reviewed varied material for a full week; collected entries remain unreviewed. Three French reserve sources have source/rights review only, not final teaching-content approval.",
+  "deduplication": "New story IDs, canonical source URLs and text hashes checked against existing articles and candidate queue; no ec-languages-2026-09-26 reuse. French youth creation case article is distinct from the earlier general holiday programme interview.",
+  "validation": {
+    "status": "PASS",
+    "articleValidator": 107,
+    "candidateValidator": 123,
+    "practiceValidator": 95,
+    "comprehensionValidator": "68 companions / 272 questions",
+    "practiceTests": "3252 passed, 0 failed",
+    "comprehensionTests": "3182 passed, 0 failed",
+    "comprehensionLoadingTests": "9 passed, 0 failed",
+    "listeningTests": "299 passed, 0 failed",
+    "editionDomChecks": "141 passed, 0 failed; all 10 new articles, translations, summary and both exercise UIs",
+    "fullTest": "TZ=UTC npm test: 44 harnesses, 481550 passed, 0 failed, 0 known issues",
+    "immutability": "240 prior article/practice/comprehension files and 12 prior listening entries unchanged",
+    "gitDiffCheck": "PASS",
+    "limits": [
+      "Headless Chromium could not launch in the shell sandbox; CUA could not reach the shell local server. Deterministic DOM tests ran instead.",
+      "Production UI will be verified after deployment. No mobile layout or sound-quality claim."
+    ]
+  },
+  "publication": {
+    "status": "validated-for-normal-main-publication",
+    "note": "This record precedes the commit; exact commit/deployment and live verification are reported separately."
+  }
+}

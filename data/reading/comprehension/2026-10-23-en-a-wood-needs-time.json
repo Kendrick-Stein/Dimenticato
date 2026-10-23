@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-en-a-wood-needs-time",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "What happened before the waste was removed?",
+      "options": [
+        "Visitors planted new trees.",
+        "Officers stopped the illegal operation.",
+        "The investigation came to an end.",
+        "The wood reopened to the public."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "第5句说明执法人员先叫停非法活动，随后队伍开始清运；其他选项并非文中所述前序事件。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why will access to the wood be limited?",
+      "options": [
+        "To give the land time to recover.",
+        "To measure waste before removing it.",
+        "To let workers stop the dumping operation.",
+        "To prepare a new survey of visitors."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第9—10句将限制出入与土地恢复相连；垃圾清理和叫停倾倒已经完成，文中也没有游客调查安排。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "What does the article tell us about the wood after the clean-up?",
+      "options": [
+        "The waste is gone, and the investigation has ended.",
+        "The land has recovered, but the waste remains.",
+        "The land has recovered, and visitors can return freely.",
+        "The waste is gone, but recovery and investigation continue."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6",
+        "s9",
+        "s10",
+        "s12"
+      ],
+      "explanationZh": "正文把已完成的垃圾清理、仍需进行的土地恢复及继续的调查区分开；清理完成不等于生态恢复或调查都结束。"
+    }
+  ]
+}

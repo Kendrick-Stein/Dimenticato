@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-en-trees-near-everyday-life",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 109,
+      "answer": "adapt",
+      "options": [
+        "object",
+        "adapt",
+        "return",
+        "listen"
+      ],
+      "explanation": "adapt to表示适应气候变化，to在此是介词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 69,
+      "answer": "purposes",
+      "options": [
+        "receipts",
+        "addresses",
+        "prices",
+        "purposes"
+      ],
+      "explanation": "different purposes指两笔资金用途不同，purposes为复数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 22,
+      "answer": "habitats",
+      "options": [
+        "habitats",
+        "tickets",
+        "invoices",
+        "uniforms"
+      ],
+      "explanation": "habitats是供动物生活的环境，复数与不同鸟类及物种相应。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 60,
+      "answer": "improvements",
+      "options": [
+        "accidents",
+        "complaints",
+        "improvements",
+        "damages"
+      ],
+      "explanation": "environmental improvements指计划确定的环境改善事项，不是破坏或投诉。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s14",
+      "start": 130,
+      "answer": "priorities",
+      "options": [
+        "souvenirs",
+        "priorities",
+        "passwords",
+        "timetables"
+      ],
+      "explanation": "choose different priorities强调各地先做什么可以不同。"
+    }
+  ]
+}

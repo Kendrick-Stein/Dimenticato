@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-fr-passer-de-la-reception-a-la-creation",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 104,
+      "answer": "fiabilité",
+      "options": [
+        "popularité",
+        "rapidité",
+        "fiabilité",
+        "quantité"
+      ],
+      "explanation": "对应中文“可靠性”，须还原原文 fiabilité。阴性单数；apprécier sa fiabilité 在此指判断信息可靠程度。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 121,
+      "answer": "indices",
+      "options": [
+        "indices",
+        "affiches",
+        "billets",
+        "cadeaux"
+      ],
+      "explanation": "对应中文“线索”，须还原原文 indices。阳性复数；recueillir des indices 是收集线索。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s10",
+      "start": 166,
+      "answer": "rumeurs",
+      "options": [
+        "images",
+        "consignes",
+        "rumeurs",
+        "chansons"
+      ],
+      "explanation": "对应中文“传言”，须还原原文 rumeurs。阴性复数，与事实、观点并列区分。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s16",
+      "start": 88,
+      "answer": "rurales",
+      "options": [
+        "rurales",
+        "musicales",
+        "scolaires",
+        "commerciales"
+      ],
+      "explanation": "对应中文“乡村的”，须还原原文 rurales。阴性复数 rural → rurale → rurales，与 communes 一致。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s19",
+      "start": 140,
+      "answer": "récupérés",
+      "options": [
+        "imprimés",
+        "récupérés",
+        "importés",
+        "emballés"
+      ],
+      "explanation": "对应中文“回收利用的”，须还原原文 récupérés。过去分词阳性复数，修饰 matériaux。"
+    }
+  ]
+}

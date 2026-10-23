@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-fr-deux-tableaux-avant-le-retour",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quel musée avait déposé les peintures à Cagnes-sur-Mer ?",
+      "options": [
+        "Le musée Renoir.",
+        "Le musée d’Orsay.",
+        "Le centre de Marseille.",
+        "Un musée de Nice."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "第5句明确指出奥赛博物馆把画作寄存于雷诺阿博物馆；马赛中心是后续检查地点。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi les spécialistes vont-ils examiner les œuvres ?",
+      "options": [
+        "Pour préparer un catalogue de vente.",
+        "Pour choisir un nouveau musée.",
+        "Pour connaître leur état et les protéger.",
+        "Pour organiser une exposition à Marseille."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第8句说明检查的目的是了解状态并保护作品，第9句说明修复取决于检查结果。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Que dit le texte sur la restauration ?",
+      "options": [
+        "Elle dépend du résultat de l’examen.",
+        "Elle a eu lieu avant le vol.",
+        "Elle est déjà terminée à Marseille.",
+        "Elle commencera après le retour en salle."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s11"
+      ],
+      "explanationZh": "第9句限定修复仅在检查后有必要时进行，第11句则把检查安排在返回博物馆之前。"
+    }
+  ]
+}

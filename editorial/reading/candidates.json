@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-22",
+  "collectedAt": "2026-10-23",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -77,8 +77,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 21,
+          "asOf": "2026-10-23",
+          "ageDays": 23,
           "bucket": "within_30_days"
         }
       },
@@ -159,8 +159,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 34,
+          "asOf": "2026-10-23",
+          "ageDays": 36,
           "bucket": "within_90_days"
         }
       },
@@ -241,8 +241,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 36,
+          "asOf": "2026-10-23",
+          "ageDays": 38,
           "bucket": "within_90_days"
         }
       },
@@ -333,8 +333,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-business-innovation-science-and-trade"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 12,
+          "asOf": "2026-10-23",
+          "ageDays": 14,
           "bucket": "within_30_days"
         }
       },
@@ -424,8 +424,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 12,
+          "asOf": "2026-10-23",
+          "ageDays": 14,
           "bucket": "within_30_days"
         }
       },
@@ -515,8 +515,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 15,
+          "asOf": "2026-10-23",
+          "ageDays": 17,
           "bucket": "within_30_days"
         }
       },
@@ -599,8 +599,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 13,
+          "asOf": "2026-10-23",
+          "ageDays": 15,
           "bucket": "within_30_days"
         }
       },
@@ -683,8 +683,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 13,
+          "asOf": "2026-10-23",
+          "ageDays": 15,
           "bucket": "within_30_days"
         }
       },
@@ -767,8 +767,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 15,
+          "asOf": "2026-10-23",
+          "ageDays": 17,
           "bucket": "within_30_days"
         }
       },
@@ -857,8 +857,8 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 19,
+          "asOf": "2026-10-23",
+          "ageDays": 21,
           "bucket": "within_30_days"
         }
       },
@@ -947,9 +947,9 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 29,
-          "bucket": "within_30_days"
+          "asOf": "2026-10-23",
+          "ageDays": 31,
+          "bucket": "within_90_days"
         }
       },
       "linkToArticleId": "2026-10-12-de-meinungen-im-unterricht"
@@ -1038,9 +1038,9 @@
           "titleAlreadyPublished": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 30,
-          "bucket": "within_30_days"
+          "asOf": "2026-10-23",
+          "ageDays": 32,
+          "bucket": "within_90_days"
         }
       },
       "linkToArticleId": "2026-10-13-de-politik-in-kurzen-videos"
@@ -1115,8 +1115,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 12,
+          "asOf": "2026-10-23",
+          "ageDays": 14,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1210,8 +1210,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 62,
+          "asOf": "2026-10-23",
+          "ageDays": 64,
           "bucket": "within_90_days"
         }
       },
@@ -1304,8 +1304,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 33,
+          "asOf": "2026-10-23",
+          "ageDays": 35,
           "bucket": "within_90_days"
         }
       },
@@ -1377,8 +1377,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 20,
+          "asOf": "2026-10-23",
+          "ageDays": 22,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1461,8 +1461,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 13,
+          "asOf": "2026-10-23",
+          "ageDays": 15,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1557,8 +1557,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 63,
+          "asOf": "2026-10-23",
+          "ageDays": 65,
           "bucket": "within_90_days"
         }
       },
@@ -1648,8 +1648,8 @@
           "institutionUrl": "https://www.gov.uk/government/organisations/department-for-education"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 50,
+          "asOf": "2026-10-23",
+          "ageDays": 52,
           "bucket": "within_90_days"
         }
       },
@@ -1720,8 +1720,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 13,
+          "asOf": "2026-10-23",
+          "ageDays": 15,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1798,8 +1798,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 14,
+          "asOf": "2026-10-23",
+          "ageDays": 16,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1883,8 +1883,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 19,
+          "asOf": "2026-10-23",
+          "ageDays": 21,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -1968,8 +1968,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 15,
+          "asOf": "2026-10-23",
+          "ageDays": 17,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2065,8 +2065,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 92,
+          "asOf": "2026-10-23",
+          "ageDays": 94,
           "bucket": "archive"
         }
       },
@@ -2138,8 +2138,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 19,
+          "asOf": "2026-10-23",
+          "ageDays": 21,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2217,8 +2217,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 34,
+          "asOf": "2026-10-23",
+          "ageDays": 36,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2296,8 +2296,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 37,
+          "asOf": "2026-10-23",
+          "ageDays": 39,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2375,8 +2375,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 48,
+          "asOf": "2026-10-23",
+          "ageDays": 50,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2464,8 +2464,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/national-museums-to-remain-free-for-everyone"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 22,
+          "asOf": "2026-10-23",
+          "ageDays": 24,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2554,8 +2554,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 38,
+          "asOf": "2026-10-23",
+          "ageDays": 40,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2643,8 +2643,8 @@
           "evidenceUrl": "https://www.gov.uk/government/news/1000-new-youth-workers-to-help-reduce-the-risk-of-unemployment"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 25,
+          "asOf": "2026-10-23",
+          "ageDays": 27,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2740,8 +2740,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 35,
+          "asOf": "2026-10-23",
+          "ageDays": 37,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2837,8 +2837,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 8,
+          "asOf": "2026-10-23",
+          "ageDays": 10,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -2934,8 +2934,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 40,
+          "asOf": "2026-10-23",
+          "ageDays": 42,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -2979,8 +2979,8 @@
           "notes": "Full page read; only institutional introduction/narrative and key-figures section adapted. External interview answers excluded, rather than assuming rights transfer."
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 42,
+          "asOf": "2026-10-23",
+          "ageDays": 44,
           "bucket": "within_90_days"
         },
         "originalDate": {
@@ -3115,8 +3115,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 63,
+          "asOf": "2026-10-23",
+          "ageDays": 65,
           "bucket": "within_90_days"
         }
       },
@@ -3202,8 +3202,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 82,
+          "asOf": "2026-10-23",
+          "ageDays": 84,
           "bucket": "within_90_days"
         }
       },
@@ -3286,8 +3286,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 22,
+          "asOf": "2026-10-23",
+          "ageDays": 24,
           "bucket": "within_30_days"
         }
       },
@@ -3328,8 +3328,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 28,
+          "asOf": "2026-10-23",
+          "ageDays": 30,
           "bucket": "within_30_days"
         }
       }
@@ -3369,8 +3369,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 70,
+          "asOf": "2026-10-23",
+          "ageDays": 72,
           "bucket": "within_90_days"
         }
       }
@@ -3440,8 +3440,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 17,
+          "asOf": "2026-10-23",
+          "ageDays": 19,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3519,8 +3519,8 @@
           "reviewBeforeConversionRequired": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 42,
+          "asOf": "2026-10-23",
+          "ageDays": 44,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -3556,8 +3556,8 @@
         "editorialReviewComplete": false,
         "checkedAt": "2026-10-14",
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 24,
+          "asOf": "2026-10-23",
+          "ageDays": 26,
           "bucket": "within_30_days"
         }
       }
@@ -3627,8 +3627,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 7,
+          "asOf": "2026-10-23",
+          "ageDays": 9,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3705,8 +3705,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 8,
+          "asOf": "2026-10-23",
+          "ageDays": 10,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3801,8 +3801,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 7,
+          "asOf": "2026-10-23",
+          "ageDays": 9,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3897,8 +3897,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 7,
+          "asOf": "2026-10-23",
+          "ageDays": 9,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -3993,8 +3993,8 @@
           "institutionUrl": "https://www.culture.gouv.fr/"
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 40,
+          "asOf": "2026-10-23",
+          "ageDays": 42,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -4083,8 +4083,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 8,
+          "asOf": "2026-10-23",
+          "ageDays": 10,
           "bucket": "within_30_days"
         }
       },
@@ -4167,8 +4167,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 7,
+          "asOf": "2026-10-23",
+          "ageDays": 9,
           "bucket": "within_30_days"
         }
       },
@@ -4251,8 +4251,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 69,
+          "asOf": "2026-10-23",
+          "ageDays": 71,
           "bucket": "within_90_days"
         }
       }
@@ -4332,8 +4332,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 12,
+          "asOf": "2026-10-23",
+          "ageDays": 14,
           "bucket": "within_30_days"
         }
       },
@@ -4414,8 +4414,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 26,
+          "asOf": "2026-10-23",
+          "ageDays": 28,
           "bucket": "within_30_days"
         }
       },
@@ -4496,8 +4496,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 6,
+          "asOf": "2026-10-23",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
       },
@@ -4576,8 +4576,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 23,
+          "asOf": "2026-10-23",
+          "ageDays": 25,
           "bucket": "within_30_days"
         }
       }
@@ -4655,8 +4655,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 8,
+          "asOf": "2026-10-23",
+          "ageDays": 10,
           "bucket": "within_30_days"
         }
       }
@@ -4735,8 +4735,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 41,
+          "asOf": "2026-10-23",
+          "ageDays": 43,
           "bucket": "within_90_days"
         }
       }
@@ -4822,8 +4822,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 9,
+          "asOf": "2026-10-23",
+          "ageDays": 11,
           "bucket": "within_30_days"
         }
       }
@@ -4909,8 +4909,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 8,
+          "asOf": "2026-10-23",
+          "ageDays": 10,
           "bucket": "within_30_days"
         }
       }
@@ -4996,8 +4996,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 6,
+          "asOf": "2026-10-23",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
       }
@@ -5079,8 +5079,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 15,
+          "asOf": "2026-10-23",
+          "ageDays": 17,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5168,8 +5168,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 14,
+          "asOf": "2026-10-23",
+          "ageDays": 16,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5250,8 +5250,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 28,
+          "asOf": "2026-10-23",
+          "ageDays": 30,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5332,8 +5332,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 5,
+          "asOf": "2026-10-23",
+          "ageDays": 7,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5415,8 +5415,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 16,
+          "asOf": "2026-10-23",
+          "ageDays": 18,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5498,8 +5498,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 6,
+          "asOf": "2026-10-23",
+          "ageDays": 8,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -5588,8 +5588,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 23,
+          "asOf": "2026-10-23",
+          "ageDays": 25,
           "bucket": "within_30_days"
         }
       },
@@ -5672,8 +5672,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 6,
+          "asOf": "2026-10-23",
+          "ageDays": 8,
           "bucket": "within_30_days"
         }
       },
@@ -5757,8 +5757,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 63,
+          "asOf": "2026-10-23",
+          "ageDays": 65,
           "bucket": "within_90_days"
         }
       },
@@ -5841,8 +5841,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 36,
+          "asOf": "2026-10-23",
+          "ageDays": 38,
           "bucket": "within_90_days"
         }
       },
@@ -5923,8 +5923,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 21,
+          "asOf": "2026-10-23",
+          "ageDays": 23,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -6012,8 +6012,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 5,
+          "asOf": "2026-10-23",
+          "ageDays": 7,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -6101,8 +6101,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 23,
+          "asOf": "2026-10-23",
+          "ageDays": 25,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -6189,8 +6189,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 7,
+          "asOf": "2026-10-23",
+          "ageDays": 9,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -6277,8 +6277,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 20,
+          "asOf": "2026-10-23",
+          "ageDays": 22,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -6293,7 +6293,7 @@
     {
       "id": "it-2026-10-15-road-data-provincial",
       "language": "it",
-      "sourceTitle": "Incidenti stradali in Italia. Aggiornamento dati provinciali - Anno 2025",
+      "sourceTitle": "Incidenti stradali in Italia. Aggiornamento dati provinciali – Anno 2025",
       "sourceUrl": "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
       "sourceName": "Istat",
       "registrySourceId": "istat-italian-society",
@@ -6302,37 +6302,36 @@
       "category": "society",
       "topics": [
         "道路安全",
-        "地图阅读",
-        "统计更新"
+        "统计阅读"
       ],
-      "level": "B1",
-      "priority": 3,
+      "level": "B2",
+      "priority": 1,
       "status": "verified",
-      "editorialNote": "省级道路事故数据更新：适合讨论地图如何帮助理解居住地风险。该网页是10月15日新发布的更新说明，明确原始2025数据曾于2026年7月24日公布，不把旧数据当10月新发生的事故。地图省级弹窗和分类变化可以作为B1阅读，但尚未编写正文。",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-20",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-23",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
-          "checkedAt": "2026-10-20",
-          "notes": "Whole HTML update note read, including date15Oct2026. Explicitly states earlier data release24July2026 and newly finer provincial detail; six road-location categories instead of three; some totals corrected due to geolocation/municipality-code correction. No linked tables/maps/PDF reused. Istat CC BY4 notice checked, no conflicting article text credit. Provisional planning only."
+          "checkedAt": "2026-10-23",
+          "notes": "Official landing page Data pubblicazione 15Oct2026 and linked2page Istat PDF read in full, also downloaded with ordinary curl and pdftotext. PDF dated15Oct2026 and reference2025. Previous reserve excluded PDF by scope; this conversion newly checks the linked institutional report. No byline, translation, third-party text restriction or image text was used; Aci-Istat data attribution preserved."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
-          "evidence": "Source Data pubblicazione explicitly 2026-10-15; source reference year/month is separate."
+          "evidence": "Landing Data pubblicazione and PDF first-page15ottobre2026 agree; statistics refer to2025."
         },
         "nativeLanguage": {
           "verified": true,
           "evidenceUrl": "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
-          "evidence": "Italian institutional editorial prose. No translator or syndication marker; any English version is explicitly separate and was not used.",
+          "evidence": "Italian institutional editorial publication; no translator/republication credit. Italian source used, not an English locale.",
           "author": "Istat (institutional authorship; no individual text byline)",
           "basis": "institutional-original-language-inference",
-          "caveat": "Institutional provenance supports original-language editorial publication, not individual mother tongue or a certified drafting-language history."
+          "caveat": "Institutional provenance, not a certificate of author native tongue or earliest drafting language."
         },
         "rights": {
           "verified": true,
@@ -6340,37 +6339,38 @@
           "publicRedistributionAllowed": true,
           "license": "CC BY 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-          "evidence": "Whole HTML update note read, including date15Oct2026. Explicitly states earlier data release24July2026 and newly finer provincial detail; six road-location categories instead of three; some totals corrected due to geolocation/municipality-code correction. No linked tables/maps/PDF reused. Istat CC BY4 notice checked, no conflicting article text credit. Provisional planning only.",
+          "evidence": "Istat legal notice CC BY4.0 applies to institution-published content absent exception; explicitly allows modification/redistribution including commercial use. Whole2page institutional report checked; Aci-Istat joint data credit retained; no conflicting text licence. No map/table attachments/images/logos reused.",
           "evidenceUrls": [
             "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
             "https://www.istat.it/note-legali/",
             "https://creativecommons.org/licenses/by/4.0/"
           ],
-          "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
+          "basis": "article-linked-institutional-licence-and-exception-review",
+          "scope": "Institutional Italian text; attributed same-language adaptation, Chinese translation and teaching additions.",
           "exclusions": [
-            "Photos, logos, media",
-            "All direct quotations and third-party credited text",
-            "Linked documents and English translation"
+            "Images,logos,video and third-party works",
+            "Direct quotations, linked external works; no media or source-exercise copying"
           ],
           "attributionRequirements": [
-            "Institutional author/title/source/date",
-            "License link and disclosure of Italian adaptation/Chinese translation",
-            "No endorsement; retain exclusion of third-party works"
+            "Institutional author/source/date",
+            "Licence link and modifications",
+            "No endorsement"
           ],
           "reviewBeforeConversionRequired": true
         },
-        "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 6,
-          "bucket": "within_30_days"
-        },
         "duplicateCheck": {
-          "checkedAt": "2026-10-20",
-          "checkedAgainstArticleCount": 64,
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 8,
+          "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-23-it-strade-leggere-i-confronti"
     },
     {
       "id": "it-2026-10-16-trade-august",
@@ -6442,8 +6442,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 5,
+          "asOf": "2026-10-23",
+          "ageDays": 7,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
@@ -6531,8 +6531,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 13,
+          "asOf": "2026-10-23",
+          "ageDays": 15,
           "bucket": "within_30_days"
         }
       },
@@ -6614,8 +6614,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 36,
+          "asOf": "2026-10-23",
+          "ageDays": 38,
           "bucket": "within_90_days"
         }
       },
@@ -6697,8 +6697,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 50,
+          "asOf": "2026-10-23",
+          "ageDays": 52,
           "bucket": "within_90_days"
         }
       },
@@ -6780,8 +6780,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 3,
+          "asOf": "2026-10-23",
+          "ageDays": 5,
           "bucket": "within_30_days"
         }
       },
@@ -6863,8 +6863,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 10,
+          "asOf": "2026-10-23",
+          "ageDays": 12,
           "bucket": "within_30_days"
         }
       },
@@ -6946,8 +6946,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 1,
+          "asOf": "2026-10-23",
+          "ageDays": 3,
           "bucket": "within_30_days"
         }
       },
@@ -7027,8 +7027,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 3,
+          "asOf": "2026-10-23",
+          "ageDays": 4,
           "bucket": "within_30_days"
         }
       }
@@ -7107,8 +7107,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 6,
+          "asOf": "2026-10-23",
+          "ageDays": 7,
           "bucket": "within_30_days"
         }
       },
@@ -7188,8 +7188,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 11,
+          "asOf": "2026-10-23",
+          "ageDays": 12,
           "bucket": "within_30_days"
         }
       },
@@ -7273,8 +7273,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 5,
+          "asOf": "2026-10-23",
+          "ageDays": 7,
           "bucket": "within_30_days"
         }
       },
@@ -7358,8 +7358,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 5,
+          "asOf": "2026-10-23",
+          "ageDays": 7,
           "bucket": "within_30_days"
         }
       },
@@ -7442,8 +7442,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 22,
+          "asOf": "2026-10-23",
+          "ageDays": 23,
           "bucket": "within_30_days"
         }
       },
@@ -7526,8 +7526,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 8,
+          "asOf": "2026-10-23",
+          "ageDays": 9,
           "bucket": "within_30_days"
         }
       },
@@ -7609,8 +7609,8 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 48,
+          "asOf": "2026-10-23",
+          "ageDays": 50,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
@@ -7699,9 +7699,9 @@
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 29,
-          "bucket": "within_30_days"
+          "asOf": "2026-10-23",
+          "ageDays": 31,
+          "bucket": "within_90_days"
         },
         "duplicateCheck": {
           "checkedAt": "2026-10-21",
@@ -7788,8 +7788,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-21",
-          "ageDays": 43,
+          "asOf": "2026-10-23",
+          "ageDays": 45,
           "bucket": "within_90_days"
         }
       },
@@ -7870,8 +7870,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 1,
+          "asOf": "2026-10-23",
+          "ageDays": 2,
           "bucket": "within_30_days"
         }
       },
@@ -7952,8 +7952,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 1,
+          "asOf": "2026-10-23",
+          "ageDays": 2,
           "bucket": "within_30_days"
         }
       }
@@ -8033,8 +8033,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 6,
+          "asOf": "2026-10-23",
+          "ageDays": 7,
           "bucket": "within_30_days"
         }
       }
@@ -8116,8 +8116,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 27,
+          "asOf": "2026-10-23",
+          "ageDays": 28,
           "bucket": "within_30_days"
         }
       },
@@ -8157,8 +8157,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 52,
+          "asOf": "2026-10-23",
+          "ageDays": 53,
           "bucket": "within_90_days"
         }
       },
@@ -8198,8 +8198,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 36,
+          "asOf": "2026-10-23",
+          "ageDays": 37,
           "bucket": "within_90_days"
         }
       },
@@ -8239,8 +8239,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 42,
+          "asOf": "2026-10-23",
+          "ageDays": 43,
           "bucket": "within_90_days"
         }
       },
@@ -8324,8 +8324,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 3,
+          "asOf": "2026-10-23",
+          "ageDays": 4,
           "bucket": "within_30_days"
         }
       },
@@ -8409,8 +8409,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 22,
+          "asOf": "2026-10-23",
+          "ageDays": 23,
           "bucket": "within_30_days"
         }
       },
@@ -8492,8 +8492,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 14,
+          "asOf": "2026-10-23",
+          "ageDays": 15,
           "bucket": "within_30_days"
         },
         "publisher": {
@@ -8583,8 +8583,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 1,
+          "asOf": "2026-10-23",
+          "ageDays": 2,
           "bucket": "within_30_days"
         },
         "publisher": {
@@ -8675,8 +8675,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 0,
+          "asOf": "2026-10-23",
+          "ageDays": 1,
           "bucket": "within_30_days"
         },
         "publisher": {
@@ -8701,37 +8701,37 @@
       "collectedAt": "2026-10-22",
       "category": "environment",
       "topics": [
-        "社区环境",
-        "生活与自然"
+        "自然环境",
+        "社区生活"
       ],
       "level": "A2",
-      "priority": 2,
+      "priority": 1,
       "status": "verified",
-      "editorialNote": "林地清理完成不等于生态恢复完成；39000余吨清理与暂限进入可讲具体日常环境。只作来源储备，尚无教学稿。",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-22",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
-          "checkedAt": "2026-10-22",
-          "notes": "Official full page read with source title, From, publication date and institutional narrative. Excluded quotes and media."
+          "checkedAt": "2026-10-23",
+          "notes": "重新读官方全文与日期、机构署名和版权声明；排除直接引语及媒体、第三方作品。"
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
-          "evidence": "Official page Published field; not retrieval or modification date."
+          "evidence": "正文Published 2026-10-09；原发表日与整理日分开。"
         },
         "nativeLanguage": {
           "verified": true,
-          "author": "Environment Agency; Department for Environment, Food & Rural Affairs; Angela Eagle MP",
           "evidenceUrl": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
-          "basis": "Original English UK institutional release; no translation attribution.",
-          "caveat": "Institutional provenance, not certification of any author’s native tongue.",
-          "evidence": "Official English page read in full: From field explicitly credits Department for Environment, Food & Rural Affairs, Environment Agency. English institutional narrative concerns UK domestic programmes, with no translation credit; publication header and body inspected. This verifies institutional original-language provenance, not an individual’s first language."
+          "evidence": "英国具名机构英文正式发布；正文无翻译或外部转载标记。",
+          "author": "Environment Agency; Department for Environment, Food & Rural Affairs; Dame Angela Eagle",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构原语来源判断，不认证作者母语。"
         },
         "rights": {
           "verified": true,
@@ -8739,44 +8739,43 @@
           "publicRedistributionAllowed": true,
           "license": "Open Government Licence v3.0",
           "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-          "basis": "Page-specific OGL v3 footer and accessible official GOV.UK terms expressly permitting reproduction under OGL; existing registered source licence review.",
+          "evidence": "文章明确OGL声明及GOV.UK Using GOV.UK content条款；本次独立重读。",
           "evidenceUrls": [
             "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
             "https://www.gov.uk/help/terms-conditions"
           ],
-          "evidence": "Each article says all content available under OGL v3 except otherwise stated. Terms section Using GOV.UK content says most content is Crown copyright/OGL and reproduction allowed under licence conditions. National Archives deed fetch returned 403 today; not bypassed or claimed freshly read.",
-          "scope": "Institutional English narrative, original educational adaptation and Chinese translation only.",
+          "scope": "机构自有英文正文；不取第三方材料。",
           "exclusions": [
-            "All direct quotations, images, logos, outside reports and third-party works"
+            "图片、照片、标志、媒体",
+            "全部直接引语、第三方作品、链接文件和表单内容"
           ],
           "attributionRequirements": [
-            "Credit original authors, URL and date",
-            "Link OGL v3 and retain standard attribution",
-            "State modifications, teaching additions and no endorsement"
+            "Crown及机构署名、原题/链接/日期、OGL链接、改写翻译说明；无认可暗示"
           ],
+          "basis": "article-explicit-OGL-and-GOVUK-terms",
+          "licenseRetrievalNote": "本次National Archives规范许可页web返回403，未重试或绕过；不声称重新读到该页。文章明确OGL和官方再用条款可读。",
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-22",
-          "checkedAgainstArticleCount": 86,
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 13,
+          "asOf": "2026-10-23",
+          "ageDays": 14,
           "bucket": "within_30_days"
         },
         "publisher": {
           "verified": true,
           "names": [
-            "Department for Environment, Food & Rural Affairs",
-            "Environment Agency"
+            "Department for Environment, Food & Rural Affairs"
           ],
-          "evidenceUrl": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
-          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs"
+          "evidenceUrl": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-23-en-a-wood-needs-time"
     },
     {
       "id": "en-2026-10-20-water-company-bosses-update-national-drought-group-on-resili",
@@ -8851,8 +8850,8 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 2,
+          "asOf": "2026-10-23",
+          "ageDays": 3,
           "bucket": "within_30_days"
         },
         "publisher": {
@@ -8877,37 +8876,37 @@
       "collectedAt": "2026-10-22",
       "category": "environment",
       "topics": [
-        "社区环境",
-        "生活与自然"
+        "自然环境",
+        "社区生活"
       ],
-      "level": "B2",
-      "priority": 2,
+      "level": "B1",
+      "priority": 1,
       "status": "verified",
-      "editorialNote": "树木、街道和社区适应；£53m树木与£26m策略资金须区分，拟树木数非已完成。",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。",
       "verification": {
-        "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-22",
-        "editorialReviewComplete": false,
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
-          "checkedAt": "2026-10-22",
-          "notes": "Official full page read with source title, From, publication date and institutional narrative. Excluded quotes and media."
+          "checkedAt": "2026-10-23",
+          "notes": "重新读官方全文与日期、机构署名和版权声明；排除直接引语及媒体、第三方作品。"
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
-          "evidence": "Official page Published field; not retrieval or modification date."
+          "evidence": "正文Published 2026-09-30；原发表日与整理日分开。"
         },
         "nativeLanguage": {
           "verified": true,
-          "author": "Department for Environment, Food & Rural Affairs; Angela Eagle MP",
           "evidenceUrl": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
-          "basis": "Original English UK institutional release; no translation attribution.",
-          "caveat": "Institutional provenance, not certification of any author’s native tongue.",
-          "evidence": "Official English page read in full: From field explicitly credits Department for Environment, Food & Rural Affairs. English institutional narrative concerns UK domestic programmes, with no translation credit; publication header and body inspected. This verifies institutional original-language provenance, not an individual’s first language."
+          "evidence": "英国具名机构英文正式发布；正文无翻译或外部转载标记。",
+          "author": "Department for Environment, Food & Rural Affairs; Dame Angela Eagle",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构原语来源判断，不认证作者母语。"
         },
         "rights": {
           "verified": true,
@@ -8915,32 +8914,32 @@
           "publicRedistributionAllowed": true,
           "license": "Open Government Licence v3.0",
           "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-          "basis": "Page-specific OGL v3 footer and accessible official GOV.UK terms expressly permitting reproduction under OGL; existing registered source licence review.",
+          "evidence": "文章明确OGL声明及GOV.UK Using GOV.UK content条款；本次独立重读。",
           "evidenceUrls": [
             "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
             "https://www.gov.uk/help/terms-conditions"
           ],
-          "evidence": "Each article says all content available under OGL v3 except otherwise stated. Terms section Using GOV.UK content says most content is Crown copyright/OGL and reproduction allowed under licence conditions. National Archives deed fetch returned 403 today; not bypassed or claimed freshly read.",
-          "scope": "Institutional English narrative, original educational adaptation and Chinese translation only.",
+          "scope": "机构自有英文正文；不取第三方材料。",
           "exclusions": [
-            "All direct quotations, images, logos, outside reports and third-party works"
+            "图片、照片、标志、媒体",
+            "全部直接引语、第三方作品、链接文件和表单内容"
           ],
           "attributionRequirements": [
-            "Credit original authors, URL and date",
-            "Link OGL v3 and retain standard attribution",
-            "State modifications, teaching additions and no endorsement"
+            "Crown及机构署名、原题/链接/日期、OGL链接、改写翻译说明；无认可暗示"
           ],
+          "basis": "article-explicit-OGL-and-GOVUK-terms",
+          "licenseRetrievalNote": "本次National Archives规范许可页web返回403，未重试或绕过；不声称重新读到该页。文章明确OGL和官方再用条款可读。",
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-22",
-          "checkedAgainstArticleCount": 86,
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-22",
-          "ageDays": 22,
+          "asOf": "2026-10-23",
+          "ageDays": 23,
           "bucket": "within_30_days"
         },
         "publisher": {
@@ -8948,8 +8947,1115 @@
           "names": [
             "Department for Environment, Food & Rural Affairs"
           ],
-          "evidenceUrl": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
-          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs"
+          "evidenceUrl": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature"
+        }
+      },
+      "linkToArticleId": "2026-10-23-en-trees-near-everyday-life"
+    },
+    {
+      "id": "it-2026-10-22-dga-molise-tutela",
+      "language": "it",
+      "sourceTitle": "SAB Abruzzo e Molise | \"Conoscere per tutelare\": archivi e biblioteche dei Comuni del Molise",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=374fb4ac723da7ad2dd53231508cc4e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2792",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-22",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "地方档案",
+        "文化保护"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-23",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=374fb4ac723da7ad2dd53231508cc4e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2792",
+          "checkedAt": "2026-10-23",
+          "notes": "Official source header and whole Italian institutional body read with web tool 2026-10-23. Source is an announcement, not a post-event report. Footer links ministry legal notice via beniculturali.it; redirect to cultura.gov.it confirmed. No conflicting text byline/third-party licence. No media/attachments/English translation reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=374fb4ac723da7ad2dd53231508cc4e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2792",
+          "evidence": "Visible official dated article header 2026-10-22; same date as announced event, not a completed-event report."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=374fb4ac723da7ad2dd53231508cc4e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2792",
+          "evidence": "Italian institutional editorial publication; no translator/republication credit. Italian source used, not an English locale.",
+          "author": "Ministero della Cultura — Direzione generale Archivi (institutional authorship; no individual text byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional provenance, not a certificate of author native tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "evidence": "Default CC BY3.0 from article-linked ministry legal notice explicitly permits adaptation/distribution incl commercial use; images/logos/third-party material excluded. No article text exception found.",
+          "evidenceUrls": [
+            "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=374fb4ac723da7ad2dd53231508cc4e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2792",
+            "https://cultura.gov.it/note-legali",
+            "https://creativecommons.org/licenses/by/3.0/"
+          ],
+          "basis": "article-linked-institutional-licence-and-exception-review",
+          "scope": "Institutional Italian text; attributed same-language adaptation, Chinese translation and teaching additions.",
+          "exclusions": [
+            "Images,logos,video and third-party works",
+            "Direct quotations, linked external works; no media or source-exercise copying"
+          ],
+          "attributionRequirements": [
+            "Institutional author/source/date",
+            "Licence link and modifications",
+            "No endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-23-it-conoscere-gli-archivi"
+    },
+    {
+      "id": "it-2026-10-11-dga-napoli-avvoltoio",
+      "language": "it",
+      "sourceTitle": "Napoli | Apertura straordinaria | “Il paradosso dell’avvoltoio”, un viaggio tra storia, zoologia e ricerca",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=73baa62430b1303a1e2df08dd08c5438&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2756",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-11",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "档案研究",
+        "自然史"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-23",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=73baa62430b1303a1e2df08dd08c5438&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2756",
+          "checkedAt": "2026-10-23",
+          "notes": "Official source header and whole Italian institutional body read with web tool 2026-10-23. Source is an announcement, not a post-event report. Footer links ministry legal notice via beniculturali.it; redirect to cultura.gov.it confirmed. No conflicting text byline/third-party licence. No media/attachments/English translation reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=73baa62430b1303a1e2df08dd08c5438&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2756",
+          "evidence": "Visible official dated article header 2026-10-11; same date as announced event, not a completed-event report."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=73baa62430b1303a1e2df08dd08c5438&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2756",
+          "evidence": "Italian institutional editorial publication; no translator/republication credit. Italian source used, not an English locale.",
+          "author": "Ministero della Cultura — Direzione generale Archivi (institutional authorship; no individual text byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional provenance, not a certificate of author native tongue or earliest drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "evidence": "Default CC BY3.0 from article-linked ministry legal notice explicitly permits adaptation/distribution incl commercial use; images/logos/third-party material excluded. No article text exception found.",
+          "evidenceUrls": [
+            "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=73baa62430b1303a1e2df08dd08c5438&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2756",
+            "https://cultura.gov.it/note-legali",
+            "https://creativecommons.org/licenses/by/3.0/"
+          ],
+          "basis": "article-linked-institutional-licence-and-exception-review",
+          "scope": "Institutional Italian text; attributed same-language adaptation, Chinese translation and teaching additions.",
+          "exclusions": [
+            "Images,logos,video and third-party works",
+            "Direct quotations, linked external works; no media or source-exercise copying"
+          ],
+          "attributionRequirements": [
+            "Institutional author/source/date",
+            "Licence link and modifications",
+            "No endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 12,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-23-it-archivi-e-storia-naturale"
+    },
+    {
+      "id": "it-2026-10-18-dga-agrigento-scuola",
+      "language": "it",
+      "sourceTitle": "Agrigento | Mostra documentaria | Insieme. Ritrovarsi in archivio",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=e0e3c7ca3447fc3b67258e9f7313b43e&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2776",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-18",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "地方文化",
+        "档案研究"
+      ],
+      "level": "B1",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "Reserve lead only: official listing metadata viewed23Oct; article fetch timed out/cache miss twice, not access denial. Do not infer full text, publication date verification or article rights from listing. Suggested discussion: why archives matter in local cultural memory. No draft or questions.",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-23",
+        "fullText": {
+          "accessible": false,
+          "read": false,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=e0e3c7ca3447fc3b67258e9f7313b43e&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2776",
+          "checkedAt": "2026-10-23",
+          "notes": "Official listing accessible, article retrieval failed with timeout/cache miss. No bypass or content invention."
+        },
+        "originalDate": {
+          "verified": false,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie",
+          "evidence": "Listing date only, article date not verified."
+        },
+        "nativeLanguage": {
+          "verified": false,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=e0e3c7ca3447fc3b67258e9f7313b43e&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2776",
+          "evidence": "Italian ministry listing is a lead; byline and provenance need full-article review."
+        },
+        "rights": {
+          "verified": false,
+          "adaptationAllowed": false,
+          "publicRedistributionAllowed": false,
+          "evidence": "General ministry licence exists but article exceptions and text ownership not yet checked.",
+          "evidenceUrls": [
+            "https://cultura.gov.it/note-legali"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 5,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "it-2026-10-16-dga-asti-trasferimenti",
+      "language": "it",
+      "sourceTitle": "Asti | Conferenza | Da Asti ad Asti. I Conti orleanesi e le vicende dei trasferimenti archivistici tra Italia e Francia",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=6fdd1b84ab29a6e0742f4f764374687f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2782",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-16",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "地方文化",
+        "档案研究"
+      ],
+      "level": "B1",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "Reserve lead only: official listing metadata viewed23Oct; article fetch timed out/cache miss twice, not access denial. Do not infer full text, publication date verification or article rights from listing. Suggested discussion: why archives matter in local cultural memory. No draft or questions.",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-23",
+        "fullText": {
+          "accessible": false,
+          "read": false,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=6fdd1b84ab29a6e0742f4f764374687f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2782",
+          "checkedAt": "2026-10-23",
+          "notes": "Official listing accessible, article retrieval failed with timeout/cache miss. No bypass or content invention."
+        },
+        "originalDate": {
+          "verified": false,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie",
+          "evidence": "Listing date only, article date not verified."
+        },
+        "nativeLanguage": {
+          "verified": false,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=6fdd1b84ab29a6e0742f4f764374687f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2782",
+          "evidence": "Italian ministry listing is a lead; byline and provenance need full-article review."
+        },
+        "rights": {
+          "verified": false,
+          "adaptationAllowed": false,
+          "publicRedistributionAllowed": false,
+          "evidence": "General ministry licence exists but article exceptions and text ownership not yet checked.",
+          "evidenceUrls": [
+            "https://cultura.gov.it/note-legali"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 7,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "it-2026-10-09-dga-bolla-oro",
+      "language": "it",
+      "sourceTitle": "Trafug’Arte racconta il mistero della Bolla d’oro di Carlo V conservata all’Archivio di Stato di Milano",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=7500cc7b97eaaf8dd119ae7c50c544e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2802",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-09",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "地方文化",
+        "档案研究"
+      ],
+      "level": "B1",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "Reserve lead only: official listing metadata viewed23Oct; article fetch timed out/cache miss twice, not access denial. Do not infer full text, publication date verification or article rights from listing. Suggested discussion: why archives matter in local cultural memory. No draft or questions.",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-23",
+        "fullText": {
+          "accessible": false,
+          "read": false,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=7500cc7b97eaaf8dd119ae7c50c544e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2802",
+          "checkedAt": "2026-10-23",
+          "notes": "Official listing accessible, article retrieval failed with timeout/cache miss. No bypass or content invention."
+        },
+        "originalDate": {
+          "verified": false,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie",
+          "evidence": "Listing date only, article date not verified."
+        },
+        "nativeLanguage": {
+          "verified": false,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=7500cc7b97eaaf8dd119ae7c50c544e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2802",
+          "evidence": "Italian ministry listing is a lead; byline and provenance need full-article review."
+        },
+        "rights": {
+          "verified": false,
+          "adaptationAllowed": false,
+          "publicRedistributionAllowed": false,
+          "evidence": "General ministry licence exists but article exceptions and text ownership not yet checked.",
+          "evidenceUrls": [
+            "https://cultura.gov.it/note-legali"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 14,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "fr-2026-10-12-deux-tableaux-avant-le-retour",
+      "language": "fr",
+      "sourceTitle": "Les deux tableaux de Renoir dérobés au musée de Cagnes-sur-Mer sont transférés au Centre interdisciplinaire de conservation et de restauration du patrimoine de Marseille pour examen avant leur retour au musée",
+      "sourceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/les-deux-tableaux-de-renoir-derobes-au-musee-de-cagnes-sur-mer-sont-transferes-au-centre-interdisciplinaire-de-conservation-et-de-restauration-du-p",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-12",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "艺术与日常"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/les-deux-tableaux-de-renoir-derobes-au-musee-de-cagnes-sur-mer-sont-transferes-au-centre-interdisciplinaire-de-conservation-et-de-restauration-du-p",
+          "checkedAt": "2026-10-23",
+          "notes": "完整机构页面正文、标题、署名与例外检查；不复制媒体或外部链接正文。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/les-deux-tableaux-de-renoir-derobes-au-musee-de-cagnes-sur-mer-sont-transferes-au-centre-interdisciplinaire-de-conservation-et-de-restauration-du-p",
+          "evidence": "原始网页Publié le字段 2026-10-12"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 11,
+          "bucket": "within_30_days"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Ministère de la Culture（网页无单列个人作者）",
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/les-deux-tableaux-de-renoir-derobes-au-musee-de-cagnes-sur-mer-sont-transferes-au-centre-interdisciplinaire-de-conservation-et-de-restauration-du-p",
+          "basis": "institutional-original-language-inference",
+          "evidence": "法国文化部法语机构新闻/新闻稿，全文无翻译或外部转载署名；法律声明I.4标明由文化部传播部门编辑管理。",
+          "caveat": "仅机构原语出处判断，不证明个人母语或最初起草语言。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "basis": "explicit-public-institutional-text-license-and-article-exceptions-check",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/presse/communiques-de-presse/les-deux-tableaux-de-renoir-derobes-au-musee-de-cagnes-sur-mer-sont-transferes-au-centre-interdisciplinaire-de-conservation-et-de-restauration-du-p",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.fr"
+          ],
+          "evidence": "法律声明II.4.3.1(a)明确文化部制作文字适用CC BY-SA3.0FR；4.3.2将合作方内容另列，逐页未发现正文转载署名或冲突权利告示。许可deed确认改编、商业及非商业传播，署名及相同方式共享。",
+          "scope": "仅文化部机构叙述正文及相同许可教学改编，不涵盖图像、媒体、引用和外链。",
+          "exclusions": [
+            "所有图片、视频、标志",
+            "直接引语、第三方外链及附件作品"
+          ],
+          "attributionRequirements": [
+            "保留文化部、原题、原文URL与原日期",
+            "标注分级改写、中文翻译及教学补充；不暗示认可",
+            "作品与配套练习沿用CC BY-SA3.0FR并链接许可"
+          ],
+          "reviewBeforeConversionRequired": true
+        }
+      },
+      "linkToArticleId": "2026-10-23-fr-deux-tableaux-avant-le-retour"
+    },
+    {
+      "id": "fr-2026-10-20-une-maison-pour-les-musiciens",
+      "language": "fr",
+      "sourceTitle": "Nomination de Delphine Tissot à la direction de la Rock School Barbey, scène de musiques actuelles (SMAC) à Bordeaux",
+      "sourceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-delphine-tissot-a-la-direction-de-la-rock-school-barbey-scene-de-musiques-actuelles-smac-a-bordeaux",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-20",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "艺术与日常"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-delphine-tissot-a-la-direction-de-la-rock-school-barbey-scene-de-musiques-actuelles-smac-a-bordeaux",
+          "checkedAt": "2026-10-23",
+          "notes": "完整机构页面正文、标题、署名与例外检查；不复制媒体或外部链接正文。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-delphine-tissot-a-la-direction-de-la-rock-school-barbey-scene-de-musiques-actuelles-smac-a-bordeaux",
+          "evidence": "原始网页Publié le字段 2026-10-20"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Ministère de la Culture（网页无单列个人作者）",
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-delphine-tissot-a-la-direction-de-la-rock-school-barbey-scene-de-musiques-actuelles-smac-a-bordeaux",
+          "basis": "institutional-original-language-inference",
+          "evidence": "法国文化部法语机构新闻/新闻稿，全文无翻译或外部转载署名；法律声明I.4标明由文化部传播部门编辑管理。",
+          "caveat": "仅机构原语出处判断，不证明个人母语或最初起草语言。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "basis": "explicit-public-institutional-text-license-and-article-exceptions-check",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-delphine-tissot-a-la-direction-de-la-rock-school-barbey-scene-de-musiques-actuelles-smac-a-bordeaux",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.fr"
+          ],
+          "evidence": "法律声明II.4.3.1(a)明确文化部制作文字适用CC BY-SA3.0FR；4.3.2将合作方内容另列，逐页未发现正文转载署名或冲突权利告示。许可deed确认改编、商业及非商业传播，署名及相同方式共享。",
+          "scope": "仅文化部机构叙述正文及相同许可教学改编，不涵盖图像、媒体、引用和外链。",
+          "exclusions": [
+            "所有图片、视频、标志",
+            "直接引语、第三方外链及附件作品"
+          ],
+          "attributionRequirements": [
+            "保留文化部、原题、原文URL与原日期",
+            "标注分级改写、中文翻译及教学补充；不暗示认可",
+            "作品与配套练习沿用CC BY-SA3.0FR并链接许可"
+          ],
+          "reviewBeforeConversionRequired": true
+        }
+      },
+      "linkToArticleId": "2026-10-23-fr-une-maison-pour-les-musiciens"
+    },
+    {
+      "id": "fr-2026-10-20-passer-de-la-reception-a-la-creation",
+      "language": "fr",
+      "sourceTitle": "Vacances culturelles : les jeunes décryptent les médias et les récits",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/vacances-culturelles-les-jeunes-decryptent-les-medias-et-les-recits",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-20",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "艺术与日常"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/vacances-culturelles-les-jeunes-decryptent-les-medias-et-les-recits",
+          "checkedAt": "2026-10-23",
+          "notes": "完整机构页面正文、标题、署名与例外检查；不复制媒体或外部链接正文。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/vacances-culturelles-les-jeunes-decryptent-les-medias-et-les-recits",
+          "evidence": "原始网页Publié le字段 2026-10-20"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Ministère de la Culture（网页无单列个人作者）",
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/vacances-culturelles-les-jeunes-decryptent-les-medias-et-les-recits",
+          "basis": "institutional-original-language-inference",
+          "evidence": "法国文化部法语机构新闻/新闻稿，全文无翻译或外部转载署名；法律声明I.4标明由文化部传播部门编辑管理。",
+          "caveat": "仅机构原语出处判断，不证明个人母语或最初起草语言。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "basis": "explicit-public-institutional-text-license-and-article-exceptions-check",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/actualites/vacances-culturelles-les-jeunes-decryptent-les-medias-et-les-recits",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.fr"
+          ],
+          "evidence": "法律声明II.4.3.1(a)明确文化部制作文字适用CC BY-SA3.0FR；4.3.2将合作方内容另列，逐页未发现正文转载署名或冲突权利告示。许可deed确认改编、商业及非商业传播，署名及相同方式共享。",
+          "scope": "仅文化部机构叙述正文及相同许可教学改编，不涵盖图像、媒体、引用和外链。",
+          "exclusions": [
+            "所有图片、视频、标志",
+            "直接引语、第三方外链及附件作品"
+          ],
+          "attributionRequirements": [
+            "保留文化部、原题、原文URL与原日期",
+            "标注分级改写、中文翻译及教学补充；不暗示认可",
+            "作品与配套练习沿用CC BY-SA3.0FR并链接许可"
+          ],
+          "reviewBeforeConversionRequired": true
+        }
+      },
+      "linkToArticleId": "2026-10-23-fr-passer-de-la-reception-a-la-creation"
+    },
+    {
+      "id": "fr-2026-10-22-museum7-cooperation",
+      "language": "fr",
+      "sourceTitle": "Lancement par la France de deux initiatives de coopération culturelle internationale dans le cadre de la présidence française du G7",
+      "sourceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-22",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "艺术与日常"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "文化机构合作储备：完整正文已读，区分Museum7专业网络和CCDD倡议；避免把政府目标写成已证实成效。日常题材优先于此项政策主题。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
+          "checkedAt": "2026-10-23",
+          "notes": "完整机构页面正文、标题、署名与例外检查；不复制媒体或外部链接正文。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
+          "evidence": "原始网页Publié le字段 2026-10-22"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Ministère de la Culture（网页无单列个人作者）",
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
+          "basis": "institutional-original-language-inference",
+          "evidence": "法国文化部法语机构新闻/新闻稿，全文无翻译或外部转载署名；法律声明I.4标明由文化部传播部门编辑管理。",
+          "caveat": "仅机构原语出处判断，不证明个人母语或最初起草语言。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "basis": "explicit-public-institutional-text-license-and-article-exceptions-check",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.fr"
+          ],
+          "evidence": "法律声明II.4.3.1(a)明确文化部制作文字适用CC BY-SA3.0FR；4.3.2将合作方内容另列，逐页未发现正文转载署名或冲突权利告示。许可deed确认改编、商业及非商业传播，署名及相同方式共享。",
+          "scope": "仅文化部机构叙述正文及相同许可教学改编，不涵盖图像、媒体、引用和外链。",
+          "exclusions": [
+            "所有图片、视频、标志",
+            "直接引语、第三方外链及附件作品"
+          ],
+          "attributionRequirements": [
+            "保留文化部、原题、原文URL与原日期",
+            "标注分级改写、中文翻译及教学补充；不暗示认可",
+            "作品与配套练习沿用CC BY-SA3.0FR并链接许可"
+          ],
+          "reviewBeforeConversionRequired": true
+        }
+      }
+    },
+    {
+      "id": "fr-2026-10-21-public-media-trust",
+      "language": "fr",
+      "sourceTitle": "Audiovisuel public : de nouvelles garanties pour renforcer l’impartialité et la confiance du public",
+      "sourceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/audiovisuel-public-de-nouvelles-garanties-pour-renforcer-l-impartialite-et-la-confiance-du-public",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-21",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "艺术与日常"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "媒体与日常信息储备：读完机构正文；排除文末部长直接引语；若转化需再次核对法令原文，不能给个人法律建议。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/audiovisuel-public-de-nouvelles-garanties-pour-renforcer-l-impartialite-et-la-confiance-du-public",
+          "checkedAt": "2026-10-23",
+          "notes": "完整机构页面正文、标题、署名与例外检查；不复制媒体或外部链接正文。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/audiovisuel-public-de-nouvelles-garanties-pour-renforcer-l-impartialite-et-la-confiance-du-public",
+          "evidence": "原始网页Publié le字段 2026-10-21"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 2,
+          "bucket": "within_30_days"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Ministère de la Culture（网页无单列个人作者）",
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/audiovisuel-public-de-nouvelles-garanties-pour-renforcer-l-impartialite-et-la-confiance-du-public",
+          "basis": "institutional-original-language-inference",
+          "evidence": "法国文化部法语机构新闻/新闻稿，全文无翻译或外部转载署名；法律声明I.4标明由文化部传播部门编辑管理。",
+          "caveat": "仅机构原语出处判断，不证明个人母语或最初起草语言。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "basis": "explicit-public-institutional-text-license-and-article-exceptions-check",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/presse/communiques-de-presse/audiovisuel-public-de-nouvelles-garanties-pour-renforcer-l-impartialite-et-la-confiance-du-public",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.fr"
+          ],
+          "evidence": "法律声明II.4.3.1(a)明确文化部制作文字适用CC BY-SA3.0FR；4.3.2将合作方内容另列，逐页未发现正文转载署名或冲突权利告示。许可deed确认改编、商业及非商业传播，署名及相同方式共享。",
+          "scope": "仅文化部机构叙述正文及相同许可教学改编，不涵盖图像、媒体、引用和外链。",
+          "exclusions": [
+            "所有图片、视频、标志",
+            "直接引语、第三方外链及附件作品"
+          ],
+          "attributionRequirements": [
+            "保留文化部、原题、原文URL与原日期",
+            "标注分级改写、中文翻译及教学补充；不暗示认可",
+            "作品与配套练习沿用CC BY-SA3.0FR并链接许可"
+          ],
+          "reviewBeforeConversionRequired": true
+        }
+      }
+    },
+    {
+      "id": "fr-2026-10-20-chateauvallon-liberte",
+      "language": "fr",
+      "sourceTitle": "Nomination de Frédéric RÉMY à la direction de Châteauvallon-Liberté, Scène nationale de Toulon et Ollioules",
+      "sourceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-20",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "艺术与日常"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "城市/山丘两个剧场与社区文化，已读全文；与本日音乐场馆相近，下次择优避免连续同类。注意全部新项目仍为计划。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
+          "checkedAt": "2026-10-23",
+          "notes": "完整机构页面正文、标题、署名与例外检查；不复制媒体或外部链接正文。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
+          "evidence": "原始网页Publié le字段 2026-10-20"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Ministère de la Culture（网页无单列个人作者）",
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
+          "basis": "institutional-original-language-inference",
+          "evidence": "法国文化部法语机构新闻/新闻稿，全文无翻译或外部转载署名；法律声明I.4标明由文化部传播部门编辑管理。",
+          "caveat": "仅机构原语出处判断，不证明个人母语或最初起草语言。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "basis": "explicit-public-institutional-text-license-and-article-exceptions-check",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.fr"
+          ],
+          "evidence": "法律声明II.4.3.1(a)明确文化部制作文字适用CC BY-SA3.0FR；4.3.2将合作方内容另列，逐页未发现正文转载署名或冲突权利告示。许可deed确认改编、商业及非商业传播，署名及相同方式共享。",
+          "scope": "仅文化部机构叙述正文及相同许可教学改编，不涵盖图像、媒体、引用和外链。",
+          "exclusions": [
+            "所有图片、视频、标志",
+            "直接引语、第三方外链及附件作品"
+          ],
+          "attributionRequirements": [
+            "保留文化部、原题、原文URL与原日期",
+            "标注分级改写、中文翻译及教学补充；不暗示认可",
+            "作品与配套练习沿用CC BY-SA3.0FR并链接许可"
+          ],
+          "reviewBeforeConversionRequired": true
+        }
+      }
+    },
+    {
+      "id": "fr-2026-10-14-opera-dijon-reserve",
+      "language": "fr",
+      "sourceTitle": "La ministre de la Culture annonce le renouvellement du conventionnement de l’Opéra de Dijon",
+      "sourceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/la-ministre-de-la-culture-catherine-pegard-annonce-le-renouvellement-pour-une-duree-de-cinq-ans-du-conventionnement-de-l-opera-de-dijon-au-titr",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-14",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "艺术与日常"
+      ],
+      "level": "A2",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "歌剧与社区文化候选：正文已读，列表显示10/14，但原页未呈现日期字段，保留collected，需原始日期再核。",
+      "verification": {
+        "workflowStage": "discovered",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/la-ministre-de-la-culture-catherine-pegard-annonce-le-renouvellement-pour-une-duree-de-cinq-ans-du-conventionnement-de-l-opera-de-dijon-au-titr",
+          "checkedAt": "2026-10-23",
+          "notes": "完整机构页面正文、标题、署名与例外检查；不复制媒体或外部链接正文。"
+        },
+        "originalDate": {
+          "verified": false,
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/la-ministre-de-la-culture-catherine-pegard-annonce-le-renouvellement-pour-une-duree-de-cinq-ans-du-conventionnement-de-l-opera-de-dijon-au-titr",
+          "evidence": "官方栏目列表显示日期；原页未显示，尚待交叉核验。"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 9,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "de-2026-08-19-geda-short-sleep",
+      "language": "de",
+      "sourceTitle": "Welche Bevölkerungsgruppen schlafen eher zu wenig? Ergebnisse der Studie „Gesundheit in Deutschland aktuell“ (GEDA 2023)",
+      "sourceUrl": "https://edoc.rki.de/bitstream/handle/176904/13845/johm_11_14_DE.pdf?sequence=1",
+      "sourceName": "Robert Koch-Institut — Journal of Health Monitoring",
+      "registrySourceId": "rki-johm-german",
+      "sourcePublishedAt": "2026-08-19",
+      "collectedAt": "2026-10-23",
+      "category": "health",
+      "topics": [
+        "睡眠",
+        "平日与周末",
+        "调查数据"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。采用原报道65天的90天备用窗口。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-23",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://edoc.rki.de/bitstream/handle/176904/13845/johm_11_14_DE.pdf?sequence=1",
+          "checkedAt": "2026-10-23",
+          "notes": "Read five-page German PDF. Article body, methods/results/discussion, byline, publication header, rights and references checked; adaptation uses authors’ own narrative only."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://edoc.rki.de/bitstream/handle/176904/13845/johm_11_14_DE.pdf?sequence=1",
+          "evidence": "PDF page 1 explicitly states Veröffentlicht: 19.08.2026. Sleep data collected May 2023–February 2024; publication date not fieldwork date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://edoc.rki.de/bitstream/handle/176904/13845/johm_11_14_DE.pdf?sequence=1",
+          "evidence": "German institutional article by Natali Kaufholdová, Almut Richter, Anke-Christine Saß and Anja Schienkiewitz; page1 distinguishes English edition. No translation/republication credit in the German article.",
+          "author": "Natali Kaufholdová; Almut Richter; Anke-Christine Saß; Anja Schienkiewitz",
+          "basis": "institutional-original-language-inference",
+          "caveat": "German article provenance and separate English version support native-language publication, not the authors’ personal native tongue or first drafting language."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "PDF page1 gives explicit article-specific CC BY4.0 open-access notice. CC deed allows redistribution and adaptation with attribution/licence/modification disclosure. No contrary restriction on author narrative.",
+          "evidenceUrls": [
+            "https://edoc.rki.de/bitstream/handle/176904/13845/johm_11_14_DE.pdf?sequence=1",
+            "https://creativecommons.org/licenses/by/4.0/deed.de"
+          ],
+          "scope": "Author-authored German study narrative and aggregate findings only.",
+          "exclusions": [
+            "Pictures, logos, questionnaire wording, third-party citations and reference texts",
+            "Underlying restricted individual-level survey data"
+          ],
+          "attributionRequirements": [
+            "All four authors, RKI, title, DOI10.25646/14300, publication date and original URL",
+            "CC BY4.0 link, change notice and no endorsement"
+          ],
+          "basis": "article-explicit-license",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 65,
+          "bucket": "within_90_days"
+        }
+      },
+      "linkToArticleId": "2026-10-23-de-schlaf-im-wochenverlauf"
+    },
+    {
+      "id": "en-2026-10-21-library-loan-rate",
+      "language": "en",
+      "sourceTitle": "Consultation on the proposed rate per loan for the 2025 to 2026 Public Lending Right Scheme year",
+      "sourceUrl": "https://www.gov.uk/government/consultations/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-10-21",
+      "collectedAt": "2026-10-23",
+      "category": "culture",
+      "topics": [
+        "图书馆",
+        "创作者",
+        "借阅补偿"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "2026-10-23 独立全文、许可、译文及两类题组审核通过；对应精读稿见 linkToArticleId，候选本身不公开为文章。",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-23",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/consultations/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year",
+          "checkedAt": "2026-10-23",
+          "notes": "重新读官方全文与日期、机构署名和版权声明；排除直接引语及媒体、第三方作品。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/consultations/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year",
+          "evidence": "正文Published 2026-10-21；原发表日与整理日分开。"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/consultations/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year",
+          "evidence": "英国具名机构英文正式发布；正文无翻译或外部转载标记。",
+          "author": "Department for Digital, Culture, Media and Sport",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构原语来源判断，不认证作者母语。"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "文章明确OGL声明及GOV.UK Using GOV.UK content条款；本次独立重读。",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/consultations/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "scope": "机构自有英文正文；不取第三方材料。",
+          "exclusions": [
+            "图片、照片、标志、媒体",
+            "全部直接引语、第三方作品、链接文件和表单内容"
+          ],
+          "attributionRequirements": [
+            "Crown及机构署名、原题/链接/日期、OGL链接、改写翻译说明；无认可暗示"
+          ],
+          "basis": "article-explicit-OGL-and-GOVUK-terms",
+          "licenseRetrievalNote": "本次National Archives规范许可页web返回403，未重试或绕过；不声称重新读到该页。文章明确OGL和官方再用条款可读。",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-23",
+          "checkedAgainstArticleCount": 97,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/consultations/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year"
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 2,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-23-en-borrowing-books-and-paying-creators"
+    },
+    {
+      "id": "en-2026-10-21-school-antisemitism-review",
+      "language": "en",
+      "sourceTitle": "“Generational moment” as government acts on landmark antisemitism review",
+      "sourceUrl": "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
+      "sourceName": "Department for Education / GOV.UK",
+      "registrySourceId": "govuk-education-english-news",
+      "sourcePublishedAt": "2026-10-21",
+      "collectedAt": "2026-10-23",
+      "category": "education",
+      "topics": [
+        "校园安全",
+        "反歧视",
+        "教师支持"
+      ],
+      "level": "B2",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "仅新发现储备；需核完整报道、报告抽样分母与偏见术语边界，再做权利审查。不得把三分之五概括全体学生，不沿用宣传形容词当编辑结论。口语角度：学校如何让学生安全报告歧视？",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-23",
+        "fullText": {
+          "accessible": false,
+          "read": false,
+          "url": "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
+          "checkedAt": "2026-10-23",
+          "notes": "本轮仅检索结果，不等于全文核查。"
+        },
+        "originalDate": {
+          "verified": false,
+          "evidenceUrl": "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
+          "evidence": "检索结果显示Published21October2026；待正文核验。"
+        },
+        "rights": {
+          "verified": false,
+          "adaptationAllowed": false,
+          "publicRedistributionAllowed": false
+        },
+        "freshness": {
+          "asOf": "2026-10-23",
+          "ageDays": 2,
+          "bucket": "within_30_days"
         }
       }
     }

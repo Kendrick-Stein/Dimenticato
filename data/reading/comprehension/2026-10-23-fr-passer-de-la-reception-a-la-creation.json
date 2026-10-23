@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-fr-passer-de-la-reception-a-la-creation",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle relation le texte établit-il entre les activités présentées ?",
+      "options": [
+        "La création remplace l’examen des informations reçues.",
+        "Les ateliers servent à choisir un métier artistique.",
+        "Les bibliothèques coordonnent l’ensemble des projets locaux.",
+        "L’examen des contenus et la création personnelle se complètent."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s10",
+        "s12",
+        "s23"
+      ],
+      "explanationZh": "第23句综合前面核查、辨析与创作案例，指出二者互补；并未把活动都归为职业选择或图书馆协调。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Dans le jeu de journalistes, que font les équipes avant de rédiger ?",
+      "options": [
+        "Elles présentent leur article à la radio locale.",
+        "Elles recueillent les indices et les vérifient.",
+        "Elles choisissent des livres dans une bibliothèque.",
+        "Elles organisent un débat sur les métiers de la presse."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "第7—8句明确顺序为收集、核实、写作；电台播出属于另一项吕萨活动。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quel projet a donné lieu à une diffusion sur Fréquence 7 ?",
+      "options": [
+        "Les ateliers menés à Lussas autour de la transformation.",
+        "Les visites de musées organisées par Peuple et Culture.",
+        "Les séances de cinéma itinérant dans le Grand Est.",
+        "Les ateliers de lecture annoncés par Cultures du Cœur."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第11—12句把两位声音创作者、变化主题与 Fréquence 7 播出关联起来，其余项目采用其他形式。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quelle distinction temporelle le texte fait-il ?",
+      "options": [
+        "Les projets à Rennes et de Cultures du Cœur sont tous à venir.",
+        "Les deux activités sont décrites comme terminées en été.",
+        "L’activité à Rennes a eu lieu, les ateliers de Cultures du Cœur sont annoncés.",
+        "L’activité à Rennes est prévue après les ateliers de Cultures du Cœur."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s18",
+        "s21",
+        "s22"
+      ],
+      "explanationZh": "雷恩活动用已完成时态；Cultures du Cœur 的活动仍以计划及将来时表述。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Pourquoi le texte rapproche-t-il le jeu de journalistes et la création sonore ?",
+      "options": [
+        "Les participants préparent la même émission collective.",
+        "Les deux activités donnent un rôle actif aux jeunes face aux contenus.",
+        "Les deux ateliers évaluent les mêmes résultats scolaires.",
+        "Leurs équipes utilisent les mêmes indices sur un village."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s7",
+        "s11",
+        "s12",
+        "s23"
+      ],
+      "explanationZh": "记者游戏让青年收集、核查和写作，声音活动让青年制作并播出内容；因此可综合为主动参与，而非声称同一节目、同一材料或评估制度。"
+    }
+  ]
+}

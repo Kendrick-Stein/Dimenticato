@@ -1,0 +1,328 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-de-schlaf-im-wochenverlauf",
+  "storyId": "rki-geda-short-sleep-2026-08-19",
+  "lang": "de",
+  "date": "2026-10-23",
+  "title": "Schlaf im Wochenverlauf",
+  "titleZh": "一周中，睡眠有什么变化？",
+  "summaryZh": "一份8月发表的RKI研究比较平日与周末的睡眠时长。读懂比例，也留意自报数据与个人健康之间的区别。",
+  "level": "B1",
+  "levelReason": "编辑估计：以日常睡眠为主题，使用过去时、被动态、间接问句及对比结构，区分调查结果、测量局限与作者讨论；统计词均有中文辅助。",
+  "category": "health",
+  "topics": [
+    "睡眠",
+    "平日与周末",
+    "调查数据"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Robert Koch-Institut — Journal of Health Monitoring",
+    "title": "Welche Bevölkerungsgruppen schlafen eher zu wenig? Ergebnisse der Studie „Gesundheit in Deutschland aktuell“ (GEDA 2023)",
+    "url": "https://edoc.rki.de/bitstream/handle/176904/13845/johm_11_14_DE.pdf?sequence=1",
+    "publishedAt": "2026-08-19",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者：Natali Kaufholdová、Almut Richter、Anke-Christine Saß、Anja Schienkiewitz；Robert Koch-Institut，Journal of Health Monitoring 2026;11:14，DOI 10.25646/14300。Dimenticato 作德语分级改写、中文翻译及原创教学补充；本文及配套练习按 CC BY 4.0 提供，未经来源机构认证。",
+  "adaptation": "2026-10-23整理；原文2026-08-19发表，使用的是2023—2024年调查数据，不是当天健康新闻。缩写和重组作者的研究叙述，保留自报测量与群体比较的边界；不复制图片、问卷原题、参考文献文字或个人数据，不提供个人诊断与医疗建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Schlafen Menschen am Wochenende länger als an anderen Tagen?",
+      "zh": "人们在周末比其他日子睡得更久吗？",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Ein am 19. August 2026 veröffentlichter Bericht des Robert Koch-Instituts untersucht diese Frage mit Daten aus der Studie GEDA 2023.",
+      "zh": "罗伯特·科赫研究所2026年8月19日发表的一份报告，利用GEDA 2023研究的数据考察了这个问题。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Die Angaben zum Schlaf wurden von Mai 2023 bis Februar 2024 telefonisch erhoben, sie beschreiben also nicht die Situation im Herbst 2026.",
+      "zh": "关于睡眠的信息是在2023年5月至2024年2月通过电话收集的，因此描述的不是2026年秋季的情况。",
+      "glosses": [
+        {
+          "surface": "erhoben",
+          "lemma": "erheben",
+          "zh": "收集；调查获得",
+          "note": "erhoben是erheben的第二分词；wurden … erhoben构成过去时被动态。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Die Befragten sollten angeben, wann sie normalerweise ins Bett gingen, wie lange sie zum Einschlafen brauchten und wann sie morgens aufwachten.",
+      "zh": "受访者需要说明自己通常何时上床、入睡需要多久，以及早晨何时醒来。",
+      "glosses": [
+        {
+          "surface": "Befragten",
+          "lemma": "Befragte",
+          "zh": "受访者",
+          "note": "名词化分词，复数；die Befragten。"
+        },
+        {
+          "surface": "Einschlafen",
+          "lemma": "Einschlafen",
+          "zh": "入睡",
+          "note": "wie lange … zum Einschlafen brauchen：入睡需要多长时间。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Dabei sollten sie an die letzten vier Wochen denken und zwischen Wochentagen und dem Wochenende unterscheiden.",
+      "zh": "回答时，他们需要回顾最近四周，并区分平日与周末。",
+      "glosses": [
+        {
+          "surface": "unterscheiden",
+          "lemma": "unterscheiden",
+          "zh": "区分",
+          "note": "zwischen A und B unterscheiden：区分A和B。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Das Forschungsteam bezeichnete eine Schlafdauer von weniger als sieben Stunden pro Nacht als kurz.",
+      "zh": "研究团队将每晚少于七小时的睡眠时长定义为“短”。",
+      "glosses": [
+        {
+          "surface": "Schlafdauer",
+          "lemma": "Schlafdauer",
+          "zh": "睡眠时长",
+          "note": "die Schlafdauer；并非睡眠质量。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Nach den berechneten Ergebnissen betraf dies an Wochentagen 39,6 Prozent der Erwachsenen und am Wochenende 22,7 Prozent.",
+      "zh": "根据计算结果，平日有39.6%的成年人属于这种情况，周末则为22.7%。",
+      "glosses": [
+        {
+          "surface": "betraf",
+          "lemma": "betreffen",
+          "zh": "涉及；适用于",
+          "note": "betraf是betreffen的过去时第三人称单数，主语为dies。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Besonders deutlich war das Ergebnis bei Männern zwischen 45 und 64 Jahren: An Wochentagen schliefen 53 Prozent weniger als sieben Stunden.",
+      "zh": "45至64岁男性的结果尤其突出：在平日，53%的人睡眠少于七小时。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Bei jüngeren Erwachsenen war der Anteil mit kurzen Nächten am Wochenende deutlich niedriger als unter der Woche.",
+      "zh": "年轻成年人中，周末睡眠时间短的比例明显低于平日。",
+      "glosses": [
+        {
+          "surface": "Anteil",
+          "lemma": "Anteil",
+          "zh": "比例",
+          "note": "der Anteil；此处是群体中睡眠时间短者的占比。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Bei Menschen ab 65 Jahren zeigte sich dagegen kein statistisch gesicherter Unterschied zwischen diesen Teilen der Woche.",
+      "zh": "相比之下，在65岁及以上的人群中，平日与周末之间没有显示出统计上得到确认的差异。",
+      "glosses": [
+        {
+          "surface": "gesicherter",
+          "lemma": "gesichert",
+          "zh": "得到确认的",
+          "note": "kein … Unterschied，阳性第一格，形容词词尾-er。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Die Zahlen beruhen auf eigenen Angaben der Teilnehmenden und nicht auf einer Messung mit Geräten.",
+      "zh": "这些数字依据的是参与者自己的报告，而不是仪器测量。",
+      "glosses": [
+        {
+          "surface": "Messung",
+          "lemma": "Messung",
+          "zh": "测量",
+          "note": "die Messung；mit Geräten指用设备测量。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Die Autorinnen empfehlen deshalb, künftig auch andere Möglichkeiten der Messung zu prüfen.",
+      "zh": "因此，作者们建议今后也考察其他测量方式。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Außerdem zeigt die Dauer allein nicht, wie erholsam der Schlaf war oder wie oft jemand nachts aufwachte.",
+      "zh": "此外，单凭时长无法说明睡眠有多解乏，或一个人在夜间醒来了多少次。",
+      "glosses": [
+        {
+          "surface": "erholsam",
+          "lemma": "erholsam",
+          "zh": "能让人恢复精力的",
+          "note": "表语形容词，不加词尾。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Die Grenze von sieben Stunden dient hier dem Vergleich von Gruppen; sie bedeutet nicht, dass alle Menschen darunter automatisch krank sind.",
+      "zh": "这里的七小时界限用于群体比较，并不意味着所有睡得更少的人都会自动被视为患病。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Der Bericht betont, dass längeres Schlafen am Wochenende regelmäßigen ausreichenden Schlaf nicht vollständig ersetzen kann.",
+      "zh": "报告强调，周末睡得更久并不能完全替代规律、充足的睡眠。",
+      "glosses": [
+        {
+          "surface": "ersetzen",
+          "lemma": "ersetzen",
+          "zh": "替代",
+          "note": "情态动词kann后用不定式。"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Neben persönlichen Gewohnheiten nennen die Autorinnen auch Bedingungen wie nächtlichen Lärm, Licht in der Wohnung und Schichtarbeit.",
+      "zh": "除了个人习惯，作者们也提到了夜间噪声、住所中的光照以及轮班工作等条件。",
+      "glosses": [
+        {
+          "surface": "Schichtarbeit",
+          "lemma": "Schichtarbeit",
+          "zh": "轮班工作",
+          "note": "die Schichtarbeit。"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Damit richtet sich der Blick nicht nur auf einzelne Menschen, sondern auch auf ihre Lebens- und Arbeitsumgebung.",
+      "zh": "因此，关注点不仅在个人身上，也包括他们的生活和工作环境。",
+      "glosses": [
+        {
+          "surface": "Arbeitsumgebung",
+          "lemma": "Arbeitsumgebung",
+          "zh": "工作环境",
+          "note": "die Arbeitsumgebung；与Lebensumgebung并列，指工作及生活的外部条件。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "erhoben",
+        "zh": "收集；调查获得",
+        "sentenceId": "s3",
+        "lemma": "erheben",
+        "note": "过去时被动态中的第二分词。"
+      },
+      {
+        "text": "unterscheiden",
+        "zh": "区分",
+        "sentenceId": "s5",
+        "lemma": "unterscheiden",
+        "note": "与zwischen搭配。"
+      },
+      {
+        "text": "Schlafdauer",
+        "zh": "睡眠时长",
+        "sentenceId": "s6",
+        "lemma": "Schlafdauer",
+        "note": "阴性名词；区别于Schlafqualität。"
+      },
+      {
+        "text": "Messung",
+        "zh": "测量",
+        "sentenceId": "s11",
+        "lemma": "Messung",
+        "note": "阴性名词；本句与自报信息相对。"
+      },
+      {
+        "text": "ersetzen",
+        "zh": "替代",
+        "sentenceId": "s15",
+        "lemma": "ersetzen",
+        "note": "kann后使用不定式。"
+      },
+      {
+        "text": "Schichtarbeit",
+        "zh": "轮班工作",
+        "sentenceId": "s16",
+        "lemma": "Schichtarbeit",
+        "note": "阴性名词，描述工作时间安排。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "zwischen Wochentagen und dem Wochenende unterscheiden",
+        "zh": "区分平日与周末",
+        "sentenceId": "s5",
+        "note": "zwischen接第三格；可替换为其他需要比较的两类对象。"
+      },
+      {
+        "text": "beruhen auf",
+        "zh": "以……为依据",
+        "sentenceId": "s11",
+        "note": "auf接第三格，说明结论所依据的信息。"
+      },
+      {
+        "text": "nicht nur auf einzelne Menschen, sondern auch auf ihre Lebens- und Arbeitsumgebung",
+        "zh": "不仅关注个人，也关注其生活和工作环境",
+        "sentenceId": "s17",
+        "note": "nicht nur …, sondern auch …连接平行成分，扩大讨论范围。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "dagegen引出群体间的对比；statistisch gesichert限定结论强度，不能译为绝对没有差别。"
+      },
+      {
+        "sentenceId": "s13",
+        "note": "wie引导两个并列间接问句，谓语分别放在句末，用于说明一个指标无法回答的问题。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Unterscheiden sich deine Schlafzeiten am Wochenende von denen unter der Woche?",
+        "zh": "你的周末睡眠时间与平日有不同吗？"
+      },
+      {
+        "text": "Welche Informationen fehlen, wenn man nur die Schlafdauer kennt?",
+        "zh": "如果只知道睡眠时长，还缺少哪些信息？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Die Zahlen beruhen auf",
+        "zh": "这些数字以……为依据",
+        "sentenceId": "s11",
+        "note": "讨论调查方法时使用，后接第三格。"
+      },
+      {
+        "text": "nicht nur",
+        "zh": "不仅",
+        "sentenceId": "s17",
+        "note": "与sondern auch配对，补充另一层面。"
+      }
+    ]
+  }
+}

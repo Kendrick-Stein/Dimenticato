@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-23",
+  "status": "PASS",
+  "mode": "outbound-official-links-only",
+  "sourceChecks": [
+    {
+      "id": "it-rai-acquisti-a1",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-consigli-per-gli-acquisti-quanto-quale-e-che-b23f5c10-c1c6-40a7-8eea-368d0fc3447c.html",
+      "dateEvidence": "Exact publication day not obtained. URL path is 2021/06 but is not used as proven date; public sourcePublishedAt omitted.",
+      "evidenceSummary": "Fela requests eight bread rolls, 200g Tuscan pecorino, sparkling water and fruit juice. Corresponding official lesson prose available.",
+      "copyright": "Rai copyright. Outbound link and concise original educational guide/questions only; no transcript/media/images copied. No reuse licence asserted."
+    },
+    {
+      "id": "fr-tv5-cuisine-a1",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/vocabulaire-dans-la-cuisine",
+      "evidenceSummary": "A1 kitchen vocabulary, authored Dorothée Depont / Université catholique de Louvain; first published2013-06-02, updated2024-11-26; expiry2033-12-31. Full transcript unavailable, questions absent.",
+      "copyright": "TV5MONDE/RTBF and author rights; outbound only, no player/image/transcript/exercise copied."
+    },
+    {
+      "id": "de-logo-waschbaeren-20261022",
+      "url": "https://www.logo.de/waschbaer-verhuetung-einfach-erklaert-100.html",
+      "evidenceSummary": "Current22October2026 raccoon explainer,1:40. No verified full-media content; no questions and no numerical claims carried over.",
+      "copyright": "ZDF copyright; outbound link only, no media/subtitles/thumbnail/iframe copied."
+    },
+    {
+      "id": "en-bc-morning-briefing-a2",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/morning-briefing",
+      "evidenceSummary": "Projects continue during management gap; after8:30 use church parking, leave before18:00; ID-card canteen expenses deducted from salary atmonthend. Publication date absent; never infer from comments.",
+      "copyright": "British Council copyright; original questions from transcript facts. Official live tasks compared, no exercise copied. No transcript/media/images copied.",
+      "limits": [
+        "No actual playback or audio-quality test"
+      ],
+      "originalityReview": "Official task1/task2 XML was read through direct official page links. New MCQs use independently written wording, including project continuation, a9am conditional parking scenario, and salary settlement. No provider prompts/options reproduced. Worksheet PDF timeout remains, but corresponding live task content comparison succeeded."
+    }
+  ],
+  "limits": [
+    "No audio audition",
+    "FR/DE resource-only; no full corresponding text",
+    "RAI original publication date unavailable; omitted"
+  ],
+  "entryHashes": {
+    "it-rai-acquisti-a1": "60592e1dcaf10ed82cafc785bf64fd631ad524e79ce045d8037b033224ee31a7",
+    "fr-tv5-cuisine-a1": "74e5fe1bfe9b200b992ecdd0d98c5c0e61c8d89d70338be905193b396642e75e",
+    "de-logo-waschbaeren-20261022": "3df33f781a44b78d7d8a55897e3e576699e166ec485b6cb43932e6b8da9b9022",
+    "en-bc-morning-briefing-a2": "3e239e64c7b9137679dddc38644d0ce87cd5a91f7ea5345b54e2c2811f9b3328"
+  },
+  "independentReview": {
+    "blindFirst": true,
+    "sixQuestionAnswers": [
+      2,
+      0,
+      3,
+      1,
+      2,
+      0
+    ],
+    "sixQuestionKeysTranslationsExplanations": "PASS",
+    "sourceReview": "Independent official-text and metadata check. German official HTML HTTP200 corroborated publication 2026-10-22 and PT1M40S.",
+    "limitations": "FR/DE entries are resource-only, no comprehension questions without full evidence. No playback or sound-quality validation claimed."
+  },
+  "entrySha256": {
+    "it-rai-acquisti-a1": "60592e1dcaf10ed82cafc785bf64fd631ad524e79ce045d8037b033224ee31a7",
+    "fr-tv5-cuisine-a1": "74e5fe1bfe9b200b992ecdd0d98c5c0e61c8d89d70338be905193b396642e75e",
+    "de-logo-waschbaeren-20261022": "3df33f781a44b78d7d8a55897e3e576699e166ec485b6cb43932e6b8da9b9022",
+    "en-bc-morning-briefing-a2": "3e239e64c7b9137679dddc38644d0ce87cd5a91f7ea5345b54e2c2811f9b3328"
+  },
+  "validation": {
+    "test-listening": "299 passed, 0 failed"
+  }
+}

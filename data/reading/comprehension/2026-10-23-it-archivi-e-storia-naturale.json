@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-it-archivi-e-storia-naturale",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale relazione mette in evidenza il programma?",
+      "options": [
+        "I documenti servono a confrontare le tecniche di restauro usate dai musei.",
+        "Le carte e gli oggetti possono collegare ricerca storica e zoologia.",
+        "Gli oggetti illustrano la trasformazione degli spazi dei depositi archivistici.",
+        "Le fonti raccontano soprattutto la storia amministrativa dei due musei."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s5",
+        "s7",
+        "s8",
+        "s11"
+      ],
+      "explanationZh": "第1、5、7、8、11句把书面资料、动物学研究和博物馆物件联系起来；不是比较修复技术、介绍库房改造或主要讲两家博物馆行政史。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa era previsto accanto ai frammenti della Cancelleria angioina?",
+      "options": [
+        "Materiali provenienti da una biblioteca e da un archivio comunale.",
+        "Materiali provenienti da un’università e da una collezione privata.",
+        "Materiali provenienti da un museo e da una scuola cittadina.",
+        "Materiali provenienti da due musei della città di Napoli."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s8",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第11句说展品来自“两家博物馆”，回指第8句的那不勒斯动物学博物馆与Filangieri博物馆；不是图书馆、市镇档案馆、私人收藏或学校组合。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Perché la rassegna presentava anche il lavoro degli studiosi?",
+      "options": [
+        "Per mostrare come le fonti possono aprire nuove interpretazioni.",
+        "Per spiegare come vengono scelte le acquisizioni delle collezioni.",
+        "Per confrontare i sistemi di catalogazione adottati dai musei.",
+        "Per illustrare come si restaurano i documenti dei depositi."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第12、13句强调研究者向材料提问并形成新的解释；并非介绍馆藏采购、编目系统或修复操作。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Quale domanda resta senza risposta nel testo?",
+      "options": [
+        "A quale rassegna apparteneva l’appuntamento?",
+        "Quali istituzioni avrebbero partecipato al confronto?",
+        "Quali risultati specifici aveva ottenuto la ricerca sull’avvoltoio?",
+        "Quali materiali erano annunciati per l’esposizione?"
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s6",
+        "s8",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第6句明确未详细说明研究结果；系列名称、参与机构与计划展品则都已交代。"
+    }
+  ]
+}

@@ -2,6 +2,23 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-23-it-conoscere-gli-archivi",
+      "lang": "it",
+      "date": "2026-10-23",
+      "title": "Conoscere i documenti, proteggere la memoria",
+      "titleZh": "了解文献，保护记忆",
+      "summaryZh": "莫利塞的一场公开活动公告，把地方档案调查、资料分析和文化遗产保护联系起来。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "地方档案",
+        "文化保护"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-22",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-22-en-culture-beyond-winning",
       "lang": "en",
       "date": "2026-10-22",
@@ -17,6 +34,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-10-22",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-23-en-borrowing-books-and-paying-creators",
+      "lang": "en",
+      "date": "2026-10-23",
+      "title": "When a library loan becomes a payment",
+      "titleZh": "当图书馆的一次借阅成为一笔报酬",
+      "summaryZh": "每次借阅费率上升，未必意味着借阅量增长：英国借阅补偿咨询展示了分配机制中的区别。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "图书馆",
+        "创作者",
+        "借阅补偿"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-21",
       "contentType": "native-adaptation"
     },
     {
@@ -53,6 +88,40 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-21",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-23-fr-passer-de-la-reception-a-la-creation",
+      "lang": "fr",
+      "date": "2026-10-23",
+      "title": "Passer de la réception à la création",
+      "titleZh": "从接收信息到亲手创作",
+      "summaryZh": "从新闻线索核查到声音作品与共同阅读，一篇新报道展示青少年在文化活动中如何练习观察、表达和辨别。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "艺术与日常",
+        "文化参与"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-20",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-23-fr-une-maison-pour-les-musiciens",
+      "lang": "fr",
+      "date": "2026-10-23",
+      "title": "Une maison pour les musiciens et les habitants",
+      "titleZh": "音乐人与居民共同的空间",
+      "summaryZh": "波尔多 Rock School Barbey 的新项目把演出、学习、创作与居民参与联系起来。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "艺术与日常",
+        "文化参与"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-20",
       "contentType": "native-adaptation"
     },
     {
@@ -196,6 +265,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-16",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-23-it-strade-leggere-i-confronti",
+      "lang": "it",
+      "date": "2026-10-23",
+      "title": "Incidenti stradali: capire che cosa confrontiamo",
+      "titleZh": "道路事故：弄清我们在比较什么",
+      "summaryZh": "Istat的省级更新显示死亡总数下降与事故增加可以并存；比较地区前，还要分清年份、绝对人数和每千起事故死亡人数。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "道路安全",
+        "统计阅读"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-15",
       "contentType": "native-adaptation"
     },
     {
@@ -461,6 +547,23 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-23-fr-deux-tableaux-avant-le-retour",
+      "lang": "fr",
+      "date": "2026-10-23",
+      "title": "Deux tableaux avant le retour",
+      "titleZh": "两幅画重返展厅之前",
+      "summaryZh": "两幅失窃的雷诺阿画作已被找回。接下来，专家需要先检查它们，再考虑是否修复。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "艺术与日常",
+        "文化参与"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-12",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-16-en-ai-public-service-defences",
       "lang": "en",
       "date": "2026-10-16",
@@ -474,6 +577,23 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-10-12",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-23-it-archivi-e-storia-naturale",
+      "lang": "it",
+      "date": "2026-10-23",
+      "title": "Quando le carte incontrano la storia naturale",
+      "titleZh": "当档案遇见自然史",
+      "summaryZh": "那不勒斯的一份活动公告展示了档案研究如何连接动物学、博物馆馆藏与历史文献。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "档案研究",
+        "自然史"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-11",
       "contentType": "native-adaptation"
     },
     {
@@ -510,6 +630,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-23-en-a-wood-needs-time",
+      "lang": "en",
+      "date": "2026-10-23",
+      "title": "A wood needs time to recover",
+      "titleZh": "清理之后，树林还需要时间",
+      "summaryZh": "肯特郡一片树林的垃圾已清走，但生态恢复并没有随清理一起完成。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "自然环境",
+        "社区生活"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-09",
       "contentType": "native-adaptation"
     },
     {
@@ -921,6 +1058,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-01",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-23-en-trees-near-everyday-life",
+      "lang": "en",
+      "date": "2026-10-23",
+      "title": "Bringing trees closer to everyday life",
+      "titleZh": "把树木带到日常生活附近",
+      "summaryZh": "一项英格兰社区自然计划分别支持林地之外的植树和地方自然恢复工作。",
+      "level": "B1",
+      "category": "environment",
+      "topics": [
+        "自然环境",
+        "社区生活"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-30",
       "contentType": "native-adaptation"
     },
     {
@@ -1562,6 +1716,24 @@
       ],
       "sourceLang": "de",
       "sourcePublishedAt": "2026-08-20",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-23-de-schlaf-im-wochenverlauf",
+      "lang": "de",
+      "date": "2026-10-23",
+      "title": "Schlaf im Wochenverlauf",
+      "titleZh": "一周中，睡眠有什么变化？",
+      "summaryZh": "一份8月发表的RKI研究比较平日与周末的睡眠时长。读懂比例，也留意自报数据与个人健康之间的区别。",
+      "level": "B1",
+      "category": "health",
+      "topics": [
+        "睡眠",
+        "平日与周末",
+        "调查数据"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-08-19",
       "contentType": "native-adaptation"
     },
     {

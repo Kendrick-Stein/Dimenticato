@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-en-borrowing-books-and-paying-creators",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Which distinction is central to the article’s explanation?",
+      "options": [
+        "It compares payments for printed, audio and electronic formats.",
+        "It separates borrowing levels, the allocation rate and individual earnings.",
+        "It compares bookshop income with income from public libraries.",
+        "It separates views from individual authors and library organisations."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s7",
+        "s10",
+        "s15",
+        "s23"
+      ],
+      "explanationZh": "第7—15句解释借阅量和分配费率并非同方向变化，第22—23句进一步区分个人报酬；书籍形式和回应身份虽出现，却不是文章的主要比较，也未比较书店收入。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "What is the main reason given for the proposed rate increase?",
+      "options": [
+        "More people responded to the previous consultation.",
+        "More money was collected directly from library readers.",
+        "Fewer registered and qualifying book loans entered the calculation.",
+        "More printed books were replaced by electronic formats."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第11句明示主要原因是符合计算条件的借阅次数减少；其他因素在文中并非这个主要原因。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Which period does the newer total of approximately 154 million loans cover?",
+      "options": [
+        "January to December 2026.",
+        "July 2024 to June 2025.",
+        "October 2025 to September 2026.",
+        "July 2025 to June 2026."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第13句给出制度年度为7月至次年6月，新的数字对应2025年7月至2026年6月。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "What is the maximum annual PLR payment per author stated in the article?",
+      "options": [
+        "£6,600.",
+        "£6,540.",
+        "£6,000.",
+        "£6,240."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s17"
+      ],
+      "explanationZh": "第17句给出每位作者每年最高6,600英镑；文中整体预算为654万英镑，不能把它改作个人上限。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "What is the status of the expected effect on earnings across payment bands?",
+      "options": [
+        "It is a result measured after the new payments were issued.",
+        "It is a forecast made while the rate change is being consulted on.",
+        "It is a finding from a survey of authors after the scheme year.",
+        "It is a conclusion drawn from the consultation responses already received."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s18",
+        "s19"
+      ],
+      "explanationZh": "第18句用expects，第19句明确是预期而不是最终支付结果；尚在咨询阶段，不能当成已测得结果或个人保证。"
+    }
+  ]
+}

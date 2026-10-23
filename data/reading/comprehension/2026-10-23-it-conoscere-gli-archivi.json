@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-it-conoscere-gli-archivi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Perché il programma metteva insieme partecipanti diversi?",
+      "options": [
+        "Per presentare nuovi servizi di prestito dei libri.",
+        "Per decidere il trasferimento delle raccolte comunali.",
+        "Per confrontarsi sui dati e sulla tutela degli archivi.",
+        "Per scegliere i documenti destinati a una mostra."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s6",
+        "s9"
+      ],
+      "explanationZh": "第5、6、9句说明活动介绍调查结果、讨论数据，并让不同参与者交流保护工作；并未宣布新借阅服务、馆藏搬迁决定或展品遴选。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quale tema era affidato all’intervento dei Carabinieri?",
+      "options": [
+        "Le loro funzioni nella tutela del patrimonio culturale.",
+        "I risultati del monitoraggio svolto dalla Soprintendenza.",
+        "Le modalità per consultare le raccolte delle biblioteche.",
+        "Il programma delle nuove mostre negli archivi comunali."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "第7句把文化遗产保护与宪兵职责明确对应；监管机构调查成果属于另一部分，并非宪兵报告主题，借阅和展览安排也未被指定给他们。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Da quali informazioni partiva il confronto sugli archivi comunali?",
+      "options": [
+        "Dalle richieste di prestito presentate dai lettori.",
+        "Dai commenti del pubblico sulle mostre precedenti.",
+        "Dai programmi delle scuole per le visite in biblioteca.",
+        "Dai risultati del monitoraggio e dai dati raccolti."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "第5句说明组织者将介绍档案监测调查的结果并讨论所收集的数据；不是借阅申请、既往展览反馈或学校参观计划。"
+    }
+  ]
+}

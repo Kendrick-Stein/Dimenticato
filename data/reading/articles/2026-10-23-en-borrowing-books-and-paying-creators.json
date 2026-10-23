@@ -1,0 +1,281 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-en-borrowing-books-and-paying-creators",
+  "storyId": "dcms-plr-rate-consultation-2026-10-21",
+  "lang": "en",
+  "date": "2026-10-23",
+  "category": "culture",
+  "topics": [
+    "图书馆",
+    "创作者",
+    "借阅补偿"
+  ],
+  "title": "When a library loan becomes a payment",
+  "titleZh": "当图书馆的一次借阅成为一笔报酬",
+  "summaryZh": "每次借阅费率上升，未必意味着借阅量增长：英国借阅补偿咨询展示了分配机制中的区别。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：解释分配机制、数值关系与证据边界，包含让步、条件和限制表达，不以篇幅作为唯一难度依据。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "Consultation on the proposed rate per loan for the 2025 to 2026 Public Lending Right Scheme year",
+    "url": "https://www.gov.uk/government/consultations/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year",
+    "publishedAt": "2026-10-21",
+    "lang": "en",
+    "author": "Department for Digital, Culture, Media and Sport"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport; 2026-10-21; https://www.gov.uk/government/consultations/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year",
+  "adaptation": "2026-10-23整理；依据原日期的机构英文正文作同语言教学改写，并加入中文译文与原创学习补充。不是原文逐字转载或机构认可的课程。排除图片、标志、直接引语、第三方作品与外链内容；来源报告与教学解读明确区分。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Borrowing a book can support its creators through a system that is less visible than buying a copy in a bookshop.",
+      "zh": "与在书店买书相比，通过借阅支持创作者的机制可能不那么显眼。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "In the United Kingdom, the Public Lending Right, usually called PLR, allows eligible contributors to receive payments linked to the borrowing of their works from public libraries.",
+      "zh": "在英国，公共借阅权制度，通常简称PLR，允许符合条件的贡献者获得与其作品在公共图书馆被借阅有关的报酬。",
+      "glosses": [
+        {
+          "surface": "eligible",
+          "lemma": "eligible",
+          "zh": "符合条件的"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "It covers more than printed books: audiobooks, electronic books and electronic audiobooks are included, as is the remote borrowing of the two electronic formats.",
+      "zh": "它涵盖的不只是纸质书：有声书、电子书和电子有声书也在其中，后两种电子形式的远程借阅同样包括在内。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "On 21 October 2026, the Department for Digital, Culture, Media and Sport opened a consultation on the payment rate for the 2025/26 scheme year.",
+      "zh": "2026年10月21日，英国数字、文化、媒体和体育部就2025/26制度年度的支付费率启动咨询。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "The proposal would raise the rate per loan from 12.40 pence to 13.63 pence, an increase of 1.23 pence.",
+      "zh": "提案将把每次借阅的费率从12.40便士提高到13.63便士，增加1.23便士。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "However, the document presents this as a proposed variation on which views are being sought, rather than a change already brought into force.",
+      "zh": "不过，文件把它表述为正在征求意见的拟议调整，而不是已经生效的变化。",
+      "glosses": [
+        {
+          "surface": "proposed",
+          "lemma": "propose",
+          "zh": "拟议的"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Understanding the proposal requires looking beyond the attractive headline of a higher rate, because the calculation is designed to distribute an available fund.",
+      "zh": "理解这项提案需要超越费率提高这一醒目的表面信息，因为计算的目的是分配一笔可用资金。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Each year, the British Library recommends a rate intended to use the money available without leaving a shortfall or an undistributed surplus.",
+      "zh": "英国图书馆每年建议一个费率，目的是充分分配可用资金，既不造成资金不足，也不留下未分配余额。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "The calculation relates the money available to registered loans and makes adjustments for minimum and maximum payment thresholds.",
+      "zh": "计算把可用资金与已登记作品的借阅次数联系起来，并根据最低和最高支付门槛进行调整。",
+      "glosses": [
+        {
+          "surface": "thresholds",
+          "lemma": "threshold",
+          "zh": "门槛、限额"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Consequently, when the number of loans rises, the rate can move down; when the number falls, it can move up.",
+      "zh": "因此，借阅次数增加时，费率可能下调；次数减少时，费率可能上调。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "The consultation says that the proposed increase mainly reflects fewer registered and qualifying book loans in the relevant scheme year.",
+      "zh": "咨询文件表示，拟议上调主要反映了相关制度年度内已登记且符合条件的图书借阅次数减少。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "The figure used for 2025/26 was approximately 154 million loans, compared with approximately 162 million for the previous calculation.",
+      "zh": "2025/26年度计算所用的数字约为1.54亿次借阅，而上一轮计算约为1.62亿次。",
+      "glosses": [
+        {
+          "surface": "approximately",
+          "lemma": "approximately",
+          "zh": "大约"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "These periods run from 1 July to 30 June, so the newer figure describes July 2025 to June 2026 rather than the calendar year 2026.",
+      "zh": "这些周期从7月1日到6月30日，因此较新的数字指2025年7月至2026年6月，而不是2026自然年。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Other influences include the number of registered authors and the amount allocated for author payments, which the document gives as £6.54 million for 2025/26.",
+      "zh": "其他影响因素包括登记作者人数，以及分配给作者报酬的金额；文件列出的2025/26年度金额为654万英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "The rate therefore should not be interpreted as a simple measure of how popular libraries have become, or as an identical increase in every contributor’s earnings.",
+      "zh": "所以，不应把这一费率简单理解为图书馆受欢迎程度的衡量，也不应认为每位贡献者收入都同幅增加。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "According to the consultation, more than 24,000 eligible contributors received PLR payments in each of the last two years, with over £6 million distributed annually.",
+      "zh": "据咨询文件，过去两年中每年都有超过24,000名符合条件的贡献者获得PLR报酬，每年分配超过600万英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "The scheme sets a maximum annual payment of £6,600 per author and a minimum threshold of £1, which constrain how the fund is distributed.",
+      "zh": "制度规定每位作者每年最高支付6,600英镑，最低门槛为1英镑，这些条件约束了资金分配方式。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "The department expects the proposed rate change to have little effect on the overall distribution of earnings across payment bands, compared with previous years.",
+      "zh": "该部门预计，与往年相比，拟议费率变化对不同支付档位之间的整体收入分布影响较小。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "This is an expectation in the consultation, not a report of the final payments after the proposed change.",
+      "zh": "这是咨询中的预期，而不是拟议变化后最终支付结果的报告。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "People can respond individually or on behalf of an organisation, and the consultation asks for views specifically about the proposed rate.",
+      "zh": "人们可以以个人身份或代表组织回应，而咨询具体征求的是对拟议费率的意见。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Responses are invited until 15 November 2026; afterwards, the department says it will publish a summary of responses and the action it plans to take.",
+      "zh": "回应截止日期为2026年11月15日；此后，该部门表示将公布回应摘要和拟采取的行动。",
+      "glosses": [
+        {
+          "surface": "afterwards",
+          "lemma": "afterwards",
+          "zh": "此后"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "The British Library maintains a register of eligible authors and books for the scheme.",
+      "zh": "英国图书馆为这项制度维护符合条件的作者与图书登记册。",
+      "glosses": []
+    },
+    {
+      "id": "s23",
+      "text": "For readers, the useful distinction is between borrowing activity, a rate used to allocate money and the payments that individuals eventually receive.",
+      "zh": "对读者来说，值得区分的是借阅活动、用于分配资金的费率，以及个人最终拿到的报酬。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "eligible",
+        "lemma": "eligible",
+        "zh": "符合条件的",
+        "sentenceId": "s2",
+        "note": "eligible contributors指满足制度资格的贡献者，并非所有人自动获得报酬。"
+      },
+      {
+        "text": "proposed",
+        "lemma": "propose",
+        "zh": "拟议的",
+        "sentenceId": "s6",
+        "note": "proposed variation表示尚在征求意见的调整，不是已经实施的调整。"
+      },
+      {
+        "text": "thresholds",
+        "lemma": "threshold",
+        "zh": "门槛、限额",
+        "sentenceId": "s9",
+        "note": "minimum and maximum payment thresholds指最低与最高支付门槛。"
+      },
+      {
+        "text": "approximately",
+        "lemma": "approximately",
+        "zh": "大约",
+        "sentenceId": "s12",
+        "note": "approximately用于近似数，不能读成精确数或最低值。"
+      },
+      {
+        "text": "afterwards",
+        "lemma": "afterwards",
+        "zh": "此后",
+        "sentenceId": "s21",
+        "note": "afterwards指咨询回应期之后，随后公布摘要及拟采取行动。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "brought into force",
+        "zh": "使生效",
+        "sentenceId": "s6",
+        "note": "bring into force用于法律或规定正式生效，本文强调尚未如此。"
+      },
+      {
+        "text": "on behalf of",
+        "zh": "代表",
+        "sentenceId": "s20",
+        "note": "区分个人观点与代表组织提交的意见。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "when…; when…并列对照两个方向；can保留条件，而非断言每次必然变化。"
+      },
+      {
+        "sentenceId": "s19",
+        "note": "not a report of区分事前预测与事后观察，避免把期待写成事实。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Should library payments focus more on borrowing frequency or support for less-read creators?",
+        "zh": "图书馆借阅报酬应更重视借阅频次，还是支持较少被阅读的创作者？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "A higher rate does not necessarily mean…",
+        "zh": "较高的费率不一定意味着……",
+        "note": "可复用教学表达，不是原文引语。"
+      }
+    ]
+  }
+}

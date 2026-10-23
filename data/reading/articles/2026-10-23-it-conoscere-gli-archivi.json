@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-it-conoscere-gli-archivi",
+  "storyId": "dga-molise-archivi-tutela-2026-10-22",
+  "lang": "it",
+  "date": "2026-10-23",
+  "title": "Conoscere i documenti, proteggere la memoria",
+  "titleZh": "了解文献，保护记忆",
+  "summaryZh": "莫利塞的一场公开活动公告，把地方档案调查、资料分析和文化遗产保护联系起来。",
+  "level": "A2",
+  "levelReason": "编辑估计：具体地点、人物和活动目的；以短句和常见名词为主，过去时说明公告安排，专业词配中文释义。",
+  "category": "culture",
+  "topics": [
+    "地方档案",
+    "文化保护"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "SAB Abruzzo e Molise | \"Conoscere per tutelare\": archivi e biblioteche dei Comuni del Molise",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=374fb4ac723da7ad2dd53231508cc4e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2792",
+    "publishedAt": "2026-10-22",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：Ministero della Cultura — Direzione generale Archivi（机构署名，未列个人文字作者）。原题、日期和链接见来源；Dimenticato依据CC BY 3.0进行意大利语分级改写、中文翻译与原创教学补充，采用同一许可，不表示原机构认可。",
+  "adaptation": "2026-10-23整理。仅改写机构文字，不使用图片、标志、附件中的第三方作品或直接引语。原文日期不等于事件或统计发生日期；活动公告不作为实际举行的核验。中文释义、口语讨论与练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 22 ottobre 2026, il sito della Direzione generale Archivi ha presentato un incontro a Campobasso, nel Molise.",
+      "zh": "2026年10月22日，档案总局网站介绍了一场在莫利塞大区坎波巴索举办的交流活动。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Il titolo era Conoscere per tutelare: il tema erano gli archivi e le biblioteche dei Comuni della regione.",
+      "zh": "活动题为“了解才能保护”，主题是该大区各市镇的档案馆和图书馆。",
+      "glosses": [
+        {
+          "surface": "biblioteche",
+          "lemma": "biblioteca",
+          "zh": "图书馆",
+          "note": "阴性复数；单数biblioteca。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "L’annuncio indicava le 17:30 e la sala convegni della Camera di Commercio, in Piazza della Vittoria.",
+      "zh": "公告列出的时间为17点30分，地点是胜利广场商会的会议厅。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "L’ingresso era libero e l’incontro era aperto anche alle persone interessate alla memoria del territorio.",
+      "zh": "活动免费入场，也向对地方记忆感兴趣的人开放。",
+      "glosses": [
+        {
+          "surface": "libero",
+          "lemma": "libero",
+          "zh": "免费的；自由开放的",
+          "note": "阳性单数，与ingresso一致；ingresso libero表示可免费入场。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Gli organizzatori volevano presentare i risultati del monitoraggio degli archivi comunali e discutere i dati raccolti.",
+      "zh": "组织者希望介绍对市镇档案进行调查的结果，并讨论收集到的数据。",
+      "glosses": [
+        {
+          "surface": "raccolti",
+          "lemma": "raccogliere",
+          "zh": "收集到的",
+          "note": "过去分词阳性复数，与dati一致。"
+        },
+        {
+          "surface": "monitoraggio",
+          "lemma": "monitoraggio",
+          "zh": "监测；调查跟踪",
+          "note": "阳性单数名词；这里指持续了解档案保存状况。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Per questo, il programma riuniva amministrazioni, professionisti del settore e cittadini, non soltanto esperti di libri antichi.",
+      "zh": "因此，活动安排汇集地方行政部门、行业人员和市民，而不只是古籍专家。",
+      "glosses": [
+        {
+          "surface": "cittadini",
+          "lemma": "cittadino",
+          "zh": "市民",
+          "note": "阳性复数名词，指公众参与者。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Era previsto anche un intervento dei Carabinieri dedicato alla protezione del patrimonio culturale e ai loro compiti.",
+      "zh": "安排中还包括宪兵的一次报告，介绍文化遗产保护及其职责。",
+      "glosses": [
+        {
+          "surface": "compiti",
+          "lemma": "compito",
+          "zh": "职责",
+          "note": "阳性复数，在这里不是学校作业。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Un’altra parte del programma presentava il lavoro della Soprintendenza archivistica e bibliografica dell’Abruzzo e del Molise.",
+      "zh": "另一部分介绍阿布鲁佐与莫利塞档案及图书文献监管机构的工作。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "La notizia descriveva quindi un’occasione per conoscere meglio le raccolte locali e confrontare il lavoro delle diverse istituzioni.",
+      "zh": "因此，这则消息介绍了一次更好地了解地方馆藏、交流不同机构工作的机会。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "biblioteche",
+        "lemma": "biblioteca",
+        "zh": "图书馆",
+        "sentenceId": "s2",
+        "note": "阴性复数；单数biblioteca。"
+      },
+      {
+        "text": "libero",
+        "lemma": "libero",
+        "zh": "免费的；自由开放的",
+        "sentenceId": "s4",
+        "note": "阳性单数，与ingresso一致；ingresso libero表示可免费入场。"
+      },
+      {
+        "text": "raccolti",
+        "lemma": "raccogliere",
+        "zh": "收集到的",
+        "sentenceId": "s5",
+        "note": "过去分词阳性复数，与dati一致。"
+      },
+      {
+        "text": "cittadini",
+        "lemma": "cittadino",
+        "zh": "市民",
+        "sentenceId": "s6",
+        "note": "阳性复数名词，指公众参与者。"
+      },
+      {
+        "text": "compiti",
+        "lemma": "compito",
+        "zh": "职责",
+        "sentenceId": "s7",
+        "note": "阳性复数，在这里不是学校作业。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "discutere i dati",
+        "zh": "讨论数据",
+        "sentenceId": "s5",
+        "note": "discutere可直接接宾语。"
+      },
+      {
+        "text": "conoscere meglio",
+        "zh": "更好地了解",
+        "sentenceId": "s9",
+        "note": "meglio修饰动词conoscere。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "non soltanto说明参与者不局限于一个群体。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali documenti della tua città vorresti conoscere meglio?",
+        "zh": "你想进一步了解家乡的哪些文献？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mi interessa conoscere meglio…",
+        "zh": "我想更好地了解……",
+        "note": "后接名词或具体主题。"
+      }
+    ]
+  }
+}

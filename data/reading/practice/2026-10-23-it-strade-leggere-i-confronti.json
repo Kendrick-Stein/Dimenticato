@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-it-strade-leggere-i-confronti",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 86,
+      "answer": "lesioni",
+      "options": [
+        "prenotazioni",
+        "lesioni",
+        "riparazioni",
+        "assicurazioni"
+      ],
+      "explanation": "lesioni表示人员伤害，阴性复数；范围是造成人员伤害的事故。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 76,
+      "answer": "ridurre",
+      "options": [
+        "registrare",
+        "dividere",
+        "ridurre",
+        "confrontare"
+      ],
+      "explanation": "ridurre表示减少，punta a后接不定式；目标是降低50%，不是只记录或比较。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 153,
+      "answer": "stabili",
+      "options": [
+        "crescenti",
+        "assenti",
+        "diversi",
+        "stabili"
+      ],
+      "explanation": "stabili是stabile的复数，rimasti stabili表示数量保持不变。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s13",
+      "start": 9,
+      "answer": "indicatore",
+      "options": [
+        "indicatore",
+        "abitante",
+        "conducente",
+        "veicolo"
+      ],
+      "explanation": "indicatore是指标，阳性单数；这里引出事故死亡指数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s15",
+      "start": 10,
+      "answer": "denominatore",
+      "options": [
+        "risultato",
+        "denominatore",
+        "periodo",
+        "territorio"
+      ],
+      "explanation": "denominatore表示分母，指该比率以事故数作为计算基础。"
+    }
+  ]
+}

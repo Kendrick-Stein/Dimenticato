@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-de-schlaf-im-wochenverlauf",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 72,
+      "answer": "erhoben",
+      "options": [
+        "erhoben",
+        "verkauft",
+        "repariert",
+        "verpackt"
+      ],
+      "explanation": "信息是在电话调查中收集的，故用erhoben；与wurden构成过去时被动态。其他选项分别表示出售、修理、打包，不符合调查语境。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 96,
+      "answer": "unterscheiden",
+      "options": [
+        "bestellen",
+        "unterscheiden",
+        "bezahlen",
+        "einpacken"
+      ],
+      "explanation": "zwischen A und B unterscheiden表示区分两类时间；sollten后是不定式。其余动作与区分平日、周末的句意不符。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 36,
+      "answer": "Schlafdauer",
+      "options": [
+        "Telefonnummer",
+        "Wohnadresse",
+        "Schlafdauer",
+        "Kleidergröße"
+      ],
+      "explanation": "以七小时为界的是睡眠时长Schlafdauer，不是电话号码、地址或衣服尺码；eine后的名词保持阴性单数。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 77,
+      "answer": "Messung",
+      "options": [
+        "Reise",
+        "Rechnung",
+        "Erzählung",
+        "Messung"
+      ],
+      "explanation": "本句对比自报信息和仪器测量，故为Messung；einer后为阴性第三格单数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s15",
+      "start": 109,
+      "answer": "ersetzen",
+      "options": [
+        "ersetzen",
+        "einladen",
+        "auspacken",
+        "bezahlen"
+      ],
+      "explanation": "周末更长的睡眠不能完全替代规律充足的睡眠，故为ersetzen；情态动词kann要求不定式。"
+    }
+  ]
+}

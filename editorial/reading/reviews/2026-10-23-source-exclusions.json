@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-23",
+  "german": [
+    {
+      "url": "https://open-educational-resources.de/oer-zu-halloween-kostenlose-materialien-und-lernideen-fuer-den-unterricht/",
+      "title": "OER zu Halloween: Kostenlose Materialien und Lernideen für den Unterricht",
+      "checkedAt": "2026-10-23",
+      "status": "hold-not-cleared",
+      "reason": "Direct official HTML returned200 and CC BY4 text attribution to AngelaKarnoll, but article tail contains extensive unrelated gambling-link terms; displayed dates20Oct2026publication and28Sep2026update require integrity/date review. Search snapshot and liveweb retrieval differ (404 vs direct200). Do not infer confirmed compromise; no content adapted, no external gambling links followed."
+    },
+    {
+      "url": "https://open-educational-resources.de/oerinfo-fachtag-2026-und-die-knoer-tagung-2026/",
+      "title": "OERinfo-Fachtag2026 und KNOER-Tagung",
+      "checkedAt": "2026-10-23",
+      "status": "archive-only",
+      "reason": "Originalpublication21May2026;16Oct is update. FutureNovember event does not reset article age. Not dailynews filler."
+    },
+    {
+      "url": "https://irights.info/artikel/urheberrecht-ueberblick-der-beitraege/32896",
+      "title": "OER und das Urheberrecht – ein Überblick",
+      "checkedAt": "2026-10-23",
+      "status": "hold-not-cleared",
+      "reason": "26Aug2026 republication signedJensCrueger CC BY4, but explicitly firstpublishedOERinfo. Original URL returned503/timeout, originaldate notconfirmed. Do not treat republicationdate as original news."
+    },
+    {
+      "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/518340/alle-beitraege-der-werkstatt/",
+      "checkedAt": "2026-10-23",
+      "status": "discovery-only",
+      "reason": "Latest surfaced articles alreadypublished or older; archive modification21July not sourcearticle publication. No new independentlycleared text selected."
+    },
+    {
+      "url": "https://edoc.rki.de/handle/176904/13844",
+      "title": "Prevalence and trends in self-reported hearing difficulties among adults in Germany",
+      "checkedAt": "2026-10-23",
+      "status": "discovery-only",
+      "reason": "Englishitem19Aug2026 found; Germanoriginal and its separate rights/provenance notverified, do not translateEnglish intoGerman to fill nativearticle slot."
+    }
+  ],
+  "english": {
+    "date": "2026-10-23",
+    "language": "en",
+    "checks": [
+      {
+        "url": "https://www.gov.uk/government/news/seven-people-charged-by-cps-after-nfcu-investigation-into-animal-cruelty-and-unfit-meat",
+        "decision": "not-selected",
+        "reason": "正在进行的具名刑事案件，避免日常学习材料不必要的个人指控；不把起诉当定罪；不转载姓名及第三方引语。"
+      },
+      {
+        "url": "https://www.gov.uk/government/news/major-boost-for-young-people-in-telford-as-youth-hub-opens-to-support-them-towards-work",
+        "decision": "not-selected",
+        "reason": "检索正文摘要营业日期Monday–Saturday与Monday–Friday相互矛盾；且DWP尚不在来源登记。"
+      },
+      {
+        "url": "https://www.gov.uk/government/news/construction-begins-on-20m-torcross-rock-defence-scheme",
+        "decision": "not-selected",
+        "reason": "署名只有Environment Agency，不能假借Defra或NaturalEngland登记匹配；留链接线索，未扩源未改写。"
+      },
+      {
+        "url": "https://www.gov.uk/government/publications/food-standards-agency-september-2026-board-meeting/local-authority-performance-update-food-standards-agency-september-2026-board-meeting",
+        "decision": "not-selected",
+        "reason": "Updated19October不能冒充原发表日；本轮未核原始日期与全文。"
+      }
+    ],
+    "reserveGap": "本轮新发现1条未审核候选；原队列另有干旱、农业资金两条未刊，未形成三篇每天约一周的已审核储备。未以凑数量降低条件。"
+  },
+  "italianReserve": {
+    "asOf": "2026-10-23",
+    "newVerifiedCultureCandidates": 2,
+    "newUnverifiedCultureLeads": 3,
+    "existingUnpublishedCandidatesBeforeSelection": 5,
+    "selectedFromExisting": 1,
+    "remainingExistingReserve": 4,
+    "caution": "Remaining4existing sources plus3newleads are not a full21article cleared weekly reserve. Two existing source pages re-read:Georeal21Oct andSpaceWeather19Oct; remainingtrade/CONIRI require fresh conversion check. No quota padding.",
+    "exclusions": [
+      "Agrigento/Asti/TrafugArte full text unavailable; no publication",
+      "Newly listed future27Oct/November event pages not treated as current-news publication dates"
+    ]
+  }
+}

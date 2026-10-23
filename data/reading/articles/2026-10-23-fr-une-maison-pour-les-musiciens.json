@@ -1,0 +1,302 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-fr-une-maison-pour-les-musiciens",
+  "storyId": "une-maison-pour-les-musiciens-2026-10-20",
+  "lang": "fr",
+  "date": "2026-10-23",
+  "title": "Une maison pour les musiciens et les habitants",
+  "titleZh": "音乐人与居民共同的空间",
+  "summaryZh": "波尔多 Rock School Barbey 的新项目把演出、学习、创作与居民参与联系起来。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：围绕社区音乐场馆，以过去经历、未来计划、原因与并列组织信息，练习关系句和项目描述。",
+  "category": "culture",
+  "topics": [
+    "艺术与日常",
+    "文化参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Nomination de Delphine Tissot à la direction de la Rock School Barbey, scène de musiques actuelles (SMAC) à Bordeaux",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-delphine-tissot-a-la-direction-de-la-rock-school-barbey-scene-de-musiques-actuelles-smac-a-bordeaux",
+    "publishedAt": "2026-10-20",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：法国文化部（Ministère de la Culture，未单列个人作者），原题、原日期与链接见来源。机构文字依 CC BY-SA 3.0 FR 使用；Dimenticato 法语分级改写、中文翻译与教学补充亦按 CC BY-SA 3.0 FR 发布，不代表原机构认可。",
+  "adaptation": "2026-10-23整理，依据2026-10-20原语机构报道，并非当天原文。仅改写机构正文，不使用图片、媒体、第三方引语、附件或外链正文；保留计划与已完成事项的区别。词汇、问题与口语表达为本站教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "À Bordeaux, la Rock School Barbey prépare une nouvelle étape de son histoire avec l’arrivée annoncée de Delphine Tissot à sa direction.",
+      "zh": "在波尔多，随着德尔菲娜·蒂索获宣布将出任负责人，Rock School Barbey 正准备迎来历史上的新阶段。",
+      "glosses": [
+        {
+          "surface": "arrivée",
+          "lemma": "arrivée",
+          "zh": "到任",
+          "note": "此处指负责人的到来，annoncée 表示已宣布但未必已发生。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Selon le communiqué du ministère de la Culture publié le 20 octobre 2026, elle prendra ses fonctions le 1er janvier 2027.",
+      "zh": "根据文化部2026年10月20日发布的公告，她将于2027年1月1日就职。",
+      "glosses": [
+        {
+          "surface": "fonctions",
+          "lemma": "fonction",
+          "zh": "职务",
+          "note": "阴性复数；prendre ses fonctions 表示就职。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Elle succédera à Erix Roux, qui a fondé la structure et l’a dirigée de 1988 à 2026.",
+      "zh": "她将接替创立该机构并于1988年至2026年担任负责人的 Erix Roux。",
+      "glosses": [
+        {
+          "surface": "succédera",
+          "lemma": "succéder",
+          "zh": "将接替",
+          "note": "简单将来时第三人称单数；succéder à quelqu’un。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Depuis 2020, Delphine Tissot dirige L’Inconnue à Talence, après avoir travaillé dans d’autres lieux consacrés à la musique.",
+      "zh": "自2020年起，德尔菲娜·蒂索一直负责塔朗斯的 L’Inconnue，此前她曾在其他音乐机构工作。",
+      "glosses": [
+        {
+          "surface": "dirige",
+          "lemma": "diriger",
+          "zh": "负责、领导",
+          "note": "现在时配 depuis，表示从过去持续到报道时。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Son projet pour Barbey ne concerne pas uniquement les concerts : elle souhaite créer un lieu où les artistes travaillent, expérimentent et se rencontrent.",
+      "zh": "她为 Barbey 提出的项目不只涉及音乐会：她希望打造一个让艺术家工作、试验和交流的场所。",
+      "glosses": [
+        {
+          "surface": "expérimentent",
+          "lemma": "expérimenter",
+          "zh": "尝试、试验",
+          "note": "第三人称复数现在时，主语为 les artistes。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "La programmation restera indépendante et attentive aux artistes locaux, à différentes formes musicales et aux créations qui mélangent les disciplines.",
+      "zh": "节目安排将保持独立，同时关注本地艺术家、不同音乐形式以及跨学科创作。",
+      "glosses": [
+        {
+          "surface": "locaux",
+          "lemma": "local",
+          "zh": "本地的",
+          "note": "阳性复数形容词 local → locaux，与 artistes 一致。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Le rap continuera lui aussi à occuper une place dans cette proposition artistique.",
+      "zh": "说唱也将继续在这一艺术方案中占据一席之地。",
+      "glosses": [
+        {
+          "surface": "occuper",
+          "lemma": "occuper",
+          "zh": "占据",
+          "note": "occuper une place 表示拥有一席之地。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Pour développer ces activités, la future directrice veut renforcer les coopérations avec les autres scènes musicales de la métropole et avec des acteurs éducatifs et sociaux.",
+      "zh": "为开展这些活动，未来的负责人希望加强与都会区其他音乐场馆以及教育和社会领域参与者的合作。",
+      "glosses": [
+        {
+          "surface": "coopérations",
+          "lemma": "coopération",
+          "zh": "合作",
+          "note": "阴性复数，指与多个机构的合作关系。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "L’enseignement et l’accompagnement resteront essentiels, depuis la pratique en amateur jusqu’à la construction d’un parcours professionnel.",
+      "zh": "从业余实践到建立职业发展道路，教学与支持仍将是核心。",
+      "glosses": [
+        {
+          "surface": "amateur",
+          "lemma": "amateur",
+          "zh": "业余爱好者",
+          "note": "en amateur 表示以业余方式参与。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Les musiciens pourront trouver des cours, des conseils, des espaces de répétition et des résidences pour faire avancer leurs projets.",
+      "zh": "音乐人将能获得课程、建议、排练空间和驻留机会，以推进自己的项目。",
+      "glosses": [
+        {
+          "surface": "répétition",
+          "lemma": "répétition",
+          "zh": "排练",
+          "note": "阴性单数；espaces de répétition 指排练空间。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Les résidences longues auront une place plus importante et pourront accueillir des créateurs venant d’autres disciplines que la musique.",
+      "zh": "长期驻留将获得更重要的位置，也可以接待来自音乐之外其他学科的创作者。",
+      "glosses": [
+        {
+          "surface": "résidences",
+          "lemma": "résidence",
+          "zh": "艺术驻留",
+          "note": "此处为创作者在场馆工作和创作的安排，不是普通住房。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Le projet de rénovation et d’extension du bâtiment doit aussi permettre de mieux accueillir les habitants et de leur offrir des espaces de rencontre.",
+      "zh": "建筑翻修和扩建项目也旨在更好地接待居民，并为他们提供交流空间。",
+      "glosses": [
+        {
+          "surface": "rénovation",
+          "lemma": "rénovation",
+          "zh": "翻修",
+          "note": "阴性名词；与 extension 扩建相区别。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Toutes les générations sont concernées, mais les jeunes seront particulièrement invités à participer à la vie du lieu.",
+      "zh": "项目面向所有年龄段，但尤其会邀请年轻人参与场馆生活。",
+      "glosses": [
+        {
+          "surface": "générations",
+          "lemma": "génération",
+          "zh": "年龄代际",
+          "note": "toutes les générations 表示各年龄段。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Ils pourront notamment prendre part à des comités de programmation, tandis que des projets artistiques iront à la rencontre des quartiers.",
+      "zh": "他们尤其可以参与节目策划委员会，而艺术项目也将走进社区。",
+      "glosses": [
+        {
+          "surface": "quartiers",
+          "lemma": "quartier",
+          "zh": "社区",
+          "note": "阳性复数；des quartiers 指城市中的各个社区。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Ces annonces décrivent des orientations pour les années à venir, et non des résultats déjà obtenus.",
+      "zh": "这些公告描述的是未来数年的方向，而不是已经取得的成果。",
+      "glosses": [
+        {
+          "surface": "orientations",
+          "lemma": "orientation",
+          "zh": "发展方向",
+          "note": "此处不是具体已完成的结果。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "fonctions",
+        "lemma": "fonction",
+        "zh": "职务",
+        "sentenceId": "s2",
+        "note": "阴性复数；prendre ses fonctions 表示就职。"
+      },
+      {
+        "text": "locaux",
+        "lemma": "local",
+        "zh": "本地的",
+        "sentenceId": "s6",
+        "note": "阳性复数形容词 local → locaux，与 artistes 一致。"
+      },
+      {
+        "text": "amateur",
+        "lemma": "amateur",
+        "zh": "业余爱好者",
+        "sentenceId": "s9",
+        "note": "en amateur 表示以业余方式参与。"
+      },
+      {
+        "text": "répétition",
+        "lemma": "répétition",
+        "zh": "排练",
+        "sentenceId": "s10",
+        "note": "阴性单数；espaces de répétition 指排练空间。"
+      },
+      {
+        "text": "quartiers",
+        "lemma": "quartier",
+        "zh": "社区",
+        "sentenceId": "s14",
+        "note": "阳性复数；des quartiers 指城市中的各个社区。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s5",
+        "text": "ne concerne pas uniquement",
+        "zh": "不只涉及",
+        "note": "ne…pas uniquement 不否定后项，而是扩大范围。"
+      },
+      {
+        "sentenceId": "s14",
+        "text": "prendre part à",
+        "zh": "参与",
+        "note": "后接名词，表达参与一项活动。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s15",
+        "note": "et non 对照计划与成果，阅读项目公告时尤其有用。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Comment un lieu musical peut-il associer les habitants à ses activités ?",
+        "zh": "音乐场馆怎样让居民参与活动？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "On pourrait inviter les habitants à proposer des idées.",
+        "zh": "可以邀请居民提出想法。",
+        "note": "可替换后面的内容，表达自己的看法；教学补充。"
+      }
+    ]
+  }
+}

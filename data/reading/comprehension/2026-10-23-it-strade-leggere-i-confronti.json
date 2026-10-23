@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-it-strade-leggere-i-confronti",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale sintesi rispecchia il quadro descritto nel testo?",
+      "options": [
+        "Il calo nazionale degli incidenti si accompagna a più morti e a differenze fra province.",
+        "I morti calano a livello nazionale, ma aumentano gli incidenti e gli andamenti restano diversi.",
+        "Morti e feriti calano insieme a livello nazionale, mentre gli incidenti aumentano nelle province.",
+        "Il dimezzamento nazionale dei morti è raggiunto, ma alcuni utenti registrano un aumento."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s4",
+        "s7",
+        "s8",
+        "s16"
+      ],
+      "explanationZh": "综合全文：全国死亡人数比2024年下降，但事故与伤者增加；各省和不同道路使用者的趋势并不一致。第一项颠倒事故与死亡方向，第三项误称伤者下降，第四项误称全国已达减半目标。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "A che cosa si riferisce l’aggiornamento pubblicato nell’ottobre 2026?",
+      "options": [
+        "Agli incidenti avvenuti tra luglio e ottobre 2026.",
+        "Alle previsioni provinciali degli incidenti del 2030.",
+        "Alle sole vittime registrate nelle grandi città nel 2019.",
+        "Agli incidenti del 2025, con un dettaglio territoriale maggiore."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s1",
+        "s2"
+      ],
+      "explanationZh": "发布于2026年10月的更新仍针对2025年事故，增加省级信息与道路细分，并非2026年事故或未来预测。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Che cosa si può affermare sulle sette province elencate?",
+      "options": [
+        "Hanno raggiunto il dimezzamento dei morti rispetto al 2019.",
+        "Hanno dimezzato sia i morti sia i feriti gravi rispetto al 2019.",
+        "Hanno registrato i maggiori cali assoluti dei morti sul 2024.",
+        "Hanno tutte lo stesso indice di mortalità per mille incidenti."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s6",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第9句支持死亡人数减半；第10句明确不能据此推出重伤目标也达成。最近绝对降幅及事故死亡指数是其他比较。"
+    },
+    {
+      "id": "q4",
+      "kind": "cause",
+      "prompt": "Perché l’indice di mortalità citato non è un tasso per abitante?",
+      "options": [
+        "Perché utilizza soltanto le vittime del 2019.",
+        "Perché esclude dal confronto le province più grandi.",
+        "Perché rapporta i morti al numero degli incidenti.",
+        "Perché confronta i feriti gravi con quelli lievi."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s13",
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "指数分母是事故数，单位为每千起事故死亡人数，并非人口，所以不能当作按居民计算的比率。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Come va interpretato il dato di Torino: +17 rispetto al 2024?",
+      "options": [
+        "Come 17 incidenti in più ogni mille abitanti.",
+        "Come un aumento del 17% dei decessi.",
+        "Come 17 feriti in più rispetto alla media nazionale.",
+        "Come 17 decessi in più in valore assoluto."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s12"
+      ],
+      "explanationZh": "第12句给出绝对人数变化，Torino增加17例死亡；不是百分比、受伤人数或按人口计算的事故率。"
+    }
+  ]
+}

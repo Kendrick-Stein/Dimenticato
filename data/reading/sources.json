@@ -289,7 +289,8 @@
     },
     {
       "allowedUrlPrefixes": [
-        "https://www.gov.uk/government/news/"
+        "https://www.gov.uk/government/news/",
+        "https://www.gov.uk/government/consultations/consultation-on-the-proposed-rate-per-loan-for-the-2025-to-2026-public-lending-right-scheme-year/"
       ],
       "languages": [
         "en"
@@ -306,7 +307,8 @@
       "url": "https://www.gov.uk/government/organisations/department-for-digital-culture-media-and-sport",
       "requiredPublisherNames": [
         "Department for Digital, Culture, Media and Sport"
-      ]
+      ],
+      "checkedAt": "2026-10-23"
     },
     {
       "allowedUrlPrefixes": [

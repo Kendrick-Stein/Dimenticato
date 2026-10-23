@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-it-archivi-e-storia-naturale",
+  "storyId": "dga-napoli-paradosso-avvoltoio-2026-10-11",
+  "lang": "it",
+  "date": "2026-10-23",
+  "title": "Quando le carte incontrano la storia naturale",
+  "titleZh": "当档案遇见自然史",
+  "summaryZh": "那不勒斯的一份活动公告展示了档案研究如何连接动物学、博物馆馆藏与历史文献。",
+  "level": "B1",
+  "levelReason": "编辑估计：连续介绍活动目的、不同机构和研究关系；使用关系从句、过去时与原因解释，档案学词汇配中文辅助。",
+  "category": "culture",
+  "topics": [
+    "档案研究",
+    "自然史"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "Napoli | Apertura straordinaria | “Il paradosso dell’avvoltoio”, un viaggio tra storia, zoologia e ricerca",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=73baa62430b1303a1e2df08dd08c5438&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2756",
+    "publishedAt": "2026-10-11",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：Ministero della Cultura — Direzione generale Archivi（机构署名，未列个人文字作者）。原题、日期和链接见来源；Dimenticato依据CC BY 3.0进行意大利语分级改写、中文翻译与原创教学补充，采用同一许可，不表示原机构认可。",
+  "adaptation": "2026-10-23整理。仅改写机构文字，不使用图片、标志、附件中的第三方作品或直接引语。原文日期不等于事件或统计发生日期；活动公告不作为实际举行的核验。中文释义、口语讨论与练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Una carta conservata in archivio può interessare non soltanto gli storici, ma anche chi studia gli animali e la natura.",
+      "zh": "保存在档案馆里的一份文献，不仅可能让历史学家感兴趣，也可能吸引研究动物和自然的人。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Questo collegamento era al centro di un appuntamento annunciato dall’Archivio di Stato di Napoli per domenica 11 ottobre 2026, alle ore 10:30.",
+      "zh": "这一联系是一场活动的核心，该活动由那不勒斯国家档案馆宣布于2026年10月11日星期日10点30分举行。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "L’apertura straordinaria faceva parte di A carte scoperte, una rassegna dedicata alle ricerche svolte sui documenti e sulle testimonianze custoditi dall’istituto.",
+      "zh": "此次特别开放属于“A carte scoperte”系列活动，介绍围绕该馆保存的文献和历史见证开展的研究。",
+      "glosses": [
+        {
+          "surface": "custoditi",
+          "lemma": "custodire",
+          "zh": "保存的",
+          "note": "过去分词阳性复数，指documenti和testimonianze这一组合。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Il programma prevedeva la partecipazione del professor Ottavio Soppelsa, con un intervento dal titolo Il paradosso dell’avvoltoio.",
+      "zh": "活动安排包括Ottavio Soppelsa教授参与，报告题为“秃鹫的悖论”。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Il suo percorso metteva insieme storia, zoologia e analisi delle fonti documentarie per ricostruire alcune fasi della storia di questa specie animale.",
+      "zh": "他的研究结合历史、动物学与文献资料分析，以重建这种动物的部分历史。",
+      "glosses": [
+        {
+          "surface": "ricostruire",
+          "lemma": "ricostruire",
+          "zh": "重建；还原",
+          "note": "不定式，per后表示目的。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "La notizia non spiegava nei dettagli i risultati della ricerca: presentava invece il tema e il senso dell’incontro con il pubblico.",
+      "zh": "消息没有详细说明研究结果，而是介绍了主题及此次公众交流的意义。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Il punto interessante era il ruolo delle tracce scritte, capaci di contribuire a domande che sembrano lontane dalla storia tradizionale.",
+      "zh": "有趣之处在于文字线索的作用：它们能够帮助探讨那些看似远离传统历史研究的问题。",
+      "glosses": [
+        {
+          "surface": "tracce",
+          "lemma": "traccia",
+          "zh": "线索",
+          "note": "阴性复数，tracce scritte指书面线索。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "L’iniziativa prevedeva anche un confronto tra istituzioni diverse, con rappresentanti dell’Archivio, del Museo di Zoologia di Napoli e del Museo Filangieri.",
+      "zh": "活动还安排了不同机构之间的交流，参与者来自档案馆、那不勒斯动物学博物馆与Filangieri博物馆。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Le collezioni di questi luoghi non sono uguali, ma possono offrire materiali utili a una ricerca comune e a nuove interpretazioni.",
+      "zh": "这些场所的馆藏并不相同，但可以为共同研究及新的解读提供有用材料。",
+      "glosses": [
+        {
+          "surface": "collezioni",
+          "lemma": "collezione",
+          "zh": "馆藏",
+          "note": "阴性复数，指博物馆等机构的收藏。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Per l’occasione, l’annuncio prometteva inoltre un’esposizione di materiali e frammenti riconducibili alla perduta Cancelleria angioina, presentati per la prima volta.",
+      "zh": "公告还预告了一场展示，首次呈现可追溯到已散失的安茹王朝文书机构的材料与残片。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Accanto a questi documenti erano previsti oggetti provenienti dai due musei, così da avvicinare testimonianze conservate in contesti differenti.",
+      "zh": "这些文献旁还计划展出来自上述两家博物馆的物件，将保存在不同环境中的历史见证联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "La rassegna voleva valorizzare sia il patrimonio dei depositi sia il lavoro degli studiosi che lo interrogano, andando oltre la semplice presentazione di oggetti.",
+      "zh": "这一系列活动希望同时凸显库房中的遗产与学者对其开展研究的工作，而不仅是展示物件。",
+      "glosses": [
+        {
+          "surface": "studiosi",
+          "lemma": "studioso",
+          "zh": "研究者；学者",
+          "note": "阳性复数名词，在这里指研究档案的人。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Si trattava dunque di un invito a osservare gli archivi come luoghi di ricerca aperti al dialogo con altre discipline.",
+      "zh": "因此，这也是邀请人们把档案馆视为能够与其他学科对话的研究场所。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "L’iniziativa era a cura degli archivisti dell’Archivio di Stato di Napoli e prevedeva la partecipazione del pubblico presso l’istituto, in occasione dell’apertura straordinaria indicata nel programma.",
+      "zh": "活动由那不勒斯国家档案馆的档案工作者策划，计划在公告所列的特别开放期间于馆内向公众开展。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "custoditi",
+        "lemma": "custodire",
+        "zh": "保存的",
+        "sentenceId": "s3",
+        "note": "过去分词阳性复数，指documenti和testimonianze这一组合。"
+      },
+      {
+        "text": "ricostruire",
+        "lemma": "ricostruire",
+        "zh": "重建；还原",
+        "sentenceId": "s5",
+        "note": "不定式，per后表示目的。"
+      },
+      {
+        "text": "tracce",
+        "lemma": "traccia",
+        "zh": "线索",
+        "sentenceId": "s7",
+        "note": "阴性复数，tracce scritte指书面线索。"
+      },
+      {
+        "text": "collezioni",
+        "lemma": "collezione",
+        "zh": "馆藏",
+        "sentenceId": "s9",
+        "note": "阴性复数，指博物馆等机构的收藏。"
+      },
+      {
+        "text": "studiosi",
+        "lemma": "studioso",
+        "zh": "研究者；学者",
+        "sentenceId": "s12",
+        "note": "阳性复数名词，在这里指研究档案的人。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "non soltanto",
+        "zh": "不仅",
+        "sentenceId": "s1",
+        "note": "与ma anche配合，连接两类对象。"
+      },
+      {
+        "text": "andando oltre",
+        "zh": "超越；不局限于",
+        "sentenceId": "s12",
+        "note": "动名词结构，说明研究的深入方向。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "non… invece…形成对比，区分消息交代了什么与没有交代什么。"
+      },
+      {
+        "sentenceId": "s12",
+        "note": "sia… sia…表示两者都重视，而不是二选一。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quale museo vorresti mettere in dialogo con un archivio, e perché?",
+        "zh": "你想让哪类博物馆与档案馆开展对话，为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Questi materiali possono contribuire a…",
+        "zh": "这些材料能够有助于……",
+        "note": "后接名词或不定式，表达材料的用途。"
+      }
+    ]
+  }
+}

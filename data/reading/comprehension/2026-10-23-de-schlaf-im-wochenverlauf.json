@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-de-schlaf-im-wochenverlauf",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welche Zusammenfassung passt am besten zum Bericht?",
+      "promptZh": "哪个概括最符合这份报告？",
+      "options": [
+        "Er vergleicht Schlafzeiten im Wochenverlauf und erläutert Grenzen der Daten.",
+        "Er vergleicht Messgeräte und erklärt deren Einsatz in der medizinischen Behandlung.",
+        "Er untersucht die Schlafqualität und erklärt Unterschiede zwischen Wohnungen.",
+        "Er beschreibt Schlafprobleme im Ruhestand und bewertet verschiedene Arbeitsmodelle."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s7",
+        "s10",
+        "s11",
+        "s13"
+      ],
+      "explanationZh": "正文比较平日与周末的睡眠时长，同时说明自报数据和时长指标的局限；没有比较测量设备疗效，也没有测量睡眠质量或评估工作模式。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Welche Gruppe unterschied sich beim Vergleich von Wochentagen und Wochenende von den jüngeren Erwachsenen?",
+      "promptZh": "在平日与周末的比较中，哪个群体与年轻成年人的表现不同？",
+      "options": [
+        "Männer zwischen 45 und 64 Jahren.",
+        "Erwachsene mit wechselnden Arbeitsschichten.",
+        "Menschen im Alter von mindestens 65 Jahren.",
+        "Erwachsene zwischen 18 und 29 Jahren."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "s9说年轻成人周末短睡眠比例更低，s10则说65岁及以上群体未显示统计上确认的差异；45至64岁男性的数据强调平日短睡眠比例高，轮班工作在这里不是一个给出周末比较结果的群体。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Warum schlagen die Autorinnen vor, andere Möglichkeiten der Messung zu prüfen?",
+      "promptZh": "作者们为什么建议考察其他测量方式？",
+      "options": [
+        "Weil die Befragten nur Angaben zum Wochenende machen sollten.",
+        "Weil die Daten von den Angaben der Teilnehmenden abhängen.",
+        "Weil Angaben zur Dauer bis zum Einschlafen nicht berücksichtigt wurden.",
+        "Weil die Angaben zu Wochenenden erst im Herbst 2026 erhoben wurden."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "s11与s12直接构成原因关系：当前结果依赖参与者自报，因此作者建议考察其他测量方法。s4—s5说明调查包含入睡所需时长、平日和周末信息；s3说明采集发生在2023—2024年。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Welche zusätzliche Frage würde eine im Text genannte Grenze der Auswertung aufgreifen?",
+      "promptZh": "哪个补充问题可以针对文中提到的一项分析局限？",
+      "options": [
+        "Wie unterscheiden sich die berichteten Aufwachzeiten zwischen Wochentagen und Wochenende?",
+        "Wie hoch ist der Anteil kurzer Nächte bei Männern zwischen 45 und 64 Jahren?",
+        "Wie häufig wachen Menschen während einer Nacht auf, statt durchzuschlafen?",
+        "Wie viele Stunden gelten in dieser Untersuchung als Grenze für eine kurze Nacht?"
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4",
+        "s5",
+        "s8",
+        "s13"
+      ],
+      "explanationZh": "s13说仅凭时长无法得知夜间醒来频率，因此补充询问这一点可以弥补文中明确提到的信息缺口。晨间醒来时间和平日/周末已在调查中采集；另外两项是文中已有的比例或定义。这里问的是补充研究问题，不推断任何个体的病情。"
+    }
+  ]
+}

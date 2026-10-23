@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-fr-deux-tableaux-avant-le-retour",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 5,
+      "answer": "tableaux",
+      "options": [
+        "tableaux",
+        "billets",
+        "jardins",
+        "livres"
+      ],
+      "explanation": "对应中文“画作”，须还原原文 tableaux。阳性复数，单数 tableau；deux 后用复数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 23,
+      "answer": "volées",
+      "options": [
+        "vendues",
+        "volées",
+        "louées",
+        "achetées"
+      ],
+      "explanation": "对应中文“被盗的”，须还原原文 volées。过去分词阴性复数，与 Les œuvres 一致；avaient été 表示先前发生的被动事件。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 22,
+      "answer": "police",
+      "options": [
+        "musique",
+        "cuisine",
+        "peinture",
+        "police"
+      ],
+      "explanation": "对应中文“警察”，须还原原文 police。阴性名词；services de police 指警察部门。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 26,
+      "answer": "examiner",
+      "options": [
+        "examiner",
+        "exposer",
+        "vendre",
+        "dessiner"
+      ],
+      "explanation": "对应中文“检查”，须还原原文 examiner。不定式，接在 vont 后组成最近将来时。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 50,
+      "answer": "nécessaire",
+      "options": [
+        "publique",
+        "ancienne",
+        "nécessaire",
+        "locale"
+      ],
+      "explanation": "对应中文“必要的”，须还原原文 nécessaire。形容词单数，与 elle 所指的 restauration 一致。"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-fr-deux-tableaux-avant-le-retour",
+  "storyId": "deux-tableaux-avant-le-retour-2026-10-12",
+  "lang": "fr",
+  "date": "2026-10-23",
+  "title": "Deux tableaux avant le retour",
+  "titleZh": "两幅画重返展厅之前",
+  "summaryZh": "两幅失窃的雷诺阿画作已被找回。接下来，专家需要先检查它们，再考虑是否修复。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体画作与送检过程，短句、常用现在时及复合过去时，保留必要被动表达；每句中文，专业词另释。",
+  "category": "culture",
+  "topics": [
+    "艺术与日常",
+    "文化参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Les deux tableaux de Renoir dérobés au musée de Cagnes-sur-Mer sont transférés au Centre interdisciplinaire de conservation et de restauration du patrimoine de Marseille pour examen avant leur retour au musée",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/les-deux-tableaux-de-renoir-derobes-au-musee-de-cagnes-sur-mer-sont-transferes-au-centre-interdisciplinaire-de-conservation-et-de-restauration-du-p",
+    "publishedAt": "2026-10-12",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：法国文化部（Ministère de la Culture，未单列个人作者），原题、原日期与链接见来源。机构文字依 CC BY-SA 3.0 FR 使用；Dimenticato 法语分级改写、中文翻译与教学补充亦按 CC BY-SA 3.0 FR 发布，不代表原机构认可。",
+  "adaptation": "2026-10-23整理，依据2026-10-12原语机构报道，并非当天原文。仅改写机构正文，不使用图片、媒体、第三方引语、附件或外链正文；保留计划与已完成事项的区别。词汇、问题与口语表达为本站教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Deux tableaux de Pierre-Auguste Renoir ont été retrouvés après un vol au musée de Cagnes-sur-Mer.",
+      "zh": "皮埃尔-奥古斯特·雷诺阿的两幅画在卡涅苏尔梅博物馆失窃后被找回。",
+      "glosses": [
+        {
+          "surface": "tableaux",
+          "lemma": "tableau",
+          "zh": "画作",
+          "note": "阳性复数，单数 tableau；deux 后用复数。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Le ministère de la Culture a annoncé cette nouvelle dans un communiqué du 12 octobre 2026.",
+      "zh": "文化部在2026年10月12日的一份公告中公布了这个消息。",
+      "glosses": [
+        {
+          "surface": "communiqué",
+          "lemma": "communiqué",
+          "zh": "公告",
+          "note": "阳性名词；机构发布的正式消息。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Les œuvres avaient été volées le 8 septembre dans ce musée du sud de la France.",
+      "zh": "这些作品此前于9月8日在这座位于法国南部的博物馆被盗。",
+      "glosses": [
+        {
+          "surface": "volées",
+          "lemma": "voler",
+          "zh": "被盗的",
+          "note": "过去分词阴性复数，与 Les œuvres 一致；avaient été 表示先前发生的被动事件。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Elles portent les titres Portrait de Madame Colonna Romano et Femme au puits.",
+      "zh": "它们的画名是《科隆纳·罗马诺夫人肖像》和《井边的女人》。",
+      "glosses": [
+        {
+          "surface": "titres",
+          "lemma": "titre",
+          "zh": "标题、画名",
+          "note": "阳性复数，此处指两幅作品的名称。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Le musée d’Orsay avait déposé ces deux peintures au musée Renoir de Cagnes-sur-Mer.",
+      "zh": "奥赛博物馆此前将这两幅画寄存于卡涅苏尔梅的雷诺阿博物馆。",
+      "glosses": [
+        {
+          "surface": "déposé",
+          "lemma": "déposer",
+          "zh": "寄存",
+          "note": "avait déposé 为愈过去时；此处不是出售或赠予。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Plusieurs services de police ont participé au travail qui a permis de retrouver les œuvres.",
+      "zh": "多个警察部门参与了促成画作找回的工作。",
+      "glosses": [
+        {
+          "surface": "police",
+          "lemma": "police",
+          "zh": "警察",
+          "note": "阴性名词；services de police 指警察部门。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "La ministre a demandé leur transfert dans un centre spécialisé à Marseille.",
+      "zh": "部长要求把它们送往马赛的一家专业中心。",
+      "glosses": [
+        {
+          "surface": "transfert",
+          "lemma": "transfert",
+          "zh": "转移、运送",
+          "note": "阳性名词，指送往专业中心。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Là, des spécialistes vont examiner les tableaux pour connaître leur état et les protéger.",
+      "zh": "在那里，专家将检查画作，了解其状况并加以保护。",
+      "glosses": [
+        {
+          "surface": "examiner",
+          "lemma": "examiner",
+          "zh": "检查",
+          "note": "不定式，接在 vont 后组成最近将来时。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Une restauration est prévue seulement si elle est nécessaire après cet examen.",
+      "zh": "只有在检查后确认有必要时，才计划进行修复。",
+      "glosses": [
+        {
+          "surface": "nécessaire",
+          "lemma": "nécessaire",
+          "zh": "必要的",
+          "note": "形容词单数，与 elle 所指的 restauration 一致。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Le musée d’Orsay est responsable du suivi scientifique de cette étape.",
+      "zh": "奥赛博物馆负责这一阶段的科学监督。",
+      "glosses": [
+        {
+          "surface": "suivi",
+          "lemma": "suivi",
+          "zh": "跟进监督",
+          "note": "suivi scientifique 指专业层面的监督。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Le retour au musée de Cagnes-sur-Mer doit donc venir après ces vérifications.",
+      "zh": "因此，画作返回卡涅苏尔梅博物馆，应在这些检查之后进行。",
+      "glosses": [
+        {
+          "surface": "vérifications",
+          "lemma": "vérification",
+          "zh": "检查核实",
+          "note": "阴性复数；此处指返回展厅前的检查。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Retrouver une œuvre et préparer son retour dans les salles sont deux étapes différentes.",
+      "zh": "找回一件作品和为它重返展厅作准备，是两个不同的阶段。",
+      "glosses": [
+        {
+          "surface": "étapes",
+          "lemma": "étape",
+          "zh": "阶段",
+          "note": "阴性复数，deux étapes 指两个不同环节。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "tableaux",
+        "lemma": "tableau",
+        "zh": "画作",
+        "sentenceId": "s1",
+        "note": "阳性复数，单数 tableau；deux 后用复数。"
+      },
+      {
+        "text": "volées",
+        "lemma": "voler",
+        "zh": "被盗的",
+        "sentenceId": "s3",
+        "note": "过去分词阴性复数，与 Les œuvres 一致；avaient été 表示先前发生的被动事件。"
+      },
+      {
+        "text": "police",
+        "lemma": "police",
+        "zh": "警察",
+        "sentenceId": "s6",
+        "note": "阴性名词；services de police 指警察部门。"
+      },
+      {
+        "text": "examiner",
+        "lemma": "examiner",
+        "zh": "检查",
+        "sentenceId": "s8",
+        "note": "不定式，接在 vont 后组成最近将来时。"
+      },
+      {
+        "text": "nécessaire",
+        "lemma": "nécessaire",
+        "zh": "必要的",
+        "sentenceId": "s9",
+        "note": "形容词单数，与 elle 所指的 restauration 一致。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s1",
+        "text": "après un vol",
+        "zh": "在一次盗窃之后",
+        "note": "après + 名词表示某事之后。"
+      },
+      {
+        "sentenceId": "s8",
+        "text": "pour connaître leur état",
+        "zh": "为了了解它们的状况",
+        "note": "pour + 不定式说明目的。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s9",
+        "note": "seulement si 表示“仅当……时”，注意修复是有条件的，不是已经完成。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pourquoi faut-il prendre soin d’un tableau avant de l’exposer ?",
+        "zh": "为什么展出画作前要仔细照料它？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Il faut d’abord vérifier son état.",
+        "zh": "首先要检查它的状态。",
+        "note": "可替换后面的内容，表达自己的看法；教学补充。"
+      }
+    ]
+  }
+}

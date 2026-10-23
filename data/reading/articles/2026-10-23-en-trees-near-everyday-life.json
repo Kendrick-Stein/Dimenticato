@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-en-trees-near-everyday-life",
+  "storyId": "defra-community-nature-funding-2026-09-30",
+  "lang": "en",
+  "date": "2026-10-23",
+  "category": "environment",
+  "topics": [
+    "自然环境",
+    "社区生活"
+  ],
+  "title": "Bringing trees closer to everyday life",
+  "titleZh": "把树木带到日常生活附近",
+  "summaryZh": "一项英格兰社区自然计划分别支持林地之外的植树和地方自然恢复工作。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连接计划、例子和原因，区分资金用途与未来实施；使用从句及环境生活词汇。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+    "title": "Local communities to receive £79 million to restore nature",
+    "url": "https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
+    "publishedAt": "2026-09-30",
+    "lang": "en",
+    "author": "Department for Environment, Food & Rural Affairs; Dame Angela Eagle"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Environment, Food & Rural Affairs; Dame Angela Eagle; 2026-09-30; https://www.gov.uk/government/news/local-communities-to-receive-79-million-to-restore-nature",
+  "adaptation": "2026-10-23整理；依据原日期的机构英文正文作同语言教学改写，并加入中文译文与原创学习补充。不是原文逐字转载或机构认可的课程。排除图片、标志、直接引语、第三方作品与外链内容；来源报告与教学解读明确区分。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A tree outside a school or beside a busy street can connect nature with ordinary daily routines.",
+      "zh": "学校外或繁忙街道旁的一棵树，可以把自然与普通人的日常生活联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "On 30 September 2026, the government announced £79 million to help communities in England restore nature and adapt to climate change.",
+      "zh": "2026年9月30日，政府宣布提供7,900万英镑，帮助英格兰社区恢复自然并适应气候变化。",
+      "glosses": [
+        {
+          "surface": "adapt",
+          "lemma": "adapt",
+          "zh": "适应"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "The announcement separates this money into two parts, with different purposes rather than one general tree-planting budget.",
+      "zh": "公告把这笔钱分为两个用途不同的部分，而不是一笔笼统的植树预算。",
+      "glosses": [
+        {
+          "surface": "purposes",
+          "lemma": "purpose",
+          "zh": "用途、目的"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The larger part, £53 million, is for a Community Trees Fund running from April 2027 to March 2030.",
+      "zh": "较大的一部分为5,300万英镑，用于2027年4月至2030年3月的社区树木基金。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "It aims to support up to 500,000 new trees outside woodlands, including on streets, in parks and in rural landscapes.",
+      "zh": "它旨在支持在林地之外新增最多50万棵树，包括街道、公园和乡村景观中的树木。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "These are future plans, so the announcement does not mean that half a million trees have already been planted.",
+      "zh": "这些是未来计划，因此公告并不意味着50万棵树已经种好。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "The department explains that trees can help cool streets during heatwaves and reduce the amount of rainwater running across the ground during storms.",
+      "zh": "该部门解释说，树木有助于在热浪期间给街道降温，并减少暴雨时沿地面流动的雨水。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "They can also provide habitats for birds and other species in urban areas where nature has become less common.",
+      "zh": "它们还能为自然环境减少的城市地区中的鸟类和其他物种提供生境。",
+      "glosses": [
+        {
+          "surface": "habitats",
+          "lemma": "habitat",
+          "zh": "生境、栖息地"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The fund is intended for organisations such as local authorities, environmental groups and groups of farms, rather than individual household shopping.",
+      "zh": "基金面向地方政府、环境组织和农场团体等机构，而不是个人家庭购物。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "The other £26 million will support local authorities and mayors in delivering nature recovery and adapting to a changing climate.",
+      "zh": "另外2,600万英镑将支持地方政府和市长推进自然恢复，并适应不断变化的气候。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Local Nature Recovery Strategies identify the environmental improvements that matter most in each area.",
+      "zh": "地方自然恢复策略确定各地区最重要的环境改善事项。",
+      "glosses": [
+        {
+          "surface": "improvements",
+          "lemma": "improvement",
+          "zh": "改善事项"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Forty-eight local authorities develop these plans with residents, farmers, businesses, land managers and environmental groups.",
+      "zh": "四十八个地方政府与居民、农民、企业、土地管理者和环境组织共同制定这些计划。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "For one community, restoring a wetland may help reduce flood risk; for another, planting trees may make hot streets more comfortable.",
+      "zh": "对一个社区而言，恢复湿地可能有助于降低洪水风险；对另一个社区，种树可能让炎热的街道更舒适。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "The approach therefore connects local knowledge with wider environmental goals, while leaving room for places to choose different priorities.",
+      "zh": "因此，这种方式把地方知识与更广泛的环境目标联系起来，同时给各地留下选择不同优先事项的空间。",
+      "glosses": [
+        {
+          "surface": "priorities",
+          "lemma": "priority",
+          "zh": "优先事项"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "At the time of the announcement, further details of the trees fund were still to come.",
+      "zh": "公告发布时，树木基金的进一步细节仍有待公布。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "adapt",
+        "lemma": "adapt",
+        "zh": "适应",
+        "sentenceId": "s2",
+        "note": "adapt to表示适应气候变化，to在此是介词。"
+      },
+      {
+        "text": "purposes",
+        "lemma": "purpose",
+        "zh": "用途、目的",
+        "sentenceId": "s3",
+        "note": "different purposes指两笔资金用途不同，purposes为复数。"
+      },
+      {
+        "text": "habitats",
+        "lemma": "habitat",
+        "zh": "生境、栖息地",
+        "sentenceId": "s8",
+        "note": "habitats是供动物生活的环境，复数与不同鸟类及物种相应。"
+      },
+      {
+        "text": "improvements",
+        "lemma": "improvement",
+        "zh": "改善事项",
+        "sentenceId": "s11",
+        "note": "environmental improvements指计划确定的环境改善事项，不是破坏或投诉。"
+      },
+      {
+        "text": "priorities",
+        "lemma": "priority",
+        "zh": "优先事项",
+        "sentenceId": "s14",
+        "note": "choose different priorities强调各地先做什么可以不同。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "up to",
+        "zh": "最多、上限为",
+        "sentenceId": "s5",
+        "note": "表示目标的最大数量，不承诺达到。"
+      },
+      {
+        "text": "leaving room for",
+        "zh": "为……留出空间",
+        "sentenceId": "s14",
+        "note": "在此表示允许一定灵活性，不是实体房间。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s13",
+        "note": "For one…; for another… 对比不同地方需求，may保留效果的不确定性。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which environmental change would matter most in your neighbourhood?",
+        "zh": "你住处最重要的环境改善是什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Our priority would be… because…",
+        "zh": "我们的优先事项会是……因为……",
+        "note": "可复用教学表达，不是原文引语。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-it-conoscere-gli-archivi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 69,
+      "answer": "biblioteche",
+      "options": [
+        "biblioteche",
+        "officine",
+        "stazioni",
+        "fabbriche"
+      ],
+      "explanation": "biblioteche是biblioteca的阴性复数，表示图书馆；其余地点不符合中文句意。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 15,
+      "answer": "libero",
+      "options": [
+        "riservato",
+        "libero",
+        "costoso",
+        "chiuso"
+      ],
+      "explanation": "libero与阳性单数ingresso一致；ingresso libero在此表示免费入场。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 109,
+      "answer": "raccolti",
+      "options": [
+        "venduti",
+        "stampati",
+        "raccolti",
+        "distrutti"
+      ],
+      "explanation": "raccolti是raccogliere的过去分词阳性复数，与dati一致，表示收集到的数据。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 79,
+      "answer": "cittadini",
+      "options": [
+        "documenti",
+        "edifici",
+        "strumenti",
+        "cittadini"
+      ],
+      "explanation": "cittadini为市民，阳性复数；与行政部门和行业人员并列指参与者。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s7",
+      "start": 109,
+      "answer": "compiti",
+      "options": [
+        "prezzi",
+        "compiti",
+        "viaggi",
+        "biglietti"
+      ],
+      "explanation": "compiti在此是职责，阳性复数；不是价格、旅行或票。"
+    }
+  ]
+}

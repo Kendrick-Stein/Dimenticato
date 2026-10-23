@@ -1,0 +1,271 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-it-strade-leggere-i-confronti",
+  "storyId": "istat-incidenti-provinciali-2025-2026-10-15",
+  "lang": "it",
+  "date": "2026-10-23",
+  "title": "Incidenti stradali: capire che cosa confrontiamo",
+  "titleZh": "道路事故：弄清我们在比较什么",
+  "summaryZh": "Istat的省级更新显示死亡总数下降与事故增加可以并存；比较地区前，还要分清年份、绝对人数和每千起事故死亡人数。",
+  "level": "B2",
+  "levelReason": "编辑估计：统计报道的综合阅读，区分基期、绝对变化、比例和分母；使用让步与限定结构，避免从汇总数字推断个人风险或因果。",
+  "category": "society",
+  "topics": [
+    "道路安全",
+    "统计阅读"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Istat",
+    "title": "Incidenti stradali in Italia. Aggiornamento dati provinciali – Anno 2025",
+    "url": "https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-aggiornamento-dati-provinciali-anno-2025/",
+    "publishedAt": "2026-10-15",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Istat（机构署名，未列个人文字作者）。原题、日期和链接见来源；Dimenticato依据CC BY 4.0进行意大利语分级改写、中文翻译与原创教学补充，采用同一许可，不表示原机构认可。",
+  "adaptation": "2026-10-23整理。仅改写机构文字，不使用图片、标志、附件中的第三方作品或直接引语。原文日期不等于事件或统计发生日期；活动公告不作为实际举行的核验。中文释义、口语讨论与练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 15 ottobre 2026 l’Istat ha aggiornato le informazioni sugli incidenti stradali con lesioni a persone avvenuti nel 2025, aggiungendo il dettaglio provinciale e una classificazione più articolata delle strade.",
+      "zh": "2026年10月15日，Istat更新了2025年造成人员伤害的道路事故资料，增加省级细分和更详细的道路分类。",
+      "glosses": [
+        {
+          "surface": "lesioni",
+          "lemma": "lesione",
+          "zh": "伤害",
+          "note": "阴性复数；con lesioni a persone限定统计范围。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "La pubblicazione non descrive quindi gli incidenti dell’autunno 2026: amplia dati riferiti all’anno precedente, già diffusi a livello nazionale il 24 luglio.",
+      "zh": "因此，这份发布并非描述2026年秋季的事故，而是扩充上一年的数据；全国数据已于7月24日发布。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Secondo i dati Aci-Istat, nel 2025 gli incidenti con lesioni sono stati 177.207, con 2.868 decessi e 237.822 feriti; rispetto al 2024, gli incidenti sono aumentati del 2,2%.",
+      "zh": "根据Aci-Istat数据，2025年造成人员伤害的事故有177207起，导致2868人死亡、237822人受伤；事故数比2024年增加2.2%。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Nello stesso confronto, i morti sono diminuiti del 5,3%, mentre i feriti sono cresciuti dell’1,7%: frequenza degli incidenti e conseguenze mortali non si sono dunque mosse nella medesima direzione.",
+      "zh": "在同一比较中，死亡人数减少5.3%，受伤人数增加1.7%；因此事故发生数量与致命后果并未朝同一方向变化。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Cambiare l’anno di riferimento modifica però la lettura: rispetto al 2019, gli incidenti risultano superiori del 2,9%, i morti inferiori del 9,6% e i feriti inferiori dell’1,5%.",
+      "zh": "但改变基准年份会改变解读：与2019年相比，事故数高2.9%，死亡人数低9.6%，受伤人数低1.5%。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Il 2019 è anche il riferimento scelto per l’obiettivo del 2030, che punta a ridurre del 50% sia le vittime sia i feriti gravi sulle strade.",
+      "zh": "2019年也是2030年目标所采用的基准，该目标旨在将道路死亡人数和重伤人数均减少50%。",
+      "glosses": [
+        {
+          "surface": "ridurre",
+          "lemma": "ridurre",
+          "zh": "减少",
+          "note": "不定式，punta a后接动作目标。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "La diminuzione nazionale dei decessi del 9,6% va quindi distinta dal traguardo previsto: un miglioramento rispetto alla base non significa che il dimezzamento sia stato raggiunto.",
+      "zh": "因此，全国死亡人数减少9.6%必须与预定目标区分开来：相对于基期有所改善，并不表示已经实现减半。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Guardando alle province, il quadro è ancora più differenziato: rispetto al 2019, i morti sono aumentati in 41 province su 107, diminuiti in 57 e rimasti stabili in nove.",
+      "zh": "观察各省，情况更加分化：与2019年相比，107个省中有41个死亡人数增加，57个减少，9个不变。",
+      "glosses": [
+        {
+          "surface": "stabili",
+          "lemma": "stabile",
+          "zh": "不变的；稳定的",
+          "note": "形容词复数，与i morti在此数量语境搭配。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Nel 2025 sette province avevano già dimezzato il numero delle vittime rispetto a quella base: Prato, Fermo, Crotone, Vercelli, Vibo Valentia, Isernia e Siena.",
+      "zh": "2025年，七个省的死亡人数已比该基期减少至少一半：Prato、Fermo、Crotone、Vercelli、Vibo Valentia、Isernia和Siena。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Questo risultato riguarda il numero dei morti; non dimostra, da solo, che ogni obiettivo relativo ai feriti gravi sia stato conseguito negli stessi territori.",
+      "zh": "这一结果涉及死亡人数；仅凭它不能证明同一地区关于重伤者的每项目标都已达成。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Per i cambiamenti più recenti, il rapporto usa anche il confronto con il 2024: Treviso, Perugia e Napoli registrano le maggiori diminuzioni assolute dei decessi, rispettivamente di 29, 26 e 20 persone.",
+      "zh": "考察较近的变化时，报告还与2024年作比较：Treviso、Perugia和Napoli的死亡人数绝对降幅最大，分别减少29、26和20人。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Torino, Macerata e Catania mostrano invece gli aumenti assoluti maggiori, pari a 17, 14 e 10 decessi; queste variazioni non sono percentuali.",
+      "zh": "Torino、Macerata和Catania则呈现最大的绝对增幅，分别增加17、14和10例死亡；这些变化不是百分比。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Un altro indicatore cambia il punto di osservazione: l’indice di mortalità mette in rapporto i morti con gli incidenti, anziché limitarsi al loro numero complessivo.",
+      "zh": "另一项指标改变了观察角度：事故死亡指数将死亡人数与事故数联系起来，而不是仅看死亡总人数。",
+      "glosses": [
+        {
+          "surface": "indicatore",
+          "lemma": "indicatore",
+          "zh": "指标",
+          "note": "阳性单数，指统计量。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "La media nazionale è di 16,2 morti ogni mille incidenti; in dodici province il valore supera il doppio di questa media, con Nuoro a 52,8 e Sud Sardegna a 51,7.",
+      "zh": "全国平均为每千起事故死亡16.2人；十二个省的数值超过这一均值的两倍，其中Nuoro为52.8，Sud Sardegna为51.7。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Poiché il denominatore è il numero degli incidenti, questo indice non equivale a un tasso per abitante e non misura direttamente il rischio di ogni singolo spostamento.",
+      "zh": "由于分母是事故数，这一指数不等于按居民人数计算的比率，也不直接衡量每一次出行的风险。",
+      "glosses": [
+        {
+          "surface": "denominatore",
+          "lemma": "denominatore",
+          "zh": "分母",
+          "note": "阳性单数名词；用于说明比率计算基础。"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Anche i diversi utenti della strada mostrano andamenti distinti: nel 2025 sono morti 419 pedoni, in calo del 10,9% sul 2024, e 228 ciclisti, in aumento del 23,2%.",
+      "zh": "不同道路使用者的变化也有所不同：2025年有419名行人死亡，比2024年减少10.9%；骑车者死亡228人，增加23.2%。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Tra i ciclisti, 30 vittime utilizzavano una bicicletta elettrica; si contano inoltre 25 morti tra conducenti e passeggeri di monopattini, categoria distinta nella presentazione dei dati.",
+      "zh": "骑车者中有30名死者使用电动自行车；此外，滑板车驾驶者及乘客共死亡25人，数据中将这一类别另行呈现。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Leggere insieme queste informazioni permette di riconoscere differenze che una sola media nasconderebbe, senza attribuirle automaticamente a una causa specifica non verificata dal comunicato.",
+      "zh": "综合阅读这些信息，可以发现单一均值会掩盖的差异，而不自动将其归因于公报未核实的某个具体原因。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Il dettaglio provinciale aiuta quindi a formulare domande più precise: su quale periodo, su quali persone e su quale denominatore si basa il confronto che stiamo facendo?",
+      "zh": "因此，省级细分有助于提出更准确的问题：我们正在进行的比较，依据什么时期、哪些人群以及什么分母？",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "lesioni",
+        "lemma": "lesione",
+        "zh": "伤害",
+        "sentenceId": "s1",
+        "note": "阴性复数；con lesioni a persone限定统计范围。"
+      },
+      {
+        "text": "ridurre",
+        "lemma": "ridurre",
+        "zh": "减少",
+        "sentenceId": "s6",
+        "note": "不定式，punta a后接动作目标。"
+      },
+      {
+        "text": "stabili",
+        "lemma": "stabile",
+        "zh": "不变的；稳定的",
+        "sentenceId": "s8",
+        "note": "形容词复数，与i morti在此数量语境搭配。"
+      },
+      {
+        "text": "indicatore",
+        "lemma": "indicatore",
+        "zh": "指标",
+        "sentenceId": "s13",
+        "note": "阳性单数，指统计量。"
+      },
+      {
+        "text": "denominatore",
+        "lemma": "denominatore",
+        "zh": "分母",
+        "sentenceId": "s15",
+        "note": "阳性单数名词；用于说明比率计算基础。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "anno di riferimento",
+        "zh": "基准年份",
+        "sentenceId": "s5",
+        "note": "用于比较数据的年份。"
+      },
+      {
+        "text": "diminuzioni assolute",
+        "zh": "绝对减少量",
+        "sentenceId": "s11",
+        "note": "强调人数差，不是百分比。"
+      },
+      {
+        "text": "attribuirle automaticamente",
+        "zh": "自动将它们归因",
+        "sentenceId": "s18",
+        "note": "le指代differenze，attribuire qualcosa a una causa。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "mentre连接方向不同的两组变化，不能把死亡下降概括为所有指标都改善。"
+      },
+      {
+        "sentenceId": "s15",
+        "note": "Poiché引出理由；non equivale a用于限定一个统计指标不代表什么。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali informazioni vorresti avere prima di confrontare la sicurezza stradale di due città?",
+        "zh": "比较两个城市的道路安全前，你想知道哪些信息？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Il confronto cambia se usiamo…",
+        "zh": "如果我们采用……，比较就会改变。",
+        "note": "可接另一个基期或统计分母。"
+      },
+      {
+        "text": "Questo dato riguarda…, non…",
+        "zh": "这个数据涉及……，而不是……",
+        "note": "用来明确统计范围。"
+      }
+    ]
+  }
+}

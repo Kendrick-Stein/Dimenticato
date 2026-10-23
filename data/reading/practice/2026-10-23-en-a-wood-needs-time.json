@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-en-a-wood-needs-time",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 26,
+      "answer": "rare",
+      "options": [
+        "common",
+        "artificial",
+        "rare",
+        "domestic"
+      ],
+      "explanation": "rare修饰plants，说明数量少、较难见到，而不是普通或人造。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 66,
+      "answer": "remove",
+      "options": [
+        "remove",
+        "produce",
+        "bury",
+        "deliver"
+      ],
+      "explanation": "to后用动词原形remove，表示把垃圾移走。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 9,
+      "answer": "removed",
+      "options": [
+        "stored",
+        "created",
+        "ordered",
+        "removed"
+      ],
+      "explanation": "removed是过去式，说明已经从树林清走的垃圾。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 16,
+      "answer": "specialist",
+      "options": [
+        "seasonal",
+        "specialist",
+        "retired",
+        "untrained"
+      ],
+      "explanation": "specialist在此修饰workers，指具有专门技能的人员。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 27,
+      "answer": "limited",
+      "options": [
+        "expanded",
+        "advertised",
+        "limited",
+        "encouraged"
+      ],
+      "explanation": "will be limited是将来时被动，意思是出入受限，不是扩大或取消限制。"
+    }
+  ]
+}

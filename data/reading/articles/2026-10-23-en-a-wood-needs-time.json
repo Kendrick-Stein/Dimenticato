@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-en-a-wood-needs-time",
+  "storyId": "defra-hoads-wood-clearance-2026-10-09",
+  "lang": "en",
+  "date": "2026-10-23",
+  "category": "environment",
+  "topics": [
+    "自然环境",
+    "社区生活"
+  ],
+  "title": "A wood needs time to recover",
+  "titleZh": "清理之后，树林还需要时间",
+  "summaryZh": "肯特郡一片树林的垃圾已清走，但生态恢复并没有随清理一起完成。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体的树林清理事件，短句、时间顺序及常见动词，专名和环境词有中文帮助。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+    "title": "Illegal waste at Hoad’s Wood fully cleared as crackdown continues",
+    "url": "https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
+    "publishedAt": "2026-10-09",
+    "lang": "en",
+    "author": "Environment Agency; Department for Environment, Food & Rural Affairs; Dame Angela Eagle"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Environment Agency; Department for Environment, Food & Rural Affairs; Dame Angela Eagle; 2026-10-09; https://www.gov.uk/government/news/illegal-waste-at-hoads-wood-fully-cleared-as-crackdown-continues",
+  "adaptation": "2026-10-23整理；依据原日期的机构英文正文作同语言教学改写，并加入中文译文与原创学习补充。不是原文逐字转载或机构认可的课程。排除图片、标志、直接引语、第三方作品与外链内容；来源报告与教学解读明确区分。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Hoad’s Wood is an old woodland in Kent, in the south-east of England.",
+      "zh": "Hoad’s Wood是英格兰东南部肯特郡的一片古老树林。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "It is a special place for rare plants and animals, and local people care about it.",
+      "zh": "这里是珍稀动植物的重要生境，当地居民也很珍视它。",
+      "glosses": [
+        {
+          "surface": "rare",
+          "lemma": "rare",
+          "zh": "珍稀的"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "However, criminals brought a large amount of waste there and damaged the place.",
+      "zh": "然而，犯罪分子把大量垃圾运到这里，破坏了这个地方。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "In some parts, the piles of rubbish were as high as fifteen feet.",
+      "zh": "有些地方的垃圾堆高达十五英尺。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Officers stopped the illegal operation, and a large team began to remove the waste.",
+      "zh": "执法人员叫停了这项非法活动，一支大型队伍开始清运垃圾。",
+      "glosses": [
+        {
+          "surface": "remove",
+          "lemma": "remove",
+          "zh": "清除、移走"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "On 9 October 2026, the Environment Agency announced that the waste had all been cleared.",
+      "zh": "2026年10月9日，英国环境署宣布垃圾已经全部清走。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "The team removed 39,500 tonnes of commercial waste from the wood.",
+      "zh": "这支队伍从树林中清运了39,500吨商业活动产生的垃圾。",
+      "glosses": [
+        {
+          "surface": "removed",
+          "lemma": "remove",
+          "zh": "清运了"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "More than fifty specialist workers took part in the clean-up.",
+      "zh": "五十多名专业人员参与了清理。",
+      "glosses": [
+        {
+          "surface": "specialist",
+          "lemma": "specialist",
+          "zh": "专业的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Now the next job is to help the land recover.",
+      "zh": "现在，下一项工作是帮助这片土地恢复。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Access to the site will be limited so that nature has time and space to heal.",
+      "zh": "进入这片区域将受到限制，以便自然环境有时间和空间恢复。",
+      "glosses": [
+        {
+          "surface": "limited",
+          "lemma": "limit",
+          "zh": "受到限制的"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "So a clean site does not mean that visitors can immediately use every part of it again.",
+      "zh": "因此，垃圾清干净并不意味着游客能立刻重新进入这里的每个区域。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "The investigation into the dumping is also continuing.",
+      "zh": "对非法倾倒垃圾的调查也仍在继续。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "rare",
+        "lemma": "rare",
+        "zh": "珍稀的",
+        "sentenceId": "s2",
+        "note": "rare修饰plants，说明数量少、较难见到，而不是普通或人造。"
+      },
+      {
+        "text": "remove",
+        "lemma": "remove",
+        "zh": "清除、移走",
+        "sentenceId": "s5",
+        "note": "to后用动词原形remove，表示把垃圾移走。"
+      },
+      {
+        "text": "removed",
+        "lemma": "remove",
+        "zh": "清运了",
+        "sentenceId": "s7",
+        "note": "removed是过去式，说明已经从树林清走的垃圾。"
+      },
+      {
+        "text": "specialist",
+        "lemma": "specialist",
+        "zh": "专业的",
+        "sentenceId": "s8",
+        "note": "specialist在此修饰workers，指具有专门技能的人员。"
+      },
+      {
+        "text": "limited",
+        "lemma": "limit",
+        "zh": "受到限制的",
+        "sentenceId": "s10",
+        "note": "will be limited是将来时被动，意思是出入受限，不是扩大或取消限制。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "took part in",
+        "zh": "参加了",
+        "sentenceId": "s8",
+        "note": "take part in后接活动，took为过去式。"
+      },
+      {
+        "text": "so that",
+        "zh": "以便",
+        "sentenceId": "s10",
+        "note": "引导目的：限制出入是为了让自然恢复。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "does not mean that用于纠正推断：垃圾清走，不等于立即全面开放。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Why might a place stay closed after a clean-up?",
+        "zh": "一个地方清理之后为什么可能仍然关闭？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "The clean-up is finished, but…",
+        "zh": "清理完成了，但是……",
+        "note": "可复用教学表达，不是原文引语。"
+      }
+    ]
+  }
+}

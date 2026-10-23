@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-fr-une-maison-pour-les-musiciens",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quel ensemble décrit le mieux le projet présenté ?",
+      "options": [
+        "Réunir concerts, échanges internationaux et concours scolaires.",
+        "Réunir création, apprentissage et participation des habitants.",
+        "Réunir répétitions, formation technique et festivals itinérants.",
+        "Réunir résidences, vente d’instruments et archives musicales."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s9",
+        "s10",
+        "s12",
+        "s14"
+      ],
+      "explanationZh": "第5句强调创作，第9—10句说明教学支持，第12—14句涉及居民参与；国际交流与竞赛、流动音乐节、乐器销售与音乐档案均不是文中项目组合。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quel changement est prévu pour les résidences ?",
+      "options": [
+        "Elles auront lieu dans les écoles de la métropole.",
+        "Elles seront réservées aux musiciens professionnels.",
+        "Elles remplaceront les espaces de répétition.",
+        "Les séjours longs et d’autres disciplines y auront davantage de place."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第11句说明长期驻留将更受重视，并可接待非音乐领域创作者；第10句仍保留排练空间。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Comment les jeunes pourront-ils participer au lieu ?",
+      "options": [
+        "En rejoignant des comités de programmation.",
+        "En organisant des visites des salles rénovées.",
+        "En accueillant les artistes pendant leurs résidences.",
+        "En participant aux jurys de concours musicaux."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "第13—14句具体提出青年可加入节目策划委员会；并未把参观组织、驻留接待或音乐竞赛评审列为其参与方式。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quelle date est prévue pour sa prise de fonctions ?",
+      "options": [
+        "Le 7 septembre 2026.",
+        "Le 20 octobre 2026.",
+        "Le 1er janvier 2027.",
+        "Le 1er septembre 2027."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s3"
+      ],
+      "explanationZh": "第2句给出2027年1月1日的就职安排；2026年10月20日是公告日期，不是就职日。"
+    }
+  ]
+}

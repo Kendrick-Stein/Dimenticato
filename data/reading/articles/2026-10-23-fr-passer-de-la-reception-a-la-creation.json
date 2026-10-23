@@ -1,0 +1,406 @@
+{
+  "schema": 1,
+  "id": "2026-10-23-fr-passer-de-la-reception-a-la-creation",
+  "storyId": "passer-de-la-reception-a-la-creation-2026-10-20",
+  "lang": "fr",
+  "date": "2026-10-23",
+  "title": "Passer de la réception à la création",
+  "titleZh": "从接收信息到亲手创作",
+  "summaryZh": "从新闻线索核查到声音作品与共同阅读，一篇新报道展示青少年在文化活动中如何练习观察、表达和辨别。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：比较多个媒体教育与艺术实践案例，使用让步、对照和综合论述，区分活动事实、目标与教学归纳。",
+  "category": "culture",
+  "topics": [
+    "艺术与日常",
+    "文化参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Vacances culturelles : les jeunes décryptent les médias et les récits",
+    "url": "https://www.culture.gouv.fr/actualites/vacances-culturelles-les-jeunes-decryptent-les-medias-et-les-recits",
+    "publishedAt": "2026-10-20",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：法国文化部（Ministère de la Culture，未单列个人作者），原题、原日期与链接见来源。机构文字依 CC BY-SA 3.0 FR 使用；Dimenticato 法语分级改写、中文翻译与教学补充亦按 CC BY-SA 3.0 FR 发布，不代表原机构认可。",
+  "adaptation": "2026-10-23整理，依据2026-10-20原语机构报道，并非当天原文。仅改写机构正文，不使用图片、媒体、第三方引语、附件或外链正文；保留计划与已完成事项的区别。词汇、问题与口语表达为本站教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Face aux vidéos virales et aux informations diffusées en continu, identifier une source ou apprécier sa fiabilité peut devenir difficile pour les jeunes.",
+      "zh": "面对病毒式传播的视频和不间断的信息，年轻人有时难以辨认来源或判断可靠性。",
+      "glosses": [
+        {
+          "surface": "fiabilité",
+          "lemma": "fiabilité",
+          "zh": "可靠性",
+          "note": "阴性单数；apprécier sa fiabilité 在此指判断信息可靠程度。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Dans un article publié le 20 octobre 2026, le ministère de la Culture présente plusieurs initiatives qui abordent cette difficulté par la pratique culturelle.",
+      "zh": "在2026年10月20日的一篇报道中，文化部介绍了通过文化实践应对这一困难的多项活动。",
+      "glosses": [
+        {
+          "surface": "initiatives",
+          "lemma": "initiative",
+          "zh": "举措、活动",
+          "note": "阴性复数，指具体文化项目。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Ces initiatives relèvent des Vacances culturelles, un dispositif proposant aux enfants, aux jeunes et aux familles des expériences artistiques pendant les vacances scolaires.",
+      "zh": "这些活动属于“文化假期”项目，该项目在学校假期向儿童、青年和家庭提供艺术体验。",
+      "glosses": [
+        {
+          "surface": "dispositif",
+          "lemma": "dispositif",
+          "zh": "项目机制",
+          "note": "阳性名词，行政文化语境中指安排或项目。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Leur diversité montre que l’éducation aux médias peut se combiner avec la création sonore, le cinéma, l’écriture ou encore la découverte des livres.",
+      "zh": "活动的多样性表明，媒介教育可以与声音创作、电影、写作或图书探索相结合。",
+      "glosses": [
+        {
+          "surface": "se combiner",
+          "lemma": "se combiner",
+          "zh": "相结合",
+          "note": "代词式动词，avec 引出结合对象。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Dans les Hauts-de-France, l’École supérieure de journalisme de Lille installe ainsi un studio mobile dans l’espace public pour les vacances de la Toussaint.",
+      "zh": "在上法兰西地区，里尔新闻学院将在诸圣节假期把一座移动演播室带到公共空间。",
+      "glosses": [
+        {
+          "surface": "mobile",
+          "lemma": "mobile",
+          "zh": "可移动的",
+          "note": "修饰 studio，指能带到不同地点的演播室。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Le NewsTruck invite le public à repérer les fausses informations, les images manipulées et les contenus produits par l’intelligence artificielle.",
+      "zh": "NewsTruck 邀请公众辨别虚假信息、经过篡改的图片以及人工智能生成的内容。",
+      "glosses": [
+        {
+          "surface": "manipulées",
+          "lemma": "manipuler",
+          "zh": "被篡改的",
+          "note": "阴性复数过去分词，修饰 images。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Un jeu immersif propose également aux participants de travailler en équipes comme des journalistes : ils recueillent des indices, les vérifient, puis rédigent un article.",
+      "zh": "一项沉浸式游戏还让参与者像记者一样组队工作：他们收集线索、核查线索，然后撰写文章。",
+      "glosses": [
+        {
+          "surface": "indices",
+          "lemma": "indice",
+          "zh": "线索",
+          "note": "阳性复数；recueillir des indices 是收集线索。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "L’ordre de ces étapes importe : dans cette activité, la rédaction vient après la collecte et la vérification, et non immédiatement après la première découverte.",
+      "zh": "这些步骤的顺序很重要：在这项活动中，写作在收集和核查之后进行，而不是一发现线索就立即开始。",
+      "glosses": [
+        {
+          "surface": "collecte",
+          "lemma": "collecte",
+          "zh": "收集",
+          "note": "阴性名词，此处是线索收集。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Les Petits Débrouillards ont, de leur côté, organisé durant l’été des ateliers consacrés à l’intelligence artificielle et aux transitions écologique, énergétique et sociale.",
+      "zh": "另一方面，Les Petits Débrouillards 在夏季举办了关于人工智能及生态、能源和社会转型的工作坊。",
+      "glosses": [
+        {
+          "surface": "transitions",
+          "lemma": "transition",
+          "zh": "转型",
+          "note": "复数，分别涉及生态、能源和社会。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Destinés aux jeunes des quartiers prioritaires, ces rendez-vous utilisaient notamment les jeux de rôle et les débats pour distinguer faits scientifiques, opinions et rumeurs.",
+      "zh": "这些活动面向重点社区的青年，尤其利用角色扮演和辩论来区分科学事实、观点与传言。",
+      "glosses": [
+        {
+          "surface": "rumeurs",
+          "lemma": "rumeur",
+          "zh": "传言",
+          "note": "阴性复数，与事实、观点并列区分。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "À Lussas, l’association Ardèche Images a choisi un autre chemin : deux créatrices sonores ont accompagné des jeunes pendant une semaine autour du thème de la transformation.",
+      "zh": "在吕萨，Ardèche Images 协会选择了另一种途径：两位声音创作者围绕“变化”主题陪伴青年开展了一周活动。",
+      "glosses": [
+        {
+          "surface": "sonores",
+          "lemma": "sonore",
+          "zh": "声音方面的",
+          "note": "créatrices sonores 指声音创作者。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Le paysage et le village faisaient partie de ce travail, dont les capsules sonores et une émission en direct ont été diffusées par la radio locale Fréquence 7.",
+      "zh": "景观和村庄是这项工作的内容；其声音短篇与一档直播节目通过当地 Fréquence 7 电台播出。",
+      "glosses": [
+        {
+          "surface": "diffusées",
+          "lemma": "diffuser",
+          "zh": "播出的",
+          "note": "过去分词阴性复数，与 capsules 和 émission 对应。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "L’article s’intéresse aussi à la manière dont la fabrication d’une œuvre peut éclairer les choix qui se cachent derrière les images et les récits.",
+      "zh": "文章还关注，亲手制作作品如何帮助理解图像和叙事背后的选择。",
+      "glosses": [
+        {
+          "surface": "récits",
+          "lemma": "récit",
+          "zh": "叙事",
+          "note": "阳性复数，指组织故事和内容的方式。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Avec Peuple et Culture, des jeunes de dix à vingt-cinq ans qui ne partent pas en vacances sont accompagnés par des artistes et des professionnels.",
+      "zh": "在 Peuple et Culture 的活动中，不外出度假的10至25岁青年得到艺术家及专业人员的指导。",
+      "glosses": [
+        {
+          "surface": "accompagnés",
+          "lemma": "accompagner",
+          "zh": "得到指导的",
+          "note": "阳性复数过去分词，与 jeunes 一致。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Ils découvrent notamment les collections des musées ou participent à des stages de cartographie, d’arts plastiques et d’écriture journalistique.",
+      "zh": "他们尤其会探索博物馆馆藏，或参加制图、造型艺术以及新闻写作课程。",
+      "glosses": [
+        {
+          "surface": "cartographie",
+          "lemma": "cartographie",
+          "zh": "制图",
+          "note": "阴性名词，绘制和呈现地图的活动。"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Dans le Grand Est, des séances de cinéma itinérant organisées cet été dans des communes rurales ont été prolongées par des ateliers d’éducation à l’image.",
+      "zh": "在大东部地区，今年夏天在农村市镇举办的流动电影放映，之后还衔接了图像教育工作坊。",
+      "glosses": [
+        {
+          "surface": "rurales",
+          "lemma": "rural",
+          "zh": "乡村的",
+          "note": "阴性复数 rural → rurale → rurales，与 communes 一致。"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Dans cette même région, une autre opération a réuni trente-cinq auteurs et illustrateurs jeunesse dans une soixantaine de bibliothèques, autour d’activités gratuites ouvertes à tous.",
+      "zh": "在同一区域，另一项活动让35位儿童文学作者和插画师走进约60家图书馆，开展免费、向所有人开放的活动。",
+      "glosses": [
+        {
+          "surface": "une soixantaine",
+          "lemma": "soixantaine",
+          "zh": "大约六十",
+          "note": "une + 数量集体名词，不是精确60。"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "À Rennes, un jardin du quartier du Blosne s’est transformé pendant dix jours en espace de lectures, de jeux d’observation et d’ateliers parents-enfants.",
+      "zh": "在雷恩，布洛讷社区的一座花园在十天里变成了阅读、观察游戏和亲子工作坊的空间。",
+      "glosses": [
+        {
+          "surface": "parents-enfants",
+          "lemma": "parent-enfant",
+          "zh": "亲子的",
+          "note": "连字符连接，说明父母和孩子共同参与。"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "L’association Lire et Délire s’est inspirée de l’univers d’Alice au pays des merveilles en utilisant des éléments naturels et des matériaux récupérés.",
+      "zh": "Lire et Délire 协会以《爱丽丝梦游仙境》的世界为灵感，使用了自然元素和回收材料。",
+      "glosses": [
+        {
+          "surface": "récupérés",
+          "lemma": "récupérer",
+          "zh": "回收利用的",
+          "note": "过去分词阳性复数，修饰 matériaux。"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "D’autres projets cherchent à rapprocher du livre les jeunes accompagnés par des structures sociales, chez qui le recul de la lecture de loisir est particulièrement marqué.",
+      "zh": "其他项目试图让社会服务机构陪伴的青年更亲近书本，这些青年中的休闲阅读下降尤其明显。",
+      "glosses": [
+        {
+          "surface": "loisir",
+          "lemma": "loisir",
+          "zh": "休闲",
+          "note": "lecture de loisir 指非课业性质的阅读。"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Avec Passeurs d’Histoires, Cultures du Cœur prévoit des ateliers mêlant découverte culturelle, création et médiation de proximité pendant les vacances de la Toussaint et de Noël.",
+      "zh": "通过 Passeurs d’Histoires，Cultures du Cœur 计划在诸圣节和圣诞节假期举办结合文化探索、创作和社区引导的工作坊。",
+      "glosses": [
+        {
+          "surface": "prévoit",
+          "lemma": "prévoir",
+          "zh": "计划",
+          "note": "第三人称单数现在时，计划不等于已完成。"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Ces ateliers seront déployés en Auvergne, dans le Haut-Rhin et dans les Bouches-du-Rhône ; leur objectif comprend aussi la lutte contre l’isolement.",
+      "zh": "这些工作坊将在奥弗涅、上莱茵省和罗讷河口省开展；其目标还包括减少孤立感。",
+      "glosses": [
+        {
+          "surface": "isolement",
+          "lemma": "isolement",
+          "zh": "孤立状态",
+          "note": "此处指社会交往层面的孤立感。"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "La comparaison de ces exemples fait apparaître deux démarches complémentaires : examiner les contenus que l’on reçoit et apprendre à produire sa propre expression.",
+      "zh": "比较这些例子，可以看到两种互补的方式：审视自己接收到的内容，并学习形成自己的表达。",
+      "glosses": [
+        {
+          "surface": "complémentaires",
+          "lemma": "complémentaire",
+          "zh": "互补的",
+          "note": "阴性复数，与 démarches 一致。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "fiabilité",
+        "lemma": "fiabilité",
+        "zh": "可靠性",
+        "sentenceId": "s1",
+        "note": "阴性单数；apprécier sa fiabilité 在此指判断信息可靠程度。"
+      },
+      {
+        "text": "indices",
+        "lemma": "indice",
+        "zh": "线索",
+        "sentenceId": "s7",
+        "note": "阳性复数；recueillir des indices 是收集线索。"
+      },
+      {
+        "text": "rumeurs",
+        "lemma": "rumeur",
+        "zh": "传言",
+        "sentenceId": "s10",
+        "note": "阴性复数，与事实、观点并列区分。"
+      },
+      {
+        "text": "rurales",
+        "lemma": "rural",
+        "zh": "乡村的",
+        "sentenceId": "s16",
+        "note": "阴性复数 rural → rurale → rurales，与 communes 一致。"
+      },
+      {
+        "text": "récupérés",
+        "lemma": "récupérer",
+        "zh": "回收利用的",
+        "sentenceId": "s19",
+        "note": "过去分词阳性复数，修饰 matériaux。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s7",
+        "text": "travailler en équipes",
+        "zh": "分组工作",
+        "note": "en équipes 强调以小组为单位。"
+      },
+      {
+        "sentenceId": "s23",
+        "text": "deux démarches complémentaires",
+        "zh": "两种互补的方式",
+        "note": "complémentaires 表示相互补充，不是彼此替代。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "et non 对照正确的活动顺序与另一种顺序；la rédaction vient après… 可用于说明流程。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quelle différence faites-vous entre vérifier une information et créer votre propre récit ?",
+        "zh": "你怎样区分核查信息与创作自己的叙事？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ces deux démarches peuvent se compléter, à condition de distinguer les faits de l’interprétation.",
+        "zh": "只要区分事实与解读，这两种方式就可以相互补充。",
+        "note": "可替换后面的内容，表达自己的看法；教学补充。"
+      }
+    ]
+  }
+}

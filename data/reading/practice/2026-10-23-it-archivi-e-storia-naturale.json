@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-it-archivi-e-storia-naturale",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 138,
+      "answer": "custoditi",
+      "options": [
+        "custoditi",
+        "smarriti",
+        "acquistati",
+        "prestati"
+      ],
+      "explanation": "custoditi表示保存的，是过去分词阳性复数；混合名词组合documenti e testimonianze用阳性复数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 88,
+      "answer": "ricostruire",
+      "options": [
+        "cancellare",
+        "vendere",
+        "ricostruire",
+        "nascondere"
+      ],
+      "explanation": "ricostruire表示还原、重建；per后用不定式说明目的。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 41,
+      "answer": "tracce",
+      "options": [
+        "prezzi",
+        "tracce",
+        "orari",
+        "rumori"
+      ],
+      "explanation": "tracce是traccia的阴性复数，tracce scritte为书面线索。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 3,
+      "answer": "collezioni",
+      "options": [
+        "biglietterie",
+        "finestre",
+        "strade",
+        "collezioni"
+      ],
+      "explanation": "collezioni表示馆藏，阴性复数；其余名词不能还原中文所述收藏。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 82,
+      "answer": "studiosi",
+      "options": [
+        "turisti",
+        "studiosi",
+        "venditori",
+        "custodi"
+      ],
+      "explanation": "studiosi指开展研究的学者，阳性复数；上下文强调他们研究文献的工作。"
+    }
+  ]
+}

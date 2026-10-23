@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-fr-une-maison-pour-les-musiciens",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 91,
+      "answer": "fonctions",
+      "options": [
+        "vacances",
+        "fonctions",
+        "décisions",
+        "mesures"
+      ],
+      "explanation": "对应中文“职务”，须还原原文 fonctions。阴性复数；prendre ses fonctions 表示就职。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 64,
+      "answer": "locaux",
+      "options": [
+        "anciens",
+        "publics",
+        "locaux",
+        "étrangers"
+      ],
+      "explanation": "对应中文“本地的”，须还原原文 locaux。阳性复数形容词 local → locaux，与 artistes 一致。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 79,
+      "answer": "amateur",
+      "options": [
+        "voisin",
+        "touriste",
+        "client",
+        "amateur"
+      ],
+      "explanation": "对应中文“业余爱好者”，须还原原文 amateur。en amateur 表示以业余方式参与。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s10",
+      "start": 71,
+      "answer": "répétition",
+      "options": [
+        "répétition",
+        "restauration",
+        "stationnement",
+        "rangement"
+      ],
+      "explanation": "对应中文“排练”，须还原原文 répétition。阴性单数；espaces de répétition 指排练空间。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s14",
+      "start": 128,
+      "answer": "quartiers",
+      "options": [
+        "journaux",
+        "bureaux",
+        "quartiers",
+        "magasins"
+      ],
+      "explanation": "对应中文“社区”，须还原原文 quartiers。阳性复数；des quartiers 指城市中的各个社区。"
+    }
+  ]
+}

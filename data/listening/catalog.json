@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-22",
+  "verifiedAt": "2026-10-23",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -749,6 +749,234 @@
           "answerIndex": 3,
           "evidenceRef": "bc-missing-transcript-return",
           "explanationZh": "老师计划周三发出测验，并询问能否在周五之前交回；Diana 表示可以。这里问的是测验交回要求，不是医生证明的递交地点。"
+        }
+      ]
+    },
+    {
+      "id": "it-rai-acquisti-a1",
+      "lang": "it",
+      "title": "Le parole dell’italiano: consigli per gli acquisti, quanto, quale e che.",
+      "titleZh": "买东西：数量、重量与选择",
+      "provider": "Rai Scuola",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-consigli-per-gli-acquisti-quanto-quale-e-che-b23f5c10-c1c6-40a7-8eea-368d0fc3447c.html",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-23",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青课程：跟着购物对话听数量、重量和饮料名称。",
+      "guideZh": "先听清买了哪些东西，再把数量与物品配对。复听时留意礼貌的购买表达。",
+      "verificationZh": "依据官方对应文字稿核对；原发布日期未标明，按常青课程收录。未实际检验播放或音质。",
+      "vocabulary": [
+        {
+          "text": "Vorrei",
+          "zh": "我想要（礼貌请求）"
+        },
+        {
+          "text": "panini",
+          "zh": "小面包（复数）"
+        },
+        {
+          "text": "pecorino",
+          "zh": "羊奶奶酪"
+        },
+        {
+          "text": "acqua frizzante",
+          "zh": "气泡水"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-acquisti-1",
+          "prompt": "Quanti panini chiede Fela?",
+          "promptZh": "Fela 要几个小面包？",
+          "options": [
+            "Cinque.",
+            "Tre.",
+            "Otto.",
+            "Due."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "rai-acquisti-count",
+          "explanationZh": "店员询问小面包数量时，Fela 回答八个；不要把其他商品的重量当作数量。"
+        },
+        {
+          "id": "it-acquisti-2",
+          "prompt": "Quanto pecorino toscano vuole Fela?",
+          "promptZh": "Fela 想要多少托斯卡纳羊奶奶酪？",
+          "options": [
+            "Duecento grammi.",
+            "Trecento grammi.",
+            "Un chilo.",
+            "Cinquecento grammi."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "rai-acquisti-cheese",
+          "explanationZh": "他谈到托斯卡纳羊奶奶酪时说要二百克；三百克出现在前一个商品的请求中，一公斤说的是面包。"
+        },
+        {
+          "id": "it-acquisti-3",
+          "prompt": "Quali bevande chiede Fela insieme?",
+          "promptZh": "Fela 一起要了哪两种饮料？",
+          "options": [
+            "Acqua naturale e latte.",
+            "Tè e succo di frutta.",
+            "Acqua frizzante e caffè.",
+            "Acqua frizzante e succo di frutta."
+          ],
+          "answerIndex": 3,
+          "evidenceRef": "rai-acquisti-drinks",
+          "explanationZh": "Fela 请求一升气泡水和一份果汁；原文没有在这一请求中要茶、咖啡或牛奶。"
+        }
+      ]
+    },
+    {
+      "id": "fr-tv5-cuisine-a1",
+      "lang": "fr",
+      "title": "Vocabulaire : dans la cuisine",
+      "titleZh": "厨房里：听词辨物",
+      "provider": "TV5MONDE · Université catholique de Louvain",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/vocabulaire-dans-la-cuisine",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-23",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "常青入门课程：结合厨房画面，熟悉做饭与用餐主题。",
+      "guideZh": "先在原站观察场景，再复听并辨认熟悉的词。挑一件厨房用品，尝试用法语说出它的名字。",
+      "verificationZh": "官方A1分级；发布日期2013-06-02，更新2024-11-26。仅核对课程页与首个练习入口，未取得完整对应文字稿，未实测媒体，不设置本站理解题。",
+      "vocabulary": [
+        {
+          "text": "la cuisine",
+          "zh": "厨房；烹饪"
+        },
+        {
+          "text": "cuisiner",
+          "zh": "做饭"
+        },
+        {
+          "text": "manger",
+          "zh": "吃；用餐"
+        }
+      ],
+      "questions": [],
+      "sourcePublishedAt": "2013-06-02",
+      "availableUntil": "2033-12-31",
+      "vocabularyLabel": "主题预习词"
+    },
+    {
+      "id": "de-logo-waschbaeren-20261022",
+      "lang": "de",
+      "title": "Waschbärproblem? Das soll helfen!",
+      "titleZh": "浣熊问题：看懂一则动物新闻",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/waschbaer-verhuetung-einfach-erklaert-100.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-10-23",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "一则关于浣熊与环境的短视频，练习听出话题和解释的顺序。",
+      "guideZh": "先抓住动物名称，再留意节目怎样从问题转到应对办法。不必第一次就听懂所有细节。",
+      "verificationZh": "官方页面日期2026-10-22，官方首页与关联卡片列时长1:40；仅核对页面信息，未取得完整视频或逐字稿，不设理解题。母语儿童节目，未作CEFR分级。",
+      "vocabulary": [
+        {
+          "text": "der Waschbär",
+          "zh": "浣熊"
+        },
+        {
+          "text": "das Problem",
+          "zh": "问题"
+        },
+        {
+          "text": "helfen",
+          "zh": "帮助；起作用"
+        }
+      ],
+      "questions": [],
+      "sourcePublishedAt": "2026-10-22",
+      "duration": "1:40",
+      "vocabularyLabel": "主题预习词"
+    },
+    {
+      "id": "en-bc-morning-briefing-a2",
+      "lang": "en",
+      "title": "A morning briefing",
+      "titleZh": "工作晨会：听懂临时安排",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/morning-briefing",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-23",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青课程：听一段工作通知，区分人事、停车和食堂安排。",
+      "guideZh": "第一遍记下三个话题；第二遍把时间、地点与相应安排配对。不要把到达时间和离开时限混在一起。",
+      "verificationZh": "依据官方对应文字稿核对；原发布日期未标明，按常青课程收录。未实际检验播放或音质。",
+      "vocabulary": [
+        {
+          "text": "a briefing",
+          "zh": "简短说明会"
+        },
+        {
+          "text": "in the meantime",
+          "zh": "在此期间"
+        },
+        {
+          "text": "cashless",
+          "zh": "无现金的"
+        },
+        {
+          "text": "salary",
+          "zh": "工资"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-briefing-1",
+          "prompt": "What happens to the projects before the new manager arrives?",
+          "promptZh": "新负责人到来之前，项目怎样安排？",
+          "options": [
+            "They wait until next month.",
+            "They continue as usual.",
+            "They move to another department.",
+            "They finish at the end of this week."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "bc-briefing-projects",
+          "explanationZh": "通知说现任负责人本周末离任，接任者下个月月底开始；这期间项目照常继续。"
+        },
+        {
+          "id": "en-briefing-2",
+          "prompt": "An employee arrives at 9 a.m. during the car park works. Where should they park?",
+          "promptZh": "停车场施工期间，一位员工早上九点到达，应把车停在哪里？",
+          "options": [
+            "At the main staff car park.",
+            "At the small Brown Street car park.",
+            "At the local church car park.",
+            "At a nearby public car park."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "bc-briefing-parking",
+          "explanationZh": "临时安排以八点半为分界；九点在八点半之后，所以应直接去教堂停车场。主停车场施工关闭，Brown Street 的小停车场用于更早到达的人。"
+        },
+        {
+          "id": "en-briefing-3",
+          "prompt": "How is food paid for when an employee uses a company ID card?",
+          "promptZh": "员工用公司证件卡付餐费后，费用怎样结算？",
+          "options": [
+            "It is taken from the monthly salary.",
+            "It is paid by bank transfer each week.",
+            "It is paid with cash at the month’s end.",
+            "It is paid through a separate monthly bill."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "bc-briefing-payment",
+          "explanationZh": "使用公司证件卡支付的总额会在每个月末从工资中扣除；这与停车安排无关。"
         }
       ]
     }

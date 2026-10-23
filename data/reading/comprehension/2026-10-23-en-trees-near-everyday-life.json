@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-23-en-trees-near-everyday-life",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "How are the two parts of the funding connected?",
+      "options": [
+        "One supports existing woodland and the other supports new woodland.",
+        "One funds farm equipment and the other funds household gardens.",
+        "One supports trees outside woods and the other supports local recovery work.",
+        "One repairs parks and the other funds research into tree diseases."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s4",
+        "s5",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第3—5句明确是林地外植树基金，第10—11句为地方自然恢复；不能换成现有与新林地、农具家庭花园或公园与树病研究的分工。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What does the figure of 500,000 describe?",
+      "options": [
+        "Trees already planted by September 2026.",
+        "The upper target for trees supported outside woodlands.",
+        "The number of woodland owners who can apply.",
+        "Trees to be planted separately by each authority."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "up to为上限，且第6句明确尚非已完成的植树数量，也不是每个地方政府单独的目标。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Why does the article compare a wetland with a hot street?",
+      "options": [
+        "To explain how the two funds will be shared equally.",
+        "To describe projects already completed with the new money.",
+        "To compare the number of authorities in rural and urban areas.",
+        "To show how local risks can lead to different choices."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "第13句分别列举湿地减轻洪水风险和树木为街道降温，第14句总结各地可以有不同优先事项；不是平分资金、完成项目或比较地方政府数量。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Which information was not yet provided in full at the announcement?",
+      "options": [
+        "Further details of the Community Trees Fund.",
+        "The total amount of the two funding parts.",
+        "The planned years of the Community Trees Fund.",
+        "Examples of people involved in local strategies."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s4",
+        "s12",
+        "s15"
+      ],
+      "explanationZh": "第15句明确指出树木基金细节待公布；总额、时间和参与者的例子都已写出。"
+    }
+  ]
+}
