@@ -1,0 +1,330 @@
+{
+  "editionDate": "2026-10-24",
+  "baseCommit": "d76c322489b5eee326fadc0504bc302480cb13b0",
+  "qualityStatus": "PASS",
+  "scope": "9 independent readings;45 cloze and36 comprehension questions. IT/FR/EN A2/B1/B2.",
+  "missingSlots": [
+    {
+      "lang": "de",
+      "level": "A2",
+      "reason": "No additional distinct recent native-source full text passed accessibility, rights and nonduplication requirements; no padding."
+    },
+    {
+      "lang": "de",
+      "level": "B1",
+      "reason": "No additional distinct recent native-source full text passed accessibility, rights and nonduplication requirements; no padding."
+    },
+    {
+      "lang": "de",
+      "level": "B2",
+      "reason": "No additional distinct recent native-source full text passed accessibility, rights and nonduplication requirements; no padding."
+    }
+  ],
+  "reviewProtocol": "Blind article/questions before answer keys; final source facts, translations, licence and answer/evidence audit; revisions rechecked.",
+  "independentReviews": {
+    "it-fr": {
+      "status": "pass",
+      "reviewer": "root-independent",
+      "scope": "6 IT/FR articles,30 cloze,24 comprehension; blind answers before keys; primary facts, Chinese, learning summaries, source licensing and final SHA256 checked",
+      "fixes": [
+        "FR A2 metaphor and stale explanation",
+        "IT A2 gold container versus wax seal",
+        "B1 and FR B2 distractor/inference revisions",
+        "FR B2 sixieme Chinese correction"
+      ],
+      "sources": [
+        "https://www.culture.gouv.fr/mentions-legales",
+        "https://cultura.gov.it/note-legali",
+        "https://www.istat.it/note-legali/",
+        "INGV per-article CC BY4 footer"
+      ],
+      "files": {
+        "data/reading/articles/2026-10-24-fr-decouvrir-au-dela-des-ecrans.json": "4d9c251247a375d5f0ade6aead9e93c537bbaafcc0f52b7893a02dae5015fec5",
+        "data/reading/practice/2026-10-24-fr-decouvrir-au-dela-des-ecrans.json": "8b176673fe4d0f81e1fa66264b81635c36a5391a18b1fc14764263e55c8284fe",
+        "data/reading/comprehension/2026-10-24-fr-decouvrir-au-dela-des-ecrans.json": "3bcdcf65244a32115a92d14a2d9af55e634e2bd3a880e327131d98e81937deca",
+        "data/reading/articles/2026-10-24-fr-deux-lieux-pour-se-rencontrer.json": "6cd549a13ac74875e3f797340d7b7909eef98f196e715a3e5f11ee13660a3de9",
+        "data/reading/practice/2026-10-24-fr-deux-lieux-pour-se-rencontrer.json": "9db0f4d0f4b045eb48cd1eea77d4e28bd687a6444809097033c486a37a364c5e",
+        "data/reading/comprehension/2026-10-24-fr-deux-lieux-pour-se-rencontrer.json": "2bfe59d8f8d1b497bc1e8ebdccabe5b9510d2de3e0113926db8450eb7a029c6c",
+        "data/reading/articles/2026-10-24-fr-les-musees-travaillent-ensemble.json": "a3c1068f6b394685d7fa1d1758aac8f85f80dbe89556038f55a4135d46367e6c",
+        "data/reading/practice/2026-10-24-fr-les-musees-travaillent-ensemble.json": "cf4af10fcb9e8a19b4f0d2e63ff1de0abb9d8960ef5a5cae85e59bdcfede8c07",
+        "data/reading/comprehension/2026-10-24-fr-les-musees-travaillent-ensemble.json": "074982543c258490713143b7483abeed21e29140d04c71f829d656425903d361",
+        "data/reading/articles/2026-10-24-it-commercio-leggere-periodi-e-misure.json": "c2c648e9952e52aa85f0a4ccdd7318fde990872bbd27c4e80b65b8306aba7414",
+        "data/reading/practice/2026-10-24-it-commercio-leggere-periodi-e-misure.json": "1b3b3ec32b9f924a26f790b6792a10161563b31c10890a1393a22019f661c733",
+        "data/reading/comprehension/2026-10-24-it-commercio-leggere-periodi-e-misure.json": "d99fd6b93d71941f21538050b181dbfb2b0bb5123b4e263363731fe35920cdf5",
+        "data/reading/articles/2026-10-24-it-il-sole-e-i-servizi-quotidiani.json": "1799d6b2bc12190232541496463e665f8abdcf29086cb6d0dd7bad7d30a6d3c8",
+        "data/reading/practice/2026-10-24-it-il-sole-e-i-servizi-quotidiani.json": "17b6701209adfe287b04460c9679ad8d8710f4e0af309ec8549f311a1dcce47d",
+        "data/reading/comprehension/2026-10-24-it-il-sole-e-i-servizi-quotidiani.json": "50e8fb851ace8765d5adbfc4068a3ac82309ec7ea103c48dd0abc0cba012f27f",
+        "data/reading/articles/2026-10-24-it-un-mistero-in-archivio.json": "543550d3e35611426767e094d8946c3e311e87491ba0325971fad15308fb47aa",
+        "data/reading/practice/2026-10-24-it-un-mistero-in-archivio.json": "89d34d8cd21d76c378a677ae4155353346efc4a6b38f11b44dedc5e5297a6ec9",
+        "data/reading/comprehension/2026-10-24-it-un-mistero-in-archivio.json": "f65728e587acc9addef382da84fec5bc875caf6f555b5c720d56bea25fc8dd07"
+      }
+    },
+    "en": {
+      "checkedAt": "2026-10-24",
+      "status": "PASS",
+      "reviewer": "coordinator-independent-of-author",
+      "blindFirst": true,
+      "blindAnswersZeroBased": {
+        "A2": [
+          2,
+          0,
+          3
+        ],
+        "B1": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "B2": [
+          3,
+          1,
+          2,
+          0,
+          3
+        ]
+      },
+      "checks": [
+        "All article sentences, Chinese translations, numerical facts, tense and source scope checked against independently fetched official full pages (all HTTP200).",
+        "Official From publisher and original dates verified; article OGL3 footer and GOV.UK Using GOV.UK content terms inspected; no third-party quotes/media reused.",
+        "All15cloze answers solved with Chinese/context/options, correct morphology and unique alternatives; summary exact surfaces checked.",
+        "All12comprehension answers solved blind before keys; evidence/Chinese explanations checked after revisions; weak distractors, answer length cues and false inference labels corrected.",
+        "A2 158words;B1 282words;B2 501words. B2 September announcement explicitly historical, not current application advice."
+      ],
+      "revisionsRechecked": [
+        "B1 ambiguity before supplies stopped removed;drought Chinese scope England clarified.",
+        "B1 rainfall question requires exact period/threshold rather than title-level guess.",
+        "B2 swapped generic cautious-answer mainidea for two-denominator comparison; options balanced and stale explanations corrected."
+      ],
+      "limits": [
+        "National Archives OGL deed fetch403 respected; licence basis is article explicit OGLv3 plus official GOV.UK reuse terms and registered OGL conditions."
+      ],
+      "finalFileSha256": {
+        "data/reading/articles/2026-10-24-en-time-to-save-an-old-axe.json": "a809af3c102e6ac7b497d6a3a41410b0bc98841568f3c83477da4e0d6ee5fc88",
+        "data/reading/articles/2026-10-24-en-farm-funding-and-counting.json": "f6b1512f61bf2e8b3599c2053459ba49926590bf29f8a990f453b57d0c4c7ce8",
+        "data/reading/articles/2026-10-24-en-rain-and-water-reserves.json": "7805a2ed57a75c6c1cccf74e24d55967432142521aeb295a707f3e04aa8b8e60",
+        "data/reading/practice/2026-10-24-en-time-to-save-an-old-axe.json": "cff89e8392504f7afc8a62f21eaade34cc021ab3ec583e06e9834d37a255b5ec",
+        "data/reading/practice/2026-10-24-en-farm-funding-and-counting.json": "d8b234620f8bc5346ca366cb267c372f3fd35375d7f29f2a26cfaca201307744",
+        "data/reading/practice/2026-10-24-en-rain-and-water-reserves.json": "349cfbde4ca37c300867cf90253478e96b8e9584c1ad73a9faaa1261afa8b0e5",
+        "data/reading/comprehension/2026-10-24-en-time-to-save-an-old-axe.json": "7eaee1004cc1e46aad5d2188f95257b0ce84c07ec0a3c021e8cb85c93bc61fbe",
+        "data/reading/comprehension/2026-10-24-en-farm-funding-and-counting.json": "f89cc27f47e90cf32e5582adcb83203c6cd83785b229ab6ad60bc4ff84fc65db",
+        "data/reading/comprehension/2026-10-24-en-rain-and-water-reserves.json": "7b895648cfeb093cccb5720b9211cff45c11b464cf6628c4fdefbce4e3a457c8"
+      },
+      "postRevisionReview": "Two Chinese explanation fixes independently checked by root; final hashes match."
+    }
+  },
+  "sourceReviews": {
+    "it-fr": [
+      {
+        "articleId": "2026-10-24-fr-les-musees-travaillent-ensemble",
+        "candidateId": "fr-2026-10-22-museum7-cooperation",
+        "source": {
+          "name": "Ministère de la Culture",
+          "title": "Lancement par la France de deux initiatives de coopération culturelle internationale dans le cadre de la présidence française du G7",
+          "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
+          "publishedAt": "2026-10-22",
+          "lang": "fr"
+        },
+        "licenseEvidence": "https://www.culture.gouv.fr/mentions-legales",
+        "wordCount": 285,
+        "level": "B1",
+        "checkedAt": "2026-10-24",
+        "adaptationScope": "Same-language institutional-text adaptation; all Chinese and exercises are educational additions; no media/external quotations.",
+        "nativeProvenance": "Institutional original-language inference; no personal byline or translator on source.",
+        "sourceFactsReview": "Passed source-author self-check; independent root review separately recorded, do not conflate.",
+        "hashes": {
+          "articles": "a3c1068f6b394685d7fa1d1758aac8f85f80dbe89556038f55a4135d46367e6c",
+          "practice": "cf4af10fcb9e8a19b4f0d2e63ff1de0abb9d8960ef5a5cae85e59bdcfede8c07",
+          "comprehension": "074982543c258490713143b7483abeed21e29140d04c71f829d656425903d361"
+        }
+      },
+      {
+        "articleId": "2026-10-24-it-il-sole-e-i-servizi-quotidiani",
+        "candidateId": "it-2026-10-19-ingv-space-weather-monitoring",
+        "source": {
+          "name": "INGV Ufficio Stampa",
+          "title": "SPACE WEATHER | L’INGV inaugura la nuova Sala di Monitoraggio a Roma",
+          "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/space-weather-l-ingv-inaugura-la-nuova-sala-di-monitoraggio-a-roma",
+          "publishedAt": "2026-10-19",
+          "lang": "it"
+        },
+        "licenseEvidence": "https://www.ingv.it/note-legali",
+        "wordCount": 283,
+        "level": "B1",
+        "checkedAt": "2026-10-24",
+        "adaptationScope": "Same-language institutional-text adaptation; all Chinese and exercises are educational additions; no media/external quotations.",
+        "nativeProvenance": "Institutional original-language inference; no personal byline or translator on source.",
+        "sourceFactsReview": "Passed source-author self-check; independent root review separately recorded, do not conflate.",
+        "hashes": {
+          "articles": "1799d6b2bc12190232541496463e665f8abdcf29086cb6d0dd7bad7d30a6d3c8",
+          "practice": "17b6701209adfe287b04460c9679ad8d8710f4e0af309ec8549f311a1dcce47d",
+          "comprehension": "50e8fb851ace8765d5adbfc4068a3ac82309ec7ea103c48dd0abc0cba012f27f"
+        }
+      },
+      {
+        "articleId": "2026-10-24-fr-decouvrir-au-dela-des-ecrans",
+        "candidateId": "fr-2026-10-23-passe-culture-2030",
+        "source": {
+          "name": "Ministère de la Culture",
+          "title": "Passe Culture : de nouveaux objectifs à l’horizon 2030",
+          "url": "https://www.culture.gouv.fr/actualites/passe-culture-de-nouveaux-objectifs-a-l-horizon-2030",
+          "publishedAt": "2026-10-23",
+          "lang": "fr"
+        },
+        "licenseEvidence": "https://www.culture.gouv.fr/mentions-legales",
+        "wordCount": 556,
+        "level": "B2",
+        "checkedAt": "2026-10-24",
+        "adaptationScope": "Same-language institutional-text adaptation; all Chinese and exercises are educational additions; no media/external quotations.",
+        "nativeProvenance": "Institutional original-language inference; no personal byline or translator on source.",
+        "sourceFactsReview": "Passed source-author self-check; independent root review separately recorded, do not conflate.",
+        "hashes": {
+          "articles": "4d9c251247a375d5f0ade6aead9e93c537bbaafcc0f52b7893a02dae5015fec5",
+          "practice": "8b176673fe4d0f81e1fa66264b81635c36a5391a18b1fc14764263e55c8284fe",
+          "comprehension": "3bcdcf65244a32115a92d14a2d9af55e634e2bd3a880e327131d98e81937deca"
+        }
+      },
+      {
+        "articleId": "2026-10-24-fr-deux-lieux-pour-se-rencontrer",
+        "candidateId": "fr-2026-10-20-chateauvallon-liberte",
+        "source": {
+          "name": "Ministère de la Culture",
+          "title": "Nomination de Frédéric RÉMY à la direction de Châteauvallon-Liberté, Scène nationale de Toulon et Ollioules",
+          "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
+          "publishedAt": "2026-10-20",
+          "lang": "fr"
+        },
+        "licenseEvidence": "https://www.culture.gouv.fr/mentions-legales",
+        "wordCount": 163,
+        "level": "A2",
+        "checkedAt": "2026-10-24",
+        "adaptationScope": "Same-language institutional-text adaptation; all Chinese and exercises are educational additions; no media/external quotations.",
+        "nativeProvenance": "Institutional original-language inference; no personal byline or translator on source.",
+        "sourceFactsReview": "Passed source-author self-check; independent root review separately recorded, do not conflate.",
+        "hashes": {
+          "articles": "6cd549a13ac74875e3f797340d7b7909eef98f196e715a3e5f11ee13660a3de9",
+          "practice": "9db0f4d0f4b045eb48cd1eea77d4e28bd687a6444809097033c486a37a364c5e",
+          "comprehension": "2bfe59d8f8d1b497bc1e8ebdccabe5b9510d2de3e0113926db8450eb7a029c6c"
+        }
+      },
+      {
+        "articleId": "2026-10-24-it-commercio-leggere-periodi-e-misure",
+        "candidateId": "it-2026-10-16-trade-august",
+        "source": {
+          "name": "Istat",
+          "title": "Commercio con l’estero e prezzi all’import - Agosto 2026",
+          "url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
+          "publishedAt": "2026-10-16",
+          "lang": "it"
+        },
+        "licenseEvidence": "https://www.istat.it/note-legali/",
+        "wordCount": 527,
+        "level": "B2",
+        "checkedAt": "2026-10-24",
+        "adaptationScope": "Same-language institutional-text adaptation; all Chinese and exercises are educational additions; no media/external quotations.",
+        "nativeProvenance": "Institutional original-language inference; no personal byline or translator on source.",
+        "sourceFactsReview": "Passed source-author self-check; independent root review separately recorded, do not conflate.",
+        "hashes": {
+          "articles": "c2c648e9952e52aa85f0a4ccdd7318fde990872bbd27c4e80b65b8306aba7414",
+          "practice": "1b3b3ec32b9f924a26f790b6792a10161563b31c10890a1393a22019f661c733",
+          "comprehension": "d99fd6b93d71941f21538050b181dbfb2b0bb5123b4e263363731fe35920cdf5"
+        }
+      },
+      {
+        "articleId": "2026-10-24-it-un-mistero-in-archivio",
+        "candidateId": "it-2026-10-09-dga-bolla-oro",
+        "source": {
+          "name": "Ministero della Cultura — Direzione generale Archivi",
+          "title": "Trafug’Arte racconta il mistero della Bolla d’oro di Carlo V conservata all’Archivio di Stato di Milano",
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=7500cc7b97eaaf8dd119ae7c50c544e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2802",
+          "publishedAt": "2026-10-09",
+          "lang": "it"
+        },
+        "licenseEvidence": "https://cultura.gov.it/note-legali",
+        "wordCount": 164,
+        "level": "A2",
+        "checkedAt": "2026-10-24",
+        "adaptationScope": "Same-language institutional-text adaptation; all Chinese and exercises are educational additions; no media/external quotations.",
+        "nativeProvenance": "Institutional original-language inference; no personal byline or translator on source.",
+        "sourceFactsReview": "Passed source-author self-check; independent root review separately recorded, do not conflate.",
+        "hashes": {
+          "articles": "543550d3e35611426767e094d8946c3e311e87491ba0325971fad15308fb47aa",
+          "practice": "89d34d8cd21d76c378a677ae4155353346efc4a6b38f11b44dedc5e5297a6ec9",
+          "comprehension": "f65728e587acc9addef382da84fec5bc875caf6f555b5c720d56bea25fc8dd07"
+        }
+      }
+    ],
+    "en": {
+      "checkedAt": "2026-10-24",
+      "draftStatus": "PASS independent review completed",
+      "sources": [
+        {
+          "articleId": "2026-10-24-en-farm-funding-and-counting",
+          "source": {
+            "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+            "title": "£233 million fund to help more farmers boost food production and protect the land",
+            "url": "https://www.gov.uk/government/news/233-million-fund-to-help-more-farmers-boost-food-production-and-protect-the-land",
+            "publishedAt": "2026-09-22",
+            "lang": "en",
+            "author": "Department for Environment, Food & Rural Affairs; Rural Payments Agency; Stephen Morgan MP"
+          },
+          "sourceFullHtmlHttpStatus": 200,
+          "sourceFullHtmlSha256": "e18f89941140ade1afaad39c274274c1c5d34368f987ec0d155c6e33cc3a436b",
+          "licenseBasis": "Article-specific OGLv3 footer + official GOV.UK Using GOV.UK content terms; excluded quotations/images/logos/thirdpartyworks. NationalArchivesdeed403notbypassed.",
+          "bodyWords": 501,
+          "facts": "233m includes50m+3m;7000applications vs3100live1Sep;atleast3hectareseligibility;earlyrouteagreementsendFeb2027;SBIbusinessnotperson;54300overall/21300expiring;18Sepmanagementdata rounded, overlappingcategories. Teacherinferences about no proof of outcomes/notallpaid/no doubleadding derived transparently."
+        },
+        {
+          "articleId": "2026-10-24-en-rain-and-water-reserves",
+          "source": {
+            "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+            "title": "Water company bosses update National Drought Group on resilience",
+            "url": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
+            "publishedAt": "2026-10-20",
+            "lang": "en",
+            "author": "Department for Environment, Food & Rural Affairs; Environment Agency; Emma Hardy MP"
+          },
+          "sourceFullHtmlHttpStatus": 200,
+          "sourceFullHtmlSha256": "a3b13493e0d2b210f9c8a0a8fa6de523c7cfb490837acc2ffa8de62ecfaa36ee",
+          "licenseBasis": "Article-specific OGLv3 footer + official GOV.UK Using GOV.UK content terms; excluded quotations/images/logos/thirdpartyworks. NationalArchivesdeed403notbypassed.",
+          "bodyWords": 282,
+          "facts": "20Octreport; priorweekseveredrought6counties;publicsuppliesuninterrupted;dailychecks/leaks/transfer/nightpressure;permitsgrantedvsbusinessbansunderconsideration;fishrescueplanned;atleast120%averagerainfallnext6months. Excludesquoted promises."
+        },
+        {
+          "articleId": "2026-10-24-en-time-to-save-an-old-axe",
+          "source": {
+            "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+            "title": "Minister steps in to help save a prehistoric British battle-axe head from leaving the UK",
+            "url": "https://www.gov.uk/government/news/minister-steps-in-to-help-save-a-prehistoric-british-battle-axe-head-from-leaving-the-uk",
+            "publishedAt": "2026-10-23",
+            "lang": "en",
+            "author": "Department for Digital, Culture, Media and Sport; Baroness Twycross"
+          },
+          "sourceFullHtmlHttpStatus": 200,
+          "sourceFullHtmlSha256": "1b97e49c87105e4f5d6efb68c9b6eab69aae1457dedbc5552c7ee9800988fbd5",
+          "licenseBasis": "Article-specific OGLv3 footer + official GOV.UK Using GOV.UK content terms; excluded quotations/images/logos/thirdpartyworks. NationalArchivesdeed403notbypassed.",
+          "bodyWords": 158,
+          "facts": "4,000years; BronzeAge; winter1974farmdiscovery;120mm→12cm;360g;exportbar23Oct;firstperiod22Dec2026;recommended15000;purchase notcompleted. All from institutional narrative/notes, noquoteused."
+        }
+      ],
+      "reviewerNote": "Author self-check only; independent approval recorded elsewhere. No blind or final pass claim."
+    }
+  },
+  "freshness": "Eight readings within30days; EN farming32days fallback, original date retained.",
+  "reserveStatus": "Selected verified material does not constitute a full seven-day approved reserve; queue retained with discovery distinct from editorial approval.",
+  "validation": {
+    "status": "PASS",
+    "readingArticles": 116,
+    "candidates": 126,
+    "practiceCompanions": 104,
+    "comprehensionCompanions": 77,
+    "comprehensionQuestions": 308,
+    "practiceTests": "3558 passed,0 failed",
+    "comprehensionTests": "3596 passed,0 failed",
+    "comprehensionLoading": "9 passed,0 failed",
+    "listeningTests": "363 passed,0 failed",
+    "fullSuite": "TZ=UTC npm test:44 harnesses,482337 passed,0 failed,0 known issues",
+    "editionDOM": "91 passed,9 new editions; not browser layout or audio validation",
+    "historicalReadingHashes": "270 historical article/practice/comprehension JSON unchanged"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-en-rain-and-water-reserves",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Which description best matches the report?",
+      "options": [
+        "Companies were refilling reservoirs after restrictions had been lifted.",
+        "Companies were protecting supplies while longer-term drought pressure continued.",
+        "Companies were waiting for rainfall before starting their daily checks.",
+        "Companies were responding after public water supplies had been interrupted."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s6",
+        "s7",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "供水仍持续，水务公司采取保护措施，而摆脱旱情需要持续降雨；其余选项把未发生或未完成的事说成已完成。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Which measure was described as still under consideration?",
+      "options": [
+        "Checking river levels every day.",
+        "Finding leaks more quickly.",
+        "Preparing fish rescue plans.",
+        "Restricting non-essential business water use."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6",
+        "s7",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "s10说非必要商业用水限制仍在审议；其他列出的工作在进行或准备中。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Why did the severe-drought declaration matter while public supplies were still continuing?",
+      "options": [
+        "It allowed extra measures to protect supplies in advance.",
+        "It confirmed that recent rain had restored reservoir levels.",
+        "It moved responsibility for public supplies to local communities.",
+        "It announced the approval of the pending business-use bans."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s4",
+        "s5",
+        "s10",
+        "s16"
+      ],
+      "explanationZh": "宣布旱情使预防性保护措施得以采取；供水责任并未转给居民，也不意味着申请自动批准。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "What did the agency estimate was needed for the country to be considered out of drought by early spring?",
+      "options": [
+        "Rainfall at the usual average level during the next six months.",
+        "Rainfall at 120 percent of the average during the next month.",
+        "Rainfall at least 120 percent of the average during the next six months.",
+        "Rainfall above the average level during the first half of October."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s14"
+      ],
+      "explanationZh": "s14同时限定未来六个月和平均水平的至少120%；其他选项改变了时间或数量门槛。"
+    }
+  ]
+}

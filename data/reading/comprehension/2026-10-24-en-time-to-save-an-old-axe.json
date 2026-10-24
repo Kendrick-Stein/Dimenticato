@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-en-time-to-save-an-old-axe",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "What does the new decision give museums a chance to do?",
+      "options": [
+        "Borrow the object for a short trip abroad.",
+        "Find another axe at the same farm.",
+        "Buy the object and keep it for public display.",
+        "Move the object back to the place of discovery."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "暂时限制出口是为了给合适机构筹款购买、留在国内展示的时间；不是出借、寻找另一件或送回发现地。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "How was the axe head discovered?",
+      "options": [
+        "During work on a farm in 1974.",
+        "During work in a museum in 2026.",
+        "During a journey abroad in 1974.",
+        "During a public exhibition in 2026."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3"
+      ],
+      "explanationZh": "s3说明1974年冬天在农活中发现；2026年是出口决定的年份。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "What is still uncertain in the announcement?",
+      "options": [
+        "Whether the object is made of stone.",
+        "Whether it was found in North Yorkshire.",
+        "Whether it can help people study the past.",
+        "Whether a museum will manage to buy it."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s8",
+        "s10"
+      ],
+      "explanationZh": "s7–8给出争取购买的机会，s10明确未宣布已购得，因此最终能否买下仍未知。"
+    }
+  ]
+}

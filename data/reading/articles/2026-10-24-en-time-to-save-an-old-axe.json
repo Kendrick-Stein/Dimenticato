@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "id": "2026-10-24-en-time-to-save-an-old-axe",
+  "storyId": "dcms-scarthingwell-axe-2026-10-23",
+  "lang": "en",
+  "date": "2026-10-24",
+  "category": "culture",
+  "topics": [
+    "文化遗产"
+  ],
+  "title": "Time to save an old axe",
+  "titleZh": "为一件古老石斧争取时间",
+  "summaryZh": "一件约四千年前的石斧暂时不能出口，博物馆可以争取购买并向公众展示。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体文物和发现过程，短句与常见时态；文化专名配中文解释。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "Minister steps in to help save a prehistoric British battle-axe head from leaving the UK",
+    "url": "https://www.gov.uk/government/news/minister-steps-in-to-help-save-a-prehistoric-british-battle-axe-head-from-leaving-the-uk",
+    "publishedAt": "2026-10-23",
+    "lang": "en",
+    "author": "Department for Digital, Culture, Media and Sport; Baroness Twycross"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport; Baroness Twycross; 2026-10-23; https://www.gov.uk/government/news/minister-steps-in-to-help-save-a-prehistoric-british-battle-axe-head-from-leaving-the-uk",
+  "adaptation": "2026-10-24整理。依据机构英文叙述作同语言分级改写，添加中文译文、词义及原创练习；不是逐字原文或官方课程。排除照片、标志、直接引语及第三方内容。保留原报道日期；对原文数据的教学推论明确标注，不构成个人法律或申请建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "An old stone axe head from Scarthingwell is the subject of a new government decision.",
+      "zh": "一件来自Scarthingwell的古老石斧斧头成为政府一项新决定的对象。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "It is about four thousand years old and comes from the Bronze Age.",
+      "zh": "它已有约四千年历史，来自青铜时代。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "People found it during farm work in North Yorkshire in the winter of 1974.",
+      "zh": "1974年冬天，人们在北约克郡进行农活时发现了它。",
+      "glosses": [
+        {
+          "surface": "found",
+          "lemma": "find",
+          "zh": "发现了"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The object is small: it is about twelve centimetres long and weighs about 360 grams.",
+      "zh": "这件器物很小：长约十二厘米，重约360克。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Its surface is smooth, and it is still in very good condition.",
+      "zh": "它的表面很光滑，保存状况仍然很好。",
+      "glosses": [
+        {
+          "surface": "smooth",
+          "lemma": "smooth",
+          "zh": "光滑的"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "On 23 October 2026, the government announced a temporary stop to its export.",
+      "zh": "2026年10月23日，政府宣布暂时阻止它出口。",
+      "glosses": [
+        {
+          "surface": "temporary",
+          "lemma": "temporary",
+          "zh": "暂时的"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The aim is to give a British museum or another suitable institution time to buy it.",
+      "zh": "目的是给英国的博物馆或其他合适机构时间购买它。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "They can try to raise money and keep the axe head in the country for public display.",
+      "zh": "这些机构可以设法筹款，把石斧留在英国向公众展示。",
+      "glosses": [
+        {
+          "surface": "raise",
+          "lemma": "raise",
+          "zh": "筹集"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The first waiting period ends on 22 December 2026, and the recommended price is £15,000.",
+      "zh": "第一阶段的暂缓期到2026年12月22日结束，建议购买价为15,000英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "The announcement does not say that a museum has already bought the object.",
+      "zh": "这则公告没有说已有博物馆买下这件器物。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "The axe head can help researchers study the skills and lives of people long ago.",
+      "zh": "这件石斧可以帮助研究人员了解很久以前人们的技艺与生活。",
+      "glosses": [
+        {
+          "surface": "researchers",
+          "lemma": "researcher",
+          "zh": "研究人员"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "found",
+        "lemma": "find",
+        "zh": "发现了",
+        "sentenceId": "s3",
+        "note": "found是find的过去式，和1974年的发现事件对应。"
+      },
+      {
+        "text": "smooth",
+        "lemma": "smooth",
+        "zh": "光滑的",
+        "sentenceId": "s5",
+        "note": "smooth形容surface的质感，是光滑而不是粗糙、潮湿或黏的。"
+      },
+      {
+        "text": "temporary",
+        "lemma": "temporary",
+        "zh": "暂时的",
+        "sentenceId": "s6",
+        "note": "temporary表示暂时的，与有限的暂缓期一致。"
+      },
+      {
+        "text": "raise",
+        "lemma": "raise",
+        "zh": "筹集",
+        "sentenceId": "s8",
+        "note": "raise money是筹款；此处不是花钱、退钱或数钱。"
+      },
+      {
+        "text": "researchers",
+        "lemma": "researcher",
+        "zh": "研究人员",
+        "sentenceId": "s11",
+        "note": "researchers为复数，指研究历史器物的人。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "The aim is to",
+        "zh": "目的是",
+        "sentenceId": "s7",
+        "note": "用来说明行动目的。"
+      },
+      {
+        "text": "in very good condition",
+        "zh": "保存状况很好",
+        "sentenceId": "s5",
+        "note": "描述物品状况。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "does not say that区分报道明确说出的事实与尚未发生的结果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Why might a museum need time before buying an old object?",
+        "zh": "博物馆购买古物前为什么可能需要时间？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "The decision gives people time to…",
+        "zh": "这项决定给人们时间去……",
+        "note": "可复用教学表达，不是原文引语。"
+      }
+    ]
+  }
+}

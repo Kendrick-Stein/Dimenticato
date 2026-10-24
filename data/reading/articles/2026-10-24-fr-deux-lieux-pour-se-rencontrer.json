@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "id": "2026-10-24-fr-deux-lieux-pour-se-rencontrer",
+  "storyId": "fr-2026-10-20-chateauvallon-liberte",
+  "lang": "fr",
+  "date": "2026-10-24",
+  "title": "Deux lieux pour se rencontrer",
+  "titleZh": "两个相遇的文化场所",
+  "summaryZh": "土伦与奥利乌勒的两个演出场地，准备通过新项目把艺术家与公众联系起来。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体场景、短句与常用动词；专业词提供中文逐句辅助。",
+  "category": "culture",
+  "topics": [
+    "文化参与",
+    "艺术与日常"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Nomination de Frédéric RÉMY à la direction de Châteauvallon-Liberté, Scène nationale de Toulon et Ollioules",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
+    "publishedAt": "2026-10-20",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：Ministère de la Culture（机构作者，未单列个人署名）；原题、原日期和原链接见来源。依据 CC BY-SA 3.0 FR 使用；Dimenticato 同语言分级改写、中文翻译与教学补充亦按该许可发布，不代表原机构认可。",
+  "adaptation": "2026-10-24整理，非当日原文。仅依据原语机构正文改写并配中文翻译；不转载图片、媒体、外链附件、第三方引语。词汇、理解题与口语问题为教学补充；保留原报道日期、事件时序与事实/计划之别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Châteauvallon-Liberté réunit deux lieux de spectacle dans le sud de la France.",
+      "zh": "Châteauvallon-Liberté 汇集了法国南部的两个演出场所。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Le Liberté se trouve au centre de Toulon, tandis que Châteauvallon est sur une colline à Ollioules.",
+      "zh": "Liberté 位于土伦市中心，而 Châteauvallon 坐落在奥利乌勒的一座山丘上。",
+      "glosses": [
+        {
+          "surface": "colline",
+          "lemma": "colline",
+          "zh": "山丘",
+          "note": "阴性单数名词；sur une colline 表示在一座山丘上。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "À Châteauvallon, il y a aussi un amphithéâtre en plein air.",
+      "zh": "Châteauvallon 还有一个露天圆形剧场。",
+      "glosses": [
+        {
+          "surface": "air",
+          "lemma": "air",
+          "zh": "室外空气",
+          "note": "en plein air 是固定表达，意为“在露天”。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Le 20 octobre 2026, le ministère de la Culture annonce la nomination de Frédéric Rémy à la direction de cet ensemble.",
+      "zh": "2026年10月20日，法国文化部宣布任命弗雷德里克·雷米领导这一文化机构。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Son projet s’appelle Ce qui nous lie et propose une maison ouverte à tous.",
+      "zh": "他的项目名为“将我们联系在一起的事物”，希望让这里成为一个向所有人开放的家。",
+      "glosses": [
+        {
+          "surface": "maison",
+          "lemma": "maison",
+          "zh": "家",
+          "note": "这里是比喻，表示共同参与的开放场所，不是私人住房。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Les artistes, les œuvres et les publics doivent circuler entre les deux sites et vers les quartiers.",
+      "zh": "艺术家、作品和观众将往来于两个场地，并走向各个街区。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Le programme prévu suit les quatre saisons, avec des spectacles en salle et dans l’amphithéâtre.",
+      "zh": "计划中的节目安排顺应四季，包括室内和圆形剧场的演出。",
+      "glosses": [
+        {
+          "surface": "saisons",
+          "lemma": "saison",
+          "zh": "季节",
+          "note": "阴性复数，les quatre saisons 为四季。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Chaque cycle commence par un événement dans l’espace public ou dans un lieu particulier du territoire.",
+      "zh": "每个系列将以公共空间或当地特别场所的一次活动开场。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Pour les jeunes, le projet prévoit des Classes ouvertes avec l’Éducation nationale.",
+      "zh": "针对年轻人，项目计划与国民教育部门合作开设“开放课堂”。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il prévoit aussi une présence régulière dans les quartiers prioritaires de Toulon et d’Ollioules.",
+      "zh": "项目也计划定期进入土伦和奥利乌勒的优先扶持街区。",
+      "glosses": [
+        {
+          "surface": "régulière",
+          "lemma": "régulier",
+          "zh": "定期的",
+          "note": "阴性单数，与 présence 一致；强调反复、稳定出现。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Ces actions sont des projets annoncés : le texte ne présente pas encore leurs résultats.",
+      "zh": "这些行动是已经宣布的计划：文章尚未呈现其成果。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "colline",
+        "lemma": "colline",
+        "zh": "山丘",
+        "sentenceId": "s2",
+        "note": "阴性单数名词；sur une colline 表示在一座山丘上。"
+      },
+      {
+        "text": "air",
+        "lemma": "air",
+        "zh": "室外空气",
+        "sentenceId": "s3",
+        "note": "en plein air 是固定表达，意为“在露天”。"
+      },
+      {
+        "text": "maison",
+        "lemma": "maison",
+        "zh": "家",
+        "sentenceId": "s5",
+        "note": "这里是比喻，表示共同参与的开放场所，不是私人住房。"
+      },
+      {
+        "text": "saisons",
+        "lemma": "saison",
+        "zh": "季节",
+        "sentenceId": "s7",
+        "note": "阴性复数，les quatre saisons 为四季。"
+      },
+      {
+        "text": "régulière",
+        "lemma": "régulier",
+        "zh": "定期的",
+        "sentenceId": "s10",
+        "note": "阴性单数，与 présence 一致；强调反复、稳定出现。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "au centre de",
+        "zh": "在……中心",
+        "sentenceId": "s2",
+        "note": "de 后接地名；au 是 à 与 le 的缩合。"
+      },
+      {
+        "text": "en plein air",
+        "zh": "在露天",
+        "sentenceId": "s3",
+        "note": "谈户外演出、活动时可以使用。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "ne… pas encore 表示“还没有”，提醒区分计划与已见成果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Préfères-tu voir un spectacle en salle ou en plein air? Pourquoi?",
+        "zh": "你更喜欢室内还是露天演出？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Je préfère… parce que…",
+        "zh": "我更喜欢……，因为……",
+        "note": "可按自己的观点替换后半句。"
+      }
+    ]
+  }
+}

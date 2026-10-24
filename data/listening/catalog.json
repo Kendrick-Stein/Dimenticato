@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-23",
+  "verifiedAt": "2026-10-24",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -977,6 +977,239 @@
           "answerIndex": 0,
           "evidenceRef": "bc-briefing-payment",
           "explanationZh": "使用公司证件卡支付的总额会在每个月末从工资中扣除；这与停车安排无关。"
+        }
+      ]
+    },
+    {
+      "id": "it-rai-ristorante-a2",
+      "lang": "it",
+      "title": "Le parole dell’italiano: al ristorante per la decima volta",
+      "titleZh": "餐厅点菜：主菜、配菜与饮料",
+      "provider": "Rai Scuola",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-al-ristorante-per-la-decima-volta-9d617212-a35e-4306-98b9-2ed64afedfd3.html",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-24",
+      "sourcePublishedAt": "2021-06-14",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青课程：听朋友们在餐厅点菜，分辨每个人的选择。",
+      "guideZh": "第一遍听人物点了什么；第二遍区分主菜、配菜和饮料。再选一句礼貌点菜的表达跟读。原站媒体标注可用地区为意大利。",
+      "verificationZh": "依据官方对应文字稿核对原创题；日期来自官方页面元数据，按常青课程收录。未实际检验播放或音质。官方媒体元数据标注可用地区 IT，实际可用性以原站为准。",
+      "vocabulary": [
+        {
+          "text": "un primo",
+          "zh": "第一道菜（通常是面食或米饭）"
+        },
+        {
+          "text": "un contorno",
+          "zh": "配菜"
+        },
+        {
+          "text": "il conto",
+          "zh": "账单"
+        },
+        {
+          "text": "un’aranciata",
+          "zh": "橙味饮料"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-ristorante-1",
+          "prompt": "Chi prende i ravioli?",
+          "promptZh": "谁选择了意式馅饺？",
+          "options": [
+            "Salif e Olga.",
+            "Tutti e tre gli amici.",
+            "Salif e Fela.",
+            "Olga e Fela."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "rai-ristorante-ravioli",
+          "explanationZh": "服务员推荐当日特色馅饺后，Salif 表示赞同，Fela 接着说自己也要；Olga 选择的是鱼和沙拉。"
+        },
+        {
+          "id": "it-ristorante-2",
+          "prompt": "Perché Olga non prende un primo?",
+          "promptZh": "Olga 为什么不点第一道菜？",
+          "options": [
+            "Vuole mangiare leggero.",
+            "Ha già mangiato la pasta.",
+            "Preferisce soltanto un dolce.",
+            "Non le piace la specialità."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "rai-ristorante-olga",
+          "explanationZh": "讲解明确说明 Olga 想吃得清淡一些，因此略过第一道菜，点剑鱼和沙拉；没有说她已吃过面食或不喜欢特色菜。"
+        },
+        {
+          "id": "it-ristorante-3",
+          "prompt": "Che cosa aggiunge Salif quando si ordinano le bevande?",
+          "promptZh": "点饮料时，Salif 又要了什么？",
+          "options": [
+            "Un caffè.",
+            "Un succo di mela.",
+            "Un bicchiere di latte.",
+            "Un’aranciata."
+          ],
+          "answerIndex": 3,
+          "evidenceRef": "rai-ristorante-drinks",
+          "explanationZh": "Olga 要矿泉水之后，Salif 加点橙味饮料；这不是咖啡、牛奶或苹果汁。"
+        }
+      ]
+    },
+    {
+      "id": "fr-tv5-voyages-a1",
+      "lang": "fr",
+      "title": "Voyages",
+      "titleZh": "旅行：听中学生谈假期",
+      "provider": "TV5MONDE · Hachette FLE",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/voyages",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-24",
+      "sourcePublishedAt": "2024-06-11",
+      "availableUntil": "2028-03-04",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "常青入门课程：借助旅行话题，练习辨认地点和假期词汇。",
+      "guideZh": "先听出熟悉的地名，再复听人物谈到的活动。需要时打开原站字幕，选一句与旅行有关的表达跟读。",
+      "verificationZh": "已核对官方 A1 分级、发布日期和可用期限；更新日期为2024-12-09。未取得完整对应文字稿，未实测媒体，不设置本站理解题。",
+      "vocabularyLabel": "原站课程词汇预习",
+      "vocabulary": [
+        {
+          "text": "des vacances",
+          "zh": "假期"
+        },
+        {
+          "text": "la campagne",
+          "zh": "乡村"
+        },
+        {
+          "text": "une forêt",
+          "zh": "森林"
+        },
+        {
+          "text": "une plage",
+          "zh": "海滩"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "de-logo-korallenriffe-20261023",
+      "lang": "de",
+      "title": "Korallenriffe: Deshalb sind sie wichtig – einfach erklärt",
+      "titleZh": "珊瑚礁：海底的生活空间",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/korallenriffe-wichtig-einfach-erklaert-100.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-10-24",
+      "sourcePublishedAt": "2026-10-23",
+      "duration": "1:32",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "一段关于珊瑚礁的短视频，练习听出海洋与栖息地主题词。",
+      "guideZh": "先看画面抓住整体话题，再尝试听出节目怎样解释珊瑚礁的作用。选择一小段反复听，不必一次记住所有信息。",
+      "verificationZh": "官方视频元数据标注2026-10-23及1分32秒；仅核对页面信息，未核验完整视频或逐字稿，不设理解题。母语儿童节目，未作 CEFR 分级。",
+      "vocabularyLabel": "主题预习词",
+      "vocabulary": [
+        {
+          "text": "das Korallenriff",
+          "zh": "珊瑚礁"
+        },
+        {
+          "text": "der Lebensraum",
+          "zh": "栖息地；生活空间"
+        },
+        {
+          "text": "das Meer",
+          "zh": "海洋"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "en-bc-meeting-time-a2",
+      "lang": "en",
+      "title": "Changing a meeting time",
+      "titleZh": "调整会议：原因与后续通知",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/changing-meeting-time",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-24",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青课程：听两位同事协调会议，抓住改期原因和通知方式。",
+      "guideZh": "第一遍听清谁提出调整；第二遍区分已有安排、提出的选择和最后的决定。最后留意如何把变动告诉其他人。",
+      "verificationZh": "依据官方对应文字稿核对原创题，并对照原站练习避免复制；原发布日期未标明，按常青课程收录。未实际检验播放或音质。",
+      "vocabulary": [
+        {
+          "text": "postpone",
+          "zh": "推迟"
+        },
+        {
+          "text": "bring forward",
+          "zh": "提前"
+        },
+        {
+          "text": "an agenda",
+          "zh": "议程"
+        },
+        {
+          "text": "confirm",
+          "zh": "确认"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-meeting-1",
+          "prompt": "Which day are Lucy and Anna discussing?",
+          "promptZh": "Lucy 和 Anna 讨论的是哪一天的会议？",
+          "options": [
+            "Next Monday.",
+            "Next Tuesday.",
+            "Next Thursday.",
+            "Next Friday."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "bc-meeting-opening",
+          "explanationZh": "Lucy 开头说明谈的是下周二的会议；结尾的周末祝福并不改变会议日期。"
+        },
+        {
+          "id": "en-meeting-2",
+          "prompt": "Why does Lucy need a different time?",
+          "promptZh": "Lucy 为什么需要另一个时间？",
+          "options": [
+            "She has a report to finish.",
+            "She has a visitor arriving at eleven.",
+            "She has another meeting at noon.",
+            "She has a training course in the afternoon."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "bc-meeting-central-office",
+          "explanationZh": "Lucy 解释自己中午十二点在总部另有一场重要会议，所以希望调整这场会议的时间；她的报告已经准备好了。"
+        },
+        {
+          "id": "en-meeting-3",
+          "prompt": "What will accompany Anna’s email about the change?",
+          "promptZh": "Anna 关于时间变动的邮件还会附上什么？",
+          "options": [
+            "A revised meeting invitation.",
+            "A copy of Lucy’s report.",
+            "A new office address.",
+            "A list of attendees."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "bc-meeting-email",
+          "explanationZh": "Anna 表示会向所有人发邮件确认时间变动，并附更新后的会议邀请；她并未说会附 Lucy 的报告或新的办公地址。"
         }
       ]
     }

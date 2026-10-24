@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-it-il-sole-e-i-servizi-quotidiani",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale descrizione riassume meglio la funzione della nuova sala?",
+      "promptZh": "哪项描述最能概括新监测室的作用？",
+      "options": [
+        "Organizzare voli sperimentali per studiare nuovi satelliti.",
+        "Osservare fenomeni solari utili a valutare effetti sulle tecnologie.",
+        "Sostituire i sistemi nazionali di previsione della pioggia.",
+        "Riparare direttamente i mezzi usati nei servizi di emergenza."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s5",
+        "s6",
+        "s10"
+      ],
+      "explanationZh": "观测对象是太阳活动等，目的是评估技术影响；不是试飞、普通天气预报或设备维修。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Qual è la situazione dell’inaugurazione il 24 ottobre 2026?",
+      "promptZh": "2026年10月24日时，揭幕处于什么状态？",
+      "options": [
+        "È già avvenuta durante due seminari.",
+        "È stata trasferita in un’altra città.",
+        "È prevista tre giorni dopo a Roma.",
+        "È sospesa fino alla fine di una tempesta."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "整理日为24日，原公告安排27日罗马揭幕，仍未到日期；未提迁址或延期。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Perché il testo collega il monitoraggio ai trasporti?",
+      "promptZh": "为什么文章把监测与交通联系起来？",
+      "options": [
+        "I trasporti usano tecnologie che possono subire effetti solari.",
+        "I trasporti raccolgono i dati principali sull’attività solare.",
+        "La nuova sala coordina gli orari dei mezzi di trasporto.",
+        "La nuova sala sperimenta satelliti destinati ai trasporti."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s6",
+        "s7",
+        "s9"
+      ],
+      "explanationZh": "第6至9句说明太阳活动可能影响导航等技术，而交通使用这些技术；并未说交通采集主要观测数据、监测室排班或试验卫星。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "A quale servizio internazionale contribuisce la sala?",
+      "promptZh": "监测室为哪项国际服务作出贡献？",
+      "options": [
+        "Alla previsione delle piogge lungo le rotte marittime.",
+        "Alla gestione dei collegamenti ferroviari europei.",
+        "Alla sorveglianza degli aeroporti contro i terremoti.",
+        "Alla meteorologia spaziale per l’aviazione civile."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s14"
+      ],
+      "explanationZh": "第14句明确是PECASUS框架中向ICAO提供的民航空间天气服务，另外三项不是文中所说的合作。"
+    }
+  ]
+}

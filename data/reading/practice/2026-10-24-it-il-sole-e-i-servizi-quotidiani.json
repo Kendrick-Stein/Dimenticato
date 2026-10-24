@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-it-il-sole-e-i-servizi-quotidiani",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 60,
+      "answer": "inaugurerà",
+      "options": [
+        "chiuderà",
+        "inaugurerà",
+        "venderà",
+        "trasferirà"
+      ],
+      "explanation": "对应中文“将为……揭幕”，须还原原文 inaugurerà。简单将来时第三人称单数；27日相对整理日仍在未来。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 25,
+      "answer": "reale",
+      "options": [
+        "libero",
+        "antico",
+        "reale",
+        "medio"
+      ],
+      "explanation": "对应中文“实时的”，须还原原文 reale。in tempo reale 为固定搭配，表示实时。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 35,
+      "answer": "disturbare",
+      "options": [
+        "disturbare",
+        "costruire",
+        "comprare",
+        "disegnare"
+      ],
+      "explanation": "对应中文“干扰”，须还原原文 disturbare。动词不定式，跟在 possono 后面；指对运行产生干扰。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 92,
+      "answer": "seminari",
+      "options": [
+        "biglietti",
+        "edifici",
+        "archivi",
+        "seminari"
+      ],
+      "explanation": "对应中文“研讨会”，须还原原文 seminari。阳性复数；due seminari 表示两场研讨会。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s13",
+      "start": 74,
+      "answer": "collaborazioni",
+      "options": [
+        "previsioni",
+        "collaborazioni",
+        "temperature",
+        "interruzioni"
+      ],
+      "explanation": "对应中文“合作”，须还原原文 collaborazioni。阴性复数；partecipare a collaborazioni 表示参与合作。"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-23",
+  "collectedAt": "2026-10-24",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -6395,26 +6395,26 @@
         "workflowStage": "rights_verified",
         "readyForPublication": false,
         "editorialReviewComplete": false,
-        "checkedAt": "2026-10-20",
+        "checkedAt": "2026-10-24",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
-          "checkedAt": "2026-10-20",
-          "notes": "Complete HTML narrative and Il commento read20Oct. Explicit publication16Oct2026/referenceAugust2026. Export-1.5%monthly yet+9.0%annual value/+1.9%volume; imports-1.6%monthly yet+9.7%annual value/-2.4%volume. Import prices+1.7%monthly/+7.3%annual. No linked PDFs/data reused. Istat CC BY4 notice checked; no conflicting text credit."
+          "checkedAt": "2026-10-24",
+          "notes": "Original-language institutional HTML narrative read in full with dates, byline/credits and footer. No linked media or attachment text used. Educational draft remains separate from candidate verification."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
-          "evidence": "Source Data pubblicazione explicitly 2026-10-16; source reference year/month is separate."
+          "evidence": "Explicit original publication date 2026-10-16 displayed on source; event/data periods distinct."
         },
         "nativeLanguage": {
           "verified": true,
           "evidenceUrl": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
-          "evidence": "Italian institutional editorial prose. No translator or syndication marker; any English version is explicitly separate and was not used.",
-          "author": "Istat (institutional authorship; no individual text byline)",
+          "evidence": "Named institution publishes original-language editorial text; no translator/republication credit on selected prose. DGA separately marks English version below; only Italian prose used.",
+          "author": "Istat (institutional author; no individual byline)",
           "basis": "institutional-original-language-inference",
-          "caveat": "Institutional provenance supports original-language editorial publication, not individual mother tongue or a certified drafting-language history."
+          "caveat": "Not a certified drafting-language history or individual mother-tongue claim."
         },
         "rights": {
           "verified": true,
@@ -6422,37 +6422,38 @@
           "publicRedistributionAllowed": true,
           "license": "CC BY 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-          "evidence": "Complete HTML narrative and Il commento read20Oct. Explicit publication16Oct2026/referenceAugust2026. Export-1.5%monthly yet+9.0%annual value/+1.9%volume; imports-1.6%monthly yet+9.7%annual value/-2.4%volume. Import prices+1.7%monthly/+7.3%annual. No linked PDFs/data reused. Istat CC BY4 notice checked; no conflicting text credit.",
+          "evidence": "Source-level institutional text checked without conflicting credit. Istat legal notice explicitly permits sharing and adaptation under CC BY4.",
           "evidenceUrls": [
             "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
             "https://www.istat.it/note-legali/",
             "https://creativecommons.org/licenses/by/4.0/"
           ],
-          "scope": "Institutional Italian narrative only; educational adaptation/Chinese translation subject to attribution, licence and modifications notice.",
+          "scope": "Institutional narrative text, same-language educational adaptation, Chinese translation and exercises only.",
           "exclusions": [
-            "Photos, logos, media",
-            "All direct quotations and third-party credited text",
-            "Linked documents and English translation"
+            "Images, logos and audiovisual media",
+            "Direct third-party quotations and externally credited text",
+            "Linked attachments, outside articles and English translations"
           ],
           "attributionRequirements": [
-            "Institutional author/title/source/date",
-            "License link and disclosure of Italian adaptation/Chinese translation",
-            "No endorsement; retain exclusion of third-party works"
+            "Institution/title/source/original date",
+            "License link, changes and no endorsement",
+            "ShareAlike retained for French derivatives"
           ],
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 7,
+          "asOf": "2026-10-24",
+          "ageDays": 8,
           "bucket": "within_30_days"
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-20",
-          "checkedAgainstArticleCount": 64,
+          "checkedAt": "2026-10-24",
+          "checkedAgainstArticleCount": 110,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         }
-      }
+      },
+      "linkToArticleId": "2026-10-24-it-commercio-leggere-periodi-e-misure"
     },
     {
       "id": "de-2026-10-08-hinweise-bei-ki-inhalten",
@@ -6974,26 +6975,26 @@
         "workflowStage": "rights_verified",
         "readyForPublication": false,
         "editorialReviewComplete": false,
-        "checkedAt": "2026-10-22",
+        "checkedAt": "2026-10-24",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/space-weather-l-ingv-inaugura-la-nuova-sala-di-monitoraggio-a-roma",
-          "checkedAt": "2026-10-22",
-          "notes": "Official full body re-read via web2026-10-22; footer CC BY4 checked. No media or direct quotations."
+          "checkedAt": "2026-10-24",
+          "notes": "Original-language institutional HTML narrative read in full with dates, byline/credits and footer. No linked media or attachment text used. Educational draft remains separate from candidate verification."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/space-weather-l-ingv-inaugura-la-nuova-sala-di-monitoraggio-a-roma",
-          "evidence": "Official article visible header date 2026-10-19; retain event/measurement dates separately."
+          "evidence": "Explicit original publication date 2026-10-19 displayed on source; event/data periods distinct."
         },
         "nativeLanguage": {
           "verified": true,
           "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/space-weather-l-ingv-inaugura-la-nuova-sala-di-monitoraggio-a-roma",
-          "author": "INGV Ufficio Stampa（机构署名；未列个人文字作者）",
-          "basis": "Italian institutional original press/news text; no translator or republishing credit.",
-          "caveat": "Institutional provenance, not personal native-tongue certification.",
-          "evidence": "Italian original institutional release with local institutions, no translation marker; article inspected."
+          "evidence": "Named institution publishes original-language editorial text; no translator/republication credit on selected prose. DGA separately marks English version below; only Italian prose used.",
+          "author": "INGV Ufficio Stampa (institutional author; no individual byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certified drafting-language history or individual mother-tongue claim."
         },
         "rights": {
           "verified": true,
@@ -7001,37 +7002,38 @@
           "publicRedistributionAllowed": true,
           "license": "CC BY 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-          "evidence": "INGV article footer explicitly licenses INGV published content CC BY4; legal page footer repeats it.",
+          "evidence": "Source-level institutional text checked without conflicting credit. INGV article footer explicitly licenses institution-published content CC BY4.",
           "evidenceUrls": [
             "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/space-weather-l-ingv-inaugura-la-nuova-sala-di-monitoraggio-a-roma",
             "https://www.ingv.it/note-legali",
             "https://creativecommons.org/licenses/by/4.0/"
           ],
-          "scope": "Institutional original narrative adapted in Italian, Chinese translation and teaching additions, attributed with modifications; no direct quotes.",
+          "scope": "Institutional narrative text, same-language educational adaptation, Chinese translation and exercises only.",
           "exclusions": [
-            "Images, logos, video, attachments and third-party works",
-            "Linked research paper text and direct interview quotations"
+            "Images, logos and audiovisual media",
+            "Direct third-party quotations and externally credited text",
+            "Linked attachments, outside articles and English translations"
           ],
           "attributionRequirements": [
-            "Credit institutional author, original title/date and URL",
-            "Link licence; disclose adaptation and translation",
-            "No endorsement claim"
+            "Institution/title/source/original date",
+            "License link, changes and no endorsement",
+            "ShareAlike retained for French derivatives"
           ],
-          "basis": "article-linked explicit Creative Commons licence allowing adaptation",
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAgainstArticleCount": 86,
-          "checkedAt": "2026-10-22",
+          "checkedAt": "2026-10-24",
+          "checkedAgainstArticleCount": 110,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 4,
+          "asOf": "2026-10-24",
+          "ageDays": 5,
           "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-24-it-il-sole-e-i-servizi-quotidiani"
     },
     {
       "id": "it-2026-10-16-dga-parma-incisioni",
@@ -7637,40 +7639,39 @@
         "环境保护",
         "家庭经营"
       ],
-      "level": "B1",
+      "level": "B2",
       "priority": 2,
       "status": "verified",
-      "editorialNote": "权利核查储备，尚未改写。B1可讨论农场收入与环保行动；保留£233million总额包括£50million追加及£3million前轮未分配资金，申请与生效协议不可混同；排除所有引语媒体。",
+      "editorialNote": "原语全文与许可已核验；拟用于B2教学改写。区分原报道状态与当日状态，非实际申请建议。独立教学审查另记。",
       "verification": {
         "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-24",
         "readyForPublication": false,
         "editorialReviewComplete": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.gov.uk/government/news/233-million-fund-to-help-more-farmers-boost-food-production-and-protect-the-land",
-          "checkedAt": "2026-10-21",
-          "notes": "官方全文、Published2026-09-22、From匹配Defra、OGL页脚及统计说明已读。"
+          "checkedAt": "2026-10-24",
+          "notes": "官方完整HTML200；核原发布日期、From、机构正文与页脚；排除引语和媒体。"
         },
         "originalDate": {
           "verified": true,
-          "evidence": "正文Published22September2026；统计提取日18September不是报道日期。",
-          "evidenceUrl": "https://www.gov.uk/government/news/233-million-fund-to-help-more-farmers-boost-food-production-and-protect-the-land"
+          "evidenceUrl": "https://www.gov.uk/government/news/233-million-fund-to-help-more-farmers-boost-food-production-and-protect-the-land",
+          "evidence": "官方Published字段 2026-09-22，非整理日。"
         },
         "nativeLanguage": {
           "verified": true,
-          "evidence": "英国官方机构英语原始叙述，检查机构署名、具名作者及正文；未见翻译/外部转载标记。",
+          "author": "Department for Environment, Food & Rural Affairs; Rural Payments Agency; Stephen Morgan MP",
           "evidenceUrl": "https://www.gov.uk/government/news/233-million-fund-to-help-more-farmers-boost-food-production-and-protect-the-land",
-          "author": "Department for Environment, Food & Rural Affairs, Rural Payments Agency and Stephen Morgan MP",
+          "evidence": "英国机构官方英文新闻与From署名、正文对应，未见翻译或第三方转载标记。",
           "basis": "institutional-original-language-inference",
-          "caveat": "机构来源与文章语境支持原语判断，不认证作者母语或最初起草语言。"
+          "caveat": "机构原语来源推断，不认证个人母语。"
         },
         "publisher": {
           "verified": true,
           "names": [
-            "Department for Environment, Food & Rural Affairs",
-            "Rural Payments Agency"
+            "Department for Environment, Food & Rural Affairs"
           ],
           "evidenceUrl": "https://www.gov.uk/government/news/233-million-fund-to-help-more-farmers-boost-food-production-and-protect-the-land"
         },
@@ -7680,36 +7681,33 @@
           "publicRedistributionAllowed": true,
           "license": "Open Government Licence v3.0",
           "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-          "evidence": "本文页脚明确OGL，GOV.UK机构文字再用条款核查；排除Minister/CEO直接引语和媒体，仅机构叙述可改写。",
           "evidenceUrls": [
             "https://www.gov.uk/government/news/233-million-fund-to-help-more-farmers-boost-food-production-and-protect-the-land",
             "https://www.gov.uk/help/terms-conditions"
           ],
-          "scope": "该机构自有英文新闻叙述正文，排除引语与媒体。",
+          "evidence": "各文章页脚OGL v3，官方条款Using GOV.UK content明确再用；沿用既有OGL许可登记。规范National Archives页本轮403，未绕过、不声称重新读取。",
+          "scope": "机构自有英文叙述及原创教学补充、中文翻译。",
           "exclusions": [
-            "照片、图片、标志、视频",
-            "第三方直接引语、外部文献及链接作品"
+            "所有引语、媒体、标志、外链及第三方作品"
           ],
           "attributionRequirements": [
-            "机构与Crown copyright署名",
-            "原文链接和原日期、OGL链接、教学改写及中文翻译说明；不暗示机构认可"
+            "Crown copyright及机构署名、来源链接、原日期、OGL链接、修改与无认可说明"
           ],
-          "basis": "article-footer-explicit-OGL-and-GOVUK-terms",
-          "licenseRetrievalNote": "2026-10-21直接访问National Archives规范许可页返回403；未绕过或重试；没有声称本次读到该目标页。具体文章明示OGL及GOV.UK官方再用条款已核实。",
           "reviewBeforeConversionRequired": true
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 31,
+          "asOf": "2026-10-24",
+          "ageDays": 32,
           "bucket": "within_90_days"
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-21",
-          "checkedAgainstArticleCount": 76,
+          "checkedAt": "2026-10-24",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false
+          "titleAlreadyPublished": false,
+          "checkedAgainstArticleCount": 107
         }
-      }
+      },
+      "linkToArticleId": "2026-10-24-en-farm-funding-and-counting"
     },
     {
       "id": "de-2026-09-08-siemens-sensitive-topics",
@@ -8794,31 +8792,31 @@
       "level": "B1",
       "priority": 2,
       "status": "verified",
-      "editorialNote": "干旱与日常供水，区分已采取措施和待审批限水；需要下次转换时复核最新状态。",
+      "editorialNote": "原语全文与许可已核验；拟用于B1教学改写。区分原报道状态与当日状态，非实际申请建议。独立教学审查另记。",
       "verification": {
         "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-22",
+        "checkedAt": "2026-10-24",
         "editorialReviewComplete": false,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
-          "checkedAt": "2026-10-22",
-          "notes": "Official full page read with source title, From, publication date and institutional narrative. Excluded quotes and media."
+          "checkedAt": "2026-10-24",
+          "notes": "官方完整HTML200；核原发布日期、From、机构正文与页脚；排除引语和媒体。"
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
-          "evidence": "Official page Published field; not retrieval or modification date."
+          "evidence": "官方Published字段 2026-10-20，非整理日。"
         },
         "nativeLanguage": {
           "verified": true,
           "author": "Department for Environment, Food & Rural Affairs; Environment Agency; Emma Hardy MP",
           "evidenceUrl": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
-          "basis": "Original English UK institutional release; no translation attribution.",
-          "caveat": "Institutional provenance, not certification of any author’s native tongue.",
-          "evidence": "Official English page read in full: From field explicitly credits Department for Environment, Food & Rural Affairs, Environment Agency. English institutional narrative concerns UK domestic programmes, with no translation credit; publication header and body inspected. This verifies institutional original-language provenance, not an individual’s first language."
+          "evidence": "英国机构官方英文新闻与From署名、正文对应，未见翻译或第三方转载标记。",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构原语来源推断，不认证个人母语。"
         },
         "rights": {
           "verified": true,
@@ -8826,44 +8824,40 @@
           "publicRedistributionAllowed": true,
           "license": "Open Government Licence v3.0",
           "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-          "basis": "Page-specific OGL v3 footer and accessible official GOV.UK terms expressly permitting reproduction under OGL; existing registered source licence review.",
           "evidenceUrls": [
             "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
             "https://www.gov.uk/help/terms-conditions"
           ],
-          "evidence": "Each article says all content available under OGL v3 except otherwise stated. Terms section Using GOV.UK content says most content is Crown copyright/OGL and reproduction allowed under licence conditions. National Archives deed fetch returned 403 today; not bypassed or claimed freshly read.",
-          "scope": "Institutional English narrative, original educational adaptation and Chinese translation only.",
+          "evidence": "各文章页脚OGL v3，官方条款Using GOV.UK content明确再用；沿用既有OGL许可登记。规范National Archives页本轮403，未绕过、不声称重新读取。",
+          "scope": "机构自有英文叙述及原创教学补充、中文翻译。",
           "exclusions": [
-            "All direct quotations, images, logos, outside reports and third-party works"
+            "所有引语、媒体、标志、外链及第三方作品"
           ],
           "attributionRequirements": [
-            "Credit original authors, URL and date",
-            "Link OGL v3 and retain standard attribution",
-            "State modifications, teaching additions and no endorsement"
+            "Crown copyright及机构署名、来源链接、原日期、OGL链接、修改与无认可说明"
           ],
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-22",
-          "checkedAgainstArticleCount": 86,
+          "checkedAt": "2026-10-24",
           "sourceUrlAlreadyPublished": false,
-          "titleAlreadyPublished": false
+          "titleAlreadyPublished": false,
+          "checkedAgainstArticleCount": 107
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 3,
+          "asOf": "2026-10-24",
+          "ageDays": 4,
           "bucket": "within_30_days"
         },
         "publisher": {
           "verified": true,
           "names": [
-            "Department for Environment, Food & Rural Affairs",
-            "Environment Agency"
+            "Department for Environment, Food & Rural Affairs"
           ],
-          "evidenceUrl": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
-          "institutionUrl": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs"
+          "evidenceUrl": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-24-en-rain-and-water-reserves"
     },
     {
       "id": "en-2026-09-30-local-communities-to-receive-79-million-to-restore-nature",
@@ -9258,52 +9252,71 @@
       ],
       "level": "B1",
       "priority": 3,
-      "status": "collected",
+      "status": "verified",
       "editorialNote": "Reserve lead only: official listing metadata viewed23Oct; article fetch timed out/cache miss twice, not access denial. Do not infer full text, publication date verification or article rights from listing. Suggested discussion: why archives matter in local cultural memory. No draft or questions.",
       "verification": {
-        "workflowStage": "discovered",
+        "workflowStage": "rights_verified",
         "readyForPublication": false,
         "editorialReviewComplete": false,
-        "checkedAt": "2026-10-23",
+        "checkedAt": "2026-10-24",
         "fullText": {
-          "accessible": false,
-          "read": false,
+          "accessible": true,
+          "read": true,
           "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=7500cc7b97eaaf8dd119ae7c50c544e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2802",
-          "checkedAt": "2026-10-23",
-          "notes": "Official listing accessible, article retrieval failed with timeout/cache miss. No bypass or content invention."
+          "checkedAt": "2026-10-24",
+          "notes": "Original-language institutional HTML narrative read in full with dates, byline/credits and footer. No linked media or attachment text used. Educational draft remains separate from candidate verification."
         },
         "originalDate": {
-          "verified": false,
-          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie",
-          "evidence": "Listing date only, article date not verified."
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=7500cc7b97eaaf8dd119ae7c50c544e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2802",
+          "evidence": "Explicit original publication date 2026-10-09 displayed on source; event/data periods distinct."
         },
         "nativeLanguage": {
-          "verified": false,
+          "verified": true,
           "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=7500cc7b97eaaf8dd119ae7c50c544e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2802",
-          "evidence": "Italian ministry listing is a lead; byline and provenance need full-article review."
+          "evidence": "Named institution publishes original-language editorial text; no translator/republication credit on selected prose. DGA separately marks English version below; only Italian prose used.",
+          "author": "Ministero della Cultura — Direzione generale Archivi (institutional author; no individual byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certified drafting-language history or individual mother-tongue claim."
         },
         "rights": {
-          "verified": false,
-          "adaptationAllowed": false,
-          "publicRedistributionAllowed": false,
-          "evidence": "General ministry licence exists but article exceptions and text ownership not yet checked.",
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "evidence": "Source-level institutional text checked without conflicting credit. DGA source footer links ministry legal notice permitting share/adapt CC BY3 except third-party material.",
           "evidenceUrls": [
-            "https://cultura.gov.it/note-legali"
+            "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=7500cc7b97eaaf8dd119ae7c50c544e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2802",
+            "https://cultura.gov.it/note-legali",
+            "https://creativecommons.org/licenses/by/3.0/"
+          ],
+          "scope": "Institutional narrative text, same-language educational adaptation, Chinese translation and exercises only.",
+          "exclusions": [
+            "Images, logos and audiovisual media",
+            "Direct third-party quotations and externally credited text",
+            "Linked attachments, outside articles and English translations"
+          ],
+          "attributionRequirements": [
+            "Institution/title/source/original date",
+            "License link, changes and no endorsement",
+            "ShareAlike retained for French derivatives"
           ],
           "reviewBeforeConversionRequired": true
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-23",
-          "checkedAgainstArticleCount": 97,
+          "checkedAt": "2026-10-24",
+          "checkedAgainstArticleCount": 110,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 14,
+          "asOf": "2026-10-24",
+          "ageDays": 15,
           "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-24-it-un-mistero-in-archivio"
     },
     {
       "id": "fr-2026-10-12-deux-tableaux-avant-le-retour",
@@ -9571,39 +9584,39 @@
       "editorialNote": "文化机构合作储备：完整正文已读，区分Museum7专业网络和CCDD倡议；避免把政府目标写成已证实成效。日常题材优先于此项政策主题。",
       "verification": {
         "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-23",
+        "checkedAt": "2026-10-24",
         "editorialReviewComplete": false,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
-          "checkedAt": "2026-10-23",
-          "notes": "完整机构页面正文、标题、署名与例外检查；不复制媒体或外部链接正文。"
+          "checkedAt": "2026-10-24",
+          "notes": "Original-language institutional HTML narrative read in full with dates, byline/credits and footer. No linked media or attachment text used. Educational draft remains separate from candidate verification."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
-          "evidence": "原始网页Publié le字段 2026-10-22"
+          "evidence": "Explicit original publication date 2026-10-22 displayed on source; event/data periods distinct."
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-23",
-          "checkedAgainstArticleCount": 97,
+          "checkedAt": "2026-10-24",
+          "checkedAgainstArticleCount": 110,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 1,
+          "asOf": "2026-10-24",
+          "ageDays": 2,
           "bucket": "within_30_days"
         },
         "nativeLanguage": {
           "verified": true,
-          "author": "Ministère de la Culture（网页无单列个人作者）",
           "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
+          "evidence": "Named institution publishes original-language editorial text; no translator/republication credit on selected prose. DGA separately marks English version below; only Italian prose used.",
+          "author": "Ministère de la Culture (institutional author; no individual byline)",
           "basis": "institutional-original-language-inference",
-          "evidence": "法国文化部法语机构新闻/新闻稿，全文无翻译或外部转载署名；法律声明I.4标明由文化部传播部门编辑管理。",
-          "caveat": "仅机构原语出处判断，不证明个人母语或最初起草语言。"
+          "caveat": "Not a certified drafting-language history or individual mother-tongue claim."
         },
         "rights": {
           "verified": true,
@@ -9611,26 +9624,27 @@
           "publicRedistributionAllowed": true,
           "license": "CC BY-SA 3.0 FR",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
-          "basis": "explicit-public-institutional-text-license-and-article-exceptions-check",
+          "evidence": "Source-level institutional text checked without conflicting credit. Culture legal notice §4.3.1(a) explicitly CC BY-SA 3.0 FR for ministry-authored text; partners and media separate.",
           "evidenceUrls": [
             "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
             "https://www.culture.gouv.fr/mentions-legales",
-            "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.fr"
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/"
           ],
-          "evidence": "法律声明II.4.3.1(a)明确文化部制作文字适用CC BY-SA3.0FR；4.3.2将合作方内容另列，逐页未发现正文转载署名或冲突权利告示。许可deed确认改编、商业及非商业传播，署名及相同方式共享。",
-          "scope": "仅文化部机构叙述正文及相同许可教学改编，不涵盖图像、媒体、引用和外链。",
+          "scope": "Institutional narrative text, same-language educational adaptation, Chinese translation and exercises only.",
           "exclusions": [
-            "所有图片、视频、标志",
-            "直接引语、第三方外链及附件作品"
+            "Images, logos and audiovisual media",
+            "Direct third-party quotations and externally credited text",
+            "Linked attachments, outside articles and English translations"
           ],
           "attributionRequirements": [
-            "保留文化部、原题、原文URL与原日期",
-            "标注分级改写、中文翻译及教学补充；不暗示认可",
-            "作品与配套练习沿用CC BY-SA3.0FR并链接许可"
+            "Institution/title/source/original date",
+            "License link, changes and no endorsement",
+            "ShareAlike retained for French derivatives"
           ],
           "reviewBeforeConversionRequired": true
         }
-      }
+      },
+      "linkToArticleId": "2026-10-24-fr-les-musees-travaillent-ensemble"
     },
     {
       "id": "fr-2026-10-21-public-media-trust",
@@ -9733,39 +9747,39 @@
       "editorialNote": "城市/山丘两个剧场与社区文化，已读全文；与本日音乐场馆相近，下次择优避免连续同类。注意全部新项目仍为计划。",
       "verification": {
         "workflowStage": "rights_verified",
-        "checkedAt": "2026-10-23",
+        "checkedAt": "2026-10-24",
         "editorialReviewComplete": false,
         "readyForPublication": false,
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
-          "checkedAt": "2026-10-23",
-          "notes": "完整机构页面正文、标题、署名与例外检查；不复制媒体或外部链接正文。"
+          "checkedAt": "2026-10-24",
+          "notes": "Original-language institutional HTML narrative read in full with dates, byline/credits and footer. No linked media or attachment text used. Educational draft remains separate from candidate verification."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
-          "evidence": "原始网页Publié le字段 2026-10-20"
+          "evidence": "Explicit original publication date 2026-10-20 displayed on source; event/data periods distinct."
         },
         "duplicateCheck": {
-          "checkedAt": "2026-10-23",
-          "checkedAgainstArticleCount": 97,
+          "checkedAt": "2026-10-24",
+          "checkedAgainstArticleCount": 110,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 3,
+          "asOf": "2026-10-24",
+          "ageDays": 4,
           "bucket": "within_30_days"
         },
         "nativeLanguage": {
           "verified": true,
-          "author": "Ministère de la Culture（网页无单列个人作者）",
           "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
+          "evidence": "Named institution publishes original-language editorial text; no translator/republication credit on selected prose. DGA separately marks English version below; only Italian prose used.",
+          "author": "Ministère de la Culture (institutional author; no individual byline)",
           "basis": "institutional-original-language-inference",
-          "evidence": "法国文化部法语机构新闻/新闻稿，全文无翻译或外部转载署名；法律声明I.4标明由文化部传播部门编辑管理。",
-          "caveat": "仅机构原语出处判断，不证明个人母语或最初起草语言。"
+          "caveat": "Not a certified drafting-language history or individual mother-tongue claim."
         },
         "rights": {
           "verified": true,
@@ -9773,26 +9787,27 @@
           "publicRedistributionAllowed": true,
           "license": "CC BY-SA 3.0 FR",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
-          "basis": "explicit-public-institutional-text-license-and-article-exceptions-check",
+          "evidence": "Source-level institutional text checked without conflicting credit. Culture legal notice §4.3.1(a) explicitly CC BY-SA 3.0 FR for ministry-authored text; partners and media separate.",
           "evidenceUrls": [
             "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-de-frederic-remy-a-la-direction-de-chateauvallon-liberte-scene-nationale-de-toulon-et-ollioules",
             "https://www.culture.gouv.fr/mentions-legales",
-            "https://creativecommons.org/licenses/by-sa/3.0/fr/deed.fr"
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/"
           ],
-          "evidence": "法律声明II.4.3.1(a)明确文化部制作文字适用CC BY-SA3.0FR；4.3.2将合作方内容另列，逐页未发现正文转载署名或冲突权利告示。许可deed确认改编、商业及非商业传播，署名及相同方式共享。",
-          "scope": "仅文化部机构叙述正文及相同许可教学改编，不涵盖图像、媒体、引用和外链。",
+          "scope": "Institutional narrative text, same-language educational adaptation, Chinese translation and exercises only.",
           "exclusions": [
-            "所有图片、视频、标志",
-            "直接引语、第三方外链及附件作品"
+            "Images, logos and audiovisual media",
+            "Direct third-party quotations and externally credited text",
+            "Linked attachments, outside articles and English translations"
           ],
           "attributionRequirements": [
-            "保留文化部、原题、原文URL与原日期",
-            "标注分级改写、中文翻译及教学补充；不暗示认可",
-            "作品与配套练习沿用CC BY-SA3.0FR并链接许可"
+            "Institution/title/source/original date",
+            "License link, changes and no endorsement",
+            "ShareAlike retained for French derivatives"
           ],
           "reviewBeforeConversionRequired": true
         }
-      }
+      },
+      "linkToArticleId": "2026-10-24-fr-deux-lieux-pour-se-rencontrer"
     },
     {
       "id": "fr-2026-10-14-opera-dijon-reserve",
@@ -10056,6 +10071,255 @@
           "asOf": "2026-10-23",
           "ageDays": 2,
           "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "fr-2026-10-23-passe-culture-2030",
+      "language": "fr",
+      "sourceTitle": "Passe Culture : de nouveaux objectifs à l’horizon 2030",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/passe-culture-de-nouveaux-objectifs-a-l-horizon-2030",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-23",
+      "collectedAt": "2026-10-24",
+      "category": "culture",
+      "topics": [
+        "青年文化",
+        "数字工具",
+        "公共参与"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "新发现的青年日常文化参与材料；B2候选。已读机构正文与文字许可，源于10月16日战略发布的10月23日报道。不可将计划与未来功能当作已实现。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-24",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/passe-culture-de-nouveaux-objectifs-a-l-horizon-2030",
+          "checkedAt": "2026-10-24",
+          "notes": "Original-language institutional HTML narrative read in full with dates, byline/credits and footer. No linked media or attachment text used. Educational draft remains separate from candidate verification."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/passe-culture-de-nouveaux-objectifs-a-l-horizon-2030",
+          "evidence": "Explicit original publication date 2026-10-23 displayed on source; event/data periods distinct."
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-24",
+          "checkedAgainstArticleCount": 110,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-24",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/passe-culture-de-nouveaux-objectifs-a-l-horizon-2030",
+          "evidence": "Named institution publishes original-language editorial text; no translator/republication credit on selected prose. DGA separately marks English version below; only Italian prose used.",
+          "author": "Ministère de la Culture (institutional author; no individual byline)",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Not a certified drafting-language history or individual mother-tongue claim."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidence": "Source-level institutional text checked without conflicting credit. Culture legal notice §4.3.1(a) explicitly CC BY-SA 3.0 FR for ministry-authored text; partners and media separate.",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/actualites/passe-culture-de-nouveaux-objectifs-a-l-horizon-2030",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+          ],
+          "scope": "Institutional narrative text, same-language educational adaptation, Chinese translation and exercises only.",
+          "exclusions": [
+            "Images, logos and audiovisual media",
+            "Direct third-party quotations and externally credited text",
+            "Linked attachments, outside articles and English translations"
+          ],
+          "attributionRequirements": [
+            "Institution/title/source/original date",
+            "License link, changes and no endorsement",
+            "ShareAlike retained for French derivatives"
+          ],
+          "reviewBeforeConversionRequired": true
+        }
+      },
+      "linkToArticleId": "2026-10-24-fr-decouvrir-au-dela-des-ecrans"
+    },
+    {
+      "id": "en-2026-10-23-scarthingwell-axe",
+      "language": "en",
+      "sourceTitle": "Minister steps in to help save a prehistoric British battle-axe head from leaving the UK",
+      "sourceUrl": "https://www.gov.uk/government/news/minister-steps-in-to-help-save-a-prehistoric-british-battle-axe-head-from-leaving-the-uk",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-10-23",
+      "collectedAt": "2026-10-24",
+      "category": "culture",
+      "topics": [
+        "文化遗产"
+      ],
+      "priority": 1,
+      "status": "verified",
+      "level": "A2",
+      "editorialNote": "原语全文与许可已核验；拟用于A2教学改写。区分原报道状态与当日状态，非实际申请建议。独立教学审查另记。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-24",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/minister-steps-in-to-help-save-a-prehistoric-british-battle-axe-head-from-leaving-the-uk",
+          "checkedAt": "2026-10-24",
+          "notes": "官方完整HTML200；核原发布日期、From、机构正文与页脚；排除引语和媒体。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/minister-steps-in-to-help-save-a-prehistoric-british-battle-axe-head-from-leaving-the-uk",
+          "evidence": "官方Published字段 2026-10-23，非整理日。"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Department for Digital, Culture, Media and Sport; Baroness Twycross",
+          "evidenceUrl": "https://www.gov.uk/government/news/minister-steps-in-to-help-save-a-prehistoric-british-battle-axe-head-from-leaving-the-uk",
+          "evidence": "英国机构官方英文新闻与From署名、正文对应，未见翻译或第三方转载标记。",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构原语来源推断，不认证个人母语。"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/minister-steps-in-to-help-save-a-prehistoric-british-battle-axe-head-from-leaving-the-uk"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/minister-steps-in-to-help-save-a-prehistoric-british-battle-axe-head-from-leaving-the-uk",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "evidence": "各文章页脚OGL v3，官方条款Using GOV.UK content明确再用；沿用既有OGL许可登记。规范National Archives页本轮403，未绕过、不声称重新读取。",
+          "scope": "机构自有英文叙述及原创教学补充、中文翻译。",
+          "exclusions": [
+            "所有引语、媒体、标志、外链及第三方作品"
+          ],
+          "attributionRequirements": [
+            "Crown copyright及机构署名、来源链接、原日期、OGL链接、修改与无认可说明"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-24",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-24",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAgainstArticleCount": 107
+        }
+      },
+      "linkToArticleId": "2026-10-24-en-time-to-save-an-old-axe"
+    },
+    {
+      "id": "en-2026-10-22-undersea-connections",
+      "language": "en",
+      "sourceTitle": "Subsea cable saboteurs face jail and unlimited fines under new security crackdown",
+      "sourceUrl": "https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown",
+      "sourceName": "Department for Digital, Culture, Media and Sport / GOV.UK",
+      "registrySourceId": "govuk-dcms-english-news",
+      "sourcePublishedAt": "2026-10-22",
+      "collectedAt": "2026-10-24",
+      "category": "technology",
+      "topics": [
+        "海底通信",
+        "日常数字生活"
+      ],
+      "priority": 3,
+      "status": "verified",
+      "level": "B2",
+      "editorialNote": "储备已核机构全文与OGL；未教学改写。可从消息、视频通话与网购依赖海底基础设施切入；保留方案征求意见而非法律已生效，排除所有政治引语，勿把可疑活动指控当独立事实。原文有重复词编辑瑕疵，转换前复核。",
+      "verification": {
+        "workflowStage": "rights_verified",
+        "checkedAt": "2026-10-24",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown",
+          "checkedAt": "2026-10-24",
+          "notes": "官方完整HTML200；核原发布日期、From、机构正文与页脚；排除引语和媒体。"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown",
+          "evidence": "官方Published22October2026"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "author": "Department for Digital, Culture, Media and Sport; Ian Murray",
+          "evidenceUrl": "https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown",
+          "evidence": "英国机构官方英文新闻与From署名、正文对应，未见翻译或第三方转载标记。",
+          "basis": "institutional-original-language-inference",
+          "caveat": "机构原语来源推断，不认证个人母语。"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Digital, Culture, Media and Sport"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "evidence": "各文章页脚OGL v3，官方条款Using GOV.UK content明确再用；沿用既有OGL许可登记。规范National Archives页本轮403，未绕过、不声称重新读取。",
+          "scope": "机构自有英文叙述及原创教学补充、中文翻译。",
+          "exclusions": [
+            "所有引语、媒体、标志、外链及第三方作品"
+          ],
+          "attributionRequirements": [
+            "Crown copyright及机构署名、来源链接、原日期、OGL链接、修改与无认可说明"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "freshness": {
+          "asOf": "2026-10-24",
+          "ageDays": 2,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-24",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false,
+          "checkedAgainstArticleCount": 107
         }
       }
     }

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-fr-decouvrir-au-dela-des-ecrans",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s5",
+      "start": 36,
+      "answer": "consultation",
+      "options": [
+        "construction",
+        "consultation",
+        "exposition",
+        "livraison"
+      ],
+      "explanation": "对应中文“磋商”，须还原原文 consultation。阴性单数；指征求多方意见的过程，不是医学问诊。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s9",
+      "start": 143,
+      "answer": "bénévolat",
+      "options": [
+        "patrimoine",
+        "tourisme",
+        "bénévolat",
+        "commerce"
+      ],
+      "explanation": "对应中文“志愿服务”，须还原原文 bénévolat。阳性单数；le développement du bénévolat 指发展志愿参与。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s10",
+      "start": 101,
+      "answer": "contribuer",
+      "options": [
+        "contribuer",
+        "renoncer",
+        "échapper",
+        "survivre"
+      ],
+      "explanation": "对应中文“参与并作出贡献”，须还原原文 contribuer。contribuer à 后接参与贡献的对象，这里是机制运行。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s16",
+      "start": 100,
+      "answer": "répertoire",
+      "options": [
+        "spectacle",
+        "budget",
+        "billet",
+        "répertoire"
+      ],
+      "explanation": "对应中文“目录”，须还原原文 répertoire。阳性单数；这里是组织文化内容的目录。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s21",
+      "start": 153,
+      "answer": "proximité",
+      "options": [
+        "qualité",
+        "proximité",
+        "sécurité",
+        "mobilité"
+      ],
+      "explanation": "对应中文“身边的、本地的”，须还原原文 proximité。de proximité 表示就近、本地，非特定城市名称。"
+    }
+  ]
+}

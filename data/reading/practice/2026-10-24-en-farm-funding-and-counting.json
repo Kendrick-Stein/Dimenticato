@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-en-farm-funding-and-counting",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s5",
+      "start": 154,
+      "answer": "stages",
+      "options": [
+        "prices",
+        "stages",
+        "locations",
+        "seasons"
+      ],
+      "explanation": "stages复数说明申请、协议及付款属于不同环节，而不是地点或季节。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s8",
+      "start": 123,
+      "answer": "allocated",
+      "options": [
+        "borrowed",
+        "repaid",
+        "printed",
+        "allocated"
+      ],
+      "explanation": "had not been allocated表示先前尚未分配，不能改为已花费或已偿还。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s11",
+      "start": 133,
+      "answer": "expire",
+      "options": [
+        "expire",
+        "expand",
+        "arrive",
+        "improve"
+      ],
+      "explanation": "agreements expire表示协议到期；to后用原形。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s15",
+      "start": 102,
+      "answer": "categories",
+      "options": [
+        "payments",
+        "hectares",
+        "categories",
+        "seasons"
+      ],
+      "explanation": "individual categories是分项类别，关系到同一主体跨类别重复计数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s17",
+      "start": 17,
+      "answer": "rounded",
+      "options": [
+        "hidden",
+        "rounded",
+        "doubled",
+        "omitted"
+      ],
+      "explanation": "rounded表示数值经过舍入，不表示遗漏、翻倍或保密。"
+    }
+  ]
+}

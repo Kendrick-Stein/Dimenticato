@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-fr-les-musees-travaillent-ensemble",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 130,
+      "answer": "fonction",
+      "options": [
+        "adresse",
+        "saison",
+        "fonction",
+        "couleur"
+      ],
+      "explanation": "对应中文“功能”，须还原原文 fonction。阴性单数；remplir une fonction 表示承担某种职能。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 28,
+      "answer": "mobilité",
+      "options": [
+        "mobilité",
+        "fragilité",
+        "gratuité",
+        "quantité"
+      ],
+      "explanation": "对应中文“流动”，须还原原文 mobilité。阴性单数名词；这里指专业人员在机构之间流动。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 51,
+      "answer": "conservation",
+      "options": [
+        "location",
+        "construction",
+        "restauration",
+        "conservation"
+      ],
+      "explanation": "对应中文“保存”，须还原原文 conservation。阴性单数；博物馆语境中指文物等的保护与保存。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 58,
+      "answer": "successivement",
+      "options": [
+        "silencieusement",
+        "successivement",
+        "rarement",
+        "gratuitement"
+      ],
+      "explanation": "对应中文“依次”，须还原原文 successivement。副词，强调按顺序在不同主办国举行。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 10,
+      "answer": "consultatif",
+      "options": [
+        "sportif",
+        "musical",
+        "consultatif",
+        "médical"
+      ],
+      "explanation": "对应中文“咨询性的”，须还原原文 consultatif。阳性单数，与 comité 一致；提供建议的委员会。"
+    }
+  ]
+}

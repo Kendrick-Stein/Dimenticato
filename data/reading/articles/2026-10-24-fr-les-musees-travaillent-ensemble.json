@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "id": "2026-10-24-fr-les-musees-travaillent-ensemble",
+  "storyId": "fr-2026-10-22-museum7-cooperation",
+  "lang": "fr",
+  "date": "2026-10-24",
+  "title": "Quand les musées travaillent ensemble",
+  "titleZh": "当博物馆携手合作",
+  "summaryZh": "Museum 7 和另一项文化联盟同时启动，但各自的参与者与任务并不相同。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连续说明中练习原因、对比、关系句和未来时，专业词提供中文辅助。",
+  "category": "culture",
+  "topics": [
+    "文化参与",
+    "艺术与日常"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Lancement par la France de deux initiatives de coopération culturelle internationale dans le cadre de la présidence française du G7",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/lancement-par-la-france-de-deux-initiatives-de-cooperation-culturelle-internationale-dans-le-cadre-de-la-presidence-francaise-du-g7",
+    "publishedAt": "2026-10-22",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：Ministère de la Culture（机构作者，未单列个人署名）；原题、原日期和原链接见来源。依据 CC BY-SA 3.0 FR 使用；Dimenticato 同语言分级改写、中文翻译与教学补充亦按该许可发布，不代表原机构认可。",
+  "adaptation": "2026-10-24整理，非当日原文。仅依据原语机构正文改写并配中文翻译；不转载图片、媒体、外链附件、第三方引语。词汇、理解题与口语问题为教学补充；保留原报道日期、事件时序与事实/计划之别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 22 octobre 2026, à Paris, la France a lancé deux initiatives de coopération culturelle à l’occasion d’Art Basel Paris.",
+      "zh": "2026年10月22日，法国在巴黎艺术展期间于巴黎启动了两项文化合作倡议。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "La première, Museum 7, met en relation des responsables de musées des pays du G7 et de pays partenaires.",
+      "zh": "第一项Museum 7将七国集团成员国及伙伴国家的博物馆负责人联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "La seconde est la Coalition pour la culture, le dialogue et le développement, appelée CCDD.",
+      "zh": "第二项是“文化、对话与发展联盟”，简称CCDD。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Même si les deux projets sont annoncés ensemble, ils ne réunissent pas exactement les mêmes acteurs et ne remplissent pas la même fonction.",
+      "zh": "尽管两项项目同时宣布，但它们汇集的参与者并不完全相同，所承担的功能也不同。",
+      "glosses": [
+        {
+          "surface": "fonction",
+          "lemma": "fonction",
+          "zh": "功能",
+          "note": "阴性单数；remplir une fonction 表示承担某种职能。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Pour Museum 7, une première rencontre a permis aux dirigeants de grandes institutions de discuter des difficultés de leurs infrastructures et de leur financement.",
+      "zh": "在Museum 7的首次会议上，大型机构的负责人讨论了其基础设施与资金方面的困难。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Le réseau veut faciliter la mobilité des professionnels et les échanges de bonnes pratiques entre établissements.",
+      "zh": "该网络希望促进专业人员流动以及机构之间交流有益实践。",
+      "glosses": [
+        {
+          "surface": "mobilité",
+          "lemma": "mobilité",
+          "zh": "流动",
+          "note": "阴性单数名词；这里指专业人员在机构之间流动。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Il doit aussi aider les musées à travailler sur la conservation, la sécurité, l’accessibilité et les défis environnementaux.",
+      "zh": "它还将帮助博物馆应对保存、安全、无障碍和环境挑战。",
+      "glosses": [
+        {
+          "surface": "conservation",
+          "lemma": "conservation",
+          "zh": "保存",
+          "note": "阴性单数；博物馆语境中指文物等的保护与保存。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Repenser les financements publics et privés fait également partie des questions à traiter, car les missions des musées doivent pouvoir durer.",
+      "zh": "重新思考公共和私人资金模式也是待处理问题之一，因为博物馆需要持续履行使命。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Après le lancement, les réunions de Museum 7 se tiendront successivement dans les pays qui accueillent le G7.",
+      "zh": "启动之后，Museum 7会议将依次在主办七国集团会议的国家召开。",
+      "glosses": [
+        {
+          "surface": "successivement",
+          "lemma": "successivement",
+          "zh": "依次",
+          "note": "副词，强调按顺序在不同主办国举行。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "La CCDD rassemble, de son côté, des acteurs publics et privés, des institutions culturelles et des créateurs du monde entier.",
+      "zh": "另一方面，CCDD汇集世界各地的公共和私人参与者、文化机构及创作者。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Elle cherche à faire de la culture un moyen de dialogue et de développement économique et social, notamment par l’emploi et les compétences.",
+      "zh": "它寻求通过就业和能力发展等途径，使文化成为促进对话及经济社会发展的方式。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Un comité consultatif réunira des experts de plusieurs domaines, tandis que des sous-comités s’occuperont des partenariats, des projets, de l’éducation et de la recherche.",
+      "zh": "一个咨询委员会将汇集多个领域的专家，同时各分委员会将负责合作关系、项目、教育与研究。",
+      "glosses": [
+        {
+          "surface": "consultatif",
+          "lemma": "consultatif",
+          "zh": "咨询性的",
+          "note": "阳性单数，与 comité 一致；提供建议的委员会。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "La reconstruction après des conflits ou des catastrophes, ainsi que la qualité de vie dans les villes, font partie des thèmes cités.",
+      "zh": "冲突或灾害后的重建，以及城市生活质量，都属于文中提到的主题。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Ces annonces décrivent donc des objectifs et une organisation : elles ne constituent pas encore un bilan des effets obtenus sur les publics.",
+      "zh": "因此，这些公告描述的是目标和组织安排：它们还不是已经对公众产生何种效果的总结。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "fonction",
+        "lemma": "fonction",
+        "zh": "功能",
+        "sentenceId": "s4",
+        "note": "阴性单数；remplir une fonction 表示承担某种职能。"
+      },
+      {
+        "text": "mobilité",
+        "lemma": "mobilité",
+        "zh": "流动",
+        "sentenceId": "s6",
+        "note": "阴性单数名词；这里指专业人员在机构之间流动。"
+      },
+      {
+        "text": "conservation",
+        "lemma": "conservation",
+        "zh": "保存",
+        "sentenceId": "s7",
+        "note": "阴性单数；博物馆语境中指文物等的保护与保存。"
+      },
+      {
+        "text": "successivement",
+        "lemma": "successivement",
+        "zh": "依次",
+        "sentenceId": "s9",
+        "note": "副词，强调按顺序在不同主办国举行。"
+      },
+      {
+        "text": "consultatif",
+        "lemma": "consultatif",
+        "zh": "咨询性的",
+        "sentenceId": "s12",
+        "note": "阳性单数，与 comité 一致；提供建议的委员会。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "bonnes pratiques",
+        "zh": "有益实践",
+        "sentenceId": "s6",
+        "note": "常用于专业经验交流；不表示已经证明对所有场景有效。"
+      },
+      {
+        "text": "font partie des",
+        "zh": "属于……的一部分",
+        "sentenceId": "s13",
+        "note": "faire partie de 的第三人称复数。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "Même si 引出让步：同时宣布不意味着功能相同。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel problème les musées pourraient-ils mieux résoudre ensemble?",
+        "zh": "博物馆携手可能更好地解决什么问题？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "La coopération pourrait aider à…",
+        "zh": "合作可能有助于……",
+        "note": "可按自己的观点替换后半句。"
+      }
+    ]
+  }
+}

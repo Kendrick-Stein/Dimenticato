@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-10-24",
+  "status": "PASS",
+  "mode": "outbound-official-links-only",
+  "sourceChecks": [
+    {
+      "id": "it-rai-ristorante-a2",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-al-ristorante-per-la-decima-volta-9d617212-a35e-4306-98b9-2ed64afedfd3.html",
+      "retrievedAt": "2026-10-24",
+      "publisher": "Rai Scuola",
+      "author": "Rai Scuola (Organization in official JSON-LD); no named individual author established",
+      "levelEvidence": "Official heading Unità 12 - Livello A2",
+      "dateEvidence": "Official HTML meta property data, article data-create-date and JSON-LD datePublished all2021-06-14; dateModified2021-06-18.",
+      "contentEvidence": "Official page corresponding lesson prose includes dialogue and explanations; question anchors are the ravioli choices, Olga’s stated reason to skip primo, and Salif’s added drink.",
+      "rights": "Copyright Rai. Only outbound link, brief original Chinese guide, generic vocabulary and original questions; no copied full transcript, translation, media, image or original quiz. No reuse licence asserted.",
+      "evidenceRefs": {
+        "rai-ristorante-ravioli": "Official lesson prose immediately after waiter recommends today’s specialty; Fela joins Salif’s order.",
+        "rai-ristorante-olga": "Official paragraph beginning with Olga wanting to eat light and skipping primo.",
+        "rai-ristorante-drinks": "Dialogue following waiter asking what they will drink."
+      },
+      "accessRestriction": "Official VideoObject regionsAllowed: IT. Outbound resource only; actual playback availability depends on original site and user location. No bypass, proxy, downloading or unblocked playback claim."
+    },
+    {
+      "id": "fr-tv5-voyages-a1",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/voyages",
+      "retrievedAt": "2026-10-24",
+      "publisher": "TV5MONDE / Hachette FLE",
+      "author": "Conception Alice Reboul, Hachette FLE",
+      "levelEvidence": "Official A1 listing",
+      "dateEvidence": "Official page Published11/06/2024, Modified09/12/2024, Availableuntil04/03/2028",
+      "contentEvidence": "Official lesson and first exercise show video listening, captions tag and vacation/places word list; no full corresponding transcript obtained.",
+      "rights": "Copyright TV5MONDE/Hachette FLE. Outbound only. No video/image/subtitle/provider exercise copied. questions[]; Chinese guide independently written.",
+      "limitations": [
+        "No full transcript",
+        "No media playback or sound-quality test"
+      ]
+    },
+    {
+      "id": "de-logo-korallenriffe-20261023",
+      "url": "https://www.logo.de/korallenriffe-wichtig-einfach-erklaert-100.html",
+      "retrievedAt": "2026-10-24",
+      "publisher": "ZDF logo!",
+      "author": "logo! ZDF-Kindernachrichten (official VideoObject author)",
+      "dateEvidence": "Direct official HTTP200 HTML VideoObject uploadDate2026-10-23T15:14:00.000+02:00 durationPT1M32S; official homepage also1:32.",
+      "contentEvidence": "Only official title, description and video metadata checked. No full transcript/complete media examination.",
+      "rights": "ZDF copyright; outbound official page only, no player/media/subtitle/thumbnail copied. Official embedURL exists in metadata but not used; no embedding-rights clearance claimed.",
+      "levelEvidence": "Native children’s news; no CEFR rating assigned.",
+      "limitations": [
+        "Web open returned cache errors, direct official HTML retrieval HTTP200 succeeded without access restriction.",
+        "No full transcript",
+        "No media playback or sound-quality test"
+      ]
+    },
+    {
+      "id": "en-bc-meeting-time-a2",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/changing-meeting-time",
+      "retrievedAt": "2026-10-24",
+      "publisher": "British Council LearnEnglish",
+      "author": "British Council institutional lesson; no named individual author established",
+      "levelEvidence": "Official LanguagelevelA2 Pre-intermediate",
+      "dateEvidence": "No original publication date stated. Comment dates ignored. Evergreen lesson and sourcePublishedAt omitted.",
+      "contentEvidence": "Complete official Transcript read; question anchors opening weekday, other central-office meeting at12, updated meetinginvite with email.",
+      "rights": "British Council copyright. Outbound link with short original guide/questions only; no transcript/media/images or original exercises copied.",
+      "originalityCheck": "Official Task1 XML and Task2 XML bothHTTP200 inspected. New questions independently worded and target weekday/reason/email accompaniment rather than repeating original sentence-selection or vocabulary-gap tasks.",
+      "comparisonUrls": [
+        "https://gamedata.britishcouncil.org/d/MultipleChoice_MjI4ODY=.xml",
+        "https://gamedata.britishcouncil.org/d/GapFillDragAndDrop_MjI4ODc=.xml"
+      ],
+      "evidenceRefs": {
+        "bc-meeting-opening": "First speaker turn identifies nextTuesday.",
+        "bc-meeting-central-office": "Lucy’s proposed morning change followed by centraloffice meeting at12.",
+        "bc-meeting-email": "Anna’s response to Lucy offering to tellSven, mentions confirmingtimechange withupdatedinvite."
+      }
+    }
+  ],
+  "discoveryExclusions": [
+    {
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/vocabulaire-les-loisirs",
+      "reason": "First exercise is photo/phrase matching; opted for unambiguously video-based Voyages listening instead."
+    }
+  ],
+  "limits": [
+    "No actual audio/video audition",
+    "FR/DE resource-only, no full corresponding text",
+    "BC original publication date absent, omitted"
+  ],
+  "entrySha256": {
+    "it-rai-ristorante-a2": "bd742e91cc22c7b35ad478f88d2a1201740eb893fe5ee1e15a19b2f74d17a7fc",
+    "fr-tv5-voyages-a1": "33aefdc6d8e1cd51a5a2ec4403852e02c8895c3f1add24e540d00c0b57eaf346",
+    "de-logo-korallenriffe-20261023": "4a61839b4a86d0d261f7a519093b5109fe005f700c5b952e39673b525ed6a793",
+    "en-bc-meeting-time-a2": "9061ee754de5a9751901938e5494d8a261ea83bd22e6c263a9a981ec5733af3d"
+  },
+  "independentReview": {
+    "checkedAt": "2026-10-24",
+    "status": "PASS",
+    "reviewer": "independent-listening-source-question-audit",
+    "blindFirst": true,
+    "blindAnswersZeroBased": {
+      "it-rai-ristorante-a2": [
+        2,
+        0,
+        3
+      ],
+      "en-bc-meeting-time-a2": [
+        1,
+        2,
+        0
+      ]
+    },
+    "blindEvidence": {
+      "it": [
+        "Official Rai lesson paragraph explaining specialty choice",
+        "Olga light-meal explanation",
+        "Drink order dialogue"
+      ],
+      "en": [
+        "Official BC opening turn weekday",
+        "Lucy central-office meeting at12",
+        "Anna email with updated invite"
+      ]
+    },
+    "revisionsRechecked": [
+      "Italian question1 excludes server-as-diner distractor; removes two-person numerical hint; four plausible diner groups.",
+      "English question3 replaces weekend activities with attendee list.",
+      "Rai official VideoObject regionsAllowed IT disclosed without asserting actual regional playback.",
+      "French follow-along guide no longer presumes a past travel experience."
+    ],
+    "checks": [
+      "Full official Italian and English corresponding text read independently; all6 keys unique and Chinese explanations faithful.",
+      "All4 title/guide/vocab checked; French vocab in official lesson wordlist; German terms clearly topic preparation not asserted transcript quotations.",
+      "Rai datePublished2021-06-14,official A2 and IT metadata;TV5 published2024-06-11 updated2024-12-09 available2028-03-04 A1;logo upload2026-10-23 duration1:32 noCEFR;BC A2 unknown original date omitted.",
+      "Outboundlinks only; no downloadedmedia/subtitle/images/fulltranslation; no reuse licence asserted.",
+      "BC original exercises inspected; new prompts do not reproduce their sentence selection or gapfill tasks.",
+      "IDs and URLs new against16existing listening entries."
+    ],
+    "limits": [
+      "No actual audio/video audition or playback verification.",
+      "FR/DE resourceonly withoutfulltranscript;zeroquestions.",
+      "Rai regionalavailability metadataIT; real playback restrictions not tested."
+    ],
+    "entriesFileSha256": "387db78a586585c41745cb8ded4fdc0cb77dd3f330ce198628a5b081def8f366",
+    "entryCanonicalSha256": {
+      "it-rai-ristorante-a2": "bd742e91cc22c7b35ad478f88d2a1201740eb893fe5ee1e15a19b2f74d17a7fc",
+      "fr-tv5-voyages-a1": "33aefdc6d8e1cd51a5a2ec4403852e02c8895c3f1add24e540d00c0b57eaf346",
+      "de-logo-korallenriffe-20261023": "4a61839b4a86d0d261f7a519093b5109fe005f700c5b952e39673b525ed6a793",
+      "en-bc-meeting-time-a2": "9061ee754de5a9751901938e5494d8a261ea83bd22e6c263a9a981ec5733af3d"
+    }
+  },
+  "remainingValidation": "Coordinator must run combined repository tests and production deployment/UI verification before claiming published.",
+  "baseCommit": "d76c322489b5eee326fadc0504bc302480cb13b0",
+  "entryHashFormat": "SHA-256 of UTF-8 JSON with sorted keys, ensure_ascii=false, compact separators and no trailing newline."
+}

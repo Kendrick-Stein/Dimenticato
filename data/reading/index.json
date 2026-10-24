@@ -2,6 +2,57 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-24-en-time-to-save-an-old-axe",
+      "lang": "en",
+      "date": "2026-10-24",
+      "title": "Time to save an old axe",
+      "titleZh": "为一件古老石斧争取时间",
+      "summaryZh": "一件约四千年前的石斧暂时不能出口，博物馆可以争取购买并向公众展示。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "文化遗产"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-23",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-24-fr-decouvrir-au-dela-des-ecrans",
+      "lang": "fr",
+      "date": "2026-10-24",
+      "title": "Découvrir la culture au-delà de ses habitudes",
+      "titleZh": "在既有习惯之外发现文化",
+      "summaryZh": "passe Culture 的2030计划把自主探索、青年参与与线下文化生活相联系，同时需区分目标和已实现功能。",
+      "level": "B2",
+      "category": "culture",
+      "topics": [
+        "青年文化",
+        "数字工具",
+        "公共参与"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-23",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-24-fr-les-musees-travaillent-ensemble",
+      "lang": "fr",
+      "date": "2026-10-24",
+      "title": "Quand les musées travaillent ensemble",
+      "titleZh": "当博物馆携手合作",
+      "summaryZh": "Museum 7 和另一项文化联盟同时启动，但各自的参与者与任务并不相同。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "艺术与日常"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-22",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-23-it-conoscere-gli-archivi",
       "lang": "it",
       "date": "2026-10-23",
@@ -91,6 +142,39 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-24-en-rain-and-water-reserves",
+      "lang": "en",
+      "date": "2026-10-24",
+      "title": "Why rain does not end a drought at once",
+      "titleZh": "下雨为何不等于旱情立刻结束",
+      "summaryZh": "英格兰部分地区的水务公司在保护供水的同时，需要持续降雨补充水库。",
+      "level": "B1",
+      "category": "environment",
+      "topics": [
+        "用水与环境"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-20",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-24-fr-deux-lieux-pour-se-rencontrer",
+      "lang": "fr",
+      "date": "2026-10-24",
+      "title": "Deux lieux pour se rencontrer",
+      "titleZh": "两个相遇的文化场所",
+      "summaryZh": "土伦与奥利乌勒的两个演出场地，准备通过新项目把艺术家与公众联系起来。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "艺术与日常"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-20",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-23-fr-passer-de-la-reception-a-la-creation",
       "lang": "fr",
       "date": "2026-10-23",
@@ -143,6 +227,22 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-24-it-il-sole-e-i-servizi-quotidiani",
+      "lang": "it",
+      "date": "2026-10-24",
+      "title": "Osservare il Sole per capire i rischi tecnologici",
+      "titleZh": "观察太阳，理解技术风险",
+      "summaryZh": "罗马的一间新监测室将关注太阳活动及其对导航、通信等服务的潜在影响。",
+      "level": "B1",
+      "category": "technology",
+      "topics": [
+        "日常技术"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-19",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-22-de-alte-texte-wieder-finden",
       "lang": "de",
       "date": "2026-10-22",
@@ -176,6 +276,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-24-it-commercio-leggere-periodi-e-misure",
+      "lang": "it",
+      "date": "2026-10-24",
+      "title": "Commercio estero: leggere periodi e misure",
+      "titleZh": "对外贸易：读懂比较时期与计量方式",
+      "summaryZh": "八月进出口数据呈现不同方向的变化；理解它们，需要区分环比、同比、金额、数量和能源分项。",
+      "level": "B2",
+      "category": "work-economy",
+      "topics": [
+        "进出口",
+        "能源价格",
+        "统计比较"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-16",
       "contentType": "native-adaptation"
     },
     {
@@ -630,6 +748,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-24-it-un-mistero-in-archivio",
+      "lang": "it",
+      "date": "2026-10-24",
+      "title": "Un mistero da scoprire in archivio",
+      "titleZh": "在档案馆探索一桩谜案",
+      "summaryZh": "米兰档案馆借历史失窃事件，让公众通过线索与文献接近历史。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "地方文化",
+        "档案研究"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-09",
       "contentType": "native-adaptation"
     },
     {
@@ -1322,6 +1457,22 @@
       ],
       "sourceLang": "de",
       "sourcePublishedAt": "2026-09-23",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-24-en-farm-funding-and-counting",
+      "lang": "en",
+      "date": "2026-10-24",
+      "title": "Farm funding: reading beyond the headline",
+      "titleZh": "农业资金：读懂标题背后的口径",
+      "summaryZh": "一项农业资金申请窗口的报道，也提醒我们区分申请、协议、实际付款与统计对象。",
+      "level": "B2",
+      "category": "work-economy",
+      "topics": [
+        "农业与收入"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-22",
       "contentType": "native-adaptation"
     },
     {

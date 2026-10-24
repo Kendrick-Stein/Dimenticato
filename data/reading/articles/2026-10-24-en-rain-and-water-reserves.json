@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "id": "2026-10-24-en-rain-and-water-reserves",
+  "storyId": "defra-drought-group-2026-10-20",
+  "lang": "en",
+  "date": "2026-10-24",
+  "category": "environment",
+  "topics": [
+    "用水与环境"
+  ],
+  "title": "Why rain does not end a drought at once",
+  "titleZh": "下雨为何不等于旱情立刻结束",
+  "summaryZh": "英格兰部分地区的水务公司在保护供水的同时，需要持续降雨补充水库。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连接原因、措施和预期，含被动语态及条件性表述；环境词配中文帮助。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+    "title": "Water company bosses update National Drought Group on resilience",
+    "url": "https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
+    "publishedAt": "2026-10-20",
+    "lang": "en",
+    "author": "Department for Environment, Food & Rural Affairs; Environment Agency; Emma Hardy MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Environment, Food & Rural Affairs; Environment Agency; Emma Hardy MP; 2026-10-20; https://www.gov.uk/government/news/water-company-bosses-update-national-drought-group-on-resilience",
+  "adaptation": "2026-10-24整理。依据机构英文叙述作同语言分级改写，添加中文译文、词义及原创练习；不是逐字原文或官方课程。排除照片、标志、直接引语及第三方内容。保留原报道日期；对原文数据的教学推论明确标注，不构成个人法律或申请建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 20 October 2026, the government reported on a meeting with water company leaders about drought in England.",
+      "zh": "2026年10月20日，政府报道了与水务公司负责人讨论英格兰旱情的一次会议。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Parts of the South East and South West had experienced their driest April-to-September period in more than a century.",
+      "zh": "英格兰东南部和西南部的一些地区经历了一个多世纪以来最干旱的4月至9月。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Reservoir levels were low, and severe drought had been declared in parts of six counties the previous week.",
+      "zh": "水库水位很低，前一周已有六个郡的部分地区宣布进入严重干旱状态。",
+      "glosses": [
+        {
+          "surface": "declared",
+          "lemma": "declare",
+          "zh": "宣布"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "However, public water supplies were still continuing when the report was published.",
+      "zh": "不过，在报道发表时，公共供水仍在持续。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "The declaration allowed extra steps to protect supplies before a possible interruption, rather than announcing that taps had already stopped working.",
+      "zh": "宣布严重干旱使有关方面能在可能停供之前采取额外保护措施，而不是宣布水龙头已经断水。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Companies were checking reservoir and river levels every day and improving checks on water quality.",
+      "zh": "水务公司每天检查水库及河流水位，并加强水质检查。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "They were also finding leaks more quickly and moving water through their networks towards areas with the lowest reservoirs.",
+      "zh": "它们还在更快地寻找漏水点，并通过管网把水调往水库水位最低的地区。",
+      "glosses": [
+        {
+          "surface": "leaks",
+          "lemma": "leak",
+          "zh": "漏水点"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Where appropriate, they were reducing water pressure at night to help protect supplies.",
+      "zh": "在适宜的地方，它们正在夜间降低水压，以帮助保障供水。",
+      "glosses": [
+        {
+          "surface": "pressure",
+          "lemma": "pressure",
+          "zh": "压力、水压"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The Environment Agency had allowed two companies to release less water from certain reservoirs into local rivers.",
+      "zh": "英国环境署已允许两家公司减少从特定水库向当地河流放水。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Other requests, including possible restrictions on non-essential business use, were still being considered.",
+      "zh": "其他申请，包括可能限制非必要商业用水的申请，仍在审议中。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Fish rescue plans were also being prepared in case falling reservoir levels made action necessary.",
+      "zh": "有关方面也在准备鱼类救援计划，以防水库水位继续下降而需要采取行动。",
+      "glosses": [
+        {
+          "surface": "prepared",
+          "lemma": "prepare",
+          "zh": "准备"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "These were preparations, not a statement that every planned measure had already begun.",
+      "zh": "这些是准备工作，并不表示每项计划中的措施都已开始。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Rain was expected later that week, but the Environment Agency said a longer period of wet weather was needed.",
+      "zh": "预计那一周晚些时候会下雨，但英国环境署表示需要更长时间的湿润天气。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "It estimated that rainfall over the following six months needed to reach at least 120 percent of the average for the country to be considered out of drought by early spring.",
+      "zh": "该机构估计，要到初春时认定英格兰已摆脱干旱，接下来六个月的降雨量需要达到平均水平的至少120%。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "This explains why a rainy day and a recovered water supply system are not the same thing.",
+      "zh": "这说明了为什么下雨的一天与供水系统恢复并不是一回事。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "The group asked people to use water wisely in the weeks and months ahead, while companies remained responsible for maintaining public supplies.",
+      "zh": "该工作组呼吁人们在接下来几周和几个月里明智用水，而保障公共供水的责任仍由水务公司承担。",
+      "glosses": [
+        {
+          "surface": "responsible",
+          "lemma": "responsible",
+          "zh": "负有责任的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "declared",
+        "lemma": "declare",
+        "zh": "宣布",
+        "sentenceId": "s3",
+        "note": "had been declared为过去完成时被动，指正式宣布旱情。"
+      },
+      {
+        "text": "leaks",
+        "lemma": "leak",
+        "zh": "漏水点",
+        "sentenceId": "s7",
+        "note": "leaks是漏水处的复数，不是账单、阀门或水表。"
+      },
+      {
+        "text": "pressure",
+        "lemma": "pressure",
+        "zh": "压力、水压",
+        "sentenceId": "s8",
+        "note": "water pressure指水压，降低水压不等于降低水价、水温或水质。"
+      },
+      {
+        "text": "prepared",
+        "lemma": "prepare",
+        "zh": "准备",
+        "sentenceId": "s11",
+        "note": "being prepared表示正在准备计划，尚不能说计划已执行或取消。"
+      },
+      {
+        "text": "responsible",
+        "lemma": "responsible",
+        "zh": "负有责任的",
+        "sentenceId": "s16",
+        "note": "responsible for表示对某项职责负责。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in case",
+        "zh": "以防",
+        "sentenceId": "s11",
+        "note": "后接可能发生的情况。"
+      },
+      {
+        "text": "were still being considered",
+        "zh": "仍在审议中",
+        "sentenceId": "s10",
+        "note": "过去进行时被动表达当时未完成的审议。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "rather than明确区分预防措施与已经发生的停水。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "How can a community save water without shifting all responsibility to households?",
+        "zh": "社区怎样节水，同时不把全部责任转给家庭？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "A short-term improvement does not mean…",
+        "zh": "短期改善并不意味着……",
+        "note": "可复用教学表达，不是原文引语。"
+      }
+    ]
+  }
+}

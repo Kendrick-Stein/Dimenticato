@@ -1,0 +1,285 @@
+{
+  "schema": 1,
+  "id": "2026-10-24-fr-decouvrir-au-dela-des-ecrans",
+  "storyId": "fr-2026-10-23-passe-culture-2030",
+  "lang": "fr",
+  "date": "2026-10-24",
+  "title": "Découvrir la culture au-delà de ses habitudes",
+  "titleZh": "在既有习惯之外发现文化",
+  "summaryZh": "passe Culture 的2030计划把自主探索、青年参与与线下文化生活相联系，同时需区分目标和已实现功能。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：区分事实、目标与解释，使用让步、限制和复合句，保留原报道论述层次。",
+  "category": "culture",
+  "topics": [
+    "青年文化",
+    "数字工具",
+    "公共参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Passe Culture : de nouveaux objectifs à l’horizon 2030",
+    "url": "https://www.culture.gouv.fr/actualites/passe-culture-de-nouveaux-objectifs-a-l-horizon-2030",
+    "publishedAt": "2026-10-23",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：Ministère de la Culture（机构作者，未单列个人署名）；原题、原日期和原链接见来源。依据 CC BY-SA 3.0 FR 使用；Dimenticato 同语言分级改写、中文翻译与教学补充亦按该许可发布，不代表原机构认可。",
+  "adaptation": "2026-10-24整理，非当日原文。仅依据原语机构正文改写并配中文翻译；不转载图片、媒体、外链附件、第三方引语。词汇、理解题与口语问题为教学补充；保留原报道日期、事件时序与事实/计划之别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le projet stratégique Génération 2030, présenté le 16 octobre 2026, propose de redéfinir le rôle du passe Culture dans les années à venir.",
+      "zh": "2026年10月16日提出的“2030一代”战略计划，旨在重新界定passe Culture未来几年的角色。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Dans son article du 23 octobre, le ministère de la Culture décrit un dispositif qui ne se limite pas à mettre des offres à la disposition des jeunes.",
+      "zh": "文化部在10月23日的文章中描述了一项并不局限于向年轻人提供文化项目的机制。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Expérimenté dès 2017 puis généralisé en 2021 pour les jeunes de quinze à vingt ans, le passe Culture est devenu un opérateur de l’État chargé d’une mission de service public.",
+      "zh": "passe Culture从2017年开始试行，2021年向15至20岁青年推广，现已成为承担公共服务使命的国家运营机构。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Cette évolution explique l’importance accordée à son inscription dans des politiques plus larges d’accès à la culture, plutôt qu’à sa seule dimension d’application numérique.",
+      "zh": "这一变化解释了为什么其融入更广泛文化可及政策的重要性受到强调，而不是只看它作为数字应用的维度。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "La nouvelle stratégie résulte d’une consultation engagée au début de 2026 avec des réseaux professionnels, des associations, des acteurs culturels et des services de l’État.",
+      "zh": "新战略源于2026年初启动的磋商，参与者包括专业网络、协会、文化参与者和国家部门。",
+      "glosses": [
+        {
+          "surface": "consultation",
+          "lemma": "consultation",
+          "zh": "磋商",
+          "note": "阴性单数；指征求多方意见的过程，不是医学问诊。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Soixante-deux jeunes réunis au sein du Conseil des jeunes du passe Culture ont également participé à cette démarche, ce qui donne une place à leurs propositions.",
+      "zh": "passe Culture青年委员会的62名年轻人也参与了这一过程，使他们的建议获得表达空间。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Créée cette année, cette instance doit permettre de valoriser leurs idées et de mettre en pratique des propositions concrètes, sans que la consultation suffise à prouver leur réalisation.",
+      "zh": "这个今年成立的机构旨在重视年轻人的想法并落实具体建议，但参与磋商本身不足以证明建议已经实现。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "L’enjeu est notamment de mieux accompagner les parcours culturels et de réduire les inégalités d’accès, afin que les jeunes puissent développer leurs propres pratiques.",
+      "zh": "一个重要目标是更好地支持文化体验历程并减少接触文化的机会不平等，让年轻人能够发展自己的文化实践。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Le dispositif encourage aussi l’engagement citoyen, à travers des espaces de délibération, des démarches participatives et le développement du bénévolat.",
+      "zh": "这项机制还通过讨论空间、参与式行动和志愿服务发展来鼓励公民参与。",
+      "glosses": [
+        {
+          "surface": "bénévolat",
+          "lemma": "bénévolat",
+          "zh": "志愿服务",
+          "note": "阳性单数；le développement du bénévolat 指发展志愿参与。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Il ne s’agit donc pas seulement de choisir une activité, mais aussi de partager une expérience et de contribuer à la vie du dispositif.",
+      "zh": "因此，这不仅是选择一项活动，也包括分享经历并参与这项机制的运行。",
+      "glosses": [
+        {
+          "surface": "contribuer",
+          "lemma": "contribuer",
+          "zh": "参与并作出贡献",
+          "note": "contribuer à 后接参与贡献的对象，这里是机制运行。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Cette autonomie doit toutefois s’articuler avec l’éducation artistique et culturelle, car l’accès à un espace de choix suppose également une préparation.",
+      "zh": "不过，这种自主性需要与艺术文化教育衔接，因为进入一个自主选择的空间也需要准备。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Le projet établit ainsi un lien entre les découvertes faites à l’école et les pratiques développées en dehors du cadre scolaire, sans présenter ces deux dimensions comme opposées.",
+      "zh": "该计划由此联系起学校中的发现与学校框架之外的实践，而不是将二者视为对立。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Dans le cadre scolaire, le passe Culture concerne les classes de la sixième à la terminale et s’appuie sur plusieurs réseaux d’enseignement.",
+      "zh": "在学校框架内，passe Culture涉及从初中起始年级（sixième）到高中毕业班的各年级，并依托多个教育网络。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "La découverte des métiers de l’art et de la culture, l’esprit critique et les usages raisonnés du numérique figurent également parmi les missions évoquées.",
+      "zh": "认识艺术文化职业、培养批判思维以及合理使用数字技术，也属于文中列举的任务。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Le numérique reste central, mais la stratégie cherche à en faire un moyen d’élargir les découvertes plutôt qu’un espace fermé sur des préférences déjà établies.",
+      "zh": "数字技术仍然重要，但战略寻求将其变为拓展发现的手段，而不是围绕既有偏好封闭的空间。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Un algorithme spécifique doit notamment recommander ce qui n’a pas encore été exploré, tandis qu’un répertoire culturel français est annoncé pour l’avenir.",
+      "zh": "其中，一个特定算法将推荐尚未探索过的内容，同时未来还计划推出法国文化目录。",
+      "glosses": [
+        {
+          "surface": "répertoire",
+          "lemma": "répertoire",
+          "zh": "目录",
+          "note": "阳性单数；这里是组织文化内容的目录。"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Le modèle envisagé pour ce répertoire sera organisé autour des œuvres, des artistes, des lieux et des événements, et non plus autour de l’offre.",
+      "zh": "所设想的目录模式将围绕作品、艺术家、场所和活动组织，而不再围绕供给项目。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Cette transformation est présentée comme une orientation à construire : l’annonce ne permet pas de conclure que toutes les nouvelles fonctions sont déjà disponibles.",
+      "zh": "这一转变被描述为需要建设的发展方向：不能据此公告得出所有新功能已经可用的结论。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Un Observatoire du passe Culture sera également lancé pour partager des données fiables et analyser les pratiques culturelles des jeunes.",
+      "zh": "还将启动passe Culture观察机构，以分享可靠数据并分析年轻人的文化实践。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "Ces connaissances doivent soutenir le pilotage des politiques publiques et aider les acteurs culturels à développer des propositions adaptées à la jeunesse.",
+      "zh": "这些知识旨在支持公共政策管理，并帮助文化参与者发展适合年轻人的项目。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Enfin, la coopération avec les directions régionales des affaires culturelles et les collectivités doit renforcer la place des ressources culturelles de proximité.",
+      "zh": "最后，与地区文化事务管理部门和地方政府合作，旨在强化身边文化资源的作用。",
+      "glosses": [
+        {
+          "surface": "proximité",
+          "lemma": "proximité",
+          "zh": "身边的、本地的",
+          "note": "de proximité 表示就近、本地，非特定城市名称。"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "La perspective est celle d’un passe Culture progressivement ouvert à tous, favorisant la découverte du patrimoine, de l’histoire régionale et des lieux de création.",
+      "zh": "其愿景是逐步向所有人开放的passe Culture，促进对文化遗产、地区历史和创作场所的探索。",
+      "glosses": []
+    },
+    {
+      "id": "s23",
+      "text": "La cohérence de ces ambitions tient à leur articulation : participation des jeunes, accompagnement éducatif et outils numériques sont pensés ensemble, mais leurs effets futurs restent à établir.",
+      "zh": "这些目标的连贯性在于彼此衔接：青年参与、教育支持和数字工具被放在一起考虑，但未来效果仍有待确认。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "consultation",
+        "lemma": "consultation",
+        "zh": "磋商",
+        "sentenceId": "s5",
+        "note": "阴性单数；指征求多方意见的过程，不是医学问诊。"
+      },
+      {
+        "text": "bénévolat",
+        "lemma": "bénévolat",
+        "zh": "志愿服务",
+        "sentenceId": "s9",
+        "note": "阳性单数；le développement du bénévolat 指发展志愿参与。"
+      },
+      {
+        "text": "contribuer",
+        "lemma": "contribuer",
+        "zh": "参与并作出贡献",
+        "sentenceId": "s10",
+        "note": "contribuer à 后接参与贡献的对象，这里是机制运行。"
+      },
+      {
+        "text": "répertoire",
+        "lemma": "répertoire",
+        "zh": "目录",
+        "sentenceId": "s16",
+        "note": "阳性单数；这里是组织文化内容的目录。"
+      },
+      {
+        "text": "proximité",
+        "lemma": "proximité",
+        "zh": "身边的、本地的",
+        "sentenceId": "s21",
+        "note": "de proximité 表示就近、本地，非特定城市名称。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "mettre en pratique",
+        "zh": "付诸实践",
+        "sentenceId": "s7",
+        "note": "mettre en pratique des propositions 表示落实建议。"
+      },
+      {
+        "text": "ne permet pas de conclure",
+        "zh": "不足以得出结论",
+        "sentenceId": "s18",
+        "note": "谨慎论述证据所能支持的范围。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "sans présenter… comme…：不把某事描述为某种关系，可用于避免二元对立。"
+      },
+      {
+        "sentenceId": "s23",
+        "note": "mais 连接目标的内部连贯性与效果尚未确认这两个不同判断。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Un outil numérique peut-il t’aider à découvrir une pratique culturelle inattendue?",
+        "zh": "数字工具能帮助你发现意料之外的文化活动吗？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ce qui m’intéresse dans cette proposition, c’est…",
+        "zh": "这个提议让我感兴趣的是……",
+        "note": "可按自己的观点替换后半句。"
+      }
+    ]
+  }
+}

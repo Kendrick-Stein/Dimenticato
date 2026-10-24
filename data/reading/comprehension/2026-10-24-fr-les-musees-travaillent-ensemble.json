@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-fr-les-musees-travaillent-ensemble",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quel contraste structure la présentation des deux initiatives?",
+      "promptZh": "文章围绕两项倡议的什么差别展开？",
+      "options": [
+        "Un projet relie les musées, l’autre associe davantage de secteurs culturels.",
+        "Un projet forme les créateurs, l’autre classe les collections anciennes.",
+        "Un projet choisit les œuvres, l’autre organise les visites scolaires.",
+        "Un projet gère les bâtiments, l’autre décide des programmes artistiques."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s3",
+        "s4",
+        "s6",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "Museum 7是博物馆专业网络，CCDD涉及更广泛的公共、私人和文化参与者；其余分工并非文章对二者的描述。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Où les prochaines réunions de Museum 7 doivent-elles se tenir?",
+      "promptZh": "Museum 7今后的会议安排在哪里举行？",
+      "options": [
+        "Dans les musées qui reçoivent le plus de visiteurs.",
+        "Dans une nouvelle capitale culturelle choisie chaque mois.",
+        "Dans les locaux permanents d’Art Basel Paris.",
+        "Dans les pays qui accueillent successivement le G7."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "第9句明确按G7主办国轮换，不是依照参观人数、每月评选或永久设在巴黎艺术展。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi le financement fait-il partie des discussions de Museum 7?",
+      "promptZh": "为什么资金问题属于Museum 7的讨论内容？",
+      "options": [
+        "Pour réunir les collections des musées dans des expositions communes.",
+        "Pour permettre aux musées de poursuivre leurs missions dans la durée.",
+        "Pour former des créateurs aux techniques de conservation des musées.",
+        "Pour financer des séjours scolaires auprès des institutions partenaires."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s8"
+      ],
+      "explanationZh": "第8句把公共私人资金模式与博物馆使命的长期持续联系起来，并未将其限定为联展、创作者培训或学生住宿。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Quel cadre correspond le mieux à un échange entre conservateurs sur la protection des collections?",
+      "promptZh": "博物馆保管专业人员就藏品保护交流，最符合哪个框架？",
+      "options": [
+        "Les sous-comités éducatifs chargés de la CCDD.",
+        "Le groupe de créateurs participant à la CCDD.",
+        "Le réseau professionnel proposé par Museum 7.",
+        "Les experts en urbanisme du comité consultatif."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s7",
+        "s10",
+        "s12"
+      ],
+      "explanationZh": "第6至7句将专业人员交流和藏品保存明确放在Museum 7网络中；CCDD的教育、创作者及跨领域专家角色不能替代这一最直接对应关系。"
+    }
+  ]
+}

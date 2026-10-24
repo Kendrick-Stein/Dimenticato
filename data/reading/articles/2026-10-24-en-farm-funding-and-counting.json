@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "id": "2026-10-24-en-farm-funding-and-counting",
+  "storyId": "defra-sfi-window-2026-09-22",
+  "lang": "en",
+  "date": "2026-10-24",
+  "category": "work-economy",
+  "topics": [
+    "农业与收入"
+  ],
+  "title": "Farm funding: reading beyond the headline",
+  "titleZh": "农业资金：读懂标题背后的口径",
+  "summaryZh": "一项农业资金申请窗口的报道，也提醒我们区分申请、协议、实际付款与统计对象。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：政策目标与实际进展区分，含资格条件、统计口径、让步和限制性推论；并非按长度自动评级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+    "title": "£233 million fund to help more farmers boost food production and protect the land",
+    "url": "https://www.gov.uk/government/news/233-million-fund-to-help-more-farmers-boost-food-production-and-protect-the-land",
+    "publishedAt": "2026-09-22",
+    "lang": "en",
+    "author": "Department for Environment, Food & Rural Affairs; Rural Payments Agency; Stephen Morgan MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Environment, Food & Rural Affairs; Rural Payments Agency; Stephen Morgan MP; 2026-09-22; https://www.gov.uk/government/news/233-million-fund-to-help-more-farmers-boost-food-production-and-protect-the-land",
+  "adaptation": "2026-10-24整理。依据机构英文叙述作同语言分级改写，添加中文译文、词义及原创练习；不是逐字原文或官方课程。排除照片、标志、直接引语及第三方内容。保留原报道日期；对原文数据的教学推论明确标注，不构成个人法律或申请建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A government announcement published on 22 September 2026 described a second application window for England’s Sustainable Farming Incentive, backed by a fund of £233 million.",
+      "zh": "2026年9月22日发表的政府公告介绍了英格兰“可持续农业激励计划”的第二轮申请窗口，配套资金为2.33亿英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "The stated purpose was to support farmers and land managers in producing food sustainably, while providing income in return for actions that improve the environment.",
+      "zh": "其公布的目的是支持农民和土地管理者以可持续方式生产粮食，同时为改善环境的行动提供相应收入。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "This was not presented as a choice between farming and nature protection: the scheme aimed to connect the two, especially as businesses faced low yields, rising costs and drought.",
+      "zh": "这并不是把农业和自然保护描述为二选一：该计划旨在把两者联系起来，尤其是在经营者面临低产量、成本上升和干旱的情况下。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "However, an announcement about the aim of a scheme is not, by itself, evidence that the intended improvements have already been achieved on every participating farm.",
+      "zh": "不过，关于计划目标的公告，本身并不能证明预期改善已经在每个参与农场实现。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "That distinction matters when reading the different figures included in the report, because applications, live agreements and payments describe different stages of the process.",
+      "zh": "阅读报道中的不同数字时，这一区分很重要，因为申请、已生效协议及付款描述的是流程中的不同阶段。",
+      "glosses": [
+        {
+          "surface": "stages",
+          "lemma": "stage",
+          "zh": "阶段"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "The first application window had received 7,000 applications, including many from small farms, and 3,100 new agreements had become live by 1 September.",
+      "zh": "第一轮申请窗口收到了7,000份申请，其中许多来自小农场；截至9月1日，已有3,100份新协议生效。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "The announcement also said payments were reaching farmers’ accounts, but it did not give a total showing that every one of the 7,000 applicants had already been paid.",
+      "zh": "公告还说款项正在进入农民账户，但没有给出能表明全部7,000名申请者都已获付款的总数。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "For the second window, the £233 million included an extra £50 million announced in August and £3 million that had not been allocated in the first window.",
+      "zh": "第二轮的2.33亿英镑包括8月宣布增加的5,000万英镑，以及第一轮尚未分配的300万英镑。",
+      "glosses": [
+        {
+          "surface": "allocated",
+          "lemma": "allocate",
+          "zh": "分配"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "These amounts were components of the announced fund, so adding them again to £233 million would exaggerate the size of the package described in the release.",
+      "zh": "这些金额是所公布资金的组成部分，因此再把它们加到2.33亿英镑上，就会夸大新闻稿所述资金规模。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "At the time of publication, eligible farmers and land managers with at least three hectares of agricultural land were able to apply through the new window.",
+      "zh": "在公告发表时，拥有至少三公顷农业用地且符合资格的农民和土地管理者可以通过新窗口申请。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "The announcement also offered an early-application route to those whose current environmental land management agreements were due to expire by the end of February 2027.",
+      "zh": "公告还为现有环境土地管理协议将于2027年2月底前到期者提供了提前申请渠道。",
+      "glosses": [
+        {
+          "surface": "expire",
+          "lemma": "expire",
+          "zh": "到期"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "It described this group as roughly 21,000 farms, including small farms that had delayed applying so they could use the new option before their existing agreement ended.",
+      "zh": "公告把这一群体描述为约21,000个农场，其中包括推迟申请、以便在现有协议到期前使用新渠道的小农场。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "The release’s accompanying analysis adds an important qualification to such numbers: it uses a Single Business Identifier to estimate the number of businesses represented in the data.",
+      "zh": "新闻稿附带的分析为这些数字增加了一项重要限定：它使用“单一经营主体识别码”估算数据中涉及的经营主体数量。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Both farm businesses and other landholders can have this identifier, so the statistical unit should not automatically be understood as one physical farm or one individual farmer.",
+      "zh": "农业经营主体和其他土地持有者都可能有这种识别码，因此不应自动把这一统计单位理解为一个实际农场或一名农民。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Moreover, the same identifier can be linked to several agreements, meaning that totals for individual categories may not add up to the overall number of businesses.",
+      "zh": "此外，同一个识别码可能关联多份协议，因此各类别的小计加起来可能不等于经营主体总数。",
+      "glosses": [
+        {
+          "surface": "categories",
+          "lemma": "category",
+          "zh": "类别"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "The analysis reported 54,300 businesses with live agreements overall and 21,300 with agreements expiring by 28 February 2027, using information extracted on 18 September.",
+      "zh": "该分析使用9月18日提取的信息，报告共有54,300个经营主体持有生效协议，其中21,300个持有将于2027年2月28日前到期的协议。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "The figures were rounded and were explicitly described as management information held by the Rural Payments Agency, rather than a release of official statistics.",
+      "zh": "这些数字经过四舍五入，并被明确说明为乡村支付局持有的管理信息，而非官方统计数据发布。",
+      "glosses": [
+        {
+          "surface": "rounded",
+          "lemma": "round",
+          "zh": "四舍五入的"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "For a reader, these details do not make the announcement useless; they establish what the figures can and cannot support, and prevent a neat headline from becoming an inaccurate calculation.",
+      "zh": "对读者而言，这些细节并不会使公告失去价值；它们界定了数字能与不能支持什么，并防止简洁的标题变成不准确的计算。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "The practical lesson is to ask which stage is being counted, which date the data describe and whether several categories include the same business, before comparing funding promises with participation or results.",
+      "zh": "实际的阅读启示是：在把资金承诺与参与情况或结果作比较前，要先问数字统计的是哪个阶段、数据对应哪个日期，以及几个类别是否包含同一经营主体。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "stages",
+        "lemma": "stage",
+        "zh": "阶段",
+        "sentenceId": "s5",
+        "note": "stages复数说明申请、协议及付款属于不同环节，而不是地点或季节。"
+      },
+      {
+        "text": "allocated",
+        "lemma": "allocate",
+        "zh": "分配",
+        "sentenceId": "s8",
+        "note": "had not been allocated表示先前尚未分配，不能改为已花费或已偿还。"
+      },
+      {
+        "text": "expire",
+        "lemma": "expire",
+        "zh": "到期",
+        "sentenceId": "s11",
+        "note": "agreements expire表示协议到期；to后用原形。"
+      },
+      {
+        "text": "categories",
+        "lemma": "category",
+        "zh": "类别",
+        "sentenceId": "s15",
+        "note": "individual categories是分项类别，关系到同一主体跨类别重复计数。"
+      },
+      {
+        "text": "rounded",
+        "lemma": "round",
+        "zh": "四舍五入的",
+        "sentenceId": "s17",
+        "note": "rounded表示数值经过舍入，不表示遗漏、翻倍或保密。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in return for",
+        "zh": "作为……的交换／回报",
+        "sentenceId": "s2",
+        "note": "这里说明收入与环境行动相联系。"
+      },
+      {
+        "text": "add up to",
+        "zh": "合计为",
+        "sentenceId": "s15",
+        "note": "用于讨论小计是否等于总数。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "not, by itself, evidence that：把政策目标与已证实效果分开，避免从投入直接推断结果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "When you see a funding headline, what would you check before judging its impact?",
+        "zh": "看到资金新闻标题时，你会核对什么再判断效果？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "The figures describe…, but they do not establish…",
+        "zh": "这些数字描述了……，但不能证明……",
+        "note": "可复用教学表达，不是原文引语。"
+      }
+    ]
+  }
+}

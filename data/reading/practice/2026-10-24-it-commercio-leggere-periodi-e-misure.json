@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-it-commercio-leggere-periodi-e-misure",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 111,
+      "answer": "confronto",
+      "options": [
+        "confronto",
+        "trasporto",
+        "riposo",
+        "lavoro"
+      ],
+      "explanation": "对应中文“比较”，须还原原文 confronto。阳性单数；periodo di confronto 指用来比较的时期。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 162,
+      "answer": "andamento",
+      "options": [
+        "indirizzo",
+        "andamento",
+        "strumento",
+        "contratto"
+      ],
+      "explanation": "对应中文“变化趋势”，须还原原文 andamento。阳性单数；seguire lo stesso andamento 表示呈现相同走势。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s10",
+      "start": 55,
+      "answer": "trascurare",
+      "options": [
+        "trasferire",
+        "trasformare",
+        "trascurare",
+        "trasmettere"
+      ],
+      "explanation": "对应中文“忽略”，须还原原文 trascurare。动词不定式；portare a trascurare 意为导致忽略。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s13",
+      "start": 169,
+      "answer": "comparto",
+      "options": [
+        "calendario",
+        "confine",
+        "convegno",
+        "comparto"
+      ],
+      "explanation": "对应中文“行业”，须还原原文 comparto。阳性单数；这里指经济中的某一行业部门。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s18",
+      "start": 49,
+      "answer": "complessivo",
+      "options": [
+        "complessivo",
+        "provvisorio",
+        "energetico",
+        "mensile"
+      ],
+      "explanation": "对应中文“总体的”，须还原原文 complessivo。阳性单数形容词，与 avanzo 一致。"
+    }
+  ]
+}

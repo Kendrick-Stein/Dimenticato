@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-fr-deux-lieux-pour-se-rencontrer",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Que propose le nouveau projet pour les deux sites?",
+      "promptZh": "新项目为两个场地提出了什么？",
+      "options": [
+        "Répartir les spectacles selon l’âge des artistes.",
+        "Créer un programme consacré à l’histoire de Toulon.",
+        "Relier les lieux de spectacle et les habitants.",
+        "Réunir les deux sites autour d’une école de théâtre."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s6",
+        "s10"
+      ],
+      "explanationZh": "项目强调开放、两个场地之间的流动和走进街区；不是按艺术家年龄分配演出、专门介绍土伦历史或围绕戏剧学校组织场地。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Comment commence chaque cycle du programme?",
+      "promptZh": "每个节目系列如何开始？",
+      "options": [
+        "Par une activité dans un espace public ou un lieu particulier.",
+        "Par une rencontre entre les compagnies et les écoles.",
+        "Par une création commune aux deux salles de spectacle.",
+        "Par une visite des coulisses avec les artistes."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "第8句指出每个系列以公共空间或地方特殊场所的活动开场，其他范围或形式未被提出。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quelle action concerne particulièrement les jeunes?",
+      "promptZh": "哪项行动特别面向年轻人？",
+      "options": [
+        "Un festival pour choisir la nouvelle direction.",
+        "Des Classes ouvertes avec l’Éducation nationale.",
+        "Une formation pour construire l’amphithéâtre.",
+        "Une exposition sur les quatre saisons."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "第9句明确列出与国民教育部门合作的开放课堂；其余活动文中没有。"
+    }
+  ]
+}

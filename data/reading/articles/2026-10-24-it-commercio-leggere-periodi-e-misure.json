@@ -1,0 +1,285 @@
+{
+  "schema": 1,
+  "id": "2026-10-24-it-commercio-leggere-periodi-e-misure",
+  "storyId": "it-2026-10-16-trade-august",
+  "lang": "it",
+  "date": "2026-10-24",
+  "title": "Commercio estero: leggere periodi e misure",
+  "titleZh": "对外贸易：读懂比较时期与计量方式",
+  "summaryZh": "八月进出口数据呈现不同方向的变化；理解它们，需要区分环比、同比、金额、数量和能源分项。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：区分事实、目标与解释，使用让步、限制和复合句，保留原报道论述层次。",
+  "category": "work-economy",
+  "topics": [
+    "进出口",
+    "能源价格",
+    "统计比较"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Istat",
+    "title": "Commercio con l’estero e prezzi all’import - Agosto 2026",
+    "url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-agosto-2026/",
+    "publishedAt": "2026-10-16",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Istat（机构作者，未单列个人署名）；原题、原日期和原链接见来源。依据 CC BY 4.0 使用；Dimenticato 同语言分级改写、中文翻译与教学补充亦按该许可发布，不代表原机构认可。",
+  "adaptation": "2026-10-24整理，非当日原文。仅依据原语机构正文改写并配中文翻译；不转载图片、媒体、外链附件、第三方引语。词汇、理解题与口语问题为教学补充；保留原报道日期、事件时序与事实/计划之别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Nel comunicato pubblicato il 16 ottobre 2026, l’Istat presenta le stime sul commercio estero e sui prezzi all’importazione riferite al mese di agosto.",
+      "zh": "意大利统计局在2026年10月16日发布的公报中，介绍了八月份对外贸易和进口价格的估计数据。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Per comprenderle non basta chiedersi se gli scambi aumentino o diminuiscano: occorre distinguere il periodo di confronto e la misura utilizzata.",
+      "zh": "要理解这些数据，不能只问贸易增长还是下降：需要区分比较时期和所使用的计量方式。",
+      "glosses": [
+        {
+          "surface": "confronto",
+          "lemma": "confronto",
+          "zh": "比较",
+          "note": "阳性单数；periodo di confronto 指用来比较的时期。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Rispetto al mese precedente, le esportazioni diminuiscono dell’1,5% e le importazioni dell’1,6%; il calo dell’export riguarda sia i mercati dell’Unione europea sia quelli esterni.",
+      "zh": "与前一个月相比，出口下降1.5%，进口下降1.6%；出口下降同时涉及欧盟内外市场。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Nell’area Ue la flessione mensile delle esportazioni è pari all’1,4%, mentre nell’area extra Ue raggiunge l’1,6%, con differenze quindi contenute fra le due aree.",
+      "zh": "欧盟地区的出口月度降幅为1.4%，欧盟以外地区为1.6%，因此两地的差距较小。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Se si allarga lo sguardo al trimestre giugno-agosto, confrontato con il trimestre precedente, il quadro cambia: l’export cresce dello 0,7% e l’import dello 0,2%.",
+      "zh": "如果扩大到六月至八月这三个月，并与前一季度相比，情况就不同：出口增长0.7%，进口增长0.2%。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Un mese in diminuzione può dunque comparire all’interno di un trimestre in crescita, senza che i due risultati siano fra loro contraddittori.",
+      "zh": "因此，一个下降的月份可以出现在增长的季度之中，而这两个结果并不矛盾。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Anche il confronto con agosto dell’anno precedente richiede attenzione, perché il valore monetario e il volume degli scambi non seguono necessariamente lo stesso andamento.",
+      "zh": "与上年八月的比较同样需要注意，因为贸易金额与数量不一定沿同一方向变化。",
+      "glosses": [
+        {
+          "surface": "andamento",
+          "lemma": "andamento",
+          "zh": "变化趋势",
+          "note": "阳性单数；seguire lo stesso andamento 表示呈现相同走势。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Le esportazioni aumentano del 9,0% in valore, ma la crescita in volume si ferma all’1,9%, mostrando una differenza fra le due misure.",
+      "zh": "出口金额增长9.0%，但数量增长只有1.9%，显示出两种计量方式之间的差别。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Per le importazioni, la divergenza è ancora più evidente: il valore sale del 9,7%, mentre il volume scende del 2,4% rispetto a un anno prima.",
+      "zh": "进口的差异更加明显：金额较上年增长9.7%，数量却下降2.4%。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Leggere soltanto l’aumento in euro porterebbe perciò a trascurare la riduzione indicata dall’indicatore di volume, che descrive un’altra dimensione dello scambio.",
+      "zh": "因此，只看欧元金额的增长，就会忽略数量指标显示的下降；后者描述的是贸易的另一个维度。",
+      "glosses": [
+        {
+          "surface": "trascurare",
+          "lemma": "trascurare",
+          "zh": "忽略",
+          "note": "动词不定式；portare a trascurare 意为导致忽略。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "La crescita annua delle esportazioni in valore è più intensa verso i paesi extra Ue, dove raggiunge il 16,7%, che verso l’Ue, dove è dell’1,6%.",
+      "zh": "按金额计算，出口同比增幅在欧盟以外国家更大，达到16.7%；在欧盟地区则为1.6%。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Tra i settori che contribuiscono maggiormente all’aumento figurano metalli, prodotti petroliferi raffinati, autoveicoli e altri mezzi di trasporto, oltre ad alimentari, bevande e tabacco.",
+      "zh": "对增长贡献较大的行业包括金属、精炼石油产品、汽车及其他运输设备，以及食品、饮料和烟草。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Al contrario, diminuiscono dell’1,4% le esportazioni di macchinari e apparecchi non classificati altrove; una crescita complessiva non significa quindi crescita di ogni comparto.",
+      "zh": "相反，未另分类的机械和设备出口下降1.4%；因此，总体增长并不意味着所有行业都在增长。",
+      "glosses": [
+        {
+          "surface": "comparto",
+          "lemma": "comparto",
+          "zh": "行业",
+          "note": "阳性单数；这里指经济中的某一行业部门。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Sul piano geografico, Svizzera e Stati Uniti forniscono i maggiori contributi positivi all’export nazionale, mentre l’apporto negativo più importante viene dalle minori vendite verso la Francia.",
+      "zh": "从地域来看，瑞士和美国对全国出口提供最大的正向贡献，而最重要的负向贡献来自对法国销售减少。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Il saldo commerciale di agosto resta positivo, a 1.773 milioni di euro, ma risulta inferiore ai 1.875 milioni registrati nello stesso mese del 2025.",
+      "zh": "八月份贸易差额仍为正值，为17.73亿欧元，但低于2025年同月的18.75亿欧元。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Dietro questo totale si osservano due movimenti diversi: il deficit energetico peggiora, mentre aumenta l’avanzo relativo ai prodotti non energetici.",
+      "zh": "这一总额背后有两种不同变化：能源逆差恶化，而非能源产品顺差增加。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Il deficit energetico passa infatti da 3.431 a 5.152 milioni di euro, mentre l’avanzo non energetico sale da 5.307 a 6.925 milioni.",
+      "zh": "具体来说，能源逆差从34.31亿增加到51.52亿欧元，而非能源顺差从53.07亿增加到69.25亿欧元。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Per i primi otto mesi del 2026, invece, l’avanzo complessivo è di 34,7 miliardi, contro 32,5 miliardi nello stesso periodo del 2025.",
+      "zh": "而在2026年前八个月，总体顺差为347亿欧元，上年同期为325亿欧元。",
+      "glosses": [
+        {
+          "surface": "complessivo",
+          "lemma": "complessivo",
+          "zh": "总体的",
+          "note": "阳性单数形容词，与 avanzo 一致。"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Il dato cumulato e quello del singolo agosto raccontano quindi confronti diversi e non devono essere scambiati quando si riassume la notizia.",
+      "zh": "因此，累计数据与单独八月份数据表达的是不同的比较，概括新闻时不能将二者混淆。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "L’Istat segnala inoltre che la flessione mensile dell’export risente in parte di vendite di mezzi di navigazione marittima rilevate a luglio.",
+      "zh": "统计局还指出，出口月度降幅部分受到七月份记录的船舶销售的影响。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Escludendo queste vendite dal confronto, la diminuzione stimata sarebbe più contenuta, pari allo 0,4%, anziché all’1,5% riportato per il totale.",
+      "zh": "在比较中剔除这些销售后，估计降幅将更小，为0.4%，而不是总体公布的1.5%。",
+      "glosses": []
+    },
+    {
+      "id": "s22",
+      "text": "Infine, i prezzi all’importazione aumentano dell’1,7% sul mese e del 7,3% sull’anno; secondo il commento dell’istituto, il loro rialzo è dovuto soprattutto ai prodotti energetici.",
+      "zh": "最后，进口价格环比上涨1.7%、同比上涨7.3%；根据统计局的评论，涨幅主要由能源产品带动。",
+      "glosses": []
+    },
+    {
+      "id": "s23",
+      "text": "Il comunicato richiede pertanto una lettura articolata: periodo, valore, volume e composizione settoriale permettono di capire perché indicatori diversi possano suggerire direzioni differenti.",
+      "zh": "因此，公报需要分层阅读：时期、金额、数量以及行业构成有助于理解不同指标为何可能指向不同方向。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "confronto",
+        "lemma": "confronto",
+        "zh": "比较",
+        "sentenceId": "s2",
+        "note": "阳性单数；periodo di confronto 指用来比较的时期。"
+      },
+      {
+        "text": "andamento",
+        "lemma": "andamento",
+        "zh": "变化趋势",
+        "sentenceId": "s7",
+        "note": "阳性单数；seguire lo stesso andamento 表示呈现相同走势。"
+      },
+      {
+        "text": "trascurare",
+        "lemma": "trascurare",
+        "zh": "忽略",
+        "sentenceId": "s10",
+        "note": "动词不定式；portare a trascurare 意为导致忽略。"
+      },
+      {
+        "text": "comparto",
+        "lemma": "comparto",
+        "zh": "行业",
+        "sentenceId": "s13",
+        "note": "阳性单数；这里指经济中的某一行业部门。"
+      },
+      {
+        "text": "complessivo",
+        "lemma": "complessivo",
+        "zh": "总体的",
+        "sentenceId": "s18",
+        "note": "阳性单数形容词，与 avanzo 一致。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "senza che",
+        "zh": "而不……",
+        "sentenceId": "s6",
+        "note": "后接虚拟式 siano，说明一种情况不必造成另一判断。"
+      },
+      {
+        "text": "Escludendo queste vendite",
+        "zh": "剔除这些销售后",
+        "sentenceId": "s21",
+        "note": "副动词结构用来限定统计比较范围。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s9",
+        "note": "mentre 在这里表达对比：金额增长，数量却下降。"
+      },
+      {
+        "sentenceId": "s19",
+        "note": "non devono essere scambiati：被动结构强调不能混淆不同口径。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quando leggi una notizia economica, controlli il periodo del confronto?",
+        "zh": "阅读经济新闻时，你会核对比较时期吗？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Il dato cambia se consideriamo…",
+        "zh": "如果考虑……，数据就会改变。",
+        "note": "可按自己的观点替换后半句。"
+      }
+    ]
+  }
+}

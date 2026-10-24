@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "id": "2026-10-24-it-un-mistero-in-archivio",
+  "storyId": "it-2026-10-09-dga-bolla-oro",
+  "lang": "it",
+  "date": "2026-10-24",
+  "title": "Un mistero da scoprire in archivio",
+  "titleZh": "在档案馆探索一桩谜案",
+  "summaryZh": "米兰档案馆借历史失窃事件，让公众通过线索与文献接近历史。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体场景、短句与常用动词；专业词提供中文逐句辅助。",
+  "category": "culture",
+  "topics": [
+    "地方文化",
+    "档案研究"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "Trafug’Arte racconta il mistero della Bolla d’oro di Carlo V conservata all’Archivio di Stato di Milano",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=7500cc7b97eaaf8dd119ae7c50c544e6&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2802",
+    "publishedAt": "2026-10-09",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：Ministero della Cultura — Direzione generale Archivi（机构作者，未单列个人署名）；原题、原日期和原链接见来源。依据 CC BY 3.0 使用；Dimenticato 同语言分级改写、中文翻译与教学补充亦按该许可发布，不代表原机构认可。",
+  "adaptation": "2026-10-24整理，非当日原文。仅依据原语机构正文改写并配中文翻译；不转载图片、媒体、外链附件、第三方引语。词汇、理解题与口语问题为教学补充；保留原报道日期、事件时序与事实/计划之别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Un nuovo episodio del podcast Trafug’Arte racconta una storia dell’Archivio di Stato di Milano.",
+      "zh": "播客 Trafug’Arte 的新一期讲述米兰国家档案馆的一段历史。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Al centro c’è un documento importante: Carlo V conferma agli Sforza il Ducato di Milano.",
+      "zh": "故事中心是一份重要文件：查理五世以此确认斯福尔扎家族对米兰公国的统治。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Il suo sigillo, con il prezioso contenitore d’oro, rappresenta il potere dell’imperatore.",
+      "zh": "它的印章及其珍贵的金质容器象征着皇帝的权力。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Ma nel 1810 qualcuno ruba il prezioso oggetto negli archivi milanesi.",
+      "zh": "但在1810年，有人从米兰档案机构偷走了这件珍贵物品。",
+      "glosses": [
+        {
+          "surface": "ruba",
+          "lemma": "rubare",
+          "zh": "偷走",
+          "note": "rubare 的直陈式现在时第三人称单数；这里用历史现在时叙事。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Un dipendente, Mattia Beckers, denuncia subito il furto.",
+      "zh": "一名工作人员马蒂亚·贝克斯立即报告了失窃事件。",
+      "glosses": [
+        {
+          "surface": "furto",
+          "lemma": "furto",
+          "zh": "失窃事件",
+          "note": "阳性单数；denunciare un furto 表示报案或报告失窃。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Il responsabile viene individuato e il contenitore d’oro del sigillo viene recuperato.",
+      "zh": "责任人被查明，印章的金质容器被追回。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Il sigillo di cera, invece, è perduto per sempre.",
+      "zh": "然而蜡印永远遗失了。",
+      "glosses": [
+        {
+          "surface": "cera",
+          "lemma": "cera",
+          "zh": "蜡",
+          "note": "阴性单数材料名词；di cera 表示蜡制的。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Questa differenza è importante: non tutti gli oggetti tornano in archivio.",
+      "zh": "这一差别很重要：并非所有物品都回到了档案馆。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Oggi questa storia arriva al pubblico anche attraverso un gioco, l’escape room Il Sigillo spezzato.",
+      "zh": "如今，这段历史也通过密室解谜游戏“破碎的印章”走向公众。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il gioco si svolge negli spazi del Palazzo del Senato.",
+      "zh": "游戏在参议院宫的空间内进行。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "I partecipanti diventano investigatori e cercano di ricostruire il furto con indizi, documenti e prove.",
+      "zh": "参与者化身调查员，尝试利用线索、文献和证据还原失窃事件。",
+      "glosses": [
+        {
+          "surface": "indizi",
+          "lemma": "indizio",
+          "zh": "线索",
+          "note": "阳性复数；单数 indizio，复数 indizi。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "L’iniziativa nasce per Archivissima 2026 e viene proposta di nuovo al pubblico.",
+      "zh": "这一活动为2026年 Archivissima 而创办，并再次向公众推出。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Il podcast presenta anche il lavoro quotidiano di protezione dei documenti: l’archivio conserva una memoria comune, non soltanto oggetti antichi.",
+      "zh": "播客还介绍日常文献保护工作：档案馆保存的是共同记忆，而不只是古老物品。",
+      "glosses": [
+        {
+          "surface": "quotidiano",
+          "lemma": "quotidiano",
+          "zh": "日常的",
+          "note": "阳性单数形容词，与 lavoro 一致。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "ruba",
+        "lemma": "rubare",
+        "zh": "偷走",
+        "sentenceId": "s4",
+        "note": "rubare 的直陈式现在时第三人称单数；这里用历史现在时叙事。"
+      },
+      {
+        "text": "furto",
+        "lemma": "furto",
+        "zh": "失窃事件",
+        "sentenceId": "s5",
+        "note": "阳性单数；denunciare un furto 表示报案或报告失窃。"
+      },
+      {
+        "text": "cera",
+        "lemma": "cera",
+        "zh": "蜡",
+        "sentenceId": "s7",
+        "note": "阴性单数材料名词；di cera 表示蜡制的。"
+      },
+      {
+        "text": "indizi",
+        "lemma": "indizio",
+        "zh": "线索",
+        "sentenceId": "s11",
+        "note": "阳性复数；单数 indizio，复数 indizi。"
+      },
+      {
+        "text": "quotidiano",
+        "lemma": "quotidiano",
+        "zh": "日常的",
+        "sentenceId": "s13",
+        "note": "阳性单数形容词，与 lavoro 一致。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "denuncia subito",
+        "zh": "立即报告",
+        "sentenceId": "s5",
+        "note": "subito 放在动词后，表示立刻。"
+      },
+      {
+        "text": "per sempre",
+        "zh": "永远",
+        "sentenceId": "s7",
+        "note": "用于表达持续不变的状态。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "non tutti 表示“并非全部”，不是“全部都不”。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Ti piacerebbe conoscere la storia attraverso un gioco? Perché?",
+        "zh": "你愿意通过游戏了解历史吗？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mi piacerebbe scoprire…",
+        "zh": "我愿意探索……",
+        "note": "可按自己的观点替换后半句。"
+      }
+    ]
+  }
+}

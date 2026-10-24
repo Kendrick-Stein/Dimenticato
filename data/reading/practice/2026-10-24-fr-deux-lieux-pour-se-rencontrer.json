@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-fr-deux-lieux-pour-se-rencontrer",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 79,
+      "answer": "colline",
+      "options": [
+        "rivière",
+        "colline",
+        "place",
+        "route"
+      ],
+      "explanation": "对应中文“山丘”，须还原原文 colline。阴性单数名词；sur une colline 表示在一座山丘上。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 55,
+      "answer": "air",
+      "options": [
+        "hiver",
+        "train",
+        "air",
+        "retard"
+      ],
+      "explanation": "对应中文“室外空气”，须还原原文 air。en plein air 是固定表达，意为“在露天”。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 52,
+      "answer": "maison",
+      "options": [
+        "maison",
+        "gare",
+        "usine",
+        "banque"
+      ],
+      "explanation": "对应中文“家”，须还原原文 maison。这里是比喻，表示共同参与的开放场所，不是私人住房。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 35,
+      "answer": "saisons",
+      "options": [
+        "semaines",
+        "classes",
+        "villes",
+        "saisons"
+      ],
+      "explanation": "对应中文“季节”，须还原原文 saisons。阴性复数，les quatre saisons 为四季。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 30,
+      "answer": "régulière",
+      "options": [
+        "lointaine",
+        "régulière",
+        "silencieuse",
+        "ancienne"
+      ],
+      "explanation": "对应中文“定期的”，须还原原文 régulière。阴性单数，与 présence 一致；强调反复、稳定出现。"
+    }
+  ]
+}

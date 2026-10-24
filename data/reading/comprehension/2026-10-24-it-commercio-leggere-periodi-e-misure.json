@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-it-commercio-leggere-periodi-e-misure",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Qual è il principale criterio di lettura proposto dal testo?",
+      "promptZh": "文章提出的主要阅读原则是什么？",
+      "options": [
+        "Privilegiare l’andamento dei paesi con maggiori esportazioni.",
+        "Scegliere il dato mensile per riassumere tutti gli scambi.",
+        "Distinguere periodi, misure e componenti prima di interpretare i risultati.",
+        "Usare i prezzi energetici per descrivere ogni settore produttivo."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s6",
+        "s7",
+        "s19",
+        "s23"
+      ],
+      "explanationZh": "文章反复要求区分时期、金额数量与行业构成，不建议选择某个单项代替整体。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quale combinazione descrive le importazioni rispetto ad agosto 2025?",
+      "promptZh": "与2025年八月相比，哪组变化描述了进口？",
+      "options": [
+        "Aumento del valore e diminuzione del volume.",
+        "Diminuzione del valore e aumento del volume.",
+        "Aumento sia del valore sia del volume.",
+        "Diminuzione sia del valore sia del volume."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "金额同比上升9.7%，数量同比下降2.4%；两种计量方向相反。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Perché il calo mensile dell’export si riduce nel confronto corretto per alcune vendite?",
+      "promptZh": "为什么剔除某些销售后，出口月度降幅减小？",
+      "options": [
+        "Perché vengono aggiunte le esportazioni francesi di agosto.",
+        "Perché vengono esclusi tutti i prodotti energetici importati.",
+        "Perché il confronto utilizza il totale dei primi otto mesi.",
+        "Perché si escludono vendite di mezzi marittimi registrate a luglio."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s20",
+        "s21"
+      ],
+      "explanationZh": "原文说明七月船舶销售影响比较基数，剔除后降幅从1.5%缩小为0.4%；并非改用累计期或剔除全部能源进口。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Che cosa accade alle due componenti del saldo di agosto?",
+      "promptZh": "八月贸易差额的两个分项发生了什么？",
+      "options": [
+        "Il deficit energetico si riduce e l’avanzo non energetico cresce.",
+        "Il deficit energetico cresce e l’avanzo non energetico cresce.",
+        "Il deficit energetico cresce e l’avanzo non energetico si riduce.",
+        "Il deficit energetico si riduce e l’avanzo non energetico si riduce."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s16",
+        "s17"
+      ],
+      "explanationZh": "能源逆差绝对规模增加，非能源顺差也增加；必须分别看逆差与顺差。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Quale sintesi rispetta il confronto tra agosto e i primi otto mesi?",
+      "promptZh": "哪项概括正确处理了八月与前八个月的比较？",
+      "options": [
+        "L’avanzo diminuisce in entrambi i confronti con il 2025.",
+        "L’avanzo aumenta in entrambi i confronti con il 2025.",
+        "L’avanzo di agosto diminuisce, mentre quello cumulato aumenta.",
+        "L’avanzo di agosto aumenta, mentre quello cumulato diminuisce."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s15",
+        "s18",
+        "s19"
+      ],
+      "explanationZh": "八月17.73亿低于上年18.75亿，累计347亿高于325亿；需综合两个时段数据，而不是把单月套用全年累计。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-en-time-to-save-an-old-axe",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 7,
+      "answer": "found",
+      "options": [
+        "lost",
+        "found",
+        "sold",
+        "painted"
+      ],
+      "explanation": "found是find的过去式，和1974年的发现事件对应。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 15,
+      "answer": "smooth",
+      "options": [
+        "wet",
+        "sticky",
+        "rough",
+        "smooth"
+      ],
+      "explanation": "smooth形容surface的质感，是光滑而不是粗糙、潮湿或黏的。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 47,
+      "answer": "temporary",
+      "options": [
+        "temporary",
+        "permanent",
+        "annual",
+        "weekly"
+      ],
+      "explanation": "temporary表示暂时的，与有限的暂缓期一致。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 16,
+      "answer": "raise",
+      "options": [
+        "spend",
+        "return",
+        "raise",
+        "count"
+      ],
+      "explanation": "raise money是筹款；此处不是花钱、退钱或数钱。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 22,
+      "answer": "researchers",
+      "options": [
+        "drivers",
+        "researchers",
+        "farmers",
+        "sellers"
+      ],
+      "explanation": "researchers为复数，指研究历史器物的人。"
+    }
+  ]
+}

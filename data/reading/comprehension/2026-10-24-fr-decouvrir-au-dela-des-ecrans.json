@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-fr-decouvrir-au-dela-des-ecrans",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle logique relie les différentes orientations du projet?",
+      "promptZh": "什么思路将项目的不同方向联系起来？",
+      "options": [
+        "Confier les choix culturels aux établissements scolaires en priorité.",
+        "Associer autonomie culturelle, participation et accompagnement.",
+        "Transformer les institutions culturelles en services de données.",
+        "Organiser les pratiques autour des préférences déjà observées."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8",
+        "s9",
+        "s11",
+        "s12",
+        "s15",
+        "s23"
+      ],
+      "explanationZh": "正文将自主实践、青年参与、教育支持与数字工具相联系，而非把选择交给学校、以数据替代文化或巩固既有偏好。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quelle participation des jeunes est explicitement mentionnée?",
+      "promptZh": "文中明确提到了年轻人的哪种参与？",
+      "options": [
+        "Ils ont évalué les résultats du futur Observatoire.",
+        "Ils ont rédigé les programmes des réseaux d’enseignement.",
+        "Ils ont sélectionné les artistes du répertoire national.",
+        "Soixante-deux membres d’un conseil ont participé à la consultation."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "文中说明62名青年委员会成员参与磋商，没有说他们完成了评估、课程编制或艺术家遴选。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi relier les pratiques autonomes à l’éducation artistique et culturelle?",
+      "promptZh": "为什么将自主实践与艺术文化教育联系起来？",
+      "options": [
+        "Pour préparer les jeunes à se saisir d’un espace de choix.",
+        "Pour coordonner les réservations avec le calendrier des cours.",
+        "Pour sélectionner les œuvres recommandées par les enseignants.",
+        "Pour confier aux écoles la gestion du répertoire numérique."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第11句指出自由选择也需要准备，第12句强调学校与校外实践衔接；未将理由归于预约日历、教师选作品或学校管理目录。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quel changement est prévu pour le futur répertoire?",
+      "promptZh": "未来目录计划发生什么变化？",
+      "options": [
+        "Classer les activités selon les revenus des bénéficiaires.",
+        "Regrouper les propositions selon les établissements scolaires.",
+        "Organiser le contenu autour des œuvres, artistes, lieux et événements.",
+        "Présenter les offres selon le nombre de réservations passées."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s16",
+        "s17"
+      ],
+      "explanationZh": "第17句列出新的组织对象；未提收入、学校或历史预约量。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Un lieu culturel veut mieux s’adresser aux jeunes : quel apport de l’Observatoire correspond au projet?",
+      "promptZh": "一个文化场所希望更好地面向年轻人：观察机构的哪种贡献符合项目？",
+      "options": [
+        "Décider quels artistes devront apparaître dans sa programmation.",
+        "Éclairer ses propositions grâce à l’analyse des pratiques des jeunes.",
+        "Organiser directement les réservations de ses visiteurs scolaires.",
+        "Fixer le calendrier des réunions de son conseil des jeunes."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s19",
+        "s20"
+      ],
+      "explanationZh": "观察机构分析青年文化实践并帮助文化参与者发展面向青年的项目，因此可以用分析支持场所设计活动；文章没有赋予其选艺术家、处理预约或安排青年委员会日程的职责。"
+    }
+  ]
+}

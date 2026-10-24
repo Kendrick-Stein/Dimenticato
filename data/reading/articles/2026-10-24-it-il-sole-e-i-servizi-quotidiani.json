@@ -1,0 +1,237 @@
+{
+  "schema": 1,
+  "id": "2026-10-24-it-il-sole-e-i-servizi-quotidiani",
+  "storyId": "it-2026-10-19-ingv-space-weather-monitoring",
+  "lang": "it",
+  "date": "2026-10-24",
+  "title": "Osservare il Sole per capire i rischi tecnologici",
+  "titleZh": "观察太阳，理解技术风险",
+  "summaryZh": "罗马的一间新监测室将关注太阳活动及其对导航、通信等服务的潜在影响。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连续说明中练习原因、对比、关系句和未来时，专业词提供中文辅助。",
+  "category": "technology",
+  "topics": [
+    "日常技术"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "SPACE WEATHER | L’INGV inaugura la nuova Sala di Monitoraggio a Roma",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/space-weather-l-ingv-inaugura-la-nuova-sala-di-monitoraggio-a-roma",
+    "publishedAt": "2026-10-19",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：INGV Ufficio Stampa（机构作者，未单列个人署名）；原题、原日期和原链接见来源。依据 CC BY 4.0 使用；Dimenticato 同语言分级改写、中文翻译与教学补充亦按该许可发布，不代表原机构认可。",
+  "adaptation": "2026-10-24整理，非当日原文。仅依据原语机构正文改写并配中文翻译；不转载图片、媒体、外链附件、第三方引语。词汇、理解题与口语问题为教学补充；保留原报道日期、事件时序与事实/计划之别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Quando pensiamo al tempo, di solito immaginiamo pioggia, vento e temperature, ma esiste anche una meteorologia spaziale.",
+      "zh": "想到天气时，我们通常会想到雨、风和气温，但还有一种“空间天气”。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Questo settore studia i fenomeni collegati all’attività del Sole e i loro effetti sull’ambiente vicino alla Terra.",
+      "zh": "这一领域研究与太阳活动有关的现象，以及它们对地球周边环境的影响。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Secondo un comunicato pubblicato il 19 ottobre 2026, l’INGV inaugurerà una nuova Sala di Monitoraggio Space Weather a Roma il 27 ottobre.",
+      "zh": "根据2026年10月19日发布的公告，意大利国家地球物理与火山学研究所将于10月27日在罗马为新空间天气监测室揭幕。",
+      "glosses": [
+        {
+          "surface": "inaugurerà",
+          "lemma": "inaugurare",
+          "zh": "将为……揭幕",
+          "note": "简单将来时第三人称单数；27日相对整理日仍在未来。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "L’evento inizierà alle nove del mattino presso la sede centrale dell’istituto; alla data di questa lettura, l’inaugurazione è ancora prevista.",
+      "zh": "活动将于上午九点在研究所总部开始；截至本篇整理时，揭幕仍是预定事项。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "La sala seguirà in tempo reale l’attività solare, le condizioni della ionosfera e il campo magnetico terrestre.",
+      "zh": "监测室将实时跟踪太阳活动、电离层状况以及地球磁场。",
+      "glosses": [
+        {
+          "surface": "reale",
+          "lemma": "reale",
+          "zh": "实时的",
+          "note": "in tempo reale 为固定搭配，表示实时。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Le tempeste solari possono infatti disturbare alcune tecnologie che usiamo o dalle quali dipendono servizi importanti.",
+      "zh": "太阳风暴确实可能干扰我们使用的一些技术，或者重要服务所依赖的技术。",
+      "glosses": [
+        {
+          "surface": "disturbare",
+          "lemma": "disturbare",
+          "zh": "干扰",
+          "note": "动词不定式，跟在 possono 后面；指对运行产生干扰。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Il comunicato cita i satelliti, le radiocomunicazioni in banda HF e i sistemi di navigazione GNSS.",
+      "zh": "公告列举了卫星、HF频段无线电通信和GNSS导航系统。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Questi ultimi permettono di determinare una posizione tramite satelliti: il termine riguarda una funzione tecnologica, non una previsione del tempo.",
+      "zh": "后者借助卫星确定位置：这个术语指的是一种技术功能，而不是天气预报。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Aviazione, trasporti, telecomunicazioni e servizi di emergenza sono fra i settori che utilizzano queste tecnologie.",
+      "zh": "航空、交通、电信和应急服务等领域都使用这些技术。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Osservare i fenomeni serve quindi a comprendere e valutare possibili effetti, senza promettere che ogni problema sarà evitato.",
+      "zh": "因此，观测这些现象有助于理解和评估可能的影响，但并不承诺避免所有问题。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Durante la mattinata sono previsti interventi delle istituzioni, il taglio del nastro e due seminari scientifici tenuti da referenti INGV.",
+      "zh": "当天上午计划安排机构代表发言、剪彩以及两场由研究所科研代表主讲的科学研讨会。",
+      "glosses": [
+        {
+          "surface": "seminari",
+          "lemma": "seminario",
+          "zh": "研讨会",
+          "note": "阳性复数；due seminari 表示两场研讨会。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "La nuova struttura si aggiunge ad altre sale operative dell’istituto, dedicate anche ai terremoti, agli tsunami e ai vulcani.",
+      "zh": "新设施将补充研究所其他运行中心，其中也包括关注地震、海啸和火山的中心。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Il lavoro non riguarda soltanto l’Italia, perché l’INGV partecipa anche a collaborazioni internazionali.",
+      "zh": "这项工作不仅涉及意大利，因为研究所还参与国际合作。",
+      "glosses": [
+        {
+          "surface": "collaborazioni",
+          "lemma": "collaborazione",
+          "zh": "合作",
+          "note": "阴性复数；partecipare a collaborazioni 表示参与合作。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "La sala contribuisce al servizio di meteorologia spaziale per l’aviazione civile fornito all’ICAO nell’ambito del consorzio europeo PECASUS.",
+      "zh": "监测室将为欧洲PECASUS联盟向国际民航组织提供的民航空间天气服务作出贡献。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "L’infrastruttura si inserisce inoltre nelle attività svolte con l’Agenzia Spaziale Europea nel campo della conoscenza della situazione spaziale.",
+      "zh": "该基础设施还属于研究所与欧洲航天局在空间态势感知领域开展的合作活动。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "La notizia presenta dunque uno strumento di osservazione e collaborazione, non l’annuncio di una tempesta solare imminente.",
+      "zh": "因此，这则新闻介绍的是观测与合作工具，而不是宣布太阳风暴即将到来。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "inaugurerà",
+        "lemma": "inaugurare",
+        "zh": "将为……揭幕",
+        "sentenceId": "s3",
+        "note": "简单将来时第三人称单数；27日相对整理日仍在未来。"
+      },
+      {
+        "text": "reale",
+        "lemma": "reale",
+        "zh": "实时的",
+        "sentenceId": "s5",
+        "note": "in tempo reale 为固定搭配，表示实时。"
+      },
+      {
+        "text": "disturbare",
+        "lemma": "disturbare",
+        "zh": "干扰",
+        "sentenceId": "s6",
+        "note": "动词不定式，跟在 possono 后面；指对运行产生干扰。"
+      },
+      {
+        "text": "seminari",
+        "lemma": "seminario",
+        "zh": "研讨会",
+        "sentenceId": "s11",
+        "note": "阳性复数；due seminari 表示两场研讨会。"
+      },
+      {
+        "text": "collaborazioni",
+        "lemma": "collaborazione",
+        "zh": "合作",
+        "sentenceId": "s13",
+        "note": "阴性复数；partecipare a collaborazioni 表示参与合作。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in tempo reale",
+        "zh": "实时地",
+        "sentenceId": "s5",
+        "note": "常用于监测、通信和数据显示。"
+      },
+      {
+        "text": "possibili effetti",
+        "zh": "可能的影响",
+        "sentenceId": "s10",
+        "note": "possibili 限定结论，不等于影响一定发生。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s16",
+        "note": "non… 而不是……，用对比限定新闻实际说了什么。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali servizi della tua giornata dipendono dalla navigazione satellitare?",
+        "zh": "你日常哪些服务依赖卫星导航？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mi sembra importante monitorare…",
+        "zh": "我觉得监测……很重要。",
+        "note": "可按自己的观点替换后半句。"
+      }
+    ]
+  }
+}

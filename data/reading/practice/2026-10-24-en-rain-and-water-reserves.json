@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-en-rain-and-water-reserves",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 55,
+      "answer": "declared",
+      "options": [
+        "measured",
+        "repaired",
+        "declared",
+        "cancelled"
+      ],
+      "explanation": "had been declared为过去完成时被动，指正式宣布旱情。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 23,
+      "answer": "leaks",
+      "options": [
+        "leaks",
+        "bills",
+        "valves",
+        "meters"
+      ],
+      "explanation": "leaks是漏水处的复数，不是账单、阀门或水表。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 44,
+      "answer": "pressure",
+      "options": [
+        "temperature",
+        "quality",
+        "price",
+        "pressure"
+      ],
+      "explanation": "water pressure指水压，降低水压不等于降低水价、水温或水质。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 34,
+      "answer": "prepared",
+      "options": [
+        "ignored",
+        "prepared",
+        "cancelled",
+        "completed"
+      ],
+      "explanation": "being prepared表示正在准备计划，尚不能说计划已执行或取消。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s16",
+      "start": 99,
+      "answer": "responsible",
+      "options": [
+        "grateful",
+        "ready",
+        "responsible",
+        "famous"
+      ],
+      "explanation": "responsible for表示对某项职责负责。"
+    }
+  ]
+}

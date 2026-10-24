@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-24",
+  "german": {
+    "publishedCount": 0,
+    "missingTiers": [
+      "A2",
+      "B1",
+      "B2/C1"
+    ],
+    "checks": [
+      {
+        "url": "https://irights.info/",
+        "result": "Official latest article index inspected; recent German articles already in published set; older beyond90days or republication uncertainty retained, no duplicate conversion."
+      },
+      {
+        "url": "https://open-educational-resources.de/",
+        "result": "Official root web timeout and direct503. Prior Halloween integrity/date hold not bypassed or recycled."
+      },
+      {
+        "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/518340/alle-beitraege-der-werkstatt/",
+        "result": "Official archive visible but filter result empty; exposed recent links video/alreadyused, no new full text cleared."
+      },
+      {
+        "url": "https://edoc.rki.de/handle/176904/13844",
+        "result": "Official hearing-difficulty article is English,19Aug2026. Separate German original not found/cleared; no translation to fill nativeGerman slot."
+      }
+    ],
+    "reserveGap": "No new cleared German reserve; do not claim a full weekly reserve."
+  },
+  "english": {
+    "selected": 3,
+    "tiers": [
+      "A2",
+      "B1",
+      "B2"
+    ],
+    "newClearedReserve": 1,
+    "remainingUnclearedExisting": 1,
+    "reserveGap": "After converting2existing reserve and1newculture source, only1newverified item plus1unverified prior lead remains; far short of21weekly slots. No quota padding.",
+    "notSelected": [
+      {
+        "url": "https://www.gov.uk/government/news/new-mental-health-pilot-for-young-people-supported-by-social-care",
+        "reason": "New23Octlead butDHSC/NHSEnglandnotregistered; notmisattributedtoDfE. Noadaptation."
+      }
+    ],
+    "freshness": "A2Oct23, B1Oct20, B2Sep22=32daybackup. B2pastannouncement, notcurrentlyopenapplicationadvice."
+  }
+}

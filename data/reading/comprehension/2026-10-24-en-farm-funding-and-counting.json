@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-en-farm-funding-and-counting",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "How do the figures of 7,000 and 54,300 differ in the article?",
+      "options": [
+        "The first counts new agreements, while the second counts first-window payments.",
+        "The first counts small farms, while the second counts hectares under agreement.",
+        "The first counts expiring agreements, while the second counts second-window applicants.",
+        "The first counts applications; the second counts businesses holding live agreements overall."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6",
+        "s16"
+      ],
+      "explanationZh": "7,000是第一轮申请数，54,300是整体持有生效协议的经营主体数；阶段及覆盖范围均不同。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "How are the £50 million and £3 million related to the £233 million fund?",
+      "options": [
+        "They are additional payments to be added after the £233 million.",
+        "They are amounts already included within the £233 million.",
+        "They are deductions that reduce the £233 million before applications.",
+        "They are estimates of what individual farms will receive from £233 million."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "两笔金额已包含在2.33亿之中，不能重复相加；也不是扣款或单个农场所得。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Why might category totals exceed the overall business total?",
+      "options": [
+        "The categories include future agreements that the overall total leaves out.",
+        "The categories measure land area rather than the number of businesses.",
+        "One business identifier may be associated with several different agreements.",
+        "Each business is counted both when applying and when receiving payment."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s13",
+        "s15"
+      ],
+      "explanationZh": "同一识别码可与多份协议关联，分类小计会有重叠；不是未来协议、土地面积或申请与付款阶段的重复计数。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Which claim is not established by the first-window figures?",
+      "options": [
+        "Every applicant had already received a payment.",
+        "The window attracted applications from small farms.",
+        "Some new agreements were live by 1 September.",
+        "Applications and payments represented different process stages."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "s7明确没有给出全部7,000名申请者都获款的总数；其他三项由正文直接支持。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Which description of the accompanying analysis is accurate?",
+      "options": [
+        "It uses unrounded application figures collected after the second window opened.",
+        "It counts individual farm workers from a survey of participating households.",
+        "It reports environmental changes measured after the first payments arrived.",
+        "It uses rounded agency management information extracted on 18 September."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s13",
+        "s14",
+        "s16",
+        "s17"
+      ],
+      "explanationZh": "数据提取日为9月18日，是经过舍入的管理信息，并不直接测量每个农场的环境改善。"
+    }
+  ]
+}

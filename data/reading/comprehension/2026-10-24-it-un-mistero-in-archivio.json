@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-24-it-un-mistero-in-archivio",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Come viene presentato il passato dell’archivio?",
+      "promptZh": "文中如何向公众呈现档案馆的过去？",
+      "options": [
+        "Con un podcast e un gioco basati su una vicenda storica.",
+        "Con un concorso per creare nuovi documenti ufficiali.",
+        "Con una mostra dedicata ai viaggi degli imperatori.",
+        "Con un corso per imparare a costruire sigilli."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s1",
+        "s9",
+        "s11"
+      ],
+      "explanationZh": "播客讲历史，游戏让人根据线索还原同一失窃事件；文中没有制作文件、旅行展或制印课程。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quale oggetto viene recuperato dopo il furto?",
+      "promptZh": "失窃后哪件物品被追回？",
+      "options": [
+        "Il sigillo di cera.",
+        "Un documento scritto da Beckers.",
+        "Il contenitore d’oro del sigillo.",
+        "Un nuovo sigillo dell’archivio."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "追回的是金质容器；蜡印永远遗失，两者不能混淆。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Che cosa fanno i partecipanti all’escape room?",
+      "promptZh": "密室游戏的参与者做什么？",
+      "options": [
+        "Registrano le interviste per il podcast.",
+        "Ricostruiscono il furto usando documenti e indizi.",
+        "Scrivono un nuovo diploma per Carlo V.",
+        "Restaurano il contenitore con gli archivisti."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "第11句明确任务是根据线索、文献与证据还原失窃事件；不是录播客、颁证或修复。"
+    }
+  ]
+}
