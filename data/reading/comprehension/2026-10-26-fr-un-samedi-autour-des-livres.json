@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-26-fr-un-samedi-autour-des-livres",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Pourquoi Maya ne met-elle pas son adresse sur la carte ?",
+      "options": [
+        "Parce que la carte reste sur la table.",
+        "Parce que Nora connaît déjà son adresse.",
+        "Parce que la carte est trop petite.",
+        "Parce que Maya ne trouve pas de stylo."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "第7句明确用car说明原因：卡片会留在桌上。文章没有说诺拉知道地址、卡片太小或找不到笔。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quels livres Maya choisit-elle ?",
+      "options": [
+        "Deux romans pour sa mère.",
+        "Un livre de cuisine et un roman.",
+        "Une histoire pour sa sœur et un roman pour elle.",
+        "Deux histoires pour Sami et sa sœur."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "第10句说明，玛雅为妹妹选故事书，为自己选小说；没有为妈妈或萨米选书。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quand Nora est-elle présente pour cette activité ?",
+      "options": [
+        "Tous les samedis du mois.",
+        "Le premier samedi du mois.",
+        "Le dernier samedi du mois.",
+        "Un samedi sur deux."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "第14句问是否每个星期六都在，第15句否定并限定为每月第一个星期六；不能只根据问题中的tous les samedis作答。"
+    }
+  ]
+}

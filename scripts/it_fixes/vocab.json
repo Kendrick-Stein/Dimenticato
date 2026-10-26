@@ -23345,5 +23345,8 @@
 {"word": "sognabile", "from": {"zh": "梦想"}, "to": {"zh": "可梦想的"}, "why": "tail review of zh-wiktionary-agreeing entries (pos-mismatched en/zh)"},
 {"word": "solleticamento", "from": {"zh": "挠痒"}, "to": {"zh": "挠痒；刺激"}, "why": "tail review of zh-wiktionary-agreeing entries (pos-mismatched en/zh)"},
 {"word": "transistorizzare", "from": {"zh": "晶体管", "en": "transistors"}, "to": {"zh": "晶体管化", "en": "transistorize"}, "why": "tail review of zh-wiktionary-agreeing entries (pos-mismatched en/zh)"},
-{"word": "ulceroso", "from": {"zh": "溃疡", "en": "ulcerative"}, "to": {"zh": "溃疡的", "en": "ulcerous"}, "why": "tail review of zh-wiktionary-agreeing entries (pos-mismatched en/zh)"}
+{"word": "ulceroso", "from": {"zh": "溃疡", "en": "ulcerative"}, "to": {"zh": "溃疡的", "en": "ulcerous"}, "why": "tail review of zh-wiktionary-agreeing entries (pos-mismatched en/zh)"},
+{"word": "bottone", "from": {"zh": "按钮"}, "to": {"zh": "纽扣；按钮"}, "why": "Original repair reading: distinguish clothing fastener from interface button."},
+{"word": "tasca", "from": {"forms": ""}, "to": {"forms": {"plural": "tasche"}}, "why": "Reviewed regular noun plural for original learning reading."},
+{"word": "foglio", "from": {"forms": ""}, "to": {"forms": {"plural": "fogli"}}, "why": "Reviewed noun plural for original learning reading."}
 ]

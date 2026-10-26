@@ -20,9 +20,9 @@ function validate(a) {
   (a.sentences||[]).forEach(s=>{ check(typeof s.id==='string' && !ids.has(s.id),'unique sentence id'); ids.add(s.id); check(typeof s.text==='string' && !!s.text.trim() && typeof s.zh==='string' && !!s.zh.trim(),'paired sentence'); check(Array.isArray(s.glosses),'glosses array'); (s.glosses||[]).forEach(g=>{check(g.surface && g.lemma && g.zh,'gloss fields'); check(typeof s.text==='string' && s.text.includes(g.surface),'surface must occur verbatim'); if(g.start!==undefined || g.end!==undefined)check(Number.isInteger(g.start) && Number.isInteger(g.end) && g.start>=0 && g.end>g.start && s.text.slice(g.start,g.end)===g.surface,'UTF16 gloss span must match surface');}); });
   const text = value => typeof value === 'string' && !!value.trim();
   if (a.contentType !== undefined) {
-    check(a.contentType === 'native-adaptation', 'supported contentType');
-    check(a.source && a.source.lang === a.lang, 'native source language must match article language');
-    check(!!a.learningSummary, 'native adaptation requires learningSummary');
+    check(['native-adaptation', 'original-learning'].includes(a.contentType), 'supported contentType');
+    check(a.source && a.source.lang === a.lang, 'source language must match article language');
+    check(!!a.learningSummary, 'typed learning article requires learningSummary');
   }
   if (a.learningSummary !== undefined) {
     const summary = a.learningSummary;

@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "id": "2026-10-26-it-una-tasca-di-un-altro-colore",
+  "storyId": "original-learning-it-repair-workshop-2026-10-26",
+  "lang": "it",
+  "date": "2026-10-26",
+  "title": "Una tasca di un altro colore",
+  "titleZh": "换一种颜色的口袋",
+  "summaryZh": "埃莱娜在社区工坊修补背包，也学会参与互助。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体生活场景、现在时叙述，包含简单原因和时间顺序；少量修补用品词汇有中文辅助。",
+  "category": "society",
+  "topics": [
+    "社区互助",
+    "日常物品"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "根据初级语言知识点独立创作情节、措辞和练习，不是教材课文改写、原文翻译或新闻报道。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Ogni sabato, un piccolo laboratorio del quartiere apre le porte a chi vuole riparare un oggetto.",
+      "zh": "每周六，社区的一间小工坊向想修理物品的人开放。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Elena arriva con uno zaino blu: una tasca è scucita e dentro non resta più niente.",
+      "zh": "埃莱娜带着一个蓝色背包到来：一个口袋脱线了，里面再也装不住东西了。",
+      "glosses": [
+        {
+          "surface": "zaino",
+          "lemma": "zaino",
+          "zh": "背包",
+          "note": "阳性单数；此处 uno zaino。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "All’ingresso, un volontario scrive il nome di Elena su un foglio e indica un tavolo libero.",
+      "zh": "在入口处，一名志愿者把她的名字写在一张纸上，并指给她一张空桌子。",
+      "glosses": [
+        {
+          "surface": "foglio",
+          "lemma": "foglio",
+          "zh": "纸；一张纸",
+          "note": "阳性单数；un foglio。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Sul tavolo ci sono una scatola di bottoni e alcuni pezzi di stoffa di diversi colori.",
+      "zh": "桌上有一盒纽扣和几块不同颜色的布。",
+      "glosses": [
+        {
+          "surface": "bottoni",
+          "lemma": "bottone",
+          "zh": "纽扣",
+          "note": "阳性复数；单数 bottone。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Elena preferisce una stoffa gialla perché così trova subito la tasca.",
+      "zh": "埃莱娜更喜欢黄色的布，因为这样她一眼就能找到口袋。",
+      "glosses": [
+        {
+          "surface": "stoffa",
+          "lemma": "stoffa",
+          "zh": "布；布料",
+          "note": "阴性单数；una stoffa。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Marta, una volontaria del quartiere, ascolta la sua idea e prepara il materiale.",
+      "zh": "社区里的一位志愿者玛尔塔听她的想法，并准备材料。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Non ripara tutto da sola: spiega il lavoro ed Elena prova con lei.",
+      "zh": "她不是独自把一切都修好，而是说明怎么做，埃莱娜和她一起尝试。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "All’inizio Elena lavora lentamente, ma capisce le spiegazioni e continua.",
+      "zh": "开始时埃莱娜做得很慢，但她理解讲解并继续做。",
+      "glosses": [
+        {
+          "surface": "lentamente",
+          "lemma": "lentamente",
+          "zh": "慢慢地",
+          "note": "副词，修饰 lavora。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Dopo un’ora finiscono la tasca e mettono via il materiale.",
+      "zh": "一个小时后，她们做好了口袋，并收好材料。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il laboratorio non vende zaini nuovi e non chiede denaro per l’aiuto.",
+      "zh": "这间工坊不卖新背包，也不收取帮助他人的费用。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Le persone portano invece materiali utili per gli incontri successivi.",
+      "zh": "大家会带来有用的材料，供之后的活动使用。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Prima di uscire, Elena promette di portare alcuni bottoni il sabato seguente.",
+      "zh": "离开前，埃莱娜答应下周六带来一些纽扣。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Torna a casa contenta: lo zaino funziona ancora e lei conosce una persona in più.",
+      "zh": "她高兴地回家：背包还能继续用，而且她又认识了一个人。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "zaino",
+        "lemma": "zaino",
+        "zh": "背包",
+        "sentenceId": "s2",
+        "note": "阳性单数；此处 uno zaino。"
+      },
+      {
+        "text": "foglio",
+        "lemma": "foglio",
+        "zh": "纸；一张纸",
+        "sentenceId": "s3",
+        "note": "阳性单数；un foglio。"
+      },
+      {
+        "text": "bottoni",
+        "lemma": "bottone",
+        "zh": "纽扣",
+        "sentenceId": "s4",
+        "note": "阳性复数；单数 bottone。"
+      },
+      {
+        "text": "stoffa",
+        "lemma": "stoffa",
+        "zh": "布；布料",
+        "sentenceId": "s5",
+        "note": "阴性单数；una stoffa。"
+      },
+      {
+        "text": "lentamente",
+        "lemma": "lentamente",
+        "zh": "慢慢地",
+        "sentenceId": "s8",
+        "note": "副词，修饰 lavora。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "mettono via il materiale",
+        "zh": "收好材料",
+        "sentenceId": "s9",
+        "note": "mettere via 表示收起、放好；mettono 是第三人称复数。"
+      },
+      {
+        "text": "da sola",
+        "zh": "独自；一个人",
+        "sentenceId": "s7",
+        "note": "sola 随这里的女性主语 Marta 变化；男性用 da solo。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s7",
+        "note": "用 non… 和随后的肯定分句对比“替别人做”与“教别人参与”。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quale oggetto vuoi riparare invece di comprarne uno nuovo?",
+        "zh": "你想修好哪件物品，而不是另买一件新的？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Preferisco… perché…",
+        "zh": "我更喜欢……，因为……",
+        "note": "原创讨论句架，用来说明选择理由。"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Una tasca di un altro colore",
+    "url": "https://www.dimenticato.xyz/#/it/reading/article/2026-10-26-it-una-tasca-di-un-altro-colore",
+    "publishedAt": "2026-10-26",
+    "lang": "it"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/it/reading/article/2026-10-26-it-una-tasca-di-un-altro-colore"
+  }
+}

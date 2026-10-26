@@ -2079,6 +2079,57 @@
       "sourceLang": "fr",
       "sourcePublishedAt": "2018-05-13",
       "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-26-de-ein-sprachtreffen-in-bonn",
+      "lang": "de",
+      "date": "2026-10-26",
+      "title": "Ein Sprachtreffen in Bonn",
+      "titleZh": "波恩的一次语言聚会",
+      "summaryZh": "两位参与者通过卡片和图画认识彼此，练习介绍来处、住处与计划。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "语言交流",
+        "社区生活"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-26",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-26-fr-un-samedi-autour-des-livres",
+      "lang": "fr",
+      "date": "2026-10-26",
+      "title": "Un samedi autour des livres",
+      "titleZh": "星期六的换书活动",
+      "summaryZh": "玛雅参加街区换书活动，了解登记和换书规则，并帮助另一位参与者。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "社区生活",
+        "自我介绍"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-26",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-26-it-una-tasca-di-un-altro-colore",
+      "lang": "it",
+      "date": "2026-10-26",
+      "title": "Una tasca di un altro colore",
+      "titleZh": "换一种颜色的口袋",
+      "summaryZh": "埃莱娜在社区工坊修补背包，也学会参与互助。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "社区互助",
+        "日常物品"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-26",
+      "contentType": "original-learning"
     }
   ]
 }

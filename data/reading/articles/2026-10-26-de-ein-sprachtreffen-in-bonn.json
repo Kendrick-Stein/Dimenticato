@@ -1,0 +1,237 @@
+{
+  "id": "2026-10-26-de-ein-sprachtreffen-in-bonn",
+  "storyId": "original-de-language-meetup-20261026",
+  "lang": "de",
+  "date": "2026-10-26",
+  "contentType": "original-learning",
+  "title": "Ein Sprachtreffen in Bonn",
+  "titleZh": "波恩的一次语言聚会",
+  "summaryZh": "两位参与者通过卡片和图画认识彼此，练习介绍来处、住处与计划。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2：具体社交情境，主要为现在时，含 möchte、deshalb 和少量从句，均有中文辅助。",
+  "category": "society",
+  "topics": [
+    "语言交流",
+    "社区生活"
+  ],
+  "adaptation": "为 Dimenticato 独立编写的虚构学习故事及原创练习，不是教材课文的转载、翻译或同语言改写。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Heute organisiert Lea ein kleines Sprachtreffen in einem Nachbarschaftshaus in Bonn.",
+      "zh": "今天，莱娅在波恩的一所社区活动中心组织了一次小型语言聚会。",
+      "glosses": [
+        {
+          "surface": "Sprachtreffen",
+          "lemma": "Sprachtreffen",
+          "zh": "语言交流聚会",
+          "note": "中性名词，das Sprachtreffen。"
+        },
+        {
+          "surface": "Nachbarschaftshaus",
+          "lemma": "Nachbarschaftshaus",
+          "zh": "社区活动中心",
+          "note": "中性名词，das Nachbarschaftshaus。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Der Raum ist hell, und auf dem Tisch liegen Papier und bunte Stifte.",
+      "zh": "房间很明亮，桌上放着纸和各色笔。",
+      "glosses": [
+        {
+          "surface": "Stifte",
+          "lemma": "Stift",
+          "zh": "笔",
+          "note": "阳性名词 der Stift 的复数。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Am Eingang bekommt jeder eine Karte und schreibt seinen Namen darauf.",
+      "zh": "每个人在入口处领到一张卡片，并在上面写下自己的名字。",
+      "glosses": [
+        {
+          "surface": "Eingang",
+          "lemma": "Eingang",
+          "zh": "入口",
+          "note": "阳性名词；am = an dem。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Die Karten zeigen auch eine Sprache, die man gern lernen möchte.",
+      "zh": "卡片上还写着一门自己想学的语言。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Lea kommt aus Österreich, wohnt aber seit drei Jahren in Bonn.",
+      "zh": "莱娅来自奥地利，但已在波恩住了三年。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Sie spricht Deutsch und sucht jemanden zum Italienischlernen.",
+      "zh": "她说德语，想找人一起学意大利语。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Neben ihr sitzt Karim aus Marokko.",
+      "zh": "她旁边坐着来自摩洛哥的卡里姆。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Er wohnt in Köln und besucht das Treffen zum ersten Mal.",
+      "zh": "他住在科隆，这是第一次来参加这次聚会。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Sein Deutsch ist noch nicht sehr gut, deshalb spricht Lea langsam.",
+      "zh": "他的德语还不是很好，所以莱娅说得很慢。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Karim hilft ihr dafür mit einigen arabischen Wörtern.",
+      "zh": "作为回报，卡里姆帮助她学习几个阿拉伯语单词。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Zuerst fragen die beiden nach Namen, Wohnorten und Sprachen.",
+      "zh": "两人先询问姓名、居住地和所说的语言。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Dann zeichnen sie ihre Lieblingsorte auf ein großes Blatt.",
+      "zh": "然后，他们在一张大纸上画出自己最喜欢的地方。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Lea zeichnet einen Park, Karim einen Markt.",
+      "zh": "莱娅画了一座公园，卡里姆画了一处市场。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Am Ende erklärt Lea ihren Plan für Samstag: Sie fährt nach Aachen.",
+      "zh": "最后，莱娅说了自己周六的计划：她要去亚琛。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Dort besucht sie eine Freundin, aber nächste Woche kommt sie wieder zum Sprachtreffen.",
+      "zh": "她要在那里看望一位朋友，但下周她还会再来参加语言聚会。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Karim notiert den Termin auf seiner Karte.",
+      "zh": "卡里姆把聚会时间记在自己的卡片上。",
+      "glosses": [
+        {
+          "surface": "Termin",
+          "lemma": "Termin",
+          "zh": "约定的时间；活动时间",
+          "note": "阳性名词，den Termin 为第四格单数。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Sprachtreffen",
+        "lemma": "Sprachtreffen",
+        "zh": "语言交流聚会",
+        "note": "中性名词，das Sprachtreffen。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "Nachbarschaftshaus",
+        "lemma": "Nachbarschaftshaus",
+        "zh": "社区活动中心",
+        "note": "中性名词，das Nachbarschaftshaus。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "Stifte",
+        "lemma": "Stift",
+        "zh": "笔",
+        "note": "阳性名词 der Stift 的复数。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "Eingang",
+        "lemma": "Eingang",
+        "zh": "入口",
+        "note": "阳性名词；am = an dem。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "Termin",
+        "lemma": "Termin",
+        "zh": "约定的时间；活动时间",
+        "note": "阳性名词，den Termin 为第四格单数。",
+        "sentenceId": "s16"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "zum ersten Mal",
+        "zh": "第一次",
+        "sentenceId": "s8",
+        "note": "表示某件事首次发生。"
+      },
+      {
+        "text": "nach Aachen",
+        "zh": "去亚琛",
+        "sentenceId": "s14",
+        "note": "表示前往通常不带冠词的城市。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "aus 表示来处，in 表示当前居住地；两者可以不同。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Sprache möchtest du bei einem Sprachtreffen üben?",
+        "zh": "你想在语言聚会上练习哪一门语言？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich komme aus …, aber ich wohne in …",
+        "zh": "我来自……，但住在……",
+        "note": "原创句架；填入通常不带冠词的国家或城市名。"
+      }
+    ]
+  },
+  "schema": 1,
+  "source": {
+    "name": "Dimenticato",
+    "title": "Ein Sprachtreffen in Bonn",
+    "url": "https://www.dimenticato.xyz/#/de/reading/article/2026-10-26-de-ein-sprachtreffen-in-bonn",
+    "publishedAt": "2026-10-26",
+    "lang": "de"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/de/reading/article/2026-10-26-de-ein-sprachtreffen-in-bonn"
+  },
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。"
+}

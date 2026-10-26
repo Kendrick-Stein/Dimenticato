@@ -1,0 +1,21 @@
+'use strict';
+const assert=require('assert'),fs=require('fs'),vm=require('vm');
+const {createWindow}=require('./dom-shim');
+const {validate}=require('../scripts/validate_reading');
+const catalog=require('../lib/reading-catalog');
+let passed=0;const check=fn=>{fn();passed++;};
+const a={schema:1,id:'original-test',storyId:'original-test',lang:'fr',date:'2026-10-26',title:'Une rencontre',titleZh:'一次见面',summaryZh:'原创虚构练习',level:'A2',levelReason:'编辑估计',category:'education',topics:['语言学习'],contentType:'original-learning',source:{name:'Dimenticato',title:'Une rencontre',url:'https://www.dimenticato.xyz/#/fr/reading/article/original-test',publishedAt:'2026-10-26',lang:'fr'},license:{name:'本站原创教学内容；未另行授予转载许可',url:'https://www.dimenticato.xyz/#/fr/reading/article/original-test'},attribution:'Dimenticato 原创教学文本。',adaptation:'独立编写的虚构情境，不是新闻或教材课文改写。',sentences:[{id:'s1',text:'Nous lisons un livre ensemble.',zh:'我们一起读一本书。',glosses:[{surface:'livre',lemma:'livre',zh:'书'}]}],learningSummary:{words:[{text:'livre',zh:'书',sentenceId:'s1'}],phrases:[{text:'un livre',zh:'一本书',sentenceId:'s1'}],sentences:[{sentenceId:'s1',note:'nous 的动词变位。'}]}};
+check(()=>assert.deepEqual(validate(a),[]));
+const missing=JSON.parse(JSON.stringify(a));delete missing.learningSummary;
+check(()=>assert(validate(missing).some(e=>e.includes('requires learningSummary'))));
+const mismatch=JSON.parse(JSON.stringify(a));mismatch.source.lang='it';
+check(()=>assert(validate(mismatch).some(e=>e.includes('source language must match'))));
+check(()=>assert.deepEqual(catalog.today([a],a.date,{[a.id]:170}),[]));
+const w=createWindow();w.URL=URL;w.Date=Date;
+const make=w.document.createElement;w.document.createElement=tag=>{const n=make(tag);n.replaceChildren=(...ns)=>{n.textContent='';ns.forEach(x=>n.appendChild(x));};return n;};
+w.document.body.innerHTML='<div id="readingView"></div><div id="readingArticleView"></div>';
+for(const id of ['readingView','readingArticleView']){const n=w.document.getElementById(id);n.replaceChildren=(...ns)=>{n.textContent='';ns.forEach(x=>n.appendChild(x));};}
+let screen='';w.showScreen=s=>screen=s;w.Shell={current:()=>screen};w.getActiveLanguage=()=> 'french';w.DimRouter={href:()=> '#/fr/reading'};
+w.fetch=async url=>({ok:true,json:async()=>url.endsWith('index.json')?{schema:1,articles:[Object.assign({},a,{sourceLang:'fr',sourcePublishedAt:a.source.publishedAt})]}:a});
+const ctx=vm.createContext(w);for(const f of ['lib/languages.js','lib/storage.js','lib/reading-catalog.js','reading-app.js'])vm.runInContext(fs.readFileSync(f,'utf8'),ctx);
+(async()=>{await w.ReadingApp.open('french');let host=w.document.getElementById('readingView');check(()=>assert(host.textContent.includes('原创学习阅读 · 非新闻')));check(()=>assert(host.textContent.includes('创作 2026-10-26')));check(()=>assert(!host.querySelector('.reading-today')));await w.ReadingApp.open('french',a.id);host=w.document.getElementById('readingArticleView');check(()=>assert(host.textContent.includes('原创与学习说明')));check(()=>assert(host.textContent.includes('创作日期：2026-10-26')));check(()=>assert(!host.textContent.includes('原文发布日期')));check(()=>assert(!host.textContent.includes('原语机构来源')));console.log('Original learning reading OK: '+passed+' passed, 0 failed');})().catch(e=>{console.error(e);process.exitCode=1;});

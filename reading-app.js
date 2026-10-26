@@ -67,6 +67,7 @@
   }
   function contentLabel(a) {
     if (a.contentType === 'native-adaptation') return '原语机构来源 · 同语言改写';
+    if (a.contentType === 'original-learning') return '原创学习阅读 · 非新闻';
     var sourceLang = a.sourceLang || (a.source && a.source.lang);
     return sourceLang && sourceLang !== a.lang ? '早期跨语教学改写' : '教学改写';
   }
@@ -140,7 +141,7 @@
     if (global.ReadingPracticeApp) global.ReadingPracticeApp.stop();
     active = a; host.replaceChildren();
     var back = el('a', '← 返回阅读目录', 'back-link'); back.href = global.DimRouter.href(l, 'readingScreen'); host.appendChild(back);
-    host.appendChild(el('p', a.level + ' · 编辑估计，非认证等级 · 原文 ' + a.source.publishedAt + ' · 整理 ' + a.date, 'kicker'));
+    host.appendChild(el('p', a.level + ' · 编辑估计，非认证等级 · ' + (a.contentType === 'original-learning' ? '创作 ' : '原文 ') + a.source.publishedAt + ' · 整理 ' + a.date, 'kicker'));
     host.appendChild(renderTopics(a));
     host.appendChild(el('p', contentLabel(a), 'reading-content-label'));
     var h = el('h1', a.title); h.lang = a.lang; host.appendChild(h); host.appendChild(el('p', a.titleZh, 'reading-deck'));
@@ -207,8 +208,8 @@
     var practiceRequest = request, practice = el('section', undefined, 'reading-practice'); host.appendChild(practice);
     if (global.ReadingPracticeApp) fetchJSON('data/reading/practice/' + a.id + '.json').then(function (data) { if (request === practiceRequest && active === a && host.contains(practice) && global.Shell.current() === 'readingArticleScreen') global.ReadingPracticeApp.mount(practice, a, data); }).catch(function () { /* Optional companion; old articles keep their original reading experience. */ });
     var speaking = renderSpeaking(a); if (speaking) host.appendChild(speaking);
-    var source = el('section', undefined, 'reading-source'); source.appendChild(el('h2','来源与改编说明')); source.appendChild(link(a.source.name + '：' + a.source.title, a.source.url));
-    source.appendChild(el('p','原文发布日期：' + a.source.publishedAt + ' · 本站整理：' + a.date)); source.appendChild(el('p',a.attribution)); source.appendChild(link(a.license.name, a.license.url)); source.appendChild(el('p',a.adaptation)); source.appendChild(el('p','等级依据：' + a.levelReason)); host.appendChild(source); focusHeading(host);
+    var source = el('section', undefined, 'reading-source'); source.appendChild(el('h2',a.contentType === 'original-learning' ? '原创与学习说明' : '来源与改编说明')); source.appendChild(link(a.source.name + '：' + a.source.title, a.source.url));
+    source.appendChild(el('p',(a.contentType === 'original-learning' ? '创作日期：' : '原文发布日期：') + a.source.publishedAt + ' · 本站整理：' + a.date)); source.appendChild(el('p',a.attribution)); source.appendChild(link(a.license.name, a.license.url)); source.appendChild(el('p',a.adaptation)); source.appendChild(el('p','等级依据：' + a.levelReason)); host.appendChild(source); focusHeading(host);
   }
   function open(l, id, alreadyShown, restoreFilter) {
     var mine = ++request, screen = id ? 'readingArticleScreen' : 'readingScreen';
@@ -248,7 +249,7 @@
         title.href = global.DimRouter.href(l, 'readingArticleScreen') + '/' + a.id; title.addEventListener('click', function () { returnTo = { lang: code(l), id: a.id }; }); heading.appendChild(title); item.appendChild(heading);
         item.appendChild(el('p', a.titleZh, 'reading-card-zh'));
         item.appendChild(el('p', a.summaryZh, 'reading-card-excerpt'));
-        item.appendChild(el('p', (a.sourcePublishedAt ? '原文 ' + a.sourcePublishedAt + ' · ' : '') + '整理 ' + a.date, 'reading-card-dates'));
+        item.appendChild(el('p', (a.sourcePublishedAt ? (a.contentType === 'original-learning' ? '创作 ' : '原文 ') + a.sourcePublishedAt + ' · ' : '') + '整理 ' + a.date, 'reading-card-dates'));
         item.appendChild(el('p', contentLabel(a), 'reading-content-label')); return item;
       }
       function draw() {

@@ -179,7 +179,10 @@
       }
     },
     "contentType": {
-      "const": "native-adaptation"
+      "enum": [
+        "native-adaptation",
+        "original-learning"
+      ]
     },
     "learningSummary": {
       "type": "object",

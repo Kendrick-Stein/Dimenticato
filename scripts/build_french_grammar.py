@@ -6489,6 +6489,12 @@ def js_string(s):
     return json.dumps(s, ensure_ascii=False)
 
 
+# Original starter learning supplement; preserve existing authoring slug.
+for _topic in TOPICS:
+    if _topic["slug"] == "p1/ch12/t02-present-3e-groupe":
+        _topic["md"] += '\n\n## 自我介绍：先区分“叫什么”和“是什么身份”\n\n介绍姓名时，可以用 s’appeler；介绍职业、国籍或当前情况时，常用 être。两者不能把词形随意互换。Je m’appelle Inès 表示“我叫伊内丝”，Je suis photographe 表示“我是摄影师”。Je suis Inès 也能在确认身份时表示“我是伊内丝”，所以不能把它判成语法错误；只是专门回答姓名时，s’appeler 的意思更明确。\n\ns’appeler 前面的代词要跟主语配合：je m’appelle、tu t’appelles、il/elle s’appelle、nous nous appelons、vous vous appelez、ils/elles s’appellent。注意单复数词干中的 l：nous appelons、vous appelez 只有一个 l，其他这些现在时形式有两个 l。m’、t’、s’分别来自 me、te、se 在元音前的省音，不是可以省略的装饰。\n\nêtre 的现在时是 je suis、tu es、il/elle est、nous sommes、vous êtes、ils/elles sont。介绍职业时，单独的职业名词通常不加冠词，例如 Elle est ingénieure；如果改成 C’est une ingénieure，就需要 une。这是两个不同句型，不应逐词硬套。国籍形容词还要注意配合：Il est canadien；Elle est canadienne。\n\n称呼不熟悉的成年人或表达礼貌时，可以先用 vous；它也可以指“你们”。熟人、同辈双方同意后常用 tu，但不能根据对方有没有说名字就自动认定必须用 tu。问姓名可以说 Comment vous appelez-vous ?，较口语的说法是 Vous vous appelez comment ?。问身份或情况时则用 être，例如 Vous êtes bénévole ?。\n\n练习时，先判断空格要表达姓名还是身份，再看主语选形式，最后检查反身代词和拼写。不要只因为中文里都能说“我是……”就使用同一个法语动词。对话中遇到姓名、职业或国籍，也不必一次全部介绍；只回答对方实际询问的信息即可。名字和姓氏要分清：prénom 通常是名，nom de famille 是姓。填写公开活动的卡片时，应按活动需要提供信息；姓名表达练习并不要求填写真实住址。\n\n### 原创例句\n\n- Je m’appelle Inès. 我叫伊内丝。\n- Tu t’appelles Hugo ? 你叫雨果吗？\n- Elle s’appelle Zoé. 她叫佐埃。\n- Nous sommes voisins. 我们是邻居。\n- Vous êtes photographe ? 您是摄影师吗？\n- Ils s’appellent Adam et Paul. 他们叫亚当和保罗。\n\n### 常见错误\n\n- 误：Je s’appelle Inès. 正：Je m’appelle Inès. 主语 je 要配 me。\n- 误：Vous est bénévole ? 正：Vous êtes bénévole ? être 要随 vous 变位。\n- 误：Nous nous appellons Léa et Léo. 正：Nous nous appelons Léa et Léo. nous 形式只有一个 l。\n\n以上讲解和例句为本站独立编写的教学补充，不是教材原文。\n'
+
+
 def main():
     slugs = [t['slug'] for t in TOPICS]
     dupes = sorted({s for s in slugs if slugs.count(s) > 1})

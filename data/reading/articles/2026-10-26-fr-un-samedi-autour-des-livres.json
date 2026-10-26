@@ -1,0 +1,217 @@
+{
+  "lang": "fr",
+  "title": "Un samedi autour des livres",
+  "titleZh": "星期六的换书活动",
+  "summaryZh": "玛雅参加街区换书活动，了解登记和换书规则，并帮助另一位参与者。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：现在时叙事与自我介绍为主，含代词en、时间限制和原因表达，逐句提供中文辅助。",
+  "contentType": "original-learning",
+  "category": "society",
+  "topics": [
+    "社区生活",
+    "自我介绍"
+  ],
+  "date": "2026-10-26",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le samedi matin, une salle du quartier accueille un échange de livres.",
+      "zh": "星期六早上，街区的一间活动室举办换书活动。",
+      "glosses": [
+        {
+          "surface": "quartier",
+          "lemma": "quartier",
+          "zh": "街区",
+          "note": "阳性单数名词。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Sur les tables, il y a des romans et des livres de cuisine.",
+      "zh": "桌上放着小说和烹饪书。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Maya arrive avec deux livres.",
+      "zh": "玛雅带着两本书来到这里。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Une femme lui dit : « Bonjour, je suis Nora, la bénévole. »",
+      "zh": "一位女士对她说：“你好，我是诺拉，这里的志愿者。”",
+      "glosses": [
+        {
+          "surface": "bénévole",
+          "lemma": "bénévole",
+          "zh": "志愿者",
+          "note": "这里指女性志愿者，用 la。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "« Je m’appelle Maya ; je suis nouvelle dans le quartier. »",
+      "zh": "“我叫玛雅；我是刚搬到这个街区的。”",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Nora montre une carte : « Votre prénom, s’il vous plaît. »",
+      "zh": "诺拉指着一张卡片说：“请写下您的名字。”",
+      "glosses": [
+        {
+          "surface": "prénom",
+          "lemma": "prénom",
+          "zh": "名字；名",
+          "note": "阳性单数，区别于姓氏 nom de famille。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Maya écrit son prénom, mais pas son adresse, car la carte reste sur la table.",
+      "zh": "玛雅写下自己的名字，却没有写地址，因为卡片会留在桌上。",
+      "glosses": [
+        {
+          "surface": "adresse",
+          "lemma": "adresse",
+          "zh": "地址",
+          "note": "阴性单数；son 在以元音开头的阴性名词前使用。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Voici la règle : pour chaque livre apporté, on peut en choisir un autre.",
+      "zh": "规则是：每带来一本书，就可以选另一本。",
+      "glosses": [
+        {
+          "surface": "règle",
+          "lemma": "règle",
+          "zh": "规则",
+          "note": "阴性单数，这里指换书规则。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Les livres avec une étiquette verte sont pour les enfants.",
+      "zh": "贴着绿色标签的书是给儿童看的。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Maya choisit une histoire pour sa petite sœur et un roman pour elle.",
+      "zh": "玛雅给妹妹选了一本故事书，又为自己选了一本小说。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Un garçon cherche un livre de cuisine sur la mauvaise table.",
+      "zh": "一个男孩在错误的桌子上寻找烹饪书。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Maya lui montre la bonne place et demande : « Tu t’appelles comment ? »",
+      "zh": "玛雅指给他正确的位置，并问：“你叫什么名字？”",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "« Je m’appelle Sami ; ma mère est près des romans. »",
+      "zh": "“我叫萨米；我妈妈在小说旁边。”",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Maya demande à Nora : « Vous êtes ici tous les samedis ? »",
+      "zh": "玛雅问诺拉：“您每个星期六都在这里吗？”",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "« Non, seulement le premier samedi du mois. »",
+      "zh": "“不，只在每个月的第一个星期六。”",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "quartier",
+        "zh": "街区",
+        "sentenceId": "s1",
+        "lemma": "quartier",
+        "note": "阳性单数名词。"
+      },
+      {
+        "text": "bénévole",
+        "zh": "志愿者",
+        "sentenceId": "s4",
+        "lemma": "bénévole",
+        "note": "这里指女性志愿者，用 la。"
+      },
+      {
+        "text": "prénom",
+        "zh": "名字；名",
+        "sentenceId": "s6",
+        "lemma": "prénom",
+        "note": "阳性单数，区别于姓氏 nom de famille。"
+      },
+      {
+        "text": "adresse",
+        "zh": "地址",
+        "sentenceId": "s7",
+        "lemma": "adresse",
+        "note": "阴性单数；son 在以元音开头的阴性名词前使用。"
+      },
+      {
+        "text": "règle",
+        "zh": "规则",
+        "sentenceId": "s8",
+        "lemma": "règle",
+        "note": "阴性单数，这里指换书规则。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Je m’appelle",
+        "zh": "我叫……",
+        "sentenceId": "s5",
+        "note": "用来介绍姓名；反身代词me在元音前省音。"
+      },
+      {
+        "text": "le premier samedi du mois",
+        "zh": "每个月的第一个星期六",
+        "sentenceId": "s15",
+        "note": "限定活动频率，不等于每个星期六。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "先用s’appeler介绍名字，再用être介绍自己的情况。"
+      }
+    ]
+  },
+  "schema": 1,
+  "id": "2026-10-26-fr-un-samedi-autour-des-livres",
+  "storyId": "original-learning-fr-book-exchange-20261026",
+  "adaptation": "为Dimenticato独立创作的虚构学习情境；不是新闻，不是教材课文的翻译或改写。",
+  "source": {
+    "name": "Dimenticato",
+    "title": "Un samedi autour des livres",
+    "url": "https://www.dimenticato.xyz/#/fr/reading/article/2026-10-26-fr-un-samedi-autour-des-livres",
+    "publishedAt": "2026-10-26",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/fr/reading/article/2026-10-26-fr-un-samedi-autour-des-livres"
+  },
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。"
+}

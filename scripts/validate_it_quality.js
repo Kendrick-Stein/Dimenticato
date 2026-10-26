@@ -25,6 +25,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const { isDeepStrictEqual } = require('util');
 
 const ROOT = path.resolve(__dirname, '..');
 const errors = [];
@@ -112,6 +113,16 @@ V.entries.forEach(e => {
 // every reviewed fix is in effect (records whose word was later renamed or
 // dropped are skipped; italian_fixes.py reports those as STALE)
 let fixesChecked = 0;
+// JSON data loaded in a VM has different object prototypes; compare its values.
+const sameFixValue = (actual, expected) => actual === undefined
+  ? expected === undefined
+  : isDeepStrictEqual(JSON.parse(JSON.stringify(actual)), expected);
+check(sameFixValue({plural: 'tasche'}, {plural: 'tasche'}), 'structured fix equality');
+check(!sameFixValue({plural: 'tasca'}, {plural: 'tasche'}), 'structured fix mismatch');
+check(!sameFixValue({}, {plural: 'tasche'}), 'structured fix missing field');
+check(sameFixValue({forms: {plural: ['tasche']}}, {forms: {plural: ['tasche']}}), 'nested fix equality');
+check(!sameFixValue({forms: {plural: ['tasca']}}, {forms: {plural: ['tasche']}}), 'nested fix mismatch');
+check(sameFixValue('纽扣；按钮', '纽扣；按钮') && !sameFixValue(1, '1'), 'primitive fix equality stays strict');
 const enKey = s => String(s || '').split(';').map(x => x.trim().replace(/\.$/, '')).join('; ').toLowerCase();
 VOCAB_FIXES.forEach(f => {
   if (!f.to || typeof f.to !== 'object' || !f.word) return;
@@ -121,7 +132,7 @@ VOCAB_FIXES.forEach(f => {
   Object.entries(f.to).forEach(([k, v]) => {
     // en goes through clean_italian_glosses.normalise_en_case (sense-initial
     // lower case, no closing full stop), so compare it case-insensitively
-    const same = k === 'en' ? enKey(e[k]) === enKey(v) : e[k] === v;
+    const same = k === 'en' ? enKey(e[k]) === enKey(v) : sameFixValue(e[k], v);
     check(same || (v === '' && e[k] === undefined), `vocab ${f.word}.${k} = ${JSON.stringify(e[k])}, fix list says ${JSON.stringify(v)} (${f.why || ''})`);
   });
 });

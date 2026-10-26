@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-26-it-una-tasca-di-un-altro-colore",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Perché Elena sceglie una stoffa gialla?",
+      "options": [
+        "Per riconoscere facilmente la tasca.",
+        "Per usare lo stesso colore dello zaino.",
+        "Per seguire il consiglio del volontario.",
+        "Per preparare un regalo per Marta."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "第5句直接说明：黄色让埃莱娜可以立即找到口袋。其余选项不是文中给出的选择理由。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Come viene riparata la tasca?",
+      "options": [
+        "Il volontario la ripara mentre Elena aspetta.",
+        "Elena la ripara seguendo solo un foglio.",
+        "Marta spiega ed Elena lavora insieme a lei.",
+        "Marta la ripara dopo il ritorno di Elena."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第7句明确是玛尔塔讲解、埃莱娜和她一起尝试；第8、9句继续描写共同完成，而非独自或等待修理。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Che cosa promette di fare Elena per il prossimo incontro?",
+      "options": [
+        "Di comprare uno zaino nuovo.",
+        "Di portare alcuni bottoni.",
+        "Di pagare il lavoro di Marta.",
+        "Di preparare tutti i tavoli."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第12句明确她答应下周六带一些纽扣；第10、11句提供互助背景，工坊不收取帮助费用。"
+    }
+  ]
+}

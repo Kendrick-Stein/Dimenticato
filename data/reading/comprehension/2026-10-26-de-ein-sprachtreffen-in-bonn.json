@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-26-de-ein-sprachtreffen-in-bonn",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Warum spricht Lea langsam mit Karim?",
+      "options": [
+        "Weil er ihre Zeichnung noch nicht sieht.",
+        "Weil er Deutsch noch nicht sehr gut spricht.",
+        "Weil er den Termin auf die Karte schreibt.",
+        "Weil er erst später zum Treffen kommt."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "第9句直接说明卡里姆的德语还不太好，因此莱娅说得慢。其他选项的原因没有得到正文支持。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Was macht Lea am Samstag?",
+      "options": [
+        "Sie besucht einen Markt in Köln.",
+        "Sie organisiert ein Treffen in Aachen.",
+        "Sie lernt mit Karim in Bonn.",
+        "Sie besucht eine Freundin in Aachen."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "第14句说明她周六去亚琛，第15句说明她在那里看望朋友。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Was steht am Anfang auf den Karten der Teilnehmenden?",
+      "options": [
+        "Der Name und eine Sprache zum Lernen.",
+        "Der Wohnort und der Termin für Samstag.",
+        "Der Name und ein Lieblingsort.",
+        "Der Wohnort und eine Telefonnummer."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "第3、4句分别说明卡片上写姓名和想学的语言。活动结束时卡里姆另记时间，不是最初卡片的共同内容。"
+    }
+  ]
+}
