@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-26-fr-bibliotheques-et-confiance",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Pourquoi des personnes ayant vécu ces difficultés ont-elles participé à la journée?",
+      "options": [
+        "Pour sélectionner les livres achetés par les communes.",
+        "Pour mesurer les résultats des ateliers de septembre.",
+        "Pour apporter leur expérience à la réflexion professionnelle.",
+        "Pour remplacer les responsables de la formation."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "第5、7、8句说明当事人的经验让专业讨论从真实需求出发，并非替代培训负责人。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quel ensemble correspond aux outils présentés pendant la rencontre?",
+      "options": [
+        "Des cours numériques et des enquêtes auprès des lecteurs.",
+        "Des ateliers d’écriture et des livres faciles à lire.",
+        "Des prêts à domicile et des visites des communes.",
+        "Des rencontres scolaires et des films sur les métiers."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "第9句列举围绕书面表达的实践工作坊和易读书籍；其他组合没有出现在工具清单中。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "À quoi doit contribuer la formation des bibliothécaires, selon le texte?",
+      "options": [
+        "À réunir les services de lecture dans les grandes villes.",
+        "À confier les ateliers aux seuls services sociaux.",
+        "À développer une offre inclusive jusque dans les zones rurales.",
+        "À remplacer les collections par des témoignages enregistrés."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "第10句明确提出培训旨在帮助媒体图书馆发展包容性服务，并覆盖乡村。其余选项改变了服务范围或工作方式。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Pourquoi associer des témoignages à la présentation d’outils pendant cette rencontre?",
+      "options": [
+        "Pour relier les besoins vécus aux moyens d’accompagner les lecteurs.",
+        "Pour comparer les performances des différentes bibliothèques.",
+        "Pour choisir les personnes qui pourront devenir bibliothécaires.",
+        "Pour fixer les règles de prêt à partir des expériences individuelles."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s4",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第4句提出反思专业实践；第8句提供当事人的需求，第9句提供可用工具。结合两者，可推断活动将真实需求与支持手段联系起来，并非比较机构绩效或筛选人员。"
+    }
+  ]
+}

@@ -142,6 +142,23 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-26-it-una-mostra-tra-le-citta",
+      "lang": "it",
+      "date": "2026-10-26",
+      "title": "Una mostra tra le città",
+      "titleZh": "穿行于城市之间的展览",
+      "summaryZh": "意大利国家统计局用影片和交互式展示柱，把百年历史与地区数据带到十七座城市。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "公共文化",
+        "社会参与"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-20",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-24-en-rain-and-water-reserves",
       "lang": "en",
       "date": "2026-10-24",
@@ -576,6 +593,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-26-fr-bibliotheques-et-confiance",
+      "lang": "fr",
+      "date": "2026-10-26",
+      "title": "Des bibliothèques où reprendre confiance",
+      "titleZh": "让人重拾信心的图书馆",
+      "summaryZh": "埃罗省的一场图书馆培训，把当事人的经验、易读资源和跨机构合作结合起来，探讨更包容的阅读服务。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "公共文化",
+        "社会参与"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-13",
       "contentType": "native-adaptation"
     },
     {

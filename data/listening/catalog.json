@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-24",
+  "verifiedAt": "2026-10-26",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -1210,6 +1210,120 @@
           "answerIndex": 0,
           "evidenceRef": "bc-meeting-email",
           "explanationZh": "Anna 表示会向所有人发邮件确认时间变动，并附更新后的会议邀请；她并未说会附 Lucy 的报告或新的办公地址。"
+        }
+      ]
+    },
+    {
+      "id": "de-logo-20261025-abend",
+      "lang": "de",
+      "title": "logo! vom Sonntag, 25. Oktober 2026",
+      "titleZh": "周日晚间新闻：示威、运动与海洋保护",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-sonntag-25-oktober-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-10-26",
+      "sourcePublishedAt": "2026-10-25",
+      "duration": "10:05",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "一集儿童新闻，练习听出不同新闻段落的主题。",
+      "guideZh": "先听整集辨认新闻主题，再选择一个感兴趣的片段复听。可先从节目单中的海洋保护话题入手，不必第一遍听懂所有细节。",
+      "verificationZh": "官方页面标注2026-10-25 19:50，首页标注10分05秒；仅核对页面与节目单，未实听媒体或取得完整对应文字稿，不设理解题。",
+      "vocabularyLabel": "节目单主题预习词",
+      "vocabulary": [
+        {
+          "text": "Proteste",
+          "zh": "抗议活动（复数）"
+        },
+        {
+          "text": "demonstrieren",
+          "zh": "示威；参加游行"
+        },
+        {
+          "text": "das Meer",
+          "zh": "海洋"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "en-bc-transport-announcements-a2",
+      "lang": "en",
+      "title": "Transport announcements",
+      "titleZh": "交通广播：听懂站台与登机变化",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/transport-announcements",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-26",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青课程：区分原定安排、临时变化和乘客需要采取的行动。",
+      "guideZh": "第一遍判断广播发生在火车站、机场还是地铁；第二遍记录地点与行动。尤其注意后面的通知是否改变前面的信息。",
+      "verificationZh": "依据官方对应文字稿A–D核对原创题；原发布日期未标明，按常青课程收录。未实测媒体播放或音质。",
+      "vocabulary": [
+        {
+          "text": "platform",
+          "zh": "站台"
+        },
+        {
+          "text": "delayed",
+          "zh": "延误的"
+        },
+        {
+          "text": "boarding pass",
+          "zh": "登机牌"
+        },
+        {
+          "text": "rear doors",
+          "zh": "后面的车门"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-transport-1",
+          "prompt": "After announcement B, where should passengers for Bristol wait?",
+          "promptZh": "听到B段通知后，前往Bristol的旅客应在哪里候车？",
+          "options": [
+            "At Platform 2.",
+            "At Platform 9.",
+            "At Gate 13.",
+            "At Liverpool Street."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "official-transcript-A-B",
+          "explanationZh": "A段原先通知2号站台；B段随后说明同一班12:20去Bristol的列车改从9号站台出发，因此应按最新通知行动。"
+        },
+        {
+          "id": "en-transport-2",
+          "prompt": "What should passengers on flight EB380 have ready?",
+          "promptZh": "EB380航班旅客应准备好哪些东西？",
+          "options": [
+            "Train tickets and seat numbers.",
+            "Luggage labels and hotel bookings.",
+            "Passports and boarding passes.",
+            "Bank cards and travel maps."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "official-transcript-C",
+          "explanationZh": "C段登机广播要求准备护照和登机牌，没有要求酒店订单、银行卡或火车票。"
+        },
+        {
+          "id": "en-transport-3",
+          "prompt": "What should people in the first carriage do at Liverpool Street?",
+          "promptZh": "第一节车厢中的乘客到Liverpool Street时应怎么做？",
+          "options": [
+            "Move to the rear doors to get off.",
+            "Wait for the front doors to open.",
+            "Stay on the train until Redbridge.",
+            "Walk to the front to change lines."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "official-transcript-D",
+          "explanationZh": "D段说明第一组车门不会开启，第一节车厢中的乘客应移向后面的车门下车；Redbridge是终点，并非所有乘客都必须坐到那里。"
         }
       ]
     }

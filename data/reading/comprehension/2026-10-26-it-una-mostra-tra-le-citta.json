@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-26-it-una-mostra-tra-le-citta",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quale installazione viene presentata in tre città?",
+      "options": [
+        "Il totem con i racconti regionali.",
+        "Il cubo con i dieci filmati.",
+        "Lo schermo della mostra romana.",
+        "Il percorso digitale sul territorio."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "第6、7句表明立方体装置到访三座城市并播放十部影片。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa può fare il visitatore con lo schermo del totem?",
+      "options": [
+        "Scegliere nuove città per la mostra.",
+        "Cambiare i dati sulla popolazione.",
+        "Registrare un filmato per l’Istat.",
+        "Esplorare la mostra in modo personale."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第10、11句说明触摸屏提供数字展览和个人选择的路线，不是改变数据或巡展城市。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Come vengono presentati i dati in questa iniziativa?",
+      "options": [
+        "Con filmati e percorsi digitali interattivi.",
+        "Con lezioni per imparare a fare statistiche.",
+        "Con libri sulla fondazione delle città.",
+        "Con incontri per raccogliere nuovi dati."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "影片和交互式数字路线是两种展示方式；文章没有介绍统计课程或数据采集活动。"
+    }
+  ]
+}

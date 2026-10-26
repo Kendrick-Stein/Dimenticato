@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-26",
+  "scope": "2 new external-link entries; existing20 entries unchanged",
+  "entries": [
+    "de-logo-20261025-abend",
+    "en-bc-transport-announcements-a2"
+  ],
+  "reviewStatus": "PASS",
+  "independentReviews": {
+    "englishQuestions": {
+      "blindFirst": true,
+      "answersZeroBased": [
+        1,
+        2,
+        0
+      ],
+      "keyMatched": true,
+      "chineseExplanations": "checked after blind solve against official transcript A–D",
+      "originalQuestions": true,
+      "sourceExercisesCompared": false
+    },
+    "sourceReviewer": {
+      "officialPages": "independently retrieved",
+      "germanDateDuration": "2026-10-25 19:50;10:05 from official homepage",
+      "germanLevel": "ungraded native-child audience, not automatically A2",
+      "englishLevel": "A2 official provider",
+      "englishPublicationDate": "not shown; evergreen lesson, no invented date"
+    }
+  },
+  "limits": [
+    "No actual media playback or audio quality verification.",
+    "German entry has no full corresponding transcript; no questions created.",
+    "No audio/video/images/full transcripts or source exercises copied."
+  ],
+  "sources": [
+    "https://www.logo.de/logo-vom-sonntag-25-oktober-2026-102.html",
+    "https://www.logo.de/",
+    "https://learnenglish.britishcouncil.org/free-resources/listening/a2/transport-announcements"
+  ],
+  "authoredEntriesSha256": "25fbfb41524cf1dc07f898f53718fbd6b8f279576998e36926b8f0da11c9b143"
+}

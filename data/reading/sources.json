@@ -238,15 +238,16 @@
       "allowedUrlPrefixes": [
         "https://www.culture.gouv.fr/actualites/",
         "https://saisoncabaret.culture.gouv.fr/actualites/",
-        "https://www.culture.gouv.fr/presse/communiques-de-presse/"
+        "https://www.culture.gouv.fr/presse/communiques-de-presse/",
+        "https://www.culture.gouv.fr/regions/drac-occitanie/actualites/"
       ],
       "rightsPolicyUrl": "https://www.culture.gouv.fr/mentions-legales",
       "licenseEvidence": "https://www.culture.gouv.fr/mentions-legales",
       "license": "CC BY-SA 3.0 FR for ministry-produced text; partner content has separate terms",
       "articleReviewRequired": true,
-      "conditions": "Legal notice 4.3.1(a) covers ministry-produced text, not all partner material (4.3.2). Retain attribution and modifications, satisfy ShareAlike with a compatible licence. Exclude images, logos, multimedia, third-party quotations and literary excerpts unless separately cleared. Do not mislabel prose as Etalab open data. Seasonal Cabaret ministry subdomain legal footer independently checked 2026-10-16: https://saisoncabaret.culture.gouv.fr/mentions-legales section4.3.1a licenses ministry text CC BY-SA3.0FR. Exclude named artist quotations and images; inspect each article. Registry expansion reviewed before candidate readiness, not blanket approval.",
+      "conditions": "Legal notice 4.3.1(a) covers ministry-produced text, not all partner material (4.3.2). Retain attribution and modifications, satisfy ShareAlike with a compatible licence. Exclude images, logos, multimedia, third-party quotations and literary excerpts unless separately cleared. Do not mislabel prose as Etalab open data. Seasonal Cabaret ministry subdomain legal footer independently checked 2026-10-16: https://saisoncabaret.culture.gouv.fr/mentions-legales section4.3.1a licenses ministry text CC BY-SA3.0FR. Exclude named artist quotations and images; inspect each article. Registry expansion reviewed before candidate readiness, not blanket approval. DRAC Occitanie institutional French narrative prefix reviewed 2026-10-26 under the same ministry legal notice; this only registers a source scope, not a blanket content clearance. Exclude partner text, attributed quotations and media unless separately licensed.",
       "nativeLanguageCaution": "Legal notice names the ministry editorial team and automatic translation service; use French original editorial pages, never translated locales. Check article byline and partner credits.",
-      "checkedAt": "2026-10-21",
+      "checkedAt": "2026-10-26",
       "reviewScope": "Registry policy inspected; no article is cleared by registration."
     },
     {

@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "id": "2026-10-26-fr-bibliotheques-et-confiance",
+  "storyId": "culture-occitanie-bibliotheques-illettrisme-2026-10-13",
+  "lang": "fr",
+  "date": "2026-10-26",
+  "title": "Des bibliothèques où reprendre confiance",
+  "titleZh": "让人重拾信心的图书馆",
+  "summaryZh": "埃罗省的一场图书馆培训，把当事人的经验、易读资源和跨机构合作结合起来，探讨更包容的阅读服务。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连贯叙述培训活动，解释目的、合作与潜在作用；包含关系从句及审慎表达，配中文辅助。",
+  "category": "culture",
+  "topics": [
+    "公共文化",
+    "社会参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture / DRAC Occitanie",
+    "title": "Dans la lutte contre l’illettrisme, des bibliothèques refuges ?",
+    "url": "https://www.culture.gouv.fr/regions/drac-occitanie/actualites/actualite-a-la-une/dans-la-lutte-contre-l-illettrisme-des-bibliotheques-refuges",
+    "publishedAt": "2026-10-13",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "Ministère de la Culture / DRAC Occitanie（机构作者，未单列个人署名）；原题、原日期及链接见来源。原语改写、中文翻译与教学补充均依 CC BY-SA 3.0 FR 发布；不代表原机构认可。",
+  "adaptation": "2026-10-26整理，非当日原文。依据机构叙述同语言分级改写并配中文翻译；排除图片、媒体、附件、第三方引语及外部定义。练习和口语为原创教学补充。第8句对当事人经验作用的概括，以及第15句关于证据范围的判断，为编辑说明，不是原机构的成效评估。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 13 octobre 2026, la DRAC Occitanie a publié un article sur une journée consacrée aux difficultés de lecture et d’écriture.",
+      "zh": "2026年10月13日，奥克西塔尼大区文化事务局发表文章，介绍一个聚焦读写困难的活动日。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Cette rencontre avait eu lieu le 24 septembre dans l’Hérault et avait réuni 105 professionnels des bibliothèques.",
+      "zh": "这次活动已于9月24日在埃罗省举行，聚集了105名图书馆专业人员。",
+      "glosses": [
+        {
+          "surface": "rencontre",
+          "lemma": "rencontre",
+          "zh": "活动；交流会",
+          "note": "阴性单数，指这次专业人员活动。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "La médiathèque départementale et le centre de ressources CEREGARD l’avaient organisée avec le soutien de la DRAC.",
+      "zh": "省级媒体图书馆和资源中心 CEREGARD 在大区文化事务局的支持下组织了此次活动。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "L’objectif ne consistait pas seulement à informer les participants sur l’illettrisme, mais aussi à réfléchir à leurs pratiques.",
+      "zh": "目的不只是向参与者介绍读写能力不足的问题，还在于反思他们的工作方式。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "La journée accordait une place importante aux personnes qui avaient elles-mêmes vécu ces difficultés et à leur expérience de l’apprentissage.",
+      "zh": "活动尤其重视亲身经历过这些困难的人，以及他们的学习经验。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Une spécialiste des sciences de l’éducation est ainsi intervenue avec deux ambassadeurs de l’association La Chaîne des savoirs.",
+      "zh": "一位教育学专家因此与“知识链”协会的两名宣传代表一起参与交流。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Ces derniers ont présenté leur parcours, en évoquant aussi bien les obstacles rencontrés que les réussites.",
+      "zh": "这两位代表介绍了自己的经历，既谈到遭遇的障碍，也谈到取得的进步。",
+      "glosses": [
+        {
+          "surface": "obstacles",
+          "lemma": "obstacle",
+          "zh": "障碍",
+          "note": "阳性复数，与 les 搭配。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Leurs témoignages permettaient de partir des besoins des personnes concernées, plutôt que de parler uniquement à leur place.",
+      "zh": "他们的讲述使讨论能够从当事人的需求出发，而不是只由别人代替他们发言。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Les professionnels ont également découvert plusieurs outils, notamment des ateliers pratiques autour de l’écrit et une sélection de livres faciles à lire.",
+      "zh": "专业人员还了解了几种工具，特别是围绕书面表达的实践工作坊，以及一组易读书籍。",
+      "glosses": [
+        {
+          "surface": "outils",
+          "lemma": "outil",
+          "zh": "工具；工作方法",
+          "note": "阳性复数，这里包括工作坊和易读书籍。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Le soutien à la formation des bibliothécaires doit aider la médiathèque départementale à développer une offre de lecture plus inclusive, y compris dans les territoires ruraux.",
+      "zh": "对图书馆员培训的支持旨在帮助省级媒体图书馆发展更具包容性的阅读服务，包括覆盖乡村地区。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "L’article présente donc la bibliothèque comme un lieu qui peut offrir davantage que le simple prêt de livres.",
+      "zh": "因此，文章把图书馆描述为一个能够提供图书借阅以外更多服务的地方。",
+      "glosses": [
+        {
+          "surface": "prêt",
+          "lemma": "prêt",
+          "zh": "借阅",
+          "note": "阳性单数名词；prêt de livres 指图书借阅。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Selon cette présentation, elle peut devenir un espace où une personne ose demander de l’aide et retrouve progressivement confiance.",
+      "zh": "根据文章的介绍，它可以成为一个让人敢于求助并逐渐重拾信心的空间。",
+      "glosses": [
+        {
+          "surface": "progressivement",
+          "lemma": "progressivement",
+          "zh": "逐渐地",
+          "note": "副词，修饰重拾信心的过程。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Cette possibilité ne signifie toutefois pas qu’un lieu culturel puisse répondre seul à toutes les difficultés.",
+      "zh": "然而，这种可能性并不意味着一个文化场所能够独力应对所有困难。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Le texte insiste sur la contribution de plusieurs acteurs : services sociaux, professionnels de la formation, collectivités et structures culturelles.",
+      "zh": "文章强调多方的贡献：社会服务机构、培训专业人员、地方政府和文化机构。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Il décrit ainsi une démarche collective pour créer des conditions favorables à l’apprentissage, sans présenter une mesure des progrès accomplis après cette journée.",
+      "zh": "由此，文章描述了一种共同营造有利学习条件的做法，但没有给出此次活动后取得进步的测量结果。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "rencontre",
+        "lemma": "rencontre",
+        "zh": "活动；交流会",
+        "note": "阴性单数，指这次专业人员活动。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "obstacles",
+        "lemma": "obstacle",
+        "zh": "障碍",
+        "note": "阳性复数，与 les 搭配。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "outils",
+        "lemma": "outil",
+        "zh": "工具；工作方法",
+        "note": "阳性复数，这里包括工作坊和易读书籍。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "prêt",
+        "lemma": "prêt",
+        "zh": "借阅",
+        "note": "阳性单数名词；prêt de livres 指图书借阅。",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "progressivement",
+        "lemma": "progressivement",
+        "zh": "逐渐地",
+        "note": "副词，修饰重拾信心的过程。",
+        "sentenceId": "s12"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "aussi bien les obstacles rencontrés que les réussites",
+        "zh": "既包括遇到的障碍，也包括成功",
+        "sentenceId": "s7",
+        "note": "aussi bien… que… 将两方面并列。"
+      },
+      {
+        "text": "demander de l’aide",
+        "zh": "寻求帮助",
+        "sentenceId": "s12",
+        "note": "demander de l’aide 是常用表达；de l’ 为部分冠词形式。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "demander de l’aide 是常用表达；de l’ 为部分冠词形式。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Qu’est-ce qui peut rendre une bibliothèque accueillante pour une personne qui hésite à demander de l’aide?",
+        "zh": "怎样才能让图书馆接纳那些犹豫是否求助的人？"
+      },
+      {
+        "text": "Pourquoi est-il utile d’écouter les personnes concernées avant de proposer une activité?",
+        "zh": "在设计活动之前，为什么值得先倾听当事人？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Il ne s’agit pas seulement de…, mais aussi de…",
+        "zh": "问题不只是……，还在于……",
+        "note": "原创讨论句架，两处接不定式。"
+      },
+      {
+        "text": "Cela peut aider à…, sans garantir que…",
+        "zh": "这可能有助于……，但不能保证……",
+        "note": "原创句架，用于区分潜在帮助与已验证结果。"
+      }
+    ]
+  }
+}

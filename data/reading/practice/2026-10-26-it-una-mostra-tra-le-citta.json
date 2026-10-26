@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-26-it-una-mostra-tra-le-citta",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 3,
+      "answer": "viaggio",
+      "options": [
+        "ritorno",
+        "viaggio",
+        "riposo",
+        "lavoro"
+      ],
+      "explanation": "巡行；旅程。阳性单数；这里指展览的巡行。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 27,
+      "answer": "cittadini",
+      "options": [
+        "turisti",
+        "colleghi",
+        "cittadini",
+        "clienti"
+      ],
+      "explanation": "公众；市民。阳性复数，指社会公众。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 22,
+      "answer": "filmati",
+      "options": [
+        "quadri",
+        "documenti",
+        "giornali",
+        "filmati"
+      ],
+      "explanation": "影片。阳性复数，与 dieci 搭配。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 52,
+      "answer": "tappe",
+      "options": [
+        "tappe",
+        "stanze",
+        "pagine",
+        "lezioni"
+      ],
+      "explanation": "站；停靠点。阴性复数，这里指巡展的站点。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 7,
+      "answer": "schermo",
+      "options": [
+        "tavolo",
+        "quaderno",
+        "schermo",
+        "biglietto"
+      ],
+      "explanation": "屏幕。阳性单数，指可触摸的显示屏。"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "id": "2026-10-26-it-una-mostra-tra-le-citta",
+  "storyId": "istat-centenario-itinerante-2026-10-20",
+  "lang": "it",
+  "date": "2026-10-26",
+  "title": "Una mostra tra le città",
+  "titleZh": "穿行于城市之间的展览",
+  "summaryZh": "意大利国家统计局用影片和交互式展示柱，把百年历史与地区数据带到十七座城市。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体展览场景、短句与常用现在时；新词有中文辅助。",
+  "category": "culture",
+  "topics": [
+    "公共文化",
+    "社会参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Istat",
+    "title": "Mostra itinerante, storia in multivision e digital experience, il Centenario Istat arriva nelle città",
+    "url": "https://www.istat.it/comunicato-stampa/mostra-itinerante-storia-in-multivision-e-digital-experience-il-centenario-istat-arriva-nelle-citta/",
+    "publishedAt": "2026-10-20",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Istat（机构作者，未单列个人署名）；原题、原日期及链接见来源。原语改写、中文翻译与教学补充均依 CC BY 4.0 发布；不代表原机构认可。",
+  "adaptation": "2026-10-26整理，非当日原文。依据机构叙述同语言分级改写并配中文翻译；排除图片、媒体、附件、第三方引语及外部定义。练习和口语为原创教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Nel 2026 l’Istat festeggia cento anni dalla sua fondazione.",
+      "zh": "2026年，意大利国家统计局庆祝成立一百周年。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Il 20 ottobre l’Istituto presenta una mostra che porta la statistica in diverse città italiane.",
+      "zh": "10月20日，该机构介绍一项把统计带到意大利不同城市的展览。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Il viaggio della mostra va dal 21 ottobre al 4 dicembre e comprende diciassette città.",
+      "zh": "巡展从10月21日持续至12月4日，覆盖十七座城市。",
+      "glosses": [
+        {
+          "surface": "viaggio",
+          "lemma": "viaggio",
+          "zh": "巡行；旅程",
+          "note": "阳性单数；这里指展览的巡行。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "L’obiettivo è avvicinare i cittadini ai dati e alla storia del Paese.",
+      "zh": "目标是让公众走近数据和国家的历史。",
+      "glosses": [
+        {
+          "surface": "cittadini",
+          "lemma": "cittadino",
+          "zh": "公众；市民",
+          "note": "阳性复数，指社会公众。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Per questo progetto ci sono due installazioni diverse: un cubo e un totem.",
+      "zh": "这个项目有两种不同的装置：一个立方体和一个交互式展示柱。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Il cubo arriva a Genova, Napoli e Treviso.",
+      "zh": "立方体装置来到热那亚、那不勒斯和特雷维索。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Al suo interno, dieci filmati raccontano cento anni di storia italiana attraverso i dati dell’Istat.",
+      "zh": "装置内部，十部影片通过国家统计局的数据讲述意大利一百年的历史。",
+      "glosses": [
+        {
+          "surface": "filmati",
+          "lemma": "filmato",
+          "zh": "影片",
+          "note": "阳性复数，与 dieci 搭配。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Immagini, luci e suoni accompagnano i visitatori durante questa esperienza.",
+      "zh": "在这段体验中，影像、灯光和声音伴随着参观者。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Il totem, invece, segue un percorso con quattordici tappe.",
+      "zh": "交互式展示柱则沿着一条设有十四站的路线巡展。",
+      "glosses": [
+        {
+          "surface": "tappe",
+          "lemma": "tappa",
+          "zh": "站；停靠点",
+          "note": "阴性复数，这里指巡展的站点。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Ha uno schermo che i visitatori possono toccare per entrare nella versione digitale della mostra romana.",
+      "zh": "它配有屏幕，参观者可以触摸屏幕，进入罗马展览的数字版本。",
+      "glosses": [
+        {
+          "surface": "schermo",
+          "lemma": "schermo",
+          "zh": "屏幕",
+          "note": "阳性单数，指可触摸的显示屏。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Ognuno può scegliere un percorso personale tra immagini, video e informazioni.",
+      "zh": "每个人都可以在图像、视频和信息之间选择自己的参观路线。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Ci sono anche racconti sulle regioni italiane, sulla loro popolazione e sui cambiamenti sociali ed economici.",
+      "zh": "还有关于意大利各地区、当地人口以及社会经济变化的介绍。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "La mostra propone così due modi diversi per conoscere lo stesso patrimonio di dati.",
+      "zh": "因此，展览提供两种不同方式来了解同一份数据资源。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "viaggio",
+        "lemma": "viaggio",
+        "zh": "巡行；旅程",
+        "note": "阳性单数；这里指展览的巡行。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "cittadini",
+        "lemma": "cittadino",
+        "zh": "公众；市民",
+        "note": "阳性复数，指社会公众。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "filmati",
+        "lemma": "filmato",
+        "zh": "影片",
+        "note": "阳性复数，与 dieci 搭配。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "tappe",
+        "lemma": "tappa",
+        "zh": "站；停靠点",
+        "note": "阴性复数，这里指巡展的站点。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "schermo",
+        "lemma": "schermo",
+        "zh": "屏幕",
+        "note": "阳性单数，指可触摸的显示屏。",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "attraverso i dati",
+        "zh": "通过数据",
+        "sentenceId": "s7",
+        "note": "attraverso 表示借助某种媒介。"
+      },
+      {
+        "text": "può scegliere",
+        "zh": "可以选择",
+        "sentenceId": "s11",
+        "note": "potere 的第三人称单数后接不定式。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "potere 的第三人称单数后接不定式。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Preferisci guardare un filmato o scegliere un percorso sullo schermo? Perché?",
+        "zh": "你更喜欢观看影片，还是在屏幕上自己选择路线？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Preferisco… perché…",
+        "zh": "我更喜欢……，因为……",
+        "note": "原创口语句架，可接动词不定式。"
+      }
+    ]
+  }
+}

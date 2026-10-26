@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-26-fr-bibliotheques-et-confiance",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 6,
+      "answer": "rencontre",
+      "options": [
+        "lecture",
+        "rencontre",
+        "enquête",
+        "visite"
+      ],
+      "explanation": "活动；交流会。阴性单数，指这次专业人员活动。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s7",
+      "start": 68,
+      "answer": "obstacles",
+      "options": [
+        "projets",
+        "conseils",
+        "obstacles",
+        "horaires"
+      ],
+      "explanation": "障碍。阳性复数，与 les 搭配。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 53,
+      "answer": "outils",
+      "options": [
+        "outils",
+        "emplois",
+        "bâtiments",
+        "examens"
+      ],
+      "explanation": "工具；工作方法。阳性复数，这里包括工作坊和易读书籍。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 94,
+      "answer": "prêt",
+      "options": [
+        "prix",
+        "stock",
+        "choix",
+        "prêt"
+      ],
+      "explanation": "借阅。阳性单数名词；prêt de livres 指图书借阅。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 105,
+      "answer": "progressivement",
+      "options": [
+        "publiquement",
+        "gratuitement",
+        "progressivement",
+        "obligatoirement"
+      ],
+      "explanation": "逐渐地。副词，修饰重拾信心的过程。"
+    }
+  ]
+}

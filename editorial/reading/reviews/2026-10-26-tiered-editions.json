@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-10-26",
+  "status": "PASS",
+  "batch": "2 distinct original sources, one edition each; IT A2 and FR B1",
+  "wordCounts": {
+    "it": 163,
+    "fr": 288
+  },
+  "independentExerciseReview": {
+    "blindBeforeKey": true,
+    "comprehensionQuestions": 7,
+    "clozeQuestions": 10,
+    "allMatched": true,
+    "revisions": "French question3 changed from title-answerable main idea; question4 revised to a genuinely supported inference; revised prompts independently solved before keys.",
+    "finalReview": "Final keys, evidence, Chinese explanations and morphological forms independently checked."
+  },
+  "finalFileSha256": {
+    "data/reading/articles/2026-10-26-fr-bibliotheques-et-confiance.json": "d7c42fbfe2ca0b5409183c67eb06f2755f91aeebed9b5050448c7c99e70b5aec",
+    "data/reading/articles/2026-10-26-it-una-mostra-tra-le-citta.json": "221725136f63e1dd69fcb861ccd41c634d70dbaf0ffe8f5761e095636747e8d7",
+    "data/reading/comprehension/2026-10-26-fr-bibliotheques-et-confiance.json": "d474c4bfafaab9900ada781dbf587d7d9103e435592985783da2ee53a8cbc5a9",
+    "data/reading/comprehension/2026-10-26-it-una-mostra-tra-le-citta.json": "d59829758479a433eeb87bbbde622b6107d5492cbaad3924dde7779ac20c7c1c",
+    "data/reading/practice/2026-10-26-fr-bibliotheques-et-confiance.json": "ea05b144bb4e6ed52b8027e13eebf15a4d3bbecd4883a01b9a25b8f6a033f2ad",
+    "data/reading/practice/2026-10-26-it-una-mostra-tra-le-citta.json": "5d2aa486ec9ad96e1e58d20c2b1f941923000b52e9946391ad8d334761cb1edb"
+  },
+  "sourceReview": {
+    "reviewedAt": "2026-10-26",
+    "reviewScope": "Independent direct-source, dates, rights, adaptation facts, Chinese translations and listening metadata review; not deployment approval or exercise blind review.",
+    "status": "pass-for-source-rights-facts-translations-and-listening-boundaries",
+    "articles": [
+      {
+        "id": "2026-10-26-fr-bibliotheques-et-confiance",
+        "sha256": "d7c42fbfe2ca0b5409183c67eb06f2755f91aeebed9b5050448c7c99e70b5aec",
+        "sourceUrl": "https://www.culture.gouv.fr/regions/drac-occitanie/actualites/actualite-a-la-une/dans-la-lutte-contre-l-illettrisme-des-bibliotheques-refuges",
+        "sourcePublishedAt": "2026-10-13",
+        "legalUrl": "https://www.culture.gouv.fr/mentions-legales",
+        "license": {
+          "name": "CC BY-SA 3.0 FR",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+        },
+        "legalLocator": "II 4.3.1(a), 4.3.2; 4.2",
+        "rightsFinding": "Ministry-authored text CC BY-SA 3.0 FR; partner-owned content excluded. Original title/source and licence retained; adaptation, translation and educational supplements declared share-alike.",
+        "excluded": "Third-party quotations including Donata/Michel and ANLCI definition, photographs and captions, logos, attachments and media.",
+        "factualAndChineseReview": "pass; event dates, participant count, attribution of aims/potential rather than measured success verified; Chinese meanings faithful.",
+        "editorialIssue": null,
+        "status": "pass",
+        "editorialClarification": "Final adaptation note explicitly labels s8 interpretation and s15 evidence-limit judgment as editorial, not source efficacy evaluation."
+      },
+      {
+        "id": "2026-10-26-it-una-mostra-tra-le-citta",
+        "sha256": "221725136f63e1dd69fcb861ccd41c634d70dbaf0ffe8f5761e095636747e8d7",
+        "sourceUrl": "https://www.istat.it/comunicato-stampa/mostra-itinerante-storia-in-multivision-e-digital-experience-il-centenario-istat-arriva-nelle-citta/",
+        "sourcePublishedAt": "2026-10-20",
+        "legalUrl": "https://www.istat.it/note-legali/",
+        "license": {
+          "name": "CC BY 4.0",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "legalLocator": "Licenza CC-by Creative Commons 4.0; Uso del marchio/logo e patrocinio",
+        "rightsFinding": "Site text default CC BY 4.0 permits redistribution and modification with attribution, licence link and change notice; third-party ownership and logo exceptions excluded.",
+        "excluded": "Exhibition videos, imagery/designs/logos, linked media/PDF assets; no media reused.",
+        "factualAndChineseReview": "pass; source date, 17-city range, 3 cube locations, 10 films, 14 totem stops and digital interaction verified; Chinese meanings faithful.",
+        "editorialIssue": null,
+        "status": "pass"
+      }
+    ],
+    "listening": {
+      "file": "oct26-listening/entries.json",
+      "status": "source-metadata-and-boundaries-pass",
+      "evidence": [
+        {
+          "url": "https://www.logo.de/logo-vom-sonntag-25-oktober-2026-102.html",
+          "locator": "headline/date/programme listing",
+          "finding": "2026-10-25 19:50; listed protest, sport and ocean-protection topics support short original Chinese guide and topic vocabulary; resource-only without questions or CEFR claim."
+        },
+        {
+          "url": "https://www.logo.de/",
+          "locator": "Die logo!-Sendung / Sonntag, 25. Oktober",
+          "finding": "Official page lists 10:05 duration."
+        },
+        {
+          "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/transport-announcements",
+          "locator": "Language level; Transcript A-D",
+          "finding": "Provider A2 verified; no original publication date established, therefore evergreen. Official transcript supports listening study; no audio quality or playback acceptance claimed."
+        }
+      ],
+      "rightsBoundary": "External original-site links only; no copied recordings, images, full subtitles, or original-site exercises. Independent question review separate.",
+      "sha256": "25fbfb41524cf1dc07f898f53718fbd6b8f279576998e36926b8f0da11c9b143"
+    },
+    "sourceRegistryRecommendation": {
+      "prefix": "https://www.culture.gouv.fr/regions/drac-occitanie/actualites/",
+      "accepted": "Eligible native regional ministry source scope, not an unconditional reuse whitelist. Every article requires rights and third-party-exception review."
+    }
+  },
+  "shortfalls": [
+    "IT B1/B2, FR A2/B2 and all DE/EN reading tiers omitted; no quotas filled with duplicated stories.",
+    "Approved one-week source reserve remains incomplete."
+  ],
+  "freshness": "Both original readings within30days; original publication dates retained."
+}
