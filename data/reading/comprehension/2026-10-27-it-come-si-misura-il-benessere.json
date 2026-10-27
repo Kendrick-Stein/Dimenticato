@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-27-it-come-si-misura-il-benessere",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quale insieme riguarda il confronto con l’anno precedente?",
+      "options": [
+        "Tutti i 148 indicatori del rapporto.",
+        "I 132 indicatori confrontabili su base annua.",
+        "I 54 indicatori rimasti stabili.",
+        "I 23 indicatori migliorati."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "年度比较使用132项可比指标；148是报告的总指标数，54是改善数，23是恶化数。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "In quali ambiti le differenze tra Nord e Sud risultano particolarmente evidenti?",
+      "options": [
+        "Sicurezza, ambiente e benessere soggettivo.",
+        "Salute, istruzione e servizi culturali.",
+        "Lavoro, benessere economico e relazioni sociali.",
+        "Istruzione, paesaggio e qualità dei servizi."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "第11句明确列出工作、经济福祉和社会关系。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "Che cosa mostra l’esempio della sicurezza nel Mezzogiorno?",
+      "options": [
+        "La posizione relativa del Mezzogiorno cambia passando alla sicurezza.",
+        "La sicurezza conferma il quadro economico sfavorevole del Mezzogiorno.",
+        "La Campania spiega il risultato favorevole del Mezzogiorno nella sicurezza.",
+        "La sicurezza presenta lo stesso andamento delle relazioni sociali nel Mezzogiorno."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "南部总体上许多指标较弱，但安全领域除坎帕尼亚外相对有利，因此地域的相对位置会随领域变化。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Come si possono approfondire i risultati presentati nel rapporto?",
+      "options": [
+        "Consultando una raccolta di interviste ai cittadini.",
+        "Consultando le previsioni economiche per il 2027.",
+        "Consultando un elenco di progetti comunali finanziati.",
+        "Consultando le serie storiche e il sistema interattivo."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s14"
+      ],
+      "explanationZh": "第14句给出的深入了解途径是历史数据序列与交互系统。"
+    }
+  ]
+}

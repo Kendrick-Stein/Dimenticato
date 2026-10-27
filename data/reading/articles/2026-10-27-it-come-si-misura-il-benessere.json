@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "id": "2026-10-27-it-come-si-misura-il-benessere",
+  "storyId": "istat-bes-edizione-2026-10-26",
+  "lang": "it",
+  "date": "2026-10-27",
+  "title": "Come si misura il benessere?",
+  "titleZh": "如何衡量生活福祉？",
+  "summaryZh": "Istat新版Bes报告通过多领域指标观察生活状况：年度变化并不一致，南北差异也有例外。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：解释统计比较与地域差异，包含关系从句、转折和条件限制；数字配中文释义。",
+  "category": "society",
+  "topics": [
+    "生活质量",
+    "社会差异"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Istat",
+    "title": "Rapporto sul Benessere equo e sostenibile – Edizione 2026",
+    "url": "https://www.istat.it/comunicato-stampa/nota-stampa-rapporto-bes-edizione-2026/",
+    "publishedAt": "2026-10-26",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Istat（机构作者，未列个人署名）；原题、日期及原文链接见来源。原语改写、中文翻译与教学补充按 CC BY 4.0 发布；不代表原机构认可。",
+  "adaptation": "2026-10-27整理；依据Istat意大利语新闻稿分级改写，不是原文。参考时期为2025年，不将全部148项指标误作年度可比的132项。未使用图片、商标、附件或第三方材料。第16句为编辑阅读提示；口语与练习为原创教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 26 ottobre 2026, l’Istat ha presentato una nuova edizione del rapporto sul Benessere equo e sostenibile, conosciuto con il nome di Bes.",
+      "zh": "2026年10月26日，意大利国家统计局介绍了新版公平与可持续福祉报告，简称Bes。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Il periodo di riferimento indicato per questa edizione è il 2025: la data di pubblicazione non coincide quindi con l’anno osservato.",
+      "zh": "本版标明的参考时期为2025年，因此发布日期与观察年份并不相同。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Il rapporto utilizza 148 indicatori, organizzati in dodici ambiti, per descrivere diversi aspetti della vita delle persone.",
+      "zh": "报告利用分属12个领域的148项指标，描述人们生活的不同方面。",
+      "glosses": [
+        {
+          "surface": "ambiti",
+          "lemma": "ambito",
+          "zh": "领域",
+          "note": "阳性复数，单数为 ambito。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Accanto alla salute e alla situazione economica, considera l’istruzione, le relazioni sociali, l’ambiente e la qualità dei servizi.",
+      "zh": "除健康与经济状况外，报告也考虑教育、社会关系、环境及服务质量。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Comprende inoltre il lavoro e la sua relazione con il tempo dedicato alla vita privata, un tema vicino all’esperienza quotidiana.",
+      "zh": "报告还涵盖工作及其与私人生活时间的关系，这是一个贴近日常经验的主题。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Per seguire i cambiamenti più recenti, l’Istat confronta i dati disponibili con quelli dell’anno precedente, quando il confronto è possibile.",
+      "zh": "为了追踪近期变化，统计局在可以比较的情况下，将现有数据与前一年数据对照。",
+      "glosses": [
+        {
+          "surface": "confronto",
+          "lemma": "confronto",
+          "zh": "比较",
+          "note": "阳性单数名词。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Tra i 132 indicatori confrontabili su base annua, 54 migliorano, 55 rimangono stabili e 23 peggiorano.",
+      "zh": "在可进行年度比较的132项指标中，54项改善、55项稳定、23项恶化。",
+      "glosses": [
+        {
+          "surface": "stabili",
+          "lemma": "stabile",
+          "zh": "稳定的",
+          "note": "复数形容词，说明指标状态。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Questi risultati mostrano un quadro diverso da un settore all’altro: non tutti gli aspetti del benessere seguono la stessa direzione.",
+      "zh": "这些结果呈现出不同领域的差异：并非福祉的所有方面都朝着同一方向变化。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Il rapporto esamina anche le differenze territoriali: nelle regioni del Nord e del Centro, tranne il Lazio, almeno metà degli indicatori supera la media nazionale.",
+      "zh": "报告也考察地域差异：在北部和中部的大区中，除拉齐奥外，至少一半的指标高于全国平均水平。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Nel Mezzogiorno, invece, la maggioranza degli indicatori regionali disponibili è sotto la media, con l’eccezione dell’Abruzzo.",
+      "zh": "相反，在意大利南部，现有大区指标中多数低于全国平均水平，但阿布鲁佐大区除外。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Le distanze tra Nord e Sud sono particolarmente evidenti nel lavoro, nel benessere economico e nelle relazioni sociali.",
+      "zh": "南北差距在工作、经济福祉和社会关系领域尤其明显。",
+      "glosses": [
+        {
+          "surface": "evidenti",
+          "lemma": "evidente",
+          "zh": "明显的",
+          "note": "复数形容词，与 distanze 对应。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Tuttavia, per la sicurezza, il benessere soggettivo e l’ambiente, la divisione geografica non segue sempre questo schema.",
+      "zh": "然而，在安全、主观福祉与环境方面，地域分布并不总是遵循这种模式。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Nel campo della sicurezza, per esempio, il Mezzogiorno presenta una situazione relativamente favorevole, esclusa la Campania.",
+      "zh": "例如在安全领域，除坎帕尼亚大区外，南部的情况相对有利。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Chi vuole approfondire può consultare le serie storiche e il sistema interattivo messi a disposizione insieme al rapporto.",
+      "zh": "想进一步了解的人，可以查阅随报告提供的历史数据序列和交互系统。",
+      "glosses": [
+        {
+          "surface": "approfondire",
+          "lemma": "approfondire",
+          "zh": "深入了解",
+          "note": "动词不定式，接在 vuole 之后。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Dove i dati lo permettono, sono disponibili anche informazioni separate per regione, sesso, età e livello di istruzione.",
+      "zh": "在数据允许的情况下，还可获取按大区、性别、年龄和教育程度划分的信息。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Come osservazione di lettura, una media territoriale aiuta a confrontare gruppi, ma non descrive da sola la situazione di ogni singola persona.",
+      "zh": "作为阅读提示：地域平均值有助于比较群体，但它本身并不能描述每一个人的情况。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "ambiti",
+        "lemma": "ambito",
+        "zh": "领域",
+        "note": "阳性复数，单数为 ambito。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "confronto",
+        "lemma": "confronto",
+        "zh": "比较",
+        "note": "阳性单数名词。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "stabili",
+        "lemma": "stabile",
+        "zh": "稳定的",
+        "note": "复数形容词，说明指标状态。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "evidenti",
+        "lemma": "evidente",
+        "zh": "明显的",
+        "note": "复数形容词，与 distanze 对应。",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "approfondire",
+        "lemma": "approfondire",
+        "zh": "深入了解",
+        "note": "动词不定式，接在 vuole 之后。",
+        "sentenceId": "s14"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "a disposizione",
+        "zh": "可供使用",
+        "sentenceId": "s14",
+        "note": "mettere a disposizione 表示提供某物供使用。"
+      },
+      {
+        "text": "con l’eccezione dell’Abruzzo",
+        "zh": "阿布鲁佐除外",
+        "sentenceId": "s10",
+        "note": "con l’eccezione di 用来标明例外。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "Tuttavia 引出转折；non… sempre 表示并不总是，而非从来不。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali aspetti contano di più per il tuo benessere quotidiano?",
+        "zh": "哪些方面对你日常的幸福与生活质量最重要？"
+      },
+      {
+        "text": "Perché può essere utile osservare più indicatori invece di uno solo?",
+        "zh": "为什么同时观察多项指标可能比只看一项更有用？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Per me conta soprattutto…",
+        "zh": "对我而言，最重要的是……",
+        "note": "原创讨论句架。"
+      },
+      {
+        "text": "Il confronto è utile, ma bisogna considerare anche…",
+        "zh": "比较有用，但也应考虑……",
+        "note": "原创讨论句架。"
+      }
+    ]
+  }
+}

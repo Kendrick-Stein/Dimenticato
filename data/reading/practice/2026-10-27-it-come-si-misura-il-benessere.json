@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-27-it-come-si-misura-il-benessere",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "answer": "ambiti",
+      "options": [
+        "ambiti",
+        "orari",
+        "biglietti",
+        "indirizzi"
+      ],
+      "explanation": "根据本句中文及原语上下文，应填 ambiti（领域）。阳性复数，单数为 ambito。",
+      "start": 59
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "answer": "confronto",
+      "options": [
+        "viaggio",
+        "confronto",
+        "riposo",
+        "colloquio"
+      ],
+      "explanation": "根据本句中文及原语上下文，应填 confronto（比较）。阳性单数名词。",
+      "start": 119
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "answer": "stabili",
+      "options": [
+        "lontani",
+        "vuoti",
+        "stabili",
+        "rapidi"
+      ],
+      "explanation": "根据本句中文及原语上下文，应填 stabili（稳定的）。复数形容词，说明指标状态。",
+      "start": 78
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "answer": "evidenti",
+      "options": [
+        "evidenti",
+        "nascoste",
+        "costose",
+        "recenti"
+      ],
+      "explanation": "根据本句中文及原语上下文，应填 evidenti（明显的）。复数形容词，与 distanze 对应。",
+      "start": 48
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s14",
+      "answer": "approfondire",
+      "options": [
+        "prenotare",
+        "partire",
+        "dormire",
+        "approfondire"
+      ],
+      "explanation": "根据本句中文及原语上下文，应填 approfondire（深入了解）。动词不定式，接在 vuole 之后。",
+      "start": 10
+    }
+  ]
+}

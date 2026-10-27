@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-27-en-connections-beneath-the-sea",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 91,
+      "answer": "seabed",
+      "options": [
+        "seabed",
+        "rooftop",
+        "pavement",
+        "hillside"
+      ],
+      "explanation": "海床；海底。单数名词，on the seabed 表示在海底。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 45,
+      "answer": "pipelines",
+      "options": [
+        "railways",
+        "pipelines",
+        "motorways",
+        "waterways"
+      ],
+      "explanation": "管道。复数，指输送天然气的管道。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 65,
+      "answer": "consultation",
+      "options": [
+        "competition",
+        "subscription",
+        "consultation",
+        "celebration"
+      ],
+      "explanation": "意见征询。名词，指正式收集公众等各方意见的过程。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 117,
+      "answer": "duties",
+      "options": [
+        "profits",
+        "discounts",
+        "salaries",
+        "duties"
+      ],
+      "explanation": "义务；职责。复数；这里指企业需要承担的责任。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 0,
+      "answer": "Anchors",
+      "options": [
+        "Anchors",
+        "Satellites",
+        "Batteries",
+        "Antennas"
+      ],
+      "explanation": "船锚。句首复数名词，须保留大写。"
+    }
+  ]
+}

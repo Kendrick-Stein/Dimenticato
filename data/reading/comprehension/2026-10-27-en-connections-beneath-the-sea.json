@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-27-en-connections-beneath-the-sea",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Which activity is linked to undersea data cables in the article?",
+      "options": [
+        "Buying something from an online shop.",
+        "Delivering gas through a pipeline.",
+        "Moving fishing nets across the seabed.",
+        "Carrying electricity from another country."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "第2、3句把国际数据电缆与网购等活动联系起来；第4句区分了天然气管道和输电电缆，渔网则在后文作为故障原因出现。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What is the role of the twelve-week consultation?",
+      "options": [
+        "To review how the proposed rules are working.",
+        "To gather views for the final proposals.",
+        "To give providers time to adopt the final rules.",
+        "To explain decisions already made about the proposals."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "第6、7句说明意见征询发生在最终方案形成之前，目的是收集各方意见；不是检查已实施规则，也不是给企业执行已定规则的过渡期。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Under one proposed change, what would cable providers need to do?",
+      "options": [
+        "Publish regular accounts of customers’ use of their networks.",
+        "Coordinate public consultations about risks to their networks.",
+        "Set the penalties for damage caused to their networks.",
+        "Strengthen the identification and management of network risks."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "第8句明确提出加强供应商识别和管理网络风险的义务。征询意见和加重处罚虽在文中出现，但没有说由供应商组织征询或制定处罚；也未要求公布客户使用情况。"
+    },
+    {
+      "id": "q4",
+      "kind": "cause",
+      "prompt": "Why does the article mention fishing nets and technical failures?",
+      "options": [
+        "To explain the recent growth in demand for undersea connections.",
+        "To explain why the consultation includes views from the public.",
+        "To illustrate how cable damage can have causes other than deliberate attacks.",
+        "To illustrate the changes that providers would make to protect their networks."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第11句指出损坏并不一定源于蓄意攻击，第12句列举渔网和技术失灵，正是说明其他故障原因；这些例子不是需求增长、征询参与范围或拟议防护措施的解释。"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "schema": 1,
+  "id": "2026-10-27-fr-opera-dijon",
+  "storyId": "culture-gouv-opera-dijon-conventionnement-2026-10-14",
+  "lang": "fr",
+  "date": "2026-10-27",
+  "title": "L’Opéra de Dijon et ses publics",
+  "titleZh": "第戎歌剧院与它的观众",
+  "summaryZh": "从2025年的活动数据出发，了解第戎歌剧院未来面向城乡居民、儿童和年轻人的计划。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以短句介绍具体文化活动，包含常见现在时、复合过去时及数量表达；机构、艺术教育等词汇提供中文辅助。",
+  "category": "culture",
+  "topics": [
+    "文化生活",
+    "艺术教育",
+    "城乡文化"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "La ministre de la Culture, Catherine Pégard, annonce le renouvellement, pour une durée de cinq ans, du conventionnement de l’Opéra de Dijon au titre de « Théâtre lyrique d’intérêt national »",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/la-ministre-de-la-culture-catherine-pegard-annonce-le-renouvellement-pour-une-duree-de-cinq-ans-du-conventionnement-de-l-opera-de-dijon-au-titr",
+    "publishedAt": "2026-10-14",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "来源及机构作者：法国文化部（Ministère de la Culture），2026-10-14发布；原文见来源链接。依据 https://www.culture.gouv.fr/mentions-legales 第II.4.3.1(a)条，使用机构文字的CC BY-SA 3.0 FR许可，并遵守II.4.3.2条例外。本学习改写、中文翻译及教学补充由Dimenticato整理（2026-10-27），以相同许可提供；不表示原机构认可。",
+  "adaptation": "法语原生机构稿的同语言简化改写，并非原文；节选事实并调整句式，添加中文翻译、词汇解释与原创练习，不使用图片、标志或第三方引文。原发布日期按文化部官方新闻稿列表核实。计划和目标不表述为已实现的结果。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le ministère de la Culture renouvelle pour cinq ans son accord avec l’Opéra de Dijon.",
+      "zh": "法国文化部与第戎歌剧院的合作协议续签五年。",
+      "glosses": [
+        {
+          "surface": "accord",
+          "lemma": "accord",
+          "zh": "协议"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Cette décision soutient le projet culturel de l’établissement, dirigé par Antonella Zedda depuis octobre 2025.",
+      "zh": "这一决定支持该机构的文化项目；安东内拉·泽达自2025年10月起领导该机构。",
+      "glosses": [
+        {
+          "surface": "depuis",
+          "lemma": "depuis",
+          "zh": "自……以来"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "En 2025, l’opéra a proposé 39 spectacles différents, avec 57 représentations au total.",
+      "zh": "2025年，歌剧院推出了39个不同的演出节目，总计演出57场。",
+      "glosses": [
+        {
+          "surface": "spectacles",
+          "lemma": "spectacle",
+          "zh": "演出节目"
+        },
+        {
+          "surface": "représentations",
+          "lemma": "représentation",
+          "zh": "演出场次"
+        },
+        {
+          "surface": "au total",
+          "lemma": "au total",
+          "zh": "总计"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Son équipe compte 132 personnes permanentes, dont 21 artistes dans le chœur.",
+      "zh": "其常驻团队有132人，其中21人是合唱团艺术家。",
+      "glosses": [
+        {
+          "surface": "chœur",
+          "lemma": "chœur",
+          "zh": "合唱团"
+        },
+        {
+          "surface": "dont",
+          "lemma": "dont",
+          "zh": "其中"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Pour les prochaines années, l’opéra veut travailler davantage avec les artistes et les institutions de la région.",
+      "zh": "未来几年，歌剧院希望更多地与当地艺术家和机构合作。",
+      "glosses": [
+        {
+          "surface": "davantage",
+          "lemma": "davantage",
+          "zh": "更多地"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Il souhaite aussi proposer de la danse, du cirque et de la musique.",
+      "zh": "它还希望提供舞蹈、马戏和音乐活动。",
+      "glosses": [
+        {
+          "surface": "souhaite",
+          "lemma": "souhaiter",
+          "zh": "希望"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Certains projets doivent sortir du bâtiment pour aller vers les habitants des villes et des villages.",
+      "zh": "一些项目计划走出剧院建筑，走近城市和乡村的居民。",
+      "glosses": [
+        {
+          "surface": "habitants",
+          "lemma": "habitant",
+          "zh": "居民"
+        },
+        {
+          "surface": "villages",
+          "lemma": "village",
+          "zh": "村庄"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Les enfants et les jeunes occupent une place importante dans ce projet culturel.",
+      "zh": "儿童和年轻人在这一文化项目中占有重要位置。",
+      "glosses": [
+        {
+          "surface": "enfants",
+          "lemma": "enfant",
+          "zh": "儿童"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "En 2025, près de 2 000 enfants et jeunes ont déjà participé à des actions d’éducation artistique et culturelle.",
+      "zh": "2025年，已有近2000名儿童和年轻人参与了艺术与文化教育活动。",
+      "glosses": [
+        {
+          "surface": "près de",
+          "lemma": "près de",
+          "zh": "接近；将近"
+        },
+        {
+          "surface": "ont déjà participé",
+          "lemma": "participer",
+          "zh": "已经参与了"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "L’opéra prévoit également des activités pour aider à la formation et à l’entrée dans la vie professionnelle.",
+      "zh": "歌剧院还计划开展活动，支持培训和进入职业生活。",
+      "glosses": [
+        {
+          "surface": "formation",
+          "lemma": "formation",
+          "zh": "培训"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "L’objectif est de rendre l’opéra plus ouvert et plus accessible à tous.",
+      "zh": "目标是让歌剧院更加开放，让所有人都更容易接触它。",
+      "glosses": [
+        {
+          "surface": "objectif",
+          "lemma": "objectif",
+          "zh": "目标"
+        },
+        {
+          "surface": "accessible",
+          "lemma": "accessible",
+          "zh": "容易接触的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "spectacles",
+        "lemma": "spectacle",
+        "zh": "演出节目",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "représentations",
+        "lemma": "représentation",
+        "zh": "演出场次",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "villages",
+        "lemma": "village",
+        "zh": "村庄",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "enfants",
+        "lemma": "enfant",
+        "zh": "儿童",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "formation",
+        "lemma": "formation",
+        "zh": "培训",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "au total",
+        "zh": "总计；合计",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "près de",
+        "zh": "将近；表示接近某个数量",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "une place importante",
+        "zh": "重要的位置；可用于谈论某事的重要性",
+        "sentenceId": "s8"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "L’objectif est de + 动词原形：目标是……。rendre + 宾语 + 形容词：使……变得……。这里描述目标，不是已完成的成效。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel spectacle aimerais-tu voir dans ta ville ?",
+        "zh": "你想在自己的城市看什么演出？"
+      },
+      {
+        "text": "Comment faire découvrir la musique aux enfants ?",
+        "zh": "怎样让孩子接触音乐？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "J’aimerais voir un spectacle de danse.",
+        "zh": "我想看一场舞蹈演出。",
+        "note": "原创口语示例，非原报道观点。"
+      },
+      {
+        "text": "Pour moi, la culture doit être accessible à tous.",
+        "zh": "在我看来，所有人都应该能接触文化。",
+        "note": "原创观点表达，可按自己的立场替换。"
+      }
+    ]
+  }
+}

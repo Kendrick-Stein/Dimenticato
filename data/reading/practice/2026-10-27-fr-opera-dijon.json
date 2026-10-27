@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-27-fr-opera-dijon",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 30,
+      "answer": "spectacles",
+      "options": [
+        "spectacles",
+        "billets",
+        "sièges",
+        "salaires"
+      ],
+      "explanation": "中文“39个不同的演出节目”对应spectacles；与后面的57场représentations区分。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 61,
+      "answer": "représentations",
+      "options": [
+        "répétitions",
+        "réservations",
+        "représentations",
+        "invitations"
+      ],
+      "explanation": "这里总计57场“演出”，用représentations；répétitions是排练，不是本文给出的数据。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 92,
+      "answer": "villages",
+      "options": [
+        "musées",
+        "villages",
+        "théâtres",
+        "hôtels"
+      ],
+      "explanation": "“城市和乡村的居民”中，乡村对应villages；village在这里用复数。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 4,
+      "answer": "enfants",
+      "options": [
+        "voisins",
+        "artistes",
+        "parents",
+        "enfants"
+      ],
+      "explanation": "中文明确指儿童和年轻人，enfants意为儿童，不是父母或邻居。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 56,
+      "answer": "formation",
+      "options": [
+        "formation",
+        "décoration",
+        "restauration",
+        "réservation"
+      ],
+      "explanation": "中文“培训”对应formation；formation在此表示培训这一活动。"
+    }
+  ]
+}

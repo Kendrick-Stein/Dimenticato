@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-27-fr-opera-dijon",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Que représentent les nombres 39 et 57 pour l’année 2025 ?",
+      "promptZh": "39和57这两个数字分别代表2025年的什么？",
+      "options": [
+        "39 artistes et 57 spectacles différents.",
+        "39 spectacles différents et 57 représentations.",
+        "39 représentations et 57 spectacles différents.",
+        "39 spectacles différents et 57 artistes."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3"
+      ],
+      "explanationZh": "s3明确区分：39是不同演出节目的数量，57是演出的总场次；不是艺术家人数。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi certains projets doivent-ils sortir du bâtiment de l’opéra ?",
+      "promptZh": "为什么一些项目计划走出歌剧院建筑？",
+      "options": [
+        "Pour former les artistes dans une autre région.",
+        "Pour réunir les membres du chœur dans les écoles.",
+        "Pour rencontrer les habitants des villes et des villages.",
+        "Pour préparer tous les spectacles dans les villages."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "s7用pour说明目的：走近城市和乡村居民。没有说所有演出都要在乡村准备，也没有说合唱团要到学校集合。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quelle action concernant les jeunes a déjà eu lieu en 2025 ?",
+      "promptZh": "关于年轻人的哪项活动已经在2025年发生？",
+      "options": [
+        "Près de 2 000 ont participé à des activités artistiques et culturelles.",
+        "Près de 2 000 ont commencé à travailler dans l’équipe permanente.",
+        "Près de 2 000 ont suivi une formation pour devenir artistes professionnels.",
+        "Près de 2 000 ont chanté avec les artistes du chœur."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "s9报告2025年近2000名儿童和年轻人参与了艺术与文化教育活动。s10是支持培训和进入职业生活的计划，不能与这组已经发生的参与人数混同。"
+    }
+  ]
+}

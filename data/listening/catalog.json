@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-26",
+  "verifiedAt": "2026-10-27",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -1326,6 +1326,224 @@
           "explanationZh": "D段说明第一组车门不会开启，第一节车厢中的乘客应移向后面的车门下车；Redbridge是终点，并非所有乘客都必须坐到那里。"
         }
       ]
+    },
+    {
+      "id": "en-british-council-whos-who-office-a2",
+      "lang": "en",
+      "title": "Who’s who in the office",
+      "titleZh": "办公室初识：把人和工作联系起来",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/whos-who-office",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-27",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "跟随新同事认识办公室里的人员与分工，练习从位置、外观和职责中整理信息。",
+      "guideZh": "先听两人的交流目的，再把人物线索和职责分开记；留意说话者怎样纠正误认，以及正式自我介绍安排在什么时候。",
+      "verificationZh": "常青课程；官方页面未标原始发布日期。依据官方文字稿核对，问题为原创教学补充，已与原站练习比较；未实际测试音频播放或音质。",
+      "vocabulary": [
+        {
+          "text": "department",
+          "zh": "部门"
+        },
+        {
+          "text": "colleague",
+          "zh": "同事"
+        },
+        {
+          "text": "introduce myself",
+          "zh": "自我介绍"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-office-1",
+          "prompt": "What is Jani mainly helping Yuki do during this conversation?",
+          "promptZh": "这段交谈中，Jani 主要在帮助 Yuki 做什么？",
+          "options": [
+            "Prepare a presentation for a meeting.",
+            "Connect people she can see with their work.",
+            "Choose a desk for a new employee.",
+            "Write an email to every customer."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "official-transcript-opening-and-colleague-overview",
+          "explanationZh": "开头Jani欢迎Yuki来到部门，接着一边指出办公室里的人，一边说明他们的职责；这轮交流是在把所见人物与分工联系起来。"
+        },
+        {
+          "id": "en-office-2",
+          "prompt": "How does Jani respond when Yuki thinks she needs to take notes?",
+          "promptZh": "Yuki 觉得自己需要记笔记时，Jani 如何回应？",
+          "options": [
+            "Jani gives her a written list of phone numbers.",
+            "Jani asks her to repeat the names immediately.",
+            "Jani says there is no need to worry about remembering it all.",
+            "Jani stops the tour so she can finish writing."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "official-transcript-yuki-notes-jani-reassurance",
+          "explanationZh": "Yuki说自己也许该记笔记；Jani随后安慰她不用担心，只是先把人和名字对上。没有交给她号码表，也没有要求立即复述或停下来抄写。"
+        },
+        {
+          "id": "en-office-3",
+          "prompt": "Which order best matches Yuki’s visit?",
+          "promptZh": "哪个顺序最符合 Yuki 这次到访的安排？",
+          "options": [
+            "Meet everyone formally, then hear about their jobs.",
+            "Receive email training, then meet the department.",
+            "Write to customers, then ask about the team.",
+            "Hear about colleagues now, then introduce herself later."
+          ],
+          "answerIndex": 3,
+          "evidenceRef": "official-transcript-opening-and-final-yuki-reply",
+          "explanationZh": "开头Jani说明先介绍同事情况，之后再把她介绍给大家；结尾Yuki也说会稍后自我介绍。因此顺序是现在先了解，稍后正式认识。"
+        }
+      ]
+    },
+    {
+      "id": "de-logo-2026-10-26",
+      "lang": "de",
+      "title": "logo! vom Montag, 26. Oktober 2026",
+      "titleZh": "10月26日儿童新闻：集装箱船与社区生活",
+      "provider": "ZDF · logo!",
+      "url": "https://www.logo.de/logo-vom-montag-26-oktober-2026-100.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-10-27",
+      "sourcePublishedAt": "2026-10-26",
+      "duration": "10:21",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "本期节目单涉及集装箱船、塞尔维亚选举、青少年活动中心的饮食项目及海龟保护。",
+      "guideZh": "先在原站选择一个感兴趣的新闻主题。第一遍抓人物与事件，第二遍再整理自己实际听懂的关键词；本条未配置理解题。",
+      "verificationZh": "核对官方2026-10-26节目入口及节目单；时长来自官方节目列表。未取得可核验完整文字稿，也未实际测试播放或音质，故只收录资源入口，不据标题编题。",
+      "vocabularyLabel": "节目单主题预习词",
+      "vocabulary": [
+        {
+          "text": "Containerschiff",
+          "zh": "集装箱船"
+        },
+        {
+          "text": "Jugendhaus",
+          "zh": "青少年活动中心"
+        },
+        {
+          "text": "Schildkröte",
+          "zh": "海龟；龟"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "it-rai-treno-a2",
+      "lang": "it",
+      "title": "Le parole dell’italiano: ci vado in treno…",
+      "titleZh": "坐火车：时刻、换乘与站台",
+      "provider": "Rai Scuola",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-ci-vado-in-treno-a9719433-cb04-4436-a165-5011b9748a17.html",
+      "kind": "lesson",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青课程：在车站询问列车信息，也学习 ci 指代地点或前文信息的用法。",
+      "guideZh": "先在原站听整课，再重点听 Olga 向工作人员询问列车的片段：记下出发时间、是否换乘和通常站台。做题后用官方文字稿核对。",
+      "vocabulary": [
+        {
+          "text": "cambiare treno",
+          "zh": "换乘火车"
+        },
+        {
+          "text": "binario",
+          "zh": "站台轨道"
+        },
+        {
+          "text": "supplemento",
+          "zh": "附加费"
+        },
+        {
+          "text": "di solito",
+          "zh": "通常"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-treno-1",
+          "prompt": "Quali partenze per Potenza indica l’impiegato per il giorno dopo?",
+          "options": [
+            "Alle 7.30 e alle 14.40.",
+            "Alle 7.40 e alle 14.30.",
+            "Alle 8.30 e alle 15.40.",
+            "Alle 9.30 e alle 16.40."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "official-transcript-station-dialogue-departures",
+          "explanationZh": "工作人员给出次日7:30和14:40两班；这是课程情境，不是现实时刻表。",
+          "promptZh": "工作人员说次日去波坦察的列车何时出发？"
+        },
+        {
+          "id": "it-treno-2",
+          "prompt": "Che cosa deve fare Olga durante il viaggio in treno?",
+          "options": [
+            "Restare sullo stesso treno.",
+            "Cambiare treno.",
+            "Prendere un autobus sostitutivo.",
+            "Ritirare il bagaglio in stazione."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "official-transcript-station-dialogue-connection",
+          "explanationZh": "Olga询问是否直达，工作人员回答必须换乘火车。",
+          "promptZh": "Olga坐火车途中需要做什么？"
+        },
+        {
+          "id": "it-treno-3",
+          "prompt": "Da quale binario partono di solito i treni per Potenza nel dialogo?",
+          "options": [
+            "Dal binario 3.",
+            "Dal binario 4.",
+            "Dal binario 5.",
+            "Dal binario 6."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "official-transcript-station-dialogue-platform",
+          "explanationZh": "工作人员说通常从5号站台出发；di solito表示通常，并非每次保证如此。",
+          "promptZh": "对话里，去波坦察的列车通常从哪个站台出发？"
+        }
+      ],
+      "addedAt": "2026-10-27",
+      "verificationZh": "已核对官方A2标签和对应文字稿；原始发布日期未确认，作为常青课程收录。仅提供原站链接，不重传媒体；尚未实际检验播放与音质。"
+    },
+    {
+      "id": "fr-tv5-loisirs-a1",
+      "lang": "fr",
+      "title": "Vocabulaire : les loisirs",
+      "titleZh": "休闲活动：怎样说自己的爱好",
+      "provider": "TV5MONDE",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/vocabulaire-les-loisirs",
+      "kind": "lesson",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "常青入门课程：围绕休闲活动练习法语词汇，前往TV5MONDE原站学习。",
+      "guideZh": "先看原站视频，记下能辨认的活动词，再尝试说一句自己的爱好。以下表达是预习补充，不代表已核实在视频中出现。",
+      "vocabulary": [
+        {
+          "text": "les loisirs",
+          "zh": "休闲活动"
+        },
+        {
+          "text": "J’aime…",
+          "zh": "我喜欢……（原创预习句架）"
+        }
+      ],
+      "questions": [],
+      "addedAt": "2026-10-27",
+      "sourcePublishedAt": "2013-08-04",
+      "verificationZh": "官方页面标A1；原发2013-08-04，更新2024-11-26。仅核实资源元信息，未核实完整音视频或对应文字稿，因此不编理解题；未实际检验播放与音质。"
     }
   ],
   "schema": 1

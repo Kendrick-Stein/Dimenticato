@@ -9855,7 +9855,8 @@
           "ageDays": 9,
           "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-27-fr-opera-dijon"
     },
     {
       "id": "de-2026-08-19-geda-short-sleep",
@@ -10321,7 +10322,8 @@
           "titleAlreadyPublished": false,
           "checkedAgainstArticleCount": 107
         }
-      }
+      },
+      "linkToArticleId": "2026-10-27-en-connections-beneath-the-sea"
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

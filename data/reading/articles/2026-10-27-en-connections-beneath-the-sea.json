@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "id": "2026-10-27-en-connections-beneath-the-sea",
+  "storyId": "dcms-undersea-connections-2026-10-22",
+  "lang": "en",
+  "date": "2026-10-27",
+  "title": "The connections beneath the sea",
+  "titleZh": "海底的日常连接",
+  "summaryZh": "视频通话和网购依赖哪些看不见的连接？英国一份白皮书提出保护海底基础设施的方案，并向公众征询意见。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：以日常数字活动引入基础设施，使用连贯说明、定语从句和would区分方案与既成事实；配中文释义。",
+  "category": "technology",
+  "topics": [
+    "数字生活",
+    "基础设施",
+    "公众参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "title": "Subsea cable saboteurs face jail and unlimited fines under new security crackdown",
+    "url": "https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown",
+    "publishedAt": "2026-10-22",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "© Crown copyright；Department for Digital, Culture, Media and Sport，原页面另列 The Rt Hon Ian Murray MP。原题、日期与链接见来源。含依 Open Government Licence v3.0 使用的公共部门信息；不代表原机构认可。",
+  "adaptation": "2026-10-27整理，依据2026-10-22机构英文叙述作同语言教学改写并配中文翻译；非当日原文。排除照片、直接引语和涉及特定国家活动的指控。首句为日常引入，末句为编辑阅读提示；题目与口语部分为教学补充。本文介绍提案，不是法律已生效的说明或法律建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A message to a friend may travel much farther than the distance between two phones suggests.",
+      "zh": "给朋友发的一条消息，其传输距离可能远远超过两部手机之间的距离。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "According to a British government announcement published on 22 October 2026, cables on the seabed carry around 99 per cent of the United Kingdom’s international data.",
+      "zh": "根据英国政府2026年10月22日发布的公告，海底电缆承载着英国约99%的国际数据。",
+      "glosses": [
+        {
+          "surface": "seabed",
+          "lemma": "seabed",
+          "zh": "海床；海底",
+          "note": "单数名词，on the seabed 表示在海底。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "These connections support a number of familiar activities, including video calls, online shopping and banking, even though users rarely see the equipment involved.",
+      "zh": "这些连接支持视频通话、网上购物和银行业务等日常活动，尽管用户很少看见相关设备。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "There is also an energy connection: undersea pipelines provide 74 per cent of the country’s gas supply, while other cables transport electricity.",
+      "zh": "海底也承担能源连接：海底管道提供该国74%的天然气供应，另一些电缆则输送电力。",
+      "glosses": [
+        {
+          "surface": "pipelines",
+          "lemma": "pipeline",
+          "zh": "管道",
+          "note": "复数，指输送天然气的管道。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The announcement presents proposals for protecting this infrastructure, rather than reporting that a new set of laws has already taken effect.",
+      "zh": "这份公告提出保护这些基础设施的方案，而不是宣布一套新法律已经生效。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "A White Paper sets out changes to older legislation and begins a consultation lasting twelve weeks.",
+      "zh": "一份白皮书阐述修改旧有法律的方案，并启动为期十二周的意见征询。",
+      "glosses": [
+        {
+          "surface": "consultation",
+          "lemma": "consultation",
+          "zh": "意见征询",
+          "note": "名词，指正式收集公众等各方意见的过程。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Industry representatives, experts and members of the public are invited to contribute their views before the final proposals are shaped.",
+      "zh": "在形成最终方案之前，行业代表、专家和公众受邀提出意见。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "One proposed change concerns the companies that provide undersea telecommunications cables: they would have stronger duties to identify and manage risks to their networks.",
+      "zh": "其中一项拟议变化涉及海底通信电缆供应商：它们识别和管理网络风险的义务将加强。",
+      "glosses": [
+        {
+          "surface": "duties",
+          "lemma": "duty",
+          "zh": "义务；职责",
+          "note": "复数；这里指企业需要承担的责任。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Another would give the government powers to direct providers when steps are needed to protect national security.",
+      "zh": "另一项将赋予政府权力，在需要采取措施保护国家安全时向供应商发出指令。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "The plans also include tougher penalties for people who damage important undersea infrastructure.",
+      "zh": "方案还包括对破坏重要海底基础设施者施加更严厉的处罚。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "However, damage does not necessarily mean that someone deliberately attacked a cable, and the announcement describes a range of other causes.",
+      "zh": "不过，损坏并不一定意味着有人故意攻击电缆，公告也介绍了其他多种原因。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Anchors or fishing nets dragged across the seabed can cause faults, as can environmental hazards and technical failures.",
+      "zh": "拖过海底的船锚或渔网可能引发故障，环境危险和技术失灵也可能造成故障。",
+      "glosses": [
+        {
+          "surface": "Anchors",
+          "lemma": "anchor",
+          "zh": "船锚",
+          "note": "句首复数名词，须保留大写。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "The source describes the existing British network as highly resilient, while arguing that protection needs to keep pace with changing threats.",
+      "zh": "原文称英国现有网络具有很强的韧性，同时主张保护措施需要跟上威胁的变化。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "For readers, the distinction between an existing connection, a reported risk and a proposed rule helps make a complex announcement easier to understand.",
+      "zh": "对读者来说，区分现有连接、报道中的风险和拟议规则，有助于理解复杂的公告。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "seabed",
+        "lemma": "seabed",
+        "zh": "海床；海底",
+        "note": "单数名词，on the seabed 表示在海底。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "pipelines",
+        "lemma": "pipeline",
+        "zh": "管道",
+        "note": "复数，指输送天然气的管道。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "consultation",
+        "lemma": "consultation",
+        "zh": "意见征询",
+        "note": "名词，指正式收集公众等各方意见的过程。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "duties",
+        "lemma": "duty",
+        "zh": "义务；职责",
+        "note": "复数；这里指企业需要承担的责任。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "Anchors",
+        "lemma": "anchor",
+        "zh": "船锚",
+        "note": "句首复数名词，须保留大写。",
+        "sentenceId": "s12"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "taken effect",
+        "zh": "生效",
+        "sentenceId": "s5",
+        "note": "take effect的过去分词形式，与has连用；本句否认法律已经生效。"
+      },
+      {
+        "text": "keep pace with",
+        "zh": "跟上……的变化",
+        "sentenceId": "s13",
+        "note": "表示以相应速度调整。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "does not necessarily mean表达“不一定意味着”，避免把某一结果直接归为单一原因。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which daily activity would you miss most if your internet connection stopped working?",
+        "zh": "如果网络连接中断，你最不习惯失去哪项日常活动？"
+      },
+      {
+        "text": "Why is it useful to distinguish a proposal from a rule already in force?",
+        "zh": "为什么区分提案与已生效规则很重要？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I depend on it for…",
+        "zh": "我靠它来……",
+        "note": "原创讨论句架，用于说明日常依赖。"
+      },
+      {
+        "text": "The proposal would…, but it has not yet…",
+        "zh": "这项提案将会……，但它尚未……",
+        "note": "原创讨论句架，注意不要把拟议变化当成现行安排。"
+      }
+    ]
+  }
+}

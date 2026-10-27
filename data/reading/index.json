@@ -2,6 +2,23 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-27-it-come-si-misura-il-benessere",
+      "lang": "it",
+      "date": "2026-10-27",
+      "title": "Come si misura il benessere?",
+      "titleZh": "如何衡量生活福祉？",
+      "summaryZh": "Istat新版Bes报告通过多领域指标观察生活状况：年度变化并不一致，南北差异也有例外。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "生活质量",
+        "社会差异"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-26",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-24-en-time-to-save-an-old-axe",
       "lang": "en",
       "date": "2026-10-24",
@@ -33,6 +50,24 @@
       ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2026-10-23",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-27-en-connections-beneath-the-sea",
+      "lang": "en",
+      "date": "2026-10-27",
+      "title": "The connections beneath the sea",
+      "titleZh": "海底的日常连接",
+      "summaryZh": "视频通话和网购依赖哪些看不见的连接？英国一份白皮书提出保护海底基础设施的方案，并向公众征询意见。",
+      "level": "B1",
+      "category": "technology",
+      "topics": [
+        "数字生活",
+        "基础设施",
+        "公众参与"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-22",
       "contentType": "native-adaptation"
     },
     {
@@ -486,6 +521,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-15",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-27-fr-opera-dijon",
+      "lang": "fr",
+      "date": "2026-10-27",
+      "title": "L’Opéra de Dijon et ses publics",
+      "titleZh": "第戎歌剧院与它的观众",
+      "summaryZh": "从2025年的活动数据出发，了解第戎歌剧院未来面向城乡居民、儿童和年轻人的计划。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "文化生活",
+        "艺术教育",
+        "城乡文化"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-14",
       "contentType": "native-adaptation"
     },
     {

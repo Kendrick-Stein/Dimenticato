@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "PASS",
+  "batch": "3 distinct native-language current sources: IT B1, EN B1, FR A2; 4 outbound listening resources",
+  "wordCounts": {
+    "en": 281,
+    "fr": 162,
+    "it": 305
+  },
+  "independentExerciseReview": {
+    "blindBeforeKey": true,
+    "comprehensionQuestions": 11,
+    "clozeQuestions": 15,
+    "allMatched": true,
+    "revisions": "Improved plausible IT/EN distractors; EN q4 classified cause. Final keys, evidence, Chinese explanations, answer spans and hashes verified."
+  },
+  "finalFileSha256": {
+    "data/reading/articles/2026-10-27-en-connections-beneath-the-sea.json": "5369307b6e5523c016369b3e4bb2c90bf9aece702001a307051be4f81fd77cec",
+    "data/reading/articles/2026-10-27-fr-opera-dijon.json": "4926d200bc144cd6a57cbc9c13a2ec3b9249c681c1561814c54287813818d641",
+    "data/reading/articles/2026-10-27-it-come-si-misura-il-benessere.json": "f002077056c6f6b7884c261ff890cea0849572c2d8c4c064ef1f7fdd8ce6a167",
+    "data/reading/comprehension/2026-10-27-en-connections-beneath-the-sea.json": "8a358c7d3b35b379e103a728285b753d406fc092c0debc88a58566a316c8ba9c",
+    "data/reading/comprehension/2026-10-27-fr-opera-dijon.json": "c568e925d782c22e495252237a49539d096e770385b1a4598bc7bbfed2066531",
+    "data/reading/comprehension/2026-10-27-it-come-si-misura-il-benessere.json": "4cc6134d5ad4c53ec6de0ccf78fe16dac2ea28901f3927e70138d80467c80671",
+    "data/reading/practice/2026-10-27-en-connections-beneath-the-sea.json": "0cc0c981e2a930704711c22bb800ae9e6a5ebf0da97acbaa4c39771422afdaf6",
+    "data/reading/practice/2026-10-27-fr-opera-dijon.json": "f6e18beea7b1db2fee2e6ba8d41427b71a40acc0aacf485fc4dffb10ec99c43a",
+    "data/reading/practice/2026-10-27-it-come-si-misura-il-benessere.json": "18fd13e6209d5d7626b686bfa5247ae8c77ff863062aefea6bf8253fa2b58aa8"
+  },
+  "sourceReview": [
+    {
+      "id": "2026-10-27-en-connections-beneath-the-sea",
+      "source": {
+        "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+        "title": "Subsea cable saboteurs face jail and unlimited fines under new security crackdown",
+        "url": "https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown",
+        "publishedAt": "2026-10-22",
+        "lang": "en"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "scope": "Institutional prose only; excluded quotations, logos, images, third-party works. Native-original provenance, facts, dates, Chinese and licence independently reviewed.",
+      "dateEvidence": "Original official page date verified.",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "limitation": "Canonical National Archives licence page returned403; stopped. Existing verified OGL reserve plus freshly read GOV.UK terms and source footer reused."
+    },
+    {
+      "id": "2026-10-27-fr-opera-dijon",
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "La ministre de la Culture, Catherine Pégard, annonce le renouvellement, pour une durée de cinq ans, du conventionnement de l’Opéra de Dijon au titre de « Théâtre lyrique d’intérêt national »",
+        "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/la-ministre-de-la-culture-catherine-pegard-annonce-le-renouvellement-pour-une-duree-de-cinq-ans-du-conventionnement-de-l-opera-de-dijon-au-titr",
+        "publishedAt": "2026-10-14",
+        "lang": "fr"
+      },
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+      },
+      "scope": "Institutional prose only; excluded quotations, logos, images, third-party works. Native-original provenance, facts, dates, Chinese and licence independently reviewed.",
+      "dateEvidence": "Official ministry press listing confirms Oct14.",
+      "licenseEvidence": "https://www.culture.gouv.fr/mentions-legales",
+      "limitation": null
+    },
+    {
+      "id": "2026-10-27-it-come-si-misura-il-benessere",
+      "source": {
+        "name": "Istat",
+        "title": "Rapporto sul Benessere equo e sostenibile – Edizione 2026",
+        "url": "https://www.istat.it/comunicato-stampa/nota-stampa-rapporto-bes-edizione-2026/",
+        "publishedAt": "2026-10-26",
+        "lang": "it"
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "scope": "Institutional prose only; excluded quotations, logos, images, third-party works. Native-original provenance, facts, dates, Chinese and licence independently reviewed.",
+      "dateEvidence": "Original official page date verified.",
+      "licenseEvidence": "https://www.istat.it/note-legali/",
+      "limitation": null
+    }
+  ],
+  "listeningReview": {
+    "addedLanguages": [
+      "it",
+      "fr",
+      "de",
+      "en"
+    ],
+    "questions": {
+      "it": 3,
+      "en": 3,
+      "fr": 0,
+      "de": 0
+    },
+    "officialTranscriptAnswers": {
+      "it": [
+        0,
+        1,
+        2
+      ],
+      "en": [
+        1,
+        2,
+        3
+      ]
+    },
+    "playbackTested": false,
+    "limits": "IT/EN official transcripts support original questions; FR evergreen A1 and DE Oct26 native-child news are resource-only. No copied media, full transcripts or source exercises."
+  },
+  "shortfalls": "Other nine reading tier slots omitted; no qualified new German reading in checked sources. Four-language weekly reserve incomplete; discovery is not clearance."
+}
