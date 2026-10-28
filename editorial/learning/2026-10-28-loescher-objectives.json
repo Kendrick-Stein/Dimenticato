@@ -1,0 +1,4286 @@
+{
+  "status": "AUDIT_COMPLETE_COVERAGE_PARTIAL_NO_CONTENT_EDITS",
+  "scope": "仅Loescher语法汇编35个教学section的事实目标覆盖核查；不修改正文。",
+  "source": {
+    "path": "inputs/ocr/意大利语/Loescher Archivio Grammatica（语法汇编）.md",
+    "sha256": "5c942213dc7006da37648ad895ef7ec824754741e65670d90452fd905d71bd94"
+  },
+  "comparison_target": {
+    "path": "dimenticato-ocr-integration/data/it-grammar.js",
+    "sha256": "891c5c5d664e8c870dc29caca8c854c20ae267362f7390bfbc5b914d3802a28e",
+    "content_topics": 128
+  },
+  "sections": [
+    {
+      "section_id": "it-10-s001",
+      "topic_identified_from_body": "定冠词、不定冠词：意义、性数和起首音",
+      "ledger_heading": "Gli articoli",
+      "pdf_pages": [
+        1,
+        2
+      ],
+      "source_line_range": [
+        9,
+        190
+      ],
+      "teaching_passages_read": [
+        [
+          1,
+          12,
+          97
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "已知、可识别、类别与首次/不定引入的区别",
+          "source_lines": [
+            [
+              12,
+              97
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch02/t01",
+              "evidence_summary": "说明确指、双方可识别和类指；不依赖标题。",
+              "body_sha256": "3dba304b4ee87ba1c763f6a4040722c891e843531ca9a7940366b20805a58d7c"
+            },
+            {
+              "slug": "p1/ch02/t02",
+              "evidence_summary": "说明不确指的名词短语。",
+              "body_sha256": "cd5a5b7412232c754c1131fe40b31168d8b8c1b08d97ed4fe2cb644d10adaaa0"
+            }
+          ],
+          "objective_id": "it-10-s001-o01",
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "fact_objective": "冠词与名词性数一致；lo/gli/uno的特殊起首音；阳性un与阴性un’",
+          "source_lines": [
+            [
+              12,
+              97
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch02/t01",
+              "evidence_summary": "列il/i、l’/gli、lo/gli及la/l’/le的音形条件。",
+              "body_sha256": "3dba304b4ee87ba1c763f6a4040722c891e843531ca9a7940366b20805a58d7c"
+            },
+            {
+              "slug": "p1/ch02/t02",
+              "evidence_summary": "列un/uno与una/un’；原创现在时补充也明确阳性元音前不用撇号。",
+              "body_sha256": "cd5a5b7412232c754c1131fe40b31168d8b8c1b08d97ed4fe2cb644d10adaaa0"
+            }
+          ],
+          "objective_id": "it-10-s001-o02",
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "fact_objective": "时间名词加定冠词可表示习惯性重复；特定语境也可指当前时段",
+          "source_lines": [
+            [
+              12,
+              97
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch02/t01",
+              "evidence_summary": "有早晚时段与钟点用法。",
+              "body_sha256": "3dba304b4ee87ba1c763f6a4040722c891e843531ca9a7940366b20805a58d7c"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "习惯与单次日期/星期指称的对比未明确展开；不能把列出时间例子视为该区别已完全讲清。",
+          "objective_id": "it-10-s001-o03",
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_cautions": [
+        "表格列被OCR展平；常规lo起首音清单并非所有借词发音的穷尽规则。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          2
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s002",
+      "topic_identified_from_body": "部分冠词：物质量与复数子集",
+      "ledger_heading": "Gli articoli partitivi",
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "source_line_range": [
+        191,
+        335
+      ],
+      "teaching_passages_read": [
+        [
+          3,
+          194,
+          258
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "部分冠词由di与定冠词的形式组成并随名词匹配",
+          "source_lines": [
+            [
+              194,
+              258
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch02/t03",
+              "evidence_summary": "实际正文列del/dello/dell’/della/dei/degli/delle。",
+              "body_sha256": "76e189e7599d561d9022956deb490b315a148ddfeedf45e0680e54130d7a9949"
+            }
+          ],
+          "objective_id": "it-10-s002-o01",
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "fact_objective": "单数表示未定物质量；复数可表示未定的可数成员",
+          "source_lines": [
+            [
+              194,
+              258
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch02/t03",
+              "evidence_summary": "形式和若干用法存在，但开头将复数也解释为不可数事物。",
+              "body_sha256": "76e189e7599d561d9022956deb490b315a148ddfeedf45e0680e54130d7a9949"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "复数可数子集定义未通过；需避免将可数复数全部解释成不可数。",
+          "objective_id": "it-10-s002-o02",
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "fact_objective": "dei/degli/delle可承担不定冠词的复数功能；出现或省略受句法与语境影响",
+          "source_lines": [
+            [
+              194,
+              258
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch02/t02",
+              "evidence_summary": "列出功能上的复数对应。",
+              "body_sha256": "cd5a5b7412232c754c1131fe40b31168d8b8c1b08d97ed4fe2cb644d10adaaa0"
+            },
+            {
+              "slug": "p1/ch02/t02",
+              "evidence_summary": "把使用条件压缩为很强调“一些”。",
+              "body_sha256": "cd5a5b7412232c754c1131fe40b31168d8b8c1b08d97ed4fe2cb644d10adaaa0"
+            },
+            {
+              "slug": "p1/ch02/t03",
+              "evidence_summary": "同样给出过强的强调限制。",
+              "body_sha256": "76e189e7599d561d9022956deb490b315a148ddfeedf45e0680e54130d7a9949"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "应区别词类名称与功能；不能把部分冠词限于强调，也不能把介词+部分冠词一律排除。",
+          "objective_id": "it-10-s002-o03",
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_cautions": [],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          4
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s003",
+      "topic_identified_from_body": "人名、姓氏、地名的冠词及语域",
+      "ledger_heading": "Gli articoli determinativi. Usi particolari",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "source_line_range": [
+        336,
+        491
+      ],
+      "teaching_passages_read": [
+        [
+          5,
+          339,
+          404
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "普通人名通常不带冠词；地区口语、历史姓氏、头衔和全名需看语域",
+          "source_lines": [
+            [
+              339,
+              404
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch02/t01",
+              "evidence_summary": "讲历史文化人物单姓及作品转指。",
+              "body_sha256": "3dba304b4ee87ba1c763f6a4040722c891e843531ca9a7940366b20805a58d7c"
+            },
+            {
+              "slug": "p1/ch02/t01",
+              "evidence_summary": "有普通姓名与全名规则，却把女性名字前冠词解释为区分男女。",
+              "body_sha256": "3dba304b4ee87ba1c763f6a4040722c891e843531ca9a7940366b20805a58d7c"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "地域/语域说明不足；不应按性别规定女性姓氏必须加冠词。",
+          "objective_id": "it-10-s003-o01",
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "fact_objective": "复数姓氏可表示一家人",
+          "source_lines": [
+            [
+              339,
+              404
+            ]
+          ],
+          "status": "missing-objective",
+          "existing_evidence": [],
+          "remaining_gap_or_misleading_text": "未找到把复数姓氏识别为家庭群体的明确说明；后续是否补充由协调者决定。",
+          "objective_id": "it-10-s003-o02",
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "fact_objective": "国家地区洲、山河海等常带冠词；in+地理名与普通城市名有省略规律",
+          "source_lines": [
+            [
+              339,
+              404
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch02/t01",
+              "evidence_summary": "列主要地理名称冠词场景。",
+              "body_sha256": "3dba304b4ee87ba1c763f6a4040722c891e843531ca9a7940366b20805a58d7c"
+            },
+            {
+              "slug": "p1/ch02/t01",
+              "evidence_summary": "城市名通常无冠词，受限定时用冠词。",
+              "body_sha256": "3dba304b4ee87ba1c763f6a4040722c891e843531ca9a7940366b20805a58d7c"
+            },
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "明确in后地理名和无修饰地点常无冠词。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            }
+          ],
+          "objective_id": "it-10-s003-o03",
+          "source_pages": [
+            5
+          ]
+        }
+      ],
+      "source_cautions": [
+        "来源按女性姓氏规定冠词的说法过时，不作为目标迁移。",
+        "地域人名冠词不能解释为纯粹性别辨识；家族/历史姓氏规则也需注明语域。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          6
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s004",
+      "topic_identified_from_body": "名词的常用分类",
+      "ledger_heading": "Il nome",
+      "pdf_pages": [
+        7,
+        8
+      ],
+      "source_line_range": [
+        492,
+        618
+      ],
+      "teaching_passages_read": [
+        [
+          7,
+          495,
+          534
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "普通名词与专有名词；专名通常大写",
+          "source_lines": [
+            [
+              495,
+              534
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p2/ch01/t01",
+              "evidence_summary": "仅分别举普通名词/专名作主语，未解释分类及大小写。",
+              "body_sha256": "25512d26c0104ed9e6ac32a069d847f652f0ae78b53947bab4606516aa20ec39"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "分类定义与大小写规则缺少明确教学；性数页标题不能替代。",
+          "objective_id": "it-10-s004-o01",
+          "source_pages": [
+            7
+          ]
+        },
+        {
+          "fact_objective": "具体名词与抽象名词的概念区别",
+          "source_lines": [
+            [
+              495,
+              534
+            ]
+          ],
+          "status": "missing-objective",
+          "existing_evidence": [],
+          "remaining_gap_or_misleading_text": "相关正文及全体128个content键检索未找到解释。",
+          "objective_id": "it-10-s004-o02",
+          "source_pages": [
+            7
+          ]
+        },
+        {
+          "fact_objective": "个体名词与集合名词；集合意义不自动使语法形式为复数",
+          "source_lines": [
+            [
+              495,
+              534
+            ]
+          ],
+          "status": "missing-objective",
+          "existing_evidence": [],
+          "remaining_gap_or_misleading_text": "集合数词页不是集合名词分类课；未找到此语义/语法数区别。",
+          "objective_id": "it-10-s004-o03",
+          "source_pages": [
+            7
+          ]
+        }
+      ],
+      "source_cautions": [
+        "具体/抽象的感官判别是入门近似，不宜当作绝对分类算法。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          8
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s005",
+      "topic_identified_from_body": "名词语法性与词尾线索",
+      "ledger_heading": "Il genere del nome",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "source_line_range": [
+        619,
+        767
+      ],
+      "teaching_passages_read": [
+        [
+          9,
+          622,
+          701
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "名词语法性制约冠词和形容词；词尾仅提供线索",
+          "source_lines": [
+            [
+              622,
+              701
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t01",
+              "evidence_summary": "实际列o/a/e/i/ù及一些例外。",
+              "body_sha256": "97ade21e993233a044c95928660ab639a1789275e0d6821064776058462c05d0"
+            },
+            {
+              "slug": "p1/ch03/t01",
+              "evidence_summary": "解释名词与形容词的基本配合。",
+              "body_sha256": "b88ab34f239691b398692356171cbf6157428bee916d319e97e79556df3050ee"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "autista被早段列为阳性例外，与其共性用法不符；-ù一律阴性的表述漏caucciù等例外。",
+          "objective_id": "it-10-s005-o01",
+          "source_pages": [
+            9
+          ]
+        },
+        {
+          "fact_objective": "不能只从自然性别或字母结尾推断每个名词的语法性",
+          "source_lines": [
+            [
+              622,
+              701
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t01",
+              "evidence_summary": "男女词形、共性和固定性动物名后段已出现。",
+              "body_sha256": "97ade21e993233a044c95928660ab639a1789275e0d6821064776058462c05d0"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "后段正确分类未消除前段错误绝对规则，整体目标尚未通过。",
+          "objective_id": "it-10-s005-o02",
+          "source_pages": [
+            9
+          ]
+        }
+      ],
+      "source_cautions": [],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          10
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s006",
+      "topic_identified_from_body": "人物/动物名词的阴阳形式",
+      "ledger_heading": "Il genere del nome: dal maschile al femminile",
+      "pdf_pages": [
+        11,
+        12
+      ],
+      "source_line_range": [
+        768,
+        961
+      ],
+      "teaching_passages_read": [
+        [
+          11,
+          771,
+          871
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "可变化词尾与异根男女词；同一词形可由限定词显示性别",
+          "source_lines": [
+            [
+              771,
+              871
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t01",
+              "evidence_summary": "实际列-o/-a、-essa、-tore/-trice、不规则异根与共性词。",
+              "body_sha256": "97ade21e993233a044c95928660ab639a1789275e0d6821064776058462c05d0"
+            }
+          ],
+          "objective_id": "it-10-s006-o01",
+          "source_pages": [
+            11
+          ]
+        },
+        {
+          "fact_objective": "固定语法性的动物名可用maschio/femmina补充自然性别",
+          "source_lines": [
+            [
+              771,
+              871
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t01",
+              "evidence_summary": "明确动物名语法性固定而自然性别另行表达。",
+              "body_sha256": "97ade21e993233a044c95928660ab639a1789275e0d6821064776058462c05d0"
+            }
+          ],
+          "objective_id": "it-10-s006-o02",
+          "source_pages": [
+            11
+          ]
+        },
+        {
+          "fact_objective": "形式相似的阴阳名词可能是不同词义，不是同一词的性变化",
+          "source_lines": [
+            [
+              771,
+              871
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t01",
+              "evidence_summary": "有性变化与异根，但未明确排除形似而不同义的名词对。",
+              "body_sha256": "97ade21e993233a044c95928660ab639a1789275e0d6821064776058462c05d0"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "未找到清晰的词义不同/屈折变化辨析；教材练习中的具体名词对全部排除。",
+          "objective_id": "it-10-s006-o03",
+          "source_pages": [
+            11
+          ]
+        }
+      ],
+      "source_cautions": [
+        "“所有人/动物名都有两性”只是粗略引入，与同页固定性类别冲突。",
+        "职业阴性词形需按当代用法处理，不能把旧式-essa示例当唯一推荐。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          12
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s007",
+      "topic_identified_from_body": "复数形态与拼写",
+      "ledger_heading": "Il numero del nome",
+      "pdf_pages": [
+        13,
+        14
+      ],
+      "source_line_range": [
+        962,
+        1140
+      ],
+      "teaching_passages_read": [
+        [
+          13,
+          965,
+          1044
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "基本-a/-o/-e复数；重读元音等不变类；不规则和变性复数",
+          "source_lines": [
+            [
+              965,
+              1044
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t02",
+              "evidence_summary": "普通词尾规则。",
+              "body_sha256": "093a0b3558c568a5706773834fbe32451cff72716beb90babd3c29d984c60ab3"
+            },
+            {
+              "slug": "p1/ch01/t02",
+              "evidence_summary": "列不变类、不规则、性变化及双复数义项。",
+              "body_sha256": "093a0b3558c568a5706773834fbe32451cff72716beb90babd3c29d984c60ab3"
+            }
+          ],
+          "objective_id": "it-10-s007-o01",
+          "source_pages": [
+            13
+          ]
+        },
+        {
+          "fact_objective": "-ca/-ga保硬音；-co/-go需按词形、重音倾向及例外掌握",
+          "source_lines": [
+            [
+              965,
+              1044
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t02",
+              "evidence_summary": "有保h与查词典提醒，但以紧邻元音/辅音作主要分流。",
+              "body_sha256": "093a0b3558c568a5706773834fbe32451cff72716beb90babd3c29d984c60ab3"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "旧规则容易产生错误复数；不能把局部字母条件当充分规则。",
+          "objective_id": "it-10-s007-o02",
+          "source_pages": [
+            13
+          ]
+        },
+        {
+          "fact_objective": "-cia/-gia非重读i的保留看前一字母；重读i保留；-io另按重音处理",
+          "source_lines": [
+            [
+              965,
+              1044
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t02",
+              "evidence_summary": "把-io和-ia合并为非重读i一律删除。",
+              "body_sha256": "093a0b3558c568a5706773834fbe32451cff72716beb90babd3c29d984c60ab3"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "该合并会误导camicia/camicie、valigia/valigie等；应把-cia/-gia与一般-ia/-io分开。",
+          "objective_id": "it-10-s007-o03",
+          "source_pages": [
+            13
+          ]
+        },
+        {
+          "fact_objective": "-logo类人名/事物名有常见复数倾向，须留例外",
+          "source_lines": [
+            [
+              965,
+              1044
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t02",
+              "evidence_summary": "archeologo仅作例词，无该语义倾向说明。",
+              "body_sha256": "093a0b3558c568a5706773834fbe32451cff72716beb90babd3c29d984c60ab3"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "该细分未讲明；不要求照搬源词表。",
+          "objective_id": "it-10-s007-o04",
+          "source_pages": [
+            13
+          ]
+        }
+      ],
+      "source_cautions": [],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          14
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s008",
+      "topic_identified_from_body": "词根、屈折结尾与派生",
+      "ledger_heading": "La struttura del nome",
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "source_line_range": [
+        1141,
+        1250
+      ],
+      "teaching_passages_read": [
+        [
+          15,
+          1144,
+          1187
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "词根承载词汇意义；屈折结尾与性数相关，不能由结尾单独机械定性",
+          "source_lines": [
+            [
+              1144,
+              1187
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch01/t01",
+              "evidence_summary": "偶然使用“词根”术语。",
+              "body_sha256": "97ade21e993233a044c95928660ab639a1789275e0d6821064776058462c05d0"
+            },
+            {
+              "slug": "p1/ch01/t02",
+              "evidence_summary": "实践讲词尾变化，未明确词根/屈折概念区别。",
+              "body_sha256": "093a0b3558c568a5706773834fbe32451cff72716beb90babd3c29d984c60ab3"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "没有完整的入门构词说明。",
+          "objective_id": "it-10-s008-o01",
+          "source_pages": [
+            15
+          ]
+        },
+        {
+          "fact_objective": "前缀在词根前、后缀在词根后；派生形成新词义而非只改性数",
+          "source_lines": [
+            [
+              1144,
+              1187
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch09/t02",
+              "evidence_summary": "只在最高级中使用前后缀。",
+              "body_sha256": "3a6188f3ca997277471a3e7474d6b147c1cecf990714d6f267b72ce7bdf6bde4"
+            },
+            {
+              "slug": "p1/ch04/t04",
+              "evidence_summary": "只讲集合数词特定后缀。",
+              "body_sha256": "98de894d26e429b1d5f36d645e45805bf949fac406177ae3f21e143f3cdd820f"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "不能把局部词缀用法算作一般派生/屈折区别已覆盖。",
+          "objective_id": "it-10-s008-o02",
+          "source_pages": [
+            15
+          ]
+        }
+      ],
+      "source_cautions": [
+        "来源“其余所有名词都从原始名词形成”过度概括，不迁移。",
+        "1185附近缺系词，属OCR/原排版可疑点。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          16
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s009",
+      "topic_identified_from_body": "品质形容词与配合",
+      "ledger_heading": "Gli aggettivi qualificativi",
+      "pdf_pages": [
+        17,
+        18
+      ],
+      "source_line_range": [
+        1251,
+        1434
+      ],
+      "teaching_passages_read": [
+        [
+          17,
+          1254,
+          1364
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "形容词说明性质或限定名词；常规-o四形与-e两形",
+          "source_lines": [
+            [
+              1254,
+              1364
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch03/t01",
+              "evidence_summary": "实际讲两类性数词尾。",
+              "body_sha256": "b88ab34f239691b398692356171cbf6157428bee916d319e97e79556df3050ee"
+            },
+            {
+              "slug": "p1/ch03/t02",
+              "evidence_summary": "区分描写与限定功能。",
+              "body_sha256": "87a9187ee662233acf64bf6b367b0a0f85481e09ba3cecc539fccf41b1c7c9ce"
+            }
+          ],
+          "objective_id": "it-10-s009-o01",
+          "source_pages": [
+            17
+          ]
+        },
+        {
+          "fact_objective": "-ista形容词单数共形而复数分-isti/-iste；不变类须单列",
+          "source_lines": [
+            [
+              1254,
+              1364
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch03/t01",
+              "evidence_summary": "把非-o/-e形容词概括成任何情况均不变。",
+              "body_sha256": "b88ab34f239691b398692356171cbf6157428bee916d319e97e79556df3050ee"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "缺-ista变化；原绝对表述错误。",
+          "objective_id": "it-10-s009-o02",
+          "source_pages": [
+            17
+          ]
+        },
+        {
+          "fact_objective": "一个形容词修饰并列名词时通常用复数；混合语法性常取阳性复数",
+          "source_lines": [
+            [
+              1254,
+              1364
+            ]
+          ],
+          "status": "missing-objective",
+          "existing_evidence": [],
+          "remaining_gap_or_misleading_text": "相关性数/位置/定语正文和全内容检索未找到明确规则。",
+          "objective_id": "it-10-s009-o03",
+          "source_pages": [
+            17
+          ]
+        }
+      ],
+      "source_cautions": [],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          18
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s010",
+      "topic_identified_from_body": "形容词比较级与最高级",
+      "ledger_heading": "I gradi dell’aggettivo",
+      "pdf_pages": [
+        19,
+        20
+      ],
+      "source_line_range": [
+        1435,
+        1629
+      ],
+      "teaching_passages_read": [
+        [
+          19,
+          1438,
+          1511
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "较高/较低/同等比较；di与che按比较成分选用",
+          "source_lines": [
+            [
+              1438,
+              1511
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch09/t02",
+              "evidence_summary": "正文逐类区分不同指称对象、性质、不定式和同等比较。",
+              "body_sha256": "3a6188f3ca997277471a3e7474d6b147c1cecf990714d6f267b72ce7bdf6bde4"
+            }
+          ],
+          "objective_id": "it-10-s010-o01",
+          "source_pages": [
+            19
+          ]
+        },
+        {
+          "fact_objective": "相对最高级限于某集合；绝对程度可由-issimo或程度副词表达",
+          "source_lines": [
+            [
+              1438,
+              1511
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch09/t02",
+              "evidence_summary": "明确相对/绝对及主要构成方法。",
+              "body_sha256": "3a6188f3ca997277471a3e7474d6b147c1cecf990714d6f267b72ce7bdf6bde4"
+            }
+          ],
+          "objective_id": "it-10-s010-o02",
+          "source_pages": [
+            19
+          ]
+        }
+      ],
+      "source_cautions": [
+        "正文旁支旧问题仅报告：p1/ch09/t02第89行否认bene/male最高级，却第166行列benissimo/malissimo，内部矛盾；不把它误算为来源未覆盖的新标题。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          20
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s011",
+      "topic_identified_from_body": "代词概念、主语代词与直接宾语代词（两页教学）",
+      "ledger_heading": "Una frase come:",
+      "pdf_pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "source_line_range": [
+        1630,
+        1920
+      ],
+      "teaching_passages_read": [
+        [
+          21,
+          1633,
+          1695
+        ],
+        [
+          23,
+          1787,
+          1848
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "代词可回指名词以外的词组或命题",
+          "source_lines": [
+            [
+              1633,
+              1695
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t03",
+              "evidence_summary": "只明确回指直接宾语名词。",
+              "body_sha256": "b1a81633c8547a79cad0834f667ce5a4a5051d895291ce67aea7032164d3e961"
+            },
+            {
+              "slug": "p1/ch09/t01",
+              "evidence_summary": "有整句回指，但把il che分类作指示代词，不能当准确概念教学。",
+              "body_sha256": "5d249d79043b3406cdebacce7019edfc9835db34dfb8c860337f4710f4aa2272"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "广义回指功能未系统说明；需避免简单“只替名词”。",
+          "objective_id": "it-10-s011-o01",
+          "source_pages": [
+            21
+          ]
+        },
+        {
+          "fact_objective": "主语人称形式、主语省略及lui/lei/loro与旧书面形式的语域",
+          "source_lines": [
+            [
+              1633,
+              1695
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t01",
+              "evidence_summary": "列人称、主语省略/强调/歧义及egli/ella少用。",
+              "body_sha256": "29399cd0dafba013681f060db404d85f076c9f3f64f329a3797478805bc9df21"
+            }
+          ],
+          "objective_id": "it-10-s011-o02",
+          "source_pages": [
+            21
+          ]
+        },
+        {
+          "fact_objective": "直接弱代词形式与强代词对比；普通有限动词前置、非限定形式后附",
+          "source_lines": [
+            [
+              1787,
+              1848
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t03",
+              "evidence_summary": "形式和位置实际齐全。",
+              "body_sha256": "b1a81633c8547a79cad0834f667ce5a4a5051d895291ce67aea7032164d3e961"
+            },
+            {
+              "slug": "p1/ch06/t02",
+              "evidence_summary": "解释强读对比。",
+              "body_sha256": "3cf3f06821d53c5e24610648221a67972dbae541fba808deba4a7e5d777b0987"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "同页把lo/la/li/le+avere前ce说成必须且仅为发音，未限于相关词汇用法；另将lo si结构判错，误导正确形式判断。",
+          "objective_id": "it-10-s011-o03",
+          "source_pages": [
+            23
+          ]
+        },
+        {
+          "fact_objective": "lo/la在avere前可省音；复合时态直接宾语的分词配合",
+          "source_lines": [
+            [
+              1787,
+              1848
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t03",
+              "evidence_summary": "实际展示并解释复合时态lo/la/li/le配合。",
+              "body_sha256": "b1a81633c8547a79cad0834f667ce5a4a5051d895291ce67aea7032164d3e961"
+            },
+            {
+              "slug": "p1/ch11/t02",
+              "evidence_summary": "另有性数配合与mi/ti/ci/vi可选说明。",
+              "body_sha256": "a664f1087993f1df1062849f7d1375322903f42723fd4ff7f332861d7012fa31"
+            }
+          ],
+          "objective_id": "it-10-s011-o04",
+          "source_pages": [
+            23
+          ]
+        }
+      ],
+      "source_cautions": [
+        "通用OCR标题隐藏两页不同目标；源表格人称序数局部缺字。",
+        "来源把所有命令式都后附代词过强；本站对应页已区分Lei前置，不能搬回简化规则。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          22,
+          24
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s012",
+      "topic_identified_from_body": "间接弱代词、强代词与sé",
+      "ledger_heading": "I pronomi personali complemento indiretto",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "source_line_range": [
+        1921,
+        2068
+      ],
+      "teaching_passages_read": [
+        [
+          25,
+          1924,
+          1988
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "a引导的间接宾语弱形式；第三人称单数gli/le与复数gli/loro",
+          "source_lines": [
+            [
+              1924,
+              1988
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t05",
+              "evidence_summary": "补写段明确现代复数gli及书面loro。",
+              "body_sha256": "c15bc9ed2c469e921147a11998ee0b61fcec061fd0ba9a9b4bf632893a6da6a6"
+            }
+          ],
+          "objective_id": "it-10-s012-o01",
+          "source_pages": [
+            25
+          ]
+        },
+        {
+          "fact_objective": "强形式与介词组合；sé通常回指第三人称主语",
+          "source_lines": [
+            [
+              1924,
+              1988
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t02",
+              "evidence_summary": "强读形式及介词功能。",
+              "body_sha256": "3cf3f06821d53c5e24610648221a67972dbae541fba808deba4a7e5d777b0987"
+            },
+            {
+              "slug": "p1/ch06/t02",
+              "evidence_summary": "专段解释sé与主语回指。",
+              "body_sha256": "3cf3f06821d53c5e24610648221a67972dbae541fba808deba4a7e5d777b0987"
+            }
+          ],
+          "objective_id": "it-10-s012-o02",
+          "source_pages": [
+            25
+          ]
+        },
+        {
+          "fact_objective": "弱代词位置、后附及礼貌命令式例外",
+          "source_lines": [
+            [
+              1924,
+              1988
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t05",
+              "evidence_summary": "有限动词前，不定式/副动词后附，Lei前置。",
+              "body_sha256": "c15bc9ed2c469e921147a11998ee0b61fcec061fd0ba9a9b4bf632893a6da6a6"
+            }
+          ],
+          "objective_id": "it-10-s012-o03",
+          "source_pages": [
+            25
+          ]
+        },
+        {
+          "fact_objective": "ne可回指di/da引出的内容",
+          "source_lines": [
+            [
+              1924,
+              1988
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t01",
+              "evidence_summary": "新补充仅提醒有di回指。",
+              "body_sha256": "edc284b816b30b3a0bf4f366f056da2ecb6cbf4f8ca141e37534d86a426e18f3"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "缺可操作的di/da区别与非数量ne解释；详见s013。",
+          "objective_id": "it-10-s012-o04",
+          "source_pages": [
+            25
+          ]
+        }
+      ],
+      "source_cautions": [
+        "来源1955“弱形式只表与格”与自身ne行不一致；只保留限定后的与格规则。",
+        "正文旁支矛盾：p1/ch06/t02承认A me mi式口语，p1/ch06/t05又绝对禁用；仅报告，不扩修。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          26
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s013",
+      "topic_identified_from_body": "ci/ne的多功能与部分数量",
+      "ledger_heading": "Ci e Ne",
+      "pdf_pages": [
+        27,
+        28
+      ],
+      "source_line_range": [
+        2069,
+        2218
+      ],
+      "teaching_passages_read": [
+        [
+          27,
+          2072,
+          2138
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "ci既可作我们/给我们，也可回指地点与动词支配内容；c’è/ci sono",
+          "source_lines": [
+            [
+              2072,
+              2138
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t03",
+              "evidence_summary": "直接宾语ci。",
+              "body_sha256": "b1a81633c8547a79cad0834f667ce5a4a5051d895291ce67aea7032164d3e961"
+            },
+            {
+              "slug": "p1/ch06/t05",
+              "evidence_summary": "间接ci。",
+              "body_sha256": "c15bc9ed2c469e921147a11998ee0b61fcec061fd0ba9a9b4bf632893a6da6a6"
+            },
+            {
+              "slug": "p1/ch07/t01",
+              "evidence_summary": "地点/支配介词内容。",
+              "body_sha256": "edc284b816b30b3a0bf4f366f056da2ecb6cbf4f8ca141e37534d86a426e18f3"
+            },
+            {
+              "slug": "p1/ch07/t01",
+              "evidence_summary": "存在句单复数。",
+              "body_sha256": "edc284b816b30b3a0bf4f366f056da2ecb6cbf4f8ca141e37534d86a426e18f3"
+            }
+          ],
+          "objective_id": "it-10-s013-o01",
+          "source_pages": [
+            27
+          ]
+        },
+        {
+          "fact_objective": "部分数量ne与指称整体的lo/la/li/le区别",
+          "source_lines": [
+            [
+              2072,
+              2138
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t03",
+              "evidence_summary": "全部与部分的对比。",
+              "body_sha256": "b1a81633c8547a79cad0834f667ce5a4a5051d895291ce67aea7032164d3e961"
+            },
+            {
+              "slug": "p1/ch07/t01",
+              "evidence_summary": "原创数量ne保留数量信息并提醒其他义项。",
+              "body_sha256": "edc284b816b30b3a0bf4f366f056da2ecb6cbf4f8ca141e37534d86a426e18f3"
+            }
+          ],
+          "objective_id": "it-10-s013-o02",
+          "source_pages": [
+            27
+          ]
+        },
+        {
+          "fact_objective": "非数量ne回指di/da支配内容；代词组合不能一概删除ci",
+          "source_lines": [
+            [
+              2072,
+              2138
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t01",
+              "evidence_summary": "旧文称ci遇lo/la/li/le/ne通常不用ci。",
+              "body_sha256": "edc284b816b30b3a0bf4f366f056da2ecb6cbf4f8ca141e37534d86a426e18f3"
+            },
+            {
+              "slug": "p1/ch07/t01",
+              "evidence_summary": "只简略提醒di回指。",
+              "body_sha256": "edc284b816b30b3a0bf4f366f056da2ecb6cbf4f8ca141e37534d86a426e18f3"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "di/da功能说明不足；ci与第三人称宾语/数量ne可组合，旧删除规则会误导。",
+          "objective_id": "it-10-s013-o03",
+          "source_pages": [
+            27
+          ]
+        }
+      ],
+      "source_cautions": [
+        "源ci列“di questo”过宽，应按动词义项判断，不能推出所有di补语都用ci。",
+        "源“ne必须给数量”只可作当前部分数量对比的提示，不适用于所有ne。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          28
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s014",
+      "topic_identified_from_body": "组合代词的顺序与拼写",
+      "ledger_heading": "I pronomi combinati",
+      "pdf_pages": [
+        29,
+        30
+      ],
+      "source_line_range": [
+        2219,
+        2359
+      ],
+      "teaching_passages_read": [
+        [
+          29,
+          2222,
+          2288
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "间接弱代词在直接代词前；mi/ti/ci/vi变me/te/ce/ve",
+          "source_lines": [
+            [
+              2222,
+              2288
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t04",
+              "evidence_summary": "定义组合与顺序、词形变化。",
+              "body_sha256": "3e2e6588500abfc737b63bb5b7ffe67ceec7ec4da2e161ce8eda8cac32fe8e18"
+            }
+          ],
+          "objective_id": "it-10-s014-o01",
+          "source_pages": [
+            29
+          ]
+        },
+        {
+          "fact_objective": "gli/le/复数gli加lo/la/li/le/ne形成glie-连写；后附时整体连动词",
+          "source_lines": [
+            [
+              2222,
+              2288
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch06/t04",
+              "evidence_summary": "有glie-及后附整体连写；位置链接直接/间接代词实质规则。",
+              "body_sha256": "3e2e6588500abfc737b63bb5b7ffe67ceec7ec4da2e161ce8eda8cac32fe8e18"
+            },
+            {
+              "slug": "p1/ch12/t01",
+              "evidence_summary": "明确命令式尊称例外。",
+              "body_sha256": "aeabbcc946fecdebb2345e6d9d542ab482ab758197514e294d9f432d40dcb624"
+            }
+          ],
+          "objective_id": "it-10-s014-o02",
+          "source_pages": [
+            29
+          ]
+        }
+      ],
+      "source_cautions": [
+        "不复制源组合表布局或练习；只保留构词事实。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          30
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s015",
+      "topic_identified_from_body": "关系代词che/cui/il quale",
+      "ledger_heading": "I pronomi relativi",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "source_line_range": [
+        2360,
+        2483
+      ],
+      "teaching_passages_read": [
+        [
+          31,
+          2363,
+          2409
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "连接先行项和关系从句；che不变、可作主语/直接宾语",
+          "source_lines": [
+            [
+              2363,
+              2409
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch09/t01",
+              "evidence_summary": "实际定义及che两种句法角色。",
+              "body_sha256": "5d249d79043b3406cdebacce7019edfc9835db34dfb8c860337f4710f4aa2272"
+            }
+          ],
+          "objective_id": "it-10-s015-o01",
+          "source_pages": [
+            31
+          ]
+        },
+        {
+          "fact_objective": "介词+cui与随先行词配合的il quale系列",
+          "source_lines": [
+            [
+              2363,
+              2409
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch09/t01",
+              "evidence_summary": "有介词+cui、ilquale配合及功能区别。",
+              "body_sha256": "5d249d79043b3406cdebacce7019edfc9835db34dfb8c860337f4710f4aa2272"
+            }
+          ],
+          "objective_id": "it-10-s015-o02",
+          "source_pages": [
+            31
+          ]
+        }
+      ],
+      "source_cautions": [
+        "源“任何che均可换il quale”不可靠，尤其普通直接宾语环境；本站“绝不能作直接宾语”也过绝对，宜注明现代普通用法及受限书面用法，暂只报告。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          32
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s016",
+      "topic_identified_from_body": "物主形式及亲属名词冠词",
+      "ledger_heading": "Gli aggettivi e i pronomi possessivi",
+      "pdf_pages": [
+        33,
+        34
+      ],
+      "source_line_range": [
+        2484,
+        2660
+      ],
+      "teaching_passages_read": [
+        [
+          33,
+          2487,
+          2575
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "物主词按拥有者选人称、按被拥有名词选性数；loro不变",
+          "source_lines": [
+            [
+              2487,
+              2575
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t03",
+              "evidence_summary": "六人称性数表中loro四格一致。",
+              "body_sha256": "773d9c4b7d57bf2c505632848cb15f83737ed702011197d166ff3e6074c1834d"
+            }
+          ],
+          "objective_id": "it-10-s016-o01",
+          "source_pages": [
+            33
+          ]
+        },
+        {
+          "fact_objective": "形容词/代词用法；一般冠词与表语省略",
+          "source_lines": [
+            [
+              2487,
+              2575
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t03",
+              "evidence_summary": "区别名词前/独立用法并解释表语无冠词。",
+              "body_sha256": "773d9c4b7d57bf2c505632848cb15f83737ed702011197d166ff3e6074c1834d"
+            }
+          ],
+          "objective_id": "it-10-s016-o02",
+          "source_pages": [
+            33
+          ]
+        },
+        {
+          "fact_objective": "未修饰单数亲属名词常省冠词，loro、复数、修饰形式另论",
+          "source_lines": [
+            [
+              2487,
+              2575
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t03",
+              "evidence_summary": "基本条件具备，但把mamma等亲昵称谓一概要求冠词。",
+              "body_sha256": "773d9c4b7d57bf2c505632848cb15f83737ed702011197d166ff3e6074c1834d"
+            },
+            {
+              "slug": "p1/ch02/t01",
+              "evidence_summary": "papà同类绝对说明。",
+              "body_sha256": "3dba304b4ee87ba1c763f6a4040722c891e843531ca9a7940366b20805a58d7c"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "标准基本规则已覆盖；mamma/papà须容纳实际地区/用法差异，不能以“等于亲爱的”推出必须加。",
+          "objective_id": "it-10-s016-o03",
+          "source_pages": [
+            33
+          ]
+        }
+      ],
+      "source_cautions": [
+        "来源“物主词总带冠词”须排除表语等用法；本站表语已覆盖。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          34
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s017",
+      "topic_identified_from_body": "指示词与同一性表达",
+      "ledger_heading": "Gli aggettivi e i pronomi dimostrativi",
+      "pdf_pages": [
+        35,
+        36
+      ],
+      "source_line_range": [
+        2661,
+        2817
+      ],
+      "teaching_passages_read": [
+        [
+          35,
+          2664,
+          2732
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "questo/quello用于指示；限定名词与独立代词形式有别",
+          "source_lines": [
+            [
+              2664,
+              2732
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t02",
+              "evidence_summary": "实际区分形容词与代词；例中quelli不作quei。",
+              "body_sha256": "4e8bfaf6765a1975e0723ca5085ac9c964f4a538dd51a3d32fba2ce83d02d4c2"
+            },
+            {
+              "slug": "p1/ch03/t05",
+              "evidence_summary": "quello名词前音形与冠词对应。",
+              "body_sha256": "cf92cb8b60d91bdf0901819d5b117ff7c02d754ad0451c75584ca445fd5f3c9d"
+            }
+          ],
+          "objective_id": "it-10-s017-o01",
+          "source_pages": [
+            35
+          ]
+        },
+        {
+          "fact_objective": "stesso/medesimo表示同一或强调，不普遍强制冠词",
+          "source_lines": [
+            [
+              2664,
+              2732
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t02",
+              "evidence_summary": "专段称前面要加冠词。",
+              "body_sha256": "4e8bfaf6765a1975e0723ca5085ac9c964f4a538dd51a3d32fba2ce83d02d4c2"
+            },
+            {
+              "slug": "p1/ch06/t02",
+              "evidence_summary": "同时存在sé stesso无冠词用法。",
+              "body_sha256": "3cf3f06821d53c5e24610648221a67972dbae541fba808deba4a7e5d777b0987"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "需限定“同一个名词”结构；后置人称代词强调不应强制冠词。",
+          "objective_id": "it-10-s017-o02",
+          "source_pages": [
+            35
+          ]
+        }
+      ],
+      "source_cautions": [
+        "来源stesso/medesimo总带冠词的说法也过强，不迁移。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          36
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s018",
+      "topic_identified_from_body": "数量泛指词与身份泛指词（两页教学）",
+      "ledger_heading": "Prima parte",
+      "pdf_pages": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "source_line_range": [
+        2818,
+        3170
+      ],
+      "teaching_passages_read": [
+        [
+          37,
+          2821,
+          2914
+        ],
+        [
+          39,
+          2992,
+          3093
+        ],
+        [
+          40,
+          3098,
+          3100
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "molto/poco/tanto等作形容词或代词时配合，作副词时不随名词配合",
+          "source_lines": [
+            [
+              2821,
+              2914
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t04",
+              "evidence_summary": "说明数量形容词/代词有性数变化。",
+              "body_sha256": "e496df8733b135a0f1edb84400bacde9915af6bab1316ac34f0585e044330170"
+            },
+            {
+              "slug": "p1/ch05/t04",
+              "evidence_summary": "列对应数量副词及动词/形容词用法。",
+              "body_sha256": "37894001a737553ca7352915609f01cd9d82ebb56c3720389254b461e5099e49"
+            },
+            {
+              "slug": "p1/ch09/t02",
+              "evidence_summary": "明确同形词作副词与形容词的配合区别。",
+              "body_sha256": "3a6188f3ca997277471a3e7474d6b147c1cecf990714d6f267b72ce7bdf6bde4"
+            }
+          ],
+          "objective_id": "it-10-s018-o01",
+          "source_pages": [
+            37
+          ]
+        },
+        {
+          "fact_objective": "diverso在复数名词前可表若干，后置通常表不同",
+          "source_lines": [
+            [
+              2821,
+              2914
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch03/t04",
+              "evidence_summary": "正文补充明确位置导致意义变化。",
+              "body_sha256": "4439965742fd2da83dc1752a5a9000678e055dc4e83f7d17d483e593f13efec2"
+            }
+          ],
+          "objective_id": "it-10-s018-o02",
+          "source_pages": [
+            37
+          ]
+        },
+        {
+          "fact_objective": "ogni/qualche限定单数名词；ognuno/qualcuno独立；qualche与alcuni/alcune的数区别",
+          "source_lines": [
+            [
+              2992,
+              3093
+            ],
+            [
+              3098,
+              3100
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t04",
+              "evidence_summary": "有单数限定词与代词类别。",
+              "body_sha256": "e496df8733b135a0f1edb84400bacde9915af6bab1316ac34f0585e044330170"
+            },
+            {
+              "slug": "p1/ch07/t04",
+              "evidence_summary": "有ognuno/qualcuno独立使用。",
+              "body_sha256": "e496df8733b135a0f1edb84400bacde9915af6bab1316ac34f0585e044330170"
+            }
+          ],
+          "objective_id": "it-10-s018-o03",
+          "source_pages": [
+            39,
+            40
+          ]
+        },
+        {
+          "fact_objective": "alcuno单数常在否定环境，复数可表若干；nessuno/ciascuno的截尾与性别形式",
+          "source_lines": [
+            [
+              2992,
+              3093
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t04",
+              "evidence_summary": "nessuno/ciascuno及否定位置已解释。",
+              "body_sha256": "e496df8733b135a0f1edb84400bacde9915af6bab1316ac34f0585e044330170"
+            },
+            {
+              "slug": "p1/ch07/t04",
+              "evidence_summary": "却将alcuno单数泛说为复数意义、近qualche。",
+              "body_sha256": "e496df8733b135a0f1edb84400bacde9915af6bab1316ac34f0585e044330170"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "alcuno普通单数否定用法未得到正确说明。",
+          "objective_id": "it-10-s018-o04",
+          "source_pages": [
+            39
+          ]
+        },
+        {
+          "fact_objective": "tutto代词也有tutta/tutti/tutte；部分泛指词只能独立使用",
+          "source_lines": [
+            [
+              2821,
+              2914
+            ],
+            [
+              2992,
+              3093
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t04",
+              "evidence_summary": "qualcosa/niente/nulla等类别已列。",
+              "body_sha256": "e496df8733b135a0f1edb84400bacde9915af6bab1316ac34f0585e044330170"
+            },
+            {
+              "slug": "p1/ch07/t04",
+              "evidence_summary": "却称tutto作代词没有阴阳性。",
+              "body_sha256": "e496df8733b135a0f1edb84400bacde9915af6bab1316ac34f0585e044330170"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "tutto代词的性数绝对规则错误。",
+          "objective_id": "it-10-s018-o05",
+          "source_pages": [
+            37,
+            39
+          ]
+        },
+        {
+          "fact_objective": "altro/certo/altrettanto等的限定/独立身份和配合",
+          "source_lines": [
+            [
+              2821,
+              2914
+            ],
+            [
+              2992,
+              3093
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch03/t04",
+              "evidence_summary": "certo前后置差异。",
+              "body_sha256": "4439965742fd2da83dc1752a5a9000678e055dc4e83f7d17d483e593f13efec2"
+            },
+            {
+              "slug": "p1/ch05/t04",
+              "evidence_summary": "altrettanto仅作副词列出。",
+              "body_sha256": "37894001a737553ca7352915609f01cd9d82ebb56c3720389254b461e5099e49"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "altro和altrettanto的形容词/代词事实只有零散形式，未完整讲明；不移植原词表。",
+          "objective_id": "it-10-s018-o06",
+          "source_pages": [
+            37,
+            39
+          ]
+        }
+      ],
+      "source_cautions": [
+        "两页表格被展平；“INDENTITÀ”等拼写疑似OCR。",
+        "源qualche=多个的简化需允许未定的一个；源qualunque/qualsiasi的词类边界也需保留语境。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          38,
+          40
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s019",
+      "topic_identified_from_body": "疑问限定词、疑问代词与间接疑问",
+      "ledger_heading": "Gli aggettivi e i pronomi interrogativi",
+      "pdf_pages": [
+        41,
+        42
+      ],
+      "source_line_range": [
+        3171,
+        3286
+      ],
+      "teaching_passages_read": [
+        [
+          41,
+          3174,
+          3221
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "che不变；quale/quali变数；quanto按所修饰名词变性数",
+          "source_lines": [
+            [
+              3174,
+              3221
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p2/ch07/t02",
+              "evidence_summary": "只列quale/quanto名称与从句引导身份。",
+              "body_sha256": "a393a4429e4557056d63917b309936a4ecb8e69aa2f3eaaa5fc8c095e231a992"
+            },
+            {
+              "slug": "p2/ch03/t20",
+              "evidence_summary": "感叹用法另提quanto性数配合。",
+              "body_sha256": "c31d8a50b770639a375bfdffd59620b51d207decc5502d5cc9b2d60672ea0867"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "疑问场景的quale/quali与quanto四形并未系统解释，不能以间接疑问标题判定已覆盖。",
+          "objective_id": "it-10-s019-o01",
+          "source_pages": [
+            41
+          ]
+        },
+        {
+          "fact_objective": "chi通常询问人，che cosa询问事物；形容词与独立代词按有无名词区分",
+          "source_lines": [
+            [
+              3174,
+              3221
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p2/ch07/t02",
+              "evidence_summary": "有这些疑问词的句子，却未解释对象与独立/限定区别。",
+              "body_sha256": "a393a4429e4557056d63917b309936a4ecb8e69aa2f3eaaa5fc8c095e231a992"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "需要简短的语义/句法对比才算目标完成。",
+          "objective_id": "it-10-s019-o02",
+          "source_pages": [
+            41
+          ]
+        },
+        {
+          "fact_objective": "直接提问与嵌入间接疑问；标点由全句功能决定",
+          "source_lines": [
+            [
+              3174,
+              3221
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p2/ch07/t02",
+              "evidence_summary": "直接与嵌入疑问有明确对比。",
+              "body_sha256": "a393a4429e4557056d63917b309936a4ecb8e69aa2f3eaaa5fc8c095e231a992"
+            }
+          ],
+          "objective_id": "it-10-s019-o03",
+          "source_pages": [
+            41
+          ]
+        }
+      ],
+      "source_cautions": [
+        "源chi总要求第三人称单数须限定；系词识别句可出现复数。",
+        "间接疑问若嵌于整句问句仍可有问号，不能机械以有无问号判定。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          42
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s020",
+      "topic_identified_from_body": "数词及动词总论（两页教学）",
+      "ledger_heading": "I numerali",
+      "pdf_pages": [
+        43,
+        44,
+        45,
+        46
+      ],
+      "source_line_range": [
+        3287,
+        3600
+      ],
+      "teaching_passages_read": [
+        [
+          43,
+          3290,
+          3401
+        ],
+        [
+          45,
+          3465,
+          3527
+        ],
+        [
+          46,
+          3545,
+          3546
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "基数表数量、序数表顺序并配合；uno音形，milione/miliardo名词性与di",
+          "source_lines": [
+            [
+              3290,
+              3401
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch04/t01",
+              "evidence_summary": "明确量词、uno、百万/十亿+di。",
+              "body_sha256": "d8c034c1f9596529855038824af4e8d0a0b6b2740a053dd7bd5e781ae5110eb3"
+            },
+            {
+              "slug": "p1/ch04/t02",
+              "evidence_summary": "明确序数词配合及基本构成。",
+              "body_sha256": "6f676ce1855e5f738e401714527d7bbd249ace2f73636e7f85748666c5ea8187"
+            }
+          ],
+          "objective_id": "it-10-s020-o01",
+          "source_pages": [
+            43
+          ]
+        },
+        {
+          "fact_objective": "数词短语有无定冠词影响可识别集合，但不自动证明现实总数",
+          "source_lines": [
+            [
+              3290,
+              3401
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch02/t01",
+              "evidence_summary": "一般确指概念可辅助。",
+              "body_sha256": "3dba304b4ee87ba1c763f6a4040722c891e843531ca9a7940366b20805a58d7c"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "缺数词短语具体对比；来源将无冠词必然推成还有其他成员也过强。",
+          "objective_id": "it-10-s020-o02",
+          "source_pages": [
+            43
+          ]
+        },
+        {
+          "fact_objective": "分数、集合数词和分配表达是不同数量组织方式",
+          "source_lines": [
+            [
+              3290,
+              3401
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch04/t03",
+              "evidence_summary": "分数及di连接。",
+              "body_sha256": "b1cbf0848ed8c0b32cb8e72d7a0c5473f4765d902d2318bb14b03a8269be80bb"
+            },
+            {
+              "slug": "p1/ch04/t04",
+              "evidence_summary": "集合数量名词。",
+              "body_sha256": "98de894d26e429b1d5f36d645e45805bf949fac406177ae3f21e143f3cdd820f"
+            },
+            {
+              "slug": "p2/ch03/t14",
+              "evidence_summary": "单位与分配结构明确。",
+              "body_sha256": "71275db6336e6543e5eb786ff060064620fb33cadfb7c480773240c5f7ee8a91"
+            }
+          ],
+          "objective_id": "it-10-s020-o03",
+          "source_pages": [
+            43
+          ]
+        },
+        {
+          "fact_objective": "动词表达动作/状态，随人称数时态语式变化；规则词干与不规则变化；三变位类",
+          "source_lines": [
+            [
+              3465,
+              3527
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch10/t02",
+              "evidence_summary": "七语式、有限/非限定及八个直陈时态。",
+              "body_sha256": "f90b91af3d25057c65d8821f49cf93b82805304d88eb2b6d67af3631cb6f1999"
+            },
+            {
+              "slug": "p1/ch11/t01",
+              "evidence_summary": "三词尾类别、规则词干词尾和不规则形式。",
+              "body_sha256": "3c8e7d4efd044bccf2a9cfe5183d96a3f784cb42703b58bce710247ef8010e71"
+            }
+          ],
+          "objective_id": "it-10-s020-o04",
+          "source_pages": [
+            45
+          ]
+        },
+        {
+          "fact_objective": "仅凭-are/-ere/-ire结尾不能判定一个词必为动词",
+          "source_lines": [
+            [
+              3545,
+              3546
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t01",
+              "evidence_summary": "以已经识别为动词为前提分类。",
+              "body_sha256": "3c8e7d4efd044bccf2a9cfe5183d96a3f784cb42703b58bce710247ef8010e71"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "该识词前提未直说，属低优先补充，不抄练习词组。",
+          "objective_id": "it-10-s020-o05",
+          "source_pages": [
+            46
+          ]
+        }
+      ],
+      "source_cautions": [
+        "台账“数词”隐藏p45动词总论。",
+        "数词表3366把两个数项粘连；不可照搬OCR表格。",
+        "源词干永不变化、任何句子必有动词都是入门过度概括。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          44,
+          46
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s021",
+      "topic_identified_from_body": "直陈式现在时及变位",
+      "ledger_heading": "L’indicativo. Il presente",
+      "pdf_pages": [
+        47,
+        48
+      ],
+      "source_line_range": [
+        3601,
+        3804
+      ],
+      "teaching_passages_read": [
+        [
+          47,
+          3604,
+          3745
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "现在、习惯、一般情况及有语境的未来；直陈不保证客观真相",
+          "source_lines": [
+            [
+              3604,
+              3745
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t01",
+              "evidence_summary": "现在与未来用法。",
+              "body_sha256": "3c8e7d4efd044bccf2a9cfe5183d96a3f784cb42703b58bce710247ef8010e71"
+            },
+            {
+              "slug": "p1/ch11/t01",
+              "evidence_summary": "原创说明习惯/眼前、主语变位及语境。",
+              "body_sha256": "3c8e7d4efd044bccf2a9cfe5183d96a3f784cb42703b58bce710247ef8010e71"
+            }
+          ],
+          "objective_id": "it-10-s021-o01",
+          "source_pages": [
+            47
+          ]
+        },
+        {
+          "fact_objective": "三类规则现在时、-isc子类与常见不规则形式",
+          "source_lines": [
+            [
+              3604,
+              3745
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t01",
+              "evidence_summary": "正文实际有三类词尾和对应不规则形式。",
+              "body_sha256": "3c8e7d4efd044bccf2a9cfe5183d96a3f784cb42703b58bce710247ef8010e71"
+            },
+            {
+              "slug": "p1/ch11/t01",
+              "evidence_summary": "新补充明确-isc不是所有-ire动词。",
+              "body_sha256": "3c8e7d4efd044bccf2a9cfe5183d96a3f784cb42703b58bce710247ef8010e71"
+            }
+          ],
+          "objective_id": "it-10-s021-o02",
+          "source_pages": [
+            47
+          ]
+        },
+        {
+          "fact_objective": "直陈式八时态，简单与复合构成有别",
+          "source_lines": [
+            [
+              3604,
+              3745
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch10/t02",
+              "evidence_summary": "逐一列八时态及形式。",
+              "body_sha256": "f90b91af3d25057c65d8821f49cf93b82805304d88eb2b6d67af3631cb6f1999"
+            },
+            {
+              "slug": "p1/ch11/t02",
+              "evidence_summary": "具体说明复合时态助动词+分词。",
+              "body_sha256": "a664f1087993f1df1062849f7d1375322903f42723fd4ff7f332861d7012fa31"
+            }
+          ],
+          "objective_id": "it-10-s021-o03",
+          "source_pages": [
+            47
+          ]
+        }
+      ],
+      "source_cautions": [
+        "源“确定事实”是语式教学捷径，不应等同语句真假。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          48
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s022",
+      "topic_identified_from_body": "未完成过去时",
+      "ledger_heading": "L’imperfetto",
+      "pdf_pages": [
+        49,
+        50
+      ],
+      "source_line_range": [
+        3805,
+        3933
+      ],
+      "teaching_passages_read": [
+        [
+          49,
+          3808,
+          3854
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "过去背景、描述、习惯和并行过程；选择取决于观察视角",
+          "source_lines": [
+            [
+              3808,
+              3854
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t07",
+              "evidence_summary": "描述与重复场景。",
+              "body_sha256": "a5061b9c5af85cda25e4fcac027893b2a39fabcea935f2e52074908e2a4a447d"
+            },
+            {
+              "slug": "p1/ch11/t07",
+              "evidence_summary": "原创段明确背景/有界事件，不以长短决定。",
+              "body_sha256": "a5061b9c5af85cda25e4fcac027893b2a39fabcea935f2e52074908e2a4a447d"
+            }
+          ],
+          "objective_id": "it-10-s022-o01",
+          "source_pages": [
+            49
+          ]
+        },
+        {
+          "fact_objective": "规则未完成过去时及essere/fare/dire等常见形式",
+          "source_lines": [
+            [
+              3808,
+              3854
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t07",
+              "evidence_summary": "三类词尾与常用不规则形式。",
+              "body_sha256": "a5061b9c5af85cda25e4fcac027893b2a39fabcea935f2e52074908e2a4a447d"
+            }
+          ],
+          "objective_id": "it-10-s022-o02",
+          "source_pages": [
+            49
+          ]
+        }
+      ],
+      "source_cautions": [
+        "源同时动作“持续相同时间”过强，并行不要求起止完全相同。",
+        "本站旧文第31行称近过去时不能描述状态，和后部有界状态解释冲突；报告保留，不扩修。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          50
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s023",
+      "topic_identified_from_body": "近过去时、助动词与分词配合",
+      "ledger_heading": "Il passato prossimo",
+      "pdf_pages": [
+        51,
+        52
+      ],
+      "source_line_range": [
+        3934,
+        4135
+      ],
+      "teaching_passages_read": [
+        [
+          51,
+          3937,
+          4046
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "近过去时为助动词现在时+过去分词；不是仅限近期",
+          "source_lines": [
+            [
+              3937,
+              4046
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t02",
+              "evidence_summary": "讲完成与当前关联，并含很早事件形式。",
+              "body_sha256": "a664f1087993f1df1062849f7d1375322903f42723fd4ff7f332861d7012fa31"
+            }
+          ],
+          "objective_id": "it-10-s023-o01",
+          "source_pages": [
+            51
+          ]
+        },
+        {
+          "fact_objective": "规则/不规则过去分词；助动词按词汇/用法选择",
+          "source_lines": [
+            [
+              3937,
+              4046
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t02",
+              "evidence_summary": "规则词尾、不规则列表、avere含部分不及物。",
+              "body_sha256": "a664f1087993f1df1062849f7d1375322903f42723fd4ff7f332861d7012fa31"
+            },
+            {
+              "slug": "p1/ch11/t02",
+              "evidence_summary": "原创说明不能把移动一律等于essere。",
+              "body_sha256": "a664f1087993f1df1062849f7d1375322903f42723fd4ff7f332861d7012fa31"
+            }
+          ],
+          "objective_id": "it-10-s023-o02",
+          "source_pages": [
+            51
+          ]
+        },
+        {
+          "fact_objective": "essere结构常与主语配合；avere前置lo/la/li/le须注意宾语配合",
+          "source_lines": [
+            [
+              3937,
+              4046
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t02",
+              "evidence_summary": "实际讲两类配合。",
+              "body_sha256": "a664f1087993f1df1062849f7d1375322903f42723fd4ff7f332861d7012fa31"
+            },
+            {
+              "slug": "p1/ch11/t02",
+              "evidence_summary": "原创示范及规则边界。",
+              "body_sha256": "a664f1087993f1df1062849f7d1375322903f42723fd4ff7f332861d7012fa31"
+            }
+          ],
+          "objective_id": "it-10-s023-o03",
+          "source_pages": [
+            51
+          ]
+        }
+      ],
+      "source_cautions": [
+        "源移动/状态动词的助动词分组仅为常见线索，本站新补充已有明确限制。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          52
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s024",
+      "topic_identified_from_body": "近过去时与未完成过去时的叙事视角",
+      "ledger_heading": "La differenza tra imperfetto e passato prossimo",
+      "pdf_pages": [
+        53,
+        54
+      ],
+      "source_line_range": [
+        4136,
+        4263
+      ],
+      "teaching_passages_read": [
+        [
+          53,
+          4139,
+          4181
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "背景/习惯与有界整体的区别；两进行、两完成或中断背景皆可表达",
+          "source_lines": [
+            [
+              4139,
+              4181
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t07",
+              "evidence_summary": "旧正文已比较状态、习惯和一段时间内重复。",
+              "body_sha256": "a5061b9c5af85cda25e4fcac027893b2a39fabcea935f2e52074908e2a4a447d"
+            },
+            {
+              "slug": "p1/ch11/t07",
+              "evidence_summary": "原创解释和独立情境对比过程、结果和叙事推进。",
+              "body_sha256": "a5061b9c5af85cda25e4fcac027893b2a39fabcea935f2e52074908e2a4a447d"
+            }
+          ],
+          "objective_id": "it-10-s024-o01",
+          "source_pages": [
+            53
+          ]
+        }
+      ],
+      "source_cautions": [
+        "源长/短、重复/单次对照不应升级成绝对选时态规则；本站后部已明确。",
+        "同s022的旧绝对状态句仍是页面一致性问题，事实新补充通过不等于整页无误。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          54
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s025",
+      "topic_identified_from_body": "远过去时与两种将来时（两页教学）",
+      "ledger_heading": "Il passato remoto",
+      "pdf_pages": [
+        55,
+        56,
+        57,
+        58
+      ],
+      "source_line_range": [
+        4264,
+        4718
+      ],
+      "teaching_passages_read": [
+        [
+          55,
+          4267,
+          4425
+        ],
+        [
+          57,
+          4515,
+          4626
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "远过去时叙述有界过去，常用于叙事；地域/语域不只时间远近",
+          "source_lines": [
+            [
+              4267,
+              4425
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t03",
+              "evidence_summary": "强调历史距离与书面语，但无地域差异解释。",
+              "body_sha256": "2ced6e4efcf668fc7716be7291a9eecd3ac66370e71e3e624c1a9f7468c9c9f7"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "不足以支持“只用于遥远过去/只书面”判断；需保留地区口语差异。",
+          "objective_id": "it-10-s025-o01",
+          "source_pages": [
+            55
+          ]
+        },
+        {
+          "fact_objective": "远过去时规则和常用不规则形式",
+          "source_lines": [
+            [
+              4267,
+              4425
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t03",
+              "evidence_summary": "实际列三类词尾及来源涉及的常用动词形式。",
+              "body_sha256": "2ced6e4efcf668fc7716be7291a9eecd3ac66370e71e3e624c1a9f7468c9c9f7"
+            }
+          ],
+          "objective_id": "it-10-s025-o02",
+          "source_pages": [
+            55
+          ]
+        },
+        {
+          "fact_objective": "简单将来表未来和推测；现在时也能说计划",
+          "source_lines": [
+            [
+              4515,
+              4626
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t05",
+              "evidence_summary": "未来、命令和推测用法。",
+              "body_sha256": "be59ebeb3499f7bcc0bf1ba72e0e520db0eeca67ba0d24b657aaafca49dd3d34"
+            },
+            {
+              "slug": "p1/ch11/t01",
+              "evidence_summary": "现在时可表未来。",
+              "body_sha256": "3c8e7d4efd044bccf2a9cfe5183d96a3f784cb42703b58bce710247ef8010e71"
+            }
+          ],
+          "objective_id": "it-10-s025-o03",
+          "source_pages": [
+            57
+          ]
+        },
+        {
+          "fact_objective": "先将来表相对于未来参照点的先行完成；将来助动词+分词",
+          "source_lines": [
+            [
+              4515,
+              4626
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch11/t06",
+              "evidence_summary": "实际解释先行、截止点、推测及构成。",
+              "body_sha256": "d08d4200acb50e35e497d5eb172c1f508461fed0ffaf15142ee437a5be36ae5e"
+            }
+          ],
+          "objective_id": "it-10-s025-o04",
+          "source_pages": [
+            57
+          ]
+        },
+        {
+          "fact_objective": "将来时可有让步/保留承认功能",
+          "source_lines": [
+            [
+              4515,
+              4626
+            ]
+          ],
+          "status": "missing-objective",
+          "existing_evidence": [],
+          "remaining_gap_or_misleading_text": "现有将来时页仅列未来、命令、推测，未找到该语用事实的明确说明。",
+          "objective_id": "it-10-s025-o05",
+          "source_pages": [
+            57
+          ]
+        }
+      ],
+      "source_cautions": [
+        "台账只写远过去时，实际p57为将来时，不可遗漏。",
+        "来源地域使用概括也不可当全意大利分布定律；未来表格列次序被OCR压平。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          56,
+          58
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s026",
+      "topic_identified_from_body": "反身、间接反身、相互与词汇性代词动词",
+      "ledger_heading": "La forma riflessiva",
+      "pdf_pages": [
+        59,
+        60
+      ],
+      "source_line_range": [
+        4719,
+        4877
+      ],
+      "teaching_passages_read": [
+        [
+          59,
+          4722,
+          4790
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "主语与直接/间接宾语回指；身体部位/所属对象结构",
+          "source_lines": [
+            [
+              4722,
+              4790
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch14/t01",
+              "evidence_summary": "代词表、真实与间接反身及宾语代词配合。",
+              "body_sha256": "034b9329a11c1fba6b8ed078bb48fc06d019b0d98ea55bdffe1ae12c28ba94cc"
+            }
+          ],
+          "objective_id": "it-10-s026-o01",
+          "source_pages": [
+            59
+          ]
+        },
+        {
+          "fact_objective": "相互作用与本来带代词的词汇性动词区别",
+          "source_lines": [
+            [
+              4722,
+              4790
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch14/t01",
+              "evidence_summary": "相互与非字面反身的代词动词分段。",
+              "body_sha256": "034b9329a11c1fba6b8ed078bb48fc06d019b0d98ea55bdffe1ae12c28ba94cc"
+            }
+          ],
+          "objective_id": "it-10-s026-o02",
+          "source_pages": [
+            59
+          ]
+        },
+        {
+          "fact_objective": "复合反身形式通常essere并配合",
+          "source_lines": [
+            [
+              4722,
+              4790
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch14/t01",
+              "evidence_summary": "助动词和主语配合。",
+              "body_sha256": "034b9329a11c1fba6b8ed078bb48fc06d019b0d98ea55bdffe1ae12c28ba94cc"
+            },
+            {
+              "slug": "p1/ch14/t01",
+              "evidence_summary": "直接宾语代词存在时的配合例外。",
+              "body_sha256": "034b9329a11c1fba6b8ed078bb48fc06d019b0d98ea55bdffe1ae12c28ba94cc"
+            }
+          ],
+          "objective_id": "it-10-s026-o03",
+          "source_pages": [
+            59
+          ]
+        }
+      ],
+      "source_cautions": [
+        "4725附近???为OCR损失；不可据此补写原文。",
+        "源把“过去分词”与“复合时态”混称，应以实际结构解释。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          60
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s027",
+      "topic_identified_from_body": "虚拟式形态及独立用法",
+      "ledger_heading": "Il congiuntivo",
+      "pdf_pages": [
+        61,
+        62
+      ],
+      "source_line_range": [
+        4878,
+        5091
+      ],
+      "teaching_passages_read": [
+        [
+          61,
+          4881,
+          4992
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "虚拟式常表达态度/愿望等，不能简单等同不真实；有四时态",
+          "source_lines": [
+            [
+              4881,
+              4992
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch12/t02",
+              "evidence_summary": "列四时态，但开头把直陈/虚拟与强加看法/文明程度挂钩。",
+              "body_sha256": "986ec12e4f251ce1d53dae974df69eee31144c2949965dda270762fbd3e8b087"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "主观性线索可教；关于文明、强加意图的普遍推断无语言学必然性，不能作为判断规则。",
+          "objective_id": "it-10-s027-o01",
+          "source_pages": [
+            61
+          ]
+        },
+        {
+          "fact_objective": "常规及常见不规则现在/未完成虚拟；过去/愈过去由助动词组成",
+          "source_lines": [
+            [
+              4881,
+              4992
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch12/t02",
+              "evidence_summary": "实际列四时态的构成和常见不规则形式。",
+              "body_sha256": "986ec12e4f251ce1d53dae974df69eee31144c2949965dda270762fbd3e8b087"
+            }
+          ],
+          "objective_id": "it-10-s027-o02",
+          "source_pages": [
+            61
+          ]
+        },
+        {
+          "fact_objective": "独立愿望与礼貌Lei命令可用虚拟形式",
+          "source_lines": [
+            [
+              4881,
+              4992
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch12/t02",
+              "evidence_summary": "独立期望/呼吁等。",
+              "body_sha256": "986ec12e4f251ce1d53dae974df69eee31144c2949965dda270762fbd3e8b087"
+            },
+            {
+              "slug": "p1/ch12/t02",
+              "evidence_summary": "独立愿望的过去系列。",
+              "body_sha256": "986ec12e4f251ce1d53dae974df69eee31144c2949965dda270762fbd3e8b087"
+            },
+            {
+              "slug": "p1/ch12/t01",
+              "evidence_summary": "礼貌命令及代词位置。",
+              "body_sha256": "aeabbcc946fecdebb2345e6d9d542ab482ab758197514e294d9f432d40dcb624"
+            }
+          ],
+          "objective_id": "it-10-s027-o03",
+          "source_pages": [
+            61
+          ]
+        }
+      ],
+      "source_cautions": [],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          62
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s028",
+      "topic_identified_from_body": "从句虚拟式与条件式（两页教学）",
+      "ledger_heading": "Il congiuntivo nelle frasi dipendenti",
+      "pdf_pages": [
+        63,
+        64,
+        65,
+        66
+      ],
+      "source_line_range": [
+        5092,
+        5411
+      ],
+      "teaching_passages_read": [
+        [
+          63,
+          5095,
+          5151
+        ],
+        [
+          65,
+          5227,
+          5330
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "意见、愿望、情感、必要性等支配从句语式；不是见che就用虚拟",
+          "source_lines": [
+            [
+              5095,
+              5151
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch12/t02",
+              "evidence_summary": "逐类主句意义与语式。",
+              "body_sha256": "986ec12e4f251ce1d53dae974df69eee31144c2949965dda270762fbd3e8b087"
+            },
+            {
+              "slug": "p2/ch04/t03",
+              "evidence_summary": "陈述/判断/意愿等对应及口语差异。",
+              "body_sha256": "ce4f0f6baf465160c68d117af91dc5e2da0fdd9056c0ef07a0c31a5b671273d0"
+            }
+          ],
+          "objective_id": "it-10-s028-o01",
+          "source_pages": [
+            63
+          ]
+        },
+        {
+          "fact_objective": "从句同时间与先时间；现在参照和过去参照对应不同虚拟时态",
+          "source_lines": [
+            [
+              5095,
+              5151
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch12/t02",
+              "evidence_summary": "现/未来主句与过去主句分别列时间逻辑。",
+              "body_sha256": "986ec12e4f251ce1d53dae974df69eee31144c2949965dda270762fbd3e8b087"
+            }
+          ],
+          "objective_id": "it-10-s028-o02",
+          "source_pages": [
+            63
+          ]
+        },
+        {
+          "fact_objective": "条件式现在/过去形式；愿望、委婉请求与假设结果",
+          "source_lines": [
+            [
+              5227,
+              5330
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch12/t03",
+              "evidence_summary": "两时态、愿望请求结果及规则/不规则。",
+              "body_sha256": "03c7555af23981d05af4c0a38d1e34f68e22a1b47a2344a9ce08a5a11a5e88c5"
+            },
+            {
+              "slug": "p1/ch12/t03",
+              "evidence_summary": "过去式构成与过去未来。",
+              "body_sha256": "03c7555af23981d05af4c0a38d1e34f68e22a1b47a2344a9ce08a5a11a5e88c5"
+            }
+          ],
+          "objective_id": "it-10-s028-o03",
+          "source_pages": [
+            65
+          ]
+        }
+      ],
+      "source_cautions": [
+        "台账标题漏掉p65条件式。",
+        "源以条件实现定义全部条件式只是教学引入；独立请求也存在。",
+        "本站p1/ch12/t03第3行对条件从句永禁条件式过强；此处仅报告，不扩修。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          64,
+          66
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s029",
+      "topic_identified_from_body": "命令式及代词位置",
+      "ledger_heading": "Attenzione:",
+      "pdf_pages": [
+        67,
+        68
+      ],
+      "source_line_range": [
+        5412,
+        5579
+      ],
+      "teaching_passages_read": [
+        [
+          67,
+          5415,
+          5484
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "命令、邀请、建议；tu/voi本有形式与Lei虚拟形式",
+          "source_lines": [
+            [
+              5415,
+              5484
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch12/t01",
+              "evidence_summary": "实际列规则/不规则和礼貌形式。",
+              "body_sha256": "aeabbcc946fecdebb2345e6d9d542ab482ab758197514e294d9f432d40dcb624"
+            }
+          ],
+          "objective_id": "it-10-s029-o01",
+          "source_pages": [
+            67
+          ]
+        },
+        {
+          "fact_objective": "否定tu用non+不定式，其他人称按对应形式",
+          "source_lines": [
+            [
+              5415,
+              5484
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch12/t01",
+              "evidence_summary": "有明确否定规则。",
+              "body_sha256": "aeabbcc946fecdebb2345e6d9d542ab482ab758197514e294d9f432d40dcb624"
+            }
+          ],
+          "objective_id": "it-10-s029-o02",
+          "source_pages": [
+            67
+          ]
+        },
+        {
+          "fact_objective": "肯定非礼貌命令代词后附；Lei前置；短命令后首辅音双写，gli例外",
+          "source_lines": [
+            [
+              5415,
+              5484
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch12/t01",
+              "evidence_summary": "位置、否定两位置及短命令双写gli例外齐全。",
+              "body_sha256": "aeabbcc946fecdebb2345e6d9d542ab482ab758197514e294d9f432d40dcb624"
+            }
+          ],
+          "objective_id": "it-10-s029-o03",
+          "source_pages": [
+            67
+          ]
+        }
+      ],
+      "source_cautions": [
+        "“Attenzione”泛标题遮蔽命令式。",
+        "源双写提示漏gli例外；源“礼貌必须加per favore”等是过强社会语用断言，不迁移。",
+        "本站di’写成dì并列、dovere指令与直陈形式界线，属旧形式说明可疑点，记录不扩修。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          68
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s030",
+      "topic_identified_from_body": "副动词与进行体",
+      "ledger_heading": "Il gerundio",
+      "pdf_pages": [
+        69,
+        70
+      ],
+      "source_line_range": [
+        5580,
+        5715
+      ],
+      "teaching_passages_read": [
+        [
+          69,
+          5583,
+          5638
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "简单/复合副动词与主句的同时间/先时间；方式、时间、原因关系",
+          "source_lines": [
+            [
+              5583,
+              5638
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch13/t02",
+              "evidence_summary": "构成、相对时间与时间/原因用法。",
+              "body_sha256": "b88c98d82684f4b6e9d6d4aa40fcc2793fb260b3fb9c317497f3ae295253902e"
+            },
+            {
+              "slug": "p1/ch13/t02",
+              "evidence_summary": "方式用法。",
+              "body_sha256": "b88c98d82684f4b6e9d6d4aa40fcc2793fb260b3fb9c317497f3ae295253902e"
+            }
+          ],
+          "objective_id": "it-10-s030-o01",
+          "source_pages": [
+            69
+          ]
+        },
+        {
+          "fact_objective": "不规则facendo/bevendo/dicendo及后附代词",
+          "source_lines": [
+            [
+              5583,
+              5638
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch13/t02",
+              "evidence_summary": "常见不规则形式。",
+              "body_sha256": "b88c98d82684f4b6e9d6d4aa40fcc2793fb260b3fb9c317497f3ae295253902e"
+            },
+            {
+              "slug": "p1/ch13/t02",
+              "evidence_summary": "代词后附。",
+              "body_sha256": "b88c98d82684f4b6e9d6d4aa40fcc2793fb260b3fb9c317497f3ae295253902e"
+            }
+          ],
+          "objective_id": "it-10-s030-o02",
+          "source_pages": [
+            69
+          ]
+        },
+        {
+          "fact_objective": "stare+gerundio标记进行，普通现在时可表习惯",
+          "source_lines": [
+            [
+              5583,
+              5638
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch13/t02",
+              "evidence_summary": "进行结构。",
+              "body_sha256": "b88c98d82684f4b6e9d6d4aa40fcc2793fb260b3fb9c317497f3ae295253902e"
+            },
+            {
+              "slug": "p1/ch11/t01",
+              "evidence_summary": "现在时不必等于正在、可表习惯。",
+              "body_sha256": "3c8e7d4efd044bccf2a9cfe5183d96a3f784cb42703b58bce710247ef8010e71"
+            }
+          ],
+          "objective_id": "it-10-s030-o03",
+          "source_pages": [
+            69
+          ]
+        }
+      ],
+      "source_cautions": [
+        "5598的???是缺损标记；不恢复原句。",
+        "源简单副动词仅等于同时的说法是入门简化；本站也提即时先后，不冲突。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          70
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s031",
+      "topic_identified_from_body": "情态/阶段动词与不定式搭配",
+      "ledger_heading": "I verbi servili e fraseologici",
+      "pdf_pages": [
+        71,
+        72
+      ],
+      "source_line_range": [
+        5716,
+        5894
+      ],
+      "teaching_passages_read": [
+        [
+          71,
+          5719,
+          5821
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "常用情态、使役、喜好/无人称结构可直接接不定式",
+          "source_lines": [
+            [
+              5719,
+              5821
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch13/t01",
+              "evidence_summary": "情态动词直接接不定式。",
+              "body_sha256": "3c0c8aa5e14d31b8a8be1e276c9028709b47bda232ee9d35af586bff2522b800"
+            },
+            {
+              "slug": "p1/ch13/t01",
+              "evidence_summary": "fare/lasciare及主语从句。",
+              "body_sha256": "3c0c8aa5e14d31b8a8be1e276c9028709b47bda232ee9d35af586bff2522b800"
+            }
+          ],
+          "objective_id": "it-10-s031-o01",
+          "source_pages": [
+            71
+          ]
+        },
+        {
+          "fact_objective": "其他动词各自支配a或di，不可凭中文意义一概选择",
+          "source_lines": [
+            [
+              5719,
+              5821
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch13/t01",
+              "evidence_summary": "具体di/a结构及开始、继续、结束。",
+              "body_sha256": "3c0c8aa5e14d31b8a8be1e276c9028709b47bda232ee9d35af586bff2522b800"
+            },
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "原创明确按具体动词义项记录介词。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            }
+          ],
+          "objective_id": "it-10-s031-o02",
+          "source_pages": [
+            71
+          ]
+        },
+        {
+          "fact_objective": "pensare/credere同主语通常di+不定式，异主语需要有限从句",
+          "source_lines": [
+            [
+              5719,
+              5821
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p2/ch04/t03",
+              "evidence_summary": "di+不定式与主语条件、有限从句转换。",
+              "body_sha256": "ce4f0f6baf465160c68d117af91dc5e2da0fdd9056c0ef07a0c31a5b671273d0"
+            },
+            {
+              "slug": "p1/ch13/t01",
+              "evidence_summary": "已有credere+di的时间关系解释。",
+              "body_sha256": "3c0c8aa5e14d31b8a8be1e276c9028709b47bda232ee9d35af586bff2522b800"
+            }
+          ],
+          "objective_id": "it-10-s031-o03",
+          "source_pages": [
+            71
+          ]
+        }
+      ],
+      "source_cautions": [
+        "台账p1/ch10/t01只是及物/不及物/代词式分类，不能作为本节覆盖证据；实际目标在不定式及宾语从句页。",
+        "源列出具体动词搭配是语言事实，但整套例句/顺序排除。",
+        "本站旧a=发展、di=截止的泛化会误导；后部原创搭配说明有正确限制。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          72
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s032",
+      "topic_identified_from_body": "副词与介词类别（两页教学）",
+      "ledger_heading": "Gli avverbi",
+      "pdf_pages": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "source_line_range": [
+        5895,
+        6266
+      ],
+      "teaching_passages_read": [
+        [
+          73,
+          5898,
+          5954
+        ],
+        [
+          75,
+          6052,
+          6186
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "副词修饰动词/形容词等，可表示方式、时间、地点、数量",
+          "source_lines": [
+            [
+              5898,
+              5954
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch05/t01",
+              "evidence_summary": "方式功能。",
+              "body_sha256": "b6a39012d5c75b785bf5f40afc9322e502c173caa900f69c7a8d0966334c7760"
+            },
+            {
+              "slug": "p1/ch05/t02",
+              "evidence_summary": "时间功能。",
+              "body_sha256": "04fa4eddb38b6112021f7cf154705ab3c47a3750adc48d3089658822bd7ff385"
+            },
+            {
+              "slug": "p1/ch05/t03",
+              "evidence_summary": "地点功能。",
+              "body_sha256": "1167b5aa2c688e77bc7c30e78960a2c008990d42f63b862dfe6b09221e6531a6"
+            },
+            {
+              "slug": "p1/ch05/t04",
+              "evidence_summary": "数量程度。",
+              "body_sha256": "37894001a737553ca7352915609f01cd9d82ebb56c3720389254b461e5099e49"
+            },
+            {
+              "slug": "p1/ch05/t05",
+              "evidence_summary": "修饰对象及与表语形容词区别。",
+              "body_sha256": "a118becf531ce86748a332a7cc93cdfb2a800210370f5a151c691c19fecd99af"
+            }
+          ],
+          "objective_id": "it-10-s032-o01",
+          "source_pages": [
+            73
+          ]
+        },
+        {
+          "fact_objective": "-mente形成规则需要保留形容词词形条件与例外",
+          "source_lines": [
+            [
+              5898,
+              5954
+            ]
+          ],
+          "status": "existing-misleading",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch05/t01",
+              "evidence_summary": "有-o变-a和-e规则，但将所有-le末尾e都删除。",
+              "body_sha256": "b6a39012d5c75b785bf5f40afc9322e502c173caa900f69c7a8d0966334c7760"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "不能推出所有-le都去e；需按词形处理，且遗漏常见-re末尾处理。",
+          "objective_id": "it-10-s032-o02",
+          "source_pages": [
+            73
+          ]
+        },
+        {
+          "fact_objective": "疑问副词与判断/肯定否定副词的功能；副词通常不做性数配合",
+          "source_lines": [
+            [
+              5898,
+              5954
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p2/ch07/t02",
+              "evidence_summary": "疑问副词只列名。",
+              "body_sha256": "a393a4429e4557056d63917b309936a4ecb8e69aa2f3eaaa5fc8c095e231a992"
+            },
+            {
+              "slug": "p1/ch05/t05",
+              "evidence_summary": "通过修饰对象对比间接呈现配合区别。",
+              "body_sha256": "a118becf531ce86748a332a7cc93cdfb2a800210370f5a151c691c19fecd99af"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "判断副词类别/不变性无明确概括，不能把例中出现当完整讲解。",
+          "objective_id": "it-10-s032-o03",
+          "source_pages": [
+            73
+          ]
+        },
+        {
+          "fact_objective": "简单介词与冠词融合；介词可连名词、代词、不定式",
+          "source_lines": [
+            [
+              6052,
+              6186
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch08/t01",
+              "evidence_summary": "实际有组合规则/形式表。",
+              "body_sha256": "2271dcbb9b77c1f955851da2377a960dee7d9a84ccf3cb6e08d13dc70bdae551"
+            },
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "逐介词功能和不定式连接。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            }
+          ],
+          "objective_id": "it-10-s032-o04",
+          "source_pages": [
+            75
+          ]
+        },
+        {
+          "fact_objective": "同一形式可作副词/形容词或介词；多词介词短语需按结构识别",
+          "source_lines": [
+            [
+              6052,
+              6186
+            ]
+          ],
+          "status": "partial-existing",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch05/t03",
+              "evidence_summary": "列地点副词。",
+              "body_sha256": "1167b5aa2c688e77bc7c30e78960a2c008990d42f63b862dfe6b09221e6531a6"
+            },
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "有副词/介词短语名称。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            },
+            {
+              "slug": "p2/ch02/t01",
+              "evidence_summary": "列地点介词与短语。",
+              "body_sha256": "c366929894367238ca1004eec184f9b74e00d936d30ee2119db67afb9a6fd1ca"
+            }
+          ],
+          "remaining_gap_or_misleading_text": "没有直接解释有补足语/无补足语造成角色变化；单一“两类介词”分类不足。",
+          "objective_id": "it-10-s032-o05",
+          "source_pages": [
+            75
+          ]
+        }
+      ],
+      "source_cautions": [
+        "台账只映射方式副词，漏p75介词总论。",
+        "源介词表6149的per la与l’行错配疑似OCR；不得当规则。",
+        "本站per+冠词可合写的旧说明需要标文学/旧式语域；不把现代表达一律扩展为常规。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          74,
+          76
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "partial-existing-not-passed"
+    },
+    {
+      "section_id": "it-10-s033",
+      "topic_identified_from_body": "常用介词的语义关系",
+      "ledger_heading": "L’uso delle preposizioni",
+      "pdf_pages": [
+        77,
+        78
+      ],
+      "source_line_range": [
+        6267,
+        6449
+      ],
+      "teaching_passages_read": [
+        [
+          77,
+          6270,
+          6371
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "di所属/材料/话题/性质；a方向/与格/时间；da来源/施事/到人处/用途",
+          "source_lines": [
+            [
+              6270,
+              6371
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "a多功能解释。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            },
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "di逐功能解释。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            },
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "da逐功能解释。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            }
+          ],
+          "objective_id": "it-10-s033-o01",
+          "source_pages": [
+            77
+          ]
+        },
+        {
+          "fact_objective": "in位置/时间/交通方式；con陪伴/工具；su接触/话题/约数",
+          "source_lines": [
+            [
+              6270,
+              6371
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "in功能。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            },
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "su功能。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            },
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "con功能。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            }
+          ],
+          "objective_id": "it-10-s033-o02",
+          "source_pages": [
+            77
+          ]
+        },
+        {
+          "fact_objective": "per路径/时长/目的/原因；tra/fra中间位置与未来间隔",
+          "source_lines": [
+            [
+              6270,
+              6371
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch08/t02",
+              "evidence_summary": "per、tra/fra实际正文齐全，包括fra/dopo参照点。",
+              "body_sha256": "148afe33b00cea1d1403a17679768fa600f5f4a10683a053b725120cbdd70164"
+            }
+          ],
+          "objective_id": "it-10-s033-o03",
+          "source_pages": [
+            77
+          ]
+        }
+      ],
+      "source_cautions": [
+        "这些是多义关系提示，不把介词绑定唯一中文释义。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          78
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s034",
+      "topic_identified_from_body": "连词、并列与从属",
+      "ledger_heading": "I connettori (congiunzioni)",
+      "pdf_pages": [
+        79,
+        80
+      ],
+      "source_line_range": [
+        6450,
+        6576
+      ],
+      "teaching_passages_read": [
+        [
+          79,
+          6453,
+          6523
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "连接词或分句；并列可表添加、选择、对照、说明、结果及关联",
+          "source_lines": [
+            [
+              6453,
+              6523
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t05",
+              "evidence_summary": "并列定义与常用关系。",
+              "body_sha256": "5373ebf5ec372e26a3ecdc61f5d5005d3d52f0ec156c5627b68b367ba9e0ee8b"
+            },
+            {
+              "slug": "p2/ch04/t01",
+              "evidence_summary": "同等级分句及各关系实际说明。",
+              "body_sha256": "a02639e69b0ae91f998677bcf971c3f49465114624054ecfeb9070ecb71ed9fb"
+            }
+          ],
+          "objective_id": "it-10-s034-o01",
+          "source_pages": [
+            79
+          ]
+        },
+        {
+          "fact_objective": "从属连接可表原因、目的、时间、陈述、条件、方式、让步、例外/限制",
+          "source_lines": [
+            [
+              6453,
+              6523
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p1/ch07/t05",
+              "evidence_summary": "从属功能及语式随意义变化。",
+              "body_sha256": "5373ebf5ec372e26a3ecdc61f5d5005d3d52f0ec156c5627b68b367ba9e0ee8b"
+            },
+            {
+              "slug": "p1/ch13/t01",
+              "evidence_summary": "例外和限制从句实际解释。",
+              "body_sha256": "3c0c8aa5e14d31b8a8be1e276c9028709b47bda232ee9d35af586bff2522b800"
+            },
+            {
+              "slug": "p1/ch12/t02",
+              "evidence_summary": "目的、让步、条件、时间等触发说明。",
+              "body_sha256": "986ec12e4f251ce1d53dae974df69eee31144c2949965dda270762fbd3e8b087"
+            }
+          ],
+          "objective_id": "it-10-s034-o02",
+          "source_pages": [
+            79
+          ]
+        }
+      ],
+      "source_cautions": [
+        "语法从属不等于信息“不重要”；“ossia”列于选择和说明需按具体义项理解。",
+        "6508的vendo疑为vengo拼写/OCR问题，例句排除，不迁移。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          80
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    },
+    {
+      "section_id": "it-10-s035",
+      "topic_identified_from_body": "开放条件、可能/反事实与跨时间结果",
+      "ledger_heading": "Il periodo ipotetico",
+      "pdf_pages": [
+        81,
+        82
+      ],
+      "source_line_range": [
+        6577,
+        6744
+      ],
+      "teaching_passages_read": [
+        [
+          81,
+          6580,
+          6667
+        ]
+      ],
+      "objectives": [
+        {
+          "fact_objective": "条件与结果两个分句；开放条件可直陈，非现实/疏远条件常虚拟+条件式",
+          "source_lines": [
+            [
+              6580,
+              6667
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p2/ch06/t02",
+              "evidence_summary": "分句角色与主要类型。",
+              "body_sha256": "1a54e58fac8b19ef54ffd12afa2766e23866e66273d96f231684331094011df1"
+            },
+            {
+              "slug": "p2/ch06/t02",
+              "evidence_summary": "原创按时间与现实距离解释，不与确定真假简单等同。",
+              "body_sha256": "1a54e58fac8b19ef54ffd12afa2766e23866e66273d96f231684331094011df1"
+            }
+          ],
+          "objective_id": "it-10-s035-o01",
+          "source_pages": [
+            81
+          ]
+        },
+        {
+          "fact_objective": "过去未实现条件用过去虚拟系列；结果可在过去或现在",
+          "source_lines": [
+            [
+              6580,
+              6667
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p2/ch06/t02",
+              "evidence_summary": "过去和混合时间例型。",
+              "body_sha256": "1a54e58fac8b19ef54ffd12afa2766e23866e66273d96f231684331094011df1"
+            },
+            {
+              "slug": "p2/ch06/t02",
+              "evidence_summary": "原创明确过去条件影响现在。",
+              "body_sha256": "1a54e58fac8b19ef54ffd12afa2766e23866e66273d96f231684331094011df1"
+            }
+          ],
+          "objective_id": "it-10-s035-o02",
+          "source_pages": [
+            81
+          ]
+        },
+        {
+          "fact_objective": "开放未来可用未来/现在；普通假设se后勿误用条件式，间接疑问不同",
+          "source_lines": [
+            [
+              6580,
+              6667
+            ]
+          ],
+          "status": "existing-covered",
+          "existing_evidence": [
+            {
+              "slug": "p2/ch06/t02",
+              "evidence_summary": "原创开放未来、se avrei与间接疑问区别。",
+              "body_sha256": "1a54e58fac8b19ef54ffd12afa2766e23866e66273d96f231684331094011df1"
+            },
+            {
+              "slug": "p1/ch11/t05",
+              "evidence_summary": "将来形式。",
+              "body_sha256": "be59ebeb3499f7bcc0bf1ba72e0e520db0eeca67ba0d24b657aaafca49dd3d34"
+            }
+          ],
+          "objective_id": "it-10-s035-o03",
+          "source_pages": [
+            81
+          ]
+        }
+      ],
+      "source_cautions": [
+        "源把过去反事实的直陈未完成双句一律判错忽略口语语域；正式学习可推荐虚拟/条件式，不否认实际变体。",
+        "本站旧p2/ch06/t02第9行称开放条件主句不可能有过去时态，过强且尚未修；新补充通过不等于全页通过。"
+      ],
+      "excluded_expression": {
+        "status": "excluded-expression",
+        "exercise_pages": [
+          82
+        ],
+        "scope": "原例句、情境、练习题、题目顺序与答案不作为待移植内容；只记录通用语言事实。练习页上的通用规则提示另列。"
+      },
+      "coverage_result": "existing-covered"
+    }
+  ],
+  "counts": {
+    "existing-covered": 70,
+    "partial-existing": 17,
+    "existing-misleading": 15,
+    "missing-objective": 5
+  },
+  "completed_at_utc": "2026-10-28T06:26:52.667975+00:00",
+  "method": {
+    "source_read": "35/35教学section；41/41奇数教学页（PDF页1–81）实际讲解；p40和p46练习页中通用规则提示另读。先识别正文目标，再对照网站正文。",
+    "comparison": "读取相关slug实际讲解、构词/变位表与必要上下文；对未见目标在全部128个content正文中检索，再读取命中解释。既有台账标题映射只用于定位，不计为覆盖证据。",
+    "source_locator_policy": "source_lines为保守的完整教学页/事实提示范围（1-based、inclusive）；其中原例句只是阅读语境，不输出或移植。多页section按实际教学页分列，避免给不含目标的窄行号。",
+    "evidence_locator_policy": "existing_evidence使用确切content键及该正文SHA256；摘要为原创事实概括，不使用未经核准的内部行号。",
+    "expression_policy": "没有复制教材段落、题目、答案、原情境、例句序列或表格布局；单词、屈折形式和通用规则作为事实短语记录。",
+    "no_network_or_ui": "本次未使用网络/UI，未重新启动浏览器；此前解除localhost拦截被拒绝的动作未重试。",
+    "repository_writes": "无；仅review下审计文件与生成脚本。"
+  },
+  "status_definitions": {
+    "existing-covered": "该通用目标在实际正文中有可识别的教学解释；不等于该slug所有旧说法都无误。额外观察在source_cautions/报告项中保留。",
+    "partial-existing": "已有部分解释/形式或散见内容，但不足以通过完整事实目标。",
+    "existing-misleading": "相关正文存在，但范围错误或绝对表述直接妨碍该目标通过；未修复。",
+    "missing-objective": "未找到足以教会该目标的正文解释；不是仅缺同名标题。",
+    "excluded-expression": "教材原文表达、例句、练习和答案不纳入待补内容。"
+  },
+  "priority_candidates": [
+    {
+      "id": "R01",
+      "scope": "名词复数拼写分流",
+      "section_ids": [
+        "it-10-s007"
+      ],
+      "target_slugs": [
+        "p1/ch01/t02"
+      ],
+      "reason": "-io/-ia的合并删i规则会产生错误词形；-co/-go按紧邻字母推导也不可靠。",
+      "bounded_future_action": "若获后续范围授权，仅改复数规则段，分清-cia/-gia、重读i和-io；保留查词典/例外边界。"
+    },
+    {
+      "id": "R02",
+      "scope": "部分冠词：量与子集",
+      "section_ids": [
+        "it-10-s002"
+      ],
+      "target_slugs": [
+        "p1/ch02/t02",
+        "p1/ch02/t03"
+      ],
+      "reason": "把复数部分冠词约束到不可数，并以强调“一些”作为使用条件，妨碍基本理解。",
+      "bounded_future_action": "若获授权，澄清单数物质量、复数可数子集和不定复数功能；不把介词+部分冠词一律禁止。"
+    },
+    {
+      "id": "R03",
+      "scope": "形容词-ista及并列配合",
+      "section_ids": [
+        "it-10-s009"
+      ],
+      "target_slugs": [
+        "p1/ch03/t01"
+      ],
+      "reason": "非-o/-e一律不变的规则错误；并列名词共用形容词的配合目标缺失。",
+      "bounded_future_action": "若获授权，限定不变类并加入-ista形式及并列名词的基本性数配合。"
+    },
+    {
+      "id": "R04",
+      "scope": "名词性别线索的边界",
+      "section_ids": [
+        "it-10-s005",
+        "it-10-s006"
+      ],
+      "target_slugs": [
+        "p1/ch01/t01"
+      ],
+      "reason": "autista被归为阳性例外，与共性名词事实矛盾；-ù一律阴性过强。",
+      "bounded_future_action": "若获授权，局部修正共性词与词尾例外，不重写整章或职业称谓体系。"
+    },
+    {
+      "id": "R05",
+      "scope": "人名冠词的地区与语域",
+      "section_ids": [
+        "it-10-s003"
+      ],
+      "target_slugs": [
+        "p1/ch02/t01"
+      ],
+      "reason": "现有解释把女性名冠词归因为区分男女；来源又有旧式女性姓氏强制冠词规定。",
+      "bounded_future_action": "若获授权，仅换成中性的普通用法、地区/语域提示；不导入按性别强制的旧规则。"
+    },
+    {
+      "id": "R06",
+      "scope": "ci/ne及第三人称宾语组合",
+      "section_ids": [
+        "it-10-s011",
+        "it-10-s012",
+        "it-10-s013"
+      ],
+      "target_slugs": [
+        "p1/ch07/t01",
+        "p1/ch06/t03"
+      ],
+      "reason": "ne的非数量di/da用法仍不足；ci遇第三人称宾语/数量ne普遍省去及ce纯发音必用的旧规则会误导。",
+      "bounded_future_action": "若获授权，局部区分代词功能与组合可用性；不据此扩修全部代词章节。"
+    },
+    {
+      "id": "R07",
+      "scope": "alcuno与tutto的形数和语境",
+      "section_ids": [
+        "it-10-s018"
+      ],
+      "target_slugs": [
+        "p1/ch07/t04"
+      ],
+      "reason": "alcuno单数被泛说为复数意义；tutto代词被误说成没有性别变化。",
+      "bounded_future_action": "若获授权，仅澄清普通单数否定alcuno、复数alcuni/alcune和tutto系列配合。"
+    },
+    {
+      "id": "R08",
+      "scope": "基础疑问词的屈折与角色",
+      "section_ids": [
+        "it-10-s019"
+      ],
+      "target_slugs": [
+        "p2/ch07/t02"
+      ],
+      "reason": "现有正文列词和从句类别，但没有教che/quale/quanto的形式对比及限定/独立角色。",
+      "bounded_future_action": "若获授权，可用短原创说明补che不变、quale/quali、quanto四形及chi/che cosa对象；避免chi永远配单数的绝对规则。"
+    }
+  ],
+  "priority_policy": "最多8组仅供后续授权判断。当前用户要求旧页面问题只报告，未执行上述修复、未新增课程。其他未通过目标保留在逐节记录，未伪标existing-covered。",
+  "report_only_existing_page_findings": [
+    {
+      "slug": "p1/ch09/t02",
+      "finding": "bene/male无最高级与同页benissimo/malissimo矛盾；只报告，不作为本轮扩修任务。"
+    },
+    {
+      "slug": "p1/ch06/t03",
+      "finding": "将lo si结构判为错误的旧规范化表述过强；另有ne分词配合细则应避免从当前例型推到所有ne。"
+    },
+    {
+      "slug": "p1/ch06/t05",
+      "finding": "对A me mi式一概禁止，与p1/ch06/t02的口语说明冲突；应按信息结构和语域说明。"
+    },
+    {
+      "slug": "p1/ch07/t03",
+      "finding": "mamma/papà强制冠词的推导过强，基本亲属规则存在不等于此细节通过。"
+    },
+    {
+      "slug": "p1/ch07/t02",
+      "finding": "stesso/medesimo强制冠词与人称代词+stesso结构不相容。"
+    },
+    {
+      "slug": "p1/ch09/t01",
+      "finding": "il quale绝不能作直接宾语的概括过强；源文任何che可替换也不可靠。"
+    },
+    {
+      "slug": "p1/ch11/t07",
+      "finding": "旧“近过去时不能描述状况”与原创有界状态说明冲突。"
+    },
+    {
+      "slug": "p1/ch12/t02",
+      "finding": "将虚拟式普遍等同更文明/不强加观点不成立；主句后置便一律虚拟等旁支绝对断言亦未在本轮修订。"
+    },
+    {
+      "slug": "p1/ch12/t01",
+      "finding": "dire命令式dì/di’写法及dovere直陈指令与命令式分类需要后续核准；本次只报告疑点。"
+    },
+    {
+      "slug": "p1/ch05/t01",
+      "finding": "所有-le形容词生成-mente都删e的规则过强。"
+    },
+    {
+      "slug": "p1/ch08/t01",
+      "finding": "per+冠词合写未标旧式/文学语域；不能作为现代普通合写范式。"
+    },
+    {
+      "slug": "p1/ch13/t01",
+      "finding": "以a表示发展、di表示截止解释全部动词搭配过度概括；后部原创按词汇义项说明较准确。"
+    },
+    {
+      "slug": "p2/ch06/t02",
+      "finding": "开放条件主句不可能为过去时的旧绝对限制不成立；本轮原创条件句补充已覆盖所抽取主要事实，仍不代表整页清洁。"
+    }
+  ],
+  "scope_accounting": {
+    "completed_section_ids": [
+      "it-10-s001",
+      "it-10-s002",
+      "it-10-s003",
+      "it-10-s004",
+      "it-10-s005",
+      "it-10-s006",
+      "it-10-s007",
+      "it-10-s008",
+      "it-10-s009",
+      "it-10-s010",
+      "it-10-s011",
+      "it-10-s012",
+      "it-10-s013",
+      "it-10-s014",
+      "it-10-s015",
+      "it-10-s016",
+      "it-10-s017",
+      "it-10-s018",
+      "it-10-s019",
+      "it-10-s020",
+      "it-10-s021",
+      "it-10-s022",
+      "it-10-s023",
+      "it-10-s024",
+      "it-10-s025",
+      "it-10-s026",
+      "it-10-s027",
+      "it-10-s028",
+      "it-10-s029",
+      "it-10-s030",
+      "it-10-s031",
+      "it-10-s032",
+      "it-10-s033",
+      "it-10-s034",
+      "it-10-s035"
+    ],
+    "completed_teaching_pdf_pages": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      47,
+      49,
+      51,
+      53,
+      55,
+      57,
+      59,
+      61,
+      63,
+      65,
+      67,
+      69,
+      71,
+      73,
+      75,
+      77,
+      79,
+      81
+    ],
+    "additional_factual_notes_read": [
+      {
+        "page": 40,
+        "lines": [
+          3098,
+          3100
+        ]
+      },
+      {
+        "page": 46,
+        "lines": [
+          3545,
+          3546
+        ]
+      }
+    ],
+    "remaining_unread_teaching_sections_in_this_book": [],
+    "excluded_answer_sections": [
+      {
+        "section_id": "it-10-s036",
+        "reason": "本次不读审答案容器；原题/答案表达不可复用，不据此把整容器标为已审或完全排除完成。",
+        "reviewed": false,
+        "ledger_status_unchanged": "pending-factual-review"
+      },
+      {
+        "section_id": "it-10-s037",
+        "reason": "本次不读审答案容器；原题/答案表达不可复用，不据此把整容器标为已审或完全排除完成。",
+        "reviewed": false,
+        "ledger_status_unchanged": "pending-factual-review"
+      },
+      {
+        "section_id": "it-10-s038",
+        "reason": "本次不读审答案容器；原题/答案表达不可复用，不据此把整容器标为已审或完全排除完成。",
+        "reviewed": false,
+        "ledger_status_unchanged": "pending-factual-review"
+      },
+      {
+        "section_id": "it-10-s039",
+        "reason": "本次不读审答案容器；原题/答案表达不可复用，不据此把整容器标为已审或完全排除完成。",
+        "reviewed": false,
+        "ledger_status_unchanged": "pending-factual-review"
+      }
+    ],
+    "excluded_answer_pdf_pages": [
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "other_books": "本次未核查；此前多书台账仍不能据此升级成全书逐事实通过。",
+    "whole_project_complete": false,
+    "site_content_updated": false,
+    "new_lessons_or_fixes_written": 0,
+    "remaining_objective_ids": [
+      "it-10-s001-o03",
+      "it-10-s002-o02",
+      "it-10-s002-o03",
+      "it-10-s003-o01",
+      "it-10-s003-o02",
+      "it-10-s004-o01",
+      "it-10-s004-o02",
+      "it-10-s004-o03",
+      "it-10-s005-o01",
+      "it-10-s005-o02",
+      "it-10-s006-o03",
+      "it-10-s007-o02",
+      "it-10-s007-o03",
+      "it-10-s007-o04",
+      "it-10-s008-o01",
+      "it-10-s008-o02",
+      "it-10-s009-o02",
+      "it-10-s009-o03",
+      "it-10-s011-o01",
+      "it-10-s011-o03",
+      "it-10-s012-o04",
+      "it-10-s013-o03",
+      "it-10-s016-o03",
+      "it-10-s017-o02",
+      "it-10-s018-o04",
+      "it-10-s018-o05",
+      "it-10-s018-o06",
+      "it-10-s019-o01",
+      "it-10-s019-o02",
+      "it-10-s020-o02",
+      "it-10-s020-o05",
+      "it-10-s025-o01",
+      "it-10-s025-o05",
+      "it-10-s027-o01",
+      "it-10-s032-o02",
+      "it-10-s032-o03",
+      "it-10-s032-o05"
+    ],
+    "remaining_work_statement": "本书阅读/核对这一有限任务完成；37个目标尚未达到现有准确完整覆盖。修订、补充及其再审未执行，其他书和整体工程不算完成。",
+    "whole_books_completed_increment": 0,
+    "ledger_interpretation": {
+      "factual-objectives-covered": 15,
+      "factual-review-open-gaps": 20,
+      "answer_containers": "4个仍pending，表达不可复用标志保留；未读审、不自动完成。"
+    }
+  },
+  "provided_primary_source_context": {
+    "provenance": "以下为协调者已核对并提供的来源背景；本审计未发起网络访问，不将其描述为本agent独立检索。",
+    "references": [
+      {
+        "url": "https://dizionario.internazionale.it/parola/autista",
+        "fact": "autista属阳性/阴性共形职业名词"
+      },
+      {
+        "url": "https://accademiadellacrusca.it/it/consulenza/larticolo-prima-di-un-prenome/98",
+        "fact": "人名前冠词存在地区和语域差异，不按男女姓氏强制规定"
+      },
+      {
+        "url": "https://accademiadellacrusca.it/it/consulenza/la-sequenza-preposizione--articolo-partitivo-si-pu%C3%B2-usare-in-dei-casi-e-in-quali/723",
+        "fact": "介词与部分冠词的组合须按分布判断，并非全部禁用"
+      }
+    ]
+  },
+  "limitations": [
+    "完整读取指定35个教学section的讲解，不等于抄录、翻译或重新发布教材；原例句/题目/答案均排除。",
+    "覆盖结论针对抽取的通用事实目标；不是128个网站topic的全面校对或语言学认证。",
+    "来源存在年代/语域简化和OCR列序损坏；疑点已列，不将教材当作唯一正确标准。",
+    "本次无新增网络核验；无法独立确认的旁支变体仅报告为需核准。",
+    "内容来源/原创性认证与全书相似度扫描不在本次覆盖审计范围；没有作此类宣称。"
+  ],
+  "execution_blockers": [],
+  "prior_denied_action_state": {
+    "action": "await context.unroute('**/*')",
+    "target": "此前localhost QA浏览器路由拦截",
+    "reason": "自动审批拒绝移除localhost-only拦截，因可放行外部目标超出获准QA范围",
+    "state": "denied_not_executed",
+    "retried_in_this_audit": false
+  },
+  "section_counts": {
+    "partial-existing-not-passed": 20,
+    "existing-covered": 15
+  },
+  "validation": {
+    "all_35_sections_present": true,
+    "all_41_teaching_pages_read": true,
+    "all_source_ranges_within_section": true,
+    "exact_input_hashes_rechecked": true,
+    "max_8_priority_candidates": true,
+    "json_parse": "PASS",
+    "repository_content_edits": 0
+  }
+}

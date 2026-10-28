@@ -1,0 +1,2650 @@
+{
+  "schema": 1,
+  "asOf": "2026-10-28",
+  "basis": "Finite source section queue, four rows per group; nested containers can overlap and this is not a page-count completion estimate. A group may be split further when actual objectives are numerous.",
+  "batches": [
+    {
+      "id": "de-01-group-01",
+      "bookId": "de-01",
+      "lang": "de",
+      "sectionIds": [
+        "de-01-s003",
+        "de-01-s004",
+        "de-01-s005",
+        "de-01-s006"
+      ],
+      "startingStates": {
+        "de-01-s003": "pending-factual-review",
+        "de-01-s004": "pending-factual-review",
+        "de-01-s005": "pending-factual-review",
+        "de-01-s006": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-01-group-02",
+      "bookId": "de-01",
+      "lang": "de",
+      "sectionIds": [
+        "de-01-s007",
+        "de-01-s008",
+        "de-01-s009",
+        "de-01-s010"
+      ],
+      "startingStates": {
+        "de-01-s007": "pending-factual-review",
+        "de-01-s008": "pending-factual-review",
+        "de-01-s009": "pending-factual-review",
+        "de-01-s010": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-01-group-03",
+      "bookId": "de-01",
+      "lang": "de",
+      "sectionIds": [
+        "de-01-s011",
+        "de-01-s012",
+        "de-01-s013",
+        "de-01-s014"
+      ],
+      "startingStates": {
+        "de-01-s011": "pending-factual-review",
+        "de-01-s012": "pending-factual-review",
+        "de-01-s013": "pending-factual-review",
+        "de-01-s014": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-01-group-04",
+      "bookId": "de-01",
+      "lang": "de",
+      "sectionIds": [
+        "de-01-s015",
+        "de-01-s016",
+        "de-01-s017",
+        "de-01-s018"
+      ],
+      "startingStates": {
+        "de-01-s015": "pending-factual-review",
+        "de-01-s016": "pending-factual-review",
+        "de-01-s017": "pending-factual-review",
+        "de-01-s018": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-01-group-05",
+      "bookId": "de-01",
+      "lang": "de",
+      "sectionIds": [
+        "de-01-s019",
+        "de-01-s020",
+        "de-01-s021",
+        "de-01-s022"
+      ],
+      "startingStates": {
+        "de-01-s019": "pending-factual-review",
+        "de-01-s020": "pending-factual-review",
+        "de-01-s021": "pending-factual-review",
+        "de-01-s022": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-02-group-01",
+      "bookId": "de-02",
+      "lang": "de",
+      "sectionIds": [
+        "de-02-s002",
+        "de-02-s003",
+        "de-02-s004",
+        "de-02-s005"
+      ],
+      "startingStates": {
+        "de-02-s002": "partial-factual-review",
+        "de-02-s003": "existing-course-mapped",
+        "de-02-s004": "existing-course-mapped",
+        "de-02-s005": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-02-group-02",
+      "bookId": "de-02",
+      "lang": "de",
+      "sectionIds": [
+        "de-02-s006",
+        "de-02-s007",
+        "de-02-s008",
+        "de-02-s009"
+      ],
+      "startingStates": {
+        "de-02-s006": "existing-course-mapped",
+        "de-02-s007": "existing-course-mapped",
+        "de-02-s008": "existing-course-mapped",
+        "de-02-s009": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-02-group-03",
+      "bookId": "de-02",
+      "lang": "de",
+      "sectionIds": [
+        "de-02-s010",
+        "de-02-s011",
+        "de-02-s012",
+        "de-02-s013"
+      ],
+      "startingStates": {
+        "de-02-s010": "existing-course-mapped",
+        "de-02-s011": "existing-course-mapped",
+        "de-02-s012": "existing-course-mapped",
+        "de-02-s013": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-03-group-01",
+      "bookId": "de-03",
+      "lang": "de",
+      "sectionIds": [
+        "de-03-s002",
+        "de-03-s003",
+        "de-03-s004",
+        "de-03-s005"
+      ],
+      "startingStates": {
+        "de-03-s002": "existing-course-mapped",
+        "de-03-s003": "existing-course-mapped",
+        "de-03-s004": "existing-course-mapped",
+        "de-03-s005": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-03-group-02",
+      "bookId": "de-03",
+      "lang": "de",
+      "sectionIds": [
+        "de-03-s006",
+        "de-03-s007",
+        "de-03-s008",
+        "de-03-s009"
+      ],
+      "startingStates": {
+        "de-03-s006": "existing-course-mapped",
+        "de-03-s007": "existing-course-mapped",
+        "de-03-s008": "existing-course-mapped",
+        "de-03-s009": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-03-group-03",
+      "bookId": "de-03",
+      "lang": "de",
+      "sectionIds": [
+        "de-03-s010",
+        "de-03-s011",
+        "de-03-s012",
+        "de-03-s013"
+      ],
+      "startingStates": {
+        "de-03-s010": "existing-course-mapped",
+        "de-03-s011": "existing-course-mapped",
+        "de-03-s012": "existing-course-mapped",
+        "de-03-s013": "partial-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-04-group-01",
+      "bookId": "de-04",
+      "lang": "de",
+      "sectionIds": [
+        "de-04-s002",
+        "de-04-s003",
+        "de-04-s004",
+        "de-04-s005"
+      ],
+      "startingStates": {
+        "de-04-s002": "existing-course-mapped",
+        "de-04-s003": "existing-course-mapped",
+        "de-04-s004": "existing-course-mapped",
+        "de-04-s005": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-04-group-02",
+      "bookId": "de-04",
+      "lang": "de",
+      "sectionIds": [
+        "de-04-s006",
+        "de-04-s007",
+        "de-04-s008",
+        "de-04-s009"
+      ],
+      "startingStates": {
+        "de-04-s006": "existing-course-mapped",
+        "de-04-s007": "existing-course-mapped",
+        "de-04-s008": "existing-course-mapped",
+        "de-04-s009": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-04-group-03",
+      "bookId": "de-04",
+      "lang": "de",
+      "sectionIds": [
+        "de-04-s010",
+        "de-04-s011"
+      ],
+      "startingStates": {
+        "de-04-s010": "existing-course-mapped",
+        "de-04-s011": "partial-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-05-group-01",
+      "bookId": "de-05",
+      "lang": "de",
+      "sectionIds": [
+        "de-05-s002",
+        "de-05-s003",
+        "de-05-s004",
+        "de-05-s005"
+      ],
+      "startingStates": {
+        "de-05-s002": "existing-course-mapped",
+        "de-05-s003": "existing-course-mapped",
+        "de-05-s004": "existing-course-mapped",
+        "de-05-s005": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-05-group-02",
+      "bookId": "de-05",
+      "lang": "de",
+      "sectionIds": [
+        "de-05-s006",
+        "de-05-s007",
+        "de-05-s008",
+        "de-05-s009"
+      ],
+      "startingStates": {
+        "de-05-s006": "existing-course-mapped",
+        "de-05-s007": "existing-course-mapped",
+        "de-05-s008": "existing-course-mapped",
+        "de-05-s009": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-05-group-03",
+      "bookId": "de-05",
+      "lang": "de",
+      "sectionIds": [
+        "de-05-s010",
+        "de-05-s011"
+      ],
+      "startingStates": {
+        "de-05-s010": "existing-course-mapped",
+        "de-05-s011": "partial-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-06-group-01",
+      "bookId": "de-06",
+      "lang": "de",
+      "sectionIds": [
+        "de-06-s002",
+        "de-06-s003",
+        "de-06-s004",
+        "de-06-s005"
+      ],
+      "startingStates": {
+        "de-06-s002": "existing-course-mapped",
+        "de-06-s003": "existing-course-mapped",
+        "de-06-s004": "existing-course-mapped",
+        "de-06-s005": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-06-group-02",
+      "bookId": "de-06",
+      "lang": "de",
+      "sectionIds": [
+        "de-06-s006",
+        "de-06-s007",
+        "de-06-s008",
+        "de-06-s009"
+      ],
+      "startingStates": {
+        "de-06-s006": "existing-course-mapped",
+        "de-06-s007": "existing-course-mapped",
+        "de-06-s008": "existing-course-mapped",
+        "de-06-s009": "existing-course-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "de-06-group-03",
+      "bookId": "de-06",
+      "lang": "de",
+      "sectionIds": [
+        "de-06-s010",
+        "de-06-s011"
+      ],
+      "startingStates": {
+        "de-06-s010": "existing-course-mapped",
+        "de-06-s011": "partial-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-07-group-01",
+      "bookId": "it-07",
+      "lang": "it",
+      "sectionIds": [
+        "it-07-s004",
+        "it-07-s005",
+        "it-07-s006",
+        "it-07-s007"
+      ],
+      "startingStates": {
+        "it-07-s004": "pending-factual-review",
+        "it-07-s005": "pending-factual-review",
+        "it-07-s006": "pending-factual-review",
+        "it-07-s007": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-07-group-02",
+      "bookId": "it-07",
+      "lang": "it",
+      "sectionIds": [
+        "it-07-s008",
+        "it-07-s009",
+        "it-07-s010",
+        "it-07-s011"
+      ],
+      "startingStates": {
+        "it-07-s008": "pending-factual-review",
+        "it-07-s009": "pending-factual-review",
+        "it-07-s010": "pending-factual-review",
+        "it-07-s011": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-07-group-03",
+      "bookId": "it-07",
+      "lang": "it",
+      "sectionIds": [
+        "it-07-s012",
+        "it-07-s013",
+        "it-07-s014"
+      ],
+      "startingStates": {
+        "it-07-s012": "pending-factual-review",
+        "it-07-s013": "pending-factual-review",
+        "it-07-s014": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-08-group-01",
+      "bookId": "it-08",
+      "lang": "it",
+      "sectionIds": [
+        "it-08-s002",
+        "it-08-s003",
+        "it-08-s004",
+        "it-08-s005"
+      ],
+      "startingStates": {
+        "it-08-s002": "pending-factual-review",
+        "it-08-s003": "pending-factual-review",
+        "it-08-s004": "pending-factual-review",
+        "it-08-s005": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-08-group-02",
+      "bookId": "it-08",
+      "lang": "it",
+      "sectionIds": [
+        "it-08-s006",
+        "it-08-s007",
+        "it-08-s008",
+        "it-08-s009"
+      ],
+      "startingStates": {
+        "it-08-s006": "pending-factual-review",
+        "it-08-s007": "pending-factual-review",
+        "it-08-s008": "pending-factual-review",
+        "it-08-s009": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-08-group-03",
+      "bookId": "it-08",
+      "lang": "it",
+      "sectionIds": [
+        "it-08-s010",
+        "it-08-s011",
+        "it-08-s012",
+        "it-08-s013"
+      ],
+      "startingStates": {
+        "it-08-s010": "pending-factual-review",
+        "it-08-s011": "pending-factual-review",
+        "it-08-s012": "pending-factual-review",
+        "it-08-s013": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-08-group-04",
+      "bookId": "it-08",
+      "lang": "it",
+      "sectionIds": [
+        "it-08-s014",
+        "it-08-s015",
+        "it-08-s016",
+        "it-08-s017"
+      ],
+      "startingStates": {
+        "it-08-s014": "pending-factual-review",
+        "it-08-s015": "pending-factual-review",
+        "it-08-s016": "pending-factual-review",
+        "it-08-s017": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-08-group-05",
+      "bookId": "it-08",
+      "lang": "it",
+      "sectionIds": [
+        "it-08-s018",
+        "it-08-s019",
+        "it-08-s020",
+        "it-08-s021"
+      ],
+      "startingStates": {
+        "it-08-s018": "pending-factual-review",
+        "it-08-s019": "pending-factual-review",
+        "it-08-s020": "pending-factual-review",
+        "it-08-s021": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-09-group-01",
+      "bookId": "it-09",
+      "lang": "it",
+      "sectionIds": [
+        "it-09-s001"
+      ],
+      "startingStates": {
+        "it-09-s001": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-10-group-01",
+      "bookId": "it-10",
+      "lang": "it",
+      "sectionIds": [
+        "it-10-s001",
+        "it-10-s002",
+        "it-10-s003",
+        "it-10-s004"
+      ],
+      "startingStates": {
+        "it-10-s001": "factual-review-open-gaps",
+        "it-10-s002": "factual-review-open-gaps",
+        "it-10-s003": "factual-review-open-gaps",
+        "it-10-s004": "factual-review-open-gaps"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-10-group-02",
+      "bookId": "it-10",
+      "lang": "it",
+      "sectionIds": [
+        "it-10-s005",
+        "it-10-s006",
+        "it-10-s007",
+        "it-10-s008"
+      ],
+      "startingStates": {
+        "it-10-s005": "factual-review-open-gaps",
+        "it-10-s006": "factual-review-open-gaps",
+        "it-10-s007": "factual-review-open-gaps",
+        "it-10-s008": "factual-review-open-gaps"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-10-group-03",
+      "bookId": "it-10",
+      "lang": "it",
+      "sectionIds": [
+        "it-10-s009",
+        "it-10-s011",
+        "it-10-s012",
+        "it-10-s013"
+      ],
+      "startingStates": {
+        "it-10-s009": "factual-review-open-gaps",
+        "it-10-s011": "factual-review-open-gaps",
+        "it-10-s012": "factual-review-open-gaps",
+        "it-10-s013": "factual-review-open-gaps"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-10-group-04",
+      "bookId": "it-10",
+      "lang": "it",
+      "sectionIds": [
+        "it-10-s016",
+        "it-10-s017",
+        "it-10-s018",
+        "it-10-s019"
+      ],
+      "startingStates": {
+        "it-10-s016": "factual-review-open-gaps",
+        "it-10-s017": "factual-review-open-gaps",
+        "it-10-s018": "factual-review-open-gaps",
+        "it-10-s019": "factual-review-open-gaps"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-10-group-05",
+      "bookId": "it-10",
+      "lang": "it",
+      "sectionIds": [
+        "it-10-s020",
+        "it-10-s025",
+        "it-10-s027",
+        "it-10-s032"
+      ],
+      "startingStates": {
+        "it-10-s020": "factual-review-open-gaps",
+        "it-10-s025": "factual-review-open-gaps",
+        "it-10-s027": "factual-review-open-gaps",
+        "it-10-s032": "factual-review-open-gaps"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-10-group-06",
+      "bookId": "it-10",
+      "lang": "it",
+      "sectionIds": [
+        "it-10-s036",
+        "it-10-s037",
+        "it-10-s038",
+        "it-10-s039"
+      ],
+      "startingStates": {
+        "it-10-s036": "pending-factual-review",
+        "it-10-s037": "pending-factual-review",
+        "it-10-s038": "pending-factual-review",
+        "it-10-s039": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-11-group-01",
+      "bookId": "it-11",
+      "lang": "it",
+      "sectionIds": [
+        "it-11-s001"
+      ],
+      "startingStates": {
+        "it-11-s001": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-12-group-01",
+      "bookId": "it-12",
+      "lang": "it",
+      "sectionIds": [
+        "it-12-s002",
+        "it-12-s003",
+        "it-12-s004",
+        "it-12-s005"
+      ],
+      "startingStates": {
+        "it-12-s002": "pending-factual-review",
+        "it-12-s003": "pending-factual-review",
+        "it-12-s004": "pending-factual-review",
+        "it-12-s005": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-12-group-02",
+      "bookId": "it-12",
+      "lang": "it",
+      "sectionIds": [
+        "it-12-s006",
+        "it-12-s007",
+        "it-12-s008",
+        "it-12-s009"
+      ],
+      "startingStates": {
+        "it-12-s006": "pending-factual-review",
+        "it-12-s007": "pending-factual-review",
+        "it-12-s008": "pending-factual-review",
+        "it-12-s009": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-12-group-03",
+      "bookId": "it-12",
+      "lang": "it",
+      "sectionIds": [
+        "it-12-s010",
+        "it-12-s011",
+        "it-12-s012"
+      ],
+      "startingStates": {
+        "it-12-s010": "pending-factual-review",
+        "it-12-s011": "pending-factual-review",
+        "it-12-s012": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-13-group-01",
+      "bookId": "it-13",
+      "lang": "it",
+      "sectionIds": [
+        "it-13-s002",
+        "it-13-s003",
+        "it-13-s004"
+      ],
+      "startingStates": {
+        "it-13-s002": "partial-factual-review",
+        "it-13-s003": "partial-factual-review",
+        "it-13-s004": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-01",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s002",
+        "it-14-s003",
+        "it-14-s004",
+        "it-14-s005"
+      ],
+      "startingStates": {
+        "it-14-s002": "pending-factual-review",
+        "it-14-s003": "pending-factual-review",
+        "it-14-s004": "existing-topic-mapped",
+        "it-14-s005": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-02",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s006",
+        "it-14-s007",
+        "it-14-s008",
+        "it-14-s009"
+      ],
+      "startingStates": {
+        "it-14-s006": "pending-factual-review",
+        "it-14-s007": "existing-topic-mapped",
+        "it-14-s008": "existing-topic-mapped",
+        "it-14-s009": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-03",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s010",
+        "it-14-s011",
+        "it-14-s012",
+        "it-14-s013"
+      ],
+      "startingStates": {
+        "it-14-s010": "existing-topic-mapped",
+        "it-14-s011": "pending-factual-review",
+        "it-14-s012": "existing-topic-mapped",
+        "it-14-s013": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-04",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s014",
+        "it-14-s015",
+        "it-14-s016",
+        "it-14-s017"
+      ],
+      "startingStates": {
+        "it-14-s014": "pending-factual-review",
+        "it-14-s015": "existing-topic-mapped",
+        "it-14-s016": "existing-topic-mapped",
+        "it-14-s017": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-05",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s018",
+        "it-14-s019",
+        "it-14-s020",
+        "it-14-s021"
+      ],
+      "startingStates": {
+        "it-14-s018": "existing-topic-mapped",
+        "it-14-s019": "pending-factual-review",
+        "it-14-s020": "existing-topic-mapped",
+        "it-14-s021": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-06",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s022",
+        "it-14-s023",
+        "it-14-s024",
+        "it-14-s025"
+      ],
+      "startingStates": {
+        "it-14-s022": "existing-topic-mapped",
+        "it-14-s023": "existing-topic-mapped",
+        "it-14-s024": "existing-topic-mapped",
+        "it-14-s025": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-07",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s026",
+        "it-14-s027",
+        "it-14-s028",
+        "it-14-s029"
+      ],
+      "startingStates": {
+        "it-14-s026": "existing-topic-mapped",
+        "it-14-s027": "existing-topic-mapped",
+        "it-14-s028": "existing-topic-mapped",
+        "it-14-s029": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-08",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s030",
+        "it-14-s031",
+        "it-14-s032",
+        "it-14-s033"
+      ],
+      "startingStates": {
+        "it-14-s030": "existing-topic-mapped",
+        "it-14-s031": "existing-topic-mapped",
+        "it-14-s032": "existing-topic-mapped",
+        "it-14-s033": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-09",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s034",
+        "it-14-s035",
+        "it-14-s036",
+        "it-14-s037"
+      ],
+      "startingStates": {
+        "it-14-s034": "existing-topic-mapped",
+        "it-14-s035": "pending-factual-review",
+        "it-14-s036": "existing-topic-mapped",
+        "it-14-s037": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-10",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s038",
+        "it-14-s039",
+        "it-14-s040",
+        "it-14-s041"
+      ],
+      "startingStates": {
+        "it-14-s038": "pending-factual-review",
+        "it-14-s039": "existing-topic-mapped",
+        "it-14-s040": "existing-topic-mapped",
+        "it-14-s041": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-11",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s042",
+        "it-14-s043",
+        "it-14-s044",
+        "it-14-s045"
+      ],
+      "startingStates": {
+        "it-14-s042": "existing-topic-mapped",
+        "it-14-s043": "existing-topic-mapped",
+        "it-14-s044": "pending-factual-review",
+        "it-14-s045": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-12",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s046",
+        "it-14-s047",
+        "it-14-s048",
+        "it-14-s049"
+      ],
+      "startingStates": {
+        "it-14-s046": "existing-topic-mapped",
+        "it-14-s047": "existing-topic-mapped",
+        "it-14-s048": "existing-topic-mapped",
+        "it-14-s049": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-13",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s050",
+        "it-14-s051",
+        "it-14-s052",
+        "it-14-s053"
+      ],
+      "startingStates": {
+        "it-14-s050": "existing-topic-mapped",
+        "it-14-s051": "existing-topic-mapped",
+        "it-14-s052": "pending-factual-review",
+        "it-14-s053": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-14",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s054",
+        "it-14-s055",
+        "it-14-s056",
+        "it-14-s057"
+      ],
+      "startingStates": {
+        "it-14-s054": "existing-topic-mapped",
+        "it-14-s055": "existing-topic-mapped",
+        "it-14-s056": "pending-factual-review",
+        "it-14-s057": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-15",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s058",
+        "it-14-s059",
+        "it-14-s060",
+        "it-14-s061"
+      ],
+      "startingStates": {
+        "it-14-s058": "existing-topic-mapped",
+        "it-14-s059": "existing-topic-mapped",
+        "it-14-s060": "pending-factual-review",
+        "it-14-s061": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-16",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s062",
+        "it-14-s063",
+        "it-14-s064",
+        "it-14-s065"
+      ],
+      "startingStates": {
+        "it-14-s062": "existing-topic-mapped",
+        "it-14-s063": "existing-topic-mapped",
+        "it-14-s064": "pending-factual-review",
+        "it-14-s065": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-17",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s066",
+        "it-14-s067",
+        "it-14-s068",
+        "it-14-s069"
+      ],
+      "startingStates": {
+        "it-14-s066": "existing-topic-mapped",
+        "it-14-s067": "existing-topic-mapped",
+        "it-14-s068": "existing-topic-mapped",
+        "it-14-s069": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-18",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s070",
+        "it-14-s071",
+        "it-14-s072",
+        "it-14-s073"
+      ],
+      "startingStates": {
+        "it-14-s070": "existing-topic-mapped",
+        "it-14-s071": "existing-topic-mapped",
+        "it-14-s072": "existing-topic-mapped",
+        "it-14-s073": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-19",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s074",
+        "it-14-s075",
+        "it-14-s076",
+        "it-14-s077"
+      ],
+      "startingStates": {
+        "it-14-s074": "pending-factual-review",
+        "it-14-s075": "existing-topic-mapped",
+        "it-14-s076": "existing-topic-mapped",
+        "it-14-s077": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-20",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s078",
+        "it-14-s079",
+        "it-14-s080",
+        "it-14-s081"
+      ],
+      "startingStates": {
+        "it-14-s078": "existing-topic-mapped",
+        "it-14-s079": "existing-topic-mapped",
+        "it-14-s080": "existing-topic-mapped",
+        "it-14-s081": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-21",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s082",
+        "it-14-s083",
+        "it-14-s084",
+        "it-14-s085"
+      ],
+      "startingStates": {
+        "it-14-s082": "pending-factual-review",
+        "it-14-s083": "existing-topic-mapped",
+        "it-14-s084": "existing-topic-mapped",
+        "it-14-s085": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-22",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s086",
+        "it-14-s087",
+        "it-14-s088",
+        "it-14-s089"
+      ],
+      "startingStates": {
+        "it-14-s086": "existing-topic-mapped",
+        "it-14-s087": "existing-topic-mapped",
+        "it-14-s088": "existing-topic-mapped",
+        "it-14-s089": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-23",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s090",
+        "it-14-s091",
+        "it-14-s092",
+        "it-14-s093"
+      ],
+      "startingStates": {
+        "it-14-s090": "existing-topic-mapped",
+        "it-14-s091": "existing-topic-mapped",
+        "it-14-s092": "existing-topic-mapped",
+        "it-14-s093": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-24",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s094",
+        "it-14-s095",
+        "it-14-s096",
+        "it-14-s097"
+      ],
+      "startingStates": {
+        "it-14-s094": "existing-topic-mapped",
+        "it-14-s095": "existing-topic-mapped",
+        "it-14-s096": "existing-topic-mapped",
+        "it-14-s097": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-25",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s098",
+        "it-14-s099",
+        "it-14-s100",
+        "it-14-s101"
+      ],
+      "startingStates": {
+        "it-14-s098": "existing-topic-mapped",
+        "it-14-s099": "existing-topic-mapped",
+        "it-14-s100": "existing-topic-mapped",
+        "it-14-s101": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-26",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s102",
+        "it-14-s103",
+        "it-14-s104",
+        "it-14-s105"
+      ],
+      "startingStates": {
+        "it-14-s102": "existing-topic-mapped",
+        "it-14-s103": "existing-topic-mapped",
+        "it-14-s104": "existing-topic-mapped",
+        "it-14-s105": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-27",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s106",
+        "it-14-s107",
+        "it-14-s108",
+        "it-14-s109"
+      ],
+      "startingStates": {
+        "it-14-s106": "existing-topic-mapped",
+        "it-14-s107": "existing-topic-mapped",
+        "it-14-s108": "existing-topic-mapped",
+        "it-14-s109": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-28",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s110",
+        "it-14-s111",
+        "it-14-s112",
+        "it-14-s113"
+      ],
+      "startingStates": {
+        "it-14-s110": "existing-topic-mapped",
+        "it-14-s111": "existing-topic-mapped",
+        "it-14-s112": "existing-topic-mapped",
+        "it-14-s113": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-29",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s114",
+        "it-14-s115",
+        "it-14-s116",
+        "it-14-s117"
+      ],
+      "startingStates": {
+        "it-14-s114": "existing-topic-mapped",
+        "it-14-s115": "pending-factual-review",
+        "it-14-s116": "existing-topic-mapped",
+        "it-14-s117": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-30",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s118",
+        "it-14-s119",
+        "it-14-s120",
+        "it-14-s121"
+      ],
+      "startingStates": {
+        "it-14-s118": "existing-topic-mapped",
+        "it-14-s119": "existing-topic-mapped",
+        "it-14-s120": "pending-factual-review",
+        "it-14-s121": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-31",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s122",
+        "it-14-s123",
+        "it-14-s124",
+        "it-14-s125"
+      ],
+      "startingStates": {
+        "it-14-s122": "existing-topic-mapped",
+        "it-14-s123": "existing-topic-mapped",
+        "it-14-s124": "existing-topic-mapped",
+        "it-14-s125": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-32",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s126",
+        "it-14-s127",
+        "it-14-s128",
+        "it-14-s129"
+      ],
+      "startingStates": {
+        "it-14-s126": "pending-factual-review",
+        "it-14-s127": "existing-topic-mapped",
+        "it-14-s128": "existing-topic-mapped",
+        "it-14-s129": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-14-group-33",
+      "bookId": "it-14",
+      "lang": "it",
+      "sectionIds": [
+        "it-14-s130",
+        "it-14-s131",
+        "it-14-s132",
+        "it-14-s133"
+      ],
+      "startingStates": {
+        "it-14-s130": "existing-topic-mapped",
+        "it-14-s131": "existing-topic-mapped",
+        "it-14-s132": "existing-topic-mapped",
+        "it-14-s133": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-15-group-01",
+      "bookId": "it-15",
+      "lang": "it",
+      "sectionIds": [
+        "it-15-s001"
+      ],
+      "startingStates": {
+        "it-15-s001": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-16-group-01",
+      "bookId": "it-16",
+      "lang": "it",
+      "sectionIds": [
+        "it-16-s002",
+        "it-16-s003",
+        "it-16-s004",
+        "it-16-s005"
+      ],
+      "startingStates": {
+        "it-16-s002": "existing-topic-mapped",
+        "it-16-s003": "existing-topic-mapped",
+        "it-16-s004": "existing-topic-mapped",
+        "it-16-s005": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-16-group-02",
+      "bookId": "it-16",
+      "lang": "it",
+      "sectionIds": [
+        "it-16-s006",
+        "it-16-s007",
+        "it-16-s008",
+        "it-16-s009"
+      ],
+      "startingStates": {
+        "it-16-s006": "existing-topic-mapped",
+        "it-16-s007": "existing-topic-mapped",
+        "it-16-s008": "existing-topic-mapped",
+        "it-16-s009": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-16-group-03",
+      "bookId": "it-16",
+      "lang": "it",
+      "sectionIds": [
+        "it-16-s010",
+        "it-16-s011",
+        "it-16-s012",
+        "it-16-s013"
+      ],
+      "startingStates": {
+        "it-16-s010": "existing-topic-mapped",
+        "it-16-s011": "existing-topic-mapped",
+        "it-16-s012": "existing-topic-mapped",
+        "it-16-s013": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-16-group-04",
+      "bookId": "it-16",
+      "lang": "it",
+      "sectionIds": [
+        "it-16-s014",
+        "it-16-s015",
+        "it-16-s016",
+        "it-16-s017"
+      ],
+      "startingStates": {
+        "it-16-s014": "existing-topic-mapped",
+        "it-16-s015": "existing-topic-mapped",
+        "it-16-s016": "existing-topic-mapped",
+        "it-16-s017": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-16-group-05",
+      "bookId": "it-16",
+      "lang": "it",
+      "sectionIds": [
+        "it-16-s018",
+        "it-16-s019",
+        "it-16-s020",
+        "it-16-s021"
+      ],
+      "startingStates": {
+        "it-16-s018": "existing-topic-mapped",
+        "it-16-s019": "existing-topic-mapped",
+        "it-16-s020": "existing-topic-mapped",
+        "it-16-s021": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-16-group-06",
+      "bookId": "it-16",
+      "lang": "it",
+      "sectionIds": [
+        "it-16-s022",
+        "it-16-s023",
+        "it-16-s024",
+        "it-16-s025"
+      ],
+      "startingStates": {
+        "it-16-s022": "existing-topic-mapped",
+        "it-16-s023": "existing-topic-mapped",
+        "it-16-s024": "existing-topic-mapped",
+        "it-16-s025": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-16-group-07",
+      "bookId": "it-16",
+      "lang": "it",
+      "sectionIds": [
+        "it-16-s026",
+        "it-16-s027",
+        "it-16-s028",
+        "it-16-s029"
+      ],
+      "startingStates": {
+        "it-16-s026": "existing-topic-mapped",
+        "it-16-s027": "existing-topic-mapped",
+        "it-16-s028": "existing-topic-mapped",
+        "it-16-s029": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-16-group-08",
+      "bookId": "it-16",
+      "lang": "it",
+      "sectionIds": [
+        "it-16-s030",
+        "it-16-s031",
+        "it-16-s032",
+        "it-16-s033"
+      ],
+      "startingStates": {
+        "it-16-s030": "existing-topic-mapped",
+        "it-16-s031": "existing-topic-mapped",
+        "it-16-s032": "existing-topic-mapped",
+        "it-16-s033": "existing-topic-mapped"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-17-group-01",
+      "bookId": "it-17",
+      "lang": "it",
+      "sectionIds": [
+        "it-17-s002",
+        "it-17-s003",
+        "it-17-s004",
+        "it-17-s005"
+      ],
+      "startingStates": {
+        "it-17-s002": "pending-factual-review",
+        "it-17-s003": "pending-factual-review",
+        "it-17-s004": "pending-factual-review",
+        "it-17-s005": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-17-group-02",
+      "bookId": "it-17",
+      "lang": "it",
+      "sectionIds": [
+        "it-17-s006",
+        "it-17-s007",
+        "it-17-s008",
+        "it-17-s009"
+      ],
+      "startingStates": {
+        "it-17-s006": "pending-factual-review",
+        "it-17-s007": "pending-factual-review",
+        "it-17-s008": "pending-factual-review",
+        "it-17-s009": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-17-group-03",
+      "bookId": "it-17",
+      "lang": "it",
+      "sectionIds": [
+        "it-17-s010",
+        "it-17-s011",
+        "it-17-s012"
+      ],
+      "startingStates": {
+        "it-17-s010": "pending-factual-review",
+        "it-17-s011": "pending-factual-review",
+        "it-17-s012": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-18-group-01",
+      "bookId": "it-18",
+      "lang": "it",
+      "sectionIds": [
+        "it-18-s001",
+        "it-18-s002",
+        "it-18-s003",
+        "it-18-s004"
+      ],
+      "startingStates": {
+        "it-18-s001": "pending-factual-review",
+        "it-18-s002": "pending-factual-review",
+        "it-18-s003": "pending-factual-review",
+        "it-18-s004": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-18-group-02",
+      "bookId": "it-18",
+      "lang": "it",
+      "sectionIds": [
+        "it-18-s005",
+        "it-18-s006",
+        "it-18-s007",
+        "it-18-s008"
+      ],
+      "startingStates": {
+        "it-18-s005": "pending-factual-review",
+        "it-18-s006": "pending-factual-review",
+        "it-18-s007": "pending-factual-review",
+        "it-18-s008": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-18-group-03",
+      "bookId": "it-18",
+      "lang": "it",
+      "sectionIds": [
+        "it-18-s009",
+        "it-18-s010",
+        "it-18-s011",
+        "it-18-s012"
+      ],
+      "startingStates": {
+        "it-18-s009": "pending-factual-review",
+        "it-18-s010": "pending-factual-review",
+        "it-18-s011": "pending-factual-review",
+        "it-18-s012": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-19-group-01",
+      "bookId": "it-19",
+      "lang": "it",
+      "sectionIds": [
+        "it-19-s002",
+        "it-19-s003",
+        "it-19-s004",
+        "it-19-s005"
+      ],
+      "startingStates": {
+        "it-19-s002": "pending-factual-review",
+        "it-19-s003": "pending-factual-review",
+        "it-19-s004": "partial-factual-review",
+        "it-19-s005": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-19-group-02",
+      "bookId": "it-19",
+      "lang": "it",
+      "sectionIds": [
+        "it-19-s006",
+        "it-19-s007",
+        "it-19-s008",
+        "it-19-s009"
+      ],
+      "startingStates": {
+        "it-19-s006": "pending-factual-review",
+        "it-19-s007": "pending-factual-review",
+        "it-19-s008": "pending-factual-review",
+        "it-19-s009": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-19-group-03",
+      "bookId": "it-19",
+      "lang": "it",
+      "sectionIds": [
+        "it-19-s010",
+        "it-19-s011",
+        "it-19-s012",
+        "it-19-s013"
+      ],
+      "startingStates": {
+        "it-19-s010": "pending-factual-review",
+        "it-19-s011": "pending-factual-review",
+        "it-19-s012": "pending-factual-review",
+        "it-19-s013": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-19-group-04",
+      "bookId": "it-19",
+      "lang": "it",
+      "sectionIds": [
+        "it-19-s014",
+        "it-19-s015",
+        "it-19-s016",
+        "it-19-s017"
+      ],
+      "startingStates": {
+        "it-19-s014": "pending-factual-review",
+        "it-19-s015": "pending-factual-review",
+        "it-19-s016": "partial-factual-review",
+        "it-19-s017": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "it-19-group-05",
+      "bookId": "it-19",
+      "lang": "it",
+      "sectionIds": [
+        "it-19-s018",
+        "it-19-s019",
+        "it-19-s020"
+      ],
+      "startingStates": {
+        "it-19-s018": "pending-factual-review",
+        "it-19-s019": "pending-factual-review",
+        "it-19-s020": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-20-group-01",
+      "bookId": "fr-20",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-20-s002",
+        "fr-20-s003",
+        "fr-20-s004",
+        "fr-20-s005"
+      ],
+      "startingStates": {
+        "fr-20-s002": "ocr-boundaries-unreliable",
+        "fr-20-s003": "ocr-boundaries-unreliable",
+        "fr-20-s004": "ocr-boundaries-unreliable",
+        "fr-20-s005": "ocr-boundaries-unreliable"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-20-group-02",
+      "bookId": "fr-20",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-20-s006",
+        "fr-20-s007",
+        "fr-20-s008",
+        "fr-20-s009"
+      ],
+      "startingStates": {
+        "fr-20-s006": "ocr-boundaries-unreliable",
+        "fr-20-s007": "ocr-boundaries-unreliable",
+        "fr-20-s008": "ocr-boundaries-unreliable",
+        "fr-20-s009": "ocr-boundaries-unreliable"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-20-group-03",
+      "bookId": "fr-20",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-20-s010",
+        "fr-20-s011",
+        "fr-20-s012",
+        "fr-20-s013"
+      ],
+      "startingStates": {
+        "fr-20-s010": "ocr-boundaries-unreliable",
+        "fr-20-s011": "ocr-boundaries-unreliable",
+        "fr-20-s012": "ocr-boundaries-unreliable",
+        "fr-20-s013": "ocr-boundaries-unreliable"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-20-group-04",
+      "bookId": "fr-20",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-20-s014",
+        "fr-20-s015",
+        "fr-20-s016",
+        "fr-20-s017"
+      ],
+      "startingStates": {
+        "fr-20-s014": "ocr-boundaries-unreliable",
+        "fr-20-s015": "ocr-boundaries-unreliable",
+        "fr-20-s016": "ocr-boundaries-unreliable",
+        "fr-20-s017": "ocr-boundaries-unreliable"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-20-group-05",
+      "bookId": "fr-20",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-20-s018",
+        "fr-20-s019",
+        "fr-20-s020",
+        "fr-20-s021"
+      ],
+      "startingStates": {
+        "fr-20-s018": "ocr-boundaries-unreliable",
+        "fr-20-s019": "ocr-boundaries-unreliable",
+        "fr-20-s020": "ocr-boundaries-unreliable",
+        "fr-20-s021": "ocr-boundaries-unreliable"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-20-group-06",
+      "bookId": "fr-20",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-20-s022",
+        "fr-20-s023",
+        "fr-20-s024",
+        "fr-20-s025"
+      ],
+      "startingStates": {
+        "fr-20-s022": "ocr-boundaries-unreliable",
+        "fr-20-s023": "ocr-boundaries-unreliable",
+        "fr-20-s024": "ocr-boundaries-unreliable",
+        "fr-20-s025": "ocr-boundaries-unreliable"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-20-group-07",
+      "bookId": "fr-20",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-20-s026",
+        "fr-20-s027",
+        "fr-20-s028",
+        "fr-20-s029"
+      ],
+      "startingStates": {
+        "fr-20-s026": "ocr-boundaries-unreliable",
+        "fr-20-s027": "ocr-boundaries-unreliable",
+        "fr-20-s028": "ocr-boundaries-unreliable",
+        "fr-20-s029": "ocr-boundaries-unreliable"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-20-group-08",
+      "bookId": "fr-20",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-20-s030",
+        "fr-20-s031"
+      ],
+      "startingStates": {
+        "fr-20-s030": "ocr-boundaries-unreliable",
+        "fr-20-s031": "ocr-boundaries-unreliable"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-21-group-01",
+      "bookId": "fr-21",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-21-s002",
+        "fr-21-s003",
+        "fr-21-s004",
+        "fr-21-s005"
+      ],
+      "startingStates": {
+        "fr-21-s002": "pending-factual-review",
+        "fr-21-s003": "pending-factual-review",
+        "fr-21-s004": "pending-factual-review",
+        "fr-21-s005": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-21-group-02",
+      "bookId": "fr-21",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-21-s006",
+        "fr-21-s007",
+        "fr-21-s008",
+        "fr-21-s009"
+      ],
+      "startingStates": {
+        "fr-21-s006": "pending-factual-review",
+        "fr-21-s007": "pending-factual-review",
+        "fr-21-s008": "pending-factual-review",
+        "fr-21-s009": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-21-group-03",
+      "bookId": "fr-21",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-21-s010",
+        "fr-21-s011",
+        "fr-21-s012",
+        "fr-21-s013"
+      ],
+      "startingStates": {
+        "fr-21-s010": "pending-factual-review",
+        "fr-21-s011": "pending-factual-review",
+        "fr-21-s012": "pending-factual-review",
+        "fr-21-s013": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-21-group-04",
+      "bookId": "fr-21",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-21-s014",
+        "fr-21-s015",
+        "fr-21-s016",
+        "fr-21-s017"
+      ],
+      "startingStates": {
+        "fr-21-s014": "pending-factual-review",
+        "fr-21-s015": "pending-factual-review",
+        "fr-21-s016": "pending-factual-review",
+        "fr-21-s017": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-21-group-05",
+      "bookId": "fr-21",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-21-s018",
+        "fr-21-s019",
+        "fr-21-s020",
+        "fr-21-s021"
+      ],
+      "startingStates": {
+        "fr-21-s018": "pending-factual-review",
+        "fr-21-s019": "pending-factual-review",
+        "fr-21-s020": "pending-factual-review",
+        "fr-21-s021": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-21-group-06",
+      "bookId": "fr-21",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-21-s022",
+        "fr-21-s023",
+        "fr-21-s024",
+        "fr-21-s025"
+      ],
+      "startingStates": {
+        "fr-21-s022": "pending-factual-review",
+        "fr-21-s023": "pending-factual-review",
+        "fr-21-s024": "pending-factual-review",
+        "fr-21-s025": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-21-group-07",
+      "bookId": "fr-21",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-21-s026",
+        "fr-21-s027",
+        "fr-21-s028",
+        "fr-21-s029"
+      ],
+      "startingStates": {
+        "fr-21-s026": "pending-factual-review",
+        "fr-21-s027": "partial-factual-review",
+        "fr-21-s028": "pending-factual-review",
+        "fr-21-s029": "partial-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-21-group-08",
+      "bookId": "fr-21",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-21-s030",
+        "fr-21-s031"
+      ],
+      "startingStates": {
+        "fr-21-s030": "pending-factual-review",
+        "fr-21-s031": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-01",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s002",
+        "fr-22-s003",
+        "fr-22-s004",
+        "fr-22-s005"
+      ],
+      "startingStates": {
+        "fr-22-s002": "pending-factual-review",
+        "fr-22-s003": "pending-factual-review",
+        "fr-22-s004": "pending-factual-review",
+        "fr-22-s005": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-02",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s006",
+        "fr-22-s007",
+        "fr-22-s008",
+        "fr-22-s009"
+      ],
+      "startingStates": {
+        "fr-22-s006": "pending-factual-review",
+        "fr-22-s007": "pending-factual-review",
+        "fr-22-s008": "pending-factual-review",
+        "fr-22-s009": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-03",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s010",
+        "fr-22-s011",
+        "fr-22-s012",
+        "fr-22-s013"
+      ],
+      "startingStates": {
+        "fr-22-s010": "pending-factual-review",
+        "fr-22-s011": "pending-factual-review",
+        "fr-22-s012": "pending-factual-review",
+        "fr-22-s013": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-04",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s014",
+        "fr-22-s015",
+        "fr-22-s016",
+        "fr-22-s017"
+      ],
+      "startingStates": {
+        "fr-22-s014": "pending-factual-review",
+        "fr-22-s015": "pending-factual-review",
+        "fr-22-s016": "pending-factual-review",
+        "fr-22-s017": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-05",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s018",
+        "fr-22-s019",
+        "fr-22-s020",
+        "fr-22-s021"
+      ],
+      "startingStates": {
+        "fr-22-s018": "pending-factual-review",
+        "fr-22-s019": "pending-factual-review",
+        "fr-22-s020": "pending-factual-review",
+        "fr-22-s021": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-06",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s022",
+        "fr-22-s023",
+        "fr-22-s024",
+        "fr-22-s025"
+      ],
+      "startingStates": {
+        "fr-22-s022": "pending-factual-review",
+        "fr-22-s023": "pending-factual-review",
+        "fr-22-s024": "pending-factual-review",
+        "fr-22-s025": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-07",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s026",
+        "fr-22-s027",
+        "fr-22-s028",
+        "fr-22-s029"
+      ],
+      "startingStates": {
+        "fr-22-s026": "partial-factual-review",
+        "fr-22-s027": "partial-factual-review",
+        "fr-22-s028": "pending-factual-review",
+        "fr-22-s029": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-08",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s030",
+        "fr-22-s031",
+        "fr-22-s032",
+        "fr-22-s033"
+      ],
+      "startingStates": {
+        "fr-22-s030": "pending-factual-review",
+        "fr-22-s031": "pending-factual-review",
+        "fr-22-s032": "pending-factual-review",
+        "fr-22-s033": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-09",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s034",
+        "fr-22-s035",
+        "fr-22-s036",
+        "fr-22-s037"
+      ],
+      "startingStates": {
+        "fr-22-s034": "pending-factual-review",
+        "fr-22-s035": "pending-factual-review",
+        "fr-22-s036": "pending-factual-review",
+        "fr-22-s037": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-10",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s038",
+        "fr-22-s039",
+        "fr-22-s040",
+        "fr-22-s041"
+      ],
+      "startingStates": {
+        "fr-22-s038": "pending-factual-review",
+        "fr-22-s039": "pending-factual-review",
+        "fr-22-s040": "pending-factual-review",
+        "fr-22-s041": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-11",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s042",
+        "fr-22-s043",
+        "fr-22-s044",
+        "fr-22-s045"
+      ],
+      "startingStates": {
+        "fr-22-s042": "pending-factual-review",
+        "fr-22-s043": "pending-factual-review",
+        "fr-22-s044": "pending-factual-review",
+        "fr-22-s045": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-12",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s046",
+        "fr-22-s047",
+        "fr-22-s048",
+        "fr-22-s049"
+      ],
+      "startingStates": {
+        "fr-22-s046": "pending-factual-review",
+        "fr-22-s047": "pending-factual-review",
+        "fr-22-s048": "pending-factual-review",
+        "fr-22-s049": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-22-group-13",
+      "bookId": "fr-22",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-22-s050"
+      ],
+      "startingStates": {
+        "fr-22-s050": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-01",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s002",
+        "fr-23-s003",
+        "fr-23-s004",
+        "fr-23-s005"
+      ],
+      "startingStates": {
+        "fr-23-s002": "pending-factual-review",
+        "fr-23-s003": "pending-factual-review",
+        "fr-23-s004": "pending-factual-review",
+        "fr-23-s005": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-02",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s006",
+        "fr-23-s007",
+        "fr-23-s008",
+        "fr-23-s009"
+      ],
+      "startingStates": {
+        "fr-23-s006": "pending-factual-review",
+        "fr-23-s007": "partial-factual-review",
+        "fr-23-s008": "partial-factual-review",
+        "fr-23-s009": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-03",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s010",
+        "fr-23-s011",
+        "fr-23-s012",
+        "fr-23-s013"
+      ],
+      "startingStates": {
+        "fr-23-s010": "pending-factual-review",
+        "fr-23-s011": "pending-factual-review",
+        "fr-23-s012": "partial-factual-review",
+        "fr-23-s013": "partial-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-04",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s014",
+        "fr-23-s015",
+        "fr-23-s016",
+        "fr-23-s017"
+      ],
+      "startingStates": {
+        "fr-23-s014": "pending-factual-review",
+        "fr-23-s015": "pending-factual-review",
+        "fr-23-s016": "pending-factual-review",
+        "fr-23-s017": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-05",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s018",
+        "fr-23-s019",
+        "fr-23-s020",
+        "fr-23-s021"
+      ],
+      "startingStates": {
+        "fr-23-s018": "pending-factual-review",
+        "fr-23-s019": "pending-factual-review",
+        "fr-23-s020": "pending-factual-review",
+        "fr-23-s021": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-06",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s022",
+        "fr-23-s023",
+        "fr-23-s024",
+        "fr-23-s025"
+      ],
+      "startingStates": {
+        "fr-23-s022": "partial-factual-review",
+        "fr-23-s023": "partial-factual-review",
+        "fr-23-s024": "partial-factual-review",
+        "fr-23-s025": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-07",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s026",
+        "fr-23-s027",
+        "fr-23-s028",
+        "fr-23-s029"
+      ],
+      "startingStates": {
+        "fr-23-s026": "pending-factual-review",
+        "fr-23-s027": "pending-factual-review",
+        "fr-23-s028": "pending-factual-review",
+        "fr-23-s029": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-08",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s030",
+        "fr-23-s031",
+        "fr-23-s032",
+        "fr-23-s033"
+      ],
+      "startingStates": {
+        "fr-23-s030": "pending-factual-review",
+        "fr-23-s031": "pending-factual-review",
+        "fr-23-s032": "pending-factual-review",
+        "fr-23-s033": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-09",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s034",
+        "fr-23-s035",
+        "fr-23-s036",
+        "fr-23-s037"
+      ],
+      "startingStates": {
+        "fr-23-s034": "pending-factual-review",
+        "fr-23-s035": "pending-factual-review",
+        "fr-23-s036": "pending-factual-review",
+        "fr-23-s037": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-10",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s038",
+        "fr-23-s039",
+        "fr-23-s040",
+        "fr-23-s041"
+      ],
+      "startingStates": {
+        "fr-23-s038": "pending-factual-review",
+        "fr-23-s039": "pending-factual-review",
+        "fr-23-s040": "pending-factual-review",
+        "fr-23-s041": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-11",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s042",
+        "fr-23-s043",
+        "fr-23-s044",
+        "fr-23-s045"
+      ],
+      "startingStates": {
+        "fr-23-s042": "partial-factual-review",
+        "fr-23-s043": "pending-factual-review",
+        "fr-23-s044": "pending-factual-review",
+        "fr-23-s045": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-23-group-12",
+      "bookId": "fr-23",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-23-s046"
+      ],
+      "startingStates": {
+        "fr-23-s046": "partial-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-24-group-01",
+      "bookId": "fr-24",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-24-s002",
+        "fr-24-s003",
+        "fr-24-s004",
+        "fr-24-s005"
+      ],
+      "startingStates": {
+        "fr-24-s002": "pending-factual-review",
+        "fr-24-s003": "pending-factual-review",
+        "fr-24-s004": "pending-factual-review",
+        "fr-24-s005": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-24-group-02",
+      "bookId": "fr-24",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-24-s006",
+        "fr-24-s007",
+        "fr-24-s008",
+        "fr-24-s009"
+      ],
+      "startingStates": {
+        "fr-24-s006": "pending-factual-review",
+        "fr-24-s007": "pending-factual-review",
+        "fr-24-s008": "pending-factual-review",
+        "fr-24-s009": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-24-group-03",
+      "bookId": "fr-24",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-24-s010",
+        "fr-24-s011",
+        "fr-24-s012",
+        "fr-24-s013"
+      ],
+      "startingStates": {
+        "fr-24-s010": "pending-factual-review",
+        "fr-24-s011": "pending-factual-review",
+        "fr-24-s012": "pending-factual-review",
+        "fr-24-s013": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-24-group-04",
+      "bookId": "fr-24",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-24-s014",
+        "fr-24-s015",
+        "fr-24-s016",
+        "fr-24-s017"
+      ],
+      "startingStates": {
+        "fr-24-s014": "pending-factual-review",
+        "fr-24-s015": "pending-factual-review",
+        "fr-24-s016": "pending-factual-review",
+        "fr-24-s017": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-24-group-05",
+      "bookId": "fr-24",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-24-s018",
+        "fr-24-s019",
+        "fr-24-s020",
+        "fr-24-s021"
+      ],
+      "startingStates": {
+        "fr-24-s018": "pending-factual-review",
+        "fr-24-s019": "pending-factual-review",
+        "fr-24-s020": "pending-factual-review",
+        "fr-24-s021": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-24-group-06",
+      "bookId": "fr-24",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-24-s022",
+        "fr-24-s023",
+        "fr-24-s024",
+        "fr-24-s025"
+      ],
+      "startingStates": {
+        "fr-24-s022": "pending-factual-review",
+        "fr-24-s023": "pending-factual-review",
+        "fr-24-s024": "pending-factual-review",
+        "fr-24-s025": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-24-group-07",
+      "bookId": "fr-24",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-24-s026",
+        "fr-24-s027",
+        "fr-24-s028",
+        "fr-24-s029"
+      ],
+      "startingStates": {
+        "fr-24-s026": "pending-factual-review",
+        "fr-24-s027": "partial-factual-review",
+        "fr-24-s028": "pending-factual-review",
+        "fr-24-s029": "pending-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    },
+    {
+      "id": "fr-24-group-08",
+      "bookId": "fr-24",
+      "lang": "fr",
+      "sectionIds": [
+        "fr-24-s030",
+        "fr-24-s031"
+      ],
+      "startingStates": {
+        "fr-24-s030": "pending-factual-review",
+        "fr-24-s031": "partial-factual-review"
+      },
+      "status": "pending",
+      "goal": "Read each actual teaching body; list factual objectives, compare existing body evidence, then create reviewed original outputs or document a justified merge/exclusion. Existing-page defects discovered by this audit remain report-only under the latest scope instruction."
+    }
+  ],
+  "completionCriteria": [
+    "All factual objectives in the selected actual bodies have exact source locators and evidence-backed output/merge/exclusion outcomes.",
+    "No headword/ID/order/SRS changes; no duplicate starter/new reading or overwritten news/listening.",
+    "Original explanations/examples/readings/questions only; no original source exercises, near paraphrases or translated pages.",
+    "Questions independently blind-solved before answer keys; module validators, required tests and independent UI checks pass before normal publication.",
+    "Refresh remote before commit and verify commit/deployment/production before calling a batch published."
+  ],
+  "reserve": "Check account usage when available and stop early enough to preserve at least10% weekly usage; do not claim a guarantee when unreadable.",
+  "automationCreated": false
+}

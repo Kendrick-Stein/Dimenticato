@@ -1,0 +1,342 @@
+{
+  "commit": "1644f11766c23ab4f7b6d2fe5df51f43172d0c16",
+  "commitUrl": "https://github.com/Kendrick-Stein/Dimenticato/commit/1644f11766c23ab4f7b6d2fe5df51f43172d0c16",
+  "checkedAt": "2026-10-28T06:07:01.991660+00:00",
+  "push": "normal-non-force-success",
+  "ci": {
+    "status": "success",
+    "url": "https://github.com/Kendrick-Stein/Dimenticato/actions/runs/40641578505"
+  },
+  "pages": {
+    "status": "success",
+    "url": "https://github.com/Kendrick-Stein/Dimenticato/actions/runs/40641577108"
+  },
+  "vercel": {
+    "status": "success",
+    "url": "https://vercel.com/kendrick-steins-projects/dimenticato/6smHqSScoNQat7zzNFpZdpyC1LZt"
+  },
+  "productionAssets": {
+    "commit": "1644f11766c23ab4f7b6d2fe5df51f43172d0c16",
+    "domain": "https://www.dimenticato.xyz",
+    "checkedAt": "2026-10-28T06:04:18.256961+00:00",
+    "assets": [
+      {
+        "path": "data/reading/articles/2026-10-28-it-una-consegna-in-bicicletta.json",
+        "status": 200,
+        "sha256": "0f1b882914ae5ca3627369e416ebadc24d05b2b5712216ce772b7535f8f841ad",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"ba037f8988d2da3366d13e2ba65acea1\""
+      },
+      {
+        "path": "data/reading/comprehension/2026-10-28-it-una-consegna-in-bicicletta.json",
+        "status": 200,
+        "sha256": "24ec71fd9ef63225d8a5fbfb3ac1bfb346a3831befde19b8a1454a7517909f2f",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"c85a207155c45de590423d604ea265fe\""
+      },
+      {
+        "path": "data/reading/practice/2026-10-28-it-una-consegna-in-bicicletta.json",
+        "status": 200,
+        "sha256": "7bb98e49eef0559ad51716f57fafcab217cd65e112be7aefcce38ec7405ee860",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"3f857e24caea8b31c9f96a0d0cd36806\""
+      },
+      {
+        "path": "data/reading/articles/2026-10-28-it-il-catalogo-dei-semi.json",
+        "status": 200,
+        "sha256": "df3adcd0a4ee863c4e877d30fc368ece2b6cfb65ece392bf5524084b20361684",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"f78f55f75d409035f4e84200d2672076\""
+      },
+      {
+        "path": "data/reading/comprehension/2026-10-28-it-il-catalogo-dei-semi.json",
+        "status": 200,
+        "sha256": "586b682e4bd78de88758fd0e9474ab4d064752309d0f0ffc421156ba70feeaa0",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"11a95059cd49e38ab62003068363754c\""
+      },
+      {
+        "path": "data/reading/practice/2026-10-28-it-il-catalogo-dei-semi.json",
+        "status": 200,
+        "sha256": "1b3cb998d3b5b1c2c6ae942d243eb809a5071fc67bc2ae9811f20c08419cf6ef",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"b9ab7a03f137a66a53da3c198a0e4957\""
+      },
+      {
+        "path": "data/reading/articles/2026-10-28-it-una-sala-per-due-gruppi.json",
+        "status": 200,
+        "sha256": "f093ee86c806f0b5777c942a4235c9f3b1dd0f7aaacd470f68eea747c63256a9",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"a1cd19e51d393242727829c0b473aa93\""
+      },
+      {
+        "path": "data/reading/comprehension/2026-10-28-it-una-sala-per-due-gruppi.json",
+        "status": 200,
+        "sha256": "4a2b348747319c284a574815e1e85922c932f7c8d40153ffa4423b00a9ffe20e",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"e001184726188fd43e90f25a9d281fc6\""
+      },
+      {
+        "path": "data/reading/practice/2026-10-28-it-una-sala-per-due-gruppi.json",
+        "status": 200,
+        "sha256": "f0177fc7384d9c89cfff5a615ec4053a6da06bb70ead25da912461c8eace798a",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"9eb4b48a0c33f5351ac0eda22bca9ddb\""
+      },
+      {
+        "path": "data/reading/articles/2026-10-28-fr-des-panneaux-plus-faciles-a-lire.json",
+        "status": 200,
+        "sha256": "d8de853829ff25e34779f692f32d6b202d9e8bb05c36f6b714b8c6f2faac82d8",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"b21b4cbebf300b18b635a4c58defc04c\""
+      },
+      {
+        "path": "data/reading/comprehension/2026-10-28-fr-des-panneaux-plus-faciles-a-lire.json",
+        "status": 200,
+        "sha256": "6439ec74d88a86d4518be53c2887dc49d23d73e1d3a6d66996f1744cb2f15cc0",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"d846bff4b9a75f56850e30cb10c40fb2\""
+      },
+      {
+        "path": "data/reading/practice/2026-10-28-fr-des-panneaux-plus-faciles-a-lire.json",
+        "status": 200,
+        "sha256": "8f236fbbd224f8d6b2caa8a9ccb5ba53ba3f271420c2f3b740e09575d354ce2b",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"fc4bedcc3e9eedf5eaf5eda7c56797a2\""
+      },
+      {
+        "path": "data/reading/articles/2026-10-28-fr-le-carnet-des-outils-pretes.json",
+        "status": 200,
+        "sha256": "818c9d99d4e3f92044e84e1f66e4050e36ba280a6122aea672b29c5cb1bda5cc",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"23e62f1b3bc83afc92d5b864ec428c17\""
+      },
+      {
+        "path": "data/reading/comprehension/2026-10-28-fr-le-carnet-des-outils-pretes.json",
+        "status": 200,
+        "sha256": "8ac2428c9e6fa8c86be9cf114f1ea7507cc5f2d9eff8325d9d34ea16d0f13e77",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"f84ff9df3d64d32f25a558e426777f9f\""
+      },
+      {
+        "path": "data/reading/practice/2026-10-28-fr-le-carnet-des-outils-pretes.json",
+        "status": 200,
+        "sha256": "4004bdf908809a64b7226b87b9401867faed5e3223ebeb65b38cd99a1207ab08",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"e009c2a2abe1831b490c718b976c5e7d\""
+      },
+      {
+        "path": "data/reading/articles/2026-10-28-fr-une-repetition-dans-la-cour.json",
+        "status": 200,
+        "sha256": "48a83ad61547814b205b6aa017e4acb18bbed713d2de1754bf1f147af9f1ca8e",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"bba5704fde39629d30cc8551f7858a4b\""
+      },
+      {
+        "path": "data/reading/comprehension/2026-10-28-fr-une-repetition-dans-la-cour.json",
+        "status": 200,
+        "sha256": "8bf1ee05020207e43ef04b0bd16bb07c137e773b4afeaa31aa26286ff750ba0f",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"1b7cab92e16e2b2d720fef64af772748\""
+      },
+      {
+        "path": "data/reading/practice/2026-10-28-fr-une-repetition-dans-la-cour.json",
+        "status": 200,
+        "sha256": "106b4fef882ef7e94e5ef178d8656fe26a35a4ec2f90bb0db9dff340aa7ee8e9",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"ac81a3968441d877a5f0e8dde32bb3a5\""
+      },
+      {
+        "path": "data/reading/articles/2026-10-28-de-ein-regal-im-flur.json",
+        "status": 200,
+        "sha256": "b9aaaeb8cee0c68dd62998709036b8540d219b421dbf3a7b89a04ae97c453865",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"665efbe8902bf9d0f79aef42f5b2fb48\""
+      },
+      {
+        "path": "data/reading/comprehension/2026-10-28-de-ein-regal-im-flur.json",
+        "status": 200,
+        "sha256": "68ae32a53e89c5380267a2aa2fefa7f2a000668b440df292f5f9e23cdcc256fa",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"ab3099b30cda196ff03e806d5cad811c\""
+      },
+      {
+        "path": "data/reading/practice/2026-10-28-de-ein-regal-im-flur.json",
+        "status": 200,
+        "sha256": "5cda9dff4d91bfe7a195135921d545b77ca4ed32fc70050d238177fe5ed226d1",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"bdcd985c8f94f9d307379afd91ecddeb\""
+      },
+      {
+        "path": "data/reading/articles/2026-10-28-de-der-weg-ohne-treppe.json",
+        "status": 200,
+        "sha256": "3a043050946cf737d38e1b4f8932bbf8a897202463049d86d7253a41f4bcce42",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"8b5b27ba121b9c476adf57e851e4eeb6\""
+      },
+      {
+        "path": "data/reading/comprehension/2026-10-28-de-der-weg-ohne-treppe.json",
+        "status": 200,
+        "sha256": "3b3f42656bbaff583bd3ef7ef0e2bfb4776293e17e39965245dffd4669f8a1e4",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"0b4c25c1e8cc6202e4d39076f10993cf\""
+      },
+      {
+        "path": "data/reading/practice/2026-10-28-de-der-weg-ohne-treppe.json",
+        "status": 200,
+        "sha256": "40c92edad8a913df6a1f50afa31763b07014d925cf5dad5e1ec3fdb9052aefd5",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"4a9959f898f458563cb16b11f55a2bf7\""
+      },
+      {
+        "path": "data/reading/articles/2026-10-28-de-ein-abend-mit-alten-fotos.json",
+        "status": 200,
+        "sha256": "8f0592ffa242d3a122646c6e760a4937093ebc96e53221d01f2b2a3aa12c0304",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"672e0cb60798c6e5bec1a2b3fd7598a1\""
+      },
+      {
+        "path": "data/reading/comprehension/2026-10-28-de-ein-abend-mit-alten-fotos.json",
+        "status": 200,
+        "sha256": "d3039ba0500fb44d20657cc0f6c04f5e3c073426086df81957a4acd7c2c46c8f",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"a2c80e40bba1be2dbdd7623ecdfa84f0\""
+      },
+      {
+        "path": "data/reading/practice/2026-10-28-de-ein-abend-mit-alten-fotos.json",
+        "status": 200,
+        "sha256": "29a1c2c57c1b59b8c9e3c9da4567039093443765a02756cc34cef976100859cc",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"024a527f8987c2b7453970fee04285f6\""
+      },
+      {
+        "path": "data/it-grammar.js",
+        "status": 200,
+        "sha256": "891c5c5d664e8c870dc29caca8c854c20ae267362f7390bfbc5b914d3802a28e",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"efbeb6fcab9532a7c3b7e5eb2ef881db\""
+      },
+      {
+        "path": "data/de-grammar.js",
+        "status": 200,
+        "sha256": "06f61f80dcb87c321fb164759ed65d2913108dfba189ba4a80c40d3430245d9b",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"3a6130565ee620f4cad7e0d7a53e456e\""
+      },
+      {
+        "path": "data/fr-grammar.js",
+        "status": 200,
+        "sha256": "6df74c0589e1f684d866a5916054ee5e0db96d666109eb3b18b2e39b927a3f14",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"c885ac5f83e4c75355e9e8a6e30908b1\""
+      },
+      {
+        "path": "data/vocab/it.js",
+        "status": 200,
+        "sha256": "4d015a311b5a779db1ed65512ec4b5ba573483cb3e87c226203601c978ed77f2",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"b73b8cf66e39cc54635ad3c1509579cf\""
+      },
+      {
+        "path": "data/vocab/de.js",
+        "status": 200,
+        "sha256": "be784b62b3e76712c3fa1cf077c5d0c5c579e18045ac8a751f5edcb1f751513b",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"20e149b785e164d4bb46f72c8084ace3\""
+      },
+      {
+        "path": "data/vocab/fr.js",
+        "status": 200,
+        "sha256": "401fd7c8fa4f23159b57339f1a2547e50bfc21c061100c32629ba19524e11272",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"eb54b6bdfa688e9c4dbff9ed62d2bdf4\""
+      },
+      {
+        "path": "data/reading/index.json",
+        "status": 200,
+        "sha256": "4d8cea149fce8c77508aba08113ce3a9077ac79b23cada832d03eb8d89a8d1a6",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"8d38dc2c12268850d36f14a2427a77c6\""
+      },
+      {
+        "path": "index.html",
+        "status": 200,
+        "sha256": "f982be6ae4a924ab10b4a838052604df0c730561995ff7fb51846ee7cfe32608",
+        "matchesCommit": true,
+        "server": "Vercel",
+        "etag": "\"1df6607d4a5ae0679c4879dbc039961a\""
+      }
+    ],
+    "allMatch": true
+  },
+  "productionSmoke": {
+    "base": "https://www.dimenticato.xyz/",
+    "allowedOrigin": "https://www.dimenticato.xyz",
+    "checks": [
+      {
+        "id": "2026-10-28-it-una-consegna-in-bicicletta",
+        "title": "Una consegna in bicicletta",
+        "url": "https://www.dimenticato.xyz/#/it/reading/article/2026-10-28-it-una-consegna-in-bicicletta",
+        "originalLabel": true,
+        "comprehensionLoadedAndCorrectAnswerVerified": true,
+        "practiceLoaded": true
+      },
+      {
+        "id": "2026-10-28-fr-le-carnet-des-outils-pretes",
+        "title": "Le carnet des outils prêtés",
+        "url": "https://www.dimenticato.xyz/#/fr/reading/article/2026-10-28-fr-le-carnet-des-outils-pretes",
+        "originalLabel": true,
+        "comprehensionLoadedAndCorrectAnswerVerified": true,
+        "practiceLoaded": true
+      },
+      {
+        "id": "2026-10-28-de-ein-abend-mit-alten-fotos",
+        "title": "Ein Abend mit alten Fotos",
+        "url": "https://www.dimenticato.xyz/#/de/reading/article/2026-10-28-de-ein-abend-mit-alten-fotos",
+        "originalLabel": true,
+        "comprehensionLoadedAndCorrectAnswerVerified": true,
+        "practiceLoaded": true
+      }
+    ],
+    "limitations": [
+      "External fonts and Markdown renderer remain blocked; this is production content/function verification, not normal external-asset rendering certification."
+    ],
+    "status": "PASS",
+    "browserClosed": true
+  },
+  "remoteMainVerified": "1644f11766c23ab4f7b6d2fe5df51f43172d0c16"
+}

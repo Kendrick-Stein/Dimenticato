@@ -1,6 +1,6 @@
 # OCR learning integration — 2026-10-28
 
-This is a completed content-authoring batch with publication gates recorded separately. It is **not completion of all 24 books**. The chapter ledger deliberately retains unfinished work. No OCR source text or private textbook excerpts are in this repository.
+This content batch was published and verified at commit `1644f11766c23ab4f7b6d2fe5df51f43172d0c16`; see the deployment receipt. It is **not completion of all 24 books**. The chapter ledger deliberately retains unfinished work. No OCR source text or private textbook excerpts are in this repository.
 
 ## Deliverables
 
@@ -28,7 +28,7 @@ An existing German course already has 54 units and 2,107 selected vocabulary ite
 | Dieci Racconti A1-A2（分级读物） | 34 | 14 | Proprietary narrative/transcript/exercise expression excluded; factual review still pending |
 | La Partita A1-A2（分级读物） | 32 | 21 | Proprietary narrative/transcript/exercise expression excluded; factual review still pending |
 | Lo Straniero B1-B2（分级读物） | 28 | 1 | Proprietary narrative/transcript/exercise expression excluded; factual review still pending |
-| Loescher Archivio Grammatica（语法汇编） | 88 | 39 | 3 bounded fact rows; 27 existing target mappings; remainder pending |
+| Loescher Archivio Grammatica（语法汇编） | 88 | 39 | All35 teaching rows body-reviewed:15 identified-objective coverage passes,20 open gaps; four answer containers remain pending |
 | Nuovi Casi（分级读物） | 35 | 1 | Proprietary narrative/transcript/exercise expression excluded; factual review still pending |
 | TRASCRIZIONE BRANI 2A 2B（听力原文） | 21 | 12 | Proprietary narrative/transcript/exercise expression excluded; factual review still pending |
 | 意大利语动词搭配大全 | 428 | 4 | 2 bounded fact rows; 0 existing target mappings; remainder pending |
@@ -59,3 +59,9 @@ Full tests: **45 harnesses, 483,899 passed, 0 failed, 0 known issues**. All modu
 5. **Pronunciation and readers:** retain the independently sourced pronunciation lessons; do not trust OCR IPA. Fictional readers and listening transcripts may inform generic learning goals only; plots, original sentences, translated pages and exercises remain excluded absent verified reuse rights.
 
 No automation, unrelated issue plan, permissions, paid service or security setting was created or changed.
+
+## Subsequent bounded coverage audit
+
+After publication, all35 Loescher teaching sections were read and compared with actual website bodies, covering41 teaching pages and two brief factual notes on exercise pages. Of107 identified objectives,70 have existing coverage,17 partial coverage,15 encounter existing misleading wording, and5 lack an adequate explanation. This produces15 covered teaching rows and20 rows with open objectives; the four answer containers remain unreviewed. The audit records exact source ranges and existing-body hashes, plus at most8 priority follow-up groups.
+
+Per the latest scope instruction, pre-existing page problems are reported only; no further runtime, grammar or vocabulary edits were made. Some old paragraphs contradict more precise new supplements; these are explicitly recorded in the objective audit. Whole-book completion remains0. The finite continuation queue is in `2026-10-28-next-batches.json`; its groups are work units, not scheduled automations or a promise of completion time.

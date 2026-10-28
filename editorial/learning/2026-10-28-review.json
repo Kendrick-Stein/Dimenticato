@@ -206,7 +206,11 @@
     "scripts/build_french_grammar.py": "e016937c3f10cc6b284c1a3aa20496dccf3fdc1ee25ee93ada3ec213f2e15ffc",
     "scripts/learning_supplements/2026-10-28-fr.json": "b0e013a8577f8dec7250956aa8ede1d5cbd683e3324f0158cbdecf92f2c40df7"
   },
-  "deployment": "Pending at commit time; verify the resulting commit against remote checks and production assets before reporting publication.",
+  "deployment": {
+    "result": "published-and-verified",
+    "commit": "1644f11766c23ab4f7b6d2fe5df51f43172d0c16",
+    "receipt": "2026-10-28-deployment.json"
+  },
   "buildIdempotence": {
     "pass": true,
     "hashes": {

@@ -32,10 +32,10 @@
           "heading": "前言",
           "depth": 2,
           "lineStart": 84,
-          "lineEnd": 231,
+          "lineEnd": 192,
           "pdfPages": [
             4,
-            9
+            8
           ],
           "status": "reference-only",
           "flags": [],
@@ -45,15 +45,16 @@
           "id": "de-01-s003",
           "heading": "测试卷一",
           "depth": 2,
-          "lineStart": 232,
+          "lineStart": 193,
           "lineEnd": 540,
           "pdfPages": [
-            10,
+            9,
             15
           ],
           "status": "pending-factual-review",
           "flags": [
-            "proprietary exercise/answer expression excluded; facts may be reviewed independently"
+            "proprietary exercise/answer expression excluded; facts may be reviewed independently",
+            "Boundary repaired by body inspection: test1 starts at page9 line193; the OCR Markdown heading appears only at line232/page10. Exercise expression remains excluded; factual objectives not yet reviewed."
           ],
           "outputs": []
         },
@@ -2396,7 +2397,7 @@
             1,
             2
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2412,7 +2413,22 @@
               "slug": "p1/ch02/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s001-o01",
+            "it-10-s001-o02",
+            "it-10-s001-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2,
+            "partial-existing": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch02/t01",
+            "p1/ch02/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s002",
@@ -2424,7 +2440,7 @@
             3,
             4
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2434,7 +2450,21 @@
               "slug": "p1/ch02/t03",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s002-o01",
+            "it-10-s002-o02",
+            "it-10-s002-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 1,
+            "existing-misleading": 2
+          },
+          "verifiedExistingTargets": [
+            "p1/ch02/t03"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s003",
@@ -2446,7 +2476,7 @@
             5,
             6
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2456,7 +2486,23 @@
               "slug": "p1/ch02/t01",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s003-o01",
+            "it-10-s003-o02",
+            "it-10-s003-o03"
+          ],
+          "objectiveCounts": {
+            "existing-misleading": 1,
+            "missing-objective": 1,
+            "existing-covered": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch02/t01",
+            "p1/ch08/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s004",
@@ -2468,7 +2514,7 @@
             7,
             8
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2484,7 +2530,19 @@
               "slug": "p1/ch01/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s004-o01",
+            "it-10-s004-o02",
+            "it-10-s004-o03"
+          ],
+          "objectiveCounts": {
+            "partial-existing": 1,
+            "missing-objective": 2
+          },
+          "verifiedExistingTargets": [],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s005",
@@ -2496,7 +2554,7 @@
             9,
             10
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2506,7 +2564,18 @@
               "slug": "p1/ch01/t01",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s005-o01",
+            "it-10-s005-o02"
+          ],
+          "objectiveCounts": {
+            "existing-misleading": 1,
+            "partial-existing": 1
+          },
+          "verifiedExistingTargets": [],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s006",
@@ -2518,7 +2587,7 @@
             11,
             12
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2528,7 +2597,21 @@
               "slug": "p1/ch01/t01",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s006-o01",
+            "it-10-s006-o02",
+            "it-10-s006-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2,
+            "partial-existing": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch01/t01"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s007",
@@ -2540,7 +2623,7 @@
             13,
             14
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2550,7 +2633,23 @@
               "slug": "p1/ch01/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s007-o01",
+            "it-10-s007-o02",
+            "it-10-s007-o03",
+            "it-10-s007-o04"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 1,
+            "existing-misleading": 2,
+            "partial-existing": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch01/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s008",
@@ -2562,9 +2661,19 @@
             15,
             16
           ],
-          "status": "pending-factual-review",
+          "status": "factual-review-open-gaps",
           "flags": [],
-          "outputs": []
+          "outputs": [],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s008-o01",
+            "it-10-s008-o02"
+          ],
+          "objectiveCounts": {
+            "partial-existing": 2
+          },
+          "verifiedExistingTargets": [],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s009",
@@ -2576,7 +2685,7 @@
             17,
             18
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2592,7 +2701,23 @@
               "slug": "p1/ch03/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s009-o01",
+            "it-10-s009-o02",
+            "it-10-s009-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 1,
+            "existing-misleading": 1,
+            "missing-objective": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch03/t01",
+            "p1/ch03/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s010",
@@ -2604,7 +2729,7 @@
             19,
             20
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2614,7 +2739,19 @@
               "slug": "p1/ch09/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s010-o01",
+            "it-10-s010-o02"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2
+          },
+          "verifiedExistingTargets": [
+            "p1/ch09/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s011",
@@ -2626,11 +2763,29 @@
             21,
             24
           ],
-          "status": "pending-factual-review",
+          "status": "factual-review-open-gaps",
           "flags": [
             "generic OCR heading; topic must be identified from body before mapping"
           ],
-          "outputs": []
+          "outputs": [],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s011-o01",
+            "it-10-s011-o02",
+            "it-10-s011-o03",
+            "it-10-s011-o04"
+          ],
+          "objectiveCounts": {
+            "partial-existing": 1,
+            "existing-covered": 2,
+            "existing-misleading": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch06/t01",
+            "p1/ch06/t03",
+            "p1/ch11/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s012",
@@ -2642,7 +2797,7 @@
             25,
             26
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2652,7 +2807,23 @@
               "slug": "p1/ch06/t05",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s012-o01",
+            "it-10-s012-o02",
+            "it-10-s012-o03",
+            "it-10-s012-o04"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3,
+            "partial-existing": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch06/t02",
+            "p1/ch06/t05"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s013",
@@ -2664,7 +2835,7 @@
             27,
             28
           ],
-          "status": "partial-factual-review",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [
             "it:p1/ch07/t01"
@@ -2679,7 +2850,23 @@
               "slug": "p1/ch07/t01",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s013-o01",
+            "it-10-s013-o02",
+            "it-10-s013-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2,
+            "existing-misleading": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch06/t03",
+            "p1/ch06/t05",
+            "p1/ch07/t01"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s014",
@@ -2691,7 +2878,7 @@
             29,
             30
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2701,7 +2888,20 @@
               "slug": "p1/ch06/t04",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s014-o01",
+            "it-10-s014-o02"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2
+          },
+          "verifiedExistingTargets": [
+            "p1/ch06/t04",
+            "p1/ch12/t01"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s015",
@@ -2713,7 +2913,7 @@
             31,
             32
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2723,7 +2923,19 @@
               "slug": "p1/ch09/t01",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s015-o01",
+            "it-10-s015-o02"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2
+          },
+          "verifiedExistingTargets": [
+            "p1/ch09/t01"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s016",
@@ -2735,7 +2947,7 @@
             33,
             34
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2745,7 +2957,21 @@
               "slug": "p1/ch07/t03",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s016-o01",
+            "it-10-s016-o02",
+            "it-10-s016-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2,
+            "existing-misleading": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch07/t03"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s017",
@@ -2757,7 +2983,7 @@
             35,
             36
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2767,7 +2993,21 @@
               "slug": "p1/ch07/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s017-o01",
+            "it-10-s017-o02"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 1,
+            "existing-misleading": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch03/t05",
+            "p1/ch07/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s018",
@@ -2779,11 +3019,32 @@
             37,
             40
           ],
-          "status": "pending-factual-review",
+          "status": "factual-review-open-gaps",
           "flags": [
             "generic OCR heading; topic must be identified from body before mapping"
           ],
-          "outputs": []
+          "outputs": [],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s018-o01",
+            "it-10-s018-o02",
+            "it-10-s018-o03",
+            "it-10-s018-o04",
+            "it-10-s018-o05",
+            "it-10-s018-o06"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3,
+            "existing-misleading": 2,
+            "partial-existing": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch03/t04",
+            "p1/ch05/t04",
+            "p1/ch07/t04",
+            "p1/ch09/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s019",
@@ -2795,9 +3056,23 @@
             41,
             42
           ],
-          "status": "pending-factual-review",
+          "status": "factual-review-open-gaps",
           "flags": [],
-          "outputs": []
+          "outputs": [],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s019-o01",
+            "it-10-s019-o02",
+            "it-10-s019-o03"
+          ],
+          "objectiveCounts": {
+            "partial-existing": 2,
+            "existing-covered": 1
+          },
+          "verifiedExistingTargets": [
+            "p2/ch07/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s020",
@@ -2809,7 +3084,7 @@
             43,
             46
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2825,7 +3100,29 @@
               "slug": "p1/ch04/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s020-o01",
+            "it-10-s020-o02",
+            "it-10-s020-o03",
+            "it-10-s020-o04",
+            "it-10-s020-o05"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3,
+            "partial-existing": 2
+          },
+          "verifiedExistingTargets": [
+            "p1/ch04/t01",
+            "p1/ch04/t02",
+            "p1/ch04/t03",
+            "p1/ch04/t04",
+            "p1/ch10/t02",
+            "p1/ch11/t01",
+            "p2/ch03/t14"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s021",
@@ -2837,7 +3134,7 @@
             47,
             48
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2847,7 +3144,22 @@
               "slug": "p1/ch11/t01",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s021-o01",
+            "it-10-s021-o02",
+            "it-10-s021-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3
+          },
+          "verifiedExistingTargets": [
+            "p1/ch10/t02",
+            "p1/ch11/t01",
+            "p1/ch11/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s022",
@@ -2859,7 +3171,7 @@
             49,
             50
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2869,7 +3181,19 @@
               "slug": "p1/ch11/t07",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s022-o01",
+            "it-10-s022-o02"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2
+          },
+          "verifiedExistingTargets": [
+            "p1/ch11/t07"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s023",
@@ -2881,7 +3205,7 @@
             51,
             52
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2891,7 +3215,20 @@
               "slug": "p1/ch11/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s023-o01",
+            "it-10-s023-o02",
+            "it-10-s023-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3
+          },
+          "verifiedExistingTargets": [
+            "p1/ch11/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s024",
@@ -2903,7 +3240,7 @@
             53,
             54
           ],
-          "status": "partial-factual-review",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [
             "it:p1/ch11/t07"
@@ -2918,7 +3255,18 @@
               "slug": "p1/ch11/t07",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s024-o01"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch11/t07"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s025",
@@ -2930,7 +3278,7 @@
             55,
             58
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2940,7 +3288,27 @@
               "slug": "p1/ch11/t03",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s025-o01",
+            "it-10-s025-o02",
+            "it-10-s025-o03",
+            "it-10-s025-o04",
+            "it-10-s025-o05"
+          ],
+          "objectiveCounts": {
+            "partial-existing": 1,
+            "existing-covered": 3,
+            "missing-objective": 1
+          },
+          "verifiedExistingTargets": [
+            "p1/ch11/t01",
+            "p1/ch11/t03",
+            "p1/ch11/t05",
+            "p1/ch11/t06"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s026",
@@ -2952,7 +3320,7 @@
             59,
             60
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2962,7 +3330,20 @@
               "slug": "p1/ch14/t01",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s026-o01",
+            "it-10-s026-o02",
+            "it-10-s026-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3
+          },
+          "verifiedExistingTargets": [
+            "p1/ch14/t01"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s027",
@@ -2974,7 +3355,7 @@
             61,
             62
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -2984,7 +3365,22 @@
               "slug": "p1/ch12/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s027-o01",
+            "it-10-s027-o02",
+            "it-10-s027-o03"
+          ],
+          "objectiveCounts": {
+            "existing-misleading": 1,
+            "existing-covered": 2
+          },
+          "verifiedExistingTargets": [
+            "p1/ch12/t01",
+            "p1/ch12/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s028",
@@ -2996,7 +3392,7 @@
             63,
             66
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -3006,7 +3402,22 @@
               "slug": "p1/ch12/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s028-o01",
+            "it-10-s028-o02",
+            "it-10-s028-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3
+          },
+          "verifiedExistingTargets": [
+            "p1/ch12/t02",
+            "p1/ch12/t03",
+            "p2/ch04/t03"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s029",
@@ -3018,11 +3429,24 @@
             67,
             68
           ],
-          "status": "pending-factual-review",
+          "status": "factual-objectives-covered",
           "flags": [
             "generic OCR heading; topic must be identified from body before mapping"
           ],
-          "outputs": []
+          "outputs": [],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s029-o01",
+            "it-10-s029-o02",
+            "it-10-s029-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3
+          },
+          "verifiedExistingTargets": [
+            "p1/ch12/t01"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s030",
@@ -3034,7 +3458,7 @@
             69,
             70
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -3044,7 +3468,21 @@
               "slug": "p1/ch13/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s030-o01",
+            "it-10-s030-o02",
+            "it-10-s030-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3
+          },
+          "verifiedExistingTargets": [
+            "p1/ch11/t01",
+            "p1/ch13/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s031",
@@ -3056,7 +3494,7 @@
             71,
             72
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -3066,7 +3504,22 @@
               "slug": "p1/ch10/t01",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s031-o01",
+            "it-10-s031-o02",
+            "it-10-s031-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3
+          },
+          "verifiedExistingTargets": [
+            "p1/ch08/t02",
+            "p1/ch13/t01",
+            "p2/ch04/t03"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s032",
@@ -3078,7 +3531,7 @@
             73,
             76
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-review-open-gaps",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -3088,7 +3541,30 @@
               "slug": "p1/ch05/t01",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s032-o01",
+            "it-10-s032-o02",
+            "it-10-s032-o03",
+            "it-10-s032-o04",
+            "it-10-s032-o05"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2,
+            "existing-misleading": 1,
+            "partial-existing": 2
+          },
+          "verifiedExistingTargets": [
+            "p1/ch05/t01",
+            "p1/ch05/t02",
+            "p1/ch05/t03",
+            "p1/ch05/t04",
+            "p1/ch05/t05",
+            "p1/ch08/t01",
+            "p1/ch08/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s033",
@@ -3100,7 +3576,7 @@
             77,
             78
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -3110,7 +3586,20 @@
               "slug": "p1/ch08/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s033-o01",
+            "it-10-s033-o02",
+            "it-10-s033-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3
+          },
+          "verifiedExistingTargets": [
+            "p1/ch08/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s034",
@@ -3122,7 +3611,7 @@
             79,
             80
           ],
-          "status": "existing-topic-mapped",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [],
           "existingTargets": [
@@ -3132,7 +3621,22 @@
               "slug": "p1/ch07/t05",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s034-o01",
+            "it-10-s034-o02"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 2
+          },
+          "verifiedExistingTargets": [
+            "p1/ch07/t05",
+            "p1/ch12/t02",
+            "p1/ch13/t01",
+            "p2/ch04/t01"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s035",
@@ -3144,7 +3648,7 @@
             81,
             82
           ],
-          "status": "partial-factual-review",
+          "status": "factual-objectives-covered",
           "flags": [],
           "outputs": [
             "it:p2/ch06/t02"
@@ -3159,7 +3663,21 @@
               "slug": "p2/ch06/t02",
               "basis": "factual heading matched; original prose/exercises not transferred; detailed section review pending"
             }
-          ]
+          ],
+          "objectiveAudit": "2026-10-28-loescher-objectives.json",
+          "objectiveIds": [
+            "it-10-s035-o01",
+            "it-10-s035-o02",
+            "it-10-s035-o03"
+          ],
+          "objectiveCounts": {
+            "existing-covered": 3
+          },
+          "verifiedExistingTargets": [
+            "p1/ch11/t05",
+            "p2/ch06/t02"
+          ],
+          "coverageScope": "Identified factual objectives in the teaching body only; existing topic may have other unresolved wording issues. No original examples/exercises/answers republished; whole-book completion not implied."
         },
         {
           "id": "it-10-s036",
@@ -10625,13 +11143,13 @@
       "id": "B1",
       "name": "Applied grammar and vocabulary",
       "acceptance": "18 original teaching supplements, reviewed vocabulary gloss corrections; preserve headwords/ranks/IDs; build via canonical entrypoints",
-      "status": "reviewed-ready-for-publication"
+      "status": "published-and-verified"
     },
     {
       "id": "B2",
       "name": "Original reading practice",
       "acceptance": "9 independent fictional readings (4 A2, 5 B1) across IT/DE/FR, 32 comprehension and45 cloze questions; blind review and local UI verification completed",
-      "status": "reviewed-ready-for-publication"
+      "status": "published-and-verified"
     },
     {
       "id": "B3",
@@ -11077,12 +11595,13 @@
         "after": "zieht um, zog um, ist umgezogen / hat sich umgezogen"
       }
     ],
-    "stage": "reviewed-ready-for-publication",
+    "stage": "published-and-verified",
     "wholeBooksCompleted": 0,
     "comprehensionQuestions": 32,
     "clozeQuestions": 45,
     "vocabularyEntriesChanged": 21,
-    "tests": "45 harnesses — 483899 passed, 0 failed, 0 known issues"
+    "tests": "45 harnesses — 483899 passed, 0 failed, 0 known issues",
+    "commit": "1644f11766c23ab4f7b6d2fe5df51f43172d0c16"
   },
   "previousPublishedBatch": {
     "commit": "2dc76f751ba45f7b587c849b5a9c1bfd446e2f35",
@@ -11106,7 +11625,9 @@
     "ocr-boundaries-unreliable": "Source segmentation not reliable; chapter-level processing blocked.",
     "existing-topic-mapped": "Existing target found by factual heading; body review still pending.",
     "existing-course-mapped": "Existing curriculum link identified; full objective coverage still pending.",
-    "partial-factual-review": "Only listed source pages/facts used. Other content remains pending."
+    "partial-factual-review": "Only listed source pages/facts used. Other content remains pending.",
+    "factual-objectives-covered": "Identified factual objectives checked against existing body evidence and covered; not a certification of all old topic statements or a whole-book completion claim.",
+    "factual-review-open-gaps": "Teaching body reviewed; identified objectives remain partial, misleading or missing. Report-only findings under the latest scope instruction; no fixes executed."
   },
   "ocrExceptions": [
     {
@@ -11122,5 +11643,17 @@
       ],
       "resolution": "No OCR IPA published; existing independently sourced pronunciation modules mapped only"
     }
-  ]
+  ],
+  "loescherObjectiveAudit": {
+    "file": "2026-10-28-loescher-objectives.json",
+    "sections": 35,
+    "objectives": 107,
+    "counts": {
+      "existing-covered": 70,
+      "partial-existing": 17,
+      "existing-misleading": 15,
+      "missing-objective": 5
+    },
+    "wholeBooksCompletedIncrement": 0
+  }
 }
