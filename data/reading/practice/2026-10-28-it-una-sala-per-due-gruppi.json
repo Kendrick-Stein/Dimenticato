@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-it-una-sala-per-due-gruppi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 67,
+      "answer": "cartellone",
+      "options": [
+        "cartelloni",
+        "cartellone",
+        "cartelline",
+        "cartellina"
+      ],
+      "explanation": "按原文还原 cartellone（大海报）。阳性单数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 64,
+      "answer": "finestre",
+      "options": [
+        "finestra",
+        "finestrino",
+        "finestrini",
+        "finestre"
+      ],
+      "explanation": "按原文还原 finestre（窗户）。阴性复数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 26,
+      "answer": "sedie",
+      "options": [
+        "sedie",
+        "sedia",
+        "seduto",
+        "sedere"
+      ],
+      "explanation": "按原文还原 sedie（椅子）。阴性复数。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 92,
+      "answer": "barattoli",
+      "options": [
+        "barattolo",
+        "barattare",
+        "barattoli",
+        "barattato"
+      ],
+      "explanation": "按原文还原 barattoli（罐子）。阳性复数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 58,
+      "answer": "calendario",
+      "options": [
+        "calendari",
+        "calendarizzare",
+        "calendarizzato",
+        "calendario"
+      ],
+      "explanation": "按原文还原 calendario（日程表）。阳性单数。"
+    }
+  ]
+}

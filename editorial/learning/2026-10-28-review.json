@@ -1,0 +1,908 @@
+{
+  "schema": 1,
+  "date": "2026-10-28",
+  "baseMain": "e3bb1bce0ba894cee3a7fc4ca2d655f54dadac5c",
+  "scope": {
+    "readings": 9,
+    "comprehension_questions": 32,
+    "cloze_questions": 45,
+    "cloze_option_occurrences": 180,
+    "grammar_supplements": 18,
+    "vocabulary_fields": 22,
+    "vocabulary_entries": 21
+  },
+  "reviewer": "independent_learning_review",
+  "blindProtocol": {
+    "initial": "27 questions solved from source-language-only packet; saved before keyed access.",
+    "revision": "13 revised/new questions solved and saved before keyed access.",
+    "final_option_edit": "French signs q3 was subsequently made more source-faithful; same index3, independently rechecked after edit, not claimed as an additional blind test."
+  },
+  "result": "PASS_WITH_NONBLOCKING_PEDAGOGICAL_NOTES",
+  "resolvedFindings": [
+    {
+      "id": "R1",
+      "target": "German route s6 zh",
+      "issue": "Lost the comparative langer/longer, changing additional distance into total length.",
+      "verified_fix": "比原路线长约五百米"
+    },
+    {
+      "id": "R2",
+      "target": "Italian delivery s11 and q2/q3 Chinese explanations",
+      "issue": "fratello rendered as older brother without source age information.",
+      "verified_fix": "兄弟"
+    },
+    {
+      "id": "R3",
+      "target": "German photos s2/s6/s7 and q1 Chinese explanation",
+      "issue": "Tante narrowed to maternal aunt.",
+      "verified_fix": "First mention 姑母或姨母, later 这位长辈; no maternal-only assertion."
+    },
+    {
+      "id": "R4",
+      "target": "de p2/ch01/t03 grammar supplement",
+      "issue": "mitgebracht described among regular forms.",
+      "verified_fix": "Now explicitly identifies the irregular/mixed form."
+    },
+    {
+      "id": "R5",
+      "target": "German photos cloze q5 option3",
+      "issue": "zeilig is a bound suffix, not a suitable free-word distractor.",
+      "verified_fix": "zweizeilig"
+    },
+    {
+      "id": "R6",
+      "target": "French signs comprehension q3",
+      "issue": "faire tester and Chinese wording attributed initiation of the first test to Lila without source support.",
+      "verified_fix": "Après l’essai, elle change les panneaux et refait le trajet. Chinese now starts 邻居试走后."
+    },
+    {
+      "id": "R7",
+      "target": "French tools q2 and rehearsal q4 evidence arrays",
+      "issue": "Explanation referred to a monthly page rule or paper weighting outside the cited evidence.",
+      "verified_fix": "Added s8 and s6 respectively."
+    },
+    {
+      "id": "R8",
+      "target": "Italian delivery summaryZh",
+      "issue": "Summary implied completion despite the extra cups still being arranged.",
+      "verified_fix": "Now describes changed route and arranging missing items."
+    }
+  ],
+  "blockers": [],
+  "levels": {
+    "A2": 4,
+    "B1": 5
+  },
+  "tests": "45 harnesses — 483899 passed, 0 failed, 0 known issues",
+  "preservation": {
+    "base": "e3bb1bc",
+    "vocab": {
+      "it": {
+        "entries": 19063,
+        "changed": [
+          "controllare",
+          "partecipare",
+          "raccogliere",
+          "verificare",
+          "calendario"
+        ],
+        "stableHeadwordOrderRankLegacyLevel": true
+      },
+      "de": {
+        "entries": 24314,
+        "changed": [
+          "umziehen",
+          "Flur",
+          "Notiz",
+          "verleihen",
+          "Anlass",
+          "ausleihen",
+          "Bilderrahmen"
+        ],
+        "stableHeadwordOrderRankLegacyLevel": true
+      },
+      "fr": {
+        "entries": 24581,
+        "changed": [
+          "retour",
+          "pierre",
+          "ligne",
+          "cour",
+          "peinture",
+          "réunion",
+          "cercle",
+          "étiquette",
+          "souhait"
+        ],
+        "stableHeadwordOrderRankLegacyLevel": true
+      }
+    },
+    "grammar": {
+      "it": {
+        "changedTopics": [
+          "p1/ch02/t04",
+          "p1/ch07/t01",
+          "p1/ch08/t02",
+          "p1/ch11/t02",
+          "p1/ch11/t07",
+          "p2/ch06/t02"
+        ],
+        "treeAliasesAndOriginalContentUnchanged": true
+      },
+      "de": {
+        "changedTopics": [
+          "p1/ch07/t06",
+          "p1/ch08/t03",
+          "p1/ch08/t04",
+          "p2/ch01/t03",
+          "p2/ch04/t04",
+          "p2/ch05/t03"
+        ],
+        "treeAliasesAndOriginalContentUnchanged": true
+      },
+      "fr": {
+        "changedTopics": [
+          "p1/ch03/t03",
+          "p1/ch09/t05",
+          "p1/ch10/t05",
+          "p1/ch12/t06",
+          "p1/ch13/t04",
+          "p2/ch06/t05"
+        ],
+        "treeAliasesAndOriginalContentUnchanged": true
+      }
+    },
+    "historicalFiles": 328
+  },
+  "originalityBoundary": "Only factual language knowledge was selected. New readings are independent fictional learning texts, not adaptations of textbook prose, plots, translations or exercises. Whole OCR corpus 9-token reading-overlap scan produced zero matches; bounded expert-model review is not a whole-book/internet-wide legal or originality certificate.",
+  "dictionaryChecks": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/umziehen_umgezogen",
+      "fact": "sein for relocation; haben for changing clothes"
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/leihen",
+      "fact": "lending and borrowing directions"
+    },
+    {
+      "url": "https://dictionnaire-academie.fr/article/A9P1228",
+      "fact": "peinture includes paint substance, action and art"
+    }
+  ],
+  "fileHashes": {
+    "data/reading/articles/2026-10-28-it-una-consegna-in-bicicletta.json": "0f1b882914ae5ca3627369e416ebadc24d05b2b5712216ce772b7535f8f841ad",
+    "data/reading/comprehension/2026-10-28-it-una-consegna-in-bicicletta.json": "24ec71fd9ef63225d8a5fbfb3ac1bfb346a3831befde19b8a1454a7517909f2f",
+    "data/reading/practice/2026-10-28-it-una-consegna-in-bicicletta.json": "7bb98e49eef0559ad51716f57fafcab217cd65e112be7aefcce38ec7405ee860",
+    "data/reading/articles/2026-10-28-it-il-catalogo-dei-semi.json": "df3adcd0a4ee863c4e877d30fc368ece2b6cfb65ece392bf5524084b20361684",
+    "data/reading/comprehension/2026-10-28-it-il-catalogo-dei-semi.json": "586b682e4bd78de88758fd0e9474ab4d064752309d0f0ffc421156ba70feeaa0",
+    "data/reading/practice/2026-10-28-it-il-catalogo-dei-semi.json": "1b3cb998d3b5b1c2c6ae942d243eb809a5071fc67bc2ae9811f20c08419cf6ef",
+    "data/reading/articles/2026-10-28-it-una-sala-per-due-gruppi.json": "f093ee86c806f0b5777c942a4235c9f3b1dd0f7aaacd470f68eea747c63256a9",
+    "data/reading/comprehension/2026-10-28-it-una-sala-per-due-gruppi.json": "4a2b348747319c284a574815e1e85922c932f7c8d40153ffa4423b00a9ffe20e",
+    "data/reading/practice/2026-10-28-it-una-sala-per-due-gruppi.json": "f0177fc7384d9c89cfff5a615ec4053a6da06bb70ead25da912461c8eace798a",
+    "data/reading/articles/2026-10-28-fr-des-panneaux-plus-faciles-a-lire.json": "d8de853829ff25e34779f692f32d6b202d9e8bb05c36f6b714b8c6f2faac82d8",
+    "data/reading/comprehension/2026-10-28-fr-des-panneaux-plus-faciles-a-lire.json": "6439ec74d88a86d4518be53c2887dc49d23d73e1d3a6d66996f1744cb2f15cc0",
+    "data/reading/practice/2026-10-28-fr-des-panneaux-plus-faciles-a-lire.json": "8f236fbbd224f8d6b2caa8a9ccb5ba53ba3f271420c2f3b740e09575d354ce2b",
+    "data/reading/articles/2026-10-28-fr-le-carnet-des-outils-pretes.json": "818c9d99d4e3f92044e84e1f66e4050e36ba280a6122aea672b29c5cb1bda5cc",
+    "data/reading/comprehension/2026-10-28-fr-le-carnet-des-outils-pretes.json": "8ac2428c9e6fa8c86be9cf114f1ea7507cc5f2d9eff8325d9d34ea16d0f13e77",
+    "data/reading/practice/2026-10-28-fr-le-carnet-des-outils-pretes.json": "4004bdf908809a64b7226b87b9401867faed5e3223ebeb65b38cd99a1207ab08",
+    "data/reading/articles/2026-10-28-fr-une-repetition-dans-la-cour.json": "48a83ad61547814b205b6aa017e4acb18bbed713d2de1754bf1f147af9f1ca8e",
+    "data/reading/comprehension/2026-10-28-fr-une-repetition-dans-la-cour.json": "8bf1ee05020207e43ef04b0bd16bb07c137e773b4afeaa31aa26286ff750ba0f",
+    "data/reading/practice/2026-10-28-fr-une-repetition-dans-la-cour.json": "106b4fef882ef7e94e5ef178d8656fe26a35a4ec2f90bb0db9dff340aa7ee8e9",
+    "data/reading/articles/2026-10-28-de-ein-regal-im-flur.json": "b9aaaeb8cee0c68dd62998709036b8540d219b421dbf3a7b89a04ae97c453865",
+    "data/reading/comprehension/2026-10-28-de-ein-regal-im-flur.json": "68ae32a53e89c5380267a2aa2fefa7f2a000668b440df292f5f9e23cdcc256fa",
+    "data/reading/practice/2026-10-28-de-ein-regal-im-flur.json": "5cda9dff4d91bfe7a195135921d545b77ca4ed32fc70050d238177fe5ed226d1",
+    "data/reading/articles/2026-10-28-de-der-weg-ohne-treppe.json": "3a043050946cf737d38e1b4f8932bbf8a897202463049d86d7253a41f4bcce42",
+    "data/reading/comprehension/2026-10-28-de-der-weg-ohne-treppe.json": "3b3f42656bbaff583bd3ef7ef0e2bfb4776293e17e39965245dffd4669f8a1e4",
+    "data/reading/practice/2026-10-28-de-der-weg-ohne-treppe.json": "40c92edad8a913df6a1f50afa31763b07014d925cf5dad5e1ec3fdb9052aefd5",
+    "data/reading/articles/2026-10-28-de-ein-abend-mit-alten-fotos.json": "8f0592ffa242d3a122646c6e760a4937093ebc96e53221d01f2b2a3aa12c0304",
+    "data/reading/comprehension/2026-10-28-de-ein-abend-mit-alten-fotos.json": "d3039ba0500fb44d20657cc0f6c04f5e3c073426086df81957a4acd7c2c46c8f",
+    "data/reading/practice/2026-10-28-de-ein-abend-mit-alten-fotos.json": "29a1c2c57c1b59b8c9e3c9da4567039093443765a02756cc34cef976100859cc",
+    "data/it-grammar.js": "891c5c5d664e8c870dc29caca8c854c20ae267362f7390bfbc5b914d3802a28e",
+    "data/de-grammar.js": "06f61f80dcb87c321fb164759ed65d2913108dfba189ba4a80c40d3430245d9b",
+    "data/fr-grammar.js": "6df74c0589e1f684d866a5916054ee5e0db96d666109eb3b18b2e39b927a3f14",
+    "data/vocab/it.js": "4d015a311b5a779db1ed65512ec4b5ba573483cb3e87c226203601c978ed77f2",
+    "data/vocab/de.js": "be784b62b3e76712c3fa1cf077c5d0c5c579e18045ac8a751f5edcb1f751513b",
+    "data/vocab/fr.js": "401fd7c8fa4f23159b57339f1a2547e50bfc21c061100c32629ba19524e11272",
+    "scripts/build_french_grammar.py": "e016937c3f10cc6b284c1a3aa20496dccf3fdc1ee25ee93ada3ec213f2e15ffc",
+    "scripts/learning_supplements/2026-10-28-fr.json": "b0e013a8577f8dec7250956aa8ede1d5cbd683e3324f0158cbdecf92f2c40df7"
+  },
+  "deployment": "Pending at commit time; verify the resulting commit against remote checks and production assets before reporting publication.",
+  "buildIdempotence": {
+    "pass": true,
+    "hashes": {
+      "data/it-grammar.js": "891c5c5d664e8c870dc29caca8c854c20ae267362f7390bfbc5b914d3802a28e",
+      "data/de-grammar.js": "06f61f80dcb87c321fb164759ed65d2913108dfba189ba4a80c40d3430245d9b",
+      "data/fr-grammar.js": "6df74c0589e1f684d866a5916054ee5e0db96d666109eb3b18b2e39b927a3f14"
+    }
+  },
+  "historicalCatalogRowsPreserved": 127,
+  "teacherBoundaryAttempt": {
+    "book": "fr-20",
+    "observed": [
+      {
+        "lesson": 1,
+        "pdfPage": 19,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 4,
+        "pdfPage": 29,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 10,
+        "pdfPage": 50,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 12,
+        "pdfPage": 56,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 13,
+        "pdfPage": 62,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 14,
+        "pdfPage": 66,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 15,
+        "pdfPage": 69,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 18,
+        "pdfPage": 80,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 19,
+        "pdfPage": 83,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 20,
+        "pdfPage": 86,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 21,
+        "pdfPage": 89,
+        "status": "observed-heading-not-full-boundary"
+      },
+      {
+        "lesson": 22,
+        "pdfPage": 93,
+        "status": "observed-heading-not-full-boundary"
+      }
+    ],
+    "status": "partial-only; missing headings and false cross-references prevent complete reconstruction; no new OCR performed"
+  },
+  "uiAcceptance": {
+    "status": "PASS_LOCAL_FUNCTIONAL_WITH_ENVIRONMENT_LIMITS",
+    "environment": {
+      "base": "http://127.0.0.1:8765/",
+      "browser": "Installed Google Chrome via existing Playwright; one serial isolated context",
+      "desktop": {
+        "width": 1365,
+        "height": 1000
+      },
+      "mobile": {
+        "width": 390,
+        "height": 844
+      },
+      "network": "All non-127.0.0.1 HTTP requests aborted; no installs or settings changes.",
+      "contentPacketSHA256": "c1e75cc7b5b41913c11b6ecee38ee8db4231e92d0fa117d4bfd8e0e68c534c4a"
+    },
+    "checks": [
+      {
+        "name": "deep_link_1365_2026-10-28-it-una-consegna-in-bicicletta",
+        "status": "pass",
+        "observed": {
+          "level": "A2",
+          "questionCount": 3,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 1365,
+            "scrollWidth": 1365
+          }
+        }
+      },
+      {
+        "name": "deep_link_1365_2026-10-28-it-il-catalogo-dei-semi",
+        "status": "pass",
+        "observed": {
+          "level": "A2",
+          "questionCount": 3,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 1365,
+            "scrollWidth": 1365
+          }
+        }
+      },
+      {
+        "name": "deep_link_1365_2026-10-28-it-una-sala-per-due-gruppi",
+        "status": "pass",
+        "observed": {
+          "level": "A2",
+          "questionCount": 3,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 1365,
+            "scrollWidth": 1365
+          }
+        }
+      },
+      {
+        "name": "deep_link_1365_2026-10-28-fr-des-panneaux-plus-faciles-a-lire",
+        "status": "pass",
+        "observed": {
+          "level": "A2",
+          "questionCount": 3,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 1365,
+            "scrollWidth": 1365
+          }
+        }
+      },
+      {
+        "name": "deep_link_1365_2026-10-28-fr-le-carnet-des-outils-pretes",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 1365,
+            "scrollWidth": 1365
+          }
+        }
+      },
+      {
+        "name": "deep_link_1365_2026-10-28-fr-une-repetition-dans-la-cour",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 1365,
+            "scrollWidth": 1365
+          }
+        }
+      },
+      {
+        "name": "deep_link_1365_2026-10-28-de-ein-regal-im-flur",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 1365,
+            "scrollWidth": 1365
+          }
+        }
+      },
+      {
+        "name": "deep_link_1365_2026-10-28-de-der-weg-ohne-treppe",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 1365,
+            "scrollWidth": 1365
+          }
+        }
+      },
+      {
+        "name": "deep_link_1365_2026-10-28-de-ein-abend-mit-alten-fotos",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 1365,
+            "scrollWidth": 1365
+          }
+        }
+      },
+      {
+        "name": "deep_link_390_2026-10-28-fr-le-carnet-des-outils-pretes",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 390,
+            "scrollWidth": 390
+          }
+        }
+      },
+      {
+        "name": "deep_link_390_2026-10-28-fr-une-repetition-dans-la-cour",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 390,
+            "scrollWidth": 390
+          }
+        }
+      },
+      {
+        "name": "deep_link_390_2026-10-28-de-ein-regal-im-flur",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 390,
+            "scrollWidth": 390
+          }
+        }
+      },
+      {
+        "name": "deep_link_390_2026-10-28-de-ein-abend-mit-alten-fotos",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 390,
+            "scrollWidth": 390
+          }
+        }
+      },
+      {
+        "name": "vocabulary_display_it",
+        "status": "pass",
+        "observed": [
+          {
+            "word": "calendario",
+            "field": "zh",
+            "value": "日历；日程表"
+          },
+          {
+            "word": "controllare",
+            "field": "zh",
+            "value": "检查；核对；控制"
+          },
+          {
+            "word": "partecipare",
+            "field": "zh",
+            "value": "参加；参与"
+          },
+          {
+            "word": "raccogliere",
+            "field": "zh",
+            "value": "收集；采集；拾起"
+          },
+          {
+            "word": "verificare",
+            "field": "zh",
+            "value": "核实；查验"
+          }
+        ]
+      },
+      {
+        "name": "vocabulary_display_fr",
+        "status": "pass",
+        "observed": [
+          {
+            "word": "étiquette",
+            "field": "zh",
+            "value": "标签；礼节；称号"
+          },
+          {
+            "word": "ligne",
+            "field": "zh",
+            "value": "线；行；线路"
+          },
+          {
+            "word": "retour",
+            "field": "zh",
+            "value": "返回；归还；回程"
+          },
+          {
+            "word": "pierre",
+            "field": "zh",
+            "value": "石头；石块；宝石"
+          },
+          {
+            "word": "cercle",
+            "field": "zh",
+            "value": "圆；圆圈；圈子"
+          },
+          {
+            "word": "peinture",
+            "field": "zh",
+            "value": "油漆；绘画；画作"
+          },
+          {
+            "word": "souhait",
+            "field": "zh",
+            "value": "希望；愿望；祝愿"
+          },
+          {
+            "word": "réunion",
+            "field": "zh",
+            "value": "会议；聚会；集合"
+          },
+          {
+            "word": "cour",
+            "field": "zh",
+            "value": "庭院；宫廷；法院"
+          }
+        ]
+      },
+      {
+        "name": "vocabulary_display_de",
+        "status": "pass",
+        "observed": [
+          {
+            "word": "Flur",
+            "field": "zh",
+            "value": "走廊；过道"
+          },
+          {
+            "word": "Bilderrahmen",
+            "field": "zh",
+            "value": "相框；画框"
+          },
+          {
+            "word": "ausleihen",
+            "field": "zh",
+            "value": "借入；借出；借阅"
+          },
+          {
+            "word": "verleihen",
+            "field": "zh",
+            "value": "借出；授予；赋予"
+          },
+          {
+            "word": "umziehen",
+            "field": "zh",
+            "value": "搬家；迁居；（反身）换衣服"
+          },
+          {
+            "word": "Notiz",
+            "field": "zh",
+            "value": "记录；笔记；便条"
+          },
+          {
+            "word": "Anlass",
+            "field": "zh",
+            "value": "缘由；契机；场合"
+          },
+          {
+            "word": "umziehen",
+            "field": "forms.principalParts",
+            "value": "zieht um, zog um, ist umgezogen / hat sich umgezogen"
+          }
+        ]
+      },
+      {
+        "name": "daily_news_it",
+        "status": "pass",
+        "observed": {
+          "title": "Famiglie tra scelte e difficoltà",
+          "url": "http://127.0.0.1:8765/#/it/reading/article/2026-10-28-it-famiglie-tra-scelte-e-difficolta",
+          "originalLearningLabelAbsent": true
+        }
+      },
+      {
+        "name": "daily_news_fr",
+        "status": "pass",
+        "observed": {
+          "title": "Un théâtre et ses voisins",
+          "url": "http://127.0.0.1:8765/#/fr/reading/article/2026-10-28-fr-un-theatre-et-ses-voisins",
+          "originalLearningLabelAbsent": true
+        }
+      },
+      {
+        "name": "daily_news_en",
+        "status": "pass",
+        "observed": {
+          "title": "Getting ready for floods",
+          "url": "http://127.0.0.1:8765/#/en/reading/article/2026-10-28-en-getting-ready-for-floods",
+          "originalLearningLabelAbsent": true
+        }
+      },
+      {
+        "name": "old_oct26_article",
+        "status": "pass",
+        "observed": {
+          "title": "Una mostra tra le città",
+          "url": "http://127.0.0.1:8765/#/it/reading/article/2026-10-26-it-una-mostra-tra-le-citta",
+          "articleAndPracticeVisible": true
+        }
+      },
+      {
+        "name": "deep_link_390_2026-10-28-it-una-consegna-in-bicicletta",
+        "status": "pass",
+        "observed": {
+          "level": "A2",
+          "questionCount": 3,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 390,
+            "scrollWidth": 390
+          }
+        }
+      },
+      {
+        "name": "deep_link_390_2026-10-28-it-il-catalogo-dei-semi",
+        "status": "pass",
+        "observed": {
+          "level": "A2",
+          "questionCount": 3,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 390,
+            "scrollWidth": 390
+          }
+        }
+      },
+      {
+        "name": "deep_link_390_2026-10-28-it-una-sala-per-due-gruppi",
+        "status": "pass",
+        "observed": {
+          "level": "A2",
+          "questionCount": 3,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 390,
+            "scrollWidth": 390
+          }
+        }
+      },
+      {
+        "name": "deep_link_390_2026-10-28-fr-des-panneaux-plus-faciles-a-lire",
+        "status": "pass",
+        "observed": {
+          "level": "A2",
+          "questionCount": 3,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 390,
+            "scrollWidth": 390
+          }
+        }
+      },
+      {
+        "name": "deep_link_390_2026-10-28-de-der-weg-ohne-treppe",
+        "status": "pass",
+        "observed": {
+          "level": "B1",
+          "questionCount": 4,
+          "originalLabel": true,
+          "dimensions": {
+            "width": 390,
+            "scrollWidth": 390
+          }
+        }
+      },
+      {
+        "name": "interactive_it",
+        "status": "pass",
+        "observed": {
+          "wrongFeedback": true,
+          "evidenceAndChineseShown": true,
+          "repeatedAnswerLocked": true,
+          "correctFeedback": true,
+          "redoResetsOnlyComprehension": true,
+          "clozeWrongAndCorrect": true,
+          "spellingWrongAndCorrect": true,
+          "practiceRedoPreservesComprehension": true,
+          "gameStartedAndEnded": true
+        }
+      },
+      {
+        "name": "interactive_fr",
+        "status": "pass",
+        "observed": {
+          "wrongFeedback": true,
+          "evidenceAndChineseShown": true,
+          "repeatedAnswerLocked": true,
+          "correctFeedback": true,
+          "redoResetsOnlyComprehension": true,
+          "clozeWrongAndCorrect": true,
+          "spellingWrongAndCorrect": true,
+          "practiceRedoPreservesComprehension": true,
+          "gameStartedAndEnded": true
+        }
+      },
+      {
+        "name": "interactive_de",
+        "status": "pass",
+        "observed": {
+          "wrongFeedback": true,
+          "evidenceAndChineseShown": true,
+          "repeatedAnswerLocked": true,
+          "correctFeedback": true,
+          "redoResetsOnlyComprehension": true,
+          "clozeWrongAndCorrect": true,
+          "spellingWrongAndCorrect": true,
+          "practiceRedoPreservesComprehension": true,
+          "gameStartedAndEnded": true
+        }
+      },
+      {
+        "name": "language_switching",
+        "status": "pass",
+        "observed": {
+          "method": "Keyboard focus + Enter; awaited each corresponding hash route before recording",
+          "routes": [
+            {
+              "lang": "IT",
+              "url": "http://127.0.0.1:8765/#/it/reading",
+              "homeHref": "#/it",
+              "pressed": "true"
+            },
+            {
+              "lang": "FR",
+              "url": "http://127.0.0.1:8765/#/fr/reading",
+              "homeHref": "#/fr",
+              "pressed": "true"
+            },
+            {
+              "lang": "DE",
+              "url": "http://127.0.0.1:8765/#/de/reading",
+              "homeHref": "#/de",
+              "pressed": "true"
+            },
+            {
+              "lang": "EN",
+              "url": "http://127.0.0.1:8765/#/en/reading",
+              "homeHref": "#/en",
+              "pressed": "true"
+            }
+          ]
+        }
+      },
+      {
+        "name": "grammar_display_it",
+        "status": "pass",
+        "observed": [
+          {
+            "slug": "p1/ch02/t04",
+            "heading": "应用：先选介词，再检查冠词"
+          },
+          {
+            "slug": "p1/ch11/t02",
+            "heading": "应用：近过去时的助动词与配合"
+          },
+          {
+            "slug": "p1/ch11/t07",
+            "heading": "应用：背景与已完成事件"
+          },
+          {
+            "slug": "p1/ch07/t01",
+            "heading": "应用：ci 的地点与 ne 的数量"
+          },
+          {
+            "slug": "p1/ch08/t02",
+            "heading": "应用：把动词和介词一起学"
+          },
+          {
+            "slug": "p2/ch06/t02",
+            "heading": "应用：假设的时间与现实距离"
+          }
+        ]
+      },
+      {
+        "name": "grammar_display_fr",
+        "status": "pass",
+        "observed": [
+          {
+            "slug": "p1/ch03/t03",
+            "heading": "应用：数量、否定与部分冠词"
+          },
+          {
+            "slug": "p1/ch12/t06",
+            "heading": "应用：用两个过去时组织一段经历"
+          },
+          {
+            "slug": "p1/ch10/t05",
+            "heading": "应用：depuis、il y a 与 pendant 的时间视角"
+          },
+          {
+            "slug": "p1/ch09/t05",
+            "heading": "应用：关系代词看从句里的职位"
+          },
+          {
+            "slug": "p1/ch13/t04",
+            "heading": "应用：表达愿望和必要性时检查主语"
+          },
+          {
+            "slug": "p2/ch06/t05",
+            "heading": "应用：对比与让步并不相同"
+          }
+        ]
+      },
+      {
+        "name": "grammar_display_de",
+        "status": "pass",
+        "observed": [
+          {
+            "slug": "p1/ch07/t06",
+            "heading": "应用：区分地点与方向，别只看有没有移动"
+          },
+          {
+            "slug": "p2/ch01/t03",
+            "heading": "应用：可分前缀在三种句型里的位置"
+          },
+          {
+            "slug": "p1/ch08/t03",
+            "heading": "应用：过去的一次与重复发生"
+          },
+          {
+            "slug": "p1/ch08/t04",
+            "heading": "应用：表达目的时检查谁执行动作"
+          },
+          {
+            "slug": "p2/ch05/t03",
+            "heading": "应用：正在处理还是处理后的状态"
+          },
+          {
+            "slug": "p2/ch04/t04",
+            "heading": "应用：转述不是替消息作真实性保证"
+          }
+        ]
+      },
+      {
+        "name": "daily_news_de",
+        "status": "pass",
+        "observed": {
+          "title": "Alte Texte wieder finden",
+          "url": "http://127.0.0.1:8765/#/de/reading/article/2026-10-22-de-alte-texte-wieder-finden",
+          "originalLearningLabelAbsent": true
+        }
+      },
+      {
+        "name": "game_input_scoring_it",
+        "status": "pass",
+        "observed": {
+          "method": "Entered the five known article words in one rapid sequence; waited for natural game end.",
+          "result": "本轮结束 · 击落 2 个 · 得分 20",
+          "note": "Earlier screenshot-only attempt expired before input; its0score was not treated as a product failure."
+        }
+      }
+    ],
+    "blockers": [],
+    "limitations": [
+      "Fonts hosted outside localhost are blocked; their icon ligature names can render as text in this deliberately local-only test.",
+      "No live deployment, external source links, audio output or physical mobile-device test performed.",
+      "The external Markdown renderer was blocked along with other external assets: all18 supplement texts were observed, but formatted Markdown headings/tables were not certified.",
+      "Desktop full interaction flows were representative IT/FR/DE; mobile checks covered all9 route labels, question counts, practice presence and horizontal overflow, not every touch interaction.",
+      "The first language-switch pass checked aria-pressed too early; superseded by final keyboard checks that awaited each IT/FR/DE/EN route and verified its home-link prefix."
+    ],
+    "browser_cleanup": "Single serial Playwright Chrome browser explicitly closed; interactive session exited.",
+    "approval_block": {
+      "action": "await context.unroute('**/*')",
+      "target": "Local QA Playwright browser context for http://127.0.0.1:8765/",
+      "reason": "The action removes the localhost-only request interception, allowing the page to contact external destinations despite the authorized QA scope being restricted to localhost; this exceeds the user’s stated boundary.",
+      "status": "denied_not_executed",
+      "subsequent_action": "No retry or external-access workaround. Continued localhost checks, used keyboard for language controls, retained network interception.",
+      "remaining_unverified": "Normal rendering with external fonts and external Markdown renderer."
+    },
+    "visual_observation": "Reading title/body controls fit desktop/mobile viewports; no horizontal document overflow. Header icon names overlap adjacent controls when external font requests are blocked, an induced environment limitation.",
+    "priorHarnessAttempts_note": "Retained for transparency. Initial failures were resolved by awaiting lazy sidecars, using observed feedback text, reading Markdown fallback text rather than headings, and waiting for language routes. They are not remaining product defects."
+  },
+  "builderReview": "Independent read-only review passed for the10-line French supplement hook; canonical generation is byte-idempotent."
+}

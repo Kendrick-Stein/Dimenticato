@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-de-ein-abend-mit-alten-fotos",
+  "storyId": "original-learning-de-ein-abend-mit-alten-fotos-2026-10-28",
+  "lang": "de",
+  "date": "2026-10-28",
+  "title": "Ein Abend mit alten Fotos",
+  "titleZh": "一个整理旧照片的晚上",
+  "summaryZh": "两位朋友为小展览挑选照片，明确区分可以确认的信息与猜测。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：短篇连贯叙事含多处关系或目的从句，需要跨句理解规则、原因或信息核实；约200词的精简篇幅，非每日新闻标准篇。",
+  "category": "society",
+  "topics": [
+    "过去与现在",
+    "核实资料"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "以通用语言知识为目标独立创作；不是教材课文改写、翻译或新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "In einem Nachbarschaftshaus planen Mia und Anton einen Abend, an dem Bewohner alte Fotos aus dem Viertel zeigen können.",
+      "zh": "在一间邻里活动中心，米娅和安东计划办一个晚上活动，让居民展示街区的旧照片。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Mia bringt eine Mappe von ihrer Tante mit, und Anton stellt einen Scanner sowie einen Laptop auf den Tisch.",
+      "zh": "米娅带来了姑母或姨母的一个文件夹，安东把扫描仪和笔记本电脑放到桌上。",
+      "glosses": [
+        {
+          "surface": "Mappe",
+          "lemma": "Mappe",
+          "zh": "文件夹",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Sie möchten digitale Kopien machen, damit die Originale nicht mehrere Wochen im Haus bleiben müssen.",
+      "zh": "他们想制作电子副本，这样原件就不必在活动中心留上好几周。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Auf dem ersten Foto sehen sie einen Laden mit einem großen Fenster und zwei Fahrrädern vor der Tür.",
+      "zh": "第一张照片里，他们看到一家有大窗户的商店，门前有两辆自行车。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Anton glaubt, dass das Bild aus den siebziger Jahren stammt, aber auf der Rückseite steht kein Datum.",
+      "zh": "安东觉得照片拍于七十年代，但背面没有日期。",
+      "glosses": [
+        {
+          "surface": "Rückseite",
+          "lemma": "Rückseite",
+          "zh": "背面",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Mia schreibt deshalb zunächst nur Straße und Motiv auf, weil ihre Tante diese beiden Angaben sicher bestätigen kann.",
+      "zh": "因此，米娅暂时只写了街道和画面主题，因为这位长辈能可靠确认这两项信息。",
+      "glosses": [
+        {
+          "surface": "Angaben",
+          "lemma": "Angabe",
+          "zh": "信息；说明",
+          "note": "阴性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Für das nächste Foto hat die Tante eine Notiz beigelegt, auf der das Jahr und der Anlass genannt werden.",
+      "zh": "这位长辈为下一张照片附了一张便条，上面写着年份和拍照缘由。",
+      "glosses": [
+        {
+          "surface": "Notiz",
+          "lemma": "Notiz",
+          "zh": "便条",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Diese Angaben übernehmen sie, lassen aber eine unleserliche Zeile offen und fragen später noch einmal nach.",
+      "zh": "他们采用了这些信息，但有一行看不清，便先留空，稍后再询问。",
+      "glosses": [
+        {
+          "surface": "Zeile",
+          "lemma": "Zeile",
+          "zh": "一行",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Bevor die Bilder öffentlich gezeigt werden, wollen sie klären, ob die nötigen Erlaubnisse dafür vorliegen.",
+      "zh": "在公开展示照片之前，他们想确认是否已经取得所需许可。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Eine Nachbarin bietet weitere Fotos an, möchte ihre Familienbilder aber nur beim gemeinsamen Treffen zeigen.",
+      "zh": "一位邻居提供了更多照片，但只想在共同聚会时展示自己的家庭照。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Mia respektiert diesen Wunsch und nimmt diese Bilder nicht in die geplante Ausstellung im Flur auf.",
+      "zh": "米娅尊重这一意愿，没有把这些照片放进计划在走廊举办的展览。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Am Ende haben sie weniger Bilder als erwartet, aber zu jedem ausgewählten Foto stehen die bestätigten Informationen fest.",
+      "zh": "最后，他们得到的照片比预想的少，但每张选中照片都有明确、已确认的信息。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Mappe",
+        "lemma": "Mappe",
+        "zh": "文件夹",
+        "sentenceId": "s2",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "Rückseite",
+        "lemma": "Rückseite",
+        "zh": "背面",
+        "sentenceId": "s5",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "Angaben",
+        "lemma": "Angabe",
+        "zh": "信息；说明",
+        "sentenceId": "s6",
+        "note": "阴性复数。"
+      },
+      {
+        "text": "Notiz",
+        "lemma": "Notiz",
+        "zh": "便条",
+        "sentenceId": "s7",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "Zeile",
+        "lemma": "Zeile",
+        "zh": "一行",
+        "sentenceId": "s8",
+        "note": "阴性单数。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s5",
+        "text": "aus den siebziger Jahren",
+        "zh": "来自七十年代",
+        "note": "aus 支配第三格；年代名词为复数。"
+      },
+      {
+        "sentenceId": "s8",
+        "text": "fragen später noch einmal nach",
+        "zh": "稍后再问一次",
+        "note": "nachfragen 在主句中分开。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "weniger… aber… 对比数量减少和信息可靠性。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Was tun Sie, wenn Sie eine Angabe auf einem alten Foto nicht lesen können?",
+        "zh": "旧照片上的一项说明读不清时，你会怎么办？"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Ein Abend mit alten Fotos",
+    "url": "https://www.dimenticato.xyz/#/de/reading/article/2026-10-28-de-ein-abend-mit-alten-fotos",
+    "publishedAt": "2026-10-28",
+    "lang": "de"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/de/reading/article/2026-10-28-de-ein-abend-mit-alten-fotos"
+  }
+}

@@ -2187,6 +2187,159 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-28-de-der-weg-ohne-treppe",
+      "lang": "de",
+      "date": "2026-10-28",
+      "title": "Der Weg ohne Treppe",
+      "titleZh": "不用走楼梯的路线",
+      "summaryZh": "艾米尔为摄影小组重新检查集合路线，并把具体障碍写清楚。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "路线说明",
+        "信息核对"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-28-de-ein-abend-mit-alten-fotos",
+      "lang": "de",
+      "date": "2026-10-28",
+      "title": "Ein Abend mit alten Fotos",
+      "titleZh": "一个整理旧照片的晚上",
+      "summaryZh": "两位朋友为小展览挑选照片，明确区分可以确认的信息与猜测。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "过去与现在",
+        "核实资料"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-28-de-ein-regal-im-flur",
+      "lang": "de",
+      "date": "2026-10-28",
+      "title": "Ein Regal im Flur",
+      "titleZh": "走廊里的架子",
+      "summaryZh": "约纳斯和邻居安放共享物品架，并在不妨碍通行的前提下调整位置。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "空间位置",
+        "邻里合作"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-28-fr-des-panneaux-plus-faciles-a-lire",
+      "lang": "fr",
+      "date": "2026-10-28",
+      "title": "Des panneaux plus faciles à lire",
+      "titleZh": "更容易看清的标牌",
+      "summaryZh": "莉拉为小型展览检查指示牌，并根据访客实际看到的情况作修改。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "公共空间",
+        "位置与可读性"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-28-fr-le-carnet-des-outils-pretes",
+      "lang": "fr",
+      "date": "2026-10-28",
+      "title": "Le carnet des outils prêtés",
+      "titleZh": "工具借用记录本",
+      "summaryZh": "奥斯卡和萨米为共享工具制定简单的借还规则。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "物品借还",
+        "时间表达"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-28-fr-une-repetition-dans-la-cour",
+      "lang": "fr",
+      "date": "2026-10-28",
+      "title": "Une répétition dans la cour",
+      "titleZh": "院子里的一次排练",
+      "summaryZh": "一个业余合唱团因活动室刷漆而临时换场地，并调整排练方式。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "活动安排",
+        "原因与调整"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-28-it-il-catalogo-dei-semi",
+      "lang": "it",
+      "date": "2026-10-28",
+      "title": "Il catalogo dei semi",
+      "titleZh": "种子的目录",
+      "summaryZh": "两个邻居整理共享种子，发现清楚的标签比漂亮的照片更有用。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "整理资料",
+        "计划与核对"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-28-it-una-consegna-in-bicicletta",
+      "lang": "it",
+      "date": "2026-10-28",
+      "title": "Una consegna in bicicletta",
+      "titleZh": "一次自行车送货",
+      "summaryZh": "丽娜给社区活动送材料，临时调整路线，并安排补齐缺少的物品。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "路线安排",
+        "物品数量"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "original-learning"
+    },
+    {
+      "id": "2026-10-28-it-una-sala-per-due-gruppi",
+      "lang": "it",
+      "date": "2026-10-28",
+      "title": "Una sala per due gruppi",
+      "titleZh": "两个小组共用的房间",
+      "summaryZh": "一个绘画小组和一个读书小组协商使用同一间活动室。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "时间协调",
+        "表达需求"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "original-learning"
+    },
+    {
       "id": "2026-10-26-de-ein-sprachtreffen-in-bonn",
       "lang": "de",
       "date": "2026-10-26",

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-it-una-consegna-in-bicicletta",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 68,
+      "answer": "cestino",
+      "options": [
+        "cestino",
+        "cestini",
+        "cestello",
+        "cestelli"
+      ],
+      "explanation": "按原文还原 cestino（篮子）。阳性单数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 90,
+      "answer": "cucchiai",
+      "options": [
+        "cucchiaio",
+        "cucchiaiata",
+        "cucchiai",
+        "cucchiaiate"
+      ],
+      "explanation": "按原文还原 cucchiai（勺子）。cucchiaio 的阳性复数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 64,
+      "answer": "sacchetto",
+      "options": [
+        "sacchetti",
+        "sacchetto",
+        "sacca",
+        "sacche"
+      ],
+      "explanation": "按原文还原 sacchetto（小袋子）。阳性单数。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 9,
+      "answer": "incrocio",
+      "options": [
+        "incroci",
+        "incrociare",
+        "incrociata",
+        "incrocio"
+      ],
+      "explanation": "按原文还原 incrocio（路口）。阳性单数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s8",
+      "start": 85,
+      "answer": "salite",
+      "options": [
+        "salita",
+        "salite",
+        "salito",
+        "salire"
+      ],
+      "explanation": "按原文还原 salite（上坡路）。salita 的阴性复数。"
+    }
+  ]
+}

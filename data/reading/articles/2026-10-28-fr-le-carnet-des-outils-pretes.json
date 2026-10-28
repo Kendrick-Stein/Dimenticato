@@ -1,0 +1,205 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-fr-le-carnet-des-outils-pretes",
+  "storyId": "original-learning-fr-le-carnet-des-outils-pretes-2026-10-28",
+  "lang": "fr",
+  "date": "2026-10-28",
+  "title": "Le carnet des outils prêtés",
+  "titleZh": "工具借用记录本",
+  "summaryZh": "奥斯卡和萨米为共享工具制定简单的借还规则。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：短篇连贯叙事含多处关系或目的从句，需要跨句理解规则、原因或信息核实；约200词的精简篇幅，非每日新闻标准篇。",
+  "category": "society",
+  "topics": [
+    "物品借还",
+    "时间表达"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "以通用语言知识为目标独立创作；不是教材课文改写、翻译或新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Depuis deux mois, Oscar prête quelques outils aux habitants de son immeuble, mais il oublie parfois qui les utilise.",
+      "zh": "两个月来，奥斯卡一直把一些工具借给楼里的住户，但有时会忘记是谁在用。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Un mardi, il cherche son marteau pour fixer une étagère et découvre que le tiroir est vide.",
+      "zh": "一个周二，他想找锤子固定架子，发现抽屉里空了。",
+      "glosses": [
+        {
+          "surface": "marteau",
+          "lemma": "marteau",
+          "zh": "锤子",
+          "note": "阳性单数。"
+        },
+        {
+          "surface": "étagère",
+          "lemma": "étagère",
+          "zh": "架子",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Il téléphone à sa voisine, qui lui rappelle que Sami a emprunté le marteau la veille.",
+      "zh": "他给邻居打电话，她提醒他说，萨米前一天借走了锤子。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Sami le rapporte aussitôt et propose de créer un petit système pour éviter ce problème à l’avenir.",
+      "zh": "萨米马上送回锤子，并提议建立一套简单的办法，避免以后再出现这个问题。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Ils choisissent un carnet avec trois colonnes : le prénom, le nom de l’outil et la date prévue du retour.",
+      "zh": "他们选了一个本子，分成三栏：名字、工具名称和预计归还日期。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Le carnet reste dans le placard des outils, à côté d’un crayon attaché avec une ficelle.",
+      "zh": "本子放在工具柜里，旁边是一支用细绳拴着的铅笔。",
+      "glosses": [
+        {
+          "surface": "placard",
+          "lemma": "placard",
+          "zh": "柜子",
+          "note": "阳性单数。"
+        },
+        {
+          "surface": "ficelle",
+          "lemma": "ficelle",
+          "zh": "细绳",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Quand une personne rend un objet, elle barre sa ligne pour montrer que le prêt est terminé.",
+      "zh": "有人归还物品时，就划掉自己那一行，表示借用结束。",
+      "glosses": [
+        {
+          "surface": "ligne",
+          "lemma": "ligne",
+          "zh": "一行",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Pour garder les pages lisibles, Oscar décide de commencer une nouvelle page au début de chaque mois.",
+      "zh": "为了让页面清楚易读，奥斯卡决定每月开始时另起一页。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Sami demande aussi ce qui se passe si un voisin a besoin de garder un outil plus longtemps.",
+      "zh": "萨米还问，如果邻居需要多用一段时间，该怎么办。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Oscar répond qu’il faut prévenir la prochaine personne intéressée avant de changer la date dans le carnet.",
+      "zh": "奥斯卡回答说，修改本子里的日期之前，必须通知下一个想用工具的人。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Ils ne demandent pas d’argent pour ce service, mais chacun doit rendre les outils propres.",
+      "zh": "这项服务不收费，但每个人都必须把工具清理干净再归还。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Le samedi suivant, Oscar trouve son marteau sans appeler personne et peut enfin installer son étagère.",
+      "zh": "下一个周六，奥斯卡不用打电话就找到了锤子，终于可以安装架子了。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "marteau",
+        "lemma": "marteau",
+        "zh": "锤子",
+        "sentenceId": "s2",
+        "note": "阳性单数。"
+      },
+      {
+        "text": "étagère",
+        "lemma": "étagère",
+        "zh": "架子",
+        "sentenceId": "s2",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "placard",
+        "lemma": "placard",
+        "zh": "柜子",
+        "sentenceId": "s6",
+        "note": "阳性单数。"
+      },
+      {
+        "text": "ficelle",
+        "lemma": "ficelle",
+        "zh": "细绳",
+        "sentenceId": "s6",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "ligne",
+        "lemma": "ligne",
+        "zh": "一行",
+        "sentenceId": "s7",
+        "note": "阴性单数。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s1",
+        "text": "Depuis deux mois",
+        "zh": "两个月以来",
+        "note": "depuis 与现在时相连，表示目前仍在继续。"
+      },
+      {
+        "sentenceId": "s3",
+        "text": "la veille",
+        "zh": "前一天",
+        "note": "以前文的周二为参照，不等于读者此刻的昨天。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "avant de + 不定式表示做后一件事之前需先完成前一件事。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quelles règles proposeriez-vous pour prêter des objets ?",
+        "zh": "借出物品时，你会建议制定哪些规则？"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Le carnet des outils prêtés",
+    "url": "https://www.dimenticato.xyz/#/fr/reading/article/2026-10-28-fr-le-carnet-des-outils-pretes",
+    "publishedAt": "2026-10-28",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/fr/reading/article/2026-10-28-fr-le-carnet-des-outils-pretes"
+  }
+}

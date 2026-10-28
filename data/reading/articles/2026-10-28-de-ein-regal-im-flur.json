@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-de-ein-regal-im-flur",
+  "storyId": "original-learning-de-ein-regal-im-flur-2026-10-28",
+  "lang": "de",
+  "date": "2026-10-28",
+  "title": "Ein Regal im Flur",
+  "titleZh": "走廊里的架子",
+  "summaryZh": "约纳斯和邻居安放共享物品架，并在不妨碍通行的前提下调整位置。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：短篇连贯叙事含多处关系或目的从句，需要跨句理解规则、原因或信息核实；约200词的精简篇幅，非每日新闻标准篇。",
+  "category": "society",
+  "topics": [
+    "空间位置",
+    "邻里合作"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "以通用语言知识为目标独立创作；不是教材课文改写、翻译或新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Jonas wohnt seit einem Monat in einem Haus mit acht Wohnungen und möchte seine Nachbarn besser kennenlernen.",
+      "zh": "约纳斯一个月前搬进一栋有八套住房的楼，想更了解邻居。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Er hat ein kleines Regal übrig und schlägt vor, es für Dinge zu benutzen, die jemand verschenken möchte.",
+      "zh": "他有一个闲置的小架子，提议用它放大家想免费送出的物品。",
+      "glosses": [
+        {
+          "surface": "Regal",
+          "lemma": "Regal",
+          "zh": "架子",
+          "note": "中性单数 das Regal。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Am Samstag trifft er seine Nachbarin Eva im Flur, und gemeinsam suchen sie einen passenden Platz.",
+      "zh": "周六，他在走廊遇到邻居埃娃，两人一起寻找合适的位置。",
+      "glosses": [
+        {
+          "surface": "Flur",
+          "lemma": "Flur",
+          "zh": "走廊",
+          "note": "此处阳性单数 der Flur。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Zuerst stellen sie das Regal neben die Eingangstür, weil dort alle Bewohner jeden Tag vorbeikommen.",
+      "zh": "起初，他们把架子放在入口门旁，因为所有住户每天都从那里经过。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Dann öffnet Eva die Tür ganz und merkt, dass sie gegen eine Ecke des Regals stößt.",
+      "zh": "随后，埃娃把门完全打开，发现门会撞到架子的一个角。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Deshalb tragen sie es an die Wand gegenüber den Briefkästen, wo genug Platz für die Tür bleibt.",
+      "zh": "因此，他们把它搬到信箱对面的墙边，那里给门留出了足够空间。",
+      "glosses": [
+        {
+          "surface": "Briefkästen",
+          "lemma": "Briefkasten",
+          "zh": "信箱",
+          "note": "第三格复数；单数 der Briefkasten。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Eva prüft außerdem, ob ihr Nachbar mit seinem Kinderwagen noch bequem durch den Flur fahren kann.",
+      "zh": "埃娃还检查邻居推着婴儿车能否方便地通过走廊。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Jonas legt zwei saubere Tassen und ein unbenutztes Heft ins Regal, aber seine kaputte Lampe nimmt er wieder mit.",
+      "zh": "约纳斯把两个干净杯子和一个没用过的本子放上架子，但把坏灯又带走了。",
+      "glosses": [
+        {
+          "surface": "Tassen",
+          "lemma": "Tasse",
+          "zh": "杯子",
+          "note": "阴性复数；单数 die Tasse。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Auf einem Schild steht, dass nur saubere und benutzbare Gegenstände dort bleiben sollen und dass alles kostenlos ist.",
+      "zh": "标牌上写着，只应放干净、可用的物品，而且所有物品都免费。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Wer etwas mitnimmt, muss nichts anderes zurücklassen; das Regal ist also kein Tausch mit festen Regeln.",
+      "zh": "拿走物品的人不必留下别的东西，因此这并不是有固定交换规则的物物交换。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Am Abend fehlt eine Tasse, dafür liegt ein kleiner Bilderrahmen auf dem unteren Brett des Regals.",
+      "zh": "晚上，架子上少了一个杯子，下层搁板上则多了一个小相框。",
+      "glosses": [
+        {
+          "surface": "Bilderrahmen",
+          "lemma": "Bilderrahmen",
+          "zh": "相框",
+          "note": "阳性单数；此处 ein kleiner Bilderrahmen。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Jonas und Eva wollen nach einer Woche gemeinsam prüfen, ob der Platz für alle Bewohner gut funktioniert.",
+      "zh": "约纳斯和埃娃打算一周后一起检查，这个位置对所有住户是否都合适。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Regal",
+        "lemma": "Regal",
+        "zh": "架子",
+        "sentenceId": "s2",
+        "note": "中性单数 das Regal。"
+      },
+      {
+        "text": "Flur",
+        "lemma": "Flur",
+        "zh": "走廊",
+        "sentenceId": "s3",
+        "note": "此处阳性单数 der Flur。"
+      },
+      {
+        "text": "Briefkästen",
+        "lemma": "Briefkasten",
+        "zh": "信箱",
+        "sentenceId": "s6",
+        "note": "第三格复数；单数 der Briefkasten。"
+      },
+      {
+        "text": "Tassen",
+        "lemma": "Tasse",
+        "zh": "杯子",
+        "sentenceId": "s8",
+        "note": "阴性复数；单数 die Tasse。"
+      },
+      {
+        "text": "Bilderrahmen",
+        "lemma": "Bilderrahmen",
+        "zh": "相框",
+        "sentenceId": "s11",
+        "note": "阳性单数；此处 ein kleiner Bilderrahmen。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s4",
+        "text": "neben die Eingangstür",
+        "zh": "到入口门旁",
+        "note": "neben + 第四格表示放置的目标位置。"
+      },
+      {
+        "sentenceId": "s6",
+        "text": "gegenüber den Briefkästen",
+        "zh": "在信箱对面",
+        "note": "gegenüber 支配第三格。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "Wer 引导泛指人的从句；muss nichts 表示没有必须交换的义务。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Dinge würden Sie in ein solches Regal stellen?",
+        "zh": "你会在这样的架子里放哪些东西？"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Ein Regal im Flur",
+    "url": "https://www.dimenticato.xyz/#/de/reading/article/2026-10-28-de-ein-regal-im-flur",
+    "publishedAt": "2026-10-28",
+    "lang": "de"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/de/reading/article/2026-10-28-de-ein-regal-im-flur"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-fr-une-repetition-dans-la-cour",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 49,
+      "answer": "murs",
+      "options": [
+        "mur",
+        "murs",
+        "murale",
+        "mural"
+      ],
+      "explanation": "按原文还原 murs（墙壁）。阳性复数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 71,
+      "answer": "chaise",
+      "options": [
+        "chaises",
+        "assis",
+        "asseoir",
+        "chaise"
+      ],
+      "explanation": "按原文还原 chaise（椅子）。阴性单数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 18,
+      "answer": "pierres",
+      "options": [
+        "pierres",
+        "pierre",
+        "pierreux",
+        "pierreuse"
+      ],
+      "explanation": "按原文还原 pierres（石头）。阴性复数。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 26,
+      "answer": "cercle",
+      "options": [
+        "cercles",
+        "circulaire",
+        "cercle",
+        "circulaires"
+      ],
+      "explanation": "按原文还原 cercle（圆圈）。阳性单数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 96,
+      "answer": "gestes",
+      "options": [
+        "geste",
+        "gestuel",
+        "gestuelle",
+        "gestes"
+      ],
+      "explanation": "按原文还原 gestes（动作；手势）。阳性复数。"
+    }
+  ]
+}

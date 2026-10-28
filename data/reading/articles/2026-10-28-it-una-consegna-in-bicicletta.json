@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-it-una-consegna-in-bicicletta",
+  "storyId": "original-learning-it-una-consegna-in-bicicletta-2026-10-28",
+  "lang": "it",
+  "date": "2026-10-28",
+  "title": "Una consegna in bicicletta",
+  "titleZh": "一次自行车送货",
+  "summaryZh": "丽娜给社区活动送材料，临时调整路线，并安排补齐缺少的物品。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体日常情境与线性叙事，属需要辅助的较高A2；关系从句、代词和主题词汇有中文支持，非能力认证。",
+  "category": "society",
+  "topics": [
+    "路线安排",
+    "物品数量"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "以通用语言知识为目标独立创作；不是教材课文改写、翻译或新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Sabato mattina Lina deve portare alcuni materiali al centro del quartiere per una festa di domenica.",
+      "zh": "周六早上，丽娜要把一些材料送到社区中心，用于周日的活动。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Prima di uscire, controlla la lista e mette due scatole leggere nel cestino della bicicletta.",
+      "zh": "出发前，她检查清单，把两个轻盒子放进自行车篮。",
+      "glosses": [
+        {
+          "surface": "cestino",
+          "lemma": "cestino",
+          "zh": "篮子",
+          "note": "阳性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Nella prima ci sono dieci bicchieri; nella seconda ci sono tovaglioli verdi e sei piccoli cucchiai.",
+      "zh": "第一个盒子里有十个杯子；第二个里有绿色餐巾和六把小勺。",
+      "glosses": [
+        {
+          "surface": "cucchiai",
+          "lemma": "cucchiaio",
+          "zh": "勺子",
+          "note": "cucchiaio 的阳性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Il pane è ancora nel negozio di Paolo, che apre alle nove vicino alla fermata dell’autobus.",
+      "zh": "面包还在保罗的店里，这家店靠近公交站，九点开门。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Lina arriva qualche minuto prima e aspetta fuori, poi ritira il sacchetto senza comprare altro.",
+      "zh": "丽娜提前几分钟到，在外面等候，然后取走袋子，没有再买别的东西。",
+      "glosses": [
+        {
+          "surface": "sacchetto",
+          "lemma": "sacchetto",
+          "zh": "小袋子",
+          "note": "阳性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Paolo le propone di aggiungere una torta, ma Lina non ha abbastanza spazio per trasportarla.",
+      "zh": "保罗提议再加一个蛋糕，但丽娜没有足够的空间运送它。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Al primo incrocio trova la strada chiusa e segue il percorso indicato da un cartello giallo.",
+      "zh": "在第一个路口，她发现道路封闭，于是沿着黄色标牌指示的路线走。",
+      "glosses": [
+        {
+          "surface": "incrocio",
+          "lemma": "incrocio",
+          "zh": "路口",
+          "note": "阳性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Il percorso passa davanti alla scuola e richiede dieci minuti in più, ma non ci sono salite.",
+      "zh": "这条路线经过学校门前，要多花十分钟，不过没有上坡路。",
+      "glosses": [
+        {
+          "surface": "salite",
+          "lemma": "salita",
+          "zh": "上坡路",
+          "note": "salita 的阴性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Quando arriva al centro, il responsabile conta i bicchieri e dice che ne servono altri quattro.",
+      "zh": "到达中心后，负责人清点杯子，说还需要四个。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Lina aggiorna la lista, ma non torna subito al negozio: Paolo vende pane, non bicchieri.",
+      "zh": "丽娜更新了清单，但没有马上返回店里：保罗卖面包，不卖杯子。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Telefona invece a suo fratello, che può portare i bicchieri mancanti durante il pomeriggio.",
+      "zh": "她转而给自己的兄弟打电话，他可以在下午送来缺少的杯子。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Poi mette il pane sul tavolo e lascia la lista vicino alle scatole, così tutti possono controllarla.",
+      "zh": "随后她把面包放在桌上，把清单留在盒子旁，方便大家查看。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "cestino",
+        "lemma": "cestino",
+        "zh": "篮子",
+        "sentenceId": "s2",
+        "note": "阳性单数。"
+      },
+      {
+        "text": "cucchiai",
+        "lemma": "cucchiaio",
+        "zh": "勺子",
+        "sentenceId": "s3",
+        "note": "cucchiaio 的阳性复数。"
+      },
+      {
+        "text": "sacchetto",
+        "lemma": "sacchetto",
+        "zh": "小袋子",
+        "sentenceId": "s5",
+        "note": "阳性单数。"
+      },
+      {
+        "text": "incrocio",
+        "lemma": "incrocio",
+        "zh": "路口",
+        "sentenceId": "s7",
+        "note": "阳性单数。"
+      },
+      {
+        "text": "salite",
+        "lemma": "salita",
+        "zh": "上坡路",
+        "sentenceId": "s8",
+        "note": "salita 的阴性复数。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s8",
+        "text": "dieci minuti in più",
+        "zh": "多十分钟",
+        "note": "in più 表示额外增加。"
+      },
+      {
+        "sentenceId": "s9",
+        "text": "ne servono altri quattro",
+        "zh": "还需要四个",
+        "note": "ne 回指杯子，数量 quattro 保留。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "ma 对比预期与实际行动；冒号后说明不回面包店的理由。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Come organizzi una consegna quando manca qualcosa?",
+        "zh": "送东西时发现少了物品，你会怎样安排？"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Una consegna in bicicletta",
+    "url": "https://www.dimenticato.xyz/#/it/reading/article/2026-10-28-it-una-consegna-in-bicicletta",
+    "publishedAt": "2026-10-28",
+    "lang": "it"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/it/reading/article/2026-10-28-it-una-consegna-in-bicicletta"
+  }
+}

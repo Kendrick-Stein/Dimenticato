@@ -490,5 +490,12 @@
 {"word": "meist", "field": "zh", "from": "大多数的, 最多的; 大多数的, 大部分的 2. Adv = meistens", "to": "大多数的, 最多的; 大多, 通常"},
 {"word": "Graphik", "field": "zh", "from": "版画艺术 2. 版画(作品)", "to": "版画艺术; 版画(作品)"},
 {"word": "Karte", "field": "zh", "from": "卡片, 明信片, 车(船)票, 入场卷菜单, 纸牌", "to": "卡片；明信片；地图；车票；入场券；菜单；纸牌", "why": "Reviewed clear Chinese senses for introductory community reading."},
-{"word": "Wohnort", "field": "zh", "from": "所住地, 寓, 住所, 居住地点", "to": "居住地；住所", "why": "Reviewed clear Chinese senses for introductory community reading."}
+{"word": "Wohnort", "field": "zh", "from": "所住地, 寓, 住所, 居住地点", "to": "居住地；住所", "why": "Reviewed clear Chinese senses for introductory community reading."},
+{"word": "Flur", "field": "zh", "from": "走道; 地板", "to": "走廊；过道", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "Bilderrahmen", "field": "zh", "from": "镜框, 相架", "to": "相框；画框", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "ausleihen", "field": "zh", "from": "借阅", "to": "借入；借出；借阅", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "verleihen", "field": "zh", "from": "借出,; 授予", "to": "借出；授予；赋予", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "umziehen", "field": "zh", "from": "迁居, 搬, 搬到, 搬迁", "to": "搬家；迁居；（反身）换衣服", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "Notiz", "field": "zh", "from": "记录, 摘记", "to": "记录；笔记；便条", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "Anlass", "field": "zh", "from": "动机; 原因; 理由; 机会", "to": "缘由；契机；场合", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."}
 ]

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-de-der-weg-ohne-treppe",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 67,
+      "answer": "Brücke",
+      "options": [
+        "Brücken",
+        "Brücke",
+        "brückenlos",
+        "Brückengeländer"
+      ],
+      "explanation": "按原文还原 Brücke（桥）。阴性单数；此处第三格。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 85,
+      "answer": "Treppe",
+      "options": [
+        "Treppen",
+        "treten",
+        "Treppe",
+        "getreten"
+      ],
+      "explanation": "按原文还原 Treppe（楼梯）。阴性单数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 47,
+      "answer": "Fluss",
+      "options": [
+        "Flüsse",
+        "Flüssen",
+        "fließen",
+        "Fluss"
+      ],
+      "explanation": "按原文还原 Fluss（河流）。阳性单数；am = an dem。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 104,
+      "answer": "Wiese",
+      "options": [
+        "Wiese",
+        "Wiesen",
+        "weisen",
+        "wies"
+      ],
+      "explanation": "按原文还原 Wiese（草地）。阴性单数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s8",
+      "start": 18,
+      "answer": "Breite",
+      "options": [
+        "breit",
+        "breiter",
+        "Breite",
+        "breitesten"
+      ],
+      "explanation": "按原文还原 Breite（宽度）。阴性名词；die Breite。"
+    }
+  ]
+}

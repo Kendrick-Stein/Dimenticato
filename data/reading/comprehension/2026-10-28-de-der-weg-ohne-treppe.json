@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-de-der-weg-ohne-treppe",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Warum sucht Emil einen zweiten Weg?",
+      "options": [
+        "Auf dem ersten Weg gibt es eine lange Treppe.",
+        "Der Bahnhof ist am Sonntag geschlossen.",
+        "Die Fotogruppe möchte am Fluss baden.",
+        "Der südliche Eingang ist wegen Bauarbeiten geschlossen."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "第一条路有长楼梯，而鲁特要推设备车，因此他寻找另一条路。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Welche Information schickt Emil Ruth nach dem Messen?",
+      "options": [
+        "Den Namen der großen Wiese.",
+        "Die Höhe der Brücke am Bahnhof.",
+        "Den Preis für den Eintritt in den Park.",
+        "Die Breite einer schmalen Stelle."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第8句明确说明艾米尔测量宽度后把数字告诉鲁特，让她核对推车是否能通过。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Was soll die Gruppe wegen des längeren Weges tun?",
+      "options": [
+        "Die schweren Kameras zu Hause lassen.",
+        "Zehn Minuten früher losgehen.",
+        "Am südlichen Eingang auf Emil warten.",
+        "Den Ausflug auf Freitag verschieben."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "艾米尔说明路线较长，建议大家提前十分钟出发。"
+    },
+    {
+      "id": "q4",
+      "kind": "main-idea",
+      "prompt": "Was ist Emil bei der neuen Wegbeschreibung wichtig?",
+      "options": [
+        "Nur die kürzeste Entfernung anzugeben.",
+        "Jede Person zu einem anderen Eingang zu schicken.",
+        "Den Weg selbst zu prüfen und konkrete Hindernisse zu nennen.",
+        "Den Treffpunkt zu ändern, ohne den Grund zu erklären."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s5",
+        "s7",
+        "s8",
+        "s10",
+        "s12"
+      ],
+      "explanationZh": "他实际走两条路线，测量狭窄处并说明时间代价，重视可核对的具体信息。"
+    }
+  ]
+}

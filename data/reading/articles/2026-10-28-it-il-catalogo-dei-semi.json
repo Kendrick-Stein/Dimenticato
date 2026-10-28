@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-it-il-catalogo-dei-semi",
+  "storyId": "original-learning-it-il-catalogo-dei-semi-2026-10-28",
+  "lang": "it",
+  "date": "2026-10-28",
+  "title": "Il catalogo dei semi",
+  "titleZh": "种子的目录",
+  "summaryZh": "两个邻居整理共享种子，发现清楚的标签比漂亮的照片更有用。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体日常情境与线性叙事，属需要辅助的较高A2；关系从句、代词和主题词汇有中文支持，非能力认证。",
+  "category": "society",
+  "topics": [
+    "整理资料",
+    "计划与核对"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "以通用语言知识为目标独立创作；不是教材课文改写、翻译或新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Nel cortile di un piccolo palazzo, Ada e Bruno preparano uno scaffale per condividere semi con i vicini.",
+      "zh": "在一栋小楼的院子里，阿达和布鲁诺准备一个架子，与邻居分享种子。",
+      "glosses": [
+        {
+          "surface": "scaffale",
+          "lemma": "scaffale",
+          "zh": "架子",
+          "note": "阳性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Non vogliono vendere niente: ogni persona può prendere una busta e lasciare altri semi quando ne ha.",
+      "zh": "他们不想卖东西：每个人可以取一袋，有种子时再留下其他种子。",
+      "glosses": [
+        {
+          "surface": "busta",
+          "lemma": "busta",
+          "zh": "袋子",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Ada ha portato dodici buste di carta, mentre Bruno ha preparato un quaderno e alcune matite.",
+      "zh": "阿达带来了十二个纸袋，布鲁诺则准备了一个本子和几支铅笔。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "All’inizio pensano di mettere una fotografia davanti a ogni busta, perché i colori sono belli.",
+      "zh": "起初，他们想在每个袋子前放一张照片，因为颜色很漂亮。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Poi una vicina chiede quando deve seminare e i due capiscono che manca un’informazione importante.",
+      "zh": "随后，一位邻居问什么时候应该播种，两人意识到少了一项重要信息。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Decidono di scrivere sulle etichette il nome della pianta e il periodo adatto per la semina.",
+      "zh": "他们决定在标签上写植物名称和适合播种的时期。",
+      "glosses": [
+        {
+          "surface": "etichette",
+          "lemma": "etichetta",
+          "zh": "标签",
+          "note": "阴性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Per controllare queste informazioni usano le confezioni originali, che Ada ha conservato in una scatola.",
+      "zh": "为了核对这些信息，他们使用阿达保存在盒子里的原包装。",
+      "glosses": [
+        {
+          "surface": "confezioni",
+          "lemma": "confezione",
+          "zh": "包装",
+          "note": "阴性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Una busta non ha più la confezione corrispondente, quindi la tengono separata senza inventare un nome.",
+      "zh": "有一袋已经找不到对应包装，因此他们把它单独放着，没有随意编一个名称。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Nel quaderno segnano soltanto quante buste entrano ed escono; non chiedono gli indirizzi delle persone.",
+      "zh": "他们在本子里只记录袋子的进出数量，不询问大家的地址。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Lo scaffale resta sotto il portico, lontano dalla pioggia, ed è disponibile durante il giorno.",
+      "zh": "架子放在门廊下，避开雨水，白天可以使用。",
+      "glosses": [
+        {
+          "surface": "pioggia",
+          "lemma": "pioggia",
+          "zh": "雨",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Alla fine Ada appende una sola fotografia in alto, per rendere l’angolo più accogliente.",
+      "zh": "最后，阿达只在上方挂了一张照片，让这个角落更温馨。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Bruno sorride: adesso il piccolo catalogo non è soltanto bello, ma aiuta davvero a scegliere.",
+      "zh": "布鲁诺笑了：现在这份小目录不仅好看，也确实能帮助选择。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "scaffale",
+        "lemma": "scaffale",
+        "zh": "架子",
+        "sentenceId": "s1",
+        "note": "阳性单数。"
+      },
+      {
+        "text": "busta",
+        "lemma": "busta",
+        "zh": "袋子",
+        "sentenceId": "s2",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "etichette",
+        "lemma": "etichetta",
+        "zh": "标签",
+        "sentenceId": "s6",
+        "note": "阴性复数。"
+      },
+      {
+        "text": "confezioni",
+        "lemma": "confezione",
+        "zh": "包装",
+        "sentenceId": "s7",
+        "note": "阴性复数。"
+      },
+      {
+        "text": "pioggia",
+        "lemma": "pioggia",
+        "zh": "雨",
+        "sentenceId": "s10",
+        "note": "阴性单数。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s8",
+        "text": "la tengono separata",
+        "zh": "把它单独放着",
+        "note": "la 回指 una busta，separata 与其配合。"
+      },
+      {
+        "sentenceId": "s12",
+        "text": "non è soltanto bello",
+        "zh": "不仅好看",
+        "note": "non soltanto… ma… 连接两个评价。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "ha portato 与 ha preparato 报告两个已完成的准备动作。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali informazioni sono utili su un’etichetta?",
+        "zh": "标签上有哪些信息比较有用？"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Il catalogo dei semi",
+    "url": "https://www.dimenticato.xyz/#/it/reading/article/2026-10-28-it-il-catalogo-dei-semi",
+    "publishedAt": "2026-10-28",
+    "lang": "it"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/it/reading/article/2026-10-28-it-il-catalogo-dei-semi"
+  }
+}

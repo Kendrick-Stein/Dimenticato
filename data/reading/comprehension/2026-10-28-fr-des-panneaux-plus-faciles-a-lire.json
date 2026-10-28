@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-fr-des-panneaux-plus-faciles-a-lire",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Pourquoi Lila change-t-elle les lettres et le papier ?",
+      "options": [
+        "Les visiteurs veulent connaître le prix des dessins.",
+        "Marc doit s’approcher pour lire les panneaux.",
+        "Les artistes ont changé le nom de leurs dessins.",
+        "La fille de Marc préfère d’autres couleurs."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "小字与相近的底色让马克必须靠近才能读，因此莉拉改成白纸黑色大字。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quel problème la fille de Marc remarque-t-elle ?",
+      "options": [
+        "Un dessin cache l’entrée du bâtiment.",
+        "Une flèche indique un autre étage.",
+        "La porte ouverte cache le dernier panneau.",
+        "Les étiquettes donnent de mauvais noms."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "第9句说明开着的门会挡住最后一块标牌。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Comment Lila améliore-t-elle le parcours ?",
+      "options": [
+        "Elle ferme la porte pendant toute l’exposition.",
+        "Elle demande aux artistes de guider chaque visiteur.",
+        "Elle enlève les panneaux pour libérer les murs.",
+        "Après l’essai, elle change les panneaux et refait le trajet."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s5",
+        "s7",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "邻居试走后，她调整字、底色及位置，再从入口复走确认。"
+    }
+  ]
+}

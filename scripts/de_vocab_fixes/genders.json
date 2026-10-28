@@ -778,4 +778,6 @@
 {"word": "Fauteuil", "field": "gender", "from": "m/n", "to": "m", "why": "dewiktionary"},
 {"word": "Hocker", "field": "gender", "from": "m/f", "to": "m", "why": "dewiktionary"},
 {"word": "Papierschnitzel", "field": "gender", "from": "m/n", "to": "m", "why": "dewiktionary"},
-{"word": "Fleischhauer", "field": "gender", "from": "m/f", "to": "m", "why": "dewiktionary"}]
+{"word": "Fleischhauer", "field": "gender", "from": "m/f", "to": "m", "why": "dewiktionary"},
+{"word": "umziehen", "field": "forms.principalParts", "from": "zieht um, zog um, hat umgezogen", "to": "zieht um, zog um, ist umgezogen / hat sich umgezogen", "why": "2026-10-28: moving home uses sein; changing clothes reflexively uses haben. Duden https://www.duden.de/rechtschreibung/umziehen_umgezogen"}
+]

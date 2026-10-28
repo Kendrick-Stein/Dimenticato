@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-de-ein-abend-mit-alten-fotos",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Warum schreiben Mia und Anton kein Jahr zum ersten Foto?",
+      "options": [
+        "Die Tante möchte die Straße nicht nennen.",
+        "Alle Fotos sollen ohne Angaben gezeigt werden.",
+        "Das Jahr ist nur vermutet und nicht bestätigt.",
+        "Der Scanner kann keine Zahlen erkennen."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "年代只是安东的猜测，背面没有日期；这位长辈能确认的是街道和主题。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Was machen sie mit der unleserlichen Zeile?",
+      "options": [
+        "Sie verwenden das Jahr vom ersten Foto.",
+        "Sie lassen sie offen und fragen später nach.",
+        "Sie entfernen die ganze Notiz aus der Mappe.",
+        "Sie bitten die Gäste, eine Geschichte zu erfinden."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "他们对看不清的那行不作猜测，先留空，之后再问。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Warum fehlen die Familienbilder der Nachbarin in der Ausstellung?",
+      "options": [
+        "Der Laptop kann die Bilder nicht öffnen.",
+        "Die Bilder zeigen nicht das richtige Viertel.",
+        "Die Tante hat bereits dieselben Bilder gebracht.",
+        "Die Nachbarin möchte sie nur beim Treffen zeigen."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "邻居只同意在聚会时展示，米娅尊重她的要求，没有纳入走廊展览。"
+    },
+    {
+      "id": "q4",
+      "kind": "cause",
+      "prompt": "Warum wollen sie digitale Kopien machen?",
+      "options": [
+        "Damit die Originale nicht wochenlang im Haus bleiben müssen.",
+        "Damit Anton das Datum auf den Bildern verändern kann.",
+        "Damit sie die unleserliche Notiz nicht mehr prüfen müssen.",
+        "Damit die Nachbarin ihre Familienbilder im Flur zeigen muss."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3"
+      ],
+      "explanationZh": "第3句直接给出目的：制作副本，使原件不必在活动中心留好几周。"
+    }
+  ]
+}

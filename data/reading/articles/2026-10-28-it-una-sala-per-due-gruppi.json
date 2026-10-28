@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-it-una-sala-per-due-gruppi",
+  "storyId": "original-learning-it-una-sala-per-due-gruppi-2026-10-28",
+  "lang": "it",
+  "date": "2026-10-28",
+  "title": "Una sala per due gruppi",
+  "titleZh": "两个小组共用的房间",
+  "summaryZh": "一个绘画小组和一个读书小组协商使用同一间活动室。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体日常情境与线性叙事，属需要辅助的较高A2；关系从句、代词和主题词汇有中文支持，非能力认证。",
+  "category": "society",
+  "topics": [
+    "时间协调",
+    "表达需求"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "以通用语言知识为目标独立创作；不是教材课文改写、翻译或新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il mercoledì pomeriggio una sala del quartiere ospita prima un gruppo di disegno e poi un gruppo di lettura.",
+      "zh": "周三下午，社区的一间活动室先接待绘画小组，再接待读书小组。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Questa settimana, però, il gruppo di disegno deve finire un grande cartellone per una mostra.",
+      "zh": "不过，这周绘画小组需要完成一张用于展览的大海报。",
+      "glosses": [
+        {
+          "surface": "cartellone",
+          "lemma": "cartellone",
+          "zh": "大海报",
+          "note": "阳性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "La responsabile, Marta, chiede mezz’ora in più e manda un messaggio a Davide, che organizza la lettura.",
+      "zh": "负责人玛尔塔请求多用半小时，并给组织阅读活动的达维德发消息。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Davide non può spostare l’incontro, perché due persone devono prendere l’ultimo autobus per tornare a casa.",
+      "zh": "达维德不能推迟聚会，因为两个人必须赶末班公交车回家。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "I due si incontrano nella sala e misurano lo spazio vicino alle finestre con un metro.",
+      "zh": "两人在活动室见面，用卷尺量了窗边的空间。",
+      "glosses": [
+        {
+          "surface": "finestre",
+          "lemma": "finestra",
+          "zh": "窗户",
+          "note": "阴性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Ci sono quattro tavoli piccoli: possono lasciare due tavoli ai disegnatori e preparare gli altri per i lettori.",
+      "zh": "那里有四张小桌子：可以留两张给画画的人，另两张为读者准备。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Marta promette che negli ultimi trenta minuti nessuno userà la musica, per non disturbare la lettura.",
+      "zh": "玛尔塔保证最后三十分钟没有人播放音乐，以免打扰阅读。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Davide accetta e mette le sedie dall’altra parte della stanza, vicino alla porta del corridoio.",
+      "zh": "达维德同意了，把椅子放到房间另一侧，靠近通往走廊的门。",
+      "glosses": [
+        {
+          "surface": "sedie",
+          "lemma": "sedia",
+          "zh": "椅子",
+          "note": "阴性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Prima dell’incontro, i disegnatori coprono i propri tavoli con vecchi giornali e chiudono i barattoli di colore.",
+      "zh": "聚会前，画画的人用旧报纸盖住自己的桌子，并盖好颜料罐。",
+      "glosses": [
+        {
+          "surface": "barattoli",
+          "lemma": "barattolo",
+          "zh": "罐子",
+          "note": "阳性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "I lettori arrivano all’ora prevista e trovano un cartello che spiega la nuova disposizione della sala.",
+      "zh": "读者按原定时间到达，看到一块说明活动室新布局的标牌。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "All’inizio qualcuno è sorpreso, ma dopo pochi minuti tutti possono continuare il proprio lavoro.",
+      "zh": "起初有人感到意外，不过几分钟后，大家都能继续自己的活动。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Alla fine i due gruppi decidono di controllare insieme il calendario prima di organizzare la prossima mostra.",
+      "zh": "最后，两个小组决定在组织下一次展览前一起核对日程表。",
+      "glosses": [
+        {
+          "surface": "calendario",
+          "lemma": "calendario",
+          "zh": "日程表",
+          "note": "阳性单数。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "cartellone",
+        "lemma": "cartellone",
+        "zh": "大海报",
+        "sentenceId": "s2",
+        "note": "阳性单数。"
+      },
+      {
+        "text": "finestre",
+        "lemma": "finestra",
+        "zh": "窗户",
+        "sentenceId": "s5",
+        "note": "阴性复数。"
+      },
+      {
+        "text": "sedie",
+        "lemma": "sedia",
+        "zh": "椅子",
+        "sentenceId": "s8",
+        "note": "阴性复数。"
+      },
+      {
+        "text": "barattoli",
+        "lemma": "barattolo",
+        "zh": "罐子",
+        "sentenceId": "s9",
+        "note": "阳性复数。"
+      },
+      {
+        "text": "calendario",
+        "lemma": "calendario",
+        "zh": "日程表",
+        "sentenceId": "s12",
+        "note": "阳性单数。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s7",
+        "text": "per non disturbare",
+        "zh": "为了不打扰",
+        "note": "目的不定式中的否定放在动词前。"
+      },
+      {
+        "sentenceId": "s10",
+        "text": "all’ora prevista",
+        "zh": "在原定时间",
+        "note": "prevista 与 ora 配合。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "due… gli altri… 区分总共四张桌子中的两组。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Come puoi dividere uno spazio con un altro gruppo?",
+        "zh": "你可以怎样和另一个小组分配空间？"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Una sala per due gruppi",
+    "url": "https://www.dimenticato.xyz/#/it/reading/article/2026-10-28-it-una-sala-per-due-gruppi",
+    "publishedAt": "2026-10-28",
+    "lang": "it"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/it/reading/article/2026-10-28-it-una-sala-per-due-gruppi"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-it-il-catalogo-dei-semi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Perché Ada e Bruno aggiungono informazioni alle etichette?",
+      "options": [
+        "Le fotografie sono troppo costose.",
+        "Vogliono vendere tutte le buste.",
+        "Una vicina chiede quando seminare.",
+        "Il quaderno non ha più pagine."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "邻居询问播种时间，促使他们补充名称和播种时期；与价格和本子页数无关。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa fanno con la busta senza confezione?",
+      "options": [
+        "La mettono da parte senza darle un nome.",
+        "Le danno il nome della pianta più vicina.",
+        "La usano per conservare le matite.",
+        "La lasciano fuori sotto la pioggia."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "第8句说明缺少对应包装的袋子被分开放置，名称不作猜测。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Che cosa segnano nel quaderno?",
+      "options": [
+        "Gli indirizzi di tutti i vicini.",
+        "I prezzi delle confezioni originali.",
+        "Le date delle fotografie esposte.",
+        "Le buste in entrata e in uscita."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "本子只记录袋子进出数量，不记录地址、价格或照片日期。"
+    }
+  ]
+}

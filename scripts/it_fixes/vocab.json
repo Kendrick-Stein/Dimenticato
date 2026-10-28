@@ -23348,5 +23348,10 @@
 {"word": "ulceroso", "from": {"zh": "溃疡", "en": "ulcerative"}, "to": {"zh": "溃疡的", "en": "ulcerous"}, "why": "tail review of zh-wiktionary-agreeing entries (pos-mismatched en/zh)"},
 {"word": "bottone", "from": {"zh": "按钮"}, "to": {"zh": "纽扣；按钮"}, "why": "Original repair reading: distinguish clothing fastener from interface button."},
 {"word": "tasca", "from": {"forms": ""}, "to": {"forms": {"plural": "tasche"}}, "why": "Reviewed regular noun plural for original learning reading."},
-{"word": "foglio", "from": {"forms": ""}, "to": {"forms": {"plural": "fogli"}}, "why": "Reviewed noun plural for original learning reading."}
+{"word": "foglio", "from": {"forms": ""}, "to": {"forms": {"plural": "fogli"}}, "why": "Reviewed noun plural for original learning reading."},
+{"word": "calendario", "from": {"zh": "日历"}, "to": {"zh": "日历；日程表"}, "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "controllare", "from": {"zh": "检查"}, "to": {"zh": "检查；核对；控制"}, "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "partecipare", "from": {"zh": "参与"}, "to": {"zh": "参加；参与"}, "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "raccogliere", "from": {"zh": "收集"}, "to": {"zh": "收集；采集；拾起"}, "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "verificare", "from": {"zh": "检查"}, "to": {"zh": "核实；查验"}, "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."}
 ]

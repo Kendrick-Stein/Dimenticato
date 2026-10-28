@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-de-ein-regal-im-flur",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Warum bleibt das Regal nicht neben der Eingangstür?",
+      "options": [
+        "Das Schild ist neben der Tür schlecht zu lesen.",
+        "Die Bewohner kommen dort selten vorbei.",
+        "Die Briefkästen können nicht mehr geöffnet werden.",
+        "Die geöffnete Tür stößt gegen das Regal."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "门完全打开时会撞到架子，所以他们将架子移开。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Was gilt, wenn jemand eine Tasse mitnimmt?",
+      "options": [
+        "Die Person muss einen Bilderrahmen bringen.",
+        "Die Person muss nichts dafür zurücklassen.",
+        "Die Person muss zuerst Eva anrufen.",
+        "Die Person muss nach einer Woche bezahlen."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "所有物品免费，取走物品不需要留下东西作为交换。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Was prüfen Jonas und Eva bei der Einrichtung besonders?",
+      "options": [
+        "Ob das Regal den größten Platz im Haus bekommt.",
+        "Ob jede Wohnung gleich viele Gegenstände bringt.",
+        "Ob man die Tür und den Flur weiter gut benutzen kann.",
+        "Ob alle Gegenstände noch in ihrer Verpackung sind."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "他们实际检查门能否打开、婴儿车能否通行，重点是确保空间仍好用。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Welchen Gegenstand nimmt Jonas wieder mit?",
+      "options": [
+        "Das unbenutzte Heft.",
+        "Den kleinen Bilderrahmen.",
+        "Eine saubere Tasse.",
+        "Die kaputte Lampe."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "约纳斯留下可用的杯子和本子，把坏灯带走；规则要求物品可用。"
+    }
+  ]
+}

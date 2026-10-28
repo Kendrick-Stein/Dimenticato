@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-de-der-weg-ohne-treppe",
+  "storyId": "original-learning-de-der-weg-ohne-treppe-2026-10-28",
+  "lang": "de",
+  "date": "2026-10-28",
+  "title": "Der Weg ohne Treppe",
+  "titleZh": "不用走楼梯的路线",
+  "summaryZh": "艾米尔为摄影小组重新检查集合路线，并把具体障碍写清楚。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：短篇连贯叙事含多处关系或目的从句，需要跨句理解规则、原因或信息核实；约200词的精简篇幅，非每日新闻标准篇。",
+  "category": "society",
+  "topics": [
+    "路线说明",
+    "信息核对"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "以通用语言知识为目标独立创作；不是教材课文改写、翻译或新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Eine kleine Fotogruppe möchte sich am Sonntag im Stadtpark treffen, um dort gemeinsam Bilder von Bäumen zu machen.",
+      "zh": "一个小摄影组想在周日到城市公园见面，一起拍树木的照片。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Emil organisiert das Treffen und schickt den anderen zuerst einen kurzen Weg vom Bahnhof zum südlichen Eingang.",
+      "zh": "艾米尔组织聚会，先把从火车站到南门的一条近路发给其他人。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Am Freitag geht er die Strecke selbst ab und entdeckt hinter einer Brücke eine lange Treppe.",
+      "zh": "周五，他自己走了一遍，发现桥后有一段长楼梯。",
+      "glosses": [
+        {
+          "surface": "Brücke",
+          "lemma": "Brücke",
+          "zh": "桥",
+          "note": "阴性单数；此处第三格。"
+        },
+        {
+          "surface": "Treppe",
+          "lemma": "Treppe",
+          "zh": "楼梯",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Er denkt an seine Freundin Ruth, die schwere Fotoausrüstung auf einem kleinen Wagen transportieren möchte.",
+      "zh": "他想到朋友鲁特，她想用一辆小推车运送沉重的摄影设备。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Auf der Karte findet Emil einen zweiten Weg am Fluss entlang, der zum westlichen Eingang führt.",
+      "zh": "艾米尔在地图上找到另一条沿河路线，通往西门。",
+      "glosses": [
+        {
+          "surface": "Fluss",
+          "lemma": "Fluss",
+          "zh": "河流",
+          "note": "阳性单数；am = an dem。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Dieser Weg ist etwa fünfhundert Meter länger, hat aber keine Treppe und endet direkt neben einer großen Wiese.",
+      "zh": "这条路比原路线长约五百米，但没有楼梯，终点就在一片大草地旁。",
+      "glosses": [
+        {
+          "surface": "Wiese",
+          "lemma": "Wiese",
+          "zh": "草地",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Emil läuft auch diese Strecke und notiert eine schmale Stelle zwischen zwei niedrigen Mauern.",
+      "zh": "艾米尔也走了这条路线，记下两堵矮墙之间的一处狭窄路段。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Er misst dort die Breite und schreibt Ruth die genaue Zahl, damit sie ihren Wagen vorher prüfen kann.",
+      "zh": "他测量那里的宽度，把具体数字告诉鲁特，让她提前核对推车是否能通过。",
+      "glosses": [
+        {
+          "surface": "Breite",
+          "lemma": "Breite",
+          "zh": "宽度",
+          "note": "阴性名词；die Breite。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Dann schickt er der ganzen Gruppe den neuen Treffpunkt mit einem Foto vom westlichen Eingang.",
+      "zh": "随后，他把新的集合地点连同西门照片发给整个小组。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Er erklärt auch, dass die längere Strecke mehr Zeit braucht und alle zehn Minuten früher losgehen sollten.",
+      "zh": "他还说明，较长路线更费时间，大家应提前十分钟出发。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Am Sonntag kommt Ruth mit ihrem Wagen an und bedankt sich besonders für die Information über die schmale Stelle.",
+      "zh": "周日，鲁特推着小车到达，特别感谢他提供了狭窄路段的信息。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Emil lernt daraus, dass eine genaue Beschreibung hilfreicher sein kann als die einfache Aussage: Der Weg ist leicht.",
+      "zh": "艾米尔由此认识到，具体描述可能比简单说“这条路很容易走”更有帮助。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Brücke",
+        "lemma": "Brücke",
+        "zh": "桥",
+        "sentenceId": "s3",
+        "note": "阴性单数；此处第三格。"
+      },
+      {
+        "text": "Treppe",
+        "lemma": "Treppe",
+        "zh": "楼梯",
+        "sentenceId": "s3",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "Fluss",
+        "lemma": "Fluss",
+        "zh": "河流",
+        "sentenceId": "s5",
+        "note": "阳性单数；am = an dem。"
+      },
+      {
+        "text": "Wiese",
+        "lemma": "Wiese",
+        "zh": "草地",
+        "sentenceId": "s6",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "Breite",
+        "lemma": "Breite",
+        "zh": "宽度",
+        "sentenceId": "s8",
+        "note": "阴性名词；die Breite。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s1",
+        "text": "um dort gemeinsam Bilder von Bäumen zu machen",
+        "zh": "为了在那里一起拍树的照片",
+        "note": "um…zu 表示目的。"
+      },
+      {
+        "sentenceId": "s8",
+        "text": "damit sie ihren Wagen vorher prüfen kann",
+        "zh": "让她提前核对自己的推车",
+        "note": "damit 从句明确另一位行动者。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "länger… aber… 对比距离代价与没有楼梯的特点。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Informationen brauchen Sie vor einem unbekannten Weg?",
+        "zh": "走一条不熟悉的路线前，你需要哪些信息？"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Der Weg ohne Treppe",
+    "url": "https://www.dimenticato.xyz/#/de/reading/article/2026-10-28-de-der-weg-ohne-treppe",
+    "publishedAt": "2026-10-28",
+    "lang": "de"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/de/reading/article/2026-10-28-de-der-weg-ohne-treppe"
+  }
+}

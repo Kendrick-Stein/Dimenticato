@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-de-ein-regal-im-flur",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 19,
+      "answer": "Regal",
+      "options": [
+        "Regale",
+        "Regalen",
+        "Regal",
+        "regeln"
+      ],
+      "explanation": "按原文还原 Regal（架子）。中性单数 das Regal。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 44,
+      "answer": "Flur",
+      "options": [
+        "Flur",
+        "Flure",
+        "Fluren",
+        "flach"
+      ],
+      "explanation": "按原文还原 Flur（走廊）。此处阳性单数 der Flur。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 48,
+      "answer": "Briefkästen",
+      "options": [
+        "Briefkastens",
+        "Briefkasten",
+        "Briefkästen",
+        "brieflich"
+      ],
+      "explanation": "按原文还原 Briefkästen（信箱）。第三格复数；单数 der Briefkasten。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 24,
+      "answer": "Tassen",
+      "options": [
+        "Tasse",
+        "Tassen",
+        "Tages",
+        "tragen"
+      ],
+      "explanation": "按原文还原 Tassen（杯子）。阴性复数；单数 die Tasse。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 51,
+      "answer": "Bilderrahmen",
+      "options": [
+        "Bilderrahmens",
+        "Bildern",
+        "bilden",
+        "Bilderrahmen"
+      ],
+      "explanation": "按原文还原 Bilderrahmen（相框）。阳性单数；此处 ein kleiner Bilderrahmen。"
+    }
+  ]
+}

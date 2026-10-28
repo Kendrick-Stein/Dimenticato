@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-it-una-consegna-in-bicicletta",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Perché Lina non prende la torta?",
+      "options": [
+        "Paolo deve ancora prepararla.",
+        "Non ha spazio per portarla.",
+        "Il centro ha già due torte.",
+        "Il negozio non è ancora aperto."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "第6句明确说明运输空间不足，并未说蛋糕尚未做好或已有蛋糕。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Chi può portare gli altri bicchieri?",
+      "options": [
+        "Il responsabile del centro.",
+        "Paolo con il pane.",
+        "Lina durante il ritorno.",
+        "Il fratello di Lina."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "第11句说她给兄弟打电话，他可以下午送来缺少的杯子。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Come risolve Lina il problema della strada e quello dei bicchieri?",
+      "options": [
+        "Cambia strada e chiede aiuto per il materiale mancante.",
+        "Cambia strada e compra altri bicchieri nel negozio di Paolo.",
+        "Aspetta che la strada riapra e chiede al fratello i bicchieri.",
+        "Torna a casa e rimanda ogni consegna a domenica."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "道路封闭时她改走指示路线；缺杯子时联系兄弟，分别处理路线和材料问题。"
+    }
+  ]
+}

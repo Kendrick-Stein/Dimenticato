@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-it-il-catalogo-dei-semi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 61,
+      "answer": "scaffale",
+      "options": [
+        "scaffali",
+        "scaffale",
+        "scaffalature",
+        "scaffalatura"
+      ],
+      "explanation": "按原文还原 scaffale（架子）。阳性单数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s2",
+      "start": 59,
+      "answer": "busta",
+      "options": [
+        "busta",
+        "buste",
+        "busti",
+        "busto"
+      ],
+      "explanation": "按原文还原 busta（袋子）。阴性单数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 27,
+      "answer": "etichette",
+      "options": [
+        "etichetta",
+        "etichettato",
+        "etichettare",
+        "etichette"
+      ],
+      "explanation": "按原文还原 etichette（标签）。阴性复数。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 45,
+      "answer": "confezioni",
+      "options": [
+        "confezionare",
+        "confezione",
+        "confezioni",
+        "confezionata"
+      ],
+      "explanation": "按原文还原 confezioni（包装）。阴性复数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 50,
+      "answer": "pioggia",
+      "options": [
+        "piovuto",
+        "pioggia",
+        "piovere",
+        "piogge"
+      ],
+      "explanation": "按原文还原 pioggia（雨）。阴性单数。"
+    }
+  ]
+}

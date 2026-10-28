@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-fr-des-panneaux-plus-faciles-a-lire",
+  "storyId": "original-learning-fr-des-panneaux-plus-faciles-a-lire-2026-10-28",
+  "lang": "fr",
+  "date": "2026-10-28",
+  "title": "Des panneaux plus faciles à lire",
+  "titleZh": "更容易看清的标牌",
+  "summaryZh": "莉拉为小型展览检查指示牌，并根据访客实际看到的情况作修改。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体日常情境与线性叙事，属需要辅助的较高A2；关系从句、代词和主题词汇有中文支持，非能力认证。",
+  "category": "society",
+  "topics": [
+    "公共空间",
+    "位置与可读性"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "以通用语言知识为目标独立创作；不是教材课文改写、翻译或新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Lila prépare une petite exposition de dessins dans la salle commune de son immeuble avec deux voisins.",
+      "zh": "莉拉和两位邻居在公寓楼的公共活动室里准备一个小型画展。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Elle écrit d’abord les noms des artistes sur des étiquettes et les pose sous les dessins.",
+      "zh": "她先把作者姓名写在标签上，再把标签放在画的下方。",
+      "glosses": [
+        {
+          "surface": "étiquettes",
+          "lemma": "étiquette",
+          "zh": "标签",
+          "note": "阴性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Pour indiquer le chemin, elle accroche trois panneaux près de l’entrée, de l’escalier et de la salle.",
+      "zh": "为了指路，她在入口、楼梯和活动室附近各挂了一块标牌。",
+      "glosses": [
+        {
+          "surface": "escalier",
+          "lemma": "escalier",
+          "zh": "楼梯",
+          "note": "阳性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Les lettres sont jolies, mais elles sont petites et leur couleur ressemble à celle du papier.",
+      "zh": "字母很好看，但字很小，颜色也和纸张接近。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Avant l’ouverture, son voisin Marc fait le parcours avec sa fille et s’arrête plusieurs fois.",
+      "zh": "开放前，邻居马克和女儿沿路走了一遍，好几次停下来。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Il explique qu’il doit s’approcher beaucoup des panneaux pour comprendre où aller ensuite.",
+      "zh": "他解释说，必须凑得很近才能看懂接下来该往哪里走。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Lila remplace alors les feuilles par du papier blanc et écrit de grandes lettres noires.",
+      "zh": "于是莉拉换上白纸，用黑色写了大字。",
+      "glosses": [
+        {
+          "surface": "feuilles",
+          "lemma": "feuille",
+          "zh": "纸张",
+          "note": "阴性复数；此处是纸张。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Elle ajoute aussi une flèche sur chaque panneau pour montrer la direction sans écrire de longues phrases.",
+      "zh": "她还在每块标牌上加了一个箭头，以便不用写长句也能指明方向。",
+      "glosses": [
+        {
+          "surface": "flèche",
+          "lemma": "flèche",
+          "zh": "箭头",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "La fille de Marc remarque que le dernier panneau est caché quand la porte de la salle reste ouverte.",
+      "zh": "马克的女儿注意到，当活动室的门开着时，最后一块标牌会被挡住。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Ils le déplacent sur le mur d’en face, puis recommencent le parcours depuis l’entrée du bâtiment.",
+      "zh": "他们把它移到对面的墙上，然后从大楼入口重新走了一遍。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Cette fois, personne n’a besoin de s’arrêter pour chercher la direction, et Lila peut accueillir les visiteurs.",
+      "zh": "这一次，没有人需要停下找方向，莉拉可以接待访客了。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Elle note les changements dans son carnet pour préparer plus facilement la prochaine exposition des habitants.",
+      "zh": "她把这些修改记在本子里，让下次居民展览更容易准备。",
+      "glosses": [
+        {
+          "surface": "carnet",
+          "lemma": "carnet",
+          "zh": "记事本",
+          "note": "阳性单数。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "étiquettes",
+        "lemma": "étiquette",
+        "zh": "标签",
+        "sentenceId": "s2",
+        "note": "阴性复数。"
+      },
+      {
+        "text": "escalier",
+        "lemma": "escalier",
+        "zh": "楼梯",
+        "sentenceId": "s3",
+        "note": "阳性单数。"
+      },
+      {
+        "text": "feuilles",
+        "lemma": "feuille",
+        "zh": "纸张",
+        "sentenceId": "s7",
+        "note": "阴性复数；此处是纸张。"
+      },
+      {
+        "text": "flèche",
+        "lemma": "flèche",
+        "zh": "箭头",
+        "sentenceId": "s8",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "carnet",
+        "lemma": "carnet",
+        "zh": "记事本",
+        "sentenceId": "s12",
+        "note": "阳性单数。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s6",
+        "text": "s’approcher beaucoup des panneaux",
+        "zh": "走到离标牌很近的地方",
+        "note": "s’approcher de 表示靠近。"
+      },
+      {
+        "sentenceId": "s10",
+        "text": "le mur d’en face",
+        "zh": "对面的墙",
+        "note": "d’en face 补充位置。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s9",
+        "note": "quand 从句说明标牌在什么情况下被遮住。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Comment vérifier si un panneau est facile à lire ?",
+        "zh": "怎样检查一个标牌是否容易看清？"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Des panneaux plus faciles à lire",
+    "url": "https://www.dimenticato.xyz/#/fr/reading/article/2026-10-28-fr-des-panneaux-plus-faciles-a-lire",
+    "publishedAt": "2026-10-28",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/fr/reading/article/2026-10-28-fr-des-panneaux-plus-faciles-a-lire"
+  }
+}

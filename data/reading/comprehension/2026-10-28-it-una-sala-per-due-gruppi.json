@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-it-una-sala-per-due-gruppi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Perché Davide vuole mantenere l’orario?",
+      "options": [
+        "La mostra deve iniziare subito.",
+        "Marta deve prendere il treno.",
+        "La sala chiude prima del solito.",
+        "Due lettori devono prendere l’ultimo autobus."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4"
+      ],
+      "explanationZh": "不能推迟是因为两位参与者需要赶末班公交车，而不是展览或活动室关门时间。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Come vengono usati i quattro tavoli?",
+      "options": [
+        "Tutti per il gruppo di disegno.",
+        "Due per ogni gruppo.",
+        "Tre per la lettura e uno per disegnare.",
+        "Tutti per esporre il cartellone."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "四张桌子中两张给绘画者，另外两张给读者。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Quale soluzione permette ai gruppi di continuare?",
+      "options": [
+        "Annullare la lettura per questa settimana.",
+        "Spostare la mostra nel corridoio.",
+        "Dividere lo spazio e limitare il rumore.",
+        "Far arrivare tutti mezz’ora più tardi."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s7",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "解决办法是同时分配桌子、控制音乐声，读者仍按原时间到达。"
+    }
+  ]
+}

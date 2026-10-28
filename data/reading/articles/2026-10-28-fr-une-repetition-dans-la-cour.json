@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-fr-une-repetition-dans-la-cour",
+  "storyId": "original-learning-fr-une-repetition-dans-la-cour-2026-10-28",
+  "lang": "fr",
+  "date": "2026-10-28",
+  "title": "Une répétition dans la cour",
+  "titleZh": "院子里的一次排练",
+  "summaryZh": "一个业余合唱团因活动室刷漆而临时换场地，并调整排练方式。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：短篇连贯叙事含多处关系或目的从句，需要跨句理解规则、原因或信息核实；约200词的精简篇幅，非每日新闻标准篇。",
+  "category": "society",
+  "topics": [
+    "活动安排",
+    "原因与调整"
+  ],
+  "contentType": "original-learning",
+  "attribution": "Dimenticato 原创教学文本、中文辅助与练习；虚构人物和情节。",
+  "adaptation": "以通用语言知识为目标独立创作；不是教材课文改写、翻译或新闻。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le jeudi soir, six voisins se retrouvent d’habitude dans une petite salle pour chanter ensemble pendant une heure.",
+      "zh": "周四晚上，六位邻居通常在一间小活动室见面，一起唱一小时歌。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Cette semaine, la salle est fermée parce que les murs viennent d’être repeints et doivent encore sécher.",
+      "zh": "这周活动室关闭了，因为墙壁刚刷过漆，还需要晾干。",
+      "glosses": [
+        {
+          "surface": "murs",
+          "lemma": "mur",
+          "zh": "墙壁",
+          "note": "阳性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Amina, qui organise les rencontres, propose de répéter dans la cour, près du grand arbre.",
+      "zh": "活动组织者阿米娜提议在院子里的大树旁排练。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Elle prévient les participants le matin et leur demande d’apporter une chaise légère ainsi que leurs paroles.",
+      "zh": "她早上通知了参与者，请他们带一把轻便椅子和歌词。",
+      "glosses": [
+        {
+          "surface": "chaise",
+          "lemma": "chaise",
+          "zh": "椅子",
+          "note": "阴性单数。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "À dix-neuf heures, tout le monde arrive, mais un vent assez fort fait voler les feuilles sur la table.",
+      "zh": "十九点，大家都到了，不过风很大，把桌上的纸吹得乱飞。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Louis cherche des pierres dans la cour et en pose une sur chaque paquet de feuilles pour les maintenir.",
+      "zh": "路易在院子里找来石头，在每叠纸上放一块，把它们压住。",
+      "glosses": [
+        {
+          "surface": "pierres",
+          "lemma": "pierre",
+          "zh": "石头",
+          "note": "阴性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Le groupe commence par une chanson connue, puis essaie un morceau nouveau avec des phrases plus longues.",
+      "zh": "小组先唱了一首熟悉的歌，再尝试一首乐句较长的新歌。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Après quelques minutes, Amina remarque que les personnes assises derrière entendent mal les voix du premier rang.",
+      "zh": "几分钟后，阿米娜发现坐在后面的人听不清前排的声音。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Elle place les chaises en cercle pour que chacun puisse mieux entendre les autres et voir leurs gestes.",
+      "zh": "她把椅子围成圆圈，让每个人更好地听到其他人，也能看见他们的动作。",
+      "glosses": [
+        {
+          "surface": "cercle",
+          "lemma": "cercle",
+          "zh": "圆圈",
+          "note": "阳性单数。"
+        },
+        {
+          "surface": "gestes",
+          "lemma": "geste",
+          "zh": "动作；手势",
+          "note": "阳性复数。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Ils gardent cette disposition jusqu’à la fin et terminent à vingt heures, comme prévu, pour respecter le voisinage.",
+      "zh": "他们保持这个布局直到结束，并按计划二十点结束，以免影响邻居。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Avant de partir, chacun récupère sa chaise et Louis remet les pierres à leur place dans la cour.",
+      "zh": "离开前，每个人拿回自己的椅子，路易把石头放回院子里的原处。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "La semaine suivante, ils souhaitent retrouver leur salle, mais Amina veut y essayer aussi le cercle.",
+      "zh": "下周他们希望回到活动室，但阿米娜也想在那里试试圆圈布局。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "murs",
+        "lemma": "mur",
+        "zh": "墙壁",
+        "sentenceId": "s2",
+        "note": "阳性复数。"
+      },
+      {
+        "text": "chaise",
+        "lemma": "chaise",
+        "zh": "椅子",
+        "sentenceId": "s4",
+        "note": "阴性单数。"
+      },
+      {
+        "text": "pierres",
+        "lemma": "pierre",
+        "zh": "石头",
+        "sentenceId": "s6",
+        "note": "阴性复数。"
+      },
+      {
+        "text": "cercle",
+        "lemma": "cercle",
+        "zh": "圆圈",
+        "sentenceId": "s9",
+        "note": "阳性单数。"
+      },
+      {
+        "text": "gestes",
+        "lemma": "geste",
+        "zh": "动作；手势",
+        "sentenceId": "s9",
+        "note": "阳性复数。"
+      }
+    ],
+    "phrases": [
+      {
+        "sentenceId": "s2",
+        "text": "viennent d’être repeints",
+        "zh": "刚刚重新刷过漆",
+        "note": "venir de + 不定式表示最近完成的动作。"
+      },
+      {
+        "sentenceId": "s10",
+        "text": "comme prévu",
+        "zh": "按计划",
+        "note": "用来说明安排没有改变。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "mais 连接回到原场地的愿望与保留新布局的计划。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Que faut-il changer quand une activité se passe dehors ?",
+        "zh": "活动改到户外时，需要调整什么？"
+      }
+    ]
+  },
+  "source": {
+    "name": "Dimenticato",
+    "title": "Une répétition dans la cour",
+    "url": "https://www.dimenticato.xyz/#/fr/reading/article/2026-10-28-fr-une-repetition-dans-la-cour",
+    "publishedAt": "2026-10-28",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "本站原创教学内容；未另行授予转载许可",
+    "url": "https://www.dimenticato.xyz/#/fr/reading/article/2026-10-28-fr-une-repetition-dans-la-cour"
+  }
+}

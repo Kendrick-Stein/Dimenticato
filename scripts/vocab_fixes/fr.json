@@ -787,8 +787,8 @@
   "word": "retour",
   "field": "zh",
   "from": "回来；返回；来回票",
-  "to": "返回；回来",
-  "why": "来回票 wrong"
+  "to": "返回；归还；回程",
+  "why": "来回票 wrong; 2026-10-28 clarify return/restoration senses"
  },
  {
   "word": "tiens",
@@ -42145,5 +42145,13 @@
   "why": "zh-wiktionary disagreement review"
  },
 {"word": "prénom", "field": "zh", "from": "名", "to": "名（与姓氏相对）", "why": "Original identity/community reading: clarify the relevant common sense."},
-{"word": "quartier", "field": "zh", "from": "街区", "to": "街区；城区", "why": "Original identity/community reading: clarify the relevant common sense."}
+{"word": "quartier", "field": "zh", "from": "街区", "to": "街区；城区", "why": "Original identity/community reading: clarify the relevant common sense."},
+{"word": "étiquette", "field": "zh", "from": "标签；附属物；碎片", "to": "标签；礼节；称号", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "ligne", "field": "zh", "from": "线；运输线路", "to": "线；行；线路", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "pierre", "field": "zh", "from": "石头；宝石；果核", "to": "石头；石块；宝石", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "cercle", "field": "zh", "from": "圆周；社交圈；循环", "to": "圆；圆圈；圈子", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "peinture", "field": "zh", "from": "绘画；油画", "to": "油漆；绘画；画作", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "souhait", "field": "zh", "from": "希望；愿望；祝愿（阳性名词）", "to": "希望；愿望；祝愿", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "réunion", "field": "zh", "from": "会议", "to": "会议；聚会；集合", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."},
+{"word": "cour", "field": "zh", "from": "庭院；天井；后院", "to": "庭院；宫廷；法院", "why": "2026-10-28 original-learning review: clarify ordinary senses; no headword/rank/level changes."}
 ]

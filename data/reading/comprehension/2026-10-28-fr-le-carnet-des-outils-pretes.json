@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-fr-le-carnet-des-outils-pretes",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Pourquoi Oscar téléphone-t-il au début ?",
+      "options": [
+        "Il ne sait plus qui a son marteau.",
+        "Il veut acheter un nouveau placard.",
+        "Il ne comprend pas les colonnes du carnet.",
+        "Il veut faire payer les voisins."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "explanationZh": "他找不到锤子，也忘记借给了谁；电话中邻居提醒他是萨米借走的。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Comment indique-t-on le retour d’un outil ?",
+      "options": [
+        "On change le prénom dans la colonne.",
+        "On commence toujours une nouvelle page.",
+        "On retire le crayon du placard.",
+        "On barre la ligne du prêt."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "归还后划掉借用记录的一行；每月才另起一页。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Que faut-il faire avant de prolonger un prêt ?",
+      "options": [
+        "Payer le prix d’un nouvel outil.",
+        "Prévenir la prochaine personne intéressée.",
+        "Attendre le début du mois suivant.",
+        "Téléphoner à tous les habitants."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "延长借用前要先通知下一位想用工具的人，再改日期。"
+    },
+    {
+      "id": "q4",
+      "kind": "main-idea",
+      "prompt": "À quoi sert le nouveau système ?",
+      "options": [
+        "À choisir les outils qui seront vendus.",
+        "À suivre les prêts et organiser les retours.",
+        "À réserver le placard pour Oscar seul.",
+        "À compter les heures de travail de Sami."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s7",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "本子记录借用者、工具和归还日期；归还划线，延期先沟通，目标是管理借还。"
+    }
+  ]
+}

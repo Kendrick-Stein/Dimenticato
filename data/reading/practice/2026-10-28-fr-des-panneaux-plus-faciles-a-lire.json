@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-fr-des-panneaux-plus-faciles-a-lire",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 49,
+      "answer": "étiquettes",
+      "options": [
+        "étiquettes",
+        "étiquette",
+        "étiqueter",
+        "étiqueté"
+      ],
+      "explanation": "按原文还原 étiquettes（标签）。阴性复数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 77,
+      "answer": "escalier",
+      "options": [
+        "escaliers",
+        "escalade",
+        "escalier",
+        "escales"
+      ],
+      "explanation": "按原文还原 escalier（楼梯）。阳性单数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 24,
+      "answer": "feuilles",
+      "options": [
+        "feuille",
+        "feuilles",
+        "feuillet",
+        "feuilleté"
+      ],
+      "explanation": "按原文还原 feuilles（纸张）。阴性复数；此处是纸张。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 22,
+      "answer": "flèche",
+      "options": [
+        "flèches",
+        "fléché",
+        "fléchir",
+        "flèche"
+      ],
+      "explanation": "按原文还原 flèche（箭头）。阴性单数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 35,
+      "answer": "carnet",
+      "options": [
+        "carnets",
+        "carnet",
+        "cartes",
+        "cartons"
+      ],
+      "explanation": "按原文还原 carnet（记事本）。阳性单数。"
+    }
+  ]
+}

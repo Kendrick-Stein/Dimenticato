@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-fr-une-repetition-dans-la-cour",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Pourquoi le groupe répète-t-il dans la cour ?",
+      "options": [
+        "La salle est trop petite pour les six voisins.",
+        "L’arbre protège mieux les feuilles du vent.",
+        "La peinture des murs doit encore sécher.",
+        "Les voisins ont demandé un concert public."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s3"
+      ],
+      "explanationZh": "活动室因刚刷漆、需晾干而关闭，因此改在院子排练。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi Amina forme-t-elle un cercle ?",
+      "options": [
+        "Pour mieux entendre les voix et voir les gestes.",
+        "Pour cacher les paroles aux autres habitants.",
+        "Pour laisser la table près de l’arbre.",
+        "Pour empêcher les feuilles de s’envoler."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "圆圈解决前后排听不清的问题，也让大家能看见彼此动作；压纸用的是石头。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quelle idée Amina veut-elle garder pour la salle ?",
+      "options": [
+        "Chanter seulement des chansons connues.",
+        "Apporter les pierres de la cour.",
+        "Répéter jusqu’à vingt et une heures.",
+        "Essayer les chaises en cercle."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s12"
+      ],
+      "explanationZh": "最后一句说明阿米娜想在室内也尝试圆圈布局，没有延长时间或只唱旧歌的计划。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quel élément de l’organisation reste le même ?",
+      "options": [
+        "La place des chaises dans la salle.",
+        "La façon de poser les paroles sur la table.",
+        "L’heure de la fin de la répétition.",
+        "Le lieu où les voisins se retrouvent."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s1",
+        "s2",
+        "s5",
+        "s6",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "场地、压纸方式和椅子布局改变了，结束时间仍按计划在二十点。"
+    }
+  ]
+}
