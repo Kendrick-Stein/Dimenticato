@@ -1,0 +1,386 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-it-famiglie-tra-scelte-e-difficolta",
+  "storyId": "istat-natalita-fecondita-2025-2026-10-21",
+  "lang": "it",
+  "date": "2026-10-28",
+  "title": "Famiglie tra scelte e difficoltà",
+  "titleZh": "家庭：选择与现实困难之间",
+  "summaryZh": "从Istat关于2025年出生情况的报告出发，理解人口变化、生活条件和不同家庭选择，区分全年数据与初步估计。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：围绕家庭与生活条件展开连贯说明，包含过去时、比较、原因及让步关系；统计术语和数据时间范围有中文解释。",
+  "category": "society",
+  "topics": [
+    "家庭生活",
+    "人口变化",
+    "生活选择"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Istat",
+    "title": "Natalità e fecondità della popolazione residente – Anno 2025",
+    "url": "https://www.istat.it/comunicato-stampa/natalita-e-fecondita-della-popolazione-residente-anno-2025/",
+    "publishedAt": "2026-10-21",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "机构作者：Istat，原文发布于2026-10-21，题名和链接见来源。Istat法律声明 https://www.istat.it/note-legali/ 允许在CC BY 4.0下署名改编及再传播；排除第三方材料。本意大利语简化改写、中文翻译和原创教学补充由Dimenticato于2026-10-28整理，不表示Istat认可。",
+  "adaptation": "基于意大利语机构原稿的同语言改写，并非原文；节选人口与家庭事实，调整句式并增加中文释义和原创练习，不复制图表、图片、视频或第三方材料。保留2025年数据和2026年前七个月初步数据的区别，不作个人生育建议，也不把相关因素简化为唯一原因。第s5句对统计指标与个人经历的区分，以及第s16句对比较时段的解释，是编辑的教学说明，不是原文引语。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 21 ottobre 2026 l’Istat ha pubblicato un rapporto sulle nascite e sulla fecondità della popolazione residente in Italia nel 2025.",
+      "zh": "2026年10月21日，Istat发布了一份有关2025年意大利常住人口出生与生育水平的报告。",
+      "glosses": [
+        {
+          "surface": "nascite",
+          "lemma": "nascita",
+          "zh": "出生；出生人数"
+        },
+        {
+          "surface": "residente",
+          "lemma": "residente",
+          "zh": "常住的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "I dati descrivono un cambiamento che riguarda le famiglie, ma anche le condizioni in cui si costruiscono i progetti di vita.",
+      "zh": "这些数据描述了一种变化：它涉及家庭，也涉及人们规划生活时所处的条件。",
+      "glosses": [
+        {
+          "surface": "riguarda",
+          "lemma": "riguardare",
+          "zh": "涉及"
+        },
+        {
+          "surface": "condizioni",
+          "lemma": "condizione",
+          "zh": "条件"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Nel 2025 sono nati 355.772 bambini, il 3,8 per cento in meno rispetto all’anno precedente.",
+      "zh": "2025年有355772名婴儿出生，比上一年减少3.8%。",
+      "glosses": [
+        {
+          "surface": "precedente",
+          "lemma": "precedente",
+          "zh": "之前的；上一的"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Il numero medio di figli per donna è sceso da 1,18 nel 2024 a 1,14 nel 2025.",
+      "zh": "平均每名妇女的子女数指标从2024年的1.18降至2025年的1.14。",
+      "glosses": [
+        {
+          "surface": "è sceso",
+          "lemma": "scendere",
+          "zh": "下降了"
+        },
+        {
+          "surface": "medio",
+          "lemma": "medio",
+          "zh": "平均的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Questo indicatore permette di osservare la fecondità della popolazione e non descrive la storia personale di ogni donna.",
+      "zh": "这一指标可用于观察人口的生育水平，并不是在描述每名妇女的个人经历。",
+      "glosses": [
+        {
+          "surface": "indicatore",
+          "lemma": "indicatore",
+          "zh": "指标"
+        },
+        {
+          "surface": "osservare",
+          "lemma": "osservare",
+          "zh": "观察"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Secondo il rapporto, il calo delle nascite dipende in parte dal minor numero di potenziali genitori.",
+      "zh": "报告指出，出生人数下降的部分原因是潜在父母人数较少。",
+      "glosses": [
+        {
+          "surface": "calo",
+          "lemma": "calo",
+          "zh": "下降"
+        },
+        {
+          "surface": "genitori",
+          "lemma": "genitore",
+          "zh": "父母"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Le generazioni dei potenziali genitori di oggi sono nate dagli anni Ottanta in poi, quando il declino della fecondità si è consolidato.",
+      "zh": "如今潜在父母所属的世代出生于20世纪80年代及以后，当时生育水平下降的趋势逐渐确立。",
+      "glosses": [
+        {
+          "surface": "generazioni",
+          "lemma": "generazione",
+          "zh": "世代"
+        },
+        {
+          "surface": "declino",
+          "lemma": "declino",
+          "zh": "下降"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Il rapporto segnala anche una tendenza più debole ad avere figli e diverse difficoltà nella realizzazione dei progetti familiari.",
+      "zh": "报告还指出，生育倾向减弱，实现家庭计划也面临多种困难。",
+      "glosses": [
+        {
+          "surface": "difficoltà",
+          "lemma": "difficoltà",
+          "zh": "困难"
+        },
+        {
+          "surface": "realizzazione",
+          "lemma": "realizzazione",
+          "zh": "实现"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Tra queste ci sono i percorsi di studio più lunghi, il lavoro precario e i problemi nel trovare un’abitazione.",
+      "zh": "这些因素包括更长的求学过程、不稳定的工作，以及寻找住房的困难。",
+      "glosses": [
+        {
+          "surface": "precario",
+          "lemma": "precario",
+          "zh": "不稳定的"
+        },
+        {
+          "surface": "abitazione",
+          "lemma": "abitazione",
+          "zh": "住房"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Conciliare lavoro e famiglia può essere difficile; alcune persone scelgono inoltre di rimandare la genitorialità o di seguire altri progetti.",
+      "zh": "兼顾工作与家庭可能很困难；此外，一些人选择推迟成为父母，或追求其他生活计划。",
+      "glosses": [
+        {
+          "surface": "Conciliare",
+          "lemma": "conciliare",
+          "zh": "兼顾；协调"
+        },
+        {
+          "surface": "rimandare",
+          "lemma": "rimandare",
+          "zh": "推迟"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "I dati mostrano anche cambiamenti nel modo di formare una famiglia: nel 2025 il 44,1 per cento delle nascite è avvenuto fuori dal matrimonio.",
+      "zh": "数据还显示了组建家庭方式的变化：2025年，44.1%的出生发生在婚姻关系之外。",
+      "glosses": [
+        {
+          "surface": "matrimonio",
+          "lemma": "matrimonio",
+          "zh": "婚姻"
+        },
+        {
+          "surface": "fuori dal",
+          "lemma": "fuori da",
+          "zh": "在……之外"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Questa quota è aumentata, anche se il numero di questi bambini è diminuito rispetto al 2024.",
+      "zh": "这一比例上升了，尽管这类出生婴儿的人数较2024年减少。",
+      "glosses": [
+        {
+          "surface": "quota",
+          "lemma": "quota",
+          "zh": "比例；份额"
+        },
+        {
+          "surface": "anche se",
+          "lemma": "anche se",
+          "zh": "尽管"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Il rapporto registra infine alcune abitudini nella scelta dei nomi: Sofia e Leonardo restano i preferiti.",
+      "zh": "报告最后还记录了一些取名习惯：索菲娅和莱昂纳多仍然最受欢迎。",
+      "glosses": [
+        {
+          "surface": "nomi",
+          "lemma": "nome",
+          "zh": "名字"
+        },
+        {
+          "surface": "abitudini",
+          "lemma": "abitudine",
+          "zh": "习惯"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Il 7,3 per cento dei bambini nati nel 2025 ha ricevuto entrambi i cognomi dei genitori, contro il 6,7 per cento nel 2024.",
+      "zh": "2025年出生的婴儿中，7.3%同时采用父母双方的姓氏，而2024年这一比例为6.7%。",
+      "glosses": [
+        {
+          "surface": "cognomi",
+          "lemma": "cognome",
+          "zh": "姓氏"
+        },
+        {
+          "surface": "entrambi",
+          "lemma": "entrambi",
+          "zh": "两者都"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Per gennaio-luglio 2026 sono disponibili dati provvisori: le nascite risultano inferiori dell’1,1 per cento rispetto agli stessi mesi del 2025.",
+      "zh": "2026年1至7月已有初步数据：出生人数比2025年同期减少1.1%。",
+      "glosses": [
+        {
+          "surface": "provvisori",
+          "lemma": "provvisorio",
+          "zh": "初步的；暂定的"
+        },
+        {
+          "surface": "inferiori",
+          "lemma": "inferiore",
+          "zh": "较少的；较低的"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Si tratta quindi di un confronto parziale, non del risultato dell’intero 2026.",
+      "zh": "因此，这只是部分时段的比较，而不是2026年全年的结果。",
+      "glosses": [
+        {
+          "surface": "confronto",
+          "lemma": "confronto",
+          "zh": "比较"
+        },
+        {
+          "surface": "intero",
+          "lemma": "intero",
+          "zh": "整个的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "nascite",
+        "lemma": "nascita",
+        "zh": "出生；出生人数",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "genitori",
+        "lemma": "genitore",
+        "zh": "父母",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "abitazione",
+        "lemma": "abitazione",
+        "zh": "住房",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "cognomi",
+        "lemma": "cognome",
+        "zh": "姓氏",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "provvisori",
+        "lemma": "provvisorio",
+        "zh": "初步的；暂定的",
+        "sentenceId": "s15"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "rispetto all’anno precedente",
+        "zh": "与上一年相比；rispetto a引出比较对象",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "Conciliare lavoro e famiglia",
+        "zh": "兼顾工作与家庭；conciliare连接需要协调的两方面",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "anche se",
+        "zh": "尽管；引出与主句形成对照的事实",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "比例可以上升而人数下降。anche se引出让步，避免把百分比变化误读为人数增加。"
+      },
+      {
+        "sentenceId": "s16",
+        "note": "Si tratta di + 名词：这属于／这是……；这里用non del澄清比较的时间范围。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Che cosa può aiutare a conciliare lavoro e famiglia?",
+        "zh": "什么能帮助人们兼顾工作与家庭？"
+      },
+      {
+        "text": "Perché è utile distinguere un numero da una percentuale?",
+        "zh": "为什么区分人数与百分比很重要？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Secondo me, le condizioni di lavoro contano molto.",
+        "zh": "在我看来，工作条件非常重要。",
+        "note": "原创讨论示例，不是对统计因果关系的验证。"
+      },
+      {
+        "text": "Bisogna considerare anche il periodo del confronto.",
+        "zh": "也必须考虑比较所涉及的时段。",
+        "note": "原创可复用表达。"
+      }
+    ]
+  }
+}

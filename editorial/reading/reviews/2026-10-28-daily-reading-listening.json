@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-10-28",
+  "status": "PASS",
+  "batch": "3 independent native-source readings: IT B1, FR A2, EN A2; 4 outbound listening resources",
+  "wordCounts": {
+    "it": 299,
+    "fr": 166,
+    "en": 162
+  },
+  "independentExerciseReview": {
+    "blindBeforeKey": true,
+    "comprehensionQuestions": 10,
+    "clozeQuestions": 15,
+    "listeningQuestions": 6,
+    "allMatched": true,
+    "revisions": "IT birth-cohort wording corrected and teaching explanation identified; EN listening distractor lengths balanced; DE listening guide wording corrected. Final source and exercise reviewers rechecked hashes."
+  },
+  "sourceReview": {
+    "checkedAt": "2026-10-28",
+    "scope": "Independent direct-source rights, facts, translations, learning summary and difficulty; not question-key or deployment approval",
+    "status": "PASS-source-rights-facts-language-translations-listening-metadata",
+    "articles": [
+      {
+        "id": "2026-10-28-en-getting-ready-for-floods",
+        "sha256": "b75c89b3ef2ea4623a82160fbd47b1691ffa143ec88836e93a144a3e2760ff81",
+        "status": "PASS",
+        "wordCount": 162,
+        "levelFinding": "A2 editorial estimate plausible; concrete website functions and emergency resources, present/can constructions, technical vocabulary supported",
+        "sourceUrl": "https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash",
+        "sourceDate": "2026-10-12",
+        "sourceLocators": "Official press release lines58-68,91-95,163; GOV.UK terms Using GOV.UK content",
+        "facts": "Website function, prospective200000property target,260pumps,25kmtemporarybarriers,600oncall and freewarnings match institutional narrative. No government claim of achieved200000beneficiaries; no copied quotations or media. Chinese and glosses faithful.",
+        "rights": "Fresh official article OGL3footer plus GOV.UK terms permits reproduction under OGL; institutional narrative only, Crownattribution, source/date/licence and changes retained. Canonical NationalArchives OGL URL returned403 and was not retried; existing verified policy reused alongside fresh article/terms.",
+        "thirdPartyExclusions": "Images, logos, quotations, linked third-party works not reused."
+      },
+      {
+        "id": "2026-10-28-it-famiglie-tra-scelte-e-difficolta",
+        "sha256": "ef1efd7f2b96f5ff7dd797c484d126358e6955c802f92c8cceeaa2efc87a7f8a",
+        "status": "PASS",
+        "wordCount": 299,
+        "sourceUrl": "https://www.istat.it/comunicato-stampa/natalita-e-fecondita-della-popolazione-residente-anno-2025/",
+        "sourceDate": "2026-10-21",
+        "sourceLocators": "Istat official HTML213-232,244-246; legal184-200",
+        "facts": "Numeric counts/rates/reference periods, proportion-vs-count distinction, names/surnames, family-conditions explanations all match source.",
+        "languageAndChinese": "Faithful; statistical level vs individual biography appropriately separated. B1 estimate justified by contrasts, demographic vocabulary, reference periods and connected explanation.",
+        "rights": "Institutional native-language text; no contrary byline/translation mark. Attribution,source,date,licence and adaptation notice retained; no photos/thirdpartywords reused. CC BY4.0.",
+        "requiredRevisions": [],
+        "revisionsVerified": "s7 corrected to birth-cohort account, Chinese and declino gloss aligned; s5 and s16 explicitly identified as editorial explanatory supplements"
+      },
+      {
+        "id": "2026-10-28-fr-un-theatre-et-ses-voisins",
+        "sha256": "51956bccb0e7426c89998148c24de9432bb4a1c66cc04bab34a687c7d82d2cd0",
+        "status": "PASS",
+        "wordCount": 166,
+        "sourceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-d-eric-gialis-a-la-direction-des-salins-scene-nationale-de-martigues",
+        "sourceDate": "2026-10-15",
+        "sourceLocators": "Ministry release19,25-31; legalII4.3.1a/4.3.2",
+        "facts": "Appointment and interim2023, programme/international focus, ViceVersa,5artists,regionalteams,youngchoreographers,amateurdance,youthpass18-26 all match official project; futurestatus retained.",
+        "languageAndChinese": "Faithful Chinese, glossary/summaries correct; A2 high-end editorial estimate acceptable with extensive Chinese support, concrete programme and short clauses.",
+        "rights": "Institutional native-language text; no contrary byline/translation mark. Attribution,source,date,licence and adaptation notice retained; no photos/thirdpartywords reused. CC BY-SA3.0FR shared explicitly for adaptation/translation/teaching material.",
+        "requiredRevisions": []
+      }
+    ],
+    "sourceChecks": {
+      "it": "Official full HTML publication21Oct2026; Istat legal CC BY4 permits transform/reproduce; no contrary text credit observed. Exclude images/logos/thirdparty/media. Source summary facts checked in HTML; linkedPDF not used.",
+      "fr": "Official press15Oct2026 fulltext read. Ministry legal II4.3.1a covers text CC BY-SA3FR; II4.3.2partner exceptions excluded. Plans must not become implemented outcomes."
+    },
+    "listening": {
+      "status": "PASS",
+      "scope": "Metadata, provider level, guide/vocabulary and evidence boundaries only; questionblindreview separate",
+      "file": "/workspace/shared/oct28-listening/proposed-entries.json",
+      "sha256BeforeFix": "bfac7d468e348405c9815a671b101aa97c7ffc51b22c22e635b16c82cd18041d",
+      "findings": [
+        {
+          "id": "it-rai-banca-a2",
+          "evidence": "Rai official heading Unit11A2 and transcript395-415; bankaccount/prelievo/prepaidcard/conditional guide supported; evergreen dateunknown honest; not financialadvice"
+        },
+        {
+          "id": "en-bc-leaving-message-a2",
+          "evidence": "Official transcript15-55 and providerA2level74-76;3participants,correction,callback,emailfallback all supported; publicationdate unknown/evergreen honest"
+        },
+        {
+          "id": "fr-tv5-sport-college-a1",
+          "evidence": "Official A1label38,date19Dec2023at63,availability4March2028at46,HachetteFLE/AliceReboulcredit; vocabulary onpage91,126,161. Resourceonly avoids unsupportedvideoquestions."
+        },
+        {
+          "id": "de-logo-2026-10-27",
+          "evidence": "Officialhomepage listing27Oct10:32; linkedpage38-42 confirms27Oct2026at19:50/topics. First directwebfetch inaccessible, normalhomepage navigation then succeeded; no bypass. Resourceonly,ungradednativechildren content correct.",
+          "requiredRevision": "Replace 水上摩托车 with 摩托车驶过水面 to avoid guessing jet-ski from Motorrad über Wasser."
+        }
+      ],
+      "playbackTested": false,
+      "audioQualityTested": false,
+      "rightsBoundary": "Only outboundlinks,short originalguides and wordexpressions; no fulltranscript/video/image/sourceexercise copying.",
+      "sha256": "bfac7d468e348405c9815a671b101aa97c7ffc51b22c22e635b16c82cd18041d",
+      "finalCorrection": "DE wording corrected as required, verified",
+      "deCanonicalUrl": "https://www.logo.de/logo-vom-dienstag-27-oktober-2026-100.html"
+    },
+    "limitations": [
+      "This review did not inspect question answer files; independent blind exercise review required separately.",
+      "No audio/video playback or sound quality test.",
+      "Canonical National Archives OGL page returned403; no retry/bypass; current GOV.UK terms and article footer independently verified, prior verified OGL policy reused."
+    ]
+  },
+  "finalFileSha256": {
+    "data/reading/articles/2026-10-28-en-getting-ready-for-floods.json": "b75c89b3ef2ea4623a82160fbd47b1691ffa143ec88836e93a144a3e2760ff81",
+    "data/reading/articles/2026-10-28-fr-un-theatre-et-ses-voisins.json": "51956bccb0e7426c89998148c24de9432bb4a1c66cc04bab34a687c7d82d2cd0",
+    "data/reading/articles/2026-10-28-it-famiglie-tra-scelte-e-difficolta.json": "ef1efd7f2b96f5ff7dd797c484d126358e6955c802f92c8cceeaa2efc87a7f8a",
+    "data/reading/comprehension/2026-10-28-en-getting-ready-for-floods.json": "c2acb74096af41bdec8773f29f197bcb3ea9131a3bd2990362be32e9cde0c479",
+    "data/reading/comprehension/2026-10-28-fr-un-theatre-et-ses-voisins.json": "4c1735c1f854089dd77b119338807c46814c0cf15e8683dc26b5da873565d9bb",
+    "data/reading/comprehension/2026-10-28-it-famiglie-tra-scelte-e-difficolta.json": "ae897ea9aab5135a0d31c4eb376fe798bda1338deaeb9f42088b5298d60e95fa",
+    "data/reading/practice/2026-10-28-en-getting-ready-for-floods.json": "2e4aeb173319bc19cabc708ebaa6e1a08c7916b37ae126ae635d26fb22dcac43",
+    "data/reading/practice/2026-10-28-fr-un-theatre-et-ses-voisins.json": "27905b4ab07e38eef812f06b521ca58061971453df2d0933a16b50a91a716213",
+    "data/reading/practice/2026-10-28-it-famiglie-tra-scelte-e-difficolta.json": "7f8ef8dcaf1d4102d07d4bd8cb479b33d472fe0fbd8b6ea20951e1441397a35b",
+    "data/listening/catalog.json": "43da757ec57ea9d9102098c76d88915b9896e805de13e514a26b110ab490b6ed",
+    "data/reading/index.json": "5265732261dce466c26ef7ba3f710ac71474e3425fc8beb56f1c740a75a77583"
+  },
+  "tests": {
+    "full": "45 harnesses — 483218 passed, 0 failed, 0 known issues",
+    "focused": "Article, candidate, practice, comprehension validators and practice/comprehension/loading/listening tests passed",
+    "historicalImmutableFiles": 318,
+    "historicalFilesChanged": 0
+  },
+  "shortfalls": [
+    "Nine reading tier slots omitted; no qualified new German reading.",
+    "One-week four-language verified reserve remains incomplete; further leads retained separately as unapproved research.",
+    "FR and DE listening resource-only; no full transcript supporting new questions."
+  ],
+  "mediaVerification": "Original links and official text/metadata verified; audio playback and sound quality not tested."
+}

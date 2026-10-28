@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-fr-un-theatre-et-ses-voisins",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 78,
+      "answer": "habitants",
+      "options": [
+        "visiteurs",
+        "habitants",
+        "commerçants",
+        "touristes"
+      ],
+      "explanation": "中文指本地居民，使用habitants，复数对应les。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 110,
+      "answer": "pays",
+      "options": [
+        "quartier",
+        "musée",
+        "pays",
+        "village"
+      ],
+      "explanation": "另一个国家对应un autre pays，不是另一个街区或村庄。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 11,
+      "answer": "festival",
+      "options": [
+        "festival",
+        "atelier",
+        "voyage",
+        "cours"
+      ],
+      "explanation": "此处Vice Versa是艺术节，原文用单数festival。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 58,
+      "answer": "chorégraphes",
+      "options": [
+        "musiciens",
+        "journalistes",
+        "photographes",
+        "chorégraphes"
+      ],
+      "explanation": "年轻编舞者对应jeunes chorégraphes；不把其他艺术职业当作相同词义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 17,
+      "answer": "tarif",
+      "options": [
+        "salaire",
+        "tarif",
+        "budget",
+        "revenu"
+      ],
+      "explanation": "tarif réduit是优惠价，tarif与réduit均为阳性单数；salaire为工资。"
+    }
+  ]
+}

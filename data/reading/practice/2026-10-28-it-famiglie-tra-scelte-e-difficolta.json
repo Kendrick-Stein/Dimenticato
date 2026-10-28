@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-it-famiglie-tra-scelte-e-difficolta",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 59,
+      "answer": "nascite",
+      "options": [
+        "nascite",
+        "nozze",
+        "scuole",
+        "imprese"
+      ],
+      "explanation": "出生情况对应nascite，是nascita的阴性复数；nozze指婚礼或结婚。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 91,
+      "answer": "genitori",
+      "options": [
+        "lavoratori",
+        "studenti",
+        "genitori",
+        "visitatori"
+      ],
+      "explanation": "潜在父母对应potenziali genitori，不是潜在劳动者或学生。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 99,
+      "answer": "abitazione",
+      "options": [
+        "occupazione",
+        "abitazione",
+        "prenotazione",
+        "formazione"
+      ],
+      "explanation": "住房对应abitazione；un’abitazione为阴性单数元音前的省音。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s14",
+      "start": 66,
+      "answer": "cognomi",
+      "options": [
+        "nomi",
+        "indirizzi",
+        "titoli",
+        "cognomi"
+      ],
+      "explanation": "双方姓氏对应cognomi；nomi通常指名字，本文另句谈Sofia和Leonardo。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s15",
+      "start": 46,
+      "answer": "provvisori",
+      "options": [
+        "provvisori",
+        "definitivi",
+        "annuali",
+        "completi"
+      ],
+      "explanation": "初步数据对应dati provvisori；形容词阳性复数与dati一致，不能误作已确定的全年数据。"
+    }
+  ]
+}

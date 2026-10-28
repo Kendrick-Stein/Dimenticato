@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-it-famiglie-tra-scelte-e-difficolta",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Quale fattore contribuisce al calo delle nascite secondo il rapporto?",
+      "promptZh": "根据报告，哪个因素促成了出生人数下降？",
+      "options": [
+        "Un aumento dei potenziali genitori.",
+        "Una riduzione dei potenziali genitori.",
+        "Un aumento dei bambini con due cognomi.",
+        "Una riduzione dei percorsi di studio."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "s6明确指出潜在父母人数较少是部分原因；s7补充世代背景。双姓变化不是本文提出的原因，求学过程则被描述为变长。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa è successo alle nascite fuori dal matrimonio nel 2025?",
+      "promptZh": "2025年婚姻关系之外的出生发生了什么变化？",
+      "options": [
+        "Sono aumentati sia il numero sia la quota.",
+        "Sono diminuiti sia il numero sia la quota.",
+        "Il numero è aumentato, ma la quota è diminuita.",
+        "Il numero è diminuito, ma la quota è aumentata."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "s12明确区分人数减少、占总出生的比例增加，不能把两种量混同。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "A quale confronto si riferisce il calo dell’1,1 per cento?",
+      "promptZh": "1.1%的下降对应哪一个比较？",
+      "options": [
+        "Gennaio-luglio 2026 rispetto a gennaio-luglio 2025.",
+        "L’intero 2026 rispetto all’intero 2025.",
+        "Gennaio-luglio 2025 rispetto a gennaio-luglio 2024.",
+        "L’intero 2025 rispetto all’intero 2024."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s15",
+        "s16"
+      ],
+      "explanationZh": "s15限定2026年前七个月和2025年同期，且数据初步；s16明确不是2026年全年。"
+    },
+    {
+      "id": "q4",
+      "kind": "main-idea",
+      "prompt": "Quale sintesi rispecchia meglio il testo?",
+      "promptZh": "哪个概括最符合本文？",
+      "options": [
+        "Le nascite diminuiscono e le abitudini familiari restano stabili.",
+        "Le nascite aumentano e le scelte familiari diventano più simili.",
+        "Le nascite diminuiscono e cambiano alcune scelte familiari.",
+        "Le nascite aumentano e diminuisce la scelta del doppio cognome."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s8",
+        "s10",
+        "s11",
+        "s14"
+      ],
+      "explanationZh": "正文同时描述出生人数下降、家庭计划的困难及选择变化；婚外出生比例和双姓采用率上升，不能概括为习惯不变或出生增加。"
+    }
+  ]
+}

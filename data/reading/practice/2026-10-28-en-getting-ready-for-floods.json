@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-en-getting-ready-for-floods",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 78,
+      "answer": "warnings",
+      "options": [
+        "messages",
+        "tickets",
+        "warnings",
+        "lessons"
+      ],
+      "explanation": "warnings为复数，指可能发生洪水的提前通知。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 66,
+      "answer": "protect",
+      "options": [
+        "decorate",
+        "protect",
+        "sell",
+        "rent"
+      ],
+      "explanation": "protect their property表示保护房产；to后用动词原形。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 36,
+      "answer": "repair",
+      "options": [
+        "repair",
+        "remove",
+        "paint",
+        "sell"
+      ],
+      "explanation": "repair old flood defences指修复旧防洪设施，不是拆除或出售。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 65,
+      "answer": "temporary",
+      "options": [
+        "permanent",
+        "natural",
+        "traditional",
+        "temporary"
+      ],
+      "explanation": "temporary barriers指临时使用的屏障，与永久建筑不同。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 15,
+      "answer": "free",
+      "options": [
+        "private",
+        "late",
+        "free",
+        "daily"
+      ],
+      "explanation": "free在此表示不收费，而不是自由的。"
+    }
+  ]
+}

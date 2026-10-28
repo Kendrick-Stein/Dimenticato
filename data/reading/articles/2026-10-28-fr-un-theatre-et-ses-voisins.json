@@ -1,0 +1,314 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-fr-un-theatre-et-ses-voisins",
+  "storyId": "culture-gouv-salins-gialis-2026-10-15",
+  "lang": "fr",
+  "date": "2026-10-28",
+  "title": "Un théâtre et ses voisins",
+  "titleZh": "剧院与周围的居民",
+  "summaryZh": "马蒂格的萨兰剧院计划通过新艺术节、舞蹈和青年优惠，让居民更容易参与文化生活。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体介绍剧院与社区活动，采用短句、常用现在时及简单将来时；舞台艺术和青年优惠词汇提供中文辅助。",
+  "category": "culture",
+  "topics": [
+    "剧院",
+    "社区文化",
+    "青年参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Nomination d’Éric GIALIS à la direction des Salins, Scène nationale de Martigues",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/nomination-d-eric-gialis-a-la-direction-des-salins-scene-nationale-de-martigues",
+    "publishedAt": "2026-10-15",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "机构作者：Ministère de la Culture（法国文化部），原文发布于2026-10-15，题名及链接见来源。依据文化部法律声明II.4.3.1(a)的CC BY-SA 3.0 FR文字许可；合作方作品按II.4.3.2另行处理。本同语言改写、中文翻译及原创教学补充由Dimenticato于2026-10-28整理，以相同许可提供，不表示原机构认可。",
+  "adaptation": "根据法语机构新闻稿简化改写，非逐字原文；节选项目事实，增加中文释义与原创练习。排除图片、标志、第三方作品及项目口号的直接引用。未来项目保持计划语气，不声称已实施。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 15 octobre 2026, le ministère de la Culture annonce la nomination d’Éric Gialis à la direction des Salins, à Martigues.",
+      "zh": "2026年10月15日，法国文化部宣布任命埃里克·吉亚利斯为马蒂格萨兰剧院负责人。",
+      "glosses": [
+        {
+          "surface": "direction",
+          "lemma": "direction",
+          "zh": "领导；管理"
+        },
+        {
+          "surface": "nomination",
+          "lemma": "nomination",
+          "zh": "任命"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Il dirige déjà ce théâtre de façon provisoire depuis 2023.",
+      "zh": "他自2023年起已临时领导这家剧院。",
+      "glosses": [
+        {
+          "surface": "provisoire",
+          "lemma": "provisoire",
+          "zh": "临时的"
+        },
+        {
+          "surface": "depuis",
+          "lemma": "depuis",
+          "zh": "自……以来"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Son projet veut faire du théâtre un lieu de rencontre et de création pour les habitants.",
+      "zh": "他的项目希望把剧院变成居民相聚和创作的场所。",
+      "glosses": [
+        {
+          "surface": "habitants",
+          "lemma": "habitant",
+          "zh": "居民"
+        },
+        {
+          "surface": "rencontre",
+          "lemma": "rencontre",
+          "zh": "相聚；会面"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "La programmation mélange plusieurs arts et prévoit, chaque saison, de faire découvrir les artistes d’un autre pays.",
+      "zh": "节目安排融合多种艺术，并计划每个演出季介绍另一个国家的艺术家。",
+      "glosses": [
+        {
+          "surface": "saison",
+          "lemma": "saison",
+          "zh": "演出季"
+        },
+        {
+          "surface": "pays",
+          "lemma": "pays",
+          "zh": "国家"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Un nouveau festival, Vice Versa, proposera des spectacles plus intimes et des performances.",
+      "zh": "一个名为Vice Versa的新艺术节将推出更亲密的演出形式和表演艺术。",
+      "glosses": [
+        {
+          "surface": "festival",
+          "lemma": "festival",
+          "zh": "艺术节"
+        },
+        {
+          "surface": "intimes",
+          "lemma": "intime",
+          "zh": "亲密的；小规模近距离的"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Il doit donner au public une autre image de la sortie au théâtre.",
+      "zh": "它希望让观众对去剧院看演出形成不同的印象。",
+      "glosses": [
+        {
+          "surface": "public",
+          "lemma": "public",
+          "zh": "观众"
+        },
+        {
+          "surface": "sortie",
+          "lemma": "sortie",
+          "zh": "外出活动"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Cinq artistes associés participeront au projet et développeront les relations avec les habitants.",
+      "zh": "五位合作艺术家将参与项目，并加强与居民的联系。",
+      "glosses": [
+        {
+          "surface": "relations",
+          "lemma": "relation",
+          "zh": "联系；关系"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Les équipes artistiques de la région seront accueillies dès la création de leurs projets.",
+      "zh": "当地艺术团队将从项目创作阶段起就得到接待。",
+      "glosses": [
+        {
+          "surface": "région",
+          "lemma": "région",
+          "zh": "地区"
+        },
+        {
+          "surface": "dès",
+          "lemma": "dès",
+          "zh": "从……起"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Le théâtre prévoit aussi un accompagnement pour de jeunes chorégraphes.",
+      "zh": "剧院还计划为年轻编舞者提供指导支持。",
+      "glosses": [
+        {
+          "surface": "accompagnement",
+          "lemma": "accompagnement",
+          "zh": "指导支持"
+        },
+        {
+          "surface": "chorégraphes",
+          "lemma": "chorégraphe",
+          "zh": "编舞者"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "La danse amateur fait également partie du projet, avec des partenaires locaux.",
+      "zh": "业余舞蹈也是项目的一部分，并有当地合作伙伴参与。",
+      "glosses": [
+        {
+          "surface": "amateur",
+          "lemma": "amateur",
+          "zh": "业余的"
+        },
+        {
+          "surface": "locaux",
+          "lemma": "local",
+          "zh": "当地的"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Les actions pour les jeunes seront étendues aux collégiens et aux lycéens.",
+      "zh": "面向青年的活动将扩大到初中生和高中生。",
+      "glosses": [
+        {
+          "surface": "collégiens",
+          "lemma": "collégien",
+          "zh": "初中生"
+        },
+        {
+          "surface": "lycéens",
+          "lemma": "lycéen",
+          "zh": "高中生"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Enfin, un pass à tarif réduit sera proposé aux personnes de 18 à 26 ans.",
+      "zh": "最后，计划向18至26岁的人提供优惠价通票。",
+      "glosses": [
+        {
+          "surface": "tarif",
+          "lemma": "tarif",
+          "zh": "价格；收费标准"
+        },
+        {
+          "surface": "réduit",
+          "lemma": "réduit",
+          "zh": "优惠的；降低的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "habitants",
+        "lemma": "habitant",
+        "zh": "居民",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "pays",
+        "lemma": "pays",
+        "zh": "国家",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "festival",
+        "lemma": "festival",
+        "zh": "艺术节",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "chorégraphes",
+        "lemma": "chorégraphe",
+        "zh": "编舞者",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "tarif",
+        "lemma": "tarif",
+        "zh": "价格；收费标准",
+        "sentenceId": "s12"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "depuis 2023",
+        "zh": "自2023年起；depuis引出持续至今的起点",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "dès la création",
+        "zh": "从创作阶段起；dès强调开始的时间",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "à tarif réduit",
+        "zh": "以优惠价格；买票时常用",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "sera proposé是简单将来时被动态，表示“将被提供”；这里是计划，不代表通票已开售。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel spectacle aimerais-tu découvrir près de chez toi ?",
+        "zh": "你想在家附近看什么演出？"
+      },
+      {
+        "text": "Un pass moins cher peut-il donner envie d’aller au théâtre ?",
+        "zh": "更便宜的通票能让人更想去剧院吗？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "J’aimerais découvrir des artistes d’un autre pays.",
+        "zh": "我想了解另一个国家的艺术家。",
+        "note": "原创口语练习，不是原报道引语。"
+      },
+      {
+        "text": "Pour moi, le prix du billet est important.",
+        "zh": "对我来说，票价很重要。",
+        "note": "原创观点表达，可按自己的看法调整。"
+      }
+    ]
+  }
+}

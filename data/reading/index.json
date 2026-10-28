@@ -123,6 +123,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-28-it-famiglie-tra-scelte-e-difficolta",
+      "lang": "it",
+      "date": "2026-10-28",
+      "title": "Famiglie tra scelte e difficoltà",
+      "titleZh": "家庭：选择与现实困难之间",
+      "summaryZh": "从Istat关于2025年出生情况的报告出发，理解人口变化、生活条件和不同家庭选择，区分全年数据与初步估计。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "家庭生活",
+        "人口变化",
+        "生活选择"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-21",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-23-en-borrowing-books-and-paying-creators",
       "lang": "en",
       "date": "2026-10-23",
@@ -438,6 +456,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-10-28-fr-un-theatre-et-ses-voisins",
+      "lang": "fr",
+      "date": "2026-10-28",
+      "title": "Un théâtre et ses voisins",
+      "titleZh": "剧院与周围的居民",
+      "summaryZh": "马蒂格的萨兰剧院计划通过新艺术节、舞蹈和青年优惠，让居民更容易参与文化生活。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "剧院",
+        "社区文化",
+        "青年参与"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-15",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-23-it-strade-leggere-i-confronti",
       "lang": "it",
       "date": "2026-10-23",
@@ -749,6 +785,23 @@
       ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2026-10-13",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-28-en-getting-ready-for-floods",
+      "lang": "en",
+      "date": "2026-10-28",
+      "title": "Getting ready for floods",
+      "titleZh": "为洪水做好准备",
+      "summaryZh": "英格兰的新信息入口把风险、预警与房屋防护建议放在一起，屏幕之外还有防洪设施和应急队伍。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "防洪准备",
+        "日常信息"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-12",
       "contentType": "native-adaptation"
     },
     {

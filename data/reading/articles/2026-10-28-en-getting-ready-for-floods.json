@@ -1,0 +1,204 @@
+{
+  "schema": 1,
+  "id": "2026-10-28-en-getting-ready-for-floods",
+  "storyId": "defra-flood-action-online-2026-10-12",
+  "lang": "en",
+  "date": "2026-10-28",
+  "category": "environment",
+  "topics": [
+    "防洪准备",
+    "日常信息"
+  ],
+  "title": "Getting ready for floods",
+  "titleZh": "为洪水做好准备",
+  "summaryZh": "英格兰的新信息入口把风险、预警与房屋防护建议放在一起，屏幕之外还有防洪设施和应急队伍。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以网站用途和具体准备工作为主，使用常见现在时与can；少量防洪词汇配中文释义。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs / GOV.UK",
+    "title": "New ‘one stop shop’ for flood preparedness launched as we approach more weather whiplash",
+    "url": "https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash",
+    "publishedAt": "2026-10-12",
+    "lang": "en",
+    "author": "Department for Environment, Food & Rural Affairs; Emma Hardy MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Environment, Food & Rural Affairs; Emma Hardy MP; 2026-10-12; https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash",
+  "adaptation": "2026-10-28整理：依据2026-10-12机构英文报道进行同语言分级改写，添加中文译文、词义和原创练习。非逐字原文、官方课程或实时应急指南；数据与目标保留报道时点。未使用图片、标志、直接引语或第三方作品，不暗示机构认可。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 12 October 2026, the UK government announced a new website for flood advice in England.",
+      "zh": "2026年10月12日，英国政府宣布推出一个提供英格兰洪水应对建议的新网站。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "It is called Flood Action Online, and it brings useful information together in one place.",
+      "zh": "它叫Flood Action Online，将实用信息汇集在一个地方。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "People can learn about the flood risk near their home and find out how to get warnings.",
+      "zh": "人们可以了解住宅附近的洪水风险，并查找接收预警的方法。",
+      "glosses": [
+        {
+          "surface": "warnings",
+          "lemma": "warning",
+          "zh": "预警"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "They can also find weather alerts from the Met Office when there is a problem.",
+      "zh": "出现天气状况时，他们也可以找到英国气象局发布的天气警报。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "The website helps homeowners find changes they can make to better protect their property from flooding.",
+      "zh": "该网站帮助房主了解可以采取哪些改进措施，让房产更能抵御洪水。",
+      "glosses": [
+        {
+          "surface": "protect",
+          "lemma": "protect",
+          "zh": "保护"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "The announcement also describes work away from computer screens.",
+      "zh": "这则公告也介绍了电脑屏幕之外的工作。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "The government is spending money to repair old flood defences and build new ones.",
+      "zh": "政府正在投入资金维修旧的防洪设施并建设新的设施。",
+      "glosses": [
+        {
+          "surface": "repair",
+          "lemma": "repair",
+          "zh": "维修"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Its target is for 200,000 properties to benefit from this investment.",
+      "zh": "其目标是让20万处房产受益于这项投资。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "The Environment Agency has 260 mobile pumps and 25 kilometres of temporary barriers ready to use.",
+      "zh": "英国环境署备有260台移动水泵和25公里可随时使用的临时屏障。",
+      "glosses": [
+        {
+          "surface": "temporary",
+          "lemma": "temporary",
+          "zh": "临时的"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "It responds to flooding emergencies all day and all night, with 600 people on call at any one time.",
+      "zh": "环境署昼夜应对洪水紧急情况，任何一个时刻都有600人待命。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "It also offers free flood warnings, so people can prepare before water causes problems.",
+      "zh": "环境署还提供免费的洪水预警，让人们能在洪水造成问题之前做好准备。",
+      "glosses": [
+        {
+          "surface": "free",
+          "lemma": "free",
+          "zh": "免费的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "warnings",
+        "lemma": "warning",
+        "zh": "预警",
+        "sentenceId": "s3",
+        "note": "warnings为复数，指可能发生洪水的提前通知。"
+      },
+      {
+        "text": "protect",
+        "lemma": "protect",
+        "zh": "保护",
+        "sentenceId": "s5",
+        "note": "protect their property表示保护房产；to后用动词原形。"
+      },
+      {
+        "text": "repair",
+        "lemma": "repair",
+        "zh": "维修",
+        "sentenceId": "s7",
+        "note": "repair old flood defences指修复旧防洪设施，不是拆除或出售。"
+      },
+      {
+        "text": "temporary",
+        "lemma": "temporary",
+        "zh": "临时的",
+        "sentenceId": "s9",
+        "note": "temporary barriers指临时使用的屏障，与永久建筑不同。"
+      },
+      {
+        "text": "free",
+        "lemma": "free",
+        "zh": "免费的",
+        "sentenceId": "s11",
+        "note": "free在此表示不收费，而不是自由的。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in one place",
+        "zh": "在同一个地方",
+        "sentenceId": "s2",
+        "note": "描述信息集中呈现。"
+      },
+      {
+        "text": "on call",
+        "zh": "待命",
+        "sentenceId": "s10",
+        "note": "指需要时可以响应，并非正在打电话。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "Its target is for…to…表达目标，不把计划受益数量误当已经完成的成果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Where would you look for local weather warnings?",
+        "zh": "你会去哪里寻找当地天气预警？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would check…first.",
+        "zh": "我会先查看……",
+        "note": "原创讨论表达，不是报道中的引语。"
+      }
+    ]
+  }
+}

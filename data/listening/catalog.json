@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-27",
+  "verifiedAt": "2026-10-28",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -1544,6 +1544,225 @@
       "addedAt": "2026-10-27",
       "sourcePublishedAt": "2013-08-04",
       "verificationZh": "官方页面标A1；原发2013-08-04，更新2024-11-26。仅核实资源元信息，未核实完整音视频或对应文字稿，因此不编理解题；未实际检验播放与音质。"
+    },
+    {
+      "addedAt": "2026-10-28",
+      "kind": "lesson",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "evidenceStatus": "official_transcript",
+      "id": "it-rai-banca-a2",
+      "lang": "it",
+      "title": "Le parole dell’italiano: oggi, se posso, vado in banca",
+      "titleZh": "去银行：账户、取款与条件表达",
+      "provider": "Rai Scuola",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellitaliano-oggi-se-posso-vado-in-banca-4d949f45-e3c2-4b19-906d-512be0459a02.html",
+      "summaryZh": "常青 A2 课程：在日常银行情境中听懂存取款，并留意 se 引导的条件。",
+      "guideZh": "先听人物需要什么，再比较不同支付方式的用途。后半段留意条件和结果的先后顺序；旧课程中的银行情境只用于语言学习，不作为现行业务指南。",
+      "verificationZh": "官方页标注 A2，提供对应文字稿；最初发布日期未确认，按常青课程收录，不由 URL 推定精确日期。原创理解题不复制原站练习；未实际检验播放或音质。",
+      "vocabulary": [
+        {
+          "text": "conto corrente",
+          "zh": "往来账户"
+        },
+        {
+          "text": "prelievo",
+          "zh": "取款"
+        },
+        {
+          "text": "carta prepagata",
+          "zh": "预付卡"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-banca-1",
+          "prompt": "Perché Olga consiglia a Cesaria di aprire un conto?",
+          "promptZh": "Olga 为什么建议 Cesaria 开一个账户？",
+          "options": [
+            "Cesaria vuole cambiare lavoro.",
+            "Cesaria ha perso una carta.",
+            "Cesaria dice di non avere un conto suo.",
+            "Cesaria deve chiudere un altro conto."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "official-transcript-lines395-397",
+          "explanationZh": "Cesaria 说自己没有账户，Olga 接着建议她去银行开一个。"
+        },
+        {
+          "id": "it-banca-2",
+          "prompt": "Per quale acquisto Salif propone una carta prepagata?",
+          "promptZh": "Salif 提议的预付卡可用于哪类购买？",
+          "options": [
+            "Per comprare qualcosa su internet.",
+            "Per comprare un biglietto allo sportello.",
+            "Per pagare un vestito in contanti.",
+            "Per ordinare un libro per telefono."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "official-transcript-lines404-405",
+          "explanationZh": "Salif 说这张卡在网上买东西时会有用。"
+        },
+        {
+          "id": "it-banca-3",
+          "prompt": "Quale vantaggio dell’accredito spiega Olga?",
+          "promptZh": "Olga 说明入账方式有什么好处？",
+          "options": [
+            "Si può ritirare tutto senza una carta.",
+            "Si può pagare senza firmare un assegno.",
+            "Si ricevono i soldi da un amico in contanti.",
+            "I soldi arrivano direttamente sul conto."
+          ],
+          "answerIndex": 3,
+          "evidenceRef": "official-transcript-lines400-401",
+          "explanationZh": "Olga 说明，通过 accredito，钱会直接进入账户。其他选项不是这段说明中的好处。"
+        }
+      ]
+    },
+    {
+      "addedAt": "2026-10-28",
+      "kind": "lesson",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "evidenceStatus": "official_transcript",
+      "id": "en-bc-leaving-message-a2",
+      "lang": "en",
+      "title": "Leaving a message",
+      "titleZh": "电话留言：核对号码与备用联系方式",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/leaving-message",
+      "summaryZh": "常青课程：听一段工作电话，练习区分来电人、接听人和要找的人。",
+      "guideZh": "第一遍先理清三个人的关系；第二遍留意怎样纠正误听，以及为什么补充另一种联系方式。",
+      "verificationZh": "常青课程；官方页未注明最初发布日期。依据官方文字稿编写原创问题，并核对原站练习避免复制；未实际检验播放或音质。",
+      "vocabulary": [
+        {
+          "text": "take a message",
+          "zh": "代为留言"
+        },
+        {
+          "text": "call me back",
+          "zh": "给我回电话"
+        },
+        {
+          "text": "read that back",
+          "zh": "把刚记下的信息复述一遍"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-message-1",
+          "prompt": "What will Jane do after this call?",
+          "promptZh": "这通电话结束后，Jane 将做什么？",
+          "options": [
+            "Send Peter the figures herself.",
+            "Pass Peter’s request to Maria.",
+            "Arrange a meeting with Peter.",
+            "Call the project team for Maria."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "official-transcript-lines34-36-51",
+          "explanationZh": "Jane 接收了 Peter 的请求，表示 Maria 返回办公室时会转告她；她没有说自己发送数据或安排会议。"
+        },
+        {
+          "id": "en-message-2",
+          "prompt": "What happens while Jane writes down the phone number?",
+          "promptZh": "Jane 记录电话号码时发生了什么？",
+          "options": [
+            "She asks Maria to check the number before writing.",
+            "Peter changes from his mobile to an office number.",
+            "She repeats some digits incorrectly and Peter corrects her.",
+            "Peter asks her to use the number in an email."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "official-transcript-lines27-32",
+          "explanationZh": "Jane 复述的数字有误，Peter 随即纠正，Jane 再确认末尾数字。"
+        },
+        {
+          "id": "en-message-3",
+          "prompt": "Why does Peter add an email address?",
+          "promptZh": "Peter 为什么又提供电子邮箱？",
+          "options": [
+            "The project has a new name.",
+            "Jane cannot write down the number.",
+            "Maria has asked for a written report.",
+            "He may be in a meeting when Maria calls."
+          ],
+          "answerIndex": 3,
+          "evidenceRef": "official-transcript-lines38-42",
+          "explanationZh": "Peter 解释说，Maria 回电时他可能正在开会，因此另外留下邮箱。"
+        }
+      ]
+    },
+    {
+      "id": "fr-tv5-sport-college-a1",
+      "lang": "fr",
+      "title": "Le sport au collège",
+      "titleZh": "中学体育：运动与日常生活",
+      "provider": "TV5MONDE · Hachette FLE",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/le-sport-au-college",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-28",
+      "sourcePublishedAt": "2023-12-19",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "常青入门课程：在中学生生活主题中接触运动词汇，前往原站听看学习。",
+      "guideZh": "先尝试辨认运动名称，再用一句简单法语说自己喜欢什么运动。本条只提供入口；下列词是主题预习，不声称已核实在视频中出现。",
+      "verificationZh": "官方页标 A1，2023-12-19 发布，可用至2028-03-04；课程设计为 Alice Reboul / Hachette FLE。未核验完整视频或对应逐字稿，不编理解题，未实测播放或音质。",
+      "vocabularyLabel": "主题预习词",
+      "vocabulary": [
+        {
+          "text": "un collège",
+          "zh": "初级中学"
+        },
+        {
+          "text": "une balle",
+          "zh": "球"
+        },
+        {
+          "text": "l’escalade",
+          "zh": "攀岩"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "de-logo-2026-10-27",
+      "lang": "de",
+      "title": "logo! vom Dienstag, 27. Oktober 2026",
+      "titleZh": "10月27日儿童新闻：核废料与视听遗产",
+      "provider": "ZDF · logo!",
+      "url": "https://www.logo.de/logo-vom-dienstag-27-oktober-2026-100.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-10-28",
+      "sourcePublishedAt": "2026-10-27",
+      "duration": "10:32",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "本期节目单涉及核废料处置场所、视听遗产、摩托车驶过水面和电影犬 Lassie。",
+      "guideZh": "选择一个感兴趣的主题听两遍：先抓事件，再记下实际听懂的词。母语儿童新闻不等同于 A2 课程；本条只收录原站入口。",
+      "verificationZh": "核对官方2026-10-27节目页及节目单，时长来自官方首页列表。未取得可核验完整文字稿，也未实测播放或音质，不根据节目单编题。",
+      "vocabularyLabel": "节目单主题预习词",
+      "vocabulary": [
+        {
+          "text": "Atommüll",
+          "zh": "核废料"
+        },
+        {
+          "text": "audiovisuelles Erbe",
+          "zh": "视听遗产"
+        },
+        {
+          "text": "Filmhund",
+          "zh": "电影中出演的狗"
+        }
+      ],
+      "questions": []
     }
   ],
   "schema": 1

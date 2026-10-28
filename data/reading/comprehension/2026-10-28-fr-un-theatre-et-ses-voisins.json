@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-28-fr-un-theatre-et-ses-voisins",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Que prévoit le programme pour chaque saison ?",
+      "promptZh": "节目安排计划在每个演出季做什么？",
+      "options": [
+        "Présenter les artistes d’un autre pays.",
+        "Présenter les artistes d’un autre quartier.",
+        "Organiser une tournée dans un autre pays.",
+        "Organiser une tournée dans un autre quartier."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s4"
+      ],
+      "explanationZh": "s4介绍每个演出季展示另一个国家的艺术家，而不是组织巡演或聚焦另一个街区。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quand les équipes artistiques de la région seront-elles accueillies ?",
+      "promptZh": "当地艺术团队将在什么时候得到接待？",
+      "options": [
+        "Après la fin de leur tournée.",
+        "Après la première représentation.",
+        "Dès la création de leurs projets.",
+        "Dès la vente de leurs billets."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "s8明确是从项目创作阶段起，不必等到演出、售票或巡演结束。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "À qui le pass à tarif réduit sera-t-il proposé ?",
+      "promptZh": "优惠价通票计划提供给谁？",
+      "options": [
+        "Aux enfants de moins de 18 ans.",
+        "Aux personnes de 18 à 26 ans.",
+        "Aux parents des jeunes artistes.",
+        "Aux personnes de plus de 26 ans."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s12"
+      ],
+      "explanationZh": "s12限定18至26岁，不能扩大到所有儿童、艺术家家长或26岁以上的人。"
+    }
+  ]
+}
