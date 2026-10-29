@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-29-fr-creer-pendant-les-vacances",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 35,
+      "answer": "tissage",
+      "options": [
+        "dessin",
+        "tissage",
+        "chant",
+        "jardinage"
+      ],
+      "explanation": "结合中文句意“编织”，应填tissage。这是原句使用的词形；其余选项不符合此处已给出的活动或地点信息。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 21,
+      "answer": "atelier",
+      "options": [
+        "atelier",
+        "bureau",
+        "magasin",
+        "restaurant"
+      ],
+      "explanation": "结合中文句意“工作室”，应填atelier。这是原句使用的词形；其余选项不符合此处已给出的活动或地点信息。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 61,
+      "answer": "bottes",
+      "options": [
+        "gants",
+        "sandales",
+        "bottes",
+        "chaussures"
+      ],
+      "explanation": "结合中文句意“靴子”，应填bottes。这是原句使用的词形；其余选项不符合此处已给出的活动或地点信息。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 60,
+      "answer": "rythme",
+      "options": [
+        "prix",
+        "calendrier",
+        "trajet",
+        "rythme"
+      ],
+      "explanation": "结合中文句意“节奏”，应填rythme。这是原句使用的词形；其余选项不符合此处已给出的活动或地点信息。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 97,
+      "answer": "hôpital",
+      "options": [
+        "musée",
+        "hôpital",
+        "théâtre",
+        "marché"
+      ],
+      "explanation": "结合中文句意“医院”，应填hôpital。这是原句使用的词形；其余选项不符合此处已给出的活动或地点信息。"
+    }
+  ]
+}

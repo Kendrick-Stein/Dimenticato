@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-29-en-safer-discussions-at-school",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 84,
+      "answer": "training",
+      "options": [
+        "training",
+        "holidays",
+        "uniforms",
+        "prizes"
+      ],
+      "explanation": "receive training表示接受培训；training在这里是不可数名词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 30,
+      "answer": "recognise",
+      "options": [
+        "replace",
+        "recognise",
+        "translate",
+        "publish"
+      ],
+      "explanation": "help staff recognise…表示帮助工作人员识别……，用动词原形。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 30,
+      "answer": "guidance",
+      "options": [
+        "equipment",
+        "homework",
+        "guidance",
+        "furniture"
+      ],
+      "explanation": "guidance为不可数名词，clearer guidance指更明确的指导。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 62,
+      "answer": "record",
+      "options": [
+        "cancel",
+        "record",
+        "organise",
+        "predict"
+      ],
+      "explanation": "report and record表示报告并记录；and连接两个动词。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 49,
+      "answer": "progress",
+      "options": [
+        "prices",
+        "traffic",
+        "weather",
+        "progress"
+      ],
+      "explanation": "look at progress指查看进展；不是再次开始这项工作。"
+    }
+  ]
+}

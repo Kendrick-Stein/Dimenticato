@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-28",
+  "verifiedAt": "2026-10-29",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -1763,6 +1763,225 @@
         }
       ],
       "questions": []
+    },
+    {
+      "id": "it-rai-obblighi-divieti-b1",
+      "lang": "it",
+      "title": "Le parole dell’Italiano: obblighi e divieti",
+      "titleZh": "公共场所的规定：必须做与不能做",
+      "provider": "Rai Scuola",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellItaliano-obblighi-e-divieti-47ad0676-ad0f-49b7-9163-866916d3801d.html",
+      "level": "B1",
+      "levelBasis": "provider",
+      "levelLabel": "B1 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-29",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青 B1 课程：从博物馆、公园等场景区分义务和禁令。",
+      "guideZh": "先记下地点，再区分人物说的是必须做什么，还是不能做什么。留意无人称表达；课程情境不是现行公共场所规定的权威指南。",
+      "verificationZh": "官方页标注 Unità 8 / B1，提供对应文字稿。首发日期未确认，按常青课程收录，不从 URL 推断精确日期。题目为原创；未实测播放或音质。",
+      "vocabulary": [
+        {
+          "text": "un divieto",
+          "zh": "一项禁令"
+        },
+        {
+          "text": "un obbligo",
+          "zh": "一项义务／必须遵守的要求"
+        },
+        {
+          "text": "spegnere il cellulare",
+          "zh": "关闭手机"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-obblighi-1",
+          "prompt": "Che cosa deve fare Teresa prima della visita al museo?",
+          "promptZh": "参观博物馆前，Teresa 必须做什么？",
+          "options": [
+            "Lasciare il cappotto.",
+            "Spegnere il telefono.",
+            "Comprare una guida.",
+            "Mangiare nel museo."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "official-transcript-lines395-396",
+          "explanationZh": "博物馆情境中，Teresa 提醒先关闭手机；紧接着 Olga 补充馆内不能吃东西。"
+        },
+        {
+          "id": "it-obblighi-2",
+          "prompt": "Perché Olga richiama l’attenzione di Teresa nel parco?",
+          "promptZh": "在公园里，Olga 为什么提醒 Teresa？",
+          "options": [
+            "Sta raccogliendo dei fiori.",
+            "Sta camminando sulla strada.",
+            "Sta entrando in un negozio.",
+            "Sta passando sopra un’aiuola."
+          ],
+          "answerIndex": 3,
+          "evidenceRef": "official-transcript-line398",
+          "explanationZh": "Olga 指出 Teresa 正踩在花坛上，并提醒她看禁止标志。"
+        },
+        {
+          "id": "it-obblighi-3",
+          "prompt": "Quale azione viene presentata come obbligatoria nella lezione?",
+          "promptZh": "课程将哪一项行为作为必须做的事举例？",
+          "options": [
+            "Convalidare il biglietto.",
+            "Mangiare all’interno del museo.",
+            "Calpestare le aiuole.",
+            "Gettare carta per terra."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "official-transcript-line398",
+          "explanationZh": "文字稿以必须给车票打票作义务的例子；convalidare 对应此处打票使票生效的意思。"
+        }
+      ]
+    },
+    {
+      "id": "fr-tv5-musique-a1",
+      "lang": "fr",
+      "title": "Musique !",
+      "titleZh": "音乐：表达喜欢与不喜欢",
+      "provider": "TV5MONDE · Hachette FLE",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/musique",
+      "level": "A1",
+      "levelBasis": "provider",
+      "levelLabel": "A1 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-29",
+      "sourcePublishedAt": "2023-11-21",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "常青入门课程：通过音乐主题接触简单的喜好表达。",
+      "guideZh": "先在原站听看，尝试辨认人物提到的音乐词，再用一句法语说自己的喜好。下列词依据课程词汇栏预习，不声称已核验其在视频中的具体位置。",
+      "verificationZh": "官方页标注 A1，2023-11-21 发布，可用至2028-03-04；设计者为 Alice Reboul / Hachette FLE。已核对页面词汇栏，未取得完整对应逐字稿，也未实测视频播放或音质，因此不编理解题。",
+      "vocabularyLabel": "课程词汇预习",
+      "vocabulary": [
+        {
+          "text": "adorer",
+          "zh": "非常喜欢"
+        },
+        {
+          "text": "détester",
+          "zh": "讨厌"
+        },
+        {
+          "text": "une chanson",
+          "zh": "一首歌"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "de-logo-2026-10-28",
+      "lang": "de",
+      "title": "logo! vom Mittwoch, 28. Oktober 2026",
+      "titleZh": "10月28日儿童新闻：秋叶与厨师梦想",
+      "provider": "ZDF · logo!",
+      "url": "https://www.logo.de/logo-vom-mittwoch-28-oktober-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-10-29",
+      "sourcePublishedAt": "2026-10-28",
+      "duration": "10:03",
+      "evidenceStatus": "resource_only",
+      "summaryZh": "本期节目单包括西班牙列车事故、以色列选举、秋叶变色、睡莲及厨师梦想。",
+      "guideZh": "可以从秋叶或厨师梦想的主题开始听：先抓住主题，再记下确实听懂的一个细节。节目面向母语儿童，不等同于 A2 分级课程。",
+      "verificationZh": "已核对官方2026-10-28节目页、节目单和官方首页10:03时长。未取得完整对应文字稿，未实测播放或音质；仅提供入口，不根据节目单编题。",
+      "vocabularyLabel": "节目单主题预习词",
+      "vocabulary": [
+        {
+          "text": "das Herbstlaub",
+          "zh": "秋天的树叶"
+        },
+        {
+          "text": "die Seerose",
+          "zh": "睡莲"
+        },
+        {
+          "text": "der Sternekoch",
+          "zh": "米其林星级厨师"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "en-bc-teens-shopping-clothes-a2",
+      "lang": "en",
+      "title": "Shopping for clothes",
+      "titleZh": "买衣服：颜色、试穿与找零",
+      "provider": "British Council · LearnEnglish Teens",
+      "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/shopping-clothes",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-10-29",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "常青 A2 对话：在服装店询问颜色和尺码，试穿后付款。",
+      "guideZh": "第一遍听顾客最后选了什么；第二遍区分店里所有颜色与所需尺码的实际库存，再听付款和找零。",
+      "verificationZh": "官方页面标注 A2 Pre-intermediate，提供音频入口和对应逐字稿。首发日期未确认，作为常青课程收录；未实测播放或音质。本站题目独立编写，不复制原站练习。",
+      "vocabulary": [
+        {
+          "text": "try it on",
+          "zh": "试穿它"
+        },
+        {
+          "text": "changing rooms",
+          "zh": "试衣间"
+        },
+        {
+          "text": "change",
+          "zh": "找回的零钱"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-clothes-1",
+          "prompt": "Why does the customer not choose purple?",
+          "promptZh": "顾客为什么没有选紫色？",
+          "options": [
+            "It costs more than red.",
+            "It is unavailable in medium.",
+            "It is only sold online.",
+            "It is the wrong material."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "official-transcript-lines25-35",
+          "explanationZh": "店员说明中号只有黑色和红色；顾客问紫色后再次得到相同答复，随后选择红色。"
+        },
+        {
+          "id": "en-clothes-2",
+          "prompt": "What does the customer ask to do before buying the T-shirt?",
+          "promptZh": "买下这件 T 恤之前，顾客提出做什么？",
+          "options": [
+            "Compare another brand.",
+            "Reserve it for tomorrow.",
+            "Try it on in the shop.",
+            "Ask a friend to pay."
+          ],
+          "answerIndex": 2,
+          "evidenceRef": "official-transcript-lines35-43",
+          "explanationZh": "顾客先要求试穿，店员指向试衣间；停顿后，顾客确认买下。"
+        },
+        {
+          "id": "en-clothes-3",
+          "prompt": "What does the assistant give the customer at the end?",
+          "promptZh": "对话最后店员给顾客什么？",
+          "options": [
+            "A receipt and some change.",
+            "A refund and another shirt.",
+            "A card and a discount code.",
+            "A voucher and a size chart."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "official-transcript-lines44-48",
+          "explanationZh": "顾客现金付款后，店员说明找零金额并交给顾客收据。"
+        }
+      ]
     }
   ],
   "schema": 1

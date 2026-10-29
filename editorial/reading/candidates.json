@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-24",
+  "collectedAt": "2026-10-29",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -7961,81 +7961,80 @@
       "language": "it",
       "sourceTitle": "PREMIO CNEL | Il progetto CON.I.RI. dell’INGV ottiene il riconoscimento “Impatto PA” 2026",
       "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
-      "sourceName": "INGV Ufficio Stampa",
+      "sourceName": "INGV",
       "registrySourceId": "ingv-italian-press",
       "sourcePublishedAt": "2026-10-16",
       "collectedAt": "2026-10-22",
       "category": "education",
       "topics": [
         "学校教育",
-        "自然风险"
+        "自然风险",
+        "公民参与"
       ],
-      "level": "B1",
-      "priority": 3,
+      "level": "A2",
+      "priority": 1,
       "status": "verified",
-      "editorialNote": "Reserve only; more than10,000students is participation reported by institute, not proven learning gain. AwardOct14, releaseOct16. Different programme fromGenova festival; avoid consecutive daily overconcentration in risk/science.",
+      "editorialNote": "Full institutional text, dated original, scoped adaptation rights, language and Chinese, 5 cloze and 3 comprehension questions independently reviewed on 2026-10-29. Separate immutable edition linked below; metadata is not publishable. Excludes images, quotations and third-party works; measures or participation are not evidence of achieved outcomes.",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-22",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-29",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
-          "checkedAt": "2026-10-22",
-          "notes": "Official full body read via web2026-10-22; article footer CC BY4 and INGV legal footer reviewed. No media/attachment/directquotation use."
+          "checkedAt": "2026-10-29",
+          "notes": "Official HTML article body read in full, not a search snippet."
         },
         "originalDate": {
           "verified": true,
           "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
-          "evidence": "Official header visible publication date 2026-10-16"
+          "evidence": "Explicit Pubblicato16Ottobre2026 label; awarddate14Oct distinct."
         },
         "nativeLanguage": {
           "verified": true,
           "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
-          "author": "INGV Ufficio Stampa（机构署名；未列个人文字作者）",
-          "basis": "Italian institutional original press/news text; no translator or republishing credit.",
-          "caveat": "Institutional provenance, not personal native-tongue certification.",
-          "evidence": "Italian original institutional release with local institutions, no translation marker; article inspected."
+          "evidence": "Institution-authored original-language national-site news; no translator/republication credit. Provenance inference concerns editorial language, not author native-speaker identity."
         },
         "rights": {
           "verified": true,
           "adaptationAllowed": true,
           "publicRedistributionAllowed": true,
-          "license": "CC BY 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-          "evidence": "INGV article footer explicitly licenses INGV published content CC BY4; legal page footer repeats it.",
+          "evidence": "SpecificarticlefooterCCBY4.0; legalnoticecopyrightinstitutionaltext and attribution; photo/externalworks excluded.",
           "evidenceUrls": [
             "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
             "https://www.ingv.it/note-legali",
             "https://creativecommons.org/licenses/by/4.0/"
           ],
-          "scope": "Institutional original narrative adapted in Italian, Chinese translation and teaching additions, attributed with modifications; no direct quotes.",
+          "reviewBeforeConversionRequired": false,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "scope": "Institutional narrative only; same-language adaptation, Chinese translation and original teaching additions. No third-party media or linked works.",
           "exclusions": [
-            "Images, logos, video, attachments and third-party works",
-            "Linked research paper text and direct interview quotations"
+            "Images, logos and audiovisual media",
+            "Third-party quotations and linked works"
           ],
           "attributionRequirements": [
-            "Credit institutional author, original title/date and URL",
-            "Link licence; disclose adaptation and translation",
+            "Original institution, title, date and URL",
+            "Licence link and changes identified",
             "No endorsement claim"
           ],
-          "basis": "article-linked explicit Creative Commons licence allowing adaptation",
-          "reviewBeforeConversionRequired": true
+          "basis": "article-linked explicit Creative Commons licence allowing adaptation"
         },
         "duplicateCheck": {
-          "checkedAgainstArticleCount": 86,
-          "checkedAt": "2026-10-22",
+          "checkedAt": "2026-10-29",
+          "checkedAgainstArticleCount": 136,
           "sourceUrlAlreadyPublished": false,
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 7,
+          "asOf": "2026-10-29",
+          "ageDays": 13,
           "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-29-it-imparare-a-conoscere-i-rischi"
     },
     {
       "id": "fr-2026-09-25-multifonctionnalite-haies",
@@ -10042,38 +10041,77 @@
         "反歧视",
         "教师支持"
       ],
-      "level": "B2",
+      "level": "A2",
       "priority": 3,
-      "status": "collected",
-      "editorialNote": "仅新发现储备；需核完整报道、报告抽样分母与偏见术语边界，再做权利审查。不得把三分之五概括全体学生，不沿用宣传形容词当编辑结论。口语角度：学校如何让学生安全报告歧视？",
+      "status": "verified",
+      "editorialNote": "Full institutional text, dated original, scoped adaptation rights, language and Chinese, 5 cloze and 3 comprehension questions independently reviewed on 2026-10-29. Separate immutable edition linked below; metadata is not publishable. Excludes images, quotations and third-party works; measures or participation are not evidence of achieved outcomes.",
       "verification": {
-        "workflowStage": "discovered",
+        "workflowStage": "ready",
+        "checkedAt": "2026-10-29",
+        "editorialReviewComplete": true,
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-23",
         "fullText": {
-          "accessible": false,
-          "read": false,
+          "accessible": true,
+          "read": true,
           "url": "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
-          "checkedAt": "2026-10-23",
-          "notes": "本轮仅检索结果，不等于全文核查。"
+          "checkedAt": "2026-10-29",
+          "notes": "Official full article, body, attribution, date, footnotes and OGL footer read; no external report reused."
         },
         "originalDate": {
-          "verified": false,
+          "verified": true,
           "evidenceUrl": "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
-          "evidence": "检索结果显示Published21October2026；待正文核验。"
+          "evidence": "Published 21 October 2026 in article metadata."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional provenance, not a personal native-tongue or drafting-language certificate.",
+          "evidence": "English government press release From Department for Education and The Rt Hon Lucy Powell MP; no translator or syndication credit."
         },
         "rights": {
-          "verified": false,
-          "adaptationAllowed": false,
-          "publicRedistributionAllowed": false
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "basis": "article-footer-and-current-government-terms",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
+            "https://www.gov.uk/help/terms-conditions"
+          ],
+          "evidence": "Current article footer says all content OGL v3.0 except otherwise stated; GOV.UK terms Using GOV.UK content permits reproduction subject to conditions and identifies third-party exceptions. No conflicting text credit for institutional announcement paragraphs. OGL deed not freshly fetched; prior repository licence evidence reused, no attempt to bypass prior refusal.",
+          "scope": "Institutional narrative only; same-language adaptation, Chinese translation and original teaching additions. No third-party media or linked works.",
+          "exclusions": [
+            "Images, logos and audiovisual media",
+            "Third-party quotations and linked works"
+          ],
+          "attributionRequirements": [
+            "Original institution, title, date and URL",
+            "Licence link and changes identified",
+            "No endorsement claim"
+          ],
+          "reviewBeforeConversionRequired": false
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-29",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 2,
+          "asOf": "2026-10-29",
+          "ageDays": 8,
           "bucket": "within_30_days"
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Education"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-29-en-safer-discussions-at-school"
     },
     {
       "id": "fr-2026-10-23-passe-culture-2030",
@@ -10324,6 +10362,230 @@
         }
       },
       "linkToArticleId": "2026-10-27-en-connections-beneath-the-sea"
+    },
+    {
+      "id": "fr-2026-10-28-vacances-culturelles-partout",
+      "language": "fr",
+      "sourceTitle": "Vacances culturelles : faire vivre la culture partout, pour toutes et tous",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/vacances-culturelles-faire-vivre-la-culture-partout-pour-toutes-et-tous",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-28",
+      "collectedAt": "2026-10-29",
+      "category": "culture",
+      "topics": [
+        "假期活动",
+        "社区文化",
+        "艺术参与"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "Full institutional text, dated original, scoped adaptation rights, language and Chinese, 5 cloze and 3 comprehension questions independently reviewed on 2026-10-29. Separate immutable edition linked below; metadata is not publishable. Excludes images, quotations and third-party works; measures or participation are not evidence of achieved outcomes.",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-29",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/vacances-culturelles-faire-vivre-la-culture-partout-pour-toutes-et-tous",
+          "checkedAt": "2026-10-29",
+          "notes": "Official HTML article body read in full, not a search snippet."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/vacances-culturelles-faire-vivre-la-culture-partout-pour-toutes-et-tous",
+          "evidence": "Explicit Publié le28octobre2026 label."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/vacances-culturelles-faire-vivre-la-culture-partout-pour-toutes-et-tous",
+          "evidence": "Institution-authored original-language national-site news; no translator/republication credit. Provenance inference concerns editorial language, not author native-speaker identity."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "evidence": "MinistrytermsII4.3.1aCCBYSA3FR for ministrytext; II4.3.2 partnerexceptions. Institutional narrative only, Gettyimages and externalworks excluded.",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/actualites/vacances-culturelles-faire-vivre-la-culture-partout-pour-toutes-et-tous",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+          ],
+          "reviewBeforeConversionRequired": false,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "scope": "Institutional narrative only; same-language adaptation, Chinese translation and original teaching additions. No third-party media or linked works.",
+          "exclusions": [
+            "Images, logos and audiovisual media",
+            "Third-party quotations and linked works"
+          ],
+          "attributionRequirements": [
+            "Original institution, title, date and URL",
+            "Licence link and changes identified",
+            "No endorsement claim"
+          ],
+          "shareAlikeRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-29",
+          "checkedAgainstArticleCount": 136,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-29",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-29-fr-creer-pendant-les-vacances"
+    },
+    {
+      "id": "it-2026-10-05-ingv-aerdust-clarification",
+      "language": "it",
+      "sourceTitle": "ETNA | Chiarimento e smentita in merito al progetto “Aerdust”",
+      "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-chiarimento-e-smentita-in-merito-al-progetto-aerdust",
+      "sourceName": "INGV",
+      "registrySourceId": "ingv-italian-press",
+      "sourcePublishedAt": "2026-10-05",
+      "collectedAt": "2026-10-29",
+      "category": "society",
+      "topics": [
+        "信息核实",
+        "科学传播"
+      ],
+      "level": "B1",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "低优先储备：可讨论如何区别项目宣传与机构确认；只核标题和Pubblicato日期，未完成正文事实及第三方引用许可审核。不得将澄清稿改写成危害断言。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-29",
+        "originalDate": {
+          "verified": true,
+          "evidence": "Explicit original publication date on official article page; separate from reference year or future event dates.",
+          "evidenceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/etna-chiarimento-e-smentita-in-merito-al-progetto-aerdust"
+        },
+        "rights": {
+          "verified": false,
+          "adaptationAllowed": false,
+          "publicRedistributionAllowed": false,
+          "evidence": "Registered institution only; article-level permissions and exceptions not yet reviewed.",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-29",
+          "checkedAgainstArticleCount": 136,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-29",
+          "ageDays": 24,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "it-2026-10-22-istat-non-eu-residents",
+      "language": "it",
+      "sourceTitle": "Cittadini non comunitari in Italia – Anno 2025",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/cittadini-non-comunitari-in-italia-anno-2025/",
+      "sourceName": "Istat",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-22",
+      "collectedAt": "2026-10-29",
+      "category": "society",
+      "topics": [
+        "人口迁移",
+        "学习与家庭"
+      ],
+      "level": "B1",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "社会生活储备：官方页Data pubblicazione为22Oct2026，统计参考年2025。待全文方法和许可复核，避免把居留许可数量等同人口存量，也不提供移民法律建议。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-29",
+        "originalDate": {
+          "verified": true,
+          "evidence": "Explicit original publication date on official article page; separate from reference year or future event dates.",
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/cittadini-non-comunitari-in-italia-anno-2025/"
+        },
+        "rights": {
+          "verified": false,
+          "adaptationAllowed": false,
+          "publicRedistributionAllowed": false,
+          "evidence": "Registered institution only; article-level permissions and exceptions not yet reviewed.",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-29",
+          "checkedAgainstArticleCount": 136,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-29",
+          "ageDays": 7,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "fr-2026-10-26-inrae-sols-vivants",
+      "language": "fr",
+      "sourceTitle": "Sols vivants : comprendre les interactions dans les sols pour agir",
+      "sourceUrl": "https://www.inrae.fr/actualites/sols-vivants-comprendre-interactions-sols-agir",
+      "sourceName": "INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-10-26",
+      "collectedAt": "2026-10-29",
+      "category": "environment",
+      "topics": [
+        "土壤生态",
+        "土地利用"
+      ],
+      "level": "B1",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "环境穿插储备，不优先于日常文化稿。已核Publié le26Oct2026，署名Catherine Foucaud-Scheunemann。待全文事实、引语与伙伴作品许可审查；未来项目目标不能写成已证实效果，排除照片和外部引语。",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-10-29",
+        "originalDate": {
+          "verified": true,
+          "evidence": "Explicit original publication date on official article page; separate from reference year or future event dates.",
+          "evidenceUrl": "https://www.inrae.fr/actualites/sols-vivants-comprendre-interactions-sols-agir"
+        },
+        "rights": {
+          "verified": false,
+          "adaptationAllowed": false,
+          "publicRedistributionAllowed": false,
+          "evidence": "Registered institution only; article-level permissions and exceptions not yet reviewed.",
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-29",
+          "checkedAgainstArticleCount": 136,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-29",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        }
+      }
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

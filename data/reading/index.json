@@ -2,6 +2,24 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-29-fr-creer-pendant-les-vacances",
+      "lang": "fr",
+      "date": "2026-10-29",
+      "title": "Créer pendant les vacances",
+      "titleZh": "在假期一起创作",
+      "summaryZh": "编织、雨靴舞和医院里的艺术活动，让孩子与家人在身边参与文化生活。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "假期活动",
+        "社区文化",
+        "艺术参与"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-27-it-come-si-misura-il-benessere",
       "lang": "it",
       "date": "2026-10-27",
@@ -120,6 +138,23 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-10-22",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-29-en-safer-discussions-at-school",
+      "lang": "en",
+      "date": "2026-10-29",
+      "title": "Support for safer schools",
+      "titleZh": "为更安全的学校提供支持",
+      "summaryZh": "英国教育部门宣布教师培训、事件记录与后续检查等措施；这些是已公布的安排，不等于问题已经解决。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "校园安全",
+        "讨论与尊重"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-21",
       "contentType": "native-adaptation"
     },
     {
@@ -346,6 +381,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-29-it-imparare-a-conoscere-i-rischi",
+      "lang": "it",
+      "date": "2026-10-29",
+      "title": "Imparare a conoscere i rischi",
+      "titleZh": "从课堂开始认识风险",
+      "summaryZh": "一个从西西里学校起步的教育项目获得奖项，把自然风险、资源保护和社区合作带进学习。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "学校教育",
+        "自然风险",
+        "公民参与"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-16",
       "contentType": "native-adaptation"
     },
     {

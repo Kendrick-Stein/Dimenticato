@@ -1,0 +1,132 @@
+{
+  "checkedAt": "2026-10-29",
+  "status": "PASS",
+  "entryIds": [
+    "it-rai-obblighi-divieti-b1",
+    "fr-tv5-musique-a1",
+    "de-logo-2026-10-28",
+    "en-bc-teens-shopping-clothes-a2"
+  ],
+  "sourceRegistration": {
+    "schema": 1,
+    "checkedAt": "2026-10-29",
+    "scope": "append-only proposed listening source record; no existing source record replaced",
+    "repositoryObservation": "No separate listening source registry exists in current main. data/listening/catalog.json has verifiedAt/policy/entries/schema only; editorial/listening/reviews files record source URLs. This draft uses the existing reading source record field shape for consistency, but is NOT a reading republication whitelist. Prefer embedding it in this run's listening review unless coordinator elects a registry update within content scope.",
+    "sources": [
+      {
+        "id": "british-council-learnenglish-teens-listening-links",
+        "name": "British Council · LearnEnglish Teens",
+        "url": "https://learnenglishteens.britishcouncil.org/skills/listening",
+        "languages": [
+          "en"
+        ],
+        "allowedUrlPrefixes": [
+          "https://learnenglishteens.britishcouncil.org/skills/listening/"
+        ],
+        "rightsPolicyUrl": "https://www.britishcouncil.org/terms",
+        "licenseEvidence": "https://www.britishcouncil.org/terms",
+        "license": "Link-only; no blanket adaptation or republication permission",
+        "articleReviewRequired": true,
+        "conditions": "Use a text link to the complete free official lesson page in its original context, not a raw audio/PDF URL or embedded content. Add only concise independently authored learning guidance and original questions supported by actual official transcript evidence. Do not reproduce media, full transcripts, images, logos, original worksheets or exercises; do not imply British Council endorsement. Article-level evidence still required; resource availability does not confer reuse rights.",
+        "rightsEvidence": {
+          "documentUpdatedAt": "2020-05-29",
+          "checkedAt": "2026-10-29",
+          "sections": [
+            "10: republication and modification require prior written approval",
+            "14: generally no objection to text links to free digital services; no copied site portions or out-of-context direct content links"
+          ],
+          "applicabilityUrl": "https://learnenglishteens.britishcouncil.org/house-rules",
+          "applicabilityLocator": "House rules footer links to British Council full terms"
+        },
+        "audienceCaution": "LearnEnglish Teens house rules target 13–17 and direct adults to main LearnEnglish. No registration or posting attempted; consider main LearnEnglish alternatives for this adult learning site.",
+        "verifiedExample": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/shopping-clothes"
+      }
+    ]
+  },
+  "independentReview": {
+    "checkedAt": "2026-10-29T00:52:00Z",
+    "entriesSha256": "99afe5d63706cd7986173725a341d1351fc5067eade35e2421d5757dd78a7e4e",
+    "scope": "Independent official page and transcript review only. No playback/audio-quality testing. Outbound links, original teaching guidance, no media or full transcript redistribution.",
+    "entries": [
+      {
+        "id": "it-rai-obblighi-divieti-b1",
+        "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Le-parole-dellItaliano-obblighi-e-divieti-47ad0676-ad0f-49b7-9163-866916d3801d.html",
+        "officialPageOpenedIndependently": true,
+        "chineseGuideAndVocabulary": "Accurate and appropriately scoped",
+        "mediaPlaybackTested": false,
+        "status": "REVISE_DISTRACTORS",
+        "date": "Not stated; URL year/month not publication proof; evergreen treatment correct",
+        "level": "B1 officially labelled at heading line393 and tag407",
+        "evidence": "Transcript lines395-404 read. Q1 phone off line396; Q2 flower bed line398; Q3 validate ticket line398. All keys unique and explanations accurate.",
+        "suggestions": [
+          {
+            "questionId": "it-obblighi-3",
+            "options": [
+              "Convalidare il biglietto.",
+              "Mangiare all’interno del museo.",
+              "Calpestare le aiuole.",
+              "Gettare carta per terra."
+            ],
+            "answerIndex": 0,
+            "reason": "Replace unrelated sweets/bicycle with transcript-grounded prohibited actions; test obligation vs prohibition."
+          },
+          {
+            "questionId": "it-obblighi-1",
+            "replaceOptionIndex": 3,
+            "replacement": "Mangiare nel museo.",
+            "reason": "Museum-specific distractor rather than unrelated table reservation."
+          }
+        ]
+      },
+      {
+        "id": "fr-tv5-musique-a1",
+        "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/musique",
+        "officialPageOpenedIndependently": true,
+        "chineseGuideAndVocabulary": "Accurate and appropriately scoped",
+        "mediaPlaybackTested": false,
+        "status": "PASS_RESOURCE_ONLY",
+        "date": "2023-11-21 line61; available until2028-03-04 line44",
+        "level": "A1 line38",
+        "evidence": "Designer Alice Reboul/Hachette FLE line59; adorer line89, détester107, chanson177. No transcript-specific question claims."
+      },
+      {
+        "id": "de-logo-2026-10-28",
+        "url": "https://www.logo.de/logo-vom-mittwoch-28-oktober-2026-102.html",
+        "officialPageOpenedIndependently": true,
+        "chineseGuideAndVocabulary": "Accurate and appropriately scoped",
+        "mediaPlaybackTested": false,
+        "status": "PASS_RESOURCE_ONLY",
+        "date": "2026-10-28 19:50 lines38-40",
+        "level": "Native-child programme, not CEFR; draft correctly ungraded",
+        "evidence": "Episode line42 topic list matches all five topics. Homepage https://www.logo.de/ lines58-60 gives10:03. Initial direct fetch internal error resolved by ordinary official homepage link click, not denied access bypass. No transcript questions."
+      },
+      {
+        "id": "en-bc-teens-shopping-clothes-a2",
+        "url": "https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/shopping-clothes",
+        "officialPageOpenedIndependently": true,
+        "chineseGuideAndVocabulary": "Accurate and appropriately scoped",
+        "mediaPlaybackTested": false,
+        "status": "PASS",
+        "date": "First publication not stated; comments are not publication metadata; evergreen treatment correct",
+        "level": "A2 Pre-intermediate lines70-72",
+        "evidence": "Full transcript lines21-50 read. Q1 medium only black/red29-35; Q2 try on35-43; Q3 change and receipt44-48. Keys [1,2,0] unique, translations/explanations accurate. Original wording unlike page exercise labels; external exercise iframes not reproduced."
+      }
+    ],
+    "finalSourceReview": {
+      "checkedAt": "2026-10-29T00:54:00Z",
+      "entriesSha256": "8404c76f32dd3847b0502d4230e5ff48853c6beae54072ba9c847a7f9a6f7373",
+      "status": "PASS",
+      "resolved": [
+        "IT q1 museum-food distractor replaces table reservation",
+        "IT q3 all distractors now grounded in prohibitions from transcript; unique obligation answer remains index0"
+      ],
+      "unresolved": [],
+      "audioPlaybackTested": false
+    }
+  },
+  "scope": "Official outbound links and original short guides/questions only. No media, full transcripts, images or publisher exercises copied.",
+  "limits": [
+    "Actual media playback and audio quality not tested.",
+    "FR/DE resource-only: no comprehension questions."
+  ]
+}

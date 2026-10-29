@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-29-it-imparare-a-conoscere-i-rischi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "A chi era rivolta inizialmente l’iniziativa?",
+      "promptZh": "该倡议最初面向谁？",
+      "options": [
+        "Alle associazioni di Roma.",
+        "Alle scuole della Sicilia.",
+        "Alle imprese di Messina.",
+        "Alle università del Nord."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "s5明确最初面向西西里的学校，之后才扩展到意大利其他地区。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa indica il numero di oltre diecimila persone?",
+      "promptZh": "超过一万这一人数指的是什么？",
+      "options": [
+        "I partecipanti alla premiazione.",
+        "I ricercatori delle associazioni.",
+        "Gli insegnanti delle regioni.",
+        "Gli studenti del progetto."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "s6明确超过一万指参与项目的学生，不能理解成颁奖出席人数或教师、研究人员数。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quale altro tema affronta il progetto oltre ai pericoli naturali?",
+      "promptZh": "除了自然危险，该项目还涉及哪个主题？",
+      "options": [
+        "L’uso responsabile delle risorse.",
+        "La vendita dei prodotti locali.",
+        "L’organizzazione delle vacanze.",
+        "La costruzione di nuove scuole."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "s8说明项目还介绍生态系统保护和负责任地使用资源；其他选项未在正文作为项目内容出现。"
+    }
+  ]
+}

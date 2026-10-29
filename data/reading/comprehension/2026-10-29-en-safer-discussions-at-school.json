@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-29-en-safer-discussions-at-school",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Who will receive special training?",
+      "options": [
+        "Parents who organise school journeys.",
+        "Students who start at a new college.",
+        "Leaders and staff who keep children safe.",
+        "People who design school buildings."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4"
+      ],
+      "explanationZh": "s4明确培训对象是学校领导和负责儿童安全的工作人员，其余三类不是本文所述对象。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What will schools do differently with antisemitic incidents?",
+      "options": [
+        "Improve the way they report and record them.",
+        "Send every case to a new student group.",
+        "Discuss them only at the end of each year.",
+        "Use them to choose new school subjects."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "s7说明改进事件报告与记录；一年后检查针对总体进展，不是延迟处理每起事件。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What is Sir David Bell expected to do after one year?",
+      "options": [
+        "Write new lessons for every school.",
+        "Choose the people who need training.",
+        "Lead the group in each school.",
+        "Review the progress that has been made."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "s11说明戴维·贝尔将在一年后再次查看进展；s10的小组工作不等于他领导每所学校的小组。"
+    }
+  ]
+}

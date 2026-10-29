@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-29-fr-creer-pendant-les-vacances",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Que va devenir l’œuvre collective des enfants à Dinan ?",
+      "promptZh": "迪南孩子们的集体创作之后会怎样？",
+      "options": [
+        "Elle sera vendue dans un atelier.",
+        "Elle sera envoyée dans un hôpital.",
+        "Elle sera exposée dans la ville.",
+        "Elle sera présentée dans un concert."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "s5说集体作品随后将在城里展出；没有出售、送往医院或在音乐会上展示的安排。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Avec qui les participants du Grand Mirail ont-ils préparé leur danse ?",
+      "promptZh": "大米赖的参与者和谁一起准备舞蹈？",
+      "options": [
+        "Avec une artisane.",
+        "Avec un percussionniste.",
+        "Avec un médecin.",
+        "Avec un peintre."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "s6–s8连续介绍大米赖的gumboot活动，明确指导练习的是打击乐手；手工艺人属于迪南的另一个项目。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Au Mans, que peuvent faire les participants en plus de regarder des spectacles ?",
+      "promptZh": "在勒芒，除了看演出，参与者还能做什么？",
+      "options": [
+        "Tisser et préparer une exposition.",
+        "Peindre et visiter un atelier.",
+        "Écrire et lire des histoires.",
+        "Danser et chanter."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "s10列出跳舞、唱歌和用身体发声；编织与工作室参观属于迪南，写故事没有在本文出现。"
+    }
+  ]
+}

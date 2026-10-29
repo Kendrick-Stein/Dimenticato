@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-29-it-imparare-a-conoscere-i-rischi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 53,
+      "answer": "premio",
+      "options": [
+        "biglietto",
+        "premio",
+        "prestito",
+        "contratto"
+      ],
+      "explanation": "结合中文句意“奖项”，原句应填premio；其余选项与该句的对象或内容不符。注意按原句保留单复数形式。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 27,
+      "answer": "scuole",
+      "options": [
+        "scuole",
+        "aziende",
+        "banche",
+        "biblioteche"
+      ],
+      "explanation": "结合中文句意“学校”，原句应填scuole；其余选项与该句的对象或内容不符。注意按原句保留单复数形式。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 51,
+      "answer": "studenti",
+      "options": [
+        "docenti",
+        "ricercatori",
+        "studenti",
+        "turisti"
+      ],
+      "explanation": "结合中文句意“学生”，原句应填studenti；其余选项与该句的对象或内容不符。注意按原句保留单复数形式。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 32,
+      "answer": "terremoti",
+      "options": [
+        "concerti",
+        "mercati",
+        "viaggi",
+        "terremoti"
+      ],
+      "explanation": "结合中文句意“地震”，原句应填terremoti；其余选项与该句的对象或内容不符。注意按原句保留单复数形式。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s8",
+      "start": 124,
+      "answer": "risorse",
+      "options": [
+        "risorse",
+        "notizie",
+        "ricette",
+        "fotografie"
+      ],
+      "explanation": "结合中文句意“资源”，原句应填risorse；其余选项与该句的对象或内容不符。注意按原句保留单复数形式。"
+    }
+  ]
+}

@@ -1,0 +1,596 @@
+{
+  "checkedAt": "2026-10-29",
+  "status": "PASS",
+  "baseCommit": "42be4cfbe43019569b5ef1dcf9d3c7a00ad4aed6",
+  "batch": {
+    "reading": {
+      "fr": "A2",
+      "en": "A2",
+      "it": "A2"
+    },
+    "clozeQuestions": 15,
+    "comprehensionQuestions": 9,
+    "listeningEntries": 4,
+    "listeningQuestions": 6
+  },
+  "wordCounts": {
+    "2026-10-29-fr-creer-pendant-les-vacances": 185,
+    "2026-10-29-en-safer-discussions-at-school": 155,
+    "2026-10-29-it-imparare-a-conoscere-i-rischi": 176
+  },
+  "finalContentHashes": {
+    "data/reading/comprehension/2026-10-29-fr-creer-pendant-les-vacances.json": "8f6fadc7a37ba9e00c0a7f0827d0fa9503cd6423cb09a98d5b5f690ca9a72736",
+    "data/reading/comprehension/2026-10-29-en-safer-discussions-at-school.json": "d816d633547f461130d93d190ce03a6a5773bf5f75c972860d701c898703fa44",
+    "data/reading/comprehension/2026-10-29-it-imparare-a-conoscere-i-rischi.json": "3f72d800c3d1241640b1294eb79d8579692406e3655af45bb837fbe39060a28f",
+    "data/reading/articles/2026-10-29-fr-creer-pendant-les-vacances.json": "44eb07771b2a25f435896251afd05900230e1674a69721378e0d703c16c96fcd",
+    "data/reading/articles/2026-10-29-en-safer-discussions-at-school.json": "edc17c22e0f88a9da5911cbae25971a4e30cd4ce7738c965d470a153b09a3156",
+    "data/reading/articles/2026-10-29-it-imparare-a-conoscere-i-rischi.json": "1964cd80fc5836526790b28648b05a108e84d8f5612615e332edb6d807e040ee",
+    "data/reading/practice/2026-10-29-fr-creer-pendant-les-vacances.json": "b4f5359bf97d81e6f605998648fc84436925ed9315312147c2deb48194d1bae0",
+    "data/reading/practice/2026-10-29-en-safer-discussions-at-school.json": "d24eae6779550e268f54ad912c3dc4acc55f1a63583b6572c6b2746b5dfc282a",
+    "data/reading/practice/2026-10-29-it-imparare-a-conoscere-i-rischi.json": "ddd70286d2a06410f9e461b87d258716bfe0ad1a97fc7782429e6652cb93d432"
+  },
+  "sourceReview": {
+    "checkedAt": "2026-10-29T00:52:00Z",
+    "reviewer": "independent source-content reviewer",
+    "scope": "Read-only drafts; source/translation/word forms/questions/rights verification; not blind comprehension review; no publishing",
+    "articles": [
+      {
+        "id": "2026-10-29-fr-creer-pendant-les-vacances",
+        "files": [
+          {
+            "path": "2026-10-29-fr-creer-pendant-les-vacances.comprehension.json",
+            "sha256": "8f6fadc7a37ba9e00c0a7f0827d0fa9503cd6423cb09a98d5b5f690ca9a72736"
+          },
+          {
+            "path": "2026-10-29-fr-creer-pendant-les-vacances.article.json",
+            "sha256": "44eb07771b2a25f435896251afd05900230e1674a69721378e0d703c16c96fcd"
+          },
+          {
+            "path": "2026-10-29-fr-creer-pendant-les-vacances.practice.json",
+            "sha256": "b4f5359bf97d81e6f605998648fc84436925ed9315312147c2deb48194d1bae0"
+          }
+        ],
+        "source": {
+          "name": "Ministère de la Culture",
+          "title": "Vacances culturelles : faire vivre la culture partout, pour toutes et tous",
+          "url": "https://www.culture.gouv.fr/actualites/vacances-culturelles-faire-vivre-la-culture-partout-pour-toutes-et-tous",
+          "publishedAt": "2026-10-28",
+          "lang": "fr"
+        },
+        "ageDays": 1,
+        "within90Days": true,
+        "nativeInstitutionalSource": true,
+        "wordCountWhitespace": 186,
+        "translationReview": "All 11 sentence translations preserve propositions, agents, negation and temporal intent. Gloss forms and lemmas correct.",
+        "clozeReview": {
+          "count": 5,
+          "offsetsExact": true,
+          "answersUniqueGivenChinese": true,
+          "formsCorrect": true
+        },
+        "comprehensionReview": {
+          "count": 3,
+          "keyEvidenceExplanationCorrect": true,
+          "blind": false
+        },
+        "thirdPartyHandling": "No images, logos, third-party quotations or externally linked partner works reproduced in drafts.",
+        "status": "PASS_WITH_MINOR_RECOMMENDATION",
+        "sourceAccess": "Initial direct opens returned internal not-accessible error, not access denial. Search resolved official same URL; independent normal open then returned full article.",
+        "factLocators": {
+          "s1-s2": "Official page lines 19-21,32-36",
+          "s3-s5": "line41 Dinan paragraph",
+          "s6-s8": "line42 Grand Mirail paragraph",
+          "s9-s10": "lines50-51 Le Mans paragraph",
+          "s11": "editorial synthesis consistent with lines61-62"
+        },
+        "licenseReview": {
+          "status": "PASS",
+          "officialTermsUrl": "https://www.culture.gouv.fr/mentions-legales",
+          "termsReadFull": true,
+          "termsLocator": "II.4.3.1(a), lines91-95; partner exception II.4.3.2 lines124-126; logos excluded II.4.2",
+          "legalcodeUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/legalcode",
+          "legalcodeReadFull": true,
+          "legalcodeLocator": "Articles3(b),4(b),4(c): adaptation marking, share-alike, credit and source/license URI; no endorsement",
+          "draftCompliance": "Title/source/author/license, dated adaptation and translation notice, same license and no endorsement all present. Ensure rendered UI retains these."
+        },
+        "recommendations": [
+          {
+            "severity": "minor",
+            "location": "s5 text/zh",
+            "detail": "Source places contribution to collective work in future (contribuera). Prefer Ils participeront également ... and 他们也将参与... for maximal temporal fidelity. Existing present can describe programme but is less exact."
+          }
+        ],
+        "levelReview": "186 whitespace words; concrete activities, short sentences with supported specialist vocabulary; A2 editorial estimate defensible, future passive and relative clause slightly challenging."
+      },
+      {
+        "id": "2026-10-29-en-safer-discussions-at-school",
+        "files": [
+          {
+            "path": "2026-10-29-en-safer-discussions-at-school.practice.json",
+            "sha256": "d24eae6779550e268f54ad912c3dc4acc55f1a63583b6572c6b2746b5dfc282a"
+          },
+          {
+            "path": "2026-10-29-en-safer-discussions-at-school.article.json",
+            "sha256": "5b857bc2dfc572ebe17fc3f2eed8c9c1760918a230587c84de93bd3839e0ece1"
+          },
+          {
+            "path": "2026-10-29-en-safer-discussions-at-school.comprehension.json",
+            "sha256": "d816d633547f461130d93d190ce03a6a5773bf5f75c972860d701c898703fa44"
+          }
+        ],
+        "source": {
+          "name": "Department for Education / GOV.UK",
+          "title": "“Generational moment” as government acts on landmark antisemitism review",
+          "url": "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
+          "publishedAt": "2026-10-21",
+          "lang": "en",
+          "author": "Department for Education; The Rt Hon Lucy Powell MP"
+        },
+        "ageDays": 8,
+        "within90Days": true,
+        "nativeInstitutionalSource": true,
+        "wordCountWhitespace": 163,
+        "translationReview": "All 11 sentence translations preserve propositions, agents, negation and temporal intent. Gloss forms and lemmas correct.",
+        "clozeReview": {
+          "count": 5,
+          "offsetsExact": true,
+          "answersUniqueGivenChinese": true,
+          "formsCorrect": true
+        },
+        "comprehensionReview": {
+          "count": 3,
+          "keyEvidenceExplanationCorrect": true,
+          "blind": false
+        },
+        "thirdPartyHandling": "No images, logos, third-party quotations or externally linked partner works reproduced in drafts.",
+        "status": "CONTENT_PASS_LICENSE_FULLTEXT_UNVERIFIED",
+        "factLocators": {
+          "s1-s3": "Official page lines56-68",
+          "s4-s8": "lines81-99, especially notes93-97",
+          "s9": "note98 educational understanding of Jewish life/identity",
+          "s10-s11": "line69 implementation group and one-year progress review"
+        },
+        "licenseReview": {
+          "status": "OFFICIAL_GRANT_CONFIRMED_FULL_LICENSE_BLOCKED",
+          "articleFooterLocator": "lines176-178 OGL v3 except otherwise stated / Crown copyright",
+          "officialTermsUrl": "https://www.gov.uk/help/terms-conditions",
+          "termsLocator": "Using GOV.UK content, lines91-98, identifies OGL coverage and otherwise credited content",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "licenseFulltextRead": false,
+          "block": "403 Forbidden; not retried or bypassed",
+          "limitation": "Do not describe this as independently reading OGL full terms. Official grant chain is confirmed; final full-terms gate must remain accurately scoped.",
+          "draftCompliance": "Standard OGL attribution, Crown/source credit, adaptation notice and no-endorsement present; narrative avoids quoted speakers."
+        },
+        "recommendations": [
+          {
+            "severity": "pedagogical",
+            "location": "level/levelReason",
+            "detail": "A2 is optimistic: antisemitism, recommendations, independent review, responsible, complex cases, identity and implementation concepts are dense. Prefer B1 editorial level, or explicitly assisted A2+/bridge content."
+          }
+        ],
+        "levelReview": "163 whitespace words; syntactic simplification helps but abstract policy vocabulary above comfortable A2."
+      }
+    ],
+    "finalSourceReview": {
+      "checkedAt": "2026-10-29T00:54:25Z",
+      "articles": [
+        {
+          "lang": "fr",
+          "files": [
+            {
+              "path": "2026-10-29-fr-creer-pendant-les-vacances.comprehension.json",
+              "sha256": "8f6fadc7a37ba9e00c0a7f0827d0fa9503cd6423cb09a98d5b5f690ca9a72736"
+            },
+            {
+              "path": "2026-10-29-fr-creer-pendant-les-vacances.article.json",
+              "sha256": "44eb07771b2a25f435896251afd05900230e1674a69721378e0d703c16c96fcd"
+            },
+            {
+              "path": "2026-10-29-fr-creer-pendant-les-vacances.practice.json",
+              "sha256": "b4f5359bf97d81e6f605998648fc84436925ed9315312147c2deb48194d1bae0"
+            }
+          ],
+          "wordCountWhitespace": 186,
+          "clozeOffsetsExact": true,
+          "comprehensionKeysEvidenceExplanationsCorrect": true,
+          "status": "PASS",
+          "resolved": [
+            "s5 now future participation and future exhibition, Chinese aligned",
+            "q3 correct answer no unsupported ensemble"
+          ],
+          "unresolved": []
+        },
+        {
+          "lang": "en",
+          "files": [
+            {
+              "path": "2026-10-29-en-safer-discussions-at-school.practice.json",
+              "sha256": "d24eae6779550e268f54ad912c3dc4acc55f1a63583b6572c6b2746b5dfc282a"
+            },
+            {
+              "path": "2026-10-29-en-safer-discussions-at-school.article.json",
+              "sha256": "edc17c22e0f88a9da5911cbae25971a4e30cd4ce7738c965d470a153b09a3156"
+            },
+            {
+              "path": "2026-10-29-en-safer-discussions-at-school.comprehension.json",
+              "sha256": "d816d633547f461130d93d190ce03a6a5773bf5f75c972860d701c898703fa44"
+            }
+          ],
+          "wordCountWhitespace": 155,
+          "clozeOffsetsExact": true,
+          "comprehensionKeysEvidenceExplanationsCorrect": true,
+          "status": "CONTENT_PASS",
+          "levelDecision": "Acceptable as assisted upper-A2 editorial estimate, not unassisted easy A2. Reduced abstract language, short factual sentences and added glosses materially improve accessibility. Word count is not a CEFR criterion.",
+          "resolved": [
+            "s2/s3/s8/s9/s10 simplify without changing source propositions",
+            "Chinese remains faithful",
+            "Explicit levelReason discloses dependence on support",
+            "suggestions lemma corrected to singular suggestion"
+          ],
+          "unresolved": [
+            "OGL full text remains unverified due403; official grant chain verified, boundary unchanged"
+          ]
+        }
+      ]
+    }
+  },
+  "italianReview": {
+    "checkedAt": "2026-10-29",
+    "articleId": "2026-10-29-it-imparare-a-conoscere-i-rischi",
+    "reviewType": "independent full-source/content/rights/exercises review, not blind",
+    "result": "PASS",
+    "sourceEvidence": [
+      {
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
+        "locations": "Published line3; body10–16; footer71",
+        "findings": "16Oct publication, 14Oct2026 Rome award, Piangiamore recipient, AssoCEA Messina collaboration, >10,000 participating students, Sicily then other regions, earthquakes/floods/landslides, ecosystem/resource stewardship and institutional-civic collaboration all explicitly supported."
+      },
+      {
+        "url": "https://www.ingv.it/note-legali",
+        "locations": "Copyright5–9; footer58",
+        "findings": "INGV institutional content and attribution condition; CC BY4 footer."
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "locations": "Share/Adapt50–51; attribution55; no endorsement55",
+        "findings": "Adaptation and public redistribution allowed with attribution and changes noted."
+      }
+    ],
+    "facts": "PASS: dates distinguished; >10,000 is project participation, not award attendance; no claim of measured disaster-risk reduction.",
+    "nativeLanguage": "PASS institutional Italian original provenance, not author native-tongue certification. No translation/reprint indication.",
+    "rights": "PASS scoped to INGV institutional text, excluding images/logos/third-party linked works; attribution/change/no endorsement present.",
+    "languageAndChinese": "PASS: Italian agreement, tenses, prepositions and Chinese meaning checked; s5 passive and feminine agreement correct. A2 editor estimate plausible with paired Chinese and glosses; specialised vocabulary explicitly supported.",
+    "practice": {
+      "result": "PASS",
+      "count": 5,
+      "answers": [
+        "premio",
+        "scuole",
+        "studenti",
+        "terremoti",
+        "risorse"
+      ],
+      "notes": "Each exact span/offset checked, answer in learningSummary, option forms grammatical; unique under supplied Chinese sentence meaning. No invalid gender/number target."
+    },
+    "comprehension": {
+      "result": "PASS",
+      "count": 3,
+      "answerIndices": [
+        1,
+        3,
+        0
+      ],
+      "evidence": [
+        "s5",
+        "s6",
+        "s8"
+      ],
+      "notes": "Article-dependent details; parallel options, unique answers; Chinese explanations faithful. All three detail kind allowed, not solely title/common-knowledge questions."
+    },
+    "sha256": {
+      "article": "1964cd80fc5836526790b28648b05a108e84d8f5612615e332edb6d807e040ee",
+      "practice": "ddd70286d2a06410f9e461b87d258716bfe0ad1a97fc7782429e6652cb93d432",
+      "comprehension": "3f72d800c3d1241640b1294eb79d8579692406e3655af45bb837fbe39060a28f"
+    },
+    "limitations": [
+      "This is independent editorial review, not empirical difficulty calibration or external reproduction of institutional claims.",
+      "No schema/test/deployment verdict implied."
+    ]
+  },
+  "independentExerciseReview": {
+    "reviewType": "post-unblinding final revision verification; NOT a fresh blind solve",
+    "reviewedAt": "2026-10-29T00:53:55Z",
+    "originalBlindResultsPreserved": [
+      "fr-result.json",
+      "en-result.json",
+      "it-result.json",
+      "listening-result.json"
+    ],
+    "result": "PASS_WITH_NONBLOCKING_PEDAGOGICAL_NOTES",
+    "reading": [
+      {
+        "articleId": "2026-10-29-en-safer-discussions-at-school",
+        "practice": [
+          {
+            "id": "q1",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q2",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q3",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q4",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q5",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          }
+        ],
+        "comprehension": [
+          {
+            "id": "q1",
+            "answerIndex": 2,
+            "matchesBlind": true,
+            "evidenceIdsExist": true,
+            "evidenceSupportsAnswer": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q2",
+            "answerIndex": 0,
+            "matchesBlind": true,
+            "evidenceIdsExist": true,
+            "evidenceSupportsAnswer": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q3",
+            "answerIndex": 3,
+            "matchesBlind": true,
+            "evidenceIdsExist": true,
+            "evidenceSupportsAnswer": true,
+            "explanationCorrect": true
+          }
+        ]
+      },
+      {
+        "articleId": "2026-10-29-fr-creer-pendant-les-vacances",
+        "practice": [
+          {
+            "id": "q1",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q2",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q3",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q4",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q5",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          }
+        ],
+        "comprehension": [
+          {
+            "id": "q1",
+            "answerIndex": 2,
+            "matchesBlind": true,
+            "evidenceIdsExist": true,
+            "evidenceSupportsAnswer": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q2",
+            "answerIndex": 1,
+            "matchesBlind": true,
+            "evidenceIdsExist": true,
+            "evidenceSupportsAnswer": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q3",
+            "answerIndex": 3,
+            "matchesBlind": true,
+            "evidenceIdsExist": true,
+            "evidenceSupportsAnswer": true,
+            "explanationCorrect": true
+          }
+        ]
+      },
+      {
+        "articleId": "2026-10-29-it-imparare-a-conoscere-i-rischi",
+        "practice": [
+          {
+            "id": "q1",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q2",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q3",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q4",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q5",
+            "offsetMatches": true,
+            "answerOccursExactlyOnceInOptions": true,
+            "explanationCorrect": true
+          }
+        ],
+        "comprehension": [
+          {
+            "id": "q1",
+            "answerIndex": 1,
+            "matchesBlind": true,
+            "evidenceIdsExist": true,
+            "evidenceSupportsAnswer": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q2",
+            "answerIndex": 3,
+            "matchesBlind": true,
+            "evidenceIdsExist": true,
+            "evidenceSupportsAnswer": true,
+            "explanationCorrect": true
+          },
+          {
+            "id": "q3",
+            "answerIndex": 0,
+            "matchesBlind": true,
+            "evidenceIdsExist": true,
+            "evidenceSupportsAnswer": true,
+            "explanationCorrect": true
+          }
+        ]
+      }
+    ],
+    "listening": {
+      "itAnswerIndices": [
+        1,
+        3,
+        0
+      ],
+      "enAnswerIndices": [
+        1,
+        2,
+        0
+      ],
+      "keysMatchBlind": true,
+      "officialTranscriptEvidenceSupportsAll": true,
+      "chineseExplanationsCorrect": true,
+      "itQ1FourthOptionConfirmedItalian": "Mangiare nel museo.",
+      "itQ3RevisedDistractorsVerifiedAsProhibitedActs": true,
+      "frAndDeHaveNoUnsupportedQuestions": true,
+      "audioPlaybackNotTested": true
+    },
+    "revisionChecks": [
+      "FR s5 future tense and Chinese translation agree; q1 still fully supported.",
+      "FR q3 ensemble removed; direct s10 evidence now tighter.",
+      "EN simplified s2/s3/s8/s9/s10 and learningSummary phrase are synchronized.",
+      "All 15 cloze offsets match current article substrings exactly; all answer options unique.",
+      "2026-10-29T00:56:03Z: EN suggestions lemma verified as singular suggestion; refreshed EN article SHA256. Lemma-only correction does not affect sentence text, questions, answer keys or cloze offsets."
+    ],
+    "nonblockingNotes": [
+      {
+        "item": "IT listening q3",
+        "noteZh": "改用正文禁令改善了材料相关性，但踩花坛/乱扔纸/馆内进食仍可用常识排除，作为B1听力题区分度偏低；不影响唯一性或事实正确。"
+      },
+      {
+        "item": "EN listening q2/q3",
+        "noteZh": "中文标题、摘要、词汇预习提示试穿及找零，题目较易；保留为低难度入门题可接受。"
+      },
+      {
+        "item": "Reading cloze",
+        "noteZh": "唯一性建立在还原正文或中文辅助之上；若隐藏原文及中文，个别干扰（如FR chaussures）在普通语境可成立。当前解释明确按原句，非错误。"
+      }
+    ],
+    "fileHashes": [
+      {
+        "path": "2026-10-29-en-safer-discussions-at-school.article.json",
+        "sha256": "edc17c22e0f88a9da5911cbae25971a4e30cd4ce7738c965d470a153b09a3156"
+      },
+      {
+        "path": "2026-10-29-en-safer-discussions-at-school.comprehension.json",
+        "sha256": "d816d633547f461130d93d190ce03a6a5773bf5f75c972860d701c898703fa44"
+      },
+      {
+        "path": "2026-10-29-en-safer-discussions-at-school.practice.json",
+        "sha256": "d24eae6779550e268f54ad912c3dc4acc55f1a63583b6572c6b2746b5dfc282a"
+      },
+      {
+        "path": "2026-10-29-fr-creer-pendant-les-vacances.article.json",
+        "sha256": "44eb07771b2a25f435896251afd05900230e1674a69721378e0d703c16c96fcd"
+      },
+      {
+        "path": "2026-10-29-fr-creer-pendant-les-vacances.comprehension.json",
+        "sha256": "8f6fadc7a37ba9e00c0a7f0827d0fa9503cd6423cb09a98d5b5f690ca9a72736"
+      },
+      {
+        "path": "2026-10-29-fr-creer-pendant-les-vacances.practice.json",
+        "sha256": "b4f5359bf97d81e6f605998648fc84436925ed9315312147c2deb48194d1bae0"
+      },
+      {
+        "path": "2026-10-29-it-imparare-a-conoscere-i-rischi.article.json",
+        "sha256": "1964cd80fc5836526790b28648b05a108e84d8f5612615e332edb6d807e040ee"
+      },
+      {
+        "path": "2026-10-29-it-imparare-a-conoscere-i-rischi.comprehension.json",
+        "sha256": "3f72d800c3d1241640b1294eb79d8579692406e3655af45bb837fbe39060a28f"
+      },
+      {
+        "path": "2026-10-29-it-imparare-a-conoscere-i-rischi.practice.json",
+        "sha256": "ddd70286d2a06410f9e461b87d258716bfe0ad1a97fc7782429e6652cb93d432"
+      },
+      {
+        "path": "entries.json",
+        "sha256": "8404c76f32dd3847b0502d4230e5ff48853c6beae54072ba9c847a7f9a6f7373"
+      }
+    ]
+  },
+  "gaps": [
+    "No German reading: inspected candidate had source integrity/date problems; another was older than 90 days. This does not establish that no suitable German source exists.",
+    "No B1/B2-C1 additions: insufficient independently reviewed distinct material this run; no repeated story or cross-language translations used to fill tiers.",
+    "No media playback or audio-quality verification; French/German listening are resource-only.",
+    "OGL primary licence text returned 403; no bypass. Current GOV.UK official terms and article footer independently establish institutional-text reuse chain; excluded third-party material."
+  ],
+  "checks": {
+    "baseline": "TZ=UTC npm test passed before content changes",
+    "targeted": "reading, intake, practice, comprehension, comprehension-loading, listening checks passed",
+    "fullSuite": "PASS: 45 harnesses, 484171 passed, 0 failed, 0 known issues",
+    "historicalFiles": "PASS: 354 pre-existing article/practice/comprehension JSON files unchanged",
+    "deployment": "not yet submitted"
+  },
+  "reserve": {
+    "added": 3,
+    "status": "collected/discovered only, not approved text or publication",
+    "remainingGap": "Reserve remains below a full week; no claims of completed content review for discovery-only metadata."
+  }
+}

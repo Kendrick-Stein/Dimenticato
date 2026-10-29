@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "id": "2026-10-29-it-imparare-a-conoscere-i-rischi",
+  "storyId": "ingv-coniri-premio-cnel-2026-10-16",
+  "lang": "it",
+  "date": "2026-10-29",
+  "title": "Imparare a conoscere i rischi",
+  "titleZh": "从课堂开始认识风险",
+  "summaryZh": "一个从西西里学校起步的教育项目获得奖项，把自然风险、资源保护和社区合作带进学习。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：围绕学校项目的具体信息，以现在时和近过去时叙述，提供专业机构及自然灾害词汇中文辅助；少量被动态有逐句对照。",
+  "category": "education",
+  "topics": [
+    "学校教育",
+    "自然风险",
+    "公民参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INGV",
+    "title": "PREMIO CNEL | Il progetto CON.I.RI. dell’INGV ottiene il riconoscimento “Impatto PA” 2026",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/premio-cnel-ingv-progetto-con-i-ri-prevenzione-rischi-naturali",
+    "publishedAt": "2026-10-16",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "机构作者：Istituto Nazionale di Geofisica e Vulcanologia（INGV），原文2026-10-16，题名及直接链接见来源。原页页脚明确采用CC BY 4.0。Dimenticato于2026-10-29作同语言分级改写、中文翻译及原创教学补充；标注修改，不表示INGV认可。",
+  "adaptation": "依据意大利语机构新闻简化改写，非原文全文；区别报道日期10月16日与颁奖日期10月14日，参与人数仅指项目累计报告。排除照片、标志、外链材料与第三方作品。介绍教育目标，不提供灾害现场应急指令，也不把获奖等同实际风险降低。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 16 ottobre 2026, l’INGV presenta una notizia sul progetto educativo CON.I.RI., dedicato ai rischi naturali.",
+      "zh": "2026年10月16日，意大利国家地球物理与火山学研究所介绍了关于自然风险的教育项目CON.I.RI.的一则消息。",
+      "glosses": [
+        {
+          "surface": "rischi",
+          "lemma": "rischio",
+          "zh": "风险"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Il nome del progetto significa convivere con i rischi naturali.",
+      "zh": "项目名称的意思是与自然风险共处。",
+      "glosses": [
+        {
+          "surface": "convivere",
+          "lemma": "convivere",
+          "zh": "共处"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Due giorni prima, a Roma, il progetto ha ricevuto il premio del CNEL chiamato Impatto PA.",
+      "zh": "两天前，该项目在罗马获得了CNEL颁发的Impatto PA奖。",
+      "glosses": [
+        {
+          "surface": "premio",
+          "lemma": "premio",
+          "zh": "奖项"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Giovanna Lucia Piangiamore, ricercatrice dell’INGV e referente del progetto, ha ritirato il riconoscimento.",
+      "zh": "INGV研究人员、项目负责人乔瓦娜·卢恰·皮安贾莫雷领取了该荣誉。",
+      "glosses": [
+        {
+          "surface": "ricercatrice",
+          "lemma": "ricercatore",
+          "zh": "女性研究人员"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "L’iniziativa è nata per le scuole della Sicilia ed è stata poi proposta anche in altre regioni italiane.",
+      "zh": "该倡议最初面向西西里的学校，后来也在意大利其他地区开展。",
+      "glosses": [
+        {
+          "surface": "scuole",
+          "lemma": "scuola",
+          "zh": "学校"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Secondo l’INGV, hanno partecipato più di diecimila studenti: il numero riguarda il progetto, non la sola premiazione.",
+      "zh": "据INGV介绍，参与学生超过一万人：这一人数指项目参与者，而非仅指颁奖活动。",
+      "glosses": [
+        {
+          "surface": "studenti",
+          "lemma": "studente",
+          "zh": "学生"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Il percorso insegna a conoscere terremoti, alluvioni e frane, per promuovere comportamenti corretti.",
+      "zh": "这一学习过程帮助学生认识地震、洪水和滑坡，以促进正确的行为。",
+      "glosses": [
+        {
+          "surface": "terremoti",
+          "lemma": "terremoto",
+          "zh": "地震"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Non si occupa però soltanto di questi pericoli: parla anche della protezione degli ecosistemi e dell’uso responsabile delle risorse.",
+      "zh": "但它不仅关注这些危险，也讲到生态系统保护和对资源的负责任使用。",
+      "glosses": [
+        {
+          "surface": "risorse",
+          "lemma": "risorsa",
+          "zh": "资源"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Il lavoro nasce dalla collaborazione tra l’INGV e l’associazione AssoCEA di Messina, nel programma Futuri Cittadini Responsabili 2.0.",
+      "zh": "这项工作源于INGV与墨西拿的AssoCEA协会在Futuri Cittadini Responsabili 2.0计划下的合作。",
+      "glosses": [
+        {
+          "surface": "collaborazione",
+          "lemma": "collaborazione",
+          "zh": "合作"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Il progetto mette inoltre in relazione gli enti scientifici, la Protezione Civile e i cittadini, con un’attenzione particolare ai giovani.",
+      "zh": "该项目还把科研机构、民防部门和公民联系起来，尤其关注青年。",
+      "glosses": [
+        {
+          "surface": "giovani",
+          "lemma": "giovane",
+          "zh": "年轻人"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "L’obiettivo è diffondere conoscenze utili e una cultura della prevenzione, a partire dai banchi di scuola.",
+      "zh": "目标是从学校课堂开始传播有用知识和预防意识。",
+      "glosses": [
+        {
+          "surface": "prevenzione",
+          "lemma": "prevenzione",
+          "zh": "预防"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "premio",
+        "lemma": "premio",
+        "zh": "奖项",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "scuole",
+        "lemma": "scuola",
+        "zh": "学校",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "studenti",
+        "lemma": "studente",
+        "zh": "学生",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "terremoti",
+        "lemma": "terremoto",
+        "zh": "地震",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "risorse",
+        "lemma": "risorsa",
+        "zh": "资源",
+        "sentenceId": "s8"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Due giorni prima",
+        "zh": "两天前；相对于前句的报道日期",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "più di diecimila",
+        "zh": "超过一万；più di表示数量超过",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "a partire dai banchi di scuola",
+        "zh": "从学校课堂开始；a partire da表示起点",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "è nata表示“诞生、起步”；è stata proposta是近过去时被动态，阴性词尾与iniziativa保持一致。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quale tema sulla natura vorresti studiare a scuola?",
+        "zh": "你想在学校学习哪个自然主题？"
+      },
+      {
+        "text": "Come possono collaborare una scuola e un’associazione?",
+        "zh": "学校和协会可以如何合作？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Vorrei capire meglio i rischi del mio territorio.",
+        "zh": "我想更好地了解我所在地区的风险。",
+        "note": "原创口语示例。"
+      },
+      {
+        "text": "Secondo me, la collaborazione è importante.",
+        "zh": "我认为合作很重要。",
+        "note": "原创观点表达，不是来源结论。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "id": "2026-10-29-fr-creer-pendant-les-vacances",
+  "storyId": "culture-gouv-vacances-partout-2026-10-28",
+  "lang": "fr",
+  "date": "2026-10-29",
+  "title": "Créer pendant les vacances",
+  "titleZh": "在假期一起创作",
+  "summaryZh": "编织、雨靴舞和医院里的艺术活动，让孩子与家人在身边参与文化生活。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以具体地点和活动为主，短句配合现在时、复合过去时及简单将来时；tissage、percussionniste等专题词和诸圣节假期提供中文辅助。",
+  "category": "culture",
+  "topics": [
+    "假期活动",
+    "社区文化",
+    "艺术参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Vacances culturelles : faire vivre la culture partout, pour toutes et tous",
+    "url": "https://www.culture.gouv.fr/actualites/vacances-culturelles-faire-vivre-la-culture-partout-pour-toutes-et-tous",
+    "publishedAt": "2026-10-28",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "机构作者：Ministère de la Culture（法国文化部），原文2026-10-28，题名及直接链接见来源。依据文化部法律声明II.4.3.1(a)的CC BY-SA 3.0 FR文字许可；合作方作品依II.4.3.2另行处理。本法语改写、中文翻译与原创教学补充由Dimenticato于2026-10-29整理，以相同许可提供，不表示原机构认可。",
+  "adaptation": "同语言分级改写而非原文全文，选取Dinan、Toulouse和Le Mans的机构叙述；保留今年夏天、诸圣节假期及未来展出之间的时间区别。不转载Getty图片、标志、外部链接内容或艺术作品。中文、词汇与口语练习为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 28 octobre 2026, le ministère de la Culture présente plusieurs activités proposées pendant les vacances scolaires en France.",
+      "zh": "2026年10月28日，法国文化部介绍了法国学校假期期间开展的多项活动。",
+      "glosses": [
+        {
+          "surface": "vacances",
+          "lemma": "vacances",
+          "zh": "假期"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Ces projets permettent de découvrir les arts dans des quartiers, des villages et aussi des lieux de soin.",
+      "zh": "这些项目让人们能够在街区、村庄以及医疗照护场所接触艺术。",
+      "glosses": [
+        {
+          "surface": "villages",
+          "lemma": "village",
+          "zh": "村庄"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "À Dinan, des enfants découvrent le tissage pendant cinq jours, à la Toussaint.",
+      "zh": "在迪南，孩子们在诸圣节假期期间用五天时间认识编织。",
+      "glosses": [
+        {
+          "surface": "tissage",
+          "lemma": "tissage",
+          "zh": "编织"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Ils visitent aussi l’atelier d’une artisane à Évran et réalisent chacun leur propre création.",
+      "zh": "他们还参观埃夫朗一位手工艺人的工作室，每人制作自己的作品。",
+      "glosses": [
+        {
+          "surface": "atelier",
+          "lemma": "atelier",
+          "zh": "工作室"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Ils participeront également à une œuvre collective qui sera ensuite exposée dans la ville.",
+      "zh": "他们也将参与制作一件集体作品，作品随后将在城里展出。",
+      "glosses": [
+        {
+          "surface": "collective",
+          "lemma": "collectif",
+          "zh": "集体的；此处阴性单数"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "À Toulouse, dans le quartier du Grand Mirail, une vingtaine d’enfants et de parents ont découvert une danse cet été.",
+      "zh": "在图卢兹的大米赖街区，今年夏天约二十名孩子和家长认识了一种舞蹈。",
+      "glosses": [
+        {
+          "surface": "parents",
+          "lemma": "parent",
+          "zh": "家长"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Pour pratiquer cette danse, appelée gumboot, ils ont mis des bottes en caoutchouc.",
+      "zh": "为了跳这种叫gumboot的舞，他们穿上了橡胶靴。",
+      "glosses": [
+        {
+          "surface": "bottes",
+          "lemma": "botte",
+          "zh": "靴子"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Avec un percussionniste, ils ont travaillé les gestes et le rythme avant de participer à un concert du quartier.",
+      "zh": "他们和一位打击乐手一起练习动作和节奏，然后参加街区的一场音乐会。",
+      "glosses": [
+        {
+          "surface": "rythme",
+          "lemma": "rythme",
+          "zh": "节奏"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Au Mans, d’autres activités arrivent dans des centres sociaux et dans le service des enfants à l’hôpital.",
+      "zh": "在勒芒，其他活动走进社会服务中心和医院的儿科。",
+      "glosses": [
+        {
+          "surface": "hôpital",
+          "lemma": "hôpital",
+          "zh": "医院"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Les participants peuvent découvrir des spectacles, mais aussi danser, chanter et produire des sons avec leur corps.",
+      "zh": "参与者可以欣赏演出，也可以跳舞、唱歌并用身体发出声音。",
+      "glosses": [
+        {
+          "surface": "chanter",
+          "lemma": "chanter",
+          "zh": "唱歌"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Ces exemples montrent que les vacances culturelles ne se passent pas seulement dans les musées : les habitants peuvent aussi créer ensemble.",
+      "zh": "这些例子表明，文化假期不仅发生在博物馆里：居民们也能够一起创作。",
+      "glosses": [
+        {
+          "surface": "ensemble",
+          "lemma": "ensemble",
+          "zh": "一起"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "tissage",
+        "lemma": "tissage",
+        "zh": "编织",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "atelier",
+        "lemma": "atelier",
+        "zh": "工作室",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "bottes",
+        "lemma": "botte",
+        "zh": "靴子",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "rythme",
+        "lemma": "rythme",
+        "zh": "节奏",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "hôpital",
+        "lemma": "hôpital",
+        "zh": "医院",
+        "sentenceId": "s9"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "pendant cinq jours",
+        "zh": "持续五天；pendant引出持续时间",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "avant de participer",
+        "zh": "在参加之前；avant de后接动词不定式",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "créer ensemble",
+        "zh": "一起创作",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "qui引导关系从句；sera exposée是将来时被动态，表示集体作品之后将展出，而不是已展出。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quelle activité aimerais-tu essayer pendant les vacances ?",
+        "zh": "假期里你想尝试哪项活动？"
+      },
+      {
+        "text": "Préfères-tu créer seul ou avec d’autres personnes ? Pourquoi ?",
+        "zh": "你更喜欢独自创作还是和别人一起？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "J’aimerais essayer le tissage.",
+        "zh": "我想尝试编织。",
+        "note": "原创口语示例，非原文引语。"
+      },
+      {
+        "text": "Je préfère créer avec d’autres personnes.",
+        "zh": "我更喜欢与其他人一起创作。",
+        "note": "原创表达，可替换动词。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "id": "2026-10-29-en-safer-discussions-at-school",
+  "storyId": "dfe-school-antisemitism-response-2026-10-21",
+  "lang": "en",
+  "date": "2026-10-29",
+  "category": "education",
+  "topics": [
+    "校园安全",
+    "讨论与尊重"
+  ],
+  "title": "Support for safer schools",
+  "titleZh": "为更安全的学校提供支持",
+  "summaryZh": "英国教育部门宣布教师培训、事件记录与后续检查等措施；这些是已公布的安排，不等于问题已经解决。",
+  "level": "A2",
+  "levelReason": "编辑估计A2上段：以学校支持措施为主，主要使用现在时和will；少量政策及社会议题词配词义和逐句中文辅助。不是无需辅助即可轻松阅读的入门文本。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Education / GOV.UK",
+    "title": "“Generational moment” as government acts on landmark antisemitism review",
+    "url": "https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
+    "publishedAt": "2026-10-21",
+    "lang": "en",
+    "author": "Department for Education; The Rt Hon Lucy Powell MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Education; The Rt Hon Lucy Powell MP; 2026-10-21; https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review",
+  "adaptation": "2026-10-29整理：依据机构2026-10-21英文公告进行同语言分级改写，添加中文译文、词义和原创练习。非逐字原文或官方课程；公布的措施不代表实施成效已经验证。不使用图片、标志、直接引语、个人案例或外部报告文本；不暗示机构认可。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 21 October 2026, the UK government announced new support for schools and colleges to deal with antisemitism.",
+      "zh": "2026年10月21日，英国政府宣布提供新支持，帮助学校和学院应对反犹主义。",
+      "glosses": [
+        {
+          "surface": "antisemitism",
+          "lemma": "antisemitism",
+          "zh": "反犹主义",
+          "note": "针对犹太人的仇恨、偏见或歧视。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Antisemitism means hatred or unfair treatment of Jewish people.",
+      "zh": "反犹主义指对犹太人的仇恨或不公正对待。",
+      "glosses": [
+        {
+          "surface": "hatred",
+          "lemma": "hatred",
+          "zh": "仇恨"
+        },
+        {
+          "surface": "unfair treatment",
+          "lemma": "unfair treatment",
+          "zh": "不公正对待"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "A new independent report made 27 suggestions, and the government agreed to follow all of them.",
+      "zh": "一份新的独立报告提出了27项建议，政府同意全部采纳。",
+      "glosses": [
+        {
+          "surface": "independent",
+          "lemma": "independent",
+          "zh": "独立的"
+        },
+        {
+          "surface": "suggestions",
+          "lemma": "suggestion",
+          "zh": "建议"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "School leaders and staff responsible for keeping children safe will receive special training.",
+      "zh": "学校领导和负责儿童安全的工作人员将接受专门培训。",
+      "glosses": [
+        {
+          "surface": "training",
+          "lemma": "training",
+          "zh": "培训"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "New resources will help staff recognise antisemitism and respond to it.",
+      "zh": "新资源将帮助工作人员识别反犹主义并作出回应。",
+      "glosses": [
+        {
+          "surface": "recognise",
+          "lemma": "recognise",
+          "zh": "识别"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Schools will also get clearer guidance about political discussions and the safety of young people.",
+      "zh": "学校还将获得关于政治讨论和青少年安全的更明确指导。",
+      "glosses": [
+        {
+          "surface": "guidance",
+          "lemma": "guidance",
+          "zh": "指导"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Another part of the plan is to improve how schools report and record antisemitic incidents.",
+      "zh": "计划的另一部分是改进学校报告和记录反犹主义事件的方式。",
+      "glosses": [
+        {
+          "surface": "record",
+          "lemma": "record",
+          "zh": "记录"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Schools and colleges dealing with difficult cases will get more help and advice.",
+      "zh": "遇到复杂情况的学校和学院将获得更多帮助与建议。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Schools will also get help with teaching students about Jewish people and their lives.",
+      "zh": "学校还将获得支持，帮助学生了解犹太人及其生活。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "A group will help put the suggestions into practice and check how the work is going.",
+      "zh": "一个小组将帮助落实这些建议，并检查工作进展。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Sir David Bell, who led the review, will look at progress again after one year.",
+      "zh": "主持这次评估的戴维·贝尔爵士将在一年后再次评估进展。",
+      "glosses": [
+        {
+          "surface": "progress",
+          "lemma": "progress",
+          "zh": "进展"
+        },
+        {
+          "surface": "review",
+          "lemma": "review",
+          "zh": "评估"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "training",
+        "lemma": "training",
+        "zh": "培训",
+        "sentenceId": "s4",
+        "note": "receive training表示接受培训；training在这里是不可数名词。"
+      },
+      {
+        "text": "recognise",
+        "lemma": "recognise",
+        "zh": "识别",
+        "sentenceId": "s5",
+        "note": "help staff recognise…表示帮助工作人员识别……，用动词原形。"
+      },
+      {
+        "text": "guidance",
+        "lemma": "guidance",
+        "zh": "指导",
+        "sentenceId": "s6",
+        "note": "guidance为不可数名词，clearer guidance指更明确的指导。"
+      },
+      {
+        "text": "record",
+        "lemma": "record",
+        "zh": "记录",
+        "sentenceId": "s7",
+        "note": "report and record表示报告并记录；and连接两个动词。"
+      },
+      {
+        "text": "progress",
+        "lemma": "progress",
+        "zh": "进展",
+        "sentenceId": "s11",
+        "note": "look at progress指查看进展；不是再次开始这项工作。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "deal with",
+        "zh": "应对；处理",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "put the suggestions into practice",
+        "zh": "把建议付诸实践",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "who led the review补充说明人物身份；will表示未来安排，不是已完成的检查。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What helps students feel safe when they discuss difficult topics?",
+        "zh": "讨论困难话题时，什么能让学生感到安全？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "It helps when everyone has time to speak.",
+        "zh": "每个人都有时间发言时，会有帮助。",
+        "note": "原创讨论表达，不是公告中的事实或引语。"
+      }
+    ]
+  }
+}
