@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-30-fr-preserver-un-lieu-et-sa-place",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle relation l’article établit-il entre la protection et la rénovation ?",
+      "promptZh": "文章说明保护与翻修之间有怎样的关系？",
+      "options": [
+        "La rénovation remplace les activités culturelles par des bureaux.",
+        "La protection reporte les transformations à une date inconnue.",
+        "La rénovation adapte les usages en conservant l’architecture reconnue.",
+        "La protection concerne la place plutôt que le bâtiment du musée."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7",
+        "s9",
+        "s15",
+        "s16"
+      ],
+      "explanationZh": "s9说翻修要尊重建筑，s15–s16说明适应需求与保留文化使命并行；不是取消改造、改成办公楼或只保护广场。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "À quelle étape correspond l’année 2025 dans le texte ?",
+      "promptZh": "文中的2025年对应哪个阶段？",
+      "options": [
+        "À la fermeture du bâtiment.",
+        "À son inscription comme monument historique.",
+        "À sa première ouverture au public.",
+        "À sa réouverture après les travaux."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s4",
+        "s10"
+      ],
+      "explanationZh": "s10明确建筑自2025年关闭；s4的初次开放为1977年，s2的保护决定为2026年10月23日，重开计划为2030年。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Que représente la baisse de consommation d’énergie de 40 % ?",
+      "promptZh": "能源消耗下降40%代表什么？",
+      "options": [
+        "Un résultat constaté au moment de la fermeture.",
+        "Une évolution mesurée depuis l’ouverture du centre.",
+        "Une condition déjà remplie pour obtenir la protection.",
+        "Un objectif du chantier de rénovation annoncé."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "s11使用vise（旨在），s12明确这是目标，不是已测量或已实现的结果，也不是取得保护身份的既成条件。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Comment Ove Arup & Partners a-t-il participé au projet initial ?",
+      "promptZh": "Ove Arup & Partners如何参与最初的项目？",
+      "options": [
+        "En dirigeant la Bibliothèque publique d’information.",
+        "En décidant de la protection comme monument historique.",
+        "En apportant son travail d’ingénierie avec les architectes.",
+        "En fixant le calendrier de la réouverture en 2030."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "s5将Ove Arup & Partners列为与三位建筑师合作的工程事务所；图书馆、2026年的保护决定及2030计划属于文中其他环节。"
+    }
+  ]
+}

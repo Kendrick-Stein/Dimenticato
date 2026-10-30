@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-30-it-un-campus-aperto-al-territorio",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Che cosa si aggiungerà al campus di Grottaminarda?",
+      "options": [
+        "Una rete di sei centri turistici nel Sud.",
+        "Una rete di sei luoghi di ricerca nel Paese.",
+        "Una rete di sette residenze per gli studenti.",
+        "Una rete di ventinove musei delle imprese."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "s6明确新增一张由全国不同地区六个研究地点组成的网络；七和二十九分别属于s3的科研机构与企业数量，不是住所或博物馆。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "A chi è destinata la residenza prevista?",
+      "options": [
+        "A studenti e ricercatori italiani e stranieri.",
+        "A turisti e famiglie in visita al campus.",
+        "A insegnanti e studenti delle scuole locali.",
+        "A dipendenti e clienti delle imprese partner."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "s8明确住所面向意大利和外国的学生与研究人员；其余人群没有被列为该住所的对象。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quale attività è associata allo StemLab?",
+      "options": [
+        "La vendita degli strumenti alle imprese.",
+        "La gestione della residenza universitaria.",
+        "Il monitoraggio dei terremoti nei sei luoghi.",
+        "La scoperta della scienza attraverso esperienze."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "s9将StemLab定义为通过体验传播科学的文化空间；仪器、住所和研究网络属于文中其他安排，未被说成StemLab的职能。"
+    }
+  ]
+}

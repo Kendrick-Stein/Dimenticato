@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-10-30",
+  "status": "PASS_TEXT_AND_METADATA",
+  "review": {
+    "status": "PASS_FOR_LINKS_AND_TEXT_EVIDENCE_ONLY",
+    "entriesSha256": "65262cf07ad188fce64a77e5e3aed9ecce81764bea8d352e4557ba91e5cfb113",
+    "scope": "Outbound official whole-page links plus original brief teaching content; no media/transcript/publisher exercises/images copied, no embedding. Not a blanket republication licence.",
+    "entries": [
+      {
+        "id": "it-rai-mercato-a2",
+        "status": "PASS",
+        "source": "Official Rai Scuola full Sketch A independently read; heading A2; lines598 peach2.50/kg,603 salad6etti,698-703 eggs on top avoidbreak.",
+        "answers": [
+          1,
+          2,
+          0
+        ],
+        "date": "Undated evergreen; URL date not represented as publication.",
+        "limits": "No playback/audio-quality verification."
+      },
+      {
+        "id": "en-bc-four-conversations-a2",
+        "status": "PASS",
+        "source": "Official full A-D transcript independently read: A19-30 interview result, B35-52 photo crowd, D85-108 four-person limit; A2 publisher level.",
+        "answers": [
+          2,
+          1,
+          3
+        ],
+        "rights": "https://www.britishcouncil.org/terms section14 lines164-168 permits free whole-service text links; no general reproduction grant claimed. Original questions, no publisher exercises/transcript copied.",
+        "date": "Undated evergreen; comments not publication dates.",
+        "limits": "No playback/audio-quality verification."
+      },
+      {
+        "id": "de-logo-2026-10-29",
+        "status": "PASS_METADATA_RESOURCE_ONLY",
+        "source": "Official page lines39-43 date29Oct2026/19:50 and school/Halloween/spiders topics; https://www.logo.de/ lines58-60 and210-2129:59.",
+        "rights": "https://www.zdf.de/nutzungsbedingungen22-33 prohibits reproduction without consent and constrains embedding; this draft only whole-page link plus brief original guide, no media/embedding.",
+        "questions": 0,
+        "level": "Native-child programme explicitly not CEFR/A2; thematic vocabulary not claimed heard.",
+        "limits": "No transcript or playback/audio-quality verification."
+      }
+    ],
+    "frOmitted": "Author stopped new TV5 derivation after current terms check. Not independently re-read by this reviewer; not included in proposed final files."
+  },
+  "sourceChecks": {
+    "checkedAt": "2026-10-30",
+    "status": "PASS_INDEPENDENT_REVIEW",
+    "entriesSha256": "65262cf07ad188fce64a77e5e3aed9ecce81764bea8d352e4557ba91e5cfb113",
+    "scope": "Official full-page outbound links and original short teaching additions only; no media, transcript, publisher exercises or images reproduced. No embedding or playback claims.",
+    "entries": [
+      {
+        "id": "it-rai-mercato-a2",
+        "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Benvenuti-in-Italia---16-b76332f5-2d62-4e0e-b3d0-ce1cc4ed4535.html",
+        "date": "No explicit original publication date; URL year/month not used. Evergreen lesson.",
+        "level": "Official heading Unità 1 - Livello A2 and page tags",
+        "evidence": [
+          {
+            "question": "it-mercato-1",
+            "location": "Sketch A, lines596–598: peach price"
+          },
+          {
+            "question": "it-mercato-2",
+            "location": "Sketch A line603: red and green salad quantities"
+          },
+          {
+            "question": "it-mercato-3",
+            "location": "Sketch A lines698–703: eggs placed above to avoid breakage"
+          }
+        ],
+        "media": "Official Rai Scuola lesson page; transcript read, playback not tested."
+      },
+      {
+        "id": "de-logo-2026-10-29",
+        "url": "https://www.logo.de/logo-vom-donnerstag-29-oktober-2026-102.html",
+        "date": "29.10.2026 19:50 page line41",
+        "level": "No CEFR claim",
+        "evidence": "Programme topics line43; homepage https://www.logo.de/ lines58–60 supplies9:59 duration; no transcript, questions empty.",
+        "rightsUrl": "https://www.zdf.de/nutzungsbedingungen"
+      },
+      {
+        "id": "en-bc-four-conversations-a2",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/four-conversations",
+        "date": "Original publication not shown; comments not publication metadata; evergreen.",
+        "level": "A2 Pre-intermediate page line129",
+        "evidence": "Official transcript A19–30, B35–52, D85–108; original tasks not opened or copied.",
+        "rightsUrl": "https://www.britishcouncil.org/terms",
+        "rightsEvidence": "Sections10 and14: no general reproduction/adaptation grant; free full-service text links generally permitted. No raw media link or embedding."
+      }
+    ],
+    "deduplication": "All three proposed canonical URLs and IDs absent in fresh main aedcf692 catalog. Coordinator must refresh before publish.",
+    "notSelected": [
+      {
+        "url": "https://www.logo.de/sternekoch-jonas-102.html",
+        "reason": "Homepage recirculates 2026-08-27 clip; selected genuinely recent Oct29 programme instead."
+      },
+      {
+        "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/astuces-pour-apprendre-la-bande-annonce",
+        "reason": "Stopped new content derivation after checking official current CGU sections6/7 restricting AI-generated uses. No new FR entry proposed; no historical entries altered.",
+        "rightsUrl": "https://www.tv5monde.com/la-chaine/conditions-generales-d-utilisation",
+        "locator": "paragraph before7 and7.1; lines55,64–65"
+      }
+    ],
+    "limits": [
+      "Independent source/question review pending",
+      "Actual audio/video playback not tested",
+      "DE resource-only",
+      "FR checked but omitted due official terms boundary",
+      "No separate listening source registry exists; existing providers reused with article-level checks"
+    ]
+  }
+}

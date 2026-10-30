@@ -1,0 +1,307 @@
+{
+  "schema": 1,
+  "id": "2026-10-30-fr-preserver-un-lieu-et-sa-place",
+  "storyId": "culture-gouv-pompidou-protection-2026-10-29",
+  "lang": "fr",
+  "date": "2026-10-30",
+  "title": "Préserver un lieu et sa place",
+  "titleZh": "保护一座建筑，也保护它的广场",
+  "summaryZh": "蓬皮杜中心及其广场获得历史建筑保护。翻修计划如何在传承建筑与适应新需求之间取得联系？",
+  "level": "B1",
+  "levelReason": "编辑估计B1：围绕城市文化空间连接历史与未来，包含复合过去时、被动态、关系从句、目的与让步关系；专业保护术语配逐句中文与词义说明。",
+  "category": "culture",
+  "topics": [
+    "城市空间",
+    "文化遗产",
+    "建筑翻修"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "À Paris, le Centre Pompidou inscrit aux monuments historiques",
+    "url": "https://www.culture.gouv.fr/actualites/a-paris-le-centre-pompidou-inscrit-aux-monuments-historiques",
+    "publishedAt": "2026-10-29",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "机构作者：Ministère de la Culture（法国文化部），原文2026-10-29，题名及直接链接见来源。文化部法律声明II.4.3.1(a)将机构文字以CC BY-SA 3.0 FR提供，合作方内容另依II.4.3.2处理。本法语分级改写、中文翻译及原创教学补充由Dimenticato于2026-10-30整理，以同一许可提供，不表示原机构认可。",
+  "adaptation": "同语言分级改写，不是原文全文。仅使用文化部机构叙述；不转载AFP及其他图片、标志、部长引语或外链活动报告中的访客统计。区分1977年开放、2025年关闭、2026年保护决定和计划2030年重开；减少能耗40%是施工目标而非已实现效果。第12句为基于原文时态的编辑澄清，词义、口语和题目为教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 29 octobre 2026, le ministère de la Culture annonce une nouvelle étape pour le Centre Pompidou, à Paris.",
+      "zh": "2026年10月29日，法国文化部宣布巴黎蓬皮杜中心迎来一个新阶段。",
+      "glosses": [
+        {
+          "surface": "étape",
+          "lemma": "étape",
+          "zh": "阶段"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Le bâtiment et sa Piazza, la place située devant lui, ont été inscrits au titre des monuments historiques le 23 octobre.",
+      "zh": "这座建筑及其前方称为Piazza的广场于10月23日被列入历史建筑名录。",
+      "glosses": [
+        {
+          "surface": "place",
+          "lemma": "place",
+          "zh": "广场"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Cette décision reconnaît la valeur de son architecture, mais aussi la relation entre le centre et l’espace public qui l’entoure.",
+      "zh": "这一决定认可其建筑价值，也认可中心与周围公共空间之间的关系。",
+      "glosses": [
+        {
+          "surface": "entoure",
+          "lemma": "entourer",
+          "zh": "环绕；这里为第三人称单数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Quand le Centre Pompidou a ouvert en 1977, sa construction très différente des bâtiments traditionnels a provoqué de fortes réactions.",
+      "zh": "蓬皮杜中心于1977年开放时，其与传统建筑截然不同的构造引发了强烈反响。",
+      "glosses": [
+        {
+          "surface": "construction",
+          "lemma": "construction",
+          "zh": "建筑构造"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Renzo Piano, Richard Rogers et Gianfranco Franchini l’ont conçu avec le bureau d’ingénierie Ove Arup & Partners.",
+      "zh": "伦佐·皮亚诺、理查德·罗杰斯和詹弗兰科·弗兰基尼与Ove Arup & Partners工程事务所共同设计了它。",
+      "glosses": [
+        {
+          "surface": "conçu",
+          "lemma": "concevoir",
+          "zh": "设计；过去分词"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Le projet a également contribué à transformer le quartier autour du centre, au cœur de la capitale.",
+      "zh": "这一项目也帮助改变了首都市中心蓬皮杜中心周边的街区。",
+      "glosses": [
+        {
+          "surface": "quartier",
+          "lemma": "quartier",
+          "zh": "街区"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Aujourd’hui, la protection concerne donc un ensemble : le bâtiment, ses choix architecturaux et son lien avec la place.",
+      "zh": "因此，如今的保护针对的是一个整体：建筑、其建筑设计理念以及它与广场的联系。",
+      "glosses": [
+        {
+          "surface": "ensemble",
+          "lemma": "ensemble",
+          "zh": "整体"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Il s’agit de conserver cet héritage pour pouvoir le transmettre, et pas seulement de reconnaître l’importance d’un musée.",
+      "zh": "目的是保存这份遗产，使之能够传承下去，而不仅仅是认可一家博物馆的重要性。",
+      "glosses": [
+        {
+          "surface": "héritage",
+          "lemma": "héritage",
+          "zh": "遗产"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Cette protection accompagne le projet « Centre Pompidou 2030 », qui prévoit une rénovation importante tout en respectant l’architecture du lieu.",
+      "zh": "这项保护与“蓬皮杜中心2030”项目相呼应；该项目计划在尊重场所建筑特色的同时进行大规模翻修。",
+      "glosses": [
+        {
+          "surface": "rénovation",
+          "lemma": "rénovation",
+          "zh": "翻修"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Le bâtiment est fermé depuis 2025 et sa réouverture est prévue pour 2030 ; cette date reste celle du calendrier annoncé.",
+      "zh": "这座建筑自2025年起关闭，计划于2030年重新开放；这一日期仍是公布的计划时间。",
+      "glosses": [
+        {
+          "surface": "réouverture",
+          "lemma": "réouverture",
+          "zh": "重新开放"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Le chantier vise notamment à diminuer la consommation d’énergie de 40 % et à faciliter l’accès aux personnes à mobilité réduite.",
+      "zh": "施工特别旨在将能源消耗减少40%，并让行动不便人士更容易进入和使用场所。",
+      "glosses": [
+        {
+          "surface": "consommation",
+          "lemma": "consommation",
+          "zh": "消耗"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Ce sont des objectifs du projet : l’article ne présente pas cette baisse de consommation comme un résultat déjà obtenu.",
+      "zh": "这些是项目目标：原报道并未将这种能耗下降描述为已经取得的成果。",
+      "glosses": [
+        {
+          "surface": "objectifs",
+          "lemma": "objectif",
+          "zh": "目标；复数"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Dès son ouverture, le Centre Pompidou a réuni plusieurs activités culturelles, au-delà de la seule présentation d’œuvres dans un musée.",
+      "zh": "自开放之初，蓬皮杜中心就汇集了多种文化活动，而不仅仅是在博物馆内展示作品。",
+      "glosses": [
+        {
+          "surface": "œuvres",
+          "lemma": "œuvre",
+          "zh": "作品；复数"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "L’information et la lecture y occupent une place importante, notamment avec la Bibliothèque publique d’information.",
+      "zh": "信息与阅读在这里占据重要位置，公共信息图书馆尤其体现了这一点。",
+      "glosses": [
+        {
+          "surface": "lecture",
+          "lemma": "lecture",
+          "zh": "阅读"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Les nouveaux espaces doivent répondre aux besoins de la société tout en gardant cette diversité culturelle et cette vocation de lieu de rencontre.",
+      "zh": "新空间要回应社会需求，同时保留文化多样性和作为相聚场所的使命。",
+      "glosses": [
+        {
+          "surface": "rencontre",
+          "lemma": "rencontre",
+          "zh": "相聚；会面"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Le projet associe ainsi deux intentions : préserver une architecture reconnue et adapter les espaces aux usages d’aujourd’hui.",
+      "zh": "因此，这个项目结合了两个意图：保护一处受到认可的建筑，并使空间适应当今的使用需求。",
+      "glosses": [
+        {
+          "surface": "préserver",
+          "lemma": "préserver",
+          "zh": "保护；保存"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "quartier",
+        "lemma": "quartier",
+        "zh": "街区",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "héritage",
+        "lemma": "héritage",
+        "zh": "遗产",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "rénovation",
+        "lemma": "rénovation",
+        "zh": "翻修",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "réouverture",
+        "lemma": "réouverture",
+        "zh": "重新开放",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "consommation",
+        "lemma": "consommation",
+        "zh": "消耗",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "au cœur de la capitale",
+        "zh": "在首都中心；au cœur de表示位于……核心。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "tout en respectant",
+        "zh": "同时尊重；tout en + 现在分词连接同时进行的动作。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "est prévue pour 2030",
+        "zh": "计划于2030年进行；强调安排，而非已经完成。",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s16",
+        "note": "associer deux intentions把两个目标联系起来；冒号后用两个不定式préserver和adapter平行展开。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Dans ta ville, quel bâtiment aimerais-tu préserver ? Pourquoi ?",
+        "zh": "在你的城市，你想保护哪座建筑？为什么？"
+      },
+      {
+        "text": "Qu’est-ce qui rend une place agréable pour se rencontrer ?",
+        "zh": "哪些因素能让广场成为适合相聚的地方？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Je voudrais garder son architecture, tout en améliorant son accès.",
+        "zh": "我想保留它的建筑特色，同时改善通行条件。",
+        "note": "原创口语示例，不是原文引语。"
+      },
+      {
+        "text": "Pour moi, une place fait partie de la vie du quartier.",
+        "zh": "对我来说，广场是街区生活的一部分。",
+        "note": "原创讨论表达，可替换place和quartier。"
+      }
+    ]
+  }
+}

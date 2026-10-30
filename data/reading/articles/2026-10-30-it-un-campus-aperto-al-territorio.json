@@ -1,0 +1,235 @@
+{
+  "schema": 1,
+  "id": "2026-10-30-it-un-campus-aperto-al-territorio",
+  "storyId": "ingv-georeal-2026-10-21",
+  "lang": "it",
+  "date": "2026-10-30",
+  "title": "Un campus aperto al territorio",
+  "titleZh": "连接科研、培训与社区的园区计划",
+  "summaryZh": "GEOREAL计划把实验室、培训中心、学生住所和科学体验空间联系起来，关注意大利南部的能力建设。",
+  "level": "A2",
+  "levelReason": "编辑估计A2偏上：围绕校园、学习和住所等具体内容，以现在时和将来时介绍计划；科研机构和设施词汇提供逐句中文及词义支持。",
+  "category": "education",
+  "topics": [
+    "大学与职业培训",
+    "社区科普",
+    "科研设施"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INGV",
+    "title": "INGV IRPINIA | Al via il progetto GEOREAL per potenziare le Geoscienze nel Mezzogiorno",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/ingv-irpinia-al-via-il-progetto-georeal-per-potenziare-le-geoscienze-nel-mezzogiorno",
+    "publishedAt": "2026-10-21",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "机构作者：Istituto Nazionale di Geofisica e Vulcanologia（INGV）；原文2026-10-21，题名及直接链接见来源。原页页脚明确CC BY 4.0。Dimenticato于2026-10-30作同语言分级改写、中文翻译及原创教学补充；标注修改，不表示INGV认可。",
+  "adaptation": "依据意大利语机构新闻改写，非原文全文。重点保留教育与社区用途；资金、时长及设施均按原报道的项目计划表述，不把目标当成已实现成果。排除图片、图注、标志、活动附件及其他外链作品。末句为依据来源时态作出的编辑说明，不是额外实地核查。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il progetto GEOREAL dell’INGV vuole collegare la ricerca, la formazione e le imprese, con particolare attenzione al Sud Italia.",
+      "zh": "INGV的GEOREAL项目希望把科研、培训和企业联系起来，尤其关注意大利南部。",
+      "glosses": [
+        {
+          "surface": "imprese",
+          "lemma": "impresa",
+          "zh": "企业"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "La notizia del 21 ottobre 2026 presenta un programma di trenta mesi, con un investimento previsto di circa venticinque milioni di euro.",
+      "zh": "2026年10月21日的报道介绍了一项为期三十个月的计划，预计投资约两千五百万欧元。",
+      "glosses": [
+        {
+          "surface": "previsto",
+          "lemma": "prevedere",
+          "zh": "预计的"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Il progetto coinvolge sette enti scientifici e ventinove imprese che lavorano con tecnologie avanzate.",
+      "zh": "该项目涉及七家科研机构和二十九家从事先进技术工作的企业。",
+      "glosses": [
+        {
+          "surface": "coinvolge",
+          "lemma": "coinvolgere",
+          "zh": "涉及"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "A Grottaminarda è previsto un campus con nuovi laboratori per studiare la Terra e l’ambiente.",
+      "zh": "计划在格罗塔米纳尔达建设一座园区，内设研究地球和环境的新实验室。",
+      "glosses": [
+        {
+          "surface": "laboratori",
+          "lemma": "laboratorio",
+          "zh": "实验室"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "I ricercatori avranno, per esempio, una vasca per prove sott’acqua e strumenti per osservare terremoti e vulcani.",
+      "zh": "例如，研究人员将有用于水下测试的水池，以及观测地震和火山的仪器。",
+      "glosses": [
+        {
+          "surface": "strumenti",
+          "lemma": "strumento",
+          "zh": "仪器"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Al campus si aggiungerà una rete di sei luoghi di ricerca in diverse parti del territorio nazionale.",
+      "zh": "除园区外，还将有一个由全国不同地区六处研究地点组成的网络。",
+      "glosses": [
+        {
+          "surface": "rete",
+          "lemma": "rete",
+          "zh": "网络"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Ma GEOREAL non riguarda soltanto gli strumenti: comprende anche un centro di formazione chiamato Academy.",
+      "zh": "但GEOREAL不仅关乎仪器，还包括一个名为Academy的培训中心。",
+      "glosses": [
+        {
+          "surface": "formazione",
+          "lemma": "formazione",
+          "zh": "培训"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Per l’Academy sono previsti percorsi universitari e professionali, insieme a una residenza per studenti e ricercatori italiani e stranieri.",
+      "zh": "Academy计划提供大学层次和职业培训，并为意大利及外国学生和研究人员配备住所。",
+      "glosses": [
+        {
+          "surface": "residenza",
+          "lemma": "residenza",
+          "zh": "住所"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Il progetto prevede anche lo StemLab, uno spazio culturale aperto al territorio per conoscere la scienza attraverso esperienze.",
+      "zh": "项目还计划设立StemLab，一个面向当地社区开放、让人们通过体验了解科学的文化空间。",
+      "glosses": [
+        {
+          "surface": "territorio",
+          "lemma": "territorio",
+          "zh": "当地社区；地区"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Queste strutture fanno parte del programma annunciato: la notizia presenta gli obiettivi, non i risultati di un campus già completato.",
+      "zh": "这些设施属于已公布的计划：报道介绍的是目标，而不是一座已建成园区的成果。",
+      "glosses": [
+        {
+          "surface": "obiettivi",
+          "lemma": "obiettivo",
+          "zh": "目标"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "imprese",
+        "lemma": "impresa",
+        "zh": "企业",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "laboratori",
+        "lemma": "laboratorio",
+        "zh": "实验室",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "strumenti",
+        "lemma": "strumento",
+        "zh": "仪器",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "residenza",
+        "lemma": "residenza",
+        "zh": "住所",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "obiettivi",
+        "lemma": "obiettivo",
+        "zh": "目标",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "con particolare attenzione al",
+        "zh": "尤其关注；a与il合并为al",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "per esempio",
+        "zh": "例如",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "non riguarda soltanto",
+        "zh": "不仅关乎；non…soltanto表示“不仅”",
+        "sentenceId": "s7"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "sono previsti表示“计划有、预计有”；说明安排，不能据此断言课程或住所已经投入使用。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Vorresti vivere vicino al luogo dove studi? Perché?",
+        "zh": "你愿意住在学习地点附近吗？为什么？"
+      },
+      {
+        "text": "Quale esperienza scientifica vorresti fare in uno spazio aperto al pubblico?",
+        "zh": "你想在面向公众的空间里参加哪种科学体验？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mi piacerebbe conoscere meglio la scienza.",
+        "zh": "我想更好地了解科学。",
+        "note": "原创口语示例，不是报道结论。"
+      },
+      {
+        "text": "Per me è utile avere un alloggio vicino alla scuola.",
+        "zh": "对我来说，在学校附近有住所很有用。",
+        "note": "原创观点表达。"
+      }
+    ]
+  }
+}

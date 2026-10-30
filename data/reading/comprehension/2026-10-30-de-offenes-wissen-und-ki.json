@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-30-de-offenes-wissen-und-ki",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welche Entwicklung beschreibt der Text?",
+      "promptZh": "文章描述了哪一种发展？",
+      "options": [
+        "Creative Commons erweitert vor allem Empfehlungen für die Nennung von Quellen.",
+        "Creative Commons verbessert vor allem die Suche in digitalen Sammlungen.",
+        "Creative Commons sucht stärkere Bedingungen für große automatische Abrufe.",
+        "Creative Commons verbreitet vor allem vorhandene Muster für Nutzungsverträge."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s7",
+        "s8",
+        "s11"
+      ],
+      "explanationZh": "s3、s7–s8描述大规模抓取的负担，以及更有力访问条件的探索；本文重点不是扩写署名建议、改进检索或推广现成合同范本。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Warum wurde nach dem Bericht eine stärkere Lösung gefordert?",
+      "promptZh": "据报道，为什么有人要求更有力的解决方式？",
+      "options": [
+        "Die ersten Signale allein machten Wünsche noch nicht verbindlich.",
+        "Die ersten Signale waren technisch zu schwierig umzusetzen.",
+        "Die ersten Signale unterstützten nur ein bestimmtes Dateiformat.",
+        "Die ersten Signale nannten keine Preise für die Nutzung."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "s6指出最初信号本身不能把意愿变成约束性规则，s7用deshalb连接社群要求更强方案的原因；其他解释均没有文章支持。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Wofür suchte Creative Commons eine kleine Gruppe von Einrichtungen?",
+      "promptZh": "Creative Commons为什么寻找一小组机构？",
+      "options": [
+        "Sie sollten die bisherigen CC-Lizenzen gemeinsam ersetzen.",
+        "Sie sollten eine fertige technische Kontrolle gemeinsam verwalten.",
+        "Sie sollten verbindliche Regeln für alle Museen gemeinsam beschließen.",
+        "Sie sollten das neue Werkzeug gemeinsam mitentwickeln."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "s10明确寻找一小组机构共同开发工具；s11说明工具尚未完成，因此不是共同管理已完成系统。s4也排除了替代现有CC许可的说法。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Welche Unterscheidung ist für Racks Sorge besonders wichtig?",
+      "promptZh": "哪种区分对理解Rack所担忧的问题尤其重要？",
+      "options": [
+        "Zwischen Sammlungen mit Bildern und Sammlungen mit wissenschaftlichen Texten.",
+        "Zwischen massenhaften Abrufen und dem Zugang zu einzelnen Inhalten.",
+        "Zwischen technischen Problemen von Museen und technischen Problemen von Archiven.",
+        "Zwischen Quellenangaben in Büchern und Quellenangaben auf Museumsplakaten."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "s12把大规模自动抓取与单个内容访问对比，s13强调机器利用并非目的相同。因此他的担忧是保护措施不应不加区分地妨碍合理访问。"
+    }
+  ]
+}

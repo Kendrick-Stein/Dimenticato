@@ -1982,6 +1982,203 @@
           "explanationZh": "顾客现金付款后，店员说明找零金额并交给顾客收据。"
         }
       ]
+    },
+    {
+      "id": "it-rai-mercato-a2",
+      "lang": "it",
+      "title": "Benvenuti in Italia – 16: Una frittata speciale",
+      "titleZh": "逛市场：价格、分量与购物篮",
+      "provider": "Rai Scuola",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Benvenuti-in-Italia---16-b76332f5-2d62-4e0e-b3d0-ce1cc4ed4535.html",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "evidenceStatus": "official_transcript",
+      "addedAt": "2026-10-30",
+      "questions": [
+        {
+          "id": "it-mercato-1",
+          "prompt": "Quanto costano le pesche al chilo?",
+          "options": [
+            "Due euro.",
+            "Due euro e cinquanta.",
+            "Cinque euro.",
+            "Nove euro."
+          ],
+          "answerIndex": 1,
+          "explanationZh": "摊主报出的桃子每公斤价格为2.50欧元，勿与草莓或总价混淆。",
+          "evidenceRef": "sketch-a-peaches-price",
+          "promptZh": "桃子每公斤多少钱？"
+        },
+        {
+          "id": "it-mercato-2",
+          "prompt": "Quanta insalata compra Marcia?",
+          "options": [
+            "Tre etti in tutto.",
+            "Un chilo in tutto.",
+            "Sei etti in tutto.",
+            "Due chili in tutto."
+          ],
+          "answerIndex": 2,
+          "explanationZh": "她要两种颜色的生菜各300克，共600克。",
+          "evidenceRef": "sketch-a-salad-quantity",
+          "promptZh": "Marcia 买多少生菜？"
+        },
+        {
+          "id": "it-mercato-3",
+          "prompt": "Perché Marcia mette le uova sopra la spesa?",
+          "options": [
+            "Per evitare che si rompano.",
+            "Per mostrarle al vigile.",
+            "Per contarle durante il viaggio.",
+            "Per lasciarle a Pauline."
+          ],
+          "answerIndex": 0,
+          "explanationZh": "她解释鸡蛋应放在上面，否则会破；这不代表后来运输成功。",
+          "evidenceRef": "sketch-a-eggs-basket",
+          "promptZh": "她为什么把鸡蛋放在购物物品上面？"
+        }
+      ],
+      "summaryZh": "从本集第一个短剧练习听出水果价格、分量和购物时的对话。",
+      "guideZh": "本次只练本集第一个短剧 Una frittata speciale。先辨认买卖双方，再记录价格与数量；最后留意购物篮出了什么问题。其余短剧可自由选听。这是常青语言课程，不是当天新闻。",
+      "verificationZh": "已核对官方第一个短剧文字稿；原始发布日期未明示，不以网址年月代替。未实测媒体播放或音质。",
+      "vocabulary": [
+        {
+          "text": "pesche",
+          "zh": "桃子（复数）"
+        },
+        {
+          "text": "un etto",
+          "zh": "一百克"
+        },
+        {
+          "text": "insalata",
+          "zh": "生菜；沙拉（依语境）"
+        },
+        {
+          "text": "le uova",
+          "zh": "鸡蛋（复数）"
+        }
+      ]
+    },
+    {
+      "id": "de-logo-2026-10-29",
+      "lang": "de",
+      "title": "logo! vom Donnerstag, 29. Oktober 2026",
+      "titleZh": "10月29日儿童新闻：学校与万圣节",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-donnerstag-29-oktober-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "evidenceStatus": "metadata_only",
+      "addedAt": "2026-10-30",
+      "questions": [],
+      "sourcePublishedAt": "2026-10-29",
+      "duration": "9:59",
+      "summaryZh": "选听学校问题、万圣节期待等话题，练习跟上新闻中的主题切换。",
+      "guideZh": "不必一次听完整集。可先挑学校或万圣节话题，记录听懂的关键词，再重听一小段。节目面向德语母语儿童，不等同于A2。",
+      "verificationZh": "已核对官方节目日期、主题和首页时长；没有可核验的对应逐字稿，未实测播放或音质，暂不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "die Schule",
+          "zh": "学校"
+        },
+        {
+          "text": "das Problem",
+          "zh": "问题"
+        },
+        {
+          "text": "die Vorfreude",
+          "zh": "对即将到来之事的期待"
+        },
+        {
+          "text": "die Spinne",
+          "zh": "蜘蛛"
+        }
+      ]
+    },
+    {
+      "id": "en-bc-four-conversations-a2",
+      "lang": "en",
+      "title": "Four conversations",
+      "titleZh": "四段闲聊：辨认处境与话外信息",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/a2/four-conversations",
+      "level": "A2",
+      "levelBasis": "provider",
+      "levelLabel": "A2 · 官方分级",
+      "kind": "lesson",
+      "evidenceStatus": "official_transcript",
+      "addedAt": "2026-10-30",
+      "questions": [
+        {
+          "id": "en-conversations-1",
+          "prompt": "In A, what is the woman still waiting for?",
+          "options": [
+            "The date of her first interview.",
+            "The address of the office.",
+            "The result of her interview.",
+            "The names of her new colleagues."
+          ],
+          "answerIndex": 2,
+          "explanationZh": "她认为面试顺利，但对方说会再来电告知消息，工作尚未确定。",
+          "evidenceRef": "transcript-a-19-30",
+          "promptZh": "A段中，女士仍在等待什么？"
+        },
+        {
+          "id": "en-conversations-2",
+          "prompt": "In B, what stops the woman from seeing the painting well?",
+          "options": [
+            "The room is too dark.",
+            "People are taking photos in front of it.",
+            "The painting is in another building.",
+            "The museum is closing early."
+          ],
+          "answerIndex": 1,
+          "explanationZh": "她已经进到房间，却被拍照的人群挡住；并非没有进入博物馆。",
+          "evidenceRef": "transcript-b-35-52",
+          "promptZh": "B段中，她为什么没能好好看画？"
+        },
+        {
+          "id": "en-conversations-3",
+          "prompt": "In D, why must the man find a different group?",
+          "options": [
+            "He chose a different topic.",
+            "He missed the whole course.",
+            "He wants to work with five people.",
+            "The group has reached the allowed size."
+          ],
+          "answerIndex": 3,
+          "explanationZh": "这个小组已有4人，老师规定每组4人，因此不能再加入。",
+          "evidenceRef": "transcript-d-85-108",
+          "promptZh": "D段中，男士为何得另找小组？"
+        }
+      ],
+      "summaryZh": "听四段日常交谈，分辨求职、参观、回忆和小组任务中的信息。",
+      "guideZh": "先听四段，判断各自情境；再重点复听A、B、D段，区分说话人的猜测和已经确定的安排。常青课程，原始发布日期未标明。",
+      "verificationZh": "已依据官方A至D段文字稿核对本站原创题；未复制原站练习，尚未实测播放或音质。",
+      "vocabulary": [
+        {
+          "text": "call back",
+          "zh": "回电话"
+        },
+        {
+          "text": "flash",
+          "zh": "闪光灯"
+        },
+        {
+          "text": "class project",
+          "zh": "课堂项目"
+        },
+        {
+          "text": "find another group",
+          "zh": "找另一个小组"
+        }
+      ]
     }
   ],
   "schema": 1

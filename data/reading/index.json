@@ -2,6 +2,24 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-10-30-fr-preserver-un-lieu-et-sa-place",
+      "lang": "fr",
+      "date": "2026-10-30",
+      "title": "Préserver un lieu et sa place",
+      "titleZh": "保护一座建筑，也保护它的广场",
+      "summaryZh": "蓬皮杜中心及其广场获得历史建筑保护。翻修计划如何在传承建筑与适应新需求之间取得联系？",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "城市空间",
+        "文化遗产",
+        "建筑翻修"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-29",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-29-fr-creer-pendant-les-vacances",
       "lang": "fr",
       "date": "2026-10-29",
@@ -138,6 +156,24 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-10-22",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-30-it-un-campus-aperto-al-territorio",
+      "lang": "it",
+      "date": "2026-10-30",
+      "title": "Un campus aperto al territorio",
+      "titleZh": "连接科研、培训与社区的园区计划",
+      "summaryZh": "GEOREAL计划把实验室、培训中心、学生住所和科学体验空间联系起来，关注意大利南部的能力建设。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "大学与职业培训",
+        "社区科普",
+        "科研设施"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-21",
       "contentType": "native-adaptation"
     },
     {
@@ -381,6 +417,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-10-30-de-offenes-wissen-und-ki",
+      "lang": "de",
+      "date": "2026-10-30",
+      "title": "Offenes Wissen und der Zugang für KI",
+      "titleZh": "开放知识与人工智能的访问条件",
+      "summaryZh": "数字资料向公众开放，是否意味着自动程序可以无限抓取？一篇10月16日的报道解释了仍在讨论中的方案。",
+      "level": "B1",
+      "category": "technology",
+      "topics": [
+        "开放知识",
+        "数字文化",
+        "人工智能"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-16",
       "contentType": "native-adaptation"
     },
     {

@@ -1,0 +1,293 @@
+{
+  "schema": 1,
+  "id": "2026-10-30-de-offenes-wissen-und-ki",
+  "storyId": "irights-cc-signals-update-2026-10-16",
+  "lang": "de",
+  "date": "2026-10-30",
+  "title": "Offenes Wissen und der Zugang für KI",
+  "titleZh": "开放知识与人工智能的访问条件",
+  "summaryZh": "数字资料向公众开放，是否意味着自动程序可以无限抓取？一篇10月16日的报道解释了仍在讨论中的方案。",
+  "level": "B1",
+  "levelReason": "编辑估计B1偏上：约300词的连贯解释包含原因、对比、从句和情态表达；抽象专题词提供逐句中文及词义辅助。不是法律意见或官方等级认证。",
+  "category": "technology",
+  "topics": [
+    "开放知识",
+    "数字文化",
+    "人工智能"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "iRights.info",
+    "title": "CC Signals auf dem Weg zur Verbindlichkeit – ein Update",
+    "url": "https://irights.info/artikel/cc-signals-update/32911",
+    "publishedAt": "2026-10-16",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作者Fabian Rack，iRights.info，2026-10-16；原文题名及链接见来源，DOI 10.59350/460q6-50n31。原站原创文字依据CC BY 4.0使用。Dimenticato于2026-10-30作德语分级改写、中文翻译及原创教学补充，注明修改，不表示原作者或机构认可。",
+  "adaptation": "同语言教学改写，不是原文全文；保留2026-10-16报道时点、尚未完成的方案以及作者意见的归属，不声称此后没有变化，不构成个人法律建议。只采用作者叙述，排除图片、图标、外部链接作品、评论和直接引用的第三方话语。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Am 16. Oktober 2026 berichtet Fabian Rack bei iRights.info über neue Pläne der Organisation Creative Commons für den Umgang mit künstlicher Intelligenz.",
+      "zh": "2026年10月16日，Fabian Rack在iRights.info报道了Creative Commons组织应对人工智能的新计划。",
+      "glosses": [
+        {
+          "surface": "Umgang",
+          "lemma": "Umgang",
+          "zh": "应对；处理方式"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Viele Museen, Archive und wissenschaftliche Einrichtungen stellen Inhalte im Internet bereit, damit andere Menschen sie ansehen und weiterverwenden können.",
+      "zh": "许多博物馆、档案馆和科研机构在网上提供内容，让其他人能够查看并再次利用。",
+      "glosses": [
+        {
+          "surface": "bereit",
+          "lemma": "bereitstellen",
+          "zh": "提供；此处为可分动词stellen…bereit的一部分"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Doch automatische Programme können große Sammlungen auf einmal abrufen, zum Beispiel für die Entwicklung von KI, und dadurch die technische Infrastruktur belasten.",
+      "zh": "然而，自动程序可能一次性抓取大量馆藏或资料集，例如用于开发人工智能，从而给技术基础设施带来负担。",
+      "glosses": [
+        {
+          "surface": "Sammlungen",
+          "lemma": "Sammlung",
+          "zh": "馆藏；资料集，复数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Die CC Signals sollen Einrichtungen helfen, Bedingungen für solche Nutzungen auszudrücken; sie sind jedoch nicht als neue Version der bekannten CC-Lizenzen gedacht.",
+      "zh": "CC Signals旨在帮助机构表达对此类利用的条件；但它并非打算成为现有CC许可的新版本。",
+      "glosses": [
+        {
+          "surface": "Bedingungen",
+          "lemma": "Bedingung",
+          "zh": "条件，复数"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "In der ersten Fassung von 2025 standen zunächst Wünsche im Mittelpunkt, etwa die Nennung der Quelle oder ein Beitrag zur unterstützten Einrichtung.",
+      "zh": "在2025年的第一版中，最初重点是表达意愿，例如标明来源，或为得到支持的机构作出贡献。",
+      "glosses": [
+        {
+          "surface": "Quelle",
+          "lemma": "Quelle",
+          "zh": "来源"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Die Signale allein machten diese Wünsche aber noch nicht zu verbindlichen Regeln, die alle Nutzer rechtlich einhalten mussten.",
+      "zh": "但是，仅有这些信号，还不能把这些意愿变成所有使用者在法律上都必须遵守的约束性规则。",
+      "glosses": [
+        {
+          "surface": "verbindlichen",
+          "lemma": "verbindlich",
+          "zh": "具有约束力的；此处为形容词变格"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Nach Racks Bericht forderten verschiedene Gemeinschaften deshalb eine stärkere Lösung, und Creative Commons arbeitet nun an einem anderen Ansatz.",
+      "zh": "据Rack报道，不同社群因此要求更有力的解决方式，而Creative Commons正在研究另一种方案。",
+      "glosses": [
+        {
+          "surface": "forderten",
+          "lemma": "fordern",
+          "zh": "要求；过去时复数"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Bei diesem Ansatz könnte der Zugang zu einer großen Sammlung von bestimmten Bedingungen abhängen, statt nur um freiwillige Rücksicht zu bitten.",
+      "zh": "按照这一方案，访问一个大型资料集可能取决于特定条件，而不只是请求使用者自愿体谅。",
+      "glosses": [
+        {
+          "surface": "Zugang",
+          "lemma": "Zugang",
+          "zh": "访问；进入的途径"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Möglich wäre eine Verbindung aus technischen Zugangskontrollen und Verträgen; die genaue Gestaltung des neuen Werkzeugs war zum Zeitpunkt des Berichts noch offen.",
+      "zh": "一种可能的结合方式是技术访问控制与合同；截至报道时，新工具的具体设计仍未确定。",
+      "glosses": [
+        {
+          "surface": "offen",
+          "lemma": "offen",
+          "zh": "尚未确定的"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Die Organisation führte Gespräche mit den beteiligten Gemeinschaften und suchte eine kleine Gruppe von Einrichtungen, um das Werkzeug gemeinsam zu entwickeln.",
+      "zh": "该组织当时正与相关社群对话，并寻找一小批机构共同开发这一工具。",
+      "glosses": [
+        {
+          "surface": "gemeinsam",
+          "lemma": "gemeinsam",
+          "zh": "共同地"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Ein fertiges Werkzeug oder ein Zeitplan war am 16. Oktober noch nicht veröffentlicht; der Artikel beschreibt also eine Entwicklung und keine abgeschlossene Einführung.",
+      "zh": "截至10月16日，完成的工具或时间表尚未发布；因此，文章描述的是发展过程，而非已经完成的推出。",
+      "glosses": [
+        {
+          "surface": "Zeitplan",
+          "lemma": "Zeitplan",
+          "zh": "时间表"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Rack betont außerdem eine Schwierigkeit: Schutz vor großen automatischen Abrufen darf seiner Ansicht nach den Zugang zu einzelnen Inhalten nicht unnötig erschweren.",
+      "zh": "Rack还强调了一个难点：在他看来，防范大规模自动抓取不应不必要地增加访问单个内容的难度。",
+      "glosses": [
+        {
+          "surface": "erschweren",
+          "lemma": "erschweren",
+          "zh": "使……更困难"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Auch Forschung und Archive sollten nach seiner Einschätzung keine zu hohen Hürden bekommen, denn nicht jede Nutzung durch Maschinen verfolgt denselben Zweck.",
+      "zh": "他认为，科研和档案工作也不应面临过高门槛，因为并非每种机器利用都追求同一目的。",
+      "glosses": [
+        {
+          "surface": "Hürden",
+          "lemma": "Hürde",
+          "zh": "门槛；障碍，复数"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Die offene Frage lautet deshalb, wie sich der Schutz der Infrastruktur mit dem weiteren Teilen von Wissen verbinden lässt.",
+      "zh": "因此，尚待解决的问题是，如何把基础设施保护与继续分享知识结合起来。",
+      "glosses": [
+        {
+          "surface": "Wissen",
+          "lemma": "Wissen",
+          "zh": "知识"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Sammlungen",
+        "lemma": "Sammlung",
+        "zh": "馆藏；资料集，复数",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "Bedingungen",
+        "lemma": "Bedingung",
+        "zh": "条件，复数",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "Quelle",
+        "lemma": "Quelle",
+        "zh": "来源",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "Zugang",
+        "lemma": "Zugang",
+        "zh": "访问；进入的途径",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "Zeitplan",
+        "lemma": "Zeitplan",
+        "zh": "时间表",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "Hürden",
+        "lemma": "Hürde",
+        "zh": "门槛；障碍，复数",
+        "sentenceId": "s13"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "im Mittelpunkt",
+        "zh": "处于重点位置；是关注焦点",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "zum Zeitpunkt des Berichts",
+        "zh": "截至报道时；在报道当时",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "seiner Ansicht nach",
+        "zh": "在他看来；用于明确观点归属",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "war … noch nicht veröffentlicht保留“当时尚未发布”的时间范围，避免把历史报道写成今天的现状。"
+      },
+      {
+        "sentenceId": "s13",
+        "note": "nicht jede并非全称否定，表示“不是每一种”；sollten表达作者的建议，而非已经实施的规定。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Unterschiede gibt es für dich zwischen dem Lesen eines Textes und dem automatischen Abruf einer ganzen Sammlung?",
+        "zh": "在你看来，阅读一篇文本与自动抓取整个资料集有什么不同？"
+      },
+      {
+        "text": "Welche Bedingungen findest du sinnvoll, wenn eine Einrichtung ihre Inhalte teilt? Warum?",
+        "zh": "机构分享内容时，你认为哪些条件合理？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Meiner Ansicht nach sollte …",
+        "zh": "在我看来，应该……",
+        "note": "教学补充：用于提出观点。"
+      },
+      {
+        "text": "Dabei muss man zwischen … und … unterscheiden.",
+        "zh": "这里必须区分……与……。",
+        "note": "教学补充：比较不同用途或群体。"
+      }
+    ]
+  }
+}

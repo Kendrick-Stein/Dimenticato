@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-30-fr-preserver-un-lieu-et-sa-place",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s6",
+      "start": 49,
+      "answer": "quartier",
+      "options": [
+        "village",
+        "pays",
+        "quartier",
+        "continent"
+      ],
+      "explanation": "按中文句意及原文，应恢复quartier（街区）。此处是名词单数，其他选项虽然可构成法语词组，但不符合本句的具体含义。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s8",
+      "start": 27,
+      "answer": "héritage",
+      "options": [
+        "événement",
+        "héritage",
+        "itinéraire",
+        "enseignement"
+      ],
+      "explanation": "按中文句意及原文，应恢复héritage（遗产）。此处是名词单数，其他选项虽然可构成法语词组，但不符合本句的具体含义。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 80,
+      "answer": "rénovation",
+      "options": [
+        "réservation",
+        "rénovation",
+        "réunion",
+        "représentation"
+      ],
+      "explanation": "按中文句意及原文，应恢复rénovation（翻修）。此处是名词单数，其他选项虽然可构成法语词组，但不符合本句的具体含义。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s10",
+      "start": 40,
+      "answer": "réouverture",
+      "options": [
+        "construction",
+        "fermeture",
+        "destruction",
+        "réouverture"
+      ],
+      "explanation": "按中文句意及原文，应恢复réouverture（重新开放）。此处是名词单数，其他选项虽然可构成法语词组，但不符合本句的具体含义。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 41,
+      "answer": "consommation",
+      "options": [
+        "production",
+        "consommation",
+        "distribution",
+        "vente"
+      ],
+      "explanation": "按中文句意及原文，应恢复consommation（消耗）。此处是名词单数，其他选项虽然可构成法语词组，但不符合本句的具体含义。"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-29",
+  "collectedAt": "2026-10-30",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -7889,20 +7889,20 @@
         "大学培训",
         "地方科学传播"
       ],
-      "level": "B1",
+      "level": "A2",
       "priority": 3,
       "status": "verified",
-      "editorialNote": "Reserve only, no teaching draft or publication approval. Training/residential academy and public StemLab angle. Planned30months/about25million not completed impact. Source photo caption appears copied from unrelatedCONIRI award; exclude image/caption and retain fact provenance caution.",
+      "editorialNote": "独立来源/语言/填词审核及理解题盲解完成；配套不可变文章另行发布，候选元数据本身不可发布。 不采用与本文无关的CONIRI图片说明；30个月/约2500万为项目计划而非已完成成果。",
       "verification": {
-        "workflowStage": "rights_verified",
+        "workflowStage": "ready",
         "readyForPublication": false,
-        "editorialReviewComplete": false,
-        "checkedAt": "2026-10-22",
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-30",
         "fullText": {
           "accessible": true,
           "read": true,
           "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/ingv-irpinia-al-via-il-progetto-georeal-per-potenziare-le-geoscienze-nel-mezzogiorno",
-          "checkedAt": "2026-10-22",
+          "checkedAt": "2026-10-30",
           "notes": "Official full body read via web2026-10-22; article footer CC BY4 and INGV legal footer reviewed. No media/attachment/directquotation use."
         },
         "originalDate": {
@@ -7950,11 +7950,12 @@
           "titleAlreadyPublished": false
         },
         "freshness": {
-          "asOf": "2026-10-23",
-          "ageDays": 2,
+          "asOf": "2026-10-30",
+          "ageDays": 9,
           "bucket": "within_30_days"
         }
-      }
+      },
+      "linkToArticleId": "2026-10-30-it-un-campus-aperto-al-territorio"
     },
     {
       "id": "it-2026-10-16-ingv-coniri-education",
@@ -10586,6 +10587,164 @@
           "bucket": "within_30_days"
         }
       }
+    },
+    {
+      "id": "fr-2026-10-29-culture-pompidou-protection",
+      "language": "fr",
+      "sourceTitle": "À Paris, le Centre Pompidou inscrit aux monuments historiques",
+      "sourceUrl": "https://www.culture.gouv.fr/actualites/a-paris-le-centre-pompidou-inscrit-aux-monuments-historiques",
+      "sourceName": "Ministère de la Culture",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-29",
+      "collectedAt": "2026-10-30",
+      "category": "culture",
+      "topics": [
+        "城市空间",
+        "文化遗产",
+        "建筑翻修"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "独立来源/语言/填词审核及理解题盲解完成；配套不可变文章另行发布，候选元数据本身不可发布。",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-30",
+        "originalDate": {
+          "verified": true,
+          "evidence": "正文明确Publié le29octobre2026；23octobre保护决定与2030重开计划另行保留。",
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/a-paris-le-centre-pompidou-inscrit-aux-monuments-historiques"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "evidence": "Ministère编辑机构文字，无个人作者/译者/转载声明。法律声明II4.3.1(a)文字CCBYSA3.0FR，II4.3.2合作方另行许可。排除外部照片、引语、访客报告与外链。派生改写/中文/题目同许可，署名、链接、变更说明保留。",
+          "reviewBeforeConversionRequired": true,
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/actualites/a-paris-le-centre-pompidou-inscrit-aux-monuments-historiques",
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "scope": "文化部自有新闻叙述文字的分级改写与中文翻译，教学补充同许可。",
+          "exclusions": [
+            "图片/标志",
+            "部长引语",
+            "外链活动报告访客统计及外部作品"
+          ],
+          "attributionRequirements": [
+            "文化部与原文题名",
+            "原文日期和直链",
+            "许可链接",
+            "修改说明",
+            "派生同许可"
+          ],
+          "shareAlikeRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-10-30",
+          "checkedAgainstArticleCount": 139,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-10-30",
+          "ageDays": 1,
+          "bucket": "within_30_days"
+        },
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.culture.gouv.fr/actualites/a-paris-le-centre-pompidou-inscrit-aux-monuments-historiques",
+          "checkedAt": "2026-10-30",
+          "notes": "全文已读，机构正文为改写范围，排除图片/引语/外链报告。"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "官方法语机构actualités文章，无个人署名、译者或转载标记；法律声明I1/I4确认文化部出版与编辑。",
+          "evidenceUrl": "https://www.culture.gouv.fr/actualites/a-paris-le-centre-pompidou-inscrit-aux-monuments-historiques",
+          "additionalEvidenceUrls": [
+            "https://www.culture.gouv.fr/mentions-legales"
+          ],
+          "author": "Ministère de la Culture",
+          "caveat": "机构原语来源推断，不是作者母语认证。"
+        }
+      },
+      "linkToArticleId": "2026-10-30-fr-preserver-un-lieu-et-sa-place"
+    },
+    {
+      "id": "de-2026-10-16-irights-cc-signals",
+      "language": "de",
+      "sourceTitle": "CC Signals auf dem Weg zur Verbindlichkeit – ein Update",
+      "sourceUrl": "https://irights.info/artikel/cc-signals-update/32911",
+      "sourceName": "iRights.info",
+      "registrySourceId": "irights-german-culture",
+      "sourcePublishedAt": "2026-10-16",
+      "collectedAt": "2026-10-30",
+      "category": "technology",
+      "topics": [
+        "开放知识",
+        "数字文化",
+        "人工智能"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "verification": {
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://irights.info/artikel/cc-signals-update/32911",
+          "checkedAt": "2026-10-30"
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Official article publication date separately checked; see dated independent audit.",
+          "evidenceUrl": "https://irights.info/artikel/cc-signals-update/32911"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Signed Fabian Rack German editorial in NFDI4Culture work; not a multilingual translation feed.",
+          "evidenceUrl": "https://irights.info/artikel/cc-signals-update/32911"
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence": "{\"status\": \"PASS\", \"grant\": \"Article footer167-168 CC BY4.0 original contents; https://irights.info/impressum-2 lines98-101 confirms reproduction/distribution/public accessibility incl commercial with author credit.\", \"compliance\": \"Author/title/date/DOI/source/licence/changes/no endorsement present. Image/icons, direct third-party quotations, linked works and comments excluded. CC BY4 deed independently read.\"}",
+          "evidenceUrls": [
+            "https://irights.info/artikel/cc-signals-update/32911",
+            "https://irights.info/impressum-2"
+          ],
+          "scope": "Original institutional/author prose adapted with paired translation and original teaching supplements.",
+          "exclusions": [
+            "Images and media",
+            "Third-party quotations, linked works and comments"
+          ],
+          "attributionRequirements": [
+            "Publisher/author and title",
+            "Original date/source link",
+            "Licence link and modification notice",
+            "No endorsement"
+          ]
+        },
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-10-30",
+        "freshness": {
+          "asOf": "2026-10-30",
+          "ageDays": 14,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-10-30-de-offenes-wissen-und-ki",
+      "editorialNote": "独立来源/语言/填词审核及理解题盲解完成；配套不可变文章另行发布，候选元数据本身不可发布。"
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

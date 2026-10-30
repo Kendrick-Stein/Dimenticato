@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-30-it-un-campus-aperto-al-territorio",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 77,
+      "answer": "imprese",
+      "options": [
+        "imprese",
+        "scuole",
+        "famiglie",
+        "biblioteche"
+      ],
+      "explanation": "中文句意要求“企业”，对应原文imprese。这里使用复数形式。其他选项含义不同，不能还原本句。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 47,
+      "answer": "laboratori",
+      "options": [
+        "negozi",
+        "laboratori",
+        "uffici",
+        "musei"
+      ],
+      "explanation": "中文句意要求“实验室”，对应原文laboratori。这里使用复数形式。其他选项含义不同，不能还原本句。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 69,
+      "answer": "strumenti",
+      "options": [
+        "documenti",
+        "biglietti",
+        "strumenti",
+        "mobili"
+      ],
+      "explanation": "中文句意要求“仪器”，对应原文strumenti。这里使用复数形式。其他选项含义不同，不能还原本句。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 81,
+      "answer": "residenza",
+      "options": [
+        "fermata",
+        "mostra",
+        "lezione",
+        "residenza"
+      ],
+      "explanation": "中文句意要求“住所”，对应原文residenza。una后接阴性单数residenza。其他选项含义不同，不能还原本句。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 79,
+      "answer": "obiettivi",
+      "options": [
+        "obiettivi",
+        "indirizzi",
+        "orari",
+        "prezzi"
+      ],
+      "explanation": "中文句意要求“目标”，对应原文obiettivi。这里使用复数形式。其他选项含义不同，不能还原本句。"
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "checkedAt": "2026-10-30",
+  "status": "PASS",
+  "baseCommit": "aedcf692a48b369fe50f98752bfeb2913e95f00c",
+  "batch": {
+    "reading": {
+      "it": "A2",
+      "fr": "B1",
+      "de": "B1"
+    },
+    "clozeQuestions": 15,
+    "comprehensionQuestions": 11,
+    "listeningEntries": 3,
+    "listeningQuestions": 6
+  },
+  "finalContentHashes": {
+    "data/reading/articles/2026-10-30-it-un-campus-aperto-al-territorio.json": "2032aa52acb649202c3791bcfbe6ae44416142526b2f3c9da11b3537c2ddf18d",
+    "data/reading/practice/2026-10-30-it-un-campus-aperto-al-territorio.json": "54fb1c8d0b473948bcbd67929a62671e03328e97d9afeb74ada04b37d6c2c66f",
+    "data/reading/comprehension/2026-10-30-it-un-campus-aperto-al-territorio.json": "5a3d74f3985bb7bc4fed295fe0ee97735113111b632bc71cf280230d4a903b93",
+    "data/reading/articles/2026-10-30-fr-preserver-un-lieu-et-sa-place.json": "025b781d41f772ed80570ce42c34b7b4c50d9d04c5a138f6f182863b4d4d8da0",
+    "data/reading/practice/2026-10-30-fr-preserver-un-lieu-et-sa-place.json": "90f0a67d79b023fe5596d9b23e5b047839f43793f2c7347438bc2402e10039a0",
+    "data/reading/comprehension/2026-10-30-fr-preserver-un-lieu-et-sa-place.json": "7ca2cff99f398625d20295742aecfceb37bf3ab3e709de2155e2ad4c14ece63e",
+    "data/reading/articles/2026-10-30-de-offenes-wissen-und-ki.json": "7763b15bdeff453217ae72a857f0609e5c712d0855e12b8f30fdb990e6301b2a",
+    "data/reading/practice/2026-10-30-de-offenes-wissen-und-ki.json": "0d589e77a30a111e030066bade530764f8db9d3d2dfec6b97c35b982eb71c717",
+    "data/reading/comprehension/2026-10-30-de-offenes-wissen-und-ki.json": "d5c6a75cfa6e40149454ee979bac7c0225e9a1c8f76ed6f4927d8a6a31f6f7e3"
+  },
+  "sourceReview": {
+    "checkedAt": "2026-10-30T00:19:30Z",
+    "role": "independent source, language, rights and answer audit; not blind comprehension review",
+    "status": "PASS_WITH_EXPLICIT_EVIDENCE_LIMITS",
+    "articles": [
+      {
+        "id": "2026-10-30-it-un-campus-aperto-al-territorio",
+        "status": "PASS",
+        "sourceUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/ingv-irpinia-al-via-il-progetto-georeal-per-potenziare-le-geoscienze-nel-mezzogiorno",
+        "sourcePublishedAt": "2026-10-21",
+        "freshnessDays": 9,
+        "fullTextRead": true,
+        "nativeProvenance": "INGV institutional Italian announcement; no translation/syndication credit; not individual native-speaker certification.",
+        "factLocators": {
+          "s1-s4": "Official page lines11-14: launch, 25 million euros, 30 months, 7 scientific institutions and 29 companies",
+          "s5-s7": "lines15-16: Grottaminarda campus, six national nodes, tank/instruments",
+          "s8-s10": "line17: Academy/residence/StemLab; proposal state maintained"
+        },
+        "translation": "Paired Chinese preserves future/project status; no claim of completed construction.",
+        "level": "176 words; A2 upper assisted; technical nouns glossed.",
+        "rights": {
+          "status": "PASS",
+          "grant": "INGV article footer line79 and https://www.ingv.it/note-legali line58 CC BY4.0; legal-note section text permits source-credited reproduction; no conflicting prose exception.",
+          "licenceRead": "https://creativecommons.org/licenses/by/4.0/ deed lines48-56 permits sharing/adaptation with attribution, licence link, changes, no endorsement.",
+          "compliance": "Institution/title/date/source/link/modifications included; photos, attachments and direct third-party quotations excluded."
+        },
+        "practice": "Five unique with Chinese/source-restoration; forms, answer offsets and glosses checked.",
+        "comprehension": "Current keys 1,0,3; revised q1 six research sites supported s6; residence and StemLab evidence correct. Nonblind.",
+        "sha256": {
+          "article": "2032aa52acb649202c3791bcfbe6ae44416142526b2f3c9da11b3537c2ddf18d",
+          "practice": "54fb1c8d0b473948bcbd67929a62671e03328e97d9afeb74ada04b37d6c2c66f",
+          "comprehension": "5a3d74f3985bb7bc4fed295fe0ee97735113111b632bc71cf280230d4a903b93"
+        }
+      },
+      {
+        "id": "2026-10-30-fr-preserver-un-lieu-et-sa-place",
+        "status": "PASS",
+        "sourceUrl": "https://www.culture.gouv.fr/actualites/a-paris-le-centre-pompidou-inscrit-aux-monuments-historiques",
+        "sourcePublishedAt": "2026-10-29",
+        "freshnessDays": 1,
+        "fullTextRead": true,
+        "accessMethod": "Web parser internal inaccessible error, not access-denial. Independently read entire legitimate saved official HTML official-source HTML snapshot using stdlib HTMLParser.",
+        "nativeProvenance": "French Ministry of Culture editorial institutional news; no translation credit.",
+        "factLocators": {
+          "dates": "Body: Oct23 protection decision, Oct29 publication, 1977 opening, 2025 closure, planned2030 reopening",
+          "architecture": "Body: Piano/Rogers/Franchini with engineers Ove Arup & Partners; Piazza included",
+          "energy": "Body: 40% reduction is project target, not measured result",
+          "use": "Body: multidisciplinary centre/BPI/accessibility and preserving architecture"
+        },
+        "translation": "All16 paired translations faithful; target-versus-result teaching statement explicitly separated.",
+        "level": "302 words; B1 reasonable compound/subordinate syntax.",
+        "rights": {
+          "status": "PASS",
+          "grant": "https://www.culture.gouv.fr/mentions-legales II4.3.1a lines91-95 Ministry text CC BY-SA3.0FR; text-specific licence takes precedence over generic metadata/footer Etalab.",
+          "exceptions": "II4.3.2 partner content excluded; AFP photos, minister direct quotation, logos and external content excluded.",
+          "compliance": "Source/title/date/licence attribution/modification notice present; adaptation and Chinese translation under same SA licence.",
+          "licenceRead": "Official CC BY-SA3.0FR deed https://creativecommons.org/licenses/by-sa/3.0/fr/ lines50-58 independently read: sharing/adaptation, attribution, same licence, no added restriction."
+        },
+        "practice": "Five unique; q2 corrected to vowel-initial masculine distractors événement/itinéraire/enseignement, avoiding cet-only grammar clue. Offsets and glosses pass.",
+        "comprehension": "Current keys2,0,3,2; q4 engineering role revised and supported s5. All Chinese explanations match current answers. Nonblind.",
+        "sha256": {
+          "article": "025b781d41f772ed80570ce42c34b7b4c50d9d04c5a138f6f182863b4d4d8da0",
+          "practice": "90f0a67d79b023fe5596d9b23e5b047839f43793f2c7347438bc2402e10039a0",
+          "comprehension": "7ca2cff99f398625d20295742aecfceb37bf3ab3e709de2155e2ad4c14ece63e"
+        }
+      },
+      {
+        "id": "2026-10-30-de-offenes-wissen-und-ki",
+        "status": "PASS",
+        "sourceUrl": "https://irights.info/artikel/cc-signals-update/32911",
+        "sourcePublishedAt": "2026-10-16",
+        "freshnessDays": 14,
+        "fullTextRead": true,
+        "nativeProvenance": "Signed Fabian Rack German editorial in NFDI4Culture work; not a multilingual translation feed.",
+        "factLocators": {
+          "s1-s4": "Official lines82-93 infrastructure burden, collections, distinct mechanism from CC licences",
+          "s5-s7": "lines93-104 initial2025 preferences nonbinding alone, community requests stronger mechanism",
+          "s8-s9": "lines108-109 conditional access and possible technical/contractual combination",
+          "s10-s11": "line131 consultations/pilot institutions, no final tool/timeplan as of report",
+          "s12-s14": "lines127-128 and142 preserve opinion attribution and different uses"
+        },
+        "translation": "All14 sentences retain October16 time boundary, hypothetical development, and author-view attribution; no claim tools already implemented or unchanged today.",
+        "level": "294 words; B1 upper assisted, abstract vocabulary/subordinate syntax; not certified legal guidance.",
+        "rights": {
+          "status": "PASS",
+          "grant": "Article footer167-168 CC BY4.0 original contents; https://irights.info/impressum-2 lines98-101 confirms reproduction/distribution/public accessibility incl commercial with author credit.",
+          "compliance": "Author/title/date/DOI/source/licence/changes/no endorsement present. Image/icons, direct third-party quotations, linked works and comments excluded. CC BY4 deed independently read."
+        },
+        "practice": "Five correct Chinese-aligned targets, morphology/explanations/offsets/glosses pass.",
+        "comprehension": "Current keys2,0,3,1 source supported; q1/q2 extreme distractors replaced with credible parallel alternatives, explanations match final options. q3 co-development and q4 detail correctly evidence-bound. Independent nonblind recheck complete.",
+        "sha256": {
+          "article": "7763b15bdeff453217ae72a857f0609e5c712d0855e12b8f30fdb990e6301b2a",
+          "practice": "0d589e77a30a111e030066bade530764f8db9d3d2dfec6b97c35b982eb71c717",
+          "comprehension": "d5c6a75cfa6e40149454ee979bac7c0225e9a1c8f76ed6f4927d8a6a31f6f7e3"
+        }
+      }
+    ],
+    "listening": {
+      "status": "PASS_FOR_LINKS_AND_TEXT_EVIDENCE_ONLY",
+      "entriesSha256": "65262cf07ad188fce64a77e5e3aed9ecce81764bea8d352e4557ba91e5cfb113",
+      "scope": "Outbound official whole-page links plus original brief teaching content; no media/transcript/publisher exercises/images copied, no embedding. Not a blanket republication licence.",
+      "entries": [
+        {
+          "id": "it-rai-mercato-a2",
+          "status": "PASS",
+          "source": "Official Rai Scuola full Sketch A independently read; heading A2; lines598 peach2.50/kg,603 salad6etti,698-703 eggs on top avoidbreak.",
+          "answers": [
+            1,
+            2,
+            0
+          ],
+          "date": "Undated evergreen; URL date not represented as publication.",
+          "limits": "No playback/audio-quality verification."
+        },
+        {
+          "id": "en-bc-four-conversations-a2",
+          "status": "PASS",
+          "source": "Official full A-D transcript independently read: A19-30 interview result, B35-52 photo crowd, D85-108 four-person limit; A2 publisher level.",
+          "answers": [
+            2,
+            1,
+            3
+          ],
+          "rights": "https://www.britishcouncil.org/terms section14 lines164-168 permits free whole-service text links; no general reproduction grant claimed. Original questions, no publisher exercises/transcript copied.",
+          "date": "Undated evergreen; comments not publication dates.",
+          "limits": "No playback/audio-quality verification."
+        },
+        {
+          "id": "de-logo-2026-10-29",
+          "status": "PASS_METADATA_RESOURCE_ONLY",
+          "source": "Official page lines39-43 date29Oct2026/19:50 and school/Halloween/spiders topics; https://www.logo.de/ lines58-60 and210-2129:59.",
+          "rights": "https://www.zdf.de/nutzungsbedingungen22-33 prohibits reproduction without consent and constrains embedding; this draft only whole-page link plus brief original guide, no media/embedding.",
+          "questions": 0,
+          "level": "Native-child programme explicitly not CEFR/A2; thematic vocabulary not claimed heard.",
+          "limits": "No transcript or playback/audio-quality verification."
+        }
+      ],
+      "frOmitted": "Author stopped new TV5 derivation after current terms check. Not independently re-read by this reviewer; not included in proposed final files."
+    },
+    "limitations": [
+      "Nonblind source/answer audit only; separate blind reviewer required.",
+      "No UI/schema/test/deployment or actual media playback verification by this reviewer.",
+      "OGL full-text refresh inaccessible disclosed; official article grant and GOV.UK terms independently read plus historical licence-condition record."
+    ]
+  },
+  "blindReview": {
+    "method": "独立根据指定四份blind输入正文与题目作答；未读取答案键或其他文件、未访问网络。修订复审，不代表与答案键核验。",
+    "status": "complete",
+    "results": [
+      {
+        "lang": "it",
+        "sha256": "e86bf41c2e365311b3c12fd3fb54e9c2407510d8e2ca3c2d6361e8e0244e977d",
+        "answers": [
+          1,
+          0,
+          3
+        ],
+        "questions": [
+          {
+            "id": "q1",
+            "answerIndex": 1,
+            "sentenceIds": [
+              "s6"
+            ],
+            "unique": true,
+            "audit": "无歧义、标题/常识/长度泄露；设施类型及数目错配需正文定位，较旧版改善。"
+          },
+          {
+            "id": "q2",
+            "answerIndex": 0,
+            "sentenceIds": [
+              "s8"
+            ],
+            "unique": true,
+            "audit": "无歧义、标题或长度泄露；校园住所常识略有帮助，但其他学校人群也合理，仍需定位。"
+          },
+          {
+            "id": "q3",
+            "answerIndex": 3,
+            "sentenceIds": [
+              "s9"
+            ],
+            "unique": true,
+            "audit": "无歧义、标题或长度泄露；StemLab命名提示科学，监测地震干扰可用，销售仪器和住所管理略弱。"
+          }
+        ]
+      },
+      {
+        "lang": "fr",
+        "sha256": "0914100508212e5f45f56e660ad62f225d5ff6eb167e39c3e71a2c4040ea2b22",
+        "answers": [
+          2,
+          0,
+          3,
+          2
+        ],
+        "questions": [
+          {
+            "id": "q1",
+            "answerIndex": 2,
+            "sentenceIds": [
+              "s9",
+              "s15",
+              "s16"
+            ],
+            "unique": true,
+            "audit": "无歧义、标题或长度泄露；办公室干扰略弱，其余为文内关系错配。"
+          },
+          {
+            "id": "q2",
+            "answerIndex": 0,
+            "sentenceIds": [
+              "s10"
+            ],
+            "unique": true,
+            "audit": "无歧义、标题、常识或长度泄露；阶段错配有效。"
+          },
+          {
+            "id": "q3",
+            "answerIndex": 3,
+            "sentenceIds": [
+              "s11",
+              "s12"
+            ],
+            "unique": true,
+            "audit": "无歧义、标题、常识或长度泄露；目标与成果区分清晰。"
+          },
+          {
+            "id": "q4",
+            "answerIndex": 2,
+            "sentenceIds": [
+              "s5"
+            ],
+            "unique": true,
+            "audit": "无歧义、标题或长度泄露；需定位机构身份，优于旧图书馆题。initial加2030可排除一个干扰但无法单独得到答案。"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "sha256": "6c999b7fe4ffc0503910e0cc82d24cb78aaa3fdc5ce4806c932a46c91cec7807",
+        "answers": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "questions": [
+          {
+            "id": "q1",
+            "answerIndex": 2,
+            "sentenceIds": [
+              "s4",
+              "s6",
+              "s7",
+              "s8",
+              "s9"
+            ],
+            "unique": true,
+            "audit": "唯一可选，无歧义、标题直接泄露或长度泄露。新干扰的来源标注与合同分别对应正文相邻议题，有效考查主旨而非极端措辞排除；搜索功能仍较弱但不构成阻塞。"
+          },
+          {
+            "id": "q2",
+            "answerIndex": 0,
+            "sentenceIds": [
+              "s6",
+              "s7"
+            ],
+            "unique": true,
+            "audit": "唯一可选，无歧义、标题直接泄露或显著长度泄露。原因型选项平行；技术复杂、格式限制、价格均属同一数字工具情境的未述原因；比旧版明显改善，需要s6/s7确认。"
+          },
+          {
+            "id": "q3",
+            "answerIndex": 3,
+            "sentenceIds": [
+              "s10"
+            ],
+            "unique": true,
+            "audit": "新题明显改善，选项均为机构协作角色，需要正文定位；无歧义、标题、常识或显著长度泄露。"
+          },
+          {
+            "id": "q4",
+            "answerIndex": 1,
+            "sentenceIds": [
+              "s12",
+              "s13"
+            ],
+            "unique": true,
+            "audit": "已改detail，匹配正文直接对照；无歧义、标题或长度泄露；书籍/海报来源干扰略弱，另两项分类干扰有效。"
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "uniqueAnswers": 14,
+      "blockingIssues": [],
+      "residualIssues": [
+        "部分基础题仍有较易排除的干扰，如EN q1猫/游客、IT q3仪器销售/住所管理、DE q4书籍/海报来源；均不影响唯一性，未达到阻塞程度。"
+      ],
+      "answerKeyChecked": false,
+      "qualityConclusion": "当前四语14题均能由指定正文确定唯一答案；所指出的标题/摘要泄露、题型错标及主要极端干扰已经修订。"
+    }
+  },
+  "blindAnswerAgreement": {
+    "it": [
+      1,
+      0,
+      3
+    ],
+    "fr": [
+      2,
+      0,
+      3,
+      2
+    ],
+    "de": [
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "omissions": [
+    "EN reading candidate rejected at final canonical-URL dedup: same source already published 2026-10-17-en-a-surprise-on-the-beach. No new English edition or sidecars published.",
+    "Other nine reading slots omitted: no independently approved distinct source+edition this run.",
+    "French listening omitted after TV5 current terms restriction; no new TV5 derivative published.",
+    "No one-week fully approved reserve claimed; remaining queue is intake, not publication-ready."
+  ],
+  "limits": [
+    "Actual media playback/audio quality and mobile/narrow-screen layout not verified.",
+    "Official OGL deed returned403; no bypass. EN duplicate not published."
+  ],
+  "tests": {
+    "baseline": "45 harnesses, 484174 passed, 0 failed, 0 known issues",
+    "final": "TZ=UTC npm test: 45 harnesses, 484458 passed, 0 failed, 0 known issues",
+    "targeted": {
+      "readingArticles": 142,
+      "candidates": 132,
+      "practiceCompanions": 127,
+      "comprehensionCompanions": 103,
+      "practiceTests": 4340,
+      "comprehensionTests": 4627,
+      "comprehensionLoadingTests": 9,
+      "listeningTests": 640
+    },
+    "gitDiffCheck": "PASS",
+    "historicalArticlePracticeComprehensionHashes": "UNCHANGED",
+    "prePublishUI": "Local cloud browser could not reach executor localhost: connection refused; environment separation, not website failure. Production UI verification required after deployment."
+  }
+}

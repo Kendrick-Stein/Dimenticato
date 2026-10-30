@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-10-30-de-offenes-wissen-und-ki",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 41,
+      "answer": "Sammlungen",
+      "options": [
+        "Gebäude",
+        "Sammlungen",
+        "Verträge",
+        "Zeitpläne"
+      ],
+      "explanation": "中文指“大量馆藏或资料集”，原句为Sammlungen，阴性名词Sammlung的复数；其他词分别为建筑、合同、时间表。 本题要求还原正文用词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 44,
+      "answer": "Bedingungen",
+      "options": [
+        "Erinnerungen",
+        "Besucher",
+        "Bedingungen",
+        "Bilder"
+      ],
+      "explanation": "中文指“条件”，原句为Bedingungen，是Bedingung的复数；不是回忆、访客或图片。 本题要求还原正文用词。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 93,
+      "answer": "Quelle",
+      "options": [
+        "Quelle",
+        "Sprache",
+        "Adresse",
+        "Uhrzeit"
+      ],
+      "explanation": "Nennung der Quelle指“标明来源”，Quelle为阴性单数，der是此处第二格定冠词；其他词不对应中文“来源”。 本题要求还原正文用词。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 29,
+      "answer": "Zugang",
+      "options": [
+        "Vertrag",
+        "Bericht",
+        "Beitrag",
+        "Zugang"
+      ],
+      "explanation": "中文及后面的zu einer großen Sammlung对应“访问资料集”，原句为Zugang；其余分别是合同、报道、贡献。 本题要求还原正文用词。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 31,
+      "answer": "Zeitplan",
+      "options": [
+        "Zeitraum",
+        "Zeitplan",
+        "Zeitpunkt",
+        "Zeitung"
+      ],
+      "explanation": "中文“时间表”对应Zeitplan，阳性单数；Zeitraum为时段、Zeitpunkt为时点、Zeitung为报纸。 本题要求还原正文用词。"
+    }
+  ]
+}
