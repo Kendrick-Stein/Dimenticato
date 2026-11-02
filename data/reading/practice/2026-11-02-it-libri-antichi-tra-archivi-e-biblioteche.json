@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 62,
+      "answer": "salone",
+      "options": [
+        "salone",
+        "balcone",
+        "garage",
+        "cortile"
+      ],
+      "explanation": "大厅；阳性单数，nel＝in＋il。本题恢复原文用词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 56,
+      "answer": "uscito",
+      "options": [
+        "aperto",
+        "uscito",
+        "rimasto",
+        "caduto"
+      ],
+      "explanation": "出版的；过去分词阳性单数，指libro。本题恢复原文用词。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 22,
+      "answer": "bibliotecaria",
+      "options": [
+        "pasticcera",
+        "infermiera",
+        "bibliotecaria",
+        "meccanica"
+      ],
+      "explanation": "图书馆员；阴性单数职业名词，与autrice对应。本题恢复原文用词。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 41,
+      "answer": "documenti",
+      "options": [
+        "biglietti",
+        "vestiti",
+        "strumenti",
+        "documenti"
+      ],
+      "explanation": "文献；阳性复数，questi与其一致。本题恢复原文用词。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 54,
+      "answer": "posti",
+      "options": [
+        "posti",
+        "pasti",
+        "porti",
+        "ponti"
+      ],
+      "explanation": "座位；阳性复数；此处是活动入场的席位。本题恢复原文用词。"
+    }
+  ]
+}

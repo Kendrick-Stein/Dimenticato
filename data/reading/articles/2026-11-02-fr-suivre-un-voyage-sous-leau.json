@@ -1,0 +1,395 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-fr-suivre-un-voyage-sous-leau",
+  "storyId": "inrae-guidrhone-2026-10-28",
+  "lang": "fr",
+  "date": "2026-11-02",
+  "title": "Suivre un voyage sous l’eau",
+  "titleZh": "追踪水下旅程",
+  "summaryZh": "研究人员希望结合渔网与声学成像，建立估计罗讷河银鳗迁徙数量的长期方法。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：方法比较、因果联系、可行性与长期目标，复杂关系从句与条件性论述；水文和生态词汇有语境释义，不以篇幅单独判级。",
+  "category": "environment",
+  "topics": [
+    "河流生态",
+    "鱼类迁徙",
+    "观察方法"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE",
+    "title": "GuidRhône : à la recherche des anguilles argentées dans le Rhône",
+    "url": "https://www.inrae.fr/actualites/guidrhone-recherche-anguilles-argentees-rhone",
+    "publishedAt": "2026-10-28",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0"
+  },
+  "attribution": "原文：INRAE，《GuidRhône : à la recherche des anguilles argentées dans le Rhône》，2026-10-28；原文直接链接见来源。INRAE公开机构文字依其使用条款采用Licence Ouverte Etalab 2.0。Dimenticato于2026-11-02进行法语分级改写、中文翻译及原创教学补充，不表示原作者或机构认可。",
+  "adaptation": "同语言分级改写，不是原文全文或当天新闻。仅改写机构文章叙述；不转载照片、视频、标志、外链资料、第三方引语。保留原报道日期，明确已发生事项与未来计划。词义、文末口语及练习均为教学补充。第17句和第21句为对原文目标状态及统计分母的编辑澄清。省略前项目80%路径数据，避免把样本路线比例误作存活率。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Après plusieurs années en eau douce, l’anguille européenne se transforme en anguille argentée et commence son voyage vers la mer pour se reproduire.",
+      "zh": "欧洲鳗在淡水中生活数年之后，会转变成银鳗，并开始前往海洋繁殖的旅程。",
+      "glosses": [
+        {
+          "surface": "eau douce",
+          "lemma": "eau douce",
+          "zh": "淡水"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Cette descente du fleuve, appelée dévalaison, constitue une étape essentielle de son cycle de vie, mais elle reste difficile à mesurer dans le Rhône.",
+      "zh": "这种顺河而下的迁徙称为降河迁徙，是其生命周期中的关键阶段，但在罗讷河中仍难以计量。",
+      "glosses": [
+        {
+          "surface": "dévalaison",
+          "lemma": "dévalaison",
+          "zh": "鱼类顺流向下迁徙"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Dans un article publié le 28 octobre 2026, INRAE présente GuidRhône, un projet destiné à préparer une estimation du nombre d’anguilles qui quittent ce bassin chaque année.",
+      "zh": "在2026年10月28日发表的文章中，INRAE介绍了GuidRhône项目，它旨在为估计每年离开该流域的鳗鱼数量作准备。",
+      "glosses": [
+        {
+          "surface": "bassin",
+          "lemma": "bassin",
+          "zh": "流域"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "L’enjeu n’est pas simplement d’obtenir un chiffre : mieux connaître ces départs doit aider à suivre la population et à évaluer les mesures prises pour favoriser sa survie.",
+      "zh": "问题不只是得到一个数字：更好地了解这些离开的个体，应有助于跟踪种群并评估促进其存活的措施。",
+      "glosses": [
+        {
+          "surface": "survie",
+          "lemma": "survie",
+          "zh": "存活"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Le projet, financé par l’Agence de l’eau Rhône Méditerranée Corse et la Compagnie nationale du Rhône, prévoit trois années pour tester des méthodes complémentaires.",
+      "zh": "该项目由罗讷—地中海—科西嘉水务局和罗讷河国家公司资助，计划用三年测试互补的方法。",
+      "glosses": [
+        {
+          "surface": "complémentaires",
+          "lemma": "complémentaire",
+          "zh": "互补的；复数"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "La première consiste à utiliser un guideau, un grand filet déployé depuis une embarcation dans le courant du fleuve, selon une technique déjà pratiquée sur la Loire.",
+      "zh": "第一种方法是使用一种称为guideau的大网，从船上将它布放在河流中；这种技术已在卢瓦尔河使用。",
+      "glosses": [
+        {
+          "surface": "filet",
+          "lemma": "filet",
+          "zh": "渔网"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Les anguilles entraînées vers la poche située à son extrémité peuvent être capturées, comptées et mesurées, puis relâchées dans l’eau.",
+      "zh": "进入渔网末端网袋的鳗鱼可以被捕获、计数和测量，然后被放回水中。",
+      "glosses": [
+        {
+          "surface": "relâchées",
+          "lemma": "relâcher",
+          "zh": "释放；阴性复数过去分词"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Les essais auront lieu dans le bas Rhône, entre Avignon et l’aménagement de Beaucaire, principalement la nuit et pendant la période de migration présumée.",
+      "zh": "试验将在阿维尼翁与博凯尔水利设施之间的罗讷河下游进行，主要安排在夜间以及预计的迁徙时期。",
+      "glosses": [
+        {
+          "surface": "présumée",
+          "lemma": "présumé",
+          "zh": "推定的；尚待确认的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Cette période s’étend de septembre au début du printemps, mais le calendrier des pêches dépendra aussi des conditions hydrologiques, notamment des variations du débit.",
+      "zh": "这一时期从九月延续至初春，但捕捞日程也将取决于水文状况，特别是流量的变化。",
+      "glosses": [
+        {
+          "surface": "débit",
+          "lemma": "débit",
+          "zh": "水流流量"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "La Compagnie nationale du Rhône fournira des prévisions de ces variations afin d’aider les équipes à anticiper les moments favorables et à organiser leurs interventions.",
+      "zh": "罗讷河国家公司将提供这些变化的预报，帮助团队预判适宜时机并安排作业。",
+      "glosses": [
+        {
+          "surface": "prévisions",
+          "lemma": "prévision",
+          "zh": "预测；预报；复数"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Toutefois, utiliser un outil connu ne garantit pas que son fonctionnement sera identique ailleurs : la taille du Rhône impose une adaptation technique et logistique.",
+      "zh": "不过，使用一种已知工具并不保证它在其他地方运行情况相同：罗讷河的规模要求技术和后勤上的调整。",
+      "glosses": [
+        {
+          "surface": "adaptation",
+          "lemma": "adaptation",
+          "zh": "适应性调整"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "C’est pourquoi l’expérience des pêcheurs professionnels du Rhône et l’appui de ceux de la Loire occupent une place importante dans la mise en œuvre du dispositif.",
+      "zh": "因此，罗讷河职业渔民的经验以及卢瓦尔河同行的支持，在这套装置的实施中占据重要位置。",
+      "glosses": [
+        {
+          "surface": "pêcheurs",
+          "lemma": "pêcheur",
+          "zh": "渔民；复数"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "En parallèle, deux caméras acoustiques seront installées près du Pont d’Aramon, au centre du chenal de navigation, pour observer les passages de poissons.",
+      "zh": "与此同时，两台声学摄像机将安装在阿拉蒙桥附近的航道中央，用于观察鱼类通过。",
+      "glosses": [
+        {
+          "surface": "chenal",
+          "lemma": "chenal",
+          "zh": "航道"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Contrairement à une caméra classique, cet équipement produit des images numériques à partir d’ondes sonores, ce qui lui permet de fonctionner la nuit et dans une eau trouble.",
+      "zh": "与普通摄像机不同，这种设备利用声波生成数字图像，因此能够在夜间和浑浊的水中工作。",
+      "glosses": [
+        {
+          "surface": "ondes sonores",
+          "lemma": "onde sonore",
+          "zh": "声波；复数"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Les observations continues seront comparées aux captures au guideau pour déterminer si la technologie peut contribuer à un suivi durable de cette migration.",
+      "zh": "连续观测结果将与guideau渔网的捕获结果进行比较，以判断该技术能否帮助长期监测这种迁徙。",
+      "glosses": [
+        {
+          "surface": "captures",
+          "lemma": "capture",
+          "zh": "捕获结果；复数"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Les nombreuses images doivent également aider au développement d’outils d’intelligence artificielle capables de détecter les poissons, puis, à terme, d’identifier les anguilles.",
+      "zh": "大量图像还应有助于开发能够检测鱼类、并最终识别鳗鱼的人工智能工具。",
+      "glosses": [
+        {
+          "surface": "à terme",
+          "lemma": "à terme",
+          "zh": "最终；从长期来看"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Il faudra adapter les algorithmes aux images du Rhône : l’identification automatique des anguilles reste donc un objectif annoncé, plutôt qu’un résultat déjà acquis.",
+      "zh": "需要让算法适应罗讷河的图像：因此，鳗鱼自动识别仍是公布的目标，而不是已经取得的成果。",
+      "glosses": [
+        {
+          "surface": "acquis",
+          "lemma": "acquis",
+          "zh": "已经取得的"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Au-delà du comptage, les scientifiques mesureront et pèseront les anguilles capturées, puis évalueront leur degré d’avancement vers le stade argenté.",
+      "zh": "除了计数，科研人员还将测量被捕鳗鱼的尺寸和体重，并评估其向银鳗阶段转变的进程。",
+      "glosses": [
+        {
+          "surface": "pèseront",
+          "lemma": "peser",
+          "zh": "将称重；简单将来时第三人称复数"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Chaque année, quelques dizaines d’individus feront aussi l’objet d’un bilan sanitaire complet, afin de mieux connaître leur état au moment du départ.",
+      "zh": "每年还将对数十个个体进行全面健康检查，以更好地了解它们出发时的状态。",
+      "glosses": [
+        {
+          "surface": "sanitaire",
+          "lemma": "sanitaire",
+          "zh": "健康状况方面的"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Le secteur Beaucaire-Aramon présente un avantage géographique : il permet de suivre les anguilles venant de plus de 97 % de la surface du bassin versant du Rhône.",
+      "zh": "博凯尔—阿拉蒙区段有一个地理优势：它可以监测来自罗讷河流域超过97%面积范围内的鳗鱼。",
+      "glosses": [
+        {
+          "surface": "surface",
+          "lemma": "surface",
+          "zh": "面积"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Ce pourcentage décrit la surface couverte en amont ; il ne signifie pas que les chercheurs captureront 97 % des anguilles du fleuve.",
+      "zh": "这一百分比描述的是上游所覆盖的面积，并不意味着科研人员将捕获河中97%的鳗鱼。",
+      "glosses": [
+        {
+          "surface": "en amont",
+          "lemma": "en amont",
+          "zh": "在上游"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "En associant connaissances scientifiques et savoir-faire de terrain, GuidRhône cherchera à préciser les possibilités et les limites de chaque méthode avant d’établir les bases d’un suivi à long terme.",
+      "zh": "GuidRhône将结合科学知识和现场技能，在建立长期监测基础之前，努力明确每种方法的能力和局限。",
+      "glosses": [
+        {
+          "surface": "savoir-faire",
+          "lemma": "savoir-faire",
+          "zh": "实践技能；经验本领"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "filet",
+        "zh": "渔网",
+        "sentenceId": "s6",
+        "lemma": "filet",
+        "note": "这里是捕捞工具，注意与其他语境中的“鱼片”区分。"
+      },
+      {
+        "text": "débit",
+        "zh": "水流流量",
+        "sentenceId": "s9",
+        "lemma": "débit",
+        "note": "水文学语境，表示单位时间流过的水量。"
+      },
+      {
+        "text": "prévisions",
+        "zh": "预测；预报",
+        "sentenceId": "s10",
+        "lemma": "prévision",
+        "note": "名词复数；与已经观测到的结果区分。"
+      },
+      {
+        "text": "pêcheurs",
+        "zh": "渔民",
+        "sentenceId": "s12",
+        "lemma": "pêcheur",
+        "note": "指从事捕鱼的人；复数。"
+      },
+      {
+        "text": "sanitaire",
+        "zh": "健康状况方面的",
+        "sentenceId": "s19",
+        "lemma": "sanitaire",
+        "note": "bilan sanitaire指健康检查，不是工程评估。"
+      },
+      {
+        "text": "surface",
+        "zh": "面积",
+        "sentenceId": "s20",
+        "lemma": "surface",
+        "note": "97%的分母是流域面积，不是鱼的数量。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Toutefois",
+        "zh": "不过；然而",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "Contrairement à",
+        "zh": "与……相反；不同于",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "plutôt qu’un résultat déjà acquis",
+        "zh": "而不是已经取得的成果",
+        "sentenceId": "s17"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "ne garantit pas que…说明已知工具迁移到新条件时仍需验证；ici“sera”为将来时。"
+      },
+      {
+        "sentenceId": "s20",
+        "note": "permet de + infinitif表示使某事成为可能；de plus de 97 %修饰surface。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pourquoi faut-il parfois combiner plusieurs façons d’observer un même phénomène ?",
+        "zh": "为什么有时需要结合多种方式观察同一个现象？"
+      },
+      {
+        "text": "Quel rôle les connaissances des professionnels peuvent-elles jouer dans un projet scientifique ?",
+        "zh": "专业从业者的知识可以在科研项目中发挥什么作用？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Cette méthode est utile, à condition de l’adapter au contexte.",
+        "zh": "只要让这种方法适应具体情境，它就有用。",
+        "note": "教学补充：à condition de后接动词原形。"
+      },
+      {
+        "text": "Il faut distinguer l’objectif annoncé du résultat obtenu.",
+        "zh": "需要区分公布的目标与取得的结果。",
+        "note": "教学补充：distinguer A de B用于说明两者不能混同。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-de-erfahrung-sichtbar-machen",
+  "storyId": "erwachsenenbildung-volunteer-certificate-2026-10-19",
+  "lang": "de",
+  "date": "2026-11-02",
+  "title": "Was Freiwillige bei ihrer Arbeit lernen",
+  "titleZh": "让志愿工作中学到的能力可见",
+  "summaryZh": "萨尔茨堡的一项免费认证项目把志愿教育工作中的经验、交流和进一步学习结合起来。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：围绕志愿活动与进修作连贯说明，使用关系从句、statt…zu、条件句和原因说明；保留参与条件与“可能资助”的限定。",
+  "category": "education",
+  "topics": [
+    "成人教育",
+    "社会参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "erwachsenenbildung.at",
+    "title": "Neuer Zertifikatslehrgang für ehrenamtliche Bildungswerkleitungen",
+    "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20944-neuer-zertifikatslehrgang-fuer-bildungswerkleitungen.php",
+    "publishedAt": "2026-10-19",
+    "lang": "de",
+    "author": "Marlene Klotz，Salzburger Bildungswerk/Ring ÖBW"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Marlene Klotz，Salzburger Bildungswerk/Ring ÖBW，发表于 erwachsenenbildung.at，原日期 2026-10-19。原文与本教学改编依据 CC BY 4.0；来源及许可链接见上。无原作者或机构背书。",
+  "adaptation": "Dimenticato 编辑于2026-11-02作同语言分级改写、中文翻译及原创教学补充，并非原文或当天新闻。仅使用已许可的作者叙述，删去直接引语、照片、图表、标志和外部链接作品；事件安排和项目结果均按原报道日期表述。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Wer in einer Gemeinde freiwillig Bildungsveranstaltungen organisiert, braucht mehr als gute Ideen.",
+      "zh": "在一个社区志愿组织教育活动，需要的不只是好点子。",
+      "glosses": [
+        {
+          "surface": "freiwillig",
+          "lemma": "freiwillig",
+          "zh": "自愿地；以志愿者身份"
+        },
+        {
+          "surface": "Gemeinde",
+          "lemma": "Gemeinde",
+          "zh": "市镇；社区"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Zu dieser Arbeit gehören Planung, verständliche Kommunikation und die Fähigkeit, mit unterschiedlichen Menschen zusammenzuarbeiten.",
+      "zh": "这项工作包括规划、清晰沟通以及与不同的人合作的能力。",
+      "glosses": [
+        {
+          "surface": "Fähigkeit",
+          "lemma": "Fähigkeit",
+          "zh": "能力"
+        },
+        {
+          "surface": "zusammenzuarbeiten",
+          "lemma": "zusammenarbeiten",
+          "zh": "合作",
+          "note": "带zu的不定式，zu置于可分前缀与词干之间。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Dabei entstehen viele Kompetenzen, die im Alltag leicht übersehen werden, manchmal sogar von den Ehrenamtlichen selbst.",
+      "zh": "由此形成的许多能力在日常中容易被忽略，有时甚至被志愿者自己忽略。",
+      "glosses": [
+        {
+          "surface": "Kompetenzen",
+          "lemma": "Kompetenz",
+          "zh": "能力；技能"
+        },
+        {
+          "surface": "übersehen",
+          "lemma": "übersehen",
+          "zh": "忽略"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Das Salzburger Bildungswerk hat deshalb ein kostenloses Zertifizierungsprogramm entwickelt, das solche Erfahrungen sichtbar machen soll.",
+      "zh": "因此，萨尔茨堡教育组织开发了一项免费的认证项目，旨在让这些经验变得可见。",
+      "glosses": [
+        {
+          "surface": "kostenloses",
+          "lemma": "kostenlos",
+          "zh": "免费的",
+          "note": "修饰中性名词Zertifizierungsprogramm。"
+        },
+        {
+          "surface": "sichtbar",
+          "lemma": "sichtbar",
+          "zh": "可见的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Es richtet sich an aktive ehrenamtliche Bildungswerkleitungen in Salzburger Gemeinden, die diese Aufgabe seit mindestens eineinhalb Jahren erfüllen.",
+      "zh": "项目面向萨尔茨堡各市镇现任的志愿教育机构负责人，要求他们担任这一职责至少一年半。",
+      "glosses": [
+        {
+          "surface": "mindestens",
+          "lemma": "mindestens",
+          "zh": "至少"
+        },
+        {
+          "surface": "eineinhalb",
+          "lemma": "eineinhalb",
+          "zh": "一个半"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Das Programm verbindet den Blick auf die bisherige Tätigkeit mit neuen Lernmöglichkeiten.",
+      "zh": "项目把对已有工作的回顾与新的学习机会结合起来。",
+      "glosses": [
+        {
+          "surface": "bisherige",
+          "lemma": "bisherig",
+          "zh": "迄今为止的"
+        },
+        {
+          "surface": "verbindet",
+          "lemma": "verbinden",
+          "zh": "连接；结合"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Zunächst dokumentieren die Teilnehmenden ihre Bildungsangebote und denken über die eigene Arbeit nach.",
+      "zh": "首先，参加者记录自己提供的教育活动，并反思自己的工作。",
+      "glosses": [
+        {
+          "surface": "dokumentieren",
+          "lemma": "dokumentieren",
+          "zh": "记录"
+        },
+        {
+          "surface": "nach",
+          "lemma": "nachdenken",
+          "zh": "思考",
+          "note": "denken … nach是可分动词nachdenken。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Außerdem besuchen sie einen vierstündigen Workshop, in dem sie sich mit ihren Kompetenzen beschäftigen.",
+      "zh": "此外，他们参加一个四小时的工作坊，在其中梳理自己的能力。",
+      "glosses": [
+        {
+          "surface": "vierstündigen",
+          "lemma": "vierstündig",
+          "zh": "持续四小时的"
+        },
+        {
+          "surface": "beschäftigen",
+          "lemma": "sich beschäftigen",
+          "zh": "关注；探讨"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Ein weiterer Baustein ist eine Hospitation bei einem anderen örtlichen Bildungswerk.",
+      "zh": "另一个环节是到另一家当地教育机构观摩。",
+      "glosses": [
+        {
+          "surface": "Hospitation",
+          "lemma": "Hospitation",
+          "zh": "观摩学习"
+        },
+        {
+          "surface": "Baustein",
+          "lemma": "Baustein",
+          "zh": "组成环节"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Dort können sie andere Veranstaltungsformen und Arbeitsweisen kennenlernen, statt nur die eigenen Gewohnheiten zu betrachten.",
+      "zh": "在那里，他们可以了解其他活动形式和工作方式，而不只是审视自己的习惯。",
+      "glosses": [
+        {
+          "surface": "Arbeitsweisen",
+          "lemma": "Arbeitsweise",
+          "zh": "工作方式"
+        },
+        {
+          "surface": "Gewohnheiten",
+          "lemma": "Gewohnheit",
+          "zh": "习惯"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Der Austausch mit anderen Freiwilligen hilft dabei, die eigene Bildungsarbeit aus einer neuen Perspektive zu sehen.",
+      "zh": "与其他志愿者交流，有助于从新角度看待自己的教育工作。",
+      "glosses": [
+        {
+          "surface": "Austausch",
+          "lemma": "Austausch",
+          "zh": "交流"
+        },
+        {
+          "surface": "Perspektive",
+          "lemma": "Perspektive",
+          "zh": "视角"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Nach dem Bericht vom 19. Oktober 2026 hatten bereits vier Bildungswerkleiterinnen das Programm erfolgreich abgeschlossen.",
+      "zh": "根据2026年10月19日的报道，当时已有四位女性教育机构负责人成功完成了项目。",
+      "glosses": [
+        {
+          "surface": "abgeschlossen",
+          "lemma": "abschließen",
+          "zh": "完成",
+          "note": "hatten … abgeschlossen：过去完成时。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Die Weiterbildungsakademie Österreich hat das Programm mit 5,5 ECTS akkreditiert.",
+      "zh": "奥地利继续教育学院以5.5个ECTS学分对该项目进行了认证。",
+      "glosses": [
+        {
+          "surface": "akkreditiert",
+          "lemma": "akkreditieren",
+          "zh": "认证",
+          "note": "ECTS是欧洲学分转换与累积体系。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Es geht aber nicht nur darum, bereits vorhandene Fähigkeiten aufzuschreiben.",
+      "zh": "但项目不只是把已经具备的能力写下来。",
+      "glosses": [
+        {
+          "surface": "vorhandene",
+          "lemma": "vorhanden",
+          "zh": "已有的"
+        },
+        {
+          "surface": "aufzuschreiben",
+          "lemma": "aufschreiben",
+          "zh": "写下"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Gemeinsam mit hauptamtlichen Mitarbeiterinnen wird auch überlegt, welche weitere Ausbildung für die einzelne Person sinnvoll ist.",
+      "zh": "参加者还会与专职工作人员一起考虑，哪些进一步培训适合自己。",
+      "glosses": [
+        {
+          "surface": "hauptamtlichen",
+          "lemma": "hauptamtlich",
+          "zh": "专职的"
+        },
+        {
+          "surface": "sinnvoll",
+          "lemma": "sinnvoll",
+          "zh": "有意义的；合适的"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Wer sicherer präsentieren oder vor Publikum sprechen möchte, kann passende Weiterbildungen vom Bildungswerk finanziert bekommen.",
+      "zh": "希望更自信地作展示或面对观众讲话的人，可能获得教育组织对合适进修项目的资助。",
+      "glosses": [
+        {
+          "surface": "Publikum",
+          "lemma": "Publikum",
+          "zh": "观众；听众"
+        },
+        {
+          "surface": "finanziert",
+          "lemma": "finanzieren",
+          "zh": "资助"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Diese Möglichkeit ergänzt die Anerkennung bisheriger Erfahrungen durch gezielte Unterstützung beim Weiterlernen.",
+      "zh": "这种机会在认可既有经验之外，也为继续学习提供有针对性的支持。",
+      "glosses": [
+        {
+          "surface": "Anerkennung",
+          "lemma": "Anerkennung",
+          "zh": "认可"
+        },
+        {
+          "surface": "gezielte",
+          "lemma": "gezielt",
+          "zh": "有针对性的"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Auch andere Bildungsorganisationen mit Ehrenamtlichen können sich über das Modell informieren und daraus Anregungen für eigene Programme gewinnen.",
+      "zh": "其他有志愿者参与的教育组织也可以了解这个模式，并从中为自己的项目获得启发。",
+      "glosses": [
+        {
+          "surface": "Anregungen",
+          "lemma": "Anregung",
+          "zh": "启发；建议"
+        },
+        {
+          "surface": "gewinnen",
+          "lemma": "gewinnen",
+          "zh": "获得"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "So werden nicht nur einzelne Personen unterstützt: Neue Kontakte und Ideen können auch die Bildungsangebote in den Gemeinden stärken.",
+      "zh": "这样，受支持的不只是个人：新的联系和想法也能加强各市镇的教育活动。",
+      "glosses": [
+        {
+          "surface": "Kontakte",
+          "lemma": "Kontakt",
+          "zh": "联系"
+        },
+        {
+          "surface": "stärken",
+          "lemma": "stärken",
+          "zh": "加强"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Die organisierten Veranstaltungen reichen dabei von Vorträgen über künstliche Intelligenz bis zu Schreibworkshops.",
+      "zh": "他们组织的活动可以从关于人工智能的讲座延伸到写作工作坊。",
+      "glosses": [
+        {
+          "surface": "reichen",
+          "lemma": "reichen",
+          "zh": "范围涵盖",
+          "note": "von … bis zu …表示范围。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Kompetenzen",
+        "zh": "能力；技能",
+        "sentenceId": "s3",
+        "lemma": "Kompetenz",
+        "note": "viele后使用复数Kompetenzen；语境指志愿工作中获得的能力。"
+      },
+      {
+        "text": "kostenloses",
+        "zh": "免费的",
+        "sentenceId": "s4",
+        "lemma": "kostenlos",
+        "note": "ein kostenloses Zertifizierungsprogramm：中性单数第四格形容词词尾-es。"
+      },
+      {
+        "text": "mindestens",
+        "zh": "至少",
+        "sentenceId": "s5",
+        "lemma": "mindestens",
+        "note": "mindestens eineinhalb Jahre是参与门槛：至少一年半。"
+      },
+      {
+        "text": "Hospitation",
+        "zh": "观摩学习",
+        "sentenceId": "s9",
+        "lemma": "Hospitation",
+        "note": "bei einem anderen Bildungswerk说明到另一机构观摩学习。"
+      },
+      {
+        "text": "Publikum",
+        "zh": "观众；听众",
+        "sentenceId": "s16",
+        "lemma": "Publikum",
+        "note": "vor Publikum sprechen意为面对观众讲话。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "richtet sich an",
+        "zh": "面向……",
+        "sentenceId": "s5",
+        "note": "sich an jemanden richten用于说明项目受众。"
+      },
+      {
+        "text": "aus einer neuen Perspektive",
+        "zh": "从一个新角度",
+        "sentenceId": "s11",
+        "note": "aus后用第三格einer；常用于反思经验。"
+      },
+      {
+        "text": "vor Publikum sprechen",
+        "zh": "面对观众讲话",
+        "sentenceId": "s16",
+        "note": "Publikum为集合名词，此处不用冠词。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "statt … zu说明与单纯沿用自身习惯不同的学习方式。"
+      },
+      {
+        "sentenceId": "s16",
+        "note": "kann … finanziert bekommen表示存在资助机会，不等于每个人自动获资助。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Was hast du durch freiwillige Arbeit gelernt?",
+        "zh": "你通过志愿工作学到了什么？"
+      },
+      {
+        "text": "Würdest du lieber einen Workshop besuchen oder bei einer anderen Gruppe hospitieren? Warum?",
+        "zh": "你更愿意参加工作坊，还是去别的团队观摩？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Durch diese Aufgabe habe ich gelernt, …",
+        "zh": "通过这项任务，我学会了……",
+        "note": "原创口语补充，不是原报道引语。"
+      },
+      {
+        "text": "Ich möchte meine Erfahrungen besser beschreiben können.",
+        "zh": "我希望能更好地描述自己的经验。",
+        "note": "原创口语补充，不是原报道引语。"
+      }
+    ]
+  }
+}

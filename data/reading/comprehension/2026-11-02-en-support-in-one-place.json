@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-en-support-in-one-place",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "How does the centre organise its help?",
+      "options": [
+        "It sends every visitor to the same training course.",
+        "It brings several kinds of support together locally.",
+        "It provides job advice through a national website.",
+        "It asks visitors to contact employers before coming."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "中心把简历、职业、心理健康和住房支持放到同一地点，不是统一培训或纯网络服务。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What are the young visitors seeking help with?",
+      "options": [
+        "Preparing to enter work and dealing with related needs.",
+        "Choosing staff for the centre and planning its services.",
+        "Opening a new centre and finding local partners.",
+        "Providing training for employers across the country."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s5",
+        "s6",
+        "s8"
+      ],
+      "explanationZh": "青年需要就业准备及相关支持；他们不是负责建立中心、聘用中心人员或培训雇主的机构。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Which statement describes the wider plan?",
+      "options": [
+        "Opening 360 centres in Scotland during the next year.",
+        "Offering three years of training to 360 young people.",
+        "Expanding hubs to over 360 areas across Great Britain in three years.",
+        "Connecting 360 employers with one centre over three years."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "360多指地区数，三年指扩展计划时间，范围为大不列颠。"
+    }
+  ]
+}

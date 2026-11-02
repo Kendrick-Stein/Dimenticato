@@ -1,0 +1,316 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-fr-un-opera-qui-sort-de-sa-salle",
+  "storyId": "culture-opera-comique-mandat-2026-10-28",
+  "lang": "fr",
+  "date": "2026-11-02",
+  "title": "Un opéra qui sort de sa salle",
+  "titleZh": "走出自己剧场的歌剧院",
+  "summaryZh": "巴黎喜歌剧院在整修期间安排外出演出，也继续支持青年艺术家。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连接已完成工作、整修计划与文化目标，包含复合过去时、将来时、关系从句和让步关系；行业词汇配中文解释。",
+  "category": "culture",
+  "topics": [
+    "歌剧",
+    "无障碍设施",
+    "青年艺术家"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Renouvellement de Louis Langrée à la direction du théâtre national de l’Opéra-Comique",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/renouvellement-de-louis-langree-a-la-direction-du-theatre-national-de-l-opera-comique2",
+    "publishedAt": "2026-10-28",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：Ministère de la Culture，《Renouvellement de Louis Langrée à la direction du théâtre national de l’Opéra-Comique》，2026-10-28；原文直接链接见来源。法国文化部机构文字依法律声明II.4.3.1(a)采用CC BY-SA 3.0 FR；本改写、中文翻译及教学补充以相同许可提供。Dimenticato于2026-11-02进行法语分级改写、中文翻译及原创教学补充，不表示原作者或机构认可。",
+  "adaptation": "同语言分级改写，不是原文全文或当天新闻。仅改写机构文章叙述；不转载照片、视频、标志、外链资料、第三方引语。保留原报道日期，明确已发生事项与未来计划。词义、文末口语及练习均为教学补充。第7句对mécénat的简释及第16句对计划时态的澄清为编辑教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 28 octobre 2026, le ministère de la Culture a annoncé le renouvellement de Louis Langrée à la direction de l’Opéra-Comique.",
+      "zh": "2026年10月28日，法国文化部宣布路易·朗格雷续任巴黎喜歌剧院院长。",
+      "glosses": [
+        {
+          "surface": "renouvellement",
+          "lemma": "renouvellement",
+          "zh": "续任；更新"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Son deuxième mandat durera trois ans, jusqu’en 2029, après un premier mandat commencé en novembre 2021.",
+      "zh": "在始于2021年11月的首个任期之后，他的第二个任期将持续三年，直到2029年。",
+      "glosses": [
+        {
+          "surface": "mandat",
+          "lemma": "mandat",
+          "zh": "任期"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Le communiqué décrit un projet qui associe les œuvres du passé, la création actuelle et l’accueil de publics plus variés.",
+      "zh": "公告介绍了一个将过去的作品、当代创作与吸引更多不同观众结合起来的项目。",
+      "glosses": [
+        {
+          "surface": "œuvres",
+          "lemma": "œuvre",
+          "zh": "作品；复数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Cette orientation ne concerne pas seulement les spectacles : elle comprend aussi la formation et l’accompagnement de jeunes artistes.",
+      "zh": "这一方向不仅涉及演出，也包括对青年艺术家的培养和支持。",
+      "glosses": [
+        {
+          "surface": "accompagnement",
+          "lemma": "accompagnement",
+          "zh": "指导与支持"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Dans le Campus Favart, l’Académie et la Maîtrise Populaire ont développé les activités de transmission artistique.",
+      "zh": "在Favart园区，学院和Maîtrise Populaire艺术教育项目发展了艺术传承活动。",
+      "glosses": [
+        {
+          "surface": "transmission",
+          "lemma": "transmission",
+          "zh": "传承；传授"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Des partenariats avec la Juilliard School de New York et la Villa Albertine soutiennent également cette ambition.",
+      "zh": "与纽约茱莉亚学院及Villa Albertine的合作也支持着这一目标。",
+      "glosses": [
+        {
+          "surface": "partenariats",
+          "lemma": "partenariat",
+          "zh": "合作关系；复数"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Le mécénat, c’est-à-dire le soutien de donateurs, a notamment aidé à commander des œuvres nouvelles et à rénover les Ateliers Berthier.",
+      "zh": "赞助，也就是捐助者的支持，尤其帮助委约创作新作品，并翻修了Berthier工坊。",
+      "glosses": [
+        {
+          "surface": "mécénat",
+          "lemma": "mécénat",
+          "zh": "文化艺术赞助"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Il a aussi contribué à rapprocher les activités pédagogiques et artistiques, tandis que l’établissement a renforcé l’accueil des personnes en situation de handicap.",
+      "zh": "赞助也帮助拉近教学活动与艺术活动之间的联系；与此同时，该机构加强了对残障人士的接待。",
+      "glosses": [
+        {
+          "surface": "pédagogiques",
+          "lemma": "pédagogique",
+          "zh": "教学的；复数"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "La saison 2026-2027 sera marquée par des travaux importants dans la Salle Favart, le lieu historique de l’institution.",
+      "zh": "2026—2027演出季的一个重要事项，是对该机构的历史场所Favart厅开展大规模施工。",
+      "glosses": [
+        {
+          "surface": "travaux",
+          "lemma": "travail",
+          "zh": "工程；此义常用复数"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Le ministère finance ces travaux à hauteur de 6,8 millions d’euros pour moderniser et sécuriser les équipements de scène.",
+      "zh": "文化部为这些工程提供680万欧元，用于使舞台设施现代化并提升其安全性。",
+      "glosses": [
+        {
+          "surface": "sécuriser",
+          "lemma": "sécuriser",
+          "zh": "提高安全性"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Le projet prévoit également de restaurer la fosse d’orchestre dans son état historique et de la rendre accessible aux personnes à mobilité réduite.",
+      "zh": "项目还计划恢复乐池的历史面貌，并使行动不便的人士能够使用它。",
+      "glosses": [
+        {
+          "surface": "fosse",
+          "lemma": "fosse",
+          "zh": "这里指乐池"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Pendant cette période, l’Opéra-Comique prévoit 109 représentations hors de sa salle, à Paris, en Île-de-France et en région.",
+      "zh": "在此期间，巴黎喜歌剧院计划在自己的剧场之外，在巴黎、法兰西岛及其他地区举办109场演出。",
+      "glosses": [
+        {
+          "surface": "représentations",
+          "lemma": "représentation",
+          "zh": "演出场次；复数"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Le programme annoncé comprend cinq productions lyriques, ainsi que sept productions en tournée dans 24 villes.",
+      "zh": "公布的节目包括五部歌剧类制作，以及在24座城市巡演的七部制作。",
+      "glosses": [
+        {
+          "surface": "tournée",
+          "lemma": "tournée",
+          "zh": "巡演"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Des spectacles sont notamment prévus dans un lycée, au Théâtre de Gennevilliers et au Grand Palais.",
+      "zh": "演出地点尤其包括一所高中、Gennevilliers剧院和大皇宫。",
+      "glosses": [
+        {
+          "surface": "prévus",
+          "lemma": "prévoir",
+          "zh": "计划安排的；过去分词复数"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Même pendant la modernisation de son bâtiment, l’institution veut donc maintenir une présence artistique auprès du public.",
+      "zh": "因此，即使在建筑现代化改造期间，这家机构也希望继续向公众提供艺术活动。",
+      "glosses": [
+        {
+          "surface": "maintenir",
+          "lemma": "maintenir",
+          "zh": "保持"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Les annonces concernant la saison 2026-2027 présentent un programme à venir ; elles ne constituent pas le bilan de spectacles déjà réalisés.",
+      "zh": "有关2026—2027演出季的公告介绍的是未来的安排，而不是已经完成的演出总结。",
+      "glosses": [
+        {
+          "surface": "bilan",
+          "lemma": "bilan",
+          "zh": "总结；结果报告"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "mandat",
+        "zh": "任期",
+        "sentenceId": "s2",
+        "lemma": "mandat",
+        "note": "政治或机构职务的任职期限。"
+      },
+      {
+        "text": "œuvres",
+        "zh": "作品",
+        "sentenceId": "s3",
+        "lemma": "œuvre",
+        "note": "œ为合字，复数词尾s。"
+      },
+      {
+        "text": "mécénat",
+        "zh": "文化艺术赞助",
+        "sentenceId": "s7",
+        "lemma": "mécénat",
+        "note": "指对文化创作等的资助。"
+      },
+      {
+        "text": "représentations",
+        "zh": "演出场次",
+        "sentenceId": "s12",
+        "lemma": "représentation",
+        "note": "这里不是“代表”，而是一场场演出。"
+      },
+      {
+        "text": "tournée",
+        "zh": "巡演",
+        "sentenceId": "s13",
+        "lemma": "tournée",
+        "note": "en tournée表示处于巡演安排中。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "ne concerne pas seulement",
+        "zh": "不仅涉及",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "à hauteur de",
+        "zh": "金额达到；额度为",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "personnes à mobilité réduite",
+        "zh": "行动不便的人士",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "tandis que在这里连接同时发生的两方面发展。"
+      },
+      {
+        "sentenceId": "s15",
+        "note": "Même pendant…表达让步：即便在某段时期，也继续做某事。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quels lieux de ta ville pourraient accueillir un spectacle pendant des travaux ?",
+        "zh": "如果剧场施工，你所在城市哪些地方可以接待演出？"
+      },
+      {
+        "text": "Que faut-il changer pour rendre les lieux culturels plus accessibles ?",
+        "zh": "为了让文化场所更容易进入和使用，需要改变什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "On pourrait organiser le spectacle dans un autre lieu.",
+        "zh": "我们可以把演出安排在另一个地方。",
+        "note": "教学补充：On pourrait提出建议。"
+      },
+      {
+        "text": "L’accès au lieu est aussi important que le programme.",
+        "zh": "场所是否方便进入和使用与演出内容同样重要。",
+        "note": "教学补充：aussi…que用于同等比较。"
+      }
+    ]
+  }
+}

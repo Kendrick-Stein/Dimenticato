@@ -2,6 +2,39 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-02-en-support-in-one-place",
+      "lang": "en",
+      "date": "2026-11-02",
+      "title": "Support in one place",
+      "titleZh": "在同一个地方获得帮助",
+      "summaryZh": "苏格兰一处青年服务中心把求职、培训、住房和心理健康支持放在一起，帮助16至24岁青年。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "在同一个地方获得帮助"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-30",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-02-it-prezzi-leggere-oltre-il-titolo",
+      "lang": "it",
+      "date": "2026-11-02",
+      "title": "Prezzi: leggere oltre il titolo",
+      "titleZh": "物价：不止读一个标题",
+      "summaryZh": "阅读十月物价初步估计，同时区分时间基准、商品类别和统计指标。",
+      "level": "B2",
+      "category": "work-economy",
+      "topics": [
+        "生活成本",
+        "统计阅读"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-30",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-30-fr-preserver-un-lieu-et-sa-place",
       "lang": "fr",
       "date": "2026-10-30",
@@ -17,6 +50,42 @@
       ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2026-10-29",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-02-fr-suivre-un-voyage-sous-leau",
+      "lang": "fr",
+      "date": "2026-11-02",
+      "title": "Suivre un voyage sous l’eau",
+      "titleZh": "追踪水下旅程",
+      "summaryZh": "研究人员希望结合渔网与声学成像，建立估计罗讷河银鳗迁徙数量的长期方法。",
+      "level": "B2",
+      "category": "environment",
+      "topics": [
+        "河流生态",
+        "鱼类迁徙",
+        "观察方法"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-28",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-02-fr-un-opera-qui-sort-de-sa-salle",
+      "lang": "fr",
+      "date": "2026-11-02",
+      "title": "Un opéra qui sort de sa salle",
+      "titleZh": "走出自己剧场的歌剧院",
+      "summaryZh": "巴黎喜歌剧院在整修期间安排外出演出，也继续支持青年艺术家。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "歌剧",
+        "无障碍设施",
+        "青年艺术家"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-28",
       "contentType": "native-adaptation"
     },
     {
@@ -86,6 +155,22 @@
       ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2026-10-23",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-02-en-responding-before-and-during-wildfires",
+      "lang": "en",
+      "date": "2026-11-02",
+      "title": "Responding before and during wildfires",
+      "titleZh": "在野火发生前与发生时应对",
+      "summaryZh": "英国公布结合空中支援、防护装备、泥炭地修复和预警的野火措施；区分已宣布资金、未来能力与预期效果。",
+      "level": "B2",
+      "category": "environment",
+      "topics": [
+        "在野火发生前与发生时应对"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-22",
       "contentType": "native-adaptation"
     },
     {
@@ -368,6 +453,58 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-11-02-de-erfahrung-sichtbar-machen",
+      "lang": "de",
+      "date": "2026-11-02",
+      "title": "Was Freiwillige bei ihrer Arbeit lernen",
+      "titleZh": "让志愿工作中学到的能力可见",
+      "summaryZh": "萨尔茨堡的一项免费认证项目把志愿教育工作中的经验、交流和进一步学习结合起来。",
+      "level": "B1",
+      "category": "education",
+      "topics": [
+        "成人教育",
+        "社会参与"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-19",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-02-de-werte-im-vereinsalltag",
+      "lang": "de",
+      "date": "2026-11-02",
+      "title": "Wie Werte im Vereinsalltag sichtbar werden",
+      "titleZh": "价值观如何在社团日常中体现",
+      "summaryZh": "克恩顿的EuropaWirkt项目把志愿活动、不同观点和地方交流连起来；讨论已举行，12月共同行动仍属报道中的计划。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "成人教育",
+        "社会参与"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-10-19",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-02-fr-une-visite-pour-imaginer-son-avenir",
+      "lang": "fr",
+      "date": "2026-11-02",
+      "title": "Une visite pour imaginer son avenir",
+      "titleZh": "一次帮助设想未来的参观",
+      "summaryZh": "学生和老师走进科研园区，通过活动和见面交流了解科研工作。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "校园参观",
+        "职业选择",
+        "科学交流"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-19",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-24-it-il-sole-e-i-servizi-quotidiani",
       "lang": "it",
       "date": "2026-10-24",
@@ -417,6 +554,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche",
+      "lang": "it",
+      "date": "2026-11-02",
+      "title": "Libri antichi tra archivi e biblioteche",
+      "titleZh": "档案馆与图书馆之间的古书",
+      "summaryZh": "回顾佩鲁贾一场书籍介绍活动，认识古书目录的作用。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "档案",
+        "文化活动"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-16",
       "contentType": "native-adaptation"
     },
     {
@@ -789,6 +943,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-02-it-una-storia-che-torna-visibile",
+      "lang": "it",
+      "date": "2026-11-02",
+      "title": "Una storia che torna visibile",
+      "titleZh": "重新被看见的一段历史",
+      "summaryZh": "从一场都灵展览公告，理解家族研究如何让被忽略的人物重新进入公共记忆。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "档案",
+        "文化活动"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-13",
       "contentType": "native-adaptation"
     },
     {
@@ -1689,6 +1860,23 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-11-02-de-gespraeche-ueber-frieden",
+      "lang": "de",
+      "date": "2026-11-02",
+      "title": "Vier Abende zum Zuhören und Diskutieren",
+      "titleZh": "四个倾听与讨论的夜晚",
+      "summaryZh": "维也纳的一组讲座从不同角度谈和平；报道日期为9月24日，活动安排跨越10月至12月。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "成人教育",
+        "社会参与"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-24",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-17-de-lernmaterialien-mit-ki",
       "lang": "de",
       "date": "2026-10-17",
@@ -1828,6 +2016,22 @@
       ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2026-09-16",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-02-en-a-landscape-with-many-roles",
+      "lang": "en",
+      "date": "2026-11-02",
+      "title": "A landscape with many roles",
+      "titleZh": "一片土地的多种作用",
+      "summaryZh": "多塞特郡Lyscombe获得国家自然保护区认定：保护草地、维持历史遗迹与较低强度农业如何相互联系？",
+      "level": "B1",
+      "category": "environment",
+      "topics": [
+        "一片土地的多种作用"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-15",
       "contentType": "native-adaptation"
     },
     {

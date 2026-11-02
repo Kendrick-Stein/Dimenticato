@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-de-erfahrung-sichtbar-machen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 22,
+      "answer": "Kompetenzen",
+      "options": [
+        "Kontakte",
+        "Kompetenzen",
+        "Aufgaben",
+        "Verpflichtungen"
+      ],
+      "explanation": "viele后使用复数Kompetenzen；语境指志愿工作中获得的能力。 本题还原原文中的“Kompetenzen”（能力；技能）。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 44,
+      "answer": "kostenloses",
+      "options": [
+        "kostbares",
+        "schriftliches",
+        "geschlossenes",
+        "kostenloses"
+      ],
+      "explanation": "ein kostenloses Zertifizierungsprogramm：中性单数第四格形容词词尾-es。 本题还原原文中的“kostenloses”（免费的）。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 110,
+      "answer": "mindestens",
+      "options": [
+        "mindestens",
+        "höchstens",
+        "beinahe",
+        "vorübergehend"
+      ],
+      "explanation": "mindestens eineinhalb Jahre是参与门槛：至少一年半。 本题还原原文中的“mindestens”（至少）。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 31,
+      "answer": "Hospitation",
+      "options": [
+        "Beratung",
+        "Fortbildung",
+        "Hospitation",
+        "Supervision"
+      ],
+      "explanation": "bei einem anderen Bildungswerk说明到另一机构观摩学习。 本题还原原文中的“Hospitation”（观摩学习）。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s16",
+      "start": 35,
+      "answer": "Publikum",
+      "options": [
+        "Team",
+        "Publikum",
+        "Gremium",
+        "Kollegium"
+      ],
+      "explanation": "vor Publikum sprechen意为面对观众讲话。 本题还原原文中的“Publikum”（观众；听众）。"
+    }
+  ]
+}

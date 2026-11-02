@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-it-prezzi-leggere-oltre-il-titolo",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale criterio guida la lettura dei dati proposta nel testo?",
+      "options": [
+        "Usare il carrello della spesa al posto delle altre misure.",
+        "Scegliere il dato mensile perché descrive meglio ogni famiglia.",
+        "Distinguere periodi, componenti e ipotesi prima di confrontare gli indicatori.",
+        "Ricavare dalle variazioni energetiche il prezzo di ciascun prodotto."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s3",
+        "s5",
+        "s10",
+        "s11",
+        "s14",
+        "s17"
+      ],
+      "explanationZh": "全文要求区分时间、统计范围与条件假设，而不是用单一指标替代所有其他指标。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Come cambiano i prezzi degli alimenti lavorati nei due confronti di ottobre?",
+      "options": [
+        "Diminuiscono rispetto a settembre e aumentano rispetto a un anno prima.",
+        "Aumentano rispetto a settembre e restano inferiori a quelli di un anno prima.",
+        "Restano uguali a settembre e diminuiscono rispetto a un anno prima.",
+        "Aumentano rispetto a settembre e restano uguali a quelli di un anno prima."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "同比仍下降0.2%，但环比上涨0.5%；不能把降幅收窄误读为同比转涨。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Perché il dato generale non descrive un aumento identico per ogni prodotto?",
+      "options": [
+        "Perché riguarda soltanto le spese sostenute nei supermercati.",
+        "Perché esclude dal paniere tutti i servizi acquistati dalle famiglie.",
+        "Perché assegna a ogni famiglia lo stesso importo di spesa.",
+        "Perché sintetizza componenti diverse tenendo conto del loro peso nei consumi."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "总体指标按消费权重汇总不同组成部分，不意味着所有商品同幅变化。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quale confronto tra carrello della spesa e acquisti frequenti è corretto?",
+      "options": [
+        "Gli acquisti frequenti comprendono anche voci come carburanti e trasporti urbani.",
+        "Il carrello della spesa comprende i carburanti, mentre gli acquisti frequenti li escludono.",
+        "I due gruppi comprendono gli stessi prodotti, ma si riferiscono ad anni diversi.",
+        "I due gruppi escludono gli alimenti e misurano soltanto i servizi."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "购物篮与高频购买类别的范围不同，后者还包含燃油、城市交通等。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Se nei mesi restanti l’indice cambiasse, come dovremmo leggere il 3,4% acquisito?",
+      "options": [
+        "Come il limite che i prezzi non potrebbero superare.",
+        "Come la variazione mensile da applicare a ogni famiglia.",
+        "Come un valore condizionato che non garantisce la media finale dell’anno.",
+        "Come la conferma che la diffusione di novembre sarebbe superflua."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s14",
+        "s17"
+      ],
+      "explanationZh": "3.4%建立在指数余下月份不变这一假设上；若变化，不能据此保证最终年均数字。"
+    }
+  ]
+}

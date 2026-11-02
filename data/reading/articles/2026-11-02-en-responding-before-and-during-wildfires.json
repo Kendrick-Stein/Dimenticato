@@ -1,0 +1,243 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-en-responding-before-and-during-wildfires",
+  "storyId": "mhclg-wildfire-package-2026-10-22",
+  "lang": "en",
+  "date": "2026-11-02",
+  "category": "environment",
+  "topics": [
+    "在野火发生前与发生时应对"
+  ],
+  "title": "Responding before and during wildfires",
+  "titleZh": "在野火发生前与发生时应对",
+  "summaryZh": "英国公布结合空中支援、防护装备、泥炭地修复和预警的野火措施；区分已宣布资金、未来能力与预期效果。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：比较预防、响应、能力建设和时间范围，使用抽象词汇、限定性从句及转折推论；不以词数单独判级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministry of Housing, Communities and Local Government; Ministry of Defence; Prime Minister’s Office, 10 Downing Street / GOV.UK",
+    "title": "Military planes and helicopters to fight wildfires from the sky",
+    "url": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+    "publishedAt": "2026-10-22",
+    "lang": "en",
+    "author": "Ministry of Housing, Communities and Local Government; Ministry of Defence; Prime Minister’s Office, 10 Downing Street; Katie White OBE MP; The Rt Hon Louise Haigh MP; The Rt Hon Wes Streeting MP; The Rt Hon Dame Angela Eagle DBE MP; The Rt Hon Andy Burnham MP; The Rt Hon Angela Rayner MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Ministry of Housing, Communities and Local Government; Ministry of Defence; Prime Minister’s Office, 10 Downing Street; Katie White OBE MP; The Rt Hon Louise Haigh MP; The Rt Hon Wes Streeting MP; The Rt Hon Dame Angela Eagle DBE MP; The Rt Hon Andy Burnham MP; The Rt Hon Angela Rayner MP; 2026-10-22; https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+  "adaptation": "2026-11-02整理：依据机构英文公告同语言分级改写；中文翻译、语境词义和练习由Dimenticato编辑添加，不是原文或官方课程。仅使用机构叙述，不复制直接引语、图片、标志、第三方材料。原报道日期单独保留，计划不写成已完成，不暗示原机构认可。 第3、5、13、16、17句中对措施关系、计划边界及数字含义的阅读提示为编辑教学解释，依据所引公告，不是额外实证成果。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 22 October 2026, the UK government announced a package of measures intended to strengthen the response to wildfires, combining military equipment, support for firefighters and changes to the way vulnerable landscapes are managed.",
+      "zh": "2026年10月22日，英国政府宣布一揽子旨在加强野火应对的措施，将军用装备、消防员支持以及脆弱景观管理方式的调整结合起来。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "The announcement followed an exceptionally hot summer and was published ahead of a summit bringing together fire chiefs, local leaders, experts and businesses to discuss preparedness.",
+      "zh": "公告发布于一个异常炎热的夏季之后，也在一次召集消防负责人、地方领导、专家和企业讨论准备工作的峰会之前。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Rather than presenting a single piece of technology as the answer, the package addresses several different points at which a fire can be prevented, detected or fought.",
+      "zh": "这套措施没有把某一项技术当作唯一答案，而是涉及火灾可以被预防、发现或扑救的多个环节。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "RAF Chinook helicopters and A400M aircraft are to receive specialist equipment so that they can help crews reach fires on remote moorland, steep hillsides and other terrain that is difficult to access.",
+      "zh": "英国皇家空军的支奴干直升机与A400M飞机将配备专用设备，以帮助消防队应对偏远荒原、陡峭山坡及其他难以抵达地形上的火灾。",
+      "glosses": [
+        {
+          "surface": "terrain",
+          "lemma": "terrain",
+          "zh": "地形"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The wording describes a capability to be developed, not evidence that all the aircraft have already been equipped or deployed on these missions.",
+      "zh": "这一表述描述的是有待建设的能力，并不证明所有飞机都已配备设备或投入此类任务。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Civilian fire and rescue services in all four UK nations will continue to be able to request military firefighting support through the existing Military Aid to the Civil Authorities process.",
+      "zh": "英国四个组成地区的民用消防与救援部门将继续能够通过现有的军队援助民政当局程序申请军事灭火支援。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Support on the ground includes additional specialist wildfire teams in England and up to £45 million backing for these teams and protective equipment designed specifically for wildfires.",
+      "zh": "地面支持包括在英格兰增设专业野火消防队，并以最高4500万英镑支持这些队伍及专为野火设计的防护装备。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "The new clothing is intended to be lighter and more breathable than the equipment primarily designed for fires inside buildings, making it more suitable for longer periods of outdoor firefighting.",
+      "zh": "新服装旨在比主要为建筑内部火灾设计的装备更轻、更透气，使其更适合较长时间的户外灭火。",
+      "glosses": [
+        {
+          "surface": "breathable",
+          "lemma": "breathable",
+          "zh": "透气的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "However, improving the response after a fire starts is only one part of the approach; another is to make landscapes less vulnerable in the first place.",
+      "zh": "然而，改善火灾开始后的应对只是这一方法的一部分；另一部分是从一开始就降低景观的脆弱性。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "The government announced £25 million for restoring dried-out peatlands in England, with the aim of helping them retain water and function as natural barriers to the spread of fire.",
+      "zh": "政府宣布投入2500万英镑修复英格兰干涸的泥炭地，目的是帮助它们保持水分，并形成阻碍火势蔓延的天然屏障。",
+      "glosses": [
+        {
+          "surface": "retain",
+          "lemma": "retain",
+          "zh": "保持"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "The associated grant scheme, to be run by Natural England, is expected to operate from April 2027 to April 2029, so its timetable extends well beyond the announcement itself.",
+      "zh": "相关资助计划将由英格兰自然署负责，预计从2027年4月持续到2029年4月，因此其时间安排远远延伸到公告发布之后。",
+      "glosses": [
+        {
+          "surface": "timetable",
+          "lemma": "timetable",
+          "zh": "时间安排"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Financial support for farmers is also planned for measures such as creating ponds and removing material that could burn in areas where the risk is high.",
+      "zh": "还计划向农民提供资金支持，用于建池塘、移除高风险地区可能燃烧的材料等措施。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Alongside these changes, ministers will consider stricter local restrictions or product bans when fire risks are high; the release does not describe these possibilities as a nationwide ban already in force.",
+      "zh": "与这些调整同时，部长们将考虑在火险较高时采取更严格的地方限制或产品禁令；新闻稿并未将这些可能措施描述成已经生效的全国禁令。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "A new Wildfires AI Unit is planned within the National Situation Centre, bringing universities, technology firms and government together, while work with the Met Office is intended to improve forecasts and public awareness.",
+      "zh": "计划在国家态势中心内新设野火人工智能部门，汇集高校、科技企业与政府，同时与英国气象局合作，旨在改善预报和公众认识。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "England’s first Wildfire Action Plan is also to be developed, covering prevention, preparedness, response and recovery, with closer cooperation across the UK’s devolved governments.",
+      "zh": "还将制定英格兰首份野火行动计划，涵盖预防、准备、响应及恢复，并加强与英国各权力下放政府的合作。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Taken together, the measures connect immediate firefighting needs with longer-term preparation, but an announcement of funding and intentions should not be confused with a completed system or a demonstrated reduction in future fires.",
+      "zh": "整体来看，这些措施将即时灭火需要与较长期的准备联系起来，但资金与意向的宣布不应被混同于已完成的体系，或已被证明的未来火灾减少。",
+      "glosses": [
+        {
+          "surface": "demonstrated",
+          "lemma": "demonstrate",
+          "zh": "被证明的"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "The release reports the Met Office’s finding that climate change made the summer’s extreme heat around 130 times more likely, a statement about the likelihood of heat rather than a count of fires.",
+      "zh": "新闻稿转述英国气象局的发现：气候变化使该夏季极端高温出现的可能性增加至约130倍；这一说法涉及高温的可能性，而非火灾次数。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "The proposed permanent aerial capability is to be based in the UK, while the peatland funding and additional specialist teams described in the release specifically concern England.",
+      "zh": "拟建立的常设空中灭火能力将以英国为基地，而新闻稿中的泥炭地资金与新增专业队伍则具体针对英格兰。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "terrain",
+        "zh": "地形",
+        "lemma": "terrain",
+        "sentenceId": "s4",
+        "note": "terrain为不可数名词，指荒原与坡地等地形；后接定语从句。"
+      },
+      {
+        "text": "breathable",
+        "zh": "透气的",
+        "lemma": "breathable",
+        "sentenceId": "s8",
+        "note": "breathable形容防护服透气；与lighter并列比较穿着特性。"
+      },
+      {
+        "text": "retain",
+        "zh": "保持",
+        "lemma": "retain",
+        "sentenceId": "s10",
+        "note": "retain water指保持水分；helping them后用动词原形。"
+      },
+      {
+        "text": "timetable",
+        "zh": "时间安排",
+        "lemma": "timetable",
+        "sentenceId": "s11",
+        "note": "timetable指项目预计2027年至2029年的实施时间，不是资金额。"
+      },
+      {
+        "text": "demonstrated",
+        "zh": "被证明的",
+        "lemma": "demonstrate",
+        "sentenceId": "s16",
+        "note": "demonstrated为过去分词作定语，指有证据证明的减少；本句强调公告不等于成效。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in the first place",
+        "zh": "从一开始／从源头",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "in force",
+        "zh": "已经生效",
+        "sentenceId": "s13"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s16",
+        "note": "should not be confused with区分公告、建成系统及有证据的效果，是审慎阅读政策新闻的表达。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which measures act before a wildfire, and which support the response after it begins?",
+        "zh": "哪些措施作用于野火发生前，哪些支持发生后的应对？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "An announcement is only the beginning of implementation.",
+        "zh": "公告只是实施的开始。",
+        "note": "原创口语练习表达，不是来源引语。"
+      }
+    ]
+  }
+}

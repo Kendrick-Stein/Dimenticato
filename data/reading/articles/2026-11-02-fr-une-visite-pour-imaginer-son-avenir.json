@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-fr-une-visite-pour-imaginer-son-avenir",
+  "storyId": "inrae-agrocampus33-2026-10-19",
+  "lang": "fr",
+  "date": "2026-11-02",
+  "title": "Une visite pour imaginer son avenir",
+  "titleZh": "一次帮助设想未来的参观",
+  "summaryZh": "学生和老师走进科研园区，通过活动和见面交流了解科研工作。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体校园参观场景，短句、复合过去时与目的表达；专业教育名称简化，全文配中文与语境词义。",
+  "category": "education",
+  "topics": [
+    "校园参观",
+    "职业选择",
+    "科学交流"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Coline Verneau / INRAE",
+    "title": "2ème édition de la JPO Agrocampus33",
+    "url": "https://www.inrae.fr/actualites/2eme-edition-jpo-agrocampus33",
+    "publishedAt": "2026-10-19",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0"
+  },
+  "attribution": "原文：Coline Verneau / INRAE，《2ème édition de la JPO Agrocampus33》，2026-10-19；原文直接链接见来源。INRAE公开机构文字依其使用条款采用Licence Ouverte Etalab 2.0。Dimenticato于2026-11-02进行法语分级改写、中文翻译及原创教学补充，不表示原作者或机构认可。",
+  "adaptation": "同语言分级改写，不是原文全文或当天新闻。仅改写机构文章叙述；不转载照片、视频、标志、外链资料、第三方引语。保留原报道日期，明确已发生事项与未来计划。词义、文末口语及练习均为教学补充。第7句是对jeux sérieux的简短教学释义，不是另外报道的活动成果。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 9 octobre 2026, des élèves et des professeurs ont visité le campus de la Grande Ferrade, près de Bordeaux.",
+      "zh": "2026年10月9日，学生和老师参观了波尔多附近的Grande Ferrade园区。",
+      "glosses": [
+        {
+          "surface": "élèves",
+          "lemma": "élève",
+          "zh": "学生；复数"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Ce campus fait partie du centre de recherche INRAE Nouvelle-Aquitaine-Bordeaux.",
+      "zh": "这个园区属于INRAE新阿基坦—波尔多研究中心。",
+      "glosses": [
+        {
+          "surface": "recherche",
+          "lemma": "recherche",
+          "zh": "研究"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Les visiteurs venaient de deux lycées agricoles, à Blanquefort et à Libourne-Montagne.",
+      "zh": "参观者来自布朗克福和利布尔讷—蒙塔涅的两所农业高中。",
+      "glosses": [
+        {
+          "surface": "agricoles",
+          "lemma": "agricole",
+          "zh": "农业的；复数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Au total, 130 personnes ont participé à cette rencontre avec les équipes du centre.",
+      "zh": "共有130人参加了这次与研究中心团队的交流。",
+      "glosses": [
+        {
+          "surface": "rencontre",
+          "lemma": "rencontre",
+          "zh": "见面交流；活动"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Pendant cinq heures, elles ont découvert une partie des recherches et plusieurs métiers.",
+      "zh": "在五小时里，他们了解了部分研究工作和多种职业。",
+      "glosses": [
+        {
+          "surface": "métiers",
+          "lemma": "métier",
+          "zh": "职业；复数"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Le programme proposait des ateliers, de petites activités pratiques, des jeux sérieux et des visites.",
+      "zh": "活动安排包括工作坊、小型实践活动、严肃游戏和参观。",
+      "glosses": [
+        {
+          "surface": "ateliers",
+          "lemma": "atelier",
+          "zh": "工作坊；复数"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Dans ces jeux, le but est aussi d’apprendre, pas seulement de s’amuser.",
+      "zh": "在这类游戏中，目的也包括学习，而不只是娱乐。",
+      "glosses": [
+        {
+          "surface": "apprendre",
+          "lemma": "apprendre",
+          "zh": "学习；动词原形"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "L’événement voulait rapprocher les écoles agricoles et les scientifiques de la région.",
+      "zh": "这次活动希望拉近农业学校与当地科研人员之间的距离。",
+      "glosses": [
+        {
+          "surface": "rapprocher",
+          "lemma": "rapprocher",
+          "zh": "拉近；使接近"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Il voulait aussi aider les jeunes à imaginer un avenir professionnel dans ce domaine.",
+      "zh": "它也希望帮助年轻人设想在这一领域的职业未来。",
+      "glosses": [
+        {
+          "surface": "avenir",
+          "lemma": "avenir",
+          "zh": "未来"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Une dizaine de personnes des services administratifs ont accompagné les groupes sur le campus.",
+      "zh": "约十名行政工作人员在园区陪同各个小组。",
+      "glosses": [
+        {
+          "surface": "accompagné",
+          "lemma": "accompagner",
+          "zh": "陪同；过去分词"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Cette rencontre a eu lieu pour la deuxième année de suite et a reçu le label Fête de la Science 2026.",
+      "zh": "这次交流活动已连续第二年举行，并获得了“2026科学节”认证。",
+      "glosses": [
+        {
+          "surface": "deuxième",
+          "lemma": "deuxième",
+          "zh": "第二"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "INRAE a raconté cette visite dans un article publié le 19 octobre : il s’agit donc d’un événement déjà passé.",
+      "zh": "INRAE在10月19日发表的文章中介绍了此次参观，因此它是一场已经结束的活动。",
+      "glosses": [
+        {
+          "surface": "publié",
+          "lemma": "publier",
+          "zh": "发表；过去分词"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "recherche",
+        "zh": "研究",
+        "sentenceId": "s2",
+        "lemma": "recherche",
+        "note": "名词，de recherche说明中心的用途。"
+      },
+      {
+        "text": "agricoles",
+        "zh": "农业的",
+        "sentenceId": "s3",
+        "lemma": "agricole",
+        "note": "修饰复数lycées，词尾加s。"
+      },
+      {
+        "text": "métiers",
+        "zh": "职业",
+        "sentenceId": "s5",
+        "lemma": "métier",
+        "note": "plusieurs后用复数。"
+      },
+      {
+        "text": "apprendre",
+        "zh": "学习",
+        "sentenceId": "s7",
+        "lemma": "apprendre",
+        "note": "d’后接动词原形，表示目的。"
+      },
+      {
+        "text": "avenir",
+        "zh": "未来",
+        "sentenceId": "s9",
+        "lemma": "avenir",
+        "note": "un avenir professionnel表示职业未来。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Au total",
+        "zh": "总共",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "Pendant cinq heures",
+        "zh": "在五小时里",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "a eu lieu",
+        "zh": "举行了；发生了",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s9",
+        "note": "aider quelqu’un à + 动词原形：帮助某人做某事。"
+      },
+      {
+        "sentenceId": "s12",
+        "note": "il s’agit de用于说明某件事的性质；passé在这里意为已经过去的。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel métier aimerais-tu découvrir pendant une visite ?",
+        "zh": "你想在参观时了解哪种职业？"
+      },
+      {
+        "text": "Tu préfères apprendre avec un jeu ou avec une visite ? Pourquoi ?",
+        "zh": "你更喜欢通过游戏还是参观来学习？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "J’aimerais découvrir ce métier.",
+        "zh": "我想了解这个职业。",
+        "note": "教学补充：J’aimerais礼貌表达愿望。"
+      },
+      {
+        "text": "Cette visite m’aide à réfléchir à mon avenir.",
+        "zh": "这次参观帮助我思考自己的未来。",
+        "note": "教学补充，可替换visite和avenir。"
+      }
+    ]
+  }
+}

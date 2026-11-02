@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-en-support-in-one-place",
+  "storyId": "dwp-west-dunbartonshire-youth-hub-2026-10-30",
+  "lang": "en",
+  "date": "2026-11-02",
+  "category": "society",
+  "topics": [
+    "在同一个地方获得帮助"
+  ],
+  "title": "Support in one place",
+  "titleZh": "在同一个地方获得帮助",
+  "summaryZh": "苏格兰一处青年服务中心把求职、培训、住房和心理健康支持放在一起，帮助16至24岁青年。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体地点、开放时间和求助场景，以常见动词和简短句为主；服务专名配中文辅助，非官方等级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Work and Pensions / GOV.UK",
+    "title": "Major boost for young people in West Dunbartonshire as Youth Hub opens to support them towards work",
+    "url": "https://www.gov.uk/government/news/major-boost-for-young-people-in-west-dunbartonshire-as-youth-hub-opens-to-support-them-towards-work",
+    "publishedAt": "2026-10-30",
+    "lang": "en",
+    "author": "Department for Work and Pensions"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Work and Pensions; 2026-10-30; https://www.gov.uk/government/news/major-boost-for-young-people-in-west-dunbartonshire-as-youth-hub-opens-to-support-them-towards-work",
+  "adaptation": "2026-11-02整理：依据机构英文公告同语言分级改写；中文翻译、语境词义和练习由Dimenticato编辑添加，不是原文或官方课程。仅使用机构叙述，不复制直接引语、图片、标志、第三方材料。原报道日期单独保留，计划不写成已完成，不暗示原机构认可。 第5句对CV的定义及第11句对计划边界的说明为编辑教学补充，不是另外报告的事实。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 30 October 2026, the UK government announced a new Youth Hub in West Dunbartonshire, Scotland.",
+      "zh": "2026年10月30日，英国政府宣布在苏格兰西邓巴顿郡开设一处新的青年服务中心。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "The centre is in Dumbarton and is open from Tuesday to Friday.",
+      "zh": "该中心位于邓巴顿，从星期二到星期五开放。",
+      "glosses": [
+        {
+          "surface": "Tuesday",
+          "lemma": "Tuesday",
+          "zh": "星期二"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "It supports young people aged sixteen to twenty-four who need help to move towards work.",
+      "zh": "它支持需要帮助以走向就业的16至24岁青年。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "At the centre, different organisations work together in the same place.",
+      "zh": "在中心，不同机构在同一个地方协作。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Young people can get advice about their CV, the document that describes their skills and experience.",
+      "zh": "青年可以获得关于简历的建议；简历是介绍技能和经历的文件。",
+      "glosses": [
+        {
+          "surface": "skills",
+          "lemma": "skill",
+          "zh": "技能"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "They can also learn about training and talk about possible careers.",
+      "zh": "他们还可以了解培训，并谈论可能选择的职业。",
+      "glosses": [
+        {
+          "surface": "training",
+          "lemma": "training",
+          "zh": "培训"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "But the help is not only about finding a job.",
+      "zh": "但这里的帮助不只涉及找工作。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "The centre also brings together support for mental health and advice about housing.",
+      "zh": "该中心还把心理健康支持与住房建议结合在一起。",
+      "glosses": [
+        {
+          "surface": "housing",
+          "lemma": "housing",
+          "zh": "住房"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Local partners will help the centre offer support that fits the needs of the area.",
+      "zh": "当地合作伙伴将帮助中心提供符合本地区需要的支持。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Across Great Britain, the government plans to expand Youth Hubs to more than 360 areas over three years.",
+      "zh": "在大不列颠范围内，政府计划在三年内把青年服务中心扩展至360多个地区。",
+      "glosses": [
+        {
+          "surface": "expand",
+          "lemma": "expand",
+          "zh": "扩展"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "This is a plan for a wider network, not a promise that every visitor will immediately get a job.",
+      "zh": "这是一项扩大服务网络的计划，并不承诺每位到访者都会马上获得工作。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Tuesday",
+        "zh": "星期二",
+        "lemma": "Tuesday",
+        "sentenceId": "s2",
+        "note": "Tuesday表示星期二，是本中心每周开始开放的日子；需保留首字母大写。"
+      },
+      {
+        "text": "skills",
+        "zh": "技能",
+        "lemma": "skill",
+        "sentenceId": "s5",
+        "note": "skills为skill复数，与experience并列，指简历介绍的技能。"
+      },
+      {
+        "text": "training",
+        "zh": "培训",
+        "lemma": "training",
+        "sentenceId": "s6",
+        "note": "training在learn about后表示培训，不可数名词；本句还谈职业选择。"
+      },
+      {
+        "text": "housing",
+        "zh": "住房",
+        "lemma": "housing",
+        "sentenceId": "s8",
+        "note": "housing是住房的集合概念，与心理健康支持并列，不加复数s。"
+      },
+      {
+        "text": "expand",
+        "zh": "扩展",
+        "lemma": "expand",
+        "sentenceId": "s10",
+        "note": "expand意为扩展；plans to后用动词原形，目标是增加覆盖地区。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "work together",
+        "zh": "一起协作",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "finding a job",
+        "zh": "找工作",
+        "sentenceId": "s7"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s7",
+        "note": "not only about + 动名词，表达帮助的范围不止一项。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What help would you like from a local youth centre?",
+        "zh": "你希望从当地青年中心获得什么帮助？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would like advice about my CV.",
+        "zh": "我想获得关于简历的建议。",
+        "note": "原创口语练习表达，不是来源引语。"
+      }
+    ]
+  }
+}

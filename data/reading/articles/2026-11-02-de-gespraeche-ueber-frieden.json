@@ -1,0 +1,311 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-de-gespraeche-ueber-frieden",
+  "storyId": "erwachsenenbildung-peace-lectures-2026-09-24",
+  "lang": "de",
+  "date": "2026-11-02",
+  "title": "Vier Abende zum Zuhören und Diskutieren",
+  "titleZh": "四个倾听与讨论的夜晚",
+  "summaryZh": "维也纳的一组讲座从不同角度谈和平；报道日期为9月24日，活动安排跨越10月至12月。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以地点、日期、免费参与和人物介绍串联信息；短主句为主，少量由wie引导的宾语从句。Frieden、Zusammenhalt等抽象词有中文辅助。",
+  "category": "society",
+  "topics": [
+    "成人教育",
+    "社会参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "erwachsenenbildung.at",
+    "title": "Frieden am Prüfstand",
+    "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20908-oegpb-vortragsreihe-2026-frieden-schaffen.php",
+    "publishedAt": "2026-09-24",
+    "lang": "de",
+    "author": "ÖGPB；编辑 Heidi Buchecker（ÖGPB）"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "ÖGPB；编辑 Heidi Buchecker（ÖGPB），发表于 erwachsenenbildung.at，原日期 2026-09-24。原文与本教学改编依据 CC BY 4.0；来源及许可链接见上。无原作者或机构背书。",
+  "adaptation": "Dimenticato 编辑于2026-11-02作同语言分级改写、中文翻译及原创教学补充，并非原文或当天新闻。仅使用已许可的作者叙述，删去直接引语、照片、图表、标志和外部链接作品；事件安排和项目结果均按原报道日期表述。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Die Österreichische Gesellschaft für Politische Bildung hat für den Herbst 2026 vier Vorträge in Wien angekündigt.",
+      "zh": "奥地利政治教育协会宣布，将于2026年秋季在维也纳举办四场讲座。",
+      "glosses": [
+        {
+          "surface": "Vorträge",
+          "lemma": "Vortrag",
+          "zh": "讲座",
+          "note": "der Vortrag，复数die Vorträge。"
+        },
+        {
+          "surface": "angekündigt",
+          "lemma": "ankündigen",
+          "zh": "宣布",
+          "note": "hat angekündigt：完成时。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Das gemeinsame Thema heißt „Frieden schaffen“, und der Eintritt ist frei.",
+      "zh": "共同主题是“创造和平”，入场免费。",
+      "glosses": [
+        {
+          "surface": "Frieden",
+          "lemma": "Frieden",
+          "zh": "和平",
+          "note": "der Frieden。"
+        },
+        {
+          "surface": "Eintritt",
+          "lemma": "Eintritt",
+          "zh": "入场",
+          "note": "der Eintritt；Eintritt frei表示免费入场。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Interessierte können Fachleuten zuhören und mit anderen Menschen über eine friedliche Zukunft sprechen.",
+      "zh": "感兴趣的人可以听专家讲解，并与其他人谈论和平的未来。",
+      "glosses": [
+        {
+          "surface": "zuhören",
+          "lemma": "zuhören",
+          "zh": "倾听",
+          "note": "zuhören接第三格：Fachleuten。"
+        },
+        {
+          "surface": "Zukunft",
+          "lemma": "Zukunft",
+          "zh": "未来",
+          "note": "die Zukunft。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Die Reihe entsteht zusammen mit zwei Veranstaltungsorten, dem Depot und der FAKTory.",
+      "zh": "这组系列活动与Depot和FAKTory两个活动场所合作举办。",
+      "glosses": [
+        {
+          "surface": "Veranstaltungsorten",
+          "lemma": "Veranstaltungsort",
+          "zh": "活动场所",
+          "note": "mit后用第三格复数。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Der erste Vortrag war für den 20. Oktober im Depot geplant.",
+      "zh": "第一场讲座原定于10月20日在Depot举办。",
+      "glosses": [
+        {
+          "surface": "geplant",
+          "lemma": "planen",
+          "zh": "计划好的",
+          "note": "war geplant表示此前的安排，不确认活动实际举行。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Dabei sollte der Historiker Oliver Rathkolb über Österreichs Neutralität und die Vergangenheit sprechen.",
+      "zh": "历史学家Oliver Rathkolb原计划在这场讲座中谈奥地利的中立地位和历史。",
+      "glosses": [
+        {
+          "surface": "Vergangenheit",
+          "lemma": "Vergangenheit",
+          "zh": "过去；历史"
+        },
+        {
+          "surface": "Neutralität",
+          "lemma": "Neutralität",
+          "zh": "中立地位"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Für den 3. November nennt die Ankündigung einen weiteren Termin im Depot.",
+      "zh": "公告还列出了11月3日在Depot的另一场活动。",
+      "glosses": [
+        {
+          "surface": "Ankündigung",
+          "lemma": "Ankündigung",
+          "zh": "公告"
+        },
+        {
+          "surface": "Termin",
+          "lemma": "Termin",
+          "zh": "约定日期；活动时间"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Barbara Prainsack will dort erklären, wie Menschen einander unterstützen und den Zusammenhalt in der Gesellschaft stärken können.",
+      "zh": "Barbara Prainsack计划在那里说明，人们如何相互支持并加强社会凝聚力。",
+      "glosses": [
+        {
+          "surface": "unterstützen",
+          "lemma": "unterstützen",
+          "zh": "支持"
+        },
+        {
+          "surface": "Zusammenhalt",
+          "lemma": "Zusammenhalt",
+          "zh": "凝聚力"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Am 17. November soll Barbara Sieberth in der FAKTory über Frieden und Sicherheit sprechen.",
+      "zh": "Barbara Sieberth计划于11月17日在FAKTory谈和平与安全。",
+      "glosses": [
+        {
+          "surface": "Sicherheit",
+          "lemma": "Sicherheit",
+          "zh": "安全"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Der vierte Vortrag ist für den 1. Dezember im Depot angekündigt.",
+      "zh": "第四场讲座宣布安排在12月1日，地点是Depot。",
+      "glosses": [
+        {
+          "surface": "vierte",
+          "lemma": "vierte",
+          "zh": "第四个",
+          "note": "序数词修饰阳性der Vortrag。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Rosa Logar möchte dann die Arbeit von Frauen für den Frieden vorstellen.",
+      "zh": "Rosa Logar届时计划介绍女性为和平所做的工作。",
+      "glosses": [
+        {
+          "surface": "vorstellen",
+          "lemma": "vorstellen",
+          "zh": "介绍"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "So bietet die Reihe verschiedene Blickwinkel auf ein gemeinsames Thema.",
+      "zh": "这样，这组系列活动为同一个主题提供了不同视角。",
+      "glosses": [
+        {
+          "surface": "Blickwinkel",
+          "lemma": "Blickwinkel",
+          "zh": "视角",
+          "note": "der Blickwinkel，复数形式不变。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Vorträge",
+        "zh": "讲座",
+        "sentenceId": "s1",
+        "lemma": "Vortrag",
+        "note": "四场讲座用复数Vorträge；单数为der Vortrag。"
+      },
+      {
+        "text": "Eintritt",
+        "zh": "入场",
+        "sentenceId": "s2",
+        "lemma": "Eintritt",
+        "note": "der Eintritt与frei搭配表示入场免费。"
+      },
+      {
+        "text": "Zukunft",
+        "zh": "未来",
+        "sentenceId": "s3",
+        "lemma": "Zukunft",
+        "note": "über eine friedliche Zukunft表示谈论和平的未来；Zukunft是阴性名词。"
+      },
+      {
+        "text": "Vergangenheit",
+        "zh": "过去；历史",
+        "sentenceId": "s6",
+        "lemma": "Vergangenheit",
+        "note": "die Vergangenheit与历史学家的回顾相对应，不是活动地点。"
+      },
+      {
+        "text": "Sicherheit",
+        "zh": "安全",
+        "sentenceId": "s9",
+        "lemma": "Sicherheit",
+        "note": "Frieden und Sicherheit并列：和平与安全。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "der Eintritt ist frei",
+        "zh": "入场免费",
+        "sentenceId": "s2",
+        "note": "活动介绍中的常用说法；frei在此不是“自由”。"
+      },
+      {
+        "text": "mit anderen Menschen",
+        "zh": "与其他人",
+        "sentenceId": "s3",
+        "note": "mit后用第三格，复数形容词anderen。"
+      },
+      {
+        "text": "verschiedene Blickwinkel",
+        "zh": "不同视角",
+        "sentenceId": "s12",
+        "note": "可用于介绍讨论涵盖的角度。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "können后接两个并列不定式zuhören和sprechen，说明参与者能做什么。"
+      },
+      {
+        "sentenceId": "s5",
+        "note": "war geplant仅交代过去的计划，不能据此认定活动已经举行。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welcher Vortrag interessiert dich am meisten?",
+        "zh": "你对哪场讲座最感兴趣？"
+      },
+      {
+        "text": "Hörst du bei einer Veranstaltung lieber zu oder diskutierst du gern?",
+        "zh": "参加活动时，你更喜欢倾听还是讨论？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mich interessiert besonders das Thema …",
+        "zh": "我特别感兴趣的主题是……",
+        "note": "原创口语补充，不是原报道引语。"
+      },
+      {
+        "text": "Ich möchte verschiedene Meinungen hören.",
+        "zh": "我想听听不同的意见。",
+        "note": "原创口语补充，不是原报道引语。"
+      }
+    ]
+  }
+}

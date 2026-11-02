@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-de-werte-im-vereinsalltag",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s9",
+      "start": 34,
+      "answer": "Aufgabenverteilung",
+      "options": [
+        "Entscheidungsfindung",
+        "Aufgabenverteilung",
+        "Meinungsäußerung",
+        "Mitgliederwerbung"
+      ],
+      "explanation": "eine faire Aufgabenverteilung指团队公平分配任务，而非空间或资金概念。 本题还原原文中的“Aufgabenverteilung”（任务分配）。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s11",
+      "start": 169,
+      "answer": "Verständigung",
+      "options": [
+        "Mitbestimmung",
+        "Anerkennung",
+        "Fortbildung",
+        "Verständigung"
+      ],
+      "explanation": "Begegnung und Verständigung并列说明接触和理解的机会。 本题还原原文中的“Verständigung”（相互理解；沟通）。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s12",
+      "start": 49,
+      "answer": "Verantwortung",
+      "options": [
+        "Verantwortung",
+        "Leitung",
+        "Betreuung",
+        "Vertretung"
+      ],
+      "explanation": "Verantwortung übernehmen为固定搭配，表示承担责任。 本题还原原文中的“Verantwortung”（责任）。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s14",
+      "start": 143,
+      "answer": "Beteiligung",
+      "options": [
+        "Bezahlung",
+        "Beratung",
+        "Beteiligung",
+        "Begegnung"
+      ],
+      "explanation": "Formen der Beteiligung：参与的形式，第二格单数。 本题还原原文中的“Beteiligung”（参与）。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s18",
+      "start": 103,
+      "answer": "Unabhängigkeit",
+      "options": [
+        "Finanzierung",
+        "Unabhängigkeit",
+        "Zusammenarbeit",
+        "Sichtbarkeit"
+      ],
+      "explanation": "die Unabhängigkeit von Vereinen指社团独立性。 本题还原原文中的“Unabhängigkeit”（独立性）。"
+    }
+  ]
+}

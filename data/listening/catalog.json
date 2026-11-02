@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-29",
+  "verifiedAt": "2026-11-02",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -2179,6 +2179,193 @@
           "zh": "找另一个小组"
         }
       ]
+    },
+    {
+      "addedAt": "2026-11-02",
+      "kind": "lesson",
+      "evidenceStatus": "official_transcript",
+      "levelBasis": "provider",
+      "verificationZh": "依据官方对应文字稿核对本站原创题；没有复制原站练习、完整字幕或媒体。未实测播放或音质。",
+      "id": "it-rai-regalo-teresa-b1",
+      "lang": "it",
+      "title": "Benvenuti in casa Ba — Le Tasse",
+      "titleZh": "巴家故事：给特蕾莎的礼物",
+      "provider": "Rai Scuola",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Benvenuti-in-casa-Ba---Le-Tasse-f4ca80e9-e3f8-4340-9841-ccecace9db60.html",
+      "level": "B1",
+      "levelLabel": "B1 · 官方分级",
+      "summaryZh": "从旅行计划和生日礼物两条支线，练习分辨人物的建议与惊喜。",
+      "guideZh": "常青课程，原始发布日期未明确标出。重点听第1、7和12场：留意旅行前后的文化活动，以及礼物送给谁、由谁制作。旧课中的税务内容不作为现行办事指南。",
+      "vocabulary": [
+        {
+          "text": "un ricordo",
+          "zh": "纪念品；回忆"
+        },
+        {
+          "text": "prima di partire",
+          "zh": "出发之前"
+        },
+        {
+          "text": "un pacco",
+          "zh": "包裹"
+        },
+        {
+          "text": "il merletto",
+          "zh": "蕾丝；花边"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-regalo-1",
+          "prompt": "Che attività vuole proporre Salif alla fine dei viaggi in Senegal?",
+          "options": [
+            "Un incontro con un poeta",
+            "Un corso breve di pittura batik",
+            "Una visita a una legatoria",
+            "Una lezione di cucina"
+          ],
+          "answerIndex": 1,
+          "explanationZh": "第1场中，Salif提出用短期蜡染绘画课结束旅程，让旅客学一门艺术并带回纪念品。",
+          "evidenceRef": "scene-1-salif-travel"
+        },
+        {
+          "id": "it-regalo-2",
+          "prompt": "Quando propone Fela di far conoscere Senghor ai viaggiatori?",
+          "options": [
+            "Dopo il loro ritorno in Italia",
+            "Durante il corso di pittura",
+            "Prima della loro partenza",
+            "Durante il viaggio in aereo"
+          ],
+          "answerIndex": 2,
+          "explanationZh": "第1场中，Fela建议在出发前让旅客了解Senghor，并邀请人来朗读诗歌。",
+          "evidenceRef": "scene-1-fela-poetry"
+        },
+        {
+          "id": "it-regalo-3",
+          "prompt": "Chi ha realizzato il regalo per Teresa?",
+          "options": [
+            "Irina, una parente di Olga",
+            "Anna, insieme a Fela",
+            "Olga, insieme a Salif",
+            "Lucia, una conoscente di Anna"
+          ],
+          "answerIndex": 0,
+          "explanationZh": "第12场揭晓礼物是帕格岛蕾丝，由Olga的表亲Irina制作，而不是由送礼的Olga亲手制作。",
+          "evidenceRef": "scene-12-gift-maker"
+        }
+      ]
+    },
+    {
+      "addedAt": "2026-11-02",
+      "kind": "lesson",
+      "evidenceStatus": "official_transcript",
+      "levelBasis": "provider",
+      "verificationZh": "依据官方对应文字稿核对本站原创题；没有复制原站练习、完整字幕或媒体。未实测播放或音质。",
+      "id": "en-bc-listening-strategies-b1",
+      "lang": "en",
+      "title": "An interview about listening skills",
+      "titleZh": "听不懂时：如何把对话继续下去",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/b1/interview-about-listening-skills",
+      "level": "B1",
+      "levelLabel": "B1 · 官方分级",
+      "summaryZh": "听主持人描述困难，再辨认教师建议的追问方式。",
+      "guideZh": "常青课程，原始发布日期未标明。先听主持人为什么紧张，再留意教师如何区分闲聊和重要交流。第二遍关注建议怎样操作，而不只记住建议的名称。",
+      "vocabulary": [
+        {
+          "text": "repeat",
+          "zh": "重复"
+        },
+        {
+          "text": "paperwork",
+          "zh": "所需文件或文书手续"
+        },
+        {
+          "text": "summarise",
+          "zh": "概括"
+        },
+        {
+          "text": "break it down",
+          "zh": "把它分成较小部分"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-listen-1",
+          "prompt": "Why does the presenter find speaking less stressful than listening?",
+          "options": [
+            "He has more control when speaking",
+            "He practises speaking only in exams",
+            "He already knows every word he needs",
+            "He speaks German only with teachers"
+          ],
+          "answerIndex": 0,
+          "explanationZh": "主持人说说话时至少能自己控制；他担心的是听别人说得太快。",
+          "evidenceRef": "transcript-presenter-opening"
+        },
+        {
+          "id": "en-listen-2",
+          "prompt": "Which situation does Gabriella use to show why pretending to understand can be a problem?",
+          "options": [
+            "Talking about the weather at a bus stop",
+            "Talking to a stranger about a hobby",
+            "Getting information needed for an official document",
+            "Choosing a film to watch with friends"
+          ],
+          "answerIndex": 2,
+          "explanationZh": "教师用办理证件或银行手续所需材料的例子说明，重要交流可能有实际后果，不能只假装听懂。",
+          "evidenceRef": "transcript-gabriella-high-stakes"
+        },
+        {
+          "id": "en-listen-3",
+          "prompt": "What does Gabriella suggest when the listener cannot give a complete summary?",
+          "options": [
+            "Ask the speaker to repeat the whole conversation",
+            "Start a summary as a question and ask about small parts",
+            "Wait until the speaker has changed the subject",
+            "Ask the speaker to write every sentence down"
+          ],
+          "answerIndex": 1,
+          "explanationZh": "她建议先把概括的开头变成一个问题，再分成小问题追问，从而让对方逐项回答。",
+          "evidenceRef": "transcript-gabriella-final-strategy"
+        }
+      ]
+    },
+    {
+      "id": "de-logo-2026-11-01",
+      "lang": "de",
+      "title": "logo! vom Sonntag, 1. November 2026",
+      "titleZh": "11月1日儿童新闻：生态恢复与青年运动会",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-sonntag-1-november-2026-100.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-02",
+      "sourcePublishedAt": "2026-11-01",
+      "duration": "10:02",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "本期节目单包含青年抗议、生态系统恢复、月度照片、青年奥运会与跳伞纪录。",
+      "guideZh": "可先选自然环境或体育话题，听一小段后停下，用一句德语概括自己确实听懂的信息。母语儿童新闻不等于A2，不必一次听懂整集。",
+      "verificationZh": "已核对官方节目页日期与节目单，以及官方首页时长；未取得可核验的对应逐字稿，未实测播放或音质，暂不设置理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "die Umwelt",
+          "zh": "环境"
+        },
+        {
+          "text": "der Wettkampf",
+          "zh": "竞技比赛"
+        },
+        {
+          "text": "wiederherstellen",
+          "zh": "恢复；重建"
+        }
+      ],
+      "questions": []
     }
   ],
   "schema": 1

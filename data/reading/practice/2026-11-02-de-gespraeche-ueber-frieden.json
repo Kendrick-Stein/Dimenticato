@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-de-gespraeche-ueber-frieden",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 85,
+      "answer": "Vorträge",
+      "options": [
+        "Vorträge",
+        "Workshops",
+        "Diskussionen",
+        "Ausstellungen"
+      ],
+      "explanation": "四场讲座用复数Vorträge；单数为der Vortrag。 本题还原原文中的“Vorträge”（讲座）。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s2",
+      "start": 55,
+      "answer": "Eintritt",
+      "options": [
+        "Unterricht",
+        "Vertrag",
+        "Eintritt",
+        "Besuch"
+      ],
+      "explanation": "der Eintritt与frei搭配表示入场免费。 本题还原原文中的“Eintritt”（入场）。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s3",
+      "start": 86,
+      "answer": "Zukunft",
+      "options": [
+        "Wohnung",
+        "Zukunft",
+        "Prüfung",
+        "Grenze"
+      ],
+      "explanation": "über eine friedliche Zukunft表示谈论和平的未来；Zukunft是阴性名词。 本题还原原文中的“Zukunft”（未来）。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s6",
+      "start": 81,
+      "answer": "Vergangenheit",
+      "options": [
+        "Gegenwart",
+        "Entwicklung",
+        "Erinnerung",
+        "Vergangenheit"
+      ],
+      "explanation": "die Vergangenheit与历史学家的回顾相对应，不是活动地点。 本题还原原文中的“Vergangenheit”（过去；历史）。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 70,
+      "answer": "Sicherheit",
+      "options": [
+        "Sicherheit",
+        "Zusammenarbeit",
+        "Solidarität",
+        "Mitbestimmung"
+      ],
+      "explanation": "Frieden und Sicherheit并列：和平与安全。 本题还原原文中的“Sicherheit”（安全）。"
+    }
+  ]
+}

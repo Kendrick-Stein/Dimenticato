@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-fr-suivre-un-voyage-sous-leau",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s6",
+      "start": 53,
+      "answer": "filet",
+      "options": [
+        "moteur",
+        "filet",
+        "pont",
+        "canal"
+      ],
+      "explanation": "guideau是从船上布放在水流中的大渔网，因此用filet。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s9",
+      "start": 161,
+      "answer": "débit",
+      "options": [
+        "budget",
+        "salaire",
+        "débit",
+        "prix"
+      ],
+      "explanation": "hydrologiques提示水文状况；débit表示河流流量，不是预算、薪资或价格。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s10",
+      "start": 45,
+      "answer": "prévisions",
+      "options": [
+        "prévisions",
+        "factures",
+        "recettes",
+        "réservations"
+      ],
+      "explanation": "为预判流量变化和安排作业而提供的是预报prévisions。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s12",
+      "start": 32,
+      "answer": "pêcheurs",
+      "options": [
+        "chanteurs",
+        "peintres",
+        "vendeurs",
+        "pêcheurs"
+      ],
+      "explanation": "上下文讨论渔网实施及河流现场经验，职业渔民pêcheurs符合原文。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s19",
+      "start": 76,
+      "answer": "sanitaire",
+      "options": [
+        "financier",
+        "sanitaire",
+        "scolaire",
+        "juridique"
+      ],
+      "explanation": "为了了解鱼出发时的身体状况而做的是bilan sanitaire（健康检查）。"
+    }
+  ]
+}

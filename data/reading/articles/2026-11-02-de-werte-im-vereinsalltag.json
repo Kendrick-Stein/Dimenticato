@@ -1,0 +1,479 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-de-werte-im-vereinsalltag",
+  "storyId": "erwachsenenbildung-europawirkt-2026-10-19",
+  "lang": "de",
+  "date": "2026-11-02",
+  "title": "Wie Werte im Vereinsalltag sichtbar werden",
+  "titleZh": "价值观如何在社团日常中体现",
+  "summaryZh": "克恩顿的EuropaWirkt项目把志愿活动、不同观点和地方交流连起来；讨论已举行，12月共同行动仍属报道中的计划。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：约500词的连贯论述，区分项目目标、讨论观点、已经发生的活动和未来计划；使用让步、条件、关系从句及间接表达，保留价值多元与界限的张力。",
+  "category": "society",
+  "topics": [
+    "成人教育",
+    "社会参与"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "erwachsenenbildung.at",
+    "title": "EuropaWirkt! Im Dialog. Im Ehrenamt. Im Leben.",
+    "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20942-europawirkt-im-dialog-im-ehrenamt-im-leben.php",
+    "publishedAt": "2026-10-19",
+    "lang": "de",
+    "author": "Doris Rottermanner、Lena Scheck；编辑 Sarah-Lisa Winter（bifeb）"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Doris Rottermanner、Lena Scheck；编辑 Sarah-Lisa Winter（bifeb），发表于 erwachsenenbildung.at，原日期 2026-10-19。原文与本教学改编依据 CC BY 4.0；来源及许可链接见上。无原作者或机构背书。",
+  "adaptation": "Dimenticato 编辑于2026-11-02作同语言分级改写、中文翻译及原创教学补充，并非原文或当天新闻。仅使用已许可的作者叙述，删去直接引语、照片、图表、标志和外部链接作品；事件安排和项目结果均按原报道日期表述。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Freiheit, Toleranz und Gerechtigkeit klingen zunächst abstrakt, doch im Alltag eines Vereins werden sie zu konkreten Fragen des Zusammenlebens.",
+      "zh": "自由、宽容和公正乍听起来很抽象，但在社团日常中，它们会变成具体的共同生活问题。",
+      "glosses": [
+        {
+          "surface": "Zusammenlebens",
+          "lemma": "Zusammenleben",
+          "zh": "共同生活",
+          "note": "des Zusammenlebens为第二格。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Das Kärntner Bildungswerk möchte mit dem Projekt „EuropaWirkt! – Werte im Wortwechsel“ solche Verbindungen sichtbar machen und demokratisches Bewusstsein im ländlichen Raum stärken.",
+      "zh": "克恩顿教育组织希望通过“EuropaWirkt!——对话中的价值观”项目，让这些联系可见，并加强乡村地区的民主意识。",
+      "glosses": [
+        {
+          "surface": "ländlichen",
+          "lemma": "ländlich",
+          "zh": "乡村的"
+        },
+        {
+          "surface": "Bewusstsein",
+          "lemma": "Bewusstsein",
+          "zh": "意识"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Die Darstellung auf erwachsenenbildung.at vom 19. Oktober 2026 beschreibt dafür einen Weg vom gemeinsamen Gespräch zur Planung eigener Aktionen vor Ort.",
+      "zh": "2026年10月19日erwachsenenbildung.at上的报道，为此描绘了一条从共同交谈到规划本地行动的路径。",
+      "glosses": [
+        {
+          "surface": "Darstellung",
+          "lemma": "Darstellung",
+          "zh": "叙述；介绍"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Im Mai und Juni diskutierten Menschen, die bereits in Vereinen oder Initiativgruppen aktiv waren, zusammen mit weiteren Interessierten über regionales Engagement.",
+      "zh": "5月和6月，已经活跃于社团或倡议小组的人与其他感兴趣者一起讨论了地方参与。",
+      "glosses": [
+        {
+          "surface": "Engagement",
+          "lemma": "Engagement",
+          "zh": "积极参与；投入"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Die Veranstaltungen wurden mit lokalen Partnern durchgeführt; zu jedem Termin brachten außerdem zwei eingeladene Personen kurze inhaltliche Impulse ein.",
+      "zh": "活动与当地合作伙伴共同举办；每场还邀请了两位人士作简短的主题发言。",
+      "glosses": [
+        {
+          "surface": "Impulse",
+          "lemma": "Impuls",
+          "zh": "启发性发言；推动"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Als Gesprächsformat diente „Konsens unerwünscht“, das vom ASH-Forum der Zivilgesellschaft entwickelt wurde und unterschiedliche Perspektiven in die Diskussion einbrachte.",
+      "zh": "交流采用了由ASH公民社会论坛开发的“Konsens unerwünscht”形式，把不同视角带入讨论。",
+      "glosses": [
+        {
+          "surface": "Perspektiven",
+          "lemma": "Perspektive",
+          "zh": "视角"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Gefragt wurde beispielsweise, welche Rolle Freiheit oder Gerechtigkeit für die eigene freiwillige Tätigkeit und für das Miteinander im Verein spielen.",
+      "zh": "例如，讨论提出：自由或公正对自己的志愿工作，以及社团成员相处，发挥什么作用？",
+      "glosses": [
+        {
+          "surface": "Miteinander",
+          "lemma": "Miteinander",
+          "zh": "彼此相处；共同生活"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Der Bericht betont dabei, dass Werte nicht allein durch Erklärungen vermittelt werden, sondern im konkreten Umgang miteinander erfahrbar werden müssen.",
+      "zh": "报道强调，价值观不能只通过解释来传递，还必须在人们具体的相处中变得可以体验。",
+      "glosses": [
+        {
+          "surface": "erfahrbar",
+          "lemma": "erfahrbar",
+          "zh": "可以亲身体验的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Als Beispiele nennt er eine faire Aufgabenverteilung, einen toleranten Umgang mit anderen Meinungen und Offenheit gegenüber Menschen verschiedener Herkunft.",
+      "zh": "它举出的例子包括公平分配任务、宽容地对待不同意见，以及向不同背景的人保持开放。",
+      "glosses": [
+        {
+          "surface": "Aufgabenverteilung",
+          "lemma": "Aufgabenverteilung",
+          "zh": "任务分配"
+        },
+        {
+          "surface": "Herkunft",
+          "lemma": "Herkunft",
+          "zh": "出身；背景"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "So richtet sich der Blick nicht nur auf politische Institutionen, sondern auch auf alltägliche Entscheidungen innerhalb einer freiwillig engagierten Gruppe.",
+      "zh": "这样，关注点不只在政治机构，也在一个志愿团队内部的日常决定。",
+      "glosses": [
+        {
+          "surface": "innerhalb",
+          "lemma": "innerhalb",
+          "zh": "在……内部"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Zugleich stellt die Darstellung das Ehrenamt nicht als Lösung für sämtliche gesellschaftlichen Herausforderungen dar, sondern hebt seine Möglichkeiten für Begegnung und Verständigung hervor.",
+      "zh": "同时，报道并没有把志愿服务描绘成解决所有社会挑战的办法，而是突出其促进接触和理解的可能性。",
+      "glosses": [
+        {
+          "surface": "Verständigung",
+          "lemma": "Verständigung",
+          "zh": "相互理解；沟通"
+        },
+        {
+          "surface": "sämtliche",
+          "lemma": "sämtlich",
+          "zh": "全部的"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Vereine können Räume schaffen, in denen Menschen Verantwortung übernehmen, Gemeinschaft erleben und ihr Umfeld gemeinsam mit anderen mitgestalten.",
+      "zh": "社团可以创造空间，让人们承担责任、体验共同体，并与他人一起参与塑造周围环境。",
+      "glosses": [
+        {
+          "surface": "Verantwortung",
+          "lemma": "Verantwortung",
+          "zh": "责任"
+        },
+        {
+          "surface": "mitgestalten",
+          "lemma": "mitgestalten",
+          "zh": "共同参与塑造"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Ob dies gelingt, hängt nach den diskutierten Überlegungen auch davon ab, wie offen die Gruppen gegenüber unterschiedlichen Lebensgeschichten und Voraussetzungen sind.",
+      "zh": "按照讨论中的思考，这能否实现，也取决于团队对不同人生经历和个人条件有多开放。",
+      "glosses": [
+        {
+          "surface": "Voraussetzungen",
+          "lemma": "Voraussetzung",
+          "zh": "前提；个人条件"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Wertschätzende Gespräche und die Bereitschaft, Unterschiede anzunehmen, erscheinen deshalb als wichtige Bedingungen für vielfältige Formen der Beteiligung.",
+      "zh": "因此，尊重彼此的交流以及接纳差异的意愿，被视为实现多样参与形式的重要条件。",
+      "glosses": [
+        {
+          "surface": "Beteiligung",
+          "lemma": "Beteiligung",
+          "zh": "参与"
+        },
+        {
+          "surface": "Wertschätzende",
+          "lemma": "wertschätzend",
+          "zh": "尊重并肯定他人的"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Ein bemerkenswerter Gedanke aus dem Resümee lautet, dass gemeinsame Werte für manche Menschen erst durch das Engagement entstehen können.",
+      "zh": "讨论总结中一个值得注意的想法是：对一些人而言，共同价值观可能恰恰是在参与过程中形成的。",
+      "glosses": [
+        {
+          "surface": "Resümee",
+          "lemma": "Resümee",
+          "zh": "总结"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Sie sind in dieser Sichtweise also nicht immer eine fertige Voraussetzung, die jeder schon vor dem Eintritt in eine Gruppe mitbringen muss.",
+      "zh": "因此，从这种视角看，它们并不总是每个人在加入团队前就必须具备的既定前提。",
+      "glosses": [
+        {
+          "surface": "Sichtweise",
+          "lemma": "Sichtweise",
+          "zh": "看法；视角"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Diese Offenheit bedeutet jedoch nicht, dass jede Form des Handelns ohne Grenzen bleiben soll: Freiheit wird im Bericht ausdrücklich mit Verantwortung verbunden.",
+      "zh": "但这种开放并不意味着任何行动都应没有界限：报道明确把自由与责任联系在一起。",
+      "glosses": [
+        {
+          "surface": "Grenzen",
+          "lemma": "Grenze",
+          "zh": "界限"
+        },
+        {
+          "surface": "ausdrücklich",
+          "lemma": "ausdrücklich",
+          "zh": "明确地"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Die Diskussion hob außerdem hervor, dass politische Strukturen, die Meinungsvielfalt einschränken, die Unabhängigkeit von Vereinen gefährden können.",
+      "zh": "讨论还强调，限制意见多样性的政治结构可能危及社团的独立性。",
+      "glosses": [
+        {
+          "surface": "Unabhängigkeit",
+          "lemma": "Unabhängigkeit",
+          "zh": "独立性"
+        },
+        {
+          "surface": "einschränken",
+          "lemma": "einschränken",
+          "zh": "限制"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Für eine lebendige Vereinslandschaft braucht es nach diesem Verständnis sowohl respektvollen Austausch als auch verlässliche Rahmenbedingungen für eigenständiges Handeln.",
+      "zh": "按照这种理解，活跃的社团生态既需要尊重彼此的交流，也需要为自主行动提供可靠的基本条件。",
+      "glosses": [
+        {
+          "surface": "Rahmenbedingungen",
+          "lemma": "Rahmenbedingung",
+          "zh": "基本条件；框架条件"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Auf die Gespräche folgten Planungsworkshops, in denen Teilnehmende ihre Überlegungen in öffentliche Aktivitäten übersetzten, die weitere Menschen erreichen sollten.",
+      "zh": "交流之后举行了规划工作坊，参加者在其中把想法转化为旨在接触更多人的公开活动。",
+      "glosses": [
+        {
+          "surface": "übersetzten",
+          "lemma": "übersetzen",
+          "zh": "在此指转化",
+          "note": "不是语言翻译，而是把想法转化为行动。"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Im September arbeiteten einige der bisherigen Teilnehmenden und weitere Interessierte an einer Social-Media-Kampagne sowie an dezentralen Demokratie-Brunches.",
+      "zh": "9月，一些此前的参加者和其他感兴趣者共同筹划了社交媒体宣传以及分散在各地的“民主早午餐”活动。",
+      "glosses": [
+        {
+          "surface": "dezentralen",
+          "lemma": "dezentral",
+          "zh": "分散在不同地点的"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Als gemeinsamer Aktionstag war der 5. Dezember vorgesehen, der Internationale Tag des Ehrenamts; die konkreten Orte sollten noch bekannt gegeben werden.",
+      "zh": "共同行动日原定为国际志愿者日12月5日；具体地点当时还有待公布。",
+      "glosses": [
+        {
+          "surface": "vorgesehen",
+          "lemma": "vorsehen",
+          "zh": "安排；预定"
+        },
+        {
+          "surface": "bekannt gegeben",
+          "lemma": "bekannt geben",
+          "zh": "公布"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Die Kampagne sollte von Ende Oktober bis Anfang Dezember Stimmen aus Vereinen und Initiativgruppen sichtbar machen und deren wichtige Werte zeigen.",
+      "zh": "宣传原计划从10月底持续到12月初，让社团和倡议小组的声音被看见，并展示他们重视的价值观。",
+      "glosses": [
+        {
+          "surface": "Stimmen",
+          "lemma": "Stimme",
+          "zh": "声音；意见"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Damit beschreibt der Artikel vor allem einen laufenden Beteiligungsprozess: Bereits geführte Gespräche werden mit geplanten nächsten Schritten verbunden, nicht mit abschließend nachgewiesenen Wirkungen.",
+      "zh": "因此，文章主要描述的是一个正在进行的参与过程：已经开展的交流与计划中的下一步相连，而不是与已经最终证实的成效相连。",
+      "glosses": [
+        {
+          "surface": "nachgewiesenen",
+          "lemma": "nachweisen",
+          "zh": "证实的"
+        },
+        {
+          "surface": "Wirkungen",
+          "lemma": "Wirkung",
+          "zh": "成效；影响"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Unterstützt wird das Vorhaben vom Konsortium „Pro European Values AT“; die Europäische Union beteiligt sich an der Finanzierung, während das Kärntner Bildungswerk die weiteren Aktivitäten begleitet.",
+      "zh": "项目由“Pro European Values AT”联合体支持，欧盟参与资助，克恩顿教育组织则陪伴后续活动的开展。",
+      "glosses": [
+        {
+          "surface": "Finanzierung",
+          "lemma": "Finanzierung",
+          "zh": "资金支持；资助"
+        },
+        {
+          "surface": "begleitet",
+          "lemma": "begleiten",
+          "zh": "陪伴；支持开展"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Aufgabenverteilung",
+        "zh": "任务分配",
+        "sentenceId": "s9",
+        "lemma": "Aufgabenverteilung",
+        "note": "eine faire Aufgabenverteilung指团队公平分配任务，而非空间或资金概念。"
+      },
+      {
+        "text": "Verständigung",
+        "zh": "相互理解；沟通",
+        "sentenceId": "s11",
+        "lemma": "Verständigung",
+        "note": "Begegnung und Verständigung并列说明接触和理解的机会。"
+      },
+      {
+        "text": "Verantwortung",
+        "zh": "责任",
+        "sentenceId": "s12",
+        "lemma": "Verantwortung",
+        "note": "Verantwortung übernehmen为固定搭配，表示承担责任。"
+      },
+      {
+        "text": "Beteiligung",
+        "zh": "参与",
+        "sentenceId": "s14",
+        "lemma": "Beteiligung",
+        "note": "Formen der Beteiligung：参与的形式，第二格单数。"
+      },
+      {
+        "text": "Unabhängigkeit",
+        "zh": "独立性",
+        "sentenceId": "s18",
+        "lemma": "Unabhängigkeit",
+        "note": "die Unabhängigkeit von Vereinen指社团独立性。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Offenheit gegenüber",
+        "zh": "对……保持开放",
+        "sentenceId": "s9",
+        "note": "gegenüber在此后接第三格Menschen。"
+      },
+      {
+        "text": "Verantwortung übernehmen",
+        "zh": "承担责任",
+        "sentenceId": "s12",
+        "note": "社会参与和工作话题中的常用搭配。"
+      },
+      {
+        "text": "sowohl respektvollen Austausch als auch verlässliche Rahmenbedingungen",
+        "zh": "既有尊重彼此的交流，也有可靠的基本条件",
+        "sentenceId": "s19",
+        "note": "sowohl … als auch …并列两个同等重要的方面。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s15",
+        "note": "dass从句保留können，说明是讨论中提出的可能性，而不是普遍规律。"
+      },
+      {
+        "sentenceId": "s24",
+        "note": "nicht mit …与前面的mit …形成对照，区分过程描述与已经证实的效果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Werte werden in einer Gruppe durch kleine Entscheidungen sichtbar?",
+        "zh": "在团队里，哪些价值观会通过小决定体现出来？"
+      },
+      {
+        "text": "Müssen Menschen dieselben Werte teilen, bevor sie zusammenarbeiten?",
+        "zh": "人们是否必须先拥有相同价值观，才能一起合作？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ein gemeinsamer Wert zeigt sich für mich darin, dass …",
+        "zh": "对我来说，共同价值观体现在……",
+        "note": "原创口语补充，不是原报道引语。"
+      },
+      {
+        "text": "Offenheit braucht auch klare Grenzen, weil …",
+        "zh": "开放也需要明确的界限，因为……",
+        "note": "原创口语补充，不是原报道引语。"
+      }
+    ]
+  }
+}

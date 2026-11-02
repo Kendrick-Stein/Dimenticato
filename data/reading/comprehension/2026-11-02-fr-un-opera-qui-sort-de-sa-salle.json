@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-fr-un-opera-qui-sort-de-sa-salle",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Comment le projet associe-t-il travaux et activité artistique ?",
+      "options": [
+        "Il garde les spectacles à Favart et déplace les répétitions.",
+        "Il remplace les tournées par une saison centrée sur la formation.",
+        "Il rénove la salle tout en organisant des spectacles ailleurs.",
+        "Il reporte les travaux afin de maintenir les spectacles à Favart."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9",
+        "s12",
+        "s15"
+      ],
+      "explanationZh": "剧场施工期间仍计划在其他场所演出，这是工程与艺术活动并行的方式。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quel rôle le mécénat a-t-il joué selon le communiqué ?",
+      "options": [
+        "Il a permis de choisir les villes de la tournée.",
+        "Il a soutenu des créations et la rénovation des ateliers.",
+        "Il a remplacé le financement public de la Salle Favart.",
+        "Il a pris en charge la direction de l’Académie."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s7",
+        "s10"
+      ],
+      "explanationZh": "第7句写明赞助支持新作品委约与工坊翻修；Favart厅工程另由文化部资助。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quel aménagement est prévu pour la fosse d’orchestre ?",
+      "options": [
+        "La moderniser pour y installer un nouvel espace de répétition.",
+        "La restaurer pour y organiser les ateliers de formation artistique.",
+        "L’agrandir pour y réunir les équipes techniques et les musiciens.",
+        "La restaurer en améliorant son accès aux personnes à mobilité réduite."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "第11句同时指出恢复历史状态和改善行动不便人士的使用条件。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quel objectif les partenariats cités soutiennent-ils ?",
+      "options": [
+        "Accompagner de jeunes artistes dans leur parcours professionnel.",
+        "Former les équipes techniques à la rénovation des salles.",
+        "Préparer les donateurs à participer aux activités pédagogiques.",
+        "Organiser des échanges entre les responsables des lieux de tournée."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "第4至6句把培养青年艺术家、Campus Favart传承活动和这些合作联系起来；没有将合作目标写成施工培训、捐助者学习或巡演场地方交流。"
+    }
+  ]
+}

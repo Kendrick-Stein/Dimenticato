@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-it-una-storia-che-torna-visibile",
+  "storyId": "dga-torino-ester-valabrega-2026-10-13",
+  "lang": "it",
+  "date": "2026-11-02",
+  "contentType": "native-adaptation",
+  "title": "Una storia che torna visibile",
+  "titleZh": "重新被看见的一段历史",
+  "summaryZh": "从一场都灵展览公告，理解家族研究如何让被忽略的人物重新进入公共记忆。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：过去事件与研究动机交织，含关系从句、原因及对比，历史词汇有中文辅助。",
+  "category": "culture",
+  "topics": [
+    "档案",
+    "文化活动"
+  ],
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "Torino | Inaugurazione mostra | \"Re-Resistance. Ester Valabrega, un archivio possibile\"",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c793bd1cf7d0751633b91c0d37ba4f8f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2783",
+    "publishedAt": "2026-10-13",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：意大利文化部档案总局，机构署名（未列个人作者）。原始发布日期：2026-10-13。编辑、意大利语分级改写、中文翻译与教学补充：Dimenticato；原链接及许可见本页。",
+  "adaptation": "根据原语机构报道删节并同语言改写，逐句中文翻译与练习、词汇及口语提示为教学补充，非原文逐字转载或机构认可教材；不使用图片、海报、书籍内文或第三方引语。报道中的活动日期已过去，仅回顾原公告，不声称活动已实际举行或仍开放。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 13 ottobre 2026 la Direzione generale Archivi ha annunciato una mostra dedicata a Ester Valabrega presso l’Archivio di Stato di Torino.",
+      "zh": "2026年10月13日，档案总局发布公告，介绍都灵国家档案馆一场关于Ester Valabrega的展览。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Il progetto nasce dalla ricerca di Sofia Valabrega, che ha voluto ricostruire la vicenda della propria prozia attraverso fotografie, memorie e documenti.",
+      "zh": "该项目源于Sofia Valabrega的研究，她希望通过照片、回忆与文献还原自己祖辈姊妹Ester的经历。",
+      "glosses": [
+        {
+          "surface": "ricostruire",
+          "lemma": "ricostruire",
+          "zh": "重建、还原",
+          "note": "不定式，volere后接动词原形"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Ester era nata a Torino nel 1916 e aveva studiato chimica all’università; frequentando il gruppo di Primo Levi, aveva conosciuto Sandro Delmastro.",
+      "zh": "Ester于1916年出生在都灵，曾在大学学习化学；她在参加Primo Levi所在的圈子时认识了Sandro Delmastro。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "I due avevano aderito al movimento Giustizia e Libertà, ma nel 1944 le loro vite erano state colpite dalla repressione.",
+      "zh": "两人加入了“正义与自由”运动，但1944年镇压改变了他们的生活。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Sandro era stato ucciso durante un rastrellamento a Cuneo, mentre Ester era stata arrestata e rinchiusa nelle Carceri Nuove di Torino.",
+      "zh": "Sandro在库内奥的一次搜捕中被杀害，而Ester被逮捕，关进都灵的Carceri Nuove监狱。",
+      "glosses": [
+        {
+          "surface": "arrestata",
+          "lemma": "arrestare",
+          "zh": "被逮捕的",
+          "note": "阴性单数过去分词，与Ester一致"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Secondo il testo dell’istituzione, la storia di Ester è rimasta a lungo quasi invisibile, sia nella memoria familiare sia nel racconto pubblico della Resistenza.",
+      "zh": "据机构报道，Ester的故事长期几乎被忽略，无论是在家族记忆中，还是在关于抵抗运动的公共叙述中。",
+      "glosses": [
+        {
+          "surface": "familiare",
+          "lemma": "familiare",
+          "zh": "家族的",
+          "note": "修饰阴性单数memoria；-e形容词单数同形"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "La vicenda di Sandro, invece, era più conosciuta: proprio questa differenza ha spinto Sofia a cercare le tracce della prozia e a restituirle riconoscimento.",
+      "zh": "相比之下，Sandro的经历更为人所知：正是这种差异促使Sofia寻找这位祖辈亲人留下的痕迹，让她重新得到认可。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "La mostra prevedeva anche documenti originali del fascicolo militare di Sandro, conservati nelle Sezioni Riunite dell’Archivio di Stato.",
+      "zh": "展览还计划展出Sandro军方档案中的原始文件，这些材料保存在国家档案馆的Sezioni Riunite部门。",
+      "glosses": [
+        {
+          "surface": "originali",
+          "lemma": "originale",
+          "zh": "原始的",
+          "note": "复数形容词修饰documenti"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Il lavoro coinvolgeva l’Archivio di Stato e il Centro Internazionale di Studi Primo Levi, con la collaborazione dell’istituto piemontese dedicato alla storia della Resistenza e della società contemporanea.",
+      "zh": "项目由国家档案馆和Primo Levi国际研究中心开展，并有皮埃蒙特抵抗运动与当代社会史研究机构参与合作。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il programma univa l’esposizione alla presentazione di un libro di Roberta Mori su Sandro Delmastro, pubblicato nel 2025.",
+      "zh": "活动安排把展览与Roberta Mori一本关于Sandro Delmastro的书籍介绍相结合，该书出版于2025年。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Per il pubblico erano previste visite guidate il 20 e il 22 ottobre, dalle 17 alle 20, con ingresso libero fino a esaurimento dei posti.",
+      "zh": "公众导览原定于10月20日和22日下午五点至八点进行，免费入场，座位满额为止。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Per le scuole il calendario indicava altri appuntamenti mattutini e richiedeva una prenotazione, pur mantenendo gratuito l’ingresso.",
+      "zh": "学校参观则安排在其他上午时段，虽然免费，但需要预约。",
+      "glosses": [
+        {
+          "surface": "prenotazione",
+          "lemma": "prenotazione",
+          "zh": "预约",
+          "note": "阴性单数；una prenotazione"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Queste informazioni descrivono l’annuncio di ottobre: aiutano a capire il progetto, ma non dimostrano che le attività si siano svolte esattamente come previsto.",
+      "zh": "这些信息介绍的是十月公告：有助于了解项目，但不能证明活动确实完全按计划举行。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "ricostruire",
+        "lemma": "ricostruire",
+        "zh": "重建、还原",
+        "sentenceId": "s2",
+        "note": "不定式，volere后接动词原形"
+      },
+      {
+        "text": "arrestata",
+        "lemma": "arrestare",
+        "zh": "被逮捕的",
+        "sentenceId": "s5",
+        "note": "阴性单数过去分词，与Ester一致"
+      },
+      {
+        "text": "familiare",
+        "lemma": "familiare",
+        "zh": "家族的",
+        "sentenceId": "s6",
+        "note": "修饰阴性单数memoria；-e形容词单数同形"
+      },
+      {
+        "text": "originali",
+        "lemma": "originale",
+        "zh": "原始的",
+        "sentenceId": "s8",
+        "note": "复数形容词修饰documenti"
+      },
+      {
+        "text": "prenotazione",
+        "lemma": "prenotazione",
+        "zh": "预约",
+        "sentenceId": "s12",
+        "note": "阴性单数；una prenotazione"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "sia nella memoria familiare sia nel racconto pubblico",
+        "zh": "既在家族记忆中，也在公共叙述中",
+        "sentenceId": "s6",
+        "note": "sia…sia…连接两个并列范围。"
+      },
+      {
+        "text": "visite guidate",
+        "zh": "导览参观",
+        "sentenceId": "s11",
+        "note": "guidate与阴性复数visite一致。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s13",
+        "note": "non dimostrano che…si siano svolte用虚拟式限制证据：公告不等于结果证明。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali documenti della tua città meritano di essere raccontati al pubblico?",
+        "zh": "你所在城市有哪些文献值得向公众介绍？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Una storia poco conosciuta può cambiare il nostro sguardo sul passato.",
+        "zh": "一段不为人知的经历可能改变我们看待过去的方式。",
+        "note": "教学补充，可按个人情况改写，不代表原文作者观点。"
+      }
+    ]
+  }
+}

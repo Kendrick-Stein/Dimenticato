@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-en-a-landscape-with-many-roles",
+  "storyId": "natural-england-lyscombe-nnr-2026-09-15",
+  "lang": "en",
+  "date": "2026-11-02",
+  "category": "environment",
+  "topics": [
+    "一片土地的多种作用"
+  ],
+  "title": "A landscape with many roles",
+  "titleZh": "一片土地的多种作用",
+  "summaryZh": "多塞特郡Lyscombe获得国家自然保护区认定：保护草地、维持历史遗迹与较低强度农业如何相互联系？",
+  "level": "B1",
+  "levelReason": "编辑估计B1：从自然景观连接保护方式、农业与水质，使用关系从句、被动语态及因果表达；生物名称配中文，不是官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Natural England / GOV.UK",
+    "title": "Rare species help Dorset nature reserve gain national recognition",
+    "url": "https://www.gov.uk/government/news/rare-species-help-dorset-nature-reserve-gain-national-recognition",
+    "publishedAt": "2026-09-15",
+    "lang": "en",
+    "author": "Natural England"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Natural England; 2026-09-15; https://www.gov.uk/government/news/rare-species-help-dorset-nature-reserve-gain-national-recognition",
+  "adaptation": "2026-11-02整理：依据机构英文公告同语言分级改写；中文翻译、语境词义和练习由Dimenticato编辑添加，不是原文或官方课程。仅使用机构叙述，不复制直接引语、图片、标志、第三方材料。原报道日期单独保留，计划不写成已完成，不暗示原机构认可。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 15 September 2026, Natural England announced that Lyscombe in Dorset had become a National Nature Reserve.",
+      "zh": "2026年9月15日，英格兰自然署宣布，多塞特郡的Lyscombe已成为国家自然保护区。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "The site covers 334 hectares and lies within the Dorset Downs, a landscape of chalk hills, old woodland and valleys.",
+      "zh": "该地占地334公顷，位于多塞特丘陵之中，那是一片有白垩丘陵、古老林地和山谷的景观。",
+      "glosses": [
+        {
+          "surface": "hectares",
+          "lemma": "hectare",
+          "zh": "公顷"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "This wider landscape inspired the novels of Thomas Hardy, so its importance is cultural as well as environmental.",
+      "zh": "这片更广阔的景观曾启发托马斯·哈代创作小说，因此它既有环境价值，也有文化意义。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "At Lyscombe, the chalk grassland supports at least six species of orchid, including bee orchids, as well as rare chalkhill blue butterflies.",
+      "zh": "Lyscombe的白垩草地支持至少六种兰花，包括蜂兰，以及稀有的白垩蓝蝶。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "The announcement explains that nature needs larger, better and more connected spaces if it is to recover.",
+      "zh": "公告解释说，自然要恢复，就需要面积更大、质量更好、联系更紧密的空间。",
+      "glosses": [
+        {
+          "surface": "connected",
+          "lemma": "connect",
+          "zh": "相互联系的"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Lyscombe could help recovery across the wider Dorset Downs, an area of 5,700 hectares; that figure is not the size of the new reserve itself.",
+      "zh": "Lyscombe可能有助于整个5700公顷多塞特丘陵地区的恢复；这个数字并非新保护区本身的面积。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Looking after this place involves more than leaving every part of the land untouched.",
+      "zh": "照料这个地方并不只是让每一块土地都完全不受干预。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "English Longhorn cattle are introduced to graze, helping to maintain the chalk grassland and prevent bushes from taking over.",
+      "zh": "这里引入英国长角牛放牧，以帮助维持白垩草地，并防止灌木侵占。",
+      "glosses": [
+        {
+          "surface": "graze",
+          "lemma": "graze",
+          "zh": "吃草／放牧取食"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "This traditional form of conservation works alongside natural regeneration, while protecting the landscape and its historic features.",
+      "zh": "这种传统保护方式与自然更新相结合，同时保护景观及其历史遗存。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "These include a medieval chapel, a sixteenth-century house and remains of older settlements.",
+      "zh": "这些遗存包括一座中世纪小教堂、一座16世纪房屋和更古老聚落的遗迹。",
+      "glosses": [
+        {
+          "surface": "medieval",
+          "lemma": "medieval",
+          "zh": "中世纪的"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Less intensive farming also allows food production to continue, rather than treating farming and nature as completely separate activities.",
+      "zh": "较低强度的农业也使食物生产得以继续，而不是把农业与自然视为完全分离的活动。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "According to the announcement, historic pollution entering the local River Piddle has been reduced, improving water quality farther downstream.",
+      "zh": "据公告称，进入当地Piddle河的历史遗留污染已减少，改善了更下游的水质。",
+      "glosses": [
+        {
+          "surface": "downstream",
+          "lemma": "downstream",
+          "zh": "在下游"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Dorset Wildlife Trust acquired the site in partnership with Natural England in 2024, and the reserve was declared through their partnership.",
+      "zh": "多塞特野生动物信托于2024年与英格兰自然署合作取得该地，此次保护区认定也是双方合作的成果。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "The new status recognises both the wildlife already present and the role this place can play in a larger recovery effort.",
+      "zh": "新的地位既认可这里已有的野生生物，也认可该地在更大范围恢复行动中能够发挥的作用。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Lyscombe is the sixteenth reserve in the King’s Series, which aims to create or extend twenty-five National Nature Reserves by 2028, linking this local project to a wider national commitment.",
+      "zh": "Lyscombe是国王系列中的第十六处保护区；该系列目标是在2028年前建立或扩展二十五处国家自然保护区，把这一地方项目与更广泛的全国承诺联系起来。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "hectares",
+        "zh": "公顷",
+        "lemma": "hectare",
+        "sentenceId": "s2",
+        "note": "hectares为面积单位hectare复数，334后保留复数；不是体积、重量或时间。"
+      },
+      {
+        "text": "connected",
+        "zh": "相互联系的",
+        "lemma": "connect",
+        "sentenceId": "s5",
+        "note": "connected修饰spaces，指生态空间相连；过去分词作形容词。"
+      },
+      {
+        "text": "graze",
+        "zh": "吃草／放牧取食",
+        "lemma": "graze",
+        "sentenceId": "s8",
+        "note": "graze是牛吃草；to后用原形，后文说明抑制灌木扩张。"
+      },
+      {
+        "text": "medieval",
+        "zh": "中世纪的",
+        "lemma": "medieval",
+        "sentenceId": "s10",
+        "note": "medieval修饰chapel，表示历史时期，不是可移动或临时建筑。"
+      },
+      {
+        "text": "downstream",
+        "zh": "在下游",
+        "lemma": "downstream",
+        "sentenceId": "s12",
+        "note": "downstream表示沿水流向下游，farther downstream为更下游。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "as well as",
+        "zh": "也／以及",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "works alongside",
+        "zh": "与……协同发挥作用",
+        "sentenceId": "s9"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "could保留潜力而非完成结果；分号后明确区分保护区与更广阔区域的面积。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "How can farming and conservation support each other?",
+        "zh": "农业与自然保护如何相互支持？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "The same land can serve more than one purpose.",
+        "zh": "同一片土地可以有不止一种用途。",
+        "note": "原创口语练习表达，不是来源引语。"
+      }
+    ]
+  }
+}

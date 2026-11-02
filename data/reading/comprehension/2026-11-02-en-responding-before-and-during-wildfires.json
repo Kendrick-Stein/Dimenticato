@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-en-responding-before-and-during-wildfires",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "What is the stated role of the aircraft?",
+      "options": [
+        "To improve forecasts of where wildfire risks will be highest.",
+        "To help crews tackle fires on difficult-to-reach terrain.",
+        "To restore water levels in peatlands across England.",
+        "To coordinate local restrictions when fire risks rise."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s6"
+      ],
+      "explanationZh": "飞机拟支援难以到达地形的灭火，民用消防部门继续按程序申请支援。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why is different protective clothing planned?",
+      "options": [
+        "The existing kit is designed mainly for building fires, not long wildfire operations.",
+        "The existing kit is designed mainly for wet rescue work, not dry conditions.",
+        "The existing kit is designed mainly for winter shifts, not summer use.",
+        "The existing kit is designed mainly for roadside work, not work on hills."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "新服装更轻、更透气，针对持续较久的野火灭火；现有装备主要为建筑内部火灾设计。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Which timing is reported for the peatland grant scheme?",
+      "options": [
+        "From April 2026 to April 2028.",
+        "From October 2026 to October 2028.",
+        "From April 2027 to April 2029.",
+        "From October 2027 to October 2029."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "正文保留预计2027年4月至2029年4月的安排，其他选项的起止时间不符。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Why do peatland restoration and aircraft support serve different roles?",
+      "options": [
+        "Restoration supports short-term detection, while aircraft support long-term forecasts.",
+        "Restoration prepares equipment for crews, while aircraft maintain water in the soil.",
+        "Restoration improves public warning systems, while aircraft enforce local restrictions.",
+        "Restoration reduces landscape vulnerability, while aircraft support firefighting."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "一项针对景观含水量与蔓延风险，另一项用于火灾响应；不是互相替代或先后前置条件。"
+    },
+    {
+      "id": "q5",
+      "kind": "main-idea",
+      "prompt": "How should a reader interpret the package as a whole?",
+      "options": [
+        "As a response centred on aircraft, with landscape work funded after their deployment.",
+        "As linked measures for prevention and response, with capabilities still to be developed.",
+        "As a forecast-led scheme, with prevention work limited to public awareness campaigns.",
+        "As a local restriction programme, with England’s teams replacing support from other nations."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s5",
+        "s11",
+        "s13",
+        "s14",
+        "s15",
+        "s16"
+      ],
+      "explanationZh": "整体包含多个环节的能力建设和措施，并明确区分公告与完成或已证明效果。"
+    }
+  ]
+}

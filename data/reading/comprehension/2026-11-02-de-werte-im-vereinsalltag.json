@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-de-werte-im-vereinsalltag",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welche Entwicklung beschreibt der Artikel im Projekt?",
+      "options": [
+        "Von einer öffentlichen Kampagne zu einer verbindlichen Vereinsprüfung.",
+        "Von Gesprächen über Werte zu gemeinsam geplanten lokalen Aktionen.",
+        "Von einem Zertifikatskurs zu einer gemeinsamen beruflichen Ausbildung.",
+        "Von einer staatlichen Reform zu neuen Regeln für alle Gemeinden."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s4",
+        "s20",
+        "s21",
+        "s22"
+      ],
+      "explanationZh": "文章主线是交流价值观、规划本地行动；没有考试、职业培训或全国改革。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Was war beim Bericht über den gemeinsamen Aktionstag noch offen?",
+      "options": [
+        "Ob die Gespräche im Mai und Juni stattgefunden hatten.",
+        "Ob überhaupt eine Social-Media-Kampagne vorgesehen war.",
+        "Welche Werte bei den bisherigen Gesprächen genannt wurden.",
+        "An welchen konkreten Orten die Demokratie-Brunches stattfinden würden."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4",
+        "s9",
+        "s21",
+        "s22",
+        "s23"
+      ],
+      "explanationZh": "第22句说明具体地点当时尚待公布，其余信息已经在文中明确。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Warum misst der Bericht der Offenheit innerhalb von Vereinen Bedeutung bei?",
+      "options": [
+        "Weil unterschiedliche Menschen so Zugang zu Beteiligung finden können.",
+        "Weil dadurch politische Rahmenbedingungen ihre Bedeutung verlieren.",
+        "Weil Gruppen damit auf Gespräche über Unterschiede verzichten können.",
+        "Weil vor allem einheitliche Lebensgeschichten die Zusammenarbeit erleichtern."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s13",
+        "s14",
+        "s19"
+      ],
+      "explanationZh": "不同经历和条件的人能否参与，与团队是否开放和接纳差异有关；开放并不消除制度条件或差异。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Welche Annahme wird durch die Überlegung in den Sätzen 15 und 16 relativiert?",
+      "options": [
+        "Dass gemeinsame Aktivitäten auch Lerngelegenheiten sein können.",
+        "Dass Menschen durch Zusammenarbeit neue Sichtweisen entwickeln.",
+        "Dass gemeinsame Werte schon vor jeder Beteiligung feststehen müssen.",
+        "Dass Menschen mit verschiedenen Voraussetzungen zusammenarbeiten."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s15",
+        "s16"
+      ],
+      "explanationZh": "这两句指出，共同价值观有时在参与中形成，因此不一定必须事先完整具备。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Wie wird die Leistungsfähigkeit des Ehrenamts im Text eingeordnet?",
+      "options": [
+        "Es soll vor allem politische Institutionen durch Vereine ersetzen.",
+        "Es kann Begegnung fördern, löst aber nicht sämtliche gesellschaftlichen Probleme.",
+        "Es wirkt nur dann, wenn Gruppen unterschiedliche Meinungen vermeiden.",
+        "Es wird anhand der bereits gemessenen Erfolge der Dezemberaktionen bewertet."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11",
+        "s12",
+        "s24"
+      ],
+      "explanationZh": "第11句既肯定交流机会，也明确并非包办所有社会挑战；12月活动在报道时仍为计划。"
+    }
+  ]
+}

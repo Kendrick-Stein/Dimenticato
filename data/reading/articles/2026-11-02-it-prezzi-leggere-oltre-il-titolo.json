@@ -1,0 +1,254 @@
+{
+  "schema": 1,
+  "id": "2026-11-02-it-prezzi-leggere-oltre-il-titolo",
+  "storyId": "istat-prezzi-provvisori-ottobre-2026",
+  "lang": "it",
+  "date": "2026-11-02",
+  "contentType": "native-adaptation",
+  "title": "Prezzi: leggere oltre il titolo",
+  "titleZh": "物价：不止读一个标题",
+  "summaryZh": "阅读十月物价初步估计，同时区分时间基准、商品类别和统计指标。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：区分同比环比、指标口径与条件假设，含让步、限制和抽象统计表达；不是官方认证。",
+  "category": "work-economy",
+  "topics": [
+    "生活成本",
+    "统计阅读"
+  ],
+  "source": {
+    "name": "Istat",
+    "title": "Prezzi al consumo (dati provvisori) – Ottobre 2026",
+    "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
+    "publishedAt": "2026-10-30",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Istat，机构署名（未列个人作者）。原始发布日期：2026-10-30。编辑、意大利语分级改写、中文翻译与教学补充：Dimenticato；原链接及许可见本页。",
+  "adaptation": "根据原语机构报道删节并同语言改写，逐句中文翻译与练习、词汇及口语提示为教学补充，非原文逐字转载或机构认可教材；不使用图片、海报、书籍内文或第三方引语。保留初步估计性质；采用同次发布附带PDF的术语说明，不构成个人财务建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Nel comunicato del 30 ottobre 2026, l’Istat presenta una stima preliminare dell’aumento dei prezzi al consumo: per l’indice nazionale NIC, ottobre registra un incremento del 5,4% rispetto allo stesso mese del 2025.",
+      "zh": "在2026年10月30日的公报中，Istat公布消费价格上涨的初步估计：全国NIC指数十月同比上涨5.4%。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Rispetto a settembre 2026, invece, la crescita è dello 0,9%; le due percentuali descrivono confronti diversi e non vanno lette come se fossero due misure alternative dello stesso intervallo.",
+      "zh": "与2026年9月相比，增长则为0.9%；这两个百分比采用不同的比较基准，不能当作同一时间区间的两种替代测量。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "La nota metodologica chiama congiunturale la variazione rispetto al periodo precedente e tendenziale quella rispetto al corrispondente periodo dell’anno prima: distinguere le due basi è il primo passo per interpretare il comunicato.",
+      "zh": "方法说明把相对于上一时期的变化称为环比，把相对于上年同期的变化称为同比：区分这两种基准，是理解公报的第一步。",
+      "glosses": [
+        {
+          "surface": "precedente",
+          "lemma": "precedente",
+          "zh": "前一个的",
+          "note": "单数形容词，修饰periodo"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "L’inflazione annua passa dal 4,2% di settembre al 5,4% di ottobre, ma il dato generale non significa che ogni prodotto abbia subito lo stesso aumento o che ogni famiglia sostenga spese identiche.",
+      "zh": "年度同比通胀率从九月的4.2%升至十月的5.4%，但总体数字并不意味着每种产品都同幅上涨，也不意味着每个家庭支出相同。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "L’indice considera infatti un paniere rappresentativo dei consumi delle famiglie, attribuendo alle diverse componenti un peso che riflette la loro importanza nella spesa complessiva; non si limita a fare una media indistinta dei prezzi.",
+      "zh": "该指数采用具有代表性的家庭消费篮子，根据各部分在总支出中的重要性赋予权重，而不是简单地对价格作不加区别的平均。",
+      "glosses": [
+        {
+          "surface": "paniere",
+          "lemma": "paniere",
+          "zh": "消费篮子",
+          "note": "阳性单数，指统计中选取的代表性商品与服务组合"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Secondo l’istituto, l’accelerazione dipende soprattutto dai beni energetici, il cui aumento annuo passa dal 22,6% al 31,4%, mentre anche gli alimenti non lavorati e i servizi di trasporto contribuiscono alla dinamica.",
+      "zh": "据该机构解释，增速加快主要来自能源商品，其同比涨幅由22.6%升至31.4%；未加工食品与交通服务也推动了这一变化。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Per gli alimenti non lavorati, come frutta, verdura o carne fresca, la crescita annua raggiunge il 7,5%, contro il 5,5% del mese precedente; la categoria non coincide con tutti i prodotti alimentari.",
+      "zh": "未加工食品，例如新鲜水果、蔬菜或肉类，同比涨幅达7.5%，上月为5.5%；这个类别并不等同于全部食品。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Gli alimenti lavorati mostrano invece prezzi ancora inferiori a quelli di un anno prima: la diminuzione si riduce dallo 0,6% allo 0,2%, pur accompagnandosi a un aumento dello 0,5% rispetto a settembre.",
+      "zh": "加工食品的价格则仍低于上年同期：降幅从0.6%缩小至0.2%，与此同时，相比九月却上涨了0.5%。",
+      "glosses": [
+        {
+          "surface": "diminuzione",
+          "lemma": "diminuzione",
+          "zh": "下降",
+          "note": "阴性单数，指同比价格跌幅"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Questo contrasto mostra perché un calo annuo e un rialzo mensile possano comparire insieme senza contraddirsi: ciascun confronto parte da un momento diverso.",
+      "zh": "这种对比说明，为什么同比下降和环比上升能够同时出现而不矛盾：两个比较各自采用了不同的起点。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il cosiddetto carrello della spesa comprende beni alimentari e prodotti per la cura della casa e della persona; per questo insieme, il ritmo annuo sale dall’1,5% al 2,5%.",
+      "zh": "所谓“购物篮”包括食品、家庭清洁护理及个人护理用品；这一组合的同比涨幅从1.5%升至2.5%。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Non va confuso con la categoria dei prodotti acquistati più frequentemente, che comprende anche altre spese, come carburanti e trasporti urbani, e registra un aumento annuo del 5,8%.",
+      "zh": "它不能与高频购买产品类别混为一谈，后者还包括燃油和城市交通等其他支出，同比上涨5.8%。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Un’altra misura, l’inflazione di fondo, esclude energia e alimenti freschi: in ottobre sale al 2,0%, dall’1,6% di settembre, offrendo una lettura che non comprende queste componenti.",
+      "zh": "另一项指标是核心通胀，剔除能源和新鲜食品：十月从九月的1.6%升至2.0%，提供一种不含这些部分的观察口径。",
+      "glosses": [
+        {
+          "surface": "esclude",
+          "lemma": "escludere",
+          "zh": "剔除",
+          "note": "直陈式现在时第三人称单数，主语inflazione di fondo"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Escluderle dal calcolo di un indicatore non significa però che le famiglie smettano di comprarle: si tratta di una scelta statistica, non di una descrizione completa del bilancio domestico.",
+      "zh": "但从一项指标中剔除这些部分，并不表示家庭不再购买它们：这是统计口径的选择，而不是对家庭预算的完整描述。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Infine, l’inflazione acquisita per il 2026 è pari al 3,4%: indica quale variazione media annua si avrebbe se, nei mesi restanti, l’indice rimanesse al livello dell’ultimo mese disponibile.",
+      "zh": "最后，2026年的“已结转通胀”为3.4%：它表示如果剩余月份指数保持在最近一个可用月份的水平，全年平均变化率会是多少。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Nello stesso comunicato, l’indice armonizzato europeo IPCA aumenta dell’1,2% sul mese e del 5,6% sull’anno; la metodologia comune permette confronti tra paesi, mentre il NIC descrive l’inflazione dell’intero sistema economico nazionale.",
+      "zh": "同一公报中，欧洲协调消费价格指数IPCA环比上涨1.2%，同比上涨5.6%；共同的方法支持国家之间的比较，而NIC描述整个国家经济体系的通胀。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Anche la direzione del movimento dipende dal gruppo osservato: i servizi ricreativi, culturali e per la cura della persona scendono dello 0,9% sul mese, benché l’indice generale aumenti.",
+      "zh": "变化方向也取决于观察的类别：娱乐、文化及个人护理服务环比下降0.9%，尽管总体指数上升。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "L’inflazione acquisita è quindi un risultato condizionato da un’ipotesi, non una previsione certa dei prezzi futuri; inoltre, tutte queste cifre appartengono alla diffusione provvisoria, per la quale l’Istat annuncia un successivo aggiornamento il 17 novembre.",
+      "zh": "因此，“已结转通胀”是建立在假设上的结果，不是对未来物价的确定预测；而且这些数字均属于初步发布，Istat预告将于11月17日进一步更新。",
+      "glosses": [
+        {
+          "surface": "ipotesi",
+          "lemma": "ipotesi",
+          "zh": "假设",
+          "note": "阴性单数，un’的省音；此词单复数同形"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "precedente",
+        "lemma": "precedente",
+        "zh": "前一个的",
+        "sentenceId": "s3",
+        "note": "单数形容词，修饰periodo"
+      },
+      {
+        "text": "paniere",
+        "lemma": "paniere",
+        "zh": "消费篮子",
+        "sentenceId": "s5",
+        "note": "阳性单数，指统计中选取的代表性商品与服务组合"
+      },
+      {
+        "text": "diminuzione",
+        "lemma": "diminuzione",
+        "zh": "下降",
+        "sentenceId": "s8",
+        "note": "阴性单数，指同比价格跌幅"
+      },
+      {
+        "text": "esclude",
+        "lemma": "escludere",
+        "zh": "剔除",
+        "sentenceId": "s12",
+        "note": "直陈式现在时第三人称单数，主语inflazione di fondo"
+      },
+      {
+        "text": "ipotesi",
+        "lemma": "ipotesi",
+        "zh": "假设",
+        "sentenceId": "s17",
+        "note": "阴性单数，un’的省音；此词单复数同形"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Rispetto a",
+        "zh": "与……相比",
+        "sentenceId": "s2",
+        "note": "引入比较的基准。"
+      },
+      {
+        "text": "pur accompagnandosi",
+        "zh": "虽然同时伴随着",
+        "sentenceId": "s8",
+        "note": "pur＋副动词表达让步。"
+      },
+      {
+        "text": "non una previsione certa",
+        "zh": "并非确定的预测",
+        "sentenceId": "s17",
+        "note": "区分条件计算与预测结论。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s14",
+        "note": "si avrebbe se…rimanesse为条件式＋未完成过去虚拟式，表达建立在假设上的结果。"
+      },
+      {
+        "sentenceId": "s9",
+        "note": "senza contraddirsi说明两种不同时间基准可以产生方向不同的变化。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quando leggi una notizia sui prezzi, controlli prima la percentuale o il periodo del confronto?",
+        "zh": "读到物价新闻时，你先注意百分比还是比较的时间区间？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Prima di confrontare due dati, controllerei che cosa misurano.",
+        "zh": "比较两个数字之前，我会先检查它们衡量的内容。",
+        "note": "教学补充，可按个人情况改写，不代表原文作者观点。"
+      }
+    ]
+  }
+}

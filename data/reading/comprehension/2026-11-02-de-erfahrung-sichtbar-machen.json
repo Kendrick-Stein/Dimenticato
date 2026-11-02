@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-de-erfahrung-sichtbar-machen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welche Verbindung kennzeichnet das Programm laut Text?",
+      "options": [
+        "Es verbindet Sprachunterricht mit der Suche nach Arbeitsstellen.",
+        "Es verbindet die Anerkennung von Erfahrung mit weiterer Entwicklung.",
+        "Es verbindet die Ausbildung neuer Lehrkräfte mit Schulprüfungen.",
+        "Es verbindet die Finanzierung von Gebäuden mit Kulturveranstaltungen."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s6",
+        "s14",
+        "s15",
+        "s17"
+      ],
+      "explanationZh": "项目既让已有经验可见，也通过进一步培训促进发展；不是就业中介、学校考试或建筑资助项目。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Für wen ist das Zertifizierungsprogramm vorgesehen?",
+      "options": [
+        "Für Studierende, die ein Praktikum in Salzburg beginnen.",
+        "Für alle Beschäftigten, die seit einem Jahr im Beruf sind.",
+        "Für neue Freiwillige, die noch keine Veranstaltung organisiert haben.",
+        "Für aktive Bildungswerkleitungen mit mindestens eineinhalb Jahren Erfahrung."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "第5句限定了现任志愿教育机构负责人及至少一年半任职经历。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Warum gehört eine Hospitation zum Programm?",
+      "options": [
+        "Weil sie Einblicke in andere Formate und Arbeitsweisen ermöglicht.",
+        "Weil sie den vierstündigen Kompetenzworkshop ersetzen soll.",
+        "Weil dort die Gebühren für die Zertifizierung bezahlt werden.",
+        "Weil dort die ersten vier Teilnehmerinnen ausgewählt werden."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "观摩另一机构让参加者了解不同活动形式和工作方式；它是另一环节，不替代工作坊。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Was folgt aus der beschriebenen Beratung über Weiterbildungen?",
+      "options": [
+        "Alle Teilnehmenden sollen anschließend dieselbe Ausbildung machen.",
+        "Ein Zertifikat wird erst nach einem öffentlichen Vortrag vergeben.",
+        "Die weitere Unterstützung kann an persönliche Lernziele anknüpfen.",
+        "Die bisherige Erfahrung ist für das Programm nicht mehr wichtig."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s14",
+        "s15",
+        "s16",
+        "s17"
+      ],
+      "explanationZh": "讨论适合个人的培训，并以展示和公众讲话为例，支持“依据个人学习目标提供帮助”的推断；未规定统一课程或公开演讲毕业条件。"
+    }
+  ]
+}

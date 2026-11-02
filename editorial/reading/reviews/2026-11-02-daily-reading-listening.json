@@ -1,0 +1,686 @@
+{
+  "checkedAt": "2026-11-02",
+  "status": "PASS-content-and-headless-tests",
+  "batch": "12 independently sourced readings: IT/FR/DE/EN each A2, B1, B2; 3 outbound listening resources",
+  "independentExerciseReview": {
+    "blindBeforeKey": true,
+    "clozeQuestions": 60,
+    "comprehensionQuestions": 48,
+    "listeningQuestions": 6,
+    "allMatchedAfterRevision": true
+  },
+  "reviews": {
+    "it": {
+      "status": "PASS",
+      "blocking": [],
+      "minor": [],
+      "checks": {
+        "blindAnswersMatch": true,
+        "comprehensionExplanationsEvidence": "12/12 correct",
+        "practiceOffsetsAnswersMorphology": "15/15 correct; restoration exercise includes some grammatically plausible distractors, explicitly labelled recover original word",
+        "translation": "All 40 sentence translations checked; faithful. prozia translated neutral 祖辈姊妹 avoids unsupported paternal/maternal specificity.",
+        "bodyWordCounts": {
+          "A2": 152,
+          "B1": 284,
+          "B2": 510
+        },
+        "levels": "A2 specialist terms and institution names near upper edge but short direct sentences; B1 historical subordinate structures acceptable; B2 statistics and conditionals appropriate.",
+        "time": "October cultural events treated as announced plans, not verified completion; next Istat release November 17 remains future.",
+        "sourceMaterials": "Native Italian institutional reporting; no textbook extracts, images, posters, book text or third-party quotations reproduced.",
+        "finalManifestHashes": "All 9 SHA256 match it/final-sha256.txt; blind article/questions synchronized."
+      },
+      "independentWebVerification": {
+        "checkedAt": "2026-11-02T00:55:40Z",
+        "sources": [
+          {
+            "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=10de827d8bccb3c4a8b4eee074ca4e29&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2796",
+            "published": "2026-10-16",
+            "author": "DGA institutional; no personal byline",
+            "verification": "Read full article. Event time/date, publisher/year, subject, author occupation and free entry capacity verified."
+          },
+          {
+            "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c793bd1cf7d0751633b91c0d37ba4f8f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2783",
+            "published": "2026-10-13",
+            "author": "DGA institutional; no personal byline",
+            "verification": "Read full article. 1916, 1944, names, military dossier, collaborations, 2025 book, public October 20/22 17–20 and school morning reservation verified."
+          },
+          {
+            "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
+            "published": "2026-10-30",
+            "author": "Istat institutional; no personal byline",
+            "verification": "Read full release plus attached methodology PDF pertinent pages. All article percentages match; bases and categories distinguished."
+          }
+        ],
+        "licensePages": [
+          {
+            "url": "https://cultura.gov.it/note-legali",
+            "license": "CC BY 3.0",
+            "scope": "DGA footer expressly links this policy; default unless otherwise indicated; attribution required; third-party content/images/logos excluded."
+          },
+          {
+            "url": "https://www.istat.it/note-legali/",
+            "license": "CC BY 4.0",
+            "scope": "Default unless otherwise indicated; changes attribution and license link required; third-party content/images/logos excluded."
+          }
+        ],
+        "pdf": "https://www.istat.it/wp-content/uploads/2026/10/CS_Prezzi-al-consumo_Prov_Ottobre2026.pdf"
+      },
+      "reviewedSha256": {
+        "articles/2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche.json": "1e780acd8308200fe51f29e05d9d793d2bf22b775c7c39dc61eef57f958c797b",
+        "articles/2026-11-02-it-prezzi-leggere-oltre-il-titolo.json": "f837c8217789fc261493e54101925fe15b0f816750944f0205755ec901aa7297",
+        "articles/2026-11-02-it-una-storia-che-torna-visibile.json": "21123e5c59ec687d208b321bdb0603ec89f3bb9d0dda6e49d8c4fc94695c7871",
+        "practice/2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche.json": "60e9771fe1112c96aea941f82761024722b435896c81243f746fc29f231f6c86",
+        "practice/2026-11-02-it-prezzi-leggere-oltre-il-titolo.json": "95ddd0c14f9cf1d1a0310918511d92a61c33f5e85c16ad7357094cba3b8d053a",
+        "practice/2026-11-02-it-una-storia-che-torna-visibile.json": "a18d25ddee399102d5e940687408ab70581dbc1728939b5aebd32a1eded0a2c5",
+        "comprehension/2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche.json": "6397aea840ffa58033d3efdbc9860b7c75270138b37c8c40d277229e44e5e884",
+        "comprehension/2026-11-02-it-prezzi-leggere-oltre-il-titolo.json": "f8b40d72526218c20bbc97c80fe166ecf56dcf29bece9ce95026d1851f51b88f",
+        "comprehension/2026-11-02-it-una-storia-che-torna-visibile.json": "10b1999f4e326edcdf8b7ad9d4d8d8e2aecba048dec08e0b31d3e9ceb9af5674"
+      },
+      "resolved": [
+        "B2 s17 explicitly identifies inflazione acquisita in Italian and Chinese; practice offset regenerated.",
+        "B1 q4 kind changed to detail."
+      ],
+      "finalReviewAt": "2026-11-02T00:57:18Z"
+    },
+    "fr": {
+      "date": "2026-11-02",
+      "reviewer": "coordinator-independent-of-French-author",
+      "result": "PASS",
+      "blindFirst": true,
+      "blindAnswersZeroBased": {
+        "A2": [
+          1,
+          3,
+          0
+        ],
+        "B1": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "B2": [
+          1,
+          3,
+          0,
+          2,
+          3
+        ]
+      },
+      "checks": [
+        "Every sentence translation inspected individually against native source text; exact sentence count below.",
+        "Official full texts and per-source licensing inspected independently; no third-party quotes or media reused.",
+        "15 cloze items exact offsets/forms/semantic uniqueness and Chinese explanations checked.",
+        "12 comprehension questions blind answered first; answers/evidence/explanations then compared; plausible distractor revisions rechecked.",
+        "Publisher/date/author verified; Coline Verneau preserved; INRAE contacts not mislabelled authors.",
+        "Dates distinguish 9 Oct event/19 Oct publication; Opera upcoming 2026-2027 6.8m/109/5/7/24; eels 3 years/2 cameras/>97% basin notcapture rate."
+      ],
+      "rightsEvidence": [
+        "https://www.inrae.fr/conditions-generales-dutilisation",
+        "https://www.culture.gouv.fr/mentions-legales"
+      ],
+      "repairs": [
+        "Parallel plausible distractors, old explanation cleanup",
+        "B1 q4 changed to detail",
+        "B1 s16 scope narrowed to future season",
+        "Teaching statements explicitly separated in adaptation"
+      ],
+      "files": {
+        "2026-11-02-fr-un-opera-qui-sort-de-sa-salle.comprehension.json": "af170edb0e2c5f590758ea4d9c518eeb64fb3583345270ff5da7a747b56efc7c",
+        "2026-11-02-fr-une-visite-pour-imaginer-son-avenir.article.json": "0ceb30fc0e301db91fcb1c6532a4b35e1186c368ef2d253c6dca0d2291c17c00",
+        "2026-11-02-fr-un-opera-qui-sort-de-sa-salle.practice.json": "e9c6509f29a92174b66d6669e202f2708c83e853f4601cb3a1bc5df438ef629f",
+        "2026-11-02-fr-suivre-un-voyage-sous-leau.comprehension.json": "044c6126a4b05dd43c81c2f5573c77959584ed7ed781425088ea9cb62b3c3a83",
+        "2026-11-02-fr-une-visite-pour-imaginer-son-avenir.practice.json": "d0174abf673c531fbbd1871e9951a33214f887ded2127f816f8f4e9b46eed463",
+        "2026-11-02-fr-une-visite-pour-imaginer-son-avenir.comprehension.json": "25d103a1503218903361136b9b0180837fafe5be0eb02b363a570e356d8628b5",
+        "2026-11-02-fr-suivre-un-voyage-sous-leau.practice.json": "7517dc2a0800cc9482f104d5c9bad19b83d0ae812f849fbe0e6eb36c2d980864",
+        "2026-11-02-fr-suivre-un-voyage-sous-leau.article.json": "97970cae11c0c9d15aa406002ec9f21a600f938ecc87f9c77d782797d92e426a",
+        "2026-11-02-fr-un-opera-qui-sort-de-sa-salle.article.json": "47a89e8402cc606ae541a5ac5f555955dc4d8025cd6f879436e468ee5216ccfe"
+      },
+      "sentenceCount": 50,
+      "unresolved": []
+    },
+    "de": {
+      "status": "PASS",
+      "reviewer": "independent German reading reviewer",
+      "blindReport": "blind-de.json",
+      "independentOfficialReads": [
+        "https://erwachsenenbildung.at/aktuell/nachrichten/20944-neuer-zertifikatslehrgang-fuer-bildungswerkleitungen.php",
+        "https://erwachsenenbildung.at/aktuell/nachrichten/20908-oegpb-vortragsreihe-2026-frieden-schaffen.php",
+        "https://erwachsenenbildung.at/aktuell/nachrichten/20942-europawirkt-im-dialog-im-ehrenamt-im-leben.php",
+        "https://erwachsenenbildung.at/addon/impressum.php",
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "licenseReview": {
+        "result": "PASS for text-only adaptations",
+        "articleTextNotices": "Certificate line330; Frieden line323; Europa line344 explicitly license text CC BY 4.0.",
+        "exceptions": "Certificate photo Michael Vogl and Europa photo all rights reserved; Europa graphic separately credited; Frieden Unsplash photo separately licensed. No photo/graphic/external work/direct third-party quotation reproduced. Reported ideas paraphrased as report rather than direct quotation.",
+        "conditions": "Named authors/editor/institution, original URL/date/title, license link and adaptation notice retained; no endorsement claimed. Reuse must preserve attribution and avoid added restrictions.",
+        "republicationRequest": "Impressum line468 requests copy/link by email or post after republication; not an additional condition stated in CC BY. No external contact sent or authorized.",
+        "registry": "source-registry-addition.json appropriately restricts to individually marked text with articleReviewRequired; no blanket whitelist.",
+        "nativeLanguage": "German official source and German-language Austrian adult education reporting, no translation/republication notice seen; native-adaptation reasonable, does not certify author mother tongue."
+      },
+      "articles": [
+        {
+          "id": "2026-11-02-de-erfahrung-sichtbar-machen",
+          "level": "B1",
+          "cefrAssessment": "Plausible editorial estimate with vocabulary support; not formally certified.",
+          "sentenceAudit": [
+            {
+              "sentenceId": "s1",
+              "sourceLine": 307,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s2",
+              "sourceLine": 307,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s3",
+              "sourceLine": 307,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s4",
+              "sourceLine": 308,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s5",
+              "sourceLine": 310,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s6",
+              "sourceLine": 308,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s7",
+              "sourceLine": 311,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s8",
+              "sourceLine": 311,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s9",
+              "sourceLine": 311,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s10",
+              "sourceLine": 311,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s11",
+              "sourceLine": 311,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s12",
+              "sourceLine": 312,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s13",
+              "sourceLine": 312,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s14",
+              "sourceLine": 317,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s15",
+              "sourceLine": 317,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s16",
+              "sourceLine": 317,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s17",
+              "sourceLine": 317,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s18",
+              "sourceLine": 327,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s19",
+              "sourceLine": 326,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s20",
+              "sourceLine": 310,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            }
+          ],
+          "files": {
+            "review-artifacts/de/articles/2026-11-02-de-erfahrung-sichtbar-machen.json": "8d261e4a9206edb9df482675fb9e0e7013a5cd0d1fd999fe9a3f31639e7684ce",
+            "review-artifacts/de/practice/2026-11-02-de-erfahrung-sichtbar-machen.json": "c33198b30312cbab7aa4e71c4dbe54e3b29d17eaf29c1c34d8aedd18ff9e7774",
+            "review-artifacts/de/comprehension/2026-11-02-de-erfahrung-sichtbar-machen.json": "d154ebd5dd996e01e2c80c8a52cdd38a35a5a1efe3755982536d20b749d02347"
+          },
+          "answerKeysAndOffsets": "PASS: match blind answers; all start offsets checked"
+        },
+        {
+          "id": "2026-11-02-de-gespraeche-ueber-frieden",
+          "level": "A2",
+          "cefrAssessment": "Plausible editorial estimate with vocabulary support; not formally certified.",
+          "sentenceAudit": [
+            {
+              "sentenceId": "s1",
+              "sourceLine": 307,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s2",
+              "sourceLine": 307,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s3",
+              "sourceLine": 307,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s4",
+              "sourceLine": 311,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s5",
+              "sourceLine": 314,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s6",
+              "sourceLine": 314,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s7",
+              "sourceLine": 315,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s8",
+              "sourceLine": 315,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s9",
+              "sourceLine": 317,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s10",
+              "sourceLine": 318,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s11",
+              "sourceLine": 318,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s12",
+              "sourceLine": 306,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            }
+          ],
+          "files": {
+            "review-artifacts/de/articles/2026-11-02-de-gespraeche-ueber-frieden.json": "bcfa052bad339616a18ff78f5fd4f9a9445fa6f9696c1e40ff5587ca3d186536",
+            "review-artifacts/de/practice/2026-11-02-de-gespraeche-ueber-frieden.json": "8e13652f683175e201fa4161c6cd4d9b64f5311e9cffbcf0d8cfd0dbcc2a9c9a",
+            "review-artifacts/de/comprehension/2026-11-02-de-gespraeche-ueber-frieden.json": "e58092d544b805462a86eace18c29c2d4306900cbf8dc3fafa277f2f2c91837d"
+          },
+          "answerKeysAndOffsets": "PASS: match blind answers; all start offsets checked"
+        },
+        {
+          "id": "2026-11-02-de-werte-im-vereinsalltag",
+          "level": "B2",
+          "cefrAssessment": "Plausible editorial estimate with vocabulary support; not formally certified.",
+          "sentenceAudit": [
+            {
+              "sentenceId": "s1",
+              "sourceLine": 321,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s2",
+              "sourceLine": 306,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s3",
+              "sourceLine": 315,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s4",
+              "sourceLine": 317,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s5",
+              "sourceLine": 318,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s6",
+              "sourceLine": 314,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s7",
+              "sourceLine": 314,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s8",
+              "sourceLine": 321,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s9",
+              "sourceLine": 321,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s10",
+              "sourceLine": 321,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s11",
+              "sourceLine": 323,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s12",
+              "sourceLine": 322,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s13",
+              "sourceLine": 324,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s14",
+              "sourceLine": 325,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s15",
+              "sourceLine": 329,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s16",
+              "sourceLine": 329,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s17",
+              "sourceLine": 331,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s18",
+              "sourceLine": 331,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s19",
+              "sourceLine": 331,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s20",
+              "sourceLine": 315,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s21",
+              "sourceLine": 334,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s22",
+              "sourceLine": 334,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s23",
+              "sourceLine": 335,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s24",
+              "sourceLine": 335,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            },
+            {
+              "sentenceId": "s25",
+              "sourceLine": 311,
+              "factualTranslationResult": "PASS",
+              "notes": "Faithful paraphrase or explicitly hedged synthesis; date/number/plan modality checked."
+            }
+          ],
+          "files": {
+            "review-artifacts/de/articles/2026-11-02-de-werte-im-vereinsalltag.json": "f128d214639bcd79e2c452a1ef76d9d2d24a6335dcb600b19d1178e4b9111379",
+            "review-artifacts/de/practice/2026-11-02-de-werte-im-vereinsalltag.json": "339ff78256da7bb458c18ce31d646d7e5b3b1ca76df6a18788b79675791d21c4",
+            "review-artifacts/de/comprehension/2026-11-02-de-werte-im-vereinsalltag.json": "aaf285ffd0891a499794476cbe37771421fc1c327bc80a373bb9f0706e3015cc"
+          },
+          "answerKeysAndOffsets": "PASS: match blind answers; all start offsets checked"
+        }
+      ],
+      "requiredRevisions": [],
+      "blockers": [],
+      "finalHashPass": true,
+      "registrySha256": "997dd53841d5d82a77e755b645a45c8c666edd3e6d377343188eca799c89542f",
+      "revisionVerification": {
+        "levelReasons": "Corrected to actual wie object clause and statt…zu construction.",
+        "distractors": "A2 and B1 weak q1/q4/q5 replaced by same-topic alternatives; B2 all five replaced. Unique recovery from original sentence and Chinese cue, not claimed grammar-only uniqueness. No systematic length cue.",
+        "glossSurfaces": "All surfaces occur exactly in referenced sentence; Wertschätzende capitalization fixed.",
+        "scope": "Three German reading articles + practice/comprehension + source registry only, hash-bound. Listening and other languages excluded."
+      }
+    },
+    "enAndListening": {
+      "reviewer": "root-independent",
+      "date": "2026-11-02",
+      "status": "PASS_AFTER_REVIEW",
+      "blindAnswers": {
+        "A2": [
+          1,
+          0,
+          2
+        ],
+        "B1": [
+          3,
+          1,
+          2,
+          0
+        ],
+        "B2": [
+          1,
+          0,
+          2,
+          3,
+          1
+        ]
+      },
+      "clozeAnswers": [
+        [
+          "Tuesday",
+          "skills",
+          "training",
+          "housing",
+          "expand"
+        ],
+        [
+          "hectares",
+          "connected",
+          "graze",
+          "medieval",
+          "downstream"
+        ],
+        [
+          "terrain",
+          "breathable",
+          "retain",
+          "timetable",
+          "demonstrated"
+        ]
+      ],
+      "finding": "Revised parallel contextual distractors and explanations reviewed. Editorial sentence supplements explicitly labelled; B2 six co-publishers added. Answers remain as independently solved; source numbers/dates and translations checked. No audio quality claim.",
+      "sourceChecks": "All three official original reports independently read with web; dates, numbers, place, future/planned modality verified. GOV.UK terms and each footer OGL; GOTT official guidance section2.3 independently read permits copying/publishing/adapting; no source images or direct quotations reused.",
+      "listening": {
+        "answers": {
+          "it": [
+            1,
+            2,
+            0
+          ],
+          "en": [
+            0,
+            2,
+            1
+          ]
+        },
+        "status": "PASS_OFFICIAL_TEXT_AND_METADATA_ONLY",
+        "evidence": "Rai scenes1/12, BC transcript opening/high-stakes/final response, official B1 headings; logo official page Nov1 19:50 topics, homepage10:02. Answers/explanations agree. No audio playback/quality verification."
+      },
+      "hashes": {
+        "review-artifacts/en/articles/2026-11-02-en-responding-before-and-during-wildfires.json": "90f99517caa46fe0bce61e557c2bb131cafc2e74013ba710791a7178a8f9137a",
+        "review-artifacts/en/articles/2026-11-02-en-support-in-one-place.json": "a1d314292d032a5dd8cf1098090279a9dc0d2abd81a19223eb7b7b906d481bdb",
+        "review-artifacts/en/articles/2026-11-02-en-a-landscape-with-many-roles.json": "400f8b0ed5b236597087b5329fdd4f5cfbb8500116710e3467ee389df14863c6",
+        "review-artifacts/en/practice/2026-11-02-en-responding-before-and-during-wildfires.json": "519e0f5df3ca0c51f45196f5d655a2563f64873b26eaa145ba8d7afece0fd552",
+        "review-artifacts/en/practice/2026-11-02-en-support-in-one-place.json": "c3f5f97e1c3ce6d9f1854007549b291f0890619f2c79457c75468b759b40abce",
+        "review-artifacts/en/practice/2026-11-02-en-a-landscape-with-many-roles.json": "aeb1a4b209977e4b6ca68dfe3c503a58f7377c1d741d3af8858049918a995deb",
+        "review-artifacts/en/comprehension/2026-11-02-en-responding-before-and-during-wildfires.json": "3f5f2e3ee4c534827dd8625c383496908d843719780795fe1f58a486153ec2d4",
+        "review-artifacts/en/comprehension/2026-11-02-en-support-in-one-place.json": "6f930d8613e8e9ee7f996f22fffc599e9a3550594ce38bb05f7d9ba777b7b698",
+        "review-artifacts/en/comprehension/2026-11-02-en-a-landscape-with-many-roles.json": "dee05932a0be8ed84078ec1a06803dfbd0d94d7234165a888e683cb4acf03006",
+        "review-artifacts/listening/entries.json": "e20c9025eaa449eecbacb6dbfa980822ff73f9c186142105fcfed60280d04b97"
+      }
+    }
+  },
+  "contentSha256": {
+    "data/reading/articles/2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche.json": "1e780acd8308200fe51f29e05d9d793d2bf22b775c7c39dc61eef57f958c797b",
+    "data/reading/articles/2026-11-02-it-prezzi-leggere-oltre-il-titolo.json": "f837c8217789fc261493e54101925fe15b0f816750944f0205755ec901aa7297",
+    "data/reading/articles/2026-11-02-it-una-storia-che-torna-visibile.json": "21123e5c59ec687d208b321bdb0603ec89f3bb9d0dda6e49d8c4fc94695c7871",
+    "data/reading/practice/2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche.json": "60e9771fe1112c96aea941f82761024722b435896c81243f746fc29f231f6c86",
+    "data/reading/practice/2026-11-02-it-prezzi-leggere-oltre-il-titolo.json": "95ddd0c14f9cf1d1a0310918511d92a61c33f5e85c16ad7357094cba3b8d053a",
+    "data/reading/practice/2026-11-02-it-una-storia-che-torna-visibile.json": "a18d25ddee399102d5e940687408ab70581dbc1728939b5aebd32a1eded0a2c5",
+    "data/reading/comprehension/2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche.json": "6397aea840ffa58033d3efdbc9860b7c75270138b37c8c40d277229e44e5e884",
+    "data/reading/comprehension/2026-11-02-it-prezzi-leggere-oltre-il-titolo.json": "f8b40d72526218c20bbc97c80fe166ecf56dcf29bece9ce95026d1851f51b88f",
+    "data/reading/comprehension/2026-11-02-it-una-storia-che-torna-visibile.json": "10b1999f4e326edcdf8b7ad9d4d8d8e2aecba048dec08e0b31d3e9ceb9af5674",
+    "data/reading/comprehension/2026-11-02-fr-un-opera-qui-sort-de-sa-salle.json": "af170edb0e2c5f590758ea4d9c518eeb64fb3583345270ff5da7a747b56efc7c",
+    "data/reading/articles/2026-11-02-fr-une-visite-pour-imaginer-son-avenir.json": "0ceb30fc0e301db91fcb1c6532a4b35e1186c368ef2d253c6dca0d2291c17c00",
+    "data/reading/practice/2026-11-02-fr-un-opera-qui-sort-de-sa-salle.json": "e9c6509f29a92174b66d6669e202f2708c83e853f4601cb3a1bc5df438ef629f",
+    "data/reading/comprehension/2026-11-02-fr-suivre-un-voyage-sous-leau.json": "044c6126a4b05dd43c81c2f5573c77959584ed7ed781425088ea9cb62b3c3a83",
+    "data/reading/practice/2026-11-02-fr-une-visite-pour-imaginer-son-avenir.json": "d0174abf673c531fbbd1871e9951a33214f887ded2127f816f8f4e9b46eed463",
+    "data/reading/comprehension/2026-11-02-fr-une-visite-pour-imaginer-son-avenir.json": "25d103a1503218903361136b9b0180837fafe5be0eb02b363a570e356d8628b5",
+    "data/reading/practice/2026-11-02-fr-suivre-un-voyage-sous-leau.json": "7517dc2a0800cc9482f104d5c9bad19b83d0ae812f849fbe0e6eb36c2d980864",
+    "data/reading/articles/2026-11-02-fr-suivre-un-voyage-sous-leau.json": "97970cae11c0c9d15aa406002ec9f21a600f938ecc87f9c77d782797d92e426a",
+    "data/reading/articles/2026-11-02-fr-un-opera-qui-sort-de-sa-salle.json": "47a89e8402cc606ae541a5ac5f555955dc4d8025cd6f879436e468ee5216ccfe",
+    "data/reading/articles/2026-11-02-de-erfahrung-sichtbar-machen.json": "8d261e4a9206edb9df482675fb9e0e7013a5cd0d1fd999fe9a3f31639e7684ce",
+    "data/reading/practice/2026-11-02-de-erfahrung-sichtbar-machen.json": "c33198b30312cbab7aa4e71c4dbe54e3b29d17eaf29c1c34d8aedd18ff9e7774",
+    "data/reading/comprehension/2026-11-02-de-erfahrung-sichtbar-machen.json": "d154ebd5dd996e01e2c80c8a52cdd38a35a5a1efe3755982536d20b749d02347",
+    "data/reading/articles/2026-11-02-de-gespraeche-ueber-frieden.json": "bcfa052bad339616a18ff78f5fd4f9a9445fa6f9696c1e40ff5587ca3d186536",
+    "data/reading/practice/2026-11-02-de-gespraeche-ueber-frieden.json": "8e13652f683175e201fa4161c6cd4d9b64f5311e9cffbcf0d8cfd0dbcc2a9c9a",
+    "data/reading/comprehension/2026-11-02-de-gespraeche-ueber-frieden.json": "e58092d544b805462a86eace18c29c2d4306900cbf8dc3fafa277f2f2c91837d",
+    "data/reading/articles/2026-11-02-de-werte-im-vereinsalltag.json": "f128d214639bcd79e2c452a1ef76d9d2d24a6335dcb600b19d1178e4b9111379",
+    "data/reading/practice/2026-11-02-de-werte-im-vereinsalltag.json": "339ff78256da7bb458c18ce31d646d7e5b3b1ca76df6a18788b79675791d21c4",
+    "data/reading/comprehension/2026-11-02-de-werte-im-vereinsalltag.json": "aaf285ffd0891a499794476cbe37771421fc1c327bc80a373bb9f0706e3015cc",
+    "data/reading/articles/2026-11-02-en-responding-before-and-during-wildfires.json": "90f99517caa46fe0bce61e557c2bb131cafc2e74013ba710791a7178a8f9137a",
+    "data/reading/articles/2026-11-02-en-support-in-one-place.json": "a1d314292d032a5dd8cf1098090279a9dc0d2abd81a19223eb7b7b906d481bdb",
+    "data/reading/articles/2026-11-02-en-a-landscape-with-many-roles.json": "400f8b0ed5b236597087b5329fdd4f5cfbb8500116710e3467ee389df14863c6",
+    "data/reading/practice/2026-11-02-en-responding-before-and-during-wildfires.json": "519e0f5df3ca0c51f45196f5d655a2563f64873b26eaa145ba8d7afece0fd552",
+    "data/reading/practice/2026-11-02-en-support-in-one-place.json": "c3f5f97e1c3ce6d9f1854007549b291f0890619f2c79457c75468b759b40abce",
+    "data/reading/practice/2026-11-02-en-a-landscape-with-many-roles.json": "aeb1a4b209977e4b6ca68dfe3c503a58f7377c1d741d3af8858049918a995deb",
+    "data/reading/comprehension/2026-11-02-en-responding-before-and-during-wildfires.json": "3f5f2e3ee4c534827dd8625c383496908d843719780795fe1f58a486153ec2d4",
+    "data/reading/comprehension/2026-11-02-en-support-in-one-place.json": "6f930d8613e8e9ee7f996f22fffc599e9a3550594ce38bb05f7d9ba777b7b698",
+    "data/reading/comprehension/2026-11-02-en-a-landscape-with-many-roles.json": "dee05932a0be8ed84078ec1a06803dfbd0d94d7234165a888e683cb4acf03006"
+  },
+  "tests": {
+    "baseline": "45 harnesses; 484458 passed; 0 failed; 0 known issues",
+    "final": "45 harnesses; 485488 passed; 0 failed; 0 known issues",
+    "targeted": "article, candidate, practice, comprehension validators; practice/comprehension/loading/listening tests; git diff --check passed",
+    "historicalFilesUnchanged": 372
+  },
+  "limitations": [
+    "FR listening omitted: rights/access evidence insufficient.",
+    "Listening official text/metadata reviewed; audio playback and audio quality not tested.",
+    "Local real browser tests unavailable: isolated Chromium socket denied; cloud browser cannot reach local server. Production verification remains separate.",
+    "Only 5 new unconverted source leads retained; a full week of independently cleared reserve is not claimed."
+  ],
+  "publicationState": "Prepared and checked before commit; deployment acceptance recorded separately."
+}

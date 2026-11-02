@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-en-support-in-one-place",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 44,
+      "answer": "Tuesday",
+      "options": [
+        "Tuesday",
+        "Saturday",
+        "Sunday",
+        "Monday"
+      ],
+      "explanation": "Tuesday表示星期二，是本中心每周开始开放的日子；需保留首字母大写。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 78,
+      "answer": "skills",
+      "options": [
+        "debts",
+        "skills",
+        "rooms",
+        "prices"
+      ],
+      "explanation": "skills为skill复数，与experience并列，指简历介绍的技能。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 26,
+      "answer": "training",
+      "options": [
+        "training",
+        "holidays",
+        "shopping",
+        "traffic"
+      ],
+      "explanation": "training在learn about后表示培训，不可数名词；本句还谈职业选择。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 75,
+      "answer": "housing",
+      "options": [
+        "music",
+        "weather",
+        "housing",
+        "sport"
+      ],
+      "explanation": "housing是住房的集合概念，与心理健康支持并列，不加复数s。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 46,
+      "answer": "expand",
+      "options": [
+        "close",
+        "expand",
+        "rename",
+        "delay"
+      ],
+      "explanation": "expand意为扩展；plans to后用动词原形，目标是增加覆盖地区。"
+    }
+  ]
+}

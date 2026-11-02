@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-en-a-landscape-with-many-roles",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "What does the figure of 5,700 hectares describe?",
+      "options": [
+        "The land acquired in 2024 for the reserve.",
+        "The area used only for grazing cattle.",
+        "The combined size of all King’s Series reserves.",
+        "The wider Dorset Downs landscape around the site."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s2",
+        "s6"
+      ],
+      "explanationZh": "334公顷是保护区；5700公顷是更大的多塞特丘陵地区。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why are cattle introduced at Lyscombe?",
+      "options": [
+        "To replace the farming with a new visitor attraction.",
+        "To help maintain grassland and stop bushes spreading.",
+        "To move all conservation work away from the chapel.",
+        "To increase the amount of land used for intensive farming."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "放牧有助于保持白垩草地、防止灌木扩张，是保护管理方式。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Which improvement is reported beyond the reserve itself?",
+      "options": [
+        "New wildlife corridors have connected nearby towns.",
+        "Less intensive farming has increased local food sales.",
+        "Water quality farther along the River Piddle has improved.",
+        "Historic buildings across Dorset have gained protected status."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s12"
+      ],
+      "explanationZh": "公告报告污染减少和下游水质改善，不是其他选项的结果。"
+    },
+    {
+      "id": "q4",
+      "kind": "main-idea",
+      "prompt": "Which view of managing Lyscombe best matches the article?",
+      "options": [
+        "Conservation combines grazing, natural regeneration and heritage protection.",
+        "Conservation centres on restoring buildings and relocating the grassland.",
+        "Conservation prioritises intensive farming and creating new woodland.",
+        "Conservation focuses on river work rather than managing the grassland."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "全文把放牧、自然更新、农业及历史保护结合起来；没有宣称停止农业或只修建筑。"
+    }
+  ]
+}

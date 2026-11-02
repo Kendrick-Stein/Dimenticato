@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-en-a-landscape-with-many-roles",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 20,
+      "answer": "hectares",
+      "options": [
+        "hectares",
+        "litres",
+        "kilograms",
+        "minutes"
+      ],
+      "explanation": "hectares为面积单位hectare复数，334后保留复数；不是体积、重量或时间。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 68,
+      "answer": "connected",
+      "options": [
+        "connected",
+        "expensive",
+        "crowded",
+        "distant"
+      ],
+      "explanation": "connected修饰spaces，指生态空间相连；过去分词作形容词。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 42,
+      "answer": "graze",
+      "options": [
+        "graze",
+        "swim",
+        "hibernate",
+        "hunt"
+      ],
+      "explanation": "graze是牛吃草；to后用原形，后文说明抑制灌木扩张。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s10",
+      "start": 16,
+      "answer": "medieval",
+      "options": [
+        "portable",
+        "underwater",
+        "medieval",
+        "temporary"
+      ],
+      "explanation": "medieval修饰chapel，表示历史时期，不是可移动或临时建筑。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 132,
+      "answer": "downstream",
+      "options": [
+        "indoors",
+        "upstairs",
+        "downstream",
+        "overseas"
+      ],
+      "explanation": "downstream表示沿水流向下游，farther downstream为更下游。"
+    }
+  ]
+}

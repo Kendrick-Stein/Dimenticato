@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-fr-une-visite-pour-imaginer-son-avenir",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 35,
+      "answer": "recherche",
+      "options": [
+        "cuisine",
+        "recherche",
+        "vente",
+        "musique"
+      ],
+      "explanation": "原句介绍科研中心，因此用recherche（研究），不是厨房、销售或音乐中心。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 38,
+      "answer": "agricoles",
+      "options": [
+        "maritimes",
+        "militaires",
+        "agricoles",
+        "artistiques"
+      ],
+      "explanation": "两所学校是农业高中，agricoles与lycées保持复数；其他形容词虽同为复数，但改变了学校类型。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s5",
+      "start": 80,
+      "answer": "métiers",
+      "options": [
+        "repas",
+        "voyages",
+        "matchs",
+        "métiers"
+      ],
+      "explanation": "这里介绍研究工作与职业，métiers是职业的复数；不是餐食、旅行或比赛。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s7",
+      "start": 34,
+      "answer": "apprendre",
+      "options": [
+        "apprendre",
+        "dormir",
+        "vendre",
+        "conduire"
+      ],
+      "explanation": "严肃游戏除了娱乐也用于学习，apprendre为原文动词原形。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s9",
+      "start": 48,
+      "answer": "avenir",
+      "options": [
+        "retard",
+        "avenir",
+        "bruit",
+        "danger"
+      ],
+      "explanation": "imaginer un avenir professionnel表示设想职业未来，avenir是名词。"
+    }
+  ]
+}

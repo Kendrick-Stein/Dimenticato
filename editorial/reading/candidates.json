@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-10-30",
+  "collectedAt": "2026-11-02",
   "candidates": [
     {
       "id": "it-2026-09-30-etna-time-machine",
@@ -10745,6 +10745,1133 @@
       },
       "linkToArticleId": "2026-10-30-de-offenes-wissen-und-ki",
       "editorialNote": "独立来源/语言/填词审核及理解题盲解完成；配套不可变文章另行发布，候选元数据本身不可发布。"
+    },
+    {
+      "id": "candidate-dga-umbria-catalogare-2026-10-16",
+      "language": "it",
+      "sourceTitle": "SAB Umbria | Presentazione volume | \"Catalogare in archivio\" di Flavia Bruni",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=10de827d8bccb3c4a8b4eee074ca4e29&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2796",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-16",
+      "collectedAt": "2026-11-02",
+      "category": "culture",
+      "topics": [
+        "档案",
+        "文化活动"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "目标A2；正文草稿已生成，独立审查尚未完成。讨论角度：你喜欢听作者介绍自己的书吗？为什么？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=10de827d8bccb3c4a8b4eee074ca4e29&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2796",
+          "checkedAt": "2026-11-02",
+          "notes": "Full HTML article body, date, institutional byline, credits and footer inspected through web. No book, poster or photograph reproduced."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=10de827d8bccb3c4a8b4eee074ca4e29&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2796",
+          "evidence": "Visible source date 2026-10-16; retained separately from edition date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=10de827d8bccb3c4a8b4eee074ca4e29&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2796",
+          "author": "Ministero della Cultura — Direzione generale Archivi",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional Italian publication provenance, not proof of author mother tongue or first drafting language.",
+          "evidence": "Italian institutional release about its own programme/statistics; no translation or external republication byline found."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "basis": "publisher-legal-notice-linked-from-article",
+          "evidenceUrls": [
+            "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=10de827d8bccb3c4a8b4eee074ca4e29&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2796",
+            "https://cultura.gov.it/note-legali"
+          ],
+          "evidence": "Article footer Note legali links beniculturali.it/note-legali, which redirects to cultura.gov.it/note-legali; explicit CC BY3 adaptation and redistribution permission for own text. No conflicting body licence or third-party quotation found.",
+          "scope": "Institutional article prose; event description only, excluding linked book and poster",
+          "exclusions": [
+            "Images, logos, posters, embedded media",
+            "Third-party text and linked publications except separately verified same-release institutional methodological note"
+          ],
+          "attributionRequirements": [
+            "Institutional author, source title and direct URL",
+            "Original date, licence and modification/translation notice",
+            "No endorsement claim"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-11-02",
+          "checkedAgainstArticleCount": 142,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 17,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche"
+    },
+    {
+      "id": "candidate-istat-prezzi-provvisori-ottobre-2026",
+      "language": "it",
+      "sourceTitle": "Prezzi al consumo (dati provvisori) – Ottobre 2026",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
+      "sourceName": "Istat",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-30",
+      "collectedAt": "2026-11-02",
+      "category": "work-economy",
+      "topics": [
+        "生活成本",
+        "统计阅读"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "目标B2；正文草稿已生成，独立审查尚未完成。讨论角度：读到物价新闻时，你先注意百分比还是比较的时间区间？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
+          "checkedAt": "2026-11-02",
+          "notes": "Full HTML article body, date, institutional byline, credits and footer inspected through web. Same-release PDF pp1,7–10 methodological passages inspected; not claiming whole 18-page PDF exhaustively audited."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
+          "evidence": "Visible source date 2026-10-30; retained separately from edition date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
+          "author": "Istat",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional Italian publication provenance, not proof of author mother tongue or first drafting language.",
+          "evidence": "Italian institutional release about its own programme/statistics; no translation or external republication byline found."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "publisher-legal-notice-linked-from-article",
+          "evidenceUrls": [
+            "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
+            "https://www.istat.it/note-legali/"
+          ],
+          "evidence": "Istat legal notice explicitly permits modification and public redistribution under CC BY4 except stated third-party material; article contains institutional text with no conflicting attribution.",
+          "scope": "Institutional article prose; same-release Istat methodological definitions",
+          "exclusions": [
+            "Images, logos, posters, embedded media",
+            "Third-party text and linked publications except separately verified same-release institutional methodological note"
+          ],
+          "attributionRequirements": [
+            "Institutional author, source title and direct URL",
+            "Original date, licence and modification/translation notice",
+            "No endorsement claim"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-11-02",
+          "checkedAgainstArticleCount": 142,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-11-02-it-prezzi-leggere-oltre-il-titolo"
+    },
+    {
+      "id": "candidate-dga-torino-ester-valabrega-2026-10-13",
+      "language": "it",
+      "sourceTitle": "Torino | Inaugurazione mostra | \"Re-Resistance. Ester Valabrega, un archivio possibile\"",
+      "sourceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c793bd1cf7d0751633b91c0d37ba4f8f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2783",
+      "sourceName": "Ministero della Cultura — Direzione generale Archivi",
+      "registrySourceId": "archivi-italian-culture",
+      "sourcePublishedAt": "2026-10-13",
+      "collectedAt": "2026-11-02",
+      "category": "culture",
+      "topics": [
+        "档案",
+        "文化活动"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "目标B1；正文草稿已生成，独立审查尚未完成。讨论角度：你所在城市有哪些文献值得向公众介绍？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c793bd1cf7d0751633b91c0d37ba4f8f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2783",
+          "checkedAt": "2026-11-02",
+          "notes": "Full HTML article body, date, institutional byline, credits and footer inspected through web. No book, poster or photograph reproduced."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c793bd1cf7d0751633b91c0d37ba4f8f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2783",
+          "evidence": "Visible source date 2026-10-13; retained separately from edition date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c793bd1cf7d0751633b91c0d37ba4f8f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2783",
+          "author": "Ministero della Cultura — Direzione generale Archivi",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional Italian publication provenance, not proof of author mother tongue or first drafting language.",
+          "evidence": "Italian institutional release about its own programme/statistics; no translation or external republication byline found."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "basis": "publisher-legal-notice-linked-from-article",
+          "evidenceUrls": [
+            "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=c793bd1cf7d0751633b91c0d37ba4f8f&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2783",
+            "https://cultura.gov.it/note-legali"
+          ],
+          "evidence": "Article footer Note legali links beniculturali.it/note-legali, which redirects to cultura.gov.it/note-legali; explicit CC BY3 adaptation and redistribution permission for own text. No conflicting body licence or third-party quotation found.",
+          "scope": "Institutional article prose; event description only, excluding linked book and poster",
+          "exclusions": [
+            "Images, logos, posters, embedded media",
+            "Third-party text and linked publications except separately verified same-release institutional methodological note"
+          ],
+          "attributionRequirements": [
+            "Institutional author, source title and direct URL",
+            "Original date, licence and modification/translation notice",
+            "No endorsement claim"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-11-02",
+          "checkedAgainstArticleCount": 142,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 20,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-11-02-it-una-storia-che-torna-visibile"
+    },
+    {
+      "id": "candidate-istat-retribuzioni-contrattuali-luglio-settembre-2026",
+      "language": "it",
+      "sourceTitle": "Retribuzioni contrattuali – Luglio-settembre 2026",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/retribuzioni-contrattuali-luglio-settembre-2026/",
+      "sourceName": "Istat",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-30",
+      "collectedAt": "2026-11-02",
+      "category": "work-economy",
+      "topics": [
+        "工作与经济",
+        "统计阅读"
+      ],
+      "level": "B2",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "仅发现并暂存元数据；未完成全文、许可例外与可读性逐篇审核，不转化为精读。避免近期选材过度集中统计主题。",
+      "verification": {
+        "workflowStage": "discovered",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "candidate-istat-stima-preliminare-del-pil-iii-trimestre-2026",
+      "language": "it",
+      "sourceTitle": "Stima preliminare del Pil – III trimestre 2026",
+      "sourceUrl": "https://www.istat.it/comunicato-stampa/stima-preliminare-del-pil-iii-trimestre-2026/",
+      "sourceName": "Istat",
+      "registrySourceId": "istat-italian-society",
+      "sourcePublishedAt": "2026-10-30",
+      "collectedAt": "2026-11-02",
+      "category": "work-economy",
+      "topics": [
+        "工作与经济",
+        "统计阅读"
+      ],
+      "level": "B2",
+      "priority": 3,
+      "status": "collected",
+      "editorialNote": "仅发现并暂存元数据；未完成全文、许可例外与可读性逐篇审核，不转化为精读。避免近期选材过度集中统计主题。",
+      "verification": {
+        "workflowStage": "discovered",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": false,
+        "readyForPublication": false,
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        }
+      }
+    },
+    {
+      "id": "fr-2026-10-19-une-visite-pour-imaginer-son-avenir",
+      "language": "fr",
+      "sourceTitle": "2ème édition de la JPO Agrocampus33",
+      "sourceUrl": "https://www.inrae.fr/actualites/2eme-edition-jpo-agrocampus33",
+      "sourceName": "INRAE Actualités",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-10-19",
+      "collectedAt": "2026-11-02",
+      "category": "education",
+      "topics": [
+        "校园参观",
+        "职业选择",
+        "科学交流"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "Proposed A2 independent daily edition. Speaking angle: 你想在参观时了解哪种职业？ Independent article/exercise review not yet completed; source verification does not authorize publication.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.inrae.fr/actualites/2eme-edition-jpo-agrocampus33",
+          "checkedAt": "2026-11-02",
+          "read": true,
+          "notes": "Author read complete institutional article body, date, author/byline and visible third-party markers; no linked media or external publication reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/2eme-edition-jpo-agrocampus33",
+          "evidence": "Article header Publié le 2026-10-19; original source date, not Nov2 edition date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/2eme-edition-jpo-agrocampus33",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional French publication provenance does not certify personal native tongue or earliest drafting language.",
+          "evidence": "Signed Coline Verneau, INRAE campus event account, no translator or republication notice."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All images, video, logos, externally linked works and separately credited third-party text"
+          ],
+          "license": "Licence Ouverte / Open Licence Etalab 2.0",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0",
+          "basis": "publisher-terms-article-exceptions-checked",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/2eme-edition-jpo-agrocampus33",
+            "https://www.inrae.fr/conditions-generales-dutilisation",
+            "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0"
+          ],
+          "evidence": "INRAE CGU Propriété intellectuelle permits reuse of public institutional text under Etalab2.0; separately restricted content excluded. Article contains no conflicting text-rights marker, book extract, Conversation republication or third-party quote.",
+          "scope": "Institutional prose only; no images, video, scientific paper, external source or media reproduction.",
+          "attributionRequirements": [
+            "Name source and named author where shown",
+            "Retain title, original URL/date, license URL and modifications",
+            "No endorsement; retain same license for ShareAlike adaptation where applicable"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-11-02",
+          "checkedAgainstArticleCount": 148,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 14,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-11-02-fr-une-visite-pour-imaginer-son-avenir"
+    },
+    {
+      "id": "fr-2026-10-28-suivre-un-voyage-sous-leau",
+      "language": "fr",
+      "sourceTitle": "GuidRhône : à la recherche des anguilles argentées dans le Rhône",
+      "sourceUrl": "https://www.inrae.fr/actualites/guidrhone-recherche-anguilles-argentees-rhone",
+      "sourceName": "INRAE Actualités",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-10-28",
+      "collectedAt": "2026-11-02",
+      "category": "environment",
+      "topics": [
+        "河流生态",
+        "鱼类迁徙",
+        "观察方法"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "Proposed B2 independent daily edition. Speaking angle: 为什么有时需要结合多种方式观察同一个现象？ Independent article/exercise review not yet completed; source verification does not authorize publication.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.inrae.fr/actualites/guidrhone-recherche-anguilles-argentees-rhone",
+          "checkedAt": "2026-11-02",
+          "read": true,
+          "notes": "Author read complete institutional article body, date, author/byline and visible third-party markers; no linked media or external publication reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/guidrhone-recherche-anguilles-argentees-rhone",
+          "evidence": "Article header Publié le 2026-10-28; original source date, not Nov2 edition date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.inrae.fr/actualites/guidrhone-recherche-anguilles-argentees-rhone",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional French publication provenance does not certify personal native tongue or earliest drafting language.",
+          "evidence": "French INRAE account of its own RiverLy/DECOD project; scientific contacts Hervé Capra, François Martignac and Emilie Egea; no translator or republication notice."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All images, video, logos, externally linked works and separately credited third-party text"
+          ],
+          "license": "Licence Ouverte / Open Licence Etalab 2.0",
+          "licenseUrl": "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0",
+          "basis": "publisher-terms-article-exceptions-checked",
+          "evidenceUrls": [
+            "https://www.inrae.fr/actualites/guidrhone-recherche-anguilles-argentees-rhone",
+            "https://www.inrae.fr/conditions-generales-dutilisation",
+            "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0"
+          ],
+          "evidence": "INRAE CGU Propriété intellectuelle permits reuse of public institutional text under Etalab2.0; separately restricted content excluded. Article contains no conflicting text-rights marker, book extract, Conversation republication or third-party quote.",
+          "scope": "Institutional prose only; no images, video, scientific paper, external source or media reproduction.",
+          "attributionRequirements": [
+            "Name source and named author where shown",
+            "Retain title, original URL/date, license URL and modifications",
+            "No endorsement; retain same license for ShareAlike adaptation where applicable"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-11-02",
+          "checkedAgainstArticleCount": 148,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 5,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-11-02-fr-suivre-un-voyage-sous-leau"
+    },
+    {
+      "id": "fr-2026-10-28-un-opera-qui-sort-de-sa-salle",
+      "language": "fr",
+      "sourceTitle": "Renouvellement de Louis Langrée à la direction du théâtre national de l’Opéra-Comique",
+      "sourceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/renouvellement-de-louis-langree-a-la-direction-du-theatre-national-de-l-opera-comique2",
+      "sourceName": "Ministère de la Culture — Actualités",
+      "registrySourceId": "culture-gouv-french-news",
+      "sourcePublishedAt": "2026-10-28",
+      "collectedAt": "2026-11-02",
+      "category": "culture",
+      "topics": [
+        "歌剧",
+        "无障碍设施",
+        "青年艺术家"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "Proposed B1 independent daily edition. Speaking angle: 如果剧场施工，你所在城市哪些地方可以接待演出？ Independent article/exercise review not yet completed; source verification does not authorize publication.",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/renouvellement-de-louis-langree-a-la-direction-du-theatre-national-de-l-opera-comique2",
+          "checkedAt": "2026-11-02",
+          "read": true,
+          "notes": "Author read complete institutional article body, date, author/byline and visible third-party markers; no linked media or external publication reused."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/renouvellement-de-louis-langree-a-la-direction-du-theatre-national-de-l-opera-comique2",
+          "evidence": "Article header Publié le 2026-10-28; original source date, not Nov2 edition date."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://www.culture.gouv.fr/presse/communiques-de-presse/renouvellement-de-louis-langree-a-la-direction-du-theatre-national-de-l-opera-comique2",
+          "basis": "institutional-original-language-inference",
+          "caveat": "Institutional French publication provenance does not certify personal native tongue or earliest drafting language.",
+          "evidence": "French ministry press release, institution author, no translation or republication notice."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "exclusions": [
+            "All images, video, logos, externally linked works and separately credited third-party text"
+          ],
+          "license": "CC BY-SA 3.0 FR",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/fr/",
+          "basis": "publisher-terms-article-exceptions-checked",
+          "evidenceUrls": [
+            "https://www.culture.gouv.fr/presse/communiques-de-presse/renouvellement-de-louis-langree-a-la-direction-du-theatre-national-de-l-opera-comique2",
+            "https://www.culture.gouv.fr/mentions-legales",
+            "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+          ],
+          "evidence": "Culture terms II.4.3.1(a) cover ministry-produced text under CC BY-SA3.0FR; II.4.3.2 keeps partner content under separate conditions. Selected article is ministry institutional prose, no partner text or quotation reused.",
+          "scope": "Institutional prose only; no images, video, scientific paper, external source or media reproduction.",
+          "attributionRequirements": [
+            "Name source and named author where shown",
+            "Retain title, original URL/date, license URL and modifications",
+            "No endorsement; retain same license for ShareAlike adaptation where applicable"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-11-02",
+          "checkedAgainstArticleCount": 148,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 5,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-11-02-fr-un-opera-qui-sort-de-sa-salle"
+    },
+    {
+      "id": "erwachsenenbildung-volunteer-certificate-2026-10-19",
+      "language": "de",
+      "sourceTitle": "Neuer Zertifikatslehrgang für ehrenamtliche Bildungswerkleitungen",
+      "sourceUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20944-neuer-zertifikatslehrgang-fuer-bildungswerkleitungen.php",
+      "sourceName": "erwachsenenbildung.at",
+      "registrySourceId": "erwachsenenbildung-at-news",
+      "sourcePublishedAt": "2026-10-19",
+      "collectedAt": "2026-11-02",
+      "category": "education",
+      "topics": [
+        "成人教育",
+        "社会参与"
+      ],
+      "level": "B1",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "拟作B1独立稿，来源已核，教学稿及配套仍待独立审核。口语角度：你通过志愿工作学到了什么？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20944-neuer-zertifikatslehrgang-fuer-bildungswerkleitungen.php",
+          "checkedAt": "2026-11-02",
+          "read": true,
+          "notes": "Marlene Klotz’s programme description. Direct interview quotations and personal anecdotes are omitted, along with photographs and personal contact information."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20944-neuer-zertifikatslehrgang-fuer-bildungswerkleitungen.php",
+          "evidence": "Visible article header 19.10.2026; preserved separately from event/project dates."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20944-neuer-zertifikatslehrgang-fuer-bildungswerkleitungen.php",
+          "basis": "institutional-original-language-inference",
+          "caveat": "German institutional publication/byline supports provenance, not author native-tongue certification.",
+          "evidence": "Marlene Klotz，Salzburger Bildungswerk/Ring ÖBW; signed German contributor article about Austrian education activity; no translator or foreign syndication notice. Portal imprint identifies Austrian ministry/bifeb."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "article-footer-explicit-license",
+          "evidenceUrls": [
+            "https://erwachsenenbildung.at/aktuell/nachrichten/20944-neuer-zertifikatslehrgang-fuer-bildungswerkleitungen.php",
+            "https://creativecommons.org/licenses/by/4.0/deed.de",
+            "https://erwachsenenbildung.at/addon/impressum.php"
+          ],
+          "evidence": "Article text footer explicitly states text licensed CC BY 4.0 International. CC deed permits sharing and adaptation including commercial use with attribution/link/change notice. Author text scope is separate from media captions.",
+          "scope": "Marlene Klotz’s programme description. Direct interview quotations and personal anecdotes are omitted, along with photographs and personal contact information.",
+          "exclusions": [
+            "All images, logos, audio, video and campaign graphics",
+            "Third-party direct quotations, linked books/resources and personal contacts"
+          ],
+          "attributionRequirements": [
+            "Named authors/editors and source institution/portal",
+            "Original URL/date and CC BY 4.0 link",
+            "Identify German adaptation, Chinese translation and original teaching additions; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-11-02",
+          "checkedAgainstArticleCount": 142,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 14,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-11-02-de-erfahrung-sichtbar-machen"
+    },
+    {
+      "id": "erwachsenenbildung-peace-lectures-2026-09-24",
+      "language": "de",
+      "sourceTitle": "Frieden am Prüfstand",
+      "sourceUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20908-oegpb-vortragsreihe-2026-frieden-schaffen.php",
+      "sourceName": "erwachsenenbildung.at",
+      "registrySourceId": "erwachsenenbildung-at-news",
+      "sourcePublishedAt": "2026-09-24",
+      "collectedAt": "2026-11-02",
+      "category": "society",
+      "topics": [
+        "成人教育",
+        "社会参与"
+      ],
+      "level": "A2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "拟作A2独立稿，来源已核，教学稿及配套仍待独立审核。口语角度：你对哪场讲座最感兴趣？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20908-oegpb-vortragsreihe-2026-frieden-schaffen.php",
+          "checkedAt": "2026-11-02",
+          "read": true,
+          "notes": "ÖGPB institutional event announcement, concrete logistical facts and speaker-topic descriptions; no quotations of Streeruwitz/Brunner or source-book prose."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20908-oegpb-vortragsreihe-2026-frieden-schaffen.php",
+          "evidence": "Visible article header 24.09.2026; preserved separately from event/project dates."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20908-oegpb-vortragsreihe-2026-frieden-schaffen.php",
+          "basis": "institutional-original-language-inference",
+          "caveat": "German institutional publication/byline supports provenance, not author native-tongue certification.",
+          "evidence": "ÖGPB；编辑 Heidi Buchecker（ÖGPB）; signed German contributor article about Austrian education activity; no translator or foreign syndication notice. Portal imprint identifies Austrian ministry/bifeb."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "article-footer-explicit-license",
+          "evidenceUrls": [
+            "https://erwachsenenbildung.at/aktuell/nachrichten/20908-oegpb-vortragsreihe-2026-frieden-schaffen.php",
+            "https://creativecommons.org/licenses/by/4.0/deed.de",
+            "https://erwachsenenbildung.at/addon/impressum.php"
+          ],
+          "evidence": "Article text footer explicitly states text licensed CC BY 4.0 International. CC deed permits sharing and adaptation including commercial use with attribution/link/change notice. Author text scope is separate from media captions.",
+          "scope": "ÖGPB institutional event announcement, concrete logistical facts and speaker-topic descriptions; no quotations of Streeruwitz/Brunner or source-book prose.",
+          "exclusions": [
+            "All images, logos, audio, video and campaign graphics",
+            "Third-party direct quotations, linked books/resources and personal contacts"
+          ],
+          "attributionRequirements": [
+            "Named authors/editors and source institution/portal",
+            "Original URL/date and CC BY 4.0 link",
+            "Identify German adaptation, Chinese translation and original teaching additions; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-11-02",
+          "checkedAgainstArticleCount": 142,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 39,
+          "bucket": "within_90_days"
+        }
+      },
+      "linkToArticleId": "2026-11-02-de-gespraeche-ueber-frieden"
+    },
+    {
+      "id": "erwachsenenbildung-europawirkt-2026-10-19",
+      "language": "de",
+      "sourceTitle": "EuropaWirkt! Im Dialog. Im Ehrenamt. Im Leben.",
+      "sourceUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20942-europawirkt-im-dialog-im-ehrenamt-im-leben.php",
+      "sourceName": "erwachsenenbildung.at",
+      "registrySourceId": "erwachsenenbildung-at-news",
+      "sourcePublishedAt": "2026-10-19",
+      "collectedAt": "2026-11-02",
+      "category": "society",
+      "topics": [
+        "成人教育",
+        "社会参与"
+      ],
+      "level": "B2",
+      "priority": 1,
+      "status": "verified",
+      "editorialNote": "拟作B2独立稿，来源已核，教学稿及配套仍待独立审核。口语角度：在团队里，哪些价值观会通过小决定体现出来？",
+      "verification": {
+        "workflowStage": "ready",
+        "checkedAt": "2026-11-02",
+        "editorialReviewComplete": true,
+        "readyForPublication": false,
+        "fullText": {
+          "accessible": true,
+          "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20942-europawirkt-im-dialog-im-ehrenamt-im-leben.php",
+          "checkedAt": "2026-11-02",
+          "read": true,
+          "notes": "Named authors’ German institutional project report and paraphrased account of discussions, without reproducing third-party speeches, slogans beyond project/format titles, photographs, campaign assets or linked works."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidenceUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20942-europawirkt-im-dialog-im-ehrenamt-im-leben.php",
+          "evidence": "Visible article header 19.10.2026; preserved separately from event/project dates."
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidenceUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20942-europawirkt-im-dialog-im-ehrenamt-im-leben.php",
+          "basis": "institutional-original-language-inference",
+          "caveat": "German institutional publication/byline supports provenance, not author native-tongue certification.",
+          "evidence": "Doris Rottermanner、Lena Scheck；编辑 Sarah-Lisa Winter（bifeb）; signed German contributor article about Austrian education activity; no translator or foreign syndication notice. Portal imprint identifies Austrian ministry/bifeb."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "basis": "article-footer-explicit-license",
+          "evidenceUrls": [
+            "https://erwachsenenbildung.at/aktuell/nachrichten/20942-europawirkt-im-dialog-im-ehrenamt-im-leben.php",
+            "https://creativecommons.org/licenses/by/4.0/deed.de",
+            "https://erwachsenenbildung.at/addon/impressum.php"
+          ],
+          "evidence": "Article text footer explicitly states text licensed CC BY 4.0 International. CC deed permits sharing and adaptation including commercial use with attribution/link/change notice. Author text scope is separate from media captions.",
+          "scope": "Named authors’ German institutional project report and paraphrased account of discussions, without reproducing third-party speeches, slogans beyond project/format titles, photographs, campaign assets or linked works.",
+          "exclusions": [
+            "All images, logos, audio, video and campaign graphics",
+            "Third-party direct quotations, linked books/resources and personal contacts"
+          ],
+          "attributionRequirements": [
+            "Named authors/editors and source institution/portal",
+            "Original URL/date and CC BY 4.0 link",
+            "Identify German adaptation, Chinese translation and original teaching additions; no endorsement"
+          ],
+          "reviewBeforeConversionRequired": true
+        },
+        "duplicateCheck": {
+          "checkedAt": "2026-11-02",
+          "checkedAgainstArticleCount": 142,
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 14,
+          "bucket": "within_30_days"
+        }
+      },
+      "linkToArticleId": "2026-11-02-de-werte-im-vereinsalltag"
+    },
+    {
+      "id": "natural-england-lyscombe-nnr-2026-09-15",
+      "language": "en",
+      "sourceTitle": "Rare species help Dorset nature reserve gain national recognition",
+      "sourceUrl": "https://www.gov.uk/government/news/rare-species-help-dorset-nature-reserve-gain-national-recognition",
+      "sourceName": "Natural England / GOV.UK",
+      "registrySourceId": "govuk-natural-england-english",
+      "sourcePublishedAt": "2026-09-15",
+      "collectedAt": "2026-11-02",
+      "category": "environment",
+      "topics": [
+        "一片土地的多种作用"
+      ],
+      "level": "B1",
+      "status": "verified",
+      "editorialNote": "B1 independent edition; source and both exercise layers independently reviewed. Speaking angle: How can farming and conservation support each other? 48-day fallback: strong culture/nature-management discussion, selected after recent feed inspection; not same-day news.",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-11-02",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/rare-species-help-dorset-nature-reserve-gain-national-recognition",
+          "checkedAt": "2026-11-02",
+          "notes": "Institutional narrative read in full; direct quotes and media excluded."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Published metadata gives 2026-09-15; distinct from edition date.",
+          "evidenceUrl": "https://www.gov.uk/government/news/rare-species-help-dorset-nature-reserve-gain-national-recognition"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Named UK institution publishes English original narrative, without translation/republication credit.",
+          "evidenceUrl": "https://www.gov.uk/government/news/rare-species-help-dorset-nature-reserve-gain-national-recognition",
+          "author": "Natural England",
+          "caveat": "Institutional provenance inference, not drafting-language certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Article footer explicitly OGL v3. GOV.UK terms permit reproduction. GOTT guidance section 2.3, developed with TNA, explicitly permits copy/publish/adapt/commercial and noncommercial reuse. No text-specific exception found for institutional prose.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/rare-species-help-dorset-nature-reserve-gain-national-recognition",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.gov.uk/government/publications/re-use-of-public-sector-information-regulations-2015-and-crown-copyright-in-knowledge-asset-commercialisation/re-use-of-public-sector-information-regulations-2015-and-crown-copyright-in-knowledge-asset-commercialisation"
+          ],
+          "scope": "Institutional narrative only; English graded adaptation, Chinese translation and original educational additions.",
+          "exclusions": [
+            "All direct quotations",
+            "Photos, logos, video and third-party material",
+            "Linked reports and company statements"
+          ],
+          "attributionRequirements": [
+            "Named publisher and author where provided",
+            "Original URL and date",
+            "OGL v3 link and standard acknowledgement",
+            "Explicit modifications and no endorsement"
+          ],
+          "licenseRetrievalNote": "Canonical TNA licence returned 403; not retried or bypassed. Current article-specific OGL grant and independently accessible official GOTT explanation inspected."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Natural England"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/rare-species-help-dorset-nature-reserve-gain-national-recognition"
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 48,
+          "bucket": "within_90_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 142,
+          "checkedAt": "2026-11-02",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-11-02-en-a-landscape-with-many-roles"
+    },
+    {
+      "id": "mhclg-wildfire-package-2026-10-22",
+      "language": "en",
+      "sourceTitle": "Military planes and helicopters to fight wildfires from the sky",
+      "sourceUrl": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+      "sourceName": "Ministry of Housing, Communities and Local Government; Ministry of Defence; Prime Minister’s Office, 10 Downing Street / GOV.UK",
+      "registrySourceId": "govuk-mhclg-english-community",
+      "sourcePublishedAt": "2026-10-22",
+      "collectedAt": "2026-11-02",
+      "category": "environment",
+      "topics": [
+        "在野火发生前与发生时应对"
+      ],
+      "level": "B2",
+      "status": "verified",
+      "editorialNote": "B2 independent edition; source and both exercise layers independently reviewed. Speaking angle: Which measures act before a wildfire, and which support the response after it begins?",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-11-02",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+          "checkedAt": "2026-11-02",
+          "notes": "Institutional narrative read in full; direct quotes and media excluded."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Published metadata gives 2026-10-22; distinct from edition date.",
+          "evidenceUrl": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Named UK institution publishes English original narrative, without translation/republication credit.",
+          "evidenceUrl": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+          "author": "Ministry of Housing, Communities and Local Government; Ministry of Defence; Prime Minister’s Office, 10 Downing Street; Katie White OBE MP; The Rt Hon Louise Haigh MP; The Rt Hon Wes Streeting MP; The Rt Hon Dame Angela Eagle DBE MP; The Rt Hon Andy Burnham MP; The Rt Hon Angela Rayner MP",
+          "caveat": "Institutional provenance inference, not drafting-language certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Article footer explicitly OGL v3. GOV.UK terms permit reproduction. GOTT guidance section 2.3, developed with TNA, explicitly permits copy/publish/adapt/commercial and noncommercial reuse. No text-specific exception found for institutional prose.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.gov.uk/government/publications/re-use-of-public-sector-information-regulations-2015-and-crown-copyright-in-knowledge-asset-commercialisation/re-use-of-public-sector-information-regulations-2015-and-crown-copyright-in-knowledge-asset-commercialisation"
+          ],
+          "scope": "Institutional narrative only; English graded adaptation, Chinese translation and original educational additions.",
+          "exclusions": [
+            "All direct quotations",
+            "Photos, logos, video and third-party material",
+            "Linked reports and company statements"
+          ],
+          "attributionRequirements": [
+            "Named publisher and author where provided",
+            "Original URL and date",
+            "OGL v3 link and standard acknowledgement",
+            "Explicit modifications and no endorsement"
+          ],
+          "licenseRetrievalNote": "Canonical TNA licence returned 403; not retried or bypassed. Current article-specific OGL grant and independently accessible official GOTT explanation inspected."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Ministry of Housing, Communities and Local Government",
+            "Ministry of Defence",
+            "Prime Minister's Office, 10 Downing Street",
+            "Katie White OBE MP",
+            "The Rt Hon Louise Haigh MP",
+            "The Rt Hon Wes Streeting MP",
+            "The Rt Hon Dame Angela Eagle DBE MP",
+            "The Rt Hon Andy Burnham MP",
+            "The Rt Hon Angela Rayner MP"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky"
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 11,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 142,
+          "checkedAt": "2026-11-02",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-11-02-en-responding-before-and-during-wildfires"
+    },
+    {
+      "id": "dwp-west-dunbartonshire-youth-hub-2026-10-30",
+      "language": "en",
+      "sourceTitle": "Major boost for young people in West Dunbartonshire as Youth Hub opens to support them towards work",
+      "sourceUrl": "https://www.gov.uk/government/news/major-boost-for-young-people-in-west-dunbartonshire-as-youth-hub-opens-to-support-them-towards-work",
+      "sourceName": "Department for Work and Pensions / GOV.UK",
+      "registrySourceId": "govuk-dwp-english-community",
+      "sourcePublishedAt": "2026-10-30",
+      "collectedAt": "2026-11-02",
+      "category": "society",
+      "topics": [
+        "在同一个地方获得帮助"
+      ],
+      "level": "A2",
+      "status": "verified",
+      "editorialNote": "A2 independent edition; source and both exercise layers independently reviewed. Speaking angle: What help would you like from a local youth centre?",
+      "verification": {
+        "workflowStage": "ready",
+        "readyForPublication": false,
+        "editorialReviewComplete": true,
+        "checkedAt": "2026-11-02",
+        "fullText": {
+          "accessible": true,
+          "read": true,
+          "url": "https://www.gov.uk/government/news/major-boost-for-young-people-in-west-dunbartonshire-as-youth-hub-opens-to-support-them-towards-work",
+          "checkedAt": "2026-11-02",
+          "notes": "Institutional narrative read in full; direct quotes and media excluded."
+        },
+        "originalDate": {
+          "verified": true,
+          "evidence": "Published metadata gives 2026-10-30; distinct from edition date.",
+          "evidenceUrl": "https://www.gov.uk/government/news/major-boost-for-young-people-in-west-dunbartonshire-as-youth-hub-opens-to-support-them-towards-work"
+        },
+        "nativeLanguage": {
+          "verified": true,
+          "evidence": "Named UK institution publishes English original narrative, without translation/republication credit.",
+          "evidenceUrl": "https://www.gov.uk/government/news/major-boost-for-young-people-in-west-dunbartonshire-as-youth-hub-opens-to-support-them-towards-work",
+          "author": "Department for Work and Pensions",
+          "caveat": "Institutional provenance inference, not drafting-language certification."
+        },
+        "rights": {
+          "verified": true,
+          "adaptationAllowed": true,
+          "publicRedistributionAllowed": true,
+          "license": "Open Government Licence v3.0",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "evidence": "Article footer explicitly OGL v3. GOV.UK terms permit reproduction. GOTT guidance section 2.3, developed with TNA, explicitly permits copy/publish/adapt/commercial and noncommercial reuse. No text-specific exception found for institutional prose.",
+          "evidenceUrls": [
+            "https://www.gov.uk/government/news/major-boost-for-young-people-in-west-dunbartonshire-as-youth-hub-opens-to-support-them-towards-work",
+            "https://www.gov.uk/help/terms-conditions",
+            "https://www.gov.uk/government/publications/re-use-of-public-sector-information-regulations-2015-and-crown-copyright-in-knowledge-asset-commercialisation/re-use-of-public-sector-information-regulations-2015-and-crown-copyright-in-knowledge-asset-commercialisation"
+          ],
+          "scope": "Institutional narrative only; English graded adaptation, Chinese translation and original educational additions.",
+          "exclusions": [
+            "All direct quotations",
+            "Photos, logos, video and third-party material",
+            "Linked reports and company statements"
+          ],
+          "attributionRequirements": [
+            "Named publisher and author where provided",
+            "Original URL and date",
+            "OGL v3 link and standard acknowledgement",
+            "Explicit modifications and no endorsement"
+          ],
+          "licenseRetrievalNote": "Canonical TNA licence returned 403; not retried or bypassed. Current article-specific OGL grant and independently accessible official GOTT explanation inspected."
+        },
+        "publisher": {
+          "verified": true,
+          "names": [
+            "Department for Work and Pensions"
+          ],
+          "evidenceUrl": "https://www.gov.uk/government/news/major-boost-for-young-people-in-west-dunbartonshire-as-youth-hub-opens-to-support-them-towards-work"
+        },
+        "freshness": {
+          "asOf": "2026-11-02",
+          "ageDays": 3,
+          "bucket": "within_30_days"
+        },
+        "duplicateCheck": {
+          "checkedAgainstArticleCount": 142,
+          "checkedAt": "2026-11-02",
+          "sourceUrlAlreadyPublished": false,
+          "titleAlreadyPublished": false
+        }
+      },
+      "linkToArticleId": "2026-11-02-en-support-in-one-place"
+    },
+    {
+      "id": "dwp-reserve-2026-10-30-cornwall",
+      "language": "en",
+      "sourceTitle": "Cornwall's first Youth Guarantee Jobs Fair moves hundreds of young people closer to employment",
+      "sourceUrl": "https://www.gov.uk/government/news/cornwalls-first-youth-guarantee-jobs-fair-moves-hundreds-of-young-people-closer-to-employment",
+      "sourceName": "Department for Work and Pensions / GOV.UK",
+      "registrySourceId": "govuk-dwp-english-community",
+      "sourcePublishedAt": "2026-10-30",
+      "collectedAt": "2026-11-02",
+      "category": "work-economy",
+      "topics": [
+        "职业选择"
+      ],
+      "level": "B1",
+      "status": "collected",
+      "editorialNote": "Potential B1 speaking angle: meeting employers and preparing interviews. Hold: Additional information oddly says Nottingham although event is Cornwall; resolve source inconsistency before conversion.",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "dwp-reserve-2026-10-26-norfolk",
+      "language": "en",
+      "sourceTitle": "Thousands of young people put down roots in agricultural careers at Jobs Fair",
+      "sourceUrl": "https://www.gov.uk/government/news/thousands-of-young-people-put-down-roots-in-agricultural-careers-at-jobs-fair",
+      "sourceName": "Department for Work and Pensions / GOV.UK",
+      "registrySourceId": "govuk-dwp-english-community",
+      "sourcePublishedAt": "2026-10-26",
+      "collectedAt": "2026-11-02",
+      "category": "work-economy",
+      "topics": [
+        "职业选择"
+      ],
+      "level": "B1",
+      "status": "collected",
+      "editorialNote": "Potential B1 speaking angle: trying practical occupations before choosing a career. Individual exceptions and exact event date still require review; do not infer each attendee got a job.",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "inrae-rural-reserve-2026-10-21",
+      "language": "fr",
+      "sourceTitle": "Rural",
+      "sourceUrl": "https://www.inrae.fr/actualites/rural",
+      "sourceName": "INRAE",
+      "registrySourceId": "inrae-french-news",
+      "sourcePublishedAt": "2026-10-21",
+      "collectedAt": "2026-11-02",
+      "category": "society",
+      "topics": [
+        "乡村生活"
+      ],
+      "level": "B1",
+      "status": "collected",
+      "editorialNote": "Source-only reserve for rural-life discussion. Inspect article synopsis ownership and book-third-party exceptions before any adaptation; the book itself is not cleared.",
+      "verification": {
+        "workflowStage": "discovered",
+        "readyForPublication": false,
+        "editorialReviewComplete": false,
+        "checkedAt": "2026-11-02"
+      }
     }
   ],
   "policy": "Candidates are recoverable editorial metadata, never public learning editions. Verified means source checks completed; ready marks a separately reviewed conversion, never automatic publication. linkToArticleId records its separately stored edition. Recheck source facts and rights before future conversion.",

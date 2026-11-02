@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checkedAt": "2026-10-21",
+  "checkedAt": "2026-11-02",
   "policy": "Candidate list only, not blanket republication permission. Independently select a different original-language institutional source/article for IT, FR, DE and EN. Confirm article ownership, adaptation/translation/publication rights, exclusions, attribution, source language provenance and date for every edition. Never fill language slots by translating a common article. If evidence or rights are insufficient, skip that language/day. Text only; no images/logos/third-party quotations without separate clearance; never bypass access restrictions.",
   "sources": [
     {
@@ -512,6 +512,69 @@
       ],
       "rightsPolicyUrl": "https://open-educational-resources.de/die-mischung-machts-kennzeichnung-und-lizenzierung-von-materialien-mit-ki-anteil/",
       "articleReviewRequired": true
+    },
+    {
+      "id": "govuk-dwp-english-community",
+      "name": "Department for Work and Pensions / GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/department-for-work-pensions",
+      "languages": [
+        "en"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "requiredPublisherNames": [
+        "Department for Work and Pensions"
+      ],
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "license": "Open Government Licence v3.0 except identified exclusions",
+      "articleReviewRequired": true,
+      "conditions": "Verify From metadata includes this institution; inspect each page date, OGL footer and exceptions. Adapt only institutional narrative, exclude all direct quotes, third-party prose, photographs, logos and media. Credit named publishers/source/date/OGL and changes; no endorsement. Separate proposed measures and expected benefits from delivered results.",
+      "nativeLanguageCaution": "Institutional English original supported by named UK publisher and English editorial provenance, not certified author mother tongue. Inspect translation/republication markers per article.",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "id": "govuk-mhclg-english-community",
+      "name": "Ministry of Housing, Communities and Local Government / GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government",
+      "languages": [
+        "en"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.gov.uk/government/news/"
+      ],
+      "requiredPublisherNames": [
+        "Ministry of Housing, Communities and Local Government"
+      ],
+      "rightsPolicyUrl": "https://www.gov.uk/help/terms-conditions",
+      "licenseEvidence": "https://www.gov.uk/help/terms-conditions",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "license": "Open Government Licence v3.0 except identified exclusions",
+      "articleReviewRequired": true,
+      "conditions": "Verify From metadata includes this institution; inspect each page date, OGL footer and exceptions. Adapt only institutional narrative, exclude all direct quotes, third-party prose, photographs, logos and media. Credit named publishers/source/date/OGL and changes; no endorsement. Separate proposed measures and expected benefits from delivered results.",
+      "nativeLanguageCaution": "Institutional English original supported by named UK publisher and English editorial provenance, not certified author mother tongue. Inspect translation/republication markers per article.",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "id": "erwachsenenbildung-at-news",
+      "name": "erwachsenenbildung.at — Nachrichten der Erwachsenenbildung in Österreich",
+      "url": "https://erwachsenenbildung.at/aktuell/nachrichten.php",
+      "languages": [
+        "de"
+      ],
+      "allowedUrlPrefixes": [
+        "https://erwachsenenbildung.at/aktuell/nachrichten/"
+      ],
+      "rightsPolicyUrl": "https://erwachsenenbildung.at/addon/impressum.php",
+      "licenseEvidence": "https://erwachsenenbildung.at/aktuell/nachrichten/20944-neuer-zertifikatslehrgang-fuer-bildungswerkleitungen.php",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "license": "Mixed: only individually marked CC BY 4.0 texts are eligible",
+      "articleReviewRequired": true,
+      "checkedAt": "2026-11-02",
+      "conditions": "Each article must explicitly license TEXT under CC BY 4.0. Other recent articles explicitly reserve text rights; a CC photo caption or portal-wide partial licence is not text clearance. Credit named authors/editors/institutions and portal, source/date/license and changes. Exclude images, logos, direct third-party quotations and external works. No blanket whitelist.",
+      "nativeLanguageCaution": "Austrian federal adult-education portal, edited by bifeb from 2026; inspect named German-language contributors and translation/republication credits. Provenance inference does not certify an author’s native tongue or earliest drafting language."
     }
   ],
   "archiveOnly": {

@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-fr-suivre-un-voyage-sous-leau",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle démarche caractérise GuidRhône ?",
+      "options": [
+        "Choisir une seule technique à partir des résultats de la Loire.",
+        "Comparer plusieurs méthodes pour préparer un suivi annuel durable.",
+        "Compter les poissons en remplaçant les captures par des prévisions.",
+        "Évaluer les travaux du fleuve à partir des seuls bilans sanitaires."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s5",
+        "s15",
+        "s22"
+      ],
+      "explanationZh": "项目测试互补方法并比较观测，为长期年度监测奠定基础；并非预先决定只使用一种方法。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi les prévisions de débit sont-elles utiles aux équipes ?",
+      "options": [
+        "Choisir les emplacements des deux caméras dans le chenal.",
+        "Planifier les analyses sanitaires des individus déjà capturés.",
+        "Adapter les algorithmes aux images produites dans le Rhône.",
+        "Choisir les périodes favorables et organiser les sessions de pêche."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第9至10句说明捕捞安排取决于水文条件，流量预报用于选择适宜时期和组织捕捞，不是用来确定摄像位置、安排样本分析或图像算法训练。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quel avantage des caméras acoustiques est présenté ?",
+      "options": [
+        "Elles produisent des images dans l’obscurité et dans l’eau trouble.",
+        "Elles mesurent le poids des anguilles au moment de leur passage.",
+        "Elles prévoient les changements du débit pendant la période de migration.",
+        "Elles évaluent le stade d’argenture des poissons sans les capturer."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s14",
+        "s18",
+        "s10"
+      ],
+      "explanationZh": "第14句说明声波成像能在夜间和浑水中工作；第18句说明体重和银化阶段由捕获后的测量评估获得，第10句说明流量预报由罗讷河国家公司提供。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Que peut-on déduire du recours aux pêcheurs du Rhône et de la Loire ?",
+      "options": [
+        "Les comptages antérieurs suffisent à établir les flux du Rhône.",
+        "Les observations acoustiques rendent l’expérience locale secondaire.",
+        "Une technique existante doit être ajustée aux conditions locales.",
+        "Le calendrier de pêche restera identique dans les deux fleuves."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "已知方法移到规模不同的河流需要技术和后勤调整，因此需要两地渔民的现场经验。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Que représente le chiffre de plus de 97 % ?",
+      "options": [
+        "La part des anguilles du bassin capturées chaque année.",
+        "La part des poissons capturés examinés sur le plan sanitaire.",
+        "La part des images permettant une identification automatique des anguilles.",
+        "La part du bassin versant couverte par le secteur choisi."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s20",
+        "s21"
+      ],
+      "explanationZh": "这个数值对应上游流域面积覆盖范围，而不是捕获率、检查率或识别率。"
+    }
+  ]
+}

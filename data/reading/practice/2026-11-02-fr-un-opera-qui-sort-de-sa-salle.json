@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-fr-un-opera-qui-sort-de-sa-salle",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 13,
+      "answer": "mandat",
+      "options": [
+        "voyage",
+        "mandat",
+        "concert",
+        "atelier"
+      ],
+      "explanation": "第二个任期持续三年，mandat指机构负责人任职期限。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 47,
+      "answer": "œuvres",
+      "options": [
+        "œuvres",
+        "billets",
+        "places",
+        "recettes"
+      ],
+      "explanation": "这里将过去作品与当代创作联系起来，œuvres不是票、座位或收入。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 3,
+      "answer": "mécénat",
+      "options": [
+        "transport",
+        "chauffage",
+        "mécénat",
+        "calendrier"
+      ],
+      "explanation": "句中随后用donateurs解释，指捐助者提供的文化赞助mécénat。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s12",
+      "start": 51,
+      "answer": "représentations",
+      "options": [
+        "rénovations",
+        "formations",
+        "inscriptions",
+        "représentations"
+      ],
+      "explanation": "109指计划演出场次，因此为représentations复数，不是工程或报名。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s13",
+      "start": 87,
+      "answer": "tournée",
+      "options": [
+        "réserve",
+        "tournée",
+        "panne",
+        "classe"
+      ],
+      "explanation": "在24座城市安排的制作是巡演，固定表达en tournée。"
+    }
+  ]
+}

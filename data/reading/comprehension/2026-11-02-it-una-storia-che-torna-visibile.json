@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-it-una-storia-che-torna-visibile",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale obiettivo collega la ricerca di Sofia alla mostra?",
+      "options": [
+        "Riunire gli studi di chimica degli amici di Primo Levi.",
+        "Ricostruire la storia dell’edificio delle Carceri Nuove.",
+        "Presentare le nuove attività scolastiche dell’Archivio.",
+        "Ridare spazio alla vicenda poco ricordata di Ester."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s2",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "研究与展览围绕被忽略的Ester经历展开；化学、监狱、学校活动是背景或安排，非共同核心目标。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quali originali erano previsti nell’esposizione?",
+      "options": [
+        "Lettere scritte dagli studenti delle scuole torinesi.",
+        "Documenti del fascicolo militare di Sandro Delmastro.",
+        "Appunti universitari conservati da Roberta Mori.",
+        "Fotografie realizzate durante le visite di ottobre."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "s8指明Sandro的军方档案原件；其他文献出处不见于报道。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Che cosa distingueva le visite per le scuole da quelle indicate per il pubblico?",
+      "options": [
+        "Si svolgevano senza la presenza di una guida.",
+        "Prevedevano l’acquisto del volume presentato.",
+        "Richiedevano una prenotazione per appuntamenti mattutini.",
+        "Erano organizzate nelle serate del 20 e del 22 ottobre."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "学校预约参观在上午；公众导览为20日与22日傍晚。免费不代表无须预约。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Che cosa possiamo concludere sulla realizzazione delle attività?",
+      "options": [
+        "Il testo documenta il programma, non la sua esecuzione completa.",
+        "Le prenotazioni confermano che tutte le visite erano al completo.",
+        "Le date dimostrano che la mostra è ancora aperta al pubblico.",
+        "La presenza del libro prova che la presentazione è stata registrata."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s13"
+      ],
+      "explanationZh": "最后一句明确指出公告不能证明活动按计划执行，也不能推出满额、现仍开放或有录像。"
+    }
+  ]
+}

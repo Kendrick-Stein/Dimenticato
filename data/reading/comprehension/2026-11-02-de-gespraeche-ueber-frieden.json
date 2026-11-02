@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-de-gespraeche-ueber-frieden",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Was können Interessierte laut Text bei der Reihe tun?",
+      "options": [
+        "Fachleuten zuhören und über Frieden sprechen.",
+        "Eine Ausstellung besuchen und Bilder erklären.",
+        "In einer Gruppe reisen und Wien kennenlernen.",
+        "Einen Beruf lernen und ein Zertifikat bekommen."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "explanationZh": "前三句说明是关于和平的讲座，参与者可以听专家并讨论；其他活动形式未被介绍。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Welche zwei angekündigten Termine haben denselben Veranstaltungsort?",
+      "options": [
+        "Der 3. und der 17. November.",
+        "Der 17. November und der 1. Dezember.",
+        "Der 3. November und der 1. Dezember.",
+        "Der 20. Oktober und der 17. November."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s7",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "11月3日和12月1日均在Depot；11月17日在FAKTory，不能混淆。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Wer möchte erklären, wie Menschen den gesellschaftlichen Zusammenhalt stärken können?",
+      "options": [
+        "Oliver Rathkolb.",
+        "Rosa Logar.",
+        "Barbara Sieberth.",
+        "Barbara Prainsack."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6",
+        "s8",
+        "s9",
+        "s11"
+      ],
+      "explanationZh": "第8句将相互支持和社会凝聚力明确对应Barbara Prainsack；其余三人的主题不同。"
+    }
+  ]
+}

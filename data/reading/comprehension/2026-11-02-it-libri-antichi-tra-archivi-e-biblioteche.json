@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-it-libri-antichi-tra-archivi-e-biblioteche",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Che cosa presenta questa lettura?",
+      "options": [
+        "Le regole per prendere in prestito libri a Perugia.",
+        "Il programma di un incontro su un libro e i documenti antichi.",
+        "Le istruzioni per iscriversi a una scuola per bibliotecari.",
+        "Il calendario delle nuove pubblicazioni di una casa editrice."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s4",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "全文回顾一场围绕图书与古文献编目的活动；没有介绍借书制度、课程报名或出版社新书日历。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa propone il libro per i documenti antichi?",
+      "options": [
+        "Una nuova sede dove esporli.",
+        "Un percorso per portarli nelle scuole.",
+        "Un modello per descriverli.",
+        "Un servizio per venderli online."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "s7明确说提出描述文献的模式，其他方式未在文中出现。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quale limite aveva l’ingresso libero?",
+      "options": [
+        "Il numero dei posti disponibili.",
+        "L’età delle persone interessate.",
+        "Il possesso di una tessera universitaria.",
+        "L’acquisto del libro presentato."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "免费入场仍受座位数量限制；文中没有年龄、证件或购买要求。"
+    }
+  ]
+}

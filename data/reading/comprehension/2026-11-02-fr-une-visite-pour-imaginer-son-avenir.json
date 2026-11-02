@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-fr-une-visite-pour-imaginer-son-avenir",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Pourquoi cette rencontre a-t-elle été organisée ?",
+      "options": [
+        "Pour préparer un concours entre les deux lycées.",
+        "Pour rapprocher les élèves des recherches et des métiers.",
+        "Pour former les professeurs à gérer le campus.",
+        "Pour présenter les résultats scolaires des élèves."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "活动让学生接触研究和职业，并拉近学校与科研人员的联系；不是竞赛、行政培训或成绩展示。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Que proposait le programme de la visite ?",
+      "options": [
+        "Des cours de langue et une exposition de photos.",
+        "Un marché agricole et un spectacle de musique.",
+        "Des examens écrits et des entretiens individuels.",
+        "Des ateliers, des activités pratiques et des jeux."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "第6句明确列出工作坊、实践活动、严肃游戏和参观，其余组合未出现。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quel était le rôle des personnels administratifs pendant la rencontre ?",
+      "options": [
+        "Accompagner les groupes sur le campus.",
+        "Présenter les métiers de la recherche.",
+        "Animer les jeux et les ateliers.",
+        "Préparer les visites dans les lycées."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "第10句明确行政人员的任务是在园区陪同小组；文章没有把科研职业介绍或工作坊主持分配给他们。"
+    }
+  ]
+}

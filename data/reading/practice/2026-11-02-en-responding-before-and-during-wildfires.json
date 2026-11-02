@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-02-en-responding-before-and-during-wildfires",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 165,
+      "answer": "terrain",
+      "options": [
+        "terrain",
+        "furniture",
+        "paperwork",
+        "timetable"
+      ],
+      "explanation": "terrain为不可数名词，指荒原与坡地等地形；后接定语从句。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s8",
+      "start": 52,
+      "answer": "breathable",
+      "options": [
+        "decorative",
+        "breathable",
+        "disposable",
+        "waterlogged"
+      ],
+      "explanation": "breathable形容防护服透气；与lighter并列比较穿着特性。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s10",
+      "start": 112,
+      "answer": "retain",
+      "options": [
+        "retain",
+        "boil",
+        "transport",
+        "measure"
+      ],
+      "explanation": "retain water指保持水分；helping them后用动词原形。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 120,
+      "answer": "timetable",
+      "options": [
+        "timetable",
+        "temperature",
+        "population",
+        "ownership"
+      ],
+      "explanation": "timetable指项目预计2027年至2029年的实施时间，不是资金额。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s16",
+      "start": 194,
+      "answer": "demonstrated",
+      "options": [
+        "demonstrated",
+        "imaginary",
+        "seasonal",
+        "accidental"
+      ],
+      "explanation": "demonstrated为过去分词作定语，指有证据证明的减少；本句强调公告不等于成效。"
+    }
+  ]
+}
