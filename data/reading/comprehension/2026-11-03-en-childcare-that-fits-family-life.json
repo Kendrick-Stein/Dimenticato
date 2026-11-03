@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-en-childcare-that-fits-family-life",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Which service is planned for August 2027?",
+      "options": [
+        "Holiday childcare for primary pupils.",
+        "Breakfast clubs in primary schools.",
+        "A new national mobile crèche network.",
+        "All the services for nine-month-old children."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "2027年8月对应小学早餐俱乐部；课后与假期托育是2029年8月。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why does Early Years Scotland connect families with extra hours of care?",
+      "options": [
+        "To help local schools start breakfast clubs.",
+        "To give providers funds for specialist equipment.",
+        "To fill gaps between or beyond existing arrangements.",
+        "To arrange new childcare services for island communities."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "它针对既有安排之外或之间的服务空档，例如额外时段或衔接期。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What distinguishes Inspiring Scotland’s support in this article?",
+      "options": [
+        "It provides short-term help while longer-term care is arranged.",
+        "It supplies mobile crèches for parents on employment programmes.",
+        "It provides specialist childcare for children with complex disabilities.",
+        "It arranges flexible childminding placements with registered carers."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s12"
+      ],
+      "explanationZh": "正文说明快速资金用于紧急情况或面试，同时落实较长期安排。"
+    },
+    {
+      "id": "q4",
+      "kind": "main-idea",
+      "prompt": "How are the two kinds of support related?",
+      "options": [
+        "Current grants fund an assessment before the wider plan is proposed.",
+        "The wider plan brings existing grant recipients into one provider network.",
+        "A common allowance replaces services responding to different family needs.",
+        "A staged plan sits alongside help for particular family needs."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s1",
+        "s3",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "文章结合分阶段的广泛服务计划与针对具体服务空缺的多样化支持。"
+    }
+  ]
+}

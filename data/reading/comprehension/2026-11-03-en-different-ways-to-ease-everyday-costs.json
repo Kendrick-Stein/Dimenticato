@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-en-different-ways-to-ease-everyday-costs",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "How does the proposed mileage support change after 10,000 business miles?",
+      "options": [
+        "The tax-free rate rises from 25 to 35 pence per mile.",
+        "The tax-free rate stays at 55 pence for all further miles.",
+        "Drivers receive a fixed £194 payment for the remaining miles.",
+        "Only nurses can claim support beyond that distance."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "前10000英里55便士，之后由25便士升至35便士；不同数字不可混用。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why is the proposed allowance rule contrasted with a cliff edge?",
+      "options": [
+        "It delays the assessment of extra earnings until the next financial year.",
+        "It lowers support progressively instead of removing it all at the threshold.",
+        "It raises the earnings threshold but retains the loss of the full allowance.",
+        "It replaces a weekly assessment of earnings with a two-week payment."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "每多赚1镑扣1镑是逐步减少，区别于刚超限就全额丧失。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Which statement matches the parcel-box timetable?",
+      "options": [
+        "All 1,000 boxes were available when the announcement appeared.",
+        "The first 500 boxes will arrive after all branch upgrades finish.",
+        "The target is 500 by the end of 2026 and 1,000 by the financial year’s end.",
+        "The target is 600 boxes by 2026 and 500 branches in the next year."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s14"
+      ],
+      "explanationZh": "500和1000是两个时间点的投递箱目标；600是升级网点数量。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Why would the same headline saving not describe every household’s experience?",
+      "options": [
+        "The measures begin together but offer larger payments to drivers.",
+        "The savings depend on households using several services in sequence.",
+        "The package gives priority to families applying before Christmas.",
+        "The support works differently and depends on who meets its conditions."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s2",
+        "s5",
+        "s6",
+        "s7",
+        "s11",
+        "s15",
+        "s16"
+      ],
+      "explanationZh": "公务用车、符合条件的家长等适用条件不同，且机制不同；不能把潜在节省额当人人相同结果。"
+    },
+    {
+      "id": "q5",
+      "kind": "main-idea",
+      "prompt": "Which summary best connects the examples in the article?",
+      "options": [
+        "The package combines financial-rule changes with improvements to everyday services.",
+        "The package mainly replaces public services with direct cash payments.",
+        "The package makes all family support depend on earnings above a single limit.",
+        "The package combines already measured savings from one shared tax change."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s3",
+        "s6",
+        "s8",
+        "s10",
+        "s13",
+        "s15",
+        "s16"
+      ],
+      "explanationZh": "文章比较里程税费、育儿与照护补助、关税和包裹服务，非单一机制或已测得统一成效。"
+    }
+  ]
+}

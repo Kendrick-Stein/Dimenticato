@@ -1,0 +1,34 @@
+{
+  "reviewer": "root-independent",
+  "checkedAt": "2026-11-03",
+  "status": "PASS_TEXT_AND_METADATA_ONLY",
+  "entriesSha256": "2d88d3d9331d4bd2386e157848c5d46ff3a6031d7f17787fc757c0803f1488fa",
+  "answers": {
+    "en-bc-chatting-about-series-b1": [
+      0,
+      1,
+      2
+    ],
+    "it-rai-vicina-premurosa-b2": [
+      1,
+      3,
+      0
+    ]
+  },
+  "checks": [
+    "BC whole official transcript opening effects, seven-vs-ten complaint, Cersei unpredictability and B1 heading independently read; original date not identified, evergreen",
+    "Rai official B2 heading and scenes6–7 independently read before solution; biscuits meaning, neighbor CDs, map research answers/explanations agree",
+    "logo official homepage real link clicked successfully after initial tool inaccessible response; date2026-11-02 19:50, programme topics, homepage10:32 verified; no full transcript, no invented questions; corrected unsupported B1 estimate to ungraded",
+    "Only short original guides/expressions/questions and original-site links; no full transcript/media/image/embedding licensed or copied"
+  ],
+  "limits": [
+    "No playback/audioquality verification",
+    "IT B1 reading source browser single normal attempt failed upstreamconnectiontimeout; no full-page exception check, hold draft"
+  ],
+  "fourLanguageSourceCheck": {
+    "it": "Rai official transcript: new evergreen B2",
+    "en": "British Council official transcript: new evergreen B1; Facts and figures not selected because dated factual teaching risks",
+    "de": "logo official homepage and2Nov programme metadata; no question creation",
+    "fr": "Official terms retrieval unavailable; known TV5 AI/adaptation restriction and RFI denial respected, no bypass or new derived content"
+  }
+}

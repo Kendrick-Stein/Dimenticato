@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-en-libraries-and-your-views",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "What is the department asking people to help with?",
+      "options": [
+        "Choosing books for a single school library.",
+        "Planning the future of public library services.",
+        "Organising a reading event in November.",
+        "Selecting staff for a new digital service."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s2",
+        "s5",
+        "s6",
+        "s10"
+      ],
+      "explanationZh": "征求的是公共图书馆服务未来发展的意见，不是单个活动、学校书单或招聘。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Which question fits the consultation described?",
+      "options": [
+        "How many books should each member buy?",
+        "Which author should win this year’s prize?",
+        "Which services and facilities do users value?",
+        "Who should teach every library course?"
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s9"
+      ],
+      "explanationZh": "第5句说明征询体验及人们重视的服务和设施。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What does the article say about library membership?",
+      "options": [
+        "The consultation will select new members.",
+        "Members are asked to organise digital courses.",
+        "Membership plans cover the next two years.",
+        "Encouraging more members is a proposed aim."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s10"
+      ],
+      "explanationZh": "第7句明确增加会员是拟议目标；咨询的发展期为十年，而非两年。"
+    }
+  ]
+}

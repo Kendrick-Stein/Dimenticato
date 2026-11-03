@@ -1,0 +1,214 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-it-taranto-sport-disegnato",
+  "storyId": "dga-taranto-impianti-carta-2026-10-30",
+  "lang": "it",
+  "date": "2026-11-03",
+  "contentType": "native-adaptation",
+  "title": "Lo sport disegnato sulla carta",
+  "titleZh": "画在纸上的体育设施",
+  "summaryZh": "认识塔兰托一场把体育场地设计与城市记忆联系起来的档案展。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以具体展览和参观安排为主，短句及常用现在时；个别建筑与档案词汇配中文释义。",
+  "category": "culture",
+  "topics": [
+    "体育",
+    "城市记忆"
+  ],
+  "source": {
+    "name": "Ministero della Cultura — Direzione generale Archivi",
+    "title": "Taranto | “Gli impianti di carta”: una mostra documentaria tra progetti sportivi e storia urbana",
+    "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=0b7764957993dd4152fa6f537fa2d727&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2827",
+    "publishedAt": "2026-10-30",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "attribution": "原文：Ministero della Cultura — Direzione generale Archivi，机构署名（未列个人作者）。原始发布日期：2026-10-30。编辑、意大利语分级改写、中文翻译与教学补充：Dimenticato；原链接与许可见本页。",
+  "adaptation": "依据意大利语机构原稿删节并同语言分级改写，非原文逐字转载；中文翻译、词汇释义、练习与口语提示为教学补充，不表示来源机构认可。不使用图片、海报、书籍内文、第三方引语。活动信息依原公告转述，不把公告视为活动已实际举行的证明；出行前请核实原站安排。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 30 ottobre 2026 la Direzione generale Archivi ha pubblicato una notizia su una mostra a Taranto.",
+      "zh": "2026年10月30日，档案总局发布了一则关于塔兰托一场展览的消息。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "La mostra si chiama “Gli impianti di carta” e parla dei luoghi dello sport nella città.",
+      "zh": "展览名为“纸上的设施”，讲述这座城市中的体育场所。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Secondo il programma, è aperta dal 30 ottobre al 31 dicembre 2026 nell’Archivio di Stato.",
+      "zh": "根据公布的安排，展览于2026年10月30日至12月31日在国家档案馆开放。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "I visitatori possono vedere documenti originali, disegni di edifici e piante, cioè disegni degli spazi visti dall’alto.",
+      "zh": "参观者可以看到原始文献、建筑图纸和平面图，也就是从上方呈现空间的图。",
+      "glosses": [
+        {
+          "surface": "piante",
+          "lemma": "pianta",
+          "zh": "平面图",
+          "note": "阴性复数，在这里指空间图，不是植物"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Questi materiali raccontano la storia dei campi sportivi dei quartieri e delle palestre della città.",
+      "zh": "这些材料讲述各街区运动场与城市体育馆的历史。",
+      "glosses": [
+        {
+          "surface": "quartieri",
+          "lemma": "quartiere",
+          "zh": "街区",
+          "note": "阳性复数，dei＝di＋i"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Alcuni progetti sono diventati edifici, mentre altri sono rimasti soltanto sulla carta.",
+      "zh": "有些设计成为了建筑，而其他设计只留在纸上。",
+      "glosses": [
+        {
+          "surface": "rimasti",
+          "lemma": "rimanere",
+          "zh": "留下的",
+          "note": "过去分词阳性复数，与altri（progetti）一致"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "La mostra mette a confronto queste due situazioni e aiuta a conoscere i cambiamenti della città.",
+      "zh": "展览比较这两种情况，帮助人们了解城市的变化。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "L’ingresso è gratuito, ma è obbligatorio prenotare la visita.",
+      "zh": "入场免费，但必须预约参观。",
+      "glosses": [
+        {
+          "surface": "prenotare",
+          "lemma": "prenotare",
+          "zh": "预约",
+          "note": "动词不定式，è obbligatorio后说明必须做的事"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "L’indirizzo è via F. Di Palma 4, a Taranto.",
+      "zh": "地址是塔兰托F. Di Palma街4号。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Le visite sono previste il lunedì e il martedì dalle nove alle tredici.",
+      "zh": "参观时间安排在周一和周二上午九点至下午一点。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Il giovedì l’orario è diverso: dalle quindici alle sedici e trenta.",
+      "zh": "周四的时间不同：下午三点至四点半。",
+      "glosses": [
+        {
+          "surface": "diverso",
+          "lemma": "diverso",
+          "zh": "不同的",
+          "note": "阳性单数形容词，修饰orario"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Per informazioni e prenotazioni, l’annuncio indica il contatto dell’Archivio di Stato di Taranto.",
+      "zh": "公告提供了塔兰托国家档案馆的联系方式，用于咨询与预约。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "piante",
+        "lemma": "pianta",
+        "zh": "平面图",
+        "sentenceId": "s4",
+        "note": "阴性复数，在这里指空间图，不是植物"
+      },
+      {
+        "text": "quartieri",
+        "lemma": "quartiere",
+        "zh": "街区",
+        "sentenceId": "s5",
+        "note": "阳性复数，dei＝di＋i"
+      },
+      {
+        "text": "rimasti",
+        "lemma": "rimanere",
+        "zh": "留下的",
+        "sentenceId": "s6",
+        "note": "过去分词阳性复数，与altri（progetti）一致"
+      },
+      {
+        "text": "prenotare",
+        "lemma": "prenotare",
+        "zh": "预约",
+        "sentenceId": "s8",
+        "note": "动词不定式，è obbligatorio后说明必须做的事"
+      },
+      {
+        "text": "diverso",
+        "lemma": "diverso",
+        "zh": "不同的",
+        "sentenceId": "s11",
+        "note": "阳性单数形容词，修饰orario"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Secondo il programma",
+        "zh": "根据公布的安排",
+        "sentenceId": "s3",
+        "note": "secondo＋名词，注明信息依据。"
+      },
+      {
+        "text": "mette a confronto",
+        "zh": "进行比较",
+        "sentenceId": "s7",
+        "note": "mettere a confronto用于比较两件事。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "ma连接免费入场与必须预约两个条件；免费并不等于无需预约。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Nella tua città c’è un luogo sportivo che conosci bene?",
+        "zh": "你熟悉自己城市里的某个体育场所吗？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mi interessa la storia di questo quartiere.",
+        "zh": "我对这个街区的历史感兴趣。",
+        "note": "教学补充，可按个人情况改写，不代表原文作者观点。"
+      }
+    ]
+  }
+}

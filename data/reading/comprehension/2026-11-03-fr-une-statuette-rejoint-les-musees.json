@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-fr-une-statuette-rejoint-les-musees",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Comment la femme tient-elle le petit vase ?",
+      "promptZh": "女子怎样拿着小瓶？",
+      "options": [
+        "Dans la main droite, près de ses cheveux.",
+        "Dans la main gauche, avec le couvercle levé.",
+        "Avec les deux mains, devant son visage.",
+        "Contre son dos, sous ses longs cheveux."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "第5句说左手拿小瓶、右手抬起瓶盖。其他选项把手的位置或动作改变了。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi la sculpture est-elle restée en France après la vente ?",
+      "promptZh": "出售后，雕塑为什么仍留在法国？",
+      "options": [
+        "La famille a décidé de la garder.",
+        "Le musée a annulé la vente.",
+        "Le ministère a refusé son exportation.",
+        "Le collectionneur a changé d’avis."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第9、10句连起来说明：外国收藏家购得后，文化部拒绝出口，因此留在法国；并非家族保留、取消拍卖或买家改变主意。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Que prévoit le parcours de la sculpture après l’étude et la restauration ?",
+      "promptZh": "研究和修复后，雕塑计划怎样展示？",
+      "options": [
+        "Une présentation à Cluny, puis un prêt à Strasbourg.",
+        "Une présentation à Strasbourg, puis une vente à Cluny.",
+        "Un retour dans la famille, puis un prêt à Cluny.",
+        "Un prêt au collectionneur, puis un retour à Strasbourg."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s12"
+      ],
+      "explanationZh": "第12句给出未来顺序：先在Cluny展示，再长期借展至斯特拉斯堡；不是出售或归还私人。"
+    }
+  ]
+}

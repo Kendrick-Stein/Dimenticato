@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-fr-compter-plus-que-le-carbone",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle conclusion l’article tire-t-il de l’évaluation des feuilles de route ?",
+      "promptZh": "文章从路线图评估中得出什么结论？",
+      "options": [
+        "Les progrès techniques doivent être associés à une réflexion sur les ressources et la demande.",
+        "Les stratégies de compensation peuvent remplacer les politiques de maîtrise du trafic.",
+        "Le partage économique des budgets suffit à résoudre les dépassements environnementaux.",
+        "La baisse des émissions permet de déduire le respect des autres limites planétaires."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s18",
+        "s19",
+        "s20",
+        "s21",
+        "s22"
+      ],
+      "explanationZh": "各路线图未能同时遵守所有边界，且需要资源；作者仍保留技术措施，并要求结合供需政策，不能推出补偿替代需求政策、某种分配原则解决问题或单看排放即可。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Qu’est-ce qui distingue les deux principes de partage des budgets ?",
+      "promptZh": "两种预算分配原则的区别是什么？",
+      "options": [
+        "L’un calcule la consommation d’eau, l’autre suit les émissions cumulées.",
+        "L’un utilise le poids économique, l’autre les impacts dans des pays de référence.",
+        "L’un traite la production des carburants, l’autre leur distribution mondiale.",
+        "L’un compare les avions actuels, l’autre les modèles prévus pour 2050."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第12句是全球GDP占比，第13句是按标准选出的参考国家中航空影响的占比。其余选项混淆指标、生命周期阶段和技术比较。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Que couvre l’analyse de cycle de vie décrite dans le texte ?",
+      "promptZh": "文中描述的生命周期分析覆盖什么？",
+      "options": [
+        "La construction, la rénovation et la fermeture des aéroports.",
+        "La formation, le recrutement et les déplacements des équipages.",
+        "La production, la distribution et la combustion des carburants.",
+        "La conception, la vente et le remplacement des avions."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s14"
+      ],
+      "explanationZh": "第14句明确这里的分析沿燃料生产、配送、燃烧展开；没有说它在此评估机场、人员或飞机制造周期。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quel résultat est commun aux scénarios étudiés ?",
+      "promptZh": "研究情景有什么共同结果？",
+      "options": [
+        "Les budgets de l’eau douce sont dépassés dans tous les scénarios.",
+        "Le principe économique réduit davantage les besoins en terres.",
+        "Les budgets de chaque limite sont dépassés dans la même proportion.",
+        "Les budgets du climat et de l’intégrité de la biosphère sont dépassés."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s17",
+        "s18"
+      ],
+      "explanationZh": "第18句指出气候和生物圈完整性预算系统性超标；第17句同时保留部分预算符合的事实，也未比较两种分配原则的具体效果。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Pourquoi la baisse des émissions futures ne résume-t-elle pas l’évaluation climatique décrite ?",
+      "promptZh": "为什么未来排放下降不能概括文中所说的气候评估？",
+      "options": [
+        "Parce que les émissions cumulées du secteur entrent aussi dans le calcul.",
+        "Parce que le budget climatique est remplacé par le budget consacré à l’eau.",
+        "Parce que l’étude limite la comparaison aux carburants déjà commercialisés.",
+        "Parce que le poids économique détermine directement les émissions historiques."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s16"
+      ],
+      "explanationZh": "第16句还计入已经消耗的历史预算，因此评价不只涉及未来排放。这是对方法范围的直接推断，不声称历史排放能由经济占比直接决定。"
+    }
+  ]
+}

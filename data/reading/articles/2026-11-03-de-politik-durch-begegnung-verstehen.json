@@ -1,0 +1,439 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-de-politik-durch-begegnung-verstehen",
+  "storyId": "erwachsenenbildung-20875-2026-08-21",
+  "lang": "de",
+  "date": "2026-11-03",
+  "category": "education",
+  "topics": [
+    "成人教育",
+    "社会参与"
+  ],
+  "title": "Politik durch Begegnung verstehen",
+  "titleZh": "在交流中理解政治",
+  "summaryZh": "一篇8月报道回顾赴布鲁塞尔的学习之行：实地参访、不同知识背景与经验传播如何结合，以及项目自述的证据边界。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：区分教学假设、作者经验与效果证据；较长关系从句、被动态、名词化与限定论证相结合，机构术语配中文辅助。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "erwachsenenbildung.at",
+    "title": "EU-Politik live: Lern-Mobilität des Rings Österreichischer Bildungswerke",
+    "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20875-eu-politik-live-lernmobilitaet-nach-bruessel.php",
+    "publishedAt": "2026-08-21",
+    "lang": "de",
+    "author": "Barbara Gruber-Rotheneder; Redaktion: Anna Schreinlechner, Ring Österreichischer Bildungswerke"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Barbara Gruber-Rotheneder; Redaktion: Anna Schreinlechner, Ring Österreichischer Bildungswerke，erwachsenenbildung.at，2026-08-21，EU-Politik live: Lern-Mobilität des Rings Österreichischer Bildungswerke（https://erwachsenenbildung.at/aktuell/nachrichten/20875-eu-politik-live-lernmobilitaet-nach-bruessel.php）。正文按 CC BY 4.0 使用；Dimenticato 同语言改写、中文翻译及教学补充，整理于2026-11-03，不代表原作者认可。",
+  "adaptation": "根据已署名德语机构原文简化、重组和转述；保留原报道日期及报道时点，不作为当天新闻或后续结果。未使用图片、附属材料或第三方引语。词义、问题和口语表达是教学补充。原报道发表于8月21日，回顾7月12—14日活动；并非11月新发生的活动。最后两句明确标为编辑证据边界补充，不冒称原作者的结论。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Europäische Politik erscheint vielen Menschen weit entfernt, obwohl Entscheidungen der europäischen Institutionen auch ihr gesellschaftliches Umfeld betreffen.",
+      "zh": "欧洲政治在许多人看来很遥远，尽管欧洲机构的决策也关系到他们所在的社会环境。",
+      "glosses": [
+        {
+          "surface": "Umfeld",
+          "lemma": "Umfeld",
+          "zh": "环境；周围群体",
+          "note": "das Umfeld。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Ein Bericht vom 21. August 2026 beschreibt einen Bildungsansatz, der diese Distanz durch Besuche, persönliche Gespräche und gemeinsame Reflexion verringern soll.",
+      "zh": "一篇2026年8月21日的报道介绍了一种教育方式：通过参访、面对面交流和共同反思来缩短这种距离。",
+      "glosses": [
+        {
+          "surface": "Reflexion",
+          "lemma": "Reflexion",
+          "zh": "反思",
+          "note": "die Reflexion。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Vom 12. bis zum 14. Juli hatte der Ring Österreichischer Bildungswerke zum sechsten Mal eine Lernreise unter dem Namen EU-Politik live nach Brüssel organisiert.",
+      "zh": "7月12日至14日，奥地利教育协会联合组织第六次举办名为“亲历欧盟政治”的布鲁塞尔学习之旅。",
+      "glosses": [
+        {
+          "surface": "Lernreise",
+          "lemma": "Lernreise",
+          "zh": "学习之旅",
+          "note": "die Lernreise。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Das Angebot gehörte zur Politik-Werkstatt des Rings und wurde durch Erasmus+ mitfinanziert, ein Programm zur Förderung von Mobilität und Zusammenarbeit im Bildungsbereich.",
+      "zh": "这一活动属于该组织的“政治工作坊”，并由Erasmus+共同资助；后者是促进教育领域人员流动与合作的项目。",
+      "glosses": [
+        {
+          "surface": "mitfinanziert",
+          "lemma": "mitfinanzieren",
+          "zh": "共同资助的",
+          "note": "mit-表示共同参与。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Die Gruppe bestand aus 21 Personen, darunter hauptamtlich Beschäftigte, ehrenamtlich Engagierte und weitere Menschen mit Interesse an politischen Fragen.",
+      "zh": "团队由21人组成，包括全职工作人员、志愿工作者，以及其他对政治问题感兴趣的人。",
+      "glosses": [
+        {
+          "surface": "ehrenamtlich",
+          "lemma": "ehrenamtlich",
+          "zh": "志愿地；荣誉职务性质的",
+          "note": "修饰Engagierte。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Vier Teilnehmende kamen aus der Basisbildung des BhW Niederösterreich, sodass bereits die Zusammensetzung der Gruppe unterschiedliche Bildungserfahrungen zusammenbrachte.",
+      "zh": "四名参与者来自下奥地利州BhW的基础教育项目，因此团队构成本身就汇集了不同的教育经历。",
+      "glosses": [
+        {
+          "surface": "Zusammensetzung",
+          "lemma": "Zusammensetzung",
+          "zh": "构成",
+          "note": "die Zusammensetzung。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Zum Programm gehörten die Europäische Kommission, das Besucherzentrum des Rates der Europäischen Union, das Europäische Parlament und die Ständige Vertretung Österreichs bei der EU.",
+      "zh": "行程包括欧盟委员会、欧盟理事会访客中心、欧洲议会，以及奥地利常驻欧盟代表机构。",
+      "glosses": [
+        {
+          "surface": "Vertretung",
+          "lemma": "Vertretung",
+          "zh": "代表机构",
+          "note": "此处指常驻代表机构。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Diese Auswahl sollte verschiedene Perspektiven auf europäische Entscheidungsprozesse eröffnen und zugleich zeigen, wie österreichische Interessen auf europäischer Ebene vertreten werden.",
+      "zh": "这样的选择旨在提供观察欧洲决策过程的不同视角，同时展示奥地利利益如何在欧洲层面得到代表。",
+      "glosses": [
+        {
+          "surface": "Entscheidungsprozesse",
+          "lemma": "Entscheidungsprozess",
+          "zh": "决策过程",
+          "note": "复数。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Im Haus der Europäischen Geschichte setzte sich die Gruppe mit Entwicklungen des 19. und 20. Jahrhunderts sowie der Entstehung der Europäischen Union auseinander.",
+      "zh": "在欧洲历史之家，团队探讨了19和20世纪的发展以及欧盟的形成。",
+      "glosses": [
+        {
+          "surface": "setzte sich",
+          "lemma": "sich auseinandersetzen",
+          "zh": "探讨；深入讨论",
+          "note": "与句尾auseinander及mit搭配。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Das Parlamentarium vermittelte Einblicke in die Arbeit des Europäischen Parlaments, während eine Stadtführung zusätzlich die architektonischen Besonderheiten Brüssels zugänglich machte.",
+      "zh": "欧洲议会访客中心介绍了欧洲议会的工作，而城市导览还让大家了解布鲁塞尔的建筑特色。",
+      "glosses": [
+        {
+          "surface": "während",
+          "lemma": "während",
+          "zh": "而；与此同时",
+          "note": "引导从句，谓语置于句末。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Hinter der Reise stand die didaktische Annahme, dass politische Inhalte durch direkte Erfahrungen und persönlichen Austausch besonders anschaulich vermittelt werden können.",
+      "zh": "这趟旅程背后的教学假设是：直接体验和面对面交流能够使政治内容的传达格外直观。",
+      "glosses": [
+        {
+          "surface": "Annahme",
+          "lemma": "Annahme",
+          "zh": "假设",
+          "note": "die Annahme，不等同于已证实结论。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Institutionelle Strukturen wurden deshalb nicht allein erklärt: Die Teilnehmenden konnten die entsprechenden Orte aufsuchen und mit Menschen sprechen, die dort arbeiten.",
+      "zh": "因此，组织机构的结构不只是被讲解；参与者还可以亲赴相关地点，与在那里工作的人交谈。",
+      "glosses": [
+        {
+          "surface": "aufsuchen",
+          "lemma": "aufsuchen",
+          "zh": "前往；造访",
+          "note": "可分动词，不定式形式。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Gespräche mit Vertreterinnen und Vertretern mehrerer Institutionen eröffneten die Möglichkeit, eigene Fragen zu stellen und fachliche Erklärungen unmittelbar zu diskutieren.",
+      "zh": "与多个机构代表的交流让参与者有机会提出自己的问题，并当场讨论专业解释。",
+      "glosses": [
+        {
+          "surface": "unmittelbar",
+          "lemma": "unmittelbar",
+          "zh": "直接地；当场",
+          "note": "副词。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Auch ein Gespräch mit dem EU-Abgeordneten Thomas Waitz gehörte dazu; der Austausch sollte den Zugang unabhängig vom jeweiligen politischen Vorwissen erleichtern.",
+      "zh": "其中也包括与欧洲议会议员Thomas Waitz的交流；这些互动旨在让不同政治知识水平的人都更容易接触相关议题。",
+      "glosses": [
+        {
+          "surface": "Vorwissen",
+          "lemma": "Vorwissen",
+          "zh": "已有知识",
+          "note": "das Vorwissen。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Der Bericht beschreibt die unterschiedlichen Wissensstände innerhalb der Gruppe nicht als bloße Schwierigkeit, sondern als eine mögliche Stärke des gemeinsamen Lernens.",
+      "zh": "报道并不把团队内部知识水平的差异仅视为困难，而是将其描述为共同学习的一种潜在优势。",
+      "glosses": [
+        {
+          "surface": "Wissensstände",
+          "lemma": "Wissensstand",
+          "zh": "知识水平",
+          "note": "复数。"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Für bereits gut informierte Personen boten Präsentationen Gelegenheit zur Wiederholung und Vertiefung, während andere zunächst eine Grundlage für das Verständnis europäischer Aufgaben aufbauten.",
+      "zh": "对于已经了解较多的人，介绍活动提供了复习和深化的机会，而另一些人则首先建立起理解欧洲机构任务的基础。",
+      "glosses": [
+        {
+          "surface": "Vertiefung",
+          "lemma": "Vertiefung",
+          "zh": "深化",
+          "note": "die Vertiefung。"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "In den anschließenden Frage- und Diskussionsrunden konnten diese verschiedenen Perspektiven zusammenkommen, anstatt nebeneinander bestehen zu bleiben.",
+      "zh": "在随后的问答和讨论环节中，这些不同视角可以相互汇合，而不是各自并存、互不交流。",
+      "glosses": [
+        {
+          "surface": "anstatt",
+          "lemma": "anstatt",
+          "zh": "而不是",
+          "note": "anstatt … zu …构成不定式结构。"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Nach Darstellung der Autorin profitierten weniger erfahrene Teilnehmende insbesondere von den Fragen und Einordnungen derjenigen, die sich schon intensiver mit den Themen beschäftigt hatten.",
+      "zh": "按照作者的介绍，经验较少的参与者尤其受益于那些此前已深入关注相关主题者提出的问题和所作的解释。",
+      "glosses": [
+        {
+          "surface": "Einordnungen",
+          "lemma": "Einordnung",
+          "zh": "分析定位；解释",
+          "note": "这里指帮助理解背景。"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Der Austausch blieb zudem nicht auf das offizielle Programm beschränkt, denn auch außerhalb der Besuche gab es Raum, Eindrücke miteinander zu besprechen.",
+      "zh": "交流也并不限于正式行程，因为参访之外也有机会彼此讨论见闻。",
+      "glosses": [
+        {
+          "surface": "beschränkt",
+          "lemma": "beschränken",
+          "zh": "受限的",
+          "note": "auf etwas beschränkt bleiben：仍限于某范围。"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Ein weiteres Ziel bestand darin, die neu gewonnenen Kenntnisse über die Reisegruppe hinaus in andere gesellschaftliche Zusammenhänge weiterzutragen.",
+      "zh": "另一项目标是将新获得的知识传播到旅行团队之外的其他社会环境中。",
+      "glosses": [
+        {
+          "surface": "weiterzutragen",
+          "lemma": "weitertragen",
+          "zh": "继续传播",
+          "note": "zu不定式插在可分前缀之后。"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Die Teilnehmenden wurden angeregt, ihr Wissen in Vereinen, Gemeinden oder im privaten Umfeld einzubringen und sich dort fundierter an europapolitischen Diskussionen zu beteiligen.",
+      "zh": "参与者受到鼓励，在社团、社区或私人交往中运用所学，并以更扎实的知识参与欧洲政治的讨论。",
+      "glosses": [
+        {
+          "surface": "fundierter",
+          "lemma": "fundiert",
+          "zh": "依据更充分地",
+          "note": "比较级，修饰参与讨论的方式。"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Damit war das Konzept nicht allein auf individuelle Erfahrungen ausgerichtet, sondern auch auf Menschen, die später durch Gespräche mit den Reisenden erreicht werden könnten.",
+      "zh": "因此，该理念不仅着眼于个人经历，还着眼于日后可能通过与旅行参与者交谈而接触到这些内容的人。",
+      "glosses": [
+        {
+          "surface": "ausgerichtet",
+          "lemma": "ausrichten",
+          "zh": "面向的；以……为目标的",
+          "note": "auf etwas ausgerichtet sein。"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Als redaktionelle Einordnung bleibt wichtig: Der Artikel berichtet über Ziele und Erfahrungen eines Bildungsangebots, nicht über einen unabhängigen Vergleich mit anderen Lernformen.",
+      "zh": "作为编辑补充，需要注意：原报道介绍的是一项教育活动的目标和经验，而不是它与其他学习方式的独立比较。",
+      "glosses": [
+        {
+          "surface": "Einordnung",
+          "lemma": "Einordnung",
+          "zh": "分析定位；解读",
+          "note": "此处明确标记编辑对证据范围的说明。"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Aus der anschaulichen Beschreibung lässt sich daher nicht ableiten, dass eine solche Reise bei allen Teilnehmenden dieselben langfristigen Veränderungen bewirkt.",
+      "zh": "因此，不能从生动的描述推断，这样一趟旅程会对所有参与者产生相同的长期改变。",
+      "glosses": [
+        {
+          "surface": "ableiten",
+          "lemma": "ableiten",
+          "zh": "推导出",
+          "note": "etwas aus etwas ableiten。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Zusammensetzung",
+        "zh": "构成",
+        "sentenceId": "s6",
+        "lemma": "Zusammensetzung",
+        "note": "die Zusammensetzung，指团队中人员的组成。"
+      },
+      {
+        "text": "Annahme",
+        "zh": "假设",
+        "sentenceId": "s11",
+        "lemma": "Annahme",
+        "note": "die Annahme，教学设计背后的判断，不是对照实验结论。"
+      },
+      {
+        "text": "Vorwissen",
+        "zh": "已有知识",
+        "sentenceId": "s14",
+        "lemma": "Vorwissen",
+        "note": "das Vorwissen，von后为第三格，与政治知识背景对应。"
+      },
+      {
+        "text": "Vertiefung",
+        "zh": "深化",
+        "sentenceId": "s16",
+        "lemma": "Vertiefung",
+        "note": "die Vertiefung，与Wiederholung并列，指加深理解。"
+      },
+      {
+        "text": "beschränkt",
+        "zh": "受限",
+        "sentenceId": "s19",
+        "lemma": "beschränken",
+        "note": "auf etwas beschränkt bleiben表达范围限制。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "nicht als bloße Schwierigkeit",
+        "zh": "并不只视为困难",
+        "sentenceId": "s15",
+        "note": "etwas als etwas beschreiben表示把某事描述为……；后接sondern形成对比。"
+      },
+      {
+        "text": "über die Reisegruppe hinaus",
+        "zh": "超出旅行团队的范围",
+        "sentenceId": "s20",
+        "note": "über … hinaus表示超出某范围，可用于知识传播。"
+      },
+      {
+        "text": "lässt sich daher nicht ableiten",
+        "zh": "因此不能由此推断",
+        "sentenceId": "s24",
+        "note": "sich lassen+不定式表达可否推导，限定证据支持范围。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s15",
+        "note": "etwas als etwas beschreiben表示把某事描述为……；后接sondern形成对比。"
+      },
+      {
+        "sentenceId": "s24",
+        "note": "sich lassen+不定式表达可否推导，限定证据支持范围。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Wann hilft dir ein Besuch vor Ort mehr als ein Vortrag?",
+        "zh": "何时实地参访对你比讲座更有帮助？"
+      },
+      {
+        "text": "Wie können Menschen mit unterschiedlichem Vorwissen voneinander lernen?",
+        "zh": "已有知识不同的人如何相互学习？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Die unterschiedlichen Perspektiven können eine Stärke sein.",
+        "zh": "不同视角可以成为一种优势。",
+        "note": "原创口语补充，不是原报道引语。"
+      },
+      {
+        "text": "Aus diesem Bericht lässt sich noch nicht ableiten, dass …",
+        "zh": "还不能从这篇报道推断……",
+        "note": "原创口语补充，不是原报道引语。"
+      }
+    ]
+  }
+}

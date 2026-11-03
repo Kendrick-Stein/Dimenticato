@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-03",
+  "baseCommit": "94e47c412bd1f57ce797c367641805d614516c8b",
+  "stage": "validated-awaiting-normal-publication",
+  "articles": [
+    "2026-11-03-fr-une-statuette-rejoint-les-musees",
+    "2026-11-03-en-childcare-that-fits-family-life",
+    "2026-11-03-en-different-ways-to-ease-everyday-costs",
+    "2026-11-03-it-salari-e-attese-diverse",
+    "2026-11-03-de-politik-durch-begegnung-verstehen",
+    "2026-11-03-de-nachrichten-zum-weiterlernen",
+    "2026-11-03-en-libraries-and-your-views",
+    "2026-11-03-fr-compter-plus-que-le-carbone",
+    "2026-11-03-de-hilfe-gemeinsam-organisieren",
+    "2026-11-03-it-taranto-sport-disegnato",
+    "2026-11-03-fr-voir-des-films-et-en-parler"
+  ],
+  "heldDraft": "2026-11-03-it-agrigento-scuola-e-teatro",
+  "heldReason": "Original page HTTP503/browsertimeout prevents article-specific rights exception check; not approved for publication",
+  "priorPending": "Oct31 and Nov1 batches remain separately pending and are not included",
+  "testSummary": "45 harnesses,486447 passed,0 failed",
+  "publicationRule": "Refresh remote; nonforce compare-and-swap; verify exact commit deployment and production data/UI before announcing published"
+}

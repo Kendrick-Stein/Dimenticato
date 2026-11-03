@@ -1,0 +1,282 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-de-nachrichten-zum-weiterlernen",
+  "storyId": "erwachsenenbildung-20861-2026-09-21",
+  "lang": "de",
+  "date": "2026-11-03",
+  "category": "education",
+  "topics": [
+    "成人教育",
+    "社会参与"
+  ],
+  "title": "Ein Newsletter zum Weiterlernen",
+  "titleZh": "继续学习的信息邮件",
+  "summaryZh": "奥地利成人教育研究机构宣布推出一年两次的信息邮件；学习如何理解活动信息、日期和报名入口。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：日期、频率和活动信息为具体任务；短主句为主，保留wer引导的常用关系结构，成人教育等机构词配中文释义。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "erwachsenenbildung.at",
+    "title": "Neu ab Oktober 2026: Newsletter des oieb",
+    "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20861-neu-ab-oktober-2026-newsletter-des-oieb.php",
+    "publishedAt": "2026-09-21",
+    "lang": "de",
+    "author": "Karin Schräfl, Österreichisches Institut für Erwachsenenbildung"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Karin Schräfl, Österreichisches Institut für Erwachsenenbildung，erwachsenenbildung.at，2026-09-21，Neu ab Oktober 2026: Newsletter des oieb（https://erwachsenenbildung.at/aktuell/nachrichten/20861-neu-ab-oktober-2026-newsletter-des-oieb.php）。正文按 CC BY 4.0 使用；Dimenticato 同语言改写、中文翻译及教学补充，整理于2026-11-03，不代表原作者认可。",
+  "adaptation": "根据已署名德语机构原文简化、重组和转述；保留原报道日期及报道时点，不作为当天新闻或后续结果。未使用图片、附属材料或第三方引语。词义、问题和口语表达是教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Das Österreichische Institut für Erwachsenenbildung kündigte am 21. September 2026 einen neuen Newsletter an.",
+      "zh": "奥地利成人教育研究所于2026年9月21日宣布推出一份新的信息邮件。",
+      "glosses": [
+        {
+          "surface": "kündigte",
+          "lemma": "ankündigen",
+          "zh": "宣布",
+          "note": "可分动词的过去时：kündigte … an。"
+        },
+        {
+          "surface": "Erwachsenenbildung",
+          "lemma": "Erwachsenenbildung",
+          "zh": "成人教育",
+          "note": "die Erwachsenenbildung。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Die erste Ausgabe war für Oktober geplant; danach soll der Newsletter zweimal im Jahr erscheinen.",
+      "zh": "第一期计划在10月发布；此后信息邮件应每年发布两次。",
+      "glosses": [
+        {
+          "surface": "Ausgabe",
+          "lemma": "Ausgabe",
+          "zh": "一期；期刊的一期",
+          "note": "die Ausgabe。"
+        },
+        {
+          "surface": "zweimal",
+          "lemma": "zweimal",
+          "zh": "两次",
+          "note": "zweimal im Jahr：一年两次。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Er bringt kurze Informationen über neue Studien, Projekte und Veranstaltungen aus der Erwachsenenbildung.",
+      "zh": "它提供成人教育领域新研究、项目和活动的简短信息。",
+      "glosses": [
+        {
+          "surface": "Veranstaltungen",
+          "lemma": "Veranstaltung",
+          "zh": "活动",
+          "note": "复数；单数die Veranstaltung。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Auch Ergebnisse von abgeschlossenen Projekten und Termine für die nächste Zeit gehören dazu.",
+      "zh": "已完成项目的成果和接下来一段时间的活动日期也包括在内。",
+      "glosses": [
+        {
+          "surface": "Ergebnisse",
+          "lemma": "Ergebnis",
+          "zh": "成果；结果",
+          "note": "复数，单数das Ergebnis。"
+        },
+        {
+          "surface": "abgeschlossenen",
+          "lemma": "abschließen",
+          "zh": "已完成的",
+          "note": "过去分词作形容词。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Das Institut arbeitet in ganz Österreich, aber es gehört nicht zu einer Universität.",
+      "zh": "该研究所的工作范围覆盖整个奥地利，但不隶属于大学。",
+      "glosses": [
+        {
+          "surface": "gehört",
+          "lemma": "gehören",
+          "zh": "属于",
+          "note": "gehören zu接第三格。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Es forscht, entwickelt Angebote und berät zu Erwachsenenbildung und lebenslangem Lernen.",
+      "zh": "它围绕成人教育和终身学习开展研究、开发相关服务并提供咨询。",
+      "glosses": [
+        {
+          "surface": "berät",
+          "lemma": "beraten",
+          "zh": "提供咨询",
+          "note": "第三人称单数现在时。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "In der Ankündigung stehen außerdem zwei Termine für November mit unterschiedlichen Themen.",
+      "zh": "公告中还列出了11月的两个活动日期，主题各不相同。",
+      "glosses": [
+        {
+          "surface": "unterschiedlichen",
+          "lemma": "unterschiedlich",
+          "zh": "不同的",
+          "note": "修饰复数Themen。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Am Mittwoch, dem 4. November, ist ein Beitrag von Linda Kreuzer mit dem Titel „Kaum zu glauben“ vorgesehen.",
+      "zh": "11月4日星期三，计划安排Linda Kreuzer的活动，题目为“难以置信”。",
+      "glosses": [
+        {
+          "surface": "vorgesehen",
+          "lemma": "vorsehen",
+          "zh": "计划安排的",
+          "note": "ist vorgesehen：已作出计划，并非已举行。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Am Montag, dem 23. November, ist ein Workshop in St. Pölten geplant.",
+      "zh": "11月23日星期一，计划在圣珀尔滕举行一场工作坊。",
+      "glosses": [
+        {
+          "surface": "Workshop",
+          "lemma": "Workshop",
+          "zh": "工作坊",
+          "note": "der Workshop：有互动参与的学习活动。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Er dauert laut Ankündigung von neun bis siebzehn Uhr und fragt, wie Menschen bei unterschiedlichen Meinungen im Gespräch bleiben können.",
+      "zh": "根据公告，该活动从9点到17点，讨论人们在意见不同时如何保持对话。",
+      "glosses": [
+        {
+          "surface": "im Gespräch bleiben",
+          "lemma": "im Gespräch bleiben",
+          "zh": "保持对话",
+          "note": "bleiben表示持续处于某种状态。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Wer den Newsletter bekommen möchte, findet in der Mitteilung einen Link zur Anmeldung.",
+      "zh": "想收到这份信息邮件的人，可以在公告中找到报名链接。",
+      "glosses": [
+        {
+          "surface": "Anmeldung",
+          "lemma": "Anmeldung",
+          "zh": "报名；订阅登记",
+          "note": "die Anmeldung，此处为登记订阅邮件。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Ausgabe",
+        "zh": "一期",
+        "sentenceId": "s2",
+        "lemma": "Ausgabe",
+        "note": "单数die Ausgabe，此处指第一期信息邮件。"
+      },
+      {
+        "text": "Veranstaltungen",
+        "zh": "活动",
+        "sentenceId": "s3",
+        "lemma": "Veranstaltung",
+        "note": "über后的复数名词，与Studien和Projekte并列。"
+      },
+      {
+        "text": "Ergebnisse",
+        "zh": "成果",
+        "sentenceId": "s4",
+        "lemma": "Ergebnis",
+        "note": "复数die Ergebnisse，指已完成项目产生的结果。"
+      },
+      {
+        "text": "Universität",
+        "zh": "大学",
+        "sentenceId": "s5",
+        "lemma": "Universität",
+        "note": "zu einer后用阴性单数第三格。"
+      },
+      {
+        "text": "Anmeldung",
+        "zh": "报名",
+        "sentenceId": "s11",
+        "lemma": "Anmeldung",
+        "note": "zur是zu der，后接阴性名词Anmeldung，指订阅登记。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "zweimal im Jahr",
+        "zh": "每年两次",
+        "sentenceId": "s2",
+        "note": "频率表达：数词+mal，im Jahr说明时间范围。"
+      },
+      {
+        "text": "im Gespräch bleiben",
+        "zh": "保持对话",
+        "sentenceId": "s10",
+        "note": "bleiben+介词短语，可用于意见不同时继续沟通。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s2",
+        "note": "频率表达：数词+mal，im Jahr说明时间范围。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "bleiben+介词短语，可用于意见不同时继续沟通。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Informationen liest du gern in einem Newsletter?",
+        "zh": "你喜欢在信息邮件中读到哪些内容？"
+      },
+      {
+        "text": "Wie oft möchtest du Nachrichten von einem Institut bekommen?",
+        "zh": "你希望多久收到一次机构的信息？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich interessiere mich für Veranstaltungen zu …",
+        "zh": "我对……主题的活动感兴趣。",
+        "note": "原创口语补充，不是原报道引语。"
+      },
+      {
+        "text": "Wo kann ich mich anmelden?",
+        "zh": "我可以在哪里报名？",
+        "note": "原创口语补充，不是原报道引语。"
+      }
+    ]
+  }
+}

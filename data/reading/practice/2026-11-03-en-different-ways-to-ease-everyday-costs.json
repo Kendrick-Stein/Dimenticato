@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-en-different-ways-to-ease-everyday-costs",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 133,
+      "answer": "permanent",
+      "options": [
+        "permanent",
+        "optional",
+        "seasonal",
+        "regional"
+      ],
+      "explanation": "permanent是make的宾语补足语，指将该标准固定下来。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 19,
+      "answer": "extends",
+      "options": [
+        "extends",
+        "withdraws",
+        "delays",
+        "replaces"
+      ],
+      "explanation": "extends parental pay to指把育儿补助扩大到更多人，主语measure为单数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 53,
+      "answer": "abrupt",
+      "options": [
+        "abrupt",
+        "partial",
+        "voluntary",
+        "temporary"
+      ],
+      "explanation": "abrupt修饰loss，强调越线就全额失去的突然性。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 169,
+      "answer": "gradual",
+      "options": [
+        "gradual",
+        "immediate",
+        "complete",
+        "random"
+      ],
+      "explanation": "gradual withdrawal对应每多赚1镑减少1镑的逐步撤回机制。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s13",
+      "start": 140,
+      "answer": "counter",
+      "options": [
+        "counter",
+        "warehouse",
+        "border",
+        "platform"
+      ],
+      "explanation": "Post Office counter指邮局柜台，和自助投递箱形成对比。"
+    }
+  ]
+}

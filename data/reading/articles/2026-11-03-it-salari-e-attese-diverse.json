@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-it-salari-e-attese-diverse",
+  "storyId": "istat-retribuzioni-contrattuali-luglio-settembre-2026",
+  "lang": "it",
+  "date": "2026-11-03",
+  "contentType": "native-adaptation",
+  "title": "Salari contrattuali e tempi di attesa",
+  "titleZh": "合同工资与等待续约的时间",
+  "summaryZh": "阅读第三季度工资统计，区分合同工资与实发工资、不同群体及不同等待指标。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：含统计口径、群体差异、让步和条件表达；须综合指标定义与多组数字进行推断，而非只识别百分比。",
+  "category": "work-economy",
+  "topics": [
+    "工作",
+    "工资统计"
+  ],
+  "source": {
+    "name": "Istat",
+    "title": "Retribuzioni contrattuali – Luglio-settembre 2026",
+    "url": "https://www.istat.it/comunicato-stampa/retribuzioni-contrattuali-luglio-settembre-2026/",
+    "publishedAt": "2026-10-30",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Istat，机构署名（未列个人作者）。原始发布日期：2026-10-30。编辑、意大利语分级改写、中文翻译与教学补充：Dimenticato；原链接与许可见本页。",
+  "adaptation": "依据意大利语机构原稿删节并同语言分级改写，非原文逐字转载；中文翻译、词汇释义、练习与口语提示为教学补充，不表示来源机构认可。不使用图片、海报、书籍内文、第三方引语。同次发布PDF的术语及方法说明用于解释统计口径，不将总体指标等同个人实际工资，也不构成财务建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il comunicato Istat pubblicato il 30 ottobre 2026 descrive l’andamento delle retribuzioni contrattuali nel terzo trimestre e la situazione dei rinnovi alla fine di settembre.",
+      "zh": "Istat于2026年10月30日发布的公报描述了第三季度合同工资的走势，以及九月底的合同续约情况。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Prima di interpretarne i risultati, occorre precisare che l’indagine segue gli importi stabiliti dai contratti collettivi nazionali, non ogni somma effettivamente ricevuta dai singoli lavoratori.",
+      "zh": "解读结果之前，需要明确：调查跟踪的是全国集体合同规定的金额，而不是每位劳动者实际收到的全部款项。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "La nota metodologica spiega che l’indice considera una popolazione di lavoratori con composizione fissa per qualifica, livello e anzianità media, così da osservare le variazioni delle condizioni contrattuali.",
+      "zh": "方法说明解释，指数采用在职类、职级与平均工龄构成上保持固定的劳动者群体，从而观察合同条件的变化。",
+      "glosses": [
+        {
+          "surface": "anzianità",
+          "lemma": "anzianità",
+          "zh": "工龄",
+          "note": "阴性单数，在这里指工作年限"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Restano esclusi dagli indicatori mensili gli straordinari, gli importi stabiliti dalla contrattazione aziendale e le somme versate come arretrati o pagamenti una tantum.",
+      "zh": "月度指标不包括加班费、企业层面协商确定的金额，以及以补发款或一次性款项形式支付的金额。",
+      "glosses": [
+        {
+          "surface": "straordinari",
+          "lemma": "straordinario",
+          "zh": "加班费",
+          "note": "阳性复数，这里以工作类别代指对应报酬"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "La retribuzione contrattuale oraria mette inoltre in rapporto la retribuzione per dipendente con le ore previste dal contratto: può quindi cambiare anche se viene modificato l’orario contrattuale.",
+      "zh": "每小时合同工资还把每位雇员的合同工资与合同规定的工时相联系，因此合同工时改变也可能使其变化。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "A settembre l’indice delle retribuzioni orarie è rimasto sul livello di agosto, mentre rispetto allo stesso mese del 2025 è aumentato del 2,5%.",
+      "zh": "九月的每小时工资指数保持在八月的水平，但与2025年同月相比增长了2.5%。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Anche confrontando i primi nove mesi del 2026 con il corrispondente periodo dell’anno precedente si osserva una crescita del 2,5%, sebbene il confronto riguardi un intervallo diverso.",
+      "zh": "把2026年前九个月与前一年同期相比，也可以看到2.5%的增长，尽管这一比较涉及的是不同时间区间。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Il dato complessivo non descrive però un’evoluzione identica per ciascun settore: a settembre l’aumento annuo è del 2,3% nel privato e del 3,2% nella pubblica amministrazione.",
+      "zh": "不过总体数据不意味着每个行业都经历同样的变化：九月私人部门的同比增幅为2.3%，公共行政部门为3.2%。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Tra gli incrementi più elevati figurano quelli della scuola, pari al 5,5%, delle telecomunicazioni, al 5,1%, e dell’igiene ambientale, al 5,0%.",
+      "zh": "涨幅较高的行业包括学校，为5.5%；电信，为5.1%；环境卫生，为5.0%。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "In altri comparti, come le farmacie private, l’incremento annuo è invece nullo, una differenza che invita a non trasferire automaticamente la media generale a una singola professione.",
+      "zh": "而在私人药房等其他领域，同比增幅为零；这种差异提醒人们，不应自动将总体平均数套用于某一种职业。",
+      "glosses": [
+        {
+          "surface": "nullo",
+          "lemma": "nullo",
+          "zh": "为零的",
+          "note": "阳性单数，与incremento一致"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "L’Istat segnala inoltre che, per il secondo trimestre consecutivo, la crescita annua delle retribuzioni contrattuali è stata inferiore a quella dell’inflazione.",
+      "zh": "Istat还指出，合同工资的同比增幅已经连续第二个季度低于通胀幅度。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Nel settore privato, a settembre la distanza rispetto alla crescita dell’indice armonizzato dei prezzi al consumo è stata di circa due punti percentuali.",
+      "zh": "在私人部门，九月工资增长与协调消费价格指数涨幅之间的差距约为两个百分点。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Sul versante dei rinnovi, alla fine del mese risultavano in vigore, per la parte economica, 56 contratti nazionali, riguardanti circa 10,6 milioni di dipendenti, cioè l’80,8% del totale considerato.",
+      "zh": "在续约方面，月底有56份全国合同的经济条款处于有效期内，涉及约1060万名雇员，即所考察总人数的80.8%。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "La quota dei dipendenti coperti da contratti in vigore raggiungeva l’89,1% nel settore privato, mentre nella pubblica amministrazione si fermava al 50,7%.",
+      "zh": "有效合同覆盖的雇员比例在私人部门达到89.1%，而公共行政部门为50.7%。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Erano invece 19 i contratti in attesa di rinnovo, per circa 2,5 milioni di dipendenti: 1,1 milioni nel privato e 1,4 milioni nel pubblico.",
+      "zh": "另有19份合同等待续约，涉及约250万名雇员，其中私人部门110万，公共部门140万。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Per chi aveva un contratto scaduto, l’attesa media era scesa a 20,8 mesi, contro i 27,9 mesi registrati a settembre 2025.",
+      "zh": "对合同已到期的人而言，平均等待时间降至20.8个月，而2025年九月为27.9个月。",
+      "glosses": [
+        {
+          "surface": "scaduto",
+          "lemma": "scadere",
+          "zh": "到期的",
+          "note": "过去分词阳性单数，修饰contratto"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "La diminuzione complessiva nascondeva tuttavia direzioni diverse: nel privato l’attesa saliva da 18,6 a 20,4 mesi, mentre nel pubblico scendeva da 36,9 a 21 mesi.",
+      "zh": "不过总体下降掩盖了不同方向：私人部门等待时间由18.6个月增至20.4个月，而公共部门由36.9个月降至21个月。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Il comunicato collega la riduzione nel pubblico ai rinnovi relativi al triennio 2025-2027; durante il terzo trimestre sono stati recepiti sette contratti, tutti della pubblica amministrazione.",
+      "zh": "公报把公共部门等待时间的下降与2025—2027三年期合同的续约联系起来；第三季度纳入了七份合同，全部属于公共行政部门。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Se l’attesa viene calcolata sull’insieme dei dipendenti, compresi quelli che non aspettano un rinnovo, la media scende invece a quattro mesi.",
+      "zh": "如果以全体雇员为基数计算等待时间，包括那些没有等待续约的人，平均数则降为四个月。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "Non si tratta di due misure in contrasto: la prima descrive la durata dell’attesa per chi la vive, la seconda la distribuisce sull’intera popolazione considerata.",
+      "zh": "这并不是两个相互矛盾的指标：第一个描述正在等待者的等待长度，第二个把等待时间分摊到整个考察群体。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Tenere distinti questi denominatori permette di leggere insieme la diffusione dei contratti scaduti e l’intensità dell’attesa, senza confondere il miglioramento medio con un miglioramento uniforme.",
+      "zh": "区分这些分母，可以同时理解合同到期状况的普遍程度与等待长度，而不会将平均改善混同于所有群体一致改善。",
+      "glosses": [
+        {
+          "surface": "denominatori",
+          "lemma": "denominatore",
+          "zh": "分母",
+          "note": "阳性复数，在此指两种平均值的计算人数基数"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "anzianità",
+        "lemma": "anzianità",
+        "zh": "工龄",
+        "sentenceId": "s3",
+        "note": "阴性单数，在这里指工作年限"
+      },
+      {
+        "text": "straordinari",
+        "lemma": "straordinario",
+        "zh": "加班费",
+        "sentenceId": "s4",
+        "note": "阳性复数，这里以工作类别代指对应报酬"
+      },
+      {
+        "text": "nullo",
+        "lemma": "nullo",
+        "zh": "为零的",
+        "sentenceId": "s10",
+        "note": "阳性单数，与incremento一致"
+      },
+      {
+        "text": "scaduto",
+        "lemma": "scadere",
+        "zh": "到期的",
+        "sentenceId": "s16",
+        "note": "过去分词阳性单数，修饰contratto"
+      },
+      {
+        "text": "denominatori",
+        "lemma": "denominatore",
+        "zh": "分母",
+        "sentenceId": "s21",
+        "note": "阳性复数，在此指两种平均值的计算人数基数"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "mentre rispetto",
+        "zh": "而与……相比",
+        "sentenceId": "s6",
+        "note": "mentre引出与前一个时间基准的对照。"
+      },
+      {
+        "text": "nascondeva tuttavia",
+        "zh": "不过掩盖了",
+        "sentenceId": "s17",
+        "note": "tuttavia表示转折，提醒注意总体背后的差异。"
+      },
+      {
+        "text": "Non si tratta di",
+        "zh": "这并不是",
+        "sentenceId": "s20",
+        "note": "trattarsi di用于界定或澄清事物性质。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s7",
+        "note": "sebbene＋虚拟式riguardi表达让步，说明相同百分比可能来自不同时间区间。"
+      },
+      {
+        "sentenceId": "s19",
+        "note": "Se＋直陈式引出计算口径的改变，不是对实际个人等待期作预测。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quando leggi una notizia sugli stipendi, quali informazioni ti servono oltre alla media?",
+        "zh": "读到工资新闻时，除了平均数，你还需要哪些信息？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "La media è utile, ma vorrei conoscere le differenze tra i gruppi.",
+        "zh": "平均数有用，但我想了解不同群体之间的差别。",
+        "note": "教学补充，可按个人情况改写，不代表原文作者观点。"
+      }
+    ]
+  }
+}

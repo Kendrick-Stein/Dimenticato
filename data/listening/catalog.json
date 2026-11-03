@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-02",
+  "verifiedAt": "2026-11-03",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -2366,6 +2366,181 @@
         }
       ],
       "questions": []
+    },
+    {
+      "id": "en-bc-chatting-about-series-b1",
+      "lang": "en",
+      "title": "Chatting about a series",
+      "titleZh": "聊电视剧：赞同与不同看法",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/listening/b1/chatting-about-series",
+      "level": "B1",
+      "levelBasis": "provider",
+      "levelLabel": "B1 · 官方分级",
+      "kind": "lesson",
+      "evidenceStatus": "official_transcript",
+      "addedAt": "2026-11-03",
+      "summaryZh": "听两位朋友评价一季电视剧，区分特效、剧情和角色方面的看法。",
+      "guideZh": "先听他们在哪一点赞同，再找出不同意见。常青官方B1课程，原始发布日期未标明；涉及剧情讨论，本站不复制完整对话或原站练习。",
+      "verificationZh": "依据官方逐字稿核对本站原创题；未复制原站练习，未实测媒体播放或音质。",
+      "vocabulary": [
+        {
+          "text": "predictable",
+          "zh": "可预测的"
+        },
+        {
+          "text": "special effects",
+          "zh": "特效"
+        },
+        {
+          "text": "revenge",
+          "zh": "复仇"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en-series-1",
+          "prompt": "How do the two speakers react to the final scene?",
+          "options": [
+            "Both are impressed by its special effects.",
+            "Both wish it had used fewer visual effects.",
+            "The man likes it but the woman finds it dull.",
+            "The woman likes it but the man missed it."
+          ],
+          "answerIndex": 0,
+          "explanationZh": "男方称赞结尾的龙与特效，女方紧接着赞同喜欢该部分；之后对整季的分歧不改变这一共同看法。",
+          "evidenceRef": "official-transcript-opening-exchange"
+        },
+        {
+          "id": "en-series-2",
+          "prompt": "What complaint do they share about this season?",
+          "options": [
+            "The episodes are longer than before.",
+            "There are fewer episodes than before.",
+            "The books include fewer characters than before.",
+            "The final scene is shorter than before."
+          ],
+          "answerIndex": 1,
+          "explanationZh": "男方指出本季由十集变成七集，女方赞同并认为粉丝愿意看十集。",
+          "evidenceRef": "official-transcript-seven-versus-ten-exchange"
+        },
+        {
+          "id": "en-series-3",
+          "prompt": "Why does the woman find Cersei interesting?",
+          "options": [
+            "She regrets her actions and becomes kinder.",
+            "She avoids taking revenge when it is costly.",
+            "She keeps defying the happy ending viewers expect.",
+            "She makes the other characters easier to predict."
+          ],
+          "answerIndex": 2,
+          "explanationZh": "女方说观众期待她认识错误并变好，但她没有如此，即使付出代价也继续复仇；这种反差让她有趣。",
+          "evidenceRef": "official-transcript-final-character-exchange"
+        }
+      ]
+    },
+    {
+      "id": "de-logo-2026-11-02",
+      "lang": "de",
+      "title": "logo! vom Montag, 2. November 2026",
+      "titleZh": "11月2日新闻：SOS信号与日常安全",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-montag-2-november-2026-100.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "evidenceStatus": "metadata_only",
+      "sourcePublishedAt": "2026-11-02",
+      "addedAt": "2026-11-03",
+      "summaryZh": "从官方原站收看11月2日的儿童新闻节目。",
+      "guideZh": "先辨认各段主题，再尝试用一句德语概括你实际听懂的内容。母语儿童节目不等于A2课程；可结合原站重播分段收听。",
+      "verificationZh": "只核实官方日期、主题列表与首页时长10:32；未取得完整节目文字依据、未验音质，因此不设理解题。",
+      "vocabulary": [
+        {
+          "text": "das Signal",
+          "zh": "信号"
+        },
+        {
+          "text": "die Nachricht",
+          "zh": "消息；新闻"
+        }
+      ],
+      "questions": [],
+      "duration": "10:32",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）"
+    },
+    {
+      "id": "it-rai-vicina-premurosa-b2",
+      "lang": "it",
+      "title": "Benvenuti in casa Ba — Percorsi d’istruzione",
+      "titleZh": "巴家故事：邻居的关心",
+      "provider": "Rai Scuola",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri/articoli/2021/06/Benvenuti-in-casa-Ba---Percorsi-distruzione-94572b4f-9fc8-4135-bc12-77208da9dbe8.html",
+      "level": "B2",
+      "levelBasis": "provider",
+      "levelLabel": "B2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-11-03",
+      "evidenceStatus": "official_transcript",
+      "summaryZh": "从邻里交谈中听懂安慰、心意与个人兴趣。",
+      "guideZh": "常青课程，原始发布日期未明确标出。重点听第6、7场：留意饼干代表的心意、邻居带来的东西，以及Olga怎样整理历史兴趣。旧课中的居留与教育制度内容不作为现行办事指南。",
+      "verificationZh": "依据官方对应文字稿核对原创题；未实测播放或音质。不转载字幕、音视频或原站练习。",
+      "vocabulary": [
+        {
+          "text": "fare merenda",
+          "zh": "吃点心；吃加餐"
+        },
+        {
+          "text": "invadente",
+          "zh": "打扰别人的；冒失的"
+        },
+        {
+          "text": "una cartina",
+          "zh": "一张小地图"
+        }
+      ],
+      "questions": [
+        {
+          "id": "it-vicina-1",
+          "prompt": "Come risponde Salif alla scelta dei biscotti per Mansour?",
+          "options": [
+            "Dice che serviranno come regalo ai parenti.",
+            "Riconosce il valore del pensiero della madre.",
+            "Teme che occupino troppo posto in valigia.",
+            "Preferisce lasciarli a casa per il ritorno."
+          ],
+          "answerIndex": 1,
+          "evidenceRef": "official-transcript-scena6-lines507-510",
+          "explanationZh": "Salif虽提到机上会供餐，仍认可妈妈买的饼干具有特别的意义。"
+        },
+        {
+          "id": "it-vicina-2",
+          "prompt": "Per quale motivo Teresa porta dei CD a Olga?",
+          "options": [
+            "Vuole scegliere con lei la musica per una festa.",
+            "Vuole affidarle il materiale per la lezione.",
+            "Vuole darle qualcosa da ascoltare durante il volo.",
+            "Vuole farle compagnia perché la immagina triste."
+          ],
+          "answerIndex": 3,
+          "evidenceRef": "official-transcript-scena7-lines520-526",
+          "explanationZh": "Teresa担心家人出发后的Olga难过，因此带来喜爱的CD；并非供Olga乘机使用。"
+        },
+        {
+          "id": "it-vicina-3",
+          "prompt": "Come organizza Olga la sua ricerca sull’Italia unita?",
+          "options": [
+            "Aggiunge ricordi e immagini a una carta geografica.",
+            "Raccoglie i testi delle canzoni italiane in un quaderno.",
+            "Prepara una raccolta di poesie per la tesi di Fela.",
+            "Ordina i documenti degli studenti in un archivio."
+          ],
+          "answerIndex": 0,
+          "evidenceRef": "official-transcript-scena7-lines533-536",
+          "explanationZh": "Olga将回忆材料和图片贴在意大利地图上，以自己的方式认识统一时期的历史。"
+        }
+      ]
     }
   ],
   "schema": 1

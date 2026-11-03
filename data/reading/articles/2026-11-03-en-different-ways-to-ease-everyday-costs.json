@@ -1,0 +1,237 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-en-different-ways-to-ease-everyday-costs",
+  "storyId": "hmt-everyday-fixes-2026-10-26",
+  "lang": "en",
+  "date": "2026-11-03",
+  "category": "work-economy",
+  "topics": [
+    "缓解日常开销的不同办法"
+  ],
+  "title": "Different ways to ease everyday costs",
+  "titleZh": "缓解日常开销的不同办法",
+  "summaryZh": "英国财政部公布一组家庭支出措施：通勤以外的公务用车、育儿支持、照护者津贴、进口成本与包裹服务。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：比较税费、津贴递减与公共服务等不同机制，包含限定、对比、条件和长名词短语；数字配中文解释，非官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "HM Treasury / GOV.UK",
+    "title": "Everyday fixes to make life easier for millions of Britons",
+    "url": "https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons",
+    "publishedAt": "2026-10-26",
+    "lang": "en",
+    "author": "HM Treasury; Andy Burnham MP; John Healey MP; Jonathan Reynolds MP; Pat McFadden MP"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. HM Treasury; Andy Burnham MP; John Healey MP; Jonathan Reynolds MP; Pat McFadden MP; 2026-10-26; https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons",
+  "adaptation": "2026-11-03整理：依据机构英文公告同语言分级改写；中文翻译、语境词义和练习由Dimenticato编辑添加，不是原文或官方课程。仅使用机构叙述，不复制直接引语、图片、标志、第三方材料。原报道日期单独保留，计划不写成已完成，不暗示原机构认可。 s2、s5、s11后半、s15–s16为明确区分机制与实际成效的编辑归纳，不是独立效果评估；不提供个人税务或福利建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 26 October 2026, HM Treasury announced a package of measures intended to ease everyday costs for working people, families and unpaid carers, ahead of the Budget scheduled for that Wednesday.",
+      "zh": "2026年10月26日，英国财政部在定于当周星期三举行的预算公布之前，宣布一组旨在减轻劳动者、家庭和无偿照护者日常开销的措施。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Although presented together, the measures operate in different ways: some change tax-free allowances or benefit rules, while others aim to lower import costs or make an ordinary errand more convenient.",
+      "zh": "尽管一并公布，这些措施的运作方式不同：有些改变免税额度或福利规则，有些旨在降低进口成本，或让一项日常事务更方便。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "For people using their own vehicle for work, the government said it would make the higher tax-free mileage rate of 55 pence per mile permanent for the first 10,000 business miles each year.",
+      "zh": "对于使用私人车辆开展工作的人，政府表示将把每年前10000英里公务里程每英里55便士的较高免税里程补贴标准永久化。",
+      "glosses": [
+        {
+          "surface": "permanent",
+          "lemma": "permanent",
+          "zh": "永久的"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Beyond that distance, the rate is to rise from 25 to 35 pence per mile; the release identifies nurses, care workers and self-employed builders among those the change is intended to support.",
+      "zh": "超过该里程之后，标准将从每英里25便士提高至35便士；新闻稿将护士、护理工作者和自雇建筑工人列为拟支持的人群。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "The distinction between a mileage allowance and a general payment matters: the announcement concerns business driving in a person’s own vehicle, rather than promising the same cash amount to every driver.",
+      "zh": "区分里程补贴和普遍发放的款项很重要：公告涉及使用本人车辆进行公务驾驶，而非承诺向每位驾驶者发放相同现金。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "A separate measure extends parental pay to more than 150,000 additional parents per year, including self-employed fathers and partners who had previously missed out on this support.",
+      "zh": "另一项措施将育儿补助扩大至每年额外超过150000名家长，包括此前未能获得这种支持的自雇父亲和伴侣。",
+      "glosses": [
+        {
+          "surface": "extends",
+          "lemma": "extend",
+          "zh": "扩大适用范围"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Eligible parents are to receive two weeks of support, currently worth up to £194 a week, allowing them to spend more time with their child.",
+      "zh": "符合条件的家长将获得两周支持，目前每周最高价值194英镑，让他们有更多时间陪伴孩子。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "For unpaid carers, the proposed change addresses the abrupt loss of Carer’s Allowance when earnings cross a weekly limit, a problem described in the release as a cliff edge.",
+      "zh": "对于无偿照护者，拟议改变针对的是收入越过每周上限时照护者津贴突然全部丧失的问题；新闻稿将其描述为断崖。",
+      "glosses": [
+        {
+          "surface": "abrupt",
+          "lemma": "abrupt",
+          "zh": "突然的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Instead of losing the entire allowance for earning just above that limit, a carer would lose £1 of support for each additional £1 earned, replacing a sudden loss with a gradual withdrawal.",
+      "zh": "照护者不再因收入刚好超过上限就丧失全部津贴，而是每多赚1英镑就减少1英镑支持，以逐步减少取代突然失去。",
+      "glosses": [
+        {
+          "surface": "gradual",
+          "lemma": "gradual",
+          "zh": "逐步的"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The package also removes import tariffs on more than 100 products, including some familiar food items, while covering fertilisers and kerosene heating oil as well.",
+      "zh": "这组措施还取消了100多种商品的进口关税，包括一些常见食品，也涵盖化肥和煤油取暖用油。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Together with earlier tariff suspensions, the government says this could save households up to £21 a year on food shopping; this is a stated potential saving, not a measured result for every household.",
+      "zh": "政府表示，加上此前暂停征收的关税，这可能使家庭每年食品采购节省最多21英镑；这是所述潜在节省额，而非对每个家庭测得的结果。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "The release places the food measures in a sequence of changes, noting an initial government package in June and a separate business-led package introduced in July after applications from companies.",
+      "zh": "新闻稿把食品措施放在一系列改变中介绍，提到政府6月的首轮措施，以及在企业申请之后于7月推出的另一组企业推动措施。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "A more practical change concerns self-service parcel drop boxes, which let people send and return packages without waiting at a Post Office counter.",
+      "zh": "一项更具体的改变涉及自助包裹投递箱，使人们不用在邮局柜台排队就能寄出和退回包裹。",
+      "glosses": [
+        {
+          "surface": "counter",
+          "lemma": "counter",
+          "zh": "柜台"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "The rollout was already under way when the release appeared, with 500 boxes expected by the end of 2026 and 1,000 by the end of the financial year, alongside upgrades to 600 branches.",
+      "zh": "新闻稿发布时铺设工作已在进行，预计2026年底前有500个投递箱，财政年度结束前达到1000个，同时升级600个网点。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Read together, the measures illustrate different kinds of support: changes to eligibility, changes to the way an allowance is withdrawn, and changes to the services people use.",
+      "zh": "综合阅读，这些措施展示了不同类型的支持：资格范围的改变、津贴减少方式的改变，以及人们所用服务的改变。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Their stated aims should therefore be distinguished from their eventual results, while the dates, eligibility conditions and separate numerical limits should not be treated as interchangeable.",
+      "zh": "因此，应区分其宣称目标与最终结果，同时不能把日期、资格条件和不同的数字上限混为一谈。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "The government estimated that around three million employees and self-employed people could benefit from the mileage changes, while the parcel measures were intended to reduce the inconvenience of sending and returning purchases during the period before Christmas as well as improving services more broadly.",
+      "zh": "政府估计，约300万名雇员和自雇者可能受益于里程标准改变，而包裹措施旨在减少圣诞节前寄送和退回所购物品的不便，同时更广泛地改善服务。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "permanent",
+        "zh": "永久的",
+        "lemma": "permanent",
+        "sentenceId": "s3",
+        "note": "permanent是make的宾语补足语，指将该标准固定下来。"
+      },
+      {
+        "text": "extends",
+        "zh": "扩大适用范围",
+        "lemma": "extend",
+        "sentenceId": "s6",
+        "note": "extends parental pay to指把育儿补助扩大到更多人，主语measure为单数。"
+      },
+      {
+        "text": "abrupt",
+        "zh": "突然的",
+        "lemma": "abrupt",
+        "sentenceId": "s8",
+        "note": "abrupt修饰loss，强调越线就全额失去的突然性。"
+      },
+      {
+        "text": "gradual",
+        "zh": "逐步的",
+        "lemma": "gradual",
+        "sentenceId": "s9",
+        "note": "gradual withdrawal对应每多赚1镑减少1镑的逐步撤回机制。"
+      },
+      {
+        "text": "counter",
+        "zh": "柜台",
+        "lemma": "counter",
+        "sentenceId": "s13",
+        "note": "Post Office counter指邮局柜台，和自助投递箱形成对比。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "missed out on",
+        "zh": "未能享有／错过",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "under way",
+        "zh": "正在进行",
+        "sentenceId": "s14"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s2",
+        "note": "some...while others...用于比较一组措施内部的不同作用机制。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which is more useful in daily life: a small saving or a service that saves time?",
+        "zh": "在日常生活中，小额省钱还是节约时间的服务更有用？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "The benefit depends on who can actually use the measure.",
+        "zh": "好处取决于谁能真正使用这项措施。",
+        "note": "原创口语练习表达，不是来源引语。"
+      }
+    ]
+  }
+}

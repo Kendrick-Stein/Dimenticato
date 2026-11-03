@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-en-childcare-that-fits-family-life",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 79,
+      "answer": "stages",
+      "options": [
+        "stages",
+        "queues",
+        "teams",
+        "buildings"
+      ],
+      "explanation": "in stages表示分阶段，stage用复数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 17,
+      "answer": "holiday",
+      "options": [
+        "holiday",
+        "medical",
+        "evening",
+        "weekend"
+      ],
+      "explanation": "holiday在此作定语，指学校假期的托育，与after-school并列。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 42,
+      "answer": "obstacles",
+      "options": [
+        "obstacles",
+        "invitations",
+        "achievements",
+        "rewards"
+      ],
+      "explanation": "obstacles是阻碍获得服务的因素，address obstacles意为处理障碍。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 65,
+      "answer": "gaps",
+      "options": [
+        "gaps",
+        "forms",
+        "bills",
+        "shelves"
+      ],
+      "explanation": "fills gaps指填补服务时段或资格等方面的空缺。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 91,
+      "answer": "emergencies",
+      "options": [
+        "emergencies",
+        "celebrations",
+        "appointments",
+        "deliveries"
+      ],
+      "explanation": "manage emergencies指应对突发紧急情况，emergency的复数为emergencies。"
+    }
+  ]
+}

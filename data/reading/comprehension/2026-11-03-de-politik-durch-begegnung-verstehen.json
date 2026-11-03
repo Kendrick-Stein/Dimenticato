@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-de-politik-durch-begegnung-verstehen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Wie verbindet das beschriebene Reisekonzept die verschiedenen Lernschritte?",
+      "promptZh": "文中旅行理念如何把各个学习环节联系起来？",
+      "options": [
+        "Es verbindet Prüfungen mit individuellen Abschlussgesprächen.",
+        "Es verbindet historische Forschung mit einer Bauausstellung.",
+        "Es verbindet Besuche mit Austausch und späterer Weitergabe.",
+        "Es verbindet Sprachunterricht mit der Planung neuer Reisen."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11",
+        "s12",
+        "s15",
+        "s20",
+        "s21"
+      ],
+      "explanationZh": "s11—12将实地体验与交流结合；s15—18介绍团队内部学习；s20—21把知识传播扩展到其他群体。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Warum wurden mehrere unterschiedliche EU-Einrichtungen besucht?",
+      "promptZh": "为何参访多个不同的欧盟机构？",
+      "options": [
+        "Um verschiedene Seiten europäischer Entscheidungen kennenzulernen.",
+        "Um Entwicklungen des 19. und 20. Jahrhunderts nachzuzeichnen.",
+        "Um die architektonischen Besonderheiten der Stadt zu erkunden.",
+        "Um die Bildungserfahrungen der Gruppenmitglieder vorzustellen."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "s8直接解释参访安排：展示决策过程的不同视角及奥地利利益的代表。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Welchen Nutzen hatten die Präsentationen laut Text für gut informierte Personen?",
+      "promptZh": "按本文，已有较多知识的人从介绍活动中获得什么？",
+      "options": [
+        "Sie konnten erstmals Grundlagen zu europäischen Aufgaben aufbauen.",
+        "Sie konnten vorhandene Kenntnisse wiederholen und vertiefen.",
+        "Sie konnten eigene Erfahrungen in den Vereinen weitergeben.",
+        "Sie konnten Brüssels Architektur bei einem Rundgang entdecken."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s16"
+      ],
+      "explanationZh": "s16说明已有基础者可以复习、深化，而新接触者建立基础；其他选项对应新接触者的基础学习、后续知识传播或城市导览，而不是此处已知较多者的收益。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Welche Person würde dem beschriebenen Ziel der Wissensweitergabe entsprechen?",
+      "promptZh": "哪种做法符合文中知识传播的目标？",
+      "options": [
+        "Eine Teilnehmerin betrachtet ihre Reisebilder für sich allein.",
+        "Ein Teilnehmer plant eine zweite Reise mit derselben Gruppe.",
+        "Eine Teilnehmerin vertieft ihr Wissen ohne weiteren Austausch.",
+        "Ein Teilnehmer erklärt seinem Verein die besuchten Einrichtungen."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s20",
+        "s21",
+        "s22"
+      ],
+      "explanationZh": "s20—22强调将知识传播到原团队之外；在自己的社团向其他人介绍参访机构符合这一目标。其余行为没有体现向外传播。"
+    },
+    {
+      "id": "q5",
+      "kind": "detail",
+      "prompt": "Welche Grenze der Aussagekraft benennt die redaktionelle Einordnung?",
+      "promptZh": "编辑补充指出了哪项证据边界？",
+      "options": [
+        "Die Zahl der Mitreisenden bleibt in der Beschreibung offen.",
+        "Die besuchten Institutionen werden im Artikel nicht genannt.",
+        "Ein unabhängiger Vergleich mit anderen Lernformen fehlt.",
+        "Die gemeinsamen Lernziele werden erst nach der Reise festgelegt."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s23",
+        "s24"
+      ],
+      "explanationZh": "s23明确原报道并非与其他学习方式的独立比较，s24据此限制对普遍长期效果的推断。人数、机构和目标在前文已有介绍。"
+    }
+  ]
+}

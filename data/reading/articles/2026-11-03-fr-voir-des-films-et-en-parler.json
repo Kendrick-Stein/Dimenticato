@@ -1,0 +1,304 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-fr-voir-des-films-et-en-parler",
+  "storyId": "culture-sarlat-festival-2026-10-29",
+  "lang": "fr",
+  "date": "2026-11-03",
+  "title": "Voir des films et en parler",
+  "titleZh": "看电影，也谈电影",
+  "summaryZh": "萨尔拉电影节把国际影片、创作者见面与面向高中生的影像教育结合起来。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：具体活动与教育目的相连，使用关系从句、原因和对比；区分面向学生的核心使命与面向公众的开放性。",
+  "category": "culture",
+  "topics": [
+    "电影节",
+    "影像教育",
+    "集体观影"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "DRAC Nouvelle-Aquitaine / Ministère de la Culture",
+    "title": "Action ! Le Festival du Film de Sarlat est de retour",
+    "url": "https://www.culture.gouv.fr/regions/drac-nouvelle-aquitaine/creation-industries-culturelles/le-cinema-l-audiovisuel-et-le-numerique-en-nouvelle-aquitaine/action-!-le-festival-du-film-de-sarlat-est-de-retour",
+    "publishedAt": "2026-10-29",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：DRAC Nouvelle-Aquitaine / Ministère de la Culture，《Action ! Le Festival du Film de Sarlat est de retour》，2026-10-29；原文直接链接见来源。依据CC BY-SA 3.0 FR改写。Dimenticato于2026-11-03完成法语分级改写、中文翻译及教学补充，不表示原机构认可。改写、译文及配套教学内容沿用CC BY-SA 3.0 FR。",
+  "adaptation": "同语言分级改写，不是原文全文或当天新闻。仅使用机构新闻文字，不转载照片、视频、标志、外链全文或第三方引语。保留原日期与事件时间，文末口语表达和练习为原创教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Du 3 au 7 novembre 2026, Sarlat accueille la trente-cinquième édition de son festival du film, un rendez-vous qui associe découverte du cinéma et éducation.",
+      "zh": "2026年11月3日至7日，萨尔拉举办第35届电影节，把电影欣赏与教育相结合。",
+      "glosses": [
+        {
+          "surface": "accueille",
+          "lemma": "accueillir",
+          "zh": "举办；迎接，第三人称单数"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "La manifestation s’adresse aux cinéphiles, aux lycéens et aux enseignants, mais elle est également ouverte au grand public.",
+      "zh": "活动面向影迷、高中生和教师，同时也向一般公众开放。",
+      "glosses": [
+        {
+          "surface": "ouverte",
+          "lemma": "ouvert",
+          "zh": "开放的；阴性"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Créé en 1991 pour faire découvrir le cinéma aux lycéens, le festival conserve une mission particulière auprès de ces jeunes spectateurs.",
+      "zh": "电影节于1991年创办，旨在帮助高中生认识电影，至今仍承担着面向这些年轻观众的特殊使命。",
+      "glosses": [
+        {
+          "surface": "spectateurs",
+          "lemma": "spectateur",
+          "zh": "观众；复数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Chaque année, il renouvelle un programme pédagogique spécialement conçu pour eux, afin de leur donner des occasions de développer leur culture cinématographique.",
+      "zh": "它每年更新为高中生专门设计的教育项目，让他们有机会丰富电影文化知识。",
+      "glosses": [
+        {
+          "surface": "pédagogique",
+          "lemma": "pédagogique",
+          "zh": "教育的；教学的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Selon la présentation du ministère de la Culture, cette mission prend une importance particulière lorsque les petits écrans et les réseaux sociaux captent l’attention des jeunes.",
+      "zh": "根据文化部的介绍，当小屏幕和社交网络吸引年轻人的注意力时，这一使命尤为重要。",
+      "glosses": [
+        {
+          "surface": "attention",
+          "lemma": "attention",
+          "zh": "注意力"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Le projet défend une pratique collective et accompagnée du cinéma en salle, avec l’objectif de développer aussi l’esprit critique.",
+      "zh": "该项目提倡在引导下共同走进影院观影，也以培养批判性思考能力为目标。",
+      "glosses": [
+        {
+          "surface": "collective",
+          "lemma": "collectif",
+          "zh": "集体的；阴性"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Il ne s’agit donc pas seulement de proposer une sortie, mais de relier la découverte des œuvres à un travail d’éducation à l’image.",
+      "zh": "因此，这不只是安排一次外出活动，而是把作品欣赏与影像教育结合起来。",
+      "glosses": [
+        {
+          "surface": "relier",
+          "lemma": "relier",
+          "zh": "连接；联系起来"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Cette édition réunit plus de quarante films venus de différents pays, notamment du Rwanda, du Kosovo, du Yémen et de Singapour.",
+      "zh": "本届汇集了四十多部来自不同国家的电影，其中包括卢旺达、科索沃、也门和新加坡的作品。",
+      "glosses": [
+        {
+          "surface": "réunit",
+          "lemma": "réunir",
+          "zh": "汇集；第三人称单数"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Le programme est organisé en cinq sections : Sélection Officielle, Tour du monde, Jeunes Regards, Jeune Public et Séances Spéciales.",
+      "zh": "节目分为五个单元：官方入选单元、环游世界、青年目光、年轻观众和特别放映。",
+      "glosses": [
+        {
+          "surface": "sections",
+          "lemma": "section",
+          "zh": "单元；复数"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Certains films sont inédits, tandis que d’autres ont déjà été présentés dans de grands festivals internationaux.",
+      "zh": "一些影片此前尚未公映，另一些已经在大型国际电影节亮相。",
+      "glosses": [
+        {
+          "surface": "tandis",
+          "lemma": "tandis",
+          "zh": "tandis que在此表示对比：而"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Les réalisateurs et réalisatrices de la majorité des films projetés seront présents, ce qui donne une place importante aux créateurs pendant l’événement.",
+      "zh": "大部分参展影片的导演将到场，使创作者在电影节中占据重要位置。",
+      "glosses": [
+        {
+          "surface": "majorité",
+          "lemma": "majorité",
+          "zh": "大多数"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Des ateliers pratiques, des conférences et des avant-premières complètent les projections proposées aux spectateurs.",
+      "zh": "实践工作坊、讲座和提前首映，也丰富了观众的观影安排。",
+      "glosses": [
+        {
+          "surface": "ateliers",
+          "lemma": "atelier",
+          "zh": "工作坊；复数"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "La sélection officielle permet également de mettre en valeur la création cinématographique grâce aux prix appelés Salamandres d’Or.",
+      "zh": "官方入选单元也通过名为“金蝾螈”的奖项，展现电影创作。",
+      "glosses": [
+        {
+          "surface": "prix",
+          "lemma": "prix",
+          "zh": "奖项；单复数同形"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Parmi eux, le Prix du Public est attribué par les spectateurs : ceux-ci participent ainsi à la reconnaissance des œuvres.",
+      "zh": "其中，观众奖由观众评选，观众由此也参与对作品的认可。",
+      "glosses": [
+        {
+          "surface": "attribué",
+          "lemma": "attribuer",
+          "zh": "授予；过去分词"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Le festival bénéficie du soutien de la DRAC Nouvelle-Aquitaine et du Centre national du cinéma, dans le cadre de leurs actions de transmission et d’éducation à l’image.",
+      "zh": "电影节得到新阿基坦大区文化事务局和法国国家电影中心的支持，契合它们的文化传承与影像教育工作。",
+      "glosses": [
+        {
+          "surface": "soutien",
+          "lemma": "soutien",
+          "zh": "支持"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "spectateurs",
+        "zh": "观众",
+        "sentenceId": "s3",
+        "lemma": "spectateur",
+        "note": "ces jeunes后接复数名词。"
+      },
+      {
+        "text": "attention",
+        "zh": "注意力",
+        "sentenceId": "s5",
+        "lemma": "attention",
+        "note": "capter l’attention表示吸引注意力。"
+      },
+      {
+        "text": "collective",
+        "zh": "集体的",
+        "sentenceId": "s6",
+        "lemma": "collectif",
+        "note": "与阴性pratique配合。"
+      },
+      {
+        "text": "ateliers",
+        "zh": "工作坊",
+        "sentenceId": "s12",
+        "lemma": "atelier",
+        "note": "des ateliers pratiques为实践工作坊。"
+      },
+      {
+        "text": "soutien",
+        "zh": "支持",
+        "sentenceId": "s15",
+        "lemma": "soutien",
+        "note": "bénéficier du soutien de表示得到……支持。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "au grand public",
+        "zh": "面向一般公众",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "Il ne s’agit donc pas seulement de",
+        "zh": "因此这不只是……",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "mettre en valeur",
+        "zh": "突出；展现价值",
+        "sentenceId": "s13"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "tandis que连接两种情况，表示对比，而非原因。"
+      },
+      {
+        "sentenceId": "s11",
+        "note": "ce qui承接前面整件事，说明其带来的意义。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Qu’est-ce qu’une discussion après un film peut apporter aux spectateurs ?",
+        "zh": "观影后的讨论能给观众带来什么？"
+      },
+      {
+        "text": "Préfères-tu découvrir un film en salle ou chez toi ? Pourquoi ?",
+        "zh": "你更喜欢在影院还是在家认识一部影片？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Voir un film ensemble permet de partager des points de vue.",
+        "zh": "一起看电影可以交流不同观点。",
+        "note": "教学补充：用于讨论，不是原文引语。"
+      },
+      {
+        "text": "Je préfère la salle, parce que je me concentre mieux.",
+        "zh": "我更喜欢影院，因为我更能集中注意力。",
+        "note": "教学补充：用于讨论，不是原文引语。"
+      }
+    ]
+  }
+}

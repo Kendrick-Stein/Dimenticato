@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-it-taranto-sport-disegnato",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Che cosa mettono a confronto i documenti della mostra?",
+      "options": [
+        "Gli sport praticati a scuola e quelli praticati al lavoro.",
+        "Le gare organizzate nei quartieri e quelle fuori città.",
+        "I progetti diventati edifici e quelli rimasti sulla carta.",
+        "Le palestre aperte al mattino e quelle aperte alla sera."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "展览用文献比较已建成的设计与停留在纸上的设计，而不是比较运动或开放时段。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa deve fare chi vuole visitare la mostra?",
+      "options": [
+        "Pagare un biglietto e scegliere un posto.",
+        "Prenotare la visita, anche se l’ingresso è gratuito.",
+        "Portare un documento sulla storia del quartiere.",
+        "Iscriversi a un corso presso una palestra."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "正文明确说入场免费，但预约是强制要求。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quale visita rispetta l’orario indicato?",
+      "options": [
+        "Lunedì, dalle 15:00 alle 15:30.",
+        "Martedì, dalle 15:00 alle 15:30.",
+        "Giovedì, dalle 10:00 alle 10:30.",
+        "Giovedì, dalle 15:00 alle 15:30."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "周四开放15:00—16:30，15:30符合；周一、周二仅9:00—13:00。"
+    }
+  ]
+}

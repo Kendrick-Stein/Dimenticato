@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-fr-une-statuette-rejoint-les-musees",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s4",
+      "start": 64,
+      "answer": "bois",
+      "options": [
+        "pierre",
+        "bois",
+        "bronze",
+        "terre"
+      ],
+      "explanation": "bois是木材，en bois说明雕像材质；中文明确为椴木，不是石、铜或土。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s5",
+      "start": 42,
+      "answer": "gauche",
+      "options": [
+        "droite",
+        "ouverte",
+        "gauche",
+        "fermée"
+      ],
+      "explanation": "左手是main gauche；同句右手抬瓶盖，不能把左右对调。gauche阴阳同形。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 65,
+      "answer": "disparu",
+      "options": [
+        "augmenté",
+        "brillé",
+        "changé",
+        "disparu"
+      ],
+      "explanation": "原句说原有色彩已经消失，ont disparu为disparaître的复合过去时，不只是变化或变亮。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s8",
+      "start": 55,
+      "answer": "siècle",
+      "options": [
+        "siècle",
+        "mois",
+        "jour",
+        "été"
+      ],
+      "explanation": "一个多世纪是plus d’un siècle，siècle为阳性单数名词，不是月、天或夏季。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s11",
+      "start": 94,
+      "answer": "achat",
+      "options": [
+        "nettoyage",
+        "achat",
+        "transport",
+        "prêt"
+      ],
+      "explanation": "financement de son achat指资助购入它；achat是名词，区别于清洁、运输和借展。"
+    }
+  ]
+}

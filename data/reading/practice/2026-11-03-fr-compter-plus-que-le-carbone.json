@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-fr-compter-plus-que-le-carbone",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s4",
+      "start": 44,
+      "answer": "carburants",
+      "options": [
+        "aéroports",
+        "appareils",
+        "carburants",
+        "itinéraires"
+      ],
+      "explanation": "carburants alternatifs为替代燃料；正文区分燃料与飞机等其他技术，不是机场或航线。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s8",
+      "start": 77,
+      "answer": "plafond",
+      "options": [
+        "prix",
+        "plafond",
+        "rythme",
+        "retard"
+      ],
+      "explanation": "un plafond d’émissions为排放上限；不是价格、节奏或延迟。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s14",
+      "start": 158,
+      "answer": "combustion",
+      "options": [
+        "exportation",
+        "réservation",
+        "taxation",
+        "combustion"
+      ],
+      "explanation": "生命周期在这里追踪燃料生产、配送和燃烧，combustion是燃烧的名词。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s16",
+      "start": 141,
+      "answer": "cumulées",
+      "options": [
+        "cumulées",
+        "évitées",
+        "prévues",
+        "compensées"
+      ],
+      "explanation": "截至目前的累计排放用cumulées，与émissions保持阴性复数；不是避免、预测或补偿的排放。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s20",
+      "start": 93,
+      "answer": "maintien",
+      "options": [
+        "retrait",
+        "maintien",
+        "blocage",
+        "contrôle"
+      ],
+      "explanation": "原句支持保留技术措施，用maintien，区别于撤回、阻止或监管。"
+    }
+  ]
+}

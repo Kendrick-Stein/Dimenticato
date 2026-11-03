@@ -1,0 +1,388 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-fr-compter-plus-que-le-carbone",
+  "storyId": "inrae-aviation-boundaries-2026-10-13",
+  "lang": "fr",
+  "date": "2026-11-03",
+  "title": "Compter plus que le carbone",
+  "titleZh": "不只计算碳排放",
+  "summaryZh": "一项研究用多种环境预算检视航空转型路线：技术进步、资源需求与交通需求需要一起考虑。",
+  "level": "B2",
+  "levelReason": "编辑估计B2：抽象的环境预算与分配原则，多层因果、让步和条件限定；区分模型比较、历史排放与研究建议，不凭篇幅判级。",
+  "category": "environment",
+  "topics": [
+    "航空",
+    "环境预算",
+    "资源需求"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Service Médias et opinion INRAE",
+    "title": "Décarbonation dans l’aviation civile : des stratégies de transition évaluées encore insuffisantes",
+    "url": "https://www.inrae.fr/actualites/decarbonation-laviation-civile-strategies-transition-evaluees-encore-insuffisantes",
+    "publishedAt": "2026-10-13",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0"
+  },
+  "attribution": "原文：Service Médias et opinion INRAE，《Décarbonation dans l’aviation civile : des stratégies de transition évaluées encore insuffisantes》，2026-10-13；原文直接链接见来源。依据Licence Ouverte / Open Licence Etalab 2.0改写。Dimenticato于2026-11-03完成法语分级改写、中文翻译及教学补充，不表示原机构认可。",
+  "adaptation": "同语言分级改写，不是原文全文或当天新闻。仅使用机构新闻文字，不转载照片、视频、标志、外链全文或第三方引语。保留原日期与事件时间，文末口语表达和练习为原创教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Comment savoir si une transformation du transport aérien est réellement soutenable, lorsque les solutions proposées mobilisent elles-mêmes de l’énergie, de l’eau et des terres ?",
+      "zh": "当提出的解决方案本身也需要能源、水和土地时，如何判断航空运输的转型是否真正具有可持续性？",
+      "glosses": [
+        {
+          "surface": "soutenable",
+          "lemma": "soutenable",
+          "zh": "可持续的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Un communiqué publié par INRAE le 13 octobre 2026 présente une étude qui déplace le regard : réduire les émissions de gaz à effet de serre ne suffit pas à évaluer tous les impacts.",
+      "zh": "INRAE于2026年10月13日发布的通报介绍了一项转换观察角度的研究：仅减少温室气体排放，并不足以评估全部影响。",
+      "glosses": [
+        {
+          "surface": "émissions",
+          "lemma": "émission",
+          "zh": "排放；复数"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "L’équipe, réunissant notamment INRAE, l’ENAC, ISAE-SUPAERO et l’ADEME, a examiné des feuilles de route internationales pour l’aviation civile mondiale à l’horizon 2050.",
+      "zh": "该团队包括INRAE、ENAC、ISAE-SUPAERO和ADEME等机构，考察了全球民用航空面向2050年的国际转型路线图。",
+      "glosses": [
+        {
+          "surface": "horizon",
+          "lemma": "horizon",
+          "zh": "时间目标；à l’horizon 2050表示面向2050年"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Ces plans s’appuient, entre autres, sur des carburants alternatifs et des avions plus efficaces, mais leur évaluation porte généralement sur les émissions de gaz à effet de serre.",
+      "zh": "这些计划尤其依靠替代燃料和效率更高的飞机，但通常主要从温室气体排放方面进行评价。",
+      "glosses": [
+        {
+          "surface": "carburants",
+          "lemma": "carburant",
+          "zh": "燃料；复数"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Les scientifiques ont choisi d’élargir cette évaluation au cadre des limites planétaires, qui permet de considérer plusieurs équilibres environnementaux plutôt qu’un seul indicateur.",
+      "zh": "研究人员选择把评估扩展到行星边界框架，借此考虑多种环境平衡，而非只看一项指标。",
+      "glosses": [
+        {
+          "surface": "élargir",
+          "lemma": "élargir",
+          "zh": "扩大；拓宽"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Ils ont ainsi quantifié les impacts et les besoins en ressources associés aux différentes trajectoires, tout en testant plusieurs scénarios d’évolution du trafic aérien.",
+      "zh": "他们量化了不同转型路径的影响及资源需求，同时检验了航空交通变化的多种情景。",
+      "glosses": [
+        {
+          "surface": "trajectoires",
+          "lemma": "trajectoire",
+          "zh": "发展路径；复数"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Au cœur de la méthode se trouve la notion de budget environnemental : une quantité maximale à ne pas dépasser pour respecter la limite considérée.",
+      "zh": "方法的核心是环境预算概念：为了遵守所考察的边界，不应超过的最大数量。",
+      "glosses": [
+        {
+          "surface": "dépasser",
+          "lemma": "dépasser",
+          "zh": "超过"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Pour le climat, on connaît déjà le principe d’un budget carbone, qui fixe un plafond d’émissions compatible avec un certain niveau de réchauffement.",
+      "zh": "在气候问题上，碳预算的原则已经为人所知，即设定与某一升温水平相容的排放上限。",
+      "glosses": [
+        {
+          "surface": "plafond",
+          "lemma": "plafond",
+          "zh": "上限"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Dans le cas de l’eau douce, le budget correspond, par exemple, à une consommation annuelle maximale, et non à une quantité d’émissions de carbone.",
+      "zh": "例如，对于淡水，预算对应的是每年最大的消耗量，而不是碳排放量。",
+      "glosses": [
+        {
+          "surface": "annuelle",
+          "lemma": "annuel",
+          "zh": "每年的；阴性"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Les chercheurs définissent d’abord des budgets pour l’ensemble des activités humaines, puis se demandent quelle part peut être attribuée au secteur aérien.",
+      "zh": "研究人员先为人类活动整体确定预算，然后考察其中多大份额可以分配给航空业。",
+      "glosses": [
+        {
+          "surface": "attribuée",
+          "lemma": "attribuer",
+          "zh": "分配；阴性过去分词"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Ce partage n’est pas effectué selon une règle unique : l’étude teste deux principes, l’un économique, l’autre éthique, afin d’examiner des manières différentes de répartir les budgets mondiaux.",
+      "zh": "这种分配并不依照唯一规则：研究检验了经济和伦理两种原则，以考察分配全球预算的不同方式。",
+      "glosses": [
+        {
+          "surface": "répartir",
+          "lemma": "répartir",
+          "zh": "分配"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Le premier se fonde sur la part de l’aviation civile dans le produit intérieur brut mondial, ce qui relie l’allocation à son poids économique.",
+      "zh": "第一种根据民用航空在全球国内生产总值中的占比，使预算分配与其经济比重相联系。",
+      "glosses": [
+        {
+          "surface": "allocation",
+          "lemma": "allocation",
+          "zh": "分配；分配量"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Le second s’appuie sur la part des impacts de l’aviation dans les impacts totaux de pays de référence, sélectionnés selon plusieurs critères environnementaux et de développement humain.",
+      "zh": "第二种根据航空影响在参考国家总体影响中的占比，这些国家按多项环境和人类发展标准选出。",
+      "glosses": [
+        {
+          "surface": "critères",
+          "lemma": "critère",
+          "zh": "标准；复数"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Pour estimer les impacts des carburants, les scientifiques utilisent ensuite une analyse de cycle de vie, qui suit leur production, leur distribution et leur combustion.",
+      "zh": "随后，为估算燃料的影响，研究人员使用生命周期分析，追踪燃料的生产、配送和燃烧。",
+      "glosses": [
+        {
+          "surface": "combustion",
+          "lemma": "combustion",
+          "zh": "燃烧"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Cette approche permet notamment de calculer les besoins en eau douce de chaque feuille de route, puis de les comparer au budget attribué à l’aviation.",
+      "zh": "这种方法尤其可以计算每份路线图的淡水需求，再将其与分配给航空业的预算比较。",
+      "glosses": [
+        {
+          "surface": "comparer",
+          "lemma": "comparer",
+          "zh": "比较"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Pour le changement climatique, l’équipe tient également compte du budget historique déjà consommé par le secteur, c’est-à-dire des émissions cumulées jusqu’à aujourd’hui.",
+      "zh": "对于气候变化，团队还考虑该行业已经消耗的历史预算，也就是截至目前累积的排放。",
+      "glosses": [
+        {
+          "surface": "cumulées",
+          "lemma": "cumuler",
+          "zh": "累积的；阴性复数"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Les résultats ne décrivent pas un dépassement identique pour toutes les limites : certains budgets sont respectés, tandis que d’autres posent problème dans les scénarios étudiés.",
+      "zh": "结果并非表明所有边界都遭到同样的超越：在研究情景中，有些预算得到遵守，另一些则存在问题。",
+      "glosses": [
+        {
+          "surface": "respectés",
+          "lemma": "respecter",
+          "zh": "得到遵守的；阳性复数"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Cependant, aucune des feuilles de route évaluées ne respecte simultanément l’ensemble des limites, et les budgets liés au climat et à l’intégrité de la biosphère sont systématiquement dépassés.",
+      "zh": "但是，没有一份受评路线图能同时遵守全部边界，气候和生物圈完整性相关的预算在各情景中都被超过。",
+      "glosses": [
+        {
+          "surface": "simultanément",
+          "lemma": "simultanément",
+          "zh": "同时"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Les stratégies les plus ambitieuses entraînent en outre des besoins importants en électricité, en biomasse, en eau, en terres agricoles et en capacités de captage du carbone.",
+      "zh": "此外，最雄心勃勃的策略也带来大量电力、生物质、水、农业用地和碳捕集能力需求。",
+      "glosses": [
+        {
+          "surface": "entraînent",
+          "lemma": "entraîner",
+          "zh": "引起；带来，第三人称复数"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Ce constat ne conduit pas les auteurs à abandonner les progrès techniques : ils défendent le maintien des carburants alternatifs, des gains d’efficacité et de l’optimisation des opérations.",
+      "zh": "这一发现并未使作者主张放弃技术进步：他们支持继续发展替代燃料、提高效率和优化运行。",
+      "glosses": [
+        {
+          "surface": "maintien",
+          "lemma": "maintien",
+          "zh": "维持；继续实施"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Ils y associent les stratégies de compensation, tout en demandant une réflexion plus large sur les usages et les politiques d’offre et de demande.",
+      "zh": "他们也把补偿策略包括在内，同时要求更广泛地思考使用方式以及供需政策。",
+      "glosses": [
+        {
+          "surface": "usages",
+          "lemma": "usage",
+          "zh": "使用方式；复数"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Selon leur analyse, les politiques de maîtrise de la demande de trafic doivent donc accompagner les solutions technologiques, si l’objectif est de respecter toutes les limites ensemble.",
+      "zh": "根据他们的分析，如果目标是同时遵守全部边界，那么管理航空交通需求的政策应当与技术方案相配合。",
+      "glosses": [
+        {
+          "surface": "accompagner",
+          "lemma": "accompagner",
+          "zh": "配合；与……并行"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "carburants",
+        "zh": "燃料",
+        "sentenceId": "s4",
+        "lemma": "carburant",
+        "note": "des carburants alternatifs：替代燃料。"
+      },
+      {
+        "text": "plafond",
+        "zh": "上限",
+        "sentenceId": "s8",
+        "lemma": "plafond",
+        "note": "fixer un plafond：设定上限；不是屋顶的字面义。"
+      },
+      {
+        "text": "combustion",
+        "zh": "燃烧",
+        "sentenceId": "s14",
+        "lemma": "combustion",
+        "note": "在此指燃料的燃烧阶段。"
+      },
+      {
+        "text": "cumulées",
+        "zh": "累积的",
+        "sentenceId": "s16",
+        "lemma": "cumuler",
+        "note": "与阴性复数émissions配合。"
+      },
+      {
+        "text": "maintien",
+        "zh": "维持；继续实施",
+        "sentenceId": "s20",
+        "lemma": "maintien",
+        "note": "le maintien de表示保留或继续实施。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "tout en testant",
+        "zh": "同时检验",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "se fonde sur",
+        "zh": "以……为基础",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "tient également compte du",
+        "zh": "也考虑到……",
+        "sentenceId": "s16"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s17",
+        "note": "ne…pas与tandis que区分局部符合和局部超标，防止把结果概括成全部超标。"
+      },
+      {
+        "sentenceId": "s22",
+        "note": "si引出目标条件，doivent accompagner说明政策与技术需要并行，而非相互替代。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pourquoi un bon résultat sur un indicateur peut-il être insuffisant ?",
+        "zh": "为什么单一指标上的好结果可能还不够？"
+      },
+      {
+        "text": "Quels problèmes peut poser le partage d’un budget environnemental entre plusieurs secteurs ?",
+        "zh": "把环境预算分给多个行业时可能遇到哪些问题？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Il faut examiner les effets au-delà d’un seul indicateur.",
+        "zh": "需要考察超出单一指标的影响。",
+        "note": "教学补充：用于讨论，不是原文引语。"
+      },
+      {
+        "text": "Cette solution améliore un aspect, mais mobilise aussi des ressources.",
+        "zh": "这一方案改善了一个方面，但也消耗资源。",
+        "note": "教学补充：用于讨论，不是原文引语。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-11-03",
+  "status": "PASS-content-and-headless-tests; deployment verification pending",
+  "baseCommit": "94e47c412bd1f57ce797c367641805d614516c8b",
+  "articles": 11,
+  "levels": {
+    "it": [
+      "A2",
+      "B2"
+    ],
+    "fr": [
+      "A2",
+      "B1",
+      "B2"
+    ],
+    "de": [
+      "A2",
+      "B1",
+      "B2"
+    ],
+    "en": [
+      "A2",
+      "B1",
+      "B2"
+    ]
+  },
+  "independentExerciseReview": {
+    "blindBeforeKey": true,
+    "clozeQuestions": 55,
+    "comprehensionQuestions": 44,
+    "listeningQuestions": 6,
+    "allMatchedAfterRevision": true
+  },
+  "reviewSummary": {
+    "en": "Independently read all3 original pages, NI/Scotland copyright terms and GOV.UK OGL footer; prior reviewed official GOTT2.3 permits adaptation. No logos/images/thirdparty quotations. 32day and61day fallback correctly disclosed. Numbers/dates/eligibility/future modality and Chinese pairs checked, B2 notes-to-editors included; editorial additions labelled.",
+    "de": "Full saved original bodies and live official pages independently read; each text explicitly CC BY4; original dates/bylines and 4November/23November9–17,4Septemberhybridplan,12–14July21persons4basic learners checked. Text-only; linked NC-ND handbook/image excluded. Chinese translations/glosses/summary checked. 90-dayfallbacks, no current-event assertion.",
+    "fr": "All three official source texts independently read. All sentence facts, dates, numbers, paired Chinese, language/level, glosses/requiredforms, summary/speaking labels, answers and evidence checked. All12 comprehension and15cloze blind answers matched; no ambiguity. Revised distractors rechecked.",
+    "it": "Independent blind/answer/evidence/language/rights PASS for Taranto and salaries only. Agrigento held: full-page footer and per-article exceptions inaccessible after HTTP503 and normal browser timeout. Istat HTML10/30 controls original date; conflicting PDFcover date not reused."
+  },
+  "finalDataHashes": {
+    "data/reading/articles/2026-11-03-en-childcare-that-fits-family-life.json": "64e7419e9348493a60a978a3e8b1ac9953881007f4a37cd2c83ea3841d2c36a1",
+    "data/reading/articles/2026-11-03-en-different-ways-to-ease-everyday-costs.json": "cf66b169b4d38e8527d78ad3080ae67df53447785e6dd9a2803a1cd6f967f18c",
+    "data/reading/articles/2026-11-03-en-libraries-and-your-views.json": "a278b95544135ea91bf22ccf6ea5097683ede0a2edffafc08aa7629c4f578d8a",
+    "data/reading/practice/2026-11-03-en-childcare-that-fits-family-life.json": "8ce46e6f86f192f18f05448c640703700c0a12c7354ddf4b6e18eb700ebf4481",
+    "data/reading/practice/2026-11-03-en-different-ways-to-ease-everyday-costs.json": "e645d991b1decf46aeb09d655ea6ee7c7ee22955fc9459b138bfe6807ec6d8da",
+    "data/reading/practice/2026-11-03-en-libraries-and-your-views.json": "de908bf10c08bafd0ad1cb3c7864eff23bd1448e84805e4a7d149ec77d4e0ade",
+    "data/reading/comprehension/2026-11-03-en-childcare-that-fits-family-life.json": "8e8ad2f04ce3010944ff29c5fdd9708ed050ea8882da1d24529092a5c5b054b1",
+    "data/reading/comprehension/2026-11-03-en-different-ways-to-ease-everyday-costs.json": "82b8134a0656d0a358b874be7bd78015e993a00c17152e222356346d405a0596",
+    "data/reading/comprehension/2026-11-03-en-libraries-and-your-views.json": "1ae51815fba5283aa838c3a1072c35d5226f0e18cc9b4b41647fa7bca39d4008",
+    "data/reading/articles/2026-11-03-de-hilfe-gemeinsam-organisieren.json": "d10db038dd2904aea88d61f5a66e7733cf34786d3f738276fd24dcce44de75bb",
+    "data/reading/articles/2026-11-03-de-nachrichten-zum-weiterlernen.json": "99acde07e0088e1df13efda946e62120daef4e587fc43a011f98eb7a493a4784",
+    "data/reading/articles/2026-11-03-de-politik-durch-begegnung-verstehen.json": "406aae2828239d48afc97bf572e9b23676b31d2ed047573e6ab833380e33eb19",
+    "data/reading/practice/2026-11-03-de-hilfe-gemeinsam-organisieren.json": "201d240e4baebbd1bceb0a37d8d9234d034c0c4fba2c19a8a6ed5ab61b8cefbc",
+    "data/reading/practice/2026-11-03-de-nachrichten-zum-weiterlernen.json": "bd8f0556f4d58e4bed0eb16b60151f51db26dfc8307992ae194fb4ec26d22e81",
+    "data/reading/practice/2026-11-03-de-politik-durch-begegnung-verstehen.json": "eecf79769daab0a11c2d16bfd0e3733c34fc1962bcd8267c5a709260a8d0e8a6",
+    "data/reading/comprehension/2026-11-03-de-hilfe-gemeinsam-organisieren.json": "03be31aceea0624b7591f2fd467a8a23b1738db10b34affb9b2cc52039bfd0e2",
+    "data/reading/comprehension/2026-11-03-de-nachrichten-zum-weiterlernen.json": "9dec296d1b6d458c9664c59ab6938aa93c5cae236285d70bfc9c086a54eaf5c6",
+    "data/reading/comprehension/2026-11-03-de-politik-durch-begegnung-verstehen.json": "0ee36d85e175428fbe480baa78e7dda251ff21149f909f3ecd5bfb6fa86603a2",
+    "data/reading/articles/2026-11-03-fr-voir-des-films-et-en-parler.json": "a84c5d106f3c2cb46dc1aeb5fce88801ee1ae5995e1999f816965c2bd93762ed",
+    "data/reading/articles/2026-11-03-fr-compter-plus-que-le-carbone.json": "80123a016f8aa8f255ad4815c92f9de88f94c5bfe66fe110dc04dd49d237109f",
+    "data/reading/articles/2026-11-03-fr-une-statuette-rejoint-les-musees.json": "f4cdfbf6f3c32ef6bc1e1adfac5ada7a41e1a800550a74d28a801f7a3de1061a",
+    "data/reading/practice/2026-11-03-fr-compter-plus-que-le-carbone.json": "76736d31b7d202d680291a7528c00810364b8f332afcb1b225c8f4918934d534",
+    "data/reading/practice/2026-11-03-fr-voir-des-films-et-en-parler.json": "dd289864b93de2030adf51f1da1b8bb32e7014c98a73f2a443f4e46898c1c4f2",
+    "data/reading/practice/2026-11-03-fr-une-statuette-rejoint-les-musees.json": "ebf4c500bd6bd32a52b672eb0c13f6527a3139d9cb7f8074f8fc2dd986ecc798",
+    "data/reading/comprehension/2026-11-03-fr-une-statuette-rejoint-les-musees.json": "79bb04250b3d18a2a94d5b45e455e1da78799b47a907fb2ceb8aa2b7dafba13e",
+    "data/reading/comprehension/2026-11-03-fr-voir-des-films-et-en-parler.json": "d15eae075c6f0ac1e5d704b1cd4fed2ff27bc866cda5dc69cd8bfd31521d6c5c",
+    "data/reading/comprehension/2026-11-03-fr-compter-plus-que-le-carbone.json": "22a240fbaeb6e0ea12178892dd78444bb5fbb53d5ca85e05ba4b5b36ffcbe8d5",
+    "data/reading/articles/2026-11-03-it-salari-e-attese-diverse.json": "6da127cc44e39c5293c2d28caf890a0885c667a3cfd82ccc8ac24f3774dcd271",
+    "data/reading/articles/2026-11-03-it-taranto-sport-disegnato.json": "456a38bdbf678b78fe8671fd137892a96ed5e593251c6a59b4ffe597fe0c1315",
+    "data/reading/practice/2026-11-03-it-salari-e-attese-diverse.json": "07cb0a9c6cfdd5a9a99845993a481ed2487ab89ed4e8af6777f302cfd1242c85",
+    "data/reading/practice/2026-11-03-it-taranto-sport-disegnato.json": "c04d575e098c87d4aa0608bde6ee014deaa4e249ec4b410515df1ae5433d763f",
+    "data/reading/comprehension/2026-11-03-it-salari-e-attese-diverse.json": "81b8d5865186764580e9b74009d9f44a2525962836332b44194b2127c4f4c6a2",
+    "data/reading/comprehension/2026-11-03-it-taranto-sport-disegnato.json": "6e71cdf4c40391cca1164f844e787addfd2c7aa7a9e42b6b7574b08cd59c391c"
+  },
+  "tests": {
+    "scriptReview": true,
+    "command": "TZ=UTC npm test",
+    "harnesses": 45,
+    "passed": 486447,
+    "failed": 0,
+    "knownIssues": 0,
+    "readingValidators": "PASS",
+    "listeningTest": "PASS",
+    "gitDiffCheck": "PASS",
+    "notice": "Existing npm http-proxy configuration warning and available-update notice; no dependency changes"
+  },
+  "deduplication": "storyId,canonical source URL and body checked against published and older pending drafts; no old draft revived",
+  "history": "Historical article/practice/comprehension file SHA256 unchanged; source-specific candidate reserve progressed, no historical articles overwritten",
+  "missing": [
+    "IT B1: source full-page licence exceptions unverified; draft retained privately",
+    "FR listening: prior TV5 AI/adaptation restrictions and RFI access refusal remain; no new verified resource",
+    "DE reserve:11 screened sources,8 not licensed; no week of cleared reserve"
+  ],
+  "deployment": "Not yet verified; content review is not publication confirmation"
+}

@@ -1,0 +1,328 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-de-hilfe-gemeinsam-organisieren",
+  "storyId": "erwachsenenbildung-20872-2026-08-13",
+  "lang": "de",
+  "date": "2026-11-03",
+  "category": "education",
+  "topics": [
+    "成人教育",
+    "社会参与"
+  ],
+  "title": "Wenn aus Hilfe eine Initiative wird",
+  "titleZh": "当互助发展为一个组织",
+  "summaryZh": "一份8月的机构报道介绍如何支持长期民间互助：从项目规划、团队协作到共同学习，并区分手册、工具和活动计划。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连接互助起点、组织需求和学习资源，包含关系从句、被动态与目的表达，专业词有语境解释；区分项目目标和实证效果。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "erwachsenenbildung.at",
+    "title": "Praxishandbuch stärkt zivilgesellschaftliches Engagement",
+    "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20872-entrecivil-handbuch-fuer-zivilgesellschaftliche-initiativen.php",
+    "publishedAt": "2026-08-13",
+    "lang": "de",
+    "author": "Julia Höllrigl, ÖSB Social Innovation"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Julia Höllrigl, ÖSB Social Innovation，erwachsenenbildung.at，2026-08-13，Praxishandbuch stärkt zivilgesellschaftliches Engagement（https://erwachsenenbildung.at/aktuell/nachrichten/20872-entrecivil-handbuch-fuer-zivilgesellschaftliche-initiativen.php）。正文按 CC BY 4.0 使用；Dimenticato 同语言改写、中文翻译及教学补充，整理于2026-11-03，不代表原作者认可。",
+  "adaptation": "根据已署名德语机构原文简化、重组和转述；保留原报道日期及报道时点，不作为当天新闻或后续结果。未使用图片、附属材料或第三方引语。词义、问题和口语表达是教学补充。源文所链接手册/封面另标CC BY-NC-ND，未复制或改写手册内容；仅改写本篇明确CC BY4的报道。欧盟资助声明：报道表达作者观点，不必然反映欧盟或OeAD立场，欧盟和OeAD不为此负责。关于非独立效果证明和不确认活动实况的句子为编辑证据边界说明。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Viele Initiativen beginnen damit, dass Menschen in ihrer Umgebung Hilfe brauchen und andere sich dafür freiwillig engagieren.",
+      "zh": "许多民间倡议起源于身边有人需要帮助，而另一些人自愿为此投入精力。",
+      "glosses": [
+        {
+          "surface": "freiwillig",
+          "lemma": "freiwillig",
+          "zh": "自愿地",
+          "note": "作副词。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Seit dem russischen Angriff auf die Ukraine haben engagierte Ukrainerinnen und Ukrainer in mehreren europäischen Ländern Netzwerke aufgebaut, die Geflüchtete beim Ankommen unterstützen.",
+      "zh": "自俄罗斯进攻乌克兰以来，积极参与的乌克兰人在多个欧洲国家建立了网络，帮助难民安顿下来。",
+      "glosses": [
+        {
+          "surface": "Netzwerke",
+          "lemma": "Netzwerk",
+          "zh": "网络；联系网络",
+          "note": "复数。"
+        },
+        {
+          "surface": "Geflüchtete",
+          "lemma": "Geflüchtete",
+          "zh": "逃离战乱的人；难民",
+          "note": "名词化分词。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Aus der ersten Nachbarschaftshilfe entstanden an vielen Orten dauerhafte Angebote, doch mit der Verantwortung wuchsen auch die organisatorischen Aufgaben.",
+      "zh": "最初的邻里互助在许多地方发展为长期服务，但责任增加的同时，组织工作也随之增多。",
+      "glosses": [
+        {
+          "surface": "Verantwortung",
+          "lemma": "Verantwortung",
+          "zh": "责任",
+          "note": "die Verantwortung。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Wer ein Team koordiniert, braucht zum Beispiel Wissen darüber, wie man ein Projekt plant, Geld organisiert und Aufgaben sinnvoll verteilt.",
+      "zh": "例如，协调一个团队的人需要知道如何规划项目、筹措资金以及合理分配任务。",
+      "glosses": [
+        {
+          "surface": "verteilt",
+          "lemma": "verteilen",
+          "zh": "分配",
+          "note": "这里的宾语是Aufgaben。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Ein Bericht vom 13. August 2026 stellt deshalb ein Praxishandbuch aus dem Erasmus+-Projekt EntreCivil vor.",
+      "zh": "因此，一篇2026年8月13日的报道介绍了Erasmus+项目EntreCivil的一本实践手册。",
+      "glosses": [
+        {
+          "surface": "Praxishandbuch",
+          "lemma": "Praxishandbuch",
+          "zh": "实践手册",
+          "note": "das Praxishandbuch。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Es sammelt Erfahrungen aus einer Untersuchung des Unterstützungsbedarfs, aus ersten Workshops und aus der Zusammenarbeit mit engagierten Menschen aus der Ukraine.",
+      "zh": "它汇集了对支持需求的调查、首批工作坊以及与来自乌克兰的积极参与者合作的经验。",
+      "glosses": [
+        {
+          "surface": "Unterstützungsbedarfs",
+          "lemma": "Unterstützungsbedarf",
+          "zh": "支持需求的",
+          "note": "阳性名词第二格单数。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "An dieser Zusammenarbeit waren Österreich, Deutschland, Liechtenstein und die Schweiz beteiligt; das Material richtet sich auch an Einrichtungen der Erwachsenenbildung.",
+      "zh": "参与这项合作的国家包括奥地利、德国、列支敦士登和瑞士；材料也面向成人教育机构。",
+      "glosses": [
+        {
+          "surface": "beteiligt",
+          "lemma": "beteiligen",
+          "zh": "参与的",
+          "note": "an etwas beteiligt sein：参与某事。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Die Inhalte reichen von der Finanzierung und dem Aufbau einer Organisation bis zu Kommunikation, Vernetzung und dem Umgang mit den eigenen Kräften.",
+      "zh": "内容涵盖融资、组织建设，以及沟通、建立联系和管理自身精力。",
+      "glosses": [
+        {
+          "surface": "Finanzierung",
+          "lemma": "Finanzierung",
+          "zh": "融资；经费筹措",
+          "note": "die Finanzierung。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Übungen, Fragen zur Reflexion und Checklisten sollen helfen, das Gelernte auf die eigene Initiative zu übertragen.",
+      "zh": "练习、反思问题和检查清单旨在帮助人们将所学应用到自己的组织中。",
+      "glosses": [
+        {
+          "surface": "übertragen",
+          "lemma": "übertragen",
+          "zh": "迁移；应用",
+          "note": "etwas auf etwas übertragen。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Dabei geht es nicht nur um einzelne Werkzeuge, sondern auch um gemeinsames Nachdenken und Lernen voneinander.",
+      "zh": "其中不仅涉及具体工具，还涉及共同思考和相互学习。",
+      "glosses": [
+        {
+          "surface": "voneinander",
+          "lemma": "voneinander",
+          "zh": "相互；从彼此那里",
+          "note": "lernen voneinander：相互学习。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Mit dem Handbuch verbunden ist die KI-Plattform Nadiya, deren Name auf Ukrainisch Hoffnung bedeutet.",
+      "zh": "与手册相配套的是人工智能平台Nadiya，这个名称在乌克兰语中意为“希望”。",
+      "glosses": [
+        {
+          "surface": "Hoffnung",
+          "lemma": "Hoffnung",
+          "zh": "希望",
+          "note": "die Hoffnung。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Laut Projektbeschreibung können Nutzerinnen und Nutzer dort Fragen stellen und sich Methoden oder Materialien in verschiedenen Sprachen erklären lassen.",
+      "zh": "根据项目介绍，使用者可以在那里提问，并让平台用不同语言解释方法或材料。",
+      "glosses": [
+        {
+          "surface": "erklären lassen",
+          "lemma": "erklären lassen",
+          "zh": "请别人解释；让其解释",
+          "note": "lassen+不定式。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Das Angebot soll selbstständiges Lernen erleichtern und sprachliche Hindernisse verkleinern; die Beschreibung ist jedoch kein unabhängiger Nachweis seiner Wirkung.",
+      "zh": "该服务旨在便利自主学习、减少语言障碍；不过，这份介绍并不是其效果的独立证明。",
+      "glosses": [
+        {
+          "surface": "Hindernisse",
+          "lemma": "Hindernis",
+          "zh": "障碍",
+          "note": "复数，单数das Hindernis。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Zum Projektabschluss war für den 4. September 2026 eine Veranstaltung in Wien angekündigt, bei der die Partner ihre Ergebnisse und Erfahrungen vorstellen sollten.",
+      "zh": "项目结束活动曾宣布安排在2026年9月4日于维也纳举行，合作伙伴计划在会上介绍成果和经验。",
+      "glosses": [
+        {
+          "surface": "angekündigt",
+          "lemma": "ankündigen",
+          "zh": "宣布的",
+          "note": "过去分词；仅说明当时宣布的计划。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Interessierte sollten entweder vor Ort oder online teilnehmen können; über den tatsächlichen Verlauf informiert diese frühere Ankündigung nicht.",
+      "zh": "感兴趣者原计划可在线下或线上参加；这份较早的公告没有介绍活动实际进行的情况。",
+      "glosses": [
+        {
+          "surface": "vor Ort",
+          "lemma": "vor Ort",
+          "zh": "在现场",
+          "note": "表示实地参与。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Netzwerke",
+        "zh": "网络",
+        "sentenceId": "s2",
+        "lemma": "Netzwerk",
+        "note": "复数形式die Netzwerke；此处是人与人组成的互助网络。"
+      },
+      {
+        "text": "Verantwortung",
+        "zh": "责任",
+        "sentenceId": "s3",
+        "lemma": "Verantwortung",
+        "note": "mit der后接阴性第三格名词，与组织任务的增加相对应。"
+      },
+      {
+        "text": "Finanzierung",
+        "zh": "融资",
+        "sentenceId": "s8",
+        "lemma": "Finanzierung",
+        "note": "von der后的阴性第三格名词，指筹措项目经费。"
+      },
+      {
+        "text": "voneinander",
+        "zh": "相互",
+        "sentenceId": "s10",
+        "lemma": "voneinander",
+        "note": "Lernen voneinander指从彼此经验中学习。"
+      },
+      {
+        "text": "Hindernisse",
+        "zh": "障碍",
+        "sentenceId": "s13",
+        "lemma": "Hindernis",
+        "note": "复数Hindernisse是verkleinern的宾语，形容词sprachliche限定为语言障碍。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "auf die eigene Initiative zu übertragen",
+        "zh": "应用到自己的组织中",
+        "sentenceId": "s9",
+        "note": "übertragen auf+第四格，描述从学习迁移到实践。"
+      },
+      {
+        "text": "nicht nur",
+        "zh": "不仅",
+        "sentenceId": "s10",
+        "note": "nicht nur … sondern auch … 表示并列递进。"
+      },
+      {
+        "text": "entweder vor Ort oder online",
+        "zh": "或者现场、或者线上",
+        "sentenceId": "s15",
+        "note": "entweder … oder … 提供两个选项。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s9",
+        "note": "übertragen auf+第四格，描述从学习迁移到实践。"
+      },
+      {
+        "sentenceId": "s15",
+        "note": "entweder … oder … 提供两个选项。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Aufgaben sind bei einer freiwilligen Initiative besonders schwierig?",
+        "zh": "对志愿互助组织来说，哪些工作尤其困难？"
+      },
+      {
+        "text": "Lernst du lieber mit einer Checkliste oder im Gespräch mit anderen?",
+        "zh": "你更喜欢借助检查清单还是与他人交流来学习？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Mit mehr Verantwortung entstehen auch neue Aufgaben.",
+        "zh": "责任增加，也会产生新的任务。",
+        "note": "原创口语补充，不是原报道引语。"
+      },
+      {
+        "text": "Wir können voneinander lernen.",
+        "zh": "我们可以相互学习。",
+        "note": "原创口语补充，不是原报道引语。"
+      }
+    ]
+  }
+}

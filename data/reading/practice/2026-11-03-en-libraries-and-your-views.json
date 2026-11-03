@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-en-libraries-and-your-views",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 95,
+      "answer": "views",
+      "options": [
+        "views",
+        "fees",
+        "keys",
+        "loans"
+      ],
+      "explanation": "views为view复数，在share their views中指分享看法。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 97,
+      "answer": "ages",
+      "options": [
+        "prices",
+        "ages",
+        "sizes",
+        "dates"
+      ],
+      "explanation": "different ages指不同年龄，age用复数。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 70,
+      "answer": "facilities",
+      "options": [
+        "facilities",
+        "novels",
+        "holidays",
+        "uniforms"
+      ],
+      "explanation": "facilities为facility复数，与services并列，指服务场所的设施。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 33,
+      "answer": "welcoming",
+      "options": [
+        "welcoming",
+        "temporary",
+        "private",
+        "silent"
+      ],
+      "explanation": "welcoming修饰spaces，描述让人愿意进入的空间。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s9",
+      "start": 46,
+      "answer": "questionnaire",
+      "options": [
+        "receipt",
+        "ticket",
+        "questionnaire",
+        "dictionary"
+      ],
+      "explanation": "questionnaire与consultation document并列，是征集意见所用的问卷。"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-it-salari-e-attese-diverse",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale collegamento costruisce il testo tra salari e rinnovi?",
+      "options": [
+        "Usa la crescita salariale per stimare quanto durerà ogni contratto.",
+        "Confronta gli importi effettivi ricevuti da ciascuna professione.",
+        "Attribuisce le differenze salariali soprattutto alle ore di straordinario.",
+        "Distingue il perimetro degli indicatori e le differenze tra gruppi."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s2",
+        "s3",
+        "s4",
+        "s8",
+        "s17",
+        "s19",
+        "s20",
+        "s21"
+      ],
+      "explanationZh": "文章用合同工资的统计范围与不同群体、不同分母的区分，解释工资和续约等待数据。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa accomuna i due confronti salariali del 2,5%?",
+      "options": [
+        "Confrontano entrambi settembre con il mese di agosto.",
+        "Hanno la stessa variazione, ma periodi di riferimento diversi.",
+        "Confrontano entrambi il settore pubblico con quello privato.",
+        "Hanno la stessa durata, ma escludono settori differenti."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "一个比较九月与去年九月，另一个比较前九个月与去年同期；百分比相同，时间区间不同。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "Come può diminuire l’attesa media complessiva mentre aumenta quella nel privato?",
+      "options": [
+        "La media totale riguarda tutti i dipendenti, quella privata solo chi attende.",
+        "La media totale confronta due mesi vicini, quella privata due anni diversi.",
+        "La media totale riassume il calo pubblico e l’aumento nel settore privato.",
+        "La media totale riguarda il numero dei contratti, quella privata la loro durata."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s16",
+        "s17",
+        "s18"
+      ],
+      "explanationZh": "正文显示公共部门由36.9降至21个月，私人部门由18.6升至20.4；总体下降并不要求每组下降。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "A quale popolazione si riferisce la media di quattro mesi?",
+      "options": [
+        "A tutti i dipendenti considerati, anche senza rinnovo in attesa.",
+        "Ai dipendenti privati che hanno un contratto già scaduto.",
+        "Ai dipendenti pubblici interessati dai sette nuovi contratti.",
+        "Ai dipendenti con contratto scaduto in entrambi i settori."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s19",
+        "s20"
+      ],
+      "explanationZh": "四个月以全体考察雇员为分母，不仅限于合同到期的雇员；后者的平均数为20.8个月。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Una persona riceve un pagamento una tantum: che cosa implica per l’indicatore mensile descritto?",
+      "options": [
+        "L’importo viene distribuito tra i lavoratori dello stesso settore.",
+        "Il pagamento sostituisce la retribuzione oraria nel calcolo.",
+        "L’aumento viene attribuito ai dipendenti in attesa di rinnovo.",
+        "Quel pagamento non entra tra le voci dell’indicatore mensile."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s2",
+        "s4"
+      ],
+      "explanationZh": "方法口径明确排除一次性款项，因此个人收到该款项不代表它进入这里的月度指标。"
+    }
+  ]
+}

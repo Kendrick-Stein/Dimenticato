@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-fr-voir-des-films-et-en-parler",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s3",
+      "start": 124,
+      "answer": "spectateurs",
+      "options": [
+        "donateurs",
+        "réalisateurs",
+        "spectateurs",
+        "journalistes"
+      ],
+      "explanation": "高中生在这里是年轻观众，spectateurs为复数；不是捐赠者、导演或记者。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s5",
+      "start": 157,
+      "answer": "attention",
+      "options": [
+        "attention",
+        "confiance",
+        "colère",
+        "patience"
+      ],
+      "explanation": "capter l’attention意为吸引注意力，attention是阴性名词；不是信任、愤怒或耐心。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s6",
+      "start": 30,
+      "answer": "collective",
+      "options": [
+        "commerciale",
+        "familiale",
+        "individuelle",
+        "collective"
+      ],
+      "explanation": "正文明确集体观影，collective与阴性pratique一致；不是商业、家庭或个人形式。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s12",
+      "start": 4,
+      "answer": "ateliers",
+      "options": [
+        "examens",
+        "ateliers",
+        "voyages",
+        "achats"
+      ],
+      "explanation": "ateliers pratiques为实践工作坊，复数；不是考试、旅行或采购。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s15",
+      "start": 25,
+      "answer": "soutien",
+      "options": [
+        "soutien",
+        "refus",
+        "départ",
+        "silence"
+      ],
+      "explanation": "bénéficier du soutien de表示得到……支持；soutien为阳性名词，符合中文。"
+    }
+  ]
+}

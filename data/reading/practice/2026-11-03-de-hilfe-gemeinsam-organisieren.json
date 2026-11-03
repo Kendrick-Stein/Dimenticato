@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-de-hilfe-gemeinsam-organisieren",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 121,
+      "answer": "Netzwerke",
+      "options": [
+        "Nachrichten",
+        "Netzwerke",
+        "Nachweise",
+        "Nachteile"
+      ],
+      "explanation": "本句中文对应“网络”，因此填Netzwerke。复数形式die Netzwerke；此处是人与人组成的互助网络。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 96,
+      "answer": "Verantwortung",
+      "options": [
+        "Veränderung",
+        "Versammlung",
+        "Verantwortung",
+        "Veröffentlichung"
+      ],
+      "explanation": "本句中文对应“责任”，因此填Verantwortung。mit der后接阴性第三格名词，与组织任务的增加相对应。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 28,
+      "answer": "Finanzierung",
+      "options": [
+        "Forschung",
+        "Förderung",
+        "Fortbildung",
+        "Finanzierung"
+      ],
+      "explanation": "本句中文对应“融资”，因此填Finanzierung。von der后的阴性第三格名词，指筹措项目经费。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s10",
+      "start": 97,
+      "answer": "voneinander",
+      "options": [
+        "voneinander",
+        "nacheinander",
+        "nebeneinander",
+        "gegeneinander"
+      ],
+      "explanation": "本句中文对应“相互”，因此填voneinander。Lernen voneinander指从彼此经验中学习。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s13",
+      "start": 68,
+      "answer": "Hindernisse",
+      "options": [
+        "Ergebnisse",
+        "Hindernisse",
+        "Bedürfnisse",
+        "Verhältnisse"
+      ],
+      "explanation": "本句中文对应“障碍”，因此填Hindernisse。复数Hindernisse是verkleinern的宾语，形容词sprachliche限定为语言障碍。"
+    }
+  ]
+}

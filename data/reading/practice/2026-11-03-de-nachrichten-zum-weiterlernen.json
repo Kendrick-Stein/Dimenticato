@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-de-nachrichten-zum-weiterlernen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 10,
+      "answer": "Ausgabe",
+      "options": [
+        "Ausgabe",
+        "Adresse",
+        "Aufgabe",
+        "Anreise"
+      ],
+      "explanation": "本句中文对应“一期”，因此填Ausgabe。单数die Ausgabe，此处指第一期信息邮件。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 62,
+      "answer": "Veranstaltungen",
+      "options": [
+        "Verwaltungen",
+        "Verhandlungen",
+        "Veranstaltungen",
+        "Verbindungen"
+      ],
+      "explanation": "本句中文对应“活动”，因此填Veranstaltungen。über后的复数名词，与Studien和Projekte并列。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s4",
+      "start": 5,
+      "answer": "Ergebnisse",
+      "options": [
+        "Erlebnisse",
+        "Ergebnisse",
+        "Erlaubnisse",
+        "Ereignisse"
+      ],
+      "explanation": "本句中文对应“成果”，因此填Ergebnisse。复数die Ergebnisse，指已完成项目产生的结果。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s5",
+      "start": 72,
+      "answer": "Universität",
+      "options": [
+        "Gemeinde",
+        "Bibliothek",
+        "Stiftung",
+        "Universität"
+      ],
+      "explanation": "本句中文对应“大学”，因此填Universität。zu einer后用阴性单数第三格。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 76,
+      "answer": "Anmeldung",
+      "options": [
+        "Anmeldung",
+        "Anleitung",
+        "Ankunft",
+        "Ansicht"
+      ],
+      "explanation": "本句中文对应“报名”，因此填Anmeldung。zur是zu der，后接阴性名词Anmeldung，指订阅登记。"
+    }
+  ]
+}

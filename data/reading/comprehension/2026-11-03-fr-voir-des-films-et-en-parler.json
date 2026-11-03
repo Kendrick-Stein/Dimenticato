@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-fr-voir-des-films-et-en-parler",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quel lien le festival cherche-t-il à établir pour les lycéens ?",
+      "promptZh": "电影节希望为高中生建立什么联系？",
+      "options": [
+        "Entre les prix du public et le financement des écoles.",
+        "Entre les réseaux sociaux et la vente des billets.",
+        "Entre les rencontres internationales et l’apprentissage des langues.",
+        "Entre la découverte des films et la formation du regard critique."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s4",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "第3、4、6、7句把认识电影、丰富电影文化与批判性思考及影像教育联系起来。其他选项的教育或资金目标并未在正文中提出。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi le texte évoque-t-il les petits écrans et les réseaux sociaux ?",
+      "promptZh": "文章为什么提到小屏幕与社交网络？",
+      "options": [
+        "Pour expliquer le choix de films réalisés avec un téléphone.",
+        "Pour situer l’enjeu d’une pratique collective du cinéma en salle.",
+        "Pour annoncer la diffusion des films sur une plateforme.",
+        "Pour décrire le mode de vote pour le Prix du Public."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "第5句谈年轻人的注意力受到小屏幕吸引，第6句接着介绍有引导的集体影院观影；没有说手机拍摄、线上播片或线上投票。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quelle affirmation décrit la programmation de cette édition ?",
+      "promptZh": "哪项描述符合本届节目安排？",
+      "options": [
+        "Une sélection réservée aux films déjà primés en France.",
+        "Une rétrospective consacrée aux premiers films des réalisateurs invités.",
+        "Plus de quarante films accompagnés d’ateliers et de conférences.",
+        "Des films tournés à Sarlat et présentés par les lycéens."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8",
+        "s9",
+        "s10",
+        "s12"
+      ],
+      "explanationZh": "第8句明确四十多部影片，第12句说明工作坊和讲座；影片来源多国，不能概括为仅法国获奖片或萨尔拉拍摄。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Comment les spectateurs interviennent-ils dans l’attribution d’un prix ?",
+      "promptZh": "观众怎样参与一个奖项的授予？",
+      "options": [
+        "Ils choisissent les cinq sections de la sélection.",
+        "Ils décident quels réalisateurs viennent au festival.",
+        "Ils préparent le programme pédagogique annuel.",
+        "Ils attribuent le Prix du Public aux œuvres."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s14"
+      ],
+      "explanationZh": "第14句明确观众负责观众奖；单元、导演到场和教育项目不是文中分配给观众的决定。"
+    }
+  ]
+}

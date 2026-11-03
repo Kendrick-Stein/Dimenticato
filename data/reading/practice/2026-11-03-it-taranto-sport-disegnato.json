@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-it-taranto-sport-disegnato",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 70,
+      "answer": "piante",
+      "options": [
+        "foto",
+        "piante",
+        "lettere",
+        "tabelle"
+      ],
+      "explanation": "平面图；阴性复数，在这里指空间图，不是植物。结合本句中文与上下文恢复原文用词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 61,
+      "answer": "quartieri",
+      "options": [
+        "musei",
+        "teatri",
+        "quartieri",
+        "porti"
+      ],
+      "explanation": "街区；阳性复数，dei＝di＋i。结合本句中文与上下文恢复原文用词。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 58,
+      "answer": "rimasti",
+      "options": [
+        "rimasti",
+        "entrati",
+        "partiti",
+        "tornati"
+      ],
+      "explanation": "留下的；过去分词阳性复数，与altri（progetti）一致。结合本句中文与上下文恢复原文用词。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 41,
+      "answer": "prenotare",
+      "options": [
+        "rimandare",
+        "annullare",
+        "vendere",
+        "prenotare"
+      ],
+      "explanation": "预约；动词不定式，è obbligatorio后说明必须做的事。结合本句中文与上下文恢复原文用词。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 22,
+      "answer": "diverso",
+      "options": [
+        "lungo",
+        "diverso",
+        "completo",
+        "regolare"
+      ],
+      "explanation": "不同的；阳性单数形容词，修饰orario。结合本句中文与上下文恢复原文用词。"
+    }
+  ]
+}

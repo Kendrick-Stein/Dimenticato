@@ -1,0 +1,219 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-en-childcare-that-fits-family-life",
+  "storyId": "scottish-government-childcare-2026-09-03",
+  "lang": "en",
+  "date": "2026-11-03",
+  "category": "society",
+  "topics": [
+    "适应家庭生活的托育"
+  ],
+  "title": "Childcare that fits family life",
+  "titleZh": "适应家庭生活的托育",
+  "summaryZh": "苏格兰公布分阶段托育计划，并向不同机构提供资金，帮助低收入家庭应对时间、费用和服务空缺。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：具体托育困难连接多种支持方式，以时间、目的与对比从句解释分阶段计划；非官方等级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Scottish Government",
+    "title": "Transforming childcare",
+    "url": "https://www.gov.scot/news/transforming-childcare/",
+    "publishedAt": "2026-09-03",
+    "lang": "en",
+    "author": "Scottish Government"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Scottish Government; 2026-09-03; https://www.gov.scot/news/transforming-childcare/",
+  "adaptation": "2026-11-03整理：依据机构英文公告同语言分级改写；中文翻译、语境词义和练习由Dimenticato编辑添加，不是原文或官方课程。仅使用机构叙述，不复制直接引语、图片、标志、第三方材料。原报道日期单独保留，计划不写成已完成，不暗示原机构认可。 原文为9月3日，属于90日备用素材，不是当天新闻；s6、s8与s13含基于正文的编辑归纳，不是政府效果评估。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 3 September 2026, the Scottish Government announced plans to change its childcare offer, alongside funding for organisations that support families.",
+      "zh": "2026年9月3日，苏格兰政府宣布调整托育服务的计划，同时向支持家庭的机构提供资金。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "The wider plan is intended to cover children from nine months old through to the end of primary school, rather than focusing on a single age group.",
+      "zh": "更广泛的计划旨在覆盖九个月大至小学结束的儿童，而非只针对一个年龄段。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Consultation on this approach is planned for 2027, with services introduced in stages instead of starting everywhere at the same time.",
+      "zh": "计划于2027年就这一方案征求意见，服务将分阶段推出，而非同时在各处启动。",
+      "glosses": [
+        {
+          "surface": "stages",
+          "lemma": "stage",
+          "zh": "阶段"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The first stage involves annual investment of £44 million in breakfast clubs at primary schools across Scotland from August 2027.",
+      "zh": "第一阶段包括从2027年8月起，每年向苏格兰各地小学早餐俱乐部投入4400万英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "After-school and holiday childcare for primary school children is to follow from August 2029.",
+      "zh": "面向小学生的课后和假期托育计划从2029年8月起随后推出。",
+      "glosses": [
+        {
+          "surface": "holiday",
+          "lemma": "holiday",
+          "zh": "假期的"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "These are future arrangements described in the announcement, not services that had all begun by its publication date.",
+      "zh": "这些是公告描述的未来安排，不是在公告发布时就已全部启动的服务。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "The government also named the first recipients of its £15 million Childcare Support Fund, expected to help organisations support about 4,800 low-income families.",
+      "zh": "政府还公布了1500万英镑托育支持基金的首批受助机构，预计帮助这些机构支持约4800个低收入家庭。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Different organisations address different obstacles, because a childcare place may be difficult to use even when a family needs one.",
+      "zh": "不同机构处理不同障碍，因为即使家庭需要托育名额，也可能难以实际使用。",
+      "glosses": [
+        {
+          "surface": "obstacles",
+          "lemma": "obstacle",
+          "zh": "障碍"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Early Years Scotland connects families with childcare that fills gaps, such as extra hours or short periods between other arrangements.",
+      "zh": "Early Years Scotland为家庭对接填补服务空缺的托育，例如额外时段或其他安排之间的短暂空档。",
+      "glosses": [
+        {
+          "surface": "gaps",
+          "lemma": "gap",
+          "zh": "空缺"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The Indigo Childcare Group offers free places, including a mobile crèche for parents taking part in programmes that help them move towards work.",
+      "zh": "Indigo Childcare Group提供免费名额，包括为参加就业支持项目的家长提供流动托儿服务。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Other providers focus on specialist support for children with complex disabilities, or help families find services in island and rural communities.",
+      "zh": "其他服务提供者重点为有复杂残障的儿童提供专业支持，或帮助岛屿和乡村社区的家庭寻找服务。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Inspiring Scotland offers rapid funding through community networks, helping parents manage emergencies or attend interviews while longer-term arrangements are put in place.",
+      "zh": "Inspiring Scotland通过社区网络快速提供资金，在落实长期安排期间帮助家长应对紧急情况或参加面试。",
+      "glosses": [
+        {
+          "surface": "emergencies",
+          "lemma": "emergency",
+          "zh": "紧急情况"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Taken together, these examples show why the announcement combines a long-term service plan with support for specific gaps in family life.",
+      "zh": "综合来看，这些例子说明了为什么该公告将长期服务计划与针对家庭生活中具体空缺的支持结合起来。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "For example, some support is designed to help parents remain in work or take part in training, while other provision responds to a temporary financial crisis.",
+      "zh": "例如，一些支持旨在帮助家长保持就业或参加培训，其他服务则应对暂时的财务危机。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "stages",
+        "zh": "阶段",
+        "lemma": "stage",
+        "sentenceId": "s3",
+        "note": "in stages表示分阶段，stage用复数。"
+      },
+      {
+        "text": "holiday",
+        "zh": "假期的",
+        "lemma": "holiday",
+        "sentenceId": "s5",
+        "note": "holiday在此作定语，指学校假期的托育，与after-school并列。"
+      },
+      {
+        "text": "obstacles",
+        "zh": "障碍",
+        "lemma": "obstacle",
+        "sentenceId": "s8",
+        "note": "obstacles是阻碍获得服务的因素，address obstacles意为处理障碍。"
+      },
+      {
+        "text": "gaps",
+        "zh": "空缺",
+        "lemma": "gap",
+        "sentenceId": "s9",
+        "note": "fills gaps指填补服务时段或资格等方面的空缺。"
+      },
+      {
+        "text": "emergencies",
+        "zh": "紧急情况",
+        "lemma": "emergency",
+        "sentenceId": "s12",
+        "note": "manage emergencies指应对突发紧急情况，emergency的复数为emergencies。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "at the same time",
+        "zh": "同时",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "put in place",
+        "zh": "落实／建立",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "while引导同时发生的情况，把临时支持与长期安排的落实连接起来。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which matters more to a family: the price of childcare or its opening hours?",
+        "zh": "对家庭来说，托育费用还是开放时段更重要？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Affordable care must also fit our working hours.",
+        "zh": "负担得起的托育还必须适合我们的工作时间。",
+        "note": "原创口语练习表达，不是来源引语。"
+      }
+    ]
+  }
+}

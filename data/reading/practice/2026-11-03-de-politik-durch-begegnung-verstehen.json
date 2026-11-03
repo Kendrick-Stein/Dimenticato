@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-de-politik-durch-begegnung-verstehen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s6",
+      "start": 90,
+      "answer": "Zusammensetzung",
+      "options": [
+        "Zusammenfassung",
+        "Zusammensetzung",
+        "Zusammenkunft",
+        "Zusammenarbeit"
+      ],
+      "explanation": "本句中文对应“构成”，因此填Zusammensetzung。die Zusammensetzung，指团队中人员的组成。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s11",
+      "start": 39,
+      "answer": "Annahme",
+      "options": [
+        "Aufgabe",
+        "Anreise",
+        "Annahme",
+        "Ausgabe"
+      ],
+      "explanation": "本句中文对应“假设”，因此填Annahme。die Annahme，教学设计背后的判断，不是对照实验结论。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s14",
+      "start": 139,
+      "answer": "Vorwissen",
+      "options": [
+        "Vorhaben",
+        "Vorbild",
+        "Vorrecht",
+        "Vorwissen"
+      ],
+      "explanation": "本句中文对应“已有知识”，因此填Vorwissen。das Vorwissen，von后为第三格，与政治知识背景对应。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s16",
+      "start": 91,
+      "answer": "Vertiefung",
+      "options": [
+        "Vertiefung",
+        "Vertretung",
+        "Verteilung",
+        "Verbindung"
+      ],
+      "explanation": "本句中文对应“深化”，因此填Vertiefung。die Vertiefung，与Wiederholung并列，指加深理解。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s19",
+      "start": 60,
+      "answer": "beschränkt",
+      "options": [
+        "vorbereitet",
+        "beschränkt",
+        "angewiesen",
+        "ausgerichtet"
+      ],
+      "explanation": "本句中文对应“受限”，因此填beschränkt。auf etwas beschränkt bleiben表达范围限制。"
+    }
+  ]
+}

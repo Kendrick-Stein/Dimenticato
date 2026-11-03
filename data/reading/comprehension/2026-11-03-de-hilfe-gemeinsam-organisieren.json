@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-de-hilfe-gemeinsam-organisieren",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Warum brauchen die im Text beschriebenen Initiativen zusätzliches Wissen?",
+      "promptZh": "文中这些组织为何需要更多知识？",
+      "options": [
+        "Sie sollen ihre Angebote in Schulen verlegen.",
+        "Sie wollen vor allem neue Sprachen unterrichten.",
+        "Ihre dauerhafte Arbeit bringt mehr Organisationsaufgaben.",
+        "Ihre Mitglieder müssen gemeinsame Studienabschlüsse erwerben."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "临时邻里互助变为长期服务后，责任和组织任务增加；s4具体列出规划、筹款和分工。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Worauf stützt sich das vorgestellte Handbuch?",
+      "promptZh": "所介绍的手册以什么为依据？",
+      "options": [
+        "Auf Prüfungen zum Erwerb eines Hochschulabschlusses.",
+        "Auf Bedarfserhebung, Workshops und Zusammenarbeit.",
+        "Auf Befragungen von Besucherinnen und Besuchern in Wien.",
+        "Auf Übersetzungen von Nachrichten aus vier Ländern."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "s6列出需求调查、初步工作坊以及与乌克兰参与者合作的经验；四国合作是s7补充信息。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Welche Funktion wird Nadiya im Text zugeschrieben?",
+      "promptZh": "文中为Nadiya介绍了什么功能？",
+      "options": [
+        "Es verteilt Fördermittel für neue Initiativen.",
+        "Es organisiert Reisen der vier Projektpartner.",
+        "Es übernimmt die Leitung der örtlichen Gruppen.",
+        "Es erklärt Methoden in verschiedenen Sprachen."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "s12明确说可以提问，并让平台用不同语言解释方法或材料；其他选项属于组织工作而非文中平台功能。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Welche Teilnahmeformen waren für die Abschlussveranstaltung angekündigt?",
+      "promptZh": "结束活动当时宣布了哪些参与形式？",
+      "options": [
+        "Eine Teilnahme vor Ort in Wien oder online.",
+        "Eine Teilnahme vor Ort in jedem der vier Länder.",
+        "Eine Teilnahme online mit anschließender Reise nach Wien.",
+        "Eine Teilnahme in Wien mit Vorbereitungskurs vor Ort."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "s14—s15说当时宣布的结束活动提供维也纳现场和线上两种参与方式，并不说明活动后来的实际经过。"
+    }
+  ]
+}

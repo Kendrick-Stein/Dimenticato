@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-fr-une-statuette-rejoint-les-musees",
+  "storyId": "culture-cluny-madeleine-2026-11-02",
+  "lang": "fr",
+  "date": "2026-11-03",
+  "title": "Une statuette rejoint les musées",
+  "titleZh": "一尊小雕像走进博物馆",
+  "summaryZh": "一尊中世纪木雕加入法国国家馆藏，研究和修复后将先后在两家博物馆展示。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体物件、手部动作和参观顺序，短句与常用时间表达；passé composé和futur配完整中文辅助，文化名词逐句解释。",
+  "category": "culture",
+  "topics": [
+    "博物馆",
+    "艺术保护",
+    "雕塑"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Les collections nationales du musée de Cluny s’enrichissent d’un Trésor national",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/les-collections-nationales-du-musee-de-cluny-s-enrichissent-d-un-tresor-national",
+    "publishedAt": "2026-11-02",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原文：Ministère de la Culture，《Les collections nationales du musée de Cluny s’enrichissent d’un Trésor national》，2026-11-02；原文直接链接见来源。依据CC BY-SA 3.0 FR改写。Dimenticato于2026-11-03完成法语分级改写、中文翻译及教学补充，不表示原机构认可。改写、译文及配套教学内容沿用CC BY-SA 3.0 FR。",
+  "adaptation": "同语言分级改写，不是原文全文或当天新闻。仅使用机构新闻文字，不转载照片、视频、标志、外链全文或第三方引语。保留原日期与事件时间，文末口语表达和练习为原创教学补充。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 2 novembre 2026, le ministère de la Culture a annoncé l’arrivée d’une petite sculpture dans les collections du musée de Cluny.",
+      "zh": "2026年11月2日，法国文化部宣布一尊小雕塑加入克吕尼博物馆馆藏。",
+      "glosses": [
+        {
+          "surface": "collections",
+          "lemma": "collection",
+          "zh": "馆藏；复数"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Ce musée est consacré au Moyen Âge.",
+      "zh": "这家博物馆以中世纪为主题。",
+      "glosses": [
+        {
+          "surface": "consacré",
+          "lemma": "consacrer",
+          "zh": "专门用于；être consacré à表示以……为主题"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "La statuette représente sainte Marie Madeleine et mesure 55 centimètres de haut.",
+      "zh": "这尊小雕像表现的是圣玛利亚·玛达肋纳，高55厘米。",
+      "glosses": [
+        {
+          "surface": "mesure",
+          "lemma": "mesurer",
+          "zh": "量起来有；第三人称单数"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Elle a été réalisée à Strasbourg, dans les années 1470-1480, en bois de tilleul.",
+      "zh": "它于1470至1480年代在斯特拉斯堡制作，材质是椴木。",
+      "glosses": [
+        {
+          "surface": "bois",
+          "lemma": "bois",
+          "zh": "木材"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "La femme tient un petit vase dans la main gauche et lève son couvercle avec la main droite.",
+      "zh": "女子左手拿着一个小瓶，用右手抬起瓶盖。",
+      "glosses": [
+        {
+          "surface": "gauche",
+          "lemma": "gauche",
+          "zh": "左边的；la main gauche为左手"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Ses longs cheveux tombent dans son dos.",
+      "zh": "她的长发垂在背后。",
+      "glosses": [
+        {
+          "surface": "cheveux",
+          "lemma": "cheveu",
+          "zh": "头发；复数"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "La sculpture est bien conservée, mais ses couleurs d’origine ont disparu.",
+      "zh": "雕塑保存良好，但原来的色彩已经消失。",
+      "glosses": [
+        {
+          "surface": "disparu",
+          "lemma": "disparaître",
+          "zh": "消失；过去分词"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Elle est restée dans la même famille pendant plus d’un siècle.",
+      "zh": "它在同一个家族手中保存了一个多世纪。",
+      "glosses": [
+        {
+          "surface": "siècle",
+          "lemma": "siècle",
+          "zh": "世纪；一百年"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "En 2023, un collectionneur étranger l’a achetée lors d’une vente.",
+      "zh": "2023年，一位外国收藏家在一次拍卖中购得了它。",
+      "glosses": [
+        {
+          "surface": "achetée",
+          "lemma": "acheter",
+          "zh": "买下；过去分词，阴性与前置宾语对应"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Le ministère a refusé son exportation : elle est donc restée en France.",
+      "zh": "文化部拒绝批准其出口，因此它留在了法国。",
+      "glosses": [
+        {
+          "surface": "refusé",
+          "lemma": "refuser",
+          "zh": "拒绝；过去分词"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Des entreprises, des particuliers et le ministère ont ensuite contribué au financement de son achat par le musée.",
+      "zh": "随后，企业、个人和文化部共同出资，帮助博物馆购入它。",
+      "glosses": [
+        {
+          "surface": "achat",
+          "lemma": "achat",
+          "zh": "购买；名词"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Après une étude et une restauration, elle sera présentée au musée de Cluny, puis prêtée pour longtemps à un musée de Strasbourg.",
+      "zh": "经过研究和修复后，它将先在克吕尼博物馆展示，再长期借展给斯特拉斯堡的一家博物馆。",
+      "glosses": [
+        {
+          "surface": "prêtée",
+          "lemma": "prêter",
+          "zh": "借出；阴性过去分词"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "bois",
+        "zh": "木材",
+        "sentenceId": "s4",
+        "lemma": "bois",
+        "note": "en bois说明制作材料。"
+      },
+      {
+        "text": "gauche",
+        "zh": "左边的",
+        "sentenceId": "s5",
+        "lemma": "gauche",
+        "note": "main为阴性，gauche阴阳同形。"
+      },
+      {
+        "text": "disparu",
+        "zh": "消失",
+        "sentenceId": "s7",
+        "lemma": "disparaître",
+        "note": "ont disparu是复合过去时，助动词为avoir。"
+      },
+      {
+        "text": "siècle",
+        "zh": "世纪",
+        "sentenceId": "s8",
+        "lemma": "siècle",
+        "note": "un siècle是一百年；plus d’un表示超过一个。"
+      },
+      {
+        "text": "achat",
+        "zh": "购买",
+        "sentenceId": "s11",
+        "lemma": "achat",
+        "note": "名词，与动词acheter区分。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "de haut",
+        "zh": "高……",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "pendant plus d’un siècle",
+        "zh": "在一个多世纪期间",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "Après une étude",
+        "zh": "经过一次研究之后",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "tenir：拿着；左右手分别为main gauche和main droite。"
+      },
+      {
+        "sentenceId": "s12",
+        "note": "Après + 名词表示先后顺序；puis表示然后，sera présentée为将来时被动式。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Tu préfères observer une sculpture ou découvrir son histoire ? Pourquoi ?",
+        "zh": "你更喜欢观察雕塑的外观，还是了解它的经历？为什么？"
+      },
+      {
+        "text": "Pourquoi prêter une œuvre à un autre musée ?",
+        "zh": "为什么把艺术品借给另一家博物馆？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "J’aimerais connaître son histoire.",
+        "zh": "我想了解它的经历。",
+        "note": "教学补充：用于讨论，不是原文引语。"
+      },
+      {
+        "text": "On peut la découvrir dans un autre musée.",
+        "zh": "人们可以在另一家博物馆认识它。",
+        "note": "教学补充：用于讨论，不是原文引语。"
+      }
+    ]
+  }
+}

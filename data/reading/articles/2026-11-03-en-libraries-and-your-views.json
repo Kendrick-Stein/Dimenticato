@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "id": "2026-11-03-en-libraries-and-your-views",
+  "storyId": "ni-libraries-policy-consultation-2026-10-02",
+  "lang": "en",
+  "date": "2026-11-03",
+  "category": "culture",
+  "topics": [
+    "你需要怎样的图书馆？"
+  ],
+  "title": "What do you need from a library?",
+  "titleZh": "你需要怎样的图书馆？",
+  "summaryZh": "北爱尔兰正在征求居民对公共图书馆未来的意见，关注阅读、数字服务与友好的公共空间。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：图书馆日常服务和具体截止日期，短句、常见动词；consultation等词有中文辅助，非官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Communities, Northern Ireland",
+    "title": "Lyons: Public Libraries Consultation launched",
+    "url": "https://www.communities-ni.gov.uk/news/lyons-public-libraries-consultation-launched",
+    "publishedAt": "2026-10-02",
+    "lang": "en",
+    "author": "Department for Communities, Northern Ireland"
+  },
+  "license": {
+    "name": "Open Government Licence",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Communities, Northern Ireland; 2026-10-02; https://www.communities-ni.gov.uk/news/lyons-public-libraries-consultation-launched",
+  "adaptation": "2026-11-03整理：依据机构英文公告同语言分级改写；中文翻译、语境词义和练习由Dimenticato编辑添加，不是原文或官方课程。仅使用机构叙述，不复制直接引语、图片、标志、第三方材料。原报道日期单独保留，计划不写成已完成，不暗示原机构认可。 原文为10月2日，属于90日备用素材，不是当天新闻；s3是关于图书馆常见用途的编辑背景补充，不是原公告逐句翻译。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 2 October 2026, Northern Ireland’s Department for Communities invited people to share their views about public libraries.",
+      "zh": "2026年10月2日，北爱尔兰社区部邀请人们分享对公共图书馆的看法。",
+      "glosses": [
+        {
+          "surface": "views",
+          "lemma": "view",
+          "zh": "看法"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The department is asking questions before making a new policy for these services.",
+      "zh": "该部门在制定这些服务的新政策之前征求意见。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Libraries offer more than books to borrow and a quiet place to read.",
+      "zh": "图书馆提供的不只是可借阅的书籍和安静的阅读场所。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "They also offer information, opportunities to learn and digital services for people of different ages.",
+      "zh": "它们还为不同年龄的人提供信息、学习机会和数字服务。",
+      "glosses": [
+        {
+          "surface": "ages",
+          "lemma": "age",
+          "zh": "年龄"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The consultation asks about people’s experiences and the services and facilities that matter to them.",
+      "zh": "此次意见征集询问人们的体验，以及他们重视哪些服务和设施。",
+      "glosses": [
+        {
+          "surface": "facilities",
+          "lemma": "facility",
+          "zh": "设施"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "It also looks at the needs of people who will use libraries in the future.",
+      "zh": "它还关注未来图书馆使用者的需要。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "The proposed aims include helping people read and learn, supporting wellbeing and encouraging more people to become library members.",
+      "zh": "拟议目标包括帮助人们阅读和学习、支持身心福祉，以及鼓励更多人成为图书馆会员。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Another aim is to make libraries welcoming spaces and to help different organisations work together.",
+      "zh": "另一个目标是把图书馆建成友好的空间，并帮助不同机构合作。",
+      "glosses": [
+        {
+          "surface": "welcoming",
+          "lemma": "welcoming",
+          "zh": "友好的／令人感到受欢迎的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "People can find the consultation document and questionnaire through the department’s website.",
+      "zh": "人们可以通过该部门网站找到征求意见文件和问卷。",
+      "glosses": [
+        {
+          "surface": "questionnaire",
+          "lemma": "questionnaire",
+          "zh": "问卷"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The consultation runs until 25 November 2026, and concerns the direction of library services over the next ten years.",
+      "zh": "意见征集持续至2026年11月25日，涉及未来十年图书馆服务的发展方向。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "views",
+        "zh": "看法",
+        "lemma": "view",
+        "sentenceId": "s1",
+        "note": "views为view复数，在share their views中指分享看法。"
+      },
+      {
+        "text": "ages",
+        "zh": "年龄",
+        "lemma": "age",
+        "sentenceId": "s4",
+        "note": "different ages指不同年龄，age用复数。"
+      },
+      {
+        "text": "facilities",
+        "zh": "设施",
+        "lemma": "facility",
+        "sentenceId": "s5",
+        "note": "facilities为facility复数，与services并列，指服务场所的设施。"
+      },
+      {
+        "text": "welcoming",
+        "zh": "友好的／令人感到受欢迎的",
+        "lemma": "welcoming",
+        "sentenceId": "s8",
+        "note": "welcoming修饰spaces，描述让人愿意进入的空间。"
+      },
+      {
+        "text": "questionnaire",
+        "zh": "问卷",
+        "lemma": "questionnaire",
+        "sentenceId": "s9",
+        "note": "questionnaire与consultation document并列，是征集意见所用的问卷。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "more than",
+        "zh": "不只是",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "work together",
+        "zh": "一起合作",
+        "sentenceId": "s8"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "who will use libraries是关系从句，限定未来的使用者。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What do you use your local library for?",
+        "zh": "你去当地图书馆做什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I go there to read and learn.",
+        "zh": "我去那里阅读和学习。",
+        "note": "原创口语练习表达，不是来源引语。"
+      }
+    ]
+  }
+}

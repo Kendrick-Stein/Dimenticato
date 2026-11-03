@@ -2,6 +2,58 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-03-fr-une-statuette-rejoint-les-musees",
+      "lang": "fr",
+      "date": "2026-11-03",
+      "title": "Une statuette rejoint les musées",
+      "titleZh": "一尊小雕像走进博物馆",
+      "summaryZh": "一尊中世纪木雕加入法国国家馆藏，研究和修复后将先后在两家博物馆展示。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "博物馆",
+        "艺术保护",
+        "雕塑"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-02",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-03-it-salari-e-attese-diverse",
+      "lang": "it",
+      "date": "2026-11-03",
+      "title": "Salari contrattuali e tempi di attesa",
+      "titleZh": "合同工资与等待续约的时间",
+      "summaryZh": "阅读第三季度工资统计，区分合同工资与实发工资、不同群体及不同等待指标。",
+      "level": "B2",
+      "category": "work-economy",
+      "topics": [
+        "工作",
+        "工资统计"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-30",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-03-it-taranto-sport-disegnato",
+      "lang": "it",
+      "date": "2026-11-03",
+      "title": "Lo sport disegnato sulla carta",
+      "titleZh": "画在纸上的体育设施",
+      "summaryZh": "认识塔兰托一场把体育场地设计与城市记忆联系起来的档案展。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "体育",
+        "城市记忆"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-10-30",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-02-en-support-in-one-place",
       "lang": "en",
       "date": "2026-11-02",
@@ -32,6 +84,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-10-30",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-03-fr-voir-des-films-et-en-parler",
+      "lang": "fr",
+      "date": "2026-11-03",
+      "title": "Voir des films et en parler",
+      "titleZh": "看电影，也谈电影",
+      "summaryZh": "萨尔拉电影节把国际影片、创作者见面与面向高中生的影像教育结合起来。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "电影节",
+        "影像教育",
+        "集体观影"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-29",
       "contentType": "native-adaptation"
     },
     {
@@ -104,6 +174,22 @@
       ],
       "sourceLang": "fr",
       "sourcePublishedAt": "2026-10-28",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-03-en-different-ways-to-ease-everyday-costs",
+      "lang": "en",
+      "date": "2026-11-03",
+      "title": "Different ways to ease everyday costs",
+      "titleZh": "缓解日常开销的不同办法",
+      "summaryZh": "英国财政部公布一组家庭支出措施：通勤以外的公务用车、育儿支持、照护者津贴、进口成本与包裹服务。",
+      "level": "B2",
+      "category": "work-economy",
+      "topics": [
+        "缓解日常开销的不同办法"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-26",
       "contentType": "native-adaptation"
     },
     {
@@ -946,6 +1032,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-11-03-fr-compter-plus-que-le-carbone",
+      "lang": "fr",
+      "date": "2026-11-03",
+      "title": "Compter plus que le carbone",
+      "titleZh": "不只计算碳排放",
+      "summaryZh": "一项研究用多种环境预算检视航空转型路线：技术进步、资源需求与交通需求需要一起考虑。",
+      "level": "B2",
+      "category": "environment",
+      "topics": [
+        "航空",
+        "环境预算",
+        "资源需求"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-10-13",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-02-it-una-storia-che-torna-visibile",
       "lang": "it",
       "date": "2026-11-02",
@@ -1525,6 +1629,22 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-11-03-en-libraries-and-your-views",
+      "lang": "en",
+      "date": "2026-11-03",
+      "title": "What do you need from a library?",
+      "titleZh": "你需要怎样的图书馆？",
+      "summaryZh": "北爱尔兰正在征求居民对公共图书馆未来的意见，关注阅读、数字服务与友好的公共空间。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "你需要怎样的图书馆？"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-10-02",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-en-income-beyond-the-headline",
       "lang": "en",
       "date": "2026-10-13",
@@ -1929,6 +2049,23 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-11-03-de-nachrichten-zum-weiterlernen",
+      "lang": "de",
+      "date": "2026-11-03",
+      "title": "Ein Newsletter zum Weiterlernen",
+      "titleZh": "继续学习的信息邮件",
+      "summaryZh": "奥地利成人教育研究机构宣布推出一年两次的信息邮件；学习如何理解活动信息、日期和报名入口。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "成人教育",
+        "社会参与"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-09-21",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-13-de-politik-in-kurzen-videos",
       "lang": "de",
       "date": "2026-10-13",
@@ -2231,6 +2368,22 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-11-03-en-childcare-that-fits-family-life",
+      "lang": "en",
+      "date": "2026-11-03",
+      "title": "Childcare that fits family life",
+      "titleZh": "适应家庭生活的托育",
+      "summaryZh": "苏格兰公布分阶段托育计划，并向不同机构提供资金，帮助低收入家庭应对时间、费用和服务空缺。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "适应家庭生活的托育"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-09-03",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-10-21-en-food-checks-local-and-national",
       "lang": "en",
       "date": "2026-10-21",
@@ -2300,6 +2453,23 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-09-01",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-03-de-politik-durch-begegnung-verstehen",
+      "lang": "de",
+      "date": "2026-11-03",
+      "title": "Politik durch Begegnung verstehen",
+      "titleZh": "在交流中理解政治",
+      "summaryZh": "一篇8月报道回顾赴布鲁塞尔的学习之行：实地参访、不同知识背景与经验传播如何结合，以及项目自述的证据边界。",
+      "level": "B2",
+      "category": "education",
+      "topics": [
+        "成人教育",
+        "社会参与"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-08-21",
       "contentType": "native-adaptation"
     },
     {
@@ -2407,6 +2577,23 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-08-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-03-de-hilfe-gemeinsam-organisieren",
+      "lang": "de",
+      "date": "2026-11-03",
+      "title": "Wenn aus Hilfe eine Initiative wird",
+      "titleZh": "当互助发展为一个组织",
+      "summaryZh": "一份8月的机构报道介绍如何支持长期民间互助：从项目规划、团队协作到共同学习，并区分手册、工具和活动计划。",
+      "level": "B1",
+      "category": "education",
+      "topics": [
+        "成人教育",
+        "社会参与"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-08-13",
       "contentType": "native-adaptation"
     },
     {

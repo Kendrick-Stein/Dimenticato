@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-03-de-nachrichten-zum-weiterlernen",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Was enthält der Newsletter neben Informationen über neue Projekte?",
+      "promptZh": "除了新项目的信息，邮件还包含什么？",
+      "options": [
+        "Ergebnisse abgeschlossener Vorhaben.",
+        "Persönliche Studienpläne der Leser.",
+        "Anzeigen für freie Arbeitsplätze.",
+        "Bewertungen einzelner Universitäten."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "s3介绍新研究、项目和活动；s4补充已完成项目的成果和后续日期。其他内容没有被列为邮件内容。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Welche Angabe gehört zum Workshop am 23. November?",
+      "promptZh": "哪项信息属于11月23日的工作坊？",
+      "options": [
+        "Er findet am Mittwoch in Wien statt.",
+        "Er beginnt am Nachmittag online.",
+        "Er dauert von neun bis siebzehn Uhr.",
+        "Er behandelt neue Studienabschlüsse."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "s9将工作坊定在11月23日星期一、圣珀尔滕；s10明确时段为9点至17点。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Wo findet man einen Weg, den Newsletter zu bestellen?",
+      "promptZh": "在哪里可以找到订阅信息邮件的途径？",
+      "options": [
+        "Im Programm der Universität.",
+        "In der Ankündigung des Instituts.",
+        "Beim November-Workshop vor Ort.",
+        "In einem abgeschlossenen Projekt."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "s11说公告中提供登记订阅的链接，无需等待工作坊。"
+    }
+  ]
+}
