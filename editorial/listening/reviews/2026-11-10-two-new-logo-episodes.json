@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "date": "2026-11-10",
+  "status": "PASS_METADATA_UI_AND_PLAYBACK_STATE",
+  "contentScope": "Two ungraded German official full-episode outbound guided-listening links. No copied media, transcript, embedded player or comprehension questions.",
+  "baseCommit": "c211fbe2412033ed1aff2f8641016ff9267192a0",
+  "catalogSha256": "aac31f43dbfa94fa52c5792900e599ebd64b2cb72d5780c6f74232baece97e5d",
+  "entries": [
+    {
+      "id": "de-logo-2026-11-07",
+      "sourceUrl": "https://www.logo.de/logo-vom-samstag-7-november-2026-102.html",
+      "officialUploadDate": "2026-11-07T19:50:00.000+01:00",
+      "officialPublicationTimestamp": "2026-11-07T20:30:29.647+01:00",
+      "dedup": "No published/candidate/open-PR identity match. Official complete episode was first uploaded after the older pending batch cutoff; clearance does not extend to separately reused component clips.",
+      "previousPendingBatchCutoffUTC": "2026-11-07T00:29:59.754600+00:00",
+      "uiChecks": [
+        "Final isolated release catalog entry and detail deep link render",
+        "Browser back/forward retains expected routes",
+        "Official source link opens correct page in separate browser tab",
+        "Ungraded label, duration, news type, source/collection dates and rights/geographic caveat visible",
+        "No comprehension quiz or score shown for metadata-only item",
+        "416 CSS px layout: no horizontal overflow (scrollWidth == clientWidth == 416); title wraps and navigation collapses",
+        "A1 empty filter message and return to all levels works (shared catalog)"
+      ],
+      "playbackEvidence": {
+        "visiblePlayer": "Anhalten (pause) control",
+        "observedTime": "00:15",
+        "duration": "10:38",
+        "audio": "Ton anschalten remained displayed; audible output/quality not verified"
+      }
+    },
+    {
+      "id": "de-logo-2026-11-08",
+      "sourceUrl": "https://www.logo.de/logo-vom-sonntag-8-november-2026-102.html",
+      "officialUploadDate": "2026-11-08T19:50:00.000+01:00",
+      "officialPublicationTimestamp": "2026-11-08T20:30:20.264+01:00",
+      "dedup": "No published/candidate/open-PR identity match. Official complete episode was first uploaded after the older pending batch cutoff; clearance does not extend to separately reused component clips.",
+      "previousPendingBatchCutoffUTC": "2026-11-07T00:29:59.754600+00:00",
+      "uiChecks": [
+        "Final isolated release catalog entry and detail deep link render",
+        "Browser back/forward retains expected routes",
+        "Official source link opens correct page in separate browser tab",
+        "Ungraded label, duration, news type, source/collection dates and rights/geographic caveat visible",
+        "No comprehension quiz or score shown for metadata-only item",
+        "416 CSS px layout: no horizontal overflow (scrollWidth == clientWidth == 416); title wraps and navigation collapses",
+        "A1 empty filter message and return to all levels works (shared catalog)"
+      ],
+      "playbackEvidence": {
+        "visiblePlayer": "Anhalten (pause) control",
+        "observedTime": "00:17",
+        "duration": "10:47",
+        "audio": "Ton anschalten remained displayed; audible output/quality not verified"
+      }
+    }
+  ],
+  "checks": {
+    "historicalListeningEntriesPreserved": 43,
+    "aggregateHarnesses": 45,
+    "aggregatePassed": 486469,
+    "failed": 0,
+    "knownIssues": 0,
+    "focusedListeningPassed": 768,
+    "openPullRequestsAtReview": 0
+  },
+  "limitations": [
+    "Player controls and advancing elapsed time were visually verified while muted. Audible output and sound quality were not verified.",
+    "Neither native children's news nor runtime duration establishes a CEFR level. Both entries remain ungraded.",
+    "No corresponding full transcript was used to produce questions; questions remain empty."
+  ]
+}

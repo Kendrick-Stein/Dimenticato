@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-03",
+  "verifiedAt": "2026-11-10",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -2541,6 +2541,63 @@
           "explanationZh": "Olga将回忆材料和图片贴在意大利地图上，以自己的方式认识统一时期的历史。"
         }
       ]
+    },
+    {
+      "id": "de-logo-2026-11-07",
+      "lang": "de",
+      "title": "logo! vom Samstag, 7. November 2026",
+      "titleZh": "11月7日儿童新闻：机场、街头杂志与博物馆",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-samstag-7-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "sourcePublishedAt": "2026-11-07",
+      "addedAt": "2026-11-08",
+      "duration": "10:38",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从官方节目入口收看机场、街头杂志和博物馆等话题。",
+      "guideZh": "先按新闻段落分段收听，记下自己听清的地点与主题，再用一句德语复述。母语儿童节目不等于A2课程。",
+      "verificationZh": "核实官方节目日期、节目单与首页时长；未取得对应逐字稿、未实测播放与音质，暂不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "der Flughafen",
+          "zh": "机场"
+        },
+        {
+          "text": "die Zeitschrift",
+          "zh": "杂志"
+        },
+        {
+          "text": "das Museum",
+          "zh": "博物馆"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "de-logo-2026-11-08",
+      "lang": "de",
+      "title": "logo! vom Sonntag, 8. November 2026",
+      "titleZh": "11月8日儿童新闻",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-sonntag-8-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "kind": "news",
+      "sourcePublishedAt": "2026-11-08",
+      "addedAt": "2026-11-09",
+      "duration": "10:47",
+      "guideZh": "按新闻段落分段收听，先记下听懂的主题，再用一句德语复述。母语儿童节目不等于A2课程。",
+      "verificationZh": "官方页面日期及主页10:47时长再次核实。未取得对应逐字稿，未实测播放或音质；仅原站导听，无理解题。",
+      "vocabulary": [],
+      "questions": [],
+      "reviewedAt": "2026-11-10",
+      "levelLabel": "未分级 · 母语儿童新闻",
+      "summaryZh": "11月8日儿童新闻",
+      "evidenceStatus": "official_page_only"
     }
   ],
   "schema": 1
