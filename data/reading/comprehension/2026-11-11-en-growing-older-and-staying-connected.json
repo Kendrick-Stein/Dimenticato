@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-11-en-growing-older-and-staying-connected",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "What does the strategy say about older workers?",
+      "options": [
+        "They should have the same fixed retirement age in every job.",
+        "They should move into part-time roles as they grow older.",
+        "They should be able to work as long as they wish or need to.",
+        "They should leave paid work and take up voluntary roles."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "s7把继续就业的时间与劳动者本人的意愿或需要联系起来，而不是规定统一退休年龄、转为兼职或离开有偿工作去做志愿服务。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Which date is the deadline for giving views in the consultation?",
+      "options": [
+        "9 November 2026.",
+        "4 January 2027.",
+        "The end of 2032.",
+        "The date of the first information session."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s3",
+        "s9"
+      ],
+      "explanationZh": "s9明确征询截止日期为2027年1月4日。11月9日是发起征询的新闻日期；2032年是战略期限；说明会日期没有给出。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Why does the plan consider several parts of everyday life?",
+      "options": [
+        "The number of information sessions is increasing.",
+        "Workers are asking to move to other towns.",
+        "The public has already chosen the activities.",
+        "Northern Ireland’s population is getting older."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4"
+      ],
+      "explanationZh": "s4用so连接人口老龄化与计划关注日常生活多方面。其余三项不是文中给出的原因。"
+    }
+  ]
+}

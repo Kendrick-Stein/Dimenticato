@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-10",
+  "verifiedAt": "2026-11-11",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
@@ -2598,6 +2598,76 @@
       "levelLabel": "未分级 · 母语儿童新闻",
       "summaryZh": "11月8日儿童新闻",
       "evidenceStatus": "official_page_only"
+    },
+    {
+      "id": "de-logo-2026-11-09",
+      "lang": "de",
+      "title": "logo! vom Montag, 9. November 2026",
+      "titleZh": "11月9日儿童新闻：气候大会、太空与人物访谈",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-montag-9-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-11",
+      "sourcePublishedAt": "2026-11-09",
+      "duration": "10:53",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从官方节目入口选听气候大会、航天与儿童记者访谈等话题。",
+      "guideZh": "先选一个感兴趣的新闻段落，记下听清的人物或地点，再用一句德语概括。复听时留意新闻与访谈的表达差别，不必一次听懂整集。",
+      "verificationZh": "已核对官方完整节目页、节目单及视频上传日期与时长；云浏览器中静音播放器计时推进至00:16，但计时推进不等于音质验收，未核验可听声音或音质。未取得完整对应文字稿，仅提供原站导听，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "die Klimakonferenz",
+          "zh": "气候大会"
+        },
+        {
+          "text": "der Astronaut",
+          "zh": "宇航员"
+        },
+        {
+          "text": "die Reporterin",
+          "zh": "女记者"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "de-logo-2026-11-10",
+      "lang": "de",
+      "title": "logo! vom Dienstag, 10. November 2026",
+      "titleZh": "11月10日儿童新闻：学校、冲浪与海洋动物",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-dienstag-10-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-11",
+      "sourcePublishedAt": "2026-11-10",
+      "duration": "10:34",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从官方节目入口选听学校生活、塞内加尔冲浪教学与海洋动物等话题。",
+      "guideZh": "可以先选冲浪或海洋动物的段落，听出主题后再记一个实际听懂的细节。遇到陌生词可暂停复听，最后用一句德语复述。",
+      "verificationZh": "已核对官方完整节目页、节目单及视频上传日期与时长；云浏览器中静音播放器计时推进至00:29，但计时推进不等于音质验收，未核验可听声音或音质。未取得完整对应文字稿，仅提供原站导听，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "der Unterricht",
+          "zh": "教学；课程"
+        },
+        {
+          "text": "surfen",
+          "zh": "冲浪"
+        },
+        {
+          "text": "der Walhai",
+          "zh": "鲸鲨"
+        }
+      ],
+      "questions": []
     }
   ],
   "schema": 1

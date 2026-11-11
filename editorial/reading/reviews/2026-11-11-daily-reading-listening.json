@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "editionDate": "2026-11-11",
+  "contentReview": "approved",
+  "publicationScope": "3 native-language reading adaptations and 2 metadata-only official listening links; no existing learning content replaced",
+  "readings": [
+    {
+      "id": "2026-11-11-en-growing-older-and-staying-connected",
+      "storyId": "ni-active-ageing-action-plan-2026-11-09",
+      "lang": "en",
+      "level": "A2",
+      "bodyWords": 152,
+      "source": {
+        "name": "Department for Communities, Northern Ireland",
+        "title": "Lyons opens public consultation on Active Ageing Strategy Action Plan",
+        "url": "https://www.communities-ni.gov.uk/news/lyons-opens-public-consultation-active-ageing-strategy-action-plan",
+        "publishedAt": "2026-11-09",
+        "lang": "en",
+        "author": "Department for Communities, Northern Ireland"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 3,
+      "finalSha256": {
+        "article": "c5d1b878e6a523122c332cefb66c6002719dc88ebb5a2ed65977268eafca95db",
+        "practice": "cc08ff006cc9f62788bafc3587e3976e6b4d08abc2ef750d805434e47ff1c30a",
+        "comprehension": "aafcf7c8b83220a80c297b07056caab260308b45bc660259ca2ee5630e9fc412"
+      },
+      "contentVerdict": "approved",
+      "firstPublicationEvidence": "Official institutional page Date published: 9 November 2026 announces launch of the new consultation, distinct from its 4 January 2027 deadline."
+    },
+    {
+      "id": "2026-11-11-fr-dinosaure-collections",
+      "storyId": "culture-dubreuillosaurus-acquisition-2026-11-09",
+      "lang": "fr",
+      "level": "A2",
+      "bodyWords": 174,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Un dinosaure français d’exception, le Dubreuillosaurus valesdunensis, rejoint prochainement les collections nationales",
+        "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/un-dinosaure-francais-d-exception-le-dubreuillosaurus-valesdunensis-rejoint-prochainement-les-collections-nationales",
+        "publishedAt": "2026-11-09",
+        "lang": "fr"
+      },
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 3,
+      "finalSha256": {
+        "article": "1a58718f3fe5e5c9963f1811cb78a9b5cc9ed1ddfe94c98cf81a43e47df7059b",
+        "practice": "875d24555e2d635de08d546e8faa8a5203e9d26b869900a3ead6c5ee214836bc",
+        "comprehension": "5d1604c8c73b266e03914aa4608baa0f609fff923332b1329cc3cdd323aaa31b"
+      },
+      "contentVerdict": "approved",
+      "firstPublicationEvidence": "Official press listing labels this new complete acquisition communiqué Publié le 9 novembre 2026; fossil discovery year remains 1994."
+    },
+    {
+      "id": "2026-11-11-it-imprese-tra-scambi-e-costi",
+      "storyId": "istat-global-value-chains-2021-2023-2026-11-10",
+      "lang": "it",
+      "level": "B1",
+      "bodyWords": 287,
+      "source": {
+        "name": "Istat",
+        "title": "Catene globali del valore delle medie e grandi imprese – Anni 2021/2023",
+        "url": "https://www.istat.it/comunicato-stampa/catene-globali-del-valore-delle-medie-e-grandi-imprese-anni-2021-2023/",
+        "publishedAt": "2026-11-10",
+        "lang": "it"
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 4,
+      "finalSha256": {
+        "article": "af3227eaf267dc71a3bf1ef99d51122867c3bd92d3de866c13ff1fb259dd37e4",
+        "practice": "d8b42a7b7d67f7a7fa6704449197e90182995a5e7a7c5883384b0e347893ac6f",
+        "comprehension": "1b79894353154d40b8ff37b98945fd1862418f262049f322acaba5fb51646b7e"
+      },
+      "contentVerdict": "approved",
+      "firstPublicationEvidence": "Official HTML Data pubblicazione and previously retrieved linked complete PDF first-page text both give 10 November 2026; statistical period remains 2021–2023. Later accesses failed and were not bypassed; retained successful extraction used."
+    }
+  ],
+  "listening": [
+    {
+      "id": "de-logo-2026-11-09",
+      "lang": "de",
+      "officialUrl": "https://www.logo.de/logo-vom-montag-9-november-2026-102.html",
+      "sourcePublishedAt": "2026-11-09",
+      "officialVideoObjectUploadDate": "2026-11-09T19:50:00.000+01:00",
+      "duration": "10:53",
+      "officialExpiry": "2026-12-09T19:50:00.000+01:00",
+      "contentVerdict": "approved for original outbound metadata guide only",
+      "questions": 0,
+      "audioQualityVerified": false,
+      "playbackEvidence": "Muted player time visibly advanced on official site; not a check that sound was audible or accurate."
+    },
+    {
+      "id": "de-logo-2026-11-10",
+      "lang": "de",
+      "officialUrl": "https://www.logo.de/logo-vom-dienstag-10-november-2026-102.html",
+      "sourcePublishedAt": "2026-11-10",
+      "officialVideoObjectUploadDate": "2026-11-10T19:50:00.000+01:00",
+      "duration": "10:34",
+      "officialExpiry": "2027-11-10T19:50:00.000+01:00",
+      "contentVerdict": "approved for original outbound metadata guide only",
+      "questions": 0,
+      "audioQualityVerified": false,
+      "playbackEvidence": "Muted player time visibly advanced on official site; not a check that sound was audible or accurate."
+    }
+  ],
+  "verification": {
+    "blindComprehension": "Reviewer independently answered article plus options before seeing keys, then checked evidence and Chinese explanations. FR q3, IT q4 and EN q1 received ordinary independent revision review, not a claimed second blind test.",
+    "cloze": "All 15 exact forms, UTF-16 offsets, contextual meanings and alternatives reviewed.",
+    "sourceReview": "Full source text, native-language provenance, first publication, rights scope, third-party exclusions, every adapted fact and Chinese translation reviewed.",
+    "temporalDedup": "The complete works first appeared November 9–10, after the last unavailable historical inventory cutoff. Existing published/candidate and available pending identities were checked. Missing historical inventories are not claimed recovered.",
+    "protectedTarget": "editorial/reading/candidates.json remains unchanged. New work does not repeat or depend on the unresolved historical candidate write.",
+    "fullTests": {
+      "harnesses": 45,
+      "passed": 486709,
+      "failed": 0,
+      "knownIssues": 0
+    },
+    "privateBrowser": {
+      "status": "passed",
+      "environment": "Supported private managed-cloud preview serving the exact publication subset",
+      "reading": "All 10 comprehension, 15 cloze-choice and 15 cloze-spelling attempts submitted successfully; translation/gloss/summary, wrong-answer locking, evidence, redo, navigation/reload and legacy fallback checked",
+      "listening": "Both catalog/detail pages, official new-tab links, language switching and back/forward checked",
+      "narrowLayout": "Actual Chromium 300% browser zoom, innerWidth 389 CSS px; three articles plus listening catalog/detail without horizontal overflow; reset to 100%. Not a mobile-device test.",
+      "limits": "No acoustic-quality verification, fault injection or every article game completion. Existing app code unchanged."
+    }
+  },
+  "missingReadingSlots": {
+    "it": [
+      "A2",
+      "B2/C1"
+    ],
+    "fr": [
+      "B1",
+      "B2/C1"
+    ],
+    "de": [
+      "A2",
+      "B1",
+      "B2/C1"
+    ],
+    "en": [
+      "B1",
+      "B2/C1"
+    ]
+  },
+  "listeningGaps": [
+    "it",
+    "fr",
+    "en"
+  ],
+  "scopeLimits": "No copied media, images, full transcripts or source-page snapshots. No acoustic quality claim. Other potential sources remain unconverted or held where rights, dates or prior overlap could not be cleared."
+}

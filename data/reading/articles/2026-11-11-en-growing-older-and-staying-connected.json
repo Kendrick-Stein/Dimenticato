@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "id": "2026-11-11-en-growing-older-and-staying-connected",
+  "storyId": "ni-active-ageing-action-plan-2026-11-09",
+  "lang": "en",
+  "date": "2026-11-11",
+  "category": "society",
+  "topics": [
+    "老年生活",
+    "社区参与"
+  ],
+  "title": "Growing older and staying connected",
+  "titleZh": "年岁增长，继续参与社区生活",
+  "summaryZh": "北爱尔兰就老年生活行动计划征求意见：住房、就业与社区活动如何帮助人们保持独立？",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以具体生活领域和时间为主，使用短句与常见动词；独立生活、能源费用和公共征询等新词提供中文辅助。非官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Communities, Northern Ireland",
+    "title": "Lyons opens public consultation on Active Ageing Strategy Action Plan",
+    "url": "https://www.communities-ni.gov.uk/news/lyons-opens-public-consultation-active-ageing-strategy-action-plan",
+    "publishedAt": "2026-11-09",
+    "lang": "en",
+    "author": "Department for Communities, Northern Ireland"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Communities, Northern Ireland; original publication 9 November 2026; source linked above.",
+  "adaptation": "2026-11-11整理：依据机构英文新闻稿同语言分级改写并添加中文翻译、词义及原创练习。不是原文、官方课程或机构认可的材料。只使用机构叙述与编辑说明，不转载部长引语、图片、标志或第三方材料。s6为解释fuel poverty的简化教学补充，不是原文定义；其余句子保留计划目标与已开展公众征询的区别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 9 November 2026, Northern Ireland’s Department for Communities asked the public for views on a new plan for older people.",
+      "zh": "2026年11月9日，北爱尔兰社区部就一项面向老年人的新计划向公众征求意见。",
+      "glosses": [
+        {
+          "surface": "views",
+          "lemma": "view",
+          "zh": "看法"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The plan aims to help people stay healthy, live independently and take part in community life.",
+      "zh": "这项计划旨在帮助人们保持健康、独立生活并参与社区生活。",
+      "glosses": [
+        {
+          "surface": "independently",
+          "lemma": "independently",
+          "zh": "独立地"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "It supports a wider Active Ageing Strategy, which now runs until 2032.",
+      "zh": "它为更广泛的《积极老龄化战略》提供支持，该战略现已延长至2032年。",
+      "glosses": [
+        {
+          "surface": "supports",
+          "lemma": "support",
+          "zh": "支持"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Northern Ireland’s population is getting older, so the plan looks at several parts of everyday life.",
+      "zh": "北爱尔兰的人口正在老龄化，因此这项计划关注日常生活的多个方面。",
+      "glosses": [
+        {
+          "surface": "population",
+          "lemma": "population",
+          "zh": "人口"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "These include better housing, help with fuel poverty and greater financial security.",
+      "zh": "其中包括改善住房、帮助应对燃料贫困，以及提高经济保障。",
+      "glosses": [
+        {
+          "surface": "housing",
+          "lemma": "housing",
+          "zh": "住房"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Fuel poverty means difficulty paying for enough energy to keep a home warm.",
+      "zh": "燃料贫困指难以负担让家中保持温暖所需的能源费用。",
+      "glosses": [
+        {
+          "surface": "energy",
+          "lemma": "energy",
+          "zh": "能源"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The strategy also aims to help older workers stay in employment for as long as they wish or need to.",
+      "zh": "该战略还旨在帮助年长劳动者按其意愿或需要继续就业。",
+      "glosses": [
+        {
+          "surface": "employment",
+          "lemma": "employment",
+          "zh": "就业"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Other goals include opportunities for older people to join cultural, learning and physical activities.",
+      "zh": "其他目标包括为老年人提供参加文化、学习和体育活动的机会。",
+      "glosses": [
+        {
+          "surface": "opportunities",
+          "lemma": "opportunity",
+          "zh": "机会"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "People can give their views during the public consultation, which runs until 4 January 2027.",
+      "zh": "公众可以在公开征求意见期间发表看法，截止日期为2027年1月4日。",
+      "glosses": [
+        {
+          "surface": "consultation",
+          "lemma": "consultation",
+          "zh": "征求意见"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The department will hold information sessions in Craigavon, Londonderry, Enniskillen, Ballymena and Belfast.",
+      "zh": "该部门将在克雷加文、伦敦德里、恩尼斯基林、巴利米纳和贝尔法斯特举办说明会。",
+      "glosses": [
+        {
+          "surface": "sessions",
+          "lemma": "session",
+          "zh": "说明会；活动场次"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "views",
+        "lemma": "view",
+        "zh": "看法",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "independently",
+        "lemma": "independently",
+        "zh": "独立地",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "supports",
+        "lemma": "support",
+        "zh": "支持",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "population",
+        "lemma": "population",
+        "zh": "人口",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "housing",
+        "lemma": "housing",
+        "zh": "住房",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "energy",
+        "lemma": "energy",
+        "zh": "能源",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "employment",
+        "lemma": "employment",
+        "zh": "就业",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "opportunities",
+        "lemma": "opportunity",
+        "zh": "机会",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "consultation",
+        "lemma": "consultation",
+        "zh": "征求意见",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "sessions",
+        "lemma": "session",
+        "zh": "说明会；活动场次",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "take part in",
+        "zh": "参与；后接活动",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "as long as",
+        "zh": "持续到……所希望或需要的时长",
+        "sentenceId": "s7",
+        "note": "本句 for as long as 表示持续的时间长度，不是一般条件“只要”。"
+      },
+      {
+        "text": "give their views",
+        "zh": "发表他们的看法",
+        "sentenceId": "s9"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s7",
+        "note": "aim to do 表示目标，不等于已经实现；for as long as they wish or need to 表示就业持续到劳动者所希望或需要的时长。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What activities could help older people feel part of your community?",
+        "zh": "哪些活动能帮助老年人融入你所在的社区？"
+      },
+      {
+        "text": "Would you rather share your views online or at an information session? Why?",
+        "zh": "你更愿意在线表达意见，还是参加说明会？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would like more opportunities to …",
+        "zh": "我希望有更多机会……",
+        "note": "原创口语表达，用来提出活动或服务需求。"
+      }
+    ]
+  }
+}

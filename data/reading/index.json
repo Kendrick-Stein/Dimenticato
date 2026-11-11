@@ -2,6 +2,58 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-11-it-imprese-tra-scambi-e-costi",
+      "lang": "it",
+      "date": "2026-11-11",
+      "title": "Imprese tra scambi e costi",
+      "titleZh": "企业的跨境贸易与成本难题",
+      "summaryZh": "一份新发布、回顾2021至2023年的报告：跨境采购、业务迁移与供应商选择有何区别？",
+      "level": "B1",
+      "category": "work-economy",
+      "topics": [
+        "企业",
+        "跨境贸易",
+        "运输成本"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-10",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-11-en-growing-older-and-staying-connected",
+      "lang": "en",
+      "date": "2026-11-11",
+      "title": "Growing older and staying connected",
+      "titleZh": "年岁增长，继续参与社区生活",
+      "summaryZh": "北爱尔兰就老年生活行动计划征求意见：住房、就业与社区活动如何帮助人们保持独立？",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "老年生活",
+        "社区参与"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-09",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-11-fr-dinosaure-collections",
+      "lang": "fr",
+      "date": "2026-11-11",
+      "title": "Un dinosaure pour les collections publiques",
+      "titleZh": "一具恐龙骨架将进入公共收藏",
+      "summaryZh": "从私人土地上的发现到公共收藏：了解一具珍贵恐龙骨架为何将留在法国。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "博物馆",
+        "自然遗产"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-09",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-03-fr-une-statuette-rejoint-les-musees",
       "lang": "fr",
       "date": "2026-11-03",

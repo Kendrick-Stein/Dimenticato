@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "id": "2026-11-11-fr-dinosaure-collections",
+  "storyId": "culture-dubreuillosaurus-acquisition-2026-11-09",
+  "lang": "fr",
+  "date": "2026-11-11",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "博物馆",
+    "自然遗产"
+  ],
+  "title": "Un dinosaure pour les collections publiques",
+  "titleZh": "一具恐龙骨架将进入公共收藏",
+  "summaryZh": "从私人土地上的发现到公共收藏：了解一具珍贵恐龙骨架为何将留在法国。",
+  "level": "A2",
+  "levelReason": "编辑估计A2基础档：以具体发现、出售与入藏过程为主，使用较短句和时间连接词；少量专业名词、过去时与将来时配逐句中文、词义和语法说明。",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Un dinosaure français d’exception, le Dubreuillosaurus valesdunensis, rejoint prochainement les collections nationales",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/un-dinosaure-francais-d-exception-le-dubreuillosaurus-valesdunensis-rejoint-prochainement-les-collections-nationales",
+    "publishedAt": "2026-11-09",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原作：法国文化部与高等教育、研究和空间部联合公报，2026-11-09，刊于法国文化部网站。依据文化部文本使用条款（https://www.culture.gouv.fr/mentions-legales，4.3.1(a)）采用CC BY-SA 3.0 FR。Dimenticato法语简写、中文翻译及教学补充亦按CC BY-SA 3.0 FR发布；无官方认可关系。",
+  "adaptation": "同语言教学改写，非原文转载；删去部分专业细节和机构名称，增加中文对照及教学活动。保留原始发表日期，发现时间1994年不代表本次入藏新闻日期。不使用图片、标识、媒体或第三方引文。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 9 novembre 2026, le ministère de la Culture a annoncé une bonne nouvelle pour les musées et les scientifiques.",
+      "zh": "2026年11月9日，法国文化部宣布了一条对博物馆和科学家而言的好消息。",
+      "glosses": [
+        {
+          "surface": "annoncé",
+          "lemma": "annoncer",
+          "zh": "宣布"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Un squelette de dinosaure va entrer dans les collections nationales françaises.",
+      "zh": "一具恐龙骨架将进入法国国家收藏。",
+      "glosses": [
+        {
+          "surface": "squelette",
+          "lemma": "squelette",
+          "zh": "骨架"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Ce dinosaure, appelé Dubreuillosaurus valesdunensis, vivait il y a 167 millions d’années et mangeait de la viande.",
+      "zh": "这种名为Dubreuillosaurus valesdunensis的恐龙生活在1.67亿年前，以肉为食。",
+      "glosses": [
+        {
+          "surface": "viande",
+          "lemma": "viande",
+          "zh": "肉"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "André Dubreuil a trouvé ses premiers fragments en 1994, sur son terrain à Conteville, en Normandie.",
+      "zh": "1994年，安德烈·迪布勒伊在诺曼底孔特维尔自己的土地上发现了它最初的碎片。",
+      "glosses": [
+        {
+          "surface": "terrain",
+          "lemma": "terrain",
+          "zh": "土地；地块"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Ensuite, des équipes de chercheurs ont fait des fouilles pour retrouver le reste du squelette.",
+      "zh": "随后，研究团队进行了发掘，以找到骨架的其余部分。",
+      "glosses": [
+        {
+          "surface": "fouilles",
+          "lemma": "fouille",
+          "zh": "发掘"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Ce fossile est important : c’est le seul représentant connu de son espèce et une référence pour les scientifiques.",
+      "zh": "这件化石很重要：它是其物种目前唯一已知的标本，也是科学家的参照标本。",
+      "glosses": [
+        {
+          "surface": "espèce",
+          "lemma": "espèce",
+          "zh": "物种"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Après la mort de son propriétaire, ses héritiers ont décidé de le vendre.",
+      "zh": "它的所有者去世后，继承人决定出售它。",
+      "glosses": [
+        {
+          "surface": "héritiers",
+          "lemma": "héritier",
+          "zh": "继承人"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Une vente publique était prévue à Paris le 18 novembre.",
+      "zh": "原定于11月18日在巴黎进行一场公开拍卖。",
+      "glosses": [
+        {
+          "surface": "prévue",
+          "lemma": "prévoir",
+          "zh": "原定的；阴性单数"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Mais les services de l’État ont négocié un accord pour acheter le dinosaure pour les collections nationales.",
+      "zh": "但是，国家有关部门通过谈判达成协议，为国家收藏购入这具恐龙骨架。",
+      "glosses": [
+        {
+          "surface": "accord",
+          "lemma": "accord",
+          "zh": "协议"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Il va donc rester en France, accessible aux chercheurs et au public.",
+      "zh": "因此，它将留在法国，供研究人员和公众接触了解。",
+      "glosses": [
+        {
+          "surface": "accessible",
+          "lemma": "accessible",
+          "zh": "可接触、可供使用的"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Il rejoindra la Galerie de Paléontologie et d’Anatomie comparée du Jardin des Plantes, à Paris.",
+      "zh": "它将进入巴黎植物园的古生物学与比较解剖学陈列馆。",
+      "glosses": [
+        {
+          "surface": "rejoindra",
+          "lemma": "rejoindre",
+          "zh": "将进入；简单将来时"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Les scientifiques vont continuer à l’étudier avec de nouvelles analyses.",
+      "zh": "科学家将通过新的分析继续研究它。",
+      "glosses": [
+        {
+          "surface": "continuer",
+          "lemma": "continuer",
+          "zh": "继续"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "squelette",
+        "zh": "骨架",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "viande",
+        "zh": "肉",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "terrain",
+        "zh": "地块",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "fouilles",
+        "zh": "发掘",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "héritiers",
+        "zh": "继承人",
+        "sentenceId": "s7"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "il y a",
+        "zh": "……以前；接一段时间",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "ont décidé de",
+        "zh": "决定做……；décider de接动词原形",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "va donc rester",
+        "zh": "因此将留在；aller + 动词原形表达将来",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "était prévue表达过去原定的安排；prévue与阴性名词vente一致。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "donc引出谈判结果。accessible à表示可供某人使用或接触；aux是à + les。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Que voulez-vous voir dans un musée d’histoire naturelle ? Pourquoi ?",
+        "zh": "你想在自然历史博物馆里看什么？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Je voudrais voir… parce que…",
+        "zh": "我想看……，因为……",
+        "note": "教学补充，可填入un squelette de dinosaure等具体展品。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-11-it-imprese-tra-scambi-e-costi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 45,
+      "answer": "rapporto",
+      "options": [
+        "contratto",
+        "rapporto",
+        "preventivo",
+        "catalogo"
+      ],
+      "explanation": "rapporto在这里是统计报告；Istat发布的对象是调查报告，而非合同、报价或目录。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s2",
+      "start": 76,
+      "answer": "precedente",
+      "options": [
+        "seguente",
+        "attuale",
+        "precedente",
+        "futuro"
+      ],
+      "explanation": "precedente表示此前的；2021至2023年早于2026年发布日。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 73,
+      "answer": "macchinari",
+      "options": [
+        "alberghi",
+        "macchinari",
+        "impiegati",
+        "viaggiatori"
+      ],
+      "explanation": "macchinari是机器设备，与原材料、零部件和成品同属所采购的商品。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s10",
+      "start": 15,
+      "answer": "diminuita",
+      "options": [
+        "aumentata",
+        "rimasta",
+        "diminuita",
+        "raddoppiata"
+      ],
+      "explanation": "diminuita表示下降，与阴性单数quota一致；正文明确下降0.4个百分点。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 127,
+      "answer": "fornitori",
+      "options": [
+        "visitatori",
+        "fornitori",
+        "elettori",
+        "lettori"
+      ],
+      "explanation": "fornitori是供应商；下句讨论减少其数量或订单，锁定采购关系。"
+    }
+  ]
+}

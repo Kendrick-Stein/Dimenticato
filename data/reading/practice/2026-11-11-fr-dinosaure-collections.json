@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-11-fr-dinosaure-collections",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 3,
+      "answer": "squelette",
+      "options": [
+        "tableau",
+        "squelette",
+        "bâtiment",
+        "document"
+      ],
+      "explanation": "此处恢复原文“squelette”，意为“骨架”。un后用阳性单数名词，指恐龙的骨架。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 107,
+      "answer": "viande",
+      "options": [
+        "viande",
+        "pierre",
+        "laine",
+        "terre"
+      ],
+      "explanation": "此处恢复原文“viande”，意为“肉”。de la viande表示肉类，是这里的食物。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s4",
+      "start": 64,
+      "answer": "terrain",
+      "options": [
+        "bureau",
+        "bateau",
+        "terrain",
+        "véhicule"
+      ],
+      "explanation": "此处恢复原文“terrain”，意为“地块”。son terrain是发现碎片的自有地块。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s5",
+      "start": 48,
+      "answer": "fouilles",
+      "options": [
+        "réunions",
+        "voyages",
+        "fouilles",
+        "achats"
+      ],
+      "explanation": "此处恢复原文“fouilles”，意为“发掘”。faire des fouilles指考古或古生物发掘，des后保留复数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s7",
+      "start": 39,
+      "answer": "héritiers",
+      "options": [
+        "visiteurs",
+        "collègues",
+        "voisins",
+        "héritiers"
+      ],
+      "explanation": "此处恢复原文“héritiers”，意为“继承人”。所有者去世后作出售决定的是其继承人；ses后用复数。"
+    }
+  ]
+}

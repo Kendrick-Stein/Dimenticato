@@ -1,0 +1,294 @@
+{
+  "schema": 1,
+  "id": "2026-11-11-it-imprese-tra-scambi-e-costi",
+  "storyId": "istat-global-value-chains-2021-2023-2026-11-10",
+  "lang": "it",
+  "date": "2026-11-11",
+  "title": "Imprese tra scambi e costi",
+  "titleZh": "企业的跨境贸易与成本难题",
+  "summaryZh": "一份新发布、回顾2021至2023年的报告：跨境采购、业务迁移与供应商选择有何区别？",
+  "level": "B1",
+  "levelReason": "编辑估计B1：用连贯说明、对比和因果表达解读经济调查；保留少量专业词并提供中文语境辅助。",
+  "category": "work-economy",
+  "topics": [
+    "企业",
+    "跨境贸易",
+    "运输成本"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Istat",
+    "title": "Catene globali del valore delle medie e grandi imprese – Anni 2021/2023",
+    "url": "https://www.istat.it/comunicato-stampa/catene-globali-del-valore-delle-medie-e-grandi-imprese-anni-2021-2023/",
+    "publishedAt": "2026-11-10",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：Istat，2026年11月10日，Catene globali del valore delle medie e grandi imprese – Anni 2021/2023。原文按CC BY 4.0使用；保留署名、原链接及许可链接。Istat不为本教学改编背书。",
+  "adaptation": "依据意大利语机构原文进行B1教学改写并添加中文逐句翻译、词汇和原创练习；不是原文照录。报告期为2021至2023年，区别于2026年发布日期。不使用图片、标志、视频或第三方材料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 10 novembre 2026 l’Istat ha pubblicato un rapporto sulle catene globali del valore delle medie e grandi imprese italiane.",
+      "zh": "2026年11月10日，意大利国家统计局发布了一份关于意大利中大型企业全球价值链的报告。",
+      "glosses": [
+        {
+          "surface": "rapporto",
+          "lemma": "rapporto",
+          "zh": "报告"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Il documento riguarda gli anni dal 2021 al 2023: descrive quindi un periodo precedente, non la situazione del giorno della pubblicazione.",
+      "zh": "该文件涉及2021至2023年，因此描述的是过去一段时期，而非发布当天的情况。",
+      "glosses": [
+        {
+          "surface": "precedente",
+          "lemma": "precedente",
+          "zh": "之前的"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "L’indagine osserva imprese dell’industria e dei servizi e considera sia gli acquisti e le vendite all’estero sia il trasferimento di attività aziendali.",
+      "zh": "调查关注工业和服务业企业，既考察境外采购和销售，也考察企业活动的转移。",
+      "glosses": [
+        {
+          "surface": "trasferimento",
+          "lemma": "trasferimento",
+          "zh": "转移"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Nel periodo considerato, il 39,1% delle medie e grandi imprese ha acquistato beni dall’estero, mentre il 26,3% ha acquistato servizi da altri paesi.",
+      "zh": "在所考察的时期，中大型企业中39.1%从国外采购过商品，26.3%从其他国家采购过服务。",
+      "glosses": [
+        {
+          "surface": "acquistato",
+          "lemma": "acquistare",
+          "zh": "采购了"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Tra i beni comprati ci sono materie prime, componenti, prodotti finiti e macchinari: gli scambi non riguardano dunque soltanto oggetti pronti per la vendita.",
+      "zh": "所购买的商品包括原材料、零部件、成品和机器，因此贸易并不只涉及可直接销售的物品。",
+      "glosses": [
+        {
+          "surface": "macchinari",
+          "lemma": "macchinario",
+          "zh": "机器设备"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Anche i servizi hanno funzioni diverse: possono aiutare a trasportare e conservare le merci, oppure sostenere le vendite, la contabilità e le attività informatiche.",
+      "zh": "服务也有不同功能：可以帮助运输和存储货物，或者支持销售、会计和信息技术工作。",
+      "glosses": [
+        {
+          "surface": "merci",
+          "lemma": "merce",
+          "zh": "货物"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Per le imprese coinvolte in questi scambi, l’Unione europea è l’area di riferimento principale, sia per comprare sia per vendere beni e servizi.",
+      "zh": "对于参与这些贸易的企业，欧盟是商品和服务采购与销售的主要对象地区。",
+      "glosses": [
+        {
+          "surface": "coinvolte",
+          "lemma": "coinvolgere",
+          "zh": "参与其中的"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Avere rapporti commerciali con altri paesi, però, non significa necessariamente spostare all’estero un’attività che prima si svolgeva in Italia.",
+      "zh": "不过，与其他国家有贸易往来，并不一定意味着把原先在意大利开展的一项活动迁往国外。",
+      "glosses": [
+        {
+          "surface": "necessariamente",
+          "lemma": "necessariamente",
+          "zh": "必然地"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Solo il 2,0% delle medie e grandi imprese ha dichiarato un trasferimento di attività o funzioni aziendali all’estero nel triennio esaminato.",
+      "zh": "只有2.0%的中大型企业表示，在所考察的三年间曾将企业活动或职能迁往国外。",
+      "glosses": [
+        {
+          "surface": "dichiarato",
+          "lemma": "dichiarare",
+          "zh": "表示了；申报了"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Questa quota è diminuita di 0,4 punti percentuali rispetto al triennio precedente, secondo i risultati presentati dall’Istat nel nuovo rapporto.",
+      "zh": "根据意大利国家统计局在新报告中公布的结果，这一比例比之前三年下降了0.4个百分点。",
+      "glosses": [
+        {
+          "surface": "diminuita",
+          "lemma": "diminuire",
+          "zh": "下降了"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Le imprese hanno segnalato soprattutto difficoltà legate all’aumento dei costi delle materie prime e ai tempi o ai costi del trasporto.",
+      "zh": "企业主要反映了原材料成本上涨以及运输时间或费用带来的困难。",
+      "glosses": [
+        {
+          "surface": "difficoltà",
+          "lemma": "difficoltà",
+          "zh": "困难"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Fra gli interventi per affrontare questi problemi, il 23,4% delle imprese ha indicato come rilevante una maggiore attenzione a fornitori affidabili o convenienti.",
+      "zh": "在应对这些问题的措施中，23.4%的企业认为，更重视可靠或价格合适的供应商是一项重要措施。",
+      "glosses": [
+        {
+          "surface": "fornitori",
+          "lemma": "fornitore",
+          "zh": "供应商"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Questo può comportare una riduzione del numero dei fornitori o degli ordini rivolti ad alcuni di loro: il rapporto descrive scelte organizzative, non soltanto quantità scambiate.",
+      "zh": "这可能包括减少供应商数量，或减少向其中部分供应商下单：报告描述的是组织方式的选择，而不仅是贸易数量。",
+      "glosses": [
+        {
+          "surface": "ordini",
+          "lemma": "ordine",
+          "zh": "订单"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "rapporto",
+        "lemma": "rapporto",
+        "zh": "报告",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "precedente",
+        "lemma": "precedente",
+        "zh": "之前的",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "trasferimento",
+        "lemma": "trasferimento",
+        "zh": "转移",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "acquistato",
+        "lemma": "acquistare",
+        "zh": "采购了",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "macchinari",
+        "lemma": "macchinario",
+        "zh": "机器设备",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "merci",
+        "lemma": "merce",
+        "zh": "货物",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "diminuita",
+        "lemma": "diminuire",
+        "zh": "下降了",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "fornitori",
+        "lemma": "fornitore",
+        "zh": "供应商",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "ordini",
+        "lemma": "ordine",
+        "zh": "订单",
+        "sentenceId": "s13"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "rispetto al triennio precedente",
+        "zh": "与之前三年相比",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "sia per comprare sia per vendere",
+        "zh": "既为了购买，也为了销售",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "materie prime",
+        "zh": "原材料",
+        "sentenceId": "s5"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "non significa necessariamente表示“并不必然意味着”，用于区分相关但不同的概念。"
+      },
+      {
+        "sentenceId": "s2",
+        "note": "quindi引出结论；precedente提醒读者区分数据时期和发布日期。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quando scegli un fornitore o un negozio, quanto contano il prezzo e l’affidabilità?",
+        "zh": "选择供应商或商店时，价格和可靠性对你有多重要？"
+      },
+      {
+        "text": "Perché è utile distinguere gli scambi commerciali dal trasferimento di attività?",
+        "zh": "为什么区分贸易往来与业务转移很有用？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Per me conta soprattutto l’affidabilità.",
+        "zh": "对我来说，可靠性最重要。",
+        "note": "原创讨论表达，可替换最后一个名词。"
+      }
+    ]
+  }
+}

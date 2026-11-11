@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-11-fr-dinosaure-collections",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quel parcours le texte raconte-t-il ?",
+      "promptZh": "文章讲述了怎样的经历？",
+      "options": [
+        "Un musée échange un fossile contre une autre collection.",
+        "Un chercheur transporte un fossile français à l’étranger.",
+        "Un fossile découvert sur un terrain privé va rejoindre une collection publique.",
+        "Un village achète un fossile découvert dans un autre pays."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "s4说明化石发现于迪布勒伊自己的土地上；s9—s10说明国家达成购买协议，化石将留在法国供科研与公众使用。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Que s’est-il passé après la découverte des premiers fragments ?",
+      "promptZh": "发现最初的碎片后发生了什么？",
+      "options": [
+        "Les héritiers ont immédiatement vendu le squelette.",
+        "Des chercheurs ont cherché le reste du squelette sur place.",
+        "Le squelette a été envoyé dans un musée étranger.",
+        "Le village a organisé une vente publique."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "s4—s5给出先发现碎片、随后研究团队发掘其余骨架的顺序，其他事件不是这一步的后续。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi ce fossile est-il particulièrement important pour les scientifiques ?",
+      "promptZh": "为什么这件化石对科学家尤其重要？",
+      "options": [
+        "Il conserve des traces de plusieurs espèces de dinosaures.",
+        "Il permet de comparer plusieurs squelettes de la même espèce.",
+        "Il est le premier fossile découvert dans la région.",
+        "Il est le seul spécimen connu de son espèce."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "s6明确说明它是该物种目前唯一已知的标本和科学参照，并未说化石含多物种痕迹、可比较多具同种骨架或是当地发现的首件化石。"
+    }
+  ]
+}

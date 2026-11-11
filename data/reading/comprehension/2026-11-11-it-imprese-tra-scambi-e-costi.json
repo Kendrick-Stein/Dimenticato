@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-11-it-imprese-tra-scambi-e-costi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale distinzione aiuta a capire i risultati del rapporto?",
+      "options": [
+        "Tra il prezzo dei beni e quello pagato dai consumatori.",
+        "Tra gli scambi con l’estero e lo spostamento di attività.",
+        "Tra le vendite online e quelle nei negozi italiani.",
+        "Tra le imprese pubbliche e quelle private."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s4",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "正文分别介绍境外采购和业务转移，并强调两者不是一回事；其他区分没有在文中展开。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "A quale periodo si riferiscono le attività descritte nel rapporto?",
+      "options": [
+        "Al solo anno della pubblicazione.",
+        "Ai tre anni dopo la pubblicazione.",
+        "Agli anni dal 2021 al 2023.",
+        "Al mese precedente la pubblicazione."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s1",
+        "s2"
+      ],
+      "explanationZh": "发布日为2026年11月10日，但调查所述时期是2021至2023年。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Che cosa è successo alla quota di imprese che hanno trasferito attività all’estero?",
+      "options": [
+        "È scesa di 0,4 punti percentuali.",
+        "È cresciuta di 0,4 punti percentuali.",
+        "È rimasta al livello del triennio precedente.",
+        "È salita fino al 39,1% delle imprese."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "业务转移比例为2.0%，比之前三年下降0.4个百分点；39.1%是境外商品采购比例。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quale cambiamento negli acquisti viene collegato a una maggiore attenzione all’affidabilità dei fornitori?",
+      "options": [
+        "Aumentare il numero dei fornitori per distribuire gli ordini.",
+        "Mantenere gli stessi fornitori e aumentare gli ordini a ciascuno.",
+        "Sostituire i fornitori esteri con fornitori situati in Italia.",
+        "Ridurre il numero dei fornitori o gli ordini ad alcuni di loro."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第12、13句将更重视可靠或价格合适的供应商，与减少供应商数量或向部分供应商下单联系起来；没有提出扩大供应商网络、普遍增加订单，或按国内外所在地替换供应商。"
+    }
+  ]
+}
